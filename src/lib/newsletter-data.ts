@@ -12,7 +12,7 @@ type NewsletterLocale = "en" | "zh";
 
 interface NewsletterConfig {
   fallback: Record<NewsletterLocale, NewsletterCopy>;
-  slugs: Record<string, Partial<Record<NewsletterLocale, NewsletterCopy>>>;
+  slugs: Record<string, Partial<Record<NewsletterLocale, Partial<NewsletterCopy>>>>;
 }
 
 const config = newsletterData as NewsletterConfig;
@@ -28,5 +28,8 @@ export function resolveNewsletterForPost(
   if (!slug) {
     return config.fallback[locale];
   }
-  return config.slugs[slug]?.[locale] ?? config.fallback[locale];
+  const override = config.slugs[slug]?.[locale];
+  return override
+    ? { ...config.fallback[locale], ...override }
+    : config.fallback[locale];
 }

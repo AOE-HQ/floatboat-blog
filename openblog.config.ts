@@ -100,28 +100,7 @@ const config = defineConfig({
       authorBox: false,
       prevNext: false,
       faq: true,
-      finalCta: true,
-    },
-  },
-
-  blog: {
-    cta: {
-      fallback: {
-        en: {
-          title: "Pick one task from this article and let your calendar run it.",
-          description:
-            "Start a $1 trial, connect Google, Outlook, or Lark, and try a workflow that starts itself — meeting prep, follow-ups, or a routine that runs every week.",
-          buttonLabel: "Try Floatboat for $1",
-          href: `${FLOATBOAT_SITE}/download`,
-        },
-        zh: {
-          title: "挑一件文章里的事，让你的日历替你从头跑到尾。",
-          description:
-            "花 $1 试用，接入 Google、Outlook 或飞书日历，试一个会自动开始的工作流——会前准备、会后跟进，或每周自动运转的例行任务。",
-          buttonLabel: "$1 试用 Floatboat",
-          href: `${FLOATBOAT_SITE}/download`,
-        },
-      },
+      finalCta: false,
     },
   },
 });
