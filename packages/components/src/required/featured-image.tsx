@@ -22,6 +22,14 @@ export function FeaturedImage({
   const resolved = resolveDisplayImageUrl(src) ?? src;
   const isExternal = resolved.startsWith("http");
 
+  // hero: show the whole image at natural ratio (never crop); it may render
+  // smaller than the old fixed-aspect crop, but nothing is cut off.
+  // stacked (cards): keep fixed aspect + cover so grid cards stay uniform.
+  const imgClassName =
+    layout === "hero"
+      ? "block h-auto w-full"
+      : "aspect-[4/3] w-full object-cover lg:aspect-[16/10]";
+
   return (
     <figure
       className={cn(
@@ -37,7 +45,7 @@ export function FeaturedImage({
         <img
           src={resolved}
           alt={alt}
-          className="aspect-[4/3] w-full object-cover lg:aspect-[16/10]"
+          className={imgClassName}
           loading="eager"
         />
       ) : (
@@ -46,7 +54,7 @@ export function FeaturedImage({
           alt={alt}
           width={1200}
           height={750}
-          className="aspect-[4/3] w-full object-cover lg:aspect-[16/10]"
+          className={imgClassName}
           priority
         />
       )}
