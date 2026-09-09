@@ -1,0 +1,1631 @@
+{
+ "gemini-3-8-flash": {
+  "lastmod": "2026-09-03T10:03:55.808Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gemini-3-8-flash.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Gemini 3.8 Flash — Google's New Coding & Agent Workhorse"
+  },
+  "zh": {}
+ },
+ "what-is-doubao-work": {
+  "lastmod": "2026-08-27T07:22:47.858Z",
+  "native_locale": "zh",
+  "en": {},
+  "zh": {
+   "status": "native",
+   "file": "content/blog/zh/what-is-doubao-work.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "豆包工作是什么 — 字节跳动独立 AI 办公 Agent 完整定义、本地操控与飞书集成能力说明"
+  }
+ },
+ "agentic-ai-tools": {
+  "lastmod": "2026-05-13T08:53:06.855Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/agentic-ai-tools.md",
+   "date": "2026-05-13",
+   "images": 4,
+   "failed_images": [],
+   "title": "Agentic AI Tools for Real Work"
+  },
+  "zh": {}
+ },
+ "building-agentic-ai-systems-build-or-buy": {
+  "lastmod": "2026-05-22T02:20:47.433Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/building-agentic-ai-systems-build-or-buy.md",
+   "date": "2026-05-22",
+   "images": 5,
+   "failed_images": [],
+   "title": "Building Agentic AI Systems: Build or Buy?"
+  },
+  "zh": {}
+ },
+ "ai-agent-vs-ai-assistant": {
+  "lastmod": "2026-04-03T10:51:01.355Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-agent-vs-ai-assistant.md",
+   "date": "",
+   "images": 4,
+   "failed_images": [],
+   "title": "AI Agent vs AI Assistant: How They're Actually Different"
+  },
+  "zh": {}
+ },
+ "ai-agent-development-services": {
+  "lastmod": "2026-03-24T09:13:35.198Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-agent-development-services.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Do You Actually Need an AI Agent Development Service?"
+  },
+  "zh": {}
+ },
+ "ai-agent-solo-operators": {
+  "lastmod": "2026-04-15T05:55:33.465Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-agent-solo-operators.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Should a Solo Operator Use an AI Agent?"
+  },
+  "zh": {}
+ },
+ "ai-agent-vs-chatbot": {
+  "lastmod": "2026-03-20T08:32:16.879Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-agent-vs-chatbot.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "AI Agent vs Chatbot: What's the Actual Difference?"
+  },
+  "zh": {}
+ },
+ "ai-agent-workflow-vibe-coding": {
+  "lastmod": "2026-04-20T02:49:27.241Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-agent-workflow-vibe-coding.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "AI Agent Workflow: Fixing What Vibe Coding Breaks"
+  },
+  "zh": {}
+ },
+ "ai-agent-use-cases-real-examples": {
+  "lastmod": "2026-03-20T03:28:49.911Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-agent-use-cases-real-examples.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "AI Agent Use Cases That Actually Work: Real-World Examples"
+  },
+  "zh": {}
+ },
+ "ai-follow-up-automation": {
+  "lastmod": "2026-06-29T05:23:06.368Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-follow-up-automation.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "AI Follow-Up Automation — Turn Meeting Outcomes Into Action"
+  },
+  "zh": {}
+ },
+ "ai-assistant-for-personal-use-at-work": {
+  "lastmod": "2026-05-13T08:46:51.671Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-assistant-for-personal-use-at-work.md",
+   "date": "2026-05-13",
+   "images": 4,
+   "failed_images": [],
+   "title": "AI Assistant for Personal Use at Work"
+  },
+  "zh": {}
+ },
+ "ai-agents-2026-solo-operators": {
+  "lastmod": "2026-04-07T06:53:37.551Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-agents-2026-solo-operators.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "AI Agents in 2026: What Solo Operators Actually Need to Know"
+  },
+  "zh": {}
+ },
+ "ai-automation-agency-do-you-need-one": {
+  "lastmod": "2026-05-14T09:16:39.348Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-automation-agency-do-you-need-one.md",
+   "date": "2026-05-14",
+   "images": 5,
+   "failed_images": [],
+   "title": "AI Automation Agency: Do You Need One?"
+  },
+  "zh": {}
+ },
+ "ai-automation-agency-pricing": {
+  "lastmod": "2026-05-07T09:47:43.190Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-automation-agency-pricing.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "AI Automation Agency Pricing: What It Costs and What You Get"
+  },
+  "zh": {}
+ },
+ "ai-meeting-preparation": {
+  "lastmod": "2026-06-29T05:22:38.108Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-meeting-preparation.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "How AI Meeting Prep Actually Works — A Full Pre-Meeting Pipeline"
+  },
+  "zh": {}
+ },
+ "ai-scheduling-agent": {
+  "lastmod": "2026-06-29T05:22:24.945Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-scheduling-agent.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "What Is an AI Scheduling Agent? 4 Generations Explained"
+  },
+  "zh": {}
+ },
+ "ai-browser-agent-vs-ai-browser-vs-ai-workspace": {
+  "lastmod": "2026-05-12T05:01:38.079Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace.md",
+   "date": "2026-05-12",
+   "images": 6,
+   "failed_images": [],
+   "title": "AI Browser Agent vs AI Browser vs AI Workspace Compared"
+  },
+  "zh": {}
+ },
+ "ai-follow-up-email-opus-4-8": {
+  "lastmod": "2026-06-07T08:56:23.240Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-follow-up-email-opus-4-8.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "AI Follow-Up Emails After Meetings"
+  },
+  "zh": {}
+ },
+ "ai-workflow-for-solo-founders": {
+  "lastmod": "2026-04-14T06:44:57.450Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-workflow-for-solo-founders.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "AI Doesn't Know How You Work — That's the Real Problem"
+  },
+  "zh": {}
+ },
+ "automate-tiktok-shop-research-fastmoss-floatboat": {
+  "lastmod": "2026-08-20T08:32:38.625Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/automate-tiktok-shop-research-fastmoss-floatboat.md",
+   "date": "",
+   "images": 4,
+   "failed_images": [],
+   "title": "How to Automate Weekly TikTok Shop Research with FastMoss and Floatboat"
+  },
+  "zh": {}
+ },
+ "ai-tools-for-business-automation-2026": {
+  "lastmod": "2026-05-15T06:37:07.143Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-tools-for-business-automation-2026.md",
+   "date": "2026-05-15",
+   "images": 5,
+   "failed_images": [],
+   "title": "AI Tools for Business Automation in 2026"
+  },
+  "zh": {}
+ },
+ "ai-workspace-agents": {
+  "lastmod": "2026-04-23T10:08:51.302Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-workspace-agents.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "What Are AI Workspace Agents? A Plain-Language Guide"
+  },
+  "zh": {}
+ },
+ "ai-workflow-solo-founders": {
+  "lastmod": "2026-04-10T04:15:17.412Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/ai-workflow-solo-founders.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "AI Workflow for Solo Founders: What Actually Works"
+  },
+  "zh": {}
+ },
+ "best-ai-scheduling-assistants": {
+  "lastmod": "2026-06-29T05:22:03.615Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/best-ai-scheduling-assistants.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Best AI Scheduling Assistants — From Smart Schedulers to Agentic Calendars"
+  },
+  "zh": {}
+ },
+ "best-ai-scheduling-assistant": {
+  "lastmod": "2026-06-29T05:22:54.093Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/best-ai-scheduling-assistant.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "What Is an Agentic Calendar? Definition and Examples"
+  },
+  "zh": {}
+ },
+ "best-claude-code-alternatives": {
+  "lastmod": "2026-08-14T08:33:12.907Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/best-claude-code-alternatives.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Best Claude Code Alternatives — Coding Agents Ranked by Job Shape"
+  },
+  "zh": {}
+ },
+ "best-ai-agent-builder-2026": {
+  "lastmod": "2026-05-18T06:38:02.462Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/best-ai-agent-builder-2026.md",
+   "date": "2026-05-18",
+   "images": 6,
+   "failed_images": [],
+   "title": "Best AI Agent Builder in 2026"
+  },
+  "zh": {}
+ },
+ "best-claude-tag-alternatives": {
+  "lastmod": "2026-08-14T08:31:54.928Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/best-claude-tag-alternatives.md",
+   "date": "",
+   "images": 0,
+   "failed_images": [
+    "https://d1z7vojvoo4ca1.cloudfront.net/1786692944162-bee7f05d-49b7-4bea-ad26-046dd94c9a26.png"
+   ],
+   "title": "Best Claude Tag Alternatives — AI Teammates Ranked for Slack and Group Chat"
+  },
+  "zh": {}
+ },
+ "best-claude-cowork-alternatives": {
+  "lastmod": "2026-08-14T08:32:24.797Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/best-claude-cowork-alternatives.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Best Claude Cowork Alternatives — Office Agents for Non-Developers"
+  },
+  "zh": {}
+ },
+ "best-ai-agent-platform-2026": {
+  "lastmod": "2026-05-15T06:40:53.878Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/best-ai-agent-platform-2026.md",
+   "date": "2026-05-15",
+   "images": 4,
+   "failed_images": [],
+   "title": "Best AI Agent Platform in 2026"
+  },
+  "zh": {}
+ },
+ "calendar-driven-ai-vs-chat-ai": {
+  "lastmod": "2026-06-29T05:21:48.972Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/calendar-driven-ai-vs-chat-ai.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Calendar-Driven AI vs Chat-Based AI — Two Different Paradigms"
+  },
+  "zh": {}
+ },
+ "best-calendar-app-solo-operators": {
+  "lastmod": "2026-06-04T02:24:19.871Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/best-calendar-app-solo-operators.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Best Calendar App for Solo Operators"
+  },
+  "zh": {}
+ },
+ "claude-code-vs-cowork-vs-tag": {
+  "lastmod": "2026-08-14T08:33:27.994Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/claude-code-vs-cowork-vs-tag.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Claude Code vs Cowork vs Tag — Which Agent Surface Fits Your Work"
+  },
+  "zh": {}
+ },
+ "browser-ai-agent-security-questions": {
+  "lastmod": "2026-05-12T05:55:53.525Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/browser-ai-agent-security-questions.md",
+   "date": "2026-05-12",
+   "images": 5,
+   "failed_images": [],
+   "title": "5 Questions to Ask Before You Give a Browser AI Your Logins"
+  },
+  "zh": {}
+ },
+ "codex-harness-open-source": {
+  "lastmod": "2026-08-27T08:30:26.576Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/codex-harness-open-source.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Codex Harness Open Source — OpenAI's Agent Runtime"
+  },
+  "zh": {}
+ },
+ "claude-code-non-developers-solo-operators": {
+  "lastmod": "2026-04-06T07:27:34.458Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/claude-code-non-developers-solo-operators.md",
+   "date": "",
+   "images": 4,
+   "failed_images": [],
+   "title": "Claude Code for Non-Developers in 2026: What Solo Operators Should Know"
+  },
+  "zh": {}
+ },
+ "browser-ai-agent-what-it-can-do": {
+  "lastmod": "2026-05-11T07:03:11.279Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/browser-ai-agent-what-it-can-do.md",
+   "date": "2026-05-11",
+   "images": 6,
+   "failed_images": [],
+   "title": "What Browser AI Agents Can and Cannot Do for Solo Operators"
+  },
+  "zh": {}
+ },
+ "context-engineering-for-ai-agents": {
+  "lastmod": "2026-07-01T09:19:02.384Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/context-engineering-for-ai-agents.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Context Engineering for AI Agents — Why Context Beats Models"
+  },
+  "zh": {}
+ },
+ "cordis-plugin-framework": {
+  "lastmod": "2026-08-14T08:31:22.233Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/cordis-plugin-framework.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Cordis — The Plugin Kernel Behind DeepSeek Harness"
+  },
+  "zh": {}
+ },
+ "claude-managed-agents-one-person-company": {
+  "lastmod": "2026-04-22T01:49:46.302Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/claude-managed-agents-one-person-company.md",
+   "date": "",
+   "images": 4,
+   "failed_images": [
+    "https://d1z7vojvoo4ca1.cloudfront.net/1776822497021-9f7925a6-7df8-4b45-8874-4b85b4b3907b.png"
+   ],
+   "title": "Claude Managed Agents: What They Mean for Solo Companies"
+  },
+  "zh": {}
+ },
+ "deepseek-agent-function-calling": {
+  "lastmod": "2026-08-14T08:33:51.590Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/deepseek-agent-function-calling.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "DeepSeek Agent Function Calling: A Hands-On Guide"
+  },
+  "zh": {}
+ },
+ "deepseek-agent-vs-claude-code": {
+  "lastmod": "2026-08-14T08:34:05.288Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/deepseek-agent-vs-claude-code.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "DeepSeek Agent vs Claude Code: Cost, Performance, and When to Use Each"
+  },
+  "zh": {}
+ },
+ "codex-for-chrome-vs-claude-for-chrome": {
+  "lastmod": "2026-05-11T06:49:51.902Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/codex-for-chrome-vs-claude-for-chrome.md",
+   "date": "2026-05-11",
+   "images": 6,
+   "failed_images": [],
+   "title": "Codex for Chrome vs Claude for Chrome: How to Choose"
+  },
+  "zh": {}
+ },
+ "deepseek-v4-pro-0813": {
+  "lastmod": "2026-08-14T08:30:02.661Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/deepseek-v4-pro-0813.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "DeepSeek V4 Pro 0813 — The Quiet GA and What It Actually Changes"
+  },
+  "zh": {}
+ },
+ "custom-ai-agent-development": {
+  "lastmod": "2026-03-27T03:52:27.477Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/custom-ai-agent-development.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Custom AI Agent Development: When Does It Make Sense?"
+  },
+  "zh": {}
+ },
+ "floatcup-world-cup-2026-calendar-subscribe": {
+  "lastmod": "2026-07-15T04:20:54.022Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/floatcup-world-cup-2026-calendar-subscribe.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "FloatCup: Subscribe to the World Cup 2026 Calendar in One Click"
+  },
+  "zh": {}
+ },
+ "deepseek-v4-api-solo-operator": {
+  "lastmod": "2026-04-17T08:15:37.793Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/deepseek-v4-api-solo-operator.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "DeepSeek V4 API: Cost and Impact for Solo Operators"
+  },
+  "zh": {}
+ },
+ "first-100-customers-solo-founder": {
+  "lastmod": "2026-04-08T02:44:35.704Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/first-100-customers-solo-founder.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "How to Get Your First 100 Customers as a Solo Founder"
+  },
+  "zh": {}
+ },
+ "gemini-3-7-flash": {
+  "lastmod": "2026-08-14T10:59:02.432Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gemini-3-7-flash.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Gemini 3.7 Flash — Three-Week Iteration, Real Coding Gains, Now in Floatboat"
+  },
+  "zh": {}
+ },
+ "dynamic-workflows-build-or-use-workspace": {
+  "lastmod": "2026-05-29T11:46:09.593Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/dynamic-workflows-build-or-use-workspace.md",
+   "date": "2026-05-29",
+   "images": 7,
+   "failed_images": [],
+   "title": "Dynamic Workflows: Build Agents or Use a Workspace?"
+  },
+  "zh": {}
+ },
+ "effort-control-fast-mode-ai-work": {
+  "lastmod": "2026-05-29T11:51:06.727Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/effort-control-fast-mode-ai-work.md",
+   "date": "2026-05-29",
+   "images": 7,
+   "failed_images": [],
+   "title": "Effort Control and Fast Mode for AI Work"
+  },
+  "zh": {}
+ },
+ "feishu-cli-solo-work-setup": {
+  "lastmod": "2026-03-31T02:19:30.840Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/feishu-cli-solo-work-setup.md",
+   "date": "",
+   "images": 8,
+   "failed_images": [],
+   "title": "Feishu CLI in a Solo Work Setup: What It Actually Takes"
+  },
+  "zh": {}
+ },
+ "glm-5-3": {
+  "lastmod": "2026-08-14T11:05:24.182Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/glm-5-3.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "GLM-5.3 — Post-Training Scaling, Open-Weight Coding, and the Security Surprise"
+  },
+  "zh": {}
+ },
+ "gemini-3-5-integration-solo-operators": {
+  "lastmod": "2026-05-24T01:44:05.897Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gemini-3-5-integration-solo-operators.md",
+   "date": "2026-05-21",
+   "images": 5,
+   "failed_images": [],
+   "title": "What Gemini 3.5 Integration Means for Solo Operators"
+  },
+  "zh": {}
+ },
+ "gpt-5-6-floatboat": {
+  "lastmod": "2026-07-10T11:59:18.784Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gpt-5-6-floatboat.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "GPT-5.6 in Floatboat — Built-In Sol, Terra, Luna"
+  },
+  "zh": {}
+ },
+ "genspark-super-agent-explained": {
+  "lastmod": "2026-05-25T01:44:18.598Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/genspark-super-agent-explained.md",
+   "date": "2026-05-25",
+   "images": 5,
+   "failed_images": [],
+   "title": "Genspark Super Agent Explained"
+  },
+  "zh": {}
+ },
+ "genspark-ai-pricing": {
+  "lastmod": "2026-05-07T10:02:59.587Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/genspark-ai-pricing.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Genspark Pricing: Plans, Limits, and What You Get"
+  },
+  "zh": {}
+ },
+ "genspark-vs-manus": {
+  "lastmod": "2026-03-26T02:03:03.907Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/genspark-vs-manus.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "Genspark vs Manus: How They Compare"
+  },
+  "zh": {}
+ },
+ "gpt-5-6-sol-terra-luna": {
+  "lastmod": "2026-07-10T11:27:49.641Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gpt-5-6-sol-terra-luna.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "GPT-5.6 Is Here — What Sol, Terra, and Luna Change"
+  },
+  "zh": {}
+ },
+ "gpt-6-astra": {
+  "lastmod": "2026-09-04T04:31:07.284Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gpt-6-astra.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "GPT-6 Astra — OpenAI's Most Capable, Most Guarded Model"
+  },
+  "zh": {}
+ },
+ "google-calendar-vs-outlook": {
+  "lastmod": "2026-05-29T01:58:23.374Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/google-calendar-vs-outlook.md",
+   "date": "2026-05-29",
+   "images": 5,
+   "failed_images": [],
+   "title": "Google Calendar vs Outlook"
+  },
+  "zh": {}
+ },
+ "google-calendar-vs-apple-calendar": {
+  "lastmod": "2026-05-27T03:51:23.639Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/google-calendar-vs-apple-calendar.md",
+   "date": "2026-05-27",
+   "images": 5,
+   "failed_images": [],
+   "title": "Google Calendar vs Apple Calendar"
+  },
+  "zh": {}
+ },
+ "grok-4-6": {
+  "lastmod": "2026-08-14T08:34:24.531Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/grok-4-6.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Grok 4.6 — Agentic Frontier Model, Benchmarks, Reality Check"
+  },
+  "zh": {}
+ },
+ "grok-bot": {
+  "lastmod": "2026-08-14T05:47:08.784Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/grok-bot.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Grok Bot — xAI's Always-On AI Teammates, Explained"
+  },
+  "zh": {}
+ },
+ "gpt-image-2-storyboard-solo": {
+  "lastmod": "2026-04-25T03:21:53.899Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gpt-image-2-storyboard-solo.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Can One Person Build a Full Storyboard with GPT Image 2?"
+  },
+  "zh": {}
+ },
+ "gpt-image-2-manga-comic-workflow": {
+  "lastmod": "2026-04-25T03:18:13.737Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gpt-image-2-manga-comic-workflow.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "GPT Image 2 for Manga and Comic Creators: A Solo Workflow"
+  },
+  "zh": {}
+ },
+ "grok-3-api-solo-operator": {
+  "lastmod": "2026-04-23T08:29:55.075Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/grok-3-api-solo-operator.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Grok 3 API Is Open — Does It Lower the AI Cost Barrier for Solo Operators?"
+  },
+  "zh": {}
+ },
+ "gpt-image-2-vs-midjourney-nano-banana-2": {
+  "lastmod": "2026-04-27T02:49:30.927Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gpt-image-2-vs-midjourney-nano-banana-2.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "GPT Image 2 vs Midjourney vs Nano Banana 2 for Creators"
+  },
+  "zh": {}
+ },
+ "gumloop-alternatives-2026": {
+  "lastmod": "2026-03-24T09:12:51.846Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gumloop-alternatives-2026.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Gumloop Alternatives in 2026: What Else Is Worth Considering"
+  },
+  "zh": {}
+ },
+ "gumloop-review-2026": {
+  "lastmod": "2026-03-23T09:05:55.256Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/gumloop-review-2026.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Gumloop Review 2026: Powerful, But Is It Right for You?"
+  },
+  "zh": {}
+ },
+ "how-to-build-ai-agents-for-repeated-work": {
+  "lastmod": "2026-05-14T09:08:08.488Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/how-to-build-ai-agents-for-repeated-work.md",
+   "date": "2026-05-14",
+   "images": 4,
+   "failed_images": [],
+   "title": "How to Build AI Agents for Repeated Work"
+  },
+  "zh": {}
+ },
+ "how-to-build-deepseek-agent": {
+  "lastmod": "2026-08-14T08:31:04.291Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/how-to-build-deepseek-agent.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "How to Build a DeepSeek Agent: From API Key to Your First Agent"
+  },
+  "zh": {}
+ },
+ "how-to-use-obsidian-with-ai-agent": {
+  "lastmod": "2026-07-30T06:57:53.524Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/how-to-use-obsidian-with-ai-agent.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "How to Use Obsidian with an AI Agent — Local Vault + Cross-App Workflows"
+  },
+  "zh": {}
+ },
+ "how-to-build-an-ai-agent": {
+  "lastmod": "2026-03-25T06:15:00.118Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/how-to-build-an-ai-agent.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "How to Build an AI Agent: What It Actually Takes"
+  },
+  "zh": {}
+ },
+ "how-one-person-businesses-work-like-a-team-with-ai": {
+  "lastmod": "2026-03-20T07:59:13.542Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/how-one-person-businesses-work-like-a-team-with-ai.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "How One-Person Businesses Work Like a Team With AI"
+  },
+  "zh": {}
+ },
+ "introducing-floatim": {
+  "lastmod": "2026-06-29T05:19:27.896Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/introducing-floatim.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Introducing FloatIM: Chat with AI Agents in Groups on an Agent-Native Network"
+  },
+  "zh": {}
+ },
+ "how-to-build-an-ai-agent-with-chatgpt": {
+  "lastmod": "2026-05-19T09:25:26.728Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/how-to-build-an-ai-agent-with-chatgpt.md",
+   "date": "2026-05-19",
+   "images": 5,
+   "failed_images": [],
+   "title": "How to Build an AI Agent with ChatGPT"
+  },
+  "zh": {}
+ },
+ "introducing-flow-mode": {
+  "lastmod": "2026-08-19T03:36:14.939Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/introducing-flow-mode.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Introducing Floatboat Flow Mode — AI Voice Dictation"
+  },
+  "zh": {}
+ },
+ "kimi-k3-floatboat": {
+  "lastmod": "2026-07-17T09:17:09.317Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/kimi-k3-floatboat.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Kimi K3 Floatboat Integration: What It Changes"
+  },
+  "zh": {}
+ },
+ "html-vs-markdown-ai-output": {
+  "lastmod": "2026-05-20T06:15:52.509Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/html-vs-markdown-ai-output.md",
+   "date": "2026-05-20",
+   "images": 5,
+   "failed_images": [],
+   "title": "HTML vs Markdown for AI Output"
+  },
+  "zh": {}
+ },
+ "html-anything-review-2026": {
+  "lastmod": "2026-05-20T06:10:54.930Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/html-anything-review-2026.md",
+   "date": "2026-05-20",
+   "images": 5,
+   "failed_images": [],
+   "title": "HTML-Anything Review 2026"
+  },
+  "zh": {}
+ },
+ "html-is-the-new-markdown": {
+  "lastmod": "2026-05-20T06:05:35.027Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/html-is-the-new-markdown.md",
+   "date": "2026-05-20",
+   "images": 6,
+   "failed_images": [],
+   "title": "HTML Is the New Markdown: What It Means"
+  },
+  "zh": {}
+ },
+ "minimax-h3-max-infinite-ai-livestream": {
+  "lastmod": "2026-09-02T13:02:11.149Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/minimax-h3-max-infinite-ai-livestream.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "MiniMax H3 Max Live Stream — Faster Than Playback"
+  },
+  "zh": {}
+ },
+ "lark-cli-when-to-use-it": {
+  "lastmod": "2026-03-30T04:02:50.290Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/lark-cli-when-to-use-it.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Lark CLI: When to Use It (and When Not To)"
+  },
+  "zh": {}
+ },
+ "llm-knowledge-base-solo-operators": {
+  "lastmod": "2026-04-06T06:10:38.494Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/llm-knowledge-base-solo-operators.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "LLM Knowledge Base: Do Solo Operators Actually Need One?"
+  },
+  "zh": {}
+ },
+ "lindy-vs-gumloop": {
+  "lastmod": "2026-03-20T03:32:38.208Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/lindy-vs-gumloop.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "Lindy vs Gumloop: Which AI Agent Tool Fits You?"
+  },
+  "zh": {}
+ },
+ "manus-ai-alternatives-2026": {
+  "lastmod": "2026-08-23T03:45:49.158Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/manus-ai-alternatives-2026.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Best Manus AI Alternatives in 2026"
+  },
+  "zh": {}
+ },
+ "meta-muse-spark-one-person-company": {
+  "lastmod": "2026-05-01T01:37:39.610Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/meta-muse-spark-one-person-company.md",
+   "date": "2026-05-01",
+   "images": 5,
+   "failed_images": [],
+   "title": "Meta Muse Spark vs GPT-5.4: How New AI Models Impact Solo Businesses"
+  },
+  "zh": {}
+ },
+ "raycast-for-windows-floatboat": {
+  "lastmod": "2026-09-03T14:28:49.817Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/raycast-for-windows-floatboat.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Finding Raycast for Windows? Try Floatboat!"
+  },
+  "zh": {}
+ },
+ "no-code-ai-agent-builder": {
+  "lastmod": "2026-05-18T06:48:06.621Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/no-code-ai-agent-builder.md",
+   "date": "2026-05-18",
+   "images": 5,
+   "failed_images": [],
+   "title": "No Code AI Agent Builder: Should You Use One?"
+  },
+  "zh": {}
+ },
+ "openai-gpt-6-one-person-company": {
+  "lastmod": "2026-04-24T02:56:59.661Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/openai-gpt-6-one-person-company.md",
+   "date": "",
+   "images": 4,
+   "failed_images": [],
+   "title": "OpenAI GPT-6: Why Solo Companies Should Prepare Now"
+  },
+  "zh": {}
+ },
+ "openai-4-day-work-week-one-person-company": {
+  "lastmod": "2026-04-16T05:50:38.876Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/openai-4-day-work-week-one-person-company.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "OpenAI 4-Day Work Week: Rise of One-Person Companies"
+  },
+  "zh": {}
+ },
+ "oh-my-codex-vs-superpowers": {
+  "lastmod": "2026-04-30T02:03:44.222Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/oh-my-codex-vs-superpowers.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "Claude Code on Linux: Why Solo Founders Are Moving AI Offline"
+  },
+  "zh": {}
+ },
+ "relevance-ai-vs-n8n": {
+  "lastmod": "2026-04-01T07:08:35.230Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/relevance-ai-vs-n8n.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Relevance AI vs n8n: Which One Is Right for You?"
+  },
+  "zh": {}
+ },
+ "scale-one-person-business-without-hiring": {
+  "lastmod": "2026-04-15T06:00:38.362Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/scale-one-person-business-without-hiring.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "How to Scale a One-Person Business Without Hiring"
+  },
+  "zh": {}
+ },
+ "what-if-your-calendar-could-run-itself": {
+  "lastmod": "2026-07-24T07:21:47.103Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-if-your-calendar-could-run-itself.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "What If Your Calendar Could Run Itself? Calendar-Driven AI"
+  },
+  "zh": {}
+ },
+ "solopreneur-pricing-day-one": {
+  "lastmod": "2026-04-13T10:11:18.623Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/solopreneur-pricing-day-one.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Solopreneur Pricing: Why You Should Charge from Day One"
+  },
+  "zh": {}
+ },
+ "what-is-claude-code": {
+  "lastmod": "2026-08-14T08:32:55.242Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-claude-code.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "What Is Claude Code — Anthropic's Terminal Coding Agent"
+  },
+  "zh": {}
+ },
+ "stop-context-switching-workspace-agent": {
+  "lastmod": "2026-05-01T01:43:05.314Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/stop-context-switching-workspace-agent.md",
+   "date": "2026-05-01",
+   "images": 5,
+   "failed_images": [],
+   "title": "How to Stop Context Switching with a Workspace Agent"
+  },
+  "zh": {}
+ },
+ "what-is-claude-cowork": {
+  "lastmod": "2026-08-14T08:32:40.024Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-claude-cowork.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "What Is Claude Cowork — Anthropic's Agent for Knowledge Work"
+  },
+  "zh": {}
+ },
+ "what-is-claude-tag": {
+  "lastmod": "2026-08-14T08:32:11.674Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-claude-tag.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "What Is Claude Tag — Anthropic's AI Teammate for Slack"
+  },
+  "zh": {}
+ },
+ "what-gstack-gets-right-about-one-person-businesses": {
+  "lastmod": "2026-04-06T07:05:27.631Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-gstack-gets-right-about-one-person-businesses.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Role-Based AI Workflows for Solo Founders: The gstack Method"
+  },
+  "zh": {}
+ },
+ "what-is-deepseek-agent": {
+  "lastmod": "2026-08-14T08:34:40.933Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-deepseek-agent.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "What Is a DeepSeek Agent? Types, Tools, and How to Choose"
+  },
+  "zh": {}
+ },
+ "what-is-minimax-h3": {
+  "lastmod": "2026-08-04T03:15:58.308Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-minimax-h3.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "What Is MiniMax H3 — The Open Omni-Modal Video Model"
+  },
+  "zh": {}
+ },
+ "what-are-claude-managed-agents": {
+  "lastmod": "2026-04-10T04:07:47.419Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-are-claude-managed-agents.md",
+   "date": "",
+   "images": 7,
+   "failed_images": [],
+   "title": "What Are Claude Managed Agents?"
+  },
+  "zh": {}
+ },
+ "what-is-obsidian-vault": {
+  "lastmod": "2026-07-30T06:59:23.785Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-obsidian-vault.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "What Is an Obsidian Vault — Local Markdown Knowledge Base Explained"
+  },
+  "zh": {}
+ },
+ "where-is-world-cup-2026-host-cities": {
+  "lastmod": "2026-07-15T04:15:32.303Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/where-is-world-cup-2026-host-cities.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Where Is the World Cup 2026? Host Cities & Stadiums"
+  },
+  "zh": {}
+ },
+ "what-is-llm-wiki": {
+  "lastmod": "2026-04-14T06:41:11.458Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-llm-wiki.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "What Is an LLM Wiki — and Should You Build One?"
+  },
+  "zh": {}
+ },
+ "why-ai-forgets-between-sessions": {
+  "lastmod": "2026-04-10T04:11:50.463Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/why-ai-forgets-between-sessions.md",
+   "date": "",
+   "images": 4,
+   "failed_images": [],
+   "title": "Why Your AI Forgets Everything Between Sessions"
+  },
+  "zh": {}
+ },
+ "what-is-vibe-coding": {
+  "lastmod": "2026-04-16T05:46:59.896Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-vibe-coding.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "What Is Vibe Coding? Can Solo Founders Ship Faster?"
+  },
+  "zh": {}
+ },
+ "what-is-persistent-ai-agent": {
+  "lastmod": "2026-04-08T02:30:08.591Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-persistent-ai-agent.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "What Is a Persistent AI Agent — and Why Does It Matter?"
+  },
+  "zh": {}
+ },
+ "why-ai-forgets-every-session": {
+  "lastmod": "2026-04-07T06:34:16.557Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/why-ai-forgets-every-session.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Why Your AI Forgets You Every Single Session"
+  },
+  "zh": {}
+ },
+ "world-cup-2026-bracket": {
+  "lastmod": "2026-07-15T04:21:30.472Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/world-cup-2026-bracket.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "World Cup Bracket 2026: Template, Tracker & PDF"
+  },
+  "zh": {}
+ },
+ "world-cup-2026-bracketology": {
+  "lastmod": "2026-07-15T04:18:25.865Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/world-cup-2026-bracketology.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "World Cup Bracketology: How to Fill Your 2026 Bracket"
+  },
+  "zh": {}
+ },
+ "workflow-builder-vs-ai-workspace": {
+  "lastmod": "2026-03-23T09:27:01.159Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/workflow-builder-vs-ai-workspace.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "Workflow Builder vs AI Workspace: What's the Difference?"
+  },
+  "zh": {}
+ },
+ "world-cup-2026-draw": {
+  "lastmod": "2026-07-15T04:14:24.250Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/world-cup-2026-draw.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "World Cup Draw 2026: Rules, Results and Groups"
+  },
+  "zh": {}
+ },
+ "workspace-agents-for-solo-operators": {
+  "lastmod": "2026-04-29T02:03:50.090Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/workspace-agents-for-solo-operators.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Why One-Person Companies Need a Workspace Agent"
+  },
+  "zh": {}
+ },
+ "workspace-agents-vs-workflow-builders": {
+  "lastmod": "2026-04-28T01:58:28.522Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/workspace-agents-vs-workflow-builders.md",
+   "date": "",
+   "images": 5,
+   "failed_images": [],
+   "title": "Workspace Agents vs Workflow Builders: A Clear Comparison"
+  },
+  "zh": {}
+ },
+ "world-cup-2026-google-calendar-ics": {
+  "lastmod": "2026-07-15T04:18:01.985Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/world-cup-2026-google-calendar-ics.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "Add World Cup 2026 to Google, Outlook & Apple (ICS)"
+  },
+  "zh": {}
+ },
+ "world-cup-2026-groups-standings": {
+  "lastmod": "2026-07-15T04:14:57.922Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/world-cup-2026-groups-standings.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "World Cup Groups 2026: Standings & Tiebreakers"
+  },
+  "zh": {}
+ },
+ "workspace-agents-vs-chat-assistants": {
+  "lastmod": "2026-04-24T03:03:12.073Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/workspace-agents-vs-chat-assistants.md",
+   "date": "",
+   "images": 6,
+   "failed_images": [],
+   "title": "AI Workspace Agents vs Chat Assistants: What's Different"
+  },
+  "zh": {}
+ },
+ "world-cup-2026-guide": {
+  "lastmod": "2026-07-15T04:25:11.207Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/world-cup-2026-guide.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "World Cup 2026 Guide (FIFA): Dates, Format, Hosts & FAQ"
+  },
+  "zh": {}
+ },
+ "world-cup-2026-schedule": {
+  "lastmod": "2026-07-15T04:21:56.728Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/world-cup-2026-schedule.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "World Cup 2026 Schedule: Full Fixtures & Calendar Sync"
+  },
+  "zh": {}
+ },
+ "world-cup-2026-schedule-usa": {
+  "lastmod": "2026-07-15T04:22:58.475Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/world-cup-2026-schedule-usa.md",
+   "date": "",
+   "images": 1,
+   "failed_images": [],
+   "title": "USA World Cup 2026 Schedule: Match Times, Reminders & Key Games"
+  },
+  "zh": {}
+ }
+}
