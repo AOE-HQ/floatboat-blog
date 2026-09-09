@@ -15,5 +15,1276 @@
       "success": "已订阅——笔记将直达你的收件箱，绝不发垃圾邮件。"
     }
   },
-  "slugs": {}
+  "slugs": {
+    "agentic-ai-tools": {
+      "en": {
+        "title": "Agentic tools by autonomy level",
+        "description": "One category map a month—assistant, workflow agent, builder, coding agent, workspace—with the approval gates and failure modes each really has."
+      },
+      "zh": {
+        "title": "按自主度选对智能体工具",
+        "description": "每月一张分类地图：五类工具各自的权限边界与失败模式，先定自主度再挑。"
+      }
+    },
+    "ai-agent-workflow-vibe-coding": {
+      "en": {
+        "title": "Guardrails for vibe coding",
+        "description": "Solo builders who shipped fast with AI and met the mess get the follow-ups: specs, review loops, and agent workflows built to survive month three."
+      },
+      "zh": {
+        "title": "给氛围编程装上护栏",
+        "description": "氛围编程来得快、欠债也快——继续聊规范、评审与结构化工作流，让爽过的代码改得动。"
+      }
+    },
+    "ai-follow-up-automation": {
+      "en": {
+        "title": "Action items that survive the meeting",
+        "description": "Post-meeting automation for anyone whose decisions dissolve by Friday: capture, owners, deadlines, and follow-ups that feed the next prep."
+      },
+      "zh": {
+        "title": "让会后行动项不再蒸发",
+        "description": "会议一结束，行动项就开始褪色——拆决定、责任人、截止日，并喂给下一场会前准备。"
+      }
+    },
+    "ai-workflow-solo-founders": {
+      "en": {
+        "title": "Stop re-explaining your work to AI",
+        "description": "For founders who are the whole company: AI setups with persistent context and execution memory, so the five roles don't each start from zero."
+      },
+      "zh": {
+        "title": "让智能体记得你的业务上下文",
+        "description": "一人公司上下文就是一切：工具要记住你的文件、项目和上周决定，别每天重新解释自己。"
+      }
+    },
+    "best-ai-scheduling-assistants": {
+      "en": {
+        "title": "Four generations of AI scheduling",
+        "description": "Scheduling tools differ by what they do after the slot is booked—link, optimizer, agent, or agent OS. New picks mapped to the same grid."
+      },
+      "zh": {
+        "title": "排期工具分四代，你在哪一代",
+        "description": "从约时间链接到会执行日程的智能排期：代际不同要解决的问题就不同，先想清用途再选。"
+      }
+    },
+    "browser-ai-agent-what-it-can-do": {
+      "en": {
+        "title": "What browser agents really handle",
+        "description": "Solo operators get ground truth on browser AI: the signed-in summaries and form-filling that hold up, and the long workflows that quietly break."
+      },
+      "zh": {
+        "title": "浏览器智能体的能力边界",
+        "description": "能归纳已登录页面、会填表，但长流程与反爬照样翻车——先自动化能落地的那部分。"
+      }
+    },
+    "codex-for-chrome-vs-claude-for-chrome": {
+      "en": {
+        "title": "Codex vs Claude inside Chrome",
+        "description": "A working comparison of the two Chrome extensions for people already paying for ChatGPT or Claude—design philosophy, permissions, and who's left out."
+      },
+      "zh": {
+        "title": "两个浏览器编程智能体，装哪个",
+        "description": "同为浏览器编程智能体，后台多标签与侧栏当前页是两种哲学——权限、地区与套餐差异摊开。"
+      }
+    },
+    "deepseek-agent-vs-claude-code": {
+      "en": {
+        "title": "The 28x-cheaper agent backend",
+        "description": "Cost-first model briefs for developers: when a DeepSeek backend handles your coding agent loops, and when the flagship harness still earns its bill."
+      },
+      "zh": {
+        "title": "给编码智能体换个性价比内核",
+        "description": "编码智能体换便宜后端能省多少：按任务拆，哪类活省钱就够，哪类仍值旗舰。"
+      }
+    },
+    "first-100-customers-solo-founder": {
+      "en": {
+        "title": "First 100 customers, no hype",
+        "description": "Pre-traction field notes for solo founders: community before product, charging from day one, and the manual phase that quietly builds the moat."
+      },
+      "zh": {
+        "title": "冷启动拿下前一百个客户",
+        "description": "写给零客户阶段的你：社区先行、尽早收费、绕不开的手动期，冷启动靠的是笨功夫。"
+      }
+    },
+    "genspark-super-agent-explained": {
+      "en": {
+        "title": "Inside the super-agent workflow",
+        "description": "Outcome-first AI tools decoded for research-heavy operators: multi-model orchestration and structured deliverables like Sparkpages, with pricing reality."
+      },
+      "zh": {
+        "title": "不只是聊天的超级智能体",
+        "description": "多模型调度把散信息变成带引用的成品页——哪些研究转成稿的活值得加订，哪些不必。"
+      }
+    },
+    "gpt-5-6-sol-terra-luna": {
+      "en": {
+        "title": "Pick your GPT-5.6 tier",
+        "description": "Sol, Terra, Luna are durable tiers, not small/medium/large—get the pricing, Ultra-mode trade-offs, and which variant your agent loops should run."
+      },
+      "zh": {
+        "title": "GPT-5.6 三档模型怎么选",
+        "description": "三档不是大小号而是分工：定价、推理强度与子任务调度取舍，选型前先看。"
+      }
+    },
+    "grok-4-6": {
+      "en": {
+        "title": "Grok 4.6's hidden price trap",
+        "description": "Long-context agent economics, straight: the 200K-token doubling, closed weights, and where Grok 4.6 actually beats DeepSeek V4 Pro the same week."
+      },
+      "zh": {
+        "title": "长上下文定价的翻倍陷阱",
+        "description": "长上下文是卖点，也是账单陷阱：请求过二十万词元整单翻倍、权重又不开放。"
+      }
+    },
+    "how-to-build-an-ai-agent": {
+      "en": {
+        "title": "Build or buy your AI agent",
+        "description": "Honest build-it-yourself reports: what a reliable agent takes in weeks, code, and API bills—and the decision framework for skipping it with confidence."
+      },
+      "zh": {
+        "title": "亲手搭智能体前先看这篇",
+        "description": "一个扛住真实输入的智能体要几周、几行代码与多少账单——该不该自己搭的代价账，继续算。"
+      }
+    },
+    "html-vs-markdown-ai-output": {
+      "en": {
+        "title": "Markdown or HTML from your agent",
+        "description": "Format guidance for AI output: token budgets and clean diffs when machines consume it, rendered structure when humans have to inspect and compare."
+      },
+      "zh": {
+        "title": "先问一句：输出给谁看",
+        "description": "格式看读者：机器间用纯文本、给人读用富文本，外加成本账与先草稿后渲染的写法。"
+      }
+    },
+    "llm-knowledge-base-solo-operators": {
+      "en": {
+        "title": "Skip the LLM knowledge base?",
+        "description": "A contrarian look at Karpathy-style AI wikis for solo operators: real upkeep costs, who actually has a knowledge problem, and the cheaper alternative."
+      },
+      "zh": {
+        "title": "先别急着搭知识库",
+        "description": "明星知识库很诱人，但一人业务常卡在执行而非知识——继续拆维护成本与更便宜替代。"
+      }
+    },
+    "openai-4-day-work-week-one-person-company": {
+      "en": {
+        "title": "The four-day week, solo edition",
+        "description": "AI-and-hours commentary from someone with no employer to negotiate with: capturing productivity as time back, before the workload quietly expands."
+      },
+      "zh": {
+        "title": "四天工作制，独行者的版本",
+        "description": "减时提案照不进一人公司：省下的时间能不能真变休息，取决于别把容量再填满。"
+      }
+    },
+    "stop-context-switching-workspace-agent": {
+      "en": {
+        "title": "Escaping the 11-tab workday",
+        "description": "For solo operators losing focus to tab-juggling: the switch-cost numbers, why chat tools add carrying, and one-environment fixes that stick."
+      },
+      "zh": {
+        "title": "别再做标签页之间的搬运工",
+        "description": "四十分钟开十一个标签页、一天切换上千次——把工作收进一个环境，附做法与边界。"
+      }
+    },
+    "what-is-claude-cowork": {
+      "en": {
+        "title": "Cowork vs Chat vs Claude Code",
+        "description": "Agentic modes for knowledge work, sorted: which Claude layer produces finished deliverables, who Cowork is built for, and who should stay in Chat."
+      },
+      "zh": {
+        "title": "从对话到交付物的那一档",
+        "description": "聊天、写码、协作三档，一个做问答、一个管交付——知识工作者的模式选择逐个拆。"
+      }
+    },
+    "what-is-obsidian-vault": {
+      "en": {
+        "title": "Notes you own, as plain files",
+        "description": "Local-first knowledge setups explained: what a vault really is, why plain Markdown keeps your corpus portable, and how agents read the same folder."
+      },
+      "zh": {
+        "title": "为什么笔记要存成本地文件",
+        "description": "纯文本、双向链接、文件夹即知识库——笔记这样存，智能体也能直接读，换工具不迁移。"
+      }
+    },
+    "workflow-builder-vs-ai-workspace": {
+      "en": {
+        "title": "Workflow builder or AI workspace",
+        "description": "A decision framework for automation buyers: if your process is a diagram, build it; if your days shift shape, the workspace bet reads better here."
+      },
+      "zh": {
+        "title": "画得出流程，还是工作没有形状",
+        "description": "流程画得出图就交给搭建器，日子没有固定形状则看工作区——下次选型沿用这套框架。"
+      }
+    },
+    "world-cup-2026-draw": {
+      "en": {
+        "title": "From World Cup draw to kickoff",
+        "description": "Fan-side planning for 2026: group-by-group storylines, the Group of Death case, and calendar-ready ways to track standings to the bracket."
+      },
+      "zh": {
+        "title": "抽签之后，观赛日程怎么排",
+        "description": "十二组对阵、死亡之组已有眉目——小组赛到淘汰赛的看点与赛程跟进，跟着赛事更新。"
+      }
+    },
+    "ai-agent-development-services": {
+      "en": {
+        "title": "AI agent outsourcing, decided honestly",
+        "description": "Field notes for anyone tempted to hire an agent build: what scopes and quotes hide, the observability gap, and when a weekend workflow beats a big contract."
+      },
+      "zh": {
+        "title": "雇人开发智能体前，先看懂报价单",
+        "description": "该雇团队还是自搭、报价里常被略过什么、五年维护要花多少？这类账订阅后继续跟。"
+      }
+    },
+    "ai-agents-2026-solo-operators": {
+      "en": {
+        "title": "2026 agent shifts, minus the hype",
+        "description": "If you run a one-person business, most agent news is noise. Notes on the execution shift that matters, the setup cost nobody advertises, and what to try first."
+      },
+      "zh": {
+        "title": "2026 年 AI Agent：给单人公司的滤噪月报",
+        "description": "给单人公司滤掉噪音的月报：哪些 Agent 变化真与你有关、执行层转型意味着什么、可以先试什么。"
+      }
+    },
+    "ai-follow-up-email-opus-4-8": {
+      "en": {
+        "title": "From meeting notes to executed next steps",
+        "description": "Meetings shouldn't end with lost action items. Notes on transcript-to-follow-up workflows, why model reliability decides draft quality, and what still needs your eyes."
+      },
+      "zh": {
+        "title": "会议结束后，跟进动作不落空",
+        "description": "会议结束不等于事情落地。订阅即得同类实测：谁负责、何时交、哪几步仍要人眼过目。"
+      }
+    },
+    "ai-workspace-agents": {
+      "en": {
+        "title": "What 'workspace agent' actually means",
+        "description": "A plain-language map of the newest AI category, updated as OpenAI, Anthropic, and desktop tools crowd the same term — so you can tell the products apart."
+      },
+      "zh": {
+        "title": "工作区 Agent：一篇讲清新品类",
+        "description": "同一个词太拥挤时，订阅后持续有这类分辨指南：环境型、对话型、预定义流程型怎么看。"
+      }
+    },
+    "best-calendar-app-solo-operators": {
+      "en": {
+        "title": "Picking a calendar by your Tuesday",
+        "description": "Calendar reviews that start from your real week, not feature counts: display, planning, and smart calendars — and why auto-schedulers go stale when you stop feeding them tasks."
+      },
+      "zh": {
+        "title": "按「你的一天怎么过」选日历",
+        "description": "选日历不该按功能数比。订阅后持续收从工作流出发的实测：三类日历怎么挑、跨平台怎么比。"
+      }
+    },
+    "building-agentic-ai-systems-build-or-buy": {
+      "en": {
+        "title": "When one agent isn't a system yet",
+        "description": "The step from a working agent to a real system — memory, tools, permissions, monitoring, recovery — plus an honest build-versus-buy read for teams of one or few."
+      },
+      "zh": {
+        "title": "一个 Agent 不够时：自建还是购买",
+        "description": "单 Agent 到系统要补五件套，账怎么算？订阅后接着读这类架构决策：自建、购买、外包的真实对价。"
+      }
+    },
+    "codex-harness-open-source": {
+      "en": {
+        "title": "What OpenAI open-sourcing its harness means",
+        "description": "Notes on the execution layer behind agents: what the open codex harness includes, what stays closed, DeepSeek's parallel play, and harness engineering as a practice."
+      },
+      "zh": {
+        "title": "Codex Harness 开源：执行层成为品类",
+        "description": "开发者向跟进：OpenAI 开源执行层后，集成怎么选、哪些仍闭源、DeepSeek 如何对应——订阅后持续拆。"
+      }
+    },
+    "deepseek-v4-api-solo-operator": {
+      "en": {
+        "title": "Model pricing, read for solo builders",
+        "description": "API-cost notes for people building on AI alone: what a V4-class price drop actually changes for margins, what stays rumor until launch, and where spend really goes."
+      },
+      "zh": {
+        "title": "模型降价，对单人开发者意味着什么",
+        "description": "API 单价下降，变化藏在哪？订阅后继续看这类成本分析：传闻与实价怎么分、钱花在哪一层。"
+      }
+    },
+    "floatcup-world-cup-2026-calendar-subscribe": {
+      "en": {
+        "title": "Never miss a 2026 World Cup kickoff",
+        "description": "Tournament-time notes for fans: FloatCup's one-click match feed, kickoffs converted to your time zone, and reminders that hold up when FIFA moves a game."
+      },
+      "zh": {
+        "title": "2026 世界杯赛程，一键进日历",
+        "description": "赛事日历的产品侧笔记：一键订阅免配置、时区与赛程变动自动跟上，订阅后持续更新这类。"
+      }
+    },
+    "genspark-vs-manus": {
+      "en": {
+        "title": "Steering or delegating your AI work",
+        "description": "Agent tool comparisons with the control question front and center: how much you stay in the loop, how credits burn on real tasks, and what ownership changes."
+      },
+      "zh": {
+        "title": "自己控场，还是把活委托给 Agent",
+        "description": "控场还是委托，是买这类工具前最该想清的问题。订阅后收到持续的对比拆解。"
+      }
+    },
+    "gpt-6-astra": {
+      "en": {
+        "title": "GPT-6 Astra: launch claims, checked",
+        "description": "Frontier-model analysis for builders: what the guarded cyber rollout means, why the ARC-AGI-3 headline needs an asterisk, and planning around per-task rather than per-token cost."
+      },
+      "zh": {
+        "title": "GPT-6 Astra：最受保护的一次发布",
+        "description": "越热闹的发布越要会读数：ARC 两种分数怎么读、分级发布你能拿到什么，订阅后持续拆。"
+      }
+    },
+    "grok-bot": {
+      "en": {
+        "title": "An always-on agent with its own computer",
+        "description": "Notes on teammate-shaped agents and the question that matters most: when every bot shares one cloud login, who guards the credentials and the blast radius?"
+      },
+      "zh": {
+        "title": "常驻 Agent：每个都有一台云电脑",
+        "description": "把账号和会话都交给常驻 Bot 前，先划清边界。订阅后跟进这类云电脑 Agent 的安全实操。"
+      }
+    },
+    "how-to-build-an-ai-agent-with-chatgpt": {
+      "en": {
+        "title": "Your first ChatGPT agent, no code",
+        "description": "Hands-on build notes for no-code agents in ChatGPT: turning one messy task into instructions that stick, choosing files and permissions, and testing before you trust it."
+      },
+      "zh": {
+        "title": "不写代码，用 ChatGPT 搭出自己的 Agent",
+        "description": "重复任务不该每次重讲一遍。订阅后继续收从零实操：一条任务怎么变成稳定指令和验收点。"
+      }
+    },
+    "introducing-floatim": {
+      "en": {
+        "title": "A messaging network where agents are citizens",
+        "description": "Behind-the-launch notes on FloatIM and the open agent stack: multi-agent group chat, roles and rules for machines, and how it sits alongside Floatboat."
+      },
+      "zh": {
+        "title": "FloatIM 上线：Agent 的一等公民群聊",
+        "description": "Agent 不该是聊天窗里的插件。订阅后跟进这条产品线的设计取舍、协议与落地节奏。"
+      }
+    },
+    "manus-ai-alternatives-2026": {
+      "en": {
+        "title": "Manus alternatives, judged by use case",
+        "description": "A usable shortlist for when Manus stays invite-only or credit-heavy: tools compared by task scope, context handling, and what 'alternative' means for your workflow."
+      },
+      "zh": {
+        "title": "Manus 排队时，先按场景看替代",
+        "description": "排队、额度、功能表都不该是选型依据。订阅后收到更多按真实场景排的替代名单。"
+      }
+    },
+    "openai-gpt-6-one-person-company": {
+      "en": {
+        "title": "Preparing your work for GPT-6",
+        "description": "What one-person companies should fix before the next frontier model lands — the scaffolding that decides whether a capability leap makes you faster or just busier."
+      },
+      "zh": {
+        "title": "GPT-6 落地前，单人公司先修地基",
+        "description": "追新模型前先修好地基。订阅后收模型周期观察：沉淀什么，能力跃迁才真能生效。"
+      }
+    },
+    "what-are-claude-managed-agents": {
+      "en": {
+        "title": "When Anthropic runs your agents",
+        "description": "Notes on hosted agent infrastructure for builders: what stateful sessions and durable event logs really guarantee, and why 'fully managed' still means beta caveats."
+      },
+      "zh": {
+        "title": "Claude 托管 Agent：把运行交给 Anthropic",
+        "description": "「我们替你运行 Agent」是对开发者说的。订阅后跟进这类平台基建：托管会话、事件日志与 beta 边界。"
+      }
+    },
+    "what-is-claude-tag": {
+      "en": {
+        "title": "@Claude, now a channel teammate",
+        "description": "What changes when AI moves from private chats into shared Slack channels: one shared agent, async execution, channel memory, and where it sits next to Cowork and Code."
+      },
+      "zh": {
+        "title": "在 Slack 里 @Claude 当频道同事",
+        "description": "一个 Agent 服务整条频道，交接与问责都变了。订阅后收到这类多人协作的持续拆解。"
+      }
+    },
+    "what-is-persistent-ai-agent": {
+      "en": {
+        "title": "The AI that remembers you between sessions",
+        "description": "The case for persistent agents in plain terms: why every stateless chat makes you pay a re-onboarding tax, and why bigger context windows don't fix it."
+      },
+      "zh": {
+        "title": "会记住你的 AI：告别每次从头解释",
+        "description": "AI 失忆的代价是反复解释。订阅后继续收概念拆解：会话与持久差在哪、为何大窗口也救不了。"
+      }
+    },
+    "workspace-agents-for-solo-operators": {
+      "en": {
+        "title": "When five roles live in one head",
+        "description": "Why a one-person company's bottleneck is switching cost, not effort: notes on tab fatigue, tool fragmentation, and workspace agents as the fix — with their honest limits."
+      },
+      "zh": {
+        "title": "一人公司为什么需要工作区 Agent",
+        "description": "一个人兼五个岗位，损耗在切换而不在干活。订阅后收「把工作收拢回一处」的连载与实测。"
+      }
+    },
+    "world-cup-2026-google-calendar-ics": {
+      "en": {
+        "title": "Put all 104 fixtures in your calendar",
+        "description": "Hands-on calendar guides for the tournament: two-minute ICS imports, subscription URLs that survive time changes, and why a dedicated World Cup layer is worth making."
+      },
+      "zh": {
+        "title": "把世界杯 104 场赛程装进你的日历",
+        "description": "看球不该靠手抄开球时间。订阅后陆续收到分步指南：ICS 导入、订阅链接与独立赛事日历怎么建。"
+      }
+    },
+    "ai-agent-solo-operators": {
+      "en": {
+        "title": "An AI agent that actually remembers you",
+        "description": "Evaluations of agent memory, context continuity, and desktop integration — for solo operators who want workflow memory without managing a server."
+      },
+      "zh": {
+        "title": "选 Agent 先看它记不记得你",
+        "description": "别急着搭服务器，先弄清上下文延续、执行记忆与桌面集成这三样，再定自托管还是工作区原生。"
+      }
+    },
+    "ai-assistant-for-personal-use-at-work": {
+      "en": {
+        "title": "Match the assistant to your work scenario",
+        "description": "Scenario-first notes on personal AI assistants for individual work — admin, research, client tone, planning — each ending with a trial plan you can run before paying."
+      },
+      "zh": {
+        "title": "个人 AI 助手：按场景挑，不是按榜单",
+        "description": "先把日常拆成行政、研究、客户沟通、内容与规划五类场景，再各给七天试用逐项验收。"
+      }
+    },
+    "ai-meeting-preparation": {
+      "en": {
+        "title": "Meeting prep that starts before you do",
+        "description": "A recurring column on the four-stage pre-meeting pipeline — context, documents, brief, carry-over — for solo founders with client calls and standups stacked in the calendar."
+      },
+      "zh": {
+        "title": "会还没开，一页纸简报已就位",
+        "description": "拆开会前四段流水线：收集上下文、调取文档、生成简报、结转上次待办，客户通话开场前一切就位。"
+      }
+    },
+    "automate-tiktok-shop-research-fastmoss-floatboat": {
+      "en": {
+        "title": "TikTok Shop research that runs itself, weekly",
+        "description": "Field notes on giving a recurring research run its own desk: live FastMoss sessions, saved evidence, history comparisons, and a brief that verifies its own numbers."
+      },
+      "zh": {
+        "title": "定时开工的 TikTok 调研台",
+        "description": "看一次真实的 TikTok 调研任务：留存证据、比对历史，写完的经营简报还会自己再查一遍。"
+      }
+    },
+    "best-claude-code-alternatives": {
+      "en": {
+        "title": "Coding agents, ranked by job shape",
+        "description": "Choose a coding agent the way this ranking does — by interface, ownership, and autonomy — then keep reading as the reference row moves."
+      },
+      "zh": {
+        "title": "Claude Code 替代：按编码工种选",
+        "description": "把这套决策地图带回家：IDE 日常、开源自持、git 原生、云端自主各自赢在哪，以及 Claude Code 何时仍是基准。"
+      }
+    },
+    "calendar-driven-ai-vs-chat-ai": {
+      "en": {
+        "title": "Calendar-driven vs chat: who initiates",
+        "description": "The design-philosophy split behind proactive AI — events as triggers, the calendar as runtime — plus where each paradigm still belongs."
+      },
+      "zh": {
+        "title": "日历驱动 vs 聊天框：关键在谁发起",
+        "description": "一篇篇拆「谁发起工作」：聊天适合开放探索，日历驱动适合周期与期限——两种范式，各有归位。"
+      }
+    },
+    "context-engineering-for-ai-agents": {
+      "en": {
+        "title": "Why context beats the model you choose",
+        "description": "Essays on the four context layers — static, session, task, environmental — and on accumulated context as the asset the next agent race will be decided over."
+      },
+      "zh": {
+        "title": "比选模型更重要的是喂对上下文",
+        "description": "逐期拆开静态、会话、任务、环境四层上下文：模型会更强，但你的事实只有你能积累，这才是护城河。"
+      }
+    },
+    "deepseek-v4-pro-0813": {
+      "en": {
+        "title": "DeepSeek V4 Pro 0813 for budget agent builders",
+        "description": "What a silent GA, vendor-only benchmarks, and a fast-approaching peak-price window mean for developers running long agent loops on a budget."
+      },
+      "zh": {
+        "title": "V4 Pro 0813：先看懂涨价，再开跑 Agent",
+        "description": "讲透这次静默转正：哪些 Agent 基准只能当声称、峰值定价会把成本抬到几倍——预算型开发者的读法。"
+      }
+    },
+    "gemini-3-5-integration-solo-operators": {
+      "en": {
+        "title": "Gemini 3.5 Flash, tried on real solo work",
+        "description": "Hands-on notes from testing Gemini 3.5 on document-heavy and Google-heavy solo workflows — where a 1M-token window pays off, and when staying put wins."
+      },
+      "zh": {
+        "title": "Gemini 3.5 值不值得多占一个席位",
+        "description": "按真实任务实测 Gemini 3.5 Flash：长文档不切块、结构化抽取更稳，同时也算清「再多一个模型」的切换成本。"
+      }
+    },
+    "glm-5-3": {
+      "en": {
+        "title": "GLM-5.3 and the economics of open weights",
+        "description": "Notes on a point release with no new base — and what its coding gains, token efficiency, and the two-week wait for weights mean for agent budgets."
+      },
+      "zh": {
+        "title": "GLM-5.3：不换基座，编码先涨",
+        "description": "同一基座靠后训练涨出约五成编码力，输出 token 也更省——开放权重落地前，能力与安全两面都得看清。"
+      }
+    },
+    "gpt-image-2-manga-comic-workflow": {
+      "en": {
+        "title": "Making manga chapters with GPT Image 2",
+        "description": "A solo creator's workbook: CJK speech bubbles that stay readable, a character reference that holds across panels, and the workflow limits that remain."
+      },
+      "zh": {
+        "title": "用 GPT Image 2 画整章漫画的实测",
+        "description": "以一次四页日漫测试为底稿：气泡文字怎么保持可读、角色怎么跨格不崩，哪些还得手改。"
+      }
+    },
+    "gumloop-alternatives-2026": {
+      "en": {
+        "title": "Gumloop alternatives, sorted by who maintains them",
+        "description": "Field notes on the Gumloop-sized decision: node-canvas power versus assistant-style tools, compared on who really has to build and maintain each one."
+      },
+      "zh": {
+        "title": "离开 Gumloop 前，先看决策地图",
+        "description": "在 Gumloop 与替代品之间摇摆的话：学习曲线、积分定价与节点假设是真实摩擦，按维护成本对号入座更稳。"
+      }
+    },
+    "how-to-build-deepseek-agent": {
+      "en": {
+        "title": "From DeepSeek API key to a working loop",
+        "description": "A working reference for the DIY route: picking V4 Pro or Flash, wiring tool calls, and building the agent loop in Python or Node — under fifty lines."
+      },
+      "zh": {
+        "title": "十五分钟，从 API Key 跑到 Agent 循环",
+        "description": "给 DIY 路线的手册式笔记：模型怎么选、工具调用怎么接进循环，代码量很少，照着跑就行。"
+      }
+    },
+    "introducing-flow-mode": {
+      "en": {
+        "title": "Voice-to-document, minus the copy-paste loop",
+        "description": "Notes on a voice-first writing layer where dictation, in-place Agent edits, batch voice annotations, and live meeting output share one surface — your draft."
+      },
+      "zh": {
+        "title": "说、改、开会，都在同一份草稿上",
+        "description": "记录口述写作的手感：边说话边改句子、语音批注打包交给 Agent，会还没散就能先出待办清单。"
+      }
+    },
+    "meta-muse-spark-one-person-company": {
+      "en": {
+        "title": "Meta Muse Spark vs the should-I-switch loop",
+        "description": "Reads for one-person businesses caught in the every-release question: which new models change output, which only add switching cost, and what to actually test."
+      },
+      "zh": {
+        "title": "Muse Spark：新模型不等于新工作流",
+        "description": "围绕「该不该换」写给一人公司：基准、切换成本与工作流整合——哪款真正改变产出，哪款只添热闹。"
+      }
+    },
+    "raycast-for-windows-floatboat": {
+      "en": {
+        "title": "What Windows users actually want from a launcher",
+        "description": "Notes for people still searching Raycast alternatives on Windows: what moving past the launcher into an AI workspace actually changes about daily work."
+      },
+      "zh": {
+        "title": "Windows 用户等的不是启动器",
+        "description": "写给还在搜 Raycast 替代品的人：答案可能不是启动器，而是守着文件与浏览器的 AI 工作区。"
+      }
+    },
+    "what-gstack-gets-right-about-one-person-businesses": {
+      "en": {
+        "title": "The role-based method behind gstack",
+        "description": "Separate research, strategy, and writing into distinct roles — the gstack insight for solo operators switching hats all day."
+      },
+      "zh": {
+        "title": "给 AI 一个角色，别只丢一句话",
+        "description": "把研究、策略、写作拆成独立角色再交付——连质量都会变，单人也要像团队那样分工，边界照实讲。"
+      }
+    },
+    "what-is-deepseek-agent": {
+      "en": {
+        "title": "Picking your DeepSeek agent archetype",
+        "description": "Notes on the four archetypes hiding under the term DeepSeek Agent — native CLI, generic harness, chat platform, desktop — so you can route to the right one."
+      },
+      "zh": {
+        "title": "选 DeepSeek Agent：先认四种原型",
+        "description": "在四种原型里定位：原生 CLI、通用宿主、聊天平台与桌面编排，各自为谁而设，别被一个名字带偏。"
+      }
+    },
+    "what-is-vibe-coding": {
+      "en": {
+        "title": "Vibe coding, honestly assessed",
+        "description": "Notes for solo founders weighing plain-language coding: where AI-built tools genuinely ship fast, where they turn fragile, and what counts as a real win."
+      },
+      "zh": {
+        "title": "Vibe Coding 能帮一人公司走多快",
+        "description": "说人话拆解：临时工具与内部自动化真能快，碰到状态与安全就露怯——边界比 hype 更值得订。"
+      }
+    },
+    "workspace-agents-vs-chat-assistants": {
+      "en": {
+        "title": "Respond or operate: two AI surfaces",
+        "description": "The surface decides what AI can do: chat answers in turns, workspace agents act beside your files, and where each still breaks, so you can route work correctly."
+      },
+      "zh": {
+        "title": "聊天助手与工作台 Agent：回答还是执行",
+        "description": "分辨界面差异：聊天助手按回合作答、工作区 Agent 守在文件旁执行，什么时候仍该用聊天也讲明白。"
+      }
+    },
+    "world-cup-2026-groups-standings": {
+      "en": {
+        "title": "World Cup 2026 groups, read through the bracket",
+        "description": "For fans working through twelve group tables: notes on tiebreaker math, the decisive results, and the knockout fixtures worth putting on the calendar."
+      },
+      "zh": {
+        "title": "世界杯出线定了，淘汰赛路径怎么走",
+        "description": "给逐组翻表的球迷：出线规则、同分怎么破、关键胜负怎么定淘汰赛走向，重点场次也圈进日历。"
+      }
+    },
+    "ai-agent-use-cases-real-examples": {
+      "en": {
+        "title": "AI agent use cases, limitations included",
+        "description": "Subscribe for use cases built from real solo workflows — the setup, the failure modes, and the honest answer about what still needs a human pass."
+      },
+      "zh": {
+        "title": "AI Agent 真实案例：失败细节也不藏",
+        "description": "看腻了只晒前后对比的案例？这里把搭建过程、失败模式与仍需人工的判断一起写给你看。"
+      }
+    },
+    "ai-automation-agency-do-you-need-one": {
+      "en": {
+        "title": "Before hiring an AI automation agency",
+        "description": "Subscribe for a buyer's filter on automation agencies: when a five-figure build earns its keep, and the four deliverables any handover must include."
+      },
+      "zh": {
+        "title": "要不要请 AI 自动化外包公司？",
+        "description": "先分清该雇、自建还是再等等，再看交付是否包含文档与所有权——订阅这份签约前判断。"
+      }
+    },
+    "ai-scheduling-agent": {
+      "en": {
+        "title": "Where your scheduling agent sits in four generations",
+        "description": "Subscribe to a category map that places any scheduling tool on four generations — and tells you whether it books slots or runs the work behind them."
+      },
+      "zh": {
+        "title": "AI 日程 Agent：看看你在第几代",
+        "description": "判断日程工具，关键不是会不会约时间，而是排定之后替不替你干活——订阅这份四代定位图。"
+      }
+    },
+    "best-ai-agent-builder-2026": {
+      "en": {
+        "title": "Picking an AI agent builder that lasts",
+        "description": "Subscribe for builder advice that outlives launch hype: compare billing units, test one real workflow, and ask which platforms still run in three months."
+      },
+      "zh": {
+        "title": "AI Agent 搭建平台：先看怎么算钱",
+        "description": "挑平台先别信榜单：计费单位、是否真 Agent、三个月后谁还在跑——订阅这套挑法。"
+      }
+    },
+    "best-claude-cowork-alternatives": {
+      "en": {
+        "title": "Claude Cowork alternatives, by office job",
+        "description": "Subscribe for alternatives ranked by how your non-developer work actually runs — calendar rhythm, M365 depth, cloud delegation, local control, or research-to-deck."
+      },
+      "zh": {
+        "title": "Claude Cowork 替代，按办公形态排",
+        "description": "办公 Agent 谁更适合你，看工作形态：日历节奏、M365 套件、云端委托还是本地文件——订阅这份按职能排序。"
+      }
+    },
+    "claude-code-non-developers-solo-operators": {
+      "en": {
+        "title": "Claude Code for non-developer solo operators",
+        "description": "Subscribe for plain-terms tool advice: whether the terminal, setup bar, and shared usage limits make Claude Code worth it when your business has no codebase."
+      },
+      "zh": {
+        "title": "不会写代码，Claude Code 要用吗？",
+        "description": "开发者刷屏不代表你也需要：终端门槛、共享额度、以代码库为前提，订阅同款冷静判断。"
+      }
+    },
+    "cordis-plugin-framework": {
+      "en": {
+        "title": "Cordis: reversible plugins for agent runtimes",
+        "description": "Subscribe for infrastructure essays that go beneath announcements — why reversible effects and declared dependencies make self-evolving agent runtimes safe to run."
+      },
+      "zh": {
+        "title": "Cordis：可逆插件的 Agent 内核",
+        "description": "拆解可逆副作用与依赖声明，讲清 Agent 为何需要插件级的回滚安全——订阅这类底层拆解。"
+      }
+    },
+    "dynamic-workflows-build-or-use-workspace": {
+      "en": {
+        "title": "Dynamic Workflows: build or use a workspace",
+        "description": "Subscribe for a build-or-use framework on dynamic workflows — when sub-agent scoping, cost, and maintenance are worth it, and when they are not."
+      },
+      "zh": {
+        "title": "动态工作流：自建还是用工作区",
+        "description": "子 Agent 编排不免费：作用域、成本与维护谁买单，该自建还是让工作区替跑——订阅这份判断框架。"
+      }
+    },
+    "gemini-3-7-flash": {
+      "en": {
+        "title": "Gemini 3.7 Flash and the January price trap",
+        "description": "Subscribe for model notes that separate verified coding gains from promotional math — and what January's rate doubling means for agent pipelines."
+      },
+      "zh": {
+        "title": "Gemini 3.7 Flash：编码实增，价格将翻倍",
+        "description": "三周一代的节奏里，独立验证的编码提升、一月翻倍前的成本账——订阅这类模型速评。"
+      }
+    },
+    "google-calendar-vs-apple-calendar": {
+      "en": {
+        "title": "Google vs Apple Calendar: pick by ecosystem",
+        "description": "Subscribe for a calendar decision built around where your work already lives — client sharing, tasks beside events, and whether reminders ever become work."
+      },
+      "zh": {
+        "title": "选日历前先问：工作住在哪边",
+        "description": "共享、任务与同步的取舍背后是同一问：你的工作住在哪边？订阅这份日历选择判断。"
+      }
+    },
+    "gpt-image-2-storyboard-solo": {
+      "en": {
+        "title": "Solo storyboarding with GPT Image 2",
+        "description": "Subscribe for solo-production field notes: keeping character and lighting continuous across frames, and why the shot list still comes first."
+      },
+      "zh": {
+        "title": "GPT Image 2 单人分镜：实测边界",
+        "description": "24 帧连贯、同人同景不穿帮，靠多轮迭代而非反复抽卡；镜头表仍得自己先写——订阅这份单人实测。"
+      }
+    },
+    "gumloop-review-2026": {
+      "en": {
+        "title": "Gumloop: built for process thinkers",
+        "description": "Subscribe for verdict-style tool reviews: when Gumloop's node canvas earns its learning curve, and why exploratory work still slips through it."
+      },
+      "zh": {
+        "title": "Gumloop 适合流程思维型玩家",
+        "description": "能画成流程图的活它确实强，边做边想的活会卡壳——订阅这份把学习曲线摊开说的测评。"
+      }
+    },
+    "how-to-use-obsidian-with-ai-agent": {
+      "en": {
+        "title": "Run an agent from your Obsidian vault",
+        "description": "Subscribe for setups that keep your vault as the source of truth while a desktop agent reaches email, Drive, and PDFs — notes stay local, work ships."
+      },
+      "zh": {
+        "title": "Obsidian 当事实源，Agent 管执行",
+        "description": "笔记留在本地当事实源，桌面 Agent 跨邮件、云盘与 PDF 协同执行——订阅这套「库归库、活归活」的搭法。"
+      }
+    },
+    "kimi-k3-floatboat": {
+      "en": {
+        "title": "Kimi K3, mapped to calendar events",
+        "description": "Subscribe for model-onboarding notes without API setup: where K3's million-token context and visual reasoning change meeting prep and design review loops."
+      },
+      "zh": {
+        "title": "Kimi K3：能力对应哪类日程",
+        "description": "1M 上下文、视觉理解，落到会前准备与设计验收这类日程上才有意义——订阅看怎么对应。"
+      }
+    },
+    "minimax-h3-max-infinite-ai-livestream": {
+      "en": {
+        "title": "Infinite AI livestreams, faster than playback",
+        "description": "Subscribe for breakdowns of generative-video frontiers: what faster-than-playback enables, which 'live' claims hold, and what a 24/7 stream costs per day."
+      },
+      "zh": {
+        "title": "无限 AI 直播：生成快过播放",
+        "description": "把 H3、H3 Max、H3 Max Live 三个产品名分层，附 24/7 连播的真实日成本——订阅这种带算账的前沿拆解。"
+      }
+    },
+    "relevance-ai-vs-n8n": {
+      "en": {
+        "title": "Relevance AI or n8n: two philosophies",
+        "description": "Subscribe for comparisons that start with how you work: describing agents in plain language or wiring every node — including who pays what as it scales."
+      },
+      "zh": {
+        "title": "Relevance AI 还是 n8n，先对工作观",
+        "description": "它们不是竞品而是两种哲学：大白话描述 Agent，还是亲手控每个节点——订阅这份对照再选。"
+      }
+    },
+    "what-if-your-calendar-could-run-itself": {
+      "en": {
+        "title": "When your calendar runs the work it predicts",
+        "description": "Subscribe for the design behind calendar-driven agents: prep assembled before calls, drafts pushed toward deadlines, follow-up after — with you reviewing, not remembering."
+      },
+      "zh": {
+        "title": "让日历触发工作，而非记事",
+        "description": "会前简报、截止推进、会后跟进自动就位，日历条目从容器变开关——订阅这套触发逻辑。"
+      }
+    },
+    "what-is-doubao-work": {
+      "en": {
+        "title": "Doubao Work: ByteDance's office-agent play",
+        "description": "Subscribe for explainers that locate office agents properly: what Doubao Work's local-desktop execution and Feishu integration are — and what they are not."
+      },
+      "zh": {
+        "title": "豆包工作：字节的办公 Agent",
+        "description": "能操作本地电脑、以飞书为战场的办公 Agent 到底怎么定位，和日历驱动路线有何分岔——订阅这份地图。"
+      }
+    },
+    "where-is-world-cup-2026-host-cities": {
+      "en": {
+        "title": "World Cup 2026 host cities, planned for travel",
+        "description": "Subscribe for planning-grade tournament guides: which of the 16 host markets a traveling fan actually visits, and the venue names FIFA will use."
+      },
+      "zh": {
+        "title": "世界杯 2026：16 座城市出行地图",
+        "description": "11 城在美国、2 城在加拿大、3 城在墨西哥：主办城市、赛事场馆名与观赛出行叠成一张地图——订阅规划参考。"
+      }
+    },
+    "workspace-agents-vs-workflow-builders": {
+      "en": {
+        "title": "Workspace agents: when work won't fit a template",
+        "description": "Subscribe for a split beyond 'old vs new AI': builders run the path you drew, workspace agents pick one mid-task — and the cost lands at different moments."
+      },
+      "zh": {
+        "title": "Agent 与流程搭建：谁接例外活",
+        "description": "流程搭建器执行你画好的路径，工作区 Agent 边做边选路；一次性、带判断的活交给谁——订阅这份分野。"
+      }
+    },
+    "world-cup-2026-guide": {
+      "en": {
+        "title": "World Cup 2026: the 48-team primer",
+        "description": "Subscribe for pre-tournament orientation without the noise: dates, the new Round-of-32 format, host split, and putting 104 matches on your calendar."
+      },
+      "zh": {
+        "title": "2026 世界杯：48 队赛制先理清",
+        "description": "39 天、104 场、新增 32 强淘汰轮：日期与赛制一次讲清，还能把整届赛事同步进日历——订阅开赛前指南。"
+      }
+    },
+    "ai-agent-vs-ai-assistant": {
+      "en": {
+        "title": "Assistant or agent? A two-question tell",
+        "description": "Vendors blur the line between assistants and agents on purpose, so run the two questions before you wire any tool into a workflow on a wrong assumption."
+      },
+      "zh": {
+        "title": "助手还是智能体？两问便知",
+        "description": "厂商刻意模糊助手与智能体；接入工作流前先给工具分类，别默认它有长期记忆。"
+      }
+    },
+    "ai-automation-agency-pricing": {
+      "en": {
+        "title": "Why automation quotes swing from $2.5k to $18k",
+        "description": "For what sounded like the same project, three agencies quoted very different fees, and the piece traces that spread while naming what stays out of the project price."
+      },
+      "zh": {
+        "title": "自动化外包报价为何差七倍",
+        "description": "同一件事，机构报价可差数倍；搞清价差来自哪里，也留意不写进项目费的长期维护。"
+      }
+    },
+    "ai-tools-for-business-automation-2026": {
+      "en": {
+        "title": "Automation buys that won't become subscription sprawl",
+        "description": "Most solo automation stacks end with seven subscriptions, three of them forgotten—so start with the five payoff areas and run a quarterly check for quiet breakage."
+      },
+      "zh": {
+        "title": "买了不落灰的自动化组合",
+        "description": "自动化别急着堆订阅；先做回报最高的五类环节，每季度定时排查悄悄失灵的工作流。"
+      }
+    },
+    "best-ai-agent-platform-2026": {
+      "en": {
+        "title": "Three questions before you pick an agent platform",
+        "description": "Picking on demo flash often means rebuilding in six months, so sort platforms into four archetypes and run the solo evaluation before any free trial."
+      },
+      "zh": {
+        "title": "选智能体平台先答三问",
+        "description": "凭演示选平台，半年后容易推倒重来；先分清四类平台原型，再按单人运营标准逐条验收。"
+      }
+    },
+    "best-claude-tag-alternatives": {
+      "en": {
+        "title": "Claude Tag alternatives, ranked by team job",
+        "description": "Most alternatives lists are keyword matches, not fit; this one ranks Slack-channel AI teammates by what your team actually delegates, keeping Claude Tag as reference."
+      },
+      "zh": {
+        "title": "AI队友别照关键词名单挑",
+        "description": "搜替代品的团队常卡在许可、锁定或审计；按真实委派形态选，认清何时留在原版才对。"
+      }
+    },
+    "claude-code-vs-cowork-vs-tag": {
+      "en": {
+        "title": "Which Claude surface fits your task horizon",
+        "description": "Code, Cowork, and Tag run the same agent with different jobs; a horizon rule—minutes, an hour, or hours with self-scheduling—tells you which surface to open."
+      },
+      "zh": {
+        "title": "Claude三个工作台怎么挑",
+        "description": "同一模型三种用法：终端写码、桌面管文档、频道当同事；按任务能跑多久来选一个打开。"
+      }
+    },
+    "custom-ai-agent-development": {
+      "en": {
+        "title": "Custom AI builds: three tiers, three bills",
+        "description": "Agencies write most advice here, so this piece runs the other direction and maps your project to build, configure, or integrate before scoping, drift, and maintenance costs appear."
+      },
+      "zh": {
+        "title": "定制开发分三档，先对号入座",
+        "description": "写这类稿的多是接单方；本文反着算：先分清自建、配置、集成三档，再问清上线后维护归谁。"
+      }
+    },
+    "effort-control-fast-mode-ai-work": {
+      "en": {
+        "title": "Effort Control: the dial you set backward",
+        "description": "From real solo sessions rather than benchmarks, the piece shows where extra thinking earns its keep and where low-effort Fast Mode is genuinely fine."
+      },
+      "zh": {
+        "title": "努力档位你多半调反了",
+        "description": "多数人把最大努力浪费在琐事上；按风险分档位，低风险用快模式，高风险慢慢想。"
+      }
+    },
+    "gemini-3-8-flash": {
+      "en": {
+        "title": "Where Gemini 3.8 Flash wins and still trails",
+        "description": "Solo builders now buy models on cadence, so read what Gemini 3.8 Flash actually changes: benchmark wins, the works-harder token tax, and the gaps that remain."
+      },
+      "zh": {
+        "title": "3.8Flash赢面与短板",
+        "description": "三周一个新模型，别只看跑分就掏钱；弄懂它哪项赢、哪项仍输，以及高努力档多烧的额度。"
+      }
+    },
+    "google-calendar-vs-outlook": {
+      "en": {
+        "title": "Pick a calendar by where your clients live",
+        "description": "For solo consultants, the real question is cross-ecosystem friction; see which platform fits your client mix, and why an ICS subscription is only a read-only view."
+      },
+      "zh": {
+        "title": "日历选型先看客户住哪个生态",
+        "description": "跨生态顾问比的是日历摩擦而非功能；按客户生态挑选，并记得ICS订阅只能看不能改。"
+      }
+    },
+    "gpt-image-2-vs-midjourney-nano-banana-2": {
+      "en": {
+        "title": "Three image tools, one fits your output",
+        "description": "GPT Image 2 leads on text rendering, Midjourney on artistic control, and Nano Banana 2 on price; match the winner to your deliverables before your subscription renews."
+      },
+      "zh": {
+        "title": "绘图工具按交付物来选",
+        "description": "三种图像模型各有擅场：文字渲染、系列一致性与订阅成本；先按交付物定，再决定续哪家。"
+      }
+    },
+    "how-one-person-businesses-work-like-a-team-with-ai": {
+      "en": {
+        "title": "Give AI a role, not just a prompt",
+        "description": "Solo founders who brief AI like a teammate stop re-explaining context and get steadier output; this piece shows the job-description habit that makes it click."
+      },
+      "zh": {
+        "title": "先给AI一个岗位再开口派活",
+        "description": "把AI当万能助理，输出总不稳定；动手前先写一句岗位说明，让它记住你的口吻与标准。"
+      }
+    },
+    "html-anything-review-2026": {
+      "en": {
+        "title": "When your agent should ship raw HTML",
+        "description": "When letting a local coding agent write HTML, check this: 75 templates and multi-platform export are the upside, and the setup caveats are the honest part."
+      },
+      "zh": {
+        "title": "让智能体直接写HTML值不值",
+        "description": "『让智能体直接写HTML』已落地成开源工具；实测讲清模板、多端导出与安装门槛。"
+      }
+    },
+    "lark-cli-when-to-use-it": {
+      "en": {
+        "title": "Lark CLI: mind the auth rabbit hole",
+        "description": "Feeding Lark into your stack looks like twenty minutes until App IDs, OAuth redirects, and token expiry appear; this tells solo users when building it is worth it."
+      },
+      "zh": {
+        "title": "LarkCLI值不值得自己搭",
+        "description": "把飞书接进自动化，常从二十分钟变成折腾一整天；动手前先分清哪些场景真的划算。"
+      }
+    },
+    "no-code-ai-agent-builder": {
+      "en": {
+        "title": "The 2 a.m. test for no-code agents",
+        "description": "No-code gets an agent working by Tuesday; the real test is whether it runs unattended at 2 a.m., weighing no-code, low-code, and workspace tradeoffs."
+      },
+      "zh": {
+        "title": "无代码建Agent的深夜考验",
+        "description": "无代码能快速跑通原型，但要它凌晨无人值守仍可靠是另一回事；三类路线取舍文中说清。"
+      }
+    },
+    "scale-one-person-business-without-hiring": {
+      "en": {
+        "title": "Grow output without hiring or grinding",
+        "description": "When solo revenue stalls, hiring looks right until you count coordination cost; the piece reframes growth around systems and productized offers, then names when hiring earns its place."
+      },
+      "zh": {
+        "title": "营收增长别急着招人",
+        "description": "增长不等于加人：协调成本会吃掉收益；先把流程系统化、服务产品化，再判断何时才该招人。"
+      }
+    },
+    "what-is-agentic-calendar": {
+      "en": {
+        "title": "When your calendar starts running work",
+        "description": "Smart scheduling answered 'when,' while an agentic calendar acts on what events mean—gathering context before a call, driving follow-up after—and this piece draws that boundary."
+      },
+      "zh": {
+        "title": "会自己干活的日历长什么样",
+        "description": "会前自动备料、会后自动跟进，日历从时刻表变成执行台；本文给出这一新品类的清晰定义。"
+      }
+    },
+    "what-is-llm-wiki": {
+      "en": {
+        "title": "Your research deserves an LLM wiki",
+        "description": "RAG cooks from scratch each time you ask, while an LLM wiki pre-compiles sources into living notes; this explains the method and who should build one."
+      },
+      "zh": {
+        "title": "知识库让智能体来建来养",
+        "description": "问答检索每次从零现做；知识库把资料预编译成会自动更新的笔记，本文讲清原理与适用人群。"
+      }
+    },
+    "why-ai-forgets-between-sessions": {
+      "en": {
+        "title": "The reset tax of stateless AI",
+        "description": "Every new session costs eight to twelve minutes of re-explaining, several times a day; the piece separates memory, context, and reusable execution—and what to look for."
+      },
+      "zh": {
+        "title": "无状态AI每天让你白教一小时",
+        "description": "每次会话都把客户与偏好从头讲一遍，一天耗掉一小时；本文拆开记忆、上下文与可复用执行。"
+      }
+    },
+    "world-cup-2026-bracket": {
+      "en": {
+        "title": "Printable World Cup 2026 bracket, updated",
+        "description": "48 teams mean a Round of 32 and a bigger knockout tree; this page tracks the current matchups and provides a printable PDF for scores and pool notes."
+      },
+      "zh": {
+        "title": "48队世界杯淘汰赛追踪表",
+        "description": "扩军48队的首轮是全新32强赛；对阵持续更新，附可打印记分表，比分与下注笔记记在这。"
+      }
+    },
+    "world-cup-2026-schedule": {
+      "en": {
+        "title": "World Cup 2026: sync all 104 matches",
+        "description": "104 matches across 16 cities and three time zones is too many to remember—the guide covers live calendar subscriptions and reminders, so no kickoff sneaks by."
+      },
+      "zh": {
+        "title": "104场世界杯赛程进日历",
+        "description": "104场、16城、三国时区，靠记性必漏；订阅实时赛程日历，让开赛提醒自动到达。"
+      }
+    },
+    "ai-agent-vs-chatbot": {
+      "en": {
+        "title": "Know the Line Between Chatbots and Agents",
+        "description": "A chatbot stops at words; an agent finishes the job. Field notes on tool use and session memory, for anyone deciding which one to build on."
+      },
+      "zh": {
+        "title": "读懂 AI Agent，先分清它和 Chatbot",
+        "description": "Chatbot 止于回答，Agent 会动手把事办完。来信持续拆解二者的能力分界，帮你选对工具。"
+      }
+    },
+    "ai-browser-agent-vs-ai-browser-vs-ai-workspace": {
+      "en": {
+        "title": "Where Agents Live: Extension, Browser, or Workspace",
+        "description": "Extension, AI browser, and desktop workspace each fit a different kind of work. Teardown notes on where each breaks, before you spend a weekend migrating."
+      },
+      "zh": {
+        "title": "插件、AI 浏览器、工作台，按活选载体",
+        "description": "插件管登录后的网页活，浏览器与桌面工作台各管一摊。我们实测三类工具，帮你按活选对载体。"
+      }
+    },
+    "ai-workflow-for-solo-founders": {
+      "en": {
+        "title": "When AI Has No Model of Your Methods",
+        "description": "Every morning, generic AI meets you for the first time — no model of your methods. Notes on tools that learn how you work across files, browser, and decisions."
+      },
+      "zh": {
+        "title": "AI 认识任务，却不认识你的工作模型",
+        "description": "AI 不记得你的做事方法，每次像初次见面。来信聊它如何跨文件、浏览器与决策学你的工作方式。"
+      }
+    },
+    "best-ai-scheduling-assistant": {
+      "en": {
+        "title": "Which Scheduling AI Actually Runs Your Day",
+        "description": "A booking link and an autonomous calendar OS are different products. A short framework for telling the four generations apart and choosing what you need next."
+      },
+      "zh": {
+        "title": "选 AI 排程助手前，先看代际差距",
+        "description": "会找空档、会重排、会替你执行，三类产品差在时间填满之后。来信按四代拆解，帮你对号入座。"
+      }
+    },
+    "browser-ai-agent-security-questions": {
+      "en": {
+        "title": "Before You Hand Logins to a Browser Agent",
+        "description": "Agents act inside logged-in sessions, where one bad instruction can send mail or delete files. A running checklist on permissions, allowlists, and prompt injection."
+      },
+      "zh": {
+        "title": "把登录态交给浏览器 Agent 前，过五问",
+        "description": "它带着你的登录态行动，坏指令可能发信、删文件。订阅权限与白名单清单，授权放行前过一遍。"
+      }
+    },
+    "claude-managed-agents-one-person-company": {
+      "en": {
+        "title": "Managed Agents: Useful for One Person or Not",
+        "description": "Hosted agents run for hours without you, billed at $0.08 per session-hour. A plain look at what is live versus roadmap — plus the solo-operator verdict."
+      },
+      "zh": {
+        "title": "托管 Agent 适合一人公司吗",
+        "description": "沙盒、长会话、按时计费都有人替你管，beta 与数据归属仍是顾虑。来信核实托管 Agent 对一人公司实不实用。"
+      }
+    },
+    "deepseek-agent-function-calling": {
+      "en": {
+        "title": "DeepSeek Agents: Get Tool Calls Right",
+        "description": "Malformed JSON and racing parallel calls break more agents than reasoning does. Field-tested notes on schemas, strict mode, and repair patterns for DeepSeek tool calling."
+      },
+      "zh": {
+        "title": "深挖 DeepSeek 工具调用的正确姿势",
+        "description": "多数失效不在推理而在调用层：坏 JSON、并行竞态。来信给你 schema、严格模式与修复层的实测写法。"
+      }
+    },
+    "feishu-cli-solo-work-setup": {
+      "en": {
+        "title": "Feishu CLI Solo Setup, Past the Hype",
+        "description": "Sending messages and reading docs are different risk classes — tokens expire, no one is on call, and you are the ops. Notes from running Feishu CLI solo."
+      },
+      "zh": {
+        "title": "飞书 CLI：单人跑自动化先看运维账",
+        "description": "发消息与读文档是两类风险：token 会过期、深夜没人救火，你就是运维。订阅飞书 CLI 的单人实战记录。"
+      }
+    },
+    "genspark-ai-pricing": {
+      "en": {
+        "title": "Genspark Pricing: Where the Limits Bite",
+        "description": "Free-tier daily caps, Sparkpage credit burn, and a steep Plus-to-Pro jump — the real cost picture before you sign up and find out later."
+      },
+      "zh": {
+        "title": "订 Genspark 前，先看懂额度怎么烧",
+        "description": "免费档每日上限、Sparkpages 重度吃分、Plus 到 Pro 跳价十倍。来信给出各档真实用量，下单前心里有数。"
+      }
+    },
+    "gpt-5-6-floatboat": {
+      "en": {
+        "title": "GPT-5.6 in Floatboat: Match Model to Task",
+        "description": "Sol, Terra, and Luna map to meeting depth — built into Floatboat with no API keys. Notes on which tier each calendar event deserves, so cost follows the task."
+      },
+      "zh": {
+        "title": "按会议轻重挑 GPT-5.6 档位",
+        "description": "Sol 扛硬活、Terra 做日常、Luna 跑分类，三档内置、无需 API key。来信讲怎么让模型成本跟着日历事件走。"
+      }
+    },
+    "grok-3-api-solo-operator": {
+      "en": {
+        "title": "Grok 3 API: Cheap for Whom, Really?",
+        "description": "\"Open\" means API access, not open-source weights — and Grok 3 is not the budget pick; Mini and Fast are. When a solo token bill justifies switching."
+      },
+      "zh": {
+        "title": "换 Grok API 前，先算清这笔账",
+        "description": "接口开放不等于权重开源，Grok 3 也不算平价——Mini 与 Fast 才是。来信拆解月账单到什么量级才值得换。"
+      }
+    },
+    "how-to-build-ai-agents-for-repeated-work": {
+      "en": {
+        "title": "Your First Agent Should Be Boring",
+        "description": "Skip the grand vision; pick one job you do three times a week and map its decisions. This framework shipped a working agent in a day."
+      },
+      "zh": {
+        "title": "第一个 Agent 就该做件无聊的活",
+        "description": "挑一件每周重复三次的活，画清输入、判断、输出，别一上来搭大戏。来信还原这套当天跑通的框架。"
+      }
+    },
+    "html-is-the-new-markdown": {
+      "en": {
+        "title": "Readable AI Output: HTML Over Markdown?",
+        "description": "An agent artifact written for human eyes needs more than a wall of text. We test where HTML earns its tokens, and where Markdown still wins."
+      },
+      "zh": {
+        "title": "AI 产物要给人读，格式值得重想",
+        "description": "AI 产出若供人阅读，带侧栏与色标的 HTML 往往比整墙文字耐看。来信拆解它与 Markdown 的取舍。"
+      }
+    },
+    "lindy-vs-gumloop": {
+      "en": {
+        "title": "Lindy vs Gumloop: Which Fits Your Pipeline",
+        "description": "Built the same research-to-draft pipeline on both — Lindy set up three times faster, Gumloop sharper after tuning. Side-by-side notes on speed, control, and credit burn."
+      },
+      "zh": {
+        "title": "同一内容管线：Lindy 快，还是 Gumloop 精",
+        "description": "同一条研究转成稿管线：一边十分钟跑通，一边精调后更像你。来信还原速度、可控性与积分对照。"
+      }
+    },
+    "oh-my-codex-vs-superpowers": {
+      "en": {
+        "title": "More Parallel Agents or Stricter Process?",
+        "description": "oh-my-codex multiplies Codex workers with durable state; Superpowers installs planning and TDD into any agent. Notes on choosing leverage when you are the whole team."
+      },
+      "zh": {
+        "title": "要更多并行 Agent，还是更严的流程",
+        "description": "一边让多个 Codex 并行、状态可续；一边给任意 Agent 装规划与 TDD。来信聊一人团队先该补哪块短板。"
+      }
+    },
+    "solopreneur-pricing-day-one": {
+      "en": {
+        "title": "Charge from Day One: Pricing Is a Signal",
+        "description": "Free clients flatter you; paying clients tell you what the offer is really worth. A case for naming a number early and reading what the market answers."
+      },
+      "zh": {
+        "title": "定价从第一天开始，它是一枚信号",
+        "description": "免费客户只说好话，付费客户的异议才是真反馈。来信讲怎么早定第一个价，并读懂市场的回答。"
+      }
+    },
+    "what-is-claude-code": {
+      "en": {
+        "title": "Claude Code Explained: The Agent with Checkpoints",
+        "description": "A local coding agent that plans read-only, spawns sub-agents, and asks before it touches anything. A grounded definition for deciding whether that loop fits how you ship."
+      },
+      "zh": {
+        "title": "看懂 Claude Code：本地编码 Agent 怎么把关",
+        "description": "只读规划、子 Agent、改码前先要权限，本地编码 Agent 靠检查点自证可靠。来信拆解它与聊天界面的差别。"
+      }
+    },
+    "what-is-minimax-h3": {
+      "en": {
+        "title": "MiniMax H3: One Model, Picture and Sound",
+        "description": "Text, clips, and audio in one context return as a clip with stereo sound — no stitching. What open weights change for small video teams, and the 2K ceiling."
+      },
+      "zh": {
+        "title": "MiniMax H3：一个模型同出画面与声音",
+        "description": "文字、片段与音频进同一上下文，出来是带立体声的成片，不必拼工具链。来信聊开源权重与 2K 上限。"
+      }
+    },
+    "why-ai-forgets-every-session": {
+      "en": {
+        "title": "What You Lose When Your AI Forgets You",
+        "description": "Each new chat resets to zero, and solo operators pay the re-explanation tax hardest. Notes on what stateless AI costs, and what real memory should look like."
+      },
+      "zh": {
+        "title": "AI 每次归零，你在替它交什么税",
+        "description": "新会话即清零，单人运营的「重新解释税」最贵。来信算清无状态 AI 的账，并讲挑记忆工具该看什么。"
+      }
+    },
+    "world-cup-2026-bracketology": {
+      "en": {
+        "title": "Fill Your 2026 Bracket by Reading the Path",
+        "description": "A champion pick is not bracketology; the path is. Round-of-32 fatigue, upset zones, and keeping facts apart from opinions — ways to fill a bracket you can defend."
+      },
+      "zh": {
+        "title": "填 2026 签表，先读懂八强之路",
+        "description": "选冠军不算对阵解析，读懂路径才算。来信拆解 32 强消耗、冷门区与事实分层，填一张敢拿出手的签表。"
+      }
+    },
+    "world-cup-2026-schedule-usa": {
+      "en": {
+        "title": "Never Miss a USMNT Kickoff This Summer",
+        "description": "Three group games, all at 7:00 PM Pacific — one timezone slip costs the first half. Get kickoff times and calendar reminders for a US home World Cup."
+      },
+      "zh": {
+        "title": "USMNT 三场都在西部开球，别错过",
+        "description": "三场都在太平洋时间 19:00 开球，时差错一步就错过上半场。订阅收开球时间、主办城市与日历提醒。"
+      }
+    },
+    "deepseek-v4-1-flash": {
+      "en": {
+        "title": "DeepSeek V4.1 Flash: the 48-hour beta",
+        "description": "Two-day betas with self-expiring model IDs are the new release pattern. Notes on what V4.1 Flash's native multimodal and 300+ tokens/s mean if Flash is meant to replace Pro."
+      },
+      "zh": {
+        "title": "DeepSeek V4.1 Flash：48 小时实验",
+        "description": "自带过期时间的两天 beta 是新发布形态。V4.1 Flash 原生多模态与 300+ tokens/s，是否意在让 Flash 顶替 Pro——订阅模型速评。"
+      }
+    }
+  }
 }
