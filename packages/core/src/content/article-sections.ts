@@ -15,10 +15,10 @@ export type SplitArticleContent = {
 };
 
 const FAQ_HEADING =
-  /^##\s+(Frequently asked questions|常见问题)\s*$/im;
+  /^##\s+(Frequently asked questions|FAQ|FAQs|常见问题)\s*$/im;
 
 const SHARE_TRAILER =
-  /\nShare\s*\n[\s\S]*?(?=\n##\s+(?:Frequently asked questions|常见问题)\s*\n)/i;
+  /\nShare\s*\n[\s\S]*?(?=\n##\s+(?:Frequently asked questions|FAQ|FAQs|常见问题)\s*\n)/i;
 
 const FINAL_CTA_LINK =
   /\[(Book demo|预约演示[^\]]*)\]\(<(mailto:[^>]+)>\)/i;
@@ -28,19 +28,63 @@ function stripShareTrailer(text: string): string {
   return text.replace(SHARE_TRAILER, "\n\n").trim();
 }
 
+/**
+ * Floatboat/HTML-export FAQ bodies use one of two question shapes:
+ *   ### A question?            (heading style)
+ *   **A question?**            (bold lead block style)
+ * Answers are plain blocks until the next question. Blockquote/other
+ * formatting inside an answer is preserved as markdown.
+ */
+const H3_QUESTION = /^###\s+(.+)$/;
+const BOLD_QUESTION = /^\*\*(.+)\*\*$/;
+
 function parseFaqItems(raw: string): FaqItem[] {
-  const blocks = raw
+  // Normalize CRLF (git autocrlf on Windows) so block splitting works.
+  const normalized = raw.replace(/\r\n?/g, "\n");
+  const blocks = normalized
     .trim()
     .split(/\n\n+/)
     .map((block) => block.trim())
     .filter(Boolean);
 
   const items: FaqItem[] = [];
-  for (let i = 0; i < blocks.length - 1; i += 2) {
-    const question = blocks[i];
-    const answer = blocks[i + 1];
-    if (question && answer) {
-      items.push({ question, answer });
+  let current: { question: string; answers: string[] } | null = null;
+
+  const flush = () => {
+    if (current && current.answers.length > 0) {
+      items.push({
+        question: current.question,
+        answer: current.answers.join("\n\n"),
+      });
+    }
+    current = null;
+  };
+
+  for (const block of blocks) {
+    const h3 = block.match(H3_QUESTION);
+    const bold = block.match(BOLD_QUESTION);
+    if (h3 || bold) {
+      flush();
+      current = { question: (h3 ? h3[1] : bold![1]).trim(), answers: [] };
+      continue;
+    }
+    if (current) {
+      current.answers.push(block);
+    } else if (items.length === 0) {
+      // tolerate leading prose before the first recognized question
+      current = null;
+    }
+  }
+  flush();
+
+  // Fallback: older pattern with alternating question/answer plain blocks.
+  if (items.length === 0 && blocks.length >= 2) {
+    for (let i = 0; i < blocks.length - 1; i += 2) {
+      const question = blocks[i];
+      const answer = blocks[i + 1];
+      if (question && answer) {
+        items.push({ question, answer });
+      }
     }
   }
   return items;

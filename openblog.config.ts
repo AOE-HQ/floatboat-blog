@@ -99,7 +99,7 @@ const config = defineConfig({
       xEmbed: false,
       authorBox: false,
       prevNext: false,
-      faq: false,
+      faq: true,
       finalCta: false,
     },
   },
