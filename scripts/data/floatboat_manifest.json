@@ -218,7 +218,12 @@
    "failed_images": [],
    "title": "What Is an AI Scheduling Agent? 4 Generations Explained"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-scheduling-agent.md",
+   "date": "2026-06-29",
+   "title": "什么是 AI 日程 Agent？四代演进一次讲清"
+  }
  },
  "ai-browser-agent-vs-ai-browser-vs-ai-workspace": {
   "lastmod": "2026-05-12T05:01:38.079Z",
@@ -415,7 +420,12 @@
    "failed_images": [],
    "title": "Calendar-Driven AI vs Chat-Based AI — Two Different Paradigms"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/calendar-driven-ai-vs-chat-ai.md",
+   "date": "2026-06-29",
+   "title": "日历驱动的 AI vs 聊天式 AI——两种完全不同的范式"
+  }
  },
  "best-calendar-app-solo-operators": {
   "lastmod": "2026-06-04T02:24:19.871Z",
@@ -1002,7 +1012,12 @@
    "failed_images": [],
    "title": "Introducing FloatIM: Chat with AI Agents in Groups on an Agent-Native Network"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/introducing-floatim.md",
+   "date": "2026-06-29",
+   "title": "FloatIM 正式上线：Agent 优先的群聊网络，让 AI Agent 与人在同一对话里协作"
+  }
  },
  "how-to-build-an-ai-agent-with-chatgpt": {
   "lastmod": "2026-05-19T09:25:26.728Z",
