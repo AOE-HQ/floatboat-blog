@@ -116,3 +116,7 @@ H3 undercuts Seedance on price ($0.13/s at 2K versus roughly $0.24/s at 720p for
 ### What is the difference between the FL2VA and Ref2VA checkpoints?
 
 FL2VA covers text-to-audio-video and first/last-frame-to-video (zero, one, or two input images). Ref2VA handles reference-to-video with mixed inputs — up to 9 images, 3 video clips, and 3 audio files in one request, capped at 12 files total.
+
+### What are MiniMax H3's main limitations?
+
+There's no 4K path — 2K is the ceiling, which matters for theatrical or broadcast deliverables. High-tension, high-impact shots land weaker than Seedance 2.0's, the cost of its stability-first design. Very small text and extremely intricate details can still break, so treat every generation as needing a QA pass. Its instruction-following is aggressive and literal, favoring faithful execution over interpretive flair. And reproducing the full hosted 2K workflow locally keeps an API dependency on the Context-IR module.

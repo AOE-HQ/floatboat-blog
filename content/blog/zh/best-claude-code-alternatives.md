@@ -157,24 +157,24 @@ Floatboat 与 FloatIM 都不解决这份榜单所衡量的编码工作，所以�
 
 ### Cursor 是 Claude Code 的直接替代品吗？
 
-不是。Cursor 是为编辑器原生日常流程优化的 AI IDE；Claude Code 是为仓库级深度推理优化的终端 Agent。它们解决的是不同的工作，很多团队两个都跑，而不是二选一。
+不是。Cursor 是为编辑器原生日常流程优化的 AI IDE——自动补全、聊天、Agent 模式都在编辑器里；Claude Code 是为仓库级深度推理优化的终端 Agent，主打 Plan 模式与子 Agent。它们解决的是不同的工作，很多团队不是二选一，而是两个都跑。痛点在终端，Cursor 替代不了 Claude Code；痛点在编辑器，反之亦然。
 
 ### 什么是 Claude Code 最好的免费替代品？
 
-**Cline**（VS Code）和**Aider**（终端）是领先的免费开源选项。两者都与模型无关，允许你自带 key，包括本地模型。
+最领先的免费选项是 **Cline**（VS Code）和 **Aider**（终端）。两者都与模型无关：自带 Anthropic、OpenAI、Google 或本地模型的 key 都行，只为推理付费。Cline 是 VS Code 里安装量最大的开源 Agent；Aider 的每次改动都是一条干净、可审阅的 git 提交。代价是要自己配置 key 和模型——免费、开源、归你所有，但不如托管产品精致。
 
 ### 哪个替代品最接近 Claude Code 的自主性？
 
-论终端自主性，**Aider**是最接近的免费选择；论「工单到 PR」的无人值守工作，**Devin**是云端对应物。选哪个取决于你是想盯着循环跑，还是把循环整个委派出去。
+论终端自主性，**Aider** 是最接近的免费选择——整个循环归你掌控，每处修改都落成干净提交。论「工单进、PR 出」的无人值守工作，**Devin** 是云端对应物：接下范围清晰的工单，在沙箱环境里干活，往往你睡觉时它交回 pull request。真正的区别在于你想盯着循环跑，还是把整个循环委派出去——两种答案对应两种视野。
 
 ### 我应该从 Claude Code 换成 Cursor 吗？
 
-只有当你的日常痛点在终端、而不是模型时，才该换。Cursor 赢下编辑器流程，Claude Code 赢下硬核重构。对许多工程师来说，务实的答案是两个都要：编辑器里用 Cursor，shell 里用 Claude Code。
+只有当你的日常痛点在终端、而不是模型时，才该换。Cursor 赢下编辑器流程——补全、聊天、Agent 模式都在 IDE 里；Claude Code 赢下需要深度推理和 100 万 token 上下文的硬核仓库级重构。对许多工程师来说，务实的答案是两个都要：编辑器里用 Cursor 做日常，shell 里用 Claude Code 啃架构问题。
 
 ### Floatboat 能替代 Claude Code 吗？
 
-不能。Floatboat 是为会前准备与会后跟进服务的日历驱动主动 Agent，不是仓库编程 Agent。它与编程 Agent 搭配使用，而非顶替。区别见 Agentic Calendar 定义。
+不能。Floatboat 是为会前准备与会后跟进服务的日历驱动主动 Agent，不是仓库编程 Agent——它处在完全不同的工作形态。它与编程 Agent 搭配而非顶替：仓库里跑 Claude Code 或 Cursor，会议节奏交给日历 Agent，两者从不竞争。
 
 ### 什么时候 Claude Code 仍然是最好的选择？
 
-当你想在终端里对大型代码库做最深的 Claude 推理、重视 Plan 模式的研究式探索与子 Agent、且不需要模型自由或 IDE 原生流程时。这个工种，是任何替代品都无法打败它的。
+当你想在终端里对大型代码库做最深的 Claude 推理、重视 Plan 模式的研究式探索与子 Agent、且不需要模型自由或 IDE 原生流程时。这正是基准工种——大型混乱仓库里的硬核重构——任何替代品都无法胜过它的地方。如果你的需求是模型无关或编辑器原生，就去上面的排名列表里选。

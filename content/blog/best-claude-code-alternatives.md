@@ -157,24 +157,24 @@ The best Claude Code alternative depends on your **coding job shape** , not a un
 
 ### Is Cursor a drop-in replacement for Claude Code?
 
-No. Cursor is an AI IDE optimized for editor-native daily flow. Claude Code is a terminal agent optimized for deep, repo-scale reasoning. They solve different jobs, and many teams run both rather than switching.
+No. Cursor is an AI IDE optimized for editor-native daily flow — autocomplete, chat, and agent mode inside the editor. Claude Code is a terminal agent optimized for deep, repo-scale reasoning with plan mode and sub-agents. They solve different jobs, and many teams run both rather than switching. If your pain is the terminal, Cursor doesn't replace Claude Code; if your pain is the editor, Claude Code doesn't replace Cursor either.
 
 ### What is the best free alternative to Claude Code?
 
-**Cline** (VS Code) and **Aider** (terminal) are the leading free, open-source options. Both are model-agnostic and let you bring your own key, including local models.
+The leading free options are **Cline** in VS Code and **Aider** in the terminal. Both are open source and model-agnostic: bring your own Anthropic, OpenAI, Google, or local model key and pay only for inference. Cline is the most-installed open-source agent in VS Code; Aider produces a clean, reviewable git commit per change. Expect to configure keys and models yourself — free, open, and yours, but less polished than a managed product.
 
 ### Which alternative is closest to Claude Code's autonomy?
 
-For terminal autonomy, **Aider** is the closest free match. For unattended, ticket-to-PR work, **Devin** is the autonomous cloud counterpart. The choice depends on whether you want to watch the loop or delegate it.
+For terminal autonomy, **Aider** is the closest free match — you own the whole loop and every edit lands as a clean commit. For unattended, ticket-to-PR work, **Devin** is the autonomous cloud counterpart: it takes a well-scoped ticket, works in a sandboxed environment, and returns a pull request while you sleep. The real question is whether you want to watch the loop or delegate it entirely; each is the right answer for a different horizon.
 
 ### Should I switch from Claude Code to Cursor?
 
-Only if your daily pain is the terminal, not the model. Cursor wins the editor flow; Claude Code wins the hard refactor. The pragmatic answer for many engineers is both: Cursor in the editor, Claude Code in the shell.
+Only if your daily pain is the terminal, not the model. Cursor wins the editor flow — completions, chat, and agent mode in the IDE — while Claude Code wins the hard, repo-scale refactor with its deep reasoning and 1M-token context window. For many engineers the pragmatic answer is both: Cursor in the editor for everyday work, Claude Code in the shell for the architectural problems.
 
 ### Does Floatboat replace Claude Code?
 
-No. Floatboat is a calendar-driven proactive agent for meeting prep and follow-up, not a repository coding agent. It pairs with a coding agent rather than replacing it. See the agentic calendar definition for the distinction.
+No. Floatboat is a calendar-driven proactive agent for meeting prep and follow-up, not a repository coding agent — it sits in a different job shape entirely. It pairs with a coding agent rather than replacing it: run Claude Code or Cursor in the repo, and let a calendar agent handle your meeting rhythm. The two never compete.
 
 ### When is Claude Code still the best choice?
 
-When you want the deepest Claude reasoning on a large codebase from a terminal, value plan-mode research and sub-agents, and do not need model freedom or IDE-native flow. That is the job none of the alternatives beats it on.
+When you want the deepest Claude reasoning on a large codebase from a terminal, value plan-mode research and sub-agents, and don't need model freedom or IDE-native flow. That is the reference job — the hard refactor on a big, messy repository — that none of the alternatives beats it on. If your requirement is model-agnostic or editor-native, pick from the ranked alternatives instead.

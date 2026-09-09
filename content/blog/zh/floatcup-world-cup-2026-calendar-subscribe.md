@@ -137,24 +137,24 @@ FloatCup 只为一件事而生：确保你在 39 天、104 场比赛里一场开
 
 ### FloatCup 免费吗？
 
-免费。日历订阅、赛前提醒和自动时区换算全部免费。赛后战报需要 Floatboat 账号，而 Floatboat 有免费档。
+免费。日历订阅、全部 104 场比赛、赛前提醒与自动时区换算都不收费，订阅也无需账号。可选的赛后战报需要 Floatboat 账号并安装 Match Recap Combo Skill，两者都在 Floatboat 免费档里。整届世界杯可零花费跑完；战报是唯一需要登录 Floatboat 的附加项。
 
 ### 用 FloatCup 需要先安装 Floatboat 吗？
 
-不需要。日历订阅独立可用，配合 Google Calendar、Apple Calendar 或 Outlook 即可。只有当你想要赛后战报功能时才需要 Floatboat。
+不需要。日历订阅独立可用，配合 Google Calendar、Apple Calendar、Outlook 等支持 ICS 订阅的应用即可，无需 Floatboat 账号或安装。只有想要赛后战报时才需要 Floatboat；战报送进你的 workspace，账号本身也在免费档。
 
 ### 如果比赛时间变了会怎样？
 
-FloatCup 订阅会自动更新。FIFA 一旦调整开球时间，新时间会出现在你的日历里，你什么都不用做。
+你什么都不用做。FloatCup 是实时 ICS 订阅，不是静态导入：FIFA 发布官方赛程更新后，Floatboat 后端刷新数据源，每位订阅者的日历都会自动显示新的开球时间。这正是它相对下载 ICS 文件的维护优势——静态文件只有删掉重新导入才会更新。
 
 ### 可以只订阅某几支球队的比赛吗？
 
-基础版 FloatCup 订阅包含全部 104 场比赛。按球队筛选的功能通过 Team Tracker 等 Combo Skills 提供给 Floatboat 用户。
+基础版订阅包含全部 104 场——72 场小组赛与 32 场淘汰赛——日历端无法再筛选。按球队筛选经 Team Tracker 这类 Combo Skills 提供给 Floatboat 用户，它们与 Floatboat 专业技能同属一套架构。只要日历的话，订阅一次即覆盖整届赛事，之后按队名即可搜索每场。
 
 ### 赛事结束后怎么退订？
 
-从 FloatCup 页面一键退订，或在日历应用的设置里删除该日历。两种方式都会干净利落地移除所有 FloatCup 事件。
+从 FloatCup 页面一键退订，订阅终止、事件移除；或在日历应用设置里删除该日历——两种方式都会干净清掉全部 FloatCup 事件。也可以保留订阅作为记录，只是 7 月 19 日决赛后不再有更新。赛事期间，你不需要做任何持续维护。
 
 ### FloatCup 在手机上能用吗？
 
-能用。因为它走的是你日历应用的原生订阅机制，比赛会出现在你手机的日历应用里——Google Calendar、Apple Calendar 或 Outlook 移动版——并在所有设备之间同步。
+能用。FloatCup 走日历应用的原生订阅机制，而非独立应用：比赛会出现在你手机上的 Google Calendar、Apple Calendar 或 Outlook 中，并在登录同一账号的所有设备间同步。因为是原生条目，你照常有赛前通知、分阶段着色（如支持）与常规搜索，无需打开其他服务。

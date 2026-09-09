@@ -111,7 +111,7 @@ DeepSeek 选择把 harness 建在一个有四岁年龄的插件内核上、而�
 
 ### DeepSeek Harness 的四种预设模式是什么？
 
-Standard（完整编码 Agent）、Code（模型生成的代码编排工具调用）、Minimal（只有 bash 与一个文件编辑器——DeepSeek 自己官方基准用的配置）、Creator（带运行时检视，用于构建自定义预设）。
+Standard（完整编码 Agent，含文件系统、shell、网页搜索、子 Agent 与 plan 模式）、Code（模型生成的代码编排工具调用）、Minimal（只有 bash 与文件编辑器——DeepSeek 官方基准所用）、Creator（构建自定义预设，带运行时检视与编写指导）。
 
 ### 为什么可逆性对 AI Agent 尤其重要？
 

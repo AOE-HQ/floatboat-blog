@@ -100,28 +100,6 @@ Here's how I've translated the gstack logic into a non-code workflow. Three step
 
 **Step 3: File outputs forward.** At the end of each session, save a 3–5 sentence summary of what you found and what you've decided. Start the next session by pasting it in as context. This is manual memory, but it works.
 
-## FAQ
-
-### **Do I need to be a developer to use role-based prompting?**
-
-No. Everything in this article works with [Claude.ai](<http://Claude.ai>), ChatGPT, or any general chat interface. You're just changing how you open a session — no installation required.
-
-### **Isn't this basically just writing a better prompt?**
-
-It's a specific pattern within prompting. The key difference is that you're explicitly constraining the cognitive frame for a task, not just adding detail. The constraint on what the AI _shouldn't_ do is often more valuable than what you're asking it to do.
-
-### **What if I don't know which role I need?**
-
-That's a sign you're in a pre-phase: figuring out the problem. Do that part yourself, or use a free-exploration session explicitly — tell the model "I don't have a defined question yet, let's think through this together." Then move to role-based phases once the problem is clear.
-
-### **Does this work for creative work?**
-
-Yes — the roles just look different. "Generative ideation mode — produce ten directions without filtering" is different from "editing mode — tighten and cut." Same principle.
-
-### **How is this different from using a separate tool for each task?**
-
-Lighter. You're switching frames within one tool, not switching applications. Most of the benefit of specialization without the context-switching overhead.
-
 ![5.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459050612-f57596fb-c98c-4340-8674-2eefff60f69e.png)
 
 _Anyway, that's where I landed after three weeks of running this. The developer ​_ ​ _wrapper_ ​ _​ (gstack) is genuinely interesting for coders. The underlying idea — that AI gets sharper when it knows which hat it's wearing — applies to anyone doing complex work alone. I'm still experimenting with the details. But the basic pattern has stuck._
@@ -139,3 +117,29 @@ _Back to building things._
   * [See real-world AI agent use cases to understand how role-based systems perform in practice](</blog/ai-agent-use-cases-real-examples>)
 
   * [Compare workflow builders vs AI workspaces when designing structured, role-based AI systems](</blog/workflow-builder-vs-ai-workspace>)
+
+## FAQ
+
+### Do I need to be a developer to use role-based prompting?
+
+No. Everything in this article works in Claude.ai, ChatGPT, or any general chat interface — you are changing how you open a session, not installing tools. gstack itself is a Claude Code skill pack for developers, but the underlying role-based pattern translates into a non-code workflow: name the cognitive mode, separate phases into sessions, and file summaries forward.
+
+### Isn't this basically just writing a better prompt?
+
+It is a specific pattern within prompting. The key difference is that you are explicitly constraining the cognitive frame for a task — defining what the model should prioritize, what it should ignore, and what counts as success — rather than just adding detail. The constraint on what the AI should not do is often more valuable than what you ask it to do.
+
+### What if I don't know which role I need?
+
+That is a sign you are in a pre-phase: figuring out the problem itself. Do that part yourself, or run an explicit free-exploration session — tell the model you do not have a defined question yet and want to think it through together. Forcing a role too early on messy problems can narrow your thinking, so move to role-based phases once the problem is clear.
+
+### Does this work for creative work?
+
+Yes — the roles just look different. Generative ideation mode (produce ten directions without filtering) is not the same as editing mode (tighten and cut), but the principle is identical. What matters is not the role label: research on role prompting is mixed, and the gains come from the constraints and scope you attach to the role.
+
+### How is this different from using a separate tool for each task?
+
+Lighter. You are switching frames within one tool rather than switching applications — most of the specialization benefit without the context-switching overhead. A system prompt sets general behavior; a role-based frame goes further by scoping what this specific step should optimize for, which is closer to having a focused specialist than to juggling apps.
+
+### Do my role assignments carry across sessions?
+
+Not automatically. gstack's virtual team has no shared context — the CEO role's Tuesday insights are gone by Wednesday — which is real friction when you run several workstreams at once. The fixes are manual: file a 3–5 sentence summary forward into the next session, or use a workspace layer that holds context for you, the direction Floatboat's Tacit Engine takes by learning your working patterns over time.

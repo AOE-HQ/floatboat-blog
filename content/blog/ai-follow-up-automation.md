@@ -109,28 +109,34 @@ In a calendar-driven approach, the calendar is the central runtime that orchestr
 
 * * *
 
-## 5\. FAQ
-
-### 5.1 How does AI follow-up handle vague or unstructured meetings?
-
-AI follow-up systems work best with meetings that have clear decision points and action assignments. For unstructured conversations — brainstorming sessions, exploratory discussions, informal check-ins — the system will still capture what it can identify as decisions or action items, but the output will be sparser. The system doesn't fabricate structure where none existed. For meetings that are intentionally open-ended, the primary value of AI follow-up is capturing whatever concrete outcomes did emerge, even if they're minimal, and ensuring they don't get lost in the broader discussion.
-
-### 5.2 Can the AI distinguish between decisions and small talk?
-
-Yes, with reasonable accuracy. The system analyzes linguistic and structural patterns to distinguish between different conversation modes: social talk (greetings, personal updates), informational exchange (status updates, context sharing), deliberation (exploring options, debating alternatives), and resolution (converging on decisions, assigning actions). Only the resolution mode produces decisions and action items. The system doesn't need to perfectly classify every sentence — it needs to identify the resolution moments, which tend to be linguistically distinct from the rest of the conversation.
-
-### 5.3 What tools do I need for end-to-end meeting automation?
-
-The minimum is a calendar (for event triggering), a meeting platform or note-taking method (for content capture), and a task or communication tool (for routing outputs). Calendar-driven AI systems handle the orchestration layer — they connect to your calendar for triggers, process the meeting content, and route outputs to your task manager, email, or Slack. The specific tools depend on your stack, but the common pattern is: Google Calendar or Outlook for scheduling, Zoom or Google Meet for the meeting itself, and Linear, Notion, Todoist, or Asana for task tracking.
-
-### 5.4 Can AI follow-up integrate with my existing task manager?
-
-A complete calendar-driven AI system should support integration with major task managers — such as Linear, Notion, Asana, Todoist, or similar tools — rather than requiring you to use a built-in task tool. The action items extracted from a meeting are created as tasks in your existing system, with the same format and fields you already use. This is important because it means adopting AI follow-up doesn't require abandoning your current workflow. The system plugs into the tools you already have; it doesn't replace them with a new tool you need to learn.
-
-* * *
-
 ## 6\. Related Reading
 
   * What Is an Agentic Calendar? — The foundational definition of the category that makes the full prep-follow-up loop possible.
 
   * Calendar-Driven AI vs Chat-Based AI — Why automated follow-up triggered by the calendar is architecturally different from asking a chat AI to summarize.
+
+## FAQ
+
+### Do I have to trigger follow-up myself, or does it run automatically?
+
+You don't start it — the system does. The follow-up pipeline triggers when the calendar event ends, with no prompt, no button click, and no context-switching on your part. That timing is the whole point: manual follow-up a few hours after a meeting has already lost fidelity, while immediate capture works while the meeting is still fresh. An imperfect action item routed right away beats a perfect one written up three days later — or never.
+
+### Why do action items keep getting lost between meetings?
+
+Because follow-up is usually a manual habit that competes with everything else on your calendar, and it decays fast: details fade, ownership gets ambiguous, urgency drops. For solo founders it's worse — there's no team to share the load, and follow-up volume grows linearly with the number of meetings. The standard coping mechanisms ("I'll remember," "I'll type it up later," "I'll block Friday") all break under real volume, and the 24-hour window where follow-up matters passes unused.
+
+### How does AI follow-up automation actually work?
+
+Through a three-stage post-meeting pipeline. First, decision capture separates real resolutions from discussion and outputs a short structured list — typically three to seven decisions per meeting. Second, action extraction turns those decisions into tasks with owners and deadlines, drawn from both explicit statements and the next meeting in the series. Third, the prep loop feeds unfinished items into the next meeting's preparation, so the whole loop — prep, meet, follow-up, prep — keeps running itself.
+
+### Can it handle vague or unstructured meetings?
+
+Yes, within limits. It works best when a meeting has clear decision points and assignments. For brainstorming or exploratory sessions the output is simply sparser — the system captures whatever concrete outcomes did emerge and never fabricates structure where none existed. That's the honest trade-off: unstructured meetings yield fewer decisions, but what did emerge still gets captured instead of dissolving into the broader discussion.
+
+### Can it really tell decisions apart from small talk?
+
+Yes, with reasonable accuracy. The system looks for linguistic and structural signals to sort conversation into modes — social talk, information exchange, deliberation, and resolution — and only resolution produces decisions and action items. It doesn't need to classify every sentence perfectly; it only has to spot the resolution moments, which tend to be linguistically distinct, such as converging phrases or a shift from many speakers to one person summarizing.
+
+### Does it work with the tools and task manager I already use?
+
+That's the design intent. A calendar-driven system sits at the orchestration layer: it reads your calendar for triggers, processes the meeting content, and routes output to your existing task manager, email, or Slack. Integration with major tools — Linear, Notion, Asana, Todoist, and similar — matters because it means you keep your current workflow. Extracted action items simply appear as tasks in the system you already use, in the same format and fields you already use.

@@ -217,22 +217,26 @@ For the full agent architecture — API setup, model selection, and the loop ske
 
 ## FAQ
 
-### Does DeepSeek V4 support JSON mode and function calling at the same time?
+### Which DeepSeek models support function calling?
 
-Yes. You can set `response_format: {"type": "json_object"}` for the final answer while using `tools` for intermediate steps. A common pattern: tool calls for data gathering, then a final turn with `tool_choice: "none"` and JSON mode enabled for structured output. Do not enable JSON mode on turns where you expect tool calls — the model may prioritize JSON formatting over tool selection.
+Function calling is native to both deepseek-v4-pro and deepseek-v4-flash, so you only need to pass a tools array — no special model variant. The API is OpenAI-compatible, using the same tools, message.tool_calls, and role: "tool" pattern you already know from GPT-4o or Claude. Both models also support up to 128 parallel tool calls in one turn. For high-volume tool loops, V4 Flash is the cheaper workhorse; use V4 Pro for planning and synthesis turns.
 
-### What is the difference between function calling and MCP?
+### How does the tool-call loop actually work?
 
-Function calling defines tools inline in your API request — your code executes them locally. MCP defines tools on external servers that your agent discovers and calls at runtime. Function calling is simpler and faster to set up. MCP scales better when tools are dynamic, numerous, or maintained by separate teams. Both produce the same message format in the agent loop.
+You send a tools array plus your messages; when the model decides a tool can help, it returns structured entries in message.tool_calls instead of plain text. Your code executes each call locally, appends the results as role: "tool" messages with matching tool_call_ids, and sends the whole history back for another turn. The loop repeats until the model produces a final answer — typically with tool_choice: "none". Preserving the original tool_calls array exactly when echoing it back is where most production bugs start.
 
-### How reliable is V4 tool calling compared to GPT-4o or Claude?
+### Can I use thinking mode and function calling together?
 
-On MCPAtlas Public, V4 Pro scored 73.6 — tied with Claude Opus 4.6 on agentic tool-use benchmarks. In practice, reliability depends more on your schema design and repair layer than on the model. A well-designed tool schema with structured error feedback produces high success rates on any of the top-tier models; a vague schema fails on all of them.
+Yes. V4 supports thinking (chain-of-thought) and tool calling at the same time, something earlier model generations handled unreliably. When enabled, the model writes its reasoning into a reasoning_content field before emitting tool calls; you don't need to parse it for the loop to work, but logging it helps debugging. The cost: thinking tokens are billed as output tokens, and one high-effort reasoning step can add hundreds of tokens. Apply thinking selectively — planning and synthesis turns rather than every execution turn.
 
-### Can I use function calling with the Anthropic-compatible endpoint?
+### Does DeepSeek V4 support parallel tool calls, and when should I avoid them?
 
-Yes. DeepSeek exposes both OpenAI-compatible (`https://api.deepseek.com`) and Anthropic-compatible (`https://api.deepseek.com/anthropic`) endpoints. Tool calling through the Anthropic endpoint uses Anthropic's tool format rather than OpenAI's `tools` array. If you are configuring Claude Code to use DeepSeek as its backend, the harness handles this translation — you do not write the tool definitions yourself.
+Yes — V4 can return up to 128 tool calls in one turn. Execute each independently and append each result as a separate tool message; order doesn't matter as long as tool_call_ids match. Parallel calls save latency, not tokens, since every result still enters context. Avoid them when tools share state — read_file and write_file on the same path, for example — because concurrent execution creates races your loop can't control. Start sequential, then enable parallel calls for read-only tools.
 
-### Should I use V4 Pro or V4 Flash for tool-heavy agent loops?
+### What is the difference between inline function calling and MCP?
 
-Default to V4 Flash for tool execution turns — the speed and cost advantage compounds over dozens of calls per task. Use V4 Pro for planning turns (deciding which tools to call) and synthesis turns (integrating results into a final answer). A typical 15-turn agent run with this split costs roughly 60–70% less than running the entire loop on V4 Pro, with minimal quality loss on most tasks.
+Inline function calling defines tools directly in the request, and your code executes them locally through a registry. MCP moves tools onto external servers that the agent discovers and calls at runtime, so the tool surface can be dynamic or maintained by a separate team. Both use the same message format in the loop — only the execution layer changes. Start with inline definitions; switch to MCP past roughly 20 tools, when tools change often, or when they need isolated execution environments.
+
+### Why do agent loops break in production, and how do I fix them?
+
+Most failures come from the tool-calling layer, not the model: malformed JSON arguments, unknown tool names, wrong parameter types. Prevent them with clean schemas — plus strict mode when arguments are critical — and add a repair layer that validates before executing and returns structured JSON errors the model can read and self-correct from. Set max_turns, bail after repeated identical failed calls, log every tool call, and truncate large tool outputs so context doesn't balloon.

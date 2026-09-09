@@ -78,15 +78,7 @@ Managed agent platforms (Claude's, OpenAI's, the orchestration layer stuff) are 
 
 For where I am — mostly exploring, occasionally building something stable — I've settled into a mix. Grok 3 Mini for high-volume background tasks, Claude or GPT for the thinking-heavy stuff, DeepSeek for anything I want to run cheap and dirty at scale. Not a recommendation. Just where I landed.
 
-## FAQ
-
 ![5.png](/blog/images/grok-3-api-solo-operator/1776932977603-7e7aba35-fa7d-4d76-b064-9b3b721ca245.png)
-
-**Is Grok 3 API free to try?** New accounts get $25 in credits, no card required upfront. [Check the current offer directly](<https://x.ai/api>) since terms change.
-
-**Should I self-host Grok 3 when the weights drop?** Probably not, if you're solo. The model is ~500GB. Unless you have a serious GPU setup or real compliance reasons, API access is cheaper than the electricity.
-
-**Is Grok 3 better than Claude or GPT-5 for solo work?** Honestly, for most solo workflows — not meaningfully. Pick based on which one fits your writing style and whether you need real-time X data. Fit matters more than benchmark scores.
 
 That's my honest take, two months in. Cheaper tokens are real, but they're not the barrier most solo operators actually hit. When you need this level of price optimization, you'll know.
 
@@ -101,3 +93,29 @@ That's my honest take, two months in. Cheaper tokens are real, but they're not t
   * [AI Agent vs Chatbot: Why This Distinction Affects Your Stack](</blog/ai-agent-vs-chatbot>)
 
   * [Why AI Forgets Between Sessions (And Why It Matters for Automation)](</blog/why-ai-forgets-between-sessions>)
+
+## FAQ
+
+### Is the Grok 3 API actually cheap?
+
+No — Grok 3 is priced as a premium model at $3 per million input and $15 per million output tokens, sitting right next to Claude Sonnet rather than as a cost leader. If you want cheap from xAI, that's Grok 3 Mini ($0.30/$0.50) or Grok 4.1 Fast ($0.20/$0.50). DeepSeek remains the pricing floor for general-purpose models. So "Grok is cheap now" is really a statement about Mini and Fast, not Grok 3 itself.
+
+### What does "open" mean for Grok 3 — open access or open source?
+
+Two different things. API access is open: no waitlist, you sign up, get a key, and there's a $25 starter credit. Open source is separate — as of writing, Grok 3 weights weren't up on Hugging Face, and Grok 2.5 shipped under a custom Community License with anti-competitive clauses, not MIT or Apache. If Grok 3 follows that pattern, "open weights" won't mean free to build a product on — check the actual license before assuming.
+
+### Is the Grok 3 API free to try?
+
+New accounts get $25 in credits with no card required upfront — enough to run a few real tests before you pay. Terms change, so check the current offer directly on xAI's site. If you're spending under roughly $30 a month, the trial credit alone covers a meaningful evaluation period.
+
+### When does switching to a cheaper API actually pay off?
+
+When you've been running the same workload for months, your bill is climbing past roughly $80 a month, and you already know exactly which prompt shapes work — then swapping APIs is a real lever. If you're spending under about $30 a month, switching saves single-digit dollars and costs you a day of re-testing prompts. And if your main friction is gluing steps together, model cost isn't the problem to solve first.
+
+### If cheap tokens aren't the real barrier, what is?
+
+The workflow itself — the time spent wiring steps together. Pulling a doc from Drive, handing it to the model, pasting output into a draft, running a second pass, saving the result somewhere findable: that chain eats your afternoon, and calling Grok 3 versus GPT or DeepSeek is just one step in it. Managed agent platforms handle the chain; raw APIs lower per-call cost but leave the plumbing to you. Nail down your stable workflow before optimizing price.
+
+### Is Grok 3 better than Claude or GPT for solo work?
+
+For most solo workflows, not meaningfully. Pick based on fit: which model matches your writing style, and whether you need real-time X/Twitter data, where Grok's integration is genuinely different. For cheap high-volume output, Grok 3 Mini or DeepSeek makes more sense than any premium model. Fit and workflow economics matter more than benchmark scores.

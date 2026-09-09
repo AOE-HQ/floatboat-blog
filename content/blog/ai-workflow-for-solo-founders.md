@@ -122,28 +122,6 @@ Map two or three of your most repeated tasks. For each one, write down: what inp
 
 According to [MIT Sloan and BCG's joint research on AI and organizational learning](<https://sloanreview.mit.edu/projects/learning-to-manage-uncertainty-with-ai/>), organizations that build systematic feedback loops between humans and AI are significantly better positioned to compound value over time — and the same principle applies at the one-person level. The gains don't come from a single good session. They come from a setup that gets better the more you use it.
 
-## FAQ
-
-**Why does AI keep giving me generic outputs even with detailed prompts?**
-
-Detailed prompts help, but they only capture what you can articulate explicitly. The judgment you've developed through experience — how you weigh trade-offs, what "good" looks like to you specifically — that's harder to transfer through instruction. The gap usually closes when the AI has been exposed to enough of your actual work over time, not just your descriptions of it.
-
-**Is it worth building custom prompts and context documents for AI tools?**
-
-Yes, with a caveat: **the time investment is real and ongoing.** Custom prompts and context documents work well for workflows you run frequently. For one-off tasks, the setup cost usually isn't worth it. I'd prioritize your two or three most repeated workflows first.
-
-**How do I know if an AI tool is actually learning my ​workflow** ​**​ vs. just storing notes?**
-
-The clearest signal: does the output quality improve over time without you writing longer prompts? If you find yourself having to re-explain the same preferences repeatedly, the tool is storing information but not really learning from it. Learning means the AI starts to anticipate what you'd want — not just remember what you told it.
-
-**What's the main trade-off with AI workspaces vs. standalone AI assistants?**
-
-Setup time and portability. An AI workspace that learns your patterns requires investment upfront — and that investment is somewhat locked to the specific tool. If you switch tools, you start over. Standalone assistants are more portable but never accumulate context. The right call depends on how central AI is to your day-to-day work.
-
-​**I've tried ​ChatGPT** ​'s memory feature. Isn't that the same thing?
-
-Partially. **ChatGPT's memory ​** stores facts you tell it across sessions, which helps. But it's platform-specific and doesn't transfer to other tools — and more importantly, it only learns what you explicitly tell it. What I'm describing is a system that learns from observing _how_ you work, not just from what you say about how you work. That's a meaningfully different bar.
-
 That's where I am with this right now. I'm still figuring out the right setup for my own workflow — I don't think there's a single right answer for everyone. But the framing shift helped me: stop asking "is this AI good?" and start asking "does this AI know how I work?"
 
 Those are very different questions. And for people running things solo, the second one is the one that actually matters.
@@ -159,3 +137,29 @@ Those are very different questions. And for people running things solo, the seco
   * [Read this](</blog/ai-agents-2026-solo-operators>) [Not sure whether you need an AI agent or just a better assistant? This clarifies it](</blog/ai-agent-vs-ai-assistant>)
 
   * [If you're deciding between building workflows or using a workspace, this will help](</blog/workflow-builder-vs-ai-workspace>)
+
+## FAQ
+
+### Why is generic AI so good at tasks but never fits how I work?
+
+Because generic tools are built for everyone and hold no model of you. A solo founder's workflow is a chain of decisions shaped by accumulated judgment — tacit knowledge that was never written down. Every session you pay the start-from-scratch tax: re-supplying context and re-stating standards a good assistant would already know. Outputs feel generic not because the model is weak, but because the context never travels with your work.
+
+### Can an AI learn how I work, or only what I tell it?
+
+It can learn — if it watches you over time. Learning from what you do (the decisions you make, the edits you apply, the iterations you approve) is different from remembering only what you explicitly say. Long-term memory stores persistent insights and preferences across sessions, and your tacit knowledge lives in exactly that behavioral signal. Generic tools miss it because it was never written down as instructions.
+
+### Is it worth building custom prompts and context documents?
+
+Yes, with a caveat: the investment is real and ongoing. Custom prompts and context documents pay off for workflows you run every week; for one-off tasks the setup cost usually isn't worth it. Start with your two or three most repeated tasks and note the inputs, the outputs, and the judgment calls you make along the way — that last part is the knowledge no prompt template can fully capture.
+
+### How can I tell if a tool is truly learning my workflow or just storing notes?
+
+The clearest signal is whether output quality improves over time without longer prompts. If you keep re-explaining the same preferences, the tool is storing notes rather than learning. Real learning means the AI starts to anticipate what you want — surfacing the right structure, tone, and standards before you state them — because it has watched your decisions and edits accumulate across sessions.
+
+### What's the main trade-off between an AI workspace and a standalone assistant?
+
+Setup time and portability. A workspace that learns your patterns requires real upfront investment, and that investment is somewhat locked to the tool — switch platforms and you start over. Standalone assistants stay portable but never accumulate context. The right call depends on how central AI is to your daily work; when it is central, compounding learning usually justifies the lock-in.
+
+### Isn't ChatGPT's memory feature the same thing?
+
+Partially, but not really. ChatGPT's memory stores the facts you tell it across sessions, which helps, yet it is platform-specific and only learns what you explicitly say. What solo founders need is a system that learns from observing how you work — your edits, decisions, and standards — not from a written description of them. That is a meaningfully different bar.

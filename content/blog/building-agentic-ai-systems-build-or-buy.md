@@ -86,24 +86,6 @@ The mistake I see most often: people jump to Stage 4 thinking before they've act
 
 ![5.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416434481-84be521e-d43c-4284-80a2-34091648e591.png)
 
-## FAQ
-
-### When does a simple agent become a system?
-
-When it needs to coordinate with other agents, maintain state between sessions, or operate under permissions that go beyond "only I use this." If you're manually copying output from one GPT to another, you're already at the edge. The moment you automate that handoff, you're **developing an agentic AI system** whether you planned to or not.
-
-### Who should own system maintenance?
-
-Whoever understands both the workflow and the tools. For solo operators, that's you — which is why keeping things simple matters so much. For small teams, pick one person as the system owner and make sure they have time for it. Maintenance isn't a one-time setup cost; plan for at least 2–4 hours per week of monitoring, updating, and fixing the things that quietly drifted.
-
-### What documentation should exist before launch?
-
-At minimum: a plain-language description of what the system does and doesn't do, a list of every external tool or API it connects to, the permission boundaries (what it can access, what it can't), expected failure modes and recovery steps, and a version log of instruction changes. I keep mine in a single markdown file. It doesn't need to be fancy — it needs to be current.
-
-### How do I avoid rebuilding the same workflow twice?
-
-Template your instructions and save them outside the platform. I keep a folder of proven prompts, tool configurations, and example outputs for each workflow I've validated. When I need a similar system for a different use case, I start from the template and modify — not from zero. Also, name things clearly. "Research Agent v3 — client briefs" tells you what it does in six months. "My GPT" does not.
-
 That's where I am on the build-or-buy question for ​**building agentic AI systems** ​. The answer isn't universal — it depends on where your workflow actually is, how much maintenance you can absorb, and whether the value justifies the complexity.
 
 I'll check back in after I've moved two more of my own workflows from Stage 2 to Stage 3. That's one small piece figured out.
@@ -119,3 +101,29 @@ I'll check back in after I've moved two more of my own workflows from Stage 2 to
   * If you're considering buying instead of building, this guide helps evaluate when outside help actually makes sense: [AI Automation Agency: Do You Actually Need One?](</blog/ai-automation-agency-do-you-need-one>)
 
   * Thinking about long-term coordination between tools, memory, and context? This is a natural next read: [AI Workspace Agents: What They Actually Change for Solo Operators](</blog/ai-workspace-agents>)
+
+## FAQ
+
+### Should I build, buy, or outsource my agentic AI system?
+
+There's no universal answer, but there is a sane default. Most solo operators and small teams should start by buying a platform, then selectively build the pieces they hit limits on — almost nobody should outsource the whole thing on the first pass. The decision rule in this piece: if a workflow generates revenue or saves more than five hours a week, build the critical path yourself and buy the supporting infrastructure; if it's a nice-to-have, buy; if you're unsure, buy cheap and test for a month.
+
+### When does a simple agent become a system?
+
+When it needs to coordinate with other agents, maintain state between sessions, or run under permissions that go beyond "only I use this." Three signals show up first: you are manually passing outputs between several agents, you need it to remember what happened last week, or other people start depending on it. If you are copying output from one GPT into another by hand, you're already at the edge; automating that handoff is what pushes you into system territory.
+
+### What actually changes when you move to a system?
+
+Five things suddenly need real answers: memory (how state persists between sessions), tools (which agent gets which tool, and what happens when a tool fails mid-task), permissions (what the agent can read, send, or modify once others use it), monitoring (logging reasoning, tool calls, and decision points), and recovery (checkpoints, retries, and escalation). Each is a design decision your single-agent prototype never forced you to make.
+
+### When is building from scratch actually worth it?
+
+When the workflow is high-value and the platform is the constraint. The rule of thumb: if it generates revenue or saves more than five hours a week, building the critical path is usually worth it — you own the code, avoid lock-in, and can make it behave exactly right. But building means you own every failure mode: when a model is retired or an API changes, the migration is yours. For anything experimental or low-stakes, buying stays cheaper and faster.
+
+### Who should own maintenance — and how much does it take?
+
+For solo operators, you. That's why keeping the system simple matters so much — you are the only owner. For small teams, designate one person who understands both the workflow and the tools, and protect their time. Maintenance is not a one-time setup cost: budget 2–4 hours per week for monitoring, updating, and fixing the pieces that quietly drift, and keep a current record of what the system does and how it is configured.
+
+### What's the most common mistake when scaling agents?
+
+Jumping to scale before validating. The pattern this article sees most often: people buy an enterprise platform for a workflow they've tested three times, or start designing a multi-agent orchestration layer before Stage 2 is proven. Work through the maturity stages in order — experimental, validated, production, scaling. At Stage 1, buy and test fast; add monitoring and governance only at Stage 3, when reliability actually matters.

@@ -1,12 +1,22 @@
 "use client";
 
-import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 import { blogPathForLocale } from "@/config/i18n";
 import { getLocaleFromPathname } from "@/lib/locale-path";
+import { resolveNewsletterForPost } from "@/lib/newsletter-data";
+
+import { NewsletterSubscribe } from "./newsletter-subscribe";
 
 const FB_SITE = "https://floatboat.ai";
+const EN_POST_PATH = /^\/blog\/([^/]+)\/?$/;
+const ZH_POST_PATH = /^\/zh\/blog\/([^/]+)\/?$/;
+
+/** Blog post slug from the current pathname, or null for hubs/non-post routes. */
+function postSlugFromPathname(pathname: string, locale: "en" | "zh"): string | null {
+  const match = (locale === "zh" ? ZH_POST_PATH : EN_POST_PATH).exec(pathname);
+  return match ? match[1] : null;
+}
 
 function SocialIcon({ label, title, href, children }: {
   label: string;
@@ -60,62 +70,14 @@ export function SiteFooter() {
   const pathname = usePathname() ?? "/";
   const locale = getLocaleFromPathname(pathname);
   const blogHref = blogPathForLocale(locale);
-  const [subscribed, setSubscribed] = useState(false);
+  const slug = postSlugFromPathname(pathname, locale);
+  const newsletterCopy = resolveNewsletterForPost(slug, locale);
 
   return (
     <footer id="footer">
       <div className="mx-auto max-w-[1440px]">
         <div className="px-5 pt-12 pb-8 sm:px-10 max-lg:px-5">
-          <div className="grid gap-6 rounded-[24px] border border-black/[0.08] bg-[#fbfaf8]/70 p-6 shadow-sm sm:p-8 md:grid-cols-2 md:items-center">
-            <div>
-              <h3 className="font-serif text-2xl leading-snug font-medium tracking-[-0.01em] text-[#1b1a18] sm:text-3xl">
-                Notes from the Proactive Agent.
-              </h3>
-              <p className="mt-2 max-w-md text-sm leading-relaxed text-[#7a7671]">
-                Field notes on running work from the calendar — plus new Combos,
-                agent tactics, and product updates. No spam.
-              </p>
-            </div>
-            {subscribed ? (
-              <p className="text-sm leading-relaxed text-[#7a7671]">
-                订阅在官网首页统一维护。前往{" "}
-                <a
-                  href={FB_SITE}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-medium text-[#1b1a18] underline underline-offset-2"
-                >
-                  floatboat.ai
-                </a>{" "}
-                Subscribe to keep everything in one list.
-              </p>
-            ) : (
-              <form
-                className="flex w-full flex-col gap-3 sm:flex-row"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSubscribed(true);
-                }}
-              >
-                <label className="sr-only" htmlFor="footer-newsletter-email">
-                  Email address
-                </label>
-                <input
-                  id="footer-newsletter-email"
-                  type="email"
-                  required
-                  placeholder="you@yourcompany.com"
-                  className="min-h-12 flex-1 rounded-full border border-black/[0.12] bg-[#f0eeeb] px-5 py-3 text-sm text-[#1b1a18] placeholder:text-[#7a7671]/60 focus:border-[#1b1a18]/30 focus:ring-2 focus:ring-[#1b1a18]/15 focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#1b1a18] px-6 py-3 text-sm font-medium text-[#f0eeeb] shadow-md transition hover:opacity-90"
-                >
-                  Subscribe
-                </button>
-              </form>
-            )}
-          </div>
+          <NewsletterSubscribe copy={newsletterCopy} />
         </div>
 
         <div className="flex flex-col gap-4 px-5 py-6 sm:px-10 sm:flex-row sm:items-center sm:justify-between max-lg:px-5">

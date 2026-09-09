@@ -100,24 +100,6 @@ I'll probably keep using this. It's one of those small things that actually matt
 
 ![5.png](/blog/images/ai-follow-up-email-opus-4-8/1780822575208-d13c1eb4-a0f1-42ab-8218-fa077d64b6c0.png)
 
-## FAQ
-
-### What is an AI follow-up email?
-
-It's an email drafted by an AI model based on meeting context — usually a transcript or notes. The AI extracts decisions, action items, and next steps, then structures them into a sendable email. You still review it before sending.
-
-### How can AI draft a follow-up after a meeting?
-
-You feed a meeting transcript into a model like Claude, GPT, or Gemini with a prompt that specifies your format. The model identifies decisions, assigns action items to people mentioned in the transcript, and drafts the email. I keep a saved prompt for this — it takes under five minutes per meeting once it's set up. Some tools like [Fireflies](<https://fireflies.ai/blog/ai-tools-to-automate-follow-up-emails/>) and [Read.ai](<http://Read.ai>) can automate this step further with built-in follow-up features.
-
-### What should users review before sending AI follow-ups?
-
-Three things: tone (does it match the relationship?), factual accuracy (especially pricing, deadlines, and commitments), and completeness (did the AI miss anything?). I never send without reading the draft. A wrong action item attributed to the wrong person can do real damage.
-
-### When should AI create tasks instead of emails?
-
-When the meeting produces internal action items that don't need external communication. If the follow-up is for your own team, pushing items directly into a task board (Notion, Asana, a simple list) skips the email step entirely. I still draft the email for client-facing follow-ups, but for internal meetings, tasks-only is faster. The test I use: does the other person need to see a recap, or just know what they're responsible for? If it's the second one, skip the email.
-
 That's my honest take on AI follow-up emails. The workflow isn't complicated, but it needs a decent transcript and five minutes of review. If your work involves more than a few meetings a week, it's probably worth a try.
 
 Back to building things.
@@ -133,3 +115,29 @@ Back to building things.
 [Why One-Person Companies Need a Workspace Agent](</blog/workspace-agents-for-solo-operators>)
 
 [Workspace Agents vs Workflow Builders: A Clear Comparison](</blog/workspace-agents-vs-workflow-builders>)
+
+## FAQ
+
+### Can an AI follow-up email invent things that were never discussed?
+
+It can, and that's the biggest risk to check for. In my tests, the draft from a well-structured 45-minute call came back accurate, but a messy meeting with unclear decisions produced wrong action items. Models are improving — Anthropic reports Claude Opus 4.8 is roughly four times less likely to leave flaws in its work unremarked — yet nothing replaces reading the draft for invented commitments or misattributed owners before you send.
+
+### What is an AI follow-up email?
+
+An email drafted by an AI model from meeting context, usually a transcript or your notes. The AI extracts what was discussed, which decisions were made, and who is doing what by when, then structures it into a sendable recap with action items. You still review and edit before it goes out. A good follow-up confirms the discussion, makes next steps visible, and creates a little pressure to act.
+
+### How can AI draft a follow-up after a meeting?
+
+Feed a meeting transcript into a model like Claude, GPT, or Gemini with a prompt that specifies your format. The model identifies decisions, assigns action items to people mentioned in the transcript, and drafts the email. I keep a saved prompt for this — it takes under five minutes per meeting once it's set up. Tools like [Fireflies](<https://fireflies.ai/blog/ai-tools-to-automate-follow-up-emails/>) and [Read.ai](<http://Read.ai>) can automate this step further with built-in follow-up features.
+
+### What should I review before sending an AI follow-up?
+
+Three things: tone (does it match the relationship?), factual accuracy (especially pricing, deadlines, and commitments), and completeness (did the AI miss anything — including what wasn't said?). I never send without reading the draft. Sensitive commitments like price or scope changes get verified against my own notes, because a wrong action item attributed to the wrong person can do real damage.
+
+### When should AI create tasks instead of emails?
+
+When the meeting produces internal action items that don't need external communication. If the follow-up is for your own team, pushing items directly into a task board (Notion, Asana, a simple list) skips the email step entirely. I still draft the email for client-facing follow-ups, but for internal meetings, tasks-only is faster. The test I use: does the other person need to see a recap, or just know what they're responsible for? If the second one, skip the email.
+
+### How do I make the follow-up workflow reusable?
+
+Keep one saved prompt instead of writing from scratch each time. With a fixed structure — recap, decisions, action items, deadlines, open questions — the only variable is the transcript: meeting ends, transcript gets pasted, draft appears, you review, you send. Under five minutes per meeting. For recurring meetings like client check-ins or team syncs, this scales well, because recipients learn the format and you stop reinventing the email every time.

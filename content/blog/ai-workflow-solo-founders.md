@@ -140,28 +140,6 @@ The tools in this category are evolving fast. Newer entrants like [Floatboat](</
 
 ![66.png](/blog/images/ai-workflow-solo-founders/1775794509504-85130862-4edc-4f3b-b077-8ae0ab3ec011.png)
 
-## FAQ
-
-​**Do I need to learn to code to set up an AI ​workflow** ​**?**
-
-No. Most modern AI workspace tools are designed for non-technical users. That said, if you go the DIY route (stitching together multiple tools with something like Zapier or [n8n](<https://n8n.io/>)), you might run into situations where basic technical troubleshooting helps. The newer dedicated workspaces are specifically trying to eliminate that requirement.
-
-**How much time should I expect to spend setting up a workflow?**
-
-For a single repeatable process, somewhere between thirty minutes and two hours. The key is to start with your simplest, most repetitive workflow — not the complex one. Get one working well before you add more.
-
-**What if I'm already using ChatGPT for everything?**
-
-ChatGPT is a strong general-purpose tool, and it's gotten better at maintaining context within conversations. But it still doesn't have access to your local files, your project history, or your other tools unless you manually provide all of that each session. If most of your work is quick Q&A and drafting, ChatGPT might be enough. If you're running multi-step processes across files and tools, a dedicated workspace will probably save you real time.
-
-**Is this only useful for content creators?**
-
-Not at all. Any solo founder or small team member who does repeatable knowledge work — research, analysis, client communication, project coordination — can benefit. Content creation is just the most visible use case because the workflows are easy to describe.
-
-**How do I evaluate which workspace tool is right for me?**
-
-Start with the three-question framework above: context continuity, execution memory, desktop integration. Then test it on your most repeated workflow. If it handles that well, expand. If it doesn't — that's useful information too.
-
 That's where I am with this right now. The shift from "AI as a chatbot" to "AI as a working environment" is still early, and I'm still adjusting my own setup. But the direction feels right — especially for people running things on their own, where every hour of overhead directly competes with the work that actually moves your business forward.
 
 If your setup looks anything like mine, this might be worth exploring. I'll keep experimenting and share more as I learn.
@@ -179,3 +157,29 @@ Back to building things.
   * [Want a practical example of what an AI-powered solo workflow looks like in action? See this setup](</blog/feishu-cli-solo-work-setup>)
 
   * [And if you're wondering how solo operators actually scale with AI day to day, this is worth reading](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+
+## FAQ
+
+### Why do generic AI tools fall short for solo founders?
+
+Because most are built around a single interaction: you ask, it answers, then it forgets. They can't carry your files, your project context, or how your work fits together, so you spend your time re-explaining instead of doing. That matters more for solo founders because you're the only one holding that context — every forgotten session is a fresh context-loading tax. Dedicated workspaces fix this by keeping AI persistently connected to your working environment.
+
+### Do I need to learn to code to set up an AI workflow?
+
+No. Most modern AI workspace tools are designed for non-technical users. That said, if you go the DIY route and stitch together multiple tools with something like Zapier or n8n, basic troubleshooting helps when an API update breaks something downstream. The newer dedicated workspaces are built specifically to remove that requirement.
+
+### How much time should I expect to spend setting up a workflow?
+
+For a single repeatable process, plan on thirty minutes to two hours. The key is to start with your simplest, most repetitive workflow — not the complex, judgment-heavy one. Get one running well before adding another, and expand one workflow at a time instead of trying to move everything at once.
+
+### What if I'm already using ChatGPT for everything?
+
+ChatGPT is a strong general-purpose tool and has gotten better at keeping context within a conversation. But it still can't see your local files, project history, or other tools unless you upload them every session. If most of your work is quick Q&A and drafting, it may be enough. If you run multi-step processes across files and tools, a workspace with persistent context will likely save you real time.
+
+### Is this only useful for content creators?
+
+Not at all. Any solo founder or small-team member who does repeatable knowledge work — research, analysis, client communication, project coordination — can benefit. Content creation is just the most visible use case because its workflows are easy to describe. If you're unsure whether your tasks qualify, try the week-long logging exercise in the article and see how many repeated workflows you find.
+
+### How do I evaluate which AI workspace tool is right for me?
+
+Use the three-capability framework from the article: context continuity, execution memory, and desktop integration. Then test the candidate on your single most repeated workflow. If it handles that well, expand from there; if it doesn't, that's equally useful information — you've avoided committing to a tool that won't fit how you work.

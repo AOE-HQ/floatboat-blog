@@ -128,22 +128,26 @@ The decision that ages best: keep the harness you know, route by task complexity
 
 ## FAQ
 
-### Can I use Claude Code with DeepSeek for free?
+### Is DeepSeek V4 as capable as Claude's Opus for coding tasks?
 
-No. Claude Code itself requires an Anthropic subscription or API access for the harness, and DeepSeek API calls are billed separately through platform.deepseek.com. What you save is the per-token cost of the model backend — not the harness cost. DeepSeek's API pricing starts after a minimum top-up (typically $5–$10), and V4 Flash tasks cost fractions of a cent each.
+It depends on the task. Claude Opus still leads on repo-scale engineering — 69.2% versus 55.4% on SWE-bench Pro — where architectural consistency across dozens of files matters more than raw speed. V4 Pro wins on algorithmic coding (93.5% vs 88.8% on LiveCodeBench) and terminal agent work (67.9% vs 65.4%). For routine, well-bounded tasks, V4 is competitive and dramatically cheaper; the honest caveat is that the hardest multi-file refactors still favor Opus.
 
-### Is DeepSeek V4 good enough to replace Claude Code entirely?
+### How much cheaper is DeepSeek in real usage?
 
-For routine coding tasks — boilerplate, single-file changes, debugging, test writing — V4 Pro is competitive with Opus and significantly cheaper. For repo-scale refactors where architectural consistency across dozens of files matters, Opus still leads on benchmarks and developer reports. Replacing Claude Code entirely means accepting lower quality on the hardest 10–15% of tasks in exchange for 95%+ cost savings on everything else. Many teams find that trade acceptable; teams working on safety-critical or architecturally complex codebases often do not.
+Roughly 28x cheaper on output: V4 Pro charges $0.87 per million output tokens versus $25.00 for Opus 4.8, with input at $0.435 versus $5.00. On a typical agent task with 90% input cache hits, V4 Pro runs about $0.021 versus roughly $0.54 for Opus, and V4 Flash is about $0.007. At thousands of tasks per day, that difference turns agent automation from a luxury into the default workflow.
 
-### What about DeepSeek-TUI vs Claude Code directly?
+### Can I use Claude Code with DeepSeek as the backend instead of Opus?
 
-DeepSeek-TUI is a community-built terminal agent optimized for DeepSeek's pricing and architecture (RLM fan-out, MCP, sandboxed execution). Claude Code is a commercial product with a more polished workflow and native Opus integration. DeepSeek-TUI offers architectural patterns Claude Code does not (parallel sub-agents at V4 Flash pricing). Claude Code offers workflow maturity and harness features DeepSeek-TUI is still building. For a detailed breakdown of DeepSeek Agent types, see [What Is a DeepSeek Agent](</blog/what-is-deepseek-agent>).
+Yes — it is the most common configuration in mid-2026. Set ANTHROPIC_BASE_URL to https://api.deepseek.com/anthropic and ANTHROPIC_API_KEY to your DeepSeek key, and Claude Code runs on V4 while keeping plan mode, diff review, permission prompts, and sub-agents. You trade Opus-specific reasoning behaviors and possibly imperfect mapping of some Anthropic parameters. Many teams keep DeepSeek as the default and escalate to Opus only for the hardest sessions.
 
-### Does switching to DeepSeek in Claude Code break any features?
+### Does swapping the model break any Claude Code features?
 
-Most Claude Code features work with DeepSeek as the backend — plan mode, agent mode, diff review, tool permissions. Features that depend on Anthropic-specific model behaviors (certain instruction-following patterns, Opus-specific reasoning styles) may produce different results. Sub-agent spawning works but sub-agents also run on DeepSeek rather than Opus. Test your specific workflow before committing to DeepSeek as the default backend.
+Not most of them. Plan mode, agent mode, diff review, and tool permissions all work with DeepSeek as the backend. What you lose is behavioral: features that depend on Anthropic-specific model traits — certain instruction-following patterns and Opus-style reasoning — can return different results, and spawned sub-agents also run on DeepSeek rather than Opus. Test your real workflow before making DeepSeek the default backend.
+
+### How does a DeepSeek-native agent like DeepSeek-TUI compare with Claude Code?
+
+DeepSeek-TUI is a community-built terminal agent tuned to DeepSeek's economics: RLM fan-out (one V4 Pro coordinator with up to 16 V4 Flash sub-agents), sandboxed execution, and MCP support. Claude Code is a commercial harness with a more polished workflow and native Opus integration. So DeepSeek-TUI enables parallel-sub-agent patterns that are economically irrational on Opus pricing, while Claude Code offers the workflow maturity DeepSeek-TUI is still building.
 
 ### Which should a solo developer choose?
 
-If you are a solo developer watching API costs closely and working primarily on bounded tasks (feature implementation, bug fixes, small projects), configure Claude Code with DeepSeek V4 Flash as the backend. You get the mature harness at minimal per-task cost. If you are working on a large codebase with complex interdependencies and cost is secondary to correctness, native Claude Code with Opus is the safer default. The hybrid setup described in §8 covers most solo developer workflows without forcing a binary choice.
+If you watch API costs and work mostly on bounded tasks — feature implementation, bug fixes, small projects — run Claude Code with V4 Flash as the backend: a mature harness at minimal per-task cost. If you work in a large, interdependent codebase where correctness outweighs cost, native Opus is the safer default. For most solo developers, the tiered hybrid from the article — Flash for routine work, escalation to Opus for the hardest tasks — avoids a forced binary choice.

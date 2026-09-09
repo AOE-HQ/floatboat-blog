@@ -104,17 +104,6 @@ But the **gumloop review** question I'd actually ask before signing up: _Can I d
 
 It's a tool for people who already know how their processes work and want to automate them. Not a tool for figuring out your processes while you go.
 
-## FAQ
-
-**Q: Is Gumloop good for beginners with no coding background?** A: It's no-code, but that doesn't mean no learning curve. Most non-technical users report weeks of adjustment. The templates help, but complex flows still require systems thinking.
-
-**Q: How does Gumloop compare to Zapier?** A: Zapier is trigger-action based and easier to start with. Gumloop is AI-native and handles more complex, multi-step logic — but is heavier to set up. It's like if Zapier and ChatGPT had a baby.
-
-**Q: Can one person realistically run Gumloop solo?** A: Yes, but the Solo plan's 10,000 credits can run out quickly with AI-heavy workflows. Budget time for setup and ongoing maintenance.
-
-**Q: Is Gumloop secure?** A: Gumloop is compliant with SOC 2 Type II and GDPR, and never uses customer data to train AI models.
-
-**Q: Does Gumloop have a free trial?** A: There's a permanent free tier with 2,000 credits — no time limit, but limited enough that you'll need to upgrade for real use.
 
 _Anyway, that's what I found after spending real time with it. It's not the answer to everything, but for the right kind of team, it might actually be the answer to quite a lot. Worth a test run if the use case fits._
 
@@ -129,3 +118,29 @@ _Anyway, that's what I found after spending real time with it. It's not the answ
   * [Learn how AI automation work is actually priced in the real market.](</blog/ai-automation-agency-pricing>)
 
   * [Understand the difference between AI agents and assistants in real workflows.](</blog/ai-agent-vs-ai-assistant>)
+
+## FAQ
+
+### Who should actually use Gumloop?
+
+Teams with defined, repeatable, multi-step processes — typically ops, marketing, or data teams of 3–10 people with a dedicated person to build and maintain flows. The article cites Gumloop shining at batch CRM updates, document processing, and lead enrichment at volume. For judgment-heavy, mixed work like a solo creator's typical day, the node-based model is usually more overhead than help.
+
+### What is Gumloop, and how does building flows work?
+
+It's a no-code AI automation platform built on a visual canvas. You drag nodes onto a board and connect them — one node scrapes a page, the next calls an LLM to summarize, another writes to a Google Sheet — and the connected steps become a working flow. Gummie, a meta-agent, generates flows from a natural-language description. In practice, how well it works depends on how clearly you can map your task into discrete steps.
+
+### How is Gumloop different from Zapier?
+
+Zapier is trigger-and-action: something happens in one app and triggers something in another. Gumloop is AI-native — models like ChatGPT and Claude sit inside your flows, processing and making decisions along the way — which handles more complex, multi-step logic but is heavier to set up. As one comparison in the article puts it, Gumloop is like Zapier and ChatGPT had a baby.
+
+### Is Gumloop hard to learn if I'm not technical?
+
+It's no-code, but that doesn't mean no learning curve. The article reports users needing 50–100 hours to feel comfortable, with one non-engineer reviewer saying it took weeks to reach intermediate level. Gumloop rewards process thinkers: every step, branch, and condition has to be explicit, and you'll constantly tune prompts to keep outputs consistent. Templates help, but don't expect to spin it up in an afternoon.
+
+### What does Gumloop cost, and how do credits work?
+
+A free tier includes 2,000 credits and 2 concurrent flow runs — enough to test, not to run real automation. The Solo plan starts at $37/month (10,000 credits, one seat), and Team starts at $244/month. Credits are the tricky part: standard AI calls run about 2 credits, advanced models about 20, and an enrichment flow over 100 contacts costs 6,001 credits. Overage charges apply with no automatic shutoff, so verify on the official pricing page.
+
+### What kind of work should not be automated with Gumloop?
+
+Work that doesn't fit into discrete nodes. If your days are mixed and judgment-heavy — write something, research, make a call, communicate, repeat — mapping that into explicit flows takes more time than doing the work. Gumloop assumes high-volume, low-variation automation. It also demands ongoing maintenance: AI outputs drift, so inconsistent downstream results are a real risk unless you build in error handling.

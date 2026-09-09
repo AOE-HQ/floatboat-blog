@@ -100,24 +100,6 @@ I do this every three months. Takes about 45 minutes. Has saved me from more tha
 
 **Step 6: Identify one new friction point.** What's the one thing you're still doing manually that you keep meaning to automate? That's your next project — or a signal that it shouldn't be automated at all.
 
-## FAQ
-
-### Should I automate client work or admin work first?
-
-Admin, almost always. Client-facing work carries reputational risk if the output is wrong or off-tone. Admin errors are usually recoverable. Start with the stuff where "good enough" actually is good enough — scheduling, data entry, internal reporting, meeting summaries. Once you trust your systems, move toward client-adjacent tasks, but keep human review in the loop longer than you think you need to.
-
-### How many automation tools are too many?
-
-My working rule: if you can't name all your active automation tools off the top of your head, you have too many. For a solo operator, four or five tools covering distinct functions is a healthy ceiling. For a small team of five to ten people, eight to ten is probably the range before maintenance overhead starts eating the time savings.
-
-### What should stay manual even if it can be automated?
-
-Anything where the quality of the relationship depends on the effort being visible. A client check-in that the client knows you drafted personally hits differently than one that reads like it was templated. Negotiation. Difficult conversations. Creative decisions that require genuine taste judgment. The test I use: _"If the person on the receiving end knew this was automated, would it feel worse?"_ If yes, keep it manual.
-
-### How often should I audit automations?
-
-Quarterly is the minimum if you have more than three active automations. Monthly is better if you're running workflows that touch client communication or external systems. The biggest mistake I see — and have made — is setting up an automation and trusting it indefinitely. Things break quietly. A quarterly check catches most of it before it becomes a real problem.
-
 I'm still figuring out parts of this. The inbox automation category in particular is moving fast enough that I'd encourage checking current reviews rather than trusting any single article — including this one — as the final word on specific tools. The category of **ai tools for business automation** is genuinely maturing, and what was true six months ago sometimes isn't anymore.
 
 But the underlying logic? Mostly stable. Start with workflow pain. Keep your stack small. Audit it regularly. The tools are less important than the discipline.
@@ -133,3 +115,29 @@ But the underlying logic? Mostly stable. Start with workflow pain. Keep your sta
   * If you’re evaluating AI vendors, this breakdown of AI workspace agents explains where the category genuinely helps — and where it still creates more setup overhead than value — [AI workspace agents explained](</blog/ai-workspace-agents>)
 
   * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](</blog/ai-agent-solo-operators>)
+
+## FAQ
+
+### Which AI automation tools should I actually be using?
+
+The honest answer is to start with workflow pain, not tool rankings or categories. List what you do more than twice a week that you hate doing — scheduling, handoffs between systems, inbox triage, report assembly — then pick one focused tool per function: an orchestration platform, a meeting assistant, an inbox agent, a general AI assistant. All-in-one platforms are harder to set up and maintain, and strategic alignment beats trend-chasing.
+
+### Which part of my work should I automate first?
+
+Admin and reporting give time back fastest — they're repetitive, high-friction, and low-stakes when slightly wrong. Support is a quick win if you get the same questions repeatedly. Sales and content need more calibration. Automate client-facing tasks too, but keep human review in the loop longer: errors there carry reputational risk, while admin errors are usually recoverable.
+
+### What does a realistic starter stack look like?
+
+One focused tool per function. Orchestration: Zapier for its wider app library and easier start, Make for more control over complex flows, n8n if you can self-host. A meeting assistant like Fathom or Fireflies, so action items land somewhere useful. An inbox agent if email eats your week. A general assistant — Claude or ChatGPT — for content, and a CRM with built-in automation. Skip platforms that promise to do everything.
+
+### How much does a reasonable setup cost per month?
+
+For the core layers — a general AI assistant, an automation platform, and a meeting tool — expect roughly $65–150 per month. Beyond that you're solving specific problems, and specific problems deserve specific justifications. Watch usage-based pricing: task-based models like Zapier's climb quickly at high volume, so budget against your real volume rather than the sticker price.
+
+### How many automation tools is too many?
+
+If you can't name every active tool off the top of your head, you have too many. For a solo operator, four or five tools covering distinct functions is a healthy ceiling; for a five-to-ten-person team, eight to ten is the range before maintenance overhead eats the time savings. Before adding anything, ask whether an existing tool could do the job with a different configuration — and audit quarterly, because automations break quietly.
+
+### What should stay manual even when it can be automated?
+
+Anything where the quality of the relationship depends on the effort being visible: client check-ins that should feel personal, negotiation, difficult conversations, and creative decisions that need real taste. In sales, the human writes the message that matters while automation handles the mechanical parts. Test: if the receiver would feel worse knowing it was automated, keep it manual.

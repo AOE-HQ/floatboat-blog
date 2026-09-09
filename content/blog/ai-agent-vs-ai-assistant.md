@@ -112,28 +112,6 @@ What I've started doing: instead of asking "is this an agent or an assistant," I
 
 ![3.png](/blog/images/ai-agent-vs-ai-assistant/1775213454090-50dbf26d-415a-45ae-9b7b-3e8fea1c4ea7.png)
 
-## FAQ
-
-**What's the simplest way to explain the difference?**
-
-Assistants respond to what you ask. Agents pursue goals you define. The moment you stop prompting an assistant, it stops working. An agent keeps going — or at least, that's what it's designed to do.
-
-**Is ​ChatGPT** ​**​ an AI assistant or an AI agent?**
-
-In its standard form, it's an assistant — reactive, session-scoped memory, no autonomous action. With tools and plugins enabled (including its newer memory features), parts of it can behave more like an agent. The line is genuinely blurry in ChatGPT's case right now.
-
-**Can an AI assistant become an agent?**
-
-Sort of. Wrapping a language model in frameworks that add memory, tool access, and a reasoning loop — like [LangGraph](<https://langchain-ai.github.io/langgraph/>) or [AutoGen](<https://microsoft.github.io/autogen/>) — can shift it toward agentic behavior. But it's an architectural change, not just a setting you toggle. The underlying model is the same; the scaffolding around it is different.
-
-**Do I need an agent for solo work or small teams?**
-
-Not necessarily. For a lot of creative and writing work, a well-prompted assistant is still the right tool. Agents start making more sense when you have repeatable, multi-step workflows you want to run with less manual involvement — like a research-to-draft pipeline, or automated file organization, or anything where the same sequence of steps happens more than a few times a week.
-
-**Why do companies keep using these terms interchangeably?**
-
-Mostly marketing. "Agent" sounds more impressive than "assistant," so a lot of tools reach for that label. The [Stanford HAI 2025 AI Index Report](<https://hai.stanford.edu/ai-index/2025-ai-index-report>) is worth reading if you want a more rigorous framework for how researchers actually evaluate and categorize these systems — it's a useful reality check against the marketing.
-
 Anyway — that's my understanding of it right now. Still learning. But at least the next time someone mentions "deploying an AI agent," I won't just nod along and secretly have no idea what makes it different from a chatbot.
 
 If you're exploring this stuff too, hopefully this saves you some of the time I spent going in circles.
@@ -147,3 +125,29 @@ _Related posts:_
   * [How AI automation is actually priced in the real market](</blog/ai-automation-agency-pricing>)
 
   * [How Lindy and Gumloop differ when it comes to agent-style workflows](</blog/lindy-vs-gumloop>)
+
+## FAQ
+
+### What's the simplest way to explain the difference?
+
+Assistants respond to what you ask; agents pursue the goals you set. Stop prompting an assistant and it stops working, while an agent is designed to keep going toward the goal. Underneath, two things separate them: how much autonomy the system has, and how deep its memory goes. When you're unsure which one you're dealing with, ask who is responsible for the next step — that framing cuts through most of the confusion.
+
+### Is ChatGPT an AI assistant or an AI agent?
+
+In its standard form, it's an assistant: reactive, session-scoped memory, no autonomous action. Enable tools, plugins, or its newer memory features and parts of it start behaving more like an agent. The line is genuinely blurry in ChatGPT's case right now — which is exactly why it helps to judge a tool by what it actually remembers and can do on its own, rather than by its label.
+
+### Can an AI assistant become an agent?
+
+Sort of, but it's an architectural change, not a setting you toggle. Wrapping the same language model in frameworks that add memory, tool access, and a reasoning loop — like LangGraph or AutoGen — shifts it toward agentic behavior. The underlying model stays the same; the scaffolding around it changes. That's also why asking a prompt to "be more agentic" rarely works on its own.
+
+### Do I need an agent for solo work or small teams?
+
+Not necessarily. For a lot of creative and writing work, a well-prompted assistant is still the right tool — if you can describe the task in a sentence or two and nothing from yesterday matters, an assistant probably fits. Agents earn their place when you have repeatable, multi-step workflows you want to run with less manual involvement: a research-to-draft pipeline, automated file organization, or any sequence that runs a few times a week.
+
+### Why do companies keep using these two terms interchangeably?
+
+Mostly marketing — "agent" sounds more impressive than "assistant," so tools reach for the flashier label. But some blurring is genuine: assistants are quietly adding memory, tool use, and multi-step execution, while some "agents" are little more than chatbots. If you want a more rigorous, research-grade framework, Stanford HAI's AI Index report is a useful reality check against the marketing.
+
+### What should I ask instead of "agent or assistant"?
+
+Ask two things: how much does this system remember about me, and how much can it do without me holding its hand? Those two questions cut through the marketing noise. As a rule of thumb, using an assistant feels like consulting an expert, while using an agent feels like delegating to a capable colleague — the real difference is who owns the next step.

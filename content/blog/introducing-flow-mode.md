@@ -120,3 +120,7 @@ No. Flow Mode adds a **during-meeting / during-draft** layer. AI meeting prepara
 ### What if an Agent edit goes wrong?
 
 Use **version history** : open a prior revision, review the diff, and roll back to a known-good state. Flow Mode is designed so experimentation does not require copying files or losing chat-side alternatives.
+
+### Where does Flow Mode run, and is it available everywhere?
+
+Flow Mode is desktop workspace functionality inside Floatboat on Mac and Windows — the same environment where Combo Skills, multi-model routing, and event-scoped Agent workspaces already live. Exact availability may vary by release, so treat the live app and release notes as the source of truth for your platform and version.

@@ -78,30 +78,6 @@ Both Google Calendar and Outlook are good at telling you what's scheduled. Remin
 
 That's what got me looking into [Floatboat](</>). It doesn't replace either calendar — it sits after them. Your calendar holds the schedule, and Floatboat uses agents to push the work forward: prepping meeting briefs from context before you ask, drafting follow-ups, running recurring work loops that used to eat an hour of manual setup every week. I'm still early with it, but the shift from "organized schedule" to "proactive execution" has been the most useful thing I've found this year. If your calendar is full but your output still depends on you manually opening every tab and chasing every next step — that's the gap worth exploring.
 
-## FAQ
-
-### What is the difference between Google Calendar and Outlook?
-
-Google Calendar is a cloud-native scheduling tool built into Google Workspace — it's lightweight, works across all platforms in a browser, and integrates tightly with Gmail, Meet, and Google Tasks. Outlook Calendar is part of Microsoft 365, offering deeper integration with Outlook mail, Teams, SharePoint, and Microsoft To Do. The biggest practical difference: Google is simpler and more accessible across devices; Outlook offers stronger enterprise features like delegate access, Scheduling Assistant, and email-to-task workflows.
-
-### Can Google Calendar and Outlook work together?
-
-Yes, but with friction. You can subscribe to one calendar inside the other using an ICS URL, which gives you a read-only view. For true two-way sync, you'd need a third-party tool. Native cross-platform sync between Google and Microsoft doesn't currently support real-time bidirectional updates. Please check the latest documentation from both platforms, as sync capabilities evolve.
-
-![5.png](/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.png)
-
-### What should users check before linking calendars?
-
-Make sure you know which calendar is set as your default for new events. Also understand that ICS subscriptions are read-only and can have significant refresh delays. Imported calendars won't show up in scheduling tools like Outlook's "Find a time" or Google's "Suggested times" — your colleagues won't see those blocks as busy. Test with a few events before relying on it for real scheduling.
-
-### When is Outlook better for work?
-
-When your organization or clients run on Microsoft 365, when you need delegate access or room booking, or when your work is heavily email-driven and you want flagged emails to flow directly into your task list. Outlook's email-calendar-task integration is tighter than Google's for that specific workflow.
-
-### When is Google Calendar the better fit?
-
-When you work independently or with small teams, need simple cross-platform calendar sharing, or when your workflow centers around Gmail and Google Meet. It's lighter, faster to set up, and works equally well on any device with a browser. For solo operators who don't need enterprise scheduling features, Google Calendar does the job with less overhead.
-
 That's my honest take. Pick the calendar that matches where your work already lives — fighting your ecosystem creates more friction than any feature advantage is worth. And if you've already figured that out but your weeks still feel like you're manually pushing every task your calendar surfaces, maybe the next thing to explore isn't a better calendar. It's what happens after the reminder fires.
 
 ## Previous Posts:
@@ -115,3 +91,31 @@ That's my honest take. Pick the calendar that matches where your work already li
 • Not sure whether you need an assistant, an automation, or an agent? **[Workspace Agents vs Chat Assistants](</blog/workspace-agents-vs-chat-assistants>)** breaks down the differences in real-world work setups.
 
 • If recurring prep work, follow-ups, and admin loops keep eating your week, **[How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>)** explores how repetitive workflows can be handled differently.
+
+![5.png](/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.png)
+
+## FAQ
+
+### Which calendar should I use — Google Calendar or Outlook?
+
+Match the calendar to the ecosystem where your clients and collaborators already live. Work running through Gmail, Meet, and Google Workspace points to Google Calendar; work on Outlook mail, Teams, and Microsoft 365 points to Outlook. For many solo operators the catch is that clients split across both, so you often end up running and checking two calendars at once.
+
+### What's the real difference between the two calendars?
+
+Under the surface you are comparing two work ecosystems, not two apps. Google Calendar is cloud-native and lightweight — browser-based, simple to share, and tied into Gmail, Meet, and Google Tasks. Outlook is heavier and organization-oriented: delegate access, room booking, Scheduling Assistant, and a deeper email-to-task pipeline where flagged emails appear in My Day and a meeting surfaces related threads without leaving the calendar.
+
+### Can Google Calendar and Outlook sync with each other?
+
+Only with friction. Subscribing one to the other through an ICS link gives a read-only view whose updates can lag by hours, and there is no native real-time two-way sync. True two-way sync needs a third-party tool, which adds a subscription, extra permissions, and another point of failure when APIs change. Test the ICS route with a few events before relying on it for real scheduling.
+
+### What should I check before linking calendars?
+
+Confirm which calendar is your default for new events, and remember that ICS subscriptions are read-only with noticeable refresh delays. Imported calendars also stay invisible to scheduling tools — colleagues will not see your blocks in Outlook's Find a time or Google's Suggested times. Treat the linked view as awareness rather than shared availability, and check both platforms' latest docs since sync capabilities keep evolving.
+
+### When is Outlook the better choice?
+
+When your organization or clients run on Microsoft 365 and you need delegate access, room booking, or Scheduling Assistant. It is also stronger for email-driven work: flagged emails flow into your task list, and a meeting's related threads and attachments appear without leaving the calendar. For that workflow, Outlook's email-calendar-task integration is simply tighter than Google's.
+
+### Why does my calendar look productive while the work stalls?
+
+Because scheduling is not execution. Both calendars reliably show what is scheduled, but the follow-up after a call, the brief before tomorrow's meeting, and the recurring task rebuilt from scratch still sit with you. That gap is where calendar-runtime agents like Floatboat come in — they do not replace your calendar, they sit after it, preparing briefs and drafting follow-ups from your events.

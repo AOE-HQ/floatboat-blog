@@ -124,32 +124,6 @@ I'm not sure I've fully figured out my own solution here. I'm still experimentin
 
 ![5.png](/blog/images/why-ai-forgets-every-session/1775543648701-03ac0ad6-590b-4a19-b418-3b9157fc917e.png)
 
-## FAQ
-
-**Q: Does every AI tool forget me between sessions?**
-
-Most chat-based AI tools are stateless by design — meaning each new session starts without memory of the previous one. Some platforms have added memory features (Claude, ChatGPT, Gemini all have versions of this), but the depth and reliability vary significantly. As [Tacnode's architecture guide on stateful vs. stateless AI agents](<https://tacnode.io/post/stateful-vs-stateless-ai-agents-practical-architecture-guide-for-developers>) explains, most "AI tools with memory" are actually stateless models with an external memory layer added on top — they're not inherently stateful. Worth understanding the difference before assuming a memory feature solves your problem.
-
-​**Q: ​Isn** ​'t this what the context window is for?
-
-The context window is what the AI can see _within_ a single session. It's not the same as memory across sessions. A very large context window helps with long documents or complex single tasks. It doesn't help with the fact that next Tuesday, when you open a new session, that context window is completely empty again.
-
-**Q: What's the fastest workaround if I'm not switching tools?**
-
-The most practical short-term approach: maintain a "project brief" document for each ongoing project — covering your style preferences, key decisions made, things to avoid, and current status. Paste it at the start of each session. It's manual and slightly annoying, but it's reliable. The issue is that this scales poorly across multiple projects and requires you to keep the document updated, which is its own task.
-
-**Q: What's the difference between AI memory and AI context?**
-
-Memory is what the system stores between sessions. Context is what's loaded into the active conversation. A system can have memory without surfacing it as useful context — and a system can have rich in-session context without anything persisting after the session ends. For practical work, you need both: stored memory that loads as useful working context at session start.
-
-**Q: Is this problem going to solve itself as AI gets better?**
-
-Partially. Context windows are getting longer, memory features are improving, and workspace-level AI tools are emerging. But the fundamental architectural distinction between stateless and stateful systems isn't going away — it's a design choice with real tradeoffs. The more likely path is that tools purpose-built for ongoing work will handle this better than general-purpose chat interfaces, which were never really designed for it.
-
-**Q: Should I be thinking about this for solo work specifically, or is this a team problem too?**
-
-Both, but it hits solo operators harder for the reason I mentioned earlier: teams have redundant context systems (docs, project tools, shared history). Solo operators are often the only context system. When your AI forgets, there's no organizational backstop. That asymmetry makes **ai memory for work** a higher-priority problem for one-person operations than for most team environments.
-
 _This is based on my own experience running a solo content operation and the research I've been doing into AI memory architecture. I haven't been paid by anyone mentioned here. If you're experimenting with persistent context solutions, I'd genuinely be curious what you're finding — this space is moving fast and I'm still figuring parts of it out myself._
 
 ## Previous Posts:
@@ -163,3 +137,29 @@ _This is based on my own experience running a solo content operation and the res
   * [If you're trying to turn repeated prompts into reusable workflows, this step-by-step guide to building an AI agent is a solid next read](</blog/how-to-build-an-ai-agent>).
 
   * [And if you're exploring tools that go beyond stateless chats, this comparison of workflow builders vs AI workspaces will help you choose](</blog/workflow-builder-vs-ai-workspace>).
+
+## FAQ
+
+### Does every AI tool forget me between sessions?
+
+Most chat-based AI tools are stateless by design: every new session starts with no memory of the previous one. Some platforms have added memory features — Claude, ChatGPT, and Gemini all have versions — but depth and reliability vary. Most of these are still stateless models with an external memory layer added on top, not inherently stateful systems. Understand that distinction before assuming a memory feature solves your problem.
+
+### Isn't this what the context window is for?
+
+The context window is what the AI can see within a single session — it is not memory across sessions. A very large window helps with long documents or complex single tasks. It does nothing for the fact that next Tuesday, when you open a new session, that window starts completely empty again.
+
+### What's the fastest workaround if I'm not switching tools?
+
+Maintain a "project brief" document for each ongoing project — your style preferences, key decisions already made, things to avoid, and current status — and paste it at the start of every session. It's manual and slightly annoying, but reliable. The catch: it scales poorly across multiple projects, and keeping each document updated becomes its own recurring task.
+
+### What's the difference between AI memory and AI context?
+
+Memory is what the system stores between sessions; context is what gets loaded into the active conversation. A system can store memory without surfacing it as useful context, and a system can have rich in-session context without anything persisting afterward. For practical work you need both — stored memory that loads as useful working context at the start of each session.
+
+### Is this problem going to solve itself as AI gets better?
+
+Only partially. Context windows are lengthening, memory features are improving, and workspace-level AI tools are emerging. But the stateless-versus-stateful distinction is a fundamental architectural choice with real tradeoffs, and it isn't going away. The more likely path: tools purpose-built for ongoing work will handle persistence better than general-purpose chat interfaces, which were never really designed for it.
+
+### Is this a solo-work problem, or do teams face it too?
+
+Both — but it hits solo operators harder. Teams have redundant context systems: shared docs, project tools, and shared history. A solo operator is often the only context system, so when the AI forgets, there is no organizational backstop. That asymmetry is why persistent context is a higher-priority problem for one-person operations than for most team environments.

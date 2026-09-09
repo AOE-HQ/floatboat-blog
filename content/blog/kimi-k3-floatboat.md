@@ -121,26 +121,26 @@ When Moonshot AI released Kimi K3 on July 16, 2026, Floatboat made it available 
 
 ## FAQ
 
+### Is Kimi K3 available in Floatboat?
+
+Yes. Kimi K3 is one of Floatboat's built-in model families — alongside DeepSeek, Claude, Gemini, MiniMax, and GLM — and has been selectable in the model dropdown since July 16, 2026. No separate Kimi API key, no routing setup, no billing configuration. Auto Mode can also route work to K3 when event complexity calls for it.
+
 ### What is Kimi K3?
 
 Kimi K3 is Moonshot AI's 2.8-trillion-parameter open model, launched on July 16, 2026. It supports a 1-million-token context window, includes native visual understanding, and is designed for long-horizon coding, knowledge work, and reasoning. Kimi describes K3 as the world's first open 3T-class model and has committed to releasing the full model weights by July 27, 2026.
-
-### Is Kimi K3 available in Floatboat?
-
-Yes. Kimi K3 is available through Floatboat's model selector without requiring users to configure a separate Kimi API key.
 
 ### Is Kimi K3 open source?
 
 Kimi describes K3 as an open model and says the full model weights will be released by July 27, 2026. The weights are not yet publicly available as of this writing. Once released, K3 will be the first open-weight model in the 3T-parameter class.
 
-### Does Kimi K3 have a one-million-token context window?
+### What should I use Kimi K3 for in Floatboat?
 
-Yes. Kimi's official documentation specifies a 1-million-token context window. Kimi K3 operates at max reasoning effort by default at launch, with lower and higher effort modes planned for subsequent updates.
+Point K3 at the handful of events each month where correctness dominates cost. Its 1M context shines for multi-document preparation — a client quarterly review that must synthesize previous meeting notes, CRM history, and email threads in a single pass. Native visual understanding handles design reviews and screenshot-driven iteration; always-on max reasoning suits complex synthesis like retrospectives and negotiation briefs. Keep routine coding on K2.7 Code and classification on K2.6.
 
 ### Is Kimi K3 the best coding model?
 
 No single benchmark can determine whether a model is best for every coding task. Kimi's official technical blog shows K3 leading on some coding benchmarks (such as SWE Marathon) and trailing on others (such as DeepSWE and FrontierSWE) compared to Claude Fable 5 and GPT-5.6 Sol. The model that works best for your codebase depends on your repository structure, test suite, toolchain, and acceptance criteria — test K3 against your actual workflow before switching.
 
-### Do I need a Kimi API key to use K3 in Floatboat?
+### How much does Kimi K3 cost to run?
 
-No. Floatboat provides built-in model access. Using Kimi K3 in a Floatboat workspace does not require a separate provider API key.
+K3 is Moonshot's priciest model: $3 per million input tokens and $15 per million output, though cached input drops to $0.30 per million. Running a solopreneur's 30–50 calendar events a month entirely on K3 costs roughly $85. A tiered strategy — K3 for complex events, K2.7 Code for routine work, K2.6 for routing — lands around $55, and realistic caching can push that toward $40.

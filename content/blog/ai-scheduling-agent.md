@@ -166,34 +166,6 @@ The calendar isn't the goal. It's the trigger. The best AI scheduling agent is t
 
 * * *
 
-## FAQ
-
-**What is the difference between an AI scheduling agent and a calendar app?**
-
-A calendar app shows you _when_. An AI scheduling agent figures out _what to do_ with that time. Google Calendar and Apple Calendar are time containers. AI scheduling agents — across all four generations — add intelligence on top: finding optimal slots, prioritizing tasks, preparing context, and (at Gen 4) executing work automatically.
-
-**Do I still need Calendly if I use an AI scheduling agent?**
-
-Yes, for external booking. Gen 1 tools like Calendly handle the coordination layer — letting people outside your organization find time on your calendar. Gen 2+ tools complement that layer rather than replacing it. You can run Calendly for booking and a Gen 4 tool for execution on the same calendar.
-
-**Can an AI scheduling agent join my meetings?**
-
-Gen 3 tools can provide pre-meeting context and research. Gen 4 tools prep briefs before meetings, draft follow-ups after, and maintain per-event workspaces with files and run history. Actual meeting joining — the agent sitting in your Zoom call — varies by tool and is not a standard capability across the category as of mid-2026.
-
-**Is an AI scheduling agent the same as a virtual assistant?**
-
-Related but different. A virtual assistant is a human service — someone you hire to manage your calendar and tasks. An AI scheduling agent is software that runs on your machine, with no dependency on another person's availability, time zone, or working hours. The two can coexist: a virtual assistant might configure your AI scheduling agent, or the agent might handle routine scheduling while the human VA handles judgment-intensive coordination.
-
-**How do I choose between Gen 2, Gen 3, and Gen 4?**
-
-Use the five-question framework from this article. If you only need scheduling optimization (better task placement, conflict resolution) → Gen 2. If you need basic meeting prep and email-driven scheduling → Gen 3. If your calendar _is_ your operating system — you have no team, no assistant, and every event demands real work output → Gen 4.
-
-**Can AI scheduling agents handle multi-party coordination across different organizations?**
-
-Gen 1 tools (Calendly, Doodle) handle this well for simple availability polling. Gen 2 tools (Motion, Reclaim) are better suited to internal team scheduling. For complex multi-party, cross-organization coordination — like interview panels across companies — domain-specific Gen 3 tools (Findem, Glider AI) offer dedicated solutions. General-purpose Gen 3 and Gen 4 tools are improving here but may still require manual override for edge cases involving external calendars with restrictive sharing policies.
-
-* * *
-
 ## Related Articles
 
   * [Introducing FloatIM: Chat with AI Agents in Groups on an Agent-Native Network](</blog/introducing-floatim>)
@@ -205,3 +177,29 @@ Gen 1 tools (Calendly, Doodle) handle this well for simple availability polling.
 * * *
 
  _Disclosure: Floatboat is a calendar-driven proactive agent OS (Gen 4 as defined in this article) developed by AOE Tech Labs Limited. This article is a category analysis based on publicly available information. Gen 1–3 tools are described based on publicly available documentation and community discussion as of June 2026._
+
+## FAQ
+
+### What is the difference between an AI scheduling agent and a calendar app?
+
+A calendar app shows you _when_. An AI scheduling agent figures out _what to do_ with that time. Google Calendar and Apple Calendar are time containers. AI scheduling agents — across all four generations — add intelligence on top: finding optimal slots, prioritizing tasks, preparing context, and (at Gen 4) executing work automatically.
+
+### Do I still need Calendly if I use an AI scheduling agent?
+
+Yes, for external booking. Gen 1 tools like Calendly handle the coordination layer — letting people outside your organization find time on your calendar. Gen 2+ tools complement that layer rather than replacing it. You can run Calendly for booking and a Gen 4 tool for execution on the same calendar.
+
+### Can an AI scheduling agent join my meetings?
+
+Gen 3 tools can provide pre-meeting context and research. Gen 4 tools prep briefs before meetings, draft follow-ups after, and maintain per-event workspaces with files and run history. Actual meeting joining — the agent sitting in your Zoom call — varies by tool and is not a standard capability across the category as of mid-2026.
+
+### Is an AI scheduling agent the same as a virtual assistant?
+
+Related but different. A virtual assistant is a human service — someone you hire to manage your calendar and tasks. An AI scheduling agent is software that runs on your machine, with no dependency on another person's availability, time zone, or working hours. The two can coexist: a virtual assistant might configure your AI scheduling agent, or the agent might handle routine scheduling while the human VA handles judgment-intensive coordination.
+
+### How do I choose between Gen 2, Gen 3, and Gen 4?
+
+Use the five-question framework from this article. If you only need scheduling optimization (better task placement, conflict resolution) → Gen 2. If you need basic meeting prep and email-driven scheduling → Gen 3. If your calendar _is_ your operating system — you have no team, no assistant, and every event demands real work output → Gen 4.
+
+### Can AI scheduling agents handle multi-party coordination across different organizations?
+
+Gen 1 tools (Calendly, Doodle) handle this well for simple availability polling. Gen 2 tools (Motion, Reclaim) are better suited to internal team scheduling. For complex multi-party, cross-organization coordination — like interview panels across companies — domain-specific Gen 3 tools (Findem, Glider AI) offer dedicated solutions. General-purpose Gen 3 and Gen 4 tools are improving here but may still require manual override for edge cases involving external calendars with restrictive sharing policies.

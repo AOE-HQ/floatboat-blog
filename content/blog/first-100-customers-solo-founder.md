@@ -160,28 +160,6 @@ According to[ Carta's 2025 Solo Founders Report](<https://carta.com/data/solo-fo
 
 ![5.png](/blog/images/first-100-customers-solo-founder/1775616268699-0fa95876-afc3-455e-93fc-afb0cb4c4b9f.png)
 
-## FAQ
-
-**Q: Do I need to be on ​social media** ​**​ to get my first 100 customers?**
-
-Not necessarily. Depends entirely on where your specific customer already spends time. Some niches are highly active on LinkedIn or X. Others live almost entirely in private Slack groups, industry forums, or niche newsletters. The question to answer isn't "which platform should I be on?" — it's "where do the 500 people who most need my product already gather?" Social media is one possible answer, not the default one.
-
-**Q: How many conversations do I need before I have enough information?**
-
-There's no magic number, but most founders I've watched go through this phase find that somewhere between 15 and 25 substantive conversations — not demos, actual problem-exploration conversations — start to surface repeating patterns. When you hear the same frustration described in almost the same words by four different people, you have enough signal to act on. When you're still hearing fundamentally different problems from every conversation, keep going.
-
-**Q: What if I can't find a community relevant to my product?**
-
-That's actually important diagnostic information. If there's no community actively discussing the problem you're solving, either the problem isn't felt widely enough to generate community organically, or the community exists somewhere you haven't looked yet. Both of those are worth investigating seriously before continuing to build. The absence of community is a market signal, not just a distribution inconvenience.
-
-**Q: Should I offer a lifetime deal or steep discount to attract early customers?**
-
-Be careful. Discounts attract price-sensitive customers who are often your worst long-term fit — they churn fastest, complain most about pricing, and refer the least. A better approach: charge a fair early-adopter price in exchange for feedback access, a case study, or the genuine goodwill of being involved in building something. You want customers who believe the product is worth paying for, not customers who bought because it was 80% off and won't tell you anything useful.
-
-**Q: How do I know when I've done enough manual work and can start systematizing?**
-
-When you can write down, in enough detail that a new team member could follow it, exactly what you'd do to acquire one more customer — the specific communities, the specific message type, the specific follow-up sequence — you know enough to systematize. If you can't describe your acquisition process at that level of specificity, you don't yet understand it well enough to automate. The documentation test is a useful gate.
-
 _Observations from tracking indie founders, micro-SaaS builders, and solo operators through this phase. Statistics cited are from the sources linked above; all data reflects the most recently published figures at time of writing. Individual results vary substantially based on market, execution, and timing._
 
 ## Previous Posts:
@@ -195,3 +173,29 @@ _Observations from tracking indie founders, micro-SaaS builders, and solo operat
   * [Not sure what AI agents actually do in real work scenarios? These examples make it concrete](</blog/ai-agent-use-cases-real-examples>)
 
   * [Thinking about going deeper? Here's what it really takes to build your own AI agent](</blog/how-to-build-an-ai-agent>)
+
+## FAQ
+
+### Do I need to be on social media to get my first 100 customers?
+
+Not necessarily — it depends entirely on where your specific customer already spends time. Some niches are highly active on LinkedIn or X; others live almost entirely in private Slack groups, industry forums, or niche newsletters. The question isn't "which platform should I be on?" but "where do the people who most need my product already gather?" Social media is one possible answer, not the default one.
+
+### Should I charge from day one, or offer free first?
+
+Charge something from the start, even a fraction of your eventual price. Free users will tell you the product is great and never open it again; paying customers tell you what's broken because they paid for something that was supposed to work. Early revenue is also a filter that selects for serious customers — roughly 70% of indie SaaS founders now ask for a credit card upfront. Use a few free conversations to learn, but don't mistake free users for validation.
+
+### How many customer conversations do I need before I have enough signal?
+
+There's no magic number, but most founders find that 15 to 25 substantive conversations — actual problem exploration, not demos — start surfacing repeating patterns. When four different people describe the same frustration in almost the same words, you have enough signal to act on. If every conversation still surfaces a fundamentally different problem, keep going.
+
+### What if I can't find any community around my product?
+
+That's diagnostic information, not just a distribution problem. If no community actively discusses the problem you solve, either the problem isn't felt widely enough to form a community organically, or the community exists somewhere you haven't looked. Both possibilities are worth investigating seriously before you keep building. An absent community is a market signal about whether the problem is real and sharply felt.
+
+### Should I offer a lifetime deal or steep discount to attract early customers?
+
+Careful. Discounts attract price-sensitive customers who are often your worst long-term fit — they churn fastest, complain most about pricing, and refer least. A better approach: charge a fair early-adopter price in exchange for feedback access, a case study, or genuine goodwill from being part of building something. You want customers who believe the product is worth paying for, not people who bought it at 80% off and tell you nothing useful.
+
+### How do I know when to stop doing manual work and start systematizing?
+
+When you can write down exactly how you'd acquire one more customer in enough detail that a new teammate could follow it — the specific communities, message types, and follow-up sequences — you understand the process well enough to systematize. If you can't describe it at that level of specificity, you don't understand it yet, and automation would just lock in the wrong process. Systematize consistent delivery; keep anything still about learning manual.

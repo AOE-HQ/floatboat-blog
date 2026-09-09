@@ -100,24 +100,6 @@ The question to ask before choosing anything: ​**what specifically breaks down
 
 ![5.png](/blog/images/ai-agent-solo-operators/1776232516527-e523f9cb-b36e-4b2e-89b1-ec9c36aa0a61.png)
 
-## FAQ
-
-**Q: Is ​Hermes** ​**​ Agent actually usable without coding experience?**
-
-Technically possible, but realistically difficult. The installer is one line, but getting it configured — provider setup, messaging gateway, understanding the skill system — requires comfort with command-line tools and troubleshooting. I'd say it's accessible to someone with intermediate technical comfort, not a complete non-technical user. I haven't set it up myself, so I can't give you a firsthand account of how smooth the experience is end-to-end.
-
-**Q: Do workspace tools like Floatboat actually have "memory" or is it marketing?**
-
-This is worth digging into per tool. "Memory" can mean anything from session context to genuine cross-session recall to workflow templates that carry forward your preferences. Distinction matters. Before committing to any tool, look for specific documentation on how they handle context persistence — not just feature page descriptions.
-
-**Q: What's the actual cost difference?**
-
-A self-hosted setup might run $5–$15/month for a VPS plus your[ LLM API](<https://github.com/cheahjs/free-llm-api-resources>) costs (variable depending on usage). Workspace-native tools are typically subscription-based — usually in the $15–$50/month range for a solo operator tier. The cost difference is usually not the deciding factor. Time is.
-
-**Q: Should I wait for this category to mature before deciding?**
-
-Probably not — the tools are usable now, and the gap between "interesting demo" and "genuinely useful daily tool" has closed for the workspace-native category. Self-hosted agents are also past early-adopter stage, with the [Hermes Agent GitHub repo](<https://github.com/nousresearch/hermes-agent>) showing active development. The category will keep improving, but if you have a real workflow problem, waiting another six months won't change the fundamental decision you need to make.
-
 That's where I land on this. Not a definitive verdict — more like a clearer frame for thinking about which version of "AI agent" is actually relevant to you.
 
 The best tool is the one you'll actually use and can actually maintain. For most non-technical solo operators, that still points to workspace-native over self-hosted. But it's worth knowing what you're trading off when you make that choice.
@@ -133,3 +115,29 @@ The best tool is the one you'll actually use and can actually maintain. For most
   * [Explore the shift from AI assistants to true AI agents](</blog/ai-agent-vs-ai-assistant>)
 
   * [Discover practical AI agent use cases in real workflows](</blog/ai-agent-use-cases-real-examples>)
+
+## FAQ
+
+### Do I actually need an AI agent, or is my current AI setup enough?
+
+Not necessarily — it depends on what is actually breaking in your workflow. If you only want better memory inside a single session, most good AI tools already handle that and you don't need an agent yet. An agent earns its place when you need context that carries across days and weeks, reusable execution standards, or tasks that run without you. Name the specific bottleneck first: re-explaining everything each session, no automation while you're offline, or too much app-switching.
+
+### What are the two main types of AI agents for solo operators?
+
+Broadly, two. The first is self-hosted and developer-optimized — Hermes Agent is the clearest example: open-source, with persistent memory and self-improving skills, but you manage the server, the LLM provider, and maintenance yourself. The second is workspace-native and operator-optimized — Floatboat is the example: agent-like workflows inside a desktop app with no infrastructure to maintain, at the cost of less customization and control. Which fits depends mainly on how technical you are.
+
+### When does self-hosting an agent actually make sense for a solo operator?
+
+When you're comfortable managing a Linux server, need full control over your data, or want scheduled automations that run while your computer is off. If SSH, environment variables, and systemd are familiar to you, a Hermes-class agent can be worth the setup. Otherwise the setup alone is a multi-hour project, and every outage or API change becomes your job to debug — for most non-technical solo operators, that maintenance cost outweighs the benefit.
+
+### What's the real cost difference between the two routes?
+
+A self-hosted setup runs about $5–$15/month for a VPS plus LLM API charges that vary with usage. Workspace-native tools are typically subscription-based, usually $15–$50/month at a solo-operator tier. Cost is rarely the deciding factor — time is. Self-hosting only saves money if the hours you spend maintaining it are genuinely cheap, which for most solo operators they are not.
+
+### Do workspace tools really have "memory," or is that marketing?
+
+It depends on the tool, so look closely before committing. "Memory" can mean anything from session context to true cross-session recall to reusable workflows that carry your preferences forward — very different capabilities. Look for specific documentation on how a tool handles context persistence rather than feature-page language, and ask whether it actually remembers you across days and weeks and can store a multi-step process you define once and run repeatedly.
+
+### Should I wait for AI agents to mature before adopting one?
+
+Probably not. Workspace-native tools have already closed the gap between an "interesting demo" and a genuinely useful daily tool, and self-hosted agents like Hermes are under active development. If you have a real workflow problem, waiting another six months won't change the fundamental decision you need to make. Choose the tool you'll actually use and can actually maintain — for most non-technical solo operators, that still points to workspace-native over self-hosted.

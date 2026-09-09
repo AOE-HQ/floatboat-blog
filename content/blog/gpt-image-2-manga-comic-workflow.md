@@ -126,24 +126,6 @@ For everyone in between — curious, doing it for fun, want to test whether you 
 
 ![6.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087089441-d5498d93-a404-49d7-9839-cd0dc4614114.png)
 
-## FAQ
-
-**Does it work for manhwa / vertical webtoons?**
-
-The aspect ratio support goes up to 1:3 tall, which fits webtoon panels. Style-wise , Korean webtoons look reasonably well. I haven't pushed a full episode through it yet.
-
-**Can I use it for commercial work?**
-
-Check the current OpenAI usage policy — outputs are generally usable commercially, but the rules around generating recognizable IP are strict. Not legal advice, just check the policy directly.
-
-**Does it replace a real artist?**
-
-No. It compresses the parts of comic-making that were always grunt work. The taste, the story, the panel rhythm — that's still you.
-
-**How long does a page take me now versus before?**
-
-Before: 6–8 hours for a polished black-and-white page. Now: about 2 hours, including the manual hand retouching. That number will keep moving as I get faster at prompting.
-
 That's where I am with this right now. Bookmark it, try it on a short page, see how it feels in your hands. The model will keep changing — what's true today might not be true in three months. But for one specific thing — solo sequential art with legible CJK text — it just crossed a threshold that's worth knowing about.
 
 Back to drawing things.
@@ -159,3 +141,29 @@ Back to drawing things.
   * [Discover practical AI workflows that actually work beyond one-off prompts](</blog/ai-workflow-solo-founders>)
 
   * [Explore how AI can help you operate like a full creative team solo](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+
+## FAQ
+
+### Does GPT Image 2 really render readable text in speech bubbles?
+
+For headline-length text, yes — it renders CJK and Latin text at roughly 99% character accuracy, and Japanese speech bubbles specifically have looked seamless in independent hands-on tests. But it's not magic: dense paragraphs at small sizes still slip, so I keep in-bubble text under about 15 characters per line. And any text you want rendered literally goes in double quotes — unquoted text drifts into plausible-looking gibberish.
+
+### Can it keep the same character consistent across a chapter?
+
+Partially, so manage expectations. With Thinking mode on and an 8-panel batch from one prompt, about 5–6 panels keep recognizable continuity; the rest need a face re-roll. Beyond 6–8 panels, faces drift subtly even with strong prompting, and hands in dynamic poses come out wrong roughly one panel in four. A reference sheet — three good panels fed back as image inputs — is the closest thing to a real character lock right now.
+
+### Does it work for manhwa or vertical webtoons?
+
+The aspect ratio support goes up to 1:3 tall, which fits webtoon panels, and Korean-style webtoons render reasonably well. The honest caveat: the same character-consistency and background-continuity limits apply across a full episode, so plan for reference sheets, manual hand retouching, and reusable background plates if you push a long vertical story through it.
+
+### Can I use it for commercial work?
+
+Check the current OpenAI usage policy — outputs are generally usable commercially, but the rules around generating recognizable IP are strict. That's not legal advice; verify the policy directly before shipping, since terms change. For production work you can also go token-based through the API instead of the ChatGPT subscription.
+
+### Does it replace a real artist?
+
+No. It compresses the grunt-work parts of comic-making — backgrounds, lettering, basic scene blocking — the parts solo creators least enjoy. Taste, story, panel rhythm, and the final editorial eye are still yours. The model gives you a manga look, not your manga look; if you have a strong personal style, the drift will frustrate you. Treat it as a time-saver, not a replacement for skill.
+
+### How much faster is a page now, and what does it cost?
+
+For a polished black-and-white page, my time dropped from about 6–8 hours to roughly 2 hours including manual hand retouching — and the number keeps shrinking as my prompting improves. Cost is modest: GPT Image 2 is included in ChatGPT Plus, or available token-based via the API at roughly $30 per million image-output tokens, which works out to a few cents per panel at typical resolutions.

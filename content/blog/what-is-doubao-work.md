@@ -277,7 +277,7 @@ No. The international product is Dola ([dola.com](<http://dola.com>)), a general
 
 ### Can I use it without Feishu?
 
-Yes. The personal edition's core capabilities don't depend on Feishu. Signing in with Feishu (or adding a connector) is what unlocks organizational context and team-collaboration features.
+Yes. The personal edition's core capabilities don't depend on Feishu. Signing in with Feishu (or adding a connector) is what unlocks organizational context and team-collaboration features. It also won't replace Feishu: even in the team edition, Doubao Work is an agent execution layer on top of Feishu, which stays the collaboration foundation.
 
 ### How do I choose among WorkBuddy, Qwen Office, and Floatboat?
 
@@ -286,7 +286,3 @@ If you're already on **Feishu** → prefer Doubao Work; already on **DingTalk** 
 ### What's the difference between Doubao Work and Floatboat?
 
 Both "get work done," but **their default context and trigger differ**. Doubao Work: you start the task, the team edition reads Feishu organizational data, and its strengths are in-Feishu delivery and domestic desktop GUI control. Floatboat: calendar events trigger the agent to prepare and execute automatically (before meetings, at deadlines, for follow-ups), and its strengths are the [Proactive Agent OS](</>) and cross-calendar integration. Feishu teams should look at Doubao Work; solopreneurs and cross-timezone calendar users can compare [Floatboat](</>).
-
-### Can Doubao Work replace Feishu?
-
-No. It's an agent execution layer on top of Feishu (in the team edition) or a personal office agent that works independently of Feishu (in the personal edition). Feishu remains the collaboration foundation.

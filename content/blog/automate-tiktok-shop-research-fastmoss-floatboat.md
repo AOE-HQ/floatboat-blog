@@ -236,11 +236,31 @@ The same pattern can support:
 
 The value compounds because every run leaves the next run better prepared.
 
+## Data and editorial note
+
+The live evidence in this article was captured from FastMoss on August 4–5, 2026 and covers the US Beauty & Personal Care Week 31 ranking plus the DR.DENT product detail. FastMoss figures are third-party estimates and can change. Account-restricted fields may vary. The recommendation shown here is an intelligence and workflow example, not product, dental, legal, advertising, sourcing, or investment advice.
+
+## Sources
+
+  * [FastMoss US Beauty weekly ranking](<https://www.fastmoss.com/e-commerce/saleslist?date_type=2&date_value=2026-31&page=1&region=US&l1_cid=14>)
+
+  * [DR.DENT product intelligence](<https://www.fastmoss.com/e-commerce/detail/1732294339991933438>)
+
+  * [FastMoss MCP](<https://developer.fastmoss.com/mcp/overview.html>)
+
+  * [Floatboat Agent Workspace](</ai-agent-workspace>)
+
+  * [Calendar-Driven AI](</blog/what-if-your-calendar-could-run-itself>)
+
 ## FAQ
 
 ### Does this require a FastMoss API or MCP connection?
 
 No. FastMoss MCP is a valuable structured route when configured, and exports are useful for batch analysis. Floatboat can also operate the authorized FastMoss website directly through its built-in browser, making the live product usable before a custom integration project exists.
+
+### Does Floatboat verify the report it produces?
+
+Yes — self-review is part of the run. Floatboat renders the management brief as a local page and opens it in the same browser to check the title, recommendation, key figures, comparison table, embedded evidence, links, layout, and console output, revising the source file if anything disagrees. Every step also preserved screenshots with source URLs, so each claim traces back to a captured page. The underlying FastMoss figures remain third-party estimates that can change.
 
 ### What is the difference between FloatSchedule and a reminder?
 
@@ -257,19 +277,3 @@ Yes. Through an authorized connected mailbox and an agreed delivery policy, Floa
 ### What still requires human approval?
 
 Teams can keep explicit approval gates for external or consequential actions such as creator outreach, public publishing, sourcing and inventory commitments, contracts, pricing, advertising spend, and legal or regulated claims.
-
-## Data and editorial note
-
-The live evidence in this article was captured from FastMoss on August 4–5, 2026 and covers the US Beauty & Personal Care Week 31 ranking plus the DR.DENT product detail. FastMoss figures are third-party estimates and can change. Account-restricted fields may vary. The recommendation shown here is an intelligence and workflow example, not product, dental, legal, advertising, sourcing, or investment advice.
-
-## Sources
-
-  * [FastMoss US Beauty weekly ranking](<https://www.fastmoss.com/e-commerce/saleslist?date_type=2&date_value=2026-31&page=1&region=US&l1_cid=14>)
-
-  * [DR.DENT product intelligence](<https://www.fastmoss.com/e-commerce/detail/1732294339991933438>)
-
-  * [FastMoss MCP](<https://developer.fastmoss.com/mcp/overview.html>)
-
-  * [Floatboat Agent Workspace](</ai-agent-workspace>)
-
-  * [Calendar-Driven AI](</blog/what-if-your-calendar-could-run-itself>)

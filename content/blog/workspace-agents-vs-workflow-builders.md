@@ -124,23 +124,6 @@ If the work you want to automate ​**happens the same way more than 20 times a 
 
 ![5.png](/blog/images/workspace-agents-vs-workflow-builders/1777341489448-c8adee60-91c1-4eef-bf0d-39c26644a653.png)
 
-## FAQ
-
-**Are workspace agents replacing workflow builders?**
-
-No. They're solving different problems. The high-volume integration work that Zapier does is genuinely not where agents are strong, and probably won't be soon.
-
-**Can I use both?**
-
-Yes, and most people who do serious work with AI eventually do. Workflow tools for the recurring pipes, agents for the daily judgment work.
-
-**Are agent tools production-ready?**
-
-Mixed. Some categories (coding agents, research agents) have matured fast. General workspace agents are still uneven. **I haven't tested every one on the market, so this is a partial view** — but I'd plan for some friction in early use.
-
-**What about cost?**
-
-Workflow builder pricing is task-based or operation-based and predictable at scale. Agent pricing varies widely and tends to be tied to AI usage; the cost per "session" is harder to forecast. Worth modeling for your actual volume.
 
 That's my honest take. The categories aren't really competing — they're solving different parts of how work gets done. If your work is shaped like a pipeline, build a pipeline. If it's shaped like a desk with a lot of stuff on it, get something that can sit at the desk with you. When you need this, you'll know.
 
@@ -155,3 +138,29 @@ That's my honest take. The categories aren't really competing — they're solvin
   * [For a more hands-on perspective, this piece shows how agent workflows actually run in day-to-day work](</blog/ai-agent-workflow-vibe-coding>)
 
   * [And if you're running solo, this breaks down how one-person businesses use AI to operate like a team](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+
+## FAQ
+
+### What's the actual difference between a workspace agent and a workflow builder?
+
+Where the AI sits relative to your work — and who chooses the path. A workflow builder is a pipeline you design in advance: a trigger fires, nodes run the same sequence with the same logic, and intelligence sits inside one or two steps. A workspace agent lives inside an AI-aware environment where you work — files, tabs, drafts — and decides the steps as the work happens. One runs the path you drew; the other picks the path on the fly.
+
+### How do I decide which one fits a given task?
+
+Use the article's rule of thumb: if the work happens the same way more than twenty times a month — invoice processing, lead routing, ticket triage, scheduled reports — build it in a workflow tool. If it happens once or twice and the shape changes every time — a comparison draft, an unusual client request — that's agent territory. When it's both, which is common for solo operators, you'll end up with one of each, and that's fine.
+
+### Are workspace agents going to replace workflow builders?
+
+No. They solve different problems. The high-volume integration work that Zapier and Make do — connecting tools that should talk to each other and running the same pipe thousands of times — is genuinely not where agents are strong, and probably won't be soon. The categories are diverging, not converging: workflow builders own repetition, while workspace agents own novel, judgment-heavy work.
+
+### Can I use a workflow builder and a workspace agent together?
+
+Yes, and most people who do serious work with AI eventually do. Use workflow tools for the recurring pipes — trigger-based processes that need determinism and an audit trail. Use an agent for the daily judgment work that changes shape every time. For solo operators, the honest answer is usually one of each.
+
+### Are workspace agent tools production-ready?
+
+Mixed. Some categories — coding agents, research agents — have matured quickly and are genuinely useful today. General workspace agents are still uneven: context retention across sessions varies a lot between products, judgment calls can be inconsistent, and the gap between demo and daily use is real. Plan for some friction in early use, and test the specific product against your actual work.
+
+### How does the cost compare between the two?
+
+Workflow builder pricing is task-based or operation-based and predictable at scale — you know what a run costs. Agent pricing varies widely and tends to be tied to AI usage, which makes the cost of a "session" harder to forecast. The article's advice: model the cost against your actual volume rather than comparing sticker prices.

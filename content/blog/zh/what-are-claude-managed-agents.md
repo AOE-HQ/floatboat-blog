@@ -120,20 +120,24 @@ The New Stack 对 [Anthropic 到底想干什么](<https://thenewstack.io/with-cl
 
 ### 用 Claude Managed Agents 必须是开发者吗？
 
-是的。Claude Managed Agents 是 Claude 平台上一个基于 API 的服务，你要用编程方式访问它。如果你不写代码、也不做产品，就没有什么可以直接交互的东西——你应该去用一个建在它之上的产品。
+是的。Claude Managed Agents 是 Claude 平台上基于 API 的服务——你要用编程方式定义 Agent、启动会话，没有看板或聊天界面可以直接交互。如果你不写代码、也不做产品，就没有什么可安装、可订阅的；正确做法是用一个建在它之上的产品。
 
-### Claude Managed Agents 和直接用 Claude API 有什么区别？
+### Claude Managed Agents 是新模型吗？
 
-标准 Messages API 给你的是模型访问——对话状态、工具循环、基础设施都要你自己管。Managed Agents 把这一切都拿掉了：你不必自建 Agent 循环、沙箱或工具执行层，有状态会话、持久文件系统与对话历史都替你处理好。
+不是——它是托管的 Agent harness，不是新模型。底层 AI 仍是 Claude（Opus 4.6 与 Sonnet 4.6）。新的是它周围的脚手架：安全沙箱化的代码执行、鉴权、检查点、受限权限与持久的长时运行会话。Anthropic 把设计描述为「把大脑与手解耦」——会话在上下文窗口外充当持久事件日志，系统重启或容器崩溃后进度仍在。
+
+### 和直接调用 Claude API 有什么区别？
+
+标准 Messages API 给你的是模型访问——对话状态、工具循环、沙箱与基础设施都要自己管。Managed Agents 把这一切抽走：有状态会话、持久文件系统、对话历史与托管工具执行都替你处理好。你用自然语言或 YAML 描述 Agent、设好护栏就能跑，不必自建运行时。
 
 ### 「公开 beta」对可靠性到底意味着什么？
 
-意思是服务已开放、Anthropic 接受真实用量，但行为可能在版本之间被调整。多 Agent 协调、memory 等功能处于更早的「research preview」状态，需要单独申请。做生产负载的话，要为变化留出一些容忍度。
+服务已上线、Anthropic 接受真实用量，但行为可能在版本之间被调整——目前所有端点都要求带 managed-agents-2026-04-01 beta 头。outcomes、多 Agent 协调与 memory 等更早期的功能处于 research preview，需要单独申请访问。做生产负载的话，请为意外变化留预算，别把它当成冻结的 API。
 
 ### Claude Managed Agents 怎么收费？
 
-会话消耗的所有 token 按标准 Claude 平台费率计费，外加每「会话·活跃运行时小时」$0.08。空闲时间——等你输入、或等一次工具确认——不计入这项运行时计费。
+按两个维度计费：会话消耗的所有 token 按标准 Claude 平台费率结算，外加每「会话·活跃运行时小时」$0.08——等待输入或工具确认的空闲时间不计入。没有面向消费者的订阅套餐；定价瞄准开发团队，精确明细见 Anthropic 官方定价页。
 
 ### 哪些公司已经在用 Claude Managed Agents？
 
-早期采用者包括 Notion、Rakuten、Asana、Vibecode 与 Sentry，在代码自动化、效率工具、HR 流程与财务工作流里部署 Agent。
+早期采用者包括 Notion、Rakuten 与 Asana——都是不想自建运行时基础设施、却要给自家用户上线 Agent 功能的企业。据报道 Rakuten 为销售、营销、财务各部署一个专家 Agent，每个不到一周。Vibecode 与 Sentry 也出现在早期用户之列，覆盖代码自动化、效率工具、HR 流程与财务工作流。

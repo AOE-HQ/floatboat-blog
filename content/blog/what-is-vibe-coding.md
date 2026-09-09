@@ -158,22 +158,6 @@ You can build with AI tools without giving up your understanding of what you're 
 
 ![5.png](/blog/images/what-is-vibe-coding/1776318343607-e4c86648-6737-43e7-abf8-c58474b44c39.png)
 
-## FAQ About Vibe Coding
-
-### Is Vibe Coding the Same as No-Code?
-
-Not exactly. No-code tools give you a visual interface to build without programming. Vibe coding uses natural language to generate actual code — the output is code, you just didn't write it. They overlap in intent (accessible to non-developers) but are technically different approaches.
-
-### Do You Need to Know Programming?
-
-For basic use cases — internal tools, simple automations — no. But the more complex the thing you're building, the more valuable it is to be able to _read_ what the AI produces, even if you didn't write it. There's a meaningful difference between writing code and being able to evaluate it.
-
-### Can You Build a Real Business with It?
-
-Yes — with caveats. According to Y Combinator, [25% of startups in its Winter 2025 batch had codebases that were 95% AI-generated](<https://en.wikipedia.org/wiki/Y_Combinator>). Clearly it's being used for real products at scale.
-
-The honest answer: you can ship fast with vibe coding. Whether what you shipped holds up under real-world conditions depends on how carefully you handled the parts that matter most — security, data handling, edge cases. AI doesn't automatically think about those. You still have to.
-
 I'm still figuring this out, honestly. The tools are moving fast enough that something I wrote about them three months ago would already need an update. What I do feel more certain about: ​**the value ​isn** ​'t in the prompts, it's in the systems. The solo founders building durable operations aren't the ones who found the best AI tool — they're the ones who built workflows that compound over time.
 
 That's one small piece figured out.
@@ -189,3 +173,29 @@ That's one small piece figured out.
   * [Explore the shift from AI assistants to true AI agents](</blog/ai-agent-vs-ai-assistant>)
 
   * [Discover practical AI agent use cases in real workflows](</blog/ai-agent-use-cases-real-examples>)
+
+## FAQ
+
+### Is vibe coding over — and does it matter for solo founders?
+
+Not for solo founders, though the label is being retired. In February 2026 Karpathy called vibe coding passé, preferring "agentic engineering," and developers had already reported a "vibe coding hangover" of unmaintainable AI codebases. But that story is mostly about professional teams shipping production software at scale. For a solo operator building internal tools or testing ideas, the risk profile is lower and vibe-style building still works.
+
+### Is vibe coding the same as no-code?
+
+Not exactly. No-code tools give you a visual interface to build without programming; vibe coding uses natural language to generate actual code — the output is real code, you just didn't write it. They overlap in intent, making building accessible to non-developers, but they are technically different approaches.
+
+### Do you need to know programming to use it?
+
+For basic use cases — internal tools, simple automations — no. But the more complex the thing you are building, the more valuable it becomes to read and evaluate what the AI produces, even if you didn't write it. There is a meaningful difference between writing code and being able to evaluate it, and that skill is what catches plausible-looking but wrong output.
+
+### Can a solo founder build a real business with it?
+
+Yes — with caveats. According to Y Combinator, 25% of startups in its Winter 2025 batch had codebases that were 95% AI-generated, so it is clearly used for real products at scale. You can ship fast with vibe coding; whether what you shipped holds up depends on how carefully you handled security, data handling, and edge cases. AI doesn't automatically think about those — you still have to.
+
+### Where does vibe coding break down?
+
+When there is no clear plan, when outputs need long-term maintenance, and when systems get complex. Vague prompts produce plausible-looking code that may not solve the problem; the fifth iteration is harder to track than the first; and security is the clearest failure — AI-generated code optimizes for functionality, not safety, and OWASP added AI-assisted code defects to its Top 10 in 2025.
+
+### Why isn't a good prompt enough for a one-person business?
+
+Because a prompt produces a one-off output, while a one-person company needs systems that run reliably again and again. The constraint isn't access to AI — it's consistency. That's why reusable workflows beat prompting: tools like Floatboat's Combo Skills chain reading, analysis, generation, and refinement into repeatable workflows — closer to building a system than executing a task.

@@ -94,24 +94,6 @@ The point of these questions isn't to be adversarial — it's to set a professio
 
 ![f6.png](/blog/images/ai-automation-agency-do-you-need-one/1778750146141-a6995a3a-6e87-4831-bbb8-b93a7b6cbb56.png)
 
-## FAQ
-
-### What should an agency hand over at the end?
-
-At minimum: working, tested workflows; documentation written for your team (not their developers); admin access to every tool and account involved; and at least one training session. **If the system breaks the day after the engagement ends and your team can't diagnose it without calling the agency, the handover was incomplete.** Everything they built should be legible to someone on your side.
-
-### Should I pay for strategy before implementation?
-
-Sometimes, yes — but with one condition. A paid discovery or strategy phase is worth it when it produces a concrete, scoped implementation plan you can hand to _any_ agency, not just the one who wrote it. If the strategy deliverable is only useful in the hands of the company that created it, you've bought dependency, not clarity. A good strategy phase ends with a document that gives you real choices.
-
-### How do I avoid being locked into one vendor?
-
-Three practical moves: First, insist that all credentials, code, and documentation sit in accounts you own — not the agency's. Second, favor open tools (n8n, Make, standard APIs) over proprietary platforms wherever your requirements allow. Third, build a simple internal reference doc for each workflow that explains what it does, what tools it uses, and how to update it. [Guidance on AI contract risk management](<https://www.ccsdcouncil.org/third-party-ai-risk-the-five-clauses-your-contracts-cant-skip-in-2025/>) recommends testing your own data portability annually — meaning actually verify that you can export and migrate your setup, not just assume it's possible because the contract says so.
-
-### What should be in the contract scope?
-
-Specifically: the workflow(s) being built (named and described), the definition of "done" for each deliverable, who owns credentials and IP at handover, what tools will be used and why, the training component, post-launch support terms and costs, and — critically — a clause on data use. **Your data should not be used to train any model without your explicit written consent.** [White House procurement guidance issued in 2025](<https://www.ropesgray.com/en/insights/alerts/2025/04/white-house-issues-guidance-on-use-and-procurement-of-artificial-intelligence-technology>) includes this as a hard requirement for government contracts; it's a reasonable standard for anyone.
-
 The honest truth about **ai automation agency services** is that the good ones are genuinely valuable and the mediocre ones are expensive timewasters who leave behind systems nobody on your team can maintain. The difference usually isn't visible in the sales process — it shows up in the handover. So before you sign anything, ask to see what the handover looks like. That single ask will tell you more than an hour of demos.
 
 ## Previous Posts：
@@ -125,3 +107,29 @@ The honest truth about **ai automation agency services** is that the good ones a
   * If you’re evaluating AI vendors, this breakdown of AI workspace agents explains where the category genuinely helps — and where it still creates more setup overhead than value — [AI workspace agents explained](</blog/ai-workspace-agents>)
 
   * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](</blog/ai-agent-solo-operators>)
+
+## FAQ
+
+### Do I actually need to hire an AI automation agency?
+
+Only if three things are true at once: a concrete process is costing you measurable time or money, no one on your team has the capacity to build and maintain the fix, and you're willing to invest in proper scoping and handover. If your workflows are already well defined, tools like n8n or Make can often cover in a weekend what agencies quote at $15,000-plus. And if you haven't mapped the process yet, wait — you'll otherwise pay someone to solve problems you should solve yourself.
+
+### What should an agency hand over at the end of the project?
+
+A reputable agency should hand over four things: workflows tested against your real data and edge cases; documentation written for your team rather than their developers; ownership of every credential, account, and piece of code, held in accounts you control; and at least one human-led training session. If your team can't diagnose a failure the day after handover without calling the agency, the handover was incomplete.
+
+### Is it worth paying for a strategy phase before implementation?
+
+Sometimes — but with one condition. A paid discovery or strategy phase is worth it when it produces a concrete, scoped implementation plan you could hand to any agency, not just the one that wrote it. If the strategy deliverable is only useful inside the company that created it, you've bought dependency, not clarity. A good strategy phase ends with a document that gives you real choices.
+
+### How do I avoid getting locked into one vendor?
+
+Three practical moves. First, insist that credentials, code, and documentation live in accounts you own, not the agency's. Second, favor open tools — n8n, Make, standard APIs — over proprietary platforms wherever your requirements allow. Third, keep a simple internal reference document for each workflow, and actually test exporting and migrating your setup at least once a year rather than trusting the contract language.
+
+### What should I put in the contract scope?
+
+Name the workflow(s) being built and define what "done" means for each deliverable; state who owns credentials and intellectual property at handover, which tools will be used and why, the training component, and post-launch support terms and costs. Add a data-use clause: your data must not train any model without your explicit written consent. A tightly scoped statement of work — one workflow, one defined output, one handover date — also prevents scope creep.
+
+### Which questions should I ask before the first sales call?
+
+Ask to see a real handover package from a past project rather than a case study; confirm that credentials and accounts end up owned by you; ask how a migration away from their chosen tools would work; get post-launch support terms and costs in writing; and ask what their biggest failure on a similar project was. Agencies worth hiring welcome these questions — defensiveness tells you something important.

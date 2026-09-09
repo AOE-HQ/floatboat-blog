@@ -108,24 +108,6 @@ I've run this approach with a few different tools. It works whether you're testi
 
 If you can't answer yes to at least two of those by day 7, the tool isn't the right fit for how you currently work — or you haven't found the right use cases yet.
 
-## FAQ
-
-### Can a personal AI assistant work across multiple devices?
-
-Yes, for cloud-based tools. Claude, ChatGPT, and similar products sync your conversation history across web, desktop, and mobile apps when you're signed into the same account. The experience isn't always identical — the desktop app sometimes has features the mobile app doesn't — but your context travels with you. Browser extensions are the exception: they're tied to the specific browser installation on a specific machine.
-
-### Do I need to upload files for it to be useful?
-
-No. Plenty of the value comes from working with text you paste directly — an email thread, a document excerpt, a set of meeting notes. File upload is most useful when the source is long (a PDF you don't want to manually copy) or when you're doing repeated analysis on the same document. For most day-to-day use, paste works fine.
-
-### Can I use one without connecting email or calendar?
-
-Absolutely. Most AI assistants work as standalone tools with no integrations at all — you bring the context manually. Connecting email and calendar unlocks autonomous features (drafting replies, scheduling summaries), but you get real value without those connections. I'd actually suggest starting without integrations for the first two weeks. It forces you to be intentional about what you hand to the assistant, which builds better habits than just giving it access to everything.
-
-### What should I test during a free trial?
-
-Test the things you'll actually use daily, not the impressive demos. The demos are designed to look good. Your daily workflow is the real filter. Specifically: test whether context holds across a multi-turn conversation, whether the output quality is consistent (not just occasionally good), and whether you'd actually remember to open it when you need it. A tool you forget to use isn't saving you time, no matter how capable it is.
-
 ### Previous Posts:
 
   * If your AI assistant still feels like “a smarter search engine,” this is the workflow shift that usually changes everything: [Why AI forgets between sessions — and why context matters more than model quality](</blog/why-ai-forgets-between-sessions>)
@@ -137,3 +119,29 @@ Test the things you'll actually use daily, not the impressive demos. The demos a
   * If you’re deciding between a chat assistant and a workspace-style AI setup, this breakdown explains where each actually helps: [Workspace agents vs chat assistants](</blog/workspace-agents-vs-chat-assistants>)
 
   * A practical guide to building an AI workflow that actually survives past the “trial week” stage for solo founders: [AI workflow for solo founders](</blog/ai-workflow-for-solo-founders>)
+
+## FAQ
+
+### How do I choose an AI assistant for personal use at work?
+
+Don't start with tool rankings — start with your actual day. Sort your work into the five scenarios this article walks through — admin, research, client-facing work, content, and planning — and let the scenario pick the tool type: a general-purpose chat assistant for admin tasks, a long-context model for research, a tool that holds your voice for client work. Then match the delivery shape and validate your pick with the 7-day trial plan before you pay.
+
+### What does “personal use at work” actually mean?
+
+It means using an AI tool as an individual — not through a company account, a shared workspace, or an IT-managed setup. You choose the tool, pay for it yourself, and weave it into your own workflow. The practical consequences: your context belongs to you rather than a team, the setup has to work in a web or desktop interface without being a developer, and if the tool doesn't fit, the switching cost is yours.
+
+### Which delivery shape should I pick — app, browser extension, or AI workspace?
+
+Match it to task depth and context needs. A web or desktop app is the best home base for most document-heavy personal work — writing, research, analysis — because it carries multi-turn context well. A browser extension suits narrow, session-based tasks inside web apps you're already logged into, but it sees little beyond the current page. A desktop AI workspace coordinates across files, browser, and local apps, but setup is heavier and the category is still maturing.
+
+### Do I need to upload files or connect accounts to make it useful?
+
+No. Most daily value comes from pasting text directly — an email thread, a document excerpt, meeting notes. File upload only matters when the source is long, such as a PDF you don't want to copy by hand, or when you analyze the same document repeatedly. Connecting email or calendar unlocks conveniences like auto-drafting replies, but the article recommends starting without integrations so you stay deliberate about what you hand the assistant.
+
+### What should I check before uploading files or connecting accounts?
+
+Run the article's checklist first. Ask whether anything falls under an NDA or contains a client's personal or financial data, whether a server-side log of the conversation would be a problem, whether an account connection grants write access rather than read-only, whether it's a shared account, and whether memory features are on by default. For sensitive sessions, use a separate project or a fresh session with Memory off.
+
+### How do I tell whether an AI assistant is actually saving me time?
+
+Run the 7-day trial plan and judge by honest criteria rather than impressive demos. Work through admin, research, writing, and planning tasks across the week, then ask three things: did it save meaningful time on at least two of them, did you reach for it naturally, and did context hold across sessions? If you can't answer yes, the tool — or the use cases you've given it — needs to change.

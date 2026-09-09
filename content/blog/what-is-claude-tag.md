@@ -145,7 +145,7 @@ Pick Chat for drafting, Code for repositories, Cowork for desktop file batches, 
 
 ### How is Claude Tag different from Claude Cowork?
 
-Cowork is a **user-initiated desktop agent** for local files and connectors inside the Claude app. Tag is a **shared Slack channel agent** with multiplayer visibility and organization billing. Cowork fits solo file batches; Tag fits team-visible execution in Slack.
+Cowork is a **user-initiated desktop agent** for local files and connectors inside the Claude app. Tag is a **shared Slack channel agent** — one identity per channel — with multiplayer visibility and organization-level billing. Cowork fits solo file batches; Tag fits team-visible execution in Slack.
 
 ### Do I need Claude Enterprise or Team to use Claude Tag?
 
@@ -153,7 +153,7 @@ Yes, as of the beta launch in June 2026. Claude Tag is gated to **Team and Enter
 
 ### What happens to Claude in Slack on August 3, 2026?
 
-Anthropic replaces the legacy Claude in Slack app with the Claude Tag experience. Administrators must opt in and reconfigure channel access and tool connections within the published migration window — do not assume permissions carry over silently.
+On August 3, 2026, Anthropic replaces the legacy Claude in Slack app with the Claude Tag experience. Administrators must opt in and reconfigure channel access and tool connections within the published migration window — commonly cited as ending around July 23, 2026 — and permissions do not carry over automatically. Treat it as a governance project, not a silent upgrade.
 
 ### Can Claude Tag automatically prep meetings from my calendar?
 

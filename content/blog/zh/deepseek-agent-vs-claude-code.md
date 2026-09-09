@@ -129,22 +129,26 @@ Claude Code 与 DeepSeek Agent 并非两个 SaaS 产品那种直接竞争。Clau
 
 ## 常见问题
 
-### 我能免费把 Claude Code 配 DeepSeek 用吗？
+### DeepSeek V4 的编程能力比得上 Claude Opus 吗？
 
-不能。Claude Code 本身需要 Anthropic 订阅或 API 权限才能使用框架，DeepSeek API 调用则通过 platform.deepseek.com 单独计费。你省下的是模型后端的逐 token 成本——不是框架成本。DeepSeek API 在最低充值（通常 5–10 美元）后开始计费，V4 Flash 单次任务只花几分之一美分。
+分任务看。仓库级多文件重构上 Opus 仍占优——SWE-bench Pro 约差 14 个百分点，这类任务吃长程架构一致性；算法题与终端 Agent 任务上 V4 Pro 反而领先。日常有边界的编码，V4 够用且便宜得多；最难的 10–15% 场景，诚实地说仍是 Opus 更强。
 
-### DeepSeek V4 够不够好到可以完全替代 Claude Code？
+### 用 DeepSeek 到底能便宜多少？
 
-对日常编程任务——样板代码、单文件改动、调试、写测试——V4 Pro 与 Opus 旗鼓相当且便宜得多。对「几十个文件的架构一致性至关重要」的仓库级重构，Opus 在基准测试和开发者反馈中仍然领先。完全换掉 Claude Code，意味着接受最难的 10–15% 任务质量下降，换取其余一切 95% 以上的成本节省。很多团队觉得这个交换可以接受；做安全关键或架构复杂代码库的团队往往不这么觉得。
+便宜非常多。输出 token 价差约 28 倍：V4 Pro 每百万 0.87 美元，Opus 4.8 要 25 美元。跑同样的典型 Agent 任务，V4 Pro 单任务约 0.021 美元，Opus 约 0.54 美元。任务量一大，这差距就把自动化从奢侈品变成默认工作流。
 
-### 那直接对比 DeepSeek-TUI 和 Claude Code 呢？
+### 能让 Claude Code 用 DeepSeek 当后端、不跑 Opus 吗？
 
-DeepSeek-TUI 是社区构建的终端 Agent，为 DeepSeek 的定价与架构（RLM 扇出、MCP、沙箱执行）做了优化。Claude Code 是商业产品，工作流更精致、有原生 Opus 集成。DeepSeek-TUI 提供了 Claude Code 没有的架构模式（V4 Flash 定价下的并行子 Agent）；Claude Code 提供了 DeepSeek-TUI 仍在补建的工作流成熟度与框架功能。关于 DeepSeek Agent 类型的详细拆解，见 [什么是 DeepSeek Agent](</blog/what-is-deepseek-agent>)。
+可以。把 Claude Code 的后端配置切到 DeepSeek 的 Anthropic 兼容端点即可，plan、diff 审查、权限询问、子 Agent 都保留。失去的主要是部分 Opus 特有的推理行为，个别参数映射也不完美；最难的会话仍可手动切回 Opus。
 
-### 在 Claude Code 里切到 DeepSeek 会弄坏某些功能吗？
+### 切到 DeepSeek 会不会弄坏 Claude Code 的功能？
 
-大多数 Claude Code 功能在 DeepSeek 作为后端时都正常——plan 模式、agent 模式、diff 审查、工具权限。依赖 Anthropic 特有模型行为的功能（某些指令遵循模式、Opus 特有的推理风格）可能产出不同结果。子 Agent 派生能用，但子 Agent 也跑在 DeepSeek 而非 Opus 上。在把 DeepSeek 定为默认后端之前，先测一遍你的具体工作流。
+大多数不受影响：plan 模式、agent 模式、diff 审查、工具权限在 DeepSeek 后端下都正常。会变的是行为层面——依赖 Anthropic 特有模型特质的模式结果可能不同，派生的子 Agent 也跑在 DeepSeek 上而非 Opus。建议先用真实工作流测一遍再设为默认。
+
+### DeepSeek-TUI 这类原生 Agent 和 Claude Code 怎么比？
+
+DeepSeek-TUI 是社区终端 Agent，围绕 DeepSeek 定价做优化，自带 RLM 扇出并行、沙箱执行与 MCP 支持。Claude Code 则是工作流更精致、有原生 Opus 集成的商业产品。前者提供 Opus 定价下跑不起的并行子 Agent 架构，后者赢在框架成熟度与功能。
 
 ### 单人开发者应该选哪个？
 
-如果你是紧盯着 API 成本、主要做边界明确的任务（功能实现、bug 修复、小项目）的单人开发者，把 Claude Code 配成以 DeepSeek V4 Flash 为后端。你用最低的单任务成本拿到成熟框架。如果你在做依赖关系复杂的大型代码库，且成本次于正确性，那原生配 Opus 的 Claude Code 是更稳妥的默认。第 8 节描述的混合方案覆盖了多数单人开发工作流，不必被迫做二元选择。
+看成本与代码库。盯 API 成本、任务多有边界（功能实现、修 bug、小项目），把 Claude Code 配 V4 Flash 当后端，最省钱地拿到成熟框架。身处互相依赖的大型代码库、正确性优先，原生 Opus 更稳。多数单人开发者适合混合方案：常规活走 Flash，最难的切 Opus。

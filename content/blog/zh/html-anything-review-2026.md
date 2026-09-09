@@ -102,22 +102,26 @@ html-anything 是 [GitHub 上的 nexu-io 团队](<https://github.com/nexu-io/htm
 
 ## 常见问题
 
-### html-anything 是什么？
+### html-anything 是什么、怎么工作？
 
-一个开源的、本地优先的 agentic HTML 编辑器。它接上你已有的编程 agent CLI，提供横跨 9 种交付表面的 75 个技能模板，支持沙箱实时预览，并可导出到多个平台，包括微信、X、知乎、HTML 和 PNG。由 nexu-io 团队构建，Apache-2.0 许可。
+html-anything 是 nexu-io 团队（Apache-2.0）开源的本地优先 Agentic HTML 编辑器。它不拿你的提示词走自家云端，而是复用你机器上已登录的编程 agent CLI，用技能模板生成富 HTML、提供沙箱实时预览并多平台导出。核心主张：本地 AI Agent 写 HTML，你负责复核和发布。
 
-### html-anything 需要 API 密钥吗？
+### html-anything 真的不需要 API 密钥吗？
 
-不需要——这就是「零 API 密钥 AI 工具」的说法来源。它复用的是你已登录的某个编程 agent CLI 的会话。但底下还有一层：token 消耗仍然记在你 agent 订阅的额度上。你不用付钱给 html-anything，但你在付钱给你的 agent 供应商。Claude Code 的用量扣的是你的 Anthropic 套餐，Codex 扣的是你的 OpenAI 套餐。零 API 密钥不等于零成本。
+对——不用再填第二个 API 密钥。工具自动检测 PATH 上已登录的编程 agent CLI 并复用其会话，「零 API 密钥」的说法就是这么来的。前提是：token 仍记在你那个 Agent 订阅的额度上——Claude Code 的用量扣 Anthropic 套餐，Codex 扣 OpenAI 套餐。零新密钥 ≠ 零成本。
 
-### 没有 Claude Code 或其他编程 agent CLI，html-anything 有用吗？
+### 不用编程 agent CLI，html-anything 有用吗？
 
-以它目前的形式：没有。这个工具自动检测 PATH 上的 CLI——没有 CLI，就没有生成。这是非技术单人创业者面前最大的门槛。如果你在终端里不自在，Claude Artifacts 或 ChatGPT Canvas 是当下更容易上手的 HTML 输出入口。
+以目前形态：没有。硬性前提是一个已登录的编程 agent CLI——Claude Code、Codex、Gemini CLI 等受支持工具之一——没有纯浏览器版，也没有「注册即用」。对非开发者的单人创业者，这是最大的门槛；想用 AI 出 HTML，Claude Artifacts 或 ChatGPT Canvas 仍是今天更容易上手的选择。
+
+### html-anything 能生成什么、导出到哪里？
+
+它内置横跨 9 种交付表面的 75 个技能模板：杂志文章、幻灯片、海报、简历、小红书与推文卡片、网页原型、数据报告、Hyperframes 视频。导出覆盖微信（内联 CSS）、X、知乎、独立 HTML 与 PNG；Hyperframes 还能经 Remotion 把 HTML 转成 MP4。若你的周期性产出正好落在其中一种表面上，模板保证视觉一致；对不上就得改模板或从零写。
 
 ### 谁应该先试 html-anything？
 
-那些每天都用编程 agent CLI、跨多个平台产出内容、又想要设计一致的可复用模板的人。同时给中西方社交平台发内容的内容创作者，会发现它的导出目标罕见地对口。想快速做原型的开发者会发现技能库有用。如果这些描述跟你的周二毫无关系，你大概可以再等等。
+每天都用编程 agent CLI、又经常跨平台产出视觉内容的人。同时给中西方社交平台发内容的内容创作者，会发现它的导出目标罕见地对口；想快速做原型的开发者会觉得技能库有用。如果你不是 CLI 型选手、或只需要一次性 HTML，直接 prompt 或 Artifacts 更快——可以再等等。
 
-### html-anything 和直接让 Claude（或另一个模型）生成 HTML 相比怎么样？
+### 和直接让 Claude 生成 HTML 相比怎么样？
 
-两条路都能走。单次、一次性的需求——「帮我做一份 HTML 报告」——直接给 Claude 提示词或使用 Artifacts 更快，不用装任何东西，输出即时。html-anything 拉开差距的地方在模板、跨输出的视觉一致性、带 SSE 流式的实时预览，以及针对平台的导出。如果你反复产出同一种交付物、又要求每次都光鲜，模板层能省去你在每条提示词里重述设计系统。如果你一个月才做一次，直接写提示词就好。
+两条路都走得通；一次性需求——「帮我做一份 HTML 报告」——直接 prompt 更快，不用装任何东西、输出即时。html-anything 的优势在你反复产出同一种交付物时显现：75 个可复用模板保证跨输出视觉一致、带 SSE 的实时预览边生成边复核、平台专属导出省掉微信/X/独立文件之间的复制粘贴。一个月做一次就直接写 prompt；每周都要做，模板层就值回票价。

@@ -129,3 +129,29 @@ Stop searching for a Raycast clone. Start working with an AI teammate that actua
 * * *
 
 _Floatboat is built by AOE Tech Labs for one-person companies in the AI era. Available on Windows 10+ and macOS 13+._
+
+## FAQ
+
+### Is there a real Raycast alternative for Windows?
+
+Almost — but not in the way most people expect. Windows launchers like PowerToys Run, Wox, Flow Launcher, and Keypirinha exist, yet they lack the polish, AI integration, and ecosystem that make Raycast feel magical. Floatboat approaches the same gap from another direction: instead of cloning Raycast's command palette, it brings an AI-native workspace to Windows 10+ and macOS 13+ — launcher-speed access plus an agent that actually executes multi-step work.
+
+### Is Floatboat just a Raycast clone?
+
+No — that would undersell it. Raycast gives you a command palette with extensions and manually configured workflows. Floatboat is a full-stack AI Agent Workspace: an Agent Chat at the core, expanding into split-screen file management, an AI-aware built-in browser, drag-and-drop context flow, and no-code Combo Skills. Where Raycast surfaces commands, Floatboat runs an AI teammate that learns your business and does the work for you.
+
+### Does Floatboat really learn how I work?
+
+Yes — that is the point of the Tacit Engine. Rather than asking you to install extensions and script workflows, it observes how you edit, decide, and execute across your work, then captures the operating instincts behind your business: your judgment, your standards, your preferred way of getting things done. No extra setup required. Your way of working becomes a reusable asset instead of something you rebuild every Monday.
+
+### What can I automate with Combo Skills?
+
+Combo Skills are reusable, no-code AI workflows that capture how you get work done and replay it when similar work appears. A sales founder can turn voice notes into a client-ready pitch deck in ten minutes; a content creator can go from scattered research to publish-ready articles in their own voice; a small business owner can run a strategic contract review that flags risks and suggests counter-proposals. You can also find more ready-made skills in the community-built ComboStore.
+
+### Can Floatboat access my local files and existing tools?
+
+Yes — Floatboat is a native desktop application (Windows 10+ and macOS 13+), not a web app pretending to be one. It can read and write all your local files and software, write tasks directly to system Reminders, invoke your local email client, and connect to 3,500+ tools alongside your existing stack — Slack, Google Drive, and beyond. A built-in browser also lets the agent automate web tasks without you switching tabs.
+
+### How much does Floatboat cost — and what happens if AI fails?
+
+Floatboat is free to download, and no credit card is required to start. If you want more than a low price, there is the User Protection Program: when AI clearly fails to deliver, you can request protected credit recovery up to the value of what you paid. It is a pay-for-results guarantee no launcher offers, and a concrete step toward pricing AI around value rather than compute.

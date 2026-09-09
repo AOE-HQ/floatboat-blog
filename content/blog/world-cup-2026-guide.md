@@ -173,18 +173,20 @@ This article will be updated as the tournament progresses — especially if FIFA
 
 ## FAQ
 
-**When does the 2026 World Cup start and end?** June 11 through July 19, 2026. The opening match (Mexico vs. South Africa) is at Estadio Azteca in Mexico City. The final is at MetLife Stadium in East Rutherford, New Jersey. The tournament spans 39 days.
+### When does the 2026 World Cup start and end?
+June 11 through July 19, 2026 — 39 days total. The opening match is Mexico vs. South Africa at Estadio Azteca in Mexico City, and the final is at MetLife Stadium in East Rutherford, New Jersey.
 
-**Where is the 2026 World Cup being held?** Across 16 cities in three countries: 11 in the United States (Atlanta, Boston, Dallas, Houston, Kansas City, Los Angeles, Miami, NY/NJ, Philadelphia, San Francisco, Seattle), 3 in Mexico (Mexico City, Guadalajara, Monterrey), and 2 in Canada (Toronto, Vancouver). The US hosts the majority of matches including every knockout match from the quarterfinals onward.
+### Where is the 2026 World Cup being held?
+Across 16 cities in three countries: 11 in the United States (Atlanta, Boston, Dallas, Houston, Kansas City, Los Angeles, Miami, NY/NJ, Philadelphia, San Francisco Bay Area, Seattle), 3 in Mexico (Mexico City, Guadalajara, Monterrey), and 2 in Canada (Toronto, Vancouver). The US hosts 78 of 104 matches, including every match from the quarterfinals onward.
 
-**How many teams are in the 2026 World Cup?** 48 teams, up from 32 in 2022. The expansion adds 16 nations. The field includes four debut nations: Cabo Verde, Curaçao, Jordan, and Uzbekistan.
+### How many teams are in the 2026 World Cup?
+48 teams — up from 32 in 2022 — with slots allocated by confederation. Four nations make their debut: Cabo Verde, Curaçao, Jordan, and Uzbekistan, all qualified through confederation play. Despite the bigger field, each team still plays three group-stage matches.
 
-**What is the format of the 2026 World Cup?** 12 groups of 4 teams. The top two from each group (24 teams) plus the 8 best third-place teams advance to a 32-team knockout bracket — the first time the knockout stage starts with a Round of 32. The champion plays 8 matches total, one more than any previous winner.
+### What is the format of the 2026 World Cup?
+Twelve groups of four. The top two from each group (24 teams) plus the eight best third-place teams advance to a 32-team knockout bracket — the first World Cup to start its knockouts with a Round of 32. The tournament totals 104 matches over 39 days, and the champion plays eight matches, one more than any previous winner.
 
-**How many matches are in the 2026 World Cup?** 104 matches total — 72 in the group stage and 32 in the knockout rounds, across 39 days. This is up from 64 matches in the 2022 format.
+### How do I watch World Cup matches in the United States?
+Fox Sports holds the US English-language rights and Telemundo the Spanish-language rights; both stream through their apps. Because the tournament spans four time zones, the reliable way to track kickoff times is to add the full schedule to your calendar — via FloatCup one-click subscription or an ICS import — rather than juggling time zones by hand.
 
-**What changed from the 2022 World Cup?** The field expanded from 32 to 48 teams. A Round of 32 was added to the knockout stage. The tournament runs in June–July rather than November–December. The host footprint spans three countries instead of one, creating significant travel between venues. A new head-to-head tiebreaker rule was introduced for the group stage.
-
-**How do I watch World Cup matches in the United States?** Fox Sports (English) and Telemundo (Spanish) hold US broadcast rights. Both offer streaming through their respective apps. For keeping track of match times across time zones, add the full schedule to your calendar through FloatCup or an ICS import.
-
-**When do USA, Canada, and Mexico play their opening matches?** USA plays Paraguay on June 12 in Los Angeles. Canada faces Bosnia & Herzegovina on June 12 in Toronto. Mexico opens the entire tournament against South Africa on June 11 in Mexico City.
+### When do USA, Canada, and Mexico play their opening matches?
+USA opens against Paraguay on June 12 in Los Angeles (Group D); Canada faces Bosnia & Herzegovina on June 12 in Toronto; and Mexico opens the entire tournament against South Africa on June 11 in Mexico City. All three host nations qualify automatically.

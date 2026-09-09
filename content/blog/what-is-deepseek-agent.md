@@ -145,22 +145,26 @@ The ecosystem is early. The official DeepSeek Agent does not exist yet. The comm
 
 ## FAQ
 
-## Is DeepSeek-TUI an official DeepSeek product?
+### What exactly is a DeepSeek Agent?
 
-No. DeepSeek-TUI is a community project built by independent developer Hunter Bown and licensed under MIT. It is listed in DeepSeek's official awesome-deepseek-agent repository, which gives it visibility and a degree of implicit endorsement, but it is not developed, maintained, or supported by DeepSeek.
+A DeepSeek Agent is any AI agent that uses a DeepSeek model — typically V4 Pro or V4 Flash — as its primary reasoning engine: the model that decides which tool to call, plans multi-step work, and keeps context across sessions. It is not a single product or codebase, but a category. Point Claude Code at DeepSeek's Anthropic-compatible endpoint and it becomes one for that session; run deepseek-tui and that setup is another.
 
-## Can I use DeepSeek V4 with Claude Code without losing features?
+### Is there an official DeepSeek Agent from DeepSeek?
 
-You can use DeepSeek V4 as the backend model for Claude Code by setting the Anthropic-compatible endpoint and choosing `deepseek-v4-pro` or `deepseek-v4-flash`. Most Claude Code features — the agent loop, tool permissions, diff review, sub-agents — work identically because they operate at the harness layer, not the model layer. What you lose is Claude-specific behavior: Opus's architectural reasoning style, Sonnet's nuanced instruction following, and any features that rely on Anthropic-specific API parameters. In exchange, you gain dramatically lower cost per turn.
+Not yet. Nothing in the ecosystem is an official DeepSeek product — DeepSeek itself has not shipped an agent. Its awesome-deepseek-agent repository is a signal that the V4 models are ready for agentic workloads, not a product launch. The company is hiring an Agent Harness team, and the job description points to a desktop coding agent in the vein of Claude Code's desktop app — likely arriving after community tools have explored that architecture.
 
-## What happens to deepseek-chat and deepseek-reasoner after July 24, 2026?
+### Can I use DeepSeek V4 in Claude Code without losing features?
 
-Both aliases became inaccessible after July 24, 2026, 15:59 UTC. `deepseek-chat` previously routed to V4 Flash with thinking disabled; `deepseek-reasoner` routed to V4 Flash with thinking enabled. Applications must now explicitly call `deepseek-v4-pro` or `deepseek-v4-flash` and set thinking mode via the API parameter rather than relying on legacy model names.
+Yes. Point Claude Code at DeepSeek's Anthropic-compatible endpoint and choose `deepseek-v4-pro` or `deepseek-v4-flash`; most features — the agent loop, tool permissions, diff review, sub-agents — work identically because they live at the harness layer, not the model layer. What you lose is Claude-specific behavior such as Opus's architectural reasoning or features tied to Anthropic-only API parameters. In exchange, each turn costs dramatically less.
 
-## Do DeepSeek V4 models support tool calling and MCP?
+### Isn't a DeepSeek Agent just a model with function calling?
 
-Yes. Both V4 Pro and V4 Flash support up to 128 parallel function calls through the standard OpenAI-compatible `tools` array, and both support the Model Context Protocol (MCP) for structured tool integration. V4 Pro scored 73.6 on MCPAtlas Public, tying Claude Opus 4.6 on agentic tool-use benchmarks.
+No. Function calling is a single API capability: send tool definitions and receive a structured request to call one of them. An agent is the system built around that capability — an execution loop that makes the call, feeds the result back, and repeats. The engineering complexity of a DeepSeek Agent lives in that loop: error handling, context management, state persistence, tool permissions, multi-turn planning. A `tools` array is roughly the first 5%.
 
-## Isn't a DeepSeek Agent just a model with function calling?
+### Do DeepSeek V4 models support tool calling and MCP?
 
-Function calling is a single API capability — the model receives a prompt with tool definitions and can return a structured request to call one of those tools. An agent is a system built around that capability: an execution loop that makes the call, feeds the result back, and repeats. The distinction matters because most of the engineering complexity in a DeepSeek Agent lives in the loop — error handling, context management, state persistence, tool permissioning, multi-turn planning — not in the individual function call. A single `tools` array is the first 5% of building an agent.
+Yes. Both V4 Pro and V4 Flash support up to 128 parallel function calls through the standard OpenAI-compatible `tools` array, and both support the Model Context Protocol (MCP) for structured tool integration. On MCPAtlas Public, V4 Pro scored 73.6, tying Claude Opus 4.6 on agentic tool-use benchmarks.
+
+### How should I choose among the four archetypes?
+
+Match the archetype to your constraints. Writing code and want the lowest cost per agent turn? Configure a generic harness — Claude Code or Cline — to use V4 Flash for routine work. Want to push DeepSeek's pricing as far as the architecture allows? Evaluate DeepSeek-TUI, whose RLM fan-out can't be replicated in a generic harness. Need an agent inside your team's chat platform? Look at AstrBot or OpenClaw. Prefer a visual interface over a terminal? Start with Cherry Studio or LobeHub.

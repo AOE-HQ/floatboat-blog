@@ -134,28 +134,6 @@ If you're weighing whether to add a workspace agent to your stack, I'd skip the 
 
 Fit matters more than features. Be honest about whether you actually have the problem this category is solving.
 
-## FAQ
-
-**Is a workspace agent just a chat assistant with plugins?**
-
-Not really. Plugins extend a chat assistant's reach, but the center of the experience is still the chat window. A workspace agent inverts it: the workspace is the center, the chat is one surface among many. Different UX, different assumptions about who's holding context.
-
-**Can I use both?**
-
-Yes, and most people I know do. I use a chat assistant for quick one-offs and a workspace-style setup for ongoing projects. They're not competitors so much as different tools for different job sizes.
-
-**Do workspace agents replace human judgment?**
-
-No, and be skeptical of anyone who says otherwise. Even the best agent benchmarks show plenty of errors on multi-step work. Treat agent output the way you'd treat a junior assistant's first draft: useful, often good, always worth checking.
-
-**Which is cheaper?**
-
-Chat assistants, usually — and by a lot at the individual level. Workspace agents cost more to run (more tool calls, more context, more compute) and more to evaluate (you need to trust them with more). The question is whether the time saved justifies the cost for _your_ workflow, not in general.
-
-**Where is this headed?**
-
-Honestly? I think the two categories will keep borrowing from each other until the line gets pretty blurry. Chat assistants are adding more persistent memory and more tool access. Workspace agents are adding faster, simpler chat modes for one-off questions. The labels matter less than the fit.
-
 Anyway — that's my read as of today. The **workspace agents vs chat assistants** question isn't really about which category wins. It's about which fits the work in front of you. For a quick question, chat is still the cleanest thing ever built. For a sprawling multi-tool job, a workspace agent earns its keep. The trick is being honest about which one you're actually doing.
 
 I'll update this if I change my mind. I've changed it before.
@@ -171,3 +149,29 @@ I'll update this if I change my mind. I've changed it before.
 → [Explore practical AI agent use cases across real workflows](</blog/ai-agent-use-cases-real-examples>)
 
 → [Discover how one-person businesses run like full teams using AI systems](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+
+## FAQ
+
+### Are workspace agents actually different from chat assistants?
+
+Yes — the difference isn't model quality but the surface the AI lives on and who holds context. A chat assistant is a conversation: self-contained turns in a chat window, with state that mostly disappears when you close the tab. A workspace agent lives next to your files, tabs, and tools, reads what's already open, and runs a loop over a goal with context that accumulates across sessions. One responds; the other operates.
+
+### When should I stick with a chat assistant?
+
+For short, self-contained tasks — rewriting a paragraph, explaining a concept, quick research, drafting a short reply — the setup cost of a workspace agent is pure overhead. Also choose chat when you don't want AI near your files: a sandboxed conversation is the more honest option for confidential work, since giving an agent broad workspace access compounds risks like prompt injection, OWASP's top LLM-app risk.
+
+### When does a workspace agent pull ahead?
+
+When a task spans more than two or three surfaces — a PDF, a Google Doc, a spreadsheet, a browser tab — you stop being the context-transfer layer. Agents read all of those directly, and on research-heavy work the difference is closer to 50% than 10%. They also win on repeated tasks where context matters (a weekly client update without re-explaining everything) and on multi-role solo work, where the cost of starting any new kind of work drops.
+
+### Can I use both at the same time?
+
+Yes, and most people I know do. They're different tools for different job sizes rather than competitors: a chat assistant for quick one-offs, a workspace-style setup for ongoing projects. I use a chat assistant most days and keep a workspace agent for the work that lives across files, tabs, and tools.
+
+### Do workspace agents replace human judgment?
+
+No — and be skeptical of anyone who says otherwise. Both still fail on long multi-step work: chat assistants forget what you said three turns ago; agents wander off and do something you didn't ask for. Neither is set-and-forget. When an agent can write to your systems, human-in-the-loop approval on destructive actions is the minimum bar. Treat agent output like a junior assistant's first draft — useful, often good, always worth checking.
+
+### How do I choose between the two?
+
+Skip the feature matrix and ask three questions. Does my work actually span multiple surfaces? If most of your AI use is ask-and-answer, chat is probably fine. Is there repeatable context you keep re-explaining? That tax is what a workspace agent removes. How comfortable am I with broad access? For sensitive work, be deliberate about what the agent can see and do. Fit matters more than features.

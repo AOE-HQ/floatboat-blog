@@ -162,27 +162,6 @@ That's the product category the[ LLM](<https://techterms.com/definition/llm>) wi
 
 ![6.png](/blog/images/what-is-llm-wiki/1776148866360-405fe00c-6fed-475f-a61d-1503898579ec.png)
 
-## FAQ
-
-**Do I need to be a developer to build an ​LLM** ​**​ wiki?**
-
-Practically, yes — Karpathy's setup requires terminal commands and familiarity with tools like Claude Code and Obsidian. The architecture is conceptually simple, but the current implementations assume technical comfort. If you're non-technical, focus on the underlying principle rather than the specific tooling: compile knowledge once, query many times.
-
-**Is an ​LLM** ​**​ wiki the same as RAG?**
-
-No, and the difference matters. RAG retrieves from raw sources every query. An LLM wiki pre-compiles those sources into a structured, linked knowledge base. The LLM navigates the wiki rather than re-searching raw files. Knowledge accumulates between queries instead of resetting. Think: RAG finds; the wiki knows.
-
-**What's the simplest version of this for someone who isn't building anything?**
-
-Keep a living context document — a single file that describes your current projects, working preferences, and key decisions. Update it occasionally, paste it into important AI sessions. It's a manual version of the same principle: compile context once, stop re-explaining it every session.
-
-**Why did this go viral specifically now, in 2026?**
-
-The timing tracks with the maturation of LLM coding agents like Claude Code, which made the implementation realistic rather than theoretical. The idea of using an AI to _maintain_ a knowledge base (not just answer questions about it) only becomes practical when AI agents can reliably write and update files autonomously. That infrastructure is now good enough to actually work.
-
-**How is Floatboat different from building an ​LLM** ​**​ wiki yourself?**
-
-An LLM wiki you build yourself requires setup, maintenance, and technical comfort. Tools moving toward the workspace model like [Floatboat](</>) are attempting to handle the infrastructure layer so the compounding-context benefit is accessible without the overhead. The underlying principle is the same; the implementation ask is very different. I'd call it the difference between building your own kitchen and rnting one that already has better recipes.
 
 That's where I am with this. The pattern is genuinely interesting — not because it's revolutionary, but because it finally names the problem clearly and gives it a concrete architecture. Whether you build one yourself depends almost entirely on whether you're comfortable running shell commands and whether your work actually involves deep domain accumulation over time.
 
@@ -201,3 +180,29 @@ If the answer to either is no: the principle still matters. Figure out your simp
   * [If you're deciding between building your own system or using a tool, this helps](</blog/workflow-builder-vs-ai-workspace>)
 
   * [Curious how AI agents actually fit into real solo workflows? This gives context](</blog/ai-agents-2026-solo-operators>)
+
+## FAQ
+
+### What is an LLM wiki?
+
+A folder of markdown files that an LLM pre-compiles from your raw sources — summaries, concept and entity pages, cross-references — plus a schema file that tells the AI how to organize and update it. Karpathy's framing: with RAG you cook every time you're hungry; with an LLM wiki you build a kitchen whose recipes keep improving. Raw documents stay untouched; the LLM does the bookkeeping.
+
+### How is an LLM wiki different from RAG?
+
+RAG retrieves; an LLM wiki accumulates. With RAG, every query digs through raw documents and starts from scratch, rediscovering things each time. With an LLM wiki, sources are pre-compiled into a structured, linked knowledge base, so queries navigate what has already been synthesized. Each new source is integrated rather than merely appended — which is why the wiki gets more valuable as it grows.
+
+### Why did Karpathy's LLM wiki go viral?
+
+Because it named a frustration people already had — the "every AI session starts from scratch" problem — and because it wasn't code, it was an idea file: a conceptual pattern you paste into an LLM agent and let it build out for you. Karpathy's tweet drew 16+ million views, and the follow-up gist passed 5,000 stars within days. Timing also mattered: coding agents had become capable enough to maintain files autonomously.
+
+### Do I need to be technical to build an LLM wiki?
+
+Practically, yes — Karpathy's own setup assumes Claude Code, Obsidian, shell commands, and a willingness to debug when things break. The architecture is conceptually simple, but current implementations are built for developers and researchers. Non-technical readers should take the principle — compile knowledge once, query many times — rather than the specific tooling.
+
+### What's the simplest version for a solo operator who won't build one?
+
+A living context document: 500–800 words describing your current projects, working preferences, and standards, pasted into important AI sessions and updated monthly. It's a manual version of the same pattern and takes ten minutes to set up. Middle-ground options like Notion AI or ChatGPT's memory feature hold context across sessions less structurally but far more easily, and workspace-first tools are working on removing the setup entirely.
+
+### Should I build my own LLM wiki?
+
+It depends. Yes if you're comfortable with a terminal, work with a defined corpus that grows over time — research, documentation, a domain you analyze — and keep adding sources regularly enough for the maintenance to pay off. Probably not if your knowledge base is shallow (under 30–40 sources) or your work is varied and ad-hoc: a well-maintained system prompt plus a few reference documents covers most of the same ground with zero infrastructure.

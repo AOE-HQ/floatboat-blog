@@ -92,26 +92,30 @@ Google Calendar 和 Outlook 都擅长告诉你安排了什么。提醒会响、�
 
   * 如果周期性准备工作、跟进与行政循环不断吃掉你的一周，[如何为重复性工作构建 AI Agent](</blog/how-to-build-ai-agents-for-repeated-work>) 探讨了重复工作流的另一种处理方式。
 
-## 常见问题
-
-### Google Calendar 和 Outlook 有什么区别？
-
-Google Calendar 是 Google Workspace 里内置的云原生排程工具——轻量、靠浏览器跨平台可用、和 Gmail、Meet、Google Tasks 紧密集成。Outlook Calendar 是 Microsoft 365 的一部分，和 Outlook 邮件、Teams、SharePoint、Microsoft To Do 的集成更深。最大的实际差异：Google 更简单、跨设备更好用；Outlook 提供更强的企业功能，比如委派访问、Scheduling Assistant 和邮件转任务工作流。
-
-### Google Calendar 和 Outlook 能协同工作吗？
-
-能，但有摩擦。你可以用 ICS 链接在一个日历里订阅另一个——得到的是只读视图。想要真正的双向同步，需要第三方工具。Google 与微软之间目前没有原生的、支持实时双向更新的跨平台同步。两家平台的同步能力在演进，请查阅各自最新文档。
-
 ![5.png](/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.png)
 
-### 链接日历之前应该检查什么？
+## 常见问题
 
-先确认你哪份日历是新建事件的默认日历。还要明白 ICS 订阅是只读的、可能有明显刷新延迟。导入的日历不会出现在 Outlook「Find a time」或 Google「Suggested times」这类排程工具里——同事看不到那些被占的块。在依赖它做真实排程前，先用几个事件测一测。
+### 到底该选 Google Calendar 还是 Outlook？
 
-### 什么时候 Outlook 更适合工作？
+看你客户和协作者所在的工作生态。工作跑在 Gmail、Meet、Google Workspace 上，Google Calendar 是阻力最小的路；跑在 Outlook 邮件、Teams、Microsoft 365 上，就该待在 Outlook。很多独立经营者的现实是客户两套都在用——结果常要同时打开、同时盯两个日历。
 
-当你的组织或客户跑在 Microsoft 365 上、当你要用委派访问或会议室预订、或者当你的工作重度由邮件驱动、想让标记邮件直接流进任务清单时。对那条具体的工作流，Outlook 的邮件-日历-任务集成比 Google 更紧。
+### 两款日历的根本区别是什么？
 
-### 什么时候 Google Calendar 更合适？
+表面比的是两个日历，实际是两套工作生态。Google Calendar 云原生、轻量：住在浏览器里、共享简单、和 Gmail/Meet/Google Tasks 咬合紧密。Outlook 更重、更偏组织：委派访问、会议室预订、Scheduling Assistant，还有更深的邮件转任务管线——标记邮件会浮现在 My Day，打开会议能看见相关邮件串，不用离开日历。
 
-当你独立工作、或和小团队协作、需要简单的跨平台日历共享、或工作流以 Gmail 和 Google Meet 为核心时。它更轻、上手更快、任何有浏览器的设备上体验都一样好。对用不上企业级排程功能的单人创业者，Google Calendar 用更少开销就把活干完了。
+### Google Calendar 和 Outlook 能互通吗？
+
+能，但有摩擦。用 ICS 链接在其中一边订阅另一边，得到的是只读视图，更新可能滞后数小时；两家目前没有原生、实时的双向同步。真正双向同步得靠第三方工具——多一份订阅、多一套权限、多一个 API 一变就可能坏的东西。依赖它做真实排期前，先用几个事件测一测。
+
+### 互链日历前要检查什么？
+
+先确认哪份日历是新建事件的默认日历，并记住 ICS 订阅只读、刷新可能明显滞后。导入的日历也不会进入排程工具——同事在 Outlook「Find a time」或 Google「Suggested times」里看不到你被占的时段。把链接视图当作「知晓」而非「共享空闲」，并常查两家最新文档——同步能力一直在演进。
+
+### 什么时候 Outlook 更合适？
+
+当你的组织或客户跑在 Microsoft 365 上、需要委派访问、会议室预订或 Scheduling Assistant 时。邮件重度的工作它也更强：标记邮件直接流进任务清单，会议的相关邮件串与附件不用离开日历就能看到。就这类工作流而言，Outlook 的邮件–日历–任务集成确实比 Google 更紧。
+
+### 为什么日历排得满，工作却没推进？
+
+因为排程不等于执行。两款日历都擅长展示「安排了什么」，但通话后的跟进邮件、明天会议前的简报、又要从零搭的例行任务，仍然落在你身上。这正是日历运行时 Agent（比如 Floatboat）存在的原因——它不取代日历，而是跟在日历后面，基于事件自动备好简报、起草跟进。

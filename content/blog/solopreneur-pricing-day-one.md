@@ -136,28 +136,6 @@ What you actually give up when you price only for accessibility: the kind of cli
 
 Worth reading on this: [the State of Solopreneur Pricing 2026 report](<https://kenyarmosh.com/blog/the-state-of-solopreneur-pricing-2026/>) breaks down why most solopreneurs know they're undercharging but don't change it — and the answer is almost never "they lack confidence." It's a pipeline and leverage problem in disguise.
 
-## FAQ
-
-**Q: What if I genuinely have no experience? Shouldn't I charge less?**
-
-Less experience is a real factor, but it's not a reason to price at zero. It might mean your scope is smaller, not your price. A narrower, more defined offer at a real price teaches you more than unlimited free work.
-
-**Q: How do I know if my price is "too high" vs. the prospect just not being a good fit?**
-
-Probe the no. "Can you help me understand what's not working about the budget?" If they say "we just don't have it," that's fit. If they say "I'm not sure the value justifies it," that's a framing conversation worth having.
-
-**Q: Should I publish my prices publicly?**
-
-No strong rule here. Published pricing saves you from tire-kicker conversations. Private pricing gives you room to adjust based on scope. I'd lean toward publishing a starting price with "from $X" language — it sets a floor without locking you in.
-
-​**Q: When is the right time to introduce a ​retainer** ​?
-
-When a client keeps coming back for the same type of work and both of you want the predictability. Retainers work best when the scope is clear enough that you won't feel like you're constantly overpromising.
-
-**Q: What if I want to offer a "founding member" discount to early clients?**
-
-That's fine — as long as you're making a deliberate choice, not defaulting to low. Name it explicitly, give it an end date, and make clear it won't be the ongoing rate. That framing actually helps early clients understand they're getting something special, rather than assuming your low price is just your price.
-
 Okay, I think I've been sitting with this question long enough to say something useful. The core thing I keep coming back to: **pricing is how you find out what your business actually is.** Not a tagline, not a positioning statement — the price. The number tells you more about your market and your clients than almost anything else you'll do early on.
 
 Start with something real. Watch what happens. Adjust from there.
@@ -175,3 +153,29 @@ That's my honest take.
   * [Want to understand where AI agents fit into your business long-term?](</blog/ai-agents-2026-solo-operators>)
 
   * [Not sure whether to build systems or just use better tools? This breakdown helps](</blog/workflow-builder-vs-ai-workspace>)
+
+## FAQ
+
+### I have no experience yet — shouldn't I charge less, or work free to build a portfolio?
+
+Less experience is a real factor, but it's not a reason to price at zero. Free engagements feel different from paid ones: free clients rarely push back, so the feedback is weak, while paying clients ask harder questions that sharpen your offer. If you lack experience, make your scope smaller rather than your price — a narrow, well-defined offer at a real price teaches you more than unlimited free work.
+
+### How do I set my first price when I have no data, no comps, and no testimonials?
+
+Use the "10x value" rule as an anchor. Estimate the concrete improvement your work produces — money saved, revenue added — then price at roughly one-tenth of that value. If your work saves someone $50,000 a year in software spend, a $5,000 engagement is rational, not greedy. Treat it as a sanity check rather than a mechanical formula: it anchors the price to what the client gets instead of your hours.
+
+### Should I charge hourly, per project, or by value?
+
+Hourly is easy but traps you if you're selling expertise: clients start optimizing for hours rather than outcomes. Project-based is cleaner — you agree on a deliverable and a price, and your efficiency makes you more per hour without renegotiating. Value-based is the hardest to set up but the most defensible long-term. If you're unsure, the article's advice is to start with project-based, because it forces you to define scope.
+
+### How do I know if my price is too high or the prospect just isn't a good fit?
+
+Probe the no. Ask something like: "Can you help me understand what's not working about the budget?" If they say they simply don't have it, that's a fit problem, not a price problem. If they say they're not sure the value justifies the cost, that's a framing conversation worth having. And if everyone says yes immediately without negotiation, you're probably priced too low.
+
+### Should I publish my prices publicly?
+
+There's no hard rule. Published pricing filters out casual tire-kickers and saves you time; private pricing gives you room to adjust for scope. The article leans toward publishing a starting price with "from $X" language — it sets a floor under the conversation without locking you in. Either way, the price should reflect the problem you're positioned to solve, not just the effort involved.
+
+### How do I raise my prices without losing existing clients?
+
+Raise your price for new clients first, keep existing clients at their current rate, and be transparent if they ask. Sustainable increases come from stronger demand signals and clearer positioning, not from overnight announcements of doubled rates. Give yourself a few months of new-client pricing before changing existing relationships, and when you do change them, announce the increase with lead time and a reason.

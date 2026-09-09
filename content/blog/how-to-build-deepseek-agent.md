@@ -292,18 +292,26 @@ The weather agent is a toy. But the pattern scales. Swap `get_weather` for `sear
 
 ## FAQ
 
-## Why build a custom agent instead of using DeepSeek-TUI or Reasonix?
+### What is the agent loop, and why isn't one tool call enough?
 
-DeepSeek-TUI and Reasonix are excellent terminal coding agents, but they are purpose-built for developer workflows. If your agent needs to do something other than edit code — query a proprietary database, interact with internal APIs, automate a business process — a custom agent loop gives you complete control over the tool surface. The loop pattern in this tutorial is the foundation for any domain-specific agent. If you are weighing the cost and capability trade-offs between coding with DeepSeek versus staying with Claude Code, [DeepSeek Agent vs Claude Code](</blog/deepseek-agent-vs-claude-code>) covers that comparison in detail.
+An agent doesn't answer once — it loops. The model requests a tool, your code executes it, the result goes back into the conversation as a `tool` role message, and the model decides the next step with the full history in front of it. That cycle repeats until the model produces a final answer. A single tool call is just one turn: without feeding the result back and re-asking, the model can't plan, correct itself, or reach a multi-step goal. This is exactly the part most tutorials skip.
 
-## Can I use DeepSeek with LangChain or LangGraph?
+### V4 Pro or V4 Flash — which model should I use?
 
-Yes. Both frameworks support DeepSeek as a drop-in OpenAI-compatible provider. Set `OPENAI_API_BASE=https://api.deepseek.com` and `OPENAI_API_KEY=your-deepseek-key` in the environment, then use the standard `ChatOpenAI` class with `model="deepseek-v4-pro"`. The agent loop pattern described in this tutorial is what LangChain's `AgentExecutor` does under the hood — understanding the raw loop helps when LangChain's abstractions break, which they do.
+Default to `deepseek-v4-flash` for the agent loop. It handles high-volume tool calls, classification, routing, and simple debugging at roughly a third of Pro's input price. Promote individual turns to `deepseek-v4-pro` when response quality really matters — typically the planning step at the start of a task and the synthesis step at the end. The two models share the same API surface, so upgrading is a one-line model-name change.
 
-## What happens if the model calls a tool that doesn't exist?
+### Why build my own agent instead of using an existing tool?
+
+If your agent only edits code, tools like DeepSeek-TUI and Reasonix already implement the loop well. But they are purpose-built for developer workflows. When the agent needs to query a proprietary database, interact with internal APIs, or automate a business process, a custom loop gives you full control over the tool surface — and understanding the loop is what makes debugging and customization possible in the first place.
+
+### Can I use DeepSeek with LangChain or LangGraph?
+
+Yes. Both frameworks support DeepSeek as a drop-in OpenAI-compatible provider. Set `OPENAI_API_BASE=https://api.deepseek.com` and `OPENAI_API_KEY=your-deepseek-key` in the environment, then use the standard `ChatOpenAI` class with `model="deepseek-v4-pro"`. The agent loop pattern in this tutorial is what LangChain's `AgentExecutor` does under the hood — understanding the raw loop helps when LangChain's abstractions break, which they do.
+
+### What if the model calls a tool that doesn't exist?
 
 The repair pattern in §6 catches this. Return a structured error — `{"error": "Unknown tool: X. Available: [list]"}` — and the model will typically correct itself on the next turn. V4 models are significantly better at self-correction than V3, but you should still validate every tool call before executing it.
 
-## How much will this cost in production?
+### How much will this cost in production?
 
 Back-of-envelope: a typical agent task uses 5–15 turns. At V4 Flash pricing ($0.14/M in, $0.28/M out), a task averaging 10 turns with 2,000 input tokens and 500 output tokens per turn costs roughly $0.004 — less than half a cent. A thousand such tasks per month: $4. At V4 Pro pricing: roughly $0.013 per task, or $13 for a thousand. The economics are favorable enough that the main cost concern is not the API bill but the engineering time spent tuning the agent loop.

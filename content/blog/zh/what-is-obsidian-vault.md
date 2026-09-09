@@ -117,20 +117,24 @@ Obsidian Vault 说穿了就是一个 Markdown 笔记文件夹，Obsidian 把它�
 
 ### Obsidian Vault 是一种特殊文件类型吗？
 
-不是。vault 是一个文件夹。笔记通常是 .md 文件。Obsidian 会把配置放在 .obsidian 下，也可能为特定功能创建 .canvas、.base 之类的格式——但知识库本身仍是磁盘上的普通文件。
+不是。vault 是设备上的普通文件夹，笔记通常是任何编辑器都能打开的 .md 文件。Obsidian 把设置与插件放进隐藏的 .obsidian 目录，也可能为特定功能生成 .canvas、.base 等格式——但知识库本身仍是磁盘上普通、可移植的文件：卸载 Obsidian，文件依然还在。
 
 ### 用 Vault 需要 Obsidian Sync 吗？
 
-不需要。Sync 是可选项。许多人只保留单设备 vault，或用 iCloud、Syncthing、Git 等自己已经信任的工具同步。
+不需要。Sync 是用于加密多设备同步与发布的付费附加项，不是必需品。许多人只保留单设备 vault，或用自己已信任的工具同步——iCloud、Syncthing 或 Git——核心应用完全离线可用、无需账号。只有想要 Obsidian 自家加密同步时才需要买 Sync。
 
 ### 我可以有多个 Vault 吗？
 
-可以。工作和个人笔记分开、或按客户隔离，用独立 vault 很常见。每个 vault 有自己的文件，通常也有自己的插件设置。
+可以。把工作与个人笔记分开、或按客户与项目隔离，用独立 vault 很常见。每个 vault 有自己的文件、插件设置与配置。经验法则：只有当信任边界或插件栈出现分叉时才拆——而不是标签看着挤就拆。代价是上下文切换；收益是把爆炸半径握在自己手里。
 
 ### 我的 Vault 私密吗？
 
-本地而言，是的——文件留在你的设备上，除非你同步或发布它们。如果你用第三方同步、云端 AI 插件，或带远程模型服务商的 Web Clipper Interpreter，那些服务会按自己的政策看到你发送的内容。Obsidian 的核心本地应用不会把笔记上传到 Obsidian 的服务器。
+本地而言，是的——文件留在你的设备上，除非你选择同步或发布；Obsidian 核心应用不会把笔记上传到它的服务器。要注意：第三方同步、云端 AI 插件、或接入远程模型服务商的 Web Clipper Interpreter，会按各自政策看到你发送的内容。控制权在你，请审慎选择服务。
 
 ### Vault 和 Google Drive 里的文档文件夹有什么不同？
 
-Drive 里的文档文件夹是「存储 + 在线编辑器生态」；Obsidian Vault 是「本地 Markdown + 为链接、反向链接、图谱视图与插件而生的笔记应用」。你可以把 vault 放进同步的 Drive 或 Dropbox 文件夹里，但只有 Drive 给不了你 Obsidian 的知识库体验。
+Drive 的文档文件夹是「存储 + 在线编辑器生态」；Obsidian Vault 是「本地 Markdown + 为链接、反向链接、图谱与插件而生的笔记应用」。可以把 vault 放进同步的 Drive 或 Dropbox 文件夹，但单靠 Drive 给不了你反向链接、关系图谱与文件级控制这套知识库体验。
+
+### AI Agent 能读取并使用我的 Obsidian Vault 吗？
+
+能——而且这是重点。vault 是磁盘上的纯文本，能读目录的 AI Agent 可直接打开、搜索、改写你的笔记——看到的是文件与 frontmatter，而非锁死的 schema。是否搭配属工作流选择而非 Obsidian 功能；实操见配套指南《把 Obsidian 与 AI Agent 一起用》。

@@ -146,24 +146,6 @@ I want to be careful not to overstate this: **most solo creators don't need thre
 
 ![6.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258163108-0603b3f3-2195-41f9-a39c-89e41c89fb4f.png)
 
-## FAQ
-
-**Is the Image Arena leaderboard reliable?**
-
-It measures human preference on diverse prompts — useful but not perfectly predictive of your specific use case. A 242-point lead means GPT Image 2 wins on average; it doesn't mean it wins for _your_ workflow.
-
-**Does Midjourney V8 have an ​API** ​**​ yet?**
-
-Not officially. Third-party wrappers exist via [aggregators like ](<https://fal.ai/models/openai/gpt-image-2>)[fal.ai](<http://fal.ai>). For programmatic work, that's still a gap.
-
-**Can I use ​GPT** ​**​ Image 2 outputs commercially?**
-
-Generally yes on paid tiers; check the current OpenAI usage policy directly. Not legal advice.
-
-**What about DALL-E 3 if I'm already using it?**
-
-Migrate before May 12, 2026. The retirement date is firm.
-
 That's where I land. The actual choice depends on what you make. If you're not sure, start with the free Nano Banana 2 tier this week, layer in GPT Image 2 when you need polished output, and only add Midjourney if you find yourself missing a specific look the others can't give you.
 
 When you need this, you'll know.
@@ -179,3 +161,29 @@ When you need this, you'll know.
   * [If you care about how workflows actually run in practice, this one goes deeper](</blog/ai-agent-workflow-vibe-coding>):
 
   * [How solo operators use AI to work like a full team](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+
+## FAQ
+
+### Which AI image tool should a solo creator pick as their main one?
+
+There's no universal answer — it depends on what you make. If in-image text, multi-frame consistency, or surgical editing matters, GPT Image 2 is your daily driver. On a tight budget, run the free Nano Banana 2 tier for drafting and add ChatGPT Plus when you need polished output. Choose Midjourney only when a specific aesthetic look is the product itself — and don't switch just because a leaderboard moved.
+
+### Is the Image Arena leaderboard reliable?
+
+Useful, but not decisive. Image Arena measures human preference across diverse prompts, so a 242-point lead means GPT Image 2 wins on average — not that it wins for your particular workflow. Benchmark gaps don't always translate into workflow gaps. If your output is shipping and clients are happy, an upgrade can wait until your next billing cycle.
+
+### Which tool renders in-image text best?
+
+GPT Image 2, by a wide margin. Independent reviews put its character-level accuracy near 99% across Latin, CJK, Hindi, and Bengali scripts, and it's the only one the author trusts for typography-heavy work like posters, infographics, or multilingual marketing assets. Midjourney V8 improved mainly on Latin scripts, while Nano Banana 2 handles CJK adequately but still trips on dense text at small sizes.
+
+### Does Midjourney V8 have an API?
+
+Not officially. Midjourney V8 has no public API, and the opaque GPU-hour billing plus the lack of programmatic access still hurt solo operators who want generation inside their pipeline. Third-party wrappers exist through aggregators like fal.ai, but for reliable programmatic work it remains a gap.
+
+### Can I use outputs from all three commercially?
+
+All three permit commercial use on paid tiers, but the fine print differs. Midjourney requires Pro ($60/mo) or Mega once company revenue passes $1 million, with Stealth mode on Pro+ only. GPT Image 2 outputs carry SynthID metadata and are generally usable commercially under current policy. Nano Banana 2's free tier adds a visible watermark that paid removes. This isn't legal advice — verify current terms before shipping client work.
+
+### What should I do if I'm still on DALL-E 3?
+
+Migrate before May 12, 2026 — the retirement date is firm. If your output is text-heavy, multi-frame, or CJK content, GPT Image 2 is the natural replacement: it already tops the Image Arena leaderboard and handles exactly those workloads. Don't wait until the shutdown to test your workflow on the new tool.

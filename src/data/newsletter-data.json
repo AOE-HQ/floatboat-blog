@@ -1,0 +1,19 @@
+{
+  "fallback": {
+    "en": {
+      "title": "Notes from the Proactive Agent.",
+      "description": "Field notes on running work from the calendar — plus new Combos, agent tactics, and product updates. No spam.",
+      "placeholder": "you@yourcompany.com",
+      "buttonLabel": "Subscribe",
+      "success": "Subscribed — notes land in your inbox. No spam."
+    },
+    "zh": {
+      "title": "来自 Proactive Agent 的笔记。",
+      "description": "关于让日历把工作自动跑起来的实战笔记——外加新的 Combo、Agent 技巧与产品更新。绝不发垃圾邮件。",
+      "placeholder": "you@yourcompany.com",
+      "buttonLabel": "订阅",
+      "success": "已订阅——笔记将直达你的收件箱，绝不发垃圾邮件。"
+    }
+  },
+  "slugs": {}
+}

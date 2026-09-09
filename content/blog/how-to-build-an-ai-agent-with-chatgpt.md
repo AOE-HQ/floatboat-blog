@@ -96,28 +96,6 @@ Custom GPTs also don't maintain memory across sessions. Each conversation starts
 
 The rule I use: if I'm spending more time working around a GPT's limitations than it's saving me, it's time to move to the next tool.
 
-## FAQ
-
-### Do I need a paid ChatGPT plan?
-
-To create a Custom GPT, yes — you need Plus ($20/month), Team, Business, or Enterprise. Free-tier users can use published GPTs but can't build their own.
-
-### Can ChatGPT run tasks while I am offline?
-
-Custom GPTs only work during an active conversation. Close the chat, they stop. Agent Mode can run certain tasks in the background. Workspace Agents for Business/Enterprise can run in the cloud independently.
-
-### How should I store reusable instructions?
-
-Keep a separate text file with your GPT's instructions, versioned by date. Every time you update, save the previous version. I've rolled back twice when an "improvement" broke something. The builder has version history too, but I like having my own backup.
-
-### What permissions should I avoid giving it?
-
-Don't connect to external APIs unless you understand what data gets sent. Don't enable web browsing for GPTs handling confidential information. And on team plans, don't skip admin controls — restrict action domains and review access quarterly.
-
-### How do I know the agent is reliable enough?
-
-Run 10 real-world scenarios from your actual workflow. If you're correcting more than 2 out of 10, the instructions need work. Fewer than 1 in 10 — you've got something worth keeping. The biggest mistake: writing instructions once and never updating them. Treat your GPT like software.
-
 ![h5.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182712841-9be02d1a-d970-494d-8b6e-254c5c7c2b8f.png)
 
 That's my honest take on how to build an AI agent with ChatGPT. It's less about the builder and more about being clear on the task, writing good instructions, and testing with real edge cases. The tooling is genuinely accessible — you don't need to code, you just need to think carefully about what you're delegating.
@@ -135,3 +113,29 @@ I'll probably keep refining my own setup as the tools evolve. That part never re
   * Thinking about moving beyond Custom GPTs into workspace-style AI systems? This is a useful next step: [AI Workspace Agents: What They Actually Change for Solo Operators](</blog/ai-workspace-agents>)
 
   * Once you've built your first GPT, this guide helps you turn repeatable tasks into something more reliable and scalable: [How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>)
+
+## FAQ
+
+### Do I need to know how to code to build an AI agent with ChatGPT?
+
+No. The author built a working content-research agent using just the Custom GPT builder, a few uploaded files, and instructions he rewrote three times — no code, no API. The difficulty isn't technical; it's defining the task precisely, writing clear step-based instructions, and testing with real edge cases. If you can describe the task you repeat every week, you can build a GPT around it.
+
+### What can a Custom GPT actually do?
+
+A Custom GPT follows your instructions, references uploaded files, browses the web, runs code for data analysis, and generates images — think of a very well-briefed assistant that follows the same playbook each time. What it can't do is act on external websites, send emails on your behalf, or run background tasks. Those belong to ChatGPT's separate Agent Mode, or Workspace Agents on Business and Enterprise plans.
+
+### Do I need a paid ChatGPT plan to build one?
+
+Yes. Creating a Custom GPT requires Plus ($20/month), Team, Business, or Enterprise. Free-tier users can use GPTs others have published but can't build their own. Worth the money only if the task is genuinely repeatable and well-defined — the sweet spot for Custom GPTs is work you'd otherwise re-prompt from scratch every time.
+
+### Can it run tasks while I'm offline?
+
+No. Custom GPTs work only during an active conversation — close the chat and they stop, and they don't carry memory between sessions. If you need background or autonomous work, ChatGPT's Agent Mode can run certain tasks in the background, while Workspace Agents for Business and Enterprise can run in the cloud and work in Slack.
+
+### What permissions should I avoid giving it?
+
+Don't connect external APIs through Actions unless you understand exactly what data gets sent, and don't enable web browsing for GPTs handling confidential information. On team plans, keep admin controls on: restrict action domains and review access quarterly. And for any GPT producing client-facing output, keep a human review step before anything goes out.
+
+### How do I know when the agent is reliable enough?
+
+Run ten real scenarios from your actual workflow. If you're correcting more than two out of ten, the instructions need work — tighten them and add examples. Fewer than one in ten means you've got something worth keeping. The biggest mistake is writing instructions once and never updating them; treat your GPT like software and keep iterating.

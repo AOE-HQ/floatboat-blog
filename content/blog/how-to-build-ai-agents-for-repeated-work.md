@@ -98,20 +98,6 @@ This step has three branches, and knowing which one applies to you is the whole 
 
 One more thing worth repeating: you're building your ​**first useful agent** ​, not a complete system. As your trust grows and your task map gets tighter, you can layer on more. But the foundation has to be one job done reliably.
 
-## FAQ
-
-### Do I need coding skills to build a simple agent?
-
-No — and I'd actively discourage starting with code. For most repeated tasks, a no-code automation tool or an AI builder handles everything without touching a terminal. **Coding becomes necessary only when you need custom logic, API integrations that tools don't support, or very specific error-handling behavior.** Start with the lightest path (Step 3) and only move to code when you hit a wall.
-
-### What is the smallest useful agent I can build?
-
-Smaller than you think. A genuinely useful minimal agent might be: a prompt template that takes a raw support email and outputs a one-line summary in a consistent format. No integrations, no memory, no tool calls. Just a reliable, repeatable transformation of one input to one output. If that's saving you 10 minutes a day, it's worth having.
-
-### How many workflows should one agent handle?
-
-One. At least at first. There's a strong temptation to add scope — "well, since it's already reading the email, why not also check the CRM and draft a reply?" — but each added step multiplies the ways things can go wrong. Keep your first agent to a single workflow. Once it's stable and trusted, you can decide whether to extend it or build a separate agent for the next job.
-
 Building an AI agent for repeated work isn't about technology — it's about clarity. The teams and individuals who get real value out of their first agent are the ones who took the time to map the job before touching a tool. The ones who struggled? They usually started with the tool and worked backwards.
 
 Pick one repeated task, map it carefully, choose the lightest build path that gets you there, and keep a human in the loop until you trust the outputs. That's the whole playbook. Everything else is iteration.
@@ -127,3 +113,23 @@ Pick one repeated task, map it carefully, choose the lightest build path that ge
   * AI workflows usually fail from too much complexity, not too little capability. This is the practical framework solo founders are using instead — [AI workflow for solo founders](</blog/ai-workflow-for-solo-founders>)
 
   * If your AI setup already feels messy, fragmented context between tools is probably the bottleneck — not the model quality itself — [why AI workflows feel fragmented](</blog/workspace-agents-for-solo-operators>)
+
+## FAQ
+
+### Do I need coding skills to build a simple agent?
+No — and I'd actively discourage starting with code. For most repeated tasks, a no-code automation tool or an AI builder handles everything without touching a terminal. Coding becomes necessary only when you need custom logic, API integrations that tools don't support, or very specific error-handling behavior. Start with the lightest path (Step 3) and only move to code when you hit a wall.
+
+### Which repeated task should I automate first?
+Choose the job you do more than three times a week, in roughly the same way, with roughly the same inputs — and can describe in one sentence. Good first targets include summarizing support tickets into a one-line triage note, drafting a weekly status report, and extracting action items from meeting transcripts. Bad candidates change judgment every time, take unpredictable inputs, or have no clear definition of done.
+
+### What is the smallest useful agent I can build?
+Smaller than you think. A genuinely useful minimal agent might be: a prompt template that takes a raw support email and outputs a one-line summary in a consistent format. No integrations, no memory, no tool calls. Just a reliable, repeatable transformation of one input to one output. If that's saving you 10 minutes a day, it's worth having.
+
+### Does every repeated task need an actual agent?
+No — most repeated work doesn't need a real agent at all. Walk the decision tree from the lightest option: a well-structured prompt for tasks that fit in one conversation, an automation tool like n8n, Zapier, or Make for moving data between apps, a no-code builder with memory and tools for research-style reasoning, and only then a coded workspace agent. Don't build what a prompt can do; don't code what a builder can handle.
+
+### How many workflows should one agent handle?
+One. At least at first. There is a strong temptation to add scope — "well, since it's already reading the email, why not also check the CRM and draft a reply?" — but each added step multiplies the ways things can go wrong. Keep your first agent to a single workflow. Once it is stable and trusted, you can decide whether to extend it or build a separate agent for the next job.
+
+### What should I do when my agent keeps failing?
+Don't upgrade the model first. If an agent keeps failing at the same point, go back to your input-decision-output map from Step 2 — you've likely hit a decision that is more complex than it looks. Narrow the task rather than adding capability. And if, after two rounds of iteration, you still wouldn't trust the output without rewriting it entirely, stop building. That task may rely on tacit knowledge that isn't ready to automate.

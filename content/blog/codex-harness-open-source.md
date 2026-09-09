@@ -157,30 +157,26 @@ For developers, the actionable split is simple: **inspect and embed the harness;
 
 ## FAQ
 
-### Is Codex Harness newly open source in August 2026?
-
-The **Codex CLI and core harness** have been on GitHub since 2025. The August 2026 announcement formalized **platform positioning** , documented **app-server** as the integration target, and highlighted enterprise embeds — not a first-time source release.
-
 ### Can I run Codex Harness without paying OpenAI?
 
-You can run, modify, and commercialize the **harness code** under Apache 2.0. **Model inference** still requires OpenAI API access or eligible Codex subscription terms. There is no open-weight GPT-5.6 inside the repo.
+No — open source covers the harness code, not the models. You can run, modify, and commercialize the code under Apache 2.0, but every agent turn routes through OpenAI's models and billing, so inference still requires an API key or an eligible Codex subscription. There are no open-weight GPT-5.6 models inside the repo.
 
-### How is Codex Harness different from DeepSeek Harness?
+### What exactly is open source, and what isn't?
 
-Codex Harness is OpenAI's **Responses API–native** , vertically integrated runtime for Codex products. DeepSeek Harness is a **pluginized, model-agnostic** preview (`dsh`) built on the Cordis kernel. Different licenses, architectures, and vendor incentives.
+OpenAI released the Codex CLI, the `codex-rs` harness core, the SDK, app-server, the Codex Security CLI, and the Skills/Plugins repositories. Not included: the IDE extension, the Codex Cloud managed service, and model weights. The authoritative list is on developers.openai.com, and the code is Apache 2.0 — verify the license in-repo before redistributing.
 
-### What is Codex app-server vs the Codex SDK?
+### Was Codex Harness open sourced for the first time in August 2026?
 
-The **SDK** wraps common programmatic flows (start, resume, stream). **App-server** exposes the full agent lifecycle over JSON-RPC — threads, turns, events, approvals — for products that embed agents in their own UI (the Relay pattern).
+No. The Codex CLI and core harness have been on GitHub since 2025. The August 2026 announcement formalized platform positioning and documented app-server as the integration target; what was new was the "open agent runtime you embed" narrative, sample apps like Relay, and named enterprise embeds — not the code drop itself.
 
-### Does Floatboat use Codex Harness internally?
+### Which integration should I choose: CLI, SDK, or app-server?
 
-Floatboat integrates OpenAI models including GPT-5.6 tiers as **built-in models** in a calendar-driven agent workspace. It does not require you to install Codex CLI; the harness article explains OpenAI's open runtime for teams building adjacent tooling or comparing agent stacks.
+Use `codex exec` when a human operator or CI job runs bounded tasks and exits. Reach for the SDK (`@openai/codex-sdk` or `openai-codex`) when your backend code must start, resume, or stream agent work. Embed app-server when agents stay visible inside your product UI and you need persistent threads, streamed events, and approval requests. Most teams prototype with the CLI, then graduate to SDK/app-server once the workflow is stable.
+
+### How does Codex Harness differ from DeepSeek Harness?
+
+Codex Harness is OpenAI's vertical runtime, native to the Responses API and tightly coupled to OpenAI's subscription surface. DeepSeek Harness (`dsh`) is a pluginized, model-agnostic MIT preview built on the Cordis kernel. The licenses, architectures, and vendor incentives differ, so the two are not drop-in substitutes.
 
 ### Are GitHub repos like `codex-harnesses` official?
 
-No. Community repos with "harness" in the name are usually **project scaffolds** (`AGENTS.md`, hooks, scripts). The official runtime is `openai/codex` on GitHub.
-
-### Should I embed app-server or just use Codex CLI?
-
-Use **CLI /**`codex exec` when a human operator or CI job runs bounded tasks and exits. Embed **app-server** when agents are **always visible inside your product UI** — support consoles, ops dashboards, calendar sidebars — and you need streamed partial output plus approval modals. Most teams prototype with CLI, then promote to SDK/app-server once the workflow is stable enough to expose to non-engineers.
+No. Community repositories with "harness" in the name are usually project scaffolds — `AGENTS.md`, hooks, and scripts — not OpenAI's runtime. They can be useful starting points, but the maintained official code lives in `openai/codex` on GitHub under Apache 2.0; when in doubt, compare any fork against the component list in §4.

@@ -102,3 +102,29 @@ The second layer is a **digital employee** : memory, initiative, and ownership o
 The moat, if it appears, is less exported memory than **running state** : tasks waiting on a customer, a metric threshold, or an open PR. Replacing the vendor mid-flight means re-teaching a new agent what it had promised. Chat-era tools had almost no switching cost; coworker-shaped tools will, if they are actually employed. A short quality lead is hard to monetize unless it sticks to a workflow that is painful to unwind.
 
 Control of that surface is still contested. Model labs hold intelligence and the traces; collaboration suites hold the room; systems of record hold the objects; independent agent networks hold the bet that agents should be first-class participants rather than plugins. Where one group owns both the model and the IM, the first two collapse. The 2026 fight is about who sits in the stream.
+
+## FAQ
+
+### Which should I use — Claude Code, Cowork, or Tag?
+
+Match the product form to the job and its horizon. Choose Claude Code when the work is a repository: code, tests, and diffs one engineer runs locally for about an hour. Choose Claude Cowork when the object is your files, folders, and connected apps as a single knowledge worker. Choose Claude Tag when the work is already owned by a Slack channel — multiplayer, hours long, and worth an agent that can schedule its own follow-up. Minute-scale questions still belong in chat.
+
+### What's the real difference between the three?
+
+It is not model quality; it is product form. All three run the same agent loop — plan, tools, long-running execution — aimed at different objects. Code is single-player and scoped to one engineer's repository. Cowork is the same single-player local loop aimed at files and connectors. Tag is the first multiplayer form: one Claude per channel, visible to everyone there, asynchronous, with memory that outlives the session and organization-level billing. Code and Cowork share a rung; Tag is the next one.
+
+### Is Claude Cowork just a lighter Claude Code?
+
+No — and mistaking it for one leads to the wrong purchase. Cowork is Claude Code with a different object: a consultant reorganizing folders and building decks is not an engineer shipping to a repository. Its file-and-connector scope is the point, not a limitation. Both are local, single-player, and user-initiated; neither is a half-step toward Tag. Pick by whether the work lives in a repo or in documents and connected apps.
+
+### Is Claude Tag just Claude Code with Slack notifications?
+
+No. A notification layer does not make a coworker. Tag separates itself only when three migrations happen together: single-player to multiplayer (the thread is the prompt and anyone can continue it), pull to push (it watches and picks work up without being asked), and synchronous turns to asynchronous, long-horizon work with self-scheduled check-ins. It is also not Slack AI, which reads the workspace; Tag executes across connected tools and writes back to the thread.
+
+### When does an async coworker make sense over a local agent?
+
+When the job's horizon exceeds about an hour and collaboration is the bottleneck. A local agent fits roughly an hour of work beside you; an async coworker earns its place once the model can run for hours and schedule its own later check-in. That requires three conditions to actually hold: long-horizon autonomy, inspectable memory, and judgment about when to act. Its first jobs are dense in collaboration and raw context — public incidents, launch channels, escalations.
+
+### Why is Claude Tag harder to adopt than Code or Cowork?
+
+Two gates, both about context. Cost: a channel is asynchronous, so the cache prefix that keeps 1:1 sessions cheap is often gone — a small team treating a frontier coworker as free labor can burn five figures a month. Permissions: a coworker that cannot see the work cannot do it, and one that sees everything is a liability; channel-scoped identities and admin-provisioned tools are still not a finished identity system. Small, transparent tech companies clear both gates first.

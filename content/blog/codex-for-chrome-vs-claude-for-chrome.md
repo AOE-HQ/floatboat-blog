@@ -164,20 +164,6 @@ If you want to try both, give each one a specific domain. Codex for multi-tab op
 
   * **Speed varies.** Some tasks take longer than doing them manually, especially on unfamiliar page structures.
 
-## FAQ
-
-**Q: Which is cheaper for browser automation?**
-
-Both start at $20/mo. But Codex gives you its full model stack at that price, while Claude limits Pro users to Haiku 4.5 in the extension. For equivalent model quality, you're comparing $20/mo (Codex) vs $100/mo (Claude Max).
-
-**Q: Can I use Codex for Chrome in the EU?**
-
-Not yet. As of May 2026, **Codex for Chrome** is unavailable in the EU and UK. No timeline for when it opens.
-
-**Q: Do either work on Brave, Arc, or Firefox?**
-
-No. Both are Chrome-only. Neither supports Brave, Arc, Firefox, or mobile browsers.
-
 ## Previous Posts:
 
   * Curious why everyone keeps talking about workspace agents lately? Read AI Workspace Agents: [The New Operating System for Solo Founders.](</blog/workspace-agents-vs-chat-assistants>)
@@ -189,3 +175,29 @@ No. Both are Chrome-only. Neither supports Brave, Arc, Firefox, or mobile browse
   * If you're building a lean one-person workflow with AI tools,[ AI Workflow for Solo Founders ](</blog/ai-workflow-for-solo-founders>)connects directly to the ideas in this article.
 
   * For more practical examples of where AI agents actually save time, check out[ AI Agents for Solo Operators](</blog/ai-agent-solo-operators>).
+
+## FAQ
+
+### Which should I choose: Codex for Chrome or Claude for Chrome?
+
+It depends on your work type — and your region. If you're in the EU or UK, Claude is the working choice today because Codex for Chrome isn't available there yet. Otherwise: pick Codex for multi-tab background tasks, DevTools debugging, and full model access at $20/month; pick Claude for document-heavy, conversational work and scheduled tasks. You can also assign each one a domain and run both.
+
+### How do the two tools work differently inside a browser?
+
+Codex for Chrome is a plugin for the Codex desktop app. It works in the background across multiple tabs organized into tab groups per thread — you invoke it with @Chrome and delegate a task while you keep browsing. Claude for Chrome is a sidebar agent on your current tab; it reads the live DOM of the page in front of you and works conversationally with you about what's on screen.
+
+### Is it safe to let them browse on my behalf?
+
+Both default to asking before touching a new domain and support allowlists and blocklists, but the risks are real. Anthropic reports prompt-injection attack success drops from 23.6% to 11.2% with defenses — neither company claims the problem is solved, and OpenAI's docs call page content "untrusted context." Start with sites you trust, and avoid sensitive financial or medical pages until you've tested both on low-stakes tasks.
+
+### What do you get for $20/month on each?
+
+Both start at $20/month, but model access differs sharply. Codex for Chrome is included with ChatGPT Plus and gives you its full model stack at that price. Claude for Chrome's Pro plan is limited to Haiku 4.5 in the extension — the fastest but least capable model — so you need Max ($100/month) to unlock Sonnet 4.5 or Opus 4.6 there.
+
+### Is Codex for Chrome available in the EU and UK?
+
+Not yet. As of May 2026, Codex for Chrome is unavailable in all EU and UK regions, with OpenAI saying support is "coming soon" and giving no timeline. EU-based users may find the extension connects, but the Codex app won't expose the Chrome plugin. Claude for Chrome has no regional restrictions and works globally for paid subscribers.
+
+### Do they work on Brave, Arc, Firefox, or mobile?
+
+No. Both are desktop Chrome-only extensions — neither supports Brave, Arc, Firefox, or mobile browsers. They also share other limits: neither handles CAPTCHAs or login prompts without your help, and browser automation burns through plan limits much faster than regular chat.

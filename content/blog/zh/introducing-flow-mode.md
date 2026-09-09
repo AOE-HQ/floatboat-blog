@@ -120,3 +120,7 @@ Flow Mode 是 Mac 和 Windows 上 Floatboat 里的**桌面 workspace**功能—�
 ### Agent 改坏了怎么办？
 
 用**版本历史**：打开更早的修订、检查 diff、回滚到一个已知良好的状态。Flow Mode 的设计就是让实验不需要复制文件，也不会丢掉聊天侧的其他备选。
+
+### Flow Mode 在哪些平台可用？
+
+Flow Mode 是 Floatboat 桌面 workspace 的一部分，运行在 Mac 和 Windows 上——和 Combo Skills、多模型路由、事件级 Agent workspace 同处一个环境。具体可用范围随版本而变，请以线上应用与发布说明为准。

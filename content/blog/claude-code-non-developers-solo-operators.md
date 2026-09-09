@@ -148,28 +148,6 @@ Huh. I didn't expect figuring this out to feel this simple. But that's kind of t
 
 Anyway, that's today's little discovery. Back to building things.
 
-## FAQ
-
-**Can I use Claude Code without knowing how to code?**
-
-Technically yes — some non-technical people have made it work. But the setup involves a terminal, Node.js, and some patience with things going wrong. For most non-developers, Claude chat with Projects, or Cowork through the desktop app, is a better starting point.
-
-**What does Claude Code actually cost in 2026?**
-
-Per [Anthropic's official pricing](<https://claude.com/pricing>): Pro is $20/month ($17 billed annually) and includes Claude Code. Max 5x is $100/month and Max 20x is $200/month. No free access — you need at least a Pro subscription or API credits.
-
-**Is Claude Code just Claude in a terminal?**
-
-Sort of, but more capable. It can read your whole codebase, edit multiple files simultaneously, run commands, and operate autonomously across multi-step tasks. It's designed for sustained technical work, not one-off questions.
-
-**What's the difference between Claude Code and Cowork?**
-
-Claude Code is for coding and developer workflows in the terminal. Cowork is Anthropic's agent tool for general knowledge work — processing local files, running multi-step research and automation tasks — without requiring terminal skills. Both are available on Pro and Max plans through the desktop app. If agentic capabilities interest you but code doesn't, Cowork is where to start.
-
-**Should I upgrade to Max for Claude Code?**
-
-Only if you're hitting Pro limits regularly. According to Anthropic's support documentation, the best signal to upgrade is when usage interruptions happen often enough that the lost time costs more than the $80/month difference. For light or occasional use, start with a Pro and watch your usage patterns for a few weeks first.
-
 ## Previous Posts:
 
   * **[See what maintaining your own automation system actually looks like as a solo operator](</blog/feishu-cli-solo-work-setup>)**
@@ -181,3 +159,23 @@ Only if you're hitting Pro limits regularly. According to Anthropic's support do
   * **[Explore the difference between AI agents and AI assistants for everyday workflows](</blog/ai-agent-vs-ai-assistant>)**
 
   * **[See real-world AI agent use cases to understand where coding agents actually fit](</blog/ai-agent-use-cases-real-examples>)**
+
+## FAQ
+
+### Can I use Claude Code without knowing how to code?
+Technically yes — some non-technical people have made it work. But the setup involves a terminal, Node.js, and some patience with things going wrong. For most non-developers, Claude chat with Projects, or Cowork through the desktop app, is a better starting point.
+
+### What does Claude Code actually cost in 2026?
+Per [Anthropic's official pricing](<https://claude.com/pricing>): Pro is $20/month ($17 billed annually) and includes Claude Code. Max 5x is $100/month and Max 20x is $200/month. No free access — you need at least a Pro subscription or API credits.
+
+### Is Claude Code just Claude in a terminal?
+Sort of, but more capable. It can read your whole codebase, edit multiple files simultaneously, run commands, and operate autonomously across multi-step tasks. It is designed for sustained technical work, not one-off questions.
+
+### What's the difference between Claude Code and Cowork?
+Claude Code is for coding and developer workflows in the terminal. Cowork is Anthropic's agent tool for general knowledge work — processing local files, running multi-step research and automation tasks — without requiring terminal skills. Both are available on Pro and Max plans through the desktop app. If agentic capabilities interest you but code doesn't, Cowork is where to start.
+
+### Should I learn Claude Code to build my own AI tools?
+Usually not as your first move. If you have no coding foundation, the real cost is rarely the $20/month — it's the learning time, the debugging sessions when something breaks for unclear reasons, and the fact that heavy coding sessions share your usage budget with regular Claude chat. Returns diminish fast, so for most solo operators the higher-ROI move is going deep on Claude chat, Projects, and Cowork.
+
+### Should I upgrade to Max for Claude Code?
+Only if you're hitting Pro limits regularly. According to Anthropic's support documentation, the best signal to upgrade is when usage interruptions happen often enough that the lost time costs more than the $80/month difference. For light or occasional use, start with a Pro and watch your usage patterns for a few weeks first.

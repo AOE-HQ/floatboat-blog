@@ -169,20 +169,24 @@ Use this page as the bracket hub: download the tracker, check the current match 
 
 ### What is a World Cup bracket?
 
-A World Cup bracket is the knockout-stage map showing how teams advance from the group stage through the Round of 32, Round of 16, quarterfinals, semifinals, third-place match, and final.
+It's the knockout-stage map showing how winning teams advance after the group stage. In 2026 the path runs through a Round of 32, Round of 16, quarterfinals, semifinals, a third-place match, and the final — with each table row showing the fixture, date, venue, and winner. The bracket works upstream-first: final group tables determine which team lands in which slot.
 
-### Does the 2026 World Cup have a Round of 32?
+### Why does the 2026 World Cup bracket start with a Round of 32?
 
-Yes. The expanded 48-team format includes a Round of 32 before the Round of 16.
+Because the tournament expanded from 32 to 48 teams, and the larger field needs an extra elimination round before the familiar knockout stages. The Round of 32 adds one more pressure point for group winners and gives strong third-place qualifiers a genuine chance to reshape the draw — which is also why the 2026 bracket tracks differently than older templates.
 
-### Where can I download a World Cup 2026 bracket PDF?
+### Where can I download a bracket template or printable PDF tracker?
 
-You can download the printable World Cup 2026 bracket tracker PDF from the asset section near the top of this page.
+From the asset section near the top of this page. There are two formats: a PNG bracket preview for quick scanning and sharing, and a printable PDF tracker designed for recording scores, winners, and office-pool notes. The PDF avoids official FIFA marks and uses neutral editorial labeling.
 
-### When can I fill out the official bracket?
+### When can I fill in the bracket?
 
-You can fill a prediction bracket before the tournament, but the official knockout bracket can only be filled after group-stage results determine placements.
+A prediction bracket can be filled before the tournament starts. The official knockout bracket, however, only becomes fillable once group-stage results fix each team's placement — a group winner, runner-up, or third-place qualifier can land on very different paths depending on the official allocation.
 
-### Is a bracket prediction betting advice?
+### Where do the matchups and scores on this page come from?
 
-No. Bracket predictions on this page are for entertainment purposes only, not betting advice.
+From the FIFA Official Bracket, which is attributed under every knockout table on this page. Group-stage placement context comes from the World Cup 2026 groups and standings article, because that page explains how each bracket slot was earned. Interpretive notes about path difficulty are editorial analysis, clearly separated from official tournament claims.
+
+### Is filling out a bracket the same as betting?
+
+No. Bracket predictions on this site are for entertainment and office-pool purposes, not betting advice, and prediction content is labeled accordingly. This page itself stays factual — match, date, venue, score, winner, and next path — so readers can keep the tracker, the picks, and the scoring method distinct.

@@ -158,30 +158,26 @@ Codex Harness 是 OpenAI 对 2026 年全行业都在问的一个问题的回答�
 
 ## 常见问题
 
-### Codex Harness 是 2026 年 8 月才新开源的吗？
-
-**Codex CLI 与核心 harness**自 2025 年起就在 GitHub 上。2026 年 8 月的公告是把**平台定位**正式化、将**app-server**文档化为集成目标、并突出企业嵌入案例——并不是首次开放源码。
-
 ### 不付钱给 OpenAI 也能运行 Codex Harness 吗？
 
-你可以在 Apache 2.0 下运行、修改甚至商业化**harness 代码**。但**模型推理**仍需要 OpenAI API 访问权限或符合条件的 Codex 订阅条款。仓库里没有开源的 GPT-5.6 权重。
+不能——开源的是 harness 代码，不是模型。你可以在 Apache 2.0 下运行、修改甚至商业化这套代码，但每一轮 Agent 交互都走 OpenAI 的模型与计费，推理仍需要 API Key 或符合条件的 Codex 订阅。仓库里没有任何开源的 GPT-5.6 权重。
 
-### Codex Harness 与 DeepSeek Harness 有什么不同？
+### 到底哪些开源了，哪些没有？
 
-Codex Harness 是 OpenAI **原生对接 Responses API**、面向 Codex 产品垂直集成的运行时。DeepSeek Harness 是基于 Cordis 内核构建的**插件化、模型无关**预览版（`dsh`）。两者的许可证、架构与厂商动机都不同。
+OpenAI 开放了 Codex CLI、`codex-rs` harness 核心、SDK、app-server、Codex Security CLI 以及 Skills/Plugins 仓库；**未开放**的是 IDE 扩展、Codex Cloud 托管服务与模型权重。权威清单在 developers.openai.com 上，代码采用 Apache 2.0——再分发前请在仓库内核实许可证。
 
-### Codex app-server 和 Codex SDK 有什么区别？
+### Codex Harness 是 2026 年 8 月才首次开源的吗？
 
-**SDK**封装了常见的编程式流程（启动、恢复、流式读取）。**app-server**通过 JSON-RPC 暴露完整的 Agent 生命周期——线程、轮次、事件、审批——供把 Agent 嵌入自家 UI 的产品使用（即 Relay 模式）。
+不是。Codex CLI 与核心 harness 自 2025 年起就在 GitHub 上；2026 年 8 月的公告是把平台定位正式化、把 app-server 文档化为集成目标。真正的新内容是「可嵌入的开放 Agent 运行时」的叙事、Relay 等示例应用与点名企业嵌入案例——而不是代码本身。
 
-### Floatboat 内部使用 Codex Harness 吗？
+### CLI、SDK、app-server 该怎么选？
 
-Floatboat 在日历驱动的 Agent 工作区中把 OpenAI 模型（含 GPT-5.6 分级）作为**内置模型**集成。它不要求你安装 Codex CLI；本文介绍的是 OpenAI 为构建周边工具或对比 Agent 技术栈的团队提供的开放运行时。
+当人类操作员或 CI 任务运行有边界的任务并随即退出时，用 `codex exec`。当你的后端代码需要启动、恢复或流式读取 Agent 任务时，用 SDK（`@openai/codex-sdk` 或 `openai-codex`）。当 Agent 要一直可见地出现在你的产品 UI 里、需要持久线程、流式事件与审批请求时，嵌入 app-server。多数团队先用 CLI 做原型，等工作流稳定后再升级到 SDK/app-server。
+
+### Codex Harness 与 DeepSeek Harness 有什么区别？
+
+Codex Harness 是 OpenAI 的纵向运行时，原生对接 Responses API，并与 OpenAI 订阅体系深度耦合。DeepSeek Harness（`dsh`）是基于 Cordis 内核构建的插件化、模型无关的 MIT 预览版。两者的许可证、架构与厂商动机都不同，不能互相替代。
 
 ### 像 `codex-harnesses` 这样的 GitHub 仓库是官方的吗？
 
-不是。名字里带 harness 的社区仓库通常是**项目脚手架**（`AGENTS.md`、hooks、脚本）。官方运行时是 GitHub 上的 `openai/codex`。
-
-### 应该嵌入 app-server，还是只用 Codex CLI？
-
-当人类操作员或 CI 任务运行有边界的任务并随即退出时，用**CLI**/`codex exec`。当 Agent **需要一直可见地出现在你的产品 UI 里**——客服控制台、运维看板、日历侧边栏——并且你需要流式部分输出加审批弹窗时，嵌入**app-server**。多数团队先用 CLI 做原型，等工作流稳定到可以交给非工程师后，再升级到 SDK/app-server。
+不是。名字里带 harness 的社区仓库通常是项目脚手架——`AGENTS.md`、hooks、脚本——并不是 OpenAI 的运行时。它们可以作为不错的起点，但受维护的官方代码在 GitHub 的 `openai/codex` 上，采用 Apache 2.0；拿不准时，请把任何 fork 与 §4 的组件清单做对比。

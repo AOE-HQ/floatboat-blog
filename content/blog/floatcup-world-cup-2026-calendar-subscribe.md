@@ -125,20 +125,6 @@ FloatCup is built for one job: make sure you never miss a kickoff across 39 days
 
 If you prefer a manual approach or want to compare options first, the ICS import guide walks through every platform step by step. Either path gets the full schedule into your calendar; FloatCup is the zero-maintenance option for readers who want the tournament to run in the background until July 19.
 
-## FAQ
-
-**Is FloatCup free?** Yes. The calendar subscription, match reminders, and automatic timezone handling are all free. Post-match recaps require a Floatboat account, which has a free tier.
-
-**Do I need to install Floatboat to use FloatCup?** No. The calendar subscription works independently with Google Calendar, Apple Calendar, or Outlook. You only need Floatboat if you want the post-match recap feature.
-
-**What happens if a match time changes?** FloatCup subscriptions update automatically. If FIFA moves a kickoff, the new time appears in your calendar without any action from you.
-
-**Can I subscribe only to specific teams' matches?** The base FloatCup subscription includes all 104 matches. Team-specific filtering is available for Floatboat users through Combo Skills like Team Tracker.
-
-**How do I unsubscribe after the tournament?** One click from the FloatCup page, or delete the calendar from your calendar app's settings. Either method removes all FloatCup events cleanly.
-
-**Does FloatCup work on mobile?** Yes. Because it uses your calendar's native subscription mechanism, the matches appear in your phone's calendar app — Google Calendar, Apple Calendar, or Outlook mobile — and sync across all your devices.
-
 ## Related Reading
 
   * How to Add World Cup 2026 to Google Calendar (ICS Guide) — manual ICS import for every platform
@@ -146,3 +132,29 @@ If you prefer a manual approach or want to compare options first, the ICS import
   * World Cup 2026 Schedule: Full Fixtures & Calendar Sync — the complete fixture list
 
   * World Cup 2026 Guide: Dates, Format, Hosts & FAQ — full tournament overview
+
+## FAQ
+
+### Is FloatCup free?
+
+Yes. The calendar subscription, all 104 matches, pre-match reminders, and automatic timezone conversion are free, and no account is required to subscribe. The optional post-match recap layer needs a Floatboat account with the Match Recap Combo Skill installed, and both sit on Floatboat's free tier. In practice you can run the entire World Cup experience without paying anything; recaps are the only add-on that requires a Floatboat login.
+
+### Do I need to install Floatboat to use FloatCup?
+
+No. The calendar subscription works independently with Google Calendar, Apple Calendar, Outlook, or any app that supports ICS subscriptions — no Floatboat account or installation involved. You only need Floatboat if you want post-match recaps delivered into your workspace. If you already use Floatboat, FloatCup also picks up your timezone and calendar preferences automatically.
+
+### What happens if a match time changes?
+
+Nothing is required from you. FloatCup is a live ICS subscription, not a static import: when FIFA publishes an official schedule update, Floatboat's backend refreshes the feed and every subscriber's calendar shows the new kickoff time automatically. This is exactly the maintenance advantage over a downloaded ICS file, which would only change if you deleted and re-imported it.
+
+### Can I subscribe only to certain teams' matches?
+
+The base FloatCup subscription includes all 104 matches — 72 group-stage and 32 knockout — and cannot be narrowed from the calendar side. Team-specific filtering is available for Floatboat users through Combo Skills like Team Tracker, which share the same skill architecture as Floatboat's professional skills. If you only want the calendar, one subscription covers the whole tournament, and every event is searchable by team name.
+
+### How do I unsubscribe after the tournament?
+
+One click from the FloatCup page ends the subscription and removes the events, or you can delete the calendar in your calendar app's settings — either method cleans out all FloatCup events. You may also keep the subscription as a record, though no further updates arrive after the final on July 19. Nothing requires ongoing management during the tournament itself.
+
+### Does FloatCup work on mobile?
+
+Yes. FloatCup uses your calendar app's native subscription mechanism rather than a separate app, so events appear in Google Calendar, Apple Calendar, or Outlook on your phone and sync across every device signed into the same calendar account. Because they are native calendar entries, you also get standard pre-match notifications, stage-based coloring where supported, and normal calendar search — without opening any other service.

@@ -107,18 +107,6 @@ The USMNT has a favorable group and a home-continent advantage. Paraguay, Austra
 
 A calendar subscription handles that automatically. Whether you use FloatCup for one-click setup or import an ICS file manually, the result is the same: every US match, every kickoff, correct in your time zone, with reminders that fire whether you remembered to check or not.
 
-## FAQ
-
-**What time do USA World Cup matches kick off?** All three USMNT group-stage matches kick off at 7:00 PM PDT (10:00 PM EDT / 9:00 PM CDT). Knockout match times depend on bracket placement and are announced as the tournament progresses.
-
-**Where are the USA World Cup matches being played?** Los Angeles (SoFi Stadium) hosts the Paraguay and Turkey matches. Seattle (Lumen Field) hosts the Australia match. Both are West Coast venues with Pacific Daylight Time kickoffs.
-
-**Why are USA matches so late on the East Coast?** FIFA schedules host-nation matches for primetime in the local market. Since all three US group-stage matches are on the West Coast, primetime in Los Angeles (7:00 PM PDT) is 10:00 PM on the East Coast.
-
-**How many matches are played in the United States?** 78 of the tournament's 104 matches, including every match from the quarterfinals onward. The US is the primary host nation.
-
-**How do I get reminders before USA matches?** Add the World Cup schedule to your calendar via FloatCup (free, one-click) or download an ICS file. Pre-match reminders at 30 minutes, 1 hour, or 3 hours before kickoff are included. Floatboat users can install the Match Reminder Combo Skill for workspace-integrated reminders and post-match recaps.
-
 ## Related Reading
 
   * World Cup 2026 Schedule: Full Fixtures & Calendar Sync — the complete 104-match fixture list
@@ -126,3 +114,29 @@ A calendar subscription handles that automatically. Whether you use FloatCup for
   * World Cup 2026 Guide: Dates, Format, Hosts & FAQ — full tournament overview
 
   * FloatCup: Subscribe to World Cup 2026 Calendar in One Click — auto-updating calendar with reminders
+
+## FAQ
+
+### What time do the USA World Cup matches kick off?
+
+All three USMNT group-stage matches kick off at 7:00 PM PDT, which is 10:00 PM EDT and 9:00 PM CDT: Paraguay on June 12, Australia on June 19, and Turkey on June 25. Knockout match times depend on bracket placement and are announced as the tournament progresses.
+
+### Where are the USA World Cup matches being played?
+
+Los Angeles (SoFi Stadium) hosts the Paraguay and Turkey matches; Seattle (Lumen Field) hosts the Australia match. Both are West Coast venues with Pacific Daylight Time kickoffs, and both are reachable by public transit. Fans planning to attend both cities can make a viable West Coast doubleheader with daily nonstop flights.
+
+### Why are the USA matches so late on the East Coast?
+
+FIFA schedules host-nation matches for primetime in the local market. Because all three US group-stage matches are on the West Coast, primetime in Los Angeles — 7:00 PM PDT — is 10:00 PM on the East Coast. For viewers in New York, Atlanta, or Miami, that means a late night; plan your caffeine accordingly.
+
+### How many matches is the United States hosting?
+
+78 of the tournament's 104 matches, including every match from the quarterfinals onward. That covers all US group matches and every US-hosted knockout game, with the semifinals in Dallas and Atlanta and the final at MetLife Stadium. The United States is the primary host nation.
+
+### Where will the USMNT play if it advances past the group stage?
+
+It depends on the group result. Win Group D and the Round of 32 runs through Los Angeles or Seattle, with the path able to stay on the West Coast through the quarterfinals. Finish second or advance as a third-place team, and the route shifts east — possibly Dallas, Atlanta, or further. Exact venues and times are confirmed as the tournament progresses.
+
+### How do I get reminders before the USA matches?
+
+Add the World Cup schedule to your calendar via FloatCup (free, one-click) or download an ICS file. Pre-match reminders at 30 minutes, 1 hour, or 3 hours before kickoff are included. Floatboat users can also install the Match Reminder Combo Skill for workspace-integrated reminders and post-match recaps.

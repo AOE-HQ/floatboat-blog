@@ -102,22 +102,26 @@ Apple 的日历里没有内置任务系统。它跟独立的提醒事项 App（R
 
 ## 常见问题
 
-### Google Calendar 和 Apple Calendar 有什么区别？
+### 单人工作到底该选 Google Calendar 还是 Apple Calendar？
 
-Google Calendar 是 Google Workspace 里的网页优先排程工具——全平台通用，强项在协作：共享、权限、[Google Meet 集成](<https://support.google.com/calendar/answer/72143?hl=en>)以及 Gmail 对事件的自动识别。Apple Calendar 是为 iCloud 生态优化的原生 App，带 Siri 集成与 Apple Intelligence 端侧处理。核心差别不在功能，而在生态：Google 为跨平台协调而生，Apple 为无缝的设备原生使用而生。
+取决于你的工作住在哪里，而不是功能清单。靠 Google Workspace（Gmail、Docs、Meet）经营业务，Google Calendar 是显而易见的选择；深处 Apple 生态、日程以个人或小团队为主，Apple Calendar 更自然，还带 Siri 语音与端侧处理。也有不少人两者并用：工作日程放 Google，设备上由 Apple Calendar 自动收进来。
 
 ### 能同时用 Google Calendar 和 Apple Calendar 吗？
 
-能，而且很多人就这么用。最简单的办法是把 Google 账号加进 iPhone 或 Mac 的日历设置——Google 事件会自动出现在 Apple Calendar 里。反方向则需要通过公开 webcal URL 订阅，得到的是单向、只读的视图。要完整的双向同步，得用第三方工具。细节随时会变，配置前请先查两边最新的官方文档。
+能，而且这是很多人真实的使用方式：在 iPhone 或 Mac 的设置里添加 Google 账号（设置 → 日历 → 账户 → 添加账户 → Google），Google 事件会自动出现在 Apple Calendar，两边都能新建。反方向则需公开 webcal 订阅，Google 侧只读且更新有延迟；想要真正双向同步，得靠第三方工具。
 
-### 同步日历前，用户该检查什么？
+### 同步日历前需要检查什么？
 
-确认哪个日历是新事件的默认日历——免得连建好几天才发现事件落进了错误的账号。还要知道：iCloud 经 webcal URL 同步到 Google 是单向的，而且可能有延迟。先建几条假事件做测试，再拿真实日程去信它。这些行为会随 OS 版本而变化，请以 Apple 与 Google 两边最新官方文档为准。
+先确认哪个日历是新事件的默认日历——有人一连几周把事件建到错误日历都没发现。还要知道：iCloud 经 webcal 同步到 Google 是单向的，更新可能要等几小时而不是几秒。先用几条假事件做测试，再拿真实日程去信它。各 OS 版本行为可能不同，请以 Apple 与 Google 双方最新官方文档为准。
 
-### 什么时候 Google Calendar 更适合工作？
+### 共享和任务管理，哪个日历更强？
 
-当你的工作要跟 Apple 生态之外的人协调、当你依赖 Gmail 和 Meet 这类 Google Workspace 工具、或当你要把日历共享给使用不同设备的客户时。如果你希望排程旁边直接有内置任务管理——尤其是现在 Google Tasks 可以直接按时间块排上日历——它也是更强的选择。
+共享与任务上 Google Calendar 都更强：可按人共享、设置只读或完全编辑的细粒度权限，对方只需一个 Google 账号，跨平台协作就顺滑得多；Google Tasks 也在侧栏可用，2025 年底起还能把任务按时间块直接排上日历。Apple 日历只能搭配独立的提醒事项 App——功能扎实，却不长在日历视图里。
 
-### 什么时候 Apple Calendar 更合适？
+### 日历提醒真的能把工作往前推吗？
 
-当你全套设备都是 Apple、日程主要是个人或小团队用途，又看重速度、干净设计与 Siri 语音输入时。如果你在意端侧处理与隐私——Apple Intelligence 在本地处理事件建议——Apple Calendar 同样值得选。如果你不需要重度协作，又希望日历用起来像手机的自然延伸，它能做得很好。
+光靠提醒不行。两套日历都极其擅长告诉你"接下来是什么"——彩色事件、弹窗提醒、智能建议——但排满的日历不等于进展：会开了、提醒响了，跟进、准备和执行仍然落在你头上。日历告诉你"什么时候"，它不替你干活。从"日程井井有条"到"工作真的在推进"之间的空当，正是单人工作流崩坏的地方。
+
+### 日历排满但工作没进展时，该怎么办？
+
+与其再找一套更好看的提醒系统，不如想想日历之上要不要加一层"执行层"。日历握着承诺——会议、截止日、跟进；Floatboat 这类工具排在日历后面：不用你开口就备好会议 brief、根据上下文生成跟进草稿、把重复性工作循环自动跑起来而不必每周重建。日历继续用，你要加的是真正把下一步做掉的东西。

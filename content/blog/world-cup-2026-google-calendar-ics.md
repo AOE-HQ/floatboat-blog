@@ -141,6 +141,14 @@ If you want zero upkeep, a calendar subscription is the cleaner path. FloatCup i
 
 Either way, create a dedicated “World Cup 2026” calendar layer before you import or subscribe. It keeps the tournament separate from work meetings and makes cleanup after the final a one-step action instead of a manual deletion project.
 
+## Related Reading
+
+  * [World Cup 2026 Schedule: Full Fixtures & Calendar Sync](</blog/world-cup-2026-schedule>) — the complete fixture list and calendar context.
+
+  * [FloatCup: Subscribe to the World Cup 2026 Calendar in One Click](</blog/floatcup-world-cup-2026-calendar-subscribe>) — the zero-setup calendar subscription option.
+
+  * [USA World Cup 2026 Schedule: Match Times & Reminders](</blog/world-cup-2026-schedule-usa>) — USMNT kickoff times and reminder setup.
+
 ## FAQ
 
 ### Does importing an ICS file add all 104 matches at once?
@@ -166,11 +174,3 @@ If you imported into a dedicated calendar, delete that calendar layer in one ste
 ### Is an ICS subscription better than downloading an ICS file?
 
 An ICS subscription is better if the provider keeps the feed updated. A downloaded file is simpler and gives you a local copy, but it is static after import. A subscription is more useful for tournaments where kickoff times can change.
-
-## Related Reading
-
-  * [World Cup 2026 Schedule: Full Fixtures & Calendar Sync](</blog/world-cup-2026-schedule>) — the complete fixture list and calendar context.
-
-  * [FloatCup: Subscribe to the World Cup 2026 Calendar in One Click](</blog/floatcup-world-cup-2026-calendar-subscribe>) — the zero-setup calendar subscription option.
-
-  * [USA World Cup 2026 Schedule: Match Times & Reminders](</blog/world-cup-2026-schedule-usa>) — USMNT kickoff times and reminder setup.

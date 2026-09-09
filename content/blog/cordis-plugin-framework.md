@@ -111,7 +111,7 @@ Through ctx.effect. Every side-effect-producing call returns a cleanup function,
 
 ### What are the four preset modes in DeepSeek Harness?
 
-Standard (full coding agent), Code (model-generated code orchestrates tool calls), Minimal (only bash and a file editor — the configuration used for DeepSeek's own official benchmarks), and Creator (for building custom presets with runtime inspection).
+DeepSeek ships four presets. Standard is the full coding agent with filesystem, shell, web search, subagents, and plan mode. Code lets model-generated code orchestrate multiple tool-call rounds. Minimal — only bash and a file editor — is the configuration DeepSeek used for its own official benchmarks. Creator is for building custom presets with runtime inspection and preset-authoring guidance.
 
 ### Why does reversibility matter for AI agents specifically?
 

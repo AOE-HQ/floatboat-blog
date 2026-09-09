@@ -98,30 +98,6 @@ For solo operators, that system usually means having clear stopping criteria —
 
 ![4.png](/blog/images/openai-4-day-work-week-one-person-company/1776318618663-89d3436c-4532-4f5b-8570-fb8748c29821.png)
 
-## FAQ About OpenAI's 4-Day Work Week
-
-### Is a 4-Day Work Week Realistic for Solo Founders?
-
-Maybe, but probably not in the way OpenAI describes. The proposal is about government-subsidized employer pilots. That framework doesn't apply to solo operators in any direct sense.
-
-What does apply: the underlying premise that **AI productivity gains can translate into fewer hours worked for the same output** is real and testable at the individual level. I've tested it imperfectly. The honest answer is: it depends heavily on what kind of work you do and how well you've built your workflows. Research-heavy, writing-heavy, analysis-heavy work — yes, AI helps significantly. Client-facing, relationship-driven, creative work — less so, and the efficiency gains are harder to measure.
-
-### Does AI Actually Reduce Work Hours?
-
-Research from [CNBC's coverage of 4-day week studies](<https://www.cnbc.com/2025/07/24/the-most-surprising-benefits-of-a-4-day-workweek-from-researcher-whos-studied-thousands-of-cases.html>) found that self-reported productivity bumped up significantly for workers, and crucially, people weren't just working harder on four days — the change came from company-wide reorganization of how work happens.
-
-For solo founders using AI: the short answer is yes, with a catch. AI reduces time on specific tasks. Whether that translates to fewer total hours depends on whether you consciously reclaim those hours or simply fill them with more work. Most people fill them with more work. I did, initially.
-
-### What Tools Enable This Shift?
-
-This is where I've been spending my attention lately. The tools that help most aren't the flashiest — they're the ones that fit into existing workflows without requiring you to rebuild everything.
-
-For workflow-level AI, I've been exploring [Floatboat AI](</>), which takes a different approach from standard AI chat tools. Its Combo Skills feature chains AI capabilities — reading files, analyzing content, generating structured output — into repeatable workflows rather than one-off prompts. The practical difference: once you build the workflow, you're not re-prompting from scratch every time. That's where the real time savings compound.
-
-For research and writing, the tools that help most are the ones that reduce the switching cost between tasks — reading, organizing, drafting — rather than just speeding up any single step.
-
-One thing I'll say clearly: no tool removes the need to evaluate what the AI produces. That judgment layer is still yours, and probably always will be.
-
 ![5.png](/blog/images/openai-4-day-work-week-one-person-company/1776318627488-fbaa7f4b-123f-43d8-bb6d-169c2ca66d65.png)
 
 The OpenAI four-day work week proposal is interesting as a policy signal — it tells you something about how the company sees AI disruption unfolding. But for someone running a one-person operation, the more useful frame is simpler: **AI gives you capacity. What you do with that capacity is a choice, not an automatic outcome.**
@@ -139,3 +115,29 @@ The four-day week is a nice idea. The more achievable version, for people like m
   * [Explore the difference between AI assistants and real AI agents](</blog/ai-agent-vs-ai-assistant>)
 
   * [Go deeper into what a persistent AI agent means for long-term productivity](</blog/what-is-persistent-ai-agent>)
+
+## FAQ
+
+### Is a four-day work week realistic for solo founders?
+
+Maybe, but probably not the way OpenAI describes. The proposal covers government-subsidized employer pilots, a framework that doesn't directly apply to solo operators. What does apply is the underlying premise: AI productivity gains can translate into fewer hours for the same output, and that is testable at the individual level. It depends heavily on your work type and how well your workflows are built — research- and writing-heavy work benefits most; client-facing, relationship-driven work less so.
+
+### What exactly is OpenAI proposing with the four-day work week?
+
+On April 6, 2026, OpenAI published "Industrial Policy for the Intelligence Age," calling for government-backed experiments with 32-hour work weeks that keep current pay. It frames reduced hours as an efficiency dividend — letting AI-driven productivity gains come back to workers as time rather than flowing only into corporate margins. The four-day proposal is part of a wider package that also includes a robot tax, a public wealth fund, and automatic safety-net triggers.
+
+### What does the four-day week debate have to do with one-person companies?
+
+As labor policy it doesn't apply to solo operators — there's no employer to negotiate with. It matters as a signal: the wider economy is starting to ask a question solo operators already experiment with daily — what happens when one person's work capacity expands sharply? AI handles research synthesis, first drafts, and scheduling; what remains is the judgment layer, deciding what matters and evaluating what AI produced.
+
+### Does AI actually reduce work hours?
+
+Yes, with a catch. AI reduces time on specific tasks, and four-day-week studies found the gains came from reorganizing how work happens rather than working harder in fewer hours. Whether fewer task-hours become fewer total hours depends on whether you consciously reclaim them. Most people fill freed time with more work — including, at first, me.
+
+### Why can AI leave solo founders more tired instead of less?
+
+Because AI can expand your capacity but it can't create boundaries for you. When you're the only person in a business, there's no organizational slack to absorb overload, so AI-freed time often gets filled with more projects — leaving you more tired, not less. The tool doesn't create sustainability; the system does: clear stopping criteria, and not treating saved time as a license to take on more.
+
+### What tools actually enable this shift?
+
+The tools that help most aren't the flashiest — they fit existing workflows without a rebuild. For workflow-level AI, Floatboat's Combo Skills chains reading, analysis, and structured output into repeatable workflows instead of one-off prompts, so you don't redo the setup each time. Research and writing tools help most when they cut switching costs between reading, organizing, and drafting. No tool removes your judgment layer.

@@ -128,24 +128,6 @@ I want to be careful not to overstate this: **GPT​ Image 2 doesn't replace a s
 
   * You have a strong personal storyboard style you want to preserve — the model gives you _a_ clean look, not _your_ look
 
-## FAQ
-
-**Does it work for vertical/9:16 video boards?**
-
-Yes. Aspect ratios stretch from 3:1 to 1:3. Vertical works fine.
-
-**Do I need Plus to do this seriously?**
-
-For storyboarding, basically yes. Thinking mode and 8-image batches sit on Plus and above. Free-tier Instant mode handles single frames but loses the continuity advantage that makes this useful. [DataCamp's review](<https://www.datacamp.com/blog/chatgpt-images-2-0>) lays out the tier split clearly.
-
-**How much does the ​API** ​**​ actually cost per frame?**
-
-Independent reviews put per-image API cost at roughly $0.04–$0.35 depending on resolution and prompt complexity. For a 24-frame board through the API, ballpark is $5–$8.
-
-**Can I use the boards commercially?**
-
-Check OpenAI's current usage policy directly — outputs are generally usable commercially, but specifics around brand and likeness rights change. Not legal advice, just check before you ship.
-
 That's where I am with this. I'm not going to fire my future storyboard artist; I am going to stop pretending I don't have time to board my own short videos. **The tool isn't replacing the craft. It's removing the excuse.**
 
 When you need this, you'll know.
@@ -161,3 +143,23 @@ When you need this, you'll know.
   * [Explore real AI agent use cases across content, automation, and production workflows](</blog/ai-agent-use-cases-real-examples>)
 
   * [Discover how to scale a one-person business without hiring by systemizing your work](</blog/scale-one-person-business-without-hiring>)
+
+## FAQ
+
+### Can GPT Image 2 keep a character consistent across 20+ frames?
+With the right method, yes. Generate a character reference sheet — three angles of the same person — save it, and repeat a one-line identity string in every prompt. A style anchor like "black and white storyboard frame, light pencil shading" held up across all 24 frames in my test. The honest limit: past roughly frame 15, faces start to drift subtly even with references, so plan for a manual retouch or two.
+
+### What's the right workflow for building a storyboard solo?
+Plan first, generate second. Write the shot list yourself — shot number, location, action, camera angle — in a spreadsheet; the model executes a plan, it doesn't write one. Then generate an establishing frame and walk the sequence forward one edit per turn, changing a single variable at a time. That iteration is what keeps a 24-frame board coherent.
+
+### Do I need a paid Plus plan to storyboard seriously?
+For storyboarding, basically yes. Thinking mode and eight-image batch generation — the features that carry character continuity across a sequence — sit on Plus ($20/month) and above; the free tier only gets Instant mode, which handles single frames but loses that continuity advantage. Thinking mode also adds 15–30 seconds of latency per call, which is fine for drafting.
+
+### What can it still not do for storyboards?
+Three areas from my tests. Lens language is approximate — asking for "85mm, rack focus" returns something vaguely right, not accurate compression or focal falloff, so a cinematographer can't plan moves from it. Micro-action continuity between consecutive mid-motion frames drifts. And two-character dynamic scenes fall apart by frame four, with characters shifting sides. Board the key beats instead of the in-between frames.
+
+### Is it cheaper than hiring a storyboard artist?
+Almost always — and that's the honest framing. A freelancer runs roughly $10–$25 per frame at entry level and $40–$100 at professional level, so a 24-frame board costs $240–$600 at the cheap end and up to $2,500 at studio grade. GPT Image 2 is your existing $20/month subscription plus about three hours of your time.
+
+### Will GPT Image 2 replace a storyboard artist?
+Not for film or commercial production. What it replaces is not having a storyboard at all because you couldn't afford one — a different value proposition, and the one that matters most for solo operators. For a board that goes to a real production crew, the human artist is still the right answer.

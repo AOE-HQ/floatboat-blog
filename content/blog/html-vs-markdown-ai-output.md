@@ -98,29 +98,7 @@ The default I've landed on: ​**draft and iterate in ​Markdown** ​, then co
 
 ![4.png](/blog/images/html-vs-markdown-ai-output/1779257727850-b81e9a55-b5e0-455f-b979-9c3e45cc7d9d.png)
 
-## FAQ
-
-### Is HTML better than Markdown for AI output?
-
-Neither is universally better. HTML is better when the output needs visual hierarchy, interactivity, or platform-independent styling — reports, reviews, dashboards, prototypes. Markdown is better when the output needs to be lightweight, editable, version-controlled, or machine-consumed. The question isn't which format is superior. It's which format serves the job.
-
-### When should agents still use Markdown?
-
-When the output feeds back into a system rather than being read by a human. Agent-to-agent workflows, Git-tracked documentation, config files, internal notes, and anything that will be hand-edited after generation. Markdown's token efficiency and diff-friendliness make it the right tool for these jobs.
-
-### Does HTML cost more tokens than Markdown?
-
-Generally yes, because of the added structure and styling tags. The gap is small for short outputs and grows with document complexity. I'd recommend running the same prompt in both formats and checking token counts in your model's usage dashboard rather than relying on generalized estimates. The exact ratio depends on how much visual structure the HTML needs.
-
 ![5.png](/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.png)
-
-### Can AI generate both Markdown and HTML in one workflow?
-
-Yes — and this is the hybrid approach I'd recommend. Draft in Markdown during the thinking and iteration phase, then ask the agent to convert or regenerate as HTML when the output needs to be delivered, presented, or shared. Most capable models handle this conversion well. The rule I use: **Markdown for process, HTML for delivery.**
-
-### What about workspace tools like Claude Artifacts or ChatGPT Canvas?
-
-Both make AI-generated HTML more accessible — Artifacts renders HTML directly in the [Claude interface](<https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them>), and Canvas provides a side-panel editing workspace. They lower the barrier to working with HTML output. But they have real limits worth knowing: outputs are session-bound and not always easy to take with you across platforms. Template and reuse capabilities are limited compared to local tools or custom workflows. They're great for single-session work; they're less great for repeatable, cross-platform publishing. That trade-off fits the broader pattern of this article — the right tool depends on the workflow, not the format in isolation.
 
 That's the framework. It's not complicated, but it took me a while to land on something this clear. The real difference isn't HTML vs Markdown — it's knowing which one matches the job you're doing right now. That one small piece figured out.
 
@@ -133,3 +111,29 @@ That's the framework. It's not complicated, but it took me a while to land on so
 • [Workspace Agents vs Chat Assistants: Why the Difference Matters](</blog/workspace-agents-vs-chat-assistants>) — The jump from chat responses to reusable work artifacts changes how AI output gets used.
 
 • [AI Workspace Agents: Why Solo Operators Need More Than Chat Windows](</blog/ai-workspace-agents>) — Rich AI output starts making more sense once the workspace itself becomes part of the workflow.
+
+## FAQ
+
+### Is HTML better than Markdown for AI output?
+
+Neither is universally better — it depends on the job. Choose HTML when humans need to inspect, compare, or interact with the output: reports, reviews, dashboards, prototypes, and shareable artifacts with styling and navigation. Choose Markdown when the output gets edited, versioned, kept internal, or consumed by another AI — it's lighter, cheaper, and diff-friendly. Ask what the output is for, not which format is trendier this month.
+
+### When should agents still use Markdown?
+
+When the output feeds back into a system rather than being read by a human. Agent-to-agent workflows, Git-tracked documentation, config files, internal notes, and anything that will be hand-edited after generation. Markdown's token efficiency and diff-friendliness make it the right tool for these jobs.
+
+### Does HTML cost more tokens than Markdown?
+
+Generally yes, because of the added structure and styling tags. The gap is small for short outputs and grows with document complexity. I'd recommend running the same prompt in both formats and checking token counts in your model's usage dashboard rather than relying on generalized estimates. The exact ratio depends on how much visual structure the HTML needs.
+
+### Which format is easier to maintain after generation?
+
+Markdown, if you'll keep editing the output. It's plain text you can revise in any editor, and its diffs stay clean and readable in version control. HTML files — especially ones with embedded CSS — are harder to tweak without breaking the layout. That's why the pattern I recommend is to draft and iterate in Markdown, then convert to HTML once the output is a finished deliverable.
+
+### Can AI generate both Markdown and HTML in one workflow?
+
+Yes — and this is the hybrid approach I'd recommend. Draft in Markdown during the thinking and iteration phase, then ask the agent to convert or regenerate as HTML when the output needs to be delivered, presented, or shared. Most capable models handle this conversion well. The rule I use: Markdown for process, HTML for delivery.
+
+### What about workspace tools like Claude Artifacts or ChatGPT Canvas?
+
+Both make AI-generated HTML more accessible — Artifacts renders HTML directly in the Claude interface, and Canvas provides a side-panel editing workspace. They lower the barrier, but they have real limits: outputs are session-bound, not always easy to carry across platforms, and weaker at templating and reuse than local tools or custom workflows. Great for single-session work; less great for repeatable, cross-platform publishing.

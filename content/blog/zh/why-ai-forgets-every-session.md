@@ -142,7 +142,7 @@ _以上基于我独自运营内容业务的亲身体验，以及我对 AI 记忆
 
 ### 是不是每款 AI 工具都会在会话之间忘掉我？
 
-多数聊天式 AI 工具在设计上就是无状态的——每开一个新会话都不会记得上一个会话。一些平台已经加了记忆功能（Claude、ChatGPT、Gemini 都有各自的版本），但深度和可靠性差异很大。正如 [Tacnode 关于有状态与无状态 AI Agent 的架构指南](<https://tacnode.io/post/stateful-vs-stateless-ai-agents-practical-architecture-guide-for-developers>)所说，多数「带记忆的 AI 工具」其实是无状态模型在外面加了一层记忆层——它们并不是天生有状态。在假设某个记忆功能能解决你的问题之前，值得先弄懂这个区别。
+多数聊天式 AI 工具在设计上就是无状态的——每开一个新会话都不会记得上一个。一些平台已加记忆功能（Claude、ChatGPT、Gemini 都有），但深度与可靠性参差不齐。正如 [Tacnode 的架构指南](<https://tacnode.io/post/stateful-vs-stateless-ai-agents-practical-architecture-guide-for-developers>)所说，多数「带记忆的 AI 工具」其实是无状态模型外加一层记忆层，并非天生有状态——先弄懂这个区别，再假设某个记忆功能能解决你的问题。
 
 ### 这不是上下文窗口该干的活吗？
 

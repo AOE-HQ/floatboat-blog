@@ -177,3 +177,29 @@ That's where I am with the category today. It's still early, the edges are fuzzy
   * [AI Workflow for Solo Founders: Where Context Switching Actually Hurts](</blog/ai-workflow-for-solo-founders>)
 
   * [How One-Person Businesses Start Working Like a Team With AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+
+## FAQ
+
+### What exactly is an AI workspace agent?
+
+An AI workspace agent is software that works like a coworker living inside your actual work environment — your files, apps, and browser — taking multi-step actions and carrying context across sessions. "Workspace" means it operates where your work already lives; "agent" means it doesn't just answer questions but reads files, opens apps, and gets things done on your behalf. The specifics vary by product because the category is still forming.
+
+### How is a workspace agent different from a chatbot like ChatGPT?
+
+Chat assistants are conversation-shaped: you bring a question, they bring an answer, and the context dies when the tab closes. Workspace agents are environment-shaped: they operate on your files directly, remember what happened last Tuesday, and carry intent across steps. The line is blurring as chat products add connectors and desktop agents grow chat capabilities, but the direction each starts from is different.
+
+### How is a workspace agent different from a workflow builder like Zapier?
+
+Workflow builders are pre-defined: you draw the flowchart, set the triggers, and X triggers Y then Z reliably every time. Workspace agents work the opposite way — you describe the outcome and the agent figures out the sequence itself. A Zap always does the exact same thing, which is great for repeated, predictable work; agents are better when the shape of the task itself keeps changing.
+
+### Who is a workspace agent for, and who doesn't need one?
+
+They're aimed at solo operators doing multi-role work and independent consultants running several parallel projects — anyone paying a context-switching tax between tools. You probably don't need one if your work is one narrow task, if your workflows are stable and repeated, if you're on a large team with established tooling, or if you're new to AI (start with a chat assistant instead).
+
+### What are the main limitations right now?
+
+Reliability on long tasks: beyond 3–5 steps agents drift and need babysitting. Permissions and security are immature for a tool with file and browser access. Pricing is opaque, with credit and token systems. And interoperability is poor: skills built in one tool don't transfer, so you're locked into an ecosystem. None are necessarily dealbreakers, but they're worth knowing upfront.
+
+### How do I decide whether to adopt a workspace agent?
+
+Answer three questions first: what specific workflow are you trying to improve; is your work more repeated (use a workflow builder) or more varied and context-heavy (use an agent); and are you comfortable giving the tool real access to your files and apps? If you have clear answers to all three, a thirty-minute trial is probably worthwhile.
