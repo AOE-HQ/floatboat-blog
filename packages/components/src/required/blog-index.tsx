@@ -77,7 +77,7 @@ export function BlogIndex({
           {config.site.name}
         </p>
         <h1
-          className={`mt-4 text-4xl font-semibold tracking-tight ${obText} sm:text-5xl lg:text-6xl lg:leading-[1.05]`}
+          className={`mt-4 font-serif text-4xl font-normal leading-[1.1] tracking-tight ${obText} sm:text-5xl lg:text-6xl lg:leading-[1.05]`}
         >
           {copy.title}
         </h1>
@@ -99,7 +99,7 @@ export function BlogIndex({
                   key={category.slug}
                   href={site.categoryPath(category.slug)}
                   className={cn(
-                    "rounded-full border px-4 py-2 text-sm transition",
+                    "rounded-full border px-4 py-2 text-sm font-medium transition",
                     obBorder,
                     obText,
                     obHoverBorder,
@@ -152,7 +152,7 @@ export function BlogIndex({
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <h3 className={`text-lg font-semibold tracking-tight ${obText}`}>
+                      <h3 className={`font-serif text-lg font-medium tracking-tight ${obText}`}>
                         <Link
                           href={site.categoryPath(category.slug)}
                           className="transition hover:text-[var(--ob-color-accent)]"

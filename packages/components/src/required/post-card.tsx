@@ -71,7 +71,7 @@ export function PostCard({
           <time dateTime={post.date}>{formatPostDate(post.date)}</time>
         </div>
         <h2
-          className={`mt-3 text-xl font-semibold tracking-tight ${obText} sm:text-[1.35rem]`}
+          className={`mt-3 font-serif text-xl font-medium tracking-tight ${obText} sm:text-[1.35rem]`}
         >
           <Link
             href={site.postPath(post.slug)}

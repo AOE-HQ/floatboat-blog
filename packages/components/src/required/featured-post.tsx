@@ -64,7 +64,7 @@ export function FeaturedPost({ post }: { post: PostMeta }) {
             <time dateTime={post.date}>{formatPostDate(post.date)}</time>
           </div>
           <h2
-            className={`mt-4 max-w-2xl text-3xl font-semibold tracking-tight ${obText} sm:text-4xl lg:text-[2.5rem] lg:leading-[1.15]`}
+            className={`mt-4 max-w-2xl font-serif text-3xl font-normal leading-[1.15] tracking-tight ${obText} sm:text-4xl lg:text-[2.5rem] lg:leading-[1.15]`}
           >
             <Link
               href={site.postPath(post.slug)}

@@ -40,7 +40,7 @@ export function TaxonomyArchive({
         <span>{name}</span>
       </nav>
       <header className="mt-6 max-w-3xl">
-        <h1 className={`text-4xl font-semibold tracking-tight ${obText}`}>
+        <h1 className={`font-serif text-4xl font-normal leading-[1.15] tracking-tight ${obText}`}>
           {name}
         </h1>
         <p className={`mt-3 text-lg ${obMuted}`}>

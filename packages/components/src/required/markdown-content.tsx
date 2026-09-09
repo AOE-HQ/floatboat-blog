@@ -37,7 +37,7 @@ export function MarkdownContent({ content, className }: MarkdownContentProps) {
           <h2
             id={id}
             className={cn(
-              "scroll-mt-24 mb-4 mt-10 text-2xl font-semibold tracking-tight",
+              "scroll-mt-24 mb-4 mt-10 font-serif text-[1.875rem] font-normal leading-[1.2] tracking-tight sm:text-[2.625rem]",
               obText,
             )}
             {...props}
@@ -51,7 +51,10 @@ export function MarkdownContent({ content, className }: MarkdownContentProps) {
         return (
           <h3
             id={id}
-            className={cn("scroll-mt-24 mb-3 mt-8 text-xl font-semibold", obText)}
+            className={cn(
+              "scroll-mt-24 mb-3 mt-8 font-serif text-xl font-normal leading-[1.2] tracking-tight sm:text-2xl",
+              obText,
+            )}
             {...props}
           >
             {title}
@@ -71,18 +74,24 @@ export function MarkdownContent({ content, className }: MarkdownContentProps) {
         }
 
         return (
-          <p className={cn("mb-4 text-[1.05rem] leading-7", obText)} {...props}>
+          <p className={cn("mb-4 text-[1.0625rem] leading-[1.8]", obText)} {...props}>
             {children}
           </p>
         );
       },
       ul: ({ children, ...props }: React.ComponentPropsWithoutRef<"ul">) => (
-        <ul className={cn("mb-4 list-disc space-y-2 pl-6", obText)} {...props}>
+        <ul
+          className={cn("mb-4 list-disc space-y-2 pl-6 text-[1.0625rem] leading-[1.8]", obText)}
+          {...props}
+        >
           {children}
         </ul>
       ),
       ol: ({ children, ...props }: React.ComponentPropsWithoutRef<"ol">) => (
-        <ol className={cn("mb-4 list-decimal space-y-2 pl-6", obText)} {...props}>
+        <ol
+          className={cn("mb-4 list-decimal space-y-2 pl-6 text-[1.0625rem] leading-[1.8]", obText)}
+          {...props}
+        >
           {children}
         </ol>
       ),
@@ -133,7 +142,7 @@ export function MarkdownContent({ content, className }: MarkdownContentProps) {
       }: React.ComponentPropsWithoutRef<"blockquote">) => (
         <blockquote
           className={cn(
-            "my-6 border-l-4 border-[var(--ob-color-border)] pl-4",
+            "my-6 border-l-4 border-[var(--ob-color-border)] pl-4 text-[1.0625rem] leading-[1.8]",
             obMuted,
           )}
           {...props}

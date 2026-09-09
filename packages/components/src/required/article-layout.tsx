@@ -105,7 +105,7 @@ export function ArticleLayout({
             className={
               showCover
                 ? "grid gap-8 lg:grid-cols-2 lg:items-start"
-                : "max-w-3xl"
+                : "max-w-[720px]"
             }
           >
             <div className="min-w-0">
@@ -155,7 +155,7 @@ export function ArticleLayout({
             </div>
           ) : null}
 
-          <div className="min-w-0">
+          <div className="min-w-0 max-w-[720px]">
             {optional.tldr && post.tldr ? (
               <TldrBlock {...post.tldr} locale={locale} />
             ) : null}
