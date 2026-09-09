@@ -4,6 +4,7 @@ description: "Vibe Coding 一时快，出了乱子没人收拾。对单人开发
 slug: "ai-agent-workflow-vibe-coding"
 date: "2026-04-20"
 author: "Nova"
+category: "AI Agents"
 tags: ["AI Agent", "Vibe Coding", "Agent 工作流", "AITDD"]
 cover: "/blog/images/ai-agent-workflow-vibe-coding/1776651617043-2a925e03-5c61-429e-9390-e2c4cdf103db.png"
 locale: "zh"

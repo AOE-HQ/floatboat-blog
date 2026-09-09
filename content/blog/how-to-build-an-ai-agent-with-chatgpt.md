@@ -4,6 +4,7 @@ description: "How to build an ai agent with chatgpt works best when the workflow
 slug: "how-to-build-an-ai-agent-with-chatgpt"
 date: "2026-05-19"
 author: "Nova"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182678556-ccbcfcb2-5c42-46b8-a82e-7d13e9ec7fa7.png"
 locale: "en"

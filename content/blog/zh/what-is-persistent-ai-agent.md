@@ -4,6 +4,7 @@ description: "持久化 AI Agent 不会因为会话结束就把你忘掉。本�
 slug: "what-is-persistent-ai-agent"
 date: "2026-04-08"
 author: "Nova"
+category: "AI Agents"
 tags: ["持久化 AI Agent", "AI Agent", "记忆"]
 cover: "/blog/images/what-is-persistent-ai-agent/1775615255707-60dd9542-8790-42c6-af6d-2abefa791147.PNG"
 locale: "zh"

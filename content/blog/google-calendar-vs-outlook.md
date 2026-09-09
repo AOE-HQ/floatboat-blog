@@ -4,6 +4,7 @@ description: "Google Calendar vs Outlook depends on your work ecosystem, sharing
 slug: "google-calendar-vs-outlook"
 date: "2026-05-29"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/google-calendar-vs-outlook/1780019763142-4fd5794e-0b22-43f2-a03a-588d462f70c5.PNG"
 locale: "en"

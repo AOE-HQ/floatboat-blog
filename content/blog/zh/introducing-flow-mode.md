@@ -4,6 +4,7 @@ description: "Floatboat Flow Mode 让语音、手改与 Agent 协作发生在同
 slug: "introducing-flow-mode"
 date: "2026-08-19"
 author: "Remy"
+category: "Product Updates"
 tags: ["Flow Mode", "语音口述", "Floatboat"]
 cover: "/blog/images/introducing-flow-mode/1787110344906-2931cdb2-0395-4367-927b-41b769591fc0.png"
 locale: "zh"

@@ -4,6 +4,7 @@ description: "用 ChatGPT 构建 AI Agent 的正确方法：不写一行代码�
 slug: "how-to-build-an-ai-agent-with-chatgpt"
 date: "2026-05-19"
 author: "Nova"
+category: "AI Agents"
 tags: ["ChatGPT", "Custom GPT", "AI Agent", "无代码"]
 cover: "/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182678556-ccbcfcb2-5c42-46b8-a82e-7d13e9ec7fa7.png"
 locale: "zh"

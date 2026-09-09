@@ -4,6 +4,7 @@ description: "2026 年怎么选 AI Agent 平台（AI Agent Platform）？取决�
 slug: "best-ai-agent-platform-2026"
 date: "2026-05-15"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["AI Agent 平台", "Agent 开发", "无代码 Agent", "单人经营者"]
 cover: "/blog/images/best-ai-agent-platform-2026/1778827146133-71511ef0-ae66-4d3d-847b-0798fbe12bf9.PNG"
 locale: "zh"

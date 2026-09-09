@@ -4,6 +4,7 @@ description: "Grok 3 API is now open source. Here's what the pricing, free tier,
 slug: "grok-3-api-solo-operator"
 date: "2026-04-23"
 author: "Nova"
+category: "Model & Benchmarks"
 tags: ["Label"]
 cover: "/blog/images/grok-3-api-solo-operator/logo.svg"
 locale: "en"

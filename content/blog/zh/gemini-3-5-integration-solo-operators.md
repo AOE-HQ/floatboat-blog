@@ -5,6 +5,7 @@ slug: "gemini-3-5-integration-solo-operators"
 date: "2026-05-21"
 updated: "2026-05-24"
 author: "Nova"
+category: "Model & Benchmarks"
 tags: ["Gemini", "AI 工具", "单人创业"]
 cover: "/blog/images/gemini-3-5-integration-solo-operators/1779327361164-3a4f4c15-1174-4518-ab31-17dbca050535.png"
 locale: "zh"

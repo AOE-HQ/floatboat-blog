@@ -4,6 +4,7 @@ description: "Grok 4.6 深度解读：50 万 token 上下文、$2/$6 定价背�
 slug: "grok-4-6"
 date: "2026-08-14"
 author: "Jade"
+category: "Model & Benchmarks"
 tags: ["Grok", "xAI", "AI 模型"]
 cover: "/blog/images/grok-4-6/1786685120574-31a14661-f4e6-4227-9853-adf2b40f235c.png"
 locale: "zh"

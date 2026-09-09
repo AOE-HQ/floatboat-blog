@@ -4,6 +4,7 @@ description: "经营一人公司意味着要干五个人的活。本文解释为
 slug: "workspace-agents-for-solo-operators"
 date: "2026-04-29"
 author: "Nova"
+category: "AI Agents"
 tags: ["工作区 Agent", "单人创业者", "一人公司", "AI Agent", "AI 工作流"]
 cover: "/blog/images/workspace-agents-for-solo-operators/1777428082293-60053bd7-b18e-4e7c-a5a6-a39710bc117b.PNG"
 locale: "zh"

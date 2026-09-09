@@ -4,6 +4,7 @@ description: "gstack went viral for developers — but the real insight isn't ab
 slug: "what-gstack-gets-right-about-one-person-businesses"
 date: "2026-04-06"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/what-gstack-gets-right-about-one-person-businesses/1775210711995-9c430fc3-3dfc-4182-a1e6-a0fba7026754.png"
 locale: "en"

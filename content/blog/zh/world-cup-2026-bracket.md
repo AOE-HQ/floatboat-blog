@@ -4,6 +4,7 @@ description: "2026 年世界杯（美加墨）采用 48 队、12 组、32 强淘
 slug: "world-cup-2026-bracket"
 date: "2026-07-15"
 author: "Judy"
+category: "Calendar AI"
 tags: ["世界杯", "2026 世界杯", "对阵表"]
 cover: "/blog/images/world-cup-2026-bracket/1783514290356-138ce168-436f-457e-96a0-6642e36a9f14.png"
 locale: "zh"

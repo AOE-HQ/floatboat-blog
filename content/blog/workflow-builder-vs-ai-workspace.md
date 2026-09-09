@@ -4,6 +4,7 @@ description: "Not sure whether you need a workflow builder or an AI workspace? H
 slug: "workflow-builder-vs-ai-workspace"
 date: "2026-03-23"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/workflow-builder-vs-ai-workspace/1774257401587-7c2850f6-9966-440d-a14e-06efc1095f2b.png"
 locale: "en"

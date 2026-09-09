@@ -4,6 +4,7 @@ description: "Lark CLI 能从命令行自动化飞书工作流——但对单人
 slug: "lark-cli-when-to-use-it"
 date: "2026-03-30"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Lark", "飞书", "CLI", "AI 工作流", "单人创业者"]
 cover: "/blog/images/lark-cli-when-to-use-it/1774843116525-8b1fab5d-cd72-4ea8-9640-cda8f4e79d7c.png"
 locale: "zh"

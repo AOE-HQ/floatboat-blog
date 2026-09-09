@@ -4,6 +4,7 @@ description: "单人创业者身兼数职，通用 AI 很难跟得上。这篇�
 slug: "ai-workflow-for-solo-founders"
 date: "2026-04-14"
 author: "Nova"
+category: "Solo Operators"
 tags: ["单人创业者", "AI 工作流", "上下文记忆", "一人公司"]
 cover: "/blog/images/ai-workflow-for-solo-founders/1776149030005-3969a82c-18c3-45df-90bc-1b060d4b2aab.PNG"
 locale: "zh"

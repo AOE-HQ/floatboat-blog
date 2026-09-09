@@ -4,6 +4,7 @@ description: "2026 世界杯小组赛完全指南：全部十二个小组（A �
 slug: "world-cup-2026-groups-standings"
 date: "2026-07-15"
 author: "Jade"
+category: "Calendar AI"
 tags: ["世界杯", "2026 世界杯", "小组赛", "世界杯分组"]
 cover: "/blog/images/world-cup-2026-groups-standings/1783513886835-e9bc6a31-19ae-414f-8414-85682f20e7f2.png"
 locale: "zh"

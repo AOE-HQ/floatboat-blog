@@ -4,6 +4,7 @@ description: "HTML is the new Markdown is really a debate about AI output: when 
 slug: "html-is-the-new-markdown"
 date: "2026-05-20"
 author: "Nova"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/html-is-the-new-markdown/1779256712079-199ac290-7f16-4930-935c-b32be4a734cc.PNG"
 locale: "en"

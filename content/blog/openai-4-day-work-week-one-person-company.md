@@ -4,6 +4,7 @@ description: "OpenAI wants a 4-day work week. But solo operators are already liv
 slug: "openai-4-day-work-week-one-person-company"
 date: "2026-04-16"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/openai-4-day-work-week-one-person-company/1776318549733-f138b428-6efb-4187-bab8-100571cdf6df.PNG"
 locale: "en"

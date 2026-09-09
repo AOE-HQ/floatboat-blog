@@ -4,6 +4,7 @@ description: "Genspark Super Agent 能帮用户产出结构化调研结果、页
 slug: "genspark-super-agent-explained"
 date: "2026-05-25"
 author: "Nova"
+category: "AI Agents"
 tags: ["Genspark", "AI Agent", "单人创业者"]
 cover: "/blog/images/genspark-super-agent-explained/1779673311946-3b863d62-7bb2-4e7c-a5d2-42a676849fdb.PNG"
 locale: "zh"

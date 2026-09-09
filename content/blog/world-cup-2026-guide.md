@@ -4,6 +4,7 @@ description: "FIFA World Cup 2026: June 11–July 19 across US, Canada, Mexico. 
 slug: "world-cup-2026-guide"
 date: "2026-07-15"
 author: "Lulu Yu"
+category: "Calendar AI"
 tags: ["world cup 2026"]
 cover: "/blog/images/world-cup-2026-guide/1782462198627-903b7e70-fd0f-40c3-81e3-501c7c0a7524.png"
 locale: "en"

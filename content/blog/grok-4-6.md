@@ -4,6 +4,7 @@ description: "Grok 4.6 explained: 500K context, $2/$6 pricing, the 200K token pr
 slug: "grok-4-6"
 date: "2026-08-14"
 author: "Jade"
+category: "Model & Benchmarks"
 tags: ["Deepseek"]
 cover: "/blog/images/grok-4-6/1786685120574-31a14661-f4e6-4227-9853-adf2b40f235c.png"
 locale: "en"

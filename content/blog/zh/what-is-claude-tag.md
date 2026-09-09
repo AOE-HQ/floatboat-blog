@@ -4,6 +4,7 @@ description: "Claude Tag 详解：@Claude 如何作为共享 Slack 队友工作�
 slug: "what-is-claude-tag"
 date: "2026-08-14"
 author: "Jade"
+category: "AI Agents"
 tags: ["Claude", "Claude Tag", "Slack", "AI 队友"]
 cover: "/blog/images/what-is-claude-tag/1785400760013-75037f09-35a5-49b4-ac29-729fff4919c9.png"
 locale: "zh"

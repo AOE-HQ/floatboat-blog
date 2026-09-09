@@ -4,6 +4,7 @@ description: "USMNT World Cup 2026 schedule: Paraguay, Australia, Turkey in Grou
 slug: "world-cup-2026-schedule-usa"
 date: "2026-07-15"
 author: "Vera"
+category: "Calendar AI"
 tags: ["world cup schedule for usa"]
 cover: "/blog/images/world-cup-2026-schedule-usa/1782463159643-f6d661d7-3ed7-4e6d-97f2-2136a02e0633.png"
 locale: "en"

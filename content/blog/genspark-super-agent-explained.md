@@ -4,6 +4,7 @@ description: "Genspark Super Agent helps users create structured research, pages
 slug: "genspark-super-agent-explained"
 date: "2026-05-25"
 author: "Nova"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/genspark-super-agent-explained/1779673311946-3b863d62-7bb2-4e7c-a5d2-42a676849fdb.PNG"
 locale: "en"

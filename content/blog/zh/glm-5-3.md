@@ -4,6 +4,7 @@ description: "GLM-5.3 沿用 GLM-5.2 基座，仅靠后训练扩展就换来约 
 slug: "glm-5-3"
 date: "2026-08-14"
 author: "Ketd"
+category: "Model & Benchmarks"
 tags: ["GLM-5.3", "智谱", "后训练", "开放权重模型", "Agent 编码"]
 cover: "/blog/images/glm-5-3/1786705345048-ef58ddfc-0ff2-4628-bb9b-318bf047f6d3.png"
 locale: "zh"

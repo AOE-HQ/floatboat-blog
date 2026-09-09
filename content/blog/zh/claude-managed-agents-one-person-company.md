@@ -4,6 +4,7 @@ description: "Claude Managed Agents 让 AI 跨系统委派并执行长任务：�
 slug: "claude-managed-agents-one-person-company"
 date: "2026-04-22"
 author: "Nova"
+category: "AI Agents"
 tags: ["Claude Managed Agents", "单人创业者", "Agent 自动化", "工作流"]
 cover: "/blog/images/claude-managed-agents-one-person-company/1776822497021-9f7925a6-7df8-4b45-8874-4b85b4b3907b.png"
 locale: "zh"

@@ -4,6 +4,7 @@ description: "fal 在 2026 年 8 月演示的 H3 Max Live，让 AI 视频生成�
 slug: "minimax-h3-max-infinite-ai-livestream"
 date: "2026-09-02"
 author: "Tan Shaoqing"
+category: "Model & Benchmarks"
 tags: ["MiniMax H3", "AI 视频生成", "无限直播", "fal"]
 cover: "/blog/images/minimax-h3-max-infinite-ai-livestream/1788353341933-6ea061e0-855d-40ce-8532-47b935e63b33.png"
 locale: "zh"

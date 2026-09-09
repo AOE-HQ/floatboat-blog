@@ -4,6 +4,7 @@ description: "Vibe Coding 让任何人用自然语言和 AI 就能构建软件�
 slug: "what-is-vibe-coding"
 date: "2026-04-16"
 author: "Nova"
+category: "AI Agents"
 tags: ["Vibe Coding", "AI 编程", "单人创业者", "工作流"]
 cover: "/blog/images/what-is-vibe-coding/1776318240258-7782d4ee-7298-4a95-a248-956cb56e292f.PNG"
 locale: "zh"

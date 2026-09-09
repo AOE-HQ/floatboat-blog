@@ -4,6 +4,7 @@ description: "Lark CLI automates Feishu workflows from the command line—but fo
 slug: "lark-cli-when-to-use-it"
 date: "2026-03-30"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/lark-cli-when-to-use-it/1774843116525-8b1fab5d-cd72-4ea8-9640-cda8f4e79d7c.png"
 locale: "en"

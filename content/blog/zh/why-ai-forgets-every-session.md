@@ -4,6 +4,7 @@ description: "每次你关掉聊天标签页，AI 就把一切都忘了。本文
 slug: "why-ai-forgets-every-session"
 date: "2026-04-07"
 author: "Nova"
+category: "AI Agents"
 tags: ["AI 记忆", "上下文管理", "无状态 AI", "单人创业"]
 cover: "/blog/images/why-ai-forgets-every-session/1775543445475-368990de-1c82-4614-90bf-4e1b6b851900.PNG"
 locale: "zh"

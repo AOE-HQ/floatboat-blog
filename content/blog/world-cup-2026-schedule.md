@@ -4,6 +4,7 @@ description: "FIFA World Cup 2026 schedule — 104 matches, June 11 to July 19 a
 slug: "world-cup-2026-schedule"
 date: "2026-07-15"
 author: "Eathen"
+category: "Calendar AI"
 tags: ["world-cup-2026-guide", "world-cup-2026-google-calendar-ics"]
 cover: "/blog/images/world-cup-2026-schedule/1782464350603-376acd2b-c815-490e-a0be-105fe9554a9e.png"
 locale: "en"

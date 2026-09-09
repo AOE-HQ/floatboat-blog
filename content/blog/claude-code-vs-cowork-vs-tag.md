@@ -4,6 +4,7 @@ description: "Claude Code, Cowork, and Tag are three surfaces for the same agent
 slug: "claude-code-vs-cowork-vs-tag"
 date: "2026-08-14"
 author: "Remy"
+category: "Tool Comparisons"
 tags: ["Claude"]
 cover: "/blog/images/claude-code-vs-cowork-vs-tag/1786687033982-e9da752d-a2de-41e8-8759-2602ab61ecd4.png"
 locale: "en"

@@ -4,6 +4,7 @@ description: "AI automation agency pricing broken down: what they charge, what's
 slug: "ai-automation-agency-pricing"
 date: "2026-05-07"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/ai-automation-agency-pricing/1773741753347-399bc4f1-9844-457f-8efd-6c76ac9ba8b5.png"
 locale: "en"

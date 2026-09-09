@@ -4,6 +4,7 @@ description: "Agentic AI 工具的 hype 已远超实际能力，但真正的问�
 slug: "agentic-ai-tools"
 date: "2026-05-13"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Agentic AI", "AI Agent", "单人创业"]
 cover: "/blog/images/agentic-ai-tools/1778662214560-0566d973-b6b5-4834-9cb0-48918b2fdf5f.PNG"
 locale: "zh"

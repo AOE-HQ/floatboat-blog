@@ -4,6 +4,7 @@ description: "想让浏览器 AI Agent 碰你的 Gmail 或 CRM 之前，先过�
 slug: "browser-ai-agent-security-questions"
 date: "2026-05-12"
 author: "Nova"
+category: "AI Agents"
 tags: ["AI Agent", "安全", "浏览器自动化"]
 cover: "/blog/images/browser-ai-agent-security-questions/1778563937090-298eee0e-5d27-4059-8761-8be6e622f89b.PNG"
 locale: "zh"

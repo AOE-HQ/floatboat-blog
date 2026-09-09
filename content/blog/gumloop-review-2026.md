@@ -4,6 +4,7 @@ description: "Gumloop can automate complex workflows — but who actually gets t
 slug: "gumloop-review-2026"
 date: "2026-03-23"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/gumloop-review-2026/1774256136741-8c5fad55-61e8-4d7d-8cc2-cbb506963241.png"
 locale: "en"

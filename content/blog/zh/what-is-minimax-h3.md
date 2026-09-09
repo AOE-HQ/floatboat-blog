@@ -4,6 +4,7 @@ description: "MiniMax H3 是开放权重的全模态（Omni-Modal）视频模型
 slug: "what-is-minimax-h3"
 date: "2026-08-04"
 author: "Jade"
+category: "Model & Benchmarks"
 tags: ["MiniMax H3", "AI 视频生成", "全模态模型", "开放权重"]
 cover: "/blog/images/what-is-minimax-h3/1785813221388-1557c06d-300d-4ec4-a4a9-d496cbd7c094.png"
 locale: "zh"

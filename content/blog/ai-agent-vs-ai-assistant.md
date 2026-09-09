@@ -4,6 +4,7 @@ description: "AI agent vs AI assistant: they sound almost identical but work ver
 slug: "ai-agent-vs-ai-assistant"
 date: "2026-04-03"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/ai-agent-vs-ai-assistant/1773919300903-6c8781b3-4b98-47b2-abd6-027a7ac425ec.png"
 locale: "en"

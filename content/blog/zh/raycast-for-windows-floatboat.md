@@ -4,6 +4,7 @@ description: "还在搜 Windows 版 Raycast？Floatboat 不只是一款启动器
 slug: "raycast-for-windows-floatboat"
 date: "2026-09-03"
 author: "Floatboat Team"
+category: "Product Updates"
 tags: ["Raycast", "Windows 效率工具", "Floatboat", "AI Agent 工作区"]
 cover: "/blog/images/raycast-for-windows-floatboat/1788445703727-512a806e-63ee-41c0-83b7-100e16fe7911.png"
 locale: "zh"

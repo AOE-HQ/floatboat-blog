@@ -4,6 +4,7 @@ description: "Looking for Gumloop alternatives? Here's a clear breakdown of what
 slug: "gumloop-alternatives-2026"
 date: "2026-03-24"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/gumloop-alternatives-2026/1774343169751-f7c753b4-f984-42c1-a849-d524da65c842.png"
 locale: "en"

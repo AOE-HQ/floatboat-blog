@@ -4,6 +4,7 @@ description: "Solo founders juggle too many roles for generic AI to keep up. Her
 slug: "ai-workflow-for-solo-founders"
 date: "2026-04-14"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/ai-workflow-for-solo-founders/1776149030005-3969a82c-18c3-45df-90bc-1b060d4b2aab.PNG"
 locale: "en"

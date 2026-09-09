@@ -4,6 +4,7 @@ description: "No code ai agent builder tools are useful for prototypes, but solo
 slug: "no-code-ai-agent-builder"
 date: "2026-05-18"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/no-code-ai-agent-builder/1779086557698-6caa553f-51a9-404d-82d2-16f30d7bc982.PNG"
 locale: "en"

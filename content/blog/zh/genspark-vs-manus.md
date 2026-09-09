@@ -4,6 +4,7 @@ description: "直接把 Genspark 和 Manus 放在一起比：各自能做什么�
 slug: "genspark-vs-manus"
 date: "2026-03-26"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Genspark", "Manus", "AI Agent", "AI 工具对比"]
 cover: "/blog/images/genspark-vs-manus/1774490149131-b9a09fcd-daef-46d3-ad43-4123aaab32cb.PNG"
 locale: "zh"

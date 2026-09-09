@@ -4,6 +4,7 @@ description: "GPT-5.6 Sol、Terra、Luna 已直接内置在 Floatboat 中，无�
 slug: "gpt-5-6-floatboat"
 date: "2026-07-10"
 author: "Judy"
+category: "Product Updates"
 tags: ["GPT-5.6", "Floatboat", "AI Agent"]
 cover: "/blog/images/gpt-5-6-floatboat/1783684752859-4b7e7d5e-d900-4055-b120-4a274ce2f2e9.png"
 locale: "zh"

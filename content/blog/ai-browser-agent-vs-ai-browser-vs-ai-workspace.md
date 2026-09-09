@@ -4,6 +4,7 @@ description: "AI browser agents, AI browsers, and AI workspaces solve different 
 slug: "ai-browser-agent-vs-ai-browser-vs-ai-workspace"
 date: "2026-05-12"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778559099169-e10dc318-040b-46dd-af3f-fc612c5fcf4e.PNG"
 locale: "en"

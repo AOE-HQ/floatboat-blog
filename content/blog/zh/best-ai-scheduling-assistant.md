@@ -4,6 +4,7 @@ description: "AI 日程 Agent（AI scheduling agent）已走过四代：智能�
 slug: "best-ai-scheduling-assistant"
 date: "2026-06-29"
 author: "Floatboat"
+category: "Calendar AI"
 tags: ["AI 日程 Agent", "Agentic Calendar", "日历驱动 AI", "智能排程器", "AI 日程工具"]
 cover: "/blog/images/best-ai-scheduling-assistant/1782710572097-f224e5e3-8ae0-4a40-8c50-f3fd4d32e134.png"
 locale: "zh"

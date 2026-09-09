@@ -41,9 +41,12 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 export function BlogIndex({
   data,
   faq = [],
+  marketing,
 }: {
   data: BlogIndexData;
   faq?: FaqItem[];
+  /** Optional marketing/sales banner rendered between the topic sections and the FAQ. */
+  marketing?: React.ReactNode;
 }) {
   const { config, features, optional, localePrefix } = useOpenBlog();
   const site = useSiteHelpers();
@@ -54,7 +57,11 @@ export function BlogIndex({
     ? data.latest.filter((post) => post.slug !== data.featured?.slug)
     : data.latest;
 
-  const topicCategories = data.categories.slice(0, 4);
+  // Topics get their own "By topic" card section. With the blog-level
+  // taxonomy at ~6 pillars this shows every pillar in the cards (the header
+  // "Browse topics" nav always lists all of them regardless of this cap).
+  const TOPIC_CATEGORY_LIMIT = 6;
+  const topicCategories = data.categories.slice(0, TOPIC_CATEGORY_LIMIT);
 
   const fallbackCta = config.blog?.cta?.fallback?.[locale];
   const finalCta =
@@ -195,6 +202,8 @@ export function BlogIndex({
         </section>
       ) : null}
     </div>
+
+    {marketing ? <div className="mt-16">{marketing}</div> : null}
 
     {optional.faq && faq.length > 0 ? (
       <ArticleFaq items={faq} locale={locale} />

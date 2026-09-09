@@ -4,6 +4,7 @@ description: "GPT-5.6 Sol, Terra, and Luna are now GA. How Ultra mode subagent o
 slug: "gpt-5-6-sol-terra-luna"
 date: "2026-07-10"
 author: "Judy"
+category: "Model & Benchmarks"
 tags: ["Label"]
 cover: "/blog/images/gpt-5-6-sol-terra-luna/1782875427176-cd2bebae-2bbc-4f06-a8ef-69a605e410ab.png"
 locale: "en"

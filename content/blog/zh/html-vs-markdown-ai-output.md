@@ -4,6 +4,7 @@ description: "AI 输出用 HTML 还是 Markdown，取决于任务本身：给人
 slug: "html-vs-markdown-ai-output"
 date: "2026-05-20"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["HTML", "Markdown", "AI 工作流"]
 cover: "/blog/images/html-vs-markdown-ai-output/1779257593926-ca23f8cc-a57b-46ae-a8de-5bb5df0cb95a.JPEG"
 locale: "zh"

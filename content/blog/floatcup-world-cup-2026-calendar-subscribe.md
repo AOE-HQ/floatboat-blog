@@ -4,6 +4,7 @@ description: "Subscribe to all 104 World Cup 2026 matches with FloatCup. One-cli
 slug: "floatcup-world-cup-2026-calendar-subscribe"
 date: "2026-07-15"
 author: "Jade"
+category: "Product Updates"
 tags: ["world cup 2026 calendar"]
 cover: "/blog/images/floatcup-world-cup-2026-calendar-subscribe/1783514827876-4880f990-784a-4656-be8d-21c1202b7d71.png"
 locale: "en"

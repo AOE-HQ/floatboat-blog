@@ -4,6 +4,7 @@ description: "GPT Image 2 能渲染可读的 CJK 文字并保持跨格角色一�
 slug: "gpt-image-2-manga-comic-workflow"
 date: "2026-04-25"
 author: "Nova"
+category: "Model & Benchmarks"
 tags: ["GPT Image 2", "漫画创作", "AI 绘画", "单人创作者"]
 cover: "/blog/images/gpt-image-2-manga-comic-workflow/1777086983412-02342d60-b663-4941-8b04-105dd5c46331.PNG"
 locale: "zh"

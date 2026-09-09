@@ -4,6 +4,7 @@ description: "Grok 3 API 现已开放，定价公开。这对跑 AI 工作流的
 slug: "grok-3-api-solo-operator"
 date: "2026-04-23"
 author: "Nova"
+category: "Model & Benchmarks"
 tags: ["Grok", "AI API", "单人创业"]
 cover: "/blog/images/grok-3-api-solo-operator/logo.svg"
 locale: "zh"

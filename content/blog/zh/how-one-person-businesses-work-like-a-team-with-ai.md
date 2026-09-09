@@ -4,6 +4,7 @@ description: "2026 年的一人公司正在悄悄像完整团队一样运转—�
 slug: "how-one-person-businesses-work-like-a-team-with-ai"
 date: "2026-03-20"
 author: "Nova"
+category: "Solo Operators"
 tags: ["一人公司", "AI Agent", "单人创业者"]
 cover: "/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773825201064-9d872af9-1dad-4943-aac5-c9406197db10.png"
 locale: "zh"

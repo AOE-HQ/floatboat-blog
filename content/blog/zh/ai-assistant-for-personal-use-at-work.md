@@ -4,6 +4,7 @@ description: "工作里个人使用的 AI 助手（AI Assistant）不该照工�
 slug: "ai-assistant-for-personal-use-at-work"
 date: "2026-05-13"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["AI 助手", "单人创业", "AI Agent"]
 cover: "/blog/images/ai-assistant-for-personal-use-at-work/1778661709595-55d8271d-91a0-4e90-98b8-98f83d665c5a.PNG"
 locale: "zh"

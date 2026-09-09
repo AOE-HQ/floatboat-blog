@@ -4,6 +4,7 @@ description: "豆包工作 Doubao Work 是字节跳动 2026 年 8 月正式发�
 slug: "what-is-doubao-work"
 date: "2026-08-27"
 author: "Jade"
+category: "AI Agents"
 tags: ["豆包", "豆包工作", "字节跳动"]
 cover: "/blog/images/what-is-doubao-work/1787815178386-28c2840d-8060-4cc0-9975-4f806e98577e.png"
 locale: "zh"

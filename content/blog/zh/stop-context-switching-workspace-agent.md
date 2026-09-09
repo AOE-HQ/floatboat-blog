@@ -4,6 +4,7 @@ description: "对单人经营者来说，上下文切换的隐性损耗比任何
 slug: "stop-context-switching-workspace-agent"
 date: "2026-05-01"
 author: "Nova"
+category: "AI Agents"
 tags: ["上下文切换", "工作区 Agent", "单人经营者", "专注力"]
 cover: "/blog/images/stop-context-switching-workspace-agent/1777599600509-10571637-8b09-45c4-b74b-09c0f5756b91.PNG"
 locale: "zh"

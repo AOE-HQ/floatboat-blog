@@ -4,6 +4,7 @@ description: "Relevance AI vs n8n: two very different tools that often come up i
 slug: "relevance-ai-vs-n8n"
 date: "2026-04-01"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/relevance-ai-vs-n8n/1775027011114-2f3b82c3-c427-4577-9fae-e3385ff178af.png"
 locale: "en"

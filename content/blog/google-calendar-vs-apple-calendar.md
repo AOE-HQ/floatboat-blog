@@ -4,6 +4,7 @@ description: "Google Calendar vs Apple Calendar comes down to ecosystem, sharing
 slug: "google-calendar-vs-apple-calendar"
 date: "2026-05-27"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/google-calendar-vs-apple-calendar/1779853771871-58a4101c-8cbd-4c2f-b80a-94cc7f25abfa.PNG"
 locale: "en"

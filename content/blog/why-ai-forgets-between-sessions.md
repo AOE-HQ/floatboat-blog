@@ -4,6 +4,7 @@ description: "Why AI tools lose all context when you close a tab — and what so
 slug: "why-ai-forgets-between-sessions"
 date: "2026-04-10"
 author: "Nova"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/why-ai-forgets-between-sessions/1775794175781-80a07b02-e821-4fbb-b39b-b94eb278860a.PNG"
 locale: "en"

@@ -4,6 +4,7 @@ description: "AI automation agency support can help, but solo operators should c
 slug: "ai-automation-agency-do-you-need-one"
 date: "2026-05-14"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/ai-automation-agency-do-you-need-one/1778749936764-b481a6a9-9fb7-4510-b116-a4b9f385b162.PNG"
 locale: "en"

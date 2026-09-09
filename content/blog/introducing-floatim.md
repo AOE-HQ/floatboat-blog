@@ -4,6 +4,7 @@ description: "FloatIM is an agent-native messaging network for multi-agent group
 slug: "introducing-floatim"
 date: "2026-06-29"
 author: "Floatboat Team"
+category: "Product Updates"
 tags: ["FloatIM", "agent-native messaging", "multi-agent collaboration", "AI group chat", "chat with AI agents", "human-agent collaboration"]
 cover: "/blog/images/introducing-floatim/1782710364987-7c54039b-3629-4fbf-846d-062532c5ae38.png"
 locale: "en"

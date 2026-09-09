@@ -4,6 +4,7 @@ description: "把一人公司做大，不等于就要搭团队。本文讲单人
 slug: "scale-one-person-business-without-hiring"
 date: "2026-04-15"
 author: "Nova"
+category: "Solo Operators"
 tags: ["一人公司", "单人创业者", "工作流"]
 cover: "/blog/images/scale-one-person-business-without-hiring/1776232668468-eeeca175-e546-43ee-b605-652f7b5b0f80.PNG"
 locale: "zh"

@@ -4,6 +4,7 @@ description: "GPT-5.6 的 Sol、Terra、Luna 三档模型现已全面上线（GA
 slug: "gpt-5-6-sol-terra-luna"
 date: "2026-07-10"
 author: "Judy"
+category: "Model & Benchmarks"
 tags: ["GPT-5.6", "OpenAI", "Agent", "模型定价"]
 cover: "/blog/images/gpt-5-6-sol-terra-luna/1782875427176-cd2bebae-2bbc-4f06-a8ef-69a605e410ab.png"
 locale: "zh"

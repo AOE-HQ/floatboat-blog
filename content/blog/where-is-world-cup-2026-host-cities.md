@@ -4,6 +4,7 @@ description: "Where is the World Cup 2026 being held? See the 16 host cities, st
 slug: "where-is-world-cup-2026-host-cities"
 date: "2026-07-15"
 author: "Jade"
+category: "Calendar AI"
 tags: ["Host cities", "Stadiums"]
 cover: "/blog/images/where-is-world-cup-2026-host-cities/1783684467973-c56d574e-4ef1-42d6-bfb7-ee0d173b9bb1.png"
 locale: "en"

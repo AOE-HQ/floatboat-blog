@@ -4,6 +4,7 @@ description: "GPT-6 Astra 是 OpenAI 迄今能力最强、限制也最多的模�
 slug: "gpt-6-astra"
 date: "2026-09-04"
 author: "Kostja"
+category: "Model & Benchmarks"
 tags: ["GPT-6 Astra", "OpenAI", "AI Agent", "网络安全", "模型评测"]
 cover: "/blog/images/gpt-6-astra/1788496075502-7b01a53f-db8d-49cb-8844-0afcaa9d04aa.png"
 locale: "zh"

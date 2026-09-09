@@ -4,6 +4,7 @@ description: "Claude Code 是给开发者的终端工具，但如果你在经营
 slug: "claude-code-non-developers-solo-operators"
 date: "2026-04-06"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Claude Code", "单人创业", "Cowork", "AI 编程"]
 cover: "/blog/images/claude-code-non-developers-solo-operators/1775098065738-f9bed4bf-5721-4992-a329-098c1a022f2b.png"
 locale: "zh"

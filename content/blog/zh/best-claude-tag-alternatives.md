@@ -4,6 +4,7 @@ description: "按团队工作形态而非关键词重合度排序：Agent-native
 slug: "best-claude-tag-alternatives"
 date: "2026-08-14"
 author: "Ketd"
+category: "Tool Comparisons"
 tags: ["Claude Tag", "AI Teammate", "Agent 协作", "Slack"]
 cover: "/blog/images/best-claude-tag-alternatives/1786692944162-bee7f05d-49b7-4bea-ad26-046dd94c9a26.png"
 locale: "zh"

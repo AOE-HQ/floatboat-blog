@@ -4,6 +4,7 @@ description: "Vibe coding moves fast — until it doesn't. Here's why structured
 slug: "ai-agent-workflow-vibe-coding"
 date: "2026-04-20"
 author: "Nova"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/ai-agent-workflow-vibe-coding/1776651617043-2a925e03-5c61-429e-9390-e2c4cdf103db.png"
 locale: "en"

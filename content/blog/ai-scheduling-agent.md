@@ -4,6 +4,7 @@ description: "Learn what an AI scheduling agent is, how the category evolved, an
 slug: "ai-scheduling-agent"
 date: "2026-06-29"
 author: "Tan Shaoqing"
+category: "Calendar AI"
 tags: ["AI scheduling agent", "AI calendar agent", "AI scheduling tool", "calendar AI agent", "proactive scheduling AI", "AI meeting scheduler", "automated calendar management", "calendar-driven AI", "AI agent for scheduling"]
 cover: "/blog/images/ai-scheduling-agent/1782710542623-c3e3520b-3084-478b-82b4-d29dae842c00.png"
 locale: "en"

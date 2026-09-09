@@ -4,6 +4,7 @@ description: "See how Floatboat operates FastMoss in its built-in browser, saves
 slug: "automate-tiktok-shop-research-fastmoss-floatboat"
 date: "2026-08-20"
 author: "Remy"
+category: "Product Updates"
 tags: ["TikTok Shop", "FastMoss", "AI Agent", "Browser Automation", "FloatSchedule"]
 cover: "/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.png"
 locale: "en"

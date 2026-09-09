@@ -4,6 +4,7 @@ description: "One-person businesses are quietly working like full teams in 2026 
 slug: "how-one-person-businesses-work-like-a-team-with-ai"
 date: "2026-03-20"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773825201064-9d872af9-1dad-4943-aac5-c9406197db10.png"
 locale: "en"

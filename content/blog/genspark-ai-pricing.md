@@ -4,6 +4,7 @@ description: "Genspark pricing broken down: what each plan includes, where the l
 slug: "genspark-ai-pricing"
 date: "2026-05-07"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/genspark-ai-pricing/1773920176808-93b6672b-1f60-4b7f-9e7c-b30e3754d487.png"
 locale: "en"

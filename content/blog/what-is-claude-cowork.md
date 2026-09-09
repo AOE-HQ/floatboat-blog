@@ -4,6 +4,7 @@ description: "Claude Cowork explained: how it differs from Chat and Claude Code,
 slug: "what-is-claude-cowork"
 date: "2026-08-14"
 author: "Jade"
+category: "AI Agents"
 tags: ["Claude"]
 cover: "/blog/images/what-is-claude-cowork/1786690967364-b508ce48-c213-477f-8633-a2e96f074787.png"
 locale: "en"

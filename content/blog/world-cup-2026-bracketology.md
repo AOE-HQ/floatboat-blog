@@ -4,6 +4,7 @@ description: "World Cup bracketology guide for filling a 2026 bracket, reading t
 slug: "world-cup-2026-bracketology"
 date: "2026-07-15"
 author: "Jade"
+category: "Calendar AI"
 tags: ["Label"]
 cover: "/blog/images/world-cup-2026-bracketology/1783684368238-f41ce444-987a-46be-ab6c-197928df36eb.png"
 locale: "en"

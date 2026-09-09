@@ -4,6 +4,7 @@ description: "FIFA 2026 世界杯全指南：2026 年 6 月 11 日–7 月 19 �
 slug: "world-cup-2026-guide"
 date: "2026-07-15"
 author: "Lulu Yu"
+category: "Calendar AI"
 tags: ["2026 世界杯", "FIFA 世界杯", "赛事指南"]
 cover: "/blog/images/world-cup-2026-guide/1782462198627-903b7e70-fd0f-40c3-81e3-501c7c0a7524.png"
 locale: "zh"

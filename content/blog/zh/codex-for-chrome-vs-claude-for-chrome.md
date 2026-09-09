@@ -4,6 +4,7 @@ description: "Codex for Chrome 与 Claude for Chrome 同属浏览器 Agent，设
 slug: "codex-for-chrome-vs-claude-for-chrome"
 date: "2026-05-11"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Codex", "Claude", "浏览器 Agent", "AI Agent 对比", "AI 工具"]
 cover: "/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481499516-0681f882-de23-4dd6-a9cc-de0aa1613287.PNG"
 locale: "zh"

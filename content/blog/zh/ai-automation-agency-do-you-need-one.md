@@ -4,6 +4,7 @@ description: "AI automation agency（AI 自动化外包公司）能帮你解决�
 slug: "ai-automation-agency-do-you-need-one"
 date: "2026-05-14"
 author: "Nova"
+category: "Solo Operators"
 tags: ["AI 自动化", "AI Agent", "外包"]
 cover: "/blog/images/ai-automation-agency-do-you-need-one/1778749936764-b481a6a9-9fb7-4510-b116-a4b9f385b162.PNG"
 locale: "zh"

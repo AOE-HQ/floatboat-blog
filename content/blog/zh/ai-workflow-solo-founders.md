@@ -4,6 +4,7 @@ description: "经营一人业务等于一人身兼五职。本文结合实战经
 slug: "ai-workflow-solo-founders"
 date: "2026-04-10"
 author: "Nova"
+category: "Solo Operators"
 tags: ["AI 工作流", "单人创业者", "AI Agent", "一人公司"]
 cover: "/blog/images/ai-workflow-solo-founders/1775794408355-842bca71-e51d-4c6c-8280-a962f25749d6.PNG"
 locale: "zh"

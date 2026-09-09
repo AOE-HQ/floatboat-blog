@@ -4,6 +4,7 @@ description: "GPT Image 2、Midjourney V8 与 Nano Banana 2 都宣称自己是 2
 slug: "gpt-image-2-vs-midjourney-nano-banana-2"
 date: "2026-04-27"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["AI 绘图", "GPT Image", "Midjourney"]
 cover: "/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258012756-3cdd7264-9746-4fb6-91db-2aa7605b6c70.PNG"
 locale: "zh"

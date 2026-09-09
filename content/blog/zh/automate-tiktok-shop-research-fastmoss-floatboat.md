@@ -4,6 +4,7 @@ description: "看 Floatboat 如何在内置浏览器里操作 FastMoss、留存�
 slug: "automate-tiktok-shop-research-fastmoss-floatboat"
 date: "2026-08-20"
 author: "Remy"
+category: "Product Updates"
 tags: ["TikTok Shop", "FastMoss", "AI Agent", "浏览器自动化", "FloatSchedule"]
 cover: "/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.png"
 locale: "zh"

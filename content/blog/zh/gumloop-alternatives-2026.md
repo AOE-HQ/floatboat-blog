@@ -4,6 +4,7 @@ description: "找 Gumloop 替代品？本文不做谁更厉害的排名，而是
 slug: "gumloop-alternatives-2026"
 date: "2026-03-24"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Gumloop", "AI 自动化", "无代码自动化", "工具对比"]
 cover: "/blog/images/gumloop-alternatives-2026/1774343169751-f7c753b4-f984-42c1-a849-d524da65c842.png"
 locale: "zh"

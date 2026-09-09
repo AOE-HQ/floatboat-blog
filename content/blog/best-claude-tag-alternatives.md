@@ -4,6 +4,7 @@ description: "Ranked list by team job fit: FloatIM for agent-native group chat, 
 slug: "best-claude-tag-alternatives"
 date: "2026-08-14"
 author: "Ketd"
+category: "Tool Comparisons"
 tags: ["Claude"]
 cover: "/blog/images/best-claude-tag-alternatives/1786692944162-bee7f05d-49b7-4bea-ad26-046dd94c9a26.png"
 locale: "en"

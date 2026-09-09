@@ -4,6 +4,7 @@ description: "AI Agent 正从演示走向真实执行：2026 年已有 57% 的�
 slug: "ai-agents-2026-solo-operators"
 date: "2026-04-07"
 author: "Nova"
+category: "Solo Operators"
 tags: ["AI Agent", "单人创业者", "AI 自动化"]
 cover: "/blog/images/ai-agents-2026-solo-operators/1775543065045-9764787e-30c4-4492-9b3e-5ff4ec3a104a.PNG"
 locale: "zh"

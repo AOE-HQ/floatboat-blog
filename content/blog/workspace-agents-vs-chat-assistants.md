@@ -4,6 +4,7 @@ description: "Workspace agents and chat assistants both use AI — but they work
 slug: "workspace-agents-vs-chat-assistants"
 date: "2026-04-24"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/workspace-agents-vs-chat-assistants/1776999718549-5b1e23ce-2907-492f-9963-a02524c6ed7a.PNG"
 locale: "en"

@@ -4,6 +4,7 @@ description: "Grok Bot gives each AI teammate its own cloud computer that signs 
 slug: "grok-bot"
 date: "2026-08-14"
 author: "Judy"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/grok-bot/1786686422610-acd83b24-bf14-45e9-9a06-17d0cd2a947d.png"
 locale: "en"

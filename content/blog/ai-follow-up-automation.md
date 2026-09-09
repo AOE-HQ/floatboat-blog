@@ -4,6 +4,7 @@ description: "Learn how AI follow-up automation captures decisions, extracts act
 slug: "ai-follow-up-automation"
 date: "2026-06-29"
 author: "Floatboat Team"
+category: "Calendar AI"
 tags: ["AI follow-up automation", "automated meeting follow-up", "post-meeting AI assistant", "meeting action item automation", "AI task extraction from meetings", "calendar-driven follow-up"]
 cover: "/blog/images/ai-follow-up-automation/1782710584943-9a40034d-83b0-4f1a-b0d2-9b3a945e1c45.png"
 locale: "en"

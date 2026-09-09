@@ -4,6 +4,7 @@ description: "A DeepSeek Agent uses a DeepSeek model as its primary reasoning en
 slug: "what-is-deepseek-agent"
 date: "2026-08-14"
 author: "Jade"
+category: "AI Agents"
 tags: ["Deepseek"]
 cover: "/blog/images/what-is-deepseek-agent/1785731448524-17e07cd3-95df-4fac-a35a-e53b035f3942.png"
 locale: "en"

@@ -4,6 +4,7 @@ description: "如果日历能自己跑起来会怎样？日历驱动 AI（Calend
 slug: "what-if-your-calendar-could-run-itself"
 date: "2026-07-24"
 author: "Floatboat Team"
+category: "Calendar AI"
 tags: ["日历驱动 AI", "Calendar-Driven AI", "日程自动化", "单人创业者工作流"]
 cover: "/blog/images/what-if-your-calendar-could-run-itself/1784877610953-fe7fe8c0-e2c4-450b-a38c-378d828b5b64.PNG"
 locale: "zh"

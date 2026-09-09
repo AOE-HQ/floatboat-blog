@@ -4,6 +4,7 @@ description: "World Cup draw 2026 guide with the full 12-group draw results, key
 slug: "world-cup-2026-draw"
 date: "2026-07-15"
 author: "Jade"
+category: "Calendar AI"
 tags: ["world cup draw 2026"]
 cover: "/blog/images/world-cup-2026-draw/1783513678637-1a8b836f-a911-4927-9f91-1a1c2368e942.png"
 locale: "en"

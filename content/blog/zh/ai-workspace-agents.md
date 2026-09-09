@@ -4,6 +4,7 @@ description: "AI 工作区 Agent（AI Workspace Agent）是能直接在你真实
 slug: "ai-workspace-agents"
 date: "2026-04-23"
 author: "Nova"
+category: "AI Agents"
 tags: ["AI 工作区 Agent", "工作区 Agent", "AI Agent", "单人经营者"]
 cover: "/blog/images/ai-workspace-agents/1776938878052-6b014d80-d7df-44ac-a9cc-7ca100b7648f.png"
 locale: "zh"

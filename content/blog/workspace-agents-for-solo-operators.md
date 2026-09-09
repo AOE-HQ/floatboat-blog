@@ -4,6 +4,7 @@ description: "Running a one-person company means doing the work of five. Here's 
 slug: "workspace-agents-for-solo-operators"
 date: "2026-04-29"
 author: "Nova"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/workspace-agents-for-solo-operators/1777428082293-60053bd7-b18e-4e7c-a5a6-a39710bc117b.PNG"
 locale: "en"

@@ -4,6 +4,7 @@ description: "Google Calendar vs Outlook 到底该用哪个？取决于你的工
 slug: "google-calendar-vs-outlook"
 date: "2026-05-29"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Google Calendar", "Outlook", "日历工具", "单人创业"]
 cover: "/blog/images/google-calendar-vs-outlook/1780019763142-4fd5794e-0b22-43f2-a03a-588d462f70c5.PNG"
 locale: "zh"

@@ -4,6 +4,7 @@ description: "Searching for a Raycast alternative on Windows? Discover how Float
 slug: "raycast-for-windows-floatboat"
 date: "2026-09-03"
 author: "Floatboat Team"
+category: "Product Updates"
 tags: ["Raycast for Windows", "Windows productivity", "AI Agent Workspace", "Floatboat", "Combo Skills"]
 cover: "/blog/images/raycast-for-windows-floatboat/1788445703727-512a806e-63ee-41c0-83b7-100e16fe7911.png"
 locale: "en"

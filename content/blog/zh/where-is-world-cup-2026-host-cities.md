@@ -4,6 +4,7 @@ description: "2026 世界杯在哪里举行？美加墨三国 16 座主办城市
 slug: "where-is-world-cup-2026-host-cities"
 date: "2026-07-15"
 author: "Jade"
+category: "Calendar AI"
 tags: ["世界杯 2026", "主办城市", "球场"]
 cover: "/blog/images/where-is-world-cup-2026-host-cities/1783684467973-c56d574e-4ef1-42d6-bfb7-ee0d173b9bb1.png"
 locale: "zh"

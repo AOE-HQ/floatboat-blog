@@ -4,6 +4,7 @@ description: "Claude Managed Agents 是 Anthropic 新推出的托管式 Agent �
 slug: "what-are-claude-managed-agents"
 date: "2026-04-10"
 author: "Nova"
+category: "AI Agents"
 tags: ["Claude", "AI Agent", "AI 基础设施"]
 cover: "/blog/images/what-are-claude-managed-agents/1775730561883-47b39a9c-89b4-4323-a051-3a97af2dda5e.png"
 locale: "zh"

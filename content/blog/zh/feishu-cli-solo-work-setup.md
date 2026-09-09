@@ -4,6 +4,7 @@ description: "想把 Feishu CLI 接进个人工作流？本文讲透单人集成
 slug: "feishu-cli-solo-work-setup"
 date: "2026-03-31"
 author: "Nova"
+category: "Solo Operators"
 tags: ["飞书", "飞书 CLI", "单人创业"]
 cover: "/blog/images/feishu-cli-solo-work-setup/1774921782461-de6832c6-5370-4750-ba3b-cc22ebc5f705.png"
 locale: "zh"

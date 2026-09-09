@@ -1,3 +1,60 @@
 {
-  "pages": {}
+  "pages": {
+    "/blog": {
+      "items": [
+        {
+          "question": "What kind of articles are on this blog?",
+          "answer": "Floatboat's blog covers calendar-driven AI and proactive agents, model news and benchmarks, practical tool comparisons, and how solo operators put these systems to work. Articles are grouped by topic above and are published in both English and Chinese."
+        },
+        {
+          "question": "Is Floatboat a calendar-driven AI agent?",
+          "answer": "Yes. Floatboat is the proactive desktop agent that runs work from your calendar: it prepares for meetings, drafts and follows up, and starts recurring routines — connected to Google Calendar, Outlook, or Feishu. Posts under the \"Calendar AI\" topic explain the approach and how to put it to work."
+        },
+        {
+          "question": "I found a workflow I want to try. How do I start?",
+          "answer": "Start with one task you actually want automated. Most how-to articles include the exact steps and tooling. If the workflow involves Floatboat, start the $1 trial from floatboat.ai/download, connect your calendar, and give the agent one meeting or one recurring task to run end to end."
+        },
+        {
+          "question": "Can I subscribe to new articles?",
+          "answer": "Yes. Use the newsletter box in the footer of this page to receive new posts by email. You can also follow Floatboat on X or LinkedIn through the footer links."
+        },
+        {
+          "question": "How often is the blog updated?",
+          "answer": "New articles are published regularly in both English and Chinese as models, agents, and workflows evolve. Posts that track a model or product are refreshed with an updated date whenever something significant changes."
+        },
+        {
+          "question": "Are the English and Chinese versions the same?",
+          "answer": "Every article is available in both English and Chinese, written natively rather than machine-translated. The topic archive pages under /blog/category/ work the same way in both languages."
+        }
+      ]
+    },
+    "/zh/blog": {
+      "items": [
+        {
+          "question": "这个博客都发些什么文章？",
+          "answer": "Floatboat 博客围绕日历驱动 AI 与主动式 Agent、模型新闻与评测、实用工具对比，以及单人创业者如何落地这些系统展开。文章按主题分栏展示，并同时提供英文与中文版本。"
+        },
+        {
+          "question": "Floatboat 是日历驱动的 AI Agent 吗？",
+          "answer": "是的。Floatboat 是主动式桌面 Agent，让工作从你的日历自动跑起来：它会准备会议、起草并跟进后续，也会自动开始周期性的例行任务——可接入 Google、Outlook 或飞书日历。“Calendar AI”栏目下的文章正是在解释这套思路以及如何落地。"
+        },
+        {
+          "question": "看到想试的工作流，我该怎么开始？",
+          "answer": "先挑一件你真正想自动化的任务。多数实践类文章都会给出具体步骤和所需工具；如果工作流涉及 Floatboat，可从 floatboat.ai/download 以 $1 试用，接入日历后，让 Agent 先完整跑一场会议或一件每周重复的任务。"
+        },
+        {
+          "question": "可以订阅博客更新吗？",
+          "answer": "可以。在本页页脚的订阅框留下邮箱，即可通过邮件接收新文章；也可以点页脚的 X 与 LinkedIn 链接关注 Floatboat。"
+        },
+        {
+          "question": "博客多久更新一次？",
+          "answer": "随着模型、Agent 与工作流不断演进，博客会以中英双语持续发布新文章；当有重大变化时，追踪模型或产品的文章会同步刷新日期。"
+        },
+        {
+          "question": "英文版和中文版内容一样吗？",
+          "answer": "每篇文章都同时提供英文与中文版本，按语言原生撰写而非机器直译；两语的 /zh/blog/category/ 主题归档结构也完全一致。"
+        }
+      ]
+    }
+  }
 }

@@ -4,6 +4,7 @@ description: "AI agent vs chatbot — not the same thing, even if both use AI. H
 slug: "ai-agent-vs-chatbot"
 date: "2026-03-20"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/ai-agent-vs-chatbot/1773995253824-ec39f596-77b6-490c-9065-00ea116e745f.png"
 locale: "en"

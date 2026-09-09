@@ -4,6 +4,7 @@ description: "Running a one-person business means wearing five hats. Here's what
 slug: "ai-workflow-solo-founders"
 date: "2026-04-10"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/ai-workflow-solo-founders/1775794408355-842bca71-e51d-4c6c-8280-a962f25749d6.PNG"
 locale: "en"

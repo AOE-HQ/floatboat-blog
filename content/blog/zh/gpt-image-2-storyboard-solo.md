@@ -4,6 +4,7 @@ description: "GPT Image 2 能独立产出可用的影视或短视频分镜吗？
 slug: "gpt-image-2-storyboard-solo"
 date: "2026-04-25"
 author: "Nova"
+category: "Model & Benchmarks"
 tags: ["GPT Image", "AI 绘图", "分镜"]
 cover: "/blog/images/gpt-image-2-storyboard-solo/1777087203252-67197c48-76f8-4e00-a613-b150e8f7adc4.PNG"
 locale: "zh"

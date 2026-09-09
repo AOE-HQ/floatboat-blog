@@ -4,6 +4,7 @@ description: "An Obsidian vault is a folder of Markdown notes on your device. Le
 slug: "what-is-obsidian-vault"
 date: "2026-07-30"
 author: "Jade"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/what-is-obsidian-vault/1785394728358-997e9875-6e3b-42f5-81d6-bdb171ea74c0.png"
 locale: "en"

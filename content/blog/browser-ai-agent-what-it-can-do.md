@@ -4,6 +4,7 @@ description: "A grounded look at what browser AI agents actually do, where they 
 slug: "browser-ai-agent-what-it-can-do"
 date: "2026-05-11"
 author: "Nova"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/browser-ai-agent-what-it-can-do/1778482655208-315ad4a1-77a4-46d4-aa0b-4f1848273b52.PNG"
 locale: "en"

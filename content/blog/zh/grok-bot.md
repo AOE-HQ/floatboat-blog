@@ -4,6 +4,7 @@ description: "Grok Bot 是 xAI 于 2026 年 8 月上线的常驻 AI Agent 产品
 slug: "grok-bot"
 date: "2026-08-14"
 author: "Judy"
+category: "AI Agents"
 tags: ["Grok Bot", "xAI", "AI Agent", "云电脑"]
 cover: "/blog/images/grok-bot/1786686422610-acd83b24-bf14-45e9-9a06-17d0cd2a947d.png"
 locale: "zh"

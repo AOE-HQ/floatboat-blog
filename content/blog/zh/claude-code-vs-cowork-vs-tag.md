@@ -4,6 +4,7 @@ description: "Claude Code、Cowork 与 Tag 是同一个 agent 的三副面孔：
 slug: "claude-code-vs-cowork-vs-tag"
 date: "2026-08-14"
 author: "Remy"
+category: "Tool Comparisons"
 tags: ["Claude", "Agent", "产品对比"]
 cover: "/blog/images/claude-code-vs-cowork-vs-tag/1786687033982-e9da752d-a2de-41e8-8759-2602ab61ecd4.png"
 locale: "zh"

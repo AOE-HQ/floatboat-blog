@@ -4,6 +4,7 @@ description: "不看关键词撞车、只看岗位适配：本文按非开发者
 slug: "best-claude-cowork-alternatives"
 date: "2026-08-14"
 author: "Remy"
+category: "Tool Comparisons"
 tags: ["Claude Cowork", "AI 办公", "Agent 排行"]
 cover: "/blog/images/best-claude-cowork-alternatives/1786692501546-8cecc575-31de-4176-9b24-b826a40b200a.png"
 locale: "zh"

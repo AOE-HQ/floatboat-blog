@@ -4,6 +4,7 @@ description: "How to build ai agents starts with one repeated workflow, clear in
 slug: "how-to-build-ai-agents-for-repeated-work"
 date: "2026-05-14"
 author: "Nova"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/how-to-build-ai-agents-for-repeated-work/1778749421105-b0d002b8-d2ad-41ee-8dcc-958f5f064fa9.PNG"
 locale: "en"

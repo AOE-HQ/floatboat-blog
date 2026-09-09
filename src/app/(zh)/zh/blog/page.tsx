@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { BlogIndex, BlogShell } from "@openblog/components";
+import { BlogMarketingBanner } from "@/components/blog/marketing-banner";
 
 import { site } from "@/config/site";
 import { resolveFaqForBlogIndex } from "@/lib/faq-data";
@@ -41,7 +42,11 @@ export default function ZhBlogIndexPage() {
 
   return (
     <BlogShell className="py-8 lg:py-12">
-      <BlogIndex data={data} faq={resolveFaqForBlogIndex("zh")} />
+      <BlogIndex
+        data={data}
+        faq={resolveFaqForBlogIndex("zh")}
+        marketing={<BlogMarketingBanner locale="zh" />}
+      />
     </BlogShell>
   );
 }

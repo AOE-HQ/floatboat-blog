@@ -4,6 +4,7 @@ description: "GPT-6 is coming. Before it drops, here's what solo operators shoul
 slug: "openai-gpt-6-one-person-company"
 date: "2026-04-24"
 author: "Nova"
+category: "Model & Benchmarks"
 tags: ["Label"]
 cover: "/blog/images/openai-gpt-6-one-person-company/1776999283525-c20f585a-37dc-40e8-810c-5599543af31d.PNG"
 locale: "en"

@@ -4,6 +4,7 @@ description: "Effort Control 帮助单人经营者决定：哪些任务该让 AI
 slug: "effort-control-fast-mode-ai-work"
 date: "2026-05-29"
 author: "Nova"
+category: "Model & Benchmarks"
 tags: ["Effort Control", "Fast Mode", "AI 工作流", "Claude"]
 cover: "/blog/images/effort-control-fast-mode-ai-work/1780043480579-68902de4-9057-48a7-8fca-ff70aeb4ba2f.PNG"
 locale: "zh"

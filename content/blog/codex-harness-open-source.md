@@ -4,6 +4,7 @@ description: "OpenAI's Codex harness is open on GitHub: exec, SDK, and app-serve
 slug: "codex-harness-open-source"
 date: "2026-08-27"
 author: "Judy"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/codex-harness-open-source/1787819330722-4dfae6f5-602b-4fda-88a3-d247cf4d135d.png"
 locale: "en"

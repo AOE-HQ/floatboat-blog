@@ -4,6 +4,7 @@ description: "Lindy 与 Gumloop 到底该选谁？本文从真实用例适配、
 slug: "lindy-vs-gumloop"
 date: "2026-03-20"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["AI Agent", "AI 自动化", "工具对比"]
 cover: "/blog/images/lindy-vs-gumloop/1773740299614-6f97fed0-616c-4f7e-a790-00151f378bb7.png"
 locale: "zh"

@@ -4,6 +4,7 @@ description: "了解什么是 AI 日程 Agent（AI scheduling agent）、这个�
 slug: "ai-scheduling-agent"
 date: "2026-06-29"
 author: "Tan Shaoqing"
+category: "Calendar AI"
 tags: ["AI 日程 Agent", "AI 日历 Agent", "AI 日程工具", "日历驱动 AI", "主动式日程 AI", "AI 会议排程"]
 cover: "/blog/images/ai-scheduling-agent/1782710542623-c3e3520b-3084-478b-82b4-d29dae842c00.png"
 locale: "zh"

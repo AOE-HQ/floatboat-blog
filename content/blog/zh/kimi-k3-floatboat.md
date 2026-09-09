@@ -4,6 +4,7 @@ description: "Kimi K3 现已内置 Floatboat。了解这个 2.8T 参数开源模
 slug: "kimi-k3-floatboat"
 date: "2026-07-17"
 author: "Jade"
+category: "Product Updates"
 tags: ["Kimi K3", "Floatboat", "AI 模型"]
 cover: "/blog/images/kimi-k3-floatboat/1784276142230-3fc06f49-9d34-4e6e-a7dd-4efa1b19228b.png"
 locale: "zh"

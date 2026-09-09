@@ -4,6 +4,7 @@ description: "Gemini 3.8 Flash is Google's new coding-and-agent workhorse: DeepS
 slug: "gemini-3-8-flash"
 date: "2026-09-03"
 author: "Kostja"
+category: "Model & Benchmarks"
 tags: ["Label"]
 cover: "/blog/images/gemini-3-8-flash/1788429571027-26680f28-3ebd-4c33-8fb3-1e4fab795481.png"
 locale: "en"

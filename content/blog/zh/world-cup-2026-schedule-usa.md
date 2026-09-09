@@ -4,6 +4,7 @@ description: "美国男足（USMNT）2026 世界杯赛程：D 组对阵巴拉圭
 slug: "world-cup-2026-schedule-usa"
 date: "2026-07-15"
 author: "Vera"
+category: "Calendar AI"
 tags: ["世界杯 2026", "美国队赛程", "日历提醒"]
 cover: "/blog/images/world-cup-2026-schedule-usa/1782463159643-f6d661d7-3ed7-4e6d-97f2-2136a02e0633.png"
 locale: "zh"

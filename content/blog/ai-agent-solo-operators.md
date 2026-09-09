@@ -4,6 +4,7 @@ description: "AI agents that remember your work and run while you sleep sound po
 slug: "ai-agent-solo-operators"
 date: "2026-04-15"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/ai-agent-solo-operators/1776232286449-292e644b-5389-4dc2-837f-0e5dc1eb4238.PNG"
 locale: "en"

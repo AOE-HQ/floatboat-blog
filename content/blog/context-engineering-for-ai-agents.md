@@ -4,6 +4,7 @@ description: "Context Engineering is the discipline of designing what an AI agen
 slug: "context-engineering-for-ai-agents"
 date: "2026-07-01"
 author: "Pan Yang"
+category: "AI Agents"
 tags: ["Label"]
 cover: "/blog/images/context-engineering-for-ai-agents/1782897541424-e8cf18e8-43be-443a-9450-eca948c53826.png"
 locale: "en"

@@ -4,6 +4,7 @@ description: "Google Calendar 与 Apple Calendar 之争，归根结底是生态�
 slug: "google-calendar-vs-apple-calendar"
 date: "2026-05-27"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Google Calendar", "Apple Calendar", "日程管理", "单人创业者"]
 cover: "/blog/images/google-calendar-vs-apple-calendar/1779853771871-58a4101c-8cbd-4c2f-b80a-94cc7f25abfa.PNG"
 locale: "zh"

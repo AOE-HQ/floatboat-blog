@@ -4,6 +4,7 @@ description: "Best ai agent builder options in 2026 should be compared by setup 
 slug: "best-ai-agent-builder-2026"
 date: "2026-05-18"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/best-ai-agent-builder-2026/1779086056071-6acb6d2c-dd7a-40d4-a5e6-7a31627e741e.PNG"
 locale: "en"

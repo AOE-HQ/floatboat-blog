@@ -4,6 +4,7 @@ description: "Claude Code 的替代品该怎么选？本文不按关键词重合
 slug: "best-claude-code-alternatives"
 date: "2026-08-14"
 author: "Jade"
+category: "Tool Comparisons"
 tags: ["Claude Code", "编程 Agent", "AI 编程"]
 cover: "/blog/images/best-claude-code-alternatives/1786688337472-cab72042-df03-48ba-a62b-a8a92ebc8fb4.png"
 locale: "zh"

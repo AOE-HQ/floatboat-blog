@@ -4,6 +4,7 @@ description: "AI Agent 和 Chatbot（聊天机器人）并不相同，即使它�
 slug: "ai-agent-vs-chatbot"
 date: "2026-03-20"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["AI Agent", "Chatbot", "AI 工作流", "AI 基础概念"]
 cover: "/blog/images/ai-agent-vs-chatbot/1773995253824-ec39f596-77b6-490c-9065-00ea116e745f.png"
 locale: "zh"

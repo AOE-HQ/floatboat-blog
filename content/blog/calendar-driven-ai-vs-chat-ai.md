@@ -4,6 +4,7 @@ description: "Calendar-driven AI and chat-based AI represent fundamentally diffe
 slug: "calendar-driven-ai-vs-chat-ai"
 date: "2026-06-29"
 author: "Floatboat"
+category: "Calendar AI"
 tags: ["calendar-driven AI vs chat AI", "calendar-driven AI", "proactive AI agent vs reactive chat", "calendar as AI runtime", "agentic calendar vs chatbot", "AI work paradigm comparison"]
 cover: "/blog/images/calendar-driven-ai-vs-chat-ai/1782710499853-3254dd90-cc37-494e-8587-72ae4d3c950d.png"
 locale: "en"

@@ -4,6 +4,7 @@ description: "HTML vs Markdown for AI output depends on the job: human-facing ar
 slug: "html-vs-markdown-ai-output"
 date: "2026-05-20"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/html-vs-markdown-ai-output/1779257593926-ca23f8cc-a57b-46ae-a8de-5bb5df0cb95a.JPEG"
 locale: "en"

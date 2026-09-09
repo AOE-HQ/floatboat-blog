@@ -4,6 +4,7 @@ description: "Best calendar app choices should be judged by workflow fit, cross-
 slug: "best-calendar-app-solo-operators"
 date: "2026-06-04"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Label"]
 cover: "/blog/images/best-calendar-app-solo-operators/1780539767901-7e461c3b-03ca-411f-9335-676ecb3840cd.PNG"
 locale: "en"

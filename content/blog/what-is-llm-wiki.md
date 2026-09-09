@@ -4,6 +4,7 @@ description: "The Karpathy LLM wiki went viral for a reason. Here's what it actu
 slug: "what-is-llm-wiki"
 date: "2026-04-14"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/what-is-llm-wiki/1776148737985-25d4a58e-bb1d-4197-a449-bfe2ca495d1d.png"
 locale: "en"

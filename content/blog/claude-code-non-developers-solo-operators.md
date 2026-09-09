@@ -4,6 +4,7 @@ description: "Claude Code is built for developers—but if you run a one-person 
 slug: "claude-code-non-developers-solo-operators"
 date: "2026-04-06"
 author: "Nova"
+category: "Solo Operators"
 tags: ["Label"]
 cover: "/blog/images/claude-code-non-developers-solo-operators/1775098065738-f9bed4bf-5721-4992-a329-098c1a022f2b.png"
 locale: "en"

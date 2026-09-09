@@ -4,6 +4,7 @@ description: "把 Genspark 各档位的实际权益拆开讲：免费档、Plus�
 slug: "genspark-ai-pricing"
 date: "2026-05-07"
 author: "Nova"
+category: "Tool Comparisons"
 tags: ["Genspark", "AI 订阅", "定价对比", "Sparkpages"]
 cover: "/blog/images/genspark-ai-pricing/1773920176808-93b6672b-1f60-4b7f-9e7c-b30e3754d487.png"
 locale: "zh"
