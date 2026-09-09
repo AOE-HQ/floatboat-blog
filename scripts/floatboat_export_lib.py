@@ -400,10 +400,13 @@ def normalize_heading_levels(md: str) -> str:
 
 def clean_cjk_emphasis_spacing(md: str) -> str:
     """html2text inserts an ASCII space at inline-emphasis boundaries even
-    around CJK; remove it so Chinese text keeps tight punctuation."""
+    around CJK; remove it so Chinese text keeps tight punctuation.
+
+    Only horizontal spaces are removed - `\\s+` would also swallow the
+    newline between a bold line and the next CJK paragraph line."""
     cjk = r"\u3000-\u9fff\uff00-\uffef"
-    md = re.sub(rf"(\*\*+)\s+(?=[{cjk}])", r"\1", md)
-    md = re.sub(rf"(?<=[{cjk}])\s+(\*\*+)", r"\1", md)
+    md = re.sub(rf"(\*\*+)[ \t]+(?=[{cjk}])", r"\1", md)
+    md = re.sub(rf"(?<=[{cjk}])[ \t]+(\*\*+)", r"\1", md)
     return md
 
 
