@@ -117,7 +117,9 @@ function parseFinalCtaSection(section: string): FinalCta | null {
 }
 
 /**
- * Split markdown body from trailing FAQ + final CTA blocks (Lucius CMS export pattern).
+ * Split markdown body from trailing FAQ + final CTA blocks
+ * (Lucius CMS "## heading + [Book demo](mailto:…)" pattern and Floatboat
+ * product-CTA paragraphs, both of which may follow an FAQ block).
  */
 export function splitArticleContent(content: string): SplitArticleContent {
   const faqMatch = content.match(FAQ_HEADING);

@@ -118,5 +118,3 @@ Only vetted defenders, and only through Google's Fairwind Program — there is n
 ### Does Floatboat already include Gemini 3.8 Flash?
 
 Yes. Gemini 3.8 Flash is already in Floatboat's built-in model picker next to DeepSeek, MiniMax, GLM, Kimi, Claude, and the GPT-5 family, with no API key or configuration required. Select it per event, and because each event keeps its own persistent agent workspace, you can switch models mid-task without losing context. Start with the jobs where the extra reasoning effort pays — long coding sessions and complex briefs — and leave routine work on cheaper models.
-
-**Try Gemini 3.8 Flash today.** It ships built into Floatboat — [download Floatboat](</>) for Mac or Windows, create an event, and pick Gemini 3.8 Flash as its model. No API keys, no routing code, no migration project.
