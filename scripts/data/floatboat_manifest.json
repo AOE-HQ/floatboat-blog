@@ -2124,5 +2124,19 @@
    "file": "content/blog/zh/world-cup-2026-schedule-usa.md",
    "title": "美国队 2026 世界杯赛程：开球时间、提醒与关键场次"
   }
+ },
+ "what-is-agentic-calendar": {
+  "lastmod": "2026-06-11T00:00:00.000Z",
+  "native_locale": "en",
+  "en": {
+   "status": "native",
+   "file": "content/blog/what-is-agentic-calendar.md",
+   "title": "What Is an Agentic Calendar? The Next Step Beyond Smart Scheduling"
+  },
+  "zh": {
+   "status": "native",
+   "file": "content/blog/zh/what-is-agentic-calendar.md",
+   "title": "什么是 Agentic Calendar？超越智能排程的下一步"
+  }
  }
 }
