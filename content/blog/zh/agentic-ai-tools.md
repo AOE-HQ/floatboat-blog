@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Agentic AI", "AI Agent", "单人创业"]
 cover: "/blog/images/agentic-ai-tools/1778662214560-0566d973-b6b5-4834-9cb0-48918b2fdf5f.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 我试用 agentic AI 工具已经快一年了，如果要对过去的自己说一句忠告，那就是：**这个品类名扛了太重的期待。**「Agentic AI」涵盖的范围极广——从一个能起草邮件的聊天助手，到一个能横跨整个代码库、自主跑 45 分钟任务的编程 Agent。这两者根本不是同一种工具，把它们混为一谈，只会让人失望，更糟的是给 AI 超出本意的权限。

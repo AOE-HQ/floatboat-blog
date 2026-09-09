@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Vibe Coding", "AI 编程", "单人创业者", "工作流"]
 cover: "/blog/images/what-is-vibe-coding/1776318240258-7782d4ee-7298-4a95-a248-956cb56e292f.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。上周我在整理书签——那些我发誓"晚点再读"的标签页，一如既往地乱——然后注意到一件事：我 2025 年初存进"有趣的 AI 玩意儿"文件夹的工具，一半不是死了、转型了，就是挂着一条安全事故公告。

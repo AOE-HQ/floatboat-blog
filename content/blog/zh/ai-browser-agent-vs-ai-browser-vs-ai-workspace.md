@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["浏览器 Agent", "AI 浏览器", "AI 工作区", "单人创业者"]
 cover: "/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778559099169-e10dc318-040b-46dd-af3f-fc612c5fcf4e.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。过去几周，我在三个类别的工具之间来回切换——它们在宣传文案里听起来差不多，实际干的事却大不一样：浏览器 Agent 扩展、[AI 原生浏览器](<https://en.wikipedia.org/wiki/AI_browser>)、桌面 AI 工作区。每个产品页面都在某个角落用到「AI」「浏览器」「Agent」这几个词，看久了就全都糊在一起。于是我坐下来，想弄清楚界线到底画在哪里——因为如果你是一个人单干，选错品类，浪费的是你最找不回来的东西：搭建时间。

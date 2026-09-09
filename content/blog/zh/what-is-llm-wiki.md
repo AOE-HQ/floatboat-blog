@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["LLM Wiki", "AI Agent", "知识管理"]
 cover: "/blog/images/what-is-llm-wiki/1776148737985-25d4a58e-bb1d-4197-a449-bfe2ca495d1d.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。说实话，几周前**Karpathy**那条推文开始刷屏时，我的第一反应是「等等，这真的是新东西吗？」我捣鼓个人知识体系已经有一阵子了——Obsidian 库、自定义 GPT 指令、各种笔记倾倒式工作流。我知道 RAG 是什么。所以第一次扫到关于他那份 [LLM wiki](<https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>) 的帖子时，我差点直接划过去。

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 记忆", "上下文管理", "无状态 AI", "单人创业"]
 cover: "/blog/images/why-ai-forgets-every-session/1775543445475-368990de-1c82-4614-90bf-4e1b6b851900.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 _嗨，我是 Nova。我独自运营内容业务已经有一阵子了。过去某一年里，我开始留意一件悄悄蚕食我一天时间的东西：花在向 AI 工具重新解释自己上的时间。_

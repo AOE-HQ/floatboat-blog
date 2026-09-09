@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 助手", "单人创业", "AI Agent"]
 cover: "/blog/images/ai-assistant-for-personal-use-at-work/1778661709595-55d8271d-91a0-4e90-98b8-98f83d665c5a.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。大约 18 个月前，我开始在工作中使用 AI 助手。真正改变我工作方式，花了大概三个月——不是因为工具不行，而是因为我一直把它当成一个更聪明的搜索引擎。

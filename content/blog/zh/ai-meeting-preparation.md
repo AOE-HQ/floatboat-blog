@@ -7,7 +7,7 @@ author: "Floatboat"
 tags: ["AI 会前准备", "日历驱动", "AI Agent", "会议效率"]
 cover: "/blog/images/ai-meeting-preparation/1782710556764-3b8a5e76-8fb4-42f9-80ba-d9ff389319fd.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

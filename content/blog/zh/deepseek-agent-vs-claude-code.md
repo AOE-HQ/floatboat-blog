@@ -7,7 +7,7 @@ author: "Vera"
 tags: ["DeepSeek", "AI 编程", "Claude Code"]
 cover: "/blog/images/deepseek-agent-vs-claude-code/1785730534671-93151505-4783-42c7-a4f0-436a2962d0f0.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

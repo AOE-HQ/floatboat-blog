@@ -7,7 +7,7 @@ author: "Remy"
 tags: ["Flow Mode", "语音口述", "Floatboat"]
 cover: "/blog/images/introducing-flow-mode/1787110344906-2931cdb2-0395-4367-927b-41b769591fc0.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

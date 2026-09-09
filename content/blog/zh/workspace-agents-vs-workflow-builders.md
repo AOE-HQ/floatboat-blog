@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["工作区 Agent", "工作流搭建器", "AI 自动化", "单人经营者"]
 cover: "/blog/images/workspace-agents-vs-workflow-builders/1777341351447-26891077-6fbd-4d37-8b62-14477dd48340.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。上周有个小瞬间，促使我写下这篇。一位经营一人咨询公司的朋友问我："我该学 Zapier，还是学那些新的 AI 工作区里的东西？"她看了太多帖子、太多对比，结果比开始时更糊涂了。

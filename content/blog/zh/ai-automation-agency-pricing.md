@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 自动化", "定价", "单人创业"]
 cover: "/blog/images/ai-automation-agency-pricing/1773741753347-399bc4f1-9844-457f-8efd-6c76ac9ba8b5.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 大家好，我是 Nova，一个热衷于探索新工具的创作者和 AI 学习者。日常工作里，我会钻进各种 AI 工具，把真实的学习经历写下来。过去几个月，为了一个客户项目，我和三家不同的 AI 自动化机构打过交道。一家报价 2,500 美元，另一家开价 18,000 美元——听上去却是差不多的活。

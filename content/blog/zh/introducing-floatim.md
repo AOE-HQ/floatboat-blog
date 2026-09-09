@@ -7,7 +7,7 @@ author: "Floatboat Team"
 tags: ["FloatIM", "Agent 原生消息", "多 Agent 协作", "AI 群聊", "与 AI Agent 对话"]
 cover: "/blog/images/introducing-floatim/1782710364987-7c54039b-3629-4fbf-846d-062532c5ae38.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 这篇文章是 **FloatIM** 产品故事的长文版——同样的主张，但给"为什么"和取舍留出更多篇幅。如果你已经被说服，直接拉到文末试用应用，回程再读。

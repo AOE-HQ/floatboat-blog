@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "Agent 搭建", "自动化"]
 cover: "/blog/images/how-to-build-ai-agents-for-repeated-work/1778749421105-b0d002b8-d2ad-41ee-8dcc-958f5f064fa9.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 大家好，我是 Nova。跟你说句实话——我花了三周时间试图搭建我「完美」的 AI Agent 系统，结果一个能用的都没跑起来。架构图画得是真漂亮，实际产出呢？零。所以如果你是想找一篇「20 组件多 Agent 流水线」的讲解，你来错地方了。我能给你的，是那个终于让我用一个下午就做出可用 Agent 的框架——它只盯着**重复性工作**，而不是宏大自动化野心。

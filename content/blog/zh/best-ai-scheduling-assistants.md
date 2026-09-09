@@ -7,7 +7,7 @@ author: "Floatboat"
 tags: ["最佳 AI 日程助手", "AI 日程工具对比", "智能排程", "AI 日历自动化", "Agentic Calendar", "AI 时间管理"]
 cover: "/blog/images/best-ai-scheduling-assistants/1782710522338-443c7736-110b-40eb-9203-41f4cf720a27.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

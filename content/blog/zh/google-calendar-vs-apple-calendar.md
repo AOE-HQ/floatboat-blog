@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Google Calendar", "Apple Calendar", "日程管理", "单人创业者"]
 cover: "/blog/images/google-calendar-vs-apple-calendar/1779853771871-58a4101c-8cbd-4c2f-b80a-94cc7f25abfa.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **大家好，我是 Nova。关于 Google Calendar 还是 Apple Calendar**——这个问题我在关注的每一个单人经营者社群里都不断看到，而多数回答最后都落成一张功能对比表，告诉不了你有用的信息。所以我想说说我实际是怎么想这个问题的——毕竟我这些年一直把两套日历并排用在自己的工作流里。

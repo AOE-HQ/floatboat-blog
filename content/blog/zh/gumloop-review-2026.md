@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Gumloop", "无代码自动化", "AI Agent", "工具评测"]
 cover: "/blog/images/gumloop-review-2026/1774256136741-8c5fad55-61e8-4d7d-8cc2-cbb506963241.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 _好久不见，我是 Nova。我最近花了不少时间测试**AI 工作流工具**——不是有人让我测，而是老实说，我总在撞见同一个问题：标签页太多、手动步骤太多、时间不够用。_[Gumloop](<https://www.gumloop.com/>) _在我的调研里反复出现，所以我终于坐下来认真把它用了一遍。_

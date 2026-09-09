@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "Chatbot", "AI 工作流", "AI 基础概念"]
 cover: "/blog/images/ai-agent-vs-chatbot/1773995253824-ec39f596-77b6-490c-9065-00ea116e745f.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 _嗨，我是 Nova——一个花了太多时间测试 AI 工具、并把它们真实使用体验写成文章的创作者。我研究 AI 工具已经有一阵子了，我承认：这两个词困扰我的时间，比我想承认的还久。如果你也一直把「AI agent」和「Chatbot」当成同义词在用，你不是一个人。这篇文章就把它们讲清楚。_

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["浏览器 AI Agent", "AI Agent", "单人创业"]
 cover: "/blog/images/browser-ai-agent-what-it-can-do/1778482655208-315ad4a1-77a4-46d4-aa0b-4f1848273b52.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。上个月我看了一场演示：一个**浏览器 AI Agent**填好了 CRM 记录、起草了一封跟进邮件、还拉出了仪表盘数据——全部来自一条提示词。看起来不可思议。然后我在自己的账号上试着复现，结果花了二十分钟授权，随后 Agent 看错了一个日期字段，往 Salesforce 里写进了垃圾数据。

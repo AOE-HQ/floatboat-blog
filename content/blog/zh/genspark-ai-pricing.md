@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Genspark", "AI 订阅", "定价对比", "Sparkpages"]
 cover: "/blog/images/genspark-ai-pricing/1773920176808-93b6672b-1f60-4b7f-9e7c-b30e3754d487.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。我断断续续用 Genspark 大概三个月了，主要做研究简报和偶尔做点幻灯片。一直让我烦心的是定价——不是因为它贵，而是因为你在注册之前几乎搞不清它怎么收费。你甚至不先建个账号就看不到完整的方案细节。

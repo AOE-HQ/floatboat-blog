@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Relevance AI", "n8n", "AI Agent"]
 cover: "/blog/images/relevance-ai-vs-n8n/1775027011114-2f3b82c3-c427-4577-9fae-e3385ff178af.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 好久不见，我是 Nova。我坐在那，浏览器开着两个标签页——一边是 [Relevance AI](<https://relevanceai.com/>)，一边是 [n8n](<https://n8n.io/?ps_partner_key=ZWFiZDIyYjkwZTFl&ps_xid=a2QKHm2KuZ1wkV&gsxid=a2QKHm2KuZ1wkV&gspk=ZWFiZDIyYjkwZTFl&gad_source=1>)——想搞明白为什么大家总把这两者在同一个话题里提起。它们都解决自动化问题，这没错。但挖得越深，我越意识到它们其实在为完全不同的人解决_非常不同_的问题。说实话，一开始这让我很困惑。

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["GPT Image", "AI 绘图", "分镜"]
 cover: "/blog/images/gpt-image-2-storyboard-solo/1777087203252-67197c48-76f8-4e00-a613-b150e8f7adc4.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。上周我亲自试了这件事：一支产品短视频的 24 帧分镜——主角手拿一个咖啡随行杯、三个场景、一段连续的行走。放在以前，这种活我通常会请分镜师，或者干脆自己画一些潦草的简笔画缩略图凑合。

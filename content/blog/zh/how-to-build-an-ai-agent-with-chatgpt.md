@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["ChatGPT", "Custom GPT", "AI Agent", "无代码"]
 cover: "/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182678556-ccbcfcb2-5c42-46b8-a82e-7d13e9ec7fa7.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 好久不见，我是 Nova。上周二我花了大约一小时，把一个乱糟糟的内容调研工作流，改造成一条在 ChatGPT 里基本能自己跑的东西。不是用代码，也不是用 API。只是 Custom GPT 构建器、几个上传的文件，外加一段我重写了三次才真正能用的说明。

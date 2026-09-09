@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Claude", "AI Agent", "AI 基础设施"]
 cover: "/blog/images/what-are-claude-managed-agents/1775730561883-47b39a9c-89b4-4323-a051-3a97af2dda5e.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 昨天早上我在读 Anthropic 的发布说明——主要是因为我有个 obsessive 地追踪这些东西的习惯——然后有句话让我在滚动中停了下来。「完全托管的 Agent 基础设施。在带持久事件历史的有状态会话中部署并管理自主 Agent。」

@@ -7,7 +7,7 @@ author: "Judy"
 tags: ["世界杯", "2026 世界杯", "对阵表"]
 cover: "/blog/images/world-cup-2026-bracket/1783514290356-138ce168-436f-457e-96a0-6642e36a9f14.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

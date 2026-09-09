@@ -7,7 +7,7 @@ author: "Jackson"
 tags: ["2026 世界杯", "ICS", "日历订阅", "Google Calendar", "足球赛程"]
 cover: "/blog/images/world-cup-2026-google-calendar-ics/1783564724894-58d74578-5163-46d0-a378-e5a1c7dcd1ee.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

@@ -7,7 +7,7 @@ author: "Ketd"
 tags: ["Claude Code", "AI 编码 Agent", "Claude", "Agentic 编程"]
 cover: "/blog/images/what-is-claude-code/1786687427774-ec3aed5d-9327-46ae-a151-36bad3f4892c.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

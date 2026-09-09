@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["OpenAI", "GPT-6", "单人创业者", "AI 工作流"]
 cover: "/blog/images/openai-gpt-6-one-person-company/1776999283525-c20f585a-37dc-40e8-810c-5599543af31d.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。几个月来我一直有一搭没一搭地关注 GPT-6 的传闻周期，主要因为运营一人业务的朋友们总问我同一个问题：_我是不是该做点什么准备？_

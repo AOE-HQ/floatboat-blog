@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["一人公司", "AI Agent", "单人创业者"]
 cover: "/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773825201064-9d872af9-1dad-4943-aac5-c9406197db10.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嘿，又见面了，朋友。我是 Nova。上个周二——调研笔记、内容初稿、月度数据，全挤在同一个下午。六个标签页开着，哪一件都没推进。到某个时刻我干脆停了下来。_为什么这事还是这么费劲？_

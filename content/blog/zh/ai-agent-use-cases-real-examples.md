@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "应用场景", "工作流", "单人创业者"]
 cover: "/blog/images/ai-agent-use-cases-real-examples/1773826490323-3f61f515-1b1a-4322-9251-519d32b6dd0f.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 大家好，我是 Nova。我最近花了不少时间研究**AI Agent 的应用场景**——一部分是工作需要，一部分是单纯好奇。而我一再碰到的问题是：市面上大多数案例研究其实没什么用。

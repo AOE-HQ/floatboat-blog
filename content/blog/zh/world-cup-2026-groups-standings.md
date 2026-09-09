@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["世界杯", "2026 世界杯", "小组赛", "世界杯分组"]
 cover: "/blog/images/world-cup-2026-groups-standings/1783513886835-e9bc6a31-19ae-414f-8414-85682f20e7f2.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

@@ -7,7 +7,7 @@ author: "Remy"
 tags: ["Claude", "Agent", "产品对比"]
 cover: "/blog/images/claude-code-vs-cowork-vs-tag/1786687033982-e9da752d-a2de-41e8-8759-2602ab61ecd4.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

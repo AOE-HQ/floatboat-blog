@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["定制 AI Agent", "AI Agent 开发", "AI 成本", "无代码 AI 工具", "AI 选型"]
 cover: "/blog/images/custom-ai-agent-development/1774580576067-d0eab05d-e7ad-4ac3-b954-bf7bd4f429ad.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 好久不见！我是 Nova。过去一年我深耕 AI 工具领域——测试无代码工作流搭建器、摆弄各种 Agent 框架、观察单人创业者和创业小团队到底怎么把这套东西用起来。而在我加入的每个创始人论坛和创作者社区里，一个问题反复出现：**「我是不是该雇人帮我定制一个 AI Agent？」**

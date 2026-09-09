@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "无状态 AI", "单人创业者"]
 cover: "/blog/images/why-ai-forgets-between-sessions/1775794175781-80a07b02-e821-4fbb-b39b-b94eb278860a.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 朋友们，你们好吗？我是 Nova。上周我在为一个新内容项目写提案。我打开 [ChatGPT](<https://chatgpt.com/>)，开始解释这个项目是做什么的、客户是谁、他们偏好什么语气、以及上一轮会话里我已经起草了什么。十分钟后，我停下打字，就那么盯着屏幕。

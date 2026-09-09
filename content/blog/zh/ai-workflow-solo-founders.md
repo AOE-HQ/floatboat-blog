@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 工作流", "单人创业者", "AI Agent", "一人公司"]
 cover: "/blog/images/ai-workflow-solo-founders/1775794408355-842bca71-e51d-4c6c-8280-a962f25749d6.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。上周二我正重新整理内容日历——标签页开了一堆、三个不同的 AI 工具同时在跑、笔记散落在两个应用里——然后我停下来想：我用 AI 已经整整一年多了，可我的真实工作流感觉还是用胶带粘出来的。

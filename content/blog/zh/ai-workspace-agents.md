@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 工作区 Agent", "工作区 Agent", "AI Agent", "单人经营者"]
 cover: "/blog/images/ai-workspace-agents/1776938878052-6b014d80-d7df-44ac-a9cc-7ca100b7648f.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 上周有人问我，我说的"工作区 Agent"到底指什么。这个词我随口用了好几个月，却从没真正定义过——说来好笑，因为这个品类的工具一直在悄悄变多：截至 2026 年 4 月下旬，[OpenAI 给它的新 ChatGPT 功能起的名字，几乎就正是这个词](<https://openai.com/index/introducing-workspace-agents-in-chatgpt/>)。这个词正在迅速变得拥挤。

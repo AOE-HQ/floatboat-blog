@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 工作区", "工作流构建器", "自动化", "单人创业"]
 cover: "/blog/images/workflow-builder-vs-ai-workspace/1774257401587-7c2850f6-9966-440d-a14e-06efc1095f2b.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。[Workflow Builder](<https://www.ibm.com/docs/en/tap/5.0.0?topic=building-workflow-builder>) 对比 [AI Workspace](<https://workspace.google.com/intl/en/solutions/ai/>)——我一直在跟一个正在搭建单人咨询业务的朋友解释这个区别。她不停地问：「那我到底需要哪一个？」老实说，在花了几个月把这两类都测过之后，我觉得这种困惑完全合理——营销话术把它们说得几乎一模一样。但它们根本不是一回事。

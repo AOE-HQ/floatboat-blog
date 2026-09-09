@@ -7,7 +7,7 @@ author: "Floatboat Team"
 tags: ["Raycast", "Windows 效率工具", "Floatboat", "AI Agent 工作区"]
 cover: "/blog/images/raycast-for-windows-floatboat/1788445703727-512a806e-63ee-41c0-83b7-100e16fe7911.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 _如果你一直在搜「Raycast for Windows」，你不是一个人。成千上万的 Windows 用户羡慕 Mac 用户拥有的那款东西——一个快如闪电、纯键盘驱动、而且真懂他们怎么干活的启动器。但如果答案根本不是 Raycast 的克隆版，而是一个本质更好的东西呢？_

@@ -7,7 +7,7 @@ author: "Remy"
 tags: ["TikTok Shop", "FastMoss", "AI Agent", "浏览器自动化", "FloatSchedule"]
 cover: "/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["HTML", "Markdown", "AI 工作流"]
 cover: "/blog/images/html-vs-markdown-ai-output/1779257593926-ca23f8cc-a57b-46ae-a8de-5bb5df0cb95a.JPEG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嘿，是我，Nova。我一直在收到的问题——来自朋友、私信和评论——各种变体都在问同一件事：现在是不是该让我的 AI Agent 输出 HTML，而不是 Markdown？

@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["Doubao", "Doubao Work", "ByteDance", "AI office agent", "Feishu"]
 cover: "/blog/images/what-is-doubao-work/1787815178386-28c2840d-8060-4cc0-9975-4f806e98577e.png"
 locale: "en"
-draft: true
+draft: false
 ---
 
 **TL;DR**

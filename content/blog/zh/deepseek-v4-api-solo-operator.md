@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["DeepSeek V4", "API 成本", "单人创业者", "LLM API"]
 cover: "/blog/images/deepseek-v4-api-solo-operator/1776413247809-72ec2a34-7233-43a8-a56d-c9064bb29c82.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。最近我一直在密切跟踪 DeepSeek 的定价——一半出于好奇，一半因为 API 成本是那种当你什么都自己扛时会悄悄啃食利润的东西。

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["LLM", "知识库", "AI 工作区"]
 cover: "/blog/images/llm-knowledge-base-solo-operators/1775455452599-90f54b5f-b9b3-446e-9364-3e42f65a83e6.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 好久不见，我是 Nova。当时我正在处理一份客户交付物，[Andrej Karpathy 关于 LLM 知识库的那条帖子](<https://x.com/karpathy/status/2039805659525644595>) 冲到了 120 万浏览量。我读完它，感到那股熟悉的拉力——_哦，这个有意思_——然后花了大约二十分钟认真琢磨：我是不是该放下手头的事，把整套研究体系重建一遍。

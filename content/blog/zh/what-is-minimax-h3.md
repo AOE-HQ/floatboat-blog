@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["MiniMax H3", "AI 视频生成", "全模态模型", "开放权重"]
 cover: "/blog/images/what-is-minimax-h3/1785813221388-1557c06d-300d-4ec4-a4a9-d496cbd7c094.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["飞书", "飞书 CLI", "单人创业"]
 cover: "/blog/images/feishu-cli-solo-work-setup/1774921782461-de6832c6-5370-4750-ba3b-cc22ebc5f705.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。最近，[飞书官方开源了 Lark CLI](<https://github.com/riba2534/feishu-cli>)，瞬间引爆了开发者与 AI Agent 社区。很多人在讨论：这下终于可以让 Claude、Cursor 之类的 AI 助手用一条命令直接操控飞书的消息、日历、文档和多维表格了……

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "构建工具", "工作流自动化"]
 cover: "/blog/images/best-ai-agent-builder-2026/1779086056071-6acb6d2c-dd7a-40d4-a5e6-7a31627e741e.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。过去大约八个月里，我断断续续搭了不少小型 AI Agent——大部分是「调研到成稿」流水线和几个客户项目里的线索分派工作流。每隔几周就有人问我同一个问题：到底该用哪个**AI Agent 构建工具**？

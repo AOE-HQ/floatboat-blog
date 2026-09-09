@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 自动化", "单人创业者", "工具选型", "工作流"]
 cover: "/blog/images/ai-tools-for-business-automation-2026/1778826913191-9404b5ae-6142-4515-b400-536b2fa11f21.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。我自己运营内容业务已经有一段时间了，一直有相似处境的朋友问我同一个问题，大意是：_"做自动化，我到底该用哪些 AI 工具？"_

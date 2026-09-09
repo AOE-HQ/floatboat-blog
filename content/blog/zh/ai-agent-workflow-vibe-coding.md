@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "Vibe Coding", "Agent 工作流", "AITDD"]
 cover: "/blog/images/ai-agent-workflow-vibe-coding/1776651617043-2a925e03-5c61-429e-9390-e2c4cdf103db.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。大约从 2025 年年中开始，我认真关注起这个问题——起因是我关注的不同社区里反复出现同一种模式：有人用 AI 很快把东西做出来，头两周爽得不行，然后花上一个月去收拾一个自己都看不懂的烂摊子。

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Agentic AI", "自研还是购买", "单人创业者"]
 cover: "/blog/images/building-agentic-ai-systems-build-or-buy/1779416315684-9a5f20eb-e1a7-42db-ae44-cc0ceaf77299.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。这个问题我反复纠结了好几周。我有几条跑得通的 AI 工作流——内容调研、客户信息分类、周报生成，大多是 Custom GPT。简单、有用、挺好。但最近我不断撞到它们的能力边界，问题也从「怎么构建一个 Agent」变成了更难的那个：我是要围绕这些东西自研一整套系统，买现成的，还是花钱让别人来搭？

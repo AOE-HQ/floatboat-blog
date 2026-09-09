@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["单人创业者", "定价", "自由职业", "商业模式"]
 cover: "/blog/images/solopreneur-pricing-day-one/1776074913528-787456c2-7200-46cb-a7ba-84e32a402425.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 大家好，我是 Nova。我以前以为"晚点再收费"是合理的：先攒点经验、建立信心、证明这套东西能跑，然后再亮出一个数字。

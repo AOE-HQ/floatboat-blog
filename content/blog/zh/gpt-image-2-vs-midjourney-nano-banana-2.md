@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 绘图", "GPT Image", "Midjourney"]
 cover: "/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258012756-3cdd7264-9746-4fb6-91db-2aa7605b6c70.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 这三个工具里，我付费用其中两个已经超过一年，最近刚补上第三个。所以我觉得现在是写下真实想法的时候了——不是功能清单，而是那个关键问题：**如果你是一名要挑一个「住进去」的单人创作者，该选哪个？**

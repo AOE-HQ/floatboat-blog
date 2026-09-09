@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Claude Code", "Linux", "隐私", "本地开发"]
 cover: "/blog/images/oh-my-codex-vs-superpowers/1777514461509-019a42cd-60f0-4a98-a14e-15689382a93a.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。大约六周前，我把整套 AI 编码环境从浏览器标签页换到了终端，最让我意外的不是速度或工作流，而是：我不再对把代码贴进去这件事感到别扭了。

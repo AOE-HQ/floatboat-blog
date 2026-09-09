@@ -7,7 +7,7 @@ author: "Kostja"
 tags: ["GPT-6 Astra", "OpenAI", "AI Agent", "网络安全", "模型评测"]
 cover: "/blog/images/gpt-6-astra/1788496075502-7b01a53f-db8d-49cb-8844-0afcaa9d04aa.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

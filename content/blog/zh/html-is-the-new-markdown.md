@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["HTML", "Markdown", "AI 输出", "Claude Code"]
 cover: "/blog/images/html-is-the-new-markdown/1779256712079-199ac290-7f16-4930-935c-b32be4a734cc.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。上周我用 Markdown 给一个项目计划排版排到一半——老一套，井号、破折号、嵌套列表——然后我打开了旁边的浏览器标签页，看了看自己实际产出的东西：一整面等宽字体的文字。没有颜色，没有视觉分组，没有任何能告诉大脑该先看哪里的东西。

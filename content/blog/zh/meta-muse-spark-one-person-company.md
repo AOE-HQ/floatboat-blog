@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Meta Muse Spark", "GPT-5.4", "模型选择", "单人创业者", "工作流"]
 cover: "/blog/images/meta-muse-spark-one-person-company/1777599263146-c698e3b7-2cc3-48d2-9516-374977aac95e.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。上周三一个朋友发消息问我："你看到 Muse Spark 了吗？我现在用的是 GPT-5.4——该不该换？"

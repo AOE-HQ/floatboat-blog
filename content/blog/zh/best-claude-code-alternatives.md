@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["Claude Code", "编程 Agent", "AI 编程"]
 cover: "/blog/images/best-claude-code-alternatives/1786688337472-cab72042-df03-48ba-a62b-a8a92ebc8fb4.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["单人创始人", "获客", "社群", "微 SaaS"]
 cover: "/blog/images/first-100-customers-solo-founder/1775614789972-3bf9b5ce-b21a-494c-af63-d2b68b8f1b28.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。每个单人创始人都会经历一个阶段，而没有人真正为你提前准备好。

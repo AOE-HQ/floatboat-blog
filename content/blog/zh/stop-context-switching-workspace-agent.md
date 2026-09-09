@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["上下文切换", "工作区 Agent", "单人经营者", "专注力"]
 cover: "/blog/images/stop-context-switching-workspace-agent/1777599600509-10571637-8b09-45c4-b74b-09c0f5756b91.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。上个月，我注意到自己工作日里一件挺尴尬的事。我打开一份文档，想写点具体的东西。四十分钟之内，我开了十一个标签页，其中三个我都不记得为什么打开；而我最初那份文档里，只有两句话。文档不难，工作不难。_留在里面不跑开_才难。

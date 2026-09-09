@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 邮件", "会议跟进", "Claude Opus 4.8", "AI 工作流"]
 cover: "/blog/images/ai-follow-up-email-opus-4-8/1780822513606-bbdb8519-6256-4301-a0b9-6fdd60005896.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 大家好，我是 Nova。一封**AI 跟进邮件**能在你咖啡还没喝完时，就把会后总结草拟好、拆出行动项、指定负责人、设好截止日期。过去两个月，我把这类工作流嵌进了每周日程，而最让我意外的不是速度，而是：我对一场会议结束的「恐惧」，真的少了很多。

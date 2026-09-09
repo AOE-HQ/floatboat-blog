@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["日历应用", "单人创业者", "时间管理", "效率工具"]
 cover: "/blog/images/best-calendar-app-solo-operators/1780539767901-7e461c3b-03ca-411f-9335-676ecb3840cd.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。如果你在经营一家一人公司，正在找**最好用的日历应用**——答案跟哪款长得最好看关系不大，更取决于你的工作日实际是怎么流动的。我已经来回折腾日历方案很久了，一直在测试什么能留下来、什么在制造摩擦。下面就是我会对一个来问我的朋友说的话。

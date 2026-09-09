@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["世界杯", "体育分析", "2026"]
 cover: "/blog/images/world-cup-2026-bracketology/1783684368238-f41ce444-987a-46be-ab6c-197928df36eb.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

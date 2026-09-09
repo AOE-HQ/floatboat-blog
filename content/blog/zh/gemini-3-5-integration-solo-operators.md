@@ -8,7 +8,7 @@ author: "Nova"
 tags: ["Gemini", "AI 工具", "单人创业"]
 cover: "/blog/images/gemini-3-5-integration-solo-operators/1779327361164-3a4f4c15-1174-4518-ab31-17dbca050535.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 大家好，我是 Nova。Gemini 3.5 Flash 上周发布了。如果你正一个人经营、而且 AI 已经进了你的工作流，真正的问题不是「它好不好」，而是**这次 Gemini 3.5 集成到底有没有改变你干活的方式，还是只是多了一个要管理的模型。**我花几天时间在自己的真实任务上测了它——长文档、内容草稿、数据提取——下面是我会告诉一位问我「值不值得换」的朋友的话。

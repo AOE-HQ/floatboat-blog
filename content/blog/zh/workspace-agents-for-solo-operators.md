@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["工作区 Agent", "单人创业者", "一人公司", "AI Agent", "AI 工作流"]
 cover: "/blog/images/workspace-agents-for-solo-operators/1777428082293-60053bd7-b18e-4e7c-a5a6-a39710bc117b.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。上周我跟一位朋友喝了杯咖啡——她经营着一家小型咨询业务：一个人、没有雇员、收入不错、但永远只差一封邮件就会崩溃。她给我看了她的标签页现状：四十七个打开的标签页、三份「马上要写完」拖了两周的文档、还有一个 Slack——她周二开始就不再看了，因为撞上了某个看不见的阈值，就是看不进去了。

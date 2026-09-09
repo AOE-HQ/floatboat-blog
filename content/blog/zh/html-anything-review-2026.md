@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["html-anything", "AI 工具评测", "HTML"]
 cover: "/blog/images/html-anything-review-2026/1779257373659-eede2b32-f48f-43ff-99b0-6b2e5d197b1b.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 大家好，我是 Nova。所以当「HTML 是新的 Markdown」那场争论打响、人人都在聊更丰富的 agent 输出时——大约一周之后——一个工具冒出来，基本是在说：行，这是真正做成这件事的基础设施。不只是谈谈，是真做。

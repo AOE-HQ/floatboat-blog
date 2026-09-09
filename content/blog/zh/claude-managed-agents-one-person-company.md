@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Claude Managed Agents", "单人创业者", "Agent 自动化", "工作流"]
 cover: "/blog/images/claude-managed-agents-one-person-company/1776822497021-9f7925a6-7df8-4b45-8874-4b85b4b3907b.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。我一直比较关注 Agentic AI 这个领域，但大多站在外围：读文档、跟开发者的讨论、偶尔试一些半成品。所以当 Anthropic 于 2026 年 4 月 8 日公开 beta 发布 [Claude Managed Agents](<https://www.anthropic.com/engineering/managed-agents>) 时，我留意了。

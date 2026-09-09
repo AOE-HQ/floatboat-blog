@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["单人创业者", "AI 工作流", "上下文记忆", "一人公司"]
 cover: "/blog/images/ai-workflow-for-solo-founders/1776149030005-3969a82c-18c3-45df-90bc-1b060d4b2aab.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嘿，我是 Nova。这个问题我琢磨很久了。

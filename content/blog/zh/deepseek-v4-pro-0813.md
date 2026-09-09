@@ -7,7 +7,7 @@ author: "Judy"
 tags: ["DeepSeek", "V4 Pro", "大模型", "Agent 基准"]
 cover: "/blog/images/deepseek-v4-pro-0813/1786684761358-df353ff3-1758-420a-99ea-593ebe093d5a.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

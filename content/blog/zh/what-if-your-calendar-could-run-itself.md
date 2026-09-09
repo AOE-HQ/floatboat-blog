@@ -7,7 +7,7 @@ author: "Floatboat Team"
 tags: ["日历驱动 AI", "Calendar-Driven AI"]
 cover: "/blog/images/what-if-your-calendar-could-run-itself/1784877610953-fe7fe8c0-e2c4-450b-a38c-378d828b5b64.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 #

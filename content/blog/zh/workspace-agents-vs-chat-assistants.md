@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["工作区 Agent", "AI 助手", "AI 工作区"]
 cover: "/blog/images/workspace-agents-vs-chat-assistants/1776999718549-5b1e23ce-2907-492f-9963-a02524c6ed7a.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 大家好，Nova 来了。前几天有位朋友给我发来一张截图——某个新「AI 工作区」工具的产品页——然后问：_这跟 ChatGPT 真有区别，还是只是换了一层皮？_ 几个月来我一直收到各种版本的这个问题。说实话，我理解大家为什么会这么问。这个品类不断给自己发明新名字，各工具之间的营销文案也开始听起来一个样。

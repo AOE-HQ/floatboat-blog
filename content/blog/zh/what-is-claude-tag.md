@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["Claude", "Claude Tag", "Slack", "AI 队友"]
 cover: "/blog/images/what-is-claude-tag/1785400760013-75037f09-35a5-49b4-ac29-729fff4919c9.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

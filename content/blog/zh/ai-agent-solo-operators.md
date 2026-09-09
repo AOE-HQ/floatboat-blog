@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "单人创业者", "一人公司", "工作流自动化"]
 cover: "/blog/images/ai-agent-solo-operators/1776232286449-292e644b-5389-4dc2-837f-0e5dc1eb4238.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。这个问题我在心里放了很久。不是说那种"深刻的哲学沉思"，更像是深夜十一点看着自己的工作流时冒出来的念头——是不是存在一个更好的版本。

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Genspark", "AI Agent", "单人创业者"]
 cover: "/blog/images/genspark-super-agent-explained/1779673311946-3b863d62-7bb2-4e7c-a5d2-42a676849fdb.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。Genspark Super Agent 一直出现在我的信息流里，「你试过了吗」的消息也收到够多，我终于认真用了它一段时间。简单说：它不是聊天机器人，更像一个指挥中心——把你的请求拆成若干块，再派不同的 AI 模型去分别处理。这个区别对你的工作有没有意义，就是这篇文章要讲的。

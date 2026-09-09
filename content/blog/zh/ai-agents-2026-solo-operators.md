@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "单人创业者", "AI 自动化"]
 cover: "/blog/images/ai-agents-2026-solo-operators/1775543065045-9764787e-30c4-4492-9b3e-5ff4ec3a104a.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 大家好，我是 Nova。今天想聊聊 [AI agents](<https://www.stackai.com/blog/the-2026-guide-to-agentic-workflow-architectures>)。

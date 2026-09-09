@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Lark", "飞书", "CLI", "AI 工作流", "单人创业者"]
 cover: "/blog/images/lark-cli-when-to-use-it/1774843116525-8b1fab5d-cd72-4ea8-9640-cda8f4e79d7c.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。今天跟你分享些新东西。上个月我在搭一个新工作流——一点都不复杂，只是想让我的 Lark 消息自动流进一个任务清单。够简单的需求，对吧？于是我开搜 **Lark CLI**，两个小时后，我已经深陷在 App ID、OAuth 回调 URL 和 token 过期逻辑里。

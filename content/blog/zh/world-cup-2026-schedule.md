@@ -7,7 +7,7 @@ author: "Eathen"
 tags: ["世界杯 2026", "赛程", "日历订阅"]
 cover: "/blog/images/world-cup-2026-schedule/1782464350603-376acd2b-c815-490e-a0be-105fe9554a9e.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

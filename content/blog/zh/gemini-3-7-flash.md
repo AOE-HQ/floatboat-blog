@@ -7,7 +7,7 @@ author: "Remy"
 tags: ["Gemini 3.7 Flash", "GLM-5.3", "后训练", "AI Agent"]
 cover: "/blog/images/gemini-3-7-flash/1786704422108-074d5638-c707-43da-bceb-6b782f31c96e.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

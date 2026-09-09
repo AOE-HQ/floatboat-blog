@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "构建指南", "AI 开发"]
 cover: "/blog/images/how-to-build-an-ai-agent/1774419094012-12b90959-f544-4cac-887f-83f62be9cb0f.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，Nova 来了~ 我在 AI 工具圈里摸爬滚打已经有一阵子了，最近到处都能看到同一个问题：**「我该怎么构建一个 AI Agent？」**

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "安全", "浏览器自动化"]
 cover: "/blog/images/browser-ai-agent-security-questions/1778563937090-298eee0e-5d27-4059-8761-8be6e622f89b.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 Nova 来了。我关注的一个单人创业者社群里，有人发的一句话让我印象很深：「我把 Gmail 权限给了 Claude for Chrome，然后就这么看着它自己跑。当时没觉得怎样，等我想明白自己刚才做了什么，才有点后怕。」

@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["Grok", "xAI", "AI 模型"]
 cover: "/blog/images/grok-4-6/1786685120574-31a14661-f4e6-4227-9853-adf2b40f235c.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

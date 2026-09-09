@@ -7,7 +7,7 @@ author: "Judy"
 tags: ["DeepSeek", "DeepSeek Agent", "Agent 开发", "函数调用"]
 cover: "/blog/images/how-to-build-deepseek-agent/1785731143951-b1dd145e-e396-4efb-b0ff-97bc80e8dd6e.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

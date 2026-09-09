@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["OpenAI", "四天工作制", "单人创业者", "AI 生产率"]
 cover: "/blog/images/openai-4-day-work-week-one-person-company/1776318549733-f138b428-6efb-4187-bab8-100571cdf6df.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。好吧，这条新闻我消化了好几天，一直在想自己到底怎么看。OpenAI 上周抛出了一份 13 页的政策文件，所有人抢着发的头条都是"四天工作制"。我的信息流炸了。大量热评。很多人争论这是真心实意，还是只是企业站位。

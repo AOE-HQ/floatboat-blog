@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Manus AI", "AI Agent", "AI 工具对比", "单人创业"]
 cover: "/blog/images/manus-ai-alternatives-2026/1773994793965-fc472904-8a59-4665-b162-c3bb810b336d.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 又见面了，我是 Nova～几周前，我在给一个项目自动化「研究到成稿」的工作流。Discord 里有人一直在提 [Manus AI](<https://manus.im/>)，于是我去看了看——然后立刻撞上邀请排队。又是排队。

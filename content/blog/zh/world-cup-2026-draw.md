@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["2026 世界杯", "世界杯抽签", "足球"]
 cover: "/blog/images/world-cup-2026-draw/1783513678637-1a8b836f-a911-4927-9f91-1a1c2368e942.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

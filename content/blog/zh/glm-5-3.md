@@ -7,7 +7,7 @@ author: "Ketd"
 tags: ["GLM-5.3", "智谱", "后训练", "开放权重模型", "Agent 编码"]
 cover: "/blog/images/glm-5-3/1786705345048-ef58ddfc-0ff2-4628-bb9b-318bf047f6d3.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

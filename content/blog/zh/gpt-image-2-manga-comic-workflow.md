@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["GPT Image 2", "漫画创作", "AI 绘画", "单人创作者"]
 cover: "/blog/images/gpt-image-2-manga-comic-workflow/1777086983412-02342d60-b663-4941-8b04-105dd5c46331.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。上个周末我用 **GPT Image 2**跑了一个四页日漫测试。不是演示，不是单张分镜——而是一段真实的短场景：同一个角色、日文对白气泡、SFX、外加几个需要让人感觉"是同一个地方"的背景镜头。

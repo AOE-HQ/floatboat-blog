@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI 自动化", "AI Agent", "外包"]
 cover: "/blog/images/ai-automation-agency-do-you-need-one/1778749936764-b481a6a9-9fb7-4510-b116-a4b9f385b162.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 我和 AI 自动化公司开过很多场「需求沟通会」（discovery call）。有些确实有用；另一些只是包装精美的销售演示，背后没有任何真正的交付方案。以买方身份、也以帮客户评估供应商的身份，把这个流程走了足够多次之后，我对什么时候该请机构、什么时候不该、哪些问题才能真正分辨好机构与差机构，已经有了相当清晰的判断——差机构留给你的，往往是一套做了一半的系统外加一张大额账单。

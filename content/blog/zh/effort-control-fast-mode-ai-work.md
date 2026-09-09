@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Effort Control", "Fast Mode", "AI 工作流", "Claude"]
 cover: "/blog/images/effort-control-fast-mode-ai-work/1780043480579-68902de4-9057-48a7-8fca-ff70aeb4ba2f.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 Claude Opus 4.8 昨天上线，带来了 Effort Control。我上手只有几个小时——所以这是初步印象，不是定论。默认动作往往是：凡重要的事都把投入拉满，Fast Mode 留到"以后再说"。这两种直觉让你亏掉的多过省下的——亏在 token、亏在时间，还亏在那种会悄悄拖垮一人经营的决策疲劳上。大家好，我是 Nova。我想分享的是：我到底怎么给不同的任务分配合适的 AI 模型投入档位——包括那些我现在想都不想就直接用 Fast Mode 的任务。

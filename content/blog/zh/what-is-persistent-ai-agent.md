@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["持久化 AI Agent", "AI Agent", "记忆"]
 cover: "/blog/images/what-is-persistent-ai-agent/1775615255707-60dd9542-8790-42c6-af6d-2abefa791147.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 什么是持久化 AI Agent——以及它为什么重要？

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "Agent 开发服务", "无代码自动化", "成本对比"]
 cover: "/blog/images/ai-agent-development-services/1774342648265-941c38b3-eb3d-4eaf-aa58-74e18940a59d.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。这条弯路我不止走过一次。你眼看着自己的工作流越来越笨重，每封 newsletter 都在提 [AI Agent](<https://en.wikipedia.org/wiki/AI_agent>)，于是脑子里开始冒出念头：_我是不是该直接雇个人帮我做一个？_

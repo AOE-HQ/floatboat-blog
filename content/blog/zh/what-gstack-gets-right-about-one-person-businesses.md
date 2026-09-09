@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["gstack", "Claude Code", "角色化提示", "单人创业者", "AI 工作流"]
 cover: "/blog/images/what-gstack-gets-right-about-one-person-businesses/1775210711995-9c430fc3-3dfc-4182-a1e6-a0fba7026754.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，我是 Nova。我和大多数非开发者一样偶然撞见 gstack——在应该赶交付物的时候刷 X，看到有人转发了 [Garry Tan 在 GitHub 上的发布](<https://github.com/garrytan/gstack>)。这个仓库 48 小时内拿到 10,000 颗星，成为 2026 年 GitHub 上增长最快的开发者工具之一。我不是开发者。我差点继续往下刷。

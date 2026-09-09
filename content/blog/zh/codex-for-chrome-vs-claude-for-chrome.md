@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Codex", "Claude", "浏览器 Agent", "AI Agent 对比", "AI 工具"]
 cover: "/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481499516-0681f882-de23-4dd6-a9cc-de0aa1613287.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 好久不见，我是 Nova。我把两个扩展都装上大约 48 小时后才发现，我花在「该问哪一个」上的时间，比真正干活的时间还多。就在那时我意识到：这篇对比必须存在。

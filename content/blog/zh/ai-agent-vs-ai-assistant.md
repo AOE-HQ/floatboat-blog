@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "AI 助手", "AI 工作流"]
 cover: "/blog/images/ai-agent-vs-ai-assistant/1773919300903-6c8781b3-4b98-47b2-abd6-027a7ac425ec.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嗨，又见面啦，我是 Nova～先坦白：有一段时间，我把这两个词当成同义词在用。[AI Agent](<https://www.ibm.com/think/topics/ai-agents>)、AI 助手……我一度以为它们只是同一个东西的两种营销叫法。

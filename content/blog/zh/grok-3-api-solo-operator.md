@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Grok", "AI API", "单人创业"]
 cover: "/blog/images/grok-3-api-solo-operator/logo.svg"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 我是 Nova。几周前有人私信我：_Grok 3 的 API 开放了，定价也公开了——我这种单干的人，值得切过去吗？_

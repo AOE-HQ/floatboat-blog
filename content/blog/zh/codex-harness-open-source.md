@@ -7,7 +7,7 @@ author: "Judy"
 tags: ["Codex", "OpenAI", "开源", "Agent 运行时"]
 cover: "/blog/images/codex-harness-open-source/1787819330722-4dfae6f5-602b-4fda-88a3-d247cf4d135d.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

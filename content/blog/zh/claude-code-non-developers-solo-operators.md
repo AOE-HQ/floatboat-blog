@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Claude Code", "单人创业", "Cowork", "AI 编程"]
 cover: "/blog/images/claude-code-non-developers-solo-operators/1775098065738-f9bed4bf-5721-4992-a329-098c1a022f2b.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嘿，我是 Nova。上周的某一天，一条私信落进我的收件箱：「Nova，我该不该用 [Claude Code](<https://code.claude.com/docs/en/overview>)？所有人都在聊它。」

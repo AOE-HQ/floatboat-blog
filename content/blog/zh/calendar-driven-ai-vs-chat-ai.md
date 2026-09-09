@@ -7,7 +7,7 @@ author: "Floatboat"
 tags: ["日历驱动 AI vs 聊天 AI", "日历驱动 AI", "主动式 AI Agent", "日历即运行时", "AI 交互范式对比"]
 cover: "/blog/images/calendar-driven-ai-vs-chat-ai/1782710499853-3254dd90-cc37-494e-8587-72ae4d3c950d.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

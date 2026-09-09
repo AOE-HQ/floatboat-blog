@@ -7,7 +7,7 @@ author: "Lulu Yu"
 tags: ["2026 世界杯", "FIFA 世界杯", "赛事指南"]
 cover: "/blog/images/world-cup-2026-guide/1782462198627-903b7e70-fd0f-40c3-81e3-501c7c0a7524.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

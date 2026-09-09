@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Genspark", "Manus", "AI Agent", "AI 工具对比"]
 cover: "/blog/images/genspark-vs-manus/1774490149131-b9a09fcd-daef-46d3-ad43-4123aaab32cb.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 嘿，我是 Nova。我已经在我的信息流里看着人们争论 **Genspark vs Manus**很久了，说实话？我读过的大多数对比文章，都把它们当成基本上是同一种东西。它们不是。它们为不同的人、在不同的信任等级上（你愿意把多少事托付给 AI）解决不同的问题。

@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["Gumloop", "AI 自动化", "无代码自动化", "工具对比"]
 cover: "/blog/images/gumloop-alternatives-2026/1774343169751-f7c753b4-f984-42c1-a849-d524da65c842.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 _你好，又见面了~ 我是 Nova。说实话，我开始找 [Gumloop](<https://www.gumloop.com/>) 的替代品，不是因为觉得它是烂工具，而是因为我意识到它和我真实的工作方式不太合拍。这是另一个层面的问题。_

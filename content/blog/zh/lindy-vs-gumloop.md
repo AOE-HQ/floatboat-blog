@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["AI Agent", "AI 自动化", "工具对比"]
 cover: "/blog/images/lindy-vs-gumloop/1773740299614-6f97fed0-616c-4f7e-a790-00151f378bb7.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 亲爱的朋友们，我是 Nova。

@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["2026 世界杯", "日历订阅"]
 cover: "/blog/images/floatcup-world-cup-2026-calendar-subscribe/1783514827876-4880f990-784a-4656-be8d-21c1202b7d71.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

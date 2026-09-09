@@ -7,7 +7,7 @@ author: "Jade"
 tags: ["Kimi K3", "Floatboat", "AI 模型"]
 cover: "/blog/images/kimi-k3-floatboat/1784276142230-3fc06f49-9d34-4e6e-a7dd-4efa1b19228b.png"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 **TL;DR**

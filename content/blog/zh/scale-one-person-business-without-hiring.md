@@ -7,7 +7,7 @@ author: "Nova"
 tags: ["一人公司", "单人创业者", "工作流"]
 cover: "/blog/images/scale-one-person-business-without-hiring/1776232668468-eeeca175-e546-43ee-b605-652f7b5b0f80.PNG"
 locale: "zh"
-draft: true
+draft: false
 ---
 
 你好，我是 Nova。上个月我又在重整自己的工作流——这大概是今年第三次了——然后发现了一件有点不舒服的事：我一直在加工具、调系统，但我真正需要修的，是在更上游的东西。不是_怎么_工作，而是我拿什么来构建自己的工作。
