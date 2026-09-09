@@ -5,6 +5,7 @@ slug: "what-is-agentic-calendar"
 date: "2026-06-11"
 author: "Floatboat Team"
 tags: ["Agentic Calendar", "calendar-driven AI", "AI scheduling agent"]
+cover: "/blog/images/what-is-agentic-calendar/what-is-agentic-calendar-og.png"
 locale: "en"
 draft: false
 ---
