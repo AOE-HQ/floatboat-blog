@@ -12,7 +12,7 @@ export function ArticleFinalCta({
   buttonLabel,
   href,
 }: FinalCta) {
-  const isExternal = href.startsWith("http") || href.startsWith("mailto:");
+  const isExternal = href.startsWith("http");
 
   return (
     <section className={cn("relative mt-16 overflow-hidden border-t py-16 md:py-20", obBorder)}>
@@ -32,7 +32,7 @@ export function ArticleFinalCta({
             obPrimary,
             obPrimaryFg,
           )}
-          {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          {...(isExternal ? { target: "_blank", rel: "nofollow noopener noreferrer" } : {})}
         >
           {buttonLabel}
         </a>

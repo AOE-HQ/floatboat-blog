@@ -99,7 +99,7 @@ export function MarkdownContent({ content, className }: MarkdownContentProps) {
               "font-medium underline decoration-[var(--ob-color-border)] underline-offset-4 hover:decoration-[var(--ob-color-muted)]",
               obText,
             )}
-            {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            {...(isExternal ? { target: "_blank", rel: "nofollow noopener noreferrer" } : {})}
             {...props}
           >
             {children}

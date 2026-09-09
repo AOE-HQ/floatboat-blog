@@ -28,7 +28,7 @@ function SocialIcon({ label, title, href, children }: {
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="nofollow noopener noreferrer"
       aria-label={label}
       title={title}
       className="inline-flex size-5 items-center justify-center text-[#7a7671] transition-colors hover:text-[#1b1a18]"
@@ -87,6 +87,8 @@ export function SiteFooter() {
               aria-label="floatboat"
               title="floatboat"
               href={FB_SITE}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -143,7 +145,7 @@ export function SiteFooter() {
               title="Privacy Policy"
               href={`${FB_SITE}/privacy`}
               target="_blank"
-              rel="noreferrer"
+              rel="nofollow noopener noreferrer"
               className="flex h-10 items-center justify-center px-[10px] py-[5px] text-sm font-medium text-[#7a7671] transition-colors hover:text-[#1b1a18]"
             >
               Privacy Policy
@@ -153,7 +155,7 @@ export function SiteFooter() {
               title="Terms of Service"
               href={`${FB_SITE}/terms`}
               target="_blank"
-              rel="noreferrer"
+              rel="nofollow noopener noreferrer"
               className="flex h-10 items-center justify-center px-[10px] py-[5px] text-sm font-medium text-[#7a7671] transition-colors hover:text-[#1b1a18]"
             >
               Terms of Service

@@ -98,7 +98,7 @@ export function XEmbed({ url }: XEmbedProps) {
           <a
             href={normalizedUrl}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="font-medium underline underline-offset-4"
           >
             View post on X
@@ -116,11 +116,13 @@ export function XEmbed({ url }: XEmbedProps) {
       aria-label="Embedded X post"
     >
       <blockquote className="twitter-tweet" data-dnt="true">
-        <a href={normalizedUrl}>Loading post from X…</a>
+        <a href={normalizedUrl} target="_blank" rel="nofollow noopener noreferrer">
+          Loading post from X…
+        </a>
       </blockquote>
       <noscript>
         <p className={cn("text-sm", obMuted)}>
-          <a href={normalizedUrl} target="_blank" rel="noopener noreferrer">
+          <a href={normalizedUrl} target="_blank" rel="nofollow noopener noreferrer">
             View post on X
           </a>
         </p>

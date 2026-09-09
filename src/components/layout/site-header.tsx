@@ -37,6 +37,8 @@ export function SiteHeader() {
             className="inline-flex flex-1 items-center"
             aria-label="floatboat"
             title="floatboat"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -57,7 +59,7 @@ export function SiteHeader() {
                 key={link.label}
                 href={link.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="text-sm font-medium text-[#7a7671] transition-colors hover:text-[#1b1a18]"
               >
                 {isZh ? NAV_ZH[link.label] ?? link.label : link.label}
@@ -71,6 +73,8 @@ export function SiteHeader() {
               href={`${FB_SITE}/download`}
               title="Download"
               aria-label="Download"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
               className="inline-flex h-9 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#f7d68b] px-[14px] text-sm font-medium text-[#1b1a18] transition-colors hover:bg-[#f3cf79]"
             >
               {isZh ? "下载" : "Download"}

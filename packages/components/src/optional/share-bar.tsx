@@ -64,7 +64,7 @@ export function ShareBar({
         href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
         className={actionClass}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
       >
         {copy.x}
       </a>
@@ -72,7 +72,7 @@ export function ShareBar({
         href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
         className={actionClass}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
       >
         {copy.linkedin}
       </a>

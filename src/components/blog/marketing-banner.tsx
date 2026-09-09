@@ -67,7 +67,7 @@ export function BlogMarketingBanner({ locale }: { locale: MarketingLocale }) {
         <a
           href={DOWNLOAD_URL}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           className="inline-flex shrink-0 items-center rounded-full bg-[var(--ob-color-primary)] px-6 py-3 text-sm font-semibold text-[var(--ob-color-primary-fg)] no-underline transition-opacity hover:opacity-90 lg:ml-8"
         >
           {copy.button}

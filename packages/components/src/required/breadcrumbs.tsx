@@ -24,7 +24,12 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
               {index > 0 ? <span aria-hidden="true">/</span> : null}
               {item.href && !isLast ? (
                 isExternal ? (
-                  <a href={item.href} className={obHoverText}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className={obHoverText}
+                  >
                     {item.name}
                   </a>
                 ) : (
