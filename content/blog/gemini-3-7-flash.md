@@ -4,6 +4,7 @@ description: "Gemini 3.7 Flash ships three weeks after 3.6 Flash with a 50% intr
 slug: "gemini-3-7-flash"
 date: "2026-08-21"
 author: "Kostja"
+category: "Product Updates"
 tags: ["Gemini 3.7 Flash", "模型评测", "Google"]
 cover: "/blog/images/gemini-3-7-flash/1786704422108-074d5638-c707-43da-bceb-6b782f31c96e.png"
 locale: "en"

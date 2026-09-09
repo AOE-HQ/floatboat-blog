@@ -4,6 +4,7 @@ description: "Gemini 3.7 Flash 在 Gemini 3.6 Flash 发布仅三周后上线，�
 slug: "gemini-3-7-flash"
 date: "2026-08-21"
 author: "Kostja"
+category: "Product Updates"
 tags: ["Gemini 3.7 Flash", "模型评测", "Google"]
 cover: "/blog/images/gemini-3-7-flash/1786704422108-074d5638-c707-43da-bceb-6b782f31c96e.png"
 locale: "zh"
