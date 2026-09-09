@@ -100,18 +100,27 @@ export function slugifyHeading(value: string): string {
 
 const HEADING_ANCHOR_SUFFIX = /\s*\{#([a-z0-9-]+)\}\s*$/i;
 
+/**
+ * Reverse CommonMark backslash escapes in a heading's display text.
+ * Exporters (html2text) escape e.g. `1.` as `1\.` so it is not parsed as an
+ * ordered list; a raw-line TOC extractor would otherwise show the backslash.
+ */
+function unescapeMarkdownTitle(title: string): string {
+  return title.replace(/\\([\\`*_[\]{}()#+\-.!|>~])/g, "$1");
+}
+
 /** Split `## Title {#custom-id}` into display title and anchor id. */
 export function parseHeadingAnchor(value: string): { title: string; id: string } {
   const trimmed = value.trim();
   const match = HEADING_ANCHOR_SUFFIX.exec(trimmed);
   if (match) {
     return {
-      title: trimmed.slice(0, match.index).trim(),
+      title: unescapeMarkdownTitle(trimmed.slice(0, match.index).trim()),
       id: match[1].toLowerCase(),
     };
   }
 
-  return { title: trimmed, id: slugifyHeading(trimmed) };
+  return { title: unescapeMarkdownTitle(trimmed), id: slugifyHeading(trimmed) };
 }
 
 /** Resolve post image to absolute URL for OG / JSON-LD (same asset as hero FeaturedImage). */
