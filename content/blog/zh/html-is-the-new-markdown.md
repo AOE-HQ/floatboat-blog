@@ -108,6 +108,8 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 • [想把手头的工作成果留在同一个环境里？读：Stop Context Switching: Why Workspace Agents Matter（别再上下文切换：为什么工作区 Agent 重要）](/blog/stop-context-switching-workspace-agent)
 
+![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.png)
+
 ## 常见问题
 
 ### Markdown 要消失了吗？
@@ -116,13 +118,12 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 ### 「HTML is the new Markdown」的讨论是怎么起来的？
 
-Anthropic Claude Code 团队的工程师 Thariq Shihipar 于 2026 年 5 月 8 日在 X 上发帖，配了一个展示 20 个自包含 HTML 文件、横跨九类工作的配套网站。帖子爆火、冲上 Hacker News 第一，还促使包括 Simon Willison 在内的多位知名开发者公开反思自己默认用 Markdown 的习惯。
+Anthropic Claude Code 团队的工程师 Thariq Shihipar 于 2026 年 5 月 8 日在 X 上发帖，配了一个展示 20 个自包含 HTML 文件、横跨九类工作的配套网站。帖子爆火、冲上 Hacker News 第一，还促使多位知名开发者公开反思自己默认用 Markdown 的习惯。
 
 ### 用 HTML 输出需要编码 Agent CLI 吗？
 
 不一定。这场讨论始于 Claude Code 的 HTML 工作流，但任何能生成代码的 AI 工具都能产出自包含的 HTML 文件。Claude Artifacts 直接在浏览器里渲染 HTML；ChatGPT Canvas 提供侧栏编辑工作区。你没有终端也能从中受益——不过如果你已经在用 CLI Agent，要 HTML 输出只是改一条提示词的事。
 
-![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.png)
 
 ### HTML 比 Markdown 更费 token 吗？
 

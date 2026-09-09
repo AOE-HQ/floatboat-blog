@@ -91,22 +91,26 @@ GPT-6 Astra is a real generational step, and the most honest summary of it is na
 
 ## FAQ
 
-### Is GPT-6 Astra available in Floatboat?
+### Why do Astra's ARC-AGI-3 scores differ so much?
 
-Not yet. GPT-6 Astra launched on September 3, 2026, and OpenAI is rolling it out first to Daybreak program organizations, with ChatGPT Plus, Pro, Business, and Enterprise plans plus API and AWS access following in the coming days. Floatboat's built-in roster currently spans the GPT-5 family alongside DeepSeek, MiniMax, GLM, Kimi, Claude, and Gemini, and we are actively working to integrate new OpenAI models as they reach general availability — but GPT-6 Astra is not in the model picker today, and we will not pretend otherwise.
-
-### Why does GPT-6 Astra score 99.9% on ARC-AGI-3 in some places and 62.7% in others?
-
-Because the two numbers measure different things. OpenAI's 99.9% figure comes from running Astra with OpenAI's own Responses API harness, which preserves reasoning state between turns and compresses long contexts — the product OpenAI ships. ARC Prize, which operates the benchmark, ran the same model on its standardized, provider-neutral harness and recorded 62.7% at maximum reasoning, isolating the model's capability from vendor infrastructure. Both are state-of-the-art results on ARC-AGI-3; neither should be quoted without the other. The distinction matters beyond this one launch: as agent harnesses improve, "model score" and "product score" are diverging everywhere.
+The two numbers measure different things. OpenAI's 99.9% comes from running Astra through its own Responses API harness, which preserves reasoning state between turns and compresses long contexts — the product OpenAI ships. ARC Prize, which operates the benchmark, tested the same model on its standardized, provider-neutral harness and recorded 62.7% at maximum reasoning — itself state of the art. Both scores are legitimate; neither should be quoted alone. As agent harnesses improve, “model score” and “product score” are diverging everywhere.
 
 ### Why can't I use GPT-6 Astra's full cybersecurity capabilities?
 
-Because OpenAI has classified Astra as the first model to reach the "Critical" level of cybersecurity capability under its Preparedness Framework — meaning it can find previously unknown vulnerabilities and build exploit chains across well-protected systems without step-by-step human guidance. OpenAI is restricting the most advanced cyber workflows to vetted defenders through its Daybreak Blue program and says it will expand less-restrictive access in the coming weeks as safeguards are validated. The standard model available to regular users refuses high-risk tasks like creating proof-of-concept exploits and ships with stricter guardrails — which, for almost all legitimate work, is the appropriate and safer configuration anyway.
+Because OpenAI classified Astra as the first model to reach “Critical” cybersecurity capability under its Preparedness Framework — meaning it can find previously unknown vulnerabilities and build exploit chains on well-protected systems without step-by-step human guidance. The most advanced cyber workflows are limited to vetted defenders in the Daybreak Blue program for now, with less-restrictive access promised in the coming weeks. The standard model refuses high-risk tasks such as creating proof-of-concept exploits and ships with stricter guardrails — safer and appropriate for almost all legitimate work.
 
-### How much does GPT-6 Astra cost, and how does that compare?
+### Is GPT-6 Astra really the most intelligent model?
 
-GPT-6 Astra lists at $10 per million input tokens and $50 per million output tokens on the standard API tier — 2.5 times GPT-5.6 Sol's promotional pricing and level with Anthropic's Fable 5.1 rate. Cache writes cost $12.50 per million tokens, and prompts above 272,000 input tokens shift to a premium band. Fast mode runs at double the standard price, while batch and flex tiers halve it. OpenAI's argument is that per-task cost is the right metric because Astra uses fewer tokens and fewer retries on many jobs; that claim needs validation on your own workloads before you commit to the premium.
+Not across the board — and that's worth knowing before you pay for a headline. Astra's genuine frontier is computer use (72.6% on OSWorld 2.0 with roughly 47% less time per task), efficiency per completed task, and specialized scientific and cyber work. But on the independent Artificial Analysis Intelligence Index it scores 61.2, below Claude Fable 5.1's 65.7 and Claude Opus 5's 63.1, and its DeepSWE advantage over rivals is within noise. “The world's most intelligent model” is a headline, not an across-the-board result.
+
+### How much does GPT-6 Astra cost?
+
+Standard API pricing is $10 per million input tokens and $50 per million output tokens — 2.5 times GPT-5.6 Sol's promotional rate and level with Claude Fable 5.1. Cache writes cost $12.50 per million tokens, and prompts above 272,000 input tokens move to a premium band. Fast mode doubles the price; batch and flex tiers halve it. OpenAI argues per-task cost is the metric that matters, since Astra finishes many jobs with fewer tokens and retries — a claim worth validating on your own workloads before paying the premium.
 
 ### Should I switch from GPT-5.6 Sol to GPT-6 Astra?
 
-Not until you can test it against your own work — and then only if the economics justify it. Astra's strongest cases are long-horizon computer use (roughly 47% less time per task on OSWorld 2.0), efficient completion of complex professional tasks, and 1.05-million-token context work like whole-repository analysis. GPT-5.6 Sol remains a strong, cheaper default for routine agent work, and for many high-volume tasks the per-token savings will outweigh Astra's efficiency gains. The disciplined approach: wait for broad API availability, run your representative workloads on both models, compare cost per completed task and intervention rate, and let that ledger decide.
+Not until you've tested it against your own work — and then only if the economics justify it. Astra's strongest cases are long-horizon computer use (roughly 47% less time per task), efficient completion of complex professional work, and 1.05-million-token context work like whole-repository analysis. GPT-5.6 Sol remains a strong, cheaper default for routine agent work, and on many high-volume jobs per-token savings outweigh Astra's efficiency gains. Wait for broad API availability, run representative workloads on both, then compare cost per completed task and intervention rate.
+
+### When can I use GPT-6 Astra in the API or Floatboat?
+
+Not yet. OpenAI released GPT-6 Astra on September 3, 2026, starting with Daybreak organizations; ChatGPT Plus, Pro, Business, and Enterprise tiers, plus API and AWS access, were promised to follow “in the coming days.” In Floatboat it is not in the model picker today — our roster spans the GPT-5 family alongside DeepSeek, MiniMax, GLM, Kimi, Claude, and Gemini — but integration work is underway, and we will not claim it is usable before it actually is.

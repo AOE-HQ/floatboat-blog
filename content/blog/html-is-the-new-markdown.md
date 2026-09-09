@@ -94,34 +94,6 @@ That last point is worth emphasizing. This isn't an irreversible decision. The s
 
 I'm still figuring this out. That's the honest version. Two weeks isn't enough to know where all the edges are. But I can tell you the direction feels right — not because HTML is flashier, but because **work artifacts should be readable, reviewable, and useful to the person who actually has to act on them.** That's a pretty grounded reason to care about the format.
 
-## FAQ
-
-### Is Markdown going away?
-
-No. Markdown is still the right format for documentation, version-controlled files, quick notes — anything lightweight and portable. The shift isn't "Markdown is dead." It's that Markdown's default status for _all_ AI output is being questioned, and for human-facing deliverables, HTML is a strong alternative. The [Markdown Guide](<https://www.markdownguide.org/getting-started/>) remains one of the clearest references for when Markdown works well.
-
-### What started the "HTML is the new Markdown" discussion?
-
-Thariq Shihipar, an engineer on Anthropic's Claude Code team, published a post on X on May 8, 2026, with a companion site showing 20 self-contained HTML files across nine categories of work. The post went viral, hit Hacker News #1, and prompted several well-known developers — including Simon Willison — to publicly reconsider their Markdown defaults.
-
-### Do you need a coding-agent CLI to use HTML output?
-
-Not necessarily. Claude Code HTML workflows are where this conversation started, but any AI tool that can generate code can produce a self-contained HTML file. Claude Artifacts renders HTML directly in the browser. ChatGPT Canvas offers a side-panel editing workspace. You don't need a terminal to benefit from this — though if you're already using a CLI agent, asking for HTML output is one prompt change away.
-
-![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.png)
-
-### Is HTML more expensive in tokens than Markdown?
-
-Typically, yes. HTML includes structure and styling tags that Markdown doesn't need. The exact difference depends on how much styling is involved. I haven't run controlled benchmarks myself, so I won't throw out a specific multiplier — but the direction is consistent. For most solo operators, the token cost difference on individual outputs is small enough to not matter. For high-volume API use, it's worth measuring.
-
-### When does HTML output actually help solo operators?
-
-When you're both the person directing the agent and the person reviewing the output. Project plans, content briefs, comparison documents, weekly reviews — anything where visual hierarchy helps you process information faster. If you're producing an artifact that someone else will read or that you'll refer back to, HTML tends to make that artifact more useful.
-
-### Is this just hype, or worth attention now?
-
-Worth trying, not worth panicking over. The underlying idea — that agent output should be formatted for the human who reads it, not just the machine that writes it — is solid. If you're a skeptic, pick one deliverable you produce regularly and try generating it as HTML once. See if it changes how you engage with it. If it doesn't, you've lost nothing. If it does — well, that's interesting.
-
 Anyway, that's where I'm at with this. Still experimenting, still adjusting. But at least I know what direction I'm adjusting toward. Back to building things.
 
 ## Previous Posts:
@@ -135,3 +107,32 @@ Anyway, that's where I'm at with this. Still experimenting, still adjusting. But
 • [Using coding agents already? Read: Claude Code for Non‑Developers: What Solo Operators Should Know](</blog/claude-code-non-developers-solo-operators>)
 
 • [Thinking about keeping work artifacts inside one environment? Read: Stop Context Switching: Why Workspace Agents Matter](</blog/stop-context-switching-workspace-agent>)
+
+![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.png)
+
+## FAQ
+
+### Is Markdown going away?
+
+No. Markdown is still the right format for documentation, version-controlled files, quick notes — anything lightweight and portable. The shift isn't "Markdown is dead." It's that Markdown's default status for _all_ AI output is being questioned, and for human-facing deliverables, HTML is a strong alternative. The [Markdown Guide](<https://www.markdownguide.org/getting-started/>) remains one of the clearest references for when Markdown works well.
+
+### What started the "HTML is the new Markdown" discussion?
+
+Thariq Shihipar, an engineer on Anthropic's Claude Code team, published a post on X on May 8, 2026, with a companion site showing 20 self-contained HTML files across nine categories of work. The post went viral, hit Hacker News #1, and prompted several well-known developers to publicly reconsider their Markdown defaults.
+
+### Do you need a coding-agent CLI to use HTML output?
+
+Not necessarily. Claude Code HTML workflows are where this conversation started, but any AI tool that can generate code can produce a self-contained HTML file. Claude Artifacts renders HTML directly in the browser. ChatGPT Canvas offers a side-panel editing workspace. You don't need a terminal to benefit from this — though if you're already using a CLI agent, asking for HTML output is one prompt change away.
+
+
+### Is HTML more expensive in tokens than Markdown?
+
+Typically, yes. HTML includes structure and styling tags that Markdown doesn't need. The exact difference depends on how much styling is involved. I haven't run controlled benchmarks myself, so I won't throw out a specific multiplier — but the direction is consistent. For most solo operators, the token cost difference on individual outputs is small enough to not matter. For high-volume API use, it's worth measuring.
+
+### When does HTML output actually help solo operators?
+
+When you're both the person directing the agent and the person reviewing the output. Project plans, content briefs, comparison documents, weekly reviews — anything where visual hierarchy helps you process information faster. If you're producing an artifact that someone else will read or that you'll refer back to, HTML tends to make that artifact more useful.
+
+### Is this just hype, or worth attention now?
+
+Worth trying, not worth panicking over. The underlying idea — that agent output should be formatted for the human who reads it, not just the machine that writes it — is solid. If you're a skeptic, pick one deliverable you produce regularly and try generating it as HTML once. See if it changes how you engage with it. If it doesn't, you've lost nothing. If it does — well, that's interesting.
