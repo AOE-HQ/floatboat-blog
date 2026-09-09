@@ -10,18 +10,23 @@
    "failed_images": [],
    "title": "Gemini 3.8 Flash — Google's New Coding & Agent Workhorse"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gemini-3-8-flash.md",
+   "title": "Gemini 3.8 Flash——谷歌新的编程与 Agent 主力模型"
+  }
  },
  "what-is-doubao-work": {
   "lastmod": "2026-08-27T07:22:47.858Z",
   "native_locale": "zh",
-  "en": {},
+  "en": {
+   "status": "translated_draft",
+   "file": "content/blog/what-is-doubao-work.md",
+   "title": "What Is Doubao Work? ByteDance's AI Office Agent, Explained — Definition, Local Desktop Control, and Feishu Integration"
+  },
   "zh": {
-   "status": "native",
+   "status": "translated_draft",
    "file": "content/blog/zh/what-is-doubao-work.md",
-   "date": "",
-   "images": 1,
-   "failed_images": [],
    "title": "豆包工作是什么 — 字节跳动独立 AI 办公 Agent 完整定义、本地操控与飞书集成能力说明"
   }
  },
@@ -36,7 +41,11 @@
    "failed_images": [],
    "title": "Agentic AI Tools for Real Work"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/agentic-ai-tools.md",
+   "title": "能干实事的 Agentic AI 工具：五类工具怎么选、自主度怎么定"
+  }
  },
  "building-agentic-ai-systems-build-or-buy": {
   "lastmod": "2026-05-22T02:20:47.433Z",
@@ -49,7 +58,11 @@
    "failed_images": [],
    "title": "Building Agentic AI Systems: Build or Buy?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/building-agentic-ai-systems-build-or-buy.md",
+   "title": "构建 Agentic AI 系统：自研、购买还是外包？"
+  }
  },
  "ai-agent-vs-ai-assistant": {
   "lastmod": "2026-04-03T10:51:01.355Z",
@@ -62,7 +75,11 @@
    "failed_images": [],
    "title": "AI Agent vs AI Assistant: How They're Actually Different"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-agent-vs-ai-assistant.md",
+   "title": "AI Agent 与 AI 助手，到底有什么区别"
+  }
  },
  "ai-agent-development-services": {
   "lastmod": "2026-03-24T09:13:35.198Z",
@@ -75,7 +92,11 @@
    "failed_images": [],
    "title": "Do You Actually Need an AI Agent Development Service?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-agent-development-services.md",
+   "title": "你真的需要 AI Agent 开发服务吗？"
+  }
  },
  "ai-agent-solo-operators": {
   "lastmod": "2026-04-15T05:55:33.465Z",
@@ -88,7 +109,11 @@
    "failed_images": [],
    "title": "Should a Solo Operator Use an AI Agent?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-agent-solo-operators.md",
+   "title": "单人创业者该不该用 AI Agent？——自托管与工作区原生两条路线怎么选"
+  }
  },
  "ai-agent-vs-chatbot": {
   "lastmod": "2026-03-20T08:32:16.879Z",
@@ -101,7 +126,11 @@
    "failed_images": [],
    "title": "AI Agent vs Chatbot: What's the Actual Difference?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-agent-vs-chatbot.md",
+   "title": "AI Agent 与 Chatbot 到底有什么区别？"
+  }
  },
  "ai-agent-workflow-vibe-coding": {
   "lastmod": "2026-04-20T02:49:27.241Z",
@@ -114,7 +143,11 @@
    "failed_images": [],
    "title": "AI Agent Workflow: Fixing What Vibe Coding Breaks"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-agent-workflow-vibe-coding.md",
+   "title": "AI Agent 工作流：修复 Vibe Coding 造成的问题"
+  }
  },
  "ai-agent-use-cases-real-examples": {
   "lastmod": "2026-03-20T03:28:49.911Z",
@@ -127,7 +160,11 @@
    "failed_images": [],
    "title": "AI Agent Use Cases That Actually Work: Real-World Examples"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-agent-use-cases-real-examples.md",
+   "title": "真正有效的 AI Agent 应用场景：真实案例与边界"
+  }
  },
  "ai-follow-up-automation": {
   "lastmod": "2026-06-29T05:23:06.368Z",
@@ -140,7 +177,11 @@
    "failed_images": [],
    "title": "AI Follow-Up Automation — Turn Meeting Outcomes Into Action"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-follow-up-automation.md",
+   "title": "AI 跟进自动化——把会议成果变成行动"
+  }
  },
  "ai-assistant-for-personal-use-at-work": {
   "lastmod": "2026-05-13T08:46:51.671Z",
@@ -153,7 +194,11 @@
    "failed_images": [],
    "title": "AI Assistant for Personal Use at Work"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-assistant-for-personal-use-at-work.md",
+   "title": "工作中个人使用的 AI 助手怎么选——场景先行、七天试用的实操指南"
+  }
  },
  "ai-agents-2026-solo-operators": {
   "lastmod": "2026-04-07T06:53:37.551Z",
@@ -166,7 +211,11 @@
    "failed_images": [],
    "title": "AI Agents in 2026: What Solo Operators Actually Need to Know"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-agents-2026-solo-operators.md",
+   "title": "2026 年 AI Agent：单人创业者真正需要知道的事"
+  }
  },
  "ai-automation-agency-do-you-need-one": {
   "lastmod": "2026-05-14T09:16:39.348Z",
@@ -179,7 +228,11 @@
    "failed_images": [],
    "title": "AI Automation Agency: Do You Need One?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-automation-agency-do-you-need-one.md",
+   "title": "AI 自动化公司：你真的需要吗？"
+  }
  },
  "ai-automation-agency-pricing": {
   "lastmod": "2026-05-07T09:47:43.190Z",
@@ -192,7 +245,11 @@
    "failed_images": [],
    "title": "AI Automation Agency Pricing: What It Costs and What You Get"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-automation-agency-pricing.md",
+   "title": "AI 自动化机构怎么收费：真实报价区间、三种计费模式与签约避坑清单"
+  }
  },
  "ai-meeting-preparation": {
   "lastmod": "2026-06-29T05:22:38.108Z",
@@ -205,7 +262,11 @@
    "failed_images": [],
    "title": "How AI Meeting Prep Actually Works — A Full Pre-Meeting Pipeline"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-meeting-preparation.md",
+   "title": "AI 会前准备到底怎么做 — 一套完整的会前流水线"
+  }
  },
  "ai-scheduling-agent": {
   "lastmod": "2026-06-29T05:22:24.945Z",
@@ -221,7 +282,6 @@
   "zh": {
    "status": "translated_draft",
    "file": "content/blog/zh/ai-scheduling-agent.md",
-   "date": "2026-06-29",
    "title": "什么是 AI 日程 Agent？四代演进一次讲清"
   }
  },
@@ -236,7 +296,11 @@
    "failed_images": [],
    "title": "AI Browser Agent vs AI Browser vs AI Workspace Compared"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-browser-agent-vs-ai-browser-vs-ai-workspace.md",
+   "title": "浏览器 Agent、AI 浏览器与 AI 工作区：给单人创业者的选型指南"
+  }
  },
  "ai-follow-up-email-opus-4-8": {
   "lastmod": "2026-06-07T08:56:23.240Z",
@@ -249,7 +313,11 @@
    "failed_images": [],
    "title": "AI Follow-Up Emails After Meetings"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-follow-up-email-opus-4-8.md",
+   "title": "AI 跟进邮件：让会议后的总结、行动项与下一步自动成型"
+  }
  },
  "ai-workflow-for-solo-founders": {
   "lastmod": "2026-04-14T06:44:57.450Z",
@@ -262,7 +330,11 @@
    "failed_images": [],
    "title": "AI Doesn't Know How You Work — That's the Real Problem"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-workflow-for-solo-founders.md",
+   "title": "AI 不知道你是怎么工作的——这才是真正的问题"
+  }
  },
  "automate-tiktok-shop-research-fastmoss-floatboat": {
   "lastmod": "2026-08-20T08:32:38.625Z",
@@ -275,7 +347,11 @@
    "failed_images": [],
    "title": "How to Automate Weekly TikTok Shop Research with FastMoss and Floatboat"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/automate-tiktok-shop-research-fastmoss-floatboat.md",
+   "title": "如何用 FastMoss 与 Floatboat 自动化每周 TikTok Shop 调研"
+  }
  },
  "ai-tools-for-business-automation-2026": {
   "lastmod": "2026-05-15T06:37:07.143Z",
@@ -288,7 +364,11 @@
    "failed_images": [],
    "title": "AI Tools for Business Automation in 2026"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-tools-for-business-automation-2026.md",
+   "title": "2026 年 AI 商业自动化工具：单人创业者的务实选型地图"
+  }
  },
  "ai-workspace-agents": {
   "lastmod": "2026-04-23T10:08:51.302Z",
@@ -301,7 +381,11 @@
    "failed_images": [],
    "title": "What Are AI Workspace Agents? A Plain-Language Guide"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-workspace-agents.md",
+   "title": "什么是 AI 工作区 Agent？一篇大白话指南"
+  }
  },
  "ai-workflow-solo-founders": {
   "lastmod": "2026-04-10T04:15:17.412Z",
@@ -314,7 +398,11 @@
    "failed_images": [],
    "title": "AI Workflow for Solo Founders: What Actually Works"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/ai-workflow-solo-founders.md",
+   "title": "单人创业者的 AI 工作流：什么真正有效"
+  }
  },
  "best-ai-scheduling-assistants": {
   "lastmod": "2026-06-29T05:22:03.615Z",
@@ -327,7 +415,11 @@
    "failed_images": [],
    "title": "Best AI Scheduling Assistants — From Smart Schedulers to Agentic Calendars"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/best-ai-scheduling-assistants.md",
+   "title": "最佳 AI 日程助手盘点——从智能排程到 Agentic Calendar 四代演进"
+  }
  },
  "best-ai-scheduling-assistant": {
   "lastmod": "2026-06-29T05:22:54.093Z",
@@ -340,7 +432,11 @@
    "failed_images": [],
    "title": "What Is an Agentic Calendar? Definition and Examples"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/best-ai-scheduling-assistant.md",
+   "title": "最佳 AI 日程工具怎么选——AI 日程 Agent 四代演进与横向对比"
+  }
  },
  "best-claude-code-alternatives": {
   "lastmod": "2026-08-14T08:33:12.907Z",
@@ -353,7 +449,11 @@
    "failed_images": [],
    "title": "Best Claude Code Alternatives — Coding Agents Ranked by Job Shape"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/best-claude-code-alternatives.md",
+   "title": "最好的 Claude Code 替代品：按编码工作形态的编程 Agent 排名"
+  }
  },
  "best-ai-agent-builder-2026": {
   "lastmod": "2026-05-18T06:38:02.462Z",
@@ -366,7 +466,11 @@
    "failed_images": [],
    "title": "Best AI Agent Builder in 2026"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/best-ai-agent-builder-2026.md",
+   "title": "2026 年最好的 AI Agent 构建工具"
+  }
  },
  "best-claude-tag-alternatives": {
   "lastmod": "2026-08-14T08:31:54.928Z",
@@ -381,7 +485,11 @@
    ],
    "title": "Best Claude Tag Alternatives — AI Teammates Ranked for Slack and Group Chat"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/best-claude-tag-alternatives.md",
+   "title": "Claude Tag 最佳替代方案：为 Slack 与群聊场景排名的 AI Teammate"
+  }
  },
  "best-claude-cowork-alternatives": {
   "lastmod": "2026-08-14T08:32:24.797Z",
@@ -394,7 +502,11 @@
    "failed_images": [],
    "title": "Best Claude Cowork Alternatives — Office Agents for Non-Developers"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/best-claude-cowork-alternatives.md",
+   "title": "Claude Cowork 最佳替代品排行：面向非开发者的办公 Agent"
+  }
  },
  "best-ai-agent-platform-2026": {
   "lastmod": "2026-05-15T06:40:53.878Z",
@@ -407,7 +519,11 @@
    "failed_images": [],
    "title": "Best AI Agent Platform in 2026"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/best-ai-agent-platform-2026.md",
+   "title": "2026 年最好的 AI Agent 平台"
+  }
  },
  "calendar-driven-ai-vs-chat-ai": {
   "lastmod": "2026-06-29T05:21:48.972Z",
@@ -423,7 +539,6 @@
   "zh": {
    "status": "translated_draft",
    "file": "content/blog/zh/calendar-driven-ai-vs-chat-ai.md",
-   "date": "2026-06-29",
    "title": "日历驱动的 AI vs 聊天式 AI——两种完全不同的范式"
   }
  },
@@ -438,7 +553,11 @@
    "failed_images": [],
    "title": "Best Calendar App for Solo Operators"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/best-calendar-app-solo-operators.md",
+   "title": "单人创业者的最佳日历应用：按工作流选，而不是按功能清单选"
+  }
  },
  "claude-code-vs-cowork-vs-tag": {
   "lastmod": "2026-08-14T08:33:27.994Z",
@@ -451,7 +570,11 @@
    "failed_images": [],
    "title": "Claude Code vs Cowork vs Tag — Which Agent Surface Fits Your Work"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/claude-code-vs-cowork-vs-tag.md",
+   "title": "Claude Code vs Cowork vs Tag——哪种 Agent 形态适合你的工作"
+  }
  },
  "browser-ai-agent-security-questions": {
   "lastmod": "2026-05-12T05:55:53.525Z",
@@ -464,7 +587,11 @@
    "failed_images": [],
    "title": "5 Questions to Ask Before You Give a Browser AI Your Logins"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/browser-ai-agent-security-questions.md",
+   "title": "把账号密码交给浏览器 AI 之前，先问这 5 个问题"
+  }
  },
  "codex-harness-open-source": {
   "lastmod": "2026-08-27T08:30:26.576Z",
@@ -477,7 +604,11 @@
    "failed_images": [],
    "title": "Codex Harness Open Source — OpenAI's Agent Runtime"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/codex-harness-open-source.md",
+   "title": "Codex Harness 开源解读——OpenAI 的 Agent 运行时"
+  }
  },
  "claude-code-non-developers-solo-operators": {
   "lastmod": "2026-04-06T07:27:34.458Z",
@@ -490,7 +621,11 @@
    "failed_images": [],
    "title": "Claude Code for Non-Developers in 2026: What Solo Operators Should Know"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/claude-code-non-developers-solo-operators.md",
+   "title": "Claude Code 对不懂代码的单人创业者意味着什么（2026）"
+  }
  },
  "browser-ai-agent-what-it-can-do": {
   "lastmod": "2026-05-11T07:03:11.279Z",
@@ -503,7 +638,11 @@
    "failed_images": [],
    "title": "What Browser AI Agents Can and Cannot Do for Solo Operators"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/browser-ai-agent-what-it-can-do.md",
+   "title": "浏览器 AI Agent 能做什么、不能做什么：单人创业者实用指南"
+  }
  },
  "context-engineering-for-ai-agents": {
   "lastmod": "2026-07-01T09:19:02.384Z",
@@ -516,7 +655,11 @@
    "failed_images": [],
    "title": "Context Engineering for AI Agents — Why Context Beats Models"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/context-engineering-for-ai-agents.md",
+   "title": "AI Agent 的上下文工程——为什么 Context 胜过模型"
+  }
  },
  "cordis-plugin-framework": {
   "lastmod": "2026-08-14T08:31:22.233Z",
@@ -529,7 +672,11 @@
    "failed_images": [],
    "title": "Cordis — The Plugin Kernel Behind DeepSeek Harness"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/cordis-plugin-framework.md",
+   "title": "Cordis——DeepSeek Harness 背后的插件内核"
+  }
  },
  "claude-managed-agents-one-person-company": {
   "lastmod": "2026-04-22T01:49:46.302Z",
@@ -544,7 +691,11 @@
    ],
    "title": "Claude Managed Agents: What They Mean for Solo Companies"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/claude-managed-agents-one-person-company.md",
+   "title": "Claude Managed Agents：对一人公司意味着什么"
+  }
  },
  "deepseek-agent-function-calling": {
   "lastmod": "2026-08-14T08:33:51.590Z",
@@ -557,7 +708,11 @@
    "failed_images": [],
    "title": "DeepSeek Agent Function Calling: A Hands-On Guide"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/deepseek-agent-function-calling.md",
+   "title": "DeepSeek Agent 函数调用实战指南"
+  }
  },
  "deepseek-agent-vs-claude-code": {
   "lastmod": "2026-08-14T08:34:05.288Z",
@@ -570,7 +725,11 @@
    "failed_images": [],
    "title": "DeepSeek Agent vs Claude Code: Cost, Performance, and When to Use Each"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/deepseek-agent-vs-claude-code.md",
+   "title": "DeepSeek Agent vs Claude Code：成本、性能与各自适用场景"
+  }
  },
  "codex-for-chrome-vs-claude-for-chrome": {
   "lastmod": "2026-05-11T06:49:51.902Z",
@@ -583,7 +742,11 @@
    "failed_images": [],
    "title": "Codex for Chrome vs Claude for Chrome: How to Choose"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/codex-for-chrome-vs-claude-for-chrome.md",
+   "title": "Codex for Chrome 与 Claude for Chrome：如何选择"
+  }
  },
  "deepseek-v4-pro-0813": {
   "lastmod": "2026-08-14T08:30:02.661Z",
@@ -596,7 +759,11 @@
    "failed_images": [],
    "title": "DeepSeek V4 Pro 0813 — The Quiet GA and What It Actually Changes"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/deepseek-v4-pro-0813.md",
+   "title": "DeepSeek V4 Pro 0813——悄无声息的 GA，与它真正改变的东西"
+  }
  },
  "custom-ai-agent-development": {
   "lastmod": "2026-03-27T03:52:27.477Z",
@@ -609,7 +776,11 @@
    "failed_images": [],
    "title": "Custom AI Agent Development: When Does It Make Sense?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/custom-ai-agent-development.md",
+   "title": "定制 AI Agent 开发：什么时候才真的值得？"
+  }
  },
  "floatcup-world-cup-2026-calendar-subscribe": {
   "lastmod": "2026-07-15T04:20:54.022Z",
@@ -622,7 +793,11 @@
    "failed_images": [],
    "title": "FloatCup: Subscribe to the World Cup 2026 Calendar in One Click"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/floatcup-world-cup-2026-calendar-subscribe.md",
+   "title": "FloatCup：一键订阅 2026 世界杯赛程日历"
+  }
  },
  "deepseek-v4-api-solo-operator": {
   "lastmod": "2026-04-17T08:15:37.793Z",
@@ -635,7 +810,11 @@
    "failed_images": [],
    "title": "DeepSeek V4 API: Cost and Impact for Solo Operators"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/deepseek-v4-api-solo-operator.md",
+   "title": "DeepSeek V4 API：对单人创业者的成本真相与真实影响"
+  }
  },
  "first-100-customers-solo-founder": {
   "lastmod": "2026-04-08T02:44:35.704Z",
@@ -648,7 +827,11 @@
    "failed_images": [],
    "title": "How to Get Your First 100 Customers as a Solo Founder"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/first-100-customers-solo-founder.md",
+   "title": "单人创始人如何拿下前 100 个客户"
+  }
  },
  "gemini-3-7-flash": {
   "lastmod": "2026-08-14T10:59:02.432Z",
@@ -661,7 +844,11 @@
    "failed_images": [],
    "title": "Gemini 3.7 Flash — Three-Week Iteration, Real Coding Gains, Now in Floatboat"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gemini-3-7-flash.md",
+   "title": "Gemini 3.7 Flash——三周迭代、实打实的编程能力提升、现已内置 Floatboat"
+  }
  },
  "dynamic-workflows-build-or-use-workspace": {
   "lastmod": "2026-05-29T11:46:09.593Z",
@@ -674,7 +861,11 @@
    "failed_images": [],
    "title": "Dynamic Workflows: Build Agents or Use a Workspace?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/dynamic-workflows-build-or-use-workspace.md",
+   "title": "动态工作流：自己构建 Agent，还是直接用工作区？"
+  }
  },
  "effort-control-fast-mode-ai-work": {
   "lastmod": "2026-05-29T11:51:06.727Z",
@@ -687,7 +878,11 @@
    "failed_images": [],
    "title": "Effort Control and Fast Mode for AI Work"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/effort-control-fast-mode-ai-work.md",
+   "title": "Effort Control 与 Fast Mode：AI 工作该多想还是该求快"
+  }
  },
  "feishu-cli-solo-work-setup": {
   "lastmod": "2026-03-31T02:19:30.840Z",
@@ -700,7 +895,11 @@
    "failed_images": [],
    "title": "Feishu CLI in a Solo Work Setup: What It Actually Takes"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/feishu-cli-solo-work-setup.md",
+   "title": "单人工作流里的飞书 CLI：真正要付出什么成本"
+  }
  },
  "glm-5-3": {
   "lastmod": "2026-08-14T11:05:24.182Z",
@@ -713,7 +912,11 @@
    "failed_images": [],
    "title": "GLM-5.3 — Post-Training Scaling, Open-Weight Coding, and the Security Surprise"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/glm-5-3.md",
+   "title": "GLM-5.3：后训练扩展、开放权重的编码能力，与网络安全意外"
+  }
  },
  "gemini-3-5-integration-solo-operators": {
   "lastmod": "2026-05-24T01:44:05.897Z",
@@ -726,7 +929,11 @@
    "failed_images": [],
    "title": "What Gemini 3.5 Integration Means for Solo Operators"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gemini-3-5-integration-solo-operators.md",
+   "title": "Gemini 3.5 集成对单人创业者意味着什么"
+  }
  },
  "gpt-5-6-floatboat": {
   "lastmod": "2026-07-10T11:59:18.784Z",
@@ -739,7 +946,11 @@
    "failed_images": [],
    "title": "GPT-5.6 in Floatboat — Built-In Sol, Terra, Luna"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gpt-5-6-floatboat.md",
+   "title": "Floatboat 内置 GPT-5.6：Sol、Terra、Luna 三档模型"
+  }
  },
  "genspark-super-agent-explained": {
   "lastmod": "2026-05-25T01:44:18.598Z",
@@ -752,7 +963,11 @@
    "failed_images": [],
    "title": "Genspark Super Agent Explained"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/genspark-super-agent-explained.md",
+   "title": "Genspark Super Agent 详解"
+  }
  },
  "genspark-ai-pricing": {
   "lastmod": "2026-05-07T10:02:59.587Z",
@@ -765,7 +980,11 @@
    "failed_images": [],
    "title": "Genspark Pricing: Plans, Limits, and What You Get"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/genspark-ai-pricing.md",
+   "title": "Genspark 定价解析：各档位权益、用量上限与真实性价比"
+  }
  },
  "genspark-vs-manus": {
   "lastmod": "2026-03-26T02:03:03.907Z",
@@ -778,7 +997,11 @@
    "failed_images": [],
    "title": "Genspark vs Manus: How They Compare"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/genspark-vs-manus.md",
+   "title": "Genspark 对比 Manus：两者到底怎么选"
+  }
  },
  "gpt-5-6-sol-terra-luna": {
   "lastmod": "2026-07-10T11:27:49.641Z",
@@ -791,7 +1014,11 @@
    "failed_images": [],
    "title": "GPT-5.6 Is Here — What Sol, Terra, and Luna Change"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gpt-5-6-sol-terra-luna.md",
+   "title": "GPT-5.6 已发布——Sol、Terra 与 Luna 改变了什么"
+  }
  },
  "gpt-6-astra": {
   "lastmod": "2026-09-04T04:31:07.284Z",
@@ -804,7 +1031,11 @@
    "failed_images": [],
    "title": "GPT-6 Astra — OpenAI's Most Capable, Most Guarded Model"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gpt-6-astra.md",
+   "title": "GPT-6 Astra：OpenAI 最能干、也最受设防的模型"
+  }
  },
  "google-calendar-vs-outlook": {
   "lastmod": "2026-05-29T01:58:23.374Z",
@@ -817,7 +1048,11 @@
    "failed_images": [],
    "title": "Google Calendar vs Outlook"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/google-calendar-vs-outlook.md",
+   "title": "Google Calendar vs Outlook：按工作生态选，别按功能清单选"
+  }
  },
  "google-calendar-vs-apple-calendar": {
   "lastmod": "2026-05-27T03:51:23.639Z",
@@ -830,7 +1065,11 @@
    "failed_images": [],
    "title": "Google Calendar vs Apple Calendar"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/google-calendar-vs-apple-calendar.md",
+   "title": "Google Calendar 与 Apple Calendar 怎么选：按工作方式而非功能清单"
+  }
  },
  "grok-4-6": {
   "lastmod": "2026-08-14T08:34:24.531Z",
@@ -843,7 +1082,11 @@
    "failed_images": [],
    "title": "Grok 4.6 — Agentic Frontier Model, Benchmarks, Reality Check"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/grok-4-6.md",
+   "title": "Grok 4.6 解析：Agentic 前沿模型、基准数字与现实检验"
+  }
  },
  "grok-bot": {
   "lastmod": "2026-08-14T05:47:08.784Z",
@@ -856,7 +1099,11 @@
    "failed_images": [],
    "title": "Grok Bot — xAI's Always-On AI Teammates, Explained"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/grok-bot.md",
+   "title": "Grok Bot 是什么——xAI 的常驻 AI 队友完全解析"
+  }
  },
  "gpt-image-2-storyboard-solo": {
   "lastmod": "2026-04-25T03:21:53.899Z",
@@ -869,7 +1116,11 @@
    "failed_images": [],
    "title": "Can One Person Build a Full Storyboard with GPT Image 2?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gpt-image-2-storyboard-solo.md",
+   "title": "一个人能用 GPT Image 2 做完一整组分镜吗？"
+  }
  },
  "gpt-image-2-manga-comic-workflow": {
   "lastmod": "2026-04-25T03:18:13.737Z",
@@ -882,7 +1133,11 @@
    "failed_images": [],
    "title": "GPT Image 2 for Manga and Comic Creators: A Solo Workflow"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gpt-image-2-manga-comic-workflow.md",
+   "title": "GPT Image 2 漫画创作实战：单人创作者的全章工作流"
+  }
  },
  "grok-3-api-solo-operator": {
   "lastmod": "2026-04-23T08:29:55.075Z",
@@ -895,7 +1150,11 @@
    "failed_images": [],
    "title": "Grok 3 API Is Open — Does It Lower the AI Cost Barrier for Solo Operators?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/grok-3-api-solo-operator.md",
+   "title": "Grok 3 API 开放了——它真的降低了单人创业者的 AI 成本门槛吗？"
+  }
  },
  "gpt-image-2-vs-midjourney-nano-banana-2": {
   "lastmod": "2026-04-27T02:49:30.927Z",
@@ -908,7 +1167,11 @@
    "failed_images": [],
    "title": "GPT Image 2 vs Midjourney vs Nano Banana 2 for Creators"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gpt-image-2-vs-midjourney-nano-banana-2.md",
+   "title": "给创作者的 GPT Image 2 vs Midjourney vs Nano Banana 2：真实的选型框架"
+  }
  },
  "gumloop-alternatives-2026": {
   "lastmod": "2026-03-24T09:12:51.846Z",
@@ -921,7 +1184,11 @@
    "failed_images": [],
    "title": "Gumloop Alternatives in 2026: What Else Is Worth Considering"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gumloop-alternatives-2026.md",
+   "title": "2026 年 Gumloop 替代品：还有哪些值得考虑"
+  }
  },
  "gumloop-review-2026": {
   "lastmod": "2026-03-23T09:05:55.256Z",
@@ -934,7 +1201,11 @@
    "failed_images": [],
    "title": "Gumloop Review 2026: Powerful, But Is It Right for You?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/gumloop-review-2026.md",
+   "title": "Gumloop 评测 2026：功能很强，但适合你吗？"
+  }
  },
  "how-to-build-ai-agents-for-repeated-work": {
   "lastmod": "2026-05-14T09:08:08.488Z",
@@ -947,7 +1218,11 @@
    "failed_images": [],
    "title": "How to Build AI Agents for Repeated Work"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/how-to-build-ai-agents-for-repeated-work.md",
+   "title": "如何为重复性工作构建 AI Agent：一份务实起步指南"
+  }
  },
  "how-to-build-deepseek-agent": {
   "lastmod": "2026-08-14T08:31:04.291Z",
@@ -960,7 +1235,11 @@
    "failed_images": [],
    "title": "How to Build a DeepSeek Agent: From API Key to Your First Agent"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/how-to-build-deepseek-agent.md",
+   "title": "如何构建 DeepSeek Agent：从 API Key 到你的第一个 Agent"
+  }
  },
  "how-to-use-obsidian-with-ai-agent": {
   "lastmod": "2026-07-30T06:57:53.524Z",
@@ -973,7 +1252,11 @@
    "failed_images": [],
    "title": "How to Use Obsidian with an AI Agent — Local Vault + Cross-App Workflows"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/how-to-use-obsidian-with-ai-agent.md",
+   "title": "如何用 AI Agent 使用 Obsidian：本地 Vault + 跨应用工作流"
+  }
  },
  "how-to-build-an-ai-agent": {
   "lastmod": "2026-03-25T06:15:00.118Z",
@@ -986,7 +1269,11 @@
    "failed_images": [],
    "title": "How to Build an AI Agent: What It Actually Takes"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/how-to-build-an-ai-agent.md",
+   "title": "如何构建 AI Agent：实际要付出什么"
+  }
  },
  "how-one-person-businesses-work-like-a-team-with-ai": {
   "lastmod": "2026-03-20T07:59:13.542Z",
@@ -999,7 +1286,11 @@
    "failed_images": [],
    "title": "How One-Person Businesses Work Like a Team With AI"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/how-one-person-businesses-work-like-a-team-with-ai.md",
+   "title": "一人公司如何靠 AI 角色像团队一样运转"
+  }
  },
  "introducing-floatim": {
   "lastmod": "2026-06-29T05:19:27.896Z",
@@ -1015,7 +1306,6 @@
   "zh": {
    "status": "translated_draft",
    "file": "content/blog/zh/introducing-floatim.md",
-   "date": "2026-06-29",
    "title": "FloatIM 正式上线：Agent 优先的群聊网络，让 AI Agent 与人在同一对话里协作"
   }
  },
@@ -1030,7 +1320,11 @@
    "failed_images": [],
    "title": "How to Build an AI Agent with ChatGPT"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/how-to-build-an-ai-agent-with-chatgpt.md",
+   "title": "如何用 ChatGPT 构建一个 AI Agent"
+  }
  },
  "introducing-flow-mode": {
   "lastmod": "2026-08-19T03:36:14.939Z",
@@ -1043,7 +1337,11 @@
    "failed_images": [],
    "title": "Introducing Floatboat Flow Mode — AI Voice Dictation"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/introducing-flow-mode.md",
+   "title": "Floatboat Flow Mode 发布：边说边改的 AI 语音口述写作层"
+  }
  },
  "kimi-k3-floatboat": {
   "lastmod": "2026-07-17T09:17:09.317Z",
@@ -1056,7 +1354,11 @@
    "failed_images": [],
    "title": "Kimi K3 Floatboat Integration: What It Changes"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/kimi-k3-floatboat.md",
+   "title": "Kimi K3 接入 Floatboat：带来了哪些变化"
+  }
  },
  "html-vs-markdown-ai-output": {
   "lastmod": "2026-05-20T06:15:52.509Z",
@@ -1069,7 +1371,11 @@
    "failed_images": [],
    "title": "HTML vs Markdown for AI Output"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/html-vs-markdown-ai-output.md",
+   "title": "AI 输出该用 HTML 还是 Markdown"
+  }
  },
  "html-anything-review-2026": {
   "lastmod": "2026-05-20T06:10:54.930Z",
@@ -1082,7 +1388,11 @@
    "failed_images": [],
    "title": "HTML-Anything Review 2026"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/html-anything-review-2026.md",
+   "title": "HTML-Anything 评测 2026：本地优先的 Agentic HTML 编辑器"
+  }
  },
  "html-is-the-new-markdown": {
   "lastmod": "2026-05-20T06:05:35.027Z",
@@ -1095,7 +1405,11 @@
    "failed_images": [],
    "title": "HTML Is the New Markdown: What It Means"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/html-is-the-new-markdown.md",
+   "title": "HTML 就是新的 Markdown：这意味着什么"
+  }
  },
  "minimax-h3-max-infinite-ai-livestream": {
   "lastmod": "2026-09-02T13:02:11.149Z",
@@ -1108,7 +1422,11 @@
    "failed_images": [],
    "title": "MiniMax H3 Max Live Stream — Faster Than Playback"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/minimax-h3-max-infinite-ai-livestream.md",
+   "title": "MiniMax H3 Max 直播演示：生成速度比播放还快"
+  }
  },
  "lark-cli-when-to-use-it": {
   "lastmod": "2026-03-30T04:02:50.290Z",
@@ -1121,7 +1439,11 @@
    "failed_images": [],
    "title": "Lark CLI: When to Use It (and When Not To)"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/lark-cli-when-to-use-it.md",
+   "title": "Lark CLI：什么时候该用（什么时候不该用）"
+  }
  },
  "llm-knowledge-base-solo-operators": {
   "lastmod": "2026-04-06T06:10:38.494Z",
@@ -1134,7 +1456,11 @@
    "failed_images": [],
    "title": "LLM Knowledge Base: Do Solo Operators Actually Need One?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/llm-knowledge-base-solo-operators.md",
+   "title": "LLM 知识库：单人创业者真的需要一个吗？"
+  }
  },
  "lindy-vs-gumloop": {
   "lastmod": "2026-03-20T03:32:38.208Z",
@@ -1147,7 +1473,11 @@
    "failed_images": [],
    "title": "Lindy vs Gumloop: Which AI Agent Tool Fits You?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/lindy-vs-gumloop.md",
+   "title": "Lindy vs Gumloop：哪个 AI Agent 工具适合你？"
+  }
  },
  "manus-ai-alternatives-2026": {
   "lastmod": "2026-08-23T03:45:49.158Z",
@@ -1160,7 +1490,11 @@
    "failed_images": [],
    "title": "Best Manus AI Alternatives in 2026"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/manus-ai-alternatives-2026.md",
+   "title": "2026 年最好的 Manus AI 替代品：按真实使用场景对比"
+  }
  },
  "meta-muse-spark-one-person-company": {
   "lastmod": "2026-05-01T01:37:39.610Z",
@@ -1173,7 +1507,11 @@
    "failed_images": [],
    "title": "Meta Muse Spark vs GPT-5.4: How New AI Models Impact Solo Businesses"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/meta-muse-spark-one-person-company.md",
+   "title": "Meta Muse Spark 对比 GPT-5.4：新模型如何影响一人公司经营"
+  }
  },
  "raycast-for-windows-floatboat": {
   "lastmod": "2026-09-03T14:28:49.817Z",
@@ -1186,7 +1524,11 @@
    "failed_images": [],
    "title": "Finding Raycast for Windows? Try Floatboat!"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/raycast-for-windows-floatboat.md",
+   "title": "在找 Windows 版 Raycast？试试 Floatboat！"
+  }
  },
  "no-code-ai-agent-builder": {
   "lastmod": "2026-05-18T06:48:06.621Z",
@@ -1199,7 +1541,11 @@
    "failed_images": [],
    "title": "No Code AI Agent Builder: Should You Use One?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/no-code-ai-agent-builder.md",
+   "title": "无代码 AI Agent 搭建器：你该用吗？"
+  }
  },
  "openai-gpt-6-one-person-company": {
   "lastmod": "2026-04-24T02:56:59.661Z",
@@ -1212,7 +1558,11 @@
    "failed_images": [],
    "title": "OpenAI GPT-6: Why Solo Companies Should Prepare Now"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/openai-gpt-6-one-person-company.md",
+   "title": "OpenAI GPT-6：为什么一人公司现在就该准备"
+  }
  },
  "openai-4-day-work-week-one-person-company": {
   "lastmod": "2026-04-16T05:50:38.876Z",
@@ -1225,7 +1575,11 @@
    "failed_images": [],
    "title": "OpenAI 4-Day Work Week: Rise of One-Person Companies"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/openai-4-day-work-week-one-person-company.md",
+   "title": "OpenAI 每周四天工作制：一人公司的崛起"
+  }
  },
  "oh-my-codex-vs-superpowers": {
   "lastmod": "2026-04-30T02:03:44.222Z",
@@ -1238,7 +1592,11 @@
    "failed_images": [],
    "title": "Claude Code on Linux: Why Solo Founders Are Moving AI Offline"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/oh-my-codex-vs-superpowers.md",
+   "title": "Linux 上的 Claude Code：为什么单人创始人在把 AI 工作流搬进终端"
+  }
  },
  "relevance-ai-vs-n8n": {
   "lastmod": "2026-04-01T07:08:35.230Z",
@@ -1251,7 +1609,11 @@
    "failed_images": [],
    "title": "Relevance AI vs n8n: Which One Is Right for You?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/relevance-ai-vs-n8n.md",
+   "title": "Relevance AI 还是 n8n：哪个适合你？"
+  }
  },
  "scale-one-person-business-without-hiring": {
   "lastmod": "2026-04-15T06:00:38.362Z",
@@ -1264,7 +1626,11 @@
    "failed_images": [],
    "title": "How to Scale a One-Person Business Without Hiring"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/scale-one-person-business-without-hiring.md",
+   "title": "一人公司不招人，怎么把规模做上去"
+  }
  },
  "what-if-your-calendar-could-run-itself": {
   "lastmod": "2026-07-24T07:21:47.103Z",
@@ -1277,7 +1643,11 @@
    "failed_images": [],
    "title": "What If Your Calendar Could Run Itself? Calendar-Driven AI"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-if-your-calendar-could-run-itself.md",
+   "title": "如果你的日历能自己跑起来呢？日历驱动 AI（Calendar-Driven AI）"
+  }
  },
  "solopreneur-pricing-day-one": {
   "lastmod": "2026-04-13T10:11:18.623Z",
@@ -1290,7 +1660,11 @@
    "failed_images": [],
    "title": "Solopreneur Pricing: Why You Should Charge from Day One"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/solopreneur-pricing-day-one.md",
+   "title": "单人创业者定价：为什么从第一天就该收费"
+  }
  },
  "what-is-claude-code": {
   "lastmod": "2026-08-14T08:32:55.242Z",
@@ -1303,7 +1677,11 @@
    "failed_images": [],
    "title": "What Is Claude Code — Anthropic's Terminal Coding Agent"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-is-claude-code.md",
+   "title": "Claude Code 是什么——Anthropic 的终端编码 Agent"
+  }
  },
  "stop-context-switching-workspace-agent": {
   "lastmod": "2026-05-01T01:43:05.314Z",
@@ -1316,7 +1694,11 @@
    "failed_images": [],
    "title": "How to Stop Context Switching with a Workspace Agent"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/stop-context-switching-workspace-agent.md",
+   "title": "如何用工作区 Agent 停止上下文切换"
+  }
  },
  "what-is-claude-cowork": {
   "lastmod": "2026-08-14T08:32:40.024Z",
@@ -1329,7 +1711,11 @@
    "failed_images": [],
    "title": "What Is Claude Cowork — Anthropic's Agent for Knowledge Work"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-is-claude-cowork.md",
+   "title": "什么是 Claude Cowork——Anthropic 面向知识工作的 Agent"
+  }
  },
  "what-is-claude-tag": {
   "lastmod": "2026-08-14T08:32:11.674Z",
@@ -1342,7 +1728,11 @@
    "failed_images": [],
    "title": "What Is Claude Tag — Anthropic's AI Teammate for Slack"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-is-claude-tag.md",
+   "title": "Claude Tag 是什么——Anthropic 为 Slack 打造的 AI 队友"
+  }
  },
  "what-gstack-gets-right-about-one-person-businesses": {
   "lastmod": "2026-04-06T07:05:27.631Z",
@@ -1355,7 +1745,11 @@
    "failed_images": [],
    "title": "Role-Based AI Workflows for Solo Founders: The gstack Method"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-gstack-gets-right-about-one-person-businesses.md",
+   "title": "单人创始人的角色化 AI 工作流：gstack 方法真正说对的地方"
+  }
  },
  "what-is-deepseek-agent": {
   "lastmod": "2026-08-14T08:34:40.933Z",
@@ -1368,7 +1762,11 @@
    "failed_images": [],
    "title": "What Is a DeepSeek Agent? Types, Tools, and How to Choose"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-is-deepseek-agent.md",
+   "title": "什么是 DeepSeek Agent？类型、工具与如何选择"
+  }
  },
  "what-is-minimax-h3": {
   "lastmod": "2026-08-04T03:15:58.308Z",
@@ -1381,7 +1779,11 @@
    "failed_images": [],
    "title": "What Is MiniMax H3 — The Open Omni-Modal Video Model"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-is-minimax-h3.md",
+   "title": "MiniMax H3 是什么——开放的全模态视频模型"
+  }
  },
  "what-are-claude-managed-agents": {
   "lastmod": "2026-04-10T04:07:47.419Z",
@@ -1394,7 +1796,11 @@
    "failed_images": [],
    "title": "What Are Claude Managed Agents?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-are-claude-managed-agents.md",
+   "title": "什么是 Claude Managed Agents？"
+  }
  },
  "what-is-obsidian-vault": {
   "lastmod": "2026-07-30T06:59:23.785Z",
@@ -1407,7 +1813,11 @@
    "failed_images": [],
    "title": "What Is an Obsidian Vault — Local Markdown Knowledge Base Explained"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-is-obsidian-vault.md",
+   "title": "Obsidian Vault 是什么——本地 Markdown 知识库解析"
+  }
  },
  "where-is-world-cup-2026-host-cities": {
   "lastmod": "2026-07-15T04:15:32.303Z",
@@ -1420,7 +1830,11 @@
    "failed_images": [],
    "title": "Where Is the World Cup 2026? Host Cities & Stadiums"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/where-is-world-cup-2026-host-cities.md",
+   "title": "2026 世界杯在哪里办？主办城市与球场全览"
+  }
  },
  "what-is-llm-wiki": {
   "lastmod": "2026-04-14T06:41:11.458Z",
@@ -1433,7 +1847,11 @@
    "failed_images": [],
    "title": "What Is an LLM Wiki — and Should You Build One?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-is-llm-wiki.md",
+   "title": "什么是 LLM Wiki——你该不该建一个？"
+  }
  },
  "why-ai-forgets-between-sessions": {
   "lastmod": "2026-04-10T04:11:50.463Z",
@@ -1446,7 +1864,11 @@
    "failed_images": [],
    "title": "Why Your AI Forgets Everything Between Sessions"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/why-ai-forgets-between-sessions.md",
+   "title": "为什么你的 AI 在两次会话之间忘掉一切"
+  }
  },
  "what-is-vibe-coding": {
   "lastmod": "2026-04-16T05:46:59.896Z",
@@ -1459,7 +1881,11 @@
    "failed_images": [],
    "title": "What Is Vibe Coding? Can Solo Founders Ship Faster?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-is-vibe-coding.md",
+   "title": "什么是 Vibe Coding？单人创始人能靠它更快交付吗？"
+  }
  },
  "what-is-persistent-ai-agent": {
   "lastmod": "2026-04-08T02:30:08.591Z",
@@ -1472,7 +1898,11 @@
    "failed_images": [],
    "title": "What Is a Persistent AI Agent — and Why Does It Matter?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/what-is-persistent-ai-agent.md",
+   "title": "什么是持久化 AI Agent——以及它为什么重要？"
+  }
  },
  "why-ai-forgets-every-session": {
   "lastmod": "2026-04-07T06:34:16.557Z",
@@ -1485,7 +1915,11 @@
    "failed_images": [],
    "title": "Why Your AI Forgets You Every Single Session"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/why-ai-forgets-every-session.md",
+   "title": "为什么你的 AI 每轮会话都会忘记你"
+  }
  },
  "world-cup-2026-bracket": {
   "lastmod": "2026-07-15T04:21:30.472Z",
@@ -1498,7 +1932,11 @@
    "failed_images": [],
    "title": "World Cup Bracket 2026: Template, Tracker & PDF"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/world-cup-2026-bracket.md",
+   "title": "2026 世界杯对阵表：模板、追踪表与 PDF"
+  }
  },
  "world-cup-2026-bracketology": {
   "lastmod": "2026-07-15T04:18:25.865Z",
@@ -1511,7 +1949,11 @@
    "failed_images": [],
    "title": "World Cup Bracketology: How to Fill Your 2026 Bracket"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/world-cup-2026-bracketology.md",
+   "title": "世界杯竞猜对阵解析：如何填写 2026 年竞猜签表"
+  }
  },
  "workflow-builder-vs-ai-workspace": {
   "lastmod": "2026-03-23T09:27:01.159Z",
@@ -1524,7 +1966,11 @@
    "failed_images": [],
    "title": "Workflow Builder vs AI Workspace: What's the Difference?"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/workflow-builder-vs-ai-workspace.md",
+   "title": "工作流构建器 vs AI 工作区：到底有什么区别？"
+  }
  },
  "world-cup-2026-draw": {
   "lastmod": "2026-07-15T04:14:24.250Z",
@@ -1537,7 +1983,11 @@
    "failed_images": [],
    "title": "World Cup Draw 2026: Rules, Results and Groups"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/world-cup-2026-draw.md",
+   "title": "2026 世界杯抽签：规则、结果与分组"
+  }
  },
  "workspace-agents-for-solo-operators": {
   "lastmod": "2026-04-29T02:03:50.090Z",
@@ -1550,7 +2000,11 @@
    "failed_images": [],
    "title": "Why One-Person Companies Need a Workspace Agent"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/workspace-agents-for-solo-operators.md",
+   "title": "为什么一人公司需要一个工作区 Agent"
+  }
  },
  "workspace-agents-vs-workflow-builders": {
   "lastmod": "2026-04-28T01:58:28.522Z",
@@ -1563,7 +2017,11 @@
    "failed_images": [],
    "title": "Workspace Agents vs Workflow Builders: A Clear Comparison"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/workspace-agents-vs-workflow-builders.md",
+   "title": "工作区 Agent vs 工作流搭建器：一次讲清楚的对比"
+  }
  },
  "world-cup-2026-google-calendar-ics": {
   "lastmod": "2026-07-15T04:18:01.985Z",
@@ -1576,7 +2034,11 @@
    "failed_images": [],
    "title": "Add World Cup 2026 to Google, Outlook & Apple (ICS)"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/world-cup-2026-google-calendar-ics.md",
+   "title": "把 2026 世界杯加进 Google、Outlook 与 Apple 日历（ICS）"
+  }
  },
  "world-cup-2026-groups-standings": {
   "lastmod": "2026-07-15T04:14:57.922Z",
@@ -1589,7 +2051,11 @@
    "failed_images": [],
    "title": "World Cup Groups 2026: Standings & Tiebreakers"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/world-cup-2026-groups-standings.md",
+   "title": "2026 世界杯小组赛：积分榜与出线规则解析"
+  }
  },
  "workspace-agents-vs-chat-assistants": {
   "lastmod": "2026-04-24T03:03:12.073Z",
@@ -1602,7 +2068,11 @@
    "failed_images": [],
    "title": "AI Workspace Agents vs Chat Assistants: What's Different"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/workspace-agents-vs-chat-assistants.md",
+   "title": "AI 工作区 Agent vs 聊天助手：到底有什么不同"
+  }
  },
  "world-cup-2026-guide": {
   "lastmod": "2026-07-15T04:25:11.207Z",
@@ -1615,7 +2085,11 @@
    "failed_images": [],
    "title": "World Cup 2026 Guide (FIFA): Dates, Format, Hosts & FAQ"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/world-cup-2026-guide.md",
+   "title": "2026 世界杯指南（FIFA）：日期、赛制、主办国与常见问题"
+  }
  },
  "world-cup-2026-schedule": {
   "lastmod": "2026-07-15T04:21:56.728Z",
@@ -1628,7 +2102,11 @@
    "failed_images": [],
    "title": "World Cup 2026 Schedule: Full Fixtures & Calendar Sync"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/world-cup-2026-schedule.md",
+   "title": "World Cup 2026 赛程：完整对阵与日历同步"
+  }
  },
  "world-cup-2026-schedule-usa": {
   "lastmod": "2026-07-15T04:22:58.475Z",
@@ -1641,6 +2119,10 @@
    "failed_images": [],
    "title": "USA World Cup 2026 Schedule: Match Times, Reminders & Key Games"
   },
-  "zh": {}
+  "zh": {
+   "status": "translated_draft",
+   "file": "content/blog/zh/world-cup-2026-schedule-usa.md",
+   "title": "美国队 2026 世界杯赛程：开球时间、提醒与关键场次"
+  }
  }
 }
