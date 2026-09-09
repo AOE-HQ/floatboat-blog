@@ -1,102 +1,82 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { chromeBrand } from "@/chrome/brand";
-import { getHeaderLinks, type SiteNavLink } from "@/chrome/site-chrome";
-import { blogPathForLocale } from "@/config/i18n";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { getLocaleFromPathname } from "@/lib/locale-path";
-import { cn } from "@/lib/utils";
 
-function NavLink({
-  link,
-  locale,
-}: {
-  link: SiteNavLink;
-  locale: ReturnType<typeof getLocaleFromPathname>;
-}) {
-  const pathname = usePathname();
-  const blogBase = blogPathForLocale(locale);
-  const isActive =
-    link.match === "blog"
-      ? pathname.startsWith(blogBase) || pathname === blogBase
-      : link.match === "exact"
-        ? pathname === link.href
-        : false;
+const FB_SITE = "https://floatboat.ai";
 
-  const className = cn(
-    "text-sm font-medium text-[var(--ob-color-muted)] transition hover:text-[var(--ob-color-text)]",
-    isActive && "text-[var(--ob-color-text)]",
-  );
+const NAV_LINKS = [
+  { label: "Pricing", href: `${FB_SITE}/pricing` },
+  { label: "About", href: `${FB_SITE}/about` },
+];
 
-  if (link.external || link.href.startsWith("http")) {
-    return (
-      <a href={link.href} className={className} target="_blank" rel="noreferrer">
-        {link.label}
-      </a>
-    );
-  }
+const NAV_ZH: Record<string, string> = {
+  Pricing: "价格",
+  About: "关于",
+  Download: "下载",
+};
 
-  return (
-    <Link href={link.href} className={className}>
-      {link.label}
-    </Link>
-  );
-}
-
-function SiteLogo() {
-  const { logo, logoAlt, homeUrl } = chromeBrand;
-  const isExternalHome = homeUrl.startsWith("http");
-
-  const logoContent = logo ? (
-    <>
-      {logo.startsWith("http") ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={logo} alt={logoAlt} className="h-8 w-auto" />
-      ) : (
-        <Image src={logo} alt={logoAlt} width={32} height={32} className="h-8 w-auto" />
-      )}
-      <span className="font-semibold tracking-tight text-[var(--ob-color-text)]">{logoAlt}</span>
-    </>
-  ) : (
-    <span className="font-semibold tracking-tight text-[var(--ob-color-text)]">{logoAlt}</span>
-  );
-
-  const className = "flex items-center gap-2";
-
-  if (isExternalHome) {
-    return (
-      <a href={homeUrl} className={className}>
-        {logoContent}
-      </a>
-    );
-  }
-
-  return (
-    <Link href={homeUrl} className={className}>
-      {logoContent}
-    </Link>
-  );
-}
-
+/**
+ * Mirrors the official floatboat.ai header chrome: warm translucent blur bar,
+ * logo → home, centered Product links, yellow Download pill on the right.
+ * A minimal EN/中文 switcher is kept for the bilingual blog.
+ */
 export function SiteHeader() {
   const pathname = usePathname() ?? "/";
   const locale = getLocaleFromPathname(pathname);
-  const headerLinks = getHeaderLinks(locale);
+  const isZh = locale === "zh";
 
   return (
-    <header className="border-b border-[var(--ob-color-border)] bg-[var(--ob-color-surface)]">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-4 sm:px-6">
-        <SiteLogo />
-        <nav className="flex flex-wrap items-center gap-5">
-          {headerLinks.map((link) => (
-            <NavLink key={link.label} link={link} locale={locale} />
-          ))}
-          <LanguageSwitcher size="sm" />
-        </nav>
+    <header className="sticky top-0 z-50 w-full border-b border-black/[0.06] bg-[rgba(240,238,235,0.8)] backdrop-blur-[16px]">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-10">
+        <div className="flex h-[76px] items-center gap-5">
+          <a
+            href={FB_SITE}
+            className="inline-flex flex-1 items-center"
+            aria-label="floatboat"
+            title="floatboat"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/brand/floatboat-logo.svg"
+              alt="floatboat"
+              width={126}
+              height={36}
+              className="h-8 w-auto"
+            />
+          </a>
+
+          <nav
+            aria-label="Primary"
+            className="hidden shrink-0 items-center justify-center gap-6 md:flex"
+          >
+            {NAV_LINKS.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-medium text-[#7a7671] transition-colors hover:text-[#1b1a18]"
+              >
+                {isZh ? NAV_ZH[link.label] ?? link.label : link.label}
+              </a>
+            ))}
+          </nav>
+
+          <div className="flex flex-1 items-center justify-end gap-3">
+            <LanguageSwitcher size="sm" />
+            <a
+              href={`${FB_SITE}/download`}
+              title="Download"
+              aria-label="Download"
+              className="inline-flex h-9 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#f7d68b] px-[14px] text-sm font-medium text-[#1b1a18] transition-colors hover:bg-[#f3cf79]"
+            >
+              {isZh ? "下载" : "Download"}
+            </a>
+          </div>
+        </div>
       </div>
     </header>
   );
