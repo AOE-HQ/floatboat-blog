@@ -60,7 +60,7 @@ Markdown 在 Git 里。push 到 `main` 后 GitHub Actions 会：
 3. 构建并推送不可变镜像 `ghcr.io/aoe-hq/floatboat-blog:<sha>`
 4. 部署到 EKS `aoe/floatboat-blog`，公网入口 `https://blog.floatboat.ai/blog`
 
-主站 `floatboat.ai/blog` 仍由 `aoe-backend` 提供，直到 Cloudflare rewrite 切到 `BLOG_ORIGIN`。
+主站 `floatboat.ai/blog` 与 `/zh/blog` 由 Ingress `floatboat-blog-main-nginx` 切到本服务；`/api/analytics/events` 仍留在 `aoe-backend`。回滚：删除该 Ingress。
 
 本地构建：
 

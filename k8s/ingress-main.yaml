@@ -1,0 +1,51 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: floatboat-blog-main-nginx
+  namespace: aoe
+  labels:
+    app.kubernetes.io/name: floatboat-blog
+    app.kubernetes.io/part-of: floatboat
+    app.kubernetes.io/component: main-site-cutover
+spec:
+  ingressClassName: nginx-internal
+  tls:
+    - hosts:
+        - floatboat.ai
+        - www.floatboat.ai
+      secretName: aoe-backend-tls
+  rules:
+    - host: floatboat.ai
+      http:
+        paths:
+          - path: /blog
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/blog
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+    - host: www.floatboat.ai
+      http:
+        paths:
+          - path: /blog
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/blog
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80

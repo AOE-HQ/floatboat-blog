@@ -17,6 +17,7 @@ previous_image="$(kubectl -n "${K8S_NAMESPACE}" get deployment "${K8S_DEPLOYMENT
 kubectl apply -f k8s/configmap.yaml
 kubectl apply -f k8s/service.yaml
 kubectl apply -f k8s/ingress.yaml
+kubectl apply -f k8s/ingress-main.yaml
 
 kubectl set image -f k8s/deployment.yaml "${K8S_CONTAINER}=${IMAGE_URI}" --local -o yaml \
   | kubectl apply -f -
