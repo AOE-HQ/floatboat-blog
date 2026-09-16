@@ -50,3 +50,22 @@ ASSET_PREFIX=/blog
 ## 回滚
 
 移除主站 Rewrite → 旧 CMS `/blog` 恢复。
+
+## Docker / CI
+
+Markdown 在 Git 里。push 到 `main` 后 GitHub Actions 会：
+
+1. 校验全部 `content/blog/**/*.md`
+2. `npm run build` 生成静态页
+3. 构建并推送镜像 `ghcr.io/aoe-hq/floatboat-blog:latest`
+
+这只会产出镜像，**不会自动部署到生产**。有服务器权限后再把该镜像接到 Railway / K8s / 现有 Nginx。
+
+本地构建：
+
+```bash
+docker build -t floatboat-blog .
+docker run --rm -p 3000:3000 floatboat-blog
+```
+
+打开 `http://localhost:3000/blog`。生产环境仍需把 `/blog`、`/zh/blog` rewrite 到这个服务，并把 `/api/analytics/events` 留在主站。

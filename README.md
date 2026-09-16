@@ -78,6 +78,8 @@ Images: `public/blog/images/{slug}/` (shared by both locales).
 
 ## Deployment
 
+Pushing Markdown to `main` runs GitHub Actions: validate posts, production build, and publish `ghcr.io/aoe-hq/floatboat-blog`. That image is not auto-deployed.
+
 When mounted at `floatboat.ai/blog/*` via Cloudflare/Railway rewrite:
 
 1. Set `SITE_URL=https://floatboat.ai`
