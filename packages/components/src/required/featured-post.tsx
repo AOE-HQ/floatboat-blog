@@ -97,7 +97,7 @@ export function FeaturedPost({ post }: { post: PostMeta }) {
               alt=""
               layout="hero"
               priority
-              className="h-full rounded-none border-0 transition duration-300 group-hover:opacity-95 [&_img]:h-full [&_img]:min-h-[220px] [&_img]:rounded-none [&_img]:lg:min-h-[320px]"
+              className="absolute inset-0 h-full w-full rounded-none border-0 [&_img]:h-full [&_img]:w-full [&_img]:object-cover [&_img]:min-h-[220px] [&_img]:rounded-none [&_img]:lg:min-h-[320px]"
             />
           </Link>
         ) : null}
