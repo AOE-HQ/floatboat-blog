@@ -12,7 +12,7 @@ import {
 import { useOpenBlog, useSiteHelpers } from "../provider";
 import { obHoverText, obMuted, obText } from "../tokens";
 import { cn } from "../utils";
-import { BLOG_INDEX_COPY } from "./blog-index-copy";
+import { BLOG_INDEX_COPY, categoryLabel } from "./blog-index-copy";
 import { FeaturedImage } from "./featured-image";
 
 export function PostCard({
@@ -63,12 +63,12 @@ export function PostCard({
                 href={site.categoryPath(post.categorySlug)}
                 className={`font-medium ${obText} ${obHoverText}`}
               >
-                {post.category}
+                {categoryLabel(post.categorySlug, post.category, locale)}
               </Link>
               <span aria-hidden="true">·</span>
             </>
           ) : null}
-          <time dateTime={post.date}>{formatPostDate(post.date)}</time>
+          <time dateTime={post.date}>{formatPostDate(post.date, locale)}</time>
         </div>
         <h2
           className={`mt-3 font-serif text-xl font-medium tracking-tight ${obText} sm:text-[1.35rem]`}

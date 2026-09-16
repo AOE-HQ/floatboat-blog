@@ -1,7 +1,7 @@
 import { resolveDisplayImageUrl } from "./post-image";
 
-export function formatPostDate(date: string): string {
-  return new Date(date).toLocaleDateString("en-US", {
+export function formatPostDate(date: string, locale: "en" | "zh" = "en"): string {
+  return new Date(date).toLocaleDateString(locale === "zh" ? "zh-CN" : "en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",

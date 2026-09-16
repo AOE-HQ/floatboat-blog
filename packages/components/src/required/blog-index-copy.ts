@@ -41,3 +41,27 @@ export const BLOG_INDEX_COPY: Record<
     minRead: (minutes) => `${minutes} 分钟阅读`,
   },
 };
+
+/**
+ * Category display names for zh pages. Frontmatter `category` stays English
+ * (single taxonomy for en+zh), so zh rendering maps by category slug.
+ */
+export const CATEGORY_LABELS_ZH: Record<string, string> = {
+  "ai-agents": "AI 智能体",
+  "calendar-ai": "日历 AI",
+  "model-benchmarks": "模型与评测",
+  "product-updates": "产品动态",
+  "solo-operators": "一人公司",
+  "tool-comparisons": "工具对比",
+};
+
+export function categoryLabel(
+  slug: string | null | undefined,
+  fallbackName: string,
+  locale: BlogIndexLocale,
+): string {
+  if (locale === "zh" && slug && CATEGORY_LABELS_ZH[slug]) {
+    return CATEGORY_LABELS_ZH[slug];
+  }
+  return fallbackName;
+}

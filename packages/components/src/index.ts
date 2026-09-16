@@ -35,3 +35,4 @@ export {
   XEmbed,
 } from "./registry";
 export type { ComponentRegistry } from "./registry";
+export { CATEGORY_LABELS_ZH, categoryLabel } from "./required/blog-index-copy";

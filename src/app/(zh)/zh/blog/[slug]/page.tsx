@@ -9,11 +9,13 @@ import {
 
 import { config } from "@/lib/openblog-config";
 import { FaqBand } from "@/components/faq-band";
+import { BlogCtaPopup } from "@/components/blog/cta-popup";
 import {
   buildPostLanguageAlternatesForLocale,
   createLocaleSiteHelpers,
   openGraphLocale,
 } from "@/lib/locale-site";
+import { resolvePopupForPost } from "@/lib/popup-data";
 import {
   buildPostOpenGraphImages,
   buildPostTwitterMetadata,
@@ -98,6 +100,7 @@ export default async function ZhBlogPostPage({ params }: PageProps) {
     home: "首页",
     blog: "博客",
   });
+  const popup = resolvePopupForPost(post.slug, "zh");
 
   return (
     <>
@@ -116,6 +119,7 @@ export default async function ZhBlogPostPage({ params }: PageProps) {
       {post.faq && post.faq.length > 0 ? (
         <FaqBand items={post.faq} locale={locale} />
       ) : null}
+      <BlogCtaPopup copy={popup} locale="zh" />
     </>
   );
 }

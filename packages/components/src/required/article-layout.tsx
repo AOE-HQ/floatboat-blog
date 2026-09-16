@@ -171,7 +171,11 @@ export function ArticleLayout({
             ) : null}
 
             {optional.prevNext ? (
-              <PrevNext prev={adjacentPosts.prev} next={adjacentPosts.next} />
+              <PrevNext
+                prev={adjacentPosts.prev}
+                next={adjacentPosts.next}
+                locale={locale}
+              />
             ) : null}
           </div>
         </div>

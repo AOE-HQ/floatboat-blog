@@ -21,7 +21,7 @@ import {
   obText,
 } from "../tokens";
 import { cn } from "../utils";
-import { BLOG_INDEX_COPY } from "./blog-index-copy";
+import { BLOG_INDEX_COPY, categoryLabel } from "./blog-index-copy";
 import { FeaturedPost } from "./featured-post";
 import { PostCard } from "./post-card";
 
@@ -107,7 +107,7 @@ export function BlogIndex({
                     "hover:bg-[var(--ob-color-surface)]",
                   )}
                 >
-                  <span>{category.name}</span>
+                  <span>{categoryLabel(category.slug, category.name, locale)}</span>
                   <span className={`ml-1.5 tabular-nums ${obMuted}`}>
                     {category.count}
                   </span>
@@ -157,7 +157,7 @@ export function BlogIndex({
                           href={site.categoryPath(category.slug)}
                           className="transition hover:text-[var(--ob-color-accent)]"
                         >
-                          {category.name}
+                          {categoryLabel(category.slug, category.name, locale)}
                         </Link>
                       </h3>
                       <p className={`mt-1 text-sm ${obMuted}`}>
@@ -187,7 +187,7 @@ export function BlogIndex({
                             </p>
                             <p className={`mt-1.5 text-sm ${obMuted}`}>
                               <time dateTime={post.date}>
-                                {formatPostDate(post.date)}
+                                {formatPostDate(post.date, locale)}
                               </time>
                             </p>
                           </Link>

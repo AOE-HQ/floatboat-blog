@@ -20,8 +20,9 @@ export function PostMetaRow({
   readingMinutes: number;
   showAuthor?: boolean;
 }) {
-  const { features } = useOpenBlog();
+  const { features, localePrefix } = useOpenBlog();
   const site = useSiteHelpers();
+  const isZh = localePrefix === "/zh";
 
   return (
     <div className={`mt-4 flex flex-wrap items-center gap-3 text-sm ${obMuted}`}>
@@ -40,15 +41,15 @@ export function PostMetaRow({
           <span aria-hidden="true">·</span>
         </>
       ) : null}
-      <time dateTime={date}>{formatPostDate(date)}</time>
+      <time dateTime={date}>{formatPostDate(date, isZh ? "zh" : "en")}</time>
       {updated && updated !== date ? (
         <>
           <span aria-hidden="true">·</span>
-          <span>Updated {formatPostDate(updated)}</span>
+          <span>{isZh ? "更新于" : "Updated"} {formatPostDate(updated, isZh ? "zh" : "en")}</span>
         </>
       ) : null}
       <span aria-hidden="true">·</span>
-      <span>{readingMinutes} min read</span>
+      <span>{isZh ? `${readingMinutes} 分钟阅读` : `${readingMinutes} min read`}</span>
     </div>
   );
 }

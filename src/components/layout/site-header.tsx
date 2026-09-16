@@ -7,21 +7,20 @@ import { getLocaleFromPathname } from "@/lib/locale-path";
 
 const FB_SITE = "https://floatboat.ai";
 
+const DOWNLOAD_QUERY =
+  "?from=landing&download_placement=landing_primary&download_entry_point=landing_header";
+
 const NAV_LINKS = [
-  { label: "Pricing", href: `${FB_SITE}/pricing` },
-  { label: "About", href: `${FB_SITE}/about` },
+  { en: "Pricing", zh: "价格", href: `${FB_SITE}/pricing`, zhHref: `${FB_SITE}/zh/pricing` },
+  { en: "About", zh: "关于", href: `${FB_SITE}/about`, zhHref: `${FB_SITE}/zh/about` },
 ];
 
-const NAV_ZH: Record<string, string> = {
-  Pricing: "价格",
-  About: "关于",
-  Download: "下载",
-};
-
 /**
- * Mirrors the official floatboat.ai header chrome: warm translucent blur bar,
- * logo → home, centered Product links, yellow Download pill on the right.
- * A minimal EN/中文 switcher is kept for the bilingual blog.
+ * Header chrome copied 1:1 from floatboat.ai (same bar, spacing, nav and CTA):
+ * warm translucent blur bar without border, logo → main home, nav always
+ * visible and centered, right cluster (language + Download pill) hidden below
+ * md. Only deviations: the logo asset is served from /blog/brand and the
+ * language control is a working EN↔中文 toggle instead of a dropdown.
  */
 export function SiteHeader() {
   const pathname = usePathname() ?? "/";
@@ -29,53 +28,60 @@ export function SiteHeader() {
   const isZh = locale === "zh";
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-black/[0.06] bg-[rgba(240,238,235,0.8)] backdrop-blur-[16px]">
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-10">
+    <header className="sticky top-0 z-50 w-full bg-[rgba(240,238,235,0.8)] backdrop-blur-[16px]">
+      <div className="mx-auto max-w-[1440px] px-10 max-lg:px-5">
         <div className="flex h-[76px] items-center gap-5">
-          <a
-            href={FB_SITE}
-            className="inline-flex flex-1 items-center"
-            aria-label="floatboat"
-            title="floatboat"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/blog/brand/floatboat-logo.svg"
-              alt="floatboat"
-              width={126}
-              height={36}
-              className="h-8 w-auto"
-            />
-          </a>
+          <div className="flex-1">
+            <a
+              href={isZh ? `${FB_SITE}/zh` : FB_SITE}
+              target="_self"
+              aria-label="floatboat"
+              title="floatboat"
+              className="inline-flex items-center"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/blog/brand/floatboat-logo.svg"
+                alt="floatboat"
+                width={126}
+                height={36}
+                className="h-8 w-auto"
+              />
+            </a>
+          </div>
 
           <nav
             aria-label="Primary"
-            className="hidden shrink-0 items-center justify-center gap-6 md:flex"
+            className="relative flex max-w-max flex-1 shrink-0 items-center justify-center"
           >
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="text-sm font-medium text-[#7a7671] transition-colors hover:text-[#1b1a18]"
-              >
-                {isZh ? NAV_ZH[link.label] ?? link.label : link.label}
-              </a>
-            ))}
+            <ul className="flex flex-1 list-none items-center justify-center gap-6">
+              {NAV_LINKS.map((link) => (
+                <li key={link.en}>
+                  <a
+                    target="_self"
+                    aria-label={isZh ? link.zh : link.en}
+                    title={isZh ? link.zh : link.en}
+                    href={isZh ? link.zhHref : link.href}
+                    className="flex h-10 items-center justify-center rounded-md px-0 text-sm font-medium text-[#7a7671] transition-colors hover:text-[#1b1a18]"
+                  >
+                    <span>{isZh ? link.zh : link.en}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </nav>
 
-          <div className="flex flex-1 items-center justify-end gap-3">
-            <LanguageSwitcher size="sm" />
+          <div className="hidden flex-1 items-center justify-end gap-3 md:flex">
+            <LanguageSwitcher />
             <a
-              href={`${FB_SITE}/download`}
-              title="Download"
-              aria-label="Download"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="inline-flex h-9 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#f7d68b] px-[14px] text-sm font-medium text-[#1b1a18] transition-colors hover:bg-[#f3cf79]"
+              className="inline-flex h-9 min-h-9 items-center justify-center gap-2 whitespace-nowrap rounded-full px-[14px] text-[14px] font-medium leading-[20px] transition-colors bg-[#f7d68b] text-[#1b1a18] hover:bg-[#f3cf79]"
+              title={isZh ? "下载" : "Download"}
+              aria-label={isZh ? "下载" : "Download"}
+              href={
+                isZh
+                  ? `${FB_SITE}/zh/download/success${DOWNLOAD_QUERY}&download_link_text=${encodeURIComponent("下载")}`
+                  : `${FB_SITE}/download/success${DOWNLOAD_QUERY}&download_link_text=Download`
+              }
             >
               {isZh ? "下载" : "Download"}
             </a>
