@@ -138,28 +138,3 @@ Claude Cowork is Anthropic's agent mode for delegated knowledge work: same agent
 
 Pick Chat for conversational drafting, Code for repositories, Cowork for operational deliverables. If Cowork's limits — subscription lock-in, user-initiated triggers, closed codebase — push you elsewhere, treat that as a category decision, not a failure of the product's design center.
 
-## FAQ
-
-### Is Claude Cowork the same as Claude Desktop?
-
-No. Claude Desktop is the application. Inside it (and on web/mobile), you choose **Chat** or **Cowork** from the same message entry point. Chat is conversational; Cowork is task delegation with file and tool execution.
-
-### How much does Claude Cowork cost?
-
-Cowork is included in paid Claude plans — Pro, Max, Team, and Enterprise — not sold separately. As of July 2026, Anthropic lists Pro at about $17/month with annual billing ($20 monthly), Max at $100 or $200/month tiers, and Team at $20/seat/month for standard seats. Cowork consumes plan usage limits faster than Chat; check Anthropic's current pricing page for your region and plan.
-
-### Can Claude Cowork run when my laptop is closed?
-
-Yes, for remote sessions in beta. Anthropic documents that Cowork tasks run in the cloud, continue when you step away, and scheduled tasks can run without a device online. Local file access still requires the desktop app on the machine where those files live when the task needs them.
-
-### What's the difference between Claude Cowork and Claude Code?
-
-Claude Code targets software engineering — writing, debugging, and shipping code via terminal or IDE integrations. Cowork targets non-coding knowledge work — research, documents, analysis, operational multi-step tasks — using the same agentic architecture with a knowledge-worker UX.
-
-### Does Claude Cowork replace calendar automation or meeting prep tools?
-
-Partially, if you manually start or schedule Cowork tasks and connect calendar, CRM, and messaging apps. It does not, by default, treat every calendar event as an automatic trigger the way calendar-driven agent systems do. For prep and follow-up tied directly to events, compare Cowork's manual/scheduled model against calendar-native agents in our scheduling agent overview.
-
-### What kinds of tasks is Claude Cowork actually good at?
-
-Cowork is built for operational knowledge work that ends in a reviewable artifact: research synthesis into a formatted document, building a spreadsheet from exports, organizing a folder of contracts, preparing meeting materials from connected apps, or running a recurring report on a schedule. It is a weaker fit for conversational drafting (use Chat) or software engineering (use Claude Code) — the deciding question is whether the job ends in a polished file in a folder you chose.

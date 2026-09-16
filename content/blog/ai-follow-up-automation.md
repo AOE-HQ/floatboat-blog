@@ -116,28 +116,3 @@ In a calendar-driven approach, the calendar is the central runtime that orchestr
 
   * Calendar-Driven AI vs Chat-Based AI — Why automated follow-up triggered by the calendar is architecturally different from asking a chat AI to summarize.
 
-## FAQ
-
-### Do I have to trigger follow-up myself, or does it run automatically?
-
-You don't start it — the system does. The follow-up pipeline triggers when the calendar event ends, with no prompt, no button click, and no context-switching on your part. That timing is the whole point: manual follow-up a few hours after a meeting has already lost fidelity, while immediate capture works while the meeting is still fresh. An imperfect action item routed right away beats a perfect one written up three days later — or never.
-
-### Why do action items keep getting lost between meetings?
-
-Because follow-up is usually a manual habit that competes with everything else on your calendar, and it decays fast: details fade, ownership gets ambiguous, urgency drops. For solo founders it's worse — there's no team to share the load, and follow-up volume grows linearly with the number of meetings. The standard coping mechanisms ("I'll remember," "I'll type it up later," "I'll block Friday") all break under real volume, and the 24-hour window where follow-up matters passes unused.
-
-### How does AI follow-up automation actually work?
-
-Through a three-stage post-meeting pipeline. First, decision capture separates real resolutions from discussion and outputs a short structured list — typically three to seven decisions per meeting. Second, action extraction turns those decisions into tasks with owners and deadlines, drawn from both explicit statements and the next meeting in the series. Third, the prep loop feeds unfinished items into the next meeting's preparation, so the whole loop — prep, meet, follow-up, prep — keeps running itself.
-
-### Can it handle vague or unstructured meetings?
-
-Yes, within limits. It works best when a meeting has clear decision points and assignments. For brainstorming or exploratory sessions the output is simply sparser — the system captures whatever concrete outcomes did emerge and never fabricates structure where none existed. That's the honest trade-off: unstructured meetings yield fewer decisions, but what did emerge still gets captured instead of dissolving into the broader discussion.
-
-### Can it really tell decisions apart from small talk?
-
-Yes, with reasonable accuracy. The system looks for linguistic and structural signals to sort conversation into modes — social talk, information exchange, deliberation, and resolution — and only resolution produces decisions and action items. It doesn't need to classify every sentence perfectly; it only has to spot the resolution moments, which tend to be linguistically distinct, such as converging phrases or a shift from many speakers to one person summarizing.
-
-### Does it work with the tools and task manager I already use?
-
-That's the design intent. A calendar-driven system sits at the orchestration layer: it reads your calendar for triggers, processes the meeting content, and routes output to your existing task manager, email, or Slack. Integration with major tools — Linear, Notion, Asana, Todoist, and similar — matters because it means you keep your current workflow. Extracted action items simply appear as tasks in the system you already use, in the same format and fields you already use.

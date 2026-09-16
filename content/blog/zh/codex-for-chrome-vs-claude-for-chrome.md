@@ -177,28 +177,3 @@ Claude for Chrome 没有地区限制，全球付费订阅者都能用。
 
   * 想要更多「AI Agent 到底在哪儿省了时间」的实例，看 [AI Agents for Solo Operators](</blog/ai-agent-solo-operators>)。
 
-## 常见问题
-
-### Codex for Chrome 和 Claude for Chrome，我该选哪个？
-
-取决于你的工作类型——以及所在地区。身处欧盟或英国的话，今天真正能用的是 Claude，因为 Codex for Chrome 尚未在那边上线。其他情况：做多标签页后台任务、DevTools 调试、想以 $20/月拿到完整模型栈，选 Codex；文档密集、偏对话式的工作和定时任务，选 Claude。也可以给两者各自分工、同时使用。
-
-### 两款工具在浏览器里的工作方式有什么不同？
-
-Codex for Chrome 是 Codex 桌面应用的插件：它在后台跨多个标签页同时干活，标签页按线程组成标签组，你用 @Chrome 唤起它、把任务委派出去，自己照常浏览。Claude for Chrome 是你当前标签页上的侧边栏 Agent：它读取你眼前页面的实时 DOM，和你围绕屏幕上的内容对话式协作。
-
-### 让它们在网页上替我操作，安全吗？
-
-两者默认都会在触达新域名前先询问，也支持允许与封禁名单，但风险是真实的。Anthropic 的数据显示，提示注入的攻击成功率在无防护时为 23.6%、加防御后降到 11.2%——两家公司都没声称已解决，OpenAI 文档则把页面内容视为「不可信上下文」。先从你信任的站点开始，在用低风险任务验证之前，别把敏感的财务或医疗页面交给它们。
-
-### $20/月这个价位，两边各给到什么？
-
-两边都从 $20/月起步，但模型访问差异很大。Codex for Chrome 随 ChatGPT 套餐附带（Plus 即能用），这个价位就给你完整模型栈；Claude for Chrome 的 Pro 用户在扩展里只能用 Haiku 4.5——最快但最弱的模型——想解锁 Sonnet 4.5 或 Opus 4.6 得上 Max（$100/月）。
-
-### 欧盟和英国能用 Codex for Chrome 吗？
-
-暂时不能。截至 2026 年 5 月，Codex for Chrome 在欧盟与英国均不可用，OpenAI 只说支持「即将到来」，没有时间表。欧盟用户装上扩展可能能正常连接，但 Codex 应用里不会出现 Chrome 插件。Claude for Chrome 没有地区限制，全球付费订阅者都能用。
-
-### 它们支持 Brave、Arc、Firefox 或移动端吗？
-
-不支持。两者都仅限桌面版 Chrome——不支持 Brave、Arc、Firefox 或移动浏览器。它们还有其他共同局限：都处理不了验证码与登录弹窗（需要你手动介入），而且浏览器自动化消耗套餐额度的速度远快于普通聊天。

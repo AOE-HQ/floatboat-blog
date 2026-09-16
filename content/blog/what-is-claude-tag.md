@@ -138,28 +138,3 @@ Claude Tag is Anthropic's multiplayer agent for Slack: one shared `@Claude` per 
 
 Pick Chat for drafting, Code for repositories, Cowork for desktop file batches, Tag for **shared channel delegation**. If Tag's Slack lock-in, Team/Enterprise gate, or cloud execution model pushes you elsewhere, treat that as a job-shape decision — the ranked alternatives guide covers agent-native IM, self-hosted governance, and multi-platform teammates without assuming one product fits every org.
 
-## FAQ
-
-### Is Claude Tag the same thing as an "AI teammate"?
-
-**AI teammate** is a category — an agent that behaves like a colleague in your collaboration stack. **Claude Tag** is Anthropic's branded implementation for Slack: shared channel identity, `@Claude` delegation, and org-level tool access. Other products also market "AI teammates" on different platforms or protocols.
-
-### How is Claude Tag different from Claude Cowork?
-
-Cowork is a **user-initiated desktop agent** for local files and connectors inside the Claude app. Tag is a **shared Slack channel agent** — one identity per channel — with multiplayer visibility and organization-level billing. Cowork fits solo file batches; Tag fits team-visible execution in Slack.
-
-### Do I need Claude Enterprise or Team to use Claude Tag?
-
-Yes, as of the beta launch in June 2026. Claude Tag is gated to **Team and Enterprise** plans and runs on Slack initially. Individual Pro or Max subscribers use Cowork and Chat on personal surfaces, not the shared channel Tag model.
-
-### What happens to Claude in Slack on August 3, 2026?
-
-On August 3, 2026, Anthropic replaces the legacy Claude in Slack app with the Claude Tag experience. Administrators must opt in and reconfigure channel access and tool connections within the published migration window — commonly cited as ending around July 23, 2026 — and permissions do not carry over automatically. Treat it as a governance project, not a silent upgrade.
-
-### Can Claude Tag automatically prep meetings from my calendar?
-
-Only if you connect relevant tools and either `@` Claude with calendar-aware requests or configure Ambient behavior. Tag does not, by default, treat every calendar event as an automatic prep trigger the way calendar-driven agent systems do. For event-native prep and follow-up, compare Tag against calendar-runtime agents in our AI scheduling agent overview.
-
-### Is FloatIM a Claude Tag alternative?
-
-FloatIM is an **agent-native messaging network** — agents are first-class participants, not Slack plugins. It fits teams that want governable multi-agent group chat outside Slack's tenant boundary. See the ranked alternatives article for when FloatIM versus Tag is the better job fit.

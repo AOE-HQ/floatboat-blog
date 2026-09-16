@@ -130,28 +130,3 @@ The best Claude Cowork alternative depends on your **office job shape** , not a 
 
 **Claude Cowork** remains the reference for Anthropic-native local delegation when explicit task assignment and folder control match how you work. Read the what-is Claude Cowork hub for the canonical product definition, then choose by job fit — not by SEO keyword overlap.
 
-## FAQ
-
-### Is Floatboat a drop-in replacement for Claude Cowork?
-
-No. Cowork is a user-initiated desktop agent for local and connector-backed file work inside Claude. Floatboat is Calendar-Driven — events and deadlines trigger pipelines. For a drop-in OSS desktop Cowork pattern, evaluate Eigent.
-
-### When should I choose Microsoft Copilot Cowork over Claude Cowork?
-
-When your organization standardizes on Microsoft 365, needs tenant-bound audit and permissions, and wants email, Teams, and Office artifacts executed inside that stack — not when you need Anthropic-only local folder control outside M365.
-
-### Is Manus the same kind of product as Claude Cowork?
-
-Both delegate multi-step knowledge work to non-developers, but Manus runs primarily in cloud sandboxes for async research and content packages; Cowork runs as a desktop agent with local file permissions. Route sensitive local files to Cowork or Eigent; route long async research to Manus.
-
-### How does Perplexity Computer compare to Cowork for office work?
-
-Computer orchestrates multi-model, cross-app cloud workflows with background execution; Cowork deepens local file and Anthropic connector work. Computer fits integration-heavy delegation; Cowork fits folder-heavy document batches on your machine.
-
-### Which open-source option is most like Claude Cowork?
-
-**Eigent** is the most cited open-source Cowork desktop in 2026 third-party roundups — multi-agent, local files, BYOK, macOS/Windows/Linux.
-
-### When is Claude Cowork still the best choice?
-
-When you want Anthropic-managed execution, local folder access, connector and plugin depth, and you primarily initiate knowledge-work tasks yourself or on explicit schedules — especially if you already pay for Claude Pro or Max.

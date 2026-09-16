@@ -76,28 +76,3 @@ Grok 4.6 is xAI's sharpest release yet, and its sharpness is specific: a frontie
 
 The decision between them is a workload routing problem, not a model-picking problem. Grok 4.6 earns its $2/$6 price on knowledge-heavy agent tasks where its GDPval and AA-Briefcase scores are genuinely frontier. DeepSeek wins where token volume is high and cost is binding, because a seventh of the output price compounds fast over a long agent loop. Whatever you choose, budget for the real cost structure — the 200K threshold, the reasoning-effort dial, the cache key — and validate on your own tasks before you trust either model's scorecard.
 
-## FAQ
-
-### What is Grok 4.6?
-
-Grok 4.6 is xAI's flagship model released August 12, 2026 — a post-training upgrade on Grok 4.5 focused on long-running agents, coding, and knowledge work, with a 500,000-token context window and a reasoning-effort ladder up to `xhigh`.
-
-### How much does Grok 4.6 cost?
-
-Prompts under 200,000 tokens bill at $2 per 1M input and $6 per 1M output tokens (cached input $0.50). At or above 200K tokens, the entire request doubles to $4 / $12. A faster variant is available at 2x the base rates.
-
-### Does Grok 4.6 support images?
-
-Yes for input, text only for output. Grok 4.6 accepts text and image input and produces text output, with no stated output length limit.
-
-### Is Grok 4.6 open-source?
-
-No. Unlike DeepSeek's V4 line (MIT-licensed weights), Grok 4.6 has no open-weight release and no self-hosting option. It is available through the xAI API, Grok Build, Cursor, and partners like OpenRouter and Vercel.
-
-### Is Grok 4.6 better than GPT-5.6 Sol?
-
-They match at 61 on the Artificial Analysis Intelligence Index, but the composite hides a workload split: Grok 4.6 leads on agentic knowledge work (GDPval-AA v2) while GPT-5.6 Sol leads on the hardest software-engineering benchmarks (DeepSWE v1.1, Terminal-Bench v3.0).
-
-### How does Grok 4.6 compare to DeepSeek V4 Pro 0813?
-
-Both shipped the same week targeting agentic workloads at budget prices. Grok 4.6 has the stronger composite intelligence and knowledge-work scores ($2/$6); DeepSeek V4 Pro is ~4x cheaper on input and ~7x on output ($0.435/$0.87) with MIT-licensed weights and a first-party harness. Choice depends on whether cost or benchmark headroom matters more for your workload.

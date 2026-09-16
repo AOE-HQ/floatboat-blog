@@ -125,28 +125,3 @@ If you're still in research mode — same. That's probably the right place to be
 
   * [Understand how AI automation work is priced in the market before hiring a development service](</blog/ai-automation-agency-pricing>)
 
-## FAQ
-
-### When do I actually need to hire an AI agent development service?
-
-You need one when your requirements are complex, stable, and the ROI math actually closes — multi-agent coordination, compliance-heavy industries like healthcare or finance, or deep integration with proprietary systems such as legacy databases and custom CRMs. If your workflow can be described in one sentence and runs on common SaaS apps, n8n or Make.com is probably enough for now. Custom development also handles scope changes poorly, so validate the use case before commissioning a build.
-
-### What does an AI agent development service actually include — and what's usually left out?
-
-Most reputable providers start with discovery and scoping, then handle model selection, prompt architecture, tool integrations (CRM, APIs, email), and testing — followed by maintenance and handoff. But observability — logging, feedback loops, production debugging — and security or compliance scoping are typically not included unless you ask. Confirm what documentation, support windows, and handoff actually look like before signing.
-
-### How much does a typical AI agent development project cost?
-
-Freelancers and small agencies run $5K–$30K; mid-tier custom builds land in the $30K–$150K range; enterprise-grade builds run $150K–$400K+. In regulated industries like healthcare and finance, agents typically cost $120K–$400K+. Integration work adds more: $2K–$5K per CRM connection, $10K–$30K for deep custom integration, plus roughly $800–$900 per month in API usage when relying on 3–5 external tools.
-
-### Can I build an AI agent myself without writing code?
-
-Yes, for a surprising range of use cases. n8n and Make.com handle memory, tool use, and multi-step reasoning through visual builders — real teams run production workflows on them, and Make.com plans start at $9 per month. They hit a wall with deep integration into proprietary systems like legacy databases or undocumented internal APIs. If you can describe your workflow in one sentence, try DIY before hiring anyone.
-
-### What should I ask a provider before signing?
-
-Ask what their discovery process looks like, whether the build is template-based or fully custom, what "maintenance" includes, and who owns the code and documentation after handoff. Also request a past build at similar complexity, confirm which observability tools are included, and ask how mid-build requirement changes are handled. Vague answers to any of these are a red flag.
-
-### Will I need to keep paying for maintenance after launch?
-
-Almost always yes, in some form. Models get deprecated, APIs evolve, and real users surface edge cases QA never caught, so ongoing maintenance typically costs 5–15% of the initial build per year. Ask upfront what maintenance covers — bug fixes, prompt updates, model upgrades — and what the support window is.

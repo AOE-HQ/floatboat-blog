@@ -131,28 +131,3 @@ Floatboat 免费下载。开始用不需要信用卡。
 
 _Floatboat 由 AOE Tech Labs 为 AI 时代的一人公司打造。支持 Windows 10+ 与 macOS 13+。_
 
-## 常见问题
-
-### 有真正的「Windows 版 Raycast」吗？
-
-基本有，但不是多数人以为的那种。PowerToys Run、Wox、Flow Launcher、Keypirinha 都可选，但缺打磨、AI 集成与生态。Floatboat 换个方向补缺口：不克隆命令面板，而是把 AI 原生工作区带到 Windows 与 macOS。
-
-### Floatboat 只是 Raycast 的克隆版吗？
-
-不是——这么说反而小看它。Raycast 是带扩展、需手动配置的命令面板；Floatboat 是全栈 AI Agent 工作区：以 Agent Chat 为核心，扩展出文件管理、内置 AI 浏览器与无代码 Combo Skills。Raycast 弹出命令，Floatboat 让懂你的 AI 队友替你把活干完。
-
-### Floatboat 真的会「学习」我的工作方式吗？
-
-会——这正是 Tacit Engine 的用意。它不要求你装扩展、写脚本，而是观察你在工作中如何编辑、决策与执行，再沉淀下你业务背后的操作直觉：你的判断、你的标准、你偏好把事情做完的方式。无需额外设置。你的工作方式会变成可复用的资产，而不是每周一都要重建的东西。
-
-### Combo Skills 能帮我自动化什么？
-
-Combo Skills 把「你怎么把活干完」固化成可复用、无代码的 AI 工作流，相似工作出现即自动重放：语音笔记十分钟变客户可用的 pitch 稿、零散研究到带自己文风的成稿、战略合同审查标风险给反建议。更多即用技能见社区共建的 ComboStore。
-
-### Floatboat 能访问我的本地文件与现有工具吗？
-
-能——Floatboat 是原生桌面应用，不是假装桌面的网络应用。它读写你电脑上的文件与软件、把任务直接写进系统「提醒事项」、唤起本地邮件客户端，并即时连接 3500+ 工具，配合现有 Slack、Google Drive 等技术栈。内置浏览器还能让 Agent 完成网页任务，你无需切标签。
-
-### Floatboat 怎么收费？AI 没交付怎么办？
-
-Floatboat 免费下载，开始使用不需要信用卡。想要的不只是低价？还有 User Protection Program：当 AI 确实没能交付时，你可以申请受保护的额度返还，最高不超过已付金额。这是任何启动器都不提供的「按结果付费」保障，也是让 AI 按价值而非算力定价的一步实在尝试。

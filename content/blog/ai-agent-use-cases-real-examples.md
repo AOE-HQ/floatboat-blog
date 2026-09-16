@@ -157,28 +157,3 @@ _If you're also experimenting with AI workflows, I'd be curious about what's act
 
   * **[how Lindy and Gumloop differ when it comes to agent-style workflows](<https://<https://floatboat.ai/blog/lindy-vs-gumloop>>)**
 
-## FAQ
-
-### Do AI agents actually save time in real-world work?
-
-Yes — for structured, repeatable tasks. The research-to-deliverable workflow cut a 3–4 hour job to roughly 1–1.5 hours, and weekly competitive monitoring dropped from 45 minutes to about five. Just know the conditions: savings shrink when briefs are messy or sources are hard to find, and week one usually feels slower while you set up and tune the workflow.
-
-### What exactly is an AI agent?
-
-An AI agent is a system that takes a goal, breaks it into steps, and uses tools — search, files, apps — to work toward a result, rather than answering a single prompt. Think 'assistant with a to-do list' rather than chatbot. In the workflows above, agents do the busywork; interpreting and judging the output is still your job.
-
-### Do I need to know how to code to use AI agents?
-
-Not with the tools aimed at solo founders and creators. Floatboat, Zapier AI, and similar platforms are built for non-technical users, and the people getting the most out of agents are usually the clearest thinkers, not the most technical. Expect more configuration as your workflow gets more specific, though — and a prompt-engineering guide helps even non-developers.
-
-### How is this different from just using ChatGPT?
-
-ChatGPT and other single-prompt AIs respond to one input at a time. Agents chain actions — search, then summarize, then format, then output — without you manually passing results between steps. That chaining is what turns a chatbot into a workflow that can research, draft, repurpose content, or monitor competitors end to end.
-
-### Where do AI agents still fall short?
-
-In every use case in this article, the limits were clear: agents can't judge relevance like a specialist, can't read unspoken client context, miss the strategic signal behind surface changes, and don't know what to cut for a different audience. They also make mistakes, so keep a human review step before anything client-facing goes out.
-
-### What should I expect when I start using AI agents?
-
-Expect the first week to be slower, not faster, while you build and test the workflow — most people find a rhythm within two to three weeks. Not every task is worth automating: if you won't do it at least once a week, skip it. Start with one repeatable task, get it working well, then add the next.

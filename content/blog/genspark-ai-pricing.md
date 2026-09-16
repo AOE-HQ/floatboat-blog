@@ -125,28 +125,3 @@ Alright, back to building things.
 
   * **how Lindy and Gumloop differ when it comes to agent-style workflows**[https://floatboat.ai/blog/lindy-vs-gumloop](</blog/lindy-vs-gumloop>)
 
-## FAQ
-
-### Is the Genspark free tier actually useful?
-
-For testing, yes; for daily work, no. The free plan gives you about 100 credits per day, 1 GB of AI Drive storage, and basic access to Sparkpages and the Super Agent. It is enough to find out whether Genspark fits your research style, and no credit card is required. But a single deep Sparkpage can eat 30–80 credits, so beyond two or three tasks a day the cap binds quickly.
-
-### Which plan should I pick: Plus or Pro?
-
-Start with Plus unless you produce content at volume. Plus costs $24.99/month ($19.99 on annual billing) for 10,000 monthly credits, 50 GB of storage, and priority access to premium models. Pro jumps to $249.99/month for 125,000 credits, 1 TB of storage, and every model and agent on the platform. The steep 10x gap makes Pro worthwhile mainly for agencies and content teams that keep buying credit top-ups on Plus.
-
-### How many credits does each Genspark task consume?
-
-It varies a lot. Basic AI chat costs zero credits on paid plans through December 2026. Sparkpages run roughly 5–80 credits each depending on depth and sources, while a full slide deck can pass 100. Video generation is the most expensive, and the phone-call feature burns about 1 credit per second — a three-minute call is roughly 180 credits. With 10,000 monthly credits, heavy users report running out in two to three weeks.
-
-### What happens when I run out of credits mid-month?
-
-Credit-consuming features pause until your next billing cycle, while AI chat and image generation keep working on paid plans because they don't draw credits (through December 2026). To continue immediately, buy a credit pack — $20 for 10,000 credits or $40 for 20,000. Packs are valid for three months, so leftover top-up credits don't reset at your next billing date.
-
-### Is AI chat and image generation really "unlimited" on paid plans?
-
-Only with caveats. There is no monthly cap, which is why Genspark advertises them as unlimited, but a session-based rate limit resets every five hours and heavy use will hit it. The zero-credit perk is also guaranteed only through December 31, 2026, after which the terms could change. If you're planning around these features long term, watch Genspark's announcements.
-
-### Can I use Genspark outputs commercially?
-
-Yes — paid subscribers get commercial use rights for AI-generated content, but only guaranteed through December 31, 2026. Genspark hasn't said what happens after that date. If you build client deliverables on Genspark output, keep that deadline in mind and check for updates before year-end.

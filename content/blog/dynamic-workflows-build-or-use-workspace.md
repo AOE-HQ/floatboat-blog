@@ -109,28 +109,3 @@ Worth checking the official Claude Code docs before you commit either way — re
 
 [Workspace Agents vs Workflow Builders: A Clear Comparison](</blog/workspace-agents-vs-workflow-builders>)
 
-## FAQ
-
-### Do Dynamic Workflows mean I need to build my own agent stack?
-
-No. Dynamic Workflows is one option for orchestrating sub-agents inside Claude Code, not a signal that every AI-using solo operator should now be building agent systems. If your work is codebase-scale or research-heavy and you already live in Claude Code, it's worth trying. If your work is calendar- and client-driven, the workflow layer probably isn't the missing piece — what's missing is execution across the schedule you already have.
-
-### Who can use Dynamic Workflows, and is it on by default?
-
-It's a research preview on Max, Team, and Enterprise plans — Pro isn't included — plus the API, Bedrock, Vertex AI, and Microsoft Foundry. On Max and Team it's enabled by default; Enterprise admins have to switch it on. You also need Claude Code v2.1.154 or later. As with any research preview, check the latest documentation before committing, since plan availability and pricing can shift.
-
-### How much more expensive is a workflow run than a normal session?
-
-Noticeably more. Anthropic's own docs warn that workflows burn substantially more tokens than a standard session, and a multi-agent run can be an order of magnitude more expensive than a single-agent one. That's acceptable for codebase-scale migrations but poor economics for small daily tasks. The guidance is to start with a scoped task to calibrate cost before launching a repo-wide audit.
-
-### What if I already built part of a sub-agent workflow?
-
-Keep it for the use case it actually fits — deep research, audits, or large refactors — and stop trying to make it cover the rest of your week. The mistake most people make (including me) is forcing one architecture to serve both deep occasional work and daily repetitive work; they want different tools. Anthropic frames workflows as best for problems too big for a single pass by one agent — a specific use case, not a default mode.
-
-### When do sub-agents create more maintenance than value?
-
-Roughly when the task isn't repeating enough to amortize the setup, or when the workflow touches so many different tools that you spend real time on the seams between them. A rough personal rule: if you've spent more time configuring it than running it after the second week, it's not earning its place. Cut it — or move that part of the work to a layer you don't have to maintain.
-
-### Is an AI workspace better for non-developers?
-
-For most non-developer solo operators, yes — at least for the daily-execution layer. Dynamic Workflows assumes a Claude Code environment and a Max-or-above plan. A workspace that sits across calendar, tasks, and recurring work is usually closer to what a creator, consultant, or service provider needs day to day. Coordinating agent fleets and making sure Tuesday's deliverables actually go out are different jobs with different tools.

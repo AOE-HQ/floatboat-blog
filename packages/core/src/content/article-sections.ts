@@ -14,7 +14,8 @@ export type SplitArticleContent = {
   finalCta: FinalCta | null;
 };
 
-const FAQ_HEADING =
+/** Heading that opens a FAQ block. Exported for the body→JSON migration tooling. */
+export const FAQ_HEADING =
   /^##\s+(Frequently asked questions|FAQ|FAQs|常见问题)\s*$/im;
 
 const SHARE_TRAILER =
@@ -30,7 +31,8 @@ function stripShareTrailer(text: string): string {
 
 /**
  * Floatboat/HTML-export FAQ bodies use one of two question shapes:
- *   ### A question?            (heading style)
+ *   ### A question?            (heading style — the answer may start on the
+ *                              next line of the same block, no blank line)
  *   **A question?**            (bold lead block style)
  * Answers are plain blocks until the next question. Blockquote/other
  * formatting inside an answer is preserved as markdown.
@@ -61,11 +63,18 @@ function parseFaqItems(raw: string): FaqItem[] {
   };
 
   for (const block of blocks) {
-    const h3 = block.match(H3_QUESTION);
+    // A `### question` may share its block with the answer (no blank line
+    // after the heading), so test the block's FIRST LINE, not the whole block.
+    const newlineAt = block.indexOf("\n");
+    const firstLine = newlineAt === -1 ? block : block.slice(0, newlineAt);
+    const h3 = firstLine.match(H3_QUESTION);
     const bold = block.match(BOLD_QUESTION);
     if (h3 || bold) {
       flush();
-      current = { question: (h3 ? h3[1] : bold![1]).trim(), answers: [] };
+      current = {
+        question: (h3 ? h3[1] : bold![1]).trim(),
+        answers: h3 && newlineAt !== -1 ? [block.slice(newlineAt + 1).trim()] : [],
+      };
       continue;
     }
     if (current) {

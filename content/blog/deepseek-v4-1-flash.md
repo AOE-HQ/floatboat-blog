@@ -112,28 +112,3 @@ For solo operators and agent builders specifically, the strategic read is simple
 
 A two-day beta is an unusual launch, but it is a very DeepSeek way to run a strategy experiment. The company shipped an intermediate build under an expiring name, capped concurrency at a level that rules out production use, published no benchmarks, and let the community generate the only performance data that exists. In that data, the architecture-level revision looks genuine: speeds in the 300–500 tokens/s band, multimodal input handled natively rather than bolted on, and cost structure that stays on the flash price list. And in the questionnaire, DeepSeek asked the question that matters more than any single number — whether this cheap, fast model can replace the expensive one. The price cut landing at the exact moment the beta expires suggests DeepSeek already has its answer in mind; September 10 will tell us whether the market agrees.
 
-## FAQ
-
-### What is DeepSeek V4.1 Flash?
-
-DeepSeek V4.1 Flash is an intermediate test version of DeepSeek's next Flash-tier model, opened for limited API beta on September 8, 2026, and scheduled to auto-expire on September 10. It uses a new model architecture with native multimodal input and bills at the same rate as `deepseek-v4-flash`. It is not a formal release and has no official technical report or benchmark table yet.
-
-### How do I access DeepSeek V4.1 Flash during the beta?
-
-Keep your existing API `base_url` and key, and change only the `model` parameter to `deepseek-v4.1-flash-expires-on-0910`. No separate endpoint or beta qualification is needed. Each account is capped at 20 concurrent requests, and the model ID stops working after September 10, 2026.
-
-### Is V4.1 Flash faster than V4 Pro?
-
-Community measurements during the beta recorded roughly 5.7x the sustained throughput of V4 Pro (around 355 tokens/s vs. 63 tokens/s) with about 77% lower first-token latency. These are developer measurements on an intermediate build, not official figures; DeepSeek has not published its own benchmarks.
-
-### Is V4.1 Flash cheaper than V4 Pro?
-
-During the beta it bills exactly like `deepseek-v4-flash`, which is roughly one-third of V4 Pro's output price. A flash-series price cut effective September 10 lowers cache-hit input prices by 60% while output drops about 11%, so the formal model is expected to remain far below Pro pricing if it keeps the flash price list.
-
-### Can DeepSeek V4.1 Flash replace V4 Pro?
-
-That is precisely the question DeepSeek's own beta feedback questionnaire asks users to answer. The model is positioned to test whether Flash-tier speed and price can absorb Pro-level workloads; whether it fully replaces Pro depends on the formal release's quality at production concurrency, which has not been published.
-
-### Is DeepSeek V4.1 Flash open source?
-
-No weights have been released for V4.1 Flash. The rest of the V4 family (V4 Pro and V4 Flash) is MIT-licensed on Hugging Face, but DeepSeek has made no statement about open-sourcing the new architecture. Expect confirmation — or silence — with the formal release.

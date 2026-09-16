@@ -131,28 +131,3 @@ Alright, that's today's little discovery. If you're going through this evaluatio
 
   * 👉 [Lindy vs Gumloop: A Practical Comparison of AI Automation Tools](</blog/lindy-vs-gumloop>)
 
-## FAQ
-
-### How much does an AI automation agency actually cost?
-
-There's no industry standard, but realistic ranges are consistent. Standalone automation projects typically land between $2,000 and $15,000 — simple single-workflow builds at the low end, multi-system integrations with custom LLM layers at the top. After delivery, agencies pitch monthly retainers of $500–$5,000 for monitoring, fixes, and prompt updates. A smaller group charges per workflow or per automation run instead.
-
-### What pricing models do agencies use?
-
-Three models dominate. Project-based quotes a flat fee for a defined scope — clean and predictable, but support ends at delivery unless negotiated separately. Retainers charge $500–$5,000 per month for monitoring, fixing broken APIs, updating prompts, and sometimes new builds — usually where the agency's real profit lives. Per-workflow billing charges per automation run and only suits predictable volume.
-
-### What's usually included in the project fee — and what's often not?
-
-Most proposals include a discovery or audit phase, the build itself, basic testing, deployment, and some documentation; a few add a training session. Ongoing monitoring, prompt optimization, and error handling are commonly excluded from the initial fee, as are performance benchmarking, scaling to other departments, and adapting workflows when underlying models update. Ask before signing.
-
-### What drives the price up or down?
-
-Four things move the number most: how many systems the automation connects, whether the agency uses pre-built templates or builds custom LLM pipelines, your internal readiness (messy data and undocumented processes lengthen discovery), and compliance requirements in healthcare, finance, or legal. Each adds genuine testing and care time, not padding.
-
-### Can I build the automations myself instead of hiring an agency?
-
-For many use cases, yes. Spend a day testing whether Zapier, Make, or n8n can handle the workflow before hiring anyone — if the need is simple, like moving form data into a spreadsheet and sending an email, no-code tools cover it. An agency earns its fee when the automation spans multiple interconnected systems, needs custom AI logic, or you lack the bandwidth — and only once the process is stable.
-
-### Can I get locked into a bad contract?
-
-It can happen. Some agencies build on proprietary platforms or lock workflows behind their accounts, so confirm you own all automations, prompts, and workflows built during the engagement. Check retainer cancellation terms — some require 60–90 days' notice — and read the contract carefully before signing.

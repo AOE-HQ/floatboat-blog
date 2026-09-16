@@ -111,28 +111,3 @@ Not the ones who plugged in the most autonomous tool first and hoped for the bes
 
   * Claude Managed Agents, coding agents, and autonomous AI tools all sit on different points of the autonomy spectrum — this breakdown helps clarify the difference: [What are Claude Managed Agents?](</blog/what-are-claude-managed-agents>)
 
-## FAQ
-
-### What are the different types of agentic AI tools?
-
-Very different from one another. Assistants like Claude or ChatGPT in chat mode respond to your prompts and aren't truly autonomous. Workflow agents such as n8n or Zapier run triggered, scoped actions across your apps. Builders like Lindy let you define and deploy a persistent agent without code. Coding agents like Claude Code read your codebase, edit files across projects, and iterate on failures. AI workspaces coordinate files, browser, and services — the newest, least mature category.
-
-### Which type should I start with?
-
-Start from the level of autonomy you actually need, not the marketing. If you're new to the category, begin at assistant level to build intuition and learn failure modes before granting more freedom. Solo operators with repeatable, low-stakes work should explore workflow agents first. Once you've identified a workflow you want handled consistently, move to a builder. Coding agents only make sense when the task lives in your codebase.
-
-### Do agentic tools need access to my apps and data?
-
-It depends on the type. Assistants don't — you bring the content to them. Workflow agents and builders generally do need integrations to act on your behalf, but good tools let you scope exactly which accounts and actions are permitted. Grant the minimum access needed for the specific task, not blanket access to everything. You can always expand later, so start narrow.
-
-### Can I pause or approve steps before they run?
-
-Yes, in most well-designed tools. Claude Code's permission mode system, for example, offers graduated control from approving every action through to running autonomously, and the default sits at the cautious end. For workflow agents, approval gates are a design feature you build into the workflow. If a tool can't do step-level approval and gets write access to accounts you care about, treat that as a gap to understand before you deploy.
-
-### What if a tool does something wrong — can I undo it?
-
-Not always, which is why risk controls come first. Prefer reversible actions and require confirmation for destructive or irreversible ones. Before any agentic task, ask whether you could undo the damage in under ten minutes; if not, keep a human approval in the loop. Also verify the tool produces a human-readable activity log so you can see what it did and in what order.
-
-### What should I not automate with agentic AI?
-
-Anything where being wrong isn't recoverable. The author keeps humans in the loop for client deliverables that ship without review, emails that commit him to something, billing, invoicing or other payment-system changes, and decisions that can't be undone. After a year of automation these still stay manual — approval isn't a sign of a weak tool, it's the design.

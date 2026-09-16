@@ -78,28 +78,3 @@ Grok Bot is the most legible bet yet on what an AI agent product should feel lik
 
 The reservation that follows every point of praise is the security model. When a product holds your real credentials on a shared machine, the trust conversation stops being about capability and becomes about blast radius. The documentation is honest — it says plainly not to treat Bots as security boundaries — and the mitigations are the standard agent-security playbook, but the fundamental concentration of access is the design, not a bug. For solopreneurs the decision is straightforward even if it is not easy: if you can live inside one vendor's trust zone and the Cursor-based pricing works for you, Grok Bot is a real productivity gain. If your work cannot tolerate that concentration, it is a non-starter regardless of how good the demos are.
 
-## FAQ
-
-### What is the difference between Grok and Grok Bot?
-
-Grok is the AI model (the reasoning engine, most recently Grok 4.6). Grok Bot is the agent product: a persistent, named teammate that runs on its own cloud computer, signs into your apps, and completes multi-step work. Regular Grok answers questions; Grok Bot does work.
-
-### How does Grok Bot access my apps?
-
-Bots use a persistent cloud VM with a browser, filesystem, and terminal. They use connectors/MCP where available and computer use (visually operating the interface) for apps and websites without a clean API. Bots sign in with your credentials and sessions persist across tasks.
-
-### Is Grok Bot secure?
-
-It is safe to use if you understand its model. Every Bot on your account shares one cloud computer — same cookies, files, and credentials — and xAI's docs explicitly say not to use separate Bots as a security boundary. Treat the whole Bot roster as a single trust zone, use scoped accounts for sensitive systems, and require approvals for high-stakes actions.
-
-### How much does Grok Bot cost?
-
-It is not sold standalone. It is included with SuperGrok Heavy (~$300/mo), Cursor Ultra ($200/mo), or Cursor Teams Premium ($120/seat/mo). There is no free tier and no standalone plan; enterprise access is waitlist-only.
-
-### Can Grok Bot run on my own computer?
-
-The main work happens on the vendor's cloud computer, separate from your local machine. A Bot runs local commands only when that capability is explicitly enabled and you approve it under your local-computer policy.
-
-### How does Grok Bot compare to open-source agent harnesses?
-
-They are opposite bets. Grok Bot gives you a managed teammate whose computer the vendor controls — optimized for outcomes, but it concentrates your credentials and is not portable. Open-source harnesses like DeepSeek Harness give you the kernel and plugins on your own infrastructure — optimized for control and portability, at the cost of running it yourself.

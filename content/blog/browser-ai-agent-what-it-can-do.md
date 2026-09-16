@@ -149,22 +149,3 @@ I'll know more in a few weeks. That part never really ends.
 
   * Want a more grounded look at [where AI agents genuinely save time for one-person businesses](</blog/ai-agent-solo-operators>) — beyond the flashy demos?
 
-## FAQ
-
-### What counts as a browser AI agent — and what doesn't?
-A browser AI agent is an AI that can see, navigate, click, and take action inside your signed-in web browser. The defining feature is action: it clicks buttons, fills forms, and moves between tabs on your live, logged-in pages. It is not a sidebar chatbot that only reads text you paste in. The main options in 2026 are Codex for Chrome and Claude for Chrome; full agentic browsers like ChatGPT Atlas work differently because they replace your browser entirely.
-
-### Which tasks are browser AI agents actually good at?
-Repeated, structured work inside the browser: summarizing across signed-in tabs (email threads, Slack, dashboards), filling predictable forms, monitoring dashboards on a schedule, multi-tab research on your logged-in views, moving data between tools like CRM, docs, and email, and repetitive SaaS admin. The pattern is the same every time — stable interfaces, predictable steps, and a low cost per mistake. These are where agents reliably earn their keep.
-
-### Where do browser AI agents still become unreliable?
-Long, branching workflows are the weak spot. Once a task passes four or five steps and the path depends on what the agent finds, it can take a wrong branch early and keep executing confidently on wrong data. They also cannot handle creative judgment, anything outside the browser such as desktop apps or local files, sites with heavy CAPTCHA or anti-bot protection, or high-stakes decisions like payments, deletions, and legal filings.
-
-### Will a browser agent work on any website?
-Most websites, yes, but not all. Sites with heavy anti-bot protections, CAPTCHAs, or highly dynamic JavaScript interfaces often break, and banking or financial sites are frequently blocked by default. One localhost caveat: the Chrome extension is not your testing environment. Codex routes localhost through its in-app browser, while Claude for Chrome needs the Claude Code integration for terminal-to-browser workflows.
-
-### Do browser agents replace automation tools like Zapier or Make?
-No — they're a layer on top of your stack, not a replacement. They don't replace dedicated automation platforms for backend integrations, scripts that must run reliably without supervision, or your own judgment on strategic work. Use a browser agent where a human-in-the-browser loop adds value: cross-tool admin, data gathering, and form filling across the signed-in apps you already use.
-
-### How do I keep a browser agent from making expensive or silent mistakes?
-Keep high-stakes actions behind confirmation and spot-check the early runs. Match the agent's autonomy to the stakes — enable ask-before-acting modes for payments, deletions, or contract changes, since prompt-injection attacks still slip through browser agents even with defenses up. Spot-check the first three runs of any new workflow, turn on notifications so silence doesn't read as success, and periodically review the permissions you've granted.

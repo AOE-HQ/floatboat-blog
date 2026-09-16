@@ -58,6 +58,7 @@ export {
 export type { ArticleBreadcrumbLabels } from "./seo/index";
 
 export {
+  FAQ_HEADING,
   splitArticleContent,
   normalizeFinalCta,
   type FaqItem,

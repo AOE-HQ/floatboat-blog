@@ -131,28 +131,3 @@ If your situation looks anything like mine, it's probably worth sitting with for
 
   * Discover practical **[AI agent use cases for real workflows](</blog/ai-agent-use-cases-real-examples>)**
 
-## FAQ
-
-### Can a one-person business really scale without hiring?
-
-Yes, for most solo operators — once you stop equating growth with headcount. Hiring adds coordination: onboarding, managing, reviewing, and communicating can eat more time than the help saves early on. The goal is growing output without growing complexity: turn repeated work into systems, productize your offer, and carry context forward so every project does not restart from zero. There is a point where help makes sense; most people reach that question too early.
-
-### What does "scaling" actually mean for a solo operator?
-
-It means growing output without growing your own hours. Scaling revenue is income rising through higher prices, more clients, or offers that do not consume proportionally more time. Scaling yourself — more hours, weekend work — is not scaling; it is grinding with a hard ceiling. The practical test is Tuesday afternoon: are you improvising something new, or running a process you have already refined?
-
-### How do I know if my offer is scalable?
-
-Ask yourself: if three more clients exactly like your current ones arrived tomorrow, could you deliver without working significantly more hours? If no, your offer needs more structure. Productized services — standardized scope, fixed price, repeatable delivery — cut scope creep and make workload predictable. When the offer has a fixed shape, delivery gets faster every time instead of reinventing the wheel per client.
-
-### Does AI replace the need to build systems first?
-
-No. AI compresses the time it takes to run the systems — drafting, summarizing, researching — and it helps with context continuity. But judgment stays yours: what angle to take, whether a relationship is worth pursuing, how to position something. And AI does not remove the need to build the systems in the first place. Most solo operators are also better off using existing tools than building custom ones.
-
-### When is hiring actually the right move — contractors or employees first?
-
-When demand exceeds what your best-optimized process can handle — not your current, messy one. Build the system first, genuinely streamline, and see whether you are still overloaded; if yes, you have earned the hire. When you do bring someone in, contractors first, almost always: you keep flexibility, avoid fixed costs in slow periods, and test whether the role is truly needed.
-
-### How do I know when I've hit my ceiling?
-
-Look at structure, not effort. The question is not how hard you are working but whether your current setup allows more output without proportionally more time. If yes, you have room to scale; if no, change the structure before adding people. Different shapes cap differently — a high-touch consulting practice peaks sooner than a productized service. And much of what feels like "only I can do this" is habit, not necessity.

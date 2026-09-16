@@ -117,28 +117,3 @@ But the underlying logic? Mostly stable. Start with workflow pain. Keep your sta
 
   * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](</blog/ai-agent-solo-operators>)
 
-## FAQ
-
-### Which AI automation tools should I actually be using?
-
-The honest answer is to start with workflow pain, not tool rankings or categories. List what you do more than twice a week that you hate doing — scheduling, handoffs between systems, inbox triage, report assembly — then pick one focused tool per function: an orchestration platform, a meeting assistant, an inbox agent, a general AI assistant. All-in-one platforms are harder to set up and maintain, and strategic alignment beats trend-chasing.
-
-### Which part of my work should I automate first?
-
-Admin and reporting give time back fastest — they're repetitive, high-friction, and low-stakes when slightly wrong. Support is a quick win if you get the same questions repeatedly. Sales and content need more calibration. Automate client-facing tasks too, but keep human review in the loop longer: errors there carry reputational risk, while admin errors are usually recoverable.
-
-### What does a realistic starter stack look like?
-
-One focused tool per function. Orchestration: Zapier for its wider app library and easier start, Make for more control over complex flows, n8n if you can self-host. A meeting assistant like Fathom or Fireflies, so action items land somewhere useful. An inbox agent if email eats your week. A general assistant — Claude or ChatGPT — for content, and a CRM with built-in automation. Skip platforms that promise to do everything.
-
-### How much does a reasonable setup cost per month?
-
-For the core layers — a general AI assistant, an automation platform, and a meeting tool — expect roughly $65–150 per month. Beyond that you're solving specific problems, and specific problems deserve specific justifications. Watch usage-based pricing: task-based models like Zapier's climb quickly at high volume, so budget against your real volume rather than the sticker price.
-
-### How many automation tools is too many?
-
-If you can't name every active tool off the top of your head, you have too many. For a solo operator, four or five tools covering distinct functions is a healthy ceiling; for a five-to-ten-person team, eight to ten is the range before maintenance overhead eats the time savings. Before adding anything, ask whether an existing tool could do the job with a different configuration — and audit quarterly, because automations break quietly.
-
-### What should stay manual even when it can be automated?
-
-Anything where the quality of the relationship depends on the effort being visible: client check-ins that should feel personal, negotiation, difficult conversations, and creative decisions that need real taste. In sales, the human writes the message that matters while automation handles the mechanical parts. Test: if the receiver would feel worse knowing it was automated, keep it manual.

@@ -149,28 +149,3 @@ That's aii for today's sharing.See you next time.
 
   * **[real-world AI agents use cases across research, content, and operations](<https://<https://floatboat.ai/blog/ai-agent-use-cases-real-examples>>)**
 
-## FAQ
-
-### How is giving AI a role different from a one-off request?
-
-A request is transactional; a role is ongoing. With a request you ask for a product description and start from scratch next time. With a role you define who the AI is, what it knows about you, and what good output looks like — "you are my product communicator, you know our tone and positioning" — so it holds a consistent standard without you re-explaining context every session. That continuity is what changes your work.
-
-### Do I need to switch tools to make this work?
-
-Not necessarily — the tool isn't the point; the role definition is. Start with whatever you already use: write your context, your standard, and format preferences into the system prompt, then test on real tasks. If the output becomes consistent, the idea works, and you can decide later whether a more structured AI workspace is worth adopting.
-
-### How long does writing a role definition take?
-
-The first one takes 20–30 minutes; after that it's small tweaks of a few minutes here and there. Start from a blank document and write the job description — duties, what the role knows about you, and its delivery format. The first two weeks feel like an investment; by week three the role mostly runs itself.
-
-### Which AI roles matter most for a one-person business?
-
-Three show up most: a research analyst that tracks your field and separates signal from noise, a content production role that knows your voice and turns raw thinking into polished output, and an operations coordinator for repeating workflows like outreach drafts and tracking updates. Don't set up all three at once — start with whichever currently costs you the most time.
-
-### What if I don't fully know how to do the task myself yet?
-
-Then the role won't work — and that's useful information, not a flaw. AI executes clarity; it can't manufacture it. If you can't describe what good looks like, the output will sound confident but miss the point. Do the task yourself a few times first, then hand it over. The framework only works once you can define the job.
-
-### Where does this approach break down — and when do I still need a real person?
-
-Roles break down at the edges of your own clarity and whenever work depends on relationship context — like knowing a client is having a hard quarter. AI excels at repeatable, context-heavy, output-defined tasks but underperforms where judgment about people, creative direction, client trust, or strategy under real uncertainty is required; those still need humans. Building roles also takes upfront thinking — it's an investment, not a shortcut.

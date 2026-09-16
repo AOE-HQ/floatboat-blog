@@ -85,28 +85,3 @@ Gemini 3.7 Flash is the clearest statement yet of Google's workhorse-tier strate
 
 The market context gives the release its shape. With Gemini 3.5 Pro still missing and the open-weight field accelerating — GLM-5.3, Grok 4.6, and DeepSeek's V4 family all shipping in the same window — Google is competing on iteration speed and cost rather than on a single flagship benchmark. For developers, the decision framework that emerges is simple: route high-volume coding and knowledge work to a fast workhorse model like Gemini 3.7 Flash, route the hardest multi-hour reasoning to a premium or open-weight flagship, and never build your cost model on a promotional price. The model is the best workhorse tier has offered in years. Just budget for January.
 
-## FAQ
-
-### Is Gemini 3.7 Flash better than Gemini 3.6 Flash?
-
-Yes, on every category Google reported and on Artificial Analysis's independent Intelligence Index (56 vs 52 at high reasoning). The largest gains are in long-horizon software engineering (DeepSWE v1.1: 49.0% → 65.3%), production code quality (FrontierCode 1.1: 34.4% → 43.6%), and document processing (GDP.pdf: 22.0% → 34.0%). It also runs roughly three times faster in output tokens per second. The caveats: CharXiv Reasoning is a small regression, and it still trails GPT-5.6 Terra on the hardest terminal and computer-use benchmarks.
-
-### How much does Gemini 3.7 Flash cost?
-
-Through December 31, 2026, it costs $0.75 per million input tokens and $3.75 per million output tokens, with context caching at $0.075 — half the original 3.6 Flash rate. Starting January 1, 2027, rates double to $1.50 input and $7.50 output, with caching at $0.15. For comparison, Claude Sonnet 5 lists at $2/$10 and GPT-5.6 Terra at $2/$12.
-
-### Why does the price double in January?
-
-The $0.75/$3.75 rate is an introductory promotion designed to drive developer adoption, not the standard price. Google has stated the standard rate from January 1, 2027 will be $1.50/$7.50. Teams building production agent pipelines on the promotional price should either price their product at the January rate or plan a migration before year-end.
-
-### Is Gemini 3.7 Flash available in Floatboat?
-
-Yes. Gemini is a built-in model family in Floatboat, and Gemini 3.7 Flash appears in the model roster alongside DeepSeek, GLM, Kimi, Claude, and MiniMax — no API key, no routing configuration, no external billing. Select it directly in any agent workspace, or let Auto Mode route to it when the task profile calls for a fast, capable workhorse.
-
-### Do I need to change my API code to migrate from 3.6 Flash?
-
-Yes, migration is not a drop-in swap. You must remove `temperature`, `top_p`, and `top_k`, replace the numeric `thinking_budget` with the three-tier `thinking_level` setting (low/medium/high, medium default), drop `candidate_count`, and standardize multi-turn interaction around server-side `previous_interaction_id`. Google says 3.6 Flash is not being shut down, giving teams time to migrate and test.
-
-### Is Gemini 3.7 Flash open source?
-
-No. Gemini 3.7 Flash is API-only — no open weights, no self-hosting, no air-gapped deployment. If open-weight access matters for your workflow, the alternative is a model like GLM-5.3, which offers MIT-style weights for self-hosting while trading away Gemini's throughput and multimodal capabilities.

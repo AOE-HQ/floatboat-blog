@@ -114,28 +114,3 @@ An Obsidian vault is simply a folder of Markdown notes that Obsidian opens as a 
 
 If you need the definition, start a vault and open the folder beside the app. If you need the next step — using those notes across calendar, email, and project files without living only inside Obsidian — continue with the how-to guide linked above.
 
-## FAQ
-
-### Is an Obsidian vault a special file type?
-
-No. A vault is a plain folder on your device, and notes are typically .md files you can open in any editor. Obsidian stores settings and plugins under a hidden .obsidian directory and may create formats like .canvas or .base for specific features, but the knowledge base itself stays ordinary, portable files on disk — delete Obsidian and the files remain.
-
-### Do I need Obsidian Sync to use a vault?
-
-No. Sync is an optional paid add-on for encrypted multi-device sync and publishing, not a requirement. Many people keep a single-device vault, or sync with tools they already trust — iCloud, Syncthing, or Git — and the core app works fully offline without an account. Buy Sync only if you want Obsidian's own encrypted sync between devices.
-
-### Can I have more than one vault?
-
-Yes. Separate vaults are common for work versus personal notes, or to isolate clients and projects. Each vault has its own files, plugin settings, and configuration. The useful rule of thumb: split vaults when trust boundaries or plugin stacks diverge — not merely when tags feel crowded. The cost is context switching; the payoff is control over your blast radius.
-
-### Is my vault private?
-
-Locally, yes — files stay on your device unless you choose to sync or publish them, and Obsidian's core app does not require uploading your notes to its servers. The caveat: third-party sync, cloud AI plugins, or the Web Clipper Interpreter with a remote model provider see what you send them under their own policies. The control is yours, so choose those services deliberately.
-
-### How is a vault different from a Google Drive folder of docs?
-
-A Drive folder of documents is storage plus an online editor ecosystem. An Obsidian vault is local Markdown plus a note app built around linking, backlinks, graph view, and plugins. You can place a vault inside a synced Drive or Dropbox folder — many people do — but Drive alone does not give you the knowledge-base experience: backlinks, relationship graphs, and file-level control.
-
-### Can an AI agent read and use my Obsidian vault?
-
-Yes — and that is increasingly the point. Because a vault is plain text on disk, an agent that can read directories can open, search, and (with permission) rewrite your notes directly, seeing files and frontmatter rather than a locked vendor schema. Whether that pairing is worth it is a workflow choice, not an Obsidian feature; the companion guide on using Obsidian with an AI agent walks through the practical setup.

@@ -157,28 +157,3 @@ Codex Harness 是 OpenAI 对 2026 年全行业都在问的一个问题的回答�
 
 对开发者来说，可执行的划分很简单：**检查并嵌入 harness；为推理单独做预算。**对 Floatboat 用户来说，这次发布印证了为什么日历原生工作区里的分级 GPT-5.6 很重要：模型家族与执行循环终于成了两个可以分开考虑的议题，而两者都在快速演进。
 
-## 常见问题
-
-### 不付钱给 OpenAI 也能运行 Codex Harness 吗？
-
-不能——开源的是 harness 代码，不是模型。你可以在 Apache 2.0 下运行、修改甚至商业化这套代码，但每一轮 Agent 交互都走 OpenAI 的模型与计费，推理仍需要 API Key 或符合条件的 Codex 订阅。仓库里没有任何开源的 GPT-5.6 权重。
-
-### 到底哪些开源了，哪些没有？
-
-OpenAI 开放了 Codex CLI、`codex-rs` harness 核心、SDK、app-server、Codex Security CLI 以及 Skills/Plugins 仓库；**未开放**的是 IDE 扩展、Codex Cloud 托管服务与模型权重。权威清单在 developers.openai.com 上，代码采用 Apache 2.0——再分发前请在仓库内核实许可证。
-
-### Codex Harness 是 2026 年 8 月才首次开源的吗？
-
-不是。Codex CLI 与核心 harness 自 2025 年起就在 GitHub 上；2026 年 8 月的公告是把平台定位正式化、把 app-server 文档化为集成目标。真正的新内容是「可嵌入的开放 Agent 运行时」的叙事、Relay 等示例应用与点名企业嵌入案例——而不是代码本身。
-
-### CLI、SDK、app-server 该怎么选？
-
-当人类操作员或 CI 任务运行有边界的任务并随即退出时，用 `codex exec`。当你的后端代码需要启动、恢复或流式读取 Agent 任务时，用 SDK（`@openai/codex-sdk` 或 `openai-codex`）。当 Agent 要一直可见地出现在你的产品 UI 里、需要持久线程、流式事件与审批请求时，嵌入 app-server。多数团队先用 CLI 做原型，等工作流稳定后再升级到 SDK/app-server。
-
-### Codex Harness 与 DeepSeek Harness 有什么区别？
-
-Codex Harness 是 OpenAI 的纵向运行时，原生对接 Responses API，并与 OpenAI 订阅体系深度耦合。DeepSeek Harness（`dsh`）是基于 Cordis 内核构建的插件化、模型无关的 MIT 预览版。两者的许可证、架构与厂商动机都不同，不能互相替代。
-
-### 像 `codex-harnesses` 这样的 GitHub 仓库是官方的吗？
-
-不是。名字里带 harness 的社区仓库通常是项目脚手架——`AGENTS.md`、hooks、脚本——并不是 OpenAI 的运行时。它们可以作为不错的起点，但受维护的官方代码在 GitHub 的 `openai/codex` 上，采用 Apache 2.0；拿不准时，请把任何 fork 与 §4 的组件清单做对比。

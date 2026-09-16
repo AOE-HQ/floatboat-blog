@@ -141,28 +141,3 @@ That's where I've landed. The one-person company is becoming a default shape of 
 
   * [And if you want to go deeper, this explains what a persistent AI agent actually is](</blog/what-is-persistent-ai-agent>)
 
-## FAQ
-
-### Why aren't chat tools enough for a one-person company?
-
-Because your context resets with every new chat. You train a session on how you write and who your customer is, the output sharpens, you close the tab — and tomorrow it's all gone. A bigger context window delays the pain but doesn't remove it, and a one-person company has no team or shared docs to carry that context for you. With no persistent memory of your standards, style, or past decisions, the re-establishing tax falls entirely on you.
-
-### Are workspace agents replacing chat tools?
-
-No. I still use chat tools daily; the two are complements. Chat is for thinking out loud, exploring an idea, quick drafting. Workspace agents are for execution that needs context and continuity — work spanning your files, your ongoing projects, and multi-step tasks. The useful framing isn't either/or but which layer each tool handles best.
-
-### How is a workspace agent different from a notes app or a workflow builder?
-
-A notes app stores information; a workspace agent acts on it — drafting, summarizing, executing, pulling across files — though the line is getting fuzzier. The contrast with workflow builders is sharper: builders are a hammer for nails, ideal for well-defined, repeated tasks, while a solo operator's day is mostly mixed, judgment-heavy, one-off work that doesn't fit nodes. Workspace agents target that middle ground.
-
-### Can a workspace agent make my decisions or run my business for me?
-
-No — and anyone selling you "an AI that runs your business" is selling something that doesn't exist yet. The genuinely hard parts — who your customer is, what to charge, when to say no, being present in client conversations — aren't delegable. Workspace agents help you execute faster on decisions you've already made, and they amplify a clear operation; they don't create one. Handing over the judgment layer is the failure mode I see most often.
-
-### Are these tools mature enough to bet on right now?
-
-Mixed. The category is real — context that carries across your work, reusable execution, working inside your existing files and tools — but individual products vary widely. I'd treat 2026 as the experimentation year for solo operators, not the standardization year. Worth trying on one real workflow; don't assume any single tool is the final answer.
-
-### Do I need to be technical to use one?
-
-No, you don't need to code, but you do need to articulate your work clearly — your offer, your voice, your customer. The ceiling on these tools is usually the user's ability to describe what they actually want, not the model's capability. Start with one workflow you can already explain well, and expect the first month to feel slow.

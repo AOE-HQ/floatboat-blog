@@ -103,28 +103,3 @@ oh-my-codex 与 Superpowers 回答的是不同的问题，这正是把它们对�
 
 装任何东西之前，先说出你真正的瓶颈。当你是 Codex 重度用户、有可并行或长跑的任务、且能接受它 tmux + Unix 的取向时，选 oh-my-codex；当你想要一套能跟着你跨 Claude Code、Codex、Cursor 的纪律，或者质量波动才是拖慢你的原因时，选 Superpowers。当两种痛在同一周出现——对真在推产品的单人创业者来说，这一天迟早会来——就让它们一起跑：一个管生产车间，一个管质量线。
 
-## 常见问题
-
-### 能同时用 oh-my-codex 和 Superpowers 吗？
-
-可以，而且很多开发者就是这么干的。Superpowers 装进你的编码 Agent，塑造每个会话怎么规划、测试、审查；oh-my-codex 编排并行的 Codex Worker，并跨会话保存状态。两者管的是同一个技术栈的不同层，主要代价是两边都注入指令带来的上下文开销——所以跑大型团队任务之前，先把 Superpowers 裁到你需要的环节。
-
-### 用 Claude Code 的用户应该先装哪个？
-
-先装 Superpowers：oh-my-codex 是围着 Codex CLI 建的，在你把 Codex 加进工作流之前，它几乎提供不了什么；Superpowers 则能干净地装进 Claude Code，给你现有的会话套上「规划 + TDD」的循环。无论你留在 Claude，还是之后再加 Codex，它都持续有效。
-
-### oh-my-codex 必须用 OpenAI Codex 吗，还是可以让 Claude Code 当引擎？
-
-oh-my-codex 是围绕 Codex CLI 作为主执行引擎来设计的，所以你需要一套能用的 Codex 环境，才能拿到它的编排与团队功能。团队模式下，Claude 或 Gemini 可以出任 Worker，由 Codex 协调；但 OMX 并不是 Superpowers 那种面向 Claude Code 的通用编排器。
-
-### Superpowers 只是一堆提示词吗？
-
-不是——它是一套靠结构化、自动触发的技能来落实的方法论。每个技能都是一个 SKILL.md 文件，内含指令与 shell 辅助脚本，Agent 在执行任务之前会先检查它们，所以头脑风暴、TDD 与审查是 Agent 流程的一部分，而不是模型可以无视的建议。而且这些文件是纯文本，你可以像读代码一样读它、编辑它、给它做版本管理——这是「提示词包」给不了你的。
-
-### 两个项目成熟度如何，维护风险有多大？
-
-写这篇文章时，两者都是 MIT 许可、活跃维护，但规模差得很远。Superpowers 的社区与贡献者基础大得多；oh-my-codex 更小、动得更快，与核心创作者绑定很深。代价是：OMX 的功能在版本之间可能变化很快，所以固定版本、阅读 changelog，比在 Superpowers 上更值得在意。
-
-### 对想更快交付产品的单人开发者，哪个更好？
-
-取决于交付慢的原因。如果粗糙、测试不足的代码逼着你返工，Superpowers 每个会话省下的时间更多；如果你一天之内就是干不完足够的独立工作，oh-my-codex 能让一个人并行跑多个 Codex 任务。多数单人创业者迟早会同时撞上这两个瓶颈——这正是「互补配置」通常胜过「二选一」的原因。

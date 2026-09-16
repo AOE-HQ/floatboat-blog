@@ -238,28 +238,3 @@ The World Cup 2026 groups did more than sort teams into a table. They created th
 
 That is why groups and standings belong on one canonical URL. Before the tournament, readers need group lists and key matches. During the tournament, they need live tables. After the group stage, they need final standings that explain the bracket. Keeping all three jobs together gives readers one page to return to and gives the World Cup content cluster a stable hub.
 
-## FAQ
-
-### What are the World Cup 2026 groups?
-
-The World Cup 2026 groups are twelve four-team pools labeled Group A through Group L. Each team played three group matches, and the final standings determined who advanced to the Round of 32.
-
-### Which teams won their World Cup 2026 groups?
-
-Mexico, Switzerland, Brazil, the United States, Germany, the Netherlands, Belgium, Spain, France, Argentina, Colombia, and England won Groups A through L respectively.
-
-### How many teams advanced from the World Cup 2026 group stage?
-
-Thirty-two teams advanced to the knockout stage: the top two teams from each of the twelve groups, plus the best third-place teams.
-
-### Where can I see the World Cup 2026 bracket after the groups?
-
-Use the World Cup 2026 bracket page after reading the group standings. The standings explain how teams qualified; the bracket shows who they played next and how the knockout path developed.
-
-### What is the tiebreaker order for World Cup 2026 groups?
-
-The World Cup 2026 group tiebreaker order should be checked against FIFA’s official competition regulations before publication. In practice, readers should expect the standings to separate teams by points first, then by FIFA’s published tiebreaking criteria such as goal difference, goals scored, head-to-head factors, fair-play points, and drawing of lots where applicable.
-
-### How many third-place teams advanced in 2026?
-
-Seven third-place teams advanced in the 2026 World Cup format. With twelve groups of four teams, the top two teams in each group took 24 knockout places, and the seven best third-place teams completed the 32-team knockout bracket.

@@ -150,28 +150,3 @@ Either way, create a dedicated “World Cup 2026” calendar layer before you im
 
   * [USA World Cup 2026 Schedule: Match Times & Reminders](</blog/world-cup-2026-schedule-usa>) — USMNT kickoff times and reminder setup.
 
-## FAQ
-
-### Does importing an ICS file add all 104 matches at once?
-
-Yes. A World Cup ICS file can contain all 104 matches as individual calendar events. Importing one file adds the group stage, knockout rounds, and final in a single operation, assuming the file is complete and valid.
-
-### Will the match times display in my local time zone?
-
-Usually, yes. If the ICS file includes timezone metadata, your calendar app converts kickoff times to your local time automatically. If you are unsure, check one imported event against the official match time before relying on the full calendar.
-
-### What happens if FIFA changes a match time after I import the ICS file?
-
-Static ICS imports do not update automatically. You need to delete the old events and re-import an updated file. Calendar subscriptions, including URL-based feeds and FloatCup, are designed to refresh when the source feed changes.
-
-### Can I import the schedule into multiple calendar apps?
-
-Yes. The same ICS file can be imported into Google Calendar, Outlook, and Apple Calendar. If you use a syncing platform such as Google or iCloud, importing once at the account level is usually enough to make the events appear on multiple devices.
-
-### How do I remove the World Cup events after the tournament?
-
-If you imported into a dedicated calendar, delete that calendar layer in one step. In Google Calendar, open settings for the “World Cup 2026” calendar and remove it. If you imported events into your main calendar, you will need to delete them in bulk or one by one.
-
-### Is an ICS subscription better than downloading an ICS file?
-
-An ICS subscription is better if the provider keeps the feed updated. A downloaded file is simpler and gives you a local copy, but it is static after import. A subscription is more useful for tournaments where kickoff times can change.

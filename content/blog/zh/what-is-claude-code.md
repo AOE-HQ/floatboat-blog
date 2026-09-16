@@ -92,28 +92,3 @@ Claude Code 是 Anthropic 的本地编码 Agent：单机、以仓库为界，围
 
 当产物是仓库里的代码、而你想逐步入审时，选 Claude Code。当对象是你的文件时，选 Claude Cowork。当工作归频道所有时，选 Claude Tag。产品面该匹配工作的视野与受众——而不是品牌习惯。
 
-## 常见问题
-
-### Claude Code 和 AI 自动补全是一回事吗？
-
-不是。自动补全在你打字时建议下一行。Claude Code 是一个会读仓库、做计划、跨文件修改、跑测试并迭代的 Agent。你审查 diff；你不用驱动每一次击键。
-
-### Claude Code 和 Claude Cowork 有什么不同？
-
-两者都是本地、单机的 Agent。Code 面向代码仓库与工程；Cowork 面向知识工作的文件、文件夹与连接器。同一套循环，不同的对象。三方怎么切见上文链接的对比。
-
-### Claude Code 只能在终端里跑吗？
-
-不是。它起步于终端，但现在也跑在 Claude 桌面应用以及 VS Code、JetBrains 等 IDE 里。界面在变；agentic 循环不变。
-
-### Claude Code 能用 Claude 之外的模型吗？
-
-能，实践中它可以指向 Anthropic 兼容端点，包括 DeepSeek 的——这会改变成本与能力之间的权衡。DeepSeek Agent vs Claude Code 的对比对换模型有详细说明。
-
-### 为什么 Claude Code 比自动补全贵？
-
-Agentic 工作把 token 花在每一次工具调用和每次重跑测试上，而不只是最终答案。被验证过的多步改动，比单行建议贵。价值在于被验证的 diff，而不是每美元买到多少字。
-
-### 我应该从 Cursor 换成 Claude Code 吗？
-
-它们解决的是不同的工作。Cursor 赢在 IDE 原生的日常行云流水；Claude Code 赢在终端里那种仓库规模的深度推理。很多团队是两个都跑，而不是二选一。按任务形态排名的拆解在上文链接的替代品清单里。

@@ -130,28 +130,3 @@ Claude Tag 是 Anthropic 给 Slack 的多人 Agent：每个频道一个共享的
 
 起草用 Chat、仓库用 Code、桌面文件批处理用 Cowork、**共享频道委派**用 Tag。如果 Tag 的 Slack 锁定、Team/Enterprise 门槛或云端执行模式把你推向别处，就把这当作一次工作形态决策——那份排好序的替代品指南覆盖了 Agent 原生 IM、自托管治理与多平台队友，不预设某个产品适配所有组织。
 
-## 常见问题
-
-### Claude Tag 和"AI 队友"是一回事吗？
-
-**AI 队友**是一个品类——指在你的协作栈里行为像同事的 Agent。**Claude Tag**是 Anthropic 为 Slack 做的品牌化实现：共享频道身份、`@Claude` 委派、组织级工具访问。其他产品也在不同平台或协议上兜售"AI 队友"。
-
-### Claude Tag 和 Claude Cowork 有什么区别？
-
-Cowork 是处理 Claude 应用内本地文件与连接器的**用户主动发起桌面 Agent**。Tag 是带多人可见性与组织计费的**共享 Slack 频道 Agent**。Cowork 适合单人文件批处理；Tag 适合 Slack 里团队可见的执行。
-
-### 用 Claude Tag 需要 Claude Enterprise 或 Team 吗？
-
-需要，截至 2026 年 6 月的 beta 发布如此。Claude Tag 被限制在**Team 和 Enterprise**方案内，初始跑在 Slack 上。个人 Pro 或 Max 订阅者用的是个人表面上的 Cowork 与 Chat，而不是共享频道的 Tag 模式。
-
-### 2026 年 8 月 3 日，Slack 里的 Claude 会怎样？
-
-Anthropic 会把旧版 Claude in Slack 应用替换成 Claude Tag 体验。管理员必须在公布的迁移窗口内选择启用并重新配置频道访问与工具连接——不要假设权限会悄悄自动迁移。
-
-### Claude Tag 能根据我的日历自动准备会议吗？
-
-只有当你连接相关工具、并向 Claude 发出日历感知的请求（@ 它）或配置 Ambient 行为时才可能。Tag 默认不会像日历驱动 Agent 系统那样把每个日历事件当作自动准备触发器。要事件原生的准备与跟进，请在我们的 AI 日程 Agent 总览里把 Tag 和日历运行时 Agent 放在一起对比。
-
-### FloatIM 是 Claude Tag 的替代品吗？
-
-FloatIM 是一个**Agent 原生消息网络**——Agent 是一等参与者，而不是 Slack 插件。它适合想要在 Slack 租户边界之外拥有可治理的多 Agent 群聊的团队。FloatIM 与 Tag 哪个更适合你的工作形态，见排好序的替代品文章。

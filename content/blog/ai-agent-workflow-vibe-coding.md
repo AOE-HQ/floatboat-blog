@@ -161,28 +161,3 @@ That's the whole thing, really. The vibes are still welcome. The guardrails are 
 
 → Discover how **[one-person businesses scale using AI systems, not just tools](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
 
-## FAQ
-
-### Is an AI agent workflow better than vibe coding?
-
-For one-off prototypes or throwaway personal projects, vibe coding is fine — fast, fun, low stakes. For anything you plan to extend, maintain, or show users, yes: a structured AI agent workflow produces better outcomes with less total rework. Vibe coding gets you roughly 70% of the way — the first draft looks great, then the app starts breaking as features pile up and a human still has to clean up. Structure closes that gap.
-
-### What actually breaks when vibe coding has no structure?
-
-It's not that AI writes bad code — it's that most people use it with no plan, no enforced rules, and no review step between generation and deployment. Every mid-build change of mind adds tech debt that confuses future agents, and each error compounds downstream: an agent fixes one file and breaks two that reference it, because it can't see the whole dependency chain. The fix is catching those failure modes before they multiply.
-
-### What does a structured AI agent workflow look like in practice?
-
-A simple chain that works: first write a plain-language spec — what it does, its edge cases, what it should never do. Then run the spec through the agent in plan mode and fix ambiguities before executing. Execute in bounded chunks, one task at a time. Review output before accepting it — especially before merging to main or after any step touching authentication, data handling, or external API calls, where "hallucinated bypasses" are most likely.
-
-### Do you need to know how to code to use it?
-
-Not necessarily, but you need to be comfortable reading outputs and catching things that look wrong — the review step requires judgment, not syntax knowledge. If you can't tell whether the output did what you asked, you can't catch the failure modes that compound, regardless of tool. A test-driven loop can substitute for line-by-line review: when tests pass and edge cases are covered, you don't need to read every line of code.
-
-### Can solo operators who don't write code use these workflows?
-
-Yes — the same structure applies to any multi-step AI workflow, from content pipelines to research and client deliverables. The pattern is identical: spec first, bounded execution, human review before output goes anywhere important. In practice that can mean treating a structured prompt chain as the "agent," a self-check list as the "tests," and a dated changelog as "version control." It doesn't need to be code — it needs to be intentional.
-
-### Which AI coding tools should you start with?
-
-Start simple: pick one agent tool and one version control habit. Cursor at about $20/month is the most accessible entry point for non-terminal users; Claude Code is worth the upgrade when you work on larger, more complex projects. The tools matter less than the workflow discipline around them — design before coding, write tests, keep every change in version control. Those habits count even more when AI writes half your code.

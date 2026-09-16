@@ -109,28 +109,3 @@ The honest truth about **ai automation agency services** is that the good ones a
 
   * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](</blog/ai-agent-solo-operators>)
 
-## FAQ
-
-### Do I actually need to hire an AI automation agency?
-
-Only if three things are true at once: a concrete process is costing you measurable time or money, no one on your team has the capacity to build and maintain the fix, and you're willing to invest in proper scoping and handover. If your workflows are already well defined, tools like n8n or Make can often cover in a weekend what agencies quote at $15,000-plus. And if you haven't mapped the process yet, wait — you'll otherwise pay someone to solve problems you should solve yourself.
-
-### What should an agency hand over at the end of the project?
-
-A reputable agency should hand over four things: workflows tested against your real data and edge cases; documentation written for your team rather than their developers; ownership of every credential, account, and piece of code, held in accounts you control; and at least one human-led training session. If your team can't diagnose a failure the day after handover without calling the agency, the handover was incomplete.
-
-### Is it worth paying for a strategy phase before implementation?
-
-Sometimes — but with one condition. A paid discovery or strategy phase is worth it when it produces a concrete, scoped implementation plan you could hand to any agency, not just the one that wrote it. If the strategy deliverable is only useful inside the company that created it, you've bought dependency, not clarity. A good strategy phase ends with a document that gives you real choices.
-
-### How do I avoid getting locked into one vendor?
-
-Three practical moves. First, insist that credentials, code, and documentation live in accounts you own, not the agency's. Second, favor open tools — n8n, Make, standard APIs — over proprietary platforms wherever your requirements allow. Third, keep a simple internal reference document for each workflow, and actually test exporting and migrating your setup at least once a year rather than trusting the contract language.
-
-### What should I put in the contract scope?
-
-Name the workflow(s) being built and define what "done" means for each deliverable; state who owns credentials and intellectual property at handover, which tools will be used and why, the training component, and post-launch support terms and costs. Add a data-use clause: your data must not train any model without your explicit written consent. A tightly scoped statement of work — one workflow, one defined output, one handover date — also prevents scope creep.
-
-### Which questions should I ask before the first sales call?
-
-Ask to see a real handover package from a past project rather than a case study; confirm that credentials and accounts end up owned by you; ask how a migration away from their chosen tools would work; get post-launch support terms and costs in writing; and ask what their biggest failure on a similar project was. Agencies worth hiring welcome these questions — defensiveness tells you something important.

@@ -92,28 +92,3 @@ Claude Code is Anthropic's local coding agent: single-player, repo-scoped, and b
 
 Pick Claude Code when the artifact is code in a repository and you want to review each step. Pick Claude Cowork when the object is your files. Pick Claude Tag when the work is owned by a channel. The surface should match the job's horizon and audience — not brand habit.
 
-## FAQ
-
-### Is Claude Code the same as an AI autocomplete?
-
-No. Autocomplete suggests the next line while you type. Claude Code is an agent that reads the repo, plans, edits across files, runs tests, and iterates. You review the diff; you do not drive every keystroke.
-
-### How is Claude Code different from Claude Cowork?
-
-Both are local, single-player agents. Code targets repositories and engineering. Cowork targets files, folders, and connectors for knowledge work. Same loop, different object. See the three-way comparison linked above for the split.
-
-### Does Claude Code only run in the terminal?
-
-No. It started in the terminal but now runs in the Claude desktop app and inside IDEs including VS Code and JetBrains. The interface changes; the agentic loop stays the same.
-
-### Can Claude Code use models other than Claude?
-
-Yes, in practice it can be pointed at Anthropic-compatible endpoints, including DeepSeek's, which changes cost and capability trade-offs. The DeepSeek Agent vs Claude Code comparison covers the model swap in detail.
-
-### Why is Claude Code expensive compared to autocomplete?
-
-Agentic work spends tokens on every tool call and test rerun, not just the final answer. Verified multi-step changes cost more than single-line suggestions. The value is the verified diff, not words per dollar.
-
-### Should I switch from Cursor to Claude Code?
-
-They solve different jobs. Cursor wins on IDE-native daily flow; Claude Code wins on deep, repo-scale reasoning from a terminal. Many teams run both rather than switching. The ranked job-shape breakdown is in the alternatives list linked above.

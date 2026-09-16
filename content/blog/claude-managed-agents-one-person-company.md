@@ -133,28 +133,3 @@ I'll probably revisit this once the multi-agent and memory features come out of 
 
 → Discover real-world **[AI agent use cases that actually translate into daily work](</blog/ai-agent-use-cases-real-examples>)**
 
-## FAQ
-
-### Is Claude Managed Agents actually useful for a one-person business?
-
-It depends on what you're trying to automate. Managed Agents is most valuable for long-horizon, multi-step tasks — synthesizing research across twenty sources, extracting structured data from documents, or producing a polished draft from a brief — where the agent can run for hours without you at each handoff. For a repeatable personal workflow where you'd rather avoid API integrations and YAML configs, the article suggests starting with Combo Skills instead.
-
-### How is it different from how I normally use Claude?
-
-Normal Claude use ends when the conversation ends: you prompt, it answers, and there's no persistent state. Managed Agents is a managed infrastructure layer — Anthropic handles sandboxing, long-running sessions, scoped permissions, tool execution, and observability. You define the task and guardrails, and the agent executes, potentially for hours, without you watching. The difference isn't smarter responses; it's who manages the execution environment. Billing reflects that: standard token rates plus $0.08 per session-hour of active runtime, with no flat monthly fee.
-
-### Do I still need to write prompts or know how to code?
-
-Someone still has to define what the agent does and how it should behave, but you don't manage the infrastructure yourself. You can describe an agent in natural language or configure it via a YAML file, so prompting skill mostly becomes agent-design skill. That said, working inside a platform API adds overhead that isn't worth it for simple automations, and multi-agent coordination still requires separate access while it's in research preview.
-
-### Is it safe to use for business?
-
-For most solo operators running standard token-based access without sensitive credentials attached to agents, the risk is manageable with reasonable scope controls. If production credentials, customer data, or financial access are involved, be deliberate: grant the minimum permissions a task needs, review what agents do in session logs, and remember that session data lives on Anthropic's infrastructure. Indirect prompt injection — hidden instructions inside content an agent reads — is the most relevant threat to design against.
-
-### Are Managed Agents fully autonomous?
-
-Not exactly. Managed Agents is designed as a "meta-harness": a stable infrastructure where different agent harnesses, from Claude Code to task-specific agents, can run. Execution is autonomous in the sense that the agent doesn't need you to supervise each step, but you define the task, tools, and guardrails up front — so human judgment at the design layer still matters.
-
-### Managed Agents or Combo Skills — which should a solo operator choose?
-
-They serve different points on the same journey rather than competing. Combo Skills — repeatable multi-step workflows composed inside an AI workspace — are usually where a solo operator starts, because there's no API or YAML management. Managed Agents is the fit when you need reliable, reproducible, production-grade execution, such as shipping agent features into a product other people use. It's not either/or — you can move from one to the other as your needs evolve.

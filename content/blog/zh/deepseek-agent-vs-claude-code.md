@@ -128,28 +128,3 @@ Claude Code 与 DeepSeek Agent 并非两个 SaaS 产品那种直接竞争。Clau
 
 最经得起时间考验的决策是：保留你熟悉的框架，按任务复杂度路由，让模型选择跟随每个具体任务的经济性——而不是把所有 Agent 工作押给单一供应商。
 
-## 常见问题
-
-### DeepSeek V4 的编程能力比得上 Claude Opus 吗？
-
-分任务看。仓库级多文件重构上 Opus 仍占优——SWE-bench Pro 约差 14 个百分点，这类任务吃长程架构一致性；算法题与终端 Agent 任务上 V4 Pro 反而领先。日常有边界的编码，V4 够用且便宜得多；最难的 10–15% 场景，诚实地说仍是 Opus 更强。
-
-### 用 DeepSeek 到底能便宜多少？
-
-便宜非常多。输出 token 价差约 28 倍：V4 Pro 每百万 0.87 美元，Opus 4.8 要 25 美元。跑同样的典型 Agent 任务，V4 Pro 单任务约 0.021 美元，Opus 约 0.54 美元。任务量一大，这差距就把自动化从奢侈品变成默认工作流。
-
-### 能让 Claude Code 用 DeepSeek 当后端、不跑 Opus 吗？
-
-可以。把 Claude Code 的后端配置切到 DeepSeek 的 Anthropic 兼容端点即可，plan、diff 审查、权限询问、子 Agent 都保留。失去的主要是部分 Opus 特有的推理行为，个别参数映射也不完美；最难的会话仍可手动切回 Opus。
-
-### 切到 DeepSeek 会不会弄坏 Claude Code 的功能？
-
-大多数不受影响：plan 模式、agent 模式、diff 审查、工具权限在 DeepSeek 后端下都正常。会变的是行为层面——依赖 Anthropic 特有模型特质的模式结果可能不同，派生的子 Agent 也跑在 DeepSeek 上而非 Opus。建议先用真实工作流测一遍再设为默认。
-
-### DeepSeek-TUI 这类原生 Agent 和 Claude Code 怎么比？
-
-DeepSeek-TUI 是社区终端 Agent，围绕 DeepSeek 定价做优化，自带 RLM 扇出并行、沙箱执行与 MCP 支持。Claude Code 则是工作流更精致、有原生 Opus 集成的商业产品。前者提供 Opus 定价下跑不起的并行子 Agent 架构，后者赢在框架成熟度与功能。
-
-### 单人开发者应该选哪个？
-
-看成本与代码库。盯 API 成本、任务多有边界（功能实现、修 bug、小项目），把 Claude Code 配 V4 Flash 当后端，最省钱地拿到成熟框架。身处互相依赖的大型代码库、正确性优先，原生 Opus 更稳。多数单人开发者适合混合方案：常规活走 Flash，最难的切 Opus。

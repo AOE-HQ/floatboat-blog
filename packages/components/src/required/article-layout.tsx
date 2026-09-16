@@ -12,7 +12,6 @@ import {
 
 import { useOpenBlog, useSiteHelpers } from "../provider";
 import { obBorderB } from "../tokens";
-import { ArticleFaq } from "../optional/article-faq";
 import { ArticleFinalCta } from "../optional/article-final-cta";
 import { ArticleRelatedPosts } from "../optional/article-related-posts";
 import { ArticleSidebar } from "../optional/article-sidebar";
@@ -65,9 +64,7 @@ export function ArticleLayout({
   const locale = localePrefix === "/zh" ? "zh" : "en";
   const isZh = locale === "zh";
 
-  const { body, faq: parsedFaq, finalCta: parsedCta } =
-    splitArticleContent(post.content);
-  const faq = post.faq?.length ? post.faq : parsedFaq;
+  const { body, finalCta: parsedCta } = splitArticleContent(post.content);
   const finalCta = optional.finalCta
     ? resolveFinalCta(parsedCta, post.finalCta, post.slug, locale, config)
     : null;
@@ -181,10 +178,6 @@ export function ArticleLayout({
 
         {optional.relatedPosts && relatedPosts.length > 0 ? (
           <ArticleRelatedPosts posts={relatedPosts} locale={locale} />
-        ) : null}
-
-        {optional.faq && faq.length > 0 ? (
-          <ArticleFaq items={faq} locale={locale} />
         ) : null}
 
         {finalCta ? <ArticleFinalCta {...finalCta} /> : null}

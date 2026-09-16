@@ -117,28 +117,3 @@ I'm still figuring out exactly what that bar looks like in practice. But I'll ke
 
   * [Workflow Builder vs AI Workspace](</blog/workflow-builder-vs-ai-workspace>)
 
-## FAQ
-
-### Do I need to be a developer to use Claude Managed Agents?
-
-Yes. Claude Managed Agents is an API-based service on the Claude Platform — you define agents and launch sessions programmatically, and there is no dashboard or chat interface to interact with. If you are not writing code or building a product, there is nothing to install or subscribe to; you would use a product built on top of it instead.
-
-### Is Claude Managed Agents a new model?
-
-No — it is a managed agent harness, not a new model. The underlying AI is still Claude (Opus 4.6 and Sonnet 4.6). What is new is the scaffolding around it: secure sandboxed code execution, authentication, checkpointing, scoped permissions, and persistent long-running sessions. Anthropic frames the design as decoupling the brain from the hands — the session acts as a durable event log outside the context window, so progress survives restarts and container failures.
-
-### How is Claude Managed Agents different from using the Claude API directly?
-
-The standard Messages API gives you model access, and you own the conversation state, tool loops, sandboxing, and infrastructure. Managed Agents removes that plumbing: stateful sessions, persistent file systems, conversation history, and managed tool execution are all handled for you. You describe an agent in natural language or YAML, set guardrails, and run it without building the runtime yourself.
-
-### What does public beta status actually mean for reliability?
-
-It is live and Anthropic accepts real usage, but behaviors can be refined between releases — every endpoint currently requires the managed-agents-2026-04-01 beta header. Outcomes, multi-agent coordination, and memory sit in an earlier research-preview state that needs separate access requests. For production workloads, budget for unexpected changes rather than assuming a frozen API.
-
-### How much does Claude Managed Agents cost?
-
-Sessions bill on two dimensions: all tokens consumed run at standard Claude Platform rates, plus $0.08 per session-hour of active runtime — idle time while waiting on input or a tool confirmation does not count. There is no consumer plan to subscribe to; pricing targets dev teams, and the exact breakdown lives on Anthropic's Managed Agents pricing page.
-
-### Which companies are already using Claude Managed Agents?
-
-Early adopters include Notion, Rakuten, and Asana — companies shipping agent features to their own users without building runtime infrastructure themselves. Rakuten reportedly deployed specialist agents for sales, marketing, and finance in under a week each. Vibecode and Sentry also appear among early users, across code automation, productivity tools, HR processes, and finance workflows.

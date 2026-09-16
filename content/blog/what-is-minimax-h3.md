@@ -96,28 +96,3 @@ MiniMax H3 matters less because it wins a resolution race and more because it is
 
 For a small team, the practical takeaway is to run a single five-second test clip before committing to an API or a self-host setup: check subject consistency, camera motion, and audio in that order, then add references. And if you are curious about the broader pattern — open frontier weights landing in mainstream creative workflows — our breakdown of the Kimi K3 open frontier model and the vibe-coding, one-prompt game post cover the other two ends of that arc. On the agent side, the same "one system, unified context" philosophy is what drives an agentic calendar — the idea that your context is the runtime, whether the output is a video or a work week.
 
-## FAQ
-
-### Is MiniMax H3 free to use commercially?
-
-No — it is free for non-commercial use, and commercial use is allowed only for organizations under $20 million in annual revenue, with attribution. Funded teams above that threshold need to review the MiniMax H3 Community License before shipping commercial work.
-
-### Does MiniMax H3 generate audio?
-
-Yes. H3 generates 32 kHz stereo audio natively in the same pass as the video, driven by the same transformer that predicts the visual latents. Reference audio can also be reused, but audio cannot be provided as the sole input — it must accompany at least one image or video reference.
-
-### Can I run MiniMax H3 locally?
-
-You can run H3-Base locally with SGLang, vLLM, diffusers, or ComfyUI, on a recommended four-GPU setup. The open release covers 768p generation with full attention; the H3-Context-IR preprocessing module and 2K regeneration remain API-only, and sparse attention is scheduled for a later release.
-
-### How does MiniMax H3 compare to Seedance 2.0?
-
-H3 undercuts Seedance on price ($0.13/s at 2K versus roughly $0.24/s at 720p for Seedance, a third-party estimate), ships native stereo audio, and is open-weight. Seedance keeps the edge on cinematic tension and high-impact action sequences, and teams needing 4K should look at Kling 3.0 or Veo 3.1 instead.
-
-### What is the difference between the FL2VA and Ref2VA checkpoints?
-
-FL2VA covers text-to-audio-video and first/last-frame-to-video (zero, one, or two input images). Ref2VA handles reference-to-video with mixed inputs — up to 9 images, 3 video clips, and 3 audio files in one request, capped at 12 files total.
-
-### What are MiniMax H3's main limitations?
-
-There's no 4K path — 2K is the ceiling, which matters for theatrical or broadcast deliverables. High-tension, high-impact shots land weaker than Seedance 2.0's, the cost of its stability-first design. Very small text and extremely intricate details can still break, so treat every generation as needing a QA pass. Its instruction-following is aggressive and literal, favoring faithful execution over interpretive flair. And reproducing the full hosted 2K workflow locally keeps an API dependency on the Context-IR module.

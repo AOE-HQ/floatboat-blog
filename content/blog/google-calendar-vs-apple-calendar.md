@@ -101,28 +101,3 @@ That's my honest take. The "which is better" framing is a bit misleading — wha
 
 • Rebuilding the same weekly tasks over and over? [How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>) explores how recurring work loops can be handled differently.
 
-## FAQ
-
-### Which is better for solo work: Google Calendar or Apple Calendar?
-
-It depends on where your work already lives, not on a feature table. If you run your business through Google Workspace — Gmail, Docs, Meet — Google Calendar is the obvious pick. If you're deep in Apple devices and your scheduling is mostly personal or small-team, Apple Calendar feels more natural, with Siri input and on-device processing. And many people choose both: Google for work, surfaced inside Apple Calendar on their devices.
-
-### Can I use Google Calendar and Apple Calendar together?
-
-Yes, and it's how many people actually run their schedule. Add your Google account in iPhone or Mac calendar settings (Settings → Calendar → Accounts → Add Account → Google), and Google events appear in Apple Calendar automatically, with events creatable from either side. The reverse — iCloud into Google — means subscribing to a public webcal URL, which is read-only on the Google side and can lag. True two-way sync needs a third-party tool.
-
-### What should I check before syncing my calendars?
-
-First, confirm which calendar is the default for new events — people have created events on the wrong calendar for weeks without noticing. Second, remember that iCloud-to-Google sync via webcal is one-way and updates can take hours rather than seconds. Test with a few dummy events before trusting it with your real schedule. Behavior varies by OS version, so check the latest official documentation from Apple and Google.
-
-### Which calendar handles sharing and tasks better?
-
-Google Calendar wins on both. Sharing works with specific people at granular view-only or full-edit permissions, and anyone with a Google account can participate — cross-platform coordination is far smoother. Tasks stay visible too: Google Tasks lives in the sidebar and, since late 2025, can be time-blocked directly on the calendar. Apple pairs Calendar with the separate Reminders app — capable, but it doesn't live in your calendar view.
-
-### Do calendar reminders actually move work forward?
-
-Not by themselves. Both calendars are excellent at telling you what's next — color-coded events, pop-up alerts, smart suggestions — but a full calendar doesn't equal progress. The meetings happen and the reminders fire, yet follow-ups, prep, and execution still fall on you. A calendar tells you when; it doesn't do the work. That gap between a tidy schedule and real progress is where solo workflows break down.
-
-### If my calendar is full but work isn't moving, what should I do?
-
-Reconsider whether your workflow needs an execution layer on top of the calendar, not another prettier reminder system. The calendar holds the promises — meetings, deadlines, follow-ups — while a tool like Floatboat sits after it: preparing meeting briefs before you ask, generating follow-up drafts from context, and running recurring work loops without rebuilding them each week. The calendars stay; what you add is something that actually does the next step.

@@ -175,28 +175,3 @@ _Observations from tracking indie founders, micro-SaaS builders, and solo operat
 
   * [Thinking about going deeper? Here's what it really takes to build your own AI agent](</blog/how-to-build-an-ai-agent>)
 
-## FAQ
-
-### Do I need to be on social media to get my first 100 customers?
-
-Not necessarily — it depends entirely on where your specific customer already spends time. Some niches are highly active on LinkedIn or X; others live almost entirely in private Slack groups, industry forums, or niche newsletters. The question isn't "which platform should I be on?" but "where do the people who most need my product already gather?" Social media is one possible answer, not the default one.
-
-### Should I charge from day one, or offer free first?
-
-Charge something from the start, even a fraction of your eventual price. Free users will tell you the product is great and never open it again; paying customers tell you what's broken because they paid for something that was supposed to work. Early revenue is also a filter that selects for serious customers — roughly 70% of indie SaaS founders now ask for a credit card upfront. Use a few free conversations to learn, but don't mistake free users for validation.
-
-### How many customer conversations do I need before I have enough signal?
-
-There's no magic number, but most founders find that 15 to 25 substantive conversations — actual problem exploration, not demos — start surfacing repeating patterns. When four different people describe the same frustration in almost the same words, you have enough signal to act on. If every conversation still surfaces a fundamentally different problem, keep going.
-
-### What if I can't find any community around my product?
-
-That's diagnostic information, not just a distribution problem. If no community actively discusses the problem you solve, either the problem isn't felt widely enough to form a community organically, or the community exists somewhere you haven't looked. Both possibilities are worth investigating seriously before you keep building. An absent community is a market signal about whether the problem is real and sharply felt.
-
-### Should I offer a lifetime deal or steep discount to attract early customers?
-
-Careful. Discounts attract price-sensitive customers who are often your worst long-term fit — they churn fastest, complain most about pricing, and refer least. A better approach: charge a fair early-adopter price in exchange for feedback access, a case study, or genuine goodwill from being part of building something. You want customers who believe the product is worth paying for, not people who bought it at 80% off and tell you nothing useful.
-
-### How do I know when to stop doing manual work and start systematizing?
-
-When you can write down exactly how you'd acquire one more customer in enough detail that a new teammate could follow it — the specific communities, message types, and follow-up sequences — you understand the process well enough to systematize. If you can't describe it at that level of specificity, you don't understand it yet, and automation would just lock in the wrong process. Systematize consistent delivery; keep anything still about learning manual.

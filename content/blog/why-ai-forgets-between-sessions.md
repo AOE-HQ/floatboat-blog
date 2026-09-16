@@ -115,28 +115,3 @@ Alright, that's today's little discovery. Well — more of a frustration I final
 
   * **[What Makes an AI Workflow Actually Work for Solo Founders](</blog/ai-agents-2026-solo-operators>)**
 
-## FAQ
-
-### Why does my AI forget everything when I close the tab or start a new session?
-
-Because most AI tools are stateless by design. Large language models process each request as a fresh, independent call — the original transformer architecture was built for parallel processing and scalability, which requires calls not to depend on each other. Your conversation history is discarded the moment the session ends. It's not a bug in the tool you chose; it's how the underlying architecture works.
-
-### Doesn't ChatGPT already have memory now?
-
-It does, and it has improved notably since OpenAI added chat-history referencing. But there's a real difference between remembering facts about you — your name, preferences, formatting habits — and maintaining full working context across projects, files, and workflows. Memory is a subset of the problem; context continuity and reusable execution remain largely unsolved for most users.
-
-### Is this problem specific to ChatGPT?
-
-No. Statelessness is fundamental to how large language models work, so Claude, Gemini, and other models face the same underlying constraint. Platforms differ in the memory layers they build on top — OpenAI's ChatGPT memory, for example, can reference saved details — but none of them has fully solved persistent, cross-environment context yet.
-
-### How much time does stateless AI actually waste?
-
-Based on the author's week of tracking, roughly 8–12 minutes per session on "context loading" — the preamble before real work begins. With six to eight AI sessions a day, that's 50–90 minutes of daily overhead that produces nothing, and about two to three full working days lost per month. The cost also scales inversely with team size, so solo founders carry it alone.
-
-### Can I solve this by maintaining a detailed prompt file?
-
-You can try — the author did, maintaining a 2,000-word context file for about three weeks. It works until the maintenance overhead eats the time you save, and a single forgotten update means the AI advises you from outdated information. It may hold up for highly repetitive work, but for the diverse, evolving work most solo founders do, the prompt-file approach breaks down quickly.
-
-### What should I prioritize when evaluating AI tools?
-
-Three things, in order: context continuity — can it see your working environment without manual upload; execution memory — does it learn how you work, not just what you say; and reusable execution — can it package repeated work into repeatable processes. The category worth watching is desktop-native "AI workspaces," which keep the AI inside your working environment instead of a chat tab that forgets you.

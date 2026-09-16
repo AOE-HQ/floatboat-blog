@@ -101,28 +101,3 @@ html-anything 是 [GitHub 上的 nexu-io 团队](<https://github.com/nexu-io/htm
 
 • [想减少工作流里来回切换工具？推荐阅读：别再上下文切换：为什么工作区 Agent 重要](</blog/stop-context-switching-workspace-agent>)
 
-## 常见问题
-
-### html-anything 是什么、怎么工作？
-
-html-anything 是 nexu-io 团队（Apache-2.0）开源的本地优先 Agentic HTML 编辑器。它不拿你的提示词走自家云端，而是复用你机器上已登录的编程 agent CLI，用技能模板生成富 HTML、提供沙箱实时预览并多平台导出。核心主张：本地 AI Agent 写 HTML，你负责复核和发布。
-
-### html-anything 真的不需要 API 密钥吗？
-
-对——不用再填第二个 API 密钥。工具自动检测 PATH 上已登录的编程 agent CLI 并复用其会话，「零 API 密钥」的说法就是这么来的。前提是：token 仍记在你那个 Agent 订阅的额度上——Claude Code 的用量扣 Anthropic 套餐，Codex 扣 OpenAI 套餐。零新密钥 ≠ 零成本。
-
-### 不用编程 agent CLI，html-anything 有用吗？
-
-以目前形态：没有。硬性前提是一个已登录的编程 agent CLI——Claude Code、Codex、Gemini CLI 等受支持工具之一——没有纯浏览器版，也没有「注册即用」。对非开发者的单人创业者，这是最大的门槛；想用 AI 出 HTML，Claude Artifacts 或 ChatGPT Canvas 仍是今天更容易上手的选择。
-
-### html-anything 能生成什么、导出到哪里？
-
-它内置横跨 9 种交付表面的 75 个技能模板：杂志文章、幻灯片、海报、简历、小红书与推文卡片、网页原型、数据报告、Hyperframes 视频。导出覆盖微信（内联 CSS）、X、知乎、独立 HTML 与 PNG；Hyperframes 还能经 Remotion 把 HTML 转成 MP4。若你的周期性产出正好落在其中一种表面上，模板保证视觉一致；对不上就得改模板或从零写。
-
-### 谁应该先试 html-anything？
-
-每天都用编程 agent CLI、又经常跨平台产出视觉内容的人。同时给中西方社交平台发内容的内容创作者，会发现它的导出目标罕见地对口；想快速做原型的开发者会觉得技能库有用。如果你不是 CLI 型选手、或只需要一次性 HTML，直接 prompt 或 Artifacts 更快——可以再等等。
-
-### 和直接让 Claude 生成 HTML 相比怎么样？
-
-两条路都走得通；一次性需求——「帮我做一份 HTML 报告」——直接 prompt 更快，不用装任何东西、输出即时。html-anything 的优势在你反复产出同一种交付物时显现：75 个可复用模板保证跨输出视觉一致、带 SSE 的实时预览边生成边复核、平台专属导出省掉微信/X/独立文件之间的复制粘贴。一个月做一次就直接写 prompt；每周都要做，模板层就值回票价。

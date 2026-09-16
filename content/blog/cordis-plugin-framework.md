@@ -92,28 +92,3 @@ Cordis is easy to underestimate because it does not do anything flashy — it ma
 
 DeepSeek's choice to build its harness on a four-year-old plugin kernel, rather than a purpose-built monolith, is a statement about where the agent ecosystem is heading. The winning harnesses will not be the ones with the most tools built in — they will be the ones whose plugin ecosystems make it cheapest to compose the tools you need. Cordis gives DeepSeek that, and it gives every developer building on dsh the same leverage. Whether you are contributing a plugin, evaluating a harness, or just trying to understand why "everything is a plugin" is more than a slogan, the reversible kernel is the part worth understanding.
 
-## FAQ
-
-### Is Cordis a DeepSeek product?
-
-No. Cordis is an independent open-source meta-framework created by the developer shigma, and it has been the foundation of the Koishi chatbot framework for four years. DeepSeek Harness is built on Cordis, which is why it appears in DeepSeek's architecture documentation.
-
-### What is a meta-framework?
-
-A framework for building frameworks. Instead of providing APIs for a specific domain (like chatbots or web servers), Cordis provides the fundamental mechanisms for plugin systems, dependency management, and resource lifecycle control. The name comes from the Latin _cor_ , meaning "heart."
-
-### What does "spatiotemporal composability" mean?
-
-It is the paper's term for two properties a dynamic system needs: temporal composability (a component's side effects can be fully reverted when it is removed) and spatial composability (components can declare dependencies that the runtime manages reactively). Together they make plugin systems safe to reload and evolve.
-
-### How does Cordis clean up plugin side effects?
-
-Through ctx.effect. Every side-effect-producing call returns a cleanup function, which the runtime stores and executes in reverse registration order when the plugin unloads. This is analogous to RAII in C++ or Drop in Rust, but handled at the runtime level so third-party plugins unload cleanly too.
-
-### What are the four preset modes in DeepSeek Harness?
-
-DeepSeek ships four presets. Standard is the full coding agent with filesystem, shell, web search, subagents, and plan mode. Code lets model-generated code orchestrate multiple tool-call rounds. Minimal — only bash and a file editor — is the configuration DeepSeek used for its own official benchmarks. Creator is for building custom presets with runtime inspection and preset-authoring guidance.
-
-### Why does reversibility matter for AI agents specifically?
-
-An agent that can modify its own runtime — add tools, change its loop, evolve its workflow — is only safe to trust if every change can be rolled back. Reversible effects are the mechanism that makes self-modifying agents an engineering pattern rather than a research risk.

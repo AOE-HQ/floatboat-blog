@@ -253,28 +253,3 @@ The live evidence in this article was captured from FastMoss on August 4–5, 20
 
   * [Calendar-Driven AI](</blog/what-if-your-calendar-could-run-itself>)
 
-## FAQ
-
-### Does this require a FastMoss API or MCP connection?
-
-No. FastMoss MCP is a valuable structured route when configured, and exports are useful for batch analysis. Floatboat can also operate the authorized FastMoss website directly through its built-in browser, making the live product usable before a custom integration project exists.
-
-### Does Floatboat verify the report it produces?
-
-Yes — self-review is part of the run. Floatboat renders the management brief as a local page and opens it in the same browser to check the title, recommendation, key figures, comparison table, embedded evidence, links, layout, and console output, revising the source file if anything disagrees. Every step also preserved screenshots with source URLs, so each claim traces back to a captured page. The underlying FastMoss figures remain third-party estimates that can change.
-
-### What is the difference between FloatSchedule and a reminder?
-
-A reminder tells a person to begin. A confirmed FloatSchedule starts the Agent assignment with the project context, sources, rules, output location, approval policy, and delivery instructions attached.
-
-### Where do the research outputs live?
-
-They live as real project files: screenshots, CSV, JSON, Markdown, HTML, logs, decision records, and delivery drafts. Teams can inspect, edit, archive, version, and reuse them with ordinary file tools.
-
-### Can Floatboat send the report by email?
-
-Yes. Through an authorized connected mailbox and an agreed delivery policy, Floatboat can prepare or send the report, then create the next review or validation event on the calendar.
-
-### What still requires human approval?
-
-Teams can keep explicit approval gates for external or consequential actions such as creator outreach, public publishing, sourcing and inventory commitments, contracts, pricing, advertising spend, and legal or regulated claims.

@@ -117,28 +117,3 @@ If you're exploring this space too, I hope this made things a little clearer. Ba
 
   * [Compare how Lindy and Gumloop differ when building agent-style workflows](</blog/lindy-vs-gumloop>).
 
-## FAQ
-
-### What's the real difference between a chatbot and an AI agent?
-
-A chatbot is a text-in, text-out system: you message, it replies, and nothing happens beyond the words on screen. An AI agent plans a sequence of steps to accomplish a goal, then executes them — calling APIs, reading or writing files, searching the web, operating a browser. Chatbots have session-only memory; agents can persist context across sessions. The short version: chatbots handle conversations, agents handle tasks.
-
-### Is ChatGPT an AI agent?
-
-Depends entirely on how you're using it. The base ChatGPT interface, for most users most of the time, is a very capable chatbot — it responds, it doesn't act. When you enable tools like web search, code interpreter, or custom GPT Actions, it starts behaving like an agent. Same underlying model, different architecture around it. Seeing ChatGPT use a tool once doesn't make the whole product an agent.
-
-### How do I decide whether to use a chatbot or an agent?
-
-Use the rule of thumb from the article: does the task end at the answer, or start there? "What's the difference between REST and GraphQL" ends at the answer — a chatbot is fast, cheap, and right for it. "Monitor a competitor's site every morning and summarize new content into my Slack" starts at the answer: it needs a loop, external systems, and dependent steps, which is agent territory.
-
-### Can a chatbot be upgraded into an agent?
-
-Partially, but not fully. Give a chatbot tool access and a goal-oriented prompt and it will behave more like an agent. But real agent architectures rely on planning loops, error recovery, and memory systems that aren't simple bolt-ons to a chatbot setup. The line blurs in practice, yet the underlying architecture really is different.
-
-### Are agents more expensive to run?
-
-Usually, yes — and often significantly. Each step in an agent's plan typically needs at least one LLM call, so a three-step agent task can easily cost 5–10x more than a single chatbot response. For simple, well-defined queries, that overhead is pure waste. If cost matters for your case, do the math before defaulting to an agent.
-
-### Are agents always better than chatbots?
-
-Not necessarily. Agents are more complex, slower to respond, and fail in ways chatbots can't — they can take actions that are hard to undo, misread multi-step instructions, or get stuck in loops. Anthropic recommends extensive testing in sandboxed environments before deployment. Chatbots, assistants, and agents suit different task levels, so choose deliberately rather than by default.

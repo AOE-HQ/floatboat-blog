@@ -100,28 +100,3 @@ At no point did you export the doc to a chat box or wait until Friday to "proces
 
 Try Flow Mode in the latest Floatboat build on [floatboat.ai](</>). If you are comparing paradigms first, read Calendar-Driven AI vs Chat-Based AI; if your week is meeting-heavy, pair this launch with the meeting prep and follow-up guides already on the blog.
 
-## FAQ
-
-### Is Floatboat Flow Mode the same as speech-to-text or a meeting bot?
-
-Not exactly. **Speech-to-text** tools focus on converting audio to text—valuable, and Flow Mode includes real-time capture—but Flow Mode also supports in-document editing, Agent collaboration on selections, batched voice annotations, live meeting plans, and version diff. Dedicated **AI note takers** optimize the recording lifecycle; Flow Mode optimizes the **document** that must exist when the conversation ends.
-
-### How is Flow Mode different from system-wide dictation apps like Wispr Flow?
-
-Products like **Wispr Flow** are strong at polished dictation across any app on your machine—a different and legitimate job shape. **Floatboat Flow Mode** is document-centric inside the Floatboat workspace: Agent rewrites, annotation bundles, meeting-to-plan output, and calendar-linked Agent context in one place. Many users may still use system dictation elsewhere; Flow Mode is for drafts and plans that live in your Agent workspace.
-
-### Can I edit while dictation is still running?
-
-Yes—that is the namesake behavior. Flow Mode is built so **voice input does not force a full stop** before you touch the text or invoke the Agent on a selection. You choose when to pause talking; the doc remains editable throughout.
-
-### Does Flow Mode replace Floatboat's calendar-driven meeting prep and follow-up?
-
-No. Flow Mode adds a **during-meeting / during-draft** layer. AI meeting preparation still handles pre-call context; AI follow-up automation still structures what happens after. Flow Mode reduces the manual gap between speaking and a shippable artifact in the middle.
-
-### What if an Agent edit goes wrong?
-
-Use **version history** : open a prior revision, review the diff, and roll back to a known-good state. Flow Mode is designed so experimentation does not require copying files or losing chat-side alternatives.
-
-### Where does Flow Mode run, and is it available everywhere?
-
-Flow Mode is desktop workspace functionality inside Floatboat on Mac and Windows — the same environment where Combo Skills, multi-model routing, and event-scoped Agent workspaces already live. Exact availability may vary by release, so treat the live app and release notes as the source of truth for your platform and version.

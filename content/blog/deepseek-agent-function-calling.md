@@ -216,28 +216,3 @@ Start with two or three well-defined tools and a sequential loop. Add strict mod
 
 For the full agent architecture — API setup, model selection, and the loop skeleton that this guide extends — [How to Build a DeepSeek Agent](</blog/how-to-build-deepseek-agent>) walks through each step with runnable code.
 
-## FAQ
-
-### Which DeepSeek models support function calling?
-
-Function calling is native to both deepseek-v4-pro and deepseek-v4-flash, so you only need to pass a tools array — no special model variant. The API is OpenAI-compatible, using the same tools, message.tool_calls, and role: "tool" pattern you already know from GPT-4o or Claude. Both models also support up to 128 parallel tool calls in one turn. For high-volume tool loops, V4 Flash is the cheaper workhorse; use V4 Pro for planning and synthesis turns.
-
-### How does the tool-call loop actually work?
-
-You send a tools array plus your messages; when the model decides a tool can help, it returns structured entries in message.tool_calls instead of plain text. Your code executes each call locally, appends the results as role: "tool" messages with matching tool_call_ids, and sends the whole history back for another turn. The loop repeats until the model produces a final answer — typically with tool_choice: "none". Preserving the original tool_calls array exactly when echoing it back is where most production bugs start.
-
-### Can I use thinking mode and function calling together?
-
-Yes. V4 supports thinking (chain-of-thought) and tool calling at the same time, something earlier model generations handled unreliably. When enabled, the model writes its reasoning into a reasoning_content field before emitting tool calls; you don't need to parse it for the loop to work, but logging it helps debugging. The cost: thinking tokens are billed as output tokens, and one high-effort reasoning step can add hundreds of tokens. Apply thinking selectively — planning and synthesis turns rather than every execution turn.
-
-### Does DeepSeek V4 support parallel tool calls, and when should I avoid them?
-
-Yes — V4 can return up to 128 tool calls in one turn. Execute each independently and append each result as a separate tool message; order doesn't matter as long as tool_call_ids match. Parallel calls save latency, not tokens, since every result still enters context. Avoid them when tools share state — read_file and write_file on the same path, for example — because concurrent execution creates races your loop can't control. Start sequential, then enable parallel calls for read-only tools.
-
-### What is the difference between inline function calling and MCP?
-
-Inline function calling defines tools directly in the request, and your code executes them locally through a registry. MCP moves tools onto external servers that the agent discovers and calls at runtime, so the tool surface can be dynamic or maintained by a separate team. Both use the same message format in the loop — only the execution layer changes. Start with inline definitions; switch to MCP past roughly 20 tools, when tools change often, or when they need isolated execution environments.
-
-### Why do agent loops break in production, and how do I fix them?
-
-Most failures come from the tool-calling layer, not the model: malformed JSON arguments, unknown tool names, wrong parameter types. Prevent them with clean schemas — plus strict mode when arguments are critical — and add a repair layer that validates before executing and returns structured JSON errors the model can read and self-correct from. Set max_turns, bail after repeated identical failed calls, log every tool call, and truncate large tool outputs so context doesn't balloon.

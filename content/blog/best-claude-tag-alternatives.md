@@ -148,28 +148,3 @@ The best Claude Tag alternative depends on your **team job shape** , not a unive
 
 **Claude Tag** remains the reference for Slack-native, Anthropic-managed shared `@Claude` when Team/Enterprise access and zero-ops deployment match how your org works. Read the what is Claude Tag hub for the canonical definition, then choose from this ranked listing by job fit — not SEO keyword overlap.
 
-## FAQ
-
-### Is FloatIM a drop-in replacement for Claude Tag?
-
-No. Claude Tag is a **Slack-native shared**`@Claude` under Claude Team/Enterprise with Anthropic-hosted execution. FloatIM is an **agent-native messaging network** where agents are first-class participants — often paired with Floatboat for local-first work. Choose FloatIM when agent-first group chat is the job; choose Tag when Slack + Anthropic governance is fixed.
-
-### How does Viktor compare to Claude Tag?
-
-Both support `@` delegation and async multi-step work in Slack. Tag is Anthropic-native with one shared Claude per channel and org-metered billing. Viktor is a third-party generalist employee across Slack/Teams with its own sandbox and pricing — often accessible without Claude Enterprise packaging.
-
-### Can Floatboat replace Claude Tag for my team?
-
-Not for shared Slack channel delegation. Floatboat is a **calendar-driven proactive agent OS** for solo operators and small teams whose triggers are events and deadlines. It complements Tag or FloatIM for **meeting prep and follow-up** , not multiplayer `#channel` triage.
-
-### Which option is best for approval before external sends?
-
-**Junior** ranks highest in this list for approval-gated defaults. **Operant** adds named-approver policy for self-hosted teams. Claude Tag can be configured conservatively, but Ambient autonomy is the feature enterprises evaluate against Junior's draft-first model.
-
-### Which self-hosted option is closest to Claude Tag?
-
-**Operant** is the most direct open-source counterpoint in 2026 matrices — multiplayer Slack/Teams agents with per-user OAuth, BYOK models, and governance you operate. Tag wins on zero-ops and Anthropic-native depth; Operant wins on residency and attribution.
-
-### When is Claude Tag still the best choice?
-
-When you want shared `@Claude` inside Slack, Anthropic Agent Identity, Opus 4.8 agentic execution, and org-level tool scopes — and you already have or will buy Claude Team/Enterprise without needing a separate agent-native IM or self-hosted control plane.

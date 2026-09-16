@@ -117,28 +117,3 @@ The four-day week is a nice idea. The more achievable version, for people like m
 
   * [Go deeper into what a persistent AI agent means for long-term productivity](</blog/what-is-persistent-ai-agent>)
 
-## FAQ
-
-### Is a four-day work week realistic for solo founders?
-
-Maybe, but probably not the way OpenAI describes. The proposal covers government-subsidized employer pilots, a framework that doesn't directly apply to solo operators. What does apply is the underlying premise: AI productivity gains can translate into fewer hours for the same output, and that is testable at the individual level. It depends heavily on your work type and how well your workflows are built — research- and writing-heavy work benefits most; client-facing, relationship-driven work less so.
-
-### What exactly is OpenAI proposing with the four-day work week?
-
-On April 6, 2026, OpenAI published "Industrial Policy for the Intelligence Age," calling for government-backed experiments with 32-hour work weeks that keep current pay. It frames reduced hours as an efficiency dividend — letting AI-driven productivity gains come back to workers as time rather than flowing only into corporate margins. The four-day proposal is part of a wider package that also includes a robot tax, a public wealth fund, and automatic safety-net triggers.
-
-### What does the four-day week debate have to do with one-person companies?
-
-As labor policy it doesn't apply to solo operators — there's no employer to negotiate with. It matters as a signal: the wider economy is starting to ask a question solo operators already experiment with daily — what happens when one person's work capacity expands sharply? AI handles research synthesis, first drafts, and scheduling; what remains is the judgment layer, deciding what matters and evaluating what AI produced.
-
-### Does AI actually reduce work hours?
-
-Yes, with a catch. AI reduces time on specific tasks, and four-day-week studies found the gains came from reorganizing how work happens rather than working harder in fewer hours. Whether fewer task-hours become fewer total hours depends on whether you consciously reclaim them. Most people fill freed time with more work — including, at first, me.
-
-### Why can AI leave solo founders more tired instead of less?
-
-Because AI can expand your capacity but it can't create boundaries for you. When you're the only person in a business, there's no organizational slack to absorb overload, so AI-freed time often gets filled with more projects — leaving you more tired, not less. The tool doesn't create sustainability; the system does: clear stopping criteria, and not treating saved time as a license to take on more.
-
-### What tools actually enable this shift?
-
-The tools that help most aren't the flashiest — they fit existing workflows without a rebuild. For workflow-level AI, Floatboat's Combo Skills chains reading, analysis, and structured output into repeatable workflows instead of one-off prompts, so you don't redo the setup each time. Research and writing tools help most when they cut switching costs between reading, organizing, and drafting. No tool removes your judgment layer.

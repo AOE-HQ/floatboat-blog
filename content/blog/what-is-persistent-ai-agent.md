@@ -149,28 +149,3 @@ _Anyway, that's today's little discovery. Or at least today's honest attempt to 
 
   * [Thinking about going deeper? This guide explains what it actually takes to build your own AI agent](</blog/how-to-build-an-ai-agent>)
 
-## FAQ
-
-### What makes an AI agent persistent rather than stateless?
-
-A stateless tool like a standard chat interface wipes the slate after every session — you re-explain your project, tone, and constraints each time. A persistent agent carries information forward on purpose: your preferences, working patterns, and past decisions, stored, updated, and referenced continuously. It's the difference between memory that works like RAM and memory that works like a hard drive.
-
-### What does a persistent agent actually remember?
-
-More than a searchable chat history. It remembers who you are — your projects, preferences, and working patterns — and it can save reusable "skills" after difficult tasks, written as structured documents that use progressive disclosure to limit token use. The practical test is simple: ask "what did we decide about this last month?" and get a real answer instead of a blank slate.
-
-### How is this different from ChatGPT's memory feature or Notion AI?
-
-ChatGPT's memory stores discrete facts like "user prefers bullet points" — useful but shallow. Notion AI only works within what you've already put into Notion; it doesn't observe your behavior and form its own understanding. Persistent agents are architected from the ground up to run continuously, learn over time, and build an evolving model of who you are and how you work.
-
-### Do I need to be a developer to use a persistent AI agent?
-
-For most current tools, practically yes. Projects like Hermes Agent expect terminal comfort, server setup, and tolerance for early-stage rough edges, so they're genuinely exciting for developers and researchers right now. Non-developer-friendly versions are starting to appear as desktop applications, but they're early. Watch the workspace layer — that's where the accessible version of this idea is heading.
-
-### What are the risks of an agent accumulating wrong information about me?
-
-It's real. Persistent memory that's never curated drifts: the agent "knows" outdated or wrong things about you and quietly operates from stale context. Memory can also be fragmentary and invisible — agents carrying personal details you can't see creates real privacy and accountability tradeoffs. Any serious setup needs a way to review, correct, and prune what's stored.
-
-### What's the most accessible way to try persistent context today?
-
-If you're non-technical, the lightest path is the memory features in Claude or ChatGPT, or Notion AI inside a very structured workspace — a small taste of persistent context. If you're comfortable on a terminal, Hermes Agent is well documented with an active community. Either way, the tools that deliver this idea accessibly are still catching up.

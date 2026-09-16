@@ -262,28 +262,3 @@ It became a standalone product not because the features couldn't be built, but b
 
 What actually decides success isn't whether the deck gets generated — plenty of products can do that — but **whether the agent can deliver reliably inside real permission boundaries without causing trouble**. If your bigger question is "who's going to run the before-and-after work on my calendar automatically," keep reading about Agentic Calendar; if it's "I want an agent colleague inside Feishu," the Doubao Work team edition is the product to compare against.
 
-## FAQ
-
-### Are "Doubao Office" and Doubao Work the same product?
-
-Yes. In everyday speech, "Doubao Office" refers to the "work tasks / office tasks" mode inside the app; **Doubao Work** is the formal brand, with its own website at doubao.com/work and a separate desktop client.
-
-### Why did ByteDance make Doubao Work a standalone product?
-
-The core reasons: office agents and chat products differ in user expectations, compute costs, and enterprise-governance requirements; model capability has already reached the point of cross-tool delivery, which needs its own entry point; Feishu team scenarios need their own permission and subscription system; TRAE and Coze capabilities need a unified office front door; and since WorkBuddy and Qwen Office both compete as standalone brands, Doubao Work needs to go head-to-head at the same level.
-
-### Is there an international version of Doubao Work?
-
-No. The international product is Dola ([dola.com](<http://dola.com>)), a general AI assistant with no Doubao Work-grade local agent or Feishu enterprise integration.
-
-### Can I use it without Feishu?
-
-Yes. The personal edition's core capabilities don't depend on Feishu. Signing in with Feishu (or adding a connector) is what unlocks organizational context and team-collaboration features. It also won't replace Feishu: even in the team edition, Doubao Work is an agent execution layer on top of Feishu, which stays the collaboration foundation.
-
-### How do I choose among WorkBuddy, Qwen Office, and Floatboat?
-
-If you're already on **Feishu** → prefer Doubao Work; already on **DingTalk** → prefer Qwen Office; primarily on **Tencent IM/docs** → prefer WorkBuddy; and if you're **calendar-driven, want pre/post-meeting automation, and don't want to be tied to one IM** → look at [Floatboat](</>) and the Calendar-Driven AI explanation. Decide by trial-running real tasks before subscribing.
-
-### What's the difference between Doubao Work and Floatboat?
-
-Both "get work done," but **their default context and trigger differ**. Doubao Work: you start the task, the team edition reads Feishu organizational data, and its strengths are in-Feishu delivery and domestic desktop GUI control. Floatboat: calendar events trigger the agent to prepare and execute automatically (before meetings, at deadlines, for follow-ups), and its strengths are the [Proactive Agent OS](</>) and cross-calendar integration. Feishu teams should look at Doubao Work; solopreneurs and cross-timezone calendar users can compare [Floatboat](</>).
