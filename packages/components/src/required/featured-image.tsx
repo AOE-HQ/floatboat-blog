@@ -1,7 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 
 import { resolveDisplayImageUrl } from "@openblog/core";
 
@@ -27,11 +33,20 @@ export function FeaturedImage({
   const isExternal = resolved.startsWith("http");
   const imgRef = useRef<HTMLImageElement>(null);
   const [loaded, setLoaded] = useState(false);
+  const [allowSrc, setAllowSrc] = useState(true);
   const markLoaded = useCallback(() => setLoaded(true), []);
 
-  useEffect(() => {
-    if (imgRef.current?.complete) setLoaded(true);
+  useLayoutEffect(() => {
+    if (!window.location.search.includes("slowimg")) return;
+    setAllowSrc(false);
+    setLoaded(false);
+    const timer = window.setTimeout(() => setAllowSrc(true), 2000);
+    return () => window.clearTimeout(timer);
   }, [resolved]);
+
+  useEffect(() => {
+    if (allowSrc && imgRef.current?.complete) setLoaded(true);
+  }, [resolved, allowSrc]);
 
   const imgClassName =
     layout === "hero"
@@ -53,7 +68,7 @@ export function FeaturedImage({
         className,
       )}
     >
-      {isExternal ? (
+      {allowSrc && isExternal ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           ref={imgRef}
@@ -64,7 +79,8 @@ export function FeaturedImage({
           decoding="async"
           onLoad={markLoaded}
         />
-      ) : (
+      ) : null}
+      {allowSrc && !isExternal ? (
         <Image
           ref={imgRef}
           src={resolved}
@@ -76,7 +92,7 @@ export function FeaturedImage({
           decoding="async"
           onLoad={markLoaded}
         />
-      )}
+      ) : null}
     </figure>
   );
 }
