@@ -92,7 +92,7 @@ export function SiteFooter() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/brand/floatboat-logo.svg"
+                src="/blog/brand/floatboat-logo.svg"
                 alt="floatboat"
                 width={775}
                 height={256}
