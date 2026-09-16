@@ -3,76 +3,46 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import type { BlogLocale } from "@/config/i18n";
-import { LOCALE_LABELS, SUPPORTED_LOCALES } from "@/config/i18n";
-import {
-  getLocaleFromPathname,
-  pathForLocale,
-} from "@/lib/locale-path";
-import { cn } from "@/lib/utils";
-
-type LanguageSwitcherProps = {
-  className?: string;
-  size?: "sm" | "md";
-};
-
-const SHORT_LABELS: Record<BlogLocale, string> = {
-  en: "EN",
-  zh: "中文",
-};
+import { getLocaleFromPathname, pathForLocale } from "@/lib/locale-path";
 
 /**
- * EN ↔ 中文 switcher with real hrefs (SEO-friendly), mirroring Alignify.
+ * Language control styled as the icon button on floatboat.ai (single 18px
+ * "languages" glyph, size-9 hit area) but kept functional for the bilingual
+ * blog: it links straight to the same page in the other locale (real href,
+ * hrefLang-tagged, SEO-friendly) instead of opening a dropdown.
  */
-export function LanguageSwitcher({
-  className,
-  size = "sm",
-}: LanguageSwitcherProps) {
+export function LanguageSwitcher() {
   const pathname = usePathname() ?? "/";
   const locale = getLocaleFromPathname(pathname);
-
-  const linkBase = cn(
-    "rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ob-color-accent)]",
-    size === "sm" ? "px-1.5 py-0.5 text-xs" : "px-2 py-1 text-xs",
-  );
+  const target = locale === "zh" ? "en" : "zh";
 
   return (
-    <nav
-      className={cn(
-        "inline-flex items-center gap-0.5 rounded-md border border-[var(--ob-color-border)] bg-[var(--ob-color-surface)] text-[var(--ob-color-muted)]",
-        size === "sm" ? "p-0.5" : "p-1",
-        className,
-      )}
-      aria-label={locale === "zh" ? "切换语言" : "Switch language"}
+    <Link
+      href={pathForLocale(pathname, target)}
+      hrefLang={target}
+      aria-label={locale === "zh" ? "Switch to English" : "切换至中文"}
+      title={locale === "zh" ? "Switch to English" : "切换至中文"}
+      className="inline-flex size-9 items-center justify-center rounded-md p-0 text-[#1b1a18] transition-colors hover:bg-black/[0.05]"
     >
-      {SUPPORTED_LOCALES.map((target, index) => {
-        const href = pathForLocale(pathname, target);
-        const isActive = locale === target;
-
-        return (
-          <span key={target} className="inline-flex items-center gap-0.5">
-            {index > 0 ? (
-              <span className="select-none text-[var(--ob-color-border)]" aria-hidden>
-                |
-              </span>
-            ) : null}
-            <Link
-              href={href}
-              hrefLang={target}
-              className={cn(
-                linkBase,
-                isActive
-                  ? "bg-[var(--ob-color-bg)] font-medium text-[var(--ob-color-text)]"
-                  : "hover:bg-[var(--ob-color-bg)] hover:text-[var(--ob-color-text)]",
-              )}
-              aria-current={isActive ? "page" : undefined}
-              title={LOCALE_LABELS[target]}
-            >
-              {SHORT_LABELS[target]}
-            </Link>
-          </span>
-        );
-      })}
-    </nav>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="m5 8 6 6" />
+        <path d="m4 14 6-6 2-3" />
+        <path d="M2 5h12" />
+        <path d="M7 2h1" />
+        <path d="m22 22-5-10-5 10" />
+        <path d="M14 18h6" />
+      </svg>
+    </Link>
   );
 }
