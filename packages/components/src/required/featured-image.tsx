@@ -62,9 +62,10 @@ export function FeaturedImage({
   return (
     <figure
       className={cn(
-        "overflow-hidden rounded-2xl border bg-[var(--ob-color-image-slot)]",
+        "relative overflow-hidden rounded-2xl border bg-[var(--ob-color-image-slot)]",
         obBorder,
         layout === "stacked" ? "mt-8" : "mt-0",
+        !loaded && "ob-image-shimmer aspect-[16/10] min-h-[10rem]",
         className,
       )}
     >

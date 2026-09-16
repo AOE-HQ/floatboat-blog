@@ -81,3 +81,50 @@
     --ob-shadow-raised: 0 1px 2px rgb(0 0 0 / 0.3);
   }
 }
+
+@keyframes ob-image-shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.ob-image-shimmer {
+  position: relative;
+}
+
+.ob-image-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 38%,
+    rgb(255 255 255 / 0.55) 50%,
+    transparent 62%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: ob-image-shimmer 1.4s ease-in-out infinite;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.ob-theme-system .ob-image-shimmer::after {
+    background: linear-gradient(
+      105deg,
+      transparent 0%,
+      transparent 38%,
+      rgb(255 255 255 / 0.14) 50%,
+      transparent 62%,
+      transparent 100%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ob-image-shimmer::after {
+    animation: none;
+  }
+}
