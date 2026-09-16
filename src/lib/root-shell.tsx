@@ -5,6 +5,7 @@ import { OpenBlogProvider } from "@openblog/components";
 
 import { absoluteUrl, site } from "@/config/site";
 import type { BlogLocale } from "@/config/i18n";
+import { AttributionWebCollector } from "@/components/analytics/attribution-web-collector";
 import { config, getThemeColorModeClass } from "@/lib/openblog-config";
 
 import "@/app/globals.css";
@@ -34,7 +35,11 @@ type RootShellProps = {
 };
 
 /** Shared html/body shell for (en) and (zh) route groups. */
-export function RootShell({ lang, localePrefix = "", children }: RootShellProps) {
+export function RootShell({
+  lang,
+  localePrefix = "",
+  children,
+}: RootShellProps) {
   return (
     <html
       lang={lang}
@@ -42,6 +47,7 @@ export function RootShell({ lang, localePrefix = "", children }: RootShellProps)
     >
       <body className="min-h-full flex flex-col bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
         <OpenBlogProvider config={config} localePrefix={localePrefix}>
+          <AttributionWebCollector />
           {children}
         </OpenBlogProvider>
       </body>

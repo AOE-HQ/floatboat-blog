@@ -16,6 +16,20 @@
 | `/zh/blog/*` | `${BLOG_ORIGIN}/zh/blog/*` |
 | `/blog/sitemap.xml` | `${BLOG_ORIGIN}/blog/sitemap.xml` |
 
+Keep `/api/analytics/events` routed to the main `aoe-backend`; do not send it
+to `BLOG_ORIGIN`. The Blog collector uses the same `fb_anon_id` and
+`fb_attr_params` cookies as the main site, so the attribution chain survives
+the `/blog` to main-site CTA flow.
+
+Enable the collector in the Blog deployment:
+
+```env
+NEXT_PUBLIC_ATTRIBUTION_WEB_EVENTS_ENABLED=true
+# Leave empty when the Blog is served at floatboat.ai/blog and /api remains
+# on the main site. Set an absolute main-site URL for a separate preview host.
+# NEXT_PUBLIC_ATTRIBUTION_WEB_EVENT_URL=https://floatboat.ai/api/analytics/events
+```
+
 ## 博客侧 env
 
 ```env
