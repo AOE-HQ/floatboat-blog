@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000/blog](http://localhost:3000/blog).
+Open [http://localhost:3777/blog](http://localhost:3777/blog).
 
 ## Environment
 

@@ -7,7 +7,8 @@ export interface ContentAdapter {
 }
 
 export function toMeta(post: Post): PostMeta {
-  const { content: _content, ...meta } = post;
+  const { content, ...meta } = post;
+  void content;
   return meta;
 }
 

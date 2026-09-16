@@ -11,7 +11,7 @@ import {
 } from "@openblog/core";
 
 import { useOpenBlog, useSiteHelpers } from "../provider";
-import { obBorderB, obText } from "../tokens";
+import { obBorderB } from "../tokens";
 import { ArticleFaq } from "../optional/article-faq";
 import { ArticleFinalCta } from "../optional/article-final-cta";
 import { ArticleRelatedPosts } from "../optional/article-related-posts";

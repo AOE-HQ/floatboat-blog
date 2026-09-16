@@ -14,11 +14,11 @@ export function PrevNext({
   prev: PostMeta | null;
   next: PostMeta | null;
 }) {
+  const site = useSiteHelpers();
+
   if (!prev && !next) {
     return null;
   }
-
-  const site = useSiteHelpers();
 
   return (
     <nav

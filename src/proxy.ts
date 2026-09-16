@@ -1,14 +1,11 @@
 /**
  * Subdomain deploy routing — rewrites public URLs to internal /blog/* paths.
  * Active only when DEPLOY_MODE=subdomain; no-op for subdirectory/standalone.
- *
- * Next.js 16+ deprecates middleware.ts in favor of proxy.ts. This template keeps
- * middleware.ts for Next.js 15 compatibility. See docs/DEPLOY-ROUTING.md.
  */
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   if (process.env.DEPLOY_MODE !== "subdomain") {
     return NextResponse.next();
   }
@@ -29,7 +26,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.rewrite(new URL("/blog", request.url));
   }
 
-  if (pathname.startsWith("/category/") || pathname.startsWith("/tag/") || pathname.startsWith("/author/")) {
+  if (
+    pathname.startsWith("/category/") ||
+    pathname.startsWith("/tag/") ||
+    pathname.startsWith("/author/")
+  ) {
     return NextResponse.rewrite(new URL(`/blog${pathname}`, request.url));
   }
 

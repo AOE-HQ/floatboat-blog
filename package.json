@@ -3,10 +3,10 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "npm run theme:sync && next dev",
-    "build": "npm run theme:sync && npm run validate:posts && next build",
+    "dev": "npm run theme:sync && next dev -p 3777",
+    "build": "npm run theme:sync && npm run validate:posts && node scripts/run-next-build.mjs",
     "theme:sync": "tsx scripts/sync-theme.ts",
-    "start": "next start",
+    "start": "next start -p 3777",
     "lint": "eslint",
     "validate:posts": "tsx scripts/validate-posts.ts"
   },
