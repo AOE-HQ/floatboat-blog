@@ -6,7 +6,7 @@ date: "2026-06-07"
 author: "Nova"
 category: "Calendar AI"
 tags: ["AI 邮件", "会议跟进", "Claude Opus 4.8", "AI 工作流"]
-cover: "/blog/images/ai-follow-up-email-opus-4-8/1780822513606-bbdb8519-6256-4301-a0b9-6fdd60005896.png"
+cover: "/blog/images/ai-follow-up-email-opus-4-8/1780822513606-bbdb8519-6256-4301-a0b9-6fdd60005896.webp"
 locale: "zh"
 draft: false
 ---
@@ -23,7 +23,7 @@ draft: false
 
 我对 AI 跟进邮件的期待不是套模板。我希望它能读懂会议的真实上下文——谁说了什么、定了哪些决定、什么被搁置了——然后产出一封我只需扫一眼就能点发送的邮件。
 
-![2.png](/blog/images/ai-follow-up-email-opus-4-8/1780822544878-55cd4c01-1e04-4002-a642-aab6e0ba99a1.png)
+![2.png](/blog/images/ai-follow-up-email-opus-4-8/1780822544878-55cd4c01-1e04-4002-a642-aab6e0ba99a1.webp)
 
 ## 为什么在普通日历里，会议跟进总是落空
 
@@ -57,7 +57,7 @@ Motion、Reclaim 这类**日历工作流自动化**工具能守住你的日程�
 
 重点是：跟进不再活在你的记忆里，它活在一个系统里。而系统起草得比你快。
 
-![3.png](/blog/images/ai-follow-up-email-opus-4-8/1780822556549-28ae8788-b551-4230-adc8-6f49efc43c9a.png)
+![3.png](/blog/images/ai-follow-up-email-opus-4-8/1780822556549-28ae8788-b551-4230-adc8-6f49efc43c9a.webp)
 
 ## Claude Opus 4.8 透露出「可靠跟进」的什么信号
 
@@ -85,7 +85,7 @@ Anthropic 于 2026 年 5 月下旬[发布了 Opus 4.8](<https://www.anthropic.co
 
 即使在更进阶的配置里——**computer-use agent**理论上已能替你打开邮件客户端、粘贴草稿并点发送——人工复核仍然不可或缺。正如 [Anthropic 的 computer use 文档](<https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool>)所说，这项能力仍在成熟中。我会把会议跟进的完全自动化当成一个有用的原型，而不是可交付的工作流——至少现在如此。
 
-![4.png](/blog/images/ai-follow-up-email-opus-4-8/1780822565084-55744c97-4a59-4148-b256-18662e0395d1.png)
+![4.png](/blog/images/ai-follow-up-email-opus-4-8/1780822565084-55744c97-4a59-4148-b256-18662e0395d1.webp)
 
 ## 如何让跟进工作流可复用
 
@@ -99,7 +99,7 @@ Anthropic 于 2026 年 5 月下旬[发布了 Opus 4.8](<https://www.anthropic.co
 
 我大概会一直用下去。这是那种「小但真的有用」的事。
 
-![5.png](/blog/images/ai-follow-up-email-opus-4-8/1780822575208-d13c1eb4-a0f1-42ab-8218-fa077d64b6c0.png)
+![5.png](/blog/images/ai-follow-up-email-opus-4-8/1780822575208-d13c1eb4-a0f1-42ab-8218-fa077d64b6c0.webp)
 
 以上就是我对 AI 跟进邮件的诚实看法。工作流不复杂，但需要一份像样的逐字稿和五分钟的复核。如果你的工作一周不止几场会，这很可能值得一试。
 

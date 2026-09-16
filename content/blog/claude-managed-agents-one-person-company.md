@@ -6,7 +6,7 @@ date: "2026-04-22"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/claude-managed-agents-one-person-company/1776822497021-9f7925a6-7df8-4b45-8874-4b85b4b3907b.png"
+cover: "/blog/images/claude-managed-agents-one-person-company/1776822497021-9f7925a6-7df8-4b45-8874-4b85b4b3907b.webp"
 locale: "en"
 draft: false
 ---
@@ -45,7 +45,7 @@ A few things worth knowing before getting excited:
 
 I'm not listing these as dealbreakers. I'm listing them because I've seen too many people adopt new infrastructure before checking what's actually available right now versus what's coming.
 
-![2.png](/blog/images/claude-managed-agents-one-person-company/1776822519373-6d937e26-7cec-4d89-ac86-c198dcbf88af.png)
+![2.png](/blog/images/claude-managed-agents-one-person-company/1776822519373-6d937e26-7cec-4d89-ac86-c198dcbf88af.webp)
 
 ## How Claude Managed Agents Scale AI Work
 
@@ -69,7 +69,7 @@ Computer use means Claude can control a desktop: navigate applications, click, t
 
 For Windows users specifically, this opens up automation paths that were previously only accessible to people comfortable with scripting.
 
-![3.png](/blog/images/claude-managed-agents-one-person-company/1776822533985-4bddac22-d618-4b19-9906-2db1cc5a6cd8.png)
+![3.png](/blog/images/claude-managed-agents-one-person-company/1776822533985-4bddac22-d618-4b19-9906-2db1cc5a6cd8.webp)
 
 ## Agentic AI and Cybersecurity Risks
 
@@ -91,7 +91,7 @@ Concretely: if you're using an agent to draft newsletter content, it doesn't nee
 
 The [Anthropic documentation on agentic AI safety](<https://www.anthropic.com/research/claude-character>) and their published guidance on model behavior are worth reading before you start granting broad tool access. This isn't paranoia — it's the same principle as not giving every software tool admin access to your machine.
 
-![4.png](/blog/images/claude-managed-agents-one-person-company/1776822548756-887df77a-e298-485b-ae80-3f2567e1bac1.png)
+![4.png](/blog/images/claude-managed-agents-one-person-company/1776822548756-887df77a-e298-485b-ae80-3f2567e1bac1.webp)
 
 ## Managed Agents vs Combo Skills
 
@@ -117,7 +117,7 @@ The distinction that matters: if you're a solo operator who wants to automate a 
 
 These aren't competing options. They serve different points on the same journey. A solo founder might use Combo Skills to build their own repeatable workflows, and Managed Agents if they eventually embed agent behavior into a product they're selling. Different people, different needs — and both are valid.
 
-![5.png](/blog/images/claude-managed-agents-one-person-company/1776822565877-7b46f051-7e63-4d9a-a33e-a243f15b9181.png)
+![5.png](/blog/images/claude-managed-agents-one-person-company/1776822565877-7b46f051-7e63-4d9a-a33e-a243f15b9181.webp)
 
 Anyway, that's where this stands for me. Managed Agents is a real infrastructure shift — not hype. But the question for a solo operator isn't "is this impressive" — it's "does this solve a problem I actually have, and at what complexity cost?" That answer varies depending on what you're building.
 

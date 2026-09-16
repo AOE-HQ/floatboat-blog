@@ -6,7 +6,7 @@ date: "2026-05-15"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["AI 自动化", "单人创业者", "工具选型", "工作流"]
-cover: "/blog/images/ai-tools-for-business-automation-2026/1778826913191-9404b5ae-6142-4515-b400-536b2fa11f21.PNG"
+cover: "/blog/images/ai-tools-for-business-automation-2026/1778826913191-9404b5ae-6142-4515-b400-536b2fa11f21.webp"
 locale: "zh"
 draft: false
 ---
@@ -27,7 +27,7 @@ draft: false
 
 值得一提：据[德勤 2024 企业 AI 应用现状研究](<https://www.deloitte.com/ce/en/services/consulting/research/state-of-generative-ai-in-enterprise.html>)，那些**围绕明确目标战略性地落地 AI**（而非追逐热点）的组织，回报明显好于只顾往工具堆里加东西的企业。这和我的经验是一致的。
 
-![f2.PNG](/blog/images/ai-tools-for-business-automation-2026/1778826984110-cdca6b78-0974-4049-8a53-45ccaee274d9.PNG)
+![f2.PNG](/blog/images/ai-tools-for-business-automation-2026/1778826984110-cdca6b78-0974-4049-8a53-45ccaee274d9.webp)
 
 ## 从工作流痛点开始，而不是从工具分类开始
 
@@ -49,7 +49,7 @@ draft: false
 
 顺序很重要。**行政和报表通常回血最快**；销售和内容需要更多校准；客服支持取决于你的业务量，介于两者之间。
 
-![f3.PNG](/blog/images/ai-tools-for-business-automation-2026/1778826995278-169f0ce8-8902-4096-85a8-842444a136f5.PNG)
+![f3.PNG](/blog/images/ai-tools-for-business-automation-2026/1778826995278-169f0ce8-8902-4096-85a8-842444a136f5.webp)
 
 ## 按业务职能组织的起步工具栈
 
@@ -65,7 +65,7 @@ draft: false
 
 **销售自动化：**只要你在做任何形式的外呼，就需要一个能自动处理跟进序列和 CRM 记录的工具。HubSpot 免费 CRM 自带的那套自动化，对单人创业者来说出奇地够用。HubSpot、Pipedrive 这类付费 CRM 现在都加了 AI 层——问题是，你付了钱的那些功能，到底有没有在用。
 
-![f4.png](/blog/images/ai-tools-for-business-automation-2026/1778827006074-37def585-6e82-4f34-b59e-69e88ec8609f.png)
+![f4.png](/blog/images/ai-tools-for-business-automation-2026/1778827006074-37def585-6e82-4f34-b59e-69e88ec8609f.webp)
 
 ## 维护成本与工具蔓延
 
@@ -83,7 +83,7 @@ draft: false
 
 一个合理的单人创业者核心栈，每月大概 65–150 美元，覆盖基础三层：一个通用 AI 助手、一个自动化平台、一个会议工具。再往上，你就是在解决特定问题——而特定问题，应该有特定的理由才上。
 
-![f5.png](/blog/images/ai-tools-for-business-automation-2026/1778827015308-c4ddb3ed-d959-4191-aa97-3e7f5973a0a1.png)
+![f5.png](/blog/images/ai-tools-for-business-automation-2026/1778827015308-c4ddb3ed-d959-4191-aa97-3e7f5973a0a1.webp)
 
 ## 季度自动化审计清单
 

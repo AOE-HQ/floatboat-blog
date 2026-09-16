@@ -6,7 +6,7 @@ date: "2026-05-11"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/browser-ai-agent-what-it-can-do/1778482655208-315ad4a1-77a4-46d4-aa0b-4f1848273b52.PNG"
+cover: "/blog/images/browser-ai-agent-what-it-can-do/1778482655208-315ad4a1-77a4-46d4-aa0b-4f1848273b52.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ The two main players right now are [Codex for Chrome](<https://developers.openai
 
 What a browser agent is ​ _not_ ​: a chatbot in a sidebar that only reads text you copy-paste in. The defining feature is **the agent can act on web pages** — click buttons, fill fields, navigate between tabs, extract structured data from what's on screen.
 
-![what2.PNG](/blog/images/browser-ai-agent-what-it-can-do/1778482758671-db1464b0-28d9-4b14-aae0-1346c2cf07da.PNG)
+![what2.PNG](/blog/images/browser-ai-agent-what-it-can-do/1778482758671-db1464b0-28d9-4b14-aae0-1346c2cf07da.webp)
 
 ## 6 Things Browser AI Agents Are Genuinely Good At
 
@@ -47,7 +47,7 @@ The key word is ​ _structured_ ​. If the form has clear fields and predictab
 
 Checking three dashboards every morning for the same numbers? An agent can open each one, pull the metrics, and compile a summary. Claude supports scheduling this as a recurring task. Codex runs it as a background job across tab groups. Works best when dashboard layouts stay stable.
 
-![what3.PNG](/blog/images/browser-ai-agent-what-it-can-do/1778482770015-689133be-f2cf-4302-8076-7de87980b605.PNG)
+![what3.PNG](/blog/images/browser-ai-agent-what-it-can-do/1778482770015-689133be-f2cf-4302-8076-7de87980b605.webp)
 
 ### Multi-Tab Research with Citations
 
@@ -77,7 +77,7 @@ This is the gap between demos and real work. Demos show the happy path. Real wor
 
 A browser agent can extract data and fill templates, but it can't decide which proposal angle will land better with a specific client, or judge whether a blog post draft captures the right tone. **Anything that requires taste, strategy, or nuanced judgment is still on you.** The agent can prepare the inputs; you make the call.
 
-![what4.png](/blog/images/browser-ai-agent-what-it-can-do/1778482780459-e9fde336-c0d3-4f9f-8551-4f7c056b2ea8.png)
+![what4.png](/blog/images/browser-ai-agent-what-it-can-do/1778482780459-e9fde336-c0d3-4f9f-8551-4f7c056b2ea8.webp)
 
 ### Anything Outside the Browser — Desktop Apps, Files
 
@@ -97,7 +97,7 @@ Sending a payment. Deleting records. Submitting a legal filing. Approving a cont
 
 Anthropic published data from their prompt injection testing: even with defenses active, [11.2% of adversarial attacks still succeeded](<https://www.anthropic.com/research/prompt-injection-defenses>). OpenAI has acknowledged that prompt injection in browser agents is "unlikely to ever be fully solved." These aren't theoretical risks — researchers have found real [indirect prompt injection payloads in the wild](<https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/>), embedded on ordinary websites targeting AI agents that browse them. That doesn't mean you shouldn't use browser agents. It means you should keep high-stakes actions behind a manual confirmation.
 
-![what5.png](/blog/images/browser-ai-agent-what-it-can-do/1778482792348-c069ef6f-58c9-4820-bc61-f1478881ded4.png)
+![what5.png](/blog/images/browser-ai-agent-what-it-can-do/1778482792348-c069ef6f-58c9-4820-bc61-f1478881ded4.webp)
 
 ## A Sanity-Check Before You Automate Anything in Your Browser
 
@@ -121,7 +121,7 @@ Browser agents aren't a replacement for your existing tools. They're a layer on 
 
 For dev-leaning operators: the browser agent handles your signed-in web tools. Localhost and dev-server work routes through separate mechanisms (Codex's in-app browser, Claude's Code integration). Don't expect the Chrome extension to be your testing environment — it's designed for production web apps you're logged into.
 
-![what6.png](/blog/images/browser-ai-agent-what-it-can-do/1778482803512-df92f6f6-f8ef-4be0-814d-bc02406017f0.png)
+![what6.png](/blog/images/browser-ai-agent-what-it-can-do/1778482803512-df92f6f6-f8ef-4be0-814d-bc02406017f0.webp)
 
 ## Common Failure Modes and How to Catch Them Early
 

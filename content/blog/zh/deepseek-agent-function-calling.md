@@ -6,7 +6,7 @@ date: "2026-08-14"
 author: "Judy"
 category: "AI Agents"
 tags: ["DeepSeek", "函数调用", "AI Agent", "MCP"]
-cover: "/blog/images/deepseek-agent-function-calling/1785736313626-5f2632c2-133e-4af2-beb8-e53b73b6874b.png"
+cover: "/blog/images/deepseek-agent-function-calling/1785736313626-5f2632c2-133e-4af2-beb8-e53b73b6874b.webp"
 locale: "zh"
 draft: false
 ---

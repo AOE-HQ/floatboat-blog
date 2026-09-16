@@ -6,7 +6,7 @@ date: "2026-05-20"
 author: "Nova"
 category: "AI Agents"
 tags: ["HTML", "Markdown", "AI 输出", "Claude Code"]
-cover: "/blog/images/html-is-the-new-markdown/1779256712079-199ac290-7f16-4930-935c-b32be4a734cc.PNG"
+cover: "/blog/images/html-is-the-new-markdown/1779256712079-199ac290-7f16-4930-935c-b32be4a734cc.webp"
 locale: "zh"
 draft: false
 ---
@@ -19,7 +19,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 接下来几天我一直在琢磨这件事。下面是我看到的图景——以及如果你大多独自工作、或身处小团队，它意味着什么。
 
-![2.PNG](/blog/images/html-is-the-new-markdown/1779256961857-78b2726d-6fb5-44ca-92fe-3339ba9a712a.PNG)
+![2.PNG](/blog/images/html-is-the-new-markdown/1779256961857-78b2726d-6fb5-44ca-92fe-3339ba9a712a.webp)
 
 ## 「HTML 就是新的 Markdown」这场争论是怎么起来的
 
@@ -45,7 +45,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 [MDN Web Docs 的 HTML 参考](<https://developer.mozilla.org/en-US/docs/Web/HTML>)一向说得很清楚——HTML 的设计初衷就是为人类阅读而结构化文档；Markdown 的设计初衷是让面向网页的写作更轻松。这两个目标相关，但并不是同一个目标。当你的 AI Agent 产出的工作成果需要被审查、分享或据以行动时，「为人类阅读而生」这一点就开始变得重要得多。
 
-![3.PNG](/blog/images/html-is-the-new-markdown/1779256973035-39e4af2c-0ba0-4f0a-a212-50dc6664d3a1.PNG)
+![3.PNG](/blog/images/html-is-the-new-markdown/1779256973035-39e4af2c-0ba0-4f0a-a212-50dc6664d3a1.webp)
 
 ## 为什么 Markdown 依然重要
 
@@ -63,7 +63,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 好工具，用错了场景——这是真实存在的事。Markdown 不会消失，它只是不再是唯一答案了。
 
-![4.png](/blog/images/html-is-the-new-markdown/1779256991459-69f12edf-2595-47cd-a828-9fa43b9d1fb6.png)
+![4.png](/blog/images/html-is-the-new-markdown/1779256991459-69f12edf-2595-47cd-a828-9fa43b9d1fb6.webp)
 
 ## 这对单人创业者意味着什么
 
@@ -79,7 +79,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 平台已经在往这个方向走了。Claude 的 [Artifacts 功能](<https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them>)能直接在聊天界面里生成并渲染 HTML；OpenAI 的 [Canvas 工作区](<https://openai.com/index/introducing-canvas/>)开启了并排编辑；`html-anything` 这类工具把 Agent 输出转成独立的 HTML 成果。更丰富的 AI 输出的基础设施正在出现——不管你有没有专门要求。
 
-![5.png](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.png)
+![5.png](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
 
 ## 实用规则——草稿用 Markdown，需要时用 HTML 交付
 
@@ -109,7 +109,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 • [想把手头的工作成果留在同一个环境里？读：Stop Context Switching: Why Workspace Agents Matter（别再上下文切换：为什么工作区 Agent 重要）](/blog/stop-context-switching-workspace-agent)
 
-![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.png)
+![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.webp)
 
 ## 常见问题
 

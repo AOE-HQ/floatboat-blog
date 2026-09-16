@@ -6,7 +6,7 @@ date: "2026-05-01"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/stop-context-switching-workspace-agent/1777599600509-10571637-8b09-45c4-b74b-09c0f5756b91.PNG"
+cover: "/blog/images/stop-context-switching-workspace-agent/1777599600509-10571637-8b09-45c4-b74b-09c0f5756b91.webp"
 locale: "en"
 draft: false
 ---
@@ -23,7 +23,7 @@ A widely-cited study from **Harvard Business Review tracked 137 workers across t
 
 And then there's the recovery cost per switch. [Gloria Mark's research at UC Irvine](<https://ics.uci.edu/~gmark/chi08-mark.pdf>) is the source of the often-quoted figure that it takes about **23 minutes and 15 seconds** to fully refocus after an interruption. I've seen people quote this number for years without checking it — the actual paper is worth reading because the more interesting finding is that people _compensate_ by working faster, but the cost shows up as stress, frustration, and time pressure. So even when the work gets done, something in you pays.
 
-![2.PNG](/blog/images/stop-context-switching-workspace-agent/1777599736423-3045cce0-260b-4f4e-bd7a-04fc04eae09f.PNG)
+![2.PNG](/blog/images/stop-context-switching-workspace-agent/1777599736423-3045cce0-260b-4f4e-bd7a-04fc04eae09f.webp)
 
 ### Why it's worse when you do five jobs yourself
 
@@ -55,7 +55,7 @@ Then there's the other end: full automation tools where you wire up steps and tr
 
 I built three of these last year. I've used one of them since. The other two were monuments to wishful thinking.
 
-![3.PNG](/blog/images/stop-context-switching-workspace-agent/1777599749824-b56f7d9e-34cf-4762-aeb4-6f7ca710b1e1.PNG)
+![3.PNG](/blog/images/stop-context-switching-workspace-agent/1777599749824-b56f7d9e-34cf-4762-aeb4-6f7ca710b1e1.webp)
 
 ## What actually reduces context switching
 
@@ -79,7 +79,7 @@ The third shift is the one that took me longest to appreciate. If you do the sam
 
 A workspace agent can save that whole pattern as a reusable thing. Same input shape, same steps, same output. You stop rebuilding the wheel every Tuesday. [Asana's Anatomy of Work data on context switching](<https://asana.com/resources/context-switching>) makes a related point: the problem isn't usually a single bad workflow, it's that ​**the same workflow gets reconstructed badly, over and over** ​, because nothing's saved between runs.
 
-![4.png](/blog/images/stop-context-switching-workspace-agent/1777599761438-8149a6b1-3554-48e1-93fc-89d27caee81c.png)
+![4.png](/blog/images/stop-context-switching-workspace-agent/1777599761438-8149a6b1-3554-48e1-93fc-89d27caee81c.webp)
 
 ## A practical pattern to try this week
 
@@ -117,7 +117,7 @@ There's a category of work — long writing, hard thinking, learning something g
 
 If you find yourself trying to use AI to avoid the deep work, that's a different problem. I've done it. It doesn't end well.
 
-![5.png](/blog/images/stop-context-switching-workspace-agent/1777599775880-5a663725-1b36-4ac6-80d0-6e9ac06ba9de.png)
+![5.png](/blog/images/stop-context-switching-workspace-agent/1777599775880-5a663725-1b36-4ac6-80d0-6e9ac06ba9de.webp)
 
 ## The real question to ask before changing tools
 

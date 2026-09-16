@@ -6,7 +6,7 @@ date: "2026-03-20"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773825201064-9d872af9-1dad-4943-aac5-c9406197db10.png"
+cover: "/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773825201064-9d872af9-1dad-4943-aac5-c9406197db10.webp"
 locale: "en"
 draft: false
 ---
@@ -17,7 +17,7 @@ I've been using AI tools for over a year. I write about them. And I was still re
 
 The difference was noticeable. It held a consistent standard without me re-establishing context each time. Less like a tool, more like briefing someone who already knew the project. That's when I started thinking seriously about what it means to **give AI a role** — not just a prompt. Turns out, this is quietly how the best **one-person businesses** are starting to work.
 
-![1.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916303269-246035ad-155a-4770-8059-197a965d27b5.png)
+![1.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916303269-246035ad-155a-4770-8059-197a965d27b5.webp)
 
 ## Why One-Person Businesses Are Having a Moment Right Now
 
@@ -51,7 +51,7 @@ A request: "Write me a product description." A role: "You are my product communi
 
 That distinction sounds small. It's actually the whole game.
 
-![2.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916314360-34c957ee-6708-410c-8b70-341f21688a06.png)
+![2.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916314360-34c957ee-6708-410c-8b70-341f21688a06.webp)
 
 ## What Giving AI a Role Actually Looks Like
 
@@ -75,7 +75,7 @@ What she changed: She stopped using AI as a search tool and started setting up p
 
 The key shift: **she didn't switch tools anymore. She switched roles.** Same workspace, different context loaded. She estimated she saved 6–8 hours a week just on re-explaining context and re-formatting outputs. And the quality got more consistent, because the role held the standard instead of her having to re-establish it every session.4
 
-![3.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916326187-76598ab9-f2cf-4186-82df-d42f21ee03f6.png)
+![3.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916326187-76598ab9-f2cf-4186-82df-d42f21ee03f6.webp)
 
 ### The roles that matter most for solo operators
 
@@ -101,7 +101,7 @@ Don't try to redesign your whole workflow. Find the one thing you do every week 
 
 According to [MIT Sloan Management Review's work on knowledge management](<https://sloanreview.mit.edu/>), making tacit knowledge explicit is one of the hardest and most valuable things a knowledge worker can do. Most of what experienced people know how to do lives in their head, not in a document. Capturing it — even roughly — is what makes a role transferable to AI.
 
-![4.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916338947-9eb991fe-cd5a-4b08-9035-ee1f830c6505.png)
+![4.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916338947-9eb991fe-cd5a-4b08-9035-ee1f830c6505.webp)
 
 ### What makes a role reusable
 
@@ -127,7 +127,7 @@ The Harvard [Business Review](<https://hbr.org/>) has covered this distinction c
 
 Running a one-person business with AI doesn't mean you never collaborate. It means you stop burning hours on tasks that don't require a human— This is also why many solo operators are now packaging these systems into services
 
-![5.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916347558-f859be5e-781e-4548-b7db-ea07c050495a.png)
+![5.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916347558-f859be5e-781e-4548-b7db-ea07c050495a.webp)
 
 ## How to Set Up Your First AI Role (Without Overcomplicating It)
 

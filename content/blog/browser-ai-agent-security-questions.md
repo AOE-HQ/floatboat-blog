@@ -6,7 +6,7 @@ date: "2026-05-12"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/browser-ai-agent-security-questions/1778563937090-298eee0e-5d27-4059-8761-8be6e622f89b.PNG"
+cover: "/blog/images/browser-ai-agent-security-questions/1778563937090-298eee0e-5d27-4059-8761-8be6e622f89b.webp"
 locale: "en"
 draft: false
 ---
@@ -25,7 +25,7 @@ Anthropic's own [safety page for Claude in Chrome](<https://support.claude.com/e
 
 So: use these tools, yes. But use them with eyes open.
 
-![52.PNG](/blog/images/browser-ai-agent-security-questions/1778563993372-2af75f73-de6c-459d-a71c-43583411ab4a.PNG)
+![52.PNG](/blog/images/browser-ai-agent-security-questions/1778563993372-2af75f73-de6c-459d-a71c-43583411ab4a.webp)
 
 ## Question 1 — What Permissions Is It Actually Asking For?
 
@@ -63,7 +63,7 @@ When a site prompt appears, your options:
 
 Per the [Codex Chrome extension documentation](<https://developers.openai.com/codex/app/chrome-extension>), you manage allowlist and blocklist in Computer Use settings. There's also a nuclear option — "always allow browser content" — that removes all per-site prompts. Don't use this.
 
-![53.PNG](/blog/images/browser-ai-agent-security-questions/1778564003144-a025e36c-d094-471d-b791-a5e822c9825f.PNG)
+![53.PNG](/blog/images/browser-ai-agent-security-questions/1778564003144-a025e36c-d094-471d-b791-a5e822c9825f.webp)
 
 ### Sites worth never letting an agent touch
 
@@ -117,7 +117,7 @@ For Claude for Chrome: Memory is a toggle in your Claude account settings under 
 
 For anything truly sensitive, I use fresh sessions and clear context between tasks. It's friction, but it's the only way I'm confident each task stays contained.
 
-![54.png](/blog/images/browser-ai-agent-security-questions/1778564013711-13667a54-e368-4c2a-ae1d-4a903ac5ef1d.png)
+![54.png](/blog/images/browser-ai-agent-security-questions/1778564013711-13667a54-e368-4c2a-ae1d-4a903ac5ef1d.webp)
 
 ## Question 5 — Are You in the EU, UK, or a Regulated Industry?
 
@@ -137,7 +137,7 @@ Some situations where I'd hold off entirely, regardless of which tool you're usi
 
   * ​**Shared or admin accounts** ​: Connecting an agent to an account where your actions affect other users multiplies the blast radius of any mistake.
 
-![55.png](/blog/images/browser-ai-agent-security-questions/1778564023236-7c40a0a4-2a2b-4615-939d-f43c8a2be20d.png)
+![55.png](/blog/images/browser-ai-agent-security-questions/1778564023236-7c40a0a4-2a2b-4615-939d-f43c8a2be20d.webp)
 
 ## A Light Setup Checklist Before First Use
 

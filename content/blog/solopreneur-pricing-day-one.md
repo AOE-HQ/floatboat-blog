@@ -6,7 +6,7 @@ date: "2026-04-13"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/solopreneur-pricing-day-one/1776074913528-787456c2-7200-46cb-a7ba-84e32a402425.PNG"
+cover: "/blog/images/solopreneur-pricing-day-one/1776074913528-787456c2-7200-46cb-a7ba-84e32a402425.webp"
 locale: "en"
 draft: false
 ---
@@ -37,7 +37,7 @@ A 2025 survey of solopreneurs found that 87% don't fully trust their own rates �
 
 The sooner you have a number, the sooner that feedback starts coming in.
 
-![2.PNG](/blog/images/solopreneur-pricing-day-one/1776075036795-a01c73ac-7a61-47e9-862f-8371ae80feb4.PNG)
+![2.PNG](/blog/images/solopreneur-pricing-day-one/1776075036795-a01c73ac-7a61-47e9-862f-8371ae80feb4.webp)
 
 ## What Solopreneur Pricing Is Actually About
 
@@ -61,7 +61,7 @@ This matters early because the model you choose shapes how clients think about t
 
 My take: **start with project-based if you're unsure.** It forces you to define scope, which forces you to define what you're actually selling.
 
-![3.PNG](/blog/images/solopreneur-pricing-day-one/1776075047063-f8752e8e-137d-4450-95a3-65cb02f510c2.PNG)
+![3.PNG](/blog/images/solopreneur-pricing-day-one/1776075047063-f8752e8e-137d-4450-95a3-65cb02f510c2.webp)
 
 ## How to Set Your First Price When You Have No Data
 
@@ -99,7 +99,7 @@ The cleanest way: raise your price for new clients first, keep existing clients 
 
 Give yourself a few months of new-client pricing before making changes to existing relationships. One pattern that works well: announce the increase with lead time and a reason. "I'm raising rates on [date] because my capacity is limited and I want to prioritize longer engagements." That's not justification — it's positioning.
 
-![clean_Gemini_Generated_Image_g5844ig5844ig584 \(1\).png](/blog/images/solopreneur-pricing-day-one/1776075015989-b15c4bc9-e3ee-466d-b05b-559912c5d51d.png)
+![clean_Gemini_Generated_Image_g5844ig5844ig584 \(1\).png](/blog/images/solopreneur-pricing-day-one/1776075015989-b15c4bc9-e3ee-466d-b05b-559912c5d51d.webp)
 
 ## Pricing as a Signal — What Your Price Says About Your Positioning
 
@@ -123,7 +123,7 @@ I keep a short list. These aren't tricks — they're honest check-ins.
 
 These questions don't need to produce action every time. They just keep pricing from becoming a set-it-and-forget-it decision that quietly works against you.
 
-![5.png](/blog/images/solopreneur-pricing-day-one/1776075060801-9e0470a1-3267-4196-932f-fd5351b85f73.png)
+![5.png](/blog/images/solopreneur-pricing-day-one/1776075060801-9e0470a1-3267-4196-932f-fd5351b85f73.webp)
 
 ## Trade-offs: What You Give Up When You Optimize Only for Accessibility
 

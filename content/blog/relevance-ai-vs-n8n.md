@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/relevance-ai-vs-n8n/1775027011114-2f3b82c3-c427-4577-9fae-e3385ff178af.png"
+cover: "/blog/images/relevance-ai-vs-n8n/1775027011114-2f3b82c3-c427-4577-9fae-e3385ff178af.webp"
 locale: "en"
 draft: false
 ---
@@ -39,7 +39,7 @@ The pricing model is usage-based — split into **Actions** (what your agents ac
 
 **Best for:** Sales and marketing ops teams, support teams, non-technical operators who want agents running without writing code.
 
-![2.png](/blog/images/relevance-ai-vs-n8n/1775027254741-c24a3f90-cee7-450b-901c-f9fde10c0a6b.png)
+![2.png](/blog/images/relevance-ai-vs-n8n/1775027254741-c24a3f90-cee7-450b-901c-f9fde10c0a6b.webp)
 
 ## What n8n Is Built For
 
@@ -75,7 +75,7 @@ That said, I'd go in with realistic expectations around cost. The [Relevance AI 
 
 **Pick Relevance AI if:** You want agents deployed fast, you're non-technical, and your main workflows are sales, support, or research-focused.
 
-![3.png](/blog/images/relevance-ai-vs-n8n/1775027270552-1c51c0b4-df2a-4570-9a94-6165c3649cb8.png)
+![3.png](/blog/images/relevance-ai-vs-n8n/1775027270552-1c51c0b4-df2a-4570-9a94-6165c3649cb8.webp)
 
 ## Who Should Use n8n
 
@@ -89,7 +89,7 @@ One thing I noticed in real user feedback: **the free Community Edition on self-
 
 **Pick n8n if:** You're technical, need full workflow control, care about data ownership, or want the lowest long-term cost.
 
-![4.png](/blog/images/relevance-ai-vs-n8n/1775027282859-5c40b5bb-cda5-45e6-807c-926d585579d2.png)
+![4.png](/blog/images/relevance-ai-vs-n8n/1775027282859-5c40b5bb-cda5-45e6-807c-926d585579d2.webp)
 
 ## When Neither Is the Right Fit
 
@@ -103,7 +103,7 @@ If you want something in between — AI-first but with workflow automation built
 
 Still learning what you need? That's fine. Try the free tiers of both — Relevance AI gives you 200 Actions to start, and n8n's community edition is free to self-host. Small experiments tell you a lot.
 
-![5.png](/blog/images/relevance-ai-vs-n8n/1775027292740-c9cccead-b73f-440f-8e38-babc63234ece.png)
+![5.png](/blog/images/relevance-ai-vs-n8n/1775027292740-c9cccead-b73f-440f-8e38-babc63234ece.webp)
 
 _Anyway, that was fun to dig into. Both tools are genuinely good at what they're designed for — I just think a lot of people end up frustrated because they picked the wrong one for their situation. Hopefully this helps you figure out which lane you're actually in._
 

@@ -7,7 +7,7 @@ updated: "2026-05-24"
 author: "Nova"
 category: "Model & Benchmarks"
 tags: ["Label"]
-cover: "/blog/images/gemini-3-5-integration-solo-operators/1779327361164-3a4f4c15-1174-4518-ab31-17dbca050535.png"
+cover: "/blog/images/gemini-3-5-integration-solo-operators/1779327361164-3a4f4c15-1174-4518-ab31-17dbca050535.webp"
 locale: "en"
 draft: false
 ---
@@ -24,7 +24,7 @@ The context window is the part that matters for daily work. One million tokens m
 
 Speed-wise, I ran a few side-by-side comparisons on a 15-page brief. Gemini 3.5 Flash came back noticeably faster. Whether that holds across more complex tasks, I'm still figuring out.
 
-![2.PNG](/blog/images/gemini-3-5-integration-solo-operators/1779586988856-d48cf5f8-29a9-4897-8c16-dcf400f118ea.PNG)
+![2.PNG](/blog/images/gemini-3-5-integration-solo-operators/1779586988856-d48cf5f8-29a9-4897-8c16-dcf400f118ea.webp)
 
 ### Key differences from Claude and GPT without turning this into a model benchmark
 
@@ -46,7 +46,7 @@ If you're running repetitive tasks through an API, cost matters. According to [G
 
 I want to be careful not to overstate this though. Per-token cost only matters if the output quality is good enough that you're not spending extra time editing. Three out of five times on my content tasks, the output was solid. The other two needed cleanup.
 
-![3.PNG](/blog/images/gemini-3-5-integration-solo-operators/1779586999467-5d43a8ba-14fc-4be6-b5f2-a756d66c0759.PNG)
+![3.PNG](/blog/images/gemini-3-5-integration-solo-operators/1779586999467-5d43a8ba-14fc-4be6-b5f2-a756d66c0759.webp)
 
 ### Google Workspace-heavy workflows
 
@@ -68,7 +68,7 @@ Here's the thing nobody talks about enough: **every model you add is a decision 
 
 For a solo operator, that cognitive overhead adds up fast. I used to think more tools meant more productivity. I don't anymore.
 
-![4.png](/blog/images/gemini-3-5-integration-solo-operators/1779587011861-d6f16ca7-cbef-4200-9d4c-acae1af9e643.png)
+![4.png](/blog/images/gemini-3-5-integration-solo-operators/1779587011861-d6f16ca7-cbef-4200-9d4c-acae1af9e643.webp)
 
 ## The Bigger Issue: Do You Need Multiple Models at All?
 
@@ -92,7 +92,7 @@ If you're using an AI workspace that supports multiple models, the more interest
 
 A quick decision framework before switching for any task: **Is the context window a bottleneck?** If yes, the 1M tokens might solve it. **Is cost the primary constraint?** Compare per-token pricing at your actual volume. **Have you already optimized prompts for another model?** Factor in re-tuning time. If two or more answers point toward switching, test it. If only one does, stay put.
 
-![5.png](/blog/images/gemini-3-5-integration-solo-operators/1779587021751-2a32816c-1462-48ab-9647-1205288fb412.png)
+![5.png](/blog/images/gemini-3-5-integration-solo-operators/1779587021751-2a32816c-1462-48ab-9647-1205288fb412.webp)
 
 ## Should You Flip the Switch?
 

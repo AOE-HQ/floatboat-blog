@@ -6,7 +6,7 @@ date: "2026-04-28"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["工作区 Agent", "工作流搭建器", "AI 自动化", "单人经营者"]
-cover: "/blog/images/workspace-agents-vs-workflow-builders/1777341351447-26891077-6fbd-4d37-8b62-14477dd48340.PNG"
+cover: "/blog/images/workspace-agents-vs-workflow-builders/1777341351447-26891077-6fbd-4d37-8b62-14477dd48340.webp"
 locale: "zh"
 draft: false
 ---
@@ -29,7 +29,7 @@ draft: false
 
 Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthropic.com/research/building-effective-agents>)：工作流是"LLM 与工具经由预定义代码路径被编排的系统"，而 Agent 是模型"动态地主导自己的流程与工具使用"的系统。那套语言是写给构建这些东西的工程师的，但也抓住了用户侧的差异。**工作流搭建器运行你画好的那条路径；工作区 Agent 在工作发生的过程中选路径。**
 
-![2.PNG](/blog/images/workspace-agents-vs-workflow-builders/1777341455454-a12cd665-fbb4-48d2-90ec-f3cd98d20026.PNG)
+![2.PNG](/blog/images/workspace-agents-vs-workflow-builders/1777341455454-a12cd665-fbb4-48d2-90ec-f3cd98d20026.webp)
 
 ## 真实差异出现在哪里
 
@@ -49,7 +49,7 @@ Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthro
 
 上周我就撞上这么一件事。我要替客户对比三家供应商的方案。格式不同、术语不同、部分重叠。为这件事搭一条工作流管线，花的时间比手动做完还长。而一个工作区里的 Agent——三份文件开着——大约十五分钟就把我带到了一版对比草稿前。那个任务的任何一部分，都不会以同样的方式再来一次。
 
-![3.PNG](/blog/images/workspace-agents-vs-workflow-builders/1777341464443-2b410c6d-24df-438e-9ba7-f3cec9654c5a.PNG)
+![3.PNG](/blog/images/workspace-agents-vs-workflow-builders/1777341464443-2b410c6d-24df-438e-9ba7-f3cec9654c5a.webp)
 
 ### 判断与异常怎么处理
 
@@ -85,7 +85,7 @@ Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthro
 
 单人创始人和顾问就住在这里。周一是调研，周二是方案，周三是改客户文案，周四是搞清一个税务问题。没有一件值得搭一条工作流——等你把设计做完，任务早就能干完了。Anthropic 团队[直接点明了这一点](<https://resources.anthropic.com/building-effective-ai-agents>)：当"需要在规模上具备灵活性和模型驱动的决策"时，Agent 是正确的选择；而工作流适合"定义良好的任务"。
 
-![4.png](/blog/images/workspace-agents-vs-workflow-builders/1777341477750-736282a3-524a-4999-adf2-e92e4920f351.png)
+![4.png](/blog/images/workspace-agents-vs-workflow-builders/1777341477750-736282a3-524a-4999-adf2-e92e4920f351.webp)
 
 ### 单人经营者与身兼多职的人
 
@@ -119,7 +119,7 @@ Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthro
 
 [Gartner 预测](<https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025>)，到 2026 年底将有 40% 的企业应用内置任务型 Agent，而 2025 年这一比例还不到 5%。那个精确数字会不会兑现，谁也说不准——_我写下这段话时，它是预测，不是事实_——但方向性判断看起来是对的。这两个品类正在分化，而不是趋同。
 
-![5.png](/blog/images/workspace-agents-vs-workflow-builders/1777341489448-c8adee60-91c1-4eef-bf0d-39c26644a653.png)
+![5.png](/blog/images/workspace-agents-vs-workflow-builders/1777341489448-c8adee60-91c1-4eef-bf0d-39c26644a653.webp)
 
 以上就是我的诚实看法。这两个品类其实并不在竞争——它们解决的是"工作如何完成"的不同部分。如果你的工作长成管线的形状，就建一条管线；如果它长成一张堆满东西的桌子，就找个能陪你坐在桌边的东西。等你真正需要它时，你会知道的。
 

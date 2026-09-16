@@ -6,7 +6,7 @@ date: "2026-03-20"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/lindy-vs-gumloop/1773740299614-6f97fed0-616c-4f7e-a790-00151f378bb7.png"
+cover: "/blog/images/lindy-vs-gumloop/1773740299614-6f97fed0-616c-4f7e-a790-00151f378bb7.webp"
 locale: "en"
 draft: false
 ---
@@ -33,7 +33,7 @@ I timed everything, noted where each tool shone or frustrated me, tracked credit
 
 
 
-![1.png](/blog/images/lindy-vs-gumloop/1773918556813-4bf8c62b-19ce-4093-8528-22fef050e458.png)
+![1.png](/blog/images/lindy-vs-gumloop/1773918556813-4bf8c62b-19ce-4093-8528-22fef050e458.webp)
 
 ## What Each Tool Is Actually Built to Do
 
@@ -47,7 +47,7 @@ Before comparing them, it helps to understand what each tool is _designed for_ �
 
 It's a more guided experience overall. Lindy's templates lean heavily toward inbox, meetings, and calendar scenarios, which makes onboarding quick if those are your pain points. If you're curious about what "agents making decisions mid-flow" actually means under the hood, [Anthropic's documentation on building with Claude](<https://docs.anthropic.com/en/docs/build-with-claude/overview>) offers a useful primer on how LLM-based agents reason and hand off tasks — not specific to Lindy, but it helps frame the concept.
 
-![2.png](/blog/images/lindy-vs-gumloop/1773918570051-c76b80d3-eb1b-4abb-94c9-cc46fb13ad68.png)
+![2.png](/blog/images/lindy-vs-gumloop/1773918570051-c76b80d3-eb1b-4abb-94c9-cc46fb13ad68.webp)
 
 ### Gumloop — Workflow Builder, Visual Canvas Focus
 
@@ -57,7 +57,7 @@ The key thing to understand: Gumloop isn't just a fixed-sequence pipeline tool. 
 
 That said, Gumloop does not guide you toward outcomes or suggest what to build next. You start with a blank canvas, and the platform expects you to think through logic, edge cases, and execution costs. In my test, getting a working pipeline took me closer to 30–40 minutes before it ran cleanly. Not painful — but it asks more from you upfront.
 
-![3.png](/blog/images/lindy-vs-gumloop/1773918578776-1f6cf3a5-1ccc-4fff-9479-1bf93c23607c.png)
+![3.png](/blog/images/lindy-vs-gumloop/1773918578776-1f6cf3a5-1ccc-4fff-9479-1bf93c23607c.webp)
 
 ## Key Differences Side by Side
 
@@ -81,7 +81,7 @@ Lindy wins when **speed of setup and communication automation are what matter mo
 
 **You want agents handing off to other agents.** If your use case involves chaining agents — a research agent feeding a drafting agent, for example — Lindy handles that natively in a fairly approachable way.
 
-![4.png](/blog/images/lindy-vs-gumloop/1773918614594-9dddfba6-5f67-4fbe-93d0-57c9633dab36.png)
+![4.png](/blog/images/lindy-vs-gumloop/1773918614594-9dddfba6-5f67-4fbe-93d0-57c9633dab36.webp)
 
 ## Where Gumloop Is the Better Fit
 
@@ -97,7 +97,7 @@ Gumloop is stronger when you need ​**precision, visibility into every step, an
 
 **You're running ​CRM** ​**​ or sales data workflows.** Gumloop connects with tools like Salesforce, HubSpot, and Apollo. In practice, this means you can build pipelines that pull account data, run AI analysis on it, and push structured outputs back — though how much that actually speeds things up depends on how well you design the flow.
 
-![5.png](/blog/images/lindy-vs-gumloop/1773918631558-16a3526e-926d-4207-9b58-21b4c51849e5.png)
+![5.png](/blog/images/lindy-vs-gumloop/1773918631558-16a3526e-926d-4207-9b58-21b4c51849e5.webp)
 
 ## What Neither Tool Does Well
 

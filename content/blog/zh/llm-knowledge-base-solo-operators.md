@@ -6,7 +6,7 @@ date: "2026-04-06"
 author: "Nova"
 category: "Solo Operators"
 tags: ["LLM", "知识库", "AI 工作区"]
-cover: "/blog/images/llm-knowledge-base-solo-operators/1775455452599-90f54b5f-b9b3-446e-9364-3e42f65a83e6.png"
+cover: "/blog/images/llm-knowledge-base-solo-operators/1775455452599-90f54b5f-b9b3-446e-9364-3e42f65a83e6.webp"
 locale: "zh"
 draft: false
 ---
@@ -29,7 +29,7 @@ Karpathy 那套已经在一个研究主题上长到了大约 100 篇文章、40 
 
 像 [Obsidian](<https://obsidian.md/>) 这样的 PKM 系统（Karpathy 把它用作阅读层）要求你亲自连接想法、回访笔记。**LLM 知识库**则去掉了大部分这种手动层——AI 负责建反向链接、写概念摘要、跑「健康检查」来发现缺口。
 
-![2.png](/blog/images/llm-knowledge-base-solo-operators/1775455707565-08650822-8d2b-4773-88fc-07878e8657e1.png)
+![2.png](/blog/images/llm-knowledge-base-solo-operators/1775455707565-08650822-8d2b-4773-88fc-07878e8657e1.webp)
 
 ### Karpathy 工作流对在哪里——它真正为谁而建
 
@@ -61,7 +61,7 @@ _[待核实标注：搭建耗时因技术熟悉度与工具选型不同而差异
 
 wiki 要保持有用，你就得持续往里喂优质材料。这意味着要决定什么该进、什么不该进、何时修剪、何时重跑编译。这套决策开销本身会变成一项新工作流——生产力圈子里的人称之为「第二份工作」。[构建第二大脑](<https://www.buildingasecondbrain.com/>) 社群多年来用更简单的笔记系统记录过这种失败模式。一套 AI 编译的 wiki 并不会自动让这个问题消失。
 
-![3.png](/blog/images/llm-knowledge-base-solo-operators/1775455769712-5be6439d-de06-42cb-9a29-2d508868522c.png)
+![3.png](/blog/images/llm-knowledge-base-solo-operators/1775455769712-5be6439d-de06-42cb-9a29-2d508868522c.webp)
 
 https://blog.langchain.dev/retrieval/
 
@@ -89,7 +89,7 @@ https://blog.langchain.dev/retrieval/
 
 正因如此，**AI 工作区**这类工具对单人创业者来说开始比 DIY 知识库更有意义。[Floatboat](</>) 这类产品走了一条完全不同的路线——它不让你去搭建和打理一套参考 wiki，而是从你真实的工作模式（你怎么编辑、怎么决策、怎么迭代）中学习，再把这些转化为可复用的 AI 工作流。它更少关于「存储你知道的」，更多关于「自动化你干活的」。这个区别感觉很小，实践中却很重大。
 
-![4.png](/blog/images/llm-knowledge-base-solo-operators/1775455799520-5874e134-2d7e-4ef6-8af4-eccd687f174d.png)
+![4.png](/blog/images/llm-knowledge-base-solo-operators/1775455799520-5874e134-2d7e-4ef6-8af4-eccd687f174d.webp)
 
 ## 什么时候自建 LLM 知识库确实值得
 
@@ -122,7 +122,7 @@ https://blog.langchain.dev/retrieval/
 
 如果你对前三项答「是」、对最后一项答「知道事情」——那值得认真探索。否则，一个学习你执行模式的 AI 工作区，大概更能帮到你。
 
-![5.png](/blog/images/llm-knowledge-base-solo-operators/1775455811586-28740780-4551-46c1-a6b8-5ff3c87fbb1a.png)
+![5.png](/blog/images/llm-knowledge-base-solo-operators/1775455811586-28740780-4551-46c1-a6b8-5ff3c87fbb1a.webp)
 
 _总之，这就是我的落脚点。我仍把 Karpathy 的帖子当作思考工具——但不是当作待办清单。如果你的处境确实符合深度研究的画像，它值得认真看一眼。对我们其余的人来说：也许有一条更轻的路，能让你拿到更多收益、缴更少的维护税。_
 

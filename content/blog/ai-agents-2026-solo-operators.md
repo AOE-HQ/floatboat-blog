@@ -6,7 +6,7 @@ date: "2026-04-07"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/ai-agents-2026-solo-operators/1775543065045-9764787e-30c4-4492-9b3e-5ff4ec3a104a.PNG"
+cover: "/blog/images/ai-agents-2026-solo-operators/1775543065045-9764787e-30c4-4492-9b3e-5ff4ec3a104a.webp"
 locale: "en"
 draft: false
 ---
@@ -35,7 +35,7 @@ This matters more than it sounds. According to [LangChain's State of Agent Engin
 
 This shift is also why Anthropic's Model Context Protocol became such a big deal after its November 2024 release. MCP is the open standard that lets AI agents actually connect to your tools — Google Drive, Slack, your browser, your files — rather than just talking about them. Since launching, the community has built thousands of MCP servers, and it's now the de-facto standard for connecting agents to tools and data. That infrastructure is what makes execution-layer AI possible.
 
-![2.png](/blog/images/ai-agents-2026-solo-operators/1775544775539-e804c584-d9f1-49fb-892a-d37f2d3a708a.png)
+![2.png](/blog/images/ai-agents-2026-solo-operators/1775544775539-e804c584-d9f1-49fb-892a-d37f2d3a708a.webp)
 
 ### Why Google and xAI Are Both Moving This Direction
 
@@ -61,7 +61,7 @@ The evidence that this is accessible is real. According to a 2025 survey cited b
 
 I've been experimenting with this for the past few months — specifically trying to set up structured workflows for content research that run without me re-explaining my process every time. Some of it works. Some of it absolutely does not. More on that in a second.
 
-![3.png](/blog/images/ai-agents-2026-solo-operators/1775544784583-b2c02934-2d06-4cb0-825b-ecdab09ba8b2.png)
+![3.png](/blog/images/ai-agents-2026-solo-operators/1775544784583-b2c02934-2d06-4cb0-825b-ecdab09ba8b2.webp)
 
 ### The Problem That Still Isn't Solved: Context Loss and Repeated Setup
 
@@ -111,7 +111,7 @@ That's where an agent that runs on a schedule, without needing you to trigger it
 
 Some agents operate as conversational assistants you interact with directly, while others work in the background, monitoring systems for specific events and taking action when conditions are met. For solo operators, both types have a place — but the background category tends to be underused.
 
-![4.png](/blog/images/ai-agents-2026-solo-operators/1775544795210-1bfbadf7-dff0-4ad0-a316-1a8f37fb6d9f.png)
+![4.png](/blog/images/ai-agents-2026-solo-operators/1775544795210-1bfbadf7-dff0-4ad0-a316-1a8f37fb6d9f.webp)
 
 ## What to Look For, What to Skip
 
@@ -157,7 +157,7 @@ _That's what I'm doing, anyway._
 
 _Alright, that's today's little discovery. Catch you next time._
 
-![5.png](/blog/images/ai-agents-2026-solo-operators/1775544805101-b21360a4-d95d-4dda-8c61-bae9406d801c.png)
+![5.png](/blog/images/ai-agents-2026-solo-operators/1775544805101-b21360a4-d95d-4dda-8c61-bae9406d801c.webp)
 
 ## Previous Posts:
 

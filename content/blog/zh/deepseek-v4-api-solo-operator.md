@@ -6,7 +6,7 @@ date: "2026-04-17"
 author: "Nova"
 category: "Model & Benchmarks"
 tags: ["DeepSeek V4", "API 成本", "单人创业者", "LLM API"]
-cover: "/blog/images/deepseek-v4-api-solo-operator/1776413247809-72ec2a34-7233-43a8-a56d-c9064bb29c82.PNG"
+cover: "/blog/images/deepseek-v4-api-solo-operator/1776413247809-72ec2a34-7233-43a8-a56d-c9064bb29c82.webp"
 locale: "zh"
 draft: false
 ---
@@ -19,7 +19,7 @@ DeepSeek V4 自 2026 年 3 月初以来在开发者圈子里引发了不少动�
 
 话虽如此——下面是我们已知的信息、它在实践中意味着什么，以及成本故事是否真的会改变单人创业者的处境。
 
-![2.PNG](/blog/images/deepseek-v4-api-solo-operator/1776413461448-d1c3274b-41e7-4d31-a4be-9a59ffc43c71.PNG)
+![2.PNG](/blog/images/deepseek-v4-api-solo-operator/1776413461448-d1c3274b-41e7-4d31-a4be-9a59ffc43c71.webp)
 
 ### DeepSeek V4 是什么
 
@@ -39,7 +39,7 @@ DeepSeek V4 是 V3.2 的继任者——V3.2 是目前同时驱动 `deepseek-chat
 
 3 月 9 日，中国科技媒体报道称 DeepSeek 官网显示一次模型更新，扩展了上下文处理能力——开发者社区称之为"V4 Lite"。DeepSeek 官方尚未确认规格，但从以往发布的节奏看，这暗示分阶段推出：先上轻量变体，再上完整版。我预计 V4 Lite 用更少的算力就能跑、定价也可能更低——类似 V3.2 产品线当初相对 R1 的定位。
 
-![3.PNG](/blog/images/deepseek-v4-api-solo-operator/1776413632447-73e65788-435c-462e-9a96-cc8e9b3a43af.PNG)
+![3.PNG](/blog/images/deepseek-v4-api-solo-operator/1776413632447-73e65788-435c-462e-9a96-cc8e9b3a43af.webp)
 
 ## DeepSeek V4 API 定价与竞品对比
 
@@ -65,7 +65,7 @@ V4 的价格区间反映的是多家分析机构给出的上下限预测。官�
 
 模型权重会放在 Hugging Face 和 GitHub 上。API 端点在 [api.deepseek.com](<http://api.deepseek.com>)。两个都值得收藏。
 
-![4.png](/blog/images/deepseek-v4-api-solo-operator/1776413656912-e0bed04f-03ea-492e-af8a-df448e2a6106.png)
+![4.png](/blog/images/deepseek-v4-api-solo-operator/1776413656912-e0bed04f-03ea-492e-af8a-df448e2a6106.webp)
 
 ## 更便宜的推理会改变单人创业者的工作方式吗
 
@@ -105,7 +105,7 @@ DeepSeek 宣称的 SWE-bench 分数只来自发布前的内部基准，独立评
 
 我工作流里最耗时的任务——为语气润色、在含糊简报上做判断、决定删什么——不会因为 token 更便宜而变快或变便宜。决定速度的瓶颈是人的注意力，不是算力。
 
-![5.png](/blog/images/deepseek-v4-api-solo-operator/1776413676104-f7443b82-7ffb-422d-8aed-5a639d75c7e1.png)
+![5.png](/blog/images/deepseek-v4-api-solo-operator/1776413676104-f7443b82-7ffb-422d-8aed-5a639d75c7e1.webp)
 
 ## DeepSeek V4 API 对单人创业者值吗
 
@@ -131,7 +131,7 @@ DeepSeek 宣称的 SWE-bench 分数只来自发布前的内部基准，独立评
 
 另外：如果你有数据隐私要求，自托管是唯一真正的选项。就现阶段而言，xAI 的 [API 文档](<https://x.ai/api>)和 OpenAI 的平台在企业数据处理上都更成熟。
 
-![6.png](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.png)
+![6.png](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
 
 总之，情况就是这样。成本故事是真的，架构改进也确实有趣——但 V4 还没上线，而且更便宜的 token 不会自动带来更好的工作流。未来几周值得盯紧。
 

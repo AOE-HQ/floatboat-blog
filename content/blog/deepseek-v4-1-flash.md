@@ -6,7 +6,7 @@ date: "2026-09-09"
 author: "Judy"
 category: "Model & Benchmarks"
 tags: ["Deepseek", "V4.1 Flash", "LLM"]
-cover: "/blog/images/deepseek-v4-1-flash/deepseek-v4-1-flash.png"
+cover: "/blog/images/deepseek-v4-1-flash/deepseek-v4-1-flash.webp"
 locale: "en"
 draft: false
 ---

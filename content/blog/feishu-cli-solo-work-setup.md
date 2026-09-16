@@ -6,7 +6,7 @@ date: "2026-03-31"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/feishu-cli-solo-work-setup/1774921782461-de6832c6-5370-4750-ba3b-cc22ebc5f705.png"
+cover: "/blog/images/feishu-cli-solo-work-setup/1774921782461-de6832c6-5370-4750-ba3b-cc22ebc5f705.webp"
 locale: "en"
 draft: false
 ---
@@ -29,7 +29,7 @@ But "deep integration" means something different. It means **you're using CLI co
 
 And infrastructure, for a solo operator, means _you_ are the ops team.
 
-![2.png](/blog/images/feishu-cli-solo-work-setup/1774921802271-e628df3a-3d62-45a5-b7ec-86da412a2f08.png)
+![2.png](/blog/images/feishu-cli-solo-work-setup/1774921802271-e628df3a-3d62-45a5-b7ec-86da412a2f08.webp)
 
 ### The difference between read access and action execution
 
@@ -47,7 +47,7 @@ The CLI makes this possible. You can search messages by keyword, filter by chat 
 
 The refresh window matters here. User access tokens have a validity period and need to be renewed periodically. If you set up a workflow and then don't touch it for a few weeks, you may come back to find everything quietly failing because the token expired and nothing told you. According to developer notes on related tools, **user_access_token typically has a validity of around 2 hours and requires a refresh mechanism** to stay active in automated contexts.
 
-![3.png](/blog/images/feishu-cli-solo-work-setup/1774921818806-6cba93e2-cf70-472e-9b18-7de68f0ebea2.png)
+![3.png](/blog/images/feishu-cli-solo-work-setup/1774921818806-6cba93e2-cf70-472e-9b18-7de68f0ebea2.webp)
 
 ### Triggering updates from outside Feishu
 
@@ -63,7 +63,7 @@ The most ambitious version of this: Feishu as a data hub, where information flow
 
 But in practice, every new connection you add is another thing that can silently stop working. Each integration has its own auth model, its own rate limits, its own API versioning schedule. **The complexity doesn't add linearly — it compounds.** Two integrations might be manageable; five becomes a part-time maintenance job.
 
-![4.png](/blog/images/feishu-cli-solo-work-setup/1774921833188-b6668ae3-34ac-4d8a-953f-84b02c18633d.png)
+![4.png](/blog/images/feishu-cli-solo-work-setup/1774921833188-b6668ae3-34ac-4d8a-953f-84b02c18633d.webp)
 
 ## What the Setup Process Really Involves
 
@@ -87,7 +87,7 @@ I've thought through the common failure points, and they cluster around a few pr
 
 **Environment drift.** The CLI command that worked in your local terminal doesn't behave the same when called from a cron job on a VPS, because the environment variables aren't set the same way, or the Node version differs, or the working directory is wrong. These are solvable problems, but they take debugging time you didn't budget for.
 
-![5.png](/blog/images/feishu-cli-solo-work-setup/1774921847300-51a01051-1c6d-403d-a997-f4817c97c89a.png)
+![5.png](/blog/images/feishu-cli-solo-work-setup/1774921847300-51a01051-1c6d-403d-a997-f4817c97c89a.webp)
 
 ### What "it's working" actually means to maintain
 
@@ -123,7 +123,7 @@ The underlying principle from solid developer documentation on error handling: b
 
 For teams or developers who want a more robust framework for thinking about automation reliability, resources like [the 12-Factor App methodology](<https://12factor.net/>) offer solid grounding in building maintainable, observable processes — much of it applies to solo automation setups too.
 
-![6.png](/blog/images/feishu-cli-solo-work-setup/1774921860094-bb72c8f2-80c9-4d69-9674-cbe6308e9ac9.png)
+![6.png](/blog/images/feishu-cli-solo-work-setup/1774921860094-bb72c8f2-80c9-4d69-9674-cbe6308e9ac9.webp)
 
 ## When the Effort Pays Off
 
@@ -135,7 +135,7 @@ Let me be honest about when this actually makes sense to invest in.
 
 **It pays off when you actually enjoy the meta-work.** Some people find building and maintaining these kinds of setups genuinely satisfying — it's a small, tangible piece of personal infrastructure. If that's you, the effort feels lighter. If it feels like distraction from the actual work, it probably is.
 
-![7.png](/blog/images/feishu-cli-solo-work-setup/1774921890213-157eddcc-3819-4100-a884-5cedc3d2c970.png)
+![7.png](/blog/images/feishu-cli-solo-work-setup/1774921890213-157eddcc-3819-4100-a884-5cedc3d2c970.webp)
 
 ## What to Consider Before You Commit
 
@@ -151,7 +151,7 @@ A few questions worth sitting with before going deep on Feishu CLI integration a
 
 The bottom line is that Feishu CLI is genuinely capable for solo operator use cases. But "capable" and "maintenance-free" are not the same thing. The integrations that hold up over time are the ones built with clear eyes about what ongoing ownership actually looks like — tokens, API changes, error handling, and all.
 
-![8.png](/blog/images/feishu-cli-solo-work-setup/1774921937517-a7d45c45-2b64-45fa-92d0-426eab1032a6.png)
+![8.png](/blog/images/feishu-cli-solo-work-setup/1774921937517-a7d45c45-2b64-45fa-92d0-426eab1032a6.webp)
 
 _Anyway, that's what I've been figuring out. Still experimenting, still learning — but hopefully this gives you a clearer picture of what you're actually building before you're in the middle of it._
 

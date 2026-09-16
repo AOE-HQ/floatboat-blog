@@ -6,7 +6,7 @@ date: "2026-08-20"
 author: "Remy"
 category: "Product Updates"
 tags: ["TikTok Shop", "FastMoss", "AI Agent", "浏览器自动化", "FloatSchedule"]
-cover: "/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.png"
+cover: "/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.webp"
 locale: "zh"
 draft: false
 ---
@@ -62,7 +62,7 @@ Floatboat 恢复项目、在内置浏览器里打开已授权的 FastMoss 会话
 
 浏览器不是工作流旁边的一扇观察窗。它是 Floatboat 干活的其中一双手。
 
-![Floatboat 打开的 FastMoss 美国美容个护第 31 周实时榜单](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.png)
+![Floatboat 打开的 FastMoss 美国美容个护第 31 周实时榜单](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.webp)
 
 ## 一个 77% 的增长信号出现了。Floatboat 继续往下挖。
 
@@ -82,7 +82,7 @@ FastMoss 估算：
 
 Floatboat 打开商品详情页并读取实时概览。该商品累计销量已达约**152.5K**、累计 GMV **315.3 万美元**、关联**4,896 位带货创作者**和**14.4K 条相关视频**。规模是真的。但规模背后的运营模式更重要。
 
-![Floatboat 内打开的 DR.DENT 实时商品情报页](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047299448-1376c375-2f9c-4d73-bcd7-fdb0cf534210.png)
+![Floatboat 内打开的 DR.DENT 实时商品情报页](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047299448-1376c375-2f9c-4d73-bcd7-fdb0cf534210.webp)
 
 28 天分布视图显示：
 
@@ -151,7 +151,7 @@ US Beauty Intelligence/
 
 下周一，Floatboat 会知道团队上周一知道的一切：哪个商品在验证中、哪些假设还没解决、哪些指标变化重要、当时给了什么建议、决定该在何时复核。这些文件还能直接喂给会议、邮件、合作伙伴同步、审计和未来的模型，不需要再来一轮复制粘贴。
 
-![一次 FastMoss 信号生成的 Floatboat 项目产物](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047302230-cec8a878-2e54-44cf-945d-27606b061d44.png)
+![一次 FastMoss 信号生成的 Floatboat 项目产物](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047302230-cec8a878-2e54-44cf-945d-27606b061d44.webp)
 
 ## 然后 Floatboat 打开了自己的报告
 
@@ -165,7 +165,7 @@ Floatboat 把管理报告渲染成本地网页，并在同一个内置浏览器�
 
 Agent 能同时看到来源和它产出的东西。它能在两边之间来回，直到两者对得上。
 
-![基于实时 FastMoss 案例生成的 Floatboat 经营简报](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047305243-5e363646-d394-4db1-99e7-4ba791705c29.png)
+![基于实时 FastMoss 案例生成的 Floatboat 经营简报](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047305243-5e363646-d394-4db1-99e7-4ba791705c29.webp)
 
 ## 报告离开工作区，上下文留在原地
 

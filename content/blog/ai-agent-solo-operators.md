@@ -6,7 +6,7 @@ date: "2026-04-15"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/ai-agent-solo-operators/1776232286449-292e644b-5389-4dc2-837f-0e5dc1eb4238.PNG"
+cover: "/blog/images/ai-agent-solo-operators/1776232286449-292e644b-5389-4dc2-837f-0e5dc1eb4238.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ Before getting into tools, it helps to be honest about what the problem actually
 
 These three needs are real. The question is how much infrastructure you want to take on to get them.
 
-![2.PNG](/blog/images/ai-agent-solo-operators/1776232479259-df8216ae-81cf-4d1c-a0b8-028bee804958.PNG)
+![2.PNG](/blog/images/ai-agent-solo-operators/1776232479259-df8216ae-81cf-4d1c-a0b8-028bee804958.webp)
 
 ## The Two Types of "AI Agent" on the Market Right Now
 
@@ -49,7 +49,7 @@ Floatboat falls into this category — an AI workspace desktop app (Mac/Windows)
 
 I haven't done a deep dive on Floatboat's memory system. Specifically, — if that's your primary criterion, it's worth going through [their site](</>) to understand what "learning your work patterns" actually means under the hood.
 
-![3.PNG](/blog/images/ai-agent-solo-operators/1776232488340-a69fe252-f146-45dc-83d7-82f3422d28e2.PNG)
+![3.PNG](/blog/images/ai-agent-solo-operators/1776232488340-a69fe252-f146-45dc-83d7-82f3422d28e2.webp)
 
 ## When a Self-Hosted Agent Makes Sense for a Solo Operator
 
@@ -73,7 +73,7 @@ Here's where I'd push back on the self-hosted path for most non-technical solo o
 
 The honest version: **for most solo operators, the time cost of self-hosting exceeds the benefits** — at least until you've exhausted what workspace-native tools can do.
 
-![4.png](/blog/images/ai-agent-solo-operators/1776232505231-86e43b32-e05e-49cd-80ae-ad368f7f2177.png)
+![4.png](/blog/images/ai-agent-solo-operators/1776232505231-86e43b32-e05e-49cd-80ae-ad368f7f2177.webp)
 
 ## What to Look For If You Want Persistent AI Without Infrastructure
 
@@ -99,7 +99,7 @@ Here's the clearest way I can frame this.
 
 The question to ask before choosing anything: ​**what specifically breaks down in your current AI ​workflow** ​? If the answer is "I re-explain context every session," that's a memory problem. If it's "I can't run tasks when my computer is off," that's an automation problem. If it's "I spend too much time switching between tools," that's an integration problem. Each has a different solution.
 
-![5.png](/blog/images/ai-agent-solo-operators/1776232516527-e523f9cb-b36e-4b2e-89b1-ec9c36aa0a61.png)
+![5.png](/blog/images/ai-agent-solo-operators/1776232516527-e523f9cb-b36e-4b2e-89b1-ec9c36aa0a61.webp)
 
 That's where I land on this. Not a definitive verdict — more like a clearer frame for thinking about which version of "AI agent" is actually relevant to you.
 

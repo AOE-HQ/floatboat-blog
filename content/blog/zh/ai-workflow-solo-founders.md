@@ -6,7 +6,7 @@ date: "2026-04-10"
 author: "Nova"
 category: "Solo Operators"
 tags: ["AI 工作流", "单人创业者", "AI Agent", "一人公司"]
-cover: "/blog/images/ai-workflow-solo-founders/1775794408355-842bca71-e51d-4c6c-8280-a962f25749d6.PNG"
+cover: "/blog/images/ai-workflow-solo-founders/1775794408355-842bca71-e51d-4c6c-8280-a962f25749d6.webp"
 locale: "zh"
 draft: false
 ---
@@ -33,7 +33,7 @@ draft: false
 
 我以前以为工具越多效率越高。现在不这么认为了。
 
-![22.PNG](/blog/images/ai-workflow-solo-founders/1775794469214-45bbbaf7-1e3c-4c4a-a8e7-feb28560363d.PNG)
+![22.PNG](/blog/images/ai-workflow-solo-founders/1775794469214-45bbbaf7-1e3c-4c4a-a8e7-feb28560363d.webp)
 
 ## 真正的单人创业者 AI 工作流需要做到什么
 
@@ -61,7 +61,7 @@ draft: false
 
 这跟传统自动化不一样。[Make](<https://www.make.com/en>) 或 Zapier 这类工具擅长连接应用、搬运数据，但它们跑在触发器和规则上。单人创业者需要的更接近技能转移——把你的流程教给 AI，而不是只教它 if-then 逻辑。
 
-![33.PNG](/blog/images/ai-workflow-solo-founders/1775794479589-629b4c8b-d003-46fa-8e5b-240dd4c80ded.PNG)
+![33.PNG](/blog/images/ai-workflow-solo-founders/1775794479589-629b4c8b-d003-46fa-8e5b-240dd4c80ded.webp)
 
 ## 自己拼装的陷阱
 
@@ -81,7 +81,7 @@ draft: false
 
 这可能是我看走眼了，但我认为 DIY 路线只适合那些把搭系统当爱好的人。对我们其余人来说，它是伪装成解决方案的税。
 
-![44.png](/blog/images/ai-workflow-solo-founders/1775794490681-2cf7daed-91ba-4f1f-87e0-3b84af44f329.png)
+![44.png](/blog/images/ai-workflow-solo-founders/1775794490681-2cf7daed-91ba-4f1f-87e0-3b84af44f329.webp)
 
 ## 为一个人打造的 AI 工作区，该看什么
 
@@ -111,7 +111,7 @@ AI 能不能访问你的文件、浏览器和项目历史，而不用你每次�
 
 问题不是「AI 能做什么」，而是：**你的工作流在某个周二真实的样子到底是什么？**从这里开始。一旦你清楚自己到底想自动化什么，选对工具就成了水到渠成的事。
 
-![55.png](/blog/images/ai-workflow-solo-founders/1775794500670-3dac7e31-769a-4a81-9e52-22b388728ad4.png)
+![55.png](/blog/images/ai-workflow-solo-founders/1775794500670-3dac7e31-769a-4a81-9e52-22b388728ad4.webp)
 
 ## 权衡：你放弃什么、得到什么
 
@@ -139,7 +139,7 @@ AI 能不能访问你的文件、浏览器和项目历史，而不用你每次�
 
 这个品类里的工具进化得很快。像 [Floatboat](</>) 这样的新玩家走了一条有意思的路——把 AI 工作区做成桌面应用，让文件系统成为主要界面，还配了 Combo Skills 这样的功能，能把一个跑通的流程打包成可复用的自动化过程。我投入的时间还不够多，没法给出定论，但「从你怎么工作、而不是只从你问了什么当中学习」这个概念，是我在密切关注的方向。
 
-![66.png](/blog/images/ai-workflow-solo-founders/1775794509504-85130862-4edc-4f3b-b077-8ae0ab3ec011.png)
+![66.png](/blog/images/ai-workflow-solo-founders/1775794509504-85130862-4edc-4f3b-b077-8ae0ab3ec011.webp)
 
 这就是我目前的状态。从「AI 是个聊天机器人」到「AI 是个工作环境」的转变还在早期，我也还在调自己的配置。但方向是对的——尤其对单打独斗的人来说，你每省下一小时开销，都直接转化为推进业务前进的工作时间。
 

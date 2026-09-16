@@ -6,7 +6,7 @@ date: "2026-04-16"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/openai-4-day-work-week-one-person-company/1776318549733-f138b428-6efb-4187-bab8-100571cdf6df.PNG"
+cover: "/blog/images/openai-4-day-work-week-one-person-company/1776318549733-f138b428-6efb-4187-bab8-100571cdf6df.webp"
 locale: "en"
 draft: false
 ---
@@ -35,7 +35,7 @@ As [Unite.AI](<http://Unite.AI>) summarized the proposal, OpenAI suggests govern
 
 Wait — that framing is actually interesting. Whether you believe it or not, it's forcing a public conversation about a question most companies haven't answered: when AI makes your team twice as productive, where does that efficiency go?
 
-![2.PNG](/blog/images/openai-4-day-work-week-one-person-company/1776318600744-0fe3d381-e682-42b9-ae5a-896cd2162f72.PNG)
+![2.PNG](/blog/images/openai-4-day-work-week-one-person-company/1776318600744-0fe3d381-e682-42b9-ae5a-896cd2162f72.webp)
 
 ## Solo Operators Already Figured This Out
 
@@ -65,7 +65,7 @@ As The[ Next Web reported](<https://thenextweb.com/news/openai-robot-taxes-wealt
 
 This is a structural argument, not just a political one. And the underlying math is real: if enough jobs get automated, the employment-based tax revenue that funds public programs shrinks, regardless of how you feel about the politics.
 
-![3.png](/blog/images/openai-4-day-work-week-one-person-company/1776318609188-793b51ae-ec86-442b-9d92-ed646d17a1ec.png)
+![3.png](/blog/images/openai-4-day-work-week-one-person-company/1776318609188-793b51ae-ec86-442b-9d92-ed646d17a1ec.webp)
 
 ### Where Solo Operators Sit in This Debate
 
@@ -97,9 +97,9 @@ The burnout risk for solo founders specifically is different from what large-sca
 
 For solo operators, that system usually means having clear stopping criteria — knowing what "done" looks like before you start — and not treating AI-freed time as permission to take on more projects.
 
-![4.png](/blog/images/openai-4-day-work-week-one-person-company/1776318618663-89d3436c-4532-4f5b-8570-fb8748c29821.png)
+![4.png](/blog/images/openai-4-day-work-week-one-person-company/1776318618663-89d3436c-4532-4f5b-8570-fb8748c29821.webp)
 
-![5.png](/blog/images/openai-4-day-work-week-one-person-company/1776318627488-fbaa7f4b-123f-43d8-bb6d-169c2ca66d65.png)
+![5.png](/blog/images/openai-4-day-work-week-one-person-company/1776318627488-fbaa7f4b-123f-43d8-bb6d-169c2ca66d65.webp)
 
 The OpenAI four-day work week proposal is interesting as a policy signal — it tells you something about how the company sees AI disruption unfolding. But for someone running a one-person operation, the more useful frame is simpler: **AI gives you capacity. What you do with that capacity is a choice, not an automatic outcome.**
 

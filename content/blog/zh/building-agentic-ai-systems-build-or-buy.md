@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Nova"
 category: "AI Agents"
 tags: ["Agentic AI", "自研还是购买", "单人创业者"]
-cover: "/blog/images/building-agentic-ai-systems-build-or-buy/1779416315684-9a5f20eb-e1a7-42db-ae44-cc0ceaf77299.PNG"
+cover: "/blog/images/building-agentic-ai-systems-build-or-buy/1779416315684-9a5f20eb-e1a7-42db-ae44-cc0ceaf77299.webp"
 locale: "zh"
 draft: false
 ---
@@ -25,7 +25,7 @@ draft: false
 
 Anthropic 在[构建高效 Agent](<https://anthropic.com/research/building-effective-agents>) 的指南里说得很清楚：建议从最简单的方案开始，只在必要时增加复杂度。工作流（Workflow）——工具和 LLM 沿预定路径执行——应该排在完全自主的 Agent 之前。这个建议很扎实。但它同时意味着：当你确实需要升到下一级时，必须认真想清楚——是自研，是购买，还是把搭建这件事外包出去。
 
-![2.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416388917-b1def5dd-72f1-49d4-9163-1f77ea13ac08.PNG)
+![2.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416388917-b1def5dd-72f1-49d4-9163-1f77ea13ac08.webp)
 
 ## 自研 vs 购买 vs 外包：对比表
 
@@ -51,7 +51,7 @@ Anthropic 在[构建高效 Agent](<https://anthropic.com/research/building-effec
 
 **权限。**如果只有你自己用，权限无关紧要——你信得过自己。可一旦有别人用你的系统，你就得决定：这个 Agent 能读客户数据吗？能发邮件吗？能改共享文档吗？据 [LangChain 2026 年《Agent 工程现状》报告](<https://www.langchain.com/state-of-agent-engineering>)，57% 的受访组织已经有 Agent 在生产环境运行，但质量和治理仍是最大的障碍。权限平时很无聊，直到它变成危机。
 
-![3.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416401483-9b7fe0c9-a289-4062-8d25-9f01ae8d87c8.PNG)
+![3.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416401483-9b7fe0c9-a289-4062-8d25-9f01ae8d87c8.webp)
 
 **监控。**你需要看清你的 Agent 在干什么——不只是输出，还有推理过程、工具调用和决策点。LangSmith、Arize 等可观测性工具就是为这个而生的；LangChain 报告还发现，89% 拥有生产级 Agent 的团队都部署了某种形式的可观测性。如果从零自研，至少要把每次工具调用和每个决策分支记录下来。凌晨两点系统第一次出问题时，你会感谢当时的自己。
 
@@ -69,7 +69,7 @@ Anthropic 在[构建高效 Agent](<https://anthropic.com/research/building-effec
 
 我不想丢下一句「看情况」就完事。我实际的想法是：如果这条工作流能带来收入，或每周省下超过五小时，就把关键路径自己做、辅助基础设施买现成的；如果它只是锦上添花的效率工具，就买；如果还不确定，就先买个便宜的，试用一个月，再决定。
 
-![4.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416413657-0e49baa1-0461-401f-a6c1-02de17864c97.png)
+![4.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416413657-0e49baa1-0461-401f-a6c1-02de17864c97.webp)
 
 ## 按工作流成熟度走决策树
 
@@ -85,7 +85,7 @@ Anthropic 在[构建高效 Agent](<https://anthropic.com/research/building-effec
 
 我见得最多的错误：还没真正验证阶段二，就开始用阶段四的思路思考——为一个只试过三次的工作流买企业级平台。别这样。
 
-![5.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416434481-84be521e-d43c-4284-80a2-34091648e591.png)
+![5.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416434481-84be521e-d43c-4284-80a2-34091648e591.webp)
 
 以上就是我在「构建 Agentic AI 系统」该自研还是购买这个问题上的现状。答案并不是放之四海而皆准的——它取决于你的工作流实际走到哪一步、你能承接多少维护、以及价值是否配得上复杂度。
 

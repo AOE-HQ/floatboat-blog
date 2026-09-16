@@ -6,7 +6,7 @@ date: "2026-04-14"
 author: "Nova"
 category: "Solo Operators"
 tags: ["单人创业者", "AI 工作流", "上下文记忆", "一人公司"]
-cover: "/blog/images/ai-workflow-for-solo-founders/1776149030005-3969a82c-18c3-45df-90bc-1b060d4b2aab.PNG"
+cover: "/blog/images/ai-workflow-for-solo-founders/1776149030005-3969a82c-18c3-45df-90bc-1b060d4b2aab.webp"
 locale: "zh"
 draft: false
 ---
@@ -31,7 +31,7 @@ _为什么我还在做这件事？_
 
 [Tribe AI 对上下文感知记忆系统的 2025 年分析](<https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025>)指出：用无状态 AI 工作的体验，就像访问一个每翻一页就会被登出的网站——需要不断重建上下文，既费时间也耗资源，逼着用户手动跟踪变更、保存历史、精心构造提示词，才能勉强维持连续性。这就是为了"有效使用 AI"而要交的"基建税"。而当公司里只有你一个人时，这笔税会滚得特别快。
 
-![2.PNG](/blog/images/ai-workflow-for-solo-founders/1776149050096-38c50427-ed33-4b98-a777-98d7b74d4f12.PNG)
+![2.PNG](/blog/images/ai-workflow-for-solo-founders/1776149050096-38c50427-ed33-4b98-a777-98d7b74d4f12.webp)
 
 ### AI 能帮你干活，却不贴合你的工作方式
 
@@ -63,7 +63,7 @@ _为什么我还在做这件事？_
 
 执行记忆意味着 AI 已经把**我的**工作方式内化——不是从一堆"泛泛写手"的训练数据里学来的，而是通过观察我本人：我做过的决定、打过的修改、认可的迭代。AWS 的工程博客在讲[用持久记忆构建上下文感知 Agent](<https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/>)时清楚地描述了这一区别：短期记忆捕捉的是当前 session 里发生的事，长期智能记忆则跨 session 储存持久的洞察与偏好——让 AI Agent 能保留上下文、从交互中学习、随时间提供真正个性化的体验。如今大多数消费级 AI 工具，恰恰卡在这两种记忆之间的空当里。
 
-![3.png](/blog/images/ai-workflow-for-solo-founders/1776149060189-d1e45341-3bae-4755-8a18-892f19ad4cf0.png)
+![3.png](/blog/images/ai-workflow-for-solo-founders/1776149060189-d1e45341-3bae-4755-8a18-892f19ad4cf0.webp)
 
 ## 单人创业者真正需要什么样的 AI 配置
 
@@ -95,7 +95,7 @@ _为什么我还在做这件事？_
 
 **第三：我能不能搭出可复用的工作流？**如果每次使用都是一次性的，效率天花板就很低。我愿意把某件事一次性搭好，让这笔投入随时间复利。
 
-![4.png](/blog/images/ai-workflow-for-solo-founders/1776149070688-d42cfea8-d612-48e9-b1d5-0d1d55c27012.png)
+![4.png](/blog/images/ai-workflow-for-solo-founders/1776149070688-d42cfea8-d612-48e9-b1d5-0d1d55c27012.webp)
 
 ## AI 助手和 AI 工作区不是一回事
 
@@ -109,7 +109,7 @@ AI 工作区是另一种东西。它是一个"你的工作**和 AI 共存**"的�
 
 在我的思考里，[Floatboat AI](</>) 这类工具就落在这个位置——它们倾向工作区模型而非助手模型，核心理念是让 AI 随时间适应你特定的工作模式，而不是每个 session 都从零开始。我用它的时间还不够长，无法断言它是否真的兑现了这一点，但至少这个框架跟我想解决的问题对得上。
 
-![5.png](/blog/images/ai-workflow-for-solo-founders/1776149080224-27f4c9cb-b310-4be4-bd6b-012eda5cf7ab.png)
+![5.png](/blog/images/ai-workflow-for-solo-founders/1776149080224-27f4c9cb-b310-4be4-bd6b-012eda5cf7ab.webp)
 
 ## 务实的下一步：先画出你最常重复的工作
 

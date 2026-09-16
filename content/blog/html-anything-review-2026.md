@@ -6,7 +6,7 @@ date: "2026-05-20"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/html-anything-review-2026/1779257373659-eede2b32-f48f-43ff-99b0-6b2e5d197b1b.PNG"
+cover: "/blog/images/html-anything-review-2026/1779257373659-eede2b32-f48f-43ff-99b0-6b2e5d197b1b.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ Here's how I think about what it's trying to prove: the "agentic HTML editor" co
 
 Okay, this is kind of interesting. Let me dig into how it actually works.
 
-![2.PNG](/blog/images/html-anything-review-2026/1779257398214-9c46c2c6-4145-4be9-a479-0ab97da685ff.PNG)
+![2.PNG](/blog/images/html-anything-review-2026/1779257398214-9c46c2c6-4145-4be9-a479-0ab97da685ff.webp)
 
 ## How It Turns the HTML Debate Into a Tool
 
@@ -43,7 +43,7 @@ Preview happens in a sandboxed iframe with SSE streaming — you see the output 
 
 I haven't tested every export path myself. I can speak to what the documentation shows and what the repo structure confirms. The template library is genuinely extensive — I clicked through a good chunk of the skills and they're real, not placeholder files.
 
-![3.PNG](/blog/images/html-anything-review-2026/1779257413581-d6224eaf-7338-4f72-acb9-884c7a933e98.PNG)
+![3.PNG](/blog/images/html-anything-review-2026/1779257413581-d6224eaf-7338-4f72-acb9-884c7a933e98.webp)
 
 ## What Works Well for Solo Operators
 
@@ -59,7 +59,7 @@ If you're running a one-person operation and you already have Claude Code or ano
 
 Oh, and the Hyperframes feature — which converts HTML to MP4 via [Remotion's rendering framework](<https://www.remotion.dev/docs/>) — is worth knowing about. It's an extra rendering pipeline, and I haven't tried it, but the concept of turning a styled HTML artifact into a video clip without leaving the workflow is the kind of thing that makes you go: wait, it does that too?
 
-![4.png](/blog/images/html-anything-review-2026/1779257425395-df0bf7d0-87d1-4f0b-9435-38cfe7894835.png)
+![4.png](/blog/images/html-anything-review-2026/1779257425395-df0bf7d0-87d1-4f0b-9435-38cfe7894835.webp)
 
 ## Where Html-Anything May Be Too Technical
 
@@ -87,7 +87,7 @@ If you're not a CLI person — if your workflow lives in [Claude's Artifacts pan
 
 If the answer isn't obvious yet, wait. The project is moving fast, and what's available in three months may look different. Bookmark the [repo](<https://github.com/nexu-io/html-anything>), check back when you're ready.
 
-![5.png](/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.png)
+![5.png](/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.webp)
 
 That's my honest take. The tool is early, the concept is solid, and the question is whether it fits into your workflow — not whether the idea behind it matters. It does. Back to building things.
 

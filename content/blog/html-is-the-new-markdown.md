@@ -6,7 +6,7 @@ date: "2026-05-20"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/html-is-the-new-markdown/1779256712079-199ac290-7f16-4930-935c-b32be4a734cc.PNG"
+cover: "/blog/images/html-is-the-new-markdown/1779256712079-199ac290-7f16-4930-935c-b32be4a734cc.webp"
 locale: "en"
 draft: false
 ---
@@ -19,7 +19,7 @@ Five words on X: **"HTML** ​​**​ is the new ​markdown** ​."Coming from
 
 I spent the next few days poking at this. Here's what I think is going on — and what it means if you're someone who works mostly alone or in a small team.
 
-![2.PNG](/blog/images/html-is-the-new-markdown/1779256961857-78b2726d-6fb5-44ca-92fe-3339ba9a712a.PNG)
+![2.PNG](/blog/images/html-is-the-new-markdown/1779256961857-78b2726d-6fb5-44ca-92fe-3339ba9a712a.webp)
 
 ## What Started the HTML Is the New Markdown Debate
 
@@ -45,7 +45,7 @@ That's not a small difference when you're a solo operator trying to hold an enti
 
 The [MDN Web Docs reference for HTML](<https://developer.mozilla.org/en-US/docs/Web/HTML>) has always been clear about this — HTML was designed to structure documents for human consumption. Markdown was designed to make writing for the web easier. Those are related goals, but they're not the same goal. And when your AI agent is producing work artifacts that need to be reviewed, shared, or acted on, the "for human consumption" part starts to matter a lot more.
 
-![3.PNG](/blog/images/html-is-the-new-markdown/1779256973035-39e4af2c-0ba0-4f0a-a212-50dc6664d3a1.PNG)
+![3.PNG](/blog/images/html-is-the-new-markdown/1779256973035-39e4af2c-0ba0-4f0a-a212-50dc6664d3a1.webp)
 
 ## Why Markdown Still Matters
 
@@ -63,7 +63,7 @@ I checked Anthropic's own [Claude Code documentation](<https://docs.anthropic.co
 
 Good tool. Wrong use case — that's a real thing. Markdown isn't going away. It's just not the only answer anymore.
 
-![4.png](/blog/images/html-is-the-new-markdown/1779256991459-69f12edf-2595-47cd-a828-9fa43b9d1fb6.png)
+![4.png](/blog/images/html-is-the-new-markdown/1779256991459-69f12edf-2595-47cd-a828-9fa43b9d1fb6.webp)
 
 ## What This Means for Solo Operators
 
@@ -79,7 +79,7 @@ The question isn't which format is more powerful. It's which fits into your day.
 
 Platforms are already moving in this direction. Claude's [Artifacts feature](<https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them>) lets you generate and render HTML directly in the chat interface. OpenAI's [Canvas workspace](<https://openai.com/index/introducing-canvas/>) opened up side-by-side editing. Tools like `html-anything` convert agent output into standalone HTML artifacts. The infrastructure for richer AI output is showing up whether you specifically asked for it or not.
 
-![5.png](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.png)
+![5.png](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
 
 ## Practical Rule — Draft in Markdown, Deliver in HTML When Useful
 
@@ -109,7 +109,7 @@ Anyway, that's where I'm at with this. Still experimenting, still adjusting. But
 
 • [Thinking about keeping work artifacts inside one environment? Read: Stop Context Switching: Why Workspace Agents Matter](</blog/stop-context-switching-workspace-agent>)
 
-![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.png)
+![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.webp)
 
 ## FAQ
 

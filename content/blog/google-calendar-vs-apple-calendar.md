@@ -6,7 +6,7 @@ date: "2026-05-27"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/google-calendar-vs-apple-calendar/1779853771871-58a4101c-8cbd-4c2f-b80a-94cc7f25abfa.PNG"
+cover: "/blog/images/google-calendar-vs-apple-calendar/1779853771871-58a4101c-8cbd-4c2f-b80a-94cc7f25abfa.webp"
 locale: "en"
 draft: false
 ---
@@ -25,7 +25,7 @@ If you're deep in the Apple ecosystem — MacBook, iPhone, iPad, Apple Watch —
 
 But here's the thing most comparison articles skip: for a lot of us, ​**the answer is both** ​. I use Google Calendar for anything work-related and Apple Calendar picks it up on my devices automatically because I added my Google account in iOS settings. That's not a workaround — that's how most people I know actually operate.
 
-![2.PNG](/blog/images/google-calendar-vs-apple-calendar/1779853840618-cf87aa2a-8a49-48f7-9dd5-06d6ae5b643d.PNG)
+![2.PNG](/blog/images/google-calendar-vs-apple-calendar/1779853840618-cf87aa2a-8a49-48f7-9dd5-06d6ae5b643d.webp)
 
 ## Ecosystem Fit: Google Workspace vs Apple Devices
 
@@ -51,7 +51,7 @@ Apple doesn't have a built-in task system inside Calendar. It pairs with Apple R
 
 I'm not going to say "it depends" and leave it there. If you're a solo operator juggling client deadlines, content schedules, and follow-ups — having tasks visible on the same screen as your calendar is a real difference, not a feature-list bullet point.
 
-![3.PNG](/blog/images/google-calendar-vs-apple-calendar/1779853851999-c40b889f-c2d0-4cf5-ab02-8f95dbb573ab.PNG)
+![3.PNG](/blog/images/google-calendar-vs-apple-calendar/1779853851999-c40b889f-c2d0-4cf5-ab02-8f95dbb573ab.webp)
 
 ## Sync and Cross-Platform Trade-Offs
 
@@ -73,7 +73,7 @@ Both calendars are excellent at one thing: telling you what's next. Color-coded 
 
 I changed my mind about something. I used to think a well-organized calendar was the backbone of productivity. Fill in every block, color-code everything, set reminders for everything. And yet — at the end of a packed week, I'd look back and realize the calendar was full but the actual work hadn't moved. The meetings happened. The reminders fired. But the follow-ups, the prep, the execution? Still on me, every single time.
 
-![4.png](/blog/images/google-calendar-vs-apple-calendar/1779853864767-da755d30-5785-4387-a88a-869acf96f226.png)
+![4.png](/blog/images/google-calendar-vs-apple-calendar/1779853864767-da755d30-5785-4387-a88a-869acf96f226.webp)
 
 **A calendar tells you when. It doesn't do the work.**
 
@@ -85,7 +85,7 @@ If you find yourself in that gap — calendar packed, work still waiting for you
 
 That's actually what got me looking into [Floatboat](</>). It's not replacing Google Calendar or Apple Calendar — it sits after them. Your calendar holds the promises (meetings, deadlines, follow-ups), and Floatboat uses agents to move those promises forward: prepping meeting briefs before you ask, generating follow-up drafts from context, running recurring work loops without you rebuilding the same flow every Monday. I'm still early with it, but the concept — not another reminder, but something that actually does the next step — is the most interesting shift I've explored this year.
 
-![5.png](/blog/images/google-calendar-vs-apple-calendar/1779853874835-7180bfeb-d5e2-4523-a9c2-6ba4f9b1c035.png)
+![5.png](/blog/images/google-calendar-vs-apple-calendar/1779853874835-7180bfeb-d5e2-4523-a9c2-6ba4f9b1c035.webp)
 
 That's my honest take. The "which is better" framing is a bit misleading — what actually matters is which one fits the way you work. And if you've already figured that part out but your weeks still feel like you're manually chasing every task your calendar surfaces — maybe the next question isn't about which calendar to use. It's about what happens after the reminder fires. That's where Floatboat comes in, and where I've been spending my time lately.
 

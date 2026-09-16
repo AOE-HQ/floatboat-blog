@@ -6,7 +6,7 @@ date: "2026-07-15"
 author: "Jade"
 category: "Calendar AI"
 tags: ["Label"]
-cover: "/blog/images/world-cup-2026-bracketology/1783684368238-f41ce444-987a-46be-ab6c-197928df36eb.png"
+cover: "/blog/images/world-cup-2026-bracketology/1783684368238-f41ce444-987a-46be-ab6c-197928df36eb.webp"
 locale: "en"
 draft: false
 ---

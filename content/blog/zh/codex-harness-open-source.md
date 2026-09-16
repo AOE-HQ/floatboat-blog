@@ -6,7 +6,7 @@ date: "2026-08-27"
 author: "Judy"
 category: "AI Agents"
 tags: ["Codex", "OpenAI", "开源", "Agent 运行时"]
-cover: "/blog/images/codex-harness-open-source/1787819330722-4dfae6f5-602b-4fda-88a3-d247cf4d135d.png"
+cover: "/blog/images/codex-harness-open-source/1787819330722-4dfae6f5-602b-4fda-88a3-d247cf4d135d.webp"
 locale: "zh"
 draft: false
 ---

@@ -6,7 +6,7 @@ date: "2026-08-20"
 author: "Remy"
 category: "Product Updates"
 tags: ["TikTok Shop", "FastMoss", "AI Agent", "Browser Automation", "FloatSchedule"]
-cover: "/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.png"
+cover: "/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.webp"
 locale: "en"
 draft: false
 ---
@@ -62,7 +62,7 @@ In the browser, it can:
 
 The browser is not a viewing window on the side of the workflow. It is one of Floatboat's working hands.
 
-![Live FastMoss US Beauty & Personal Care Week 31 ranking opened by Floatboat](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.png)
+![Live FastMoss US Beauty & Personal Care Week 31 ranking opened by Floatboat](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.webp)
 
 ## A 77% growth signal appeared. Floatboat kept digging.
 
@@ -82,7 +82,7 @@ That was enough to trigger an investigation. It was not enough to justify a comm
 
 Floatboat opened the product detail and read the live overview. The product had reached approximately **152.5K cumulative units** , **$3.153M cumulative GMV** , **4,896 commerce creators** , and **14.4K related videos**. The scale was real. The operating model behind that scale mattered more.
 
-![Live DR.DENT product intelligence page opened inside Floatboat](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047299448-1376c375-2f9c-4d73-bcd7-fdb0cf534210.png)
+![Live DR.DENT product intelligence page opened inside Floatboat](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047299448-1376c375-2f9c-4d73-bcd7-fdb0cf534210.webp)
 
 The 28-day distribution view showed:
 
@@ -151,7 +151,7 @@ That directory is more than storage. It is the desk's working memory.
 
 Next Monday, Floatboat knows what the team knew last Monday: which product was under validation, which assumptions remained unresolved, which metric changes matter, what recommendation was made, and when the decision should be revisited. The files can also feed meetings, emails, partner updates, audits, and future models without another copy-and-paste cycle.
 
-![Floatboat project artifacts created from one FastMoss signal](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047302230-cec8a878-2e54-44cf-945d-27606b061d44.png)
+![Floatboat project artifacts created from one FastMoss signal](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047302230-cec8a878-2e54-44cf-945d-27606b061d44.webp)
 
 ## Then Floatboat opened its own report
 
@@ -165,7 +165,7 @@ This closes a loop that ordinary AI writing tools leave open:
 
 The Agent can see both the source and the thing it produced. It can return to either side until they agree.
 
-![A Floatboat-generated management brief based on the live FastMoss case](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047305243-5e363646-d394-4db1-99e7-4ba791705c29.png)
+![A Floatboat-generated management brief based on the live FastMoss case](/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047305243-5e363646-d394-4db1-99e7-4ba791705c29.webp)
 
 ## The report leaves the workspace, while the context stays
 

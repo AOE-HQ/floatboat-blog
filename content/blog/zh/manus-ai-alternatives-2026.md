@@ -6,7 +6,7 @@ date: "2026-08-23"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Manus AI", "AI Agent", "AI 工具对比", "单人创业"]
-cover: "/blog/images/manus-ai-alternatives-2026/1773994793965-fc472904-8a59-4665-b162-c3bb810b336d.png"
+cover: "/blog/images/manus-ai-alternatives-2026/1773994793965-fc472904-8a59-4665-b162-c3bb810b336d.webp"
 locale: "zh"
 draft: false
 ---
@@ -17,7 +17,7 @@ draft: false
 
 从那时起，我开始认真挖外面还有什么。结果发现 2026 年的**Manus 替代品**市场变得相当有意思。有些工具在特定事上比 Manus 做得更好，有些只是更容易用到，还有几个让我意外。以下是我的发现。
 
-![2.png](/blog/images/manus-ai-alternatives-2026/1773994962627-ca2bdc13-d4a3-40a0-99e6-b636de2ee17a.png)
+![2.png](/blog/images/manus-ai-alternatives-2026/1773994962627-ca2bdc13-d4a3-40a0-99e6-b636de2ee17a.webp)
 
 ## 找 Manus AI 替代品时该看什么
 
@@ -91,7 +91,7 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 
 **最适合：**写作者、研究者，以及任何做知识密集型工作、想要一个思考伙伴而不只是任务执行器的人。
 
-![3.png](/blog/images/manus-ai-alternatives-2026/1773994971361-3dc36474-a43d-402e-8db2-98f7b94a8d7e.png)
+![3.png](/blog/images/manus-ai-alternatives-2026/1773994971361-3dc36474-a43d-402e-8db2-98f7b94a8d7e.webp)
 
 ## 最佳免费或低成本替代品
 
@@ -135,7 +135,7 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 
 **最适合：**想要完整工作流控制、又不想被 SaaS 锁死的技术型单人创始人和小团队。
 
-![4.png](/blog/images/manus-ai-alternatives-2026/1773994980166-b60b295c-6f19-4bb2-a216-d4a6b0de6125.png)
+![4.png](/blog/images/manus-ai-alternatives-2026/1773994980166-b60b295c-6f19-4bb2-a216-d4a6b0de6125.webp)
 
 ## 怎么按真实需求选择
 
@@ -155,7 +155,7 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 
 如果你有访问权、有预算，而且工作确实是从头到尾的复杂多步研究+生产工作流，它站得住这个位置。
 
-![5.png](/blog/images/manus-ai-alternatives-2026/1773994990431-3ff2ee3f-931a-4383-af80-cac4d760957a.png)
+![5.png](/blog/images/manus-ai-alternatives-2026/1773994990431-3ff2ee3f-931a-4383-af80-cac4d760957a.webp)
 
 我还在试这几款里的几个——尤其是最近才配置的 Lindy。如果你也在 AI Agent 这片里摸来摸去，希望这篇能帮你省下我当时来回开标签页的功夫。总之，回去干活了。
 

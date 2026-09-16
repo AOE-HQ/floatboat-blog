@@ -6,7 +6,7 @@ date: "2026-05-14"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/how-to-build-ai-agents-for-repeated-work/1778749421105-b0d002b8-d2ad-41ee-8dcc-958f5f064fa9.PNG"
+cover: "/blog/images/how-to-build-ai-agents-for-repeated-work/1778749421105-b0d002b8-d2ad-41ee-8dcc-958f5f064fa9.webp"
 locale: "en"
 draft: false
 ---
@@ -37,7 +37,7 @@ As [OpenAI's workspace agent guide](<https://openai.com/academy/workspace-agents
 
 **Exit condition:** If you can't name one concrete repeated task right now, stop here. Don't build anything yet.
 
-![how2.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749633546-f921baee-44da-494e-91bc-fc66137da119.PNG)
+![how2.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749633546-f921baee-44da-494e-91bc-fc66137da119.webp)
 
 ## Step 2: Map Inputs, Decisions, and Outputs
 
@@ -55,7 +55,7 @@ This mapping exercise does two things. First, it shows you whether the task is a
 
 According to [Anthropic's research on building effective agents](<https://www.anthropic.com/research/building-effective-agents>), ​**the most successful implementations use simple, composable patterns rather than complex frameworks** ​. That simplicity starts at the mapping stage — not at the tooling stage.
 
-![how3.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749645548-530c5952-179c-461f-a06e-06ad50ee1fad.PNG)
+![how3.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749645548-530c5952-179c-461f-a06e-06ad50ee1fad.webp)
 
 ## Step 3: Pick the Lightest Build Path
 
@@ -85,7 +85,7 @@ Build a simple checkpoint: after the agent generates output, it goes to you (or 
 
 [Gartner research cited in enterprise AI guides](<https://onereach.ai/blog/best-practices-for-ai-agent-implementations/>) predicts that over 40% of agentic AI projects will fail or be cancelled by 2027 due to escalating costs, unclear value, or insufficient risk controls. The human review step is your direct defense against becoming that statistic. It's not overhead — it's your feedback loop.
 
-![how4.png](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749654339-123add4e-863e-4c0d-bab5-c8798d1436bd.png)
+![how4.png](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749654339-123add4e-863e-4c0d-bab5-c8798d1436bd.webp)
 
 ## Step 5: Test, Simplify, or Stop Building
 

@@ -6,7 +6,7 @@ date: "2026-04-25"
 author: "Nova"
 category: "Model & Benchmarks"
 tags: ["Label"]
-cover: "/blog/images/gpt-image-2-manga-comic-workflow/1777086983412-02342d60-b663-4941-8b04-105dd5c46331.PNG"
+cover: "/blog/images/gpt-image-2-manga-comic-workflow/1777086983412-02342d60-b663-4941-8b04-105dd5c46331.webp"
 locale: "en"
 draft: false
 ---
@@ -31,7 +31,7 @@ The other shift is conversational editing. You generate a panel, then say "keep 
 
 This sounds small. It is not small. **The old workflow was: regenerate twenty times, hope something close enough comes out.** The new workflow is: generate once, then iterate surgically. I used to spend most of my time fighting the model. Now I spend most of it directing it.
 
-![2.PNG](/blog/images/gpt-image-2-manga-comic-workflow/1777087049547-31339f60-3546-4e28-a7bc-78a2056418de.PNG)
+![2.PNG](/blog/images/gpt-image-2-manga-comic-workflow/1777087049547-31339f60-3546-4e28-a7bc-78a2056418de.webp)
 
 ### 4K resolution, and what it actually means for print
 
@@ -55,7 +55,7 @@ The repetition matters. The character description has to be ​**identical acros
 
 A working four-panel prompt for me looks roughly like: same scene anchor at the top,the same character string repeated four times, then four short lines describing only what changes — angle, expression, what's in frame. Anything I want to read as literal text inside the panel goes in `"double quotes"`. Skip the quotes and you'll get plausible-looking gibberish.
 
-![3.PNG](/blog/images/gpt-image-2-manga-comic-workflow/1777087059972-1d87068a-ebe3-49a8-859d-c99ca611898e.PNG)
+![3.PNG](/blog/images/gpt-image-2-manga-comic-workflow/1777087059972-1d87068a-ebe3-49a8-859d-c99ca611898e.webp)
 
 ### Keeping character design consistent across a chapter
 
@@ -77,7 +77,7 @@ Mixed-script in one bubble — say, English plus a small kanji aside — works m
 
 Once a panel is 80% there, I stop regenerating and start editing. "Keep everything; soften the shadow under her eye" — that kind of instruction. The conversational edit pattern preserves the rest of the panel. It's the single biggest workflow change for me, and the thing that makes solo production actually feasible inside a weekend rather than a month.
 
-![4.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087069884-ced3ff6c-9b82-4846-bab7-fac77d517f59.png)
+![4.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087069884-ced3ff6c-9b82-4846-bab7-fac77d517f59.webp)
 
 ## Where GPT Image 2 still breaks down
 
@@ -107,7 +107,7 @@ When a panel just won't come out right, I have three fallbacks before I give up.
 
 **Three:** for backgrounds that need to repeat, generate the background once at 4K, save it, and composite characters onto it for the rest of the scene. This is old comic-production technique applied to AI output, and it works.
 
-![5.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087079669-c16e77dc-68a5-4b57-ac11-0f476c230d58.png)
+![5.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087079669-c16e77dc-68a5-4b57-ac11-0f476c230d58.webp)
 
 ## Handling asset overflow when you produce 30+ panels a week
 
@@ -125,7 +125,7 @@ Here's how I think about this. **If you're a solo creator working on short-form 
 
 For everyone in between — curious, doing it for fun, want to test whether you can ship a 12-page short — it's worth a weekend. The pricing is reasonable: included in ChatGPT Plus at the standard $20/month tier with usage limits, or [token-based via the OpenAI API model page](<https://developers.openai.com/api/docs/models/gpt-image-2>) for production work. Image output tokens land around $30 per million on the API, which works out to a few cents per panel at the resolutions I use. I checked the docs as of writing this; verify before committing — the API tier opens to all developers in early May.
 
-![6.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087089441-d5498d93-a404-49d7-9839-cd0dc4614114.png)
+![6.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087089441-d5498d93-a404-49d7-9839-cd0dc4614114.webp)
 
 That's where I am with this right now. Bookmark it, try it on a short page, see how it feels in your hands. The model will keep changing — what's true today might not be true in three months. But for one specific thing — solo sequential art with legible CJK text — it just crossed a threshold that's worth knowing about.
 

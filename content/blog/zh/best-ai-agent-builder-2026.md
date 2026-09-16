@@ -6,7 +6,7 @@ date: "2026-05-18"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["AI Agent", "构建工具", "工作流自动化"]
-cover: "/blog/images/best-ai-agent-builder-2026/1779086056071-6acb6d2c-dd7a-40d4-a5e6-7a31627e741e.PNG"
+cover: "/blog/images/best-ai-agent-builder-2026/1779086056071-6acb6d2c-dd7a-40d4-a5e6-7a31627e741e.webp"
 locale: "zh"
 draft: false
 ---
@@ -25,7 +25,7 @@ draft: false
 
 **第三点：维护问题。**后面我会再展开——这是几乎没有任何评测会碰的东西。
 
-![f2.PNG](/blog/images/best-ai-agent-builder-2026/1779086207775-2133c328-f3ae-4e68-bab3-e23bd02781cb.PNG)
+![f2.PNG](/blog/images/best-ai-agent-builder-2026/1779086207775-2133c328-f3ae-4e68-bab3-e23bd02781cb.webp)
 
 ## 按技能门槛划分的构建工具类型
 
@@ -43,7 +43,7 @@ draft: false
 
 我自己没有在 Agent 场景里实测过 Copilot Studio 或 Vertex AI——只看过演示。这点我不装。
 
-![f3.PNG](/blog/images/best-ai-agent-builder-2026/1779086218018-24593c16-18be-4dc3-a236-f6dd644f3d0d.PNG)
+![f3.PNG](/blog/images/best-ai-agent-builder-2026/1779086218018-24593c16-18be-4dc3-a236-f6dd644f3d0d.webp)
 
 ## 用一个真实工作流测试每款工具
 
@@ -57,7 +57,7 @@ draft: false
 
 **在 LangGraph 上**：我有一定 Python 底子，搭建本身没拦路。但如果你不习惯读 API 文档、不习惯调试异步代码，学习曲线是实打实的。反过来说，你对 Agent 状态和条件分支的掌控无可匹敌——如果你的 Agent 需要根据中间结果走不同路径，在这里实现是干净利落，而不是打补丁。
 
-![f4.png](/blog/images/best-ai-agent-builder-2026/1779086227748-1bc8284e-63f7-4d0e-879c-09277e31765d.png)
+![f4.png](/blog/images/best-ai-agent-builder-2026/1779086227748-1bc8284e-63f7-4d0e-879c-09277e31765d.webp)
 
 ## 维护成本：多数评测漏掉的地方
 
@@ -75,7 +75,7 @@ Agent 坏掉的原因通常就那么几条：它调用的 API 改了返回格式
 
 我的经验法则：如果你做不到在头一个月里至少每周检查一次，就选原生日志最好的那个平台。
 
-![f5.png](/blog/images/best-ai-agent-builder-2026/1779086236433-63107e26-53c2-4306-9172-bec42b38126d.png)
+![f5.png](/blog/images/best-ai-agent-builder-2026/1779086236433-63107e26-53c2-4306-9172-bec42b38126d.webp)
 
 ## 按用户类型对照决策
 
@@ -85,7 +85,7 @@ Agent 坏掉的原因通常就那么几条：它调用的 API 改了返回格式
 
 如果数据主权重要——医疗、法律、金融——唯一真正的选项是自托管：n8n Community Edition（免费、执行不限量）、Dify、Flowise，或你自己部署的开发者框架。Vertex AI Agent Builder 和 Copilot Studio 这类纯云平台，要求敏感数据离开你的基础设施。对受监管行业来说，这往往是硬性门槛。
 
-![f6.png](/blog/images/best-ai-agent-builder-2026/1779086246298-e3d061fb-8629-442d-b26b-3c5a9e30f4a5.png)
+![f6.png](/blog/images/best-ai-agent-builder-2026/1779086246298-e3d061fb-8629-442d-b26b-3c5a9e30f4a5.webp)
 
 好，这就是我的真实看法。**无代码 AI Agent 构建工具**这一类确实做到位了——不写一行代码也能做出有意义的自动化，这在今天是真的。但「Agent」和「中间夹了一步 AI 的自动化」之间的差距依然存在；如果用户不看小字条款，计费模型也依然会出其不意地咬人。
 

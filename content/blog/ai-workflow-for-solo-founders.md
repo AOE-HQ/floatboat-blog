@@ -6,7 +6,7 @@ date: "2026-04-14"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/ai-workflow-for-solo-founders/1776149030005-3969a82c-18c3-45df-90bc-1b060d4b2aab.PNG"
+cover: "/blog/images/ai-workflow-for-solo-founders/1776149030005-3969a82c-18c3-45df-90bc-1b060d4b2aab.webp"
 locale: "en"
 draft: false
 ---
@@ -31,7 +31,7 @@ This is what I'd call **the start-from-scratch problem.** And for solo founders 
 
 According to [Tribe AI's 2025 analysis of context-aware memory systems](<https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025>), the experience of working with stateless AI resembles visiting a website that logs you out after every page navigation — continuous context refreshing that wastes time and resources, forcing users to manually track updates, store history, and craft careful prompts just to maintain continuity. That's the infrastructure tax you pay just to use AI effectively. And when you're the only person in your business, that tax compounds fast.
 
-![2.PNG](/blog/images/ai-workflow-for-solo-founders/1776149050096-38c50427-ed33-4b98-a777-98d7b74d4f12.PNG)
+![2.PNG](/blog/images/ai-workflow-for-solo-founders/1776149050096-38c50427-ed33-4b98-a777-98d7b74d4f12.webp)
 
 ### When AI Helps With Tasks But Not With How You Work
 
@@ -63,7 +63,7 @@ When I write content, I have standards. Structural preferences. Things I always 
 
 Execution memory would mean the AI has internalized _my_ way of working. Not learned it from a training dataset of generic writers, but from watching me specifically — the decisions I made, the edits I applied, the iterations I approved. AWS's engineering blog on [building context-aware agents with persistent memory](<https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/>) describes this distinction clearly: short-term memory captures what's happening in a session, while long-term intelligent memory stores persistent insights and preferences across sessions — so AI agents can retain context, learn from interactions, and deliver truly personalized experiences over time. That gap between the two is where most consumer AI tools currently sit.
 
-![3.png](/blog/images/ai-workflow-for-solo-founders/1776149060189-d1e45341-3bae-4755-8a18-892f19ad4cf0.png)
+![3.png](/blog/images/ai-workflow-for-solo-founders/1776149060189-d1e45341-3bae-4755-8a18-892f19ad4cf0.webp)
 
 ## What Solo Founders Actually Need From an AI Setup
 
@@ -95,7 +95,7 @@ Before committing to anything new, I ask myself three questions. They've saved m
 
 **Third: can I build workflows I can reuse?** If every use is a one-off, the efficiency ceiling is low. I want to invest in setting something up well and have that investment compound over time.
 
-![4.png](/blog/images/ai-workflow-for-solo-founders/1776149070688-d42cfea8-d612-48e9-b1d5-0d1d55c27012.png)
+![4.png](/blog/images/ai-workflow-for-solo-founders/1776149070688-d42cfea8-d612-48e9-b1d5-0d1d55c27012.webp)
 
 ## The Difference Between an AI Assistant and an AI Workspace
 
@@ -109,7 +109,7 @@ The workspace framing changes what you're optimizing for. Not "is this output go
 
 This is where tools like [Floatboat AI](</>) sit in my thinking — they're oriented toward the workspace model rather than the assistant model, with the idea that the AI adapts to your specific work patterns over time rather than starting fresh each session. I haven't used it long enough to say definitively whether it delivers on that, but the framing at least matches the problem I've been trying to solve.
 
-![5.png](/blog/images/ai-workflow-for-solo-founders/1776149080224-27f4c9cb-b310-4be4-bd6b-012eda5cf7ab.png)
+![5.png](/blog/images/ai-workflow-for-solo-founders/1776149080224-27f4c9cb-b310-4be4-bd6b-012eda5cf7ab.webp)
 
 ## Practical Next Step: Map Your Most Repeated Work First
 

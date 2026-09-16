@@ -6,7 +6,7 @@ date: "2026-05-19"
 author: "Nova"
 category: "AI Agents"
 tags: ["ChatGPT", "Custom GPT", "AI Agent", "无代码"]
-cover: "/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182678556-ccbcfcb2-5c42-46b8-a82e-7d13e9ec7fa7.png"
+cover: "/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182678556-ccbcfcb2-5c42-46b8-a82e-7d13e9ec7fa7.webp"
 locale: "zh"
 draft: false
 ---
@@ -27,7 +27,7 @@ draft: false
 
 Custom GPT 的甜区是**可重复、定义清晰的任务**——那种你本来会在空白聊天框里反复粘贴同一段指令的活。如果你的任务符合这个描述，继续往下读。
 
-![h2.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182686832-25e4900e-7dac-44b3-ad0e-7e887b384af6.png)
+![h2.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182686832-25e4900e-7dac-44b3-ad0e-7e887b384af6.webp)
 
 ## 第 1 步：把一个任务变成可重复的工作流
 
@@ -55,7 +55,7 @@ Custom GPT 的甜区是**可重复、定义清晰的任务**——那种你本�
 
 哦，还有个容易漏掉的细节。截至 2026 年初，OpenAI 已[退役了若干旧模型](<https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes>)，包括 GPT-4o 和多种 GPT-5.1 变体。如果你今天新建 GPT，你会落在 GPT-5.2 或更新上。值得查一下——不同代模型之间的表现是有差别的。
 
-![h3.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182695411-06adc34b-a391-4bb3-8c16-ec27fe74e9e3.png)
+![h3.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182695411-06adc34b-a391-4bb3-8c16-ec27fe74e9e3.webp)
 
 ## 第 3 步：划定权限与复核点
 
@@ -85,7 +85,7 @@ Custom GPT 的甜区是**可重复、定义清晰的任务**——那种你本�
 
 我光靠测试，就把内容调研 GPT 的指令改写过两遍。那条循环——提示、检查、修改、再来——才是**构建 AI Agent**的真正工作。构建器只是界面。
 
-![h4.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182704348-40232f7e-f1b8-45ac-9596-f19cd79d05cf.png)
+![h4.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182704348-40232f7e-f1b8-45ac-9596-f19cd79d05cf.webp)
 
 ## 什么时候该跨出 ChatGPT
 
@@ -97,7 +97,7 @@ Custom GPT 也不会跨 session 保持记忆。每次对话都从零开始。如
 
 我用的判断规则是：如果我绕开 GPT 局限所花的时间，比它帮我省下的还多——那就是换下一个工具的时候了。
 
-![h5.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182712841-9be02d1a-d970-494d-8b6e-254c5c7c2b8f.png)
+![h5.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182712841-9be02d1a-d970-494d-8b6e-254c5c7c2b8f.webp)
 
 这就是我对"怎么用 ChatGPT 构建 AI Agent"的诚实看法。它重点不在构建器，而在于把任务想清楚、写好指令、拿真实的边角案例去测试。这套工具确实平易近人——你不需要会写代码，只需要想清楚自己在委托什么。
 

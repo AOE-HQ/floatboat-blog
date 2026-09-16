@@ -6,7 +6,7 @@ date: "2026-04-15"
 author: "Nova"
 category: "Solo Operators"
 tags: ["AI Agent", "单人创业者", "一人公司", "工作流自动化"]
-cover: "/blog/images/ai-agent-solo-operators/1776232286449-292e644b-5389-4dc2-837f-0e5dc1eb4238.PNG"
+cover: "/blog/images/ai-agent-solo-operators/1776232286449-292e644b-5389-4dc2-837f-0e5dc1eb4238.webp"
 locale: "zh"
 draft: false
 ---
@@ -27,7 +27,7 @@ draft: false
 
 这三个需求都是真实的。问题在于，为了得到它们，你愿意扛起多少基础设施。
 
-![2.PNG](/blog/images/ai-agent-solo-operators/1776232479259-df8216ae-81cf-4d1c-a0b8-028bee804958.PNG)
+![2.PNG](/blog/images/ai-agent-solo-operators/1776232479259-df8216ae-81cf-4d1c-a0b8-028bee804958.webp)
 
 ## 当前市场上"AI Agent"的两类
 
@@ -49,7 +49,7 @@ Floatboat 属于这一类——一款 AI 工作区桌面应用（Mac/Windows）�
 
 我还没有深入研究过 Floatboat 的记忆系统。具体来说——如果那是你的首要判断标准，值得去[他们的官网](</>)看看，"学习你的工作模式"在底层到底意味着什么。
 
-![3.PNG](/blog/images/ai-agent-solo-operators/1776232488340-a69fe252-f146-45dc-83d7-82f3422d28e2.PNG)
+![3.PNG](/blog/images/ai-agent-solo-operators/1776232488340-a69fe252-f146-45dc-83d7-82f3422d28e2.webp)
 
 ## 自托管 Agent 什么时候适合单人创业者
 
@@ -73,7 +73,7 @@ Floatboat 属于这一类——一款 AI 工作区桌面应用（Mac/Windows）�
 
 诚实的版本是：**对大多数单人创业者来说，自托管的成本超过了收益**——至少在把工作区原生工具的能力榨干之前是这样。
 
-![4.png](/blog/images/ai-agent-solo-operators/1776232505231-86e43b32-e05e-49cd-80ae-ad368f7f2177.png)
+![4.png](/blog/images/ai-agent-solo-operators/1776232505231-86e43b32-e05e-49cd-80ae-ad368f7f2177.webp)
 
 ## 想要免基础设施的持久 AI，该看什么
 
@@ -95,7 +95,7 @@ Floatboat 属于这一类——一款 AI 工作区桌面应用（Mac/Windows）�
 
 在选任何东西之前，先问自己：**你现有的 AI 工作流里，具体是哪一环出了问题？**如果答案是"我每个会话都在重新解释上下文"，那是记忆问题。如果是"电脑关机我就没法跑任务"，那是自动化问题。如果是"我花太多时间在工具之间切来切去"，那是集成问题。每个问题都有不同的解法。
 
-![5.png](/blog/images/ai-agent-solo-operators/1776232516527-e523f9cb-b36e-4b2e-89b1-ec9c36aa0a61.png)
+![5.png](/blog/images/ai-agent-solo-operators/1776232516527-e523f9cb-b36e-4b2e-89b1-ec9c36aa0a61.webp)
 
 ## 上一篇系列文章：
 

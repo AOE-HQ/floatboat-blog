@@ -6,7 +6,7 @@ date: "2026-06-07"
 author: "Nova"
 category: "Calendar AI"
 tags: ["Label"]
-cover: "/blog/images/ai-follow-up-email-opus-4-8/1780822513606-bbdb8519-6256-4301-a0b9-6fdd60005896.png"
+cover: "/blog/images/ai-follow-up-email-opus-4-8/1780822513606-bbdb8519-6256-4301-a0b9-6fdd60005896.webp"
 locale: "en"
 draft: false
 ---
@@ -23,7 +23,7 @@ The problem is that writing a decent follow-up takes ten to fifteen minutes per 
 
 What I want from an AI follow-up email isn't a template fill. I want something that can read the actual context of a meeting — who said what, which decisions were made, what got deferred — and turn that into an email I'd only need to scan before hitting send.
 
-![2.png](/blog/images/ai-follow-up-email-opus-4-8/1780822544878-55cd4c01-1e04-4002-a642-aab6e0ba99a1.png)
+![2.png](/blog/images/ai-follow-up-email-opus-4-8/1780822544878-55cd4c01-1e04-4002-a642-aab6e0ba99a1.webp)
 
 ## Why Meeting Follow-Up Fails in Normal Calendars
 
@@ -57,7 +57,7 @@ The most useful pattern I've landed on breaks the follow-up into layers:
 
 The whole point is that the follow-up doesn't live in your memory anymore. It lives in a system. And the system drafts faster than you do.
 
-![3.png](/blog/images/ai-follow-up-email-opus-4-8/1780822556549-28ae8788-b551-4230-adc8-6f49efc43c9a.png)
+![3.png](/blog/images/ai-follow-up-email-opus-4-8/1780822556549-28ae8788-b551-4230-adc8-6f49efc43c9a.webp)
 
 ## What Claude Opus 4.8 Signals About Reliable Follow-Up Work
 
@@ -85,7 +85,7 @@ Here's what I always check:
 
 Even in more advanced setups — where a **computer-use agent** could theoretically open your email client, paste the draft, and send it — human review stays essential. As [Anthropic's computer use documentation](<https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool>) notes, this capability is still maturing. I'd treat full automation of meeting follow-ups as a useful prototype, not a finished workflow. At least for now.
 
-![4.png](/blog/images/ai-follow-up-email-opus-4-8/1780822565084-55744c97-4a59-4148-b256-18662e0395d1.png)
+![4.png](/blog/images/ai-follow-up-email-opus-4-8/1780822565084-55744c97-4a59-4148-b256-18662e0395d1.webp)
 
 ## How to Make Follow-Up Workflows Reusable
 
@@ -99,7 +99,7 @@ For people running recurring meetings — weekly client check-ins, team syncs, p
 
 I'll probably keep using this. It's one of those small things that actually matters.
 
-![5.png](/blog/images/ai-follow-up-email-opus-4-8/1780822575208-d13c1eb4-a0f1-42ab-8218-fa077d64b6c0.png)
+![5.png](/blog/images/ai-follow-up-email-opus-4-8/1780822575208-d13c1eb4-a0f1-42ab-8218-fa077d64b6c0.webp)
 
 That's my honest take on AI follow-up emails. The workflow isn't complicated, but it needs a decent transcript and five minutes of review. If your work involves more than a few meetings a week, it's probably worth a try.
 

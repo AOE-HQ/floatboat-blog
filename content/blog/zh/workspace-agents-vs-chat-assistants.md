@@ -6,7 +6,7 @@ date: "2026-04-24"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["工作区 Agent", "AI 助手", "AI 工作区"]
-cover: "/blog/images/workspace-agents-vs-chat-assistants/1776999718549-5b1e23ce-2907-492f-9963-a02524c6ed7a.PNG"
+cover: "/blog/images/workspace-agents-vs-chat-assistants/1776999718549-5b1e23ce-2907-492f-9963-a02524c6ed7a.webp"
 locale: "zh"
 draft: false
 ---
@@ -25,7 +25,7 @@ draft: false
 
 我到现在几乎每天还用 [ChatGPT](<https://openai.com/gpt-5/>)。我认识的人也基本如此。「向一个聪明系统提问」这个场景，它做出了目前最自然的界面。对快速问答来说，它真的很难被超越。
 
-![2.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999740654-33cd6c61-9f51-423e-8d6d-4db122a501ba.PNG)
+![2.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999740654-33cd6c61-9f51-423e-8d6d-4db122a501ba.webp)
 
 ### 工作区 Agent：在工作的内部运作
 
@@ -51,7 +51,7 @@ Anthropic 工程团队对 [Agent 有一个干净的定义](<https://www.anthropi
 
 用工作区 Agent 时，对话发生在你正在做的事旁边（或里面）。Agent 不是你要去造访的地方，而是你在自己的心流中委派的对象。
 
-![3.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999751177-38f3e25c-f470-4911-8cb5-ff10ed9afcb1.PNG)
+![3.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999751177-38f3e25c-f470-4911-8cb5-ff10ed9afcb1.webp)
 
 ### AI 能看到和触碰到什么
 
@@ -73,7 +73,7 @@ Anthropic 工程团队对 [Agent 有一个干净的定义](<https://www.anthropi
 
 我敢说多数单人创业者仍然把大部分 AI 时间花在这种模式上。我知道我自己就是这样。
 
-![4.png](/blog/images/workspace-agents-vs-chat-assistants/1776999760874-31231a87-0ef5-4b1f-b04f-61cc3b8e72c0.png)
+![4.png](/blog/images/workspace-agents-vs-chat-assistants/1776999760874-31231a87-0ef5-4b1f-b04f-61cc3b8e72c0.webp)
 
 ### 快速研究、草稿与一次性问题
 
@@ -101,7 +101,7 @@ Anthropic 工程团队对 [Agent 有一个干净的定义](<https://www.anthropi
 
 这个领域反复发现的工程难题是：随着任务周期变长，**_维持正确的上下文_**成了决定性问题。聊天 UI 不是为此设计的。工作区 UI 是。
 
-![5.png](/blog/images/workspace-agents-vs-chat-assistants/1776999769997-ac84c264-70bd-4725-ac36-920e79b4c427.png)
+![5.png](/blog/images/workspace-agents-vs-chat-assistants/1776999769997-ac84c264-70bd-4725-ac36-920e79b4c427.webp)
 
 ### 多角色的单人工作
 
@@ -121,7 +121,7 @@ Anthropic 工程团队对 [Agent 有一个干净的定义](<https://www.anthropi
 
 我试过足够多「颠覆性」工具，知道对其中大部分应该先观望。
 
-![6.png](/blog/images/workspace-agents-vs-chat-assistants/1776999784351-660eef5c-839d-4860-8e5b-03e0550406bb.png)
+![6.png](/blog/images/workspace-agents-vs-chat-assistants/1776999784351-660eef5c-839d-4860-8e5b-03e0550406bb.webp)
 
 ## 怎么选：三个实际问题
 

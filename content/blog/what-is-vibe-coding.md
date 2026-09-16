@@ -6,7 +6,7 @@ date: "2026-04-16"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/what-is-vibe-coding/1776318240258-7782d4ee-7298-4a95-a248-956cb56e292f.PNG"
+cover: "/blog/images/what-is-vibe-coding/1776318240258-7782d4ee-7298-4a95-a248-956cb56e292f.webp"
 locale: "en"
 draft: false
 ---
@@ -37,7 +37,7 @@ One post. It resonated because it named something a lot of people were already q
 
 Because it described a real shift. Non-developers — founders, operators, content people — had been using tools like Cursor, Replit, and Claude Code to ship small automations and internal tools. They weren't "programming." They were prompting and accepting. Vibe coding gave that a name, and the conversation exploded from there.
 
-![2.PNG](/blog/images/what-is-vibe-coding/1776318311227-83897fe0-7538-46df-8e4f-0f3a9bfe89f6.PNG)
+![2.PNG](/blog/images/what-is-vibe-coding/1776318311227-83897fe0-7538-46df-8e4f-0f3a9bfe89f6.webp)
 
 ## Vibe Coding vs Traditional Development
 
@@ -75,7 +75,7 @@ I built a content tracking tool with AI assistance last year. It saved me about 
 
 Want to test whether a product idea is worth pursuing before spending real time on it? Vibe coding makes that cheap. A Harvard professor who taught a vibe coding course in late 2025 described its core value as changing "the economics of experimentation" — you can build a thing to understand a thing, and you can do it quickly. That framing stuck with me. It's not that vibe coding makes great software. It's that it makes experimentation affordable.
 
-![3.png](/blog/images/what-is-vibe-coding/1776318320938-66d3b4f7-7dda-41d1-acba-6124093f5010.png)
+![3.png](/blog/images/what-is-vibe-coding/1776318320938-66d3b4f7-7dda-41d1-acba-6124093f5010.webp)
 
 By <https://www.rootsanalysis.com/vibe-coding-market>
 
@@ -111,7 +111,7 @@ The bigger problem isn't the first version — it's the fifth. Every prompt-driv
 
 Security is the clearest example of where vibe coding breaks down. As [TechTarget reported on the growing risks of AI-generated code](<https://www.techtarget.com/searchapparchitecture/tip/Vibe-coding-is-killing-open-source-increasing-software-risk>), code churn and duplication are accelerating alongside security debt. OWASP added a dedicated category to its Top 10 in 2025 specifically flagging AI-assisted code defects as a pattern development teams need to address. AI-generated code optimizes for functionality, not security. Those are not the same requirement — and for a solo founder without a security engineer on the team, that gap can surface at the worst time.
 
-![4.png](/blog/images/what-is-vibe-coding/1776318333381-2505b153-4cd6-41d5-89ce-bf8d4a4fe3a5.png)
+![4.png](/blog/images/what-is-vibe-coding/1776318333381-2505b153-4cd6-41d5-89ce-bf8d4a4fe3a5.webp)
 
 By <https://arnaudunjo.com/2025/06/22/vibe-coding-the-immediate-future-of-application-development/>
 
@@ -157,7 +157,7 @@ From what I've observed over the past year, the people building sustainable one-
 
 You can build with AI tools without giving up your understanding of what you're building. That's the actual skill worth developing — not finding better prompts.
 
-![5.png](/blog/images/what-is-vibe-coding/1776318343607-e4c86648-6737-43e7-abf8-c58474b44c39.png)
+![5.png](/blog/images/what-is-vibe-coding/1776318343607-e4c86648-6737-43e7-abf8-c58474b44c39.webp)
 
 I'm still figuring this out, honestly. The tools are moving fast enough that something I wrote about them three months ago would already need an update. What I do feel more certain about: ​**the value ​isn** ​'t in the prompts, it's in the systems. The solo founders building durable operations aren't the ones who found the best AI tool — they're the ones who built workflows that compound over time.
 

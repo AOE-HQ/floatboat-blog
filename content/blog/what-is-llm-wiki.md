@@ -6,7 +6,7 @@ date: "2026-04-14"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/what-is-llm-wiki/1776148737985-25d4a58e-bb1d-4197-a449-bfe2ca495d1d.png"
+cover: "/blog/images/what-is-llm-wiki/1776148737985-25d4a58e-bb1d-4197-a449-bfe2ca495d1d.webp"
 locale: "en"
 draft: false
 ---
@@ -29,7 +29,7 @@ As Karpathy puts it in [the original gist](<https://gist.github.com/karpathy/442
 
 That framing stuck with me.
 
-![2.png](/blog/images/what-is-llm-wiki/1776148819751-87607be9-70fc-4c53-85a0-0954d5cc9ca9.png)
+![2.png](/blog/images/what-is-llm-wiki/1776148819751-87607be9-70fc-4c53-85a0-0954d5cc9ca9.webp)
 
 ### How It Works: Raw Sources, Compiled Wiki, Schema Layer
 
@@ -51,7 +51,7 @@ Traditional note-taking apps like Notion or Obsidian give you the container but 
 
 As [Analytics Vidhya's breakdown of Karpathy's approach](<https://www.analyticsvidhya.com/blog/2026/04/llm-wiki-by-andrej-karpathy/>) explains, the wiki becomes more valuable with each new source you add because each ingest integrates, not just appends.
 
-![3.png](/blog/images/what-is-llm-wiki/1776148835868-b86aa41a-ae09-4afd-8063-480d8965502f.png)
+![3.png](/blog/images/what-is-llm-wiki/1776148835868-b86aa41a-ae09-4afd-8063-480d8965502f.webp)
 
 ## What Made Karpathy's Approach Go Viral
 
@@ -79,7 +79,7 @@ Karpathy quote-tweeted it and described the resulting artifact as "explicit and 
 
 That example matters because it shows the pattern works well beyond academic research. It works for _any_ domain where you're accumulating knowledge over time. Which is most knowledge work.
 
-![4.png](/blog/images/what-is-llm-wiki/1776148844507-69f786e7-f0f2-40bf-8c44-c85ed94817ad.png)
+![4.png](/blog/images/what-is-llm-wiki/1776148844507-69f786e7-f0f2-40bf-8c44-c85ed94817ad.webp)
 
 ## Who It Was Actually Designed For
 
@@ -123,7 +123,7 @@ The idea: instead of you bringing context to the AI each session, the AI lives i
 
 Tools like [Floatboat AI](</>) are building in this direction — an AI workspace that learns your working patterns over time rather than starting fresh each session. I haven't run it through enough real workflows to give you a definitive verdict, but the framing matches the problem the LLM wiki is pointing at: compounding context, not resetting it.
 
-![5.png](/blog/images/what-is-llm-wiki/1776148854844-ad731b5c-a527-4da1-85c3-44bad00c024a.png)
+![5.png](/blog/images/what-is-llm-wiki/1776148854844-ad731b5c-a527-4da1-85c3-44bad00c024a.webp)
 
 ## Should You Build Your Own LLM Wiki?
 
@@ -161,7 +161,7 @@ What the developer community is building by hand today is probably what product 
 
 That's the product category the[ LLM](<https://techterms.com/definition/llm>) wiki points toward. Not a better RAG. A workspace that knows how you work.
 
-![6.png](/blog/images/what-is-llm-wiki/1776148866360-405fe00c-6fed-475f-a61d-1503898579ec.png)
+![6.png](/blog/images/what-is-llm-wiki/1776148866360-405fe00c-6fed-475f-a61d-1503898579ec.webp)
 
 
 That's where I am with this. The pattern is genuinely interesting — not because it's revolutionary, but because it finally names the problem clearly and gives it a concrete architecture. Whether you build one yourself depends almost entirely on whether you're comfortable running shell commands and whether your work actually involves deep domain accumulation over time.

@@ -6,7 +6,7 @@ date: "2026-04-27"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258012756-3cdd7264-9746-4fb6-91db-2aa7605b6c70.PNG"
+cover: "/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258012756-3cdd7264-9746-4fb6-91db-2aa7605b6c70.webp"
 locale: "en"
 draft: false
 ---
@@ -21,7 +21,7 @@ Three things shifted in roughly four months. **GPT Image 2 launched on April 21,
 
 So the three-tool decision space changed. The price-performance lines moved. Worth re-checking your subscriptions.
 
-![2.PNG](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258121575-7df5df29-3319-44f5-b0d7-47b5487aebef.PNG)
+![2.PNG](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258121575-7df5df29-3319-44f5-b0d7-47b5487aebef.webp)
 
 ## How I'm comparing them
 
@@ -39,7 +39,7 @@ GPT Image 2's Thinking mode generates up to 8 frames with character continuity f
 
 All three now support some form of multi-turn/context-aware editing. **GPT​ Image 2 is the most surgical** — you can say "keep everything, just change her shirt to navy" and it does that. Midjourney's editor is improving but feels more like "regenerating this region." Nano Banana 2 is conversational in the Gemini app and surprisingly strong here.
 
-![3.PNG](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258131708-4d5133f4-13e6-440f-a47e-ab8388c35a16.PNG)
+![3.PNG](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258131708-4d5133f4-13e6-440f-a47e-ab8388c35a16.webp)
 
 ### Pricing and credit economics
 
@@ -75,7 +75,7 @@ All three permit commercial use on paid tiers. The footnotes matter:
 
 I'm not a lawyer. Verify against current terms before you ship paid client work.
 
-![4.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258142374-e9744eed-c845-45ea-836c-627ec578ae78.png)
+![4.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258142374-e9744eed-c845-45ea-836c-627ec578ae78.webp)
 
 ## GPT Image 2 — where it wins, where it doesn't
 
@@ -97,7 +97,7 @@ This is the one most creators sleep on. **The free tier alone is more generous t
 
 **Trade-offs:** the watermark on free outputs makes them unusable for client work, dense text at small sizes still trips it up, and the model occasionally over-edits when you ask for a small change. For drafting, ideation, social content, and anyone Google-ecosystem-native, it's a fantastic default.
 
-![5.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258152422-cb2fa446-1ab8-4602-9449-557bf9c1db2b.png)
+![5.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258152422-cb2fa446-1ab8-4602-9449-557bf9c1db2b.webp)
 
 ## The decision framework
 
@@ -145,7 +145,7 @@ I want to be careful not to overstate this: **most solo creators don't need thre
 
 **Wait if:** you're not feeling pain in your current setup. The Image Arena 242-point lead is real, but **benchmark gaps don't always translate to ​workflow** ​​**​ gaps** ​. If your output is shipping and clients are happy, the upgrade can wait until your next billing cycle.
 
-![6.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258163108-0603b3f3-2195-41f9-a39c-89e41c89fb4f.png)
+![6.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258163108-0603b3f3-2195-41f9-a39c-89e41c89fb4f.webp)
 
 That's where I land. The actual choice depends on what you make. If you're not sure, start with the free Nano Banana 2 tier this week, layer in GPT Image 2 when you need polished output, and only add Midjourney if you find yourself missing a specific look the others can't give you.
 

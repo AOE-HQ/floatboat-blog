@@ -6,7 +6,7 @@ date: "2026-04-08"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/first-100-customers-solo-founder/1775614789972-3bf9b5ce-b21a-494c-af63-d2b68b8f1b28.PNG"
+cover: "/blog/images/first-100-customers-solo-founder/1775614789972-3bf9b5ce-b21a-494c-af63-d2b68b8f1b28.webp"
 locale: "en"
 draft: false
 ---
@@ -31,7 +31,7 @@ The **first 100 customers** milestone is specifically hard because you don't yet
 
 Here's the boundary condition that matters: **this playbook applies to founder-led ​B2B** ​**​ and prosumer products in the $20–$200/month range.** If you're building a free consumer app that depends on viral growth, the mechanics are different. If you're selling $50k enterprise contracts, the mechanics are also different. What follows is specifically for the person selling something real to someone with a real problem, at a price where word-of-mouth can actually travel.
 
-![2.png](/blog/images/first-100-customers-solo-founder/1775616230668-db52a5f1-c6a2-4cad-9877-2c3af4acd391.png)
+![2.png](/blog/images/first-100-customers-solo-founder/1775616230668-db52a5f1-c6a2-4cad-9877-2c3af4acd391.webp)
 
 ### Why This Phase Is Also Your Best Research Window
 
@@ -67,7 +67,7 @@ The ones who get traction early are almost always the ones who gave genuine valu
 
 The data supports this. According to [Freemius's 2025 State of Micro-SaaS report](<https://freemius.com/blog/state-of-micro-saas-2025/>), which analyzed data from MicroConf's survey of nearly 700 independent SaaS founders: **50% of founders lean primarily on communities and referrals, and those channels report stronger ​lifetime value** ​**​ — especially in the early stages.** Another 47% of founders said that integrations, partnerships, communities, and forums became their most dependable and controllable source of growth. Community-sourced customers tend to stick around longer, complain more constructively, and refer more often. They came to you because they trusted the environment you showed up in — not because you ran an ad at them.
 
-![3.png](/blog/images/first-100-customers-solo-founder/1775616241728-144b6973-1d05-421e-b168-46efd92cd126.png)
+![3.png](/blog/images/first-100-customers-solo-founder/1775616241728-144b6973-1d05-421e-b168-46efd92cd126.webp)
 
 ## The Manual Phase You Can't Skip
 
@@ -109,7 +109,7 @@ Charge something early. Even a fraction of your eventual price. MicroConf's 2024
 
 _Huh. Okay. That number surprised me too, the first time I saw it._
 
-![4.png](/blog/images/first-100-customers-solo-founder/1775616253924-4d37ade0-9e32-4d46-843e-4e8e03a8b472.png)
+![4.png](/blog/images/first-100-customers-solo-founder/1775616253924-4d37ade0-9e32-4d46-843e-4e8e03a8b472.webp)
 
 ## How to Go from 10 to 100 Without Burning Out
 
@@ -159,7 +159,7 @@ The founders who come out of this phase well aren't the ones who executed most p
 
 According to[ Carta's 2025 Solo Founders Report](<https://carta.com/data/solo-founders-report/>), AI has expanded what individual founders can accomplish — which is genuinely true and important. But the core work of getting to 100 customers hasn't changed: it's still relational, manual, and slower than you'd like. That's not a bug. That's the mechanism. The things that feel slow — community trust, direct conversations, careful early charging — are slow precisely because they're building something that compounds. The things that feel fast — launch campaigns, cold lists, automated outreach to strangers — are fast precisely because they don't compound at this stage.
 
-![5.png](/blog/images/first-100-customers-solo-founder/1775616268699-0fa95876-afc3-455e-93fc-afb0cb4c4b9f.png)
+![5.png](/blog/images/first-100-customers-solo-founder/1775616268699-0fa95876-afc3-455e-93fc-afb0cb4c4b9f.webp)
 
 _Observations from tracking indie founders, micro-SaaS builders, and solo operators through this phase. Statistics cited are from the sources linked above; all data reflects the most recently published figures at time of writing. Individual results vary substantially based on market, execution, and timing._
 

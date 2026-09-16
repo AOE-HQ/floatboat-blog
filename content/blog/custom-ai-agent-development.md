@@ -6,7 +6,7 @@ date: "2026-03-27"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/custom-ai-agent-development/1774580576067-d0eab05d-e7ad-4ac3-b954-bf7bd4f429ad.png"
+cover: "/blog/images/custom-ai-agent-development/1774580576067-d0eab05d-e7ad-4ac3-b954-bf7bd4f429ad.webp"
 locale: "en"
 draft: false
 ---
@@ -39,7 +39,7 @@ There's a spectrum that most people don't fully appreciate:
 
 Understanding which bucket your project actually falls into is the first thing worth clarifying with any vendor.
 
-![2.png](/blog/images/custom-ai-agent-development/1774583389077-01a0ae55-b26a-45a9-815f-fa44a756c5e7.png)
+![2.png](/blog/images/custom-ai-agent-development/1774583389077-01a0ae55-b26a-45a9-815f-fa44a756c5e7.webp)
 
 ### Deployment and Handoff Expectations
 
@@ -69,7 +69,7 @@ These ranges are consistent across multiple independent analyses of 2025–2026 
 
 API costs alone (for commercial models like GPT-4o or Claude) can run **$100–$1,000+/month** for moderate-use agents, scaling up significantly with query volume. Add hosting, vector database storage for memory, monitoring tooling, and periodic tuning — and ongoing costs typically land between **$500–$5,000/month** depending on complexity. This isn't optional maintenance. AI systems drift in ways traditional software doesn't, requiring active attention.
 
-![3.png](/blog/images/custom-ai-agent-development/1774583405679-c7a6691e-c1fd-4052-b76b-322ba98efb5d.png)
+![3.png](/blog/images/custom-ai-agent-development/1774583405679-c7a6691e-c1fd-4052-b76b-322ba98efb5d.webp)
 
 ## When Custom Development Is the Right Call
 
@@ -109,7 +109,7 @@ The smarter path: **use off-the-shelf tools to prototype and validate the ​wor
 
 There's also a softer version of this problem: teams that believe they need a custom agent because they want something "that understands our context" or "that learns our way of working." That's often achievable through well-structured prompts, retrieval-augmented generation (RAG) setups, and careful tool configuration — without a six-figure build. Don't confuse a configuration problem with a development problem.
 
-![4.png](/blog/images/custom-ai-agent-development/1774583420493-61463483-b6c3-4e11-abae-f6a247818460.png)
+![4.png](/blog/images/custom-ai-agent-development/1774583420493-61463483-b6c3-4e11-abae-f6a247818460.webp)
 
 ## The Honest Cost Comparison: Custom vs. Ready-Made
 
@@ -149,7 +149,7 @@ Sometimes what looks like an agent-building need is actually a process clarity p
 **What happens when requirements change in 6 months?**   
 Custom systems are significantly harder to pivot than configured ones. Factor that rigidity into your decision.
 
-![5.png](/blog/images/custom-ai-agent-development/1774583432040-d56ad9da-7e25-49b1-a05a-5ca0c7d311fa.png)
+![5.png](/blog/images/custom-ai-agent-development/1774583432040-d56ad9da-7e25-49b1-a05a-5ca0c7d311fa.webp)
 
 
 _Still figuring a lot of this out myself, honestly. But if this helped you think through the decision more clearly — that was exactly the goal. ​_ ​​ _Good luck_ ​, and maybe spend one more afternoon with the no-code tools before you sign anything.

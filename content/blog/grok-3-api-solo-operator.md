@@ -17,7 +17,7 @@ I've been asked this four or five times at this point. Let me give you an actual
 
 I've been running Grok 3 through the API on and off for a couple of months. Nothing heavy — background scripts for daily digest summaries, RSS parsing, some throwaway content drafts. Not a deep stress test, but enough to form a real take.
 
-![2.png](/blog/images/grok-3-api-solo-operator/1776932927149-9465aa19-4edb-4c43-b3bb-93195a4fc28d.png)
+![2.png](/blog/images/grok-3-api-solo-operator/1776932927149-9465aa19-4edb-4c43-b3bb-93195a4fc28d.webp)
 
 ## What Is Grok 3 API
 
@@ -29,7 +29,7 @@ The word "open" trips people up here, so let me split it.
 
 **Open source is a different story.** Musk [said Grok 3 would be open-sourced roughly six months after Grok 2.5 dropped](<https://techcrunch.com/2025/08/24/elon-musk-says-xai-has-open-sourced-grok-2-5/>), putting it around February 2026. Last time I checked Hugging Face, the Grok 3 weights weren't up yet. Worth checking directly if that matters to you.
 
-![3.png](/blog/images/grok-3-api-solo-operator/1776932944516-b691cc85-59e0-46c8-bbc1-bea506233ac4.png)
+![3.png](/blog/images/grok-3-api-solo-operator/1776932944516-b691cc85-59e0-46c8-bbc1-bea506233ac4.webp)
 
 One more thing worth flagging: Grok 2.5 was released under a custom "Community License" with anti-competitive clauses — not a real MIT or Apache license. If Grok 3 follows the same pattern (and the [Wikipedia entry on Grok](<https://en.wikipedia.org/wiki/Grok_\(chatbot\)>) suggests it will), "open weights" won't mean "free to build a product on." I could be wrong here — but don't assume the headline means what the headline sounds like.
 
@@ -47,7 +47,7 @@ So when someone says "Grok 3 is cheap now" — it's not. The _Mini_ and _Fast_ v
 
 ## Is Open Source the Right Move for Solo Operators?
 
-![4.png](/blog/images/grok-3-api-solo-operator/1776932961124-2046ebbb-8767-4a1e-8e43-f33c89c1db95.png)
+![4.png](/blog/images/grok-3-api-solo-operator/1776932961124-2046ebbb-8767-4a1e-8e43-f33c89c1db95.webp)
 
 Here's where I have to be honest about what I actually care about, which is probably what you care about too.
 
@@ -79,7 +79,7 @@ Managed agent platforms (Claude's, OpenAI's, the orchestration layer stuff) are 
 
 For where I am — mostly exploring, occasionally building something stable — I've settled into a mix. Grok 3 Mini for high-volume background tasks, Claude or GPT for the thinking-heavy stuff, DeepSeek for anything I want to run cheap and dirty at scale. Not a recommendation. Just where I landed.
 
-![5.png](/blog/images/grok-3-api-solo-operator/1776932977603-7e7aba35-fa7d-4d76-b064-9b3b721ca245.png)
+![5.png](/blog/images/grok-3-api-solo-operator/1776932977603-7e7aba35-fa7d-4d76-b064-9b3b721ca245.webp)
 
 That's my honest take, two months in. Cheaper tokens are real, but they're not the barrier most solo operators actually hit. When you need this level of price optimization, you'll know.
 

@@ -6,7 +6,7 @@ date: "2026-05-01"
 author: "Nova"
 category: "Model & Benchmarks"
 tags: ["Label"]
-cover: "/blog/images/meta-muse-spark-one-person-company/1777599263146-c698e3b7-2cc3-48d2-9516-374977aac95e.PNG"
+cover: "/blog/images/meta-muse-spark-one-person-company/1777599263146-c698e3b7-2cc3-48d2-9516-374977aac95e.webp"
 locale: "en"
 draft: false
 ---
@@ -25,7 +25,7 @@ If you've been following the AI space, you'll remember Llama 4 didn't land well 
 
 I've been using it for about a week. The first thing I noticed: it's not trying to be the smartest model. It's trying to be efficient — fast, capable enough, integrated into Meta's product ecosystem. Meta says as much in their [official launch post](<https://ai.meta.com/blog/introducing-muse-spark-msl/>), where they openly acknowledge gaps in long-horizon agentic work and coding.
 
-![2.PNG](/blog/images/meta-muse-spark-one-person-company/1777599405250-c43737fd-78b5-4c59-953b-504703a01a0f.PNG)
+![2.PNG](/blog/images/meta-muse-spark-one-person-company/1777599405250-c43737fd-78b5-4c59-953b-504703a01a0f.webp)
 
 ### How It Relates to Llama 4
 
@@ -53,7 +53,7 @@ It also leads slightly on DeepSearchQA. The Contemplating mode — where multipl
 
 I tested it on a real task: analyzing a 30-page product research PDF. Asked for a structured breakdown. I got up to grab coffee, came back, it was done. I read through it twice, didn't find obvious factual errors. That part was nice.
 
-![3.PNG](/blog/images/meta-muse-spark-one-person-company/1777599417375-60d50ce0-b5fb-42ee-baf9-75bf6e9d5fa9.PNG)
+![3.PNG](/blog/images/meta-muse-spark-one-person-company/1777599417375-60d50ce0-b5fb-42ee-baf9-75bf6e9d5fa9.webp)
 
 ### Where It Still Falls Short
 
@@ -77,7 +77,7 @@ When GPT-5.4 came out, I did something kind of dumb. I spent a whole weekend rew
 
 Not a bad weekend. Just not the productivity win it felt like.
 
-![4.png](/blog/images/meta-muse-spark-one-person-company/1777599434797-610547ea-0fa7-49c9-b15f-2f7108c480fe.png)
+![4.png](/blog/images/meta-muse-spark-one-person-company/1777599434797-610547ea-0fa7-49c9-b15f-2f7108c480fe.webp)
 
 ### The Real Productivity Driver Behind Model Upgrades
 
@@ -111,7 +111,7 @@ That framing actually applies to individuals too. **The right question isn't "wh
 
 If your work is mostly multimodal processing, health-related research, or lightweight investigation — Muse Spark is worth a test. If you're doing long-chain agentic work, deep coding, or computer-use automation — GPT-5.4 is still the steadier choice. [OpenAI's API docs](<https://developers.openai.com/api/docs/models/gpt-5.4>) explicitly position it for "complex professional work," and that matches what I see in practice.
 
-![5.png](/blog/images/meta-muse-spark-one-person-company/1777599445535-e3ff5e0b-eacc-442a-95fb-bd9f2f3f9720.png)
+![5.png](/blog/images/meta-muse-spark-one-person-company/1777599445535-e3ff5e0b-eacc-442a-95fb-bd9f2f3f9720.webp)
 
 That's my honest take, with all the caveats. A month or two from now, GPT-5.5 or the next Muse generation will be out, and the comparison will look different. But for solo operators, "wait a beat before switching" tends to age better than "switch immediately."
 

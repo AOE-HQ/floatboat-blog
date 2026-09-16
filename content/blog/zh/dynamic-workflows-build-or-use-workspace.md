@@ -6,24 +6,24 @@ date: "2026-05-29"
 author: "Nova"
 category: "AI Agents"
 tags: ["Dynamic Workflows", "Claude Code", "子 Agent", "单人创业者", "工作区"]
-cover: "/blog/images/dynamic-workflows-build-or-use-workspace/1780043068596-45dedbea-9c23-42ca-9b2d-606c1af82b56.PNG"
+cover: "/blog/images/dynamic-workflows-build-or-use-workspace/1780043068596-45dedbea-9c23-42ca-9b2d-606c1af82b56.webp"
 locale: "zh"
 draft: false
 ---
 
 你好，我是 Nova。[Dynamic Workflows 刚刚随 Claude Code 发布](<https://claude.com/blog/introducing-dynamic-workflows-in-claude-code>)。如果你是在自己的技术栈里跑 AI 的单人创业者，真正的问题不是"这酷不酷"——而是：你该自己构建子 Agent 编排，还是说你真正需要的，其实是一个能把你工作端到端跑完的工作区。功能上线后，我一直在自己的项目上试用这个研究预览。下面是我在你在"构建还是使用"上押注之前，会怎么盘算这件事。
 
-![2.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055108452-0336b9fb-4040-4b5e-8fbb-03f3cf3494e0.PNG)
+![2.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055108452-0336b9fb-4040-4b5e-8fbb-03f3cf3494e0.webp)
 
 ## Dynamic Workflows 到底是什么
 
 简单版：在 Claude Code 里，你现在可以让 Claude"创建一个工作流"——它不再是一个模型一步步地啃你的任务，而是当场写出一份编排脚本。这份脚本会[一次性派生出最多 16 个并行子 Agent](<https://code.claude.com/docs/en/workflows>)，单次运行上限 1,000 个，中间结果存在脚本变量里，而不是塞进 Claude 的上下文窗口。最后，你拿到一份汇总报告。
 
-![3.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055117692-97ffd373-6502-4340-935c-b6b2070a5e37.PNG)
+![3.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055117692-97ffd373-6502-4340-935c-b6b2070a5e37.webp)
 
 它以研究预览的形式提供于 **[Max、Team 和 Enterprise 计划](<https://www.anthropic.com/pricing>)**（Pro 不在名单上），外加 API、Bedrock、Vertex AI 与 Microsoft Foundry。Max 和 Team 上默认开启；Enterprise 管理员需要手动打开。它要求 Claude Code v2.1.154 或更高版本。发布文档还提醒：工作流会比标准会话烧掉多得多的 token——Anthropic 自己就建议先用一个有边界的任务校准一下，再对整个仓库做审计。
 
-![4.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055132392-1aeffdcd-dfc9-48e7-b3fb-6326ea7cfe77.PNG)
+![4.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055132392-1aeffdcd-dfc9-48e7-b3fb-6326ea7cfe77.webp)
 
 最后这一点很要紧。能力是真的。成本结构也是真的。
 
@@ -49,7 +49,7 @@ draft: false
 
 你的工作规模大到单会话单模型确实扛不住——整个代码库的迁移、多来源调查、横跨数百文件的审计。你在 Claude Code（或 API）里足够自如，以至于"Claude 写了份跑子 Agent 的脚本"这句话不会让你心里打鼓。而且这个任务会反复出现——因为设计一套工作流的回报，主要在你第二次、第三次、第十次跑它的时候兑现。
 
-![5.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055142758-e721949b-16cb-4ce3-905e-59cd8cfb330b.png)
+![5.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055142758-e721949b-16cb-4ce3-905e-59cd8cfb330b.webp)
 
 这三条里缺任何一条，构建路线都会显得比它能省下的活更沉重。而这恰恰是我觉得被轻描淡写掉的部分。
 
@@ -59,7 +59,7 @@ draft: false
 
 按我这里用这个词的方式，工作区是那种已经横跨你的日历、文件、周期性任务和上下文的东西——它把这些转成行动，而你不用写编排逻辑。你不是在设计主循环，而是在用一个已经按"一人公司真实会做的那类活"塑形好的主循环：会前准备、客户跟进、内容批量生产、交付检查点、没人碰就会越积越多的周期性运营。**[Floatboat](</>)**是这个类别里的一个例子，它的定位正卡在那个缝隙上——"这事排上了"和"这事做完了"之间的那一层。同一片空间里也开始出现别的产品。
 
-![6.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055151552-adeb0f8c-84d9-4a27-97d9-b9967beffa31.png)
+![6.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055151552-adeb0f8c-84d9-4a27-97d9-b9967beffa31.webp)
 
 权衡是真实的。你对精确编排形态的控制变少了。但你也不再交维护税了。对大量单人工作来说，这是对的那笔交易——因为瓶颈不是_"我需要更强大的 Agent 协调"_，而是_"这周我有十一件周期性的事，而记得它们的人只有我一个"_。
 
@@ -91,7 +91,7 @@ draft: false
 
 你不必扔掉它。你可以把它保留在真正需要扇出的部分——仓库级审计、深度研究、多角度调查——然后把日常执行挪到一个不需要你维护它的地方。不同的层，不同的工具。这是允许的。
 
-![8.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055161760-a57eef1a-e11f-4135-86a0-827584556bd1.png)
+![8.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055161760-a57eef1a-e11f-4135-86a0-827584556bd1.webp)
 
 这就是我目前的立场。如果你本来就生活在 Claude Code 里、又处于它设计所对应的规模，Dynamic Workflows 确实很有意思。但对我聊过的大多数单人创业者来说，更诚实的答案是：你需要的不是一种更强大的 Agent 协调方式。你需要的是更少的事情从指缝里漏掉。这不是同一个问题，也没有同一个答案。
 

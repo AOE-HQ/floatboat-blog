@@ -6,7 +6,7 @@ date: "2026-09-04"
 author: "Kostja"
 category: "Model & Benchmarks"
 tags: ["GPT-6 Astra", "OpenAI", "AI Agent", "网络安全", "模型评测"]
-cover: "/blog/images/gpt-6-astra/1788496075502-7b01a53f-db8d-49cb-8844-0afcaa9d04aa.png"
+cover: "/blog/images/gpt-6-astra/1788496075502-7b01a53f-db8d-49cb-8844-0afcaa9d04aa.webp"
 locale: "zh"
 draft: false
 ---

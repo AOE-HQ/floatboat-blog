@@ -6,7 +6,7 @@ date: "2026-05-12"
 author: "Nova"
 category: "AI Agents"
 tags: ["AI Agent", "安全", "浏览器自动化"]
-cover: "/blog/images/browser-ai-agent-security-questions/1778563937090-298eee0e-5d27-4059-8761-8be6e622f89b.PNG"
+cover: "/blog/images/browser-ai-agent-security-questions/1778563937090-298eee0e-5d27-4059-8761-8be6e622f89b.webp"
 locale: "zh"
 draft: false
 ---
@@ -25,7 +25,7 @@ Anthropic 自己在 [Claude in Chrome 的安全页面](<https://support.claude.c
 
 所以：这些工具，可以用。但要用得心里有数。
 
-![52.PNG](/blog/images/browser-ai-agent-security-questions/1778563993372-2af75f73-de6c-459d-a71c-43583411ab4a.PNG)
+![52.PNG](/blog/images/browser-ai-agent-security-questions/1778563993372-2af75f73-de6c-459d-a71c-43583411ab4a.webp)
 
 ## 问题一：它到底在要什么权限？
 
@@ -63,7 +63,7 @@ Codex 和 Claude for Chrome 都自带**按网站确认系统**——默认情况
 
 按 [Codex Chrome 扩展文档](<https://developers.openai.com/codex/app/chrome-extension>)，你可以在 Computer Use 设置里管理白名单和黑名单。另外还有一个终极选项——「始终允许浏览器内容」——它会移除所有按网站询问的弹窗。别用它。
 
-![53.PNG](/blog/images/browser-ai-agent-security-questions/1778564003144-a025e36c-d094-471d-b791-a5e822c9825f.PNG)
+![53.PNG](/blog/images/browser-ai-agent-security-questions/1778564003144-a025e36c-d094-471d-b791-a5e822c9825f.webp)
 
 ### 永远别让 Agent 碰的网站
 
@@ -117,7 +117,7 @@ Claude for Chrome 这边：记忆是 Claude 账户设置里偏好项下的一个
 
 凡是真正敏感的东西，我会在任务之间开全新会话、清空上下文。确实麻烦，但这是唯一让我确信每个任务都被隔离开的方式。
 
-![54.png](/blog/images/browser-ai-agent-security-questions/1778564013711-13667a54-e368-4c2a-ae1d-4a903ac5ef1d.png)
+![54.png](/blog/images/browser-ai-agent-security-questions/1778564013711-13667a54-e368-4c2a-ae1d-4a903ac5ef1d.webp)
 
 ## 问题五：你在欧盟、英国，或受监管行业吗？
 
@@ -137,7 +137,7 @@ Claude for Chrome 这边：记忆是 Claude 账户设置里偏好项下的一个
 
   * **共享或管理员账号**：把 Agent 接到会影响其他用户行为的账号上，等于放大任何错误的爆炸半径。
 
-![55.png](/blog/images/browser-ai-agent-security-questions/1778564023236-7c40a0a4-2a2b-4615-939d-f43c8a2be20d.png)
+![55.png](/blog/images/browser-ai-agent-security-questions/1778564023236-7c40a0a4-2a2b-4615-939d-f43c8a2be20d.webp)
 
 ## 首次使用前的轻量检查清单
 

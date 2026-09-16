@@ -6,7 +6,7 @@ date: "2026-03-20"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/ai-agent-use-cases-real-examples/1773826490323-3f61f515-1b1a-4322-9251-519d32b6dd0f.png"
+cover: "/blog/images/ai-agent-use-cases-real-examples/1773826490323-3f61f515-1b1a-4322-9251-519d32b6dd0f.webp"
 locale: "en"
 draft: false
 ---
@@ -23,7 +23,7 @@ So I decided to write the version I wished existed — grounded in realistic wor
 
 These aren't fabricated company stories. They're scenarios built from patterns I've observed across solo founders, small content teams, and independent consultants who are genuinely using AI agents in their day-to-day work.
 
-![1.png](/blog/images/ai-agent-use-cases-real-examples/1773971292439-3e6c017d-7b54-4ac0-bde8-170df1990c50.png)
+![1.png](/blog/images/ai-agent-use-cases-real-examples/1773971292439-3e6c017d-7b54-4ac0-bde8-170df1990c50.webp)
 
 ## Use Case 1 — Research to Client Deliverable
 
@@ -45,7 +45,7 @@ A rough synthesis document, organized by theme, ready for human editing. Accordi
 
 The agent surfaces information, but it can't **judge relevance ​** the way a specialist can. You still need a human pass to catch misattributions or shallow analysis. Also: if your sources are paywalled or require login, the workflow breaks.
 
-![2.png](/blog/images/ai-agent-use-cases-real-examples/1773915395661-0a7147cc-44e0-4c83-9848-807c5b9a1f78.png)
+![2.png](/blog/images/ai-agent-use-cases-real-examples/1773915395661-0a7147cc-44e0-4c83-9848-807c5b9a1f78.webp)
 
 ## Use Case 2 — Long-Form Content Repurposing
 
@@ -83,7 +83,7 @@ A weekly digest — bullet points of changes detected, flagged by category (pric
 
 Agents can detect surface-level changes but miss strategic signals. A wording tweak on a pricing page might mean nothing — or might mean a repositioning is underway. **That interpretation is still a human job.** Also, some competitors actively obscure changes, which no agent can work around.
 
-![3.png](/blog/images/ai-agent-use-cases-real-examples/1773915407309-f2e6056c-db28-4a51-b247-5920f14d67d7.png)
+![3.png](/blog/images/ai-agent-use-cases-real-examples/1773915407309-f2e6056c-db28-4a51-b247-5920f14d67d7.webp)
 
 ## Use Case 4 — Proposal Drafts from a Brief
 
@@ -117,7 +117,7 @@ Looking across these four use cases, a few things stand out:
 
   * **Human judgment still gates quality.** In every case above, the agent handles volume; the human handles judgment.
 
-![2.png](/blog/images/ai-agent-use-cases-real-examples/1773971305952-85e09a4b-e204-47c3-85ba-ca6b6a8f90b0.png)
+![2.png](/blog/images/ai-agent-use-cases-real-examples/1773971305952-85e09a4b-e204-47c3-85ba-ca6b6a8f90b0.webp)
 
 ### Where Human Judgment Is Still Required
 
@@ -145,7 +145,7 @@ Okay, so you want to try this. Here's what I'd actually tell a friend:
 
 Wait… ! And one more thing I keep noticing: **the people getting the most out of AI agents aren't necessarily the most technical.** They're the ones who are clearest about what they want. Good prompting is just clear thinking, written down. [OpenAI's prompt engineering guide](<https://platform.openai.com/docs/guides/prompt-engineering>) is actually a surprisingly useful read for non-developers — most of the advice is just about being precise.
 
-![5.png](/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.png)
+![5.png](/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.webp)
 
 _If you're also experimenting with AI workflows, I'd be curious about what's actually working for you. Still figuring a lot of this out myself — but that's kind of the fun part._
 

@@ -6,7 +6,7 @@ date: "2026-07-15"
 author: "Lulu Yu"
 category: "Calendar AI"
 tags: ["world cup 2026"]
-cover: "/blog/images/world-cup-2026-guide/1782462198627-903b7e70-fd0f-40c3-81e3-501c7c0a7524.png"
+cover: "/blog/images/world-cup-2026-guide/1782462198627-903b7e70-fd0f-40c3-81e3-501c7c0a7524.webp"
 locale: "en"
 draft: false
 ---

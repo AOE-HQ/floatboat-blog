@@ -6,24 +6,24 @@ date: "2026-05-29"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/dynamic-workflows-build-or-use-workspace/1780043068596-45dedbea-9c23-42ca-9b2d-606c1af82b56.PNG"
+cover: "/blog/images/dynamic-workflows-build-or-use-workspace/1780043068596-45dedbea-9c23-42ca-9b2d-606c1af82b56.webp"
 locale: "en"
 draft: false
 ---
 
 ​​[Dynamic Workflows just shipped in Claude Code](<https://claude.com/blog/introducing-dynamic-workflows-in-claude-code>)​, and if you're a solo operator already running AI in your stack, the real question isn't _"is this cool"_ — it's whether you should be building your own sub-agent orchestration, or whether what you actually need is a workspace that runs work end-to-end. _Hi, I'm Nova. ​_ I've been poking at the research preview since it dropped on my own projects.. Here's how I'd think through the build-or-use call before you commit either direction.
 
-![2.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055108452-0336b9fb-4040-4b5e-8fbb-03f3cf3494e0.PNG)
+![2.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055108452-0336b9fb-4040-4b5e-8fbb-03f3cf3494e0.webp)
 
 ## What Dynamic Workflows actually are
 
 The short version: in Claude Code, you can now ask Claude to "create a workflow," and instead of one model chewing through your task turn-by-turn, it writes an orchestration script on the fly. That script ​[spawns up to 16 parallel sub-agents at a time](<https://code.claude.com/docs/en/workflows>)​, capped at 1,000 total per run, with intermediate results living inside script variables instead of in Claude's context window. At the end, you get one consolidated report.
 
-![3.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055117692-97ffd373-6502-4340-935c-b6b2070a5e37.PNG)
+![3.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055117692-97ffd373-6502-4340-935c-b6b2070a5e37.webp)
 
 It's available as a research preview on **[Max, Team, and Enterprise plans](<https://www.anthropic.com/pricing>)** (Pro isn't on the list), plus the API, Bedrock, Vertex AI, and Microsoft Foundry. On Max and Team it's on by default; Enterprise admins have to switch it on. It needs Claude Code v2.1.154 or later. The launch documentation also flags that workflows can burn substantially more tokens than a standard session — Anthropic itself recommends starting with a scoped task to calibrate before launching a repo-wide audit.
 
-![4.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055132392-1aeffdcd-dfc9-48e7-b3fb-6326ea7cfe77.PNG)
+![4.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055132392-1aeffdcd-dfc9-48e7-b3fb-6326ea7cfe77.webp)
 
 That last part matters. The capability is real. The cost shape is also real.
 
@@ -49,7 +49,7 @@ The build path is the right call when three things are true at once:
 
 You're working at a scale where one model in one session genuinely can't hold the task — codebase-wide migrations, multi-source investigations, audits across hundreds of files. You're comfortable enough in Claude Code (or the API) that "Claude wrote a script that ran subagents" is a sentence that doesn't make you nervous. And the task is going to repeat — because the payoff for designing a workflow is mostly in the second, third, and tenth time you run it.
 
-![5.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055142758-e721949b-16cb-4ce3-905e-59cd8cfb330b.png)
+![5.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055142758-e721949b-16cb-4ce3-905e-59cd8cfb330b.webp)
 
 If any of those three are missing, the build path is going to feel heavier than the work it's saving. Which is the part I think gets glossed over.
 
@@ -59,7 +59,7 @@ Here's where most solo operators I know actually land, even if they don't say it
 
 A workspace, for the way I'm using the word here, is something that already sits across your calendar, files, recurring tasks, and context — and turns those into actions without you writing the orchestration. You're not designing the loop. You're using one that's already shaped for the kind of work a one-person business actually does: meeting prep, client follow-up, content batching, delivery checkpoints, recurring ops that pile up if nobody touches them. **[Floatboat](</>)** is one example in this category, positioned around exactly that gap — the layer between _"this is scheduled"_ and _"this got done."_ There are others appearing in the same space.
 
-![6.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055151552-adeb0f8c-84d9-4a27-97d9-b9967beffa31.png)
+![6.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055151552-adeb0f8c-84d9-4a27-97d9-b9967beffa31.webp)
 
 The trade-off is real. You get less control over the exact orchestration shape. You also stop paying the maintenance tax. For a lot of solo work, that's the right trade — because the bottleneck isn't _"I need more powerful agent coordination,"_ it's _"I have eleven recurring things this week and I'm the only one who remembers them."_
 
@@ -91,7 +91,7 @@ Is the thing you built actually saving more time than it's taking to maintain? T
 
 You don't have to throw it away. You can keep the build for the parts where you genuinely need fan-out — repo-scale audits, deep research, multi-angle investigations — and move the day-to-day execution somewhere it doesn't need you to maintain it. Different layers, different tools. That's allowed.
 
-![8.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055161760-a57eef1a-e11f-4135-86a0-827584556bd1.png)
+![8.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055161760-a57eef1a-e11f-4135-86a0-827584556bd1.webp)
 
 That's where I am with this right now. Dynamic Workflows is genuinely interesting if you're already living in Claude Code at the scale it's designed for. For most of the solo operators I talk to, the more honest answer is: you don't need a more powerful way to coordinate agents. You need fewer things falling through the cracks. Those aren't the same problem, and they don't have the same solution.
 

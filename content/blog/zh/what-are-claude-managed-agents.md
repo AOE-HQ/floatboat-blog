@@ -6,7 +6,7 @@ date: "2026-04-10"
 author: "Nova"
 category: "AI Agents"
 tags: ["Claude", "AI Agent", "AI 基础设施"]
-cover: "/blog/images/what-are-claude-managed-agents/1775730561883-47b39a9c-89b4-4323-a051-3a97af2dda5e.png"
+cover: "/blog/images/what-are-claude-managed-agents/1775730561883-47b39a9c-89b4-4323-a051-3a97af2dda5e.webp"
 locale: "zh"
 draft: false
 ---
@@ -17,7 +17,7 @@ draft: false
 
 嗨，我是 Nova！下面是我查到的东西。
 
-![2.png](/blog/images/what-are-claude-managed-agents/1775730586728-6d11b474-4b85-486d-9184-c0ffd522defc.png)
+![2.png](/blog/images/what-are-claude-managed-agents/1775730586728-6d11b474-4b85-486d-9184-c0ffd522defc.webp)
 
 ## Claude Managed Agents 到底是什么
 
@@ -25,13 +25,13 @@ draft: false
 
 Claude 平台现在提供两条路径：直接模型访问——你自己搭对话循环；以及完全托管的 Agent 基础设施——由 Anthropic 处理有状态会话与持久事件历史。Claude Managed Agents 就是第二条路径。这两条路径都写在 [Claude API 文档](<https://platform.claude.com/docs/en/home>)里，想看技术全貌的话，我会建议从那里开始。
 
-![3.png](/blog/images/what-are-claude-managed-agents/1775730604254-8c285a71-a0b0-43dd-ae4f-6b1c6421cb39.png)
+![3.png](/blog/images/what-are-claude-managed-agents/1775730604254-8c285a71-a0b0-43dd-ae4f-6b1c6421cb39.webp)
 
 **它是一个托管的 Agent harness——不是一个新模型。**底层的 AI 仍然是 Claude（Opus 4.6、Sonnet 4.6）。新的是它周围的脚手架。Managed Agents 负责安全的沙箱化代码执行、鉴权、检查点、受限权限，以及持久的长时运行会话——所有这些过去要花工程团队数月去自建的管道。
 
 ### 一个元 harness，而不只是又一个工具
 
-![4.png](/blog/images/what-are-claude-managed-agents/1775730623124-70a80ac9-c523-4617-842a-f90deec73a40.png)
+![4.png](/blog/images/what-are-claude-managed-agents/1775730623124-70a80ac9-c523-4617-842a-f90deec73a40.webp)
 
 Anthropic 的工程团队把设计哲学描述为「把大脑与手解耦」。抓住我注意力的细节是：会话在 Claude 的上下文窗口之外充当一条持久的事件日志——如果系统重启、或某个容器崩溃，Agent 会依据记录下的事件流从它停下的地方精确续跑。可抛弃的容器可以失败并被替换，却不丢失进度。这是实打实的可靠性保证。Anthropic 那篇关于[规模化 managed agents](<https://www.anthropic.com/engineering/managed-agents>)的工程博客深入讲了他们为什么这样设计——如果你对这套架构思路好奇，值得一读。
 
@@ -47,7 +47,7 @@ Claude Managed Agents 目前处于 beta。所有端点都要求 `managed-agents-
 
 会话可以自主运行数小时，输出在断线后仍然保留。多 Agent 协调——一个 Agent 启动并指挥其他 Agent 并行干活——目前在 research preview 里可用。
 
-![5.png](/blog/images/what-are-claude-managed-agents/1775730635313-a66b0135-a330-4f9e-a480-9c056117994e.png)
+![5.png](/blog/images/what-are-claude-managed-agents/1775730635313-a66b0135-a330-4f9e-a480-9c056117994e.webp)
 
 ### 目标用户：开发团队与 Agent 平台构建者
 
@@ -59,7 +59,7 @@ Claude Managed Agents 替你抽走了数个月的基础设施工作。用户可�
 
 **这是一个开发者工具。具体来说，它是给那些在构建包含 AI Agent 的产品的团队用的。**不是给想要一个更聪明助手的单人创业者的。
 
-![6.png](/blog/images/what-are-claude-managed-agents/1775730648441-f3377238-255d-470a-9835-f3845068f333.png)
+![6.png](/blog/images/what-are-claude-managed-agents/1775730648441-f3377238-255d-470a-9835-f3845068f333.webp)
 
 ## 它不做什么
 
@@ -73,7 +73,7 @@ Claude Managed Agents 没有界面。没有一块你能跟它聊天、拖文件�
 
 定价有两个维度。会话消耗的所有 token 按标准 Claude 平台费率计费，外加每「会话·活跃运行时小时」$0.08——空闲时间不计入该计费。[Managed Agents 定价页](<https://platform.claude.com/docs/en/about-claude/pricing>)上有精确明细。对开发团队来说可负担，但作为普通用户，没有任何东西可以安装或订阅。你要么在它之上自己构建，要么用一个已经集成了它的产品。
 
-![7.png](/blog/images/what-are-claude-managed-agents/1775730661291-ec410158-091c-45c8-9693-7b75e34ea6a7.png)
+![7.png](/blog/images/what-are-claude-managed-agents/1775730661291-ec410158-091c-45c8-9693-7b75e34ea6a7.webp)
 
 ## 为什么这次发布要紧，哪怕你不会用它
 

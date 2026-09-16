@@ -6,7 +6,7 @@ date: "2026-04-15"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/scale-one-person-business-without-hiring/1776232668468-eeeca175-e546-43ee-b605-652f7b5b0f80.PNG"
+cover: "/blog/images/scale-one-person-business-without-hiring/1776232668468-eeeca175-e546-43ee-b605-652f7b5b0f80.webp"
 locale: "en"
 draft: false
 ---
@@ -35,7 +35,7 @@ Scaling means creating repeatable workflows, reducing constant custom work, buil
 
 The practical difference shows up in how you spend Tuesday afternoon. Are you doing something for the first time, improvising, figuring it out? Or are you running a process you've already built and refined? The second version scales. The first doesn't.
 
-![2.PNG](/blog/images/scale-one-person-business-without-hiring/1776232782029-f09d0d62-65f2-4f60-a80d-d729144dca5f.PNG)
+![2.PNG](/blog/images/scale-one-person-business-without-hiring/1776232782029-f09d0d62-65f2-4f60-a80d-d729144dca5f.webp)
 
 ## The Three Levers Solo Operators Actually Control
 
@@ -73,7 +73,7 @@ The solo operators who scale well find ways to make context portable. Templates 
 
 This is also where tools can genuinely help — not by doing your thinking for you, but by reducing the re-entry cost on work you've already done.
 
-![3.png](/blog/images/scale-one-person-business-without-hiring/1776232793191-329039fc-fd60-4f6b-9c28-3f7e6c3dff2a.png)
+![3.png](/blog/images/scale-one-person-business-without-hiring/1776232793191-329039fc-fd60-4f6b-9c28-3f7e6c3dff2a.webp)
 
 ## Where AI Fits Into This Picture
 
@@ -87,7 +87,7 @@ One category I've been watching is AI workspaces — tools designed to handle mu
 
 The honest version of what AI does for a one-person business: it compresses the time it takes to run Lever 1 systems. It doesn't replace the need to build them.
 
-![4.png](/blog/images/scale-one-person-business-without-hiring/1776232802794-c4b28dc1-89dd-4e52-9e4c-f89daabbc868.png)
+![4.png](/blog/images/scale-one-person-business-without-hiring/1776232802794-c4b28dc1-89dd-4e52-9e4c-f89daabbc868.webp)
 
 ## The Signs You Actually Do Need Help (And What Kind)
 
@@ -111,7 +111,7 @@ According to the [Harvard Business Review's work on personal productivity](<http
 
 That's not comfortable to hear, but it's been useful for me.
 
-![5.png](/blog/images/scale-one-person-business-without-hiring/1776232813446-838fdbd1-7411-45dd-850c-6a9cb4906723.png)
+![5.png](/blog/images/scale-one-person-business-without-hiring/1776232813446-838fdbd1-7411-45dd-850c-6a9cb4906723.webp)
 
 Anyway. That's where I am with this.
 
