@@ -67,7 +67,9 @@ export function FeaturedImage({
       )}
     >
       {!loaded ? (
-        <span className="ob-image-shimmer-bar absolute inset-0 z-[2] block h-full w-full" aria-hidden="true" />
+        <span className="ob-image-shimmer-bar" aria-hidden="true">
+          <span className="ob-image-shimmer-glint" />
+        </span>
       ) : null}
       {isExternal ? (
         // eslint-disable-next-line @next/next/no-img-element
