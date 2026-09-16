@@ -6,7 +6,7 @@
 
 | 变量 | 示例 | 说明 |
 |------|------|------|
-| `BLOG_ORIGIN` | `https://floatboat-blog-xxx.up.railway.app` | 博客 deployment origin（不含路径） |
+| `BLOG_ORIGIN` | `https://blog.floatboat.ai` | 博客 deployment origin（不含路径） |
 
 ## Rewrite 规则
 
@@ -51,15 +51,16 @@ ASSET_PREFIX=/blog
 
 移除主站 Rewrite → 旧 CMS `/blog` 恢复。
 
-## Docker / CI
+## Docker / CI / EKS
 
 Markdown 在 Git 里。push 到 `main` 后 GitHub Actions 会：
 
 1. 校验全部 `content/blog/**/*.md`
 2. `npm run build` 生成静态页
-3. 构建并推送镜像 `ghcr.io/aoe-hq/floatboat-blog:latest`
+3. 构建并推送不可变镜像 `ghcr.io/aoe-hq/floatboat-blog:<sha>`
+4. 部署到 EKS `aoe/floatboat-blog`，公网入口 `https://blog.floatboat.ai/blog`
 
-这只会产出镜像，**不会自动部署到生产**。有服务器权限后再把该镜像接到 Railway / K8s / 现有 Nginx。
+主站 `floatboat.ai/blog` 仍由 `aoe-backend` 提供，直到 Cloudflare rewrite 切到 `BLOG_ORIGIN`。
 
 本地构建：
 

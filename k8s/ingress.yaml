@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: floatboat-blog-nginx
+  namespace: aoe
+  labels:
+    app.kubernetes.io/name: floatboat-blog
+    app.kubernetes.io/part-of: floatboat
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-cloudflare
+    external-dns.alpha.kubernetes.io/cloudflare-proxied: "true"
+    external-dns.alpha.kubernetes.io/target: afba42d1e9c9159f6.awsglobalaccelerator.com
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  ingressClassName: nginx-internal
+  tls:
+    - hosts:
+        - blog.floatboat.ai
+      secretName: floatboat-blog-tls
+  rules:
+    - host: blog.floatboat.ai
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80

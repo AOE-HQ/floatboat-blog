@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: floatboat-blog
+  namespace: aoe
+  labels:
+    app.kubernetes.io/name: floatboat-blog
+    app.kubernetes.io/part-of: floatboat
+data:
+  SITE_URL: https://floatboat.ai
+  DEPLOY_MODE: subdirectory
+  BLOG_BASE_PATH: /blog
+  ASSET_PREFIX: /blog
+  NEXT_PUBLIC_ATTRIBUTION_WEB_EVENTS_ENABLED: "true"
+  NEXT_PUBLIC_ATTRIBUTION_WEB_EVENT_URL: https://floatboat.ai/api/analytics/events
+  PORT: "3000"
+  HOSTNAME: 0.0.0.0

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: floatboat-blog
+  namespace: aoe
+  labels:
+    app.kubernetes.io/name: floatboat-blog
+    app.kubernetes.io/part-of: floatboat
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: floatboat-blog
+  ports:
+    - name: http
+      port: 80
+      targetPort: http

@@ -78,7 +78,7 @@ Images: `public/blog/images/{slug}/` (shared by both locales).
 
 ## Deployment
 
-Pushing Markdown to `main` runs GitHub Actions: validate posts, production build, and publish `ghcr.io/aoe-hq/floatboat-blog`. That image is not auto-deployed.
+Pushing Markdown to `main` runs GitHub Actions: validate posts, production build, publish an immutable GHCR image, and deploy it to EKS at `https://blog.floatboat.ai/blog`.
 
 When mounted at `floatboat.ai/blog/*` via Cloudflare/Railway rewrite:
 
