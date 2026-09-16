@@ -26,12 +26,24 @@ export function FeaturedImage({
   const resolved = resolveDisplayImageUrl(src) ?? src;
   const isExternal = resolved.startsWith("http");
   const imgRef = useRef<HTMLImageElement>(null);
+  const holdTimer = useRef<number>(0);
   const [loaded, setLoaded] = useState(false);
-  const markLoaded = useCallback(() => setLoaded(true), []);
+  const markLoaded = useCallback(() => {
+    window.clearTimeout(holdTimer.current);
+    // next dev only. Production builds inline NODE_ENV=production so this
+    // delay is stripped. Lets you watch shimmer for a few seconds locally.
+    if (process.env.NODE_ENV === "development") {
+      holdTimer.current = window.setTimeout(() => setLoaded(true), 4000);
+      return;
+    }
+    setLoaded(true);
+  }, []);
 
   useEffect(() => {
-    if (imgRef.current?.complete) setLoaded(true);
-  }, [resolved]);
+    setLoaded(false);
+    if (imgRef.current?.complete) markLoaded();
+    return () => window.clearTimeout(holdTimer.current);
+  }, [resolved, markLoaded]);
 
   const imgClassName =
     layout === "hero"
