@@ -16,6 +16,8 @@
 | `/zh/blog/*` | `${BLOG_ORIGIN}/zh/blog/*` |
 | `/blog/sitemap.xml` | `${BLOG_ORIGIN}/blog/sitemap.xml` |
 
+Do **not** send `/_next/image` to the main site. That path belongs to aoe-backend's Next.js optimizer; Blog cover images then 400 with "The requested resource isn't a valid image." The Blog build sets `images.unoptimized`, so `<img src="/blog/images/...">` is enough as long as `/blog/*` is rewritten.
+
 Keep `/api/analytics/events` routed to the main `aoe-backend`; do not send it
 to `BLOG_ORIGIN`. The Blog collector uses the same `fb_anon_id` and
 `fb_attr_params` cookies as the main site, so the attribution chain survives
