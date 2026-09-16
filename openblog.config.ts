@@ -18,7 +18,7 @@ const config = defineConfig({
     mode: "custom",
     siteUrl: FLOATBOAT_SITE,
     homeUrl: FLOATBOAT_SITE,
-    logo: "/brand/floatboat-logo.svg",
+    logo: "/blog/brand/floatboat-logo.svg",
     logoAlt: "Floatboat",
     nav: [
       { label: "Pricing", href: `${FLOATBOAT_SITE}/pricing`, external: true },
