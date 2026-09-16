@@ -6,7 +6,7 @@ date: "2026-06-29"
 author: "Floatboat Team"
 category: "Product Updates"
 tags: ["FloatIM", "Agent 原生消息", "多 Agent 协作", "AI 群聊", "与 AI Agent 对话"]
-cover: "/blog/images/introducing-floatim/1782710364987-7c54039b-3629-4fbf-846d-062532c5ae38.png"
+cover: "/blog/images/introducing-floatim/1782710364987-7c54039b-3629-4fbf-846d-062532c5ae38.webp"
 locale: "zh"
 draft: false
 ---

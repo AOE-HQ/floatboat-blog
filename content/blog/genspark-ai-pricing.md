@@ -6,7 +6,7 @@ date: "2026-05-07"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/genspark-ai-pricing/1773920176808-93b6672b-1f60-4b7f-9e7c-b30e3754d487.png"
+cover: "/blog/images/genspark-ai-pricing/1773920176808-93b6672b-1f60-4b7f-9e7c-b30e3754d487.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ I used the free tier for about a week before upgrading. It's enough to test whet
 
 No credit card required to start. That part is genuinely nice.
 
-![1.png](/blog/images/genspark-ai-pricing/1778148126100-e50affb1-8a4b-4296-a8d2-13cfa38970f0.png)
+![1.png](/blog/images/genspark-ai-pricing/1778148126100-e50affb1-8a4b-4296-a8d2-13cfa38970f0.webp)
 
 ### Paid plans — what changes and at what cost
 
@@ -57,7 +57,7 @@ On the Plus plan with 10,000 monthly credits, several reviewers — including an
 
 The credits don't roll over. Whatever you don't use resets at your next billing cycle. That's worth knowing before you buy an annual plan thinking you'll stockpile.
 
-![2.png](/blog/images/genspark-ai-pricing/1778148140351-a1e48d0b-b162-4453-8e1c-4268273b772f.png)
+![2.png](/blog/images/genspark-ai-pricing/1778148140351-a1e48d0b-b162-4453-8e1c-4268273b772f.webp)
 
 ## What's Not in the Price
 
@@ -91,7 +91,7 @@ One more thing: according to [McKinsey's State of AI findings](<https://www.mcki
 
 **Pro** is for agencies and content teams producing at volume. At $250/month, you need to be using the platform heavily and consistently to justify the cost. If you've been on Plus for a few months and keep buying credit top-ups, that's your signal.
 
-![3.png](/blog/images/genspark-ai-pricing/1778148157727-9f5fe890-7286-4f95-8bf0-982c7eb62b1b.png)
+![3.png](/blog/images/genspark-ai-pricing/1778148157727-9f5fe890-7286-4f95-8bf0-982c7eb62b1b.webp)
 
 ## Is It Worth It? A Realistic Assessment
 
@@ -109,7 +109,7 @@ Bottom line: **Genspark's Plus plan is a solid deal for the right user** — som
 
 I'm still experimenting with it. I'll probably keep using Plus for now and see how things look after the December 2026 terms shift.
 
-![4.png](/blog/images/genspark-ai-pricing/1778148170127-f4968f72-120b-4291-8d4d-ec13a7d2be06.png)
+![4.png](/blog/images/genspark-ai-pricing/1778148170127-f4968f72-120b-4291-8d4d-ec13a7d2be06.webp)
 
 That's where things stand with Genspark pricing right now. The platform is still young and changing fast — credit allocations, pricing tiers, and feature terms have all shifted in the few months I've been watching. If you're evaluating it, check the official numbers at the time you're ready to buy. What I wrote today might already be slightly different tomorrow.
 

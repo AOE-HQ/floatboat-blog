@@ -6,7 +6,7 @@ date: "2026-04-08"
 author: "Nova"
 category: "Solo Operators"
 tags: ["单人创始人", "获客", "社群", "微 SaaS"]
-cover: "/blog/images/first-100-customers-solo-founder/1775614789972-3bf9b5ce-b21a-494c-af63-d2b68b8f1b28.PNG"
+cover: "/blog/images/first-100-customers-solo-founder/1775614789972-3bf9b5ce-b21a-494c-af63-d2b68b8f1b28.webp"
 locale: "zh"
 draft: false
 ---
@@ -31,7 +31,7 @@ draft: false
 
 有一个重要的边界条件：**这套打法适用于创始人主导的 B2B 与专业消费者（Prosumer）产品，月费区间在 $20–$200。**如果你做的是依赖病毒式传播的免费消费者 App，机制完全不同；如果你卖的是 5 万美元的企业合同，机制也不同。下面这套是专门写给这样的人：把一个真实的东西卖给有真实问题的人，定价定在口碑真正传得动的水平。
 
-![2.png](/blog/images/first-100-customers-solo-founder/1775616230668-db52a5f1-c6a2-4cad-9877-2c3af4acd391.png)
+![2.png](/blog/images/first-100-customers-solo-founder/1775616230668-db52a5f1-c6a2-4cad-9877-2c3af4acd391.webp)
 
 ### 这个阶段也是你最好的研究窗口
 
@@ -67,7 +67,7 @@ draft: false
 
 数据也支持这一点。据 [Freemius《2025 年微型 SaaS 现状》报告](<https://freemius.com/blog/state-of-micro-saas-2025/>)——它分析了 MicroConf 对近 700 位独立 SaaS 创始人的问卷：**50% 的创始人主要依赖社群与转介绍，而这些渠道报告了更强的客户终身价值——尤其在早期阶段。**另有 47% 的创始人表示，集成、合作、社群和论坛成了他们最可靠、最可控的增长来源。从社群来的客户往往留得更久、提意见更有建设性、转介绍也更多。他们来找你，是因为信任你出现其中的那个环境——而不是因为你向他们投了广告。
 
-![3.png](/blog/images/first-100-customers-solo-founder/1775616241728-144b6973-1d05-421e-b168-46efd92cd126.png)
+![3.png](/blog/images/first-100-customers-solo-founder/1775616241728-144b6973-1d05-421e-b168-46efd92cd126.webp)
 
 ## 跳不过去的手动阶段
 
@@ -109,7 +109,7 @@ Wynter 对 100 位 B2B SaaS 营销高管的调查——引自 [Freemius《2025 �
 
 我第一次看到这个数字时也吃了一惊。
 
-![4.png](/blog/images/first-100-customers-solo-founder/1775616253924-4d37ade0-9e32-4d46-843e-4e8e03a8b472.png)
+![4.png](/blog/images/first-100-customers-solo-founder/1775616253924-4d37ade0-9e32-4d46-843e-4e8e03a8b472.webp)
 
 ## 如何从 10 到 100 而不把自己耗干
 
@@ -159,7 +159,7 @@ Wynter 对 100 位 B2B SaaS 营销高管的调查——引自 [Freemius《2025 �
 
 据 [Carta《2025 年单人创始人报告》](<https://carta.com/data/solo-founders-report/>)，AI 扩大了单人创始人能做成的事——这千真万确，也很重要。但通往 100 个客户的核心工作没有变：它依然是关系驱动的、手动的、比你想要的更慢。这不是缺陷，这就是机制本身。那些感觉很慢的事——社群信任、直接对话、谨慎的早期收费——之所以慢，恰恰因为它们是在构建会复利的东西；那些感觉很快的事——发布营销、冷名单、对陌生人的自动化外联——之所以快，恰恰因为它们在这个阶段不会复利。
 
-![5.png](/blog/images/first-100-customers-solo-founder/1775616268699-0fa95876-afc3-455e-93fc-afb0cb4c4b9f.png)
+![5.png](/blog/images/first-100-customers-solo-founder/1775616268699-0fa95876-afc3-455e-93fc-afb0cb4c4b9f.webp)
 
 以上观察，来自对独立开发者、微型 SaaS 构建者与单人创业者走过这一阶段的长期追踪。文中引用的统计数据均出自上文链接的来源；所有数据反映的是撰写时最新公开的数字。不同个体的结果会因市场、执行与时机而有显著差异。
 

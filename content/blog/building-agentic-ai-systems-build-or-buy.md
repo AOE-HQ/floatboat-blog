@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/building-agentic-ai-systems-build-or-buy/1779416315684-9a5f20eb-e1a7-42db-ae44-cc0ceaf77299.PNG"
+cover: "/blog/images/building-agentic-ai-systems-build-or-buy/1779416315684-9a5f20eb-e1a7-42db-ae44-cc0ceaf77299.webp"
 locale: "en"
 draft: false
 ---
@@ -25,7 +25,7 @@ The shift usually happens around three signals. First, you find yourself duct-ta
 
 Anthropic put it well in their guide on [building effective agents](<https://anthropic.com/research/building-effective-agents>): they recommend starting with the simplest possible solution and only increasing complexity when needed. Workflows — where tools and LLMs follow predefined paths — should come before fully autonomous agents. That advice is solid. But it also means that when you _do_ need the next level, you need to think carefully about whether you're building it, buying it, or outsourcing the build.
 
-![2.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416388917-b1def5dd-72f1-49d4-9163-1f77ea13ac08.PNG)
+![2.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416388917-b1def5dd-72f1-49d4-9163-1f77ea13ac08.webp)
 
 ## Build vs. Buy vs. Outsource: Comparison Table
 
@@ -51,7 +51,7 @@ This is the part where things get real. When you move from a single agent to ​
 
 **Permissions.** When it's just you, permissions don't matter — you trust yourself. The moment someone else uses your system, you need to decide: can this agent read customer data? Can it send emails? Can it modify a shared document? According to [LangChain's 2026 State of Agent Engineering report](<https://www.langchain.com/state-of-agent-engineering>), 57% of surveyed organizations now have agents in production, but quality and governance are still the top barriers. Permissions are boring until they're a crisis.
 
-![3.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416401483-9b7fe0c9-a289-4062-8d25-9f01ae8d87c8.PNG)
+![3.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416401483-9b7fe0c9-a289-4062-8d25-9f01ae8d87c8.webp)
 
 **Monitoring.** You need to see what your agents are doing. Not just outputs — the reasoning, the tool calls, the decision points. LangSmith, Arize, and other observability tools exist for this, and the LangChain report found that 89% of teams with production agents have some form of observability in place. If you're building from scratch, at minimum log every tool call and every decision branch. You'll thank yourself the first time something breaks at 2 AM.
 
@@ -69,7 +69,7 @@ If you buy a platform, you trade that maintenance burden for feature limitations
 
 I'm not going to say "it depends" and leave it there. Here's how I actually think about this: if the workflow generates revenue or saves more than five hours per week, build the critical path yourself and buy the supporting infrastructure. If it's a nice-to-have efficiency tool, buy. If you don't know yet, buy something cheap, test for a month, then decide.
 
-![4.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416413657-0e49baa1-0461-401f-a6c1-02de17864c97.png)
+![4.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416413657-0e49baa1-0461-401f-a6c1-02de17864c97.webp)
 
 ## Decision Tree by Workflow Maturity
 
@@ -85,7 +85,7 @@ I've found it useful to map the build-or-buy decision to where your workflow act
 
 The mistake I see most often: people jump to Stage 4 thinking before they've actually validated Stage 2. They buy an enterprise platform for a workflow they've tested three times. Don't do that.
 
-![5.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416434481-84be521e-d43c-4284-80a2-34091648e591.png)
+![5.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416434481-84be521e-d43c-4284-80a2-34091648e591.webp)
 
 That's where I am on the build-or-buy question for ​**building agentic AI systems** ​. The answer isn't universal — it depends on where your workflow actually is, how much maintenance you can absorb, and whether the value justifies the complexity.
 

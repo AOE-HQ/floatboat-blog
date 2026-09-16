@@ -6,7 +6,7 @@ date: "2026-05-13"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Agentic AI", "AI Agent", "单人创业"]
-cover: "/blog/images/agentic-ai-tools/1778662214560-0566d973-b6b5-4834-9cb0-48918b2fdf5f.PNG"
+cover: "/blog/images/agentic-ai-tools/1778662214560-0566d973-b6b5-4834-9cb0-48918b2fdf5f.webp"
 locale: "zh"
 draft: false
 ---
@@ -33,7 +33,7 @@ Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值
 
 这个规律正好印证了我会建议你对待这一类所有工具的方式：**检查点宁可多设，不要少设。**
 
-![f6.PNG](/blog/images/agentic-ai-tools/1778662287405-e62d17a0-6b9d-4dc1-bc34-6f98c3cafb4e.PNG)
+![f6.PNG](/blog/images/agentic-ai-tools/1778662287405-e62d17a0-6b9d-4dc1-bc34-6f98c3cafb4e.webp)
 
 ## Agentic AI 工具的品类地图
 
@@ -51,7 +51,7 @@ Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值
 
 **AI 工作区（AI Workspaces）**（跨应用桌面工具，负责协调文件、浏览器与已连接服务）——最新也最粗糙的一个品类。它的前提是：与其在应用之间来回切换，不如让 AI 凌驾于所有应用之上做统一协调。这类工具搭建成本最高，成熟度也最参差。如果你的工作确实横跨多个应用，值得一试；但如果你刚接触 agentic 工具，不该从这里起步。
 
-![f7.PNG](/blog/images/agentic-ai-tools/1778662297757-f2bc30e1-15b7-414d-9ffd-4f35f6d89069.PNG)
+![f7.PNG](/blog/images/agentic-ai-tools/1778662297757-f2bc30e1-15b7-414d-9ffd-4f35f6d89069.webp)
 
 ## 单人创业者的真实工作示例
 
@@ -83,7 +83,7 @@ Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值
 
 [欧盟 AI 法案](<https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence>)已经开始影响部分工具在受监管场景里的提供方式——这说明围绕 agentic 工具的治理是一个真实且不断演进的领域，不只是厂商的营销话术。
 
-![f8.png](/blog/images/agentic-ai-tools/1778662308943-6b841e78-e1f0-4419-b17a-b092e3214ed6.png)
+![f8.png](/blog/images/agentic-ai-tools/1778662308943-6b841e78-e1f0-4419-b17a-b092e3214ed6.webp)
 
 ## 按自主度选，别被 hype 带着走
 

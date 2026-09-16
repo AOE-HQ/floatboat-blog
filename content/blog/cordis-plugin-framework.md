@@ -6,7 +6,7 @@ date: "2026-08-14"
 author: "Jade"
 category: "AI Agents"
 tags: ["Deepseek"]
-cover: "/blog/images/cordis-plugin-framework/1786686126933-ce9de30b-3f0d-46bd-90b6-3769d2cb7d8b.png"
+cover: "/blog/images/cordis-plugin-framework/1786686126933-ce9de30b-3f0d-46bd-90b6-3769d2cb7d8b.webp"
 locale: "en"
 draft: false
 ---

@@ -6,7 +6,7 @@ date: "2026-04-08"
 author: "Nova"
 category: "AI Agents"
 tags: ["持久化 AI Agent", "AI Agent", "记忆"]
-cover: "/blog/images/what-is-persistent-ai-agent/1775615255707-60dd9542-8790-42c6-af6d-2abefa791147.PNG"
+cover: "/blog/images/what-is-persistent-ai-agent/1775615255707-60dd9542-8790-42c6-af6d-2abefa791147.webp"
 locale: "zh"
 draft: false
 ---
@@ -23,7 +23,7 @@ _嗨，我是 Nova。最近我一直在想这个概念，今天终于坐下来�
 
 这篇文章不是 Hermes Agent 的搭建教程，而是我想把脑袋里这个概念理清楚——**持久化 AI Agent**——以及它对我们这些不是开发者的人到底有没有意义。
 
-![2.PNG](/blog/images/what-is-persistent-ai-agent/1775615354386-f593b84b-697f-44ce-8fdc-1744691e0b75.PNG)
+![2.PNG](/blog/images/what-is-persistent-ai-agent/1775615354386-f593b84b-697f-44ce-8fdc-1744691e0b75.webp)
 
 ## 什么让一个 AI Agent「持久」——它和聊天机器人有什么区别
 
@@ -51,7 +51,7 @@ LLM 的传统记忆像内存（RAM）：对当前上下文访问快，但每个�
 
 持久化 Agent 换了个思路。它不是把一切倒进单一窗口，而是有选择地存储和检索真正重要的东西。
 
-![3.PNG](/blog/images/what-is-persistent-ai-agent/1775615366121-a2fc8f22-3621-42ab-b5db-25c0df9a70b5.PNG)
+![3.PNG](/blog/images/what-is-persistent-ai-agent/1775615366121-a2fc8f22-3621-42ab-b5db-25c0df9a70b5.webp)
 
 ## 持久化 Agent 到底记住了什么
 
@@ -79,7 +79,7 @@ LLM 的传统记忆像内存（RAM）：对当前上下文访问快，但每个�
 
 Hermes Agent 是 Nous Research 做的开源项目，2026 年初发布。我自己没搭过——这点我直说——但我把[官方文档](<https://hermes-agent.nousresearch.com/docs/>)读得挺仔细，这套架构即使你永远不运行它也值得理解。
 
-![4.png](/blog/images/what-is-persistent-ai-agent/1775615376383-6a9ae401-fb00-423f-8fa5-33b44d5b09ba.png)
+![4.png](/blog/images/what-is-persistent-ai-agent/1775615376383-6a9ae401-fb00-423f-8fa5-33b44d5b09ba.webp)
 
 ### 核心理念：一个越用越强的 Agent
 
@@ -107,7 +107,7 @@ Hermes Agent 这类项目的架构野心，比给会话式工具外挂增量记�
 
 **持久上下文**这个_理念_——一个真正懂你工作的 AI——对我们怎么工作至关重要。而以非开发者能接受的方式交付它的工具，还在追赶。
 
-![5.png](/blog/images/what-is-persistent-ai-agent/1775615386862-1f8e3dfa-b868-4d1c-9452-d11bb8c79341.png)
+![5.png](/blog/images/what-is-persistent-ai-agent/1775615386862-1f8e3dfa-b868-4d1c-9452-d11bb8c79341.webp)
 
 ## 「持久化」解决不了什么
 
@@ -129,7 +129,7 @@ Hermes Agent 这类项目的架构野心，比给会话式工具外挂增量记�
 
 这个转变一定会来，无论某个具体工具会不会成为大多数人接触它的方式。
 
-![6.png](/blog/images/what-is-persistent-ai-agent/1775615398983-da3425fa-4f29-43df-84e6-9c5733b38b6e.png)
+![6.png](/blog/images/what-is-persistent-ai-agent/1775615398983-da3425fa-4f29-43df-84e6-9c5733b38b6e.webp)
 
 我还在摸索——持久化 Agent 这块跑得太快，我这会儿写下的任何东西，几个月后可能都会显得不完整。但我认为底层的概念已经清晰到值得跟踪：区别在于「一个在会话里帮你的 AI」和「一个真的懂你怎么工作的 AI」。
 

@@ -6,7 +6,7 @@ date: "2026-07-15"
 author: "Judy"
 category: "Calendar AI"
 tags: ["world cup bracket"]
-cover: "/blog/images/world-cup-2026-bracket/1783514290356-138ce168-436f-457e-96a0-6642e36a9f14.png"
+cover: "/blog/images/world-cup-2026-bracket/1783514290356-138ce168-436f-457e-96a0-6642e36a9f14.webp"
 locale: "en"
 draft: false
 ---

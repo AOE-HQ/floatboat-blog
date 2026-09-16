@@ -46,6 +46,8 @@ jobs:
 
       - run: npm run validate:posts
 
+      - run: npm run check:images
+
       - run: npm run build
 
   image:

@@ -6,7 +6,7 @@ date: "2026-04-08"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/what-is-persistent-ai-agent/1775615255707-60dd9542-8790-42c6-af6d-2abefa791147.PNG"
+cover: "/blog/images/what-is-persistent-ai-agent/1775615255707-60dd9542-8790-42c6-af6d-2abefa791147.webp"
 locale: "en"
 draft: false
 ---
@@ -23,7 +23,7 @@ Okay. That hit differently. Because I've _felt_ that problem every single day.
 
 This article isn't a tutorial on setting up Hermes Agent. It's me trying to get a clear head around the concept it represents — **persistent AI agents** — and whether any of it actually matters to people like us who aren't developers.
 
-![2.PNG](/blog/images/what-is-persistent-ai-agent/1775615354386-f593b84b-697f-44ce-8fdc-1744691e0b75.PNG)
+![2.PNG](/blog/images/what-is-persistent-ai-agent/1775615354386-f593b84b-697f-44ce-8fdc-1744691e0b75.webp)
 
 ## What Makes an AI Agent "Persistent" — and How It Differs from a Chatbot
 
@@ -51,7 +51,7 @@ The deeper problem is that simply enlarging context windows doesn't fix this —
 
 Persistent agents approach this differently. Instead of dumping everything into a single window, they selectively store and retrieve what matters.
 
-![3.PNG](/blog/images/what-is-persistent-ai-agent/1775615366121-a2fc8f22-3621-42ab-b5db-25c0df9a70b5.PNG)
+![3.PNG](/blog/images/what-is-persistent-ai-agent/1775615366121-a2fc8f22-3621-42ab-b5db-25c0df9a70b5.webp)
 
 ## What a Persistent Agent Actually Remembers
 
@@ -79,7 +79,7 @@ Being able to ask "what did we decide about this last month?" and actually get a
 
 Hermes Agent is an open-source project built by Nous Research, released in early 2026. I haven't set it up myself — I'm going to be upfront about that — but I've read through the [official documentation](<https://hermes-agent.nousresearch.com/docs/>) pretty carefully, and the architecture is worth understanding even if you never run it.
 
-![4.png](/blog/images/what-is-persistent-ai-agent/1775615376383-6a9ae401-fb00-423f-8fa5-33b44d5b09ba.png)
+![4.png](/blog/images/what-is-persistent-ai-agent/1775615376383-6a9ae401-fb00-423f-8fa5-33b44d5b09ba.webp)
 
 ### The Core Idea: An Agent That Grows the More You Use It
 
@@ -107,7 +107,7 @@ The setup overhead is real. You need to be comfortable running something on a se
 
 The _idea_ of persistent context — an AI that actually knows your work — that matters enormously for how we work. The tools that deliver it accessibly for non-developers are still catching up.
 
-![5.png](/blog/images/what-is-persistent-ai-agent/1775615386862-1f8e3dfa-b868-4d1c-9452-d11bb8c79341.png)
+![5.png](/blog/images/what-is-persistent-ai-agent/1775615386862-1f8e3dfa-b868-4d1c-9452-d11bb8c79341.webp)
 
 ## What "Persistent" Does NOT Solve
 
@@ -129,7 +129,7 @@ The broader pattern is that as AI systems function autonomously across various t
 
 That shift is coming whether or not any specific tool becomes the way most people access it.
 
-![6.png](/blog/images/what-is-persistent-ai-agent/1775615398983-da3425fa-4f29-43df-84e6-9c5733b38b6e.png)
+![6.png](/blog/images/what-is-persistent-ai-agent/1775615398983-da3425fa-4f29-43df-84e6-9c5733b38b6e.webp)
 
 I'm still figuring this out — the persistent agent space is moving fast enough that anything I write here will probably look incomplete in a few months. But I think the underlying concept is clear enough to be worth tracking: the difference between an AI that helps you in a session and an AI that actually knows how you work.
 

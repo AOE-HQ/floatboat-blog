@@ -6,7 +6,7 @@ date: "2026-05-25"
 author: "Nova"
 category: "AI Agents"
 tags: ["Genspark", "AI Agent", "单人创业者"]
-cover: "/blog/images/genspark-super-agent-explained/1779673311946-3b863d62-7bb2-4e7c-a5d2-42a676849fdb.PNG"
+cover: "/blog/images/genspark-super-agent-explained/1779673311946-3b863d62-7bb2-4e7c-a5d2-42a676849fdb.webp"
 locale: "zh"
 draft: false
 ---
@@ -23,7 +23,7 @@ Genspark 由 [MainFunc（一家 Palo Alto 公司）](<https://mainfunc.ai/>)打�
 
 我拿几个调研量很大的提示词去试过。在我做的对照测试里，多模型交叉校验确实抓到了单模型漏掉的东西。不是每次都灵，但灵的次数多到我注意到了。
 
-![2.PNG](/blog/images/genspark-super-agent-explained/1779673381664-2e0980fe-80bd-46da-854d-9ddc3f9fa6fb.PNG)
+![2.PNG](/blog/images/genspark-super-agent-explained/1779673381664-2e0980fe-80bd-46da-854d-9ddc3f9fa6fb.webp)
 
 ## 它和普通聊天机器人有什么不同
 
@@ -51,7 +51,7 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 说句实在话，这是个不起眼的小胜利。「留在你现有工具里」这个思路，比大多数功能发布都更重要。
 
-![3.PNG](/blog/images/genspark-super-agent-explained/1779673408611-b6f822e4-0fb4-4ce6-a781-21ab85b8d6db.PNG)
+![3.PNG](/blog/images/genspark-super-agent-explained/1779673408611-b6f822e4-0fb4-4ce6-a781-21ab85b8d6db.webp)
 
 ## 单人创业者什么时候该用它
 
@@ -67,7 +67,7 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 我可能是错的，但我的直觉是：主业以写作为重心、而不是以调研和交付物为重心的人，多半该继续用现有的东西。
 
-![4.png](/blog/images/genspark-super-agent-explained/1779673420780-a791d4a8-9eb5-4eb2-a35e-4cd92c3e7d6b.png)
+![4.png](/blog/images/genspark-super-agent-explained/1779673420780-a791d4a8-9eb5-4eb2-a35e-4cd92c3e7d6b.webp)
 
 ## 上限、定价与需要核实的地方
 
@@ -87,7 +87,7 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 这就是我的真实看法。什么适合你，还是得你自己判断。
 
-![5.png](/blog/images/genspark-super-agent-explained/1779673431655-693b179e-e7d1-4c95-af7e-f78b5a6c178b.png)
+![5.png](/blog/images/genspark-super-agent-explained/1779673431655-693b179e-e7d1-4c95-af7e-f78b5a6c178b.webp)
 
 ## 往期文章
 

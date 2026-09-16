@@ -6,7 +6,7 @@ date: "2026-08-14"
 author: "Judy"
 category: "Model & Benchmarks"
 tags: ["Deepseek"]
-cover: "/blog/images/deepseek-v4-pro-0813/1786684761358-df353ff3-1758-420a-99ea-593ebe093d5a.png"
+cover: "/blog/images/deepseek-v4-pro-0813/1786684761358-df353ff3-1758-420a-99ea-593ebe093d5a.webp"
 locale: "en"
 draft: false
 ---

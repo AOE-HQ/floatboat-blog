@@ -6,7 +6,7 @@ date: "2026-05-07"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Genspark", "AI 订阅", "定价对比", "Sparkpages"]
-cover: "/blog/images/genspark-ai-pricing/1773920176808-93b6672b-1f60-4b7f-9e7c-b30e3754d487.png"
+cover: "/blog/images/genspark-ai-pricing/1773920176808-93b6672b-1f60-4b7f-9e7c-b30e3754d487.webp"
 locale: "zh"
 draft: false
 ---
@@ -27,7 +27,7 @@ Genspark 分三档：Free、Plus 和 Pro。表面上看结构很直白，但细�
 
 开始使用不需要信用卡。这一点确实不错。
 
-![1.png](/blog/images/genspark-ai-pricing/1778148126100-e50affb1-8a4b-4296-a8d2-13cfa38970f0.png)
+![1.png](/blog/images/genspark-ai-pricing/1778148126100-e50affb1-8a4b-4296-a8d2-13cfa38970f0.webp)
 
 ### 付费方案——什么变了、多少钱
 
@@ -57,7 +57,7 @@ _（发布前请核实：Genspark 会不定期调整定价与积分配比。发�
 
 积分不会结转。没用完的在下一个计费周期重置。这一点在你想"买个年费囤积分"之前值得先知道。
 
-![2.png](/blog/images/genspark-ai-pricing/1778148140351-a1e48d0b-b162-4453-8e1c-4268273b772f.png)
+![2.png](/blog/images/genspark-ai-pricing/1778148140351-a1e48d0b-b162-4453-8e1c-4268273b772f.webp)
 
 ## 价格里不含什么
 
@@ -91,7 +91,7 @@ Genspark 的说辞是它把**调研、聊天、图片生成、视频创作、演
 
 **Pro**是为大批量产出的代理商和内容团队准备的。一个月 250 美元，你得重度、持续地使用这个平台才回得了本。如果你已经用了几个月 Plus、还在不停买积分补充包，那就是你的信号。
 
-![3.png](/blog/images/genspark-ai-pricing/1778148157727-9f5fe890-7286-4f95-8bf0-982c7eb62b1b.png)
+![3.png](/blog/images/genspark-ai-pricing/1778148157727-9f5fe890-7286-4f95-8bf0-982c7eb62b1b.webp)
 
 ## 值吗？一个现实的评估
 
@@ -109,7 +109,7 @@ Genspark 的说辞是它把**调研、聊天、图片生成、视频创作、演
 
 我还在继续试验。现在大概会继续用 Plus，看看 2026 年 12 月条款变化之后情况如何。
 
-![4.png](/blog/images/genspark-ai-pricing/1778148170127-f4968f72-120b-4291-8d4d-ec13a7d2be06.png)
+![4.png](/blog/images/genspark-ai-pricing/1778148170127-f4968f72-120b-4291-8d4d-ec13a7d2be06.webp)
 
 以上就是 Genspark 定价目前的状况。这个平台还很年轻、变化很快——积分配比、价格档位和功能条款在我观望的这几个月里都动过。如果你正在评估它，请在准备购买时核对官方数字。我今天写的这些，明天可能就已经稍有不同了。
 

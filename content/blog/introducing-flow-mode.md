@@ -6,7 +6,7 @@ date: "2026-08-19"
 author: "Remy"
 category: "Product Updates"
 tags: ["Flow Mode"]
-cover: "/blog/images/introducing-flow-mode/1787110344906-2931cdb2-0395-4367-927b-41b769591fc0.png"
+cover: "/blog/images/introducing-flow-mode/1787110344906-2931cdb2-0395-4367-927b-41b769591fc0.webp"
 locale: "en"
 draft: false
 ---

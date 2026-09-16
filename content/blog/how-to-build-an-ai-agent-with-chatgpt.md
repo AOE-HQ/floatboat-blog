@@ -6,7 +6,7 @@ date: "2026-05-19"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182678556-ccbcfcb2-5c42-46b8-a82e-7d13e9ec7fa7.png"
+cover: "/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182678556-ccbcfcb2-5c42-46b8-a82e-7d13e9ec7fa7.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ What it can't do — at least not in the Custom GPT format — is take actions o
 
 The sweet spot for Custom GPTs is **repeatable, well-defined tasks** where you'd otherwise paste the same instructions into a blank chat every time. If your task fits that description, keep reading.
 
-![h2.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182686832-25e4900e-7dac-44b3-ad0e-7e887b384af6.png)
+![h2.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182686832-25e4900e-7dac-44b3-ad0e-7e887b384af6.webp)
 
 ## Step 1: Turn One Task into a Repeatable Workflow
 
@@ -55,7 +55,7 @@ I'd add one thing from my own experience: ​**include 2–3 examples of good ou
 
 Oh, one detail that's easy to miss. As of early 2026, OpenAI has [retired several older models](<https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes>) including GPT-4o and various GPT-5.1 variants. If you're building a new GPT today, you're on GPT-5.2 or newer. Worth checking, because behavior varies between model generations.
 
-![h3.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182695411-06adc34b-a391-4bb3-8c16-ec27fe74e9e3.png)
+![h3.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182695411-06adc34b-a391-4bb3-8c16-ec27fe74e9e3.webp)
 
 ## Step 3: Define Permissions and Review Points
 
@@ -85,7 +85,7 @@ Most people test with their ideal input — clean, well-structured, best-case. T
 
 I rewrote my content research GPT's instructions twice based on testing alone. That loop — prompt, check, revise, repeat — is the actual work of ​**how to build AI agents** ​. The builder is just the interface.
 
-![h4.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182704348-40232f7e-f1b8-45ac-9596-f19cd79d05cf.png)
+![h4.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182704348-40232f7e-f1b8-45ac-9596-f19cd79d05cf.webp)
 
 ## When to Move Beyond ChatGPT
 
@@ -97,7 +97,7 @@ Custom GPTs also don't maintain memory across sessions. Each conversation starts
 
 The rule I use: if I'm spending more time working around a GPT's limitations than it's saving me, it's time to move to the next tool.
 
-![h5.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182712841-9be02d1a-d970-494d-8b6e-254c5c7c2b8f.png)
+![h5.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182712841-9be02d1a-d970-494d-8b6e-254c5c7c2b8f.webp)
 
 That's my honest take on how to build an AI agent with ChatGPT. It's less about the builder and more about being clear on the task, writing good instructions, and testing with real edge cases. The tooling is genuinely accessible — you don't need to code, you just need to think carefully about what you're delegating.
 

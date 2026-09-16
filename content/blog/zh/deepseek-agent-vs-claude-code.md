@@ -6,7 +6,7 @@ date: "2026-08-14"
 author: "Vera"
 category: "Tool Comparisons"
 tags: ["DeepSeek", "AI 编程", "Claude Code"]
-cover: "/blog/images/deepseek-agent-vs-claude-code/1785730534671-93151505-4783-42c7-a4f0-436a2962d0f0.png"
+cover: "/blog/images/deepseek-agent-vs-claude-code/1785730534671-93151505-4783-42c7-a4f0-436a2962d0f0.webp"
 locale: "zh"
 draft: false
 ---

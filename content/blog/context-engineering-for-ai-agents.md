@@ -6,7 +6,7 @@ date: "2026-07-01"
 author: "Pan Yang"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/context-engineering-for-ai-agents/1782897541424-e8cf18e8-43be-443a-9450-eca948c53826.png"
+cover: "/blog/images/context-engineering-for-ai-agents/1782897541424-e8cf18e8-43be-443a-9450-eca948c53826.webp"
 locale: "en"
 draft: false
 ---

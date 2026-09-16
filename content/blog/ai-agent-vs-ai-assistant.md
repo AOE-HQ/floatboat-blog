@@ -6,7 +6,7 @@ date: "2026-04-03"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/ai-agent-vs-ai-assistant/1773919300903-6c8781b3-4b98-47b2-abd6-027a7ac425ec.png"
+cover: "/blog/images/ai-agent-vs-ai-assistant/1773919300903-6c8781b3-4b98-47b2-abd6-027a7ac425ec.webp"
 locale: "en"
 draft: false
 ---
@@ -43,7 +43,7 @@ Scheduling, quick Q&A, summarizing a document, drafting a reply — these are th
 
 The practical rule I've started using: if I can describe the task in one or two sentences and I don't need the tool to remember anything from yesterday, an assistant is probably the right fit. The moment I catch myself copy-pasting context from a previous conversation into a new one, that's a signal I might need something else.
 
-![1.png](/blog/images/ai-agent-vs-ai-assistant/1775213428953-fa6d5508-2168-4dbe-b853-12c72b1eef09.png)
+![1.png](/blog/images/ai-agent-vs-ai-assistant/1775213428953-fa6d5508-2168-4dbe-b853-12c72b1eef09.webp)
 
 ## What an AI Agent Does Differently
 
@@ -87,7 +87,7 @@ I spent maybe three hours setting up the initial structure. After that I got tha
 
 That's not a promise about your experience. It's just what I noticed in mine. Tools like [n8n's agentic workflow documentation](<https://docs.n8n.io/advanced-ai/intro-tutorial/>) give a good sense of what the actual implementation looks like if you want to see it spelled out in technical terms.
 
-![2.png](/blog/images/ai-agent-vs-ai-assistant/1775213442227-4cff350b-6287-4a95-aa2b-a7decdc6407e.png)
+![2.png](/blog/images/ai-agent-vs-ai-assistant/1775213442227-4cff350b-6287-4a95-aa2b-a7decdc6407e.webp)
 
 ## Which One Do You Actually Need?
 
@@ -111,7 +111,7 @@ The line is also blurring at the architecture level. An assistant could serve as
 
 What I've started doing: instead of asking "is this an agent or an assistant," I ask — _how much does this system remember about me, and how much can it do without me holding its hand?_ Those two questions cut through the marketing noise pretty well.
 
-![3.png](/blog/images/ai-agent-vs-ai-assistant/1775213454090-50dbf26d-415a-45ae-9b7b-3e8fea1c4ea7.png)
+![3.png](/blog/images/ai-agent-vs-ai-assistant/1775213454090-50dbf26d-415a-45ae-9b7b-3e8fea1c4ea7.webp)
 
 Anyway — that's my understanding of it right now. Still learning. But at least the next time someone mentions "deploying an AI agent," I won't just nod along and secretly have no idea what makes it different from a chatbot.
 

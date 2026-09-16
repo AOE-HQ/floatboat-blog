@@ -6,7 +6,7 @@ date: "2026-07-15"
 author: "Eathen"
 category: "Calendar AI"
 tags: ["world-cup-2026-guide", "world-cup-2026-google-calendar-ics"]
-cover: "/blog/images/world-cup-2026-schedule/1782464350603-376acd2b-c815-490e-a0be-105fe9554a9e.png"
+cover: "/blog/images/world-cup-2026-schedule/1782464350603-376acd2b-c815-490e-a0be-105fe9554a9e.webp"
 locale: "en"
 draft: false
 ---

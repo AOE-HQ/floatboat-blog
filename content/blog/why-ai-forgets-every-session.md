@@ -6,7 +6,7 @@ date: "2026-04-07"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/why-ai-forgets-every-session/1775543445475-368990de-1c82-4614-90bf-4e1b6b851900.PNG"
+cover: "/blog/images/why-ai-forgets-every-session/1775543445475-368990de-1c82-4614-90bf-4e1b6b851900.webp"
 locale: "en"
 draft: false
 ---
@@ -33,7 +33,7 @@ The hidden productivity drain here is what researchers call ​"prompt engineeri
 
 The experience, as one researcher aptly put it, resembles visiting a website that logs you out after every page navigation — forcing you to re-authenticate repeatedly.
 
-![2.PNG](/blog/images/why-ai-forgets-every-session/1775543617241-3c6b0fc0-b1a0-4a8e-9d8b-8080d8b92874.PNG)
+![2.PNG](/blog/images/why-ai-forgets-every-session/1775543617241-3c6b0fc0-b1a0-4a8e-9d8b-8080d8b92874.webp)
 
 ## Why This Hurts One-Person Businesses More Than Teams
 
@@ -69,7 +69,7 @@ The third category is more practical: your AI doesn't know which files exist, ho
 
 This is where the gap between "AI assistant" and "AI that actually fits into your work" becomes most visible. A tool that doesn't know your workspace can assist with isolated tasks. It can't help you move a project forward.
 
-![3.PNG](/blog/images/why-ai-forgets-every-session/1775543626606-c4835ce8-b524-460c-88c5-926ac26142db.PNG)
+![3.PNG](/blog/images/why-ai-forgets-every-session/1775543626606-c4835ce8-b524-460c-88c5-926ac26142db.webp)
 
 ## Why Chat-Based AI Was Never Designed to Remember You
 
@@ -87,7 +87,7 @@ A workspace model works differently. Instead of starting fresh each session, the
 
 The distinction matters: sessions are conversations. Workspaces are infrastructure.
 
-![4.png](/blog/images/why-ai-forgets-every-session/1775543635826-fbf85c52-5bc3-45a1-858e-c6a436dfd646.png)
+![4.png](/blog/images/why-ai-forgets-every-session/1775543635826-fbf85c52-5bc3-45a1-858e-c6a436dfd646.webp)
 
 ## What "AI That Remembers You" Would Actually Look Like
 
@@ -123,7 +123,7 @@ For what it's worth: [Sphere Inc's analysis of AI context gaps](<https://www.sph
 
 I'm not sure I've fully figured out my own solution here. I'm still experimenting — some combinations work better than others for different types of projects. But I do know this: **the re-explanation tax is real, and naming it is the first step to fixing it.**
 
-![5.png](/blog/images/why-ai-forgets-every-session/1775543648701-03ac0ad6-590b-4a19-b418-3b9157fc917e.png)
+![5.png](/blog/images/why-ai-forgets-every-session/1775543648701-03ac0ad6-590b-4a19-b418-3b9157fc917e.webp)
 
 _This is based on my own experience running a solo content operation and the research I've been doing into AI memory architecture. I haven't been paid by anyone mentioned here. If you're experimenting with persistent context solutions, I'd genuinely be curious what you're finding — this space is moving fast and I'm still figuring parts of it out myself._
 

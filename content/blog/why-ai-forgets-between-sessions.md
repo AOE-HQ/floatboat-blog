@@ -6,7 +6,7 @@ date: "2026-04-10"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/why-ai-forgets-between-sessions/1775794175781-80a07b02-e821-4fbb-b39b-b94eb278860a.PNG"
+cover: "/blog/images/why-ai-forgets-between-sessions/1775794175781-80a07b02-e821-4fbb-b39b-b94eb278860a.webp"
 locale: "en"
 draft: false
 ---
@@ -35,7 +35,7 @@ The number: **roughly 8 to 12 minutes per session.** That doesn't sound terrible
 
 The frustrating part is that this time doesn't produce anything. No output, no progress — just re-establishing a baseline the AI should already have. For a solo founder, that hour is the difference between shipping something and pushing it to tomorrow.
 
-![22.PNG](/blog/images/why-ai-forgets-between-sessions/1775794270856-268c9e7f-9d36-424d-8994-a5f030624566.PNG)
+![22.PNG](/blog/images/why-ai-forgets-between-sessions/1775794270856-268c9e7f-9d36-424d-8994-a5f030624566.webp)
 
 ## Why This Matters More When You're Doing Five Jobs at Once
 
@@ -65,7 +65,7 @@ I've been thinking about this a lot, and I think the confusion starts with treat
 
 Huh. When I write it out like that, it becomes pretty clear why most AI setups feel incomplete. They're solving problem one and ignoring problems two and three.
 
-![33.png](/blog/images/why-ai-forgets-between-sessions/1775794284806-db0bfaed-2c66-4d67-ab2c-a6621ee14e45.png)
+![33.png](/blog/images/why-ai-forgets-between-sessions/1775794284806-db0bfaed-2c66-4d67-ab2c-a6621ee14e45.webp)
 
 ## Who Loses the Most from Stateless AI
 
@@ -95,7 +95,7 @@ A few newer tools are exploring this space. The category I'm watching most close
 
 I want to push it a bit before saying anything definitive about specific tools. But the direction feels clear: the next generation of AI for solo founders won't just be smarter models. It'll be ​**models that maintain continuity with your work** ​, and that changes everything about how useful they actually are.
 
-![44.png](/blog/images/why-ai-forgets-between-sessions/1775794296570-c8e7ad18-0d3f-4b42-b3cb-32057456fef7.png)
+![44.png](/blog/images/why-ai-forgets-between-sessions/1775794296570-c8e7ad18-0d3f-4b42-b3cb-32057456fef7.webp)
 
 That's where my thinking is on this right now. The shift from stateless chatbots to persistent AI environments is happening, but slowly. If you're running things on your own and feeling like your AI tools are making you repeat yourself constantly — it's not you. It's architecture. And it's the single biggest friction point I think this category needs to be solved.
 

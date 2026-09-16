@@ -6,7 +6,7 @@ date: "2026-05-07"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/ai-automation-agency-pricing/1773741753347-399bc4f1-9844-457f-8efd-6c76ac9ba8b5.png"
+cover: "/blog/images/ai-automation-agency-pricing/1773741753347-399bc4f1-9844-457f-8efd-6c76ac9ba8b5.webp"
 locale: "en"
 draft: false
 ---
@@ -25,7 +25,7 @@ The scope varies wildly. Some agencies focus on a single vertical — say, e-com
 
 The thing that matters most, though, isn't what they _can_ do. It's whether the specific automation they're proposing actually maps to a real bottleneck in your workflow. I've seen agencies propose beautiful systems for problems that didn't really exist.
 
-![1.png](/blog/images/ai-automation-agency-pricing/1778147196788-087223f6-ca65-4f2c-9e6c-c0f1ef6a76f6.png)
+![1.png](/blog/images/ai-automation-agency-pricing/1778147196788-087223f6-ca65-4f2c-9e6c-c0f1ef6a76f6.webp)
 
 ## How They Price Their Work
 
@@ -51,7 +51,7 @@ Some agencies charge per workflow or per automation run. This is less common but
 
 This can work well if your volume is predictable. It gets expensive fast if it's not. I haven't fully wrapped my head around which situations this model fits best — I'd say it's worth asking about but worth scrutinizing the math before agreeing.
 
-![2.png](/blog/images/ai-automation-agency-pricing/1778147224627-5f13455e-02e8-468a-a5e7-91f05479f8d0.png)
+![2.png](/blog/images/ai-automation-agency-pricing/1778147224627-5f13455e-02e8-468a-a5e7-91f05479f8d0.webp)
 
 ## What Drives the Cost Up or Down
 
@@ -79,7 +79,7 @@ Also commonly missing: performance benchmarking (did this actually save you time
 
 I'd ask about all of this before signing anything.
 
-![3.png](/blog/images/ai-automation-agency-pricing/1778147238416-2996d766-cb44-4b87-ae91-37c0bc9f9544.png)
+![3.png](/blog/images/ai-automation-agency-pricing/1778147238416-2996d766-cb44-4b87-ae91-37c0bc9f9544.webp)
 
 ## When Hiring One Makes Sense
 
@@ -117,7 +117,7 @@ These aren't generic "ask about their portfolio" questions. These are the ones t
 
 **"What does success look like in 90 days?"** If they can't answer this with something measurable, the engagement is going to be hard to evaluate after the fact.
 
-![4.png](/blog/images/ai-automation-agency-pricing/1778147254289-d2deeec5-01d8-48fc-943f-caafba1e277e.png)
+![4.png](/blog/images/ai-automation-agency-pricing/1778147254289-d2deeec5-01d8-48fc-943f-caafba1e277e.webp)
 
 That's my honest take on where ai automation agency pricing stands right now. The market is still maturing, the price ranges are wide, and the quality gap between agencies is real. If you're evaluating this spend, the best thing you can do is get specific — specific about what you need automated, specific about what success looks like, and specific about what happens after the build is done.
 

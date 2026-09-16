@@ -6,7 +6,7 @@ date: "2026-03-25"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/how-to-build-an-ai-agent/1774419094012-12b90959-f544-4cac-887f-83f62be9cb0f.PNG"
+cover: "/blog/images/how-to-build-an-ai-agent/1774419094012-12b90959-f544-4cac-887f-83f62be9cb0f.webp"
 locale: "en"
 draft: false
 ---
@@ -23,7 +23,7 @@ Let me clear this up first, because I was confused about it for way longer than 
 
 A chatbot answers questions. **An ​****[AI agent](<https://www.ibm.com/think/topics/ai-agents>)****​​ takes action.** It can plan multi-step tasks, use external tools, remember context across steps, and make decisions without you prompting it at every turn. The difference sounds subtle until you try to build one.
 
-![2.PNG](/blog/images/how-to-build-an-ai-agent/1774419249726-02da6b63-c1f3-4c40-b9b9-2896277d7e0d.PNG)
+![2.PNG](/blog/images/how-to-build-an-ai-agent/1774419249726-02da6b63-c1f3-4c40-b9b9-2896277d7e0d.webp)
 
 ### What's happening under the hood: model, memory, tool calls, execution
 
@@ -57,7 +57,7 @@ This means writing Python (mostly), picking a framework, and wiring everything t
 
 The code path requires: Python comfort, basic API knowledge, patience for debugging, and willingness to read a lot of error logs.
 
-![3.PNG](/blog/images/how-to-build-an-ai-agent/1774419261911-afbbdd03-4dad-4632-958d-93d368ad2f22.PNG)
+![3.PNG](/blog/images/how-to-build-an-ai-agent/1774419261911-afbbdd03-4dad-4632-958d-93d368ad2f22.webp)
 
 ### The no-code path — what builders can and can't do
 
@@ -93,7 +93,7 @@ From what I've seen and read:
 
 **Over-engineering architecture.** Over 40% of agentic AI projects risk cancellation due to poor architecture decisions and unclear deployment strategies. The answer is almost always: start with the simplest possible version.
 
-![4.png](/blog/images/how-to-build-an-ai-agent/1774419275409-20ea7a05-7023-4669-989d-b5ce64f0df61.png)
+![4.png](/blog/images/how-to-build-an-ai-agent/1774419275409-20ea7a05-7023-4669-989d-b5ce64f0df61.webp)
 
 ## Who Should Actually Build Their Own
 
@@ -147,7 +147,7 @@ Before you write a single line of code — or open any tool — ask yourself the
 
 If you've answered all three and still want to build — go for it. The ecosystem is genuinely good right now. Just go in with clear eyes about what you're actually taking on.
 
-![5.png](/blog/images/how-to-build-an-ai-agent/1774419289200-db663991-6fcb-4bc9-be2f-4f4376a1bffe.png)
+![5.png](/blog/images/how-to-build-an-ai-agent/1774419289200-db663991-6fcb-4bc9-be2f-4f4376a1bffe.webp)
 
 _Anyway — that's where I've landed after spending way too many evenings reading docs and watching agents do unexpected things._
 

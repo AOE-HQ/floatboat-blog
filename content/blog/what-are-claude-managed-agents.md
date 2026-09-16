@@ -6,7 +6,7 @@ date: "2026-04-10"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/what-are-claude-managed-agents/1775730561883-47b39a9c-89b4-4323-a051-3a97af2dda5e.png"
+cover: "/blog/images/what-are-claude-managed-agents/1775730561883-47b39a9c-89b4-4323-a051-3a97af2dda5e.webp"
 locale: "en"
 draft: false
 ---
@@ -17,7 +17,7 @@ Wait. That's not a model update. That's not a new chat feature. That's Anthropic
 
 Hi, I’m Nova! Here's what I found.
 
-![2.png](/blog/images/what-are-claude-managed-agents/1775730586728-6d11b474-4b85-486d-9184-c0ffd522defc.png)
+![2.png](/blog/images/what-are-claude-managed-agents/1775730586728-6d11b474-4b85-486d-9184-c0ffd522defc.webp)
 
 ## What Claude Managed Agents Actually Is
 
@@ -25,13 +25,13 @@ The clearest way I can put it: **Claude Managed Agents is infrastructure, not a 
 
 The Claude Platform now offers two paths: direct model access where you build your own conversation loop, and fully managed agent infrastructure where Anthropic handles stateful sessions and persistent event history. Claude Managed Agents is the second path. You can see both options laid out in the [Claude API documentation](<https://platform.claude.com/docs/en/home>), which is where I'd start if you want the technical picture.
 
-![3.png](/blog/images/what-are-claude-managed-agents/1775730604254-8c285a71-a0b0-43dd-ae4f-6b1c6421cb39.png)
+![3.png](/blog/images/what-are-claude-managed-agents/1775730604254-8c285a71-a0b0-43dd-ae4f-6b1c6421cb39.webp)
 
 **It's a managed agent harness — not a new model.** The underlying AI is still Claude (Opus 4.6, Sonnet 4.6). What's new is the scaffolding around it. Managed Agents handles secure sandboxed code execution, authentication, checkpointing, scoped permissions, and persistent long-running sessions — all the plumbing that used to take engineering teams months to build themselves.
 
 ### A Meta-Harness, Not Just Another Tool
 
-![4.png](/blog/images/what-are-claude-managed-agents/1775730623124-70a80ac9-c523-4617-842a-f90deec73a40.png)
+![4.png](/blog/images/what-are-claude-managed-agents/1775730623124-70a80ac9-c523-4617-842a-f90deec73a40.webp)
 
 Anthropic's engineering team describes the design philosophy as "decoupling the brain from the hands." The detail that caught my attention: the session serves as a durable event log outside Claude's context window — if the system restarts or a container crashes, the agent picks up exactly where it left off using the recorded event stream. Disposable containers can fail and be replaced without losing progress. That's a real reliability guarantee. The Anthropic engineering blog post on [scaling managed agents](<https://www.anthropic.com/engineering/managed-agents>) goes deep on why they built it this way — worth reading if you're curious about the architecture thinking.
 
@@ -47,7 +47,7 @@ The key capabilities are minimal infrastructure (no need to build your own agent
 
 Sessions can run autonomously for hours, with outputs that persist even through disconnections. Multi-agent coordination — where one agent spins up and directs other agents to parallelize work — is available in research preview.
 
-![5.png](/blog/images/what-are-claude-managed-agents/1775730635313-a66b0135-a330-4f9e-a480-9c056117994e.png)
+![5.png](/blog/images/what-are-claude-managed-agents/1775730635313-a66b0135-a330-4f9e-a480-9c056117994e.webp)
 
 ### The Intended User: Dev Teams and Agent Platform Builders
 
@@ -59,7 +59,7 @@ Early adopters tell the story clearly. The initial user base includes Notion, Ra
 
 **This is a developer tool. Specifically, it's for teams building products that include AI agents.** Not for solo operators who want a smarter assistant.
 
-![6.png](/blog/images/what-are-claude-managed-agents/1775730648441-f3377238-255d-470a-9835-f3845068f333.png)
+![6.png](/blog/images/what-are-claude-managed-agents/1775730648441-f3377238-255d-470a-9835-f3845068f333.webp)
 
 ## What It Doesn't Do
 
@@ -73,7 +73,7 @@ If you were hoping for something like "a really powerful Claude that can do long
 
 Pricing runs on two dimensions. All tokens consumed by a session are billed at standard Claude Platform rates, plus $0.08 per session-hour of active runtime — with idle time not counting toward that billing. You can find the exact breakdown on the [Managed Agents pricing page](<https://platform.claude.com/docs/en/about-claude/pricing>). Accessible for a dev team, but there's nothing to install or subscribe to as a regular user. You'd need to either build on top of it or use a product that's already integrated it.
 
-![7.png](/blog/images/what-are-claude-managed-agents/1775730661291-ec410158-091c-45c8-9693-7b75e34ea6a7.png)
+![7.png](/blog/images/what-are-claude-managed-agents/1775730661291-ec410158-091c-45c8-9693-7b75e34ea6a7.webp)
 
 ## Why This Launch Matters Even if You Won't Use It
 

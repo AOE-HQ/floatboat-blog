@@ -6,7 +6,7 @@ date: "2026-09-04"
 author: "Kostja"
 category: "Model & Benchmarks"
 tags: ["Label"]
-cover: "/blog/images/gpt-6-astra/1788496075502-7b01a53f-db8d-49cb-8844-0afcaa9d04aa.png"
+cover: "/blog/images/gpt-6-astra/1788496075502-7b01a53f-db8d-49cb-8844-0afcaa9d04aa.webp"
 locale: "en"
 draft: false
 ---

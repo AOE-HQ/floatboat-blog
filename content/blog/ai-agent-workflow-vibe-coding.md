@@ -6,7 +6,7 @@ date: "2026-04-20"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/ai-agent-workflow-vibe-coding/1776651617043-2a925e03-5c61-429e-9390-e2c4cdf103db.png"
+cover: "/blog/images/ai-agent-workflow-vibe-coding/1776651617043-2a925e03-5c61-429e-9390-e2c4cdf103db.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ And it worked — at least in the beginning. By 2026, 72% of developers use AI-p
 
 But speed without structure isn't productivity. It's just faster debt accumulation.
 
-![2.png](/blog/images/ai-agent-workflow-vibe-coding/1776653246584-c6e218bb-11f3-4b33-b0c7-cf41d4ffaf9a.png)
+![2.png](/blog/images/ai-agent-workflow-vibe-coding/1776653246584-c6e218bb-11f3-4b33-b0c7-cf41d4ffaf9a.webp)
 
 ## Why Vibe Coding Breaks Without Structure
 
@@ -73,7 +73,7 @@ A simple structure that actually works:
 
 Not everywhere — that defeats the point. But at minimum: before merging any changes to main, and after any step that touches authentication, data handling, or external API calls. Those are the places where a "hallucinated bypass" — where an AI accidentally removes a security check — is most likely to occur.
 
-![3.png](/blog/images/ai-agent-workflow-vibe-coding/1776653272959-834b0551-c228-4876-a899-b8ef19c2329e.png)
+![3.png](/blog/images/ai-agent-workflow-vibe-coding/1776653272959-834b0551-c228-4876-a899-b8ef19c2329e.webp)
 
 ## AI Agent Workflow as a System (Not Prompts)
 
@@ -111,7 +111,7 @@ Run everything through version control. Every. Single. Change. The reason isn't 
 
 The GitFlow model maps cleanly: feature branches for each bounded task, PRs as human review checkpoints, main branch protected. The agent never commits directly to main. You do.
 
-![4.png](/blog/images/ai-agent-workflow-vibe-coding/1776653323969-b2e4daa4-29d0-4961-bc15-66b172245f9d.png)
+![4.png](/blog/images/ai-agent-workflow-vibe-coding/1776653323969-b2e4daa4-29d0-4961-bc15-66b172245f9d.webp)
 
 ## Which AI Coding Tools Fit Into the Workflow
 
@@ -143,7 +143,7 @@ The pattern is identical: spec first, bounded execution, human review before out
 
 It doesn't need to be code. It needs to be ​**intentional** ​.
 
-![5.png](/blog/images/ai-agent-workflow-vibe-coding/1776653352463-63d4f2af-a409-4845-8ed3-6135d15cb62f.png)
+![5.png](/blog/images/ai-agent-workflow-vibe-coding/1776653352463-63d4f2af-a409-4845-8ed3-6135d15cb62f.webp)
 
 As one practitioner I follow put it: the best results come when you apply classic software engineering discipline to your AI collaborations. Design before coding, write tests, use version control, maintain standards — these not only still apply, but are even more important when an AI is writing half your code.
 

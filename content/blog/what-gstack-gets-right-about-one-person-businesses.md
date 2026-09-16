@@ -6,7 +6,7 @@ date: "2026-04-06"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/what-gstack-gets-right-about-one-person-businesses/1775210711995-9c430fc3-3dfc-4182-a1e6-a0fba7026754.png"
+cover: "/blog/images/what-gstack-gets-right-about-one-person-businesses/1775210711995-9c430fc3-3dfc-4182-a1e6-a0fba7026754.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ The philosophy behind it: **most people treat AI as a universal tool, giving it 
 
 Wait... that idea is not just for developers.
 
-![2.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459016136-94e22b30-5d40-4c2a-8535-940e2a8b2832.png)
+![2.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459016136-94e22b30-5d40-4c2a-8535-940e2a8b2832.webp)
 
 ## The Problem That Role-Based Prompting Is Actually Solving
 
@@ -63,7 +63,7 @@ Same AI. Same information. The research phase took about 8 minutes longer. The t
 
 I can't give you a controlled experiment. But I've run this pattern consistently for the last three weeks and the revision ratio has held. That's enough for me to keep doing it.
 
-![3.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459030112-6a760160-8f09-465c-9722-d413ac5aad73.png)
+![3.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459030112-6a760160-8f09-465c-9722-d413ac5aad73.webp)
 
 ## Why This Works: The Cognitive Science Behind Role Assignment
 
@@ -89,7 +89,7 @@ But there's a real category of work — the messy middle of figuring out what pr
 
 This is actually where tools in the AI workspace category become relevant — not as a replacement for role-based prompting, but as a layer that holds context across sessions. [Floatboat](</>) approaches this through what they call a "Tacit Engine" — the idea that the workspace learns from your actual working patterns over time, so the role assignments carry forward rather than resetting. I've been using it for a few weeks. It's not a finished product, and I'm still figuring out how to structure my workflows without creating too much overhead. But the underlying logic — that role-based prompting gets more powerful when the AI already knows your context — that part makes sense to me.
 
-![4.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459040085-d71dae1a-98b1-417a-b922-e79b6eeec04f.png)
+![4.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459040085-d71dae1a-98b1-417a-b922-e79b6eeec04f.webp)
 
 ## A Practical Framework: How to Apply This Without Being a Developer
 
@@ -101,7 +101,7 @@ Here's how I've translated the gstack logic into a non-code workflow. Three step
 
 **Step 3: File outputs forward.** At the end of each session, save a 3–5 sentence summary of what you found and what you've decided. Start the next session by pasting it in as context. This is manual memory, but it works.
 
-![5.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459050612-f57596fb-c98c-4340-8674-2eefff60f69e.png)
+![5.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459050612-f57596fb-c98c-4340-8674-2eefff60f69e.webp)
 
 _Anyway, that's where I landed after three weeks of running this. The developer ​_ ​ _wrapper_ ​ _​ (gstack) is genuinely interesting for coders. The underlying idea — that AI gets sharper when it knows which hat it's wearing — applies to anyone doing complex work alone. I'm still experimenting with the details. But the basic pattern has stuck._
 

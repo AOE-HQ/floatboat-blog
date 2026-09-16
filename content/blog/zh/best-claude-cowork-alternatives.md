@@ -6,7 +6,7 @@ date: "2026-08-14"
 author: "Remy"
 category: "Tool Comparisons"
 tags: ["Claude Cowork", "AI 办公", "Agent 排行"]
-cover: "/blog/images/best-claude-cowork-alternatives/1786692501546-8cecc575-31de-4176-9b24-b826a40b200a.png"
+cover: "/blog/images/best-claude-cowork-alternatives/1786692501546-8cecc575-31de-4176-9b24-b826a40b200a.webp"
 locale: "zh"
 draft: false
 ---

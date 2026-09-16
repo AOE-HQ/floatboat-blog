@@ -6,7 +6,7 @@ date: "2026-05-27"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Google Calendar", "Apple Calendar", "日程管理", "单人创业者"]
-cover: "/blog/images/google-calendar-vs-apple-calendar/1779853771871-58a4101c-8cbd-4c2f-b80a-94cc7f25abfa.PNG"
+cover: "/blog/images/google-calendar-vs-apple-calendar/1779853771871-58a4101c-8cbd-4c2f-b80a-94cc7f25abfa.webp"
 locale: "zh"
 draft: false
 ---
@@ -25,7 +25,7 @@ draft: false
 
 但多数对比文章会跳过的一件事是：对不少人来说，**答案是两个都要**。我用 Google Calendar 处理一切工作相关的事，Apple Calendar 会自动在我的设备上收到这些事件——因为我在 iOS 设置里加了 Google 账号。这不是什么 workaround，而是我认识的大多数人真实的使用方式。
 
-![2.PNG](/blog/images/google-calendar-vs-apple-calendar/1779853840618-cf87aa2a-8a49-48f7-9dd5-06d6ae5b643d.PNG)
+![2.PNG](/blog/images/google-calendar-vs-apple-calendar/1779853840618-cf87aa2a-8a49-48f7-9dd5-06d6ae5b643d.webp)
 
 ## 生态契合度：Google Workspace vs Apple 设备
 
@@ -51,7 +51,7 @@ Apple 的日历里没有内置任务系统。它跟独立的提醒事项 App（R
 
 我不会丢下一句"看情况"就走人。如果你是整天在客户截止日、内容排期和跟进之间周旋的单人经营者——任务能和日历显示在同一屏上，这是真实的差异，不是功能清单上的一行字。
 
-![3.PNG](/blog/images/google-calendar-vs-apple-calendar/1779853851999-c40b889f-c2d0-4cf5-ab02-8f95dbb573ab.PNG)
+![3.PNG](/blog/images/google-calendar-vs-apple-calendar/1779853851999-c40b889f-c2d0-4cf5-ab02-8f95dbb573ab.webp)
 
 ## 同步与跨平台的取舍
 
@@ -73,7 +73,7 @@ Apple 的日历里没有内置任务系统。它跟独立的提醒事项 App（R
 
 我改变过一个看法。我以前以为，"排得井井有条的日历"是生产力的脊梁。填满每一格、给一切上色、给一切设提醒。然而——在一周塞满结束时，我回头看，会意识到日历确实满了，真正的工作却没往前挪。会开了，提醒响了。但跟进、准备、执行呢？每一次都还是落在我头上。
 
-![4.png](/blog/images/google-calendar-vs-apple-calendar/1779853864767-da755d30-5785-4387-a88a-869acf96f226.png)
+![4.png](/blog/images/google-calendar-vs-apple-calendar/1779853864767-da755d30-5785-4387-a88a-869acf96f226.webp)
 
 **日历告诉你"什么时候"。它不替你干活。**
 
@@ -85,7 +85,7 @@ Apple 的日历里没有内置任务系统。它跟独立的提醒事项 App（R
 
 我正是这样开始研究 [Floatboat](</>) 的。它不是要取代 Google Calendar 或 Apple Calendar——它排在它们后面。日历握着承诺（会议、截止日、跟进），Floatboat 用 Agent 把这些承诺往前推：不用你开口就备好会议 brief、根据上下文生成跟进草稿、让重复性工作循环自动转起来而不必每周一重建同一套流程。我用它还不久，但"不是再来一个提醒，而是真正把下一步做掉的东西"这个概念，是我今年探索过的最有意思的转变。
 
-![5.png](/blog/images/google-calendar-vs-apple-calendar/1779853874835-7180bfeb-d5e2-4523-a9c2-6ba4f9b1c035.png)
+![5.png](/blog/images/google-calendar-vs-apple-calendar/1779853874835-7180bfeb-d5e2-4523-a9c2-6ba4f9b1c035.webp)
 
 这就是我诚实的看法。"哪个更好"这个问法其实有点误导——真正要紧的是哪个贴合你的工作方式。而如果你已经解决了那一部分、一周下来却仍然像在手动追着日历冒出来的每件事跑——也许下一个问题就不是"该用哪个日历"，而是"提醒响了之后会发生什么"。这正是 Floatboat 登场的地方，也是我最近一直在花时间琢磨的地方。
 

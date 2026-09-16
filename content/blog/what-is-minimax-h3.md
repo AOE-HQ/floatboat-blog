@@ -6,7 +6,7 @@ date: "2026-08-04"
 author: "Jade"
 category: "Model & Benchmarks"
 tags: ["Label"]
-cover: "/blog/images/what-is-minimax-h3/1785813221388-1557c06d-300d-4ec4-a4a9-d496cbd7c094.png"
+cover: "/blog/images/what-is-minimax-h3/1785813221388-1557c06d-300d-4ec4-a4a9-d496cbd7c094.webp"
 locale: "en"
 draft: false
 ---

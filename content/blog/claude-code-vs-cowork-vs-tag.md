@@ -6,7 +6,7 @@ date: "2026-08-14"
 author: "Remy"
 category: "Tool Comparisons"
 tags: ["Claude"]
-cover: "/blog/images/claude-code-vs-cowork-vs-tag/1786687033982-e9da752d-a2de-41e8-8759-2602ab61ecd4.png"
+cover: "/blog/images/claude-code-vs-cowork-vs-tag/1786687033982-e9da752d-a2de-41e8-8759-2602ab61ecd4.webp"
 locale: "en"
 draft: false
 ---

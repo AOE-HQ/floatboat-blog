@@ -6,7 +6,7 @@ date: "2026-04-24"
 author: "Nova"
 category: "Model & Benchmarks"
 tags: ["Label"]
-cover: "/blog/images/openai-gpt-6-one-person-company/1776999283525-c20f585a-37dc-40e8-810c-5599543af31d.PNG"
+cover: "/blog/images/openai-gpt-6-one-person-company/1776999283525-c20f585a-37dc-40e8-810c-5599543af31d.webp"
 locale: "en"
 draft: false
 ---
@@ -29,7 +29,7 @@ What [Altman has said publicly is more useful ](<https://www.reddit.com/r/ChatGP
 
 I'd treat any article giving you GPT-6 benchmarks right now as fan fiction.
 
-![2.PNG](/blog/images/openai-gpt-6-one-person-company/1776999379453-6ad29803-06c1-4dc1-bd12-09aa45f459f7.PNG)
+![2.PNG](/blog/images/openai-gpt-6-one-person-company/1776999379453-6ad29803-06c1-4dc1-bd12-09aa45f459f7.webp)
 
 ### Timeline estimates from public sources
 
@@ -63,7 +63,7 @@ A better model makes Step 3 faster. Steps 1, 2, 4, and 5 stay exactly as slow as
 
 I've tried to reconstruct my own GPT-4-to-GPT-5 transition and be honest about speedup. Maybe 15% on tasks where I already had a dialed workflow. Zero to negative on tasks where I didn't — because now I was tweaking prompts again, running comparisons, second-guessing outputs that were probably fine.
 
-![3.PNG](/blog/images/openai-gpt-6-one-person-company/1776999389626-bc1b9921-324d-459e-aea2-cccbd6409f29.PNG)
+![3.PNG](/blog/images/openai-gpt-6-one-person-company/1776999389626-bc1b9921-324d-459e-aea2-cccbd6409f29.webp)
 
 ## More Power, Same Bottleneck
 
@@ -89,7 +89,7 @@ If this work lives in your head or in scattered prompts, a better model will giv
 
 I've been slowly moving my own repeatable stuff into a simple doc per workflow. Not fancy. Input format, prompt, example good output, example bad output. It takes an hour per workflow and pays back the first time I run it with a new model.
 
-![4.png](/blog/images/openai-gpt-6-one-person-company/1776999400545-0652390f-5e98-4310-9be2-7ca07d5418d4.png)
+![4.png](/blog/images/openai-gpt-6-one-person-company/1776999400545-0652390f-5e98-4310-9be2-7ca07d5418d4.webp)
 
 ### Build context systems that transfer to any model
 

@@ -6,7 +6,7 @@ date: "2026-05-14"
 author: "Nova"
 category: "Solo Operators"
 tags: ["AI 自动化", "AI Agent", "外包"]
-cover: "/blog/images/ai-automation-agency-do-you-need-one/1778749936764-b481a6a9-9fb7-4510-b116-a4b9f385b162.PNG"
+cover: "/blog/images/ai-automation-agency-do-you-need-one/1778749936764-b481a6a9-9fb7-4510-b116-a4b9f385b162.webp"
 locale: "zh"
 draft: false
 ---
@@ -27,7 +27,7 @@ draft: false
 
 **有一个数字值得记住**：据 [麦肯锡关于企业 AI 采用的研究](<https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai>)，前两年内从 AI 中获得 30–40% 生产率提升的企业，通常在任何供应商介入之前，就已经对问题有了清晰的内部主导权。
 
-![f3.PNG](/blog/images/ai-automation-agency-do-you-need-one/1778750096336-63e131c9-44a3-4be6-99e3-8263ca8f1e7f.PNG)
+![f3.PNG](/blog/images/ai-automation-agency-do-you-need-one/1778750096336-63e131c9-44a3-4be6-99e3-8263ca8f1e7f.webp)
 
 ## 机构应该交付什么
 
@@ -51,7 +51,7 @@ draft: false
 
 如果一家机构的提案缺了这四样中的任何一样，那就是你的第一个危险信号。
 
-![f4.PNG](/blog/images/ai-automation-agency-do-you-need-one/1778750106055-3825ea79-14b0-433b-b4b0-b500be62c43b.PNG)
+![f4.PNG](/blog/images/ai-automation-agency-do-you-need-one/1778750106055-3825ea79-14b0-433b-b4b0-b500be62c43b.webp)
 
 ## 什么时候请机构确实值这个价
 
@@ -65,7 +65,7 @@ draft: false
 
 **速度比成本更重要。**有时快速上线的商业理由，压得过内部建设能力的成本。如果你需要在八周内拿到可上线的东西而团队做不到，那么请一家专注的机构做一轮冲刺，就是正确的工具。
 
-![f5.png](/blog/images/ai-automation-agency-do-you-need-one/1778750118194-ea06217b-c1e6-41d4-bd7d-9a231bc7cd42.png)
+![f5.png](/blog/images/ai-automation-agency-do-you-need-one/1778750118194-ea06217b-c1e6-41d4-bd7d-9a231bc7cd42.webp)
 
 ## 范围、交接与供应商绑定风险
 
@@ -93,7 +93,7 @@ draft: false
 
 问这些问题不是为了抬杠——而是确立一种「诚实作答是默认预期」的专业基调。任何值得雇用的机构都会尊重这一点。那些一听就恼怒的，本身就在告诉你一件重要的事。
 
-![f6.png](/blog/images/ai-automation-agency-do-you-need-one/1778750146141-a6995a3a-6e87-4831-bbb8-b93a7b6cbb56.png)
+![f6.png](/blog/images/ai-automation-agency-do-you-need-one/1778750146141-a6995a3a-6e87-4831-bbb8-b93a7b6cbb56.webp)
 
 关于**AI 自动化公司服务**的一句实话：好的机构确实有价值，平庸的机构则是昂贵的耗时间机器，留下的是你团队里没人能维护的系统。差别通常不会在销售过程中显现——它会出现在交接环节。所以，在签任何字之前，先要求看看交接会长什么样。这一个要求，比一小时的演示更能说明问题。
 

@@ -6,7 +6,7 @@ date: "2026-03-20"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/ai-agent-vs-chatbot/1773995253824-ec39f596-77b6-490c-9065-00ea116e745f.png"
+cover: "/blog/images/ai-agent-vs-chatbot/1773995253824-ec39f596-77b6-490c-9065-00ea116e745f.webp"
 locale: "en"
 draft: false
 ---
@@ -21,7 +21,7 @@ But then I started building small AI workflows for my own projects, and I kept h
 
 That gap — between getting an answer and actually getting something _done_ — is exactly where the **ai agent vs chatbot** distinction starts to matter. Once you see it clearly, it's hard to unsee.
 
-![2.png](/blog/images/ai-agent-vs-chatbot/1773995481785-08089f22-c8f9-4ba5-88c5-8c17f06977d4.png)
+![2.png](/blog/images/ai-agent-vs-chatbot/1773995481785-08089f22-c8f9-4ba5-88c5-8c17f06977d4.webp)
 
 ## What Chatbots Are Built to Do
 
@@ -57,7 +57,7 @@ The real unlock is ​**tool access** ​. Agents can call APIs, read and write 
 
 Memory is the other piece. Agents can store context across sessions, recall past decisions, and build up knowledge over time. That's what makes "pick up where we left off" actually possible. As OpenAI's practical guide to building agents describes, agents execute workflows end-to-end and are well-suited for use cases involving complex decisions, unstructured data, or tasks that require reasoning through ambiguity — exactly the conditions where chatbots start to struggle.
 
-![3.png](/blog/images/ai-agent-vs-chatbot/1773995495008-ecb8cfe8-34f1-4bec-a90f-72ff5c6a9f77.png)
+![3.png](/blog/images/ai-agent-vs-chatbot/1773995495008-ecb8cfe8-34f1-4bec-a90f-72ff5c6a9f77.webp)
 
 ## Key Differences Side by Side
 
@@ -81,7 +81,7 @@ Ask yourself "monitor this competitor's site every morning, summarize new conten
 
 There's also a practical cost consideration worth knowing: ​**agents are more expensive to run** ​. Each step in a plan typically requires at least one LLM call. A three-step agent task can easily cost 5–10x more than a single chatbot response. For simple, well-defined queries, that overhead is pure waste.
 
-![4.png](/blog/images/ai-agent-vs-chatbot/1773995506312-b930166e-9009-429e-923d-8fefc0407a58.png)
+![4.png](/blog/images/ai-agent-vs-chatbot/1773995506312-b930166e-9009-429e-923d-8fefc0407a58.webp)
 
 ## Two Misconceptions Worth Clearing Up
 
@@ -99,7 +99,7 @@ Anthropic explicitly notes that agentic systems often trade latency and cost for
 
 The right framing, according to [IBM's analysis of chatbot and agent use cases](<https://www.ibm.com/think/topics/chatbot-use-cases>), is that **chatbots, AI assistants, and agents represent different levels of technological sophistication** — and the right level depends entirely on the task, not on which sounds more impressive.
 
-![5.png](/blog/images/ai-agent-vs-chatbot/1773995519379-533e36ba-7e7b-4420-8157-5f2f635510ba.png)
+![5.png](/blog/images/ai-agent-vs-chatbot/1773995519379-533e36ba-7e7b-4420-8157-5f2f635510ba.webp)
 
 Alright, that's the distinction I've been meaning to write out properly. The short version: ​**chatbots handle conversations, agents handle tasks** ​. The line blurs in practice, which is why the terminology gets messy — but the underlying architecture really is different, and knowing which one you need makes a real difference when you're choosing tools or building workflows.
 

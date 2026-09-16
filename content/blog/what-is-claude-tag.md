@@ -6,7 +6,7 @@ date: "2026-08-14"
 author: "Jade"
 category: "AI Agents"
 tags: ["Claude"]
-cover: "/blog/images/what-is-claude-tag/1785400760013-75037f09-35a5-49b4-ac29-729fff4919c9.png"
+cover: "/blog/images/what-is-claude-tag/1785400760013-75037f09-35a5-49b4-ac29-729fff4919c9.webp"
 locale: "en"
 draft: false
 ---

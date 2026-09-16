@@ -6,7 +6,7 @@ date: "2026-09-03"
 author: "Kostja"
 category: "Model & Benchmarks"
 tags: ["Gemini 3.8 Flash", "Gemini", "AI 模型", "编程 Agent", "单人创业者"]
-cover: "/blog/images/gemini-3-8-flash/1788429571027-26680f28-3ebd-4c33-8fb3-1e4fab795481.png"
+cover: "/blog/images/gemini-3-8-flash/1788429571027-26680f28-3ebd-4c33-8fb3-1e4fab795481.webp"
 locale: "zh"
 draft: false
 ---

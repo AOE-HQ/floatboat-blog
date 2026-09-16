@@ -6,7 +6,7 @@ date: "2026-04-06"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/claude-code-non-developers-solo-operators/1775098065738-f9bed4bf-5721-4992-a329-098c1a022f2b.png"
+cover: "/blog/images/claude-code-non-developers-solo-operators/1775098065738-f9bed4bf-5721-4992-a329-098c1a022f2b.webp"
 locale: "en"
 draft: false
 ---
@@ -43,7 +43,7 @@ Before going further, it helps to have a clear mental model of what's what:
 
 Anthropic's [official Cowork documentation](<https://support.claude.com/en/articles/13345190-get-started-with-cowork>) describes it as "Claude Code's agentic capabilities accessible within Claude Desktop and without opening the terminal." It's the same underlying architecture, designed for people who don't want to touch a terminal.
 
-![1.png](/blog/images/claude-code-non-developers-solo-operators/1775460413534-288bdaf5-43f6-48e2-80a7-5be3073ca5fd.png)
+![1.png](/blog/images/claude-code-non-developers-solo-operators/1775460413534-288bdaf5-43f6-48e2-80a7-5be3073ca5fd.webp)
 
 ## Who Claude Code Is Really Built For
 
@@ -95,7 +95,7 @@ I ended up building a quick self-evaluation after thinking through a dozen diffe
 
 Hm. That actually simplifies a lot of the confusion I see in people's DMs.
 
-![2.png](/blog/images/claude-code-non-developers-solo-operators/1775460427220-48c264e1-01fe-473c-93f2-1c7b4e2a9e48.png)
+![2.png](/blog/images/claude-code-non-developers-solo-operators/1775460427220-48c264e1-01fe-473c-93f2-1c7b4e2a9e48.webp)
 
 ## What You Probably Need Instead
 
@@ -133,7 +133,7 @@ Going deep on Claude's existing chat features, Projects, and Cowork will help yo
 
 Build tools when you have a reason to. Use tools when they already exist. Most of the time, they do.
 
-![3.png](/blog/images/claude-code-non-developers-solo-operators/1775460439196-3bc0cdbd-8310-4227-9584-2a5126d31a5b.png)
+![3.png](/blog/images/claude-code-non-developers-solo-operators/1775460439196-3bc0cdbd-8310-4227-9584-2a5126d31a5b.webp)
 
 ## Verdict
 

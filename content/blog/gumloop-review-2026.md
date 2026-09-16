@@ -6,7 +6,7 @@ date: "2026-03-23"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/gumloop-review-2026/1774256136741-8c5fad55-61e8-4d7d-8cc2-cbb506963241.png"
+cover: "/blog/images/gumloop-review-2026/1774256136741-8c5fad55-61e8-4d7d-8cc2-cbb506963241.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ You build "flows" by stacking nodes — each one handles a discrete task. One sc
 
 Sounds smooth in theory. In practice? It depends a lot on what you're trying to automate — and how clearly you can map that out as a sequence of steps.
 
-![2.png](/blog/images/gumloop-review-2026/1774256602488-a577790c-7cae-499a-963c-aea7725354fe.png)
+![2.png](/blog/images/gumloop-review-2026/1774256602488-a577790c-7cae-499a-963c-aea7725354fe.webp)
 
 ## Where It Genuinely Shines
 
@@ -57,7 +57,7 @@ Let's be honest about this. Several users mention that it took them 50–100 hou
 
 If you're a solo operator who already juggles content, client work, admin, _and_ your own learning curve — that's a non-trivial investment. This isn't the tool you spin up in an afternoon.
 
-![3.png](/blog/images/gumloop-review-2026/1774256617943-2315a1e0-c658-4252-8f4d-851d922ff4d5.png)
+![3.png](/blog/images/gumloop-review-2026/1774256617943-2315a1e0-c658-4252-8f4d-851d922ff4d5.webp)
 
 ### Context continuity: what it handles and what it doesn't
 
@@ -79,7 +79,7 @@ The credit system is where pricing gets tricky. **Standard AI calls cost around 
 
 Overage charges apply at $0.005 per credit, with no automatic shutoff — so a Solo plan user exceeding their allocation by 15,000 credits would pay $75 in overages. Check the [official Gumloop pricing page ](<https://www.gumloop.com/pricing>)before committing, since tiers and credit structures have shifted as the product matures.
 
-![4.png](/blog/images/gumloop-review-2026/1774256629584-868f68d2-9e14-410d-9be8-7c7bb7a2667f.png)
+![4.png](/blog/images/gumloop-review-2026/1774256629584-868f68d2-9e14-410d-9be8-7c7bb7a2667f.webp)
 
 ## Who It's Best For — And Who Might Want Something Different
 
@@ -95,7 +95,7 @@ This is where I land personally. If your days look like: write something, resear
 
 It also assumes a certain type of automation need: **high-volume, low-variation tasks.** If what you actually need is a thinking partner or a tool that can handle ambiguity — that's a different product category. Tools like [n8n](<https://n8n.io/>) (open-source, self-hosted) might suit technical solo builders better on cost; simpler tools might suit lighter needs.
 
-![5.png](/blog/images/gumloop-review-2026/1774256641947-3e99ec7c-014a-4cb9-b5a1-03534423a3ee.png)
+![5.png](/blog/images/gumloop-review-2026/1774256641947-3e99ec7c-014a-4cb9-b5a1-03534423a3ee.webp)
 
 ## Final Take
 

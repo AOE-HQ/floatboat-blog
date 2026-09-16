@@ -6,7 +6,7 @@ date: "2026-05-20"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/html-vs-markdown-ai-output/1779257593926-ca23f8cc-a57b-46ae-a8de-5bb5df0cb95a.JPEG"
+cover: "/blog/images/html-vs-markdown-ai-output/1779257593926-ca23f8cc-a57b-46ae-a8de-5bb5df0cb95a.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ Before I get into the reasoning, here's the cheat sheet I keep in my head. Four 
 
 That's the short version. The rest of this article is the "why" behind each cell.
 
-![2.PNG](/blog/images/html-vs-markdown-ai-output/1779257703236-364222d3-afd9-45e9-944c-5987e5d1d98b.PNG)
+![2.PNG](/blog/images/html-vs-markdown-ai-output/1779257703236-364222d3-afd9-45e9-944c-5987e5d1d98b.webp)
 
 ## Use Markdown When the Output Is Internal, Editable, or Versioned
 
@@ -63,7 +63,7 @@ Here's how I think about when HTML artifacts earn their place:
 
 The pattern: **when the output is meant to be read, compared, or acted on by a human, ​HTML** ​**​ earns the extra weight.**
 
-![3.PNG](/blog/images/html-vs-markdown-ai-output/1779257716630-6dd7dde5-eee0-4078-81c7-941064b412e0.PNG)
+![3.PNG](/blog/images/html-vs-markdown-ai-output/1779257716630-6dd7dde5-eee0-4078-81c7-941064b412e0.webp)
 
 ## Token Cost and Maintenance Trade-Offs
 
@@ -97,9 +97,9 @@ If you're a solo operator — content, strategy, delivery, all of it — here's 
 
 The default I've landed on: ​**draft and iterate in ​Markdown** ​, then convert or refine to ​HTML**​** ​ when delivering to humans. This hybrid workflow means I get Markdown's editability during the thinking phase and HTML's readability for the shipping phase. I've been using this for a few weeks now and it feels right — though I'll know more once I've hit more edge cases.
 
-![4.png](/blog/images/html-vs-markdown-ai-output/1779257727850-b81e9a55-b5e0-455f-b979-9c3e45cc7d9d.png)
+![4.png](/blog/images/html-vs-markdown-ai-output/1779257727850-b81e9a55-b5e0-455f-b979-9c3e45cc7d9d.webp)
 
-![5.png](/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.png)
+![5.png](/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.webp)
 
 That's the framework. It's not complicated, but it took me a while to land on something this clear. The real difference isn't HTML vs Markdown — it's knowing which one matches the job you're doing right now. That one small piece figured out.
 

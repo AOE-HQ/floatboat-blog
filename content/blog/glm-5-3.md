@@ -6,7 +6,7 @@ date: "2026-08-14"
 author: "Ketd"
 category: "Model & Benchmarks"
 tags: ["GLM 5.3"]
-cover: "/blog/images/glm-5-3/1786705345048-ef58ddfc-0ff2-4628-bb9b-318bf047f6d3.png"
+cover: "/blog/images/glm-5-3/1786705345048-ef58ddfc-0ff2-4628-bb9b-318bf047f6d3.webp"
 locale: "en"
 draft: false
 ---

@@ -6,7 +6,7 @@ date: "2026-04-17"
 author: "Nova"
 category: "Model & Benchmarks"
 tags: ["Label"]
-cover: "/blog/images/deepseek-v4-api-solo-operator/1776413247809-72ec2a34-7233-43a8-a56d-c9064bb29c82.PNG"
+cover: "/blog/images/deepseek-v4-api-solo-operator/1776413247809-72ec2a34-7233-43a8-a56d-c9064bb29c82.webp"
 locale: "en"
 draft: false
 ---
@@ -19,7 +19,7 @@ Before getting into the analysis, one important caveat: ​**as of mid-April 202
 
 With that said — here's what we know, what it means in practice, and whether the cost story actually changes anything for solo operators.
 
-![2.PNG](/blog/images/deepseek-v4-api-solo-operator/1776413461448-d1c3274b-41e7-4d31-a4be-9a59ffc43c71.PNG)
+![2.PNG](/blog/images/deepseek-v4-api-solo-operator/1776413461448-d1c3274b-41e7-4d31-a4be-9a59ffc43c71.webp)
 
 ### What Is DeepSeek V4
 
@@ -39,7 +39,7 @@ For a deep technical walkthrough of how these components fit together, DeepSeek'
 
 On March 9, Chinese tech media reported that DeepSeek's website showed a model update with expanded context handling — the developer community called it "V4 Lite." DeepSeek hasn't officially confirmed specs, but the pattern from previous releases suggests a staged rollout: a lighter variant first, then the full model. I'd expect V4 Lite to be usable with less compute and potentially lower pricing — similar to how the V3.2 line positioned itself against R1.
 
-![3.PNG](/blog/images/deepseek-v4-api-solo-operator/1776413632447-73e65788-435c-462e-9a96-cc8e9b3a43af.PNG)
+![3.PNG](/blog/images/deepseek-v4-api-solo-operator/1776413632447-73e65788-435c-462e-9a96-cc8e9b3a43af.webp)
 
 ## DeepSeek V4 API Pricing vs Alternatives
 
@@ -69,7 +69,7 @@ For most solo builders I know, we're nowhere near 50M tokens/day. The API is the
 
 The model weights will be on Hugging Face and GitHub. The API endpoint lives at [api.deepseek.com](<http://api.deepseek.com>). Worth bookmarking both.
 
-![4.png](/blog/images/deepseek-v4-api-solo-operator/1776413656912-e0bed04f-03ea-492e-af8a-df448e2a6106.png)
+![4.png](/blog/images/deepseek-v4-api-solo-operator/1776413656912-e0bed04f-03ea-492e-af8a-df448e2a6106.webp)
 
 ## Does Cheaper Inference Change How Solo Operators Work?
 
@@ -109,7 +109,7 @@ DeepSeek's claimed SWE-bench scores come from pre-release internal benchmarks on
 
 The tasks that still require the most time in my workflow — editing for voice, making judgment calls on ambiguous briefs, deciding what to cut — don't get faster or cheaper with cheaper tokens. The rate-limiting step is human attention, not compute.
 
-![5.png](/blog/images/deepseek-v4-api-solo-operator/1776413676104-f7443b82-7ffb-422d-8aed-5a639d75c7e1.png)
+![5.png](/blog/images/deepseek-v4-api-solo-operator/1776413676104-f7443b82-7ffb-422d-8aed-5a639d75c7e1.webp)
 
 ## Is DeepSeek V4 API Worth It for Solo Operators?
 
@@ -135,7 +135,7 @@ If reliability and ecosystem maturity matter more than cost — GPT-5.4 or Claud
 
 Also: if you have data privacy requirements, self-hosting is the only real option. The xAI [API documentation](<https://x.ai/api>) and OpenAI's platform are both more established for enterprise data handling at this point.
 
-![6.png](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.png)
+![6.png](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
 
 Anyway, that's where things stand. The cost story is real and the architecture improvements are interesting — but V4 isn't live yet, and cheaper tokens don't automatically mean better workflows. Worth keeping an eye on the next few weeks.
 

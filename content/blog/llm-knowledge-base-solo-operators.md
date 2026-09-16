@@ -6,7 +6,7 @@ date: "2026-04-06"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/llm-knowledge-base-solo-operators/1775455452599-90f54b5f-b9b3-446e-9364-3e42f65a83e6.png"
+cover: "/blog/images/llm-knowledge-base-solo-operators/1775455452599-90f54b5f-b9b3-446e-9364-3e42f65a83e6.webp"
 locale: "en"
 draft: false
 ---
@@ -29,7 +29,7 @@ Your Notion workspace is a place _you_ write things down. An **LLM​ knowledge 
 
 A PKM system like [Obsidian](<https://obsidian.md/>) (which Karpathy uses as the reading layer) requires you to connect ideas and revisit notes. The **LLM​ knowledge base** removes most of that manual layer — the AI creates backlinks, writes concept summaries, and runs "health checks" to find gaps.
 
-![2.png](/blog/images/llm-knowledge-base-solo-operators/1775455707565-08650822-8d2b-4773-88fc-07878e8657e1.png)
+![2.png](/blog/images/llm-knowledge-base-solo-operators/1775455707565-08650822-8d2b-4773-88fc-07878e8657e1.webp)
 
 ### What the Karpathy Workflow Gets Right — and Who It's Actually Built For
 
@@ -61,7 +61,7 @@ But the setup isn't the hard part. **Curation is the ongoing tax.**
 
 For the wiki to stay useful, you have to keep feeding it quality material. That means deciding what goes in, what doesn't, when to prune, when to re-run compilation. That decision-making overhead becomes its own workflow — what people in productivity circles call a "second job." The [Building a Second Brain](<https://www.buildingasecondbrain.com/>) community has documented this failure mode for years with simpler note-taking systems. An AI-compiled wiki doesn't automatically make that problem disappear.
 
-![3.png](/blog/images/llm-knowledge-base-solo-operators/1775455769712-5be6439d-de06-42cb-9a29-2d508868522c.png)
+![3.png](/blog/images/llm-knowledge-base-solo-operators/1775455769712-5be6439d-de06-42cb-9a29-2d508868522c.webp)
 
 <https://blog.langchain.dev/retrieval/>
 
@@ -89,7 +89,7 @@ Think about the tasks that actually eat your time: writing deliverables that fol
 
 This is why tools in the **AI workspace** category have started to make more sense for solo operators than DIY knowledge bases. Something like [Floatboat](</>) takes a different angle entirely — instead of having you build and curate a reference wiki, it learns from your actual working patterns (how you edit, decide, and iterate) and translates that into reusable AI workflows. It's less about storing what you know and more about automating how you work. The distinction feels small but in practice it's significant.
 
-![4.png](/blog/images/llm-knowledge-base-solo-operators/1775455799520-5874e134-2d7e-4ef6-8af4-eccd687f174d.png)
+![4.png](/blog/images/llm-knowledge-base-solo-operators/1775455799520-5874e134-2d7e-4ef6-8af4-eccd687f174d.webp)
 
 ## When Building an LLM Knowledge Base IS Worth It
 
@@ -123,7 +123,7 @@ Here's the simple version:
 
 If you answered yes to the first three and "knowing things" to the last one — this is worth exploring. Otherwise, an AI workspace that learns your execution patterns will probably serve you better.
 
-![5.png](/blog/images/llm-knowledge-base-solo-operators/1775455811586-28740780-4551-46c1-a6b8-5ff3c87fbb1a.png)
+![5.png](/blog/images/llm-knowledge-base-solo-operators/1775455811586-28740780-4551-46c1-a6b8-5ff3c87fbb1a.webp)
 
 _Anyway, that's where I landed. I'm still using Karpathy's post as a thinking tool — but not as a to-do list. If your situation actually fits the deep research profile, it's worth a serious look. For the rest of us: there might be a lighter path that gets you more of the benefit with less of the maintenance tax._
 

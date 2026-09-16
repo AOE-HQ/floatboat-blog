@@ -6,7 +6,7 @@ date: "2026-04-24"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/workspace-agents-vs-chat-assistants/1776999718549-5b1e23ce-2907-492f-9963-a02524c6ed7a.PNG"
+cover: "/blog/images/workspace-agents-vs-chat-assistants/1776999718549-5b1e23ce-2907-492f-9963-a02524c6ed7a.webp"
 locale: "en"
 draft: false
 ---
@@ -25,7 +25,7 @@ A chat assistant is a conversation. You open a box, you type, you read the answe
 
 I still use [ChatGPT](<https://openai.com/gpt-5/>) almost every day. So does pretty much everyone I know. It's the most natural interface anyone's built for "ask a smart system something." For quick questions, it's genuinely hard to beat.
 
-![2.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999740654-33cd6c61-9f51-423e-8d6d-4db122a501ba.PNG)
+![2.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999740654-33cd6c61-9f51-423e-8d6d-4db122a501ba.webp)
 
 ### Workspace agents: operate inside the work itself
 
@@ -51,7 +51,7 @@ With a chat assistant, the conversation happens inside the app's chat window. Yo
 
 With a workspace agent, the conversation happens next to (or inside) what you're working on. The agent isn't a place you visit. It's something you delegate to while staying in your own flow.
 
-![3.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999751177-38f3e25c-f470-4911-8cb5-ff10ed9afcb1.PNG)
+![3.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999751177-38f3e25c-f470-4911-8cb5-ff10ed9afcb1.webp)
 
 ### What AI can see and touch
 
@@ -73,7 +73,7 @@ For tasks like these, the setup cost of a workspace agent is pure overhead. I do
 
 I'd argue most solo operators still spend the majority of their AI time in this mode. I know I do.
 
-![4.png](/blog/images/workspace-agents-vs-chat-assistants/1776999760874-31231a87-0ef5-4b1f-b04f-61cc3b8e72c0.png)
+![4.png](/blog/images/workspace-agents-vs-chat-assistants/1776999760874-31231a87-0ef5-4b1f-b04f-61cc3b8e72c0.webp)
 
 ### Quick research, drafts, and one-off questions
 
@@ -101,7 +101,7 @@ This is where **workspace agents vs chat assistants** stops being a tie and beco
 
 The engineering challenge, as the field keeps rediscovering, is that _maintaining the right context_ becomes the defining problem as tasks get longer-horizon. Chat UIs weren't designed for that. Workspace UIs are.
 
-![5.png](/blog/images/workspace-agents-vs-chat-assistants/1776999769997-ac84c264-70bd-4725-ac36-920e79b4c427.png)
+![5.png](/blog/images/workspace-agents-vs-chat-assistants/1776999769997-ac84c264-70bd-4725-ac36-920e79b4c427.webp)
 
 ### Multi-role solo work
 
@@ -121,7 +121,7 @@ Time for the honest part. I've been more impressed with workspace agents lately,
 
 I've tried enough "game-changing" tools to know to wait and see on a lot of these.
 
-![6.png](/blog/images/workspace-agents-vs-chat-assistants/1776999784351-660eef5c-839d-4860-8e5b-03e0550406bb.png)
+![6.png](/blog/images/workspace-agents-vs-chat-assistants/1776999784351-660eef5c-839d-4860-8e5b-03e0550406bb.webp)
 
 ## How to choose: three practical questions
 

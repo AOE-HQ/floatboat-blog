@@ -6,7 +6,7 @@ date: "2026-04-14"
 author: "Nova"
 category: "Solo Operators"
 tags: ["LLM Wiki", "AI Agent", "知识管理"]
-cover: "/blog/images/what-is-llm-wiki/1776148737985-25d4a58e-bb1d-4197-a449-bfe2ca495d1d.png"
+cover: "/blog/images/what-is-llm-wiki/1776148737985-25d4a58e-bb1d-4197-a449-bfe2ca495d1d.webp"
 locale: "zh"
 draft: false
 ---
@@ -29,7 +29,7 @@ LLM wiki 把这件事翻了过来。不是即时检索原始文档，而是让 L
 
 这个比喻让我记住了。
 
-![2.png](/blog/images/what-is-llm-wiki/1776148819751-87607be9-70fc-4c53-85a0-0954d5cc9ca9.png)
+![2.png](/blog/images/what-is-llm-wiki/1776148819751-87607be9-70fc-4c53-85a0-0954d5cc9ca9.webp)
 
 ### 它怎么运作：原始素材、编译后的 wiki 与 Schema 层
 
@@ -51,7 +51,7 @@ Notion 或 Obsidian 这类传统笔记应用给你一个容器，但所有维护
 
 正如 [Analytics Vidhya 对 Karpathy 方法的拆解](<https://www.analyticsvidhya.com/blog/2026/04/llm-wiki-by-andrej-karpathy/>)所解释的，每新增一份素材，wiki 都变得更值钱，因为每一次吸收做的是整合（integrate），而不只是追加（append）。
 
-![3.png](/blog/images/what-is-llm-wiki/1776148835868-b86aa41a-ae09-4afd-8063-480d8965502f.png)
+![3.png](/blog/images/what-is-llm-wiki/1776148835868-b86aa41a-ae09-4afd-8063-480d8965502f.webp)
 
 ## Karpathy 的做法为什么爆火
 
@@ -79,7 +79,7 @@ Karpathy 转发并评价这件成品「显式、可导航」。重点不在于�
 
 这个案例很重要，因为它说明这个模式远不止学术研究适用。它适用于_任何_随时间积累知识的领域。而多数知识工作正是如此。
 
-![4.png](/blog/images/what-is-llm-wiki/1776148844507-69f786e7-f0f2-40bf-8c44-c85ed94817ad.png)
+![4.png](/blog/images/what-is-llm-wiki/1776148844507-69f786e7-f0f2-40bf-8c44-c85ed94817ad.webp)
 
 ## 它实际上为谁而建
 
@@ -123,7 +123,7 @@ LLM wiki 通过让知识_持久而显式_来解决它：AI 在 wiki 里导航，
 
 [Floatboat AI](</>) 之类的工具正在朝这个方向建——一个随时间学习你工作模式、而不是每会话从零开始的工作区。我还没拿足够多的真实工作流跑过它，给不出定论，但这个框架与 LLM wiki 所指的问题是同一个：让上下文复利，而不是重置。
 
-![5.png](/blog/images/what-is-llm-wiki/1776148854844-ad731b5c-a527-4da1-85c3-44bad00c024a.png)
+![5.png](/blog/images/what-is-llm-wiki/1776148854844-ad731b5c-a527-4da1-85c3-44bad00c024a.webp)
 
 ## 你该不该自己建一个 LLM wiki？
 
@@ -161,7 +161,7 @@ LLM wiki 通过让知识_持久而显式_来解决它：AI 在 wiki 里导航，
 
 这就是 [LLM](<https://techterms.com/definition/llm>) wiki 所指的产品品类。不是更好的 RAG，而是一个懂你怎么工作的工作区。
 
-![6.png](/blog/images/what-is-llm-wiki/1776148866360-405fe00c-6fed-475f-a61d-1503898579ec.png)
+![6.png](/blog/images/what-is-llm-wiki/1776148866360-405fe00c-6fed-475f-a61d-1503898579ec.webp)
 
 以上就是我对这件事目前的看法。这个模式真的很有意思——不是因为它颠覆了什么，而是因为它终于把问题讲清楚了，还给了它一套具体的架构。要不要自己建一个，几乎完全取决于两件事：你是否习惯跑 shell 命令，以及你的工作是否真的涉及随时间推移的深度领域积累。
 

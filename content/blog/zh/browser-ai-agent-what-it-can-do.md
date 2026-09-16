@@ -6,7 +6,7 @@ date: "2026-05-11"
 author: "Nova"
 category: "AI Agents"
 tags: ["浏览器 AI Agent", "AI Agent", "单人创业"]
-cover: "/blog/images/browser-ai-agent-what-it-can-do/1778482655208-315ad4a1-77a4-46d4-aa0b-4f1848273b52.PNG"
+cover: "/blog/images/browser-ai-agent-what-it-can-do/1778482655208-315ad4a1-77a4-46d4-aa0b-4f1848273b52.webp"
 locale: "zh"
 draft: false
 ---
@@ -27,7 +27,7 @@ draft: false
 
 浏览器 Agent _不是_ 什么：不是侧边栏里只能读你复制粘贴文字的聊天机器人。它的定义性特征是**Agent 能在网页上执行操作**——点按钮、填字段、在标签页之间跳转、从屏幕上抓取结构化数据。
 
-![what2.PNG](/blog/images/browser-ai-agent-what-it-can-do/1778482758671-db1464b0-28d9-4b14-aae0-1346c2cf07da.PNG)
+![what2.PNG](/blog/images/browser-ai-agent-what-it-can-do/1778482758671-db1464b0-28d9-4b14-aae0-1346c2cf07da.webp)
 
 ## 浏览器 AI Agent 真正擅长的 6 件事
 
@@ -47,7 +47,7 @@ draft: false
 
 每天早上要查三块仪表盘的同一组数字？Agent 可以逐个打开、抓取指标、汇成一份摘要。Claude 支持把它设成周期任务，Codex 则以标签页组为单位把它当后台任务跑。仪表盘布局保持稳定时效果最好。
 
-![what3.PNG](/blog/images/browser-ai-agent-what-it-can-do/1778482770015-689133be-f2cf-4302-8076-7de87980b605.PNG)
+![what3.PNG](/blog/images/browser-ai-agent-what-it-can-do/1778482770015-689133be-f2cf-4302-8076-7de87980b605.webp)
 
 ### 带引用的多标签页研究
 
@@ -77,7 +77,7 @@ draft: false
 
 浏览器 Agent 能提取数据、填模板，但它无法判断哪个方案角度更能打动某个具体客户，也无法评判一篇博文草稿的语气是否到位。**任何需要品味、策略或细腻判断的事，仍得靠你。** Agent 能备好输入，拍板的人是你。
 
-![what4.png](/blog/images/browser-ai-agent-what-it-can-do/1778482780459-e9fde336-c0d3-4f9f-8551-4f7c056b2ea8.png)
+![what4.png](/blog/images/browser-ai-agent-what-it-can-do/1778482780459-e9fde336-c0d3-4f9f-8551-4f7c056b2ea8.webp)
 
 ### 浏览器之外的一切——桌面应用、本地文件
 
@@ -97,7 +97,7 @@ Claude for Chrome 待在浏览器侧边栏里，能操作已开在 Chrome 标签
 
 Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍有 11.2% 的对抗性攻击得逞](<https://www.anthropic.com/research/prompt-injection-defenses>)。OpenAI 也承认，浏览器 Agent 里的提示注入「几乎不可能被彻底解决」。这些不是理论风险——研究人员已经发现真实存在的[野生间接提示注入载荷](<https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/>)，它们被埋在普通网站上，专等会浏览这些页面的 AI Agent 上钩。这不代表你不该用浏览器 Agent；而是说，高风险动作应当始终留在手动确认这道关卡后面。
 
-![what5.png](/blog/images/browser-ai-agent-what-it-can-do/1778482792348-c069ef6f-58c9-4820-bc61-f1478881ded4.png)
+![what5.png](/blog/images/browser-ai-agent-what-it-can-do/1778482792348-c069ef6f-58c9-4820-bc61-f1478881ded4.webp)
 
 ## 在浏览器里自动化任何东西之前，先做个三问自检
 
@@ -121,7 +121,7 @@ Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍
 
 对偏开发的运营者：浏览器 Agent 打理你已登录的 Web 工具；`localhost` 与开发服务器的工作走另一套机制（Codex 的应用内浏览器、Claude 的 Code 集成）。别指望 Chrome 扩展当你的测试环境——它是为你在生产环境里已登录的 Web 应用设计的。
 
-![what6.png](/blog/images/browser-ai-agent-what-it-can-do/1778482803512-df92f6f6-f8ef-4be0-814d-bc02406017f0.png)
+![what6.png](/blog/images/browser-ai-agent-what-it-can-do/1778482803512-df92f6f6-f8ef-4be0-814d-bc02406017f0.webp)
 
 ## 常见失败模式与如何尽早发现
 

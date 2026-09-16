@@ -6,7 +6,7 @@ date: "2026-04-06"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Claude Code", "单人创业", "Cowork", "AI 编程"]
-cover: "/blog/images/claude-code-non-developers-solo-operators/1775098065738-f9bed4bf-5721-4992-a329-098c1a022f2b.png"
+cover: "/blog/images/claude-code-non-developers-solo-operators/1775098065738-f9bed4bf-5721-4992-a329-098c1a022f2b.webp"
 locale: "zh"
 draft: false
 ---
@@ -39,7 +39,7 @@ draft: false
 
 Anthropic 的 [Cowork 官方文档](<https://support.claude.com/en/articles/13345190-get-started-with-cowork>)把它描述为「Claude Code 的自主能力，在 Claude Desktop 内即可使用、无需打开终端。」底层是同一套架构，但为不想碰终端的人设计。
 
-![1.png](/blog/images/claude-code-non-developers-solo-operators/1775460413534-288bdaf5-43f6-48e2-80a7-5be3073ca5fd.png)
+![1.png](/blog/images/claude-code-non-developers-solo-operators/1775460413534-288bdaf5-43f6-48e2-80a7-5be3073ca5fd.webp)
 
 ## Claude Code 究竟为谁而造
 
@@ -85,7 +85,7 @@ Claude Code 没有免费档。你至少需要一个 Pro 订阅。Pro 和 Max 套
 
 嗯。这么一梳理，我在私信里看到的很多困惑确实简单了不少。
 
-![2.png](/blog/images/claude-code-non-developers-solo-operators/1775460427220-48c264e1-01fe-473c-93f2-1c7b4e2a9e48.png)
+![2.png](/blog/images/claude-code-non-developers-solo-operators/1775460427220-48c264e1-01fe-473c-93f2-1c7b4e2a9e48.webp)
 
 ## 你真正需要的可能是它
 
@@ -123,7 +123,7 @@ Claude Code 确实解锁了某种真实的东西：从技术上说，你可以�
 
 有理由的时候再造工具。工具已经存在的时候就用工具。多数时候，它们已经存在了。
 
-![3.png](/blog/images/claude-code-non-developers-solo-operators/1775460439196-3bc0cdbd-8310-4227-9584-2a5126d31a5b.png)
+![3.png](/blog/images/claude-code-non-developers-solo-operators/1775460439196-3bc0cdbd-8310-4227-9584-2a5126d31a5b.webp)
 
 ## 结论
 

@@ -6,7 +6,7 @@ date: "2026-07-24"
 author: "Floatboat Team"
 category: "Calendar AI"
 tags: ["Calendar-Driven AI", "proactive AI agents", "calendar automation", "solo operator workflows"]
-cover: "/blog/images/what-if-your-calendar-could-run-itself/1784877610953-fe7fe8c0-e2c4-450b-a38c-378d828b5b64.PNG"
+cover: "/blog/images/what-if-your-calendar-could-run-itself/1784877610953-fe7fe8c0-e2c4-450b-a38c-378d828b5b64.webp"
 locale: "en"
 draft: false
 ---

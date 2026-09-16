@@ -6,7 +6,7 @@ date: "2026-05-29"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/google-calendar-vs-outlook/1780019763142-4fd5794e-0b22-43f2-a03a-588d462f70c5.PNG"
+cover: "/blog/images/google-calendar-vs-outlook/1780019763142-4fd5794e-0b22-43f2-a03a-588d462f70c5.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ If most of your work runs through Microsoft 365 — Outlook mail, Teams, SharePo
 
 But here's the reality for a lot of independent operators: ​**you don't get to pick just one** ​. Half your clients send Google Calendar invites, the other half use Outlook. You end up checking both, which is its own kind of problem. I'll get to that.
 
-![2.PNG](/blog/images/google-calendar-vs-outlook/1780019846262-8ed92d81-d0ff-4ec8-8605-2108d126d034.PNG)
+![2.PNG](/blog/images/google-calendar-vs-outlook/1780019846262-8ed92d81-d0ff-4ec8-8605-2108d126d034.webp)
 
 ## Google Workspace vs Microsoft 365 Workflows
 
@@ -49,7 +49,7 @@ Let me break down the parts that actually matter for daily work.
 
 **Sharing:** Google Calendar makes it easy to share entire calendars with anyone who has a Google account. Permissions are straightforward: view-only, edit, or full manage. Outlook offers more structured sharing within Microsoft 365 organizations — [delegate access](<https://learn.microsoft.com/en-us/graph/outlook-share-or-delegate-calendar>) lets someone literally send meeting invites on your behalf. For a consultant managing multiple client relationships, that delegation feature is genuinely useful. Google Calendar doesn't have true delegate roles.
 
-![3.PNG](/blog/images/google-calendar-vs-outlook/1780019862192-ac9f8050-de60-4833-be07-cec46bf8862f.PNG)
+![3.PNG](/blog/images/google-calendar-vs-outlook/1780019862192-ac9f8050-de60-4833-be07-cec46bf8862f.webp)
 
 **Tasks:** Both platforms now put tasks inside the calendar view. Google Tasks integrates as a sidebar, and you can drag tasks onto time blocks. Microsoft To Do integrates more deeply — flagged emails become tasks, Planner tasks flow in, and My Day gives you a combined calendar-plus-task view. Outlook's task integration is more mature. I'll give it that.
 
@@ -67,7 +67,7 @@ For two-way sync — where changes in either calendar update the other — you n
 
 One thing I'd flag: imported calendars in either platform don't integrate with scheduling tools like "Find a time" in Outlook or "Suggested times" in Google. So even if you can see events from the other calendar, your colleagues won't see those blocks when trying to find an open slot with you. That's a real gap if you're working across both ecosystems daily.
 
-![4.png](/blog/images/google-calendar-vs-outlook/1780019873501-e9c8c60b-a93c-4c98-a5cc-ea47d953e95e.png)
+![4.png](/blog/images/google-calendar-vs-outlook/1780019873501-e9c8c60b-a93c-4c98-a5cc-ea47d953e95e.webp)
 
 ## Calendar Choice vs Execution Gap
 
@@ -93,7 +93,7 @@ That's my honest take. Pick the calendar that matches where your work already li
 
 • If recurring prep work, follow-ups, and admin loops keep eating your week, **[How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>)** explores how repetitive workflows can be handled differently.
 
-![5.png](/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.png)
+![5.png](/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.webp)
 
 ## FAQ
 

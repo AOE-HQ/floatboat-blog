@@ -6,7 +6,7 @@ date: "2026-06-29"
 author: "Floatboat"
 category: "Calendar AI"
 tags: ["AI meeting preparation", "automated meeting prep", "pre-meeting AI assistant", "AI meeting brief generator", "calendar-driven meeting prep", "AI pre-read generation"]
-cover: "/blog/images/ai-meeting-preparation/1782710556764-3b8a5e76-8fb4-42f9-80ba-d9ff389319fd.png"
+cover: "/blog/images/ai-meeting-preparation/1782710556764-3b8a5e76-8fb4-42f9-80ba-d9ff389319fd.webp"
 locale: "en"
 draft: false
 ---

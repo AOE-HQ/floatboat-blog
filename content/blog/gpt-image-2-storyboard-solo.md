@@ -6,7 +6,7 @@ date: "2026-04-25"
 author: "Nova"
 category: "Model & Benchmarks"
 tags: ["Label"]
-cover: "/blog/images/gpt-image-2-storyboard-solo/1777087203252-67197c48-76f8-4e00-a613-b150e8f7adc4.PNG"
+cover: "/blog/images/gpt-image-2-storyboard-solo/1777087203252-67197c48-76f8-4e00-a613-b150e8f7adc4.webp"
 locale: "en"
 draft: false
 ---
@@ -27,7 +27,7 @@ A working storyboard tells a director, a DP, a client, or an animator three thin
 
 Same person. Same outfit. Same coffee shop. Same direction-of-action (the 180-degree rule, if you care about that). If the character is wearing a green jacket in frame 1 and a blue one in frame 2, you've broken the contract. This is exactly where every previous AI image tool fell over.
 
-![2.PNG](/blog/images/gpt-image-2-storyboard-solo/1777087277254-40a47c3a-d138-4929-a350-fee1a2771747.PNG)
+![2.PNG](/blog/images/gpt-image-2-storyboard-solo/1777087277254-40a47c3a-d138-4929-a350-fee1a2771747.webp)
 
 ## What GPT Image 2 actually brings to storyboarding
 
@@ -49,7 +49,7 @@ Thinking mode is the second piece. [The Next Web's coverage](<https://thenextweb
 
 I anchored my style with one line repeated across every prompt: _"black and white storyboard frame, light pencil shading, simple line work, square panel border."_ Held up across 24 frames. Drifted slightly toward softer linework around frame 18, but nothing a viewer would catch.
 
-![3.png](/blog/images/gpt-image-2-storyboard-solo/1777087287558-19b86600-549d-4442-af0b-6349842043a4.png)
+![3.png](/blog/images/gpt-image-2-storyboard-solo/1777087287558-19b86600-549d-4442-af0b-6349842043a4.webp)
 
 ## A realistic solo storyboard workflow
 
@@ -71,7 +71,7 @@ Real example from last week. Frame 9 was almost right, but the character was fac
 
 This is the workflow change worth understanding. Edits are surgical. Compositions stop breaking.
 
-![4.png](/blog/images/gpt-image-2-storyboard-solo/1777087297016-aa372eb9-61b3-4287-a2cf-517bb3042f8d.png)
+![4.png](/blog/images/gpt-image-2-storyboard-solo/1777087297016-aa372eb9-61b3-4287-a2cf-517bb3042f8d.webp)
 
 ## Where it still fails
 
@@ -103,7 +103,7 @@ The pricing math matters here. A 24-frame board from a freelancer at the cheap e
 
 I want to be careful not to overstate this: **GPT​ Image 2 doesn't replace a storyboard artist for film or commercial production.** It replaces _not having a storyboard at all_ because you couldn't afford one. That's a different value proposition, and it's the one that matters for solo operators.
 
-![5.png](/blog/images/gpt-image-2-storyboard-solo/1777087307353-395dad4b-2935-4ca2-a629-04bc1b8c6799.png)
+![5.png](/blog/images/gpt-image-2-storyboard-solo/1777087307353-395dad4b-2935-4ca2-a629-04bc1b8c6799.webp)
 
 ## Who this fits, and who should skip
 

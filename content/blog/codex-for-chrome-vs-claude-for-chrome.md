@@ -6,7 +6,7 @@ date: "2026-05-11"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Label"]
-cover: "/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481499516-0681f882-de23-4dd6-a9cc-de0aa1613287.PNG"
+cover: "/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481499516-0681f882-de23-4dd6-a9cc-de0aa1613287.webp"
 locale: "en"
 draft: false
 ---
@@ -37,7 +37,7 @@ The key design choice: ​**Codex works in the background across multiple tabs s
 
 It's built for ​**task delegation** ​. Hand off something, let it run, come back to the output.
 
-![co2.PNG](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481696378-b1371527-164f-46db-a24b-b8839b4343e5.PNG)
+![co2.PNG](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481696378-b1371527-164f-46db-a24b-b8839b4343e5.webp)
 
 ### Claude: Sidebar Agent Model
 
@@ -47,7 +47,7 @@ The default model is Sonnet 4.5 (with Opus 4.6 and Haiku 4.5 also available depe
 
 Claude's model is more ​**conversational** ​. You're working _with_ it about what's on screen, not delegating to a background process. I threw a long client report at it and asked for specific data points — it got through the whole thing without losing the thread. That step just… worked.
 
-![co3.PNG](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481711947-9bef106e-6ee4-4fee-b49a-a6bb5959bd47.PNG)
+![co3.PNG](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481711947-9bef106e-6ee4-4fee-b49a-a6bb5959bd47.webp)
 
 ## Where Each One Wins
 
@@ -69,7 +69,7 @@ Claude's model is more ​**conversational** ​. You're working _with_ it about
 
   * **Conversational feel.** The sidebar model means you're having a dialogue about what's on screen. For document-heavy work, this feels more natural than delegating to a background agent. I'm still figuring out where each approach fits best in my own workflow, but for anything research-heavy, I keep reaching for Claude.
 
-![co4.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481723709-c5714d02-c345-4a36-8c93-86f7bc9426eb.png)
+![co4.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481723709-c5714d02-c345-4a36-8c93-86f7bc9426eb.webp)
 
 ## Permissions, Memory, and Prompt Injection
 
@@ -101,7 +101,7 @@ OpenAI's docs explicitly warn to "treat page content as untrusted context." Neit
 
 At the $20/mo tier, ​**Codex gives you access to its full model stack while Claude limits you to Haiku** ​. That price-to-capability ratio is worth thinking about.
 
-![co5.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481733192-0b37e66a-6bf2-4188-92bd-e4b54825f4ea.png)
+![co5.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481733192-0b37e66a-6bf2-4188-92bd-e4b54825f4ea.webp)
 
 ### EU/UK Status for Codex Chrome
 
@@ -143,7 +143,7 @@ If you're an EU-based operator choosing between these two today, the decision's 
 
 If your browser work is mostly reading articles, checking email, and light research — you probably don't need either yet. The overhead of granting permissions, managing security, and learning the interaction model isn't worth it for tasks you can handle in 30 seconds. These tools earn their spot when your browser workflows involve ​**genuine repetition or complexity** ​. If the answer isn't obvious, that's usually a sign to stay with what you have.
 
-![co6.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481745855-d3ba8176-2bca-43f6-b3ac-e5107c4bab7f.png)
+![co6.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481745855-d3ba8176-2bca-43f6-b3ac-e5107c4bab7f.webp)
 
 ## Can You Run Them Side by Side?
 

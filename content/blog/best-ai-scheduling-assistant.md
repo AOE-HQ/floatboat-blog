@@ -6,7 +6,7 @@ date: "2026-06-29"
 author: "Floatboat"
 category: "Calendar AI"
 tags: ["agentic calendar", "what is agentic calendar", "agentic calendar definition", "calendar-driven AI agent", "proactive calendar AI", "autonomous calendar agent", "AI calendar OS"]
-cover: "/blog/images/best-ai-scheduling-assistant/1782710572097-f224e5e3-8ae0-4a40-8c50-f3fd4d32e134.png"
+cover: "/blog/images/best-ai-scheduling-assistant/1782710572097-f224e5e3-8ae0-4a40-8c50-f3fd4d32e134.webp"
 locale: "en"
 draft: false
 ---

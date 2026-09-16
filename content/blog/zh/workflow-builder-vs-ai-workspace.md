@@ -6,7 +6,7 @@ date: "2026-03-23"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["AI 工作区", "工作流构建器", "自动化", "单人创业"]
-cover: "/blog/images/workflow-builder-vs-ai-workspace/1774257401587-7c2850f6-9966-440d-a14e-06efc1095f2b.png"
+cover: "/blog/images/workflow-builder-vs-ai-workspace/1774257401587-7c2850f6-9966-440d-a14e-06efc1095f2b.webp"
 locale: "zh"
 draft: false
 ---
@@ -23,7 +23,7 @@ draft: false
 
 触发 → 动作 → 条件 → 输出。每个节点只做一件事。节点之间的连线定义逻辑。当这个假设成立时，它非常强大。
 
-![2.png](/blog/images/workflow-builder-vs-ai-workspace/1774257867087-c43eb842-c1e6-4d81-9259-19a3e09f17ff.png)
+![2.png](/blog/images/workflow-builder-vs-ai-workspace/1774257867087-c43eb842-c1e6-4d81-9259-19a3e09f17ff.webp)
 
 ### AI 工作区对你工作的假设
 
@@ -47,7 +47,7 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 
 工作流构建器是为有运营角色的团队设计的——他们的工作就是搭建和维护系统。AI 工作区是为知识工作者设计的——他们的工作本身就是**思考**，而不是围绕思考的基础设施。
 
-![3.png](/blog/images/workflow-builder-vs-ai-workspace/1774257881387-95739d73-1632-41d1-97a4-f0cb3af96931.png)
+![3.png](/blog/images/workflow-builder-vs-ai-workspace/1774257881387-95739d73-1632-41d1-97a4-f0cb3af96931.webp)
 
 ## 什么时候工作流构建器是对的
 
@@ -65,7 +65,7 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 
 「设好就忘」的吸引力是真实的。一条搭好的 [AI 工作流自动化](<https://www.gumloop.com/blog/best-ai-workflow-automation-tools>) 能处理几百条记录而不用你碰一下。搭建投入换来复利回报，这正是它的全部价值主张。
 
-![4.png](/blog/images/workflow-builder-vs-ai-workspace/1774257892796-e5f43e6e-603f-40f8-a9e4-7ab580a72b2d.png)
+![4.png](/blog/images/workflow-builder-vs-ai-workspace/1774257892796-e5f43e6e-603f-40f8-a9e4-7ab580a72b2d.webp)
 
 ## 什么时候 AI 工作区更合适
 
@@ -85,7 +85,7 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 
 这是最哲学化的区别，但在实践上很重要。按 [Slack 对 AI 采用的研究](<https://slack.com/blog/productivity/9-best-ai-automation-tools-to-automate-tasks-and-streamline-workflows>)，把 AI 建进真实日常工作流——而不只是自动化栈——的公司，其办公人员长期展现出显著更高的生产力增益。一个懂你上下文的 AI 带来的复利，和一条在后台跑的管线的复利，不是一回事。
 
-![5.png](/blog/images/workflow-builder-vs-ai-workspace/1774257902156-51b38b33-6c07-46d7-8c17-cbdc9b13eea8.png)
+![5.png](/blog/images/workflow-builder-vs-ai-workspace/1774257902156-51b38b33-6c07-46d7-8c17-cbdc9b13eea8.webp)
 
 ## 两者都还做不好的事
 
@@ -109,7 +109,7 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 
 对很多单人创业者来说，诚实的答案是：**从工作区开始，再为你那些确实重复的具体任务加上工作流自动化。**在你确定工作的哪些部分稳定到可以自动化之前，别先把整套运营栈搭起来。按 [Cybernews 对 AI 工作流构建器的拆解](<https://cybernews.com/ai-tools/best-ai-workflow-builder/>)，即便在技术上很熟练的用户里，最常见的错误也是为还没稳定的工作过度设计自动化。
 
-![951dc46e1378298d1b3f45aec0389fdb.png](/blog/images/workflow-builder-vs-ai-workspace/1774257973478-6bef8d1b-c0ba-46fa-a07a-7c52cae854a7.png)
+![951dc46e1378298d1b3f45aec0389fdb.png](/blog/images/workflow-builder-vs-ai-workspace/1774257973478-6bef8d1b-c0ba-46fa-a07a-7c52cae854a7.webp)
 
 ## 延伸阅读
 

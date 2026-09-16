@@ -6,7 +6,7 @@ date: "2026-04-23"
 author: "Nova"
 category: "AI Agents"
 tags: ["Label"]
-cover: "/blog/images/ai-workspace-agents/1776938878052-6b014d80-d7df-44ac-a9cc-7ca100b7648f.png"
+cover: "/blog/images/ai-workspace-agents/1776938878052-6b014d80-d7df-44ac-a9cc-7ca100b7648f.webp"
 locale: "en"
 draft: false
 ---
@@ -17,7 +17,7 @@ So I figured it was time to write down what I actually mean when I say it. Not a
 
 ## What AI workspace agents are
 
-![2.png](/blog/images/ai-workspace-agents/1776938869107-4bf55783-56f6-40d6-a60f-b3adf3a971f0.png)
+![2.png](/blog/images/ai-workspace-agents/1776938869107-4bf55783-56f6-40d6-a60f-b3adf3a971f0.webp)
 
 ### The plain-language definition
 
@@ -53,7 +53,7 @@ This is where I see the most confusion, so let me separate three things that oft
 
 ### vs chat assistants like ChatGPT
 
-![3.png](/blog/images/ai-workspace-agents/1776938892459-d9a96757-2002-4768-865d-caa869b18d59.png)
+![3.png](/blog/images/ai-workspace-agents/1776938892459-d9a96757-2002-4768-865d-caa869b18d59.webp)
 
 Chat assistants are conversation-shaped. You bring a question, they bring an answer. The context is whatever you paste into the box. When the tab closes, the relationship ends.
 
@@ -87,7 +87,7 @@ Features lists get boring fast, so let me describe this by shape rather than by 
 
 ### Working inside real files, browsers, and apps
 
-![4.png](/blog/images/ai-workspace-agents/1776938903868-854caf84-9b34-450c-8dd9-73945bb2a6d7.png)
+![4.png](/blog/images/ai-workspace-agents/1776938903868-854caf84-9b34-450c-8dd9-73945bb2a6d7.webp)
 
 The core unlock is that the agent can see what you see. [Skywork Desktop's launch post puts it well](<https://finance.yahoo.com/news/skywork-launches-desktop-ai-agent-162800505.html>) — the point is "local file understanding without uploads, allowing agents to work from user-selected folders as a persistent context rather than relying on one-off attachments."
 
@@ -135,7 +135,7 @@ Not everyone benefits equally. If none of the above applies to you, great. If so
 
 ## What workspace agents don't solve
 
-![5.png](/blog/images/ai-workspace-agents/1776938916972-34287d3b-e1da-4167-b3aa-bd7bb9e225ed.png)
+![5.png](/blog/images/ai-workspace-agents/1776938916972-34287d3b-e1da-4167-b3aa-bd7bb9e225ed.webp)
 
 ### Current limitations and trade-offs
 

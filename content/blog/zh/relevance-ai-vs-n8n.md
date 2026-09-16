@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Nova"
 category: "Tool Comparisons"
 tags: ["Relevance AI", "n8n", "AI Agent"]
-cover: "/blog/images/relevance-ai-vs-n8n/1775027011114-2f3b82c3-c427-4577-9fae-e3385ff178af.png"
+cover: "/blog/images/relevance-ai-vs-n8n/1775027011114-2f3b82c3-c427-4577-9fae-e3385ff178af.webp"
 locale: "zh"
 draft: false
 ---
@@ -39,7 +39,7 @@ Relevance AI 把自己定位成搭建「AI 劳动力」的平台——这个说�
 
 **适合谁：**销售和营销运营团队、支持团队、想不写代码就有 Agent 在跑的非技术运营者。
 
-![2.png](/blog/images/relevance-ai-vs-n8n/1775027254741-c24a3f90-cee7-450b-901c-f9fde10c0a6b.png)
+![2.png](/blog/images/relevance-ai-vs-n8n/1775027254741-c24a3f90-cee7-450b-901c-f9fde10c0a6b.webp)
 
 ## n8n 是为什么而生的
 
@@ -74,7 +74,7 @@ n8n 是开源的，这一点塑造了它的一切。你用基于节点的可视�
 
 **选 Relevance AI，如果：**你想快速部署 Agent、你不是技术背景、而你的主要工作流围绕销售、支持或调研。
 
-![3.png](/blog/images/relevance-ai-vs-n8n/1775027270552-1c51c0b4-df2a-4570-9a94-6165c3649cb8.png)
+![3.png](/blog/images/relevance-ai-vs-n8n/1775027270552-1c51c0b4-df2a-4570-9a94-6165c3649cb8.webp)
 
 ## 谁该用 n8n
 
@@ -88,7 +88,7 @@ n8n 回报有耐心的人。搭建更花时间，但一旦跑起来，强大得�
 
 **选 n8n，如果：**你是技术背景、需要完整工作流控制、在意数据所有权，或想要最低的长期成本。
 
-![4.png](/blog/images/relevance-ai-vs-n8n/1775027282859-5c40b5bb-cda5-45e6-807c-926d585579d2.png)
+![4.png](/blog/images/relevance-ai-vs-n8n/1775027282859-5c40b5bb-cda5-45e6-807c-926d585579d2.webp)
 
 ## 两个都不合适的时候
 
@@ -102,7 +102,7 @@ n8n 则不是为「描述一个任务、让 AI 自己搞定」的人准备的。
 
 还在摸索自己需要什么？没关系。两个的免费档都试试——Relevance AI 给你 200 个 Actions 起步，n8n 的 Community Edition 自托管免费。小实验能告诉你很多。
 
-![5.png](/blog/images/relevance-ai-vs-n8n/1775027292740-c9cccead-b73f-440f-8e38-babc63234ece.png)
+![5.png](/blog/images/relevance-ai-vs-n8n/1775027292740-c9cccead-b73f-440f-8e38-babc63234ece.webp)
 
 _总之，挖这个还挺有意思的。这两款工具在自己设计好的方向上都很出色——我只是觉得很多人最后很沮丧，是因为给处境选错了工具。希望这篇能帮你搞清楚自己到底在哪条道上。_
 

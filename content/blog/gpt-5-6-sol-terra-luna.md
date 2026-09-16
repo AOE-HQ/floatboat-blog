@@ -6,7 +6,7 @@ date: "2026-07-10"
 author: "Judy"
 category: "Model & Benchmarks"
 tags: ["Label"]
-cover: "/blog/images/gpt-5-6-sol-terra-luna/1782875427176-cd2bebae-2bbc-4f06-a8ef-69a605e410ab.png"
+cover: "/blog/images/gpt-5-6-sol-terra-luna/1782875427176-cd2bebae-2bbc-4f06-a8ef-69a605e410ab.webp"
 locale: "en"
 draft: false
 ---

@@ -6,7 +6,7 @@ date: "2026-03-27"
 author: "Nova"
 category: "AI Agents"
 tags: ["定制 AI Agent", "AI Agent 开发", "AI 成本", "无代码 AI 工具", "AI 选型"]
-cover: "/blog/images/custom-ai-agent-development/1774580576067-d0eab05d-e7ad-4ac3-b954-bf7bd4f429ad.png"
+cover: "/blog/images/custom-ai-agent-development/1774580576067-d0eab05d-e7ad-4ac3-b954-bf7bd4f429ad.webp"
 locale: "zh"
 draft: false
 ---
@@ -39,7 +39,7 @@ draft: false
 
 搞清楚你的项目到底落在哪个桶里，是找任何供应商之前第一件值得厘清的事。
 
-![2.png](/blog/images/custom-ai-agent-development/1774583389077-01a0ae55-b26a-45a9-815f-fa44a756c5e7.png)
+![2.png](/blog/images/custom-ai-agent-development/1774583389077-01a0ae55-b26a-45a9-815f-fa44a756c5e7.webp)
 
 ### 部署与交接预期
 
@@ -69,7 +69,7 @@ draft: false
 
 仅 API 费用（GPT-4o 或 Claude 这类商业模型）一项，中等用量的 Agent 每月就要 **$100–$1,000+**，随查询量大幅上涨。再算上托管、存记忆的向量数据库、监控工具、定期调优——持续成本通常落在 **$500–$5,000/月**，视复杂度而定。这不是可省的维护。AI 系统会以传统软件不会的方式发生漂移，需要有人主动盯着。
 
-![3.png](/blog/images/custom-ai-agent-development/1774583405679-c7a6691e-c1fd-4052-b76b-322ba98efb5d.png)
+![3.png](/blog/images/custom-ai-agent-development/1774583405679-c7a6691e-c1fd-4052-b76b-322ba98efb5d.webp)
 
 ## 什么时候定制开发是对的
 
@@ -109,7 +109,7 @@ draft: false
 
 这个问题还有个更温和的版本：有些团队觉得自己需要定制 Agent，因为他们想要一个「懂我们上下文」或「学会我们工作方式」的东西。这往往靠结构良好的提示词、检索增强生成（RAG）配置和细致的工具设置就能实现——不需要六位数的开发。别把「配置问题」误当成「开发问题」。
 
-![4.png](/blog/images/custom-ai-agent-development/1774583420493-61463483-b6c3-4e11-abae-f6a247818460.png)
+![4.png](/blog/images/custom-ai-agent-development/1774583420493-61463483-b6c3-4e11-abae-f6a247818460.webp)
 
 ## 诚实的成本对比：定制 vs 现成
 
@@ -148,7 +148,7 @@ draft: false
 **六个月后需求变了怎么办？**
 定制系统转向的难度远高于配置型系统。把这份刚性算进你的决策。
 
-![5.png](/blog/images/custom-ai-agent-development/1774583432040-d56ad9da-7e25-49b1-a05a-5ca0c7d311fa.png)
+![5.png](/blog/images/custom-ai-agent-development/1774583432040-d56ad9da-7e25-49b1-a05a-5ca0c7d311fa.webp)
 
 说实话，这里很多东西我自己也还在摸索。但如果这篇帮你把这个决定想得更清楚了——那正是它的目的。祝你好运，以及：在签任何字之前，也许再跟那些无代码工具多待一个下午。
 

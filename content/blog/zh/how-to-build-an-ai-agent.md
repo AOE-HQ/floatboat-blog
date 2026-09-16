@@ -6,7 +6,7 @@ date: "2026-03-25"
 author: "Nova"
 category: "AI Agents"
 tags: ["AI Agent", "构建指南", "AI 开发"]
-cover: "/blog/images/how-to-build-an-ai-agent/1774419094012-12b90959-f544-4cac-887f-83f62be9cb0f.PNG"
+cover: "/blog/images/how-to-build-an-ai-agent/1774419094012-12b90959-f544-4cac-887f-83f62be9cb0f.webp"
 locale: "zh"
 draft: false
 ---
@@ -23,7 +23,7 @@ draft: false
 
 聊天机器人回答问题；**[AI Agent](<https://www.ibm.com/think/topics/ai-agents>) 采取行动**。它能规划多步任务、使用外部工具、跨步骤记住上下文，并无需你每一步都去提示就能做决策。这个差别听起来很微妙，直到你真正动手构建一个。
 
-![2.PNG](/blog/images/how-to-build-an-ai-agent/1774419249726-02da6b63-c1f3-4c40-b9b9-2896277d7e0d.PNG)
+![2.PNG](/blog/images/how-to-build-an-ai-agent/1774419249726-02da6b63-c1f3-4c40-b9b9-2896277d7e0d.webp)
 
 ### 引擎盖下发生了什么：模型、记忆、工具调用、执行
 
@@ -57,7 +57,7 @@ draft: false
 
 代码路线要求：熟悉 Python、基础 API 知识、调试的耐心，以及阅读大量错误日志的意愿。
 
-![3.PNG](/blog/images/how-to-build-an-ai-agent/1774419261911-afbbdd03-4dad-4632-958d-93d368ad2f22.PNG)
+![3.PNG](/blog/images/how-to-build-an-ai-agent/1774419261911-afbbdd03-4dad-4632-958d-93d368ad2f22.webp)
 
 ### 无代码路线——搭建工具能做什么、不能做什么
 
@@ -93,7 +93,7 @@ draft: false
 
 **架构过度设计。**超过 40% 的 Agentic AI 项目因糟糕的架构决策与不清晰的部署策略而有被取消的风险。答案几乎总是：从最简可行的版本开始。
 
-![4.png](/blog/images/how-to-build-an-ai-agent/1774419275409-20ea7a05-7023-4669-989d-b5ce64f0df61.png)
+![4.png](/blog/images/how-to-build-an-ai-agent/1774419275409-20ea7a05-7023-4669-989d-b5ce64f0df61.webp)
 
 ## 谁才真的该自建
 
@@ -147,7 +147,7 @@ draft: false
 
 如果你把三条都答完了、仍然想构建——那就去吧。当下这个生态确实很好。只是要睁大眼睛看清你真正接手的是什么。
 
-![5.png](/blog/images/how-to-build-an-ai-agent/1774419289200-db663991-6fcb-4bc9-be2f-4f4376a1bffe.png)
+![5.png](/blog/images/how-to-build-an-ai-agent/1774419289200-db663991-6fcb-4bc9-be2f-4f4376a1bffe.webp)
 
 _总之——这就是我在花掉无数个夜晚读文档、看 Agent 做出各种意料之外的事之后，最终落脚的地方。_
 

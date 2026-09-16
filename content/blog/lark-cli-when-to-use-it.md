@@ -6,7 +6,7 @@ date: "2026-03-30"
 author: "Nova"
 category: "Solo Operators"
 tags: ["Label"]
-cover: "/blog/images/lark-cli-when-to-use-it/1774843116525-8b1fab5d-cd72-4ea8-9640-cda8f4e79d7c.png"
+cover: "/blog/images/lark-cli-when-to-use-it/1774843116525-8b1fab5d-cd72-4ea8-9640-cda8f4e79d7c.webp"
 locale: "en"
 draft: false
 ---
@@ -17,7 +17,7 @@ I want to save you that rabbit hole.
 
 This isn't a tutorial. I'm not going to walk you through installation steps. What I _am_ going to do is share what I actually learned about whether **[Lark CLI](<https://www.larksuite.com/hc/en-US/articles/713812763675-clip-webpages-to-lark-docs>)** is worth building with — especially if you're running things solo.
 
-![2.png](/blog/images/lark-cli-when-to-use-it/1774843305912-9bb85990-5ad4-4c3b-a3e1-d76e5a6a8abe.png)
+![2.png](/blog/images/lark-cli-when-to-use-it/1774843305912-9bb85990-5ad4-4c3b-a3e1-d76e5a6a8abe.webp)
 
 ## What Lark CLI Actually Does
 
@@ -67,7 +67,7 @@ This is where people (myself included) get tripped up. Tasks like "send me a Lar
 
 None of this is insurmountable. But it's more than one afternoon of setup.
 
-![3.png](/blog/images/lark-cli-when-to-use-it/1774843317226-3917604d-1067-441e-9e5c-912f9cc48070.png)
+![3.png](/blog/images/lark-cli-when-to-use-it/1774843317226-3917604d-1067-441e-9e5c-912f9cc48070.webp)
 
 ## The Real Cost of Building With Lark CLI
 
@@ -99,7 +99,7 @@ Here's what "maintenance" actually means in practice:
 
 This isn't hypothetical. It's the pattern with any custom-built integration that one person built and one person maintains. The bus factor is 1. That person is you.
 
-![4.png](/blog/images/lark-cli-when-to-use-it/1774843329012-37f7a2b1-5de5-4ddc-8b22-ae1403fa1f58.png)
+![4.png](/blog/images/lark-cli-when-to-use-it/1774843329012-37f7a2b1-5de5-4ddc-8b22-ae1403fa1f58.webp)
 
 ## When Lark CLI Is Worth It
 
@@ -147,7 +147,7 @@ Here's the honest framework I came up with after going down this road:
 
 The real question isn't "can I build this?" — you probably can. It's **"what happens the week I don't have time to fix it?"**
 
-![5.png](/blog/images/lark-cli-when-to-use-it/1774843340728-2cfa780f-2b70-4853-98f5-cc9d08c50936.png)
+![5.png](/blog/images/lark-cli-when-to-use-it/1774843340728-2cfa780f-2b70-4853-98f5-cc9d08c50936.webp)
 
 ## What to Do Instead If You're a One-Person Operation
 
