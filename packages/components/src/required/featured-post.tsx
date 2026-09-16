@@ -13,7 +13,7 @@ import {
   obText,
 } from "../tokens";
 import { cn } from "../utils";
-import { BLOG_INDEX_COPY } from "./blog-index-copy";
+import { BLOG_INDEX_COPY, categoryLabel } from "./blog-index-copy";
 import { FeaturedImage } from "./featured-image";
 
 export function FeaturedPost({ post }: { post: PostMeta }) {
@@ -56,12 +56,12 @@ export function FeaturedPost({ post }: { post: PostMeta }) {
                   href={site.categoryPath(post.categorySlug)}
                   className={`font-medium ${obText} ${obHoverText}`}
                 >
-                  {post.category}
+                  {categoryLabel(post.categorySlug, post.category, locale)}
                 </Link>
                 <span aria-hidden="true">·</span>
               </>
             ) : null}
-            <time dateTime={post.date}>{formatPostDate(post.date)}</time>
+            <time dateTime={post.date}>{formatPostDate(post.date, locale)}</time>
           </div>
           <h2
             className={`mt-4 max-w-2xl font-serif text-3xl font-normal leading-[1.15] tracking-tight ${obText} sm:text-4xl lg:text-[2.5rem] lg:leading-[1.15]`}

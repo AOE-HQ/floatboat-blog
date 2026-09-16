@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { CategoryArchive, JsonLd } from "@openblog/components";
+import { CATEGORY_LABELS_ZH, CategoryArchive, JsonLd } from "@openblog/components";
 import { resolveFeatures } from "@openblog/core";
 
 import { config } from "@/lib/openblog-config";
@@ -40,7 +40,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const categoryName = posts[0]?.category ?? slug;
+  const categoryName = CATEGORY_LABELS_ZH[slug] ?? posts[0]?.category ?? slug;
   const canonical = helpers.absoluteUrl(helpers.categoryPath(slug));
 
   return {
@@ -68,7 +68,7 @@ export default async function ZhCategoryPage({ params }: PageProps) {
     notFound();
   }
 
-  const categoryName = posts[0]?.category ?? slug;
+  const categoryName = CATEGORY_LABELS_ZH[slug] ?? posts[0]?.category ?? slug;
   const breadcrumbs = getCategoryBreadcrumbItems(
     categoryName,
     slug,

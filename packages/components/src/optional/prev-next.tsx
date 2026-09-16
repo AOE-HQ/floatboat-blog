@@ -10,15 +10,22 @@ import { obBorder, obBorderT, obHoverBorder, obMuted, obText } from "../tokens";
 export function PrevNext({
   prev,
   next,
+  locale = "en",
 }: {
   prev: PostMeta | null;
   next: PostMeta | null;
+  locale?: "en" | "zh";
 }) {
   const site = useSiteHelpers();
 
   if (!prev && !next) {
     return null;
   }
+
+  const labels = {
+    prev: locale === "zh" ? "上一篇" : "Previous",
+    next: locale === "zh" ? "下一篇" : "Next",
+  };
 
   return (
     <nav
@@ -31,7 +38,7 @@ export function PrevNext({
           className={`rounded-xl border p-4 ${obBorder} ${obHoverBorder}`}
         >
           <p className={`text-xs font-medium uppercase tracking-[0.12em] ${obMuted}`}>
-            Previous
+            {labels.prev}
           </p>
           <p className={`mt-1 font-medium ${obText}`}>{prev.title}</p>
         </Link>
@@ -44,7 +51,7 @@ export function PrevNext({
           className={`rounded-xl border p-4 text-right sm:col-start-2 ${obBorder} ${obHoverBorder}`}
         >
           <p className={`text-xs font-medium uppercase tracking-[0.12em] ${obMuted}`}>
-            Next
+            {labels.next}
           </p>
           <p className={`mt-1 font-medium ${obText}`}>{next.title}</p>
         </Link>

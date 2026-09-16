@@ -1,7 +1,9 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+import { getLocaleFromPathname } from "@/lib/locale-path";
 import type { NewsletterCopy } from "@/lib/newsletter-data";
 
 /**
@@ -11,6 +13,7 @@ import type { NewsletterCopy } from "@/lib/newsletter-data";
  */
 export function NewsletterSubscribe({ copy }: { copy: NewsletterCopy }) {
   const [subscribed, setSubscribed] = useState(false);
+  const isZh = getLocaleFromPathname(usePathname() ?? "/") === "zh";
 
   return (
     <div className="grid gap-6 rounded-[24px] border border-black/[0.08] bg-[#fbfaf8]/70 p-6 shadow-sm sm:p-8 md:grid-cols-2 md:items-center">
@@ -33,7 +36,7 @@ export function NewsletterSubscribe({ copy }: { copy: NewsletterCopy }) {
           }}
         >
           <label className="sr-only" htmlFor="footer-newsletter-email">
-            Email address
+            {isZh ? "邮箱地址" : "Email address"}
           </label>
           <input
             id="footer-newsletter-email"
