@@ -1,13 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {
-  useCallback,
-  useEffect,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import { resolveDisplayImageUrl } from "@openblog/core";
 
@@ -33,20 +27,11 @@ export function FeaturedImage({
   const isExternal = resolved.startsWith("http");
   const imgRef = useRef<HTMLImageElement>(null);
   const [loaded, setLoaded] = useState(false);
-  const [allowSrc, setAllowSrc] = useState(true);
   const markLoaded = useCallback(() => setLoaded(true), []);
 
-  useLayoutEffect(() => {
-    if (!window.location.search.includes("slowimg")) return;
-    setAllowSrc(false);
-    setLoaded(false);
-    const timer = window.setTimeout(() => setAllowSrc(true), 4000);
-    return () => window.clearTimeout(timer);
-  }, [resolved]);
-
   useEffect(() => {
-    if (allowSrc && imgRef.current?.complete) setLoaded(true);
-  }, [resolved, allowSrc]);
+    if (imgRef.current?.complete) setLoaded(true);
+  }, [resolved]);
 
   const imgClassName =
     layout === "hero"
@@ -72,7 +57,7 @@ export function FeaturedImage({
       {!loaded ? (
         <span className="ob-image-shimmer-bar absolute inset-0 z-[2] block h-full w-full" aria-hidden="true" />
       ) : null}
-      {allowSrc && isExternal ? (
+      {isExternal ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           ref={imgRef}
@@ -83,8 +68,7 @@ export function FeaturedImage({
           decoding="async"
           onLoad={markLoaded}
         />
-      ) : null}
-      {allowSrc && !isExternal ? (
+      ) : (
         <Image
           ref={imgRef}
           src={resolved}
@@ -96,7 +80,7 @@ export function FeaturedImage({
           decoding="async"
           onLoad={markLoaded}
         />
-      ) : null}
+      )}
     </figure>
   );
 }
