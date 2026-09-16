@@ -18,7 +18,7 @@ Independent OpenBlog app mounted at `https://floatboat.ai/blog`. Cloudflare / In
 - **WebP only** for rasters (`.png` / `.jpg` / `.jpeg` are not served in production). Keep SVG as SVG (logo lives at `/blog/brand/floatboat-logo.svg`).
 - Markdown `cover:` and `![]()` paths: `/blog/images/<slug>/<file>.webp`.
 - Do not use Next `/_next/image`. That path is aoe-backend's optimizer and 400s for Blog files.
-- Convert existing rasters (max edge 1920, quality 80) and rewrite Markdown:
+- Convert existing rasters to WebP (quality 80, original pixel size) and rewrite Markdown:
 
 ```bash
 node scripts/convert-blog-images-to-webp.mjs

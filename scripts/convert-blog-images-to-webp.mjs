@@ -14,7 +14,6 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const IMAGE_DIR = path.join(ROOT, "public/blog/images");
 const CONTENT_DIR = path.join(ROOT, "content");
 const RASTER = new Set([".png", ".jpg", ".jpeg"]);
-const MAX_EDGE = 1920;
 const QUALITY = 80;
 
 async function walk(dir) {
@@ -35,16 +34,7 @@ async function convertFile(file) {
   const ext = path.extname(file).toLowerCase();
   if (!RASTER.has(ext)) return { skipped: true, file };
   const dest = webpPath(file);
-  await sharp(file)
-    .rotate()
-    .resize({
-      width: MAX_EDGE,
-      height: MAX_EDGE,
-      fit: "inside",
-      withoutEnlargement: true,
-    })
-    .webp({ quality: QUALITY })
-    .toFile(dest);
+  await sharp(file).rotate().webp({ quality: QUALITY }).toFile(dest);
   if (path.resolve(dest) !== path.resolve(file)) {
     await unlink(file);
   }
