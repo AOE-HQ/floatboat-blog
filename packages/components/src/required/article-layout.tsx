@@ -129,6 +129,7 @@ export function ArticleLayout({
                 src={post.coverImage!}
                 alt={post.title}
                 layout="hero"
+                priority
                 className="lg:sticky lg:top-24"
               />
             ) : null}
