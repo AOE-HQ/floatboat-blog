@@ -139,28 +139,3 @@ Those are very different questions. And for people running things solo, the seco
 
   * [If you're deciding between building workflows or using a workspace, this will help](</blog/workflow-builder-vs-ai-workspace>)
 
-## FAQ
-
-### Why is generic AI so good at tasks but never fits how I work?
-
-Because generic tools are built for everyone and hold no model of you. A solo founder's workflow is a chain of decisions shaped by accumulated judgment — tacit knowledge that was never written down. Every session you pay the start-from-scratch tax: re-supplying context and re-stating standards a good assistant would already know. Outputs feel generic not because the model is weak, but because the context never travels with your work.
-
-### Can an AI learn how I work, or only what I tell it?
-
-It can learn — if it watches you over time. Learning from what you do (the decisions you make, the edits you apply, the iterations you approve) is different from remembering only what you explicitly say. Long-term memory stores persistent insights and preferences across sessions, and your tacit knowledge lives in exactly that behavioral signal. Generic tools miss it because it was never written down as instructions.
-
-### Is it worth building custom prompts and context documents?
-
-Yes, with a caveat: the investment is real and ongoing. Custom prompts and context documents pay off for workflows you run every week; for one-off tasks the setup cost usually isn't worth it. Start with your two or three most repeated tasks and note the inputs, the outputs, and the judgment calls you make along the way — that last part is the knowledge no prompt template can fully capture.
-
-### How can I tell if a tool is truly learning my workflow or just storing notes?
-
-The clearest signal is whether output quality improves over time without longer prompts. If you keep re-explaining the same preferences, the tool is storing notes rather than learning. Real learning means the AI starts to anticipate what you want — surfacing the right structure, tone, and standards before you state them — because it has watched your decisions and edits accumulate across sessions.
-
-### What's the main trade-off between an AI workspace and a standalone assistant?
-
-Setup time and portability. A workspace that learns your patterns requires real upfront investment, and that investment is somewhat locked to the tool — switch platforms and you start over. Standalone assistants stay portable but never accumulate context. The right call depends on how central AI is to your daily work; when it is central, compounding learning usually justifies the lock-in.
-
-### Isn't ChatGPT's memory feature the same thing?
-
-Partially, but not really. ChatGPT's memory stores the facts you tell it across sessions, which helps, yet it is platform-specific and only learns what you explicitly say. What solo founders need is a system that learns from observing how you work — your edits, decisions, and standards — not from a written description of them. That is a meaningfully different bar.

@@ -6,6 +6,7 @@ import { resolveFeatures, resolveOptionalComponents } from "@openblog/core";
 
 import { absoluteUrl, postPath } from "@/config/site";
 import { config } from "@/lib/openblog-config";
+import { FaqBand } from "@/components/faq-band";
 import {
   buildPostLanguageAlternates,
   openGraphLocale,
@@ -96,6 +97,9 @@ export default async function BlogPostPage({ params }: PageProps) {
         relatedPosts={relatedPosts}
         adjacentPosts={adjacentPosts}
       />
+      {post.faq && post.faq.length > 0 ? (
+        <FaqBand items={post.faq} locale="en" />
+      ) : null}
     </>
   );
 }

@@ -129,28 +129,3 @@ Sometimes the most useful move when a new tool drops is to do nothing for two we
 
   * **[Workflow builders vs workspace agents: two completely different ways to automate your work (and why mixing them up costs time)](</blog/workflow-vs-agents>)**
 
-## FAQ
-
-### Should I switch from GPT-5.4 to Meta Muse Spark?
-
-Short-term, probably not — unless your current model has a specific, recurring pain point in your work. Switching means rewriting prompts and workflow docs, debugging new outputs, and relearning quirks; the author's own migration to GPT-5.4 took roughly two months to break even on time saved. Muse Spark's gains are real but concentrated in specific tasks, so keep your main setup and test before committing.
-
-### Is Muse Spark actually better than GPT-5.4?
-
-It depends on the task. Overall, Muse Spark scores 52 on the Artificial Analysis Intelligence Index versus GPT-5.4's 57, and it trails on coding, computer-use, and long-horizon agentic benchmarks. But it leads on HealthBench Hard (42.8% versus 40.1%) and multimodal work, and Meta is candid that it isn't trying to beat the frontier. Treat this as one week of hands-on data, not a final verdict.
-
-### Is Muse Spark open source, and how does it relate to Llama 4?
-
-Muse Spark is closed, unlike Llama 4, which was open-weights. Today it's only accessible through meta.ai and the Meta AI app, with API access limited to selected partners, and Meta only "hopes" to open-source future Muse models. It's Meta's first release after rebuilding its AI stack following Llama 4's benchmark controversy, and the claim that it matches Maverick with over 10x less compute is not yet independently verified.
-
-### Why do some people get gains from a model upgrade and others don't?
-
-Because the model isn't what changes your output — the interface between your workflow and the model is. The author knows people who get more from GPT-3.5 than others get from GPT-5.4, because they've defined what to delegate, what to do themselves, and where to use scripts as fallback. Others on the newest model see no gains because they treat every session as a fresh chat and rebuild context from scratch each time.
-
-### Is always wanting to switch models itself the problem?
-
-Often, yes. The urge to switch usually isn't because your current model is inadequate — it's because there's unexamined friction somewhere in your workflow. Switching creates the feeling of making progress while the friction stays, so the cycle repeats at the next release. Before changing models, name the actual bottleneck; that's usually where the fix is.
-
-### If I want to try Muse Spark, how should I evaluate it?
-
-Keep your current setup as the main driver and run Muse Spark on one specific category of task for two weeks — ideally one where its strengths show, such as multimodal processing, health-related research, or lightweight investigation. Compare the outputs against your baseline, then decide whether to expand. Watching what day-to-day users say over that window beats switching everything on launch day.

@@ -150,28 +150,3 @@ Obsidian 始终是书房。Agent 是在房子其余部分走动的系统。当�
 
 * * *
 
-## 常见问题
-
-### 用 AI Agent 需要装一个专门的 Obsidian 插件吗？
-
-不一定。很多桌面 Agent 只需要 vault 的文件夹路径。当你想在 Obsidian **内部**获得聊天或编码 Agent 体验时，Copilot 或 Claudian 这类插件有用；当工作横跨其它应用或 IDE 时，文件夹级 Agent 与 MCP 桥有用。两者可以一起用。
-
-### AI Agent 会覆盖我的 vault 吗？
-
-只有在你授予写入权限、并批准破坏性操作时才会。先只读，或写入一个 AI Inbox 文件夹。优先选择会先预览文件移动的工具——包括 Floatboat 的<a href="/ai-file-organizer">文件整理功能</a>——再执行批量改动。编码 Agent 嵌入和 MCP 写入工具同样值得这份谨慎。
-
-### 这和 Obsidian Copilot 或 Web Clipper Interpreter 是一回事吗？
-
-不是。那些工具主要增强 Obsidian 内部或向 Obsidian 导入时的捕捉与对话。桌面 AI Agent 则是在本地文件与已连接应用之间编排任务。Interpreter 在剪藏页面时可以用你自己的模型供应商，但它替代不了由日历触发的项目执行。Copilot 能在 vault **内部**加 Agent 模式，但那和日历驱动 OS 的重心仍然不同。
-
-### Floatboat 能读我的 Obsidian 库吗？
-
-能，就像它能读你在 Mac 或 Windows 上授权的其它本地文件夹一样。把 workspace 指向相关项目或事件的 vault 路径。当下载文件夹或项目转储需要先整理时，把它和<a href="/ai-file-organizer">文件整理功能</a>搭配用。
-
-### 我应该先选哪款 Obsidian AI Agent？
-
-如果你的每周由会议与截止日期塑形、笔记只是众多输入之一，从 Floatboat 开始。如果你主要需要编辑笔记时的问答与起草，从 Copilot for Obsidian 开始。如果你已经天天用 Claude Code，评估 Claudian 或某个 MCP 桥。如果你只想要相关笔记发现，Smart Connections 可能就够了，不必有什么「Agent」头衔。
-
-### 我该用 AI 笔记应用替换 Obsidian 吗？
-
-如果你重视本地 Markdown 和链接，通常不需要。要替换的是那些逼你手工重做跨应用组装的工作流——而不是一个本来就正常运转的知识库。想与纯聊天工具做品类对比，见 <a href="/blog/what-is-claude-cowork">Claude Cowork</a> 以及我们各篇 Agent 指南里讨论的日历驱动替代品。

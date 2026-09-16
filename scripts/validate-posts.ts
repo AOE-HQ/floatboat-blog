@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 import matter from "gray-matter";
-import { resolveFeatures, validatePostFrontmatter, validateRequiredComponents } from "@openblog/core";
+import { resolveFeatures, validatePostFrontmatter, validateRequiredComponents, FAQ_HEADING } from "@openblog/core";
 import { pathToFileURL } from "url";
 
 import { CONTENT_DIR } from "../src/lib/content";
@@ -60,8 +60,15 @@ async function main() {
   for (const filePath of files) {
     const rel = path.relative(CONTENT_DIR, filePath);
     const raw = fs.readFileSync(filePath, "utf8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const slugFromFile = path.basename(filePath, ".md");
+
+    // FAQ moved to src/data/faq-data.json (sidecar). Body FAQ is no longer rendered.
+    if (FAQ_HEADING.test(content)) {
+      console.warn(
+        `⚠ ${rel}: FAQ section in body is deprecated — add items to src/data/faq-data.json ("/blog/<slug>" or "/zh/blog/<slug>") instead`,
+      );
+    }
 
     const result = validatePostFrontmatter(data, features);
     if (!result.success) {

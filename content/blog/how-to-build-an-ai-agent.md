@@ -167,28 +167,3 @@ _Back to experimenting._
 
   * [Compare Gumloop and similar tools to evaluate no-code options for building agents](</blog/gumloop-review-2026>)
 
-## FAQ
-
-### Do I actually need to build an AI agent myself?
-
-Probably not. If your task is well-defined — summarizing emails, drafting content from a template, scheduling follow-ups — existing tools handle it without code, and self-building is the right call maybe 20% of the time. Custom building makes sense when your use case is genuinely unique, you have real data privacy requirements, you need it to scale, and you or your team can actually maintain it. Otherwise you're paying a complexity tax you didn't need.
-
-### Do I need to know Python to build an AI agent?
-
-It depends on the path. The code path runs on Python — the dominant language across LangGraph, CrewAI, and most agent frameworks — and also requires API familiarity and patience for debugging. The no-code path needs none of that: Dify and n8n build workflows visually, though they hit walls on complex conditional logic and custom memory setups.
-
-### How long does it take to build a working AI agent?
-
-A basic demo can take a weekend. Something that works reliably on real inputs, with edge cases handled, takes weeks and sometimes months. The gap is reliability work — external APIs change, model behavior shifts, and failures are often silent — so don't plan your timeline around the tutorial's happy path.
-
-### Which framework should I start with in 2026?
-
-For serious production builds, LangGraph is the most widely adopted — modeling your agent as a graph makes it debuggable, and hundreds of companies deploy it. CrewAI is simpler when you need several role-based agents collaborating. Skip AutoGen: Microsoft merged it into Agent Framework in October 2025 and it's now in maintenance mode. If you don't code, start with visual builders like Dify or n8n.
-
-### What are the real ongoing costs after launch?
-
-Budget three layers: development, infrastructure (LLM APIs typically $0.50–$15 per million tokens), and ongoing maintenance of 15–25% of the initial build cost per year. An agent is never deploy-and-forget — external tools and APIs change and models drift between versions — so plan for continuous monitoring and set hard cost and turn limits to prevent runaway loops.
-
-### What's the biggest mistake beginners make?
-
-Building too much, too fast. Over 40% of agentic AI projects risk cancellation from poor architecture and unclear deployment strategy, and most failures are silent — agents looping into huge bills or drifting in quality. Start with a single-agent, single-task setup, set hard cost and turn limits, and add complexity only once the simple version genuinely works.

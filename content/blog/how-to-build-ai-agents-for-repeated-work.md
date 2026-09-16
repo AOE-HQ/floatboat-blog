@@ -115,22 +115,3 @@ Pick one repeated task, map it carefully, choose the lightest build path that ge
 
   * If your AI setup already feels messy, fragmented context between tools is probably the bottleneck — not the model quality itself — [why AI workflows feel fragmented](</blog/workspace-agents-for-solo-operators>)
 
-## FAQ
-
-### Do I need coding skills to build a simple agent?
-No — and I'd actively discourage starting with code. For most repeated tasks, a no-code automation tool or an AI builder handles everything without touching a terminal. Coding becomes necessary only when you need custom logic, API integrations that tools don't support, or very specific error-handling behavior. Start with the lightest path (Step 3) and only move to code when you hit a wall.
-
-### Which repeated task should I automate first?
-Choose the job you do more than three times a week, in roughly the same way, with roughly the same inputs — and can describe in one sentence. Good first targets include summarizing support tickets into a one-line triage note, drafting a weekly status report, and extracting action items from meeting transcripts. Bad candidates change judgment every time, take unpredictable inputs, or have no clear definition of done.
-
-### What is the smallest useful agent I can build?
-Smaller than you think. A genuinely useful minimal agent might be: a prompt template that takes a raw support email and outputs a one-line summary in a consistent format. No integrations, no memory, no tool calls. Just a reliable, repeatable transformation of one input to one output. If that's saving you 10 minutes a day, it's worth having.
-
-### Does every repeated task need an actual agent?
-No — most repeated work doesn't need a real agent at all. Walk the decision tree from the lightest option: a well-structured prompt for tasks that fit in one conversation, an automation tool like n8n, Zapier, or Make for moving data between apps, a no-code builder with memory and tools for research-style reasoning, and only then a coded workspace agent. Don't build what a prompt can do; don't code what a builder can handle.
-
-### How many workflows should one agent handle?
-One. At least at first. There is a strong temptation to add scope — "well, since it's already reading the email, why not also check the CRM and draft a reply?" — but each added step multiplies the ways things can go wrong. Keep your first agent to a single workflow. Once it is stable and trusted, you can decide whether to extend it or build a separate agent for the next job.
-
-### What should I do when my agent keeps failing?
-Don't upgrade the model first. If an agent keeps failing at the same point, go back to your input-decision-output map from Step 2 — you've likely hit a decision that is more complex than it looks. Narrow the task rather than adding capability. And if, after two rounds of iteration, you still wouldn't trust the output without rewriting it entirely, stop building. That task may rely on tacit knowledge that isn't ready to automate.

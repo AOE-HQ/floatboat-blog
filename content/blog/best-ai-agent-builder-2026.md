@@ -105,28 +105,3 @@ That's my take. You'll have to decide what fits your situation.
 
   * Curious where workspace-style agents fit compared to standalone builders? This piece explains the bigger shift toward cross-app AI workflows → [AI Workspace Agents for Solo Operators](</blog/ai-workspace-agents>)
 
-## FAQ
-
-### Which AI agent builder should I choose in 2026?
-
-There's no single best builder — the right pick depends on your skills, your workflow, and how long you'll keep it running. For most cost-conscious solo builders, I'd start with n8n in the low-code tier. Developers who need maximum control over state and branching should look at LangGraph. Need something working by tomorrow? Start with Make. And if your work is just "when X happens, do Y," the best builder might be none at all.
-
-### What should I compare before choosing a builder?
-
-Skip the integration-count marketing and check three things: the billing unit (per task, per execution, or per operation — a 10-step workflow burns 10 Zapier tasks per run but one n8n execution), whether the platform runs real agents with memory and tool choice or just calls an AI API, and how much maintenance the result will need. Also check logging: silent failures are how automations die.
-
-### Do free or self-hosted builder options include useful integrations?
-
-The open-source platforms — n8n Community Edition, Flowise, Dify — are free to self-host with most integrations included. The catch is infrastructure: you need a server, comfort with Docker, and you own the maintenance. Free cloud tiers like Zapier Free and Make Free suit experimenting, not volume work. And if data sovereignty matters — healthcare, legal, finance — self-hosted options are the only route, since cloud-only builders require sensitive data to leave your infrastructure.
-
-### Can I export or move what I build later?
-
-Depends on the platform. n8n workflows are stored as JSON and are portable — you can move between self-hosted and cloud or export to another instance. LangChain-based agents are code, so inherently portable. Zapier and Make are more locked in; there's no automated migration tool. Worth thinking about before you spend 40 hours building on a proprietary platform.
-
-### What happens when a builder hits its limits?
-
-It depends on the tier. No-code platforms usually hit a wall when your workflow needs logic the builder can't express — workarounds get painful, and failures tend to be silent. Low-code platforms like n8n and Dify provide execution logs, so you can see where a run failed; their ceiling is performance at scale and complex multi-agent orchestration. Developer frameworks have almost no ceiling, but you manage everything yourself. Agents also break as APIs, triggers, and models change — plan for maintenance, not just build time.
-
-### How should I test a builder before committing?
-
-Don't commit based on a demo workflow. Build the specific workflow you'd actually run in production. Then check: does it handle errors gracefully? Can you see what happened when it fails? What does cost look like at 10x your current volume? I'd suggest running something real for at least two weeks before deciding you're staying.

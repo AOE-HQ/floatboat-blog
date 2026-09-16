@@ -114,28 +114,3 @@ That's my honest take. You'll have to decide what's right for your situation.
 
 • [How One-Person Businesses Work Like a Team With AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>) — Adding another model only helps if it removes a real bottleneck in how a solo business operates.
 
-## FAQ
-
-### Should I switch from Claude or ChatGPT to Gemini 3.5 Flash?
-
-Not as a full replacement — each model has different strengths. Gemini 3.5 Flash leads on speed, cost, and long-context tasks; Claude still edges ahead on careful writing and code-review accuracy; GPT-5.5 leads on deep reasoning. Most solo operators I've seen end up routing different task types to different models rather than picking one winner. Before switching, run the framework from this article: is context the bottleneck, is cost the constraint, and what does re-tuning your prompts cost?
-
-### Which tasks is Gemini 3.5 Flash actually best for?
-
-Long-document analysis is its clearest win — anything over roughly 20 pages where context matters, because the 1M-token window removes chunking. Structured data extraction (invoices, survey responses, competitor pricing tables) and high-volume API tasks also fit, since pricing differences compound at scale. Leave nuanced writing in a specific voice, highly creative generation, or tasks where you've already tuned detailed prompts for another model on your current setup.
-
-### Can Gemini 3.5 handle long PDFs and full documents in one go?
-
-Yes. The 1M-token context window supports roughly several hundred thousand words in a single pass. I tested it on a 40-page market research PDF and the output held together through the entire document — it didn't lose the thread halfway. That said, I haven't pushed it past ~100 pages yet, so I can't speak to the limits on very large inputs.
-
-### Is Gemini 3.5 Flash free to use?
-
-In the Gemini app and AI Mode in Google Search, yes — it's the default model at no cost. API access is paid: $1.50 per million input tokens and $9.00 per million output tokens. Cached input drops to $0.15 per million, which matters a lot if you're running repetitive tasks on the same source material.
-
-### Is it worth adding if I already use a multi-model AI workspace?
-
-Only if it fills a gap your current setup doesn't cover — like long-context research or cheaper batch processing. Adding a model without removing one usually means more decision overhead with marginal quality gains. Ask yourself what you'd take out of your workflow before putting something new in, and whether the performance gap is big enough to justify maintaining another system.
-
-### When is Gemini 3.5 Pro coming out?
-
-Google confirmed at I/O 2026 that Gemini 3.5 Pro is in internal testing and expected to ship in June 2026 — no exact date yet. If your work is reasoning-heavy and you can wait a few weeks, it may be worth holding off before committing to a full workflow change.

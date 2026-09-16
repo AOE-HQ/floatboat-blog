@@ -147,28 +147,3 @@ If you build on this stack, start with **short clips and a deep buffer** , measu
 
 * * *
 
-## FAQ
-
-### Is H3 Max Live the same as MiniMax H3?
-
-No. **MiniMax H3** is the base omni-modal video model (open weights for H3-Base, 2K paths, Ref2VA). **H3 Max** is fal's post-trained, speed-optimized variant served at 768p on fal's API. **H3 Max Live** is a **livestream workflow** — and an experimental continuity endpoint — built on top of H3 Max, not a separate MiniMax release.
-
-### Can I run an infinite AI livestream on fal's public API today?
-
-You can build the loop yourself with the public **H3 Max** text-to-video and image-to-video endpoints, a queue, and RTMP tooling. fal's **native continuity** endpoint showcased in H3 Max Live was described as experimental; check fal's docs and model catalog for GA status before relying on cross-scene memory in production.
-
-### Why would Twitch or Kick flag an AI livestream?
-
-Platforms enforce community guidelines through automated systems and reports. Fully AI-generated, chat-steered content with unpredictable NSFW risk does not fit neatly into existing creator categories. Reported friction in August 2026 may reflect moderation rules, category mismatch, or viewer reports — not a technical inability to stream. Policy varies by platform and may change as AI streams proliferate.
-
-### How much does a 24/7 H3 Max AI stream cost?
-
-At fal's list rate of about **$0.08 per second at 768p** , generating one hour of footage per clock hour costs roughly **$288** ; a full day approaches **$6,900** before failed jobs, parallel redundancy, or lower-duty cycles. Real demos cited **~$4,000/day** with sponsorship or intermittent generation. Budget for peak chat load, not average clip length.
-
-### How is this different from MiniMax M3 or the Realtime API?
-
-**MiniMax M3** is a text-centric frontier LLM for agents and coding. The **MiniMax Realtime API** is for low-latency **voice** conversation. **H3 Max Live** is **video clip generation** piped into a broadcast buffer. The word "realtime" in H3 Max coverage means **faster than playback** , not speech-to-speech dialogue.
-
-### When should I use H3 Max vs standard MiniMax H3?
-
-Use **standard H3 (on fal or MiniMax) when you need 2K output, reference-to-video with many assets, or instruction-based editing — quality and modality breadth first. Use H3 Max when you need maximum throughput** , stronger prompt adherence at 768p, or interactive/high-volume generation — including livestream buffers. Many teams will use both: H3 Max for speed paths, standard H3 for hero shots.

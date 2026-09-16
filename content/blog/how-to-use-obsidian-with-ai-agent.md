@@ -150,28 +150,3 @@ Obsidian remains the library. The agent is the system that walks the rest of the
 
 * * *
 
-## FAQ
-
-### Do I need a special Obsidian plugin to use an AI agent?
-
-Not necessarily. Many desktop agents only need the vault folder path. Plugins such as Copilot or Claudian help when you want chat or coding-agent UX _inside_ Obsidian; folder-level agents and MCP bridges help when work spans other apps or IDEs. You can use both.
-
-### Will an AI agent overwrite my vault?
-
-Only if you grant write access and approve destructive actions. Start read-only or write to an AI Inbox folder. Prefer tools that preview file moves — including Floatboat's <a href="/ai-file-organizer">AI File Organizer</a> — before bulk changes. Coding-agent embeds and MCP write tools deserve the same caution.
-
-### Is this the same as Obsidian Copilot or Web Clipper Interpreter?
-
-No. Those tools primarily enhance capture and conversation inside or into Obsidian. A desktop AI agent orchestrates tasks across local files and connected apps. Interpreter can use your own model providers when clipping pages; it does not replace calendar-triggered project execution. Copilot can add agentic modes _inside_ the vault; that is still a different center of gravity than a calendar-driven OS.
-
-### Can Floatboat read my Obsidian vault?
-
-Yes, in the same way it can read other local folders you authorize on Mac or Windows. Point the workspace at the vault path for the relevant project or event. Pair it with the <a href="/ai-file-organizer">file organizer</a> when Downloads or project dumps need sorting first.
-
-### Which Obsidian AI agent should I pick first?
-
-If your week is meeting- and deadline-shaped and notes are only one input, start with Floatboat. If you mostly need Q&A and drafting while editing notes, start with Copilot for Obsidian. If you already run Claude Code daily, evaluate Claudian or an MCP bridge. If you only want related-note discovery, Smart Connections may be enough without any "agent" branding.
-
-### Should I replace Obsidian with an AI note app?
-
-Usually no, if you already value local Markdown and linking. Replace workflows that force you to redo cross-app assembly by hand — not the knowledge base that already works. For category contrast with chat-only tools, see <a href="/blog/what-is-claude-cowork">Claude Cowork</a> and calendar-driven alternatives discussed across our agent guides.

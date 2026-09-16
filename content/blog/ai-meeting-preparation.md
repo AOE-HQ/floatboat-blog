@@ -128,28 +128,3 @@ Setup for a recurring meeting typically involves: tagging the calendar event ser
 
   * Calendar-Driven AI vs Chat-Based AI — Why calendar-triggered prep is architecturally different from asking a chat AI to prepare.
 
-## FAQ
-
-### How is AI meeting prep different from an AI note-taker?
-
-Note-takers like Fireflies, Otter, and Fathom work inside the meeting — they transcribe, summarize, and extract action items after the conversation starts. AI meeting prep works before it: gathering who is attending and why, surfacing relevant documents, generating a one-page brief, and carrying over unfinished action items. They are complementary, not competitors — last meeting's notes become the next meeting's prep context.
-
-### Which meetings does automated prep help the most?
-
-Recurring meetings deliver the highest return — weekly standups, monthly client check-ins, quarterly reviews — because the format repeats while the content changes. But any meeting whose context is scattered across email, documents, and notes benefits too: client calls about proposals, product reviews, and weekly planning sessions. The article also shows how the same pipeline adapts to a first meeting with a new prospect.
-
-### Why use a calendar-driven AI instead of asking a chat AI to prep?
-
-A chat-based workflow only runs if you remember to open the tool, gather the inputs, and ask — and when you have eight meetings in a day, that memory fails. A calendar-driven system is triggered by the calendar event itself: thirty minutes before the call, context is gathered, documents surfaced, and the brief generated, whether you asked or not. It removes the remembering burden entirely, so even meetings with no buffer start prepared.
-
-### Can automated prep handle confidential meetings?
-
-Yes, with the right setup. To trigger prep, the system reads calendar event metadata — title, attendees, time — and uses email and document sources to gather context. For confidential meetings, materials are assembled locally rather than uploaded to a cloud service: the system processes data where it lives. If local processing is a hard requirement, verify the tool supports on-device AI, not cloud-only processing.
-
-### What do I need to connect to set this up?
-
-The minimum is calendar access, so the system can see upcoming events and trigger prep. For full context gathering, add email and at least one document source such as Google Drive, Notion, Dropbox, or local files; a task manager adds action item carry-over. Connections must stay live, not be imported once. Most systems also let you scope access to specific labels, folders, and calendars rather than granting blanket access.
-
-### Does automated prep mean I stop preparing?
-
-No — automation covers the assembly work, while the judgment stays yours. The brief is a starting point, not a script: you still review it, adjust the emphasis, and decide what to prioritize in the minutes before the meeting. What changes is that a 60-second scan replaces the ten minutes you used to spend hunting down the materials the brief summarizes.

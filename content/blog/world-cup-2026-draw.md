@@ -176,28 +176,3 @@ The World Cup 2026 draw created the first real tournament map. Mexico, Canada, a
 
 A draw page is most useful when it connects the ceremony to the next user task. The draw tells readers who is in each group. The groups and standings hub explains what happened next. The bracket tracker shows what those results became. Together, those pages give readers one clean path from draw day to the knockout rounds.
 
-## FAQ
-
-### What is the World Cup 2026 draw?
-
-The World Cup 2026 draw is the official process that placed the qualified teams into the tournament's twelve groups. It set the initial group-stage map and created the first version of each team's path toward the knockout rounds. Which group a team lands in shapes its opponents, travel, rest profile, and likely Round of 32 assignment.
-
-### How many groups are in the World Cup 2026 draw?
-
-Twelve groups, labeled Group A through Group L, with four teams each — 48 teams in total. The top two from each group, plus the best third-place teams, advance to a 32-team knockout bracket. Finishing position therefore carries real path cost, not just survival.
-
-### Which groups are the host nations United States, Mexico, and Canada in?
-
-The United States is in Group D with Turkey, Australia, and Paraguay. Mexico is in Group A with South Africa, South Korea, and the Czech Republic. Canada is in Group B with Switzerland, Bosnia and Herzegovina, and Qatar. For a US-specific breakdown of opponents and key matches, see the USA World Cup 2026 group guide.
-
-### Which group is the Group of Death for World Cup 2026?
-
-Group K and Group D are the strongest candidates, depending on how you define it. By star power and path cost, Group K (Colombia, Portugal, DR Congo, Uzbekistan) leads. By host pressure and volatility, Group D (United States, Turkey, Australia, Paraguay) belongs in the conversation, and Group F also has real depth with the Netherlands, Japan, and Sweden.
-
-### Where should I track groups and standings after the draw?
-
-Use the World Cup 2026 groups and standings page. The draw page explains how the groups were created and why each one matters; the groups page tracks points, tiebreakers, and live qualification scenarios as results come in. Bookmarking both gives you a clean path from draw day to the knockout rounds.
-
-### Does the draw determine the bracket?
-
-Not directly. The draw sets the starting structure of each team's path, but actual knockout pairings depend on group-stage results — who finishes first, second, or as a best third-place team. Once the groups are settled, follow the World Cup 2026 bracket page to track the knockout route.

@@ -145,28 +145,3 @@ This little test turned out to be more interesting than I thought. At first, I j
 
   * **[how AI automation ​work​​ is actually priced in the real market](<https://<https://floatboat.ai/blog/ai-automation-agency-pricing>>)**
 
-## FAQ
-
-### What's the core difference between Lindy and Gumloop?
-
-The core difference is where you control logic. Lindy is a prompt-based agent: it reasons for you, adapts mid-task, and hands work between agents — ideal for communication workflows like email, calendar, and meetings. Gumloop is a visual, node-based canvas where you design exactly when and where AI steps and reasoning happen — better for repeatable, data-heavy pipelines you want to see and control step by step.
-
-### Which should I start with if I'm not a developer?
-
-Start with Lindy. Its natural-language setup lets you describe what you want and get something running without mapping out any logic, and its templates cover email, meetings, and calendar — the most common starting pain points. Gumloop's canvas is powerful but starts from a blank slate, which can slow you down before you see results unless you already think in workflow logic.
-
-### Where does each tool actually win?
-
-Each wins in its home territory. Lindy is strongest for email triage, meeting intelligence, sales follow-up, and agent-to-agent handoffs. Gumloop wins when you need precision and visibility: document processing at scale, web scraping and browser automation, CRM or sales data pipelines, and any flow you run repeatedly. For the same task, Lindy gets you a working result faster; Gumloop delivers the better draft once dialed in.
-
-### Can Lindy and Gumloop replace each other?
-
-Not really — they solve different problems, and heavy users often keep both. Lindy is hard to beat for communication-layer work like email and meetings. Gumloop earns its place when you need repeatable, high-volume data pipelines with full visibility into each step. If your work touches both areas, the honest answer is usually to use them for different jobs rather than pick one forever.
-
-### Do Lindy and Gumloop have free plans?
-
-Yes, both have free tiers worth trying. Lindy's free plan lets you test basic agents, though credit limits kick in quickly on multi-step flows. Gumloop offers around 2,000 free credits per month — enough to build and test a simple pipeline, with not much room for heavy experiments. Either free tier is enough to feel how each tool thinks.
-
-### What hidden cost should I watch out for?
-
-For Lindy, watch credit burn while testing — iterating on agent logic costs more than you expect. For Gumloop, the cost is upfront time: the canvas gives you control, but getting a pipeline to run cleanly takes longer than planned. To decide between them, give both free tiers the same real task and pick whichever gets you a working result faster.

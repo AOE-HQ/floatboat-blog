@@ -122,28 +122,3 @@ Back to it.
 
 [How to Stop Context Switching with a Workspace Agent](</blog/stop-context-switching-workspace-agent>)
 
-## FAQ
-
-### Should I always pick the highest effort setting?
-
-No — and that instinct is exactly what this article pushes back on. On simple sorting, tagging, or drafting, max or extra effort doesn't make the output meaningfully better; it just makes you wait longer and burns your rate limit. Higher effort pays off only where being slightly wrong carries a real downstream cost. The discipline is judging when more thinking helps, not defaulting to "more is better" on everything.
-
-### What is Effort Control in Claude?
-
-It's a selector next to the model picker on claude.ai and Cowork that controls how much thinking Claude puts into a response. Higher levels make the model think more frequently and deeply — better answers, more tokens. Lower levels respond faster and consume your rate limits more slowly. The levels run from low through high (the default), extra, and max. The author's impressions come from real sessions, not benchmarks.
-
-### How is Effort Control different from Fast Mode?
-
-Effort Control is a thinking knob; Fast Mode is a speed knob. Effort picks how carefully Claude reasons on a response. Fast Mode is a separate speed setting that can return up to 2.5x more output tokens per second from the same model at premium pricing — currently a research preview on the API and in Claude Code. The two combine: the author's go-to configuration for repetitive work is Fast Mode plus low effort.
-
-### When is higher effort actually worth it?
-
-When the cost of almost-right is higher than the cost of waiting. The article names three situations: decisions you'd hesitate to walk back — pricing, positioning, a difficult client email; review-heavy work where you want the model to read carefully and push back; and long-context synthesis where the whole document has to hold together. In practice, extra has delivered the author's biggest quality jump; max feels more situational.
-
-### When should I reach for Fast Mode or lower effort instead?
-
-For low-stakes, repetitive work — drafting, sorting links, tagging notes, summarizing, first-pass outlines you'll rewrite anyway. Lower effort is genuinely fine there, and Fast Mode removes the latency that makes a sequence of small tasks feel like waiting rooms. One caveat: switching into Fast Mode mid-conversation means paying full uncached input pricing on the whole context, so decide at the start of a session.
-
-### Can effort settings replace human review?
-
-No — and be wary of anyone who claims otherwise. Higher effort makes Claude more likely to catch its own mistakes and push back on flawed reasoning, but "more likely" isn't "always". For anything touching money, legal exposure, client commitments, or published work, the author still reviews the output. Effort Control improves the quality of the first draft; it doesn't remove the need for the last pass.

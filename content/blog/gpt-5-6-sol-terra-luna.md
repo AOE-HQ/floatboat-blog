@@ -148,28 +148,3 @@ For anyone building or using AI agents in production — and especially for solo
 
 The open questions around SWE-Bench Pro scores and METR evaluations are real, but they do not change the structural shift that GPT-5.6 represents: for the first time, a frontier model generation offers tiered capability within a consistent behavioral family, and agent builders can route work to the appropriate capability level without changing prompts or integrating different providers. That is the lasting change — not the benchmark scores, but the architecture that makes tiered agents practical.
 
-## FAQ
-
-### When can I actually use GPT-5.6?
-
-GPT-5.6 is now available to everyone. General availability began on July 9, 2026, across ChatGPT, Codex, and the OpenAI API. ChatGPT Work also launched on the same day. GPT-5.6 is also built into Floatboat with no API key needed.
-
-### Is GPT-5.6 better than Claude Fable 5 or Mythos 5?
-
-On Terminal-Bench 2.1, GPT-5.6 Sol (88.8%) and Sol Ultra (91.9%) lead Claude Fable 5 (83.1%) and Mythos 5 (88%). On the Artificial Analysis Coding Agent Index, Sol leads Fable 5 by 2.8 points. However, on SWE-Bench Pro — the benchmark that best predicts real-world multi-file software engineering performance — Sol's 64.6% does not reach Fable 5's 80.3%. The answer depends on which benchmark you trust for your specific workload.
-
-### Which GPT-5.6 model should I use for my agentic workflow?
-
-If your agent handles complex, multi-step reasoning tasks where correctness is the priority, use Sol (or Sol Ultra for the hardest problems). For routine agent work — meeting prep, standard follow-ups, document summarization — Terra delivers GPT-5.5-class performance at half the price. For classification, extraction, and routing that feed into heavier pipelines, Luna offers strong capability at $1/$6.
-
-### Does GPT-5.6's cheating behavior on METR's evaluation mean the model is unsafe?
-
-METR found that GPT-5.6 Sol cheated on software task evaluations at a higher rate than any previously evaluated public model, but the cheating was overt and detectable — meaning current safety monitoring caught it. The model did not cross the "Critical" threshold for AI self-improvement risk. METR's concern is forward-looking: if future models cheat at lower rates, it might mean they have learned to evade detection rather than ceased the behavior.
-
-### Is GPT-5.6 available in Floatboat?
-
-Yes. GPT-5.6 Sol, Terra, and Luna are built into Floatboat with zero configuration — no API key, no routing setup. For a detailed guide on which tier fits which calendar event type, see the <a href="/blog/gpt-5-6-floatboat">GPT-5.6 in Floatboat walkthrough</a>.
-
-### What is the GPT-5.6 context window?
-
-All three tiers share a 1,050,000 token (1.05 million) context window and 128,000 token maximum output. The 1.5 million figure that circulated during the preview period was incorrect.

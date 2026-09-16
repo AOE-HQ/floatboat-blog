@@ -167,28 +167,3 @@ _Anyway, that's what I've been figuring out. Still experimenting, still learning
 
   5. **[Discover alternatives to Gumloop for building efficient AI workflows](</blog/gumloop-alternatives-2026>)**
 
-## FAQ
-
-### Do I need an enterprise Feishu account to use the Feishu CLI?
-
-Yes, effectively. The open platform features the CLI wraps aren't fully available on personal free accounts, and building anything real requires creating a custom app in the developer console — which needs an account with app-creation permissions. If you run your own workspace, you typically have them, but verify before you invest time in setup.
-
-### What's the difference between a bot token and a user access token?
-
-A bot or tenant token lets the app act as itself — fine for chats the bot is in and documents shared with the app. A user access token lets the CLI act on your behalf, which is required for private chats, personal calendars, and anything not explicitly shared with the app — meaning most of your real working conversations need it. It also brings the token refresh burden.
-
-### How often do user access tokens expire and break automated workflows?
-
-Often enough that expiry is the classic silent killer: user access tokens typically last around two hours and need a refresh mechanism to keep automated flows alive. If you don't touch a setup for a few weeks, you'll come back to find everything quietly failing — with no alert, because you never built an alerting layer. Plan refresh or re-authentication up front.
-
-### Can I run Feishu CLI workflows on a schedule without a server?
-
-Locally, yes — cron on Mac/Linux or Task Scheduler on Windows covers many cases. But the CLI only runs when invoked, so any external trigger needs something in the middle: a cron job, a script runner, or a small automation layer. Workflows that must run while your machine is off need an always-on environment such as a cheap VPS — small, but real infrastructure.
-
-### What happens when Feishu updates or deprecates an API I'm using?
-
-Feishu announces deprecations with migration windows, but as a solo operator you'll usually find out when a workflow silently fails or returns unexpected results — there's no mailing list, QA environment, or test suite to catch it first. The realistic mitigation is unglamorous: keep the CLI and dependencies updated, watch the platform changelog, and make failures loud.
-
-### When does Feishu CLI automation actually pay off for a solo operator?
-
-It pays off when the workflow runs frequently, the manual version is genuinely tedious, and the failure mode is low-stakes — read-only pipelines that pull context for your own reference are the best starting point. Action-execution workflows that send messages or modify shared records carry more risk, so graduate to them later. You should also enjoy the meta-work of maintaining it.

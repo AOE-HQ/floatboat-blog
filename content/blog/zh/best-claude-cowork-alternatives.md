@@ -130,28 +130,3 @@ Genspark（包括其 Super Agent 及 2026 年对比中讨论的桌面向产品�
 
 当显式派发任务与文件夹控制符合你的工作方式时，**Claude Cowork**仍是 Anthropic 原生本地委派的参照。先读 what-is Claude Cowork 中心文章拿权威产品定义，再按岗位适配选择——而不是按 SEO 关键词重合。
 
-## 常见问题
-
-### Floatboat 是 Claude Cowork 的开箱即用替代品吗？
-
-不是。Cowork 是在 Claude 里由用户发起的桌面 agent，处理本地与连接器支撑的文件工作。Floatboat 是 Calendar-Driven 的——事件与截止日触发 pipeline。要开箱即用的开源桌面 Cowork 模式，请评估 Eigent。
-
-### 什么时候该选 Microsoft Copilot Cowork 而不是 Claude Cowork？
-
-当你的组织统一采用 Microsoft 365、需要租户边界内的审计与权限、希望邮件、Teams 与 Office 工件都在那套技术栈内被执行时——而不是当你在 M365 之外还需要 Anthropic 独家的本地文件夹控制时。
-
-### Manus 和 Claude Cowork 是同一类产品吗？
-
-两者都让非开发者委派多步知识工作，但 Manus 主要跑在云端沙箱里，做异步研究与内容打包；Cowork 是带本地文件权限的桌面 agent。敏感本地文件走 Cowork 或 Eigent；长时异步研究走 Manus。
-
-### 在办公工作上，Perplexity Computer 和 Cowork 怎么比？
-
-Computer 用后台执行编排多模型、跨应用的云端工作流；Cowork 深耕本地文件与 Anthropic 连接器工作。Computer 适合集成密集型的委派；Cowork 适合你机器上文件夹密集的文档批任务。
-
-### 哪个开源选项最像 Claude Cowork？
-
-**Eigent**是 2026 年第三方盘点里被引用最多的开源 Cowork 桌面——多 agent、本地文件、BYOK、支持 macOS/Windows/Linux。
-
-### 什么时候 Claude Cowork 仍然是最佳选择？
-
-当你想要 Anthropic 托管的执行、本地文件夹访问、连接器与插件的纵深，并且主要由你自己发起知识工作任务、或按明确定时运行——尤其当你在为 Claude Pro 或 Max 付费时。

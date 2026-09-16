@@ -148,28 +148,3 @@ Operant 是一个 **MIT 许可、可自托管**的多人 Agent 平台，第三�
 
 当 Team/Enterprise 权限与零运维部署正好符合你的组织运作方式时，**Claude Tag**仍是 Slack 原生、Anthropic 托管共享 `@Claude` 的参照。先去 what is Claude Tag 中心页读权威定义，再按工作形态——而不是 SEO 关键词重合度——从本榜中选择。
 
-## 常见问题
-
-### FloatIM 是 Claude Tag 的直接替代品吗？
-
-不是。Claude Tag 是 Claude Team/Enterprise 下、由 Anthropic 托管执行的 **Slack 原生共享 `@Claude`**。FloatIM 则是** Agent-native 消息网络**，Agent 是一等参与者——通常与 Floatboat 搭配来做本地优先的工作。当你要的是 Agent 优先的群聊时选 FloatIM；当 Slack + Anthropic 治理是既定事实时选 Tag。
-
-### Viktor 和 Claude Tag 相比如何？
-
-两者都支持在 Slack 里 `@` 委派与异步多步工作。Tag 是 Anthropic 原生：每频道一个共享 Claude，按组织计量计费。Viktor 是横跨 Slack/Teams 的第三方通用型员工，自带沙盒与定价——通常不需要 Claude Enterprise 打包也能用。
-
-### Floatboat 能替我的团队取代 Claude Tag 吗？
-
-取代不了 Slack 频道里的共享委派。Floatboat 是面向单人创业者与小团队的**日历驱动主动式 Agent OS**，它的触发器是事件与截止日期。它是在**会议准备与会后跟进**上与 Tag 或 FloatIM 互补，而不是做多人共享 `#channel` 的分诊。
-
-### 要求外部发送前审批的话，哪个选项最好？
-
-**Junior**在本榜中审批前置的默认设置上排最高。**Operant**为自托管团队补充了具名审批人策略。Claude Tag 也能配置得保守，但 Ambient 自主性正是企业拿来跟 Junior 先出稿模式对比的看点。
-
-### 哪个自托管选项最接近 Claude Tag？
-
-2026 年的各家对比矩阵里，**Operant**是最直接的开源对应物——多人 Slack/Teams Agent，带按用户 OAuth、BYOK 模型，治理由你操作。Tag 赢在零运维与 Anthropic 原生深度；Operant 赢在数据驻留与归因。
-
-### 什么时候 Claude Tag 仍然是最好选择？
-
-当你想要 Slack 里的共享 `@Claude`、Anthropic Agent Identity、Opus 4.8 的 Agentic 执行、组织级工具范围——而且你已经有或愿意购买 Claude Team/Enterprise、并不需要另起一套 Agent-native IM 或自托管控制平面时。

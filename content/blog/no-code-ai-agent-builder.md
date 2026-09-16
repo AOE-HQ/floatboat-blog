@@ -131,28 +131,3 @@ If the answer isn't clear yet, build the thing. You'll usually know within two w
 
   * Thinking beyond “getting it working” and toward long-term maintainability? This piece on workflow builders vs workspace agents connects directly to that question: [Workspace Agents vs Workflow Builders: Which One Fits Real Solo Work?](</blog/workspace-agents-vs-workflow-builders>)
 
-## FAQ
-
-### Can no-code agents run reliably every day?
-
-In stable conditions — yes. The platforms themselves (Zapier, Make) have solid uptime — Zapier reports 99.9%+ on paid plans and Make runs on managed infrastructure. The risk is behavioral, not infrastructural: an agent can produce wrong outputs, miss edge cases, or fail silently when a connected app changes a field name, and keep running (and billing) without telling you. "Running" and "running correctly" need separate answers.
-
-### What's the difference between no-code, low-code, and workspace-native AI?
-
-No-code (Zapier, Make, Lindy) hides everything behind a visual canvas — lowest setup effort, but real limits on branching logic, cross-session memory, and custom error handling. Low-code (n8n, Dify, Flowise) lets you drop into code when needed, with execution logs and portable exports. Workspace-native AI (Google Workspace AI, Microsoft Copilot Studio) lives inside one ecosystem with zero integration overhead but the least flexibility. These trade-offs are structural, not feature-based.
-
-### What kinds of workflows suit no-code builders best?
-
-Three patterns earned their place in practice: workflows with predictable inputs (a form submission, a spreadsheet row, a webhook from the same source); connecting apps you already use, where Zapier's 8,000+ integrations shine; and validating an idea before building it properly — run a rough version for a couple of weeks and you learn whether the workflow is worth investing in. That last one may be where no-code does its best work.
-
-### Can I fix failures without a developer?
-
-It depends on the failure — and on visibility. If a connected app updates its API and breaks your flow, most no-code platforms eventually update their integration, but you will be waiting. If the agent misreads an input, you can usually adjust the prompt or add a filter step yourself. What you cannot easily fix is failures inside the agent's reasoning that the platform never surfaces — which is why low-code tools with execution logs hold the edge when debugging matters.
-
-### When should I avoid no-code entirely?
-
-When the stakes are reliability or data. Avoid no-code if your agent must run unattended for weeks (failure modes are too quiet); if the logic needs more than two or three branches (you will fight the builder); if data sovereignty matters (cloud-only platforms route data through their infrastructure); or if you plan to hand the workflow to a client or team to debug. Its ceiling is not a secret — no-code optimizes for the happy path.
-
-### When is it time to move from no-code to low-code?
-
-When patching outgrows the payoff. Clear signals: you spend more time fixing the workflow than it saves; you need custom logic the builder cannot express; the task-based billing ceiling breaks the cost math (a 10-step agent run 500 times a month burns 5,000 tasks); or you need execution logs the platform cannot give you. The move to a low-code platform like n8n is not painless — there is no automated migration — so plan it before a production failure forces it.

@@ -86,28 +86,3 @@ DeepSeek V4 Pro 0813 is a strange kind of milestone: a flagship GA delivered wit
 
 The decision framework this leaves a buyer with is straightforward. If you already use deepseek-v4-pro, you are on the new build — re-benchmark anything you measured in the preview era. If you are comparing models for agentic work, treat the official benchmark table as directional and validate on your own tasks. If you are cost-sensitive, understand the August 16 price change and route heavy work into off-peak hours. And if you are choosing between this week's two frontier-adjacent releases, the Grok 4.6 comparison is the right next read — because the real competition in agentic AI is no longer about who has the best scorecard, but about whose economics make long-running agents actually affordable.
 
-## FAQ
-
-### Is DeepSeek V4 Pro 0813 a new model or an update?
-
-It is the production build of V4 Pro, the same architecture as the April preview (1.6T-parameter MoE, 49B active, 1M context) with updated post-training. DeepSeek swapped the deepseek-v4-pro endpoint to this checkpoint on August 12–13, 2026; no integration change is required.
-
-### How do I access DeepSeek V4 Pro 0813?
-
-Use the existing deepseek-v4-pro model name on the DeepSeek API. It is OpenAI- and Anthropic-format compatible, so existing integrations, including Claude Code pointed at [api.deepseek.com](<http://api.deepseek.com>), work without modification.
-
-### Are the 0813 benchmark scores independently verified?
-
-Not yet. All agent benchmark scores (DeepSWE 62.7, Terminal-Bench 2.1 87.9, Cybergym 83.3, and others) are vendor-reported and were produced through DeepSeek's unreleased Harness minimal mode. Independent trackers had recorded no third-party 0813 results at the time of writing.
-
-### When does the DeepSeek price increase take effect?
-
-August 16, 2026 at 16:00 UTC. Peak/off-peak billing starts then, with peak hours at 01:00–04:00 and 06:00–10:00 UTC and off-peak priced at half of peak. Peak V4 Pro output rises to $3.96 per 1M tokens, up from the current $0.87 flat rate.
-
-### Does DeepSeek V4 Pro 0813 support images?
-
-No. This build is text-only. It accepts text input and produces text output; it does not natively support image, audio, or video input, despite some coverage suggesting otherwise.
-
-### Is DeepSeek V4 Pro 0813 open-source?
-
-The V4 series weights are MIT-licensed, but the 0813 build's weights had not been published at the time of writing — Hugging Face still hosted the April preview build. The API is the guaranteed way to access 0813.

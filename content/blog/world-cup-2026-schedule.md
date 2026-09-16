@@ -244,28 +244,3 @@ For readers who want the zero-maintenance option, FloatCup handles the full sche
 
   * FloatCup: Subscribe to World Cup 2026 Calendar in One Click — the zero-effort calendar sync
 
-## FAQ
-
-### How many matches does the 2026 World Cup have?
-
-104 matches in total — 72 in the group stage and 32 in the knockout rounds. That is up from 64 matches in the 2022 tournament, driven by the expansion from 32 to 48 teams. The group stage runs June 11–27 across 12 groups, with each team playing three matches before the knockout phase begins.
-
-### When does the 2026 World Cup start and end?
-
-June 11 through July 19, 2026 — 39 days, making it the longest World Cup in history. Mexico opens against South Africa at Estadio Azteca on June 11, and the final takes place at MetLife Stadium in New York/New Jersey on July 19. In between come the group stage, the new Round of 32, and four more knockout rounds.
-
-### How does the new 48-team format change the schedule?
-
-The biggest change is a new Round of 32, which expands the knockout bracket from 16 to 32 teams: the top two from each group plus the eight best third-place teams advance. Finalists now play eight matches — three group-stage and five knockout, one more than any previous winner — and the knockout stage runs 22 days instead of 16.
-
-### How do I add the full schedule to my calendar?
-
-Two routes. Import the ICS file once (Google Calendar: Settings → Import & Export; Apple Calendar and Outlook also support it) and all 104 matches appear as events — you can then print from your calendar for a hard copy. Or subscribe with FloatCup for one-click sync of every match with automatic timezone conversion and reminders. ICS is static; FloatCup stays in sync if FIFA adjusts the schedule.
-
-### What happens if a match time changes?
-
-FIFA occasionally adjusts kickoff times during the group stage for broadcast optimization. If you imported a static ICS file, you need to re-import the updated version manually. If you subscribed via FloatCup, match times update automatically in your calendar, with reminders and venue changes following along.
-
-### What time zone are match times in?
-
-Official times are announced in local stadium time. For US viewers, most matches fall in the afternoon and evening across EDT, CDT, and PDT; Mexico City stays on CST year-round (UTC-6), so add two hours to convert a kickoff there to Eastern during the tournament. Calendar subscriptions — ICS or FloatCup — convert automatically to your calendar's time zone.

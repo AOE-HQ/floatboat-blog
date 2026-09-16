@@ -101,28 +101,3 @@ That's my honest take. The tool is early, the concept is solid, and the question
 
 • [Trying to reduce tool-switching across your workflow? Read: Stop Context Switching: Why Workspace Agents Matter](</blog/stop-context-switching-workspace-agent>)
 
-## FAQ
-
-### What is html-anything and how does it work?
-
-html-anything is an open-source, local-first agentic HTML editor from the nexu-io team, licensed Apache-2.0. Instead of running your prompts through its own cloud, it reuses whichever coding-agent CLI is already logged in on your machine, generates rich HTML through skill templates, shows a sandboxed live preview, and exports to multiple platforms. The pitch: your local AI agent writes the HTML, you review and ship it.
-
-### Does html-anything really require no API key?
-
-Correct — you do not add a second API key. The tool auto-detects the coding-agent CLI on your PATH and reuses its session, which is where the zero-API-key label comes from. The caveat: tokens still burn against that agent's subscription quota, so it is no-new-key rather than free — Claude Code usage counts against your Anthropic plan and Codex against your OpenAI plan.
-
-### Is html-anything useful if I don't use a coding-agent CLI?
-
-Not in its current form. The hard prerequisite is a logged-in coding-agent CLI — Claude Code, Codex, Gemini CLI, or one of the other supported tools — and there is no browser-only version or sign-up-and-go flow. For non-developer solo operators this is the biggest barrier; Claude Artifacts or ChatGPT Canvas remain more accessible entry points for HTML output today.
-
-### What can html-anything build and export?
-
-It ships 75 skill templates across nine deliverable surfaces — magazine articles, slide decks, posters, resumes, Xiaohongshu and tweet cards, web prototypes, data reports, and Hyperframes videos. Export covers WeChat (with inline CSS), X, Zhihu, standalone HTML, and PNG, and Hyperframes converts styled HTML into MP4 via Remotion. If your recurring output fits one of those surfaces, templates keep it consistent; if not, you are customizing or prompting from scratch.
-
-### Who should try html-anything first?
-
-People who already use a coding-agent CLI daily and produce visual content across multiple platforms. Content creators publishing to both Western and Chinese social channels will find the export targets unusually well-matched, and developers prototyping quickly will find the skill library useful. If you are not a CLI person or only need one-off HTML, direct prompting or Artifacts is faster — you can wait.
-
-### How does html-anything compare with just asking Claude for HTML directly?
-
-Both work, and for a single one-off request direct prompting is faster — nothing to install, instant output. html-anything pulls ahead when you produce the same type of deliverable repeatedly: 75 reusable templates give visual consistency across outputs, live SSE preview lets you review as it builds, and platform-specific export removes copy-paste between WeChat, X, and standalone files. Once a month, prompt directly; every week, the template layer earns its keep.

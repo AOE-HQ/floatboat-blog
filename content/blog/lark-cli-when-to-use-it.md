@@ -178,28 +178,3 @@ _Back to building things._
   5. **[Find out how workflow builders compare to AI workspaces for integrating tools like Lark](</blog/workflow-builder-vs-ai-workspace>)**
 
 
-## FAQ
-
-### Should a solo operator build on Lark CLI?
-
-Usually not as a first choice. Building is worth it only when the integration is core to your business, you or a teammate write code regularly, no existing tool covers it, and you can commit to ongoing maintenance. If it's a nice-to-have workflow — or you'll be the only person who can fix it when it breaks — use a lighter path. The real question isn't "can I build this?" but "what happens the week I don't have time to fix it?"
-
-### What is Lark CLI, and who is it built for?
-
-It's a command-line tool for the Lark/Feishu Open Platform covering Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, and Meetings — 200+ commands and 19 AI Agent Skills. In plain terms, it lets you interact with your Lark workspace programmatically from a terminal or an AI agent. It's built mainly for developers integrating Lark into bots, internal apps, and automated pipelines. If your mental model of integration is drag-and-drop, it's probably not your tool.
-
-### What does building on Lark CLI really cost?
-
-More than it looks like. A basic integration that reliably does something useful takes a competent developer about a full day, and a non-developer should double that. Before anything runs you must create a Lark app (App ID and App Secret), pick the right token type, handle token expiry — user tokens last only two hours — and configure OAuth redirect URLs where needed. Some permissions require admin approval, and maintenance continues quarterly.
-
-### Why do Lark CLI integrations fail quietly?
-
-Maintenance is where solo operators get hurt. Lark updates an API and your commands start returning odd results with nobody monitoring; token-refresh logic fails during a holiday week and automations stop until a client asks why; six months later you've forgotten what half the configuration does. Token expiry is the most common silent failure — without automatic refresh, expect things to stop working every couple of hours. The bus factor is 1: you.
-
-### What should solo operators use instead of Lark CLI?
-
-Start with Lark's built-in webhook support — simple, no auth dance, easy to test. Zapier, Make, and n8n all have Lark integrations: less flexible, but the maintenance burden is theirs. If you already use an AI assistant with MCP support, the lark-mcp package is a middle path — still technical, but designed for AI-assisted workflows rather than raw API scripting.
-
-### Is Lark CLI the same as lark-mcp?
-
-They're related but different. Lark CLI (larksuite/cli) is a command-line tool for humans and agents. lark-mcp wraps the same Lark APIs as Model Context Protocol tools so AI assistants can call them directly — document processing, conversation management, calendar scheduling. If you work with AI tools like Cursor or Claude, lark-mcp is the more relevant path.

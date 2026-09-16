@@ -139,28 +139,3 @@ For fans, the practical answer is to treat host cities as planning regions. Use 
 
   * USA World Cup 2026 Schedule: Match Times & Reminders — USMNT-specific schedule planning.
 
-## FAQ
-
-### Where is the World Cup 2026 being held?
-
-In the United States, Canada, and Mexico — the first men's World Cup shared by three host nations. Rather than a single destination, the tournament runs on a continent-scale network of 16 host cities, so the practical question is which region and which city your matches are in. The United States carries 11 host markets, Canada has 2, and Mexico has 3.
-
-### How many host cities does the 2026 World Cup have?
-
-Sixteen in total: 11 host markets in the United States, 2 in Canada (Vancouver and Toronto), and 3 in Mexico (Guadalajara, Monterrey, and Mexico City). FIFA sometimes labels venues by metro area rather than city — San Francisco Bay Area and New York/New Jersey are the notable cases — so treat the list as host markets rather than city names alone.
-
-### Why is the tournament spread across three countries?
-
-Because the 2026 edition expands to 48 teams and 104 matches, which no single country's existing venue network could comfortably absorb. FIFA chose a unified bid across the United States, Canada, and Mexico, giving the tournament the largest geographic footprint in men's World Cup history. The three-country split is also identity, not just logistics: Estadio Azteca in Mexico City connects the event to World Cup history.
-
-### Which stadiums will host 2026 World Cup matches?
-
-Sixteen venues, commonly known as BC Place, Lumen Field, Levi's Stadium, SoFi Stadium, Estadio Akron, Arrowhead Stadium, AT&T Stadium, NRG Stadium, Mercedes-Benz Stadium, Estadio BBVA, Estadio Azteca, BMO Field, Gillette Stadium, MetLife Stadium, Lincoln Financial Field, and Hard Rock Stadium. Capacities in tournament configuration can differ from everyday numbers, and official materials often use clean venue names rather than these commercial ones.
-
-### Why do FIFA venue names differ from stadium names I know?
-
-Because FIFA typically uses clean tournament labels — "New York/New Jersey Stadium" or "Los Angeles Stadium" — instead of sponsor-backed brand names, to keep references consistent and avoid commercial conflicts. Some labels also refer to a metro area rather than the downtown of that city. When in doubt, search city plus stadium together, like "New York/New Jersey Stadium MetLife," and confirm the actual venue location before booking.
-
-### How far apart are the host cities for travel planning?
-
-Farther than a map suggests. Host cities stretch from Vancouver and Seattle to Mexico City and Miami, so many city pairs require flights rather than quick hops, and three countries mean different time zones and kickoff windows. The article advises planning around regional clusters — a Texas group, an East Coast corridor — and taking distance seriously in the knockout stage, when a team's next venue depends on results.

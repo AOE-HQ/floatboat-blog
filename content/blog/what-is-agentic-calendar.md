@@ -148,28 +148,3 @@ The category is still forming. Gen 1 and Gen 2 tools fill calendars; Gen 4 tools
 
 ---
 
-## FAQ
-
-### How is an agentic calendar different from a smart scheduler I already use?
-
-Smart schedulers — Calendly, Motion, Reclaim — answer the "when" question: they find time slots and optimize your schedule. An agentic calendar asks what should happen because of this event, acting on the schedule rather than just managing it — preparing briefs before calls, drafting deliverables before deadlines, and automating follow-ups. It sits at the most advanced end of the AI scheduling assistant spectrum, but not every scheduling assistant is agentic.
-
-### Can an agentic calendar really execute tasks, or is it just a smarter reminder?
-
-It executes. The scope depends on the implementation, but the category definition includes drafting documents, extracting and assigning action items, generating follow-up communications, surfacing relevant files, and routing outputs to the right channels. What it doesn't do is make final decisions or send communications without review — it prepares and drafts, while you approve and send. Autonomy in preparation; human judgment in final action.
-
-### What's the difference between an agentic calendar and keeping ChatGPT open during meetings?
-
-Chat-based AI is reactive: you decide when to ask, what to ask, and what context to provide, and it doesn't connect one meeting to the next. An agentic calendar is proactive and event-triggered — preparation happens before you open a chat window, follow-up happens after you close it, and each event's outcomes feed into the next one. You don't have to remember to ask; the system is already running on your schedule.
-
-### Do I need to change my calendar to use an agentic calendar?
-
-No. Agentic calendars connect to existing calendar infrastructure — Google Calendar, Outlook, iCloud, or any ICS feed. The calendar you already use becomes the data source and trigger layer, and the agentic calendar adds an execution layer on top. You don't migrate events or change your workflow; connect the calendar you have and the system starts working from it.
-
-### How is an agentic calendar different from workflow tools like Zapier or Make?
-
-Workflow automation binds fixed triggers to fixed actions — when a new calendar event is created, send a Slack message — and runs the same recipe every time. An agentic calendar adapts to context: prep for a first sales call differs from prep for a renewal conversation, even with similar event titles. The trade-off is predictability — a workflow always does the same thing, while an agentic calendar decides what's relevant from the event's semantics, attendees, and history.
-
-### Who actually needs an agentic calendar?
-
-The most natural fit is solo founders and solopreneurs — with no assistant or team, the calendar is their org chart and every meeting is company output. Distributed teams benefit too, because meeting context doesn't travel automatically. In general: if your calendar is the central nervous system of your work, not just a list of appointments, the category is worth your attention. If you could delete the app and still function, it probably isn't.

@@ -98,28 +98,3 @@ For a deeper understanding of how Sol, Terra, and Luna compare on benchmarks, pr
 
 The interesting thing about GPT-5.6 being built into Floatboat is not the technical integration — that part is invisible to users. It is that the three-tier design aligns with how calendar-driven agents actually work. Sol, Terra, and Luna map to real differences in calendar events: the client review that needs deep synthesis, the weekly sync that needs reliable output at low cost, and the classification pass that runs on every event and needs to be nearly free. When the model family matches the work structure, choosing the right tier stops being a configuration decision and becomes a natural part of how you run your day. That is the shift — not from one model to three, but from managing models to managing work.
 
-## FAQ
-
-### Do I need an OpenAI API key to use GPT-5.6 in Floatboat?
-
-No. Sol, Terra, and Luna are built into Floatboat with zero configuration — no API key to provision, no OpenAI billing account, and no routing layer to build. They appear in your agent workspace automatically alongside DeepSeek, Claude, Gemini, MiniMax, Kimi, and GLM, ready from the first agent you configure.
-
-### Does Floatboat automatically switch between Sol, Terra, and Luna?
-
-Yes, if you use Auto Mode. It routes each task to the appropriate tier based on the event's complexity, context length, and timing. You can also choose a specific tier for each agent pipeline when you prefer manual control. Either way, Terra is the baseline default — it handles most routine agent work efficiently while Sol covers the occasional complex event.
-
-### How do I know which tier to use for a specific calendar event?
-
-Start with Terra as your default. Switch to Sol for complex events — client reviews, project retrospectives, high-stakes meetings — or anything you'd spend more than 30 minutes preparing manually. Use Luna for high-volume routine work: recurring status updates, standard follow-ups, and event classification. After two to three weeks the mapping becomes intuitive, and Auto Mode can make the call for you if you'd rather not decide.
-
-### Can I use GPT-5.6 Sol Ultra mode in Floatboat?
-
-Yes. Sol Ultra coordinates multiple sub-agents across parallel workstreams and is unlocked through the Sol tier. For a complex meeting brief, the agent can pull the last meeting's notes, check the CRM, scan recent email threads, and draft talking points simultaneously rather than sequentially. It's best suited for events requiring multi-document synthesis, such as client meeting preparation with cross-referenced research.
-
-### How much does the tiered setup cost per month?
-
-Pricing is per tier — Sol at $5/$30 per million input/output tokens, Terra at $2.50/$15, Luna at $1/$6. At moderate usage (roughly 50 agent events a month), running everything on Terra costs about $43, all-Luna about $17, and the recommended full stack — Sol for hard cases, Terra for daily work, Luna for routing — about $55, roughly 35% less than the ~$85 of running it all on the flagship. Built-in prompt caching reduces these numbers further.
-
-### How do I get started with GPT-5.6 in Floatboat?
-
-If you already use Floatboat, open any agent workspace and you'll see Sol, Terra, and Luna listed alongside the other models — no separate integration step. If you're new: download the desktop app, connect your calendar, and create your first agent pipeline; the models are available from that first agent. For the first few weeks, keep Terra as the default and let Sol handle the occasional complex event.

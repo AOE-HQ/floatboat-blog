@@ -8,6 +8,7 @@ import {
 } from "@openblog/core";
 
 import { config } from "@/lib/openblog-config";
+import { FaqBand } from "@/components/faq-band";
 import {
   buildPostLanguageAlternatesForLocale,
   createLocaleSiteHelpers,
@@ -112,6 +113,9 @@ export default async function ZhBlogPostPage({ params }: PageProps) {
         relatedPosts={relatedPosts}
         adjacentPosts={adjacentPosts}
       />
+      {post.faq && post.faq.length > 0 ? (
+        <FaqBand items={post.faq} locale={locale} />
+      ) : null}
     </>
   );
 }

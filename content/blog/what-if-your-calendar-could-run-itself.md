@@ -101,28 +101,3 @@ Return to the Wednesday you started with. Under the container model, the day is 
 
 If you want to test the idea without overhauling your workflow, try the smallest experiment: pick one recurring meeting and one real deadline next week, and write down what preparation and follow-through around them currently cost you. Then try a calendar-driven tool on those two items — or, staying manual, turn the deadline into three intermediate events named "draft outline" and "request missing numbers," and notice how much more of the work survives the week. The calendar already knows your commitments better than you remember them. The only question left is whether the work those commitments represent will start moving on its own.
 
-## FAQ
-
-### Will an AI that runs my calendar take over my schedule or send things without my permission?
-
-No — in the designs we are describing, autonomy is scoped and reversible. Anything that leaves your calendar or inbox passes through an approval step you control, either by reviewing each item or by setting rules for low-risk ones. You can also dial autonomy up or down, or switch an event type back to manual entirely. What the approach removes is the burden of remembering and assembling, not your authority over what happens next.
-
-### I use my calendar as a to-do list and notes. Do I have to reorganize everything before this becomes useful?
-
-You do not need a perfect calendar, but you do need honest entries, because triggers fire only on what the calendar knows. A deadline typed into an event's notes is not a trigger; a real event with a title, a time, and connected context is. Start by promoting the three or four commitments that matter each week into real events and leave the rest as-is; most systems improve with use, learning your recurring series and their sources.
-
-### How is this different from an AI scheduler like Calendly or Motion, or from a chat assistant with calendar access?
-
-Scheduling tools solve the front of the lifecycle — finding a time and booking the meeting — and a calendar-driven system assumes that part is handled. Chat assistants with calendar access are still chat assistants: they act when prompted and lose context between sessions. Calendar-driven AI instead treats the event itself as the trigger, running work before, around, and after it on a schedule that does not depend on you asking. The categories complement each other.
-
-### Does calendar-driven AI need access to everything in my calendar, email, and files to be useful?
-
-It needs access to the sources behind the work you want automated, which is rarely everything. Most implementations let you scope connections by calendar, email folder, or document source, and you can add more as trust builds. Even calendar-only access produces value on timing and recurrence, but richer context — the right thread, the right document — comes from the email and file connections behind the people you meet.
-
-### I run a small business with only a few meetings a week. Is this still relevant to me?
-
-It depends on whether your few meetings carry weight. If your income depends on a handful of client calls, proposals, and renewals, calendar-driven AI removes exactly the costliest failure mode — the forgotten follow-up, the under-prepared pitch, the deadline discovered late — even at low volumes. If your calendar is mostly internal and low-stakes, a plain calendar and a chat assistant may serve you better. Start with the one recurring client meeting and the one hard deadline that actually hurt when they slipped.
-
-### Is calendar-driven AI something I can use today, or is this a vision of the future?
-
-It is usable today, but maturity is uneven across the three moments. Automated meeting preparation and follow-up are the most developed, with working tools and documented workflows, including those linked throughout this article; deadline-driven sequences across days are the least mature. The platform capabilities, model access, and calendar APIs are all in place — what is still evolving is how well products route events, keep context trustworthy, and make approval painless.

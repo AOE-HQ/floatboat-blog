@@ -171,28 +171,3 @@ _As of May 2026. Browser agent security is an active area of research and these 
 
   * Comparing AI image tools in 2026: GPT Image 2 vs Midjourney vs Nano Banana 2 — which one fits your workflow: [AI image tools comparison](</blog/gpt-image-2-vs-midjourney-nano-banana-2>)
 
-## FAQ
-
-### Can the agent access my saved passwords in Chrome?
-
-Technically, an extension with broad host permissions can read page content, including login forms, which is why Anthropic recommends putting password manager sites on the blocklist and excluding them from the agent's permissions. Action-confirmation steps make silent credential access harder, but not impossible — prompt injection research is active. Don't test this with real credentials; keep password managers permanently blocked.
-
-### What do the broad permissions in the install prompt actually mean?
-
-A phrase like "read and change all your data on the websites you visit" usually signals the debugger API or broad host permissions — the extension can attach to your tabs like a developer tool, read page state at a deep level, and act inside your logged-in sessions. That's necessary for an agent that clicks and navigates for you, but it's a large trust surface, not a trivial grant.
-
-### Should I allow each new site, or set always-allow?
-
-Make allow-once your default for sites you use occasionally or are testing. Reserve always-allow for high-frequency tools you trust, like your CRM. Blocklist anything where a wrong click would take more than 30 minutes to fix — banking, payment accounts, password managers. Keep the "ask before acting" mode on, and never enable "always allow browser content," which removes every per-site prompt.
-
-### How real is the prompt injection risk?
-
-It's a demonstrated, measurable risk, not theory. Researchers have hijacked browser agent extensions, and Anthropic reports Claude for Chrome's attack success rate at about 23.6% without mitigations, dropping to roughly 11.2% with them — about one in nine attempts still gets through. Treat every page as untrusted input: avoid user-generated-content sites while connected to sensitive accounts, and stop the agent if it drifts off-task.
-
-### Does turning Memory off fully protect my data?
-
-No — it limits cross-session reuse but is not full isolation. Per Codex's documentation, browser activity still enters the Codex context, and Claude's Memory toggle is not a guarantee that nothing is stored server-side. What your data controls cover depends on your account tier. For genuinely sensitive tasks, use fresh sessions and clear context between them.
-
-### When should I avoid using a browser AI agent entirely?
-
-When the downside of a wrong action is irreversible or regulated: billing changes, email sends, data deletions, or form submissions that trigger downstream processes — keep a human in the loop. Also avoid it for regulated industries, client data covered by NDAs, and shared or admin accounts, where any mistake's blast radius is multiplied. If you don't know your compliance obligations, ask legal first.

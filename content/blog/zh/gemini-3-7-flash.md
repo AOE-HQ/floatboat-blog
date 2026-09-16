@@ -71,28 +71,3 @@ Gemini 3.7 Flash 是 Google 主力档策略迄今最清楚的宣言：按月迭�
 
 市场背景给这次发布定了形。Gemini 3.5 Pro 仍然缺席、开源权重阵营在加速——GLM-5.3、Grok 4.6 和 DeepSeek V4 家族都在同一窗口期出货——Google 押注的是迭代速度与成本，而不是某个单一旗舰基准。对开发者来说，浮现出来的决策框架很简单：高用量的编码与知识工作，路由给 Gemini 3.7 Flash 这类又快又能跑的主力模型；最难的、要跑数小时的多步推理，路由给旗舰或开源权重旗舰；永远别在促销价上建自己的成本模型。这是主力档多年以来最好的出品。只是记得，为 1 月留好预算。
 
-## 常见问题
-
-### Gemini 3.7 Flash 比 Gemini 3.6 Flash 更强吗？
-
-是的。Google 报告的每个类别都更强，Artificial Analysis 的独立 Intelligence Index 也更高（高推理档 56 vs 52）。最大提升在长程软件工程（DeepSWE v1.1：49.0% → 65.3%）、生产代码质量（FrontierCode 1.1：34.4% → 43.6%）和文档处理（GDP.pdf：22.0% → 34.0%）；每秒输出 token 也快了约三倍。局限在于：CharXiv Reasoning 有轻微回退，最难的终端与 computer-use 基准上仍落后于 GPT-5.6 Terra。
-
-### Gemini 3.7 Flash 的价格是多少？
-
-2026 年 12 月 31 日前，每百万输入 token 0.75 美元、每百万输出 token 3.75 美元，上下文缓存 0.075 美元——是 3.6 Flash 首发价的一半。从 2027 年 1 月 1 日起翻倍：输入 1.50 美元、输出 7.50 美元，缓存 0.15 美元。作为对比，Claude Sonnet 5 标价 $2/$10，GPT-5.6 Terra 标价 $2/$12。
-
-### 为什么 1 月价格会翻倍？
-
-$0.75/$3.75 是拉动开发者上车的首发促销价，不是常规价。Google 已明确 2027 年 1 月 1 日起的常规价为 $1.50/$7.50。靠促销价搭建生产级 Agent 流水线的团队，要么按 1 月价格给产品定价，要么在年底前规划迁移。
-
-### Floatboat 里能用 Gemini 3.7 Flash 吗？
-
-可以。Gemini 是 Floatboat 的内置模型家族，Gemini 3.7 Flash 出现在与 DeepSeek、GLM、Kimi、Claude、MiniMax 并列的模型清单里——不需要 API key、不需要路由配置、没有外部计费。在任意 Agent 工作区直接选中它，或当任务画像需要一台又快又能扛事的跑量主力时，让 Auto Mode 路由过去。
-
-### 从 3.6 Flash 迁移需要改 API 代码吗？
-
-需要，迁移不是无缝替换。你必须删掉 `temperature`、`top_p`、`top_k`，把数值型的 `thinking_budget` 换成三档 `thinking_level`（low/medium/high，默认 medium），移除 `candidate_count`，并把多轮交互统一为服务端 `previous_interaction_id`。Google 表示 3.6 Flash 不会被关停，给团队留出了迁移与测试的时间。
-
-### Gemini 3.7 Flash 开源吗？
-
-不开源。Gemini 3.7 Flash 仅限 API——没有开放权重、不能自托管、无法离线隔离部署。如果你的工作流必须依赖开放权重，替代方案是 GLM-5.3 这类模型：提供 MIT 式权重可自托管，代价是放弃 Gemini 的吞吐与多模态能力。

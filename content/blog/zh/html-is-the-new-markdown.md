@@ -111,29 +111,3 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 ![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.webp)
 
-## 常见问题
-
-### Markdown 要消失了吗？
-
-不会。对文档、版本控制的文件、随手笔记——任何轻量可移植的东西——Markdown 依然是正确格式。这场转变不是「Markdown 已死」，而是 Markdown 在 _所有_ AI 输出上的默认地位开始被质疑；对面向人的交付物，HTML 是一个很强的替代。[Markdown Guide](<https://www.markdownguide.org/getting-started/>) 依然是讲清 Markdown 何时好用的最清楚的参考之一。
-
-### 「HTML is the new Markdown」的讨论是怎么起来的？
-
-Anthropic Claude Code 团队的工程师 Thariq Shihipar 于 2026 年 5 月 8 日在 X 上发帖，配了一个展示 20 个自包含 HTML 文件、横跨九类工作的配套网站。帖子爆火、冲上 Hacker News 第一，还促使多位知名开发者公开反思自己默认用 Markdown 的习惯。
-
-### 用 HTML 输出需要编码 Agent CLI 吗？
-
-不一定。这场讨论始于 Claude Code 的 HTML 工作流，但任何能生成代码的 AI 工具都能产出自包含的 HTML 文件。Claude Artifacts 直接在浏览器里渲染 HTML；ChatGPT Canvas 提供侧栏编辑工作区。你没有终端也能从中受益——不过如果你已经在用 CLI Agent，要 HTML 输出只是改一条提示词的事。
-
-
-### HTML 比 Markdown 更费 token 吗？
-
-通常是的。HTML 含 Markdown 不需要的结构和样式标签。确切差异取决于样式用得多不多。我自己没跑过受控基准，所以不随便报一个倍率——但方向是一致的。对大多数单人创业者来说，单次输出上的 token 成本差异小到可以忽略；对高吞吐的 API 使用来说，则值得量一量。
-
-### HTML 输出什么时候真的帮到单人创业者？
-
-当你既是给 Agent 下指令的人、又是审查输出的人时。项目计划、内容简报、对比文档、周度复盘——任何视觉层级能帮你更快处理信息的东西。如果你产出的成果是要给别人读、或你自己日后要回看的，HTML 往往能让它更有用。
-
-### 这只是炒作，还是现在值得关注？
-
-值得一试，不必恐慌。底层的理念——Agent 输出应该为读它的人排版，而不是只为写它的机器——是扎实的。如果你持怀疑态度，挑一件你定期产出的交付物，试着用 HTML 生成一次，看看它是否改变了你与它的互动方式。没变，你什么也没损失；变了——那就挺有意思的。

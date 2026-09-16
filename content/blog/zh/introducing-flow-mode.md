@@ -100,28 +100,3 @@ Flow Mode 是 Mac 和 Windows 上 Floatboat 里的**桌面 workspace**功能—�
 
 在最新版 Floatboat 里试试 Flow Mode，入口 [floatboat.ai](</>)。如果你想先对比范式，去读 Calendar-Driven AI vs Chat-Based AI；如果你的周被会议占满，把这发布和博客上已有的会议准备、跟进指南配起来用。
 
-## 常见问题
-
-### Floatboat Flow Mode 和语音转文字或会议机器人是一回事吗？
-
-不完全是。**语音转文字**工具专注于把音频变成文字——很有用，Flow Mode 也包含实时捕捉——但 Flow Mode 还支持文档内编辑、对选中片段的 Agent 协作、批量语音批注、会议实时计划，以及带 diff 的版本历史。专门的**AI 会议记录工具**优化的是录音生命周期；Flow Mode 优化的是对话结束时必须存在的那份**文档**。
-
-### Flow Mode 和 Wispr Flow 这类系统级听写应用有什么不同？
-
-**Wispr Flow**这类产品强在把听写打磨到可跨你机器上任何应用使用——这是另一种正当的岗位形态。**Floatboat Flow Mode**则是 Floatboat workspace 内部以文档为中心：Agent 改写、批注捆、会议到计划的产出、以及与日历关联的 Agent 上下文，全在一个地方。很多用户可能仍会在别处用系统级听写；Flow Mode 是给那些活在你的 Agent workspace 里的草稿和计划用的。
-
-### 听写还在进行时，我能编辑吗？
-
-能——这正是它名字的由来。Flow Mode 的设计保证了**语音输入不会强迫你完全停下**才能动文字或对选中内容调用 Agent。何时停下说话由你决定；文档全程保持可编辑。
-
-### Flow Mode 会取代 Floatboat 日历驱动的会议准备和跟进吗？
-
-不会。Flow Mode 加的是**会中/稿中**这一层。AI 会议准备仍然处理会前上下文；AI 跟进自动化仍然结构化成会后的下一步。Flow Mode 缩小的是中间那段「从说到可交付工件」之间的手动空档。
-
-### Agent 改坏了怎么办？
-
-用**版本历史**：打开更早的修订、检查 diff、回滚到一个已知良好的状态。Flow Mode 的设计就是让实验不需要复制文件，也不会丢掉聊天侧的其他备选。
-
-### Flow Mode 在哪些平台可用？
-
-Flow Mode 是 Floatboat 桌面 workspace 的一部分，运行在 Mac 和 Windows 上——和 Combo Skills、多模型路由、事件级 Agent workspace 同处一个环境。具体可用范围随版本而变，请以线上应用与发布说明为准。

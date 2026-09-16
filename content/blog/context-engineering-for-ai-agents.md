@@ -193,28 +193,3 @@ Yang Pan ended his talk with a line that has stayed with me: _把 Context 管好
 
 * * *
 
-## FAQ
-
-### Isn't "Context Engineering" just a new buzzword for prompt engineering, RAG, and knowledge management?
-
-Those are tools that serve Context, not substitutes for it. Prompt engineering writes the instruction, RAG retrieves the document, and knowledge management organizes the wiki. Context Engineering decides what the agent needs to know across all four layers and how that information stays current — it is the architecture layer that coordinates the others. The term is new because the problem it names only became legible once models and harnesses matured enough to expose it as the bottleneck.
-
-### If models keep improving, why will Context Engineering still matter?
-
-Because models absorb capability, not Context. Reasoning, tool use, and longer windows get absorbed into the model over time, but your specific facts do not. A stronger model cannot infer what you decided in a client call last Tuesday unless that information was captured, structured, and delivered. In fact, each upgrade makes missing Context more visible: the smarter the agent, the clearer that it does not know your situation.
-
-### If I switch models or agent frameworks, does my Context investment disappear?
-
-If your Context lives in a single product's proprietary format, yes — migration is painful. That is a risk for users and a reason to prefer products that store Context in accessible, structured forms. But Context depth is inherently sticky: even when you can technically export meeting history and project documents, restructuring them for a new agent takes real work. Treat Context portability as a feature to evaluate, not an afterthought.
-
-### Does this apply only to complex multi-agent setups, or to simple use cases too?
-
-Context matters more, not less, when the agent operates in a narrow domain. A general-purpose agent can get away with vague Context because its output is broad and can be refined in conversation. A calendar-driven agent preparing you for a specific meeting with a specific client needs precise Context — wrong or missing Context produces errors that are immediately visible and costly. The narrower the task, the higher the Context fidelity required.
-
-### How does Context accumulate without becoming a second job?
-
-It has to arrive passively, as a side effect of normal work, because manual curation demands sustained user discipline and fails at scale. That is why calendar-driven architecture is the natural vehicle: events, attachments, and recurrence patterns enter automatically and stay ordered by time. File systems, email, version control, and project trackers can play the same role. The goal is Context captured before the user polishes or forgets it.
-
-### Does every agent need to be calendar-driven?
-
-No. The calendar is the densest, most natural source of Environmental Context, but it is not the only one — file systems, email, version control, and project trackers all carry it. The principle is to prefer tools that observe your actual activity over tools that wait for you to narrate it. For most solopreneurs the richest signal lives in the calendar, inbox, and meeting history, which is why calendar-driven agents have a structural head start.

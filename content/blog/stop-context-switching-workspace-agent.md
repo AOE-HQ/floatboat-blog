@@ -147,28 +147,3 @@ Anyway, that's where I am with this right now. If you try the manual version thi
 
   * [Curious about AI agents for solo work? This post dives into what they do (and don’t do) for solo entrepreneurs](</blog/ai-agents-for-solo-operators>)
 
-## FAQ
-
-### How much does context switching really cost you?
-
-More than most people realize. The Harvard Business Review study the article cites tracked 137 workers toggling between apps about 1,200 times a day — roughly four hours a week, or about 9 percent of the working year, spent purely on reorienting. Gloria Mark's research adds that it takes about 23 minutes and 15 seconds to fully refocus after an interruption, and that people compensate by working faster while the cost shows up as stress.
-
-### Why is context switching worse when you work alone?
-
-Because you are the whole thread. In a team, someone else can catch the thread you drop when you switch from writing to answering a question; solo, nothing waits for you and nothing reminds you. The mental model you built — what this client needs, what step three was — lives in your head while your head also handles the next four things. With no handoffs, every switch is a full reload, which is why most workplace research understates the cost.
-
-### Why do more tools and AI often make it worse?
-
-Because every new tool adds cognitive overhead. The APA research cited in the article points to goal-shifting plus rule-activation: each time the brain reorients to another tool, you pay both. Chat AI makes you the integration layer — you still carry context between the chat tab and your document by pasting. Workflow builders ask you to define a workflow before you know what it is. Adding tools when you hit friction can mean getting less done with a more beautiful stack.
-
-### What is a workspace agent, and how does it help?
-
-A workspace agent is an AI that doesn't sit in its own tab but lives where your work already is. It changes three things: one environment instead of five tabs, so you stop being the courier between them; it sees the file you're editing and the page you're reading, so there's no paste step where context decays; and it saves whole patterns — research doc into draft outline — as reusable workflows instead of re-explained every time.
-
-### What won't a workspace agent fix?
-
-It won't fix confusion about what to work on — if you're switching because your priorities are unclear, you'll just switch inside the workspace instead of between tabs. It also won't replace deep-focus blocks: long writing, hard thinking, and learning still need an uninterrupted 90-minute block, and the tool only shaves friction off the easier parts of your day. On readiness: agents handle research, drafting, and reviewing well today, but not every kind of task yet.
-
-### How do I know if context switching is really my problem?
-
-Track it for a day: write down every switch between tasks, tools, or tabs, then ask how many were forced by the tools and how many you allowed. If the list horrifies you by mid-afternoon, it's worth fixing. Then run the free experiment: pick one repeating task that spans at least three tools, gather its context in one place, and save the steps as a list. Two weeks of that will tell you whether a workspace agent deserves a look.

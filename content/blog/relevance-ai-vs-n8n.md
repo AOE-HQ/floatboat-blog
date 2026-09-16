@@ -121,28 +121,3 @@ _Back to building things._
 
   * **[See how solo founders use AI tools to automate workflows without a full dev team](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
 
-## FAQ
-
-### Can Relevance AI and n8n work together?
-
-Yes. They can be integrated via webhooks and API calls. Some teams use Relevance AI as the agent reasoning layer — building plain-language agents that decide and delegate — and n8n to manage the longer, multi-step workflows downstream. The split mirrors the difference between the tools themselves: one owns the "thinking," the other owns the orchestration.
-
-### Is n8n really free?
-
-The Community Edition is free to self-host with unlimited executions — genuinely, no execution caps. But running it in production typically means paying for infrastructure: realistically $50–$200/month for a server depending on setup and scale, plus your time maintaining it. If you have the technical chops to run it, the software itself costs nothing.
-
-### Which is better for a solo founder?
-
-It depends on your technical comfort and timeline. If you want speed and zero setup, Relevance AI's Pro plan at roughly $19/month gets agents running quickly without code. If you're comfortable managing servers and want long-term cost control or full data ownership, n8n self-hosted is hard to beat — free software, but your own operations.
-
-### Does Relevance AI require coding?
-
-Not really. The builder is visual and low-code: you describe an agent's role in natural language, assign it tools like web search or CRM access, and it figures out how to execute. Understanding basic logic helps you refine agent behavior, but you don't need to write code to ship useful workflows — that is precisely its design target.
-
-### Which handles data privacy better?
-
-For teams with strict data requirements, n8n wins — self-hosting means your data never leaves your own infrastructure and you decide where it lives. Relevance AI is SOC 2 Type II certified and GDPR compliant, which is a meaningful guarantee for business data, but it is cloud-only. If data sovereignty is non-negotiable, that difference settles it.
-
-### What's the biggest mistake people make when choosing?
-
-Choosing by features alone. The two tools solve different problems for different users, so the right pick depends on your team's skills, integration needs, and how much setup time you can invest — not on comparing checklists. Relevance AI is for fast, code-free agents; n8n is for full workflow control. Match the tool to how your team actually works.

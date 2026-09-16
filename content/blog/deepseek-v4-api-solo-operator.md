@@ -151,28 +151,3 @@ Anyway, that's where things stand. The cost story is real and the architecture i
 
 → [Go deeper into building a structured LLM knowledge base](</blog/llm-knowledge-base-solo-operators>)
 
-## FAQ
-
-### Can I use DeepSeek V4 through the official API yet?
-
-Not yet. As of mid-April 2026, the official API still serves deepseek-chat and deepseek-reasoner, both mapped to DeepSeek-V3.2 with a 128K context window — there is no V4 model ID, changelog entry, or official announcement. What we know comes from pre-release architecture papers, benchmark leaks, and an April 3 Reuters report saying V4 should launch "within the next few weeks." Treat any pricing as projection until then.
-
-### Is DeepSeek V4 really cheaper than OpenAI?
-
-Yes, by a large margin — roughly 8–17x cheaper on input tokens and about 30x cheaper on output against standard GPT-5.4, and the gap narrows against GPT-5 mini. These V4 figures are projections until launch, so run your own workload through the OpenAI pricing page and DeepSeek's official docs side by side before assuming savings.
-
-### When should I use V4 Lite versus the full model?
-
-V4 Lite should suit latency-sensitive or simpler tasks — classification, summarization, basic Q&A — with less compute and likely lower pricing. The full model matters when you need the 1M-token context window or the coding and reasoning benchmark gains. Neither is officially confirmed, but past release patterns suggest a staged rollout, so watch for independent reviews after launch.
-
-### Is the cost saving actually meaningful for solo operators?
-
-Only when the API bill shows up in your business model. For high-volume pipelines it's decisive — one developer reported $18 per month on V4 for a workload that would cost about $380 on GPT-4o. For typical solo content or research work, inference cost was nearly invisible; setup time, context management, and human review are the real constraints. Shared prompt prefixes also earn $0.03-per-million cached tokens, pushing effective input below $0.05 per million.
-
-### Should I self-host DeepSeek V4 instead of using the API?
-
-Usually the API. Self-hosting economics only start to make sense around 50 million tokens per day; below roughly 10 million, managing infrastructure is overkill when the API is this cheap. The V4 weights will be open on Hugging Face and GitHub. The main exception is data privacy: if compliance rules out third-party APIs, self-hosting is the only real option.
-
-### Is DeepSeek V4 production-ready for solo builders?
-
-Not yet — it isn't released. After launch, document processing and content workflows will probably become viable quickly, but agentic coding pipelines deserve a few weeks of real-world reports first: V4's claimed ~81% SWE-bench Verified comes from DeepSeek's internal testing only. If reliability and ecosystem maturity matter more than cost, GPT-5.4 or Claude Sonnet 4.6 remain more battle-tested. DeepSeek's API does not enforce strict rate limits, which suits batch workloads.

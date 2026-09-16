@@ -72,28 +72,3 @@ GLM-5.3 is the clearest proof yet that post-training scaling is not a rounding e
 
 The next two weeks will tell the more interesting story. When the weights land, the community will re-run the benchmarks, fine-tune the model, and test whether the security hardening holds in the wild. For now, the model is the strongest argument available that the open-weight path to frontier capability does not require a new pretraining run every few months — and that for agentic coding at scale, the cost-per-completed-task math is starting to favor the open side.
 
-## FAQ
-
-### Is GLM-5.3 better than GLM-5.2?
-
-On every benchmark [Z.ai](<https://Z.ai>) reported, yes, and on long-horizon tasks the margins are large: Terminal-Bench 3.0 improved from 4.6 to 28.3, DeepSWE v1.1 from 46.2 to 66.9, and CyberGym from 77.2% to 84.5%. The base model is identical — all gains came from post-training scaling. The two-week wait for open weights will let the community verify these numbers independently, but the direction is consistent with the model's design.
-
-### How much does GLM-5.3 cost?
-
-Until open weights ship, GLM-5.3 is available through the GLM Coding Plan: Lite ¥118, Pro ¥538, and Max ¥1078 per month in China, or $18/$80/$168 internationally. Plans meter usage in credits, reset every five hours, and cap weekly usage per tier. API access follows shortly after launch, and the weights themselves will be open under a license expected to match GLM-5.2's MIT release.
-
-### Why does GLM-5.3 have cybersecurity capabilities?
-
-[Z.ai](<https://Z.ai>) says it added vulnerability-discovery data to the post-training mix expecting a modest improvement and instead observed an emergent capability — the model began reasoning across entire exploitation chains rather than spotting isolated bugs. CyberGym scoring (84.5%) edged out Claude Mythos 5 and GPT-5.6 Sol, though on the deeper ExploitBench and ExploitGym tests it still trails both closed models significantly.
-
-### Does GLM-5.3 support images?
-
-No. GLM-5.3 is text-only, and native vision is the single most requested community feature — chief scientist Tang Jie's public consultation drew over 400,000 views with vision dominating the comments. Zhipu has historically shipped vision in the separate GLM-V line, and GLM-5.3 continues that split.
-
-### Is GLM-5.3 available in Floatboat?
-
-Yes. GLM is a built-in model family in Floatboat alongside DeepSeek, Kimi, Gemini, Claude, and MiniMax — no API key, no routing configuration, no external billing. GLM-5.3 becomes available in the model selector the same way previous GLM versions did, and Auto Mode routes to it when event complexity calls for it.
-
-### Is GLM-5.3 safe to use given its security capabilities?
-
-[Z.ai](<https://Z.ai>) delayed the open-weights release by two weeks for safety evaluation and hardening, ran a red-team program that found 2,436 vulnerabilities across 269 projects, and published a public security disclosure ledger. The DARKNAVY team evaluated the release as balancing risk mitigation and capability well. The inherent trade-off remains: an open-weight model with real exploitation capability can be pointed in either direction, so deployment should include the same hardening you would apply to any model with agentic access to your infrastructure.

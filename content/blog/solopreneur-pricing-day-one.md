@@ -155,28 +155,3 @@ That's my honest take.
 
   * [Not sure whether to build systems or just use better tools? This breakdown helps](</blog/workflow-builder-vs-ai-workspace>)
 
-## FAQ
-
-### I have no experience yet — shouldn't I charge less, or work free to build a portfolio?
-
-Less experience is a real factor, but it's not a reason to price at zero. Free engagements feel different from paid ones: free clients rarely push back, so the feedback is weak, while paying clients ask harder questions that sharpen your offer. If you lack experience, make your scope smaller rather than your price — a narrow, well-defined offer at a real price teaches you more than unlimited free work.
-
-### How do I set my first price when I have no data, no comps, and no testimonials?
-
-Use the "10x value" rule as an anchor. Estimate the concrete improvement your work produces — money saved, revenue added — then price at roughly one-tenth of that value. If your work saves someone $50,000 a year in software spend, a $5,000 engagement is rational, not greedy. Treat it as a sanity check rather than a mechanical formula: it anchors the price to what the client gets instead of your hours.
-
-### Should I charge hourly, per project, or by value?
-
-Hourly is easy but traps you if you're selling expertise: clients start optimizing for hours rather than outcomes. Project-based is cleaner — you agree on a deliverable and a price, and your efficiency makes you more per hour without renegotiating. Value-based is the hardest to set up but the most defensible long-term. If you're unsure, the article's advice is to start with project-based, because it forces you to define scope.
-
-### How do I know if my price is too high or the prospect just isn't a good fit?
-
-Probe the no. Ask something like: "Can you help me understand what's not working about the budget?" If they say they simply don't have it, that's a fit problem, not a price problem. If they say they're not sure the value justifies the cost, that's a framing conversation worth having. And if everyone says yes immediately without negotiation, you're probably priced too low.
-
-### Should I publish my prices publicly?
-
-There's no hard rule. Published pricing filters out casual tire-kickers and saves you time; private pricing gives you room to adjust for scope. The article leans toward publishing a starting price with "from $X" language — it sets a floor under the conversation without locking you in. Either way, the price should reflect the problem you're positioned to solve, not just the effort involved.
-
-### How do I raise my prices without losing existing clients?
-
-Raise your price for new clients first, keep existing clients at their current rate, and be transparent if they ask. Sustainable increases come from stronger demand signals and clearer positioning, not from overnight announcements of doubled rates. Give yourself a few months of new-client pricing before changing existing relationships, and when you do change them, announce the increase with lead time and a reason.

@@ -103,28 +103,3 @@ oh-my-codex and Superpowers answer different questions, which is why pitting the
 
 Name your actual bottleneck before you install anything. Choose oh-my-codex when you are Codex-centric, have parallel or long-running work, and can accept its tmux-and-Unix orientation; choose Superpowers when you want discipline that follows you across Claude Code, Codex, and Cursor, or when quality variance is what is costing you time. When both pains show up in the same week — which, for solo operators pushing real products, they eventually will — run them together, letting one handle the floor and the other the quality bar.
 
-## FAQ
-
-### Can I use oh-my-codex and Superpowers at the same time?
-
-Yes, and many developers do. Superpowers installs into your coding agent and shapes how each session plans, tests, and reviews; oh-my-codex orchestrates parallel Codex workers and keeps state across sessions. The two govern different layers of the same stack, and the main cost is context overhead from both injecting instructions — so trim Superpowers to the stages you need before running large team missions.
-
-### Which tool should a Claude Code user install first?
-
-Start with Superpowers: oh-my-codex is built around the Codex CLI and offers little until you add Codex to your workflow, while Superpowers installs cleanly into Claude Code and imposes its planning-and-TDD loop on your existing sessions. It keeps working whether you stay on Claude or later add Codex.
-
-### Does oh-my-codex require OpenAI Codex, or can I use Claude Code as the engine?
-
-oh-my-codex is designed around the Codex CLI as its primary execution engine, so you need a working Codex setup to get its orchestration and team features. Claude or Gemini can fill worker roles in team mode while Codex coordinates, but OMX is not a general orchestrator for Claude Code the way Superpowers is.
-
-### Is Superpowers just a collection of prompts?
-
-No — it is a methodology enforced through structured, automatically triggered skills. Each skill is a SKILL.md file with instructions and shell helpers that the agent checks before tasks, so brainstorming, TDD, and review run as part of the agent's process rather than as advice the model may ignore. And because the files are plain text, you can read, edit, and version them like code — something a "prompt pack" does not give you.
-
-### How mature are the two projects, and how much maintenance risk do they carry?
-
-Both are MIT-licensed and actively maintained as of this writing, but at very different scales. Superpowers has the far larger community and contributor base, while oh-my-codex is smaller and faster-moving, closely tied to its core creator. The trade-off is that OMX features can change quickly across releases, so pinning versions and reading changelogs matters more than it does with Superpowers.
-
-### Which one is better for a solo developer who wants to ship faster?
-
-It depends on why shipping is slow. If sloppy, undertested code forces rework, Superpowers saves you more time per session; if you cannot get enough independent work done in a day, oh-my-codex lets one person run several Codex tasks in parallel. Most solo operators eventually meet both bottlenecks, which is why the complementary setup tends to win over picking one tool.

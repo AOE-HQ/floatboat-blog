@@ -171,28 +171,3 @@ _Alright, that's today's little discovery. Catch you next time._
 
   * [And if you're deciding between tools, this breakdown of workflow builders vs AI workspaces will help you choose.](</blog/workflow-builder-vs-ai-workspace>)
 
-## FAQ
-
-### Do solo operators actually need AI agents in 2026?
-
-Yes — but not the way the headlines frame it. The shift from AI that answers to AI that executes is real: most major players are investing in it, and agents are already in production at many companies. For a one-person business, though, "using agents" doesn't mean building an internal AI team. It means finding one repeatable, well-defined task, packaging it into a workflow, and running it for a month to see what breaks.
-
-### What's the difference between an AI agent and a chatbot?
-
-A chatbot responds to what you type and stops there. An agent takes the next action — browsing a page, updating a file, sending a message, checking a result — and loops back to fix problems until the goal is done or it needs to ask you something. That's the difference between a tool that informs you and one that does things on your behalf: execution instead of response.
-
-### Do I need to know how to code to use AI agents?
-
-Not necessarily. Tools like Lindy, n8n, and Relevance AI are designed for non-technical solo operators, with no-code visual builders and native connectors for Gmail, Notion, Slack, and popular CRMs — setup rarely requires coding. That said, more complex or custom workflows still benefit from some technical comfort. Start with the no-code options and add complexity only when a specific recurring task genuinely needs it.
-
-### Are AI agents reliable enough to trust with real work?
-
-It depends on the task and how carefully you defined it up front. Quality remains the biggest barrier to production — cited by 32% of respondents in LangChain's 2025 survey, ahead of cost — with inconsistency, accuracy, and format drift the top failure modes. For narrow, well-scoped, easy-to-review tasks, agents are increasingly dependable. For complex, ambiguous, or high-stakes work, keep a human review step in the loop.
-
-### What is MCP and why does it keep coming up?
-
-MCP (Model Context Protocol) is the open standard Anthropic released in November 2024 that lets AI agents connect to external tools and data sources in a standardized way — Google Drive, Slack, your browser, your files. Thousands of community-built MCP servers now make it the de-facto protocol for agent-tool integration. You don't need the technical details; it's just why agents can actually act on your apps instead of only generating text about them.
-
-### Which kind of task should I start automating first?
-
-Start with scheduled synthesis tasks — weekly briefings, competitor monitoring, recurring report drafts — that run on a clock and need little interaction. The article's testing found this "Type 1" category delivers the most consistent leverage at the lowest setup cost. Before handing anything off, run the four-question check: is it repeatable weekly, can you describe a bad output in one sentence, do you already do it manually, and how costly is a missed error?

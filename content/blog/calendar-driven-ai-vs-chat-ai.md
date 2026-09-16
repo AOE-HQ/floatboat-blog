@@ -146,28 +146,3 @@ The two paradigms are complementary. Use chat-based AI for exploration and creat
 
   * How AI Meeting Prep Actually Works — A concrete walkthrough of what calendar-driven preparation looks like in practice.
 
-## FAQ
-
-### Which is better: calendar-driven AI or chat-based AI?
-
-Neither is universally better — the two paradigms answer to different triggers. Chat-based AI is built for open-ended, on-demand work: brainstorming, deep research, debugging something unfamiliar. Calendar-driven AI is built for schedule-bound work: recurring meetings, client calls, deadlines, and the preparation and follow-up around them. The practical question is not which paradigm is smarter, but which one fits the work in front of you — and for most people, the honest answer is both.
-
-### Can I use both paradigms together?
-
-Yes, and this is likely how most people will end up working. Use calendar-driven AI for recurring, schedule-bound work — meeting preparation, follow-up, deadline tracking — because it doesn't depend on your memory or initiative. Use chat-based AI for ad-hoc, exploratory work like research, brainstorming, and drafting, where its flexibility and conversational depth shine. They serve different parts of the workflow; choosing only one means over-serving half your tasks and under-serving the other half.
-
-### Is calendar-driven AI just scheduled prompts?
-
-No. A scheduled prompt runs the same instruction at the same time regardless of context — "Every Monday at 9am, summarize my calendar" does the identical task every week. Calendar-driven AI starts from the specific event and adapts: the attendees, your history with that client, related documents, and the inferred event type all shape what it does. A first call with a new prospect triggers different preparation than a renewal conversation with an existing client. The event provides the trigger; the AI decides the work from the event's meaning.
-
-### Isn't calendar-driven AI just an AI assistant that can access your calendar?
-
-No. An assistant that merely reads your calendar is still chat-based: you open it, prompt it, and it responds. Calendar-driven AI is an architectural choice — the calendar becomes the execution environment, events act as prompts, and time acts as the trigger, so preparation and follow-up happen without you initiating. That is why the article calls it a runtime rather than a feature: the system pushes assembled work to you instead of waiting for you to pull it.
-
-### Why can't chat-based AI handle recurring, deadline-driven work?
-
-Because it acts only when prompted and has no sense of time across sessions. It won't assemble a brief before your 9am meeting or chase an action item after a deadline unless you reopen the window and ask. Each session starts from zero context, so recurring work means re-explaining the background every time — the human becomes the integration layer. Its strengths, flexibility, and depth for exploration come precisely from not carrying schedule awareness.
-
-### Which paradigm should a solo founder or freelancer choose?
-
-It depends on the mix of work, not the person. Solo founders typically run both kinds: scheduled, recurring items like client calls, investor updates, and weekly planning, alongside unscheduled exploration like strategy, market research, and content. Calendar-driven AI fits the first category; chat-based AI fits the second. The setup that works best usually combines them, so scheduled work doesn't slip through the cracks while open-ended thinking keeps a flexible surface.

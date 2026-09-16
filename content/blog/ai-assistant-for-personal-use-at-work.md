@@ -121,28 +121,3 @@ If you can't answer yes to at least two of those by day 7, the tool isn't the ri
 
   * A practical guide to building an AI workflow that actually survives past the “trial week” stage for solo founders: [AI workflow for solo founders](</blog/ai-workflow-for-solo-founders>)
 
-## FAQ
-
-### How do I choose an AI assistant for personal use at work?
-
-Don't start with tool rankings — start with your actual day. Sort your work into the five scenarios this article walks through — admin, research, client-facing work, content, and planning — and let the scenario pick the tool type: a general-purpose chat assistant for admin tasks, a long-context model for research, a tool that holds your voice for client work. Then match the delivery shape and validate your pick with the 7-day trial plan before you pay.
-
-### What does “personal use at work” actually mean?
-
-It means using an AI tool as an individual — not through a company account, a shared workspace, or an IT-managed setup. You choose the tool, pay for it yourself, and weave it into your own workflow. The practical consequences: your context belongs to you rather than a team, the setup has to work in a web or desktop interface without being a developer, and if the tool doesn't fit, the switching cost is yours.
-
-### Which delivery shape should I pick — app, browser extension, or AI workspace?
-
-Match it to task depth and context needs. A web or desktop app is the best home base for most document-heavy personal work — writing, research, analysis — because it carries multi-turn context well. A browser extension suits narrow, session-based tasks inside web apps you're already logged into, but it sees little beyond the current page. A desktop AI workspace coordinates across files, browser, and local apps, but setup is heavier and the category is still maturing.
-
-### Do I need to upload files or connect accounts to make it useful?
-
-No. Most daily value comes from pasting text directly — an email thread, a document excerpt, meeting notes. File upload only matters when the source is long, such as a PDF you don't want to copy by hand, or when you analyze the same document repeatedly. Connecting email or calendar unlocks conveniences like auto-drafting replies, but the article recommends starting without integrations so you stay deliberate about what you hand the assistant.
-
-### What should I check before uploading files or connecting accounts?
-
-Run the article's checklist first. Ask whether anything falls under an NDA or contains a client's personal or financial data, whether a server-side log of the conversation would be a problem, whether an account connection grants write access rather than read-only, whether it's a shared account, and whether memory features are on by default. For sensitive sessions, use a separate project or a fresh session with Memory off.
-
-### How do I tell whether an AI assistant is actually saving me time?
-
-Run the 7-day trial plan and judge by honest criteria rather than impressive demos. Work through admin, research, writing, and planning tasks across the week, then ask three things: did it save meaningful time on at least two of them, did you reach for it naturally, and did context hold across sessions? If you can't answer yes, the tool — or the use cases you've given it — needs to change.

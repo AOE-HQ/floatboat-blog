@@ -162,28 +162,3 @@ Gen 4 extends autonomy across the work lifecycle. The system prepares briefs, ga
 
   * Calendar-Driven AI vs Chat-Based AI — How the calendar-driven and chat-based AI paradigms differ at the design philosophy level.
 
-## FAQ
-
-### Which AI scheduling assistant should I choose?
-
-Start from the pain, not the product. If your only problem is the scheduling back-and-forth, a Gen 1 tool like Calendly or Doodle solves it completely. If your days are fragmented and you need focus time defended, look at Gen 2 optimizers such as Motion, Reclaim, or Clockwise. If you are drowning in prep and follow-up for every client call, you need Gen 4 — where Floatboat is the clearest example. Then narrow by integration needs and whether you work alone or on a team.
-
-### What's the difference between a smart scheduler and a scheduling agent?
-
-A smart scheduler (Gen 1–2) optimizes where events sit — it finds open slots, prioritizes tasks, and rearranges your calendar for efficiency. A scheduling agent (Gen 3–4) acts on what the calendar contains: it books meetings from emails, prepares briefs before calls, and extracts action items afterward. The smart scheduler answers "when"; the scheduling agent answers "what happens because of when."
-
-### What can a calendar-driven agent (Gen 4) actually do for me?
-
-Gen 4 treats the calendar as a runtime rather than a grid. When a client call appears, the system gathers relevant emails, surfaces the latest drafts, and prepares a brief before you sit down. When it ends, it extracts action items and drafts follow-ups. When a deadline approaches, it starts assembling deliverables. Each event keeps a persistent workspace with files, run history, and model choice — the agent does the prep, follow-up, and production work the calendar implies.
-
-### Are AI scheduling assistants worth it for solo founders?
-
-Yes — at different tiers. Gen 1 tools like Calendly are close to mandatory; the free tier alone removes the scheduling-email tax. Gen 2 pays off if you battle context-switching. Gen 4 matters most when your calendar runs your business, since every client call needs prep nobody else will do and every meeting leaves follow-ups nobody else will track. At roughly 15 client calls a week the difference is transformative; at three, it is marginal.
-
-### Do these tools work with my existing Google Calendar and Outlook?
-
-Mostly yes, with varying coverage. Calendly, Motion, Reclaim, Clockwise, and Agentic Calendars support Google and Outlook; Morgen adds iCloud and CalDAV; Floatboat is designed for Google, Outlook, iCloud, Lark, and ICS feeds while connecting events to an agent workspace. Two caveats: Motion replaces your native calendar rather than augmenting it, and Outlook support ranges from read-only to full two-way sync across tools — check the vendor's integration page first.
-
-### What does "autonomy" really mean across the generations?
-
-Autonomy is a ladder. Gen 1 and Gen 2 assist — they recommend, optimize, and remind, but you still do the work. Gen 3 starts acting for you within the scheduling domain, booking meetings from emails and handling booking requests. Gen 4 extends action across the whole lifecycle: preparing briefs, gathering context, drafting follow-ups, and tracking action items without anyone initiating. The question that decides the purchase isn't feature count; it's whether the AI waits for you or acts on your behalf.

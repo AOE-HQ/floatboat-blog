@@ -125,22 +125,3 @@ Anyway — that's where I am on this right now. I'll update when the model actua
 
 → Break down why **[AI “forgets” every session — and what to do about it now](</blog/why-ai-forgets-every-session>)**
 
-## FAQ
-
-### When is GPT-6 launching?
-No official date as of late April 2026. OpenAI finished pretraining on March 24, 2026; Altman said launch was "a few weeks" away, and the flagship was still in safety evaluation as of writing. Best guess from public signals: late Q2 or Q3 2026. Watch OpenAI's official announcements rather than leaks or Twitter.
-
-### Will GPT-6 be a bigger leap than GPT-4 to GPT-5?
-Nobody knows yet, including the people writing about it. GPT-4 to GPT-5 took 29 months and landed as a meaningful-but-not-dramatic upgrade for most workflows — real but small. GPT-6 is reportedly coming on a shorter gap, which could mean a smaller delta per release, or the opposite. Temper expectations; the benchmark articles circulating now are speculation.
-
-### Will a more powerful model automatically make you faster?
-Not automatically — and that's the central lesson of the GPT-4 to GPT-5 rollout. A better model speeds up generation, which is one step in a longer loop: deciding what you want, gathering context, generating, reviewing, shipping. The surrounding steps stay just as slow. In practice, expect roughly 15% faster on workflows you've already dialed in, and zero or negative gains on everything else.
-
-### What should I build before GPT-6 arrives?
-Standardize your repeatable work and build context that transfers to any model. For each recurring job, write a simple doc — input format, prompt, an example of good output and one of bad output. Then write a one-page profile of your work and audience, keep a file of your best outputs per work type, and document the decisions you make repeatedly and why. None of it needs GPT-6, and all of it pays off the day any new model ships.
-
-### Should I wait until GPT-6 ships before building anything?
-No — don't wait. The work that makes GPT-6 useful is the same work that makes your current model more useful: documented workflows, a clear profile of your work, style references, and written-down decisions. It compounds across model generations. Waiting just delays the scaffolding you already need, and the people who benefit most from a new release are the ones who had systems ready before it dropped.
-
-### Are the 2M-token context window rumors true?
-Unverified — and treat everything else leaked about GPT-6 the same way. OpenAI has published no model card and no spec sheet naming GPT-6 as of late April 2026. The only confirmed facts are that pretraining finished on March 24, 2026 and that Altman expects launch "a few weeks" out. Until OpenAI publishes details, treat rumored specs as fan fiction.

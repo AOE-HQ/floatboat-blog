@@ -127,28 +127,3 @@ The honest answer for a lot of solo operators is: **start with the workspace, ad
 
   * [Understand the difference between AI agents and assistants in real workflows.](</blog/ai-agent-vs-ai-assistant>)
 
-## FAQ
-
-### What's the core difference between a workflow builder and an AI workspace?
-
-It's not really about features — it's two bets about how your work is structured. A workflow builder assumes your work has a shape you can diagram: trigger, action, condition, output — you map the process and the tool runs it for you. An AI workspace assumes your work is fluid and context-heavy, so it learns your files, decisions, and patterns over time to assist you in the moment.
-
-### How do I know which one fits my work?
-
-Ask yourself the article's three questions. Can I draw this process as a clear flowchart right now? If yes, a workflow builder will serve you well. Is my bottleneck execution volume or thinking quality? High-volume, low-variation tasks favor a builder; judgment-heavy, context-dependent work favors a workspace. And who will maintain this in six months — the maintenance cost is real either way.
-
-### When is a workflow builder the right call?
-
-When you have defined, repeatable, trigger-based processes — if you can honestly say "every time X happens, do Y then Z" — it saves real hours. Lead enrichment, content repurposing pipelines, and automated report generation are classic fits. It's also right when a team needs clean handoffs between roles, or when you want to build once and let a flow process hundreds of records without touching it.
-
-### When does an AI workspace fit better?
-
-When your days don't have a fixed shape. If you shift between research, writing, and client calls, there's often no repeatable trigger to hang automation on, and critical context lives in threads and judgment rather than systems. It also fits solo operators doing multiple roles, where a workspace that understands your projects, tone, and priorities beats a pipeline you rarely run.
-
-### What does neither category do well yet?
-
-Plenty. Workflow builders struggle with ambiguity: messy inputs or unexpected branches can produce flows that look correct and break in production, and maintenance is real. AI workspaces struggle with scale and determinism — running the same process 500 times without variation feels "soft." The honest answer for many is to combine both: a workspace for thinking and context, a builder for the repeatable output layer.
-
-### As a solo operator, which should I start with?
-
-Start with the workspace, then add workflow automation only for tasks that are genuinely repetitive. The most common mistake — even among technically capable users — is over-engineering automation for work that hasn't stabilized yet. Don't build the full ops stack before you know which parts of your work are actually stable enough to automate.

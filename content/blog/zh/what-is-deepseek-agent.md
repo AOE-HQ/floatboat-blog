@@ -136,28 +136,3 @@ DeepSeek 目前正为两个岗位招人，这暗示官方 Agent 产品正在开�
 
 生态还很早期。官方 DeepSeek Agent 还不存在。社区工具迭代快、文档参差。但方向很清楚：DeepSeek 的模型是为 agentic 工作负载设计的，围绕它们的工具生态，成熟速度超过了近年来任何开源权重模型的配套生态。当你准备好深入每一款 Agent 背后那层技术——工具定义、strict mode、并行执行——[DeepSeek Agent 函数调用](</blog/deepseek-agent-function-calling>) 覆盖了从 schema 设计到 MCP 的完整工具调用栈。
 
-## 常见问题
-
-### DeepSeek Agent 到底是什么？
-
-DeepSeek Agent 指任何以 DeepSeek 模型（通常是 V4 Pro 或 V4 Flash）作为主推理引擎的 AI Agent——由这个模型决定调用哪个工具、规划多步任务、并跨 session 维护上下文。它不是某一款产品或代码库，而是一个类别：把 Claude Code 指向 DeepSeek 的 Anthropic 兼容端点，那个会话里它就变成了 DeepSeek Agent；跑 deepseek-tui 则是另一种。
-
-### DeepSeek 官方出 DeepSeek Agent 了吗？
-
-还没有。目前生态里没有任何一款是 DeepSeek 的官方产品——DeepSeek 自己尚未发布 Agent。awesome-deepseek-agent 仓库是一个信号（V4 模型已准备好承接 agentic 工作负载），而不是产品发布。公司正在招聘 Agent Harness 团队，职位描述指向一个 Claude Code 桌面 App 路数的桌面编程 Agent——很可能要等社区工具把那套架构先探索完。
-
-### 在 Claude Code 里用 DeepSeek V4 会丢功能吗？
-
-不会。把 Claude Code 指向 DeepSeek 的 Anthropic 兼容端点、选择 `deepseek-v4-pro` 或 `deepseek-v4-flash` 即可；大部分功能——agent 循环、工具权限、diff 审核、子 Agent——都原样工作，因为它们活在宿主层而不是模型层。你失去的是 Claude 特有行为，如 Opus 的架构推理风格、或依赖 Anthropic 专属 API 参数的功能；换来的则是每回合成本大幅下降。
-
-### DeepSeek Agent 不就是个带函数调用的模型吗？
-
-不是。函数调用只是单个 API 能力——发一份带工具定义的提示，拿回一个调用其中某个工具的结构化请求。Agent 是围绕这项能力构建的系统：一个执行循环，真正发起调用、把结果喂回去、再重复。DeepSeek Agent 的工程复杂度大多活在这个循环里——错误处理、上下文管理、状态持久化、工具权限、多轮规划。一个 `tools` 数组大约只是头 5%。
-
-### DeepSeek V4 支持工具调用和 MCP 吗？
-
-支持。V4 Pro 与 V4 Flash 都通过标准 OpenAI 兼容的 `tools` 数组支持最多 128 个并行函数调用，也都支持 Model Context Protocol（MCP）做结构化工具集成。V4 Pro 在 MCPAtlas Public 上拿到 73.6，在 agentic 工具使用基准上与 Claude Opus 4.6 打平。
-
-### 四种原型该怎么选？
-
-按你的约束对号入座。写代码、想要最低的每回合成本，就把 Claude Code 或 Cline 这类通用宿主框架配置成例行任务用 V4 Flash；想把 DeepSeek 定价允许的架构潜力推到极限，就评估 DeepSeek-TUI——它的 RLM 扇出在通用框架里复现不了；需要团队聊天平台里的 Agent，看 AstrBot 或 OpenClaw；想要图形界面、不想碰终端，就从 Cherry Studio 或 LobeHub 开始。

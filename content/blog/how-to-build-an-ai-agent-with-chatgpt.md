@@ -115,28 +115,3 @@ I'll probably keep refining my own setup as the tools evolve. That part never re
 
   * Once you've built your first GPT, this guide helps you turn repeatable tasks into something more reliable and scalable: [How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>)
 
-## FAQ
-
-### Do I need to know how to code to build an AI agent with ChatGPT?
-
-No. The author built a working content-research agent using just the Custom GPT builder, a few uploaded files, and instructions he rewrote three times — no code, no API. The difficulty isn't technical; it's defining the task precisely, writing clear step-based instructions, and testing with real edge cases. If you can describe the task you repeat every week, you can build a GPT around it.
-
-### What can a Custom GPT actually do?
-
-A Custom GPT follows your instructions, references uploaded files, browses the web, runs code for data analysis, and generates images — think of a very well-briefed assistant that follows the same playbook each time. What it can't do is act on external websites, send emails on your behalf, or run background tasks. Those belong to ChatGPT's separate Agent Mode, or Workspace Agents on Business and Enterprise plans.
-
-### Do I need a paid ChatGPT plan to build one?
-
-Yes. Creating a Custom GPT requires Plus ($20/month), Team, Business, or Enterprise. Free-tier users can use GPTs others have published but can't build their own. Worth the money only if the task is genuinely repeatable and well-defined — the sweet spot for Custom GPTs is work you'd otherwise re-prompt from scratch every time.
-
-### Can it run tasks while I'm offline?
-
-No. Custom GPTs work only during an active conversation — close the chat and they stop, and they don't carry memory between sessions. If you need background or autonomous work, ChatGPT's Agent Mode can run certain tasks in the background, while Workspace Agents for Business and Enterprise can run in the cloud and work in Slack.
-
-### What permissions should I avoid giving it?
-
-Don't connect external APIs through Actions unless you understand exactly what data gets sent, and don't enable web browsing for GPTs handling confidential information. On team plans, keep admin controls on: restrict action domains and review access quarterly. And for any GPT producing client-facing output, keep a human review step before anything goes out.
-
-### How do I know when the agent is reliable enough?
-
-Run ten real scenarios from your actual workflow. If you're correcting more than two out of ten, the instructions need work — tighten them and add examples. Fewer than one in ten means you've got something worth keeping. The biggest mistake is writing instructions once and never updating them; treat your GPT like software and keep iterating.

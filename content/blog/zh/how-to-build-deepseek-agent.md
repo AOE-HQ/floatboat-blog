@@ -290,28 +290,3 @@ DeepSeek V4 支持一种思考模式：在产出工具调用或最终回答之�
 
 天气 Agent 是个玩具，但模式可以扩展。把 `get_weather` 换成 `search_codebase`、`run_tests`、`query_database`、`read_file`、`write_file` 或 `create_calendar_event`——同样的五十行循环就变成一个编码 Agent、数据分析 Agent 或日程 Agent。工具定义在变；循环架构不变。
 
-## 常见问题
-
-### Agent 循环是什么？为什么一次工具调用还不够？
-
-Agent 不是回答一次就结束——它循环。模型请求调用某个工具，你的代码执行它，结果作为 `tool` 角色消息回到对话，模型带着完整历史决定下一步。如此往复，直到模型给出最终回答。一次工具调用只是单个回合：不把结果喂回去再问一轮，模型就无法规划、自我纠正，也完不成多步目标。而这恰恰是多数教程跳过的部分。
-
-### V4 Pro 和 V4 Flash，我该怎么选？
-
-默认把 Agent 循环跑在 `deepseek-v4-flash` 上——高频工具调用、分类、路由和简单调试它都够用，输入价格大约是 Pro 的三分之一。只有当回答质量真正要紧时才把个别回合升到 `deepseek-v4-pro`——通常是任务开头的规划步和结尾的综合步。两款模型共用同一个 API 面，升级只是一行模型名的改动。
-
-### 为什么要自己写，而不是直接用现成工具？
-
-看你的 Agent 做什么。如果它只是改代码，DeepSeek-TUI、Reasonix 这类工具已经把循环实现得很好了。但它们专为开发者工作流而造。当 Agent 需要查询专有数据库、对接内部 API、自动化业务流程时，自定义循环才能让你完全掌控工具面——而理解循环本身，正是你能够调试和定制的起点。
-
-### DeepSeek 能用在 LangChain 或 LangGraph 里吗？
-
-能。两个框架都把 DeepSeek 当作即插即用的 OpenAI 兼容供应商来支持。在环境里设置 `OPENAI_API_BASE=https://api.deepseek.com` 和 `OPENAI_API_KEY=your-deepseek-key`，再用标准的 `ChatOpenAI` 类、`model="deepseek-v4-pro"` 即可。本教程讲的 Agent 循环模式，正是 LangChain 的 `AgentExecutor` 在底层做的事——当 LangChain 的抽象坏掉时（它们确实会坏），理解原始循环就很有用。
-
-### 模型调用不存在的工具怎么办？
-
-这正是第 6 节修复模式要处理的。返回一个结构化错误——`{"error": "Unknown tool: X. Available: [list]"}`——模型通常会在下一回合自我纠正。V4 模型的自我纠正能力显著强于 V3，但你仍应在执行前校验每一次工具调用。
-
-### 生产环境跑起来要花多少钱？
-
-粗略估算：一个典型 Agent 任务用 5–15 回合。按 V4 Flash 价格（输入 $0.14/M、输出 $0.28/M），一个平均 10 回合、每回合 2,000 输入 token 与 500 输出 token 的任务大约花 $0.004——不到半分钱。每月一千个这样的任务：$4。按 V4 Pro 价格：每任务约 $0.013，一千个约 $13。成本面友好到，主要顾虑不是 API 账单，而是你用来调优 Agent 循环的工程时间。
