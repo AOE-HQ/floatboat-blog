@@ -4,11 +4,11 @@
  * Markdown references. SVG is left alone.
  *
  *   node scripts/convert-blog-images-to-webp.mjs
+ *   node scripts/convert-blog-images-to-webp.mjs --check
  */
 import { readdir, readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import sharp from "sharp";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const IMAGE_DIR = path.join(ROOT, "public/blog/images");
@@ -31,6 +31,7 @@ function webpPath(file) {
 }
 
 async function convertFile(file) {
+  const sharp = (await import("sharp")).default;
   const ext = path.extname(file).toLowerCase();
   if (!RASTER.has(ext)) return { skipped: true, file };
   const dest = webpPath(file);
@@ -39,6 +40,45 @@ async function convertFile(file) {
     await unlink(file);
   }
   return { skipped: false, file, dest };
+}
+
+async function collectMarkdownHits() {
+  const files = (await walk(CONTENT_DIR)).filter((f) => f.endsWith(".md"));
+  const pattern = /\/blog\/images\/([^)\s"'<>]+)\.(png|jpe?g)/gi;
+  const hits = [];
+  for (const file of files) {
+    const text = await readFile(file, "utf8");
+    for (const match of text.match(pattern) || []) {
+      hits.push(`${path.relative(ROOT, file)}: ${match}`);
+    }
+  }
+  return hits;
+}
+
+async function check() {
+  const images = await walk(IMAGE_DIR);
+  const rasters = images.filter((file) =>
+    RASTER.has(path.extname(file).toLowerCase()),
+  );
+  const mdHits = await collectMarkdownHits();
+  if (rasters.length === 0 && mdHits.length === 0) {
+    console.log("ok: blog images are WebP");
+    return;
+  }
+  if (rasters.length) {
+    console.error(`found ${rasters.length} png/jpeg files under public/blog/images:`);
+    for (const file of rasters.slice(0, 20)) {
+      console.error(`  ${path.relative(ROOT, file)}`);
+    }
+    if (rasters.length > 20) console.error(`  ... ${rasters.length - 20} more`);
+  }
+  if (mdHits.length) {
+    console.error(`found ${mdHits.length} Markdown refs still pointing at png/jpeg:`);
+    for (const hit of mdHits.slice(0, 20)) console.error(`  ${hit}`);
+    if (mdHits.length > 20) console.error(`  ... ${mdHits.length - 20} more`);
+  }
+  console.error("run: npm run images:webp");
+  process.exit(1);
 }
 
 async function rewriteMarkdown() {
@@ -57,6 +97,11 @@ async function rewriteMarkdown() {
     }
   }
   return { filesChanged, replacements };
+}
+
+if (process.argv.includes("--check")) {
+  await check();
+  process.exit(0);
 }
 
 const images = await walk(IMAGE_DIR);

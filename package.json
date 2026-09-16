@@ -8,7 +8,9 @@
     "theme:sync": "tsx scripts/sync-theme.ts",
     "start": "next start -p 3777",
     "lint": "eslint",
-    "validate:posts": "tsx scripts/validate-posts.ts"
+    "validate:posts": "tsx scripts/validate-posts.ts",
+    "images:webp": "node scripts/convert-blog-images-to-webp.mjs",
+    "check:images": "node scripts/convert-blog-images-to-webp.mjs --check"
   },
   "dependencies": {
     "@openblog/components": "*",
