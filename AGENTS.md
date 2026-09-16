@@ -14,16 +14,36 @@ Independent OpenBlog app mounted at `https://floatboat.ai/blog`. Cloudflare / In
 
 ## Images
 
-- Put article images in `public/blog/images/<slug>/`. Public URL must start with `/blog/images/` so the rewrite reaches this pod.
-- **WebP only** for rasters (`.png` / `.jpg` / `.jpeg` are not served in production). Keep SVG as SVG (logo lives at `/blog/brand/floatboat-logo.svg`).
-- Markdown `cover:` and `![]()` paths: `/blog/images/<slug>/<file>.webp`.
-- Do not use Next `/_next/image`. That path is aoe-backend's optimizer and 400s for Blog files.
-- Convert rasters locally (quality 80, original pixel size) and commit the `.webp` files. CI does **not** convert on deploy; it fails the PR if png/jpeg files or Markdown refs remain.
+Script: `scripts/convert-blog-images-to-webp.mjs`
 
-```bash
-npm run images:webp    # convert + rewrite Markdown
-npm run check:images   # CI gate
+Put article images in `public/blog/images/<slug>/`. The public URL must start with `/blog/images/` so Cloudflare / Ingress sends it to this pod. Rasters must be **WebP**. Keep SVG as SVG (logo: `/blog/brand/floatboat-logo.svg`). Do not use Next `/_next/image` (that hits aoe-backend and 400s). Do not put files at `/brand/...` or `/favicon.ico` on this app; those go to the main site.
+
+### Convert a new post
+
+1. Drop `.png` / `.jpg` / `.jpeg` into `public/blog/images/<slug>/`.
+2. Write Markdown with either the current filename or the `.webp` name:
+
+```yaml
+cover: "/blog/images/my-slug/hero.png"
 ```
 
-- Do not put static files at `/brand/...`, `/favicon.ico`, or other origin-root paths. Those go to the main site.
+```md
+![alt](/blog/images/my-slug/hero.png)
+```
+
+3. From the repo root:
+
+```bash
+npm run images:webp
+```
+
+This uses sharp, quality 80, **original pixel size** (no resize). It writes `.webp` next to the source, deletes the png/jpeg, and rewrites `cover:` / `![]()` under `/blog/images/` to `.webp`.
+
+4. Commit the `.webp` files and the Markdown. Do not commit the original png/jpeg.
+
+```bash
+npm run check:images   # same gate CI runs; should print: ok: blog images are WebP
+```
+
+CI (`npm run check:images` in `.github/workflows`) fails the PR if any png/jpeg remains or Markdown still points at `.png`/`.jpg`. It does **not** convert during Docker / EKS deploy.
 
