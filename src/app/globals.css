@@ -42,7 +42,7 @@
   --ob-color-border: rgb(0 0 0 / 0.08);
   --ob-color-code-bg: #262420;
   --ob-color-code-fg: #f7f5f1;
-  --ob-color-image-slot: #e6e3de;
+  --ob-color-image-slot: #d8d4cd;
 
   --ob-font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -84,47 +84,51 @@
 
 @keyframes ob-image-shimmer {
   100% {
-    transform: translateX(100%);
+    transform: translateX(220%);
   }
 }
 
 .ob-image-shimmer {
   position: relative;
+  isolation: isolate;
 }
 
-.ob-image-shimmer::after {
-  content: "";
+.ob-image-shimmer-bar {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
+  overflow: hidden;
   pointer-events: none;
+}
+
+.ob-image-shimmer-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 55%;
   background: linear-gradient(
     105deg,
-    transparent 0%,
-    transparent 38%,
-    rgb(255 255 255 / 0.55) 50%,
-    transparent 62%,
-    transparent 100%
+    rgb(255 255 255 / 0) 0%,
+    rgb(255 255 255 / 0.15) 35%,
+    rgb(255 255 255 / 0.92) 50%,
+    rgb(255 255 255 / 0.15) 65%,
+    rgb(255 255 255 / 0) 100%
   );
-  transform: translateX(-100%);
-  animation: ob-image-shimmer 1.4s ease-in-out infinite;
+  transform: translateX(-120%);
+  animation: ob-image-shimmer 1.6s ease-in-out infinite;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.ob-theme-system .ob-image-shimmer::after {
+  :root.ob-theme-system .ob-image-shimmer-bar::after {
     background: linear-gradient(
       105deg,
-      transparent 0%,
-      transparent 38%,
-      rgb(255 255 255 / 0.14) 50%,
-      transparent 62%,
-      transparent 100%
+      rgb(255 255 255 / 0) 0%,
+      rgb(255 255 255 / 0.06) 35%,
+      rgb(255 255 255 / 0.28) 50%,
+      rgb(255 255 255 / 0.06) 65%,
+      rgb(255 255 255 / 0) 100%
     );
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ob-image-shimmer::after {
-    animation: none;
   }
 }

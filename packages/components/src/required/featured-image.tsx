@@ -40,7 +40,7 @@ export function FeaturedImage({
     if (!window.location.search.includes("slowimg")) return;
     setAllowSrc(false);
     setLoaded(false);
-    const timer = window.setTimeout(() => setAllowSrc(true), 2000);
+    const timer = window.setTimeout(() => setAllowSrc(true), 4000);
     return () => window.clearTimeout(timer);
   }, [resolved]);
 
@@ -69,6 +69,9 @@ export function FeaturedImage({
         className,
       )}
     >
+      {!loaded ? (
+        <span className="ob-image-shimmer-bar" aria-hidden="true" />
+      ) : null}
       {allowSrc && isExternal ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
