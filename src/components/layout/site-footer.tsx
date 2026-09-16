@@ -34,7 +34,7 @@ function SocialIcon({ label, title, href, children }: {
       rel="noopener noreferrer"
       aria-label={label}
       title={title}
-      className="inline-flex size-5 items-center justify-center text-[#7a7671] transition-colors hover:text-[#1b1a18]"
+      className="inline-flex size-5 items-center justify-center text-[var(--ob-color-muted)] transition-colors hover:text-[var(--ob-color-text)]"
     >
       <svg viewBox="0 0 20 20" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-5">
         {children}
@@ -96,7 +96,7 @@ export function SiteFooter() {
   const newsletterCopy = resolveNewsletterForPost(slug, locale);
 
   const legalLinkClass =
-    "flex h-10 items-center justify-center px-[10px] py-[5px] text-[14px] leading-[1.43] font-medium text-[#7a7671] transition-colors hover:text-[#1b1a18]";
+    "flex h-10 items-center justify-center px-[10px] py-[5px] text-[14px] leading-[1.43] font-medium text-[var(--ob-color-muted)] transition-colors hover:text-[var(--ob-color-text)]";
 
   return (
     <footer id="footer">
@@ -123,11 +123,11 @@ export function SiteFooter() {
                 className="h-9 w-auto"
               />
             </a>
-            <p className="text-[14px] font-medium leading-[1.43] text-[#7a7671]">
+            <p className="text-[14px] font-medium leading-[1.43] text-[var(--ob-color-muted)]">
               {isZh ? "知行合一，扬帆远航" : "Sail onward with what you've learned"}
             </p>
           </div>
-          <div className="flex items-center gap-6 text-[#7a7671]">
+          <div className="flex items-center gap-6 text-[var(--ob-color-muted)]">
             <SocialIcon label="Email" title="Email" href="mailto:contact@floatboat.ai">
               <EmailIcon />
             </SocialIcon>
@@ -154,7 +154,7 @@ export function SiteFooter() {
         <div className="h-px w-full bg-black/[0.08]" />
 
         <div className="flex flex-col gap-4 px-10 py-6 max-lg:px-5 sm:flex-row sm:items-start sm:justify-between">
-          <p className="text-[14px] font-normal leading-[1.43] text-[#71717a]">
+          <p className="text-[14px] font-normal leading-[1.43] text-[var(--ob-color-muted)]">
             © {new Date().getFullYear()} AOE Tech Labs Limited. The Proactive
             Agent that Runs Work from the Calendar.
           </p>
