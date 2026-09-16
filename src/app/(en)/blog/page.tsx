@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 
 
 import { BlogIndex, BlogShell } from "@openblog/components";
-import { BlogMarketingBanner } from "@/components/blog/marketing-banner";
 
 import { absoluteUrl, blogPath, site } from "@/config/site";
 import { resolveFaqForBlogIndex } from "@/lib/faq-data";
@@ -51,7 +50,6 @@ export default function BlogIndexPage() {
       <BlogIndex
         data={data}
         faq={resolveFaqForBlogIndex("en")}
-        marketing={<BlogMarketingBanner locale="en" />}
       />
     </BlogShell>
 

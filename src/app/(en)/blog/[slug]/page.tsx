@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 import { ArticleLayout, JsonLd } from "@openblog/components";
 import { resolveFeatures, resolveOptionalComponents } from "@openblog/core";
 
+import { BlogCtaPopup } from "@/components/blog/cta-popup";
 import { absoluteUrl, postPath } from "@/config/site";
 import { config } from "@/lib/openblog-config";
+import { resolvePopupForPost } from "@/lib/popup-data";
 import { FaqBand } from "@/components/faq-band";
 import {
   buildPostLanguageAlternates,
@@ -82,6 +84,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const relatedPosts = optional.relatedPosts ? getRelatedPosts(post) : [];
   const adjacentPosts = optional.prevNext ? getAdjacentPosts(slug) : { prev: null, next: null };
   const breadcrumbs = getArticleBreadcrumbItems(post.title, post.slug);
+  const popup = resolvePopupForPost(post.slug, "en");
 
   return (
     <>
@@ -100,6 +103,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       {post.faq && post.faq.length > 0 ? (
         <FaqBand items={post.faq} locale="en" />
       ) : null}
+      <BlogCtaPopup copy={popup} locale="en" />
     </>
   );
 }
