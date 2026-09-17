@@ -364,6 +364,62 @@
         }
       ]
     },
+    "/blog/ai-file-organizer-mac": {
+      "items": [
+        {
+          "question": "Will an AI file organizer for Mac mess up my files?",
+          "answer": "Not if you pick one with a review step and full undo, and test it on a throwaway folder first. A safe organizer shows every proposed rename and move as a tree, executes nothing until you approve, and keeps a history that reverses the whole batch, not just the last file. Renames in place are lower risk than folder moves, because a move changes paths that apps, aliases, and saved workflows may point to."
+        },
+        {
+          "question": "Does an AI file organizer for Mac upload my files to the cloud?",
+          "answer": "It depends entirely on the tool's architecture, so check the vendor's docs rather than the marketing page. Fully on-device tools like Floatboat analyze with a local model and upload nothing; hybrid tools keep OCR and indexing local but send extracted text to a model you choose; managed cloud tools send content to the vendor's servers — nymos's subscription processes inside the EU, for example. Ask where analysis runs and what the vendor retains."
+        },
+        {
+          "question": "Can an AI file organizer work offline on a Mac?",
+          "answer": "Yes, when the model runs locally. On Apple Silicon, Floatboat and Floxtop run the classifier and naming model through the Neural Engine or GPU, so analysis works with no connection. Cloud and hybrid tools need a network unless you configure a local model such as Ollama. Two caveats: the model download happens on first launch, and offloaded iCloud Drive files must be downloaded before their contents can be read."
+        },
+        {
+          "question": "Is it better to rename files in place or move them into folders on a Mac?",
+          "answer": "That depends on what your files are for. Renaming in place keeps every path, alias, and reference valid and is the safe default for a structure you depend on — the philosophy of nymos and Zush. Moving files changes paths, which is the point when you are taming a flat dump of Downloads, Desktop, and screenshots, but you want a tool that previews destinations and can reverse the whole batch if a client folder gets buried."
+        },
+        {
+          "question": "Why can't Spotlight find my files after I organized them?",
+          "answer": "Spotlight searches file names immediately, so descriptive renames help within seconds. If you are searching by the contents of a scan or photo, Spotlight can only index what it can read — an image-only scan that was never OCR'd stays invisible to content search, and text inside images is not indexed automatically. Run files through a tool with OCR that keeps a local index, or let a content-reading organizer rename files from the text it extracts, and the search surface improves even when the pixels cannot be indexed."
+        },
+        {
+          "question": "What macOS version do I need for an AI file organizer?",
+          "answer": "It varies more than most roundups admit. nymos starts at macOS 14 (Sonoma), most current tools including Zush and Floxtop require macOS 15, NameQuick needs 15.4 or newer, and Tidow's present builds target macOS 26 with AI features on M1 or later. Check the floor before you download, and remember that Apple Silicon on-device tools run best on M-series chips."
+        }
+      ]
+    },
+    "/blog/ai-file-organizer-windows": {
+      "items": [
+        {
+          "question": "What is the best AI file organizer for Windows?",
+          "answer": "There is no single best tool, because the category splits by supervision style. If you want a background sorter that watches folders and routes new files automatically, Microsoft Store apps like NudgeFile fit that job. If you prefer open source and full control, AI File Sorter by hyperfield runs local models and lets you review everything. If you want content-aware renaming with a buy-once license, FilesDesk or the indie AI File Organizer Pro match that. Floatboat's organizer suits people who want to describe the folder tree in plain words, preview it, and run everything on-device with whole-batch undo. Test the shortlist on one real folder before trusting screenshots."
+        },
+        {
+          "question": "Do AI file organizers for Windows upload my files?",
+          "answer": "It depends on the architecture, and the difference is visible on each tool's privacy page. Local-first tools — NudgeFile with its built-in Ollama processor, AI File Sorter in offline mode, and Floatboat's organizer — keep filenames and contents on your machine. Cloud-backed tools are honest about sending data to a model provider; Sortio, for example, sends filenames and metadata to your chosen provider by default and uploads file contents if you enable a content feature. The question to ask before installing is not \"is it AI\" but \"what does the AI see.\""
+        },
+        {
+          "question": "Why are so many AI file organizers Mac-only?",
+          "answer": "The macOS market got there first. Indie developers built renamers and organizers for the machines they use, and Mac users demonstrated they will pay for polished file utilities — nymos and Sparkle both sit on the macOS side as of September 2026. Apple Silicon also gave developers one predictable chip to optimize local models for. Windows has a longer hardware tail, so local AI there is more of a configuration exercise, which makes polished consumer apps harder to ship. The Windows-native supply is smaller but real, and it skews toward local and open-source tools."
+        },
+        {
+          "question": "Do I need a powerful GPU or NPU to run an AI file organizer on Windows?",
+          "answer": "No, but hardware changes the experience. Text classification and naming run acceptably on CPU with a small local model, which is why several tools default to compact models that work on older laptops. Vision work — categorizing thousands of screenshots and photos — is where a discrete GPU or the NPU on a newer Copilot+ PC earns its keep. Tools built on Ollama let you pick model size: start small, and reach for a bigger model if naming quality demands it."
+        },
+        {
+          "question": "Will an organizer mess up files that OneDrive syncs?",
+          "answer": "Only if you do not check first. If your Desktop or Documents are redirected through Known Folder Move, those folders sync automatically, and an organizer that renames or moves files in them will propagate those changes through OneDrive. That is usually fine, but two rules keep it safe: verify the tool handles files that are cloud-only rather than downloaded, and understand that \"local\" no longer means \"only on this PC.\" If either makes you uncomfortable, organize a folder that is not synced."
+        },
+        {
+          "question": "Can I undo a large AI organization run on Windows?",
+          "answer": "Preview-first tools make large runs reversible. Floatboat's organizer rolls back the entire batch with one click, and NudgeFile keeps a transaction log with one-click restore of any rename or routing operation. The safe pattern is the same everywhere: keep the preview step honest, run in batches, and take a backup or a folder listing before the first big pass on a folder you cannot afford to lose. Undo after a whole drive reorganization is a heavier story than undo after one Downloads folder."
+        }
+      ]
+    },
     "/blog/ai-follow-up-automation": {
       "items": [
         {
@@ -672,6 +728,58 @@
         }
       ]
     },
+    "/blog/best-ai-file-organizer": {
+      "items": [
+        {
+          "question": "What is the best AI file organizer in 2026?",
+          "answer": "For most Mac and Windows users who want content-aware organizing with a local option, Floatboat AI File Organizer tops our weighted scorecard, with Sortio the close runner-up for automation-first workflows. The honest answer is narrower: “best” depends on whether your files are sensitive (favor local), whether they keep arriving (favor watch folders), and whether you refuse to let software move them (favor in-place renamers). All prices and capabilities were verified against official pages as of September 2026."
+        },
+        {
+          "question": "Can an AI file organizer work fully offline?",
+          "answer": "Yes. Floatboat runs its classifier and renaming models on-device with zero uploads; AI File Sorter runs built-in GGUF models locally; FilesDesk supports full offline operation via Ollama, LM Studio, or vLLM on its lifetime license; and Zush, Sortio, NameQuick, and NudgeFile all offer local or on-device modes. The trade-off is universal: a capable local model is a multi-gigabyte download and runs slower on modest hardware than a cloud model."
+        },
+        {
+          "question": "Will an AI file organizer move my files without asking?",
+          "answer": "It depends on the tool’s philosophy, which is why this ranking scores preview and undo separately. Floatboat and AI File Sorter show a full preview and apply nothing until you approve; Sortio previews each run and keeps undo history; NameQuick offers an explicit review-before-renaming mode; NudgeFile is automation-first by design; and Zush never moves files because it renames in place. Before any purchase, run the tool once on a copied folder and verify both the preview step and the undo path."
+        },
+        {
+          "question": "Do I need the Mac version or the Windows version?",
+          "answer": "Platform matters more than most roundups admit because this market is Mac-heavy and Windows users have fewer native options. Windows-only users effectively shortlist NudgeFile, Sortio, FilesDesk, AI File Sorter, and — now that its official site lists Windows — NameQuick. Mac users have every tool in this ranking. For mixed households, FilesDesk and Zush sell per-device licenses cheaply enough to buy twice, while Floatboat and Sortio cover both platforms from one account."
+        },
+        {
+          "question": "What is the difference between an AI file organizer, a renamer, and a sorter?",
+          "answer": "An organizer reads file contents, then both renames and files into a structure you approve — the category this ranking evaluates. A renamer improves filenames, and a sorter routes files by rules; many “organizers” on the market are one of those two in disguise, the most common cause of buyer disappointment. Zush and, to a degree, NameQuick sit closer to the renamer end, which is why they rank where they do on an organizer rubric despite being excellent at what they do."
+        },
+        {
+          "question": "Which AI file organizer is best for scanned documents and invoices?",
+          "answer": "FilesDesk and NameQuick are the strongest for scans and invoices. FilesDesk documents an explicit OCR-for-scans and vision-for-images pipeline with EXIF support and undercuts the market at $40 one-time for its self-managed local license; NameQuick pairs built-in OCR with naming presets, watched folders, and the ability to file PDF invoices straight from email. If your invoices arrive as scans and your budget is near zero, trial both on the same batch and compare correction rates."
+        }
+      ]
+    },
+    "/blog/best-ai-file-renamer": {
+      "items": [
+        {
+          "question": "What's the difference between an AI file renamer and an AI file organizer?",
+          "answer": "A renamer changes filenames in place; an organizer also decides where files belong — creating folders, moving and grouping files by project, type, or date. Renamers suit people whose folder structure is fine and whose names are unsearchable. Organizers suit people whose files are in the wrong folders. Floatboat, Zush, FilesDesk, and RenameClick do both, so this ranking evaluates only their renaming layer."
+        },
+        {
+          "question": "Will an AI renamer move my files into folders?",
+          "answer": "Only if you let it. In this ranking, Zush and nymos rename where files live and never reorganize folders; Floatboat, FilesDesk, and RenameClick can move or sort files but only through separate, approval-gated flows; Renamer.ai's Magic Folders act automatically by design. If moving files is unacceptable, pick a structurally in-place rename workflow or leave organize flows off."
+        },
+        {
+          "question": "Do these tools work on scanned documents, photos, and audio?",
+          "answer": "Yes, to different degrees. Scanned documents are handled through OCR in nymos, Renamer.ai, FilesDesk, and Zush. Photos and images are read by vision models in all seven tools here. Audio is the differentiator: RenameClick transcribes recordings locally, and Zush reads audio content and metadata; other tools mostly use embedded metadata for audio files."
+        },
+        {
+          "question": "Are my files uploaded to the cloud?",
+          "answer": "It depends on the tool and the mode. Floatboat processes everything on-device with zero uploads. RenameClick defaults to a local model but offers optional cloud providers. Zush, FilesDesk, and nymos offer managed cloud, bring-your-own-key, or local options — choose local for confidential documents. Renamer.ai processes in the cloud."
+        },
+        {
+          "question": "Which should a Mac user pick? And which a Windows user?",
+          "answer": "On Mac, nymos is the strictest in-place pick, Zush the most capable overall, and Floatboat the privacy-first choice. On Windows, Zush, FilesDesk, and RenameClick are the strongest content-based options — FilesDesk is cheapest over time with its one-time license, RenameClick is offline-first by default, and Bulk Rename Utility covers the free rules-based case."
+        }
+      ]
+    },
     "/blog/best-ai-scheduling-assistant": {
       "items": [
         {
@@ -840,6 +948,34 @@
         }
       ]
     },
+    "/blog/best-voice-dictation-for-ai-agents": {
+      "items": [
+        {
+          "question": "What is the best voice dictation for AI agents overall?",
+          "answer": "There is no single best product — only best **job shape** fit. For system-wide prompt dictation across Cursor, Claude Code, and messaging apps, **Wispr Flow** is the strongest generalist. For technical vocabulary, **Aqua Voice**. For offline privacy, **Superwhisper**. For long-form document co-authoring with an Agent, **Floatboat Flow Mode** complements those layers."
+        },
+        {
+          "question": "Is Claude Code `/voice` enough without a separate dictation app?",
+          "answer": "Often yes **if** Claude Code is your only agent surface and you use a Claude.ai-account path where `/voice` is supported. It is tuned for coding vocabulary and project hints. The moment you regularly dictate into Cursor, plain terminals, GitHub, or email, a system-wide tool avoids re-learning per-app mic behavior."
+        },
+        {
+          "question": "How is Cursor Agent voice different from Wispr Flow or Aqua Voice?",
+          "answer": "Cursor Agent voice is **scoped to Cursor's Agent / Agents Window** — built-in speech-to-text for controlling Agent, not universal OS input. Wispr Flow and Aqua Voice are **system-wide**: the same push-to-talk works wherever the cursor is, including Cursor, Claude Code, and browsers. Many developers use both: built-in for quick Agent prompts, system-wide for everything else."
+        },
+        {
+          "question": "Is voice dictation the same as voice mode for AI agents?",
+          "answer": "No. **Dictation** converts speech to text in an input field; you still review and submit. **Voice mode** implies a conversational loop where the agent listens and responds continuously. That distinction changes which product you need; see §2.1 and the linked comparison on voice mode versus dictation."
+        },
+        {
+          "question": "Where does Floatboat Flow Mode fit in this ranking?",
+          "answer": "Flow Mode is **not ranked in the top three** because it targets **document-centric co-authoring** inside Floatboat — real-time dictation plus in-place Agent edits, annotation bundles, and version history — rather than OS-wide cursor insertion. It complements Wispr, Aqua, or Superwhisper when your deliverable is a long doc tied to calendar-driven Agent work."
+        },
+        {
+          "question": "Can I use on-device dictation with AI coding agents?",
+          "answer": "Yes. **Superwhisper** runs on-device Whisper-class models with system-wide insertion, including Cursor and Claude Code prompt fields. You trade cloud-streaming convenience for local audio processing. Verify latency on your hardware before standardizing an agent workflow on it."
+        }
+      ]
+    },
     "/blog/browser-ai-agent-security-questions": {
       "items": [
         {
@@ -952,6 +1088,34 @@
         }
       ]
     },
+    "/blog/chatgpt-voice-mode-vs-dictation": {
+      "items": [
+        {
+          "question": "Is ChatGPT Voice Mode the same as dictation?",
+          "answer": "No. Voice Mode (waveform icon) starts a live spoken conversation where ChatGPT responds in audio and the thread accumulates a non-verbatim transcript. Dictation (microphone icon in the composer) converts your speech into **editable text in the message box** that you send like a typed prompt. OpenAI documents them as separate features with different limits and use cases."
+        },
+        {
+          "question": "Which is better for writing long agent prompts?",
+          "answer": "Dictation is usually better. Long agent prompts benefit from review-before-send: fixing names, adding JSON or code blocks, and ensuring constraints are literal. Voice Mode prioritizes conversational flow over a static, editable artifact before the model acts. Many builders dictate the final prompt even after brainstorming aloud in Voice Mode."
+        },
+        {
+          "question": "Does dictation use GPT-Live minutes?",
+          "answer": "Native ChatGPT Dictation does not draw on the separate GPT-Live / Voice Mode allowance described for Live sessions on paid plans. It uses speech-to-text into the composer; sent messages still count against your plan's regular chat limits. Exact policy details can change — confirm on OpenAI's help center for your account tier."
+        },
+        {
+          "question": "Can Voice Mode replace a voice agent for my product?",
+          "answer": "Not by itself. ChatGPT Voice Mode is a consumer conversation feature inside OpenAI's app, with transcripts that may not match spoken words verbatim and without your custom tool runtime. A production **voice agent** typically needs your auth, memory, tool policies, and deployment surface — the architecture is different from either ChatGPT icon alone. Voice Mode can prototype dialogue; dictation often produces the spec; your agent platform executes it."
+        },
+        {
+          "question": "When should I use document dictation instead of ChatGPT's composer?",
+          "answer": "When the deliverable is a multi-section document, a meeting plan with owners, or any file that will be revised across sessions tied to calendar events — not a single chat message. ChatGPT Dictation stops at the composer edge; document-native tools like Floatboat Flow Mode keep voice, edits, and Agent passes in one persistent draft. Pair ChatGPT for open-ended reasoning with document dictation for what must ship on schedule."
+        },
+        {
+          "question": "What happened to Advanced Voice Mode vs GPT-Live?",
+          "answer": "GPT-Live is OpenAI's full-duplex voice model family rolled out broadly in 2026, powering the Live Voice experience with concurrent listen-and-speak behavior. Advanced and Standard Voice options remain for users who want different turn-taking or account-specific visual features. Tapping Voice in updated clients increasingly routes through GPT-Live-class experiences; availability still depends on plan, region, and app version."
+        }
+      ]
+    },
     "/blog/claude-code-non-developers-solo-operators": {
       "items": [
         {
@@ -1033,6 +1197,30 @@
         {
           "question": "Managed Agents or Combo Skills — which should a solo operator choose?",
           "answer": "They serve different points on the same journey rather than competing. Combo Skills — repeatable multi-step workflows composed inside an AI workspace — are usually where a solo operator starts, because there's no API or YAML management. Managed Agents is the fit when you need reliable, reproducible, production-grade execution, such as shipping agent features into a product other people use. It's not either/or — you can move from one to the other as your needs evolve."
+        }
+      ]
+    },
+    "/blog/clean-up-downloads-folder-with-ai": {
+      "items": [
+        {
+          "question": "Will an AI file organizer delete my files?",
+          "answer": "No reputable organizer deletes anything unless you ask it to; the category is built on move-and-rename operations with undo history, because deletion is what users fear. If a tool offers deletion, leave it off, and keep \"never delete, I will review\" in every prompt you write."
+        },
+        {
+          "question": "Does cleaning my Downloads folder with AI upload my files somewhere?",
+          "answer": "It depends on the tool: some organizers run entirely on-device, while others send extracted text or metadata to a cloud model to make sorting decisions. If your Downloads folder holds tax documents or client contracts, check the tool's privacy model before the first run and prefer an on-device option if upload is a deal-breaker."
+        },
+        {
+          "question": "Can the AI actually understand what is inside my files?",
+          "answer": "Most organizers read contents for text-based formats — PDFs with a text layer, Word, Excel, text files — and many read image content for screenshots and photos. The honest limits are scans without a text layer and ambiguous content, so treat proposed names for those with more skepticism."
+        },
+        {
+          "question": "What if the organizer puts something in the wrong place?",
+          "answer": "Undo the run (or restore the single file from history), then fix the prompt rather than the files — \"put PDFs under Invoices by year, not Documents\" — and re-run. Because the tool moves rather than deletes, a wrong destination costs seconds, not a file."
+        },
+        {
+          "question": "How do I keep my Downloads folder clean on Windows and macOS?",
+          "answer": "The protocol is identical on both platforms; only the mechanics differ, like the Downloads location and Finder features on Mac. Start with the sample-first run, add a watch folder or rule so new downloads file themselves, and review for five minutes once a week."
         }
       ]
     },
@@ -1316,6 +1504,30 @@
         }
       ]
     },
+    "/blog/do-ai-file-organizers-upload-your-files": {
+      "items": [
+        {
+          "question": "Does a tool that says it never stores files still upload them?",
+          "answer": "Yes — these are separate claims. \"Not stored\" or \"deleted after processing\" describes what the vendor keeps after the job; \"uploaded\" describes what is transmitted to run the job in the first place. A cloud tool can truthfully promise to delete your file the moment processing finishes while still sending its contents to a model provider for every sort. Read the wording for transmission, not just retention."
+        },
+        {
+          "question": "Does offline mode guarantee that nothing leaves my device?",
+          "answer": "Not by itself. Offline capability proves the tool can run its AI locally, but only if that mode is actually active — a tool that defaults to cloud and offers local as an opt-in still transmits data whenever you forget to switch. Even genuinely local tools make small network calls for license checks and updates, which are not file content. The reliable test is to disconnect from the network and confirm that content-reading features still work."
+        },
+        {
+          "question": "Are free tools more likely to upload my files?",
+          "answer": "Not necessarily — several free and open-source organizers run entirely on local models and upload nothing. The correlation to watch is the opposite one: a free tool with no subscription and no local model has to pay for cloud inference somehow, so scrutinize its privacy page and sub-processor list before assuming its cost model is benign. Price is a weak signal either way; the architecture disclosure is the strong one."
+        },
+        {
+          "question": "Is a local model as accurate as a cloud model for organizing files?",
+          "answer": "For typical cleanup — invoices from a handful of vendors, screenshots, downloads — the accuracy gap is small. On genuinely ambiguous files, or very large batches, cloud models are more accurate and dramatically faster; vendors that offer both modes report local runs taking minutes where cloud takes seconds. If your folder is straightforward and your data is sensitive, local accuracy is usually good enough; if your files are complex and non-sensitive, cloud is the pragmatic choice."
+        },
+        {
+          "question": "Do AI file organizers train their models on my files?",
+          "answer": "The leading tools explicitly commit that your files are not used for training — some state it in their privacy policies and bind their AI subprocessors contractually not to train on API data. That commitment is worth verifying in the vendor's own wording, and it is separate from retention: not being trained on is not the same as not being transmitted or not being logged. Check both sentences in the privacy policy rather than assuming one implies the other."
+        }
+      ]
+    },
     "/blog/dynamic-workflows-build-or-use-workspace": {
       "items": [
         {
@@ -1397,6 +1609,34 @@
         {
           "question": "When does Feishu CLI automation actually pay off for a solo operator?",
           "answer": "It pays off when the workflow runs frequently, the manual version is genuinely tedious, and the failure mode is low-stakes — read-only pipelines that pull context for your own reference are the best starting point. Action-execution workflows that send messages or modify shared records carry more risk, so graduate to them later. You should also enjoy the meta-work of maintaining it."
+        }
+      ]
+    },
+    "/blog/file-organizer-vs-file-renamer-vs-file-sorter": {
+      "items": [
+        {
+          "question": "What is the difference between a file organizer and a file renamer?",
+          "answer": "A file renamer only changes filenames and leaves your folder structure untouched, while a file organizer reads file contents, renames files, and routes them into a folder structure in one operation. If your folders already make sense and only the names are bad, a renamer is the right — and usually cheaper — tool; if both names and structure are unusable, you need an organizer that reads what each file is before deciding where it belongs."
+        },
+        {
+          "question": "Is an AI file sorter the same as an AI file organizer?",
+          "answer": "No. A file sorter groups files using surface signals — filenames, extensions, dates, metadata — while a file organizer reads file contents to make routing decisions. The difference shows up on files that look identical from the outside but differ on the inside, such as `scan_0042.pdf`, an invoice, and a lease: a sorter cannot separate them, an organizer can, because it reads the document. Use a sorter when names and types contain enough information; use an organizer when correct filing depends on knowing what each file is."
+        },
+        {
+          "question": "Should I use a file renamer and a file organizer together?",
+          "answer": "Yes, if your mess genuinely mixes jobs — for example, a folder with obviously named screenshots alongside unnamed PDFs that need reading to file correctly. Sensible layering is a sorter or deterministic rules for files whose names already describe them, plus an organizer for the ambiguous remainder. A more advanced pattern is promoting recurring flows into deterministic rules so they stop consuming per-file AI processing, which is why several organizer vendors ship a rule builder alongside their AI mode."
+        },
+        {
+          "question": "Are rule-based tools like Hazel or File Juggler obsolete now that AI organizers exist?",
+          "answer": "No — rule engines remain the right tool when your folder logic is stable enough to write down, with real advantages: deterministic execution, zero per-file cost, no AI allowance required. Hazel (macOS) and File Juggler (Windows) are mature products for exactly this job. What they cannot do is route files where the deciding information is inside the document and the naming is arbitrary — the case where an organizer that reads content earns its per-file cost. Many power users run a rule engine for stable flows and an AI layer for the long tail, rather than either tool alone."
+        },
+        {
+          "question": "Which form should I buy if I'm worried about an AI moving my files?",
+          "answer": "If you are not comfortable with any tool moving files, buy a rename-only tool that guarantees zero movement — content-aware renamers such as nymos explicitly promise never to reorganize anything. If your discomfort is specifically about *unreviewed* changes rather than moves in principle, an organizer that shows you the complete rename-and-route plan and requires approval before anything moves, with whole-batch undo afterward, addresses the same concern while still saving the manual filing."
+        },
+        {
+          "question": "Do file organizers upload my documents to the cloud?",
+          "answer": "It depends entirely on the tool's default processing path. Many AI organizers process content through a hosted model by default; some offer a local model (Ollama, LM Studio) as a configuration option; a smaller set — including Floatboat's organizer — run classification and renaming entirely on-device with no uploads and full offline operation. Before buying, check where the default path sends your files and whether the local option keeps the same features, particularly if you handle sensitive documents such as contracts, medical records, or client data."
         }
       ]
     },
@@ -2352,6 +2592,34 @@
         }
       ]
     },
+    "/blog/kimi-k3-open-frontier-model": {
+      "items": [
+        {
+          "question": "Is Kimi K3 better than Claude Fable 5 or GPT-5.6 Sol?",
+          "answer": "On specific benchmarks, yes — K3 ranks first on Frontend Code Arena (1,679), ahead of both Fable 5 and GPT-5.6 Sol. On the broader Artificial Analysis Intelligence Index, it ranks third (57) behind Fable 5 and GPT-5.6 Sol. On long-horizon knowledge work (AA-Briefcase), it ranks second (1,527), ahead of GPT-5.6 Sol Max. The honest answer is that K3 is in the same tier as these models — trading blows rather than winning outright — with frontend coding as its clearest advantage."
+        },
+        {
+          "question": "Can I run Kimi K3 locally?",
+          "answer": "K3 is a 2.8-trillion-parameter model. Even with quantization-aware training (MXFP4 weights), running it locally requires server-class GPU infrastructure. A 1.58-bit quantized version would need over 512 GB of RAM just to load. For most developers, the practical access points are the Kimi API or built-in integrations like Floatboat. The open weights release on July 27 will enable community quantization and optimization efforts, but local inference at usable speeds on consumer hardware is unlikely without significant advances in compression techniques."
+        },
+        {
+          "question": "What is Kimi Delta Attention?",
+          "answer": "KDA (Kimi Delta Attention) is a hybrid linear attention mechanism that replaces standard quadratic attention in most layers of the Transformer. In K3, every 4 attention layers follow a 3:1 pattern — 3 KDA layers use linear attention, 1 layer uses full attention. The result is a 75% reduction in KV cache memory usage and up to 6.3x decoding speedup at 1-million-token context lengths, with no loss of retrieval precision at critical points where exact token-level attention is needed."
+        },
+        {
+          "question": "Is Kimi K3 fully open source?",
+          "answer": "Moonshot AI has committed to releasing full model weights by July 27, 2026. The architecture — KDA and AttnRes — was previously published as open research on GitHub. The training code, dataset, and training methodology details are expected in the technical report that accompanies the weight release. At 2.8 trillion parameters, K3 is the largest model for which open weights have been promised. Whether \"open weights\" plus published architecture constitutes \"fully open source\" is a debate the AI community has been having for two years — K3 inherits that ambiguity."
+        },
+        {
+          "question": "Is Kimi K3 available in Floatboat?",
+          "answer": "Yes. Kimi K3 is built into Floatboat with zero configuration — no API key, no routing setup, no external accounts. It appears in the agent workspace model selector alongside DeepSeek, Claude, Gemini, MiniMax, GLM, and the rest of the built-in model roster. For a complete guide on which calendar events match K3's capabilities, see the Kimi K3 in Floatboat walkthrough referenced in the setup section above."
+        },
+        {
+          "question": "When was Kimi K3 released?",
+          "answer": "Kimi K3 was officially released on July 16, 2026, by Moonshot AI. It is available immediately through kimi.com, the Kimi mobile app, Kimi Work desktop client, Kimi Code CLI, and the Kimi API. Full model weights are scheduled for release by July 27, 2026."
+        }
+      ]
+    },
     "/blog/lark-cli-when-to-use-it": {
       "items": [
         {
@@ -2632,6 +2900,30 @@
         }
       ]
     },
+    "/blog/organize-receipts-and-invoices-with-ai": {
+      "items": [
+        {
+          "question": "Is it safe to let an AI read my receipts?",
+          "answer": "It depends entirely on where the reading happens. If the tool processes documents locally on your device, nothing about the receipt content leaves your machine. If the tool is cloud-based, the document — vendor, amounts, account details, any tax identifiers — is sent to a server to be read, so the real question is whether you are comfortable with that provider holding a year of financial documents. Read the product's data-flow description first, and treat financial documents as the files where this decision matters most."
+        },
+        {
+          "question": "Can AI really read scanned and photographed receipts?",
+          "answer": "Yes, with an important caveat. Digital invoices and e-receipts contain a text layer and are read very reliably. Photographed or scanned paper — especially thermal receipts, folds, and handwriting — has no text layer until OCR runs, and accuracy drops with image quality. Treat extraction from scans as a strong draft: preview the proposed filename and verify the amount against the physical receipt or your statement before approving, because a misread number filed away quietly is worse than one that needs a second look."
+        },
+        {
+          "question": "Does this replace QuickBooks or Expensify?",
+          "answer": "No — it sits next to them. A file organizer names, sorts, and archives documents so they are findable and audit-ready; a bookkeeping or expense tool records transactions, categorizes them, and produces reports and returns. You usually want both: the organizer keeps the evidence layer clean, and the bookkeeping tool references that archive or receives clean exports. If you only need auto-categorized deductions with no local archive, an expense app is the simpler starting point."
+        },
+        {
+          "question": "What is the best file name format for receipts?",
+          "answer": "Use a date-first format: `{YYYY-MM-DD}_{Vendor}_{Amount}_{Type}.pdf`, for example `2026-09-14_Acme-Inc_142.83_Receipt.pdf`. The ISO date sorts chronologically on every operating system, the vendor name groups that supplier's history, and the amount lets you match a bank feed without opening files. Add an invoice number when you issue invoices and a currency code when you work in more than one currency."
+        },
+        {
+          "question": "How long should I keep digital receipts?",
+          "answer": "Long enough to support the returns they belong to: per [IRS recordkeeping guidance](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping), records must be kept for as long as they are needed to prove income or deductions on a return, employment-tax records are kept for four years, and the general limitation window runs three to seven years depending on the situation. Many practitioners keep everything for ten years because digital storage is cheap and reconstructing a six-year-old deduction is not. Legible digital copies are accepted as records, so once a receipt is scanned and filed, the paper can go."
+        }
+      ]
+    },
     "/blog/raycast-for-windows-floatboat": {
       "items": [
         {
@@ -2772,6 +3064,86 @@
         }
       ]
     },
+    "/blog/vibe-coding-one-prompt-html-game": {
+      "items": [
+        {
+          "question": "What is vibe coding a game?",
+          "answer": "Vibe coding a game means describing the playable outcome in natural language and letting a coding model generate the implementation, then verifying with a short playtest instead of writing the engine by hand. It is not the same as generating concept art or a design doc — the output must run."
+        },
+        {
+          "question": "Can AI really make a playable HTML game in one prompt?",
+          "answer": "Yes, for scoped demos — especially single-file browser experiences with clear verbs and countable systems. The Floatboat Kimi K3 Art Deco town demo is one public example: walkable isometric streets, day-night cycle, NPCs, volumetric cloud shadows, and collectibles in one HTML file, as shown in [Floatboat's demo](https://www.youtube.com/watch?v=jg2AbjglY0g). Production multiplayer titles still need a real pipeline."
+        },
+        {
+          "question": "Why insist on a single HTML file?",
+          "answer": "Distribution and honesty. A single file is easy to share, easy to archive, and hard for a demo to fake with hidden server magic. It also forces the model to keep dependencies honest."
+        },
+        {
+          "question": "Do I need a Kimi API key to try this in Floatboat?",
+          "answer": "No. Kimi K3 is built into Floatboat alongside the rest of the model roster. You select it in the agent workspace the same way you select any other built-in model."
+        },
+        {
+          "question": "When should I not vibe-code a game this way?",
+          "answer": "Skip this path for networked multiplayer, large asset-driven 3D productions, store-compliance shipping, or anything that needs a dedicated engine team. Use it for prototypes, pitch demos, teaching tools, and interactive microsites where “open the HTML” is a feature."
+        },
+        {
+          "question": "How do I write a prompt that produces a playable game, not just a pretty scene?",
+          "answer": "Order the prompt by constraints: name the player verb first (walk, collect, talk), then the world type (isometric, top-down), then the aesthetic (Art Deco, not “nice city”), then countable systems — N NPCs, N collectibles, a named day-night cycle — and finally single-file HTML delivery. The Art Deco town that shipped as one playable file followed exactly this order, so every missing verb or system gets caught before the model writes code."
+        }
+      ]
+    },
+    "/blog/voice-agent-vs-voice-dictation-for-work": {
+      "items": [
+        {
+          "question": "Is voice dictation just speech-to-text?",
+          "answer": "No. Basic speech-to-text transcribes audio literally; **AI voice dictation for work** often adds a language-model pass that removes fillers, resolves self-corrections, and formats for the active field. The deliverable is still primarily **text you edit**, not a completed workflow—the full ASR-plus-polish stack is defined in §2.1 and the voice-dictation cluster hub."
+        },
+        {
+          "question": "Is a voice agent the same as voice mode in ChatGPT or Claude?",
+          "answer": "Not necessarily. **Voice mode** is an input channel that may behave like dictation, conversational Q&A, or tool-using agency depending on product settings. A **voice agent** implies an intent-to-action loop with tool execution and turn management. Section 2.3 and the voice-mode comparison article in this cluster explain when the channel collapses categories—and when it should not."
+        },
+        {
+          "question": "Can one app be both a dictation tool and a voice agent?",
+          "answer": "Yes, and many will. The taxonomy still matters: know which mode you invoked and which success artifact you expect. Using agent mode to draft a long memo you intend to own line-by-line is usually the wrong tool; using dictation to \"book my flight\" without an action pipeline is equally wrong."
+        },
+        {
+          "question": "What should solo founders buy first?",
+          "answer": "Buy for your **most frequent failure**, not the flashiest demo. If typing speed caps output, start with dictation and compare ranked options for agent-backed writing. If you drown in cross-app busywork, prioritize a voice agent with scoped tools. Most founders eventually use both; sequence by pain, not by hype."
+        },
+        {
+          "question": "Where does Floatboat Flow Mode fit—agent or dictation?",
+          "answer": "Flow Mode is a **document-centric dictation path** with in-file agent collaboration: speech feeds a draft you control, with selection-based rewrites and meeting lines that become plans. It is not a telephony voice agent. Pair it with agent tooling for calendar-side execution rather than treating it as a full replacement for either layer—the Flow Mode announcement post covers the feature set in detail."
+        }
+      ]
+    },
+    "/blog/voice-mode-vs-dictation-for-ai-agents": {
+      "items": [
+        {
+          "question": "Is voice mode just dictation with text-to-speech added on?",
+          "answer": "No. Dictation ends at transcription; you send text through the normal inference path. Voice mode manages a multi-turn spoken session—turn detection, overlapping speech in full-duplex systems, and spoken replies—without requiring a manual Send after each utterance. The downstream model may be similar, but the product contract differs."
+        },
+        {
+          "question": "Can I use Claude Voice Mode inside Cowork or Claude Code?",
+          "answer": "Not as of Anthropic's published documentation. Dictation is available in Cowork and Code; full voice mode is limited to Claude chat apps. Plan workflows accordingly: dictate task briefs in Cowork, use Voice Mode separately for spoken reasoning."
+        },
+        {
+          "question": "Does ChatGPT Dictation count against GPT-Live voice limits?",
+          "answer": "OpenAI states dictation is separate from live voice conversation allowance [<a href=\"https://help.openai.com/en/articles/20001274-chatgpt-voice\" rel=\"nofollow noopener\">Source: OpenAI help</a>]. Heavy users drafting long prompts may prefer dictation partly for quota reasons, not only for editability."
+        },
+        {
+          "question": "Which should coding agents use—voice mode or dictation?",
+          "answer": "Dictation. Terminal and IDE agents expect text prompts and return diffs or logs. Claude Code's `/voice` transcribes into the prompt; it does not speak answers back. Confirm transcripts before running destructive commands."
+        },
+        {
+          "question": "How does this relate to voice agents that run work proactively?",
+          "answer": "Voice mode and dictation are *input channels* inside apps you open. A voice agent adds scheduling, tool orchestration, and persistent goals—closer to an always-on worker than a chat session. Input paradigm still matters once the agent is listening, but the category question is broader than either modality alone."
+        },
+        {
+          "question": "Can I mix voice mode and dictation in one workflow?",
+          "answer": "Yes, sequentially: explore aloud, then dictate a cleaned brief into Cowork or ChatGPT text. Do not assume context transfers automatically between Claude Voice Mode and Cowork projects—copy explicit constraints and names when switching surfaces."
+        }
+      ]
+    },
     "/blog/what-are-claude-managed-agents": {
       "items": [
         {
@@ -2856,6 +3228,30 @@
         }
       ]
     },
+    "/blog/what-is-a-voice-agent": {
+      "items": [
+        {
+          "question": "Is ChatGPT Voice the same as a voice agent?",
+          "answer": "Yes in category terms. OpenAI's GPT-Live-powered ChatGPT Voice is a consumer **voice agent**: you speak, the model responds with speech, maintains context, and can delegate complex work to stronger models. Older \"Advanced Voice Mode\" branding referred to earlier realtime stacks; GPT-Live is the full-duplex generation as of July 2026. Developers building custom products typically use the Realtime API instead of GPT-Live itself."
+        },
+        {
+          "question": "How is a voice agent different from voice dictation?",
+          "answer": "Voice **dictation** converts speech into **text** as the primary artifact — usually inside a document or field — for editing and downstream agent actions. A voice **agent** treats **spoken dialogue** as the primary interface; text may never appear. You might use both in one day: dictate a client memo at your desk, then take a walk and talk through pricing strategy with a voice agent. The categories differ by center of gravity, not by microphone hardware."
+        },
+        {
+          "question": "Can telephony bots be voice agents?",
+          "answer": "They can use voice-agent **models**, but the **product category** differs. Telephony bots optimize phone-network constraints — scripts, disclosures, queueing, CRM writes — while consumer voice agents optimize open-ended dialogue. A Realtime API deployment on a SIP trunk blurs the line in architecture, yet operations teams still evaluate telephony bots on containment and compliance, not on brainstorming quality."
+        },
+        {
+          "question": "Which voice agent is best for solopreneurs?",
+          "answer": "There is no universal winner — job shape decides. GPT-Live emphasizes natural duplex conversation in ChatGPT; Gemini Live leads when you need camera or screen context on Android; Claude Voice Mode lets paid users switch to Opus or Sonnet mid-call for harder reasoning; Grok Voice targets low-latency API use cases if you build software. For desk-bound writing with agent collaboration, consider dictation-first tools instead of extending voice-agent sessions into document production."
+        },
+        {
+          "question": "Does Floatboat include a voice agent?",
+          "answer": "No. Floatboat **Flow Mode** provides **AI voice dictation** into documents with in-place agent editing — a dictation-for-agents pattern, not a speech-in/speech-out conversational agent. For the category definition of that adjacent stack, start with our voice dictation for AI agents hub; this article covers the conversational voice-agent side."
+        }
+      ]
+    },
     "/blog/what-is-agentic-calendar": {
       "items": [
         {
@@ -2881,6 +3277,30 @@
         {
           "question": "Who actually needs an agentic calendar?",
           "answer": "The most natural fit is solo founders and solopreneurs — with no assistant or team, the calendar is their org chart and every meeting is company output. Distributed teams benefit too, because meeting context doesn't travel automatically. In general: if your calendar is the central nervous system of your work, not just a list of appointments, the category is worth your attention. If you could delete the app and still function, it probably isn't."
+        }
+      ]
+    },
+    "/blog/what-is-an-ai-file-organizer": {
+      "items": [
+        {
+          "question": "Is an AI file organizer the same thing as an AI file sorter or a file renamer?",
+          "answer": "No, though vendors use the labels loosely. A file sorter moves or groups files using type, date, keywords, or rules and rarely renames them; a file renamer rewrites filenames from content but leaves files where they are; an AI file organizer reads files and does both — rename and route — in one approved pass. When you read a product page, check which form it describes rather than which label it uses."
+        },
+        {
+          "question": "Does an AI file organizer read the contents of my files, and is that safe?",
+          "answer": "The most capable organizers do read contents — document text, and in vision-capable tools, images and scans — because content is what makes classification accurate on anonymous files. Whether that is safe depends entirely on where that reading happens. On-device tools process content locally and keep it offline; cloud tools process it on a vendor's servers, which is why you should check the vendor's own statements on uploads and retention before pointing any organizer at legal, medical, or financial files."
+        },
+        {
+          "question": "Will an AI file organizer break file links or references when it moves things?",
+          "answer": "Moving files can break paths that other documents, shortcuts, or apps point to, which is why the review step matters more than it looks. Serious tools show the full proposed tree before anything moves, keep an undo history that reverses a batch, and several restrict themselves to renaming in place precisely so paths stay stable. If your project depends on stable absolute paths, prefer a rename-in-place workflow or test on a copied folder first."
+        },
+        {
+          "question": "I already use Hazel or File Juggler. Do I still need an AI file organizer?",
+          "answer": "Not necessarily — and that is a feature, not a shortcoming. Rule engines are deterministic, fast, and free to run, and they remain the right tool for stable, high-volume flows you can express as conditions. Their limit is the anonymous long tail: files whose names and patterns you cannot predict. Many people run both, using rules for the predictable intake and an AI organizer a few times a year for the backlog that rules will never catch."
+        },
+        {
+          "question": "What is the difference between an AI file organizer and AI in Notion, Evernote, or Obsidian?",
+          "answer": "Those tools organize notes and knowledge bases inside their own databases or vaults, not the files on your operating system. The organizing habit is the same, but the substrate is different, and the two do not replace each other: an Obsidian AI assistant tidies your vault, while a file organizer tidies your Desktop, Downloads, and project folders. Keeping both habits is reasonable; expecting either one to do the other's job is where the confusion starts.\n\n---\n\nTry the AI File Organizer on your messiest folder — [Floatboat's file agent](https://floatboat.ai/ai-file-organizer) sorts, renames, and tidies on your own machine, with no uploads and full undo."
         }
       ]
     },
@@ -2993,6 +3413,38 @@
         {
           "question": "How should I choose among the four archetypes?",
           "answer": "Match the archetype to your constraints. Writing code and want the lowest cost per agent turn? Configure a generic harness — Claude Code or Cline — to use V4 Flash for routine work. Want to push DeepSeek's pricing as far as the architecture allows? Evaluate DeepSeek-TUI, whose RLM fan-out can't be replicated in a generic harness. Need an agent inside your team's chat platform? Look at AstrBot or OpenClaw. Prefer a visual interface over a terminal? Start with Cherry Studio or LobeHub."
+        }
+      ]
+    },
+    "/blog/what-is-deepseek-harness": {
+      "items": [
+        {
+          "question": "Is DeepSeek Harness an official DeepSeek product?",
+          "answer": "Yes. DeepSeek Harness is built by DeepSeek's own Harness team, led by Cui Tianyi, who joined the company in March 2026. The team was publicly recruiting for product managers and R&D engineers in May 2026, and the official V4 Pro 0813 benchmark notes confirm the harness is in active internal use. It is now publicly available as an open-source developer preview."
+        },
+        {
+          "question": "When will DeepSeek Harness be released?",
+          "answer": "It already has been. Harness v0.1 (`dsh`) shipped on August 13, 2026 as a developer preview under the MIT license, alongside the official V4 Pro 0813 GA. It can be installed via `npx @deepseek-ai/dsh web` or built from source. The repository explicitly warns that \"THERE WILL BE COMPATIBILITY-BREAKING CHANGES,\" so treat it as a preview rather than a stable release."
+        },
+        {
+          "question": "Is DeepSeek Harness open-source?",
+          "answer": "Yes. Harness v0.1 is MIT-licensed and available on GitHub and npm. It is built on Cordis, a framework designed around composable plugins, so nearly every part of the agent runtime can be swapped out."
+        },
+        {
+          "question": "How is DeepSeek Harness different from Claude Code or Codex?",
+          "answer": "Claude Code and Codex are harnesses built around their respective vendor models. DeepSeek Harness is DeepSeek's equivalent, designed from the ground up around V4's architecture — prefix caching, the million-token context window, and cheap parallel sub-agent execution. Because it is first-party, DeepSeek can tune the harness to the model's strengths and feed what it learns back into model training, something no third-party harness can do."
+        },
+        {
+          "question": "Do I need DeepSeek Harness to use DeepSeek V4 for coding?",
+          "answer": "No. V4 works with any harness that speaks the OpenAI or Anthropic API format — you can point Claude Code, OpenCode, or Cline at `api.deepseek.com` today. The harness is the first-party option, offering deeper integration and better performance on V4's specific features, but it is not a requirement for using the model."
+        },
+        {
+          "question": "What does \"DeepSeek Harness minimal mode\" mean in the benchmark notes?",
+          "answer": "The V4 Pro 0813 changelog states that public benchmark agent tasks were tested using \"DeepSeek Harness minimal mode.\" This indicates DeepSeek used a stripped-down build of its harness to measure the model's agent performance — the same tool it has now open-sourced. It is the strongest public evidence that the harness is functioning software, since the released code is what produced the official scores."
+        },
+        {
+          "question": "Will DeepSeek Harness be open-source?",
+          "answer": "It already is. Harness v0.1 shipped under the MIT license on August 13, 2026, consistent with the V4 models' open-weight approach and the company's emphasis on collaborating with the open-source community."
         }
       ]
     },
@@ -3161,6 +3613,34 @@
         {
           "question": "Why isn't a good prompt enough for a one-person business?",
           "answer": "Because a prompt produces a one-off output, while a one-person company needs systems that run reliably again and again. The constraint isn't access to AI — it's consistency. That's why reusable workflows beat prompting: tools like Floatboat's Combo Skills chain reading, analysis, generation, and refinement into repeatable workflows — closer to building a system than executing a task."
+        }
+      ]
+    },
+    "/blog/what-is-voice-dictation-for-ai-agents": {
+      "items": [
+        {
+          "question": "What is voice dictation for AI agents in one sentence?",
+          "answer": "It is **speech converted to text that serves as the prompt or instruction input for an AI agent**, while the agent's primary response channel remains text, tools, or file edits—not spoken audio."
+        },
+        {
+          "question": "How is voice dictation for AI agents different from voice mode?",
+          "answer": "Voice mode is **two-way spoken dialogue** optimized for conversational turn-taking and audible replies. Voice dictation for AI agents is **one-way speech into a text-native agent** optimized for faster prompt entry; you typically read or review the agent's output rather than hearing it. Products can offer both; the job shapes differ."
+        },
+        {
+          "question": "Is \"agentic dictation\" the same thing?",
+          "answer": "Often not. Marketing uses *agentic dictation* for everything from LLM-polished transcription to voice-triggered workflows. In this glossary, **agentic** describes downstream agent behavior; **dictation for agents** describes the input modality. A product can dictation-polish speech without running autonomous tools, or run agents without voice. Parse claims against the Type A–E taxonomy in §5."
+        },
+        {
+          "question": "Do I need a special mic or GPU?",
+          "answer": "No for most cloud-backed tools—a standard headset or laptop mic suffices in quiet environments. On-device ASR benefits from Apple Silicon or recent Windows NPUs for latency and privacy. The heavier compute is usually on the agent side, not the dictation pass."
+        },
+        {
+          "question": "Can voice dictation replace typing entirely for agent work?",
+          "answer": "Unlikely. Voice excels at **first-draft intent, long instructions, and hands-busy capture**; typing still wins for precise edits, code symbols, and silent environments. Most practitioners mix modalities—Type E for quick fields, Type A or C inside agent workspaces for heavier lifts."
+        },
+        {
+          "question": "Where does Floatboat fit?",
+          "answer": "Floatboat Flow Mode targets **Type C document-centric co-authoring** inside a calendar-driven agent workspace—not a standalone Type E keyboard. Prompt dictation into repo-style agents (Type A) remains the domain of coding harnesses and cross-app pipes like Monologue. Choose based on whether your bottleneck is **files and meetings** or **terminal prompts**."
         }
       ]
     },
@@ -3948,6 +4428,62 @@
         }
       ]
     },
+    "/zh/blog/ai-file-organizer-mac": {
+      "items": [
+        {
+          "question": "Mac 上的 AI 文件整理器会把我的文件搞乱吗？",
+          "answer": "只要你选了一款带审阅步骤和完整撤销的工具、并先在一次性文件夹上测试，就不会。安全的整理器把每个建议的重命名和移动展示成一棵树，批准前不执行任何操作，并保留能回滚整批——而不只是最后一个文件——的历史。原地重命名的风险低于文件夹移动，因为移动会改变应用、alias 和已保存工作流可能指向的路径。"
+        },
+        {
+          "question": "Mac 上的 AI 文件整理器会把我的文件上传到云端吗？",
+          "answer": "完全取决于工具的架构，所以查厂商文档，而不是营销页。Floatboat 这类完全端侧的工具用本地模型分析、什么都不上传；混合工具把 OCR 和索引留在本地、但把提取的文本发给你选定的模型；托管云工具把内容发到厂商的服务器——例如 nymos 的订阅在欧盟境内处理。问清两件事：分析在哪里运行、厂商留存什么。"
+        },
+        {
+          "question": "AI 文件整理器能在 Mac 上离线工作吗？",
+          "answer": "能，前提是模型在本地运行。在 Apple Silicon 上，Floatboat 和 Floxtop 经 Neural Engine 或 GPU 运行分类和命名模型，分析无需联网。云端和混合工具需要网络，除非你配置 Ollama 之类的本地模型。两个注意点：模型下载发生在首次启动，而 iCloud Drive 里被偏移的文件必须先下载下来才能读取内容。"
+        },
+        {
+          "question": "在 Mac 上，原地重命名和移动进文件夹哪个更好？",
+          "answer": "取决于你的文件是干什么用的。原地重命名保住每一条路径、alias 和引用，是依赖现有结构时的安全默认——nymos 和 Zush 的哲学。移动文件会改变路径，而这正是你驯服下载、桌面和截图那堆平铺杂物时想要的，但你要选一款能预览目标位置、并在客户文件夹被埋错时能回滚整批的工具。"
+        },
+        {
+          "question": "为什么整理完之后 Spotlight 找不到我的文件？",
+          "answer": "Spotlight 立即索引文件名，所以描述性重命名几秒内就能被搜到。如果你按扫描件或照片的内容搜索，Spotlight 只能索引它读得到的东西——从未做过 OCR 的纯图片扫描件在内容搜索里始终隐形，图片里的文字不会被自动索引。让文件过一个带 OCR、且保留本地索引的工具，或者让读内容的整理器依据提取的文本重命名，即使像素无法被索引，搜索面也会改善。"
+        },
+        {
+          "question": "我需要什么 macOS 版本才能用 AI 文件整理器？",
+          "answer": "比大多数 roundup 承认的更参差。nymos 从 macOS 14（Sonoma）起步，包括 Zush 和 Floxtop 在内的多数现役工具要求 macOS 15，NameQuick 需要 15.4 或更新，Tidow 目前的版本面向 macOS 26、AI 功能需 M1 或更新芯片。下载前查清门槛，并记住 Apple Silicon 端侧工具在 M 系芯片上表现最佳。"
+        }
+      ]
+    },
+    "/zh/blog/ai-file-organizer-windows": {
+      "items": [
+        {
+          "question": "Windows 上最好的 AI 文件整理器是什么？",
+          "answer": "没有单一最佳，因为这个品类按监督方式分裂。如果你想要一个监视文件夹、自动路由新文件的后台分类器，NudgeFile 这类 Microsoft Store 应用正合此任。如果你偏好开源和完全掌控，hyperfield 的 AI File Sorter 跑本地模型、让你审阅一切。如果你想要内容感知重命名加一次买断，FilesDesk 或独立开发的 AI File Organizer Pro 匹配。Floatboat 的整理器适合想用大白话描述目录树、预览它、端侧运行一切、并带整批撤销的人。先在一个真实文件夹上测试入围者，别信截图。"
+        },
+        {
+          "question": "Windows 上的 AI 文件整理器会上传我的文件吗？",
+          "answer": "取决于架构，差别就写在每款工具的隐私页上。本地优先的工具——带内置 Ollama 处理器的 NudgeFile、离线模式下的 AI File Sorter、以及 Floatboat 的整理器——把文件名和内容留在你的机器上。带云端的工具对把数据发给模型供应商是坦白的；例如 Sortio 默认把文件名和元数据发给你选定的供应商，启用内容功能后才上传文件内容。安装前该问的不是「它是不是 AI」，而是「AI 能看到什么」。"
+        },
+        {
+          "question": "为什么这么多 AI 文件整理器只有 Mac 版？",
+          "answer": "macOS 市场先到。独立开发者为自己的机器开发重命名工具和整理器，而 Mac 用户证明了他们愿意为精致的文件工具付费——截至 2026 年 9 月，nymos 和 Sparkle 都站在 macOS 一侧。Apple Silicon 还给了开发者一块可预测的芯片去优化本地模型。Windows 的硬件长尾更长，本地 AI 更多是配置功课，精致的消费级应用因此更难交付。Windows 原生的供给更小但真实存在，且偏向本地和开源工具。"
+        },
+        {
+          "question": "在 Windows 上跑 AI 文件整理器需要很强的 GPU 或 NPU 吗？",
+          "answer": "不需要，但硬件改变体验。文本分类和命名用小型本地模型在 CPU 上就能接受地跑，这正是好几款工具默认用能在老笔记本上工作的紧凑模型的原因。视觉类工作——给几千张截图和照片分类——才是独立 GPU 或较新 Copilot+ PC 上 NPU 的价值所在。基于 Ollama 的工具让你选模型大小：先从小模型开始，命名质量有要求再上更大的。"
+        },
+        {
+          "question": "整理器会把 OneDrive 同步的文件搞乱吗？",
+          "answer": "只有你不先检查才会。如果你的桌面或文稿经已知文件夹移动被重定向，这些文件夹自动同步，整理器在其中重命名或移动文件会通过 OneDrive 传播这些改动。这通常没问题，但两条规则保证安全：验证工具能正确处理「仅云端」而未下载的文件，并理解「本地」不再意味着「只在这台 PC 上」。任何一条让你不安，就整理一个不在同步范围内的文件夹。"
+        },
+        {
+          "question": "我能撤销 Windows 上一次大规模的 AI 整理吗？",
+          "answer": "预览优先的工具让大规模运行可逆。Floatboat 的整理器一键回滚整批，NudgeFile 保留事务日志、可一键还原任何重命名或路由操作。安全模式到处一样：让预览步骤保持诚实、分批运行，并在第一次大规模动手前对丢不起的文件夹做备份或导出一份文件清单。整块硬盘重组后的撤销，比一个下载文件夹后的撤销是重得多的故事。"
+        }
+      ]
+    },
     "/zh/blog/ai-follow-up-automation": {
       "items": [
         {
@@ -4256,6 +4792,58 @@
         }
       ]
     },
+    "/zh/blog/best-ai-file-organizer": {
+      "items": [
+        {
+          "question": "2026 年最好的 AI 文件整理器是什么？",
+          "answer": "对想要内容感知整理、又有本地选项的大多数 Mac 和 Windows 用户来说，Floatboat AI File Organizer 在我们的加权记分卡上居首，Sortio 以微小差距居次、适合自动化优先的工作流。诚实的答案更窄：「最好」取决于你的文件是否敏感（偏向本地）、是否源源不断（偏向监视文件夹）、你是否拒绝让软件移动它们（偏向原地重命名工具）。所有价格和能力截至 2026 年 9 月对照官方页面核实。"
+        },
+        {
+          "question": "AI 文件整理器能完全离线工作吗？",
+          "answer": "能。Floatboat 的分类器和重命名模型在端侧运行、零上传；AI File Sorter 本地运行内置 GGUF 模型；FilesDesk 终身许可支持经 Ollama、LM Studio 或 vLLM 完全离线；Zush、Sortio、NameQuick 和 NudgeFile 都提供本地或端侧模式。代价是普遍的：一个能干的本地模型是数 GB 的下载，在普通硬件上比云端模型慢。"
+        },
+        {
+          "question": "AI 文件整理器会不会不问一声就移动我的文件？",
+          "answer": "取决于工具的理念，这正是这份排名把预览和撤销单独打分的原因。Floatboat 和 AI File Sorter 展示完整预览、批准前不执行任何操作；Sortio 每次运行都预览并保留撤销历史；NameQuick 提供明确的重命名前审阅模式；NudgeFile 设计上自动化优先；Zush 从不移动文件，因为它原地重命名。任何购买之前，先在复制的文件夹上跑一遍，同时验证预览步骤和撤销路径。"
+        },
+        {
+          "question": "我需要 Mac 版还是 Windows 版？",
+          "answer": "平台比大多数 roundup 承认的更重要，因为这个市场 Mac 偏重、Windows 用户原生选择更少。纯 Windows 用户实际入围的是 NudgeFile、Sortio、FilesDesk、AI File Sorter，以及——现在官网已列出 Windows——NameQuick。Mac 用户拥有本排名的所有工具。混合双机家庭里，FilesDesk 和 Zush 的按设备许可便宜到可以买两次，而 Floatboat 和 Sortio 用一个账号覆盖两个平台。"
+        },
+        {
+          "question": "AI 文件整理器、重命名工具、分类器有什么区别？",
+          "answer": "整理器读取文件内容，然后既重命名又归档进你批准的结构——正是这份排名评估的品类。重命名工具改善文件名，分类器按规则路由文件；市面许多「整理器」其实是两者之一换了马甲，这是买家失望最常见的原因。Zush 和某种程度上 NameQuick 更靠近重命名一端，这就是它们在整理器评分规则下排名如此的原因——尽管它们在各自的本职上非常出色。"
+        },
+        {
+          "question": "哪款 AI 文件整理器最适合扫描件和发票？",
+          "answer": "FilesDesk 和 NameQuick 是扫描件与发票的最强选择。FilesDesk 明确记载了扫描件走 OCR、图片走视觉的流水线，支持 EXIF，$40 一次性自管本地许可低于市场价；NameQuick 把内置 OCR 与命名预设、监视文件夹、以及直接从邮件归档 PDF 发票的能力配成一套。如果你的发票以扫描件形式到达、预算接近零，用同一批文件试用两者，比较纠正率。"
+        }
+      ]
+    },
+    "/zh/blog/best-ai-file-renamer": {
+      "items": [
+        {
+          "question": "AI 文件重命名工具和 AI 文件整理器有什么区别？",
+          "answer": "重命名工具原地改文件名；整理器还要决定文件属于哪里——创建文件夹、按项目、类型或日期移动和分组文件。重命名工具适合文件夹结构没问题、名字没法搜的人；整理器适合文件放错文件夹的人。Floatboat、Zush、FilesDesk 和 RenameClick 两者都做，所以这份排名只评估它们的重命名层。"
+        },
+        {
+          "question": "AI 重命名工具会把我的文件移动进文件夹吗？",
+          "answer": "只有你允许它才会。在这份排名里，Zush 和 nymos 在文件所在之处重命名、从不重组文件夹；Floatboat、FilesDesk 和 RenameClick 可以移动或分类文件，但只通过单独的、需批准的流程；Renamer.ai 的 Magic Folders 按设计自动执行。如果移动文件不可接受，选结构上原地的重命名工作流，或关掉整理流程。"
+        },
+        {
+          "question": "这些工具能处理扫描件、照片和音频吗？",
+          "answer": "能，程度不同。扫描件在 nymos、Renamer.ai、FilesDesk 和 Zush 里走 OCR。照片和图片在全部七款工具里由视觉模型读取。音频是分水岭：RenameClick 本地转录录音，Zush 读取音频内容和元数据；其他工具对音频文件大多只用内嵌元数据。"
+        },
+        {
+          "question": "我的文件会被上传到云端吗？",
+          "answer": "取决于工具和模式。Floatboat 全部在端侧处理、零上传。RenameClick 默认本地模型，但提供可选的云供应商。Zush、FilesDesk 和 nymos 提供托管云、BYOK 或本地选项——机密文档请选本地。Renamer.ai 在云端处理。"
+        },
+        {
+          "question": "Mac 用户该选哪个？Windows 用户呢？",
+          "answer": "Mac 上，nymos 是最严格的原地选择，Zush 是综合能力最强者，Floatboat 是隐私优先之选。Windows 上，Zush、FilesDesk 和 RenameClick 是最强的基于内容的选项——FilesDesk 靠一次性许可长期最便宜，RenameClick 默认离线优先，Bulk Rename Utility 覆盖免费的规则型场景。"
+        }
+      ]
+    },
     "/zh/blog/best-ai-scheduling-assistant": {
       "items": [
         {
@@ -4424,6 +5012,34 @@
         }
       ]
     },
+    "/zh/blog/best-voice-dictation-for-ai-agents": {
+      "items": [
+        {
+          "question": "总体来说，面向 AI Agent 的最佳语音听写是哪个？",
+          "answer": "没有唯一最佳——只有最佳**任务形态**匹配。跨 Cursor、Claude Code 与即时通讯的系统级提示词听写，**Wispr Flow** 是最强通才。技术词汇选 **Aqua Voice**。离线隐私选 **Superwhisper**。与 Agent 协作的长文档共创，**Floatboat Flow Mode** 是上述层的互补。"
+        },
+        {
+          "question": "不装独立听写应用，Claude Code `/voice` 够用吗？",
+          "answer": "通常够，**前提是** Claude Code 是你唯一的 agent 界面，且你走的是支持 `/voice` 的 Claude.ai 账号路径。它为编码词表与项目提示做了调优。一旦你开始常态化地向 Cursor、普通终端、GitHub 或邮件听写，一个系统级工具能免去逐应用重新学习麦克风行为的麻烦。"
+        },
+        {
+          "question": "Cursor Agent 语音与 Wispr Flow、Aqua Voice 有何不同？",
+          "answer": "Cursor Agent 语音**限定在 Cursor 的 Agent / Agents 窗口**——为控制 Agent 而建的内置语音转文本，不是通用 OS 输入。Wispr Flow 与 Aqua Voice 是**系统级**的：同一组按键说话在光标所在的任何地方生效，包括 Cursor、Claude Code 与浏览器。许多开发者两者都用：内置的管快速 Agent 提示词，系统级的管其余一切。"
+        },
+        {
+          "question": "语音听写和面向 AI Agent 的语音模式是一回事吗？",
+          "answer": "不是。**Dictation** 把语音转成输入框里的文本；你仍要审阅并提交。**Voice mode** 意味着 agent 持续监听并回应的对话循环。这个区别决定你该买什么；参见 §2.1 与语音模式 vs 听写的关联对比文章。"
+        },
+        {
+          "question": "Floatboat Flow Mode 在这份排名里处于什么位置？",
+          "answer": "Flow Mode **没有进入前三**，因为它瞄准的是 Floatboat 内的**文档中心人机共创**——实时听写加 Agent 原位编辑、批注包与版本历史——而不是 OS 级的光标插入。当你的交付物是挂接日历驱动 Agent 工作的长文档时，它补充 Wispr、Aqua 或 Superwhisper。"
+        },
+        {
+          "question": "我能用本机听写配合 AI 编码 agent 吗？",
+          "answer": "可以。**Superwhisper** 本机运行 Whisper 级模型并系统级插入，包括 Cursor 与 Claude Code 提示词框。你用本地音频处理换掉了云端流式的便利。把 agent 工作流标准化在其上之前，请先在自己的硬件上验证延迟。"
+        }
+      ]
+    },
     "/zh/blog/browser-ai-agent-security-questions": {
       "items": [
         {
@@ -4536,6 +5152,34 @@
         }
       ]
     },
+    "/zh/blog/chatgpt-voice-mode-vs-dictation": {
+      "items": [
+        {
+          "question": "ChatGPT 语音模式和听写是同一个东西吗？",
+          "answer": "不是。Voice Mode（波形图标）开启实时语音对话，ChatGPT 以音频回应，线程累积的是非逐字转写。Dictation（composer 里的麦克风图标）把你的语音转成**消息框里可编辑的文本**，像打出来的提示词一样发送。OpenAI 把它们记录为限制与用途都不同的两个独立功能。"
+        },
+        {
+          "question": "写长的 agent 提示词，哪个更好？",
+          "answer": "通常听写更好。长 agent 提示词受益于发送前审阅：改名字、加 JSON 或代码块、确保约束逐字精确。Voice Mode 优先对话流畅度，而不是模型行动之前的静态可编辑产物。很多构建者即便在 Voice Mode 里出声完成了头脑风暴，最后仍用听写产出最终提示词。"
+        },
+        {
+          "question": "听写会消耗 GPT-Live 分钟数吗？",
+          "answer": "原生 ChatGPT Dictation 不占用付费套餐 Live 会话的独立 GPT-Live / Voice Mode 额度。它是进 composer 的语音转文本；发送的消息仍计入套餐的常规聊天限制。具体政策可能变化——请按你的账号档位在 OpenAI 帮助中心确认。"
+        },
+        {
+          "question": "Voice Mode 能替代我产品里的 voice agent 吗？",
+          "answer": "不能凭它自己。ChatGPT Voice Mode 是 OpenAI 应用内的消费级对话功能，转写未必与口语逐字一致，也没有你的自定义工具运行时。一个生产级 **voice agent** 通常需要你自己的鉴权、记忆、工具策略与部署面——架构与 ChatGPT 的哪个图标单独都不同。Voice Mode 可以为对话做原型；听写常常产出规格；你的 agent 平台负责执行。"
+        },
+        {
+          "question": "什么时候该用文档听写而不是 ChatGPT 的 composer？",
+          "answer": "当交付物是一份多章节文档、一份带责任人的会议计划，或任何会跨会话修订、挂接日历事件的文件——而不是一条聊天消息。ChatGPT Dictation 止步于 composer 边缘；Floatboat Flow Mode 这类文档原生工具把语音、编辑与 Agent 运行留在同一份持久草稿里。用 ChatGPT 做开放式推理，用文档听写交付必须按期出货的东西。"
+        },
+        {
+          "question": "Advanced Voice Mode 和 GPT-Live 之间发生了什么？",
+          "answer": "GPT-Live 是 OpenAI 在 2026 年大范围推送的全双工语音模型家族，以边听边说行为驱动 Live Voice 体验。Advanced 与 Standard 语音选项仍在，服务想要不同轮替方式或账号专属视觉功能的用户。在更新后的客户端里，点 Voice 越来越多地路由到 GPT-Live 级体验；可用性仍取决于套餐、地区与应用版本。"
+        }
+      ]
+    },
     "/zh/blog/claude-code-non-developers-solo-operators": {
       "items": [
         {
@@ -4617,6 +5261,30 @@
         {
           "question": "Managed Agents 和 Combo Skills，单人创业者该怎么选？",
           "answer": "它们不是竞争，而是同一条路上的不同路段。Combo Skills——在 AI 工作区内编排的可复用多步工作流——通常是单人创业者的起点，不用管 API 或 YAML；需要可靠、可复现、生产级执行（如把 agent 能力嵌进产品）时，Managed Agents 才是对的工具。"
+        }
+      ]
+    },
+    "/zh/blog/clean-up-downloads-folder-with-ai": {
+      "items": [
+        {
+          "question": "AI 文件整理器会删除我的文件吗？",
+          "answer": "有信誉的整理器不会删除任何东西，除非你要求；这个品类建立在「移动加重命名加撤销历史」之上，因为删除正是用户最怕的事。如果一款工具提供删除功能，关掉它，并在你写的每段提示词里保留「绝不删除，由我审阅」。"
+        },
+        {
+          "question": "用 AI 清理下载文件夹，会把我的文件传到某处吗？",
+          "answer": "取决于工具：一些整理器完全在端侧运行，另一些把提取的文本或元数据发给云模型来做分类决策。如果你的下载文件夹里有报税文件或客户合同，第一次运行前先查清工具的隐私模型；如果上传是不可接受的，优先选端侧方案。"
+        },
+        {
+          "question": "AI 真的能读懂我的文件里装着什么吗？",
+          "answer": "多数整理器能读文本类格式的内容——带文本层的 PDF、Word、Excel、文本文件——很多还能读截图和照片的图片内容。诚实的局限是无文本层的扫描件和含糊的内容，对这两类给出的名字要多一分怀疑。"
+        },
+        {
+          "question": "如果整理器把东西放错了地方怎么办？",
+          "answer": "撤销这次运行（或从历史里单独还原那个文件），然后修的是提示词而不是文件——比如「把 PDF 放进按年份的 Invoices，不是 Documents」——再重跑。因为工具是移动而非删除，放错地方损失的是几秒钟，不是一个文件。"
+        },
+        {
+          "question": "在 Windows 和 macOS 上，怎么让下载文件夹长期保持干净？",
+          "answer": "两个平台的流程完全一致，只是机制不同，比如下载文件夹的位置和 Mac 上的 Finder 功能。从「样本优先」的首跑开始，加一个监视文件夹或规则让新下载自己归档，然后每周花五分钟审阅一次。"
         }
       ]
     },
@@ -4900,6 +5568,30 @@
         }
       ]
     },
+    "/zh/blog/do-ai-file-organizers-upload-your-files": {
+      "items": [
+        {
+          "question": "一个声称「从不存储文件」的工具，还会上传它们吗？",
+          "answer": "会——这是两个不同的命题。「不存储」或「处理后删除」描述的是任务完成后厂商保留什么；「上传」描述的是为了让任务运行、一开始就传输了什么。一个云工具可以诚实地承诺处理完成即删除你的文件，同时每次整理都把文件内容发给模型供应商。读措辞时要读传输，而不只是留存。"
+        },
+        {
+          "question": "离线模式能保证什么都不离开我的设备吗？",
+          "answer": "单靠它不能。离线能力证明工具可以本地运行 AI，但前提是那个模式真的处于激活状态——一个默认云端、本地是可选项的工具，在你忘记切换时照样传输数据。即便是真正本地的工具，也会有许可检查和更新之类的小额网络请求，那些不是文件内容。可靠的验证方法是断网，然后确认内容读取功能仍然工作。"
+        },
+        {
+          "question": "免费工具更容易上传我的文件吗？",
+          "answer": "不一定——好几款免费开源整理器完全跑在本地模型上、什么都不上传。真正该警惕的相关性是反过来的：一个既无订阅、又无本地模型的免费工具，总得以某种方式为云推理买单，所以在假定它的成本模式无害之前，细读它的隐私页和子处理商列表。价格两头都是弱信号；架构披露才是强信号。"
+        },
+        {
+          "question": "整理文件时，本地模型和云模型一样准吗？",
+          "answer": "对典型的清理场景——来自少数几个供应商的发票、截图、下载——准确度差距很小。对真正含糊的文件或超大批量，云模型更准也快得多；同时提供两种模式的厂商报告，本地跑以分钟计、云端以秒计。如果你的文件夹简单而数据敏感，本地准确度通常够用；如果文件复杂而不敏感，云是务实之选。"
+        },
+        {
+          "question": "AI 文件整理器会用我的文件训练模型吗？",
+          "answer": "头部工具都明确承诺文件不用于训练——一些写在隐私政策里，并以合同方式约束 AI 子处理商不得用 API 数据训练。这一承诺值得在厂商自己的措辞里核实，而且它与留存是两回事：不被用于训练，不等于不被传输、也不等于不被记录。请在隐私政策里把两句话都查了，不要用一个推出另一个。"
+        }
+      ]
+    },
     "/zh/blog/dynamic-workflows-build-or-use-workspace": {
       "items": [
         {
@@ -4981,6 +5673,34 @@
         {
           "question": "单人做飞书 CLI 自动化，什么时候才划算？",
           "answer": "当流程跑得够频繁、手动版本确实繁琐、而且失败代价很低时——把上下文拉回给自己参考的只读管线是最好的起点；发消息、改共享记录这类执行型流程风险更高，晚点再上。还有一条很实在：你得真的享受这类搭建与维护，否则元工作就变成了对正业的干扰。"
+        }
+      ]
+    },
+    "/zh/blog/file-organizer-vs-file-renamer-vs-file-sorter": {
+      "items": [
+        {
+          "question": "文件整理器和文件重命名工具有什么区别？",
+          "answer": "重命名工具只改文件名、目录结构原封不动；整理器读取文件内容，重命名并把文件路由进文件夹结构，一次操作完成。如果你的文件夹已经讲得通、只有名字不行，重命名工具是正确——通常也更便宜——的选择；如果名字和结构都不可用，你需要一个先读懂每个文件是什么、再决定它属于哪里的整理器。"
+        },
+        {
+          "question": "AI 文件分类器和 AI 文件整理器是一回事吗？",
+          "answer": "不是。分类器用表面信号分组文件——文件名、扩展名、日期、元数据；整理器读取文件内容来做路由决策。差别体现在那些外表相同、内里不同的文件上，比如 `scan_0042.pdf`、一张发票和一份租约：分类器分不开它们，整理器可以，因为它读了文档。当名字和类型已包含足够信息时用分类器；当正确归档取决于知道每个文件是什么时，用整理器。"
+        },
+        {
+          "question": "应该同时使用重命名工具和整理器吗？",
+          "answer": "可以，如果你的混乱真的横跨两种任务——比如一个文件夹里既有名字清楚的截图，又有需要读取才能正确归档的无名 PDF。合理的分层是：名字已经自述的文件交给分类器或确定性规则，含糊的剩余部分交给整理器。更进阶的模式是把重复出现的流程提升为确定性规则，让它们不再消耗单文件 AI 处理——这也是好几家整理器厂商在 AI 模式旁边附带规则构建器的原因。"
+        },
+        {
+          "question": "既然 AI 整理器已经存在，Hazel 或 File Juggler 这类规则工具过时了吗？",
+          "answer": "没有——当你的文件夹逻辑稳定到可以写下来时，规则引擎仍是正确工具，且有实打实的优势：确定性执行、单文件零成本、不需要 AI 额度。Hazel（macOS）和 File Juggler（Windows）正是为这份工作打磨的成熟产品。它们做不到的，是在决定性信息藏在文档内部、命名又随意的场景里路由文件——那正是读内容的整理器赚回单文件成本的地方。很多高级用户为稳定流程跑规则引擎、为长尾跑 AI 层，而不是只用其一。"
+        },
+        {
+          "question": "如果我担心 AI 移动我的文件，该买哪种形态？",
+          "answer": "如果你完全不能接受工具移动文件，买保证零移动的纯重命名工具——nymos 这类感知内容的重命名工具明确承诺绝不重组任何东西。如果你在意的是「未经审阅」的改动，而不是移动本身，那么一个展示完整「重命名加路由」计划、移动前需要批准、事后支持整批撤销的整理器，同样化解这种担忧，还顺便省掉手动归档。"
+        },
+        {
+          "question": "文件整理器会把我的文档上传到云端吗？",
+          "answer": "这完全取决于工具的默认处理路径。很多 AI 整理器默认通过托管模型处理内容；一些提供本地模型（Ollama、LM Studio）作为配置选项；更小的一组——包括 Floatboat 的整理器——完全在端侧运行分类和重命名，零上传、完全离线。购买前，查清默认路径把你的文件发到哪里、本地选项是否保留同样的功能，尤其当你要处理合同、医疗记录或客户数据这类敏感文档时。"
         }
       ]
     },
@@ -5936,6 +6656,34 @@
         }
       ]
     },
+    "/zh/blog/kimi-k3-open-frontier-model": {
+      "items": [
+        {
+          "question": "Kimi K3 比 Claude Fable 5 或 GPT-5.6 Sol 更强吗？",
+          "answer": "在特定基准上，是的——K3 在 Frontend Code Arena 排名第一（1,679 分），领先 Fable 5 与 GPT-5.6 Sol。在更宽口径的 Artificial Analysis Intelligence Index 上，它排第三（57 分），落后于 Fable 5 与 GPT-5.6 Sol。在长程知识工作（AA-Briefcase）上，它排第二（1,527 分），领先 GPT-5.6 Sol Max。诚实的答案是：K3 与这些模型处于同一梯队——互有胜负而非全面胜出——前端编码是它最明确的强项。"
+        },
+        {
+          "question": "我能在本地运行 Kimi K3 吗？",
+          "answer": "K3 是一个 2.8 万亿参数的模型。即便有量化感知训练（MXFP4 权重），本地运行也需要服务器级 GPU 基础设施。一个 1.58-bit 量化版本光是加载就需要超过 512 GB 内存。对多数开发者来说，现实的接入点是 Kimi API 或 Floatboat 这类内置集成。7 月 27 日的开放权重会启动社区量化与优化工作，但除非压缩技术有重大突破，在消费级硬件上以可用速度本地推理的可能性不大。"
+        },
+        {
+          "question": "什么是 Kimi Delta Attention？",
+          "answer": "KDA（Kimi Delta Attention）是一种混合线性注意力机制，在 Transformer 的大多数层中替代标准二次方注意力。在 K3 中，每 4 个注意力层遵循 3:1 模式——3 层 KDA 使用线性注意力，1 层使用全注意力。结果是 KV cache 内存占用降低 75%，在 100 万 token 上下文长度下解码加速最高 6.3 倍，同时在需要精确 token 级注意力的关键节点不损失检索精度。"
+        },
+        {
+          "question": "Kimi K3 完全开源了吗？",
+          "answer": "Moonshot AI 已承诺在 2026 年 7 月 27 日前发布完整模型权重。架构本身——KDA 与 AttnRes——此前已作为开放研究发布在 GitHub 上。训练代码、数据集与训练方法细节预计随权重发布的技术报告一并公开。以 2.8 万亿参数计，K3 是迄今承诺开放权重的最大模型。「开放权重」加公开架构是否算「完全开源」，是 AI 社区争论了两年的话题——K3 也继承了这种模糊性。"
+        },
+        {
+          "question": "Kimi K3 在 Floatboat 里可用吗？",
+          "answer": "可以。Kimi K3 内置于 Floatboat，零配置——无需 API key、无需路由设置、无需外部账号。它出现在 agent 工作区的模型选择器中，与 DeepSeek、Claude、Gemini、MiniMax、GLM 等内置模型并列。关于哪些日历事件匹配 K3 能力的完整指南，参阅上文设置章节提到的 Kimi K3 in Floatboat 详解。"
+        },
+        {
+          "question": "Kimi K3 是什么时候发布的？",
+          "answer": "Kimi K3 由 Moonshot AI 于 2026 年 7 月 16 日正式发布。立即通过 kimi.com、Kimi 手机 App、Kimi Work 桌面客户端、Kimi Code CLI 与 Kimi API 提供。完整模型权重定于 2026 年 7 月 27 日前发布。"
+        }
+      ]
+    },
     "/zh/blog/lark-cli-when-to-use-it": {
       "items": [
         {
@@ -6216,6 +6964,30 @@
         }
       ]
     },
+    "/zh/blog/organize-receipts-and-invoices-with-ai": {
+      "items": [
+        {
+          "question": "让 AI 读我的收据安全吗？",
+          "answer": "完全取决于读取发生在哪里。如果工具在你设备上本地处理文档，收据内容不会离开你的机器分毫。如果工具基于云端，文档——供应商、金额、账户信息、任何税务标识——会被发到一台服务器上去读，所以真正的问题是：你能否接受那家供应商持有你一年的财务文档。先读产品的数据流说明，并把财务文档当作这个决定最要紧的文件。"
+        },
+        {
+          "question": "AI 真能读出扫描和拍照的收据吗？",
+          "answer": "能，但有一个重要前提。数字发票和电子收据带有文本层，读取非常可靠。拍照或扫描的纸品——尤其热敏小票、折痕和手写——在 OCR 跑过之前没有文本层，准确度随图片质量下降。把扫描件的提取当作一份高质量草稿：批准之前预览建议的文件名、对照实体收据或账单核对金额，因为一个被悄悄归档的错误数字，比一个需要再看一眼的数字糟糕得多。"
+        },
+        {
+          "question": "这能取代 QuickBooks 或 Expensify 吗？",
+          "answer": "不能——它与它们并肩工作。文件整理器负责命名、分类和归档文档，让它们可被找到、随时可审计；记账或费用工具记录交易、归类、出报表和申报。你通常两者都要：整理器保持证据层干净，记账工具引用这个档案或接收干净的导出。如果你只需要自动归类的可抵扣项、不需要本地档案，费用类应用是更简单的起点。"
+        },
+        {
+          "question": "收据的最佳文件名格式是什么？",
+          "answer": "用日期在前的格式：`{YYYY-MM-DD}_{Vendor}_{Amount}_{Type}.pdf`，例如 `2026-09-14_Acme-Inc_142.83_Receipt.pdf`。ISO 日期在所有操作系统上都按时间排序，供应商名归拢该供应商的全部历史，金额让你不用打开文件就能和银行流水对上。自己开发票时加发票号，使用多于一种货币时加货币代码。"
+        },
+        {
+          "question": "电子收据应该保存多久？",
+          "answer": "至少要覆盖它们所支撑的申报：按 [IRS 的记录保存指引](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping)，记录必须保存到足以证明申报表上的收入或抵扣为止，雇佣税记录保存四年，一般追诉期视情况为三到七年。许多从业者保存十年，因为数字存储便宜，而重建一笔六年前的抵扣并不便宜。清晰可读的电子副本可作为记录，所以收据一旦扫描归档，纸本就可以处理掉了。"
+        }
+      ]
+    },
     "/zh/blog/raycast-for-windows-floatboat": {
       "items": [
         {
@@ -6356,6 +7128,86 @@
         }
       ]
     },
+    "/zh/blog/vibe-coding-one-prompt-html-game": {
+      "items": [
+        {
+          "question": "什么是以游戏为目标的 vibe coding？",
+          "answer": "以游戏为目标的 vibe coding，是指用自然语言描述可玩的结果、让编码模型生成实现，然后用一次简短的试玩来验证，而不是亲手写引擎。它不同于生成概念图或设计文档——产出必须能跑。"
+        },
+        {
+          "question": "AI 真的能一条提示词做出可玩的 HTML 游戏吗？",
+          "answer": "能，前提是有边界的演示——尤其是动词明确、系统可数的单文件浏览器体验。Floatboat 的 Kimi K3 装饰艺术小镇就是一个公开例子：可漫步的等距街道、昼夜循环、NPC、体积云阴影与可收集物，全在一个 HTML 文件里，见 [Floatboat 演示视频](https://www.youtube.com/watch?v=jg2AbjglY0g)。生产级多人游戏仍然需要真正的管线。"
+        },
+        {
+          "question": "为什么坚持单个 HTML 文件？",
+          "answer": "为了分发，也为了诚实。单文件容易分享、容易归档，演示很难靠隐藏的服务器魔法作假。它也逼着模型保持依赖诚实。"
+        },
+        {
+          "question": "在 Floatboat 里尝试需要 Kimi API key 吗？",
+          "answer": "不需要。Kimi K3 与其他模型一同内置于 Floatboat。在 agent 工作区选中它即可，与选择其他内置模型的方式完全一样。"
+        },
+        {
+          "question": "什么时候不该用这种方式 vibe code 游戏？",
+          "answer": "联网多人游戏、大体量资产驱动的 3D 项目、需要过商店合规的发行，或任何需要专职引擎团队的场景，都请跳过这条路。它适合原型、演示给投资人的 demo、教学工具，以及「打开 HTML 即玩」本身就是卖点的交互式微型网站。"
+        },
+        {
+          "question": "怎么写提示词才能产出可玩的游戏，而不只是漂亮的场景？",
+          "answer": "按约束排序：先写玩家动词（走、收集、对话），再写世界类型（等距、俯视），然后是美学（装饰艺术，而不是「漂亮的城市」），接着是可数系统——N 个 NPC、N 个可收集物、具名的昼夜循环——最后是单文件 HTML 交付。最终以单个可玩文件交付的装饰艺术小镇，正是严格按照这个顺序生成的，因此每个缺失的动词或系统都会在模型写代码之前被暴露出来。"
+        }
+      ]
+    },
+    "/zh/blog/voice-agent-vs-voice-dictation-for-work": {
+      "items": [
+        {
+          "question": "语音听写就是语音转文本吗？",
+          "answer": "不是。基础语音转文本逐字记录音频；**面向工作的 AI 语音听写**通常加一道语言模型流程：去填充词、解开自我修正、按当前字段格式化。交付物仍然主要是**你编辑的文本**，不是一条跑完的工作流——完整 ASR 加润色的栈定义见 §2.1 与语音听写系列枢纽文章。"
+        },
+        {
+          "question": "Voice agent 和 ChatGPT 或 Claude 里的 voice mode 是一回事吗？",
+          "answer": "不一定。**Voice mode** 是一条输入通道，按产品设置不同，可能表现得像听写、像对话问答、或像用工具的能动性。**Voice agent** 意味着带工具执行与轮次管理的意图到行动循环。第 2.3 节和本系列中的 voice mode 对比文章解释了这条通道什么时候会抹平品类——什么时候不该。"
+        },
+        {
+          "question": "一个应用能同时是听写工具和 voice agent 吗？",
+          "answer": "可以，而且很多会是。分类学仍然重要：知道你调用的是哪个模式、你期待哪种成功产物。用 agent 模式起草一份你要逐行拥有的长备忘录，通常是选错了工具；用听写去「帮我订机票」而没有动作管线，同样错。"
+        },
+        {
+          "question": "独立创始人应该先买什么？",
+          "answer": "为你**最高频的失败**买，不为最炫的演示买。如果打字速度卡住了产出，从听写开始，对比 agent 支持写作的排名选项。如果你淹死在跨应用琐事里，优先选一个带限定范围工具的 voice agent。多数创始人最终两者都用；按痛点排序，不按热度排序。"
+        },
+        {
+          "question": "Floatboat Flow Mode 属于哪边——agent 还是听写？",
+          "answer": "Flow Mode 是一条**文档中心听写路径**，带文件内 agent 协作：语音喂给你掌控的草稿，支持基于选区的改写与会谈行变成计划。它不是电话型 voice agent。把它与管日历侧执行的 agent 工具配对，而不是把它当作任何一层的完全替代——Flow Mode 公告文章详细覆盖了功能集。"
+        }
+      ]
+    },
+    "/zh/blog/voice-mode-vs-dictation-for-ai-agents": {
+      "items": [
+        {
+          "question": "Voice mode 只是加了文字转语音的 dictation 吗？",
+          "answer": "不是。Dictation 到转写为止；你通过正常的推理路径发送文本。Voice mode 管理一场多轮语音会话——轮次检测、全双工系统里的语音重叠、语音回复——不要求每次发言后手动点发送。下游模型可能相似，但产品契约不同。"
+        },
+        {
+          "question": "我能在 Cowork 或 Claude Code 里用 Claude Voice Mode 吗？",
+          "answer": "按 Anthropic 已发布的文档，不能。Cowork 与 Code 里有听写；完整的 voice mode 仅限 Claude 聊天应用。据此规划工作流：在 Cowork 里听写任务简报，把 Voice Mode 留给口语推理。"
+        },
+        {
+          "question": "ChatGPT Dictation 会计入 GPT-Live 语音额度吗？",
+          "answer": "OpenAI 说明听写与实时语音对话额度相互独立 [<a href=\"https://help.openai.com/en/articles/20001274-chatgpt-voice\" rel=\"nofollow noopener\">来源：OpenAI 帮助</a>]。经常要起草长提示词的重度用户偏好听写，一半是为了配额，不只是为了可编辑性。"
+        },
+        {
+          "question": "编码 agent 该用语音模式还是听写？",
+          "answer": "听写。终端与 IDE agent 期待文本提示词、返回 diff 或日志。Claude Code 的 `/voice` 把语音转写进提示词；它不会把答案念出来。运行破坏性命令前，先确认转写稿。"
+        },
+        {
+          "question": "这与主动干活的 voice agent 有什么关系？",
+          "answer": "Voice mode 与 dictation 是你打开的应用内部的*输入通道*。Voice agent 增加了调度、工具编排与持久目标——更像一个常驻工人，而不是一场聊天。agent 开始监听之后输入范式仍然重要，但品类问题比任何单一模态都更宽。"
+        },
+        {
+          "question": "我能在同一个工作流里混用 voice mode 和 dictation 吗？",
+          "answer": "可以，按顺序来：先出声探索，再把整理好的简报听写进 Cowork 或 ChatGPT 文本。不要假设上下文会在 Claude Voice Mode 与 Cowork 项目之间自动迁移——切换界面时，显式复制约束与人名。"
+        }
+      ]
+    },
     "/zh/blog/what-are-claude-managed-agents": {
       "items": [
         {
@@ -6440,6 +7292,30 @@
         }
       ]
     },
+    "/zh/blog/what-is-a-voice-agent": {
+      "items": [
+        {
+          "question": "ChatGPT Voice 就是 voice agent 吗？",
+          "answer": "按品类说，是的。由 GPT-Live 驱动的 ChatGPT Voice 是消费级 **voice agent**：你说话，模型以语音回应、维持上下文，并能委托复杂工作给更强的模型。旧的「Advanced Voice Mode」品牌指更早的实时技术栈；截至 2026 年 7 月，GPT-Live 是全双工一代。构建自定义产品的开发者通常用 Realtime API，而不是 GPT-Live 本身。"
+        },
+        {
+          "question": "Voice agent 与语音听写有什么不同？",
+          "answer": "语音**听写**把语音转成**文本**作为主要产物——通常在文档或输入框里——供编辑与下游 agent 动作。语音 **agent** 把**口语对话**当作主界面；文本可能从不出现。你可能一天两者都用：在桌前口述客户备忘录，然后出去散步、和 voice agent 把定价策略聊透。两个品类之别在重心，不在麦克风硬件。"
+        },
+        {
+          "question": "电话机器人可以是 voice agent 吗？",
+          "answer": "它们可以用 voice agent 的**模型**，但**产品品类**不同。电话机器人优化电话网络约束——脚本、话术、排队、CRM 写入——而消费级 voice agents 优化开放式对话。架在 SIP 中继上的 Realtime API 部署在架构上模糊了界线，但运营团队评估电话机器人仍看问题解决率与合规，不看头脑风暴质量。"
+        },
+        {
+          "question": "对独立创业者，哪个 voice agent 最好？",
+          "answer": "没有万能赢家——任务形态说了算。GPT-Live 强调 ChatGPT 里自然的双工对话；需要在 Android 上带摄像头或屏幕上下文时，Gemini Live 领先；Claude Voice Mode 让付费用户在通话中途切到 Opus 或 Sonnet 处理更难的推理；如果你自己开发软件，Grok Voice 瞄准低延迟 API 场景。桌面写作为主、要与 agent 协作的场景，考虑听写优先的工具，而不是把 voice agent 会话硬伸进文档生产。"
+        },
+        {
+          "question": "Floatboat 包含 voice agent 吗？",
+          "answer": "不包含。Floatboat **Flow Mode** 提供进文档的 **AI 语音听写**，带原位 agent 编辑——是「给 agent 的听写」模式，不是语音进/语音出的对话 agent。想了解那个相邻品类的定义，从我们的面向 AI Agent 的语音听写枢纽文章读起；本文覆盖的是对话式 voice agent 那一侧。"
+        }
+      ]
+    },
     "/zh/blog/what-is-agentic-calendar": {
       "items": [
         {
@@ -6465,6 +7341,30 @@
         {
           "question": "到底谁需要 Agentic Calendar？",
           "answer": "最天然的受众是独立创始人与单人创业者——没有助理也没有团队，日历就是你的组织架构图，每场会议都是公司产出。分布式团队同样受益，因为会议周围的上下文不会自动跟着人走。更宽泛地说：日历是工作的中枢神经系统、而不只是一串约见，就值得关注；删掉日历也能正常运转，则未必适合你。"
+        }
+      ]
+    },
+    "/zh/blog/what-is-an-ai-file-organizer": {
+      "items": [
+        {
+          "question": "AI 文件整理器和 AI 文件分类器、文件重命名工具是一回事吗？",
+          "answer": "不是，尽管厂商用词很随意。文件分类器按类型、日期、关键词或规则移动或分组文件，很少重命名；重命名工具依据内容改写文件名，但文件原地不动；AI 文件整理器读取文件，在一次获批的操作里完成两件事——重命名和归位。读产品页时，看它描述的是哪种形态，而不是它贴的是哪个标签。"
+        },
+        {
+          "question": "AI 文件整理器会读取我文件的内容吗？这安全吗？",
+          "answer": "能力最强的整理器确实会读内容——文档文本，在具备视觉能力的工具里还有图片和扫描件——因为内容正是让「无名文件」分类变准的东西。它是否安全，完全取决于读取发生在哪里。端侧工具在本地处理内容、保持离线；云端工具在厂商服务器上处理，所以把任何整理器指向法律、医疗或财务文件之前，先查厂商自己关于上传和留存的声明。"
+        },
+        {
+          "question": "AI 文件整理器移动文件时，会不会弄断链接或引用？",
+          "answer": "移动文件可能弄断其他文档、快捷方式或应用指向的路径，这正是「审阅」步骤比看上去更重要的原因。严肃的工具会在任何文件移动前展示完整建议树，保留可回滚一批操作的撤销历史，还有一些工具干脆只做原地重命名，就是为了让路径保持稳定。如果你的项目依赖稳定的绝对路径，优先选择原地重命名的工作流，或者先在复制的文件夹上测试。"
+        },
+        {
+          "question": "我已经在用 Hazel 或 File Juggler 了，还需要 AI 文件整理器吗？",
+          "answer": "不一定——而这是特性，不是缺陷。规则引擎确定性强、速度快、运行免费，对能写成条件的稳定大批量流程仍是正确工具。它们的极限是「无名长尾」：那些你无法预测名字和模式的文件。很多人的做法是两者并用：可预测的入口交给规则，一年几次用 AI 整理器清理规则永远接不住的积压。"
+        },
+        {
+          "question": "AI 文件整理器和 Notion、Evernote、Obsidian 里的 AI 有什么区别？",
+          "answer": "那些工具整理的是自己数据库或 vault 里的笔记和知识库，不是你操作系统上的文件。整理的习惯是同一个，但底层对象不同，两者不能互相替代：Obsidian 的 AI 助理整理你的 vault，文件整理器整理你的桌面、下载和项目文件夹。两个习惯都保留是合理的；指望任何一个去做另一个的工作，混乱就从这里开始。\n\n---\n\n在你最乱的文件夹上试试 AI File Organizer —— [Floatboat 的文件 Agent](https://floatboat.ai/ai-file-organizer) 在你自己的电脑上完成分类、重命名和整理：零上传，支持完整撤销。"
         }
       ]
     },
@@ -6577,6 +7477,38 @@
         {
           "question": "四种原型该怎么选？",
           "answer": "按你的约束对号入座。写代码、想要最低的每回合成本，就把 Claude Code 或 Cline 这类通用宿主框架配置成例行任务用 V4 Flash；想把 DeepSeek 定价允许的架构潜力推到极限，就评估 DeepSeek-TUI——它的 RLM 扇出在通用框架里复现不了；需要团队聊天平台里的 Agent，看 AstrBot 或 OpenClaw；想要图形界面、不想碰终端，就从 Cherry Studio 或 LobeHub 开始。"
+        }
+      ]
+    },
+    "/zh/blog/what-is-deepseek-harness": {
+      "items": [
+        {
+          "question": "DeepSeek Harness 是 DeepSeek 官方产品吗？",
+          "answer": "是的。DeepSeek Harness 由 DeepSeek 自家 Harness 团队打造，负责人崔添翼于 2026 年 3 月加入公司。团队在 2026 年 5 月公开招聘产品经理与研发工程师，官方 V4 Pro 0813 的基准说明也确认 harness 正在内部积极使用。它现在已作为开源开发者预览版公开发布。"
+        },
+        {
+          "question": "DeepSeek Harness 什么时候发布？",
+          "answer": "已经发布了。Harness v0.1（`dsh`）于 2026 年 8 月 13 日以 MIT 协议的开发者预览版发布，与官方 V4 Pro 0813 正式版同步。可通过 `npx @deepseek-ai/dsh web` 安装或从源码构建。仓库明确警告「THERE WILL BE COMPATIBILITY-BREAKING CHANGES」，所以请把它当作预览版而非稳定版对待。"
+        },
+        {
+          "question": "DeepSeek Harness 是开源的吗？",
+          "answer": "是的。Harness v0.1 采用 MIT 协议，可在 GitHub 与 npm 获取。它构建在 Cordis 之上——一个围绕可组合插件设计的框架，agent 运行时的几乎所有部分都可以替换。"
+        },
+        {
+          "question": "DeepSeek Harness 与 Claude Code 或 Codex 有什么不同？",
+          "answer": "Claude Code 与 Codex 是围绕各自供应商模型构建的 harness。DeepSeek Harness 是 DeepSeek 的对应物，从零围绕 V4 的架构设计——前缀缓存、百万 token 上下文窗口、高性价比的并行子 agent 执行。因为它是第一方的，DeepSeek 可以针对模型强项调优 harness，并把运行中学到的东西回馈进模型训练——这是任何第三方 harness 都做不到的。"
+        },
+        {
+          "question": "用 DeepSeek V4 写代码必须要 DeepSeek Harness 吗？",
+          "answer": "不需要。V4 可以搭配任何说 OpenAI 或 Anthropic API 格式的 harness——今天你就可以把 Claude Code、OpenCode 或 Cline 指向 `api.deepseek.com`。harness 是第一方选项，在 V4 的具体特性上提供更深的集成与更好的性能，但使用模型并不以它为前提。"
+        },
+        {
+          "question": "基准说明里的「DeepSeek Harness minimal mode」是什么意思？",
+          "answer": "V4 Pro 0813 的更新日志写明，公开基准的 agent 任务使用「DeepSeek Harness 极简模式」测试。这说明 DeepSeek 用其 harness 的一个精简构建来测量模型的 agent 性能——也就是如今开源的同一工具。这是 harness 作为可运行软件最有力的公开证据，因为发布出来的代码正是产出官方成绩的代码。"
+        },
+        {
+          "question": "DeepSeek Harness 会开源吗？",
+          "answer": "已经开源了。Harness v0.1 于 2026 年 8 月 13 日以 MIT 协议发布，与 V4 系列模型的开放权重路线以及公司强调与开源社区协作的立场一致。"
         }
       ]
     },
@@ -6745,6 +7677,34 @@
         {
           "question": "为什么对一人公司来说，光有好的 prompt 不够？",
           "answer": "因为 prompt 产出的是「一次性结果」，而一人公司需要的是能反复可靠运行的系统。约束不在于用不用得上 AI，而在于一致性。这正是可复用工作流胜过 prompt 的原因：像 Floatboat 的 Combo Skills 把读文件、分析、生成、打磨串成可重复的工作流——更接近「搭一个系统」，而不是「执行一个任务」。"
+        }
+      ]
+    },
+    "/zh/blog/what-is-voice-dictation-for-ai-agents": {
+      "items": [
+        {
+          "question": "用一句话说，什么是面向 AI Agent 的语音听写？",
+          "answer": "它是**把语音转成文本、作为 AI agent 的提示词或指令输入**，而 agent 的主要回应通道仍然是文本、工具或文件编辑——不是语音音频。"
+        },
+        {
+          "question": "面向 AI Agent 的语音听写与 voice mode 有什么不同？",
+          "answer": "Voice mode 是**双向语音对话**，优化对话轮替与可听见的回复。面向 AI Agent 的语音听写是**单向语音进文本原生 agent**，优化更快地输入提示词；你通常阅读或审阅 agent 的输出，而不是听它说。产品可以两者都提供，但任务形态不同。"
+        },
+        {
+          "question": "「Agentic dictation」是同一回事吗？",
+          "answer": "往往不是。营销把 *agentic dictation* 用于从 LLM 润色转写到语音触发工作流的一切。在本词条中，**agentic** 描述下游 agent 行为；**听写给 agent** 描述输入模态。一个产品可以只润色听写文本而不运行自主工具，也可以运行 agent 而没有语音。请对照第 5 节的 A–E 分类解析这些宣称。"
+        },
+        {
+          "question": "需要特殊的麦克风或 GPU 吗？",
+          "answer": "对多数云端工具不需要——安静环境里一副标准耳机或笔记本麦克风就够了。本机 ASR 则受益于 Apple Silicon 或近几年的 Windows NPU，换取更低延迟与更好隐私。更重的算力通常在 agent 一侧，而不是听写这一趟。"
+        },
+        {
+          "question": "语音听写能完全取代 agent 工作中的打字吗？",
+          "answer": "不太可能。语音擅长**意图的初稿、长指令、双手忙碌时的捕获**；打字在精确编辑、代码符号与安静环境上仍然胜出。多数实践者混用模态——快速输入框用 E 类，重活儿在 agent 工作区里用 A 或 C 类。"
+        },
+        {
+          "question": "Floatboat 在其中处于什么位置？",
+          "answer": "Floatboat Flow Mode 瞄准的是**C 类文档中心共创**，运行在日历驱动的 agent 工作区里——不是独立的 E 类键盘。向仓库型 agent 的提示词听写（A 类）仍是编码 harness 与 Monologue 这类跨应用管线的领域。选择依据是你的瓶颈在**文件与会议**，还是在**终端提示词**。"
         }
       ]
     },
