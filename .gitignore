@@ -39,3 +39,6 @@ next-env.d.ts
 # python
 __pycache__/
 *.pyc
+
+# Image Generator per-cover prompt records (provenance lives in the floatboat context repo registry)
+public/blog/images/**/*.meta.json
