@@ -3476,6 +3476,30 @@
         }
       ]
     },
+    "/blog/what-is-jev-model": {
+      "items": [
+        {
+          "question": "Is Jev really hallucination-free?",
+          "answer": "Mostly yes, by construction, with a boundary worth understanding. Because Jev never generates free-form text, the classic hallucination failure — fluent, confident, wrong prose — cannot occur; it returns typed values from a predefined output space. What can still go wrong is a confidently wrong decision: the model classifies your input into the wrong route or assigns a miscalibrated score. TypeSafe's answer is RLCD training that calibrates confidence against real outcomes, so low-confidence decisions are flagged for escalation rather than acted on. Whether that calibration survives unusual inputs is the main open question the community has raised."
+        },
+        {
+          "question": "Is Jev just a classifier with better marketing?",
+          "answer": "The Hacker News thread contains a serious version of this objection, and it deserves the serious answer. A traditional classifier requires labeled training data for the specific decision you are building; Jev's pitch is that one model handles open-ended decision types defined at runtime, with calibrated probabilities as the training objective. Whether that generalizes beyond the demo cases — and whether its probabilities stay calibrated on inputs far from its training distribution — is what separates \"new model class\" from \"repackaged classifier.\" The honest position as of launch week: the method is genuinely different, the generalization evidence is not yet public."
+        },
+        {
+          "question": "How much cheaper is Jev than using an LLM?",
+          "answer": "The numbers depend on the baseline, so here they are side by side. TypeSafe's own workflow comparison claims a decision task at $0.000081 versus $0.013880 on a frontier LLM — the 444.6x figure — with API input pricing at $42 per billion tokens, which it says is 238x below Claude Fable 5.1's rate. Independent writeups report more conservative ranges of 40–400x on cost depending on the LLM and task used for comparison. The direction of the claim is not disputed by anyone; the multiplier you quote should name its baseline."
+        },
+        {
+          "question": "Can Jev replace an LLM in my agent workflow?",
+          "answer": "Replace, no — complement, plausibly. Jev handles the decision-shaped calls: routing, classification, scoring, validation, the moments where your workflow asks a question with a bounded answer set. The generation-shaped calls — drafting, summarizing, synthesizing anything a human will read — still need a generative model, and Jev cannot review its own outputs or explain its reasoning in prose. A practical agent stack in this model uses a frontier LLM for reasoning and writing, an execution harness to turn reasoning into finished work, and a decision layer for the high-volume judgment calls in between."
+        },
+        {
+          "question": "Who is behind Jev?",
+          "answer": "TypeSafe AI, a San Francisco company founded in 2024 by Diogo Almeida, a former OpenAI researcher credited as a co-inventor of RLHF. The company came out of stealth with the Jev launch on September 15, 2026, announcing a $40 million seed round led by DCVC. Note that the name collides with the older Typesafe Scala company, which is unrelated."
+        }
+      ]
+    },
     "/blog/what-is-llm-wiki": {
       "items": [
         {
@@ -7537,6 +7561,30 @@
         {
           "question": "豆包工作和 Floatboat 有什么区别？",
           "answer": "两者都能「干活」，但**默认上下文和触发方式不同**。豆包工作：你发起任务，团队版读飞书组织数据，强项是飞书内交付与国内桌面 GUI。Floatboat：日历事件触发 Agent 自动准备与执行（会前、deadline、跟进），强项是 [Proactive Agent OS](</>) 与跨日历集成。飞书团队选豆包工作；独立创业者、跨国日历用户可对比 [Floatboat](</>)。"
+        }
+      ]
+    },
+    "/zh/blog/what-is-jev-model": {
+      "items": [
+        {
+          "question": "Jev 真的不会产生幻觉吗？",
+          "answer": "基本是的，而且是构造上如此，但有一条值得理解的边界。因为 Jev 从不生成自由形式的文本，经典的幻觉失败——流畅、自信、错误的散文——不可能发生；它从一个预定义的输出空间返回 typed value。仍可能出错的，是自信但错误的决策：模型把你的输入分进错误的路由，或给出一个未校准的分数。TypeSafe 的答案是 RLCD 训练——让置信度针对真实结果校准，于是低置信度的决策会被标记升级，而不是被直接执行。这种校准能否在异常输入下存活，是社区提出的主要开放问题。"
+        },
+        {
+          "question": "Jev 只是一个营销做得更好的分类器吗？",
+          "answer": "Hacker News 帖子里有这个反对意见的严肃版本，它值得一个严肃的回答。传统分类器需要针对你要构建的那个具体决策准备标注训练数据；Jev 的卖点是单个模型即可处理运行时定义的开放式决策类型，并把校准概率作为训练目标。它能否泛化到演示案例之外——以及它的概率在远离训练分布的输入上是否保持校准——正是区分「新模型类目」与「重新包装的分类器」的分界线。截至发布周，诚实的立场是：方法确实不同，泛化的证据尚未公开。"
+        },
+        {
+          "question": "Jev 比使用 LLM 便宜多少？",
+          "answer": "数字取决于基线，所以这里把它们并排放好。TypeSafe 自己的工作流对比宣称一个决策任务花 $0.000081，对比 frontier LLM 上的 $0.013880——即 444.6x 这个数字——API 输入定价为每十亿 token $42，公司称这比 Claude Fable 5.1 的费率低 238x。独立报道给出的区间更为保守，视对比所用 LLM 与任务而定，成本上约为 40–400x。主张的方向没有任何人争议；你引用的那个倍数，应该注明它的基线。"
+        },
+        {
+          "question": "Jev 能取代我 agent 工作流中的 LLM 吗？",
+          "answer": "取代，不行；互补，说得通。Jev 处理决策形状的调用：路由、分类、评分、校验——你的工作流问出一个答案集有界的问题的那些时刻。生成形状的调用——起草、摘要、综合任何要给人读的东西——仍然需要生成式模型，而 Jev 无法复核自己的输出，也无法用文字解释自己的推理。在这种框架下，一个实用的 agent 技术栈是：frontier LLM 负责推理与写作，执行 Harness 把推理变成成品工作，决策层负责中间那些高流量的判断调用。"
+        },
+        {
+          "question": "Jev 背后是谁？",
+          "answer": "TypeSafe AI，一家由 Diogo Almeida 于 2024 年创立的旧金山公司；Almeida 是前 OpenAI 研究员，被誉为 RLHF 的联合发明人。公司随 Jev 于 2026 年 9 月 15 日发布走出隐身模式，宣布了由 DCVC 领投的 $40M 种子轮。注意这个名字与更早的 Typesafe Scala 公司撞名，两者并无关联。"
         }
       ]
     },
