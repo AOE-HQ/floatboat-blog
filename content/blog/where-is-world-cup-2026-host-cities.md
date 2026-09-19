@@ -30,7 +30,7 @@ That structure makes the host-city question more important than usual. A fan pla
 
 The official host-city concept is also different from a simple list of stadiums. Some venues are identified by metro area rather than only city name, such as the San Francisco Bay Area and New York/New Jersey. That is why this guide treats host cities, stadiums, and travel regions together.
 
-**Source:** [FIFA — World Cup 2026 host cities](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
+[FIFA — 2026 世界杯主办城市官方页面](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
   2. World Cup 2026 Host Cities and Stadiums
 

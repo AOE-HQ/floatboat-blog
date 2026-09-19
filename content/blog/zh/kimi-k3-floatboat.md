@@ -16,7 +16,7 @@ draft: false
 
   * 三项能力直接对应日历驱动（Calendar-Driven）的 Agent 工作：**100 万上下文**支撑多文档会议准备（过去需要串行调用和中间摘要），**常开最大推理**应对复杂综合任务（第一遍答案很少是对的），**原生视觉理解**用于前后端设计与视觉反馈闭环（代码和截图一起迭代）。
 
-  * Kimi 自己的技术博客对 K3 的定位说得很清楚：综合表现仍落后于 Claude Fable 5 和 GPT-5.6 Sol，但 K3 在其评测套件上展现了前沿级表现 [Source: <a href="<https://www.kimi.com/blog/kimi-k3>" rel="nofollow noopener">Kimi K3 Technical Blog</a>]。在 Arena AI 的 Frontend Code Arena——一个按人类偏好给前端代码生成打分的第三方榜单——K3 于 2026 年 7 月 17 日的快照中以 1,679 分登顶榜首 [Source: <a href="<https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems>" rel="nofollow noopener">VentureBeat</a>]。
+  * Kimi 自己的技术博客对 K3 的定位说得很清楚：综合表现仍落后于 Claude Fable 5 和 GPT-5.6 Sol，但 K3 在其评测套件上展现了前沿级表现，per [Kimi K3 Technical Blog](https://www.kimi.com/blog/kimi-k3)。在 Arena AI 的 Frontend Code Arena——一个按人类偏好给前端代码生成打分的第三方榜单——K3 于 2026 年 7 月 17 日的快照中以 1,679 分登顶榜首，per [VentureBeat](https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems)。
 
   * 本文把 K3 的能力对应到你日常处理的具体日历事件上，展示分层模型策略在真实单人创业者负载下要花多少钱，也讲清切换前你该知道的局限。
 
@@ -28,7 +28,7 @@ Kimi K3 支持 100 万 token 上下文窗口，并带原生视觉理解——能
 
 模型现已通过 [Kimi.com](http://Kimi.com)、Kimi Work、Kimi Code 和 Kimi API 提供。Moonshot 称 K3 为「全球首个开源 3T 级模型」，并承诺在 2026 年 7 月 27 日前发布完整模型权重。更多技术细节将出现在后续的 Kimi K3 技术报告中。
 
-Kimi 官方文档对 K3 相对专有模型的位置讲得很直白：「虽然综合表现仍落后于最强的专有模型 Claude Fable 5 和 GPT 5.6 Sol，Kimi K3 在我们的评测套件上展现了前沿级表现，持续优于其他被测模型。」[Source: <a href="<https://www.kimi.com/blog/kimi-k3>" rel="nofollow noopener">Kimi K3 Technical Blog</a>]
+Kimi 官方文档对 K3 相对专有模型的位置讲得很直白：「虽然综合表现仍落后于最强的专有模型 Claude Fable 5 和 GPT 5.6 Sol，Kimi K3 在我们的评测套件上展现了前沿级表现，持续优于其他被测模型。」，per [Kimi K3 Technical Blog](https://www.kimi.com/blog/kimi-k3)
 
   2. 为什么「内置」很重要——无需 API Key，无需配置
 
@@ -36,7 +36,7 @@ Floatboat 是一个主动式 Agent OS，日历在其中充当工作的运行时�
 
 「集成」与「内置」的实际差别在于：一个让你停留在配置模式，另一个让你待在流程里。在需要自己配置 K3 的平台上，「何时用 K3」是开工前就要做好的技术决策。在 Floatboat 上，你打开任意 Agent 流水线的模型选择器，K3 与其他模型并排列着，选中即可——或者让 Auto Mode 在事件复杂度需要时自动把活路由给 K3。
 
-Floatboat 支持的分层模型思路——按任务复杂度把不同类型的事件路由给不同模型——用几次就会变得顺手。不是每个日历事件都需要 K3 的最大推理。Kimi 模型家族天然构成三级栈：**K3**负责复杂的客户评审与多文档综合，**K2.7 Code**（定价 $0.95/$4 每百万 token）负责日常编码与常规跟进 [Source: <a href="<https://www.kimi.com/zh-cn/resources/kimi-k2-7-code>" rel="nofollow noopener">Kimi K2.7 Code</a>]，**K2.6**负责事件分类与简单路由。如果你不想自己管理路由，Auto Mode 会根据事件复杂度、上下文长度与时间要求来做选择。
+Floatboat 支持的分层模型思路——按任务复杂度把不同类型的事件路由给不同模型——用几次就会变得顺手。不是每个日历事件都需要 K3 的最大推理。Kimi 模型家族天然构成三级栈：**K3**负责复杂的客户评审与多文档综合，**K2.7 Code**（定价 $0.95/$4 每百万 token）负责日常编码与常规跟进，per [Kimi K2.7 Code](https://www.kimi.com/zh-cn/resources/kimi-k2-7-code)，**K2.6**负责事件分类与简单路由。如果你不想自己管理路由，Auto Mode 会根据事件复杂度、上下文长度与时间要求来做选择。
 
   3. K3 的能力最适合用在哪里
 
@@ -44,31 +44,31 @@ Kimi K3 不是通用的速度升级。它带来三项具体能力，日历驱动
 
 ### 3.1 100 万上下文——多文档准备引擎
 
-K3 的 100 万 token 上下文窗口不只是更大的数字。它配上了 Kimi Delta Attention（KDA）——一种混合线性注意力机制，能把 KV 缓存内存占用削减 75%，并在完整上下文长度下带来最高 6.3 倍的解码加速 [Source: <a href="<https://platform.kimi.com/docs/guide/kimi-k3-quickstart>" rel="nofollow noopener">Kimi K3 docs</a>]。两者结合，意味着模型能读入大量材料并跨材料推理，而不受长上下文模型通常伴随的延迟惩罚。
+K3 的 100 万 token 上下文窗口不只是更大的数字。它配上了 Kimi Delta Attention（KDA）——一种混合线性注意力机制，能把 KV 缓存内存占用削减 75%，并在完整上下文长度下带来最高 6.3 倍的解码加速，per [Kimi K3 docs](https://platform.kimi.com/docs/guide/kimi-k3-quickstart)。两者结合，意味着模型能读入大量材料并跨材料推理，而不受长上下文模型通常伴随的延迟惩罚。
 
 换算成日历驱动的语言：100 万上下文窗口处理的是「准备 = 综合多份文档」的事件类型。一次客户季度评审，需要读取事件工作区里的三份往期会议纪要、对照 CRM 里的近期互动、扫一遍邮件线程找未决事项、再生成一份带优先级要点和风险识别的结构化简报——这是 100 万上下文的活。在上下文长度够大之前，Agent 只能顺序处理文档、压缩中间结果，而每一次压缩都可能丢信息。K3 一遍读完所有内容，意味着简报直接建立在原始来源上，而不是「摘要的摘要」。
 
-Kimi 官方基准也印证了这点：在 Terminal Bench 2.1 上 K3 得 88.3 分，领先 Claude Fable 5 的 84.6，接近 GPT-5.6 Sol 的 88.8。在 SWE Marathon——一项考验持续多步软件工程能力的测试——K3 以 42.0 领先，Fable 5 为 35.0、GPT-5.6 Sol 为 39.0 [Source: <a href="<https://www.kimi.com/blog/kimi-k3>" rel="nofollow noopener">Kimi K3 Technical Blog</a>，查询于 2026 年 7 月 17 日]。
+Kimi 官方基准也印证了这点：在 Terminal Bench 2.1 上 K3 得 88.3 分，领先 Claude Fable 5 的 84.6，接近 GPT-5.6 Sol 的 88.8。在 SWE Marathon——一项考验持续多步软件工程能力的测试——K3 以 42.0 领先，Fable 5 为 35.0、GPT-5.6 Sol 为 39.0（据 [Kimi K3 技术博客](https://www.kimi.com/blog/kimi-k3)，查询于 2026 年 7 月 17 日）。
 
 ### 3.2 原生视觉推理——代码、截图、迭代
 
 K3 的视觉理解不是给文本模型外挂的模块，而是作为原生多模态模型训练的：它能读代码、运行代码、截取输出画面、把视觉结果与预期设计做对比，然后迭代——全部在同一条推理循环里完成。
 
-在 Arena AI 的 Frontend Code Arena——由人类评审从相同提示词判断哪个模型产出更好前端代码的第三方榜单——K3 于 2026 年 7 月 17 日的榜单快照中以 1,679 分登顶，领先 Claude Fable 5（1,631）和 GPT-5.6 Sol（1,618）[Source: <a href="<https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems>" rel="nofollow noopener">VentureBeat</a>]。这是对前端代码生成（从自然语言到 HTML/CSS/JS）的专项评测，不是通用推理基准。
+在 Arena AI 的 Frontend Code Arena——由人类评审从相同提示词判断哪个模型产出更好前端代码的第三方榜单——K3 于 2026 年 7 月 17 日的榜单快照中以 1,679 分登顶，领先 Claude Fable 5（1,631）和 GPT-5.6 Sol（1,618），per [VentureBeat](https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems)。这是对前端代码生成（从自然语言到 HTML/CSS/JS）的专项评测，不是通用推理基准。
 
 在 Floatboat 里，视觉推理对应任何「交付物是视觉产物」的日历事件。日程上的设计评审会触发一个 K3 Agent：拉取最新设计稿、运行对应前端代码、把截图与设计规格对比、在会议开始前就暴露差异。游戏开发冲刺的截止日触发一个 Agent：测试构建、抓取画面、对照上一版本检查渲染回归。视觉反馈闭环全程不需要人切换窗口、检查输出、输入反馈——Agent 自己看见问题并修掉。
 
 ### 3.3 常开最大推理——当正确性压过成本
 
-K3 出厂即永久开启思考模式，目前只支持最大推理强度——模型在吐出第一个可见 token 前，会把全部推理期算力预算投入规划、假设检验与自我修正。低强度与高强度模式计划在后续更新中加入 [Source: <a href="<https://platform.kimi.com/docs/guide/kimi-k3-quickstart>" rel="nofollow noopener">Kimi K3 docs</a>]。
+K3 出厂即永久开启思考模式，目前只支持最大推理强度——模型在吐出第一个可见 token 前，会把全部推理期算力预算投入规划、假设检验与自我修正。低强度与高强度模式计划在后续更新中加入，per [Kimi K3 docs](https://platform.kimi.com/docs/guide/kimi-k3-quickstart)。
 
-代价是成本。独立 AI 研究员 Simon Willison 通过 OpenRouter 测过 K3，他报告：一句「生成一只骑自行车的鹈鹕的 SVG」提示词，消耗了 13,241 个推理 token 来产出 3,417 个可见输出 token——一条本质上是测试的提示词花了 25 美分 [Source: <a href="<https://simonwillison.net/2026/Jul/16/kimi-k3>" rel="nofollow noopener">Simon Willison</a>]。要点不是 K3 贵——而是 K3 的推理预算该用在「多想的产出本需要花人时间」的任务上。
+代价是成本。独立 AI 研究员 Simon Willison 通过 OpenRouter 测过 K3，他报告：一句「生成一只骑自行车的鹈鹕的 SVG」提示词，消耗了 13,241 个推理 token 来产出 3,417 个可见输出 token——一条本质上是测试的提示词花了 25 美分，per [Simon Willison](https://simonwillison.net/2026/Jul/16/kimi-k3)。要点不是 K3 贵——而是 K3 的推理预算该用在「多想的产出本需要花人时间」的任务上。
 
 在日历驱动（Calendar-Driven）的 Agent 里，值得动用最大推理的事件，是那些「正确性压倒成本」的：一场项目复盘——Agent 需要综合多个干系人的反馈、跨季度找规律、产出带可执行建议的结论——这是最大推理任务。一份复杂谈判简报——Agent 要交叉对照合同历史、市场数据与关系笔记来暴露风险与机会——也是。对这些事件来说，花 25 美分推理 token 省下 30 分钟手工综合，一点也不贵——那是整条工作流里最便宜的部分。
 
   4. 实际用 K3 要花多少钱
 
-K3 的 API 定价——每百万输入 token $3、每百万输出 token $15——让它成为中国 AI 实验室发布过的最贵模型。缓存输入 token 降到每百万 $0.30，而 Kimi 的 Mooncake 服务架构（在 FAST 2025 获得最佳论文奖）在编码场景下缓存命中率超过 90% [Source: <a href="<https://news.mydrivers.com/1/1137/1137009.htm>" rel="nofollow noopener">快科技</a>]。按这个命中率，有效输入成本大约是标准价的四分之一。对重复运行的 Agent 流水线——每次请求都带上同样的系统提示、工具定义和策略文档——这个折扣会复利。
+K3 的 API 定价——每百万输入 token $3、每百万输出 token $15——让它成为中国 AI 实验室发布过的最贵模型。缓存输入 token 降到每百万 $0.30，而 Kimi 的 Mooncake 服务架构（在 FAST 2025 获得最佳论文奖）在编码场景下缓存命中率超过 90%，per [快科技](https://news.mydrivers.com/1/1137/1137009.htm)。按这个命中率，有效输入成本大约是标准价的四分之一。对重复运行的 Agent 流水线——每次请求都带上同样的系统提示、工具定义和策略文档——这个折扣会复利。
 
 K3 的运行成本在 Agent 持续运行、而非按需调用时最要紧。一位每月处理 30–50 个日历驱动事件的单人创业者——客户会议、项目截止日、团队同步、跟进任务——token 用量会稳定累积。下表展示在中等用量下不同分层策略的花费：每月大约 800 万输入 token、150 万输出 token，其中约 400 万 token 符合缓存条件。
 
