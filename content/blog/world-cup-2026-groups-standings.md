@@ -22,7 +22,7 @@ draft: false
 
   * USA readers should also use the USA World Cup 2026 group guide, while the broader difficulty debate belongs in the World Cup 2026 Group of Death explainer.
 
-The World Cup 2026 groups are no longer just a draw result. As of July 8, 2026, the group stage is complete, the Round of 32 has finished, and the tournament has moved into the late knockout rounds. This page is the canonical groups and standings hub: it shows all twelve groups, the final group tables, the key matches that shaped qualification, and where each group now connects to the knockout bracket.
+The World Cup 2026 groups are no longer just a [draw result](/blog/world-cup-2026-draw). As of July 8, 2026, the group stage is complete, the Round of 32 has finished, and the tournament has moved into the late knockout rounds. This page is the canonical groups and standings hub: it shows all twelve groups, the final group tables, the key matches that shaped qualification, and where each group now connects to the knockout bracket.
 
 **Source note:** Final group results should be checked against the [official FIFA standings page](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>) before publication. The group tables below were cross-checked against the available 2026 World Cup group-stage match logs from [2026 FIFA World Cup](<https://en.wikipedia.org/wiki/2026_FIFA_World_Cup>). Because FIFA pages can update dynamically, use the official standings page as the final source of truth before pushing live.
 
