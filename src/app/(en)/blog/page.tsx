@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
 
+import { BlogShell } from "@openblog/components";
+import { resolveFeatures } from "@openblog/core";
 
-
-import { BlogIndex, BlogShell } from "@openblog/components";
-
-import { absoluteUrl, blogPath, site } from "@/config/site";
-import { resolveFaqForBlogIndex } from "@/lib/faq-data";
 import { absoluteBlogIndexUrl, openGraphLocale } from "@/lib/locale-site";
 import { getBlogIndexData } from "@/lib/posts";
+
+import { absoluteBlogIndexUrl as absIdx } from "@/lib/locale-site";
+import { absoluteUrl, blogPath, site } from "@/config/site";
+import { config } from "@/lib/openblog-config";
+
+import { BlogHero } from "@/components/blog/blog-hero";
+import { FeaturedBanner } from "@/components/blog/featured-banner";
+import { TopicBrowser } from "@/components/blog/topic-browser";
+import { MarketingBand } from "@/components/blog/marketing-band";
 
 const og = openGraphLocale("en");
 
@@ -28,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `Blog | ${site.name}`,
     description: site.description,
-    url: absoluteUrl(blogPath()),
+    url: absoluteBlogIndexUrl("en"),
     siteName: site.name,
     type: "website",
     locale: og.locale,
@@ -36,24 +42,32 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function BlogIndexPage() {
-
   const data = getBlogIndexData();
 
-
-
   return (
-
     <BlogShell className="py-8 lg:py-12">
-      <BlogIndex
-        data={data}
-        faq={resolveFaqForBlogIndex("en")}
+      <BlogHero
+        siteName={site.name}
+        title="Practical AI for solo operators"
+        description="Notes on AI teammates, automation, and high-frequency communication. Real workflows, honest trade-offs, and useful handoffs."
+        articleCount={data.articleCount}
+        categories={data.categories}
       />
+
+      {data.featured ? (
+        <section className="mt-14 lg:mt-20" aria-label="Latest article">
+          <FeaturedBanner post={data.featured} />
+        </section>
+      ) : null}
+
+      {data.latest.length > 0 ? (
+        <section className="mt-14 lg:mt-20" aria-label="Browse articles">
+          <TopicBrowser posts={data.latest} />
+        </section>
+      ) : null}
+
+      <MarketingBand />
     </BlogShell>
-
   );
-
 }
-
