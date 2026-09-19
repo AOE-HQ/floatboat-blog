@@ -2329,10 +2329,12 @@
   },
   {
    "file": "world-cup-2026-groups-standings",
-   "words": 8529,
+   "words": 8534,
    "distinct_internal": 4,
    "density": 0.47,
-   "fails": [],
+   "fails": [
+    "duplicate internal target"
+   ],
    "warns": [
     "density 0.5/1000w"
    ],
@@ -2345,15 +2347,17 @@
   },
   {
    "file": "world-cup-2026-guide",
-   "words": 2628,
-   "distinct_internal": 0,
-   "density": 0.0,
+   "words": 2645,
+   "distinct_internal": 1,
+   "density": 0.38,
    "fails": [],
    "warns": [
-    "R1: 0 internal links",
-    "density 0.0/1000w"
+    "R1: 1 internal links",
+    "density 0.4/1000w"
    ],
-   "targets": []
+   "targets": [
+    "world-cup-2026-draw"
+   ]
   },
   {
    "file": "world-cup-2026-schedule-usa",
@@ -4525,10 +4529,12 @@
   },
   {
    "file": "zh/world-cup-2026-groups-standings",
-   "words": 6375,
+   "words": 6381,
    "distinct_internal": 4,
    "density": 0.63,
-   "fails": [],
+   "fails": [
+    "duplicate internal target"
+   ],
    "warns": [
     "density 0.6/1000w"
    ],
@@ -4541,15 +4547,17 @@
   },
   {
    "file": "zh/world-cup-2026-guide",
-   "words": 1016,
-   "distinct_internal": 0,
-   "density": 0.0,
+   "words": 1023,
+   "distinct_internal": 1,
+   "density": 0.98,
    "fails": [],
    "warns": [
-    "R1: 0 internal links",
-    "density 0.0/1000w"
+    "R1: 1 internal links",
+    "density 1.0/1000w"
    ],
-   "targets": []
+   "targets": [
+    "world-cup-2026-draw"
+   ]
   },
   {
    "file": "zh/world-cup-2026-schedule-usa",
