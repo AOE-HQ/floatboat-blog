@@ -16,7 +16,7 @@ export function Toc({
   }
 
   return (
-    <nav aria-label="Table of contents" className="ob-toc p-4">
+    <nav aria-label={title} className="ob-toc p-4">
       <p className={`text-sm font-medium ${obText}`}>{title}</p>
       <ol className={`mt-3 space-y-2 text-sm ${obMuted}`}>
         {items.map((item) => (

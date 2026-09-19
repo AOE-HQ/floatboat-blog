@@ -69,11 +69,10 @@ export default async function ZhCategoryPage({ params }: PageProps) {
   }
 
   const categoryName = CATEGORY_LABELS_ZH[slug] ?? posts[0]?.category ?? slug;
-  const breadcrumbs = getCategoryBreadcrumbItems(
-    categoryName,
-    slug,
-    helpers,
-  );
+  const breadcrumbs = getCategoryBreadcrumbItems(categoryName, slug, helpers, {
+    home: "首页",
+    blog: "博客",
+  });
 
   return (
     <>

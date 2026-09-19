@@ -84,10 +84,14 @@ export function getCategoryBreadcrumbItems(
   categoryName: string,
   categorySlug: string,
   site: SiteHelpers,
+  labels?: ArticleBreadcrumbLabels,
 ) {
+  const homeLabel = labels?.home ?? "Home";
+  const blogLabel = labels?.blog ?? "Blog";
+
   return [
-    { name: "Home", path: site.blogPath() },
-    { name: "Blog", path: site.blogPath() },
+    { name: homeLabel, path: "/" },
+    { name: blogLabel, path: site.blogPath() },
     { name: categoryName, path: site.categoryPath(categorySlug) },
   ];
 }

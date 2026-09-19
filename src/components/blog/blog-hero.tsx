@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { categoryDisplayName } from "@/lib/category-display";
+import { categoryLabel } from "@openblog/components";
 
 interface HeroProps {
   locale?: "en" | "zh";
@@ -63,7 +63,7 @@ export function BlogHero({
                   className="group flex items-center justify-between rounded-lg px-3 py-2.5 transition-colors hover:bg-[var(--ob-color-surface-hover,var(--ob-color-surface))]"
                 >
                   <span className="text-sm font-medium text-[var(--ob-color-text)]">
-                    {categoryDisplayName(cat.slug, locale)}
+                    {categoryLabel(cat.slug, cat.name, locale)}
                   </span>
                   <span className="text-xs font-semibold tabular-nums text-[var(--ob-color-muted)]">
                     {cat.count}

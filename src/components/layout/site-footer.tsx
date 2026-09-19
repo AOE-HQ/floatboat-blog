@@ -155,8 +155,10 @@ export function SiteFooter() {
 
         <div className="flex flex-col gap-4 px-10 py-6 max-lg:px-5 sm:flex-row sm:items-start sm:justify-between">
           <p className="text-[14px] font-normal leading-[1.43] text-[var(--ob-color-muted)]">
-            © {new Date().getFullYear()} AOE Tech Labs Limited. The Proactive
-            Agent that Runs Work from the Calendar.
+            © {new Date().getFullYear()} AOE Tech Labs Limited.{" "}
+            {isZh
+              ? "让日历自动跑活的 Proactive Agent。"
+              : "The Proactive Agent that Runs Work from the Calendar."}
           </p>
           <div className="flex flex-wrap items-center justify-start gap-2 sm:justify-center sm:gap-6">
             <a aria-label={isZh ? "博客" : "Blog"} title={isZh ? "博客" : "Blog"} href={blogHref} className={legalLinkClass}>
@@ -181,10 +183,12 @@ export function SiteFooter() {
               {isZh ? "用户协议" : "Terms of Service"}
             </a>
             <a
+              aria-label={isZh ? "联系" : "Contact"}
+              title={isZh ? "联系" : "Contact"}
               href="mailto:contact@floatboat.ai"
               className={legalLinkClass}
             >
-              Contact: contact@floatboat.ai
+              {isZh ? "联系：contact@floatboat.ai" : "Contact: contact@floatboat.ai"}
             </a>
           </div>
         </div>

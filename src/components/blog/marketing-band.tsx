@@ -91,7 +91,7 @@ export function MarketingBand({ locale = "en" }: { locale?: "en" | "zh" }) {
             </h2>
           </div>
           <a
-            href={`${FLOATBOAT}/download`}
+            href={locale === "zh" ? `${FLOATBOAT}/zh/download` : `${FLOATBOAT}/download`}
             target="_blank"
             rel="noreferrer"
             className="hidden items-center gap-2 rounded-full bg-[var(--ob-color-accent)] px-6 py-3 text-sm font-semibold text-[var(--ob-color-bg)] transition-opacity hover:opacity-90 md:inline-flex"

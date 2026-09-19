@@ -36,8 +36,9 @@ export function getCategoryBreadcrumbItemsForCategory(
   categoryName: string,
   categorySlug: string,
   helpers: SiteHelpers = siteHelpers,
+  labels?: ArticleBreadcrumbLabels,
 ) {
-  return getCategoryBreadcrumbItems(categoryName, categorySlug, helpers);
+  return getCategoryBreadcrumbItems(categoryName, categorySlug, helpers, labels);
 }
 
 export {

@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { PostMeta } from "@openblog/core";
 import { formatPostDate } from "@openblog/core";
 
-import { categoryDisplayName } from "@/lib/category-display";
+import { categoryLabel } from "@openblog/components";
 
 interface TopicBrowserProps {
   posts: PostMeta[];
@@ -23,11 +23,15 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix
   const [visible, setVisible] = useState(pageSize);
 
   const categories = useMemo(() => {
-    const set = new Set<string>();
+    const map = new Map<string, string>();
     for (const p of posts) {
-      if (p.categorySlug) set.add(p.categorySlug);
+      if (p.categorySlug && !map.has(p.categorySlug)) {
+        map.set(p.categorySlug, p.category ?? p.categorySlug);
+      }
     }
-    return [...set].sort();
+    return [...map.entries()]
+      .map(([slug, name]) => ({ slug, name }))
+      .sort((a, b) => a.name.localeCompare(b.name));
   }, [posts]);
 
   const filtered = useMemo(() => {
@@ -47,7 +51,10 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix
   }, [posts]);
 
   return (
-    <section aria-label="Browse articles by topic" className="scroll-mt-24">
+    <section
+      aria-label={locale === "zh" ? "按主题浏览文章" : "Browse articles by topic"}
+      className="scroll-mt-24"
+    >
       <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[var(--ob-color-border)] pb-4">
         <h2 className="text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] sm:text-3xl">
           {locale === "zh" ? "浏览文章库" : "Browse the library"}
@@ -61,10 +68,10 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix
 
       <div className="mt-6 flex flex-wrap gap-2.5">
         <CategoryPill label={locale === "zh" ? "全部" : "All"} count={posts.length} active={topic === "all"} onClick={() => setTopic("all")} />
-        {categories.map((slug) => (
+        {categories.map(({ slug, name }) => (
           <CategoryPill
             key={slug}
-            label={categoryDisplayName(slug, locale)}
+            label={categoryLabel(slug, name, locale)}
             count={counts.get(slug) ?? 0}
             active={topic === slug}
             onClick={() => setTopic(slug)}
