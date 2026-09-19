@@ -220,7 +220,7 @@ The group stage gives every team a label: group winner, runner-up, third-place q
 
 Use this page to understand why a team landed where it did. Then use the World Cup 2026 bracket to follow the actual knockout route. This division keeps the content cluster clean: the draw page explains how groups were created, this groups page explains what happened in the groups, and the bracket page explains what those results became.
 
-## Related Reading- [World Cup 2026 Draw: Rules, Results and Groups — how the groups were created](/blog/world-cup-2026-draw)
+## Related Reading- World Cup 2026 Draw: Rules, Results and Groups — how the groups were created
 - [World Cup 2026 Bracket: Template, Tracker & PDF — knockout path after the groups](/blog/world-cup-2026-bracket)
 - [USA World Cup 2026 Group: Schedule, Opponents & Key Matches — deeper USMNT group analysis](/blog/world-cup-2026-schedule-usa)
 - [World Cup 2026 Group of Death Explained — difficulty ranking and interpretation](/blog/world-cup-2026-bracketology)## Conclusion

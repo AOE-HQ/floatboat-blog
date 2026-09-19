@@ -173,7 +173,7 @@ K 组顶部的胶着程度比看上去更甚。葡萄牙净胜球最好，但哥
 
 用本页理解一支球队为什么落在这个位置；再用「World Cup 2026 bracket」跟进真实的淘汰赛路径。这样的分工让内容簇保持清爽：抽签页解释小组怎么来的，本页解释小组里发生了什么，对阵表页解释这些结果变成了什么。
 
-## 延伸阅读- [World Cup 2026 Draw: Rules, Results and Groups —— 小组是如何被抽出来的](/zh/blog/world-cup-2026-draw)
+## 延伸阅读- World Cup 2026 Draw: Rules, Results and Groups —— 小组是如何被抽出来的
 - [World Cup 2026 Bracket: Template, Tracker & PDF —— 小组之后的淘汰赛路径](/zh/blog/world-cup-2026-bracket)
 - [USA World Cup 2026 Group: Schedule, Opponents & Key Matches —— 更深层的美国队小组分析](/zh/blog/world-cup-2026-schedule-usa)
 - [World Cup 2026 Group of Death Explained —— 难度排名与解读](/zh/blog/world-cup-2026-bracketology)## 结论
