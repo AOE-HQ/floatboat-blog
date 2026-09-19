@@ -20,7 +20,7 @@ draft: false
 
   * OpenAI 报告称，仅 Harness 设计优化一项，就让 GPT-5.6 Sol 在 ARC-AGI-3 上的成绩从 13.3% 提升到 38.3%，同时输出 token 大约压到六分之一——这说明决定 Agent 产出质量的不只是权重，编排同样关键。
 
-  * 对日历驱动的 Agent 而言，结论是结构性的：**模型 + Harness = Agent**。Floatboat 内置 [GPT-5.6 Sol、Terra 与 Luna](/blog/gpt-5-6-sol-terra-luna)；Codex Harness 则是 OpenAI 如何把这些模型接进持久 Agent 循环的开放参考实现。
+  * 对日历驱动的 Agent 而言，结论是结构性的：**模型 + Harness = Agent**。Floatboat 内置 [GPT-5.6 Sol、Terra 与 Luna](/zh/blog/gpt-5-6-sol-terra-luna)；Codex Harness 则是 OpenAI 如何把这些模型接进持久 Agent 循环的开放参考实现。
 
 ## 1\. OpenAI 为什么把 Codex 重新定位为平台
 
@@ -139,7 +139,7 @@ Symphony 是一份**规范与参考模式**，不是 app-server 的替代品。�
 
 
 
-DeepSeek 于 2026 年 8 月发布了 [DeepSeek Harness v0.1](/blog/what-is-deepseek-harness)，作为**模型原生、插件化**的执行层自主方案。Codex Harness 是**纵向**的：与 OpenAI 的 Responses API、压缩端点与订阅体系深度集成。Anthropic 的 Claude Code 依然是已标准化在 Claude 模型上的团队会选择的精致封闭产品——但 OpenAI 的开放运行时加上第三方 harness 兼容，是一次刻意的分发押注。
+DeepSeek 于 2026 年 8 月发布了 [DeepSeek Harness v0.1](/zh/blog/what-is-deepseek-harness)，作为**模型原生、插件化**的执行层自主方案。Codex Harness 是**纵向**的：与 OpenAI 的 Responses API、压缩端点与订阅体系深度集成。Anthropic 的 Claude Code 依然是已标准化在 Claude 模型上的团队会选择的精致封闭产品——但 OpenAI 的开放运行时加上第三方 harness 兼容，是一次刻意的分发押注。
 
 如果你在构建**多厂商**的 Agent 基础设施，请把模型对比与 harness 对比当成两个不同的决策。Floatboat 通过内置多家模型家族绕开了部分取舍——OpenAI 分级模型、DeepSeek、Claude、Gemini 等——同时在任何单一 harness 之上自持日历编排。你嵌入的 harness 是长期的基础设施赌注；模型名册可以每季度轮换，而不必重写你产品层面的审批 UX。
 
@@ -149,7 +149,7 @@ Floatboat 是日历驱动的：Agent 被事件唤醒，而不是被聊天提示�
 
 你不需要把 Codex Harness 嵌进 Floatboat，也能从这个发布中受益。Floatboat 自持日历编排层；如果你想在日程旁边构建自定义工具，Codex Harness 就是开放参考。会议准备与会后跟进流水线描述的是日历 Agent 该做**什么**；参考级的运行时描述的是执行过程中各轮对话如何保持连贯的**方式**。
 
-如果你正在评估是 fork Codex、还是把 app-server 嵌进内部运维工具，建议从 §4 的开源组件清单入手，先在一个有边界的仓库任务上跑 `codex exec`，等到确实需要持久 UI 会话时再升级到 SDK/app-server。关于无需 API 接线的内置 GPT-5.6 分级模型，见 [Floatboat 中的 GPT-5.6](/blog/gpt-5-6-floatboat)。
+如果你正在评估是 fork Codex、还是把 app-server 嵌进内部运维工具，建议从 §4 的开源组件清单入手，先在一个有边界的仓库任务上跑 `codex exec`，等到确实需要持久 UI 会话时再升级到 SDK/app-server。关于无需 API 接线的内置 GPT-5.6 分级模型，见 [Floatboat 中的 GPT-5.6](/zh/blog/gpt-5-6-floatboat)。
 
 ## 9\. 结语
 

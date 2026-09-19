@@ -3,19 +3,19 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { PostMeta } from "@openblog/core";
-import { formatPostDate } from "@openblog/core";
 
 interface TopicBrowserProps {
   posts: PostMeta[];
   pageSize?: number;
   locale?: "en" | "zh";
+  localePrefix?: string;
 }
 
 /**
  * Topic-tabbed article browser with "load more" — client-side filtering.
  * Replaces the By Topic card grid + Latest grid for a cleaner discovery flow.
  */
-export function TopicBrowser({ posts, pageSize = 12, locale = "en" }: TopicBrowserProps) {
+export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix = "" }: TopicBrowserProps) {
   const [topic, setTopic] = useState<string>("all");
   const [visible, setVisible] = useState(pageSize);
 
@@ -47,7 +47,7 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en" }: TopicBrows
     <section aria-label="Browse articles by topic" className="scroll-mt-24">
       <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[var(--ob-color-border)] pb-4">
         <h2 className="text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] sm:text-3xl">
-          Browse the library
+          {locale === "zh" ? "浏览文章库" : "Browse the library"}
         </h2>
         <p className="text-sm text-[var(--ob-color-muted)]">
           {filtered.length} article{filtered.length !== 1 ? "s" : ""}
@@ -55,7 +55,7 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en" }: TopicBrows
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2.5">
-        <CategoryPill label="All" count={posts.length} active={topic === "all"} onClick={() => setTopic("all")} />
+        <CategoryPill label={locale === "zh" ? "全部" : "All"} count={posts.length} active={topic === "all"} onClick={() => setTopic("all")} />
         {categories.map((slug) => (
           <CategoryPill
             key={slug}
@@ -69,7 +69,7 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en" }: TopicBrows
 
       <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {shown.map((post) => (
-          <PostCardMini key={post.slug} post={post} />
+          <PostCardMini key={post.slug} post={post} localePrefix={localePrefix} />
         ))}
       </div>
 
@@ -108,10 +108,10 @@ function CategoryPill({
   );
 }
 
-function PostCardMini({ post }: { post: PostMeta }) {
+function PostCardMini({ post, localePrefix = "" }: { post: PostMeta; localePrefix: string }) {
   return (
     <article className="group overflow-hidden rounded-2xl border border-[var(--ob-color-border)] bg-[var(--ob-color-surface)] transition-all hover:-translate-y-0.5 hover:shadow-lg">
-      <Link href={`/blog/${post.slug}`} className="block">
+      <Link href={`${localePrefix}/blog/${post.slug}`} className="block">
         {post.coverImage ? (
           <div className="aspect-[16/9] overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}

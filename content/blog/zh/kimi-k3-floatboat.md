@@ -32,7 +32,7 @@ Kimi 官方文档对 K3 相对专有模型的位置讲得很直白：「虽然�
 
   2. 为什么「内置」很重要——无需 API Key，无需配置
 
-Floatboat 是一个主动式 Agent OS，日历在其中充当工作的运行时。它同步 Google Calendar、Outlook、Lark 和 Notion Calendar，然后自动为每个事件内的任务做准备、执行和跟进。更多背景可读[什么是 Agentic Calendar](/blog/what-is-agentic-calendar) 和 [日历驱动的 AI 与基于聊天的 AI 有何不同](/blog/calendar-driven-ai-vs-chat-ai)。
+Floatboat 是一个主动式 Agent OS，日历在其中充当工作的运行时。它同步 Google Calendar、Outlook、Lark 和 Notion Calendar，然后自动为每个事件内的任务做准备、执行和跟进。更多背景可读[什么是 Agentic Calendar](/zh/blog/what-is-agentic-calendar) 和 [日历驱动的 AI 与基于聊天的 AI 有何不同](/zh/blog/calendar-driven-ai-vs-chat-ai)。
 
 「集成」与「内置」的实际差别在于：一个让你停留在配置模式，另一个让你待在流程里。在需要自己配置 K3 的平台上，「何时用 K3」是开工前就要做好的技术决策。在 Floatboat 上，你打开任意 Agent 流水线的模型选择器，K3 与其他模型并排列着，选中即可——或者让 Auto Mode 在事件复杂度需要时自动把活路由给 K3。
 

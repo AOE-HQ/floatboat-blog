@@ -26,7 +26,7 @@ draft: false
 
 这是简版。文章剩下的部分，讲的是每个格子背后的「为什么」。
 
-![2.PNG](/blog/images/html-vs-markdown-ai-output/1779257703236-364222d3-afd9-45e9-944c-5987e5d1d98b.webp)
+![2.PNG](/zh/blog/images/html-vs-markdown-ai-output/1779257703236-364222d3-afd9-45e9-944c-5987e5d1d98b.webp)
 
 ## 输出是内部、可编辑、带版本管理的：用 Markdown
 
@@ -62,7 +62,7 @@ Markdown 版不赖。HTML 版有吸顶的导航侧栏、按颜色分级的优先
 
 规律是：**输出要被人类阅读、对比或据此行动时，HTML 才配得上那份额外的重量。**
 
-![3.PNG](/blog/images/html-vs-markdown-ai-output/1779257716630-6dd7dde5-eee0-4078-81c7-941064b412e0.webp)
+![3.PNG](/zh/blog/images/html-vs-markdown-ai-output/1779257716630-6dd7dde5-eee0-4078-81c7-941064b412e0.webp)
 
 ## Token 成本与维护的权衡
 
@@ -96,19 +96,19 @@ Markdown 版不赖。HTML 版有吸顶的导航侧栏、按颜色分级的优先
 
 我最终落地的默认做法是：**草稿与迭代用 Markdown，交付给人时再转换或精修为 HTML。**这条混合工作流让我在思考阶段拿到 Markdown 的可编辑性，在交付阶段拿到 HTML 的可读性。这个组合我用了几个星期，感觉是对的——等我碰到更多边界情况，会知道得更准。
 
-![4.png](/blog/images/html-vs-markdown-ai-output/1779257727850-b81e9a55-b5e0-455f-b979-9c3e45cc7d9d.webp)
+![4.png](/zh/blog/images/html-vs-markdown-ai-output/1779257727850-b81e9a55-b5e0-455f-b979-9c3e45cc7d9d.webp)
 
 这套框架就这么简单，但我花了不少时间才把它磨到这么清晰。真正的区别不在 HTML 和 Markdown——而在于你是否知道眼前这份活该配哪个格式。想通这一小块，就够了。
 
 ## 往期文章
 
-• [HTML-Anything Review: Can AI Turn HTML Into Real Deliverables?](/blog/html-anything-review-2026) — 我实测了 html-anything 是否真的把「HTML 是新的 Markdown」变成一条可用的工作流。
+• [HTML-Anything Review: Can AI Turn HTML Into Real Deliverables?](/zh/blog/html-anything-review-2026) — 我实测了 html-anything 是否真的把「HTML 是新的 Markdown」变成一条可用的工作流。
 
-• [Claude Code vs Chrome Extensions: Which Workflow Actually Saves Time?](/blog/codex-for-chrome-vs-claude-for-chrome) — 不是每条 AI 工作流都需要编码 Agent；这里讲讲浏览器原生工具在哪些场景更合适。
+• [Claude Code vs Chrome Extensions: Which Workflow Actually Saves Time?](/zh/blog/codex-for-chrome-vs-claude-for-chrome) — 不是每条 AI 工作流都需要编码 Agent；这里讲讲浏览器原生工具在哪些场景更合适。
 
-• [Workspace Agents vs Chat Assistants: Why the Difference Matters](/blog/workspace-agents-vs-chat-assistants) — 从聊天回复到可复用的工作成果，这一步跨越改变了 AI 输出的使用方式。
+• [Workspace Agents vs Chat Assistants: Why the Difference Matters](/zh/blog/workspace-agents-vs-chat-assistants) — 从聊天回复到可复用的工作成果，这一步跨越改变了 AI 输出的使用方式。
 
-• [AI Workspace Agents: Why Solo Operators Need More Than Chat Windows](/blog/ai-workspace-agents) — 当工作区本身成为工作流的一部分，丰富的 AI 输出才真正开始有意义。
+• [AI Workspace Agents: Why Solo Operators Need More Than Chat Windows](/zh/blog/ai-workspace-agents) — 当工作区本身成为工作流的一部分，丰富的 AI 输出才真正开始有意义。
 
-![5.png](/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.webp)
+![5.png](/zh/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.webp)
 

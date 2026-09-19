@@ -18,7 +18,7 @@ draft: false
 
   * 在 V4 上，思考模式与工具调用可以协同工作——模型在发出结构化请求前，能先推理该调哪些工具。MCP（Model Context Protocol）把工具面从内联函数定义扩展到外部服务器。
 
-  * 生产级 Agent 需要一层修复机制：校验 JSON 参数、返回模型能自我纠正的结构化错误、限制并行执行。如果你还没搭过 Agent 循环，先读 [如何构建 DeepSeek Agent](/blog/how-to-build-deepseek-agent)；本文专门深入工具调用这一层。
+  * 生产级 Agent 需要一层修复机制：校验 JSON 参数、返回模型能自我纠正的结构化错误、限制并行执行。如果你还没搭过 Agent 循环，先读 [如何构建 DeepSeek Agent](/zh/blog/how-to-build-deepseek-agent)；本文专门深入工具调用这一层。
 
 ## 1\. 在 DeepSeek Agent 里，「函数调用」是什么
 
@@ -26,7 +26,7 @@ draft: false
 
 在 DeepSeek V4 上，函数调用是 `deepseek-v4-pro` 与 `deepseek-v4-flash` 的原生能力。API 采用 OpenAI 兼容格式：在 chat completion 请求里放一个 `tools` 数组，工具调用经由 `message.tool_calls` 返回，结果以 `role: "tool"` 消息配合对应的 `tool_call_id` 回传，详见 [DeepSeek 的工具调用文档](https://api-docs.deepseek.com/guides/tool_calls)。
 
-本文假设你已理解基本 Agent 循环——发消息、查工具调用、执行、回传、重复。如果这套模式对你陌生，先读 [如何构建 DeepSeek Agent](/blog/how-to-build-deepseek-agent)。我们这里聚焦工具调用层内部发生的事：schema 设计、并行执行、严格模式、与思考模式的交互，以及那些防止 Agent 循环在畸形参数上崩溃的生产级模式。
+本文假设你已理解基本 Agent 循环——发消息、查工具调用、执行、回传、重复。如果这套模式对你陌生，先读 [如何构建 DeepSeek Agent](/zh/blog/how-to-build-deepseek-agent)。我们这里聚焦工具调用层内部发生的事：schema 设计、并行执行、严格模式、与思考模式的交互，以及那些防止 Agent 循环在畸形参数上崩溃的生产级模式。
 
 「函数调用」和「Agent」的区别对搜索意图和架构都重要。函数调用是 API 的一个能力；Agent 是一个系统，把这一能力包进带错误处理、状态管理与工具权限的循环里。大多数 DeepSeek Agent 在生产中的故障都追溯到工具调用层——无效 JSON、参数类型错误、并行调用和共享状态竞态——而不是模型的推理质量。
 
@@ -100,7 +100,7 @@ draft: false
 
 ## 3\. 工具调用循环：超越基础
 
-[如何构建 DeepSeek Agent](/blog/how-to-build-deepseek-agent) 里的最小循环，每轮只处理一个工具调用。生产级 Agent 还需要三个额外控制：`tool_choice`、并行调用处理、会话状态保全。
+[如何构建 DeepSeek Agent](/zh/blog/how-to-build-deepseek-agent) 里的最小循环，每轮只处理一个工具调用。生产级 Agent 还需要三个额外控制：`tool_choice`、并行调用处理、会话状态保全。
 
 `tool_choice` **控制模型是否必须调用工具。**默认的 `"auto"` 让模型自己决定。当每一轮都必须产出工具调用时设 `"required"`（少见——通常用于被强制的管线步骤）。在所有工具执行完毕后的最终综合轮设 `"none"`，这样你想要纯文本答案时，模型不会再去调更多工具。
 
@@ -171,7 +171,7 @@ Model Context Protocol（MCP）是把 Agent 接到外部工具服务器的标准
 
 集成模式：你的 Agent 循环不变。模型返回工具调用后，不再调用本地 Python 函数，而是把调用转发给 MCP 服务器，由它执行动作、返回结果。消息历史的格式不变——变的只是 `TOOL_REGISTRY` 背后的执行层。
 
-今天起步的 Agent，内联定义更简单、也够用。撞上下面某个阈值再上 MCP：超过 20 个工具（大 `tools` 数组带来的上下文开销）、工具频繁变动但不想跟着改 Agent 代码、或工具需要隔离执行环境（沙箱浏览器、独立数据库凭证）。在内联工具与 MCP 架构之间选择，是 [DeepSeek Agent 品类总览](/blog/what-is-deepseek-agent) 覆盖的设计决策之一——那篇文章把四种 Agent 原型各自适合哪种方案讲清楚了。如果你连这层接线都想省，一些桌面客户端如 [Floatboat DeepSeek Agent](https://deepseek-agent.com) 出厂就带好工具调用层——文件读取、浏览器、终端、日历工具已经通过 DeepSeek 原生函数调用接口接好，你只需定义 Agent 该做什么，而不是它怎么调每个工具。
+今天起步的 Agent，内联定义更简单、也够用。撞上下面某个阈值再上 MCP：超过 20 个工具（大 `tools` 数组带来的上下文开销）、工具频繁变动但不想跟着改 Agent 代码、或工具需要隔离执行环境（沙箱浏览器、独立数据库凭证）。在内联工具与 MCP 架构之间选择，是 [DeepSeek Agent 品类总览](/zh/blog/what-is-deepseek-agent) 覆盖的设计决策之一——那篇文章把四种 Agent 原型各自适合哪种方案讲清楚了。如果你连这层接线都想省，一些桌面客户端如 [Floatboat DeepSeek Agent](https://deepseek-agent.com) 出厂就带好工具调用层——文件读取、浏览器、终端、日历工具已经通过 DeepSeek 原生函数调用接口接好，你只需定义 Agent 该做什么，而不是它怎么调每个工具。
 
 ## 7\. 生产模式：校验、修复与失败形态
 
@@ -215,5 +215,5 @@ Model Context Protocol（MCP）是把 Agent 接到外部工具服务器的标准
 
 从两三个定义良好的工具加一个串行循环起步。当参数错误成为你最头的失败模式时，加严格模式。当瓶颈是延迟、而不是正确性时，加并行调用。当工具面撑破内联定义时，加 MCP。
 
-完整的 Agent 架构——API 配置、模型选择、以及本文所扩展的那个循环骨架——[如何构建 DeepSeek Agent](/blog/how-to-build-deepseek-agent) 每一步都带可运行代码走了一遍。
+完整的 Agent 架构——API 配置、模型选择、以及本文所扩展的那个循环骨架——[如何构建 DeepSeek Agent](/zh/blog/how-to-build-deepseek-agent) 每一步都带可运行代码走了一遍。
 

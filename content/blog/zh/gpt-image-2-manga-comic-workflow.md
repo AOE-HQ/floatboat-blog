@@ -31,7 +31,7 @@ draft: false
 
 这听起来很小。其实一点都不小。**旧工作流是：重生成二十次，盼着哪次足够接近。新工作流是：生成一次，然后做外科手术式的迭代。**我以前把大部分时间花在跟模型搏斗上；现在大部分时间花在指挥它上。
 
-![2.PNG](/blog/images/gpt-image-2-manga-comic-workflow/1777087049547-31339f60-3546-4e28-a7bc-78a2056418de.webp)
+![2.PNG](/zh/blog/images/gpt-image-2-manga-comic-workflow/1777087049547-31339f60-3546-4e28-a7bc-78a2056418de.webp)
 
 ### 4K 分辨率，以及对印刷的真正意义
 
@@ -55,7 +55,7 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 
 对我来说，一个能用的四格 prompt 大概长这样：顶部放同一个场景锚点，同一个角色字符串重复四次，然后四行短句只描述变化的东西——机位、表情、画面里有什么。任何我想让它作为画面内字面文字呈现的内容，都放进 `"双引号"` 里。省略引号，你得到的就是"看起来像模像样的乱码"。
 
-![3.PNG](/blog/images/gpt-image-2-manga-comic-workflow/1777087059972-1d87068a-ebe3-49a8-859d-c99ca611898e.webp)
+![3.PNG](/zh/blog/images/gpt-image-2-manga-comic-workflow/1777087059972-1d87068a-ebe3-49a8-859d-c99ca611898e.webp)
 
 ### 让角色设计贯穿一整章保持一致
 
@@ -77,7 +77,7 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 
 一旦一格做到 80%，我就停止重生成，开始编辑。"保持一切不变；把眼睛下方的阴影柔化一点"——这类指令。对话式编辑模式会保留画面的其余部分。对我来说，这是最大的工作流变化，也是让单人量产从"一个月"变成"一个周末内现实可行"的东西。
 
-![4.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087069884-ced3ff6c-9b82-4846-bab7-fac77d517f59.webp)
+![4.png](/zh/blog/images/gpt-image-2-manga-comic-workflow/1777087069884-ced3ff6c-9b82-4846-bab7-fac77d517f59.webp)
 
 ## GPT Image 2 仍然会崩的地方
 
@@ -107,7 +107,7 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 
 **三：对于需要反复出现的背景，一次以 4K 生成背景、存下来，然后把角色合成上去，用于该场景其余的分格。**这是老式漫画制作技术套用到 AI 输出上，而且有效。
 
-![5.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087079669-c16e77dc-68a5-4b57-ac11-0f476c230d58.webp)
+![5.png](/zh/blog/images/gpt-image-2-manga-comic-workflow/1777087079669-c16e77dc-68a5-4b57-ac11-0f476c230d58.webp)
 
 ## 每周产出 30+ 格时，怎么处理资产泛滥
 
@@ -125,7 +125,7 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 
 对介于两者之间的所有人——好奇的、为了好玩在做的、想试试自己能不能交付一部 12 页短篇的——值得花一个周末。价格合理：包含在 ChatGPT Plus 每月 20 美元的标准档里（带用量限制），或者做生产用途可以走 [OpenAI API 模型页的按 token 计费](https://developers.openai.com/api/docs/models/gpt-image-2)。API 上图像输出 token 大约每百万 30 美元，按我用的分辨率算下来每格只要几美分。我写这篇文章时核对过文档；投入之前请再验证——API 档位 5 月初向所有开发者开放。
 
-![6.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087089441-d5498d93-a404-49d7-9839-cd0dc4614114.webp)
+![6.png](/zh/blog/images/gpt-image-2-manga-comic-workflow/1777087089441-d5498d93-a404-49d7-9839-cd0dc4614114.webp)
 
 这就是我目前的进展。把它存下来，找一页短的试试，感受一下它在你手里是什么手感。模型会不断变化——今天为真的，三个月后未必为真。但有一件具体的事——带清晰 CJK 文字的单人叙事漫画——它刚刚跨过了一道值得你知道的门槛。
 
@@ -133,13 +133,13 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 
 ## 延伸阅读
 
-* [看看如何为单人创作工作构建可复用的 AI 工作流](/blog/ai-workflow-for-solo-founders)
+* [看看如何为单人创作工作构建可复用的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)
 
-* [了解 2026 年 AI 工具如何融入真实的单人创业者工作流](/blog/ai-agents-2026-solo-operators)
+* [了解 2026 年 AI 工具如何融入真实的单人创业者工作流](/zh/blog/ai-agents-2026-solo-operators)
 
-* [学习一人创作者如何不靠招人扩大产出](/blog/scale-one-person-business-without-hiring)
+* [学习一人创作者如何不靠招人扩大产出](/zh/blog/scale-one-person-business-without-hiring)
 
-* [发现那些真正有效、超越一次性 prompt 的实用 AI 工作流](/blog/ai-workflow-solo-founders)
+* [发现那些真正有效、超越一次性 prompt 的实用 AI 工作流](/zh/blog/ai-workflow-solo-founders)
 
-* [探索 AI 如何帮你以一人之力像一整支创意团队那样运作](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+* [探索 AI 如何帮你以一人之力像一整支创意团队那样运作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

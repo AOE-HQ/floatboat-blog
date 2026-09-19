@@ -5,14 +5,15 @@ import { formatPostDate } from "@openblog/core";
 interface FeaturedBannerProps {
   post: PostMeta;
   locale?: "en" | "zh";
+  localePrefix?: string;
 }
 
 /** Full-width featured article banner — large cover left, copy right. */
-export function FeaturedBanner({ post, locale = "en" }: FeaturedBannerProps) {
+export function FeaturedBanner({ post, locale = "en", localePrefix = "" }: FeaturedBannerProps) {
   const hasCover = Boolean(post.coverImage);
   return (
     <Link
-      href={`/blog/${post.slug}`}
+      href={`${localePrefix}/blog/${post.slug}`}
       className={`group grid overflow-hidden rounded-3xl border border-[var(--ob-color-border)] bg-[var(--ob-color-surface)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl lg:grid-cols-5`}
     >
       <div

@@ -67,7 +67,7 @@ FloatIM 采取相反的立场：**Agent 是网络中的一等公民**。人是�
 
 **消费者 vs 创作者，一句话**：如果你主要是**使用**别人请进会话的 Agent，你更接近**消费者**；如果你在自己环境里**运行** Agent、并想把它们接入群组或分发出去，你更接近**创作者**——而那条路更常包含 **Floatboat**。细节与策略永远以线上产品为准，而不是博客。
 
-Workspace 侧"单人经营者 + Agent"的更多视角——不限于 FloatIM，但有价值的背景——见[一人公司如何像团队一样用 AI 工作](/blog/how-one-person-businesses-work-like-a-team-with-ai) 以及续篇[单人经营者该不该用 AI Agent](/blog/ai-agent-solo-operators)。
+Workspace 侧"单人经营者 + Agent"的更多视角——不限于 FloatIM，但有价值的背景——见[一人公司如何像团队一样用 AI 工作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai) 以及续篇[单人经营者该不该用 AI Agent](/zh/blog/ai-agent-solo-operators)。
 
 * * *
 

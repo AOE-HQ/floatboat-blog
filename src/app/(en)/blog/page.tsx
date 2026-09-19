@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 
 import { BlogShell } from "@openblog/components";
-import { resolveFeatures } from "@openblog/core";
 
 import { absoluteBlogIndexUrl, openGraphLocale } from "@/lib/locale-site";
 import { getBlogIndexData } from "@/lib/posts";
 
-import { absoluteBlogIndexUrl as absIdx } from "@/lib/locale-site";
-import { absoluteUrl, blogPath, site } from "@/config/site";
-import { config } from "@/lib/openblog-config";
+import { site } from "@/config/site";
 
 import { BlogHero } from "@/components/blog/blog-hero";
 import { FeaturedBanner } from "@/components/blog/featured-banner";
@@ -53,6 +50,7 @@ export default function BlogIndexPage() {
         description="Notes on AI teammates, automation, and high-frequency communication. Real workflows, honest trade-offs, and useful handoffs."
         articleCount={data.articleCount}
         categories={data.categories}
+        locale="en"
       />
 
       {data.featured ? (

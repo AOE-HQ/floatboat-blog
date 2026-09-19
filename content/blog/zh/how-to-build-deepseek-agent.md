@@ -16,7 +16,7 @@ draft: false
 
   * **Agent 循环是大多数教程跳过的那部分。** 你定义工具，模型返回一次工具调用，你的代码执行它，你把结果作为 `tool` 角色消息追加进去，再把更新后的历史发回去。如此往复，直到模型给出最终回答。
 
-  * 如果你在构建编码 Agent，大概不需要从零写这套循环——DeepSeek-TUI、Reasonix 这类工具已经实现了它。但理解循环，对调试、定制、以及为非编码任务构建 Agent 都是必需的。关于 DeepSeek Agent 有哪些类型，见 [什么是 DeepSeek Agent](/blog/what-is-deepseek-agent)。
+  * 如果你在构建编码 Agent，大概不需要从零写这套循环——DeepSeek-TUI、Reasonix 这类工具已经实现了它。但理解循环，对调试、定制、以及为非编码任务构建 Agent 都是必需的。关于 DeepSeek Agent 有哪些类型，见 [什么是 DeepSeek Agent](/zh/blog/what-is-deepseek-agent)。
 
   * 本教程使用指向 `https://api.deepseek.com` 的 OpenAI Python SDK（`pip install openai`）。Node.js 示例用同一个 SDK。如果你的代码已经在调用 OpenAI 的 API，迁移只需改一行 base URL。
 
@@ -26,7 +26,7 @@ draft: false
 
 一个 Python 环境——Python 3.10 及以上，装有 `pip`；或者 Node.js 18 及以上。OpenAI SDK（`pip install openai` 或 `npm install openai`）负责 API 通信。DeepSeek 的 API 在线路层面与 OpenAI 完全兼容，所以不需要专用 SDK。
 
-一个终端和一个文本编辑器。本教程里的 Agent 循环示例每个都不到五十行，你可以敲进单个文件，从命令行直接运行。如果想在动手前先看到全貌，[什么是 DeepSeek Agent](/blog/what-is-deepseek-agent) 梳理了四种原型，帮你判断到底需不需要自定义 Agent，还是直接用现成工具就行。
+一个终端和一个文本编辑器。本教程里的 Agent 循环示例每个都不到五十行，你可以敲进单个文件，从命令行直接运行。如果想在动手前先看到全貌，[什么是 DeepSeek Agent](/zh/blog/what-is-deepseek-agent) 梳理了四种原型，帮你判断到底需不需要自定义 Agent，还是直接用现成工具就行。
 
 一把 DeepSeek API key。下一节讲怎么拿到。如果已经有 key，直接跳到第 2 步。
 
@@ -198,7 +198,7 @@ DeepSeek 通过 API 提供两款模型，这个选择直接影响 Agent 的表�
 
 关于循环内选模型的一个提醒：如果你的任务需要规划（模型要想清楚先调哪些工具、按什么顺序调），把第一次调用的 `deepseek-v4-flash` 换成 `deepseek-v4-pro`。计划一旦定下来，后续的工具执行与综合回合可以留在 Flash 上。模型名只是一个字符串——你可以每个回合都换。
 
-循环稳固之后，下一步是打磨工具调用方式——[DeepSeek Agent 函数调用](/blog/deepseek-agent-function-calling) 讲了严格模式、128 路并行调用，以及如何用 MCP 集成把 Agent 扩展到单工具之外。
+循环稳固之后，下一步是打磨工具调用方式——[DeepSeek Agent 函数调用](/zh/blog/deepseek-agent-function-calling) 讲了严格模式、128 路并行调用，以及如何用 MCP 集成把 Agent 扩展到单工具之外。
 
 ## 5\. 加上思考模式：当推理要紧的时候
 

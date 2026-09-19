@@ -23,7 +23,7 @@ _嗨，我是 Nova。最近我一直在想这个概念，今天终于坐下来�
 
 这篇文章不是 Hermes Agent 的搭建教程，而是我想把脑袋里这个概念理清楚——**持久化 AI Agent**——以及它对我们这些不是开发者的人到底有没有意义。
 
-![2.PNG](/blog/images/what-is-persistent-ai-agent/1775615354386-f593b84b-697f-44ce-8fdc-1744691e0b75.webp)
+![2.PNG](/zh/blog/images/what-is-persistent-ai-agent/1775615354386-f593b84b-697f-44ce-8fdc-1744691e0b75.webp)
 
 ## 什么让一个 AI Agent「持久」——它和聊天机器人有什么区别
 
@@ -51,7 +51,7 @@ LLM 的传统记忆像内存（RAM）：对当前上下文访问快，但每个�
 
 持久化 Agent 换了个思路。它不是把一切倒进单一窗口，而是有选择地存储和检索真正重要的东西。
 
-![3.PNG](/blog/images/what-is-persistent-ai-agent/1775615366121-a2fc8f22-3621-42ab-b5db-25c0df9a70b5.webp)
+![3.PNG](/zh/blog/images/what-is-persistent-ai-agent/1775615366121-a2fc8f22-3621-42ab-b5db-25c0df9a70b5.webp)
 
 ## 持久化 Agent 到底记住了什么
 
@@ -79,7 +79,7 @@ LLM 的传统记忆像内存（RAM）：对当前上下文访问快，但每个�
 
 Hermes Agent 是 Nous Research 做的开源项目，2026 年初发布。我自己没搭过——这点我直说——但我把[官方文档](https://hermes-agent.nousresearch.com/docs/)读得挺仔细，这套架构即使你永远不运行它也值得理解。
 
-![4.png](/blog/images/what-is-persistent-ai-agent/1775615376383-6a9ae401-fb00-423f-8fa5-33b44d5b09ba.webp)
+![4.png](/zh/blog/images/what-is-persistent-ai-agent/1775615376383-6a9ae401-fb00-423f-8fa5-33b44d5b09ba.webp)
 
 ### 核心理念：一个越用越强的 Agent
 
@@ -107,7 +107,7 @@ Hermes Agent 这类项目的架构野心，比给会话式工具外挂增量记�
 
 **持久上下文**这个_理念_——一个真正懂你工作的 AI——对我们怎么工作至关重要。而以非开发者能接受的方式交付它的工具，还在追赶。
 
-![5.png](/blog/images/what-is-persistent-ai-agent/1775615386862-1f8e3dfa-b868-4d1c-9452-d11bb8c79341.webp)
+![5.png](/zh/blog/images/what-is-persistent-ai-agent/1775615386862-1f8e3dfa-b868-4d1c-9452-d11bb8c79341.webp)
 
 ## 「持久化」解决不了什么
 
@@ -129,7 +129,7 @@ Hermes Agent 这类项目的架构野心，比给会话式工具外挂增量记�
 
 这个转变一定会来，无论某个具体工具会不会成为大多数人接触它的方式。
 
-![6.png](/blog/images/what-is-persistent-ai-agent/1775615398983-da3425fa-4f29-43df-84e6-9c5733b38b6e.webp)
+![6.png](/zh/blog/images/what-is-persistent-ai-agent/1775615398983-da3425fa-4f29-43df-84e6-9c5733b38b6e.webp)
 
 我还在摸索——持久化 Agent 这块跑得太快，我这会儿写下的任何东西，几个月后可能都会显得不完整。但我认为底层的概念已经清晰到值得跟踪：区别在于「一个在会话里帮你的 AI」和「一个真的懂你怎么工作的 AI」。
 
@@ -139,13 +139,13 @@ _总之，这是今天的发现。或者至少是今天一次诚实的尝试—�
 
 ## 往期文章
 
-  * [AI Agent 和传统工具到底有什么区别还是一头雾水？这篇梳理把界线讲清楚了](/blog/ai-agent-vs-chatbot)
+  * [AI Agent 和传统工具到底有什么区别还是一头雾水？这篇梳理把界线讲清楚了](/zh/blog/ai-agent-vs-chatbot)
 
-  * [想知道 AI 在真实工作中——而不只是聊天里——怎么落地？这些用例是不错的起点](/blog/ai-agent-use-cases-real-examples)
+  * [想知道 AI 在真实工作中——而不只是聊天里——怎么落地？这些用例是不错的起点](/zh/blog/ai-agent-use-cases-real-examples)
 
-  * [真正的转变不只是 Agent——而是工作流如何演进为 AI 工作区](/blog/workflow-builder-vs-ai-workspace)
+  * [真正的转变不只是 Agent——而是工作流如何演进为 AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)
 
-  * [想要一个实践中的具体例子？这是用飞书 CLI 搭单人工作流的配置](/blog/feishu-cli-solo-work-setup)
+  * [想要一个实践中的具体例子？这是用飞书 CLI 搭单人工作流的配置](/zh/blog/feishu-cli-solo-work-setup)
 
-  * [想往深走？这篇指南讲了自建 AI Agent 真正需要什么](/blog/how-to-build-an-ai-agent)
+  * [想往深走？这篇指南讲了自建 AI Agent 真正需要什么](/zh/blog/how-to-build-an-ai-agent)
 

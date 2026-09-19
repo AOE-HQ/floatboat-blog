@@ -25,7 +25,7 @@ draft: false
 
 如果你要建的东西，你会定期查看、反复迭代、随手调整——无代码是个合理的大本营。如果你指望它不需要关注、无限期地在后台自动跑——那就难说了，原因我在下面的"维护"一节里解释。
 
-![f8.PNG](/blog/images/no-code-ai-agent-builder/1779086815328-82d08bc8-e668-4a37-85bc-61fff8e23bd2.webp)
+![f8.PNG](/zh/blog/images/no-code-ai-agent-builder/1779086815328-82d08bc8-e668-4a37-85bc-61fff8e23bd2.webp)
 
 ## 无代码搭建器最擅长的地方
 
@@ -55,7 +55,7 @@ _最后这条，其实是我认为无代码做得最好的地方。_ 不一定�
 
 可靠性：托管基础设施上总体扎实。Zapier 声称付费计划正常运行时间 99.9%+。可靠性风险不在平台宕机——而在于 Agent 行为出乎意料，你却毫不知情。
 
-![f9.PNG](/blog/images/no-code-ai-agent-builder/1779086824884-7e481e33-6fb0-4fdf-bc13-0dc1986c199f.webp)
+![f9.PNG](/zh/blog/images/no-code-ai-agent-builder/1779086824884-7e481e33-6fb0-4fdf-bc13-0dc1986c199f.webp)
 
 **低代码（n8n、Dify、Flowise）**
 
@@ -71,7 +71,7 @@ _最后这条，其实是我认为无代码做得最好的地方。_ 不一定�
 
 如果你的整个团队已经住在同一个生态里，这些就说得通。Google 的 Workspace AI 流经 Gmail、Drive 和 Calendar，没有任何集成开销。代价是灵活性——你在他们的墙内搭建、用他们的模型、跟着他们的更新节奏走。这两家我都没在 Agent 用例上深度测过，所以我就讲到这。
 
-![f10.png](/blog/images/no-code-ai-agent-builder/1779086832910-bd3c4ba0-9e1f-403f-a9d1-9e5bc021618f.webp)
+![f10.png](/zh/blog/images/no-code-ai-agent-builder/1779086832910-bd3c4ba0-9e1f-403f-a9d1-9e5bc021618f.webp)
 
 ## 失败恢复与归属
 
@@ -113,7 +113,7 @@ _最后这条，其实是我认为无代码做得最好的地方。_ 不一定�
 
 说实话？对多数单人经营者来说，正确答案大概是：_从无代码开始，知道它的天花板，并想好超出它之后怎么办。_
 
-![f11.png](/blog/images/no-code-ai-agent-builder/1779086869560-316245cc-b6d2-4a9b-acc6-ef0283428096.webp)
+![f11.png](/zh/blog/images/no-code-ai-agent-builder/1779086869560-316245cc-b6d2-4a9b-acc6-ef0283428096.webp)
 
 诚实的总结：**无代码 AI Agent 搭建器**是真实的工具，不是玩具——但它有一道诚实的边界。需要速度的时候，在它里面建。同时要知道，你什么时候已经超出了它。
 
@@ -121,13 +121,13 @@ _最后这条，其实是我认为无代码做得最好的地方。_ 不一定�
 
 ## 系列前文
 
-  * 还在纠结你到底需不需要"AI Agent"？从这里开始：[什么是 AI Agent 平台？给单人经营者的决策框架](/blog/ai-agent-solo-operators)
+  * 还在纠结你到底需不需要"AI Agent"？从这里开始：[什么是 AI Agent 平台？给单人经营者的决策框架](/zh/blog/ai-agent-solo-operators)
 
-  * 想搞清工作流、自动化与真正 Agent 的区别？这篇把界线到底在哪讲清楚了：[AI 工作流 vs Agent 工作流：界线到底在哪](/blog/ai-agent-workflow-vibe-coding)
+  * 想搞清工作流、自动化与真正 Agent 的区别？这篇把界线到底在哪讲清楚了：[AI 工作流 vs Agent 工作流：界线到底在哪](/zh/blog/ai-agent-workflow-vibe-coding)
 
-  * 正在对比 Zapier、Make、n8n 或 Flowise？这份指南讲了选 AI Agent 搭建器时什么才真正要紧：[什么是最好的 AI Agent 搭建器？单人经营者真正该看什么](/blog/workspace-agents-vs-workflow-builders)
+  * 正在对比 Zapier、Make、n8n 或 Flowise？这份指南讲了选 AI Agent 搭建器时什么才真正要紧：[什么是最好的 AI Agent 搭建器？单人经营者真正该看什么](/zh/blog/workspace-agents-vs-workflow-builders)
 
-  * 如果你在工作区式 AI 工具和专用 Agent 之间摇摆，这篇对比值得先读：[工作区 Agent vs 聊天助手：真正要紧的那个区别](/blog/workspace-agents-vs-chat-assistants)
+  * 如果你在工作区式 AI 工具和专用 Agent 之间摇摆，这篇对比值得先读：[工作区 Agent vs 聊天助手：真正要紧的那个区别](/zh/blog/workspace-agents-vs-chat-assistants)
 
-  * 想法已经越过"跑起来"、看向长期可维护性？这篇讲工作流搭建器 vs 工作区 Agent 的文章正好接上这个问题：[工作区 Agent vs 工作流搭建器：哪种适合真实的单人工作？](/blog/workspace-agents-vs-workflow-builders)
+  * 想法已经越过"跑起来"、看向长期可维护性？这篇讲工作流搭建器 vs 工作区 Agent 的文章正好接上这个问题：[工作区 Agent vs 工作流搭建器：哪种适合真实的单人工作？](/zh/blog/workspace-agents-vs-workflow-builders)
 

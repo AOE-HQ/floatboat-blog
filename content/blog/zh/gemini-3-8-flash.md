@@ -30,7 +30,7 @@ draft: false
 
 对单人创业者来说，战略层面的读法比股价图有用。当一个实验室每隔几周就迭代一次主力干活模型、而不是把能力囤起来等年度旗舰时，精明的买家就不再锚定"世界最强模型"，而是转而盯住那条移动最快的"每美元前沿能力"曲线。谷歌自己的表述也印证了这点：发布文把 3.8 Flash 称为其"最聪明的主力干活模型"，DeepMind 领导层也公开主张，Gemini 越来越能充当更廉价、更专业的模型之上的协调层，[CNBC 的发布报道亦转述了这种观点](https://www.cnbc.com/2026/09/02/google-starts-september-with-ai-momentum-after-long-losing-streak.html)。无论你是否认同这个愿景，趋势都不可否认——2025 年还要按前沿价出售的能力，如今每百万输入 token 只要 $0.75。
 
-如果你是第一次跟踪 Flash 系列，自然的起点是我们早前对 [Gemini 3.7 Flash 发布](/blog/gemini-3-7-flash) 的拆解，本次发布正是它的直接继任者。本文其余部分假定你大致知道 Flash 档模型的行为方式，把重点放在 3.8 真正改变了什么上：规格、基准真相、那个奇怪的网络安全孪生版，以及你可以零 API 管道跑起它的地方。
+如果你是第一次跟踪 Flash 系列，自然的起点是我们早前对 [Gemini 3.7 Flash 发布](/zh/blog/gemini-3-7-flash) 的拆解，本次发布正是它的直接继任者。本文其余部分假定你大致知道 Flash 档模型的行为方式，把重点放在 3.8 真正改变了什么上：规格、基准真相、那个奇怪的网络安全孪生版，以及你可以零 API 管道跑起它的地方。
 
 ## 2\. Gemini 3.8 Flash 是什么——以及它怎么工作
 
@@ -56,7 +56,7 @@ Gemini 3.8 Flash 是一款正式商用（GA）的主力干活模型，为长时�
 
 这些是谷歌用自己的方法跑的分数；和任何发布日图表一样，发布当时独立复现还在进行中，[谷歌发布文也承认这一点](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/)——不过这条保留意见对 3.8 对 3.7 的相对差影响不大，那些差距大到足以认定是结构性的。在 DeepSWE v1.1 上，谷歌报告的 73.7% 与 Claude Opus 5 的 74.0% 基本持平，领先 GPT-5.6 Sol 的 72.7%，并比 3.7 Flash 的 65.3% 高出八个多百分点；谷歌自家发布文称，该模型在这项基准上"以零头的成本超越多数更大的前沿模型"。独立核查方向一致：The Decoder 与多位评测者把 3.8 Flash 放到同价位段 DeepSWE 榜单的顶端，其 73.7% 在谷歌图上与 Opus 5 的 74.0% 实际持平。专业侧，它在 Vals Finance Agent v2 与 Harvey 法律 Agent 基准上同时领先两款前沿旗舰，HLE-Verified 拿到 54.9%——对一款按 Flash 价出售的模型来说，这是实打实能打的成绩单。
 
-值得记住的独立标尺是 Artificial Analysis Intelligence Index，它不依赖谷歌的图。它对 Gemini 3.8 Flash 的评分是：高投入档 59、中档 57、低档 52，前代 3.7 Flash 为 56，[如该指数发布页所示](https://artificialanalysis.ai/models/releases/gemini-3-8-flash)——档位拉满时高出三分——并把高投入档的 3.8 Flash 与同为 59 分的 [Grok 4.6](/blog/grok-4-6) 和 GPT-5.6 Sol 并列，那才是你该真正拿来对比的同类组，[The Decoder 的榜单亦如此排布](https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia/)。但看每任务成本，画面是双刃的：高投入档下，模型每任务约 $0.58，比 3.7 Flash 的 $0.40 高约 40%——尽管每 token 价格完全相同。这是"更下功夫"带来的直接、可量化的后果。模型仍处在帕累托前沿上（其智能水平下最便宜的模型），但前沿是沿成本轴移动的，而不只是沿质量轴。
+值得记住的独立标尺是 Artificial Analysis Intelligence Index，它不依赖谷歌的图。它对 Gemini 3.8 Flash 的评分是：高投入档 59、中档 57、低档 52，前代 3.7 Flash 为 56，[如该指数发布页所示](https://artificialanalysis.ai/models/releases/gemini-3-8-flash)——档位拉满时高出三分——并把高投入档的 3.8 Flash 与同为 59 分的 [Grok 4.6](/zh/blog/grok-4-6) 和 GPT-5.6 Sol 并列，那才是你该真正拿来对比的同类组，[The Decoder 的榜单亦如此排布](https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia/)。但看每任务成本，画面是双刃的：高投入档下，模型每任务约 $0.58，比 3.7 Flash 的 $0.40 高约 40%——尽管每 token 价格完全相同。这是"更下功夫"带来的直接、可量化的后果。模型仍处在帕累托前沿上（其智能水平下最便宜的模型），但前沿是沿成本轴移动的，而不只是沿质量轴。
 
 接下来说诚实的缺口，因为过分乐观的报道正是在这些地方误导单人买家。OSWorld-2.0 计算机使用上，Gemini 3.8 Flash 得 59.0%，Claude Opus 5 是 75.4%——谷歌的模型历来在这里吃瘪，[Ars Technica](https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/) 指出，即便比 3.7 Flash 有进步，3.8 仍"远远落后"市场领头羊。在衡量通用 Agent 能力（而非脚本化工具调用）的 Terminal-Bench 4.0 上，差距更刺眼：3.8 Flash 19.1%，Opus 5 51.8%。GDPVal-AA v2 的知识工作 Elo 上，旗舰领先 1824 对 1545——当一份工作奖励的是纯粹的知识广度时，这个差距很有意义。与此同时，买来准确率的同一套"更下功夫"机制，如果用户把档位留在高位，就会让对效率敏感的用户变成输家——这正是谷歌告诉算力受限团队"留在 3.7 Flash 或降到低档位"的原因。
 
@@ -78,7 +78,7 @@ Gemini 3.8 Flash 是一款正式商用（GA）的主力干活模型，为长时�
 
 Gemini 3.8 Flash 已经内置到 Floatboat 里。它就待在 DeepSeek、MiniMax、GLM、Kimi、Claude 与 GPT-5 家族旁边的模型选择器里，不需要申请任何 API key，也不用配置任何路由器或代理——这正是 Floatboat"所有前沿模型、零配置"这一支柱所承诺的。于是谷歌的发布日变成一次选择器更新，而不是一个迁移项目：打开任意事件的模型列表，Gemini 3.8 Flash 立即可为那个任务所用；即便你在运行中途切换模型，事件的 Agent 工作区也照样保住上下文。
 
-哪些工作配得上多花的推理 token？长编码冲刺是高投入档的典型场景：让 3.8 Flash 在一份 pull request 或脚本上迭代到对为止，因为这才是 DeepSWE 相对 3.7 Flash 增益兑现的地方。会议准备与客户简报适合中档投入下的 100 万 token 上下文——Agent 读进整个线索和过去的交付物，而不是把它们分块。例行跟进与周期自动化则该留在 3.7 Flash 或低档位上，因为多花的 token 纯属浪费。我们关于"日历即运行时"底层模式的介绍——Agent 会前准备、会后跟进——见我们的 [Agentic Calendar](/blog/what-is-agentic-calendar) 解释文；本节只是在它上面加一层模型选择。
+哪些工作配得上多花的推理 token？长编码冲刺是高投入档的典型场景：让 3.8 Flash 在一份 pull request 或脚本上迭代到对为止，因为这才是 DeepSWE 相对 3.7 Flash 增益兑现的地方。会议准备与客户简报适合中档投入下的 100 万 token 上下文——Agent 读进整个线索和过去的交付物，而不是把它们分块。例行跟进与周期自动化则该留在 3.7 Flash 或低档位上，因为多花的 token 纯属浪费。我们关于"日历即运行时"底层模式的介绍——Agent 会前准备、会后跟进——见我们的 [Agentic Calendar](/zh/blog/what-is-agentic-calendar) 解释文；本节只是在它上面加一层模型选择。
 
 内置这件事，对一个单人创始人意味着三样实际的变化。逐事件选模型，意味着你永远不必让一条工作流被单一家厂商锁死。零基础设施，意味着没有每月 API 账单，谷歌一月份改价时也没有路由逻辑要维护。而且因为投入档位现在才是 3.8 Flash 上真正的成本杠杆，在每个事件旁边看到模型列表，会让成本决策比 API 控制台任何时候都清楚。如果备选方案是把三个独立的 API 账户接进一个自定义 Agent 循环，那差别就不只是方便与否——而是"这周就用上 Gemini 3.8 Flash"和"某天再去试试"之间的差距。
 

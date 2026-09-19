@@ -25,7 +25,7 @@ draft: false
 
 不过，最要紧的不是它们_能_做什么，而是它提议的那套自动化，是否真的对应你工作流里某个真实的瓶颈。我见过机构为根本不存在的问题设计出漂亮系统的例子。
 
-![1.png](/blog/images/ai-automation-agency-pricing/1778147196788-087223f6-ca65-4f2c-9e6c-c0f1ef6a76f6.webp)
+![1.png](/zh/blog/images/ai-automation-agency-pricing/1778147196788-087223f6-ca65-4f2c-9e6c-c0f1ef6a76f6.webp)
 
 ## 它们怎么收费
 
@@ -51,7 +51,7 @@ draft: false
 
 如果你的用量可预测，这种方式会很合适；如果不可预测，费用会很快失控。哪种情况最适合这种模式，我自己也还没完全想透——我的建议是：值得问，但签约前要把这笔账算清楚。
 
-![2.png](/blog/images/ai-automation-agency-pricing/1778147224627-5f13455e-02e8-468a-a5e7-91f05479f8d0.webp)
+![2.png](/zh/blog/images/ai-automation-agency-pricing/1778147224627-5f13455e-02e8-468a-a5e7-91f05479f8d0.webp)
 
 ## 什么在推高或压低价格
 
@@ -79,7 +79,7 @@ draft: false
 
 签任何字之前，我建议把这一切都问清楚。
 
-![3.png](/blog/images/ai-automation-agency-pricing/1778147238416-2996d766-cb44-4b87-ae91-37c0bc9f9544.webp)
+![3.png](/zh/blog/images/ai-automation-agency-pricing/1778147238416-2996d766-cb44-4b87-ae91-37c0bc9f9544.webp)
 
 ## 什么时候值得雇
 
@@ -117,7 +117,7 @@ draft: false
 
 **「90 天后的成功长什么样？」**如果它们答不出一个可衡量的东西，那么事后这笔合作会很难评估。
 
-![4.png](/blog/images/ai-automation-agency-pricing/1778147254289-d2deeec5-01d8-48fc-943f-caafba1e277e.webp)
+![4.png](/zh/blog/images/ai-automation-agency-pricing/1778147254289-d2deeec5-01d8-48fc-943f-caafba1e277e.webp)
 
 以上就是我对当前 AI 自动化机构定价现状的真实看法。市场仍在成熟，价格区间很宽，机构之间的质量差距真实存在。如果你正在评估这笔支出，最好的做法是把话说具体——具体到你要自动化什么、成功长什么样、以及搭建完成之后会发生什么。
 
@@ -125,9 +125,9 @@ draft: false
 
 ### 延伸阅读
 
-  * 👉 [AI Agent 真实用例：实践中到底长什么样](/blog/ai-agent-use-cases-real-examples)
+  * 👉 [AI Agent 真实用例：实践中到底长什么样](/zh/blog/ai-agent-use-cases-real-examples)
 
-  * 👉 [单人创始人如何用 AI 像团队一样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+  * 👉 [单人创始人如何用 AI 像团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * 👉 [Lindy vs Gumloop：AI 自动化工具的实用对比](/blog/lindy-vs-gumloop)
+  * 👉 [Lindy vs Gumloop：AI 自动化工具的实用对比](/zh/blog/lindy-vs-gumloop)
 

@@ -27,7 +27,7 @@ Gumloop 是 Y Combinator Winter 2024 项目出身，2026 年初完成了由 Benc
 
 理论上听起来很顺滑。实际上呢？很大程度上取决于你想自动化什么——以及你能不能把它清楚地拆成一步步的序列。
 
-![2.png](/blog/images/gumloop-review-2026/1774256602488-a577790c-7cae-499a-963c-aea7725354fe.webp)
+![2.png](/zh/blog/images/gumloop-review-2026/1774256602488-a577790c-7cae-499a-963c-aea7725354fe.webp)
 
 ## 它真正出彩的地方
 
@@ -57,7 +57,7 @@ Gumloop 集成 Google Sheets、Slack、Salesforce 以及 125+ 款应用，还支
 
 如果你是个单人经营者，本来就要在内容、客户工作、行政**和**自己的学习曲线之间周旋——这是笔不小的投入。这不是那种一下午就能跑起来的工具。
 
-![3.png](/blog/images/gumloop-review-2026/1774256617943-2315a1e0-c658-4252-8f4d-851d922ff4d5.webp)
+![3.png](/zh/blog/images/gumloop-review-2026/1774256617943-2315a1e0-c658-4252-8f4d-851d922ff4d5.webp)
 
 ### 上下文连续性：它能处理什么、不能处理什么
 
@@ -79,7 +79,7 @@ credit 体系是定价里最绕的部分。**标准 AI 调用约 2 credits；高
 
 超出配额按每 credit 0.005 美元计费，且没有自动关闭——所以 Solo 用户若超出配额 15,000 credits，就要额外付 75 美元。下单前先看 [Gumloop 官方定价页](https://www.gumloop.com/pricing)——随着产品成熟，套餐档位和 credit 结构已经改过多次。
 
-![4.png](/blog/images/gumloop-review-2026/1774256629584-868f68d2-9e14-410d-9be8-7c7bb7a2667f.webp)
+![4.png](/zh/blog/images/gumloop-review-2026/1774256629584-868f68d2-9e14-410d-9be8-7c7bb7a2667f.webp)
 
 ## 它最适合谁——以及谁可能该找别的东西
 
@@ -95,7 +95,7 @@ credit 体系是定价里最绕的部分。**标准 AI 调用约 2 credits；高
 
 它还预设了一种特定的自动化需求：**高并发、低变体。**如果你真正需要的是一个思考伙伴、或一个能处理模糊性的工具——那是另一个产品品类。像 [n8n](https://n8n.io/)（开源、可自托管）这类工具，在成本上可能更适合技术向的单人玩家；更简单的工具则可能更适合轻量需求。
 
-![5.png](/blog/images/gumloop-review-2026/1774256641947-3e99ec7c-014a-4cb9-b5a1-03534423a3ee.webp)
+![5.png](/zh/blog/images/gumloop-review-2026/1774256641947-3e99ec7c-014a-4cb9-b5a1-03534423a3ee.webp)
 
 ## 最终结论
 
@@ -109,13 +109,13 @@ _总之，这就是我花真时间用过它之后得出的结论。它不是万�
 
 ## 往期文章：
 
-  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差别](/blog/lindy-vs-gumloop)
+  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差别](/zh/blog/lindy-vs-gumloop)
 
-  * [探索调研、内容与运营里的真实 AI Agent 应用场景](/blog/ai-agent-use-cases-real-examples)
+  * [探索调研、内容与运营里的真实 AI Agent 应用场景](/zh/blog/ai-agent-use-cases-real-examples)
 
-  * [看一人公司如何开始用 AI 角色像完整团队一样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+  * [看一人公司如何开始用 AI 角色像完整团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [了解 AI 自动化服务在真实市场里到底怎么定价](/blog/ai-automation-agency-pricing)
+  * [了解 AI 自动化服务在真实市场里到底怎么定价](/zh/blog/ai-automation-agency-pricing)
 
-  * [理解真实工作流里 AI Agent 与 AI 助手的区别](/blog/ai-agent-vs-ai-assistant)
+  * [理解真实工作流里 AI Agent 与 AI 助手的区别](/zh/blog/ai-agent-vs-ai-assistant)
 

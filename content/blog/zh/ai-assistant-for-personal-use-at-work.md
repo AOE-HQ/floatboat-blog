@@ -31,7 +31,7 @@ draft: false
 
 **如果你很依赖规划**——季度复盘、项目范围界定、决策追踪——最大的收获不是生成，而是**结构化思考**。让 AI 对你起草的计划唱反调，或指出项目大纲里的漏洞，会改变你交付物的质量。[Zapier 2026 年对 AI 个人助手的拆解](https://zapier.com/blog/ai-personal-assistant/)说得很到位：真正在复利增值的工具，是你用来做**判断**而非只做生成的工具。
 
-![f2.PNG](/blog/images/ai-assistant-for-personal-use-at-work/1778661949770-c56cb1e1-70b2-476e-8db8-b708769eb49a.webp)
+![f2.PNG](/zh/blog/images/ai-assistant-for-personal-use-at-work/1778661949770-c56cb1e1-70b2-476e-8db8-b708769eb49a.webp)
 
 ## 「个人使用」对单人工作意味着什么
 
@@ -59,7 +59,7 @@ draft: false
 
 **桌面 AI 工作区**是一个在 2026 年仍在成熟的品类。它的设想——一个凌驾于你的文件、浏览器和本地应用之上、能跨所有这些进行协调的 AI——对有跨应用工作流的单人创业者是对的。想一想：读一份 PDF、从网页里取点东西、在文档里起草、经由某个已连接的服务发出去。如果你经常做这类工作，这种形态有实打实的上升空间。诚实的告诫：配置比插件或网页应用重，而且品类还太早期，各工具差异巨大。场景合适值得一试，但对新手不是起点。
 
-![f3.PNG](/blog/images/ai-assistant-for-personal-use-at-work/1778661960784-ee4846be-8dbd-43e9-b2da-d8aafbca23f1.webp)
+![f3.PNG](/zh/blog/images/ai-assistant-for-personal-use-at-work/1778661960784-ee4846be-8dbd-43e9-b2da-d8aafbca23f1.webp)
 
 ## 隐私与文件处理检查清单
 
@@ -89,7 +89,7 @@ draft: false
 
 一个我实际用下来很有用的做法：涉及客户材料或任何受 NDA 约束的会话，我会单独建一个项目，或开一个关掉 Memory 的新会话，干完活再关掉。这点摩擦很小，现在已经成了自动习惯。
 
-![f4.png](/blog/images/ai-assistant-for-personal-use-at-work/1778662001563-2d3286ca-288f-459f-b16f-d45434dd3ed7.webp)
+![f4.png](/zh/blog/images/ai-assistant-for-personal-use-at-work/1778662001563-2d3286ca-288f-459f-b16f-d45434dd3ed7.webp)
 
 ## 付费前的 7 天试用计划
 
@@ -109,13 +109,13 @@ draft: false
 
 ## 延伸阅读
 
-  * 如果 AI 助手用起来还像「更聪明的搜索引擎」，通常是这个工作流转变改变了一切：[为什么 AI 会跨会话遗忘——以及为什么上下文比模型质量更重要](/blog/why-ai-forgets-between-sessions)
+  * 如果 AI 助手用起来还像「更聪明的搜索引擎」，通常是这个工作流转变改变了一切：[为什么 AI 会跨会话遗忘——以及为什么上下文比模型质量更重要](/zh/blog/why-ai-forgets-between-sessions)
 
-  * 多数单人创业者真正需要的不是更多 AI 工具，而是更少让上下文散落的地方：[为什么你的工作流显得支离破碎：面向单人创业者的工作区 Agent](/blog/workspace-agents-for-solo-operators)
+  * 多数单人创业者真正需要的不是更多 AI 工具，而是更少让上下文散落的地方：[为什么你的工作流显得支离破碎：面向单人创业者的工作区 Agent](/zh/blog/workspace-agents-for-solo-operators)
 
-  * 在测试 AI 助手？真正的生产力提升通常来自工作流契合，而不是每个月换最新模型：[一人公司场景：Meta Muse Spark vs GPT-5.4](/blog/meta-muse-spark-one-person-company)
+  * 在测试 AI 助手？真正的生产力提升通常来自工作流契合，而不是每个月换最新模型：[一人公司场景：Meta Muse Spark vs GPT-5.4](/zh/blog/meta-muse-spark-one-person-company)
 
-  * 如果你在聊天助手与工作区式 AI 之间犹豫，这篇拆解讲清了各自真正有用的地方：[工作区 Agent vs 聊天助手](/blog/workspace-agents-vs-chat-assistants)
+  * 如果你在聊天助手与工作区式 AI 之间犹豫，这篇拆解讲清了各自真正有用的地方：[工作区 Agent vs 聊天助手](/zh/blog/workspace-agents-vs-chat-assistants)
 
-  * 给单人创业者一份让 AI 工作流真正活过「试用周」的实操指南：[独立创始人的 AI 工作流](/blog/ai-workflow-for-solo-founders)
+  * 给单人创业者一份让 AI 工作流真正活过「试用周」的实操指南：[独立创始人的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)
 

@@ -27,7 +27,7 @@ Tan 公开分享的吞吐数字很惊人：用这套配置，他在 50 天里平
 
 等等……这个想法不只是给开发者用的。
 
-![2.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459016136-94e22b30-5d40-4c2a-8535-940e2a8b2832.webp)
+![2.png](/zh/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459016136-94e22b30-5d40-4c2a-8535-940e2a8b2832.webp)
 
 ## 角色化提示真正在解决的问题
 
@@ -63,7 +63,7 @@ _第三阶段——写手：_到这一步我才要草稿，并显式把第二阶
 
 我没法给你一个受控实验。但过去三周我一直在稳定地跑这套模式，重写比例一直维持住。这对我来说足够继续做下去了。
 
-![3.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459030112-6a760160-8f09-465c-9722-d413ac5aad73.webp)
+![3.png](/zh/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459030112-6a760160-8f09-465c-9722-d413ac5aad73.webp)
 
 ## 为什么有效：角色分配背后的认知科学
 
@@ -89,7 +89,7 @@ _第三阶段——写手：_到这一步我才要草稿，并显式把第二阶
 
 这其实是 AI 工作区工具变得相关的地方——不是作为角色化提示的替代品，而是作为一层跨会话保持上下文的载体。[Floatboat](</>) 通过他们所称的 "Tacit Engine" 来接近这个目标——理念是工作区会随时间从你真实的工作模式里学习，让角色分配得以延续而不是每次重置。我用了它几周。它还不是一个完成品，我也还在琢磨怎么在不制造太多额外负担的前提下组织我的工作流。但底层逻辑——角色化提示在 AI 已经了解你上下文的时候会更强大——这部分我觉得说得通。
 
-![4.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459040085-d71dae1a-98b1-417a-b922-e79b6eeec04f.webp)
+![4.png](/zh/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459040085-d71dae1a-98b1-417a-b922-e79b6eeec04f.webp)
 
 ## 一个实用框架：不懂开发也能用
 
@@ -101,7 +101,7 @@ _第三阶段——写手：_到这一步我才要草稿，并显式把第二阶
 
 **第三步：把产出存档往前带。**每个会话结束时，存一份 3–5 句的摘要，记下你发现了什么、决定了什么。下一个会话开始时把它粘进去当上下文。这是手动记忆，但有用。
 
-![5.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459050612-f57596fb-c98c-4340-8674-2eefff60f69e.webp)
+![5.png](/zh/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459050612-f57596fb-c98c-4340-8674-2eefff60f69e.webp)
 
 _总之，这是我把这套方法跑了三周后得出的结论。gstack 这套开发者的外壳对程序员来说确实有意思。而底下那个想法——当 AI 知道自己戴的是哪顶帽子时会更锋利——适用于任何独自做复杂工作的人。我还在琢磨细节。但这个基本模式已经留下来了。_
 
@@ -109,13 +109,13 @@ _回去继续干活了。_
 
 ## 上一篇系列文章：
 
-  * [看看单人创业者如何把 AI 工作流组织得像一个完整团队](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+  * [看看单人创业者如何把 AI 工作流组织得像一个完整团队](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [理解在工作流里分配角色时，AI Agent 与 AI 助手的实际差别](/blog/ai-agent-vs-ai-assistant)
+  * [理解在工作流里分配角色时，AI Agent 与 AI 助手的实际差别](/zh/blog/ai-agent-vs-ai-assistant)
 
-  * [探索如何真正搭一个 AI Agent 系统，而不是依赖单一通用助手](/blog/how-to-build-an-ai-agent)
+  * [探索如何真正搭一个 AI Agent 系统，而不是依赖单一通用助手](/zh/blog/how-to-build-an-ai-agent)
 
-  * [看真实的 AI Agent 用例，理解角色化系统在实践中表现如何](/blog/ai-agent-use-cases-real-examples)
+  * [看真实的 AI Agent 用例，理解角色化系统在实践中表现如何](/zh/blog/ai-agent-use-cases-real-examples)
 
-  * [在设计结构化、角色化的 AI 系统时，对比 Workflow 构建器与 AI 工作区](/blog/workflow-builder-vs-ai-workspace)
+  * [在设计结构化、角色化的 AI 系统时，对比 Workflow 构建器与 AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)
 

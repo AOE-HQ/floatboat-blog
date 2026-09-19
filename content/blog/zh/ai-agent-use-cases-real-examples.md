@@ -23,7 +23,7 @@ draft: false
 
 这些不是编造的公司故事，而是基于我观察到的模式搭出来的场景：那些在日复一日的工作里真正使用 AI Agent 的单人创业者、小内容团队和独立顾问。
 
-![1.png](/blog/images/ai-agent-use-cases-real-examples/1773971292439-3e6c017d-7b54-4ac0-bde8-170df1990c50.webp)
+![1.png](/zh/blog/images/ai-agent-use-cases-real-examples/1773971292439-3e6c017d-7b54-4ac0-bde8-170df1990c50.webp)
 
 ## 场景 1：从调研到客户交付物
 
@@ -45,7 +45,7 @@ draft: false
 
 Agent 能把信息搜出来，却无法像领域专家那样**判断相关性**。你仍需要人工过一遍，去抓出错误归因或浅层分析。另外：如果资料被付费墙挡住或需要登录，这个工作流就会中断。
 
-![2.png](/blog/images/ai-agent-use-cases-real-examples/1773915395661-0a7147cc-44e0-4c83-9848-807c5b9a1f78.webp)
+![2.png](/zh/blog/images/ai-agent-use-cases-real-examples/1773915395661-0a7147cc-44e0-4c83-9848-807c5b9a1f78.webp)
 
 ## 场景 2：长内容的二次创作
 
@@ -83,7 +83,7 @@ Agent 不知道该为不同受众删掉哪些背景。LinkedIn 帖子需要的�
 
 Agent 能发现表面变化，却会漏掉战略性信号。定价页上的一处措辞微调可能毫无意义——也可能意味着一场重新定位正在进行。**对信号的解读仍然要由人来做。**此外，有些竞品会主动掩盖变化，这是任何 Agent 都无法绕开的。
 
-![3.png](/blog/images/ai-agent-use-cases-real-examples/1773915407309-f2e6056c-db28-4a51-b247-5920f14d67d7.webp)
+![3.png](/zh/blog/images/ai-agent-use-cases-real-examples/1773915407309-f2e6056c-db28-4a51-b247-5920f14d67d7.webp)
 
 ## 场景 4：根据 brief 起草方案
 
@@ -117,7 +117,7 @@ Agent 不了解那些没有说出口的背景——客户内部的关系、对�
 
   * **质量仍然由人的判断把关。**在上面每个案例里，Agent 负责处理工作量，人负责做判断。
 
-![2.png](/blog/images/ai-agent-use-cases-real-examples/1773971305952-85e09a4b-e204-47c3-85ba-ca6b6a8f90b0.webp)
+![2.png](/zh/blog/images/ai-agent-use-cases-real-examples/1773971305952-85e09a4b-e204-47c3-85ba-ca6b6a8f90b0.webp)
 
 ### 仍需要人的判断的地方
 
@@ -145,15 +145,15 @@ Agent 不了解那些没有说出口的背景——客户内部的关系、对�
 
 对了……还有一件事我不断观察到：**从 AI Agent 里获益最多的人，未必是技术最强的。**而是那些最清楚自己想要什么的人。好的提示词，其实就是把清晰的思考写下来。[OpenAI 的提示词工程指南](https://platform.openai.com/docs/guides/prompt-engineering)对非开发者来说意外地有用——其中大部分建议归结起来就一句话：要精确。
 
-![5.png](/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.webp)
+![5.png](/zh/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.webp)
 
 _如果你也正在试验 AI 工作流，我很想知道对你真正有效的是什么。我自己也还在摸索——不过，这大概正是有趣的部分。_
 
 **往期文章：**
 
-  * [一个人如何像一支团队那样用 AI 工作流运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+  * [一个人如何像一支团队那样用 AI 工作流运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [AI 自动化服务在真实市场里到底怎么定价](/blog/ai-automation-agency-pricing)
+  * [AI 自动化服务在真实市场里到底怎么定价](/zh/blog/ai-automation-agency-pricing)
 
-  * [Lindy 与 Gumloop 在 Agent 式工作流上的差别](/blog/lindy-vs-gumloop)
+  * [Lindy 与 Gumloop 在 Agent 式工作流上的差别](/zh/blog/lindy-vs-gumloop)
 

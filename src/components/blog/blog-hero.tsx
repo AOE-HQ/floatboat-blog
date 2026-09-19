@@ -1,24 +1,30 @@
 import Link from "next/link";
 
 interface HeroProps {
+  locale?: "en" | "zh";
   siteName: string;
   title: string;
   description: string;
   articleCount: number;
   categories: { slug: string; name: string; count: number }[];
+  localePrefix?: string;
+  browseLabel?: string;
 }
 
 /**
  * Blog index hero — editorial positioning on the left, content-pillar
- * stats panel on the right. Replaces the plain "Blog" title + topic
- * pills header for a stronger first impression.
+ * stats panel on the right. localePrefix controls the link prefix
+ * ("" for en, "/zh" for zh).
  */
 export function BlogHero({
+  locale = "en",
   siteName,
   title,
   description,
   articleCount,
   categories,
+  localePrefix = "",
+  browseLabel = "Browse by topic",
 }: HeroProps) {
   return (
     <header className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
@@ -35,7 +41,7 @@ export function BlogHero({
           {description}
         </p>
         <p className="mt-5 text-sm font-medium text-[var(--ob-color-muted)]">
-          {articleCount} articles · updated weekly
+          {locale === "zh" ? `${articleCount} 篇文章 · 每周更新` : `${articleCount} articles · updated weekly`}
         </p>
       </div>
 
@@ -43,13 +49,13 @@ export function BlogHero({
       <div className="hidden lg:col-span-5 lg:block">
         <div className="rounded-2xl border border-[var(--ob-color-border)] bg-[var(--ob-color-surface)] p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-muted)]">
-            Browse by topic
+            {browseLabel}
           </p>
           <ul className="mt-4 space-y-1">
             {categories.slice(0, 7).map((cat) => (
               <li key={cat.slug}>
                 <Link
-                  href={`/blog/category/${cat.slug}`}
+                  href={`${localePrefix}/blog/category/${cat.slug}`}
                   className="group flex items-center justify-between rounded-lg px-3 py-2.5 transition-colors hover:bg-[var(--ob-color-surface-hover,var(--ob-color-surface))]"
                 >
                   <span className="text-sm font-medium text-[var(--ob-color-text)]">

@@ -35,7 +35,7 @@ draft: false
 
 等等——这个框定其实很有意思。信不信由你，它都在强迫公众去面对一个大多数公司都没回答的问题：当 AI 让你的团队高效一倍，这份效率去了哪里？
 
-![2.PNG](/blog/images/openai-4-day-work-week-one-person-company/1776318600744-0fe3d381-e682-42b9-ae5a-896cd2162f72.webp)
+![2.PNG](/zh/blog/images/openai-4-day-work-week-one-person-company/1776318600744-0fe3d381-e682-42b9-ae5a-896cd2162f72.webp)
 
 ## 单人创业者早就把这件事想明白了
 
@@ -65,7 +65,7 @@ draft: false
 
 这是一个结构性的论证，不只是政治性的。背后的算账是真实的：如果足够多的工作被自动化，支撑公共项目的就业税基就会缩水——无论你对政治是什么态度。
 
-![3.png](/blog/images/openai-4-day-work-week-one-person-company/1776318609188-793b51ae-ec86-442b-9d92-ed646d17a1ec.webp)
+![3.png](/zh/blog/images/openai-4-day-work-week-one-person-company/1776318609188-793b51ae-ec86-442b-9d92-ed646d17a1ec.webp)
 
 ### 单人创业者在这场辩论里的位置
 
@@ -97,9 +97,9 @@ draft: false
 
 对单人创业者来说，那个系统通常意味着有明确的收工标准——开始之前就知道"做完"长什么样——并且不把 AI 腾出来的时间当作接更多项目的许可。
 
-![4.png](/blog/images/openai-4-day-work-week-one-person-company/1776318618663-89d3436c-4532-4f5b-8570-fb8748c29821.webp)
+![4.png](/zh/blog/images/openai-4-day-work-week-one-person-company/1776318618663-89d3436c-4532-4f5b-8570-fb8748c29821.webp)
 
-![5.png](/blog/images/openai-4-day-work-week-one-person-company/1776318627488-fbaa7f4b-123f-43d8-bb6d-169c2ca66d65.webp)
+![5.png](/zh/blog/images/openai-4-day-work-week-one-person-company/1776318627488-fbaa7f4b-123f-43d8-bb6d-169c2ca66d65.webp)
 
 OpenAI 的四天工作制提案，作为政策信号很有意思——它告诉了你这家公司如何看待 AI 颠覆的展开方式。但对一个经营一人业务的人来说，更有用的框架更简单：**AI 给你产能。你怎么用这份产能，是一个选择，不是一个自动发生的结果。**
 
@@ -107,13 +107,13 @@ OpenAI 的四天工作制提案，作为政策信号很有意思——它告诉�
 
 ## 延伸阅读
 
-* [了解 AI 为什么每次会话都重置、这对你的工作流意味着什么](/blog/why-ai-forgets-between-sessions)
+* [了解 AI 为什么每次会话都重置、这对你的工作流意味着什么](/zh/blog/why-ai-forgets-between-sessions)
 
-* [看看面向单人创始人的 AI 工作流在实践里到底是什么样](/blog/ai-workflow-for-solo-founders)
+* [看看面向单人创始人的 AI 工作流在实践里到底是什么样](/zh/blog/ai-workflow-for-solo-founders)
 
-* [了解一人公司如何靠 AI 像一整支团队那样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+* [了解一人公司如何靠 AI 像一整支团队那样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-* [探索 AI 助手与真正的 AI Agent 之间的区别](/blog/ai-agent-vs-ai-assistant)
+* [探索 AI 助手与真正的 AI Agent 之间的区别](/zh/blog/ai-agent-vs-ai-assistant)
 
-* [深入理解持久化 AI Agent 对长期生产率意味着什么](/blog/what-is-persistent-ai-agent)
+* [深入理解持久化 AI Agent 对长期生产率意味着什么](/zh/blog/what-is-persistent-ai-agent)
 
