@@ -16,17 +16,17 @@ export function NewsletterSubscribe({ copy }: { copy: NewsletterCopy }) {
   const isZh = getLocaleFromPathname(usePathname() ?? "/") === "zh";
 
   return (
-    <div className="grid gap-6 rounded-[24px] border border-black/[0.08] bg-[#fbfaf8]/70 p-6 shadow-sm sm:p-8 md:grid-cols-2 md:items-center">
+    <div className="grid gap-6 rounded-[24px] border border-black/[0.08] bg-[var(--ob-color-surface)]/70 p-6 shadow-sm sm:p-8 md:grid-cols-2 md:items-center">
       <div>
-        <h3 className="font-serif text-2xl leading-snug font-medium tracking-[-0.01em] text-[#1b1a18] sm:text-3xl">
+        <h3 className="font-serif text-2xl leading-snug font-medium tracking-[-0.01em] text-[var(--ob-color-text)] sm:text-3xl">
           {copy.title}
         </h3>
-        <p className="mt-2 max-w-md text-sm leading-relaxed text-[#7a7671]">
+        <p className="mt-2 max-w-md text-sm leading-relaxed text-[var(--ob-color-muted)]">
           {copy.description}
         </p>
       </div>
       {subscribed ? (
-        <p className="text-sm leading-relaxed text-[#7a7671]">{copy.success}</p>
+        <p className="text-sm leading-relaxed text-[var(--ob-color-muted)]">{copy.success}</p>
       ) : (
         <form
           className="flex w-full flex-col gap-3 sm:flex-row"
@@ -43,11 +43,11 @@ export function NewsletterSubscribe({ copy }: { copy: NewsletterCopy }) {
             type="email"
             required
             placeholder={copy.placeholder}
-            className="min-h-12 flex-1 rounded-full border border-black/[0.12] bg-[#f0eeeb] px-5 py-3 text-sm text-[#1b1a18] placeholder:text-[#7a7671]/60 focus:border-[#1b1a18]/30 focus:ring-2 focus:ring-[#1b1a18]/15 focus:outline-none"
+            className="min-h-12 flex-1 rounded-full border border-[var(--ob-color-border-strong)] bg-[var(--ob-color-bg)] px-5 py-3 text-sm text-[var(--ob-color-text)] placeholder:text-[var(--ob-color-muted)]/60 focus:border-[var(--ob-color-text)]/30 focus:ring-2 focus:ring-[var(--ob-color-text)]/15 focus:outline-none"
           />
           <button
             type="submit"
-            className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#1b1a18] px-6 py-3 text-sm font-medium text-[#f0eeeb] shadow-md transition hover:opacity-90"
+            className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--ob-color-text)] px-6 py-3 text-sm font-medium text-[var(--ob-color-bg)] shadow-md transition hover:opacity-90"
           >
             {copy.buttonLabel}
           </button>

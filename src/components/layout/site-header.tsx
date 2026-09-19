@@ -147,7 +147,7 @@ export function SiteHeader() {
   const isZh = locale === "zh";
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[rgba(240,238,235,0.8)] backdrop-blur-[16px]">
+    <header className="sticky top-0 z-50 w-full bg-[var(--ob-color-bg-glass)] backdrop-blur-[16px]">
       <div className="mx-auto max-w-[1440px] px-10 max-lg:px-5">
         <div className="flex h-[76px] items-center gap-5">
           <div className="flex-1">
@@ -179,7 +179,7 @@ export function SiteHeader() {
                   <button
                     type="button"
                     aria-haspopup="true"
-                    className="flex h-10 cursor-pointer items-center gap-1 rounded-md px-0 text-sm font-medium text-[#7a7671] transition-colors hover:text-[#1b1a18] group-hover:text-[#1b1a18]"
+                    className="flex h-10 cursor-pointer items-center gap-1 rounded-md px-0 text-sm font-medium text-[var(--ob-color-muted)] transition-colors hover:text-[var(--ob-color-text)] group-hover:text-[var(--ob-color-text)]"
                   >
                     <span>{isZh ? group.zh : group.en}</span>
                     <svg
@@ -200,12 +200,12 @@ export function SiteHeader() {
                           key={item.en}
                           target="_self"
                           href={menuItemHref(item, isZh)}
-                          className="block rounded-lg px-3 py-2.5 transition-colors hover:bg-[#f5f4f1]"
+                          className="block rounded-lg px-3 py-2.5 transition-colors hover:bg-[var(--ob-color-surface-hover)]"
                         >
-                          <span className="block text-sm font-semibold text-[#1b1a18]">
+                          <span className="block text-sm font-semibold text-[var(--ob-color-text)]">
                             {isZh ? item.zh : item.en}
                           </span>
-                          <span className="mt-0.5 block text-xs leading-snug text-[#7a7671]">
+                          <span className="mt-0.5 block text-xs leading-snug text-[var(--ob-color-muted)]">
                             {isZh ? item.descZh : item.descEn}
                           </span>
                         </a>
@@ -221,7 +221,7 @@ export function SiteHeader() {
                     aria-label={isZh ? link.zh : link.en}
                     title={isZh ? link.zh : link.en}
                     href={isZh ? link.zhHref : link.href}
-                    className="flex h-10 items-center justify-center rounded-md px-0 text-sm font-medium text-[#7a7671] transition-colors hover:text-[#1b1a18]"
+                    className="flex h-10 items-center justify-center rounded-md px-0 text-sm font-medium text-[var(--ob-color-muted)] transition-colors hover:text-[var(--ob-color-text)]"
                   >
                     <span>{isZh ? link.zh : link.en}</span>
                   </a>
@@ -233,7 +233,7 @@ export function SiteHeader() {
           <div className="hidden flex-1 items-center justify-end gap-3 md:flex">
             <LanguageSwitcher />
             <a
-              className="inline-flex h-9 min-h-9 items-center justify-center gap-2 whitespace-nowrap rounded-full px-[14px] text-[14px] font-medium leading-[20px] transition-colors bg-[#f7d68b] text-[#1b1a18] hover:bg-[#f3cf79]"
+              className="inline-flex h-9 min-h-9 items-center justify-center gap-2 whitespace-nowrap rounded-full px-[14px] text-[14px] font-medium leading-[20px] transition-colors bg-[var(--ob-color-primary)] text-[var(--ob-color-text)] hover:bg-[var(--ob-color-primary-hover)]"
               title={isZh ? "下载" : "Download"}
               aria-label={isZh ? "下载" : "Download"}
               href={

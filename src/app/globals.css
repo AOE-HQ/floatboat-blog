@@ -58,6 +58,43 @@
   --ob-radius-lg: 24px;
 
   --ob-shadow-raised: 0 1px 2px rgb(0 0 0 / 0.04), 0 2px 6px rgb(0 0 0 / 0.05);
+
+  /* ── 语义补充（chrome/CTA 层，对应 设计-Design/视觉Token 语义色维度）── */
+  --ob-color-primary-hover: #f3cf79;
+  --ob-color-surface-hover: #f5f4f1;
+  --ob-color-bg-glass: rgb(240 238 235 / 0.8); /* header 毛玻璃 = bg @ 80% */
+  --ob-color-border-strong: rgb(0 0 0 / 0.12); /* 玻璃面上的输入框描边 */
+
+  /* ── 字阶（与 Tailwind 默认刻度对齐；Typography 专册）── */
+  --ob-text-xs: 0.75rem;
+  --ob-text-sm: 0.875rem;
+  --ob-text-base: 1rem;
+  --ob-text-lg: 1.125rem;
+  --ob-text-xl: 1.25rem;
+  --ob-text-2xl: 1.5rem;
+  --ob-text-3xl: 1.875rem;
+  --ob-text-4xl: 2.25rem;
+
+  /* ── 间距（4/8px 双轨；Spacing 专册）── */
+  --ob-space-1: 4px;
+  --ob-space-2: 8px;
+  --ob-space-3: 12px;
+  --ob-space-4: 16px;
+  --ob-space-6: 24px;
+  --ob-space-8: 32px;
+  --ob-space-12: 48px;
+  --ob-space-16: 64px;
+  --ob-space-24: 96px;
+
+  /* ── 阴影档位（Elevation 专册：3 档语义）── */
+  --ob-shadow-xs: 0 1px 2px rgb(0 0 0 / 0.04);
+  --ob-shadow-overlay: 0 12px 32px rgb(0 0 0 / 0.12);
+
+  /* ── 动效（Motion 专册：档位 + 缓动）── */
+  --ob-duration-fast: 150ms;
+  --ob-duration-base: 200ms;
+  --ob-duration-slow: 300ms;
+  --ob-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Warm dark variant. Light-first: dark only reacts to system preference and
