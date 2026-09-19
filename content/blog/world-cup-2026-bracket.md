@@ -50,7 +50,7 @@ The most important workflow is upstream first: confirm the final group tables, t
 
 
 
-> Source: [FIFA Official Bracket](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
+> Match results, dates, and venues above per FIFA's official bracket.
 
 The Round of 32 is the biggest structural change for 2026 bracket tracking. It gives group winners one more elimination match to survive and gives strong third-place teams a chance to become dangerous quickly. Brazil, France, England, Spain, Argentina, Belgium, USA, Portugal, and Colombia all moved the bracket into a contender-heavy middle phase, while Paraguay and Morocco pulled off penalty-shootout upsets over Germany and Netherlands respectively.
 
@@ -62,7 +62,7 @@ The Round of 32 is the biggest structural change for 2026 bracket tracking. It g
 
 
 
-> Source: [FIFA Official Bracket](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
+> Results above per FIFA's official bracket.
 
 The Round of 16 produced the tournament's biggest upsets. Norway knocked out Brazil 2–1, Belgium crushed the United States 4–1, and Morocco swept Canada 3–0. England survived a five-goal thriller against Mexico, while Spain edged Portugal 1–0 in a tight Iberian derby. Argentina needed all of a 3–2 win over Egypt, and Switzerland held Colombia to a penalty shootout victory. The quarterfinal field is wide open.
 
@@ -74,7 +74,7 @@ The Round of 16 produced the tournament's biggest upsets. Norway knocked out Bra
 
 
 
-> Source: [FIFA Official Bracket](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
+> Fixture details above per FIFA's official bracket.
 
 The quarterfinals are where the bracket becomes less about qualification labels and more about path cost. France vs Morocco is the highest-ceiling football matchup, while Spain vs Belgium carries significant European heavyweight weight. Argentina vs Switzerland brings a South American path test, and Norway vs England gives the lower half another tactical contrast.
 
@@ -86,7 +86,7 @@ The quarterfinals are where the bracket becomes less about qualification labels 
 
 
 
-> Source: [FIFA Official Bracket](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
+> Dates and venues above per FIFA's official bracket.
 
 The final stretch is still fixture-dependent because the quarterfinal winners determine the semifinal paths. The most important publishing rule for this section is to update the winner labels as soon as each match ends, while keeping the final venue and date stable.
 
