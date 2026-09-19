@@ -47,3 +47,13 @@ npm run check:images   # same gate CI runs; should print: ok: blog images are We
 
 CI (`npm run check:images` in `.github/workflows`) fails the PR if any png/jpeg remains or Markdown still points at `.png`/`.jpg`. It does **not** convert during Docker / EKS deploy.
 
+## Git & PR workflow (hard rule for agent sessions)
+
+**Never push or open a PR on your own initiative.** The owner explicitly gates this: they say "PR" when they want PRs created — until then, do not push, do not run `gh pr create`, and do not merge.
+
+1. **Work on a feature branch** (`fix/...`, `feat/...`), never on `main`. Commit with conventional messages and run local verification (`npm run validate:posts`, `npm run check:images`, `npx tsc --noEmit`, eslint on changed files) before considering a task done.
+2. **Stop after commit.** Report what is ready and wait. Multiple tasks may accumulate across branches — that is intentional; the owner batches them.
+3. **When the owner says "PR"**: push every ready branch and open one PR per branch (`gh pr create --repo AOE-HQ/floatboat-blog --base main --head <branch>`), each with problem/fix/verification in the body. CI runs on the PR; merging is the owner's call.
+4. **Merge = deploy.** Any push to `main` triggers `deploy-ghcr-eks.yaml` (image build → GHCR → EKS rollout). Never commit directly to `main`.
+5. **Shared working tree**: if multiple agent sessions use this repo concurrently, create a `git worktree` per session (`git worktree add ../<name> <branch>`) — one branch per worktree. Before committing, review your diff hunk-by-hunk: with a shared tree, another session's half-finished changes can end up inside your files.
+
