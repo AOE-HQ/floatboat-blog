@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Hey, Nova is here. Sometime last week, a message landed in my DMs: "Nova, should I be using [Claude Code](<https://code.claude.com/docs/en/overview>)? Everyone keeps talking about it."
+Hey, Nova is here. Sometime last week, a message landed in my DMs: "Nova, should I be using [Claude Code](https://code.claude.com/docs/en/overview)? Everyone keeps talking about it."
 
 Honestly? My first instinct was — I don't know either.
 
@@ -21,7 +21,7 @@ I'm not a developer. I went and figured this out the way I always do — by just
 
 ## What Claude Code Actually Does (in Plain Terms)
 
-Per [Anthropic's official documentation](<https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan>), Claude Code is "a command line tool that gives you access to Claude models directly in your terminal, allowing you to delegate complex coding tasks while maintaining transparency and control."
+Per [Anthropic's official documentation](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan), Claude Code is "a command line tool that gives you access to Claude models directly in your terminal, allowing you to delegate complex coding tasks while maintaining transparency and control."
 
 The key word is ​ _terminal_ ​. That black-box window developers use. Claude Code lives there. It can open your project folders, understand how files connect, write functions, run tests, and push to GitHub — operating directly on your actual file system.
 
@@ -29,7 +29,7 @@ The key word is ​ _terminal_ ​. That black-box window developers use. Claude
 
 When people say "agentic," they mean the tool takes multiple steps on its own. You say "build a login page," and Claude Code figures out the file structure, writes the components, runs the tests, and flags what broke. It functions more like an autonomous junior developer than a chat assistant.
 
-That's genuinely powerful. But the word _codebase_ appears everywhere in its documentation . For a reason — it assumes you have one, or are building one. **This is not a smarter****[Claude.ai](<http://Claude.ai>)****chat window. It's something much more targeted.**
+That's genuinely powerful. But the word _codebase_ appears everywhere in its documentation . For a reason — it assumes you have one, or are building one. **This is not a smarter****[Claude.ai](http://Claude.ai)****chat window. It's something much more targeted.**
 
 ### The Three Tools, Clearly Defined
 
@@ -41,7 +41,7 @@ Before going further, it helps to have a clear mental model of what's what:
 
 
 
-Anthropic's [official Cowork documentation](<https://support.claude.com/en/articles/13345190-get-started-with-cowork>) describes it as "Claude Code's agentic capabilities accessible within Claude Desktop and without opening the terminal." It's the same underlying architecture, designed for people who don't want to touch a terminal.
+Anthropic's [official Cowork documentation](https://support.claude.com/en/articles/13345190-get-started-with-cowork) describes it as "Claude Code's agentic capabilities accessible within Claude Desktop and without opening the terminal." It's the same underlying architecture, designed for people who don't want to touch a terminal.
 
 ![1.png](/blog/images/claude-code-non-developers-solo-operators/1775460413534-288bdaf5-43f6-48e2-80a7-5be3073ca5fd.webp)
 
@@ -55,7 +55,7 @@ For non-developers, that setup isn't insurmountable — some people have walked 
 
 ### What It Actually Costs
 
-Per [Anthropic's pricing page](<https://claude.com/pricing>) (verified April 2026):
+Per [Anthropic's pricing page](https://claude.com/pricing) (verified April 2026):
 
   * ​**Pro** ​: $20/month (or ~$17/month billed annually) — includes Claude Code access
 
@@ -81,7 +81,7 @@ I'm still learning this stuff, not going to pretend otherwise. But from what I'v
 
 If your day is writing, thinking, communicating, and organizing — Claude Code is not your tool. Not because it's bad, but because it's solving a different problem. It won't help you draft better proposals, organize your client pipeline, or turn research notes into a content calendar.
 
-The honest reality: for knowledge workers, you can do more relevant things inside [Claude.ai](<http://Claude.ai>) or Cowork than by forcing yourself to learn the terminal.
+The honest reality: for knowledge workers, you can do more relevant things inside [Claude.ai](http://Claude.ai) or Cowork than by forcing yourself to learn the terminal.
 
 ### A Simple Decision Framework
 
@@ -103,11 +103,11 @@ Hm. That actually simplifies a lot of the confusion I see in people's DMs.
 
 When I looked into this more carefully, Cowork is genuinely interesting for solo operators — and I'd been lumping it in with Claude Code without thinking clearly about the difference.
 
-As [VentureBeat reported at launch](<https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no>), Anthropic built Cowork after noticing developers were using Claude Code for non-coding work: vacation research, building slide decks, cleaning up email. "This prompted us to build Cowork: a simpler way for anyone — not just developers — to work with Claude in the very same way."
+As [VentureBeat reported at launch](https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no), Anthropic built Cowork after noticing developers were using Claude Code for non-coding work: vacation research, building slide decks, cleaning up email. "This prompted us to build Cowork: a simpler way for anyone — not just developers — to work with Claude in the very same way."
 
 You point it at a folder. You describe what you need. Claude figures out the steps and handles it — sorting files, pulling expense data from receipt screenshots, drafting reports from scattered notes. No terminal required.
 
-**Current availability** (per [Anthropic's support page](<https://support.claude.com/en/articles/13345190-get-started-with-cowork>), verified April 2026): Cowork is a research preview available to all paid plans — Pro, Max, Team, and Enterprise — through the Claude Desktop app on Mac and Windows. This corrects an earlier claim I'd seen that it required Max; Pro access is confirmed.
+**Current availability** (per [Anthropic's support page](https://support.claude.com/en/articles/13345190-get-started-with-cowork), verified April 2026): Cowork is a research preview available to all paid plans — Pro, Max, Team, and Enterprise — through the Claude Desktop app on Mac and Windows. This corrects an earlier claim I'd seen that it required Max; Pro access is confirmed.
 
 ### When Claude Chat Is Still the Answer
 
@@ -121,7 +121,7 @@ Mastering prompt structure and Claude's Projects feature will help you more than
 
 Claude Code does unlock something real: you can technically build mini-apps, scrapers, and internal automations without hiring a developer. For some people, that genuinely changes what's possible.
 
-But let's be clear about the full cost. It's not just $20/month. It's the learning time, the debugging sessions when something breaks for an unclear reason, and — as [Anthropic's documentation itself notes](<https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan>) — the fact that both Claude chat and Claude Code draw from the same usage limit. Heavy coding sessions can eat into your regular Claude budget unexpectedly.
+But let's be clear about the full cost. It's not just $20/month. It's the learning time, the debugging sessions when something breaks for an unclear reason, and — as [Anthropic's documentation itself notes](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan) — the fact that both Claude chat and Claude Code draw from the same usage limit. Heavy coding sessions can eat into your regular Claude budget unexpectedly.
 
 I've watched enough people go down this road to say: without some coding foundation, the returns diminish fast. You'll spend more time fighting the tool than using it.
 
@@ -143,7 +143,7 @@ Claude Code is genuinely impressive — I mean it. But _impressive-for-whom_ mat
 
 ​**If your work is words, relationships, and ideas** ​: your time is better spent going deep on Claude's existing features — Projects, extended context, integrations, and Cowork. That's where the real daily value lives for most solo operators.
 
-Oh, and one practical note: [Anthropic's support page on plans](<https://support.claude.com/en/articles/11049741-what-is-the-max-plan>) is genuinely clear about what each tier includes. Worth a read before upgrading anything.
+Oh, and one practical note: [Anthropic's support page on plans](https://support.claude.com/en/articles/11049741-what-is-the-max-plan) is genuinely clear about what each tier includes. Worth a read before upgrading anything.
 
 Huh. I didn't expect figuring this out to feel this simple. But that's kind of the point — sometimes the answer really is just "not for you, yet."
 
@@ -151,13 +151,13 @@ Anyway, that's today's little discovery. Back to building things.
 
 ## Previous Posts:
 
-  * **[See what maintaining your own automation system actually looks like as a solo operator](</blog/feishu-cli-solo-work-setup>)**
+  * **[See what maintaining your own automation system actually looks like as a solo operator](/blog/feishu-cli-solo-work-setup)**
 
-  * **[Understand whether you should build your own AI tools or use existing ones](</blog/custom-ai-agent-development>)**
+  * **[Understand whether you should build your own AI tools or use existing ones](/blog/custom-ai-agent-development)**
 
-  * **[Learn how AI agents actually work before deciding if coding tools like Claude Code matter](</blog/how-to-build-an-ai-agent>)**
+  * **[Learn how AI agents actually work before deciding if coding tools like Claude Code matter](/blog/how-to-build-an-ai-agent)**
 
-  * **[Explore the difference between AI agents and AI assistants for everyday workflows](</blog/ai-agent-vs-ai-assistant>)**
+  * **[Explore the difference between AI agents and AI assistants for everyday workflows](/blog/ai-agent-vs-ai-assistant)**
 
-  * **[See real-world AI agent use cases to understand where coding agents actually fit](</blog/ai-agent-use-cases-real-examples>)**
+  * **[See real-world AI agent use cases to understand where coding agents actually fit](/blog/ai-agent-use-cases-real-examples)**
 

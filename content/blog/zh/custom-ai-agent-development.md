@@ -31,7 +31,7 @@ draft: false
 
 这里有一条大多数人没完全认识到的光谱：
 
-  * **全定制开发**：工程师从零写 Agent 逻辑，通常用 [LangChain 或 LangGraph](<https://python.langchain.com/docs/introduction/>) 这类框架做编排、工具调用和记忆管理。成本最高、控制力最强、灵活性最大。
+  * **全定制开发**：工程师从零写 Agent 逻辑，通常用 [LangChain 或 LangGraph](https://python.langchain.com/docs/introduction/) 这类框架做编排、工具调用和记忆管理。成本最高、控制力最强、灵活性最大。
 
   * **基于框架的配置**：在既有 AI 平台上叠加定制代码层和 API 集成。比全定制便宜，但仍需要真刀真枪的工程能力。
 
@@ -65,7 +65,7 @@ draft: false
 
 ### 维护与支持需求
 
-据[《2025 AI 成本管理现状报告》](<https://www.prnewswire.com/news-releases/2025-state-of-ai-cost-management-research-finds-85-of-companies-miss-ai-forecasts-by-10-302551947.html>)，80% 的企业把 AI 基础设施成本低估了 25% 以上——典型原因就是只盯着开发预算，忽略了让 Agent 持续运转的成本。
+据[《2025 AI 成本管理现状报告》](https://www.prnewswire.com/news-releases/2025-state-of-ai-cost-management-research-finds-85-of-companies-miss-ai-forecasts-by-10-302551947.html)，80% 的企业把 AI 基础设施成本低估了 25% 以上——典型原因就是只盯着开发预算，忽略了让 Agent 持续运转的成本。
 
 仅 API 费用（GPT-4o 或 Claude 这类商业模型）一项，中等用量的 Agent 每月就要 **$100–$1,000+**，随查询量大幅上涨。再算上托管、存记忆的向量数据库、监控工具、定期调优——持续成本通常落在 **$500–$5,000/月**，视复杂度而定。这不是可省的维护。AI 系统会以传统软件不会的方式发生漂移，需要有人主动盯着。
 
@@ -81,7 +81,7 @@ draft: false
 
 ### 现成工具覆盖不了的深度集成需求
 
-有些公司跑在内部系统上，而这些系统根本没有干净的 API——或者需要一个 Agent 跨六七个工具协调，协调方式没有任何可视化工作流搭建器能可靠处理。[据 IBM 对 AI Agent 的综述](<https://www.ibm.com/think/topics/ai-agents>)，最有价值的 Agent 部署往往是深度嵌入特定运营场景的那种——而这按定义常常就需要定制工作。最复杂的 Agentic 系统——带定制训练和企业集成的多 Agent 架构——可以花掉 $100,000 到 $500,000 甚至更多，但只要用例选对了，ROI 账是算得过来的。
+有些公司跑在内部系统上，而这些系统根本没有干净的 API——或者需要一个 Agent 跨六七个工具协调，协调方式没有任何可视化工作流搭建器能可靠处理。[据 IBM 对 AI Agent 的综述](https://www.ibm.com/think/topics/ai-agents)，最有价值的 Agent 部署往往是深度嵌入特定运营场景的那种——而这按定义常常就需要定制工作。最复杂的 Agentic 系统——带定制训练和企业集成的多 Agent 架构——可以花掉 $100,000 到 $500,000 甚至更多，但只要用例选对了，ROI 账是算得过来的。
 
 如果一个定制 Agent 每周替你团队省 20 小时、按 $75/小时算，那就是每月约 $6,000 的回补产能。一个 $60,000 的构建，10 个月回本。可如果它每周只省 3 小时？这笔账就完全塌了。
 
@@ -93,7 +93,7 @@ draft: false
 
 ### 当你的用例现有工具已经覆盖
 
-无代码 AI Agent 领域过去 18 个月的进化速度，大多数人没跟上。[Zapier 的 AI Agent 能力](<https://zapier.com/blog/best-ai-agent-builder/>)现在已经让非技术用户能搭出连接 7000+ 应用、做情境化决策、跑网络调研、自主运作的 Agent——有免费档，付费套餐约 $33/月起。[Make.com](<http://Make.com>)、[n8n](<https://n8n.io/>) 和 Relevance AI 覆盖了内容工作流、线索处理、调研任务、客服分流等海量场景。
+无代码 AI Agent 领域过去 18 个月的进化速度，大多数人没跟上。[Zapier 的 AI Agent 能力](https://zapier.com/blog/best-ai-agent-builder/)现在已经让非技术用户能搭出连接 7000+ 应用、做情境化决策、跑网络调研、自主运作的 Agent——有免费档，付费套餐约 $33/月起。[Make.com](http://Make.com)、[n8n](https://n8n.io/) 和 Relevance AI 覆盖了内容工作流、线索处理、调研任务、客服分流等海量场景。
 
 如果你的用例是「总结收到的邮件并分发给对应的人」、「销售电话前调研一下潜客」、或「监控一个数据源、条件变化时提醒我」——**你几乎肯定不需要定制开发**。你需要的，是拿这些工具之一折腾一个下午。
 
@@ -124,7 +124,7 @@ draft: false
 
 把你推向低端的因素：干净现代的 API、直接用基础模型（不微调）、单一任务聚焦、需求稳定。
 
-[麦肯锡《2025 AI 现状调查》](<https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai>)发现，88% 的组织报告至少在一个业务职能中常规使用 AI——但在任何一个具体业务职能里，报告真正规模化落地 AI Agent 的受访者不超过 10%。「用 AI」与「在生产环境跑着可靠的 AI Agent」之间的落差，正是这场成本对话发生的地方。
+[麦肯锡《2025 AI 现状调查》](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)发现，88% 的组织报告至少在一个业务职能中常规使用 AI——但在任何一个具体业务职能里，报告真正规模化落地 AI Agent 的受访者不超过 10%。「用 AI」与「在生产环境跑着可靠的 AI Agent」之间的落差，正是这场成本对话发生的地方。
 
 ## 签约之前要问自己的问题
 
@@ -154,13 +154,13 @@ draft: false
 
 ## 往期文章：
 
-  * [了解 AI Agent 开发服务到底包含什么、市场定价到底怎么运作](</blog/ai-agent-development-services>)
+  * [了解 AI Agent 开发服务到底包含什么、市场定价到底怎么运作](/blog/ai-agent-development-services)
 
-  * [在决定雇开发者之前，先学着一步步自己搭一个 AI Agent](</blog/how-to-build-an-ai-agent>)
+  * [在决定雇开发者之前，先学着一步步自己搭一个 AI Agent](/blog/how-to-build-an-ai-agent)
 
-  * [对比 AI Agent 与聊天机器人，在投入定制之前厘清你真正需要什么](</blog/ai-agent-vs-chatbot>)
+  * [对比 AI Agent 与聊天机器人，在投入定制之前厘清你真正需要什么](/blog/ai-agent-vs-chatbot)
 
-  * [看看真实世界的 AI Agent 用例，判断定制开发何时才算真正合理](</blog/ai-agent-use-cases-real-examples>)
+  * [看看真实世界的 AI Agent 用例，判断定制开发何时才算真正合理](/blog/ai-agent-use-cases-real-examples)
 
-  * [在选择无代码工具与定制方案时，看看工作流搭建器与 AI 工作区有何不同](</blog/workflow-builder-vs-ai-workspace>)
+  * [在选择无代码工具与定制方案时，看看工作流搭建器与 AI 工作区有何不同](/blog/workflow-builder-vs-ai-workspace)
 

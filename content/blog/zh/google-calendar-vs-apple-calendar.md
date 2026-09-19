@@ -31,9 +31,9 @@ draft: false
 
 真正的决定发生在这里，而不是在功能清单里。
 
-Google Calendar 天生是**网页优先、协作优先**的工具。在 Chromebook、Windows 笔记本或 iPhone 浏览器上，体验都一样。如果你的工作要跟"并不全用 Apple 设备"的人协调，Google 处理起来的摩擦更小。我确认过——共享整个日历、设置细粒度权限、把公开日历嵌到网站上，全部都能在 [Google Calendar 的共享设置](<https://support.google.com/calendar/answer/37082?hl=en>)里完成。
+Google Calendar 天生是**网页优先、协作优先**的工具。在 Chromebook、Windows 笔记本或 iPhone 浏览器上，体验都一样。如果你的工作要跟"并不全用 Apple 设备"的人协调，Google 处理起来的摩擦更小。我确认过——共享整个日历、设置细粒度权限、把公开日历嵌到网站上，全部都能在 [Google Calendar 的共享设置](https://support.google.com/calendar/answer/37082?hl=en)里完成。
 
-Apple Calendar 天生是**设备原生的体验**。它快、好看，如果你已经通过 iCloud 打理生活，它就能"自然工作"。Apple 支持站点上的 [《日历》使用手册](<https://support.apple.com/guide/calendar/welcome/mac>)覆盖了从委托管理到家庭共享日历的一切——它的能力比人们以为的要强。借助 Apple Intelligence 的端侧能力，Siri 解析自然语言来创建事件也变得更好了。"App 内发现"能从你的邮件和消息中识别日期、建议日程条目——这是个体贴的小设计。
+Apple Calendar 天生是**设备原生的体验**。它快、好看，如果你已经通过 iCloud 打理生活，它就能"自然工作"。Apple 支持站点上的 [《日历》使用手册](https://support.apple.com/guide/calendar/welcome/mac)覆盖了从委托管理到家庭共享日历的一切——它的能力比人们以为的要强。借助 Apple Intelligence 的端侧能力，Siri 解析自然语言来创建事件也变得更好了。"App 内发现"能从你的邮件和消息中识别日期、建议日程条目——这是个体贴的小设计。
 
 Google 的 AI 打法不一样——Gemini 集成可以根据与会者的空闲情况建议会议时间、总结你下周的安排。Gmail 依旧自动识别差旅预订。它更少"端侧魔法"，更多"云端联网的便利"。
 
@@ -43,7 +43,7 @@ Google 的 AI 打法不一样——Gemini 集成可以根据与会者的空闲�
 
 如果你正在独自经营或带一个小团队，这一节值得看。
 
-**共享：**这一项 Google Calendar 赢，而且没有悬念。你可以把日历共享给特定的人，设置只读或完全编辑权限，对方只需要一个 Google 账号。Apple Calendar 通过 iCloud 共享，Apple 对 Apple 之间很好用；但想跟用 Android 或 Windows 的人协调，你就会摸到边角。跨平台支持的最新情况，可查 [Apple 的 iCloud 日历设置指南](<https://support.apple.com/guide/icloud/set-up-calendar-mme4d73a8727/icloud>)。
+**共享：**这一项 Google Calendar 赢，而且没有悬念。你可以把日历共享给特定的人，设置只读或完全编辑权限，对方只需要一个 Google 账号。Apple Calendar 通过 iCloud 共享，Apple 对 Apple 之间很好用；但想跟用 Android 或 Windows 的人协调，你就会摸到边角。跨平台支持的最新情况，可查 [Apple 的 iCloud 日历设置指南](https://support.apple.com/guide/icloud/set-up-calendar-mme4d73a8727/icloud)。
 
 **任务：**Google Calendar 在侧栏集成 Google Tasks；2025 年底 Google 又推出了更紧密的集成——你现在可以直接把任务按时间块排上日历，完成任务时会同时更新日历事件和任务清单。这个确实好用。
 
@@ -91,13 +91,13 @@ Apple 的日历里没有内置任务系统。它跟独立的提醒事项 App（R
 
 ## 往期文章：
 
-  * 老在日历、邮件、文档和任务 App 之间跳来跳去？读[停止上下文切换：为什么工作区 Agent 重要](</blog/stop-context-switching-workspace-agent>)，看看工具切换是怎么在多数单人经营者没有意识到的情况下悄悄吃掉时间的。
+  * 老在日历、邮件、文档和任务 App 之间跳来跳去？读[停止上下文切换：为什么工作区 Agent 重要](/blog/stop-context-switching-workspace-agent)，看看工具切换是怎么在多数单人经营者没有意识到的情况下悄悄吃掉时间的。
 
-  * 如果你的日历总在提醒你有工作要做、却从不真正把它往前推，[单人经营者的工作区 Agent](</blog/workspace-agents-for-solo-operators>) 拆解了排程结束之后会发生什么。
+  * 如果你的日历总在提醒你有工作要做、却从不真正把它往前推，[单人经营者的工作区 Agent](/blog/workspace-agents-for-solo-operators) 拆解了排程结束之后会发生什么。
 
-  * 排满的日历并不总等于有意义的进展。[单人创始人的 AI 工作流](</blog/ai-workflow-for-solo-founders>) 分析了为什么看起来高效的系统仍会制造手动工作。
+  * 排满的日历并不总等于有意义的进展。[单人创始人的 AI 工作流](/blog/ai-workflow-for-solo-founders) 分析了为什么看起来高效的系统仍会制造手动工作。
 
-  * 想知道你需要的是又一个助手、还是更主动的东西？[工作区 Agent vs 聊天助手](</blog/workspace-agents-vs-chat-assistants>) 用日常工作流对两者做了对比。
+  * 想知道你需要的是又一个助手、还是更主动的东西？[工作区 Agent vs 聊天助手](/blog/workspace-agents-vs-chat-assistants) 用日常工作流对两者做了对比。
 
-  * 老在反复重建同样的每周任务？[如何为重复工作构建 AI Agent](</blog/how-to-build-ai-agents-for-repeated-work>) 探讨了重复性工作循环可以怎样换个方式处理。
+  * 老在反复重建同样的每周任务？[如何为重复工作构建 AI Agent](/blog/how-to-build-ai-agents-for-repeated-work) 探讨了重复性工作循环可以怎样换个方式处理。
 

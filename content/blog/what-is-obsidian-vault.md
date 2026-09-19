@@ -20,7 +20,7 @@ draft: false
 
   * A vault is **not** Notion, Apple Notes, or a sync service by itself. Optional Obsidian Sync and Publish are add-ons; the core app stays free and local-first.
 
-  * For a practical guide to pairing that local folder with desktop agents, see <a href="/blog/how-to-use-obsidian-with-ai-agent">how to use Obsidian with an AI agent</a>.
+  * For a practical guide to pairing that local folder with desktop agents, see [how to use Obsidian with an AI agent](/blog/how-to-use-obsidian-with-ai-agent).
 
 ## 1\. Why Vaults Matter Now
 
@@ -90,7 +90,7 @@ Multiple vaults are normal. Consultants often keep a client vault separate from 
 
 **File sync folders (Dropbox, iCloud Drive, Google Drive Desktop).** Sync clients move bytes; they do not provide link autocomplete, graph view, or a note-centric editor. A vault can _live inside_ a synced folder, but sync alone is not a knowledge base.
 
-**Desktop AI agents that read folders.** As of 2026, a growing class of tools treats a local directory as working memory for multi-step tasks — meeting briefs, project drafts, file cleanup. A vault is an especially good directory for that pattern because notes are already text, linked, and human-curated. That pairing is a workflow choice, not a feature Obsidian must ship itself; we walk through the practical setup in our companion guide on <a href="/blog/how-to-use-obsidian-with-ai-agent">using Obsidian with an AI agent</a>.
+**Desktop AI agents that read folders.** As of 2026, a growing class of tools treats a local directory as working memory for multi-step tasks — meeting briefs, project drafts, file cleanup. A vault is an especially good directory for that pattern because notes are already text, linked, and human-curated. That pairing is a workflow choice, not a feature Obsidian must ship itself; we walk through the practical setup in our companion guide on [using Obsidian with an AI agent](/blog/how-to-use-obsidian-with-ai-agent).
 
 ## 5\. Who Should Use a Vault — and Who Should Not
 

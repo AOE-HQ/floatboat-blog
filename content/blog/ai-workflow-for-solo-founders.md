@@ -15,7 +15,7 @@ Hey, Nova is coming. I've been trying to put my finger on this for a while.
 
 I use AI every day. Have for a couple of years now. And for a long time I assumed the frustration I kept running into was about the tools themselves — maybe the output quality wasn't there yet, maybe I just hadn't found the right prompt, maybe I needed to switch models.
 
-Then a few months ago I caught myself typing the same context into [ChatGPT](<https://chatgpt.com/>) for the fourth time in a week. Same background, same project setup, same "here's how I usually like this structure." Just... again. And I stopped.
+Then a few months ago I caught myself typing the same context into [ChatGPT](https://chatgpt.com/) for the fourth time in a week. Same background, same project setup, same "here's how I usually like this structure." Just... again. And I stopped.
 
 _Why am I still doing this?_
 
@@ -29,7 +29,7 @@ When I sit down to write a client brief, I have a way of doing it. A structure I
 
 This is what I'd call **the start-from-scratch problem.** And for solo founders running one-person operations, it quietly drains an enormous amount of time.
 
-According to [Tribe AI's 2025 analysis of context-aware memory systems](<https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025>), the experience of working with stateless AI resembles visiting a website that logs you out after every page navigation — continuous context refreshing that wastes time and resources, forcing users to manually track updates, store history, and craft careful prompts just to maintain continuity. That's the infrastructure tax you pay just to use AI effectively. And when you're the only person in your business, that tax compounds fast.
+According to [Tribe AI's 2025 analysis of context-aware memory systems](https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025), the experience of working with stateless AI resembles visiting a website that logs you out after every page navigation — continuous context refreshing that wastes time and resources, forcing users to manually track updates, store history, and craft careful prompts just to maintain continuity. That's the infrastructure tax you pay just to use AI effectively. And when you're the only person in your business, that tax compounds fast.
 
 ![2.PNG](/blog/images/ai-workflow-for-solo-founders/1776149050096-38c50427-ed33-4b98-a777-98d7b74d4f12.webp)
 
@@ -39,7 +39,7 @@ Here's the thing I keep noticing: AI tools are genuinely good at ​ _tasks_ ​
 
 But there's a gap between "handling a task" and "fitting into how I actually work." My workflow isn't a list of tasks. It's a series of decisions made in a particular order, with particular trade-offs, informed by context that lives in my head and in accumulated experience. When AI handles isolated tasks without that context, the output is generic. Usable, maybe. But not shaped by _how I think._
 
-Research published by [MIT Sloan Management Review on how to reap compound benefits from generative AI](<https://sloanreview.mit.edu/article/how-to-reap-compound-benefits-from-generative-ai/>) points to this directly: most experts can't fully articulate what makes their judgment good. That unspoken knowledge — what researchers call "tacit knowledge" — is exactly what makes experienced work distinctive. An AI that can only execute what you explicitly describe misses everything you do intuitively.
+Research published by [MIT Sloan Management Review on how to reap compound benefits from generative AI](https://sloanreview.mit.edu/article/how-to-reap-compound-benefits-from-generative-ai/) points to this directly: most experts can't fully articulate what makes their judgment good. That unspoken knowledge — what researchers call "tacit knowledge" — is exactly what makes experienced work distinctive. An AI that can only execute what you explicitly describe misses everything you do intuitively.
 
 I've been thinking about this for months. I don't think the solution is better prompting. I think the solution is AI that learns the stuff you never thought to explain.
 
@@ -61,7 +61,7 @@ This one's subtler. It's not just "remember what we talked about." It's "remembe
 
 When I write content, I have standards. Structural preferences. Things I always do and things I never do. These aren't arbitrary — they came from a lot of iteration and I'm pretty attached to them. But every new AI session, I'm either writing them out in a prompt, hoping the model guesses close enough, or spending time editing outputs back toward what I wanted.
 
-Execution memory would mean the AI has internalized _my_ way of working. Not learned it from a training dataset of generic writers, but from watching me specifically — the decisions I made, the edits I applied, the iterations I approved. AWS's engineering blog on [building context-aware agents with persistent memory](<https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/>) describes this distinction clearly: short-term memory captures what's happening in a session, while long-term intelligent memory stores persistent insights and preferences across sessions — so AI agents can retain context, learn from interactions, and deliver truly personalized experiences over time. That gap between the two is where most consumer AI tools currently sit.
+Execution memory would mean the AI has internalized _my_ way of working. Not learned it from a training dataset of generic writers, but from watching me specifically — the decisions I made, the edits I applied, the iterations I approved. AWS's engineering blog on [building context-aware agents with persistent memory](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/) describes this distinction clearly: short-term memory captures what's happening in a session, while long-term intelligent memory stores persistent insights and preferences across sessions — so AI agents can retain context, learn from interactions, and deliver truly personalized experiences over time. That gap between the two is where most consumer AI tools currently sit.
 
 ![3.png](/blog/images/ai-workflow-for-solo-founders/1776149060189-d1e45341-3bae-4755-8a18-892f19ad4cf0.webp)
 
@@ -77,7 +77,7 @@ What I actually need isn't more capability. It's capability that's calibrated to
 
 One specific thing that drives me crazy: I often work across multiple things at once. A document I'm editing, a webpage I'm referencing, a Slack thread I'm responding to, a file I'm pulling data from. The AI I'm using has access to none of that unless I manually bring it in.
 
-The result: my AI assistance ends up being disconnected from my actual work. I'm running parallel tracks — here's the work, here's the AI — and bridging them manually. As [Taskade's research on one-person companies](<https://www.taskade.com/blog/one-person-companies>) found, a solo founder juggling multiple disconnected AI tools hits a wall fast: the research tool doesn't talk to the writing tool, the automation doesn't know what the agent learned yesterday, context gets lost between every handoff. That fragmentation is where efficiency gains disappear. Not because AI is bad — because the context never gets to where the AI is.
+The result: my AI assistance ends up being disconnected from my actual work. I'm running parallel tracks — here's the work, here's the AI — and bridging them manually. As [Taskade's research on one-person companies](https://www.taskade.com/blog/one-person-companies) found, a solo founder juggling multiple disconnected AI tools hits a wall fast: the research tool doesn't talk to the writing tool, the automation doesn't know what the agent learned yesterday, context gets lost between every handoff. That fragmentation is where efficiency gains disappear. Not because AI is bad — because the context never gets to where the AI is.
 
 ### Reusable Execution vs. One-Off Prompts
 
@@ -91,7 +91,7 @@ Before committing to anything new, I ask myself three questions. They've saved m
 
 **First: does it need context that I'll** ​**​ have to supply every session?** If the answer is yes — and for most tools it is — I want to understand the overhead. How much of my time goes toward feeding it context versus doing actual work?
 
-**Second: does it learn from what I do, or only from what I say?** There's a big difference. [Stanford Graduate School of Business research on AI and tacit knowledge](<https://www.gsb.stanford.edu/insights/generative-ai-can-boost-productivity-without-replacing-workers>) found that the most valuable gains come when AI can pick up on the patterns workers demonstrate through behavior — not just through explicit instructions. The judgment you've built up through experience is exactly what generic AI tools miss, because it was never written down.
+**Second: does it learn from what I do, or only from what I say?** There's a big difference. [Stanford Graduate School of Business research on AI and tacit knowledge](https://www.gsb.stanford.edu/insights/generative-ai-can-boost-productivity-without-replacing-workers) found that the most valuable gains come when AI can pick up on the patterns workers demonstrate through behavior — not just through explicit instructions. The judgment you've built up through experience is exactly what generic AI tools miss, because it was never written down.
 
 **Third: can I build workflows I can reuse?** If every use is a one-off, the efficiency ceiling is low. I want to invest in setting something up well and have that investment compound over time.
 
@@ -121,7 +121,7 @@ The reason: **repeatability is where the leverage compounds.** A one-time task t
 
 Map two or three of your most repeated tasks. For each one, write down: what inputs go in, what output you want, and what judgment calls you consistently make along the way. That last part — the judgment calls — is where you'll find the tacit knowledge that generic AI tools miss.
 
-According to [MIT Sloan and BCG's joint research on AI and organizational learning](<https://sloanreview.mit.edu/projects/learning-to-manage-uncertainty-with-ai/>), organizations that build systematic feedback loops between humans and AI are significantly better positioned to compound value over time — and the same principle applies at the one-person level. The gains don't come from a single good session. They come from a setup that gets better the more you use it.
+According to [MIT Sloan and BCG's joint research on AI and organizational learning](https://sloanreview.mit.edu/projects/learning-to-manage-uncertainty-with-ai/), organizations that build systematic feedback loops between humans and AI are significantly better positioned to compound value over time — and the same principle applies at the one-person level. The gains don't come from a single good session. They come from a setup that gets better the more you use it.
 
 That's where I am with this right now. I'm still figuring out the right setup for my own workflow — I don't think there's a single right answer for everyone. But the framing shift helped me: stop asking "is this AI good?" and start asking "does this AI know how I work?"
 
@@ -129,13 +129,13 @@ Those are very different questions. And for people running things solo, the seco
 
 ## Previous Posts：
 
-  * [If you’re still figuring out what a real AI workflow looks like, start here](</blog/ai-workflow-solo-founders>)
+  * [If you’re still figuring out what a real AI workflow looks like, start here](/blog/ai-workflow-solo-founders)
 
-  * [This breaks down why AI tools keep forgetting everything between sessions](</blog/why-ai-forgets-every-session>)
+  * [This breaks down why AI tools keep forgetting everything between sessions](/blog/why-ai-forgets-every-session)
 
-  * [Want to understand the bigger shift from assistants to agents?](</blog/ai-agents-2026-solo-operators>)
+  * [Want to understand the bigger shift from assistants to agents?](/blog/ai-agents-2026-solo-operators)
 
-  * [Read this](</blog/ai-agents-2026-solo-operators>) [Not sure whether you need an AI agent or just a better assistant? This clarifies it](</blog/ai-agent-vs-ai-assistant>)
+  * [Read this](/blog/ai-agents-2026-solo-operators) [Not sure whether you need an AI agent or just a better assistant? This clarifies it](/blog/ai-agent-vs-ai-assistant)
 
-  * [If you're deciding between building workflows or using a workspace, this will help](</blog/workflow-builder-vs-ai-workspace>)
+  * [If you're deciding between building workflows or using a workspace, this will help](/blog/workflow-builder-vs-ai-workspace)
 

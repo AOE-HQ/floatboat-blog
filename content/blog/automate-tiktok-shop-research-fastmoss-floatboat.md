@@ -38,7 +38,7 @@ The FloatSchedule starts the assignment itself:
 
 Floatboat restores the project, opens the authorized FastMoss session in its built-in browser, and gets to work.
 
-This is what happens when [FastMoss](<https://www.fastmoss.com/>) becomes the vertical intelligence layer inside [Floatboat](</ai-agent-workspace>), an Agent operating environment built to work across browsers, files, models, connected services, and time.
+This is what happens when [FastMoss](https://www.fastmoss.com/) becomes the vertical intelligence layer inside [Floatboat](</ai-agent-workspace>), an Agent operating environment built to work across browsers, files, models, connected services, and time.
 
 ## 08:00 — The calendar starts the work
 
@@ -243,13 +243,13 @@ The live evidence in this article was captured from FastMoss on August 4–5, 20
 
 ## Sources
 
-  * [FastMoss US Beauty weekly ranking](<https://www.fastmoss.com/e-commerce/saleslist?date_type=2&date_value=2026-31&page=1&region=US&l1_cid=14>)
+  * [FastMoss US Beauty weekly ranking](https://www.fastmoss.com/e-commerce/saleslist?date_type=2&date_value=2026-31&page=1&region=US&l1_cid=14)
 
-  * [DR.DENT product intelligence](<https://www.fastmoss.com/e-commerce/detail/1732294339991933438>)
+  * [DR.DENT product intelligence](https://www.fastmoss.com/e-commerce/detail/1732294339991933438)
 
-  * [FastMoss MCP](<https://developer.fastmoss.com/mcp/overview.html>)
+  * [FastMoss MCP](https://developer.fastmoss.com/mcp/overview.html)
 
   * [Floatboat Agent Workspace](</ai-agent-workspace>)
 
-  * [Calendar-Driven AI](</blog/what-if-your-calendar-could-run-itself>)
+  * [Calendar-Driven AI](/blog/what-if-your-calendar-could-run-itself)
 

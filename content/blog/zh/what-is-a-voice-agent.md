@@ -16,7 +16,7 @@ draft: false
 - 2026 年年中的品类分野，一边是**消费级语音模式**（ChatGPT GPT-Live、Claude Voice Mode、Gemini Live、Grok Voice），一边是把同一模式嵌入自研产品的**开发者语音到语音 API**（OpenAI Realtime API、xAI Grok Voice API）。
 - Voice agent 不同于**面向 AI Agent 的语音听写**——后者是变成文档或工作区内可编辑文本的语音——也不同于**电话语音机器人**——后者是为呼叫中心路由优化、脚本化的 IVR 式电话树。
 - 架构很关键：全双工模型可以同时听与说；逐轮管线仍主导许多企业技术栈；委托推理让一个快的语音层把难题交给更慢的前沿模型，而不打断对话流。
-- 相邻品类参阅我们的枢纽文章<a href="/zh/blog/what-is-voice-dictation-for-ai-agents">什么是面向 AI Agent 的语音听写</a>——本文定义的是语音栈中语音原生的助手那一侧。
+- 相邻品类参阅我们的枢纽文章[什么是面向 AI Agent 的语音听写](/zh/blog/what-is-voice-dictation-for-ai-agents)——本文定义的是语音栈中语音原生的助手那一侧。
 
 ---
 
@@ -130,13 +130,13 @@ Voice agent **不是事后钉上文字转语音的文本聊天**。朗读打字�
 
 语音栈分成三种任务形态——共用一个麦克风图标，却为不同结果优化。混淆它们会导向常见失败：期待文档听写工具带你演练谈判，或期待电话机器人自由头脑风暴。
 
-**Voice agents** 优化**交互式口语推理**。成功的样子：与 AI 的一场连贯多轮通话，你出声思考、打断、得到有实质的回答——可选带工具。延迟与轮替主导 UX 评估。产品：GPT-Live、Claude Voice Mode、Gemini Live、Grok Voice（消费级）；Realtime API 与 Grok Voice API（开发者）。OpenAI 在同一应用里区分双向 Voice Mode 与 composer 听写的细节，见 <a href="/zh/blog/chatgpt-voice-mode-vs-dictation">ChatGPT 语音模式 vs 听写</a>。
+**Voice agents** 优化**交互式口语推理**。成功的样子：与 AI 的一场连贯多轮通话，你出声思考、打断、得到有实质的回答——可选带工具。延迟与轮替主导 UX 评估。产品：GPT-Live、Claude Voice Mode、Gemini Live、Grok Voice（消费级）；Realtime API 与 Grok Voice API（开发者）。OpenAI 在同一应用里区分双向 Voice Mode 与 composer 听写的细节，见 [ChatGPT 语音模式 vs 听写](/zh/blog/chatgpt-voice-mode-vs-dictation)。
 
-**面向 AI Agent 的语音听写**优化**工作区内的文本生产**。成功的样子：准确转写进你正在编辑的产物，agent 对选中片段施以辅助——润色这段、批量批注这些高亮——全程不离开文档。延迟仍然重要，但持久产出是文字，不是 AI 语音的转写。关于语音*模式*何时胜过听写的结构化对比，见 <a href="/zh/blog/voice-mode-vs-dictation-for-ai-agents">面向 AI Agent 的语音模式与语音听写对比</a>。
+**面向 AI Agent 的语音听写**优化**工作区内的文本生产**。成功的样子：准确转写进你正在编辑的产物，agent 对选中片段施以辅助——润色这段、批量批注这些高亮——全程不离开文档。延迟仍然重要，但持久产出是文字，不是 AI 语音的转写。关于语音*模式*何时胜过听写的结构化对比，见 [面向 AI Agent 的语音模式与语音听写对比](/zh/blog/voice-mode-vs-dictation-for-ai-agents)。
 
 **电话语音机器人**优化电话网络上的**呼叫完成指标**——问题解决率、平均处理时长、合规话术、CRM 记录。成功常常是一笔完成的付款、一个订好的预约、或一次合格的转人工。开放式推理可能被明确排除以降低责任风险。现代语音到语音模型可以升级这些机器人，但**运营外壳**（运营商、录音、PCI 流程）与模型共同定义了这个品类。
 
-对选择日常工具的独立运营者，工作语境的框架很重要。我们的姊妹篇 <a href="/zh/blog/voice-agent-vs-voice-dictation-for-work">工作中的 Voice Agent 与语音听写之别</a>逐场景展开——散步 vs 桌面草稿、会议 vs 备忘录——而不把品类混为一谈。
+对选择日常工具的独立运营者，工作语境的框架很重要。我们的姊妹篇 [工作中的 Voice Agent 与语音听写之别](/zh/blog/voice-agent-vs-voice-dictation-for-work)逐场景展开——散步 vs 桌面草稿、会议 vs 备忘录——而不把品类混为一谈。
 
 | 维度 | Voice agent | 面向 agent 的语音听写 | 电话语音机器人 |
 |-----------|-------------|---------------------------|---------------------|
@@ -160,7 +160,7 @@ Voice agent **不是事后钉上文字转语音的文本聊天**。朗读打字�
 
 **嵌入的面向客户 agent（构建者形态）。** 开发者用 Realtime API 或 Grok Voice 把 voice agents 放进自己的产品——辅导、内部服务台、预约分诊——品牌与数据边界要求自定义托管。除非你本身发布软件，这不是独立创业者的默认项；列出它是为了完成品类地图。
 
-Voice agents **不能**替代其他工具的地方：带引用的长文写作、法律级精度、协同编辑仍偏向键盘优先的工作流或**向文档听写**。那是语音听写产品——而非 voice agents——领跑的边界。Floatboat 的 **Flow Mode**（见我们的 <a href="/zh/blog/introducing-flow-mode">Flow Mode 公告</a>）稳稳站在听写一侧：语音喂给一份活文档，桌面 agent 协作编辑选中文本。**Floatboat 不是 voice agent 产品**——它不把语音进/语音出的对话定位为主运行时。如果你的任务是在客户电话前交付一份书面简报，听写加 agent 编辑，可能胜过一场还需要收拾转写烂摊子的口头头脑风暴。
+Voice agents **不能**替代其他工具的地方：带引用的长文写作、法律级精度、协同编辑仍偏向键盘优先的工作流或**向文档听写**。那是语音听写产品——而非 voice agents——领跑的边界。Floatboat 的 **Flow Mode**（见我们的 [Flow Mode 公告](/zh/blog/introducing-flow-mode)）稳稳站在听写一侧：语音喂给一份活文档，桌面 agent 协作编辑选中文本。**Floatboat 不是 voice agent 产品**——它不把语音进/语音出的对话定位为主运行时。如果你的任务是在客户电话前交付一份书面简报，听写加 agent 编辑，可能胜过一场还需要收拾转写烂摊子的口头头脑风暴。
 
 ---
 

@@ -54,7 +54,7 @@ Terra 是均衡档，输入每百万 token 2.50 美元、输出每百万 15 美�
 
 Luna 是最快最便宜的一档，输入每百万 token 1 美元、输出每百万 6 美元。令人意外的基准结果是：Luna 在 Terminal-Bench 2.1 上拿到 84.3%——追平 Claude Mythos 5，那是一个在遭遇政府强制限制之前被看作前沿水平的模型 [来源：<a href="<https://openai.com/index/gpt-5-6/>" rel="nofollow noopener">OpenAI</a>]。
 
-在日历驱动 Agent 的配置里，Luna 承接的是那些「每个新日历事件上都会跑、你却察觉不到」的隐形工作。一个新事件出现在日历上，总得有人分类：这是客户会议、内部同步、截止日还是提醒？这个分类决定该由哪条 agent pipeline 接手、需要做什么准备、以及是否需要人工介入。Luna 能以几乎可忽略的成本，在每个进来的事件上跑一遍这样的分类。它还能从会议逐字稿里抽行动项、按紧急程度给邮件线程归类、判断某个事件要不要升级到 Terra 或 Sol 的 pipeline。AI 日程 <a href="/blog/ai-scheduling-agent">scheduling agent</a> 生态正是受益于这种廉价的预处理层——Sol 和 Terra 只碰真正需要它们能力的事件，高量级的例行工作根本到不了它们面前。
+在日历驱动 Agent 的配置里，Luna 承接的是那些「每个新日历事件上都会跑、你却察觉不到」的隐形工作。一个新事件出现在日历上，总得有人分类：这是客户会议、内部同步、截止日还是提醒？这个分类决定该由哪条 agent pipeline 接手、需要做什么准备、以及是否需要人工介入。Luna 能以几乎可忽略的成本，在每个进来的事件上跑一遍这样的分类。它还能从会议逐字稿里抽行动项、按紧急程度给邮件线程归类、判断某个事件要不要升级到 Terra 或 Sol 的 pipeline。AI 日程 [scheduling agent](/blog/ai-scheduling-agent) 生态正是受益于这种廉价的预处理层——Sol 和 Terra 只碰真正需要它们能力的事件，高量级的例行工作根本到不了它们面前。
 
 对每月收到 50–100 个日历事件的单人创业者来说，给每个事件都跑一遍 Luna 的成本微不足道——一整月的分类与路由 token 成本大约只要 1–2 美元。另一条路是手动分诊每一个事件，花的不是钱，是注意力。注意力比钱贵。
 
@@ -68,7 +68,7 @@ Luna 是最快最便宜的一档，输入每百万 token 1 美元、输出每百
 
 **日历上出现一个新事件**——一位从未合作过的人发来的会议邀请——触发 Luna。agent 给事件分类、查你和这位联系人有没有既有上下文，再路由到合适的 pipeline：客户会议走 Terra 做标准准备，会议描述若有高利害内容则走 Sol。Luna 几秒钟做完这一切，成本以美分的几分之一计。没有这一层，每个事件都要手动分诊，或默认用一个昂贵的模型做简单的分类。
 
-<a href="/blog/what-is-agentic-calendar">agentic calendar 范式</a>在「每层各干各擅长的、而不是把一切推给最强模型」时效果最好。内置的 GPT-5.6 三档让这套结构无需任何配置成本即可使用。
+[agentic calendar 范式](/blog/what-is-agentic-calendar)在「每层各干各擅长的、而不是把一切推给最强模型」时效果最好。内置的 GPT-5.6 三档让这套结构无需任何配置成本即可使用。
 
   4. 不同档位选择花多少钱——给单人创业者的真实数字
 
@@ -92,7 +92,7 @@ Floatboat 内置的提示词缓存配合 GPT-5.6 重设计的缓存系统——�
 
 GPT-5.6 的更大发布还带来了**ChatGPT Work**——一个跨已连接应用与文件收集上下文、用来创建文档、表格与演示稿的 agent——以及**Codex**并入 ChatGPT 桌面应用 [来源：<a href="<https://www.axios.com/2026/07/09/ai-openai-gpt-release>" rel="nofollow noopener">Axios</a>]。在 Floatboat 上，同样的 GPT-5.6 模型直接为你的日历 Agent 供能，不必去另一个代码环境或办公应用里绕一圈——模型就嵌在你日历事件所在的原地。
 
-想更深入理解 Sol、Terra、Luna 在基准、定价与安全评估上的对比，见完整的 <a href="/blog/gpt-5-6-sol-terra-luna">GPT-5.6 模型家族概览</a>。想弄明白让分档 Agent 变得有用的日历驱动范式，<a href="/blog/what-is-agentic-calendar">agentic calendar 详解</a> 会从底层把这个品类讲透。
+想更深入理解 Sol、Terra、Luna 在基准、定价与安全评估上的对比，见完整的 [GPT-5.6 模型家族概览](/blog/gpt-5-6-sol-terra-luna)。想弄明白让分档 Agent 变得有用的日历驱动范式，[agentic calendar 详解](/blog/what-is-agentic-calendar) 会从底层把这个品类讲透。
 
   6. 结论
 

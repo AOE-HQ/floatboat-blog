@@ -21,13 +21,13 @@ draft: false
 
 ## Grok 3 API 是什么
 
-xAI 于 2025 年 4 月公开开放了 Grok 3 API。此后定价没动过：输入每百万 token 3 美元、输出每百万 15 美元、131K 上下文窗口。我对过 [xAI 的模型与定价文档](<https://docs.x.ai/developers/models>)——这是我写作时的费率。
+xAI 于 2025 年 4 月公开开放了 Grok 3 API。此后定价没动过：输入每百万 token 3 美元、输出每百万 15 美元、131K 上下文窗口。我对过 [xAI 的模型与定价文档](https://docs.x.ai/developers/models)——这是我写作时的费率。
 
 「开放」这个词容易让人误解，所以我拆开讲。
 
 **API 访问是开放的**——没有候补名单，注册、拿 key，新账号还有 25 美元起始额度。摩擦程度已经和 OpenAI、Anthropic 一样了。
 
-**开源是另一回事。** Musk [说过 Grok 3 会在 Grok 2.5 发布约六个月后开源](<https://techcrunch.com/2025/08/24/elon-musk-says-xai-has-open-sourced-grok-2-5/>)，算下来大约在 2026 年 2 月。我上次查 Hugging Face 时，Grok 3 的权重还没上传。如果你在意这个，建议直接去核实。
+**开源是另一回事。** Musk [说过 Grok 3 会在 Grok 2.5 发布约六个月后开源](https://techcrunch.com/2025/08/24/elon-musk-says-xai-has-open-sourced-grok-2-5/)，算下来大约在 2026 年 2 月。我上次查 Hugging Face 时，Grok 3 的权重还没上传。如果你在意这个，建议直接去核实。
 
 ![3.png](/blog/images/grok-3-api-solo-operator/1776932944516-b691cc85-59e0-46c8-bbc1-bea506233ac4.webp)
 
@@ -83,15 +83,15 @@ _这就是我用两个月得出的真实看法。更便宜的 token 是真的，
 
 **往期文章：**
 
-  * [什么是 Vibe Coding（以及它如何改变你构建的方式）](</blog/what-is-vibe-coding>)
+  * [什么是 Vibe Coding（以及它如何改变你构建的方式）](/blog/what-is-vibe-coding)
 
-  * [单人创始人的 AI 工作流：真正的瓶颈在哪里](</blog/ai-workflow-for-solo-founders>)
+  * [单人创始人的 AI 工作流：真正的瓶颈在哪里](/blog/ai-workflow-for-solo-founders)
 
-  * [单人创业者的 DeepSeek V4 API：便宜什么时候才真正要紧](</blog/deepseek-v4-api-solo-operator>)
+  * [单人创业者的 DeepSeek V4 API：便宜什么时候才真正要紧](/blog/deepseek-v4-api-solo-operator)
 
-  * [AI Agent vs 聊天机器人：为什么这个区分影响你的技术栈](</blog/ai-agent-vs-chatbot>)
+  * [AI Agent vs 聊天机器人：为什么这个区分影响你的技术栈](/blog/ai-agent-vs-chatbot)
 
-  * [为什么 AI 会在会话之间失忆（以及它对自动化意味着什么）](</blog/why-ai-forgets-between-sessions>)
+  * [为什么 AI 会在会话之间失忆（以及它对自动化意味着什么）](/blog/why-ai-forgets-between-sessions)
 
 ![5.png](/blog/images/grok-3-api-solo-operator/1776932977603-7e7aba35-fa7d-4d76-b064-9b3b721ca245.webp)
 

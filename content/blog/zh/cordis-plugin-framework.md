@@ -70,7 +70,7 @@ Koishi 跑在 Cordis v3 上。2026 年 8 月 13 日 DeepSeek Harness 发布开�
 
 DeepSeek Harness（dsh）把 Cordis 的哲学贯彻到了字面层面。harness 里每一项能力都是一个插件：模型适配器、工具注册表、会话日志、沙箱、存储层、Agent 主循环，甚至 UI。harness 本身只是一个薄内核，负责挂载、卸载和追踪依赖；Agent 的真实能力全部活在它之上的插件里。
 
-架构文档讲清了各部件如何映射到 Cordis 的 context 上。会话子系统拥有只追加的 SessionEvent 日志与内存存储，通过 ctx.sessions 暴露；系统提示子系统负责 prompt 分段与工具 schema 的组装，走 ctx.systemPrompt；工具子系统在 [ctx.tools](<http://ctx.tools>) 下提供有作用域的工具注册表与带守卫的执行管线；Agent 子系统通过 ctx.agents 暴露 Agent 接口、实时注册表与 agent 事件，默认驱动在 ctx.agentLoop 上实现该接口；LLM 层贡献消息与流词汇表，以及在 ctx.llm 的适配器接缝。
+架构文档讲清了各部件如何映射到 Cordis 的 context 上。会话子系统拥有只追加的 SessionEvent 日志与内存存储，通过 ctx.sessions 暴露；系统提示子系统负责 prompt 分段与工具 schema 的组装，走 ctx.systemPrompt；工具子系统在 [ctx.tools](http://ctx.tools) 下提供有作用域的工具注册表与带守卫的执行管线；Agent 子系统通过 ctx.agents 暴露 Agent 接口、实时注册表与 agent 事件，默认驱动在 ctx.agentLoop 上实现该接口；LLM 层贡献消息与流词汇表，以及在 ctx.llm 的适配器接缝。
 
 插件针对这些 context 键注册能力，一切都走 Cordis 的服务与事件模型。实际效果是：想换模型后端、替换沙箱、或加一个自定义工具？在配置里挂一个插件即可——不需要 fork 源码，也不存在需要打补丁的"特权核心"。DeepSeek 开箱自带四个预设档位：**Standard**（完整编码 Agent，含文件系统、shell、网页搜索、子 Agent 与 plan 模式）、**Code**（模型生成的代码编排多轮工具调用）、**Minimal**（只有 bash 和一个文件编辑器——DeepSeek 自己官方模型基准测试用的就是这份配置），以及 **Creator**（用于带运行时检视与预设编写指导来构建自定义预设）。
 

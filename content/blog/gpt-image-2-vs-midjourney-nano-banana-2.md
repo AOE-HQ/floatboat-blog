@@ -17,7 +17,7 @@ Short version: there's no single right answer. There's a right answer per workfl
 
 ## Why this comparison matters now
 
-Three things shifted in roughly four months. **GPT Image 2 launched on April 21, 2026** and immediately took the top spot on the Image Arena leaderboard with a 242-point lead over the previous best. **Midjourney V8 alpha launched March 17** with a complete codebase rewrite and roughly 5x faster generation. ​[Nano Banana 2 ](<https://gemini.google/jp/overview/image-generation/?hl=ja-JP>)dropped February 26​, free at the Gemini app and aggressively cheap on the API. And separately, **DALL-E 2 and DALL-E 3 are being retired May 12, 2026** — if you've been running on those, the clock is short.
+Three things shifted in roughly four months. **GPT Image 2 launched on April 21, 2026** and immediately took the top spot on the Image Arena leaderboard with a 242-point lead over the previous best. **Midjourney V8 alpha launched March 17** with a complete codebase rewrite and roughly 5x faster generation. ​[Nano Banana 2 ](https://gemini.google/jp/overview/image-generation/?hl=ja-JP)dropped February 26​, free at the Gemini app and aggressively cheap on the API. And separately, **DALL-E 2 and DALL-E 3 are being retired May 12, 2026** — if you've been running on those, the clock is short.
 
 So the three-tool decision space changed. The price-performance lines moved. Worth re-checking your subscriptions.
 
@@ -29,7 +29,7 @@ Seven dimensions. I'll be honest where my testing is shallow.
 
 ### Text rendering
 
-This is the one place GPT Image 2 isn't even close to a fight. Independent reviews put it at roughly 99% character-level accuracy across Latin, CJK, Hindi, and Bengali scripts — Midjourney V8 made real progress here but mostly on Latin scripts, and Nano Banana 2 is solid but not at the same level on dense text. According to [OpenAI's official announcement](<https://openai.com/index/introducing-chatgpt-images-2-0/>), legible text in any language was the headline upgrade, and in my testing it actually delivers.
+This is the one place GPT Image 2 isn't even close to a fight. Independent reviews put it at roughly 99% character-level accuracy across Latin, CJK, Hindi, and Bengali scripts — Midjourney V8 made real progress here but mostly on Latin scripts, and Nano Banana 2 is solid but not at the same level on dense text. According to [OpenAI's official announcement](https://openai.com/index/introducing-chatgpt-images-2-0/), legible text in any language was the headline upgrade, and in my testing it actually delivers.
 
 ### Character consistency across a series
 
@@ -51,9 +51,9 @@ This is where it gets messy. Honest table:
 
 
 
-API per-image: GPT Image 2 ~$0.04–$0.35, [Nano Banana 2 ~$0.045–$0.151 per image](<https://openrouter.ai/google/gemini-3.1-flash-image-preview>), Midjourney has no public API. Note: ​**for ​****[Midjourney](<https://www.midjourney.com/explore?tab=video_top>)****​, companies over $1M revenue must be on Pro ($60/mo) or ​Mega** ​**​ ($120/mo)** — not a creator-tier issue but worth knowing if your studio scales.
+API per-image: GPT Image 2 ~$0.04–$0.35, [Nano Banana 2 ~$0.045–$0.151 per image](https://openrouter.ai/google/gemini-3.1-flash-image-preview), Midjourney has no public API. Note: ​**for ​****[Midjourney](https://www.midjourney.com/explore?tab=video_top)****​, companies over $1M revenue must be on Pro ($60/mo) or ​Mega** ​**​ ($120/mo)** — not a creator-tier issue but worth knowing if your studio scales.
 
-[Midjourney's official plan comparison](<https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans>) is the source of truth on their tiers; I checked it as of writing this.
+[Midjourney's official plan comparison](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans) is the source of truth on their tiers; I checked it as of writing this.
 
 ### Speed and latency
 
@@ -83,11 +83,11 @@ I'm not a lawyer. Verify against current terms before you ship paid client work.
 
 **Doesn't:** purely artistic style work. Midjourney still produces more _interesting_ images for moody, painterly, editorial pieces. GPT Image 2 looks correct; Midjourney looks expressive. Different things.
 
-It also still has weaknesses on pixel-precise placement, brand logo accuracy, and reproducing specific copyrighted IP — [The Next Web's review](<https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation>) covers the trade-offs honestly. Worth reading before committing.
+It also still has weaknesses on pixel-precise placement, brand logo accuracy, and reproducing specific copyrighted IP — [The Next Web's review](https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation) covers the trade-offs honestly. Worth reading before committing.
 
 ## Midjourney — where it still leads, where it falls behind
 
-**Leads:** raw aesthetic quality. If your output is moodboards, concept art, editorial visuals, or anything where "looks beautiful" matters more than "is technically accurate," V8 still has the edge. The painterly textures, the cinematic lighting, the way it handles atmosphere — nothing else feels quite the same. The [V8 alpha launch notes](<https://wavespeed.ai/blog/posts/what-is-midjourney-v8-features-pricing-how-to-use-2026/>) lay out the speed and quality jumps; the 5x speed improvement alone makes V7 feel old.
+**Leads:** raw aesthetic quality. If your output is moodboards, concept art, editorial visuals, or anything where "looks beautiful" matters more than "is technically accurate," V8 still has the edge. The painterly textures, the cinematic lighting, the way it handles atmosphere — nothing else feels quite the same. The [V8 alpha launch notes](https://wavespeed.ai/blog/posts/what-is-midjourney-v8-features-pricing-how-to-use-2026/) lay out the speed and quality jumps; the 5x speed improvement alone makes V7 feel old.
 
 **Falls behind:** anything text-heavy, multilingual, or production-pipeline focused. No public API still hurts for solo operators trying to integrate generation into their workflow. The GPU-hour pricing model is opaque — you can't predict your monthly cost the way you can with a per-image rate. And character consistency, while improved, still requires more prompt-engineering work than the alternatives.
 
@@ -153,13 +153,13 @@ When you need this, you'll know.
 
 ## Previous Posts:
 
-  * [What’s the real difference between AI workspaces and ChatGPT?](</blog/ai-workspace-agents>)
+  * [What’s the real difference between AI workspaces and ChatGPT?](/blog/ai-workspace-agents)
 
-  * [Not sure what AI agents actually do?](</blog/ai-agent-use-cases-real-examples>)
+  * [Not sure what AI agents actually do?](/blog/ai-agent-use-cases-real-examples)
 
-  * [Want to build your own workflow?](</blog/how-to-build-an-ai-agent>)
+  * [Want to build your own workflow?](/blog/how-to-build-an-ai-agent)
 
-  * [If you care about how workflows actually run in practice, this one goes deeper](</blog/ai-agent-workflow-vibe-coding>):
+  * [If you care about how workflows actually run in practice, this one goes deeper](/blog/ai-agent-workflow-vibe-coding):
 
-  * [How solo operators use AI to work like a full team](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [How solo operators use AI to work like a full team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

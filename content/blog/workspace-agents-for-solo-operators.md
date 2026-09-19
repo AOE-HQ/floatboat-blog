@@ -23,7 +23,7 @@ I've been thinking about that conversation since. Because the more I look at how
 
 A one-person company isn't a small version of a real company. It's a different shape. In a five-person team, you have specialization — the content person does content, the ops person does ops, handoffs are formal. In a one-person company, all of that lives in one head, and the switching cost between roles is the real bottleneck. You don't lose time _doing_ the work. You lose it transitioning between modes.
 
-The numbers around this category are getting hard to ignore. [Solo-founded startups jumped from 23.7% in 2019 to 36.3% by mid-2025](<https://entrepreneurloop.com/ai-tools-to-scale-solo-business/>), and most of the new businesses registered in the U.S. in recent years are non-employer entities. So this isn't a fringe pattern anymore — it's how a lot of work is structured now. The tooling, though, is still mostly designed for teams.
+The numbers around this category are getting hard to ignore. [Solo-founded startups jumped from 23.7% in 2019 to 36.3% by mid-2025](https://entrepreneurloop.com/ai-tools-to-scale-solo-business/), and most of the new businesses registered in the U.S. in recent years are non-employer entities. So this isn't a fringe pattern anymore — it's how a lot of work is structured now. The tooling, though, is still mostly designed for teams.
 
 ![2.PNG](/blog/images/workspace-agents-for-solo-operators/1777428173310-7b5fd1f2-256f-4ae9-ae61-30ec52fe5316.webp)
 
@@ -39,7 +39,7 @@ I want to be careful here because chat tools are still the most useful thing on 
 
 ### Context resets with every new chat
 
-You finish a strategy session with the model, close the tab, and the next morning you're back to "let me explain what I'm working on." Context windows have grown — ​**Claude, ​ChatGPT** ​, and Gemini ​**all handle long conversations now — but a window is ​** temporary working space, not memory​. Hindsight's engineering team [made this distinction sharply](<https://hindsight.vectorize.io/blog/2026/04/23/your-agent-is-not-forgetful>): a bigger context window "delays the pain. It does not remove the underlying limitation."
+You finish a strategy session with the model, close the tab, and the next morning you're back to "let me explain what I'm working on." Context windows have grown — ​**Claude, ​ChatGPT** ​, and Gemini ​**all handle long conversations now — but a window is ​** temporary working space, not memory​. Hindsight's engineering team [made this distinction sharply](https://hindsight.vectorize.io/blog/2026/04/23/your-agent-is-not-forgetful): a bigger context window "delays the pain. It does not remove the underlying limitation."
 
 For a solo operator, this matters more than for a team. A team has shared docs, a shared Slack, ambient context everyone absorbs. You don't have that. You _are_ the shared context. When your tools forget, the re-establishing tax falls entirely on you.
 
@@ -47,7 +47,7 @@ For a solo operator, this matters more than for a team. A team has shared docs, 
 
 This is the one that bugs me most. You spend an afternoon in a chat tool training it on how you write, what you don't say, who your customer is. The output gets sharp. You ship it. Tomorrow, in a new chat, that's all gone.
 
-Some tools have rolled out persistent memory features, but the implementations are still uneven — most cap memory at a few thousand tokens of summary, [not the full grain of how you actually work](<https://www.jenova.ai/en/resources/ai-chat-with-memory>). I've put many hours into a chat session and watched it produce something I really liked, then opened a new one and gotten a generic response to the same question. _Honestly? That gap is where solo operators feel the most disappointment._ It's not that the model is dumb. It's that nothing about your specific operation persists.
+Some tools have rolled out persistent memory features, but the implementations are still uneven — most cap memory at a few thousand tokens of summary, [not the full grain of how you actually work](https://www.jenova.ai/en/resources/ai-chat-with-memory). I've put many hours into a chat session and watched it produce something I really liked, then opened a new one and gotten a generic response to the same question. _Honestly? That gap is where solo operators feel the most disappointment._ It's not that the model is dumb. It's that nothing about your specific operation persists.
 
 ![3.PNG](/blog/images/workspace-agents-for-solo-operators/1777428186112-2d4d23d5-4206-474e-8316-d55b7b5e4726.webp)
 
@@ -57,7 +57,7 @@ Just to be fair to the alternative — workflow builders like Zapier and Make ha
 
 ### Mixed, judgment-heavy work doesn't fit nodes
 
-Your typical Tuesday: research a prospect, edit a draft, reply to a client question, reconcile an invoice, respond to a podcast booking, finish a proposal. None of these are "every time X, do Y." They're one-offs that need judgment. **A ​workflow** ​**​ builder is a hammer for nails. A solo operator's day is mostly screws.** As [Anthropic's research team notes in their guide on agent design](<https://www.anthropic.com/research/building-effective-agents>), workflows are the right call for "well-defined tasks" — and most solo work, frankly, isn't.
+Your typical Tuesday: research a prospect, edit a draft, reply to a client question, reconcile an invoice, respond to a podcast booking, finish a proposal. None of these are "every time X, do Y." They're one-offs that need judgment. **A ​workflow** ​**​ builder is a hammer for nails. A solo operator's day is mostly screws.** As [Anthropic's research team notes in their guide on agent design](https://www.anthropic.com/research/building-effective-agents), workflows are the right call for "well-defined tasks" — and most solo work, frankly, isn't.
 
 ### The setup cost is a second job
 
@@ -79,7 +79,7 @@ For solo operators, this is where most of the daily friction lives. **The cost o
 
 ### Reusable execution instead of repeated prompting
 
-There's a difference between asking an AI to do something every time, and codifying a piece of work so it runs the same way next time without you re-prompting. The Anthropic engineering team [described this elegantly](<https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents>) as the move from "finding the right words for your prompts" toward "configuring the context most likely to generate desired behavior." That sentence sounds technical but the user-facing version is: _teach it once, reuse it._
+There's a difference between asking an AI to do something every time, and codifying a piece of work so it runs the same way next time without you re-prompting. The Anthropic engineering team [described this elegantly](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) as the move from "finding the right words for your prompts" toward "configuring the context most likely to generate desired behavior." That sentence sounds technical but the user-facing version is: _teach it once, reuse it._
 
 In practice, this is the part that compounds for solo work. You build a small piece of execution — a way you process incoming client briefs, a way you draft sales follow-ups, a way you turn a podcast appearance into three pieces of content. Each one becomes infrastructure instead of a fresh task. ​**The first month feels slow. By month three, it starts to feel like ​leverage** ​.
 
@@ -87,7 +87,7 @@ In practice, this is the part that compounds for solo work. You build a small pi
 
 The other thing solo operators don't have time for is migrating their work somewhere else. The agents that fit this audience read your existing files, work in your existing browser, and interact with the tools you already pay for. Not "import everything into our new platform." More like "an intelligence layer over the work you're already doing."
 
-This is one of the cleaner alignments between [the rise of solo founders and the rise of agentic AI](<https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025>) — Gartner expects 40% of enterprise apps to embed task-specific agents by end of 2026, and the consumer/operator-facing version of that wave is just starting to land.
+This is one of the cleaner alignments between [the rise of solo founders and the rise of agentic AI](https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025) — Gartner expects 40% of enterprise apps to embed task-specific agents by end of 2026, and the consumer/operator-facing version of that wave is just starting to land.
 
 ## What it still won't do for you
 
@@ -125,19 +125,19 @@ It's probably not worth it yet if:
 
   * Your work is genuinely high-volume and repetitive (workflow builders fit better)
 
-  * You're in a regulated field where the [judgment layer can't be agent-mediated](<https://www.atomicwork.com/blog/ai-agents-vs-ai-automation>) — finance, legal, medical without strong human review
+  * You're in a regulated field where the [judgment layer can't be agent-mediated](https://www.atomicwork.com/blog/ai-agents-vs-ai-automation) — finance, legal, medical without strong human review
 
 That's where I've landed. The one-person company is becoming a default shape of work, and the tooling is finally starting to bend toward that shape. Whether you adopt this year or next probably matters less than whether you stay aware of how the category is evolving. When the right tool clicks for your specific operation, you'll know. Until then — keep your stack lean, keep your judgment yours, and don't trust anyone telling you the agent will do everything. It won't. But it might do enough to give you back a Tuesday.
 
 ## Previous Posts:
 
-  * [If you're still figuring out how AI fits into solo work, this guide breaks down AI agents for one-person operators](</blog/ai-agents-2026-solo-operators>)
+  * [If you're still figuring out how AI fits into solo work, this guide breaks down AI agents for one-person operators](/blog/ai-agents-2026-solo-operators)
 
-  * [Struggling with AI “forgetting” your context? This explains why it happens between sessions](</blog/why-ai-forgets-every-session>)
+  * [Struggling with AI “forgetting” your context? This explains why it happens between sessions](/blog/why-ai-forgets-every-session)
 
-  * [Not sure how to actually scale alone? Here’s how one-person businesses operate like a team with AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [Not sure how to actually scale alone? Here’s how one-person businesses operate like a team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [If you're comparing tools, this helps clarify AI workspace vs workflow builder differences](</blog/workflow-builder-vs-ai-workspace>)
+  * [If you're comparing tools, this helps clarify AI workspace vs workflow builder differences](/blog/workflow-builder-vs-ai-workspace)
 
-  * [And if you want to go deeper, this explains what a persistent AI agent actually is](</blog/what-is-persistent-ai-agent>)
+  * [And if you want to go deeper, this explains what a persistent AI agent actually is](/blog/what-is-persistent-ai-agent)
 

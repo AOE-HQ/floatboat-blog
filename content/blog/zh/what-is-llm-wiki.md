@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-嗨，我是 Nova。说实话，几周前**Karpathy**那条推文开始刷屏时，我的第一反应是「等等，这真的是新东西吗？」我捣鼓个人知识体系已经有一阵子了——Obsidian 库、自定义 GPT 指令、各种笔记倾倒式工作流。我知道 RAG 是什么。所以第一次扫到关于他那份 [LLM wiki](<https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>) 的帖子时，我差点直接划过去。
+嗨，我是 Nova。说实话，几周前**Karpathy**那条推文开始刷屏时，我的第一反应是「等等，这真的是新东西吗？」我捣鼓个人知识体系已经有一阵子了——Obsidian 库、自定义 GPT 指令、各种笔记倾倒式工作流。我知道 RAG 是什么。所以第一次扫到关于他那份 [LLM wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) 的帖子时，我差点直接划过去。
 
 然后我真的读了那份 gist。
 
@@ -25,7 +25,7 @@ draft: false
 
 LLM wiki 把这件事翻了过来。不是即时检索原始文档，而是让 LLM _预编译_你的素材，编成一份结构化的 wiki——一个相互链接的 markdown 文件目录。之后你再提问，AI 不再去翻原始 PDF，而是在一个已经综合过它们的知识库里导航。
 
-正如 Karpathy 在[原始 gist](<https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>)里所说：「用 RAG，你每次饿了都要现做菜。用 LLM Wiki，你建一间会不断改良自己食谱的厨房。」
+正如 Karpathy 在[原始 gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)里所说：「用 RAG，你每次饿了都要现做菜。用 LLM Wiki，你建一间会不断改良自己食谱的厨房。」
 
 这个比喻让我记住了。
 
@@ -49,7 +49,7 @@ RAG 做检索。LLM wiki 做_积累_。这才是真正的区别。
 
 Notion 或 Obsidian 这类传统笔记应用给你一个容器，但所有维护都留给你——你得自己打标签、自己连链接、自己更新。多数人的 Notion 数据库里塞满了第二个月起就再没人碰过的页面。LLM wiki 把维护问题外包出去解决了——交叉引用、过时信息标记、连接自动更新，全交给 LLM。
 
-正如 [Analytics Vidhya 对 Karpathy 方法的拆解](<https://www.analyticsvidhya.com/blog/2026/04/llm-wiki-by-andrej-karpathy/>)所解释的，每新增一份素材，wiki 都变得更值钱，因为每一次吸收做的是整合（integrate），而不只是追加（append）。
+正如 [Analytics Vidhya 对 Karpathy 方法的拆解](https://www.analyticsvidhya.com/blog/2026/04/llm-wiki-by-andrej-karpathy/)所解释的，每新增一份素材，wiki 都变得更值钱，因为每一次吸收做的是整合（integrate），而不只是追加（append）。
 
 ![3.png](/blog/images/what-is-llm-wiki/1776148835868-b86aa41a-ae09-4afd-8063-480d8965502f.webp)
 
@@ -87,7 +87,7 @@ Karpathy 转发并评价这件成品「显式、可导航」。重点不在于�
 
 **Karpathy 的实现是给开发者的。**没有例外。
 
-他的配置需要 Claude Code（一个基于终端的编程 Agent）、Obsidian、熟悉 shell 命令、熟悉 GitHub gist，以及出问题时愿意调试的心态。[Antigravity 对 LLM Wiki 这个 idea file 的深挖](<https://antigravity.codes/blog/karpathy-llm-wiki-idea-file>)逐个工具讲得很细——而那份清单，对非技术人员来说相当劝退。
+他的配置需要 Claude Code（一个基于终端的编程 Agent）、Obsidian、熟悉 shell 命令、熟悉 GitHub gist，以及出问题时愿意调试的心态。[Antigravity 对 LLM Wiki 这个 idea file 的深挖](https://antigravity.codes/blog/karpathy-llm-wiki-idea-file)逐个工具讲得很细——而那份清单，对非技术人员来说相当劝退。
 
 这不是对那个模式的批评，只是如实陈述。Karpathy 是一名研究者兼工程师，在为他_自己_的工作方式搭系统。他的语料是论文、代码和研究文档，他的工作流是「一个 shell + 一个 LLM」。
 
@@ -155,29 +155,29 @@ LLM wiki 通过让知识_持久而显式_来解决它：AI 在 wiki 里导航，
 
 那份 gist 自己就暗示了这一点。Karpathy 提到，随着这个模式成熟，会有一个「不可思议的新产品」的空间——把吸收、查询、lint 与可视化做成一个连贯的东西，而不是一堆脚本。
 
-眼下[社区已经在快速迭代](<https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2>)——给 wiki 页面加置信度评分、当新素材与旧素材矛盾时做 supersession 逻辑、做生命周期管理让知识不腐坏。这些是规模化之后才会浮现的问题，而且正在被公开解决。
+眼下[社区已经在快速迭代](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2)——给 wiki 页面加置信度评分、当新素材与旧素材矛盾时做 supersession 逻辑、做生命周期管理让知识不腐坏。这些是规模化之后才会浮现的问题，而且正在被公开解决。
 
 开发者社区今天手搓的东西，很可能就是产品团队在未来 12–18 个月打磨成成熟软件的东西。模式已经清楚，剩下的基础设施问题只是：谁来把它带给另外那 95% 不会跑 shell 的用户？
 
-这就是 [LLM](<https://techterms.com/definition/llm>) wiki 所指的产品品类。不是更好的 RAG，而是一个懂你怎么工作的工作区。
+这就是 [LLM](https://techterms.com/definition/llm) wiki 所指的产品品类。不是更好的 RAG，而是一个懂你怎么工作的工作区。
 
 ![6.png](/blog/images/what-is-llm-wiki/1776148866360-405fe00c-6fed-475f-a61d-1503898579ec.webp)
 
 以上就是我对这件事目前的看法。这个模式真的很有意思——不是因为它颠覆了什么，而是因为它终于把问题讲清楚了，还给了它一套具体的架构。要不要自己建一个，几乎完全取决于两件事：你是否习惯跑 shell 命令，以及你的工作是否真的涉及随时间推移的深度领域积累。
 
-如果两个答案都是「是」：[Karpathy 的 gist 就在那里](<https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>)，社区实现也已经相当可用。
+如果两个答案都是「是」：[Karpathy 的 gist 就在那里](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)，社区实现也已经相当可用。
 
 如果任何一个答案是「否」：那个原则仍然重要。找到你自己的「编译一次、多次使用」的最简版本——那才是值得保留的部分。
 
 ## 往期文章
 
-  * [还在困惑 AI 为什么总从零开始？这篇讲得很清楚](</blog/why-ai-forgets-every-session>)
+  * [还在困惑 AI 为什么总从零开始？这篇讲得很清楚](/blog/why-ai-forgets-every-session)
 
-  * [想要持久化 AI 与一次性工具的简单解释？从这里开始](</blog/what-is-persistent-ai-agent>)
+  * [想要持久化 AI 与一次性工具的简单解释？从这里开始](/blog/what-is-persistent-ai-agent)
 
-  * [不确定你需要的是知识库还是更实用的东西？读这篇](</blog/llm-knowledge-base-solo-operators>)
+  * [不确定你需要的是知识库还是更实用的东西？读这篇](/blog/llm-knowledge-base-solo-operators)
 
-  * [如果你在纠结自建系统还是用现成工具，这篇能帮你](</blog/workflow-builder-vs-ai-workspace>)
+  * [如果你在纠结自建系统还是用现成工具，这篇能帮你](/blog/workflow-builder-vs-ai-workspace)
 
-  * [好奇 AI Agent 到底怎么融入真实单人工作流？这篇给出背景](</blog/ai-agents-2026-solo-operators>)
+  * [好奇 AI Agent 到底怎么融入真实单人工作流？这篇给出背景](/blog/ai-agents-2026-solo-operators)
 

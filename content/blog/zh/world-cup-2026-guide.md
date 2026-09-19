@@ -32,7 +32,7 @@ Floatboat 提供 FloatCup——免费的 2026 世界杯日历订阅。本文是�
 
 赛事于**2026 年 6 月 11 日**开幕，**2026 年 7 月 19 日**以决赛收官——共 39 天。这是史上最长的一届世界杯，原因是赛制从 32 队扩到 48 队、以及主办城市横跨四个时区的地理分布。
 
-小组赛从 6 月 11 日打到 6 月 27 日（17 天、72 场）。淘汰赛 6 月 28 日以全新的 32 强赛开打，一直打到 7 月 19 日的决赛（22 天、32 场淘汰赛）。[来源：FIFA —— 赛程、对阵、结果与场馆](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums>)
+小组赛从 6 月 11 日打到 6 月 27 日（17 天、72 场）。淘汰赛 6 月 28 日以全新的 32 强赛开打，一直打到 7 月 19 日的决赛（22 天、32 场淘汰赛）。[来源：FIFA —— 赛程、对阵、结果与场馆](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums)
 
 关键时间节点：
 
@@ -42,7 +42,7 @@ Floatboat 提供 FloatCup——免费的 2026 世界杯日历订阅。本文是�
 
 ## 2026 世界杯在哪里举行？
 
-2026 世界杯是首届由三国联合主办的世界杯。16 座主办城市分布如下：[来源：FIFA —— 赛程、对阵、结果与场馆](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums>)
+2026 世界杯是首届由三国联合主办的世界杯。16 座主办城市分布如下：[来源：FIFA —— 赛程、对阵、结果与场馆](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums)
 
   * **美国（11 座城市）**：亚特兰大、波士顿、达拉斯、休斯顿、堪萨斯城、洛杉矶、迈阿密、纽约/新泽西、费城、旧金山湾区、西雅图。美国承办 104 场中的 78 场，包括 1/4 决赛起的每一场比赛。
 
@@ -56,7 +56,7 @@ Floatboat 提供 FloatCup——免费的 2026 世界杯日历订阅。本文是�
 
 ## 2026 世界杯有多少支球队？
 
-48 支——比 1998 至 2022 年沿用的 32 队赛制增加了 16 支。扩军从根本上重塑了竞争结构。48 个名额按各大洲足联分配：[来源：FIFA —— 2026 世界杯出线球队](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+48 支——比 1998 至 2022 年沿用的 32 队赛制增加了 16 支。扩军从根本上重塑了竞争结构。48 个名额按各大洲足联分配：[来源：FIFA —— 2026 世界杯出线球队](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 <table><colgroup><col/><col/><col/></colgroup><tr><td colspan="1" rowspan="1"><p>联合会</p></td><td colspan="1" rowspan="1"><p>名额</p></td><td colspan="1" rowspan="1"><p>已出线代表</p></td></tr><tr><td colspan="1" rowspan="1"><p>UEFA（欧洲）</p></td><td colspan="1" rowspan="1"><p>16</p></td><td colspan="1" rowspan="1"><p>法国（卫冕冠军）、西班牙、英格兰、德国、葡萄牙、荷兰、比利时、克罗地亚</p></td></tr><tr><td colspan="1" rowspan="1"><p>CAF（非洲）</p></td><td colspan="1" rowspan="1"><p>10</p></td><td colspan="1" rowspan="1"><p>摩洛哥（2022 四强）、塞内加尔、埃及、科特迪瓦、加纳</p></td></tr><tr><td colspan="1" rowspan="1"><p>AFC（亚洲）</p></td><td colspan="1" rowspan="1"><p>9</p></td><td colspan="1" rowspan="1"><p>日本、伊朗、韩国、澳大利亚、沙特阿拉伯、卡塔尔</p></td></tr><tr><td colspan="1" rowspan="1"><p>CONMEBOL（南美）</p></td><td colspan="1" rowspan="1"><p>6</p></td><td colspan="1" rowspan="1"><p>阿根廷、巴西、哥伦比亚、乌拉圭、厄瓜多尔、巴拉圭</p></td></tr><tr><td colspan="1" rowspan="1"><p>CONCACAF（北美及加勒比）</p></td><td colspan="1" rowspan="1"><p>6 + 3 东道主</p></td><td colspan="1" rowspan="1"><p>美国、墨西哥、加拿大、海地、库拉索、巴拿马</p></td></tr><tr><td colspan="1" rowspan="1"><p>OFC（大洋洲）</p></td><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>新西兰</p></td></tr></table>
 

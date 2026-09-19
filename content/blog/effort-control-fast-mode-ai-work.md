@@ -31,7 +31,7 @@ I think this happens because we don't have a real intuition for what "effort" co
 
 ## What Effort Control actually means
 
-Effort Control is the new selector that sits next to the model picker on [claude.ai](<http://claude.ai>) and Cowork. As Anthropic describes it in the launch announcement, ​[a new control alongside the model selector lets users choose how much effort Claude puts into a response](<https://www.anthropic.com/news/claude-opus-4-8>). On higher effort settings, Claude will think more frequently and more deeply to give better responses.
+Effort Control is the new selector that sits next to the model picker on [claude.ai](http://claude.ai) and Cowork. As Anthropic describes it in the launch announcement, ​[a new control alongside the model selector lets users choose how much effort Claude puts into a response](https://www.anthropic.com/news/claude-opus-4-8). On higher effort settings, Claude will think more frequently and more deeply to give better responses.
 
 ![2.PNG](/blog/images/effort-control-fast-mode-ai-work/1780055422073-16ac34d2-7af1-4378-88a2-6ee1d6dec2ba.webp)
 
@@ -51,7 +51,7 @@ Three places where I now reach for extra or max effort:
 
 The first is anything that touches a decision I'd hesitate to walk back. Pricing changes. Positioning shifts. A response to a difficult client email. These are tasks where an extra minute of thinking saves me an hour of cleanup later.
 
-The second is review work — places where I want Claude to actually read what's in front of it carefully and push back. The new model is noticeably better at this. According to Anthropic's release notes, Opus 4.8 is ​[four times less likely than Opus 4.7 to let flaws in its own generated code pass without comment](<https://www.anthropic.com/news/claude-opus-4-8>)​. That's a useful pattern even outside code — anywhere I want the model to surface concerns rather than nod along.
+The second is review work — places where I want Claude to actually read what's in front of it carefully and push back. The new model is noticeably better at this. According to Anthropic's release notes, Opus 4.8 is ​[four times less likely than Opus 4.7 to let flaws in its own generated code pass without comment](https://www.anthropic.com/news/claude-opus-4-8)​. That's a useful pattern even outside code — anywhere I want the model to surface concerns rather than nod along.
 
 ![3.png](/blog/images/effort-control-fast-mode-ai-work/1780055430346-e2418515-0a46-4262-b974-3fb73e5923bc.webp)
 
@@ -73,9 +73,9 @@ This is where Fast Mode actually shifts something. When I'm running a sequence o
 
 ![4.png](/blog/images/effort-control-fast-mode-ai-work/1780055437890-38cfe51f-ff3e-4f45-b474-3ce6843f26ca.webp)
 
-The Claude Code docs put it well: ​[Fast mode is best for interactive work where response latency matters more than cost](<https://code.claude.com/docs/en/fast-mode>)​. That matches my experience. The tasks where I notice Fast Mode are the ones where I'm bouncing back and forth — not the ones where I send one big prompt and walk away to make coffee.
+The Claude Code docs put it well: ​[Fast mode is best for interactive work where response latency matters more than cost](https://code.claude.com/docs/en/fast-mode)​. That matches my experience. The tasks where I notice Fast Mode are the ones where I'm bouncing back and forth — not the ones where I send one big prompt and walk away to make coffee.
 
-One thing to be careful about: when you ​[switch into fast mode mid-conversation](<https://code.claude.com/docs/en/fast-mode>)​, you pay the full fast mode uncached input token price for the entire conversation context. So decide at the start of a session, not in the middle of one.
+One thing to be careful about: when you ​[switch into fast mode mid-conversation](https://code.claude.com/docs/en/fast-mode)​, you pay the full fast mode uncached input token price for the entire conversation context. So decide at the start of a session, not in the middle of one.
 
 ## The hidden cost: decision fatigue
 
@@ -95,7 +95,7 @@ The framework I actually use, written out:
 
 ​**Low effort + Fast Mode** ​: Anything I'd happily skim-edit afterward. Drafts, sorts, tags, summaries, first-pass outlines. The cost of being slightly off is low because I'm going to touch it again anyway.
 
-​**Default (high) effort** ​: Most one-shot tasks where I want a finished answer and don't want to think about it. Email responses, analysis I'll use directly, anything I'd hand to a smart assistant without checking their work line by line. Worth noting that **[Opus 4.8 defaults to high effort](<https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-8>)** across all surfaces, so if you've never touched the setting, this is where you already are.
+​**Default (high) effort** ​: Most one-shot tasks where I want a finished answer and don't want to think about it. Email responses, analysis I'll use directly, anything I'd hand to a smart assistant without checking their work line by line. Worth noting that **[Opus 4.8 defaults to high effort](https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-8)** across all surfaces, so if you've never touched the setting, this is where you already are.
 
 ![6.png](/blog/images/effort-control-fast-mode-ai-work/1780055455950-32fe7317-9c09-4511-aac5-1cfbded53bd5.webp)
 
@@ -112,13 +112,13 @@ Back to it.
 
 ## Previous Posts
 
-[How to Scale a One-Person Business Without Hiring](</blog/scale-one-person-business-without-hiring>)
+[How to Scale a One-Person Business Without Hiring](/blog/scale-one-person-business-without-hiring)
 
-[Claude Managed Agents: What They Mean for Solo Companies](</blog/claude-managed-agents-one-person-company>)
+[Claude Managed Agents: What They Mean for Solo Companies](/blog/claude-managed-agents-one-person-company)
 
-[AI Doesn't Know How You Work — That's the Real Problem](</blog/ai-workflow-for-solo-founders>)
+[AI Doesn't Know How You Work — That's the Real Problem](/blog/ai-workflow-for-solo-founders)
 
-[AI Workspace Agents vs Chat Assistants: What's Different](</blog/workspace-agents-vs-chat-assistants>)
+[AI Workspace Agents vs Chat Assistants: What's Different](/blog/workspace-agents-vs-chat-assistants)
 
-[How to Stop Context Switching with a Workspace Agent](</blog/stop-context-switching-workspace-agent>)
+[How to Stop Context Switching with a Workspace Agent](/blog/stop-context-switching-workspace-agent)
 

@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-好久不见，我是 Nova。当时我正在处理一份客户交付物，[Andrej Karpathy 关于 LLM 知识库的那条帖子](<https://x.com/karpathy/status/2039805659525644595>) 冲到了 120 万浏览量。我读完它，感到那股熟悉的拉力——_哦，这个有意思_——然后花了大约二十分钟认真琢磨：我是不是该放下手头的事，把整套研究体系重建一遍。
+好久不见，我是 Nova。当时我正在处理一份客户交付物，[Andrej Karpathy 关于 LLM 知识库的那条帖子](https://x.com/karpathy/status/2039805659525644595) 冲到了 120 万浏览量。我读完它，感到那股熟悉的拉力——_哦，这个有意思_——然后花了大约二十分钟认真琢磨：我是不是该放下手头的事，把整套研究体系重建一遍。
 
 我没有。而这阵子我一直在想为什么。
 
@@ -27,7 +27,7 @@ Karpathy 那套已经在一个研究主题上长到了大约 100 篇文章、40 
 
 你的 Notion 工作区是一个**_你_**写字的地方；而**LLM 知识库**是一个**_模型_**基于你丢进来的原始素材去书写并维护内容的地方。关键差别在于「谁来承担综合整理的工作」。
 
-像 [Obsidian](<https://obsidian.md/>) 这样的 PKM 系统（Karpathy 把它用作阅读层）要求你亲自连接想法、回访笔记。**LLM 知识库**则去掉了大部分这种手动层——AI 负责建反向链接、写概念摘要、跑「健康检查」来发现缺口。
+像 [Obsidian](https://obsidian.md/) 这样的 PKM 系统（Karpathy 把它用作阅读层）要求你亲自连接想法、回访笔记。**LLM 知识库**则去掉了大部分这种手动层——AI 负责建反向链接、写概念摘要、跑「健康检查」来发现缺口。
 
 ![2.png](/blog/images/llm-knowledge-base-solo-operators/1775455707565-08650822-8d2b-4773-88fc-07878e8657e1.webp)
 
@@ -39,7 +39,7 @@ Karpathy 那套已经在一个研究主题上长到了大约 100 篇文章、40 
 
 ## 吸引力何在：单人创业者为什么会被这个想法吸引
 
-我懂。一个 [LLM 知识库](<https://github.com/alanshlam/LLM>) 的核心承诺是：AI 随时间为你的知识复利。不必每次对话都冷启动——不用反复解释你的客户背景、你的细分领域、你过去的决策——系统已经知道了。
+我懂。一个 [LLM 知识库](https://github.com/alanshlam/LLM) 的核心承诺是：AI 随时间为你的知识复利。不必每次对话都冷启动——不用反复解释你的客户背景、你的细分领域、你过去的决策——系统已经知道了。
 
 ### 「随时间为知识复利」的承诺
 
@@ -59,7 +59,7 @@ _[待核实标注：搭建耗时因技术熟悉度与工具选型不同而差异
 
 但搭建不是难点。**打理（curation）才是持续的税。**
 
-wiki 要保持有用，你就得持续往里喂优质材料。这意味着要决定什么该进、什么不该进、何时修剪、何时重跑编译。这套决策开销本身会变成一项新工作流——生产力圈子里的人称之为「第二份工作」。[构建第二大脑](<https://www.buildingasecondbrain.com/>) 社群多年来用更简单的笔记系统记录过这种失败模式。一套 AI 编译的 wiki 并不会自动让这个问题消失。
+wiki 要保持有用，你就得持续往里喂优质材料。这意味着要决定什么该进、什么不该进、何时修剪、何时重跑编译。这套决策开销本身会变成一项新工作流——生产力圈子里的人称之为「第二份工作」。[构建第二大脑](https://www.buildingasecondbrain.com/) 社群多年来用更简单的笔记系统记录过这种失败模式。一套 AI 编译的 wiki 并不会自动让这个问题消失。
 
 ![3.png](/blog/images/llm-knowledge-base-solo-operators/1775455769712-5be6439d-de06-42cb-9a29-2d508868522c.webp)
 
@@ -99,7 +99,7 @@ https://blog.langchain.dev/retrieval/
 
 如果你的工作要求在数月里综合**大量且不断增长的领域素材** ——学术研究、调查报道、高度专业化的咨询、围绕一个窄赛道做内容生意——那么**LLM 知识库**开始回本。盈亏平衡点大概在「我经常因无法高效查询自己积累的研究而恼火」这个位置。
 
-如果说的就是你，[DAIR.AI](<http://DAIR.AI>) 对 [Karpathy 架构的拆解](<https://academy.dair.ai/blog/llm-knowledge-bases-karpathy>) 是个扎实的技术起点。如果你不确定说的是不是你，那大概就不是。
+如果说的就是你，[DAIR.AI](http://DAIR.AI) 对 [Karpathy 架构的拆解](https://academy.dair.ai/blog/llm-knowledge-bases-karpathy) 是个扎实的技术起点。如果你不确定说的是不是你，那大概就不是。
 
 ## 决策框架：自建、用现成工作区，还是干脆跳过
 
@@ -130,13 +130,13 @@ _总之，这就是我的落脚点。我仍把 Karpathy 的帖子当作思考工
 
 ## 延伸阅读
 
-  * **[判断为你的工作流自建定制 AI 系统是否真的说得通](</blog/custom-ai-agent-development>)**
+  * **[判断为你的工作流自建定制 AI 系统是否真的说得通](/blog/custom-ai-agent-development)**
 
-  * **[在决定自建知识系统之前，先搞懂 AI Agent 是怎么工作的](</blog/how-to-build-an-ai-agent>)**
+  * **[在决定自建知识系统之前，先搞懂 AI Agent 是怎么工作的](/blog/how-to-build-an-ai-agent)**
 
-  * **[看看真实的 AI Agent 用例，理解知识系统到底在哪儿创造价值](</blog/ai-agent-use-cases-real-examples>)**
+  * **[看看真实的 AI Agent 用例，理解知识系统到底在哪儿创造价值](/blog/ai-agent-use-cases-real-examples)**
 
-  * **[看看单人创业者如何用 AI 工具执行工作，而不只是存储知识](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
+  * **[看看单人创业者如何用 AI 工具执行工作，而不只是存储知识](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
 
-  * **[理解 AI 工作区与传统工作流工具的区别](</blog/workflow-builder-vs-ai-workspace>)**
+  * **[理解 AI 工作区与传统工作流工具的区别](/blog/workflow-builder-vs-ai-workspace)**
 

@@ -23,7 +23,7 @@ draft: false
 
 据 Quartz 报道，OpenAI 呼吁政府支持"维持现有薪资水平的 32 小时工作制"试点——把减少工时框定为"效率红利"，让 AI 驱动的生产率提升转化为工人拿回的时间，而不是纯粹变成企业利润。
 
-[TechCrunch 对这份政策文件的报道](<https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/>)点出了耐人寻味的一点：OpenAI 把这些框定为企业责任，而不是政府保障。造自动化工具的公司，在建议使用自动化工具的公司承担转型成本。对一家接近 IPO、市值 8,520 亿美元的企业来说，这是一个值得玩味的框定。
+[TechCrunch 对这份政策文件的报道](https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/)点出了耐人寻味的一点：OpenAI 把这些框定为企业责任，而不是政府保障。造自动化工具的公司，在建议使用自动化工具的公司承担转型成本。对一家接近 IPO、市值 8,520 亿美元的企业来说，这是一个值得玩味的框定。
 
 我可能是错的，但把这份文件纯当利他主义来读，太宽厚了；纯当犬儒主义来读，又太省事。诚实的版本大概是：他们看到了颠覆正在逼近，想在别人之前塑造这场政策对话。
 
@@ -31,7 +31,7 @@ draft: false
 
 四天工作制提案里埋着一个重要的隐含假设：**AI 将把知识工作者变得足够高效，五天的工作量可以塞进四天。**这是它的前提。推理是"效率增益是真实的——问题是该由谁来捕获它"。
 
-正如 [Unite.AI](<http://Unite.AI>) 所总结的，OpenAI 建议政府激励雇主开展与 AI 采用生产率增益挂钩的 32 小时工作周试点——把它框定为"工人分得 AI 创造的价值的一份"，而不是让那份价值全部流向股东。
+正如 [Unite.AI](http://Unite.AI) 所总结的，OpenAI 建议政府激励雇主开展与 AI 采用生产率增益挂钩的 32 小时工作周试点——把它框定为"工人分得 AI 创造的价值的一份"，而不是让那份价值全部流向股东。
 
 等等——这个框定其实很有意思。信不信由你，它都在强迫公众去面对一个大多数公司都没回答的问题：当 AI 让你的团队高效一倍，这份效率去了哪里？
 
@@ -61,7 +61,7 @@ draft: false
 
 就算你不是关心政策的人，这个更大的政策包也值得理解。机器人税提案——按被替代的人类劳工同等的税率对自动化劳动征税——如果落地，将改变各类规模企业采用 AI 的经济账。
 
-正如 [The Next Web 报道](<https://thenextweb.com/news/openai-robot-taxes-wealth-fund-superintelligence-policy>)，OpenAI 的《智能时代产业政策》提议把税基从工资与劳动收入转向企业收入、资本利得和对自动化劳动的征税——理由是：当 AI 一边扩张企业利润、一边自动化掉领薪劳动时，为社会保障（Social Security）、医疗补助（Medicaid）和 SNAP 供款的税基将被侵蚀。
+正如 [The Next Web 报道](https://thenextweb.com/news/openai-robot-taxes-wealth-fund-superintelligence-policy)，OpenAI 的《智能时代产业政策》提议把税基从工资与劳动收入转向企业收入、资本利得和对自动化劳动的征税——理由是：当 AI 一边扩张企业利润、一边自动化掉领薪劳动时，为社会保障（Social Security）、医疗补助（Medicaid）和 SNAP 供款的税基将被侵蚀。
 
 这是一个结构性的论证，不只是政治性的。背后的算账是真实的：如果足够多的工作被自动化，支撑公共项目的就业税基就会缩水——无论你对政治是什么态度。
 
@@ -79,7 +79,7 @@ draft: false
 
 四天工作制的对话，本质上是一场关于"可持续产出"的对话。对单人创业者真正要紧的问题不是"我能只上四天班吗"，而是"我能把工作结构化到产出保持稳定、轮子不掉吗"？
 
-[发表在 MIT Sloan Management Review 上的研究](<https://sloanreview.mit.edu/article/the-surprising-viability-of-the-four-day-workweek/>)调查了 245 家实施四天工作制的组织，发现采用"100-80-100"模式——100% 薪资、80% 工时、100% 生产率——的公司，产出保持稳定甚至提升，幸福感也有显著改善。研究者发现，机制不是"在更少的时间里更拼命"，而是"重新组织工作发生的方式"。
+[发表在 MIT Sloan Management Review 上的研究](https://sloanreview.mit.edu/article/the-surprising-viability-of-the-four-day-workweek/)调查了 245 家实施四天工作制的组织，发现采用"100-80-100"模式——100% 薪资、80% 工时、100% 生产率——的公司，产出保持稳定甚至提升，幸福感也有显著改善。研究者发现，机制不是"在更少的时间里更拼命"，而是"重新组织工作发生的方式"。
 
 "重新组织"这件事，恰恰是 AI 工具能帮忙的地方——也是大多数人没用够的地方。它不是替代工作，而是改变哪些任务需要你的脑子、哪些可以挂在自动巡航上。
 
@@ -93,7 +93,7 @@ draft: false
 
 单人创始人的倦怠风险，和大规模研究捕捉到的并不一样。当你是公司里唯一的人，没有组织冗余去吸收过载。AI 能扩张你的产能，但它不能替你划边界。我有过这样的几周：AI 让我更高产，而我只是用更多的工作填满了那份高产——结果更累了，而不是更轻松。
 
-[APA 关于四天工作周的研究](<https://www.apa.org/monitor/2025/01/rise-of-4-day-workweek>)也带出一个需要留意的发现：约 80% 的员工说，四天工作周会让他们更快乐、效率不变——但研究同样发现，随着新鲜感消退、强度上升来补偿，这些收益会随时间衰减。**工具不创造可持续性。系统才创造可持续性。**
+[APA 关于四天工作周的研究](https://www.apa.org/monitor/2025/01/rise-of-4-day-workweek)也带出一个需要留意的发现：约 80% 的员工说，四天工作周会让他们更快乐、效率不变——但研究同样发现，随着新鲜感消退、强度上升来补偿，这些收益会随时间衰减。**工具不创造可持续性。系统才创造可持续性。**
 
 对单人创业者来说，那个系统通常意味着有明确的收工标准——开始之前就知道"做完"长什么样——并且不把 AI 腾出来的时间当作接更多项目的许可。
 
@@ -107,13 +107,13 @@ OpenAI 的四天工作制提案，作为政策信号很有意思——它告诉�
 
 ## 延伸阅读
 
-* [了解 AI 为什么每次会话都重置、这对你的工作流意味着什么](</blog/why-ai-forgets-between-sessions>)
+* [了解 AI 为什么每次会话都重置、这对你的工作流意味着什么](/blog/why-ai-forgets-between-sessions)
 
-* [看看面向单人创始人的 AI 工作流在实践里到底是什么样](</blog/ai-workflow-for-solo-founders>)
+* [看看面向单人创始人的 AI 工作流在实践里到底是什么样](/blog/ai-workflow-for-solo-founders)
 
-* [了解一人公司如何靠 AI 像一整支团队那样运转](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+* [了解一人公司如何靠 AI 像一整支团队那样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-* [探索 AI 助手与真正的 AI Agent 之间的区别](</blog/ai-agent-vs-ai-assistant>)
+* [探索 AI 助手与真正的 AI Agent 之间的区别](/blog/ai-agent-vs-ai-assistant)
 
-* [深入理解持久化 AI Agent 对长期生产率意味着什么](</blog/what-is-persistent-ai-agent>)
+* [深入理解持久化 AI Agent 对长期生产率意味着什么](/blog/what-is-persistent-ai-agent)
 

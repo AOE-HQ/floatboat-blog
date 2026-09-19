@@ -21,7 +21,7 @@ Genspark runs three tiers: Free, Plus, and Pro. The structure is straightforward
 
 ### Free tier — what's included and what's capped
 
-The free plan gives you **100 credits per day** (some sources report 200 — worth checking directly on [Genspark's membership page](<https://www.genspark.ai/helpcenter?doc=general_Membership_Plans>) since this has shifted). You get 1 GB of AI Drive storage, basic access to the Super Agent, and you can run Sparkpages — their structured, multi-source research reports.
+The free plan gives you **100 credits per day** (some sources report 200 — worth checking directly on [Genspark's membership page](https://www.genspark.ai/helpcenter?doc=general_Membership_Plans) since this has shifted). You get 1 GB of AI Drive storage, basic access to the Super Agent, and you can run Sparkpages — their structured, multi-source research reports.
 
 I used the free tier for about a week before upgrading. It's enough to test whether the platform clicks with how you work. But if you're doing anything beyond two or three tasks a day, the daily cap gets tight fast. Sparkpages alone can eat 30–80 credits each depending on depth, so you might burn through your daily allotment on a single deep research query.
 
@@ -51,9 +51,9 @@ Here's what I've observed from my own use and what other users consistently repo
 
 **Sparkpages** — the structured research reports — cost roughly ​**5–80 credits each** ​, depending on how many sources the system pulls and how deep the synthesis goes. A simple topic might cost under 10. A detailed competitive analysis can eat 50+.
 
-**Slide decks** can consume 100+ credits for a full presentation. **Video generation** is the most expensive — models like Sora 2 and Veo 3.1 chew through credits quickly. And the phone calling feature (yes, Genspark makes actual phone calls) [costs about 1 credit per second](<https://salesdorado.com/en/ai/review-genspark/>), so a 3-minute call runs roughly 180 credits.
+**Slide decks** can consume 100+ credits for a full presentation. **Video generation** is the most expensive — models like Sora 2 and Veo 3.1 chew through credits quickly. And the phone calling feature (yes, Genspark makes actual phone calls) [costs about 1 credit per second](https://salesdorado.com/en/ai/review-genspark/), so a 3-minute call runs roughly 180 credits.
 
-On the Plus plan with 10,000 monthly credits, several reviewers — including an [in-depth analysis from AI Tool Analysis](<https://aitoolanalysis.com/genspark-ai-review/>) — report that heavy users run out in ​**two to three weeks** ​. That tracks with my experience. If you're generating a mix of Sparkpages, slides, and occasional video, the credits don't last the full month.
+On the Plus plan with 10,000 monthly credits, several reviewers — including an [in-depth analysis from AI Tool Analysis](https://aitoolanalysis.com/genspark-ai-review/) — report that heavy users run out in ​**two to three weeks** ​. That tracks with my experience. If you're generating a mix of Sparkpages, slides, and occasional video, the credits don't last the full month.
 
 The credits don't roll over. Whatever you don't use resets at your next billing cycle. That's worth knowing before you buy an annual plan thinking you'll stockpile.
 
@@ -67,7 +67,7 @@ This is the section I wish I'd read before upgrading.
 
 **Credit top-ups.** When you run out mid-month, you can buy credit packs: $20 for 10,000 credits, $40 for 20,000. These are valid for three months, which is more generous than the monthly reset. But if you're buying top-ups regularly, that's a signal you might need the next tier up.
 
-**The "unlimited" caveat.** Genspark markets AI chat and image generation as unlimited on paid plans. Technically true — there's no monthly cap. But there's a ​**session-based rate limit that resets every five hours** ​. During heavy use, you'll hit it. [Genspark's own help docs acknowledge this](<https://www.genspark.ai/helpcenter?doc=general_Membership_Plans>), calling it a guardrail to keep the platform fair. Some users on [Trustpilot](<https://www.trustpilot.com/review/genspark.ai>) have been vocal about this feeling misleading, especially on the Pro plan.
+**The "unlimited" caveat.** Genspark markets AI chat and image generation as unlimited on paid plans. Technically true — there's no monthly cap. But there's a ​**session-based rate limit that resets every five hours** ​. During heavy use, you'll hit it. [Genspark's own help docs acknowledge this](https://www.genspark.ai/helpcenter?doc=general_Membership_Plans), calling it a guardrail to keep the platform fair. Some users on [Trustpilot](https://www.trustpilot.com/review/genspark.ai) have been vocal about this feeling misleading, especially on the Pro plan.
 
 **The December 2026 expiration.** The zero-credit chat and image generation perks are guaranteed only through December 31, 2026. After that, the terms could change. Genspark hasn't said what happens next, so if you're planning around those unlimited features long-term, keep an eye on announcements.
 
@@ -79,9 +79,9 @@ The obvious comparison points are ChatGPT Plus at $20/month, Perplexity Pro at $
 
 Genspark's pitch is that it ​**bundles research, chat, image generation, video creation, presentations, and AI agents into one subscription** ​. On paper, that's a lot of value for $25/month. If you're currently paying for two or three separate AI tools, consolidating into Genspark could genuinely reduce your total spend.
 
-But there's a catch. ChatGPT is still stronger for general-purpose conversation and coding. [Perplexity is more focused on citation accuracy](<https://www.perplexity.ai/>) for quick factual lookups. Genspark's strength is structured deliverables — Sparkpages, slide decks, research briefs. It's more of a production tool than a conversation partner.
+But there's a catch. ChatGPT is still stronger for general-purpose conversation and coding. [Perplexity is more focused on citation accuracy](https://www.perplexity.ai/) for quick factual lookups. Genspark's strength is structured deliverables — Sparkpages, slide decks, research briefs. It's more of a production tool than a conversation partner.
 
-One more thing: according to [McKinsey's State of AI findings](<https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai>), the biggest value from AI comes when organizations redesign workflows around it, not just bolt it on. The same logic applies here. Genspark delivers the most value when you use it as a workflow hub, not a casual chatbot.
+One more thing: according to [McKinsey's State of AI findings](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai), the biggest value from AI comes when organizations redesign workflows around it, not just bolt it on. The same logic applies here. Genspark delivers the most value when you use it as a workflow hub, not a casual chatbot.
 
 ## Who Each Plan Actually Suits
 
@@ -97,7 +97,7 @@ One more thing: according to [McKinsey's State of AI findings](<https://www.mcki
 
 Okay — here's my honest take.
 
-**Genspark is worth it if you regularly need structured research outputs.** Sparkpages are genuinely useful. They're not perfect — they still need editing and fact-checking — but they save real time compared to doing multi-source research manually. One [independent review from Cybernews](<https://cybernews.com/ai-tools/genspark-ai-review/>) noted that the multi-agent approach produces more nuanced outputs than single-model tools, and that matches what I've seen.
+**Genspark is worth it if you regularly need structured research outputs.** Sparkpages are genuinely useful. They're not perfect — they still need editing and fact-checking — but they save real time compared to doing multi-source research manually. One [independent review from Cybernews](https://cybernews.com/ai-tools/genspark-ai-review/) noted that the multi-agent approach produces more nuanced outputs than single-model tools, and that matches what I've seen.
 
 **It's not worth it if you only need a chatbot.** ChatGPT does that better and costs $5 less per month. If your primary use case is conversation-style Q&A or coding help, Genspark isn't the right tool.
 
@@ -117,11 +117,11 @@ Alright, back to building things.
 
 **Previous Posts:**
 
-  * **real-world AI agents use cases across research, content, and operations**[https://floatboat.ai/blog/ai-agent-use-cases-real-examples](</blog/ai-agent-use-cases-real-examples>)
+  * **real-world AI agents use cases across research, content, and operations**[https://floatboat.ai/blog/ai-agent-use-cases-real-examples](/blog/ai-agent-use-cases-real-examples)
 
-  * **how one-person businesses are starting to operate like a full team using AI roles**[https://floatboat.ai/blog/how-one-person-businesses-work-like-a-team-with-ai](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * **how one-person businesses are starting to operate like a full team using AI roles**[https://floatboat.ai/blog/how-one-person-businesses-work-like-a-team-with-ai](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * **how AI automation works is actually priced in the real market**[https://floatboat.ai/blog/ai-automation-agency-pricing](</blog/ai-automation-agency-pricing>)
+  * **how AI automation works is actually priced in the real market**[https://floatboat.ai/blog/ai-automation-agency-pricing](/blog/ai-automation-agency-pricing)
 
-  * **how Lindy and Gumloop differ when it comes to agent-style workflows**[https://floatboat.ai/blog/lindy-vs-gumloop](</blog/lindy-vs-gumloop>)
+  * **how Lindy and Gumloop differ when it comes to agent-style workflows**[https://floatboat.ai/blog/lindy-vs-gumloop](/blog/lindy-vs-gumloop)
 

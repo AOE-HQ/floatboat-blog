@@ -23,7 +23,7 @@ Hi, I’m Nova! Here's what I found.
 
 The clearest way I can put it: **Claude Managed Agents is infrastructure, not a product you use in a chat window.**
 
-The Claude Platform now offers two paths: direct model access where you build your own conversation loop, and fully managed agent infrastructure where Anthropic handles stateful sessions and persistent event history. Claude Managed Agents is the second path. You can see both options laid out in the [Claude API documentation](<https://platform.claude.com/docs/en/home>), which is where I'd start if you want the technical picture.
+The Claude Platform now offers two paths: direct model access where you build your own conversation loop, and fully managed agent infrastructure where Anthropic handles stateful sessions and persistent event history. Claude Managed Agents is the second path. You can see both options laid out in the [Claude API documentation](https://platform.claude.com/docs/en/home), which is where I'd start if you want the technical picture.
 
 ![3.png](/blog/images/what-are-claude-managed-agents/1775730604254-8c285a71-a0b0-43dd-ae4f-6b1c6421cb39.webp)
 
@@ -33,7 +33,7 @@ The Claude Platform now offers two paths: direct model access where you build yo
 
 ![4.png](/blog/images/what-are-claude-managed-agents/1775730623124-70a80ac9-c523-4617-842a-f90deec73a40.webp)
 
-Anthropic's engineering team describes the design philosophy as "decoupling the brain from the hands." The detail that caught my attention: the session serves as a durable event log outside Claude's context window — if the system restarts or a container crashes, the agent picks up exactly where it left off using the recorded event stream. Disposable containers can fail and be replaced without losing progress. That's a real reliability guarantee. The Anthropic engineering blog post on [scaling managed agents](<https://www.anthropic.com/engineering/managed-agents>) goes deep on why they built it this way — worth reading if you're curious about the architecture thinking.
+Anthropic's engineering team describes the design philosophy as "decoupling the brain from the hands." The detail that caught my attention: the session serves as a durable event log outside Claude's context window — if the system restarts or a container crashes, the agent picks up exactly where it left off using the recorded event stream. Disposable containers can fail and be replaced without losing progress. That's a real reliability guarantee. The Anthropic engineering blog post on [scaling managed agents](https://www.anthropic.com/engineering/managed-agents) goes deep on why they built it this way — worth reading if you're curious about the architecture thinking.
 
 ### Public Beta Status and What That Means
 
@@ -53,7 +53,7 @@ Sessions can run autonomously for hours, with outputs that persist even through 
 
 This is the part I want to be honest about, because it's easy to get excited and misread who this is actually for.
 
-Claude Managed Agents abstracts away months of infrastructure work. Users can define the agents they want to run — in natural language or through a YAML file — set guardrails, and run them on Anthropic's platform with the underlying infrastructure handled automatically. The [official Claude Managed Agents overview](<https://platform.claude.com/docs/en/managed-agents/overview>) is precise about this: it's a developer API surface, not an end-user product.
+Claude Managed Agents abstracts away months of infrastructure work. Users can define the agents they want to run — in natural language or through a YAML file — set guardrails, and run them on Anthropic's platform with the underlying infrastructure handled automatically. The [official Claude Managed Agents overview](https://platform.claude.com/docs/en/managed-agents/overview) is precise about this: it's a developer API surface, not an end-user product.
 
 Early adopters tell the story clearly. The initial user base includes Notion, Rakuten, and Asana — companies that needed to ship agent features to their own users without building the runtime infrastructure themselves. Rakuten reportedly deployed specialist agents for sales, marketing, and finance in under a week each.
 
@@ -71,7 +71,7 @@ If you were hoping for something like "a really powerful Claude that can do long
 
 ### It's Not Plug-and-Play for Non-Developers
 
-Pricing runs on two dimensions. All tokens consumed by a session are billed at standard Claude Platform rates, plus $0.08 per session-hour of active runtime — with idle time not counting toward that billing. You can find the exact breakdown on the [Managed Agents pricing page](<https://platform.claude.com/docs/en/about-claude/pricing>). Accessible for a dev team, but there's nothing to install or subscribe to as a regular user. You'd need to either build on top of it or use a product that's already integrated it.
+Pricing runs on two dimensions. All tokens consumed by a session are billed at standard Claude Platform rates, plus $0.08 per session-hour of active runtime — with idle time not counting toward that billing. You can find the exact breakdown on the [Managed Agents pricing page](https://platform.claude.com/docs/en/about-claude/pricing). Accessible for a dev team, but there's nothing to install or subscribe to as a regular user. You'd need to either build on top of it or use a product that's already integrated it.
 
 ![7.png](/blog/images/what-are-claude-managed-agents/1775730661291-ec410158-091c-45c8-9693-7b75e34ea6a7.webp)
 
@@ -83,7 +83,7 @@ Huh. This is where I keep landing when I think about it.
 
 Here's what I think is actually happening: the AI tooling world is starting to look like web hosting did in the 2010s. First there were raw servers. Then managed cloud services abstracted the infrastructure. Then products built on top became the things regular people actually used.
 
-Anthropic built Managed Agents as a "meta-harness" — a system designed to remain stable as the specific harnesses and models underneath it keep changing. The interfaces are meant to outlast any particular implementation, including the ones Anthropic runs today. They're explicitly building for agent architectures that don't exist yet. The [SiliconANGLE writeup on the launch](<https://siliconangle.com/2026/04/08/anthropic-launches-claude-managed-agents-speed-ai-agent-development/>) frames this competitive context well — every major AI lab is now building toward the same managed infrastructure layer.
+Anthropic built Managed Agents as a "meta-harness" — a system designed to remain stable as the specific harnesses and models underneath it keep changing. The interfaces are meant to outlast any particular implementation, including the ones Anthropic runs today. They're explicitly building for agent architectures that don't exist yet. The [SiliconANGLE writeup on the launch](https://siliconangle.com/2026/04/08/anthropic-launches-claude-managed-agents-speed-ai-agent-development/) frames this competitive context well — every major AI lab is now building toward the same managed infrastructure layer.
 
 That's a long-term infrastructure play. And it means the layer where non-technical users eventually interact with AI agents — the workspace, the tool, the product — is separating from the layer where agents actually run.
 
@@ -91,7 +91,7 @@ That's a long-term infrastructure play. And it means the layer where non-technic
 
 Once a company's agents run on managed infrastructure — with specific tools, session formats, and sandboxing — switching to another provider becomes significantly more complex. Every major player is building a fuller stack, moving from raw model access toward platforms that wrap models in production-ready tooling.
 
-The New Stack's coverage of [what Anthropic is actually trying to do here](<https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/>) puts it plainly: the infrastructure question is becoming someone else's problem to solve. The interesting design work moves up a layer.
+The New Stack's coverage of [what Anthropic is actually trying to do here](https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/) puts it plainly: the infrastructure question is becoming someone else's problem to solve. The interesting design work moves up a layer.
 
 For solo operators and small teams, the practical implication is this: the AI tools you use in the next year or two will increasingly be built on infrastructure like this. You won't see it, but it's what makes long, autonomous tasks reliable instead of brittle.
 
@@ -107,13 +107,13 @@ I'm still figuring out exactly what that bar looks like in practice. But I'll ke
 
 **Previous posts:**
 
-  * [What is a Persistent AI Agent](</blog/what-is-persistent-ai-agent>)
+  * [What is a Persistent AI Agent](/blog/what-is-persistent-ai-agent)
 
-  * [AI Agent vs AI Assistant](</blog/ai-agent-vs-ai-assistant>)
+  * [AI Agent vs AI Assistant](/blog/ai-agent-vs-ai-assistant)
 
-  * [How to Build an AI Agent for a One-Person Business](</blog/how-to-build-an-ai-agent>)
+  * [How to Build an AI Agent for a One-Person Business](/blog/how-to-build-an-ai-agent)
 
-  * [AI Agent Use Cases: Real Examples](</blog/ai-agent-use-cases-real-examples>)
+  * [AI Agent Use Cases: Real Examples](/blog/ai-agent-use-cases-real-examples)
 
-  * [Workflow Builder vs AI Workspace](</blog/workflow-builder-vs-ai-workspace>)
+  * [Workflow Builder vs AI Workspace](/blog/workflow-builder-vs-ai-workspace)
 

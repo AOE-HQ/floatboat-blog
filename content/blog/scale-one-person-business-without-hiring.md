@@ -13,7 +13,7 @@ draft: false
 
 Hello, I'm Nova. I was reorganizing my workflow last month — for probably the third time this year — and realized something a little uncomfortable: I kept adding tools and tweaking systems, but what I actually needed to fix was something upstream. Not _how_ I worked. But _what_ I was building my work around.
 
-If you're running a [one-person business](<https://github.com/easychen/one-person-businesses-methodology>) and feeling like you've hit a ceiling, I've been there. The instinct is usually "I need help" — meaning, hire someone. But I'd push back on that as a first move. Not because it's always wrong, but because it's often a solution to the wrong problem.
+If you're running a [one-person business](https://github.com/easychen/one-person-businesses-methodology) and feeling like you've hit a ceiling, I've been there. The instinct is usually "I need help" — meaning, hire someone. But I'd push back on that as a first move. Not because it's always wrong, but because it's often a solution to the wrong problem.
 
 ## Why "Just Hire Someone" Is Often the Wrong First Move
 
@@ -59,7 +59,7 @@ If every project is custom — different scope, different deliverables, differen
 
 The alternative is what people in the solopreneur space call "productized services." A productized service is a scoped, standardized solution you offer for a set rate to a well-defined target audience. Instead of tailoring your service to each client, you bundle your expertise into a repeatable step-by-step framework with a fixed price tag on it.
 
-A good real-world example: designer Brett Williams built [DesignJoy](<https://millionairecopy.com/success-story/solopreneur-business-strategy-design-joy/>) around a subscription model — clients pay a flat monthly rate for async design work. No custom proposals, no scope creep negotiations, no unpredictable delivery timelines. He reportedly handles 16+ clients while working roughly 6 hours a day. I can't verify his exact numbers, but the _structure_ of what he built is legit — and it's replicable in a lot of service categories.
+A good real-world example: designer Brett Williams built [DesignJoy](https://millionairecopy.com/success-story/solopreneur-business-strategy-design-joy/) around a subscription model — clients pay a flat monthly rate for async design work. No custom proposals, no scope creep negotiations, no unpredictable delivery timelines. He reportedly handles 16+ clients while working roughly 6 hours a day. I can't verify his exact numbers, but the _structure_ of what he built is legit — and it's replicable in a lot of service categories.
 
 The core insight is this: when your offer has a fixed shape, delivery gets faster every time. You're not reinventing the wheel per client. You're running a process.
 
@@ -107,7 +107,7 @@ The full-time independent workforce in the U.S. doubled to 27.6 million between 
 
 The ceiling question isn't "how hard am I working" — it's "does my current structure allow for more output without proportionally more time?" If yes, you have room to scale. If no, something about the structure needs to change before you add people to it.
 
-According to the [Harvard Business Review's work on personal productivity](<https://hbr.org/topic/subject/managing-yourself>), most knowledge workers overestimate how much of their time is genuinely irreplaceable. A lot of what feels like "only I can do this" is actually habit, not necessity.
+According to the [Harvard Business Review's work on personal productivity](https://hbr.org/topic/subject/managing-yourself), most knowledge workers overestimate how much of their time is genuinely irreplaceable. A lot of what feels like "only I can do this" is actually habit, not necessity.
 
 That's not comfortable to hear, but it's been useful for me.
 
@@ -121,13 +121,13 @@ If your situation looks anything like mine, it's probably worth sitting with for
 
 ## Previous Posts：
 
-  * Learn how to build a simple, effective **[AI workflow as a solo founder](</blog/ai-workflow-for-solo-founders>)**
+  * Learn how to build a simple, effective **[AI workflow as a solo founder](/blog/ai-workflow-for-solo-founders)**
 
-  * Understand the difference between **[AI workspaces vs workflow builders](</blog/workflow-builder-vs-ai-workspace>)**
+  * Understand the difference between **[AI workspaces vs workflow builders](/blog/workflow-builder-vs-ai-workspace)**
 
-  * See why **[AI forgets between sessions — and how it slows you down](</blog/why-ai-forgets-between-sessions>)**
+  * See why **[AI forgets between sessions — and how it slows you down](/blog/why-ai-forgets-between-sessions)**
 
-  * Explore how **[one-person businesses can operate like a team with AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
+  * Explore how **[one-person businesses can operate like a team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
 
-  * Discover practical **[AI agent use cases for real workflows](</blog/ai-agent-use-cases-real-examples>)**
+  * Discover practical **[AI agent use cases for real workflows](/blog/ai-agent-use-cases-real-examples)**
 

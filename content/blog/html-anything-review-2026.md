@@ -19,9 +19,9 @@ That tool is html-anything. And this is my honest html-anything review after spe
 
 The pitch is short: ​**your local AI agent writes the ​HTML** ​, you ship it.
 
-html-anything is an open-source project from the [nexu-io team on GitHub](<https://github.com/nexu-io/html-anything>) — the same people behind Open Design, which pulled in tens of thousands of stars within weeks of launch. It's licensed under Apache-2.0, built in roughly three days with about 15,000 lines of code, and released in May 2026.
+html-anything is an open-source project from the [nexu-io team on GitHub](https://github.com/nexu-io/html-anything) — the same people behind Open Design, which pulled in tens of thousands of stars within weeks of launch. It's licensed under Apache-2.0, built in roughly three days with about 15,000 lines of code, and released in May 2026.
 
-The thesis behind it connects directly to what Thariq Shihipar argued in his [companion site on the unreasonable effectiveness of HTML](<https://thariqs.github.io/html-effectiveness/>): if your AI agent can produce rich, visual, interactive HTML instead of flat Markdown, the output becomes something people actually engage with. html-anything takes that argument and wraps a production workflow around it.
+The thesis behind it connects directly to what Thariq Shihipar argued in his [companion site on the unreasonable effectiveness of HTML](https://thariqs.github.io/html-effectiveness/): if your AI agent can produce rich, visual, interactive HTML instead of flat Markdown, the output becomes something people actually engage with. html-anything takes that argument and wraps a production workflow around it.
 
 Here's how I think about what it's trying to prove: the "agentic HTML editor" concept — agent does the writing, human does the reviewing and shipping — shouldn't require you to stitch together five different tools. One interface, templates included, export built in. That's the bet.
 
@@ -37,7 +37,7 @@ The architecture is local-first, which is the detail that actually matters for p
 
 That's where the "zero API key AI tool" label comes from, and it's accurate — but with a caveat I'll get to in the FAQ.
 
-The template system is where the tool gets opinionated. ​**75 Skill templates across 9 deliverable surfaces** ​: magazine articles, keynote decks, posters, resumes, Xiaohongshu cards, tweet cards, web prototypes, data reports, and Hyperframes videos. Each skill follows the [Claude Code ](<https://docs.anthropic.com/en/docs/claude-code/skills>)[SKILL.md](<http://SKILL.md>)[ convention](<https://docs.anthropic.com/en/docs/claude-code/skills>) with extended frontmatter for mode, scenario, surface, and design system.
+The template system is where the tool gets opinionated. ​**75 Skill templates across 9 deliverable surfaces** ​: magazine articles, keynote decks, posters, resumes, Xiaohongshu cards, tweet cards, web prototypes, data reports, and Hyperframes videos. Each skill follows the [Claude Code ](https://docs.anthropic.com/en/docs/claude-code/skills)[SKILL.md](http://SKILL.md)[ convention](https://docs.anthropic.com/en/docs/claude-code/skills) with extended frontmatter for mode, scenario, surface, and design system.
 
 Preview happens in a sandboxed iframe with SSE streaming — you see the output build in real time as the agent generates it. Export targets include WeChat (with inline CSS), X, Zhihu, standalone HTML, and PNG. The WeChat export is a small thing that signals who this team is building for — cross-platform content creators who need to publish across very different distribution channels.
 
@@ -57,7 +57,7 @@ If you're running a one-person operation and you already have Claude Code or ano
 
 **Local-first means your data stays put.** For solo operators working with client material or proprietary research, this matters more than most tool reviews acknowledge. Your prompts and outputs don't pass through a third-party server. They go through whatever agent CLI you've already authenticated with. That's it.
 
-Oh, and the Hyperframes feature — which converts HTML to MP4 via [Remotion's rendering framework](<https://www.remotion.dev/docs/>) — is worth knowing about. It's an extra rendering pipeline, and I haven't tried it, but the concept of turning a styled HTML artifact into a video clip without leaving the workflow is the kind of thing that makes you go: wait, it does that too?
+Oh, and the Hyperframes feature — which converts HTML to MP4 via [Remotion's rendering framework](https://www.remotion.dev/docs/) — is worth knowing about. It's an extra rendering pipeline, and I haven't tried it, but the concept of turning a styled HTML artifact into a video clip without leaving the workflow is the kind of thing that makes you go: wait, it does that too?
 
 ![4.png](/blog/images/html-anything-review-2026/1779257425395-df0bf7d0-87d1-4f0b-9435-38cfe7894835.webp)
 
@@ -83,9 +83,9 @@ I'm probably not using this to its full potential — I haven't run a full end-t
 
 Here's my honest take. If you already have a coding-agent CLI installed and you regularly produce visual content across multiple platforms, html-anything is worth trying today. The template library is real, the export pipeline covers platforms most tools ignore, and the local-first architecture solves a trust problem that matters.
 
-If you're not a CLI person — if your workflow lives in [Claude's Artifacts panel](<https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them>) or ChatGPT Canvas — html-anything isn't replacing those tools for you right now. Those are faster for one-off tasks. html-anything is for when you need **repeatable, multi-surface, visually consistent output** from an agent you already trust.
+If you're not a CLI person — if your workflow lives in [Claude's Artifacts panel](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) or ChatGPT Canvas — html-anything isn't replacing those tools for you right now. Those are faster for one-off tasks. html-anything is for when you need **repeatable, multi-surface, visually consistent output** from an agent you already trust.
 
-If the answer isn't obvious yet, wait. The project is moving fast, and what's available in three months may look different. Bookmark the [repo](<https://github.com/nexu-io/html-anything>), check back when you're ready.
+If the answer isn't obvious yet, wait. The project is moving fast, and what's available in three months may look different. Bookmark the [repo](https://github.com/nexu-io/html-anything), check back when you're ready.
 
 ![5.png](/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.webp)
 
@@ -93,11 +93,11 @@ That's my honest take. The tool is early, the concept is solid, and the question
 
 ## Previous Posts:
 
-• [Already using coding agents? Read: Claude Code for Non-Developers: What Solo Operators Should Know](</blog/claude-code-non-developers-solo-operators>)
+• [Already using coding agents? Read: Claude Code for Non-Developers: What Solo Operators Should Know](/blog/claude-code-non-developers-solo-operators)
 
-• [Thinking beyond chat interfaces? Read: AI Workspace Agents and the Future of Human-AI Workspaces](</blog/ai-workspace-agents>)
+• [Thinking beyond chat interfaces? Read: AI Workspace Agents and the Future of Human-AI Workspaces](/blog/ai-workspace-agents)
 
-• [Need repeatable creative workflows instead of one-off prompts? Read: AI Workflow for Solo Founders: What Actually Works](</blog/ai-workflow-for-solo-founders>)
+• [Need repeatable creative workflows instead of one-off prompts? Read: AI Workflow for Solo Founders: What Actually Works](/blog/ai-workflow-for-solo-founders)
 
-• [Trying to reduce tool-switching across your workflow? Read: Stop Context Switching: Why Workspace Agents Matter](</blog/stop-context-switching-workspace-agent>)
+• [Trying to reduce tool-switching across your workflow? Read: Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent)
 

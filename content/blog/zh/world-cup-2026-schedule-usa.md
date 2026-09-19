@@ -44,7 +44,7 @@ draft: false
 
 如果美国队拿到 D 组头名，32 强赛之路将经过洛杉矶或西雅图，球队留在西海岸。拿第二或以小组第三出线，则会送美国队走上不同的场馆路线——可能是达拉斯、亚特兰大，或更靠东。
 
-美国队的赛事历史为这些预期提供了参照：2022 年打进 16 强（输给荷兰），2002 年打进八强。在家门口作战、三场小组赛都在熟悉的西部场馆、主场球迷会把每座球场填满——16 强是现实的底线，八强是可信的目标。[来源：FIFA——2026 世界杯主办地与赛制](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+美国队的赛事历史为这些预期提供了参照：2022 年打进 16 强（输给荷兰），2002 年打进八强。在家门口作战、三场小组赛都在熟悉的西部场馆、主场球迷会把每座球场填满——16 强是现实的底线，八强是可信的目标。[来源：FIFA——2026 世界杯主办地与赛制](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 ### 去哪里看美国队的比赛
 
@@ -54,7 +54,7 @@ draft: false
 
 ## 美国承办的比赛：全景
 
-美国承办本届赛事 104 场中的 78 场：包括所有在美国场馆进行的小组赛、所有由美国城市承办的淘汰赛，以及四分之一决赛起的每一场。[来源：FIFA——赛程、赛果与场馆](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums>)
+美国承办本届赛事 104 场中的 78 场：包括所有在美国场馆进行的小组赛、所有由美国城市承办的淘汰赛，以及四分之一决赛起的每一场。[来源：FIFA——赛程、赛果与场馆](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums)
 
 ### 美国承办的淘汰赛（在美国本土举行）
 
@@ -110,11 +110,6 @@ Match Reminder Combo Skill 是 Floatboat 的预置技能，一分钟内即可安
 
 日历订阅会自动处理这些。无论你用 FloatCup 一键设置，还是手动导入 ICS 文件，结果都一样：美国队的每场比赛、每次开球，都以你的时区准确呈现，而且无论你记不记得去查，提醒都会准时响起。
 
-## 延伸阅读
-
-  * World Cup 2026 赛程：完整对阵与日历同步——完整的 104 场赛程列表
-
-  * World Cup 2026 指南：日期、赛制、主办地与 FAQ——完整赛事概览
-
-  * FloatCup：一键订阅 World Cup 2026 日历——带提醒的自动更新日历
-
+## 延伸阅读- [World Cup 2026 赛程：完整对阵与日历同步——完整的 104 场赛程列表](/zh/blog/world-cup-2026-schedule)
+- [World Cup 2026 指南：日期、赛制、主办地与 FAQ——完整赛事概览](/zh/blog/world-cup-2026-guide)
+- [FloatCup：一键订阅 World Cup 2026 日历——带提醒的自动更新日历](/zh/blog/floatcup-world-cup-2026-calendar-subscribe)

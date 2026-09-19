@@ -30,7 +30,7 @@ draft: false
 
 官方的「主办城市」概念也不同于一份简单的球场清单。有些场馆用都会区来标识，而不只是城市名，比如旧金山湾区和纽约/新泽西。这也是本指南把主办城市、球场与出行区域放在一起讲的原因。
 
-**来源：**[FIFA — 2026 世界杯主办城市](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+**来源：**[FIFA — 2026 世界杯主办城市](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
   2. 2026 世界杯主办城市与球场
 
@@ -126,11 +126,6 @@ draft: false
 
 对球迷来说，务实的答案是把主办城市当成规划区域来用。用本页理解地图，用赛程确定实际比赛日期，预订行程前使用 FIFA 与各主办城市的官方页面。
 
-## 延伸阅读
-
-  * World Cup 2026 指南——赛制、赛程与规划的主枢纽。
-
-  * 2026 世界杯赛程：完整对阵与日历同步——比赛日期与日历语境。
-
-  * USA 2026 世界杯赛程：比赛时间与提醒——美国队专属的赛程规划。
-
+## 延伸阅读- [World Cup 2026 指南——赛制、赛程与规划的主枢纽。](/zh/blog/world-cup-2026-guide)
+- [2026 世界杯赛程：完整对阵与日历同步——比赛日期与日历语境。](/zh/blog/world-cup-2026-schedule)
+- [USA 2026 世界杯赛程：比赛时间与提醒——美国队专属的赛程规划。](/zh/blog/world-cup-2026-schedule)

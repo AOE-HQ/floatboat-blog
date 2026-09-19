@@ -21,7 +21,7 @@ draft: false
 
 我不会丢下一句「看情况」就完事。
 
-如果你的客户和协作者都活在 Google Workspace 里——Gmail、Google Meet、Docs——**[Google Calendar](<https://calendar.google.com/calendar/u/0/r?pli=1>) 就是阻力最小的路**。事件从 Gmail 自动生成，会议链接一键生成，跟人共享日历大约十秒搞定。
+如果你的客户和协作者都活在 Google Workspace 里——Gmail、Google Meet、Docs——**[Google Calendar](https://calendar.google.com/calendar/u/0/r?pli=1) 就是阻力最小的路**。事件从 Gmail 自动生成，会议链接一键生成，跟人共享日历大约十秒搞定。
 
 如果你大部分工作跑在 Microsoft 365 上——Outlook 邮件、Teams、SharePoint——**你应该待在 Outlook Calendar 里**。Scheduling Assistant 让你一眼看到每个人的空闲情况，委派访问（Delegate Access）能让别人替你打理日历，整套东西和 Teams 的语音与会议记录严丝合缝。
 
@@ -33,9 +33,9 @@ draft: false
 
 当人们比较**Google Calendar vs Microsoft Calendar**时，他们真正在比较的是两套工作生态，而不是两个日历应用。
 
-Google Calendar **云原生、轻量**。没有桌面应用——它住在浏览器里，移动端就是同一体验缩小版。对单人创业者来说，这种简单是优点。打开、看到你的一天、往里加东西。Google Tasks 缩在侧边栏里，截至 2025 年底，你可以把任务直接按时间块排进日历网格。我核实过——[Google 的日历帮助中心](<https://support.google.com/calendar/?hl=en>)确认任务集成对所有个人账号与 Workspace 账号可用。
+Google Calendar **云原生、轻量**。没有桌面应用——它住在浏览器里，移动端就是同一体验缩小版。对单人创业者来说，这种简单是优点。打开、看到你的一天、往里加东西。Google Tasks 缩在侧边栏里，截至 2025 年底，你可以把任务直接按时间块排进日历网格。我核实过——[Google 的日历帮助中心](https://support.google.com/calendar/?hl=en)确认任务集成对所有个人账号与 Workspace 账号可用。
 
-Outlook 是**更重、更结构化**的系统。新版 Outlook 桌面应用进步很大，但它仍是按组织的需求造的：共享邮箱、会议室预订、合规要求。它真正发光的地方是邮件到日历的上下文：Outlook 和 Microsoft To Do 深度连通，你可以[给邮件加标记、让它作为任务](<https://support.microsoft.com/en-us/office/create-tasks-with-to-do-in-outlook-78aa07e2-cf7e-4eda-9bd1-db1b9d8d49db>)出现在日历的 My Day 面板里。这其实很聪明——意味着你的收件箱和日程共享同一层任务。
+Outlook 是**更重、更结构化**的系统。新版 Outlook 桌面应用进步很大，但它仍是按组织的需求造的：共享邮箱、会议室预订、合规要求。它真正发光的地方是邮件到日历的上下文：Outlook 和 Microsoft To Do 深度连通，你可以[给邮件加标记、让它作为任务](https://support.microsoft.com/en-us/office/create-tasks-with-to-do-in-outlook-78aa07e2-cf7e-4eda-9bd1-db1b9d8d49db)出现在日历的 My Day 面板里。这其实很聪明——意味着你的收件箱和日程共享同一层任务。
 
 等等……这有点意思。Google 也有类似动作，Gmail 会自动识别航班和预订，但止步于把邮件自动变成任务——你得通过 Google Tasks 手动做。如果你的工作重度由邮件驱动——客户跟进、提案评审、外包协调——Outlook 的「邮件转任务」管线是更强的配置。
 
@@ -47,7 +47,7 @@ Outlook 是**更重、更结构化**的系统。新版 Outlook 桌面应用进�
 
 **会议：**Google Calendar 默认生成 Google Meet 链接，Outlook 生成 Teams 链接。两者都挺好。差别在跨生态约人时显现：给 Outlook 用户发 Google Calendar 邀请通常干净到达；反方向——Outlook 邀请发给 Google 用户——也行，但我偶尔碰到过周期事件更新不正常的磕绊。我有一阵子没遇到了，可能已经改进——值得用你的具体配置测一下。
 
-**共享：**Google Calendar 可以轻松把整个日历共享给任何有 Google 账号的人。权限很直接：只读、可编辑或完全管理。Outlook 在 Microsoft 365 组织内提供更结构化的共享——[委派访问](<https://learn.microsoft.com/en-us/graph/outlook-share-or-delegate-calendar>)能让某人真的替你发会议邀请。对同时打理多段客户关系的顾问来说，委派功能确实实用。Google Calendar 没有真正的委派角色。
+**共享：**Google Calendar 可以轻松把整个日历共享给任何有 Google 账号的人。权限很直接：只读、可编辑或完全管理。Outlook 在 Microsoft 365 组织内提供更结构化的共享——[委派访问](https://learn.microsoft.com/en-us/graph/outlook-share-or-delegate-calendar)能让某人真的替你发会议邀请。对同时打理多段客户关系的顾问来说，委派功能确实实用。Google Calendar 没有真正的委派角色。
 
 ![3.PNG](/blog/images/google-calendar-vs-outlook/1780019862192-ac9f8050-de60-4833-be07-cec46bf8862f.webp)
 
@@ -63,7 +63,7 @@ Outlook 是**更重、更结构化**的系统。新版 Outlook 桌面应用进�
 
 想要双向同步——两边的改动互相同步——你需要第三方工具。我试过几个，但还没找到一个可以完全推荐的。它们能用，但会多一个订阅、多一套权限、多一个 API 一变就可能坏的东西。我只是一份样本，你的体验可能不同。
 
-**怎么原生把 Google Calendar 链到 Outlook：**进 Google Calendar 设置，在日历的集成设置里找到「Secret address in iCal format」，复制那个 URL，粘到 Outlook 的「Subscribe from web」选项里。你就得到一份 [Outlook 里的只读订阅](<https://support.microsoft.com/en-us/office/add-a-calendar-in-outlook-com-or-outlook-on-the-web-6641b635-2797-42ce-a500-597eaef0fd19>)。反过来也行——导出 Outlook 日历的 ICS URL，在 Google Calendar 里订阅。
+**怎么原生把 Google Calendar 链到 Outlook：**进 Google Calendar 设置，在日历的集成设置里找到「Secret address in iCal format」，复制那个 URL，粘到 Outlook 的「Subscribe from web」选项里。你就得到一份 [Outlook 里的只读订阅](https://support.microsoft.com/en-us/office/add-a-calendar-in-outlook-com-or-outlook-on-the-web-6641b635-2797-42ce-a500-597eaef0fd19)。反过来也行——导出 Outlook 日历的 ICS URL，在 Google Calendar 里订阅。
 
 有一点要提醒：两家平台里导入的日历都不参与排程工具——比如 Outlook 的「Find a time」或 Google 的「Suggested times」。所以就算你能看到另一个日历的事件，同事试着找和你都有空的时段时，也看不到那些被占的块。如果你每天跨两套生态工作，这是个实打实的缺口。
 
@@ -83,15 +83,15 @@ Google Calendar 和 Outlook 都擅长告诉你安排了什么。提醒会响、�
 
 ## 延伸阅读
 
-  * 还在整天来回切 Gmail、Docs、日历和任务应用？看看为什么很多单人创业者在重新思考「工具跳来跳去」：[停止上下文切换：为什么工作区 Agent 很重要](</blog/stop-context-switching-workspace-agent>)
+  * 还在整天来回切 Gmail、Docs、日历和任务应用？看看为什么很多单人创业者在重新思考「工具跳来跳去」：[停止上下文切换：为什么工作区 Agent 很重要](/blog/stop-context-switching-workspace-agent)
 
-  * 如果你的日历不断浮出工作、每个下一步却仍要你手动做，[单人创业者的工作区 Agent](</blog/workspace-agents-for-solo-operators>) 讲的是另一种执行方式。
+  * 如果你的日历不断浮出工作、每个下一步却仍要你手动做，[单人创业者的工作区 Agent](/blog/workspace-agents-for-solo-operators) 讲的是另一种执行方式。
 
-  * 日历管日程，但工作流才推动工作。读 [单人创始人 AI 工作流：为什么演示和日常工作看起来不一样](</blog/ai-workflow-for-solo-founders>)，看工作系统通常在哪儿断掉。
+  * 日历管日程，但工作流才推动工作。读 [单人创始人 AI 工作流：为什么演示和日常工作看起来不一样](/blog/ai-workflow-for-solo-founders)，看工作系统通常在哪儿断掉。
 
-  * 不确定自己需要的是助手、自动化还是 Agent？[工作区 Agent vs 聊天助手](</blog/workspace-agents-vs-chat-assistants>) 在真实工作设置里拆清了差别。
+  * 不确定自己需要的是助手、自动化还是 Agent？[工作区 Agent vs 聊天助手](/blog/workspace-agents-vs-chat-assistants) 在真实工作设置里拆清了差别。
 
-  * 如果周期性准备工作、跟进与行政循环不断吃掉你的一周，[如何为重复性工作构建 AI Agent](</blog/how-to-build-ai-agents-for-repeated-work>) 探讨了重复工作流的另一种处理方式。
+  * 如果周期性准备工作、跟进与行政循环不断吃掉你的一周，[如何为重复性工作构建 AI Agent](/blog/how-to-build-ai-agents-for-repeated-work) 探讨了重复工作流的另一种处理方式。
 
 ![5.png](/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.webp)
 

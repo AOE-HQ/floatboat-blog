@@ -23,7 +23,7 @@ draft: false
 
 这种转变通常围绕三个信号出现。第一，你发现自己正在用胶带把多个 Agent 拼在一起——一个做调研、一个排版、第三个按风格指南校对——而你还在它们之间手动搬运输出。第二，你需要持久化：Agent 应该记得上周二发生了什么，而不是让你把所有背景重新讲一遍。第三，开始有别人使用它，这时「相信输出就好」突然就不够用了。
 
-Anthropic 在[构建高效 Agent](<https://anthropic.com/research/building-effective-agents>) 的指南里说得很清楚：建议从最简单的方案开始，只在必要时增加复杂度。工作流（Workflow）——工具和 LLM 沿预定路径执行——应该排在完全自主的 Agent 之前。这个建议很扎实。但它同时意味着：当你确实需要升到下一级时，必须认真想清楚——是自研，是购买，还是把搭建这件事外包出去。
+Anthropic 在[构建高效 Agent](https://anthropic.com/research/building-effective-agents) 的指南里说得很清楚：建议从最简单的方案开始，只在必要时增加复杂度。工作流（Workflow）——工具和 LLM 沿预定路径执行——应该排在完全自主的 Agent 之前。这个建议很扎实。但它同时意味着：当你确实需要升到下一级时，必须认真想清楚——是自研，是购买，还是把搭建这件事外包出去。
 
 ![2.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416388917-b1def5dd-72f1-49d4-9163-1f77ea13ac08.webp)
 
@@ -45,11 +45,11 @@ Anthropic 在[构建高效 Agent](<https://anthropic.com/research/building-effec
 
 这是事情开始变得真实的部分。当你从单个 Agent 走向**开发 Agentic AI 系统**，五个问题突然需要答案：
 
-**记忆。**独立的 Custom GPT 在会话之间没有记忆——[OpenAI 的文档证实了这一点](<https://help.openai.com/en/articles/8554407-gpts-in-chatgpt>)：每次对话都从零开始。到了系统层面，你需要某种能持久化的东西，可能是一个数据库、向量库，或结构化的知识图谱。选哪个，取决于你的 Agent 需要回忆的是事实（结构化）还是上下文（语义）。两种我都试过，诚实的看法是：多数小团队在投入向量基础设施之前，应该先从一个简单的键值存储或 Google Sheet 起步。在弄清楚到底什么值得记住之前，别把记忆层设计得过度复杂。
+**记忆。**独立的 Custom GPT 在会话之间没有记忆——[OpenAI 的文档证实了这一点](https://help.openai.com/en/articles/8554407-gpts-in-chatgpt)：每次对话都从零开始。到了系统层面，你需要某种能持久化的东西，可能是一个数据库、向量库，或结构化的知识图谱。选哪个，取决于你的 Agent 需要回忆的是事实（结构化）还是上下文（语义）。两种我都试过，诚实的看法是：多数小团队在投入向量基础设施之前，应该先从一个简单的键值存储或 Google Sheet 起步。在弄清楚到底什么值得记住之前，别把记忆层设计得过度复杂。
 
 **工具。**单个 Agent 用的是你交给它的工具——网页浏览、代码执行、文件访问。系统需要的是工具编排：哪个 Agent 拿到哪些工具、按什么顺序执行、工具在任务中途失败时怎么办。自研的话，这里轮到 LangGraph 或 CrewAI 这类框架登场；购买的话，就是平台功能。我还没完全理顺自己的多工具编排工作流，但投入的时长足够让我明白：80% 的时间都花在调试上。
 
-**权限。**如果只有你自己用，权限无关紧要——你信得过自己。可一旦有别人用你的系统，你就得决定：这个 Agent 能读客户数据吗？能发邮件吗？能改共享文档吗？据 [LangChain 2026 年《Agent 工程现状》报告](<https://www.langchain.com/state-of-agent-engineering>)，57% 的受访组织已经有 Agent 在生产环境运行，但质量和治理仍是最大的障碍。权限平时很无聊，直到它变成危机。
+**权限。**如果只有你自己用，权限无关紧要——你信得过自己。可一旦有别人用你的系统，你就得决定：这个 Agent 能读客户数据吗？能发邮件吗？能改共享文档吗？据 [LangChain 2026 年《Agent 工程现状》报告](https://www.langchain.com/state-of-agent-engineering)，57% 的受访组织已经有 Agent 在生产环境运行，但质量和治理仍是最大的障碍。权限平时很无聊，直到它变成危机。
 
 ![3.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416401483-9b7fe0c9-a289-4062-8d25-9f01ae8d87c8.webp)
 
@@ -63,7 +63,7 @@ Anthropic 在[构建高效 Agent](<https://anthropic.com/research/building-effec
 
 我以前以为工具越多等于生产力越高，现在不这么认为了。系统里每新增一个组件，就多一个可能坏掉的东西、一个需要更新的东西、一个你得向下一个接手者解释清楚的东西。
 
-如果你**从零构建 AI Agent**，你拿到全部好处——完全定制、无厂商锁定、除 API 费用外没有月费——但也要承担每一种故障模式。OpenAI 下架某个模型时（它们确实会——GPT-4o 已于[2026 年 4 月完全退役](<https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes>)），负责迁移提示词的人是你；某个工具集成的 API 变了，周六爬起来修的也是你。
+如果你**从零构建 AI Agent**，你拿到全部好处——完全定制、无厂商锁定、除 API 费用外没有月费——但也要承担每一种故障模式。OpenAI 下架某个模型时（它们确实会——GPT-4o 已于[2026 年 4 月完全退役](https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes)），负责迁移提示词的人是你；某个工具集成的 API 变了，周六爬起来修的也是你。
 
 如果买平台，你就拿维护负担换来功能限制，通常还有某种厂商锁定。平台替你处理模型更新，但你也被困在它支持的范围内。对只跑三四条工作流的单人创业者来说，这笔交换往往划算；对拥有一条特定、高价值、必须表现分毫不差的工作流的团队而言，自研通常更值得。
 
@@ -79,7 +79,7 @@ Anthropic 在[构建高效 Agent](<https://anthropic.com/research/building-effec
 
 **阶段二：已验证。**工作流能跑了，你用过 20 次以上，清楚它的输入、输出和常见故障模式。现在你能做出明智的决定了：如果当前平台能很好地支撑它——就继续用；如果撞到限制了——就动手自研那些受限的环节。
 
-**阶段三：生产。**工作流定期运行，别人依赖它，可靠性变得重要。这时你需要监控、恢复和治理。自己搭的，就加上可观测性；买的，就评估平台的治理功能是否够用。多数平台正在这方面追赶——Anthropic 的[为 Agent 编写有效工具指南](<https://www.anthropic.com/engineering/writing-tools-for-agents>) 覆盖了这一阶段的一些关键原则，尤其是如何设计能让 Agent 可靠使用的工具。
+**阶段三：生产。**工作流定期运行，别人依赖它，可靠性变得重要。这时你需要监控、恢复和治理。自己搭的，就加上可观测性；买的，就评估平台的治理功能是否够用。多数平台正在这方面追赶——Anthropic 的[为 Agent 编写有效工具指南](https://www.anthropic.com/engineering/writing-tools-for-agents) 覆盖了这一阶段的一些关键原则，尤其是如何设计能让 Agent 可靠使用的工具。
 
 **阶段四：规模化。**多条工作流、多个 Agent、多个用户。这是系统的地盘。你要么深度押注某个平台生态，要么自己跑一套编排层。能带着超过一两条工作流走到这一阶段的单人创业者或小团队很少，这没关系。先把阶段三做扎实。
 
@@ -93,13 +93,13 @@ Anthropic 在[构建高效 Agent](<https://anthropic.com/research/building-effec
 
 ## 延伸阅读
 
-  * 如果你还在判断自己需要的到底是一个 Agent 还是更大的东西，从这里开始：[Agentic AI Tools：动手构建之前的品类地图](</blog/agentic-ai-tools>)
+  * 如果你还在判断自己需要的到底是一个 Agent 还是更大的东西，从这里开始：[Agentic AI Tools：动手构建之前的品类地图](/blog/agentic-ai-tools)
 
-  * 在构建完整系统之前，先确认你已经验证过一条可复现的工作流：[如何为重复性工作构建 AI Agent](</blog/how-to-build-ai-agents-for-repeated-work>)
+  * 在构建完整系统之前，先确认你已经验证过一条可复现的工作流：[如何为重复性工作构建 AI Agent](/blog/how-to-build-ai-agents-for-repeated-work)
 
-  * 好奇工作流自动化在哪里结束、真正的 Agent 系统在哪里开始？这篇文章把界线讲得很清楚：[AI 工作流 vs Agent 工作流：界线到底在哪里](</blog/ai-agent-workflow-vibe-coding>)
+  * 好奇工作流自动化在哪里结束、真正的 Agent 系统在哪里开始？这篇文章把界线讲得很清楚：[AI 工作流 vs Agent 工作流：界线到底在哪里](/blog/ai-agent-workflow-vibe-coding)
 
-  * 如果你正在考虑买而不是自己搭，这份指南帮你评估外部帮助何时真的有意义：[AI 自动化服务商：你真的需要一家吗？](</blog/ai-automation-agency-do-you-need-one>)
+  * 如果你正在考虑买而不是自己搭，这份指南帮你评估外部帮助何时真的有意义：[AI 自动化服务商：你真的需要一家吗？](/blog/ai-automation-agency-do-you-need-one)
 
-  * 在考虑工具、记忆与上下文之间的长期协同？这篇是顺理成章的下一篇：[AI 工作区 Agent：它们为单人创业者真正改变了什么](</blog/ai-workspace-agents>)
+  * 在考虑工具、记忆与上下文之间的长期协同？这篇是顺理成章的下一篇：[AI 工作区 Agent：它们为单人创业者真正改变了什么](/blog/ai-workspace-agents)
 

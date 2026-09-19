@@ -21,7 +21,7 @@ draft: false
 
 ### CJK + 拉丁文本渲染，准确率接近完美
 
-这是头条级变化，而这一次头条与体验相符。根据 [OpenAI 官方对 ChatGPT Images 2.0 的发布说明](<https://openai.com/index/introducing-chatgpt-images-2-0/>)，这个模型是为"复杂视觉任务"打造的，文本渲染是核心升级之一。独立测试把拉丁、中文、日文、韩文、印地语和孟加拉语的字符级准确率定在约 99%——[VentureBeat 的上手评测](<https://venturebeat.com/technology/openais-chatgpt-images-2-0-is-here-and-it-does-multilingual-text-full-infographics-slides-maps-even-manga-seemingly-flawlessly>)还专门点名日漫对白气泡是"看起来天衣无缝"的东西之一。
+这是头条级变化，而这一次头条与体验相符。根据 [OpenAI 官方对 ChatGPT Images 2.0 的发布说明](https://openai.com/index/introducing-chatgpt-images-2-0/)，这个模型是为"复杂视觉任务"打造的，文本渲染是核心升级之一。独立测试把拉丁、中文、日文、韩文、印地语和孟加拉语的字符级准确率定在约 99%——[VentureBeat 的上手评测](https://venturebeat.com/technology/openais-chatgpt-images-2-0-is-here-and-it-does-multilingual-text-full-infographics-slides-maps-even-manga-seemingly-flawlessly)还专门点名日漫对白气泡是"看起来天衣无缝"的东西之一。
 
 以前，我要先生成一格，用 Photoshop 把气泡抠掉，再亲手写汉字。对标题级长度的文字，这一步现在基本省了。**但小字号的大段密集文字，它仍会出错。**我把气泡内文字控制在每行 15 个字符以内，就稳得住。
 
@@ -35,7 +35,7 @@ draft: false
 
 ### 4K 分辨率，以及对印刷的真正意义
 
-GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文档](<https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-openais-gpt-image-2-in-microsoft-foundry/4500571>)确认了分辨率档位和灵活的长宽比——这有用，因为漫画分镜很少想要正方形。300dpi 印刷时，4K 大约能让你不放大就得到半页分镜；要求不高的话，一整页 splash 也够。对数字端——webtoon、Instagram、你自己的网站——则是"好得过头"的那种强。
+GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文档](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-openais-gpt-image-2-in-microsoft-foundry/4500571)确认了分辨率档位和灵活的长宽比——这有用，因为漫画分镜很少想要正方形。300dpi 印刷时，4K 大约能让你不放大就得到半页分镜；要求不高的话，一整页 splash 也够。对数字端——webtoon、Instagram、你自己的网站——则是"好得过头"的那种强。
 
 ## 一套现实的单人漫画工作流，一步步来
 
@@ -59,7 +59,7 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 
 ### 让角色设计贯穿一整章保持一致
 
-这是开始变得有意思的地方，也是我学会管理预期的地方。据 [The New Stack 对这次发布的报道](<https://thenewstack.io/chatgpt-images-20-openai/>)，Thinking 模式专门设计用于跨多帧维持角色与物体的一致性——漫画与分镜被明确点名。
+这是开始变得有意思的地方，也是我学会管理预期的地方。据 [The New Stack 对这次发布的报道](https://thenewstack.io/chatgpt-images-20-openai/)，Thinking 模式专门设计用于跨多帧维持角色与物体的一致性——漫画与分镜被明确点名。
 
 实践中，开着 Thinking 模式、用单个 prompt 生成 8 格一批，我能让其中大约 5–6 格保持可辨认的连贯性。其余 2–3 格的脸需要小幅重抽。**相比逐格生成——一致性基本靠抛硬币——这是巨大的进步。**
 
@@ -95,7 +95,7 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 
 ### 一整章内的风格漂移
 
-跨 20+ 格之后，线条粗细和网点密度会漂移。到第 25 格，风格已经微妙地比第 1 格更柔和。[DataCamp 的评测](<https://www.datacamp.com/blog/chatgpt-images-2-0>)指出，这个模型的定位是"视觉思考伙伴"，而不是固定风格的渲染器——我觉得这个框定对它擅长什么、不擅长什么，其实说得很诚实。
+跨 20+ 格之后，线条粗细和网点密度会漂移。到第 25 格，风格已经微妙地比第 1 格更柔和。[DataCamp 的评测](https://www.datacamp.com/blog/chatgpt-images-2-0)指出，这个模型的定位是"视觉思考伙伴"，而不是固定风格的渲染器——我觉得这个框定对它擅长什么、不擅长什么，其实说得很诚实。
 
 ## 模型撞墙时怎么办
 
@@ -123,7 +123,7 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 
 **如果你想做一部要求严格连贯性的长篇连载作品**，超过 8 格的角色一致性限制、场景之间的背景漂移，会让它感觉更像一场搏斗而不是一个工具。值得再等一个版本周期。
 
-对介于两者之间的所有人——好奇的、为了好玩在做的、想试试自己能不能交付一部 12 页短篇的——值得花一个周末。价格合理：包含在 ChatGPT Plus 每月 20 美元的标准档里（带用量限制），或者做生产用途可以走 [OpenAI API 模型页的按 token 计费](<https://developers.openai.com/api/docs/models/gpt-image-2>)。API 上图像输出 token 大约每百万 30 美元，按我用的分辨率算下来每格只要几美分。我写这篇文章时核对过文档；投入之前请再验证——API 档位 5 月初向所有开发者开放。
+对介于两者之间的所有人——好奇的、为了好玩在做的、想试试自己能不能交付一部 12 页短篇的——值得花一个周末。价格合理：包含在 ChatGPT Plus 每月 20 美元的标准档里（带用量限制），或者做生产用途可以走 [OpenAI API 模型页的按 token 计费](https://developers.openai.com/api/docs/models/gpt-image-2)。API 上图像输出 token 大约每百万 30 美元，按我用的分辨率算下来每格只要几美分。我写这篇文章时核对过文档；投入之前请再验证——API 档位 5 月初向所有开发者开放。
 
 ![6.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087089441-d5498d93-a404-49d7-9839-cd0dc4614114.webp)
 
@@ -133,13 +133,13 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 
 ## 延伸阅读
 
-* [看看如何为单人创作工作构建可复用的 AI 工作流](</blog/ai-workflow-for-solo-founders>)
+* [看看如何为单人创作工作构建可复用的 AI 工作流](/blog/ai-workflow-for-solo-founders)
 
-* [了解 2026 年 AI 工具如何融入真实的单人创业者工作流](</blog/ai-agents-2026-solo-operators>)
+* [了解 2026 年 AI 工具如何融入真实的单人创业者工作流](/blog/ai-agents-2026-solo-operators)
 
-* [学习一人创作者如何不靠招人扩大产出](</blog/scale-one-person-business-without-hiring>)
+* [学习一人创作者如何不靠招人扩大产出](/blog/scale-one-person-business-without-hiring)
 
-* [发现那些真正有效、超越一次性 prompt 的实用 AI 工作流](</blog/ai-workflow-solo-founders>)
+* [发现那些真正有效、超越一次性 prompt 的实用 AI 工作流](/blog/ai-workflow-solo-founders)
 
-* [探索 AI 如何帮你以一人之力像一整支创意团队那样运作](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+* [探索 AI 如何帮你以一人之力像一整支创意团队那样运作](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

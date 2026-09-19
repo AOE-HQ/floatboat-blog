@@ -120,11 +120,5 @@ draft: false
 
 用官方签表或实时跟踪器获取事实，用本指南推演路径难度、冷门区与冠军路线。并且始终保留娱乐免责声明：一张签表可以很聪明，但足球不欠任何人一个干净利落的预测。
 
-## 延伸阅读
-
-  * World Cup Bracket 2026：模板、跟踪器与 PDF——事实签表跟踪器与可下载素材。
-
-  * World Cup 2026 预测与竞猜签表——面向娱乐的预测角度。
-
-  * FloatCup：一键订阅 World Cup 2026 日历——日历提醒与比赛时间更新。
-
+## 延伸阅读- [World Cup Bracket 2026：模板、跟踪器与 PDF——事实签表跟踪器与可下载素材。](/zh/blog/world-cup-2026-bracket)
+- [FloatCup：一键订阅 World Cup 2026 日历——日历提醒与比赛时间更新。](/zh/blog/floatcup-world-cup-2026-calendar-subscribe)

@@ -27,7 +27,7 @@ That gap — between getting an answer and actually getting something _done_ —
 
 ### Input → Output, Limited Memory, No External Actions
 
-A chatbot is fundamentally a ​**text-in, text-out system** ​. You send a message, it generates a response, loop closed. According to [IBM's overview of chatbot technology](<https://www.ibm.com/think/topics/chatbots>), even modern AI-powered chatbots using natural language processing are designed primarily to _respond_ — not to ​ _act_ ​. The architecture is reactive by design: wait for input, process it, return output.
+A chatbot is fundamentally a ​**text-in, text-out system** ​. You send a message, it generates a response, loop closed. According to [IBM's overview of chatbot technology](https://www.ibm.com/think/topics/chatbots), even modern AI-powered chatbots using natural language processing are designed primarily to _respond_ — not to ​ _act_ ​. The architecture is reactive by design: wait for input, process it, return output.
 
 Memory is the other big constraint. Within a single conversation, a chatbot can track context reasonably well. But start a new session, and it's like you never met. No recall of past decisions, no continuity between days. Just a fresh slate every time.
 
@@ -47,7 +47,7 @@ The core pattern here: ​**the task ends at the answer** ​. You want a respon
 
 ### Multi-Step Reasoning and Task Execution
 
-[An AI agent works differently at its core.](<https://aws.amazon.com/what-is/ai-agents/>) Instead of just generating a response to your input, it **plans a sequence of steps to accomplish a goal** — and then executes them.
+[An AI agent works differently at its core.](https://aws.amazon.com/what-is/ai-agents/) Instead of just generating a response to your input, it **plans a sequence of steps to accomplish a goal** — and then executes them.
 
 You give it a high-level objective: "find the top five competitors in this space, compare their pricing, and put it in a table." It figures out what to do next, takes action, checks the result, and adjusts if something goes wrong. According to Anthropic's research on building effective agents, the most successful implementations use simple, composable patterns — with agents dynamically directing their own processes and tool usage to accomplish open-ended tasks. That "observe, think, act" loop is what makes an agent feel so different from a chatbot. It's not answering. It's ​ _doing_ ​.
 
@@ -87,9 +87,9 @@ There's also a practical cost consideration worth knowing: ​**agents are more 
 
 ### "ChatGPT Is an AI Agent" — Is It?
 
-Depends entirely on how you're using it. The base [ChatGPT](<https://openai.com/index/chatgpt/>) interface — for most users, most of the time — is a very capable chatbot. It responds. It doesn't act.
+Depends entirely on how you're using it. The base [ChatGPT](https://openai.com/index/chatgpt/) interface — for most users, most of the time — is a very capable chatbot. It responds. It doesn't act.
 
-But when you enable tools like web search, code interpreter, or custom GPT Actions, it starts behaving more like an agent.**[OpenAI](<https://en.wikipedia.org/wiki/OpenAI>)** describes agents as systems that can reason through ambiguity, take action across tools, and handle multi-step tasks — capabilities that activate only when the model is paired with the right tool integrations. Same underlying model. Different architecture around it. The confusion comes from people seeing ChatGPT use a tool once and assuming the whole product is an "agent." It's not that clean.
+But when you enable tools like web search, code interpreter, or custom GPT Actions, it starts behaving more like an agent.**[OpenAI](https://en.wikipedia.org/wiki/OpenAI)** describes agents as systems that can reason through ambiguity, take action across tools, and handle multi-step tasks — capabilities that activate only when the model is paired with the right tool integrations. Same underlying model. Different architecture around it. The confusion comes from people seeing ChatGPT use a tool once and assuming the whole product is an "agent." It's not that clean.
 
 ### "Agents Are Always Better" — Not Necessarily
 
@@ -97,7 +97,7 @@ This one trips people up, especially after scrolling through AI hype on social m
 
 Anthropic explicitly notes that agentic systems often trade latency and cost for better task performance, and recommends extensive testing in sandboxed environments before deployment. More power means more ways to get it wrong. That's not a reason to avoid agents — it's a reason to choose them deliberately, not by default.
 
-The right framing, according to [IBM's analysis of chatbot and agent use cases](<https://www.ibm.com/think/topics/chatbot-use-cases>), is that **chatbots, AI assistants, and agents represent different levels of technological sophistication** — and the right level depends entirely on the task, not on which sounds more impressive.
+The right framing, according to [IBM's analysis of chatbot and agent use cases](https://www.ibm.com/think/topics/chatbot-use-cases), is that **chatbots, AI assistants, and agents represent different levels of technological sophistication** — and the right level depends entirely on the task, not on which sounds more impressive.
 
 ![5.png](/blog/images/ai-agent-vs-chatbot/1773995519379-533e36ba-7e7b-4420-8157-5f2f635510ba.webp)
 
@@ -107,13 +107,13 @@ If you're exploring this space too, I hope this made things a little clearer. Ba
 
 **Previous Posts:**
 
-  * [Understand the difference between AI agents and assistants in real workflows](</blog/ai-agent-vs-ai-assistant>).
+  * [Understand the difference between AI agents and assistants in real workflows](/blog/ai-agent-vs-ai-assistant).
 
-  * [Explore real-world AI agent use cases across research, content, and operations](</blog/ai-agent-use-cases-real-examples>).
+  * [Explore real-world AI agent use cases across research, content, and operations](/blog/ai-agent-use-cases-real-examples).
 
-  * [See how one-person businesses are starting to operate like a full team using AI roles](</blog/how-one-person-businesses-work-like-a-team-with-ai>).
+  * [See how one-person businesses are starting to operate like a full team using AI roles](/blog/how-one-person-businesses-work-like-a-team-with-ai).
 
-  * [Learn how AI automation work is actually priced in the real market](</blog/ai-automation-agency-pricing>).
+  * [Learn how AI automation work is actually priced in the real market](/blog/ai-automation-agency-pricing).
 
-  * [Compare how Lindy and Gumloop differ when building agent-style workflows](</blog/lindy-vs-gumloop>).
+  * [Compare how Lindy and Gumloop differ when building agent-style workflows](/blog/lindy-vs-gumloop).
 

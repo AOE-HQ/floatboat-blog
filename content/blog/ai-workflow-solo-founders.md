@@ -29,7 +29,7 @@ When AI doesn't carry that context, you end up re-explaining yourself constantly
 
 Last month I mapped out everything I do in a typical week. Content research, writing, client communication, project management, bookkeeping follow-ups. Five distinct jobs, sometimes more.
 
-The standard advice is: use ChatGPT for writing, [Zapier for automation](<https://zapier.com/workflows>), Notion for project management, and maybe a separate tool for research. That's four tools, four logins, four sets of context that don't talk to each other. Each one knows a tiny slice of your work, but ​**none of them know how your work actually fits together** ​.
+The standard advice is: use ChatGPT for writing, [Zapier for automation](https://zapier.com/workflows), Notion for project management, and maybe a separate tool for research. That's four tools, four logins, four sets of context that don't talk to each other. Each one knows a tiny slice of your work, but ​**none of them know how your work actually fits together** ​.
 
 I used to think more tools meant more productivity. I don't anymore.
 
@@ -59,7 +59,7 @@ Solo founders repeat the same types of work constantly. Weekly reports. Client o
 
 **The ideal AI ​workflow** ​**​ lets you do the work once, then package that process into something reusable.** Not a template — something smarter. A workflow that can take new inputs and run through your established process automatically, including the judgment calls you usually make along the way.
 
-This is different from traditional automation. Tools like [Make](<https://www.make.com/en>) or Zapier are great at connecting apps and moving data around, but they work on triggers and rules. What solo founders need is something closer to skill transfer — teaching the AI your process, not just your if-then logic.
+This is different from traditional automation. Tools like [Make](https://www.make.com/en) or Zapier are great at connecting apps and moving data around, but they work on triggers and rules. What solo founders need is something closer to skill transfer — teaching the AI your process, not just your if-then logic.
 
 ![33.PNG](/blog/images/ai-workflow-solo-founders/1775794479589-629b4c8b-d003-46fa-8e5b-240dd4c80ded.webp)
 
@@ -71,7 +71,7 @@ I've tried this exact stack. Notion for knowledge management, ChatGPT for genera
 
 You're the one copying context from Notion into ChatGPT. You're the one designing Zap triggers that sort of replicate your process but miss the nuance. You're the one maintaining all of it when something breaks.
 
-[Notion's AI features have gotten significantly better](<https://www.notion.com/product/ai>) — the new Agent can search across connected tools like Slack and Google Drive, and the custom instructions feature means it remembers your preferences within the workspace. That's a real improvement. But Notion AI still lives inside Notion. It doesn't know about the PDF on your desktop or the browser tab you have open.
+[Notion's AI features have gotten significantly better](https://www.notion.com/product/ai) — the new Agent can search across connected tools like Slack and Google Drive, and the custom instructions feature means it remembers your preferences within the workspace. That's a real improvement. But Notion AI still lives inside Notion. It doesn't know about the PDF on your desktop or the browser tab you have open.
 
 ### When Stitching Tools Together Creates More Overhead, Not Less
 
@@ -95,7 +95,7 @@ Can the AI access your files, browser, and project history without you manually 
 
 ### Execution Memory
 
-Does the tool learn from how you work, not just what you tell it to do? Can it absorb your editing patterns, your decision-making tendencies, your formatting preferences? According to [Harvard Business School research on AI and work design](<https://hbr.org/2025/07/how-ai-is-redefining-managerial-roles>), the gap between AI potential and AI reality often comes down to how well the tool adapts to individual work styles.
+Does the tool learn from how you work, not just what you tell it to do? Can it absorb your editing patterns, your decision-making tendencies, your formatting preferences? According to [Harvard Business School research on AI and work design](https://hbr.org/2025/07/how-ai-is-redefining-managerial-roles), the gap between AI potential and AI reality often comes down to how well the tool adapts to individual work styles.
 
 ### Desktop Integration
 
@@ -131,7 +131,7 @@ I'm not going to pretend this is all upside. Every approach has costs, and I thi
 
   * **Flexibility of best-in-class point tools.** A dedicated workspace might not match Notion's database power or Zapier's 7,000+ app integrations. You're trading breadth for depth of integration.
 
-  * **Familiarity.** Switching to a new system takes time, and there's a real learning curve. I've found that [the most productive approach is to start with one specific workflow](<https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity>) and expand from there, rather than trying to move everything at once.
+  * **Familiarity.** Switching to a new system takes time, and there's a real learning curve. I've found that [the most productive approach is to start with one specific workflow](https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity) and expand from there, rather than trying to move everything at once.
 
   * **Maturity.** Some newer AI workspace tools are still early-stage. Features might change, pricing might shift. I haven't tested everything long enough to know where the edges are — and I'll say that openly.
 
@@ -149,13 +149,13 @@ Back to building things.
 
 ## Previous Posts:
 
-  * [If AI forgetting your context is the problem, here’s why that happens every session](</blog/why-ai-forgets-every-session>)
+  * [If AI forgetting your context is the problem, here’s why that happens every session](/blog/why-ai-forgets-every-session)
 
-  * [Curious how persistent AI memory changes the workflow model? Start with this breakdown](</blog/what-is-persistent-ai-agent>)
+  * [Curious how persistent AI memory changes the workflow model? Start with this breakdown](/blog/what-is-persistent-ai-agent)
 
-  * [Still unsure how AI workspaces differ from traditional workflow builders? This explains the shift](</blog/workflow-builder-vs-ai-workspace>)
+  * [Still unsure how AI workspaces differ from traditional workflow builders? This explains the shift](/blog/workflow-builder-vs-ai-workspace)
 
-  * [Want a practical example of what an AI-powered solo workflow looks like in action? See this setup](</blog/feishu-cli-solo-work-setup>)
+  * [Want a practical example of what an AI-powered solo workflow looks like in action? See this setup](/blog/feishu-cli-solo-work-setup)
 
-  * [And if you're wondering how solo operators actually scale with AI day to day, this is worth reading](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [And if you're wondering how solo operators actually scale with AI day to day, this is worth reading](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

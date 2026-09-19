@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-_​Hello, see you again~ I'mNova. I'​_ ​ _ll_ ​ _​ be honest — I didn't start looking for ​_ ​[Gumloop](<https://www.gumloop.com/>) _​ alternatives because I thought it was a bad tool. I started looking because I realized it wasn't quite matching how I actually work. And that's a different problem._
+_​Hello, see you again~ I'mNova. I'​_ ​ _ll_ ​ _​ be honest — I didn't start looking for ​_ ​[Gumloop](https://www.gumloop.com/) _​ alternatives because I thought it was a bad tool. I started looking because I realized it wasn't quite matching how I actually work. And that's a different problem._
 
 _After a few weeks of testing other options, I want to share what I found — not as a ranking, but more like a map. Different tools for different kinds of work._
 
@@ -47,7 +47,7 @@ Pick n8n if you need self-hosting, stronger failure handling, and deeper control
 
 n8n is open-source, highly customizable, and great when security or infrastructure control is a must. You must be comfortable with JavaScript, JSON, and REST APIs to use it effectively.
 
-On pricing (as of early 2026): the self-hosted Community Edition is free with unlimited executions. Cloud plans run from $24/month (Starter, 2,500 executions) to $60/month (Pro, 10,000 executions). Check the [official n8n pricing page](<https://n8n.io/pricing/>) for current details — tiers have shifted a few times.
+On pricing (as of early 2026): the self-hosted Community Edition is free with unlimited executions. Cloud plans run from $24/month (Starter, 2,500 executions) to $60/month (Pro, 10,000 executions). Check the [official n8n pricing page](https://n8n.io/pricing/) for current details — tiers have shifted a few times.
 
 ​**Best for** ​: developers, technical founders, ops teams that can handle a VPS and the occasional 2 AM Docker issue. ​**Not ideal for** ​: solo operators with no technical background who just want things to run without maintenance overhead.
 
@@ -57,7 +57,7 @@ On pricing (as of early 2026): the self-hosted Community Edition is free with un
 
 Make is for people who think visually. When workflows branch in multiple directions, seeing everything at once makes troubleshooting easier. If you like shaping data step by step, this one feels intuitive.
 
-[Make.com](<http://Make.com>) pricing starts with a free plan (1,000 operations/month), Core at around $10.59/month, Pro at $18.82/month, and Teams at $34.12/month. It's among the most affordable hosted options in this category. Worth exploring at [Make's official site](<https://www.make.com/en/pricing>).
+[Make.com](http://Make.com) pricing starts with a free plan (1,000 operations/month), Core at around $10.59/month, Pro at $18.82/month, and Teams at $34.12/month. It's among the most affordable hosted options in this category. Worth exploring at [Make's official site](https://www.make.com/en/pricing).
 
 Make lets you build multi-step flows on one screen, with built-in data tools to map fields and adjust data inside the builder. Error handling lets you set rules for what happens if something fails.
 
@@ -71,13 +71,13 @@ Make lets you build multi-step flows on one screen, with built-in data tools to 
 
 Lindy acts as an always-on assistant you can interact with via iMessage or SMS — you text it requests, and it handles tasks like drafting emails, scheduling meetings, prepping you before calls, and triaging your inbox.
 
-Pricing as of early 2026: the Plus plan runs $49.99/month, the Pro plan $59.99/month. There's a 7-day free trial but no permanent free tier. You can see the current breakdown on [Lindy's pricing page](<https://www.lindy.ai/pricing>).
+Pricing as of early 2026: the Plus plan runs $49.99/month, the Pro plan $59.99/month. There's a 7-day free trial but no permanent free tier. You can see the current breakdown on [Lindy's pricing page](https://www.lindy.ai/pricing).
 
 ​**Best for** ​: solo operators and small teams who want an AI that handles email, scheduling, and CRM updates without building a flow from scratch. Especially useful if your bottleneck is daily task management, not batch data processing. ​**Not ideal for** ​: high-volume, logic-heavy data workflows — that's Gumloop's territory, not Lindy's.
 
 ### ChatGPT + plugins / Custom GPTs
 
-Honestly? Worth mentioning because a lot of people overlook how far this combination has come. If your need is primarily about **thinking alongside AI** — drafting, researching, making judgment calls — a well-configured Custom[ GPT](<https://chatgpt.com/?utm_source=google&utm_medium=paid_search&utm_campaign=GOOG_C_SEM_GBR_Core_CHT_TST_ACQ_PER_MIX_ALL_NAMER_US_EN_031126&c_id=23637266097&c_agid=196969198991&c_crid=799723769010&c_kwid=kwd-368538592&c_ims=&c_pms=9060440&c_nw=g&c_dvc=c&gad_source=1&gad_campaignid=23637266097&gbraid=0AAAAA-I0E5f7Ogs8VCWcGfQiY2uNIfgCG&gclid=Cj0KCQjw7IjOBhDyARIsAFzrWQxtBo-XShB-1OvMIPmKMxn48aYGEesBJIN_bxeo4zlU840IJyMYl9UaArBNEALw_wcB>) with the right integrations can handle a surprising amount.
+Honestly? Worth mentioning because a lot of people overlook how far this combination has come. If your need is primarily about **thinking alongside AI** — drafting, researching, making judgment calls — a well-configured Custom[ GPT](https://chatgpt.com/?utm_source=google&utm_medium=paid_search&utm_campaign=GOOG_C_SEM_GBR_Core_CHT_TST_ACQ_PER_MIX_ALL_NAMER_US_EN_031126&c_id=23637266097&c_agid=196969198991&c_crid=799723769010&c_kwid=kwd-368538592&c_ims=&c_pms=9060440&c_nw=g&c_dvc=c&gad_source=1&gad_campaignid=23637266097&gbraid=0AAAAA-I0E5f7Ogs8VCWcGfQiY2uNIfgCG&gclid=Cj0KCQjw7IjOBhDyARIsAFzrWQxtBo-XShB-1OvMIPmKMxn48aYGEesBJIN_bxeo4zlU840IJyMYl9UaArBNEALw_wcB) with the right integrations can handle a surprising amount.
 
 It's not a workflow builder. It doesn't run autonomously. But for a solo creator or founder who mostly needs AI assistance rather than AI automation, it might be all you need — at a fraction of the cost. The tradeoff is that nothing runs without you.
 
@@ -99,7 +99,7 @@ Before you commit to any alternative, I'd ask yourself three things:
 
   1. **Is my problem automation volume or context fragmentation?** If you're doing the same thing 500 times — automation builder. If you're switching between ten different modes of work and losing context each time — workspace.
 
-  2. **Who's maintaining this six months from now?** [Relay.app](<https://Relay.app>) is worth considering if you're looking for the best all-around alternative at a great price — and as an honest reference point, [Relay's comparison of Gumloop alternatives](<https://www.relay.app/blog/gumloop-alternatives>) is one of the more balanced I've read in this space.
+  2. **Who's maintaining this six months from now?** [Relay.app](https://Relay.app) is worth considering if you're looking for the best all-around alternative at a great price — and as an honest reference point, [Relay's comparison of Gumloop alternatives](https://www.relay.app/blog/gumloop-alternatives) is one of the more balanced I've read in this space.
 
   3. **What's your real usage volume?** Credit-based and operation-based pricing models can surprise you. Map out your actual workflow runs per month before you commit.
 
@@ -131,13 +131,13 @@ If you're genuinely unsure, the fastest way to find out is to build one real wor
 
 ## Previous Posts:
 
-  * [Compare how Lindy and Gumloop differ when building agent-style workflows.](</blog/lindy-vs-gumloop>)
+  * [Compare how Lindy and Gumloop differ when building agent-style workflows.](/blog/lindy-vs-gumloop)
 
-  * [Explore real-world AI agent use cases across research, content, and operations.](</blog/ai-agent-use-cases-real-examples>)
+  * [Explore real-world AI agent use cases across research, content, and operations.](/blog/ai-agent-use-cases-real-examples)
 
-  * [See how one-person businesses are starting to operate like a full team using AI roles.](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [See how one-person businesses are starting to operate like a full team using AI roles.](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [Learn how AI automation work is actually priced in the real market.](</blog/ai-automation-agency-pricing>)
+  * [Learn how AI automation work is actually priced in the real market.](/blog/ai-automation-agency-pricing)
 
-  * [Understand the difference between AI agents and assistants in real workflows.](</blog/ai-agent-vs-ai-assistant>)
+  * [Understand the difference between AI agents and assistants in real workflows.](/blog/ai-agent-vs-ai-assistant)
 

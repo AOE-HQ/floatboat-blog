@@ -132,7 +132,7 @@ Mac 上的 Claude Desktop 另有 **quick entry**（Option + Space、Caps Lock �
 
 ### 5.4 文档中心听写（Floatboat Flow Mode）
 
-第三种模式在聊天语音与提示词听写旁边：**文档中心听写**——语音喂给一份活草稿，agent 在文件内协作。Floatboat **Flow Mode**（2026 年发布）在文档中保持实时转写，同时你选中片段让 agent 改写——更接近听写加协同编辑，而非 GPT-Live 对话 [<a href="/zh/blog/introducing-flow-mode">来源：Floatboat Flow Mode 公告</a>]。它面向交付备忘录与会议计划的独立创业者，而不是通勤路上的免提问答。
+第三种模式在聊天语音与提示词听写旁边：**文档中心听写**——语音喂给一份活草稿，agent 在文件内协作。Floatboat **Flow Mode**（2026 年发布）在文档中保持实时转写，同时你选中片段让 agent 改写——更接近听写加协同编辑，而非 GPT-Live 对话——详见 [Flow Mode 发布公告](/zh/blog/introducing-flow-mode)。它面向交付备忘录与会议计划的独立创业者，而不是通勤路上的免提问答。
 
 Flow Mode 说明「听写」本身也不止一种工作：提示词框听写指挥 agent；文档内听写*本身*就是交付面。两者都不能在口语推理上替代 voice mode；但当输出必须落进结构化文件时，两者都能跑赢 voice mode。
 

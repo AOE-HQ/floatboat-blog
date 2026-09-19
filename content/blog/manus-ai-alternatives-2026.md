@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-See you again, Nova is coming~ A few weeks ago I was trying to automate a research-to-draft workflow for a project. Someone in Discord I keep mentioning​[ Manus AI](<https://manus.im/>)​. So I went to check it out — and immediately ran into the invite queue. Again.
+See you again, Nova is coming~ A few weeks ago I was trying to automate a research-to-draft workflow for a project. Someone in Discord I keep mentioning​[ Manus AI](https://manus.im/)​. So I went to check it out — and immediately ran into the invite queue. Again.
 
 Wait… still invite-only?
 
@@ -79,11 +79,11 @@ This one is probably the most accessible **Manus AI alternative** right now. The
 
 **Best for:** People who want an agent they can actually use today, without setup friction.
 
-You can check current plan details on the [OpenAI ChatGPT](<https://openai.com/index/chatgpt/>) pricing page — it gets updated frequently and the tier structure has shifted a bit in early 2026.
+You can check current plan details on the [OpenAI ChatGPT](https://openai.com/index/chatgpt/) pricing page — it gets updated frequently and the tier structure has shifted a bit in early 2026.
 
 ### Claude (Anthropic)
 
-I've been using[ Claude](<https://claude.ai/new>) a lot lately for longer research tasks. It handles nuance better than most, and the 200K context window means I can dump a lot of background in without things falling apart midway through. It's not a full autonomous agent in the Manus sense, but for **thinking-through-a-problem tasks,** it's genuinely useful.
+I've been using[ Claude](https://claude.ai/new) a lot lately for longer research tasks. It handles nuance better than most, and the 200K context window means I can dump a lot of background in without things falling apart midway through. It's not a full autonomous agent in the Manus sense, but for **thinking-through-a-problem tasks,** it's genuinely useful.
 
 **Strengths:** Long context, thoughtful responses, less likely to hallucinate on complex topics.
 
@@ -97,7 +97,7 @@ I've been using[ Claude](<https://claude.ai/new>) a lot lately for longer resear
 
 ### AutoGPT (Open Source)
 
-For the technically adventurous — and I say this as someone who spent an afternoon getting it running — [AutoGPT](<https://github.com/Significant-Gravitas/AutoGPT>) is a genuinely capable open-source agent. You supply your own API key, so costs depend on usage, but there's no platform fee. It can browse the web, write and execute code, manage files, and chain tasks.
+For the technically adventurous — and I say this as someone who spent an afternoon getting it running — [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) is a genuinely capable open-source agent. You supply your own API key, so costs depend on usage, but there's no platform fee. It can browse the web, write and execute code, manage files, and chain tasks.
 
 **Strengths:** Free to run (minus API costs), full control over behavior, no vendor lock-in.
 
@@ -117,7 +117,7 @@ Okay, this one isn't an "agent" in the full Manus sense. But if what you're actu
 
 ## Best Alternatives for Workflow Automation
 
-### [Lindy.ai](<http://Lindy.ai>)
+### [Lindy.ai](http://Lindy.ai)
 
 This is the one that surprised me most.**​ Lindy** is built specifically for automating business workflows — email triage, calendar management, CRM updates, follow-ups. It's no-code, has ready-made templates, and connects to tools most people already use. If you were using Manus primarily for multi-step business process automation, Lindy is probably the cleaner fit.
 
@@ -127,7 +127,7 @@ This is the one that surprised me most.**​ Lindy** is built specifically for a
 
 ### n8n (Open Source Workflow Automation)
 
-If you want workflow automation with full control, [n8n's workflow automation documentation](<https://docs.n8n.io/>) is worth bookmarking. It's open-source, self-hostable, and connects to hundreds of apps. Not an AI agent per se, but you can wire AI steps into complex automated pipelines. A lot of solo operators I know use it as connective tissue between tools.
+If you want workflow automation with full control, [n8n's workflow automation documentation](https://docs.n8n.io/) is worth bookmarking. It's open-source, self-hostable, and connects to hundreds of apps. Not an AI agent per se, but you can wire AI steps into complex automated pipelines. A lot of solo operators I know use it as connective tissue between tools.
 
 **Strengths:** Extremely flexible, self-hosted option available, massive integration library.
 
@@ -151,7 +151,7 @@ Three questions I'd ask before picking:
 
 Worth being honest here: Manus is genuinely impressive for certain things, and I don't want this to read like a takedown.
 
-If you need **parallel deep research** — deploying multiple agents simultaneously to crawl sources and synthesize findings — Manus does that in a way none of the above tools quite match. It's also unusually good at taking a high-level goal and breaking it into executable subtasks without much hand-holding from you. According to [Anthropic's research on autonomous AI systems](<https://www.anthropic.com/research>), agentic AI that handles complex multi-step tasks is still an evolving space — which is part of why Manus stands out when it's actually accessible.
+If you need **parallel deep research** — deploying multiple agents simultaneously to crawl sources and synthesize findings — Manus does that in a way none of the above tools quite match. It's also unusually good at taking a high-level goal and breaking it into executable subtasks without much hand-holding from you. According to [Anthropic's research on autonomous AI systems](https://www.anthropic.com/research), agentic AI that handles complex multi-step tasks is still an evolving space — which is part of why Manus stands out when it's actually accessible.
 
 If you have access and the budget, and your work involves complex multi-step research and production workflows end to end, it earns its place.
 
@@ -161,13 +161,13 @@ _I'm still experimenting with a few of these — especially Lindy, which I only 
 
 **Previous Posts:**
 
-  * [Explore real-world AI agent use cases and how they actually perform in practice](</blog/ai-agent-use-cases-real-examples>)
+  * [Explore real-world AI agent use cases and how they actually perform in practice](/blog/ai-agent-use-cases-real-examples)
 
-  * [See how solo operators run a one-person business like a team using AI roles and workflows](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [See how solo operators run a one-person business like a team using AI roles and workflows](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [Understand how AI automation services are priced in the real market (and why quotes vary so much)](</blog/ai-automation-agency-pricing>)
+  * [Understand how AI automation services are priced in the real market (and why quotes vary so much)](/blog/ai-automation-agency-pricing)
 
-  * [Compare how Lindy and Gumloop differ when building agent-style workflows](</blog/lindy-vs-gumloop>)
+  * [Compare how Lindy and Gumloop differ when building agent-style workflows](/blog/lindy-vs-gumloop)
 
-  * [Learn how different AI agent tools compare when you actually test them on real workflows](</blog/lindy-vs-gumloop>)
+  * [Learn how different AI agent tools compare when you actually test them on real workflows](/blog/lindy-vs-gumloop)
 

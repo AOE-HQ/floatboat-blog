@@ -25,11 +25,11 @@ I'm not here to declare it dead. But I am here to give you the honest version of
 
 The name captures the feeling: you're going by feel, not by formula. You're guiding, not engineering.
 
-According to [Wikipedia's entry on vibe coding](<https://en.wikipedia.org/wiki/Vibe_coding>), the practice involves "accepting AI-generated code without reviewing the output thoroughly, instead relying on results and follow-up prompts to guide changes." That's a fair description. It's also exactly what makes it useful for quick experiments and risky for production systems.
+According to [Wikipedia's entry on vibe coding](https://en.wikipedia.org/wiki/Vibe_coding), the practice involves "accepting AI-generated code without reviewing the output thoroughly, instead relying on results and follow-up prompts to guide changes." That's a fair description. It's also exactly what makes it useful for quick experiments and risky for production systems.
 
 ### Where the Term Comes From
 
-On February 2, 2025, Andrej Karpathy — AI researcher and co-founder of OpenAI — [posted on X describing a new kind of coding](<https://x.com/karpathy/status/1886192184808149383>) where you "fully give in to the vibes, embrace exponentials, and forget that the code even exists." He wrote: "I just see stuff, say stuff, run stuff, and copy paste stuff, and it mostly works."
+On February 2, 2025, Andrej Karpathy — AI researcher and co-founder of OpenAI — [posted on X describing a new kind of coding](https://x.com/karpathy/status/1886192184808149383) where you "fully give in to the vibes, embrace exponentials, and forget that the code even exists." He wrote: "I just see stuff, say stuff, run stuff, and copy paste stuff, and it mostly works."
 
 One post. It resonated because it named something a lot of people were already quietly doing. Collins English Dictionary named "vibe coding" its Word of the Year for 2025. Not bad for a tweet.
 
@@ -45,7 +45,7 @@ Because it described a real shift. Non-developers — founders, operators, conte
 
 Traditional development means owning every line — specific syntax, specific logic, specific debugging. You understand (in theory) what each piece does.
 
-**Vibe coding inverts that.** As [Google Cloud explains in their vibe coding overview](<https://cloud.google.com/discover/what-is-vibe-coding>), the approach "lets you focus on the desired outcome instead, describing your goal in plain language, while the AI handles the actual code." The primary role shifts from writing to guiding.
+**Vibe coding inverts that.** As [Google Cloud explains in their vibe coding overview](https://cloud.google.com/discover/what-is-vibe-coding), the approach "lets you focus on the desired outcome instead, describing your goal in plain language, while the AI handles the actual code." The primary role shifts from writing to guiding.
 
 Honest version: this works well for simple, contained tasks. It works less well for anything that touches complexity, state, or security.
 
@@ -83,7 +83,7 @@ By <https://www.rootsanalysis.com/vibe-coding-market>
 
 ### Where the Backlash Started
 
-On February 8, 2026 — exactly one year after he popularized the term — Karpathy declared vibe coding passé. [The New Stack covered his announcement](<https://thenewstack.io/vibe-coding-is-passe/>), reporting that he now prefers the term "agentic engineering": _"agentic because the new default is that you are not writing the code directly 99% of the time, you are orchestrating agents who do and acting as oversight — engineering to emphasize that there is an art & science and expertise to it."_
+On February 8, 2026 — exactly one year after he popularized the term — Karpathy declared vibe coding passé. [The New Stack covered his announcement](https://thenewstack.io/vibe-coding-is-passe/), reporting that he now prefers the term "agentic engineering": _"agentic because the new default is that you are not writing the code directly 99% of the time, you are orchestrating agents who do and acting as oversight — engineering to emphasize that there is an art & science and expertise to it."_
 
 The backlash from developers had been building before that. By mid-2025, engineers were reporting what Fast Company called the "vibe coding hangover" — teams inheriting AI-generated codebases they couldn't understand, debug, or safely extend.
 
@@ -109,7 +109,7 @@ The bigger problem isn't the first version — it's the fifth. Every prompt-driv
 
 ### When Systems Become Too Complex
 
-Security is the clearest example of where vibe coding breaks down. As [TechTarget reported on the growing risks of AI-generated code](<https://www.techtarget.com/searchapparchitecture/tip/Vibe-coding-is-killing-open-source-increasing-software-risk>), code churn and duplication are accelerating alongside security debt. OWASP added a dedicated category to its Top 10 in 2025 specifically flagging AI-assisted code defects as a pattern development teams need to address. AI-generated code optimizes for functionality, not security. Those are not the same requirement — and for a solo founder without a security engineer on the team, that gap can surface at the worst time.
+Security is the clearest example of where vibe coding breaks down. As [TechTarget reported on the growing risks of AI-generated code](https://www.techtarget.com/searchapparchitecture/tip/Vibe-coding-is-killing-open-source-increasing-software-risk), code churn and duplication are accelerating alongside security debt. OWASP added a dedicated category to its Top 10 in 2025 specifically flagging AI-assisted code defects as a pattern development teams need to address. AI-generated code optimizes for functionality, not security. Those are not the same requirement — and for a solo founder without a security engineer on the team, that gap can surface at the worst time.
 
 ![4.png](/blog/images/what-is-vibe-coding/1776318333381-2505b153-4cd6-41d5-89ce-bf8d4a4fe3a5.webp)
 
@@ -165,13 +165,13 @@ That's one small piece figured out.
 
 ## Previous Posts：
 
-  * [Understand the difference between AI agents vs chatbots](</blog/ai-agent-vs-chatbot>)
+  * [Understand the difference between AI agents vs chatbots](/blog/ai-agent-vs-chatbot)
 
-  * [Learn how AI agents actually work for solo operators in 2026](</blog/ai-agents-2026-solo-operators>)
+  * [Learn how AI agents actually work for solo operators in 2026](/blog/ai-agents-2026-solo-operators)
 
-  * [See how to build your own AI agent step by step](</blog/how-to-build-an-ai-agent>)
+  * [See how to build your own AI agent step by step](/blog/how-to-build-an-ai-agent)
 
-  * [Explore the shift from AI assistants to true AI agents](</blog/ai-agent-vs-ai-assistant>)
+  * [Explore the shift from AI assistants to true AI agents](/blog/ai-agent-vs-ai-assistant)
 
-  * [Discover practical AI agent use cases in real workflows](</blog/ai-agent-use-cases-real-examples>)
+  * [Discover practical AI agent use cases in real workflows](/blog/ai-agent-use-cases-real-examples)
 

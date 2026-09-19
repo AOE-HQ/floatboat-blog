@@ -23,7 +23,7 @@ The **workspace agents vs chat assistants** split isn't about model quality. GPT
 
 A chat assistant is a conversation. You open a box, you type, you read the answer, you type again. Each exchange is mostly self-contained. The assistant can search the web, run code, look at files you upload — but the center of gravity is always the chat window. When you close the tab, most of the "state" goes with it. Some memory persists now, but it's fragmentary. You're the one holding the thread together.
 
-I still use [ChatGPT](<https://openai.com/gpt-5/>) almost every day. So does pretty much everyone I know. It's the most natural interface anyone's built for "ask a smart system something." For quick questions, it's genuinely hard to beat.
+I still use [ChatGPT](https://openai.com/gpt-5/) almost every day. So does pretty much everyone I know. It's the most natural interface anyone's built for "ask a smart system something." For quick questions, it's genuinely hard to beat.
 
 ![2.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999740654-33cd6c61-9f51-423e-8d6d-4db122a501ba.webp)
 
@@ -31,9 +31,9 @@ I still use [ChatGPT](<https://openai.com/gpt-5/>) almost every day. So does pre
 
 A workspace agent bets on something different: **the AI shouldn't be a conversation you visit — it should be a worker that lives next to your files, tools, and tabs.** Instead of copying-pasting a document into a chat, the agent reads the document. Instead of describing a browser tab, the agent sees it. Instead of one turn at a time, it runs a loop.
 
-Anthropic's engineering team has a [clean definition of agents](<https://www.anthropic.com/research/building-effective-agents>) that I keep coming back to: agents are systems where an LLM dynamically directs its own process and tool usage, maintaining control over how it accomplishes a task — as opposed to workflows, where the path is hardcoded. That distinction matters more than the marketing realizes.
+Anthropic's engineering team has a [clean definition of agents](https://www.anthropic.com/research/building-effective-agents) that I keep coming back to: agents are systems where an LLM dynamically directs its own process and tool usage, maintaining control over how it accomplishes a task — as opposed to workflows, where the path is hardcoded. That distinction matters more than the marketing realizes.
 
-Wait — this is the part worth sitting with. A chat assistant ​ _responds_ ​. A workspace agent ​ _operates_ ​. [IBM frames the same split a little differently](<https://www.ibm.com/think/topics/ai-agents-vs-ai-assistants>): assistants suggest actions for you to approve; agents reason, decide, and act using external tools. Same idea, different words.
+Wait — this is the part worth sitting with. A chat assistant ​ _responds_ ​. A workspace agent ​ _operates_ ​. [IBM frames the same split a little differently](https://www.ibm.com/think/topics/ai-agents-vs-ai-assistants): assistants suggest actions for you to approve; agents reason, decide, and act using external tools. Same idea, different words.
 
 ## Side-by-side: where each one actually lives
 
@@ -59,7 +59,7 @@ This is the part that changes the most. A chat assistant sees what you hand it. 
 
 ### What carries over between sessions
 
-Chat assistants are getting better at memory, but it's still mostly a list of preferences. Workspace agents are built around the idea that ​**context about an ongoing project should accumulate, not reset** ​. Anthropic has a [thoughtful piece on long-running agent harnesses](<https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents>) that captures the core problem: agents working across many sessions need a way to remember where they left off, or they just redo the same discovery work every time. That's the bet the workspace category is making.
+Chat assistants are getting better at memory, but it's still mostly a list of preferences. Workspace agents are built around the idea that ​**context about an ongoing project should accumulate, not reset** ​. Anthropic has a [thoughtful piece on long-running agent harnesses](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) that captures the core problem: agents working across many sessions need a way to remember where they left off, or they just redo the same discovery work every time. That's the bet the workspace category is making.
 
 ## Where chat assistants are still the better choice
 
@@ -81,7 +81,7 @@ Nine-out-of-ten of my AI interactions are still something like: "draft a short r
 
 ### When you don't want AI near your files
 
-This one I feel strongly about. Giving an agent broad access to your workspace is a real trust decision. [OWASP's Top 10 for LLM Applications](<https://genai.owasp.org/llmrisk/llm01-prompt-injection/>) lists prompt injection as the #1 risk category — and that risk compounds badly when an agent can take actions across your systems. If you're working with client data, legal documents, anything confidential, a sandboxed chat session is often the more honest answer than a deeply-integrated agent. At least until the safety story matures.
+This one I feel strongly about. Giving an agent broad access to your workspace is a real trust decision. [OWASP's Top 10 for LLM Applications](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) lists prompt injection as the #1 risk category — and that risk compounds badly when an agent can take actions across your systems. If you're working with client data, legal documents, anything confidential, a sandboxed chat session is often the more honest answer than a deeply-integrated agent. At least until the safety story matures.
 
 Chat assistants are the "bring this one thing to the AI" model. Workspace agents are the "give the AI access to everything" model. Those are different trust trades. Pick knowingly.
 
@@ -107,7 +107,7 @@ The engineering challenge, as the field keeps rediscovering, is that _maintainin
 
 This is the case I care about most, because it's my case. When you run a one-person operation, you wear strategy, execution, content, research, and customer hats all in one day. Switching between ChatGPT tabs for each role works — sort of — but you end up managing the tabs more than the work.
 
-The "everything in one surface" pitch from [agentic platforms](<https://slack.com/blog/productivity/best-agentic-ai-platforms-for-2026-what-they-are-and-how-to-choose-one>) actually delivers here, in a way that surprised me. Not because any single task got smarter. But because the _cost of starting_ each new kind of work dropped. The research I did yesterday is still there today. The draft I was editing didn't disappear into a chat log.
+The "everything in one surface" pitch from [agentic platforms](https://slack.com/blog/productivity/best-agentic-ai-platforms-for-2026-what-they-are-and-how-to-choose-one) actually delivers here, in a way that surprised me. Not because any single task got smarter. But because the _cost of starting_ each new kind of work dropped. The research I did yesterday is still there today. The draft I was editing didn't disappear into a chat log.
 
 ## What neither does well yet
 
@@ -141,13 +141,13 @@ I'll update this if I change my mind. I've changed it before.
 
 **Previous Posts:**
 
-→ [Understand how AI workspace agents actually operate in real workflows](</blog/ai-workspace-agents>)
+→ [Understand how AI workspace agents actually operate in real workflows](/blog/ai-workspace-agents)
 
-→ [See the real difference between AI agents and chat assistants in practice](</blog/ai-agent-vs-ai-assistant>)
+→ [See the real difference between AI agents and chat assistants in practice](/blog/ai-agent-vs-ai-assistant)
 
-→ [Learn how solo operators are using AI agents to scale their work in 2026](</blog/ai-agents-2026-solo-operators>)
+→ [Learn how solo operators are using AI agents to scale their work in 2026](/blog/ai-agents-2026-solo-operators)
 
-→ [Explore practical AI agent use cases across real workflows](</blog/ai-agent-use-cases-real-examples>)
+→ [Explore practical AI agent use cases across real workflows](/blog/ai-agent-use-cases-real-examples)
 
-→ [Discover how one-person businesses run like full teams using AI systems](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+→ [Discover how one-person businesses run like full teams using AI systems](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

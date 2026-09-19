@@ -15,7 +15,7 @@ Hi, I'm Nova. Today I will share some new things with you. I was setting up a ne
 
 I want to save you that rabbit hole.
 
-This isn't a tutorial. I'm not going to walk you through installation steps. What I _am_ going to do is share what I actually learned about whether **[Lark CLI](<https://www.larksuite.com/hc/en-US/articles/713812763675-clip-webpages-to-lark-docs>)** is worth building with — especially if you're running things solo.
+This isn't a tutorial. I'm not going to walk you through installation steps. What I _am_ going to do is share what I actually learned about whether **[Lark CLI](https://www.larksuite.com/hc/en-US/articles/713812763675-clip-webpages-to-lark-docs)** is worth building with — especially if you're running things solo.
 
 ![2.png](/blog/images/lark-cli-when-to-use-it/1774843305912-9bb85990-5ad4-4c3b-a3e1-d76e5a6a8abe.webp)
 
@@ -27,11 +27,11 @@ Lark CLI is a command-line tool for the Lark/Feishu Open Platform, covering core
 
 In plain terms: **it's a programmatic way to interact with your Lark workspace from a terminal or from an AI agent.** You can send messages, read documents, manage calendar events, query contacts — all via commands rather than clicking through the UI.
 
-There's also a related tool called ​[lark-mcp](<https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/quick-start-guides/quick-integration-with-openapi-mcp>)​, which wraps these same APIs as MCP (Model Context Protocol) tools, allowing AI assistants to directly call Lark interfaces and implement automation scenarios like document processing, conversation management, and calendar scheduling.
+There's also a related tool called ​[lark-mcp](https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/quick-start-guides/quick-integration-with-openapi-mcp)​, which wraps these same APIs as MCP (Model Context Protocol) tools, allowing AI assistants to directly call Lark interfaces and implement automation scenarios like document processing, conversation management, and calendar scheduling.
 
 ### Who It Was Built For (Mostly Developers)
 
-Be honest with yourself here. This tooling is built for developers integrating Lark into larger systems — bots, internal apps, automated pipelines. The [official Lark Open Platform documentation](<https://open.larksuite.com/document/home/index?lang=en-US>) is thorough, but it assumes you're comfortable reading API reference docs and setting up credential flows.
+Be honest with yourself here. This tooling is built for developers integrating Lark into larger systems — bots, internal apps, automated pipelines. The [official Lark Open Platform documentation](https://open.larksuite.com/document/home/index?lang=en-US) is thorough, but it assumes you're comfortable reading API reference docs and setting up credential flows.
 
 If your mental model of "integration" is "drag this into that," **Lark ​CLI** ​**​ is probably not your tool.** But if you've built a webhook before, it might actually be approachable.
 
@@ -105,7 +105,7 @@ This isn't hypothetical. It's the pattern with any custom-built integration that
 
 ### You Have Consistent Dev Resources
 
-If you have a developer — even part-time — who can own this integration and has bandwidth to respond when things break, **Lark ​CLI** ​**​ is genuinely powerful.** The [GitHub repository for the official Lark CLI](<https://github.com/larksuite/cli>) is well-maintained, MIT licensed, and the 200+ commands cover almost every Lark use case you can think of.
+If you have a developer — even part-time — who can own this integration and has bandwidth to respond when things break, **Lark ​CLI** ​**​ is genuinely powerful.** The [GitHub repository for the official Lark CLI](https://github.com/larksuite/cli) is well-maintained, MIT licensed, and the 200+ commands cover almost every Lark use case you can think of.
 
 ### You Need Custom Deep Integrations No Tool Covers
 
@@ -157,7 +157,7 @@ If you're a solo operator and you want Lark to connect to your other tools, here
 
   2. **Zapier or Make** — slower and more opinionated, but you're not debugging token expiry at midnight
 
-  3. **AI tools with ​MCP** ​**​ support** — if you're already using an AI assistant that supports MCP, the [lark-mcp package on npm](<https://www.npmjs.com/package/@larksuiteoapi/lark-mcp>) is a middle path worth exploring — it's still technical, but designed for AI-assisted workflows rather than raw API scripting
+  3. **AI tools with ​MCP** ​**​ support** — if you're already using an AI assistant that supports MCP, the [lark-mcp package on npm](https://www.npmjs.com/package/@larksuiteoapi/lark-mcp) is a middle path worth exploring — it's still technical, but designed for AI-assisted workflows rather than raw API scripting
 
 And if you do decide to go the CLI route, start with **the official larksuite/cli on ​GitHub** rather than third-party forks. It's actively maintained and the issues list is a good signal of what real users are running into.
 
@@ -167,14 +167,14 @@ _Back to building things._
 
 ## Previous Posts:
 
-  1. **[Explore the pros and cons of building custom AI agents vs using pre-built platforms](</blog/ai-agent-vs-ai-assistant>)**
+  1. **[Explore the pros and cons of building custom AI agents vs using pre-built platforms](/blog/ai-agent-vs-ai-assistant)**
 
-  2. **[Learn more about Lark integrations and alternatives to build smarter workflows](</blog/how-to-build-an-ai-agent>)**
+  2. **[Learn more about Lark integrations and alternatives to build smarter workflows](/blog/how-to-build-an-ai-agent)**
 
-  3. **[Check out alternatives to Gumloop for your AI workspace needs](</blog/gumloop-alternatives-2026>)**
+  3. **[Check out alternatives to Gumloop for your AI workspace needs](/blog/gumloop-alternatives-2026)**
 
-  4. **[Discover the best AI agent development services for customized needs](</blog/ai-agent-development-services>)**
+  4. **[Discover the best AI agent development services for customized needs](/blog/ai-agent-development-services)**
 
-  5. **[Find out how workflow builders compare to AI workspaces for integrating tools like Lark](</blog/workflow-builder-vs-ai-workspace>)**
+  5. **[Find out how workflow builders compare to AI workspaces for integrating tools like Lark](/blog/workflow-builder-vs-ai-workspace)**
 
 

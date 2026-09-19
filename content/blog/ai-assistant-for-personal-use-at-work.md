@@ -25,13 +25,13 @@ Before anything else — what does your day actually look like? The right answer
 
 **If most of your time goes to admin tasks** — drafting emails, summarizing threads, pulling together reports, formatting documents — a general-purpose chat assistant handles this better than anything else. No connectors needed, no setup. Just paste the content and describe what you need.
 
-**If you do a lot of research** — reading dense documents, comparing options, synthesizing sources — you want something with a long context window. Models like Claude can now hold over 200K tokens in a single conversation (verified at [claude.com/pricing](<https://claude.com/pricing>) as of May 2026), meaning you can drop in an entire contract, a research paper, and three client briefs and work across them without losing thread. A [2025 study on AI at work](<https://www.knowledgeworker.com/en/blog/ai-in-the-workplace-in-2025>) found performance gains of 10–25% in research and writing tasks — the biggest factor was how consistently people used the tool, not which tool they used.
+**If you do a lot of research** — reading dense documents, comparing options, synthesizing sources — you want something with a long context window. Models like Claude can now hold over 200K tokens in a single conversation (verified at [claude.com/pricing](https://claude.com/pricing) as of May 2026), meaning you can drop in an entire contract, a research paper, and three client briefs and work across them without losing thread. A [2025 study on AI at work](https://www.knowledgeworker.com/en/blog/ai-in-the-workplace-in-2025) found performance gains of 10–25% in research and writing tasks — the biggest factor was how consistently people used the tool, not which tool they used.
 
 **If your work is client-facing** — proposals, briefs, communications that need to match a tone — the key question is whether the tool can hold and apply your voice. Projects with persistent context do this better than fresh sessions every time.
 
 **If content creation is the core of your work** — articles, scripts, reports, social copy — I'd argue an AI assistant saves more time at the editing and structuring stage than the drafting stage. The tendency is to use it to generate. The actual gain is in getting from messy draft to clean output faster.
 
-**If you're heavy on planning** — quarterly reviews, project scoping, tracking decisions — the biggest win isn't generation, it's structured thinking. Asking an AI to play devil's advocate on a plan you've drafted, or to identify gaps in a project outline, changes the quality of what you ship. [Zapier's 2026 breakdown of AI personal assistants](<https://zapier.com/blog/ai-personal-assistant/>) puts it well: the tools that compound in value are the ones you use for judgment tasks, not just generation tasks.
+**If you're heavy on planning** — quarterly reviews, project scoping, tracking decisions — the biggest win isn't generation, it's structured thinking. Asking an AI to play devil's advocate on a plan you've drafted, or to identify gaps in a project outline, changes the quality of what you ship. [Zapier's 2026 breakdown of AI personal assistants](https://zapier.com/blog/ai-personal-assistant/) puts it well: the tools that compound in value are the ones you use for judgment tasks, not just generation tasks.
 
 ![f2.PNG](/blog/images/ai-assistant-for-personal-use-at-work/1778661949770-c56cb1e1-70b2-476e-8db8-b708769eb49a.webp)
 
@@ -55,9 +55,9 @@ Three delivery shapes, different tradeoffs. Not better or worse — different co
 
 ### Best fit by task depth and context needs
 
-**A web app or desktop app** (like Claude or ChatGPT) is where I'd start for most personal use. No browser dependency, works across tabs, and the experience is designed for multi-turn conversation rather than one-off lookups. If your work is document-heavy — writing, research, analysis — this is the right home base. The [Claude desktop app](<https://claude.com/download>) is available on Mac and Windows as of 2026, and syncs with your web sessions.
+**A web app or desktop app** (like Claude or ChatGPT) is where I'd start for most personal use. No browser dependency, works across tabs, and the experience is designed for multi-turn conversation rather than one-off lookups. If your work is document-heavy — writing, research, analysis — this is the right home base. The [Claude desktop app](https://claude.com/download) is available on Mac and Windows as of 2026, and syncs with your web sessions.
 
-**A browser extension** is the right pick when your work lives inside web apps you're already logged into — your CRM, a project management tool, internal dashboards. The tradeoff is context scope: extensions typically see what's on the current page. They're excellent for narrower, session-based tasks, but they're not the place to hold a month of project history. Anthropic's [Claude in Chrome guide](<https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome>) covers setup and what's available on each plan tier — worth reading before connecting anything. Start with an allowlist and keep it short.
+**A browser extension** is the right pick when your work lives inside web apps you're already logged into — your CRM, a project management tool, internal dashboards. The tradeoff is context scope: extensions typically see what's on the current page. They're excellent for narrower, session-based tasks, but they're not the place to hold a month of project history. Anthropic's [Claude in Chrome guide](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome) covers setup and what's available on each plan tier — worth reading before connecting anything. Start with an allowlist and keep it short.
 
 **A desktop AI workspace** is a category that's still maturing in 2026. The premise — AI that sits above your files, browser, and local apps and can coordinate across all of them — is right for solo operators with cross-app workflows. Think: read a PDF, pull something from a web page, draft in a doc, send via a connected service. If you're doing that kind of work regularly, this format has meaningful upside. The honest caveat: setup is heavier than an extension or web app, and the category is early enough that the tools vary significantly. Worth testing if the scenario fits, but not the starting point if you're new to this.
 
@@ -111,13 +111,13 @@ If you can't answer yes to at least two of those by day 7, the tool isn't the ri
 
 ### Previous Posts:
 
-  * If your AI assistant still feels like “a smarter search engine,” this is the workflow shift that usually changes everything: [Why AI forgets between sessions — and why context matters more than model quality](</blog/why-ai-forgets-between-sessions>)
+  * If your AI assistant still feels like “a smarter search engine,” this is the workflow shift that usually changes everything: [Why AI forgets between sessions — and why context matters more than model quality](/blog/why-ai-forgets-between-sessions)
 
-  * Most solo operators don’t actually need more AI tools — they need fewer places where context gets scattered: [Why your workflow feels fragmented: workspace agents for solo operators](</blog/workspace-agents-for-solo-operators>)
+  * Most solo operators don’t actually need more AI tools — they need fewer places where context gets scattered: [Why your workflow feels fragmented: workspace agents for solo operators](/blog/workspace-agents-for-solo-operators)
 
-  * Testing AI assistants? The real productivity gain usually comes from workflow fit, not from switching to the newest model every month: [Meta Muse Spark vs GPT-5.4 for one-person companies](</blog/meta-muse-spark-one-person-company>)
+  * Testing AI assistants? The real productivity gain usually comes from workflow fit, not from switching to the newest model every month: [Meta Muse Spark vs GPT-5.4 for one-person companies](/blog/meta-muse-spark-one-person-company)
 
-  * If you’re deciding between a chat assistant and a workspace-style AI setup, this breakdown explains where each actually helps: [Workspace agents vs chat assistants](</blog/workspace-agents-vs-chat-assistants>)
+  * If you’re deciding between a chat assistant and a workspace-style AI setup, this breakdown explains where each actually helps: [Workspace agents vs chat assistants](/blog/workspace-agents-vs-chat-assistants)
 
-  * A practical guide to building an AI workflow that actually survives past the “trial week” stage for solo founders: [AI workflow for solo founders](</blog/ai-workflow-for-solo-founders>)
+  * A practical guide to building an AI workflow that actually survives past the “trial week” stage for solo founders: [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
 

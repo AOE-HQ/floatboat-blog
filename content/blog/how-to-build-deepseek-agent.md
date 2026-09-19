@@ -16,23 +16,23 @@ draft: false
 
   * The agent loop is the part most tutorials skip. You define tools, the model returns a tool call, your code executes it, you append the result as a `tool` role message, and you send the updated history back. Repeat until the model produces a final answer.
 
-  * If you are building a coding agent, you probably do not need to write this loop from scratch — tools like DeepSeek-TUI and Reasonix already implement it. But understanding the loop is essential for debugging, customizing, and building agents for non-coding tasks. For an overview of what types of DeepSeek Agents exist, see [What Is a DeepSeek Agent](</blog/what-is-deepseek-agent>).
+  * If you are building a coding agent, you probably do not need to write this loop from scratch — tools like DeepSeek-TUI and Reasonix already implement it. But understanding the loop is essential for debugging, customizing, and building agents for non-coding tasks. For an overview of what types of DeepSeek Agents exist, see [What Is a DeepSeek Agent](/blog/what-is-deepseek-agent).
 
   * This tutorial uses the OpenAI Python SDK (`pip install openai`) pointed at `https://api.deepseek.com`. The Node.js examples use the same SDK. If your code already calls OpenAI's API, the migration is a one-line base URL change.
 
 ## 1\. Before You Start: What You Need
 
-You need three things and about fifteen minutes. Of course, there is also the option of not building at all — tools like [Floatboat DeepSeek Agent](<https://deepseek-agent.com>) ship the agent loop, tool wiring, and a desktop workspace preconfigured, so you skip straight to using the agent rather than engineering one. This tutorial covers the DIY path for those who want full control over the tool surface or are building agents for domain-specific tasks that off-the-shelf clients do not cover.
+You need three things and about fifteen minutes. Of course, there is also the option of not building at all — tools like [Floatboat DeepSeek Agent](https://deepseek-agent.com) ship the agent loop, tool wiring, and a desktop workspace preconfigured, so you skip straight to using the agent rather than engineering one. This tutorial covers the DIY path for those who want full control over the tool surface or are building agents for domain-specific tasks that off-the-shelf clients do not cover.
 
 A Python environment — Python 3.10 or later with `pip` installed, or Node.js 18 or later. The OpenAI SDK (`pip install openai` or `npm install openai`) handles the API communication. DeepSeek's API is fully OpenAI-compatible at the wire level, so no specialized SDK is required.
 
-A terminal and a text editor. The agent loop examples in this tutorial are under fifty lines each. You can type them into a single file and run it from the command line. If you want to see the full picture before building, [What Is a DeepSeek Agent](</blog/what-is-deepseek-agent>) maps out the four archetypes and helps you decide whether you even need a custom agent or should use an existing tool.
+A terminal and a text editor. The agent loop examples in this tutorial are under fifty lines each. You can type them into a single file and run it from the command line. If you want to see the full picture before building, [What Is a DeepSeek Agent](/blog/what-is-deepseek-agent) maps out the four archetypes and helps you decide whether you even need a custom agent or should use an existing tool.
 
 A DeepSeek API key. The next section walks through getting one. If you already have a key, skip to Step 2.
 
 ## 2\. Step 1: Get Your DeepSeek API Key
 
-Go to [platform.deepseek.com](<https://platform.deepseek.com>) and sign up. After logging in, navigate to the API Keys section and create a new key. DeepSeek requires a minimum top-up before the key becomes active — typically $5 to $10, which is enough for tens of thousands of agent turns at V4 Flash pricing.
+Go to [platform.deepseek.com](https://platform.deepseek.com) and sign up. After logging in, navigate to the API Keys section and create a new key. DeepSeek requires a minimum top-up before the key becomes active — typically $5 to $10, which is enough for tens of thousands of agent turns at V4 Flash pricing.
 
 Store the key as an environment variable. Do not hard-code it in your source files.
     
@@ -61,7 +61,7 @@ Once the key is set, verify it works with a minimal chat completion. This call c
 
 If you see a response identifying itself as DeepSeek V4, the key works. If you get an authentication error, double-check that your account has an active top-up — an empty balance returns a 401 even if the key is valid.
 
-A warning about legacy model names: as of July 24, 2026, `deepseek-chat` and `deepseek-reasoner` are inaccessible. If your code references either alias, replace them with `deepseek-v4-flash` (with thinking mode explicitly enabled or disabled via the API parameter). Applications that still use the old names will receive errors, as documented in [DeepSeek's API documentation](<https://api-docs.deepseek.com>).
+A warning about legacy model names: as of July 24, 2026, `deepseek-chat` and `deepseek-reasoner` are inaccessible. If your code references either alias, replace them with `deepseek-v4-flash` (with thinking mode explicitly enabled or disabled via the API parameter). Applications that still use the old names will receive errors, as documented in [DeepSeek's API documentation](https://api-docs.deepseek.com).
 
 ## 3\. Step 2: Choose Your Model — V4 Pro or V4 Flash
 
@@ -73,7 +73,7 @@ DeepSeek offers two models through the API, and the choice matters for agent per
 
 
 
-For an agent that makes dozens or hundreds of API calls per task, the price gap compounds quickly. A single agent run that burns 80,000 input tokens and 20,000 output tokens costs roughly $0.052 on V4 Pro and $0.017 on V4 Flash. Five thousand such tasks per month: $260 versus $85, as priced on [DeepSeek's pricing page](<https://api-docs.deepseek.com/quick_start/pricing>).
+For an agent that makes dozens or hundreds of API calls per task, the price gap compounds quickly. A single agent run that burns 80,000 input tokens and 20,000 output tokens costs roughly $0.052 on V4 Pro and $0.017 on V4 Flash. Five thousand such tasks per month: $260 versus $85, as priced on [DeepSeek's pricing page](https://api-docs.deepseek.com/quick_start/pricing).
 
 The practical rule that has emerged from developer discussions in mid-2026: default to V4 Flash for the agent loop, and promote individual turns to V4 Pro when the model's response quality matters — typically the planning step at the start of a task and the synthesis step at the end. The two models share the same API surface, so the promotion is a single-line model name change.
 
@@ -198,7 +198,7 @@ The rest of the loop — tools definition, `tool_calls` inspection, tool executi
 
 A note on model choice within the loop: if your task requires planning (the model needs to think about which tools to call in which order), swap `deepseek-v4-flash` for `deepseek-v4-pro` on the first call. Once the plan is established, the subsequent tool execution and synthesis turns can stay on Flash. The model name is a string — you can change it per turn.
 
-Once your agent loop is solid, the next step is refining how it calls tools — [DeepSeek Agent Function Calling](</blog/deepseek-agent-function-calling>) covers strict mode, 128 parallel calls, and MCP integration for scaling beyond a single-tool agent.
+Once your agent loop is solid, the next step is refining how it calls tools — [DeepSeek Agent Function Calling](/blog/deepseek-agent-function-calling) covers strict mode, 128 parallel calls, and MCP integration for scaling beyond a single-tool agent.
 
 ## 5\. Adding Thinking Mode: When Reasoning Matters
 
@@ -229,7 +229,7 @@ When thinking mode is enabled, the model returns its reasoning in a `reasoning_c
 
 The cost trade-off: thinking mode consumes additional output tokens for the reasoning chain, and those tokens are billed at the same rate as regular output. A `reasoning_effort: "high"` call might produce 500 extra reasoning tokens before the final 100-token answer — that is an additional $0.00014 on V4 Flash or $0.00044 on V4 Pro. For agent loops that run hundreds of turns, enable thinking only on the planning turns where the reasoning adds measurable value. The rest of the loop — executing tools, processing results — does not benefit from chain-of-thought.
 
-One common gotcha: if you are using strict mode (`"strict": true` on your function definitions via the `/beta` endpoint), thinking mode must use `"type": "enabled"` (not `"type": "thinking"`). The parameter changed between V3 and V4, and older tutorials may reference the deprecated format, as documented in [DeepSeek's function calling guide](<https://api-docs.deepseek.com/guides/function_calling>).
+One common gotcha: if you are using strict mode (`"strict": true` on your function definitions via the `/beta` endpoint), thinking mode must use `"type": "enabled"` (not `"type": "thinking"`). The parameter changed between V3 and V4, and older tutorials may reference the deprecated format, as documented in [DeepSeek's function calling guide](https://api-docs.deepseek.com/guides/function_calling).
 
 ## 6\. From Demo to Production: Error Handling and Repair
 

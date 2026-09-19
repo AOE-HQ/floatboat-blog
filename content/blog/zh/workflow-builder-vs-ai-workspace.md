@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-嗨，我是 Nova。[Workflow Builder](<https://www.ibm.com/docs/en/tap/5.0.0?topic=building-workflow-builder>) 对比 [AI Workspace](<https://workspace.google.com/intl/en/solutions/ai/>)——我一直在跟一个正在搭建单人咨询业务的朋友解释这个区别。她不停地问：「那我到底需要哪一个？」老实说，在花了几个月把这两类都测过之后，我觉得这种困惑完全合理——营销话术把它们说得几乎一模一样。但它们根本不是一回事。
+嗨，我是 Nova。[Workflow Builder](https://www.ibm.com/docs/en/tap/5.0.0?topic=building-workflow-builder) 对比 [AI Workspace](https://workspace.google.com/intl/en/solutions/ai/)——我一直在跟一个正在搭建单人咨询业务的朋友解释这个区别。她不停地问：「那我到底需要哪一个？」老实说，在花了几个月把这两类都测过之后，我觉得这种困惑完全合理——营销话术把它们说得几乎一模一样。但它们根本不是一回事。
 
 ## 对「AI 该怎么为你工作」的两种不同押注
 
@@ -63,7 +63,7 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 
 ### 你想一次性搭好、一直跑下去
 
-「设好就忘」的吸引力是真实的。一条搭好的 [AI 工作流自动化](<https://www.gumloop.com/blog/best-ai-workflow-automation-tools>) 能处理几百条记录而不用你碰一下。搭建投入换来复利回报，这正是它的全部价值主张。
+「设好就忘」的吸引力是真实的。一条搭好的 [AI 工作流自动化](https://www.gumloop.com/blog/best-ai-workflow-automation-tools) 能处理几百条记录而不用你碰一下。搭建投入换来复利回报，这正是它的全部价值主张。
 
 ![4.png](/blog/images/workflow-builder-vs-ai-workspace/1774257892796-e5f43e6e-603f-40f8-a9e4-7ab580a72b2d.webp)
 
@@ -83,7 +83,7 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 
 ### 你想捕捉「你怎么工作」，而不只是「你做什么」
 
-这是最哲学化的区别，但在实践上很重要。按 [Slack 对 AI 采用的研究](<https://slack.com/blog/productivity/9-best-ai-automation-tools-to-automate-tasks-and-streamline-workflows>)，把 AI 建进真实日常工作流——而不只是自动化栈——的公司，其办公人员长期展现出显著更高的生产力增益。一个懂你上下文的 AI 带来的复利，和一条在后台跑的管线的复利，不是一回事。
+这是最哲学化的区别，但在实践上很重要。按 [Slack 对 AI 采用的研究](https://slack.com/blog/productivity/9-best-ai-automation-tools-to-automate-tasks-and-streamline-workflows)，把 AI 建进真实日常工作流——而不只是自动化栈——的公司，其办公人员长期展现出显著更高的生产力增益。一个懂你上下文的 AI 带来的复利，和一条在后台跑的管线的复利，不是一回事。
 
 ![5.png](/blog/images/workflow-builder-vs-ai-workspace/1774257902156-51b38b33-6c07-46d7-8c17-cbdc9b13eea8.webp)
 
@@ -95,7 +95,7 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 
 **AI 工作区**在规模与可靠性上吃力。它们很擅长理解上下文——但不擅长把同一个流程不带偏差地跑 500 遍。当你真正需要一个确定性的东西「就是能跑」时，它们会显得「软」。
 
-正如 [The Digital Project Manager 对 AI 工作流工具的评测](<https://thedigitalprojectmanager.com/tools/best-ai-workflow-tools/>)所说，最好的配置常常是两者结合——工作区管思考和上下文，构建器管可重复的输出层。那是更贵、更复杂的栈，但它对每款工具真正干什么很诚实。
+正如 [The Digital Project Manager 对 AI 工作流工具的评测](https://thedigitalprojectmanager.com/tools/best-ai-workflow-tools/)所说，最好的配置常常是两者结合——工作区管思考和上下文，构建器管可重复的输出层。那是更贵、更复杂的栈，但它对每款工具真正干什么很诚实。
 
 ## 怎么决定
 
@@ -107,19 +107,19 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 
   3. 六个月后谁来维护这套东西？AI 工作流构建器能加速交付，让团队不用等漫长的开发周期就能测试和上线工作流——但还是得有人拥有那些流程。如果那个人是你、而你已经分身乏术，就把这笔维护成本算进决策。
 
-对很多单人创业者来说，诚实的答案是：**从工作区开始，再为你那些确实重复的具体任务加上工作流自动化。**在你确定工作的哪些部分稳定到可以自动化之前，别先把整套运营栈搭起来。按 [Cybernews 对 AI 工作流构建器的拆解](<https://cybernews.com/ai-tools/best-ai-workflow-builder/>)，即便在技术上很熟练的用户里，最常见的错误也是为还没稳定的工作过度设计自动化。
+对很多单人创业者来说，诚实的答案是：**从工作区开始，再为你那些确实重复的具体任务加上工作流自动化。**在你确定工作的哪些部分稳定到可以自动化之前，别先把整套运营栈搭起来。按 [Cybernews 对 AI 工作流构建器的拆解](https://cybernews.com/ai-tools/best-ai-workflow-builder/)，即便在技术上很熟练的用户里，最常见的错误也是为还没稳定的工作过度设计自动化。
 
 ![951dc46e1378298d1b3f45aec0389fdb.png](/blog/images/workflow-builder-vs-ai-workspace/1774257973478-6bef8d1b-c0ba-46fa-a07a-7c52cae854a7.webp)
 
 ## 延伸阅读
 
-  * [对比 Lindy 和 Gumloop 在构建 Agent 式工作流上的差异。](</blog/lindy-vs-gumloop>)
+  * [对比 Lindy 和 Gumloop 在构建 Agent 式工作流上的差异。](/blog/lindy-vs-gumloop)
 
-  * [探索研究、内容与运营中的真实 AI Agent 用例。](</blog/ai-agent-use-cases-real-examples>)
+  * [探索研究、内容与运营中的真实 AI Agent 用例。](/blog/ai-agent-use-cases-real-examples)
 
-  * [看看一人公司如何用 AI 角色开始像一支完整团队一样运转。](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [看看一人公司如何用 AI 角色开始像一支完整团队一样运转。](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [了解 AI 自动化工作在真实市场里是怎么定价的。](</blog/ai-automation-agency-pricing>)
+  * [了解 AI 自动化工作在真实市场里是怎么定价的。](/blog/ai-automation-agency-pricing)
 
-  * [理解真实工作流里 AI Agent 与 AI 助手的区别。](</blog/ai-agent-vs-ai-assistant>)
+  * [理解真实工作流里 AI Agent 与 AI 助手的区别。](/blog/ai-agent-vs-ai-assistant)
 

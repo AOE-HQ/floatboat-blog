@@ -23,7 +23,7 @@ draft: false
 
 一人公司不是「真公司」的缩小版，而是另一种形态。五个人团队里有分工——做内容的人做内容、做运营的人做运营、交接是正式的。在一人公司里，这一切都在同一个脑袋里，而角色之间的切换成本才是真正的瓶颈。你丢时间，不是丢在**做**工作上，而是丢在模式之间来回切换上。
 
-这个品类周边的数据已经让人没法无视。[单人创始的初创公司占比从 2019 年的 23.7% 跳到 2025 年年中的 36.3%](<https://entrepreneurloop.com/ai-tools-to-scale-solo-business/>)，而近几年美国注册的新企业里，多数是没有雇员的主体。所以这不再是边缘模式——它已经是当下大量工作被组织起来的方式。可工具，仍然大多是为团队设计的。
+这个品类周边的数据已经让人没法无视。[单人创始的初创公司占比从 2019 年的 23.7% 跳到 2025 年年中的 36.3%](https://entrepreneurloop.com/ai-tools-to-scale-solo-business/)，而近几年美国注册的新企业里，多数是没有雇员的主体。所以这不再是边缘模式——它已经是当下大量工作被组织起来的方式。可工具，仍然大多是为团队设计的。
 
 ![2.PNG](/blog/images/workspace-agents-for-solo-operators/1777428173310-7b5fd1f2-256f-4ae9-ae61-30ec52fe5316.webp)
 
@@ -39,7 +39,7 @@ draft: false
 
 ### 每次新开聊天，上下文就重置
 
-你跟模型做完一场策略讨论、关掉标签页，第二天早上又回到「让我先解释一下我在做什么」。上下文窗口确实在变大——**Claude、ChatGPT 和 Gemini 现在都能处理很长的对话——但窗口只是临时工作区，不是记忆**。Hindsight 的工程团队[把这一区别说得一针见血](<https://hindsight.vectorize.io/blog/2026/04/23/your-agent-is-not-forgetful>)：更大的上下文窗口只是「把痛苦推迟，并没有移除底层限制」。
+你跟模型做完一场策略讨论、关掉标签页，第二天早上又回到「让我先解释一下我在做什么」。上下文窗口确实在变大——**Claude、ChatGPT 和 Gemini 现在都能处理很长的对话——但窗口只是临时工作区，不是记忆**。Hindsight 的工程团队[把这一区别说得一针见血](https://hindsight.vectorize.io/blog/2026/04/23/your-agent-is-not-forgetful)：更大的上下文窗口只是「把痛苦推迟，并没有移除底层限制」。
 
 对单人经营者，这件事比团队更重要。团队有共享文档、共享 Slack、人人都在吸收的周边上下文。你没有这些——你**就是**那个共享上下文。当你的工具忘记，重建上下文的税就完全落在你身上。
 
@@ -47,7 +47,7 @@ draft: false
 
 这是最让我恼火的一条。你花一个下午在聊天工具里教它你如何写作、你不说什么、你的客户是谁。产出变得精准。你把它交付了。第二天，在新聊天里，全没了。
 
-有些工具推出了持久记忆功能，但实现仍参差不齐——多数把记忆压成几千 token 的摘要，[而不是你真实工作方式的完整颗粒度](<https://www.jenova.ai/en/resources/ai-chat-with-memory>)。我在一个聊天会话里投入许多小时、看着它产出我真喜欢的东西，然后开一个新会话、同一个问题得到的却是泛泛的回复。_老实说？那个落差，正是单人经营者感到最失望的地方。_不是模型笨，而是关于你具体运营的一切，什么都不会留存。
+有些工具推出了持久记忆功能，但实现仍参差不齐——多数把记忆压成几千 token 的摘要，[而不是你真实工作方式的完整颗粒度](https://www.jenova.ai/en/resources/ai-chat-with-memory)。我在一个聊天会话里投入许多小时、看着它产出我真喜欢的东西，然后开一个新会话、同一个问题得到的却是泛泛的回复。_老实说？那个落差，正是单人经营者感到最失望的地方。_不是模型笨，而是关于你具体运营的一切，什么都不会留存。
 
 ![3.PNG](/blog/images/workspace-agents-for-solo-operators/1777428186112-2d4d23d5-4206-474e-8316-d55b7b5e4726.webp)
 
@@ -57,7 +57,7 @@ draft: false
 
 ### 混杂的、重判断的工作装不进节点
 
-你一个典型的周二：调研一个潜客、改一篇稿子、回复一个客户问题、对一笔发票、回应一个播客邀约、收尾一份提案。这些没有一件是「每次 X 就做 Y」。它们是需要判断的一次性任务。**工作流搭建器是敲钉子的锤子；单人经营者的一天大多是螺丝。**正如 [Anthropic 研究团队在 Agent 设计指南里所说](<https://www.anthropic.com/research/building-effective-agents>)，工作流适合「定义清晰的任务」——而坦率讲，多数单人工作不是。
+你一个典型的周二：调研一个潜客、改一篇稿子、回复一个客户问题、对一笔发票、回应一个播客邀约、收尾一份提案。这些没有一件是「每次 X 就做 Y」。它们是需要判断的一次性任务。**工作流搭建器是敲钉子的锤子；单人经营者的一天大多是螺丝。**正如 [Anthropic 研究团队在 Agent 设计指南里所说](https://www.anthropic.com/research/building-effective-agents)，工作流适合「定义清晰的任务」——而坦率讲，多数单人工作不是。
 
 ### 搭建成本是第二份工作
 
@@ -79,7 +79,7 @@ draft: false
 
 ### 可复用的执行，而不是重复的提示
 
-「每次请 AI 做某件事」和「把一份工作固化成代码、下次不靠你重新提示就能以同样的方式跑」是两回事。Anthropic 工程团队[把这描述得很漂亮](<https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents>)：从「为你的提示词找到正确的措辞」，转向「配置最可能激发出期望行为的上下文」。那句话听着很技术，但面向用户的版本是：_教一次，反复用。_
+「每次请 AI 做某件事」和「把一份工作固化成代码、下次不靠你重新提示就能以同样的方式跑」是两回事。Anthropic 工程团队[把这描述得很漂亮](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)：从「为你的提示词找到正确的措辞」，转向「配置最可能激发出期望行为的上下文」。那句话听着很技术，但面向用户的版本是：_教一次，反复用。_
 
 在实践中，这是单人工作中真正复利的部分。你搭一小段执行——一种处理 incoming 客户 brief 的方式、一种起草销售跟进的方式、一种把一次播客出场变成三份内容的方式。每一段都从「一件全新任务」变成「基础设施」。**第一个月感觉慢。到第三个月，它开始感觉像杠杆。**
 
@@ -87,7 +87,7 @@ draft: false
 
 单人经营者也没时间做的另一件事，是把自己的工作迁移到别处。适配这类人群的 Agent，读取你现有的文件、在你现有的浏览器里工作、和你已经付过费的工具交互。不是「把所有东西导入我们的新平台」，更像是「盖在你已经在做的工作之上的一层智能」。
 
-这是[单人创始人崛起与 Agentic AI 崛起之间较干净的对齐点之一](<https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025>)——Gartner 预计到 2026 年底，40% 的企业应用将嵌入任务专用 Agent，而面向消费者与经营者的那一波，才刚刚开始落地。
+这是[单人创始人崛起与 Agentic AI 崛起之间较干净的对齐点之一](https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025)——Gartner 预计到 2026 年底，40% 的企业应用将嵌入任务专用 Agent，而面向消费者与经营者的那一波，才刚刚开始落地。
 
 ## 它仍然不会替你做的事
 
@@ -125,19 +125,19 @@ draft: false
 
   * 你的工作确实是高量、可重复的（工作流搭建器更合适）
 
-  * 你在强监管行业——金融、法律、医疗——在缺乏强力人工复核时，[判断层没法交给 Agent 中介](<https://www.atomicwork.com/blog/ai-agents-vs-ai-automation>)
+  * 你在强监管行业——金融、法律、医疗——在缺乏强力人工复核时，[判断层没法交给 Agent 中介](https://www.atomicwork.com/blog/ai-agents-vs-ai-automation)
 
 这就是我的落脚点。一人公司正在成为工作的默认形态之一，而工具终于开始朝这个形态弯过去。你今年采纳还是明年采纳，也许没那么重要；重要的是你对这个品类如何演化保持警觉。当对的工具为你的具体运营「咔哒」一声合上时，你会知道的。在那之前——保持工具栈精简、把判断权留给自己，别信任何告诉你「Agent 什么都能干」的人。它不能。但它也许能多做一点，好把一个周二还给你。
 
 ## 往期文章：
 
-  * [如果你还在琢磨 AI 如何融入单人工作，这份指南拆解了一人经营者的 AI Agent](</blog/ai-agents-2026-solo-operators>)
+  * [如果你还在琢磨 AI 如何融入单人工作，这份指南拆解了一人经营者的 AI Agent](/blog/ai-agents-2026-solo-operators)
 
-  * [正在为 AI「忘记」你的上下文而头疼？这篇解释它为什么会在会话之间发生](</blog/why-ai-forgets-every-session>)
+  * [正在为 AI「忘记」你的上下文而头疼？这篇解释它为什么会在会话之间发生](/blog/why-ai-forgets-every-session)
 
-  * [不知道怎么真正独自放大产能？看看一人企业如何借 AI 像团队一样运作](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [不知道怎么真正独自放大产能？看看一人企业如何借 AI 像团队一样运作](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [如果你在对比工具，这篇能帮你厘清 AI 工作区与工作流搭建器的差异](</blog/workflow-builder-vs-ai-workspace>)
+  * [如果你在对比工具，这篇能帮你厘清 AI 工作区与工作流搭建器的差异](/blog/workflow-builder-vs-ai-workspace)
 
-  * [想再深入一点，这篇解释持久化 AI Agent 到底是什么](</blog/what-is-persistent-ai-agent>)
+  * [想再深入一点，这篇解释持久化 AI Agent 到底是什么](/blog/what-is-persistent-ai-agent)
 

@@ -23,7 +23,7 @@ On April 6, 2026, OpenAI published a policy document titled _"Industrial Policy 
 
 As reported by Quartz, OpenAI called for government-backed experiments with 32-hour schedules that maintain current pay levels — framing reduced hours as an "efficiency dividend," converting AI-driven productivity gains into time back for workers rather than purely into corporate margins.
 
-[TechCrunch's coverage of the OpenAI policy document](<https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/>) flagged something worth noting: OpenAI frames these as corporate responsibilities, not government guarantees. The company building the automation is suggesting the companies using that automation should absorb the transition costs. That's a notable framing choice for an $852 billion business approaching an IPO.
+[TechCrunch's coverage of the OpenAI policy document](https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/) flagged something worth noting: OpenAI frames these as corporate responsibilities, not government guarantees. The company building the automation is suggesting the companies using that automation should absorb the transition costs. That's a notable framing choice for an $852 billion business approaching an IPO.
 
 I could be wrong here, but reading the document as pure altruism feels generous. Reading it as pure cynicism feels too easy. The honest version is probably: they see disruption coming and they're trying to shape the policy conversation before someone else does.
 
@@ -31,7 +31,7 @@ I could be wrong here, but reading the document as pure altruism feels generous.
 
 The embedded assumption in the four-day work week proposal is significant: **AI will make knowledge workers productive enough that five days of output can fit into four.** That's the premise. The efficiency gains are real, the reasoning goes — the question is who captures them.
 
-As [Unite.AI](<http://Unite.AI>) summarized the proposal, OpenAI suggests governments incentivize employers to pilot 32-hour working weeks tied to productivity gains from AI adoption — framing it as workers receiving a share of the value AI creates, rather than that value flowing entirely to shareholders.
+As [Unite.AI](http://Unite.AI) summarized the proposal, OpenAI suggests governments incentivize employers to pilot 32-hour working weeks tied to productivity gains from AI adoption — framing it as workers receiving a share of the value AI creates, rather than that value flowing entirely to shareholders.
 
 Wait — that framing is actually interesting. Whether you believe it or not, it's forcing a public conversation about a question most companies haven't answered: when AI makes your team twice as productive, where does that efficiency go?
 
@@ -61,7 +61,7 @@ The four-day week conversation matters for solo founders not because of labor po
 
 The broader policy package is worth understanding even if you're not a policy person. The robot tax proposal — taxing automated labor at rates comparable to the human workers it replaces — would, if enacted, change the economics of AI adoption for businesses of all sizes.
 
-As The[ Next Web reported](<https://thenextweb.com/news/openai-robot-taxes-wealth-fund-superintelligence-policy>), OpenAI's "Industrial Policy for the Intelligence Age" proposes shifting the tax base from payroll and labor income toward corporate income, capital gains, and taxes on automated labor — with the reasoning that as AI expands corporate profits while automating wage labor, the tax base funding Social Security, Medicaid, and SNAP would otherwise erode.
+As The[ Next Web reported](https://thenextweb.com/news/openai-robot-taxes-wealth-fund-superintelligence-policy), OpenAI's "Industrial Policy for the Intelligence Age" proposes shifting the tax base from payroll and labor income toward corporate income, capital gains, and taxes on automated labor — with the reasoning that as AI expands corporate profits while automating wage labor, the tax base funding Social Security, Medicaid, and SNAP would otherwise erode.
 
 This is a structural argument, not just a political one. And the underlying math is real: if enough jobs get automated, the employment-based tax revenue that funds public programs shrinks, regardless of how you feel about the politics.
 
@@ -79,7 +79,7 @@ I don't have a clean answer here. I use AI tools because they make my work bette
 
 The four-day work week conversation is really a conversation about sustainable output. And the question that actually matters for solo operators isn't "can I work four days?" — it's "can I structure my work so that output stays consistent without the wheels coming off?"
 
-[Research published in MIT Sloan Management Review](<https://sloanreview.mit.edu/article/the-surprising-viability-of-the-four-day-workweek/>) studied 245 organizations that implemented four-day weeks, finding that companies using the "100-80-100" model — 100% pay, 80% hours, 100% productivity — reported steady or improved output alongside significant well-being improvements. The mechanism, researchers found, wasn't working harder in fewer hours. It was reorganizing how work happened.
+[Research published in MIT Sloan Management Review](https://sloanreview.mit.edu/article/the-surprising-viability-of-the-four-day-workweek/) studied 245 organizations that implemented four-day weeks, finding that companies using the "100-80-100" model — 100% pay, 80% hours, 100% productivity — reported steady or improved output alongside significant well-being improvements. The mechanism, researchers found, wasn't working harder in fewer hours. It was reorganizing how work happened.
 
 That reorganization piece is exactly where AI tools can help — and where most people underuse them. It's not about replacing work. It's about changing which tasks need your brain and which ones can run on autopilot.
 
@@ -93,7 +93,7 @@ Researcher Juliet Schor, who studied over 8,700 workers across four-day week pil
 
 The burnout risk for solo founders specifically is different from what large-scale studies capture. When you're the only person in the business, there's no organizational slack to absorb overload. AI can expand your capacity, but it can't create boundaries for you. I've had weeks where AI made me more productive and I just filled that productivity with more work — and ended up more tired, not less.
 
-[The APA's research on the four-day workweek](<https://www.apa.org/monitor/2025/01/rise-of-4-day-workweek>) flagged something worth noting: about 80% of workers reported they'd be happier and just as effective with a four-day week — but the research also found that the gains can fade over time as the novelty wears off and intensity increases to compensate. **The tool doesn't create sustainability. The system does.**
+[The APA's research on the four-day workweek](https://www.apa.org/monitor/2025/01/rise-of-4-day-workweek) flagged something worth noting: about 80% of workers reported they'd be happier and just as effective with a four-day week — but the research also found that the gains can fade over time as the novelty wears off and intensity increases to compensate. **The tool doesn't create sustainability. The system does.**
 
 For solo operators, that system usually means having clear stopping criteria — knowing what "done" looks like before you start — and not treating AI-freed time as permission to take on more projects.
 
@@ -107,13 +107,13 @@ The four-day week is a nice idea. The more achievable version, for people like m
 
 ## Previous Posts:
 
-  * [Learn why AI still resets every session and what that means for your workflow](</blog/why-ai-forgets-between-sessions>)
+  * [Learn why AI still resets every session and what that means for your workflow](/blog/why-ai-forgets-between-sessions)
 
-  * [See what an AI workflow for solo founders actually looks like in practice](</blog/ai-workflow-for-solo-founders>)
+  * [See what an AI workflow for solo founders actually looks like in practice](/blog/ai-workflow-for-solo-founders)
 
-  * [Understand how one-person businesses operate like a full team with AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [Understand how one-person businesses operate like a full team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [Explore the difference between AI assistants and real AI agents](</blog/ai-agent-vs-ai-assistant>)
+  * [Explore the difference between AI assistants and real AI agents](/blog/ai-agent-vs-ai-assistant)
 
-  * [Go deeper into what a persistent AI agent means for long-term productivity](</blog/what-is-persistent-ai-agent>)
+  * [Go deeper into what a persistent AI agent means for long-term productivity](/blog/what-is-persistent-ai-agent)
 

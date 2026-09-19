@@ -23,7 +23,7 @@ draft: false
 
 如果你一直在关注 AI 圈，会记得 Llama 4 在 2025 年 4 月口碑不佳——当时有可信的指控称，它用未发布的模型变体注水了基准成绩。Meta 用之后九个月把整个技术栈推倒重建。
 
-我用它大约一周了。第一个注意到的事：它没有试图做最聪明的模型。它试图做高效的模型——够快、能力够用、并整合进 Meta 的产品生态。Meta 在他们[官方发布文](<https://ai.meta.com/blog/introducing-muse-spark-msl/>)里也是这么说的，还坦率承认在长程 agentic 工作和编码上存在差距。
+我用它大约一周了。第一个注意到的事：它没有试图做最聪明的模型。它试图做高效的模型——够快、能力够用、并整合进 Meta 的产品生态。Meta 在他们[官方发布文](https://ai.meta.com/blog/introducing-muse-spark-msl/)里也是这么说的，还坦率承认在长程 agentic 工作和编码上存在差距。
 
 ![2.PNG](/blog/images/meta-muse-spark-one-person-company/1777599405250-c43737fd-78b5-4c59-953b-504703a01a0f.webp)
 
@@ -31,7 +31,7 @@ draft: false
 
 这一点容易把人绕晕，所以我直说。
 
-Llama 4 是开放权重的——你可以下载下来自己跑。**Muse Spark 是闭源的。**目前只能通过 [meta.ai](<http://meta.ai>) 和 Meta AI 应用访问，API 访问只向特定合作伙伴开放。Meta 说他们"希望"未来开源 Muse 系列模型，但没有时间表。
+Llama 4 是开放权重的——你可以下载下来自己跑。**Muse Spark 是闭源的。**目前只能通过 [meta.ai](http://meta.ai) 和 Meta AI 应用访问，API 访问只向特定合作伙伴开放。Meta 说他们"希望"未来开源 Muse 系列模型，但没有时间表。
 
 技术层面，Meta 声称**Muse Spark 用不到 Llama 4 Maverick 十分之一的算力，就达到了与之相当的能力**。这是 Meta 的说法，还没有被独立验证。我先把它归档到"有点意思，等确认"这一栏。
 
@@ -61,7 +61,7 @@ Llama 4 是开放权重的——你可以下载下来自己跑。**Muse Spark �
 
 **在 Terminal-Bench Hard 上，Muse Spark 落后于 GPT-5.4 和 Claude Sonnet 4.6。**在 GDPval-AA——真实工作任务基准——上，它拿 1,427 ELO，而 Claude Sonnet 4.6 是 1,648。这不是小差距。
 
-[OpenAI 的发布公告](<https://openai.com/index/introducing-gpt-5-4/>)里有一个值得单独拎出来的点：**GPT-5.4 在 OSWorld-Verified（computer-use 基准）上拿到 75%，而 GPT-5.2 是 47.3%。**对 computer-use 这个细分能力来说，这是跨代级的跃升。我测跨应用工作流——让模型在浏览器、表格和文档之间切换——时，GPT-5.4 端到端的可靠性明显更高。
+[OpenAI 的发布公告](https://openai.com/index/introducing-gpt-5-4/)里有一个值得单独拎出来的点：**GPT-5.4 在 OSWorld-Verified（computer-use 基准）上拿到 75%，而 GPT-5.2 是 47.3%。**对 computer-use 这个细分能力来说，这是跨代级的跃升。我测跨应用工作流——让模型在浏览器、表格和文档之间切换——时，GPT-5.4 端到端的可靠性明显更高。
 
 还有一点：**GPT-5.4 单条回答的事实性错误概率比 GPT-5.2 低 33%。**这个数字我无法独立验证，但日常使用中我确实注意到幻觉变少了。
 
@@ -83,7 +83,7 @@ GPT-5.4 发布时，我干了一件有点蠢的事。我花了一整个周末重
 
 从那以后我想了很多。我现在的看法是：**对一人公司来说，模型升级带来的边际收益，远小于打磨工作流本身带来的收益。**
 
-[TechCrunch 对 Muse Spark 的报道](<https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/>)引用了扎克伯格的话，说 Meta 想构建"替你做事的那种 Agent"。这听起来像营销文案，但它其实指向了真正的问题：**改变你产出的不是模型变聪明了——而是你有没有把它接到你真正做的那些具体工作上。**
+[TechCrunch 对 Muse Spark 的报道](https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/)引用了扎克伯格的话，说 Meta 想构建"替你做事的那种 Agent"。这听起来像营销文案，但它其实指向了真正的问题：**改变你产出的不是模型变聪明了——而是你有没有把它接到你真正做的那些具体工作上。**
 
 我现在用 GPT-5.4 做客户调研、初稿大纲和事实核查。不是因为 GPT-5.4 有魔法——而是因为我花了时间把它整合进一天里能带来明确价值的那些环节。如果我换成 Muse Spark，前两类任务大概差不多。第三类会变差，因为事实准确性是 GPT-5.4 的强项。
 
@@ -103,13 +103,13 @@ GPT-5.4 发布时，我干了一件有点蠢的事。我花了一整个周末重
 
 ### 升级时真正改变的是什么
 
-[Fortune 对 Muse Spark 的报道](<https://fortune.com/2026/04/08/meta-unveils-muse-spark-mark-zuckerberg-ai-push/>)提出了一个我认为值得记住的观点：**Muse Spark 的设计目标不是打败前沿，而是高效，并嵌入 Meta 的产品生态。**
+[Fortune 对 Muse Spark 的报道](https://fortune.com/2026/04/08/meta-unveils-muse-spark-mark-zuckerberg-ai-push/)提出了一个我认为值得记住的观点：**Muse Spark 的设计目标不是打败前沿，而是高效，并嵌入 Meta 的产品生态。**
 
 这个框架其实也适用于个人。**对的问题不是"哪个模型最强"，而是"哪个模型适合我现有的工具链和习惯"。**
 
-[The Batch 的分析](<https://www.deeplearning.ai/the-batch/with-muse-spark-meta-pivots-away-from-its-open-weights-llama-strategy/>)说得很好——Muse Spark 的强项集中在数据质量敏感的任务上，弱项集中在更依赖架构与 RL 扩展的领域。翻译一下：**它不是一次全面升级。它是在特定场景下更好用的一件工具。**
+[The Batch 的分析](https://www.deeplearning.ai/the-batch/with-muse-spark-meta-pivots-away-from-its-open-weights-llama-strategy/)说得很好——Muse Spark 的强项集中在数据质量敏感的任务上，弱项集中在更依赖架构与 RL 扩展的领域。翻译一下：**它不是一次全面升级。它是在特定场景下更好用的一件工具。**
 
-如果你的工作主要是多模态处理、健康相关研究或轻量调研——Muse Spark 值得一试。如果你做的是长链 agentic 工作、深度编码或 computer-use 自动化——GPT-5.4 仍然是更稳的选择。[OpenAI 的 API 文档](<https://developers.openai.com/api/docs/models/gpt-5.4>)明确把它定位给"复杂的专业工作"，这跟我实际看到的情况一致。
+如果你的工作主要是多模态处理、健康相关研究或轻量调研——Muse Spark 值得一试。如果你做的是长链 agentic 工作、深度编码或 computer-use 自动化——GPT-5.4 仍然是更稳的选择。[OpenAI 的 API 文档](https://developers.openai.com/api/docs/models/gpt-5.4)明确把它定位给"复杂的专业工作"，这跟我实际看到的情况一致。
 
 ![5.png](/blog/images/meta-muse-spark-one-person-company/1777599445535-e3ff5e0b-eacc-442a-95fb-bd9f2f3f9720.webp)
 
@@ -119,13 +119,13 @@ GPT-5.4 发布时，我干了一件有点蠢的事。我花了一整个周末重
 
 ## 上一篇系列文章：
 
-  * **[是不是每次新模型发布都该换？拆解为什么多数单人创始人高估了收益](</blog/ai-model-switching-trap>)**
+  * **[是不是每次新模型发布都该换？拆解为什么多数单人创始人高估了收益](/blog/ai-model-switching-trap)**
 
-  * **[GPT Image 2 对比 Midjourney 对比 Nano Banana 2——怎么按工作流（而不是排行榜）真正选对工具](</blog/ai-image-tools-comparison>)**
+  * **[GPT Image 2 对比 Midjourney 对比 Nano Banana 2——怎么按工作流（而不是排行榜）真正选对工具](/blog/ai-image-tools-comparison)**
 
-  * **[单人创作者用 AI 做分镜：什么时候省下几小时——什么时候悄悄毁掉你的序列](</blog/ai-storyboarding-workflow>)**
+  * **[单人创作者用 AI 做分镜：什么时候省下几小时——什么时候悄悄毁掉你的序列](/blog/ai-storyboarding-workflow)**
 
-  * **[Linux 上的 Claude Code：为什么把 AI 从浏览器搬进终端，改变的不只是速度](</blog/claude-code-linux>)**
+  * **[Linux 上的 Claude Code：为什么把 AI 从浏览器搬进终端，改变的不只是速度](/blog/claude-code-linux)**
 
-  * **[Workflow 构建器 vs 工作区 Agent：自动化工作的两条完全不同的路（以及为什么混着用会浪费时间）](</blog/workflow-vs-agents>)**
+  * **[Workflow 构建器 vs 工作区 Agent：自动化工作的两条完全不同的路（以及为什么混着用会浪费时间）](/blog/workflow-vs-agents)**
 

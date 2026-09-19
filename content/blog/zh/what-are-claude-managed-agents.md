@@ -23,7 +23,7 @@ draft: false
 
 我能给出的最清楚说法是：**Claude Managed Agents 是基础设施，不是你在聊天窗口里用的产品。**
 
-Claude 平台现在提供两条路径：直接模型访问——你自己搭对话循环；以及完全托管的 Agent 基础设施——由 Anthropic 处理有状态会话与持久事件历史。Claude Managed Agents 就是第二条路径。这两条路径都写在 [Claude API 文档](<https://platform.claude.com/docs/en/home>)里，想看技术全貌的话，我会建议从那里开始。
+Claude 平台现在提供两条路径：直接模型访问——你自己搭对话循环；以及完全托管的 Agent 基础设施——由 Anthropic 处理有状态会话与持久事件历史。Claude Managed Agents 就是第二条路径。这两条路径都写在 [Claude API 文档](https://platform.claude.com/docs/en/home)里，想看技术全貌的话，我会建议从那里开始。
 
 ![3.png](/blog/images/what-are-claude-managed-agents/1775730604254-8c285a71-a0b0-43dd-ae4f-6b1c6421cb39.webp)
 
@@ -33,7 +33,7 @@ Claude 平台现在提供两条路径：直接模型访问——你自己搭对�
 
 ![4.png](/blog/images/what-are-claude-managed-agents/1775730623124-70a80ac9-c523-4617-842a-f90deec73a40.webp)
 
-Anthropic 的工程团队把设计哲学描述为「把大脑与手解耦」。抓住我注意力的细节是：会话在 Claude 的上下文窗口之外充当一条持久的事件日志——如果系统重启、或某个容器崩溃，Agent 会依据记录下的事件流从它停下的地方精确续跑。可抛弃的容器可以失败并被替换，却不丢失进度。这是实打实的可靠性保证。Anthropic 那篇关于[规模化 managed agents](<https://www.anthropic.com/engineering/managed-agents>)的工程博客深入讲了他们为什么这样设计——如果你对这套架构思路好奇，值得一读。
+Anthropic 的工程团队把设计哲学描述为「把大脑与手解耦」。抓住我注意力的细节是：会话在 Claude 的上下文窗口之外充当一条持久的事件日志——如果系统重启、或某个容器崩溃，Agent 会依据记录下的事件流从它停下的地方精确续跑。可抛弃的容器可以失败并被替换，却不丢失进度。这是实打实的可靠性保证。Anthropic 那篇关于[规模化 managed agents](https://www.anthropic.com/engineering/managed-agents)的工程博客深入讲了他们为什么这样设计——如果你对这套架构思路好奇，值得一读。
 
 ### 公开 beta 状态意味着什么
 
@@ -53,7 +53,7 @@ Claude Managed Agents 目前处于 beta。所有端点都要求 `managed-agents-
 
 这里我要说实话，因为人很容易一激动就读错它到底为谁而建。
 
-Claude Managed Agents 替你抽走了数个月的基础设施工作。用户可以定义自己想跑的 Agent——用自然语言或 YAML 文件——设置护栏，然后让它们在 Anthropic 平台上运行，底层基础设施自动处理。[官方 Claude Managed Agents 概览](<https://platform.claude.com/docs/en/managed-agents/overview>)说得很精确：这是一个开发者 API 面，不是终端用户产品。
+Claude Managed Agents 替你抽走了数个月的基础设施工作。用户可以定义自己想跑的 Agent——用自然语言或 YAML 文件——设置护栏，然后让它们在 Anthropic 平台上运行，底层基础设施自动处理。[官方 Claude Managed Agents 概览](https://platform.claude.com/docs/en/managed-agents/overview)说得很精确：这是一个开发者 API 面，不是终端用户产品。
 
 早期采用者把这个故事讲得很清楚。最初的用户包括 Notion、Rakuten 和 Asana——这些公司需要给自己的用户上线 Agent 功能，却不想自建运行时基础设施。据称 Rakuten 为销售、营销与财务各部署了一个专家 Agent，每个不到一周。
 
@@ -71,7 +71,7 @@ Claude Managed Agents 没有界面。没有一块你能跟它聊天、拖文件�
 
 ### 对非开发者不是即插即用
 
-定价有两个维度。会话消耗的所有 token 按标准 Claude 平台费率计费，外加每「会话·活跃运行时小时」$0.08——空闲时间不计入该计费。[Managed Agents 定价页](<https://platform.claude.com/docs/en/about-claude/pricing>)上有精确明细。对开发团队来说可负担，但作为普通用户，没有任何东西可以安装或订阅。你要么在它之上自己构建，要么用一个已经集成了它的产品。
+定价有两个维度。会话消耗的所有 token 按标准 Claude 平台费率计费，外加每「会话·活跃运行时小时」$0.08——空闲时间不计入该计费。[Managed Agents 定价页](https://platform.claude.com/docs/en/about-claude/pricing)上有精确明细。对开发团队来说可负担，但作为普通用户，没有任何东西可以安装或订阅。你要么在它之上自己构建，要么用一个已经集成了它的产品。
 
 ![7.png](/blog/images/what-are-claude-managed-agents/1775730661291-ec410158-091c-45c8-9693-7b75e34ea6a7.webp)
 
@@ -83,7 +83,7 @@ Claude Managed Agents 没有界面。没有一块你能跟它聊天、拖文件�
 
 我认为真正发生的事是：AI 工具世界开始变得像 2010 年代的网站托管。先是裸服务器，然后托管云服务抽象掉基础设施，再之后，建在之上的产品才成为普通人真正用的东西。
 
-Anthropic 把 Managed Agents 做成了「元 harness」——一个设计目标是在底下具体 harness 与模型不断更替时保持稳定的系统。这些接口被设计成比任何具体实现都长寿，包括 Anthropic 今天自己跑的那些。他们在明确地为还不存在的 Agent 架构做基建。[SiliconANGLE 对这次发布的报道](<https://siliconangle.com/2026/04/08/anthropic-launches-claude-managed-agents-speed-ai-agent-development/>)把竞争语境交代得很好——每个主要 AI 实验室现在都在朝同一层托管基础设施建设。
+Anthropic 把 Managed Agents 做成了「元 harness」——一个设计目标是在底下具体 harness 与模型不断更替时保持稳定的系统。这些接口被设计成比任何具体实现都长寿，包括 Anthropic 今天自己跑的那些。他们在明确地为还不存在的 Agent 架构做基建。[SiliconANGLE 对这次发布的报道](https://siliconangle.com/2026/04/08/anthropic-launches-claude-managed-agents-speed-ai-agent-development/)把竞争语境交代得很好——每个主要 AI 实验室现在都在朝同一层托管基础设施建设。
 
 这是长线的基础设施棋。它意味着：非技术用户最终与 AI Agent 交互的那一层——工作区、工具、产品——正在与 Agent 实际运行的那一层分离。
 
@@ -91,7 +91,7 @@ Anthropic 把 Managed Agents 做成了「元 harness」——一个设计目标�
 
 一旦一家公司的 Agent 跑在托管基础设施上——带着特定的工具、会话格式与沙箱——切换到另一家供应商就会复杂得多。每个主要玩家都在搭更完整的技术栈，从裸模型访问走向把模型包进生产级工具的平台上。
 
-The New Stack 对 [Anthropic 到底想干什么](<https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/>)的报道说得很直白：基础设施问题正变成「别人去解决的问题」。有趣的工程工作向上移了一层。
+The New Stack 对 [Anthropic 到底想干什么](https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/)的报道说得很直白：基础设施问题正变成「别人去解决的问题」。有趣的工程工作向上移了一层。
 
 对单人创业者和小团队，实际含义是：未来一两年你用的 AI 工具，会越来越多地建在像这样的基础设施上。你看不见它，但正是它让长时间自主任务变得可靠、而不是一碰就碎。
 
@@ -107,13 +107,13 @@ The New Stack 对 [Anthropic 到底想干什么](<https://thenewstack.io/with-cl
 
 **往期文章：**
 
-  * [什么是持久化 AI Agent](</blog/what-is-persistent-ai-agent>)
+  * [什么是持久化 AI Agent](/blog/what-is-persistent-ai-agent)
 
-  * [AI Agent vs AI 助手](</blog/ai-agent-vs-ai-assistant>)
+  * [AI Agent vs AI 助手](/blog/ai-agent-vs-ai-assistant)
 
-  * [如何为一人公司构建 AI Agent](</blog/how-to-build-an-ai-agent>)
+  * [如何为一人公司构建 AI Agent](/blog/how-to-build-an-ai-agent)
 
-  * [AI Agent 用例：真实示例](</blog/ai-agent-use-cases-real-examples>)
+  * [AI Agent 用例：真实示例](/blog/ai-agent-use-cases-real-examples)
 
-  * [工作流构建器 vs AI 工作区](</blog/workflow-builder-vs-ai-workspace>)
+  * [工作流构建器 vs AI 工作区](/blog/workflow-builder-vs-ai-workspace)
 

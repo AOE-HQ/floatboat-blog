@@ -70,7 +70,7 @@ Viktor 的市场话术很直白：**你是招了一个员工，不是买了一�
 
 如果你要的是**今天就能用**的 `@` 式委派、又不想被 Claude Enterprise 打包捆绑，且工具动作的广度比 Anthropic 独占的模型深度更重要——选 Viktor。Viktor 按实例运行持久云端沙盒，比 Slack AI 摘要更接近 Tag 的异步执行叙事。
 
-权衡：专有技术栈 + 按积分计费（2026 常见报价大约从**每月 50 美元**起，含试用档——以 [viktor.com](<http://viktor.com>) 为准）。当你要求自托管审计轨迹、或 FloatIM 强调的 Agent-native 多 Agent 语义时，贴合度会弱一些。
+权衡：专有技术栈 + 按积分计费（2026 常见报价大约从**每月 50 美元**起，含试用档——以 [viktor.com](http://viktor.com) 为准）。当你要求自托管审计轨迹、或 FloatIM 强调的 Agent-native 多 Agent 语义时，贴合度会弱一些。
 
 ### 3\. Stilla —— 最适合跨平台的 `@` Teammate
 

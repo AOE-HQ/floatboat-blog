@@ -27,7 +27,7 @@ draft: false
 
 但现在不一样了。工具已经进化到对**一人公司**真正有意义的程度。关键不只是 AI 能替你写东西，而是 AI 能_守住一份工作_——一个具体、明确界定的角色——并一直待在里面。
 
-按 [Andreessen Horowitz 关于创作者经济的研究](<https://a16z.com/podcast/a16z-podcast-the-creator-economy-nfts-and-beyond/>)，线上独立创业的人数大幅增长——不是因为理论上变容易了，而是因为「一个人」和「小团队」之间的运营落差如今真的能被填平。这一点是新的。
+按 [Andreessen Horowitz 关于创作者经济的研究](https://a16z.com/podcast/a16z-podcast-the-creator-economy-nfts-and-beyond/)，线上独立创业的人数大幅增长——不是因为理论上变容易了，而是因为「一个人」和「小团队」之间的运营落差如今真的能被填平。这一点是新的。
 
 ### 为什么独自包办一切以前会崩
 
@@ -57,7 +57,7 @@ AI 没有明确角色，输出就不稳定。你每次都要重新解释上下�
 
 ### 开发者侧证明：Garry Tan 用 gstack 组了一支虚拟开发团队，48 小时拿到 12k stars
 
-今年早些时候，Y Combinator 总裁 [Garry Tan](<https://www.ycombinator.com/people/garry-tan>) 分享了一个在开发者圈子里引起广泛关注的东西。他的项目**gstack** 48 小时内拿到了 12,000 个 GitHub stars。概念简单又有点颠覆认知：不用一个 AI Agent 包办所有事，而是同时启动多个专门的 AI Agent——每个都有明确的角色——让它们像一支开发团队那样协作。这不是什么边缘想法。[Y Combinator 关于保持团队精简的建议](<https://www.ycombinator.com/library>)一直推动创始人用更少的人做更多的事——而 gstack 证明的是：AI 角色如今真的能兑现这条差距。
+今年早些时候，Y Combinator 总裁 [Garry Tan](https://www.ycombinator.com/people/garry-tan) 分享了一个在开发者圈子里引起广泛关注的东西。他的项目**gstack** 48 小时内拿到了 12,000 个 GitHub stars。概念简单又有点颠覆认知：不用一个 AI Agent 包办所有事，而是同时启动多个专门的 AI Agent——每个都有明确的角色——让它们像一支开发团队那样协作。这不是什么边缘想法。[Y Combinator 关于保持团队精简的建议](https://www.ycombinator.com/library)一直推动创始人用更少的人做更多的事——而 gstack 证明的是：AI 角色如今真的能兑现这条差距。
 
 一个 Agent 负责架构决策，另一个专注代码审查，还有一个管理文档。它们都不是「万能助手」，而是各自_认领一份职责_。
 
@@ -97,9 +97,9 @@ gstack 传播得这么快，靠的不只是技术实现——而是这个想法�
 
 ### 记下步骤，而不只是产出
 
-**这是大多数人跳过的一步。**把任务交给 AI 之前，先把「你做得好的时候到底在做什么」写下来。正如[自动化之前先把流程写下来](<https://zapier.com/blog/solopreneur-productivity-hacks/>)这篇文章说清楚的——如果你自己都说不出步骤，任何工具都没法替你复现。
+**这是大多数人跳过的一步。**把任务交给 AI 之前，先把「你做得好的时候到底在做什么」写下来。正如[自动化之前先把流程写下来](https://zapier.com/blog/solopreneur-productivity-hacks/)这篇文章说清楚的——如果你自己都说不出步骤，任何工具都没法替你复现。
 
-按 [MIT Sloan Management Review 关于知识管理的研究](<https://sloanreview.mit.edu/>)，把隐性知识显性化，是知识工作者能做的最难也最有价值的事之一。有经验的人大部分本事存在脑子里，而不是文档里。把它捕捉下来——哪怕是粗略的——才能让一个角色迁移给 AI。
+按 [MIT Sloan Management Review 关于知识管理的研究](https://sloanreview.mit.edu/)，把隐性知识显性化，是知识工作者能做的最难也最有价值的事之一。有经验的人大部分本事存在脑子里，而不是文档里。把它捕捉下来——哪怕是粗略的——才能让一个角色迁移给 AI。
 
 ![4.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916338947-9eb991fe-cd5a-4b08-9035-ee1f830c6505.webp)
 
@@ -123,7 +123,7 @@ gstack 传播得这么快，靠的不只是技术实现——而是这个想法�
 
 AI 特别擅长**可重复、上下文厚重、输出明确**的任务；对需要真正判断人心、或正确答案取决于无法写下来的东西的场景，它明显逊色。
 
-《哈佛商业评论》（[HBR](<https://hbr.org/>)）仔细讨论过这个区分：AI 增强个人能力，但它替代不了让团队正常运转的那些社交与判断型工作。如果你的瓶颈是创意方向、客户信任、或真实不确定性下的战略思考——你仍然需要人。
+《哈佛商业评论》（[HBR](https://hbr.org/)）仔细讨论过这个区分：AI 增强个人能力，但它替代不了让团队正常运转的那些社交与判断型工作。如果你的瓶颈是创意方向、客户信任、或真实不确定性下的战略思考——你仍然需要人。
 
 用 AI 经营一人公司，不意味着你永远不需要协作。它意味着你不再把时间烧在不需要人的任务上——这也是为什么现在很多单人创业者把这些系统打包成了服务。
 
@@ -143,9 +143,9 @@ AI 特别擅长**可重复、上下文厚重、输出明确**的任务；对需�
 
 ## 往期文章
 
-  * **[AI 自动化在真实市场上到底怎么定价](</blog/ai-automation-agency-pricing>)**
+  * **[AI 自动化在真实市场上到底怎么定价](/blog/ai-automation-agency-pricing)**
 
-  * **[Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](</blog/lindy-vs-gumloop>)**
+  * **[Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](/blog/lindy-vs-gumloop)**
 
-  * **[AI Agent 在调研、内容与运营中的真实用例](</blog/ai-agent-use-cases-real-examples>)**
+  * **[AI Agent 在调研、内容与运营中的真实用例](/blog/ai-agent-use-cases-real-examples)**
 

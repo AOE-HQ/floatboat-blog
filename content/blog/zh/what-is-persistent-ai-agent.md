@@ -15,7 +15,7 @@ draft: false
 
 _嗨，我是 Nova。最近我一直在想这个概念，今天终于坐下来好好把它写出来。_
 
-我不断看到「[Hermes Agent](<https://hermes-agent.nousresearch.com/>)」出现在我的信息流里——开发者在聊它、GitHub 上有技术讨论帖、偶尔还有人在 Reddit 兴奋地晒自己在 $5 的 VPS 上跑它。我的第一反应是划过去：又一个 AI 工具，八成只面向开发者，八成跟我实际的工作方式无关。
+我不断看到「[Hermes Agent](https://hermes-agent.nousresearch.com/)」出现在我的信息流里——开发者在聊它、GitHub 上有技术讨论帖、偶尔还有人在 Reddit 兴奋地晒自己在 $5 的 VPS 上跑它。我的第一反应是划过去：又一个 AI 工具，八成只面向开发者，八成跟我实际的工作方式无关。
 
 但后来我撞见一句话，被它拦住了：「大多数 AI 工具是无状态的——每一段对话都从零开始。」
 
@@ -77,7 +77,7 @@ LLM 的传统记忆像内存（RAM）：对当前上下文访问快，但每个�
 
 ## Hermes Agent 这类项目想做什么
 
-Hermes Agent 是 Nous Research 做的开源项目，2026 年初发布。我自己没搭过——这点我直说——但我把[官方文档](<https://hermes-agent.nousresearch.com/docs/>)读得挺仔细，这套架构即使你永远不运行它也值得理解。
+Hermes Agent 是 Nous Research 做的开源项目，2026 年初发布。我自己没搭过——这点我直说——但我把[官方文档](https://hermes-agent.nousresearch.com/docs/)读得挺仔细，这套架构即使你永远不运行它也值得理解。
 
 ![4.png](/blog/images/what-is-persistent-ai-agent/1775615376383-6a9ae401-fb00-423f-8fa5-33b44d5b09ba.webp)
 
@@ -139,13 +139,13 @@ _总之，这是今天的发现。或者至少是今天一次诚实的尝试—�
 
 ## 往期文章
 
-  * [AI Agent 和传统工具到底有什么区别还是一头雾水？这篇梳理把界线讲清楚了](</blog/ai-agent-vs-chatbot>)
+  * [AI Agent 和传统工具到底有什么区别还是一头雾水？这篇梳理把界线讲清楚了](/blog/ai-agent-vs-chatbot)
 
-  * [想知道 AI 在真实工作中——而不只是聊天里——怎么落地？这些用例是不错的起点](</blog/ai-agent-use-cases-real-examples>)
+  * [想知道 AI 在真实工作中——而不只是聊天里——怎么落地？这些用例是不错的起点](/blog/ai-agent-use-cases-real-examples)
 
-  * [真正的转变不只是 Agent——而是工作流如何演进为 AI 工作区](</blog/workflow-builder-vs-ai-workspace>)
+  * [真正的转变不只是 Agent——而是工作流如何演进为 AI 工作区](/blog/workflow-builder-vs-ai-workspace)
 
-  * [想要一个实践中的具体例子？这是用飞书 CLI 搭单人工作流的配置](</blog/feishu-cli-solo-work-setup>)
+  * [想要一个实践中的具体例子？这是用飞书 CLI 搭单人工作流的配置](/blog/feishu-cli-solo-work-setup)
 
-  * [想往深走？这篇指南讲了自建 AI Agent 真正需要什么](</blog/how-to-build-an-ai-agent>)
+  * [想往深走？这篇指南讲了自建 AI Agent 真正需要什么](/blog/how-to-build-an-ai-agent)
 

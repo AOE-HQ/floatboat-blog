@@ -15,11 +15,11 @@ draft: false
 
   * **MiniMax H3 Max Live** is an experimental use of fal's post-trained **H3 Max** video model where generation speed exceeds playback speed, so a broadcast can run continuously while new clips are produced in the background — the technical prerequisite for "infinite" AI livestreams.
 
-  * **H3 Max** (the production API model) renders a 5-second 768p clip with synchronized audio in under 3 seconds on fal's stack, roughly [35× the throughput of MiniMax's official H3 endpoint](<https://blog.fal.ai/introducing-h3-max-by-fal/>), according to fal's published benchmarks.
+  * **H3 Max** (the production API model) renders a 5-second 768p clip with synchronized audio in under 3 seconds on fal's stack, roughly [35× the throughput of MiniMax's official H3 endpoint](https://blog.fal.ai/introducing-h3-max-by-fal/), according to fal's published benchmarks.
 
   * In late August 2026, fal engineer **Rehan Sheikh** connected H3 Max to Twitch and dubbed the result "Infinite Interdimensional Cable"; fal followed with an official **H3 Max Live** experiment where viewers type `!prompt` in chat to steer the next scene within seconds.
 
-  * This is **not** MiniMax M3 or the MiniMax Realtime voice API — it is a **video-generation** workflow built on [MiniMax H3](<https://fal.ai/minimax-h3>), fal's accelerated variant, and an experimental continuity endpoint.
+  * This is **not** MiniMax M3 or the MiniMax Realtime voice API — it is a **video-generation** workflow built on [MiniMax H3](https://fal.ai/minimax-h3), fal's accelerated variant, and an experimental continuity endpoint.
 
   * Running a 24/7 stream at continuous generation is expensive — roughly **$3,500/day** at fal's launch promo rate ($0.04/s at 768p) or **~$6,900/day** at list pricing ($0.08/s) — which is why most public demos have been sponsored experiments rather than sustainable channels.
 
@@ -31,7 +31,7 @@ For two years, AI video tools were judged on clip quality: how photorealistic th
 
 Television, in the literal sense of a signal that never stops, requires the next segment to exist before the current one finishes. If generating fifteen seconds of footage takes nine minutes, you cannot broadcast live; you can only replay a growing archive. The moment generation time drops **below** playback time, the constraint flips: the system can append new material while the audience is still watching the previous clip. Infinite runtime becomes a queue-management problem instead of a physics impossibility.
 
-That is the shift fal demonstrated in August 2026. Its **H3 Max** variant — a post-trained, inference-co-designed version of [MiniMax H3](</blog/what-is-minimax-h3>) — generates short clips fast enough that engineers could pipe output into a live broadcast stack and keep the buffer full. The demos were playful (chat-driven surrealism, Rick and Morty "Interdimensional Cable" references), but the underlying capability is serious: real-time generative media supply chains for channels, personalized feeds, and interactive entertainment. The category move is from "wait for the render" to "never stop generating" — and that only becomes viable when throughput crosses the playback line.
+That is the shift fal demonstrated in August 2026. Its **H3 Max** variant — a post-trained, inference-co-designed version of [MiniMax H3](/blog/what-is-minimax-h3) — generates short clips fast enough that engineers could pipe output into a live broadcast stack and keep the buffer full. The demos were playful (chat-driven surrealism, Rick and Morty "Interdimensional Cable" references), but the underlying capability is serious: real-time generative media supply chains for channels, personalized feeds, and interactive entertainment. The category move is from "wait for the render" to "never stop generating" — and that only becomes viable when throughput crosses the playback line.
 
 * * *
 
@@ -39,7 +39,7 @@ That is the shift fal demonstrated in August 2026. Its **H3 Max** variant — a 
 
 ### 2.1 The Core Definition
 
-**MiniMax H3 Max Live** is not a separate product SKU you can buy off a pricing page today. It names a **live-broadcast pattern** : loop fal's **H3 Max** text-to-video or image-to-video API, enqueue clips faster than they play, merge chat prompts into the next generation request, and push the composite stream to a platform such as Twitch through standard RTMP tooling (OBS or equivalent). "Live" here means **continuous generative supply** , not low-latency speech conversation — a distinction that matters because MiniMax also ships an unrelated [Realtime API for voice](<https://www.minimax.io/news/realtime-api>).
+**MiniMax H3 Max Live** is not a separate product SKU you can buy off a pricing page today. It names a **live-broadcast pattern** : loop fal's **H3 Max** text-to-video or image-to-video API, enqueue clips faster than they play, merge chat prompts into the next generation request, and push the composite stream to a platform such as Twitch through standard RTMP tooling (OBS or equivalent). "Live" here means **continuous generative supply** , not low-latency speech conversation — a distinction that matters because MiniMax also ships an unrelated [Realtime API for voice](https://www.minimax.io/news/realtime-api).
 
 The fal-branded **H3 Max Live** experiment added an **experimental endpoint** that fal engineers said supports **native continuity** across scenes — preserving audiovisual context instead of treating each clip as an isolated generation. That endpoint was showcased on Twitch with a `!prompt` chat command: viewers submit a scene description, and fal claimed the new request could appear on screen within seconds. Whether you call it Infinite Interdimensional Cable or H3 Max Live, the architecture is the same class of system: generative video as a **stream source** rather than a **file export**.
 
@@ -59,11 +59,11 @@ Reach for **standard H3** when you need 2K, reference-to-video, or editing endpo
 
 **It is not MiniMax M3.** M3 is MiniMax's frontier **language** model for agentic reasoning and tool use — a text/multimodal LLM with a 1M-token context window, not a video broadcaster. Naming collision is unfortunate; the Twitch story is entirely on the H3 video line.
 
-**It is not the MiniMax Realtime voice API.** Realtime API targets speech-in / speech-or-text-out conversations with ultra-low latency. H3 Max Live outputs **video files in a loop**. If you need a voice agent, you are in a different product category entirely — closer to the distinction we draw between [voice mode and voice dictation for AI agents](</blog/voice-mode-vs-dictation-for-ai-agents>).
+**It is not the MiniMax Realtime voice API.** Realtime API targets speech-in / speech-or-text-out conversations with ultra-low latency. H3 Max Live outputs **video files in a loop**. If you need a voice agent, you are in a different product category entirely — closer to the distinction we draw between [voice mode and voice dictation for AI agents](/blog/voice-mode-vs-dictation-for-ai-agents).
 
 **It is not pre-rendered video pretending to be live.** Early "AI streams" sometimes looped a finite library of clips. The August 2026 demos claimed **on-the-fly generation** for each segment, with chat altering the next prompt. That claim is credible only because H3 Max's throughput makes the queue sustainable; without faster-than-playback generation, the illusion collapses the moment chat outruns the buffer.
 
-**It is not a cheap always-on hobby channel.** List pricing on fal's [H3 Max product page](<https://fal.ai/minimax-h3-max>) runs about **$0.08 per second at 768p** after promotional pricing ended September 1, 2026 — roughly **$4.80 per minute** of generated footage if you generate continuously at full duration. A naive 24/7 channel at that rate implies thousands of dollars per day before platform fees, moderation, and engineering overhead. Treat public streams as **capacity proofs** , not unit-economics templates.
+**It is not a cheap always-on hobby channel.** List pricing on fal's [H3 Max product page](https://fal.ai/minimax-h3-max) runs about **$0.08 per second at 768p** after promotional pricing ended September 1, 2026 — roughly **$4.80 per minute** of generated footage if you generate continuously at full duration. A naive 24/7 channel at that rate implies thousands of dollars per day before platform fees, moderation, and engineering overhead. Treat public streams as **capacity proofs** , not unit-economics templates.
 
 * * *
 
@@ -119,9 +119,9 @@ The practical takeaway for builders: **platform fit is unsettled**. Mainstream l
 
 ### 5.2 Economics of Always-On Generation
 
-Use fal's published pricing as a floor, not a ceiling. After the launch promotion, **768p H3 Max** list pricing is **$0.08 per second of generated video** on the [product page](<https://fal.ai/minimax-h3-max>) — about **$288 per hour** if workers generate sixty minutes of footage every clock hour. A full day at that duty cycle approaches **$6,900** before redundancy, failed generations, or prompt-expansion overhead. Promotional rates ($0.04/s during the first two weeks) halve that figure; free daily sandbox generations are irrelevant at channel scale.
+Use fal's published pricing as a floor, not a ceiling. After the launch promotion, **768p H3 Max** list pricing is **$0.08 per second of generated video** on the [product page](https://fal.ai/minimax-h3-max) — about **$288 per hour** if workers generate sixty minutes of footage every clock hour. A full day at that duty cycle approaches **$6,900** before redundancy, failed generations, or prompt-expansion overhead. Promotional rates ($0.04/s during the first two weeks) halve that figure; free daily sandbox generations are irrelevant at channel scale.
 
-Compare to Levels' cited **~$4,000/day** for Infinite Slop: the number is plausible if generation is intermittent, resolution lower, or fal subsidized compute for marketing. None of that implies a profitable creator business without sponsorship, tipping, or a downstream product funnel. Infinite AI TV is currently a **demo class** , not a default content strategy — the same way early [one-prompt HTML game](</blog/34-vibe-coding-one-prompt-html-game>) experiments were demos of model capability, not game studios.
+Compare to Levels' cited **~$4,000/day** for Infinite Slop: the number is plausible if generation is intermittent, resolution lower, or fal subsidized compute for marketing. None of that implies a profitable creator business without sponsorship, tipping, or a downstream product funnel. Infinite AI TV is currently a **demo class** , not a default content strategy — the same way early [one-prompt HTML game](/blog/34-vibe-coding-one-prompt-html-game) experiments were demos of model capability, not game studios.
 
 ### 5.3 Moderation and NSFW Risk
 
@@ -135,7 +135,7 @@ The durable insight from H3 Max Live is not "start a Twitch channel today." It i
 
 Developers evaluating fal should treat the public **H3 Max API** as production-grade for clip generation and the **Live continuity endpoint** as a preview — watch fal's changelog before baking cross-scene memory into a paid product. Teams already on MiniMax H3 for 2K or Ref2VA should keep standard H3 endpoints for quality-critical shots and route bulk or interactive workloads to H3 Max when latency dominates.
 
-For agent builders, the parallel is familiar: unified context plus fast execution changes what "always on" means — whether the output is video or a work week. Calendar-driven agents that trigger prep before meetings face the same queue problem in a different medium: can the system finish the next artifact before the human arrives? H3 Max Live answers yes for fifteen-second video clips; [agentic calendar](</blog/what-is-agentic-calendar>) systems aim at the same inequality for documents and follow-ups.
+For agent builders, the parallel is familiar: unified context plus fast execution changes what "always on" means — whether the output is video or a work week. Calendar-driven agents that trigger prep before meetings face the same queue problem in a different medium: can the system finish the next artifact before the human arrives? H3 Max Live answers yes for fifteen-second video clips; [agentic calendar](/blog/what-is-agentic-calendar) systems aim at the same inequality for documents and follow-ups.
 
 * * *
 

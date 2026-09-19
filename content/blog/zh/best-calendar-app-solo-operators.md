@@ -23,7 +23,7 @@ draft: false
 
 **展示型日历**告诉你接下来有什么。Google Calendar、Apple Calendar、Outlook——它们都擅长这个。你把事件放进去，它把事件显示出来。这就是它的工作。
 
-**规划型日历**帮你决定什么时候做某件事。[Morgen](<https://www.morgen.so/>) 和 Sunsama 属于这一类——把任务拉进日历视图，帮你排出当天计划。
+**规划型日历**帮你决定什么时候做某件事。[Morgen](https://www.morgen.so/) 和 Sunsama 属于这一类——把任务拉进日历视图，帮你排出当天计划。
 
 **智能日历**试图替你把日程安排好。Motion 和 Reclaim AI 属于这个类别。你把带截止日期的任务交给它，算法去找空档。
 
@@ -35,7 +35,7 @@ draft: false
 
 ### Mac 用户
 
-如果你深度在 Apple 生态里，[Fantastical](<https://flexibits.com/fantastical>) 的日常日历体验很难被超越。它的自然语言输入是真的好用——输入"周四下午 2 点 Blue Bottle 和 Mika 喝咖啡"，它能正确解析。Calendar Sets 让你在工作视图和个人视图之间快速切换。我用了几个月，那些小细节一直在加分：菜单栏小组件、键盘快捷键、对时区的处理——它的精致程度是 Apple 自家日历做不到的。
+如果你深度在 Apple 生态里，[Fantastical](https://flexibits.com/fantastical) 的日常日历体验很难被超越。它的自然语言输入是真的好用——输入"周四下午 2 点 Blue Bottle 和 Mika 喝咖啡"，它能正确解析。Calendar Sets 让你在工作视图和个人视图之间快速切换。我用了几个月，那些小细节一直在加分：菜单栏小组件、键盘快捷键、对时区的处理——它的精致程度是 Apple 自家日历做不到的。
 
 值得提一句：Fantastical 最近推出了 Windows 版，不再是 Mac 独占。但 Mac 上的体验仍然是它最舒服的地方。如果你只需要一个免费又简单的工具，Apple Calendar 没问题——但如果你把日历当成控制面板，Fantastical 是我会建议的起点。
 
@@ -49,9 +49,9 @@ draft: false
 
 如果你家里用 Mac、手机上用 Android、偶尔用 Windows 笔记本处理客户工作——你的日历需要到处都能用。
 
-Google Calendar 是跨平台的默认答案。它在任何浏览器里都能跑，同步可靠，[Google 的支持文档](<https://support.google.com/calendar/?hl=en>)覆盖了几乎所有集成问题。我始终把它当作底层来用，哪怕在上面测试别的工具。
+Google Calendar 是跨平台的默认答案。它在任何浏览器里都能跑，同步可靠，[Google 的支持文档](https://support.google.com/calendar/?hl=en)覆盖了几乎所有集成问题。我始终把它当作底层来用，哪怕在上面测试别的工具。
 
-除了 Google 系，Morgen 是最强的**跨平台日历**选项。它支持 macOS、Windows、Linux、iOS 和 Android——我查过它的 [FAQ 页面](<https://www.morgen.so/faq>)，确认它可连接 Google、Outlook、iCloud 和 Fastmail。它的 AI 规划器会建议任务放在哪里，但不会不打招呼就重排你的日程——比起那些激进自动排程的工具，我更喜欢这一点。
+除了 Google 系，Morgen 是最强的**跨平台日历**选项。它支持 macOS、Windows、Linux、iOS 和 Android——我查过它的 [FAQ 页面](https://www.morgen.so/faq)，确认它可连接 Google、Outlook、iCloud 和 Fastmail。它的 AI 规划器会建议任务放在哪里，但不会不打招呼就重排你的日程——比起那些激进自动排程的工具，我更喜欢这一点。
 
 ![3.PNG](/blog/images/best-calendar-app-solo-operators/1780539827722-d1be2c8d-7911-4063-b452-da178ac1ec63.webp)
 
@@ -119,13 +119,13 @@ Reclaim AI 走的是更轻的路线。它叠在现有 Google Calendar 之上（2
 
 ## 延伸阅读
 
-* 如果你的日历排得满满当当、工作却仍感觉支离破碎，[别再做无谓的上下文切换：为什么工作区 Agent 很重要](</blog/stop-context-switching-workspace-agent>)探讨的是一整天在应用之间来回跳的隐性成本。
+* 如果你的日历排得满满当当、工作却仍感觉支离破碎，[别再做无谓的上下文切换：为什么工作区 Agent 很重要](/blog/stop-context-switching-workspace-agent)探讨的是一整天在应用之间来回跳的隐性成本。
 
-* 还在纠结你需要的是更聪明的规划器，还是真正能执行工作的东西？[工作区 Agent vs 工作流构建工具](</blog/workspace-agents-vs-workflow-builders>)讲清了"整理任务"和"推进任务"的区别。
+* 还在纠结你需要的是更聪明的规划器，还是真正能执行工作的东西？[工作区 Agent vs 工作流构建工具](/blog/workspace-agents-vs-workflow-builders)讲清了"整理任务"和"推进任务"的区别。
 
-* 智能日历能替你排任务——但它们仍然靠你自己去执行。[面向单人创始人的 AI 工作流](</blog/ai-workflow-for-solo-founders>)看的是单人创业者的精力到底在一天中哪个环节流失。
+* 智能日历能替你排任务——但它们仍然靠你自己去执行。[面向单人创始人的 AI 工作流](/blog/ai-workflow-for-solo-founders)看的是单人创业者的精力到底在一天中哪个环节流失。
 
-* 如果你一直在试各种 AI 调度器、助理和规划系统，[AI 工作区 Agent](</blog/ai-workspace-agents>)解释了为什么下一层也许不是又一种日历视图，而是真正的执行。
+* 如果你一直在试各种 AI 调度器、助理和规划系统，[AI 工作区 Agent](/blog/ai-workspace-agents)解释了为什么下一层也许不是又一种日历视图，而是真正的执行。
 
-* 好奇提醒响起之后会发生什么？[如何为重复性工作构建 AI Agent](</blog/how-to-build-ai-agents-for-repeated-work>)探讨了周期性工作流如何不再每周手动重建。
+* 好奇提醒响起之后会发生什么？[如何为重复性工作构建 AI Agent](/blog/how-to-build-ai-agents-for-repeated-work)探讨了周期性工作流如何不再每周手动重建。
 

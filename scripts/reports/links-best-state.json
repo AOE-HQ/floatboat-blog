@@ -1,0 +1,954 @@
+{
+ "content/blog/agentic-ai-tools.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/ai-agent-development-services.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 5
+ },
+ "content/blog/ai-agent-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/ai-agent-use-cases-real-examples.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -5
+ },
+ "content/blog/ai-agent-vs-ai-assistant.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/ai-agent-vs-chatbot.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/ai-agent-workflow-vibe-coding.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 21
+ },
+ "content/blog/ai-agents-2026-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/ai-assistant-for-personal-use-at-work.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 0
+ },
+ "content/blog/ai-automation-agency-do-you-need-one.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 7
+ },
+ "content/blog/ai-automation-agency-pricing.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/ai-follow-up-email-opus-4-8.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 19
+ },
+ "content/blog/ai-scheduling-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/ai-tools-for-business-automation-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/ai-workflow-for-solo-founders.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/ai-workflow-solo-founders.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 4
+ },
+ "content/blog/ai-workspace-agents.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 0
+ },
+ "content/blog/automate-tiktok-shop-research-fastmoss-floatboat.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -31
+ },
+ "content/blog/best-ai-agent-builder-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/best-ai-agent-platform-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/best-ai-file-organizer.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 19
+ },
+ "content/blog/best-ai-scheduling-assistant.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/best-ai-scheduling-assistants.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 3
+ },
+ "content/blog/best-calendar-app-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/best-claude-cowork-alternatives.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 7
+ },
+ "content/blog/best-claude-tag-alternatives.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/browser-ai-agent-security-questions.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -11
+ },
+ "content/blog/browser-ai-agent-what-it-can-do.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/building-agentic-ai-systems-build-or-buy.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/claude-code-non-developers-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/claude-managed-agents-one-person-company.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/codex-for-chrome-vs-claude-for-chrome.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -5
+ },
+ "content/blog/codex-harness-open-source.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/context-engineering-for-ai-agents.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 7
+ },
+ "content/blog/cordis-plugin-framework.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/custom-ai-agent-development.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 8
+ },
+ "content/blog/deepseek-agent-function-calling.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/deepseek-agent-vs-claude-code.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/deepseek-v4-api-solo-operator.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/deepseek-v4-pro-0813.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/dynamic-workflows-build-or-use-workspace.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/effort-control-fast-mode-ai-work.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/feishu-cli-solo-work-setup.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/first-100-customers-solo-founder.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/floatcup-world-cup-2026-calendar-subscribe.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -1
+ },
+ "content/blog/gemini-3-5-integration-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/gemini-3-8-flash.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/genspark-ai-pricing.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/genspark-super-agent-explained.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/genspark-vs-manus.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 7
+ },
+ "content/blog/glm-5-3.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/google-calendar-vs-apple-calendar.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/google-calendar-vs-outlook.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/gpt-5-6-floatboat.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -19
+ },
+ "content/blog/gpt-5-6-sol-terra-luna.md": {
+  "src": "fix/links-pilot-2",
+  "score": 22
+ },
+ "content/blog/gpt-6-astra.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/gpt-image-2-manga-comic-workflow.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/gpt-image-2-storyboard-solo.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 5
+ },
+ "content/blog/gpt-image-2-vs-midjourney-nano-banana-2.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/grok-3-api-solo-operator.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 0
+ },
+ "content/blog/grok-4-6.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/gumloop-alternatives-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/gumloop-review-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/how-one-person-businesses-work-like-a-team-with-ai.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -2
+ },
+ "content/blog/how-to-build-ai-agents-for-repeated-work.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 8
+ },
+ "content/blog/how-to-build-an-ai-agent-with-chatgpt.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/how-to-build-an-ai-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 5
+ },
+ "content/blog/how-to-build-deepseek-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/how-to-use-obsidian-with-ai-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/html-anything-review-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/html-is-the-new-markdown.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/html-vs-markdown-ai-output.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/introducing-floatim.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 2
+ },
+ "content/blog/kimi-k3-floatboat.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -22
+ },
+ "content/blog/kimi-k3-open-frontier-model.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 21
+ },
+ "content/blog/lark-cli-when-to-use-it.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 0
+ },
+ "content/blog/lindy-vs-gumloop.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -9
+ },
+ "content/blog/llm-knowledge-base-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 8
+ },
+ "content/blog/manus-ai-alternatives-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 0
+ },
+ "content/blog/meta-muse-spark-one-person-company.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/minimax-h3-max-infinite-ai-livestream.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/no-code-ai-agent-builder.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 3
+ },
+ "content/blog/oh-my-codex-vs-superpowers.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 19
+ },
+ "content/blog/openai-4-day-work-week-one-person-company.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/openai-gpt-6-one-person-company.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/relevance-ai-vs-n8n.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/scale-one-person-business-without-hiring.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/solopreneur-pricing-day-one.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/stop-context-switching-workspace-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/vibe-coding-one-prompt-html-game.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/voice-mode-vs-dictation-for-ai-agents.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 23
+ },
+ "content/blog/what-are-claude-managed-agents.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/what-gstack-gets-right-about-one-person-businesses.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/what-is-a-voice-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 21
+ },
+ "content/blog/what-is-deepseek-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 21
+ },
+ "content/blog/what-is-doubao-work.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -29
+ },
+ "content/blog/what-is-jev-model.md": {
+  "src": "feat/jev-model-article",
+  "score": 18
+ },
+ "content/blog/what-is-llm-wiki.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/what-is-minimax-h3.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/what-is-obsidian-vault.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/what-is-persistent-ai-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/what-is-vibe-coding.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/where-is-world-cup-2026-host-cities.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 1
+ },
+ "content/blog/why-ai-forgets-between-sessions.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/why-ai-forgets-every-session.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/workflow-builder-vs-ai-workspace.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/workspace-agents-for-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 7
+ },
+ "content/blog/workspace-agents-vs-chat-assistants.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/workspace-agents-vs-workflow-builders.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/world-cup-2026-bracket.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 26
+ },
+ "content/blog/world-cup-2026-bracketology.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 0
+ },
+ "content/blog/world-cup-2026-draw.md": {
+  "src": "fix/links-pilot-2",
+  "score": 54
+ },
+ "content/blog/world-cup-2026-google-calendar-ics.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 19
+ },
+ "content/blog/world-cup-2026-groups-standings.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 33
+ },
+ "content/blog/world-cup-2026-guide.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -14
+ },
+ "content/blog/world-cup-2026-schedule-usa.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 5
+ },
+ "content/blog/world-cup-2026-schedule.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -16
+ },
+ "content/blog/zh/agentic-ai-tools.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/zh/ai-agent-development-services.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 5
+ },
+ "content/blog/zh/ai-agent-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/ai-agent-use-cases-real-examples.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 4
+ },
+ "content/blog/zh/ai-agent-vs-ai-assistant.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/zh/ai-agent-vs-chatbot.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/zh/ai-agent-workflow-vibe-coding.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 21
+ },
+ "content/blog/zh/ai-agents-2026-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/ai-assistant-for-personal-use-at-work.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 2
+ },
+ "content/blog/zh/ai-automation-agency-do-you-need-one.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 7
+ },
+ "content/blog/zh/ai-automation-agency-pricing.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/zh/ai-browser-agent-vs-ai-browser-vs-ai-workspace.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/zh/ai-follow-up-email-opus-4-8.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 19
+ },
+ "content/blog/zh/ai-meeting-preparation.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/zh/ai-scheduling-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/zh/ai-tools-for-business-automation-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/ai-workflow-for-solo-founders.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/zh/ai-workflow-solo-founders.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 4
+ },
+ "content/blog/zh/ai-workspace-agents.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 0
+ },
+ "content/blog/zh/automate-tiktok-shop-research-fastmoss-floatboat.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -31
+ },
+ "content/blog/zh/best-ai-agent-builder-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/best-ai-agent-platform-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/zh/best-ai-scheduling-assistant.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/zh/best-ai-scheduling-assistants.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 3
+ },
+ "content/blog/zh/best-calendar-app-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/zh/best-claude-cowork-alternatives.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 7
+ },
+ "content/blog/zh/best-claude-tag-alternatives.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/zh/browser-ai-agent-security-questions.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -11
+ },
+ "content/blog/zh/browser-ai-agent-what-it-can-do.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/zh/building-agentic-ai-systems-build-or-buy.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/calendar-driven-ai-vs-chat-ai.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/zh/claude-code-non-developers-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/zh/claude-managed-agents-one-person-company.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/codex-for-chrome-vs-claude-for-chrome.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -5
+ },
+ "content/blog/zh/codex-harness-open-source.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/zh/context-engineering-for-ai-agents.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 7
+ },
+ "content/blog/zh/cordis-plugin-framework.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/zh/custom-ai-agent-development.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 8
+ },
+ "content/blog/zh/deepseek-agent-function-calling.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/deepseek-agent-vs-claude-code.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/deepseek-v4-api-solo-operator.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/deepseek-v4-pro-0813.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/zh/dynamic-workflows-build-or-use-workspace.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/effort-control-fast-mode-ai-work.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/feishu-cli-solo-work-setup.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/zh/first-100-customers-solo-founder.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/zh/floatcup-world-cup-2026-calendar-subscribe.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -1
+ },
+ "content/blog/zh/gemini-3-5-integration-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/gemini-3-7-flash.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/gemini-3-8-flash.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/zh/genspark-ai-pricing.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/zh/genspark-super-agent-explained.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/genspark-vs-manus.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/glm-5-3.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/google-calendar-vs-apple-calendar.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/zh/google-calendar-vs-outlook.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/zh/gpt-5-6-floatboat.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -1
+ },
+ "content/blog/zh/gpt-5-6-sol-terra-luna.md": {
+  "src": "fix/links-pilot-2",
+  "score": 22
+ },
+ "content/blog/zh/gpt-6-astra.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/gpt-image-2-manga-comic-workflow.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 18
+ },
+ "content/blog/zh/gpt-image-2-storyboard-solo.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 5
+ },
+ "content/blog/zh/gpt-image-2-vs-midjourney-nano-banana-2.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/zh/grok-3-api-solo-operator.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 0
+ },
+ "content/blog/zh/grok-4-6.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/gumloop-alternatives-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/zh/gumloop-review-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/zh/how-one-person-businesses-work-like-a-team-with-ai.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 9
+ },
+ "content/blog/zh/how-to-build-ai-agents-for-repeated-work.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 8
+ },
+ "content/blog/zh/how-to-build-an-ai-agent-with-chatgpt.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/zh/how-to-build-an-ai-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 5
+ },
+ "content/blog/zh/how-to-build-deepseek-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/how-to-use-obsidian-with-ai-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/html-anything-review-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/zh/html-is-the-new-markdown.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/html-vs-markdown-ai-output.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/zh/introducing-floatim.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 2
+ },
+ "content/blog/zh/kimi-k3-floatboat.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -31
+ },
+ "content/blog/zh/kimi-k3-open-frontier-model.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 21
+ },
+ "content/blog/zh/lark-cli-when-to-use-it.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 0
+ },
+ "content/blog/zh/lindy-vs-gumloop.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 2
+ },
+ "content/blog/zh/llm-knowledge-base-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 8
+ },
+ "content/blog/zh/manus-ai-alternatives-2026.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 2
+ },
+ "content/blog/zh/meta-muse-spark-one-person-company.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/zh/minimax-h3-max-infinite-ai-livestream.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 13
+ },
+ "content/blog/zh/no-code-ai-agent-builder.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 3
+ },
+ "content/blog/zh/oh-my-codex-vs-superpowers.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 19
+ },
+ "content/blog/zh/openai-4-day-work-week-one-person-company.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 15
+ },
+ "content/blog/zh/openai-gpt-6-one-person-company.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/relevance-ai-vs-n8n.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/zh/scale-one-person-business-without-hiring.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/solopreneur-pricing-day-one.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/stop-context-switching-workspace-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/zh/vibe-coding-one-prompt-html-game.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/voice-mode-vs-dictation-for-ai-agents.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 23
+ },
+ "content/blog/zh/what-are-claude-managed-agents.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 10
+ },
+ "content/blog/zh/what-gstack-gets-right-about-one-person-businesses.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/what-is-a-voice-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 21
+ },
+ "content/blog/zh/what-is-deepseek-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 21
+ },
+ "content/blog/zh/what-is-doubao-work.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -29
+ },
+ "content/blog/zh/what-is-jev-model.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 18
+ },
+ "content/blog/zh/what-is-llm-wiki.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/what-is-minimax-h3.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/zh/what-is-obsidian-vault.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/zh/what-is-persistent-ai-agent.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/zh/what-is-vibe-coding.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 16
+ },
+ "content/blog/zh/where-is-world-cup-2026-host-cities.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 1
+ },
+ "content/blog/zh/why-ai-forgets-between-sessions.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 12
+ },
+ "content/blog/zh/why-ai-forgets-every-session.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/zh/workflow-builder-vs-ai-workspace.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/zh/workspace-agents-for-solo-operators.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 7
+ },
+ "content/blog/zh/workspace-agents-vs-chat-assistants.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 18
+ },
+ "content/blog/zh/workspace-agents-vs-workflow-builders.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/zh/world-cup-2026-bracket.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 14
+ },
+ "content/blog/zh/world-cup-2026-bracketology.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 17
+ },
+ "content/blog/zh/world-cup-2026-draw.md": {
+  "src": "fix/links-pilot-2",
+  "score": 54
+ },
+ "content/blog/zh/world-cup-2026-google-calendar-ics.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 19
+ },
+ "content/blog/zh/world-cup-2026-groups-standings.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -3
+ },
+ "content/blog/zh/world-cup-2026-guide.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -5
+ },
+ "content/blog/zh/world-cup-2026-schedule-usa.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": 11
+ },
+ "content/blog/zh/world-cup-2026-schedule.md": {
+  "src": "feat/links-b1-anchor-cleanup",
+  "score": -10
+ }
+}

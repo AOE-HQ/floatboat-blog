@@ -17,7 +17,7 @@ draft: false
 
 如果你想知道热闹名字背后的 Genspark AI 到底是什么——这里给你简短版。「Super Agent」这个标签听起来像营销话术，没错，确实有一部分是。但它底层的思路，和你在普通 AI 聊天工具里拿到的不一样。
 
-Genspark 由 [MainFunc（一家 Palo Alto 公司）](<https://mainfunc.ai/>)打造，创始团队出身 Microsoft、Google、Meta 和 Pinterest。他们做的不是又一个 ChatGPT 套壳。Super Agent 居于 Genspark 所称「all-in-one AI 工作区」的核心：你交给它一个任务——调研、做幻灯片、问数据问题、甚至打电话——它自己判断该用哪些工具和模型，然后跑起来。
+Genspark 由 [MainFunc（一家 Palo Alto 公司）](https://mainfunc.ai/)打造，创始团队出身 Microsoft、Google、Meta 和 Pinterest。他们做的不是又一个 ChatGPT 套壳。Super Agent 居于 Genspark 所称「all-in-one AI 工作区」的核心：你交给它一个任务——调研、做幻灯片、问数据问题、甚至打电话——它自己判断该用哪些工具和模型，然后跑起来。
 
 它与普通聊天机器人最不同的一点：**同时协调多个 AI 模型**。Genspark 使用他们所称的「Mixture of Agents」架构。你提问时，系统不是只调用一个模型，而是让你的问题流经好几个——包括 GPT-5、Claude 和 Gemini——交叉比对后再给你结果。思路是：多个模型互相校验，能减少单模型工具偶尔会有的那种「自信但错误」的输出。
 
@@ -33,7 +33,7 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 **实际差异在输出形态。**聊天机器人在聊天窗口里给你文字，Genspark 给你结构化交付物——带引用的 Sparkpage、可导出的幻灯片、带真实数据的电子表格。这是实打实的区别，不只是包装。
 
-有一个功能很受关注——尤其是在[它在日本走红之后](<https://www.lindy.ai/blog/genspark-ai-features>)——叫「Call For Me」。AI 真的替你去打电话：订餐厅、查营业时间、改配送时间。它用能听懂自动语音菜单、能和真人对话的语音 AI 完成这些。我自己还没测过，没法担保它实际效果如何。但概念确实有意思——而且说真的，是那种好玩的「有点怪」。
+有一个功能很受关注——尤其是在[它在日本走红之后](https://www.lindy.ai/blog/genspark-ai-features)——叫「Call For Me」。AI 真的替你去打电话：订餐厅、查营业时间、改配送时间。它用能听懂自动语音菜单、能和真人对话的语音 AI 完成这些。我自己还没测过，没法担保它实际效果如何。但概念确实有意思——而且说真的，是那种好玩的「有点怪」。
 
 等等……它还能打电话？好吧，这个我真没想到。
 
@@ -47,7 +47,7 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 每个 Sparkpage 里的 copilot 才是真正有用的地方。页面加载完，你可以让它展开某个章节、加一段对比、或深挖某个具体数据点——全程不用离开页面，没有上下文切换。光这一步，那一次会话就帮我省了大约二十分钟。
 
-除了 Sparkpages，Genspark 还有**AI Slides**（生成带图表和演讲者备注的演示文稿，可导出为 PPTX）、**AI Sheets**（构建电子表格、抓取网页数据、写 Python 做可视化）和**AI Docs**。截至 2026 年 4 月，[Workspace 4.0 更新](<https://www.genspark.ai/blog/genspark-ai-workspace-4>)加入了 PowerPoint、Excel、Word 的原生插件——你可以直接在 Office 应用里用这些 Agent，不用切到 Genspark 的界面。
+除了 Sparkpages，Genspark 还有**AI Slides**（生成带图表和演讲者备注的演示文稿，可导出为 PPTX）、**AI Sheets**（构建电子表格、抓取网页数据、写 Python 做可视化）和**AI Docs**。截至 2026 年 4 月，[Workspace 4.0 更新](https://www.genspark.ai/blog/genspark-ai-workspace-4)加入了 PowerPoint、Excel、Word 的原生插件——你可以直接在 Office 应用里用这些 Agent，不用切到 Genspark 的界面。
 
 说句实在话，这是个不起眼的小胜利。「留在你现有工具里」这个思路，比大多数功能发布都更重要。
 
@@ -71,7 +71,7 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 ## 上限、定价与需要核实的地方
 
-定价是变得最快的一块，所以我写之前专门去查了[官方 Genspark 定价信息](<https://www.lindy.ai/blog/genspark-review>)。截至 2026 年 5 月我看到的情况：
+定价是变得最快的一块，所以我写之前专门去查了[官方 Genspark 定价信息](https://www.lindy.ai/blog/genspark-review)。截至 2026 年 5 月我看到的情况：
 
 **免费版：**每天 100 点数、1 GB 存储。能试 Sparkpages、基础 AI 聊天和大部分功能——但只要你做点正经事，每日上限很快就到顶。适合体验，扛不住真实工作。
 
@@ -79,7 +79,7 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 **Pro 版：**$249.99/月（按年付 $199.99/月）。125,000 点数、1 TB 存储。面向团队或大用量用户。除非你在开代理公司，否则大概率用不上。
 
-动心之前，有几件事建议直接在 [Genspark 官网](<https://www.genspark.ai/>)核实：每次操作的点数成本因生成内容不同差别很大，而且「无限」聊天和图像权益有 2026 年底的到期时间。Genspark 随时可能改这些条款，以定价页现行为准。
+动心之前，有几件事建议直接在 [Genspark 官网](https://www.genspark.ai/)核实：每次操作的点数成本因生成内容不同差别很大，而且「无限」聊天和图像权益有 2026 年底的到期时间。Genspark 随时可能改这些条款，以定价页现行为准。
 
 再给个定价参照：ChatGPT Plus 一个月 $20，是个聊天机器人；Perplexity Pro 一个月 $20，是 AI 搜索。Genspark 把搜索、聊天、幻灯片、表格、文档、图像、视频和 Agent 功能打包，从 $25/月起。纸面上算，价值说得通。实际上，问题是你会不会用全这些功能——还是只用其中两个。
 
@@ -91,13 +91,13 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 ## 往期文章
 
-• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](</blog/ai-workflow-for-solo-founders>) — 在加入又一个 AI 工作区之前，先搞清楚你的瓶颈是调研、执行还是上下文切换。
+• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](/blog/ai-workflow-for-solo-founders) — 在加入又一个 AI 工作区之前，先搞清楚你的瓶颈是调研、执行还是上下文切换。
 
-• [AI Workspace Agents: Why Chat Windows Stop Scaling](</blog/ai-workspace-agents>) — 一旦工作超出单一聊天窗口，多模型系统才开始真正说得通。
+• [AI Workspace Agents: Why Chat Windows Stop Scaling](/blog/ai-workspace-agents) — 一旦工作超出单一聊天窗口，多模型系统才开始真正说得通。
 
-• [How One-Person Businesses Work Like a Team With AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>) — 看看单人创业者如何用 AI 系统在不多添复杂度的前提下减少重复劳动。
+• [How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai) — 看看单人创业者如何用 AI 系统在不多添复杂度的前提下减少重复劳动。
 
-• [How to Evaluate an Agentic AI Company Before You Commit](</blog/agentic-ai-company-guide>) — 无论你评估的是平台还是服务，工作流契合度都比功能清单更重要。
+• [How to Evaluate an Agentic AI Company Before You Commit](/blog/agentic-ai-company-guide) — 无论你评估的是平台还是服务，工作流契合度都比功能清单更重要。
 
-• [Gemini 3.5 Integration: Does Another Model Actually Change Your Workflow?](</blog/gemini-3-5-integration-solo-workflow>) — 更多模型不会自动带来更好的工作流；有时候只是带来更多决策。
+• [Gemini 3.5 Integration: Does Another Model Actually Change Your Workflow?](/blog/gemini-3-5-integration-solo-workflow) — 更多模型不会自动带来更好的工作流；有时候只是带来更多决策。
 

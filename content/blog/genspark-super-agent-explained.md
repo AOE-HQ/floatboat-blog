@@ -17,7 +17,7 @@ Hi, I'm Nova. Genspark Super Agent keeps showing up in my feed, and I've been ge
 
 If you're wondering what Genspark AI actually is beyond the buzzy name — here's the short version. The "super agent" label sounds like marketing, and yeah, partly it is. But the underlying idea is different from what you get with a standard AI chat tool.
 
-Genspark is built by [MainFunc, a Palo Alto-based company](<https://mainfunc.ai/>) founded by alumni from Microsoft, Google, Meta, and Pinterest. What they built isn't another ChatGPT wrapper. The Super Agent sits at the center of what Genspark calls an "all-in-one AI workspace." You give it a task — research, a slide deck, a data question, even a phone call — and it figures out which tools and models to use, then runs them.
+Genspark is built by [MainFunc, a Palo Alto-based company](https://mainfunc.ai/) founded by alumni from Microsoft, Google, Meta, and Pinterest. What they built isn't another ChatGPT wrapper. The Super Agent sits at the center of what Genspark calls an "all-in-one AI workspace." You give it a task — research, a slide deck, a data question, even a phone call — and it figures out which tools and models to use, then runs them.
 
 The part that makes it different from a regular chatbot: it coordinates ​**multiple AI models at once** ​. Genspark uses what they call a "Mixture of Agents" architecture. When you ask something, the system doesn't just call one model. It runs your query through several — including GPT-5, Claude, and Gemini — then cross-references the answers before giving you a result. The idea is that multiple models checking each other reduces the kind of confident-but-wrong outputs that single-model tools sometimes produce.
 
@@ -33,7 +33,7 @@ The Genspark Super Agent tries to skip that loop. You describe an outcome, and i
 
 **The practical difference is in the output format.** A chatbot gives you text in a chat window. Genspark gives you structured deliverables — a Sparkpage with citations, a slide deck you can export, a spreadsheet with actual data. That's a real distinction, not just branding.
 
-One feature that got a lot of attention — especially [after it went viral in Japan](<https://www.lindy.ai/blog/genspark-ai-features>) — is "Call For Me." The AI literally makes phone calls on your behalf. Booking a restaurant, checking store hours, rescheduling a delivery. It uses voice AI that can navigate automated menus and hold actual conversations with humans. I haven't tested this myself yet, so I can't vouch for how well it works in practice. But the concept is interesting — and honestly a little weird in the best way.
+One feature that got a lot of attention — especially [after it went viral in Japan](https://www.lindy.ai/blog/genspark-ai-features) — is "Call For Me." The AI literally makes phone calls on your behalf. Booking a restaurant, checking store hours, rescheduling a delivery. It uses voice AI that can navigate automated menus and hold actual conversations with humans. I haven't tested this myself yet, so I can't vouch for how well it works in practice. But the concept is interesting — and honestly a little weird in the best way.
 
 Wait… it makes phone calls? Okay, I didn't see that coming.
 
@@ -47,7 +47,7 @@ I tried it on a topic I was already familiar with — comparing AI writing tools
 
 The copilot inside each Sparkpage is where it gets useful. After the page loads, you can ask it to expand a section, add a comparison, or drill into a specific data point — without leaving the page. No context-switching. That step alone saved me about twenty minutes on that one session.
 
-Beyond Sparkpages, Genspark also has **AI ​Slides** (generates presentation decks with charts and speaker notes, exportable to PPTX), **AI Sheets** (builds spreadsheets, scrapes web data, writes Python for visualization), and ​**AI Docs** ​. As of April 2026, the [Workspace 4.0 update](<https://www.genspark.ai/blog/genspark-ai-workspace-4>) added native plugins for PowerPoint, Excel, and Word — so you can use these agents directly inside your Office apps without switching to Genspark's interface.
+Beyond Sparkpages, Genspark also has **AI ​Slides** (generates presentation decks with charts and speaker notes, exportable to PPTX), **AI Sheets** (builds spreadsheets, scrapes web data, writes Python for visualization), and ​**AI Docs** ​. As of April 2026, the [Workspace 4.0 update](https://www.genspark.ai/blog/genspark-ai-workspace-4) added native plugins for PowerPoint, Excel, and Word — so you can use these agents directly inside your Office apps without switching to Genspark's interface.
 
 That's a quiet little win, honestly. The "stay in your existing tools" approach matters more than most feature announcements.
 
@@ -71,7 +71,7 @@ I could be wrong here, but my gut says that anyone whose work is primarily writi
 
 ## Limits, Pricing, and What to Verify
 
-Pricing is the part that changes the fastest, so I went and checked the [official Genspark pricing information](<https://www.lindy.ai/blog/genspark-review>) before writing this. Here's what I found as of May 2026:
+Pricing is the part that changes the fastest, so I went and checked the [official Genspark pricing information](https://www.lindy.ai/blog/genspark-review) before writing this. Here's what I found as of May 2026:
 
 **Free plan:** 100 credits per day, 1 GB storage. You can test Sparkpages, basic AI chat, and most features — but daily limits hit fast if you're doing anything substantial. Good for trying it out. Not enough for real work.
 
@@ -79,7 +79,7 @@ Pricing is the part that changes the fastest, so I went and checked the [officia
 
 **Pro​ plan:** $249.99/month ($199.99/month annually). 125,000 credits, 1 TB storage. Built for teams or heavy-volume users. Unless you're running an agency, this is probably overkill.
 
-A few things worth verifying directly on the [Genspark official site](<https://www.genspark.ai/>) before you commit: the credit costs per action vary a lot depending on what you're generating, and the "unlimited" chat and image perks have that end-of-2026 expiration. Genspark could change these terms, so check the live pricing page for the current numbers.
+A few things worth verifying directly on the [Genspark official site](https://www.genspark.ai/) before you commit: the credit costs per action vary a lot depending on what you're generating, and the "unlimited" chat and image perks have that end-of-2026 expiration. Genspark could change these terms, so check the live pricing page for the current numbers.
 
 One more thing on pricing context. ChatGPT Plus runs $20/month for a chatbot. Perplexity Pro is $20/month for AI search. Genspark bundles search, chat, slides, sheets, docs, images, video, and agent features starting at $25/month. On paper, the value math works. In practice, the question is whether you'll use all those features or just two of them.
 
@@ -92,13 +92,13 @@ That's my honest take. You'll have to decide what's right for your situation.
 
 ## Previous Posts:
 
-• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](</blog/ai-workflow-for-solo-founders>) — Before adding another AI workspace, figure out whether your bottleneck is research, execution, or context-switching.
+• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](/blog/ai-workflow-for-solo-founders) — Before adding another AI workspace, figure out whether your bottleneck is research, execution, or context-switching.
 
-• [AI Workspace Agents: Why Chat Windows Stop Scaling](</blog/ai-workspace-agents>) — Multi-model systems start making more sense once work moves beyond a single chat window.
+• [AI Workspace Agents: Why Chat Windows Stop Scaling](/blog/ai-workspace-agents) — Multi-model systems start making more sense once work moves beyond a single chat window.
 
-• [How One-Person Businesses Work Like a Team With AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>) — A look at how solo operators use AI systems to reduce repetitive work without adding unnecessary complexity.
+• [How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai) — A look at how solo operators use AI systems to reduce repetitive work without adding unnecessary complexity.
 
-• [How to Evaluate an Agentic AI Company Before You Commit](</blog/agentic-ai-company-guide>) — Whether you're evaluating a platform or a service, workflow fit matters more than feature lists.
+• [How to Evaluate an Agentic AI Company Before You Commit](/blog/agentic-ai-company-guide) — Whether you're evaluating a platform or a service, workflow fit matters more than feature lists.
 
-• [Gemini 3.5 Integration: Does Another Model Actually Change Your Workflow?](</blog/gemini-3-5-integration-solo-workflow>) — More models don't automatically create better workflows; sometimes they create more decisions.
+• [Gemini 3.5 Integration: Does Another Model Actually Change Your Workflow?](/blog/gemini-3-5-integration-solo-workflow) — More models don't automatically create better workflows; sometimes they create more decisions.
 

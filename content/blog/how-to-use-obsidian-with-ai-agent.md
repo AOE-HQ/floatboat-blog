@@ -14,7 +14,7 @@ draft: false
 **TL;DR**
   * **How to use Obsidian with an AI agent** starts with a clear split: Obsidian owns linked Markdown thinking; the agent owns cross-app execution against that folder and the rest of your desktop.
 
-  * Treat your <a href="/blog/what-is-obsidian-vault">Obsidian vault</a> as source of truth — plain files on disk — then authorize a desktop agent to read (and, when you allow, write) that folder for the current project or calendar block.
+  * Treat your [Obsidian vault](/blog/what-is-obsidian-vault) as source of truth — plain files on disk — then authorize a desktop agent to read (and, when you allow, write) that folder for the current project or calendar block.
 
   * Most "AI inside Obsidian" setups (chat plugins, clipper interpreters) help _inside_ the note app. Desktop agents help when the job spans email, Drive, PDFs, Downloads, and the vault together.
 
@@ -28,7 +28,7 @@ draft: false
 
 Obsidian is excellent at what it was built for: a local, linked knowledge base. You capture ideas as Markdown, connect them with [[wikilinks]], and watch a personal graph grow. The friction appears when today's job is not "write a better note" but "ship something that needs the note _and_ three other systems." Client context lives in the vault; the brief must also pull last week's email, a PDF on the Desktop, and a deadline on the calendar. Staying only inside Obsidian means endless copy-paste. Staying only inside a chat box means re-explaining the vault every session.
 
-That is why operators search for **how to use Obsidian with an AI agent**. They are not asking Obsidian to become Notion AI. They are asking for a runtime that can see the vault as one folder among many — then act across apps while the notes stay local and durable. For a precise definition of the folder itself, start with <a href="/blog/what-is-obsidian-vault">what an Obsidian vault is</a>; this guide assumes you already have one (or can create a folder of Markdown in minutes).
+That is why operators search for **how to use Obsidian with an AI agent**. They are not asking Obsidian to become Notion AI. They are asking for a runtime that can see the vault as one folder among many — then act across apps while the notes stay local and durable. For a precise definition of the folder itself, start with [what an Obsidian vault is](/blog/what-is-obsidian-vault); this guide assumes you already have one (or can create a folder of Markdown in minutes).
 
 The mental model that holds: traditional apps are rooms in a courtyard. Obsidian is one strong room — maybe the library. An AI agent OS is closer to wiring the whole courtyard: lights, schedules, and runners that move between rooms with permission. You do not demolish the library. You stop pretending every errand must be done from inside it.
 
@@ -38,7 +38,7 @@ Keep **thinking artifacts** in Obsidian: evergreen notes, project pages, meeting
 
 Community AI plugins and Obsidian's Web Clipper Interpreter are valuable _inside_ the vault workflow — summarizing a clipped article, chatting over indexed notes, drafting in place. They optimize the library. They rarely replace a desktop agent when the task is "prepare everything for Thursday's investor call using vault + inbox + local deck folder." Different jobs, different surfaces.
 
-Desktop agents such as Claude Cowork-style tools and calendar-driven runtimes like Floatboat share one prerequisite with Obsidian: **local files**. Because a vault is already a folder, you do not need a proprietary export to give an agent context. You point it at the path, scope permissions, and describe the outcome. That is the practical bridge between PKM and agent OS categories — complementary, not competitive. For how calendar-native triggers differ from chat-initiated agents, see <a href="/blog/calendar-driven-ai-vs-chat-ai">Calendar-Driven AI vs Chat-Based AI</a>.
+Desktop agents such as Claude Cowork-style tools and calendar-driven runtimes like Floatboat share one prerequisite with Obsidian: **local files**. Because a vault is already a folder, you do not need a proprietary export to give an agent context. You point it at the path, scope permissions, and describe the outcome. That is the practical bridge between PKM and agent OS categories — complementary, not competitive. For how calendar-native triggers differ from chat-initiated agents, see [Calendar-Driven AI vs Chat-Based AI](/blog/calendar-driven-ai-vs-chat-ai).
 
 ## 3\. Workflow: Vault as Source of Truth, Agent as Runtime
 
@@ -46,7 +46,7 @@ A workable loop has four moves. First, **stabilize the vault path**. Know which 
 
 Second, **authorize the folder**. In a desktop agent, grant read access to the vault directory the same way you would grant Documents or a client share. Prefer least privilege: the vault for this quarter's work, not your entire home directory, unless you truly need it.
 
-Third, **attach the job to a trigger**. For ad-hoc work, open the agent and name the outcome: "Draft a one-page brief for Acme using Projects/Acme and last week's email." For rhythmic work, bind the same idea to a calendar event so prep runs before the call instead of when you remember — the pattern behind <a href="/blog/ai-meeting-preparation">AI meeting preparation</a> pipelines.
+Third, **attach the job to a trigger**. For ad-hoc work, open the agent and name the outcome: "Draft a one-page brief for Acme using Projects/Acme and last week's email." For rhythmic work, bind the same idea to a calendar event so prep runs before the call instead of when you remember — the pattern behind [AI meeting preparation](/blog/ai-meeting-preparation) pipelines.
 
 Fourth, **review outputs, then write back selectively**. Let the agent produce the deliverable in a working folder or draft note. You decide what gets promoted into evergreen Markdown. That keeps the vault curated instead of flooding it with every intermediate AI file.
 
@@ -92,7 +92,7 @@ The market for "Obsidian with an AI agent" is not one product. As of mid-2026 it
 
   1. Floatboat — Best for calendar-driven work across the vault and other apps
 
-Floatboat ranks first when the job is not "chat with my notes" but "make Thursday's client work happen." It is a proactive agent OS on Mac and Windows: calendar events and deadlines can trigger prep and execution, local folders (including an Obsidian vault) stay in scope, and the same workspace chains into skills such as the <a href="/ai-file-organizer">AI File Organizer</a>. You keep thinking in Obsidian; Floatboat runs the courtyard — mail, files, models, and schedule — without forcing you to rebuild context in a plugin sidebar each morning. For the paradigm contrast with chat-only tools, see <a href="/blog/calendar-driven-ai-vs-chat-ai">Calendar-Driven AI vs Chat-Based AI</a>.
+Floatboat ranks first when the job is not "chat with my notes" but "make Thursday's client work happen." It is a proactive agent OS on Mac and Windows: calendar events and deadlines can trigger prep and execution, local folders (including an Obsidian vault) stay in scope, and the same workspace chains into skills such as the <a href="/ai-file-organizer">AI File Organizer</a>. You keep thinking in Obsidian; Floatboat runs the courtyard — mail, files, models, and schedule — without forcing you to rebuild context in a plugin sidebar each morning. For the paradigm contrast with chat-only tools, see [Calendar-Driven AI vs Chat-Based AI](/blog/calendar-driven-ai-vs-chat-ai).
 
 Skip Floatboat as the _first_ install if you only want semantic search while writing inside Obsidian and never leave the editor. In that case start with an in-vault plugin and add a desktop runtime later.
 
@@ -110,7 +110,7 @@ Choose something else if you are not comfortable with CLI agents, bash permissio
 
   4. Claude Cowork — Best for Anthropic-native desktop batches on local folders
 
-<a href="<https://claude.com/product/cowork>" rel="nofollow noopener">Claude Cowork</a> is Anthropic's desktop (and web/mobile beta) mode for non-coding knowledge work: you assign an outcome, Claude plans and executes across folders and connectors you authorize. Because a vault is a folder, Cowork can work against it the same way it works against Documents — without an Obsidian-specific plugin. See our definition piece on <a href="/blog/what-is-claude-cowork">what Claude Cowork is</a>.
+<a href="<https://claude.com/product/cowork>" rel="nofollow noopener">Claude Cowork</a> is Anthropic's desktop (and web/mobile beta) mode for non-coding knowledge work: you assign an outcome, Claude plans and executes across folders and connectors you authorize. Because a vault is a folder, Cowork can work against it the same way it works against Documents — without an Obsidian-specific plugin. See our definition piece on [what Claude Cowork is](/blog/what-is-claude-cowork).
 
 Cowork is user- or schedule-initiated inside Claude, not an Obsidian-native graph tool and not automatically tied to every calendar event unless you build that habit. Teams locked into Anthropic billing and folder batches will prefer it; operators who want calendar-as-runtime as the default should compare calendar-driven agents instead.
 

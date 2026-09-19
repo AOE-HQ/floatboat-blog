@@ -25,11 +25,11 @@ draft: false
 
 这个名字抓住了那种感觉：你是跟着感觉走，不是照着公式走。你在引导，不是在工程化。
 
-据[维基百科的 vibe coding 词条](<https://en.wikipedia.org/wiki/Vibe_coding>)，这种实践涉及"不做彻底审查就接受 AI 生成的代码，转而依赖运行结果和后续 prompt 来引导修改"。这是个公允的描述。也正是它让 Vibe Coding 对快速实验有用、对生产系统有风险的原因。
+据[维基百科的 vibe coding 词条](https://en.wikipedia.org/wiki/Vibe_coding)，这种实践涉及"不做彻底审查就接受 AI 生成的代码，转而依赖运行结果和后续 prompt 来引导修改"。这是个公允的描述。也正是它让 Vibe Coding 对快速实验有用、对生产系统有风险的原因。
 
 ### 这个词从哪来
 
-2025 年 2 月 2 日，AI 研究者、OpenAI 联合创始人 Andrej Karpathy [在 X 上发帖描述一种新的编程方式](<https://x.com/karpathy/status/1886192184808149383>)——你"彻底臣服于氛围，拥抱指数，甚至忘掉代码的存在"。他写道："我只是看到东西、说出东西、运行东西、复制粘贴东西，而且它大多能跑。"
+2025 年 2 月 2 日，AI 研究者、OpenAI 联合创始人 Andrej Karpathy [在 X 上发帖描述一种新的编程方式](https://x.com/karpathy/status/1886192184808149383)——你"彻底臣服于氛围，拥抱指数，甚至忘掉代码的存在"。他写道："我只是看到东西、说出东西、运行东西、复制粘贴东西，而且它大多能跑。"
 
 一篇帖子。它能引起共鸣，是因为它给很多人在悄悄做的事命了名。柯林斯英语词典把 "vibe coding" 评为 2025 年度词汇。对一条推文来说，相当不错。
 
@@ -45,7 +45,7 @@ draft: false
 
 传统开发意味着拥有每一行代码——具体的语法、具体的逻辑、具体的调试。你（理论上）理解每个部分做什么。
 
-**Vibe Coding 把这套颠倒过来。**如 [Google Cloud 在其 vibe coding 概览中解释的](<https://cloud.google.com/discover/what-is-vibe-coding>)，这种方式"让你转而专注于想要的结果，用自然语言描述目标，由 AI 处理真正的代码"。主要角色从"写"变成了"引导"。
+**Vibe Coding 把这套颠倒过来。**如 [Google Cloud 在其 vibe coding 概览中解释的](https://cloud.google.com/discover/what-is-vibe-coding)，这种方式"让你转而专注于想要的结果，用自然语言描述目标，由 AI 处理真正的代码"。主要角色从"写"变成了"引导"。
 
 诚实版：这对简单、自包含的任务很有效。对任何触及复杂性、状态或安全的东西，效果就差一些。
 
@@ -83,7 +83,7 @@ draft: false
 
 ### 反弹是从哪开始的
 
-2026 年 2 月 8 日——他推广这个词整整一年之后——Karpathy 宣布 Vibe Coding 已经过时。[The New Stack 报道了他的发言](<https://thenewstack.io/vibe-coding-is-passe/>)：他现在更喜欢 "agentic engineering" 这个词：_"agentic，因为新的默认状态是你 99% 的时间并不直接写代码，而是在编排替你干活的 Agent、并充当监督；engineering，是为了强调其中存在一门技艺与科学，以及专业经验。"_
+2026 年 2 月 8 日——他推广这个词整整一年之后——Karpathy 宣布 Vibe Coding 已经过时。[The New Stack 报道了他的发言](https://thenewstack.io/vibe-coding-is-passe/)：他现在更喜欢 "agentic engineering" 这个词：_"agentic，因为新的默认状态是你 99% 的时间并不直接写代码，而是在编排替你干活的 Agent、并充当监督；engineering，是为了强调其中存在一门技艺与科学，以及专业经验。"_
 
 开发者的反弹在那之前就已经在积聚。到 2025 年年中，工程师们开始报告 Fast Company 所称的"Vibe Coding 宿醉"——团队接手了自己看不懂、没法调试、也不敢安全扩展的 AI 生成代码库。
 
@@ -109,7 +109,7 @@ draft: false
 
 ### 系统变得过于复杂时
 
-安全是 Vibe Coding 失效最清晰的例子。正如 [TechTarget 报道 AI 生成代码不断增长的风险时所说](<https://www.techtarget.com/searchapparchitecture/tip/Vibe-coding-is-killing-open-source-increasing-software-risk>)，代码更替与重复正随着安全债一起加速。OWASP 在 2025 年给它的 Top 10 加了一个专门类别，把"AI 辅助代码缺陷"明确标记为开发团队需要应对的一种模式。AI 生成的代码为功能性而优化，不是为安全性而优化。这不是同一个需求——而对一个团队里没有安全工程师的单人创始人来说，这个缺口可能在最糟的时机冒出来。
+安全是 Vibe Coding 失效最清晰的例子。正如 [TechTarget 报道 AI 生成代码不断增长的风险时所说](https://www.techtarget.com/searchapparchitecture/tip/Vibe-coding-is-killing-open-source-increasing-software-risk)，代码更替与重复正随着安全债一起加速。OWASP 在 2025 年给它的 Top 10 加了一个专门类别，把"AI 辅助代码缺陷"明确标记为开发团队需要应对的一种模式。AI 生成的代码为功能性而优化，不是为安全性而优化。这不是同一个需求——而对一个团队里没有安全工程师的单人创始人来说，这个缺口可能在最糟的时机冒出来。
 
 ![4.png](/blog/images/what-is-vibe-coding/1776318333381-2505b153-4cd6-41d5-89ce-bf8d4a4fe3a5.webp)
 
@@ -165,13 +165,13 @@ prompt 与工作流之间的区别，就是"问路"和"手里有张地图"之间
 
 ## 延伸阅读
 
-* [理解 AI Agent 与聊天机器人的区别](</blog/ai-agent-vs-chatbot>)
+* [理解 AI Agent 与聊天机器人的区别](/blog/ai-agent-vs-chatbot)
 
-* [了解 2026 年 AI Agent 到底如何为单人创业者工作](</blog/ai-agents-2026-solo-operators>)
+* [了解 2026 年 AI Agent 到底如何为单人创业者工作](/blog/ai-agents-2026-solo-operators)
 
-* [看看如何一步步构建你自己的 AI Agent](</blog/how-to-build-an-ai-agent>)
+* [看看如何一步步构建你自己的 AI Agent](/blog/how-to-build-an-ai-agent)
 
-* [探索从 AI 助手到真正的 AI Agent 的转变](</blog/ai-agent-vs-ai-assistant>)
+* [探索从 AI 助手到真正的 AI Agent 的转变](/blog/ai-agent-vs-ai-assistant)
 
-* [在真实工作流中发现实用的 AI Agent 用例](</blog/ai-agent-use-cases-real-examples>)
+* [在真实工作流中发现实用的 AI Agent 用例](/blog/ai-agent-use-cases-real-examples)
 

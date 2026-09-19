@@ -35,9 +35,9 @@ Markdown is not going away. I want to be clear about that because the "HTML is t
 
 Here's where Markdown for AI agents is still the right default:
 
-**Anything that gets version-controlled.** If the output goes into a Git repo — READMEs, changelogs, technical specs, [CLAUDE.md](<http://CLAUDE.md>) files — Markdown diffs are clean and readable. HTML diffs are noise. I've tried reviewing HTML diffs in pull requests and it's like reading a redlined legal document through a kaleidoscope. Not useful.
+**Anything that gets version-controlled.** If the output goes into a Git repo — READMEs, changelogs, technical specs, [CLAUDE.md](http://CLAUDE.md) files — Markdown diffs are clean and readable. HTML diffs are noise. I've tried reviewing HTML diffs in pull requests and it's like reading a redlined legal document through a kaleidoscope. Not useful.
 
-**Agent-to-agent handoffs.** When one AI step produces output that another AI step consumes, the human never sees it. No human eyes, no need for visual hierarchy. Markdown keeps token costs down and parsing simple. The [Markdown Guide](<https://www.markdownguide.org/getting-started/>) puts this well: the format was designed so that even the raw source is readable as-is. For machine consumption, that readability-in-source quality doesn't matter — but the token efficiency does.
+**Agent-to-agent handoffs.** When one AI step produces output that another AI step consumes, the human never sees it. No human eyes, no need for visual hierarchy. Markdown keeps token costs down and parsing simple. The [Markdown Guide](https://www.markdownguide.org/getting-started/) puts this well: the format was designed so that even the raw source is readable as-is. For machine consumption, that readability-in-source quality doesn't matter — but the token efficiency does.
 
 **Quick notes and drafts.** If I'm asking Claude to brainstorm ten ideas or outline a project, Markdown is faster to generate, easier to edit, and instantly readable in any text editor. I don't need collapsible sections for a list I'll read once and delete.
 
@@ -47,7 +47,7 @@ The pattern: **when the output is meant to be edited, versioned, or consumed by 
 
 ### Reports, reviews, dashboards, specs, prototypes
 
-This is where the shift is real. When Thariq Shihipar from Anthropic's Claude Code team published his [companion examples of AI-generated HTML](<https://thariqs.github.io/html-effectiveness/>), the thing that clicked for me wasn't the technical argument — it was opening the same implementation plan in both formats and feeling the difference.
+This is where the shift is real. When Thariq Shihipar from Anthropic's Claude Code team published his [companion examples of AI-generated HTML](https://thariqs.github.io/html-effectiveness/), the thing that clicked for me wasn't the technical argument — it was opening the same implementation plan in both formats and feeling the difference.
 
 The Markdown version was fine. The HTML version had a sticky navigation sidebar, color-coded priority levels, and collapsible sections. I read the whole thing. I usually don't.
 
@@ -59,7 +59,7 @@ Here's how I think about when HTML artifacts earn their place:
 
 **Prototypes and mockups.** If your agent can produce a working HTML prototype — a landing page, a form, a dashboard layout — that's a deliverable, not a document. You can open it in a browser, share it with a client, iterate on it. Markdown can't do that.
 
-**Shareable artifacts.** An HTML file with inline CSS travels well. Email it, open it on any device, no renderer required. Markdown needs a rendering engine to look like anything — and which engine matters, because [GitHub's Markdown rendering](<https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>) is not the same as Obsidian's, which is not the same as Notion's.
+**Shareable artifacts.** An HTML file with inline CSS travels well. Email it, open it on any device, no renderer required. Markdown needs a rendering engine to look like anything — and which engine matters, because [GitHub's Markdown rendering](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) is not the same as Obsidian's, which is not the same as Notion's.
 
 The pattern: **when the output is meant to be read, compared, or acted on by a human, ​HTML** ​**​ earns the extra weight.**
 
@@ -75,7 +75,7 @@ Here's what I can say with confidence:
 
 **Longer outputs amplify the difference.** A three-paragraph summary? The token gap between Markdown and HTML is negligible. A 20-section implementation plan with tables, color coding, and navigation? The gap is meaningful. The more visual structure the HTML needs, the wider the cost spread.
 
-**The honest way to check is to test it yourself.** Run the same prompt in both formats and compare token counts in your chosen model. I checked Anthropic's [API pricing documentation](<https://docs.anthropic.com/en/docs/about-claude/pricing>) to make sure I understood how output tokens get billed — it's per-token on the output side, so longer HTML outputs do cost proportionally more. But for most solo operators generating individual deliverables, the difference is small enough to be worth the readability gain.
+**The honest way to check is to test it yourself.** Run the same prompt in both formats and compare token counts in your chosen model. I checked Anthropic's [API pricing documentation](https://docs.anthropic.com/en/docs/about-claude/pricing) to make sure I understood how output tokens get billed — it's per-token on the output side, so longer HTML outputs do cost proportionally more. But for most solo operators generating individual deliverables, the difference is small enough to be worth the readability gain.
 
 There's also a maintenance angle. Markdown files are easy to hand-edit. HTML files — especially ones with embedded CSS — are harder to tweak without breaking the layout. If you need to make a quick change to a document after the agent generates it, Markdown is more forgiving.
 
@@ -93,7 +93,7 @@ If you're a solo operator — content, strategy, delivery, all of it — here's 
 
   3. **Does it need visual structure?** If it's a flat list, outline, or paragraph → Markdown is fine. If it needs tabs, color coding, navigation, or side-by-side comparison → HTML.
 
-  4. **Will it be reused or templated?** If you produce the same type of output repeatedly and want visual consistency, tools like [Claude Artifacts](<https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them>) or local-first agentic HTML editors like html-anything can template the process. One-off requests don't need that infrastructure.
+  4. **Will it be reused or templated?** If you produce the same type of output repeatedly and want visual consistency, tools like [Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) or local-first agentic HTML editors like html-anything can template the process. One-off requests don't need that infrastructure.
 
 The default I've landed on: ​**draft and iterate in ​Markdown** ​, then convert or refine to ​HTML**​** ​ when delivering to humans. This hybrid workflow means I get Markdown's editability during the thinking phase and HTML's readability for the shipping phase. I've been using this for a few weeks now and it feels right — though I'll know more once I've hit more edge cases.
 
@@ -105,11 +105,11 @@ That's the framework. It's not complicated, but it took me a while to land on so
 
 ## Previous Posts:
 
-• [HTML-Anything Review: Can AI Turn HTML Into Real Deliverables?](</blog/html-anything-review-2026>) — I tested whether html-anything actually turns the "HTML is the new Markdown" idea into a usable workflow.
+• [HTML-Anything Review: Can AI Turn HTML Into Real Deliverables?](/blog/html-anything-review-2026) — I tested whether html-anything actually turns the "HTML is the new Markdown" idea into a usable workflow.
 
-• [Claude Code vs Chrome Extensions: Which Workflow Actually Saves Time?](</blog/codex-for-chrome-vs-claude-for-chrome>) — Not every AI workflow needs a coding agent; here's where browser-native tools fit better.
+• [Claude Code vs Chrome Extensions: Which Workflow Actually Saves Time?](/blog/codex-for-chrome-vs-claude-for-chrome) — Not every AI workflow needs a coding agent; here's where browser-native tools fit better.
 
-• [Workspace Agents vs Chat Assistants: Why the Difference Matters](</blog/workspace-agents-vs-chat-assistants>) — The jump from chat responses to reusable work artifacts changes how AI output gets used.
+• [Workspace Agents vs Chat Assistants: Why the Difference Matters](/blog/workspace-agents-vs-chat-assistants) — The jump from chat responses to reusable work artifacts changes how AI output gets used.
 
-• [AI Workspace Agents: Why Solo Operators Need More Than Chat Windows](</blog/ai-workspace-agents>) — Rich AI output starts making more sense once the workspace itself becomes part of the workflow.
+• [AI Workspace Agents: Why Solo Operators Need More Than Chat Windows](/blog/ai-workspace-agents) — Rich AI output starts making more sense once the workspace itself becomes part of the workflow.
 

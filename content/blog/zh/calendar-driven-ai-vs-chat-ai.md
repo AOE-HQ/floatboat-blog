@@ -138,11 +138,6 @@ _如果你第一次接触 agentic calendar 和日历驱动的 AI，建议先读 
 
 * * *
 
-## 延伸阅读
-
-  * 什么是 Agentic Calendar？——日历驱动 AI 所催生的品类的底层定义。
-
-  * 什么是 AI 日程 Agent？——从智能排程器到日历驱动 Agent OS 的四代演进。
-
-  * AI 会前准备是怎么做的？——日历驱动式准备在实际中的具体演示。
-
+## 延伸阅读- [什么是 Agentic Calendar？——日历驱动 AI 所催生的品类的底层定义。](/zh/blog/what-is-agentic-calendar)
+- [什么是 AI 日程 Agent？——从智能排程器到日历驱动 Agent OS 的四代演进。](/zh/blog/ai-scheduling-agent)
+- [AI 会前准备是怎么做的？——日历驱动式准备在实际中的具体演示。](/zh/blog/ai-meeting-preparation)

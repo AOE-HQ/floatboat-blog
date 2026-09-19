@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Hey, I'm Nova. I stumbled onto gstack the same way most non-developers did — scrolling X when I should have been finishing a deliverable. Someone retweeted [Garry Tan's announcement on GitHub](<https://github.com/garrytan/gstack>). The repository hit 10,000 stars in 48 hours, making it one of the fastest-growing developer tools on GitHub in 2026. I'm not a developer. I almost kept scrolling.
+Hey, I'm Nova. I stumbled onto gstack the same way most non-developers did — scrolling X when I should have been finishing a deliverable. Someone retweeted [Garry Tan's announcement on GitHub](https://github.com/garrytan/gstack). The repository hit 10,000 stars in 48 hours, making it one of the fastest-growing developer tools on GitHub in 2026. I'm not a developer. I almost kept scrolling.
 
 Then I read what it actually was — and stopped.
 
@@ -19,9 +19,9 @@ Then I read what it actually was — and stopped.
 
 ## What gstack Actually Is — And Why the Idea Is Bigger Than Code
 
-[gstack](<https://github.com/garrytan/gstack>) is an open-source skill pack for ​**Claude Code** ​, built by Garry Tan — President & CEO of Y Combinator. It transforms a single AI assistant into a structured team of specialists: a CEO role for product review, an Engineering Manager role that locks architecture, a QA Engineer that opens a real browser and clicks through things, a Release Manager for docs. Each role runs as a slash command.
+[gstack](https://github.com/garrytan/gstack) is an open-source skill pack for ​**Claude Code** ​, built by Garry Tan — President & CEO of Y Combinator. It transforms a single AI assistant into a structured team of specialists: a CEO role for product review, an Engineering Manager role that locks architecture, a QA Engineer that opens a real browser and clicks through things, a Release Manager for docs. Each role runs as a slash command.
 
-The throughput numbers Tan shared publicly are striking: using this setup, he averaged approximately 10,000 lines of code and 100 pull requests per week over a 50-day period — roughly 600,000 lines of production code, 35% of which were tests. (As [TechCrunch noted in their coverage](<https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/>), the community reaction was mixed — some found it genuinely useful, others called it "just prompts." Both reactions are fair.)
+The throughput numbers Tan shared publicly are striking: using this setup, he averaged approximately 10,000 lines of code and 100 pull requests per week over a 50-day period — roughly 600,000 lines of production code, 35% of which were tests. (As [TechCrunch noted in their coverage](https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/), the community reaction was mixed — some found it genuinely useful, others called it "just prompts." Both reactions are fair.)
 
 The philosophy behind it: **most people treat AI as a universal tool, giving it vague multi-task instructions within a single context. The result is unfocused output that lacks the depth a real team would deliver.** gstack's answer is what they call "cognitive gearing" — forcing the model into distinct roles so it can't context-switch mid-task.
 
@@ -37,7 +37,7 @@ I run a one-person content operation. No dev team, no managers — just me, doin
 
 Most AI users do the same thing. Open a chat, type whatever they need, in whatever mode they're currently in: _Write this email. Now help me think about my Q2 strategy. Now summarize this competitor's site. Now help me figure out pricing._ The AI obligingly switches with you. But the output is kind of shallow. It's doing what you asked — it's just not doing it from the right mental position.
 
-**Research backs this up.** A 2025 study from [MIT Sloan's research on AI and knowledge workers](<https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity>) found that consultants using AI performed best when they maintained "cognitive effort and expert judgment" at each stage — what researchers called operating as "centaurs," deliberately dividing tasks between AI and themselves. Workers who let AI handle everything without role boundaries tended to produce lower-quality reasoning, even when the prose looked polished.
+**Research backs this up.** A 2025 study from [MIT Sloan's research on AI and knowledge workers](https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity) found that consultants using AI performed best when they maintained "cognitive effort and expert judgment" at each stage — what researchers called operating as "centaurs," deliberately dividing tasks between AI and themselves. Workers who let AI handle everything without role boundaries tended to produce lower-quality reasoning, even when the prose looked polished.
 
 The problem isn't the AI. It's that nobody told it which role to be in.
 
@@ -69,13 +69,13 @@ I can't give you a controlled experiment. But I've run this pattern consistently
 
 There's a real reason role boundaries improve AI output — it's not just placebo.
 
-[Research from the St. Louis Fed summarizing recent AI productivity studies](<https://www.stlouisfed.org/open-vault/2025/oct/generative-ai-productivity-future-work>) found that workers who used AI daily saved an average of 5.4% of their work hours, or roughly 2.2 hours per week in a 40-hour week. But the gains weren't evenly distributed. Workers who integrated AI into structured, task-specific workflows saw the highest time savings — not the ones who used it as a general-purpose chat tool.
+[Research from the St. Louis Fed summarizing recent AI productivity studies](https://www.stlouisfed.org/open-vault/2025/oct/generative-ai-productivity-future-work) found that workers who used AI daily saved an average of 5.4% of their work hours, or roughly 2.2 hours per week in a 40-hour week. But the gains weren't evenly distributed. Workers who integrated AI into structured, task-specific workflows saw the highest time savings — not the ones who used it as a general-purpose chat tool.
 
 The mechanism: **when you give a language model a constrained role with clear scope, you reduce the ambiguity of what counts as a "good" output.** The model isn't trying to satisfy multiple simultaneous goals. It's optimizing for one thing — the thing you actually need right now.
 
 This is different from a system prompt. A system prompt sets general behavior and tone. A role-based frame goes further — it defines what the model should prioritize, what it should ignore, and what kind of output counts as success for ​ _this specific step_ ​. It's the difference between "be helpful" and "you are a research analyst whose job is to surface contradictions in the data, not to solve them."
 
-One caveat worth naming: research on role prompting is mixed. [Sander Schulhoff's comprehensive 2025 analysis of prompting techniques](<https://www.lennysnewsletter.com/p/ai-prompt-engineering-in-2025-sander-schulhoff>), based on a review co-authored with researchers from OpenAI, Microsoft, Google, Princeton, and Stanford, found that simple role prompts like "you are a math professor" have little effect on accuracy. **What matters isn't the label — it's the constraints and scope you attach to the role.** "You are a research analyst" does nothing. "You are a research analyst. Your only output should be patterns and flagged assumptions, not recommendations or prose" — that's different.
+One caveat worth naming: research on role prompting is mixed. [Sander Schulhoff's comprehensive 2025 analysis of prompting techniques](https://www.lennysnewsletter.com/p/ai-prompt-engineering-in-2025-sander-schulhoff), based on a review co-authored with researchers from OpenAI, Microsoft, Google, Princeton, and Stanford, found that simple role prompts like "you are a math professor" have little effect on accuracy. **What matters isn't the label — it's the constraints and scope you attach to the role.** "You are a research analyst" does nothing. "You are a research analyst. Your only output should be patterns and flagged assumptions, not recommendations or prose" — that's different.
 
 ## Where Role-Based AI Breaks Down
 
@@ -109,13 +109,13 @@ _Back to building things._
 
 ## **Previous Posts:**
 
-  * [Learn how solo operators can structure AI workflows to function like a full team](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [Learn how solo operators can structure AI workflows to function like a full team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [Understand the practical difference between AI agents and assistants when assigning roles in workflows](</blog/ai-agent-vs-ai-assistant>)
+  * [Understand the practical difference between AI agents and assistants when assigning roles in workflows](/blog/ai-agent-vs-ai-assistant)
 
-  * [Explore how to actually build an AI agent system instead of relying on a single general assistant](</blog/how-to-build-an-ai-agent>)
+  * [Explore how to actually build an AI agent system instead of relying on a single general assistant](/blog/how-to-build-an-ai-agent)
 
-  * [See real-world AI agent use cases to understand how role-based systems perform in practice](</blog/ai-agent-use-cases-real-examples>)
+  * [See real-world AI agent use cases to understand how role-based systems perform in practice](/blog/ai-agent-use-cases-real-examples)
 
-  * [Compare workflow builders vs AI workspaces when designing structured, role-based AI systems](</blog/workflow-builder-vs-ai-workspace>)
+  * [Compare workflow builders vs AI workspaces when designing structured, role-based AI systems](/blog/workflow-builder-vs-ai-workspace)
 

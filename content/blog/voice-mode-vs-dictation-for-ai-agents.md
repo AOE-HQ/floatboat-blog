@@ -48,11 +48,11 @@ This is the paradigm behind "talk through a hard problem while walking" or "prac
 
 Four properties separate voice mode from dictation in practice.
 
-**Two-way audio.** The model speaks back. Latency, voice selection, and turn-taking quality define the experience. OpenAI's GPT-Live uses a full-duplex architecture so you can interrupt or overlap without rigid silence-based turn detection—a meaningful upgrade over earlier turn-by-turn voice stacks that could mistake a pause for "your turn is over" [<a href="https://openai.com/index/introducing-gpt-live/" rel="nofollow noopener">Source: OpenAI GPT-Live announcement</a>].
+**Two-way audio.** The model speaks back. Latency, voice selection, and turn-taking quality define the experience. OpenAI's GPT-Live uses a full-duplex architecture so you can interrupt or overlap without rigid silence-based turn detection—a meaningful upgrade over earlier turn-by-turn voice stacks that could mistake a pause for "your turn is over" [OpenAI GPT-Live announcement](https://openai.com/index/introducing-gpt-live/).
 
 **Session-bound context.** Voice mode runs inside a chat or voice session. Context accumulates across spoken turns; switching to text mid-session is usually supported, but the center of gravity remains the live dialogue.
 
-**Paraphrased transcripts.** OpenAI notes that voice transcripts are not verbatim records and may not exactly match what was said [<a href="https://help.openai.com/en/articles/20001274-chatgpt-voice" rel="nofollow noopener">Source: OpenAI ChatGPT Voice help</a>]. That is acceptable for reasoning; it is problematic when you needed word-perfect legal or code language without review.
+**Paraphrased transcripts.** OpenAI notes that voice transcripts are not verbatim records and may not exactly match what was said [OpenAI ChatGPT Voice help](https://help.openai.com/en/articles/20001274-chatgpt-voice). That is acceptable for reasoning; it is problematic when you needed word-perfect legal or code language without review.
 
 **Usage accounting.** Live voice often draws from separate limits or plan tiers. Dictation typically does not—OpenAI explicitly states dictation does not use live voice conversation allowance, which matters for heavy daily users on capped plans.
 
@@ -70,7 +70,7 @@ It is also not, by itself, a *voice agent* in the proactive sense: an entity tha
 
 **Dictation** (voice typing, speech-to-text input, or `/voice` in developer tools) converts spoken audio into *text in an input field*. You see the transcript, edit it, and explicitly send it—Enter, Run, or Submit—like any typed prompt. The model may never hear your voice; it only reads the text you approved.
 
-Anthropic's help center states the distinction plainly: "Dictation converts your speech to text so you can type prompts by speaking. Voice mode is a full two-way conversation" [<a href="https://support.claude.com/en/articles/11101966-use-voice-mode" rel="nofollow noopener">Source: Anthropic voice mode help</a>]. That one sentence is the architectural boundary for Claude; the same logic applies across the ecosystem.
+Anthropic's help center states the distinction plainly: "Dictation converts your speech to text so you can type prompts by speaking. Voice mode is a full two-way conversation" [Anthropic voice mode help](https://support.claude.com/en/articles/11101966-use-voice-mode). That one sentence is the architectural boundary for Claude; the same logic applies across the ecosystem.
 
 ### 3.2 Defining Properties
 
@@ -96,11 +96,11 @@ For a taxonomy of how dictation fits agent work versus live dialogue, the cluste
 
 Understanding the stack prevents category errors when comparing products.
 
-**Voice mode stack.** Audio capture → streaming speech understanding → model reasoning (often with tool use, memory, web search in premium tiers) → text-to-speech synthesis → playback. Full-duplex systems interleave listening and generation continuously rather than waiting for a complete user utterance [<a href="https://openai.com/index/introducing-gpt-live/" rel="nofollow noopener">Source: OpenAI GPT-Live</a>]. Turn-taking, interruption handling, and backchannel cues ("mhmm," "got it") are first-class product problems.
+**Voice mode stack.** Audio capture → streaming speech understanding → model reasoning (often with tool use, memory, web search in premium tiers) → text-to-speech synthesis → playback. Full-duplex systems interleave listening and generation continuously rather than waiting for a complete user utterance [OpenAI GPT-Live](https://openai.com/index/introducing-gpt-live/). Turn-taking, interruption handling, and backchannel cues ("mhmm," "got it") are first-class product problems.
 
 **Dictation stack.** Audio capture → speech-to-text (ASR) → text inserted at cursor → *user edit* → standard text inference path. The agent stack downstream is identical to typing. Tool calls, file edits, and Cowork plans all trigger from approved text.
 
-The practical implication for solopreneurs: voice mode investments (headphones, quiet environments, tolerance for paraphrase) differ from dictation investments (good mic, punctuation commands, habit of reading before Send). Mixing stacks in one workflow—dictating a brief, then opening voice mode to "continue"—can work, but context may not transfer cleanly between Cowork dictation and Claude mobile voice, because Anthropic currently excludes voice mode from Cowork and Code entirely [<a href="https://support.claude.com/en/articles/11101966-use-voice-mode" rel="nofollow noopener">Source: Anthropic help</a>].
+The practical implication for solopreneurs: voice mode investments (headphones, quiet environments, tolerance for paraphrase) differ from dictation investments (good mic, punctuation commands, habit of reading before Send). Mixing stacks in one workflow—dictating a brief, then opening voice mode to "continue"—can work, but context may not transfer cleanly between Cowork dictation and Claude mobile voice, because Anthropic currently excludes voice mode from Cowork and Code entirely [Anthropic help](https://support.claude.com/en/articles/11101966-use-voice-mode).
 
 Latency expectations diverge too. Voice mode optimizes *perceived conversational flow*; dictation optimizes *transcription accuracy* and lets you batch a 400-word brief before the model starts thinking. For deadline-driven agent tasks, that batching is often faster end-to-end even if speaking feels slower than a live ping-pong dialogue.
 
@@ -110,21 +110,21 @@ Latency expectations diverge too. Voice mode optimizes *perceived conversational
 
 ### 5.1 ChatGPT: GPT-Live, Legacy Voice, and Dictation
 
-OpenAI reorganized ChatGPT voice around **GPT-Live** as the default live experience on paid tiers (GPT-Live-1) and free (GPT-Live-1 mini), with full-duplex conversation, web search, memory, and widget-style visual answers in the same chat [<a href="https://help.openai.com/en/articles/20001274-chatgpt-voice" rel="nofollow noopener">Source: OpenAI help</a>]. **Standard** voice remains a turn-by-turn path that transcribes before responding. **Advanced Voice Mode** persists for capabilities GPT-Live did not initially ship— notably video, screen sharing on mobile, and voice inside custom GPTs [<a href="https://www.toolcolumn.com/learn/gpt-live-vs-advanced-voice-mode" rel="nofollow noopener">Source: ToolColumn comparison, as of mid-2026</a>].
+OpenAI reorganized ChatGPT voice around **GPT-Live** as the default live experience on paid tiers (GPT-Live-1) and free (GPT-Live-1 mini), with full-duplex conversation, web search, memory, and widget-style visual answers in the same chat [OpenAI help](https://help.openai.com/en/articles/20001274-chatgpt-voice). **Standard** voice remains a turn-by-turn path that transcribes before responding. **Advanced Voice Mode** persists for capabilities GPT-Live did not initially ship— notably video, screen sharing on mobile, and voice inside custom GPTs [ToolColumn comparison, as of mid-2026](https://www.toolcolumn.com/learn/gpt-live-vs-advanced-voice-mode).
 
 **ChatGPT Dictation** sits outside that stack: record speech, review transcription, send as text. OpenAI's own guidance—use voice for live back-and-forth; use dictation when you want an editable prompt—mirrors the framework in this article. Deeper product-by-product tables live in [ChatGPT voice mode vs dictation](/blog/chatgpt-voice-mode-vs-dictation); here the takeaway is that OpenAI treats them as sibling features with different quotas and UX entry points, not as one mode with a text fallback.
 
 ### 5.2 Claude: Voice Mode in Chat, Dictation in Cowork and Code
 
-Claude **Voice Mode** runs in Claude mobile, desktop, and web as a beta on all plans, with expanded models (Opus, Sonnet, Haiku as of mid-2026) and connected tools on paid tiers [<a href="https://claude.com/blog/think-through-hard-problems-in-voice-mode" rel="nofollow noopener">Source: Anthropic blog</a>]. It is turn-based spoken dialogue optimized for extended reasoning—pitch practice, offer comparison, brainstorming—not for inserting text into external files.
+Claude **Voice Mode** runs in Claude mobile, desktop, and web as a beta on all plans, with expanded models (Opus, Sonnet, Haiku as of mid-2026) and connected tools on paid tiers [Anthropic blog](https://claude.com/blog/think-through-hard-problems-in-voice-mode). It is turn-based spoken dialogue optimized for extended reasoning—pitch practice, offer comparison, brainstorming—not for inserting text into external files.
 
-**Dictation** appears inside **Claude Cowork** and **Claude Code** only as speech-to-text in the prompt area. Voice Mode does not run there; Anthropic confirms voice mode cannot reference Cowork projects and skills the way a Cowork session does [<a href="https://support.claude.com/en/articles/11101966-use-voice-mode" rel="nofollow noopener">Source: Anthropic help</a>]. For a solo founder running file automation in Cowork, dictation is the relevant modality; for thinking through strategy on a phone walk, Voice Mode is.
+**Dictation** appears inside **Claude Cowork** and **Claude Code** only as speech-to-text in the prompt area. Voice Mode does not run there; Anthropic confirms voice mode cannot reference Cowork projects and skills the way a Cowork session does [Anthropic help](https://support.claude.com/en/articles/11101966-use-voice-mode). For a solo founder running file automation in Cowork, dictation is the relevant modality; for thinking through strategy on a phone walk, Voice Mode is.
 
 Claude Desktop on Mac adds **quick entry** (Option + Space, Caps Lock to dictate) for capturing prompts from other apps—still transcription into Claude's input, not two-way voice through the OS.
 
 ### 5.3 Coding Agents: Terminal Dictation, Not Voice Mode
 
-Developer-facing agents inherit the dictation side almost exclusively. **Claude Code** exposes `/voice` to transcribe speech into the terminal prompt; the CLI may print "Voice mode enabled," but the behavior is dictation—no spoken assistant reply in the loop [<a href="https://www.getvoibe.com/resources/dictate-in-claude-cowork/" rel="nofollow noopener">Source: Voibe resource citing Anthropic docs, Aug 2026</a>]. Parallel agent sessions, test output, and diff review remain text-native; speaking a refactor request is convenience, not conversation.
+Developer-facing agents inherit the dictation side almost exclusively. **Claude Code** exposes `/voice` to transcribe speech into the terminal prompt; the CLI may print "Voice mode enabled," but the behavior is dictation—no spoken assistant reply in the loop [Voibe resource citing Anthropic docs, Aug 2026](https://www.getvoibe.com/resources/dictate-in-claude-cowork/). Parallel agent sessions, test output, and diff review remain text-native; speaking a refactor request is convenience, not conversation.
 
 The same pattern appears across **Cursor**, **Windsurf**, and other IDE agents: voice input, when present, fills the prompt or inline edit field. The agent responds in code and text. Full-duplex voice pair programming has not become the default job shape—partially because reading code on screen dominates the loop, partially because spoken replies disrupt focus in shared environments.
 
@@ -132,7 +132,7 @@ For coding, dictation wins on precision: you speak a function signature, visuall
 
 ### 5.4 Document-Centric Dictation (Floatboat Flow Mode)
 
-A third pattern sits beside chat voice and prompt dictation: **document-centric dictation**, where speech feeds a living draft and the agent collaborates in-file. Floatboat **Flow Mode** (announced 2026) keeps real-time transcription in the document while you select spans for agent rewrites—closer to dictation plus co-editing than to GPT-Live dialogue [<a href="/blog/introducing-flow-mode">Source: Floatboat Flow Mode announcement</a>]. It targets solopreneurs shipping memos and meeting plans, not hands-free Q&A on a commute.
+A third pattern sits beside chat voice and prompt dictation: **document-centric dictation**, where speech feeds a living draft and the agent collaborates in-file. Floatboat **Flow Mode** (announced 2026) keeps real-time transcription in the document while you select spans for agent rewrites—closer to dictation plus co-editing than to GPT-Live dialogue, as described in [our Flow Mode announcement](/blog/introducing-flow-mode). It targets solopreneurs shipping memos and meeting plans, not hands-free Q&A on a commute.
 
 Flow Mode illustrates that "dictation" is not one job either: prompt-box dictation steers an agent; in-document dictation *is* the deliverable surface. Neither replaces voice mode for spoken reasoning; both can outperform voice mode when the output must land in a structured file.
 

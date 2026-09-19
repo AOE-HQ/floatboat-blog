@@ -11,17 +11,17 @@ locale: "zh"
 draft: false
 ---
 
-你好，我是 Nova。[Dynamic Workflows 刚刚随 Claude Code 发布](<https://claude.com/blog/introducing-dynamic-workflows-in-claude-code>)。如果你是在自己的技术栈里跑 AI 的单人创业者，真正的问题不是"这酷不酷"——而是：你该自己构建子 Agent 编排，还是说你真正需要的，其实是一个能把你工作端到端跑完的工作区。功能上线后，我一直在自己的项目上试用这个研究预览。下面是我在你在"构建还是使用"上押注之前，会怎么盘算这件事。
+你好，我是 Nova。[Dynamic Workflows 刚刚随 Claude Code 发布](https://claude.com/blog/introducing-dynamic-workflows-in-claude-code)。如果你是在自己的技术栈里跑 AI 的单人创业者，真正的问题不是"这酷不酷"——而是：你该自己构建子 Agent 编排，还是说你真正需要的，其实是一个能把你工作端到端跑完的工作区。功能上线后，我一直在自己的项目上试用这个研究预览。下面是我在你在"构建还是使用"上押注之前，会怎么盘算这件事。
 
 ![2.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055108452-0336b9fb-4040-4b5e-8fbb-03f3cf3494e0.webp)
 
 ## Dynamic Workflows 到底是什么
 
-简单版：在 Claude Code 里，你现在可以让 Claude"创建一个工作流"——它不再是一个模型一步步地啃你的任务，而是当场写出一份编排脚本。这份脚本会[一次性派生出最多 16 个并行子 Agent](<https://code.claude.com/docs/en/workflows>)，单次运行上限 1,000 个，中间结果存在脚本变量里，而不是塞进 Claude 的上下文窗口。最后，你拿到一份汇总报告。
+简单版：在 Claude Code 里，你现在可以让 Claude"创建一个工作流"——它不再是一个模型一步步地啃你的任务，而是当场写出一份编排脚本。这份脚本会[一次性派生出最多 16 个并行子 Agent](https://code.claude.com/docs/en/workflows)，单次运行上限 1,000 个，中间结果存在脚本变量里，而不是塞进 Claude 的上下文窗口。最后，你拿到一份汇总报告。
 
 ![3.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055117692-97ffd373-6502-4340-935c-b6b2070a5e37.webp)
 
-它以研究预览的形式提供于 **[Max、Team 和 Enterprise 计划](<https://www.anthropic.com/pricing>)**（Pro 不在名单上），外加 API、Bedrock、Vertex AI 与 Microsoft Foundry。Max 和 Team 上默认开启；Enterprise 管理员需要手动打开。它要求 Claude Code v2.1.154 或更高版本。发布文档还提醒：工作流会比标准会话烧掉多得多的 token——Anthropic 自己就建议先用一个有边界的任务校准一下，再对整个仓库做审计。
+它以研究预览的形式提供于 **[Max、Team 和 Enterprise 计划](https://www.anthropic.com/pricing)**（Pro 不在名单上），外加 API、Bedrock、Vertex AI 与 Microsoft Foundry。Max 和 Team 上默认开启；Enterprise 管理员需要手动打开。它要求 Claude Code v2.1.154 或更高版本。发布文档还提醒：工作流会比标准会话烧掉多得多的 token——Anthropic 自己就建议先用一个有边界的任务校准一下，再对整个仓库做审计。
 
 ![4.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055132392-1aeffdcd-dfc9-48e7-b3fb-6326ea7cfe77.webp)
 
@@ -99,13 +99,13 @@ draft: false
 
 ## 延伸阅读
 
-[不招人也能扩大一人业务规模](</blog/scale-one-person-business-without-hiring>)
+[不招人也能扩大一人业务规模](/blog/scale-one-person-business-without-hiring)
 
-[Claude Managed Agents：对一人公司意味着什么](</blog/claude-managed-agents-one-person-company>)
+[Claude Managed Agents：对一人公司意味着什么](/blog/claude-managed-agents-one-person-company)
 
-[一人公司如何靠 AI 像团队一样运转](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+[一人公司如何靠 AI 像团队一样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-[为什么一人公司需要一个工作区 Agent](</blog/workspace-agents-for-solo-operators>)
+[为什么一人公司需要一个工作区 Agent](/blog/workspace-agents-for-solo-operators)
 
-[工作区 Agent vs 工作流构建工具：一份清晰的对比](</blog/workspace-agents-vs-workflow-builders>)
+[工作区 Agent vs 工作流构建工具：一份清晰的对比](/blog/workspace-agents-vs-workflow-builders)
 

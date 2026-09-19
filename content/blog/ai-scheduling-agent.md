@@ -15,7 +15,7 @@ TL;DR
 
   * An AI scheduling agent is software that uses AI to manage, optimize, and act on your calendar — moving beyond time-slot coordination to context-aware preparation, prioritization, and execution of calendar-driven work.
 
-  * The market has evolved through four generations: smart schedulers (Calendly), AI optimizers (Motion, Reclaim, Morgen), AI scheduling agents (Agentic Calendars, [Cal.com](<http://Cal.com>) Agents), and calendar-driven agent operating systems (Floatboat).
+  * The market has evolved through four generations: smart schedulers (Calendly), AI optimizers (Motion, Reclaim, Morgen), AI scheduling agents (Agentic Calendars, [Cal.com](http://Cal.com) Agents), and calendar-driven agent operating systems (Floatboat).
 
   * The key question when evaluating any tool isn't "how well does it schedule?" — it's "what does it do with the schedule once it's there?"
 
@@ -87,7 +87,7 @@ For someone with 3–5 internal meetings per day, Gen 2 is a genuine step up in 
 
 Gen 3 tools began to cross the line from scheduling to execution. Agentic Calendars, for instance, reads incoming emails and automatically books appointments — an agent that watches your inbox and acts on scheduling requests without human routing. The trigger is an email arriving; the output is a confirmed calendar event. It's a narrow but real example of an agent that runs without being prompted.
 
-[Cal.com](<http://Cal.com>) Agents took a different architectural approach: an open platform that lets developers build scheduling agents that live wherever work happens — Slack, Telegram, CLI, API, and OpenClaw-compatible environments. Rather than building one scheduling agent, [Cal.com](<http://Cal.com>) built infrastructure for many, making scheduling agents embeddable across the tools teams already use.
+[Cal.com](http://Cal.com) Agents took a different architectural approach: an open platform that lets developers build scheduling agents that live wherever work happens — Slack, Telegram, CLI, API, and OpenClaw-compatible environments. Rather than building one scheduling agent, [Cal.com](http://Cal.com) built infrastructure for many, making scheduling agents embeddable across the tools teams already use.
 
 On the enterprise side, Findem and Glider AI developed recruiting-specific scheduling agents: AI that coordinates interviews across candidates, hiring managers, and panels, handling the multi-party complexity that general-purpose schedulers struggle with. They are Gen 2–3 hybrids — domain-constrained but demonstrating what happens when scheduling agents are built for a specific vertical rather than a general audience.
 
@@ -133,7 +133,7 @@ When a client call appears on your calendar, does the tool give you a brief — 
 
 **2\. Does it follow up, or just remind?**
 
-A reminder tells you the meeting is starting — useful, but mechanically simple. A follow-up tells you what happened in the meeting and what needs to happen next, which requires an entirely different level of calendar awareness. Gen 3 tools are beginning to handle this: [Cal.com](<http://Cal.com>)'s platform-native agents can trigger post-event workflows in Slack or Telegram, and Agentic Calendars automatically captures the outcome of a scheduling interaction. Gen 4 tools extend this to full meeting-to-action pipelines — the follow-up email, the updated deck, the next task — all initiated automatically because the event ending is itself a trigger. For a solo operator who just finished a client call and is already behind on three other things, the difference between a reminder and a follow-up is the difference between knowing what happened and having the next step already done.
+A reminder tells you the meeting is starting — useful, but mechanically simple. A follow-up tells you what happened in the meeting and what needs to happen next, which requires an entirely different level of calendar awareness. Gen 3 tools are beginning to handle this: [Cal.com](http://Cal.com)'s platform-native agents can trigger post-event workflows in Slack or Telegram, and Agentic Calendars automatically captures the outcome of a scheduling interaction. Gen 4 tools extend this to full meeting-to-action pipelines — the follow-up email, the updated deck, the next task — all initiated automatically because the event ending is itself a trigger. For a solo operator who just finished a client call and is already behind on three other things, the difference between a reminder and a follow-up is the difference between knowing what happened and having the next step already done.
 
 **3\. Does it learn your context, or just your availability?**
 
@@ -145,7 +145,7 @@ This is the defining architectural question, and it's where the generations dive
 
 **5\. Does it work with the tools you already use?**
 
-Can the agent read your local files, access your Google Drive and Notion, reach into your Slack and email — or does it require you to move everything into its platform? [Cal.com](<http://Cal.com>) Agents addresses this through platform-native integrations, embedding scheduling agents directly into Slack, Telegram, CLI, and API environments rather than asking teams to adopt a new interface. Floatboat takes a different approach, using protocols such as MCP and IACT to connect agents with the files, calendars, and communication channels you already work in. Gen 1 tools are largely walled gardens — the booking page is the product, and data doesn't leave it easily. For a solo operator, integration quality isn't a nice-to-have. If the agent can't see your actual work environment — the Notion pages you reference before calls, the Google Docs you draft deliverables in, the Slack threads where decisions get made — it can't prepare meaningfully. The best scheduling agent is the one that works where your work already lives.
+Can the agent read your local files, access your Google Drive and Notion, reach into your Slack and email — or does it require you to move everything into its platform? [Cal.com](http://Cal.com) Agents addresses this through platform-native integrations, embedding scheduling agents directly into Slack, Telegram, CLI, and API environments rather than asking teams to adopt a new interface. Floatboat takes a different approach, using protocols such as MCP and IACT to connect agents with the files, calendars, and communication channels you already work in. Gen 1 tools are largely walled gardens — the booking page is the product, and data doesn't leave it easily. For a solo operator, integration quality isn't a nice-to-have. If the agent can't see your actual work environment — the Notion pages you reference before calls, the Google Docs you draft deliverables in, the Slack threads where decisions get made — it can't prepare meaningfully. The best scheduling agent is the one that works where your work already lives.
 
 These five questions map neatly onto the four-generation framework. Gen 1 and Gen 2 tools score well on question 5 (integrations) but fail questions 1–4 — they were never designed for execution. Gen 3 tools start to address questions 1 and 2, but still require human initiation for question 4. Gen 4 is the tier designed to say "yes" across all five.
 
@@ -169,11 +169,11 @@ The calendar isn't the goal. It's the trigger. The best AI scheduling agent is t
 
 ## Related Articles
 
-  * [Introducing FloatIM: Chat with AI Agents in Groups on an Agent-Native Network](</blog/introducing-floatim>)
+  * [Introducing FloatIM: Chat with AI Agents in Groups on an Agent-Native Network](/blog/introducing-floatim)
 
-  * [Should a Solo Operator Use an AI Agent?](</blog/ai-agent-solo-operators>)
+  * [Should a Solo Operator Use an AI Agent?](/blog/ai-agent-solo-operators)
 
-  * [How One-Person Businesses Work Like a Team with AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [How One-Person Businesses Work Like a Team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
 * * *
 

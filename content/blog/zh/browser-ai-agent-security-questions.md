@@ -21,7 +21,7 @@ Nova 来了。我关注的一个单人创业者社群里，有人发的一句话
 
 大多数软件失败是安全的——它崩了，你关掉它，不会留下永久性后果。浏览器 AI Agent 不一样。它在你已经登录的会话里行动，这意味着一条糟糕的指令或一次被劫持的命令，就可能在你还未察觉时发出邮件、删掉文件或提交表单。
 
-Anthropic 自己在 [Claude in Chrome 的安全页面](<https://support.claude.com/en/articles/12902428-using-claude-in-chrome-safely>)上把「非预期操作」列为头号风险：Claude 可能误解指令，「对你的数据或账号造成**不可逆的改变**」。这句话是该页面第一条警告，而不是埋在角落里的小字。
+Anthropic 自己在 [Claude in Chrome 的安全页面](https://support.claude.com/en/articles/12902428-using-claude-in-chrome-safely)上把「非预期操作」列为头号风险：Claude 可能误解指令，「对你的数据或账号造成**不可逆的改变**」。这句话是该页面第一条警告，而不是埋在角落里的小字。
 
 所以：这些工具，可以用。但要用得心里有数。
 
@@ -33,7 +33,7 @@ Anthropic 自己在 [Claude in Chrome 的安全页面](<https://support.claude.c
 
 点「添加到 Chrome」之前，先读一遍权限对话框。我知道没人会读。但对 AI Agent 扩展，这很要紧。
 
-「读取并更改你在所访问网站上的所有数据」这句是关键。按 [Google 的扩展权限文档](<https://developer.chrome.com/docs/extensions/reference/permissions-list>)，当扩展使用了 `debugger` API——允许它像开发者工具一样挂到标签页上——或申请宽泛的主机权限时，就会出现这句话。对需要替你点击、阅读、浏览的 Agent 来说，这些权限并不意外，但也绝非小事。
+「读取并更改你在所访问网站上的所有数据」这句是关键。按 [Google 的扩展权限文档](https://developer.chrome.com/docs/extensions/reference/permissions-list)，当扩展使用了 `debugger` API——允许它像开发者工具一样挂到标签页上——或申请宽泛的主机权限时，就会出现这句话。对需要替你点击、阅读、浏览的 Agent 来说，这些权限并不意外，但也绝非小事。
 
 ### 历史记录、debugger 与 native messaging 访问意味着什么
 
@@ -43,7 +43,7 @@ Anthropic 自己在 [Claude in Chrome 的安全页面](<https://support.claude.c
 
   * **Debugger 访问**：允许扩展在深层级别检视页面内容，相当于你自己打开 DevTools。读取复杂页面状态需要它，但它同时也是很大的信任面。
 
-  * **Native messaging**：意味着扩展可以绕过浏览器沙箱，与桌面应用通信。这正是 [2026 年 4 月那场 Claude Desktop 争议](<https://www.theregister.com/2026/04/20/anthropic_claude_desktop_spyware_allegation/>)的中心——有研究者发现该应用会为设备上尚未安装的浏览器预装 native messaging 清单。截至 2026 年 5 月，Anthropic 还没有公开正面回应。
+  * **Native messaging**：意味着扩展可以绕过浏览器沙箱，与桌面应用通信。这正是 [2026 年 4 月那场 Claude Desktop 争议](https://www.theregister.com/2026/04/20/anthropic_claude_desktop_spyware_allegation/)的中心——有研究者发现该应用会为设备上尚未安装的浏览器预装 native messaging 清单。截至 2026 年 5 月，Anthropic 还没有公开正面回应。
 
 一句话总结：这些权限之所以宽泛，是因为使用场景需要。但这不意味着你就得对什么都放行。
 
@@ -61,7 +61,7 @@ Codex 和 Claude for Chrome 都自带**按网站确认系统**——默认情况
 
   * **黑名单**：把永远不想让 Agent 碰的网站加进来——银行、密码管理器、支付账户。
 
-按 [Codex Chrome 扩展文档](<https://developers.openai.com/codex/app/chrome-extension>)，你可以在 Computer Use 设置里管理白名单和黑名单。另外还有一个终极选项——「始终允许浏览器内容」——它会移除所有按网站询问的弹窗。别用它。
+按 [Codex Chrome 扩展文档](https://developers.openai.com/codex/app/chrome-extension)，你可以在 Computer Use 设置里管理白名单和黑名单。另外还有一个终极选项——「始终允许浏览器内容」——它会移除所有按网站询问的弹窗。别用它。
 
 ![53.PNG](/blog/images/browser-ai-agent-security-questions/1778564003144-a025e36c-d094-471d-b791-a5e822c9825f.webp)
 
@@ -89,7 +89,7 @@ Codex 和 Claude for Chrome 都自带**按网站确认系统**——默认情况
 
 Agent 读取了页面。那些隐藏文字成了它「思考的内容」的一部分。如果 Agent 的沙箱做得不好，它可能真的照做。
 
-这就是**提示词注入（Prompt Injection）**——而且这不是纸上谈兵。研究人员[已经针对浏览器 Agent 扩展演示过这种攻击](<https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/>)，其中一次近期攻击里，任何零特殊权限的 Chrome 扩展都能劫持 Claude、扭转它的行动。Anthropic 自己的安全文档则报告：Claude for Chrome 在没有防护时的攻击成功率约为 23.6%，启用现有防御后降到约 11.2%——也就是说，即便加了防护，大约每 9 次尝试仍有 1 次会成功。
+这就是**提示词注入（Prompt Injection）**——而且这不是纸上谈兵。研究人员[已经针对浏览器 Agent 扩展演示过这种攻击](https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/)，其中一次近期攻击里，任何零特殊权限的 Chrome 扩展都能劫持 Claude、扭转它的行动。Anthropic 自己的安全文档则报告：Claude for Chrome 在没有防护时的攻击成功率约为 23.6%，启用现有防御后降到约 11.2%——也就是说，即便加了防护，大约每 9 次尝试仍有 1 次会成功。
 
 ### 为什么「把页面内容当不可信输入」要紧
 
@@ -109,7 +109,7 @@ OpenAI 和 Anthropic 的官方文档里用了同一句话：**把页面内容当
 
 Codex 和 Claude for Chrome 都有记忆（Memory）设置，决定 Agent 是否跨会话携带上下文。
 
-Codex 这边：按[官方扩展文档](<https://developers.openai.com/codex/app/chrome-extension>)，「如果 Memories 关闭，浏览器使用就不会调用记忆」，而且 OpenAI 只会在浏览器行为进入 Codex 上下文时存储它——不会单独存一份完整记录。关掉 Memories 能获得更隔离的会话。
+Codex 这边：按[官方扩展文档](https://developers.openai.com/codex/app/chrome-extension)，「如果 Memories 关闭，浏览器使用就不会调用记忆」，而且 OpenAI 只会在浏览器行为进入 Codex 上下文时存储它——不会单独存一份完整记录。关掉 Memories 能获得更隔离的会话。
 
 Claude for Chrome 这边：记忆是 Claude 账户设置里偏好项下的一个开关。
 
@@ -161,13 +161,13 @@ _截至 2026 年 5 月。浏览器 Agent 安全是一个活跃研究领域，这
 
 ## 往期文章
 
-  * 新 AI 模型发布了——该换吗？一篇务实的看法：为什么大多数单人创业者高估了换模型的红利：[Meta Muse Spark](</blog/meta-muse-spark-one-person-company>)
+  * 新 AI 模型发布了——该换吗？一篇务实的看法：为什么大多数单人创业者高估了换模型的红利：[Meta Muse Spark](/blog/meta-muse-spark-one-person-company)
 
-  * 为什么你的 AI 工作流感觉支离破碎：真正的瓶颈不是模型，而是工具之间拼接的方式：[Workspace agents for solo operators](</blog/workspace-agents-for-solo-operators>)
+  * 为什么你的 AI 工作流感觉支离破碎：真正的瓶颈不是模型，而是工具之间拼接的方式：[Workspace agents for solo operators](/blog/workspace-agents-for-solo-operators)
 
-  * 浏览器 AI 工具眼下听起来都差不多——这篇讲清 Agent 扩展、AI 浏览器与桌面工作区之间的实际差别：[Browser agent extensions vs AI browsers vs desktop workspaces](</blog/browser-ai-agent-what-it-can-do>)
+  * 浏览器 AI 工具眼下听起来都差不多——这篇讲清 Agent 扩展、AI 浏览器与桌面工作区之间的实际差别：[Browser agent extensions vs AI browsers vs desktop workspaces](/blog/browser-ai-agent-what-it-can-do)
 
-  * GPT Image 2 做漫画和视觉叙事：什么真能行（又在哪里翻车）：[GPT Image 2 manga workflow](</blog/gpt-image-2-storyboard-solo>)
+  * GPT Image 2 做漫画和视觉叙事：什么真能行（又在哪里翻车）：[GPT Image 2 manga workflow](/blog/gpt-image-2-storyboard-solo)
 
-  * 2026 年 AI 图像工具横评：GPT Image 2 vs Midjourney vs Nano Banana 2，哪个适合你的工作流：[AI image tools comparison](</blog/gpt-image-2-vs-midjourney-nano-banana-2>)
+  * 2026 年 AI 图像工具横评：GPT Image 2 vs Midjourney vs Nano Banana 2，哪个适合你的工作流：[AI image tools comparison](/blog/gpt-image-2-vs-midjourney-nano-banana-2)
 

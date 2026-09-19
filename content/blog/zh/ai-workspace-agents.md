@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-上周有人问我，我说的"工作区 Agent"到底指什么。这个词我随口用了好几个月，却从没真正定义过——说来好笑，因为这个品类的工具一直在悄悄变多：截至 2026 年 4 月下旬，[OpenAI 给它的新 ChatGPT 功能起的名字，几乎就正是这个词](<https://openai.com/index/introducing-workspace-agents-in-chatgpt/>)。这个词正在迅速变得拥挤。
+上周有人问我，我说的"工作区 Agent"到底指什么。这个词我随口用了好几个月，却从没真正定义过——说来好笑，因为这个品类的工具一直在悄悄变多：截至 2026 年 4 月下旬，[OpenAI 给它的新 ChatGPT 功能起的名字，几乎就正是这个词](https://openai.com/index/introducing-workspace-agents-in-chatgpt/)。这个词正在迅速变得拥挤。
 
 所以我想，是时候把我每次说它时真正想表达的东西写下来了。不是一份权威词典词条——只是我此刻对这个品类的白描式地图，此时我已上手实用了两个月。
 
@@ -63,7 +63,7 @@ draft: false
 
 我觉得这是大多数人都搞错的一个区别。
 
-工作流搭建器让你**预先定义**自动化：当 X 发生时做 Y，然后做 Z。你画流程图、设触发器，系统稳定地执行。[Zapier 是这种形态的鼻祖](<https://zapier.com/blog/gumloop-vs-zapier/>)，Gumloop 是它的 AI 原生后继者。对重复的、可预测的任务，两者都极其强大。
+工作流搭建器让你**预先定义**自动化：当 X 发生时做 Y，然后做 Z。你画流程图、设触发器，系统稳定地执行。[Zapier 是这种形态的鼻祖](https://zapier.com/blog/gumloop-vs-zapier/)，Gumloop 是它的 AI 原生后继者。对重复的、可预测的任务，两者都极其强大。
 
 工作区 Agent 方向相反：你**不**预先定义步骤。你描述想要的结果，Agent 自己推导出操作序列——决定打开哪个文件、调用哪个工具、何时停下来问你。在形态已知的任务上，它不如前者可靠（一条 Zap 每次都做完全一模一样的事）；但在任务形态本身会变的场景里，它要好得多。
 
@@ -73,7 +73,7 @@ draft: false
 
 ### 对比自托管 AI Agent
 
-这部分主要是写给开发者的，我简短说。自托管 Agent——工程师用 LangChain 这类框架搭起来的，或 [Claude Code、Codex 这类多 Agent 开发者工具，以及 Nimbalyst 这类独立工作区](<https://nimbalyst.com/blog/best-multi-agent-desktop-apps-claude-code-codex-2026/>)——让你对提示词、记忆、工具访问和执行拥有完全的控制。整套技术栈归你。
+这部分主要是写给开发者的，我简短说。自托管 Agent——工程师用 LangChain 这类框架搭起来的，或 [Claude Code、Codex 这类多 Agent 开发者工具，以及 Nimbalyst 这类独立工作区](https://nimbalyst.com/blog/best-multi-agent-desktop-apps-claude-code-codex-2026/)——让你对提示词、记忆、工具访问和执行拥有完全的控制。整套技术栈归你。
 
 工作区 Agent 作为面向消费者/准专业人士的品类，是用这份控制权换"免配置即用"。你不需要配置，打开应用就开始工作。取舍是真实的：你是**租**了编排层，而不是**拥有**它。
 
@@ -87,9 +87,9 @@ draft: false
 
 ![4.png](/blog/images/ai-workspace-agents/1776938903868-854caf84-9b34-450c-8dd9-73945bb2a6d7.webp)
 
-核心解锁是：Agent 能看见你看见的东西。[Skywork Desktop 的发布文章说得很到位](<https://finance.yahoo.com/news/skywork-launches-desktop-ai-agent-162800505.html>)——重点是"无需上传的本地文件理解，让 Agent 以用户选定的文件夹为持久上下文工作，而不是依赖一次性的附件"。
+核心解锁是：Agent 能看见你看见的东西。[Skywork Desktop 的发布文章说得很到位](https://finance.yahoo.com/news/skywork-launches-desktop-ai-agent-162800505.html)——重点是"无需上传的本地文件理解，让 Agent 以用户选定的文件夹为持久上下文工作，而不是依赖一次性的附件"。
 
-[Genspark 发布桌面客户端时换了种说法表达同一件事](<https://www.genspark.ai/blog/genspark-ai-workspace-4>)：一种"看得见并操作你的文件、你的应用、你的屏幕——而不只是浏览器标签页里的内容"的 AI。产品不同，内核的转变相同。
+[Genspark 发布桌面客户端时换了种说法表达同一件事](https://www.genspark.ai/blog/genspark-ai-workspace-4)：一种"看得见并操作你的文件、你的应用、你的屏幕——而不只是浏览器标签页里的内容"的 AI。产品不同，内核的转变相同。
 
 落到实践：Agent 自己打开 PDF、自己滚动网页、自己编辑文档。你不再是中间人了。
 
@@ -167,13 +167,13 @@ draft: false
 
 **系列前文：**
 
-  * [AI Agent 与聊天机器人：你的工作方式到底改变了什么](</blog/ai-agent-vs-chatbot>)
+  * [AI Agent 与聊天机器人：你的工作方式到底改变了什么](/blog/ai-agent-vs-chatbot)
 
-  * [工作流搭建器 vs AI 工作区：两种形态迥异的自动化](</blog/workflow-builder-vs-ai-workspace>)
+  * [工作流搭建器 vs AI 工作区：两种形态迥异的自动化](/blog/workflow-builder-vs-ai-workspace)
 
-  * [什么是持久化 AI Agent（以及为什么记忆会改变一切）](</blog/what-is-persistent-ai-agent>)
+  * [什么是持久化 AI Agent（以及为什么记忆会改变一切）](/blog/what-is-persistent-ai-agent)
 
-  * [单人创始人的 AI 工作流：上下文切换到底疼在哪](</blog/ai-workflow-for-solo-founders>)
+  * [单人创始人的 AI 工作流：上下文切换到底疼在哪](/blog/ai-workflow-for-solo-founders)
 
-  * [一人公司如何用 AI 像团队一样工作](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [一人公司如何用 AI 像团队一样工作](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

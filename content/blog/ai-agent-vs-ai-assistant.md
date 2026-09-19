@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-See you again. Nova is coming~ I'll be honest — for a while, I used these two terms interchangeably. [AI agent](<https://www.ibm.com/think/topics/ai-agents>), AI assistant… I kind of assumed they were just different marketing words for the same thing.
+See you again. Nova is coming~ I'll be honest — for a while, I used these two terms interchangeably. [AI agent](https://www.ibm.com/think/topics/ai-agents), AI assistant… I kind of assumed they were just different marketing words for the same thing.
 
 Then I started researching AI workflow tools more seriously. And I kept running into situations where the distinction actually mattered — not in a theoretical way, but in a "I set this up wrong and it didn't do what I thought it would" kind of way.
 
@@ -33,7 +33,7 @@ An AI assistant is ​**reactive** ​. You ask, it answers. You stop asking, it
 
 Think of tools like ChatGPT in its default setup, or Siri, or Google Assistant. You give it a prompt, it gives you a response. Genuinely useful for that — drafting something, answering a question, summarizing a document. But most assistants operate with what researchers call ​**session-scoped memory** ​: they know what you said five messages ago in this conversation, but the moment you close the tab and start a new one, that context is gone.
 
-According to[ Google's own documentation on conversational AI systems](<https://cloud.google.com/conversational-ai?hl=en>), assistants are designed to handle discrete interactions within a defined session — not to track state across sessions or chain actions autonomously. That's a design choice, not a limitation they forgot to fix.
+According to[ Google's own documentation on conversational AI systems](https://cloud.google.com/conversational-ai?hl=en), assistants are designed to handle discrete interactions within a defined session — not to track state across sessions or chain actions autonomously. That's a design choice, not a limitation they forgot to fix.
 
 **Where assistants still work well**
 
@@ -53,13 +53,13 @@ This is the part that took me a while to fully internalize. An AI agent can auto
 
 So instead of you saying "do step 1, now do step 2, now do step 3," you say "here's the end goal" — and the agent works out the path.
 
-[IBM's research on AI agent architectures](<https://www.ibm.com/think/topics/ai-agents>) breaks this down in useful technical detail: agents operate through a ​**perception-reasoning-action loop** ​. They observe their environment (inputs, tool outputs, memory), reason about what to do next, and take action — then repeat that cycle until the goal is reached. Some agents can even operate a computer directly — clicking, typing, navigating — to complete tasks on your behalf.
+[IBM's research on AI agent architectures](https://www.ibm.com/think/topics/ai-agents) breaks this down in useful technical detail: agents operate through a ​**perception-reasoning-action loop** ​. They observe their environment (inputs, tool outputs, memory), reason about what to do next, and take action — then repeat that cycle until the goal is reached. Some agents can even operate a computer directly — clicking, typing, navigating — to complete tasks on your behalf.
 
 **The memory difference is where things get really interesting**
 
 Here's where the real depth difference shows up.
 
-Assistants have session memory. Agents need something closer to what researchers call **episodic memory** — persistent context that spans multiple sessions, goals, and outcomes. According to the [LangChain documentation on agent memory types](<https://python.langchain.com/docs/concepts/memory/>), agent memory systems typically distinguish between short-term (in-context), long-term (external storage), and procedural memory (learned behaviors). Most assistants only have the first kind.
+Assistants have session memory. Agents need something closer to what researchers call **episodic memory** — persistent context that spans multiple sessions, goals, and outcomes. According to the [LangChain documentation on agent memory types](https://python.langchain.com/docs/concepts/memory/), agent memory systems typically distinguish between short-term (in-context), long-term (external storage), and procedural memory (learned behaviors). Most assistants only have the first kind.
 
 In practice, this means an agent can remember a client's preference from six months ago, or flag that a particular approach didn't work last time and try something different. That's not something you can replicate just by writing a better prompt.
 
@@ -75,7 +75,7 @@ This is the part I actually wanted when I started researching. Here it is, as cl
 
 
 
-One framing I found useful from [Pieces' breakdown of agents vs assistants](<https://pieces.app/old-home-3>): using an assistant feels like consulting an expert. Using an agent feels like delegating to a capable colleague. The distinction isn't about intelligence — it's about who's responsible for the next step.
+One framing I found useful from [Pieces' breakdown of agents vs assistants](https://pieces.app/old-home-3): using an assistant feels like consulting an expert. Using an agent feels like delegating to a capable colleague. The distinction isn't about intelligence — it's about who's responsible for the next step.
 
 ## A Real Workflow Example (Where This Actually Showed Up)
 
@@ -85,7 +85,7 @@ When I started experimenting with agent-style setups — giving the system a sta
 
 I spent maybe three hours setting up the initial structure. After that I got that time back probably within a week.
 
-That's not a promise about your experience. It's just what I noticed in mine. Tools like [n8n's agentic workflow documentation](<https://docs.n8n.io/advanced-ai/intro-tutorial/>) give a good sense of what the actual implementation looks like if you want to see it spelled out in technical terms.
+That's not a promise about your experience. It's just what I noticed in mine. Tools like [n8n's agentic workflow documentation](https://docs.n8n.io/advanced-ai/intro-tutorial/) give a good sense of what the actual implementation looks like if you want to see it spelled out in technical terms.
 
 ![2.png](/blog/images/ai-agent-vs-ai-assistant/1775213442227-4cff350b-6287-4a95-aa2b-a7decdc6407e.webp)
 
@@ -105,9 +105,9 @@ No product recommendations here. Just the framework. The right answer depends en
 
 Here's the honest part: this distinction is getting messier, not cleaner.
 
-A lot of tools that call themselves "assistants" are quietly adding agentic features — memory, tool use, multi-step execution. And some things called "agents" are basically just fancy chatbots. The [MIT Technology Review's coverage of AI agent development](<https://www.technologyreview.com/2026/03/10/1134083/building-a-strong-data-infrastructure-for-ai-agent-success/>) tracks this blending of capabilities well — it's one of the clearest trends in the space right now.
+A lot of tools that call themselves "assistants" are quietly adding agentic features — memory, tool use, multi-step execution. And some things called "agents" are basically just fancy chatbots. The [MIT Technology Review's coverage of AI agent development](https://www.technologyreview.com/2026/03/10/1134083/building-a-strong-data-infrastructure-for-ai-agent-success/) tracks this blending of capabilities well — it's one of the clearest trends in the space right now.
 
-The line is also blurring at the architecture level. An assistant could serve as the front-end interface to trigger agent-driven workflows in the backend — a hybrid model where you're talking to something that looks like a simple assistant, but it's actually kicking off an agentic process behind the scenes.[ Anthropic's research on tool use and agent behavior ](<https://www.anthropic.com/research/measuring-agent-autonomy>)gives some useful context on how these hybrid architectures are being designed.
+The line is also blurring at the architecture level. An assistant could serve as the front-end interface to trigger agent-driven workflows in the backend — a hybrid model where you're talking to something that looks like a simple assistant, but it's actually kicking off an agentic process behind the scenes.[ Anthropic's research on tool use and agent behavior ](https://www.anthropic.com/research/measuring-agent-autonomy)gives some useful context on how these hybrid architectures are being designed.
 
 What I've started doing: instead of asking "is this an agent or an assistant," I ask — _how much does this system remember about me, and how much can it do without me holding its hand?_ Those two questions cut through the marketing noise pretty well.
 
@@ -119,11 +119,11 @@ If you're exploring this stuff too, hopefully this saves you some of the time I 
 
 _Related posts:_
 
-  * [Real-world AI agent use cases across research, content, and operations](</blog/ai-agent-use-cases-real-examples>)
+  * [Real-world AI agent use cases across research, content, and operations](/blog/ai-agent-use-cases-real-examples)
 
-  * [How one-person businesses are starting to operate like a full team using AI roles](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [How one-person businesses are starting to operate like a full team using AI roles](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [How AI automation is actually priced in the real market](</blog/ai-automation-agency-pricing>)
+  * [How AI automation is actually priced in the real market](/blog/ai-automation-agency-pricing)
 
-  * [How Lindy and Gumloop differ when it comes to agent-style workflows](</blog/lindy-vs-gumloop>)
+  * [How Lindy and Gumloop differ when it comes to agent-style workflows](/blog/lindy-vs-gumloop)
 

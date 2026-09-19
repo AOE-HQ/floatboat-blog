@@ -29,7 +29,7 @@ What I want from an AI follow-up email isn't a template fill. I want something t
 
 Your calendar knows a meeting happened. It knows who was invited. But once the meeting ends, the calendar moves on to the next block.
 
-The gap between "the meeting ended" and "the follow-up went out" is where most work falls apart. A [Calendly State of Meetings report](<https://www.businesswire.com/news/home/20241016065216/en/Report-Calendlys-State-of-Meetings-2024-shows-workers-want-more-meetings-as-long-as-theyre-good-meetings>) found that 40% of respondents said they don't receive follow-up notes or action items after meetings. That's not a minor inefficiency — that's nearly half the room leaving without knowing what happens next.
+The gap between "the meeting ended" and "the follow-up went out" is where most work falls apart. A [Calendly State of Meetings report](https://www.businesswire.com/news/home/20241016065216/en/Report-Calendlys-State-of-Meetings-2024-shows-workers-want-more-meetings-as-long-as-theyre-good-meetings) found that 40% of respondents said they don't receive follow-up notes or action items after meetings. That's not a minor inefficiency — that's nearly half the room leaving without knowing what happens next.
 
 **Calendar ​workflow** ​**​ automation** tools like Motion or Reclaim can protect your schedule, but they don't touch what comes after the event. The calendar tells you when. It doesn't help with what now. That's the layer where AI follow-up starts to matter — not as a fancier reminder, but as something that can actually draft the next step.
 
@@ -37,7 +37,7 @@ The gap between "the meeting ended" and "the follow-up went out" is where most w
 
 Here's where **meeting follow-up AI** gets interesting — and where I've been spending most of my testing time.
 
-The basic flow: a meeting transcript (from Otter, Fireflies, [Read.ai](<http://Read.ai>), or whatever recorder you use) gets fed into an AI model. The model reads the transcript, identifies decisions, extracts action items, and drafts a follow-up email. Some setups can also create tasks in your project tool and set reminders.
+The basic flow: a meeting transcript (from Otter, Fireflies, [Read.ai](http://Read.ai), or whatever recorder you use) gets fed into an AI model. The model reads the transcript, identifies decisions, extracts action items, and drafts a follow-up email. Some setups can also create tasks in your project tool and set reminders.
 
 I ran this workflow using Claude with a transcript from a 45-minute client call. Pasted in the raw text, gave it a prompt — "Draft a follow-up email with action items, owners, and deadlines based on this transcript" — and waited.
 
@@ -63,13 +63,13 @@ The whole point is that the follow-up doesn't live in your memory anymore. It li
 
 I want to talk about **Claude Opus 4.8** here, not because it's the only model that can do this, but because its release tells us something about where this kind of work is heading.
 
-Anthropic [announced Opus 4.8](<https://www.anthropic.com/news/claude-opus-4-8>) in late May 2026. The headline improvements are in agentic task performance, tool use consistency, and — this is the part that matters for follow-up workflows — reliability over longer tasks. Early testers reported that Opus 4.8 is less likely to make unsupported claims and more likely to flag its own uncertainty. Anthropic's own evaluations suggest the model is roughly four times less likely to leave flaws in its work unremarked compared to its predecessor.
+Anthropic [announced Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8) in late May 2026. The headline improvements are in agentic task performance, tool use consistency, and — this is the part that matters for follow-up workflows — reliability over longer tasks. Early testers reported that Opus 4.8 is less likely to make unsupported claims and more likely to flag its own uncertainty. Anthropic's own evaluations suggest the model is roughly four times less likely to leave flaws in its work unremarked compared to its predecessor.
 
 For meeting follow-up, reliability is everything. A draft that invents an action item nobody discussed is worse than no draft at all. The **Opus 4.8 benchmark** results on agentic coding (69.2% on SWE-Bench Pro) suggest the model handles structured extraction — pulling specific facts from messy text — with more consistency than before.
 
 I've only been using Opus 4.8 for about a week and a half for this specific workflow, so I'm not going to overstate what I've seen. But the outputs feel tighter. Less hallucinated attribution. Fewer phantom deadlines. That step just… worked, more often than it used to.
 
-The broader signal: as models get better at [tool use](<https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview>) and longer autonomous tasks, the gap between "AI drafts an email" and "AI manages the entire post-meeting workflow" gets smaller. We're not there yet. But the direction is clear.
+The broader signal: as models get better at [tool use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview) and longer autonomous tasks, the gap between "AI drafts an email" and "AI manages the entire post-meeting workflow" gets smaller. We're not there yet. But the direction is clear.
 
 ## What Must Stay Human-Reviewed
 
@@ -83,7 +83,7 @@ Here's what I always check:
 
 **Omissions.** Sometimes the most important thing in a meeting is what wasn't said — a question that was dodged, a topic that was avoided. AI won't catch that. You will, because you were in the room.
 
-Even in more advanced setups — where a **computer-use agent** could theoretically open your email client, paste the draft, and send it — human review stays essential. As [Anthropic's computer use documentation](<https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool>) notes, this capability is still maturing. I'd treat full automation of meeting follow-ups as a useful prototype, not a finished workflow. At least for now.
+Even in more advanced setups — where a **computer-use agent** could theoretically open your email client, paste the draft, and send it — human review stays essential. As [Anthropic's computer use documentation](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool) notes, this capability is still maturing. I'd treat full automation of meeting follow-ups as a useful prototype, not a finished workflow. At least for now.
 
 ![4.png](/blog/images/ai-follow-up-email-opus-4-8/1780822565084-55744c97-4a59-4148-b256-18662e0395d1.webp)
 
@@ -107,13 +107,13 @@ Back to building things.
 
 ## Previous Posts:
 
-[How to Scale a One-Person Business Without Hiring](</blog/scale-one-person-business-without-hiring>)
+[How to Scale a One-Person Business Without Hiring](/blog/scale-one-person-business-without-hiring)
 
-[Claude Managed Agents: What They Mean for Solo Companies](</blog/claude-managed-agents-one-person-company>)
+[Claude Managed Agents: What They Mean for Solo Companies](/blog/claude-managed-agents-one-person-company)
 
-[How One-Person Businesses Work Like a Team With AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+[How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-[Why One-Person Companies Need a Workspace Agent](</blog/workspace-agents-for-solo-operators>)
+[Why One-Person Companies Need a Workspace Agent](/blog/workspace-agents-for-solo-operators)
 
-[Workspace Agents vs Workflow Builders: A Clear Comparison](</blog/workspace-agents-vs-workflow-builders>)
+[Workspace Agents vs Workflow Builders: A Clear Comparison](/blog/workspace-agents-vs-workflow-builders)
 

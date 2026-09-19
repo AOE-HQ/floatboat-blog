@@ -13,7 +13,7 @@ draft: false
 
 你好，我是 Nova。上个月我又在重整自己的工作流——这大概是今年第三次了——然后发现了一件有点不舒服的事：我一直在加工具、调系统，但我真正需要修的，是在更上游的东西。不是_怎么_工作，而是我拿什么来构建自己的工作。
 
-如果你在经营[一人公司](<https://github.com/easychen/one-person-businesses-methodology>)、又觉得撞到了天花板——我经历过。第一反应通常是「我需要帮手」，也就是招人。但作为第一步，我会劝你三思。不是因为它总是错的，而是因为它常常在给错误的问题找答案。
+如果你在经营[一人公司](https://github.com/easychen/one-person-businesses-methodology)、又觉得撞到了天花板——我经历过。第一反应通常是「我需要帮手」，也就是招人。但作为第一步，我会劝你三思。不是因为它总是错的，而是因为它常常在给错误的问题找答案。
 
 ## 为什么「先招个人」往往是错误的第一步
 
@@ -59,7 +59,7 @@ draft: false
 
 替代方案，就是单干圈常说的「产品化服务（Productized Service）」：一个界定好范围、标准化了的解决方案，面向定义清晰的受众，按固定费率提供。与其为每个客户量身定制服务，不如把你的专业能力打包成一套可重复的、带固定价签的流程。
 
-一个很好的现实案例：设计师 Brett Williams 用订阅制搭建了 [DesignJoy](<https://millionairecopy.com/success-story/solopreneur-business-strategy-design-joy/>)——客户按月付固定费用，换取异步设计工作。没有定制提案、没有范围蔓延谈判、没有不可预期的交付周期。据说他一边带着 16+ 个客户，一边每天只工作大约 6 小时。他的具体数字我无法核实，但他搭建的那套_结构_是真的——而且在很多服务品类里都可以复制。
+一个很好的现实案例：设计师 Brett Williams 用订阅制搭建了 [DesignJoy](https://millionairecopy.com/success-story/solopreneur-business-strategy-design-joy/)——客户按月付固定费用，换取异步设计工作。没有定制提案、没有范围蔓延谈判、没有不可预期的交付周期。据说他一边带着 16+ 个客户，一边每天只工作大约 6 小时。他的具体数字我无法核实，但他搭建的那套_结构_是真的——而且在很多服务品类里都可以复制。
 
 核心洞察是：当你的服务有固定形态时，交付一次比一次快。你不是在给每个客户重新发明轮子，而是在跑一套流程。
 
@@ -107,7 +107,7 @@ AI 对一人公司作用的诚实版本是：它压缩了跑杠杆一系统所�
 
 天花板的问题不是「我够不够拼」，而是「我现在这套结构，能不能在不按比例加时间的情况下产出更多」。能，你还有放大空间；不能，那在往里面加人之前，得先改结构。
 
-按[哈佛商业评论关于个人生产力的文章](<https://hbr.org/topic/subject/managing-yourself>)，大多数知识工作者高估了自己时间里真正不可替代的部分。很多「只有我能做」的感觉，其实是习惯，不是必需。
+按[哈佛商业评论关于个人生产力的文章](https://hbr.org/topic/subject/managing-yourself)，大多数知识工作者高估了自己时间里真正不可替代的部分。很多「只有我能做」的感觉，其实是习惯，不是必需。
 
 这话听着不舒服，但对我很有用。
 
@@ -121,13 +121,13 @@ AI 对一人公司作用的诚实版本是：它压缩了跑杠杆一系统所�
 
 ## 往期文章
 
-  * 学习如何作为单人创始人搭一条简单有效的**[AI 工作流](</blog/ai-workflow-for-solo-founders>)**
+  * 学习如何作为单人创始人搭一条简单有效的**[AI 工作流](/blog/ai-workflow-for-solo-founders)**
 
-  * 搞懂**[AI 工作区与工作流构建器](</blog/workflow-builder-vs-ai-workspace>)**的区别
+  * 搞懂**[AI 工作区与工作流构建器](/blog/workflow-builder-vs-ai-workspace)**的区别
 
-  * 看看为什么**[AI 会在会话之间遗忘——以及它如何拖慢你](</blog/why-ai-forgets-between-sessions>)**
+  * 看看为什么**[AI 会在会话之间遗忘——以及它如何拖慢你](/blog/why-ai-forgets-between-sessions)**
 
-  * 探索如何让**[一人公司靠 AI 像团队一样运转](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
+  * 探索如何让**[一人公司靠 AI 像团队一样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
 
-  * 发现**[真实工作流里的实用 AI Agent 用例](</blog/ai-agent-use-cases-real-examples>)**
+  * 发现**[真实工作流里的实用 AI Agent 用例](/blog/ai-agent-use-cases-real-examples)**
 

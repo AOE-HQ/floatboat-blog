@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Hello, everyone. I'm Nova. Today I want to talk about [AI agents.](<https://www.stackai.com/blog/the-2026-guide-to-agentic-workflow-architectures>)
+Hello, everyone. I'm Nova. Today I want to talk about [AI agents.](https://www.stackai.com/blog/the-2026-guide-to-agentic-workflow-architectures)
 
 _The AI agent headlines won't stop. But does any of it actually matter if you're running a one-person business? Here's a grounded breakdown of what's really shifting — and what questions are worth asking before you do anything._
 
@@ -31,7 +31,7 @@ AI agents are different. They don't stop at the answer — they take the next ac
 
 What separates agents from standard software is their ability to interpret natural language instructions, make decisions based on context, and adapt their behavior without being explicitly programmed for every scenario. The practical implication is real: an agent doesn't need you to babysit every step.
 
-This matters more than it sounds. According to [LangChain's State of Agent Engineering report](<https://www.langchain.com/state-of-agent-engineering>) — a survey of over 1,300 professionals published in late 2025 — ​**57% of organizations already have agents running in production** ​, with another 30% actively developing them. Research and data analysis (24.4%) and workflow automation (64% across deployments) are the top use cases. The shift from "testing" to "actually running this at work" happened faster than most people noticed.
+This matters more than it sounds. According to [LangChain's State of Agent Engineering report](https://www.langchain.com/state-of-agent-engineering) — a survey of over 1,300 professionals published in late 2025 — ​**57% of organizations already have agents running in production** ​, with another 30% actively developing them. Research and data analysis (24.4%) and workflow automation (64% across deployments) are the top use cases. The shift from "testing" to "actually running this at work" happened faster than most people noticed.
 
 This shift is also why Anthropic's Model Context Protocol became such a big deal after its November 2024 release. MCP is the open standard that lets AI agents actually connect to your tools — Google Drive, Slack, your browser, your files — rather than just talking about them. Since launching, the community has built thousands of MCP servers, and it's now the de-facto standard for connecting agents to tools and data. That infrastructure is what makes execution-layer AI possible.
 
@@ -43,7 +43,7 @@ The signal I find most useful isn't any one product announcement. It's that **ev
 
 Google's internal AI coding agent — reportedly called Agent Smith — went so viral internally in early 2026 that Google had to throttle access. According to a Business Insider report from March 2026, Google cofounder Sergey Brin appeared at a company-wide town hall and explicitly named AI agents as a "big focus" for the year. That's not a product launch. That's leadership reorganizing internal priorities around execution.
 
-[xAI's Grok 4.20](<https://x.ai/>), released in beta in February 2026, took a genuinely different architectural approach: it's not a single monolithic model but a multi-agent system where four specialized agents — Grok, Harper, Benjamin, and Lucas — deliberate and debate in parallel before generating a response. I haven't personally tested the full version — it was still in limited beta as of this writing (April 2026), and the API wasn't broadly available. Treat it as a directional signal about where architecture is headed, not as a product you can go use today.
+[xAI's Grok 4.20](https://x.ai/), released in beta in February 2026, took a genuinely different architectural approach: it's not a single monolithic model but a multi-agent system where four specialized agents — Grok, Harper, Benjamin, and Lucas — deliberate and debate in parallel before generating a response. I haven't personally tested the full version — it was still in limited beta as of this writing (April 2026), and the API wasn't broadly available. Treat it as a directional signal about where architecture is headed, not as a product you can go use today.
 
 The bigger picture: Gartner forecasts that **by the end of 2026, 40% of enterprise applications will embed task-specific AI agents** — up from under 5% in 2025. That's not a small number. It means agent-aware tools will start showing up inside software you already use, whether you opt in or not.
 
@@ -75,7 +75,7 @@ I learned this the uncomfortable way. I tried to hand off a weekly research summ
 
 This isn't just my experience. LangChain's survey found that ​**quality remains the single biggest barrier to production** ​, cited by 32% of respondents — ahead of cost and latency. Consistency, accuracy, and adherence to format were the top failure modes. That tracks exactly with what I ran into.
 
-Worth noting: according to research cited by the [Federal Reserve's April 2026 monitoring report on AI adoption](<https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html>), work-related GenAI adoption stood at approximately 41% of the US workforce as of November 2025, growing by about 31% in one year. Adoption is real. The quality problem is also real.
+Worth noting: according to research cited by the [Federal Reserve's April 2026 monitoring report on AI adoption](https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html), work-related GenAI adoption stood at approximately 41% of the US workforce as of November 2025, growing by about 31% in one year. Adoption is real. The quality problem is also real.
 
 ## What Execution-Ready AI Looks Like in Practice
 
@@ -133,7 +133,7 @@ I'll just say it directly: **most people reading the AI agent headlines don't ne
 
 The trap I've watched a lot of solo operators fall into is adding an agent layer to a process that wasn't well-defined to begin with. The agent doesn't fix unclear process — it amplifies it. Garbage in, garbage out, but faster.
 
-As Anthropic's engineering team noted in [their writeup on building effective agents](<https://www.anthropic.com/research/building-effective-agents>): _"Success in the ​_ ​ _LLM_ ​ _​ space ​_ ​​ _isn_ ​*'t about building the most sophisticated system. It's about building the right system for your needs." That principle applies at the solo-operator level more than anywhere else.
+As Anthropic's engineering team noted in [their writeup on building effective agents](https://www.anthropic.com/research/building-effective-agents): _"Success in the ​_ ​ _LLM_ ​ _​ space ​_ ​​ _isn_ ​*'t about building the most sophisticated system. It's about building the right system for your needs." That principle applies at the solo-operator level more than anywhere else.
 
 Also: a growing body of research shows that agents built from large language models can exhibit unpredictable behaviors even in benign settings. The 2025 LangChain survey found that ​**quality issues — not cost — remain the top barrier to production deployment** ​. That's not a reason to avoid agents. It's a reason to keep scope tight and review outputs, especially early on.
 
@@ -161,13 +161,13 @@ _Alright, that's today's little discovery. Catch you next time._
 
 ## Previous Posts:
 
-  * [If you're exploring how automation actually works in a solo setup, this real-world breakdown of Feishu CLI is worth a read.](</blog/feishu-cli-solo-work-setup>)
+  * [If you're exploring how automation actually works in a solo setup, this real-world breakdown of Feishu CLI is worth a read.](/blog/feishu-cli-solo-work-setup)
 
-  * [Want to see what AI agents look like in practice? This guide covers real use cases across different workflows.](</blog/ai-agent-use-cases-real-examples>)
+  * [Want to see what AI agents look like in practice? This guide covers real use cases across different workflows.](/blog/ai-agent-use-cases-real-examples)
 
-  * [Not sure whether you need an agent or just a smarter assistant? This comparison helps clarify the difference.](</blog/ai-agent-vs-ai-assistant>)
+  * [Not sure whether you need an agent or just a smarter assistant? This comparison helps clarify the difference.](/blog/ai-agent-vs-ai-assistant)
 
-  * [Thinking about building your own workflow instead of prompting from scratch? Start here.](</blog/how-to-build-an-ai-agent>)
+  * [Thinking about building your own workflow instead of prompting from scratch? Start here.](/blog/how-to-build-an-ai-agent)
 
-  * [And if you're deciding between tools, this breakdown of workflow builders vs AI workspaces will help you choose.](</blog/workflow-builder-vs-ai-workspace>)
+  * [And if you're deciding between tools, this breakdown of workflow builders vs AI workspaces will help you choose.](/blog/workflow-builder-vs-ai-workspace)
 

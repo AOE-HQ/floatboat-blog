@@ -23,7 +23,7 @@ draft: false
 
 聊天助手是一场对话。你打开一个输入框、输入、读答案、再输入。每一轮交流基本自足。助手能搜网页、跑代码、看上传的文件——但重心永远在聊天窗口。你一关标签页，大部分「状态」也随之而去。现在虽然有些记忆能留存，却是碎片化的。是你——而不是它——在把线索串在一起。
 
-我到现在几乎每天还用 [ChatGPT](<https://openai.com/gpt-5/>)。我认识的人也基本如此。「向一个聪明系统提问」这个场景，它做出了目前最自然的界面。对快速问答来说，它真的很难被超越。
+我到现在几乎每天还用 [ChatGPT](https://openai.com/gpt-5/)。我认识的人也基本如此。「向一个聪明系统提问」这个场景，它做出了目前最自然的界面。对快速问答来说，它真的很难被超越。
 
 ![2.PNG](/blog/images/workspace-agents-vs-chat-assistants/1776999740654-33cd6c61-9f51-423e-8d6d-4db122a501ba.webp)
 
@@ -31,9 +31,9 @@ draft: false
 
 工作区 Agent 押注的是另一件事：**AI 不该是一场你造访的对话——它该是一个住在你文件、工具与标签页旁边的员工。**不必把文档复制粘贴进聊天框，Agent 自己读文档；不必描述某个浏览器标签页，Agent 直接看到它；不必一次只来一轮，它跑的是一个循环。
 
-Anthropic 工程团队对 [Agent 有一个干净的定义](<https://www.anthropic.com/research/building-effective-agents>)，我时常会引用：Agent 是这样一种系统——LLM 动态地主导自己的流程与工具使用，保持对「如何完成任务」的控制；与之相对的是 workflow（工作流），其中路径是写死的。这个区别比营销话术意识到的更重要。
+Anthropic 工程团队对 [Agent 有一个干净的定义](https://www.anthropic.com/research/building-effective-agents)，我时常会引用：Agent 是这样一种系统——LLM 动态地主导自己的流程与工具使用，保持对「如何完成任务」的控制；与之相对的是 workflow（工作流），其中路径是写死的。这个区别比营销话术意识到的更重要。
 
-等一下——这一部分值得停下来细想。聊天助手**_回应_**；工作区 Agent**_运作_**。[IBM 对同一分界用了稍不同的框架](<https://www.ibm.com/think/topics/ai-agents-vs-ai-assistants>)：助手是给你提出待批准的行动建议；Agent 则借助外部工具推理、决策并行动。同样的意思，不同的说法。
+等一下——这一部分值得停下来细想。聊天助手**_回应_**；工作区 Agent**_运作_**。[IBM 对同一分界用了稍不同的框架](https://www.ibm.com/think/topics/ai-agents-vs-ai-assistants)：助手是给你提出待批准的行动建议；Agent 则借助外部工具推理、决策并行动。同样的意思，不同的说法。
 
 ## 并排看：两者各自住在哪里
 
@@ -59,7 +59,7 @@ Anthropic 工程团队对 [Agent 有一个干净的定义](<https://www.anthropi
 
 ### 会话之间延续什么
 
-聊天助手的记忆在变好，但大多仍是一份偏好清单。工作区 Agent 围绕的理念是**进行中项目的上下文应当累积，而不是重置**。Anthropic 有一篇[关于长时运行 Agent 框架的深思之作](<https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents>)，抓住了核心问题：跨多个会话工作的 Agent 需要一种记住自己做到哪里的方式，否则它们只会每次都重做同样的探索工作。这正是工作区这个品类在押注的东西。
+聊天助手的记忆在变好，但大多仍是一份偏好清单。工作区 Agent 围绕的理念是**进行中项目的上下文应当累积，而不是重置**。Anthropic 有一篇[关于长时运行 Agent 框架的深思之作](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)，抓住了核心问题：跨多个会话工作的 Agent 需要一种记住自己做到哪里的方式，否则它们只会每次都重做同样的探索工作。这正是工作区这个品类在押注的东西。
 
 ## 什么时候聊天助手仍是更好的选择
 
@@ -81,7 +81,7 @@ Anthropic 工程团队对 [Agent 有一个干净的定义](<https://www.anthropi
 
 ### 你不想让 AI 靠近你的文件时
 
-这一点我感触很深。给 Agent 你工作区的广泛访问权，是一个真实的信任决策。[OWASP 的 LLM 应用 Top 10](<https://genai.owasp.org/llmrisk/llm01-prompt-injection/>) 把 prompt 注入列为第一大风险类别——而当 Agent 能跨你的系统采取行动时，这一风险会严重放大。如果你在跟客户数据、法律文件或任何机密打交道，一个沙箱化的聊天会话往往比深度集成的 Agent 更诚实。至少在安全叙事成熟之前是这样。
+这一点我感触很深。给 Agent 你工作区的广泛访问权，是一个真实的信任决策。[OWASP 的 LLM 应用 Top 10](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) 把 prompt 注入列为第一大风险类别——而当 Agent 能跨你的系统采取行动时，这一风险会严重放大。如果你在跟客户数据、法律文件或任何机密打交道，一个沙箱化的聊天会话往往比深度集成的 Agent 更诚实。至少在安全叙事成熟之前是这样。
 
 聊天助手是「把这一个东西带给 AI」的模式；工作区 Agent 是「把一切都开放给 AI」的模式。这是两种不同的信任交易。要有意识地去选。
 
@@ -107,7 +107,7 @@ Anthropic 工程团队对 [Agent 有一个干净的定义](<https://www.anthropi
 
 这是我最关心的一种情况，因为它就是我的情况。运营一人公司时，你在同一天里要戴战略、执行、内容、研究与客户五顶帽子。为每个角色各开一个 ChatGPT 标签页是行得通的——勉强行得通——但结果你管理标签页的时间比管理工作本身还多。
 
-[Agentic 平台](<https://slack.com/blog/productivity/best-agentic-ai-platforms-for-2026-what-they-are-and-how-to-choose-one>)的「一切在一个表面里」的主张在这里真能兑现——这点出乎我意料。不是因为某个具体任务变聪明了，而是因为开启每种新工作的**_启动成本_**降低了。昨天做的研究今天还在；我正在编辑的草稿没有消失进某条聊天记录里。
+[Agentic 平台](https://slack.com/blog/productivity/best-agentic-ai-platforms-for-2026-what-they-are-and-how-to-choose-one)的「一切在一个表面里」的主张在这里真能兑现——这点出乎我意料。不是因为某个具体任务变聪明了，而是因为开启每种新工作的**_启动成本_**降低了。昨天做的研究今天还在；我正在编辑的草稿没有消失进某条聊天记录里。
 
 ## 两者目前都不擅长什么
 
@@ -141,13 +141,13 @@ Anthropic 工程团队对 [Agent 有一个干净的定义](<https://www.anthropi
 
 ## 延伸阅读
 
-→ [理解 AI 工作区 Agent 在真实工作流中如何运作](</blog/ai-workspace-agents>)
+→ [理解 AI 工作区 Agent 在真实工作流中如何运作](/blog/ai-workspace-agents)
 
-→ [在实践中看 AI Agent 与 AI 助手的真正区别](</blog/ai-agent-vs-ai-assistant>)
+→ [在实践中看 AI Agent 与 AI 助手的真正区别](/blog/ai-agent-vs-ai-assistant)
 
-→ [了解单人创业者在 2026 年如何用 AI Agent 扩展工作](</blog/ai-agents-2026-solo-operators>)
+→ [了解单人创业者在 2026 年如何用 AI Agent 扩展工作](/blog/ai-agents-2026-solo-operators)
 
-→ [探索真实工作流中实用的 AI Agent 用例](</blog/ai-agent-use-cases-real-examples>)
+→ [探索真实工作流中实用的 AI Agent 用例](/blog/ai-agent-use-cases-real-examples)
 
-→ [发现一人企业如何用 AI 系统像整支团队一样运转](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+→ [发现一人企业如何用 AI 系统像整支团队一样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

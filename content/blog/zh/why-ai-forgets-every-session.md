@@ -83,7 +83,7 @@ _我开始管它叫「重新解释税」。一旦我注意到它，就再也无�
 
 大多数人最终采用的变通办法——每轮会话开头贴一份上下文文档——恰恰就是 prompt 填充。它能用，但繁琐、不一致，而且撑不过两三个进行中的项目，就会变成一份新工作。
 
-工作区模型则不同。它不是每轮从零开始，而是在会话开始时加载一份持久状态——你的偏好、你的决定、你的项目历史——从你上次停下的地方接续。正如 [Anthropic 关于构建高效 Agent 的研究](<https://www.anthropic.com/research/building-effective-agents>)所指出的，最可靠的 Agent 系统之所以在上下文管理上大力投入，正是因为「**AI 进场时知道什么，决定了它出场时产出什么。**」
+工作区模型则不同。它不是每轮从零开始，而是在会话开始时加载一份持久状态——你的偏好、你的决定、你的项目历史——从你上次停下的地方接续。正如 [Anthropic 关于构建高效 Agent 的研究](https://www.anthropic.com/research/building-effective-agents)所指出的，最可靠的 Agent 系统之所以在上下文管理上大力投入，正是因为「**AI 进场时知道什么，决定了它出场时产出什么。**」
 
 这个区别很重要：会话是对话，工作区是基础设施。
 
@@ -99,7 +99,7 @@ _我开始管它叫「重新解释税」。一旦我注意到它，就再也无�
 
 眼下多数「AI 记忆」功能只是狭义上的记忆：它们存了一些关于你的事实，却未必把这些事实转化为一致的执行。
 
-[The New Stack 对 AI Agent 记忆架构的深度分析](<https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/>)描述了四种能真正让 AI 跨会话有用的记忆：工作记忆（此刻正在做什么）、情景记忆（过去会话发生了什么）、语义记忆（AI 学到的关于你的东西）、程序记忆（如何真正做好你的重复性任务）。多数现有工具只有第一种的碎片、第二种的痕迹，真正的缺口在第三、第四种。
+[The New Stack 对 AI Agent 记忆架构的深度分析](https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/)描述了四种能真正让 AI 跨会话有用的记忆：工作记忆（此刻正在做什么）、情景记忆（过去会话发生了什么）、语义记忆（AI 学到的关于你的东西）、程序记忆（如何真正做好你的重复性任务）。多数现有工具只有第一种的碎片、第二种的痕迹，真正的缺口在第三、第四种。
 
 2025 年是「只保留、不理解」的一年。厂商争先恐后地上记忆功能——从持久聊天线程、长上下文窗口，到 AI「记忆空间」和公司知识库集成。这些都是向前的好步子，却没有解决真问题：AI 系统能回想事实，却仍然缺乏理解。它们知道发生了什么，却不知道那为什么重要。
 
@@ -113,13 +113,13 @@ _我开始管它叫「重新解释税」。一旦我注意到它，就再也无�
 
 **决策日志。**某种能跨会话边界记录「我们定了 X，因为 Y」的机制。这是大多数记忆功能仍然处理不好的类别。
 
-**工作区级感知。** AI 应该知道哪些文件与项目相关，而不只是你贴进 prompt 的东西。[Tribe AI 对上下文感知记忆系统的研究](<https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025>)区分了「信息检索」（按需找事实）和「运营记忆」（知道一个进行中项目的状态）。单人创业者需要的是后者。
+**工作区级感知。** AI 应该知道哪些文件与项目相关，而不只是你贴进 prompt 的东西。[Tribe AI 对上下文感知记忆系统的研究](https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025)区分了「信息检索」（按需找事实）和「运营记忆」（知道一个进行中项目的状态）。单人创业者需要的是后者。
 
 **默认携带上下文的可复用工作流。**目标不只是 AI 记得你，而是它能正确跑你的重复任务、而不需要你每次重建上下文。
 
-顺带一提，一些企业平台已经在往这个方向走了。比如 [Google 的 Vertex AI Agent Builder](<https://cloud.google.com/blog/products/ai-machine-learning/new-enhanced-tool-governance-in-vertex-ai-agent-builder>) 最近宣布 Memory Bank 转为全面可用——允许 Agent 在多次交互间为生产负载维持上下文。有状态 AI 的基础设施正在平台层成熟；它能否以个人知识工作者够得着的方式落地，还是未解之问。
+顺带一提，一些企业平台已经在往这个方向走了。比如 [Google 的 Vertex AI Agent Builder](https://cloud.google.com/blog/products/ai-machine-learning/new-enhanced-tool-governance-in-vertex-ai-agent-builder) 最近宣布 Memory Bank 转为全面可用——允许 Agent 在多次交互间为生产负载维持上下文。有状态 AI 的基础设施正在平台层成熟；它能否以个人知识工作者够得着的方式落地，还是未解之问。
 
-仅供参考：[Sphere Inc 对 AI 上下文缺口的分析](<https://www.sphereinc.com/blogs/ai-memory-and-context/>)发现，多数组织真正需要的不是留存——而是理解。AI 不仅要存下说过的话，还要能推理它为什么重要。我觉得它说得对，而我们还处在早期。
+仅供参考：[Sphere Inc 对 AI 上下文缺口的分析](https://www.sphereinc.com/blogs/ai-memory-and-context/)发现，多数组织真正需要的不是留存——而是理解。AI 不仅要存下说过的话，还要能推理它为什么重要。我觉得它说得对，而我们还处在早期。
 
 我不确定自己已经彻底想清楚了自己的解法。我仍在实验——对不同类型的项目，有的组合比别人更顺手。但我确实知道一件事：**重新解释税是真实的，而给它命名，是修好它的第一步。**
 

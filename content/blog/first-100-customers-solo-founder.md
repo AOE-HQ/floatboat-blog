@@ -39,7 +39,7 @@ Here's the flip side, and it's real: **you will never again be this close to you
 
 At 5 customers, you can have a 30-minute call with all of them in the same week. At 500, you can't. At 5,000, you're reading aggregated survey data and guessing. The discomfort of this early phase — the manual outreach, the personal conversations, the rejection — is also what gives you information no analytics dashboard can replicate.
 
-Think about what Wilson Wilson, co-founder of [Senja.io](<http://Senja.io>), did in 2022 after launching a testimonial collection tool: he spent the first months in the exact communities his potential customers used — indie hacker forums, Twitter conversations about social proof — answering questions, not pitching. His first paying customer arrived in June 2022 within weeks of launch. By just two months later, Senja had crossed $100 MRR. By November 2025, the product had crossed $1M ARR with 3,000 paying customers, 100% bootstrapped. The early community work wasn't just a tactic. It was the foundation that made everything compound later.
+Think about what Wilson Wilson, co-founder of [Senja.io](http://Senja.io), did in 2022 after launching a testimonial collection tool: he spent the first months in the exact communities his potential customers used — indie hacker forums, Twitter conversations about social proof — answering questions, not pitching. His first paying customer arrived in June 2022 within weeks of launch. By just two months later, Senja had crossed $100 MRR. By November 2025, the product had crossed $1M ARR with 3,000 paying customers, 100% bootstrapped. The early community work wasn't just a tactic. It was the foundation that made everything compound later.
 
 I keep coming back to what Sahil Lavingia described in _The Minimalist Entrepreneur_ (2021, Portfolio/Penguin): **build a community first, then solve a problem for them — not the other way around.** Most solo founders invert this. They build, then look for community. The few who start in the community already know what to build — and they already have people who trust them enough to buy.
 
@@ -65,7 +65,7 @@ I know. That sounds slow. It is slow. But people can smell a pitch disguised as 
 
 The ones who get traction early are almost always the ones who gave genuine value first, built familiarity, and then — almost incidentally — mentioned what they were building. By that point, people are already curious.
 
-The data supports this. According to [Freemius's 2025 State of Micro-SaaS report](<https://freemius.com/blog/state-of-micro-saas-2025/>), which analyzed data from MicroConf's survey of nearly 700 independent SaaS founders: **50% of founders lean primarily on communities and referrals, and those channels report stronger ​lifetime value** ​**​ — especially in the early stages.** Another 47% of founders said that integrations, partnerships, communities, and forums became their most dependable and controllable source of growth. Community-sourced customers tend to stick around longer, complain more constructively, and refer more often. They came to you because they trusted the environment you showed up in — not because you ran an ad at them.
+The data supports this. According to [Freemius's 2025 State of Micro-SaaS report](https://freemius.com/blog/state-of-micro-saas-2025/), which analyzed data from MicroConf's survey of nearly 700 independent SaaS founders: **50% of founders lean primarily on communities and referrals, and those channels report stronger ​lifetime value** ​**​ — especially in the early stages.** Another 47% of founders said that integrations, partnerships, communities, and forums became their most dependable and controllable source of growth. Community-sourced customers tend to stick around longer, complain more constructively, and refer more often. They came to you because they trusted the environment you showed up in — not because you ran an ad at them.
 
 ![3.png](/blog/images/first-100-customers-solo-founder/1775616241728-144b6973-1d05-421e-b168-46efd92cd126.webp)
 
@@ -75,7 +75,7 @@ The data supports this. According to [Freemius's 2025 State of Micro-SaaS report
 
 I'll just say it: **launching to no audience produces very little.** Product Hunt launches, cold email campaigns, announcements on accounts with 200 followers — these can feel like action, but the returns at this stage are usually marginal. The thing that actually works is talking to people, one by one, and either helping them or finding out why you can't.
 
-This is exactly what Paul Graham described in his 2013 essay [Do Things That Don't Scale](<https://paulgraham.com/ds.html>), which remains one of the most practically useful pieces of founder advice ever written. His central point: _"The most common unscalable thing founders have to do at the start is to recruit users manually. Nearly all startups have to. You can't wait for users to come to you."_
+This is exactly what Paul Graham described in his 2013 essay [Do Things That Don't Scale](https://paulgraham.com/ds.html), which remains one of the most practically useful pieces of founder advice ever written. His central point: _"The most common unscalable thing founders have to do at the start is to recruit users manually. Nearly all startups have to. You can't wait for users to come to you."_
 
 His example was Stripe. The Collison brothers didn't send emails asking people to try the beta. They said: "Right then, give me your laptop" — and set people up on the spot. That specific pattern — what Graham calls the "Collison installation" — is an extreme version, but the underlying mechanism is the same: **manual, direct, friction-removing.** That's what early distribution actually looks like.
 
@@ -101,7 +101,7 @@ There's a seductive logic to free early on: lower the barrier, get more users, l
 
 **The problem is that free users and paying customers behave fundamentally differently.** Free users will tell you your product is great and then never open it again. Paying customers will tell you what's broken because they paid for something that was supposed to work.
 
-According to a Wynter survey of 100 B2B SaaS marketing executives — cited in [Freemius's 2025 State of Micro-SaaS report](<https://freemius.com/blog/state-of-micro-saas-2025/>) — **73% of B2B buyers trust peer recommendations over other sources, and 58% start the buying process with a ​referral** ​**​ or recommendation.** That trust dynamic only activates when someone has actually committed — financially, even if the amount is small. A free user who "loves the product" is not yet a node in that referral network. A paying customer who solved their problem is.
+According to a Wynter survey of 100 B2B SaaS marketing executives — cited in [Freemius's 2025 State of Micro-SaaS report](https://freemius.com/blog/state-of-micro-saas-2025/) — **73% of B2B buyers trust peer recommendations over other sources, and 58% start the buying process with a ​referral** ​**​ or recommendation.** That trust dynamic only activates when someone has actually committed — financially, even if the amount is small. A free user who "loves the product" is not yet a node in that referral network. A paying customer who solved their problem is.
 
 The signal you're looking for at this stage isn't _"do people like this enough to use it for free?"_ It's _"do people value this enough to pay for it?"_ Those are different questions with very different answers — and confusing them is one of the most common ways early-stage founders waste months in the wrong direction.
 
@@ -123,7 +123,7 @@ The causal mechanism: **each satisfied customer in a niche community is a standi
 
 The most reliable way to generate this: **make the experience of being your customer remarkable at this stage.** Not features — responsiveness. A reply within the hour. A fix within the day. A personal check-in after onboarding. You can do this with 10 customers. You cannot do it at 10,000. It's one of the few genuine structural advantages of being early and small, and most founders underuse it.
 
-Gil Hildebrand, founder of [Subscribr](<https://subscribr.ai/>), described this pattern precisely in a 2025 Indie Hackers post: he launched publicly in April 2024 targeting YouTube creators who needed scriptwriting help, spent the first weeks in YouTube creator communities answering questions about content strategy, and by 100 days post-launch was hitting $10k MRR. By late 2025, the product was tracking toward $1M for the year. The compounding started from the community work before the product even existed.
+Gil Hildebrand, founder of [Subscribr](https://subscribr.ai/), described this pattern precisely in a 2025 Indie Hackers post: he launched publicly in April 2024 targeting YouTube creators who needed scriptwriting help, spent the first weeks in YouTube creator communities answering questions about content strategy, and by 100 days post-launch was hitting $10k MRR. By late 2025, the product was tracking toward $1M for the year. The compounding started from the community work before the product even existed.
 
 ### What to Systematize — and What to Keep Doing Manually
 
@@ -157,7 +157,7 @@ The founders who come out of this phase well aren't the ones who executed most p
 
 **Scaling too fast after an early spike.** A Product Hunt launch that brings in 30 sign-ups in two days feels like traction. It might not be. Wait and see who's still active in 30 days before drawing conclusions.
 
-According to[ Carta's 2025 Solo Founders Report](<https://carta.com/data/solo-founders-report/>), AI has expanded what individual founders can accomplish — which is genuinely true and important. But the core work of getting to 100 customers hasn't changed: it's still relational, manual, and slower than you'd like. That's not a bug. That's the mechanism. The things that feel slow — community trust, direct conversations, careful early charging — are slow precisely because they're building something that compounds. The things that feel fast — launch campaigns, cold lists, automated outreach to strangers — are fast precisely because they don't compound at this stage.
+According to[ Carta's 2025 Solo Founders Report](https://carta.com/data/solo-founders-report/), AI has expanded what individual founders can accomplish — which is genuinely true and important. But the core work of getting to 100 customers hasn't changed: it's still relational, manual, and slower than you'd like. That's not a bug. That's the mechanism. The things that feel slow — community trust, direct conversations, careful early charging — are slow precisely because they're building something that compounds. The things that feel fast — launch campaigns, cold lists, automated outreach to strangers — are fast precisely because they don't compound at this stage.
 
 ![5.png](/blog/images/first-100-customers-solo-founder/1775616268699-0fa95876-afc3-455e-93fc-afb0cb4c4b9f.webp)
 
@@ -165,13 +165,13 @@ _Observations from tracking indie founders, micro-SaaS builders, and solo operat
 
 ## Previous Posts:
 
-  * [Want a practical example of how solo operators actually set up their daily workflows? Start here](</blog/feishu-cli-solo-work-setup>)
+  * [Want a practical example of how solo operators actually set up their daily workflows? Start here](/blog/feishu-cli-solo-work-setup)
 
-  * [Still figuring out how to structure your AI-powered workflow end-to-end? This guide breaks it down](</blog/workflow-builder-vs-ai-workspace>)
+  * [Still figuring out how to structure your AI-powered workflow end-to-end? This guide breaks it down](/blog/workflow-builder-vs-ai-workspace)
 
-  * [If you're exploring automation tools, this comparison helps clarify what fits your setup](</blog/relevance-ai-vs-n8n>)
+  * [If you're exploring automation tools, this comparison helps clarify what fits your setup](/blog/relevance-ai-vs-n8n)
 
-  * [Not sure what AI agents actually do in real work scenarios? These examples make it concrete](</blog/ai-agent-use-cases-real-examples>)
+  * [Not sure what AI agents actually do in real work scenarios? These examples make it concrete](/blog/ai-agent-use-cases-real-examples)
 
-  * [Thinking about going deeper? Here's what it really takes to build your own AI agent](</blog/how-to-build-an-ai-agent>)
+  * [Thinking about going deeper? Here's what it really takes to build your own AI agent](/blog/how-to-build-an-ai-agent)
 

@@ -19,9 +19,9 @@ If you're running a small operation and want to hand off a repeatable task to Ch
 
 ## Before You Start: What ChatGPT Can Handle
 
-Let's get something straight. [A Custom GPT](<https://chatgpt.com/features/agent/>) is not a fully autonomous agent that goes off and runs your business while you sleep. It's closer to a very well-briefed assistant who follows the same playbook every time — and that's actually more useful than it sounds.
+Let's get something straight. [A Custom GPT](https://chatgpt.com/features/agent/) is not a fully autonomous agent that goes off and runs your business while you sleep. It's closer to a very well-briefed assistant who follows the same playbook every time — and that's actually more useful than it sounds.
 
-What it can do: follow instructions you define, reference files you upload, browse the web, run code for data analysis, and generate images. According to [OpenAI's official documentation on Custom GPTs](<https://help.openai.com/en/articles/8554407-gpts-in-chatgpt>), a GPT combines instructions, knowledge, and selected capabilities into a tailored experience. You configure it once, and every conversation starts with that context already loaded.
+What it can do: follow instructions you define, reference files you upload, browse the web, run code for data analysis, and generate images. According to [OpenAI's official documentation on Custom GPTs](https://help.openai.com/en/articles/8554407-gpts-in-chatgpt), a GPT combines instructions, knowledge, and selected capabilities into a tailored experience. You configure it once, and every conversation starts with that context already loaded.
 
 What it can't do — at least not in the Custom GPT format — is take actions on external websites, send emails on your behalf, or run background tasks. That's the territory of ChatGPT's newer ​**Agent Mode** ​, which is a separate feature entirely.
 
@@ -45,7 +45,7 @@ One thing I learned the hard way — don't try to make one GPT do five different
 
 Open ChatGPT, go to **Explore GPTs** in the sidebar, and click ​**Create** ​. You'll see two tabs: Create (conversational) and Configure (manual). I always use Configure — it's faster and you get more control.
 
-**Instructions** are the core. This is where you tell your GPT what it does, how it should respond, and what to avoid. [OpenAI's guidelines for writing GPT instructions](<https://help.openai.com/en/articles/9358033-key-guidelines-for-writing-instructions-for-custom-gpts>) recommend using explicit step structures for multi-step workflows — something like "When X happens → do Y" — and separating sections with clear headings.
+**Instructions** are the core. This is where you tell your GPT what it does, how it should respond, and what to avoid. [OpenAI's guidelines for writing GPT instructions](https://help.openai.com/en/articles/9358033-key-guidelines-for-writing-instructions-for-custom-gpts) recommend using explicit step structures for multi-step workflows — something like "When X happens → do Y" — and separating sections with clear headings.
 
 I'd add one thing from my own experience: ​**include 2–3 examples of good output directly in the instructions** ​. I paste in a sample input and the exact output I'd want, and the difference is night and day.
 
@@ -53,7 +53,7 @@ I'd add one thing from my own experience: ​**include 2–3 examples of good ou
 
 **Capabilities** are the built-in tools you can toggle on: web browsing, code interpreter, and image generation. Turn on only what the task actually needs. Leaving unnecessary tools on can sometimes confuse the model.
 
-Oh, one detail that's easy to miss. As of early 2026, OpenAI has [retired several older models](<https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes>) including GPT-4o and various GPT-5.1 variants. If you're building a new GPT today, you're on GPT-5.2 or newer. Worth checking, because behavior varies between model generations.
+Oh, one detail that's easy to miss. As of early 2026, OpenAI has [retired several older models](https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes) including GPT-4o and various GPT-5.1 variants. If you're building a new GPT today, you're on GPT-5.2 or newer. Worth checking, because behavior varies between model generations.
 
 ![h3.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182695411-06adc34b-a391-4bb3-8c16-ec27fe74e9e3.webp)
 
@@ -63,7 +63,7 @@ Before you share your GPT — or start relying on it yourself — decide what it
 
 **Who can use it.** You can keep it private, share via link, or publish to the GPT Store. For team use, Business and Enterprise plans let you share within your workspace with admin controls.
 
-**What data it can access.** Your GPT only sees the files you upload and whatever the user shares in conversation. If you're connecting to external APIs through Actions, that's a different layer — read [OpenAI's guide on configuring actions](<https://help.openai.com/en/articles/9442513-configuring-actions-in-gpts>) before touching it.
+**What data it can access.** Your GPT only sees the files you upload and whatever the user shares in conversation. If you're connecting to external APIs through Actions, that's a different layer — read [OpenAI's guide on configuring actions](https://help.openai.com/en/articles/9442513-configuring-actions-in-gpts) before touching it.
 
 **Where you want human review.** I set a personal rule: for any GPT that produces client-facing output, I review before sending. The GPT drafts, I approve. For internal tasks like organizing notes — I let it run more freely. But I still spot-check weekly.
 
@@ -91,7 +91,7 @@ I rewrote my content research GPT's instructions twice based on testing alone. T
 
 Custom GPTs cover a surprising amount of ground before you need to level up. But there's a ceiling.
 
-You'll probably outgrow them when you need real-world actions — sending emails, updating spreadsheets, posting to Slack — without manually approving each step. That's where Agent Mode comes in, available on Plus ($20/month), Pro, and Team plans. I checked the current pricing on [ChatGPT's official pricing page](<https://chatgpt.com/pricing/>) — Plus has been $20/month since launch, which still feels fair for what you get.
+You'll probably outgrow them when you need real-world actions — sending emails, updating spreadsheets, posting to Slack — without manually approving each step. That's where Agent Mode comes in, available on Plus ($20/month), Pro, and Team plans. I checked the current pricing on [ChatGPT's official pricing page](https://chatgpt.com/pricing/) — Plus has been $20/month since launch, which still feels fair for what you get.
 
 Custom GPTs also don't maintain memory across sessions. Each conversation starts fresh. If persistent memory matters for your workflow, that's another reason to look at Agent Mode or the Assistants API.
 
@@ -105,13 +105,13 @@ I'll probably keep refining my own setup as the tools evolve. That part never re
 
 ## Previous Posts:
 
-  * If you're still deciding whether you need a Custom GPT or a more autonomous setup, start here: [What Is an AI Agent Platform? A Decision Framework for Solo Operators](</blog/ai-agent-solo-operators>)
+  * If you're still deciding whether you need a Custom GPT or a more autonomous setup, start here: [What Is an AI Agent Platform? A Decision Framework for Solo Operators](/blog/ai-agent-solo-operators)
 
-  * Want to understand where ChatGPT workflows stop and real agent behavior begins? This breaks down the line clearly: [AI Workflow vs Agent Workflow: Where the Line Actually Is](</blog/ai-agent-workflow-vibe-coding>)
+  * Want to understand where ChatGPT workflows stop and real agent behavior begins? This breaks down the line clearly: [AI Workflow vs Agent Workflow: Where the Line Actually Is](/blog/ai-agent-workflow-vibe-coding)
 
-  * If your AI keeps forgetting context between sessions, this explains why — and what to do about it: [Why Your AI Forgets Everything Between Sessions](</blog/why-ai-forgets-between-sessions>)
+  * If your AI keeps forgetting context between sessions, this explains why — and what to do about it: [Why Your AI Forgets Everything Between Sessions](/blog/why-ai-forgets-between-sessions)
 
-  * Thinking about moving beyond Custom GPTs into workspace-style AI systems? This is a useful next step: [AI Workspace Agents: What They Actually Change for Solo Operators](</blog/ai-workspace-agents>)
+  * Thinking about moving beyond Custom GPTs into workspace-style AI systems? This is a useful next step: [AI Workspace Agents: What They Actually Change for Solo Operators](/blog/ai-workspace-agents)
 
-  * Once you've built your first GPT, this guide helps you turn repeatable tasks into something more reliable and scalable: [How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>)
+  * Once you've built your first GPT, this guide helps you turn repeatable tasks into something more reliable and scalable: [How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work)
 

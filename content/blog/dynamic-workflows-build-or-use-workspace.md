@@ -11,17 +11,17 @@ locale: "en"
 draft: false
 ---
 
-​​[Dynamic Workflows just shipped in Claude Code](<https://claude.com/blog/introducing-dynamic-workflows-in-claude-code>)​, and if you're a solo operator already running AI in your stack, the real question isn't _"is this cool"_ — it's whether you should be building your own sub-agent orchestration, or whether what you actually need is a workspace that runs work end-to-end. _Hi, I'm Nova. ​_ I've been poking at the research preview since it dropped on my own projects.. Here's how I'd think through the build-or-use call before you commit either direction.
+​​[Dynamic Workflows just shipped in Claude Code](https://claude.com/blog/introducing-dynamic-workflows-in-claude-code)​, and if you're a solo operator already running AI in your stack, the real question isn't _"is this cool"_ — it's whether you should be building your own sub-agent orchestration, or whether what you actually need is a workspace that runs work end-to-end. _Hi, I'm Nova. ​_ I've been poking at the research preview since it dropped on my own projects.. Here's how I'd think through the build-or-use call before you commit either direction.
 
 ![2.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055108452-0336b9fb-4040-4b5e-8fbb-03f3cf3494e0.webp)
 
 ## What Dynamic Workflows actually are
 
-The short version: in Claude Code, you can now ask Claude to "create a workflow," and instead of one model chewing through your task turn-by-turn, it writes an orchestration script on the fly. That script ​[spawns up to 16 parallel sub-agents at a time](<https://code.claude.com/docs/en/workflows>)​, capped at 1,000 total per run, with intermediate results living inside script variables instead of in Claude's context window. At the end, you get one consolidated report.
+The short version: in Claude Code, you can now ask Claude to "create a workflow," and instead of one model chewing through your task turn-by-turn, it writes an orchestration script on the fly. That script ​[spawns up to 16 parallel sub-agents at a time](https://code.claude.com/docs/en/workflows)​, capped at 1,000 total per run, with intermediate results living inside script variables instead of in Claude's context window. At the end, you get one consolidated report.
 
 ![3.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055117692-97ffd373-6502-4340-935c-b6b2070a5e37.webp)
 
-It's available as a research preview on **[Max, Team, and Enterprise plans](<https://www.anthropic.com/pricing>)** (Pro isn't on the list), plus the API, Bedrock, Vertex AI, and Microsoft Foundry. On Max and Team it's on by default; Enterprise admins have to switch it on. It needs Claude Code v2.1.154 or later. The launch documentation also flags that workflows can burn substantially more tokens than a standard session — Anthropic itself recommends starting with a scoped task to calibrate before launching a repo-wide audit.
+It's available as a research preview on **[Max, Team, and Enterprise plans](https://www.anthropic.com/pricing)** (Pro isn't on the list), plus the API, Bedrock, Vertex AI, and Microsoft Foundry. On Max and Team it's on by default; Enterprise admins have to switch it on. It needs Claude Code v2.1.154 or later. The launch documentation also flags that workflows can burn substantially more tokens than a standard session — Anthropic itself recommends starting with a scoped task to calibrate before launching a repo-wide audit.
 
 ![4.PNG](/blog/images/dynamic-workflows-build-or-use-workspace/1780055132392-1aeffdcd-dfc9-48e7-b3fb-6326ea7cfe77.webp)
 
@@ -99,13 +99,13 @@ Worth checking the official Claude Code docs before you commit either way — re
 
 ## Previous Posts
 
-[How to Scale a One-Person Business Without Hiring](</blog/scale-one-person-business-without-hiring>)
+[How to Scale a One-Person Business Without Hiring](/blog/scale-one-person-business-without-hiring)
 
-[Claude Managed Agents: What They Mean for Solo Companies](</blog/claude-managed-agents-one-person-company>)
+[Claude Managed Agents: What They Mean for Solo Companies](/blog/claude-managed-agents-one-person-company)
 
-[How One-Person Businesses Work Like a Team With AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+[How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-[Why One-Person Companies Need a Workspace Agent](</blog/workspace-agents-for-solo-operators>)
+[Why One-Person Companies Need a Workspace Agent](/blog/workspace-agents-for-solo-operators)
 
-[Workspace Agents vs Workflow Builders: A Clear Comparison](</blog/workspace-agents-vs-workflow-builders>)
+[Workspace Agents vs Workflow Builders: A Clear Comparison](/blog/workspace-agents-vs-workflow-builders)
 

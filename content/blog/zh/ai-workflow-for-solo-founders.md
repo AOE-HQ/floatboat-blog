@@ -15,7 +15,7 @@ draft: false
 
 我每天都在用 AI，已经用了两年多。很长一段时间里，我以为那种反复出现的挫败感出在工具本身——也许是输出质量还没到位，也许是我还没找到正确的提示词，也许我该换个模型。
 
-然后几个月前，我发现自己在一周里第四次把同样的背景信息打进 [ChatGPT](<https://chatgpt.com/>)。同样的背景、同样的项目设定、同样的"我通常喜欢这样的结构"。只是……又打了一遍。于是我停下来。
+然后几个月前，我发现自己在一周里第四次把同样的背景信息打进 [ChatGPT](https://chatgpt.com/)。同样的背景、同样的项目设定、同样的"我通常喜欢这样的结构"。只是……又打了一遍。于是我停下来。
 
 _为什么我还在做这件事？_
 
@@ -29,7 +29,7 @@ _为什么我还在做这件事？_
 
 我管这叫**"从零开始"问题**。对经营一人业务的单人创业者来说，它在无声无息地吞噬大量时间。
 
-[Tribe AI 对上下文感知记忆系统的 2025 年分析](<https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025>)指出：用无状态 AI 工作的体验，就像访问一个每翻一页就会被登出的网站——需要不断重建上下文，既费时间也耗资源，逼着用户手动跟踪变更、保存历史、精心构造提示词，才能勉强维持连续性。这就是为了"有效使用 AI"而要交的"基建税"。而当公司里只有你一个人时，这笔税会滚得特别快。
+[Tribe AI 对上下文感知记忆系统的 2025 年分析](https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025)指出：用无状态 AI 工作的体验，就像访问一个每翻一页就会被登出的网站——需要不断重建上下文，既费时间也耗资源，逼着用户手动跟踪变更、保存历史、精心构造提示词，才能勉强维持连续性。这就是为了"有效使用 AI"而要交的"基建税"。而当公司里只有你一个人时，这笔税会滚得特别快。
 
 ![2.PNG](/blog/images/ai-workflow-for-solo-founders/1776149050096-38c50427-ed33-4b98-a777-98d7b74d4f12.webp)
 
@@ -39,7 +39,7 @@ _为什么我还在做这件事？_
 
 但在"处理一个任务"和"嵌进我真正的工作方式"之间，有一道鸿沟。我的工作流不是一串任务清单，而是一连串按特定顺序、带着特定取舍做出的决策——决策依据存在我脑子里，来自日积月累的经验。当 AI 在脱离这些上下文的情况下处理孤立任务时，产出的东西就很泛。能用，也许。但它没有被**我的思考方式**塑形。
 
-[MIT Sloan Management Review 关于如何从生成式 AI 获得复利式收益的研究](<https://sloanreview.mit.edu/article/how-to-reap-compound-benefits-from-generative-ai/>)直接点到了这一点：多数专家无法完整说清自己的判断为什么好。这种说不出口的知识——研究者称之为"隐性知识"——正是让有经验的工作与众不同的东西。一个只能执行你明确描述的内容的 AI，会漏掉所有你凭直觉在做的事。
+[MIT Sloan Management Review 关于如何从生成式 AI 获得复利式收益的研究](https://sloanreview.mit.edu/article/how-to-reap-compound-benefits-from-generative-ai/)直接点到了这一点：多数专家无法完整说清自己的判断为什么好。这种说不出口的知识——研究者称之为"隐性知识"——正是让有经验的工作与众不同的东西。一个只能执行你明确描述的内容的 AI，会漏掉所有你凭直觉在做的事。
 
 这个问题我琢磨了好几个月。我不认为答案是"更好的提示词"。我认为答案是：AI 要学会那些你从没想过要解释的东西。
 
@@ -61,7 +61,7 @@ _为什么我还在做这件事？_
 
 写内容时我有一套标准：结构偏好、我总会做的事、我绝不会做的事。这些不是随意的——它们来自大量迭代，我很在意。但每次开新的 AI session，我要么把它们写进提示词里、祈祷模型猜得够近，要么花时间把输出改回我想要的样子。
 
-执行记忆意味着 AI 已经把**我的**工作方式内化——不是从一堆"泛泛写手"的训练数据里学来的，而是通过观察我本人：我做过的决定、打过的修改、认可的迭代。AWS 的工程博客在讲[用持久记忆构建上下文感知 Agent](<https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/>)时清楚地描述了这一区别：短期记忆捕捉的是当前 session 里发生的事，长期智能记忆则跨 session 储存持久的洞察与偏好——让 AI Agent 能保留上下文、从交互中学习、随时间提供真正个性化的体验。如今大多数消费级 AI 工具，恰恰卡在这两种记忆之间的空当里。
+执行记忆意味着 AI 已经把**我的**工作方式内化——不是从一堆"泛泛写手"的训练数据里学来的，而是通过观察我本人：我做过的决定、打过的修改、认可的迭代。AWS 的工程博客在讲[用持久记忆构建上下文感知 Agent](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/)时清楚地描述了这一区别：短期记忆捕捉的是当前 session 里发生的事，长期智能记忆则跨 session 储存持久的洞察与偏好——让 AI Agent 能保留上下文、从交互中学习、随时间提供真正个性化的体验。如今大多数消费级 AI 工具，恰恰卡在这两种记忆之间的空当里。
 
 ![3.png](/blog/images/ai-workflow-for-solo-founders/1776149060189-d1e45341-3bae-4755-8a18-892f19ad4cf0.webp)
 
@@ -77,7 +77,7 @@ _为什么我还在做这件事？_
 
 有一件事快把我逼疯：我经常同时跨好几样东西工作。正在编辑的文档、正在参考的网页、正在回复的 Slack 消息、正在取数的文件。而我在用的 AI，除非我手动搬进来，否则对这些一概接触不到。
 
-结果就是：我的 AI 帮手跟我真正的工作是脱节的。我同时在跑两条线——一边是工作，一边是 AI——还得手动把它们接起来。[Taskade 对一人公司的研究](<https://www.taskade.com/blog/one-person-companies>)发现：一个同时摆弄多个互不相通的 AI 工具的单人创业者，很快就会撞墙——调研工具不跟写作工具说话，自动化不知道 Agent 昨天学到了什么，每次交接之间上下文都在丢失。效率红利就是在这样的碎片化里蒸发掉的。不是因为 AI 不好——而是因为上下文永远到不了 AI 所在的地方。
+结果就是：我的 AI 帮手跟我真正的工作是脱节的。我同时在跑两条线——一边是工作，一边是 AI——还得手动把它们接起来。[Taskade 对一人公司的研究](https://www.taskade.com/blog/one-person-companies)发现：一个同时摆弄多个互不相通的 AI 工具的单人创业者，很快就会撞墙——调研工具不跟写作工具说话，自动化不知道 Agent 昨天学到了什么，每次交接之间上下文都在丢失。效率红利就是在这样的碎片化里蒸发掉的。不是因为 AI 不好——而是因为上下文永远到不了 AI 所在的地方。
 
 ### 可复用的执行 vs 一次性提示词
 
@@ -91,7 +91,7 @@ _为什么我还在做这件事？_
 
 **第一：它需要的上下文，我是不是每个 session 都得重新喂？**如果答案是"是"——对多数工具来说确实如此——那我得搞清楚这笔开销有多大。有多少时间花在喂上下文上，而不是干正事上？
 
-**第二：它是从我的行为里学，还是只从我嘴里听？**两者差别很大。[斯坦福商学院关于 AI 与隐性知识的研究](<https://www.gsb.stanford.edu/insights/generative-ai-can-boost-productivity-without-replacing-workers>)发现，最有价值的那部分收益，来自 AI 能捕捉到工作者通过**行为**展现出的模式——而不只是靠明确指令。你经年累月攒下的判断力，恰恰是通用 AI 工具漏掉的东西，因为它从没被写下来。
+**第二：它是从我的行为里学，还是只从我嘴里听？**两者差别很大。[斯坦福商学院关于 AI 与隐性知识的研究](https://www.gsb.stanford.edu/insights/generative-ai-can-boost-productivity-without-replacing-workers)发现，最有价值的那部分收益，来自 AI 能捕捉到工作者通过**行为**展现出的模式——而不只是靠明确指令。你经年累月攒下的判断力，恰恰是通用 AI 工具漏掉的东西，因为它从没被写下来。
 
 **第三：我能不能搭出可复用的工作流？**如果每次使用都是一次性的，效率天花板就很低。我愿意把某件事一次性搭好，让这笔投入随时间复利。
 
@@ -121,7 +121,7 @@ AI 工作区是另一种东西。它是一个"你的工作**和 AI 共存**"的�
 
 挑两三个你重复最多的任务。对每一个，写下：输入是什么、想要什么产出、以及沿途你总会做的那些判断。最后那部分——判断——正是通用 AI 工具会漏掉的隐性知识所在。
 
-[MIT Sloan 与 BCG 关于 AI 与组织学习的联合研究](<https://sloanreview.mit.edu/projects/learning-to-manage-uncertainty-with-ai/>)指出：在人与 AI 之间建立系统化反馈回路的组织，随时间复利价值的能力明显更强——这条原则放到"一个人"的层面同样成立。收益不是来自某一次漂亮的 session，而是来自一套"越用越好"的配置。
+[MIT Sloan 与 BCG 关于 AI 与组织学习的联合研究](https://sloanreview.mit.edu/projects/learning-to-manage-uncertainty-with-ai/)指出：在人与 AI 之间建立系统化反馈回路的组织，随时间复利价值的能力明显更强——这条原则放到"一个人"的层面同样成立。收益不是来自某一次漂亮的 session，而是来自一套"越用越好"的配置。
 
 这就是我目前想清楚的部分。我仍在为自己摸索合适的配置——我不认为存在对所有人都正确的唯一答案。但视角的转变帮到了我：别再问"这个 AI 好不好？"，改问"这个 AI 知道我是怎么工作的吗？"
 
@@ -129,13 +129,13 @@ AI 工作区是另一种东西。它是一个"你的工作**和 AI 共存**"的�
 
 ## 往期文章：
 
-  * [如果你还在摸索"真正的 AI 工作流长什么样"，从这里开始](</blog/ai-workflow-solo-founders>)
+  * [如果你还在摸索"真正的 AI 工作流长什么样"，从这里开始](/blog/ai-workflow-solo-founders)
 
-  * [这篇文章拆解了 AI 工具为什么总是忘光 session 之间的事](</blog/why-ai-forgets-every-session>)
+  * [这篇文章拆解了 AI 工具为什么总是忘光 session 之间的事](/blog/why-ai-forgets-every-session)
 
-  * [想理解从助手到 Agent 的更大转变？](</blog/ai-agents-2026-solo-operators>)
+  * [想理解从助手到 Agent 的更大转变？](/blog/ai-agents-2026-solo-operators)
 
-  * [读这篇](</blog/ai-agents-2026-solo-operators>) [不确定自己需要的是 AI Agent 还是更好的助手？这篇讲清楚了](</blog/ai-agent-vs-ai-assistant>)
+  * [读这篇](/blog/ai-agents-2026-solo-operators) [不确定自己需要的是 AI Agent 还是更好的助手？这篇讲清楚了](/blog/ai-agent-vs-ai-assistant)
 
-  * [如果你正纠结于"自己搭工作流"还是"用现成工作区"，这篇对你有用](</blog/workflow-builder-vs-ai-workspace>)
+  * [如果你正纠结于"自己搭工作流"还是"用现成工作区"，这篇对你有用](/blog/workflow-builder-vs-ai-workspace)
 

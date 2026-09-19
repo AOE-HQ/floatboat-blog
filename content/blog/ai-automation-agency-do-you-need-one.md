@@ -25,7 +25,7 @@ Before anything else, be honest about where you actually are.
 
 **Wait if:** You haven't mapped your current processes well enough to know what "automated" would even look like. **Bringing in an agency before you understand your own workflows is how you end up paying someone else to figure out problems you should have solved yourself.** The discovery phase should sharpen a picture you already have, not paint it from scratch.
 
-One number worth keeping in mind: according to [McKinsey research on enterprise AI adoption](<https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai>), companies that have seen 30–40% productivity gains from AI in the first two years typically had clear internal ownership of the problem before any vendor was involved.
+One number worth keeping in mind: according to [McKinsey research on enterprise AI adoption](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai), companies that have seen 30–40% productivity gains from AI in the first two years typically had clear internal ownership of the problem before any vendor was involved.
 
 ![f3.PNG](/blog/images/ai-automation-agency-do-you-need-one/1778750096336-63e131c9-44a3-4be6-99e3-8263ca8f1e7f.webp)
 
@@ -45,7 +45,7 @@ Any reputable **ai automation agency** should hand over four things at project c
 
 **Documentation** — written for your team, not for a developer audience. How does someone on your ops team restart the workflow if it breaks? How do they update a prompt template when your process changes? If the agency can't answer this, they're not done.
 
-**Ownership of credentials and code** — you should hold the admin keys to every tool involved. Not the agency. Not a shared login. You. [AI contract guidance from legal practitioners in 2025](<https://tasconlegal.com/ai-clauses-in-contracts-the-practical-guide-for-2025/>) is explicit on this: deliverables, source assets, and prompt libraries should be transferred to the client on handover, and you should own all inputs, prompts, and outputs by default.
+**Ownership of credentials and code** — you should hold the admin keys to every tool involved. Not the agency. Not a shared login. You. [AI contract guidance from legal practitioners in 2025](https://tasconlegal.com/ai-clauses-in-contracts-the-practical-guide-for-2025/) is explicit on this: deliverables, source assets, and prompt libraries should be transferred to the client on handover, and you should own all inputs, prompts, and outputs by default.
 
 **Training** — at minimum, one session where a real human walks your team through what was built and what to do when something goes wrong.
 
@@ -73,7 +73,7 @@ This section exists because I've watched good companies get stuck in avoidable s
 
 **Scope creep is the most common failure mode.** An agency starts with "automate your lead qualification workflow" and, three months later, you're building a custom AI platform you didn't ask for. The fix is a tightly scoped statement of work — one workflow, one defined output, one handover date — before any code is written.
 
-**Lock-in is a structural risk, not just a contract risk.** [Analysis of enterprise AI vendor dependency](<https://www.ability.ai/blog/ai-vendor-lock-in-risks>) makes this point clearly: if a single vendor controls your code, your credentials, your model access, and your documentation, you don't have automation — you have a dependency. When that vendor raises prices or changes their terms, your operations are at risk. The defense is simple in principle but often skipped in practice: **insist on full access to everything before you pay the final invoice.**
+**Lock-in is a structural risk, not just a contract risk.** [Analysis of enterprise AI vendor dependency](https://www.ability.ai/blog/ai-vendor-lock-in-risks) makes this point clearly: if a single vendor controls your code, your credentials, your model access, and your documentation, you don't have automation — you have a dependency. When that vendor raises prices or changes their terms, your operations are at risk. The defense is simple in principle but often skipped in practice: **insist on full access to everything before you pay the final invoice.**
 
 **Proprietary tooling is a yellow flag.** Some agencies build on platforms that only they can maintain. That's not inherently wrong — specialized tools can be genuinely better — but you should know going in whether your system will require this agency (or a similar specialist) in perpetuity. Ask directly: "If we needed to migrate this to a different provider, what would that look like?" A confident, honest answer is a good sign. Deflection is not.
 
@@ -99,13 +99,13 @@ The honest truth about **ai automation agency services** is that the good ones a
 
 ## Previous Posts：
 
-  * Most solo founders don’t need a custom AI platform — they need a clearer workflow first. Here’s how AI workflow design actually scales without creating operational chaos — [AI workflow for solo founders](</blog/ai-workflow-for-solo-founders>)
+  * Most solo founders don’t need a custom AI platform — they need a clearer workflow first. Here’s how AI workflow design actually scales without creating operational chaos — [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
 
-  * Before hiring an agency to automate everything, understand the difference between workspace agents, workflow builders, and where each one actually fits — [workspace agents vs workflow builders](</blog/workspace-agents-vs-workflow-builders>)
+  * Before hiring an agency to automate everything, understand the difference between workspace agents, workflow builders, and where each one actually fits — [workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
 
-  * A lot of “AI automation” problems are really context-switching problems inside fragmented systems — this is the operational bottleneck most teams miss — [stop context switching with workspace agents](</blog/stop-context-switching-workspace-agent>)
+  * A lot of “AI automation” problems are really context-switching problems inside fragmented systems — this is the operational bottleneck most teams miss — [stop context switching with workspace agents](/blog/stop-context-switching-workspace-agent)
 
-  * If you’re evaluating AI vendors, this breakdown of AI workspace agents explains where the category genuinely helps — and where it still creates more setup overhead than value — [AI workspace agents explained](</blog/ai-workspace-agents>)
+  * If you’re evaluating AI vendors, this breakdown of AI workspace agents explains where the category genuinely helps — and where it still creates more setup overhead than value — [AI workspace agents explained](/blog/ai-workspace-agents)
 
-  * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](</blog/ai-agent-solo-operators>)
+  * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](/blog/ai-agent-solo-operators)
 

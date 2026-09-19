@@ -15,7 +15,7 @@ What Is a Persistent AI Agent — and Why Does It Matter?
 
 _Hi, I'm Nova. I've been thinking about this concept a lot lately, and I finally sat down to write it out properly._
 
-I keep seeing "[Hermes Agent](<https://hermes-agent.nousresearch.com/>)" pop up in my feeds — developers talking about it, technical threads on GitHub, the occasional Reddit post from someone excitedly running it on a $5 VPS. My first instinct was to scroll past. Another AI tool, probably developer-only, probably not relevant to the way I actually work.
+I keep seeing "[Hermes Agent](https://hermes-agent.nousresearch.com/)" pop up in my feeds — developers talking about it, technical threads on GitHub, the occasional Reddit post from someone excitedly running it on a $5 VPS. My first instinct was to scroll past. Another AI tool, probably developer-only, probably not relevant to the way I actually work.
 
 But then I came across a phrase that stopped me: "most AI tools are stateless — every conversation starts from zero."
 
@@ -77,7 +77,7 @@ Being able to ask "what did we decide about this last month?" and actually get a
 
 ## What Hermes Agent and Similar Projects Are Trying to Do
 
-Hermes Agent is an open-source project built by Nous Research, released in early 2026. I haven't set it up myself — I'm going to be upfront about that — but I've read through the [official documentation](<https://hermes-agent.nousresearch.com/docs/>) pretty carefully, and the architecture is worth understanding even if you never run it.
+Hermes Agent is an open-source project built by Nous Research, released in early 2026. I haven't set it up myself — I'm going to be upfront about that — but I've read through the [official documentation](https://hermes-agent.nousresearch.com/docs/) pretty carefully, and the architecture is worth understanding even if you never run it.
 
 ![4.png](/blog/images/what-is-persistent-ai-agent/1775615376383-6a9ae401-fb00-423f-8fa5-33b44d5b09ba.webp)
 
@@ -139,13 +139,13 @@ _Anyway, that's today's little discovery. Or at least today's honest attempt to 
 
 ## Previous Posts:
 
-  * [Still confused about how AI agents differ from traditional tools? This breakdown makes the distinction clear](</blog/ai-agent-vs-chatbot>)
+  * [Still confused about how AI agents differ from traditional tools? This breakdown makes the distinction clear](/blog/ai-agent-vs-chatbot)
 
-  * [If you're wondering how AI fits into real work—not just chats—these use cases are a good starting point](</blog/ai-agent-use-cases-real-examples>)
+  * [If you're wondering how AI fits into real work—not just chats—these use cases are a good starting point](/blog/ai-agent-use-cases-real-examples)
 
-  * [The real shift isn’t just agents—it’s how workflows are evolving into AI workspaces](</blog/workflow-builder-vs-ai-workspace>)
+  * [The real shift isn’t just agents—it’s how workflows are evolving into AI workspaces](/blog/workflow-builder-vs-ai-workspace)
 
-  * [Want a concrete example of how this looks in practice? Here’s a solo workflow setup using Feishu CLI](</blog/feishu-cli-solo-work-setup>)
+  * [Want a concrete example of how this looks in practice? Here’s a solo workflow setup using Feishu CLI](/blog/feishu-cli-solo-work-setup)
 
-  * [Thinking about going deeper? This guide explains what it actually takes to build your own AI agent](</blog/how-to-build-an-ai-agent>)
+  * [Thinking about going deeper? This guide explains what it actually takes to build your own AI agent](/blog/how-to-build-an-ai-agent)
 

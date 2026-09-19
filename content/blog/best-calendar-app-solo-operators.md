@@ -23,7 +23,7 @@ The real split isn't "free vs paid." It's between three types of calendar behavi
 
 **Display calendars** show you what's coming. Google Calendar, Apple Calendar, Outlook — they're good at this. You put events in, they show events back. That's the job.
 
-**Planning calendars** help you decide when to do things. Tools like [Morgen](<https://www.morgen.so/>) and Sunsama sit here — they pull tasks into your calendar view and help you build a daily plan.
+**Planning calendars** help you decide when to do things. Tools like [Morgen](https://www.morgen.so/) and Sunsama sit here — they pull tasks into your calendar view and help you build a daily plan.
 
 **Smart calendars** try to schedule things for you. Motion and Reclaim AI fall into this category. You give them tasks with deadlines, and the algorithm finds slots.
 
@@ -35,7 +35,7 @@ Fit matters more than features. If you've never thought about which type you act
 
 ### Mac Users
 
-If you're deep in the Apple ecosystem, [Fantastical](<https://flexibits.com/fantastical>) is hard to beat for daily calendar experience. The natural language input is genuinely good — type "coffee with Mika Thursday 2pm at Blue Bottle" and it just parses correctly. Calendar Sets let you flip between work and personal views fast. I've been using it for months and the small details keep adding up. The menu bar widget, the keyboard shortcuts, how it handles time zones — it's polished in a way that Apple's own Calendar app isn't.
+If you're deep in the Apple ecosystem, [Fantastical](https://flexibits.com/fantastical) is hard to beat for daily calendar experience. The natural language input is genuinely good — type "coffee with Mika Thursday 2pm at Blue Bottle" and it just parses correctly. Calendar Sets let you flip between work and personal views fast. I've been using it for months and the small details keep adding up. The menu bar widget, the keyboard shortcuts, how it handles time zones — it's polished in a way that Apple's own Calendar app isn't.
 
 One thing worth noting: Fantastical recently launched a Windows version, so it's no longer Mac-only. But the Mac experience is still where it feels most at home. Apple Calendar is fine if you just need something free and simple — but if your calendar is your control panel, Fantastical is where I'd start.
 
@@ -49,9 +49,9 @@ If you want something beyond Outlook, Morgen runs natively on Windows (and Linux
 
 If you're on a Mac at home, an Android phone, and occasionally a Windows machine for client work — your calendar needs to work everywhere.
 
-Google Calendar is the cross-platform default. It runs in any browser, syncs reliably, and [Google's support documentation](<https://support.google.com/calendar/?hl=en>) covers just about every integration question. I keep coming back to it as a base layer, even when testing other tools on top.
+Google Calendar is the cross-platform default. It runs in any browser, syncs reliably, and [Google's support documentation](https://support.google.com/calendar/?hl=en) covers just about every integration question. I keep coming back to it as a base layer, even when testing other tools on top.
 
-Morgen is the strongest **best calendar app cross platform** option beyond Google. It runs on macOS, Windows, Linux, iOS, and Android — I checked their [FAQ page](<https://www.morgen.so/faq>) and confirmed it connects to Google, Outlook, iCloud, and Fastmail. The AI planner suggests task placement but won't rearrange your schedule without asking — which I prefer over tools that auto-schedule aggressively.
+Morgen is the strongest **best calendar app cross platform** option beyond Google. It runs on macOS, Windows, Linux, iOS, and Android — I checked their [FAQ page](https://www.morgen.so/faq) and confirmed it connects to Google, Outlook, iCloud, and Fastmail. The AI planner suggests task placement but won't rearrange your schedule without asking — which I prefer over tools that auto-schedule aggressively.
 
 ![3.PNG](/blog/images/best-calendar-app-solo-operators/1780539827722-d1be2c8d-7911-4063-b452-da178ac1ec63.webp)
 
@@ -119,13 +119,13 @@ I'll know more in a few weeks. I'm testing a couple of new setups and I'll share
 
 ## Previous Posts:
 
-  * If your calendar is full but work still feels fragmented, [Stop Context Switching: Why Workspace Agents Matter](</blog/stop-context-switching-workspace-agent>) explores the hidden cost of constantly jumping between apps all day.
+  * If your calendar is full but work still feels fragmented, [Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent) explores the hidden cost of constantly jumping between apps all day.
 
-  * Still deciding whether you need a smarter planner or something that actually executes work? [Workspace Agents vs Workflow Builders](</blog/workspace-agents-vs-workflow-builders>) breaks down the difference between organizing tasks and moving them forward.
+  * Still deciding whether you need a smarter planner or something that actually executes work? [Workspace Agents vs Workflow Builders](/blog/workspace-agents-vs-workflow-builders) breaks down the difference between organizing tasks and moving them forward.
 
-  * Smart calendars can schedule your tasks — but they still rely on you to execute them. [AI Workflow for Solo Founders](</blog/ai-workflow-for-solo-founders>) looks at where solo operators actually lose momentum during the workday.
+  * Smart calendars can schedule your tasks — but they still rely on you to execute them. [AI Workflow for Solo Founders](/blog/ai-workflow-for-solo-founders) looks at where solo operators actually lose momentum during the workday.
 
-  * If you've been experimenting with AI schedulers, assistants, and planning systems, [AI Workspace Agents](</blog/ai-workspace-agents>) explains why the next layer may be execution instead of another calendar view.
+  * If you've been experimenting with AI schedulers, assistants, and planning systems, [AI Workspace Agents](/blog/ai-workspace-agents) explains why the next layer may be execution instead of another calendar view.
 
-  * Wondering what happens after the reminder fires? [How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>) explores how recurring workflows can run with less manual rebuilding every week.
+  * Wondering what happens after the reminder fires? [How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work) explores how recurring workflows can run with less manual rebuilding every week.
 

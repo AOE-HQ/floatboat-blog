@@ -24,7 +24,7 @@ draft: false
 
 The World Cup 2026 groups are no longer just a [draw result](/blog/world-cup-2026-draw). As of July 8, 2026, the group stage is complete, the Round of 32 has finished, and the tournament has moved into the late knockout rounds. This page is the canonical groups and standings hub: it shows all twelve groups, the final group tables, the key matches that shaped qualification, and where each group now connects to the knockout bracket.
 
-**Source note:** Final group results should be checked against the [official FIFA standings page](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>) before publication. The group tables below were cross-checked against the available 2026 World Cup group-stage match logs from [2026 FIFA World Cup](<https://en.wikipedia.org/wiki/2026_FIFA_World_Cup>). Because FIFA pages can update dynamically, use the official standings page as the final source of truth before pushing live.
+**Source note:** Final group results should be checked against the [official FIFA standings page](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings) before publication. The group tables below were cross-checked against the available 2026 World Cup group-stage match logs from [2026 FIFA World Cup](https://en.wikipedia.org/wiki/2026_FIFA_World_Cup). Because FIFA pages can update dynamically, use the official standings page as the final source of truth before pushing live.
 
 ## How to Read the World Cup 2026 Group Tables
 
@@ -40,7 +40,7 @@ The 2026 format makes third place more important than in older 32-team tournamen
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Mexico controlled Group A better than any host could reasonably script: three wins, no goals conceded, and a clean route into the knockouts. The decisive result was Mexico’s 1–0 win over South Korea, because it created separation before the final matchday and allowed Mexico to finish the group with a 3–0 statement against Czech Republic.
 
@@ -54,7 +54,7 @@ South Africa’s 1–0 win over South Korea became the advancement match. It tur
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Switzerland won Group B by beating Bosnia and Herzegovina 4–1 and Canada 2–1 after opening with a draw. Canada still advanced because the 6–0 win over Qatar created a strong goal-difference cushion that Bosnia could not match.
 
@@ -68,7 +68,7 @@ The key match was Switzerland vs Canada. Canada had a better goal difference, bu
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Group C was decided by margin rather than points. Brazil and Morocco drew their opener, then both handled the rest of the group well enough to reach seven points. Brazil finished first because its 3–0 wins over Haiti and Scotland built a superior goal difference.
 
@@ -82,7 +82,7 @@ The key match was Brazil vs Morocco, not because it separated them immediately, 
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Group D was the best reason to keep a dedicated USA World Cup 2026 group guide separate from this hub. The United States topped the group with two wins and six points, but the 3–2 loss to Turkey kept the group from being a comfortable march. Australia and Paraguay both finished on four points with identical 1–1–1 records, separated only by goal difference, while Turkey’s single win was not enough to avoid elimination.
 
@@ -96,7 +96,7 @@ The key match was Australia vs Paraguay. Both teams needed points to stay alive,
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Germany’s 7–1 opening win over Curaçao shaped the whole group because it built a goal-difference advantage that survived even after Ecuador beat Germany 2–1 on the final matchday. Ivory Coast advanced by taking care of Ecuador and Curaçao, while Ecuador’s four points were strong enough for a third-place route.
 
@@ -110,7 +110,7 @@ The key match was Ecuador vs Germany. It did not stop Germany from topping the g
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Group F was high-scoring and unusually forgiving. The Netherlands and Japan drew 2–2, then both separated from the bottom half. Sweden’s 5–1 win over Tunisia gave it the goal volume and four points needed to survive as a third-place team despite a heavy loss to the Netherlands.
 
@@ -124,7 +124,7 @@ The key match was Japan vs Sweden. A 1–1 draw protected Japan’s unbeaten rec
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Group G was the draw-heavy group. Belgium and Egypt both finished unbeaten, while Iran also avoided defeat but could not turn draws into enough points. Belgium’s 5–1 win over New Zealand was the result that separated first from second on goal difference.
 
@@ -138,7 +138,7 @@ The key match was Egypt vs Iran. The 1–1 draw kept Egypt safe and left Iran st
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Spain won Group H without conceding a goal. The surprise was Cape Verde, which drew all three matches and still finished second because Uruguay and Saudi Arabia could not find a win. This was the rare group where unbeaten discipline mattered more than attacking output.
 
@@ -152,7 +152,7 @@ The key match was Uruguay vs Spain. Spain’s 1–0 win locked the group, while 
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 France produced one of the cleanest group-stage resumes: three wins, ten goals, and control over both direct rivals. Norway still advanced by beating Iraq and Senegal, even though France exposed the defensive risk in a 4–1 final group match.
 
@@ -166,7 +166,7 @@ The key match was Norway vs Senegal. Norway’s 3–2 win created second-place s
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Argentina handled Group J like a contender: three wins, only one goal conceded, and a clear first-place finish. Austria and Algeria finished level on four points, with Austria ahead on goal difference and Algeria still surviving as a third-place team.
 
@@ -180,7 +180,7 @@ The key match was Algeria vs Austria. The 3–3 draw did not decide the group wi
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 Group K was closer at the top than it looked. Portugal had the best goal difference, but Colombia’s wins over Uzbekistan and DR Congo, plus a draw with Portugal, delivered first place. DR Congo’s 3–1 win over Uzbekistan turned a difficult group into a successful third-place campaign.
 
@@ -194,7 +194,7 @@ The key match was Colombia vs Portugal. A 0–0 draw protected Colombia’s lead
 
 
 
-> Source: [FIFA Official Standings](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings>)
+> Table above per FIFA's official standings page.
 
 England topped Group L by beating Croatia and Panama while drawing with Ghana. Croatia recovered from the opening loss to England by beating Panama and Ghana. Ghana’s four points were enough to continue as a third-place team, while Panama exited without scoring.
 
@@ -220,19 +220,10 @@ The group stage gives every team a label: group winner, runner-up, third-place q
 
 Use this page to understand why a team landed where it did. Then use the World Cup 2026 bracket to follow the actual knockout route. This division keeps the content cluster clean: the draw page explains how groups were created, this groups page explains what happened in the groups, and the bracket page explains what those results became.
 
-## Related Reading
-
-  * World Cup 2026 Draw: Rules, Results and Groups — how the groups were created
-
-  * World Cup 2026 Bracket: Template, Tracker & PDF — knockout path after the groups
-
-  * USA World Cup 2026 Group: Schedule, Opponents & Key Matches — deeper USMNT group analysis
-
-  * World Cup 2026 Group of Death Explained — difficulty ranking and interpretation
-
-  * USA World Cup 2026 Schedule — US kickoff times and calendar planning
-
-## Conclusion
+## Related Reading- [World Cup 2026 Draw: Rules, Results and Groups — how the groups were created](/blog/world-cup-2026-draw)
+- [World Cup 2026 Bracket: Template, Tracker & PDF — knockout path after the groups](/blog/world-cup-2026-bracket)
+- [USA World Cup 2026 Group: Schedule, Opponents & Key Matches — deeper USMNT group analysis](/blog/world-cup-2026-schedule-usa)
+- [World Cup 2026 Group of Death Explained — difficulty ranking and interpretation](/blog/world-cup-2026-bracketology)## Conclusion
 
 The World Cup 2026 groups did more than sort teams into a table. They created the first version of the knockout map. Mexico, Switzerland, Brazil, the United States, Germany, the Netherlands, Belgium, Spain, France, Argentina, Colombia, and England won the twelve groups, but the expanded format made third place just as important for many storylines.
 

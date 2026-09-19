@@ -68,7 +68,7 @@ Manus is a **cloud-native autonomous agent** frequently compared to Cowork in 20
 
 Choose Manus when you want to brief an agent once and collect a finished package later — competitive scans, market briefs, structured reports — without sitting beside a desktop session. It is weaker when deliverables must stay on local disks under strict data-sovereignty rules, or when your highest-value work is editing existing Office files in place rather than generating new artifacts from scratch.
 
-Pricing is credit-based (commonly cited tiers from roughly $19–$199/month depending on usage); treat numbers as directional and confirm on [manus.im](<http://manus.im>).
+Pricing is credit-based (commonly cited tiers from roughly $19–$199/month depending on usage); treat numbers as directional and confirm on [manus.im](http://manus.im).
 
 ### 4\. Perplexity Computer — Best for multi-model, long-horizon office workflows
 
@@ -80,7 +80,7 @@ Trade-offs: Perplexity Max pricing (commonly **$200/month** for full Computer ac
 
 ### 5\. Eigent — Best open-source local desktop for Cowork-like file work
 
-Eigent is the most cited **open-source Cowork desktop** in authoritative 2026 lists — roughly 15k GitHub stars, official site at [eigent.ai](<http://eigent.ai>), built on the CAMEL multi-agent framework. It targets operators who want Cowork's "assign work on local files, get deliverables" pattern with **BYOK model choice** , inspectable code, and parallel multi-agent execution on macOS, Windows, and Linux.
+Eigent is the most cited **open-source Cowork desktop** in authoritative 2026 lists — roughly 15k GitHub stars, official site at [eigent.ai](http://eigent.ai), built on the CAMEL multi-agent framework. It targets operators who want Cowork's "assign work on local files, get deliverables" pattern with **BYOK model choice** , inspectable code, and parallel multi-agent execution on macOS, Windows, and Linux.
 
 Eigent fits non-developers who are willing to tolerate some setup in exchange for no Anthropic subscription lock-in and optional fully local models via Ollama or vLLM. It does not replace calendar-native triggers or M365 tenant integration out of the box; pair it with Floatboat or Copilot Cowork when those job shapes dominate your week.
 

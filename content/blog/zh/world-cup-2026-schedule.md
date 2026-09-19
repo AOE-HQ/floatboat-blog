@@ -22,7 +22,7 @@ draft: false
 
 ## 2026 年世界杯赛程一览
 
-[来源：FIFA——赛程、对阵、赛果与场馆](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums>)
+[来源：FIFA——赛程、对阵、赛果与场馆](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums)
 
 
 
@@ -62,7 +62,7 @@ draft: false
 
 ## 小组赛赛程：12 个小组共 72 场
 
-12 个小组按 2026 年世界杯官方决赛抽签结果（2025 年 12 月 5 日，华盛顿特区）列出：[来源：FIFA——决赛抽签结果](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-draw-results>)
+12 个小组按 2026 年世界杯官方决赛抽签结果（2025 年 12 月 5 日，华盛顿特区）列出：[来源：FIFA——决赛抽签结果](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-draw-results)
 
 
 
@@ -236,11 +236,6 @@ FloatCup 包含：
 
 想要零维护方案的读者，FloatCup 能一键处理完整赛程、时区换算与提醒。偏好手动操作的读者，ICS 导入适用于所有主流日历平台，两分钟内即可完成。两种方式都已在上面各节详述。
 
-## 延伸阅读
-
-  * World Cup 2026 指南：日期、赛制与 FAQ——完整赛事概览
-
-  * 如何把 World Cup 2026 加入 Google Calendar（ICS 指南）——覆盖每个平台的分步导入方法
-
-  * FloatCup：一键订阅 World Cup 2026 日历——零成本的日历同步
-
+## 延伸阅读- [World Cup 2026 指南：日期、赛制与 FAQ——完整赛事概览](/zh/blog/world-cup-2026-guide)
+- [如何把 World Cup 2026 加入 Google Calendar（ICS 指南）——覆盖每个平台的分步导入方法](/zh/blog/world-cup-2026-google-calendar-ics)
+- [FloatCup：一键订阅 World Cup 2026 日历——零成本的日历同步](/zh/blog/floatcup-world-cup-2026-calendar-subscribe)

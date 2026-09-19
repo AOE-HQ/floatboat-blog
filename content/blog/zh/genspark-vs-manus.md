@@ -19,7 +19,7 @@ draft: false
 
 ## Genspark 是做什么的
 
-[Genspark](<https://www.genspark.ai/>) 起步于 AI 搜索工具，后来演化成更接近**多 Agent 内容工作区**的东西。如今的核心产品是它的 Super Agent：接收你的 prompt，把子任务分派给专门化的 Agent（研究、幻灯片、表格、图像生成），最后交付一个叫 Sparkpage 的结构化产出。
+[Genspark](https://www.genspark.ai/) 起步于 AI 搜索工具，后来演化成更接近**多 Agent 内容工作区**的东西。如今的核心产品是它的 Super Agent：接收你的 prompt，把子任务分派给专门化的 Agent（研究、幻灯片、表格、图像生成），最后交付一个叫 Sparkpage 的结构化产出。
 
 它的独特之处在于：**它会并行运行多个 AI 模型**——GPT、Claude、Gemini——并在把结果呈现给你之前，让它们互相交叉核验。当你需要的是一项"比单个模型自信的猜测更可信一点"的研究时，这很有用。此外还有一个 "Call for Me" Agent，能真的替你做简单的电话沟通，比如预订或确认——属于那种你先挑眉、再用两次、然后就无法想象没有它的功能。
 
@@ -31,7 +31,7 @@ Genspark 在你工作流里的位置：**把它想成一个"研究与创作"工�
 
 ## Manus 是做什么的
 
-[Manus](<https://manus.im/>) 是另一个类别的东西。Manus 不是 ChatGPT，也不是 Claude。它是某种本质不同的东西——一个不只是会说话、而是会干活的 AI。
+[Manus](https://manus.im/) 是另一个类别的东西。Manus 不是 ChatGPT，也不是 Claude。它是某种本质不同的东西——一个不只是会说话、而是会干活的 AI。
 
 VentureBeat 称 Manus 是一项重大进步，因为它能自主处理复杂任务，包括编写和部署代码。你给它一个目标——"研究我排名前五的竞争对手，并做一份演示文稿"——它就去干活了：上网浏览、需要时写代码、管理文件，然后带着交付物回来。你不需要逐步给它下指令。这正是它的全部理念。
 
@@ -62,7 +62,7 @@ Manus 在你工作流里的位置：它更像是一个你**委派任务给它的
 
 它也更可预测。你大致知道会得到什么，界面干净，免费计划也足够大方，能在正式付费前好好测一测。对**内容重度工作的单人创作者或小团队**，24.99 美元的 Plus 计划覆盖大多数日常需求，没有用户反映 Manus 那种积分焦虑。
 
-还有一点：[Genspark 的 mixture-of-agents 架构](<https://www.genspark.ai/>)——多个模型互相核查事实——对研究质量来说是货真价实的差异化优势。不完美，但比单模型回答更扎实。
+还有一点：[Genspark 的 mixture-of-agents 架构](https://www.genspark.ai/)——多个模型互相核查事实——对研究质量来说是货真价实的差异化优势。不完美，但比单模型回答更扎实。
 
 ## 什么情况下 Manus 是更强的选择
 
@@ -98,7 +98,7 @@ Manus 在你工作流里的位置：它更像是一个你**委派任务给它的
 
   * 它让人惊艳，但不总是可靠。"Manus 是那个能力惊人的实习生——能做的事多得超乎想象——但你仍应该偶尔从它肩头看一眼"是个公平的描述。
 
-两个工具都在快速迭代。哪怕只是过去几个月，功能和价格也已经变化很大——所以做决定前，务必直接到它们官网核实最新方案。你也可以看 [Product Hunt 上这两个工具的页面](<https://www.producthunt.com/>)，那里的真实用户评价比大多数博客文章更新。
+两个工具都在快速迭代。哪怕只是过去几个月，功能和价格也已经变化很大——所以做决定前，务必直接到它们官网核实最新方案。你也可以看 [Product Hunt 上这两个工具的页面](https://www.producthunt.com/)，那里的真实用户评价比大多数博客文章更新。
 
 ## 怎么选
 
@@ -118,13 +118,13 @@ _如果你好奇，两者的免费档都真的能用。值得一试。_
 
 ## 延伸阅读
 
-* [比较不同的 Manus AI 替代方案，看看各工具在真实工作流里分别擅长什么](</blog/manus-ai-alternatives-2026>)
+* [比较不同的 Manus AI 替代方案，看看各工具在真实工作流里分别擅长什么](/blog/manus-ai-alternatives-2026)
 
-* [拆解 Genspark 定价与积分使用，评估这些方案到底值不值](</blog/genspark-ai-pricing>)
+* [拆解 Genspark 定价与积分使用，评估这些方案到底值不值](/blog/genspark-ai-pricing)
 
-* [在选 Genspark 或 Manus 这类工具前，先弄清 AI Agent 和聊天机器人的核心区别](</blog/ai-agent-vs-chatbot>)
+* [在选 Genspark 或 Manus 这类工具前，先弄清 AI Agent 和聊天机器人的核心区别](/blog/ai-agent-vs-chatbot)
 
-* [看看真实世界的 AI Agent 用例，了解 Manus 这类自主工具真正闪光的地方](</blog/ai-agent-use-cases-real-examples>)
+* [看看真实世界的 AI Agent 用例，了解 Manus 这类自主工具真正闪光的地方](/blog/ai-agent-use-cases-real-examples)
 
-* [看看单人创作者在实践中如何用 AI Agent 组织工作流、分派任务](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+* [看看单人创作者在实践中如何用 AI Agent 组织工作流、分派任务](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
