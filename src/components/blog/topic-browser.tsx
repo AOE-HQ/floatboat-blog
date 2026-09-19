@@ -108,10 +108,10 @@ function CategoryPill({
   );
 }
 
-function PostCardMini({ post }: { post: PostMeta }) {
+function PostCardMini({ post, localePrefix = "" }: { post: PostMeta; localePrefix: string }) {
   return (
     <article className="group overflow-hidden rounded-2xl border border-[var(--ob-color-border)] bg-[var(--ob-color-surface)] transition-all hover:-translate-y-0.5 hover:shadow-lg">
-      <Link href={`/blog/${post.slug}`} className="block">
+      <Link href={`${localePrefix}/blog/${post.slug}`} className="block">
         {post.coverImage ? (
           <div className="aspect-[16/9] overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}

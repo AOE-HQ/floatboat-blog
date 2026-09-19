@@ -5,6 +5,7 @@ import { BlogShell } from "@openblog/components";
 import { absoluteBlogIndexUrl, openGraphLocale } from "@/lib/locale-site";
 import { getBlogIndexData } from "@/lib/posts";
 
+import { site } from "@/config/site";
 
 import { BlogHero } from "@/components/blog/blog-hero";
 import { FeaturedBanner } from "@/components/blog/featured-banner";
