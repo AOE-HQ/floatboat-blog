@@ -37,7 +37,7 @@ draft: false
 
 因为它描述了一个真实的转变。非开发者——创始人、运营者、内容人——一直在用 Cursor、Replit、Claude Code 这类工具交付小型自动化和内部工具。他们不是在"编程"。他们在 prompt、在验收。Vibe Coding 给这个现象命了名，对话由此爆发。
 
-![2.PNG](/blog/images/what-is-vibe-coding/1776318311227-83897fe0-7538-46df-8e4f-0f3a9bfe89f6.webp)
+![2.PNG](/zh/blog/images/what-is-vibe-coding/1776318311227-83897fe0-7538-46df-8e4f-0f3a9bfe89f6.webp)
 
 ## Vibe Coding vs 传统开发
 
@@ -75,7 +75,7 @@ draft: false
 
 想在实际投入时间之前，测一测某个产品想法值不值得做？Vibe Coding 让这件事变便宜了。一位在 2025 年底开过 Vibe Coding 课程的哈佛教授，把它核心价值描述为改变"实验的经济学"——你可以做一个东西来理解一个东西，而且可以做得很快。这个框定我一直记得。并不是 Vibe Coding 能做出伟大的软件；而是它让实验变得负担得起。
 
-![3.png](/blog/images/what-is-vibe-coding/1776318320938-66d3b4f7-7dda-41d1-acba-6124093f5010.webp)
+![3.png](/zh/blog/images/what-is-vibe-coding/1776318320938-66d3b4f7-7dda-41d1-acba-6124093f5010.webp)
 
 来源：<https://www.rootsanalysis.com/vibe-coding-market>
 
@@ -111,7 +111,7 @@ draft: false
 
 安全是 Vibe Coding 失效最清晰的例子。正如 [TechTarget 报道 AI 生成代码不断增长的风险时所说](https://www.techtarget.com/searchapparchitecture/tip/Vibe-coding-is-killing-open-source-increasing-software-risk)，代码更替与重复正随着安全债一起加速。OWASP 在 2025 年给它的 Top 10 加了一个专门类别，把"AI 辅助代码缺陷"明确标记为开发团队需要应对的一种模式。AI 生成的代码为功能性而优化，不是为安全性而优化。这不是同一个需求——而对一个团队里没有安全工程师的单人创始人来说，这个缺口可能在最糟的时机冒出来。
 
-![4.png](/blog/images/what-is-vibe-coding/1776318333381-2505b153-4cd6-41d5-89ce-bf8d4a4fe3a5.webp)
+![4.png](/zh/blog/images/what-is-vibe-coding/1776318333381-2505b153-4cd6-41d5-89ce-bf8d4a4fe3a5.webp)
 
 来源：<https://arnaudunjo.com/2025/06/22/vibe-coding-the-immediate-future-of-application-development/>
 
@@ -157,7 +157,7 @@ prompt 与工作流之间的区别，就是"问路"和"手里有张地图"之间
 
 你可以用 AI 工具构建，同时不放弃对你所建之物的理解。那才是真正值得培养的技能——而不是找到更好的 prompt。
 
-![5.png](/blog/images/what-is-vibe-coding/1776318343607-e4c86648-6737-43e7-abf8-c58474b44c39.webp)
+![5.png](/zh/blog/images/what-is-vibe-coding/1776318343607-e4c86648-6737-43e7-abf8-c58474b44c39.webp)
 
 说实话，我自己也还在摸索。工具变化太快，三个月前我写的关于它们的东西，现在大概就需要更新了。而有一件事我确实越来越确定：**价值不在 prompt 里，在系统里。**那些在打造可持久运营业务的单人创始人，不是找到最好 AI 工具的人——而是建出能随时间复利的工作流的人。
 
@@ -165,13 +165,13 @@ prompt 与工作流之间的区别，就是"问路"和"手里有张地图"之间
 
 ## 延伸阅读
 
-* [理解 AI Agent 与聊天机器人的区别](/blog/ai-agent-vs-chatbot)
+* [理解 AI Agent 与聊天机器人的区别](/zh/blog/ai-agent-vs-chatbot)
 
-* [了解 2026 年 AI Agent 到底如何为单人创业者工作](/blog/ai-agents-2026-solo-operators)
+* [了解 2026 年 AI Agent 到底如何为单人创业者工作](/zh/blog/ai-agents-2026-solo-operators)
 
-* [看看如何一步步构建你自己的 AI Agent](/blog/how-to-build-an-ai-agent)
+* [看看如何一步步构建你自己的 AI Agent](/zh/blog/how-to-build-an-ai-agent)
 
-* [探索从 AI 助手到真正的 AI Agent 的转变](/blog/ai-agent-vs-ai-assistant)
+* [探索从 AI 助手到真正的 AI Agent 的转变](/zh/blog/ai-agent-vs-ai-assistant)
 
-* [在真实工作流中发现实用的 AI Agent 用例](/blog/ai-agent-use-cases-real-examples)
+* [在真实工作流中发现实用的 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)
 

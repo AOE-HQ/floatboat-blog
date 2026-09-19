@@ -23,7 +23,7 @@ Genspark 由 [MainFunc（一家 Palo Alto 公司）](https://mainfunc.ai/)打造
 
 我拿几个调研量很大的提示词去试过。在我做的对照测试里，多模型交叉校验确实抓到了单模型漏掉的东西。不是每次都灵，但灵的次数多到我注意到了。
 
-![2.PNG](/blog/images/genspark-super-agent-explained/1779673381664-2e0980fe-80bd-46da-854d-9ddc3f9fa6fb.webp)
+![2.PNG](/zh/blog/images/genspark-super-agent-explained/1779673381664-2e0980fe-80bd-46da-854d-9ddc3f9fa6fb.webp)
 
 ## 它和普通聊天机器人有什么不同
 
@@ -51,7 +51,7 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 说句实在话，这是个不起眼的小胜利。「留在你现有工具里」这个思路，比大多数功能发布都更重要。
 
-![3.PNG](/blog/images/genspark-super-agent-explained/1779673408611-b6f822e4-0fb4-4ce6-a781-21ab85b8d6db.webp)
+![3.PNG](/zh/blog/images/genspark-super-agent-explained/1779673408611-b6f822e4-0fb4-4ce6-a781-21ab85b8d6db.webp)
 
 ## 单人创业者什么时候该用它
 
@@ -67,7 +67,7 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 我可能是错的，但我的直觉是：主业以写作为重心、而不是以调研和交付物为重心的人，多半该继续用现有的东西。
 
-![4.png](/blog/images/genspark-super-agent-explained/1779673420780-a791d4a8-9eb5-4eb2-a35e-4cd92c3e7d6b.webp)
+![4.png](/zh/blog/images/genspark-super-agent-explained/1779673420780-a791d4a8-9eb5-4eb2-a35e-4cd92c3e7d6b.webp)
 
 ## 上限、定价与需要核实的地方
 
@@ -87,17 +87,17 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 
 这就是我的真实看法。什么适合你，还是得你自己判断。
 
-![5.png](/blog/images/genspark-super-agent-explained/1779673431655-693b179e-e7d1-4c95-af7e-f78b5a6c178b.webp)
+![5.png](/zh/blog/images/genspark-super-agent-explained/1779673431655-693b179e-e7d1-4c95-af7e-f78b5a6c178b.webp)
 
 ## 往期文章
 
-• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](/blog/ai-workflow-for-solo-founders) — 在加入又一个 AI 工作区之前，先搞清楚你的瓶颈是调研、执行还是上下文切换。
+• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](/zh/blog/ai-workflow-for-solo-founders) — 在加入又一个 AI 工作区之前，先搞清楚你的瓶颈是调研、执行还是上下文切换。
 
-• [AI Workspace Agents: Why Chat Windows Stop Scaling](/blog/ai-workspace-agents) — 一旦工作超出单一聊天窗口，多模型系统才开始真正说得通。
+• [AI Workspace Agents: Why Chat Windows Stop Scaling](/zh/blog/ai-workspace-agents) — 一旦工作超出单一聊天窗口，多模型系统才开始真正说得通。
 
-• [How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai) — 看看单人创业者如何用 AI 系统在不多添复杂度的前提下减少重复劳动。
+• [How One-Person Businesses Work Like a Team With AI](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai) — 看看单人创业者如何用 AI 系统在不多添复杂度的前提下减少重复劳动。
 
-• [How to Evaluate an Agentic AI Company Before You Commit](/blog/agentic-ai-company-guide) — 无论你评估的是平台还是服务，工作流契合度都比功能清单更重要。
+• [How to Evaluate an Agentic AI Company Before You Commit](/zh/blog/agentic-ai-company-guide) — 无论你评估的是平台还是服务，工作流契合度都比功能清单更重要。
 
-• [Gemini 3.5 Integration: Does Another Model Actually Change Your Workflow?](/blog/gemini-3-5-integration-solo-workflow) — 更多模型不会自动带来更好的工作流；有时候只是带来更多决策。
+• [Gemini 3.5 Integration: Does Another Model Actually Change Your Workflow?](/zh/blog/gemini-3-5-integration-solo-workflow) — 更多模型不会自动带来更好的工作流；有时候只是带来更多决策。
 

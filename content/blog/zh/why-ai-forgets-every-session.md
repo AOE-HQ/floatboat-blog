@@ -33,7 +33,7 @@ _我开始管它叫「重新解释税」。一旦我注意到它，就再也无�
 
 正如一位研究者精辟的比喻：这种体验就像访问一个每次翻页都会把你登出的网站——逼着你反复重新认证。
 
-![2.PNG](/blog/images/why-ai-forgets-every-session/1775543617241-3c6b0fc0-b1a0-4a8e-9d8b-8080d8b92874.webp)
+![2.PNG](/zh/blog/images/why-ai-forgets-every-session/1775543617241-3c6b0fc0-b1a0-4a8e-9d8b-8080d8b92874.webp)
 
 ## 为什么这个问题对一人公司比对团队更疼
 
@@ -69,7 +69,7 @@ _我开始管它叫「重新解释税」。一旦我注意到它，就再也无�
 
 「AI 助理」与「真正融进你工作的 AI」之间的差距，在这里暴露得最明显。一个不了解你工作区的工具，只能帮你做孤立的任务；它没法帮你把项目往前推。
 
-![3.PNG](/blog/images/why-ai-forgets-every-session/1775543626606-c4835ce8-b524-460c-88c5-926ac26142db.webp)
+![3.PNG](/zh/blog/images/why-ai-forgets-every-session/1775543626606-c4835ce8-b524-460c-88c5-926ac26142db.webp)
 
 ## 为什么聊天式 AI 从设计上就没打算记住你
 
@@ -87,7 +87,7 @@ _我开始管它叫「重新解释税」。一旦我注意到它，就再也无�
 
 这个区别很重要：会话是对话，工作区是基础设施。
 
-![4.png](/blog/images/why-ai-forgets-every-session/1775543635826-fbf85c52-5bc3-45a1-858e-c6a436dfd646.webp)
+![4.png](/zh/blog/images/why-ai-forgets-every-session/1775543635826-fbf85c52-5bc3-45a1-858e-c6a436dfd646.webp)
 
 ## 「能记住你的 AI」到底长什么样
 
@@ -123,19 +123,19 @@ _我开始管它叫「重新解释税」。一旦我注意到它，就再也无�
 
 我不确定自己已经彻底想清楚了自己的解法。我仍在实验——对不同类型的项目，有的组合比别人更顺手。但我确实知道一件事：**重新解释税是真实的，而给它命名，是修好它的第一步。**
 
-![5.png](/blog/images/why-ai-forgets-every-session/1775543648701-03ac0ad6-590b-4a19-b418-3b9157fc917e.webp)
+![5.png](/zh/blog/images/why-ai-forgets-every-session/1775543648701-03ac0ad6-590b-4a19-b418-3b9157fc917e.webp)
 
 _以上基于我独自运营内容业务的亲身体验，以及我对 AI 记忆架构做的研究。这里提到的任何一方都没有付过我钱。如果你正在实验持久上下文方案，我真心想知道你发现了什么——这个领域跑得很快，我自己也还有一部分没弄明白。_
 
 ## 上一篇：
 
-  * [如果你想维护自己的自动化配置，这份 Feishu CLI 的真实拆解展示了单人创业者实际要面对什么](/blog/feishu-cli-solo-work-setup)。
+  * [如果你想维护自己的自动化配置，这份 Feishu CLI 的真实拆解展示了单人创业者实际要面对什么](/zh/blog/feishu-cli-solo-work-setup)。
 
-  * [想看看单人创始人如何用 AI 像完整团队一样运转（而不用反复重新解释）？从这里开始](/blog/how-one-person-businesses-work-like-a-team-with-ai)。
+  * [想看看单人创始人如何用 AI 像完整团队一样运转（而不用反复重新解释）？从这里开始](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)。
 
-  * [还在聊天式 AI 和更偏执行的东西之间犹豫？这份指南拆解了 AI Agent 与 AI 助理的区别](/blog/ai-agent-vs-ai-assistant)。
+  * [还在聊天式 AI 和更偏执行的东西之间犹豫？这份指南拆解了 AI Agent 与 AI 助理的区别](/zh/blog/ai-agent-vs-ai-assistant)。
 
-  * [想把重复的提示词变成可复用工作流？这份构建 AI Agent 的分步指南很适合接着读](/blog/how-to-build-an-ai-agent)。
+  * [想把重复的提示词变成可复用工作流？这份构建 AI Agent 的分步指南很适合接着读](/zh/blog/how-to-build-an-ai-agent)。
 
-  * [如果你在探索超越无状态聊天的工具，这份工作流搭建器 vs AI Workspace 的对比能帮你做选择](/blog/workflow-builder-vs-ai-workspace)。
+  * [如果你在探索超越无状态聊天的工具，这份工作流搭建器 vs AI Workspace 的对比能帮你做选择](/zh/blog/workflow-builder-vs-ai-workspace)。
 

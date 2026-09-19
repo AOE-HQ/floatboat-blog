@@ -43,7 +43,7 @@ AI 助手是**被动响应式**的。你问，它答。你不问，它就停。
 
 我现在用的实用判据是：如果这个任务一两句话能说清，而且不需要工具记住昨天的事，那助手大概率就合适。一旦我开始把上一段对话的上下文复制粘贴进新对话，那就是信号——我可能需要的不是这个。
 
-![1.png](/blog/images/ai-agent-vs-ai-assistant/1775213428953-fa6d5508-2168-4dbe-b853-12c72b1eef09.webp)
+![1.png](/zh/blog/images/ai-agent-vs-ai-assistant/1775213428953-fa6d5508-2168-4dbe-b853-12c72b1eef09.webp)
 
 ## AI Agent 到底有什么不同
 
@@ -86,7 +86,7 @@ Pieces 有篇文章讲 Agent 与助手的区别，里面有个说法我觉得很
 
 这不是对你体验的承诺，只是我自己的观察。如果你想看技术层面到底怎么落地，[n8n 的 Agent 化工作流文档](https://docs.n8n.io/advanced-ai/intro-tutorial/)是不错的参考。
 
-![2.png](/blog/images/ai-agent-vs-ai-assistant/1775213442227-4cff350b-6287-4a95-aa2b-a7decdc6407e.webp)
+![2.png](/zh/blog/images/ai-agent-vs-ai-assistant/1775213442227-4cff350b-6287-4a95-aa2b-a7decdc6407e.webp)
 
 ## 你到底需要哪一个？
 
@@ -110,7 +110,7 @@ Pieces 有篇文章讲 Agent 与助手的区别，里面有个说法我觉得很
 
 我现在不再问「这是 Agent 还是助手」，而是问：**这个系统记得我多少，又能在多大程度上不靠我扶着就自己干活？**这两个问题，能穿透大部分营销噪音。
 
-![3.png](/blog/images/ai-agent-vs-ai-assistant/1775213454090-50dbf26d-415a-45ae-9b7b-3e8fea1c4ea7.webp)
+![3.png](/zh/blog/images/ai-agent-vs-ai-assistant/1775213454090-50dbf26d-415a-45ae-9b7b-3e8fea1c4ea7.webp)
 
 总之，这是我现在对这个话题的理解。还在继续学习。但至少下次有人提「部署一个 AI Agent」时，我不会再一边点头，一边暗自搞不清它跟聊天机器人到底差在哪。
 
@@ -118,11 +118,11 @@ Pieces 有篇文章讲 Agent 与助手的区别，里面有个说法我觉得很
 
 _相关阅读：_
 
-  * [AI Agent 真实落地案例：调研、内容与运营场景](/blog/ai-agent-use-cases-real-examples)
+  * [AI Agent 真实落地案例：调研、内容与运营场景](/zh/blog/ai-agent-use-cases-real-examples)
 
-  * [一人公司如何靠 AI 分工，像完整团队一样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+  * [一人公司如何靠 AI 分工，像完整团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [AI 自动化在真实市场上到底怎么定价](/blog/ai-automation-agency-pricing)
+  * [AI 自动化在真实市场上到底怎么定价](/zh/blog/ai-automation-agency-pricing)
 
-  * [Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](/blog/lindy-vs-gumloop)
+  * [Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](/zh/blog/lindy-vs-gumloop)
 

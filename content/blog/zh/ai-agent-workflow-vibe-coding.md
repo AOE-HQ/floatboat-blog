@@ -27,7 +27,7 @@ draft: false
 
 但没有结构的速度不是生产力，只是更快的债务累积。
 
-![2.png](/blog/images/ai-agent-workflow-vibe-coding/1776653246584-c6e218bb-11f3-4b33-b0c7-cf41d4ffaf9a.webp)
+![2.png](/zh/blog/images/ai-agent-workflow-vibe-coding/1776653246584-c6e218bb-11f3-4b33-b0c7-cf41d4ffaf9a.webp)
 
 ## 为什么没有结构，Vibe Coding 必然崩坏
 
@@ -73,7 +73,7 @@ CodeRabbit 在 2025 年 12 月对 470 个开源 GitHub PR 的分析发现，由�
 
 不是处处都放——那反而违背初衷。但至少：在把任何改动合并进 main 之前，以及在任何涉及身份验证、数据处理或外部 API 调用的步骤之后。这些正是最容易出现「幻觉式绕过」——AI 不小心删掉一个安全检查——的地方。
 
-![3.png](/blog/images/ai-agent-workflow-vibe-coding/1776653272959-834b0551-c228-4876-a899-b8ef19c2329e.webp)
+![3.png](/zh/blog/images/ai-agent-workflow-vibe-coding/1776653272959-834b0551-c228-4876-a899-b8ef19c2329e.webp)
 
 ## 把 AI Agent 工作流当系统，而不是当提示词
 
@@ -111,7 +111,7 @@ Kalvium Labs 是一支 200 多名工程师的团队。他们把用 Claude Code �
 
 GitFlow 模型可以干净地映射过来：每个有界任务一条 feature 分支，PR 充当人类审查检查点，main 分支受保护。Agent 从不直接提交到 main，提交的人是你。
 
-![4.png](/blog/images/ai-agent-workflow-vibe-coding/1776653323969-b2e4daa4-29d0-4961-bc15-66b172245f9d.webp)
+![4.png](/zh/blog/images/ai-agent-workflow-vibe-coding/1776653323969-b2e4daa4-29d0-4961-bc15-66b172245f9d.webp)
 
 ## 哪些 AI 编程工具能融进这套工作流
 
@@ -143,7 +143,7 @@ GitFlow 模型可以干净地映射过来：每个有界任务一条 feature 分
 
 它不一定要是代码，但它必须是**有意为之**的。
 
-![5.png](/blog/images/ai-agent-workflow-vibe-coding/1776653352463-63d4f2af-a409-4845-8ed3-6135d15cb62f.webp)
+![5.png](/zh/blog/images/ai-agent-workflow-vibe-coding/1776653352463-63d4f2af-a409-4845-8ed3-6135d15cb62f.webp)
 
 我关注的一位实践者说得很好：最好的结果，来自把经典软件工程的纪律用在 AI 协作上。先设计再编码、写测试、用版本控制、守住标准——这些东西不仅依然适用，当 AI 写你一半代码时反而更重要。
 
@@ -151,13 +151,13 @@ GitFlow 模型可以干净地映射过来：每个有界任务一条 feature 分
 
 ## 上一篇：
 
-→ 了解为什么 [vibe coding 没有结构就会崩坏](/blog/what-is-vibe-coding)，以及用什么替代它
+→ 了解为什么 [vibe coding 没有结构就会崩坏](/zh/blog/what-is-vibe-coding)，以及用什么替代它
 
-→ 了解 [AI Agent 对单人创业者到底怎么工作（不只是提示词）](/blog/ai-agent-solo-operators)
+→ 了解 [AI Agent 对单人创业者到底怎么工作（不只是提示词）](/zh/blog/ai-agent-solo-operators)
 
-→ 学会怎么 [构建可重复的 AI 工作流，而不是一次性输出](/blog/ai-workflow-for-solo-founders)
+→ 学会怎么 [构建可重复的 AI 工作流，而不是一次性输出](/zh/blog/ai-workflow-for-solo-founders)
 
-→ 探索从 [聊天式 AI 到持久化、有状态的 Agent](/blog/what-is-persistent-ai-agent) 的转变
+→ 探索从 [聊天式 AI 到持久化、有状态的 Agent](/zh/blog/what-is-persistent-ai-agent) 的转变
 
-→ 发现 [一人公司如何用 AI 系统（而非单一工具）实现规模化](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+→ 发现 [一人公司如何用 AI 系统（而非单一工具）实现规模化](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

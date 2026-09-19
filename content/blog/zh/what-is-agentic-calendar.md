@@ -98,7 +98,7 @@ Agentic Calendar 需要把手伸到日历之外：要能访问邮件（调出相
 
 Agentic Calendar 是第四代的概念。它和日历的关系是「运行时」——执行日程所蕴含的工作。智能排程器告诉你*什么时候*写投资人汇报；Agentic Calendar 在截止日期临近时就开始起草，并拉来历次更新保证连贯。两者并不互斥：最完整的工作流，是用智能排程器做协调，再让 Agentic Calendar 在协调的另一头做执行。
 
-想详细了解这几代是怎么演进的，可以读我们的 [AI 日程 Agent 综述](/blog/ai-scheduling-agent)，它完整梳理了从 Calendly 到日历驱动 Agent 操作系统的演进路径；如果你不是在研究而是在选购，我们的 [最佳 AI 日程助手排行](/blog/best-ai-scheduling-assistants) 用同一套四代框架给市面上的工具打了分。
+想详细了解这几代是怎么演进的，可以读我们的 [AI 日程 Agent 综述](/zh/blog/ai-scheduling-agent)，它完整梳理了从 Calendly 到日历驱动 Agent 操作系统的演进路径；如果你不是在研究而是在选购，我们的 [最佳 AI 日程助手排行](/zh/blog/best-ai-scheduling-assistants) 用同一套四代框架给市面上的工具打了分。
 
 ### 4.2 Agentic Calendar vs AI 会议记录工具
 
@@ -124,7 +124,7 @@ Agentic Calendar 换了一种做法。它理解事件语义——不是靠「标
 
 最天然的受众。当你就是整个公司时，每一场会议*就是*公司的产出。没有助理帮你准备简报，没有团队可以分派行动项，没有项目经理盯着落地。日历就是你的组织架构图。
 
-对独立创始人来说，Agentic Calendar 补上的是「有日程」和「按日程执行」之间的那道空当。这周的 11 个客户电话，需要的不是 11 个时间档——而是 11 份简报、11 套谈话要点、11 条跟进序列。手动做这些，要么花几小时准备，要么干脆临场硬来。Agentic Calendar 并不会消除准备这件事本身；它把那些你本来要自己动手拼的材料自动化组装了——同样的原则，我们在 [AI 会前准备流程](/blog/ai-meeting-preparation) 和 [会后跟进自动化](/blog/ai-follow-up-automation) 里有详细展开。
+对独立创始人来说，Agentic Calendar 补上的是「有日程」和「按日程执行」之间的那道空当。这周的 11 个客户电话，需要的不是 11 个时间档——而是 11 份简报、11 套谈话要点、11 条跟进序列。手动做这些，要么花几小时准备，要么干脆临场硬来。Agentic Calendar 并不会消除准备这件事本身；它把那些你本来要自己动手拼的材料自动化组装了——同样的原则，我们在 [AI 会前准备流程](/zh/blog/ai-meeting-preparation) 和 [会后跟进自动化](/zh/blog/ai-follow-up-automation) 里有详细展开。
 
 ### 5.2 分布式团队
 
@@ -142,7 +142,7 @@ Agentic Calendar 会在每场会议前自动把这些上下文浮出来，让每
 
 Agentic Calendar 代表一类范畴转移：日历从存储时间，变成运行工作。它不是更聪明的约时间链接，也不是更精致的提醒系统——它是一个主动执行层：事件触发准备、截止日期催生交付物、会议结果回流进工作管线。三大本质属性——主动式、事件触发、执行范围内自主——把它和此前每一代排程工具区分开来。
 
-想追着市场一路看到今天的读者，可以读我们关于 AI 日程 Agent 的四代拆解，它绘制了从 Calendly 到日历驱动 Agent 操作系统的演进地图。想理解这套范式与主流聊天式 AI 模型的差异，可以看 [Calendar-Driven AI 对比 Chat AI](/blog/calendar-driven-ai-vs-chat-ai)。
+想追着市场一路看到今天的读者，可以读我们关于 AI 日程 Agent 的四代拆解，它绘制了从 Calendly 到日历驱动 Agent 操作系统的演进地图。想理解这套范式与主流聊天式 AI 模型的差异，可以看 [Calendar-Driven AI 对比 Chat AI](/zh/blog/calendar-driven-ai-vs-chat-ai)。
 
 这个品类还在成型。第一代、第二代工具负责填满日历；第四代工具从日历出发去执行。如果你的日历是你工作的中枢神经系统——而不只是一串约见——那 Agentic Calendar 就是 2026 年最值得盯紧的品类。
 

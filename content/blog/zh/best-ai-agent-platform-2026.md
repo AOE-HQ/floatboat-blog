@@ -47,7 +47,7 @@ draft: false
 
 坦白讲，这类平台大多不是单人经营者该起步的地方。如果你是一个人，Agent 挂了你要能快速修好——而不是去调试一条分布式追踪链路。但知道这个品类存在很重要，因为有些"搭建"工具宣传的部署功能，其实只是托管运行，并不是生产级监控。
 
-![f7.PNG](/blog/images/best-ai-agent-platform-2026/1778827211712-f32b469d-3ead-4a3f-b825-9f367f9a2fa2.webp)
+![f7.PNG](/zh/blog/images/best-ai-agent-platform-2026/1778827211712-f32b469d-3ead-4a3f-b825-9f367f9a2fa2.webp)
 
 ### 加了 AI 层的自动化平台
 
@@ -77,7 +77,7 @@ Agent 如何跨任务持有和使用信息？无状态 Agent 应付孤立任务�
 
 Anthropic 关于[构建高效 Agent 的研究](https://www.anthropic.com/research/building-effective-agents)值得一读。它的核心观点是：复杂度只应该在"能明显改善结果"时添加。更多的上下文处理 = 更多复杂度 = 更多可能出错的地方。
 
-![f8.png](/blog/images/best-ai-agent-platform-2026/1778827221125-7d93811d-4cff-474f-8102-922af255a1ce.webp)
+![f8.png](/zh/blog/images/best-ai-agent-platform-2026/1778827221125-7d93811d-4cff-474f-8102-922af255a1ce.webp)
 
 ### 集成（Integrations）
 
@@ -107,7 +107,7 @@ Anthropic 在 2025 年底发布了一个关于 [Agent Skills 跨平台可移植�
 
 [n8n](https://n8n.io/) 关于 AI Agent 工作流的文档，对理解"自动化平台的终点"和"真正 Agent 行为的起点"很有帮助——尤其当你想搞清楚你的用例到底站在那条线的哪一边。
 
-![f9.png](/blog/images/best-ai-agent-platform-2026/1778827234187-98ab1350-cf42-4fa4-be1f-2f62095857a7.webp)
+![f9.png](/zh/blog/images/best-ai-agent-platform-2026/1778827234187-98ab1350-cf42-4fa4-be1f-2f62095857a7.webp)
 
 ## 做决定前，先跑一个小规模试点
 
@@ -125,13 +125,13 @@ Anthropic 在 2025 年底发布了一个关于 [Agent Skills 跨平台可移植�
 
 ## 系列前文
 
-  * Agent 新手？从这里开始：为什么多数单人经营者该先跑简单工作流、再建复杂系统 → [单人创始人的 AI 工作流](/blog/ai-workflow-for-solo-founders)
+  * Agent 新手？从这里开始：为什么多数单人经营者该先跑简单工作流、再建复杂系统 → [单人创始人的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)
 
-  * 还在提示词、自动化和完整工作区之间犹豫？这篇把取舍讲得很清楚 → [工作区 Agent vs 工作流搭建器](/blog/workspace-agents-vs-workflow-builders)
+  * 还在提示词、自动化和完整工作区之间犹豫？这篇把取舍讲得很清楚 → [工作区 Agent vs 工作流搭建器](/zh/blog/workspace-agents-vs-workflow-builders)
 
-  * 做 Agent 最大的错误是太早自动化太多——这篇讲单人经营者如何真正规模化 AI 工作流 → [AI Agent 工作流与 Vibe Coding](/blog/ai-agent-workflow-vibe-coding)
+  * 做 Agent 最大的错误是太早自动化太多——这篇讲单人经营者如何真正规模化 AI 工作流 → [AI Agent 工作流与 Vibe Coding](/zh/blog/ai-agent-workflow-vibe-coding)
 
-  * 选工具之前，先理解"AI Agent"在实践中到底是什么——以及它们会在哪里悄悄失灵 → [给单人经营者讲清楚 AI Agent 工具](/blog/ai-agent-solo-operators)
+  * 选工具之前，先理解"AI Agent"在实践中到底是什么——以及它们会在哪里悄悄失灵 → [给单人经营者讲清楚 AI Agent 工具](/zh/blog/ai-agent-solo-operators)
 
-  * 如果你的工作流已经横跨浏览器标签页、文档和本地文件，这篇深入讲为什么工作区 Agent 正在成为下一层 → [单人经营者的 AI 工作区 Agent](/blog/ai-workspace-agents)
+  * 如果你的工作流已经横跨浏览器标签页、文档和本地文件，这篇深入讲为什么工作区 Agent 正在成为下一层 → [单人经营者的 AI 工作区 Agent](/zh/blog/ai-workspace-agents)
 

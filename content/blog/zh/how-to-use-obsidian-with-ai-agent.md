@@ -14,7 +14,7 @@ draft: false
 **TL;DR**
   * **如何用 AI Agent 使用 Obsidian**，关键先做一个清晰分工：Obsidian 负责「链接起来的 Markdown 思考」；Agent 负责「跨应用执行」——以该文件夹和你桌面上的其余内容为对象。
 
-  * 把 [Obsidian 库](/blog/what-is-obsidian-vault)当作事实源——就是磁盘上的普通文件——然后授权桌面 Agent 为当前项目或日历时段读取（在你允许时写入）这个文件夹。
+  * 把 [Obsidian 库](/zh/blog/what-is-obsidian-vault)当作事实源——就是磁盘上的普通文件——然后授权桌面 Agent 为当前项目或日历时段读取（在你允许时写入）这个文件夹。
 
   * 大多数「Obsidian 内置 AI」方案（聊天插件、剪藏解读器）只在笔记应用**内部**帮忙。当工作要横跨邮件、云盘、PDF、下载文件夹与 vault 时，桌面 Agent 才有用武之地。
 
@@ -28,7 +28,7 @@ draft: false
 
 Obsidian 在它擅长的领域非常出色：一个本地、可链接的知识库。你把想法记成 Markdown，用 [[wikilinks]] 把它们连起来，看着个人知识图谱长大。摩擦出现在今天的工作不是「把笔记写得更好」，而是「交付一件既需要笔记、**又需要另外三套系统**的东西」的时候。客户背景在 vault 里，但交付物还得拉进上周的邮件、桌面上的 PDF、日历里的截止日期。只待在 Obsidian 里，就是无尽的复制粘贴；只待在一个聊天框里，就是每轮会话都得重新解释一遍 vault。
 
-这正是运营者们搜索**如何用 AI Agent 使用 Obsidian** 的原因。他们不是想让 Obsidian 变成 Notion AI，而是想要一个能把 vault 当成众多文件夹之一的运行时——跨应用行动，同时让笔记保持本地、持久。想对这个文件夹本身有个精确的定义，从 [Obsidian 库是什么](/blog/what-is-obsidian-vault)读起；本指南默认你已经有库（或者几分钟内就能建一个装满 Markdown 的文件夹）。
+这正是运营者们搜索**如何用 AI Agent 使用 Obsidian** 的原因。他们不是想让 Obsidian 变成 Notion AI，而是想要一个能把 vault 当成众多文件夹之一的运行时——跨应用行动，同时让笔记保持本地、持久。想对这个文件夹本身有个精确的定义，从 [Obsidian 库是什么](/zh/blog/what-is-obsidian-vault)读起；本指南默认你已经有库（或者几分钟内就能建一个装满 Markdown 的文件夹）。
 
 一个经得起推敲的心智模型：传统应用是院子里的房间，Obsidian 是其中很结实的一间——也许是书房。而一个 AI Agent OS 更接近把整座院子布线联通：灯光、日程，以及经授权在各房间之间跑动的仆人。你不会拆掉书房，只是不再假装每件差事都必须从书房里完成。
 
@@ -38,7 +38,7 @@ Obsidian 在它擅长的领域非常出色：一个本地、可链接的知识�
 
 社区 AI 插件和 Obsidian 的 Web Clipper Interpreter 在 vault 工作流**内部**很有价值——总结一篇剪藏的文章、对着已索引笔记聊天、就地起草。它们优化的是书房。当任务是「结合 vault + 收件箱 + 本地 deck 文件夹，为周四的投资人会议把一切都准备好」时，它们很少能替代桌面 Agent。不同的工作，不同的台面。
 
-Claude Cowork 一类的桌面 Agent，以及 Floatboat 这类日历驱动运行时，与 Obsidian 共享同一个前提：**本地文件**。正因为 vault 已经是一个文件夹，你不需要某种专有导出就能给 Agent 上下文——你只需把路径指给它、划定权限、描述想要的结果。这就是 PKM 与 Agent OS 两个品类之间的实用桥梁——互补，而非竞争。想知道日历原生的触发方式与聊天发起的 Agent 有何不同，看 [日历驱动 AI vs 聊天式 AI](/blog/calendar-driven-ai-vs-chat-ai)。
+Claude Cowork 一类的桌面 Agent，以及 Floatboat 这类日历驱动运行时，与 Obsidian 共享同一个前提：**本地文件**。正因为 vault 已经是一个文件夹，你不需要某种专有导出就能给 Agent 上下文——你只需把路径指给它、划定权限、描述想要的结果。这就是 PKM 与 Agent OS 两个品类之间的实用桥梁——互补，而非竞争。想知道日历原生的触发方式与聊天发起的 Agent 有何不同，看 [日历驱动 AI vs 聊天式 AI](/zh/blog/calendar-driven-ai-vs-chat-ai)。
 
 ## 3\. 工作流：Vault 当事实源，Agent 当运行时
 
@@ -46,7 +46,7 @@ Claude Cowork 一类的桌面 Agent，以及 Floatboat 这类日历驱动运行�
 
 第二，**授权文件夹**。在桌面 Agent 里，像授予 Documents 或某个客户共享目录那样，给 vault 目录授予读取权限。遵循最小权限：只给本季度工作的 vault，而不是整个主目录——除非你真的需要。
 
-第三，**把任务挂到触发器上**。一次性任务：打开 Agent，说出目标——「用 Projects/Acme 和上周的邮件，给 Acme 起草一页纸简报」。规律性任务：把同样的意图绑到日历事件上，让准备动作在会议前自动跑，而不是等你想起来——这正是 [AI 会议准备](/blog/ai-meeting-preparation)管线背后的模式。
+第三，**把任务挂到触发器上**。一次性任务：打开 Agent，说出目标——「用 Projects/Acme 和上周的邮件，给 Acme 起草一页纸简报」。规律性任务：把同样的意图绑到日历事件上，让准备动作在会议前自动跑，而不是等你想起来——这正是 [AI 会议准备](/zh/blog/ai-meeting-preparation)管线背后的模式。
 
 第四，**审查输出，再有选择地写回**。让 Agent 把交付物产在工作文件夹或草稿笔记里，由你决定哪些提升为常青 Markdown。这样 vault 保持策展过的状态，而不是被每一个 AI 中间文件淹没。
 
@@ -92,7 +92,7 @@ Floatboat 的 <a href="/ai-file-organizer">文件整理功能</a>就是为这一
 
   1. Floatboat —— 最适合横跨 vault 与其他应用的日历驱动工作
 
-当任务不是「和我的笔记聊天」而是「让周四的客户工作落地」时，Floatboat 排第一。它是在 Mac 和 Windows 上运行的主动式 Agent OS：日历事件与截止日期可以触发准备与执行，本地文件夹（包括 Obsidian 库）都在范围内，同一个 workspace 还能串进诸如<a href="/ai-file-organizer">文件整理功能</a>这类技能。你继续在 Obsidian 里思考；Floatboat 负责跑整座院子——邮件、文件、模型、日程——不必每天早上都在某个插件侧栏里重建上下文。想对比纯聊天工具背后的范式差异，看 [日历驱动 AI vs 聊天式 AI](/blog/calendar-driven-ai-vs-chat-ai)。
+当任务不是「和我的笔记聊天」而是「让周四的客户工作落地」时，Floatboat 排第一。它是在 Mac 和 Windows 上运行的主动式 Agent OS：日历事件与截止日期可以触发准备与执行，本地文件夹（包括 Obsidian 库）都在范围内，同一个 workspace 还能串进诸如<a href="/ai-file-organizer">文件整理功能</a>这类技能。你继续在 Obsidian 里思考；Floatboat 负责跑整座院子——邮件、文件、模型、日程——不必每天早上都在某个插件侧栏里重建上下文。想对比纯聊天工具背后的范式差异，看 [日历驱动 AI vs 聊天式 AI](/zh/blog/calendar-driven-ai-vs-chat-ai)。
 
 如果你只想在 Obsidian 里写作时做语义搜索、从未离开编辑器，那就别把 Floatboat 当**第一**个装的东西。这种情况先上一个库内插件，日后再加桌面运行时。
 
@@ -110,7 +110,7 @@ Floatboat 的 <a href="/ai-file-organizer">文件整理功能</a>就是为这一
 
   4. Claude Cowork —— 最适合 Anthropic 原生桌面、针对本地文件夹的批量任务
 
-<a href="<https://claude.com/product/cowork>" rel="nofollow noopener">Claude Cowork</a> 是 Anthropic 面向非编码知识工作的桌面模式（另有网页/移动 beta）：你指派一个结果，Claude 在你授权的文件夹与连接器之间规划并执行。正因为 vault 就是一个文件夹，Cowork 可以像处理 Documents 一样处理它——无需专门的 Obsidian 插件。定义性文章见 [Claude Cowork 是什么](/blog/what-is-claude-cowork)。
+<a href="<https://claude.com/product/cowork>" rel="nofollow noopener">Claude Cowork</a> 是 Anthropic 面向非编码知识工作的桌面模式（另有网页/移动 beta）：你指派一个结果，Claude 在你授权的文件夹与连接器之间规划并执行。正因为 vault 就是一个文件夹，Cowork 可以像处理 Documents 一样处理它——无需专门的 Obsidian 插件。定义性文章见 [Claude Cowork 是什么](/zh/blog/what-is-claude-cowork)。
 
 Cowork 由用户在 Claude 内发起（或定时发起），它不是 Obsidian 原生的图谱工具，也不会自动绑到每个日历事件——除非你养成这个习惯。被 Anthropic 计费和文件夹批量任务绑定的团队会偏爱它；想把「日历即运行时」当默认的操作者，应该去对比日历驱动 Agent。
 

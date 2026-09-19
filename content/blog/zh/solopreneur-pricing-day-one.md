@@ -37,7 +37,7 @@ draft: false
 
 你越早有一个数字，这类反馈就越早开始进来。
 
-![2.PNG](/blog/images/solopreneur-pricing-day-one/1776075036795-a01c73ac-7a61-47e9-862f-8371ae80feb4.webp)
+![2.PNG](/zh/blog/images/solopreneur-pricing-day-one/1776075036795-a01c73ac-7a61-47e9-862f-8371ae80feb4.webp)
 
 ## 单人创业者的定价到底在谈什么
 
@@ -61,7 +61,7 @@ draft: false
 
 我的看法：**拿不准就从按项目计费开始。**它会逼你定义范围，而定义范围会逼你想清楚你到底在卖什么。
 
-![3.PNG](/blog/images/solopreneur-pricing-day-one/1776075047063-f8752e8e-137d-4450-95a3-65cb02f510c2.webp)
+![3.PNG](/zh/blog/images/solopreneur-pricing-day-one/1776075047063-f8752e8e-137d-4450-95a3-65cb02f510c2.webp)
 
 ## 没有数据时怎么定第一个价格
 
@@ -99,7 +99,7 @@ draft: false
 
 在改动老客户关系之前，先给自己几个月时间跑新客户价格。有个好用的模式：提前通知并给出理由。"我将于 [日期] 涨价，因为我的产能有限，想把精力放在更长周期的合作上。"这不是辩解，这是定位。
 
-![clean_Gemini_Generated_Image_g5844ig5844ig584 \(1\).png](/blog/images/solopreneur-pricing-day-one/1776075015989-b15c4bc9-e3ee-466d-b05b-559912c5d51d.webp)
+![clean_Gemini_Generated_Image_g5844ig5844ig584 \(1\).png](/zh/blog/images/solopreneur-pricing-day-one/1776075015989-b15c4bc9-e3ee-466d-b05b-559912c5d51d.webp)
 
 ## 定价即信号——你的价格说明了你的定位
 
@@ -123,7 +123,7 @@ draft: false
 
 这些问题不需要每次都催生行动。它们只是防止定价变成一件"设完就忘"、悄悄跟你作对的决定。
 
-![5.png](/blog/images/solopreneur-pricing-day-one/1776075060801-9e0470a1-3267-4196-932f-fd5351b85f73.webp)
+![5.png](/zh/blog/images/solopreneur-pricing-day-one/1776075060801-9e0470a1-3267-4196-932f-fd5351b85f73.webp)
 
 ## 取舍：当你只追求"亲民可及"时，你放弃了什么
 
@@ -145,13 +145,13 @@ draft: false
 
 ## 往期文章：
 
-  * [还在琢磨你的 offer？读这篇：第一批用户怎么获得牵引力](/blog/first-100-customers-solo-founder)
+  * [还在琢磨你的 offer？读这篇：第一批用户怎么获得牵引力](/zh/blog/first-100-customers-solo-founder)
 
-  * [定价只是体系里的一环——这篇讲单人创业者怎么搭出能规模化的工作流](/blog/ai-workflow-solo-founders)
+  * [定价只是体系里的一环——这篇讲单人创业者怎么搭出能规模化的工作流](/zh/blog/ai-workflow-solo-founders)
 
-  * [如果你的 AI 工具总觉得低效，这篇解释了为什么每个 session 都一切归零](/blog/why-ai-forgets-every-session)
+  * [如果你的 AI 工具总觉得低效，这篇解释了为什么每个 session 都一切归零](/zh/blog/why-ai-forgets-every-session)
 
-  * [想理解 AI Agent 长期会如何嵌进你的业务？](/blog/ai-agents-2026-solo-operators)
+  * [想理解 AI Agent 长期会如何嵌进你的业务？](/zh/blog/ai-agents-2026-solo-operators)
 
-  * [不确定该自建系统还是直接用更好的工具？这篇拆解能帮到你](/blog/workflow-builder-vs-ai-workspace)
+  * [不确定该自建系统还是直接用更好的工具？这篇拆解能帮到你](/zh/blog/workflow-builder-vs-ai-workspace)
 

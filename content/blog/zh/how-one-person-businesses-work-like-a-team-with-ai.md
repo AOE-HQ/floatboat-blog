@@ -17,7 +17,7 @@ draft: false
 
 差别立竿见影。它稳定维持同一套标准，不用我每次重建上下文。更像是在跟一位已经了解项目的人交代任务，而不是在用一个工具。就是从那时起，我开始认真思考**给 AI 一个角色**意味着什么——而不是只给一句提示词。后来发现，这正是当下最优秀的一批**一人公司**悄悄采用的工作方式。
 
-![1.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916303269-246035ad-155a-4770-8059-197a965d27b5.webp)
+![1.png](/zh/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916303269-246035ad-155a-4770-8059-197a965d27b5.webp)
 
 ## 为什么一人公司正当其时
 
@@ -51,7 +51,7 @@ AI 没有明确角色，输出就不稳定。你每次都要重新解释上下�
 
 这个区别听起来很小。实际上，整局游戏就在这里。
 
-![2.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916314360-34c957ee-6708-410c-8b70-341f21688a06.webp)
+![2.png](/zh/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916314360-34c957ee-6708-410c-8b70-341f21688a06.webp)
 
 ## 给 AI 一个角色，到底是什么样
 
@@ -75,7 +75,7 @@ gstack 传播得这么快，靠的不只是技术实现——而是这个想法�
 
 关键转变是：**她不再切换工具了，而是切换角色。**同一个工作区，加载不同的上下文。她估算每周省下 6–8 小时——那些过去花在重复解释上下文、重新格式化输出上的时间。而且质量更稳定了，因为标准由角色来维持，而不是她每个会话去重建。
 
-![3.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916326187-76598ab9-f2cf-4186-82df-d42f21ee03f6.webp)
+![3.png](/zh/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916326187-76598ab9-f2cf-4186-82df-d42f21ee03f6.webp)
 
 ### 对单人创业者最重要的几种角色
 
@@ -101,7 +101,7 @@ gstack 传播得这么快，靠的不只是技术实现——而是这个想法�
 
 按 [MIT Sloan Management Review 关于知识管理的研究](https://sloanreview.mit.edu/)，把隐性知识显性化，是知识工作者能做的最难也最有价值的事之一。有经验的人大部分本事存在脑子里，而不是文档里。把它捕捉下来——哪怕是粗略的——才能让一个角色迁移给 AI。
 
-![4.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916338947-9eb991fe-cd5a-4b08-9035-ee1f830c6505.webp)
+![4.png](/zh/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916338947-9eb991fe-cd5a-4b08-9035-ee1f830c6505.webp)
 
 ### 角色怎样才算可复用
 
@@ -127,7 +127,7 @@ AI 特别擅长**可重复、上下文厚重、输出明确**的任务；对需�
 
 用 AI 经营一人公司，不意味着你永远不需要协作。它意味着你不再把时间烧在不需要人的任务上——这也是为什么现在很多单人创业者把这些系统打包成了服务。
 
-![5.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916347558-f859be5e-781e-4548-b7db-ea07c050495a.webp)
+![5.png](/zh/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916347558-f859be5e-781e-4548-b7db-ea07c050495a.webp)
 
 ## 如何搭你的第一个 AI 角色（别把它搞复杂）
 
@@ -143,9 +143,9 @@ AI 特别擅长**可重复、上下文厚重、输出明确**的任务；对需�
 
 ## 往期文章
 
-  * **[AI 自动化在真实市场上到底怎么定价](/blog/ai-automation-agency-pricing)**
+  * **[AI 自动化在真实市场上到底怎么定价](/zh/blog/ai-automation-agency-pricing)**
 
-  * **[Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](/blog/lindy-vs-gumloop)**
+  * **[Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](/zh/blog/lindy-vs-gumloop)**
 
-  * **[AI Agent 在调研、内容与运营中的真实用例](/blog/ai-agent-use-cases-real-examples)**
+  * **[AI Agent 在调研、内容与运营中的真实用例](/zh/blog/ai-agent-use-cases-real-examples)**
 

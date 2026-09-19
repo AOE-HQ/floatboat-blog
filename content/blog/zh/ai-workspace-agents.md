@@ -17,7 +17,7 @@ draft: false
 
 ## AI 工作区 Agent 是什么
 
-![2.png](/blog/images/ai-workspace-agents/1776938869107-4bf55783-56f6-40d6-a60f-b3adf3a971f0.webp)
+![2.png](/zh/blog/images/ai-workspace-agents/1776938869107-4bf55783-56f6-40d6-a60f-b3adf3a971f0.webp)
 
 ### 大白话定义
 
@@ -51,7 +51,7 @@ draft: false
 
 ### 对比聊天助手（如 ChatGPT）
 
-![3.png](/blog/images/ai-workspace-agents/1776938892459-d9a96757-2002-4768-865d-caa869b18d59.webp)
+![3.png](/zh/blog/images/ai-workspace-agents/1776938892459-d9a96757-2002-4768-865d-caa869b18d59.webp)
 
 聊天助手是"对话形"的。你带一个问题来，它带一个答案走。上下文就是你粘贴进输入框里的内容。标签页一关，关系结束。
 
@@ -85,7 +85,7 @@ draft: false
 
 ### 在真实的文件、浏览器和应用里干活
 
-![4.png](/blog/images/ai-workspace-agents/1776938903868-854caf84-9b34-450c-8dd9-73945bb2a6d7.webp)
+![4.png](/zh/blog/images/ai-workspace-agents/1776938903868-854caf84-9b34-450c-8dd9-73945bb2a6d7.webp)
 
 核心解锁是：Agent 能看见你看见的东西。[Skywork Desktop 的发布文章说得很到位](https://finance.yahoo.com/news/skywork-launches-desktop-ai-agent-162800505.html)——重点是"无需上传的本地文件理解，让 Agent 以用户选定的文件夹为持久上下文工作，而不是依赖一次性的附件"。
 
@@ -133,7 +133,7 @@ draft: false
 
 ## 工作区 Agent 解决不了什么
 
-![5.png](/blog/images/ai-workspace-agents/1776938916972-34287d3b-e1da-4167-b3aa-bd7bb9e225ed.webp)
+![5.png](/zh/blog/images/ai-workspace-agents/1776938916972-34287d3b-e1da-4167-b3aa-bd7bb9e225ed.webp)
 
 ### 当前的局限与取舍
 
@@ -167,13 +167,13 @@ draft: false
 
 **系列前文：**
 
-  * [AI Agent 与聊天机器人：你的工作方式到底改变了什么](/blog/ai-agent-vs-chatbot)
+  * [AI Agent 与聊天机器人：你的工作方式到底改变了什么](/zh/blog/ai-agent-vs-chatbot)
 
-  * [工作流搭建器 vs AI 工作区：两种形态迥异的自动化](/blog/workflow-builder-vs-ai-workspace)
+  * [工作流搭建器 vs AI 工作区：两种形态迥异的自动化](/zh/blog/workflow-builder-vs-ai-workspace)
 
-  * [什么是持久化 AI Agent（以及为什么记忆会改变一切）](/blog/what-is-persistent-ai-agent)
+  * [什么是持久化 AI Agent（以及为什么记忆会改变一切）](/zh/blog/what-is-persistent-ai-agent)
 
-  * [单人创始人的 AI 工作流：上下文切换到底疼在哪](/blog/ai-workflow-for-solo-founders)
+  * [单人创始人的 AI 工作流：上下文切换到底疼在哪](/zh/blog/ai-workflow-for-solo-founders)
 
-  * [一人公司如何用 AI 像团队一样工作](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+  * [一人公司如何用 AI 像团队一样工作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

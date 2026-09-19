@@ -25,7 +25,7 @@ draft: false
 
 我用它大约一周了。第一个注意到的事：它没有试图做最聪明的模型。它试图做高效的模型——够快、能力够用、并整合进 Meta 的产品生态。Meta 在他们[官方发布文](https://ai.meta.com/blog/introducing-muse-spark-msl/)里也是这么说的，还坦率承认在长程 agentic 工作和编码上存在差距。
 
-![2.PNG](/blog/images/meta-muse-spark-one-person-company/1777599405250-c43737fd-78b5-4c59-953b-504703a01a0f.webp)
+![2.PNG](/zh/blog/images/meta-muse-spark-one-person-company/1777599405250-c43737fd-78b5-4c59-953b-504703a01a0f.webp)
 
 ### 它和 Llama 4 是什么关系
 
@@ -53,7 +53,7 @@ Llama 4 是开放权重的——你可以下载下来自己跑。**Muse Spark �
 
 我在一个真实任务上测了它：分析一份 30 页的产品调研 PDF，要求给结构化拆解。我去泡了杯咖啡回来，它已经做完了。我通读了两遍，没发现明显的事实性错误。这部分体验不错。
 
-![3.PNG](/blog/images/meta-muse-spark-one-person-company/1777599417375-60d50ce0-b5fb-42ee-baf9-75bf6e9d5fa9.webp)
+![3.PNG](/zh/blog/images/meta-muse-spark-one-person-company/1777599417375-60d50ce0-b5fb-42ee-baf9-75bf6e9d5fa9.webp)
 
 ### 它仍然不足的地方
 
@@ -77,7 +77,7 @@ GPT-5.4 发布时，我干了一件有点蠢的事。我花了一整个周末重
 
 不算亏的周末。只是不像当时感觉的那么生产力爆棚。
 
-![4.png](/blog/images/meta-muse-spark-one-person-company/1777599434797-610547ea-0fa7-49c9-b15f-2f7108c480fe.webp)
+![4.png](/zh/blog/images/meta-muse-spark-one-person-company/1777599434797-610547ea-0fa7-49c9-b15f-2f7108c480fe.webp)
 
 ### 模型升级背后真正的生产力驱动
 
@@ -111,7 +111,7 @@ GPT-5.4 发布时，我干了一件有点蠢的事。我花了一整个周末重
 
 如果你的工作主要是多模态处理、健康相关研究或轻量调研——Muse Spark 值得一试。如果你做的是长链 agentic 工作、深度编码或 computer-use 自动化——GPT-5.4 仍然是更稳的选择。[OpenAI 的 API 文档](https://developers.openai.com/api/docs/models/gpt-5.4)明确把它定位给"复杂的专业工作"，这跟我实际看到的情况一致。
 
-![5.png](/blog/images/meta-muse-spark-one-person-company/1777599445535-e3ff5e0b-eacc-442a-95fb-bd9f2f3f9720.webp)
+![5.png](/zh/blog/images/meta-muse-spark-one-person-company/1777599445535-e3ff5e0b-eacc-442a-95fb-bd9f2f3f9720.webp)
 
 这就是我的真心话，带着所有保留条件。一两个月后，GPT-5.5 或下一代 Muse 就会出来，对比又会不一样。但对单人创业者来说，"换之前先等等"往往比"立刻换"更经得起时间考验。
 
@@ -119,13 +119,13 @@ GPT-5.4 发布时，我干了一件有点蠢的事。我花了一整个周末重
 
 ## 上一篇系列文章：
 
-  * **[是不是每次新模型发布都该换？拆解为什么多数单人创始人高估了收益](/blog/ai-model-switching-trap)**
+  * **[是不是每次新模型发布都该换？拆解为什么多数单人创始人高估了收益](/zh/blog/ai-model-switching-trap)**
 
-  * **[GPT Image 2 对比 Midjourney 对比 Nano Banana 2——怎么按工作流（而不是排行榜）真正选对工具](/blog/ai-image-tools-comparison)**
+  * **[GPT Image 2 对比 Midjourney 对比 Nano Banana 2——怎么按工作流（而不是排行榜）真正选对工具](/zh/blog/ai-image-tools-comparison)**
 
-  * **[单人创作者用 AI 做分镜：什么时候省下几小时——什么时候悄悄毁掉你的序列](/blog/ai-storyboarding-workflow)**
+  * **[单人创作者用 AI 做分镜：什么时候省下几小时——什么时候悄悄毁掉你的序列](/zh/blog/ai-storyboarding-workflow)**
 
-  * **[Linux 上的 Claude Code：为什么把 AI 从浏览器搬进终端，改变的不只是速度](/blog/claude-code-linux)**
+  * **[Linux 上的 Claude Code：为什么把 AI 从浏览器搬进终端，改变的不只是速度](/zh/blog/claude-code-linux)**
 
-  * **[Workflow 构建器 vs 工作区 Agent：自动化工作的两条完全不同的路（以及为什么混着用会浪费时间）](/blog/workflow-vs-agents)**
+  * **[Workflow 构建器 vs 工作区 Agent：自动化工作的两条完全不同的路（以及为什么混着用会浪费时间）](/zh/blog/workflow-vs-agents)**
 

@@ -37,7 +37,7 @@ draft: false
 
 **退出条件：**如果此刻你叫不出一件具体的重复任务，就停在这里。先别搭任何东西。
 
-![how2.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749633546-f921baee-44da-494e-91bc-fc66137da119.webp)
+![how2.PNG](/zh/blog/images/how-to-build-ai-agents-for-repeated-work/1778749633546-f921baee-44da-494e-91bc-fc66137da119.webp)
 
 ## 第 2 步：画出输入、判断与输出
 
@@ -55,7 +55,7 @@ draft: false
 
 按 [Anthropic 关于构建高效 agent 的研究](https://www.anthropic.com/research/building-effective-agents)的说法，**最成功的实现用的是简单、可组合的模式，而不是复杂的框架**。这份简单从映射阶段就开始了——不是从工具阶段才开始。
 
-![how3.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749645548-530c5952-179c-461f-a06e-06ad50ee1fad.webp)
+![how3.PNG](/zh/blog/images/how-to-build-ai-agents-for-repeated-work/1778749645548-530c5952-179c-461f-a06e-06ad50ee1fad.webp)
 
 ## 第 3 步：选最轻的搭建路径
 
@@ -85,7 +85,7 @@ draft: false
 
 [企业 AI 指南中引用的 Gartner 研究](https://onereach.ai/blog/best-practices-for-ai-agent-implementations/)预测，到 2027 年，超过 40% 的 agentic AI 项目会因成本攀升、价值不清或风险控制不足而失败或被取消。人工复核这一步，就是你避免成为那条统计数字的直接防线。它不是额外开销——它是你的反馈回路。
 
-![how4.png](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749654339-123add4e-863e-4c0d-bab5-c8798c1436bd.webp)
+![how4.png](/zh/blog/images/how-to-build-ai-agents-for-repeated-work/1778749654339-123add4e-863e-4c0d-bab5-c8798c1436bd.webp)
 
 ## 第 5 步：测试、简化，或者停止搭建
 
@@ -105,13 +105,13 @@ draft: false
 
 ## 往期文章
 
-  * 多数第一次搭 agent 的人都会把它搞复杂。为什么从一个窄工作流入手，通常比追一个「全 AI 操作系统」更有效——[agentic AI 工具是什么](/blog/ai-agent-solo-operators)
+  * 多数第一次搭 agent 的人都会把它搞复杂。为什么从一个窄工作流入手，通常比追一个「全 AI 操作系统」更有效——[agentic AI 工具是什么](/zh/blog/ai-agent-solo-operators)
 
-  * 工作流搭建器和工作区 Agent 解决的是完全不同的问题——这篇拆解帮你选到真正贴合你工作的最轻配置——[工作区 Agent vs 工作流搭建器](/blog/workspace-agents-vs-workflow-builders)
+  * 工作流搭建器和工作区 Agent 解决的是完全不同的问题——这篇拆解帮你选到真正贴合你工作的最轻配置——[工作区 Agent vs 工作流搭建器](/zh/blog/workspace-agents-vs-workflow-builders)
 
-  * 在自动化一切之前，先分清助理、工作流 agent、编程 agent 与自主系统的差别——[Claude managed agents 是什么](/blog/what-are-claude-managed-agents)
+  * 在自动化一切之前，先分清助理、工作流 agent、编程 agent 与自主系统的差别——[Claude managed agents 是什么](/zh/blog/what-are-claude-managed-agents)
 
-  * AI 工作流通常死于过度复杂，而不是能力不足。这是独立创业者正在用的务实框架——[独立创业者的 AI 工作流](/blog/ai-workflow-for-solo-founders)
+  * AI 工作流通常死于过度复杂，而不是能力不足。这是独立创业者正在用的务实框架——[独立创业者的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)
 
-  * 如果你的 AI 配置已经乱糟糟，工具之间的碎片化上下文很可能才是瓶颈——不是模型质量本身——[为什么 AI 工作流会显得碎片化](/blog/workspace-agents-for-solo-operators)
+  * 如果你的 AI 配置已经乱糟糟，工具之间的碎片化上下文很可能才是瓶颈——不是模型质量本身——[为什么 AI 工作流会显得碎片化](/zh/blog/workspace-agents-for-solo-operators)
 

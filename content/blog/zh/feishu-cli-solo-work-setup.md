@@ -29,7 +29,7 @@ draft: false
 
 而对单人创业者来说，基础设施的意思是：_你就是那个运维团队。_
 
-![2.png](/blog/images/feishu-cli-solo-work-setup/1774921802271-e628df3a-3d62-45a5-b7ec-86da412a2f08.webp)
+![2.png](/zh/blog/images/feishu-cli-solo-work-setup/1774921802271-e628df3a-3d62-45a5-b7ec-86da412a2f08.webp)
 
 ### 读权限与执行动作的差别
 
@@ -47,7 +47,7 @@ CLI 让这件事成为可能。你可以按关键词搜消息、按 chat ID 过�
 
 这里的刷新窗口很关键。用户访问令牌有有效期，需要定期续期。如果你搭好一条工作流、几周没碰它，回来后可能发现一切都在悄悄失效——因为 token 过期了，却没有任何东西告诉你。根据相关工具的开发者笔记，**user_access_token 的有效期通常只有约 2 小时，要在自动化环境里保持可用，必须有刷新机制。**
 
-![3.png](/blog/images/feishu-cli-solo-work-setup/1774921818806-6cba93e2-cf70-472e-9b18-7de68f0ebea2.webp)
+![3.png](/zh/blog/images/feishu-cli-solo-work-setup/1774921818806-6cba93e2-cf70-472e-9b18-7de68f0ebea2.webp)
 
 ### 从飞书外部触发更新
 
@@ -63,7 +63,7 @@ CLI 其实并不是为这种「接收端」设计的。它是命令行工具，�
 
 但在实践中，每多加一条连接，就多一个会悄悄失效的东西。每套集成都有自己的鉴权模型、自己的速率限制、自己的 API 版本化节奏。**复杂度不是线性相加，而是复利累积。**两条集成也许还管得过来；五条就成了一项兼职维护工作。
 
-![4.png](/blog/images/feishu-cli-solo-work-setup/1774921833188-b6668ae3-34ac-4d8a-953f-84b02c18633d.webp)
+![4.png](/zh/blog/images/feishu-cli-solo-work-setup/1774921833188-b6668ae3-34ac-4d8a-953f-84b02c18633d.webp)
 
 ## 搭建流程实际上涉及什么
 
@@ -87,7 +87,7 @@ CLI 其实并不是为这种「接收端」设计的。它是命令行工具，�
 
 **环境漂移。**本地终端里跑得好好的 CLI 命令，放到 VPS 上由 cron 调用时就变样了——环境变量设置方式不同、Node 版本不一样、工作目录不对。这些都可解，但要花掉你没预算过的调试时间。
 
-![5.png](/blog/images/feishu-cli-solo-work-setup/1774921847300-51a01051-1c6d-403d-a997-f4817c97c89a.webp)
+![5.png](/zh/blog/images/feishu-cli-solo-work-setup/1774921847300-51a01051-1c6d-403d-a997-f4817c97c89a.webp)
 
 ### 「跑起来了」对维护来说意味着什么
 
@@ -123,7 +123,7 @@ CLI 其实并不是为这种「接收端」设计的。它是命令行工具，�
 
 想要一套更健壮的框架来思考自动化可靠性，团队或开发者可以参考 [12-Factor App 方法论](https://12factor.net/)之类的资源——它讲的是如何构建可维护、可观测的进程，其中大部分同样适用于单人自动化搭建。
 
-![6.png](/blog/images/feishu-cli-solo-work-setup/1774921860094-bb72c8f2-80c9-4d69-9674-cbe6308e9ac9.webp)
+![6.png](/zh/blog/images/feishu-cli-solo-work-setup/1774921860094-bb72c8f2-80c9-4d69-9674-cbe6308e9ac9.webp)
 
 ## 什么时候这笔投入才划算
 
@@ -135,7 +135,7 @@ CLI 其实并不是为这种「接收端」设计的。它是命令行工具，�
 
 **你真的享受这类元工作的时候，它划算。**有些人觉得搭建和维护这类体系本身就有满足感——那是一个小而实在的个人基础设施。如果你是这样的人，这份付出会显得轻一些。如果它感觉像是对正事的干扰，那它大概就是了。
 
-![7.png](/blog/images/feishu-cli-solo-work-setup/1774921890213-157eddcc-3819-4100-a884-5cedc3d2c970.webp)
+![7.png](/zh/blog/images/feishu-cli-solo-work-setup/1774921890213-157eddcc-3819-4100-a884-5cedc3d2c970.webp)
 
 ## 投入之前要考虑什么
 
@@ -151,19 +151,19 @@ CLI 其实并不是为这种「接收端」设计的。它是命令行工具，�
 
 说到底，飞书 CLI 对单人创业者场景确实能打。但「能打」和「免维护」不是一回事。能长期撑住的集成，都是那些对「持续拥有意味着什么」看得清清楚楚才动手搭的——token、API 变更、错误处理，一样都不少。
 
-![8.png](/blog/images/feishu-cli-solo-work-setup/1774921937517-a7d45c45-2b64-45fa-92d0-426eab1032a6.webp)
+![8.png](/zh/blog/images/feishu-cli-solo-work-setup/1774921937517-a7d45c45-2b64-45fa-92d0-426eab1032a6.webp)
 
 _反正，这就是我一直在摸索的东西。还在试验，还在学习——但希望它能在你身陷其中之前，让你更清楚地看到自己到底在建什么。_
 
 ## 往期文章
 
-  1. **[想清楚工作流里用 AI Agent 还是聊天机器人的取舍](/blog/ai-agent-vs-chatbot)**
+  1. **[想清楚工作流里用 AI Agent 还是聊天机器人的取舍](/zh/blog/ai-agent-vs-chatbot)**
 
-  2. **[了解如何轻松构建和维护自定义 AI Agent](/blog/how-to-build-an-ai-agent)**
+  2. **[了解如何轻松构建和维护自定义 AI Agent](/zh/blog/how-to-build-an-ai-agent)**
 
-  3. **[了解其他 AI Agent 开发服务，获得更好结果](/blog/ai-agent-development-services)**
+  3. **[了解其他 AI Agent 开发服务，获得更好结果](/zh/blog/ai-agent-development-services)**
 
-  4. **[看看 Genspark 与 Manus 在 AI 自动化方案上的差异](/blog/genspark-vs-manus)**
+  4. **[看看 Genspark 与 Manus 在 AI 自动化方案上的差异](/zh/blog/genspark-vs-manus)**
 
-  5. **[发现 Gumloop 的替代品，构建高效 AI 工作流](/blog/gumloop-alternatives-2026)**
+  5. **[发现 Gumloop 的替代品，构建高效 AI 工作流](/zh/blog/gumloop-alternatives-2026)**
 

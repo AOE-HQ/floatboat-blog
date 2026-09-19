@@ -157,11 +157,11 @@ Floatboat 正是为这个转向而生。它不是更好的 Calendly 替代品，
 
 ## 相关文章
 
-  * [FloatIM 正式上线：在 Agent 原生网络上与 AI Agent 群聊](/blog/introducing-floatim)
+  * [FloatIM 正式上线：在 Agent 原生网络上与 AI Agent 群聊](/zh/blog/introducing-floatim)
 
-  * [单人经营者该不该用 AI Agent？](/blog/ai-agent-solo-operators)
+  * [单人经营者该不该用 AI Agent？](/zh/blog/ai-agent-solo-operators)
 
-  * [一人公司如何像团队一样用 AI 工作](/blog/how-one-person-businesses-work-like-a-team-with-ai)
+  * [一人公司如何像团队一样用 AI 工作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
 * * *
 

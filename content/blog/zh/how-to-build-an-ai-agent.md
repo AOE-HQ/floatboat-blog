@@ -23,7 +23,7 @@ draft: false
 
 聊天机器人回答问题；**[AI Agent](https://www.ibm.com/think/topics/ai-agents) 采取行动**。它能规划多步任务、使用外部工具、跨步骤记住上下文，并无需你每一步都去提示就能做决策。这个差别听起来很微妙，直到你真正动手构建一个。
 
-![2.PNG](/blog/images/how-to-build-an-ai-agent/1774419249726-02da6b63-c1f3-4c40-b9b9-2896277d7e0d.webp)
+![2.PNG](/zh/blog/images/how-to-build-an-ai-agent/1774419249726-02da6b63-c1f3-4c40-b9b9-2896277d7e0d.webp)
 
 ### 引擎盖下发生了什么：模型、记忆、工具调用、执行
 
@@ -57,7 +57,7 @@ draft: false
 
 代码路线要求：熟悉 Python、基础 API 知识、调试的耐心，以及阅读大量错误日志的意愿。
 
-![3.PNG](/blog/images/how-to-build-an-ai-agent/1774419261911-afbbdd03-4dad-4632-958d-93d368ad2f22.webp)
+![3.PNG](/zh/blog/images/how-to-build-an-ai-agent/1774419261911-afbbdd03-4dad-4632-958d-93d368ad2f22.webp)
 
 ### 无代码路线——搭建工具能做什么、不能做什么
 
@@ -93,7 +93,7 @@ draft: false
 
 **架构过度设计。**超过 40% 的 Agentic AI 项目因糟糕的架构决策与不清晰的部署策略而有被取消的风险。答案几乎总是：从最简可行的版本开始。
 
-![4.png](/blog/images/how-to-build-an-ai-agent/1774419275409-20ea7a05-7023-4669-989d-b5ce64f0df61.webp)
+![4.png](/zh/blog/images/how-to-build-an-ai-agent/1774419275409-20ea7a05-7023-4669-989d-b5ce64f0df61.webp)
 
 ## 谁才真的该自建
 
@@ -147,7 +147,7 @@ draft: false
 
 如果你把三条都答完了、仍然想构建——那就去吧。当下这个生态确实很好。只是要睁大眼睛看清你真正接手的是什么。
 
-![5.png](/blog/images/how-to-build-an-ai-agent/1774419289200-db663991-6fcb-4bc9-be2f-4f4376a1bffe.webp)
+![5.png](/zh/blog/images/how-to-build-an-ai-agent/1774419289200-db663991-6fcb-4bc9-be2f-4f4376a1bffe.webp)
 
 _总之——这就是我在花掉无数个夜晚读文档、看 Agent 做出各种意料之外的事之后，最终落脚的地方。_
 
@@ -157,13 +157,13 @@ _我继续做实验去了。_
 
 ## 延伸阅读
 
-  * [在决定要构建什么之前，先看看真实世界的 AI Agent 用例](/blog/ai-agent-use-cases-real-examples)
+  * [在决定要构建什么之前，先看看真实世界的 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)
 
-  * [在为你的项目定范围时，理解 AI Agent 与聊天机器人的关键区别](/blog/ai-agent-vs-chatbot)
+  * [在为你的项目定范围时，理解 AI Agent 与聊天机器人的关键区别](/zh/blog/ai-agent-vs-chatbot)
 
-  * [看看在构建 Agent 系统时，何时用工作流搭建工具、何时用 AI 工作区](/blog/workflow-builder-vs-ai-workspace)
+  * [看看在构建 Agent 系统时，何时用工作流搭建工具、何时用 AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)
 
-  * [在从零构建之前，了解 AI Agent 开发服务实际要花多少钱](/blog/ai-agent-development-services)
+  * [在从零构建之前，了解 AI Agent 开发服务实际要花多少钱](/zh/blog/ai-agent-development-services)
 
-  * [对比 Gumloop 及同类工具，评估构建 Agent 的无代码选项](/blog/gumloop-review-2026)
+  * [对比 Gumloop 及同类工具，评估构建 Agent 的无代码选项](/zh/blog/gumloop-review-2026)
 

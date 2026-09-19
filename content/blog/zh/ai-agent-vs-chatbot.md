@@ -21,7 +21,7 @@ _嗨，我是 Nova——一个花了太多时间测试 AI 工具、并把它们�
 
 从「得到一个答案」到「真的把事情办成」之间的这条缝——正是 **AI Agent 与 Chatbot 的区别**开始起作用的地方。一旦你看清它，就很难再装作看不见。
 
-![2.png](/blog/images/ai-agent-vs-chatbot/1773995481785-08089f22-c8f9-4ba5-88c5-8c17f06977d4.webp)
+![2.png](/zh/blog/images/ai-agent-vs-chatbot/1773995481785-08089f22-c8f9-4ba5-88c5-8c17f06977d4.webp)
 
 ## 聊天机器人是用来做什么的
 
@@ -57,7 +57,7 @@ _嗨，我是 Nova——一个花了太多时间测试 AI 工具、并把它们�
 
 记忆是另一块拼图。Agent 能跨会话保存上下文、回忆过去的决定、随时间积累知识。这正是「从上次停下的地方继续」真正可行的原因。OpenAI 的 Agent 构建实战指南也写道：Agent 端到端执行工作流，特别适合涉及复杂决策、非结构化数据、或需要在模糊中推理的任务——而这些恰好是聊天机器人开始吃力的条件。
 
-![3.png](/blog/images/ai-agent-vs-chatbot/1773995495008-ecb8cfe8-34f1-4bec-a90f-72ff5c6a9f77.webp)
+![3.png](/zh/blog/images/ai-agent-vs-chatbot/1773995495008-ecb8cfe8-34f1-4bec-a90f-72ff5c6a9f77.webp)
 
 ## 关键差异逐项对比
 
@@ -80,7 +80,7 @@ _嗨，我是 Nova——一个花了太多时间测试 AI 工具、并把它们�
 
 还有一个实用的成本考量值得知道：**Agent 跑起来更贵**。计划里的每一步通常至少要一次 LLM 调用。一个三步的 Agent 任务，成本很容易达到单次聊天回复的 5–10 倍。对简单、边界明确的问题，这笔开销纯属浪费。
 
-![4.png](/blog/images/ai-agent-vs-chatbot/1773995506312-b930166e-9009-429e-923d-8fefc0407a58.webp)
+![4.png](/zh/blog/images/ai-agent-vs-chatbot/1773995506312-b930166e-9009-429e-923d-8fefc0407a58.webp)
 
 ## 两个值得澄清的误解
 
@@ -98,7 +98,7 @@ Anthropic 明确指出：Agentic 系统往往用延迟和成本换取更好的�
 
 更合适的框架，是 [IBM 对聊天机器人与 Agent 用例的分析](https://www.ibm.com/think/topics/chatbot-use-cases)里说的：**聊天机器人、AI 助手与 Agent 代表不同层级的技术成熟度**——该用哪一层，完全取决于任务本身，而不是哪个听起来更厉害。
 
-![5.png](/blog/images/ai-agent-vs-chatbot/1773995519379-533e36ba-7e7b-4420-8157-5f2f635510ba.webp)
+![5.png](/zh/blog/images/ai-agent-vs-chatbot/1773995519379-533e36ba-7e7b-4420-8157-5f2f635510ba.webp)
 
 好了，这就是我一直想好好写清楚的那个区别。简版：**聊天机器人处理对话，Agent 处理任务**。实践中这条线是模糊的——这正是术语会乱的原因——但底层架构真的不一样。选工具或搭工作流时，知道自己需要的是哪一种，结果会差很多。
 
@@ -106,13 +106,13 @@ Anthropic 明确指出：Agentic 系统往往用延迟和成本换取更好的�
 
 **往期文章：**
 
-  * [在真实工作流中分清 AI Agent 与 AI 助手](/blog/ai-agent-vs-ai-assistant)。
+  * [在真实工作流中分清 AI Agent 与 AI 助手](/zh/blog/ai-agent-vs-ai-assistant)。
 
-  * [看看 AI Agent 在调研、内容与运营中的真实用例](/blog/ai-agent-use-cases-real-examples)。
+  * [看看 AI Agent 在调研、内容与运营中的真实用例](/zh/blog/ai-agent-use-cases-real-examples)。
 
-  * [看看一人公司如何借助 AI 角色，开始像完整团队一样运作](/blog/how-one-person-businesses-work-like-a-team-with-ai)。
+  * [看看一人公司如何借助 AI 角色，开始像完整团队一样运作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)。
 
-  * [了解 AI 自动化工作在真实市场上到底怎么定价](/blog/ai-automation-agency-pricing)。
+  * [了解 AI 自动化工作在真实市场上到底怎么定价](/zh/blog/ai-automation-agency-pricing)。
 
-  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差异](/blog/lindy-vs-gumloop)。
+  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差异](/zh/blog/lindy-vs-gumloop)。
 
