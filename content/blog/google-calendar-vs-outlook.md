@@ -21,7 +21,7 @@ Here's how I think about it after running both for over a year across client pro
 
 I'm not going to say "it depends" and leave it there.
 
-If your clients and collaborators live in Google Workspace — Gmail, Google Meet, Docs — ​[Google Calendar](<https://calendar.google.com/calendar/u/0/r?pli=1>)​ is the path of least resistance​. Events auto-populate from Gmail, meeting links generate with one click, and sharing a calendar with someone takes about ten seconds.
+If your clients and collaborators live in Google Workspace — Gmail, Google Meet, Docs — ​[Google Calendar](https://calendar.google.com/calendar/u/0/r?pli=1)​ is the path of least resistance​. Events auto-populate from Gmail, meeting links generate with one click, and sharing a calendar with someone takes about ten seconds.
 
 If most of your work runs through Microsoft 365 — Outlook mail, Teams, SharePoint — ​**Outlook Calendar is where you should be** ​. Scheduling Assistant shows everyone's availability at a glance, delegate access lets someone manage your calendar on your behalf, and the whole thing is tightly wired into Teams for calls and meeting notes.
 
@@ -33,9 +33,9 @@ But here's the reality for a lot of independent operators: ​**you don't get to
 
 When people compare ​**Google Calendar vs Microsoft Calendar** ​, they're really comparing two work ecosystems, not two calendar apps.
 
-Google Calendar is ​**cloud-native and lightweight** ​. There's no desktop app — it lives in the browser, and the mobile app is the same experience scaled down. For solo operators, that simplicity is a feature. You open it, you see your day, you add stuff. Google Tasks sits in a sidebar panel, and as of late 2025, you can time-block tasks directly onto the calendar grid. I checked — [Google's Calendar help center](<https://support.google.com/calendar/?hl=en>) confirms the task integration is available for all personal and Workspace accounts.
+Google Calendar is ​**cloud-native and lightweight** ​. There's no desktop app — it lives in the browser, and the mobile app is the same experience scaled down. For solo operators, that simplicity is a feature. You open it, you see your day, you add stuff. Google Tasks sits in a sidebar panel, and as of late 2025, you can time-block tasks directly onto the calendar grid. I checked — [Google's Calendar help center](https://support.google.com/calendar/?hl=en) confirms the task integration is available for all personal and Workspace accounts.
 
-Outlook is a ​**heavier, more structured system** ​. The new Outlook desktop app has improved a lot, but it's still built for organizations with shared mailboxes, room booking, and compliance requirements. Where it genuinely shines is email-to-calendar context: Outlook and Microsoft To Do are deeply connected, so you can [flag an email and have it appear as a task](<https://support.microsoft.com/en-us/office/create-tasks-with-to-do-in-outlook-78aa07e2-cf7e-4eda-9bd1-db1b9d8d49db>) in your calendar's My Day panel. That's actually pretty clever — it means your inbox and your schedule share a single task layer.
+Outlook is a ​**heavier, more structured system** ​. The new Outlook desktop app has improved a lot, but it's still built for organizations with shared mailboxes, room booking, and compliance requirements. Where it genuinely shines is email-to-calendar context: Outlook and Microsoft To Do are deeply connected, so you can [flag an email and have it appear as a task](https://support.microsoft.com/en-us/office/create-tasks-with-to-do-in-outlook-78aa07e2-cf7e-4eda-9bd1-db1b9d8d49db) in your calendar's My Day panel. That's actually pretty clever — it means your inbox and your schedule share a single task layer.
 
 Wait… that's interesting. Google does something similar with Gmail auto-detecting flights and reservations, but it stops short of turning emails into tasks automatically. You have to do that manually through Google Tasks. If your work is heavily email-driven — client follow-ups, proposal reviews, contractor coordination — Outlook's email-to-task pipeline is the stronger setup.
 
@@ -47,7 +47,7 @@ Let me break down the parts that actually matter for daily work.
 
 **Meetings:** Google Calendar creates Google Meet links by default. Outlook creates Teams links. Both work fine. The difference shows up when you're scheduling across ecosystems. If you send a Google Calendar invite to someone on Outlook, it usually arrives cleanly. Going the other way — Outlook invite to a Google user — also works, but I've seen occasional hiccups with recurring events not updating properly. I haven't hit this in a while, so it may have improved — worth testing with your specific setup.
 
-**Sharing:** Google Calendar makes it easy to share entire calendars with anyone who has a Google account. Permissions are straightforward: view-only, edit, or full manage. Outlook offers more structured sharing within Microsoft 365 organizations — [delegate access](<https://learn.microsoft.com/en-us/graph/outlook-share-or-delegate-calendar>) lets someone literally send meeting invites on your behalf. For a consultant managing multiple client relationships, that delegation feature is genuinely useful. Google Calendar doesn't have true delegate roles.
+**Sharing:** Google Calendar makes it easy to share entire calendars with anyone who has a Google account. Permissions are straightforward: view-only, edit, or full manage. Outlook offers more structured sharing within Microsoft 365 organizations — [delegate access](https://learn.microsoft.com/en-us/graph/outlook-share-or-delegate-calendar) lets someone literally send meeting invites on your behalf. For a consultant managing multiple client relationships, that delegation feature is genuinely useful. Google Calendar doesn't have true delegate roles.
 
 ![3.PNG](/blog/images/google-calendar-vs-outlook/1780019862192-ac9f8050-de60-4833-be07-cec46bf8862f.webp)
 
@@ -63,7 +63,7 @@ Here's what actually works: you can subscribe to a Google Calendar inside Outloo
 
 For two-way sync — where changes in either calendar update the other — you need a third-party tool. I've tried a couple but haven't settled on one I'd fully recommend yet. They work, but they add another subscription, another set of permissions, and another thing that can break when an API changes. I'm one data point — your experience might be different.
 
-**How to link Google Calendar to Outlook** natively: go to Google Calendar settings, find "Secret address in iCal format" under your calendar's integration settings, copy that URL, then paste it into Outlook's "Subscribe from web" option. That gets you a [read-only subscription in Outlook](<https://support.microsoft.com/en-us/office/add-a-calendar-in-outlook-com-or-outlook-on-the-web-6641b635-2797-42ce-a500-597eaef0fd19>). Reverse works too — export your Outlook calendar's ICS URL and subscribe in Google Calendar.
+**How to link Google Calendar to Outlook** natively: go to Google Calendar settings, find "Secret address in iCal format" under your calendar's integration settings, copy that URL, then paste it into Outlook's "Subscribe from web" option. That gets you a [read-only subscription in Outlook](https://support.microsoft.com/en-us/office/add-a-calendar-in-outlook-com-or-outlook-on-the-web-6641b635-2797-42ce-a500-597eaef0fd19). Reverse works too — export your Outlook calendar's ICS URL and subscribe in Google Calendar.
 
 One thing I'd flag: imported calendars in either platform don't integrate with scheduling tools like "Find a time" in Outlook or "Suggested times" in Google. So even if you can see events from the other calendar, your colleagues won't see those blocks when trying to find an open slot with you. That's a real gap if you're working across both ecosystems daily.
 
@@ -83,15 +83,15 @@ That's my honest take. Pick the calendar that matches where your work already li
 
 ## Previous Posts:
 
-• Still switching between Gmail, Docs, calendars, and task apps all day? See why many solo operators are rethinking tool-hopping in **[Stop Context Switching: Why Workspace Agents Matter](</blog/stop-context-switching-workspace-agent>)**
+• Still switching between Gmail, Docs, calendars, and task apps all day? See why many solo operators are rethinking tool-hopping in **[Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent)**
 
-• If your calendar keeps surfacing work but you're still manually doing every next step, here's how **[Workspace Agents for Solo Operators](</blog/workspace-agents-for-solo-operators>)** approach execution differently.
+• If your calendar keeps surfacing work but you're still manually doing every next step, here's how **[Workspace Agents for Solo Operators](/blog/workspace-agents-for-solo-operators)** approach execution differently.
 
-• Calendars manage schedules, but workflows move work. Read **[AI Workflow for Solo Founders: Why Demos and Daily Work Look Different](</blog/ai-workflow-for-solo-founders>)** for a practical look at where work systems usually break.
+• Calendars manage schedules, but workflows move work. Read **[AI Workflow for Solo Founders: Why Demos and Daily Work Look Different](/blog/ai-workflow-for-solo-founders)** for a practical look at where work systems usually break.
 
-• Not sure whether you need an assistant, an automation, or an agent? **[Workspace Agents vs Chat Assistants](</blog/workspace-agents-vs-chat-assistants>)** breaks down the differences in real-world work setups.
+• Not sure whether you need an assistant, an automation, or an agent? **[Workspace Agents vs Chat Assistants](/blog/workspace-agents-vs-chat-assistants)** breaks down the differences in real-world work setups.
 
-• If recurring prep work, follow-ups, and admin loops keep eating your week, **[How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>)** explores how repetitive workflows can be handled differently.
+• If recurring prep work, follow-ups, and admin loops keep eating your week, **[How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work)** explores how repetitive workflows can be handled differently.
 
 ![5.png](/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.webp)
 

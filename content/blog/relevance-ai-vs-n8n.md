@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Long time no see. I'm Nova. I was sitting there with two browser tabs open — one for ​[Relevance AI](<https://relevanceai.com/>)​, one for **[n8n](<https://n8n.io/?ps_partner_key=ZWFiZDIyYjkwZTFl&ps_xid=a2QKHm2KuZ1wkV&gsxid=a2QKHm2KuZ1wkV&gspk=ZWFiZDIyYjkwZTFl&gad_source=1>)** — trying to figure out why everyone keeps mentioning both of them in the same breath. They solve automation problems, sure. But the more I dug in, the more I realized they're actually solving _very different_ problems for very different people. That confused me at first, honestly.
+Long time no see. I'm Nova. I was sitting there with two browser tabs open — one for ​[Relevance AI](https://relevanceai.com/)​, one for **[n8n](https://n8n.io/?ps_partner_key=ZWFiZDIyYjkwZTFl&ps_xid=a2QKHm2KuZ1wkV&gsxid=a2QKHm2KuZ1wkV&gspk=ZWFiZDIyYjkwZTFl&gad_source=1)** — trying to figure out why everyone keeps mentioning both of them in the same breath. They solve automation problems, sure. But the more I dug in, the more I realized they're actually solving _very different_ problems for very different people. That confused me at first, honestly.
 
 So I spent a few weeks testing both, reading real user threads, and trying to understand when you'd actually pick one over the other. This is what I found.
 
@@ -35,7 +35,7 @@ What I found interesting: **you can go from idea to deployed agent surprisingly 
 
 It's also SOC 2 Type II certified and GDPR compliant, which matters if you're handling sensitive business data.
 
-The pricing model is usage-based — split into **Actions** (what your agents actually do) and **Vendor Credits** (AI model costs). [According to Relevance AI's official documentation](<https://relevanceai.com/docs/admin/subscriptions/plans>), the free tier gives you 200 Actions per month, while paid plans start at around $19/month for solo users. One thing worth knowing: costs can escalate quickly if agents make multiple LLM calls per task. It's flexible, but not always predictable.
+The pricing model is usage-based — split into **Actions** (what your agents actually do) and **Vendor Credits** (AI model costs). [According to Relevance AI's official documentation](https://relevanceai.com/docs/admin/subscriptions/plans), the free tier gives you 200 Actions per month, while paid plans start at around $19/month for solo users. One thing worth knowing: costs can escalate quickly if agents make multiple LLM calls per task. It's flexible, but not always predictable.
 
 **Best for:** Sales and marketing ops teams, support teams, non-technical operators who want agents running without writing code.
 
@@ -45,7 +45,7 @@ The pricing model is usage-based — split into **Actions** (what your agents ac
 
 ### Developer-Friendly Workflow Automation with Full Control
 
-n8n is open-source, and that shapes everything about it. You build workflows visually using a node-based editor — every trigger, branch, transformation, and action is visible and configurable. [n8n's official pricing page](<https://n8n.io/pricing/>) shows cloud plans starting at $20/month for 2,500 workflow executions, plus a completely free Community Edition you can self-host with unlimited executions.
+n8n is open-source, and that shapes everything about it. You build workflows visually using a node-based editor — every trigger, branch, transformation, and action is visible and configurable. [n8n's official pricing page](https://n8n.io/pricing/) shows cloud plans starting at $20/month for 2,500 workflow executions, plus a completely free Community Edition you can self-host with unlimited executions.
 
 That self-hosting option is a big deal for teams with data control requirements. You run it on your own infrastructure — whether that's a VPS, Docker setup, or your own servers. Full ownership, no vendor lock-in.
 
@@ -71,7 +71,7 @@ If your team needs AI agents running _now_ and doesn't have developers to spare,
 
 The template library is genuinely helpful. ​**You're not starting from scratch** ​. And the multi-agent orchestration — where one agent delegates to another — works well for more complex workflows once you've got the basics down.
 
-That said, I'd go in with realistic expectations around cost. The [Relevance AI pricing page](<https://relevanceai.com/pricing>) is worth reading carefully before you commit. If your agents run continuously or make lots of LLM calls, you'll want to model your usage before upgrading tiers.
+That said, I'd go in with realistic expectations around cost. The [Relevance AI pricing page](https://relevanceai.com/pricing) is worth reading carefully before you commit. If your agents run continuously or make lots of LLM calls, you'll want to model your usage before upgrading tiers.
 
 **Pick Relevance AI if:** You want agents deployed fast, you're non-technical, and your main workflows are sales, support, or research-focused.
 
@@ -81,7 +81,7 @@ That said, I'd go in with realistic expectations around cost. The [Relevance AI 
 
 n8n rewards patience. The setup takes longer, but once you're running, it's remarkably powerful. You can build automations that touch 10+ apps in a single workflow, apply conditional logic, handle errors gracefully, and customize literally everything.
 
-The open-source community is active — [n8n's community forum](<https://community.n8n.io/>) has over 45,000 members sharing templates, debugging tips, and custom nodes. That's genuinely useful when you hit a wall at 11pm.
+The open-source community is active — [n8n's community forum](https://community.n8n.io/) has over 45,000 members sharing templates, debugging tips, and custom nodes. That's genuinely useful when you hit a wall at 11pm.
 
 For teams with strict data requirements, self-hosting is the obvious choice. You decide where your data lives. No third-party cloud required.
 
@@ -99,7 +99,7 @@ Relevance AI can feel constrained when you need complex branching logic or multi
 
 n8n, on the other hand, isn't built for people who want to describe a task and have an AI figure it out. The learning curve is real. If your team isn't comfortable with nodes, JSON, and occasionally reading error logs, it will slow you down more than it helps.
 
-If you want something in between — AI-first but with workflow automation built in — tools like [Lindy AI](<https://www.lindy.ai/>) are worth a look. The Lindy vs n8n comparison (Vol 20) shows Lindy handling both agent reasoning and workflow execution in one place, which bridges the gap for teams that find n8n too technical and Relevance AI too limiting.
+If you want something in between — AI-first but with workflow automation built in — tools like [Lindy AI](https://www.lindy.ai/) are worth a look. The Lindy vs n8n comparison (Vol 20) shows Lindy handling both agent reasoning and workflow execution in one place, which bridges the gap for teams that find n8n too technical and Relevance AI too limiting.
 
 Still learning what you need? That's fine. Try the free tiers of both — Relevance AI gives you 200 Actions to start, and n8n's community edition is free to self-host. Small experiments tell you a lot.
 
@@ -111,13 +111,13 @@ _Back to building things._
 
 ## Previous Posts:
 
-  * **[Understand the real difference between AI agents and traditional automation workflows](</blog/workflow-builder-vs-ai-workspace>)**
+  * **[Understand the real difference between AI agents and traditional automation workflows](/blog/workflow-builder-vs-ai-workspace)**
 
-  * **[Learn how to build an AI agent step by step before choosing the right tool](</blog/how-to-build-an-ai-agent>)**
+  * **[Learn how to build an AI agent step by step before choosing the right tool](/blog/how-to-build-an-ai-agent)**
 
-  * **[Explore real-world AI agent use cases to see where tools like Relevance AI actually shine](</blog/ai-agent-use-cases-real-examples>)**
+  * **[Explore real-world AI agent use cases to see where tools like Relevance AI actually shine](/blog/ai-agent-use-cases-real-examples)**
 
-  * **[Compare AI agents vs AI assistants to better understand how these tools actually work](</blog/ai-agent-vs-ai-assistant>)**
+  * **[Compare AI agents vs AI assistants to better understand how these tools actually work](/blog/ai-agent-vs-ai-assistant)**
 
-  * **[See how solo founders use AI tools to automate workflows without a full dev team](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
+  * **[See how solo founders use AI tools to automate workflows without a full dev team](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
 

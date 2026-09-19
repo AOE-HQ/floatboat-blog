@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Hi, I'm Nova. I spent the last few weeks switching between three different categories of tools that all sound the same in marketing copy but do very different things in practice. Browser agent extensions. [AI-native browsers.](<https://en.wikipedia.org/wiki/AI_browser>) Desktop AI workspaces. Every product page uses the words "AI" and "browser" and "agent" somewhere, and after a while it all blurs together. So I sat down and tried to figure out where the lines actually are — because if you're running things solo, picking the wrong category wastes the thing you can't get back: setup time.
+Hi, I'm Nova. I spent the last few weeks switching between three different categories of tools that all sound the same in marketing copy but do very different things in practice. Browser agent extensions. [AI-native browsers.](https://en.wikipedia.org/wiki/AI_browser) Desktop AI workspaces. Every product page uses the words "AI" and "browser" and "agent" somewhere, and after a while it all blurs together. So I sat down and tried to figure out where the lines actually are — because if you're running things solo, picking the wrong category wastes the thing you can't get back: setup time.
 
 ## Three Categories People Confuse on Purpose
 
@@ -27,7 +27,7 @@ But the **design premise** behind each category is fundamentally different — a
 
 Browser agent extensions sit on top of your existing browser — usually Chrome — as a layer that can see, click, and navigate web pages on your behalf. You keep your browser. You keep your logged-in sessions. The AI just… watches alongside you and takes actions when you ask.
 
-Two examples in mid-2026: **Codex for Chrome** (OpenAI's coding agent extension, [launched May 2026](<https://developers.openai.com/codex/app/chrome-extension>)) and **Claude for Chrome** (Anthropic's browser agent, [available in beta on all paid plans](<https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome>)).
+Two examples in mid-2026: **Codex for Chrome** (OpenAI's coding agent extension, [launched May 2026](https://developers.openai.com/codex/app/chrome-extension)) and **Claude for Chrome** (Anthropic's browser agent, [available in beta on all paid plans](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome)).
 
 Both work as Chrome extensions that inherit your signed-in browser state. Codex organizes tasks in tab groups and runs in the background without hijacking your active tab. Claude for Chrome operates from a side panel and can manage multiple tabs simultaneously. Both ask for permission before interacting with new sites.
 
@@ -43,7 +43,7 @@ If most of your day happens inside web apps you're already logged into, this cat
 
 The biggest issue is ​**scope** ​. An extension can only do what the browser can do. It can't touch your local files, open a desktop app, or stitch a workflow that starts in a spreadsheet on your hard drive and ends in a Google Doc. It's browser-in, browser-out.
 
-Security is genuinely tricky here. Researchers have already documented [prompt injection vulnerabilities in browser agent extensions](<https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/>) — malicious page content can potentially redirect what the agent does. Both OpenAI and Anthropic have added confirmation steps, but the attack surface is real and evolving.
+Security is genuinely tricky here. Researchers have already documented [prompt injection vulnerabilities in browser agent extensions](https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/) — malicious page content can potentially redirect what the agent does. Both OpenAI and Anthropic have added confirmation steps, but the attack surface is real and evolving.
 
 Also worth knowing: **Codex for Chrome is not yet available in the EU or UK** as of May 2026. OpenAI says it's coming, no date given. If you're in those regions, you're limited to the in-app browser for now.
 
@@ -55,7 +55,7 @@ And both extensions eat through your subscription usage faster than regular chat
 
 These are standalone browsers — you download and install them — where AI isn't bolted on as an extension but woven into the browsing experience from the start. The AI understands which tab you're on, remembers what you researched yesterday, and can execute multi-step tasks across pages.
 
-Three in the running right now: **Atlas** (OpenAI's ChatGPT-powered browser, launched on macOS in late 2025), **Comet** (Perplexity's AI browser, [free on all platforms as of 2026](<https://www.perplexity.ai/comet>)), and **Dia** (from The Browser Company, the team behind Arc, now owned by Atlassian).
+Three in the running right now: **Atlas** (OpenAI's ChatGPT-powered browser, launched on macOS in late 2025), **Comet** (Perplexity's AI browser, [free on all platforms as of 2026](https://www.perplexity.ai/comet)), and **Dia** (from The Browser Company, the team behind Arc, now owned by Atlassian).
 
 All three are built on Chromium, so Chrome extensions mostly carry over. But the AI layer runs deeper than any extension can reach — it sits in the navigation bar, has access to cross-tab context, and maintains persistent memory between sessions.
 
@@ -71,7 +71,7 @@ Comet's in-page assistant is genuinely useful for content research. Dia's "Skill
 
 The moment you need to work ​**outside the browser** ​, these tools hit a wall. Local files, desktop apps, offline workflows — none of that is in scope. You're still switching to another tool for anything that isn't a web page.
 
-Platform coverage is uneven. Atlas is macOS-only with no announced Windows date (OpenAI has said it'll merge into a [combined super-app with ChatGPT and Codex](<https://www.engadget.com/2167480/openai-debuts-a-codex-plugin-for-chrome/>), but timelines are vague). Dia is also macOS-only. Comet is the most broadly available — Mac, Windows, iOS, Android — but its agentic automation still feels rough on anything complex.
+Platform coverage is uneven. Atlas is macOS-only with no announced Windows date (OpenAI has said it'll merge into a [combined super-app with ChatGPT and Codex](https://www.engadget.com/2167480/openai-debuts-a-codex-plugin-for-chrome/), but timelines are vague). Dia is also macOS-only. Comet is the most broadly available — Mac, Windows, iOS, Android — but its agentic automation still feels rough on anything complex.
 
 And switching your entire browser is a big ask. Your muscle memory, saved passwords, extension setup — that transition cost isn't zero. I tried Comet for about a week and kept reflexively opening Chrome.
 
@@ -133,11 +133,11 @@ The question isn't "which one replaces the others." It's "which combination cove
 
 **Context handoff between devices.** You can't start something on your desktop workspace and pick it up on your phone's AI browser. The context lives in one place.
 
-**Security at the level solo operators need.** Every category has documented prompt injection risks — researchers have shown how [malicious page content can hijack browser AI agents](<https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/>). For a solo operator handling client data, that's not theoretical.
+**Security at the level solo operators need.** Every category has documented prompt injection risks — researchers have shown how [malicious page content can hijack browser AI agents](https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/). For a solo operator handling client data, that's not theoretical.
 
 **Reliable agentic execution on complex tasks.** All three categories promise multi-step automation. In practice, reliability drops off fast past three or four steps. I've had better results using these tools as **planners** rather than autopilots.
 
-**Pricing transparency for heavy use.** Browser agent work eats through usage limits faster than regular AI chat, and most [pricing pages](<https://www.anthropic.com/pricing>) don't make that clear upfront.
+**Pricing transparency for heavy use.** Browser agent work eats through usage limits faster than regular AI chat, and most [pricing pages](https://www.anthropic.com/pricing) don't make that clear upfront.
 
 ![float6.png](/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562080116-08fedd13-1d7a-40c3-99a9-242273ee23ed.webp)
 
@@ -147,13 +147,13 @@ I'm still experimenting. That part never really ends.
 
 ## Previous Posts:
 
-  * Why your AI workflow feels fragmented: [the real bottleneck isn’t the model — it’s the way tools are stitched together](</blog/workspace-agents-for-solo-operators>)
+  * Why your AI workflow feels fragmented: [the real bottleneck isn’t the model — it’s the way tools are stitched together](/blog/workspace-agents-for-solo-operators)
 
-  * Browser agents vs AI workspaces:[ understanding the difference between predefined workflows and context-aware agents](</blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace>)
+  * Browser agents vs AI workspaces:[ understanding the difference between predefined workflows and context-aware agents](/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace)
 
-  * [How to stop context switching when your work lives across tabs, files, and AI tools](</blog/browser-ai-agent-what-it-can-do>)
+  * [How to stop context switching when your work lives across tabs, files, and AI tools](/blog/browser-ai-agent-what-it-can-do)
 
-  * The new AI model just dropped — should you switch? [A practical take on why most solo operators overestimate the gains](</blog/ai-workspace-agents>)
+  * The new AI model just dropped — should you switch? [A practical take on why most solo operators overestimate the gains](/blog/ai-workspace-agents)
 
-  * [Claude Code on Linux and the shift from browser-based AI to terminal-native workflows](</blog/claude-managed-agents-one-person-company>)
+  * [Claude Code on Linux and the shift from browser-based AI to terminal-native workflows](/blog/claude-managed-agents-one-person-company)
 

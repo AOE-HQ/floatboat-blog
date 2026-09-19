@@ -31,7 +31,7 @@ If you're building something you'll check on regularly, iterate on, and adjust �
 
 I've used no-code builders mostly for three things: content research pipelines, lead routing, and light customer communication drafts. Here's where they genuinely earned their place.
 
-**Workflows with predictable inputs.** When your agent always gets the same type of data — a form submission, a new row in a spreadsheet, a webhook from the same source — no-code handles it well. The visual canvas in tools like [Make's AI agent builder](<https://www.make.com/en/ai-agents>) makes it easy to see exactly where data flows, which helps when something breaks.
+**Workflows with predictable inputs.** When your agent always gets the same type of data — a form submission, a new row in a spreadsheet, a webhook from the same source — no-code handles it well. The visual canvas in tools like [Make's AI agent builder](https://www.make.com/en/ai-agents) makes it easy to see exactly where data flows, which helps when something breaks.
 
 **Connecting apps you're already using.** This is where Zapier specifically earns its price. 8,000+ integrations means you rarely hit a "this app isn't supported" wall. If your whole stack is in SaaS tools — Gmail, Notion, Airtable, Slack — no-code can wire them together without you needing to know what an API call looks like.
 
@@ -47,7 +47,7 @@ This comparison is more useful than "which platform wins," because the tradeoffs
 
 **No-code (Zapier, Make, Lindy)**
 
-Setup effort: low. You can have a first working version in under an hour for most use cases. Make's visual scenario builder shows data flowing between modules in a way that's genuinely intuitive — I spent maybe twenty minutes the first time before things were connecting. According to [Zapier's official agents documentation](<https://zapier.com/agents>), agents can be configured through plain-language instructions without touching any code.
+Setup effort: low. You can have a first working version in under an hour for most use cases. Make's visual scenario builder shows data flowing between modules in a way that's genuinely intuitive — I spent maybe twenty minutes the first time before things were connecting. According to [Zapier's official agents documentation](https://zapier.com/agents), agents can be configured through plain-language instructions without touching any code.
 
 Flexibility ceiling: real. Complex branching logic, persistent memory across sessions without workarounds, custom error handling — these are where no-code starts to feel like you're fighting the tool rather than building with it. Zapier's task-based billing also becomes a consideration at scale: each action in a workflow counts as a separate task, so a 10-step agent that runs 500 times a month burns 5,000 tasks.
 
@@ -59,9 +59,9 @@ Reliability: generally solid on managed infrastructure. Zapier reports 99.9%+ up
 
 **Low-code (n8n, Dify, Flowise)**
 
-Setup effort: moderate. Expect to spend a few hours the first time, especially if you're working with HTTP nodes or custom data shapes. The [n8n AI agent documentation](<https://docs.n8n.io/advanced-ai/intro-tutorial/>) is well-maintained and I've found it accurate.
+Setup effort: moderate. Expect to spend a few hours the first time, especially if you're working with HTTP nodes or custom data shapes. The [n8n AI agent documentation](https://docs.n8n.io/advanced-ai/intro-tutorial/) is well-maintained and I've found it accurate.
 
-Flexibility ceiling: significantly higher. You can drop into code when you need to. n8n 2.0 (January 2026) added native LangChain integration with 70+ AI nodes — persistent memory, RAG pipelines, tool-calling agents. This is real agent architecture, not just AI API calls dressed up as agents. Make's own [2026 predictions post](<https://www.make.com/en/blog/2025-reflections-2026-predictions>) notes the same direction: AI capability rising while setup complexity fades — which is roughly what this tier delivers.
+Flexibility ceiling: significantly higher. You can drop into code when you need to. n8n 2.0 (January 2026) added native LangChain integration with 70+ AI nodes — persistent memory, RAG pipelines, tool-calling agents. This is real agent architecture, not just AI API calls dressed up as agents. Make's own [2026 predictions post](https://www.make.com/en/blog/2025-reflections-2026-predictions) notes the same direction: AI capability rising while setup complexity fades — which is roughly what this tier delivers.
 
 Maintenance: better visibility. n8n has execution logs built in. When something breaks, I can see exactly which step failed and why. That changes the maintenance experience substantially.
 
@@ -121,13 +121,13 @@ If the answer isn't clear yet, build the thing. You'll usually know within two w
 
 ## Previous Posts:
 
-  * Still figuring out whether you even need an “AI agent” yet? Start here: [What Is an AI Agent Platform? A Decision Framework for Solo Operators](</blog/ai-agent-solo-operators>)
+  * Still figuring out whether you even need an “AI agent” yet? Start here: [What Is an AI Agent Platform? A Decision Framework for Solo Operators](/blog/ai-agent-solo-operators)
 
-  * Want to understand the difference between workflows, automations, and true agents? This breaks down where the line actually is: [AI Workflow vs Agent Workflow: Where the Line Actually Is](</blog/ai-agent-workflow-vibe-coding>)
+  * Want to understand the difference between workflows, automations, and true agents? This breaks down where the line actually is: [AI Workflow vs Agent Workflow: Where the Line Actually Is](/blog/ai-agent-workflow-vibe-coding)
 
-  * Comparing Zapier, Make, n8n, or Flowise? This guide explains what actually matters when choosing an AI agent builder: [Best AI Agent Builder? What Actually Matters for Solo Operators](</blog/workspace-agents-vs-workflow-builders>)
+  * Comparing Zapier, Make, n8n, or Flowise? This guide explains what actually matters when choosing an AI agent builder: [Best AI Agent Builder? What Actually Matters for Solo Operators](/blog/workspace-agents-vs-workflow-builders)
 
-  * If you're deciding between workspace-style AI tools and dedicated agents, this is the comparison worth reading first: [Workspace Agents vs Chat Assistants: The Difference That Actually Matters](</blog/workspace-agents-vs-chat-assistants>)
+  * If you're deciding between workspace-style AI tools and dedicated agents, this is the comparison worth reading first: [Workspace Agents vs Chat Assistants: The Difference That Actually Matters](/blog/workspace-agents-vs-chat-assistants)
 
-  * Thinking beyond “getting it working” and toward long-term maintainability? This piece on workflow builders vs workspace agents connects directly to that question: [Workspace Agents vs Workflow Builders: Which One Fits Real Solo Work?](</blog/workspace-agents-vs-workflow-builders>)
+  * Thinking beyond “getting it working” and toward long-term maintainability? This piece on workflow builders vs workspace agents connects directly to that question: [Workspace Agents vs Workflow Builders: Which One Fits Real Solo Work?](/blog/workspace-agents-vs-workflow-builders)
 

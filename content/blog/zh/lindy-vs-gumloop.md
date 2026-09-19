@@ -41,19 +41,19 @@ draft: false
 
 ### Lindy——聚焦收件箱、会议与日历
 
-**[Lindy](<https://www.lindy.ai/>)**围绕工作的沟通层构建：邮件、日历与会议。你用大白话描述需求，Lindy 就围绕它创建一个 Agent。没有画布、没有节点连线——只是一段 prompt 加一组已连接的工具。
+**[Lindy](https://www.lindy.ai/)**围绕工作的沟通层构建：邮件、日历与会议。你用大白话描述需求，Lindy 就围绕它创建一个 Agent。没有画布、没有节点连线——只是一段 prompt 加一组已连接的工具。
 
 **最让我眼前一亮**的是 Lindy 处理多步任务的方式。它的 Agent 能在流程中途做决策，并把工作交接给其他 Agent——于是流程会依据实际发生的情况自适应，而不是死板地照预先定义的脚本走。在测试里，我不到 10 分钟就搭好了一个邮件分拣 Agent。这确实比我预想的快。
 
-整体上是一种更「有引导」的体验。Lindy 的模板重度偏向收件箱、会议与日历场景，如果你的痛点正好在这些地方，上手会很快。如果你好奇「在流程中途做决策的 Agent」底层到底意味着什么，[Anthropic 关于用 Claude 构建的文档](<https://docs.anthropic.com/en/docs/build-with-claude/overview>) 提供了一个有用的入门读本，讲 LLM 型 Agent 如何推理与交接任务——不针对 Lindy，但有助于建立概念。
+整体上是一种更「有引导」的体验。Lindy 的模板重度偏向收件箱、会议与日历场景，如果你的痛点正好在这些地方，上手会很快。如果你好奇「在流程中途做决策的 Agent」底层到底意味着什么，[Anthropic 关于用 Claude 构建的文档](https://docs.anthropic.com/en/docs/build-with-claude/overview) 提供了一个有用的入门读本，讲 LLM 型 Agent 如何推理与交接任务——不针对 Lindy，但有助于建立概念。
 
 ![2.png](/blog/images/lindy-vs-gumloop/1773918570051-c76b80d3-eb1b-4abb-94c9-cc46fb13ad68.webp)
 
 ### Gumloop——工作流搭建器，聚焦可视化画布
 
-**[Gumloop](<https://www.gumloop.com/>)**走的是另一条路。它是一个无代码 AI 自动化平台，用可视化、基于节点的编辑器构建自定义工作流——在画布上连接触发器、逻辑步骤、集成与 AI 动作。
+**[Gumloop](https://www.gumloop.com/)**走的是另一条路。它是一个无代码 AI 自动化平台，用可视化、基于节点的编辑器构建自定义工作流——在画布上连接触发器、逻辑步骤、集成与 AI 动作。
 
-关键要理解的一点：Gumloop 不只是固定顺序的流水线工具。它支持 Agent 节点，把智能的、自适应的决策能力直接带进你设计好的结构化自动化流水线——于是你可以把推理**_嵌入_**自己设计的某条工作流内部。可视化画布让你看到整个流程、随时编辑任何部分并实时测试。想更近距离看它在实践中如何运作，[Gumloop 官方关于 Agent 节点的文档](<https://docs.gumloop.com/core-concepts/agent_node>) 把细节讲得很清楚。
+关键要理解的一点：Gumloop 不只是固定顺序的流水线工具。它支持 Agent 节点，把智能的、自适应的决策能力直接带进你设计好的结构化自动化流水线——于是你可以把推理**_嵌入_**自己设计的某条工作流内部。可视化画布让你看到整个流程、随时编辑任何部分并实时测试。想更近距离看它在实践中如何运作，[Gumloop 官方关于 Agent 节点的文档](https://docs.gumloop.com/core-concepts/agent_node) 把细节讲得很清楚。
 
 话虽如此，Gumloop 不会引导你走向某个成果，也不会建议你下一步该建什么。你从一块空白画布开始，平台期待你自己想清楚逻辑、边界情况与执行成本。在我的测试里，让一条流水线干净跑通，我花了将近 30–40 分钟。不痛苦——但它向前期要求更多。
 
@@ -93,7 +93,7 @@ draft: false
 
 **你需要网页爬取或浏览器自动化。**它的 Chrome 扩展可以录制浏览器动作、抓取网页数据、自动化基于网页的任务，而不需要 API。对任何与无结构网页数据打交道的人来说，这是真正的差异化能力。
 
-**你想看清并精确控制 AI 到底做了什么。**因为你能在画布上看到整个流程、随时实时编辑任何部分，Gumloop 回报的是那种喜欢理解逻辑并不断打磨它的人。如果你对工作流思维还比较陌生，[n8n 关于工作流自动化模式的文档](<https://docs.n8n.io/workflows/components/>) 是建立这套思维模型的不错的免费资源——相关概念可以顺利迁移到 Gumloop 的画布上。
+**你想看清并精确控制 AI 到底做了什么。**因为你能在画布上看到整个流程、随时实时编辑任何部分，Gumloop 回报的是那种喜欢理解逻辑并不断打磨它的人。如果你对工作流思维还比较陌生，[n8n 关于工作流自动化模式的文档](https://docs.n8n.io/workflows/components/) 是建立这套思维模型的不错的免费资源——相关概念可以顺利迁移到 Gumloop 的画布上。
 
 **你在跑 CRM 或销售数据工作流。** Gumloop 连接 Salesforce、HubSpot、Apollo 等工具。实操上，这意味着你能构建拉取账户数据、跑 AI 分析、再回推结构化输出的流水线——不过它到底能提速多少，取决于你把流程设计得多好。
 
@@ -107,7 +107,7 @@ draft: false
 
 **Gumloop 的学习曲线是真实的。**可视化画布很强大，但要掌握它比那些更简单的对话式工具花的时间更多——而且即便它是无代码的，理解编程逻辑仍能帮你更有效地使用它。如果你赶时间，那块空白画布可能更像负担，而不是功能。
 
-**两者都不是面向客户的复杂 AI 的完整开箱即用方案。**如果你在构建类似完整客服自动化系统的东西，你很可能需要把它们与其他工具结合，或做大量的自定义配置。[MIT Technology Review 的 AI 专题](<https://www.technologyreview.com/topic/artificial-intelligence/>) 值得收藏——它追踪整个 AI 工具版图的走向，如果你在构建打算长期使用的流程，这一点很要紧。
+**两者都不是面向客户的复杂 AI 的完整开箱即用方案。**如果你在构建类似完整客服自动化系统的东西，你很可能需要把它们与其他工具结合，或做大量的自定义配置。[MIT Technology Review 的 AI 专题](https://www.technologyreview.com/topic/artificial-intelligence/) 值得收藏——它追踪整个 AI 工具版图的走向，如果你在构建打算长期使用的流程，这一点很要紧。
 
 ## 如何按你的真实工作流做决定
 
@@ -139,9 +139,9 @@ draft: false
 
 ## 延伸阅读
 
-  * **[研究、内容与运营中的真实世界 AI Agent 用例](</blog/ai-agent-use-cases-real-examples>)**
+  * **[研究、内容与运营中的真实世界 AI Agent 用例](/blog/ai-agent-use-cases-real-examples)**
 
-  * **[一人企业如何用 AI 角色像整支团队一样开始运转](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
+  * **[一人企业如何用 AI 角色像整支团队一样开始运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
 
-  * **[AI 自动化工作真实市场里到底怎么定价](</blog/ai-automation-agency-pricing>)**
+  * **[AI 自动化工作真实市场里到底怎么定价](/blog/ai-automation-agency-pricing)**
 

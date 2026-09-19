@@ -21,7 +21,7 @@ draft: false
 
 先把这点说清楚，因为我在这上面困惑的时间远超应有。
 
-聊天机器人回答问题；**[AI Agent](<https://www.ibm.com/think/topics/ai-agents>) 采取行动**。它能规划多步任务、使用外部工具、跨步骤记住上下文，并无需你每一步都去提示就能做决策。这个差别听起来很微妙，直到你真正动手构建一个。
+聊天机器人回答问题；**[AI Agent](https://www.ibm.com/think/topics/ai-agents) 采取行动**。它能规划多步任务、使用外部工具、跨步骤记住上下文，并无需你每一步都去提示就能做决策。这个差别听起来很微妙，直到你真正动手构建一个。
 
 ![2.PNG](/blog/images/how-to-build-an-ai-agent/1774419249726-02da6b63-c1f3-4c40-b9b9-2896277d7e0d.webp)
 
@@ -49,9 +49,9 @@ draft: false
 
 这条路意味着写 Python（多半如此）、选一个框架、然后自己把所有东西接起来。截至 2026 年初真正在生产环境使用的框架有这些：
 
-**LangGraph**是目前严肃构建中使用最广的。[LangGraph](<https://github.com/langchain-ai/langgraph>) 在企业采用上领先，月下载量 3450 万，约 400 家公司用 LangGraph Platform 在生产环境部署 Agent。它把你的 Agent 建模为一张步骤图——听起来很技术宅，但这意味着你能真正**_看到_** Agent 在做什么，并正确地调试它。
+**LangGraph**是目前严肃构建中使用最广的。[LangGraph](https://github.com/langchain-ai/langgraph) 在企业采用上领先，月下载量 3450 万，约 400 家公司用 LangGraph Platform 在生产环境部署 Agent。它把你的 Agent 建模为一张步骤图——听起来很技术宅，但这意味着你能真正**_看到_** Agent 在做什么，并正确地调试它。
 
-**CrewAI**上手更简单，如果你需要多个 Agent 协作完成一个任务，它表现很好。适合角色化设定（一个 Agent 做研究、一个写、一个审）。想了解这些框架怎么对比，可以读 [Langflow 的 2025 框架指南](<https://www.langflow.org/blog/the-complete-guide-to-choosing-an-ai-agent-framework-in-2025>)。
+**CrewAI**上手更简单，如果你需要多个 Agent 协作完成一个任务，它表现很好。适合角色化设定（一个 Agent 做研究、一个写、一个审）。想了解这些框架怎么对比，可以读 [Langflow 的 2025 框架指南](https://www.langflow.org/blog/the-complete-guide-to-choosing-an-ai-agent-framework-in-2025)。
 
 **AutoGen**（来自微软）有一些值得知道的注意事项。2025 年 10 月，微软把 AutoGen 与 Semantic Kernel 合并成统一的 Microsoft Agent Framework，AutoGen 现在处于维护模式，只收 bug 修复与安全补丁。如果你是从零起步，我会倾向 LangGraph 或 CrewAI 而不是它。
 
@@ -65,7 +65,7 @@ draft: false
 
 它们真正擅长的是：快速原型、简单的自动化链、连接常见工具（邮件、Slack、Google Drive）。
 
-它们撞墙的地方：复杂条件逻辑、自定义记忆配置，以及任何需要对 Agent 推理方式做细粒度控制的东西。这里的**[Anthropic 关于构建高效 Agent 的文档](<https://www.anthropic.com/engineering/building-effective-agents>)**值得一读——它清楚地讲明了什么时候你需要的控制力超出了无代码工具所能给的。
+它们撞墙的地方：复杂条件逻辑、自定义记忆配置，以及任何需要对 Agent 推理方式做细粒度控制的东西。这里的**[Anthropic 关于构建高效 Agent 的文档](https://www.anthropic.com/engineering/building-effective-agents)**值得一读——它清楚地讲明了什么时候你需要的控制力超出了无代码工具所能给的。
 
 ## 构建一个真正要付出什么——说实话
 
@@ -111,7 +111,7 @@ draft: false
 
   * **你或你的团队真的能维护它。**这是多数人跳过的那道诚实筛选。
 
-想核实各家框架当前的实际状态，可以查看 [LangChain 官方文档](<https://www.langchain.com/langchain>)——他们定期更新，比多数教程更可靠。
+想核实各家框架当前的实际状态，可以查看 [LangChain 官方文档](https://www.langchain.com/langchain)——他们定期更新，比多数教程更可靠。
 
 ### 什么时候它带来的麻烦超过价值
 
@@ -127,7 +127,7 @@ draft: false
 
 **带自定义指令与 Actions 的 ChatGPT** ——能处理不少简单的类 Agent 任务。对文档密集的工作流出奇地好用。局限：你被圈在 OpenAI 生态里。
 
-**n8n** ——我见过的不需要深度编程、却最灵活的工作流工具。很擅长把许多工具接成自动化链。它有学习曲线，但可以学会。[Codecademy 对 Agent 框架的拆解](<https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025>) 提供了清晰对比，如果你想并排评估这些选项。
+**n8n** ——我见过的不需要深度编程、却最灵活的工作流工具。很擅长把许多工具接成自动化链。它有学习曲线，但可以学会。[Codecademy 对 Agent 框架的拆解](https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025) 提供了清晰对比，如果你想并排评估这些选项。
 
 **Dify** ——可视化、快、适合原型。控制力较少，但真能很快让东西跑起来。
 
@@ -157,13 +157,13 @@ _我继续做实验去了。_
 
 ## 延伸阅读
 
-  * [在决定要构建什么之前，先看看真实世界的 AI Agent 用例](</blog/ai-agent-use-cases-real-examples>)
+  * [在决定要构建什么之前，先看看真实世界的 AI Agent 用例](/blog/ai-agent-use-cases-real-examples)
 
-  * [在为你的项目定范围时，理解 AI Agent 与聊天机器人的关键区别](</blog/ai-agent-vs-chatbot>)
+  * [在为你的项目定范围时，理解 AI Agent 与聊天机器人的关键区别](/blog/ai-agent-vs-chatbot)
 
-  * [看看在构建 Agent 系统时，何时用工作流搭建工具、何时用 AI 工作区](</blog/workflow-builder-vs-ai-workspace>)
+  * [看看在构建 Agent 系统时，何时用工作流搭建工具、何时用 AI 工作区](/blog/workflow-builder-vs-ai-workspace)
 
-  * [在从零构建之前，了解 AI Agent 开发服务实际要花多少钱](</blog/ai-agent-development-services>)
+  * [在从零构建之前，了解 AI Agent 开发服务实际要花多少钱](/blog/ai-agent-development-services)
 
-  * [对比 Gumloop 及同类工具，评估构建 Agent 的无代码选项](</blog/gumloop-review-2026>)
+  * [对比 Gumloop 及同类工具，评估构建 Agent 的无代码选项](/blog/gumloop-review-2026)
 

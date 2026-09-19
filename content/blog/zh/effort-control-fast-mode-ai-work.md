@@ -31,7 +31,7 @@ Claude Opus 4.8 昨天上线，带来了 Effort Control。我上手只有几个�
 
 ## Effort Control 到底是什么
 
-Effort Control 是 [claude.ai](<http://claude.ai>) 与 Cowork 里模型选择器旁新增的选择器。正如 Anthropic 在发布说明里所写，[模型选择器旁新增了一个控制项，让用户选择 Claude 为一次回答投入多少](<https://www.anthropic.com/news/claude-opus-4-8>)。投入档位越高，Claude 思考越频繁、越深入，给出的回答也越好。
+Effort Control 是 [claude.ai](http://claude.ai) 与 Cowork 里模型选择器旁新增的选择器。正如 Anthropic 在发布说明里所写，[模型选择器旁新增了一个控制项，让用户选择 Claude 为一次回答投入多少](https://www.anthropic.com/news/claude-opus-4-8)。投入档位越高，Claude 思考越频繁、越深入，给出的回答也越好。
 
 ![2.PNG](/blog/images/effort-control-fast-mode-ai-work/1780055422073-16ac34d2-7af1-4378-88a2-6ee1d6dec2ba.webp)
 
@@ -51,7 +51,7 @@ Fast Mode 是另一根不同的杠杆。它是"速度"旋钮，不是"思考"旋
 
 第一种，任何碰触"我不太敢反悔"的决策。调价、定位调整、回复一封棘手的客户邮件。这类任务里，多想一分钟能省下后面一小时的善后。
 
-第二种是审核类工作——我希望 Claude 真正仔细读眼前的东西、并且敢于反驳的地方。新模型在这点上明显更强。按 Anthropic 的发布说明，Opus 4.8 [对自己生成代码中的缺陷视而不见的概率，比 Opus 4.7 低四倍](<https://www.anthropic.com/news/claude-opus-4-8>)。这是个不限于代码的有用模式——凡是我希望模型"把担忧说出来"而不是点头附和的地方都适用。
+第二种是审核类工作——我希望 Claude 真正仔细读眼前的东西、并且敢于反驳的地方。新模型在这点上明显更强。按 Anthropic 的发布说明，Opus 4.8 [对自己生成代码中的缺陷视而不见的概率，比 Opus 4.7 低四倍](https://www.anthropic.com/news/claude-opus-4-8)。这是个不限于代码的有用模式——凡是我希望模型"把担忧说出来"而不是点头附和的地方都适用。
 
 ![3.png](/blog/images/effort-control-fast-mode-ai-work/1780055430346-e2418515-0a46-4262-b974-3fb73e5923bc.webp)
 
@@ -73,9 +73,9 @@ Fast Mode 正是在这里真正改变局面。当我在跑一连串小任务—�
 
 ![4.png](/blog/images/effort-control-fast-mode-ai-work/1780055437890-38cfe51f-ff3e-4f45-b474-3ce6843f26ca.webp)
 
-Claude Code 的文档说得好：[Fast mode 最适合"响应延迟比成本更重要"的交互式工作](<https://code.claude.com/docs/en/fast-mode>)。这跟我的体验一致。我能注意到 Fast Mode 的任务，都是来回往返的那种——不是"发一个大 prompt 然后走开去泡咖啡"的那种。
+Claude Code 的文档说得好：[Fast mode 最适合"响应延迟比成本更重要"的交互式工作](https://code.claude.com/docs/en/fast-mode)。这跟我的体验一致。我能注意到 Fast Mode 的任务，都是来回往返的那种——不是"发一个大 prompt 然后走开去泡咖啡"的那种。
 
-有一点要小心：在[对话中途切进 fast mode](<https://code.claude.com/docs/en/fast-mode>)时，你会按整个对话上下文支付完整的 fast mode 未缓存输入 token 价。所以要在一个 session 开始时就决定好，别在中间才切。
+有一点要小心：在[对话中途切进 fast mode](https://code.claude.com/docs/en/fast-mode)时，你会按整个对话上下文支付完整的 fast mode 未缓存输入 token 价。所以要在一个 session 开始时就决定好，别在中间才切。
 
 ## 隐藏成本：决策疲劳
 
@@ -95,7 +95,7 @@ Token 成本是最显而易见的成本——也是大家写文章都爱提的�
 
 **低投入 + Fast Mode**：凡是我事后愿意快速扫改的东西。草稿、归类、打标签、摘要、初版大纲。稍微偏一点的代价很低，因为我反正还会再碰它。
 
-**默认档（高投入）**：多数一次性任务——我想要一个成品的回答、又不想为它操心。回邮件、直接拿来用的分析、任何"交给聪明的助理后不必逐行核验"的活。值得一提的是，**[Opus 4.8 在所有界面上默认高投入](<https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-8>)**——如果你从没碰过这个设置，你现在就停在这一档。
+**默认档（高投入）**：多数一次性任务——我想要一个成品的回答、又不想为它操心。回邮件、直接拿来用的分析、任何"交给聪明的助理后不必逐行核验"的活。值得一提的是，**[Opus 4.8 在所有界面上默认高投入](https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-8)**——如果你从没碰过这个设置，你现在就停在这一档。
 
 ![6.png](/blog/images/effort-control-fast-mode-ai-work/1780055455950-32fe7317-9c09-4511-aac5-1cfbded53bd5.webp)
 
@@ -111,13 +111,13 @@ Token 成本是最显而易见的成本——也是大家写文章都爱提的�
 
 ## 往期文章
 
-[一个人不招人，怎么把业务做大](</blog/scale-one-person-business-without-hiring>)
+[一个人不招人，怎么把业务做大](/blog/scale-one-person-business-without-hiring)
 
-[Claude Managed Agents：对一人公司意味着什么](</blog/claude-managed-agents-one-person-company>)
+[Claude Managed Agents：对一人公司意味着什么](/blog/claude-managed-agents-one-person-company)
 
-[AI 不知道你是怎么工作的——这才是真正的问题](</blog/ai-workflow-for-solo-founders>)
+[AI 不知道你是怎么工作的——这才是真正的问题](/blog/ai-workflow-for-solo-founders)
 
-[AI 工作区 Agent 与聊天助手：差别在哪](</blog/workspace-agents-vs-chat-assistants>)
+[AI 工作区 Agent 与聊天助手：差别在哪](/blog/workspace-agents-vs-chat-assistants)
 
-[如何用工作区 Agent 戒掉上下文切换](</blog/stop-context-switching-workspace-agent>)
+[如何用工作区 Agent 戒掉上下文切换](/blog/stop-context-switching-workspace-agent)
 

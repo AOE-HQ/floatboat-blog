@@ -33,7 +33,7 @@ draft: false
 
 ### 多轮编辑，以及它为什么改变工作流
 
-这是最重要的一点转变，而多数发布报道都把它埋没了。据 [OpenAI 对 ChatGPT Images 2.0 的发布公告](<https://openai.com/index/introducing-chatgpt-images-2-0/>)，该模型支持跨轮次的上下文感知编辑。说得直白些：你生成第 1 帧，然后说「第 2 帧：同一个角色、同一家咖啡馆，现在她站起来看向门口」。模型保留所有该保留的，只改你要求的部分。
+这是最重要的一点转变，而多数发布报道都把它埋没了。据 [OpenAI 对 ChatGPT Images 2.0 的发布公告](https://openai.com/index/introducing-chatgpt-images-2-0/)，该模型支持跨轮次的上下文感知编辑。说得直白些：你生成第 1 帧，然后说「第 2 帧：同一个角色、同一家咖啡馆，现在她站起来看向门口」。模型保留所有该保留的，只改你要求的部分。
 
 旧工作流是：写一段超长 prompt、重新生成 15 次、碰运气。新工作流是：先生成定场镜头，然后一次一个编辑地领着模型走完整个序列。**迭代取代了反复重写 prompt。**对分镜来说，这就是全部要点。
 
@@ -41,9 +41,9 @@ draft: false
 
 ### 用于构图规划的推理模式
 
-Thinking 模式是第二块拼图。[The Next Web 的报道](<https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation>) 把它描述为模型在生成之前先规划、推理并校验——并指出付费档（Plus 每月 20 美元、Pro 每月 200 美元）才能解锁它，免费档只能用 Instant。对分镜来说这格外重要，因为单次 prompt 最多能返回八帧、且帧间内嵌了角色与物体连续性。我用开场序列实测过——得到 8 帧，同一个人、同一个随行杯、同一套光线贯穿整组。不算完美，但可辨认。
+Thinking 模式是第二块拼图。[The Next Web 的报道](https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation) 把它描述为模型在生成之前先规划、推理并校验——并指出付费档（Plus 每月 20 美元、Pro 每月 200 美元）才能解锁它，免费档只能用 Instant。对分镜来说这格外重要，因为单次 prompt 最多能返回八帧、且帧间内嵌了角色与物体连续性。我用开场序列实测过——得到 8 帧，同一个人、同一个随行杯、同一套光线贯穿整组。不算完美，但可辨认。
 
-[BuildFastWithAI 的开发者拆解](<https://www.buildfastwithai.com/blogs/chatgpt-images-2-0-gpt-image-2-2026>) 诚实地标出了代价：Thinking 模式每次调用增加 15–30 秒延迟。对分镜草稿来说没问题；对任何实时场景就不行。
+[BuildFastWithAI 的开发者拆解](https://www.buildfastwithai.com/blogs/chatgpt-images-2-0-gpt-image-2-2026) 诚实地标出了代价：Thinking 模式每次调用增加 15–30 秒延迟。对分镜草稿来说没问题；对任何实时场景就不行。
 
 ### 跨序列的风格一致性
 
@@ -61,7 +61,7 @@ Thinking 模式是第二块拼图。[The Next Web 的报道](<https://thenextweb
 
 ### 在 20+ 帧里维持角色一致性
 
-我的 24 帧用了一套分层方法。首先，我生成一张角色参考图——同一个人的三个角度——并保存下来。然后每帧都参照这张参考图，外加一行身份字符串（「女性，二十多岁，深色短发，奶油色宽松毛衣，左手拿海军蓝随行杯」）。[Replicate 模型文档](<https://replicate.com/openai/gpt-image-2>) 把多图参考工作流讲得很清楚——你可以传入多张参考图，并告诉模型它们之间的关系。
+我的 24 帧用了一套分层方法。首先，我生成一张角色参考图——同一个人的三个角度——并保存下来。然后每帧都参照这张参考图，外加一行身份字符串（「女性，二十多岁，深色短发，奶油色宽松毛衣，左手拿海军蓝随行杯」）。[Replicate 模型文档](https://replicate.com/openai/gpt-image-2) 把多图参考工作流讲得很清楚——你可以传入多张参考图，并告诉模型它们之间的关系。
 
 大约过了第 15 帧，即便有参考，脸部也开始轻微漂移。我手动修了两帧。**提前做好这个心理准备，别假装它不会发生。**
 
@@ -93,7 +93,7 @@ Thinking 模式是第二块拼图。[The Next Web 的报道](<https://thenextweb
 
 下面是我会用的判断框架。三个选项，三份不同的工作。
 
-**请一位分镜师。** [行业价目指南](<https://voxillustration.com/blog/storyboard-illustration-cost-per-frame/>) 显示自由职业者按帧计价大约入门级 10–25 美元、专业级 40–100 美元、工作室级 100 美元以上。日薪约 300–700 美元。一套 24 帧的分镜板，视质量档次大概要 500–2500 美元。**你真正买到的是：电影感判断、镜头语言熟练度、复杂动作下的连续性，以及一个在你镜头表讲不通时会顶回来的人。**如果你的分镜板要交给真正的摄制组，这就是正确答案。
+**请一位分镜师。** [行业价目指南](https://voxillustration.com/blog/storyboard-illustration-cost-per-frame/) 显示自由职业者按帧计价大约入门级 10–25 美元、专业级 40–100 美元、工作室级 100 美元以上。日薪约 300–700 美元。一套 24 帧的分镜板，视质量档次大概要 500–2500 美元。**你真正买到的是：电影感判断、镜头语言熟练度、复杂动作下的连续性，以及一个在你镜头表讲不通时会顶回来的人。**如果你的分镜板要交给真正的摄制组，这就是正确答案。
 
 **自己画简笔缩略图。**火柴人、箭头、注释。免费。只要你会画几笔，24 帧的分镜板 30–60 分钟能搞定。**它给你的：完全的创作控制、完美的连续性（因为你在脑子里追踪）、零打磨。**适合内部规划、自己的短视频、以及观众只有你自己的任何场合。
 
@@ -135,13 +135,13 @@ Thinking 模式是第二块拼图。[The Next Web 的报道](<https://thenextweb
 
 ## 延伸阅读
 
-  * [了解如何搭建在多步创作任务中真正立得住的 AI 工作流](</blog/ai-workflow-for-solo-founders>)
+  * [了解如何搭建在多步创作任务中真正立得住的 AI 工作流](/blog/ai-workflow-for-solo-founders)
 
-  * [看看 AI Agent 工作流如何收拾无结构「凭感觉创作」的混乱](</blog/ai-agent-workflow-vibe-coding>)
+  * [看看 AI Agent 工作流如何收拾无结构「凭感觉创作」的混乱](/blog/ai-agent-workflow-vibe-coding)
 
-  * [理解单人创业者如何借助 AI 像一整支创作团队那样产出](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [理解单人创业者如何借助 AI 像一整支创作团队那样产出](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [探索内容、自动化与生产工作流中真实的 AI Agent 用例](</blog/ai-agent-use-cases-real-examples>)
+  * [探索内容、自动化与生产工作流中真实的 AI Agent 用例](/blog/ai-agent-use-cases-real-examples)
 
-  * [发现如何不靠招聘、通过系统化你的工作来扩展一人公司](</blog/scale-one-person-business-without-hiring>)
+  * [发现如何不靠招聘、通过系统化你的工作来扩展一人公司](/blog/scale-one-person-business-without-hiring)
 

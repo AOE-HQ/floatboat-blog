@@ -23,7 +23,7 @@ If you're running things solo or with a tiny team, you've probably heard the hyp
 
 A **browser AI agent** is an AI that can see, navigate, click, and take actions inside your web browser — not just answer questions about a URL you paste in. It operates within your signed-in session: your Gmail, your CRM, your project management tool.
 
-The two main players right now are [Codex for Chrome](<https://developers.openai.com/codex/app/chrome-extension>) (OpenAI, launched May 2026) and [Claude for Chrome](<https://www.anthropic.com/news/claude-for-chrome>) (Anthropic, in beta since late 2025). There are also full agentic browsers like ChatGPT Atlas and Perplexity Comet, but those replace your browser entirely. The extensions sit inside Chrome alongside your normal browsing.
+The two main players right now are [Codex for Chrome](https://developers.openai.com/codex/app/chrome-extension) (OpenAI, launched May 2026) and [Claude for Chrome](https://www.anthropic.com/news/claude-for-chrome) (Anthropic, in beta since late 2025). There are also full agentic browsers like ChatGPT Atlas and Perplexity Comet, but those replace your browser entirely. The extensions sit inside Chrome alongside your normal browsing.
 
 What a browser agent is ​ _not_ ​: a chatbot in a sidebar that only reads text you copy-paste in. The defining feature is **the agent can act on web pages** — click buttons, fill fields, navigate between tabs, extract structured data from what's on screen.
 
@@ -39,7 +39,7 @@ I ran it on a 30-message client email thread last week, asked for the three open
 
 ### Form Filling and Structured Data Entry
 
-Repetitive form filling — client intake, invoice details, CRM updates — is where agents start earning their keep. You describe what needs to go where, and the agent navigates the form fields and fills them. Claude for Chrome lets you [record a workflow once](<https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome>) and replay it later, which is handy for recurring data entry.
+Repetitive form filling — client intake, invoice details, CRM updates — is where agents start earning their keep. You describe what needs to go where, and the agent navigates the form fields and fills them. Claude for Chrome lets you [record a workflow once](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome) and replay it later, which is handy for recurring data entry.
 
 The key word is ​ _structured_ ​. If the form has clear fields and predictable layout, agents handle it well. The moment a form has dynamic dropdowns or conditional logic that changes based on what you enter, success rates drop.
 
@@ -83,9 +83,9 @@ A browser agent can extract data and fill templates, but it can't decide which p
 
 Browser agents operate inside Chrome. They can't touch your local file system, open desktop apps, or interact with anything that isn't a web page.
 
-There's a nuance for dev-leaning operators: **Codex routes ​localhost** ​​**​ and development server work to its in-app browser** ​, not to the Chrome extension. According to [OpenAI's documentation](<https://developers.openai.com/codex/app/browser>), the in-app browser handles `localhost` previews, file-backed pages, and anything that doesn't require a signed-in session. The Chrome extension is specifically for signed-in web apps. If you're testing a local app, you're using a different tool than the one in your Chrome toolbar — worth knowing so you don't get confused about what goes where.
+There's a nuance for dev-leaning operators: **Codex routes ​localhost** ​​**​ and development server work to its in-app browser** ​, not to the Chrome extension. According to [OpenAI's documentation](https://developers.openai.com/codex/app/browser), the in-app browser handles `localhost` previews, file-backed pages, and anything that doesn't require a signed-in session. The Chrome extension is specifically for signed-in web apps. If you're testing a local app, you're using a different tool than the one in your Chrome toolbar — worth knowing so you don't get confused about what goes where.
 
-Claude for Chrome stays in the browser sidebar and can interact with `localhost` pages that are open in Chrome tabs, but it needs the [Claude Code integration](<https://code.claude.com/docs/en/chrome>) for the full terminal-to-browser loop.
+Claude for Chrome stays in the browser sidebar and can interact with `localhost` pages that are open in Chrome tabs, but it needs the [Claude Code integration](https://code.claude.com/docs/en/chrome) for the full terminal-to-browser loop.
 
 ### Sites with Heavy CAPTCHA or Anti-Bot
 
@@ -95,7 +95,7 @@ Neither agent handles CAPTCHAs. Both stop and ask you to solve it manually. Site
 
 Sending a payment. Deleting records. Submitting a legal filing. Approving a contract change. **If the cost of an error is high, don't let a browser agent do it unsupervised.** Both tools have permission modes that require confirmation before taking action, and you should use them for anything where a mistake would be painful to reverse.
 
-Anthropic published data from their prompt injection testing: even with defenses active, [11.2% of adversarial attacks still succeeded](<https://www.anthropic.com/research/prompt-injection-defenses>). OpenAI has acknowledged that prompt injection in browser agents is "unlikely to ever be fully solved." These aren't theoretical risks — researchers have found real [indirect prompt injection payloads in the wild](<https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/>), embedded on ordinary websites targeting AI agents that browse them. That doesn't mean you shouldn't use browser agents. It means you should keep high-stakes actions behind a manual confirmation.
+Anthropic published data from their prompt injection testing: even with defenses active, [11.2% of adversarial attacks still succeeded](https://www.anthropic.com/research/prompt-injection-defenses). OpenAI has acknowledged that prompt injection in browser agents is "unlikely to ever be fully solved." These aren't theoretical risks — researchers have found real [indirect prompt injection payloads in the wild](https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/), embedded on ordinary websites targeting AI agents that browse them. That doesn't mean you shouldn't use browser agents. It means you should keep high-stakes actions behind a manual confirmation.
 
 ![what5.png](/blog/images/browser-ai-agent-what-it-can-do/1778482792348-c069ef6f-58c9-4820-bc61-f1478881ded4.webp)
 
@@ -139,13 +139,13 @@ I'll know more in a few weeks. That part never really ends.
 
 ## Previous Posts:
 
-  * Thinking about using browser agents for your entire workflow? Here’s[ where workspace agents actually help solo operators](</blog/workspace-agents-for-solo-operators>) — and where they mostly create more overhead
+  * Thinking about using browser agents for your entire workflow? Here’s[ where workspace agents actually help solo operators](/blog/workspace-agents-for-solo-operators) — and where they mostly create more overhead
 
-  * If you’re still trying to understand the difference between browser agents and regular AI chat tools, this breakdown explains [why the interaction model matters more than most people expect](</blog/workspace-agents-vs-chat-assistants>)
+  * If you’re still trying to understand the difference between browser agents and regular AI chat tools, this breakdown explains [why the interaction model matters more than most people expect](/blog/workspace-agents-vs-chat-assistants)
 
-  * Curious[ why so many solo founders are rebuilding their workflows around AI agents instead of traditional automation tools?](</blog/ai-workspace-agents>)
+  * Curious[ why so many solo founders are rebuilding their workflows around AI agents instead of traditional automation tools?](/blog/ai-workspace-agents)
 
-  * Most people automate too early and create fragile systems. This guide [on AI workflows for solo founders ](</blog/ai-workflow-for-solo-founders>)connects directly to the “predictable path” framework in this article
+  * Most people automate too early and create fragile systems. This guide [on AI workflows for solo founders ](/blog/ai-workflow-for-solo-founders)connects directly to the “predictable path” framework in this article
 
-  * Want a more grounded look at [where AI agents genuinely save time for one-person businesses](</blog/ai-agent-solo-operators>) — beyond the flashy demos?
+  * Want a more grounded look at [where AI agents genuinely save time for one-person businesses](/blog/ai-agent-solo-operators) — beyond the flashy demos?
 

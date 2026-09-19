@@ -17,7 +17,7 @@ draft: false
 
 ## 为什么多数 AI Agent 案例研究没什么用
 
-我通常看到的是这种版本：一张改造前后的对比截图、几个亮眼的百分比，外加一句含糊的"AI 自动化"。缺的是前置条件、失败模式，以及"**这套东西对像我这样的人真的可行吗？**"这个问题的诚实回答。多数案例研究都略过了中间那段混乱的过程。[IBM 对 AI Agent 的研究](<https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality>)（《2025 年 AI Agent：期望与现实的落差》）点出的正是这种张力——炒作跑在了实际部署模式的前面。
+我通常看到的是这种版本：一张改造前后的对比截图、几个亮眼的百分比，外加一句含糊的"AI 自动化"。缺的是前置条件、失败模式，以及"**这套东西对像我这样的人真的可行吗？**"这个问题的诚实回答。多数案例研究都略过了中间那段混乱的过程。[IBM 对 AI Agent 的研究](https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality)（《2025 年 AI Agent：期望与现实的落差》）点出的正是这种张力——炒作跑在了实际部署模式的前面。
 
 于是，我决定把"我希望有人写出来"的那一版写出来——扎根于真实的工作模式，把局限也一并写进去。
 
@@ -55,7 +55,7 @@ Agent 能把信息搜出来，却无法像领域专家那样**判断相关性**�
 
 ### 工作流
 
-他把原文喂给一个已经按自己的语气和格式偏好配置好的 Agent 工作流，由 Agent 为每种格式生成草稿。[关于内容再利用工作流的研究](<https://contentmarketinginstitute.com/articles/repurpose-content-strategy/>)指出，内容再利用是内容团队 ROI 最高的活动之一——但多数人仍靠手动完成。
+他把原文喂给一个已经按自己的语气和格式偏好配置好的 Agent 工作流，由 Agent 为每种格式生成草稿。[关于内容再利用工作流的研究](https://contentmarketinginstitute.com/articles/repurpose-content-strategy/)指出，内容再利用是内容团队 ROI 最高的活动之一——但多数人仍靠手动完成。
 
 ### 产出
 
@@ -73,7 +73,7 @@ Agent 不知道该为不同受众删掉哪些背景。LinkedIn 帖子需要的�
 
 ### 工作流
 
-配置一个 Agent 工作流，从指定 URL 抓取更新、识别变化，并生成简短摘要。这类工具通常接入浏览器数据或 Google Alerts 式的输入源。想了解竞品情报如何随 AI 一起演进，[MIT Technology Review](<https://www.technologyreview.com/>) 对这一转变做过很好的报道。
+配置一个 Agent 工作流，从指定 URL 抓取更新、识别变化，并生成简短摘要。这类工具通常接入浏览器数据或 Google Alerts 式的输入源。想了解竞品情报如何随 AI 一起演进，[MIT Technology Review](https://www.technologyreview.com/) 对这一转变做过很好的报道。
 
 ### 产出
 
@@ -93,7 +93,7 @@ Agent 能发现表面变化，却会漏掉战略性信号。定价页上的一�
 
 ### 工作流
 
-他搭建了一个工作流：输入客户 brief（哪怕很粗糙），按自己的标准结构生成方案初稿。Agent 会从过往方案库里取素材，以匹配语气和深度。[哈佛商业评论](<https://hbr.org/>)谈到，知识工作者越来越把 AI 当作"第一起草人"而非替代品——这个模式正是如此。
+他搭建了一个工作流：输入客户 brief（哪怕很粗糙），按自己的标准结构生成方案初稿。Agent 会从过往方案库里取素材，以匹配语气和深度。[哈佛商业评论](https://hbr.org/)谈到，知识工作者越来越把 AI 当作"第一起草人"而非替代品——这个模式正是如此。
 
 ### 产出
 
@@ -143,7 +143,7 @@ Agent 不了解那些没有说出口的背景——客户内部的关系、对�
 
 **从小处开始。**挑一件可重复的任务，先把它做到好用，再加下一件。想一口气把一切都自动化的人，最后往往只剩一堆半成品工作流。
 
-对了……还有一件事我不断观察到：**从 AI Agent 里获益最多的人，未必是技术最强的。**而是那些最清楚自己想要什么的人。好的提示词，其实就是把清晰的思考写下来。[OpenAI 的提示词工程指南](<https://platform.openai.com/docs/guides/prompt-engineering>)对非开发者来说意外地有用——其中大部分建议归结起来就一句话：要精确。
+对了……还有一件事我不断观察到：**从 AI Agent 里获益最多的人，未必是技术最强的。**而是那些最清楚自己想要什么的人。好的提示词，其实就是把清晰的思考写下来。[OpenAI 的提示词工程指南](https://platform.openai.com/docs/guides/prompt-engineering)对非开发者来说意外地有用——其中大部分建议归结起来就一句话：要精确。
 
 ![5.png](/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.webp)
 
@@ -151,9 +151,9 @@ _如果你也正在试验 AI 工作流，我很想知道对你真正有效的是
 
 **往期文章：**
 
-  * [一个人如何像一支团队那样用 AI 工作流运转](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [一个人如何像一支团队那样用 AI 工作流运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [AI 自动化服务在真实市场里到底怎么定价](</blog/ai-automation-agency-pricing>)
+  * [AI 自动化服务在真实市场里到底怎么定价](/blog/ai-automation-agency-pricing)
 
-  * [Lindy 与 Gumloop 在 Agent 式工作流上的差别](</blog/lindy-vs-gumloop>)
+  * [Lindy 与 Gumloop 在 Agent 式工作流上的差别](/blog/lindy-vs-gumloop)
 

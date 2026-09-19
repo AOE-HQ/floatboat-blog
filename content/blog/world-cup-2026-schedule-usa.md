@@ -42,7 +42,7 @@ The tactical identity under the current coaching staff emphasizes high pressing,
 
 If the US wins Group D, the Round of 32 path runs through Los Angeles or Seattle, keeping the team on the West Coast. Finishing second or advancing as a third-place team sends the USMNT to a different venue path — possibly Dallas, Atlanta, or further east.
 
-The USMNT's tournament history provides context for the expectations. The team reached the Round of 16 in 2022 (losing to the Netherlands) and the quarterfinals in 2002. Playing on home soil, with all three group matches in familiar western venues and a support base that will fill every stadium, the Round of 16 is a realistic baseline and the quarterfinals are a credible ambition. [Source: FIFA — 2026 World Cup Hosts & Format](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+The USMNT's tournament history provides context for the expectations. The team reached the Round of 16 in 2022 (losing to the Netherlands) and the quarterfinals in 2002. Playing on home soil, with all three group matches in familiar western venues and a support base that will fill every stadium, the Round of 16 is a realistic baseline and the quarterfinals are a credible ambition. [Source: FIFA — 2026 World Cup Hosts & Format](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 ### Where to Watch USA Matches
 
@@ -52,7 +52,7 @@ Both venues are accessible by public transit. SoFi is served by the Metro C Line
 
 ## USA-Hosted Matches: The Big Picture
 
-The United States hosts 78 of the tournament's 104 matches. That includes all group-stage matches at US venues, all knockout matches hosted by American cities, and every match from the quarterfinals onward. [Source: FIFA — Match Schedule, Fixtures, Results & Stadiums](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums>)
+The United States hosts 78 of the tournament's 104 matches. That includes all group-stage matches at US venues, all knockout matches hosted by American cities, and every match from the quarterfinals onward. [Source: FIFA — Match Schedule, Fixtures, Results & Stadiums](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums)
 
 ### USA Knockout Matches (Hosted on US Soil)
 
@@ -108,11 +108,6 @@ The USMNT has a favorable group and a home-continent advantage. Paraguay, Austra
 
 A calendar subscription handles that automatically. Whether you use FloatCup for one-click setup or import an ICS file manually, the result is the same: every US match, every kickoff, correct in your time zone, with reminders that fire whether you remembered to check or not.
 
-## Related Reading
-
-  * World Cup 2026 Schedule: Full Fixtures & Calendar Sync — the complete 104-match fixture list
-
-  * World Cup 2026 Guide: Dates, Format, Hosts & FAQ — full tournament overview
-
-  * FloatCup: Subscribe to World Cup 2026 Calendar in One Click — auto-updating calendar with reminders
-
+## Related Reading- [World Cup 2026 Schedule: Full Fixtures & Calendar Sync — the complete 104-match fixture list](/blog/world-cup-2026-schedule)
+- [World Cup 2026 Guide: Dates, Format, Hosts & FAQ — full tournament overview](/blog/world-cup-2026-guide)
+- [FloatCup: Subscribe to World Cup 2026 Calendar in One Click — auto-updating calendar with reminders](/blog/floatcup-world-cup-2026-calendar-subscribe)

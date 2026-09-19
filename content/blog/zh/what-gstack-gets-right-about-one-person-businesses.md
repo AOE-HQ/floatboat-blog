@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-嗨，我是 Nova。我和大多数非开发者一样偶然撞见 gstack——在应该赶交付物的时候刷 X，看到有人转发了 [Garry Tan 在 GitHub 上的发布](<https://github.com/garrytan/gstack>)。这个仓库 48 小时内拿到 10,000 颗星，成为 2026 年 GitHub 上增长最快的开发者工具之一。我不是开发者。我差点继续往下刷。
+嗨，我是 Nova。我和大多数非开发者一样偶然撞见 gstack——在应该赶交付物的时候刷 X，看到有人转发了 [Garry Tan 在 GitHub 上的发布](https://github.com/garrytan/gstack)。这个仓库 48 小时内拿到 10,000 颗星，成为 2026 年 GitHub 上增长最快的开发者工具之一。我不是开发者。我差点继续往下刷。
 
 然后我读到了它到底是什么——停住了。
 
@@ -19,9 +19,9 @@ draft: false
 
 ## gstack 到底是什么——以及为什么这个想法比代码更大
 
-[gstack](<https://github.com/garrytan/gstack>) 是 Garry Tan 为**Claude Code**打造的开源技能包。Garry Tan 是 Y Combinator 的总裁兼 CEO。它把一个 AI 助手改造成一支结构化的专家团队：一个做产品评审的 CEO 角色、一个锁定架构的工程经理角色、一个会打开真实浏览器点来点去的 QA 工程师、一个管文档的发布经理。每个角色都作为一条斜杠命令运行。
+[gstack](https://github.com/garrytan/gstack) 是 Garry Tan 为**Claude Code**打造的开源技能包。Garry Tan 是 Y Combinator 的总裁兼 CEO。它把一个 AI 助手改造成一支结构化的专家团队：一个做产品评审的 CEO 角色、一个锁定架构的工程经理角色、一个会打开真实浏览器点来点去的 QA 工程师、一个管文档的发布经理。每个角色都作为一条斜杠命令运行。
 
-Tan 公开分享的吞吐数字很惊人：用这套配置，他在 50 天里平均每周产出约 10,000 行代码和 100 个 pull request——大约 60 万行生产代码，其中 35% 是测试。（[TechCrunch 在报道里指出](<https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/>)，社区反应褒贬不一——有人觉得真有用，有人称之为"不过是提示词"。两种反应都说得通。）
+Tan 公开分享的吞吐数字很惊人：用这套配置，他在 50 天里平均每周产出约 10,000 行代码和 100 个 pull request——大约 60 万行生产代码，其中 35% 是测试。（[TechCrunch 在报道里指出](https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/)，社区反应褒贬不一——有人觉得真有用，有人称之为"不过是提示词"。两种反应都说得通。）
 
 背后的哲学是：**大多数人把 AI 当作万用工具，在同一个上下文里塞给它含糊的多任务指令。结果就是没有重点的产出，缺了真实团队能交付的那种深度。**gstack 的答案是他们所称的"认知分档（cognitive gearing）"——逼着模型进入不同角色，让它没法在任务中途来回切换上下文。
 
@@ -37,7 +37,7 @@ Tan 公开分享的吞吐数字很惊人：用这套配置，他在 50 天里平
 
 大多数 AI 用户干的是同一件事。打开一个聊天，输入当下需要的东西，处于什么模式就输入什么：_帮我写这封邮件。现在帮我想想 Q2 策略。现在总结一下这个竞品网站。现在帮我算算定价。_ AI 顺从地跟着你切换。但产出有点浅。它做了你要求的——只是没有站在正确的心智位置上做。
 
-**研究支持这一点。** [MIT Sloan 关于 AI 与知识型员工的研究](<https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity>)里一项 2025 年研究发现，使用 AI 的顾问在每一步都保持"认知付出与专家判断"时表现最好——研究者称之为像"半人马（centaurs）"一样运作，刻意在 AI 和自己之间划分任务。让 AI 在没有角色边界的情况下包办一切的员工，即便文字看起来漂亮，产出推理的质量也往往更低。
+**研究支持这一点。** [MIT Sloan 关于 AI 与知识型员工的研究](https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity)里一项 2025 年研究发现，使用 AI 的顾问在每一步都保持"认知付出与专家判断"时表现最好——研究者称之为像"半人马（centaurs）"一样运作，刻意在 AI 和自己之间划分任务。让 AI 在没有角色边界的情况下包办一切的员工，即便文字看起来漂亮，产出推理的质量也往往更低。
 
 问题不在 AI。在于没有人告诉它该进入哪个角色。
 
@@ -69,13 +69,13 @@ _第三阶段——写手：_到这一步我才要草稿，并显式把第二阶
 
 角色边界能提升 AI 产出，有一个真实的理由——不只是安慰剂效应。
 
-[圣路易斯联储总结近期 AI 生产率研究的文章](<https://www.stlouisfed.org/open-vault/2025/oct/generative-ai-productivity-future-work>)发现，每天用 AI 的员工平均省下 5.4% 的工作时间——40 小时工作周里大约每周 2.2 小时。但收益分布并不均匀。把 AI 整合进结构化、任务特定工作流的员工，时间节省最多——而不是把它当通用聊天工具用的那批人。
+[圣路易斯联储总结近期 AI 生产率研究的文章](https://www.stlouisfed.org/open-vault/2025/oct/generative-ai-productivity-future-work)发现，每天用 AI 的员工平均省下 5.4% 的工作时间——40 小时工作周里大约每周 2.2 小时。但收益分布并不均匀。把 AI 整合进结构化、任务特定工作流的员工，时间节省最多——而不是把它当通用聊天工具用的那批人。
 
 机制在于：**当你给语言模型一个范围清晰的受约束角色时，你就降低了"什么算好产出"的模糊性。**模型不是在同时满足多个目标。它在优化一件事——你此刻真正需要的那件事。
 
 这跟系统提示词不同。系统提示词设定一般的行为和语气。角色化框架走得更远——它定义模型该优先什么、该忽略什么、以及对_这一步_来说什么算成功。"要有帮助"和"你是一名研究分析师，你的工作是暴露数据里的矛盾，而不是解决它们"——差别就在这里。
 
-一个值得点出的保留：关于角色提示的研究结论并不一致。[Sander Schulhoff 2025 年那份综合性的提示技术分析](<https://www.lennysnewsletter.com/p/ai-prompt-engineering-in-2025-sander-schulhoff>)——基于他与 OpenAI、Microsoft、Google、Princeton、Stanford 研究者合著的一篇综述——发现"你是一位数学教授"这类简单角色提示对准确率几乎没影响。**重要的不是标签——是你绑在角色上的约束和范围。**"你是一名研究分析师"什么用都没有。"你是一名研究分析师。你的唯一产出应该是模式和标记出的假设，不是建议，也不是成段文字"——这才不同。
+一个值得点出的保留：关于角色提示的研究结论并不一致。[Sander Schulhoff 2025 年那份综合性的提示技术分析](https://www.lennysnewsletter.com/p/ai-prompt-engineering-in-2025-sander-schulhoff)——基于他与 OpenAI、Microsoft、Google、Princeton、Stanford 研究者合著的一篇综述——发现"你是一位数学教授"这类简单角色提示对准确率几乎没影响。**重要的不是标签——是你绑在角色上的约束和范围。**"你是一名研究分析师"什么用都没有。"你是一名研究分析师。你的唯一产出应该是模式和标记出的假设，不是建议，也不是成段文字"——这才不同。
 
 ## 角色化 AI 在哪里失效
 
@@ -109,13 +109,13 @@ _回去继续干活了。_
 
 ## 上一篇系列文章：
 
-  * [看看单人创业者如何把 AI 工作流组织得像一个完整团队](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [看看单人创业者如何把 AI 工作流组织得像一个完整团队](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [理解在工作流里分配角色时，AI Agent 与 AI 助手的实际差别](</blog/ai-agent-vs-ai-assistant>)
+  * [理解在工作流里分配角色时，AI Agent 与 AI 助手的实际差别](/blog/ai-agent-vs-ai-assistant)
 
-  * [探索如何真正搭一个 AI Agent 系统，而不是依赖单一通用助手](</blog/how-to-build-an-ai-agent>)
+  * [探索如何真正搭一个 AI Agent 系统，而不是依赖单一通用助手](/blog/how-to-build-an-ai-agent)
 
-  * [看真实的 AI Agent 用例，理解角色化系统在实践中表现如何](</blog/ai-agent-use-cases-real-examples>)
+  * [看真实的 AI Agent 用例，理解角色化系统在实践中表现如何](/blog/ai-agent-use-cases-real-examples)
 
-  * [在设计结构化、角色化的 AI 系统时，对比 Workflow 构建器与 AI 工作区](</blog/workflow-builder-vs-ai-workspace>)
+  * [在设计结构化、角色化的 AI 系统时，对比 Workflow 构建器与 AI 工作区](/blog/workflow-builder-vs-ai-workspace)
 

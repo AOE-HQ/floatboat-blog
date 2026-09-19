@@ -29,7 +29,7 @@ draft: false
 
 上个月我把一周里做的每件事都列了出来：内容调研、写作、客户沟通、项目管理、记账跟进。五个完全不同的工种，有时候还不止。
 
-标准建议通常是：写作用 ChatGPT，[自动化用 Zapier](<https://zapier.com/workflows>)，项目管理用 Notion，调研再单配一个工具。那就是四套工具、四个登录账号、四份互不通气的上下文。每一套只知道你工作的一个切片，**但没有任何一套知道你的工作是怎么拼在一起的**。
+标准建议通常是：写作用 ChatGPT，[自动化用 Zapier](https://zapier.com/workflows)，项目管理用 Notion，调研再单配一个工具。那就是四套工具、四个登录账号、四份互不通气的上下文。每一套只知道你工作的一个切片，**但没有任何一套知道你的工作是怎么拼在一起的**。
 
 我以前以为工具越多效率越高。现在不这么认为了。
 
@@ -59,7 +59,7 @@ draft: false
 
 **理想的 AI 工作流，是让你把一件事做一遍，然后把整个流程打包成可复用的东西。**不是模板——是更聪明的存在。一个工作流，能接收新输入、自动按你既有的流程跑完，连你平时沿途做的那些判断也一并包进来。
 
-这跟传统自动化不一样。[Make](<https://www.make.com/en>) 或 Zapier 这类工具擅长连接应用、搬运数据，但它们跑在触发器和规则上。单人创业者需要的更接近技能转移——把你的流程教给 AI，而不是只教它 if-then 逻辑。
+这跟传统自动化不一样。[Make](https://www.make.com/en) 或 Zapier 这类工具擅长连接应用、搬运数据，但它们跑在触发器和规则上。单人创业者需要的更接近技能转移——把你的流程教给 AI，而不是只教它 if-then 逻辑。
 
 ![33.PNG](/blog/images/ai-workflow-solo-founders/1775794479589-629b4c8b-d003-46fa-8e5b-240dd4c80ded.webp)
 
@@ -71,7 +71,7 @@ draft: false
 
 是你在把上下文从 Notion 复制进 ChatGPT。是你在设计 Zap 触发器——它勉强复刻了你的流程，却漏掉了所有细微之处。是你在东西坏了的时候负责维护这一切。
 
-[Notion 的 AI 功能确实进步了不少](<https://www.notion.com/product/ai>)——新 Agent 能跨 Slack、Google Drive 这类已连接工具搜索，自定义指令功能也让它记得你在工作区里的偏好。这是实打实的改进。但 Notion AI 仍然活在 Notion 内部。它不知道你桌面上的 PDF，也不知道你正开着的浏览器标签页。
+[Notion 的 AI 功能确实进步了不少](https://www.notion.com/product/ai)——新 Agent 能跨 Slack、Google Drive 这类已连接工具搜索，自定义指令功能也让它记得你在工作区里的偏好。这是实打实的改进。但 Notion AI 仍然活在 Notion 内部。它不知道你桌面上的 PDF，也不知道你正开着的浏览器标签页。
 
 ### 当拼装工具制造的是更多开销，而不是更少
 
@@ -95,7 +95,7 @@ AI 能不能访问你的文件、浏览器和项目历史，而不用你每次�
 
 ### 执行记忆
 
-工具会从你的工作方式中学习，而不是只执行你叫它做的事吗？它能吸收你的编辑习惯、你的决策倾向、你的排版偏好吗？[哈佛商学院关于 AI 与工作设计的研究](<https://hbr.org/2025/07/how-ai-is-redefining-managerial-roles>)指出，AI 的潜力与 AI 的现实之间的落差，往往取决于工具对个人工作风格的适配程度。
+工具会从你的工作方式中学习，而不是只执行你叫它做的事吗？它能吸收你的编辑习惯、你的决策倾向、你的排版偏好吗？[哈佛商学院关于 AI 与工作设计的研究](https://hbr.org/2025/07/how-ai-is-redefining-managerial-roles)指出，AI 的潜力与 AI 的现实之间的落差，往往取决于工具对个人工作风格的适配程度。
 
 ### 桌面集成
 
@@ -131,7 +131,7 @@ AI 能不能访问你的文件、浏览器和项目历史，而不用你每次�
 
   * **顶级单点工具的灵活性。**专用工作区可能比不上 Notion 的数据库能力，也比不上 Zapier 的 7000+ 应用集成。你用广度换了集成的深度。
 
-  * **熟悉感。**切换到新系统需要时间，学习曲线是真实存在的。我发现[最有效率的做法是从某一个具体工作流切入](<https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity>)，再逐步扩展，而不是试图一次性搬走全部东西。
+  * **熟悉感。**切换到新系统需要时间，学习曲线是真实存在的。我发现[最有效率的做法是从某一个具体工作流切入](https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity)，再逐步扩展，而不是试图一次性搬走全部东西。
 
   * **成熟度。**一些较新的 AI 工作区工具还在早期。功能可能变、定价可能变。我还没有把每一样都测够足够长的时间，说不清边界在哪——这一点我坦然承认。
 
@@ -149,13 +149,13 @@ AI 能不能访问你的文件、浏览器和项目历史，而不用你每次�
 
 ## 往期文章：
 
-  * [如果「AI 忘记你的上下文」是个问题，这是为什么它每个会话都会发生](</blog/why-ai-forgets-every-session>)
+  * [如果「AI 忘记你的上下文」是个问题，这是为什么它每个会话都会发生](/blog/why-ai-forgets-every-session)
 
-  * [好奇持久化 AI Agent 如何改变工作流模型？从这篇拆解看起](</blog/what-is-persistent-ai-agent>)
+  * [好奇持久化 AI Agent 如何改变工作流模型？从这篇拆解看起](/blog/what-is-persistent-ai-agent)
 
-  * [还是不确定 AI 工作区与传统工作流搭建器有何不同？这篇解释了转变](</blog/workflow-builder-vs-ai-workspace>)
+  * [还是不确定 AI 工作区与传统工作流搭建器有何不同？这篇解释了转变](/blog/workflow-builder-vs-ai-workspace)
 
-  * [想要一个 AI 驱动的单人工作流实际长什么样的实例？看这套配置](</blog/feishu-cli-solo-work-setup>)
+  * [想要一个 AI 驱动的单人工作流实际长什么样的实例？看这套配置](/blog/feishu-cli-solo-work-setup)
 
-  * [如果你好奇单人经营者日复一日如何靠 AI 放大产能，这篇值得一读](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [如果你好奇单人经营者日复一日如何靠 AI 放大产能，这篇值得一读](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

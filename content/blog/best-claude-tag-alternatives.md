@@ -70,7 +70,7 @@ Viktor markets itself bluntly as a **hire, not a tool** — an autonomous AI emp
 
 Choose Viktor when you want `@`-style delegation **today** on Slack or Teams without Claude Enterprise packaging, and when breadth of tool action matters more than Anthropic-only model depth. Viktor runs persistent cloud sandboxes per instance — closer to Tag's async execution story than to Slack AI summaries.
 
-Trade-offs: proprietary stack and credit-based pricing (commonly cited from roughly **$50/month** with trial tiers — confirm on [viktor.com](<http://viktor.com>)). Weaker fit when you require self-hosted audit trails or agent-native multi-agent semantics FloatIM emphasizes.
+Trade-offs: proprietary stack and credit-based pricing (commonly cited from roughly **$50/month** with trial tiers — confirm on [viktor.com](http://viktor.com)). Weaker fit when you require self-hosted audit trails or agent-native multi-agent semantics FloatIM emphasizes.
 
 ### 3\. Stilla — Best multi-platform `@` teammate
 

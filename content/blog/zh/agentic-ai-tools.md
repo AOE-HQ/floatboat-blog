@@ -29,7 +29,7 @@ draft: false
 
 大多数人买「agentic AI」，真正想要的是中间那一档。这没问题——它往往就是正确选择。麻烦在于，第三档的营销话术听起来像第二档，混乱由此而来。
 
-Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值。据其[对 Agent 自主性的分析](<https://www.anthropic.com/research/measuring-agent-autonomy>)，新用户大约只为 20% 的会话开启自动批准，而经验丰富的用户在 750+ 次会话后，这一比例会超过 40%。与这类工具的信任不是「设置一次就一劳永逸」——它是在你逐渐摸清 Agent 擅长什么、哪里需要盯着看的过程中一步步累积起来的。
+Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值。据其[对 Agent 自主性的分析](https://www.anthropic.com/research/measuring-agent-autonomy)，新用户大约只为 20% 的会话开启自动批准，而经验丰富的用户在 750+ 次会话后，这一比例会超过 40%。与这类工具的信任不是「设置一次就一劳永逸」——它是在你逐渐摸清 Agent 擅长什么、哪里需要盯着看的过程中一步步累积起来的。
 
 这个规律正好印证了我会建议你对待这一类所有工具的方式：**检查点宁可多设，不要少设。**
 
@@ -43,11 +43,11 @@ Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值
 
 **助手（Assistants）**（Claude、ChatGPT、Gemini 的聊天模式）——基准款。严格来说它们不算完整的「agentic」：助手响应提示，能调用联网搜索、读文件这类工具，但不会在会话之间自主运行。如果你是刚接触这个品类、想在把更自主的工作交给 AI 之前先建立直觉，助手就是合适的起点——风险最低的入口。
 
-**工作流 Agent（Workflow Agents）**（n8n、Zapier Agents、Make 的 AI steps）——它们连上你的应用，按触发条件或定时执行动作。一个工作流 Agent 可以盯着收件箱、提炼待办事项、在项目管理工具里建任务并记录结果——全自动完成，你什么也不用打开。[Zapier 的 Agents 文档](<https://zapier.com/agents>)解释了它与标准自动化的区别：Agent 依据上下文决定该执行哪些动作，而不是照一套写死的脚本跑。它的自主性**由触发条件和你定义的工作流圈定边界**。对可重复、低风险的自动化来说，这是大多数单人创业者最该先探索的品类。
+**工作流 Agent（Workflow Agents）**（n8n、Zapier Agents、Make 的 AI steps）——它们连上你的应用，按触发条件或定时执行动作。一个工作流 Agent 可以盯着收件箱、提炼待办事项、在项目管理工具里建任务并记录结果——全自动完成，你什么也不用打开。[Zapier 的 Agents 文档](https://zapier.com/agents)解释了它与标准自动化的区别：Agent 依据上下文决定该执行哪些动作，而不是照一套写死的脚本跑。它的自主性**由触发条件和你定义的工作流圈定边界**。对可重复、低风险的自动化来说，这是大多数单人创业者最该先探索的品类。
 
 **构建平台 / 无代码 Agent 平台（Builders）**（Lindy、Relevance AI）——这类工具让你定义 Agent 的行为、接好它的工具，再把它部署成常驻工作者。你不用写代码，但你在设计逻辑。好处是灵活，代价是搭建比工作流 Agent 更费心思，而且「Agent 的判断」会成为输出质量里一个真实变量。最适合已经明确某项流程、希望它被稳定处理的人。
 
-**编程 Agent（Coding Agents）**（Claude Code、Codex、Cursor 的 Agent 模式）——单独归为一类，因为风险画像完全不同。编程 Agent 会通读你的代码库、跨文件修改、跑测试，并在失败时反复迭代。Anthropic 关于 [Claude Code 设计](<https://www.anthropic.com/product/claude-code>)的文档写得很清楚：默认行为是谨慎的——修改文件或执行命令前会先询问。自动批准是存在的，但那是你刻意打开的一项设置，而非默认值。这点很关键，别跳过默认值。
+**编程 Agent（Coding Agents）**（Claude Code、Codex、Cursor 的 Agent 模式）——单独归为一类，因为风险画像完全不同。编程 Agent 会通读你的代码库、跨文件修改、跑测试，并在失败时反复迭代。Anthropic 关于 [Claude Code 设计](https://www.anthropic.com/product/claude-code)的文档写得很清楚：默认行为是谨慎的——修改文件或执行命令前会先询问。自动批准是存在的，但那是你刻意打开的一项设置，而非默认值。这点很关键，别跳过默认值。
 
 **AI 工作区（AI Workspaces）**（跨应用桌面工具，负责协调文件、浏览器与已连接服务）——最新也最粗糙的一个品类。它的前提是：与其在应用之间来回切换，不如让 AI 凌驾于所有应用之上做统一协调。这类工具搭建成本最高，成熟度也最参差。如果你的工作确实横跨多个应用，值得一试；但如果你刚接触 agentic 工具，不该从这里起步。
 
@@ -59,11 +59,11 @@ Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值
 
 **见客户前的资料调研。**把五个网址贴进助手，让它逐个提取关键事实，再综合成一份会前 brief。除了一次对话，没有任何自主性——纯粹的助手模式。原本要 20 分钟，现在 4 分钟。这也是大多数人最先用起来的那一档：不复杂，却真有价值。
 
-**周报汇总。**一个工作流 Agent 盯着项目文件夹，通过集成从项目管理工具里抓取本周已完成的任务，再按计划定时起草一份进度摘要。你审阅后发送。AI 负责写，你负责批。Anthropic 的[构建高效 Agent 的研究](<https://www.anthropic.com/research/building-effective-agents>)管这叫「增强式 LLM」（augmented LLM）——AI 带工具，人在关键决策点把关。这正是工作流 Agent 的甜区。
+**周报汇总。**一个工作流 Agent 盯着项目文件夹，通过集成从项目管理工具里抓取本周已完成的任务，再按计划定时起草一份进度摘要。你审阅后发送。AI 负责写，你负责批。Anthropic 的[构建高效 Agent 的研究](https://www.anthropic.com/research/building-effective-agents)管这叫「增强式 LLM」（augmented LLM）——AI 带工具，人在关键决策点把关。这正是工作流 Agent 的甜区。
 
 **内容编辑流水线。**你写完初稿丢进文件夹，一个构建平台型的 Agent 会按你预设的检查清单（语气、结构、篇幅、关键词密度）过一遍并标出问题。你负责改。Agent 不发布任何东西——它只是一个口径一致的自动化审稿人。省掉了每次都要「换双新眼睛重读一遍」的苦差。
 
-**代码库里的 bug 排查。**你向 Claude Code 描述问题，它读取相关文件、给出修复方案、跑一遍测试套件，测试不过就继续迭代。合并之前，你先审 diff。[Claude Code 文档](<https://code.claude.com/docs/en/agent-sdk/agent-loop>)说得很明白，权限模式的设计初衷正是这种平衡——在开发环境里自动批准文件修改，同时对风险更高的 shell 命令仍然要求明确授权。
+**代码库里的 bug 排查。**你向 Claude Code 描述问题，它读取相关文件、给出修复方案、跑一遍测试套件，测试不过就继续迭代。合并之前，你先审 diff。[Claude Code 文档](https://code.claude.com/docs/en/agent-sdk/agent-loop)说得很明白，权限模式的设计初衷正是这种平衡——在开发环境里自动批准文件修改，同时对风险更高的 shell 命令仍然要求明确授权。
 
 **我还没自动化、也不打算自动化的。**未经我审阅就发给客户的交付物；会让我作出承诺的邮件；计费、开票变更或任何触碰支付系统的事；一旦出错就无法挽回的决策。
 
@@ -81,7 +81,7 @@ Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值
 
 **可逆性应该作为第一优先的考量。** Anthropic 关于 Agent 设计的研究提到一条我早已内化的原则：优先选可逆的动作，对破坏性或不可逆的动作要求确认。每次运行 agentic 任务之前，我都会问：如果它跑偏了，我能在 10 分钟内撤销吗？如果答案是不能，那动作执行之前必须有真人审批介入。
 
-[欧盟 AI 法案](<https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence>)已经开始影响部分工具在受监管场景里的提供方式——这说明围绕 agentic 工具的治理是一个真实且不断演进的领域，不只是厂商的营销话术。
+[欧盟 AI 法案](https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence)已经开始影响部分工具在受监管场景里的提供方式——这说明围绕 agentic 工具的治理是一个真实且不断演进的领域，不只是厂商的营销话术。
 
 ![f8.png](/blog/images/agentic-ai-tools/1778662308943-6b841e78-e1f0-4419-b17a-b092e3214ed6.webp)
 
@@ -101,13 +101,13 @@ Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值
 
 ### 往期文章
 
-  * 现在人们把什么都叫作「AI agent」——但助手、工作流 Agent、编程 Agent 与工作区失败的形态各不相同：[面向单人创业者的 AI 工作区 Agent 解读](</blog/ai-workspace-agents>)
+  * 现在人们把什么都叫作「AI agent」——但助手、工作流 Agent、编程 Agent 与工作区失败的形态各不相同：[面向单人创业者的 AI 工作区 Agent 解读](/blog/ai-workspace-agents)
 
-  * 想弄清 agentic 工作流到底在哪儿真正有用（又在哪里悄悄增加负担），从这里读起：[面向独立开发者的 AI agent 工作流与 vibe coding](</blog/ai-agent-workflow-vibe-coding>)
+  * 想弄清 agentic 工作流到底在哪儿真正有用（又在哪里悄悄增加负担），从这里读起：[面向独立开发者的 AI agent 工作流与 vibe coding](/blog/ai-agent-workflow-vibe-coding)
 
-  * 为什么多数单人创业者过分盯着模型质量，而真正的效率提升往往来自工作流结构：[单人创始人的 AI 工作流](</blog/ai-workflow-for-solo-founders>)
+  * 为什么多数单人创业者过分盯着模型质量，而真正的效率提升往往来自工作流结构：[单人创始人的 AI 工作流](/blog/ai-workflow-for-solo-founders)
 
-  * 工作流构建器和工作区 Agent 在演示里听起来很像——可一旦你的工作横跨应用与文件，它们解决的问题就完全不同：[工作区 Agent 与工作流构建器](</blog/workspace-agents-vs-workflow-builders>)
+  * 工作流构建器和工作区 Agent 在演示里听起来很像——可一旦你的工作横跨应用与文件，它们解决的问题就完全不同：[工作区 Agent 与工作流构建器](/blog/workspace-agents-vs-workflow-builders)
 
-  * Claude Managed Agents、编程 Agent 与自主 AI 工具处于自主光谱上的不同位置——这篇拆解帮你厘清差别：[什么是 Claude Managed Agents？](</blog/what-are-claude-managed-agents>)
+  * Claude Managed Agents、编程 Agent 与自主 AI 工具处于自主光谱上的不同位置——这篇拆解帮你厘清差别：[什么是 Claude Managed Agents？](/blog/what-are-claude-managed-agents)
 

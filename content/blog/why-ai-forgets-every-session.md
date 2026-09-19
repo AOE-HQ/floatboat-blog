@@ -83,7 +83,7 @@ Developers often try to fake memory in a stateless workflow by accumulating conv
 
 The workaround most people end up using — pasting in a context document at the start of each session — is exactly this: prompt stuffing. It's functional. It's also tedious, inconsistent, and doesn't scale past two or three ongoing projects before it becomes its own job.
 
-A workspace model works differently. Instead of starting fresh each session, the AI loads a persistent state — your preferences, your decisions, your project history — at session start. It picks up where you left off. As [Anthropic's research on building effective agents](<https://www.anthropic.com/research/building-effective-agents>) notes, the most reliable agentic systems invest heavily in context management precisely because **"what the AI knows going in determines everything about what it produces coming out."**
+A workspace model works differently. Instead of starting fresh each session, the AI loads a persistent state — your preferences, your decisions, your project history — at session start. It picks up where you left off. As [Anthropic's research on building effective agents](https://www.anthropic.com/research/building-effective-agents) notes, the most reliable agentic systems invest heavily in context management precisely because **"what the AI knows going in determines everything about what it produces coming out."**
 
 The distinction matters: sessions are conversations. Workspaces are infrastructure.
 
@@ -99,7 +99,7 @@ These three terms get used interchangeably, but they're not the same thing — a
 
 Most "AI memory" features right now are memory in the narrow sense. They store some facts about you. They don't necessarily turn those facts into consistent execution.
 
-[The New Stack's deep dive on AI agent memory architecture](<https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/>) describes four types of memory that would make AI genuinely useful across sessions: working memory (what's active right now), episodic memory (what happened in past sessions), semantic memory (what the AI has learned about you), and procedural memory (how to actually do your recurring tasks well). Most current tools have fragments of the first and traces of the second. The third and fourth are where the real gap is.
+[The New Stack's deep dive on AI agent memory architecture](https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/) describes four types of memory that would make AI genuinely useful across sessions: working memory (what's active right now), episodic memory (what happened in past sessions), semantic memory (what the AI has learned about you), and procedural memory (how to actually do your recurring tasks well). Most current tools have fragments of the first and traces of the second. The third and fourth are where the real gap is.
 
 2025 was the year of "retention without understanding." Vendors rushed to add retention features — from persistent chat threads and long context windows to AI "memory spaces" and company knowledge base integrations. These were good steps forward, but they failed to solve the real issue: AI systems could recall facts, but still lacked understanding. They knew what happened, but not why it mattered.
 
@@ -113,13 +113,13 @@ I'm going to be practical here rather than evaluative — I haven't fully tested
 
 **Decision logging.** Some way to record "we decided X, because Y" that survives session boundaries. This is the category that most memory features still don't handle well.
 
-**Workspace-level awareness.** The AI should know what files are relevant to a project, not just what you paste into the prompt. [Tribe AI's research on context-aware memory systems](<https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025>) distinguishes between "information retrieval" (finding facts on demand) and "operational memory" (knowing the state of an ongoing project). The second is what solo operators actually need.
+**Workspace-level awareness.** The AI should know what files are relevant to a project, not just what you paste into the prompt. [Tribe AI's research on context-aware memory systems](https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025) distinguishes between "information retrieval" (finding facts on demand) and "operational memory" (knowing the state of an ongoing project). The second is what solo operators actually need.
 
 **Reusable workflows that carry context by default.** The goal isn't just that AI remembers you — it's that it can run your recurring tasks correctly without you rebuilding the context each time.
 
-It's worth noting that some enterprise platforms are already moving in this direction. [Google's Vertex AI Agent Builder](<https://cloud.google.com/blog/products/ai-machine-learning/new-enhanced-tool-governance-in-vertex-ai-agent-builder>), for example, recently announced Memory Bank moving to general availability — allowing agents to maintain context across interactions for production workloads. The infrastructure for stateful AI is maturing at the platform level. Whether it reaches individual knowledge workers in an accessible form is the open question.
+It's worth noting that some enterprise platforms are already moving in this direction. [Google's Vertex AI Agent Builder](https://cloud.google.com/blog/products/ai-machine-learning/new-enhanced-tool-governance-in-vertex-ai-agent-builder), for example, recently announced Memory Bank moving to general availability — allowing agents to maintain context across interactions for production workloads. The infrastructure for stateful AI is maturing at the platform level. Whether it reaches individual knowledge workers in an accessible form is the open question.
 
-For what it's worth: [Sphere Inc's analysis of AI context gaps](<https://www.sphereinc.com/blogs/ai-memory-and-context/>) found that what most organizations actually need isn't just retention — it's understanding. AI that doesn't just store what was said, but can reason about why it mattered. I think that's right. And I think we're still early.
+For what it's worth: [Sphere Inc's analysis of AI context gaps](https://www.sphereinc.com/blogs/ai-memory-and-context/) found that what most organizations actually need isn't just retention — it's understanding. AI that doesn't just store what was said, but can reason about why it mattered. I think that's right. And I think we're still early.
 
 I'm not sure I've fully figured out my own solution here. I'm still experimenting — some combinations work better than others for different types of projects. But I do know this: **the re-explanation tax is real, and naming it is the first step to fixing it.**
 
@@ -129,13 +129,13 @@ _This is based on my own experience running a solo content operation and the res
 
 ## Previous Posts:
 
-  * [If you've ever tried maintaining your own automation setup, this real-world breakdown of Feishu CLI shows what solo operators actually deal with](</blog/feishu-cli-solo-work-setup>).
+  * [If you've ever tried maintaining your own automation setup, this real-world breakdown of Feishu CLI shows what solo operators actually deal with](/blog/feishu-cli-solo-work-setup).
 
-  * [Want to see how solo founders are using AI to operate like a full team (without constant re-explaining)? Start here](</blog/how-one-person-businesses-work-like-a-team-with-ai>).
+  * [Want to see how solo founders are using AI to operate like a full team (without constant re-explaining)? Start here](/blog/how-one-person-businesses-work-like-a-team-with-ai).
 
-  * [Still deciding between chat-based AI and something more execution-focused? This guide breaks down the difference between AI agents and assistants](</blog/ai-agent-vs-ai-assistant>).
+  * [Still deciding between chat-based AI and something more execution-focused? This guide breaks down the difference between AI agents and assistants](/blog/ai-agent-vs-ai-assistant).
 
-  * [If you're trying to turn repeated prompts into reusable workflows, this step-by-step guide to building an AI agent is a solid next read](</blog/how-to-build-an-ai-agent>).
+  * [If you're trying to turn repeated prompts into reusable workflows, this step-by-step guide to building an AI agent is a solid next read](/blog/how-to-build-an-ai-agent).
 
-  * [And if you're exploring tools that go beyond stateless chats, this comparison of workflow builders vs AI workspaces will help you choose](</blog/workflow-builder-vs-ai-workspace>).
+  * [And if you're exploring tools that go beyond stateless chats, this comparison of workflow builders vs AI workspaces will help you choose](/blog/workflow-builder-vs-ai-workspace).
 

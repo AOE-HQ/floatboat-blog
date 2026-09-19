@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-嗨，又见面啦，我是 Nova～先坦白：有一段时间，我把这两个词当成同义词在用。[AI Agent](<https://www.ibm.com/think/topics/ai-agents>)、AI 助手……我一度以为它们只是同一个东西的两种营销叫法。
+嗨，又见面啦，我是 Nova～先坦白：有一段时间，我把这两个词当成同义词在用。[AI Agent](https://www.ibm.com/think/topics/ai-agents)、AI 助手……我一度以为它们只是同一个东西的两种营销叫法。
 
 后来我开始认真研究 AI 工作流工具，越来越频繁地撞见「这个区分真的要紧」的场景——而且不是理论上的要紧，是「我搭错了，结果它没按我想的来」那种要紧。
 
@@ -33,7 +33,7 @@ AI 助手是**被动响应式**的。你问，它答。你不问，它就停。
 
 想想默认形态的 ChatGPT、Siri、Google Assistant 这类工具：你给它一个提示词，它给你一个回答。写草稿、答问题、总结文档——干这些活它确实管用。但大多数助手的记忆属于研究者所说的**会话级记忆（Session-Scoped Memory）**：它记得本段对话里前五句你说了什么，可你一关掉这个窗口开个新的，上下文就没了。
 
-按 [Google 关于对话式 AI 系统的官方文档](<https://cloud.google.com/conversational-ai?hl=en>)，助手的设计目标是在**一个会话内**处理离散的交互——既不跨会话跟踪状态，也不自主串联动作。这是设计取舍，不是他们忘了修的缺陷。
+按 [Google 关于对话式 AI 系统的官方文档](https://cloud.google.com/conversational-ai?hl=en)，助手的设计目标是在**一个会话内**处理离散的交互——既不跨会话跟踪状态，也不自主串联动作。这是设计取舍，不是他们忘了修的缺陷。
 
 **助手依然擅长的场景**
 
@@ -53,13 +53,13 @@ AI Agent 是**主动执行**的。你给它一个目标，它自己想办法抵�
 
 所以你不必说「做第一步、再做第二步、再做第三步」，你只要说「目标是这个」——剩下的路径，Agent 自己找。
 
-[IBM 关于 AI Agent 架构的研究](<https://www.ibm.com/think/topics/ai-agents>)把这个拆得很细：Agent 靠**感知—推理—行动循环**运转。它观察环境（输入、工具输出、记忆），推理下一步该做什么，然后采取行动——如此往复，直到达成目标。有些 Agent 甚至能直接操作电脑——点击、输入、浏览页面——替你完成任务。
+[IBM 关于 AI Agent 架构的研究](https://www.ibm.com/think/topics/ai-agents)把这个拆得很细：Agent 靠**感知—推理—行动循环**运转。它观察环境（输入、工具输出、记忆），推理下一步该做什么，然后采取行动——如此往复，直到达成目标。有些 Agent 甚至能直接操作电脑——点击、输入、浏览页面——替你完成任务。
 
 **真正的看点在记忆差异上**
 
 这里最能看出深浅。
 
-助手只有会话记忆。Agent 需要的更接近研究者所说的**情景记忆（Episodic Memory）**——能横跨多个会话、多个目标、多个结果而持续存在的上下文。按 [LangChain 关于 Agent 记忆类型的文档](<https://python.langchain.com/docs/concepts/memory/>)，Agent 的记忆体系通常区分三种：短期记忆（上下文内）、长期记忆（外部存储）、程序性记忆（习得的行为）。大多数助手只有第一种。
+助手只有会话记忆。Agent 需要的更接近研究者所说的**情景记忆（Episodic Memory）**——能横跨多个会话、多个目标、多个结果而持续存在的上下文。按 [LangChain 关于 Agent 记忆类型的文档](https://python.langchain.com/docs/concepts/memory/)，Agent 的记忆体系通常区分三种：短期记忆（上下文内）、长期记忆（外部存储）、程序性记忆（习得的行为）。大多数助手只有第一种。
 
 落到实操：Agent 能记住客户六个月前的偏好，能标记「上次那个做法没成，这次换个思路」。这些不是你把提示词写得更好就能复刻的。
 
@@ -84,7 +84,7 @@ Pieces 有篇文章讲 Agent 与助手的区别，里面有个说法我觉得很
 
 我大概花了三个小时搭初始结构。之后一周内，就把这三小时赚回来了。
 
-这不是对你体验的承诺，只是我自己的观察。如果你想看技术层面到底怎么落地，[n8n 的 Agent 化工作流文档](<https://docs.n8n.io/advanced-ai/intro-tutorial/>)是不错的参考。
+这不是对你体验的承诺，只是我自己的观察。如果你想看技术层面到底怎么落地，[n8n 的 Agent 化工作流文档](https://docs.n8n.io/advanced-ai/intro-tutorial/)是不错的参考。
 
 ![2.png](/blog/images/ai-agent-vs-ai-assistant/1775213442227-4cff350b-6287-4a95-aa2b-a7decdc6407e.webp)
 
@@ -104,9 +104,9 @@ Pieces 有篇文章讲 Agent 与助手的区别，里面有个说法我觉得很
 
 说句实话：这个区分正在变得更乱，而不是更清楚。
 
-很多自称 Assistant 的工具在悄悄加 Agent 功能——记忆、工具调用、多步执行。而有些叫 Agent 的东西，本质就是包装精致的聊天机器人。[MIT Technology Review 关于 AI Agent 开发的报道](<https://www.technologyreview.com/2026/03/10/1134083/building-a-strong-data-infrastructure-for-ai-agent-success/>)很好地追踪了这种能力融合——这是当下该领域最清晰的趋势之一。
+很多自称 Assistant 的工具在悄悄加 Agent 功能——记忆、工具调用、多步执行。而有些叫 Agent 的东西，本质就是包装精致的聊天机器人。[MIT Technology Review 关于 AI Agent 开发的报道](https://www.technologyreview.com/2026/03/10/1134083/building-a-strong-data-infrastructure-for-ai-agent-success/)很好地追踪了这种能力融合——这是当下该领域最清晰的趋势之一。
 
-界线在架构层面也在模糊。助手可以充当面向用户的前端，背后触发的却是 Agent 驱动的工作流——一种混合形态：你面对的界面看起来像普通助手，其实它背后正在跑 Agent 流程。[Anthropic 关于工具调用与 Agent 行为的研究](<https://www.anthropic.com/research/measuring-agent-autonomy>)为这类混合架构该怎么设计提供了有用的背景。
+界线在架构层面也在模糊。助手可以充当面向用户的前端，背后触发的却是 Agent 驱动的工作流——一种混合形态：你面对的界面看起来像普通助手，其实它背后正在跑 Agent 流程。[Anthropic 关于工具调用与 Agent 行为的研究](https://www.anthropic.com/research/measuring-agent-autonomy)为这类混合架构该怎么设计提供了有用的背景。
 
 我现在不再问「这是 Agent 还是助手」，而是问：**这个系统记得我多少，又能在多大程度上不靠我扶着就自己干活？**这两个问题，能穿透大部分营销噪音。
 
@@ -118,11 +118,11 @@ Pieces 有篇文章讲 Agent 与助手的区别，里面有个说法我觉得很
 
 _相关阅读：_
 
-  * [AI Agent 真实落地案例：调研、内容与运营场景](</blog/ai-agent-use-cases-real-examples>)
+  * [AI Agent 真实落地案例：调研、内容与运营场景](/blog/ai-agent-use-cases-real-examples)
 
-  * [一人公司如何靠 AI 分工，像完整团队一样运转](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [一人公司如何靠 AI 分工，像完整团队一样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [AI 自动化在真实市场上到底怎么定价](</blog/ai-automation-agency-pricing>)
+  * [AI 自动化在真实市场上到底怎么定价](/blog/ai-automation-agency-pricing)
 
-  * [Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](</blog/lindy-vs-gumloop>)
+  * [Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](/blog/lindy-vs-gumloop)
 

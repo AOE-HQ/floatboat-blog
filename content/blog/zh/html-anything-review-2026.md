@@ -19,9 +19,9 @@ draft: false
 
 它的主张很短：**你的本地 AI agent 写 HTML，你负责发布。**
 
-html-anything 是 [GitHub 上的 nexu-io 团队](<https://github.com/nexu-io/html-anything>)的开源项目——也就是 Open Design 背后的同一批人，那个项目上线几周就揽了几万颗星。它采用 Apache-2.0 许可，大约三天内写成、约 1.5 万行代码，2026 年 5 月发布。
+html-anything 是 [GitHub 上的 nexu-io 团队](https://github.com/nexu-io/html-anything)的开源项目——也就是 Open Design 背后的同一批人，那个项目上线几周就揽了几万颗星。它采用 Apache-2.0 许可，大约三天内写成、约 1.5 万行代码，2026 年 5 月发布。
 
-它的论点直接连着 Thariq Shihipar 在[那个讲「HTML 的惊人有效性」的配套网站](<https://thariqs.github.io/html-effectiveness/>)里主张的东西：如果你的 AI agent 能产出丰富、可视化、可交互的 HTML，而不是扁平的 Markdown，那输出就成了人们真的会去互动的东西。html-anything 把这个论点接过来，给它裹上一层生产工作流。
+它的论点直接连着 Thariq Shihipar 在[那个讲「HTML 的惊人有效性」的配套网站](https://thariqs.github.io/html-effectiveness/)里主张的东西：如果你的 AI agent 能产出丰富、可视化、可交互的 HTML，而不是扁平的 Markdown，那输出就成了人们真的会去互动的东西。html-anything 把这个论点接过来，给它裹上一层生产工作流。
 
 我是这样理解它想证明的东西的：「Agentic HTML 编辑器」这个概念——agent 负责写、人负责复核和发布——不应该要求你自己东拼西凑五六个工具。一个界面、模板内置、导出齐全。这就是它的赌注。
 
@@ -37,7 +37,7 @@ html-anything 是 [GitHub 上的 nexu-io 团队](<https://github.com/nexu-io/htm
 
 「零 API 密钥 AI 工具」的标签就是这么来的，而且名副其实——但有个前提，我在 FAQ 里会讲到。
 
-模板系统是这工具最有主见的地方。**横跨 9 种交付表面的 75 个技能模板**：杂志文章、主题演讲幻灯片、海报、简历、小红书卡片、推文卡片、网页原型、数据报告和 Hyperframes 视频。每个技能都遵循 [Claude Code ](<https://docs.anthropic.com/en/docs/claude-code/skills>)[SKILL.md](<http://SKILL.md>)[ 规范](<https://docs.anthropic.com/en/docs/claude-code/skills>)，并在 frontmatter 里扩展了 mode、scenario、surface 和 design system 字段。
+模板系统是这工具最有主见的地方。**横跨 9 种交付表面的 75 个技能模板**：杂志文章、主题演讲幻灯片、海报、简历、小红书卡片、推文卡片、网页原型、数据报告和 Hyperframes 视频。每个技能都遵循 [Claude Code ](https://docs.anthropic.com/en/docs/claude-code/skills)[SKILL.md](http://SKILL.md)[ 规范](https://docs.anthropic.com/en/docs/claude-code/skills)，并在 frontmatter 里扩展了 mode、scenario、surface 和 design system 字段。
 
 预览发生在带 SSE 流式传输的沙箱 iframe 里——agent 生成时，你能实时看着输出一点点成型。导出目标包括微信（内联 CSS）、X、知乎、独立 HTML 和 PNG。微信导出这个小细节，透露了这个团队在给谁做产品——需要在差异极大的分发渠道上跨平台发内容的创作者。
 
@@ -57,7 +57,7 @@ html-anything 是 [GitHub 上的 nexu-io 团队](<https://github.com/nexu-io/htm
 
 **本地优先 = 你的数据留在原地。**对拿客户材料或自有研究干活的单人创业者来说，这一点比多数工具评测承认的更重要。你的提示词和输出不经过第三方服务器，只经过你已经完成认证的那个 agent CLI。就这么多。
 
-哦，还有 Hyperframes 功能——通过 [Remotion 的渲染框架](<https://www.remotion.dev/docs/>)把 HTML 转成 MP4——值得知道一下。它是一条额外的渲染管线，我没试过，但「不离开工作流就把一段排好版的 HTML 变成视频片段」这个思路，是那种会让你脱口而出「等等，它连这个都能做？」的东西。
+哦，还有 Hyperframes 功能——通过 [Remotion 的渲染框架](https://www.remotion.dev/docs/)把 HTML 转成 MP4——值得知道一下。它是一条额外的渲染管线，我没试过，但「不离开工作流就把一段排好版的 HTML 变成视频片段」这个思路，是那种会让你脱口而出「等等，它连这个都能做？」的东西。
 
 ![4.png](/blog/images/html-anything-review-2026/1779257425395-df0bf7d0-87d1-4f0b-9435-38cfe7894835.webp)
 
@@ -83,9 +83,9 @@ html-anything 是 [GitHub 上的 nexu-io 团队](<https://github.com/nexu-io/htm
 
 这是我的诚实判断。如果你已经装了编程 agent CLI、又经常跨多个平台产出视觉内容，html-anything 今天值得一试。模板库是真的，导出管线覆盖了多数工具忽视的平台，本地优先架构解决了一个很要紧的信任问题。
 
-如果你不是 CLI 型选手——如果你的工作流活在 [Claude 的 Artifacts 面板](<https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them>)或 ChatGPT Canvas 里——html-anything 现在并不会替掉那些工具。它们做一次性任务更快。html-anything 是给你这个需求的：从一个你已经信任的 agent 那里拿到**可重复、多平台、视觉一致的输出**。
+如果你不是 CLI 型选手——如果你的工作流活在 [Claude 的 Artifacts 面板](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)或 ChatGPT Canvas 里——html-anything 现在并不会替掉那些工具。它们做一次性任务更快。html-anything 是给你这个需求的：从一个你已经信任的 agent 那里拿到**可重复、多平台、视觉一致的输出**。
 
-如果答案还不明显，就再等等。这项目动得很快，三个月后能用的东西可能就不一样了。先把[仓库](<https://github.com/nexu-io/html-anything>)收藏起来，准备好了再回来看。
+如果答案还不明显，就再等等。这项目动得很快，三个月后能用的东西可能就不一样了。先把[仓库](https://github.com/nexu-io/html-anything)收藏起来，准备好了再回来看。
 
 ![5.png](/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.webp)
 
@@ -93,11 +93,11 @@ html-anything 是 [GitHub 上的 nexu-io 团队](<https://github.com/nexu-io/htm
 
 ## 往期文章
 
-• [已经在用编程 agent？推荐阅读：Claude Code for Non-Developers：单人创业者该知道的](</blog/claude-code-non-developers-solo-operators>)
+• [已经在用编程 agent？推荐阅读：Claude Code for Non-Developers：单人创业者该知道的](/blog/claude-code-non-developers-solo-operators)
 
-• [在想超越聊天界面的事？推荐阅读：AI 工作区 Agent 与人机协作工作区的未来](</blog/ai-workspace-agents>)
+• [在想超越聊天界面的事？推荐阅读：AI 工作区 Agent 与人机协作工作区的未来](/blog/ai-workspace-agents)
 
-• [需要可重复的创意工作流，而不是一次性提示词？推荐阅读：独立创业者的 AI 工作流：什么真的管用](</blog/ai-workflow-for-solo-founders>)
+• [需要可重复的创意工作流，而不是一次性提示词？推荐阅读：独立创业者的 AI 工作流：什么真的管用](/blog/ai-workflow-for-solo-founders)
 
-• [想减少工作流里来回切换工具？推荐阅读：别再上下文切换：为什么工作区 Agent 重要](</blog/stop-context-switching-workspace-agent>)
+• [想减少工作流里来回切换工具？推荐阅读：别再上下文切换：为什么工作区 Agent 重要](/blog/stop-context-switching-workspace-agent)
 

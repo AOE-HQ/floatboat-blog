@@ -32,7 +32,7 @@ This guide covers everything you need to orient yourself before the tournament b
 
 The tournament opens on **June 11, 2026** and concludes with the final on **July 19, 2026** — 39 days total. This is the longest World Cup in history, driven by the expanded format from 32 to 48 teams and the geographic spread of host cities across four time zones.
 
-The group stage runs from June 11 through June 27 (17 days, 72 matches). The knockout stage begins on June 28 with the new Round of 32 and runs through the final on July 19 (22 days, 32 knockout matches). [Source: FIFA — Match Schedule, Fixtures, Results & Stadiums](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums>)
+The group stage runs from June 11 through June 27 (17 days, 72 matches). The knockout stage begins on June 28 with the new Round of 32 and runs through the final on July 19 (22 days, 32 knockout matches). [Source: FIFA — Match Schedule, Fixtures, Results & Stadiums](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums)
 
 Key milestone dates:
 
@@ -46,7 +46,7 @@ For the full 104-match fixture list, including every kickoff time and venue, see
 
 ## Where Is the 2026 World Cup Being Held?
 
-The 2026 World Cup is the first co-hosted by three nations. The 16 host cities break down as follows: [Source: FIFA — Match Schedule, Fixtures, Results & Stadiums](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums>)
+The 2026 World Cup is the first co-hosted by three nations. The 16 host cities break down as follows: [Source: FIFA — Match Schedule, Fixtures, Results & Stadiums](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums)
 
   * **United States (11 cities)** : Atlanta, Boston, Dallas, Houston, Kansas City, Los Angeles, Miami, New York/New Jersey, Philadelphia, San Francisco Bay Area, Seattle. The US hosts 78 of 104 matches, including every match from the quarterfinals onward.
 
@@ -60,7 +60,7 @@ A detailed host city guide with stadium capacities and match allocations is fort
 
 ## How Many Teams Are in the 2026 World Cup?
 
-48 teams — up from the 32-team format used from 1998 through 2022. The expansion adds 16 nations and fundamentally reshapes the competitive structure. The 48 slots are allocated by confederation: [Source: FIFA — 2026 World Cup Qualified Teams](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+48 teams — up from the 32-team format used from 1998 through 2022. The expansion adds 16 nations and fundamentally reshapes the competitive structure. The 48 slots are allocated by confederation: [Source: FIFA — 2026 World Cup Qualified Teams](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 
 

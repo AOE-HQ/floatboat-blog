@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Hi, Nova is coming. Recently, [Feishu officially open-sourced Lark CLI](<https://github.com/riba2534/feishu-cli>), and it instantly took the developer and AI agent communities by storm. Many people are discussing how this finally allows AI assistants like Claude, Cursor, or others to directly control Feishu’s messages, calendars, documents, and multi-dimensional tables with a single command…
+Hi, Nova is coming. Recently, [Feishu officially open-sourced Lark CLI](https://github.com/riba2534/feishu-cli), and it instantly took the developer and AI agent communities by storm. Many people are discussing how this finally allows AI assistants like Claude, Cursor, or others to directly control Feishu’s messages, calendars, documents, and multi-dimensional tables with a single command…
 
 **Sounds cool, right?**
 
@@ -23,7 +23,7 @@ That’s what I want to talk about—not a setup guide, nor API documentation, b
 
 ### Beyond notifications — what real CLI uses looks like
 
-A lot of people start with Feishu CLI doing lightweight things: reading out a document, pulling a message thread, maybe searching across a knowledge base. That part feels manageable. The [Feishu Open Platform](<https://open.feishu.cn/document/home/index?lang=en-US>) exposes a genuinely broad set of APIs — messaging, docs, calendars, wikis, Bitable — and the CLI wraps a good portion of them in a way that doesn't require writing full application code every time.
+A lot of people start with Feishu CLI doing lightweight things: reading out a document, pulling a message thread, maybe searching across a knowledge base. That part feels manageable. The [Feishu Open Platform](https://open.feishu.cn/document/home/index?lang=en-US) exposes a genuinely broad set of APIs — messaging, docs, calendars, wikis, Bitable — and the CLI wraps a good portion of them in a way that doesn't require writing full application code every time.
 
 But "deep integration" means something different. It means **you're using CLI commands as steps inside a repeating workflow** — something that runs on a schedule, or gets triggered by an external event, or pipes output from one system into another. That's where it stops feeling like a shortcut and starts feeling like infrastructure.
 
@@ -35,7 +35,7 @@ And infrastructure, for a solo operator, means _you_ are the ops team.
 
 This distinction matters more than most guides admit. Reading a document or pulling message history is relatively forgiving — if a command fails, nothing downstream breaks, and you can just run it again. **Executing actions** — sending messages, updating records, modifying calendar events, triggering downstream processes — is a different class of risk entirely.
 
-The [OAuth permission scopes on the Feishu platform](<https://open.feishu.cn/document/platform-overveiw/basic-concepts/overview>) are separated for exactly this reason: **read permissions and write/action permissions require separate approval and carry different consequences if something misfires. ​** When you're the only person running the setup, a script that sends a duplicate message to a client group, or posts an update to the wrong channel, isn't a "dev environment bug." It's just... what happened.
+The [OAuth permission scopes on the Feishu platform](https://open.feishu.cn/document/platform-overveiw/basic-concepts/overview) are separated for exactly this reason: **read permissions and write/action permissions require separate approval and carry different consequences if something misfires. ​** When you're the only person running the setup, a script that sends a duplicate message to a client group, or posts an update to the wrong channel, isn't a "dev environment bug." It's just... what happened.
 
 ## Three Things Solo Operators Actually Try to Build
 
@@ -59,7 +59,7 @@ For a solo operator, that often means a small script living on your machine or a
 
 ### Connecting Feishu data to other tools in your stack
 
-The most ambitious version of this: Feishu as a data hub, where information flows between it and your other tools — project trackers, note systems, writing environments, external databases. This is conceptually sound. Feishu's API covers enough surface area, and the [Feishu/Lark official MCP integration](<https://github.com/larksuite/lark-openapi-mcp>) has expanded the connective tissue between Feishu and AI-adjacent tools significantly.
+The most ambitious version of this: Feishu as a data hub, where information flows between it and your other tools — project trackers, note systems, writing environments, external databases. This is conceptually sound. Feishu's API covers enough surface area, and the [Feishu/Lark official MCP integration](https://github.com/larksuite/lark-openapi-mcp) has expanded the connective tissue between Feishu and AI-adjacent tools significantly.
 
 But in practice, every new connection you add is another thing that can silently stop working. Each integration has its own auth model, its own rate limits, its own API versioning schedule. **The complexity doesn't add linearly — it compounds.** Two integrations might be manageable; five becomes a part-time maintenance job.
 
@@ -101,7 +101,7 @@ For a solo operator, the realistic maintenance rhythm is: one check-in per month
 
 ### API changes and what they break
 
-The [Feishu Open Platform documentation](<https://open.feishu.cn/document/server-docs/api-call-guide/calling-process/get-access-token>) is genuinely good, and they do communicate deprecations. But "communicated deprecation" and "you noticed the deprecation before it broke your workflow" are different things.
+The [Feishu Open Platform documentation](https://open.feishu.cn/document/server-docs/api-call-guide/calling-process/get-access-token) is genuinely good, and they do communicate deprecations. But "communicated deprecation" and "you noticed the deprecation before it broke your workflow" are different things.
 
 The specific risk for solo operators: **you're not subscribed to a developer mailing list, you don't have a QA environment, and you probably don't have tests written for your CLI scripts.** So when an API changes behavior — a field gets renamed, a pagination parameter changes, a new required header gets added — you find out when something breaks in production (which, for a solo operator, is also the only environment).
 
@@ -121,7 +121,7 @@ This is the part that genuinely requires a mindset shift. In a team environment,
 
 The underlying principle from solid developer documentation on error handling: build for the case where things break, not the case where they work. For a solo operator, this means slightly more upfront work but dramatically less "wait, when did this stop running?" time later.
 
-For teams or developers who want a more robust framework for thinking about automation reliability, resources like [the 12-Factor App methodology](<https://12factor.net/>) offer solid grounding in building maintainable, observable processes — much of it applies to solo automation setups too.
+For teams or developers who want a more robust framework for thinking about automation reliability, resources like [the 12-Factor App methodology](https://12factor.net/) offer solid grounding in building maintainable, observable processes — much of it applies to solo automation setups too.
 
 ![6.png](/blog/images/feishu-cli-solo-work-setup/1774921860094-bb72c8f2-80c9-4d69-9674-cbe6308e9ac9.webp)
 
@@ -147,7 +147,7 @@ A few questions worth sitting with before going deep on Feishu CLI integration a
 
 **Are you comfortable with the token management overhead?** The OAuth flow for user access tokens is not complicated, but it's also not zero — it requires occasional intervention, especially in automated contexts. This is documented behavior in the platform's authentication model, not a bug.
 
-**Is the workflow stable enough to be worth automating?** Automating something you're still figuring out is how you end up with fragile infrastructure. Get the manual version working well first. There's wisdom in resources like [Google's Site Reliability Engineering principles](<https://sre.google/sre-book/table-of-contents/>) about the costs of premature automation — even if the context is enterprise-scale, the underlying logic applies to solo setups.
+**Is the workflow stable enough to be worth automating?** Automating something you're still figuring out is how you end up with fragile infrastructure. Get the manual version working well first. There's wisdom in resources like [Google's Site Reliability Engineering principles](https://sre.google/sre-book/table-of-contents/) about the costs of premature automation — even if the context is enterprise-scale, the underlying logic applies to solo setups.
 
 The bottom line is that Feishu CLI is genuinely capable for solo operator use cases. But "capable" and "maintenance-free" are not the same thing. The integrations that hold up over time are the ones built with clear eyes about what ongoing ownership actually looks like — tokens, API changes, error handling, and all.
 
@@ -157,13 +157,13 @@ _Anyway, that's what I've been figuring out. Still experimenting, still learning
 
 ## Previous Posts:
 
-  1. **[Understand the trade-offs between using an AI agent and a chatbot for your workflow](</blog/ai-agent-vs-chatbot>)**
+  1. **[Understand the trade-offs between using an AI agent and a chatbot for your workflow](/blog/ai-agent-vs-chatbot)**
 
-  2. **[Explore how to build and maintain custom AI agents with ease](</blog/how-to-build-an-ai-agent>)**
+  2. **[Explore how to build and maintain custom AI agents with ease](/blog/how-to-build-an-ai-agent)**
 
-  3. **[Learn about alternative AI agent development services for better results](</blog/ai-agent-development-services>)**
+  3. **[Learn about alternative AI agent development services for better results](/blog/ai-agent-development-services)**
 
-  4. **[Check out the differences between Genspark and Manus for AI automation solutions](</blog/genspark-vs-manus>)**
+  4. **[Check out the differences between Genspark and Manus for AI automation solutions](/blog/genspark-vs-manus)**
 
-  5. **[Discover alternatives to Gumloop for building efficient AI workflows](</blog/gumloop-alternatives-2026>)**
+  5. **[Discover alternatives to Gumloop for building efficient AI workflows](/blog/gumloop-alternatives-2026)**
 

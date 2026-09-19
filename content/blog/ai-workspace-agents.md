@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Someone asked me last week what I meant by "workspace agent." I'd been using the phrase casually for months without actually defining it, which is funny because the tools in this category have been quietly multiplying — and as of late April 2026, [OpenAI's calling its new ChatGPT feature by almost exactly that name](<https://openai.com/index/introducing-workspace-agents-in-chatgpt/>). The term is getting crowded fast.
+Someone asked me last week what I meant by "workspace agent." I'd been using the phrase casually for months without actually defining it, which is funny because the tools in this category have been quietly multiplying — and as of late April 2026, [OpenAI's calling its new ChatGPT feature by almost exactly that name](https://openai.com/index/introducing-workspace-agents-in-chatgpt/). The term is getting crowded fast.
 
 So I figured it was time to write down what I actually mean when I say it. Not a definitive dictionary entry — just a plain-language map of the category as I see it right now, two months of hands-on use in.
 
@@ -65,7 +65,7 @@ The line is blurring — ChatGPT has Connectors, Claude has Cowork, Gemini has W
 
 This is the distinction most people get wrong, I think.
 
-Workflow builders let you _pre-define_ automations: when X happens, do Y, then Z. You draw the flowchart, you set the triggers, the system executes reliably. [Zapier is the grandfather of this shape](<https://zapier.com/blog/gumloop-vs-zapier/>); Gumloop is the AI-native successor. Both are incredibly powerful for repeated, predictable tasks.
+Workflow builders let you _pre-define_ automations: when X happens, do Y, then Z. You draw the flowchart, you set the triggers, the system executes reliably. [Zapier is the grandfather of this shape](https://zapier.com/blog/gumloop-vs-zapier/); Gumloop is the AI-native successor. Both are incredibly powerful for repeated, predictable tasks.
 
 Workspace agents work in the opposite direction. You _don't_ pre-define the steps. You describe the outcome, and the agent figures out the sequence — deciding which file to open, which tool to call, when to stop and ask. It's less reliable on known-shape tasks (a Zap will always do the exact same thing), but much better on tasks where the shape itself changes.
 
@@ -75,7 +75,7 @@ If your afternoon looks the same every Tuesday, build a Zap. If your afternoon i
 
 ### vs self-hosted AI agents
 
-This one's mostly for developers, so I'll be brief. Self-hosted agents — the kind engineers spin up with frameworks like LangChain, or [multi-agent developer tools like Claude Code, Codex, or standalone workspaces like Nimbalyst](<https://nimbalyst.com/blog/best-multi-agent-desktop-apps-claude-code-codex-2026/>) — give you full control over prompts, memory, tool access, and execution. You own the whole stack.
+This one's mostly for developers, so I'll be brief. Self-hosted agents — the kind engineers spin up with frameworks like LangChain, or [multi-agent developer tools like Claude Code, Codex, or standalone workspaces like Nimbalyst](https://nimbalyst.com/blog/best-multi-agent-desktop-apps-claude-code-codex-2026/) — give you full control over prompts, memory, tool access, and execution. You own the whole stack.
 
 Workspace agents, as a consumer/prosumer category, trade that control for setup-free use. You don't configure; you just open the app and start working. The tradeoff is real: you're renting the orchestration layer, not owning it.
 
@@ -89,9 +89,9 @@ Features lists get boring fast, so let me describe this by shape rather than by 
 
 ![4.png](/blog/images/ai-workspace-agents/1776938903868-854caf84-9b34-450c-8dd9-73945bb2a6d7.webp)
 
-The core unlock is that the agent can see what you see. [Skywork Desktop's launch post puts it well](<https://finance.yahoo.com/news/skywork-launches-desktop-ai-agent-162800505.html>) — the point is "local file understanding without uploads, allowing agents to work from user-selected folders as a persistent context rather than relying on one-off attachments."
+The core unlock is that the agent can see what you see. [Skywork Desktop's launch post puts it well](https://finance.yahoo.com/news/skywork-launches-desktop-ai-agent-162800505.html) — the point is "local file understanding without uploads, allowing agents to work from user-selected folders as a persistent context rather than relying on one-off attachments."
 
-[Genspark framed the same idea a different way](<https://www.genspark.ai/blog/genspark-ai-workspace-4>) when they released their desktop client: AI that "sees and operates your files, your applications, and your screen — not just what's inside a browser tab." Different products, same core shift.
+[Genspark framed the same idea a different way](https://www.genspark.ai/blog/genspark-ai-workspace-4) when they released their desktop client: AI that "sees and operates your files, your applications, and your screen — not just what's inside a browser tab." Different products, same core shift.
 
 In practice that means: the agent opens the PDF itself, scrolls the webpage itself, edits the doc itself. You're not the middleware anymore.
 
@@ -169,13 +169,13 @@ That's where I am with the category today. It's still early, the edges are fuzzy
 
 **Previous Posts:**
 
-  * [AI Agent vs Chatbot: What Actually Changes in How You Work](</blog/ai-agent-vs-chatbot>)
+  * [AI Agent vs Chatbot: What Actually Changes in How You Work](/blog/ai-agent-vs-chatbot)
 
-  * [Workflow Builder vs AI Workspace: Two Very Different Shapes of Automation](</blog/workflow-builder-vs-ai-workspace>)
+  * [Workflow Builder vs AI Workspace: Two Very Different Shapes of Automation](/blog/workflow-builder-vs-ai-workspace)
 
-  * [What Is a Persistent AI Agent (And Why Memory Changes Everything)](</blog/what-is-persistent-ai-agent>)
+  * [What Is a Persistent AI Agent (And Why Memory Changes Everything)](/blog/what-is-persistent-ai-agent)
 
-  * [AI Workflow for Solo Founders: Where Context Switching Actually Hurts](</blog/ai-workflow-for-solo-founders>)
+  * [AI Workflow for Solo Founders: Where Context Switching Actually Hurts](/blog/ai-workflow-for-solo-founders)
 
-  * [How One-Person Businesses Start Working Like a Team With AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [How One-Person Businesses Start Working Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

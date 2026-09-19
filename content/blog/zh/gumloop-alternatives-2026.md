@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-_你好，又见面了~ 我是 Nova。说实话，我开始找 [Gumloop](<https://www.gumloop.com/>) 的替代品，不是因为觉得它是烂工具，而是因为我意识到它和我真实的工作方式不太合拍。这是另一个层面的问题。_
+_你好，又见面了~ 我是 Nova。说实话，我开始找 [Gumloop](https://www.gumloop.com/) 的替代品，不是因为觉得它是烂工具，而是因为我意识到它和我真实的工作方式不太合拍。这是另一个层面的问题。_
 
 _试了其它选项几周之后，我想把发现分享给你——不是一份排名，更像一张地图：不同工具，服务不同类型的工作。_
 
@@ -47,7 +47,7 @@ _试了其它选项几周之后，我想把发现分享给你——不是一份�
 
 n8n 开源、高度可定制，在安全或基础设施控制是硬指标时非常好用。要真正用好它，你得熟悉 JavaScript、JSON 和 REST API。
 
-价格方面（2026 年初口径）：自托管社区版免费、不限执行次数；云套餐从每月 $24（Starter，2,500 次执行）到每月 $60（Pro，10,000 次执行）不等。层级调整过几次，最新明细请看[ n8n 官方定价页](<https://n8n.io/pricing/>)。
+价格方面（2026 年初口径）：自托管社区版免费、不限执行次数；云套餐从每月 $24（Starter，2,500 次执行）到每月 $60（Pro，10,000 次执行）不等。层级调整过几次，最新明细请看[ n8n 官方定价页](https://n8n.io/pricing/)。
 
 **适合**：开发者、技术型创始人、能打理 VPS 和偶尔凌晨两点的 Docker 故障的运维团队。**不适合**：没有技术背景、只想事情跑起来又不想背着维护包袱的单人创业者。
 
@@ -57,7 +57,7 @@ n8n 开源、高度可定制，在安全或基础设施控制是硬指标时非�
 
 Make 是给可视化思考者准备的。工作流向多个方向分支时，一眼看全更容易排查问题。如果你喜欢一步步塑形数据，这款用起来很顺手。
 
-[Make.com](<http://Make.com>) 有免费套餐起步（每月 1,000 次操作），Core 约每月 $10.59，Pro 约每月 $18.82，Teams 每月 $34.12。它是这个类别里最实惠的托管选项之一，值得去 [Make 官网](<https://www.make.com/en/pricing>) 细看。
+[Make.com](http://Make.com) 有免费套餐起步（每月 1,000 次操作），Core 约每月 $10.59，Pro 约每月 $18.82，Teams 每月 $34.12。它是这个类别里最实惠的托管选项之一，值得去 [Make 官网](https://www.make.com/en/pricing) 细看。
 
 Make 让你在一块画布上搭多步流程，内置数据处理工具，能在搭建器里映射字段、调整数据。错误处理可以针对失败情况设定规则。
 
@@ -71,13 +71,13 @@ Make 让你在一块画布上搭多步流程，内置数据处理工具，能在
 
 Lindy 像一个永远在线的助理，你可以通过 iMessage 或短信和它互动——发条请求，它就帮你起草邮件、安排会议、会前准备、给收件箱做分诊。
 
-2026 年初价格口径：Plus 套餐每月 $49.99，Pro 每月 $59.99。有 7 天免费试用，但没有永久免费档。最新分档请看 [Lindy 定价页](<https://www.lindy.ai/pricing>)。
+2026 年初价格口径：Plus 套餐每月 $49.99，Pro 每月 $59.99。有 7 天免费试用，但没有永久免费档。最新分档请看 [Lindy 定价页](https://www.lindy.ai/pricing)。
 
 **适合**：希望 AI 直接处理邮件、日程和 CRM 更新、而不想从零搭流程的单人创业者和小团队；尤其当你的瓶颈是日常任务管理、而非批量数据处理时。**不适合**：大批量、重逻辑的数据工作流——那是 Gumloop 的地盘，不是 Lindy 的。
 
 ### ChatGPT + 插件 / Custom GPT
 
-说实话，值得一提——因为很多人都低估了这个组合已经走到多远。如果你的核心需求是**和 AI 一起思考**——起草、调研、做判断——一个配置得当、接好集成的 Custom [GPT](<https://chatgpt.com/?utm_source=google&utm_medium=paid_search&utm_campaign=GOOG_C_SEM_GBR_Core_CHT_TST_ACQ_PER_MIX_ALL_NAMER_US_EN_031126&c_id=23637266097&c_agid=196969198991&c_crid=799723769010&c_kwid=kwd-368538592&c_ims=&c_pms=9060440&c_nw=g&c_dvc=c&gad_source=1&gad_campaignid=23637266097&gbraid=0AAAAA-I0E5f7Ogs8VCWcGfQiY2uNIfgCG&gclid=Cj0KCQjw7IjOBhDyARIsAFzrWQxtBo-XShB-1OvMIPmKMxn48aYGEesBJIN_bxeo4zlU840IJyMYl9UaArBNEALw_wcB>) 能处理相当多的量。
+说实话，值得一提——因为很多人都低估了这个组合已经走到多远。如果你的核心需求是**和 AI 一起思考**——起草、调研、做判断——一个配置得当、接好集成的 Custom [GPT](https://chatgpt.com/?utm_source=google&utm_medium=paid_search&utm_campaign=GOOG_C_SEM_GBR_Core_CHT_TST_ACQ_PER_MIX_ALL_NAMER_US_EN_031126&c_id=23637266097&c_agid=196969198991&c_crid=799723769010&c_kwid=kwd-368538592&c_ims=&c_pms=9060440&c_nw=g&c_dvc=c&gad_source=1&gad_campaignid=23637266097&gbraid=0AAAAA-I0E5f7Ogs8VCWcGfQiY2uNIfgCG&gclid=Cj0KCQjw7IjOBhDyARIsAFzrWQxtBo-XShB-1OvMIPmKMxn48aYGEesBJIN_bxeo4zlU840IJyMYl9UaArBNEALw_wcB) 能处理相当多的量。
 
 它不是工作流搭建器，不能自主运行。但对一个主要需要 AI 协助、而非 AI 自动化的单人创作者或创始人来说，它可能就是全部所需——而且成本只有零头。代价是：没有你，什么都不会跑。
 
@@ -99,7 +99,7 @@ Lindy 像一个永远在线的助理，你可以通过 iMessage 或短信和它�
 
   1. **我的问题出在自动化体量，还是上下文碎片化？**如果你同一件事要做 500 遍——那是自动化搭建器的事。如果你在十种工作模式之间来回切换、每次都丢上下文——那是 Workspace 的事。
 
-  2. **六个月后谁来维护？**想要一款价格公道、综合表现最好的替代品，[Relay.app](<https://Relay.app>) 值得考虑——作为诚实的参考，[Relay 对 Gumloop 替代品的对比](<https://www.relay.app/blog/gumloop-alternatives>)是我在这个领域读过比较中肯的一篇。
+  2. **六个月后谁来维护？**想要一款价格公道、综合表现最好的替代品，[Relay.app](https://Relay.app) 值得考虑——作为诚实的参考，[Relay 对 Gumloop 替代品的对比](https://www.relay.app/blog/gumloop-alternatives)是我在这个领域读过比较中肯的一篇。
 
   3. **你真实的使用体量是多少？**积分制和按操作数计费的模型都可能让你意外。投入之前，先把每月真实的工作流运行次数画出来。
 

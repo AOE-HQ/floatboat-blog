@@ -21,13 +21,13 @@ The split that matters isn't "old automation vs new AI." It's about ​ _where t
 
 ### Workflow builders: build once, trigger forever
 
-Workflow builders are pipelines you construct ahead of time. You set a trigger ("new row in this spreadsheet"), then chain a series of nodes — read this, transform that, write here, send that. Once it's running, it runs every time the trigger fires, in the same sequence, with the same logic. Tools like Zapier and [Make.com](<http://Make.com>) are the canonical examples, and they've gotten significantly more capable with embedded AI nodes. Zapier alone now connects to over 8,000 apps, and the modern era of these platforms increasingly bakes LLMs into individual steps — you can route, summarize, or extract inside a node mid-pipeline. **The shape of the work is fixed. The intelligence sits inside one or two steps.**
+Workflow builders are pipelines you construct ahead of time. You set a trigger ("new row in this spreadsheet"), then chain a series of nodes — read this, transform that, write here, send that. Once it's running, it runs every time the trigger fires, in the same sequence, with the same logic. Tools like Zapier and [Make.com](http://Make.com) are the canonical examples, and they've gotten significantly more capable with embedded AI nodes. Zapier alone now connects to over 8,000 apps, and the modern era of these platforms increasingly bakes LLMs into individual steps — you can route, summarize, or extract inside a node mid-pipeline. **The shape of the work is fixed. The intelligence sits inside one or two steps.**
 
 ### Workspace agents: AI inside the work as it happens
 
 Workspace agents are a different idea. Instead of pre-defining a pipeline, you sit inside an AI-aware environment — usually a desktop or browser layer — and the agent works alongside you on whatever you're doing right now. Files, browser tabs, notes, drafts. You ask it to do something, it figures out the steps, executes, and you adjust as it goes.
 
-Anthropic's research team has a [useful definition for this distinction](<https://www.anthropic.com/research/building-effective-agents>) — workflows are "systems where LLMs and tools are orchestrated through predefined code paths," while agents are systems where the model "dynamically directs its own processes and tool usage." That language is for engineers building these things, but it captures the user-facing difference too. **Workflow builders run the path you drew. Workspace agents pick the path while the work is happening.**
+Anthropic's research team has a [useful definition for this distinction](https://www.anthropic.com/research/building-effective-agents) — workflows are "systems where LLMs and tools are orchestrated through predefined code paths," while agents are systems where the model "dynamically directs its own processes and tool usage." That language is for engineers building these things, but it captures the user-facing difference too. **Workflow builders run the path you drew. Workspace agents pick the path while the work is happening.**
 
 ![2.PNG](/blog/images/workspace-agents-vs-workflow-builders/1777341455454-a12cd665-fbb4-48d2-90ec-f3cd98d20026.webp)
 
@@ -53,7 +53,7 @@ I had this exact thing last week. I needed to compare three vendor proposals for
 
 ### How judgment and exceptions are handled
 
-Workflow builders are deterministic by design. That's the feature, not the bug — when the bank charges a customer, you don't want creative interpretation. As the team at Atomicwork [points out in their breakdown](<https://www.atomicwork.com/blog/ai-agents-vs-ai-automation>), rule-based automation is "uncompromising, rigid but highly predictable in outcome." Exceptions usually get bounced to a human queue.
+Workflow builders are deterministic by design. That's the feature, not the bug — when the bank charges a customer, you don't want creative interpretation. As the team at Atomicwork [points out in their breakdown](https://www.atomicwork.com/blog/ai-agents-vs-ai-automation), rule-based automation is "uncompromising, rigid but highly predictable in outcome." Exceptions usually get bounced to a human queue.
 
 Workspace agents handle ambiguity in the moment. They'll make a judgment call — sometimes a wrong one — and you correct it inline. The trade-off is real: you give up predictability and get adaptability.
 
@@ -69,7 +69,7 @@ Both categories have legit territory. Workflow builders win in three places.
 
 ### High-volume, repeatable, trigger-based processes
 
-Anything that runs hundreds or thousands of times with the same shape — invoice processing, lead routing, support ticket triage, scheduled reports. Work needs to happen the same way every time, and you want zero surprises. As Knack's [side-by-side analysis notes](<https://www.knack.com/blog/make-com-vs-zapier-comparison-guide-2025/>), Zapier's strength here is "stronger enterprise-level support" with SOC 2 compliance and stability for basic automations.
+Anything that runs hundreds or thousands of times with the same shape — invoice processing, lead routing, support ticket triage, scheduled reports. Work needs to happen the same way every time, and you want zero surprises. As Knack's [side-by-side analysis notes](https://www.knack.com/blog/make-com-vs-zapier-comparison-guide-2025/), Zapier's strength here is "stronger enterprise-level support" with SOC 2 compliance and stability for basic automations.
 
 ### Integrations between systems that don't talk to each other
 
@@ -83,13 +83,13 @@ When a process crosses people — design submits, PM reviews, engineering picks 
 
 ### Mixed, judgment-heavy, daily-changing work
 
-Solo founders and consultants live here. Monday is research. Tuesday is a proposal. Wednesday is editing client copy. Thursday is figuring out a tax thing. None of these justify building a workflow — by the time you're done designing it, you could've finished the task. Anthropic's team [makes this point directly](<https://resources.anthropic.com/building-effective-ai-agents>): agents are the right call "when flexibility and model-driven decision-making are needed at scale," while workflows fit "well-defined tasks."
+Solo founders and consultants live here. Monday is research. Tuesday is a proposal. Wednesday is editing client copy. Thursday is figuring out a tax thing. None of these justify building a workflow — by the time you're done designing it, you could've finished the task. Anthropic's team [makes this point directly](https://resources.anthropic.com/building-effective-ai-agents): agents are the right call "when flexibility and model-driven decision-making are needed at scale," while workflows fit "well-defined tasks."
 
 ![4.png](/blog/images/workspace-agents-vs-workflow-builders/1777341477750-736282a3-524a-4999-adf2-e92e4920f351.webp)
 
 ### Solo operators and multi-role workers
 
-If you're a one-person business doing strategy _and_ execution _and_ content _and_ client comms, a workflow builder doesn't really compress your day. It compresses _one_ repetitive slice of it. An agent that can sit inside your work and help with whatever's in front of you compresses the whole shape. The Relevance AI team [framed this nicely](<https://relevanceai.com/blog/the-definitive-guide-understanding-ai-agents-vs-ai-workflows>): workflow tools "operate on syntax — the structure of information," while agents handle semantics — what the information actually means in context.
+If you're a one-person business doing strategy _and_ execution _and_ content _and_ client comms, a workflow builder doesn't really compress your day. It compresses _one_ repetitive slice of it. An agent that can sit inside your work and help with whatever's in front of you compresses the whole shape. The Relevance AI team [framed this nicely](https://relevanceai.com/blog/the-definitive-guide-understanding-ai-agents-vs-ai-workflows): workflow tools "operate on syntax — the structure of information," while agents handle semantics — what the information actually means in context.
 
 ### Work that lives across files, tabs, and tools
 
@@ -121,7 +121,7 @@ Decision rule I'd actually use:
 
 If the work you want to automate ​**happens the same way more than 20 times a month** ​, build it in a workflow tool. If it happens ​**once or twice and the shape changes every time** ​, that's agent territory. If it's both — which it usually is for solo operators — you'll end up with one of each, and that's fine.
 
-[Gartner predicts](<https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025>) that 40% of enterprise applications will have embedded task-specific agents by end of 2026, up from less than 5% in 2025. Whether that exact number lands is anyone's guess — _as of when I'm writing this, it's a forecast, not a fact_ — but the directional read seems right. The categories are diverging, not converging.
+[Gartner predicts](https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025) that 40% of enterprise applications will have embedded task-specific agents by end of 2026, up from less than 5% in 2025. Whether that exact number lands is anyone's guess — _as of when I'm writing this, it's a forecast, not a fact_ — but the directional read seems right. The categories are diverging, not converging.
 
 ![5.png](/blog/images/workspace-agents-vs-workflow-builders/1777341489448-c8adee60-91c1-4eef-bf0d-39c26644a653.webp)
 
@@ -130,13 +130,13 @@ That's my honest take. The categories aren't really competing — they're solvin
 
 ## Previous Posts:
 
-  * [Still deciding between structured workflows and AI-native tools?](</blog/workflow-builder-vs-ai-workspace>)
+  * [Still deciding between structured workflows and AI-native tools?](/blog/workflow-builder-vs-ai-workspace)
 
-  * [If you're new to agents, this guide explains how AI agents actually work in real-world scenarios](</blog/ai-agent-use-cases-real-examples>)
+  * [If you're new to agents, this guide explains how AI agents actually work in real-world scenarios](/blog/ai-agent-use-cases-real-examples)
 
-  * [Want to go beyond tools and build your own system? Here’s a practical intro to building an AI agent from scratch](</blog/how-to-build-an-ai-agent>)
+  * [Want to go beyond tools and build your own system? Here’s a practical intro to building an AI agent from scratch](/blog/how-to-build-an-ai-agent)
 
-  * [For a more hands-on perspective, this piece shows how agent workflows actually run in day-to-day work](</blog/ai-agent-workflow-vibe-coding>)
+  * [For a more hands-on perspective, this piece shows how agent workflows actually run in day-to-day work](/blog/ai-agent-workflow-vibe-coding)
 
-  * [And if you're running solo, this breaks down how one-person businesses use AI to operate like a team](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [And if you're running solo, this breaks down how one-person businesses use AI to operate like a team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

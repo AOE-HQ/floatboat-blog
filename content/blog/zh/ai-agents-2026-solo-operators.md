@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-大家好，我是 Nova。今天想聊聊 [AI agents](<https://www.stackai.com/blog/the-2026-guide-to-agentic-workflow-architectures>)。
+大家好，我是 Nova。今天想聊聊 [AI agents](https://www.stackai.com/blog/the-2026-guide-to-agentic-workflow-architectures)。
 
 _AI agent 的标题根本停不下来。但如果你独自经营一家一人公司，这些真的和你有关吗？下面是一份接地气的拆解：到底什么在变、动手之前真正值得问的问题是什么。_
 
@@ -31,7 +31,7 @@ AI agent 不一样。它不停在答案上——它会执行下一步：打开�
 
 Agent 与普通软件的分水岭在于：它能理解自然语言指令、结合上下文做判断，并在不必为每种场景显式编程的前提下调整自己的行为。实际含义很实在：agent 不需要你每一步都盯着。
 
-这件事比听起来重要。据 [LangChain 的《State of Agent Engineering》报告](<https://www.langchain.com/state-of-agent-engineering>)——2025 年底发布、面向 1300 多名从业者的调研——**57% 的组织已经让 agent 在生产环境运行**，另有 30% 在积极开发。头号用例是研究与数据分析（24.4%）和工作流自动化（占已部署项目的 64%）。从「先试试」到「真的在工作中跑起来」，转变比大多数人察觉到的来得更快。
+这件事比听起来重要。据 [LangChain 的《State of Agent Engineering》报告](https://www.langchain.com/state-of-agent-engineering)——2025 年底发布、面向 1300 多名从业者的调研——**57% 的组织已经让 agent 在生产环境运行**，另有 30% 在积极开发。头号用例是研究与数据分析（24.4%）和工作流自动化（占已部署项目的 64%）。从「先试试」到「真的在工作中跑起来」，转变比大多数人察觉到的来得更快。
 
 这场转变也是 Anthropic 的 MCP 在 2024 年 11 月发布后迅速成为大事的原因。MCP 是开放标准，让 AI agent 真正连上你的工具——Google Drive、Slack、浏览器、本地文件——而不只是「嘴上说说」。发布至今，社区已造出数千个 MCP server，它如今是 agent 连接工具与数据的事实标准。正是这套基础设施，让执行层 AI 成为可能。
 
@@ -43,7 +43,7 @@ Agent 与普通软件的分水岭在于：它能理解自然语言指令、结�
 
 2026 年初，Google 内部代号「Agent Smith」的 AI 编程 agent 火到公司不得不限流。据 Business Insider 2026 年 3 月报道，Google 联合创始人 Sergey Brin 在全公司大会上点名 AI agent 是今年的「重大重点」。那不是产品发布，而是领导层围绕「执行」重新安排内部优先级。
 
-xAI 的 [Grok 4.20](<https://x.ai/>) 于 2026 年 2 月发布 beta，架构上确实走了另一条路：它不是单体大模型，而是一个多 agent 系统——四个专职 agent（Grok、Harper、Benjamin、Lucas）并行斟酌、互相辩驳之后才生成回答。我自己还没完整测过：截至写稿（2026 年 4 月）它仍在有限 beta 阶段，API 也未广泛开放。把它当作「架构在往哪儿走」的方向性信号就好，别当今天就能上手的成品。
+xAI 的 [Grok 4.20](https://x.ai/) 于 2026 年 2 月发布 beta，架构上确实走了另一条路：它不是单体大模型，而是一个多 agent 系统——四个专职 agent（Grok、Harper、Benjamin、Lucas）并行斟酌、互相辩驳之后才生成回答。我自己还没完整测过：截至写稿（2026 年 4 月）它仍在有限 beta 阶段，API 也未广泛开放。把它当作「架构在往哪儿走」的方向性信号就好，别当今天就能上手的成品。
 
 更大的图景：Gartner 预测，**到 2026 年底，40% 的企业应用会内嵌任务型 AI agent**——而 2025 年这一数字还不到 5%。这不是小数目。它意味着，不管你主不主动，具备 agent 能力的工具都会开始出现在你已经在用的软件里。
 
@@ -75,7 +75,7 @@ _这是炒作周期里没人愿意多谈的部分。_
 
 这不是我一个人的经验。LangChain 的调研发现，**质量仍是上生产的头号障碍**，32% 的受访者点名它——排在成本和延迟前面。不稳定、不准确、不守格式是前三大失败模式，跟我踩的坑完全对得上。
 
-顺带一提：据 [美联储 2026 年 4 月 AI 应用监测报告](<https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html>)援引的研究，截至 2025 年 11 月，美国劳动力中约 41% 已在工作中使用生成式 AI，一年内增长约 31%。落地是真的，质量问题也是真的。
+顺带一提：据 [美联储 2026 年 4 月 AI 应用监测报告](https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html)援引的研究，截至 2025 年 11 月，美国劳动力中约 41% 已在工作中使用生成式 AI，一年内增长约 31%。落地是真的，质量问题也是真的。
 
 ## 「执行就绪」的 AI 在实践中长什么样
 
@@ -133,7 +133,7 @@ _好了，真功夫的部分到了。说实话，一开始我低估了它。_
 
 我看到很多单人创业者掉进的坑是：给一个本来就没定义清楚的流程，硬加一层 agent。Agent 修不好模糊的流程——它只会放大。垃圾进、垃圾出，只是更快了。
 
-正如 Anthropic 工程团队在[那篇讲如何构建高效 agent 的文章](<https://www.anthropic.com/research/building-effective-agents>)里写的：*「LLM 领域的成功不是构建最精巧的系统，而是为你的需求构建正确的系统。」*这个原则在单人创业者层面，比在任何地方都更适用。
+正如 Anthropic 工程团队在[那篇讲如何构建高效 agent 的文章](https://www.anthropic.com/research/building-effective-agents)里写的：*「LLM 领域的成功不是构建最精巧的系统，而是为你的需求构建正确的系统。」*这个原则在单人创业者层面，比在任何地方都更适用。
 
 另外，越来越多的研究显示，由大语言模型构建的 agent 即便在无害场景下也可能出现难以预料的行为。2025 年 LangChain 调研发现，**质量问题是上生产的头号障碍——不是成本。**这不是回避 agent 的理由，而是把范围收紧、把输出审起来的理由——尤其早期。
 
@@ -161,13 +161,13 @@ _好了，这就是今天的发现。下次见。_
 
 ## 往期文章
 
-  * [想看看自动化在单人创业里到底怎么运转？这篇 Feishu CLI 的真实拆解值得一读。](</blog/feishu-cli-solo-work-setup>)
+  * [想看看自动化在单人创业里到底怎么运转？这篇 Feishu CLI 的真实拆解值得一读。](/blog/feishu-cli-solo-work-setup)
 
-  * [想知道 AI agent 在实际里长什么样？这篇指南覆盖不同工作流中的真实用例。](</blog/ai-agent-use-cases-real-examples>)
+  * [想知道 AI agent 在实际里长什么样？这篇指南覆盖不同工作流中的真实用例。](/blog/ai-agent-use-cases-real-examples)
 
-  * [不确定自己需要的是 agent 还是更聪明的助理？这篇对比能帮你理清差别。](</blog/ai-agent-vs-ai-assistant>)
+  * [不确定自己需要的是 agent 还是更聪明的助理？这篇对比能帮你理清差别。](/blog/ai-agent-vs-ai-assistant)
 
-  * [想自己搭工作流而不是每次从零写提示词？从这里开始。](</blog/how-to-build-an-ai-agent>)
+  * [想自己搭工作流而不是每次从零写提示词？从这里开始。](/blog/how-to-build-an-ai-agent)
 
-  * [还在几个工具之间纠结？这篇工作流搭建器 vs AI 工作区的拆解能帮你做选择。](</blog/workflow-builder-vs-ai-workspace>)
+  * [还在几个工具之间纠结？这篇工作流搭建器 vs AI 工作区的拆解能帮你做选择。](/blog/workflow-builder-vs-ai-workspace)
 

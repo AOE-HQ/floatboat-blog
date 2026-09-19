@@ -29,7 +29,7 @@ DeepSeek V4 is the successor to V3.2 — the general-purpose model currently pow
 
 Three architectural innovations are documented from published research:
 
-**Engram conditional memory** is the most interesting one. Traditional Transformer-based LLMs compress all learned knowledge into neural network weights. Engram introduces a new dimension by adding conditional memory through efficient lookup mechanisms — separating static knowledge retrieval from dynamic neural reasoning. In practical terms, this is what enables the 1M-token context window without the retrieval degradation that usually comes with very long contexts. [A published paper](<https://www.morphllm.com/deepseek-v4>) shows Needle-in-a-Haystack accuracy jumping from 84.2% to 97% on a 27B test model.
+**Engram conditional memory** is the most interesting one. Traditional Transformer-based LLMs compress all learned knowledge into neural network weights. Engram introduces a new dimension by adding conditional memory through efficient lookup mechanisms — separating static knowledge retrieval from dynamic neural reasoning. In practical terms, this is what enables the 1M-token context window without the retrieval degradation that usually comes with very long contexts. [A published paper](https://www.morphllm.com/deepseek-v4) shows Needle-in-a-Haystack accuracy jumping from 84.2% to 97% on a 27B test model.
 
 **DeepSeek ​Sparse** ​​**​ Attention (DSA** ​) reduces attention complexity, and ​**Manifold-Constrained Hyper-Connections (mHC** ​) stabilizes training at trillion-parameter scale. Together, V4 scales to approximately 1 trillion total parameters but activates only ~37B per token — roughly the same active compute as V3 — which keeps inference costs manageable despite the much larger model size.
 
@@ -43,7 +43,7 @@ On March 9, Chinese tech media reported that DeepSeek's website showed a model u
 
 ## DeepSeek V4 API Pricing vs Alternatives
 
-This is where things get genuinely interesting. Based on confirmed V3.2 pricing and projections from the [DeepSeek official API docs](<https://api-docs.deepseek.com/quick_start/pricing>), here's how the cost landscape looks heading into V4's launch:
+This is where things get genuinely interesting. Based on confirmed V3.2 pricing and projections from the [DeepSeek official API docs](https://api-docs.deepseek.com/quick_start/pricing), here's how the cost landscape looks heading into V4's launch:
 
 Here's the comparison across the three major options at the flagship level:
 
@@ -61,13 +61,13 @@ The gap is real. But let me get into what it actually means.
 
 ## DeepSeek V4 GitHub and Open Access Scope
 
-One thing that matters a lot for solo operators: DeepSeek V4 is releasing as an open-weight model. V4 was built with open-source principles, continuing DeepSeek's pattern from V3 which was trained for [a reported](<https://particula.tech/blog/deepseek-v4-qwen-open-source-ai-disruption>) $5.6 million — versus the hundreds of millions spent by OpenAI, Google, and Anthropic per frontier model.
+One thing that matters a lot for solo operators: DeepSeek V4 is releasing as an open-weight model. V4 was built with open-source principles, continuing DeepSeek's pattern from V3 which was trained for [a reported](https://particula.tech/blog/deepseek-v4-qwen-open-source-ai-disruption) $5.6 million — versus the hundreds of millions spent by OpenAI, Google, and Anthropic per frontier model.
 
 This means you can self-host. The practical reality? Around 50 million tokens daily, self-hosting economics start to make sense. Below 10 million tokens daily, managing infrastructure feels like overkill — the API is cheap enough that the operational simplicity is worth the cost.
 
 For most solo builders I know, we're nowhere near 50M tokens/day. The API is the right call.
 
-The model weights will be on Hugging Face and GitHub. The API endpoint lives at [api.deepseek.com](<http://api.deepseek.com>). Worth bookmarking both.
+The model weights will be on Hugging Face and GitHub. The API endpoint lives at [api.deepseek.com](http://api.deepseek.com). Worth bookmarking both.
 
 ![4.png](/blog/images/deepseek-v4-api-solo-operator/1776413656912-e0bed04f-03ea-492e-af8a-df448e2a6106.webp)
 
@@ -77,7 +77,7 @@ Okay, this is where I want to be direct. Because I think there's a lot of muddle
 
 ### Where Model Cost Is Actually the Bottleneck
 
-If you're running **high-volume automated pipelines** — processing thousands of documents, doing batch classification, running content generation at scale — yes, the cost difference is massive. One developer running DeepSeek V4 in production reported a monthly bill of $18 for a workload that would've cost around $380 on GPT-4o. [WaveSpeedAI](<https://wavespeed.ai/blog/posts/deepseek-v4-cost-per-million-tokens/>) That math is hard to argue with.
+If you're running **high-volume automated pipelines** — processing thousands of documents, doing batch classification, running content generation at scale — yes, the cost difference is massive. One developer running DeepSeek V4 in production reported a monthly bill of $18 for a workload that would've cost around $380 on GPT-4o. [WaveSpeedAI](https://wavespeed.ai/blog/posts/deepseek-v4-cost-per-million-tokens/) That math is hard to argue with.
 
 The same applies if you're building **a product on top of an LLM** and API costs show up in your COGS. A 10–20x cost reduction on inference literally changes your unit economics.
 
@@ -131,9 +131,9 @@ That's worth structuring your prompts around regardless of which model you use.
 
 If your work involves **hard, multi-file coding problems or agentic workflows where output quality is the constraint** — wait for independent benchmarks before committing. V4's claimed SWE-bench Verified score of ~81% would match Claude Opus 4.6 at a fraction of the cost, but those numbers are from DeepSeek's own testing only.
 
-If reliability and ecosystem maturity matter more than cost — GPT-5.4 or Claude Sonnet 4.6 are currently more battle-tested for production agentic use. You can verify [Anthropic's current model capabilities and pricing directly in their documentation](<https://docs.anthropic.com/en/docs/about-claude/models/overview>).
+If reliability and ecosystem maturity matter more than cost — GPT-5.4 or Claude Sonnet 4.6 are currently more battle-tested for production agentic use. You can verify [Anthropic's current model capabilities and pricing directly in their documentation](https://docs.anthropic.com/en/docs/about-claude/models/overview).
 
-Also: if you have data privacy requirements, self-hosting is the only real option. The xAI [API documentation](<https://x.ai/api>) and OpenAI's platform are both more established for enterprise data handling at this point.
+Also: if you have data privacy requirements, self-hosting is the only real option. The xAI [API documentation](https://x.ai/api) and OpenAI's platform are both more established for enterprise data handling at this point.
 
 ![6.png](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
 
@@ -141,13 +141,13 @@ Anyway, that's where things stand. The cost story is real and the architecture i
 
 ## Previous Posts:
 
-→ [Understand how AI workflows actually break down beyond model cost](</blog/ai-workflow-for-solo-founders>)
+→ [Understand how AI workflows actually break down beyond model cost](/blog/ai-workflow-for-solo-founders)
 
-→[ Learn why context management, not tokens, is the real bottleneck](</blog/why-ai-forgets-between-sessions>)
+→[ Learn why context management, not tokens, is the real bottleneck](/blog/why-ai-forgets-between-sessions)
 
-→ [Explore how AI agents change the way solo operators run systems](</blog/ai-agent-solo-operators>)
+→ [Explore how AI agents change the way solo operators run systems](/blog/ai-agent-solo-operators)
 
-→ [See how persistent AI memory impacts long-term productivity](</blog/what-is-persistent-ai-agent>)
+→ [See how persistent AI memory impacts long-term productivity](/blog/what-is-persistent-ai-agent)
 
-→ [Go deeper into building a structured LLM knowledge base](</blog/llm-knowledge-base-solo-operators>)
+→ [Go deeper into building a structured LLM knowledge base](/blog/llm-knowledge-base-solo-operators)
 

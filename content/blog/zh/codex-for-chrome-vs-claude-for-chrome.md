@@ -21,9 +21,9 @@ draft: false
 
 ## 两款工具 30 秒速览
 
-**Codex for Chrome** 是 OpenAI 的扩展，几天前刚上线。它通过 [Codex 桌面应用](<https://developers.openai.com/codex/app/chrome-extension>)连接，让 Codex 在你已登录的浏览器里干活——访问网页应用、跨标签页取上下文、操作 DevTools，全程在后台运行。
+**Codex for Chrome** 是 OpenAI 的扩展，几天前刚上线。它通过 [Codex 桌面应用](https://developers.openai.com/codex/app/chrome-extension)连接，让 Codex 在你已登录的浏览器里干活——访问网页应用、跨标签页取上下文、操作 DevTools，全程在后台运行。
 
-**[Claude for Chrome](<https://claude.com/blog/claude-for-chrome>)** 是 Anthropic 的浏览器 Agent，2025 年 8 月起试点，现已对付费订阅用户开放公测。它住在 Chrome 内的侧边栏面板里，读取你当前打开的实时页面，能导航、点击、填表、跑多步工作流。Anthropic 的[原始发布文章](<https://www.anthropic.com/news/claude-for-chrome>)详细讲了它的安全做法。
+**[Claude for Chrome](https://claude.com/blog/claude-for-chrome)** 是 Anthropic 的浏览器 Agent，2025 年 8 月起试点，现已对付费订阅用户开放公测。它住在 Chrome 内的侧边栏面板里，读取你当前打开的实时页面，能导航、点击、填表、跑多步工作流。Anthropic 的[原始发布文章](https://www.anthropic.com/news/claude-for-chrome)详细讲了它的安全做法。
 
 同一个品类。设计哲学截然不同。
 
@@ -63,9 +63,9 @@ Claude 的模式更偏**对话式**。你是**和**它一起处理屏幕上的�
 
   * **带深层上下文的实时页面读取。**Claude 能看到你当前标签页的真实内容。配上它的上下文窗口，再大的文档也一次读完、无需分块。做调研和内容分析时，这是它的高光。
 
-  * **定时任务与工作流录制。**Claude 支持[定时自动化](<https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome>)——按日、按周、按月。你还可以把某个工作流录一遍，之后回放。Codex 的 Chrome 扩展没有内置定时能力。
+  * **定时任务与工作流录制。**Claude 支持[定时自动化](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome)——按日、按周、按月。你还可以把某个工作流录一遍，之后回放。Codex 的 Chrome 扩展没有内置定时能力。
 
-  * **Claude Code 集成。**如果你在终端里用 Claude Code，这个 Chrome 扩展能[直接对接](<https://code.claude.com/docs/en/chrome>)——终端里构建、浏览器里测试，同一会话。这条闭环已经在上线运行了。
+  * **Claude Code 集成。**如果你在终端里用 Claude Code，这个 Chrome 扩展能[直接对接](https://code.claude.com/docs/en/chrome)——终端里构建、浏览器里测试，同一会话。这条闭环已经在上线运行了。
 
   * **对话感。**侧边栏模型意味着你是在就屏幕上的东西展开对话。对文档密集型的工作，这比把事情丢给后台 Agent 更自然。我还在摸索两种方式各自在我工作流里最合适的位置，但凡是调研量大的活，我的手总是伸向 Claude。
 
@@ -87,7 +87,7 @@ Codex 把浏览器行为绑定到你现有的 Memories 设置——开着，Code
 
 两家公司都承认：**任何会读网页的 AI Agent 都可能遇到提示注入**——网页里藏着的、试图劫持 Agent 行为的隐藏指令。
 
-Anthropic 公布了具体数字：无防护时攻击成功率 23.6%，有防御后降到 11.2%。一项[最近的安全调查](<https://cybernews.com/security/claude-code-chrome-extension-flaw-fix-hacked/>)还披露了 Claude 扩展里一个信任边界缺陷，补丁发布后数小时内就被绕过了。
+Anthropic 公布了具体数字：无防护时攻击成功率 23.6%，有防御后降到 11.2%。一项[最近的安全调查](https://cybernews.com/security/claude-code-chrome-extension-flaw-fix-hacked/)还披露了 Claude 扩展里一个信任边界缺陷，补丁发布后数小时内就被绕过了。
 
 OpenAI 的文档明确警告要「把页面内容当作不可信上下文」。两家公司都没声称这问题已解决。
 
@@ -95,7 +95,7 @@ OpenAI 的文档明确警告要「把页面内容当作不可信上下文」。�
 
 ## 定价、套餐入口与地区可用性
 
-**Codex for Chrome** 随你的 ChatGPT 套餐附带，不加钱。它消耗你现有的用量额度。Free 和 Plus（$20/月）用户都能用；[Pro（$100/月）](<https://developers.openai.com/codex/pricing>)提供 5 倍容量（作为上线促销，2026 年 5 月 31 日前是 10 倍）。连免费档都有有限的试用额度。
+**Codex for Chrome** 随你的 ChatGPT 套餐附带，不加钱。它消耗你现有的用量额度。Free 和 Plus（$20/月）用户都能用；[Pro（$100/月）](https://developers.openai.com/codex/pricing)提供 5 倍容量（作为上线促销，2026 年 5 月 31 日前是 10 倍）。连免费档都有有限的试用额度。
 
 **Claude for Chrome** 需要付费套餐——Pro（$20/月）、Max（$100/月以上）、Team 或 Enterprise。但有个细节值得划重点：**Pro 用户在这个 Chrome 扩展里只能用到 Haiku 4.5**——最快但能力最弱的模型。想解锁 Opus 4.6 或 Sonnet 4.5，得上 Max（$100/月）。对复杂的浏览器任务来说，这是实打实的质量差距。
 
@@ -105,7 +105,7 @@ OpenAI 的文档明确警告要「把页面内容当作不可信上下文」。�
 
 ### Codex Chrome 在欧盟/英国的状态
 
-如果你在欧盟或英国，这是全文最重要的一段：**Codex for Chrome 上线时不覆盖欧盟和英国。**[Neowin 已证实](<https://www.neowin.net/news/openai-codex-can-now-work-directly-in-chrome-on-macos-and-windows/>)它被排除在所有欧盟与英国地区之外，OpenAI 只说支持「即将到来」。没有时间表。欧盟用户装上扩展会发现能正常连接，但 Codex 应用里不会出现 Chrome 插件。
+如果你在欧盟或英国，这是全文最重要的一段：**Codex for Chrome 上线时不覆盖欧盟和英国。**[Neowin 已证实](https://www.neowin.net/news/openai-codex-can-now-work-directly-in-chrome-on-macos-and-windows/)它被排除在所有欧盟与英国地区之外，OpenAI 只说支持「即将到来」。没有时间表。欧盟用户装上扩展会发现能正常连接，但 Codex 应用里不会出现 Chrome 插件。
 
 Claude for Chrome 没有地区限制，全球付费订阅者都能用。
 
@@ -167,13 +167,13 @@ Claude for Chrome 没有地区限制，全球付费订阅者都能用。
 
 ## 往期文章：
 
-  * 好奇最近为什么人人都在聊工作区 Agent？读 AI Workspace Agents：[单人创业者的新操作系统。](</blog/workspace-agents-vs-chat-assistants>)
+  * 好奇最近为什么人人都在聊工作区 Agent？读 AI Workspace Agents：[单人创业者的新操作系统。](/blog/workspace-agents-vs-chat-assistants)
 
-  * 如果你还在拿浏览器 Agent 和普通 AI 聊天工具比，[Workspace Agents vs Chat Assistants](</blog/ai-workspace-agents>)把差异讲得很清楚。
+  * 如果你还在拿浏览器 Agent 和普通 AI 聊天工具比，[Workspace Agents vs Chat Assistants](/blog/ai-workspace-agents)把差异讲得很清楚。
 
-  * 想理解 Anthropic 在浏览器自动化背后的更大战略？[What Are Claude Managed Agents](</blog/what-are-claude-managed-agents>)对系统设计挖得更深。
+  * 想理解 Anthropic 在浏览器自动化背后的更大战略？[What Are Claude Managed Agents](/blog/what-are-claude-managed-agents)对系统设计挖得更深。
 
-  * 如果你正用 AI 工具搭一套精简的一人工作流，[AI Workflow for Solo Founders](</blog/ai-workflow-for-solo-founders>)和本文的观点直接相关。
+  * 如果你正用 AI 工具搭一套精简的一人工作流，[AI Workflow for Solo Founders](/blog/ai-workflow-for-solo-founders)和本文的观点直接相关。
 
-  * 想要更多「AI Agent 到底在哪儿省了时间」的实例，看 [AI Agents for Solo Operators](</blog/ai-agent-solo-operators>)。
+  * 想要更多「AI Agent 到底在哪儿省了时间」的实例，看 [AI Agents for Solo Operators](/blog/ai-agent-solo-operators)。
 

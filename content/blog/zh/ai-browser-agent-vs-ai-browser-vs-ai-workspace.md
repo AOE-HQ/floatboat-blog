@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-你好，我是 Nova。过去几周，我在三个类别的工具之间来回切换——它们在宣传文案里听起来差不多，实际干的事却大不一样：浏览器 Agent 扩展、[AI 原生浏览器](<https://en.wikipedia.org/wiki/AI_browser>)、桌面 AI 工作区。每个产品页面都在某个角落用到「AI」「浏览器」「Agent」这几个词，看久了就全都糊在一起。于是我坐下来，想弄清楚界线到底画在哪里——因为如果你是一个人单干，选错品类，浪费的是你最找不回来的东西：搭建时间。
+你好，我是 Nova。过去几周，我在三个类别的工具之间来回切换——它们在宣传文案里听起来差不多，实际干的事却大不一样：浏览器 Agent 扩展、[AI 原生浏览器](https://en.wikipedia.org/wiki/AI_browser)、桌面 AI 工作区。每个产品页面都在某个角落用到「AI」「浏览器」「Agent」这几个词，看久了就全都糊在一起。于是我坐下来，想弄清楚界线到底画在哪里——因为如果你是一个人单干，选错品类，浪费的是你最找不回来的东西：搭建时间。
 
 ## 三个被人为模糊边界的类别
 
@@ -27,7 +27,7 @@ draft: false
 
 浏览器 Agent 扩展叠加在你现有的浏览器——通常是 Chrome——之上，作为一层能替你查看、点击和浏览网页的组件。浏览器还是你的，登录会话也还是你的。AI 只是在一旁「看着」，你开口时才动手。
 
-2026 年中的两个代表：**Codex for Chrome**（OpenAI 的编码 Agent 扩展，[2026 年 5 月发布](<https://developers.openai.com/codex/app/chrome-extension>)）和**Claude for Chrome**（Anthropic 的浏览器 Agent，[所有付费套餐开放 Beta 测试](<https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome>)）。
+2026 年中的两个代表：**Codex for Chrome**（OpenAI 的编码 Agent 扩展，[2026 年 5 月发布](https://developers.openai.com/codex/app/chrome-extension)）和**Claude for Chrome**（Anthropic 的浏览器 Agent，[所有付费套餐开放 Beta 测试](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome)）。
 
 两者都是 Chrome 扩展，会继承你已登录的浏览器状态。Codex 用标签页分组来组织任务，在后台运行，不会抢占你正在用的标签页。Claude for Chrome 从侧边栏操作，可同时管理多个标签页。两者在接触新网站之前都会先征得你的许可。
 
@@ -43,7 +43,7 @@ draft: false
 
 最大的问题是**范围**。扩展只能做浏览器能做的事：碰不到你的本地文件，打不开桌面应用，也拼不起一段「从硬盘里的电子表格开始、到 Google Doc 结束」的工作流。它是浏览器进、浏览器出。
 
-安全在这里确实棘手。研究人员已记录过[浏览器 Agent 扩展的提示注入漏洞](<https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/>)——恶意网页内容有可能把 Agent 的所作所为带偏。OpenAI 和 Anthropic 都加入了确认步骤，但攻击面真实存在，而且还在演化。
+安全在这里确实棘手。研究人员已记录过[浏览器 Agent 扩展的提示注入漏洞](https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/)——恶意网页内容有可能把 Agent 的所作所为带偏。OpenAI 和 Anthropic 都加入了确认步骤，但攻击面真实存在，而且还在演化。
 
 还有一点值得了解：截至 2026 年 5 月，**Codex for Chrome 尚未在欧盟或英国上线**。OpenAI 说会推出，但没给时间表。如果你在这些地区，目前只能用应用内浏览器。
 
@@ -55,7 +55,7 @@ draft: false
 
 这类是独立浏览器——下载、安装即可用——AI 不是以扩展形式外加的，而是从一开始就织进浏览体验里。AI 知道你停在哪个标签页，记得你昨天调研过什么，还能跨页面执行多步任务。
 
-当前在跑的选手有三个：**Atlas**（OpenAI 的 ChatGPT 驱动浏览器，2025 年底在 macOS 推出）、**Comet**（Perplexity 的 AI 浏览器，[2026 年起全平台免费](<https://www.perplexity.ai/comet>)）和**Dia**（出自 The Browser Company——Arc 的幕后团队，现已被 Atlassian 收购）。
+当前在跑的选手有三个：**Atlas**（OpenAI 的 ChatGPT 驱动浏览器，2025 年底在 macOS 推出）、**Comet**（Perplexity 的 AI 浏览器，[2026 年起全平台免费](https://www.perplexity.ai/comet)）和**Dia**（出自 The Browser Company——Arc 的幕后团队，现已被 Atlassian 收购）。
 
 三者都基于 Chromium，所以 Chrome 扩展大多能直接沿用。但 AI 层深入的程度是任何扩展都够不着的——它住在地址栏里，能读取跨标签页的上下文，并在会话之间维持持久记忆。
 
@@ -71,7 +71,7 @@ Comet 的页内助手做内容调研确实好用。Dia 的「Skills」体系允�
 
 一旦你需要**在浏览器之外**工作，这些工具就会撞墙。本地文件、桌面应用、离线流程——统统不在能力范围内。任何不是网页的东西，你还是得切到另一个工具。
 
-平台覆盖参差不齐。Atlas 仅限 macOS，Windows 版没有时间表（OpenAI 说过会把它并入[一个整合 ChatGPT 和 Codex 的超级应用](<https://www.engadget.com/2167480/openai-debuts-a-codex-plugin-for-chrome/>)，但排期一直很含糊）。Dia 同样只有 macOS。Comet 覆盖最广——Mac、Windows、iOS、Android 都有——但它的 Agent 自动化在复杂任务上仍然粗糙。
+平台覆盖参差不齐。Atlas 仅限 macOS，Windows 版没有时间表（OpenAI 说过会把它并入[一个整合 ChatGPT 和 Codex 的超级应用](https://www.engadget.com/2167480/openai-debuts-a-codex-plugin-for-chrome/)，但排期一直很含糊）。Dia 同样只有 macOS。Comet 覆盖最广——Mac、Windows、iOS、Android 都有——但它的 Agent 自动化在复杂任务上仍然粗糙。
 
 而且整体换掉你的浏览器是个不小的动作。肌肉记忆、已保存的密码、扩展配置——这些迁移成本并不为零。我用了 Comet 大约一周，还是会下意识地打开 Chrome。
 
@@ -133,11 +133,11 @@ SaaS 后台的活交给扩展，再加一个 AI 浏览器做调研；或者跨�
 
 **设备之间的上下文交接。**你没法在桌面工作区上开了头、再到手机上的 AI 浏览器里接着干——上下文只存在于一个地方。
 
-**单人创业者需要的安全级别。**每个品类都有被记录在案的提示注入风险——研究人员演示过[恶意网页内容如何劫持浏览器 AI Agent](<https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/>)。对经手客户数据的单人创业者来说，这不是纸上谈兵。
+**单人创业者需要的安全级别。**每个品类都有被记录在案的提示注入风险——研究人员演示过[恶意网页内容如何劫持浏览器 AI Agent](https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/)。对经手客户数据的单人创业者来说，这不是纸上谈兵。
 
 **复杂任务上的可靠执行。**三个品类都承诺多步自动化，但实际走到三四步之后，可靠性就迅速下滑。我把这些工具当**规划器**用、而不是当自动驾驶来用，效果反而更好。
 
-**重度使用下的定价透明。**浏览器 Agent 工作比普通 AI 对话更烧使用额度，而多数[定价页面](<https://www.anthropic.com/pricing>)不会在一开始就讲清楚这一点。
+**重度使用下的定价透明。**浏览器 Agent 工作比普通 AI 对话更烧使用额度，而多数[定价页面](https://www.anthropic.com/pricing)不会在一开始就讲清楚这一点。
 
 ![float6.png](/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562080116-08fedd13-1d7a-40c3-99a9-242273ee23ed.webp)
 
@@ -147,13 +147,13 @@ SaaS 后台的活交给扩展，再加一个 AI 浏览器做调研；或者跨�
 
 ## 延伸阅读
 
-  * 为什么你的 AI 工作流显得支离破碎：[真正的瓶颈不是模型，而是工具之间拼接的方式](</blog/workspace-agents-for-solo-operators>)
+  * 为什么你的 AI 工作流显得支离破碎：[真正的瓶颈不是模型，而是工具之间拼接的方式](/blog/workspace-agents-for-solo-operators)
 
-  * 浏览器 Agent 与 AI 工作区：[理解预定义工作流与上下文感知 Agent 的区别](</blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace>)
+  * 浏览器 Agent 与 AI 工作区：[理解预定义工作流与上下文感知 Agent 的区别](/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace)
 
-  * [当你的工作横跨标签页、文件与 AI 工具时，如何停止上下文切换](</blog/browser-ai-agent-what-it-can-do>)
+  * [当你的工作横跨标签页、文件与 AI 工具时，如何停止上下文切换](/blog/browser-ai-agent-what-it-can-do)
 
-  * 新的 AI 模型又发布了，该换吗？[关于为什么多数单人创业者高估了收益的务实看法](</blog/ai-workspace-agents>)
+  * 新的 AI 模型又发布了，该换吗？[关于为什么多数单人创业者高估了收益的务实看法](/blog/ai-workspace-agents)
 
-  * [Claude Code on Linux：从浏览器里的 AI 转向终端原生工作流](</blog/claude-managed-agents-one-person-company>)
+  * [Claude Code on Linux：从浏览器里的 AI 转向终端原生工作流](/blog/claude-managed-agents-one-person-company)
 

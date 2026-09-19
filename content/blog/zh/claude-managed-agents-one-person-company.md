@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-你好，我是 Nova。我一直比较关注 Agentic AI 这个领域，但大多站在外围：读文档、跟开发者的讨论、偶尔试一些半成品。所以当 Anthropic 于 2026 年 4 月 8 日公开 beta 发布 [Claude Managed Agents](<https://www.anthropic.com/engineering/managed-agents>) 时，我留意了。
+你好，我是 Nova。我一直比较关注 Agentic AI 这个领域，但大多站在外围：读文档、跟开发者的讨论、偶尔试一些半成品。所以当 Anthropic 于 2026 年 4 月 8 日公开 beta 发布 [Claude Managed Agents](https://www.anthropic.com/engineering/managed-agents) 时，我留意了。
 
 不是因为它"革命性"或什么的。我只是反复在问：对像我这样的人——一个人运营内容与研究业务——它真的有用吗？还是说，这只是个包装成"人人可用"的企业级东西？
 
@@ -23,7 +23,7 @@ draft: false
 
 大多数人用 Claude 的方式和使用聊天界面一样：输入点什么，Claude 回答，复制你要的，走人。对话结束，交互就结束。没有持久状态，没有昨天做过什么的记忆，也不能在你没盯着的时候跑点什么。
 
-**Claude Managed Agents 是本质不同的另一层。**它是 Anthropic 提供的托管基础设施服务，负责 AI Agent 的执行环境——沙箱、长时会话、范围受限的权限、工具执行、可观测性——[2026 年 4 月 8 日公开 beta 上线](<https://medium.com/@unicodeveloper/claude-managed-agents-what-it-actually-offers-the-honest-pros-and-cons-and-how-to-run-agents-52369e5cff14>)。
+**Claude Managed Agents 是本质不同的另一层。**它是 Anthropic 提供的托管基础设施服务，负责 AI Agent 的执行环境——沙箱、长时会话、范围受限的权限、工具执行、可观测性——[2026 年 4 月 8 日公开 beta 上线](https://medium.com/@unicodeveloper/claude-managed-agents-what-it-actually-offers-the-honest-pros-and-cons-and-how-to-run-agents-52369e5cff14)。
 
 说人话：不用你发 prompt 然后等 Claude 回复，而是你定义一个任务、设好护栏，Agent 自己去跑——可能一跑几小时，全程不需要你坐在旁边。支撑这一切的基础设施（容器、会话状态、错误恢复）由 Anthropic 负责，而不是你。
 
@@ -89,7 +89,7 @@ Anthropic 在官方文档中公开承认过这些风险。间接 prompt injectio
 
 具体来说：如果你用一个 Agent 起草 newsletter 内容，它不需要访问你的支付账户；如果它做研究，它不需要对你生产系统的写权限。把权限范围收紧——哪怕这意味着做出更窄的自动化。
 
-在开始授予大范围工具访问权之前，值得读一读 [Anthropic 关于 agentic AI 安全的文档](<https://www.anthropic.com/research/claude-character>)及其已发布的行为准则。这不是被害妄想——和"不给每个软件工具自己机器的管理员权限"是同一个道理。
+在开始授予大范围工具访问权之前，值得读一读 [Anthropic 关于 agentic AI 安全的文档](https://www.anthropic.com/research/claude-character)及其已发布的行为准则。这不是被害妄想——和"不给每个软件工具自己机器的管理员权限"是同一个道理。
 
 ![4.png](/blog/images/claude-managed-agents-one-person-company/1776822548756-887df77a-e298-485b-ae80-3f2567e1bac1.webp)
 
@@ -125,13 +125,13 @@ Combo Skills——直接在 AI 工作区里构建的 AI 工作流链——是另
 
 ## 延伸阅读
 
-→ 了解 **[AI Agent 到底怎么为单人创业者工作](</blog/ai-agent-solo-operators>)**
+→ 了解 **[AI Agent 到底怎么为单人创业者工作](/blog/ai-agent-solo-operators)**
 
-→ 看看 **[真实工作流里 AI Agent 和 AI 助手的实际区别](</blog/ai-agent-vs-ai-assistant>)**
+→ 看看 **[真实工作流里 AI Agent 和 AI 助手的实际区别](/blog/ai-agent-vs-ai-assistant)**
 
-→ 学习如何[设计可复用的 AI 工作流，而不是依赖一次性 prompt](</blog/ai-workflow-for-solo-founders>)
+→ 学习如何[设计可复用的 AI 工作流，而不是依赖一次性 prompt](/blog/ai-workflow-for-solo-founders)
 
-→ 探索**[持久化 AI Agent 是什么、为什么记忆改变一切](</blog/what-is-persistent-ai-agent>)**
+→ 探索**[持久化 AI Agent 是什么、为什么记忆改变一切](/blog/what-is-persistent-ai-agent)**
 
-→ 发现真实世界里能落到**[日常工作的 AI Agent 用例](</blog/ai-agent-use-cases-real-examples>)**
+→ 发现真实世界里能落到**[日常工作的 AI Agent 用例](/blog/ai-agent-use-cases-real-examples)**
 

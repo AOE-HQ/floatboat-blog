@@ -29,7 +29,7 @@ There's a spectrum:
 
 Most people buying "agentic AI" are really buying the middle option. That's fine — it's often the right choice. But the marketing for the third option sounds like the second, which is where things get muddy.
 
-Anthropic's own research on how people actually use Claude Code is instructive here. According to their [analysis of agent autonomy in practice](<https://www.anthropic.com/research/measuring-agent-autonomy>), newer users auto-approve roughly 20% of sessions, while experienced users reach over 40% after 750+ sessions. Trust with these tools isn't set and forget — it compounds gradually as you learn what the agent handles well and where it needs watching.
+Anthropic's own research on how people actually use Claude Code is instructive here. According to their [analysis of agent autonomy in practice](https://www.anthropic.com/research/measuring-agent-autonomy), newer users auto-approve roughly 20% of sessions, while experienced users reach over 40% after 750+ sessions. Trust with these tools isn't set and forget — it compounds gradually as you learn what the agent handles well and where it needs watching.
 
 That pattern maps neatly onto how I'd suggest you approach every tool in this category: **start with more checkpoints than you think you need, not fewer.**
 
@@ -43,11 +43,11 @@ Five distinct types, different design premises, different risk profiles.
 
 **Assistants** (Claude, ChatGPT, Gemini in chat mode) — The baseline. These aren't really "agentic" in the full sense; they respond to prompts and can use tools like web search or file reading, but they don't run autonomously between sessions. They're the right starting point if you're new to this category and want to build intuition before handing anything more autonomous to an AI. The low-risk entry point.
 
-**Workflow agents** (n8n, Zapier Agents, Make with AI steps) — These connect to your apps and run triggered or scheduled actions. A workflow agent might monitor your inbox, extract action items, create tasks in a project tool, and log the result — automatically, without you opening anything. [Zapier's Agents documentation](<https://zapier.com/agents>) explains how this differs from standard automation: the agent decides which actions to take based on context, not a fixed script. The autonomy is ​**scoped by the trigger and the workflow you define** ​. This is the category most solo operators should explore first for repeatable, low-stakes automation.
+**Workflow agents** (n8n, Zapier Agents, Make with AI steps) — These connect to your apps and run triggered or scheduled actions. A workflow agent might monitor your inbox, extract action items, create tasks in a project tool, and log the result — automatically, without you opening anything. [Zapier's Agents documentation](https://zapier.com/agents) explains how this differs from standard automation: the agent decides which actions to take based on context, not a fixed script. The autonomy is ​**scoped by the trigger and the workflow you define** ​. This is the category most solo operators should explore first for repeatable, low-stakes automation.
 
 **Builders / no-code agent platforms** (Lindy, Relevance AI) — Tools that let you define an agent's behavior, connect its tools, and deploy it as a persistent worker. You're not writing code, but you're designing the logic. The upside is flexibility; the downside is that the setup requires more thought than a workflow agent, and "agent judgment" becomes a real variable in the output quality. Best for operators who've identified a specific workflow and want it handled consistently.
 
-**Coding agents** (Claude Code, Codex, Cursor's agent mode) — A category of their own because the risk profile is different. A coding agent reads your codebase, makes changes across files, runs tests, and iterates on failures. According to Anthropic's documentation on [Claude Code's design](<https://www.anthropic.com/product/claude-code>), the default behavior is cautious: it asks before modifying files or running commands. Auto-approve exists, but it's a setting you turn on deliberately, not the default. This matters. Don't skip the default.
+**Coding agents** (Claude Code, Codex, Cursor's agent mode) — A category of their own because the risk profile is different. A coding agent reads your codebase, makes changes across files, runs tests, and iterates on failures. According to Anthropic's documentation on [Claude Code's design](https://www.anthropic.com/product/claude-code), the default behavior is cautious: it asks before modifying files or running commands. Auto-approve exists, but it's a setting you turn on deliberately, not the default. This matters. Don't skip the default.
 
 **AI workspaces** (cross-app desktop tools that coordinate files, browser, and connected services) — The newest and roughest category. The premise: instead of switching between apps, the AI sits above all of them and coordinates. The setup cost is highest here, and the tools vary most in maturity. Worth exploring if your work is genuinely cross-app, but not the place to start if you're new to agentic tools.
 
@@ -59,11 +59,11 @@ Abstract categories don't help much until you see them mapped to actual tasks. H
 
 **Client research before a call.** You paste five URLs into an assistant, ask it to pull the key facts from each, and synthesize a prep brief. No autonomy beyond the conversation — pure assistant mode. Takes 4 minutes instead of 20. This is the thing most people skip to, and it's genuinely valuable without being complicated.
 
-**Weekly report assembly.** A workflow agent monitors a project folder, pulls the week's completed tasks from your project tool via integration, and drafts a status summary on a schedule. You review and send. The AI writes; you approve. Anthropic's [research on building effective agents](<https://www.anthropic.com/research/building-effective-agents>) calls this "augmented LLM" — AI with tool access, human at the key decision point. Sweet spot for workflow agents.
+**Weekly report assembly.** A workflow agent monitors a project folder, pulls the week's completed tasks from your project tool via integration, and drafts a status summary on a schedule. You review and send. The AI writes; you approve. Anthropic's [research on building effective agents](https://www.anthropic.com/research/building-effective-agents) calls this "augmented LLM" — AI with tool access, human at the key decision point. Sweet spot for workflow agents.
 
 **Content editing pipeline.** You draft a piece, drop it in a folder, and a builder-style agent runs it through your defined checklist (tone, structure, length, keyword density) and flags issues. You fix. The agent isn't publishing anything — it's an automated reviewer with a consistent lens. Saves the slog of re-reading with fresh eyes every time.
 
-**Bug investigation in a codebase.** You describe the issue to Claude Code, it reads the relevant files, proposes a fix, runs the test suite, and iterates until tests pass. You review the diff before merging. The [Claude Code documentation](<https://code.claude.com/docs/en/agent-sdk/agent-loop>) makes clear that permission modes are designed for exactly this balance — auto-approving file edits in a dev environment while still requiring explicit approval for riskier shell commands.
+**Bug investigation in a codebase.** You describe the issue to Claude Code, it reads the relevant files, proposes a fix, runs the test suite, and iterates until tests pass. You review the diff before merging. The [Claude Code documentation](https://code.claude.com/docs/en/agent-sdk/agent-loop) makes clear that permission modes are designed for exactly this balance — auto-approving file edits in a dev environment while still requiring explicit approval for riskier shell commands.
 
 **What I haven't automated and won't.** Client deliverables that ship without my review. Emails that commit me to anything. Billing, invoicing changes, or anything touching payment systems. Decisions where being wrong isn't recoverable.
 
@@ -81,7 +81,7 @@ This is the section most guides skip because it's less exciting than the capabil
 
 **Reversibility should be a first-order consideration.** Anthropic's research on agent design notes a principle I've internalized: prefer reversible actions, and require confirmation for destructive or irreversible ones. Before running any agentic task, I ask: if this goes sideways, can I undo it in under 10 minutes? If the answer is no, I want human approval in the loop before the action executes.
 
-The [EU AI Act](<https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence>) is starting to affect how some of these tools are offered in regulated contexts — an indication that governance around agentic tools is a real and evolving area, not just vendor marketing.
+The [EU AI Act](https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence) is starting to affect how some of these tools are offered in regulated contexts — an indication that governance around agentic tools is a real and evolving area, not just vendor marketing.
 
 ![f8.png](/blog/images/agentic-ai-tools/1778662308943-6b841e78-e1f0-4419-b17a-b092e3214ed6.webp)
 
@@ -101,13 +101,13 @@ Not the ones who plugged in the most autonomous tool first and hoped for the bes
 
 ### Previous Posts:
 
-  * Most people call everything “AI agents” now — but assistants, workflow agents, coding agents, and workspaces fail in very different ways: [AI workspace agents explained for solo operators](</blog/ai-workspace-agents>)
+  * Most people call everything “AI agents” now — but assistants, workflow agents, coding agents, and workspaces fail in very different ways: [AI workspace agents explained for solo operators](/blog/ai-workspace-agents)
 
-  * If you’re trying to understand where agentic workflows actually help (and where they quietly create more overhead), start here: [AI agent workflows and vibe coding for solo builders](</blog/ai-agent-workflow-vibe-coding>)
+  * If you’re trying to understand where agentic workflows actually help (and where they quietly create more overhead), start here: [AI agent workflows and vibe coding for solo builders](/blog/ai-agent-workflow-vibe-coding)
 
-  * Why most solo operators over-focus on model quality when the real productivity gains usually come from workflow structure instead: [AI workflow for solo founders](</blog/ai-workflow-for-solo-founders>)
+  * Why most solo operators over-focus on model quality when the real productivity gains usually come from workflow structure instead: [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
 
-  * Workflow builders and workspace agents sound similar in demos — but they solve different problems once your work crosses apps and files: [Workspace agents vs workflow builders](</blog/workspace-agents-vs-workflow-builders>)
+  * Workflow builders and workspace agents sound similar in demos — but they solve different problems once your work crosses apps and files: [Workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
 
-  * Claude Managed Agents, coding agents, and autonomous AI tools all sit on different points of the autonomy spectrum — this breakdown helps clarify the difference: [What are Claude Managed Agents?](</blog/what-are-claude-managed-agents>)
+  * Claude Managed Agents, coding agents, and autonomous AI tools all sit on different points of the autonomy spectrum — this breakdown helps clarify the difference: [What are Claude Managed Agents?](/blog/what-are-claude-managed-agents)
 

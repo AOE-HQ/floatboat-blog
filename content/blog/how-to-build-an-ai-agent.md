@@ -21,7 +21,7 @@ That's what this post is actually about.
 
 Let me clear this up first, because I was confused about it for way longer than I should have been.
 
-A chatbot answers questions. **An ​****[AI agent](<https://www.ibm.com/think/topics/ai-agents>)****​​ takes action.** It can plan multi-step tasks, use external tools, remember context across steps, and make decisions without you prompting it at every turn. The difference sounds subtle until you try to build one.
+A chatbot answers questions. **An ​****[AI agent](https://www.ibm.com/think/topics/ai-agents)****​​ takes action.** It can plan multi-step tasks, use external tools, remember context across steps, and make decisions without you prompting it at every turn. The difference sounds subtle until you try to build one.
 
 ![2.PNG](/blog/images/how-to-build-an-ai-agent/1774419249726-02da6b63-c1f3-4c40-b9b9-2896277d7e0d.webp)
 
@@ -49,9 +49,9 @@ Once you've decided you want to build something, there are really only two roads
 
 This means writing Python (mostly), picking a framework, and wiring everything together yourself. The current frameworks that are actually in production use as of early 2026:
 
-**LangGraph** is currently the most widely adopted for serious builds. [LangGraph](<https://github.com/langchain-ai/langgraph>) leads in enterprise adoption with 34.5M monthly downloads, and around 400 companies use LangGraph Platform to deploy agents in production. It models your agent as a graph of steps — which sounds nerdy, but it means you can actually _see_ what your agent is doing and debug it properly.
+**LangGraph** is currently the most widely adopted for serious builds. [LangGraph](https://github.com/langchain-ai/langgraph) leads in enterprise adoption with 34.5M monthly downloads, and around 400 companies use LangGraph Platform to deploy agents in production. It models your agent as a graph of steps — which sounds nerdy, but it means you can actually _see_ what your agent is doing and debug it properly.
 
-**CrewAI** is simpler to get started with and works well if you need multiple agents collaborating on a task. Good for role-based setups (one agent researches, one writes, one reviews). You can learn more about how these frameworks compare in [Langflow's 2025 framework guide](<https://www.langflow.org/blog/the-complete-guide-to-choosing-an-ai-agent-framework-in-2025>).
+**CrewAI** is simpler to get started with and works well if you need multiple agents collaborating on a task. Good for role-based setups (one agent researches, one writes, one reviews). You can learn more about how these frameworks compare in [Langflow's 2025 framework guide](https://www.langflow.org/blog/the-complete-guide-to-choosing-an-ai-agent-framework-in-2025).
 
 **AutoGen** (from Microsoft) has some caveats worth knowing. In October 2025, Microsoft merged AutoGen with Semantic Kernel into the unified Microsoft Agent Framework, with AutoGen now in maintenance mode, receiving only bug fixes and security patches. If you're starting fresh, I'd lean toward LangGraph or CrewAI instead.
 
@@ -65,7 +65,7 @@ Tools like ​**Dify** ​, ​**n8n** ​, and various visual builders let you 
 
 What they're genuinely good for: prototyping fast, simple automation chains, connecting common tools (email, Slack, Google Drive).
 
-Where they hit a wall: complex conditional logic, custom memory setups, anything that needs fine-grained control over how the agent reasons. The **[Anthropic documentation on building effective agents](<https://www.anthropic.com/engineering/building-effective-agents>)** is worth reading here — it lays out clearly when you need more control than no-code tools can give you.
+Where they hit a wall: complex conditional logic, custom memory setups, anything that needs fine-grained control over how the agent reasons. The **[Anthropic documentation on building effective agents](https://www.anthropic.com/engineering/building-effective-agents)** is worth reading here — it lays out clearly when you need more control than no-code tools can give you.
 
 ## What Building One Actually Takes — Honestly
 
@@ -111,7 +111,7 @@ You should probably build your own agent if:
 
   * **You or your team can actually maintain it.** This is the honest filter most people skip.
 
-You can verify what the current state of various frameworks looks like by checking [LangChain's official documentation](<https://www.langchain.com/langchain>) — they update it regularly and it's more reliable than most tutorials.
+You can verify what the current state of various frameworks looks like by checking [LangChain's official documentation](https://www.langchain.com/langchain) — they update it regularly and it's more reliable than most tutorials.
 
 ### When it's more effort than it's worth
 
@@ -127,7 +127,7 @@ The no-build options are more capable than they used to be. An honest overview:
 
 **ChatGPT​ with custom instructions and actions** — handles a lot of simple agent-like tasks. Surprisingly good for document-heavy workflows. Limitation: you're inside OpenAI's ecosystem.
 
-**n8n** — the most flexible workflow tool I've come across that doesn't require deep coding. Works well for connecting many tools into an automated chain. It has a learning curve but it's learnable. [Codecademy's breakdown of agent frameworks](<https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025>) gives a clear comparison if you want to evaluate these options side by side.
+**n8n** — the most flexible workflow tool I've come across that doesn't require deep coding. Works well for connecting many tools into an automated chain. It has a learning curve but it's learnable. [Codecademy's breakdown of agent frameworks](https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025) gives a clear comparison if you want to evaluate these options side by side.
 
 **Dify** — visual, fast, good for prototyping. Less control, but genuinely fast to get something running.
 
@@ -157,13 +157,13 @@ _Back to experimenting._
 
 ## Previous Posts:
 
-  * [Explore real-world AI agent use cases before deciding what to build](</blog/ai-agent-use-cases-real-examples>)
+  * [Explore real-world AI agent use cases before deciding what to build](/blog/ai-agent-use-cases-real-examples)
 
-  * [Understand the key differences between AI agents and chatbots when scoping your project](</blog/ai-agent-vs-chatbot>)
+  * [Understand the key differences between AI agents and chatbots when scoping your project](/blog/ai-agent-vs-chatbot)
 
-  * [See when to use workflow builders vs AI workspaces for building agent systems](</blog/workflow-builder-vs-ai-workspace>)
+  * [See when to use workflow builders vs AI workspaces for building agent systems](/blog/workflow-builder-vs-ai-workspace)
 
-  * [Learn what AI agent development services actually cost before building from scratch](</blog/ai-agent-development-services>)
+  * [Learn what AI agent development services actually cost before building from scratch](/blog/ai-agent-development-services)
 
-  * [Compare Gumloop and similar tools to evaluate no-code options for building agents](</blog/gumloop-review-2026>)
+  * [Compare Gumloop and similar tools to evaluate no-code options for building agents](/blog/gumloop-review-2026)
 

@@ -16,23 +16,23 @@ draft: false
 
   * **Agent 循环是大多数教程跳过的那部分。** 你定义工具，模型返回一次工具调用，你的代码执行它，你把结果作为 `tool` 角色消息追加进去，再把更新后的历史发回去。如此往复，直到模型给出最终回答。
 
-  * 如果你在构建编码 Agent，大概不需要从零写这套循环——DeepSeek-TUI、Reasonix 这类工具已经实现了它。但理解循环，对调试、定制、以及为非编码任务构建 Agent 都是必需的。关于 DeepSeek Agent 有哪些类型，见 [什么是 DeepSeek Agent](</blog/what-is-deepseek-agent>)。
+  * 如果你在构建编码 Agent，大概不需要从零写这套循环——DeepSeek-TUI、Reasonix 这类工具已经实现了它。但理解循环，对调试、定制、以及为非编码任务构建 Agent 都是必需的。关于 DeepSeek Agent 有哪些类型，见 [什么是 DeepSeek Agent](/blog/what-is-deepseek-agent)。
 
   * 本教程使用指向 `https://api.deepseek.com` 的 OpenAI Python SDK（`pip install openai`）。Node.js 示例用同一个 SDK。如果你的代码已经在调用 OpenAI 的 API，迁移只需改一行 base URL。
 
 ## 1\. 开始之前：你需要什么
 
-你需要三样东西，外加大约十五分钟。当然，也有"什么都不建"这个选项——[Floatboat DeepSeek Agent](<https://deepseek-agent.com>) 这类工具把 Agent 循环、工具接线和桌面工作区都预配好了，你可以跳过"造 Agent"，直接用 Agent。本教程讲的是 DIY 路线，适合想要完全掌控工具面的人，也适合要构建现成客户端覆盖不到的领域专用 Agent 的人。
+你需要三样东西，外加大约十五分钟。当然，也有"什么都不建"这个选项——[Floatboat DeepSeek Agent](https://deepseek-agent.com) 这类工具把 Agent 循环、工具接线和桌面工作区都预配好了，你可以跳过"造 Agent"，直接用 Agent。本教程讲的是 DIY 路线，适合想要完全掌控工具面的人，也适合要构建现成客户端覆盖不到的领域专用 Agent 的人。
 
 一个 Python 环境——Python 3.10 及以上，装有 `pip`；或者 Node.js 18 及以上。OpenAI SDK（`pip install openai` 或 `npm install openai`）负责 API 通信。DeepSeek 的 API 在线路层面与 OpenAI 完全兼容，所以不需要专用 SDK。
 
-一个终端和一个文本编辑器。本教程里的 Agent 循环示例每个都不到五十行，你可以敲进单个文件，从命令行直接运行。如果想在动手前先看到全貌，[什么是 DeepSeek Agent](</blog/what-is-deepseek-agent>) 梳理了四种原型，帮你判断到底需不需要自定义 Agent，还是直接用现成工具就行。
+一个终端和一个文本编辑器。本教程里的 Agent 循环示例每个都不到五十行，你可以敲进单个文件，从命令行直接运行。如果想在动手前先看到全貌，[什么是 DeepSeek Agent](/blog/what-is-deepseek-agent) 梳理了四种原型，帮你判断到底需不需要自定义 Agent，还是直接用现成工具就行。
 
 一把 DeepSeek API key。下一节讲怎么拿到。如果已经有 key，直接跳到第 2 步。
 
 ## 2\. 第 1 步：拿到你的 DeepSeek API Key
 
-前往 [platform.deepseek.com](<https://platform.deepseek.com>) 注册。登录后，进入 API Keys 区块创建一把新 key。DeepSeek 要求先充值到最低额度、key 才会生效——通常是 $5 到 $10，按 V4 Flash 的定价足够跑几万次 Agent 回合。
+前往 [platform.deepseek.com](https://platform.deepseek.com) 注册。登录后，进入 API Keys 区块创建一把新 key。DeepSeek 要求先充值到最低额度、key 才会生效——通常是 $5 到 $10，按 V4 Flash 的定价足够跑几万次 Agent 回合。
 
 把 key 存成环境变量，不要硬编码进源文件。
 
@@ -63,7 +63,7 @@ Windows PowerShell 用 `$env:DEEPSEEK_API_KEY="sk-your-key-here"`。
 
 如果你看到一段自报为 DeepSeek V4 的回复，说明 key 有效。如果返回的是认证错误，再确认一下账户有没有成功充值——余额为零时，即使 key 本身有效也会返回 401。
 
-关于旧模型名的警告：自 2026 年 7 月 24 日起，`deepseek-chat` 和 `deepseek-reasoner` 已不可访问。如果你的代码还引用这两个别名，把它们换成 `deepseek-v4-flash`（通过 API 参数显式开启或关闭思考模式）。仍使用旧名字的应用会收到报错，见 [DeepSeek API 文档](<https://api-docs.deepseek.com>)。
+关于旧模型名的警告：自 2026 年 7 月 24 日起，`deepseek-chat` 和 `deepseek-reasoner` 已不可访问。如果你的代码还引用这两个别名，把它们换成 `deepseek-v4-flash`（通过 API 参数显式开启或关闭思考模式）。仍使用旧名字的应用会收到报错，见 [DeepSeek API 文档](https://api-docs.deepseek.com)。
 
 ## 3\. 第 2 步：选模型——V4 Pro 还是 V4 Flash
 
@@ -71,7 +71,7 @@ DeepSeek 通过 API 提供两款模型，这个选择直接影响 Agent 的表�
 
 <table><colgroup><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p></p></th><th colspan="1" rowspan="1"><p>V4 Pro</p></th><th colspan="1" rowspan="1"><p>V4 Flash</p></th></tr><tr><td colspan="1" rowspan="1"><p><strong>架构</strong></p></td><td colspan="1" rowspan="1"><p>1.6T 总量 / 49B 激活（MoE）</p></td><td colspan="1" rowspan="1"><p>284B 总量 / 13B 激活（MoE）</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>上下文窗口</strong></p></td><td colspan="1" rowspan="1"><p>100 万 token</p></td><td colspan="1" rowspan="1"><p>100 万 token</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>输入价格（缓存未命中）</strong></p></td><td colspan="1" rowspan="1"><p>$0.435 / 100 万 token</p></td><td colspan="1" rowspan="1"><p>$0.14 / 100 万 token</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>输出价格</strong></p></td><td colspan="1" rowspan="1"><p>$0.87 / 100 万 token</p></td><td colspan="1" rowspan="1"><p>$0.28 / 100 万 token</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>速度</strong></p></td><td colspan="1" rowspan="1"><p>约 45 token/秒</p></td><td colspan="1" rowspan="1"><p>约 120 token/秒</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>最适合</strong></p></td><td colspan="1" rowspan="1"><p>复杂多步规划、代码重构、推理密集的 Agent 循环</p></td><td colspan="1" rowspan="1"><p>高频工具调用、分类、路由、简单调试</p></td></tr></table>
 
-对单次任务就要发几十上百次 API 调用的 Agent 来说，价差累积得很快。一次烧掉 80,000 输入 token 和 20,000 输出 token 的 Agent 运行，V4 Pro 上大约 $0.052，V4 Flash 上大约 $0.017。每月五千次这样的任务：$260 对 $85——价格见 [DeepSeek 定价页](<https://api-docs.deepseek.com/quick_start/pricing>)。
+对单次任务就要发几十上百次 API 调用的 Agent 来说，价差累积得很快。一次烧掉 80,000 输入 token 和 20,000 输出 token 的 Agent 运行，V4 Pro 上大约 $0.052，V4 Flash 上大约 $0.017。每月五千次这样的任务：$260 对 $85——价格见 [DeepSeek 定价页](https://api-docs.deepseek.com/quick_start/pricing)。
 
 2026 年中的开发者讨论里浮现出一条实用规则：Agent 循环默认用 V4 Flash，只在模型的回答质量真正要紧时——通常是任务开头的规划步骤和结尾的综合步骤——把个别回合升级到 V4 Pro。两款模型共用同一个 API 面，所以"升级"只是改一行模型名。
 
@@ -198,7 +198,7 @@ DeepSeek 通过 API 提供两款模型，这个选择直接影响 Agent 的表�
 
 关于循环内选模型的一个提醒：如果你的任务需要规划（模型要想清楚先调哪些工具、按什么顺序调），把第一次调用的 `deepseek-v4-flash` 换成 `deepseek-v4-pro`。计划一旦定下来，后续的工具执行与综合回合可以留在 Flash 上。模型名只是一个字符串——你可以每个回合都换。
 
-循环稳固之后，下一步是打磨工具调用方式——[DeepSeek Agent 函数调用](</blog/deepseek-agent-function-calling>) 讲了严格模式、128 路并行调用，以及如何用 MCP 集成把 Agent 扩展到单工具之外。
+循环稳固之后，下一步是打磨工具调用方式——[DeepSeek Agent 函数调用](/blog/deepseek-agent-function-calling) 讲了严格模式、128 路并行调用，以及如何用 MCP 集成把 Agent 扩展到单工具之外。
 
 ## 5\. 加上思考模式：当推理要紧的时候
 
@@ -226,7 +226,7 @@ DeepSeek V4 支持一种思考模式：在产出工具调用或最终回答之�
 
 成本权衡：思考模式会为推理链额外消耗输出 token，而这些 token 按普通输出的同价计费。一次 `reasoning_effort: "high"` 的调用，可能在 100 token 的最终回答之前先产生 500 个额外推理 token——V4 Flash 上约合多花 $0.00014，V4 Pro 上约 $0.00044。对要跑几百回合的 Agent 循环，只在推理真能带来可度量价值的规划回合开启思考模式。循环的其余部分——执行工具、处理结果——用不上思维链。
 
-一个常见坑：如果你在用严格模式（通过 `/beta` 端点在函数定义里开 `"strict": true`），思考模式必须用 `"type": "enabled"`（而不是 `"type": "thinking"`）。这个参数在 V3 到 V4 之间改过，老教程可能还在引用已废弃的格式，见 [DeepSeek 函数调用指南](<https://api-docs.deepseek.com/guides/function_calling>)。
+一个常见坑：如果你在用严格模式（通过 `/beta` 端点在函数定义里开 `"strict": true`），思考模式必须用 `"type": "enabled"`（而不是 `"type": "thinking"`）。这个参数在 V3 到 V4 之间改过，老教程可能还在引用已废弃的格式，见 [DeepSeek 函数调用指南](https://api-docs.deepseek.com/guides/function_calling)。
 
 ## 6\. 从 Demo 到生产：错误处理与修复
 

@@ -21,13 +21,13 @@ I've been running Grok 3 through the API on and off for a couple of months. Noth
 
 ## What Is Grok 3 API
 
-xAI opened the Grok 3 API publicly in April 2025. Pricing hasn't moved since: $3 per million input tokens, $15 per million output, 131K context window. I double-checked against the [xAI models and pricing docs](<https://docs.x.ai/developers/models>) — that's the rate as of when I'm writing this.
+xAI opened the Grok 3 API publicly in April 2025. Pricing hasn't moved since: $3 per million input tokens, $15 per million output, 131K context window. I double-checked against the [xAI models and pricing docs](https://docs.x.ai/developers/models) — that's the rate as of when I'm writing this.
 
 The word "open" trips people up here, so let me split it.
 
 **API access is open** — no waitlist, you sign up, get a key, and there's a $25 starter credit on new accounts. Same friction level as OpenAI or Anthropic at this point.
 
-**Open source is a different story.** Musk [said Grok 3 would be open-sourced roughly six months after Grok 2.5 dropped](<https://techcrunch.com/2025/08/24/elon-musk-says-xai-has-open-sourced-grok-2-5/>), putting it around February 2026. Last time I checked Hugging Face, the Grok 3 weights weren't up yet. Worth checking directly if that matters to you.
+**Open source is a different story.** Musk [said Grok 3 would be open-sourced roughly six months after Grok 2.5 dropped](https://techcrunch.com/2025/08/24/elon-musk-says-xai-has-open-sourced-grok-2-5/), putting it around February 2026. Last time I checked Hugging Face, the Grok 3 weights weren't up yet. Worth checking directly if that matters to you.
 
 ![3.png](/blog/images/grok-3-api-solo-operator/1776932944516-b691cc85-59e0-46c8-bbc1-bea506233ac4.webp)
 
@@ -85,13 +85,13 @@ That's my honest take, two months in. Cheaper tokens are real, but they're not t
 
 **Previous Posts:**
 
-  * [What Is Vibe Coding (And Why It Changes How You Build)](</blog/what-is-vibe-coding>)
+  * [What Is Vibe Coding (And Why It Changes How You Build)](/blog/what-is-vibe-coding)
 
-  * [AI Workflow for Solo Founders: Where the Real Bottlenecks Are](</blog/ai-workflow-for-solo-founders>)
+  * [AI Workflow for Solo Founders: Where the Real Bottlenecks Are](/blog/ai-workflow-for-solo-founders)
 
-  * [DeepSeek V4 API for Solo Operators: When Cheap Actually Matters](</blog/deepseek-v4-api-solo-operator>)
+  * [DeepSeek V4 API for Solo Operators: When Cheap Actually Matters](/blog/deepseek-v4-api-solo-operator)
 
-  * [AI Agent vs Chatbot: Why This Distinction Affects Your Stack](</blog/ai-agent-vs-chatbot>)
+  * [AI Agent vs Chatbot: Why This Distinction Affects Your Stack](/blog/ai-agent-vs-chatbot)
 
-  * [Why AI Forgets Between Sessions (And Why It Matters for Automation)](</blog/why-ai-forgets-between-sessions>)
+  * [Why AI Forgets Between Sessions (And Why It Matters for Automation)](/blog/why-ai-forgets-between-sessions)
 

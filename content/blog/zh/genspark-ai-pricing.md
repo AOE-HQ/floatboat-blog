@@ -21,7 +21,7 @@ Genspark 分三档：Free、Plus 和 Pro。表面上看结构很直白，但细�
 
 ### 免费档——包含什么、哪里封顶
 
-免费方案每天给你**100 积分**（有些来源说是 200——因为这东西变动过，最好直接到 [Genspark 的会员页面](<https://www.genspark.ai/helpcenter?doc=general_Membership_Plans>)核实）。你还有 1 GB 的 AI Drive 存储、Super Agent 的基础访问权限，以及可以运行 Sparkpages——那种结构化的多来源研究报告。
+免费方案每天给你**100 积分**（有些来源说是 200——因为这东西变动过，最好直接到 [Genspark 的会员页面](https://www.genspark.ai/helpcenter?doc=general_Membership_Plans)核实）。你还有 1 GB 的 AI Drive 存储、Super Agent 的基础访问权限，以及可以运行 Sparkpages——那种结构化的多来源研究报告。
 
 我在升级前用了大约一周免费档。它够你测试这个平台跟你工作方式合不合拍。但如果你每天做的事超过两三件，每日上限很快就会吃紧。光是 Sparkpages 一项，按深度不同每个就要吃掉 30–80 积分，所以一次深度研究查询就可能烧光你一整天的配额。
 
@@ -51,9 +51,9 @@ _（发布前请核实：Genspark 会不定期调整定价与积分配比。发�
 
 **Sparkpages**——结构化研究报告——大约每个**5–80 积分**，取决于系统拉取多少来源、综合深度有多大。一个简单话题可能不到 10 积分。一份详细的竞品分析可以吃掉 50+。
 
-**幻灯片**一整份演示可能消耗 100+ 积分。**视频生成**最贵——Sora 2、Veo 3.1 这类模型烧积分很快。还有电话功能（是的，Genspark 真的会打电话）[大约每秒 1 积分](<https://salesdorado.com/en/ai/review-genspark/>)，所以一通 3 分钟的电话大约要 180 积分。
+**幻灯片**一整份演示可能消耗 100+ 积分。**视频生成**最贵——Sora 2、Veo 3.1 这类模型烧积分很快。还有电话功能（是的，Genspark 真的会打电话）[大约每秒 1 积分](https://salesdorado.com/en/ai/review-genspark/)，所以一通 3 分钟的电话大约要 180 积分。
 
-在每月 10,000 积分的 Plus 方案上，多位评测者——包括 [AI Tool Analysis 的一篇深度分析](<https://aitoolanalysis.com/genspark-ai-review/>)——报告重度用户会在**两到三周内用完**。这跟我自己的体验一致。如果你混合生成 Sparkpages、幻灯片，偶尔做点视频，积分撑不满一个月。
+在每月 10,000 积分的 Plus 方案上，多位评测者——包括 [AI Tool Analysis 的一篇深度分析](https://aitoolanalysis.com/genspark-ai-review/)——报告重度用户会在**两到三周内用完**。这跟我自己的体验一致。如果你混合生成 Sparkpages、幻灯片，偶尔做点视频，积分撑不满一个月。
 
 积分不会结转。没用完的在下一个计费周期重置。这一点在你想"买个年费囤积分"之前值得先知道。
 
@@ -67,7 +67,7 @@ _（发布前请核实：Genspark 会不定期调整定价与积分配比。发�
 
 **积分补充包。**月中用完时，你可以买积分包：20 美元买 10,000 积分，40 美元买 20,000。这些积分三个月内有效，比每月重置大方。但如果你经常买补充包，那就是个信号：你可能需要升到更高档。
 
-**"无限"的保留条款。** Genspark 把付费方案的 AI 聊天和图片生成宣传为无限。严格来说没错——没有月度上限。但有一个**每五小时重置的会话级速率限制**。重度使用时你会撞上它。[Genspark 自己的帮助文档也承认这一点](<https://www.genspark.ai/helpcenter?doc=general_Membership_Plans>)，称之为保持平台公平的护栏。[Trustpilot](<https://www.trustpilot.com/review/genspark.ai>) 上有些用户对这种感觉很受误导的做法颇有微词，尤其是在 Pro 方案上。
+**"无限"的保留条款。** Genspark 把付费方案的 AI 聊天和图片生成宣传为无限。严格来说没错——没有月度上限。但有一个**每五小时重置的会话级速率限制**。重度使用时你会撞上它。[Genspark 自己的帮助文档也承认这一点](https://www.genspark.ai/helpcenter?doc=general_Membership_Plans)，称之为保持平台公平的护栏。[Trustpilot](https://www.trustpilot.com/review/genspark.ai) 上有些用户对这种感觉很受误导的做法颇有微词，尤其是在 Pro 方案上。
 
 **2026 年 12 月的到期日。**聊天和图片生成零积分这项福利只保证到 2026 年 12 月 31 日。之后条款可能变化。Genspark 还没说接下来会怎样，所以如果你长期依赖这些"无限"功能做规划，要多留意公告。
 
@@ -79,9 +79,9 @@ _（发布前请核实：Genspark 会不定期调整定价与积分配比。发�
 
 Genspark 的说辞是它把**调研、聊天、图片生成、视频创作、演示文稿和 AI Agent 打包进一个订阅**。纸面上，25 美元一个月是不少价值。如果你现在同时为两三个 AI 工具付费，合并进 Genspark 确实可能降低总支出。
 
-但有个问题。通用对话和编码上 ChatGPT 仍然更强。[Perplexity 更侧重快速事实查询的引用准确度](<https://www.perplexity.ai/>)。Genspark 的强项是结构化交付物——Sparkpages、幻灯片、研究简报。它更像一个生产工具，而不是聊天伙伴。
+但有个问题。通用对话和编码上 ChatGPT 仍然更强。[Perplexity 更侧重快速事实查询的引用准确度](https://www.perplexity.ai/)。Genspark 的强项是结构化交付物——Sparkpages、幻灯片、研究简报。它更像一个生产工具，而不是聊天伙伴。
 
-还有一点：根据 [McKinsey 的 AI 现状研究](<https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai>)，AI 最大的价值来自组织围绕它重新设计工作流，而不是简单地把它贴上去。同样的逻辑适用在这里。当你把 Genspark 当作工作流中枢、而不是随便聊天的机器人时，它释放的价值最大。
+还有一点：根据 [McKinsey 的 AI 现状研究](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)，AI 最大的价值来自组织围绕它重新设计工作流，而不是简单地把它贴上去。同样的逻辑适用在这里。当你把 Genspark 当作工作流中枢、而不是随便聊天的机器人时，它释放的价值最大。
 
 ## 每个方案到底适合谁
 
@@ -97,7 +97,7 @@ Genspark 的说辞是它把**调研、聊天、图片生成、视频创作、演
 
 好——下面是我的真心话。
 
-**如果你经常需要结构化研究产出，Genspark 值。** Sparkpages 真的有用。它们不完美——仍需要编辑和事实核查——但比起手动做多来源调研，它们省下了实打实的时间。[Cybernews 的一篇独立评测](<https://cybernews.com/ai-tools/genspark-ai-review/>)指出，多 Agent 方法产出的内容比单模型工具更细腻，这跟我看到的情况一致。
+**如果你经常需要结构化研究产出，Genspark 值。** Sparkpages 真的有用。它们不完美——仍需要编辑和事实核查——但比起手动做多来源调研，它们省下了实打实的时间。[Cybernews 的一篇独立评测](https://cybernews.com/ai-tools/genspark-ai-review/)指出，多 Agent 方法产出的内容比单模型工具更细腻，这跟我看到的情况一致。
 
 **如果你只需要一个聊天机器人，它不值。** ChatGPT 做得更好，还便宜 5 美元。如果你的主要用例是对话式问答或编码帮助，Genspark 不是对的那个工具。
 
@@ -117,11 +117,11 @@ Genspark 的说辞是它把**调研、聊天、图片生成、视频创作、演
 
 ## 上一篇系列文章：
 
-  * **AI Agent 在调研、内容与运营中的真实用例** [https://floatboat.ai/blog/ai-agent-use-cases-real-examples](</blog/ai-agent-use-cases-real-examples>)
+  * **AI Agent 在调研、内容与运营中的真实用例** [https://floatboat.ai/blog/ai-agent-use-cases-real-examples](/blog/ai-agent-use-cases-real-examples)
 
-  * **一人公司如何借 AI 角色像完整团队一样运转** [https://floatboat.ai/blog/how-one-person-businesses-work-like-a-team-with-ai](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * **一人公司如何借 AI 角色像完整团队一样运转** [https://floatboat.ai/blog/how-one-person-businesses-work-like-a-team-with-ai](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * **AI 自动化服务在真实市场上到底怎么定价** [https://floatboat.ai/blog/ai-automation-agency-pricing](</blog/ai-automation-agency-pricing>)
+  * **AI 自动化服务在真实市场上到底怎么定价** [https://floatboat.ai/blog/ai-automation-agency-pricing](/blog/ai-automation-agency-pricing)
 
-  * **Lindy 与 Gumloop 在 Agent 式工作流上有什么不同** [https://floatboat.ai/blog/lindy-vs-gumloop](</blog/lindy-vs-gumloop>)
+  * **Lindy 与 Gumloop 在 Agent 式工作流上有什么不同** [https://floatboat.ai/blog/lindy-vs-gumloop](/blog/lindy-vs-gumloop)
 

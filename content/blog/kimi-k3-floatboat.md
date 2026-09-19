@@ -16,7 +16,7 @@ draft: false
 
   * Three capabilities map directly to calendar-driven agent work: **1M context** for multi-document meeting preparation that previously required sequential calls and intermediate summarization, **always-on max reasoning** for complex synthesis where the first answer is rarely the right one, and **native visual understanding** for frontend design and visual feedback loops where code and screenshots iterate together.
 
-  * Kimi's own technical blog is clear about where K3 stands: overall performance still trails Claude Fable 5 and GPT-5.6 Sol, but K3 demonstrates frontier-level performance across its evaluation suite [Source: <a href="<https://www.kimi.com/blog/kimi-k3>" rel="nofollow noopener">Kimi K3 Technical Blog</a>]. On Arena AI's Frontend Code Arena — a third-party benchmark ranking frontend code generation by human preference — K3 debuted at #1 with 1,679 points as of the July 17, 2026 snapshot [Source: <a href="<https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems>" rel="nofollow noopener">VentureBeat</a>].
+  * Kimi's own technical blog is clear about where K3 stands: overall performance still trails Claude Fable 5 and GPT-5.6 Sol, but K3 demonstrates frontier-level performance across its evaluation suite, as documented in [Kimi K3's technical blog](https://www.kimi.com/blog/kimi-k3). On Arena AI's Frontend Code Arena — a third-party benchmark ranking frontend code generation by human preference — K3 debuted at #1 with 1,679 points as of the July 17, 2026 snapshot [Source: <a href="<https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems>" rel="nofollow noopener">VentureBeat</a>].
 
   * This article maps K3's capabilities to the calendar events your agents already handle, shows what a tiered model strategy costs for a real solopreneur workload, and covers the limitations you should know before switching.
 
@@ -26,13 +26,13 @@ Kimi K3 is Moonshot AI's most capable model. It uses 2.8 trillion parameters wit
 
 Kimi K3 supports a 1-million-token context window and includes native visual understanding — it can process screenshots, diagrams, and documents alongside text in a single pass. At launch, it runs at max reasoning effort by default; lower and higher effort modes will follow in subsequent updates.
 
-The model is available today through [Kimi.com](<http://Kimi.com>), Kimi Work, Kimi Code, and the Kimi API. Moonshot describes K3 as "the world's first open 3T-class model" and has committed to releasing the full model weights by July 27, 2026. More technical detail will appear in the forthcoming Kimi K3 technical report.
+The model is available today through [Kimi.com](http://Kimi.com), Kimi Work, Kimi Code, and the Kimi API. Moonshot describes K3 as "the world's first open 3T-class model" and has committed to releasing the full model weights by July 27, 2026. More technical detail will appear in the forthcoming Kimi K3 technical report.
 
-Kimi's official documentation is clear about where K3 stands relative to proprietary models: "While its overall performance still trails the most powerful proprietary models, Claude Fable 5 and GPT 5.6 Sol, Kimi K3 demonstrated frontier-level performance across our evaluation suite, consistently outperforming other tested models." [Source: <a href="<https://www.kimi.com/blog/kimi-k3>" rel="nofollow noopener">Kimi K3 Technical Blog</a>]
+Kimi's official documentation is clear about where K3 stands relative to proprietary models: "While its overall performance still trails the most powerful proprietary models, Claude Fable 5 and GPT 5.6 Sol, Kimi K3 demonstrated frontier-level performance across our evaluation suite, consistently outperforming other tested models," per [Kimi K3's technical blog](https://www.kimi.com/blog/kimi-k3).
 
   2. Why Built-In Matters — No API Keys, No Configuration
 
-Floatboat is a proactive agent OS where the calendar acts as the runtime for work. It syncs with Google Calendar, Outlook, Lark, and Notion Calendar, then automatically prepares, executes, and follows up on the tasks inside each event. For more context, see <a href="/blog/what-is-agentic-calendar">what an agentic calendar is</a> and <a href="/blog/calendar-driven-ai-vs-chat-ai">how calendar-driven AI differs from chat-based AI</a>.
+Floatboat is a proactive agent OS where the calendar acts as the runtime for work. It syncs with Google Calendar, Outlook, Lark, and Notion Calendar, then automatically prepares, executes, and follows up on the tasks inside each event. For more context, see [what an agentic calendar is](/blog/what-is-agentic-calendar) and [how calendar-driven AI differs from chat-based AI](/blog/calendar-driven-ai-vs-chat-ai).
 
 The practical difference between integration and built-in is that one keeps you in setup mode and the other keeps you in flow. On platforms where K3 requires configuration, the decision about when to use it is a technical choice you make before starting work. On Floatboat, you open the model selector in any agent pipeline, see K3 listed alongside the other models, and select it — or let Auto Mode route work to K3 when the event complexity calls for it.
 
@@ -48,7 +48,7 @@ K3's 1-million-token context window is not just a larger number. It is paired wi
 
 In calendar-driven terms, the 1M context window handles event types where preparation means synthesizing multiple documents. A client quarterly review that requires reading three previous meeting notes from the event workspace, cross-referencing the CRM for recent interactions, scanning email threads for open items, and generating a structured brief with prioritized talking points and identified risks — this is a 1M-context task. Before models with this context length, the agent had to process documents sequentially, summarize intermediate results, and risk losing information at each compression step. K3 reads everything in a single pass, which means the brief is built from primary sources rather than summaries of summaries.
 
-Kimi's official benchmarks confirm this: on Terminal Bench 2.1, K3 scores 88.3, ahead of Claude Fable 5 at 84.6 and close to GPT-5.6 Sol at 88.8. On SWE Marathon — a test of sustained, multi-step software engineering — K3 leads with 42.0 vs. Fable 5 at 35.0 and GPT-5.6 Sol at 39.0 [Source: <a href="<https://www.kimi.com/blog/kimi-k3>" rel="nofollow noopener">Kimi K3 Technical Blog</a>, queried July 17, 2026].
+Kimi's official benchmarks confirm this: on Terminal Bench 2.1, K3 scores 88.3, ahead of Claude Fable 5 at 84.6 and close to GPT-5.6 Sol at 88.8. On SWE Marathon — a test of sustained, multi-step software engineering — K3 leads with 42.0 vs. Fable 5 at 35.0 and GPT-5.6 Sol at 39.0, per [Kimi K3's technical blog](https://www.kimi.com/blog/kimi-k3), queried July 17, 2026.
 
 ### 3.2 Native Visual Reasoning — Code, Screenshot, Iterate
 
@@ -82,7 +82,7 @@ The recommended configuration — K3 for the handful of complex events each mont
 
   5. Kimi K3's Benchmark Position
 
-Kimi's official technical blog provides a full benchmark table comparing K3 against Claude Fable 5, GPT-5.6 Sol, Claude Opus 4.8, GPT-5.5, and GLM-5.2 across coding, agentic, reasoning, and vision evaluations. Rather than reproduce the full table here (it is available at <a href="<https://www.kimi.com/blog/kimi-k3>" rel="nofollow noopener">[kimi.com/blog/kimi-k3](<http://kimi.com/blog/kimi-k3>)</a>), here is what the data shows:
+Kimi's official technical blog provides a full benchmark table comparing K3 against Claude Fable 5, GPT-5.6 Sol, Claude Opus 4.8, GPT-5.5, and GLM-5.2 across coding, agentic, reasoning, and vision evaluations. Rather than reproduce the full table here (it is available at [kimi.com/blog/kimi-k3](https://www.kimi.com/blog/kimi-k3)), here is what the data shows:
 
 Kimi K3 is competitive at the frontier. It leads on SWE Marathon, performs at parity with Fable 5 and GPT-5.6 Sol on Program Bench, and trails by small margins on several other coding benchmarks. On reasoning tasks, it scores 93.5 on GPQA-Diamond (vs. Fable 5 at 92.6 and GPT-5.6 Sol at 94.1). On vision tasks, it is broadly competitive with both proprietary models.
 

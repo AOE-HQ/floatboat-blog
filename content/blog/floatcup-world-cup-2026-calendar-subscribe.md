@@ -126,11 +126,6 @@ FloatCup is built for one job: make sure you never miss a kickoff across 39 days
 
 If you prefer a manual approach or want to compare options first, the ICS import guide walks through every platform step by step. Either path gets the full schedule into your calendar; FloatCup is the zero-maintenance option for readers who want the tournament to run in the background until July 19.
 
-## Related Reading
-
-  * How to Add World Cup 2026 to Google Calendar (ICS Guide) — manual ICS import for every platform
-
-  * World Cup 2026 Schedule: Full Fixtures & Calendar Sync — the complete fixture list
-
-  * World Cup 2026 Guide: Dates, Format, Hosts & FAQ — full tournament overview
-
+## Related Reading- [How to Add World Cup 2026 to Google Calendar (ICS Guide) — manual ICS import for every platform](/blog/world-cup-2026-google-calendar-ics)
+- [World Cup 2026 Schedule: Full Fixtures & Calendar Sync — the complete fixture list](/blog/world-cup-2026-schedule)
+- [World Cup 2026 Guide: Dates, Format, Hosts & FAQ — full tournament overview](/blog/world-cup-2026-guide)

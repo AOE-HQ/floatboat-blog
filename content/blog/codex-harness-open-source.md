@@ -12,7 +12,7 @@ draft: false
 ---
 
 **TL;DR**
-  * **Codex Harness** is the execution layer behind Codex App, CLI, and IDE experiences — the agent loop that manages context, tool calls, sandboxing, approvals, and multi-turn state. OpenAI published it as a **platform** on August 19, 2026 in [Codex as a platform](<https://developers.openai.com/blog/codex-as-a-platform>), with source in `openai/codex` on GitHub under Apache 2.0.
+  * **Codex Harness** is the execution layer behind Codex App, CLI, and IDE experiences — the agent loop that manages context, tool calls, sandboxing, approvals, and multi-turn state. OpenAI published it as a **platform** on August 19, 2026 in [Codex as a platform](https://developers.openai.com/blog/codex-as-a-platform), with source in `openai/codex` on GitHub under Apache 2.0.
 
   * Three integration tiers ship for embedders: `codex exec` (bounded CI/script jobs), **Codex SDK** (TypeScript/Python programmatic control), and **Codex app-server** (JSON-RPC for persistent threads, streamed events, and human-in-the-loop approvals).
 
@@ -20,7 +20,7 @@ draft: false
 
   * OpenAI reports harness design alone raised GPT-5.6 Sol on ARC-AGI-3 from 13.3% to 38.3% while cutting output tokens roughly sixfold — a signal that orchestration, not just weights, drives agent outcomes.
 
-  * For calendar-driven agents, the takeaway is structural: **Model + Harness = Agent**. Floatboat ships [GPT-5.6 Sol, Terra, and Luna](</blog/gpt-5-6-sol-terra-luna>) as built-in models; Codex Harness is the open reference for how OpenAI itself wires those models into durable agent loops.
+  * For calendar-driven agents, the takeaway is structural: **Model + Harness = Agent**. Floatboat ships [GPT-5.6 Sol, Terra, and Luna](/blog/gpt-5-6-sol-terra-luna) as built-in models; Codex Harness is the open reference for how OpenAI itself wires those models into durable agent loops.
 
 ## 1\. Why OpenAI Reframed Codex as a Platform
 
@@ -38,13 +38,13 @@ Community reaction on Hacker News and other developer forums often highlights th
 
 ### 2.1 The Core Definition
 
-In OpenAI's vocabulary, **harness** means everything between your application and the model that turns a completion endpoint into an agent: the turn loop, tool definitions, context compaction, sandbox enforcement, interruptibility, and approval workflows. The [Unrolling the Codex agent loop](<https://openai.com/index/unrolling-the-codex-agent-loop/>) post treats the harness as the component that orchestrates user input, Responses API calls, tool results, and the next model turn.
+In OpenAI's vocabulary, **harness** means everything between your application and the model that turns a completion endpoint into an agent: the turn loop, tool definitions, context compaction, sandbox enforcement, interruptibility, and approval workflows. The [Unrolling the Codex agent loop](https://openai.com/index/unrolling-the-codex-agent-loop/) post treats the harness as the component that orchestrates user input, Responses API calls, tool results, and the next model turn.
 
 Architecturally, the maintained implementation lives in `codex-rs` inside the `openai/codex` repository. The core uses a **Submission Queue / Event Queue** pattern: clients submit operations (`Op`), the session runs turns, and events stream back as work progresses — enabling cancellation, partial output, and rich UI bindings. OpenAI's app-server engineering post documents **Codex app-server** as the JSON-RPC translation layer between product UIs and those core threads.
 
 ### 2.2 Harness Engineering — Building for Agents, Not Just Prompts
 
-OpenAI coined **harness engineering** in [Harness engineering: leveraging Codex in an agent-first world](<https://openai.com/index/harness-engineering/>) (February 11, 2026): when agents write most of the code, human engineers optimize the **environment** — `AGENTS.md`, design docs, automated checks, guardrails — so agents can reason about the business from the repo itself. An internal prototype reportedly reached on the order of **one million lines** across ~1,500 merged PRs with a small team driving Codex.
+OpenAI coined **harness engineering** in [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/) (February 11, 2026): when agents write most of the code, human engineers optimize the **environment** — `AGENTS.md`, design docs, automated checks, guardrails — so agents can reason about the business from the repo itself. An internal prototype reportedly reached on the order of **one million lines** across ~1,500 merged PRs with a small team driving Codex.
 
 That discipline is separate from but complementary to the August platform push: harness engineering is _how you structure a codebase for agents_ ; Codex Harness is _the runtime that executes agent turns_ inside or outside OpenAI's own apps.
 
@@ -78,7 +78,7 @@ Plugins add another path: installed plugins can bundle MCP servers with per-tool
 
 ## 4\. Open-Source Boundary — What Shipped and What Didn't
 
-The canonical list is [Open Source | Codex](<https://developers.openai.com/codex/open-source>) on developers.openai.com:
+The canonical list is [Open Source | Codex](https://developers.openai.com/codex/open-source) on developers.openai.com:
 
 
 
@@ -86,7 +86,7 @@ The canonical list is [Open Source | Codex](<https://developers.openai.com/codex
 
 
 
-The primary repository is [openai/codex](<https://github.com/openai/codex>) on GitHub. License is **Apache 2.0** (verify in-repo before redistribution). **Models are not included.** Forking the harness does not grant free GPT-5.6 inference — API keys and Codex subscription terms still apply.
+The primary repository is [openai/codex](https://github.com/openai/codex) on GitHub. License is **Apache 2.0** (verify in-repo before redistribution). **Models are not included.** Forking the harness does not grant free GPT-5.6 inference — API keys and Codex subscription terms still apply.
 
 **Codex Security** is a sibling open-source line (`openai/codex-security`) for vulnerability scanning workflows — same harness philosophy (open tooling, paid model access) applied to security review rather than feature development. It illustrates how OpenAI is productizing multiple agent shapes on one runtime rather than treating Codex as terminal-only coding.
 
@@ -138,7 +138,7 @@ Calendar-driven products mirror the top row with a different control plane: the 
 
 
 
-DeepSeek shipped [DeepSeek Harness v0.1](</blog/what-is-deepseek-harness>) in August 2026 as a **model-native, pluginized** answer to execution-layer ownership. Codex Harness is **vertical** : deeply integrated with OpenAI's Responses API, compaction endpoints, and subscription surface. Anthropic's Claude Code remains the polished closed product for teams already standardized on Claude models — but OpenAI's open runtime plus third-party harness compatibility is a deliberate distribution bet.
+DeepSeek shipped [DeepSeek Harness v0.1](/blog/what-is-deepseek-harness) in August 2026 as a **model-native, pluginized** answer to execution-layer ownership. Codex Harness is **vertical** : deeply integrated with OpenAI's Responses API, compaction endpoints, and subscription surface. Anthropic's Claude Code remains the polished closed product for teams already standardized on Claude models — but OpenAI's open runtime plus third-party harness compatibility is a deliberate distribution bet.
 
 If you are building **multi-vendor** agent infrastructure, treat model comparison and harness comparison as two different decisions. Floatboat sidesteps part of that tradeoff by shipping multiple model families built-in — OpenAI tiers, DeepSeek, Claude, Gemini, and others — while owning calendar orchestration above any single harness. The harness you embed is a long-lived infrastructure bet; the model roster can rotate quarterly without rewriting your own product-level approval UX.
 
@@ -148,7 +148,7 @@ Floatboat is calendar-driven: agents wake on events, not chat prompts. That arch
 
 You do not need to embed Codex Harness inside Floatboat to benefit from the release. Floatboat owns the calendar orchestration layer; Codex Harness is the open reference if you build custom tools beside your schedule. Meeting prep and follow-up pipelines describe _what_ calendar agents should do; a reference-grade runtime describes _how_ turns stay coherent while doing it.
 
-If you are evaluating whether to fork Codex or embed app-server in an internal ops tool, start with the open-source component list in §4, run `codex exec` on a bounded repo task, then graduate to SDK/app-server only when you need persistent UI sessions. For built-in GPT-5.6 tiers without API wiring, see [GPT-5.6 in Floatboat](</blog/gpt-5-6-floatboat>).
+If you are evaluating whether to fork Codex or embed app-server in an internal ops tool, start with the open-source component list in §4, run `codex exec` on a bounded repo task, then graduate to SDK/app-server only when you need persistent UI sessions. For built-in GPT-5.6 tiers without API wiring, see [GPT-5.6 in Floatboat](/blog/gpt-5-6-floatboat).
 
 ## 9\. Conclusion
 

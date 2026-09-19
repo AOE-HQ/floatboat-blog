@@ -12,7 +12,7 @@ draft: false
 ---
 
 **TL;DR**
-  * **Codex Harness**是 Codex App、CLI 与 IDE 体验背后的执行层——负责管理上下文、工具调用、沙箱、审批与多轮状态的 Agent 循环。OpenAI 于 2026 年 8 月 19 日以**平台**形式发布（见 [Codex as a platform](<https://developers.openai.com/blog/codex-as-a-platform>)），源码位于 GitHub 的 `openai/codex`，采用 Apache 2.0 协议。
+  * **Codex Harness**是 Codex App、CLI 与 IDE 体验背后的执行层——负责管理上下文、工具调用、沙箱、审批与多轮状态的 Agent 循环。OpenAI 于 2026 年 8 月 19 日以**平台**形式发布（见 [Codex as a platform](https://developers.openai.com/blog/codex-as-a-platform)），源码位于 GitHub 的 `openai/codex`，采用 Apache 2.0 协议。
 
   * 面向嵌入方提供三层集成：`codex exec`（有边界的 CI/脚本任务）、**Codex SDK**（TypeScript/Python 编程式控制）与**Codex app-server**（面向持久线程、流式事件与人在环审批的 JSON-RPC）。
 
@@ -20,7 +20,7 @@ draft: false
 
   * OpenAI 报告称，仅 Harness 设计优化一项，就让 GPT-5.6 Sol 在 ARC-AGI-3 上的成绩从 13.3% 提升到 38.3%，同时输出 token 大约压到六分之一——这说明决定 Agent 产出质量的不只是权重，编排同样关键。
 
-  * 对日历驱动的 Agent 而言，结论是结构性的：**模型 + Harness = Agent**。Floatboat 内置 [GPT-5.6 Sol、Terra 与 Luna](</blog/gpt-5-6-sol-terra-luna>)；Codex Harness 则是 OpenAI 如何把这些模型接进持久 Agent 循环的开放参考实现。
+  * 对日历驱动的 Agent 而言，结论是结构性的：**模型 + Harness = Agent**。Floatboat 内置 [GPT-5.6 Sol、Terra 与 Luna](/blog/gpt-5-6-sol-terra-luna)；Codex Harness 则是 OpenAI 如何把这些模型接进持久 Agent 循环的开放参考实现。
 
 ## 1\. OpenAI 为什么把 Codex 重新定位为平台
 
@@ -38,13 +38,13 @@ Hacker News 等开发者论坛上的社区反应常常突出这一对比：OpenA
 
 ### 2.1 核心定义
 
-在 OpenAI 的词汇里，**harness**指应用与模型之间的那一层——它把补全端点变成真正的 Agent：包括轮次循环、工具定义、上下文压缩、沙箱强制、可中断性与审批工作流。[Unrolling the Codex agent loop](<https://openai.com/index/unrolling-the-codex-agent-loop/>) 一文把 harness 视为协调用户输入、Responses API 调用、工具结果与下一轮模型调用的组件。
+在 OpenAI 的词汇里，**harness**指应用与模型之间的那一层——它把补全端点变成真正的 Agent：包括轮次循环、工具定义、上下文压缩、沙箱强制、可中断性与审批工作流。[Unrolling the Codex agent loop](https://openai.com/index/unrolling-the-codex-agent-loop/) 一文把 harness 视为协调用户输入、Responses API 调用、工具结果与下一轮模型调用的组件。
 
 架构上，受维护的实现位于 `openai/codex` 仓库内的 `codex-rs`。核心采用**提交队列 / 事件队列（Submission Queue / Event Queue）**模式：客户端提交操作（`Op`），会话推进各轮次，事件随进度流式回传——从而支持取消、部分输出与丰富的 UI 绑定。OpenAI 的 app-server 工程博文把**Codex app-server**定义为产品 UI 与这些核心线程之间的 JSON-RPC 翻译层。
 
 ### 2.2 Harness 工程——为 Agent 而建，而非仅为提示词
 
-OpenAI 在 [Harness engineering: leveraging Codex in an agent-first world](<https://openai.com/index/harness-engineering/>)（2026 年 2 月 11 日）中提出了**harness engineering**一词：当 Agent 写出大部分代码时，人类工程师优化的是**环境**——`AGENTS.md`、设计文档、自动化检查、护栏——让 Agent 能直接从仓库本身理解业务。据报道，一个小团队驱动 Codex，内部原型达到了约**一百万行**代码、约 1,500 个已合并 PR 的规模。
+OpenAI 在 [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/)（2026 年 2 月 11 日）中提出了**harness engineering**一词：当 Agent 写出大部分代码时，人类工程师优化的是**环境**——`AGENTS.md`、设计文档、自动化检查、护栏——让 Agent 能直接从仓库本身理解业务。据报道，一个小团队驱动 Codex，内部原型达到了约**一百万行**代码、约 1,500 个已合并 PR 的规模。
 
 这套方法论与八月的平台发布相互独立、又互为补充：harness engineering 讲的是「如何为 Agent 组织代码库」；Codex Harness 则是「在 OpenAI 自家应用内外执行 Agent 轮次的运行时」。
 
@@ -78,7 +78,7 @@ Codex Harness 不是孤岛。MCP 服务器配置存放在 `~/.codex/config.toml`
 
 ## 4\. 开源边界——哪些发布了、哪些没有
 
-权威清单在 developers.openai.com 的 [Open Source | Codex](<https://developers.openai.com/codex/open-source>) 页面：
+权威清单在 developers.openai.com 的 [Open Source | Codex](https://developers.openai.com/codex/open-source) 页面：
 
 
 
@@ -86,7 +86,7 @@ Codex Harness 不是孤岛。MCP 服务器配置存放在 `~/.codex/config.toml`
 
 
 
-主仓库是 GitHub 上的 [openai/codex](<https://github.com/openai/codex>)。许可证为**Apache 2.0**（再分发前请在仓库内核实）。**模型不在其中。** Fork harness 并不等于获得免费的 GPT-5.6 推理——API Key 与 Codex 订阅条款依然适用。
+主仓库是 GitHub 上的 [openai/codex](https://github.com/openai/codex)。许可证为**Apache 2.0**（再分发前请在仓库内核实）。**模型不在其中。** Fork harness 并不等于获得免费的 GPT-5.6 推理——API Key 与 Codex 订阅条款依然适用。
 
 **Codex Security**是一条姊妹开源线（`openai/codex-security`），面向漏洞扫描工作流——同一套 harness 哲学（工具开源、模型付费）从功能开发延伸到了安全评审。它说明 OpenAI 正在同一套运行时上产品化多种 Agent 形态，而不是把 Codex 局限为终端里的编码工具。
 
@@ -139,7 +139,7 @@ Symphony 是一份**规范与参考模式**，不是 app-server 的替代品。�
 
 
 
-DeepSeek 于 2026 年 8 月发布了 [DeepSeek Harness v0.1](</blog/what-is-deepseek-harness>)，作为**模型原生、插件化**的执行层自主方案。Codex Harness 是**纵向**的：与 OpenAI 的 Responses API、压缩端点与订阅体系深度集成。Anthropic 的 Claude Code 依然是已标准化在 Claude 模型上的团队会选择的精致封闭产品——但 OpenAI 的开放运行时加上第三方 harness 兼容，是一次刻意的分发押注。
+DeepSeek 于 2026 年 8 月发布了 [DeepSeek Harness v0.1](/blog/what-is-deepseek-harness)，作为**模型原生、插件化**的执行层自主方案。Codex Harness 是**纵向**的：与 OpenAI 的 Responses API、压缩端点与订阅体系深度集成。Anthropic 的 Claude Code 依然是已标准化在 Claude 模型上的团队会选择的精致封闭产品——但 OpenAI 的开放运行时加上第三方 harness 兼容，是一次刻意的分发押注。
 
 如果你在构建**多厂商**的 Agent 基础设施，请把模型对比与 harness 对比当成两个不同的决策。Floatboat 通过内置多家模型家族绕开了部分取舍——OpenAI 分级模型、DeepSeek、Claude、Gemini 等——同时在任何单一 harness 之上自持日历编排。你嵌入的 harness 是长期的基础设施赌注；模型名册可以每季度轮换，而不必重写你产品层面的审批 UX。
 
@@ -149,7 +149,7 @@ Floatboat 是日历驱动的：Agent 被事件唤醒，而不是被聊天提示�
 
 你不需要把 Codex Harness 嵌进 Floatboat，也能从这个发布中受益。Floatboat 自持日历编排层；如果你想在日程旁边构建自定义工具，Codex Harness 就是开放参考。会议准备与会后跟进流水线描述的是日历 Agent 该做**什么**；参考级的运行时描述的是执行过程中各轮对话如何保持连贯的**方式**。
 
-如果你正在评估是 fork Codex、还是把 app-server 嵌进内部运维工具，建议从 §4 的开源组件清单入手，先在一个有边界的仓库任务上跑 `codex exec`，等到确实需要持久 UI 会话时再升级到 SDK/app-server。关于无需 API 接线的内置 GPT-5.6 分级模型，见 [Floatboat 中的 GPT-5.6](</blog/gpt-5-6-floatboat>)。
+如果你正在评估是 fork Codex、还是把 app-server 嵌进内部运维工具，建议从 §4 的开源组件清单入手，先在一个有边界的仓库任务上跑 `codex exec`，等到确实需要持久 UI 会话时再升级到 SDK/app-server。关于无需 API 接线的内置 GPT-5.6 分级模型，见 [Floatboat 中的 GPT-5.6](/blog/gpt-5-6-floatboat)。
 
 ## 9\. 结语
 

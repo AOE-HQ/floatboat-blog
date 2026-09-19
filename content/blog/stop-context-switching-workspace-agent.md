@@ -21,7 +21,7 @@ Most of the research on this is framed around teams in big companies. But the pa
 
 A widely-cited study from **Harvard Business Review tracked 137 workers across three Fortune 500 companies​ ​** and found they toggled between apps about **1,200 times a day** — roughly four hours a week just reorienting. That's around 9% of the working year. Gone. Not on hard problems. On the friction of switching.
 
-And then there's the recovery cost per switch. [Gloria Mark's research at UC Irvine](<https://ics.uci.edu/~gmark/chi08-mark.pdf>) is the source of the often-quoted figure that it takes about **23 minutes and 15 seconds** to fully refocus after an interruption. I've seen people quote this number for years without checking it — the actual paper is worth reading because the more interesting finding is that people _compensate_ by working faster, but the cost shows up as stress, frustration, and time pressure. So even when the work gets done, something in you pays.
+And then there's the recovery cost per switch. [Gloria Mark's research at UC Irvine](https://ics.uci.edu/~gmark/chi08-mark.pdf) is the source of the often-quoted figure that it takes about **23 minutes and 15 seconds** to fully refocus after an interruption. I've seen people quote this number for years without checking it — the actual paper is worth reading because the more interesting finding is that people _compensate_ by working faster, but the cost shows up as stress, frustration, and time pressure. So even when the work gets done, something in you pays.
 
 ![2.PNG](/blog/images/stop-context-switching-workspace-agent/1777599736423-3045cce0-260b-4f4e-bd7a-04fc04eae09f.webp)
 
@@ -35,7 +35,7 @@ This is the part the productivity literature underweights. Most research is on k
 
 I went through a phase last year where every time I hit a friction point, I added a tool. Note-taker for meetings. Separate writing app. A research thing. A separate AI for outlining. A different AI for drafting. By the end of two months I had a beautiful stack and I was getting _less_ done.
 
-[The American Psychological Association's summary of switching cost research](<https://www.apa.org/topics/research/multitasking>) makes the point pretty clearly: the issue isn't the individual switch — it's the cumulative cognitive overhead of **goal-shifting** plus **rule-activation** every time the brain reorients. Adding a tool means adding both of those, every time you touch it.
+[The American Psychological Association's summary of switching cost research](https://www.apa.org/topics/research/multitasking) makes the point pretty clearly: the issue isn't the individual switch — it's the cumulative cognitive overhead of **goal-shifting** plus **rule-activation** every time the brain reorients. Adding a tool means adding both of those, every time you touch it.
 
 I dismissed this for a while. I was being stubborn.
 
@@ -77,7 +77,7 @@ A workspace agent reads what's on your screen — the doc you're in, the source 
 
 The third shift is the one that took me longest to appreciate. If you do the same kind of task often — say, "take a research doc and turn it into a draft outline" — you currently re-explain that to an AI every time. Different tabs, different chats, similar prompt, slight variations.
 
-A workspace agent can save that whole pattern as a reusable thing. Same input shape, same steps, same output. You stop rebuilding the wheel every Tuesday. [Asana's Anatomy of Work data on context switching](<https://asana.com/resources/context-switching>) makes a related point: the problem isn't usually a single bad workflow, it's that ​**the same workflow gets reconstructed badly, over and over** ​, because nothing's saved between runs.
+A workspace agent can save that whole pattern as a reusable thing. Same input shape, same steps, same output. You stop rebuilding the wheel every Tuesday. [Asana's Anatomy of Work data on context switching](https://asana.com/resources/context-switching) makes a related point: the problem isn't usually a single bad workflow, it's that ​**the same workflow gets reconstructed badly, over and over** ​, because nothing's saved between runs.
 
 ![4.png](/blog/images/stop-context-switching-workspace-agent/1777599761438-8149a6b1-3554-48e1-93fc-89d27caee81c.webp)
 
@@ -109,7 +109,7 @@ I want to be careful here, because this is the part where most articles overprom
 
 If you're context-switching because you genuinely don't know what you should be working on, no workspace will save you. You'll just switch _inside_ the workspace instead of between tabs. The tool addresses friction in execution. It does not address confusion about what to execute.
 
-[Gallup's interview with Gloria Mark](<https://news.gallup.com/businessjournal/23146/too-many-interruptions-work.aspx>) makes a related point that stuck with me — she observes that we don't really have workdays anymore, we have "work minutes that last all day." That's not a tool problem. That's a _what am I actually trying to do_ problem. Tools amplify whatever clarity you already have. They don't manufacture it.
+[Gallup's interview with Gloria Mark](https://news.gallup.com/businessjournal/23146/too-many-interruptions-work.aspx) makes a related point that stuck with me — she observes that we don't really have workdays anymore, we have "work minutes that last all day." That's not a tool problem. That's a _what am I actually trying to do_ problem. Tools amplify whatever clarity you already have. They don't manufacture it.
 
 ### Work that genuinely requires deep focus blocks
 
@@ -137,13 +137,13 @@ Anyway, that's where I am with this right now. If you try the manual version thi
 
 ## Previous Posts:
 
-  * [How workspace agents can help reduce friction and make solo work feel smoother](</blog/stop-context-switching>)
+  * [How workspace agents can help reduce friction and make solo work feel smoother](/blog/stop-context-switching)
 
-  * [Learn why chat tools and workflow builders often add more complexity instead of solving problems](</blog/why-automation-ends-up-more-frustrating>)
+  * [Learn why chat tools and workflow builders often add more complexity instead of solving problems](/blog/why-automation-ends-up-more-frustrating)
 
-  * [If you're managing multiple roles in a solo business, here’s how workspace agents can streamline your day](</blog/solo-founders-and-workspace-agents>)
+  * [If you're managing multiple roles in a solo business, here’s how workspace agents can streamline your day](/blog/solo-founders-and-workspace-agents)
 
-  * [Try this simple manual exercise to reduce context switching and see if a workspace agent fits](</blog/reduce-context-switching-manually>)
+  * [Try this simple manual exercise to reduce context switching and see if a workspace agent fits](/blog/reduce-context-switching-manually)
 
-  * [Curious about AI agents for solo work? This post dives into what they do (and don’t do) for solo entrepreneurs](</blog/ai-agents-for-solo-operators>)
+  * [Curious about AI agents for solo work? This post dives into what they do (and don’t do) for solo entrepreneurs](/blog/ai-agents-for-solo-operators)
 

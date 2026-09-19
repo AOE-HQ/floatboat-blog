@@ -35,9 +35,9 @@ draft: false
 
 ### 第一类：自托管、面向开发者
 
-眼下最典型的例子是 Nous Research 做的 [Hermes Agent](<https://hermesagent.agency/>)。它开源、MIT 许可，核心就是围绕持久记忆和自我改进的技能（skill）来设计的。设计逻辑是：完成一个复杂任务后，Agent 会自动创建一个可复用的"技能"——一份结构化的文档，记录流程、坑点和验证步骤。下次再遇到类似任务，它直接加载这个技能，而不是从头推理。
+眼下最典型的例子是 Nous Research 做的 [Hermes Agent](https://hermesagent.agency/)。它开源、MIT 许可，核心就是围绕持久记忆和自我改进的技能（skill）来设计的。设计逻辑是：完成一个复杂任务后，Agent 会自动创建一个可复用的"技能"——一份结构化的文档，记录流程、坑点和验证步骤。下次再遇到类似任务，它直接加载这个技能，而不是从头推理。
 
-这确实令人印象深刻。跨会话的持久记忆、用于自动化任务的 cron 调度器、16 个消息平台集成，还能跑在从 5 美元的 VPS 到 serverless 基础设施的任何东西上。根据[官方 Hermes Agent 文档](<https://hermes-agent.nousresearch.com/docs/>)，最低硬件要求是 2GB 内存和 10GB 磁盘——技术上确实门槛不高，但你还是得自己管理服务器、配置 LLM 供应商、维护整个系统。
+这确实令人印象深刻。跨会话的持久记忆、用于自动化任务的 cron 调度器、16 个消息平台集成，还能跑在从 5 美元的 VPS 到 serverless 基础设施的任何东西上。根据[官方 Hermes Agent 文档](https://hermes-agent.nousresearch.com/docs/)，最低硬件要求是 2GB 内存和 10GB 磁盘——技术上确实门槛不高，但你还是得自己管理服务器、配置 LLM 供应商、维护整个系统。
 
 这是典型的第一类工具。强大、灵活、真正持久。它是为习惯在终端里工作的人准备的。
 
@@ -85,7 +85,7 @@ Floatboat 属于这一类——一款 AI 工作区桌面应用（Mac/Windows）�
 
 **文件与浏览器在同一种环境里。**在应用之间来回切换有真实的认知成本。能在单一环境里处理文档、做研究、生成内容——不用手动复制粘贴——的工具，能实实在在降低这种成本。
 
-关于 AI Agent 记忆的更宏观论点其实早有充分记录：正如 [The New Stack 在上下文工程的分析中指出的](<https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/>)，传统大语言模型默认是无状态的——而在基础设施层面解决这个状态问题，恰恰是把 Agent 工具和聊天机器人工具区分开来的地方。
+关于 AI Agent 记忆的更宏观论点其实早有充分记录：正如 [The New Stack 在上下文工程的分析中指出的](https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/)，传统大语言模型默认是无状态的——而在基础设施层面解决这个状态问题，恰恰是把 Agent 工具和聊天机器人工具区分开来的地方。
 
 ## 决策框架：自己搭、买现成的，还是先算了
 
@@ -99,15 +99,15 @@ Floatboat 属于这一类——一款 AI 工作区桌面应用（Mac/Windows）�
 
 ## 上一篇系列文章：
 
-* [看懂 AI Agent 与聊天机器人的区别](</blog/ai-agent-vs-chatbot>)
+* [看懂 AI Agent 与聊天机器人的区别](/blog/ai-agent-vs-chatbot)
 
-* [了解 2026 年 AI Agent 对单人创业者到底怎么工作](</blog/ai-agents-2026-solo-operators>)
+* [了解 2026 年 AI Agent 对单人创业者到底怎么工作](/blog/ai-agents-2026-solo-operators)
 
-* [看看如何一步步搭建你自己的 AI Agent](</blog/how-to-build-an-ai-agent>)
+* [看看如何一步步搭建你自己的 AI Agent](/blog/how-to-build-an-ai-agent)
 
-* [探索从 AI 助手到真正 AI Agent 的转变](</blog/ai-agent-vs-ai-assistant>)
+* [探索从 AI 助手到真正 AI Agent 的转变](/blog/ai-agent-vs-ai-assistant)
 
-* [发现 AI Agent 在真实工作流里的实际用例](</blog/ai-agent-use-cases-real-examples>)
+* [发现 AI Agent 在真实工作流里的实际用例](/blog/ai-agent-use-cases-real-examples)
 
 这就是我的结论。不是一锤定音的裁决——更像是给你一个更清晰的框架，去思考哪种"AI Agent"对你真正有意义。
 

@@ -34,9 +34,9 @@ Markdown 不会消失。这点我要说清楚，因为「HTML 是新的 Markdown
 
 以下是 AI Agent 仍然该默认用 Markdown 的场景：
 
-**任何要进版本管理的东西。**如果输出要进 Git 仓库——README、变更日志、技术规格、[CLAUDE.md](<http://CLAUDE.md>) 文件——Markdown 的 diff 干净可读，HTML 的 diff 纯属噪声。我试过在 pull request 里审 HTML diff，那感觉就像隔着万花筒读一份被红笔批注过的法律文件，没法用。
+**任何要进版本管理的东西。**如果输出要进 Git 仓库——README、变更日志、技术规格、[CLAUDE.md](http://CLAUDE.md) 文件——Markdown 的 diff 干净可读，HTML 的 diff 纯属噪声。我试过在 pull request 里审 HTML diff，那感觉就像隔着万花筒读一份被红笔批注过的法律文件，没法用。
 
-**Agent 到 Agent 的交接。**当一个 AI 步骤的产出要被另一个 AI 步骤消费时，没有人类会看到它。没人看，就不需要视觉层级。Markdown 能压低 token 成本、解析也简单。[Markdown Guide](<https://www.markdownguide.org/getting-started/>)说得很好：这个格式的设计目标，就是连原始源码本身都可读。对机器消费来说，「源码可读」这个特质无关紧要——但 token 效率要紧。
+**Agent 到 Agent 的交接。**当一个 AI 步骤的产出要被另一个 AI 步骤消费时，没有人类会看到它。没人看，就不需要视觉层级。Markdown 能压低 token 成本、解析也简单。[Markdown Guide](https://www.markdownguide.org/getting-started/)说得很好：这个格式的设计目标，就是连原始源码本身都可读。对机器消费来说，「源码可读」这个特质无关紧要——但 token 效率要紧。
 
 **快速笔记和草稿。**如果我让 Claude 头脑风暴十个点子或列一个项目大纲，Markdown 生成更快、编辑更容易、任何文本编辑器里都能直接读。一张看一遍就删的清单，我不需要折叠区块。
 
@@ -46,7 +46,7 @@ Markdown 不会消失。这点我要说清楚，因为「HTML 是新的 Markdown
 
 ### 报告、评审、看板、规格、原型
 
-真正的转变在这里。Anthropic Claude Code 团队的 Thariq Shihipar 发布他的[AI 生成 HTML 配套示例](<https://thariqs.github.io/html-effectiveness/>)时，打动我的不是技术论证——而是把同一份实施方案在两种格式里各打开一次，亲身感受到的差别。
+真正的转变在这里。Anthropic Claude Code 团队的 Thariq Shihipar 发布他的[AI 生成 HTML 配套示例](https://thariqs.github.io/html-effectiveness/)时，打动我的不是技术论证——而是把同一份实施方案在两种格式里各打开一次，亲身感受到的差别。
 
 Markdown 版不赖。HTML 版有吸顶的导航侧栏、按颜色分级的优先级、可折叠的区块。我把整篇读完了——平时我通常不会读完。
 
@@ -58,7 +58,7 @@ Markdown 版不赖。HTML 版有吸顶的导航侧栏、按颜色分级的优先
 
 **原型和线框。**如果你的 Agent 能产出一个能跑的 HTML 原型——落地页、表单、仪表盘布局——那是交付物，不是文档。你可以在浏览器里打开它、发给客户、在上面迭代。Markdown 做不到。
 
-**可分享的成果。**带内联 CSS 的 HTML 文件很好传：发邮件、任何设备上都能打开、不需要渲染器。Markdown 需要渲染引擎才能「像样」——而且用哪个引擎很关键，因为 [GitHub 的 Markdown 渲染](<https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>)不等于 Obsidian 的，也不等于 Notion 的。
+**可分享的成果。**带内联 CSS 的 HTML 文件很好传：发邮件、任何设备上都能打开、不需要渲染器。Markdown 需要渲染引擎才能「像样」——而且用哪个引擎很关键，因为 [GitHub 的 Markdown 渲染](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)不等于 Obsidian 的，也不等于 Notion 的。
 
 规律是：**输出要被人类阅读、对比或据此行动时，HTML 才配得上那份额外的重量。**
 
@@ -74,7 +74,7 @@ Markdown 版不赖。HTML 版有吸顶的导航侧栏、按颜色分级的优先
 
 **输出越长，差距越大。**一段三段话的摘要？Markdown 和 HTML 的 token 差距可以忽略。一份带表格、颜色编码和导航的 20 节实施方案？差距就是实打实的。HTML 需要的视觉结构越多，成本差距越宽。
 
-**最诚实的检验方法是自己测。**用同一个提示词跑两种格式，在你选的模型里对比 token 数。我查过 Anthropic 的 [API 定价文档](<https://docs.anthropic.com/en/docs/about-claude/pricing>)，确认了输出 token 怎么计费——输出侧按 token 计，所以更长的 HTML 输出确实按比例更贵。但对大多数只生成单份交付物的单人创业者来说，这点差异小到完全值得换那份可读性。
+**最诚实的检验方法是自己测。**用同一个提示词跑两种格式，在你选的模型里对比 token 数。我查过 Anthropic 的 [API 定价文档](https://docs.anthropic.com/en/docs/about-claude/pricing)，确认了输出 token 怎么计费——输出侧按 token 计，所以更长的 HTML 输出确实按比例更贵。但对大多数只生成单份交付物的单人创业者来说，这点差异小到完全值得换那份可读性。
 
 还有个维护角度。Markdown 文件手改很轻松；HTML 文件——尤其内嵌 CSS 的那种——想在不弄坏布局的前提下微调就很难。如果 Agent 生成之后你还要对文档做快速改动，Markdown 宽容得多。
 
@@ -92,7 +92,7 @@ Markdown 版不赖。HTML 版有吸顶的导航侧栏、按颜色分级的优先
 
   3. **它需要视觉结构吗？**如果只是一份平铺列表、大纲或段落 → Markdown 够用。如果需要标签页、颜色编码、导航或并排对比 → HTML。
 
-  4. **会被复用或模板化吗？**如果你反复产出同一类型的输出、又想要视觉一致性，[Claude Artifacts](<https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them>) 或 html-anything 这类本地优先的 Agent 化 HTML 编辑器可以把流程模板化。一次性请求不需要那套基础设施。
+  4. **会被复用或模板化吗？**如果你反复产出同一类型的输出、又想要视觉一致性，[Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) 或 html-anything 这类本地优先的 Agent 化 HTML 编辑器可以把流程模板化。一次性请求不需要那套基础设施。
 
 我最终落地的默认做法是：**草稿与迭代用 Markdown，交付给人时再转换或精修为 HTML。**这条混合工作流让我在思考阶段拿到 Markdown 的可编辑性，在交付阶段拿到 HTML 的可读性。这个组合我用了几个星期，感觉是对的——等我碰到更多边界情况，会知道得更准。
 
@@ -102,13 +102,13 @@ Markdown 版不赖。HTML 版有吸顶的导航侧栏、按颜色分级的优先
 
 ## 往期文章
 
-• [HTML-Anything Review: Can AI Turn HTML Into Real Deliverables?](</blog/html-anything-review-2026>) — 我实测了 html-anything 是否真的把「HTML 是新的 Markdown」变成一条可用的工作流。
+• [HTML-Anything Review: Can AI Turn HTML Into Real Deliverables?](/blog/html-anything-review-2026) — 我实测了 html-anything 是否真的把「HTML 是新的 Markdown」变成一条可用的工作流。
 
-• [Claude Code vs Chrome Extensions: Which Workflow Actually Saves Time?](</blog/codex-for-chrome-vs-claude-for-chrome>) — 不是每条 AI 工作流都需要编码 Agent；这里讲讲浏览器原生工具在哪些场景更合适。
+• [Claude Code vs Chrome Extensions: Which Workflow Actually Saves Time?](/blog/codex-for-chrome-vs-claude-for-chrome) — 不是每条 AI 工作流都需要编码 Agent；这里讲讲浏览器原生工具在哪些场景更合适。
 
-• [Workspace Agents vs Chat Assistants: Why the Difference Matters](</blog/workspace-agents-vs-chat-assistants>) — 从聊天回复到可复用的工作成果，这一步跨越改变了 AI 输出的使用方式。
+• [Workspace Agents vs Chat Assistants: Why the Difference Matters](/blog/workspace-agents-vs-chat-assistants) — 从聊天回复到可复用的工作成果，这一步跨越改变了 AI 输出的使用方式。
 
-• [AI Workspace Agents: Why Solo Operators Need More Than Chat Windows](</blog/ai-workspace-agents>) — 当工作区本身成为工作流的一部分，丰富的 AI 输出才真正开始有意义。
+• [AI Workspace Agents: Why Solo Operators Need More Than Chat Windows](/blog/ai-workspace-agents) — 当工作区本身成为工作流的一部分，丰富的 AI 输出才真正开始有意义。
 
 ![5.png](/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.webp)
 

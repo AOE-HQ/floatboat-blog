@@ -27,7 +27,7 @@ I was reading through some notes from early last year, and I kept finding the sa
 
 But here's what's different now. The tools have caught up in a way that actually matters for ​**one-person businesses** ​. It's not just that AI can write things for you. It's that AI can _hold a job_ — a specific, defined role — and stay in it.
 
-According to [Andreessen Horowitz's research on the creator economy](<https://a16z.com/podcast/a16z-podcast-the-creator-economy-nfts-and-beyond/>), the number of people building independent businesses online has grown significantly — not because it got easier in theory, but because the operational gap between "one person" and "small team" is actually closeable now. That's new.
+According to [Andreessen Horowitz's research on the creator economy](https://a16z.com/podcast/a16z-podcast-the-creator-economy-nfts-and-beyond/), the number of people building independent businesses online has grown significantly — not because it got easier in theory, but because the operational gap between "one person" and "small team" is actually closeable now. That's new.
 
 ### Why doing everything alone used to break down
 
@@ -57,7 +57,7 @@ That distinction sounds small. It's actually the whole game.
 
 ### The developer proof point: Garry Tan built a virtual dev team with gstack, 12k stars in 48 hours
 
-Earlier this year, [Garry Tan](<https://www.ycombinator.com/people/garry-tan>) — president of Y Combinator — shared something that caught a lot of attention in the developer world. His project **gstack** hit 12,000 GitHub stars in 48 hours. The concept was simple and kind of mind-bending: instead of using one AI agent to do everything, you spin up multiple specialized AI agents — each with a defined role — and let them work together like a dev team. This isn't a fringe idea. [Y Combinator's advice on keeping teams lean](<https://www.ycombinator.com/library>) has long pushed founders to do more with less — and what gstack showed is that AI roles are now a credible way to actually close that gap.
+Earlier this year, [Garry Tan](https://www.ycombinator.com/people/garry-tan) — president of Y Combinator — shared something that caught a lot of attention in the developer world. His project **gstack** hit 12,000 GitHub stars in 48 hours. The concept was simple and kind of mind-bending: instead of using one AI agent to do everything, you spin up multiple specialized AI agents — each with a defined role — and let them work together like a dev team. This isn't a fringe idea. [Y Combinator's advice on keeping teams lean](https://www.ycombinator.com/library) has long pushed founders to do more with less — and what gstack showed is that AI roles are now a credible way to actually close that gap.
 
 One agent handles architecture decisions. Another focuses on code review. Another manages documentation. None of them are "general assistants." They each ​ _own something_ ​.
 
@@ -97,9 +97,9 @@ Don't try to redesign your whole workflow. Find the one thing you do every week 
 
 ### Capture the steps, not just the output
 
-**This is the part most people skip.** Before you hand a task to AI, write out what you actually do when you do it well. As [writing down your processes before automating them](<https://zapier.com/blog/solopreneur-productivity-hacks/>) makes clear — if you can't describe the steps yourself, no tool can replicate them for you.
+**This is the part most people skip.** Before you hand a task to AI, write out what you actually do when you do it well. As [writing down your processes before automating them](https://zapier.com/blog/solopreneur-productivity-hacks/) makes clear — if you can't describe the steps yourself, no tool can replicate them for you.
 
-According to [MIT Sloan Management Review's work on knowledge management](<https://sloanreview.mit.edu/>), making tacit knowledge explicit is one of the hardest and most valuable things a knowledge worker can do. Most of what experienced people know how to do lives in their head, not in a document. Capturing it — even roughly — is what makes a role transferable to AI.
+According to [MIT Sloan Management Review's work on knowledge management](https://sloanreview.mit.edu/), making tacit knowledge explicit is one of the hardest and most valuable things a knowledge worker can do. Most of what experienced people know how to do lives in their head, not in a document. Capturing it — even roughly — is what makes a role transferable to AI.
 
 ![4.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916338947-9eb991fe-cd5a-4b08-9035-ee1f830c6505.webp)
 
@@ -123,7 +123,7 @@ And honestly? Prompting well is still work. Setting up a good role takes time up
 
 AI is remarkably good at tasks that are ​**repeatable, context-heavy, and output-defined** ​. It's significantly worse at tasks that require genuine judgment about people, or situations where the right answer depends on things that can't be written down.
 
-The Harvard [Business Review](<https://hbr.org/>) has covered this distinction carefully: AI augments individual capacity, but it doesn't replace the social and judgment-based work that makes teams function. If your bottleneck is creative direction, client trust, or strategic thinking under real uncertainty — you still need people.
+The Harvard [Business Review](https://hbr.org/) has covered this distinction carefully: AI augments individual capacity, but it doesn't replace the social and judgment-based work that makes teams function. If your bottleneck is creative direction, client trust, or strategic thinking under real uncertainty — you still need people.
 
 Running a one-person business with AI doesn't mean you never collaborate. It means you stop burning hours on tasks that don't require a human— This is also why many solo operators are now packaging these systems into services
 

@@ -31,7 +31,7 @@ draft: false
 
 我用无代码搭建器主要做三类事：内容调研管线、线索路由、轻量客户沟通草稿。下面说说它们真正挣到位置的地方。
 
-**输入可预测的工作流。** 当你的 Agent 总是收到同一类数据——表单提交、电子表格里的新行、同一来源的 webhook——无代码处理得很好。[Make 的 AI agent 搭建器](<https://www.make.com/en/ai-agents>)里的可视化画布，能让你清清楚楚看到数据流经哪里，出问题时尤其有用。
+**输入可预测的工作流。** 当你的 Agent 总是收到同一类数据——表单提交、电子表格里的新行、同一来源的 webhook——无代码处理得很好。[Make 的 AI agent 搭建器](https://www.make.com/en/ai-agents)里的可视化画布，能让你清清楚楚看到数据流经哪里，出问题时尤其有用。
 
 **连接你已经在用的应用。** 这是 Zapier 真正值回票价的地方。8000+ 集成意味着你很少撞上"这个应用不支持"的墙。如果你的整套技术栈都在 SaaS 工具里——Gmail、Notion、Airtable、Slack——无代码能把它们接起来，而你甚至不需要知道 API 调用长什么样。
 
@@ -47,7 +47,7 @@ _最后这条，其实是我认为无代码做得最好的地方。_ 不一定�
 
 **无代码（Zapier、Make、Lindy）**
 
-搭建成本：低。多数用例一小时内就能跑出第一个能用的版本。Make 的可视化场景搭建器展示数据在模块之间如何流动，真的直观——我第一次大约花了二十分钟就接上了。按 [Zapier 的官方 Agent 文档](<https://zapier.com/agents>)，Agent 可以通过纯语言指令配置，完全不碰代码。
+搭建成本：低。多数用例一小时内就能跑出第一个能用的版本。Make 的可视化场景搭建器展示数据在模块之间如何流动，真的直观——我第一次大约花了二十分钟就接上了。按 [Zapier 的官方 Agent 文档](https://zapier.com/agents)，Agent 可以通过纯语言指令配置，完全不碰代码。
 
 灵活性天花板：真实存在。复杂的分支逻辑、不做绕路方案就实现不了的跨会话持久记忆、自定义错误处理——在这些地方，无代码会让你觉得是在跟工具搏斗，而不是用工具搭建。Zapier 按任务计费在规模大了之后也会成为考量：工作流里的每个动作算一个独立任务，所以一条 10 步 Agent 每月跑 500 次，就是 5,000 个任务。
 
@@ -59,9 +59,9 @@ _最后这条，其实是我认为无代码做得最好的地方。_ 不一定�
 
 **低代码（n8n、Dify、Flowise）**
 
-搭建成本：中等。第一次预计要花几小时，尤其当你要处理 HTTP 节点或自定义数据结构时。[n8n AI agent 文档](<https://docs.n8n.io/advanced-ai/intro-tutorial/>)维护得很好，我用下来也觉得准确。
+搭建成本：中等。第一次预计要花几小时，尤其当你要处理 HTTP 节点或自定义数据结构时。[n8n AI agent 文档](https://docs.n8n.io/advanced-ai/intro-tutorial/)维护得很好，我用下来也觉得准确。
 
-灵活性天花板：显著更高。需要的时候，你可以直接下沉写代码。n8n 2.0（2026 年 1 月）加入原生 LangChain 集成，带 70+ 个 AI 节点——持久记忆、RAG 管线、工具调用 Agent。这是真正的 Agent 架构，不是把 AI API 调用包装成 Agent。Make 自家的[2026 预测文章](<https://www.make.com/en/blog/2025-reflections-2026-predictions>)也指向同一方向：AI 能力在涨、搭建复杂度在退——这一层交付的差不多正是这个。
+灵活性天花板：显著更高。需要的时候，你可以直接下沉写代码。n8n 2.0（2026 年 1 月）加入原生 LangChain 集成，带 70+ 个 AI 节点——持久记忆、RAG 管线、工具调用 Agent。这是真正的 Agent 架构，不是把 AI API 调用包装成 Agent。Make 自家的[2026 预测文章](https://www.make.com/en/blog/2025-reflections-2026-predictions)也指向同一方向：AI 能力在涨、搭建复杂度在退——这一层交付的差不多正是这个。
 
 维护：可见性好得多。n8n 自带执行日志。出问题时，我能精确看到哪一步失败、为什么失败。这从根本上改变了维护体验。
 
@@ -121,13 +121,13 @@ _最后这条，其实是我认为无代码做得最好的地方。_ 不一定�
 
 ## 系列前文
 
-  * 还在纠结你到底需不需要"AI Agent"？从这里开始：[什么是 AI Agent 平台？给单人经营者的决策框架](</blog/ai-agent-solo-operators>)
+  * 还在纠结你到底需不需要"AI Agent"？从这里开始：[什么是 AI Agent 平台？给单人经营者的决策框架](/blog/ai-agent-solo-operators)
 
-  * 想搞清工作流、自动化与真正 Agent 的区别？这篇把界线到底在哪讲清楚了：[AI 工作流 vs Agent 工作流：界线到底在哪](</blog/ai-agent-workflow-vibe-coding>)
+  * 想搞清工作流、自动化与真正 Agent 的区别？这篇把界线到底在哪讲清楚了：[AI 工作流 vs Agent 工作流：界线到底在哪](/blog/ai-agent-workflow-vibe-coding)
 
-  * 正在对比 Zapier、Make、n8n 或 Flowise？这份指南讲了选 AI Agent 搭建器时什么才真正要紧：[什么是最好的 AI Agent 搭建器？单人经营者真正该看什么](</blog/workspace-agents-vs-workflow-builders>)
+  * 正在对比 Zapier、Make、n8n 或 Flowise？这份指南讲了选 AI Agent 搭建器时什么才真正要紧：[什么是最好的 AI Agent 搭建器？单人经营者真正该看什么](/blog/workspace-agents-vs-workflow-builders)
 
-  * 如果你在工作区式 AI 工具和专用 Agent 之间摇摆，这篇对比值得先读：[工作区 Agent vs 聊天助手：真正要紧的那个区别](</blog/workspace-agents-vs-chat-assistants>)
+  * 如果你在工作区式 AI 工具和专用 Agent 之间摇摆，这篇对比值得先读：[工作区 Agent vs 聊天助手：真正要紧的那个区别](/blog/workspace-agents-vs-chat-assistants)
 
-  * 想法已经越过"跑起来"、看向长期可维护性？这篇讲工作流搭建器 vs 工作区 Agent 的文章正好接上这个问题：[工作区 Agent vs 工作流搭建器：哪种适合真实的单人工作？](</blog/workspace-agents-vs-workflow-builders>)
+  * 想法已经越过"跑起来"、看向长期可维护性？这篇讲工作流搭建器 vs 工作区 Agent 的文章正好接上这个问题：[工作区 Agent vs 工作流搭建器：哪种适合真实的单人工作？](/blog/workspace-agents-vs-workflow-builders)
 

@@ -33,7 +33,7 @@ draft: false
 
 坏候选：需要每次都变的判断的、输入不可预测的、以及你不确定「做完」长什么样的。
 
-正如 [OpenAI 的 workspace agent 指南](<https://openai.com/academy/workspace-agents/>)所说——共享 agent 绑在**你团队已经理解的具体、周期性工作流**上时效果最好。这里的「具体」两个字分量很重。如果你没法用一句话描述这件工作，你就还没准备好自动化它。
+正如 [OpenAI 的 workspace agent 指南](https://openai.com/academy/workspace-agents/)所说——共享 agent 绑在**你团队已经理解的具体、周期性工作流**上时效果最好。这里的「具体」两个字分量很重。如果你没法用一句话描述这件工作，你就还没准备好自动化它。
 
 **退出条件：**如果此刻你叫不出一件具体的重复任务，就停在这里。先别搭任何东西。
 
@@ -53,7 +53,7 @@ draft: false
 
 这张映射图做两件事。第一，它让你看清任务到底能不能自动化——如果「判断」列里满是「得看我说不清的上下文」，你就找到了自己的退出条件。第二，它精确告诉你，之后该往提示词或工作流里放什么。
 
-按 [Anthropic 关于构建高效 agent 的研究](<https://www.anthropic.com/research/building-effective-agents>)的说法，**最成功的实现用的是简单、可组合的模式，而不是复杂的框架**。这份简单从映射阶段就开始了——不是从工具阶段才开始。
+按 [Anthropic 关于构建高效 agent 的研究](https://www.anthropic.com/research/building-effective-agents)的说法，**最成功的实现用的是简单、可组合的模式，而不是复杂的框架**。这份简单从映射阶段就开始了——不是从工具阶段才开始。
 
 ![how3.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749645548-530c5952-179c-461f-a06e-06ad50ee1fad.webp)
 
@@ -65,7 +65,7 @@ draft: false
 
 **一条更好的提示词**——如果你的任务自包含、在单次对话内就能跑完（例如「把这份逐字稿重新排版」），那么一条结构良好、写明指令与输出格式的提示词，可能就是你需要的全部。永远先试这个。一条强提示词免费、迭代即时、零基础设施。
 
-**一个自动化工具**——如果任务涉及在应用之间搬数据（例如「表单提交时，抽出关键字段发到 Slack」），n8n、Zapier、Make 这类无代码工具能让你不写一行代码就到达目标。这些工具如今都有原生 AI 节点，可以在任意工作流里塞进一个 LLM 步骤。[n8n 的 AI agent 平台](<https://n8n.io/ai-agents/>)就是个好例子——它允许你在 AI 接手之前先加条件、过滤数据，这样既省钱、输出又干净。
+**一个自动化工具**——如果任务涉及在应用之间搬数据（例如「表单提交时，抽出关键字段发到 Slack」），n8n、Zapier、Make 这类无代码工具能让你不写一行代码就到达目标。这些工具如今都有原生 AI 节点，可以在任意工作流里塞进一个 LLM 步骤。[n8n 的 AI agent 平台](https://n8n.io/ai-agents/)就是个好例子——它允许你在 AI 接手之前先加条件、过滤数据，这样既省钱、输出又干净。
 
 **一个无代码搭建器**——如果你的任务需要更多来回推理（例如「研究这家公司，总结出一场销售电话该关注什么」），带记忆和工具访问的搭建器值得考虑。这类拖拽式环境里，agent 能调 API、搜网页、或从知识库拉取。
 
@@ -83,7 +83,7 @@ draft: false
 
 搭一个简单的检查点：agent 生成输出后，先到你（或队友）手里做一次快速通过/修改/打回。时间一长你会发现，多数输出落入三档之一：总是对的、总是以同一种方式错的、不可预测的。第一档你可以停止复核；第二档你去改提示词；第三档是个信号——你选错了任务。
 
-[企业 AI 指南中引用的 Gartner 研究](<https://onereach.ai/blog/best-practices-for-ai-agent-implementations/>)预测，到 2027 年，超过 40% 的 agentic AI 项目会因成本攀升、价值不清或风险控制不足而失败或被取消。人工复核这一步，就是你避免成为那条统计数字的直接防线。它不是额外开销——它是你的反馈回路。
+[企业 AI 指南中引用的 Gartner 研究](https://onereach.ai/blog/best-practices-for-ai-agent-implementations/)预测，到 2027 年，超过 40% 的 agentic AI 项目会因成本攀升、价值不清或风险控制不足而失败或被取消。人工复核这一步，就是你避免成为那条统计数字的直接防线。它不是额外开销——它是你的反馈回路。
 
 ![how4.png](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749654339-123add4e-863e-4c0d-bab5-c8798c1436bd.webp)
 
@@ -105,13 +105,13 @@ draft: false
 
 ## 往期文章
 
-  * 多数第一次搭 agent 的人都会把它搞复杂。为什么从一个窄工作流入手，通常比追一个「全 AI 操作系统」更有效——[agentic AI 工具是什么](</blog/ai-agent-solo-operators>)
+  * 多数第一次搭 agent 的人都会把它搞复杂。为什么从一个窄工作流入手，通常比追一个「全 AI 操作系统」更有效——[agentic AI 工具是什么](/blog/ai-agent-solo-operators)
 
-  * 工作流搭建器和工作区 Agent 解决的是完全不同的问题——这篇拆解帮你选到真正贴合你工作的最轻配置——[工作区 Agent vs 工作流搭建器](</blog/workspace-agents-vs-workflow-builders>)
+  * 工作流搭建器和工作区 Agent 解决的是完全不同的问题——这篇拆解帮你选到真正贴合你工作的最轻配置——[工作区 Agent vs 工作流搭建器](/blog/workspace-agents-vs-workflow-builders)
 
-  * 在自动化一切之前，先分清助理、工作流 agent、编程 agent 与自主系统的差别——[Claude managed agents 是什么](</blog/what-are-claude-managed-agents>)
+  * 在自动化一切之前，先分清助理、工作流 agent、编程 agent 与自主系统的差别——[Claude managed agents 是什么](/blog/what-are-claude-managed-agents)
 
-  * AI 工作流通常死于过度复杂，而不是能力不足。这是独立创业者正在用的务实框架——[独立创业者的 AI 工作流](</blog/ai-workflow-for-solo-founders>)
+  * AI 工作流通常死于过度复杂，而不是能力不足。这是独立创业者正在用的务实框架——[独立创业者的 AI 工作流](/blog/ai-workflow-for-solo-founders)
 
-  * 如果你的 AI 配置已经乱糟糟，工具之间的碎片化上下文很可能才是瓶颈——不是模型质量本身——[为什么 AI 工作流会显得碎片化](</blog/workspace-agents-for-solo-operators>)
+  * 如果你的 AI 配置已经乱糟糟，工具之间的碎片化上下文很可能才是瓶颈——不是模型质量本身——[为什么 AI 工作流会显得碎片化](/blog/workspace-agents-for-solo-operators)
 

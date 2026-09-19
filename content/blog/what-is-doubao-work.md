@@ -20,7 +20,7 @@ draft: false
 
   * The **team edition** signs in with a Feishu (Lark) enterprise account and inherits organizational permissions and collaboration context — ByteDance's main battlefield for enterprise office agents.
 
-  * **There is no international version of Doubao Work.** The international general assistant is Dola ([dola.com](<http://dola.com>)), which doesn't offer office agents or Feishu integration at Doubao Work's level.
+  * **There is no international version of Doubao Work.** The international general assistant is Dola ([dola.com](http://dola.com)), which doesn't offer office agents or Feishu integration at Doubao Work's level.
 
 ## 1. Why Doubao Work Was Needed
 
@@ -112,7 +112,7 @@ After signing in with a Feishu enterprise account, the agent reads organizationa
 
 ### 3.3 "Doubao Office" vs "Doubao Work"
 
-In everyday speech, "Doubao Office" usually refers to the "work tasks / office tasks" mode inside the Doubao app. **Doubao Work** is the standalone brand officially launched in August 2026, with its own website at [doubao.com/work](<http://doubao.com/work>) and a separate desktop client. Same product line, different names for different stages.
+In everyday speech, "Doubao Office" usually refers to the "work tasks / office tasks" mode inside the Doubao app. **Doubao Work** is the standalone brand officially launched in August 2026, with its own website at [doubao.com/work](http://doubao.com/work) and a separate desktop client. Same product line, different names for different stages.
 
 ### 3.4 How to Install It, Where to Access It
 
@@ -196,7 +196,7 @@ WorkBuddy Enterprise, meanwhile, is Tencent Cloud's one-stop agent platform for 
 
 ### 5.3 Alibaba's Qwen Office: An "AI Workbench" in the DingTalk Ecosystem
 
-The Qwen Office website ([qwenwork.cn](<http://qwenwork.cn>)) positions the product as **a one-stop AI office platform for individuals and enterprises**, available on the web plus macOS, Windows, and HarmonyOS clients, and covering content creation, data analysis, professional research, file processing, and web delivery.
+The Qwen Office website ([qwenwork.cn](http://qwenwork.cn)) positions the product as **a one-stop AI office platform for individuals and enterprises**, available on the web plus macOS, Windows, and HarmonyOS clients, and covering content creation, data analysis, professional research, file processing, and web delivery.
 
 The official documentation highlights three agent forms:
 
@@ -248,7 +248,7 @@ Making Doubao Work a brand of its own bundles ByteDance's strongest **agent exec
 
 ## 6. Pricing and Team Edition (Overview)
 
-The personal edition offers a free tier and several paid subscriptions. The differences lie in work-task quotas, cloud computers, model tiers, and similar — **the [doubao.com/work/price](<http://doubao.com/work/price>) page and the client are the source of truth**.
+The personal edition offers a free tier and several paid subscriptions. The differences lie in work-task quotas, cloud computers, model tiers, and similar — **the [doubao.com/work/price](http://doubao.com/work/price) page and the client are the source of truth**.
 
 The team edition (doubao.com/work/group) emphasizes Feishu integration, enterprise permissions, and Skill sharing. Public pricing information shows team subscriptions starting at one seat (around ¥166 per seat per month on annual billing, subject to the official site) and enterprise subscriptions starting at 100 seats, with seats and usage billed separately and stronger audit and data-leak-prevention capabilities.
 

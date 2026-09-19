@@ -31,9 +31,9 @@ But here's the thing most comparison articles skip: for a lot of us, ​**the an
 
 This is where the real decision lives. Not in feature lists.
 
-Google Calendar is built to be a ​**web-first, collaboration-first tool** ​. It works the same on a Chromebook, a Windows laptop, or an iPhone browser. If your work involves coordinating with people who aren't all on Apple devices, Google handles that with less friction. I checked — you can share entire calendars, set granular permissions, and embed a public calendar on a website, all from [Google Calendar's sharing settings](<https://support.google.com/calendar/answer/37082?hl=en>).
+Google Calendar is built to be a ​**web-first, collaboration-first tool** ​. It works the same on a Chromebook, a Windows laptop, or an iPhone browser. If your work involves coordinating with people who aren't all on Apple devices, Google handles that with less friction. I checked — you can share entire calendars, set granular permissions, and embed a public calendar on a website, all from [Google Calendar's sharing settings](https://support.google.com/calendar/answer/37082?hl=en).
 
-Apple Calendar is built to be a ​**device-native experience** ​. It's fast, it's pretty, and if you're already managing your life through iCloud, it just works. The [Calendar User Guide on Apple's support site](<https://support.apple.com/guide/calendar/welcome/mac>) covers everything from delegation to shared family calendars — it's more capable than people give it credit for. With Apple Intelligence on-device, Siri has gotten better at parsing natural language for event creation. "Found in Apps" detects dates from your emails and messages and suggests calendar entries — that's a nice touch.
+Apple Calendar is built to be a ​**device-native experience** ​. It's fast, it's pretty, and if you're already managing your life through iCloud, it just works. The [Calendar User Guide on Apple's support site](https://support.apple.com/guide/calendar/welcome/mac) covers everything from delegation to shared family calendars — it's more capable than people give it credit for. With Apple Intelligence on-device, Siri has gotten better at parsing natural language for event creation. "Found in Apps" detects dates from your emails and messages and suggests calendar entries — that's a nice touch.
 
 Google's AI play is different — Gemini integration can suggest meeting times based on participant availability and summarize your upcoming week. Gmail still auto-detects travel bookings. It's less "on-device magic" and more "cloud-connected convenience."
 
@@ -43,7 +43,7 @@ Here's how I think about it: **Google Calendar is better at working with other p
 
 This section matters if you're running things solo or with a tiny team.
 
-**Sharing:** Google Calendar wins here, and it's not close. You can share calendars with specific people, set view-only or full-edit permissions, and the person on the other end just needs a Google account. Apple Calendar shares through iCloud and works well Apple-to-Apple, but try coordinating with someone on Android or Windows and you'll feel the edges. Check [Apple's iCloud Calendar setup guide](<https://support.apple.com/guide/icloud/set-up-calendar-mme4d73a8727/icloud>) for the latest on cross-platform support.
+**Sharing:** Google Calendar wins here, and it's not close. You can share calendars with specific people, set view-only or full-edit permissions, and the person on the other end just needs a Google account. Apple Calendar shares through iCloud and works well Apple-to-Apple, but try coordinating with someone on Android or Windows and you'll feel the edges. Check [Apple's iCloud Calendar setup guide](https://support.apple.com/guide/icloud/set-up-calendar-mme4d73a8727/icloud) for the latest on cross-platform support.
 
 **Tasks:** Google Calendar integrates with Google Tasks in a sidebar, and as of late 2025, Google rolled out tighter integration — you can now time-block tasks directly on your calendar, and completing the task updates both the calendar event and your task list. That actually works pretty well.
 
@@ -91,13 +91,13 @@ That's my honest take. The "which is better" framing is a bit misleading — wha
 
 ## Previous Posts:
 
-• Constantly jumping between calendars, email, docs, and task apps? Read [Stop Context Switching: Why Workspace Agents Matter](</blog/stop-context-switching-workspace-agent>) to see why tool-switching quietly eats more time than most solo operators realize.
+• Constantly jumping between calendars, email, docs, and task apps? Read [Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent) to see why tool-switching quietly eats more time than most solo operators realize.
 
-• If your calendar keeps reminding you about work but never actually moves it forward, [Workspace Agents for Solo Operators](</blog/workspace-agents-for-solo-operators>) breaks down what happens after scheduling ends.
+• If your calendar keeps reminding you about work but never actually moves it forward, [Workspace Agents for Solo Operators](/blog/workspace-agents-for-solo-operators) breaks down what happens after scheduling ends.
 
-• A packed calendar doesn't always mean meaningful progress. [AI Workflow for Solo Founders](</blog/ai-workflow-for-solo-founders>) looks at why productive-looking systems still create manual work.
+• A packed calendar doesn't always mean meaningful progress. [AI Workflow for Solo Founders](/blog/ai-workflow-for-solo-founders) looks at why productive-looking systems still create manual work.
 
-• Wondering whether you need another assistant or something more proactive? [Workspace Agents vs Chat Assistants](</blog/workspace-agents-vs-chat-assistants>) compares the two through everyday workflows.
+• Wondering whether you need another assistant or something more proactive? [Workspace Agents vs Chat Assistants](/blog/workspace-agents-vs-chat-assistants) compares the two through everyday workflows.
 
-• Rebuilding the same weekly tasks over and over? [How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>) explores how recurring work loops can be handled differently.
+• Rebuilding the same weekly tasks over and over? [How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work) explores how recurring work loops can be handled differently.
 

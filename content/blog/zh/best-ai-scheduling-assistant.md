@@ -16,7 +16,7 @@ draft: false
 
   * 选哪款工具，取决于你要 AI 干什么：只是帮你把会约上，优化你的一天，还是真正从日历出发替你执行工作。
 
-  * Calendly 仍是简单约档的标准答案。Motion 和 Reclaim 是实力强劲的第 2 代优化器。Agentic Calendars 和 [Cal.com](<http://Cal.com>) Agents 正在探入第 3 代。Floatboat 则围绕第 4 代日历驱动 Agent OS 模式设计。
+  * Calendly 仍是简单约档的标准答案。Motion 和 Reclaim 是实力强劲的第 2 代优化器。Agentic Calendars 和 [Cal.com](http://Cal.com) Agents 正在探入第 3 代。Floatboat 则围绕第 4 代日历驱动 Agent OS 模式设计。
 
   * 对单人创始人、以及任何「日历即生意」的人来说，第 2 代到第 4 代的代际差距不是功能问题——而是**AI 是等着你，还是替你行动**的问题。
 
@@ -70,17 +70,17 @@ Morgen 是第 2 代里最新的大玩家，提供一个跨多个账号（Google�
 
 **最适合**：每天多场内部会议、需要日历主动守护专注时间的人。第 2 代工具已经成熟到「优化」这件事被解决了；在它们之间做选择，看的是集成偏好，以及你希望 AI 多大力度地重排你的一天。
 
-### 2.3 第 3 代：日程 Agent（Agentic Calendars、[Cal.com](<http://Cal.com>) Agents）
+### 2.3 第 3 代：日程 Agent（Agentic Calendars、[Cal.com](http://Cal.com) Agents）
 
 第 3 代是这个品类开始越出时间档管理的地方。第 3 代工具不只是找时间或优化时间——它们开始**对日历里的内容采取行动**。
 
 Agentic Calendars 会读入站邮件、自动从邮件里约出会议——一个盯着你收件箱、无需人工路由就对排程请求采取行动的 Agent。这是一个狭窄却真实的自主日历行动案例：触发器是一封邮件到达，产出是日历上一个已确认的事件，全程没有任何人碰过路由决策。
 
-[Cal.com](<http://Cal.com>) Agents 代表了另一种架构押注：与其构建一个排程 Agent，[Cal.com](<http://Cal.com>) 建了一个开放平台，让开发者可以在 Slack、Telegram、CLI、API 及其它环境里创建排程 Agent。这些 Agent 处理自然语言的排程请求——「下周二约设计团队开 30 分钟电话」——设计目标是被嵌入到团队已经工作的地方。与其说它是一个 Agent 产品，不如说是排程 Agent 的基础设施。
+[Cal.com](http://Cal.com) Agents 代表了另一种架构押注：与其构建一个排程 Agent，[Cal.com](http://Cal.com) 建了一个开放平台，让开发者可以在 Slack、Telegram、CLI、API 及其它环境里创建排程 Agent。这些 Agent 处理自然语言的排程请求——「下周二约设计团队开 30 分钟电话」——设计目标是被嵌入到团队已经工作的地方。与其说它是一个 Agent 产品，不如说是排程 Agent 的基础设施。
 
 两款工具共同代表了一个转变：从「优化日历」到「替日历行动」。它们大体仍是响应式的——回应入站邮件、明确的排程指令这类外部触发器——但它们在做一个第 2 代工具不做的事：**执行动作，而不是给出建议**。
 
-**最适合**：希望无需任何人手动维护可约状态、排程自动发生的团队。[Cal.com](<http://Cal.com>) Agents 特别适合想把自己工具里的排程内嵌掉的开发团队；Agentic Calendars 适合被排程邮件淹没的个人和小团队。
+**最适合**：希望无需任何人手动维护可约状态、排程自动发生的团队。[Cal.com](http://Cal.com) Agents 特别适合想把自己工具里的排程内嵌掉的开发团队；Agentic Calendars 适合被排程邮件淹没的个人和小团队。
 
 ### 2.4 第 4 代：日历驱动 Agent OS（Floatboat）
 
@@ -98,7 +98,7 @@ Agentic Calendars 会读入站邮件、自动从邮件里约出会议——一�
 
 ### 3.1 对比表
 
-> **官方核验参考：**定价与功能变化频繁。购买前请查阅各家官网的定价与文档页：Calendly 定价、Doodle 定价、Motion 定价、Reclaim 定价、Clockwise 定价、Morgen 定价、[Cal.com](<http://Cal.com>) 定价。
+> **官方核验参考：**定价与功能变化频繁。购买前请查阅各家官网的定价与文档页：Calendly 定价、Doodle 定价、Motion 定价、Reclaim 定价、Clockwise 定价、Morgen 定价、[Cal.com](http://Cal.com) 定价。
 
 <table><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p>工具</p></th><th colspan="1" rowspan="1"><p>代际</p></th><th colspan="1" rowspan="1"><p>核心能力</p></th><th colspan="1" rowspan="1"><p>日历集成</p></th><th colspan="1" rowspan="1"><p>最适合</p></th><th colspan="1" rowspan="1"><p>起步价</p></th></tr><tr><td colspan="1" rowspan="1"><p><strong>Calendly</strong></p></td><td colspan="1" rowspan="1"><p>第 1 代</p></td><td colspan="1" rowspan="1"><p>自动化共享可约时间与预约链接</p></td><td colspan="1" rowspan="1"><p>Google、Outlook、iCloud</p></td><td colspan="1" rowspan="1"><p>外部会议约档</p></td><td colspan="1" rowspan="1"><p>免费 / 每月 $10</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Doodle</strong></p></td><td colspan="1" rowspan="1"><p>第 1 代</p></td><td colspan="1" rowspan="1"><p>多方约时间的群组投票</p></td><td colspan="1" rowspan="1"><p>独立、Google、Outlook</p></td><td colspan="1" rowspan="1"><p>寻找多方都能开会的时段</p></td><td colspan="1" rowspan="1"><p>免费 / 每月 $6.95</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Motion</strong></p></td><td colspan="1" rowspan="1"><p>第 2 代</p></td><td colspan="1" rowspan="1"><p>AI 任务优先级排序与日历动态重排</p></td><td colspan="1" rowspan="1"><p>Google、Outlook（替代原生日历）</p></td><td colspan="1" rowspan="1"><p>想要完整 AI 排程的个人</p></td><td colspan="1" rowspan="1"><p>每月 $19</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Reclaim</strong></p></td><td colspan="1" rowspan="1"><p>第 2 代</p></td><td colspan="1" rowspan="1"><p>在现有日历内用 AI 守护习惯/任务/会议时间</p></td><td colspan="1" rowspan="1"><p>Google Calendar（集成、不替代）</p></td><td colspan="1" rowspan="1"><p>在现有工作流内保护深度工作</p></td><td colspan="1" rowspan="1"><p>免费 / 每月 $8</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Clockwise</strong></p></td><td colspan="1" rowspan="1"><p>第 2 代</p></td><td colspan="1" rowspan="1"><p>团队日历优化、创建专注时间</p></td><td colspan="1" rowspan="1"><p>Google Calendar</p></td><td colspan="1" rowspan="1"><p>会议碎片化的团队</p></td><td colspan="1" rowspan="1"><p>免费 / 每月 $6.75</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Morgen</strong></p></td><td colspan="1" rowspan="1"><p>第 2 代</p></td><td colspan="1" rowspan="1"><p>多日历聚合 + 轻量 AI Planner</p></td><td colspan="1" rowspan="1"><p>Google、Outlook、iCloud、CalDAV</p></td><td colspan="1" rowspan="1"><p>多平台日历用户</p></td><td colspan="1" rowspan="1"><p>免费 / 每月 $9</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Agentic Calendars</strong></p></td><td colspan="1" rowspan="1"><p>第 3 代</p></td><td colspan="1" rowspan="1"><p>读收件箱、自动约出会议的 Agent</p></td><td colspan="1" rowspan="1"><p>Google、Outlook</p></td><td colspan="1" rowspan="1"><p>邮件转日历自动化</p></td><td colspan="1" rowspan="1"><p>联系询价</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><a href="http://Cal.com" rel="noopener noreferrer nofollow" target="_blank">Cal.com</a> Agents</strong></p></td><td colspan="1" rowspan="1"><p>第 3 代</p></td><td colspan="1" rowspan="1"><p>可嵌入排程 Agent 的开放平台</p></td><td colspan="1" rowspan="1"><p>Google、Outlook、iCloud、CalDAV</p></td><td colspan="1" rowspan="1"><p>要把排程嵌进任何地方的开发者</p></td><td colspan="1" rowspan="1"><p>免费 / 每月 $15</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Floatboat</strong></p></td><td colspan="1" rowspan="1"><p>第 4 代</p></td><td colspan="1" rowspan="1"><p>日历驱动主动式 Agent OS——自主准备、执行、跟进</p></td><td colspan="1" rowspan="1"><p>Google、Outlook、iCloud、Lark、ICS 订阅</p></td><td colspan="1" rowspan="1"><p>需要日历驱动执行的单人创始人、单人创业者</p></td><td colspan="1" rowspan="1"><p>免费 / 联系销售</p></td></tr></table>
 
@@ -118,7 +118,7 @@ Agentic Calendars 会读入站邮件、自动从邮件里约出会议——一�
 
 ### 3.4 日程 Agent：最适合自动约档的工作流
 
-第 3 代是最小、最新的品类，两款工具走了两条明显不同的路。Agentic Calendars 为一条具体工作流而生——把入站的排程邮件变成已约好的会议、无需人工干预——并且把这条工作流执行得很好。[Cal.com](<http://Cal.com>) Agents 是更宏大的架构手笔：建一个开放平台，让排程 Agent 能被构建出来、嵌进各种环境。
+第 3 代是最小、最新的品类，两款工具走了两条明显不同的路。Agentic Calendars 为一条具体工作流而生——把入站的排程邮件变成已约好的会议、无需人工干预——并且把这条工作流执行得很好。[Cal.com](http://Cal.com) Agents 是更宏大的架构手笔：建一个开放平台，让排程 Agent 能被构建出来、嵌进各种环境。
 
 两款工具都能削减排程的手动开销，但都没有覆盖日历驱动工作的完整生命周期。它们处理一个事件的约档或改期，不处理事件前后发生的事。第 3 代是一座**桥梁代际**——工具从日历管理跨向日历行动，但还没有覆盖从准备到跟进的整条管线。
 
@@ -146,17 +146,12 @@ Agentic Calendars 会读入站邮件、自动从邮件里约出会议——一�
 
 市场上最深的区别不在工具之间，而在「协助你的工具」和「替你行动的工具」之间。第 1 代和第 2 代是助手。它们给建议、优化排布、发提醒，改善你的日历体验——但**活还是你来干**。
 
-第 3 代开始扭转这一点——Agentic Calendars 不用你上手就约好会议，[Cal.com](<http://Cal.com>) Agents 不用你上手就处理排程请求。这些是自主动作，但被限定在排程这个领域内。
+第 3 代开始扭转这一点——Agentic Calendars 不用你上手就约好会议，[Cal.com](http://Cal.com) Agents 不用你上手就处理排程请求。这些是自主动作，但被限定在排程这个领域内。
 
 第 4 代把自主性延伸进工作的整个生命周期。系统准备简报、收集上下文、生成跟进、追踪待办事项——这一切都不需要你发起任何东西。**日历本身驱动工作。**对管理大量日历结构化工作的人，这种自主性不是锦上添花的功能，而是「把几小时花在准备上」与「把那几小时花在只有你能做的工作上」之间的差别。
 
 * * *
 
-## 延伸阅读
-
-  * 什么是 AI 日程 Agent？——四代演进全貌，含每一代架构与局限的深度分析。
-
-  * 什么是 Agentic Calendar？——第 4 代品类的基础定义，及其背后的技术栈。
-
-  * 日历驱动的 AI vs 聊天式 AI——两种范式在设计哲学层面如何不同。
-
+## 延伸阅读- [什么是 AI 日程 Agent？——四代演进全貌，含每一代架构与局限的深度分析。](/zh/blog/ai-scheduling-agent)
+- [什么是 Agentic Calendar？——第 4 代品类的基础定义，及其背后的技术栈。](/zh/blog/what-is-agentic-calendar)
+- [日历驱动的 AI vs 聊天式 AI——两种范式在设计哲学层面如何不同。](/zh/blog/calendar-driven-ai-vs-chat-ai)

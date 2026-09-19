@@ -21,11 +21,11 @@ Honest answer: probably yes, but not what you'd think. The thing to prepare isn'
 
 Let me sort this out, because the noise-to-signal ratio is rough right now.
 
-**What's confirmed.** Pretraining for OpenAI's next frontier model — internally codenamed "Spud" — finished on March 24, 2026, at the Stargate data center in Abilene, Texas. Sam Altman said publicly that launch was "a few weeks" away. That's it. No model card. No API announcement. No blog post on [OpenAI's site](<https://openai.com/gpt-5/>) naming GPT-6 specifically. As I'm writing this in late April, we're about four and a half weeks past that "few weeks" comment and the flagship is still in safety evaluation.
+**What's confirmed.** Pretraining for OpenAI's next frontier model — internally codenamed "Spud" — finished on March 24, 2026, at the Stargate data center in Abilene, Texas. Sam Altman said publicly that launch was "a few weeks" away. That's it. No model card. No API announcement. No blog post on [OpenAI's site](https://openai.com/gpt-5/) naming GPT-6 specifically. As I'm writing this in late April, we're about four and a half weeks past that "few weeks" comment and the flagship is still in safety evaluation.
 
 **What's speculation.** Everything else. The 2M-token context window rumor. The 40% performance gain over GPT-5.4. The April 14 launch date came and went without a peep. Polymarket traders who had "by June 30" sitting near 93% cut it to roughly 45% in a single week. That's not the market being confused — that's the market saying a multi-month slip is now plausible.
 
-What [Altman has said publicly is more useful ](<https://www.reddit.com/r/ChatGPT/comments/1muhpo9/sam_altman_on_gpt6_people_want_memory/>)than the leaks, actually. He's talked about memory as the feature he's most excited about — ChatGPT that remembers your preferences, routines, ongoing projects across weeks. He talked about "agentic" workflows. He talked about personalization. That's the direction, not a spec sheet.
+What [Altman has said publicly is more useful ](https://www.reddit.com/r/ChatGPT/comments/1muhpo9/sam_altman_on_gpt6_people_want_memory/)than the leaks, actually. He's talked about memory as the feature he's most excited about — ChatGPT that remembers your preferences, routines, ongoing projects across weeks. He talked about "agentic" workflows. He talked about personalization. That's the direction, not a spec sheet.
 
 I'd treat any article giving you GPT-6 benchmarks right now as fan fiction.
 
@@ -35,7 +35,7 @@ I'd treat any article giving you GPT-6 benchmarks right now as fan fiction.
 
 My best guess, stitched together from what's out there: late Q2 or Q3 2026. That lines up with Altman's "a few weeks" (generous interpretation), standard safety evaluation cycles of 4–6 weeks, and the competitive pressure from Anthropic's Opus 4.7 dropping on April 16 and other Q2 releases.
 
-Could be earlier. Could be later. I could be wrong here. Bookmark the [OpenAI release notes](<https://help.openai.com/en/articles/6825453-chatgpt-release-notes>) and stop refreshing Twitter.
+Could be earlier. Could be later. I could be wrong here. Bookmark the [OpenAI release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) and stop refreshing Twitter.
 
 ## GPT-4 to GPT-5: What Each Leap Changed
 
@@ -43,7 +43,7 @@ Here's where history actually helps.
 
 ### New capabilities vs actual workflow change
 
-GPT-4 shipped in March 2023. GPT-5 shipped August 7, 2025. That's a 29-month gap — and according to OpenAI's [official launch page](<https://openai.com/index/introducing-gpt-5/>), GPT-5 was "a significant leap" with state-of-the-art scores: 94.6% on AIME 2025, 74.9% on SWE-bench Verified, 84.2% on MMMU. Hallucinations are down ~45% versus GPT-4o with search enabled.
+GPT-4 shipped in March 2023. GPT-5 shipped August 7, 2025. That's a 29-month gap — and according to OpenAI's [official launch page](https://openai.com/index/introducing-gpt-5/), GPT-5 was "a significant leap" with state-of-the-art scores: 94.6% on AIME 2025, 74.9% on SWE-bench Verified, 84.2% on MMMU. Hallucinations are down ~45% versus GPT-4o with search enabled.
 
 Reading that, you'd expect solo operators to feel a 29-month-of-progress-compressed-into-one-day kind of shift.
 
@@ -101,7 +101,7 @@ Most solo operators don't. Their context is scattered across Google Docs, Notion
 
 The work worth doing now:
 
-  * Write a one-page document describing what you do, who you serve, what you're currently working on, and how you like to communicate. This is the pre-context for any assistant, current or future. The [GPT-5 developers page](<https://openai.com/index/introducing-gpt-5-for-developers/>) shows how structured instructions meaningfully improve output — and that's true whether the model is GPT-5, GPT-6, Claude, or whatever ships next.
+  * Write a one-page document describing what you do, who you serve, what you're currently working on, and how you like to communicate. This is the pre-context for any assistant, current or future. The [GPT-5 developers page](https://openai.com/index/introducing-gpt-5-for-developers/) shows how structured instructions meaningfully improve output — and that's true whether the model is GPT-5, GPT-6, Claude, or whatever ships next.
 
   * Keep a running file of your best outputs per work type — the emails you were proud of, the briefs that landed, the code you'd write again. This becomes your style reference for any model.
 
@@ -115,13 +115,13 @@ Anyway — that's where I am on this right now. I'll update when the model actua
 
 **Previous Posts:**
 
-→ See why[ most AI workflows break without structure (and how to fix it before GPT-6)](</blog/ai-agent-workflow-vibe-coding>)
+→ See why[ most AI workflows break without structure (and how to fix it before GPT-6)](/blog/ai-agent-workflow-vibe-coding)
 
-→ Understand what **[persistent AI agents are and why memory will matter more than model upgrades](</blog/what-is-persistent-ai-agent>)**
+→ Understand what **[persistent AI agents are and why memory will matter more than model upgrades](/blog/what-is-persistent-ai-agent)**
 
-→ Learn how **[AI actually fits into solo operator workflows in 2026 (beyond the hype)](</blog/ai-agents-2026-solo-operators>)**
+→ Learn how **[AI actually fits into solo operator workflows in 2026 (beyond the hype)](/blog/ai-agents-2026-solo-operators)**
 
-→ Explore how to **[build systems that scale your one-person business without hiring](</blog/scale-one-person-business-without-hiring>)**
+→ Explore how to **[build systems that scale your one-person business without hiring](/blog/scale-one-person-business-without-hiring)**
 
-→ Break down why **[AI “forgets” every session — and what to do about it now](</blog/why-ai-forgets-every-session>)**
+→ Break down why **[AI “forgets” every session — and what to do about it now](/blog/why-ai-forgets-every-session)**
 

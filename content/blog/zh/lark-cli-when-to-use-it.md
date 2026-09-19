@@ -15,7 +15,7 @@ draft: false
 
 我想帮你避开这个兔子洞。
 
-这不是一篇教程。我不会带你走安装步骤。我要做的是分享我在判断 **[Lark CLI](<https://www.larksuite.com/hc/en-US/articles/713812763675-clip-webpages-to-lark-docs>)** 到底值不值得拿来搭东西时——尤其当你单打独斗时——真正学到的东西。
+这不是一篇教程。我不会带你走安装步骤。我要做的是分享我在判断 **[Lark CLI](https://www.larksuite.com/hc/en-US/articles/713812763675-clip-webpages-to-lark-docs)** 到底值不值得拿来搭东西时——尤其当你单打独斗时——真正学到的东西。
 
 ![2.png](/blog/images/lark-cli-when-to-use-it/1774843305912-9bb85990-5ad4-4c3b-a3e1-d76e5a6a8abe.webp)
 
@@ -27,11 +27,11 @@ Lark CLI 是面向 Lark/飞书开放平台的命令行工具，覆盖 Messenger�
 
 用大白话说：**它是一种以编程方式、从终端或 AI Agent 与你的 Lark 工作区交互的途径。**你可以发消息、读文档、管理日历事件、查联系人——全靠敲命令，而不是在 UI 里点点点。
 
-还有一个相关工具叫 [lark-mcp](<https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/quick-start-guides/quick-integration-with-openapi-mcp>)，它把这套 API 封装成 MCP（Model Context Protocol）工具，让 AI 助手能直接调用 Lark 接口，实现文档处理、会话管理、日历排程之类的自动化场景。
+还有一个相关工具叫 [lark-mcp](https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/quick-start-guides/quick-integration-with-openapi-mcp)，它把这套 API 封装成 MCP（Model Context Protocol）工具，让 AI 助手能直接调用 Lark 接口，实现文档处理、会话管理、日历排程之类的自动化场景。
 
 ### 它为谁而生（主要是开发者）
 
-先对自己诚实。这套工具是为「把 Lark 集成进更大系统」的开发者造的——机器人、内部应用、自动化管线。[官方 Lark 开放平台文档](<https://open.larksuite.com/document/home/index?lang=en-US>)很详尽，但它默认你读得懂 API 参考文档、配得来凭据流程。
+先对自己诚实。这套工具是为「把 Lark 集成进更大系统」的开发者造的——机器人、内部应用、自动化管线。[官方 Lark 开放平台文档](https://open.larksuite.com/document/home/index?lang=en-US)很详尽，但它默认你读得懂 API 参考文档、配得来凭据流程。
 
 如果你心里的「集成」等于「把这个拖进那个」，那 **Lark CLI 大概不是你的工具**。但如果你搭过 webhook，它也许没你想的那么高不可攀。
 
@@ -105,7 +105,7 @@ Lark CLI 是面向 Lark/飞书开放平台的命令行工具，覆盖 Messenger�
 
 ### 你有稳定的开发资源
 
-如果你有一个开发者——哪怕是兼职——能真正拥有这个集成、出事时有带宽响应，那么 **Lark CLI 确实很强大。**[官方 Lark CLI 的 GitHub 仓库](<https://github.com/larksuite/cli>)维护良好、采用 MIT 许可，200+ 条命令覆盖了你能想到的几乎所有 Lark 用例。
+如果你有一个开发者——哪怕是兼职——能真正拥有这个集成、出事时有带宽响应，那么 **Lark CLI 确实很强大。**[官方 Lark CLI 的 GitHub 仓库](https://github.com/larksuite/cli)维护良好、采用 MIT 许可，200+ 条命令覆盖了你能想到的几乎所有 Lark 用例。
 
 ### 你需要没有任何现成工具覆盖的深度定制集成
 
@@ -157,7 +157,7 @@ Lark CLI 是面向 Lark/飞书开放平台的命令行工具，覆盖 Messenger�
 
   2. **Zapier 或 Make** ——更慢也更「有主见」，但你不用在午夜调试 token 过期
 
-  3. **带 MCP 支持的 AI 工具** ——如果你已经在用支持 MCP 的 AI 助手，[npm 上的 lark-mcp 包](<https://www.npmjs.com/package/@larksuiteoapi/lark-mcp>)是值得探索的中间路线——它仍然偏技术，但它是为 AI 辅助工作流设计的，而不是原始 API 脚本
+  3. **带 MCP 支持的 AI 工具** ——如果你已经在用支持 MCP 的 AI 助手，[npm 上的 lark-mcp 包](https://www.npmjs.com/package/@larksuiteoapi/lark-mcp)是值得探索的中间路线——它仍然偏技术，但它是为 AI 辅助工作流设计的，而不是原始 API 脚本
 
 如果你确实决定走 CLI 路线，请从 **GitHub 上的官方 larksuite/cli** 开始，别用第三方 fork。它维护活跃，而且 issue 列表能很好地反映真实用户正在撞上什么问题。
 
@@ -167,13 +167,13 @@ _继续做东西去了。_
 
 ## 往期文章：
 
-  1. **[探索定制 AI Agent 与用现成平台的正反两面](</blog/ai-agent-vs-ai-assistant>)**
+  1. **[探索定制 AI Agent 与用现成平台的正反两面](/blog/ai-agent-vs-ai-assistant)**
 
-  2. **[了解更多 Lark 集成与替代方案，搭更聪明的工作流](</blog/how-to-build-an-ai-agent>)**
+  2. **[了解更多 Lark 集成与替代方案，搭更聪明的工作流](/blog/how-to-build-an-ai-agent)**
 
-  3. **[看看 Gumloop 有哪些替代品，满足你的 AI 工作区需求](</blog/gumloop-alternatives-2026>)**
+  3. **[看看 Gumloop 有哪些替代品，满足你的 AI 工作区需求](/blog/gumloop-alternatives-2026)**
 
-  4. **[为定制需求找到最好的 AI Agent 开发服务](</blog/ai-agent-development-services>)**
+  4. **[为定制需求找到最好的 AI Agent 开发服务](/blog/ai-agent-development-services)**
 
-  5. **[了解在集成 Lark 这类工具时，工作流搭建器与 AI 工作区孰优孰劣](</blog/workflow-builder-vs-ai-workspace>)**
+  5. **[了解在集成 Lark 这类工具时，工作流搭建器与 AI 工作区孰优孰劣](/blog/workflow-builder-vs-ai-workspace)**
 

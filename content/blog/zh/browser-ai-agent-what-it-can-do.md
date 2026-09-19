@@ -23,7 +23,7 @@ draft: false
 
 **浏览器 AI Agent**是一种能在你的浏览器里看、导航、点击、执行操作的 AI——而不只是回答你贴进来的某个网址的相关问题。它运行在你已登录的会话里：你的 Gmail、你的 CRM、你的项目管理工具。
 
-当前两大主角是 [Codex for Chrome](<https://developers.openai.com/codex/app/chrome-extension>)（OpenAI，2026 年 5 月发布）和 [Claude for Chrome](<https://www.anthropic.com/news/claude-for-chrome>)（Anthropic，2025 年底起内测）。此外还有 ChatGPT Atlas、Perplexity Comet 这类全功能 agentic 浏览器，但那是把整个浏览器换掉。而扩展版 Agent 是嵌在 Chrome 里、和你平时的浏览并存的。
+当前两大主角是 [Codex for Chrome](https://developers.openai.com/codex/app/chrome-extension)（OpenAI，2026 年 5 月发布）和 [Claude for Chrome](https://www.anthropic.com/news/claude-for-chrome)（Anthropic，2025 年底起内测）。此外还有 ChatGPT Atlas、Perplexity Comet 这类全功能 agentic 浏览器，但那是把整个浏览器换掉。而扩展版 Agent 是嵌在 Chrome 里、和你平时的浏览并存的。
 
 浏览器 Agent _不是_ 什么：不是侧边栏里只能读你复制粘贴文字的聊天机器人。它的定义性特征是**Agent 能在网页上执行操作**——点按钮、填字段、在标签页之间跳转、从屏幕上抓取结构化数据。
 
@@ -39,7 +39,7 @@ draft: false
 
 ### 表单填写与结构化数据录入
 
-重复的表单填写——客户信息录入、发票明细、CRM 更新——是 Agent 开始「挣回票价」的地方。你描述什么该填到哪里，Agent 就顺着表单字段逐个填。Claude for Chrome 允许你[录制一次工作流](<https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome>)之后重放，对周期性数据录入很方便。
+重复的表单填写——客户信息录入、发票明细、CRM 更新——是 Agent 开始「挣回票价」的地方。你描述什么该填到哪里，Agent 就顺着表单字段逐个填。Claude for Chrome 允许你[录制一次工作流](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome)之后重放，对周期性数据录入很方便。
 
 关键词是_结构化_。如果表单字段清晰、布局可预期，Agent 处理得很好。一旦出现会随你的输入而变化的动态下拉框或条件逻辑，成功率就会下降。
 
@@ -83,9 +83,9 @@ draft: false
 
 浏览器 Agent 只活动在 Chrome 里。它碰不到你的本地文件系统，打不开桌面应用，也无法与非网页的东西交互。
 
-对偏开发的运营者有一个细节：**Codex 把 localhost 和开发服务器的工作路由到它的应用内浏览器**，而不是 Chrome 扩展。据 [OpenAI 的文档](<https://developers.openai.com/codex/app/browser>)，应用内浏览器负责 `localhost` 预览、基于本地文件打开的页面，以及任何不需要登录会话的内容；Chrome 扩展专为已登录的 Web 应用而设。如果你在测本地应用，你用的是 Chrome 工具栏里那个之外的另一件工具——这点值得知道，免得搞混什么走哪条路。
+对偏开发的运营者有一个细节：**Codex 把 localhost 和开发服务器的工作路由到它的应用内浏览器**，而不是 Chrome 扩展。据 [OpenAI 的文档](https://developers.openai.com/codex/app/browser)，应用内浏览器负责 `localhost` 预览、基于本地文件打开的页面，以及任何不需要登录会话的内容；Chrome 扩展专为已登录的 Web 应用而设。如果你在测本地应用，你用的是 Chrome 工具栏里那个之外的另一件工具——这点值得知道，免得搞混什么走哪条路。
 
-Claude for Chrome 待在浏览器侧边栏里，能操作已开在 Chrome 标签页中的 `localhost` 页面，但要跑完整的终端到浏览器循环，需要 [Claude Code 集成](<https://code.claude.com/docs/en/chrome>)。
+Claude for Chrome 待在浏览器侧边栏里，能操作已开在 Chrome 标签页中的 `localhost` 页面，但要跑完整的终端到浏览器循环，需要 [Claude Code 集成](https://code.claude.com/docs/en/chrome)。
 
 ### CAPTCHA 或反爬很重的网站
 
@@ -95,7 +95,7 @@ Claude for Chrome 待在浏览器侧边栏里，能操作已开在 Chrome 标签
 
 发起一笔付款；删除记录；提交法律文件；批准合同变更。**如果一次错误的代价很高，就不要让浏览器 Agent 无人监督地做。**两个工具都有行动前需确认的权限模式，凡是错了就难以挽回的事，你都该启用它们。
 
-Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍有 11.2% 的对抗性攻击得逞](<https://www.anthropic.com/research/prompt-injection-defenses>)。OpenAI 也承认，浏览器 Agent 里的提示注入「几乎不可能被彻底解决」。这些不是理论风险——研究人员已经发现真实存在的[野生间接提示注入载荷](<https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/>)，它们被埋在普通网站上，专等会浏览这些页面的 AI Agent 上钩。这不代表你不该用浏览器 Agent；而是说，高风险动作应当始终留在手动确认这道关卡后面。
+Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍有 11.2% 的对抗性攻击得逞](https://www.anthropic.com/research/prompt-injection-defenses)。OpenAI 也承认，浏览器 Agent 里的提示注入「几乎不可能被彻底解决」。这些不是理论风险——研究人员已经发现真实存在的[野生间接提示注入载荷](https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/)，它们被埋在普通网站上，专等会浏览这些页面的 AI Agent 上钩。这不代表你不该用浏览器 Agent；而是说，高风险动作应当始终留在手动确认这道关卡后面。
 
 ![what5.png](/blog/images/browser-ai-agent-what-it-can-do/1778482792348-c069ef6f-58c9-4820-bc61-f1478881ded4.webp)
 
@@ -135,15 +135,15 @@ Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍
 
 ## 往期文章
 
-  * 想把浏览器 Agent 用在整个工作流上？这篇文章讲了[工作区 Agent 在哪些地方真正帮到单人创业者](</blog/workspace-agents-for-solo-operators>)——又在哪些地方多半只是徒增负担
+  * 想把浏览器 Agent 用在整个工作流上？这篇文章讲了[工作区 Agent 在哪些地方真正帮到单人创业者](/blog/workspace-agents-for-solo-operators)——又在哪些地方多半只是徒增负担
 
-  * 如果你还在理解浏览器 Agent 与常规 AI 聊天工具的差别，这篇拆解解释了[为什么交互模型比多数人以为的更重要](</blog/workspace-agents-vs-chat-assistants>)
+  * 如果你还在理解浏览器 Agent 与常规 AI 聊天工具的差别，这篇拆解解释了[为什么交互模型比多数人以为的更重要](/blog/workspace-agents-vs-chat-assistants)
 
-  * 好奇[为什么这么多单人创始人在围绕 AI Agent 而非传统自动化工具重建工作流](</blog/ai-workspace-agents>)？
+  * 好奇[为什么这么多单人创始人在围绕 AI Agent 而非传统自动化工具重建工作流](/blog/ai-workspace-agents)？
 
-  * 多数人自动化得太早，做出了一碰就碎的体系。这篇[面向单人创始人的 AI 工作流指南](</blog/ai-workflow-for-solo-founders>)和本文的「可预测路径」框架直接相关
+  * 多数人自动化得太早，做出了一碰就碎的体系。这篇[面向单人创始人的 AI 工作流指南](/blog/ai-workflow-for-solo-founders)和本文的「可预测路径」框架直接相关
 
-  * 想要更脚踏实地地看看[AI Agent 在一人公司里到底在哪里省时间](</blog/ai-agent-solo-operators>)——而不是看那些炫目的演示？
+  * 想要更脚踏实地地看看[AI Agent 在一人公司里到底在哪里省时间](/blog/ai-agent-solo-operators)——而不是看那些炫目的演示？
 
 这就是我目前看到的全貌。浏览器 AI Agent 对合适的任务确实有用——真正有用。但它们不是魔法，演示与日常苦干之间的落差依旧真实。
 

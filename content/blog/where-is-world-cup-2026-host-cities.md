@@ -30,7 +30,7 @@ That structure makes the host-city question more important than usual. A fan pla
 
 The official host-city concept is also different from a simple list of stadiums. Some venues are identified by metro area rather than only city name, such as the San Francisco Bay Area and New York/New Jersey. That is why this guide treats host cities, stadiums, and travel regions together.
 
-**Source:** [FIFA — World Cup 2026 host cities](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+**Source:** [FIFA — World Cup 2026 host cities](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
   2. World Cup 2026 Host Cities and Stadiums
 
@@ -131,11 +131,6 @@ The World Cup 2026 is being held across 16 host cities in the United States, Can
 For fans, the practical answer is to treat host cities as planning regions. Use this page to understand the map, use the schedule to identify actual match dates, and use official FIFA and host-city pages before booking travel.
 
 
-## Related Reading
-
-  * World Cup 2026 Guide — the main hub for tournament format, schedule, and planning.
-
-  * World Cup 2026 Schedule: Full Fixtures & Calendar Sync — match dates and calendar context.
-
-  * USA World Cup 2026 Schedule: Match Times & Reminders — USMNT-specific schedule planning.
-
+## Related Reading- [World Cup 2026 Guide — the main hub for tournament format, schedule, and planning.](/blog/world-cup-2026-guide)
+- [World Cup 2026 Schedule: Full Fixtures & Calendar Sync — match dates and calendar context.](/blog/world-cup-2026-schedule)
+- [USA World Cup 2026 Schedule: Match Times & Reminders — USMNT-specific schedule planning.](/blog/world-cup-2026-schedule-usa)

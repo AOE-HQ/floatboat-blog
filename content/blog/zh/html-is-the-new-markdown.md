@@ -15,7 +15,7 @@ draft: false
 
 就在这时我看到了 Thariq Shihipar 的帖子。
 
-X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthropic Claude Code 团队的工程师，不是随便一个博眼球的说法。他用一个[由 20 个自包含 HTML 示例组成的配套网站](<https://thariqs.github.io/html-effectiveness/>)支撑观点——都是 Agent 生成的真实工作成果，按九个类别分组：带时间线的实施计划、带颜色分级严重性标签的 PR 审查、真能点来点去浏览的设计系统参考。这条帖子当天就冲上 Hacker News 第一。
+X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthropic Claude Code 团队的工程师，不是随便一个博眼球的说法。他用一个[由 20 个自包含 HTML 示例组成的配套网站](https://thariqs.github.io/html-effectiveness/)支撑观点——都是 Agent 生成的真实工作成果，按九个类别分组：带时间线的实施计划、带颜色分级严重性标签的 PR 审查、真能点来点去浏览的设计系统参考。这条帖子当天就冲上 Hacker News 第一。
 
 接下来几天我一直在琢磨这件事。下面是我看到的图景——以及如果你大多独自工作、或身处小团队，它意味着什么。
 
@@ -43,7 +43,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 当你是一个要把整个项目装进脑子的单人创业者时，这可不是小差别。
 
-[MDN Web Docs 的 HTML 参考](<https://developer.mozilla.org/en-US/docs/Web/HTML>)一向说得很清楚——HTML 的设计初衷就是为人类阅读而结构化文档；Markdown 的设计初衷是让面向网页的写作更轻松。这两个目标相关，但并不是同一个目标。当你的 AI Agent 产出的工作成果需要被审查、分享或据以行动时，「为人类阅读而生」这一点就开始变得重要得多。
+[MDN Web Docs 的 HTML 参考](https://developer.mozilla.org/en-US/docs/Web/HTML)一向说得很清楚——HTML 的设计初衷就是为人类阅读而结构化文档；Markdown 的设计初衷是让面向网页的写作更轻松。这两个目标相关，但并不是同一个目标。当你的 AI Agent 产出的工作成果需要被审查、分享或据以行动时，「为人类阅读而生」这一点就开始变得重要得多。
 
 ![3.PNG](/blog/images/html-is-the-new-markdown/1779256973035-39e4af2c-0ba0-4f0a-a212-50dc6664d3a1.webp)
 
@@ -59,7 +59,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 **Agent 内部工作。**不是 Agent 产出的一切都是给人看的。思维链日志、Agent 之间传递的数据——这些不需要视觉层级，Markdown 就好。格式只在需要人参与输出时才要紧。
 
-我去查了 Anthropic 官方的 [Claude Code 文档](<https://docs.anthropic.com/en/docs/claude-code/overview>)，确认自己没有漏掉什么。官方推荐并不是「永远用 HTML」，而更接近：**用匹配受众的格式。** Agent 对 Agent？保持精简。Agent 对人？让它可读。
+我去查了 Anthropic 官方的 [Claude Code 文档](https://docs.anthropic.com/en/docs/claude-code/overview)，确认自己没有漏掉什么。官方推荐并不是「永远用 HTML」，而更接近：**用匹配受众的格式。** Agent 对 Agent？保持精简。Agent 对人？让它可读。
 
 好工具，用错了场景——这是真实存在的事。Markdown 不会消失，它只是不再是唯一答案了。
 
@@ -77,7 +77,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 问题不在于哪种格式更强大，而在于哪种融得进你的一天。就目前而言，对我来说是两种都用——只是用在不同的东西上。
 
-平台已经在往这个方向走了。Claude 的 [Artifacts 功能](<https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them>)能直接在聊天界面里生成并渲染 HTML；OpenAI 的 [Canvas 工作区](<https://openai.com/index/introducing-canvas/>)开启了并排编辑；`html-anything` 这类工具把 Agent 输出转成独立的 HTML 成果。更丰富的 AI 输出的基础设施正在出现——不管你有没有专门要求。
+平台已经在往这个方向走了。Claude 的 [Artifacts 功能](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)能直接在聊天界面里生成并渲染 HTML；OpenAI 的 [Canvas 工作区](https://openai.com/index/introducing-canvas/)开启了并排编辑；`html-anything` 这类工具把 Agent 输出转成独立的 HTML 成果。更丰富的 AI 输出的基础设施正在出现——不管你有没有专门要求。
 
 ![5.png](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
 

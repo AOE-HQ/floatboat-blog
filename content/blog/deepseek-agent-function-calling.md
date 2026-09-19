@@ -18,15 +18,15 @@ draft: false
 
   * Thinking mode and tool calling work together on V4 — the model can reason through which tools to call before emitting structured requests. MCP (Model Context Protocol) extends the tool surface beyond inline function definitions to external servers.
 
-  * Production agents need a repair layer: validate JSON arguments, return structured errors the model can self-correct, and bound parallel execution. If you have not built an agent loop yet, start with [How to Build a DeepSeek Agent](</blog/how-to-build-deepseek-agent>); this guide goes deeper on the tool-calling layer specifically.
+  * Production agents need a repair layer: validate JSON arguments, return structured errors the model can self-correct, and bound parallel execution. If you have not built an agent loop yet, start with [How to Build a DeepSeek Agent](/blog/how-to-build-deepseek-agent); this guide goes deeper on the tool-calling layer specifically.
 
 ## 1\. What Function Calling Means in a DeepSeek Agent
 
 Function calling — also called tool calling — is the mechanism that separates an agent from a chatbot. A chatbot receives a prompt and returns text. An agent receives a prompt plus a list of available tools, decides whether any tool can help, returns a structured request to call one or more of them, waits for your code to execute those calls, and then continues reasoning with the results in context.
 
-On DeepSeek V4, function calling is native to both `deepseek-v4-pro` and `deepseek-v4-flash`. The API uses the OpenAI-compatible format: a `tools` array in the chat completion request, tool calls returned in `message.tool_calls`, and results fed back as `role: "tool"` messages with matching `tool_call_id` values, as documented in [DeepSeek's tool calling guide](<https://api-docs.deepseek.com/guides/tool_calls>).
+On DeepSeek V4, function calling is native to both `deepseek-v4-pro` and `deepseek-v4-flash`. The API uses the OpenAI-compatible format: a `tools` array in the chat completion request, tool calls returned in `message.tool_calls`, and results fed back as `role: "tool"` messages with matching `tool_call_id` values, as documented in [DeepSeek's tool calling guide](https://api-docs.deepseek.com/guides/tool_calls).
 
-This guide assumes you understand the basic agent loop — send messages, check for tool calls, execute, feed back, repeat. If that pattern is new, read [How to Build a DeepSeek Agent](</blog/how-to-build-deepseek-agent>) first. Here we focus on what happens inside the tool-calling layer: schema design, parallel execution, strict mode, thinking mode interaction, and the production patterns that keep agent loops from breaking on malformed arguments.
+This guide assumes you understand the basic agent loop — send messages, check for tool calls, execute, feed back, repeat. If that pattern is new, read [How to Build a DeepSeek Agent](/blog/how-to-build-deepseek-agent) first. Here we focus on what happens inside the tool-calling layer: schema design, parallel execution, strict mode, thinking mode interaction, and the production patterns that keep agent loops from breaking on malformed arguments.
 
 The distinction between "function calling" and "an agent" matters for search intent and architecture. Function calling is one API capability. An agent is a system that wraps that capability in a loop with error handling, state management, and tool permissioning. Most DeepSeek Agent failures in production trace back to the tool-calling layer — invalid JSON, wrong parameter types, or parallel calls that race against shared state — not to the model's reasoning quality.
 
@@ -95,11 +95,11 @@ Three design principles that improve call reliability on V4:
 
 **Keep required fields minimal.** Only mark parameters as `"required"` if the tool genuinely cannot run without them. Over-constraining required fields increases JSON parse failures when the model omits optional context.
 
-For agents where argument correctness is critical — billing systems, database writes, deployment triggers — enable strict mode by setting `"strict": true` inside the function definition and calling the `/beta` endpoint at `https://api.deepseek.com/beta`, as detailed in [DeepSeek's function calling documentation](<https://api-docs.deepseek.com/guides/function_calling>). Strict mode constrains the model to produce arguments that conform exactly to your JSON Schema, reducing the need for downstream validation at the cost of slightly higher latency on the first tool call.
+For agents where argument correctness is critical — billing systems, database writes, deployment triggers — enable strict mode by setting `"strict": true` inside the function definition and calling the `/beta` endpoint at `https://api.deepseek.com/beta`, as detailed in [DeepSeek's function calling documentation](https://api-docs.deepseek.com/guides/function_calling). Strict mode constrains the model to produce arguments that conform exactly to your JSON Schema, reducing the need for downstream validation at the cost of slightly higher latency on the first tool call.
 
 ## 3\. The Tool Call Loop: Beyond the Basics
 
-The minimal loop from [How to Build a DeepSeek Agent](</blog/how-to-build-deepseek-agent>) handles one tool call per turn. Production agents need three additional controls: `tool_choice`, parallel call handling, and conversation state preservation.
+The minimal loop from [How to Build a DeepSeek Agent](/blog/how-to-build-deepseek-agent) handles one tool call per turn. Production agents need three additional controls: `tool_choice`, parallel call handling, and conversation state preservation.
 
 `tool_choice`**controls whether the model must call a tool.** The default `"auto"` lets the model decide. Set `"required"` when every turn must produce a tool call (rare — usually for forced pipeline steps). Set `"none"` on the final synthesis turn after all tools have executed, which prevents the model from calling more tools when you want a plain-text answer.
     
@@ -136,7 +136,7 @@ Parallel tool calls shine when the sub-tasks are independent. A coding agent ref
 
 The pattern breaks down when tools have side effects on shared state. If `write_file` and `read_file` operate on the same path, parallel execution creates a race condition your agent loop does not control. For stateful tools, either serialize execution (process tool calls one at a time) or design tools with explicit locking semantics.
 
-DeepSeek-TUI's RLM fan-out pattern takes parallel execution further: a V4 Pro coordinator spawns up to 16 V4 Flash sub-agents, each running its own tool loop on a sub-task, as listed in the [official awesome-deepseek-agent repository](<https://github.com/deepseek-ai/awesome-deepseek-agent>). That architecture is specific to native DeepSeek agents and is not available through generic harness configuration — but the underlying principle (cheap parallel workers + expensive coordinator) applies to any custom agent built on V4 Flash pricing.
+DeepSeek-TUI's RLM fan-out pattern takes parallel execution further: a V4 Pro coordinator spawns up to 16 V4 Flash sub-agents, each running its own tool loop on a sub-task, as listed in the [official awesome-deepseek-agent repository](https://github.com/deepseek-ai/awesome-deepseek-agent). That architecture is specific to native DeepSeek agents and is not available through generic harness configuration — but the underlying principle (cheap parallel workers + expensive coordinator) applies to any custom agent built on V4 Flash pricing.
 
 For most custom agents, start with sequential execution until the loop is stable, then enable parallelism for read-only tools (search, fetch, query) where independence is guaranteed. Promote to parallel writes only after you have idempotency guarantees or explicit conflict resolution.
 
@@ -164,13 +164,13 @@ A practical split that works well in coding agents: use `deepseek-v4-pro` with `
 
 ## 6\. MCP: Extending the Tool Surface Beyond Inline Definitions
 
-The Model Context Protocol (MCP) is a standard for connecting agents to external tool servers — databases, file systems, browser automation, proprietary APIs — without embedding every tool definition inline in your request. DeepSeek V4 supports MCP natively, and tools like DeepSeek-TUI ship with both MCP client and server capabilities, as documented in [DeepSeek's coding agent integration guide](<https://api-docs.deepseek.com/guides/coding_agents>).
+The Model Context Protocol (MCP) is a standard for connecting agents to external tool servers — databases, file systems, browser automation, proprietary APIs — without embedding every tool definition inline in your request. DeepSeek V4 supports MCP natively, and tools like DeepSeek-TUI ship with both MCP client and server capabilities, as documented in [DeepSeek's coding agent integration guide](https://api-docs.deepseek.com/guides/coding_agents).
 
 Inline function definitions (the `tools` array approach in this guide) work well for agents with a fixed, known tool set — five to fifteen functions defined in your codebase. MCP becomes necessary when the tool surface is dynamic (plugins, user-configured integrations) or when tools are maintained by separate teams (a database team runs the MCP server, the agent team consumes it).
 
 The integration pattern: your agent loop stays the same. Instead of calling local Python functions when the model returns a tool call, it forwards the call to an MCP server, which executes the action and returns the result. The message history format does not change — only the execution layer behind `TOOL_REGISTRY`.
 
-For agents starting today, inline definitions are simpler and sufficient. Add MCP when you hit one of these thresholds: more than 20 tools (context overhead from large `tools` arrays), tools that change frequently without agent code changes, or tools that require isolated execution environments (sandboxed browser, separate database credentials). Choosing between inline tools and an MCP-based architecture is one of the design decisions covered in the [DeepSeek Agent category overview](</blog/what-is-deepseek-agent>), which maps when each approach makes sense across the four agent archetypes. If you would rather skip the wiring entirely, some desktop clients like [Floatboat DeepSeek Agent](<https://deepseek-agent.com>) ship with the tool-calling layer prebuilt — file reader, browser, terminal, and calendar tools are already connected through DeepSeek's native function calling interface, so you define what the agent should do rather than how it calls each tool.
+For agents starting today, inline definitions are simpler and sufficient. Add MCP when you hit one of these thresholds: more than 20 tools (context overhead from large `tools` arrays), tools that change frequently without agent code changes, or tools that require isolated execution environments (sandboxed browser, separate database credentials). Choosing between inline tools and an MCP-based architecture is one of the design decisions covered in the [DeepSeek Agent category overview](/blog/what-is-deepseek-agent), which maps when each approach makes sense across the four agent archetypes. If you would rather skip the wiring entirely, some desktop clients like [Floatboat DeepSeek Agent](https://deepseek-agent.com) ship with the tool-calling layer prebuilt — file reader, browser, terminal, and calendar tools are already connected through DeepSeek's native function calling interface, so you define what the agent should do rather than how it calls each tool.
 
 ## 7\. Production Patterns: Validation, Repair, and Failure Modes
 
@@ -214,5 +214,5 @@ Function calling is the connective tissue of every DeepSeek Agent. The model's r
 
 Start with two or three well-defined tools and a sequential loop. Add strict mode when argument errors become your top failure mode. Add parallel calls when latency — not correctness — is the bottleneck. Add MCP when the tool surface outgrows inline definitions.
 
-For the full agent architecture — API setup, model selection, and the loop skeleton that this guide extends — [How to Build a DeepSeek Agent](</blog/how-to-build-deepseek-agent>) walks through each step with runnable code.
+For the full agent architecture — API setup, model selection, and the loop skeleton that this guide extends — [How to Build a DeepSeek Agent](/blog/how-to-build-deepseek-agent) walks through each step with runnable code.
 

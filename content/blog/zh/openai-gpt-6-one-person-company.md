@@ -21,11 +21,11 @@ draft: false
 
 让我先把这事捋清楚，因为现在的信噪比很差。
 
-**已确认的。**OpenAI 下一代前沿模型的预训练——内部代号 "Spud"——已于 2026 年 3 月 24 日在得克萨斯州阿比林的 Stargate 数据中心完成。Sam Altman 公开说过，发布"还要几周"。就这些。没有模型卡。没有 API 公告。[OpenAI 官网](<https://openai.com/gpt-5/>)上也没有任何点名 GPT-6 的博客文章。写下这段时已是 4 月底，距离那句"几周"已经过去大约四个半星期，旗舰模型仍在安全评估阶段。
+**已确认的。**OpenAI 下一代前沿模型的预训练——内部代号 "Spud"——已于 2026 年 3 月 24 日在得克萨斯州阿比林的 Stargate 数据中心完成。Sam Altman 公开说过，发布"还要几周"。就这些。没有模型卡。没有 API 公告。[OpenAI 官网](https://openai.com/gpt-5/)上也没有任何点名 GPT-6 的博客文章。写下这段时已是 4 月底，距离那句"几周"已经过去大约四个半星期，旗舰模型仍在安全评估阶段。
 
 **纯属猜测的。**其他一切都是。200 万 token 上下文窗口的传闻。比 GPT-5.4 提升 40% 的说法。4 月 14 日的发布时间来了又走，悄无声息。Polymarket 上原本贴着"6 月 30 日前"、概率接近 93% 的交易者，一周内把它砍到了约 45%。这不是市场犯糊涂——这是市场在说"推迟几个月"现在完全有可能。
 
-其实 [Altman 公开说过的内容](<https://www.reddit.com/r/ChatGPT/comments/1muhpo9/sam_altman_on_gpt6_people_want_memory/>)比那些泄露更有用。他讲到他最兴奋的功能是记忆——能跨周记住你的偏好、日常习惯、进行中项目的 ChatGPT。他谈到"agentic"工作流。他谈到个性化。那是一个方向，不是一份规格表。
+其实 [Altman 公开说过的内容](https://www.reddit.com/r/ChatGPT/comments/1muhpo9/sam_altman_on_gpt6_people_want_memory/)比那些泄露更有用。他讲到他最兴奋的功能是记忆——能跨周记住你的偏好、日常习惯、进行中项目的 ChatGPT。他谈到"agentic"工作流。他谈到个性化。那是一个方向，不是一份规格表。
 
 现在任何给你 GPT-6 基准数据的文章，我都会当同人文看。
 
@@ -35,7 +35,7 @@ draft: false
 
 把能找到的信息拼起来，我的最佳猜测是：2026 年 Q2 末或 Q3。这与 Altman 的"还要几周"（宽泛解读）、4–6 周的标准安全评估周期，以及 Anthropic Opus 4.7 于 4 月 16 日发布和其他 Q2 发布带来的竞争压力，都对得上。
 
-可能更早。可能更晚。我可能猜错。把 [OpenAI 的发布说明](<https://help.openai.com/en/articles/6825453-chatgpt-release-notes>)存个书签，别再刷 Twitter 了。
+可能更早。可能更晚。我可能猜错。把 [OpenAI 的发布说明](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)存个书签，别再刷 Twitter 了。
 
 ## GPT-4 到 GPT-5：每一次跃迁改变了什么
 
@@ -43,7 +43,7 @@ draft: false
 
 ### 新能力 vs 实际的工作流变化
 
-GPT-4 于 2023 年 3 月发布。GPT-5 于 2025 年 8 月 7 日发布。间隔 29 个月——而据 OpenAI 的[官方发布页](<https://openai.com/index/introducing-gpt-5/>)称，GPT-5 是一次"重大跃迁"，拿到了 SOTA 分数：AIME 2025 上 94.6%，SWE-bench Verified 上 74.9%，MMMU 上 84.2%。相比开启搜索的 GPT-4o，幻觉下降约 45%。
+GPT-4 于 2023 年 3 月发布。GPT-5 于 2025 年 8 月 7 日发布。间隔 29 个月——而据 OpenAI 的[官方发布页](https://openai.com/index/introducing-gpt-5/)称，GPT-5 是一次"重大跃迁"，拿到了 SOTA 分数：AIME 2025 上 94.6%，SWE-bench Verified 上 74.9%，MMMU 上 84.2%。相比开启搜索的 GPT-4o，幻觉下降约 45%。
 
 读到这些，你会预期单人创业者感受到一种"29 个月的进步压缩进一天"式的剧变。
 
@@ -101,7 +101,7 @@ GPT-6 正朝着持久化、个性化的助手走去——模型了解你的工�
 
 现在值得做的功课：
 
-  * 写一份一页纸的文档，描述你做什么、服务谁、目前在做什么、喜欢怎么沟通。这是任何助手——现在的或未来的——的"前上下文"。[GPT-5 开发者页面](<https://openai.com/index/introducing-gpt-5-for-developers/>)展示了结构化指令如何实质性地改善输出——无论模型是 GPT-5、GPT-6、Claude 还是下一个发布的东西，这一点都成立。
+  * 写一份一页纸的文档，描述你做什么、服务谁、目前在做什么、喜欢怎么沟通。这是任何助手——现在的或未来的——的"前上下文"。[GPT-5 开发者页面](https://openai.com/index/introducing-gpt-5-for-developers/)展示了结构化指令如何实质性地改善输出——无论模型是 GPT-5、GPT-6、Claude 还是下一个发布的东西，这一点都成立。
 
   * 按工作类型维护一份"你最好的输出"的持续文件——那些你引以为豪的邮件、跑出成绩的简报、你愿意再写一遍的代码。这会成为任何模型的风格参考。
 
@@ -115,13 +115,13 @@ GPT-6 正朝着持久化、个性化的助手走去——模型了解你的工�
 
 ## 延伸阅读
 
-→ 看看为什么[没有结构，大多数 AI 工作流都会崩（以及如何在 GPT-6 之前修好它）](</blog/ai-agent-workflow-vibe-coding>)
+→ 看看为什么[没有结构，大多数 AI 工作流都会崩（以及如何在 GPT-6 之前修好它）](/blog/ai-agent-workflow-vibe-coding)
 
-→ 理解**[持久化 AI Agent 是什么、为什么记忆会比模型升级更重要](</blog/what-is-persistent-ai-agent>)**
+→ 理解**[持久化 AI Agent 是什么、为什么记忆会比模型升级更重要](/blog/what-is-persistent-ai-agent)**
 
-→ 了解 **[2026 年 AI 到底怎么融入单人创业者的工作流（撇开炒作）](</blog/ai-agents-2026-solo-operators>)**
+→ 了解 **[2026 年 AI 到底怎么融入单人创业者的工作流（撇开炒作）](/blog/ai-agents-2026-solo-operators)**
 
-→ 探索如何**[构建不靠招人也能扩大一人业务的系统](</blog/scale-one-person-business-without-hiring>)**
+→ 探索如何**[构建不靠招人也能扩大一人业务的系统](/blog/scale-one-person-business-without-hiring)**
 
-→ 拆解 AI 为什么**[每次会话都会「失忆」——以及现在该怎么做](</blog/why-ai-forgets-every-session>)**
+→ 拆解 AI 为什么**[每次会话都会「失忆」——以及现在该怎么做](/blog/why-ai-forgets-every-session)**
 

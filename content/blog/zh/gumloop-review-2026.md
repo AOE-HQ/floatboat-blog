@@ -11,13 +11,13 @@ locale: "zh"
 draft: false
 ---
 
-_好久不见，我是 Nova。我最近花了不少时间测试**AI 工作流工具**——不是有人让我测，而是老实说，我总在撞见同一个问题：标签页太多、手动步骤太多、时间不够用。_[Gumloop](<https://www.gumloop.com/>) _在我的调研里反复出现，所以我终于坐下来认真把它用了一遍。_
+_好久不见，我是 Nova。我最近花了不少时间测试**AI 工作流工具**——不是有人让我测，而是老实说，我总在撞见同一个问题：标签页太多、手动步骤太多、时间不够用。_[Gumloop](https://www.gumloop.com/) _在我的调研里反复出现，所以我终于坐下来认真把它用了一遍。_
 
 ## Gumloop 到底是干什么的
 
 ### 核心理念：给非开发者用的可视化工作流自动化
 
-Gumloop 本质上是一个**无代码 AI 自动化平台**，核心是一块可视化画布。你把节点拖到画布上、把它们连起来，这些连起来的步骤就成了一条能跑的自动化流程。与老式自动化工具不同，Gumloop 允许你把**[ChatGPT](<https://chatgpt.com/>) 和 Claude 这类 AI 模型直接插进工作流里**——所以它不只是把数据从 A 搬到 B，而是在沿途还会处理数据、做出判断。
+Gumloop 本质上是一个**无代码 AI 自动化平台**，核心是一块可视化画布。你把节点拖到画布上、把它们连起来，这些连起来的步骤就成了一条能跑的自动化流程。与老式自动化工具不同，Gumloop 允许你把**[ChatGPT](https://chatgpt.com/) 和 Claude 这类 AI 模型直接插进工作流里**——所以它不只是把数据从 A 搬到 B，而是在沿途还会处理数据、做出判断。
 
 Gumloop 是 Y Combinator Winter 2024 项目出身，2026 年初完成了由 Benchmark 领投的 5,000 万美元 B 轮融资——这多少说明了市场认为这个品类会往哪走。
 
@@ -39,7 +39,7 @@ Gumloop 是 Y Combinator Winter 2024 项目出身，2026 年初完成了由 Benc
 
 ### 已经工具堆叠、需要连接器的公司
 
-Gumloop 集成 Google Sheets、Slack、Salesforce 以及 125+ 款应用，还支持 [MCP（Model Context Protocol）](<https://cloud.google.com/discover/what-is-model-context-protocol?hl=en>)——那个把 AI 系统连接到外部工具的新兴开放标准——这意味着它的集成面只会越来越大。如果你本来就生活在一堆工具里，只想让 AI 帮你在它们之间智能地路由数据，这是一个正经的使用场景。
+Gumloop 集成 Google Sheets、Slack、Salesforce 以及 125+ 款应用，还支持 [MCP（Model Context Protocol）](https://cloud.google.com/discover/what-is-model-context-protocol?hl=en)——那个把 AI 系统连接到外部工具的新兴开放标准——这意味着它的集成面只会越来越大。如果你本来就生活在一堆工具里，只想让 AI 帮你在它们之间智能地路由数据，这是一个正经的使用场景。
 
 ## 哪些地方用起来更费劲
 
@@ -77,7 +77,7 @@ Solo 套餐每月 37 美元起，含 10,000 credits、1 个用户席位、API ke
 
 credit 体系是定价里最绕的部分。**标准 AI 调用约 2 credits；高级模型调用（GPT-4.1、Claude Sonnet）每次约 20 credits。**富化节点才是真正的成本放大器——一条给 100 个联系人做富化的工作流要花 6,001 credits。原则上定价算公道，但在你跑过一两个月生产工作流之前很难预测用量。
 
-超出配额按每 credit 0.005 美元计费，且没有自动关闭——所以 Solo 用户若超出配额 15,000 credits，就要额外付 75 美元。下单前先看 [Gumloop 官方定价页](<https://www.gumloop.com/pricing>)——随着产品成熟，套餐档位和 credit 结构已经改过多次。
+超出配额按每 credit 0.005 美元计费，且没有自动关闭——所以 Solo 用户若超出配额 15,000 credits，就要额外付 75 美元。下单前先看 [Gumloop 官方定价页](https://www.gumloop.com/pricing)——随着产品成熟，套餐档位和 credit 结构已经改过多次。
 
 ![4.png](/blog/images/gumloop-review-2026/1774256629584-868f68d2-9e14-410d-9be8-7c7bb7a2667f.webp)
 
@@ -93,7 +93,7 @@ credit 体系是定价里最绕的部分。**标准 AI 调用约 2 credits；高
 
 这是我个人的落点。如果你的日子长这样：写点东西、研究点东西、做个判断、跟人沟通、循环往复——**节点模型不是为这类工作设计的。**你花在把流程映射成 flow 上的时间，会比直接干活还多。
 
-它还预设了一种特定的自动化需求：**高并发、低变体。**如果你真正需要的是一个思考伙伴、或一个能处理模糊性的工具——那是另一个产品品类。像 [n8n](<https://n8n.io/>)（开源、可自托管）这类工具，在成本上可能更适合技术向的单人玩家；更简单的工具则可能更适合轻量需求。
+它还预设了一种特定的自动化需求：**高并发、低变体。**如果你真正需要的是一个思考伙伴、或一个能处理模糊性的工具——那是另一个产品品类。像 [n8n](https://n8n.io/)（开源、可自托管）这类工具，在成本上可能更适合技术向的单人玩家；更简单的工具则可能更适合轻量需求。
 
 ![5.png](/blog/images/gumloop-review-2026/1774256641947-3e99ec7c-014a-4cb9-b5a1-03534423a3ee.webp)
 
@@ -109,13 +109,13 @@ _总之，这就是我花真时间用过它之后得出的结论。它不是万�
 
 ## 往期文章：
 
-  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差别](</blog/lindy-vs-gumloop>)
+  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差别](/blog/lindy-vs-gumloop)
 
-  * [探索调研、内容与运营里的真实 AI Agent 应用场景](</blog/ai-agent-use-cases-real-examples>)
+  * [探索调研、内容与运营里的真实 AI Agent 应用场景](/blog/ai-agent-use-cases-real-examples)
 
-  * [看一人公司如何开始用 AI 角色像完整团队一样运转](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [看一人公司如何开始用 AI 角色像完整团队一样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [了解 AI 自动化服务在真实市场里到底怎么定价](</blog/ai-automation-agency-pricing>)
+  * [了解 AI 自动化服务在真实市场里到底怎么定价](/blog/ai-automation-agency-pricing)
 
-  * [理解真实工作流里 AI Agent 与 AI 助手的区别](</blog/ai-agent-vs-ai-assistant>)
+  * [理解真实工作流里 AI Agent 与 AI 助手的区别](/blog/ai-agent-vs-ai-assistant)
 

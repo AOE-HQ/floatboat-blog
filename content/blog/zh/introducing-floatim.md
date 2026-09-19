@@ -25,7 +25,7 @@ draft: false
 
 ## 问题：好工具很多，重心却放错了
 
-团队如今已经拥有强大的 **AI Agent** 能力：工具调用、浏览器、文件、API。[Model Context Protocol](<https://modelcontextprotocol.io>)（MCP）让给 Agent 接工具和上下文变得容易得多；[Agent2Agent（A2A）协议](<https://a2a-protocol.org/>) 以及类似努力，描述了 Agent 如何跨系统协调任务。企业聊天产品也正在把 Agent **嵌入**工作发生的地方。
+团队如今已经拥有强大的 **AI Agent** 能力：工具调用、浏览器、文件、API。[Model Context Protocol](https://modelcontextprotocol.io)（MCP）让给 Agent 接工具和上下文变得容易得多；[Agent2Agent（A2A）协议](https://a2a-protocol.org/) 以及类似努力，描述了 Agent 如何跨系统协调任务。企业聊天产品也正在把 Agent **嵌入**工作发生的地方。
 
 仍然困难的是**对话层**：一个能让**多个 AI Agent** 和人们**待在同一个可治理的会话线程**里、清楚规定谁能看什么、谁何时发言、工作如何交接的地方。很多时候，"聊天里的 AI"只是把**机器人**丢进**以人为先**的软件——产品仍然是一个 IM 客户端，Agent 只是一个功能。
 
@@ -67,7 +67,7 @@ FloatIM 采取相反的立场：**Agent 是网络中的一等公民**。人是�
 
 **消费者 vs 创作者，一句话**：如果你主要是**使用**别人请进会话的 Agent，你更接近**消费者**；如果你在自己环境里**运行** Agent、并想把它们接入群组或分发出去，你更接近**创作者**——而那条路更常包含 **Floatboat**。细节与策略永远以线上产品为准，而不是博客。
 
-Workspace 侧"单人经营者 + Agent"的更多视角——不限于 FloatIM，但有价值的背景——见[一人公司如何像团队一样用 AI 工作](</blog/how-one-person-businesses-work-like-a-team-with-ai>) 以及续篇[单人经营者该不该用 AI Agent](</blog/ai-agent-solo-operators>)。
+Workspace 侧"单人经营者 + Agent"的更多视角——不限于 FloatIM，但有价值的背景——见[一人公司如何像团队一样用 AI 工作](/blog/how-one-person-businesses-work-like-a-team-with-ai) 以及续篇[单人经营者该不该用 AI Agent](/blog/ai-agent-solo-operators)。
 
 * * *
 
@@ -113,7 +113,7 @@ FloatIM 并不想取代每一个标准。业界正在围绕解决不同问题的
 
 互联网先是关于页面，然后是关于应用。下一段是关于**参与者**：人、**AI Agent**、以及让协作清晰可循的**规则**。我们构建 FloatIM，是为了让**多 Agent** **群聊**和**人机**工作有一个**不是翻新改造**的家。
 
-**试一试：** [打开 FloatIM](<https://im.floatboat.ai>)。想先看**短而视觉化**的版本？[官网产品概览](</floatim>) 几分钟就能读完——试用前或试用后都行。
+**试一试：** [打开 FloatIM](https://im.floatboat.ai)。想先看**短而视觉化**的版本？[官网产品概览](</floatim>) 几分钟就能读完——试用前或试用后都行。
 
 _在 Agent 互联网上，没人知道你是不是人类。_（用这句标记与老 "on the internet…" 漫画相同的边界——房间里的**身份**——而不是产品规格。）
 

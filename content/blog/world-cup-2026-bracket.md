@@ -24,7 +24,7 @@ The World Cup 2026 bracket is where the group stage becomes a single-elimination
 
 As of July 8, 2026, the group stage and Round of 32 are complete, and the bracket has moved into the quarterfinal stage. Use this page together with the World Cup 2026 groups and standings hub to understand how each team reached its knockout slot.
 
-**Source note:** Matchups, dates, venues, and scores are attributed to the [FIFA Official Bracket](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>), with group-stage placement context connected to the World Cup 2026 groups and standings hub.
+**Source note:** Matchups, dates, venues, and scores are attributed to the [FIFA Official Bracket](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026), with group-stage placement context connected to the World Cup 2026 groups and standings hub.
 
 ## Download the World Cup 2026 Bracket Template and Tracker
 
@@ -50,7 +50,7 @@ The most important workflow is upstream first: confirm the final group tables, t
 
 
 
-> Source: [FIFA Official Bracket](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Bracket](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 The Round of 32 is the biggest structural change for 2026 bracket tracking. It gives group winners one more elimination match to survive and gives strong third-place teams a chance to become dangerous quickly. Brazil, France, England, Spain, Argentina, Belgium, USA, Portugal, and Colombia all moved the bracket into a contender-heavy middle phase, while Paraguay and Morocco pulled off penalty-shootout upsets over Germany and Netherlands respectively.
 
@@ -62,7 +62,7 @@ The Round of 32 is the biggest structural change for 2026 bracket tracking. It g
 
 
 
-> Source: [FIFA Official Bracket](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Bracket](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 The Round of 16 produced the tournament's biggest upsets. Norway knocked out Brazil 2–1, Belgium crushed the United States 4–1, and Morocco swept Canada 3–0. England survived a five-goal thriller against Mexico, while Spain edged Portugal 1–0 in a tight Iberian derby. Argentina needed all of a 3–2 win over Egypt, and Switzerland held Colombia to a penalty shootout victory. The quarterfinal field is wide open.
 
@@ -74,7 +74,7 @@ The Round of 16 produced the tournament's biggest upsets. Norway knocked out Bra
 
 
 
-> Source: [FIFA Official Bracket](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Bracket](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 The quarterfinals are where the bracket becomes less about qualification labels and more about path cost. France vs Morocco is the highest-ceiling football matchup, while Spain vs Belgium carries significant European heavyweight weight. Argentina vs Switzerland brings a South American path test, and Norway vs England gives the lower half another tactical contrast.
 
@@ -86,7 +86,7 @@ The quarterfinals are where the bracket becomes less about qualification labels 
 
 
 
-> Source: [FIFA Official Bracket](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Bracket](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 The final stretch is still fixture-dependent because the quarterfinal winners determine the semifinal paths. The most important publishing rule for this section is to update the winner labels as soon as each match ends, while keeping the final venue and date stable.
 
@@ -148,19 +148,10 @@ A bracket is a map, but a calendar is what makes the map actionable. Once the Ro
 
 If you use Floatboat, you can attach lightweight workflows to matches: pre-match briefs, watch-party notes, post-match recap drafts, or office-pool updates. If you do not use Floatboat, a standard calendar subscription still solves the main problem: correct match times across EDT, CDT, PDT, and your local timezone if you travel.
 
-## Related Reading
-
-  * World Cup 2026 Groups & Standings — fill the bracket from final group tables
-
-  * World Cup 2026 Draw: Rules, Results & Groups — understand how paths begin
-
-  * World Cup 2026 Predictions & Bracket Picks — P07 prediction and pick workflow
-
-  * World Cup 2026 Bracketology How-To — P21 bracketology method and office-pool logic
-
-  * FloatCup: Subscribe to World Cup 2026 Calendar in One Click — reminders for knockout matches
-
-## Conclusion
+## Related Reading- [World Cup 2026 Groups & Standings — fill the bracket from final group tables](/blog/world-cup-2026-groups-standings)
+- [World Cup 2026 Draw: Rules, Results & Groups — understand how paths begin](/blog/world-cup-2026-draw)
+- [World Cup 2026 Bracketology How-To — P21 bracketology method and office-pool logic](/blog/world-cup-2026-bracketology)
+- [FloatCup: Subscribe to World Cup 2026 Calendar in One Click — reminders for knockout matches](/blog/floatcup-world-cup-2026-calendar-subscribe)## Conclusion
 
 The World Cup 2026 bracket is larger, faster, and more volatile than older 32-team tournament templates. The Round of 32 gives more teams a route into the knockout phase, but it also creates one extra elimination hurdle for favorites. That makes a live tracker more useful than a static bracket image.
 

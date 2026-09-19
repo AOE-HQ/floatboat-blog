@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Hi, my friends. How are you? I'm Nova. Last week I was writing a proposal for a new content project. I opened [ChatGPT](<https://chatgpt.com/>), started explaining what the project was about, who the client was, what tone they preferred, and what I'd already drafted in the previous session. Ten minutes in, I stopped typing and just stared at the screen.
+Hi, my friends. How are you? I'm Nova. Last week I was writing a proposal for a new content project. I opened [ChatGPT](https://chatgpt.com/), started explaining what the project was about, who the client was, what tone they preferred, and what I'd already drafted in the previous session. Ten minutes in, I stopped typing and just stared at the screen.
 
 I'd done this exact same setup the day before. And the day before that.
 
@@ -23,9 +23,9 @@ If you're a solo founder running everything yourself, this probably sounds famil
 
 Here's a technical detail that changes everything once you understand it: **most AI tools are stateless by design.** That means every time you start a new conversation, the model has no memory of anything that came before. It's not a bug — it's how architecture works.
 
-Large language models process your input fresh each time. There's no internal state that carries forward between sessions. The [original transformer architecture](<https://arxiv.org/abs/1706.03762>) that powers these models was built for parallel processing and scalability, and that requires each call to be completely independent. Your conversation history? Discarded the moment the session ends.
+Large language models process your input fresh each time. There's no internal state that carries forward between sessions. The [original transformer architecture](https://arxiv.org/abs/1706.03762) that powers these models was built for parallel processing and scalability, and that requires each call to be completely independent. Your conversation history? Discarded the moment the session ends.
 
-Some platforms have started adding memory features on top of this. [OpenAI rolled out memory for ChatGPT](<https://openai.com/index/memory-and-new-controls-for-chatgpt/>) that can reference saved details and past conversations. It's a real step forward. But there's a gap between "remembering that you prefer bullet points" and "understanding the full context of the project you've been building for three weeks." The first is a preference. The second is working knowledge.
+Some platforms have started adding memory features on top of this. [OpenAI rolled out memory for ChatGPT](https://openai.com/index/memory-and-new-controls-for-chatgpt/) that can reference saved details and past conversations. It's a real step forward. But there's a gap between "remembering that you prefer bullet points" and "understanding the full context of the project you've been building for three weeks." The first is a preference. The second is working knowledge.
 
 ### The Reset Tax — How Much Time You Spend Re-Explaining
 
@@ -45,7 +45,7 @@ If you're running a one-person operation, your work looks something like this on
 
 Here's the issue: **a stateless AI treats each of those as an unrelated conversation.** It doesn't know that the client you're emailing about is the same one whose project you researched this morning. It doesn't connect your pricing strategy to the proposal you drafted last week.
 
-I've been using [Notion's AI features](<https://www.notion.com/product/ai>) for organizing project context, and within the Notion workspace, the AI can pull from connected docs and databases. That helps — inside Notion. But the moment I need to work with files on my desktop, or research something in a browser, or reference an email thread, I'm back to manually stitching context together.
+I've been using [Notion's AI features](https://www.notion.com/product/ai) for organizing project context, and within the Notion workspace, the AI can pull from connected docs and databases. That helps — inside Notion. But the moment I need to work with files on my desktop, or research something in a browser, or reference an email thread, I'm back to manually stitching context together.
 
 The pattern I keep seeing: each tool holds a tiny piece of your working context, but **none of them hold the full picture of how your work connects.** For someone on a team, colleagues fill that gap. They remember the backstory, they carry institutional knowledge, they catch things that fall through cracks.
 
@@ -77,7 +77,7 @@ On a five-person team, if the AI forgets everything, someone else on the team re
 
 When you're the solo founder — doing strategy, content, operations, client management, and finance — **you are the only source of context for everything.** Every time the AI resets, the only person who can reload that context is you. And reloading context is cognitively expensive. It's not just typing — it's mentally reconstructing where you left off, what matters, what the AI needs to know to be useful.
 
-Research from [MIT Sloan](<https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity>) found that AI productivity gains are real but vary enormously depending on how well the tool integrates into existing workflows. The implication that keeps nagging at me: the people who benefit most from AI are the ones who need to do the least setup work per session. And right now, solo founders do the most.
+Research from [MIT Sloan](https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity) found that AI productivity gains are real but vary enormously depending on how well the tool integrates into existing workflows. The implication that keeps nagging at me: the people who benefit most from AI are the ones who need to do the least setup work per session. And right now, solo founders do the most.
 
 I also want to be honest about something. I've heard people say "just keep a running prompt document and paste it in each time." I tried this. I maintained a 2,000-word context file for about three weeks. Updating it became a task in itself, and when I forgot to update one section, the AI gave me advice based on outdated information. I closed that document and didn't open it again.
 
@@ -85,7 +85,7 @@ I also want to be honest about something. I've heard people say "just keep a run
 
 I'm not going to pretend I've found the perfect solution. I haven't. But after experimenting with different setups over the past several months, I've narrowed down what actually matters.
 
-**Does it have access to your working environment?** Not a chat window — your actual files, your browser, your desktop. Tools like [Zapier](<https://zapier.com/workflows>) and [Make](<https://www.make.com/en>) can connect apps and move data between them, but that's automation, not awareness. What you need is an AI that can _see_ what you're working on without you uploading it each time.
+**Does it have access to your working environment?** Not a chat window — your actual files, your browser, your desktop. Tools like [Zapier](https://zapier.com/workflows) and [Make](https://www.make.com/en) can connect apps and move data between them, but that's automation, not awareness. What you need is an AI that can _see_ what you're working on without you uploading it each time.
 
 **Does it learn from your patterns, not just your commands?** There's a meaningful difference between an AI that remembers you like dark mode and an AI that learns your editing tendencies across dozens of documents. The first is a setting. The second is tacit knowledge — the kind of operational instinct that would take a human colleague months to absorb.
 
@@ -105,13 +105,13 @@ Alright, that's today's little discovery. Well — more of a frustration I final
 
 ## Previous Posts：
 
-  * **[What Is a Persistent AI Agent — and Why Does It Matter?](</blog/what-is-persistent-ai-agent>)**
+  * **[What Is a Persistent AI Agent — and Why Does It Matter?](/blog/what-is-persistent-ai-agent)**
 
-  * **[Why AI Forgets Every Session — The Hidden Cost of Stateless AI](</blog/why-ai-forgets-every-session>)**
+  * **[Why AI Forgets Every Session — The Hidden Cost of Stateless AI](/blog/why-ai-forgets-every-session)**
 
-  * **[Workflow Builder vs AI Workspace — What’s the Real Difference?](</blog/workflow-builder-vs-ai-workspace>)**
+  * **[Workflow Builder vs AI Workspace — What’s the Real Difference?](/blog/workflow-builder-vs-ai-workspace)**
 
-  * **[How One-Person Businesses Work Like a Team With AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
+  * **[How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
 
-  * **[What Makes an AI Workflow Actually Work for Solo Founders](</blog/ai-agents-2026-solo-operators>)**
+  * **[What Makes an AI Workflow Actually Work for Solo Founders](/blog/ai-agents-2026-solo-operators)**
 

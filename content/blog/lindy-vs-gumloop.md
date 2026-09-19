@@ -41,19 +41,19 @@ Before comparing them, it helps to understand what each tool is _designed for_ �
 
 ### Lindy — Inbox, Meetings, and Calendar Focus
 
-**[Lindy](<https://www.lindy.ai/>)** is built around the communication layer of work: email, calendar, and meetings. You describe what you need in plain language, and Lindy creates an agent around it. No canvas, no node mapping — just a prompt and a set of connected tools.
+**[Lindy](https://www.lindy.ai/)** is built around the communication layer of work: email, calendar, and meetings. You describe what you need in plain language, and Lindy creates an agent around it. No canvas, no node mapping — just a prompt and a set of connected tools.
 
 **What caught my attention** is how Lindy handles multi-step tasks. Its agents can make decisions mid-flow and hand work off to other agents — so the flow adapts based on what's actually happening, rather than strictly following a pre-defined script. In my test, I set up an email-triage agent in under 10 minutes. That was genuinely faster than I expected.
 
-It's a more guided experience overall. Lindy's templates lean heavily toward inbox, meetings, and calendar scenarios, which makes onboarding quick if those are your pain points. If you're curious about what "agents making decisions mid-flow" actually means under the hood, [Anthropic's documentation on building with Claude](<https://docs.anthropic.com/en/docs/build-with-claude/overview>) offers a useful primer on how LLM-based agents reason and hand off tasks — not specific to Lindy, but it helps frame the concept.
+It's a more guided experience overall. Lindy's templates lean heavily toward inbox, meetings, and calendar scenarios, which makes onboarding quick if those are your pain points. If you're curious about what "agents making decisions mid-flow" actually means under the hood, [Anthropic's documentation on building with Claude](https://docs.anthropic.com/en/docs/build-with-claude/overview) offers a useful primer on how LLM-based agents reason and hand off tasks — not specific to Lindy, but it helps frame the concept.
 
 ![2.png](/blog/images/lindy-vs-gumloop/1773918570051-c76b80d3-eb1b-4abb-94c9-cc46fb13ad68.webp)
 
 ### Gumloop — Workflow Builder, Visual Canvas Focus
 
-**[Gumloop](<https://www.gumloop.com/>)** works differently. It's a no-code AI automation platform where you build custom workflows using a visual, node-based editor — connecting triggers, logic steps, integrations, and AI actions on a canvas.
+**[Gumloop](https://www.gumloop.com/)** works differently. It's a no-code AI automation platform where you build custom workflows using a visual, node-based editor — connecting triggers, logic steps, integrations, and AI actions on a canvas.
 
-The key thing to understand: Gumloop isn't just a fixed-sequence pipeline tool. It supports agent nodes that bring intelligent, adaptive decision-making directly into your structured automation pipelines — so you can embed reasoning _inside_ a workflow you design yourself. The visual canvas lets you see the entire process, edit any part of it, and test in real time. For a closer look at how this works in practice, [Gumloop's official documentation on agent nodes](<https://docs.gumloop.com/core-concepts/agent_node>) lays out the specifics clearly.
+The key thing to understand: Gumloop isn't just a fixed-sequence pipeline tool. It supports agent nodes that bring intelligent, adaptive decision-making directly into your structured automation pipelines — so you can embed reasoning _inside_ a workflow you design yourself. The visual canvas lets you see the entire process, edit any part of it, and test in real time. For a closer look at how this works in practice, [Gumloop's official documentation on agent nodes](https://docs.gumloop.com/core-concepts/agent_node) lays out the specifics clearly.
 
 That said, Gumloop does not guide you toward outcomes or suggest what to build next. You start with a blank canvas, and the platform expects you to think through logic, edge cases, and execution costs. In my test, getting a working pipeline took me closer to 30–40 minutes before it ran cleanly. Not painful — but it asks more from you upfront.
 
@@ -93,7 +93,7 @@ Gumloop is stronger when you need ​**precision, visibility into every step, an
 
 **You need web scraping or browser automation.** The Chrome extension lets you record browser actions, scrape web data, and automate web-based tasks without needing APIs. For anyone dealing with unstructured web data, that's a genuine differentiator.
 
-**You want to see and control exactly what AI does.** Because you can see the entire process on the canvas and edit any part of it in real time, Gumloop rewards the kind of person who likes to understand the logic and refine it over time. If you're newer to workflow thinking, [n8n's documentation on workflow automation patterns](<https://docs.n8n.io/workflows/components/>) is a solid free resource for building that mental model — the concepts transfer well to Gumloop's canvas.
+**You want to see and control exactly what AI does.** Because you can see the entire process on the canvas and edit any part of it in real time, Gumloop rewards the kind of person who likes to understand the logic and refine it over time. If you're newer to workflow thinking, [n8n's documentation on workflow automation patterns](https://docs.n8n.io/workflows/components/) is a solid free resource for building that mental model — the concepts transfer well to Gumloop's canvas.
 
 **You're running ​CRM** ​**​ or sales data workflows.** Gumloop connects with tools like Salesforce, HubSpot, and Apollo. In practice, this means you can build pipelines that pull account data, run AI analysis on it, and push structured outputs back — though how much that actually speeds things up depends on how well you design the flow.
 
@@ -107,7 +107,7 @@ Worth being upfront about the real limitations. Okay, I made this harder than it
 
 **Gumloop's learning curve is real.** The visual canvas is powerful but takes more time to master than simpler chat-based tools — and even though it's no-code, understanding programming logic helps you use it effectively. If you're in a hurry, that blank canvas can feel more like a burden than a feature.
 
-**Neither is a complete out-of-the-box solution for complex customer-facing AI.** If you're building something like a full support automation system, you'll likely need to combine these with other tools or do meaningful custom configuration work. The [MIT Technology Review's AI coverage](<https://www.technologyreview.com/topic/artificial-intelligence/>) is worth bookmarking here — it tracks where the overall AI tooling landscape is heading, which matters if you're building workflows meant to last.
+**Neither is a complete out-of-the-box solution for complex customer-facing AI.** If you're building something like a full support automation system, you'll likely need to combine these with other tools or do meaningful custom configuration work. The [MIT Technology Review's AI coverage](https://www.technologyreview.com/topic/artificial-intelligence/) is worth bookmarking here — it tracks where the overall AI tooling landscape is heading, which matters if you're building workflows meant to last.
 
 ## How to Decide Based on Your Actual Workflow
 

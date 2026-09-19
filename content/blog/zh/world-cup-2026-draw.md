@@ -26,7 +26,7 @@ draft: false
 
 截至 2026 年 7 月 8 日，抽签结果已经出炉，小组阶段图景也从预测进入了分析阶段。本页汇总 2026 世界杯完整抽签结果、讲解每个小组的关键对阵、点出墨西哥、加拿大与美国三个东道主各自的处境，并把抽签与 2026 世界杯分组积分主页、2026 世界杯淘汰赛对阵跟踪器衔接起来。
 
-**来源说明：**分组归属与赛事引用，发布前请对照[国际足联 2026 世界杯官方主页](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)核实。抽签后想看实时名次变动，请用 2026 世界杯分组与积分页面。
+**来源说明：**分组归属与赛事引用，发布前请对照[国际足联 2026 世界杯官方主页](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)核实。抽签后想看实时名次变动，请用 2026 世界杯分组与积分页面。
 
 ## 2026 世界杯抽签是怎么运作的
 
@@ -43,7 +43,7 @@ draft: false
 
 ## A 组：墨西哥、南非、韩国、捷克
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 A 组给了墨西哥一个机会明确、压力也真实的东道主小组。关键战是墨西哥 vs 韩国——因为韩国的世界杯经验足以在墨西哥慢热时打乱东道主的节奏。南非 vs 韩国同样重要：它决定了墨西哥身后的竞争格局，也构成主要的次席压力点。
 
@@ -51,7 +51,7 @@ A 组给了墨西哥一个机会明确、压力也真实的东道主小组。关
 
 ## B 组：瑞士、加拿大、波黑、卡塔尔
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 B 组是最均衡的「东道主周边」小组之一：加拿大有现实的出线路径，却没有轻松的安全垫。关键战是瑞士 vs 加拿大。瑞士以最稳健的欧洲球队身份进入本组，加拿大则要么在这一战拿分，要么靠小组其余比赛的净胜球优势。
 
@@ -59,7 +59,7 @@ B 组是最均衡的「东道主周边」小组之一：加拿大有现实的出
 
 ## C 组：巴西、摩洛哥、苏格兰、海地
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 C 组的焦点立刻落在巴西 vs 摩洛哥。巴西是小组里上限最高的球队，但摩洛哥近几届大赛的成色让这场揭幕战或直接对话远不止走过场。这场球是对巴西的清晰试金石：是掌控小组，还是陷入净胜球苦战。
 
@@ -67,7 +67,7 @@ C 组的焦点立刻落在巴西 vs 摩洛哥。巴西是小组里上限最高�
 
 ## D 组：美国、土耳其、澳大利亚、巴拉圭
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 D 组是美国读者最关心的抽签结果。美国与土耳其、澳大利亚、巴拉圭同组——一个没有明显软柿子、风格多元的小组：土耳其的技术波动、澳大利亚的身体纪律、巴拉圭的防守硬度。想看更针对美国男足（USMNT）的分析，可阅读 USA 2026 世界杯小组指南。
 
@@ -77,7 +77,7 @@ D 组是美国读者最关心的抽签结果。美国与土耳其、澳大利亚
 
 ## E 组：德国、科特迪瓦、厄瓜多尔、库拉索
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 E 组看起来是德国占尽名气与上限的小组，但次席之争可能很快变得难受。关键战是厄瓜多尔 vs 德国——厄瓜多尔的强度与转换进攻威胁，正是那种能在淘汰赛前就暴露热门的打法类型。
 
@@ -85,7 +85,7 @@ E 组看起来是德国占尽名气与上限的小组，但次席之争可能很
 
 ## F 组：荷兰、日本、瑞典、突尼斯
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 F 组是战术上最有意思的抽签之一。荷兰拥有最强的顶层成色，但日本和瑞典让这个小组从第一刻起就带着「淘汰赛级别」的味道。关键战是日本 vs 瑞典——它看起来最可能决定本组是两支还是三支球队出线。
 
@@ -93,7 +93,7 @@ F 组是战术上最有意思的抽签之一。荷兰拥有最强的顶层成色
 
 ## G 组：比利时、埃及、伊朗、新西兰
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 G 组围绕比利时展开：他们要控制一个身后分差很窄的小组。关键战是埃及 vs 伊朗——它决定了比利时身后出线名额的争夺，也左右本组会不会变成一场平局频出的生存战。
 
@@ -101,7 +101,7 @@ G 组围绕比利时展开：他们要控制一个身后分差很窄的小组。
 
 ## H 组：西班牙、佛得角、乌拉圭、沙特阿拉伯
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 H 组让西班牙占据头版，但抽签之所以耐人寻味，是因为西班牙身后的争夺没有一个显而易见的答案。关键战是乌拉圭 vs 西班牙——乌拉圭需要一场有分量的结果去争头名，西班牙则需要这场球来证明本组不会变成一场身体消耗战。
 
@@ -109,7 +109,7 @@ H 组让西班牙占据头版，但抽签之所以耐人寻味，是因为西班
 
 ## I 组：法国、挪威、塞内加尔、伊拉克
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 I 组同时拥有最明确的头号热门，和最艰难的次席之争。法国是毫无争议的小组热门，但挪威和塞内加尔在法国身后构成了一场高上限的竞逐。关键战是挪威 vs 塞内加尔——在任何第三名计算开始前，它看起来就是直接的出线咽喉。
 
@@ -117,7 +117,7 @@ I 组同时拥有最明确的头号热门，和最艰难的次席之争。法国
 
 ## J 组：阿根廷、奥地利、阿尔及利亚、约旦
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 J 组给了阿根廷一个「头名是预期、却非程序性保证」的小组。关键战是阿尔及利亚 vs 奥地利——它是最直接的次席压力点，也可能决定「走第三名路线」够不够用。
 
@@ -125,7 +125,7 @@ J 组给了阿根廷一个「头名是预期、却非程序性保证」的小组
 
 ## K 组：哥伦比亚、葡萄牙、刚果（金）、乌兹别克斯坦
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 K 组在名气与路径代价上，拥有最强的「死亡之组」论据。哥伦比亚 vs 葡萄牙是关键战——它决定了大概率的小组头名，并影响首场淘汰赛的对位。两者战平或小胜，都可能把小组其余比赛全部拖进净胜球比拼。
 
@@ -133,7 +133,7 @@ K 组在名气与路径代价上，拥有最强的「死亡之组」论据。哥
 
 ## L 组：英格兰、克罗地亚、加纳、巴拿马
 
-> 来源：[FIFA 官方抽签](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> 来源：[FIFA 官方抽签](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 L 组的中心是英格兰 vs 克罗地亚。英格兰拥有最强的小组头名成色，但克罗地亚的大赛经验让这场直接对话成为定义小组的当然之战。英格兰赢，小组豁然开朗；克罗地亚拿走分数，末轮就会复杂得多。
 

@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Long time no see. I'm Nova. I was in the middle of a client deliverable when [Andrej Karpathy post about LLM knowledge bases](<https://x.com/karpathy/status/2039805659525644595>) hit 1.2 million views. I read it, felt that familiar pull — _oh, this is interesting_ — and spent about twenty minutes genuinely wondering whether I should drop what I was doing and rebuild my research setup.
+Long time no see. I'm Nova. I was in the middle of a client deliverable when [Andrej Karpathy post about LLM knowledge bases](https://x.com/karpathy/status/2039805659525644595) hit 1.2 million views. I read it, felt that familiar pull — _oh, this is interesting_ — and spent about twenty minutes genuinely wondering whether I should drop what I was doing and rebuild my research setup.
 
 I didn't. And I've been thinking about why.
 
@@ -27,7 +27,7 @@ Karpathy's version has grown to roughly 100 articles and 400,000 words on a sing
 
 Your Notion workspace is a place _you_ write things down. An **LLM​ knowledge base** is a place _the model_ writes and maintains things, based on raw material you drop in. The key difference is who does the synthesis work.
 
-A PKM system like [Obsidian](<https://obsidian.md/>) (which Karpathy uses as the reading layer) requires you to connect ideas and revisit notes. The **LLM​ knowledge base** removes most of that manual layer — the AI creates backlinks, writes concept summaries, and runs "health checks" to find gaps.
+A PKM system like [Obsidian](https://obsidian.md/) (which Karpathy uses as the reading layer) requires you to connect ideas and revisit notes. The **LLM​ knowledge base** removes most of that manual layer — the AI creates backlinks, writes concept summaries, and runs "health checks" to find gaps.
 
 ![2.png](/blog/images/llm-knowledge-base-solo-operators/1775455707565-08650822-8d2b-4773-88fc-07878e8657e1.webp)
 
@@ -39,7 +39,7 @@ He's also, you know, a former OpenAI co-founder and Tesla AI director who probab
 
 ## The Appeal: Why Solo Operators Are Drawn to This Idea
 
-I get it. The core promise of an[ LLM knowledge base](<https://github.com/alanshlam/LLM>) is AI that compounds your knowledge over time. Instead of starting every conversation cold — re-explaining your client context, your niche, your past decisions — the system already knows.
+I get it. The core promise of an[ LLM knowledge base](https://github.com/alanshlam/LLM) is AI that compounds your knowledge over time. Instead of starting every conversation cold — re-explaining your client context, your niche, your past decisions — the system already knows.
 
 ### The Promise of AI That Compounds Your Knowledge Over Time
 
@@ -59,7 +59,7 @@ Getting a minimal version working — consistent ingestion pipeline, a reliable 
 
 But the setup isn't the hard part. **Curation is the ongoing tax.**
 
-For the wiki to stay useful, you have to keep feeding it quality material. That means deciding what goes in, what doesn't, when to prune, when to re-run compilation. That decision-making overhead becomes its own workflow — what people in productivity circles call a "second job." The [Building a Second Brain](<https://www.buildingasecondbrain.com/>) community has documented this failure mode for years with simpler note-taking systems. An AI-compiled wiki doesn't automatically make that problem disappear.
+For the wiki to stay useful, you have to keep feeding it quality material. That means deciding what goes in, what doesn't, when to prune, when to re-run compilation. That decision-making overhead becomes its own workflow — what people in productivity circles call a "second job." The [Building a Second Brain](https://www.buildingasecondbrain.com/) community has documented this failure mode for years with simpler note-taking systems. An AI-compiled wiki doesn't automatically make that problem disappear.
 
 ![3.png](/blog/images/llm-knowledge-base-solo-operators/1775455769712-5be6439d-de06-42cb-9a29-2d508868522c.webp)
 
@@ -99,7 +99,7 @@ Let me be fair here, because there are real cases where this makes sense.
 
 If your work requires synthesizing a _large and growing body of domain-specific material_ over many months — academic research, investigative journalism, highly specialized consulting, building a content business around a narrow vertical — then an **llm​ knowledge base** starts to pay off. The break-even point is probably somewhere around "I am regularly frustrated that I can't efficiently query my own accumulated research."
 
-If that's you, the [DAIR.AI](<http://DAIR.AI>)[ breakdown of the Karpathy architecture](<https://academy.dair.ai/blog/llm-knowledge-bases-karpathy>) is a solid technical starting point. If you're not sure that's you, it probably isn't.
+If that's you, the [DAIR.AI](http://DAIR.AI)[ breakdown of the Karpathy architecture](https://academy.dair.ai/blog/llm-knowledge-bases-karpathy) is a solid technical starting point. If you're not sure that's you, it probably isn't.
 
 ## Decision Framework: Build It, Use a Ready Workspace, or Skip Entirely
 
@@ -131,13 +131,13 @@ See you next time.
 
 ## Previous Posts:
 
-  * **[Understand whether building custom AI systems actually makes sense for your workflow](</blog/custom-ai-agent-development>)**
+  * **[Understand whether building custom AI systems actually makes sense for your workflow](/blog/custom-ai-agent-development)**
 
-  * **[Learn how AI agents work before deciding to build your own knowledge system](</blog/how-to-build-an-ai-agent>)**
+  * **[Learn how AI agents work before deciding to build your own knowledge system](/blog/how-to-build-an-ai-agent)**
 
-  * **[Explore real AI agent use cases to see where knowledge systems actually add value](</blog/ai-agent-use-cases-real-examples>)**
+  * **[Explore real AI agent use cases to see where knowledge systems actually add value](/blog/ai-agent-use-cases-real-examples)**
 
-  * **[See how solo operators use AI tools to execute work instead of just storing knowledge](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
+  * **[See how solo operators use AI tools to execute work instead of just storing knowledge](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
 
-  * **[Understand the difference between AI workspaces and traditional workflow tools](</blog/workflow-builder-vs-ai-workspace>)**
+  * **[Understand the difference between AI workspaces and traditional workflow tools](/blog/workflow-builder-vs-ai-workspace)**
 

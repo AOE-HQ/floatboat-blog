@@ -39,7 +39,7 @@ draft: false
 
 这类工具主要为**构建** Agent 而设计——拖拽式可视化搭建器、提示词配置界面、预制模板。这一类的例子有 Relevance AI、Gumloop，以及 n8n 这类叠了 AI Agent 节点的工具。
 
-**最适合：** 想不写代码就快速做出原型、且 Agent 不需要对接高度定制内部系统的人。代价通常出在深度上——你建得快，但复杂的分支逻辑会变得很别扭。比如 Relevance AI 允许你用自然语言描述 Agent 的用途，并推荐匹配的积木块。这对起步确实有用。我查过它的[文档与定价档位](<https://relevanceai.com/blog/how-to-build-an-ai-agent-a-comprehensive-guide-for-2025>)——免费档对实验来说够用，付费档按 Agent 运行次数计费。
+**最适合：** 想不写代码就快速做出原型、且 Agent 不需要对接高度定制内部系统的人。代价通常出在深度上——你建得快，但复杂的分支逻辑会变得很别扭。比如 Relevance AI 允许你用自然语言描述 Agent 的用途，并推荐匹配的积木块。这对起步确实有用。我查过它的[文档与定价档位](https://relevanceai.com/blog/how-to-build-an-ai-agent-a-comprehensive-guide-for-2025)——免费档对实验来说够用，付费档按 Agent 运行次数计费。
 
 ### 部署平台（Deployment Platforms）
 
@@ -57,7 +57,7 @@ Zapier、Make、n8n 都从纯自动化工具起家，后来补上了 AI Agent �
 
 ### 工作区（Workspaces）
 
-这是一个被低估的品类。[Claude.ai](<http://Claude.ai>)（带 Projects）、带自定义 GPT 的 ChatGPT、Notion AI——它们传统上不叫"Agent 平台"，但对很大比例的真正用例来说，它们发挥的就是平台的作用。你给模型上下文、人设和某些信息的访问权，它就在那个上下文范围内执行任务。
+这是一个被低估的品类。[Claude.ai](http://Claude.ai)（带 Projects）、带自定义 GPT 的 ChatGPT、Notion AI——它们传统上不叫"Agent 平台"，但对很大比例的真正用例来说，它们发挥的就是平台的作用。你给模型上下文、人设和某些信息的访问权，它就在那个上下文范围内执行任务。
 
 对单人经营者来说，**一个配置良好的工作区，常常胜过专用平台上建到一半的 Agent。** 维护成本更低、更容易迭代、也没有可断掉的集成点。代价是：工作区通常不擅长自动触发，也不擅长在外部系统里采取行动——除非再搭一些管道。
 
@@ -75,7 +75,7 @@ Zapier、Make、n8n 都从纯自动化工具起家，后来补上了 AI Agent �
 
 Agent 如何跨任务持有和使用信息？无状态 Agent 应付孤立任务没问题。但凡是涉及持续工作的场景——客户关系、多天项目、知识积累——你都必须确切理解上下文是怎么存储、怎么取回的。
 
-Anthropic 关于[构建高效 Agent 的研究](<https://www.anthropic.com/research/building-effective-agents>)值得一读。它的核心观点是：复杂度只应该在"能明显改善结果"时添加。更多的上下文处理 = 更多复杂度 = 更多可能出错的地方。
+Anthropic 关于[构建高效 Agent 的研究](https://www.anthropic.com/research/building-effective-agents)值得一读。它的核心观点是：复杂度只应该在"能明显改善结果"时添加。更多的上下文处理 = 更多复杂度 = 更多可能出错的地方。
 
 ![f8.png](/blog/images/best-ai-agent-platform-2026/1778827221125-7d93811d-4cff-474f-8102-922af255a1ce.webp)
 
@@ -89,7 +89,7 @@ Anthropic 关于[构建高效 Agent 的研究](<https://www.anthropic.com/resear
 
 与可控性相关，但更微妙。平台是否便于在 Agent 采取某些行动前要求人工审批？凡是碰到对外沟通或真实数据的动作，我都希望工作流里有一个"先让我过目再发出去"的步骤。
 
-Anthropic 在 2025 年底发布了一个关于 [Agent Skills 跨平台可移植性](<https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills>)的开放标准——这也关系到监督层如何模块化设计，而不是焊死在某一个专有系统里。如果你想构建能长久存续的东西，值得一读。
+Anthropic 在 2025 年底发布了一个关于 [Agent Skills 跨平台可移植性](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)的开放标准——这也关系到监督层如何模块化设计，而不是焊死在某一个专有系统里。如果你想构建能长久存续的东西，值得一读。
 
 ### 可迁移性（Portability）
 
@@ -105,7 +105,7 @@ Anthropic 在 2025 年底发布了一个关于 [Agent Skills 跨平台可移植�
 
 我的实用法则：**先从工作区开始，一直用到你撞上一堵具体的墙。** 那堵墙通常是："我需要它在我没打开它的时候运行"或"我需要它更新某个外部系统"。撞上之后，你就确切知道平台要补的缺口是什么了——这让整个评估聚焦得多。你不是在一百个功能之间比来比去，你只问一件事：某一个具体能力在你的技术栈里能不能可靠地工作。
 
-[n8n](<https://n8n.io/>) 关于 AI Agent 工作流的文档，对理解"自动化平台的终点"和"真正 Agent 行为的起点"很有帮助——尤其当你想搞清楚你的用例到底站在那条线的哪一边。
+[n8n](https://n8n.io/) 关于 AI Agent 工作流的文档，对理解"自动化平台的终点"和"真正 Agent 行为的起点"很有帮助——尤其当你想搞清楚你的用例到底站在那条线的哪一边。
 
 ![f9.png](/blog/images/best-ai-agent-platform-2026/1778827234187-98ab1350-cf42-4fa4-be1f-2f62095857a7.webp)
 
@@ -117,7 +117,7 @@ Anthropic 在 2025 年底发布了一个关于 [Agent Skills 跨平台可移植�
 
 如果准确率 80% 以上、可靠性稳定、每周维护低于 30 分钟——那大概值得留下。如果三样里有一样不达标，它会告诉你问题出在平台、Agent 设计、还是任务本身。
 
-[Gartner 关于低代码采用的研究](<https://www.gartner.com/en/documents/6641334>)预计，超过 70% 的新企业应用将使用低代码或无代码技术——AI Agent 搭建器正是这股浪潮里增长最快的细分之一。但采用率不会告诉你哪个平台适合你的处境。那仍然要靠拿真实工作流去测试。
+[Gartner 关于低代码采用的研究](https://www.gartner.com/en/documents/6641334)预计，超过 70% 的新企业应用将使用低代码或无代码技术——AI Agent 搭建器正是这股浪潮里增长最快的细分之一。但采用率不会告诉你哪个平台适合你的处境。那仍然要靠拿真实工作流去测试。
 
 我到现在还在积极测试不同的选项。老实说，这个领域跑得太快，我对具体平台说的一切，可能几个月内就过时。我更确信的是那套框架——无论当下哪个工具正火，那五个评估维度都站得住。
 
@@ -125,13 +125,13 @@ Anthropic 在 2025 年底发布了一个关于 [Agent Skills 跨平台可移植�
 
 ## 系列前文
 
-  * Agent 新手？从这里开始：为什么多数单人经营者该先跑简单工作流、再建复杂系统 → [单人创始人的 AI 工作流](</blog/ai-workflow-for-solo-founders>)
+  * Agent 新手？从这里开始：为什么多数单人经营者该先跑简单工作流、再建复杂系统 → [单人创始人的 AI 工作流](/blog/ai-workflow-for-solo-founders)
 
-  * 还在提示词、自动化和完整工作区之间犹豫？这篇把取舍讲得很清楚 → [工作区 Agent vs 工作流搭建器](</blog/workspace-agents-vs-workflow-builders>)
+  * 还在提示词、自动化和完整工作区之间犹豫？这篇把取舍讲得很清楚 → [工作区 Agent vs 工作流搭建器](/blog/workspace-agents-vs-workflow-builders)
 
-  * 做 Agent 最大的错误是太早自动化太多——这篇讲单人经营者如何真正规模化 AI 工作流 → [AI Agent 工作流与 Vibe Coding](</blog/ai-agent-workflow-vibe-coding>)
+  * 做 Agent 最大的错误是太早自动化太多——这篇讲单人经营者如何真正规模化 AI 工作流 → [AI Agent 工作流与 Vibe Coding](/blog/ai-agent-workflow-vibe-coding)
 
-  * 选工具之前，先理解"AI Agent"在实践中到底是什么——以及它们会在哪里悄悄失灵 → [给单人经营者讲清楚 AI Agent 工具](</blog/ai-agent-solo-operators>)
+  * 选工具之前，先理解"AI Agent"在实践中到底是什么——以及它们会在哪里悄悄失灵 → [给单人经营者讲清楚 AI Agent 工具](/blog/ai-agent-solo-operators)
 
-  * 如果你的工作流已经横跨浏览器标签页、文档和本地文件，这篇深入讲为什么工作区 Agent 正在成为下一层 → [单人经营者的 AI 工作区 Agent](</blog/ai-workspace-agents>)
+  * 如果你的工作流已经横跨浏览器标签页、文档和本地文件，这篇深入讲为什么工作区 Agent 正在成为下一层 → [单人经营者的 AI 工作区 Agent](/blog/ai-workspace-agents)
 

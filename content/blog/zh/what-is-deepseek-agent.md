@@ -22,7 +22,7 @@ draft: false
 
 ## 1\. 为什么"DeepSeek Agent"是一个值得搞清的搜索词
 
-2026 年 4 月 24 日 DeepSeek 发布 V4 Pro 与 V4 Flash 的三个月后，公司开了一个叫 awesome-deepseek-agent 的 GitHub 仓库。里面是 22 种不同工具的配置指南——终端编程助手、IDE 扩展、聊天平台机器人、桌面客户端——全部配置成以 DeepSeek 的 V4 模型作后端。据[官方 awesome-deepseek-agent 仓库](<https://github.com/deepseek-ai/awesome-deepseek-agent>)追踪，该仓库头三个月攒了约 4,700 个 star。
+2026 年 4 月 24 日 DeepSeek 发布 V4 Pro 与 V4 Flash 的三个月后，公司开了一个叫 awesome-deepseek-agent 的 GitHub 仓库。里面是 22 种不同工具的配置指南——终端编程助手、IDE 扩展、聊天平台机器人、桌面客户端——全部配置成以 DeepSeek 的 V4 模型作后端。据[官方 awesome-deepseek-agent 仓库](https://github.com/deepseek-ai/awesome-deepseek-agent)追踪，该仓库头三个月攒了约 4,700 个 star。
 
 这个仓库不是一次产品发布，而是一个信号。DeepSeek 在告诉开发者：我们的模型准备好承担 agentic 工作负载了——这里是把你已经在用的工具指向它们的方法。
 
@@ -38,7 +38,7 @@ DeepSeek Agent 指任何以 DeepSeek 模型作为主推理引擎的 AI Agent—�
 
 当 Claude Code 被配置成把 API 调用指向 `https://api.deepseek.com/anthropic`、以 `deepseek-v4-pro` 为模型时，Claude Code 在那个 session 期间就变成了一个 DeepSeek Agent。当开发者在自己终端里运行 `deepseek-tui`、让它拉起的 V4 Pro 协调者把工作扇出给 16 个并行 V4 Flash 子 Agent 时，那套配置同样是一个 DeepSeek Agent——但架构、工具面与目标用户完全不同。
 
-共同主线是模型。DeepSeek V4 Pro 与 V4 Flash 都提供 100 万 token 的上下文窗口、支持最多 128 个并行函数调用，并为流行的 agent 宿主框架预置了调好的适配器——详见 [DeepSeek 的编程 Agent 集成指南](<https://api-docs.deepseek.com/guides/coding_agents>)。这些能力让 DeepSeek 有资格在 agentic 工作流中充当核心推理引擎——而在过去，这类工作流只有在昂贵得多的闭源模型上才实际可行。
+共同主线是模型。DeepSeek V4 Pro 与 V4 Flash 都提供 100 万 token 的上下文窗口、支持最多 128 个并行函数调用，并为流行的 agent 宿主框架预置了调好的适配器——详见 [DeepSeek 的编程 Agent 集成指南](https://api-docs.deepseek.com/guides/coding_agents)。这些能力让 DeepSeek 有资格在 agentic 工作流中充当核心推理引擎——而在过去，这类工作流只有在昂贵得多的闭源模型上才实际可行。
 
 ## 2.2 DeepSeek Agent 的四种原型
 
@@ -48,9 +48,9 @@ DeepSeek Agent 指任何以 DeepSeek 模型作为主推理引擎的 AI Agent—�
 
 这套分类不是纸上谈兵。它直接对应你选择 DeepSeek Agent 时要做的那些决定：你需要的工具是不是编程专用的、你想不想留在现有宿主框架内、以及你需要的是可视化界面还是命令行环境。
 
-原生 CLI Agent 在架构上最有趣，因为它们是从零开始围绕 V4 的特定能力构建的。以 DeepSeek-TUI 为例：它实现了递归语言模型（Recursive Language Model，RLM）扇出——一种由单个 V4 Pro 协调者拉起最多 16 个并行 V4 Flash 子 Agent、各负责任务一部分、再合并结果的模式。按 V4 Flash [每百万输入 token 0.14 美元、每百万输出 token 0.28 美元](<https://api-docs.deepseek.com/quick_start/pricing>)的定价，跑 16 个并行子 Agent 的成本还低于一次 Claude Opus 调用。这不是一个优化，而是 DeepSeek 定价催生的架构级转变。
+原生 CLI Agent 在架构上最有趣，因为它们是从零开始围绕 V4 的特定能力构建的。以 DeepSeek-TUI 为例：它实现了递归语言模型（Recursive Language Model，RLM）扇出——一种由单个 V4 Pro 协调者拉起最多 16 个并行 V4 Flash 子 Agent、各负责任务一部分、再合并结果的模式。按 V4 Flash [每百万输入 token 0.14 美元、每百万输出 token 0.28 美元](https://api-docs.deepseek.com/quick_start/pricing)的定价，跑 16 个并行子 Agent 的成本还低于一次 Claude Opus 调用。这不是一个优化，而是 DeepSeek 定价催生的架构级转变。
 
-Reasonix 走了另一条路。它围绕 DeepSeek 的 KV 缓存架构构建自己的 agent 循环：维持长时间运行的 session，让重复的上下文以[每百万 token 0.003625 美元、而非 0.435 美元](<https://api-docs.deepseek.com/quick_start/pricing>)的缓存命中价供给。对动辄跨几小时、累积数千 token 对话历史的编程 session 来说，这个缓存命中折扣会改变"什么内容值得留在内存里"这件事的经济账。
+Reasonix 走了另一条路。它围绕 DeepSeek 的 KV 缓存架构构建自己的 agent 循环：维持长时间运行的 session，让重复的上下文以[每百万 token 0.003625 美元、而非 0.435 美元](https://api-docs.deepseek.com/quick_start/pricing)的缓存命中价供给。对动辄跨几小时、累积数千 token 对话历史的编程 session 来说，这个缓存命中折扣会改变"什么内容值得留在内存里"这件事的经济账。
 
 ## 2.3 它不是什么
 
@@ -80,13 +80,13 @@ DeepSeek-TUI 引人注目的不是功能清单，而是一个事实：它由一�
 
 如果你已经在用 Claude Code、Cline、OpenCode、Codex，或任何讲 OpenAI 或 Anthropic API 格式的 Agent 宿主框架，加 DeepSeek 支持通常只是一行配置的改动。
 
-对 OpenAI 兼容的宿主框架，你把 base URL 改成 `https://api.deepseek.com`、模型名改成 `deepseek-v4-pro` 或 `deepseek-v4-flash`。对 Claude Code 这类 Anthropic 兼容的宿主框架，你把 `ANTHROPIC_BASE_URL` 环境变量指向 `https://api.deepseek.com/anthropic`——详见 [DeepSeek 的 Agent 集成文档](<https://api-docs.deepseek.com/guides/coding_agents>)。如果你想要一份用这套配置写 agent 循环的分步教程，[如何构建 DeepSeek Agent](</blog/how-to-build-deepseek-agent>) 用可运行代码覆盖了 API 配置、工具调用与生产模式。
+对 OpenAI 兼容的宿主框架，你把 base URL 改成 `https://api.deepseek.com`、模型名改成 `deepseek-v4-pro` 或 `deepseek-v4-flash`。对 Claude Code 这类 Anthropic 兼容的宿主框架，你把 `ANTHROPIC_BASE_URL` 环境变量指向 `https://api.deepseek.com/anthropic`——详见 [DeepSeek 的 Agent 集成文档](https://api-docs.deepseek.com/guides/coding_agents)。如果你想要一份用这套配置写 agent 循环的分步教程，[如何构建 DeepSeek Agent](/blog/how-to-build-deepseek-agent) 用可运行代码覆盖了 API 配置、工具调用与生产模式。
 
 这条路有一个明显优势：工作流层面的切换成本为零。你对 Claude Code `/compact`、Cline 的 plan-act-approve 循环、或 OpenCode diff 审核流程的肌肉记忆原样保留。变的只是生成回答的模型——以及你的 API 账单。
 
 劣势同样明显：这些宿主框架是围绕它们原生模型的能力设计的（Claude Code 围绕 Claude Opus，Codex 围绕 GPT-4o）。它们吃到 DeepSeek 低成本的红利，却没法充分利用 V4 专属的特性。例如 DeepSeek-TUI 的 RLM 扇出模式，要求宿主框架理解"V4 Flash 便宜到可以并行跑 16 份做子任务"——通用宿主框架不会做这个设计决策，因为在 Opus 或 GPT-4o 的定价下那样做在经济上不合理。
 
-实践中，许多团队在采用混合做法：继续把 Claude Code 或 Cline 当主界面，把例行任务路由给 V4 Flash 以压低成本，只在最难的那些架构决策上才升级到宿主框架的原生模型（Claude Opus 或 GPT-5.5）。DeepSeek 的 Anthropic 兼容端点让这种模式实现起来毫无成本——同一个 API 面，只是模型字符串不同。两种做法的成本与基准完整对比，见 [DeepSeek Agent vs Claude Code](</blog/deepseek-agent-vs-claude-code>)，它按任务类型拆解了取舍。
+实践中，许多团队在采用混合做法：继续把 Claude Code 或 Cline 当主界面，把例行任务路由给 V4 Flash 以压低成本，只在最难的那些架构决策上才升级到宿主框架的原生模型（Claude Opus 或 GPT-5.5）。DeepSeek 的 Anthropic 兼容端点让这种模式实现起来毫无成本——同一个 API 面，只是模型字符串不同。两种做法的成本与基准完整对比，见 [DeepSeek Agent vs Claude Code](/blog/deepseek-agent-vs-claude-code)，它按任务类型拆解了取舍。
 
 2026 年年中的开发者讨论里浮现出一条实用经验法则：如果任务涉及样板实现、单文件修改或直截了当的调试，就经你现有的宿主框架路由给 DeepSeek V4；如果任务需要跨多个相互依赖模块、仓库级架构推理，那么前沿闭源模型的边际智能增益仍值那个价——至少目前是这样。
 
@@ -100,7 +100,7 @@ DeepSeek-TUI 引人注目的不是功能清单，而是一个事实：它由一�
 
 **桌面编排器**（如 Cherry Studio、LobeHub）提供基于 GUI 的 Agent 客户端，支持多模型路由、聊天历史管理与可视化工具配置。它们是 ChatGPT 桌面 App 的 DeepSeek Agent 等价物——为那些想要 agentic 能力、但既不想写代码也不想背 CLI 命令的用户设计。WorkBuddy/CodeBuddy 加上了工作区感知的特性：索引本地项目文件，让 Agent 通过桌面界面而非终端在它们上面操作。
 
-在这个类别能力更强的一端，[Floatboat DeepSeek Agent](<https://deepseek-agent.com>) 这类工具围绕模型打包了一整套工作站：无需上传即可访问本地文件、Agent 可驱动的内置浏览器、跨 session 存活的持久记忆，以及无需提示就能跑起来的定时自动化。模型保持不变——V4 Pro 或 V4 Flash——但在聊天窗口里问它问题，与给它一个它能真正行动的桌面，两者之间的差别就是"建议"与"成品"之间的差别。
+在这个类别能力更强的一端，[Floatboat DeepSeek Agent](https://deepseek-agent.com) 这类工具围绕模型打包了一整套工作站：无需上传即可访问本地文件、Agent 可驱动的内置浏览器、跨 session 存活的持久记忆，以及无需提示就能跑起来的定时自动化。模型保持不变——V4 Pro 或 V4 Flash——但在聊天窗口里问它问题，与给它一个它能真正行动的桌面，两者之间的差别就是"建议"与"成品"之间的差别。
 
 这两种原型服务的是一个终端型工具基本忽略的人群：需要 agentic 协助、但工作流不以代码编辑器为中心的团队成员。一位产品经理让 AstrBot 总结本周的工程提交，用的是 DeepSeek Agent——正如开发者跑 DeepSeek-TUI 重构一个 Rust crate 一样。
 
@@ -122,7 +122,7 @@ DeepSeek-TUI 引人注目的不是功能清单，而是一个事实：它由一�
 
 ## 7\. 官方 DeepSeek Agent：我们知道什么
 
-DeepSeek 目前正为两个岗位招人，这暗示官方 Agent 产品正在开发中：Agent Harness 产品经理和 Agent Harness 研发工程师。研发岗的职位描述列出的具体技术要求，几乎一条条对应社区自建 deepseek-tui 已经实现的东西：上下文管理、工具调用、文件 I/O、终端执行、测试反馈集成——见[对 Harness 岗位的技术深挖](<https://dlcmh.github.io/deepseek-harness>)。
+DeepSeek 目前正为两个岗位招人，这暗示官方 Agent 产品正在开发中：Agent Harness 产品经理和 Agent Harness 研发工程师。研发岗的职位描述列出的具体技术要求，几乎一条条对应社区自建 deepseek-tui 已经实现的东西：上下文管理、工具调用、文件 I/O、终端执行、测试反馈集成——见[对 Harness 岗位的技术深挖](https://dlcmh.github.io/deepseek-harness)。
 
 这些岗位的存在并不能告诉我们官方 DeepSeek Agent 何时发布，但它确实告诉我们它会是什么样。职位描述说的是一个桌面 Agent 产品——不是终端工具，不是聊天插件，而是一个 Claude Code 桌面 App 或 Cursor IDE 那个路数的完整桌面应用。它很可能先是一个编程 Agent，其它模态（研究、数据分析、通用任务执行）再随时间加上。
 
@@ -134,5 +134,5 @@ DeepSeek 目前正为两个岗位招人，这暗示官方 Agent 产品正在开�
 
 贯穿其中的主线是经济性。DeepSeek V4 Pro 每百万输出 token 约 0.87 美元，而 Claude Opus 4.8 是 25 美元——仅输出一项就有约 28 倍的差距。这个成本差改变了"自动化什么才划算"的算盘。那些在 Opus 定价下跑 Agent 在经济上不合理的任务——扇出到 16 个并行子 Agent、带完整上下文维持跨数小时的编程 session、单任务跑几百个 agent 回合——到了 V4 Flash 定价下不但成为可能，而且成为明摆着的选择。
 
-生态还很早期。官方 DeepSeek Agent 还不存在。社区工具迭代快、文档参差。但方向很清楚：DeepSeek 的模型是为 agentic 工作负载设计的，围绕它们的工具生态，成熟速度超过了近年来任何开源权重模型的配套生态。当你准备好深入每一款 Agent 背后那层技术——工具定义、strict mode、并行执行——[DeepSeek Agent 函数调用](</blog/deepseek-agent-function-calling>) 覆盖了从 schema 设计到 MCP 的完整工具调用栈。
+生态还很早期。官方 DeepSeek Agent 还不存在。社区工具迭代快、文档参差。但方向很清楚：DeepSeek 的模型是为 agentic 工作负载设计的，围绕它们的工具生态，成熟速度超过了近年来任何开源权重模型的配套生态。当你准备好深入每一款 Agent 背后那层技术——工具定义、strict mode、并行执行——[DeepSeek Agent 函数调用](/blog/deepseek-agent-function-calling) 覆盖了从 schema 设计到 MCP 的完整工具调用栈。
 

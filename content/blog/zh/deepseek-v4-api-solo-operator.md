@@ -29,7 +29,7 @@ DeepSeek V4 是 V3.2 的继任者——V3.2 是目前同时驱动 `deepseek-chat
 
 已发表的研究资料记录了三个架构创新：
 
-**Engram 条件记忆（Engram conditional memory）**是最有意思的一个。传统基于 Transformer 的 LLM 把所有学到的知识压缩进神经网络权重。Engram 增加了一个新维度：通过高效查找机制加入条件记忆——把静态知识检索与动态神经推理分开。落到实践上，这就是它能支撑 1M token 上下文、又不会出现超长上下文通常伴随的检索退化的原因。一篇[已发表论文](<https://www.morphllm.com/deepseek-v4>)显示，在 27B 测试模型上，"大海捞针"准确率从 84.2% 跳到 97%。
+**Engram 条件记忆（Engram conditional memory）**是最有意思的一个。传统基于 Transformer 的 LLM 把所有学到的知识压缩进神经网络权重。Engram 增加了一个新维度：通过高效查找机制加入条件记忆——把静态知识检索与动态神经推理分开。落到实践上，这就是它能支撑 1M token 上下文、又不会出现超长上下文通常伴随的检索退化的原因。一篇[已发表论文](https://www.morphllm.com/deepseek-v4)显示，在 27B 测试模型上，"大海捞针"准确率从 84.2% 跳到 97%。
 
 **DeepSeek 稀疏注意力（DeepSeek Sparse Attention，DSA）**降低了注意力复杂度，**流形约束超连接（Manifold-Constrained Hyper-Connections，mHC）**则在万亿参数规模上稳定了训练。两者结合，V4 总参数约 1 万亿，但每个 token 只激活约 37B——和 V3 的激活算力大致相当——这让模型体积虽大得多，推理成本却仍然可控。
 
@@ -43,7 +43,7 @@ DeepSeek V4 是 V3.2 的继任者——V3.2 是目前同时驱动 `deepseek-chat
 
 ## DeepSeek V4 API 定价与竞品对比
 
-这才是真正有意思的地方。基于已确认的 V3.2 定价和来自 [DeepSeek 官方 API 文档](<https://api-docs.deepseek.com/quick_start/pricing>)的预测，这是进入 V4 发布期时成本版图的样子：
+这才是真正有意思的地方。基于已确认的 V3.2 定价和来自 [DeepSeek 官方 API 文档](https://api-docs.deepseek.com/quick_start/pricing)的预测，这是进入 V4 发布期时成本版图的样子：
 
 下面是旗舰层级三个主要选项的对比：
 
@@ -57,13 +57,13 @@ V4 的价格区间反映的是多家分析机构给出的上下限预测。官�
 
 ## DeepSeek V4 的 GitHub 与开放获取范围
 
-对单人创业者非常重要的一件事：DeepSeek V4 将以开放权重模型发布。V4 按开源原则打造，延续了 DeepSeek 从 V3 开始的模式——据[报道](<https://particula.tech/blog/deepseek-v4-qwen-open-source-ai-disruption>)，V3 的训练成本是 560 万美元，而 OpenAI、Google、Anthropic 每代前沿模型要花数亿美元。
+对单人创业者非常重要的一件事：DeepSeek V4 将以开放权重模型发布。V4 按开源原则打造，延续了 DeepSeek 从 V3 开始的模式——据[报道](https://particula.tech/blog/deepseek-v4-qwen-open-source-ai-disruption)，V3 的训练成本是 560 万美元，而 OpenAI、Google、Anthropic 每代前沿模型要花数亿美元。
 
 这意味着你可以自托管。实际情况呢？大约每日 5000 万 token 时，自托管的经济账开始划算。每日低于 1000 万 token，管理基础设施就显得多余——API 已经够便宜，操作上的省心值回票价。
 
 据我认识的绝大多数单人开发者，我们离每天 5000 万 token 还远得很。API 才是正解。
 
-模型权重会放在 Hugging Face 和 GitHub 上。API 端点在 [api.deepseek.com](<http://api.deepseek.com>)。两个都值得收藏。
+模型权重会放在 Hugging Face 和 GitHub 上。API 端点在 [api.deepseek.com](http://api.deepseek.com)。两个都值得收藏。
 
 ![4.png](/blog/images/deepseek-v4-api-solo-operator/1776413656912-e0bed04f-03ea-492e-af8a-df448e2a6106.webp)
 
@@ -73,7 +73,7 @@ V4 的价格区间反映的是多家分析机构给出的上下限预测。官�
 
 ### 模型成本真正是瓶颈的地方
 
-如果你在跑**高量级自动化 pipeline**——批量处理数千份文档、做批量分类、规模化生成内容——那么是的，成本差异巨大。一位在生产环境跑 DeepSeek V4 的开发者报告说，一个月账单是 18 美元，而同样负载放在 GPT-4o 上大约要 380 美元。[WaveSpeedAI](<https://wavespeed.ai/blog/posts/deepseek-v4-cost-per-million-tokens/>) 这笔账很难反驳。
+如果你在跑**高量级自动化 pipeline**——批量处理数千份文档、做批量分类、规模化生成内容——那么是的，成本差异巨大。一位在生产环境跑 DeepSeek V4 的开发者报告说，一个月账单是 18 美元，而同样负载放在 GPT-4o 上大约要 380 美元。[WaveSpeedAI](https://wavespeed.ai/blog/posts/deepseek-v4-cost-per-million-tokens/) 这笔账很难反驳。
 
 如果你**在 LLM 之上构建产品**、API 成本会进入你的销售成本（COGS），同理。推理成本降 10–20 倍，直接改写你的单位经济模型。
 
@@ -127,9 +127,9 @@ DeepSeek 宣称的 SWE-bench 分数只来自发布前的内部基准，独立评
 
 如果你的工作涉及**硬核的多文件编码问题，或输出质量是约束的 agentic 工作流**——先等独立基准出来再下注。V4 宣称的 SWE-bench Verified 约 81% 若能兑现，将以零头的成本比肩 Claude Opus 4.6，但这些数字只来自 DeepSeek 自己的测试。
 
-如果可靠性和生态成熟度比成本更重要——目前 GPT-5.4 或 Claude Sonnet 4.6 在生产级 agentic 用途上更经受过实战考验。你可以直接在 [Anthropic 的文档](<https://docs.anthropic.com/en/docs/about-claude/models/overview>)里核对当前的模型能力与定价。
+如果可靠性和生态成熟度比成本更重要——目前 GPT-5.4 或 Claude Sonnet 4.6 在生产级 agentic 用途上更经受过实战考验。你可以直接在 [Anthropic 的文档](https://docs.anthropic.com/en/docs/about-claude/models/overview)里核对当前的模型能力与定价。
 
-另外：如果你有数据隐私要求，自托管是唯一真正的选项。就现阶段而言，xAI 的 [API 文档](<https://x.ai/api>)和 OpenAI 的平台在企业数据处理上都更成熟。
+另外：如果你有数据隐私要求，自托管是唯一真正的选项。就现阶段而言，xAI 的 [API 文档](https://x.ai/api)和 OpenAI 的平台在企业数据处理上都更成熟。
 
 ![6.png](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
 
@@ -137,13 +137,13 @@ DeepSeek 宣称的 SWE-bench 分数只来自发布前的内部基准，独立评
 
 ## 上一篇系列文章：
 
-→ [看看 AI 工作流在模型成本之外是如何真正失效的](</blog/ai-workflow-for-solo-founders>)
+→ [看看 AI 工作流在模型成本之外是如何真正失效的](/blog/ai-workflow-for-solo-founders)
 
-→ [了解为什么上下文管理、而非 token，才是真正的瓶颈](</blog/why-ai-forgets-between-sessions>)
+→ [了解为什么上下文管理、而非 token，才是真正的瓶颈](/blog/why-ai-forgets-between-sessions)
 
-→ [探索 AI Agent 如何改变单人创业者运营系统的方式](</blog/ai-agent-solo-operators>)
+→ [探索 AI Agent 如何改变单人创业者运营系统的方式](/blog/ai-agent-solo-operators)
 
-→ [看看持久化 AI 记忆如何影响长期生产力](</blog/what-is-persistent-ai-agent>)
+→ [看看持久化 AI 记忆如何影响长期生产力](/blog/what-is-persistent-ai-agent)
 
-→ [深入了解如何搭建结构化的 LLM 知识库](</blog/llm-knowledge-base-solo-operators>)
+→ [深入了解如何搭建结构化的 LLM 知识库](/blog/llm-knowledge-base-solo-operators)
 

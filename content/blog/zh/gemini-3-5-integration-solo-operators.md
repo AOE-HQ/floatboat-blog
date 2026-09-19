@@ -18,7 +18,7 @@ draft: false
 
 ### 能力上的真实变化：长上下文、速度、成本与对工作流的实际影响
 
-Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](<https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/>)，它围绕「带行动的前沿智能」（frontier intelligence with action）打造。关键规格是：**100 万 token 上下文窗口、输入每百万 token 1.50 美元 / 输出每百万 token 9.00 美元的定价**，以及 Google 所称比同类前沿模型快 4 倍的输出速度。
+Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/)，它围绕「带行动的前沿智能」（frontier intelligence with action）打造。关键规格是：**100 万 token 上下文窗口、输入每百万 token 1.50 美元 / 输出每百万 token 9.00 美元的定价**，以及 Google 所称比同类前沿模型快 4 倍的输出速度。
 
 对日常工作来说，上下文窗口才是关键。100 万 token 意味着你可以在一次会话里喂进整个代码库、一整份研究报告、或数小时的会议转录。对我这种文档密集型工作——从长 PDF 里提炼洞见、综合研究资料——跳过分块这一步是实打实地省时间。这一步就是……直接能用了。
 
@@ -30,7 +30,7 @@ Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](<ht
 
 我不会去做一份完整的「Gemini vs Claude for work」对比——基准测试很少能反映「周二下午急需起草一封客户邮件时用某个模型是什么感觉」。
 
-我的实际观察是：Gemini 3.5 Flash 在结构化提取和 agentic 任务上很强——也就是模型做规划、调用工具、反复迭代的那类。据 [Google 的 Gemini 模型页](<https://ai.google.dev/gemini-api/docs/models>)记载，它在 Terminal-Bench 2.1 上拿了 76.2 分，在 MCP Atlas 工具调用可靠性上拿了 83.6 分。而拿捏语气的写作，我仍然倾向 Claude。各有所长，各就其位。
+我的实际观察是：Gemini 3.5 Flash 在结构化提取和 agentic 任务上很强——也就是模型做规划、调用工具、反复迭代的那类。据 [Google 的 Gemini 模型页](https://ai.google.dev/gemini-api/docs/models)记载，它在 Terminal-Bench 2.1 上拿了 76.2 分，在 MCP Atlas 工具调用可靠性上拿了 83.6 分。而拿捏语气的写作，我仍然倾向 Claude。各有所长，各就其位。
 
 ## 这对单人创业者的工作流意味着什么
 
@@ -42,7 +42,7 @@ Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](<ht
 
 ### 对成本敏感的重复任务
 
-如果你在通过 API 跑重复任务，成本就很重要。据 [Google 的 API 定价页](<https://ai.google.dev/gemini-api/docs/pricing>)，Gemini 3.5 Flash 比 Gemini 3.1 Pro 便宜约 40%，同时在多数编程与 agentic 基准上表现更好。对每一分钱都要精打细算的单人创业者来说，这笔账值得留意。
+如果你在通过 API 跑重复任务，成本就很重要。据 [Google 的 API 定价页](https://ai.google.dev/gemini-api/docs/pricing)，Gemini 3.5 Flash 比 Gemini 3.1 Pro 便宜约 40%，同时在多数编程与 agentic 基准上表现更好。对每一分钱都要精打细算的单人创业者来说，这笔账值得留意。
 
 不过我不想把这点夸过头。按 token 计费的成本只有当输出质量足够好、不必再花额外时间修改时才成立。我的内容类任务里，五次有三次输出是扎实的，另外两次需要清理。
 
@@ -50,7 +50,7 @@ Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](<ht
 
 ### Google Workspace 重度工作流
 
-如果你的日常在 Google Docs、Gmail 和 Calendar 里，Gemini 3.5 有结构性优势。它现在已经是 Gemini 应用里的默认模型。[Google Cloud I/O 2026 博客](<https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud>)着重讲了与 Workspace 的深度集成——包括 Daily Brief，它会把 Gmail、Calendar 与任务优先级汇成一份早晨摘要。我自己还没测过 Daily Brief，但光这个概念就解决了每天早晨困扰我的一个真实问题。
+如果你的日常在 Google Docs、Gmail 和 Calendar 里，Gemini 3.5 有结构性优势。它现在已经是 Gemini 应用里的默认模型。[Google Cloud I/O 2026 博客](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud)着重讲了与 Workspace 的深度集成——包括 Daily Brief，它会把 Gmail、Calendar 与任务优先级汇成一份早晨摘要。我自己还没测过 Daily Brief，但光这个概念就解决了每天早晨困扰我的一个真实问题。
 
 ## 什么时候该开、什么时候别开
 
@@ -96,7 +96,7 @@ Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](<ht
 
 ## 要不要拨下这个开关？
 
-Gemini 3.5 Flash 确实很强——快、性价比高，尤其擅长长上下文与 agentic 任务。正如 [CNBC 对 Google I/O 2026 的报道](<https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html>)所指出的，Google 正把它当作 AI 战略的核心棋子来推，Gemini 3.5 Pro 预计下月登场。
+Gemini 3.5 Flash 确实很强——快、性价比高，尤其擅长长上下文与 agentic 任务。正如 [CNBC 对 Google I/O 2026 的报道](https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html)所指出的，Google 正把它当作 AI 战略的核心棋子来推，Gemini 3.5 Pro 预计下月登场。
 
 但对任何正在评估**一人公司的 AI 工具**的人来说，关于任何一次**Gemini 3.5 集成**的问题从来不是「这个模型好不好」，而是：**把它加进我的工作流，省下的时间是否超过管理它所花的时间？**如果你常和长文档打交道、跑批量任务、或生活工作在 Google Workspace 里——值得一试。如果你的现有配置运转顺畅、瓶颈根本不在模型本身——那就再等等。
 
@@ -104,13 +104,13 @@ Gemini 3.5 Flash 确实很强——快、性价比高，尤其擅长长上下文
 
 ## 往期文章
 
-  * [单人创始人的 AI 工作流：什么真正省时间？](</blog/ai-workflow-solo-founders>)——在往技术栈里加另一个模型之前，先把你想要改进的工作流画出来
+  * [单人创始人的 AI 工作流：什么真正省时间？](/blog/ai-workflow-solo-founders)——在往技术栈里加另一个模型之前，先把你想要改进的工作流画出来
 
-  * [面向单人创业者的 AI 工作流：演示与日常工作的差别](</blog/ai-workflow-for-solo-founders>)——务实看看 AI 工作流一旦离开演示舞台会在哪里散架
+  * [面向单人创业者的 AI 工作流：演示与日常工作的差别](/blog/ai-workflow-for-solo-founders)——务实看看 AI 工作流一旦离开演示舞台会在哪里散架
 
-  * [AI 工作区 Agent：为什么聊天窗口不再能扩展](</blog/ai-workspace-agents>)——当工作发生在同一个工作区、而不是散落各标签页时，管理多个模型会轻松得多
+  * [AI 工作区 Agent：为什么聊天窗口不再能扩展](/blog/ai-workspace-agents)——当工作发生在同一个工作区、而不是散落各标签页时，管理多个模型会轻松得多
 
-  * [工作区 Agent vs 聊天助手：到底差在哪？](</blog/workspace-agents-vs-chat-assistants>)——当你要决定另一个模型该不该进工作流时，这个差别很关键
+  * [工作区 Agent vs 聊天助手：到底差在哪？](/blog/workspace-agents-vs-chat-assistants)——当你要决定另一个模型该不该进工作流时，这个差别很关键
 
-  * [一人公司如何用 AI 像团队一样工作](</blog/how-one-person-businesses-work-like-a-team-with-ai>)——加另一个模型只有在它能移除单人业务里一个真实瓶颈时才真正有用
+  * [一人公司如何用 AI 像团队一样工作](/blog/how-one-person-businesses-work-like-a-team-with-ai)——加另一个模型只有在它能移除单人业务里一个真实瓶颈时才真正有用
 

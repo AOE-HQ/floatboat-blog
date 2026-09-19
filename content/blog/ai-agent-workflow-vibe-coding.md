@@ -21,9 +21,9 @@ The promise was never a problem. The missing structure was.
 
 ### Why It Attracted Solo Builders
 
-When Andrej Karpathy coined "[vibe coding](<https://en.wikipedia.org/wiki/Vibe_coding>)" in February 2025, he described a form of coding where you "fully give in to the vibes, embrace exponentials, and forget that the code even exists." For solo builders and non-developers, that framing was genuinely exciting. No more syntax anxiety, no gatekeeping from technical knowledge. Just describe what you want and watch it appear.
+When Andrej Karpathy coined "[vibe coding](https://en.wikipedia.org/wiki/Vibe_coding)" in February 2025, he described a form of coding where you "fully give in to the vibes, embrace exponentials, and forget that the code even exists." For solo builders and non-developers, that framing was genuinely exciting. No more syntax anxiety, no gatekeeping from technical knowledge. Just describe what you want and watch it appear.
 
-And it worked — at least in the beginning. By 2026, 72% of developers use AI-powered coding tools daily, and 41% of global code is AI-generated. [Y Combinator reported that](<https://daily.dev/blog/vibe-coding-how-ai-changing-developers-code>) 25% of its Winter 2025 batch ran codebases that were 95% AI-generated. The speed gains were real.
+And it worked — at least in the beginning. By 2026, 72% of developers use AI-powered coding tools daily, and 41% of global code is AI-generated. [Y Combinator reported that](https://daily.dev/blog/vibe-coding-how-ai-changing-developers-code) 25% of its Winter 2025 batch ran codebases that were 95% AI-generated. The speed gains were real.
 
 But speed without structure isn't productivity. It's just faster debt accumulation.
 
@@ -47,7 +47,7 @@ This is the gap a real **AI agent workflow** closes.
 
 A December 2025 analysis by CodeRabbit of 470 open-source GitHub pull requests found that code co-authored by generative AI contained approximately 1.7 times more "major" issues compared to human-written code — including misconfigurations (75% more common) and security vulnerabilities (2.74x higher).
 
-I read that and immediately thought about a pattern I see constantly: ​**each error multiplies downstream** ​. The AI fixes one thing and breaks two others, because it doesn't see the full dependency chain. AI is often unaware of the full codebase context, especially in large, complex architectures — [an agent fixes a bug in one file but causes breaking changes in files referencing it, simply because it didn't see the connection.](<https://towardsdatascience.com/the-reality-of-vibe-coding-ai-agents-and-the-security-debt-crisis/>)
+I read that and immediately thought about a pattern I see constantly: ​**each error multiplies downstream** ​. The AI fixes one thing and breaks two others, because it doesn't see the full dependency chain. AI is often unaware of the full codebase context, especially in large, complex architectures — [an agent fixes a bug in one file but causes breaking changes in files referencing it, simply because it didn't see the connection.](https://towardsdatascience.com/the-reality-of-vibe-coding-ai-agents-and-the-security-debt-crisis/)
 
 This isn't a reason to stop using AI. It's a reason to build a workflow where this failure mode gets caught before it compounds.
 
@@ -65,7 +65,7 @@ A simple structure that actually works:
 
 **Step 2 — Plan review.** Run the spec through the agent in "plan mode" (Claude Code has this natively). Ask it to surface ambiguities. Fix them before execution.
 
-**Step 3 — Bounded execution.** Give the agent one task at a time, not an entire feature. If you ask for too much in one go, it's likely to get confused or produce a "[jumbled mess](<https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e>)" that's hard to untangle — like 10 devs working without talking to each other. The fix is to stop, back up, and split the problem into smaller pieces.
+**Step 3 — Bounded execution.** Give the agent one task at a time, not an entire feature. If you ask for too much in one go, it's likely to get confused or produce a "[jumbled mess](https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e)" that's hard to untangle — like 10 devs working without talking to each other. The fix is to stop, back up, and split the problem into smaller pieces.
 
 **Step 4 — Review output before accepting.** This sounds obvious. Most vibe coders skip it.
 
@@ -119,7 +119,7 @@ The GitFlow model maps cleanly: feature branches for each bounded task, PRs as h
 
 I've spent time with all four. Here's my honest take on where each fits inside a structured workflow, not as standalone tools.
 
-**[Claude Code](<https://docs.anthropic.com/en/docs/claude-code/overview>)** is the strongest choice when you need deep codebase reasoning across large, multi-file tasks. It reads your repository structure, knows your branch state, creates commits with meaningful messages, and can open pull requests directly. The hooks system lets you enforce project-specific rules — linting, testing, formatting — that run automatically before and after certain actions. The CLAUDE.md file is genuinely useful for persisting project context across sessions. Best for: complex refactors, architectural decisions, projects where context depth matters.
+**[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)** is the strongest choice when you need deep codebase reasoning across large, multi-file tasks. It reads your repository structure, knows your branch state, creates commits with meaningful messages, and can open pull requests directly. The hooks system lets you enforce project-specific rules — linting, testing, formatting — that run automatically before and after certain actions. The CLAUDE.md file is genuinely useful for persisting project context across sessions. Best for: complex refactors, architectural decisions, projects where context depth matters.
 
 **Cursor** is the right tool for the daily interactive coding loop. Use Cursor for everyday coding with a visual IDE. Codex for autonomous background tasks. Claude Code for deep multi-file work that needs maximum context. The Composer mode handles multi-file edits cleanly. Tab autocomplete is fast. If you're most comfortable working visually inside an editor, Cursor is the better daily driver.
 
@@ -131,7 +131,7 @@ Honestly? The developers I've seen get the best results in 2026 aren't dogmatic 
 
 ### Gemini CLI and GitHub Copilot CLI for Terminal Users
 
-If you live in the terminal and want lighter tooling: [GitHub Copilot CLI](<https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line>) handles natural-language shell command generation cleanly. Gemini CLI is a strong option for Google ecosystem users. Neither replaces a full agent workflow, but both fit well as supporting tools in the execution layer.
+If you live in the terminal and want lighter tooling: [GitHub Copilot CLI](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line) handles natural-language shell command generation cleanly. Gemini CLI is a strong option for Google ecosystem users. Neither replaces a full agent workflow, but both fit well as supporting tools in the execution layer.
 
 ## AI Agent Workflows for Solo Operators Who Don't Code
 
@@ -151,13 +151,13 @@ That's the whole thing, really. The vibes are still welcome. The guardrails are 
 
 ## Previous Posts:
 
-→ See why **[vibe coding breaks without structure](</blog/what-is-vibe-coding>)** and what replaces it
+→ See why **[vibe coding breaks without structure](/blog/what-is-vibe-coding)** and what replaces it
 
-→ Learn how **[AI agents actually work for solo operators (beyond prompts)](</blog/ai-agent-solo-operators>)**
+→ Learn how **[AI agents actually work for solo operators (beyond prompts)](/blog/ai-agent-solo-operators)**
 
-→ Understand how to **[build repeatable AI workflows instead of one-off outputs](</blog/ai-workflow-for-solo-founders>)**
+→ Understand how to **[build repeatable AI workflows instead of one-off outputs](/blog/ai-workflow-for-solo-founders)**
 
-→ Explore the shift from **[chat-based AI to persistent, stateful agents](</blog/what-is-persistent-ai-agent>)**
+→ Explore the shift from **[chat-based AI to persistent, stateful agents](/blog/what-is-persistent-ai-agent)**
 
-→ Discover how **[one-person businesses scale using AI systems, not just tools](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
+→ Discover how **[one-person businesses scale using AI systems, not just tools](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
 

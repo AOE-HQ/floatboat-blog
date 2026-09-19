@@ -19,9 +19,9 @@ draft: false
 
 ## 动手前：ChatGPT 能处理什么
 
-先把话说清楚。[Custom GPT](<https://chatgpt.com/features/agent/>) 不是一个完全自主的 Agent——不会在你睡觉时跑出去替你经营生意。它更像一个"背景交代得极充分的助理"，每次都照着同一本 playbook 执行——而这一点实际上比听上去有用得多。
+先把话说清楚。[Custom GPT](https://chatgpt.com/features/agent/) 不是一个完全自主的 Agent——不会在你睡觉时跑出去替你经营生意。它更像一个"背景交代得极充分的助理"，每次都照着同一本 playbook 执行——而这一点实际上比听上去有用得多。
 
-它能做什么：执行你定义的指令、引用你上传的文件、浏览网页、运行代码做数据分析、生成图片。按 [OpenAI 关于 Custom GPT 的官方文档](<https://help.openai.com/en/articles/8554407-gpts-in-chatgpt>)，一个 GPT 把指令、知识与选定的能力组合成一个定制体验。你配置一次，之后每一次对话都从"上下文已加载"开始。
+它能做什么：执行你定义的指令、引用你上传的文件、浏览网页、运行代码做数据分析、生成图片。按 [OpenAI 关于 Custom GPT 的官方文档](https://help.openai.com/en/articles/8554407-gpts-in-chatgpt)，一个 GPT 把指令、知识与选定的能力组合成一个定制体验。你配置一次，之后每一次对话都从"上下文已加载"开始。
 
 它不能做什么——至少在 Custom GPT 这种形态下不能——是在外部网站上采取动作、替你发邮件，或运行后台任务。那是 ChatGPT 更新的**Agent Mode**的地盘，完全独立的一套功能。
 
@@ -45,7 +45,7 @@ Custom GPT 的甜区是**可重复、定义清晰的任务**——那种你本�
 
 打开 ChatGPT，在侧边栏进入**Explore GPTs**，点**Create**。你会看到两个标签页：Create（对话式）和 Configure（手动）。我总用 Configure——更快，控制也更细。
 
-**Instructions（指令）**是核心。在这里告诉你的 GPT 它做什么、该怎么回应、要避开什么。[OpenAI 关于编写 GPT 指令的指南](<https://help.openai.com/en/articles/9358033-key-guidelines-for-writing-instructions-for-custom-gpts>)建议，对多步骤工作流使用显式的步骤结构——比如"当 X 发生 → 做 Y"——并用清晰的标题分隔各部分。
+**Instructions（指令）**是核心。在这里告诉你的 GPT 它做什么、该怎么回应、要避开什么。[OpenAI 关于编写 GPT 指令的指南](https://help.openai.com/en/articles/9358033-key-guidelines-for-writing-instructions-for-custom-gpts)建议，对多步骤工作流使用显式的步骤结构——比如"当 X 发生 → 做 Y"——并用清晰的标题分隔各部分。
 
 我要从自己的经验补一条：**直接在指令里放 2–3 个"好的输出"示例。**我会贴一份样例输入和一份我想要的精确输出——差别是白天与黑夜。
 
@@ -53,7 +53,7 @@ Custom GPT 的甜区是**可重复、定义清晰的任务**——那种你本�
 
 **Capabilities（能力）**是你可以开关的内置工具：网页浏览、代码解释器、图像生成。只开任务真正需要的。留着用不上的工具开着，有时反而会迷惑模型。
 
-哦，还有个容易漏掉的细节。截至 2026 年初，OpenAI 已[退役了若干旧模型](<https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes>)，包括 GPT-4o 和多种 GPT-5.1 变体。如果你今天新建 GPT，你会落在 GPT-5.2 或更新上。值得查一下——不同代模型之间的表现是有差别的。
+哦，还有个容易漏掉的细节。截至 2026 年初，OpenAI 已[退役了若干旧模型](https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes)，包括 GPT-4o 和多种 GPT-5.1 变体。如果你今天新建 GPT，你会落在 GPT-5.2 或更新上。值得查一下——不同代模型之间的表现是有差别的。
 
 ![h3.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182695411-06adc34b-a391-4bb3-8c16-ec27fe74e9e3.webp)
 
@@ -63,7 +63,7 @@ Custom GPT 的甜区是**可重复、定义清晰的任务**——那种你本�
 
 **谁能用。**你可以保持私有、用链接分享，或发布到 GPT Store。团队场景下，Business 和 Enterprise 套餐允许你在工作区内共享，并带管理员控制。
 
-**它能接触哪些数据。**你的 GPT 只能看到你上传的文件，以及用户在对话里分享的内容。如果你要通过 Actions 连接外部 API，那是另一层——动手前先读 [OpenAI 配置 Actions 的指南](<https://help.openai.com/en/articles/9442513-configuring-actions-in-gpts>)。
+**它能接触哪些数据。**你的 GPT 只能看到你上传的文件，以及用户在对话里分享的内容。如果你要通过 Actions 连接外部 API，那是另一层——动手前先读 [OpenAI 配置 Actions 的指南](https://help.openai.com/en/articles/9442513-configuring-actions-in-gpts)。
 
 **你在哪里要人工复核。**我给自己定了一条规矩：凡产出面向客户的 GPT，发出前我一定复核。GPT 负责起草，我负责批准。像整理笔记这种内部任务——我让它跑得松一点，但每周仍会抽查。
 
@@ -91,7 +91,7 @@ Custom GPT 的甜区是**可重复、定义清晰的任务**——那种你本�
 
 在你需要升级之前，Custom GPT 已经能覆盖相当大一片地界。但它存在天花板。
 
-当你需要真实世界里的动作——发邮件、更新电子表格、往 Slack 发帖——却不想手动批准每一步时，你大概就超出它的能力了。这正是 Agent Mode 登场的地方：它在 Plus（每月 20 美元）、Pro 和 Team 套餐上可用。我查了 [ChatGPT 官方定价页](<https://chatgpt.com/pricing/>)上的当前价格——Plus 从上线起一直是每月 20 美元，以你得到的东西来说仍然厚道。
+当你需要真实世界里的动作——发邮件、更新电子表格、往 Slack 发帖——却不想手动批准每一步时，你大概就超出它的能力了。这正是 Agent Mode 登场的地方：它在 Plus（每月 20 美元）、Pro 和 Team 套餐上可用。我查了 [ChatGPT 官方定价页](https://chatgpt.com/pricing/)上的当前价格——Plus 从上线起一直是每月 20 美元，以你得到的东西来说仍然厚道。
 
 Custom GPT 也不会跨 session 保持记忆。每次对话都从零开始。如果持久记忆对你的工作流很重要，那是另一个去看 Agent Mode 或 Assistants API 的理由。
 
@@ -105,13 +105,13 @@ Custom GPT 也不会跨 session 保持记忆。每次对话都从零开始。如
 
 ## 往期文章：
 
-  * 如果你还在纠结"要 Custom GPT 还是更自主的配置"，从这里开始：[什么是 AI Agent 平台？单人经营者的决策框架](</blog/ai-agent-solo-operators>)
+  * 如果你还在纠结"要 Custom GPT 还是更自主的配置"，从这里开始：[什么是 AI Agent 平台？单人经营者的决策框架](/blog/ai-agent-solo-operators)
 
-  * 想搞清 ChatGPT 工作流到哪儿为止、真正的 Agent 行为从哪儿开始？这篇把界线讲得很清楚：[AI 工作流 vs Agent 工作流：界线到底在哪](</blog/ai-agent-workflow-vibe-coding>)
+  * 想搞清 ChatGPT 工作流到哪儿为止、真正的 Agent 行为从哪儿开始？这篇把界线讲得很清楚：[AI 工作流 vs Agent 工作流：界线到底在哪](/blog/ai-agent-workflow-vibe-coding)
 
-  * 如果你的 AI 老是忘记 session 之间的上下文，这篇解释了为什么——以及怎么办：[为什么你的 AI 会忘光 session 之间的一切](</blog/why-ai-forgets-between-sessions>)
+  * 如果你的 AI 老是忘记 session 之间的上下文，这篇解释了为什么——以及怎么办：[为什么你的 AI 会忘光 session 之间的一切](/blog/why-ai-forgets-between-sessions)
 
-  * 在想跨出 Custom GPT、走向工作区式 AI 系统？这是有用的下一步：[AI 工作区 Agent：为单人经营者真正改变了什么](</blog/ai-workspace-agents>)
+  * 在想跨出 Custom GPT、走向工作区式 AI 系统？这是有用的下一步：[AI 工作区 Agent：为单人经营者真正改变了什么](/blog/ai-workspace-agents)
 
-  * 建好第一个 GPT 之后，这篇指南帮你把可重复任务做得更可靠、更能扩展：[如何为重复工作构建 AI Agent](</blog/how-to-build-ai-agents-for-repeated-work>)
+  * 建好第一个 GPT 之后，这篇指南帮你把可重复任务做得更可靠、更能扩展：[如何为重复工作构建 AI Agent](/blog/how-to-build-ai-agents-for-repeated-work)
 

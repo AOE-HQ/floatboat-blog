@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-又见面了，我是 Nova～几周前，我在给一个项目自动化「研究到成稿」的工作流。Discord 里有人一直在提 [Manus AI](<https://manus.im/>)，于是我去看了看——然后立刻撞上邀请排队。又是排队。
+又见面了，我是 Nova～几周前，我在给一个项目自动化「研究到成稿」的工作流。Discord 里有人一直在提 [Manus AI](https://manus.im/)，于是我去看了看——然后立刻撞上邀请排队。又是排队。
 
 等等……还是只邀请制？
 
@@ -79,11 +79,11 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 
 **最适合：**想要一款今天就能用、且没有上手摩擦的 Agent 的人。
 
-具体套餐细节可以看 [OpenAI ChatGPT](<https://openai.com/index/chatgpt/>) 定价页——它更新频繁，2026 年初档位结构还动过几次。
+具体套餐细节可以看 [OpenAI ChatGPT](https://openai.com/index/chatgpt/) 定价页——它更新频繁，2026 年初档位结构还动过几次。
 
 ### Claude（Anthropic）
 
-最近我更长的研究任务用了很多 [Claude](<https://claude.ai/new>)。它比多数工具更会拿捏微妙之处，200K 上下文窗口意味着我能丢进大量背景而不至于做到一半散架。它不是 Manus 意义上完整的自主 Agent，但对**把问题想透**这类任务，它真的很能打。
+最近我更长的研究任务用了很多 [Claude](https://claude.ai/new)。它比多数工具更会拿捏微妙之处，200K 上下文窗口意味着我能丢进大量背景而不至于做到一半散架。它不是 Manus 意义上完整的自主 Agent，但对**把问题想透**这类任务，它真的很能打。
 
 **优势：**长上下文、思考周全、在复杂主题上更少幻觉。
 
@@ -97,7 +97,7 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 
 ### AutoGPT（开源）
 
-给技术上敢冒险的人——说这话的我自己就花了一个下午才把它跑起来——[AutoGPT](<https://github.com/Significant-Gravitas/AutoGPT>) 是个确实有能力的开源 Agent。你自带 API key，所以成本取决于用量，但平台本身不收钱。它能联网、写和执行代码、管理文件、串联任务。
+给技术上敢冒险的人——说这话的我自己就花了一个下午才把它跑起来——[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) 是个确实有能力的开源 Agent。你自带 API key，所以成本取决于用量，但平台本身不收钱。它能联网、写和执行代码、管理文件、串联任务。
 
 **优势：**免费运行（减去 API 费用）、行为完全可控、没有厂商锁定。
 
@@ -117,7 +117,7 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 
 ## 工作流自动化的最佳替代品
 
-### [Lindy.ai](<http://Lindy.ai>)
+### [Lindy.ai](http://Lindy.ai)
 
 这是最让我意外的一款。**Lindy**专为自动化业务流程而造——邮件分类、日历管理、CRM 更新、跟进。无代码、带现成模板、能连上多数人已经在用的工具。如果你用 Manus 主要是做多步业务流程自动化，Lindy 可能是更干净的选择。
 
@@ -127,7 +127,7 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 
 ### n8n（开源工作流自动化）
 
-如果你想要完全可控的工作流自动化，[n8n 的工作流自动化文档](<https://docs.n8n.io/>)值得收藏。它开源、可自托管、能连几百个应用。严格说不是 AI Agent，但你可以把 AI 步骤接进复杂的自动化管线。我认识不少单人创业者把它当工具之间的连接组织用。
+如果你想要完全可控的工作流自动化，[n8n 的工作流自动化文档](https://docs.n8n.io/)值得收藏。它开源、可自托管、能连几百个应用。严格说不是 AI Agent，但你可以把 AI 步骤接进复杂的自动化管线。我认识不少单人创业者把它当工具之间的连接组织用。
 
 **优势：**极度灵活、有自托管选项、集成库庞大。
 
@@ -151,7 +151,7 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 
 说句公道话：Manus 在某些事上确实令人印象深刻，我不想让这篇读起来像一篇贬低文。
 
-如果你需要**并行的深度研究**——同时部署多个 Agent 去爬取来源、综合结论——Manus 做得比上面任何工具都到位。它还有一项罕见的本事：把高层目标拆成可执行的子任务，几乎不用你手把手。按 [Anthropic 对自主 AI 系统的研究](<https://www.anthropic.com/research>)，能处理复杂多步任务的 agentic AI 仍是一个演进中的领域——这也是为什么 Manus 真能用上时如此出众的原因之一。
+如果你需要**并行的深度研究**——同时部署多个 Agent 去爬取来源、综合结论——Manus 做得比上面任何工具都到位。它还有一项罕见的本事：把高层目标拆成可执行的子任务，几乎不用你手把手。按 [Anthropic 对自主 AI 系统的研究](https://www.anthropic.com/research)，能处理复杂多步任务的 agentic AI 仍是一个演进中的领域——这也是为什么 Manus 真能用上时如此出众的原因之一。
 
 如果你有访问权、有预算，而且工作确实是从头到尾的复杂多步研究+生产工作流，它站得住这个位置。
 
@@ -161,13 +161,13 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 
 ## 延伸阅读
 
-  * [看看真实世界的 AI Agent 用例，以及它们在实际中表现如何](</blog/ai-agent-use-cases-real-examples>)
+  * [看看真实世界的 AI Agent 用例，以及它们在实际中表现如何](/blog/ai-agent-use-cases-real-examples)
 
-  * [看单人创业者如何用 AI 角色与工作流，把一人公司跑得像个团队](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [看单人创业者如何用 AI 角色与工作流，把一人公司跑得像个团队](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [搞清 AI 自动化服务在真实市场里怎么定价（以及为什么报价差那么多）](</blog/ai-automation-agency-pricing>)
+  * [搞清 AI 自动化服务在真实市场里怎么定价（以及为什么报价差那么多）](/blog/ai-automation-agency-pricing)
 
-  * [对比 Lindy 和 Gumloop 在构建 Agent 式工作流上的差异](</blog/lindy-vs-gumloop>)
+  * [对比 Lindy 和 Gumloop 在构建 Agent 式工作流上的差异](/blog/lindy-vs-gumloop)
 
-  * [看不同 AI Agent 工具在真实工作流上实测时的差别](</blog/lindy-vs-gumloop>)
+  * [看不同 AI Agent 工具在真实工作流上实测时的差别](/blog/lindy-vs-gumloop)
 

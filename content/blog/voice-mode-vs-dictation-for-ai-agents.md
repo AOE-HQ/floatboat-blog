@@ -132,7 +132,7 @@ For coding, dictation wins on precision: you speak a function signature, visuall
 
 ### 5.4 Document-Centric Dictation (Floatboat Flow Mode)
 
-A third pattern sits beside chat voice and prompt dictation: **document-centric dictation**, where speech feeds a living draft and the agent collaborates in-file. Floatboat **Flow Mode** (announced 2026) keeps real-time transcription in the document while you select spans for agent rewrites—closer to dictation plus co-editing than to GPT-Live dialogue [<a href="/blog/introducing-flow-mode">Source: Floatboat Flow Mode announcement</a>]. It targets solopreneurs shipping memos and meeting plans, not hands-free Q&A on a commute.
+A third pattern sits beside chat voice and prompt dictation: **document-centric dictation**, where speech feeds a living draft and the agent collaborates in-file. Floatboat **Flow Mode** (announced 2026) keeps real-time transcription in the document while you select spans for agent rewrites—closer to dictation plus co-editing than to GPT-Live dialogue, as described in [our Flow Mode announcement](/blog/introducing-flow-mode). It targets solopreneurs shipping memos and meeting plans, not hands-free Q&A on a commute.
 
 Flow Mode illustrates that "dictation" is not one job either: prompt-box dictation steers an agent; in-document dictation *is* the deliverable surface. Neither replaces voice mode for spoken reasoning; both can outperform voice mode when the output must land in a structured file.
 

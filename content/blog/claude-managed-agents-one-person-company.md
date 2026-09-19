@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Hi, I'm Nova. I've been watching the agentic AI space closely for a while now. Mostly from the outside — reading docs, following developer discussions, occasionally trying things that half work. So when Anthropic launched [Claude Managed Agents](<https://www.anthropic.com/engineering/managed-agents>) in public beta on April 8, 2026, I paid attention.
+Hi, I'm Nova. I've been watching the agentic AI space closely for a while now. Mostly from the outside — reading docs, following developer discussions, occasionally trying things that half work. So when Anthropic launched [Claude Managed Agents](https://www.anthropic.com/engineering/managed-agents) in public beta on April 8, 2026, I paid attention.
 
 Not because it's "revolutionary" or anything like that. I just kept asking: is this actually useful for the kind of person I am — one person running a content and research operation — or is this an enterprise thing dressed up to look accessible?
 
@@ -23,7 +23,7 @@ After digging in, my honest answer is: it depends on what you're trying to autom
 
 Most people use Claude the same way they use a chat interface. You type something, Claude responds, you copy what you need and move on. That interaction ends when the conversation ends. There's no persistent state, no memory of what you did yesterday, no ability to run something while you're not watching.
 
-**Claude Managed Agents is a fundamentally different layer.** It's a managed infrastructure service from Anthropic that handles the execution environment for AI agents — sandboxing, long-running sessions, scoped permissions, tool execution, and observability — [launched April 8, 2026 in public beta](<https://medium.com/@unicodeveloper/claude-managed-agents-what-it-actually-offers-the-honest-pros-and-cons-and-how-to-run-agents-52369e5cff14>).
+**Claude Managed Agents is a fundamentally different layer.** It's a managed infrastructure service from Anthropic that handles the execution environment for AI agents — sandboxing, long-running sessions, scoped permissions, tool execution, and observability — [launched April 8, 2026 in public beta](https://medium.com/@unicodeveloper/claude-managed-agents-what-it-actually-offers-the-honest-pros-and-cons-and-how-to-run-agents-52369e5cff14).
 
 In plain terms: instead of you prompting Claude and waiting for a response, you define a task, set the guardrails, and the agent runs it — potentially for hours — without you sitting there. The infrastructure that makes that possible (containers, session state, error recovery) is handled by Anthropic, not you.
 
@@ -89,7 +89,7 @@ The practical implication for a solo operator running Managed Agents isn't that 
 
 Concretely: if you're using an agent to draft newsletter content, it doesn't need access to your payment accounts. If it's doing research, it doesn't need write access to your production systems. Scope your permissions tightly, even if it means building narrower automations.
 
-The [Anthropic documentation on agentic AI safety](<https://www.anthropic.com/research/claude-character>) and their published guidance on model behavior are worth reading before you start granting broad tool access. This isn't paranoia — it's the same principle as not giving every software tool admin access to your machine.
+The [Anthropic documentation on agentic AI safety](https://www.anthropic.com/research/claude-character) and their published guidance on model behavior are worth reading before you start granting broad tool access. This isn't paranoia — it's the same principle as not giving every software tool admin access to your machine.
 
 ![4.png](/blog/images/claude-managed-agents-one-person-company/1776822548756-887df77a-e298-485b-ae80-3f2567e1bac1.webp)
 
@@ -125,11 +125,11 @@ I'll probably revisit this once the multi-agent and memory features come out of 
 
 ## Previous Posts:
 
-→ Understand how **[AI agents actually work for solo operators](</blog/ai-agent-solo-operators>)****​ ​**
+→ Understand how **[AI agents actually work for solo operators](/blog/ai-agent-solo-operators)****​ ​**
 
-→ See the practical difference between **[AI agents vs AI assistants in real workflows](</blog/ai-agent-vs-ai-assistant>)** → Learn how to[ design repeatable AI workflows instead of relying on one-off prompts](</blog/ai-workflow-for-solo-founders>)
+→ See the practical difference between **[AI agents vs AI assistants in real workflows](/blog/ai-agent-vs-ai-assistant)** → Learn how to[ design repeatable AI workflows instead of relying on one-off prompts](/blog/ai-workflow-for-solo-founders)
 
-→ Explore what **[persistent AI agents are and why memory changes everything](</blog/what-is-persistent-ai-agent>)**
+→ Explore what **[persistent AI agents are and why memory changes everything](/blog/what-is-persistent-ai-agent)**
 
-→ Discover real-world **[AI agent use cases that actually translate into daily work](</blog/ai-agent-use-cases-real-examples>)**
+→ Discover real-world **[AI agent use cases that actually translate into daily work](/blog/ai-agent-use-cases-real-examples)**
 

@@ -26,9 +26,9 @@ The comparison is asymmetric, and that asymmetry is the source of most confusion
 
 Claude Code is a specific product — Anthropic's terminal coding agent with a defined workflow, permission model, and native integration with Claude models. When developers say "Claude Code," they mean the harness: the plan mode, the diff review, the sub-agent spawning, the `/compact` command, the test feedback loop.
 
-"DeepSeek Agent" is a category, not a product. It describes any agent that uses a DeepSeek model as its primary reasoning engine. That includes DeepSeek-TUI (a Rust terminal agent built around V4), Reasonix (a cache-first coding agent), Deep Code (a VS Code extension), and — critically — Claude Code itself when you point it at DeepSeek's Anthropic-compatible endpoint, as documented in [DeepSeek's agent integration guide](<https://api-docs.deepseek.com/guides/coding_agents>).
+"DeepSeek Agent" is a category, not a product. It describes any agent that uses a DeepSeek model as its primary reasoning engine. That includes DeepSeek-TUI (a Rust terminal agent built around V4), Reasonix (a cache-first coding agent), Deep Code (a VS Code extension), and — critically — Claude Code itself when you point it at DeepSeek's Anthropic-compatible endpoint, as documented in [DeepSeek's agent integration guide](https://api-docs.deepseek.com/guides/coding_agents).
 
-So the comparison most developers actually want is not "DeepSeek Agent vs Claude Code" but "Claude Code with DeepSeek vs Claude Code with Opus" — same harness, different model, different cost and capability profile. This article covers both framings: the harness comparison (Claude Code vs DeepSeek-native agents like DeepSeek-TUI) and the model comparison (Opus vs V4 Pro inside the same harness). For a structured overview of the four DeepSeek Agent archetypes this article draws from, [What Is a DeepSeek Agent](</blog/what-is-deepseek-agent>) defines the full taxonomy.
+So the comparison most developers actually want is not "DeepSeek Agent vs Claude Code" but "Claude Code with DeepSeek vs Claude Code with Opus" — same harness, different model, different cost and capability profile. This article covers both framings: the harness comparison (Claude Code vs DeepSeek-native agents like DeepSeek-TUI) and the model comparison (Opus vs V4 Pro inside the same harness). For a structured overview of the four DeepSeek Agent archetypes this article draws from, [What Is a DeepSeek Agent](/blog/what-is-deepseek-agent) defines the full taxonomy.
 
 ## 2\. Claude Code: What You Get with the Harness
 
@@ -42,13 +42,13 @@ The cost of that performance: Claude Opus 4.8 charges $5.00 per million input to
 
 ## 3\. DeepSeek Agent: What You Get with the Model
 
-DeepSeek V4 Pro and V4 Flash were released on April 24, 2026, with a 1-million-token context window, native function calling (up to 128 parallel tool calls), MCP support, and open weights under the MIT license, as documented on [DeepSeek's API platform](<https://api-docs.deepseek.com>). Both models are available through an OpenAI-compatible API at `https://api.deepseek.com` and an Anthropic-compatible API at `https://api.deepseek.com/anthropic`.
+DeepSeek V4 Pro and V4 Flash were released on April 24, 2026, with a 1-million-token context window, native function calling (up to 128 parallel tool calls), MCP support, and open weights under the MIT license, as documented on [DeepSeek's API platform](https://api-docs.deepseek.com). Both models are available through an OpenAI-compatible API at `https://api.deepseek.com` and an Anthropic-compatible API at `https://api.deepseek.com/anthropic`.
 
 The DeepSeek-native agents — DeepSeek-TUI, Reasonix, and Deep Code — are harnesses built specifically around V4's capabilities rather than retrofitted onto them. DeepSeek-TUI implements RLM fan-out (1 V4 Pro coordinator + up to 16 V4 Flash sub-agents), sandboxed tool execution, and MCP client/server support. Reasonix optimizes for session economics through prefix caching. Deep Code adds reasoning effort control across thinking modes.
 
 When developers configure Claude Code to use DeepSeek instead of Opus, they keep the Claude Code harness and swap the model backend. The workflow — plan, act, approve, review diffs — stays identical. What changes is the reasoning style (DeepSeek's chain-of-thought differs from Opus's architectural reasoning), the cost per turn, and the ceiling on complex multi-file refactors.
 
-DeepSeek V4 Pro's pricing — $0.435 per million input tokens (cache miss) and $0.87 per million output tokens, per [DeepSeek's official pricing](<https://api-docs.deepseek.com/quick_start/pricing>), makes agent loops that were economically irrational on Opus pricing become obvious on V4 Flash pricing. Running 16 parallel sub-agents, maintaining multi-hour sessions with full context, executing hundreds of tool calls per task — these patterns are architecturally enabled by DeepSeek's cost structure, not just cheaper versions of the same Opus workflow.
+DeepSeek V4 Pro's pricing — $0.435 per million input tokens (cache miss) and $0.87 per million output tokens, per [DeepSeek's official pricing](https://api-docs.deepseek.com/quick_start/pricing), makes agent loops that were economically irrational on Opus pricing become obvious on V4 Flash pricing. Running 16 parallel sub-agents, maintaining multi-hour sessions with full context, executing hundreds of tool calls per task — these patterns are architecturally enabled by DeepSeek's cost structure, not just cheaper versions of the same Opus workflow.
 
 ## 4\. Head-to-Head: Benchmarks, Context, and Architecture
 
@@ -60,7 +60,7 @@ DeepSeek V4 Pro's pricing — $0.435 per million input tokens (cache miss) and $
 
 The benchmark table tells a nuanced story rather than a simple winner. Claude Opus leads on the benchmarks that measure repo-scale engineering — multi-file refactors across interdependent modules, where architectural consistency over dozens of turns matters more than raw coding speed. DeepSeek V4 Pro leads on algorithmic coding and terminal agent tasks, where the model's reasoning is applied to bounded, well-defined problems rather than open-ended codebase navigation.
 
-Context window is a tie at 1M tokens — both can hold entire codebases, long conversation histories, or thousands of tool call results without truncation. The practical difference is cost: filling 500K tokens of context costs $2.50 on Opus input versus $0.22 on V4 Pro (cache miss) or $0.0018 at the [DeepSeek cache-hit rate](<https://api-docs.deepseek.com/quick_start/pricing>).
+Context window is a tie at 1M tokens — both can hold entire codebases, long conversation histories, or thousands of tool call results without truncation. The practical difference is cost: filling 500K tokens of context costs $2.50 on Opus input versus $0.22 on V4 Pro (cache miss) or $0.0018 at the [DeepSeek cache-hit rate](https://api-docs.deepseek.com/quick_start/pricing).
 
 For tool-calling reliability — the layer that determines whether an agent actually executes the right actions — V4 Pro and Opus 4.6 tied at 73.6 on MCPAtlas Public. The harness and your tool schema design matter more than the model choice for most tool-calling failures.
 
@@ -100,9 +100,9 @@ Claude Code with native Opus is the better choice in specific scenarios, and ack
 
 **Self-hosting and data sovereignty.** DeepSeek V4 weights are MIT-licensed and downloadable. Teams that cannot send code to external APIs — regulated industries, air-gapped environments, proprietary codebases with strict data handling requirements — can self-host V4 and run agent loops entirely on their own infrastructure. Claude Code offers no equivalent.
 
-**Developers building custom agents for non-coding tasks.** If your agent needs to query internal APIs, automate business workflows, or interact with proprietary systems, you are building a custom agent loop regardless of which coding harness you use. [How to Build a DeepSeek Agent](</blog/how-to-build-deepseek-agent>) covers the loop architecture — API setup, tool calling, and the production patterns you need — without forcing you into a coding-specific harness. [DeepSeek Agent Function Calling](</blog/deepseek-agent-function-calling>) goes deeper on the tool-calling layer specifically, from schema design to MCP integration.
+**Developers building custom agents for non-coding tasks.** If your agent needs to query internal APIs, automate business workflows, or interact with proprietary systems, you are building a custom agent loop regardless of which coding harness you use. [How to Build a DeepSeek Agent](/blog/how-to-build-deepseek-agent) covers the loop architecture — API setup, tool calling, and the production patterns you need — without forcing you into a coding-specific harness. [DeepSeek Agent Function Calling](/blog/deepseek-agent-function-calling) goes deeper on the tool-calling layer specifically, from schema design to MCP integration.
 
-**Non-developers who want DeepSeek to work on their actual desktop.** Both Claude Code and DeepSeek-TUI live in the terminal. If you are not a developer — or you are one who wants to skip the command line for certain tasks — a desktop client like [Floatboat DeepSeek Agent](<https://deepseek-agent.com>) puts the same V4 reasoning behind a GUI that reads your local files, drives a browser, remembers your preferences, and runs automations on a schedule. No API key, no terminal, no agent loop to build. The trade-off is the same as any managed tool versus a DIY one: less control over the tool surface in exchange for zero setup time.
+**Non-developers who want DeepSeek to work on their actual desktop.** Both Claude Code and DeepSeek-TUI live in the terminal. If you are not a developer — or you are one who wants to skip the command line for certain tasks — a desktop client like [Floatboat DeepSeek Agent](https://deepseek-agent.com) puts the same V4 reasoning behind a GUI that reads your local files, drives a browser, remembers your preferences, and runs automations on a schedule. No API key, no terminal, no agent loop to build. The trade-off is the same as any managed tool versus a DIY one: less control over the tool surface in exchange for zero setup time.
 
 ## 8\. The Hybrid Setup: Claude Code with DeepSeek as Backend
 
@@ -117,7 +117,7 @@ This gives you Claude Code's workflow (plan mode, diff review, permission prompt
 
 A tiered variant that several teams report using: configure Claude Code with DeepSeek as the default backend for all sessions, keep an Anthropic API key configured for explicit escalation, and switch models per task using Claude Code's model selection when the task complexity warrants it. Routine work stays on V4 Flash at minimal cost. The 5% of tasks that need Opus-level architectural reasoning get it — without paying Opus prices on the other 95%.
 
-DeepSeek's official awesome-deepseek-agent list includes Claude Code in its integrations guides, on the [official awesome-deepseek-agent repository](<https://github.com/deepseek-ai/awesome-deepseek-agent>), which confirms this is a supported and expected configuration path.
+DeepSeek's official awesome-deepseek-agent list includes Claude Code in its integrations guides, on the [official awesome-deepseek-agent repository](https://github.com/deepseek-ai/awesome-deepseek-agent), which confirms this is a supported and expected configuration path.
 
 ## Conclusion
 

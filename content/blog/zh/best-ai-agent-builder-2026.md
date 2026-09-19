@@ -19,7 +19,7 @@ draft: false
 
 大多数评测上来先摆集成数量和价格档位。这些重要，但决定不在那里。
 
-**我先看的是计费模型。**不是标价，而是计费的_单位_。Zapier 按任务计费，工作流里每个单独的动作都算一笔。一个 10 步的 Zap 跑 1000 次，你就烧掉 10,000 个任务。n8n 按执行次数计费——跑一次工作流算一次，不管里面有多少步骤。Make 按「操作」计费，每个模块单独计数。我去核实过当前数字：按 n8n 的[官方定价页](<https://n8n.io/pricing>)，云端 Starter 方案是 €24/月、含 2,500 次执行；Zapier Professional 按年付从 $19.99/月起、含 750 个任务。在等量的复杂工作流规模下，算下来 n8n 明显占优——一个 10 步工作流在 n8n 上和 1 步工作流同价，同样的自动化在 Zapier 上每次要烧 10 个任务。
+**我先看的是计费模型。**不是标价，而是计费的_单位_。Zapier 按任务计费，工作流里每个单独的动作都算一笔。一个 10 步的 Zap 跑 1000 次，你就烧掉 10,000 个任务。n8n 按执行次数计费——跑一次工作流算一次，不管里面有多少步骤。Make 按「操作」计费，每个模块单独计数。我去核实过当前数字：按 n8n 的[官方定价页](https://n8n.io/pricing)，云端 Starter 方案是 €24/月、含 2,500 次执行；Zapier Professional 按年付从 $19.99/月起、含 750 个任务。在等量的复杂工作流规模下，算下来 n8n 明显占优——一个 10 步工作流在 n8n 上和 1 步工作流同价，同样的自动化在 Zapier 上每次要烧 10 个任务。
 
 **第二点：平台是真支持 Agent，还是只是调个 AI API？**这俩有本质区别，我在这上面栽过跟头。在 Zap 里调一个 OpenAI 接口并不是 AI Agent——那是一条固定流程，只是恰好包含一个语言模型。真正的 Agent 需要跨多次运行的记忆、能根据上下文决定_调用哪个_工具，最好还要在信心不足时设置某种人工检查点。2025 年大多数平台把「AI Agent」写上了首页，但底层支撑它的架构并没有跟上。
 
@@ -35,9 +35,9 @@ draft: false
 
 **无代码构建工具**——Zapier、带 Maia AI 助手的 Make、Lindy——追求的是快速跑通一套可用的自动化。Zapier 推出了 Zapier Agents，可在其 8,000+ 应用生态里自主执行任务。只要你能用大白话描述工作流，往往一小时之内就能搭出第一版。诚实的代价是：你会很快撞到天花板。复杂分支逻辑、跨会话的持久记忆、自定义业务逻辑——要么只能靠维护起来很痛苦的变通方案，要么根本做不了。
 
-**低代码构建工具**——n8n、Dify、Flowise——居中。你在可视化画布里工作，需要时也能直接写 JavaScript 或 Python。n8n 2.0 于 2026 年 1 月发布，原生集成 LangChain、自带 70+ AI 节点，很可能是这一档里能力最强的。Dify 走全家桶路线——Agent 设计、RAG 流水线、可观测性装进同一平台。Flowise 专为 LangChain 工作流打造，拖拽式界面比直接写 Python 更亲民。按 [Rasa 的低代码 AI Agent 平台指南（2026 年 4 月）](<https://rasa.com/blog/best-low-code-ai-agents-platforms-for-2026/>)，这三家都提供免费的自托管部署，这是值得算进成本的一项。
+**低代码构建工具**——n8n、Dify、Flowise——居中。你在可视化画布里工作，需要时也能直接写 JavaScript 或 Python。n8n 2.0 于 2026 年 1 月发布，原生集成 LangChain、自带 70+ AI 节点，很可能是这一档里能力最强的。Dify 走全家桶路线——Agent 设计、RAG 流水线、可观测性装进同一平台。Flowise 专为 LangChain 工作流打造，拖拽式界面比直接写 Python 更亲民。按 [Rasa 的低代码 AI Agent 平台指南（2026 年 4 月）](https://rasa.com/blog/best-low-code-ai-agents-platforms-for-2026/)，这三家都提供免费的自托管部署，这是值得算进成本的一项。
 
-**开发者优先框架**——LangChain、LangGraph、CrewAI、AutoGen——给你最大的掌控和最高的上限，代价是相当可观的搭建时间。LangChain 仍是主流标准，LangGraph 则加了显式状态管理，以及面向多 Agent 系统的图式编排。按 [StackOne 的 2026 AI Agent 工具全景](<https://www.stackone.com/blog/ai-agent-tools-landscape-2026/>)，CrewAI 在《财富》500 强中针对角色型多 Agent 配置的采用率已达 60% 以上。这些框架免费或开源；真正的成本是工程时间。
+**开发者优先框架**——LangChain、LangGraph、CrewAI、AutoGen——给你最大的掌控和最高的上限，代价是相当可观的搭建时间。LangChain 仍是主流标准，LangGraph 则加了显式状态管理，以及面向多 Agent 系统的图式编排。按 [StackOne 的 2026 AI Agent 工具全景](https://www.stackone.com/blog/ai-agent-tools-landscape-2026/)，CrewAI 在《财富》500 强中针对角色型多 Agent 配置的采用率已达 60% 以上。这些框架免费或开源；真正的成本是工程时间。
 
 **工作区原生构建工具**——Microsoft Copilot Studio、Google Vertex AI Agent Builder、Salesforce Agentforce——如果你的组织已经深度依赖其中某个生态，这是阻力最小的一条路。代价是厂商锁定，以及定价绑在企业级授权档位上，起步阶段很难预测。
 
@@ -51,7 +51,7 @@ draft: false
 
 **在 Zapier 上**：我用 Zapier Agents 大概 45 分钟就做出了可用的版本，感觉很快。然后我看了下任务数——处理一条线索走 12 步，等于每次运行烧 12 个任务。每月 200 条线索，光这一个流程就要 2,400 个任务。Professional 套餐上限是 750。下单之前值得知道。另外：运行之间的记忆不是原生的。Agent 不知道以前见没见过这家公司，除非你用外部数据库做变通。
 
-**在 n8n 上**：搭起来更费时——第一次大概 90 分钟，大部分时间耗在纠结 HTTP 节点的 JSON 语法上。跑通之后，我用一个 Postgres 节点加了持久记忆（n8n 2.0 通过它的 Memory Nodes 原生支持这个——[n8n 的 AI Agent 文档](<https://docs.n8n.io/advanced-ai/intro-tutorial/>)解释了这些节点怎么串起来）。整条流程每条线索只算一次执行。每月 200 条线索就是 200 次执行——Starter 方案轻松覆盖。我跑了两遍，确认记忆功能不是碰巧生效。它不是。
+**在 n8n 上**：搭起来更费时——第一次大概 90 分钟，大部分时间耗在纠结 HTTP 节点的 JSON 语法上。跑通之后，我用一个 Postgres 节点加了持久记忆（n8n 2.0 通过它的 Memory Nodes 原生支持这个——[n8n 的 AI Agent 文档](https://docs.n8n.io/advanced-ai/intro-tutorial/)解释了这些节点怎么串起来）。整条流程每条线索只算一次执行。每月 200 条线索就是 200 次执行——Starter 方案轻松覆盖。我跑了两遍，确认记忆功能不是碰巧生效。它不是。
 
 **在 Flowise 上**：适合已经熟悉 LangChain 的人。大约一小时就搭好了一条可用的链。自托管免费。复杂多步编排的上限比 n8n 低，但对付直来直去的 Agent 工作流绰绰有余。
 
@@ -71,7 +71,7 @@ Agent 坏掉的原因通常就那么几条：它调用的 API 改了返回格式
 
 **有日志的低代码平台好很多。**n8n 内置执行日志——我能精确看到工作流在哪一步挂的、为什么挂。Dify 自带监控。这些功能不亮眼，但正是它们决定了 Agent 会不会变成「跑了两周就得重搭的实验」。
 
-**开发者框架坏得响亮**——错误直接出现在代码里，链路出现在 LangSmith 这类工具中。[LangChain 关于 LangSmith 追踪的文档](<https://docs.smith.langchain.com/>)讲得很清楚。配置起来是真有开销，但只要东西跑在生产环境，这份可见性就值回票价。
+**开发者框架坏得响亮**——错误直接出现在代码里，链路出现在 LangSmith 这类工具中。[LangChain 关于 LangSmith 追踪的文档](https://docs.smith.langchain.com/)讲得很清楚。配置起来是真有开销，但只要东西跑在生产环境，这份可见性就值回票价。
 
 我的经验法则：如果你做不到在头一个月里至少每周检查一次，就选原生日志最好的那个平台。
 
@@ -95,13 +95,13 @@ Agent 坏掉的原因通常就那么几条：它调用的 API 改了返回格式
 
 ## 往期文章
 
-  * 拿不准 AI Agent、自动化与工作区到底怎么选？这篇讲清了每类在单人工作流里真正的位置 → [Workspace Agents vs Workflow Builders](</blog/workspace-agents-vs-workflow-builders>)
+  * 拿不准 AI Agent、自动化与工作区到底怎么选？这篇讲清了每类在单人工作流里真正的位置 → [Workspace Agents vs Workflow Builders](/blog/workspace-agents-vs-workflow-builders)
 
-  * 选构建工具之前，先弄懂「agentic AI」到底意味着什么、大多数工具又是在哪里悄悄碰到上限 → [AI Agent Tools for Solo Operators](</blog/ai-agent-solo-operators>)
+  * 选构建工具之前，先弄懂「agentic AI」到底意味着什么、大多数工具又是在哪里悄悄碰到上限 → [AI Agent Tools for Solo Operators](/blog/ai-agent-solo-operators)
 
-  * 如果你在搭第一个工作流，这篇指南建议从一个无聊的重复任务开始，而不是一上来就过度设计 → [AI Workflow for Solo Founders](</blog/ai-workflow-for-solo-founders>)
+  * 如果你在搭第一个工作流，这篇指南建议从一个无聊的重复任务开始，而不是一上来就过度设计 → [AI Workflow for Solo Founders](/blog/ai-workflow-for-solo-founders)
 
-  * n8n、Make 等工作流工具很强大——但随着 Agent 越来越复杂，上下文和记忆为什么会成为真正的瓶颈 → [Why AI Forgets Between Sessions](</blog/why-ai-forgets-between-sessions>)
+  * n8n、Make 等工作流工具很强大——但随着 Agent 越来越复杂，上下文和记忆为什么会成为真正的瓶颈 → [Why AI Forgets Between Sessions](/blog/why-ai-forgets-between-sessions)
 
-  * 好奇工作区式 Agent 相比独立构建工具的位置？这篇讲的是跨应用 AI 工作流背后更大的转变 → [AI Workspace Agents for Solo Operators](</blog/ai-workspace-agents>)
+  * 好奇工作区式 Agent 相比独立构建工具的位置？这篇讲的是跨应用 AI 工作流背后更大的转变 → [AI Workspace Agents for Solo Operators](/blog/ai-workspace-agents)
 

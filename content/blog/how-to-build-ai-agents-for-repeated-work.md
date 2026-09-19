@@ -33,7 +33,7 @@ Good candidates look like:
 
 Bad candidates: anything that requires judgment calls that change every time, anything with unpredictable inputs, anything where you're not sure what "done" looks like.
 
-As [OpenAI's workspace agent guide](<https://openai.com/academy/workspace-agents/>) puts it — shared agents work best when they're tied to a **specific, recurring workflow** your team already understands. The word "specific" is doing a lot of work there. If you can't describe the job in one sentence, you're not ready to automate it.
+As [OpenAI's workspace agent guide](https://openai.com/academy/workspace-agents/) puts it — shared agents work best when they're tied to a **specific, recurring workflow** your team already understands. The word "specific" is doing a lot of work there. If you can't describe the job in one sentence, you're not ready to automate it.
 
 **Exit condition:** If you can't name one concrete repeated task right now, stop here. Don't build anything yet.
 
@@ -53,7 +53,7 @@ Draw three columns:
 
 This mapping exercise does two things. First, it shows you whether the task is actually automatable — if the decisions column is full of "it depends on context I can't describe," you've found your exit condition. Second, it tells you exactly what to put in your prompt or workflow later.
 
-According to [Anthropic's research on building effective agents](<https://www.anthropic.com/research/building-effective-agents>), ​**the most successful implementations use simple, composable patterns rather than complex frameworks** ​. That simplicity starts at the mapping stage — not at the tooling stage.
+According to [Anthropic's research on building effective agents](https://www.anthropic.com/research/building-effective-agents), ​**the most successful implementations use simple, composable patterns rather than complex frameworks** ​. That simplicity starts at the mapping stage — not at the tooling stage.
 
 ![how3.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749645548-530c5952-179c-461f-a06e-06ad50ee1fad.webp)
 
@@ -65,7 +65,7 @@ Here's a truth the AI industry doesn't advertise enough: ​**most repeated work
 
 **A better prompt** — If your task is self-contained and runs inside a single conversation (e.g., "reformat this transcript"), a well-structured prompt with clear instructions and output format might be everything you need. Test this first, always. A strong prompt is free, instant to iterate, and requires zero infrastructure.
 
-**An automation tool** — If the task involves moving data between apps (e.g., "when a form is submitted, extract the key fields and post to Slack"), a no-code tool like n8n, Zapier, or Make will get you there without writing a line of code. These tools now have native AI nodes that let you drop an LLM step into any workflow. [n8n's AI agent platform](<https://n8n.io/ai-agents/>) is a good example — it lets you add conditions and filter data before the AI even touches it, which keeps costs down and outputs clean.
+**An automation tool** — If the task involves moving data between apps (e.g., "when a form is submitted, extract the key fields and post to Slack"), a no-code tool like n8n, Zapier, or Make will get you there without writing a line of code. These tools now have native AI nodes that let you drop an LLM step into any workflow. [n8n's AI agent platform](https://n8n.io/ai-agents/) is a good example — it lets you add conditions and filter data before the AI even touches it, which keeps costs down and outputs clean.
 
 **A no-code builder** — If your task requires more back-and-forth reasoning (e.g., "research this company and summarize what matters for a sales call"), a builder tool with memory and tool access is worth considering. These are drag-and-drop environments where the agent can call APIs, search the web, or pull from a knowledge base.
 
@@ -83,7 +83,7 @@ Your first agent draft will not be right. That's fine — the goal of this step 
 
 Build a simple checkpoint: after the agent generates output, it goes to you (or a teammate) for a quick approve/edit/reject. Over time, you'll notice that most outputs fall into one of three buckets: always right, always wrong in the same way, or unpredictable. The first bucket you can stop reviewing. The second bucket you fix in the prompt. The third bucket is a signal you've picked the wrong task.
 
-[Gartner research cited in enterprise AI guides](<https://onereach.ai/blog/best-practices-for-ai-agent-implementations/>) predicts that over 40% of agentic AI projects will fail or be cancelled by 2027 due to escalating costs, unclear value, or insufficient risk controls. The human review step is your direct defense against becoming that statistic. It's not overhead — it's your feedback loop.
+[Gartner research cited in enterprise AI guides](https://onereach.ai/blog/best-practices-for-ai-agent-implementations/) predicts that over 40% of agentic AI projects will fail or be cancelled by 2027 due to escalating costs, unclear value, or insufficient risk controls. The human review step is your direct defense against becoming that statistic. It's not overhead — it's your feedback loop.
 
 ![how4.png](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749654339-123add4e-863e-4c0d-bab5-c8798d1436bd.webp)
 
@@ -105,13 +105,13 @@ Pick one repeated task, map it carefully, choose the lightest build path that ge
 
 ## Previous Posts:
 
-  * Most first-time builders overcomplicate AI agents. Here’s why starting with one narrow workflow usually works better than chasing a “full AI operating system” — [what is agentic AI tools](</blog/ai-agent-solo-operators>)
+  * Most first-time builders overcomplicate AI agents. Here’s why starting with one narrow workflow usually works better than chasing a “full AI operating system” — [what is agentic AI tools](/blog/ai-agent-solo-operators)
 
-  * Workflow builders and workspace agents solve very different problems — this breakdown helps you choose the lightest setup that actually fits your work — [workspace agents vs workflow builders](</blog/workspace-agents-vs-workflow-builders>)
+  * Workflow builders and workspace agents solve very different problems — this breakdown helps you choose the lightest setup that actually fits your work — [workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
 
-  * Before automating everything, understand the difference between assistants, workflow agents, coding agents, and autonomous systems — [what are Claude managed agents](</blog/what-are-claude-managed-agents>)
+  * Before automating everything, understand the difference between assistants, workflow agents, coding agents, and autonomous systems — [what are Claude managed agents](/blog/what-are-claude-managed-agents)
 
-  * AI workflows usually fail from too much complexity, not too little capability. This is the practical framework solo founders are using instead — [AI workflow for solo founders](</blog/ai-workflow-for-solo-founders>)
+  * AI workflows usually fail from too much complexity, not too little capability. This is the practical framework solo founders are using instead — [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
 
-  * If your AI setup already feels messy, fragmented context between tools is probably the bottleneck — not the model quality itself — [why AI workflows feel fragmented](</blog/workspace-agents-for-solo-operators>)
+  * If your AI setup already feels messy, fragmented context between tools is probably the bottleneck — not the model quality itself — [why AI workflows feel fragmented](/blog/workspace-agents-for-solo-operators)
 

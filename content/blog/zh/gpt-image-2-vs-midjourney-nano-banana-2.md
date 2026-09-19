@@ -17,7 +17,7 @@ draft: false
 
 ## 为什么现在值得做这个对比
 
-大约四个月内，三件事变了。**GPT Image 2 于 2026 年 4 月 21 日发布**，立刻登上 Image Arena 排行榜榜首，领先此前的最佳成绩 242 分。**Midjourney V8 alpha 于 3 月 17 日发布**，代码库整个重写，生成速度约为原来的 5 倍。[Nano Banana 2](<https://gemini.google/jp/overview/image-generation/?hl=ja-JP>) 于 2 月 26 日上线，在 Gemini 应用里免费、API 上则便宜得激进。另外，**DALL-E 2 和 DALL-E 3 将于 2026 年 5 月 12 日退役**——如果你一直在用它们，时间所剩不多了。
+大约四个月内，三件事变了。**GPT Image 2 于 2026 年 4 月 21 日发布**，立刻登上 Image Arena 排行榜榜首，领先此前的最佳成绩 242 分。**Midjourney V8 alpha 于 3 月 17 日发布**，代码库整个重写，生成速度约为原来的 5 倍。[Nano Banana 2](https://gemini.google/jp/overview/image-generation/?hl=ja-JP) 于 2 月 26 日上线，在 Gemini 应用里免费、API 上则便宜得激进。另外，**DALL-E 2 和 DALL-E 3 将于 2026 年 5 月 12 日退役**——如果你一直在用它们，时间所剩不多了。
 
 所以三选一的选择空间变了，性价比曲线也移动了。值得重新审视一下你的订阅。
 
@@ -29,7 +29,7 @@ draft: false
 
 ### 文字渲染
 
-这是 GPT Image 2 完全不是一个量级的唯一点。独立评测认为它在拉丁、中日韩、印地语和孟加拉语等文字上的字符级准确率约为 99%——Midjourney V8 在这方面确实有了长足进步，但主要限于拉丁文字；Nano Banana 2 表现扎实，但在密集文本上还没到同一水平。据 [OpenAI 官方公告](<https://openai.com/index/introducing-chatgpt-images-2-0/>)，任何语言下的清晰文字正是本次升级的头条，而我的实测确实如此。
+这是 GPT Image 2 完全不是一个量级的唯一点。独立评测认为它在拉丁、中日韩、印地语和孟加拉语等文字上的字符级准确率约为 99%——Midjourney V8 在这方面确实有了长足进步，但主要限于拉丁文字；Nano Banana 2 表现扎实，但在密集文本上还没到同一水平。据 [OpenAI 官方公告](https://openai.com/index/introducing-chatgpt-images-2-0/)，任何语言下的清晰文字正是本次升级的头条，而我的实测确实如此。
 
 ### 系列作品的角色一致性
 
@@ -51,9 +51,9 @@ GPT Image 2 的 Thinking 模式可以从单条提示词生成最多 8 帧、且�
 
 
 
-API 按张计价：GPT Image 2 约 0.04–0.35 美元；[Nano Banana 2 约每张 0.045–0.151 美元](<https://openrouter.ai/google/gemini-3.1-flash-image-preview>)；Midjourney 没有公开 API。注意：**对 [Midjourney](<https://www.midjourney.com/explore?tab=video_top>) 而言，年收入超过 100 万美元的公司必须用 Pro 档（每月 60 美元）或 Mega 档（每月 120 美元）**——对创作者档位没影响，但如果你工作室要扩张，值得知道。
+API 按张计价：GPT Image 2 约 0.04–0.35 美元；[Nano Banana 2 约每张 0.045–0.151 美元](https://openrouter.ai/google/gemini-3.1-flash-image-preview)；Midjourney 没有公开 API。注意：**对 [Midjourney](https://www.midjourney.com/explore?tab=video_top) 而言，年收入超过 100 万美元的公司必须用 Pro 档（每月 60 美元）或 Mega 档（每月 120 美元）**——对创作者档位没影响，但如果你工作室要扩张，值得知道。
 
-[Midjourney 官方套餐对比页](<https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans>)是他们各档位的权威来源；我写作时核对过。
+[Midjourney 官方套餐对比页](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)是他们各档位的权威来源；我写作时核对过。
 
 ### 速度与延迟
 
@@ -83,11 +83,11 @@ GPT Image 2 在此领先，而且优势不小。Nano Banana 2 处理中日韩文
 
 **弱在：**纯粹的 artistic 风格作品。做阴郁、绘画感、社论风的作品时，Midjourney 生成的图仍然更_有意思_。GPT Image 2 的图「正确」；Midjourney 的图「有表现力」。这是两回事。
 
-它在像素级精确摆放、品牌 logo 还原、复刻特定受版权保护 IP 上也仍有短板——[The Next Web 的评测](<https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation>)如实讲了这些取舍，下单前值得一读。
+它在像素级精确摆放、品牌 logo 还原、复刻特定受版权保护 IP 上也仍有短板——[The Next Web 的评测](https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation)如实讲了这些取舍，下单前值得一读。
 
 ## Midjourney：仍在领先之处，与落后之处
 
-**领先在：**纯粹的审美质感。如果你的产出是 moodboard、概念美术、社论视觉，或任何「好看」比「技术准确」更重要的东西，V8 仍有优势。那种绘画般的纹理、电影感的布光、它对氛围的拿捏——没有别的东西有同样的感觉。[V8 alpha 发布说明](<https://wavespeed.ai/blog/posts/what-is-midjourney-v8-features-pricing-how-to-use-2026/>)列出了速度与质量跃升；光是 5 倍提速就让 V7 显得过时。
+**领先在：**纯粹的审美质感。如果你的产出是 moodboard、概念美术、社论视觉，或任何「好看」比「技术准确」更重要的东西，V8 仍有优势。那种绘画般的纹理、电影感的布光、它对氛围的拿捏——没有别的东西有同样的感觉。[V8 alpha 发布说明](https://wavespeed.ai/blog/posts/what-is-midjourney-v8-features-pricing-how-to-use-2026/)列出了速度与质量跃升；光是 5 倍提速就让 V7 显得过时。
 
 **落后在：**任何文字密集、多语言、或面向生产管线的东西。没有公开 API，对想在生产流里集成出图的单人创业者仍然很伤。GPU 时长的计费模式不透明——你没法像按张计价那样预测每月成本。角色一致性虽有改善，仍比对手需要更多提示词工程功夫。
 
@@ -149,15 +149,15 @@ GPT Image 2 在此领先，而且优势不小。Nano Banana 2 处理中日韩文
 
 ## 往期文章
 
-  * [AI 工作区和 ChatGPT 的真正差别是什么？](</blog/ai-workspace-agents>)
+  * [AI 工作区和 ChatGPT 的真正差别是什么？](/blog/ai-workspace-agents)
 
-  * [不确定 AI Agent 到底做什么？](</blog/ai-agent-use-cases-real-examples>)
+  * [不确定 AI Agent 到底做什么？](/blog/ai-agent-use-cases-real-examples)
 
-  * [想自己搭工作流？](</blog/how-to-build-an-ai-agent>)
+  * [想自己搭工作流？](/blog/how-to-build-an-ai-agent)
 
-  * [如果你在意工作流在实践中到底怎么跑，这篇挖得更深](</blog/ai-agent-workflow-vibe-coding>)：
+  * [如果你在意工作流在实践中到底怎么跑，这篇挖得更深](/blog/ai-agent-workflow-vibe-coding)：
 
-  * [单人创业者如何用 AI 像完整团队一样工作](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [单人创业者如何用 AI 像完整团队一样工作](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
 以上就是我的结论。真正的选择取决于你做什么东西。如果你拿不准，这周就从免费的 Nano Banana 2 档开始，需要精修成品时再叠上 GPT Image 2，只有当你想念某个别人给不出的特定视觉调性时，才加 Midjourney。
 

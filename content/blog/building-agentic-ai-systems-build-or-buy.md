@@ -23,7 +23,7 @@ A system is what happens when that agent needs to talk to other agents, remember
 
 The shift usually happens around three signals. First, you find yourself duct-taping multiple agents together — one does research, another formats, a third checks against a style guide — and you're manually passing outputs between them. Second, you need persistence: the agent should remember what happened last Tuesday without you re-explaining everything. Third, other people start using it, and suddenly "just trust the output" isn't good enough.
 
-Anthropic put it well in their guide on [building effective agents](<https://anthropic.com/research/building-effective-agents>): they recommend starting with the simplest possible solution and only increasing complexity when needed. Workflows — where tools and LLMs follow predefined paths — should come before fully autonomous agents. That advice is solid. But it also means that when you _do_ need the next level, you need to think carefully about whether you're building it, buying it, or outsourcing the build.
+Anthropic put it well in their guide on [building effective agents](https://anthropic.com/research/building-effective-agents): they recommend starting with the simplest possible solution and only increasing complexity when needed. Workflows — where tools and LLMs follow predefined paths — should come before fully autonomous agents. That advice is solid. But it also means that when you _do_ need the next level, you need to think carefully about whether you're building it, buying it, or outsourcing the build.
 
 ![2.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416388917-b1def5dd-72f1-49d4-9163-1f77ea13ac08.webp)
 
@@ -45,11 +45,11 @@ The honest answer? Most people I know in the solo/small-team space start with bu
 
 This is the part where things get real. When you move from a single agent to ​**developing an agentic AI system** ​, five things suddenly need answers:
 
-**Memory.** A standalone Custom GPT has no memory between sessions — [OpenAI's documentation confirms this](<https://help.openai.com/en/articles/8554407-gpts-in-chatgpt>): each conversation starts fresh. At system level, you need something that persists. That might be a database, a vector store, or a structured knowledge graph. The choice depends on whether your agent needs to recall facts (structured) or context (semantic). I've been experimenting with both, and my honest take is that most small teams should start with a simple key-value store or a Google Sheet before investing in vector infrastructure. Don't over-engineer the memory layer until you know what needs remembering.
+**Memory.** A standalone Custom GPT has no memory between sessions — [OpenAI's documentation confirms this](https://help.openai.com/en/articles/8554407-gpts-in-chatgpt): each conversation starts fresh. At system level, you need something that persists. That might be a database, a vector store, or a structured knowledge graph. The choice depends on whether your agent needs to recall facts (structured) or context (semantic). I've been experimenting with both, and my honest take is that most small teams should start with a simple key-value store or a Google Sheet before investing in vector infrastructure. Don't over-engineer the memory layer until you know what needs remembering.
 
 **Tools.** Single agents use the tools you give them — web browsing, code execution, file access. Systems need tool orchestration: which agent gets which tools, in what order, and what happens when a tool fails mid-task. This is where frameworks like LangGraph or CrewAI come in if you're building, or platform features if you're buying. I haven't fully worked out my own workflow with multi-tool orchestration yet, but I've put enough hours in to know that the debugging is where 80% of the time goes.
 
-**Permissions.** When it's just you, permissions don't matter — you trust yourself. The moment someone else uses your system, you need to decide: can this agent read customer data? Can it send emails? Can it modify a shared document? According to [LangChain's 2026 State of Agent Engineering report](<https://www.langchain.com/state-of-agent-engineering>), 57% of surveyed organizations now have agents in production, but quality and governance are still the top barriers. Permissions are boring until they're a crisis.
+**Permissions.** When it's just you, permissions don't matter — you trust yourself. The moment someone else uses your system, you need to decide: can this agent read customer data? Can it send emails? Can it modify a shared document? According to [LangChain's 2026 State of Agent Engineering report](https://www.langchain.com/state-of-agent-engineering), 57% of surveyed organizations now have agents in production, but quality and governance are still the top barriers. Permissions are boring until they're a crisis.
 
 ![3.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416401483-9b7fe0c9-a289-4062-8d25-9f01ae8d87c8.webp)
 
@@ -63,7 +63,7 @@ Here's the thing nobody talks about enough: the build decision isn't just "can I
 
 I used to think more tools meant more productivity. I don't anymore. Every new component in your system is something that can break, something that needs updating, and something you have to explain to the next person who touches it.
 
-If you're ​**building AI agents from scratch** ​, you own the upside — full customization, no vendor lock-in, no monthly fees beyond API costs. But you also own every failure mode. When OpenAI retires a model (and they do — GPT-4o was [fully retired in April 2026](<https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes>)), you're the one migrating your prompts. When a tool integration changes its API, you're the one fixing it on a Saturday.
+If you're ​**building AI agents from scratch** ​, you own the upside — full customization, no vendor lock-in, no monthly fees beyond API costs. But you also own every failure mode. When OpenAI retires a model (and they do — GPT-4o was [fully retired in April 2026](https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes)), you're the one migrating your prompts. When a tool integration changes its API, you're the one fixing it on a Saturday.
 
 If you buy a platform, you trade that maintenance burden for feature limitations and, usually, some form of vendor lock-in. The platform handles model updates, but you're constrained to what it supports. For a solo operator running three or four workflows, that trade-off often makes sense. For a team with a specific, high-value workflow that needs to behave exactly right — building is usually worth it.
 
@@ -79,7 +79,7 @@ I've found it useful to map the build-or-buy decision to where your workflow act
 
 **Stage 2: Validated.** The workflow works. You've used it 20+ times. You know the inputs, outputs, and common failure modes. Now you can make an informed decision. If the platform you're on handles it well — stay. If you're hitting limits — start building the specific pieces that are constrained.
 
-**Stage 3: Production.** The workflow runs regularly, other people depend on it, and reliability matters. This is where you need monitoring, recovery, and governance. If you built it, add observability. If you bought it, evaluate whether the platform's governance features are sufficient. Most platforms are catching up here — Anthropic's [guide on writing effective tools for agents](<https://www.anthropic.com/engineering/writing-tools-for-agents>) covers some of the principles that matter at this stage, particularly around designing tools that agents can use reliably.
+**Stage 3: Production.** The workflow runs regularly, other people depend on it, and reliability matters. This is where you need monitoring, recovery, and governance. If you built it, add observability. If you bought it, evaluate whether the platform's governance features are sufficient. Most platforms are catching up here — Anthropic's [guide on writing effective tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents) covers some of the principles that matter at this stage, particularly around designing tools that agents can use reliably.
 
 **Stage 4: Scaling.** Multiple workflows, multiple agents, multiple users. This is system territory. You're either deeply committed to a platform ecosystem or you're running your own orchestration layer. Few solo operators or small teams reach this stage with more than one or two workflows, and that's fine. Get Stage 3 right first.
 
@@ -93,13 +93,13 @@ I'll check back in after I've moved two more of my own workflows from Stage 2 to
 
 ## Previous Posts:
 
-  * If you're still figuring out whether you need a single agent or something bigger, start here: [Agentic AI Tools: A Category Map Before You Build Anything](</blog/agentic-ai-tools>)
+  * If you're still figuring out whether you need a single agent or something bigger, start here: [Agentic AI Tools: A Category Map Before You Build Anything](/blog/agentic-ai-tools)
 
-  * Before building an entire system, make sure you've already validated one repeatable workflow: [How to Build AI Agents for Repeated Work](</blog/how-to-build-ai-agents-for-repeated-work>)
+  * Before building an entire system, make sure you've already validated one repeatable workflow: [How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work)
 
-  * Curious where workflow automation ends and true agent systems begin? This breaks down the line clearly: [AI Workflow vs Agent Workflow: Where the Line Actually Is](</blog/ai-agent-workflow-vibe-coding>)
+  * Curious where workflow automation ends and true agent systems begin? This breaks down the line clearly: [AI Workflow vs Agent Workflow: Where the Line Actually Is](/blog/ai-agent-workflow-vibe-coding)
 
-  * If you're considering buying instead of building, this guide helps evaluate when outside help actually makes sense: [AI Automation Agency: Do You Actually Need One?](</blog/ai-automation-agency-do-you-need-one>)
+  * If you're considering buying instead of building, this guide helps evaluate when outside help actually makes sense: [AI Automation Agency: Do You Actually Need One?](/blog/ai-automation-agency-do-you-need-one)
 
-  * Thinking about long-term coordination between tools, memory, and context? This is a natural next read: [AI Workspace Agents: What They Actually Change for Solo Operators](</blog/ai-workspace-agents>)
+  * Thinking about long-term coordination between tools, memory, and context? This is a natural next read: [AI Workspace Agents: What They Actually Change for Solo Operators](/blog/ai-workspace-agents)
 

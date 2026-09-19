@@ -25,7 +25,7 @@ The reasoning usually goes: _I'm not ready to charge yet. Let me do a few free e
 
 This is the one I didn't fully believe until I experienced it. Free engagements and paid engagements are ​ _different relationships_ ​. Not just economically — behaviorally.
 
-Growth advisor Elena Verna writes about exactly this in her [solopreneur pricing guide](<https://www.elenaverna.com/p/a-solopreneurs-guide-to-pricing-yourself>): she didn't charge her first several engagements because she genuinely didn't yet know what she was offering. That's a defensible position. The problem is that feedback from free users doesn't always translate. A free client will often say "this is great" because they have no skin in the game. The real signal comes from whether someone is willing to exchange something of value for what you're offering.
+Growth advisor Elena Verna writes about exactly this in her [solopreneur pricing guide](https://www.elenaverna.com/p/a-solopreneurs-guide-to-pricing-yourself): she didn't charge her first several engagements because she genuinely didn't yet know what she was offering. That's a defensible position. The problem is that feedback from free users doesn't always translate. A free client will often say "this is great" because they have no skin in the game. The real signal comes from whether someone is willing to exchange something of value for what you're offering.
 
 Paying customers push back differently. They ask harder questions. They get more specific about what they need. That friction is the feedback loop you're looking for.
 
@@ -55,7 +55,7 @@ This matters early because the model you choose shapes how clients think about t
 
 **Hourly** is simple to calculate and easy to explain. It's also a trap if you're selling expertise rather than labor. Clients start optimizing for hours instead of outcomes.
 
-**Project-based** is cleaner. You agree on a deliverable, name a price. According to [QuickBooks' pricing strategy guide](<https://quickbooks.intuit.com/r/pricing-strategy/pricing-strategies/>), project-based pricing lets you earn more for your efficiency — meaning the better you get at your work, the more you make per hour without renegotiating anything.
+**Project-based** is cleaner. You agree on a deliverable, name a price. According to [QuickBooks' pricing strategy guide](https://quickbooks.intuit.com/r/pricing-strategy/pricing-strategies/), project-based pricing lets you earn more for your efficiency — meaning the better you get at your work, the more you make per hour without renegotiating anything.
 
 **Value-based** is the hardest to set up but the most defensible long-term. The price reflects what the outcome is worth to the client's business, not what it costs you to produce. This requires a real conversation about the client's situation — which, interestingly, is also how you learn whether they're the right client.
 
@@ -77,7 +77,7 @@ This isn't a formula you run mechanically. It's a sanity check. It stops you fro
 
 I've heard the opposite more times than I can count: _just start low and raise prices later._ The problem is, it's harder than it sounds. Once you've set an expectation, changing it costs relationship capital. Early clients become anchors. Word-of-mouth travels at your current price.
 
-There's also a subtler issue: **low prices attract clients optimizing for cost.** Those clients are often the hardest to work with, quickest to push scope, and least likely to refer you to people with real budget. As [freelancefin's 2025 rate-setting guide](<https://www.jobbers.io/freelance-rate-calculator-pricing-guide-2025-maximize-your-earnings/>) puts it, a rate that's too low signals inexperience or a lack of confidence — attracting bargain-hunting clients who are often the most difficult to work with.
+There's also a subtler issue: **low prices attract clients optimizing for cost.** Those clients are often the hardest to work with, quickest to push scope, and least likely to refer you to people with real budget. As [freelancefin's 2025 rate-setting guide](https://www.jobbers.io/freelance-rate-calculator-pricing-guide-2025-maximize-your-earnings/) puts it, a rate that's too low signals inexperience or a lack of confidence — attracting bargain-hunting clients who are often the most difficult to work with.
 
 Starting higher, even if it means fewer early clients, tends to produce better data: the people who say yes are showing you what kind of problem they believe you solve.
 
@@ -95,7 +95,7 @@ If everyone says no, dig into why before adjusting the price. "Too expensive" of
 
 ### How to Raise Prices Without Losing Momentum
 
-The cleanest way: raise your price for new clients first, keep existing clients at their current rate, and be transparent if they ask. [SystemX's guide to raising professional service rates](<https://www.systemx.net/how-to-raise-your-professional-service-rates-in-2025-without-losing-clients/>) makes a point worth noting: sustainable rate increases come from stronger demand signals and clearer positioning — not from overnight announcements of doubled rates.
+The cleanest way: raise your price for new clients first, keep existing clients at their current rate, and be transparent if they ask. [SystemX's guide to raising professional service rates](https://www.systemx.net/how-to-raise-your-professional-service-rates-in-2025-without-losing-clients/) makes a point worth noting: sustainable rate increases come from stronger demand signals and clearer positioning — not from overnight announcements of doubled rates.
 
 Give yourself a few months of new-client pricing before making changes to existing relationships. One pattern that works well: announce the increase with lead time and a reason. "I'm raising rates on [date] because my capacity is limited and I want to prioritize longer engagements." That's not justification — it's positioning.
 
@@ -105,7 +105,7 @@ Give yourself a few months of new-client pricing before making changes to existi
 
 Your price isn't just about revenue. It communicates ​ _who you're for_ ​. A $500 project and a $5,000 project will attract different people, generate different conversations, and shape different expectations about what the engagement looks like.
 
-[Gusto's 2025 New Business Formation Survey ](<https://gusto.com/resources/gusto-insights/new-business-formation-report-2025>)found that 77% of solopreneurs reported profitability in their first year — but profitability and sustainability aren't the same thing. Plenty of people make money in year one at prices that trap them in year two. If your price is too low, you need more volume. More volume means less time per client, which means worse outcomes, which means weaker referrals, which means you're constantly refilling a leaky bucket.
+[Gusto's 2025 New Business Formation Survey ](https://gusto.com/resources/gusto-insights/new-business-formation-report-2025)found that 77% of solopreneurs reported profitability in their first year — but profitability and sustainability aren't the same thing. Plenty of people make money in year one at prices that trap them in year two. If your price is too low, you need more volume. More volume means less time per client, which means worse outcomes, which means weaker referrals, which means you're constantly refilling a leaky bucket.
 
 **Pricing higher, with fewer better-fit clients, is usually the more sustainable path.** Not always — but more often than the "start accessible" advice suggests.
 
@@ -135,7 +135,7 @@ The trap isn't doing any of this. The trap is doing it ​ _by default_ ​, wit
 
 What you actually give up when you price only for accessibility: the kind of clients who value outcomes over cost. The data that comes from someone choosing you at a real number. The positioning signal that attracts future work at the level you want.
 
-Worth reading on this: [the State of Solopreneur Pricing 2026 report](<https://kenyarmosh.com/blog/the-state-of-solopreneur-pricing-2026/>) breaks down why most solopreneurs know they're undercharging but don't change it — and the answer is almost never "they lack confidence." It's a pipeline and leverage problem in disguise.
+Worth reading on this: [the State of Solopreneur Pricing 2026 report](https://kenyarmosh.com/blog/the-state-of-solopreneur-pricing-2026/) breaks down why most solopreneurs know they're undercharging but don't change it — and the answer is almost never "they lack confidence." It's a pipeline and leverage problem in disguise.
 
 Okay, I think I've been sitting with this question long enough to say something useful. The core thing I keep coming back to: **pricing is how you find out what your business actually is.** Not a tagline, not a positioning statement — the price. The number tells you more about your market and your clients than almost anything else you'll do early on.
 
@@ -145,13 +145,13 @@ That's my honest take.
 
 ## Previous Posts:
 
-  * [Still figuring out your offer? Read how to get traction with your first users](</blog/first-100-customers-solo-founder>)
+  * [Still figuring out your offer? Read how to get traction with your first users](/blog/first-100-customers-solo-founder)
 
-  * [Pricing is just one part of the system — here’s how solo founders actually build workflows that scale](</blog/ai-workflow-solo-founders>)
+  * [Pricing is just one part of the system — here’s how solo founders actually build workflows that scale](/blog/ai-workflow-solo-founders)
 
-  * [If your AI tools feel inefficient, this explains why everything resets every session](</blog/why-ai-forgets-every-session>)
+  * [If your AI tools feel inefficient, this explains why everything resets every session](/blog/why-ai-forgets-every-session)
 
-  * [Want to understand where AI agents fit into your business long-term?](</blog/ai-agents-2026-solo-operators>)
+  * [Want to understand where AI agents fit into your business long-term?](/blog/ai-agents-2026-solo-operators)
 
-  * [Not sure whether to build systems or just use better tools? This breakdown helps](</blog/workflow-builder-vs-ai-workspace>)
+  * [Not sure whether to build systems or just use better tools? This breakdown helps](/blog/workflow-builder-vs-ai-workspace)
 

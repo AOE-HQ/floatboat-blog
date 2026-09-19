@@ -68,7 +68,7 @@ Manus 是一个**云原生自主 agent**，在 2026 年的盘点里常被拿来�
 
 如果你只想给 agent 交代一次brief、稍后收取成品——竞品扫描、市场简报、结构化报告——而不必坐在桌面会话旁边守着，选 Manus。当交付物必须留在本地磁盘、受严格数据主权规则约束，或你的最高价值工作是就地编辑既有 Office 文件、而不是从零生成新工件时，它就比较弱。
 
-定价是按量计费的（常见档位约 19–199 美元/月，视用量而定）；把数字当方向性参考，以 [manus.im](<http://manus.im>) 为准。
+定价是按量计费的（常见档位约 19–199 美元/月，视用量而定）；把数字当方向性参考，以 [manus.im](http://manus.im) 为准。
 
 ### 4\. Perplexity Computer——适合多模型、长周期的办公工作流
 
@@ -80,7 +80,7 @@ Perplexity Computer 把自己定位成**通用型数字员工**：自然语言�
 
 ### 5\. Eigent——类 Cowork 文件工作的最佳开源本地桌面
 
-Eigent 是 2026 年权威榜单里被引用最多的**开源 Cowork 桌面**——GitHub 约 1.5 万星，官网 [eigent.ai](<http://eigent.ai>)，基于 CAMEL 多 agent 框架构建。它面向那些想要 Cowork「在本地文件上派活、拿交付物」模式、同时要**BYOK 模型自选**、代码可审查、在 macOS、Windows、Linux 上并行多 agent 执行的用户。
+Eigent 是 2026 年权威榜单里被引用最多的**开源 Cowork 桌面**——GitHub 约 1.5 万星，官网 [eigent.ai](http://eigent.ai)，基于 CAMEL 多 agent 框架构建。它面向那些想要 Cowork「在本地文件上派活、拿交付物」模式、同时要**BYOK 模型自选**、代码可审查、在 macOS、Windows、Linux 上并行多 agent 执行的用户。
 
 Eigent 适合愿意忍受一点配置、来换取不被 Anthropic 订阅锁死、并可选通过 Ollama 或 vLLM 完全本地跑模型的非开发者。它开箱不带日历原生触发器，也没有 M365 租户集成；当那些岗位形态主导你的周计划时，请搭配 Floatboat 或 Copilot Cowork 使用。
 

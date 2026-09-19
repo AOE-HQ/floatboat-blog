@@ -42,7 +42,7 @@ The ICS file is the baseline. It is free, widely supported, and saves you from t
 
 During major tournaments, kickoff times can shift for broadcast, venue, or operational reasons. If you imported a static ICS file, those changes do not appear in your calendar unless you re-import. If you subscribe to a maintained feed, your calendar can refresh the updated schedule without extra work.
 
-For the complete fixture context before you choose an import method, see the [World Cup 2026 full schedule and calendar sync guide](</blog/world-cup-2026-schedule>). This article focuses specifically on getting those fixtures into the calendar app you already use.
+For the complete fixture context before you choose an import method, see the [World Cup 2026 full schedule and calendar sync guide](/blog/world-cup-2026-schedule). This article focuses specifically on getting those fixtures into the calendar app you already use.
 
 ## 2\. Method 1: Import an ICS File into Google Calendar
 
@@ -68,7 +68,7 @@ In Google Calendar, click the gear icon in the top-right corner and open **Setti
 
 Google Calendar processes the file and adds the matches as individual events. Each event should include the teams, venue, and kickoff time if the source file contains those fields. After import, search your calendar for a team name such as “Brazil” or a stage name such as “Semifinal” to confirm that the events were added correctly.
 
-The main limitation is that imported ICS events are static. If a match time changes, Google Calendar does not automatically update imported events. For automatic updates, use a subscription URL or a maintained service such as [FloatCup’s World Cup 2026 calendar subscription](</blog/floatcup-world-cup-2026-calendar-subscribe>).
+The main limitation is that imported ICS events are static. If a match time changes, Google Calendar does not automatically update imported events. For automatic updates, use a subscription URL or a maintained service such as [FloatCup’s World Cup 2026 calendar subscription](/blog/floatcup-world-cup-2026-calendar-subscribe).
 
 ## 3\. Method 1b: Subscribe via an ICS URL
 
@@ -102,13 +102,13 @@ Android users usually import through Google Calendar or the phone’s default ca
 
 If you do not want to download files, unzip archives, inspect time zones, or re-import schedules when kickoff times move, FloatCup handles the process as a calendar subscription. You subscribe once, and the World Cup 2026 match schedule appears in your calendar as a separate layer. When the maintained feed changes, your calendar receives the updated event times through the subscription.
 
-FloatCup is designed for the exact problem this article describes: a high-volume sports schedule that is too large to type manually and too dynamic to trust as a static screenshot. It uses the calendar as the delivery surface, so the schedule lives where fans already check their day. For US-based fans, the same workflow pairs naturally with the [USA World Cup 2026 schedule and reminder guide](</blog/world-cup-2026-schedule-usa>).
+FloatCup is designed for the exact problem this article describes: a high-volume sports schedule that is too large to type manually and too dynamic to trust as a static screenshot. It uses the calendar as the delivery surface, so the schedule lives where fans already check their day. For US-based fans, the same workflow pairs naturally with the [USA World Cup 2026 schedule and reminder guide](/blog/world-cup-2026-schedule-usa).
 
 FloatCup also includes reminder options. You can choose reminders such as 30 minutes, 1 hour, or 3 hours before kickoff, depending on how early you want to be notified. After the tournament, you can unsubscribe or remove the dedicated calendar layer instead of hunting down individual match events.
 
 What FloatCup adds beyond a basic ICS file is maintenance. Match times can update automatically when the feed changes, reminders can be pre-configured, and timezone conversion is handled by the calendar system. That is why FloatCup is the simplest option for readers who care less about file ownership and more about not missing matches.
 
-**CTA:** [Subscribe with FloatCup](</blog/floatcup-world-cup-2026-calendar-subscribe>)
+**CTA:** [Subscribe with FloatCup](/blog/floatcup-world-cup-2026-calendar-subscribe)
 
 ## 7\. Troubleshooting Common ICS Import Problems
 
@@ -144,9 +144,9 @@ Either way, create a dedicated “World Cup 2026” calendar layer before you im
 
 ## Related Reading
 
-  * [World Cup 2026 Schedule: Full Fixtures & Calendar Sync](</blog/world-cup-2026-schedule>) — the complete fixture list and calendar context.
+  * [World Cup 2026 Schedule: Full Fixtures & Calendar Sync](/blog/world-cup-2026-schedule) — the complete fixture list and calendar context.
 
-  * [FloatCup: Subscribe to the World Cup 2026 Calendar in One Click](</blog/floatcup-world-cup-2026-calendar-subscribe>) — the zero-setup calendar subscription option.
+  * [FloatCup: Subscribe to the World Cup 2026 Calendar in One Click](/blog/floatcup-world-cup-2026-calendar-subscribe) — the zero-setup calendar subscription option.
 
-  * [USA World Cup 2026 Schedule: Match Times & Reminders](</blog/world-cup-2026-schedule-usa>) — USMNT kickoff times and reminder setup.
+  * [USA World Cup 2026 Schedule: Match Times & Reminders](/blog/world-cup-2026-schedule-usa) — USMNT kickoff times and reminder setup.
 

@@ -21,7 +21,7 @@ draft: false
 
 一项被广泛引用的 **《哈佛商业评论》研究跟踪了《财富》500 强三家公司里的 137 名员工**，发现他们每天在应用之间切换约 **1,200 次**——每周大约四小时纯粹花在"重新进入状态"上。那大约是全年工作时间的 9%。没了。不是耗在难题上，而是耗在切换的摩擦上。
 
-还有每次切换的恢复成本。[UC Irvine 的 Gloria Mark 的研究](<https://ics.uci.edu/~gmark/chi08-mark.pdf>)是那个常被引用的数字的出处：被打断后，需要大约 **23 分 15 秒**才能完全重新聚焦。我看人们引这个数字引了好几年，却从没核对过——原论文值得一读，因为更有意思的发现是：人们会通过"干得更快"来_补偿_，但代价以压力、沮丧和时间紧迫感的形式显现出来。所以哪怕工作完成了，你身上也有些东西在买单。
+还有每次切换的恢复成本。[UC Irvine 的 Gloria Mark 的研究](https://ics.uci.edu/~gmark/chi08-mark.pdf)是那个常被引用的数字的出处：被打断后，需要大约 **23 分 15 秒**才能完全重新聚焦。我看人们引这个数字引了好几年，却从没核对过——原论文值得一读，因为更有意思的发现是：人们会通过"干得更快"来_补偿_，但代价以压力、沮丧和时间紧迫感的形式显现出来。所以哪怕工作完成了，你身上也有些东西在买单。
 
 ![2.PNG](/blog/images/stop-context-switching-workspace-agent/1777599736423-3045cce0-260b-4f4e-bd7a-04fc04eae09f.webp)
 
@@ -35,7 +35,7 @@ draft: false
 
 去年我经历了一个阶段：每次碰到摩擦点，我就加一个工具。会议记笔记的工具。单独的写作应用。一个调研工具。一个专门列提纲的 AI。一个专门写初稿的 AI。两个月下来，我拥有了一整套漂亮的工具栈，产出却_更少_了。
 
-[美国心理学会关于切换成本研究的总结](<https://www.apa.org/topics/research/multitasking>)把这点说得很清楚：问题不在于单次切换——而在于每次大脑重新定向时，**目标切换（goal-shifting）**加上**规则激活（rule-activation）**累积出来的认知开销。每加一个工具，就意味着你每次碰它都要付出这两笔开销。
+[美国心理学会关于切换成本研究的总结](https://www.apa.org/topics/research/multitasking)把这点说得很清楚：问题不在于单次切换——而在于每次大脑重新定向时，**目标切换（goal-shifting）**加上**规则激活（rule-activation）**累积出来的认知开销。每加一个工具，就意味着你每次碰它都要付出这两笔开销。
 
 这说法我抗拒了一阵子。我当时挺固执的。
 
@@ -77,7 +77,7 @@ draft: false
 
 第三个转变，是我花了最久才领会到的。如果你常常做同一类任务——比如"把一份调研文档变成一份提纲草稿"——你现在每次都要向 AI 重新解释一遍。不同的标签页、不同的对话、相似的提示词、细微的差异。
 
-工作区 Agent 能把整套模式存成可复用的东西。相同的输入形状、相同的步骤、相同的输出。你不再每个周二重新造轮子。[Asana 关于上下文切换的《工作解剖学》数据](<https://asana.com/resources/context-switching>)讲了一个相关的点：问题通常不是某一条糟糕的工作流，而是**同一条工作流被糟糕地重建了一遍又一遍**——因为运行之间什么也没有保存。
+工作区 Agent 能把整套模式存成可复用的东西。相同的输入形状、相同的步骤、相同的输出。你不再每个周二重新造轮子。[Asana 关于上下文切换的《工作解剖学》数据](https://asana.com/resources/context-switching)讲了一个相关的点：问题通常不是某一条糟糕的工作流，而是**同一条工作流被糟糕地重建了一遍又一遍**——因为运行之间什么也没有保存。
 
 ![4.png](/blog/images/stop-context-switching-workspace-agent/1777599761438-8149a6b1-3554-48e1-93fc-89d27caee81c.webp)
 
@@ -109,7 +109,7 @@ draft: false
 
 如果你切换上下文，是因为你真心不知道现在该做什么——没有任何工作区能救你。你只会从"在标签页之间切换"变成"在工作区_内部_切换"。工具解决的是执行层面的摩擦，解决不了"该执行什么"的困惑。
 
-[Gallup 对 Gloria Mark 的采访](<https://news.gallup.com/businessjournal/23146/too-many-interruptions-work.aspx>)里有个让我记了很久的观点——她观察到，我们其实已经没有"工作日"了，我们有的是"持续一整天的碎片工作时间"（work minutes that last all day）。这不是工具问题，而是"_我到底想做什么_"的问题。工具放大你已经拥有的清晰度，它们不生产清晰度。
+[Gallup 对 Gloria Mark 的采访](https://news.gallup.com/businessjournal/23146/too-many-interruptions-work.aspx)里有个让我记了很久的观点——她观察到，我们其实已经没有"工作日"了，我们有的是"持续一整天的碎片工作时间"（work minutes that last all day）。这不是工具问题，而是"_我到底想做什么_"的问题。工具放大你已经拥有的清晰度，它们不生产清晰度。
 
 ### 真正需要深度专注块的工作
 
@@ -137,13 +137,13 @@ draft: false
 
 ## 系列前文
 
-  * [工作区 Agent 如何帮你减少摩擦、让单人工作更顺滑](</blog/stop-context-switching>)
+  * [工作区 Agent 如何帮你减少摩擦、让单人工作更顺滑](/blog/stop-context-switching)
 
-  * [为什么聊天工具与工作流搭建器常常是增加复杂度，而不是解决问题](</blog/why-automation-ends-up-more-frustrating>)
+  * [为什么聊天工具与工作流搭建器常常是增加复杂度，而不是解决问题](/blog/why-automation-ends-up-more-frustrating)
 
-  * [如果你在单人生意里身兼多职，工作区 Agent 如何帮你理顺一天](</blog/solo-founders-and-workspace-agents>)
+  * [如果你在单人生意里身兼多职，工作区 Agent 如何帮你理顺一天](/blog/solo-founders-and-workspace-agents)
 
-  * [试试这个简单的手动练习来减少上下文切换，看看工作区 Agent 适不适合你](</blog/reduce-context-switching-manually>)
+  * [试试这个简单的手动练习来减少上下文切换，看看工作区 Agent 适不适合你](/blog/reduce-context-switching-manually)
 
-  * [对单人工作用的 AI Agent 感兴趣？这篇深入讲了它们能为单人创业者做什么、不做什么](</blog/ai-agents-for-solo-operators>)
+  * [对单人工作用的 AI Agent 感兴趣？这篇深入讲了它们能为单人创业者做什么、不做什么](/blog/ai-agents-for-solo-operators)
 

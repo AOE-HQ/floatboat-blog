@@ -74,11 +74,11 @@ The table is the whole method. Everything else — model choice, Art Deco flouri
 
 Chat-based vibe coding starts when you remember to open the chat. Calendar-driven work starts when the event arrives. That difference matters once “make a prototype” is no longer a weekend hobby but a client commitment on Tuesday at 2pm.
 
-On an <a href="/blog/what-is-agentic-calendar">agentic calendar</a>, a “Prototype due” or “Design review” event can trigger the same K3 visual-reasoning path that built the Art Deco town: generate or regenerate the HTML, open it, capture a frame, compare against the brief, and leave notes in the event workspace before you join the call. You are not asking the model to manage your calendar. You are letting the calendar decide when the expensive visual model runs.
+On an [agentic calendar](/blog/what-is-agentic-calendar), a “Prototype due” or “Design review” event can trigger the same K3 visual-reasoning path that built the Art Deco town: generate or regenerate the HTML, open it, capture a frame, compare against the brief, and leave notes in the event workspace before you join the call. You are not asking the model to manage your calendar. You are letting the calendar decide when the expensive visual model runs.
 
 That is also where cost discipline shows up. K3’s always-on max reasoning is the right tool for a one-shot world with lighting and agents; it is the wrong default for renaming buttons. Pairing K3 for the generative burst and a cheaper coding tier for follow-up fixes mirrors how you would staff a tiny studio — lead artist for the first playable, junior pass for polish — except both tiers sit in one model picker.
 
-For a deeper map of when to reach for K3 versus K2.7 Code on ordinary meeting work, see the <a href="/blog/kimi-k3-open-frontier-model">Kimi K3 model overview</a>. The game demo is the stress test; the calendar routing is the daily habit.
+For a deeper map of when to reach for K3 versus K2.7 Code on ordinary meeting work, see the [Kimi K3 model overview](/blog/kimi-k3-open-frontier-model). The game demo is the stress test; the calendar routing is the daily habit.
 
 ---
 

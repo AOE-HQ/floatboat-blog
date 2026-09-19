@@ -18,15 +18,15 @@ draft: false
 
   * 在 V4 上，思考模式与工具调用可以协同工作——模型在发出结构化请求前，能先推理该调哪些工具。MCP（Model Context Protocol）把工具面从内联函数定义扩展到外部服务器。
 
-  * 生产级 Agent 需要一层修复机制：校验 JSON 参数、返回模型能自我纠正的结构化错误、限制并行执行。如果你还没搭过 Agent 循环，先读 [如何构建 DeepSeek Agent](</blog/how-to-build-deepseek-agent>)；本文专门深入工具调用这一层。
+  * 生产级 Agent 需要一层修复机制：校验 JSON 参数、返回模型能自我纠正的结构化错误、限制并行执行。如果你还没搭过 Agent 循环，先读 [如何构建 DeepSeek Agent](/blog/how-to-build-deepseek-agent)；本文专门深入工具调用这一层。
 
 ## 1\. 在 DeepSeek Agent 里，「函数调用」是什么
 
 函数调用——也叫工具调用——是把 Agent 和聊天机器人区分开来的机制。聊天机器人收到提示词，返回文本。Agent 收到提示词外加一份可用工具清单，自己判断有没有工具能帮忙，返回一个结构化请求去调用其中一款或多款工具，等你的代码执行完这些调用，再带着结果继续推理。
 
-在 DeepSeek V4 上，函数调用是 `deepseek-v4-pro` 与 `deepseek-v4-flash` 的原生能力。API 采用 OpenAI 兼容格式：在 chat completion 请求里放一个 `tools` 数组，工具调用经由 `message.tool_calls` 返回，结果以 `role: "tool"` 消息配合对应的 `tool_call_id` 回传，详见 [DeepSeek 的工具调用文档](<https://api-docs.deepseek.com/guides/tool_calls>)。
+在 DeepSeek V4 上，函数调用是 `deepseek-v4-pro` 与 `deepseek-v4-flash` 的原生能力。API 采用 OpenAI 兼容格式：在 chat completion 请求里放一个 `tools` 数组，工具调用经由 `message.tool_calls` 返回，结果以 `role: "tool"` 消息配合对应的 `tool_call_id` 回传，详见 [DeepSeek 的工具调用文档](https://api-docs.deepseek.com/guides/tool_calls)。
 
-本文假设你已理解基本 Agent 循环——发消息、查工具调用、执行、回传、重复。如果这套模式对你陌生，先读 [如何构建 DeepSeek Agent](</blog/how-to-build-deepseek-agent>)。我们这里聚焦工具调用层内部发生的事：schema 设计、并行执行、严格模式、与思考模式的交互，以及那些防止 Agent 循环在畸形参数上崩溃的生产级模式。
+本文假设你已理解基本 Agent 循环——发消息、查工具调用、执行、回传、重复。如果这套模式对你陌生，先读 [如何构建 DeepSeek Agent](/blog/how-to-build-deepseek-agent)。我们这里聚焦工具调用层内部发生的事：schema 设计、并行执行、严格模式、与思考模式的交互，以及那些防止 Agent 循环在畸形参数上崩溃的生产级模式。
 
 「函数调用」和「Agent」的区别对搜索意图和架构都重要。函数调用是 API 的一个能力；Agent 是一个系统，把这一能力包进带错误处理、状态管理与工具权限的循环里。大多数 DeepSeek Agent 在生产中的故障都追溯到工具调用层——无效 JSON、参数类型错误、并行调用和共享状态竞态——而不是模型的推理质量。
 
@@ -96,11 +96,11 @@ draft: false
 
 **required 字段保持最少。**只有当工具真的缺了某参数就跑不了时，才把它标成 `"required"`。过度约束必填字段，会在模型省略可选上下文时增加 JSON 解析失败的概率。
 
-对参数正确性至关重要的 Agent——计费系统、数据库写入、部署触发——请在函数定义里设 `"strict": true`、并调用 `https://api.deepseek.com/beta` 这个 `/beta` 端点来开启严格模式，详见 [DeepSeek 的函数调用文档](<https://api-docs.deepseek.com/guides/function_calling>)。严格模式约束模型产出的参数必须完全符合你的 JSON Schema，减少下游校验的需要，代价是首次工具调用延迟略高。
+对参数正确性至关重要的 Agent——计费系统、数据库写入、部署触发——请在函数定义里设 `"strict": true`、并调用 `https://api.deepseek.com/beta` 这个 `/beta` 端点来开启严格模式，详见 [DeepSeek 的函数调用文档](https://api-docs.deepseek.com/guides/function_calling)。严格模式约束模型产出的参数必须完全符合你的 JSON Schema，减少下游校验的需要，代价是首次工具调用延迟略高。
 
 ## 3\. 工具调用循环：超越基础
 
-[如何构建 DeepSeek Agent](</blog/how-to-build-deepseek-agent>) 里的最小循环，每轮只处理一个工具调用。生产级 Agent 还需要三个额外控制：`tool_choice`、并行调用处理、会话状态保全。
+[如何构建 DeepSeek Agent](/blog/how-to-build-deepseek-agent) 里的最小循环，每轮只处理一个工具调用。生产级 Agent 还需要三个额外控制：`tool_choice`、并行调用处理、会话状态保全。
 
 `tool_choice` **控制模型是否必须调用工具。**默认的 `"auto"` 让模型自己决定。当每一轮都必须产出工具调用时设 `"required"`（少见——通常用于被强制的管线步骤）。在所有工具执行完毕后的最终综合轮设 `"none"`，这样你想要纯文本答案时，模型不会再去调更多工具。
 
@@ -137,7 +137,7 @@ draft: false
 
 当工具对共享状态有副作用时，这套模式就崩了。如果 `write_file` 和 `read_file` 操作同一条路径，并行执行会制造一个你的 Agent 循环控制不了的竞态条件。对有状态工具，要么把执行串行化（一次处理一个工具调用），要么把工具设计成带显式锁语义。
 
-DeepSeek-TUI 的 RLM fan-out 模式把并行执行推得更远：一个 V4 Pro 协调者最多孵化 16 个 V4 Flash 子 Agent，每个在子任务上跑自己的工具循环，详见[官方 awesome-deepseek-agent 仓库](<https://github.com/deepseek-ai/awesome-deepseek-agent>)。那套架构是原生 DeepSeek Agent 专属的，通用 harness 配置拿不到——但底层原理（便宜的并行工人 + 贵的协调者）适用于任何基于 V4 Flash 定价构建的自定义 Agent。
+DeepSeek-TUI 的 RLM fan-out 模式把并行执行推得更远：一个 V4 Pro 协调者最多孵化 16 个 V4 Flash 子 Agent，每个在子任务上跑自己的工具循环，详见[官方 awesome-deepseek-agent 仓库](https://github.com/deepseek-ai/awesome-deepseek-agent)。那套架构是原生 DeepSeek Agent 专属的，通用 harness 配置拿不到——但底层原理（便宜的并行工人 + 贵的协调者）适用于任何基于 V4 Flash 定价构建的自定义 Agent。
 
 对多数自定义 Agent：先用串行执行把循环跑稳，再对独立性有保证的只读工具（search、fetch、query）开并行。只有在有了幂等性保证或显式冲突解决之后，才升级到并行写入。
 
@@ -165,13 +165,13 @@ V4 模型支持思考模式（思维链推理）与工具调用并存——这�
 
 ## 6\. MCP：把工具面扩到内联定义之外
 
-Model Context Protocol（MCP）是把 Agent 接到外部工具服务器的标准——数据库、文件系统、浏览器自动化、专有 API——不必把每个工具定义都内联进请求。DeepSeek V4 原生支持 MCP，DeepSeek-TUI 这类工具同时自带 MCP 客户端与服务端能力，见 [DeepSeek 的编码 Agent 集成指南](<https://api-docs.deepseek.com/guides/coding_agents>)。
+Model Context Protocol（MCP）是把 Agent 接到外部工具服务器的标准——数据库、文件系统、浏览器自动化、专有 API——不必把每个工具定义都内联进请求。DeepSeek V4 原生支持 MCP，DeepSeek-TUI 这类工具同时自带 MCP 客户端与服务端能力，见 [DeepSeek 的编码 Agent 集成指南](https://api-docs.deepseek.com/guides/coding_agents)。
 
 内联函数定义（本文 `tools` 数组那套）适合工具集固定、已知的 Agent——代码库里定义五到十五个函数那种。当工具面是动态的（插件、用户配置的集成），或工具由不同团队各自维护时（数据库团队跑 MCP 服务端，Agent 团队消费它），MCP 就变得必要。
 
 集成模式：你的 Agent 循环不变。模型返回工具调用后，不再调用本地 Python 函数，而是把调用转发给 MCP 服务器，由它执行动作、返回结果。消息历史的格式不变——变的只是 `TOOL_REGISTRY` 背后的执行层。
 
-今天起步的 Agent，内联定义更简单、也够用。撞上下面某个阈值再上 MCP：超过 20 个工具（大 `tools` 数组带来的上下文开销）、工具频繁变动但不想跟着改 Agent 代码、或工具需要隔离执行环境（沙箱浏览器、独立数据库凭证）。在内联工具与 MCP 架构之间选择，是 [DeepSeek Agent 品类总览](</blog/what-is-deepseek-agent>) 覆盖的设计决策之一——那篇文章把四种 Agent 原型各自适合哪种方案讲清楚了。如果你连这层接线都想省，一些桌面客户端如 [Floatboat DeepSeek Agent](<https://deepseek-agent.com>) 出厂就带好工具调用层——文件读取、浏览器、终端、日历工具已经通过 DeepSeek 原生函数调用接口接好，你只需定义 Agent 该做什么，而不是它怎么调每个工具。
+今天起步的 Agent，内联定义更简单、也够用。撞上下面某个阈值再上 MCP：超过 20 个工具（大 `tools` 数组带来的上下文开销）、工具频繁变动但不想跟着改 Agent 代码、或工具需要隔离执行环境（沙箱浏览器、独立数据库凭证）。在内联工具与 MCP 架构之间选择，是 [DeepSeek Agent 品类总览](/blog/what-is-deepseek-agent) 覆盖的设计决策之一——那篇文章把四种 Agent 原型各自适合哪种方案讲清楚了。如果你连这层接线都想省，一些桌面客户端如 [Floatboat DeepSeek Agent](https://deepseek-agent.com) 出厂就带好工具调用层——文件读取、浏览器、终端、日历工具已经通过 DeepSeek 原生函数调用接口接好，你只需定义 Agent 该做什么，而不是它怎么调每个工具。
 
 ## 7\. 生产模式：校验、修复与失败形态
 
@@ -215,5 +215,5 @@ Model Context Protocol（MCP）是把 Agent 接到外部工具服务器的标准
 
 从两三个定义良好的工具加一个串行循环起步。当参数错误成为你最头的失败模式时，加严格模式。当瓶颈是延迟、而不是正确性时，加并行调用。当工具面撑破内联定义时，加 MCP。
 
-完整的 Agent 架构——API 配置、模型选择、以及本文所扩展的那个循环骨架——[如何构建 DeepSeek Agent](</blog/how-to-build-deepseek-agent>) 每一步都带可运行代码走了一遍。
+完整的 Agent 架构——API 配置、模型选择、以及本文所扩展的那个循环骨架——[如何构建 DeepSeek Agent](/blog/how-to-build-deepseek-agent) 每一步都带可运行代码走了一遍。
 

@@ -22,7 +22,7 @@ The 2026 FIFA World Cup is the largest in football history: 48 teams, 104 matche
 
 ## The 2026 FIFA World Cup Schedule at a Glance
 
-[Source: FIFA — Match Schedule, Fixtures, Results & Stadiums](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums>)
+[Source: FIFA — Match Schedule, Fixtures, Results & Stadiums](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums)
 
 
 
@@ -62,7 +62,7 @@ The bracket progression is straightforward once the Round of 32 is set:
 
 ## Group Stage Schedule: 72 Matches Across 12 Groups
 
-The 12 groups, per the official FIFA World Cup 2026 Final Draw (December 5, 2025, Washington D.C.): [Source: FIFA — Final Draw Results](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-draw-results>)
+The 12 groups, per the official FIFA World Cup 2026 Final Draw (December 5, 2025, Washington D.C.): [Source: FIFA — Final Draw Results](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-draw-results)
 
 
 
@@ -236,11 +236,6 @@ The 2026 World Cup schedule is dense — 2.7 matches per day on average, four ti
 
 For readers who want the zero-maintenance option, FloatCup handles the full schedule, timezone conversion, and reminders in one click. For those who prefer a manual approach, the ICS import works across every major calendar platform and takes under two minutes. Both are detailed in the sections above.
 
-## Related Reading
-
-  * World Cup 2026 Guide: Dates, Format, and FAQ — the full tournament overview
-
-  * How to Add World Cup 2026 to Google Calendar (ICS Guide) — step-by-step ICS import for every platform
-
-  * FloatCup: Subscribe to World Cup 2026 Calendar in One Click — the zero-effort calendar sync
-
+## Related Reading- [World Cup 2026 Guide: Dates, Format, and FAQ — the full tournament overview](/blog/world-cup-2026-guide)
+- [How to Add World Cup 2026 to Google Calendar (ICS Guide) — step-by-step ICS import for every platform](/blog/world-cup-2026-google-calendar-ics)
+- [FloatCup: Subscribe to World Cup 2026 Calendar in One Click — the zero-effort calendar sync](/blog/floatcup-world-cup-2026-calendar-subscribe)

@@ -18,7 +18,7 @@ Hello, I'm Nova. Gemini 3.5 Flash dropped last week, and if you're running a one
 
 ### Real capability changes: long context, speed, cost, and practical workflow impact
 
-Gemini 3.5 Flash launched on May 19, 2026, and according to [Google's official announcement](<https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/>), it's built around "frontier intelligence with action." The key specs: ​**a 1 million token context window, pricing at $1.50 per million input tokens and $9.00 per million output tokens** ​, and what Google claims is 4x faster output than comparable frontier models.
+Gemini 3.5 Flash launched on May 19, 2026, and according to [Google's official announcement](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/), it's built around "frontier intelligence with action." The key specs: ​**a 1 million token context window, pricing at $1.50 per million input tokens and $9.00 per million output tokens** ​, and what Google claims is 4x faster output than comparable frontier models.
 
 The context window is the part that matters for daily work. One million tokens means you can feed it an entire codebase, a full research report, or hours of meeting transcripts in a single pass. For the kinds of document-heavy tasks I do — pulling insights from long PDFs, synthesizing research — skipping the chunking step is a genuine time-saver. That step just… worked.
 
@@ -30,7 +30,7 @@ Speed-wise, I ran a few side-by-side comparisons on a 15-page brief. Gemini 3.5 
 
 I'm not going to do a full **Gemini vs Claude for work** comparison — benchmarks rarely reflect what it feels like to use a model on a Tuesday afternoon when you need a client email drafted.
 
-What I've noticed in practice: Gemini 3.5 Flash is strong at structured extraction and agentic tasks — where the model plans, calls tools, and iterates. It scored 76.2% on Terminal-Bench 2.1 and 83.6% on MCP Atlas for tool-use reliability, as documented in [Google's Gemini models page](<https://ai.google.dev/gemini-api/docs/models>). For nuanced writing, I still lean toward Claude. Different strengths, different slots.
+What I've noticed in practice: Gemini 3.5 Flash is strong at structured extraction and agentic tasks — where the model plans, calls tools, and iterates. It scored 76.2% on Terminal-Bench 2.1 and 83.6% on MCP Atlas for tool-use reliability, as documented in [Google's Gemini models page](https://ai.google.dev/gemini-api/docs/models). For nuanced writing, I still lean toward Claude. Different strengths, different slots.
 
 ## What This Changes for Solo Operator Workflows
 
@@ -42,7 +42,7 @@ I tested this with a 40-page market research PDF. Dropped it in, asked for a str
 
 ### Cost-sensitive repetitive tasks
 
-If you're running repetitive tasks through an API, cost matters. According to [Google's API pricing page](<https://ai.google.dev/gemini-api/docs/pricing>), Gemini 3.5 Flash comes in roughly 40% cheaper than Gemini 3.1 Pro while outperforming it on most coding and agentic benchmarks. For a solo operator watching every dollar, that math is worth noticing.
+If you're running repetitive tasks through an API, cost matters. According to [Google's API pricing page](https://ai.google.dev/gemini-api/docs/pricing), Gemini 3.5 Flash comes in roughly 40% cheaper than Gemini 3.1 Pro while outperforming it on most coding and agentic benchmarks. For a solo operator watching every dollar, that math is worth noticing.
 
 I want to be careful not to overstate this though. Per-token cost only matters if the output quality is good enough that you're not spending extra time editing. Three out of five times on my content tasks, the output was solid. The other two needed cleanup.
 
@@ -50,7 +50,7 @@ I want to be careful not to overstate this though. Per-token cost only matters i
 
 ### Google Workspace-heavy workflows
 
-If you live inside Google Docs, Gmail, and Calendar, Gemini 3.5 has a structural advantage. It's the default model in the Gemini app now. The [Google Cloud I/O 2026 blog](<https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud>) highlighted deep Workspace integration — including Daily Brief, which pulls Gmail, Calendar, and task priorities into a single morning summary. I haven't tested Daily Brief myself yet, but the concept solves a real problem I have every morning.
+If you live inside Google Docs, Gmail, and Calendar, Gemini 3.5 has a structural advantage. It's the default model in the Gemini app now. The [Google Cloud I/O 2026 blog](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud) highlighted deep Workspace integration — including Daily Brief, which pulls Gmail, Calendar, and task priorities into a single morning summary. I haven't tested Daily Brief myself yet, but the concept solves a real problem I have every morning.
 
 ## When to Turn It On and When to Leave It Off
 
@@ -96,7 +96,7 @@ A quick decision framework before switching for any task: **Is the context windo
 
 ## Should You Flip the Switch?
 
-Gemini 3.5 Flash is legitimately strong — fast, cost-effective, and particularly good at long-context and agentic tasks. As [CNBC's coverage of Google I/O 2026](<https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html>) noted, Google is positioning this as a centerpiece of its AI strategy, with Gemini 3.5 Pro expected next month.
+Gemini 3.5 Flash is legitimately strong — fast, cost-effective, and particularly good at long-context and agentic tasks. As [CNBC's coverage of Google I/O 2026](https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html) noted, Google is positioning this as a centerpiece of its AI strategy, with Gemini 3.5 Pro expected next month.
 
 But for anyone evaluating ​**AI tools for a one-person business** ​, the question about any **Gemini 3.5 integration** was never "is this model good?" It's: **does adding this to my ​workflow** ​**​ save more time than it costs to manage?** If you work with long documents, run batch tasks, or live inside Google Workspace — worth testing. If your setup is humming along and your bottleneck isn't the model itself, wait.
 
@@ -104,13 +104,13 @@ That's my honest take. You'll have to decide what's right for your situation.
 
 ## Previous Posts:
 
-• [AI Workflow for Solo Founders: What Actually Saves Time?](</blog/ai-workflow-solo-founders>) — Before adding another model to your stack, map the workflow you're trying to improve first.
+• [AI Workflow for Solo Founders: What Actually Saves Time?](/blog/ai-workflow-solo-founders) — Before adding another model to your stack, map the workflow you're trying to improve first.
 
-• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](</blog/ai-workflow-for-solo-founders>) — A practical look at where AI workflows break once they leave the demo stage.
+• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](/blog/ai-workflow-for-solo-founders) — A practical look at where AI workflows break once they leave the demo stage.
 
-• [AI Workspace Agents: Why Chat Windows Stop Scaling](</blog/ai-workspace-agents>) — Managing multiple models becomes easier when work happens inside one workspace instead of scattered tabs.
+• [AI Workspace Agents: Why Chat Windows Stop Scaling](/blog/ai-workspace-agents) — Managing multiple models becomes easier when work happens inside one workspace instead of scattered tabs.
 
-• [Workspace Agents vs Chat Assistants: What's Actually Different?](</blog/workspace-agents-vs-chat-assistants>) — The difference matters when you're deciding whether another model belongs in your workflow.
+• [Workspace Agents vs Chat Assistants: What's Actually Different?](/blog/workspace-agents-vs-chat-assistants) — The difference matters when you're deciding whether another model belongs in your workflow.
 
-• [How One-Person Businesses Work Like a Team With AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>) — Adding another model only helps if it removes a real bottleneck in how a solo business operates.
+• [How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai) — Adding another model only helps if it removes a real bottleneck in how a solo business operates.
 

@@ -35,9 +35,9 @@ Here's the honest split in the market as I see it.
 
 ### Type 1: Self-Hosted, Developer-Optimized
 
-The clearest example right now is [Hermes Agent](<https://hermesagent.agency/>), built by Nous Research. It's open-source, MIT-licensed, and built specifically around persistent memory and self-improving skills. The core design: after completing a complex task, the agent autonomously creates a reusable "skill" — a structured document capturing the procedure, pitfalls, and verification steps. The next time a similar task comes up, it loads the skill instead of reasoning from scratch.
+The clearest example right now is [Hermes Agent](https://hermesagent.agency/), built by Nous Research. It's open-source, MIT-licensed, and built specifically around persistent memory and self-improving skills. The core design: after completing a complex task, the agent autonomously creates a reusable "skill" — a structured document capturing the procedure, pitfalls, and verification steps. The next time a similar task comes up, it loads the skill instead of reasoning from scratch.
 
-It's genuinely impressive. Persistent memory across sessions, a cron scheduler for automated tasks, 16 messaging platform integrations, and the ability to run on anything from a $5 VPS to serverless infrastructure. According to the [official Hermes Agent documentation](<https://hermes-agent.nousresearch.com/docs/>), the minimum hardware requirement is 2GB RAM and a 10GB disk — technically accessible, but you're also managing a server, configuring an LLM provider, and maintaining the system yourself.
+It's genuinely impressive. Persistent memory across sessions, a cron scheduler for automated tasks, 16 messaging platform integrations, and the ability to run on anything from a $5 VPS to serverless infrastructure. According to the [official Hermes Agent documentation](https://hermes-agent.nousresearch.com/docs/), the minimum hardware requirement is 2GB RAM and a 10GB disk — technically accessible, but you're also managing a server, configuring an LLM provider, and maintaining the system yourself.
 
 This is a Type 1 tool. Powerful, flexible, genuinely persistent. Built for people who are comfortable in a terminal.
 
@@ -85,7 +85,7 @@ If self-hosting isn't the right fit, the question becomes: what features actuall
 
 **File and browser access in one environment.** Context switching between apps has a real cognitive cost. Tools that let you work with documents, research, and content generation in a single environment — without manual copy-pasting — reduce that cost meaningfully.
 
-The broader point about AI agent memory is well-documented: as [The New Stack notes in their analysis of context engineering](<https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/>), traditional large language models are stateless by default — and solving that statefulness problem at the infrastructure level is exactly what separates agent tools from chatbot tools.
+The broader point about AI agent memory is well-documented: as [The New Stack notes in their analysis of context engineering](https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/), traditional large language models are stateless by default — and solving that statefulness problem at the infrastructure level is exactly what separates agent tools from chatbot tools.
 
 ## Decision Framework: Build It, Use It, or Skip It for Now
 
@@ -107,13 +107,13 @@ The best tool is the one you'll actually use and can actually maintain. For most
 
 ## Previous Posts:
 
-  * [Understand the difference between AI agents vs chatbots](</blog/ai-agent-vs-chatbot>)
+  * [Understand the difference between AI agents vs chatbots](/blog/ai-agent-vs-chatbot)
 
-  * [Learn how AI agents actually work for solo operators in 2026](</blog/ai-agents-2026-solo-operators>)
+  * [Learn how AI agents actually work for solo operators in 2026](/blog/ai-agents-2026-solo-operators)
 
-  * [See how to build your own AI agent step by step](</blog/how-to-build-an-ai-agent>)
+  * [See how to build your own AI agent step by step](/blog/how-to-build-an-ai-agent)
 
-  * [Explore the shift from AI assistants to true AI agents](</blog/ai-agent-vs-ai-assistant>)
+  * [Explore the shift from AI assistants to true AI agents](/blog/ai-agent-vs-ai-assistant)
 
-  * [Discover practical AI agent use cases in real workflows](</blog/ai-agent-use-cases-real-examples>)
+  * [Discover practical AI agent use cases in real workflows](/blog/ai-agent-use-cases-real-examples)
 

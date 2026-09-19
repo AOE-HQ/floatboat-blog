@@ -20,7 +20,7 @@ draft: false
 
   * **团队版**用飞书企业账号登录，继承组织权限与协作上下文，是字节打企业办公 Agent 的主阵地。
 
-  * **没有「豆包工作」海外版**；海外通用助手是 Dola（[dola.com](<http://dola.com>)），不提供同级别的办公 Agent 与飞书集成。
+  * **没有「豆包工作」海外版**；海外通用助手是 Dola（[dola.com](http://dola.com)），不提供同级别的办公 Agent 与飞书集成。
 
 ## 1.为什么需要「豆包工作」
 
@@ -112,7 +112,7 @@ Seed 官方说明同时提到豆包办公任务模式与 TRAE Work / TRAE IDE �
 
 ### 3.3 「豆包办公」和「豆包工作」
 
-口语里的「豆包办公」多指豆包 App 内的「工作任务 / 办公任务」模式；**「豆包工作」**是 2026 年 8 月正式发布的独立品牌，有官网 [doubao.com/work](<http://doubao.com/work>) 和独立桌面客户端。同一产品线，不同阶段的名字。
+口语里的「豆包办公」多指豆包 App 内的「工作任务 / 办公任务」模式；**「豆包工作」**是 2026 年 8 月正式发布的独立品牌，有官网 [doubao.com/work](http://doubao.com/work) 和独立桌面客户端。同一产品线，不同阶段的名字。
 
 ### 3.4 怎么安装、从哪里进
 
@@ -196,7 +196,7 @@ WorkBuddy Enterprise 则是腾讯云旗下面向企业的一站式 Agent 平台�
 
 ### 5.3 阿里千问办公：钉钉生态里的「AI 工作台」
 
-千问办公官网（[qwenwork.cn](<http://qwenwork.cn>)）定位为**面向个人与企业的一站式 AI 办公平台**，支持网页端及 macOS、Windows、HarmonyOS 客户端，覆盖内容创作、数据分析、专业研究、文件处理与网页交付。
+千问办公官网（[qwenwork.cn](http://qwenwork.cn)）定位为**面向个人与企业的一站式 AI 办公平台**，支持网页端及 macOS、Windows、HarmonyOS 客户端，覆盖内容创作、数据分析、专业研究、文件处理与网页交付。
 
 官方文档突出三类 Agent 形态：
 
@@ -248,7 +248,7 @@ WorkBuddy Enterprise 则是腾讯云旗下面向企业的一站式 Agent 平台�
 
 ## 6\. 定价与团队版（概要）
 
-个人版提供免费档及多档付费订阅，差异在工作任务额度、云电脑、模型 tier 等，**具体以****[doubao.com/work/price](<http://doubao.com/work/price>)****及客户端为准**。
+个人版提供免费档及多档付费订阅，差异在工作任务额度、云电脑、模型 tier 等，**具体以****[doubao.com/work/price](http://doubao.com/work/price)****及客户端为准**。
 
 团队版（doubao.com/work/group）强调与飞书融合、企业权限与 Skill 共享。定价页公开信息显示：团队订阅 1 席起（按年约 ¥166 / 席 / 月档，以官网为准）；企业订阅 100 席起，席位与用量分开，含更强审计与防泄漏能力。
 

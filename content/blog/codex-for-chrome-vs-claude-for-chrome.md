@@ -21,9 +21,9 @@ I've been poking at both since Codex for Chrome launched on May 7. Here's what I
 
 ## A 30-Second Snapshot of Both Tools
 
-**Codex for Chrome** is OpenAI's extension, launched days ago. It connects through the [Codex desktop app](<https://developers.openai.com/codex/app/chrome-extension>) and lets Codex operate inside your signed-in browser — accessing web apps, pulling context across tabs, working with DevTools, all running in the background.
+**Codex for Chrome** is OpenAI's extension, launched days ago. It connects through the [Codex desktop app](https://developers.openai.com/codex/app/chrome-extension) and lets Codex operate inside your signed-in browser — accessing web apps, pulling context across tabs, working with DevTools, all running in the background.
 
-**[Claude for Chrome](<https://claude.com/blog/claude-for-chrome>)** is Anthropic's browser agent, piloted since August 2025 and now in open beta for paid subscribers. It lives in a sidebar panel inside Chrome, reads the live page you're on, and can navigate, click, fill forms, and run multi-step workflows. Anthropic's [original announcement post](<https://www.anthropic.com/news/claude-for-chrome>) covers the safety approach in detail.
+**[Claude for Chrome](https://claude.com/blog/claude-for-chrome)** is Anthropic's browser agent, piloted since August 2025 and now in open beta for paid subscribers. It lives in a sidebar panel inside Chrome, reads the live page you're on, and can navigate, click, fill forms, and run multi-step workflows. Anthropic's [original announcement post](https://www.anthropic.com/news/claude-for-chrome) covers the safety approach in detail.
 
 Same category. Very different design philosophy.
 
@@ -63,9 +63,9 @@ Claude's model is more ​**conversational** ​. You're working _with_ it about
 
   * **Live page reading with deep context.** Claude sees the actual content of your current tab. Combined with its context window, it handles enormous documents in a single read without chunking. For research and content analysis, this is where it shines.
 
-  * **Scheduled tasks and workflow recording.** Claude supports [scheduled automations](<https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome>) — daily, weekly, monthly. You can also record a workflow once and replay it later. Codex's Chrome extension doesn't have built-in scheduling.
+  * **Scheduled tasks and workflow recording.** Claude supports [scheduled automations](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome) — daily, weekly, monthly. You can also record a workflow once and replay it later. Codex's Chrome extension doesn't have built-in scheduling.
 
-  * **Claude Code integration.** If you use Claude Code in the terminal, the Chrome extension [connects directly](<https://code.claude.com/docs/en/chrome>) — build in the terminal, test in the browser, same session. That loop is already shipping.
+  * **Claude Code integration.** If you use Claude Code in the terminal, the Chrome extension [connects directly](https://code.claude.com/docs/en/chrome) — build in the terminal, test in the browser, same session. That loop is already shipping.
 
   * **Conversational feel.** The sidebar model means you're having a dialogue about what's on screen. For document-heavy work, this feels more natural than delegating to a background agent. I'm still figuring out where each approach fits best in my own workflow, but for anything research-heavy, I keep reaching for Claude.
 
@@ -87,7 +87,7 @@ Codex ties browser behavior to your existing Memories setting — on means Codex
 
 Both companies acknowledge this: **any AI agent that reads web pages can encounter prompt injection** — hidden instructions on a site that try to hijack the agent's actions.
 
-Anthropic published specific numbers: 23.6% attack success rate without mitigations, down to 11.2% with defenses. A [recent security investigation](<https://cybernews.com/security/claude-code-chrome-extension-flaw-fix-hacked/>) showed a trust-boundary flaw in Claude's extension that was bypassed within hours of patching.
+Anthropic published specific numbers: 23.6% attack success rate without mitigations, down to 11.2% with defenses. A [recent security investigation](https://cybernews.com/security/claude-code-chrome-extension-flaw-fix-hacked/) showed a trust-boundary flaw in Claude's extension that was bypassed within hours of patching.
 
 OpenAI's docs explicitly warn to "treat page content as untrusted context." Neither company claims the problem is solved.
 
@@ -95,7 +95,7 @@ OpenAI's docs explicitly warn to "treat page content as untrusted context." Neit
 
 ## Pricing, Plan Access, and Regional Availability
 
-**Codex for Chrome** is included with your ChatGPT plan at no extra cost. It draws from your existing usage limits. Free and Plus ($20/mo) users get access; [Pro at $100/mo](<https://developers.openai.com/codex/pricing>) offers 5x the capacity (currently 10x through May 31, 2026 as a launch promo). Even the free tier gets limited trial access.
+**Codex for Chrome** is included with your ChatGPT plan at no extra cost. It draws from your existing usage limits. Free and Plus ($20/mo) users get access; [Pro at $100/mo](https://developers.openai.com/codex/pricing) offers 5x the capacity (currently 10x through May 31, 2026 as a launch promo). Even the free tier gets limited trial access.
 
 **Claude for Chrome** requires a paid plan — Pro ($20/mo), Max ($100/mo+), Team, or Enterprise. But here's a detail worth flagging: **Pro plan users are limited to Haiku 4.5** in the Chrome extension — the fastest but least capable model. You need Max ($100/mo) to unlock Opus 4.6 or Sonnet 4.5. That's a meaningful quality gap for complex browser tasks.
 
@@ -105,7 +105,7 @@ At the $20/mo tier, ​**Codex gives you access to its full model stack while Cl
 
 ### EU/UK Status for Codex Chrome
 
-If you're based in the EU or UK, this is the most important paragraph in this article: **Codex for Chrome is not available in the EU or UK at launch.** [Neowin confirmed](<https://www.neowin.net/news/openai-codex-can-now-work-directly-in-chrome-on-macos-and-windows/>) it's excluded from all EU and UK regions, with OpenAI saying support is "coming soon." No timeline given. EU-based users who install the extension will find it connects fine, but the Codex app won't expose the Chrome plugin.
+If you're based in the EU or UK, this is the most important paragraph in this article: **Codex for Chrome is not available in the EU or UK at launch.** [Neowin confirmed](https://www.neowin.net/news/openai-codex-can-now-work-directly-in-chrome-on-macos-and-windows/) it's excluded from all EU and UK regions, with OpenAI saying support is "coming soon." No timeline given. EU-based users who install the extension will find it connects fine, but the Codex app won't expose the Chrome plugin.
 
 Claude for Chrome has no regional restrictions. It works globally for paid subscribers.
 
@@ -167,13 +167,13 @@ If you want to try both, give each one a specific domain. Codex for multi-tab op
 
 ## Previous Posts:
 
-  * Curious why everyone keeps talking about workspace agents lately? Read AI Workspace Agents: [The New Operating System for Solo Founders.](</blog/workspace-agents-vs-chat-assistants>)
+  * Curious why everyone keeps talking about workspace agents lately? Read AI Workspace Agents: [The New Operating System for Solo Founders.](/blog/workspace-agents-vs-chat-assistants)
 
-  * If you're still comparing browser agents with normal AI chat tools, [Workspace Agents vs Chat Assistants](</blog/ai-workspace-agents>) breaks down the difference clearly.
+  * If you're still comparing browser agents with normal AI chat tools, [Workspace Agents vs Chat Assistants](/blog/ai-workspace-agents) breaks down the difference clearly.
 
-  * Want to understand Anthropic’s broader strategy behind browser automation? [What Are Claude Managed Agents ](</blog/what-are-claude-managed-agents>)goes deeper into the system design.
+  * Want to understand Anthropic’s broader strategy behind browser automation? [What Are Claude Managed Agents ](/blog/what-are-claude-managed-agents)goes deeper into the system design.
 
-  * If you're building a lean one-person workflow with AI tools,[ AI Workflow for Solo Founders ](</blog/ai-workflow-for-solo-founders>)connects directly to the ideas in this article.
+  * If you're building a lean one-person workflow with AI tools,[ AI Workflow for Solo Founders ](/blog/ai-workflow-for-solo-founders)connects directly to the ideas in this article.
 
-  * For more practical examples of where AI agents actually save time, check out[ AI Agents for Solo Operators](</blog/ai-agent-solo-operators>).
+  * For more practical examples of where AI agents actually save time, check out[ AI Agents for Solo Operators](/blog/ai-agent-solo-operators).
 

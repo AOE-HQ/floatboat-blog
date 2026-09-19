@@ -12,13 +12,13 @@ draft: false
 ---
 
 **TL;DR**
-  * **MiniMax H3 是全模态视频生成模型**——一个把文本、图片、视频和音频当作同一段上下文来读的开放权重系统，一次前向就返回一段带同步立体声的成片，2026 年发布在 [Hugging Face](<https://huggingface.co/MiniMaxAI/MiniMax-H3>) 上。
+  * **MiniMax H3 是全模态视频生成模型**——一个把文本、图片、视频和音频当作同一段上下文来读的开放权重系统，一次前向就返回一段带同步立体声的成片，2026 年发布在 [Hugging Face](https://huggingface.co/MiniMaxAI/MiniMax-H3) 上。
 
   * 它最高生成 2K 分辨率、15 秒、24 FPS 的视频，32 kHz 立体声由同一个 diffusion transformer 原生产出，而不是后期配音。
 
   * 发布两个检查点：**FL2VA**（文本 / 首帧 / 尾帧转视频）和 **Ref2VA**（参考转视频，单次请求最多 9 张图、3 段视频、3 个音频）。
 
-  * 按[官方 MiniMax 定价页](<https://platform.minimax.io/docs/guides/pricing-paygo>)，价格从 **2K 每秒 $0.13**、**768p 每秒 $0.08** 起。
+  * 按[官方 MiniMax 定价页](https://platform.minimax.io/docs/guides/pricing-paygo)，价格从 **2K 每秒 $0.13**、**768p 每秒 $0.08** 起。
 
   * 开放权重只覆盖 H3-Base：H3-Context-IR 预处理模块与 2K 重生成模块目前仍仅限 API。
 
@@ -50,7 +50,7 @@ H3 不是分辨率冠军。它的上限是 2K，而 Kling 3.0、Veo 3.1 这些�
 
 完整的 H3 系统由三个模块组成。**H3-Context-IR** 是托管的预处理与编排层：解读一份自由形式的多模态简报——解析指令、厘清图片与音频之间的关联、建立时间理解——并把自己的理解序列化成生成器能消费的结构化中间表示。**H3-Base** 是开放权重生成器：吃进这份表示，产出 768p 的视听结果。**H3-Regenerate-2K** 把 768p 输出连同原始上下文一起再喂回 H3-Base 自身，借助模型自己的生成能力恢复细部（小字、logo、纹理）——这些细节换作传统超分只能靠猜。
 
-底层来看，H3-Base 是一个 330 亿参数的稠密单流 transformer，其中约 130 亿参数在自适应层归一化（AdaLN）分支里——这些分支在推理时可以预计算并缓存，[Hugging Face 模型卡](<https://huggingface.co/MiniMaxAI/MiniMax-H3>)里有记载。文本由构建在 Qwen3-VL-32B 完整预训练权重之上的 H3-Encoder 编码；视觉经过时间因果的 H3-VisualVAE（16× 空间、4× 时间压缩，24 个潜通道）；音频经过 H3-AudioVAE，把 32 kHz 音频压成 40 Hz 的 token 流，每个立体声通道分别编码解码。transformer 用三维多模态旋转位置编码（MM-RoPE）表示时间、高度、宽度三个维度的位置，并原生支持长序列的稀疏注意力——不过当前开放版本跑的是全注意力，稀疏注意力的实现承诺在后续更新中推出。
+底层来看，H3-Base 是一个 330 亿参数的稠密单流 transformer，其中约 130 亿参数在自适应层归一化（AdaLN）分支里——这些分支在推理时可以预计算并缓存，[Hugging Face 模型卡](https://huggingface.co/MiniMaxAI/MiniMax-H3)里有记载。文本由构建在 Qwen3-VL-32B 完整预训练权重之上的 H3-Encoder 编码；视觉经过时间因果的 H3-VisualVAE（16× 空间、4× 时间压缩，24 个潜通道）；音频经过 H3-AudioVAE，把 32 kHz 音频压成 40 Hz 的 token 流，每个立体声通道分别编码解码。transformer 用三维多模态旋转位置编码（MM-RoPE）表示时间、高度、宽度三个维度的位置，并原生支持长序列的稀疏注意力——不过当前开放版本跑的是全注意力，稀疏注意力的实现承诺在后续更新中推出。
 
 一个值得留意的设计决策是：注意力层和前馈层里没有任何模态专属的结构，所有模态专门化都在输入/输出层和 AdaLN 分支里。这就是为什么单个模型能在文生视频、首尾帧生成和十二资产参考生成之间无缝切换、无需架构级大改——也是为什么 MiniMax 能把整个东西蒸馏成任务专属检查点，每个都自带处理器、tokenizer、文本编码器、视觉 VAE 和音频 VAE。
 
@@ -68,11 +68,11 @@ H3 不是分辨率冠军。它的上限是 2K，而 Kling 3.0、Veo 3.1 这些�
 
 ## 5\. 「开放权重」到底开放了什么
 
-视频生成领域的开放权重发布有信誉问题，因为过去的承诺常常最后变成「一篇博客 + 一个等候名单」。H3 的发布是真的，但是部分的——这个区别对打算本地部署的人很重要。[MiniMaxAI/MiniMax-H3 仓库](<https://huggingface.co/MiniMaxAI/MiniMax-H3>)里可下载的是 H3-Base 模块，分发为两个任务专属检查点（FL2VA 和 Ref2VA），各自自包含处理器、tokenizer、文本编码器、视觉 VAE 和音频 VAE。模型经由 SGLang、vLLM、diffusers 和 ComfyUI 提供服务，推荐四卡 GPU 配置；硬件兼容性从一开始就被列为设计优先项，覆盖华为昇腾、AMD、Intel 等主要芯片厂商，Hugging Face、ModelScope、ComfyUI 等推理平台也在发布当天就绪——见 [vLLM 的 H3 recipes 页](<https://recipes.vllm.ai/MiniMaxAI/MiniMax-H3>)。
+视频生成领域的开放权重发布有信誉问题，因为过去的承诺常常最后变成「一篇博客 + 一个等候名单」。H3 的发布是真的，但是部分的——这个区别对打算本地部署的人很重要。[MiniMaxAI/MiniMax-H3 仓库](https://huggingface.co/MiniMaxAI/MiniMax-H3)里可下载的是 H3-Base 模块，分发为两个任务专属检查点（FL2VA 和 Ref2VA），各自自包含处理器、tokenizer、文本编码器、视觉 VAE 和音频 VAE。模型经由 SGLang、vLLM、diffusers 和 ComfyUI 提供服务，推荐四卡 GPU 配置；硬件兼容性从一开始就被列为设计优先项，覆盖华为昇腾、AMD、Intel 等主要芯片厂商，Hugging Face、ModelScope、ComfyUI 等推理平台也在发布当天就绪——见 [vLLM 的 H3 recipes 页](https://recipes.vllm.ai/MiniMaxAI/MiniMax-H3)。
 
 不开源的是系统的其余部分。H3-Context-IR 是一个托管的多阶段工作流，依赖多个 MiniMax 服务，所以留在 API 后面；H3-Regenerate-2K 同样尚未发布，只提供了一个 API 用于验证官方 2K 结果。已发布检查点跑全注意力；让长上下文推理变便宜的稀疏注意力实现安排在后续更新。落到实践上：开发者可以在本地部署 H3-Base、复现 768p 结果，也可以把本地生成与 Context-IR API 组合起来逼近完整的 2K 工作流——但端到端的完整体验仍然部分受制于 MiniMax 的服务器。
 
-许可协议是「开放」的另一半。H3 采用 MiniMax H3 社区许可发布：年营收 2,000 万美元以下的组织可免费商用，需署名；非商业使用免费——详见[官方 MiniMax H3 许可文本](<https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE>)。这个门槛覆盖了大多数独立工作室和自由职业者，但对已融资团队是实打实的约束，所以在它之上做产品之前先读许可文本。任何开放权重模型都一样：「可下载」和「商用不受限」是两个问题。
+许可协议是「开放」的另一半。H3 采用 MiniMax H3 社区许可发布：年营收 2,000 万美元以下的组织可免费商用，需署名；非商业使用免费——详见[官方 MiniMax H3 许可文本](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE)。这个门槛覆盖了大多数独立工作室和自由职业者，但对已融资团队是实打实的约束，所以在它之上做产品之前先读许可文本。任何开放权重模型都一样：「可下载」和「商用不受限」是两个问题。
 
 ## 6\. H3 的短板在哪
 

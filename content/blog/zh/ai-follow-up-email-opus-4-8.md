@@ -29,7 +29,7 @@ draft: false
 
 你的日历知道有一场会开过、知道邀请了谁。但会议一结束，日历就跳到下一个时间块了。
 
-「会议结束」和「跟进邮件发出」之间的空档，正是大多数工作散架的地方。[Calendly《State of Meetings》报告](<https://www.businesswire.com/news/home/20241016065216/en/Report-Calendlys-State-of-Meetings-2024-shows-workers-want-more-meetings-as-long-as-theyre-good-meetings>)发现，40% 的受访者表示会议结束后收不到跟进纪要或行动项。这不是小效率损耗——而是几乎一半的人开完会都不知道接下来会发生什么。
+「会议结束」和「跟进邮件发出」之间的空档，正是大多数工作散架的地方。[Calendly《State of Meetings》报告](https://www.businesswire.com/news/home/20241016065216/en/Report-Calendlys-State-of-Meetings-2024-shows-workers-want-more-meetings-as-long-as-theyre-good-meetings)发现，40% 的受访者表示会议结束后收不到跟进纪要或行动项。这不是小效率损耗——而是几乎一半的人开完会都不知道接下来会发生什么。
 
 Motion、Reclaim 这类**日历工作流自动化**工具能守住你的日程，却碰不到会议之后的事。日历告诉你「什么时候」，却帮不了「接下来做什么」。AI 跟进正是在这一层开始变得重要——不是当更聪明的提醒，而是真的能把下一步草拟出来。
 
@@ -37,7 +37,7 @@ Motion、Reclaim 这类**日历工作流自动化**工具能守住你的日程�
 
 以下是**会议跟进 AI**开始有趣的地方——也是我投入测试时间最多的地方。
 
-基本流程：一份会议逐字稿（来自 Otter、Fireflies、[Read.ai](<http://Read.ai>) 或你在用的任何录音工具）被喂给一个 AI 模型。模型读稿、识别决议、抽取行动项、草拟跟进邮件。有些配置还能在你的项目管理工具里建任务、设提醒。
+基本流程：一份会议逐字稿（来自 Otter、Fireflies、[Read.ai](http://Read.ai) 或你在用的任何录音工具）被喂给一个 AI 模型。模型读稿、识别决议、抽取行动项、草拟跟进邮件。有些配置还能在你的项目管理工具里建任务、设提醒。
 
 我用 Claude 跑了一遍这个工作流，素材是一次 45 分钟客户电话的逐字稿。把原文贴进去，给了一句提示词——「根据这份逐字稿，起草一封含行动项、负责人和截止日期的跟进邮件」——然后等着。
 
@@ -63,13 +63,13 @@ Motion、Reclaim 这类**日历工作流自动化**工具能守住你的日程�
 
 我想聊聊**Claude Opus 4.8**——不是因为它唯一能干这活，而是因为它的发布能告诉我们这类工作正走向哪里。
 
-Anthropic 于 2026 年 5 月下旬[发布了 Opus 4.8](<https://www.anthropic.com/news/claude-opus-4-8>)。头条改进集中在 agentic 任务表现、工具调用一致性，以及——对跟进工作流最关键的部分——更长任务下的可靠性。早期测试者反馈，Opus 4.8 更少做出没有依据的断言，也更愿意标示自己的不确定性。Anthropic 自己的评估显示，相比上一代，这个模型把工作里的瑕疵留而不提的可能性大约降低了四倍。
+Anthropic 于 2026 年 5 月下旬[发布了 Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8)。头条改进集中在 agentic 任务表现、工具调用一致性，以及——对跟进工作流最关键的部分——更长任务下的可靠性。早期测试者反馈，Opus 4.8 更少做出没有依据的断言，也更愿意标示自己的不确定性。Anthropic 自己的评估显示，相比上一代，这个模型把工作里的瑕疵留而不提的可能性大约降低了四倍。
 
 对会议跟进来说，可靠性就是一切。一封编造了没人讨论过的行动项的草稿，比没有草稿更糟。**Opus 4.8 基准**在 agentic 编程上的成绩（SWE-Bench Pro 69.2%）说明，这个模型在「从杂乱文本里抽取具体事实」这类结构化提取上，比以往更稳定。
 
 这个特定工作流我使用 Opus 4.8 才一周半左右，不想夸大数据。但输出确实更紧凑：张冠李戴的归因少了，凭空出现的截止日期少了。那一环……比以前更多时候是直接跑通的。
 
-更大的信号：随着模型在[工具调用](<https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview>)和长程自主任务上越来越强，「AI 草拟一封邮件」和「AI 管理整个会后工作流」之间的差距在缩小。我们还没到那一步，但方向很清楚。
+更大的信号：随着模型在[工具调用](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)和长程自主任务上越来越强，「AI 草拟一封邮件」和「AI 管理整个会后工作流」之间的差距在缩小。我们还没到那一步，但方向很清楚。
 
 ## 什么必须留给人来复核
 
@@ -83,7 +83,7 @@ Anthropic 于 2026 年 5 月下旬[发布了 Opus 4.8](<https://www.anthropic.co
 
 **遗漏。**有时一场会里最重要的东西是没被说出口的——被绕开的问题、被回避的话题。AI 抓不到，你能，因为你在现场。
 
-即使在更进阶的配置里——**computer-use agent**理论上已能替你打开邮件客户端、粘贴草稿并点发送——人工复核仍然不可或缺。正如 [Anthropic 的 computer use 文档](<https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool>)所说，这项能力仍在成熟中。我会把会议跟进的完全自动化当成一个有用的原型，而不是可交付的工作流——至少现在如此。
+即使在更进阶的配置里——**computer-use agent**理论上已能替你打开邮件客户端、粘贴草稿并点发送——人工复核仍然不可或缺。正如 [Anthropic 的 computer use 文档](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool)所说，这项能力仍在成熟中。我会把会议跟进的完全自动化当成一个有用的原型，而不是可交付的工作流——至少现在如此。
 
 ![4.png](/blog/images/ai-follow-up-email-opus-4-8/1780822565084-55744c97-4a59-4148-b256-18662e0395d1.webp)
 
@@ -107,13 +107,13 @@ Anthropic 于 2026 年 5 月下旬[发布了 Opus 4.8](<https://www.anthropic.co
 
 ## 往期文章
 
-[不招人也能扩张的一人公司是怎么做到的](</blog/scale-one-person-business-without-hiring>)
+[不招人也能扩张的一人公司是怎么做到的](/blog/scale-one-person-business-without-hiring)
 
-[Claude Managed Agents：对一人公司意味着什么](</blog/claude-managed-agents-one-person-company>)
+[Claude Managed Agents：对一人公司意味着什么](/blog/claude-managed-agents-one-person-company)
 
-[一人公司如何像一支团队一样用 AI](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+[一人公司如何像一支团队一样用 AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-[为什么一人公司需要一个工作区 Agent](</blog/workspace-agents-for-solo-operators>)
+[为什么一人公司需要一个工作区 Agent](/blog/workspace-agents-for-solo-operators)
 
-[工作区 Agent vs 工作流搭建器：一份清晰的对比](</blog/workspace-agents-vs-workflow-builders>)
+[工作区 Agent vs 工作流搭建器：一份清晰的对比](/blog/workspace-agents-vs-workflow-builders)
 

@@ -15,7 +15,7 @@ TL;DR
 
   * **AI 日程 Agent** 是用 AI 管理、优化并对你的日历采取行动的软件——从协调时间空档，走向带上下文感知的准备、优先级排序，以及日历驱动工作的**执行**。
 
-  * 这个市场已经走过**四代**：智能排程器（Calendly）→ AI 优化器（Motion、Reclaim、Morgen）→ AI 日程 Agent（Agentic Calendars、[Cal.com](<http://Cal.com>) Agents）→ 日历驱动的 Agent 操作系统（Floatboat）。
+  * 这个市场已经走过**四代**：智能排程器（Calendly）→ AI 优化器（Motion、Reclaim、Morgen）→ AI 日程 Agent（Agentic Calendars、[Cal.com](http://Cal.com) Agents）→ 日历驱动的 Agent 操作系统（Floatboat）。
 
   * 评估任何工具的关键问题不是"它排程排得有多好？"——而是"**日程排好之后，它拿这些时间做了什么？**"
 
@@ -79,7 +79,7 @@ AI 日程不是一次到位的。它走过四代，每一代都回答一个关�
 
 第 3 代工具开始从排程跨向执行。例如 Agentic Calendars 会读入站邮件、自动约会议——一个盯着收件箱、无需人工路由就处理排程请求的 Agent。触发器是一封邮件到达；产出是一个已确认的日历事件。这是"无需提示词就能跑起来的 Agent"的一个窄而真实的例子。
 
-[Cal.com](<http://Cal.com>) Agents 走了另一条架构路线：一个开放平台，让开发者构建能长在各种工作发生地的日程 Agent——Slack、Telegram、CLI、API，以及兼容 OpenClaw 的环境。它不是构建一个排程 Agent，而是为很多个 Agent 搭建基础设施，让日程 Agent 能嵌入团队已在用的各类工具。
+[Cal.com](http://Cal.com) Agents 走了另一条架构路线：一个开放平台，让开发者构建能长在各种工作发生地的日程 Agent——Slack、Telegram、CLI、API，以及兼容 OpenClaw 的环境。它不是构建一个排程 Agent，而是为很多个 Agent 搭建基础设施，让日程 Agent 能嵌入团队已在用的各类工具。
 
 企业侧，Findem 与 Glider AI 做了招聘垂类的日程 Agent：在候选人、招聘经理与面试小组之间协调面试，处理通用排程器苦手的多方复杂性。它们是第 2–3 代的混合体——领域受限，但展示了"为特定垂直场景而非泛化受众构建日程 Agent"会发生什么。
 
@@ -133,7 +133,7 @@ Floatboat 就是为这一代设计的：每个日历事件都变成一整条工�
 
 **5\. 它和你在用的工具兼容吗？**
 
-Agent 能读你的本地文件、访问 Google Drive 和 Notion、伸进你的 Slack 和邮箱吗——还是要你把一切都搬进它的平台？[Cal.com](<http://Cal.com>) Agents 靠平台原生集成来解决：把日程 Agent 直接嵌进 Slack、Telegram、CLI、API 环境，而不是要求团队换一套新界面。Floatboat 走不同路线：用 MCP、IACT 这类协议把 Agent 和你原本就在用的文件、日历、沟通渠道连起来。第 1 代工具多是围墙花园——预约页即产品，数据不容易出去。对单人经营者来说，集成质量不是锦上添花：**如果 Agent 看不见你真实的工作环境**——开会前要查的 Notion 页面、起草交付物的 Google Docs、做决定的 Slack 线程——它就做不出有意义的准备。最好的日程 Agent，是能在你工作本来就发生的地方工作的那个。
+Agent 能读你的本地文件、访问 Google Drive 和 Notion、伸进你的 Slack 和邮箱吗——还是要你把一切都搬进它的平台？[Cal.com](http://Cal.com) Agents 靠平台原生集成来解决：把日程 Agent 直接嵌进 Slack、Telegram、CLI、API 环境，而不是要求团队换一套新界面。Floatboat 走不同路线：用 MCP、IACT 这类协议把 Agent 和你原本就在用的文件、日历、沟通渠道连起来。第 1 代工具多是围墙花园——预约页即产品，数据不容易出去。对单人经营者来说，集成质量不是锦上添花：**如果 Agent 看不见你真实的工作环境**——开会前要查的 Notion 页面、起草交付物的 Google Docs、做决定的 Slack 线程——它就做不出有意义的准备。最好的日程 Agent，是能在你工作本来就发生的地方工作的那个。
 
 这五个问题正好对上四代框架：第 1、2 代在第 5 题（集成）得分不错，但在 1–4 题都栽了——它们从不是为执行而造。第 3 代开始回答第 1、2 题，第 4 题仍需人发起。第 4 代是设计成能在五题全答"是"的那一档。
 
@@ -157,11 +157,11 @@ Floatboat 正是为这个转向而生。它不是更好的 Calendly 替代品，
 
 ## 相关文章
 
-  * [FloatIM 正式上线：在 Agent 原生网络上与 AI Agent 群聊](</blog/introducing-floatim>)
+  * [FloatIM 正式上线：在 Agent 原生网络上与 AI Agent 群聊](/blog/introducing-floatim)
 
-  * [单人经营者该不该用 AI Agent？](</blog/ai-agent-solo-operators>)
+  * [单人经营者该不该用 AI Agent？](/blog/ai-agent-solo-operators)
 
-  * [一人公司如何像团队一样用 AI 工作](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [一人公司如何像团队一样用 AI 工作](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
 * * *
 

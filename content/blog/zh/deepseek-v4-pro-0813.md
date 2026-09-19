@@ -33,14 +33,14 @@ DeepSeek 习惯不打锣鼓就发货，但 V4 Pro 0813 的这次上线把这一�
 
 ## 2\. 用数字看 V4 Pro 0813
 
-GA 版本的规格表与预览版一致——这个事实本身就很有用：这是一次后训练发布，不是新架构。下面的数字取自 DeepSeek 官方模型文档与 [DeepSeek API 文档定价页](<https://api-docs.deepseek.com/quick_start/pricing>)。
+GA 版本的规格表与预览版一致——这个事实本身就很有用：这是一次后训练发布，不是新架构。下面的数字取自 DeepSeek 官方模型文档与 [DeepSeek API 文档定价页](https://api-docs.deepseek.com/quick_start/pricing)。
 
 
 
 <table><colgroup><col/><col/></colgroup><tr><td colspan="1" rowspan="1"><p>规格</p></td><td colspan="1" rowspan="1"><p>数值</p></td></tr><tr><td colspan="1" rowspan="1"><p>架构</p></td><td colspan="1" rowspan="1"><p>混合专家（MoE），1.6T 总参数 / 49B 激活参数</p></td></tr><tr><td colspan="1" rowspan="1"><p>注意力机制</p></td><td colspan="1" rowspan="1"><p>混合式：压缩稀疏注意力（CSA）+ 深度压缩注意力（HCA）</p></td></tr><tr><td colspan="1" rowspan="1"><p>上下文窗口</p></td><td colspan="1" rowspan="1"><p>1,000,000 token</p></td></tr><tr><td colspan="1" rowspan="1"><p>最大输出</p></td><td colspan="1" rowspan="1"><p>384,000 token</p></td></tr><tr><td colspan="1" rowspan="1"><p>输入模态</p></td><td colspan="1" rowspan="1"><p>仅文本（此版本不支持视觉、音频或视频）</p></td></tr><tr><td colspan="1" rowspan="1"><p>推理模式</p></td><td colspan="1" rowspan="1"><p>Non-think、Think High、Think Max（reasoning_effort 扩展为 low / high / max）</p></td></tr><tr><td colspan="1" rowspan="1"><p>API 兼容性</p></td><td colspan="1" rowspan="1"><p>OpenAI Responses API、Chat Completions、Anthropic 兼容格式</p></td></tr><tr><td colspan="1" rowspan="1"><p>工具调用</p></td><td colspan="1" rowspan="1"><p>JSON 输出、工具调用、beta 前缀续写、FIM（仅非思考模式）</p></td></tr><tr><td colspan="1" rowspan="1"><p>并发数</p></td><td colspan="1" rowspan="1"><p>500（V4 Flash 允许 2,500）</p></td></tr><tr><td colspan="1" rowspan="1"><p>权重</p></td><td colspan="1" rowspan="1"><p>MIT 许可；Hugging Face 上托管的仍是 4 月预览版，而非 0813</p></td></tr></table>
 
 
-那张表里有三件事值得关注。其一，扩展后的 reasoning_effort 阶梯——low / high / max——给了开发者一个直接对应任务复杂度的成本旋钮，这正是 DeepSeek 在 V4 Flash 转正时加的同一套控制。其二，Anthropic 兼容端点意味着，任何已经把 Claude Code 指向 [api.deepseek.com](<http://api.deepseek.com>) 的人，无需改一行代码就能拿到生产检查点。其三，输入模态仅限文本：0813 没有加入原生图像推理，尽管有些报道暗示相反——Artificial Analysis 的模型卡和 DeepSeek 自己的文档都把输入列为仅文本。
+那张表里有三件事值得关注。其一，扩展后的 reasoning_effort 阶梯——low / high / max——给了开发者一个直接对应任务复杂度的成本旋钮，这正是 DeepSeek 在 V4 Flash 转正时加的同一套控制。其二，Anthropic 兼容端点意味着，任何已经把 Claude Code 指向 [api.deepseek.com](http://api.deepseek.com) 的人，无需改一行代码就能拿到生产检查点。其三，输入模态仅限文本：0813 没有加入原生图像推理，尽管有些报道暗示相反——Artificial Analysis 的模型卡和 DeepSeek 自己的文档都把输入列为仅文本。
 
 架构本身值得比参数数量更深一层地理解，因为它解释了模型的经济学。V4 采用混合注意力设计——压缩稀疏注意力（CSA）加深度压缩注意力（HCA）——对长上下文记忆的压缩激进到：在同样的 100 万 token 上下文下，模型的单 token 推理 FLOPs 约为 DeepSeek V3.2 的 27%，KV 缓存占用压到大约十分之一。这正是 100 万 token 上下文窗口能负担得起的原因：稀疏注意力让长输入的新增成本保持很小，而这恰恰是智能体工作负载——上下文会随多步累积——最看重的性质。这也是为什么模型对 MoE 专家用 FP4 精度、其余用 FP8：缩小的占用直接降低服务成本，而 DeepSeek 自己的发布材料还提到该格式与国产加速器支持对齐，暗示随着这些硬件在 2026 年放量，推理成本还会进一步下降。
 
@@ -48,7 +48,7 @@ GA 版本的规格表与预览版一致——这个事实本身就很有用：�
 
 DeepSeek 官方为 GA 发布写的更新日志公布了一张看起来像阶跃变化的基准表。标题数字：Terminal-Bench 2.1 达到 87.9（预览版为 72.1）、DeepSWE 62.7（预览版 12.8，约 4.9 倍跳升）、Cybergym 83.3（预览版 52.7）、NL2Repo 61.5（预览版 38.5）、Toolathlon-Verified 74.1。在表中两项 Agent 基准上，DeepSeek 声称的成绩略超 Anthropic 的 Claude Fable 5——Cybergym 83.3 对 83.1，AutomationBench（Public）31.8 对 29.1——而 Terminal-Bench 2.1 以 0.1 分之差落后于 Fable 5（87.9 对 88.0）。
 
-这些数字需要更新日志没有提供的背景。Agent 基准是通过「DeepSeek Harness minimal mode」跑出来的——一个公司没有公开的基准框架——这意味着框架的强弱已经烙进每一个分数里。这次不透明的代价比平时更高，因为预览版有前科：在一次独立运行的 DeepSWE 评测里（用误报率 0.3% 的验证器），预览版 pass@1 大约只有 8%——而 DeepSeek 在自家 SWE-bench Verified 上、用误报率高得多的框架跑出 80.6%。如果 0813 的后训练真能在更严的 DeepSWE 基准上拿到 62.7，那是实打实的能力跃迁；如果它只是宽松框架的产物，那就是噪音。独立追踪机构至今没有仲裁出结果——截至撰稿时，[benchable.ai](<http://benchable.ai>) 上 0813 的第三方结果是零条，厂商的评测框架也仍未公开。
+这些数字需要更新日志没有提供的背景。Agent 基准是通过「DeepSeek Harness minimal mode」跑出来的——一个公司没有公开的基准框架——这意味着框架的强弱已经烙进每一个分数里。这次不透明的代价比平时更高，因为预览版有前科：在一次独立运行的 DeepSWE 评测里（用误报率 0.3% 的验证器），预览版 pass@1 大约只有 8%——而 DeepSeek 在自家 SWE-bench Verified 上、用误报率高得多的框架跑出 80.6%。如果 0813 的后训练真能在更严的 DeepSWE 基准上拿到 62.7，那是实打实的能力跃迁；如果它只是宽松框架的产物，那就是噪音。独立追踪机构至今没有仲裁出结果——截至撰稿时，[benchable.ai](http://benchable.ai) 上 0813 的第三方结果是零条，厂商的评测框架也仍未公开。
 
 诚实的读法是这样的：改进方向指向智能体能力，这一点可信；幅度未经证实；任何人仅凭这些数字选模型，等于凭信仰选择。想更深入理解 DeepSeek Agent 如何分类、四种原型有何差异，可看「什么是 DeepSeek Agent」。务实的姿态——也是无论独立验证结果如何都站得住的那种——是把 0813 当作智能体编码上「又强又便宜」的候选，在投入之前先用你自己的负载验证它。
 

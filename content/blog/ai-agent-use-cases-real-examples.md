@@ -17,7 +17,7 @@ Not because the results are fake. But because they skip the messy middle.
 
 ## Why Most AI Agent Case Studies Aren't That Useful
 
-Here's what I usually see: a before/after snapshot, some impressive percentages, and a vague mention of "AI automation." What's missing is the setup, the failure modes, and the honest answer to _"would this actually work for someone like me?" Most case studies skip the messy middle. IBM's research on ​_ ​[IBM](<https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality>) _​_ ​ ​ _​_ AI agents: expectations vs. reality in 2025 _​_ ​ points out exactly this tension — the hype outpaces the actual deployment patterns.
+Here's what I usually see: a before/after snapshot, some impressive percentages, and a vague mention of "AI automation." What's missing is the setup, the failure modes, and the honest answer to _"would this actually work for someone like me?" Most case studies skip the messy middle. IBM's research on ​_ ​[IBM](https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality) _​_ ​ ​ _​_ AI agents: expectations vs. reality in 2025 _​_ ​ points out exactly this tension — the hype outpaces the actual deployment patterns.
 
 So I decided to write the version I wished existed — grounded in realistic work patterns, with the limitations included.
 
@@ -55,7 +55,7 @@ A content creator publishes one long article per week and wants to repurpose it 
 
 ### Workflow
 
-They feed the original article into an agent workflow that's been prompted with their tone and format preferences. The agent generates draft versions of each format. According to [research on content repurposing workflows](<https://contentmarketinginstitute.com/articles/repurpose-content-strategy/>), repurposing is one of the highest-ROI activities for content teams — but most people do it manually.
+They feed the original article into an agent workflow that's been prompted with their tone and format preferences. The agent generates draft versions of each format. According to [research on content repurposing workflows](https://contentmarketinginstitute.com/articles/repurpose-content-strategy/), repurposing is one of the highest-ROI activities for content teams — but most people do it manually.
 
 ### Output
 
@@ -73,7 +73,7 @@ An indie product builder wants to track what competitors are doing — new featu
 
 ### Workflow
 
-An agent workflow is set up to pull updates from specific URLs, look for changes, and generate a brief summary. Tools like this connect to browser data or Google Alerts-style inputs. For context on how competitive intelligence has evolved with AI, [MIT Technology Review](<https://www.technologyreview.com/>) has covered the shift well.
+An agent workflow is set up to pull updates from specific URLs, look for changes, and generate a brief summary. Tools like this connect to browser data or Google Alerts-style inputs. For context on how competitive intelligence has evolved with AI, [MIT Technology Review](https://www.technologyreview.com/) has covered the shift well.
 
 ### Output
 
@@ -93,7 +93,7 @@ A consultant regularly writes project proposals. The structure is similar each t
 
 ### Workflow
 
-They built a workflow that takes a client brief (even a rough one) and generates a first-draft proposal using their standard structure. The agent pulls from a library of past proposals to match tone and depth. [Harvard Business Review has written](<https://hbr.org/>) about how knowledge workers increasingly use AI as a "first drafter" rather than a replacement — and this pattern fits that exactly.
+They built a workflow that takes a client brief (even a rough one) and generates a first-draft proposal using their standard structure. The agent pulls from a library of past proposals to match tone and depth. [Harvard Business Review has written](https://hbr.org/) about how knowledge workers increasingly use AI as a "first drafter" rather than a replacement — and this pattern fits that exactly.
 
 ### Output
 
@@ -143,7 +143,7 @@ Okay, so you want to try this. Here's what I'd actually tell a friend:
 
 **Start small.** Pick one repeatable task. Get it working well. Then add another. The people who try to automate everything at once usually end up with a mess of half-working workflows.
 
-Wait… ! And one more thing I keep noticing: **the people getting the most out of AI agents aren't necessarily the most technical.** They're the ones who are clearest about what they want. Good prompting is just clear thinking, written down. [OpenAI's prompt engineering guide](<https://platform.openai.com/docs/guides/prompt-engineering>) is actually a surprisingly useful read for non-developers — most of the advice is just about being precise.
+Wait… ! And one more thing I keep noticing: **the people getting the most out of AI agents aren't necessarily the most technical.** They're the ones who are clearest about what they want. Good prompting is just clear thinking, written down. [OpenAI's prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering) is actually a surprisingly useful read for non-developers — most of the advice is just about being precise.
 
 ![5.png](/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.webp)
 

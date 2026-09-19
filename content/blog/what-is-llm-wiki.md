@@ -11,7 +11,7 @@ locale: "en"
 draft: false
 ---
 
-Hi, I'm Nova. I'll be honest — when ​**Karpathy** ​'s tweet started circulating a few weeks ago, my first reaction was "wait, is this actually new?" I've been tinkering with personal knowledge setups for a while. Obsidian vaults, custom GPT instructions, note-dumping workflows. I knew what RAG was. So the first time I skimmed the posts about his ​[LLM wiki](<https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>)​, I half-dismissed it.
+Hi, I'm Nova. I'll be honest — when ​**Karpathy** ​'s tweet started circulating a few weeks ago, my first reaction was "wait, is this actually new?" I've been tinkering with personal knowledge setups for a while. Obsidian vaults, custom GPT instructions, note-dumping workflows. I knew what RAG was. So the first time I skimmed the posts about his ​[LLM wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)​, I half-dismissed it.
 
 Then I actually read the gist.
 
@@ -25,7 +25,7 @@ Most of us interact with AI and documents like this: you upload a PDF or paste s
 
 An LLM wiki flips that. Instead of searching raw documents on the fly, you ask the LLM to _pre-compile_ your sources into a structured wiki — a directory of linked markdown files. After that, when you ask a question, the AI isn't digging through raw PDFs. It's navigating a knowledge base that already synthesized them.
 
-As Karpathy puts it in [the original gist](<https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>): "With RAG, you cook every time you are hungry. With LLM Wiki, you build a kitchen that keeps improving its recipes."
+As Karpathy puts it in [the original gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): "With RAG, you cook every time you are hungry. With LLM Wiki, you build a kitchen that keeps improving its recipes."
 
 That framing stuck with me.
 
@@ -49,7 +49,7 @@ RAG retrieves. The LLM wiki _accumulates._ That's the real distinction.
 
 Traditional note-taking apps like Notion or Obsidian give you the container but leave all the maintenance to you. You have to tag things, link things, update things. Most people's Notion databases are full of pages nobody has touched since month two. The LLM wiki solves the maintenance problem by delegating it — the LLM handles cross-references, flags stale info, and updates connections automatically.
 
-As [Analytics Vidhya's breakdown of Karpathy's approach](<https://www.analyticsvidhya.com/blog/2026/04/llm-wiki-by-andrej-karpathy/>) explains, the wiki becomes more valuable with each new source you add because each ingest integrates, not just appends.
+As [Analytics Vidhya's breakdown of Karpathy's approach](https://www.analyticsvidhya.com/blog/2026/04/llm-wiki-by-andrej-karpathy/) explains, the wiki becomes more valuable with each new source you add because each ingest integrates, not just appends.
 
 ![3.png](/blog/images/what-is-llm-wiki/1776148835868-b86aa41a-ae09-4afd-8063-480d8965502f.webp)
 
@@ -87,7 +87,7 @@ Here's where I want to be direct, because most of the articles I've seen skip th
 
 **Karpathy's implementation is for developers.** Full stop.
 
-His setup requires Claude Code (a terminal-based coding agent), Obsidian, comfort with shell commands, GitHub gist familiarity, and the willingness to debug when things break. [Antigravity's deep dive into the LLM Wiki idea file](<https://antigravity.codes/blog/karpathy-llm-wiki-idea-file>) does a good job walking through each tool — and the list is formidable if you're not technical.
+His setup requires Claude Code (a terminal-based coding agent), Obsidian, comfort with shell commands, GitHub gist familiarity, and the willingness to debug when things break. [Antigravity's deep dive into the LLM Wiki idea file](https://antigravity.codes/blog/karpathy-llm-wiki-idea-file) does a good job walking through each tool — and the list is formidable if you're not technical.
 
 This isn't a criticism of the pattern. It's just accurate. Karpathy is a researcher and engineer building a system for how _he_ works. His corpus is academic papers, code, and research documents. His workflow is a shell with an LLM.
 
@@ -155,30 +155,30 @@ The emerging category: workspace tools like **Floatboat** are attempting to make
 
 The gist itself hints at this. Karpathy notes that as the pattern matures, there's room for "an incredible new product" — something that makes ingest, query, lint, and visualization coherent rather than a collection of scripts.
 
-Right now, [the community is already iterating fast](<https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2>) — adding confidence scoring to wiki pages, supersession logic when new sources contradict old ones, lifecycle management so knowledge doesn't rot. These are problems that emerge at scale, and they're being solved openly.
+Right now, [the community is already iterating fast](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2) — adding confidence scoring to wiki pages, supersession logic when new sources contradict old ones, lifecycle management so knowledge doesn't rot. These are problems that emerge at scale, and they're being solved openly.
 
 What the developer community is building by hand today is probably what product teams will build as polished software in the next 12-18 months. The pattern is clear. The infrastructure question is just: who makes it accessible to the other 95% of users who can't run a shell?
 
-That's the product category the[ LLM](<https://techterms.com/definition/llm>) wiki points toward. Not a better RAG. A workspace that knows how you work.
+That's the product category the[ LLM](https://techterms.com/definition/llm) wiki points toward. Not a better RAG. A workspace that knows how you work.
 
 ![6.png](/blog/images/what-is-llm-wiki/1776148866360-405fe00c-6fed-475f-a61d-1503898579ec.webp)
 
 
 That's where I am with this. The pattern is genuinely interesting — not because it's revolutionary, but because it finally names the problem clearly and gives it a concrete architecture. Whether you build one yourself depends almost entirely on whether you're comfortable running shell commands and whether your work actually involves deep domain accumulation over time.
 
-If the answer to both is yes: [Karpathy's gist is right there](<https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>), and the community implementations are already good.
+If the answer to both is yes: [Karpathy's gist is right there](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), and the community implementations are already good.
 
 If the answer to either is no: the principle still matters. Figure out your simplest version of "compile once, use many times." That's the part worth keeping.
 
 ## Previous Posts:
 
-  * [Still confused about why AI keeps starting from scratch? This breaks it down clearly](</blog/why-ai-forgets-every-session>)
+  * [Still confused about why AI keeps starting from scratch? This breaks it down clearly](/blog/why-ai-forgets-every-session)
 
-  * [Want a simpler explanation of persistent AI vs one-off tools? Start here](</blog/what-is-persistent-ai-agent>)
+  * [Want a simpler explanation of persistent AI vs one-off tools? Start here](/blog/what-is-persistent-ai-agent)
 
-  * [Not sure whether you need a knowledge base or something more practical? Read this](</blog/llm-knowledge-base-solo-operators>)
+  * [Not sure whether you need a knowledge base or something more practical? Read this](/blog/llm-knowledge-base-solo-operators)
 
-  * [If you're deciding between building your own system or using a tool, this helps](</blog/workflow-builder-vs-ai-workspace>)
+  * [If you're deciding between building your own system or using a tool, this helps](/blog/workflow-builder-vs-ai-workspace)
 
-  * [Curious how AI agents actually fit into real solo workflows? This gives context](</blog/ai-agents-2026-solo-operators>)
+  * [Curious how AI agents actually fit into real solo workflows? This gives context](/blog/ai-agents-2026-solo-operators)
 

@@ -21,13 +21,13 @@ draft: false
 
 ### 工作流搭建器：建一次，永久触发
 
-工作流搭建器是你预先搭好的管线。你设一个触发器（"这张表出现新行"），再串起一串节点——读这个、转换那个、写到这里、发那条。一旦跑起来，每次触发器被触发，它都会以同一顺序、同一逻辑运行。Zapier 和 [Make.com](<http://Make.com>) 是典型代表，而且嵌入 AI 节点后，它们的能力显著变强了。光是 Zapier 现在就接入 8,000+ 应用；这类平台的现代版本也越来越多地把 LLM 烤进单个步骤——你可以在管线中途的节点里做路由、摘要或抽取。**工作的形态是固定的，智能只坐在其中一两个步骤里。**
+工作流搭建器是你预先搭好的管线。你设一个触发器（"这张表出现新行"），再串起一串节点——读这个、转换那个、写到这里、发那条。一旦跑起来，每次触发器被触发，它都会以同一顺序、同一逻辑运行。Zapier 和 [Make.com](http://Make.com) 是典型代表，而且嵌入 AI 节点后，它们的能力显著变强了。光是 Zapier 现在就接入 8,000+ 应用；这类平台的现代版本也越来越多地把 LLM 烤进单个步骤——你可以在管线中途的节点里做路由、摘要或抽取。**工作的形态是固定的，智能只坐在其中一两个步骤里。**
 
 ### 工作区 Agent：AI 就嵌在正在发生的工作里
 
 工作区 Agent 是另一种思路。你不预先定义管线，而是坐进一个"AI 感知"的环境——通常是一个桌面或浏览器层——Agent 在你正在做的任何事情上与你并肩工作：文件、浏览器标签页、笔记、草稿。你让它做某事，它自己推导步骤、执行，你边做边调整。
 
-Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthropic.com/research/building-effective-agents>)：工作流是"LLM 与工具经由预定义代码路径被编排的系统"，而 Agent 是模型"动态地主导自己的流程与工具使用"的系统。那套语言是写给构建这些东西的工程师的，但也抓住了用户侧的差异。**工作流搭建器运行你画好的那条路径；工作区 Agent 在工作发生的过程中选路径。**
+Anthropic 研究团队对[这个区别有个有用的定义](https://www.anthropic.com/research/building-effective-agents)：工作流是"LLM 与工具经由预定义代码路径被编排的系统"，而 Agent 是模型"动态地主导自己的流程与工具使用"的系统。那套语言是写给构建这些东西的工程师的，但也抓住了用户侧的差异。**工作流搭建器运行你画好的那条路径；工作区 Agent 在工作发生的过程中选路径。**
 
 ![2.PNG](/blog/images/workspace-agents-vs-workflow-builders/1777341455454-a12cd665-fbb4-48d2-90ec-f3cd98d20026.webp)
 
@@ -53,7 +53,7 @@ Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthro
 
 ### 判断与异常怎么处理
 
-工作流搭建器本质上是确定性的。这是特性，不是 bug——当银行向客户扣款时，你不需要创造性诠释。正如 Atomicwork 团队[在他们拆解里指出的](<https://www.atomicwork.com/blog/ai-agents-vs-ai-automation>)：规则式自动化"不妥协、僵硬，但结果高度可预测"。异常通常会被弹到人工队列。
+工作流搭建器本质上是确定性的。这是特性，不是 bug——当银行向客户扣款时，你不需要创造性诠释。正如 Atomicwork 团队[在他们拆解里指出的](https://www.atomicwork.com/blog/ai-agents-vs-ai-automation)：规则式自动化"不妥协、僵硬，但结果高度可预测"。异常通常会被弹到人工队列。
 
 工作区 Agent 当场处理模糊性。它会做一个判断——有时是错的——然后你在现场纠正。取舍是真实的：你放弃可预测性，换来适应性。
 
@@ -69,7 +69,7 @@ Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthro
 
 ### 高量、可重复、触发器驱动的流程
 
-凡是同一种形态要跑几百上千次的东西——发票处理、线索路由、工单分诊、定时报表。工作每次都要以同样的方式完成，而且你希望零意外。正如 Knack 的[并排分析所说](<https://www.knack.com/blog/make-com-vs-zapier-comparison-guide-2025/>)，Zapier 在这里的优势是"更强的企业级支持"——SOC 2 合规，基础自动化稳定。
+凡是同一种形态要跑几百上千次的东西——发票处理、线索路由、工单分诊、定时报表。工作每次都要以同样的方式完成，而且你希望零意外。正如 Knack 的[并排分析所说](https://www.knack.com/blog/make-com-vs-zapier-comparison-guide-2025/)，Zapier 在这里的优势是"更强的企业级支持"——SOC 2 合规，基础自动化稳定。
 
 ### 让互不相通系统之间的集成
 
@@ -83,13 +83,13 @@ Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthro
 
 ### 混合的、重判断的、天天在变的工作
 
-单人创始人和顾问就住在这里。周一是调研，周二是方案，周三是改客户文案，周四是搞清一个税务问题。没有一件值得搭一条工作流——等你把设计做完，任务早就能干完了。Anthropic 团队[直接点明了这一点](<https://resources.anthropic.com/building-effective-ai-agents>)：当"需要在规模上具备灵活性和模型驱动的决策"时，Agent 是正确的选择；而工作流适合"定义良好的任务"。
+单人创始人和顾问就住在这里。周一是调研，周二是方案，周三是改客户文案，周四是搞清一个税务问题。没有一件值得搭一条工作流——等你把设计做完，任务早就能干完了。Anthropic 团队[直接点明了这一点](https://resources.anthropic.com/building-effective-ai-agents)：当"需要在规模上具备灵活性和模型驱动的决策"时，Agent 是正确的选择；而工作流适合"定义良好的任务"。
 
 ![4.png](/blog/images/workspace-agents-vs-workflow-builders/1777341477750-736282a3-524a-4999-adf2-e92e4920f351.webp)
 
 ### 单人经营者与身兼多职的人
 
-如果你是同时做战略_和_执行_和_内容_和_客户沟通的一人公司，工作流搭建器并不能真正压缩你的一天——它只压缩其中_一个_重复的切片。一个能坐在你工作里、帮你处理眼前任何事的 Agent，压缩的是整个形态。Relevance AI 团队[把这层意思框得很好](<https://relevanceai.com/blog/the-definitive-guide-understanding-ai-agents-vs-ai-workflows>)：工作流工具"作用于句法——信息的结构"，而 Agent 处理的是语义——信息在语境里到底意味着什么。
+如果你是同时做战略_和_执行_和_内容_和_客户沟通的一人公司，工作流搭建器并不能真正压缩你的一天——它只压缩其中_一个_重复的切片。一个能坐在你工作里、帮你处理眼前任何事的 Agent，压缩的是整个形态。Relevance AI 团队[把这层意思框得很好](https://relevanceai.com/blog/the-definitive-guide-understanding-ai-agents-vs-ai-workflows)：工作流工具"作用于句法——信息的结构"，而 Agent 处理的是语义——信息在语境里到底意味着什么。
 
 ### 横跨文件、标签页和工具的工作
 
@@ -117,7 +117,7 @@ Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthro
 
 如果你想自动化的那件事**每个月以同样方式发生超过 20 次**，就在工作流工具里建。如果它**只发生一两次、而且每次形态都变**，那是 Agent 的地盘。如果两者兼具——对单人经营者来说通常正是如此——你会两种各留一个，这没问题。
 
-[Gartner 预测](<https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025>)，到 2026 年底将有 40% 的企业应用内置任务型 Agent，而 2025 年这一比例还不到 5%。那个精确数字会不会兑现，谁也说不准——_我写下这段话时，它是预测，不是事实_——但方向性判断看起来是对的。这两个品类正在分化，而不是趋同。
+[Gartner 预测](https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025)，到 2026 年底将有 40% 的企业应用内置任务型 Agent，而 2025 年这一比例还不到 5%。那个精确数字会不会兑现，谁也说不准——_我写下这段话时，它是预测，不是事实_——但方向性判断看起来是对的。这两个品类正在分化，而不是趋同。
 
 ![5.png](/blog/images/workspace-agents-vs-workflow-builders/1777341489448-c8adee60-91c1-4eef-bf0d-39c26644a653.webp)
 
@@ -125,13 +125,13 @@ Anthropic 研究团队对[这个区别有个有用的定义](<https://www.anthro
 
 ## 系列前文
 
-  * [还在结构化工作流和 AI 原生工具之间摇摆？从这里开始](</blog/workflow-builder-vs-ai-workspace>)
+  * [还在结构化工作流和 AI 原生工具之间摇摆？从这里开始](/blog/workflow-builder-vs-ai-workspace)
 
-  * [如果你是 Agent 新手，这篇指南讲清 AI Agent 在真实场景里到底怎么运作](</blog/ai-agent-use-cases-real-examples>)
+  * [如果你是 Agent 新手，这篇指南讲清 AI Agent 在真实场景里到底怎么运作](/blog/ai-agent-use-cases-real-examples)
 
-  * [想超越工具、搭自己的系统？这篇是从零搭建 AI Agent 的实用入门](</blog/how-to-build-an-ai-agent>)
+  * [想超越工具、搭自己的系统？这篇是从零搭建 AI Agent 的实用入门](/blog/how-to-build-an-ai-agent)
 
-  * [想要更实操的视角？这篇展示了 Agent 工作流在日常工作中是怎么跑的](</blog/ai-agent-workflow-vibe-coding>)
+  * [想要更实操的视角？这篇展示了 Agent 工作流在日常工作中是怎么跑的](/blog/ai-agent-workflow-vibe-coding)
 
-  * [如果你在单干，这篇拆解了一人公司如何用 AI 像团队一样运转](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [如果你在单干，这篇拆解了一人公司如何用 AI 像团队一样运转](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 

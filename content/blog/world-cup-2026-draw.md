@@ -26,7 +26,7 @@ The World Cup 2026 draw is where the tournament changed from a calendar into a m
 
 As of July 8, 2026, the draw results are now known and the group-stage picture has moved from projection to analysis. This page summarizes the full World Cup 2026 draw results, explains the key matchup in every group, highlights the host-nation picture for Mexico, Canada, and the United States, and connects the draw to the World Cup 2026 groups and standings hub and the World Cup 2026 bracket tracker.
 
-**Source note:** Group assignments and tournament references should be checked against the [official FIFA World Cup 2026 hub](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>) before publication. For live table movement after the draw, use the World Cup 2026 groups and standings page.
+**Source note:** Group assignments and tournament references should be checked against the [official FIFA World Cup 2026 hub](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026) before publication. For live table movement after the draw, use the World Cup 2026 groups and standings page.
 
 ## How the World Cup 2026 Draw Worked
 
@@ -44,7 +44,7 @@ That format changes the way fans should read draw results. A difficult group is 
 
 ## Group A: Mexico, South Africa, South Korea, Czech Republic
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group A gave Mexico a host-nation group with clear opportunity and real pressure. The key match was Mexico vs South Korea, because South Korea had enough tournament experience to disrupt the host’s path if Mexico started slowly. South Africa vs South Korea also mattered because it shaped the race behind Mexico and created the main second-place pressure point.
 
@@ -52,7 +52,7 @@ From a draw perspective, Mexico received a group where first place was realistic
 
 ## Group B: Switzerland, Canada, Bosnia and Herzegovina, Qatar
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group B was one of the most balanced host-adjacent groups because Canada had a realistic path to qualify but no easy margin. The key match was Switzerland vs Canada. Switzerland entered the group as the most stable European side, while Canada needed either points in that match or a strong goal-difference profile from the rest of the group.
 
@@ -60,7 +60,7 @@ For Canada, the draw was workable but not soft. Bosnia and Herzegovina had enoug
 
 ## Group C: Brazil, Morocco, Scotland, Haiti
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group C immediately centered on Brazil vs Morocco. Brazil had the highest ceiling in the group, but Morocco’s recent tournament credibility made the opener or direct matchup more than a formality. That game was the clearest test of whether Brazil would control the group or face a goal-difference race.
 
@@ -68,7 +68,7 @@ Scotland’s role was to make the group physically awkward, especially for teams
 
 ## Group D: United States, Turkey, Australia, Paraguay
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group D was the central draw result for US readers. The United States was placed with Turkey, Australia, and Paraguay, creating a group with no obvious walkover and multiple styles: Turkey’s technical volatility, Australia’s physical discipline, and Paraguay’s defensive edge. For a deeper USMNT-specific breakdown, use the USA World Cup 2026 group guide.
 
@@ -78,7 +78,7 @@ From a host-nation perspective, the draw created three different stories. Mexico
 
 ## Group E: Germany, Ivory Coast, Ecuador, Curaçao
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group E looked like a group where Germany had the name value and ceiling, but the second-place race could become uncomfortable quickly. The key match was Ecuador vs Germany because Ecuador’s intensity and transition threat were the kind of profile that could expose a favorite before the knockout rounds.
 
@@ -86,7 +86,7 @@ Ivory Coast made the group deeper than a simple favorite-underdog table. If Germ
 
 ## Group F: Netherlands, Japan, Sweden, Tunisia
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group F was one of the most tactically interesting draws. The Netherlands had the strongest top-line profile, but Japan and Sweden made the group feel like a knockout-quality cluster from the start. The key match was Japan vs Sweden because it looked like the fixture most likely to decide whether two or three teams could advance.
 
@@ -94,7 +94,7 @@ Japan’s tempo and technical control made them dangerous against every opponent
 
 ## Group G: Belgium, Egypt, Iran, New Zealand
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group G was built around Belgium’s attempt to control a group where the margins behind them were narrow. The key match was Egypt vs Iran because it shaped the race for qualification behind Belgium and determined whether the group would become a draw-heavy survival contest.
 
@@ -102,7 +102,7 @@ Egypt gave the group a high-profile attacking focal point, Iran brought discipli
 
 ## Group H: Spain, Cape Verde, Uruguay, Saudi Arabia
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group H put Spain in control of the headline, but the draw became fascinating because the race behind Spain did not have a single obvious answer. The key match was Uruguay vs Spain, because Uruguay needed a statement result to challenge for first and Spain needed that match to prove the group would not turn into a physical grind.
 
@@ -110,7 +110,7 @@ Cape Verde and Saudi Arabia made the rest of the group more volatile than it loo
 
 ## Group I: France, Norway, Senegal, Iraq
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group I had one of the clearest favorites and one of the toughest second-place fights. France was the obvious group favorite, but Norway and Senegal gave the draw a high-ceiling race behind them. The key match was Norway vs Senegal because it looked like the direct qualification hinge before any third-place calculations.
 
@@ -118,7 +118,7 @@ Norway’s attacking profile made them dangerous, while Senegal’s athleticism 
 
 ## Group J: Argentina, Austria, Algeria, Jordan
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group J gave Argentina a group where first place was expected but not administratively guaranteed. The key match was Algeria vs Austria because it was the most direct second-place pressure point and had the potential to decide whether a third-place path would be enough.
 
@@ -126,7 +126,7 @@ Argentina’s task was to avoid turning a favorable draw into a stressful one. A
 
 ## Group K: Colombia, Portugal, DR Congo, Uzbekistan
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group K had the strongest Group of Death argument by name value and path cost. Colombia vs Portugal was the key match because it decided the likely group winner and shaped the first knockout assignment. A draw or narrow result between them could push every other match into goal-difference territory.
 
@@ -134,7 +134,7 @@ DR Congo made the group especially dangerous because they had enough physicality
 
 ## Group L: England, Croatia, Ghana, Panama
 
-> Source: [FIFA Official Draw](<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026>)
+> Source: [FIFA Official Draw](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 
 Group L centered on England vs Croatia. England had the strongest first-place profile, but Croatia’s tournament experience made the direct matchup the obvious group-defining fixture. If England won it, the group opened; if Croatia took points, the final matchday became far more complicated.
 

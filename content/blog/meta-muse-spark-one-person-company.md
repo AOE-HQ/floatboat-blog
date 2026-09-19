@@ -23,7 +23,7 @@ I've been there. But honestly, my answer now is different from what it would hav
 
 If you've been following the AI space, you'll remember Llama 4 didn't land well in April 2025 — there were credible accusations that benchmark results had been juiced using unreleased model variants. Meta spent the following nine months rebuilding the entire stack from the ground up.
 
-I've been using it for about a week. The first thing I noticed: it's not trying to be the smartest model. It's trying to be efficient — fast, capable enough, integrated into Meta's product ecosystem. Meta says as much in their [official launch post](<https://ai.meta.com/blog/introducing-muse-spark-msl/>), where they openly acknowledge gaps in long-horizon agentic work and coding.
+I've been using it for about a week. The first thing I noticed: it's not trying to be the smartest model. It's trying to be efficient — fast, capable enough, integrated into Meta's product ecosystem. Meta says as much in their [official launch post](https://ai.meta.com/blog/introducing-muse-spark-msl/), where they openly acknowledge gaps in long-horizon agentic work and coding.
 
 ![2.PNG](/blog/images/meta-muse-spark-one-person-company/1777599405250-c43737fd-78b5-4c59-953b-504703a01a0f.webp)
 
@@ -31,7 +31,7 @@ I've been using it for about a week. The first thing I noticed: it's not trying 
 
 This part trips people up, so let me say it clearly.
 
-Llama 4 was open-weights — you could download it and run it yourself. **Muse Spark is closed.** Right now it's only accessible through [meta.ai](<http://meta.ai>) and the Meta AI app, with API access limited to selected partners. Meta says they "hope" to open-source future Muse models, but no timeline.
+Llama 4 was open-weights — you could download it and run it yourself. **Muse Spark is closed.** Right now it's only accessible through [meta.ai](http://meta.ai) and the Meta AI app, with API access limited to selected partners. Meta says they "hope" to open-source future Muse models, but no timeline.
 
 On the technical side, Meta claims ​**Muse Spark matches Llama 4 Maverick's capabilities using over 10x less compute** ​. That's Meta's claim, not yet independently verified. I'm filing it under "interesting, watching for confirmation."
 
@@ -61,7 +61,7 @@ But the moment tasks get longer or more agentic, the gap shows.
 
 **On Terminal-Bench Hard, Muse Spark trails both GPT-5.4 and Claude Sonnet 4.6.** On GDPval-AA — the benchmark for real-world work tasks — it scores 1,427 ELO compared to Claude Sonnet 4.6's 1,648. That's not a small gap.
 
-[OpenAI's launch announcement](<https://openai.com/index/introducing-gpt-5-4/>) makes a separate point worth flagging: **GPT-5.4 hits 75% on OSWorld-Verified (computer-use benchmark), up from GPT-5.2's 47.3%.** That's a generational jump for computer-use specifically. When I tested cross-app workflows — letting the model move between browser, spreadsheet, and document — GPT-5.4 was visibly more reliable end-to-end.
+[OpenAI's launch announcement](https://openai.com/index/introducing-gpt-5-4/) makes a separate point worth flagging: **GPT-5.4 hits 75% on OSWorld-Verified (computer-use benchmark), up from GPT-5.2's 47.3%.** That's a generational jump for computer-use specifically. When I tested cross-app workflows — letting the model move between browser, spreadsheet, and document — GPT-5.4 was visibly more reliable end-to-end.
 
 One more thing: **GPT-5.4's individual claims are 33% less likely to be factually wrong than GPT-5.2.** I can't independently verify that number, but in daily use I do notice fewer hallucinations.
 
@@ -83,7 +83,7 @@ Not a bad weekend. Just not the productivity win it felt like.
 
 I've thought about this a lot since. My current take: **for a one-person business, the marginal gain from a model upgrade is much smaller than the gain from refining your ​workflow** ​**​ itself.**
 
-[TechCrunch's Muse Spark coverage](<https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/>) quoted Zuckerberg saying Meta wants to build "agents that do things for you." That sounds like marketing copy, but it actually points at the real problem: **what changes your output isn't the model getting smarter — it's whether you've connected it to the specific work you actually do.**
+[TechCrunch's Muse Spark coverage](https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/) quoted Zuckerberg saying Meta wants to build "agents that do things for you." That sounds like marketing copy, but it actually points at the real problem: **what changes your output isn't the model getting smarter — it's whether you've connected it to the specific work you actually do.**
 
 Right now I use GPT-5.4 for client research, first-draft outlines, and fact-checking. Not because GPT-5.4 is magic — but because I've spent time integrating it into the parts of my day where it adds clear value. If I switched to Muse Spark, the first two tasks would be roughly the same. The third would get worse, because GPT-5.4 has the edge on factual accuracy.
 
@@ -103,13 +103,13 @@ Switching gives you the feeling of "I'm doing something." But the underlying fri
 
 ### What Actually Changes When You Upgrade
 
-[Fortune's reporting on Muse Spark](<https://fortune.com/2026/04/08/meta-unveils-muse-spark-mark-zuckerberg-ai-push/>) made a point I think is worth keeping in mind: ​**Muse Spark wasn't designed to beat the frontier. It was designed to be efficient and slot into ​Meta** ​'s product ecosystem.
+[Fortune's reporting on Muse Spark](https://fortune.com/2026/04/08/meta-unveils-muse-spark-mark-zuckerberg-ai-push/) made a point I think is worth keeping in mind: ​**Muse Spark wasn't designed to beat the frontier. It was designed to be efficient and slot into ​Meta** ​'s product ecosystem.
 
 That framing actually applies to individuals too. **The right question isn't "which model is most powerful." It's "which model fits my existing toolchain and habits."**
 
-[The Batch's analysis](<https://www.deeplearning.ai/the-batch/with-muse-spark-meta-pivots-away-from-its-open-weights-llama-strategy/>) puts it well — Muse Spark's strengths cluster in data-quality-sensitive tasks, while its weaknesses cluster in areas where architecture and RL scaling matter more. Translation: **it's not a comprehensive upgrade. It's a tool that's better in specific scenarios.**
+[The Batch's analysis](https://www.deeplearning.ai/the-batch/with-muse-spark-meta-pivots-away-from-its-open-weights-llama-strategy/) puts it well — Muse Spark's strengths cluster in data-quality-sensitive tasks, while its weaknesses cluster in areas where architecture and RL scaling matter more. Translation: **it's not a comprehensive upgrade. It's a tool that's better in specific scenarios.**
 
-If your work is mostly multimodal processing, health-related research, or lightweight investigation — Muse Spark is worth a test. If you're doing long-chain agentic work, deep coding, or computer-use automation — GPT-5.4 is still the steadier choice. [OpenAI's API docs](<https://developers.openai.com/api/docs/models/gpt-5.4>) explicitly position it for "complex professional work," and that matches what I see in practice.
+If your work is mostly multimodal processing, health-related research, or lightweight investigation — Muse Spark is worth a test. If you're doing long-chain agentic work, deep coding, or computer-use automation — GPT-5.4 is still the steadier choice. [OpenAI's API docs](https://developers.openai.com/api/docs/models/gpt-5.4) explicitly position it for "complex professional work," and that matches what I see in practice.
 
 ![5.png](/blog/images/meta-muse-spark-one-person-company/1777599445535-e3ff5e0b-eacc-442a-95fb-bd9f2f3f9720.webp)
 
@@ -119,13 +119,13 @@ Sometimes the most useful move when a new tool drops is to do nothing for two we
 
 ## Previous Posts:
 
-  * **[Should you switch AI models every time a new one drops? A breakdown of why most solo founders overestimate the gains](</blog/ai-model-switching-trap>)**
+  * **[Should you switch AI models every time a new one drops? A breakdown of why most solo founders overestimate the gains](/blog/ai-model-switching-trap)**
 
-  * **[GPT Image 2 vs Midjourney vs Nano Banana 2 — how to actually choose the right tool for your workflow (not the leaderboard)](</blog/ai-image-tools-comparison>)**
+  * **[GPT Image 2 vs Midjourney vs Nano Banana 2 — how to actually choose the right tool for your workflow (not the leaderboard)](/blog/ai-image-tools-comparison)**
 
-  * **[AI storyboarding for solo creators: when it saves hours — and when it quietly breaks your sequence](</blog/ai-storyboarding-workflow>)**
+  * **[AI storyboarding for solo creators: when it saves hours — and when it quietly breaks your sequence](/blog/ai-storyboarding-workflow)**
 
-  * **[Claude Code on Linux: why moving AI from browser to terminal changes more than just speed](</blog/claude-code-linux>)**
+  * **[Claude Code on Linux: why moving AI from browser to terminal changes more than just speed](/blog/claude-code-linux)**
 
-  * **[Workflow builders vs workspace agents: two completely different ways to automate your work (and why mixing them up costs time)](</blog/workflow-vs-agents>)**
+  * **[Workflow builders vs workspace agents: two completely different ways to automate your work (and why mixing them up costs time)](/blog/workflow-vs-agents)**
 

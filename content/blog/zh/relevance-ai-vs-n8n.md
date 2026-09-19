@@ -11,7 +11,7 @@ locale: "zh"
 draft: false
 ---
 
-好久不见，我是 Nova。我坐在那，浏览器开着两个标签页——一边是 [Relevance AI](<https://relevanceai.com/>)，一边是 [n8n](<https://n8n.io/?ps_partner_key=ZWFiZDIyYjkwZTFl&ps_xid=a2QKHm2KuZ1wkV&gsxid=a2QKHm2KuZ1wkV&gspk=ZWFiZDIyYjkwZTFl&gad_source=1>)——想搞明白为什么大家总把这两者在同一个话题里提起。它们都解决自动化问题，这没错。但挖得越深，我越意识到它们其实在为完全不同的人解决_非常不同_的问题。说实话，一开始这让我很困惑。
+好久不见，我是 Nova。我坐在那，浏览器开着两个标签页——一边是 [Relevance AI](https://relevanceai.com/)，一边是 [n8n](https://n8n.io/?ps_partner_key=ZWFiZDIyYjkwZTFl&ps_xid=a2QKHm2KuZ1wkV&gsxid=a2QKHm2KuZ1wkV&gspk=ZWFiZDIyYjkwZTFl&gad_source=1)——想搞明白为什么大家总把这两者在同一个话题里提起。它们都解决自动化问题，这没错。但挖得越深，我越意识到它们其实在为完全不同的人解决_非常不同_的问题。说实话，一开始这让我很困惑。
 
 于是我花了几周时间把两个都测了一遍、读了真实用户讨论帖，试着弄清你什么时候真的会选这一个而不是另一个。这就是我的发现。
 
@@ -35,7 +35,7 @@ Relevance AI 把自己定位成搭建「AI 劳动力」的平台——这个说�
 
 它还通过了 SOC 2 Type II 认证和 GDPR 合规——如果你处理的是敏感业务数据，这很重要。
 
-定价按用量计费——拆成**Actions**（你的 Agent 实际做的事）和**Vendor Credits**（AI 模型成本）。[按 Relevance AI 官方文档](<https://relevanceai.com/docs/admin/subscriptions/plans>)，免费档每月给 200 个 Actions，付费档对个人用户约 $19/月起步。有一点值得知道：如果 Agent 每个任务要调多次 LLM，成本会涨得很快。它很灵活，但未必总是可预期。
+定价按用量计费——拆成**Actions**（你的 Agent 实际做的事）和**Vendor Credits**（AI 模型成本）。[按 Relevance AI 官方文档](https://relevanceai.com/docs/admin/subscriptions/plans)，免费档每月给 200 个 Actions，付费档对个人用户约 $19/月起步。有一点值得知道：如果 Agent 每个任务要调多次 LLM，成本会涨得很快。它很灵活，但未必总是可预期。
 
 **适合谁：**销售和营销运营团队、支持团队、想不写代码就有 Agent 在跑的非技术运营者。
 
@@ -45,7 +45,7 @@ Relevance AI 把自己定位成搭建「AI 劳动力」的平台——这个说�
 
 ### 开发者友好、完全可控的工作流自动化
 
-n8n 是开源的，这一点塑造了它的一切。你用基于节点的可视化编辑器搭工作流——每个触发器、分支、转换和动作都可见、可配置。[n8n 官方定价页](<https://n8n.io/pricing/>)显示云端方案 $20/月起、含 2,500 次工作流执行，另有完全免费的 Community Edition 可自托管、执行不限量。
+n8n 是开源的，这一点塑造了它的一切。你用基于节点的可视化编辑器搭工作流——每个触发器、分支、转换和动作都可见、可配置。[n8n 官方定价页](https://n8n.io/pricing/)显示云端方案 $20/月起、含 2,500 次工作流执行，另有完全免费的 Community Edition 可自托管、执行不限量。
 
 自托管选项对有数据控制要求的团队意义重大。你把它跑在自己的基础设施上——VPS、Docker 环境或自有服务器都行。完全自有，没有厂商锁定。
 
@@ -70,7 +70,7 @@ n8n 是开源的，这一点塑造了它的一切。你用基于节点的可视�
 
 模板库真的有用。**你不是从零开始。**而多 Agent 编排——一个 Agent 把活委派给另一个——在你掌握基础之后，对更复杂的工作流也运转良好。
 
-话虽如此，对成本要有现实的预期。动手之前，[Relevance AI 定价页](<https://relevanceai.com/pricing>)值得仔细读一遍。如果你的 Agent 持续运行或大量调用 LLM，升级档位之前最好先把用量模型算清楚。
+话虽如此，对成本要有现实的预期。动手之前，[Relevance AI 定价页](https://relevanceai.com/pricing)值得仔细读一遍。如果你的 Agent 持续运行或大量调用 LLM，升级档位之前最好先把用量模型算清楚。
 
 **选 Relevance AI，如果：**你想快速部署 Agent、你不是技术背景、而你的主要工作流围绕销售、支持或调研。
 
@@ -80,7 +80,7 @@ n8n 是开源的，这一点塑造了它的一切。你用基于节点的可视�
 
 n8n 回报有耐心的人。搭建更花时间，但一旦跑起来，强大得惊人。你可以在单条工作流里搭出触及 10+ 应用的自动化、应用条件逻辑、优雅处理错误、自定义一切。
 
-开源社区很活跃——[n8n 社区论坛](<https://community.n8n.io/>)有超过 45,000 名成员分享模板、调试技巧和自定义节点。夜里 11 点撞墙时，这真的救命。
+开源社区很活跃——[n8n 社区论坛](https://community.n8n.io/)有超过 45,000 名成员分享模板、调试技巧和自定义节点。夜里 11 点撞墙时，这真的救命。
 
 对数据要求严格的团队，自托管是显然之选。数据放在哪由你决定，不需要第三方云。
 
@@ -98,7 +98,7 @@ n8n 回报有耐心的人。搭建更花时间，但一旦跑起来，强大得�
 
 n8n 则不是为「描述一个任务、让 AI 自己搞定」的人准备的。学习曲线是实打实的。如果团队不习惯节点、JSON、偶尔还要翻错误日志，它拖慢你的速度会多于帮你。
 
-如果你想要介于两者之间的东西——AI 优先、但又内置工作流自动化——[Lindy AI](<https://www.lindy.ai/>) 这类工具值得一看。Lindy vs n8n 对比（第 20 期）展示了 Lindy 如何在一个地方同时处理 Agent 推理与工作流执行，正好补上「n8n 太技术、Relevance AI 太受限」的团队之间的空档。
+如果你想要介于两者之间的东西——AI 优先、但又内置工作流自动化——[Lindy AI](https://www.lindy.ai/) 这类工具值得一看。Lindy vs n8n 对比（第 20 期）展示了 Lindy 如何在一个地方同时处理 Agent 推理与工作流执行，正好补上「n8n 太技术、Relevance AI 太受限」的团队之间的空档。
 
 还在摸索自己需要什么？没关系。两个的免费档都试试——Relevance AI 给你 200 个 Actions 起步，n8n 的 Community Edition 自托管免费。小实验能告诉你很多。
 
@@ -110,13 +110,13 @@ _接着去造东西了。_
 
 ## 往期文章
 
-  * **[搞懂 AI Agent 与传统自动化工作流的真正区别](</blog/workflow-builder-vs-ai-workspace>)**
+  * **[搞懂 AI Agent 与传统自动化工作流的真正区别](/blog/workflow-builder-vs-ai-workspace)**
 
-  * **[在选对工具之前，先学会一步一步怎么搭 AI Agent](</blog/how-to-build-an-ai-agent>)**
+  * **[在选对工具之前，先学会一步一步怎么搭 AI Agent](/blog/how-to-build-an-ai-agent)**
 
-  * **[看看现实世界里的 AI Agent 用例，找到 Relevance AI 这类工具真正发光的地方](</blog/ai-agent-use-cases-real-examples>)**
+  * **[看看现实世界里的 AI Agent 用例，找到 Relevance AI 这类工具真正发光的地方](/blog/ai-agent-use-cases-real-examples)**
 
-  * **[对比 AI Agent 与 AI 助手，更好理解这些工具实际怎么运作](</blog/ai-agent-vs-ai-assistant>)**
+  * **[对比 AI Agent 与 AI 助手，更好理解这些工具实际怎么运作](/blog/ai-agent-vs-ai-assistant)**
 
-  * **[看单人创始人如何在不用完整开发团队的情况下用 AI 工具自动化工作流](</blog/how-one-person-businesses-work-like-a-team-with-ai>)**
+  * **[看单人创始人如何在不用完整开发团队的情况下用 AI 工具自动化工作流](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
 

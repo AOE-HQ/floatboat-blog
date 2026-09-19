@@ -27,7 +27,7 @@ _嗨，我是 Nova——一个花了太多时间测试 AI 工具、并把它们�
 
 ### 输入 → 输出：记忆有限，不触达外部
 
-聊天机器人本质上是**文字进、文字出**的系统。你发一条消息，它生成一段回复，循环结束。按 [IBM 对聊天机器人技术的综述](<https://www.ibm.com/think/topics/chatbots>)，即使是采用了自然语言处理的现代 AI 聊天机器人，设计初衷也主要是"回应"而不是"行动"。它的架构天生是被动的：等待输入，处理，返回输出。
+聊天机器人本质上是**文字进、文字出**的系统。你发一条消息，它生成一段回复，循环结束。按 [IBM 对聊天机器人技术的综述](https://www.ibm.com/think/topics/chatbots)，即使是采用了自然语言处理的现代 AI 聊天机器人，设计初衷也主要是"回应"而不是"行动"。它的架构天生是被动的：等待输入，处理，返回输出。
 
 记忆是另一个大限制。在单次对话里，聊天机器人能相当好地跟踪上下文。但一开新会话，就像从没见过你：不记得过去的决定，日与日之间没有连续性，每次都从一张白纸开始。
 
@@ -47,7 +47,7 @@ _嗨，我是 Nova——一个花了太多时间测试 AI 工具、并把它们�
 
 ### 多步推理与任务执行
 
-[AI Agent 的内核完全不同。](<https://aws.amazon.com/what-is/ai-agents/>)它不是只根据你的输入生成回复，而是**为实现目标规划一连串步骤**——然后去执行。
+[AI Agent 的内核完全不同。](https://aws.amazon.com/what-is/ai-agents/)它不是只根据你的输入生成回复，而是**为实现目标规划一连串步骤**——然后去执行。
 
 你给它一个高层目标：「找出这个领域的前五名竞品、对比定价、放进一张表格里」。它自己判断下一步做什么、采取行动、检查结果，出了问题就调整。Anthropic 关于构建高效 Agent 的研究指出，最成功的实现用的是简单、可组合的模式——由 Agent 动态指挥自己的流程与工具调用，去完成开放式任务。这种「观察、思考、行动」的循环，正是 Agent 与聊天机器人体验如此不同的原因。它不是回答，是在**做事**。
 
@@ -86,9 +86,9 @@ _嗨，我是 Nova——一个花了太多时间测试 AI 工具、并把它们�
 
 ### 「ChatGPT 就是 AI Agent」——真是这样吗？
 
-完全取决于你怎么用。基础的 [ChatGPT](<https://openai.com/index/chatgpt/>) 界面——对大多数用户、在大多数时候——是一个能力很强的聊天机器人。它回应，不行动。
+完全取决于你怎么用。基础的 [ChatGPT](https://openai.com/index/chatgpt/) 界面——对大多数用户、在大多数时候——是一个能力很强的聊天机器人。它回应，不行动。
 
-但一旦你启用网页搜索、代码解释器、自定义 GPT Actions 这类工具，它就开始表现得像 Agent 了。[OpenAI](<https://en.wikipedia.org/wiki/OpenAI>) 把 Agent 描述为能在模糊情境中推理、跨工具行动、处理多步任务的系统——而这些能力只有在模型配上合适的工具集成时才会被激活。同一个底层模型，只是周围架构不同。混乱的根源在于：人们看到 ChatGPT 用了一次工具，就以为整个产品是「Agent」。事情没那么干净利落。
+但一旦你启用网页搜索、代码解释器、自定义 GPT Actions 这类工具，它就开始表现得像 Agent 了。[OpenAI](https://en.wikipedia.org/wiki/OpenAI) 把 Agent 描述为能在模糊情境中推理、跨工具行动、处理多步任务的系统——而这些能力只有在模型配上合适的工具集成时才会被激活。同一个底层模型，只是周围架构不同。混乱的根源在于：人们看到 ChatGPT 用了一次工具，就以为整个产品是「Agent」。事情没那么干净利落。
 
 ### 「Agent 总是更好」——不一定
 
@@ -96,7 +96,7 @@ _嗨，我是 Nova——一个花了太多时间测试 AI 工具、并把它们�
 
 Anthropic 明确指出：Agentic 系统往往用延迟和成本换取更好的任务表现，并建议在上线前于沙盒环境里做充分测试。能力越强，出错的方式也越多。这不是回避 Agent 的理由——而是该**有意识地选择**、而不是默认无脑用的理由。
 
-更合适的框架，是 [IBM 对聊天机器人与 Agent 用例的分析](<https://www.ibm.com/think/topics/chatbot-use-cases>)里说的：**聊天机器人、AI 助手与 Agent 代表不同层级的技术成熟度**——该用哪一层，完全取决于任务本身，而不是哪个听起来更厉害。
+更合适的框架，是 [IBM 对聊天机器人与 Agent 用例的分析](https://www.ibm.com/think/topics/chatbot-use-cases)里说的：**聊天机器人、AI 助手与 Agent 代表不同层级的技术成熟度**——该用哪一层，完全取决于任务本身，而不是哪个听起来更厉害。
 
 ![5.png](/blog/images/ai-agent-vs-chatbot/1773995519379-533e36ba-7e7b-4420-8157-5f2f635510ba.webp)
 
@@ -106,13 +106,13 @@ Anthropic 明确指出：Agentic 系统往往用延迟和成本换取更好的�
 
 **往期文章：**
 
-  * [在真实工作流中分清 AI Agent 与 AI 助手](</blog/ai-agent-vs-ai-assistant>)。
+  * [在真实工作流中分清 AI Agent 与 AI 助手](/blog/ai-agent-vs-ai-assistant)。
 
-  * [看看 AI Agent 在调研、内容与运营中的真实用例](</blog/ai-agent-use-cases-real-examples>)。
+  * [看看 AI Agent 在调研、内容与运营中的真实用例](/blog/ai-agent-use-cases-real-examples)。
 
-  * [看看一人公司如何借助 AI 角色，开始像完整团队一样运作](</blog/how-one-person-businesses-work-like-a-team-with-ai>)。
+  * [看看一人公司如何借助 AI 角色，开始像完整团队一样运作](/blog/how-one-person-businesses-work-like-a-team-with-ai)。
 
-  * [了解 AI 自动化工作在真实市场上到底怎么定价](</blog/ai-automation-agency-pricing>)。
+  * [了解 AI 自动化工作在真实市场上到底怎么定价](/blog/ai-automation-agency-pricing)。
 
-  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差异](</blog/lindy-vs-gumloop>)。
+  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差异](/blog/lindy-vs-gumloop)。
 

@@ -26,13 +26,13 @@ Kimi K3 是 Moonshot AI 目前最强的模型。它采用 2.8 万亿参数、Mix
 
 Kimi K3 支持 100 万 token 上下文窗口，并带原生视觉理解——能在一次处理里把截图、图表、文档与文本一起读入。发布初期默认以最大推理强度运行；更低与更高的强度模式将在后续更新中提供。
 
-模型现已通过 [Kimi.com](<http://Kimi.com>)、Kimi Work、Kimi Code 和 Kimi API 提供。Moonshot 称 K3 为「全球首个开源 3T 级模型」，并承诺在 2026 年 7 月 27 日前发布完整模型权重。更多技术细节将出现在后续的 Kimi K3 技术报告中。
+模型现已通过 [Kimi.com](http://Kimi.com)、Kimi Work、Kimi Code 和 Kimi API 提供。Moonshot 称 K3 为「全球首个开源 3T 级模型」，并承诺在 2026 年 7 月 27 日前发布完整模型权重。更多技术细节将出现在后续的 Kimi K3 技术报告中。
 
 Kimi 官方文档对 K3 相对专有模型的位置讲得很直白：「虽然综合表现仍落后于最强的专有模型 Claude Fable 5 和 GPT 5.6 Sol，Kimi K3 在我们的评测套件上展现了前沿级表现，持续优于其他被测模型。」[Source: <a href="<https://www.kimi.com/blog/kimi-k3>" rel="nofollow noopener">Kimi K3 Technical Blog</a>]
 
   2. 为什么「内置」很重要——无需 API Key，无需配置
 
-Floatboat 是一个主动式 Agent OS，日历在其中充当工作的运行时。它同步 Google Calendar、Outlook、Lark 和 Notion Calendar，然后自动为每个事件内的任务做准备、执行和跟进。更多背景可读<a href="/blog/what-is-agentic-calendar">什么是 Agentic Calendar</a> 和 <a href="/blog/calendar-driven-ai-vs-chat-ai">日历驱动的 AI 与基于聊天的 AI 有何不同</a>。
+Floatboat 是一个主动式 Agent OS，日历在其中充当工作的运行时。它同步 Google Calendar、Outlook、Lark 和 Notion Calendar，然后自动为每个事件内的任务做准备、执行和跟进。更多背景可读[什么是 Agentic Calendar](/blog/what-is-agentic-calendar) 和 [日历驱动的 AI 与基于聊天的 AI 有何不同](/blog/calendar-driven-ai-vs-chat-ai)。
 
 「集成」与「内置」的实际差别在于：一个让你停留在配置模式，另一个让你待在流程里。在需要自己配置 K3 的平台上，「何时用 K3」是开工前就要做好的技术决策。在 Floatboat 上，你打开任意 Agent 流水线的模型选择器，K3 与其他模型并排列着，选中即可——或者让 Auto Mode 在事件复杂度需要时自动把活路由给 K3。
 

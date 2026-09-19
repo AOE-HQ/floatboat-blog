@@ -33,7 +33,7 @@ Same person. Same outfit. Same coffee shop. Same direction-of-action (the 180-de
 
 ### Multi-turn editing and why it changes the workflow
 
-This is the single most important shift, and most launch coverage buries it. According to [OpenAI's announcement for ChatGPT Images 2.0](<https://openai.com/index/introducing-chatgpt-images-2-0/>), the model supports context-aware editing across turns. In plain English: you generate frame 1, then say "frame 2: same character, same cafe, now she's standing up and looking at the door." The model keeps everything that should stay and changes only what you asked for.
+This is the single most important shift, and most launch coverage buries it. According to [OpenAI's announcement for ChatGPT Images 2.0](https://openai.com/index/introducing-chatgpt-images-2-0/), the model supports context-aware editing across turns. In plain English: you generate frame 1, then say "frame 2: same character, same cafe, now she's standing up and looking at the door." The model keeps everything that should stay and changes only what you asked for.
 
 The old workflow was: write a long prompt, regenerate 15 times, hope. The new workflow is: generate the establishing shot, then walk the model through the sequence one edit at a time. **Iteration replaces re-prompting.** That's the whole game for storyboards.
 
@@ -41,9 +41,9 @@ A working sequence on my screen literally looks like this. Turn 1: full establis
 
 ### Reasoning mode for composition planning
 
-Thinking mode is the second piece. [The Next Web's coverage](<https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation>) describes it as the model planning, reasoning, and verifying before generating — and notes that paid tiers (Plus at $20/month, Pro at $200/month) unlock it while the free tier only gets Instant. For storyboarding specifically this matters because a single prompt can return up to eight frames with character and object continuity baked in. I tested this with my opening sequence — got 8 frames where the same person, same tumbler, same lighting carried across the set. Not perfect, but recognizable.
+Thinking mode is the second piece. [The Next Web's coverage](https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation) describes it as the model planning, reasoning, and verifying before generating — and notes that paid tiers (Plus at $20/month, Pro at $200/month) unlock it while the free tier only gets Instant. For storyboarding specifically this matters because a single prompt can return up to eight frames with character and object continuity baked in. I tested this with my opening sequence — got 8 frames where the same person, same tumbler, same lighting carried across the set. Not perfect, but recognizable.
 
-[BuildFastWithAI's developer breakdown](<https://www.buildfastwithai.com/blogs/chatgpt-images-2-0-gpt-image-2-2026>) flags the trade-off honestly: Thinking mode adds 15–30 seconds of latency per call. For storyboard drafting that's fine. For real-time anything, it's not.
+[BuildFastWithAI's developer breakdown](https://www.buildfastwithai.com/blogs/chatgpt-images-2-0-gpt-image-2-2026) flags the trade-off honestly: Thinking mode adds 15–30 seconds of latency per call. For storyboard drafting that's fine. For real-time anything, it's not.
 
 ### Style consistency across a sequence
 
@@ -61,7 +61,7 @@ This is the part beginners get wrong. Asking GPT Image 2 to "make me a storyboar
 
 ### Maintaining character continuity across 20+ frames
 
-For my 24 frames I used a layered approach. First, I generated a character reference sheet — three angles of the same person — and saved it. Then for each frame I'd reference that sheet and a one-line identity string ("woman, late 20s, short dark hair, oversized cream sweater, navy tumbler in left hand"). The [Replicate model documentation](<https://replicate.com/openai/gpt-image-2>) lays out the multi-image reference workflow clearly — you can pass several reference images and tell the model how they relate.
+For my 24 frames I used a layered approach. First, I generated a character reference sheet — three angles of the same person — and saved it. Then for each frame I'd reference that sheet and a one-line identity string ("woman, late 20s, short dark hair, oversized cream sweater, navy tumbler in left hand"). The [Replicate model documentation](https://replicate.com/openai/gpt-image-2) lays out the multi-image reference workflow clearly — you can pass several reference images and tell the model how they relate.
 
 Beyond about frame 15, even with references, faces start to drift subtly. I retouched two frames manually. **Plan for it. Don't pretend it doesn't happen.**
 
@@ -93,7 +93,7 @@ Two characters interacting across a sequence (handing something off, walking tow
 
 Here's the framework I'd use. Three options, three different jobs.
 
-**Hire a storyboard artist.** [Industry rate guides](<https://voxillustration.com/blog/storyboard-illustration-cost-per-frame/>) put freelance per-frame pricing at $10–$25 entry-level, $40–$100 for professionals, $100+ for studio-grade work. Day rates run $300–$700. For a 24-frame board you're looking at roughly $500–$2,500 depending on quality tier. **What you actually pay for: cinematic judgment, lens fluency, continuity across complex action, and a human who pushes back when your shot list doesn't make sense.** If your board is going to a real production crew, this is the right answer.
+**Hire a storyboard artist.** [Industry rate guides](https://voxillustration.com/blog/storyboard-illustration-cost-per-frame/) put freelance per-frame pricing at $10–$25 entry-level, $40–$100 for professionals, $100+ for studio-grade work. Day rates run $300–$700. For a 24-frame board you're looking at roughly $500–$2,500 depending on quality tier. **What you actually pay for: cinematic judgment, lens fluency, continuity across complex action, and a human who pushes back when your shot list doesn't make sense.** If your board is going to a real production crew, this is the right answer.
 
 **Self-thumbnail.** Stick figures, arrows, notes. Free. Takes 30–60 minutes for a 24-frame board if you can sketch at all. **What it gives you: complete creative control, perfect continuity (because you're tracking it in your head), zero polish.** Right answer for internal planning, your own short videos, anything where the audience is just you.
 
@@ -135,13 +135,13 @@ When you need this, you'll know.
 
 ## Previous Posts:
 
-  * [Learn how to structure AI workflows that actually hold up across multi-step creative tasks](</blog/ai-workflow-for-solo-founders>)
+  * [Learn how to structure AI workflows that actually hold up across multi-step creative tasks](/blog/ai-workflow-for-solo-founders)
 
-  * [See how AI agent workflows fix the chaos of unstructured “vibe-based” creation](</blog/ai-agent-workflow-vibe-coding>)
+  * [See how AI agent workflows fix the chaos of unstructured “vibe-based” creation](/blog/ai-agent-workflow-vibe-coding)
 
-  * [Understand how solo operators use AI to produce like a full creative team](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [Understand how solo operators use AI to produce like a full creative team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
-  * [Explore real AI agent use cases across content, automation, and production workflows](</blog/ai-agent-use-cases-real-examples>)
+  * [Explore real AI agent use cases across content, automation, and production workflows](/blog/ai-agent-use-cases-real-examples)
 
-  * [Discover how to scale a one-person business without hiring by systemizing your work](</blog/scale-one-person-business-without-hiring>)
+  * [Discover how to scale a one-person business without hiring by systemizing your work](/blog/scale-one-person-business-without-hiring)
 

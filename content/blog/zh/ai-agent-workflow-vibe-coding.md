@@ -21,9 +21,9 @@ draft: false
 
 ### 它为什么吸引了单人开发者
 
-2025 年 2 月，Andrej Karpathy 提出 [vibe coding](<https://en.wikipedia.org/wiki/Vibe_coding>) 这个词时，把它描述为一种「彻底跟着感觉走、拥抱指数级增长、甚至忘记代码本身存在」的编程方式。对单人开发者和非程序员来说，这个说法确实让人兴奋：不再有语法焦虑，不再被技术知识挡在门外——只要描述你想要什么，然后看着它出现。
+2025 年 2 月，Andrej Karpathy 提出 [vibe coding](https://en.wikipedia.org/wiki/Vibe_coding) 这个词时，把它描述为一种「彻底跟着感觉走、拥抱指数级增长、甚至忘记代码本身存在」的编程方式。对单人开发者和非程序员来说，这个说法确实让人兴奋：不再有语法焦虑，不再被技术知识挡在门外——只要描述你想要什么，然后看着它出现。
 
-而且它确实有效——至少一开始是。到 2026 年，72% 的开发者日常使用 AI 编程工具，全球 41% 的代码由 AI 生成。[Y Combinator 报告称](<https://daily.dev/blog/vibe-coding-how-ai-changing-developers-code>)，其 2025 冬季批次中有 25% 的公司跑着 95% 由 AI 生成的代码库。速度上的提升是真实的。
+而且它确实有效——至少一开始是。到 2026 年，72% 的开发者日常使用 AI 编程工具，全球 41% 的代码由 AI 生成。[Y Combinator 报告称](https://daily.dev/blog/vibe-coding-how-ai-changing-developers-code)，其 2025 冬季批次中有 25% 的公司跑着 95% 由 AI 生成的代码库。速度上的提升是真实的。
 
 但没有结构的速度不是生产力，只是更快的债务累积。
 
@@ -47,7 +47,7 @@ draft: false
 
 CodeRabbit 在 2025 年 12 月对 470 个开源 GitHub PR 的分析发现，由生成式 AI 参与编写的代码，「严重」问题的比例比人类编写的代码高出约 1.7 倍——其中错误配置高出 75%，安全漏洞高出 2.74 倍。
 
-读完这个我立刻想到一个自己反复见到的模式：**每个错误都会向下游复利放大。** AI 修好一处，又弄坏另外两处，因为它看不到完整的依赖链。AI 常常意识不到整个代码库的上下文，尤其是在庞大复杂的架构里——[Agent 修复了一个文件的 bug，却破坏了引用它的文件，仅仅因为没看到两者之间的联系。](<https://towardsdatascience.com/the-reality-of-vibe-coding-ai-agents-and-the-security-debt-crisis/>)
+读完这个我立刻想到一个自己反复见到的模式：**每个错误都会向下游复利放大。** AI 修好一处，又弄坏另外两处，因为它看不到完整的依赖链。AI 常常意识不到整个代码库的上下文，尤其是在庞大复杂的架构里——[Agent 修复了一个文件的 bug，却破坏了引用它的文件，仅仅因为没看到两者之间的联系。](https://towardsdatascience.com/the-reality-of-vibe-coding-ai-agents-and-the-security-debt-crisis/)
 
 这不是让你停止用 AI 的理由，而是让你建立一种工作流、让这种失效模式在复利放大之前就被抓住的理由。
 
@@ -65,7 +65,7 @@ CodeRabbit 在 2025 年 12 月对 470 个开源 GitHub PR 的分析发现，由�
 
 **第 2 步——计划评审。**以「计划模式」把 spec 跑一遍 Agent（Claude Code 原生支持），让它把含糊之处都指出来，在执行之前先修掉。
 
-**第 3 步——有界执行。**一次只给 Agent 一个任务，而不是一整块功能。一次要得太多，它很可能犯迷糊，产出一堆难以拆解的「[一团乱麻](<https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e>)」——就像 10 个互不沟通的开发者在同时干活。解法是停下来、回退、把问题拆成更小的块。
+**第 3 步——有界执行。**一次只给 Agent 一个任务，而不是一整块功能。一次要得太多，它很可能犯迷糊，产出一堆难以拆解的「[一团乱麻](https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e)」——就像 10 个互不沟通的开发者在同时干活。解法是停下来、回退、把问题拆成更小的块。
 
 **第 4 步——验收前先审查输出。**这听起来理所当然，但大多数 vibe coder 恰恰会跳过这一步。
 
@@ -119,7 +119,7 @@ GitFlow 模型可以干净地映射过来：每个有界任务一条 feature 分
 
 这四个工具我都用过一段时间。以下是我对每个工具在结构化工作流里位置的诚实看法——不是把它们当孤立工具。
 
-[Claude Code](<https://docs.anthropic.com/en/docs/claude-code/overview>) 是你需要在大型、多文件任务里做深度代码库推理时的最强选择。它会读取你的仓库结构、知道你的分支状态、创建带有意义信息的 commit，还能直接开 pull request。hooks 系统让你能强制项目专属规则——lint、测试、格式化——在特定动作前后自动运行。`CLAUDE.md` 文件对跨会话持久化项目上下文真的很有用。最适合：复杂重构、架构决策、看重上下文深度的项目。
+[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) 是你需要在大型、多文件任务里做深度代码库推理时的最强选择。它会读取你的仓库结构、知道你的分支状态、创建带有意义信息的 commit，还能直接开 pull request。hooks 系统让你能强制项目专属规则——lint、测试、格式化——在特定动作前后自动运行。`CLAUDE.md` 文件对跨会话持久化项目上下文真的很有用。最适合：复杂重构、架构决策、看重上下文深度的项目。
 
 **Cursor** 是日常交互式编码循环的正确工具。在可视化 IDE 里做日常编码用 Cursor，自主后台任务用 Codex，需要最大上下文的深度多文件工作用 Claude Code。Composer 模式能干净地处理多文件编辑，Tab 自动补全很快。如果你最习惯在编辑器里可视化地工作，Cursor 是更好的日常主力。
 
@@ -131,7 +131,7 @@ GitFlow 模型可以干净地映射过来：每个有界任务一条 feature 分
 
 ### 给终端用户的 Gemini CLI 与 GitHub Copilot CLI
 
-如果你整天待在终端里、想要更轻量的工具：[GitHub Copilot CLI](<https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line>) 能干净利落地根据自然语言生成 shell 命令。Gemini CLI 对 Google 生态用户是个强选项。两者都替代不了一个完整的 Agent 工作流，但作为执行层里的辅助工具都相当合适。
+如果你整天待在终端里、想要更轻量的工具：[GitHub Copilot CLI](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line) 能干净利落地根据自然语言生成 shell 命令。Gemini CLI 对 Google 生态用户是个强选项。两者都替代不了一个完整的 Agent 工作流，但作为执行层里的辅助工具都相当合适。
 
 ## 不写代码的单人创业者，怎么用 AI Agent 工作流
 

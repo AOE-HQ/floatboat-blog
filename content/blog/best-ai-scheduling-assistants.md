@@ -16,7 +16,7 @@ draft: false
 
   * The best tool depends on what you need the AI to do: just book meetings, optimize your day, or actually execute work from your calendar.
 
-  * Calendly remains the standard for simple scheduling. Motion and Reclaim are strong Gen 2 optimizers. Agentic Calendars and [Cal.com](<http://Cal.com>) Agents are pushing into Gen 3 territory. Floatboat is the only Gen 4 calendar-driven agent OS.
+  * Calendly remains the standard for simple scheduling. Motion and Reclaim are strong Gen 2 optimizers. Agentic Calendars and [Cal.com](http://Cal.com) Agents are pushing into Gen 3 territory. Floatboat is the only Gen 4 calendar-driven agent OS.
 
   * For solo founders and anyone whose calendar runs their business, the generation gap between Gen 2 and Gen 4 isn't about features — it's about whether the AI waits for you or acts on your behalf.
 
@@ -70,17 +70,17 @@ Morgen is the newest major Gen 2 entrant, offering a unified calendar across mul
 
 **Best for** : People with multiple internal meetings per day who need their calendar to actively protect focus time. The Gen 2 tools have matured to the point where the optimization job is solved; choosing between them is about integration preferences and how aggressively you want the AI to rearrange your day.
 
-### 2.3 Gen 3: Scheduling Agents (Agentic Calendars, [Cal.com](<http://Cal.com>) Agents)
+### 2.3 Gen 3: Scheduling Agents (Agentic Calendars, [Cal.com](http://Cal.com) Agents)
 
 Gen 3 is where the category begins to expand beyond time-slot management. Gen 3 tools don't just find or optimize time — they begin to act on what the calendar contains.
 
 Agentic Calendars reads incoming emails and automatically books appointments from them — an agent that watches your inbox and acts on scheduling requests without human routing. It's a narrow but real example of autonomous calendar action: the trigger is an email arriving, the output is a confirmed event on your calendar, and no human touched the routing decision.
 
-[Cal.com](<http://Cal.com>) Agents represents a different architectural bet: rather than building one scheduling agent, [Cal.com](<http://Cal.com>) built an open platform where developers can create scheduling agents that live in Slack, Telegram, CLI, API, and other environments. The agents handle natural language scheduling requests — "book a 30-minute call with the design team next Tuesday" — and can be embedded wherever teams already work. It's infrastructure for scheduling agents rather than a single agent product.
+[Cal.com](http://Cal.com) Agents represents a different architectural bet: rather than building one scheduling agent, [Cal.com](http://Cal.com) built an open platform where developers can create scheduling agents that live in Slack, Telegram, CLI, API, and other environments. The agents handle natural language scheduling requests — "book a 30-minute call with the design team next Tuesday" — and can be embedded wherever teams already work. It's infrastructure for scheduling agents rather than a single agent product.
 
 Both tools represent a shift from "optimize the calendar" to "act on the calendar's behalf." They're still largely reactive — responding to external triggers like incoming emails or explicit scheduling commands — but they're doing something Gen 2 tools don't: executing actions rather than making recommendations.
 
-**Best for** : Teams that want scheduling to happen without anyone manually managing availability. [Cal.com](<http://Cal.com>) Agents particularly suits development teams that want to embed scheduling into their existing tools. Agentic Calendars suits individuals and small teams drowning in scheduling email.
+**Best for** : Teams that want scheduling to happen without anyone manually managing availability. [Cal.com](http://Cal.com) Agents particularly suits development teams that want to embed scheduling into their existing tools. Agentic Calendars suits individuals and small teams drowning in scheduling email.
 
 ### 2.4 Gen 4: Calendar-Driven Agent OS (Floatboat)
 
@@ -120,7 +120,7 @@ The ceiling for all Gen 2 tools is the same: they optimize the arrangement of ta
 
 ### 3.4 Scheduling Agents: Best for Autonomous Prep and Follow-Up
 
-Gen 3 is the smallest and newest category, with two tools taking notably different paths. Agentic Calendars is purpose-built for a specific workflow — turning inbound scheduling emails into booked meetings without human intervention — and executes that workflow well. [Cal.com](<http://Cal.com>) Agents is the more ambitious architectural play, creating an open platform where scheduling agents can be built and embedded across environments.
+Gen 3 is the smallest and newest category, with two tools taking notably different paths. Agentic Calendars is purpose-built for a specific workflow — turning inbound scheduling emails into booked meetings without human intervention — and executes that workflow well. [Cal.com](http://Cal.com) Agents is the more ambitious architectural play, creating an open platform where scheduling agents can be built and embedded across environments.
 
 Both tools can reduce the manual overhead of scheduling, but neither addresses the full lifecycle of calendar-driven work. They handle the booking or rescheduling of an event; they don't handle what happens before or after it. Gen 3 is a bridge generation — tools that cross the line from calendar management to calendar action, but don't yet cover the full prep-to-follow-up pipeline.
 
@@ -148,7 +148,7 @@ Integration breadth matters if your tools are spread across multiple platforms. 
 
 The deepest distinction in the market isn't between tools — it's between tools that assist you and tools that act on your behalf. Gen 1 and Gen 2 are assistants. They make recommendations, optimize arrangements, send reminders. They improve your calendar experience. But you still do the work.
 
-Gen 3 begins to shift this — Agentic Calendars books meetings without you. [Cal.com](<http://Cal.com>) Agents handles scheduling requests without you. These are autonomous actions, but they're confined to the scheduling domain.
+Gen 3 begins to shift this — Agentic Calendars books meetings without you. [Cal.com](http://Cal.com) Agents handles scheduling requests without you. These are autonomous actions, but they're confined to the scheduling domain.
 
 Gen 4 extends autonomy across the work lifecycle. The system prepares briefs, gathers context, generates follow-ups, and tracks action items — none of which requires you to initiate anything. The calendar itself drives the work. For someone managing a high volume of calendar-structured work, this autonomy isn't a luxury feature; it's the difference between spending hours on prep and spending those hours on the work that only you can do.
 

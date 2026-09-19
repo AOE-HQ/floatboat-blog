@@ -21,7 +21,7 @@ That said — this is not "AI replaces your manga workflow." It's more like one 
 
 ### CJK + Latin text rendering at near-perfect accuracy
 
-This is the headline change, and for once the headline matches the experience. According to [OpenAI's own announcement for ChatGPT Images 2.0](<https://openai.com/index/introducing-chatgpt-images-2-0/>), the model is built for "complex visual tasks" with text rendering as one of the core upgrades. Independent testing puts character-level accuracy across Latin, Chinese, Japanese, Korean, Hindi and Bengali at roughly 99% — [VentureBeat's hands-on review](<https://venturebeat.com/technology/openais-chatgpt-images-2-0-is-here-and-it-does-multilingual-text-full-infographics-slides-maps-even-manga-seemingly-flawlessly>) flagged Japanese manga speech bubbles specifically as one of the things that "looked seamless."
+This is the headline change, and for once the headline matches the experience. According to [OpenAI's own announcement for ChatGPT Images 2.0](https://openai.com/index/introducing-chatgpt-images-2-0/), the model is built for "complex visual tasks" with text rendering as one of the core upgrades. Independent testing puts character-level accuracy across Latin, Chinese, Japanese, Korean, Hindi and Bengali at roughly 99% — [VentureBeat's hands-on review](https://venturebeat.com/technology/openais-chatgpt-images-2-0-is-here-and-it-does-multilingual-text-full-infographics-slides-maps-even-manga-seemingly-flawlessly) flagged Japanese manga speech bubbles specifically as one of the things that "looked seamless."
 
 Before, I'd generate a panel, photoshop the bubbles out, and hand-letter the kanji myself. That step is mostly gone now for headline-length text. **For dense paragraphs at small sizes, it still slips.** I keep my in-bubble text under about 15 characters per line and it holds up.
 
@@ -35,7 +35,7 @@ This sounds small. It is not small. **The old workflow was: regenerate twenty ti
 
 ### 4K resolution, and what it actually means for print
 
-GPT Image 2 supports up to 4K (4096×4096) output. [Microsoft's Foundry documentation](<https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-openais-gpt-image-2-in-microsoft-foundry/4500571>) confirms the resolution tier and the flexible aspect ratios — useful, because manga panels rarely want square. For print at 300dpi, 4K gets you roughly a half-page panel without upscaling, or a full-page splash if you're not too picky. For digital — webtoons, Instagram, your own site — it's overkill in the good way.
+GPT Image 2 supports up to 4K (4096×4096) output. [Microsoft's Foundry documentation](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-openais-gpt-image-2-in-microsoft-foundry/4500571) confirms the resolution tier and the flexible aspect ratios — useful, because manga panels rarely want square. For print at 300dpi, 4K gets you roughly a half-page panel without upscaling, or a full-page splash if you're not too picky. For digital — webtoons, Instagram, your own site — it's overkill in the good way.
 
 ## A realistic solo manga workflow, step by step
 
@@ -59,7 +59,7 @@ A working four-panel prompt for me looks roughly like: same scene anchor at the 
 
 ### Keeping character design consistent across a chapter
 
-This is where it gets interesting and also where I learned to manage expectations. According to [The New Stack's coverage of the launch](<https://thenewstack.io/chatgpt-images-20-openai/>), Thinking mode is specifically designed to maintain character and object consistency across multiple frames — manga and storyboarding are explicitly listed.
+This is where it gets interesting and also where I learned to manage expectations. According to [The New Stack's coverage of the launch](https://thenewstack.io/chatgpt-images-20-openai/), Thinking mode is specifically designed to maintain character and object consistency across multiple frames — manga and storyboarding are explicitly listed.
 
 In practice, with Thinking mode on and an 8-image batch from a single prompt, I got recognizable continuity for about 5–6 of those panels. The other 2–3 needed a small re-roll on the face. **That is a huge step up from generating panels one-at-a-time, where ​consistency** ​**​ was basically a coin flip.**
 
@@ -95,7 +95,7 @@ My workaround: generate the establishing shot first, then use it as an image ref
 
 ### Style drift across a full chapter
 
-Across 20+ panels the line weight and screen tone density drift. By panel 25 the style is subtly softer than panel 1. [DataCamp's review notes](<https://www.datacamp.com/blog/chatgpt-images-2-0>) the model is positioned as a "visual thought partner" rather than a fixed-style renderer — and I think that framing is actually honest about what it does well and what it doesn't.
+Across 20+ panels the line weight and screen tone density drift. By panel 25 the style is subtly softer than panel 1. [DataCamp's review notes](https://www.datacamp.com/blog/chatgpt-images-2-0) the model is positioned as a "visual thought partner" rather than a fixed-style renderer — and I think that framing is actually honest about what it does well and what it doesn't.
 
 ## What to do when the model hits a wall
 
@@ -123,7 +123,7 @@ Here's how I think about this. **If you're a solo creator working on short-form 
 
 ​**If you're trying to produce a long-form serialized work with tight continuity** ​, the limitations on character consistency past 8 panels and background drift between scenes will make this feel more like a fight than a tool. Worth waiting another version cycle.
 
-For everyone in between — curious, doing it for fun, want to test whether you can ship a 12-page short — it's worth a weekend. The pricing is reasonable: included in ChatGPT Plus at the standard $20/month tier with usage limits, or [token-based via the OpenAI API model page](<https://developers.openai.com/api/docs/models/gpt-image-2>) for production work. Image output tokens land around $30 per million on the API, which works out to a few cents per panel at the resolutions I use. I checked the docs as of writing this; verify before committing — the API tier opens to all developers in early May.
+For everyone in between — curious, doing it for fun, want to test whether you can ship a 12-page short — it's worth a weekend. The pricing is reasonable: included in ChatGPT Plus at the standard $20/month tier with usage limits, or [token-based via the OpenAI API model page](https://developers.openai.com/api/docs/models/gpt-image-2) for production work. Image output tokens land around $30 per million on the API, which works out to a few cents per panel at the resolutions I use. I checked the docs as of writing this; verify before committing — the API tier opens to all developers in early May.
 
 ![6.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087089441-d5498d93-a404-49d7-9839-cd0dc4614114.webp)
 
@@ -133,13 +133,13 @@ Back to drawing things.
 
 ## Previous Posts:
 
-  * [See how to build a repeatable AI workflow for solo creative work](</blog/ai-workflow-for-solo-founders>)
+  * [See how to build a repeatable AI workflow for solo creative work](/blog/ai-workflow-for-solo-founders)
 
-  * [Understand how AI tools fit into real solo operator workflows in 2026](</blog/ai-agents-2026-solo-operators>)
+  * [Understand how AI tools fit into real solo operator workflows in 2026](/blog/ai-agents-2026-solo-operators)
 
-  * [Learn how one-person creators are scaling output without hiring](</blog/scale-one-person-business-without-hiring>)
+  * [Learn how one-person creators are scaling output without hiring](/blog/scale-one-person-business-without-hiring)
 
-  * [Discover practical AI workflows that actually work beyond one-off prompts](</blog/ai-workflow-solo-founders>)
+  * [Discover practical AI workflows that actually work beyond one-off prompts](/blog/ai-workflow-solo-founders)
 
-  * [Explore how AI can help you operate like a full creative team solo](</blog/how-one-person-businesses-work-like-a-team-with-ai>)
+  * [Explore how AI can help you operate like a full creative team solo](/blog/how-one-person-businesses-work-like-a-team-with-ai)
 
