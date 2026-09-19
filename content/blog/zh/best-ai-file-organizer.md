@@ -67,7 +67,7 @@ FilesDesk 是跨平台整理器里的性价比之选，也是我们找到的离�
 
 AI File Sorter 证明了「本地优先整理」不需要厂商也能成立。这款面向 Windows、macOS 和 Linux 的 Qt 应用在你的硬件上运行内置 GGUF 模型——默认视觉模型是 Gemma 3 4B IT，文本可用 Mistral 7B——用视觉分析图片、用文本分析文档、用内嵌元数据分析音视频。它在同一次运行里建议文件夹和文件名，在你于 dry-run 预览中审阅批准之前什么都不会执行，持久的撤销、类别白名单和项目文件夹保护让大规模清理也安全。
 
-项目维护活跃——撰写本文时 GitHub 星标超过 1,500，持续发版——而成本是最大卖点：本地推理免费，可以自带 GGUF 或远程 OpenAI/Gemini 端点，没有任何订阅。代价与优点互为镜像：没有监视文件夹自动化，需要折腾模型下载和配置，界面不如商业应用精致。得分要点：本地/离线 5/5，一次完成 5/5，撤销 5/5，价格 5/5；读取深度 4/5 和毛边让它低于前三。来源：[github.com/hyperfield/ai-file-sorter](https://github.com/hyperfield/ai-file-sorter) 和 [filesorter.app](https://filesorter.app/)，截至 2026 年 9 月。
+项目维护活跃——撰写本文时 GitHub 星标超过 1,500，持续发版——而成本是最大卖点：本地推理免费，可以自带 GGUF 或远程 OpenAI/Gemini 端点，没有任何订阅。代价与优点互为镜像：没有监视文件夹自动化，需要折腾模型下载和配置，界面不如商业应用精致。得分要点：本地/离线 5/5，一次完成 5/5，撤销 5/5，价格 5/5；读取深度 4/5 和毛边让它低于前三。（据 [hyperfield/ai-file-sorter](https://github.com/hyperfield/ai-file-sorter) 与 [filesorter.app](https://filesorter.app/)，2026 年 9 月）
 
 ### 5. NameQuick — Mac 与 Windows 上最佳的被监视重命名与发票流水线
 

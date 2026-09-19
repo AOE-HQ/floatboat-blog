@@ -2764,12 +2764,10 @@
   },
   {
    "file": "zh/best-ai-file-organizer",
-   "words": 550,
+   "words": 548,
    "distinct_internal": 3,
-   "density": 5.45,
-   "fails": [
-    "mechanical anchor"
-   ],
+   "density": 5.47,
+   "fails": [],
    "warns": [],
    "targets": [
     "best-ai-file-renamer",
