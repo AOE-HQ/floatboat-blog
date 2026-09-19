@@ -50,17 +50,19 @@ export default function ZhBlogIndexPage() {
         description="关于 AI 队友、自动化与高频协作的笔记。实践向内容：如何给 AI 明确角色、边界与可交付成果。"
         articleCount={data.articleCount}
         categories={data.categories}
+        locale={locale}
+        localePrefix="/zh"
       />
 
       {data.featured ? (
         <section className="mt-14 lg:mt-20" aria-label="最新文章">
-          <FeaturedBanner post={data.featured} locale={locale} />
+          <FeaturedBanner post={data.featured} locale={locale} localePrefix="/zh" />
         </section>
       ) : null}
 
       {data.latest.length > 0 ? (
         <section className="mt-14 lg:mt-20" aria-label="浏览全部文章">
-          <TopicBrowser posts={data.latest} locale={locale} />
+          <TopicBrowser posts={data.latest} locale={locale} localePrefix="/zh" />
         </section>
       ) : null}
 

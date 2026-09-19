@@ -37,7 +37,7 @@ export function FeaturedBanner({ post, locale = "en", localePrefix = "" }: Featu
       </div>
       <div className="flex flex-col justify-center p-7 sm:p-10 lg:col-span-2">
         <p className="inline-flex w-fit items-center gap-2 rounded-full bg-[var(--ob-color-accent)]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-accent)]">
-          Latest
+          {locale === "zh" ? "最新" : "Latest"}
         </p>
         <h2 className="mt-5 font-serif text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] transition-colors group-hover:underline sm:text-3xl">
           {post.title}
@@ -52,7 +52,7 @@ export function FeaturedBanner({ post, locale = "en", localePrefix = "" }: Featu
           <span aria-hidden="true">·</span>
           <time dateTime={post.date}>{formatPostDate(post.date, locale)}</time>
           <span aria-hidden="true">·</span>
-          <span>{post.readingMinutes} min read</span>
+          <span>{locale === "zh" ? `${post.readingMinutes} 分钟阅读` : `${post.readingMinutes} min read`}</span>
         </div>
       </div>
     </Link>

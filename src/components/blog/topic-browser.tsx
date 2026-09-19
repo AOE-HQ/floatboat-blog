@@ -3,6 +3,9 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { PostMeta } from "@openblog/core";
+import { formatPostDate } from "@openblog/core";
+
+import { categoryDisplayName } from "@/lib/category-display";
 
 interface TopicBrowserProps {
   posts: PostMeta[];
@@ -50,7 +53,9 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix
           {locale === "zh" ? "浏览文章库" : "Browse the library"}
         </h2>
         <p className="text-sm text-[var(--ob-color-muted)]">
-          {filtered.length} article{filtered.length !== 1 ? "s" : ""}
+          {locale === "zh"
+            ? `${filtered.length} 篇文章`
+            : `${filtered.length} article${filtered.length !== 1 ? "s" : ""}`}
         </p>
       </div>
 
@@ -59,7 +64,7 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix
         {categories.map((slug) => (
           <CategoryPill
             key={slug}
-            label={slug}
+            label={categoryDisplayName(slug, locale)}
             count={counts.get(slug) ?? 0}
             active={topic === slug}
             onClick={() => setTopic(slug)}
@@ -69,7 +74,7 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix
 
       <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {shown.map((post) => (
-          <PostCardMini key={post.slug} post={post} localePrefix={localePrefix} />
+          <PostCardMini key={post.slug} post={post} locale={locale} localePrefix={localePrefix} />
         ))}
       </div>
 
@@ -80,7 +85,7 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix
             onClick={() => setVisible((v) => v + pageSize)}
             className="inline-flex items-center rounded-full border border-[var(--ob-color-border)] px-6 py-2.5 text-sm font-medium text-[var(--ob-color-text)] transition hover:border-[var(--ob-color-accent)]"
           >
-            Load more ({remaining} remaining)
+            {locale === "zh" ? `加载更多（剩 ${remaining} 篇）` : `Load more (${remaining} remaining)`}
           </button>
         </div>
       ) : null}
@@ -108,7 +113,15 @@ function CategoryPill({
   );
 }
 
-function PostCardMini({ post, localePrefix = "" }: { post: PostMeta; localePrefix: string }) {
+function PostCardMini({
+  post,
+  locale = "en",
+  localePrefix = "",
+}: {
+  post: PostMeta;
+  locale?: "en" | "zh";
+  localePrefix: string;
+}) {
   return (
     <article className="group overflow-hidden rounded-2xl border border-[var(--ob-color-border)] bg-[var(--ob-color-surface)] transition-all hover:-translate-y-0.5 hover:shadow-lg">
       <Link href={`${localePrefix}/blog/${post.slug}`} className="block">
@@ -131,8 +144,13 @@ function PostCardMini({ post, localePrefix = "" }: { post: PostMeta; localePrefi
             {post.description}
           </p>
           <div className="mt-3 flex items-center gap-2 text-xs text-[var(--ob-color-muted)]">
-            <time dateTime={post.date}>{post.date}</time>
-            {post.readingMinutes ? <><span aria-hidden="true">·</span><span>{post.readingMinutes} min</span></> : null}
+            <time dateTime={post.date}>{formatPostDate(post.date, locale)}</time>
+            {post.readingMinutes ? (
+              <>
+                <span aria-hidden="true">·</span>
+                <span>{locale === "zh" ? `${post.readingMinutes} 分钟` : `${post.readingMinutes} min`}</span>
+              </>
+            ) : null}
           </div>
         </div>
       </Link>
