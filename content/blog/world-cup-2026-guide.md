@@ -76,7 +76,7 @@ The 2026 format introduces two structural changes: 12 groups instead of 8, and a
 
 ### Group Stage
 
-The 48 teams are divided into **12 groups of 4** (Groups A through L). Each team plays three group-stage matches — the same number as in the 32-team format. This is an important design choice by FIFA: no team plays extra group matches despite the larger field.
+The 48 teams are divided into **12 groups of 4** (Groups A through L); the full assignments are in our [World Cup 2026 draw results breakdown](/blog/world-cup-2026-draw). Each team plays three group-stage matches — the same number as in the 32-team format. This is an important design choice by FIFA: no team plays extra group matches despite the larger field.
 
 Advancement rules:
 
