@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { categoryLabel } from "@openblog/components";
+
 interface HeroProps {
   locale?: "en" | "zh";
   siteName: string;
@@ -24,8 +26,10 @@ export function BlogHero({
   articleCount,
   categories,
   localePrefix = "",
-  browseLabel = "Browse by topic",
+  browseLabel,
 }: HeroProps) {
+  const resolvedBrowseLabel = browseLabel ?? (locale === "zh" ? "按主题浏览" : "Browse by topic");
+
   return (
     <header className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
       {/* Left: editorial title + description */}
@@ -49,8 +53,8 @@ export function BlogHero({
       <div className="hidden lg:col-span-5 lg:block">
         <div className="rounded-2xl border border-[var(--ob-color-border)] bg-[var(--ob-color-surface)] p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-muted)]">
-            {browseLabel}
-          </p>
+          {resolvedBrowseLabel}
+        </p>
           <ul className="mt-4 space-y-1">
             {categories.slice(0, 7).map((cat) => (
               <li key={cat.slug}>
@@ -59,7 +63,7 @@ export function BlogHero({
                   className="group flex items-center justify-between rounded-lg px-3 py-2.5 transition-colors hover:bg-[var(--ob-color-surface-hover,var(--ob-color-surface))]"
                 >
                   <span className="text-sm font-medium text-[var(--ob-color-text)]">
-                    {cat.name}
+                    {categoryLabel(cat.slug, cat.name, locale)}
                   </span>
                   <span className="text-xs font-semibold tabular-nums text-[var(--ob-color-muted)]">
                     {cat.count}

@@ -49,6 +49,7 @@ export const BLOG_INDEX_COPY: Record<
 export const CATEGORY_LABELS_ZH: Record<string, string> = {
   "ai-agents": "AI 智能体",
   "calendar-ai": "日历 AI",
+  "file-management": "文件管理",
   "model-benchmarks": "模型与评测",
   "product-updates": "产品动态",
   "solo-operators": "一人公司",

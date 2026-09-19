@@ -20,6 +20,7 @@ import { PrevNext } from "../optional/prev-next";
 import { TagsList } from "../optional/tags-list";
 import { TldrBlock } from "../optional/tldr-block";
 import { BlogShell } from "./blog-shell";
+import { categoryLabel } from "./blog-index-copy";
 import { Breadcrumbs } from "./breadcrumbs";
 import { CategoryBadge } from "./category-badge";
 import { FeaturedImage } from "./featured-image";
@@ -107,7 +108,9 @@ export function ArticleLayout({
           >
             <div className="min-w-0">
               {features.categories && post.category ? (
-                <CategoryBadge category={post.category} />
+                <CategoryBadge
+                  category={categoryLabel(post.categorySlug, post.category, locale)}
+                />
               ) : null}
               {required.postTitle ? <PostTitle>{post.title}</PostTitle> : null}
               {required.postDek ? <PostDek>{post.description}</PostDek> : null}
