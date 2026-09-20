@@ -92,7 +92,7 @@ const config = defineConfig({
     ],
     optional: {
       toc: true,
-      relatedPosts: true,
+      relatedPosts: false,
       shareBar: true,
       tagsList: false,
       tldr: false,

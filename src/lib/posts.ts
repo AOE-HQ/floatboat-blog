@@ -4,15 +4,12 @@ import {
   extractLeadParagraph,
   extractToc,
   type Post,
-  type PostMeta,
 } from "@openblog/core";
 
 import type { BlogLocale } from "@/config/i18n";
 import { getContentService, CONTENT_DIR } from "@/lib/content";
-import { toMeta } from "@openblog/content";
 import { createLocaleSiteHelpers } from "@/lib/locale-site";
 import { postPathForLocale } from "@/config/i18n";
-import { resolveRelatedSlugsForPost } from "@/lib/related-posts-data";
 import { resolveFaqForPost } from "@/lib/faq-data";
 import { resolveFinalCtaForPost } from "@/lib/final-cta-data";
 import { resolveTldrForPost } from "@/lib/tldr-data";
@@ -75,27 +72,6 @@ export function getPostsByTag(tagSlug: string, locale: BlogLocale = "en") {
 
 export function getPostsByAuthor(authorSlug: string, locale: BlogLocale = "en") {
   return getContentService(locale).getPostsByAuthor(authorSlug);
-}
-
-export function getRelatedPosts(
-  post: PostMeta,
-  locale: BlogLocale = "en",
-  limit = 3,
-): PostMeta[] {
-  const slugs = resolveRelatedSlugsForPost(post.slug, locale).slice(0, limit);
-  if (!slugs.length) {
-    return [];
-  }
-
-  const bySlug = new Map(
-    getContentService(locale)
-      .listPosts()
-      .map((candidate) => [candidate.slug, toMeta(candidate)] as const),
-  );
-
-  return slugs
-    .map((slug) => bySlug.get(slug))
-    .filter((meta): meta is PostMeta => Boolean(meta));
 }
 
 export function getAdjacentPosts(slug: string, locale: BlogLocale = "en") {
