@@ -31,7 +31,7 @@ draft: false
 
 标准建议通常是：写作用 ChatGPT，[自动化用 Zapier](https://zapier.com/workflows)，项目管理用 Notion，调研再单配一个工具。那就是四套工具、四个登录账号、四份互不通气的上下文。每一套只知道你工作的一个切片，**但没有任何一套知道你的工作是怎么拼在一起的**。
 
-我以前以为工具越多效率越高。现在不这么认为了。
+我以前以为工具越多效率越高。现在不这么认为了。让我改看法的，是[按角色分工的 AI 工作流](/zh/blog/what-gstack-gets-right-about-one-person-businesses)这个思路——给上面那五个工种各配一个有明确定位、自带上下文的 AI，而不是让五套工具共享零份上下文。
 
 ![22.PNG](/zh/blog/images/ai-workflow-solo-founders/1775794469214-45bbbaf7-1e3c-4c4a-a8e7-feb28560363d.webp)
 

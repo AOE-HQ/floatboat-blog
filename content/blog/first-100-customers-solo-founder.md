@@ -133,7 +133,7 @@ Systematize too early and you lose the customer signal you need to make good pro
 
 The heuristic I've landed on: **systematize anything that's about consistent delivery; keep manual anything that's still about learning.** Onboarding emails? Automate once you've refined them through 20+ manual onboardings and know what actually works. Customer check-in calls? Keep them human as long as you possibly can — these are where you find out what's really happening.
 
-The mechanism behind this rule: automation captures a snapshot of your current best understanding. If you automate before your understanding is stable, you've locked in the wrong process at scale. The first 100 customers is precisely the phase where your understanding should still be changing.
+The mechanism behind this rule: automation captures a snapshot of your current best understanding. If you automate before your understanding is stable, you've locked in the wrong process at scale. The first 100 customers is precisely the phase where your understanding should still be changing. And once your understanding is stable enough to automate, it helps to know what the build options cost — [what AI automation agencies actually charge](/blog/ai-automation-agency-pricing) is worth checking before you assume outsourcing is either the easy answer or out of reach.
 
 ## What the First 100 Customers Actually Teach You
 

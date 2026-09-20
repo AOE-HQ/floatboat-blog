@@ -53,7 +53,7 @@ The most useful pattern I've landed on breaks the follow-up into layers:
 
 **Layer 2: Action items with owners.** Each item gets assigned to a person with a deadline. The AI pulls names from the transcript and maps them to tasks. This works about 80% of the time — the other 20% needs manual correction, usually because someone said "I'll handle that" without specifying what "that" was.
 
-**Layer 3: Reminders and task creation.** This is where **action items AI** starts to overlap with project management. Some workflows push the action items directly into Notion, Asana, or a simple to-do list. I've been doing it manually for now — copy the items, paste them into my task board — but the pattern is clear enough that automation is the next step. Proactive agent OS tools like Floatboat are building toward exactly this: turning calendar events into executed outcomes, not just documented ones.
+**Layer 3: Reminders and task creation.** This is where **action items AI** starts to overlap with project management. Some workflows push the action items directly into Notion, Asana, or a simple to-do list. I've been doing it manually for now — copy the items, paste them into my task board — but the pattern is clear enough that automation is the next step, and [the version of this pipeline that runs itself](/blog/ai-follow-up-automation) triggers on the meeting's end time instead of on you remembering to paste a transcript. Proactive agent OS tools like Floatboat are building toward exactly this: turning calendar events into executed outcomes, not just documented ones.
 
 The whole point is that the follow-up doesn't live in your memory anymore. It lives in a system. And the system drafts faster than you do.
 

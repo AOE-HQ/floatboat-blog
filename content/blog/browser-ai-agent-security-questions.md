@@ -19,7 +19,7 @@ I'm not here to tell you not to use these tools. I use them. But **browser AI ag
 
 ## Why "Just Try It" Is Risky with Browser AI Agents
 
-Most software fails safely — it breaks, you close it, nothing permanent happens. Browser AI agents are different. They act in sessions where you're already logged in, which means a bad prompt or hijacked instruction can send an email, delete a file, or submit a form before you notice.
+Most software fails safely — it breaks, you close it, nothing permanent happens. Browser AI agents are different. They act in sessions where you're already logged in, which means a bad prompt or hijacked instruction can send an email, delete a file, or submit a form before you notice. That's a direct consequence of [what a browser AI agent can actually do](/blog/browser-ai-agent-what-it-can-do) — click, type, and read pages under your login — which makes every capability you grant also a surface you're trusting.
 
 Anthropic's own [safety page for Claude in Chrome](https://support.claude.com/en/articles/12902428-using-claude-in-chrome-safely) lists "unintended actions" as a top risk: Claude may misinterpret instructions, "potentially causing ​**irreversible changes to your data or accounts** ​." That's the first warning on the page, not buried in fine print.
 

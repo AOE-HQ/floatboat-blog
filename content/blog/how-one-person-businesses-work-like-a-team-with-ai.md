@@ -27,7 +27,7 @@ I was reading through some notes from early last year, and I kept finding the sa
 
 But here's what's different now. The tools have caught up in a way that actually matters for ​**one-person businesses** ​. It's not just that AI can write things for you. It's that AI can _hold a job_ — a specific, defined role — and stay in it.
 
-According to [Andreessen Horowitz's research on the creator economy](https://a16z.com/podcast/a16z-podcast-the-creator-economy-nfts-and-beyond/), the number of people building independent businesses online has grown significantly — not because it got easier in theory, but because the operational gap between "one person" and "small team" is actually closeable now. That's new.
+According to [Andreessen Horowitz's research on the creator economy](https://a16z.com/podcast/a16z-podcast-the-creator-economy-nfts-and-beyond/), the number of people building independent businesses online has grown significantly — not because it got easier in theory, but because the operational gap between "one person" and "small team" is actually closeable now. That's new. It's also the shift underneath [OpenAI's four-day work week proposal](/blog/openai-4-day-work-week-one-person-company) — the bet that AI productivity gains are now large enough to restructure work itself.
 
 ### Why doing everything alone used to break down
 
@@ -117,7 +117,7 @@ Let me be honest about this, because I think a lot of content on AI tools glosse
 
 It also breaks down when the work requires real relationship context. Knowing that a specific client is going through a difficult quarter, or that a potential partner had a bad experience with your category before — that kind of nuanced, interpersonal understanding doesn't transfer cleanly into a role configuration.
 
-And honestly? Prompting well is still work. Setting up a good role takes time upfront. It's an investment, not a shortcut. If you're expecting to skip the thinking, this won't help you.
+And honestly? Prompting well is still work. Setting up a good role takes time upfront. It's an investment, not a shortcut. If you're expecting to skip the thinking, this won't help you. It's also the point where [whether to bring in an AI automation agency](/blog/ai-automation-agency-do-you-need-one) becomes a fair question — just weigh what you hand over in scope and ownership before deciding.
 
 ### When you actually need another person
 
@@ -125,7 +125,7 @@ AI is remarkably good at tasks that are ​**repeatable, context-heavy, and outp
 
 The Harvard [Business Review](https://hbr.org/) has covered this distinction carefully: AI augments individual capacity, but it doesn't replace the social and judgment-based work that makes teams function. If your bottleneck is creative direction, client trust, or strategic thinking under real uncertainty — you still need people.
 
-Running a one-person business with AI doesn't mean you never collaborate. It means you stop burning hours on tasks that don't require a human— This is also why many solo operators are now packaging these systems into services
+Running a one-person business with AI doesn't mean you never collaborate. It means you stop burning hours on tasks that don't require a human— This is also why many solo operators are now packaging these systems into services — the same logic behind [scaling a one-person business without hiring](/blog/scale-one-person-business-without-hiring), where output grows through leverage and systems rather than headcount.
 
 ![5.png](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916347558-f859be5e-781e-4548-b7db-ea07c050495a.webp)
 

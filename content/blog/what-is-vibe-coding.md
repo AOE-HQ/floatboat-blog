@@ -69,7 +69,7 @@ I built a content tracking tool with AI assistance last year. It saved me about 
 
 ### Automating Repetitive Workflows
 
-**This is where vibe coding genuinely shines for one-person companies.** Connecting a form submission to a spreadsheet update to a Slack notification — tasks that used to require knowing JavaScript — are now promptable. The gap between "I want this to happen automatically" and "this is happening automatically" has gotten very small.
+**This is where vibe coding genuinely shines for one-person companies.** Connecting a form submission to a spreadsheet update to a Slack notification — tasks that used to require knowing JavaScript — are now promptable. The gap between "I want this to happen automatically" and "this is happening automatically" has gotten very small. For the steps that live inside sites and web apps you don't control, a [browser AI agent](/blog/browser-ai-agent-what-it-can-do) picks up where generated scripts stop — with its own limits worth knowing before you rely on it.
 
 ### Rapid Prototyping and Idea Validation
 
@@ -101,7 +101,7 @@ That said — the security picture is real and worth knowing about before you sh
 
 ### When There's No Clear Plan or Structure
 
-The model works with what you give it. Vague prompt, vague output. Unlike a human developer who might push back and ask clarifying questions, AI will produce something plausible-looking that doesn't actually solve your problem. I've generated code that ran without errors and did the wrong thing. After the third time, I started calling that a pattern worth noting.
+The model works with what you give it. Vague prompt, vague output. Unlike a human developer who might push back and ask clarifying questions, AI will produce something plausible-looking that doesn't actually solve your problem. I've generated code that ran without errors and did the wrong thing. After the third time, I started calling that a pattern worth noting — the missing piece is a [structured agent workflow](/blog/ai-agent-workflow-vibe-coding) that plans and verifies instead of accepting the first plausible output.
 
 ### When Outputs Need Long-Term Maintenance
 

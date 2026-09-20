@@ -43,11 +43,11 @@ None of this is a knock on the feature. It's just the part that doesn't fit in a
 
 ## The build path: when orchestration actually makes sense
 
-There's a real case for building. If your work involves a codebase, a research corpus, or a repeated investigation pattern that's complex enough to genuinely need fan-out, Dynamic Workflows is a much lower lift than rolling your own agent framework from scratch. The orchestration script is the loop, the branching, and the intermediate state — you don't have to wire that part yourself.
+There's a real case for building. If your work involves a codebase, a research corpus, or a repeated investigation pattern that's complex enough to genuinely need fan-out, Dynamic Workflows is a much lower lift than rolling your own agent framework from scratch. The orchestration script is the loop, the branching, and the intermediate state — you don't have to wire that part yourself — though lower lift is still lift, and [the build-versus-buy calculus for agentic AI systems](/blog/building-agentic-ai-systems-build-or-buy) is worth running before you commit either way.
 
 The build path is the right call when three things are true at once:
 
-You're working at a scale where one model in one session genuinely can't hold the task — codebase-wide migrations, multi-source investigations, audits across hundreds of files. You're comfortable enough in Claude Code (or the API) that "Claude wrote a script that ran subagents" is a sentence that doesn't make you nervous. And the task is going to repeat — because the payoff for designing a workflow is mostly in the second, third, and tenth time you run it.
+You're working at a scale where one model in one session genuinely can't hold the task — codebase-wide migrations, multi-source investigations, audits across hundreds of files. You're comfortable enough in Claude Code (or the API) that "Claude wrote a script that ran subagents" is a sentence that doesn't make you nervous. And the task is going to repeat — because the payoff for designing a workflow is mostly in the second, third, and tenth time you run it. That's also the quiet precondition behind [agents designed around repeated work](/blog/how-to-build-ai-agents-for-repeated-work): if the task doesn't recur on its own, the tenth run never arrives and the payoff never compounds.
 
 ![5.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055142758-e721949b-16cb-4ce3-905e-59cd8cfb330b.webp)
 
@@ -57,7 +57,7 @@ If any of those three are missing, the build path is going to feel heavier than 
 
 Here's where most solo operators I know actually land, even if they don't say it out loud: they don't want to build an agent stack. They want their work to move. The difference matters.
 
-A workspace, for the way I'm using the word here, is something that already sits across your calendar, files, recurring tasks, and context — and turns those into actions without you writing the orchestration. You're not designing the loop. You're using one that's already shaped for the kind of work a one-person business actually does: meeting prep, client follow-up, content batching, delivery checkpoints, recurring ops that pile up if nobody touches them. **[Floatboat](</>)** is one example in this category, positioned around exactly that gap — the layer between _"this is scheduled"_ and _"this got done."_ There are others appearing in the same space.
+A workspace, for the way I'm using the word here, is something that already sits across your calendar, files, recurring tasks, and context — and turns those into actions without you writing the orchestration. You're not designing the loop. You're using one that's already shaped for the kind of work a one-person business actually does: meeting prep, client follow-up, content batching, delivery checkpoints, recurring ops that pile up if nobody touches them. **[Floatboat](</>)** is one example in this category, positioned around exactly that gap — the layer between _"this is scheduled"_ and _"this got done."_ There are others appearing in the same space. If you've only met the term in vendor decks, [what a workspace agent actually is](/blog/ai-workspace-agents) is simpler than the marketing: an agent that already holds your context and acts on it, instead of waiting for you to paste it in.
 
 ![6.png](/blog/images/dynamic-workflows-build-or-use-workspace/1780055151552-adeb0f8c-84d9-4a27-97d9-b9967beffa31.webp)
 

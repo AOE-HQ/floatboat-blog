@@ -75,7 +75,7 @@ This is the section I wish I'd read before upgrading.
 
 ## How It Compares to Similar Tools on Price
 
-The obvious comparison points are ChatGPT Plus at $20/month, Perplexity Pro at $20/month, and standalone media tools like Midjourney ($10–$60/month).
+The obvious comparison points are ChatGPT Plus at $20/month, Perplexity Pro at $20/month, and standalone media tools like Midjourney ($10–$60/month). The one competitor priced like Genspark — credits burned per agent task rather than a flat monthly chat fee — is [Manus](/blog/genspark-vs-manus), and that shared billing model makes it the only genuine like-for-like price comparison in this category.
 
 Genspark's pitch is that it ​**bundles research, chat, image generation, video creation, presentations, and AI agents into one subscription** ​. On paper, that's a lot of value for $25/month. If you're currently paying for two or three separate AI tools, consolidating into Genspark could genuinely reduce your total spend.
 

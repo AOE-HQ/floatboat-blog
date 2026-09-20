@@ -22,9 +22,9 @@ draft: false
 
 ## 1\. Before You Start: What You Need
 
-You need three things and about fifteen minutes. Of course, there is also the option of not building at all — tools like [Floatboat DeepSeek Agent](https://deepseek-agent.com) ship the agent loop, tool wiring, and a desktop workspace preconfigured, so you skip straight to using the agent rather than engineering one. This tutorial covers the DIY path for those who want full control over the tool surface or are building agents for domain-specific tasks that off-the-shelf clients do not cover.
+You need three things and about fifteen minutes. Of course, there is also the option of not building at all — tools like [Floatboat DeepSeek Agent](https://deepseek-agent.com) ship the agent loop, tool wiring, and a desktop workspace preconfigured, so you skip straight to using the agent rather than engineering one. This tutorial covers the DIY path for those who want full control over the tool surface or are building agents for domain-specific tasks that off-the-shelf clients do not cover. If you're weighing that trade across a whole stack rather than a single tool, [the build-versus-buy calculus for agentic AI systems](/blog/building-agentic-ai-systems-build-or-buy) is the same question one level up.
 
-A Python environment — Python 3.10 or later with `pip` installed, or Node.js 18 or later. The OpenAI SDK (`pip install openai` or `npm install openai`) handles the API communication. DeepSeek's API is fully OpenAI-compatible at the wire level, so no specialized SDK is required.
+A Python environment — Python 3.10 or later with `pip` installed, or Node.js 18 or later. The OpenAI SDK (`pip install openai` or `npm install openai`) handles the API communication. DeepSeek's API is fully OpenAI-compatible at the wire level, so no specialized SDK is required. If your only agent-building experience so far is [a Custom GPT configured inside ChatGPT](/blog/how-to-build-an-ai-agent-with-chatgpt), this is the one conceptual jump — from configuring a product to owning a loop — and the SDK is the easy part.
 
 A terminal and a text editor. The agent loop examples in this tutorial are under fifty lines each. You can type them into a single file and run it from the command line. If you want to see the full picture before building, [What Is a DeepSeek Agent](/blog/what-is-deepseek-agent) maps out the four archetypes and helps you decide whether you even need a custom agent or should use an existing tool.
 
@@ -233,7 +233,7 @@ One common gotcha: if you are using strict mode (`"strict": true` on your functi
 
 ## 6\. From Demo to Production: Error Handling and Repair
 
-The weather agent works because the model always returns valid JSON arguments for a function with a single string parameter. Production agents are messier. The model can hallucinate parameter names, pass the wrong type, or call tools that do not exist. A production-grade agent loop needs a repair layer.
+The weather agent works because the model always returns valid JSON arguments for a function with a single string parameter. Production agents are messier. The model can hallucinate parameter names, pass the wrong type, or call tools that do not exist. A production-grade agent loop needs a repair layer. A repair layer matters more the more often the loop runs — [agents built for repeated work](/blog/how-to-build-ai-agents-for-repeated-work) live or die on what happens on run twenty, not run one.
 
 **Validate tool arguments before execution.** Treat the model's output as untrusted user input — because in an agent architecture, that is exactly what it is.
     
@@ -287,7 +287,7 @@ The critical insight: when you return an error message formatted as JSON, the mo
 
 ## Conclusion
 
-You just built a DeepSeek Agent. Not a chatbot — an agent. The difference is the loop: the model does not just answer your question, it decides what information it needs, requests it through tool calls, and uses the results to determine the next step. The loop pattern you implemented here — define tools, inspect tool calls, execute, feed back, repeat — is the same architecture that powers DeepSeek-TUI's coding agent and Reasonix's cache-first assistant.
+You just built a DeepSeek Agent. Not a chatbot — an agent. The difference is the loop: the model does not just answer your question, it decides what information it needs, requests it through tool calls, and uses the results to determine the next step. The loop pattern you implemented here — define tools, inspect tool calls, execute, feed back, repeat — is the same architecture that powers DeepSeek-TUI's coding agent and Reasonix's cache-first assistant. Once the loop clicks, it transfers — [what building a complete agent actually involves](/blog/how-to-build-an-ai-agent) stops being a mystery and becomes a checklist.
 
 The weather agent is a toy. But the pattern scales. Swap `get_weather` for `search_codebase`, `run_tests`, `query_database`, `read_file`, `write_file`, or `create_calendar_event` — and the same fifty-line loop becomes a coding agent, a data analysis agent, or a scheduling agent. The tool definitions change; the loop architecture does not.
 

@@ -21,7 +21,7 @@ The pitch is short: ​**your local AI agent writes the ​HTML** ​, you ship 
 
 html-anything is an open-source project from the [nexu-io team on GitHub](https://github.com/nexu-io/html-anything) — the same people behind Open Design, which pulled in tens of thousands of stars within weeks of launch. It's licensed under Apache-2.0, built in roughly three days with about 15,000 lines of code, and released in May 2026.
 
-The thesis behind it connects directly to what Thariq Shihipar argued in his [companion site on the unreasonable effectiveness of HTML](https://thariqs.github.io/html-effectiveness/): if your AI agent can produce rich, visual, interactive HTML instead of flat Markdown, the output becomes something people actually engage with. html-anything takes that argument and wraps a production workflow around it.
+The thesis behind it connects directly to what Thariq Shihipar argued in his [companion site on the unreasonable effectiveness of HTML](https://thariqs.github.io/html-effectiveness/): if your AI agent can produce rich, visual, interactive HTML instead of flat Markdown, the output becomes something people actually engage with. html-anything takes that argument and wraps a production workflow around it. The broader question underneath — [whether your AI output should be HTML or Markdown](/blog/html-vs-markdown-ai-output) — doesn't have a universal answer, and where you land on it decides whether infrastructure like this is essential or premature.
 
 Here's how I think about what it's trying to prove: the "agentic HTML editor" concept — agent does the writing, human does the reviewing and shipping — shouldn't require you to stitch together five different tools. One interface, templates included, export built in. That's the bet.
 

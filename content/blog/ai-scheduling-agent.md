@@ -99,9 +99,9 @@ Gen 4 changes the relationship between calendar and agent entirely. The calendar
 
 Floatboat is designed specifically for this generation: every calendar event becomes a trigger for a complete work pipeline, from pre-meeting briefs to deadline-driven drafts and post-meeting follow-ups. The work is initiated from the calendar event itself rather than from a separate prompt. In practice, each event can become a persistent workspace with files, run history, and model choice across frontier and open models. Events don't just hold time — they hold the work produced for and from that time.
 
-The architectural shift is from "AI that schedules" to "AI that operates." Gen 1–3 tools answer the question "when?" Gen 4 answers "what now?" — by reading your calendar rhythm and executing the work that rhythm implies.
+The architectural shift is from "AI that schedules" to "AI that operates" — [what makes a calendar agentic rather than just smart](/blog/what-is-agentic-calendar) comes down to whether it acts on your schedule or only tracks it. Gen 1–3 tools answer the question "when?" Gen 4 answers "what now?" — by reading your calendar rhythm and executing the work that rhythm implies.
 
-The jump from Gen 2 to Gen 3 isn't incremental — it's a category shift. Gen 1 and Gen 2 treat the calendar as a container for time. Gen 3 and Gen 4 treat it as a source of context and a trigger for action. If you're evaluating tools, the most important question isn't "how well does it schedule?" — it's "what does it do with the schedule once it's there?" That distinction separates time-savers from work-doers, and it explains why some solo operators are already quietly moving up the stack.
+The jump from Gen 2 to Gen 3 isn't incremental — it's a category shift. Gen 1 and Gen 2 treat the calendar as a container for time. Gen 3 and Gen 4 treat it as a source of context and a trigger for action. If you're evaluating tools, the most important question isn't "how well does it schedule?" — it's "what does it do with the schedule once it's there?" That distinction separates time-savers from work-doers — and [which scheduling assistants actually clear that bar](/blog/best-ai-scheduling-assistants) depends more on your use case than on any feature list. It also explains why some solo operators are already quietly moving up the stack.
 
 * * *
 

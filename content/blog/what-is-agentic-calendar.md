@@ -58,7 +58,7 @@ This definition places three demands on any system that claims the label. It mus
 
 ### 2.3 What an Agentic Calendar Is Not
 
-Category boundaries are as important as category definitions. An agentic calendar is not a smart scheduler. Smart schedulers optimize time-slot placement; they don't act on the content of those slots. Motion can tell you that Wednesday at 10am is the best time for deep work; it cannot gather the documents you'll need for that deep work session.
+Category boundaries are as important as category definitions. An agentic calendar is not a smart scheduler. Smart schedulers optimize time-slot placement; they don't act on the content of those slots. Motion can tell you that Wednesday at 10am is the best time for deep work; it cannot gather the documents you'll need for that deep work session. Where a tool falls on [whether it merely rearranges your schedule or executes the work inside it](/blog/best-ai-scheduling-assistant) is the cleanest single test of which generation it belongs to.
 
 An agentic calendar is not a chatbot attached to a calendar view. Opening a chat window and typing "summarize my client notes for the 3pm call" is reactive. The calendar didn't trigger anything — you did, using the calendar as a reference point. The difference is who initiates. In a chatbot model, you pull. In an agentic calendar model, the system pushes.
 

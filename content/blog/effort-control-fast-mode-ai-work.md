@@ -79,7 +79,7 @@ One thing to be careful about: when you ​[switch into fast mode mid-conversati
 
 ## The hidden cost: decision fatigue
 
-Token cost is the obvious cost. It's the one people write about. But for a one-person operation, the cost I've come to care about more is decision fatigue — the small, constant mental tax of choosing a setting for every task.
+Token cost is the obvious cost. It's the one people write about, though where that floor sits keeps moving — [DeepSeek V4's projected API pricing](/blog/deepseek-v4-api-solo-operator) would put extra-effort passes inside the budget of routine solo work. But for a one-person operation, the cost I've come to care about more is decision fatigue — the small, constant mental tax of choosing a setting for every task.
 
 If I have to pick an effort level for every prompt, I won't. I'll just default to high and pretend I'm being thoughtful. That's the trap.
 

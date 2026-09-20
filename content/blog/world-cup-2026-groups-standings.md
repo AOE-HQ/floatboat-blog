@@ -42,7 +42,7 @@ The 2026 format makes third place more important than in older 32-team tournamen
 
 > Table above per FIFA's official standings page.
 
-Mexico controlled Group A better than any host could reasonably script: three wins, no goals conceded, and a clean route into the knockouts. The decisive result was Mexico’s 1–0 win over South Korea, because it created separation before the final matchday and allowed Mexico to finish the group with a 3–0 statement against Czech Republic.
+Mexico controlled Group A better than any host could reasonably script: three wins, no goals conceded, and a clean route into the knockouts. Part of that edge was structural — as a host, Mexico played its entire group stage [inside its own host cities](/blog/where-is-world-cup-2026-host-cities), with no cross-border travel between matches. The decisive result was Mexico’s 1–0 win over South Korea, because it created separation before the final matchday and allowed Mexico to finish the group with a 3–0 statement against Czech Republic.
 
 South Africa’s 1–0 win over South Korea became the advancement match. It turned a crowded lower half of the table into a clear second-place finish and made Group A a good example of why final matchday discipline matters as much as star power.
 

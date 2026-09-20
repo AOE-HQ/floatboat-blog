@@ -77,7 +77,7 @@ But I want to be honest about the friction. You need a browser to view HTML file
 
 The question isn't which format is more powerful. It's which fits into your day. Right now, for me, it's both — just for different things.
 
-Platforms are already moving in this direction. Claude's [Artifacts feature](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) lets you generate and render HTML directly in the chat interface. OpenAI's [Canvas workspace](https://openai.com/index/introducing-canvas/) opened up side-by-side editing. Tools like `html-anything` convert agent output into standalone HTML artifacts. The infrastructure for richer AI output is showing up whether you specifically asked for it or not.
+Platforms are already moving in this direction. Claude's [Artifacts feature](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) lets you generate and render HTML directly in the chat interface. OpenAI's [Canvas workspace](https://openai.com/index/introducing-canvas/) opened up side-by-side editing. Tools like `html-anything` convert agent output into standalone HTML artifacts. The infrastructure for richer AI output is showing up whether you specifically asked for it or not. None of it requires hiring help, either — [whether an AI agent development service is worth it](/blog/ai-agent-development-services) becomes a live question only when the plumbing around those outputs outgrows you, not when you want better-looking artifacts.
 
 ![5.png](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
 

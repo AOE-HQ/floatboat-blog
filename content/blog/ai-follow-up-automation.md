@@ -88,7 +88,7 @@ This timing matters because it eliminates the decay window. Manual follow-up tha
 
 The workflow that most people use for meeting follow-up involves multiple tools and manual data transfer. Notes are in one place (a notebook, a Notion page, a Google Doc). Tasks are in another (Todoist, Linear, Asana). Communication happens in a third (Slack, email). Follow-up means reading the notes, extracting the action items, creating tasks in the task manager, and sending messages to the relevant people — all manually, across three or four different applications.
 
-AI follow-up automation collapses this into a single automated flow. The meeting ends. The system processes the content. Task items are created in the connected task manager. Follow-up messages are drafted in the connected communication tool. The human reviews and sends — one approval step instead of six manual steps. The copy-paste disappears. The context-switching disappears. What remains is the judgment work: is this action item correct, is this follow-up message appropriate, does anything need to be added. The assembly work — the part that consumes time without requiring thought — is handled by the system.
+AI follow-up automation collapses this into a single automated flow. The meeting ends. The system processes the content. Task items are created in the connected task manager. Follow-up messages are drafted in the connected communication tool — and [how a meeting becomes a follow-up email worth sending](/blog/ai-follow-up-email-opus-4-8) is a pipeline of its own, not a mail-merge. The human reviews and sends — one approval step instead of six manual steps. The copy-paste disappears. The context-switching disappears. What remains is the judgment work: is this action item correct, is this follow-up message appropriate, does anything need to be added. The assembly work — the part that consumes time without requiring thought — is handled by the system.
 
 * * *
 
@@ -96,7 +96,7 @@ AI follow-up automation collapses this into a single automated flow. The meeting
 
 ### 4.1 How the Pre-Meeting and Post-Meeting Pipelines Work Together
 
-The pre-meeting pipeline and the post-meeting pipeline are designed to connect. Prep gathers context before the meeting. The meeting happens. Follow-up captures outcomes after. Those outcomes become context for the next prep cycle. The calendar drives the entire sequence.
+The pre-meeting pipeline and the post-meeting pipeline are designed to connect. Prep gathers context before the meeting — [the pre-meeting pipeline that feeds this side of the loop](/blog/ai-meeting-preparation) runs through context gathering, document surfacing, and brief generation before the call even starts. The meeting happens. Follow-up captures outcomes after. Those outcomes become context for the next prep cycle. The calendar drives the entire sequence.
 
 Consider a weekly client call. Tuesday at 2pm: the prep pipeline gathers last week's notes, the current project status, and any new emails from the client. The call happens. The follow-up pipeline extracts decisions and action items. The following Tuesday at 1:30pm: the prep pipeline surfaces the unfinished action items from last week's follow-up, the decisions that were made, and the updated project status. The loop runs continuously, with each meeting feeding the next.
 

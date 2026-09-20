@@ -21,7 +21,7 @@ Before anything else, be honest about where you actually are.
 
 **Hire an AI automation agency if:** You have a concrete process that's costing you measurable time or money, your team has no capacity to build or maintain the solution internally, and you're willing to invest in proper scoping and handover — not just implementation.
 
-**DIY if:** Your workflows are well-defined, your team has someone who can commit real hours to building and testing, and the use case is narrow enough to start with a no-code tool or a well-designed prompt. A lot of what agencies sell for $15,000+ can be done with n8n or Make in a weekend, if you know what you're building.
+**DIY if:** Your workflows are well-defined, your team has someone who can commit real hours to building and testing, and the use case is narrow enough to start with a no-code tool or a well-designed prompt. A lot of what agencies sell for $15,000+ can be done with n8n or Make in a weekend, if you know what you're building. And knowing that starts with knowing the market: [how AI automation agency pricing actually breaks down](/blog/ai-automation-agency-pricing) is the quickest way to tell a fair quote from a padded one.
 
 **Wait if:** You haven't mapped your current processes well enough to know what "automated" would even look like. **Bringing in an agency before you understand your own workflows is how you end up paying someone else to figure out problems you should have solved yourself.** The discovery phase should sharpen a picture you already have, not paint it from scratch.
 

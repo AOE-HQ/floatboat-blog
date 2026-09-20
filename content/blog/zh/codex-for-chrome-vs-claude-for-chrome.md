@@ -57,7 +57,7 @@ Claude 的模式更偏**对话式**。你是**和**它一起处理屏幕上的�
 
   * **DevTools 集成。**Codex 能直接操作 Chrome DevTools——测试网页应用、调试前端问题、验证浏览器行为都靠它。Claude 的侧边栏不是为这个设计的。
 
-  * **Codex 生态集成。**如果你已经在用 Codex CLI 或 IDE 扩展，这个 Chrome 插件只是给既有工作流加上浏览器上下文。它不是独立工具——是一套更大系统里的一块。
+  * **Codex 生态集成。**如果你已经在用 Codex CLI 或 IDE 扩展，这个 Chrome 插件只是给既有工作流加上浏览器上下文。它不是独立工具——是一套更大系统里的一块；往这套系统上挂的面越多，[oh-my-codex 与 Superpowers](/zh/blog/oh-my-codex-vs-superpowers)那个问题——并行编排还是流程纪律——就越快从理论变成现实。
 
 ### Claude 的优势
 

@@ -146,7 +146,7 @@ The hard part is usually exception handling — expired logins, CAPTCHAs, and so
 
 ### 4.2 Cloud Computers and Remote Task Dispatch
 
-These suit scheduled collection, batch processing, and workflows that need to finish even after you shut down your local machine. **Private data and local software run locally; long-running and compute-intensive work runs in the cloud.** Subscription tiers and quotas are governed by the official pricing page and whatever the client shows.
+These suit scheduled collection, batch processing, and workflows that need to finish even after you shut down your local machine. **Private data and local software run locally; long-running and compute-intensive work runs in the cloud.** The same "cloud computer per teammate" architecture is what xAI leans on in [Grok Bot](/blog/grok-bot), where each AI teammate gets its own cloud machine and signs into your apps to keep working around the clock — except Grok Bot lives entirely in the cloud, while Doubao Work splits the load between a local virtual desktop and cloud machines. Subscription tiers and quotas are governed by the official pricing page and whatever the client shows.
 
 ### 4.3 Skills, Connectors, and Work Teammates
 
@@ -154,7 +154,7 @@ The team edition emphasizes four capabilities: **rich work delivery** (from docu
 
 ### 4.4 Multimodal Delivery
 
-Built on Seedream and Seedance, Doubao Work can generate Word documents, Excel spreadsheets, PowerPoint decks, images, videos, and data-bearing web pages within a single task. When you're signed in to Feishu, deliverables can land directly as Feishu cloud documents.
+Built on Seedream and Seedance, Doubao Work can generate Word documents, Excel spreadsheets, PowerPoint decks, images, videos, and data-bearing web pages within a single task. That finished-artifact ambition is shared by Western all-in-one agents like [Genspark's Super Agent](/blog/genspark-super-agent-explained), which is built around structured research and page outputs rather than chat replies — though Genspark has no IM or calendar foundation underneath. When you're signed in to Feishu, deliverables can land directly as Feishu cloud documents.
 
 ## 5. Competitive Landscape: Doubao Work vs WorkBuddy vs Qwen Office vs Floatboat
 

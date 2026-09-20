@@ -125,7 +125,7 @@ If your task is well-defined (summarize emails, draft content from a template, s
 
 The no-build options are more capable than they used to be. An honest overview:
 
-**ChatGPT​ with custom instructions and actions** — handles a lot of simple agent-like tasks. Surprisingly good for document-heavy workflows. Limitation: you're inside OpenAI's ecosystem.
+**ChatGPT​ with custom instructions and actions** — handles a lot of simple agent-like tasks. Surprisingly good for document-heavy workflows. Limitation: you're inside OpenAI's ecosystem. If that's the route you take anyway, [building a real agent inside ChatGPT](/blog/how-to-build-an-ai-agent-with-chatgpt) is mostly an exercise in writing clearer instructions, not in tooling.
 
 **n8n** — the most flexible workflow tool I've come across that doesn't require deep coding. Works well for connecting many tools into an automated chain. It has a learning curve but it's learnable. [Codecademy's breakdown of agent frameworks](https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025) gives a clear comparison if you want to evaluate these options side by side.
 

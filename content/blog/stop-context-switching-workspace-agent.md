@@ -59,7 +59,7 @@ I built three of these last year. I've used one of them since. The other two wer
 
 ## What actually reduces context switching
 
-Okay, so here's where I land after a lot of trial and error. The thing that actually moves the needle isn't a "better" tool. It's a different _shape_ of tool. The category I keep coming back to is what people are starting to call a **workspace agent** — an AI that doesn't sit in its own tab, but lives where your work already is.
+Okay, so here's where I land after a lot of trial and error. The thing that actually moves the needle isn't a "better" tool. It's a different _shape_ of tool. The category I keep coming back to is what people are starting to call a **workspace agent** — an AI that doesn't sit in its own tab, but lives where your work already is. And the case for them is sharpest in [a one-person operation](/blog/workspace-agents-for-solo-operators), where a dropped thread has no one to catch it but you.
 
 ### One environment, not five tabs
 

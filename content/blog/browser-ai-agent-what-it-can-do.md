@@ -95,7 +95,7 @@ Neither agent handles CAPTCHAs. Both stop and ask you to solve it manually. Site
 
 Sending a payment. Deleting records. Submitting a legal filing. Approving a contract change. **If the cost of an error is high, don't let a browser agent do it unsupervised.** Both tools have permission modes that require confirmation before taking action, and you should use them for anything where a mistake would be painful to reverse.
 
-Anthropic published data from their prompt injection testing: even with defenses active, [11.2% of adversarial attacks still succeeded](https://www.anthropic.com/research/prompt-injection-defenses). OpenAI has acknowledged that prompt injection in browser agents is "unlikely to ever be fully solved." These aren't theoretical risks — researchers have found real [indirect prompt injection payloads in the wild](https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/), embedded on ordinary websites targeting AI agents that browse them. That doesn't mean you shouldn't use browser agents. It means you should keep high-stakes actions behind a manual confirmation.
+Anthropic published data from their prompt injection testing: even with defenses active, [11.2% of adversarial attacks still succeeded](https://www.anthropic.com/research/prompt-injection-defenses). OpenAI has acknowledged that prompt injection in browser agents is "unlikely to ever be fully solved." These aren't theoretical risks — researchers have found real [indirect prompt injection payloads in the wild](https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/), embedded on ordinary websites targeting AI agents that browse them. That doesn't mean you shouldn't use browser agents. It means you should keep high-stakes actions behind a manual confirmation, and work through [the security questions that separate careful use from blind trust](/blog/browser-ai-agent-security-questions) before you hand one a login you care about.
 
 ![what5.png](/blog/images/browser-ai-agent-what-it-can-do/1778482792348-c069ef6f-58c9-4820-bc61-f1478881ded4.webp)
 
@@ -113,7 +113,7 @@ I keep coming back to this framework. It's not fancy, but it stops me from autom
 
 ## Where Browser Agents Fit in a Solo Operator's Stack
 
-Browser agents aren't a replacement for your existing tools. They're a layer on top — worth adding only when you have clear, repeated browser workflows that eat your time.
+Browser agents aren't a replacement for your existing tools. They're a layer on top — worth adding only when you have clear, repeated browser workflows that eat your time. When the bottleneck outgrows single browser tasks and becomes running whole parts of the business alone, [Claude's managed agents](/blog/claude-managed-agents-one-person-company) sit further along the same delegation spectrum.
 
 **Your core tools** (CRM, email, docs, project management) stay the same. The **browser agent** sits on top as an automation layer for cross-tool tasks — the repetitive admin, the data gathering, the form filling that connects your core tools together.
 

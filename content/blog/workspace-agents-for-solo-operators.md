@@ -21,7 +21,7 @@ I've been thinking about that conversation since. Because the more I look at how
 
 ### Doing the work of sales, ops, content, and support at once
 
-A one-person company isn't a small version of a real company. It's a different shape. In a five-person team, you have specialization — the content person does content, the ops person does ops, handoffs are formal. In a one-person company, all of that lives in one head, and the switching cost between roles is the real bottleneck. You don't lose time _doing_ the work. You lose it transitioning between modes.
+A one-person company isn't a small version of a real company. It's a different shape. In a five-person team, you have specialization — the content person does content, the ops person does ops, handoffs are formal. In a one-person company, all of that lives in one head, and the switching cost between roles is the real bottleneck. You don't lose time _doing_ the work. You lose it transitioning between modes — and [how much context switching actually drains you](/blog/stop-context-switching-workspace-agent) typically exceeds the cost of any single task on the list.
 
 The numbers around this category are getting hard to ignore. [Solo-founded startups jumped from 23.7% in 2019 to 36.3% by mid-2025](https://entrepreneurloop.com/ai-tools-to-scale-solo-business/), and most of the new businesses registered in the U.S. in recent years are non-employer entities. So this isn't a fringe pattern anymore — it's how a lot of work is structured now. The tooling, though, is still mostly designed for teams.
 

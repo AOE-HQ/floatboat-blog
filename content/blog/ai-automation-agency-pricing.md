@@ -85,7 +85,7 @@ I'd ask about all of this before signing anything.
 
 If you're running a small team and you've identified a specific, repetitive process that eats hours every week — lead qualification, content repurposing, customer data entry, report generation — an agency can build something in a few weeks that would take you months to figure out on your own.
 
-It also makes sense when ​**the cost of the automation is clearly less than the cost of the manual work it replaces** ​. One source I read put it this way: a good agency pitches the price as a function of your ROI, not their hours. That framing makes the spend easier to evaluate.
+It also makes sense when ​**the cost of the automation is clearly less than the cost of the manual work it replaces** ​. One source I read put it this way: a good agency pitches the price as a function of your ROI, not their hours. That framing makes the spend easier to evaluate. Price is still only half the evaluation — [whether you need an agency at all](/blog/ai-automation-agency-do-you-need-one) is the other half, and it turns on scope, ownership, and what your team can maintain.
 
 And if your team doesn't have someone who's comfortable building workflows in tools like [n8n](https://n8n.io/) or Make, the agency is essentially buying you time and expertise you don't have in-house.
 

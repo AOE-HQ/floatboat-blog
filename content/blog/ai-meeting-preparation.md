@@ -72,9 +72,9 @@ The output isn't meant to be read word-for-word during the meeting. It's meant t
 
 ### 2.4 Stage 4: Action Item Carry-Over — What Was Left from Last Time
 
-The final stage of prep is the bridge from the last meeting to this one. What action items were assigned last time? Which ones have been completed? Which ones are still open — and does their continued open status need to be addressed in this conversation?
+The final stage of prep is the bridge from the last meeting to this one. What action items were assigned last time? Which ones have been completed? Which ones are still open — and does their continued open status need to be addressed in this conversation? The source of those answers is [the follow-up pipeline that runs after the last call ends](/blog/ai-follow-up-automation) — Stage 4 can only carry over what that pipeline captured.
 
-This stage prevents the most common meeting failure mode: the action item that everyone agreed to, nobody did, and nobody remembered to bring up next time. By surfacing unfinished items as part of the prep brief, the system makes it impossible to forget them — they're on the page you review before walking in. The carry-over isn't a task manager. It's not tracking due dates and sending reminders. It's connecting the output of the last meeting to the input of this one, closing the loop that manual processes leave open.
+This stage prevents the most common meeting failure mode: the action item that everyone agreed to, nobody did, and nobody remembered to bring up next time. By surfacing unfinished items as part of the prep brief, the system makes it impossible to forget them — they're on the page you review before walking in. The carry-over isn't a task manager. It's not tracking due dates and sending reminders. It's connecting the output of the last meeting to the input of this one, closing the loop that manual processes leave open — and the output side is [the post-meeting follow-up email](/blog/ai-follow-up-email-opus-4-8) that pins down decisions and next steps before they fade.
 
 * * *
 

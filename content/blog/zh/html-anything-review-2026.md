@@ -21,7 +21,7 @@ draft: false
 
 html-anything 是 [GitHub 上的 nexu-io 团队](https://github.com/nexu-io/html-anything)的开源项目——也就是 Open Design 背后的同一批人，那个项目上线几周就揽了几万颗星。它采用 Apache-2.0 许可，大约三天内写成、约 1.5 万行代码，2026 年 5 月发布。
 
-它的论点直接连着 Thariq Shihipar 在[那个讲「HTML 的惊人有效性」的配套网站](https://thariqs.github.io/html-effectiveness/)里主张的东西：如果你的 AI agent 能产出丰富、可视化、可交互的 HTML，而不是扁平的 Markdown，那输出就成了人们真的会去互动的东西。html-anything 把这个论点接过来，给它裹上一层生产工作流。
+它的论点直接连着 Thariq Shihipar 在[那个讲「HTML 的惊人有效性」的配套网站](https://thariqs.github.io/html-effectiveness/)里主张的东西：如果你的 AI agent 能产出丰富、可视化、可交互的 HTML，而不是扁平的 Markdown，那输出就成了人们真的会去互动的东西。html-anything 把这个论点接过来，给它裹上一层生产工作流。而它脚下那个更大的问题——[AI 输出到底该用 HTML 还是 Markdown](/zh/blog/html-vs-markdown-ai-output)——并没有放之四海皆准的答案；你落在哪一边，决定了这类基础设施对你是必需品，还是过早优化。
 
 我是这样理解它想证明的东西的：「Agentic HTML 编辑器」这个概念——agent 负责写、人负责复核和发布——不应该要求你自己东拼西凑五六个工具。一个界面、模板内置、导出齐全。这就是它的赌注。
 

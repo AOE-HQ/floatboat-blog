@@ -69,7 +69,7 @@ This is a structural argument, not just a political one. And the underlying math
 
 ### Where Solo Operators Sit in This Debate
 
-Honestly? Somewhat awkwardly. Solo operators using AI tools are part of the productivity story, but we're not the ones displacing teams of workers. We're one person choosing to use AI instead of hiring — which is a different calculation than a company replacing 50 employees with automation.
+Honestly? Somewhat awkwardly. Solo operators using AI tools are part of the productivity story, but we're not the ones displacing teams of workers. We're one person choosing to use AI instead of hiring — which is a different calculation than a company replacing 50 employees with automation. That calculation — trading headcount for leverage on purpose — is [how a one-person business scales without hiring](/blog/scale-one-person-business-without-hiring), and it works better as a strategy than as an accident.
 
 I don't have a clean answer here. I use AI tools because they make my work better and more manageable. Whether that's creating economic harm at a systemic level is a question above my pay grade. What I can say: **the​ policy conversation ​** ​**isn't really about people like us. It's about large-scale automation in organizations.** We're mostly bystanders in that debate, even if we're using the same underlying tools.
 
@@ -83,7 +83,7 @@ The four-day work week conversation is really a conversation about sustainable o
 
 That reorganization piece is exactly where AI tools can help — and where most people underuse them. It's not about replacing work. It's about changing which tasks need your brain and which ones can run on autopilot.
 
-For me, that's meant building workflows instead of just using AI for one-off tasks. The difference is real. A prompt gives you an output once. A workflow gives you the same quality output every time, without re-doing the setup.
+For me, that's meant building workflows instead of just using AI for one-off tasks. The difference is real. A prompt gives you an output once. A workflow gives you the same quality output every time, without re-doing the setup. The catch is that generic AI setups rarely get you there on their own — [an AI workflow only works when it fits how you actually work](/blog/ai-workflow-for-solo-founders), otherwise it becomes one more thing to maintain.
 
 ### Where AI Amplification Breaks Down
 

@@ -33,7 +33,7 @@ I tracked this for a week. Every time I opened an AI tool, I logged how many min
 
 The number: **roughly 8 to 12 minutes per session.** That doesn't sound terrible until you realize I open AI tools six to eight times a day. That's over an hour daily, just getting the AI back to where it was yesterday.
 
-The frustrating part is that this time doesn't produce anything. No output, no progress — just re-establishing a baseline the AI should already have. For a solo founder, that hour is the difference between shipping something and pushing it to tomorrow.
+The frustrating part is that this time doesn't produce anything. No output, no progress — just re-establishing a baseline the AI should already have. For a solo founder, that hour is the difference between shipping something and pushing it to tomorrow. And the stopwatch understates it — [what actually gets lost when the AI resets each session](/blog/why-ai-forgets-every-session) is rarely trivia; it's the decisions and standards you'd already settled.
 
 ![22.PNG](/blog/images/why-ai-forgets-between-sessions/1775794270856-268c9e7f-9d36-424d-8994-a5f030624566.webp)
 

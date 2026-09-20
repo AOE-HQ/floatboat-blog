@@ -120,7 +120,7 @@ Operant 是一个 **MIT 许可、可自托管**的多人 Agent 平台，第三�
 
 **Slack AI（只读层）。**保留 Slack 原生的摘要与搜索；只在**执行**要紧的频道里，才叠加 Tag 或替代品。
 
-**Claude Cowork（桌面批处理）。**个人知识工作者仍然通过 Cowork 委派本地文件夹里的活；Tag 取代不了这一界面。参见 what is Claude Cowork。
+**Claude Cowork（桌面批处理）。**个人知识工作者仍然通过 Cowork 委派本地文件夹里的活；Tag 取代不了这一界面。参见 what is Claude Cowork。而一个人对着终端写代码又是另一种工作：[编程 Agent](/zh/blog/best-claude-code-alternatives)接的是仓库委派，频道根本不在循环里——所以它们从来不同 Tag 抢活。
 
 ## 5\. 如何根据本榜做选择
 
@@ -138,7 +138,7 @@ Operant 是一个 **MIT 许可、可自托管**的多人 Agent 平台，第三�
 
 ## 6\. AI Teammate 排行榜接下来会怎么变
 
-三个趋势会让这些榜单在 2026–2027 持续波动。**平台捆绑**：Slackbot、Teams 里的 Copilot、Claude Tag 都会在各自的主流聊天里抢"Teammate"语义——买家要比的是工作形态的贴合度，不是标签页的名字。**Agent-native 网络**：FloatIM 这一类的产品正在动摇"Agent 必须活在以人为本的 IM 里"这一前提。**治理即产品**：Operant 与 Junior 代表了 **自主性**（Tag 的 Ambient）与 **归因/审批**之间的分野——企业采购将被迫做显式选择，而不是被默认滑块牵着走。本榜同样默认 Tag 不是"带 Slack 通知的 Claude Code"；产品形态之别——任务时域、成本与权限——参见 Claude Code vs Cowork vs Tag。
+三个趋势会让这些榜单在 2026–2027 持续波动。**平台捆绑**：Slackbot、Teams 里的 Copilot、Claude Tag 都会在各自的主流聊天里抢"Teammate"语义——买家要比的是工作形态的贴合度，不是标签页的名字。**Agent-native 网络**：FloatIM 这一类的产品正在动摇"Agent 必须活在以人为本的 IM 里"这一前提。**治理即产品**：Operant 与 Junior 代表了 **自主性**（Tag 的 Ambient）与 **归因/审批**之间的分野——企业采购将被迫做显式选择，而不是被默认滑块牵着走。本榜同样默认 Tag 不是"带 Slack 通知的 Claude Code"——产品形态之别，正是[任务时域、成本与权限这三条把三种 Claude 形态分开的界线](/zh/blog/claude-code-vs-cowork-vs-tag)。
 
 榜单给的奖励是清晰：先界定"工作在哪个频道或网络里公开可见"，再梳理治理要求，最后从这份编号名单里选——而不是从某个泛泛的 AI 目录里谁排第一就选谁。
 

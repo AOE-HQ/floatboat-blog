@@ -31,7 +31,7 @@ draft: false
 
 工作区 Agent 押注的是另一件事：**AI 不该是一场你造访的对话——它该是一个住在你文件、工具与标签页旁边的员工。**不必把文档复制粘贴进聊天框，Agent 自己读文档；不必描述某个浏览器标签页，Agent 直接看到它；不必一次只来一轮，它跑的是一个循环。
 
-Anthropic 工程团队对 [Agent 有一个干净的定义](https://www.anthropic.com/research/building-effective-agents)，我时常会引用：Agent 是这样一种系统——LLM 动态地主导自己的流程与工具使用，保持对「如何完成任务」的控制；与之相对的是 workflow（工作流），其中路径是写死的。这个区别比营销话术意识到的更重要。
+Anthropic 工程团队对 [Agent 有一个干净的定义](https://www.anthropic.com/research/building-effective-agents)，我时常会引用：Agent 是这样一种系统——LLM 动态地主导自己的流程与工具使用，保持对「如何完成任务」的控制；与之相对的是 workflow（工作流），其中路径是写死的。这个区别比营销话术意识到的更重要。也正因如此，[工作区 Agent 和工作流搭建器](/zh/blog/workspace-agents-vs-workflow-builders) 总被混为一谈：两者都让 AI 进入工作本身，但工作区 Agent 是边走边决定路径，工作流搭建器则是在任何东西跑起来之前就把路径钉死。
 
 等一下——这一部分值得停下来细想。聊天助手**_回应_**；工作区 Agent**_运作_**。[IBM 对同一分界用了稍不同的框架](https://www.ibm.com/think/topics/ai-agents-vs-ai-assistants)：助手是给你提出待批准的行动建议；Agent 则借助外部工具推理、决策并行动。同样的意思，不同的说法。
 

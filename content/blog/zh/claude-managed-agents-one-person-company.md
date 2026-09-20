@@ -21,13 +21,13 @@ draft: false
 
 ### 它与常规 Claude 用法的区别
 
-大多数人用 Claude 的方式和使用聊天界面一样：输入点什么，Claude 回答，复制你要的，走人。对话结束，交互就结束。没有持久状态，没有昨天做过什么的记忆，也不能在你没盯着的时候跑点什么。
+大多数人用 Claude 的方式和使用聊天界面一样：输入点什么，Claude 回答，复制你要的，走人。对话结束，交互就结束。没有持久状态，没有昨天做过什么的记忆，也不能在你没盯着的时候跑点什么。哪怕 Claude 已经住进了你现有的工具里——比如 [Claude Tag 在 Slack 频道里当共享队友](/zh/blog/what-is-claude-tag)——那也仍是被动响应：在频道里被叫到才动，动完接着等，而不是无人监督地连跑几小时。
 
 **Claude Managed Agents 是本质不同的另一层。**它是 Anthropic 提供的托管基础设施服务，负责 AI Agent 的执行环境——沙箱、长时会话、范围受限的权限、工具执行、可观测性——[2026 年 4 月 8 日公开 beta 上线](https://medium.com/@unicodeveloper/claude-managed-agents-what-it-actually-offers-the-honest-pros-and-cons-and-how-to-run-agents-52369e5cff14)。
 
 说人话：不用你发 prompt 然后等 Claude 回复，而是你定义一个任务、设好护栏，Agent 自己去跑——可能一跑几小时，全程不需要你坐在旁边。支撑这一切的基础设施（容器、会话状态、错误恢复）由 Anthropic 负责，而不是你。
 
-这才是真正的区别。它无关"回答更聪明"，而在于**由谁来管理执行环境**。
+这才是真正的区别。它无关"回答更聪明"，而在于**由谁来管理执行环境**。想通这一点后，[什么才算一个托管 Agent](/zh/blog/what-are-claude-managed-agents) 就不再是营销标签，而成了一个具体问题：你的 Agent 到底跑在谁的运行时里。
 
 ### "托管"在实践中意味着什么
 
@@ -65,7 +65,7 @@ Claude Managed Agents 允许用户用自然语言描述 Agent，或通过 YAML �
 
 另一条相关但独立的线索：Claude 的 computer use 能力在 2026 年初大幅扩展。到 2026 年 3 月，Anthropic 大约在 12 周内发布了 12 项主要功能——包括随 Sonnet 4.6 更新增强的 computer use 能力，以及面向 Pro 与 Max 用户的持久 Agent 线程。
 
-Computer use 意味着 Claude 能控制桌面：打开应用、点击、打字、读屏。这和 Managed Agents（跑在沙箱化的云端环境里）不是一回事，但两者同属同一个方向性推进：让 Agent 能替你把真实的多步工作流完整跑完。
+Computer use 意味着 Claude 能控制桌面：打开应用、点击、打字、读屏。这和 Managed Agents（跑在沙箱化的云端环境里）不是一回事，但两者同属同一个方向性推进：让 Agent 能替你把真实的多步工作流完整跑完——[浏览器 AI Agent](/zh/blog/browser-ai-agent-what-it-can-do) 也在同一条推进线上，只是范围收在你已登录的那些标签页里。
 
 对 Windows 用户来说，这尤其打开了此前只有熟悉脚本的人才能用的自动化路径。
 

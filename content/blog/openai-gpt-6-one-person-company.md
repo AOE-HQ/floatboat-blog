@@ -111,4 +111,4 @@ None of this requires GPT-6. All of it makes GPT-6 (or Claude, or whatever) imme
 
 The thing I wish I'd done two years ago, before GPT-4 even: spent the weekend writing down the questions I already knew the answers to. Every assistant has been easier to work with since I started doing that.
 
-Anyway — that's where I am on this right now. I'll update when the model actually ships.
+Anyway — that's where I am on this right now. I'll update when the model actually ships. It did: **[GPT-6 Astra](/blog/gpt-6-astra)**, and the headline for solo founders turned out to be long-horizon computer use and per-task cost — which makes every item in the list above more valuable, not less.

@@ -43,7 +43,7 @@ Personal use at work isn't about using AI at home. It's about using it **as an i
 
 This matters because:
 
-  * **Context lives with you.** You're not sharing prompts with a team. You need the tool to hold your specific context — your clients, your style, your recurring tasks — not just respond to generic requests.
+  * **Context lives with you.** You're not sharing prompts with a team. You need the tool to hold your specific context — your clients, your style, your recurring tasks — not just respond to generic requests. How much a tool actually retains between sessions is also where [the line between an AI assistant and an AI agent](/blog/ai-agent-vs-ai-assistant) gets drawn, so it's worth knowing which side you're shopping on before comparing plans.
 
   * **You're not a developer.** The useful question isn't what's possible through the API. It's what you can set up in a web interface or desktop app in under an hour.
 

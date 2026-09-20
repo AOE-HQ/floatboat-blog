@@ -93,7 +93,7 @@ If you're a solo operator — content, strategy, delivery, all of it — here's 
 
   3. **Does it need visual structure?** If it's a flat list, outline, or paragraph → Markdown is fine. If it needs tabs, color coding, navigation, or side-by-side comparison → HTML.
 
-  4. **Will it be reused or templated?** If you produce the same type of output repeatedly and want visual consistency, tools like [Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) or local-first agentic HTML editors like html-anything can template the process. One-off requests don't need that infrastructure.
+  4. **Will it be reused or templated?** If you produce the same type of output repeatedly and want visual consistency, tools like [Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) or local-first agentic HTML editors like [html-anything](/blog/html-anything-review-2026) can template the process. One-off requests don't need that infrastructure.
 
 The default I've landed on: ​**draft and iterate in ​Markdown** ​, then convert or refine to ​HTML**​** ​ when delivering to humans. This hybrid workflow means I get Markdown's editability during the thinking phase and HTML's readability for the shipping phase. I've been using this for a few weeks now and it feels right — though I'll know more once I've hit more edge cases.
 

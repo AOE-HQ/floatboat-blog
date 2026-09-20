@@ -69,7 +69,7 @@ Here's a truth the AI industry doesn't advertise enough: ​**most repeated work
 
 **A no-code builder** — If your task requires more back-and-forth reasoning (e.g., "research this company and summarize what matters for a sales call"), a builder tool with memory and tool access is worth considering. These are drag-and-drop environments where the agent can call APIs, search the web, or pull from a knowledge base.
 
-**A coded workspace agent** — Only reach here if the above options fail. This means writing actual logic, managing state, and handling errors yourself. It's more powerful, but the maintenance cost is real.
+**A coded workspace agent** — Only reach here if the above options fail. This means writing actual logic, managing state, and handling errors yourself. It's more powerful, but the maintenance cost is real. Once you're writing code anyway, the next fork is [how much orchestration to hand-roll versus adopting a workspace that already runs it](/blog/dynamic-workflows-build-or-use-workspace) — a choice worth pricing before the first line, not after.
 
 The rule I live by: ​**don't build what a prompt can do** ​. Don't code what a builder can handle. Save your engineering effort for the 10% of tasks that genuinely require it.
 

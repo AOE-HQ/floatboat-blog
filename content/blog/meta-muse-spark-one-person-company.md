@@ -81,7 +81,7 @@ Not a bad weekend. Just not the productivity win it felt like.
 
 ### The Real Productivity Driver Behind Model Upgrades
 
-I've thought about this a lot since. My current take: **for a one-person business, the marginal gain from a model upgrade is much smaller than the gain from refining your ​workflow** ​**​ itself.**
+I've thought about this a lot since. My current take: **for a one-person business, the marginal gain from a model upgrade is much smaller than the gain from refining your ​workflow** ​**​ itself.** The exception is when a model opens an output you couldn't produce at all before — [solo manga chapters with legible text](/blog/gpt-image-2-manga-comic-workflow) are the clearest recent case — because no amount of prompt refinement gets you there on the old model.
 
 [TechCrunch's Muse Spark coverage](https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/) quoted Zuckerberg saying Meta wants to build "agents that do things for you." That sounds like marketing copy, but it actually points at the real problem: **what changes your output isn't the model getting smarter — it's whether you've connected it to the specific work you actually do.**
 
@@ -99,7 +99,7 @@ If you're running a solo business and you find yourself thinking about switching
 
 I've watched myself and a few other solo founders do this. **The anxiety to switch usually isn't because the current model isn't good enough. It's because there's friction somewhere in the ​workflow** ​**​ that we haven't named.**
 
-Switching gives you the feeling of "I'm doing something." But the underlying friction stays. Next model release, the cycle starts again.
+Switching gives you the feeling of "I'm doing something." But the underlying friction stays. Next model release, the cycle starts again — which is why [the preparation that actually pays off when GPT-6 arrives](/blog/openai-gpt-6-one-person-company) is portable workflow scaffolding, not another round of model comparisons.
 
 ### What Actually Changes When You Upgrade
 

@@ -108,7 +108,7 @@ The remaining eight Round of 32 matches pit group runners-up against each other,
 
 The bracket narrows quickly after the Round of 32. From 16 teams to 8 to 4 to 2 — across 15 knockout matches in total. The champions will play 8 matches: 3 group-stage and 5 knockout matches, one more than any previous World Cup winner.
 
-The venue progression creates distinct stages of the knockout experience. The Round of 16 is the most geographically distributed knockout round, with matches across eight cities spanning all three host nations. By the quarterfinals, the tournament consolidates entirely into US venues. The semifinal venues — AT&T Stadium in Dallas and Mercedes-Benz Stadium in Atlanta — were selected for their combination of capacity (80,000 and 71,000, respectively) and climate-controlled interiors, guaranteeing consistent match conditions for the tournament's penultimate stage. The final at MetLife Stadium (82,500 capacity) in the New York metropolitan area anchors the tournament in the largest media market in the United States.
+The venue progression creates distinct stages of the knockout experience. The Round of 16 is the most geographically distributed knockout round, with matches across [eight host cities spanning all three host nations](/blog/where-is-world-cup-2026-host-cities). By the quarterfinals, the tournament consolidates entirely into US venues. The semifinal venues — AT&T Stadium in Dallas and Mercedes-Benz Stadium in Atlanta — were selected for their combination of capacity (80,000 and 71,000, respectively) and climate-controlled interiors, guaranteeing consistent match conditions for the tournament's penultimate stage. The final at MetLife Stadium (82,500 capacity) in the New York metropolitan area anchors the tournament in the largest media market in the United States.
 
 For fans planning which knockout matches to attend or watch, the venue sequence matters. The quarterfinals are spread across four different regions (Northeast, West Coast, Southeast, Midwest) over three days, meaning no single city hosts consecutive knockout rounds until the semifinals. If you are traveling to attend knockout matches, Dallas and Atlanta — hosting the semifinals on consecutive days — are the natural hub for the tournament's final week.
 
@@ -168,7 +168,7 @@ The United States Men's National Team plays in Group D, alongside Paraguay, Aust
 
 
 
-The USMNT's path out of the group depends heavily on the third match against Turkey — a technically skilled European side that won UEFA Playoff C. If the US wins the group, the Round of 32 path runs through Los Angeles or Seattle, keeping the team on the West Coast. Finishing second or qualifying as a third-place team sends the team to a different venue path — possibly Dallas, Atlanta, or further east.
+The USMNT's path out of the group depends heavily on the third match against Turkey — a technically skilled European side that won UEFA Playoff C. If the US wins the group, the Round of 32 path runs through Los Angeles or Seattle, keeping the team on the West Coast. Finishing second or qualifying as a third-place team sends the team to a different venue path — possibly Dallas, Atlanta, or further east. Whichever path it takes, [every USMNT kickoff time and reminder](/blog/world-cup-2026-schedule-usa) is worth setting before the group stage starts.
 
 **Five must-watch matches beyond USA games** :
 

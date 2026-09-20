@@ -95,7 +95,7 @@ Claude for Chrome 待在浏览器侧边栏里，能操作已开在 Chrome 标签
 
 发起一笔付款；删除记录；提交法律文件；批准合同变更。**如果一次错误的代价很高，就不要让浏览器 Agent 无人监督地做。**两个工具都有行动前需确认的权限模式，凡是错了就难以挽回的事，你都该启用它们。
 
-Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍有 11.2% 的对抗性攻击得逞](https://www.anthropic.com/research/prompt-injection-defenses)。OpenAI 也承认，浏览器 Agent 里的提示注入「几乎不可能被彻底解决」。这些不是理论风险——研究人员已经发现真实存在的[野生间接提示注入载荷](https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/)，它们被埋在普通网站上，专等会浏览这些页面的 AI Agent 上钩。这不代表你不该用浏览器 Agent；而是说，高风险动作应当始终留在手动确认这道关卡后面。
+Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍有 11.2% 的对抗性攻击得逞](https://www.anthropic.com/research/prompt-injection-defenses)。OpenAI 也承认，浏览器 Agent 里的提示注入「几乎不可能被彻底解决」。这些不是理论风险——研究人员已经发现真实存在的[野生间接提示注入载荷](https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/)，它们被埋在普通网站上，专等会浏览这些页面的 AI Agent 上钩。这不代表你不该用浏览器 Agent；而是说，高风险动作应当始终留在手动确认这道关卡后面，并且在交出任何一个要紧的登录之前，把[该问的安全问题](/zh/blog/browser-ai-agent-security-questions)逐条过一遍。
 
 ![what5.png](/zh/blog/images/browser-ai-agent-what-it-can-do/1778482792348-c069ef6f-58c9-4820-bc61-f1478881ded4.webp)
 
@@ -113,7 +113,7 @@ Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍
 
 ## 浏览器 Agent 在单人创业者技术栈里的位置
 
-浏览器 Agent 不是现有工具的替代品，而是上面多出的一层——只有当你手头有清晰、重复、又在吞噬时间的浏览器工作流时，才值得加。
+浏览器 Agent 不是现有工具的替代品，而是上面多出的一层——只有当你手头有清晰、重复、又在吞噬时间的浏览器工作流时，才值得加。等瓶颈超出单个浏览器任务、扩大到一个人要撑起整块业务时，同一条委托光谱上更远的位置，站着 [Claude 的托管 Agent](/zh/blog/claude-managed-agents-one-person-company)。
 
 **你的核心工具**（CRM、邮件、文档、项目管理）保持原样。**浏览器 Agent**作为自动化层叠在上面，专攻跨工具任务——连接各核心工具的重复杂活、数据收集、表单填写。
 

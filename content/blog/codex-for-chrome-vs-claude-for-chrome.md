@@ -57,7 +57,7 @@ Claude's model is more ​**conversational** ​. You're working _with_ it about
 
   * **DevTools integration.** Codex can interact with Chrome DevTools directly — useful for testing web apps, debugging frontend issues, verifying browser behavior. Claude's sidebar isn't built for that.
 
-  * **Codex ecosystem integration.** If you're already using Codex CLI or the IDE extension, the Chrome plugin adds browser context to existing workflows. It's not a standalone tool — it's one piece of a larger system.
+  * **Codex ecosystem integration.** If you're already using Codex CLI or the IDE extension, the Chrome plugin adds browser context to existing workflows. It's not a standalone tool — it's one piece of a larger system, and the more surfaces you bolt on, the sooner the [oh-my-codex versus Superpowers](/blog/oh-my-codex-vs-superpowers) question — parallel orchestration or process discipline — stops being theoretical.
 
 ### Claude Strengths
 

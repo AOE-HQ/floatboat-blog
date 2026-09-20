@@ -17,7 +17,7 @@ Hi, I'm Nova. I spent the last few weeks switching between three different categ
 
 The companies making these tools have every incentive to blur the lines. A browser extension wants to sound like a full workspace. A full browser wants to sound like it replaces every other tool. A desktop workspace wants to claim browser-level web access.
 
-But the **design premise** behind each category is fundamentally different — and that premise determines what breaks, what scales, and who it's actually for.
+But the **design premise** behind each category is fundamentally different — and that premise determines what breaks, what scales, and who it's actually for. The same holds one level down: whether a given tool waits for your prompt or plans its own next step is [the assistant-versus-agent distinction](/blog/ai-agent-vs-ai-assistant), and it cuts across all three of these categories.
 
 ![float2.PNG](/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562043793-f2deaeec-107e-47b2-bf45-36b7485509ed.webp)
 

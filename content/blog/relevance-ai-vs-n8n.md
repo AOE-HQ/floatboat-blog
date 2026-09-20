@@ -99,6 +99,8 @@ Relevance AI can feel constrained when you need complex branching logic or multi
 
 n8n, on the other hand, isn't built for people who want to describe a task and have an AI figure it out. The learning curve is real. If your team isn't comfortable with nodes, JSON, and occasionally reading error logs, it will slow you down more than it helps.
 
+And if the honest answer is that your work isn't pipeline-shaped at all — it's coding sessions, documents, and tasks you want handed off one at a time — then the fork in the road isn't Relevance versus n8n but [which agent surface fits the work](/blog/claude-code-vs-cowork-vs-tag): local coding, local office work, and a shared async coworker are different jobs, not settings on one tool.
+
 If you want something in between — AI-first but with workflow automation built in — tools like [Lindy AI](https://www.lindy.ai/) are worth a look. The Lindy vs n8n comparison (Vol 20) shows Lindy handling both agent reasoning and workflow execution in one place, which bridges the gap for teams that find n8n too technical and Relevance AI too limiting.
 
 Still learning what you need? That's fine. Try the free tiers of both — Relevance AI gives you 200 Actions to start, and n8n's community edition is free to self-host. Small experiments tell you a lot.

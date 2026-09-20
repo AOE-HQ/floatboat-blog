@@ -57,7 +57,7 @@ The limitation is typically context and memory. Most automation platforms are st
 
 ### Workspaces
 
-This is the category that gets underrated. [Claude.ai](http://Claude.ai) (with Projects), ChatGPT with custom GPTs, Notion AI — these aren't traditionally called "agent platforms" but they function as one for a large percentage of real use cases. You give the model context, a persona, and access to certain information, and it executes tasks within that context.
+This is the category that gets underrated. [Claude.ai](http://Claude.ai) (with Projects), ChatGPT with custom GPTs, Notion AI — these aren't traditionally called "agent platforms" but they function as one for a large percentage of real use cases. You give the model context, a persona, and access to certain information, and it executes tasks within that context — at which point [the line between an AI assistant and a real agent](/blog/ai-agent-vs-ai-assistant) becomes a practical question rather than a naming debate.
 
 For solo operators, **a well-configured workspace often outperforms a half-built agent on a dedicated platform.** Lower maintenance cost, easier to iterate on, and no integration points to break. The tradeoff is that workspaces are generally not good at triggering automatically or taking actions in external systems without some additional plumbing.
 

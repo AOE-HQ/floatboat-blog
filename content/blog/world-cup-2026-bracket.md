@@ -64,7 +64,7 @@ The Round of 32 is the biggest structural change for 2026 bracket tracking. It g
 
 > Results above per FIFA's official bracket.
 
-The Round of 16 produced the tournament's biggest upsets. Norway knocked out Brazil 2–1, Belgium crushed the United States 4–1, and Morocco swept Canada 3–0. England survived a five-goal thriller against Mexico, while Spain edged Portugal 1–0 in a tight Iberian derby. Argentina needed all of a 3–2 win over Egypt, and Switzerland held Colombia to a penalty shootout victory. The quarterfinal field is wide open.
+The Round of 16 produced the tournament's biggest upsets. Norway knocked out Brazil 2–1, Belgium crushed the United States 4–1, and Morocco swept Canada 3–0. England survived a five-goal thriller against Mexico, while Spain edged Portugal 1–0 in a tight Iberian derby. Argentina needed all of a 3–2 win over Egypt, and Switzerland held Colombia to a penalty shootout victory. The quarterfinal field is wide open. A field this open is also the point where [how you fill the rest of the bracket](/blog/world-cup-2026-bracketology) starts to matter more than any single marquee pick.
 
 ## Quarterfinal Fixtures
 

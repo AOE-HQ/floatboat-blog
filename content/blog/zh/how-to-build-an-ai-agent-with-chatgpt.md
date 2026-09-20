@@ -93,7 +93,7 @@ Custom GPT 的甜区是**可重复、定义清晰的任务**——那种你本�
 
 当你需要真实世界里的动作——发邮件、更新电子表格、往 Slack 发帖——却不想手动批准每一步时，你大概就超出它的能力了。这正是 Agent Mode 登场的地方：它在 Plus（每月 20 美元）、Pro 和 Team 套餐上可用。我查了 [ChatGPT 官方定价页](https://chatgpt.com/pricing/)上的当前价格——Plus 从上线起一直是每月 20 美元，以你得到的东西来说仍然厚道。
 
-Custom GPT 也不会跨 session 保持记忆。每次对话都从零开始。如果持久记忆对你的工作流很重要，那是另一个去看 Agent Mode 或 Assistants API 的理由。
+Custom GPT 也不会跨 session 保持记忆。每次对话都从零开始。如果持久记忆对你的工作流很重要，那是另一个去看 Agent Mode 或 Assistants API 的理由。而当你越过这些变通办法、真的自己动手时，[搭一个完整 Agent 的真实成本](/zh/blog/how-to-build-an-ai-agent)会换一副面孔：状态、报错处理和维护，都成了你自己的事。
 
 我用的判断规则是：如果我绕开 GPT 局限所花的时间，比它帮我省下的还多——那就是换下一个工具的时候了。
 

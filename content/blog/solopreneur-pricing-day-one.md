@@ -115,7 +115,7 @@ I keep a short list. These aren't tricks — they're honest check-ins.
 
   * **Who said yes in the last three months, and what do they have in common?** If you see a pattern, the market is telling you something about your positioning.
 
-  * **Who said no, and did any of them push back in a way that taught me something?** Rejections with reasons are underrated data.
+  * **Who said no, and did any of them push back in a way that taught me something?** Rejections with reasons are underrated data — and they only compound if those reasons land somewhere you'll actually reread, which is why I keep mine in [an LLM wiki](/blog/what-is-llm-wiki) rather than a notes app I never reopen.
 
   * **Have I taken on anything I resented for the price?** If yes, that's a pricing signal, not a workload signal.
 

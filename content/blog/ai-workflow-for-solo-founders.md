@@ -101,7 +101,7 @@ Before committing to anything new, I ask myself three questions. They've saved m
 
 I've started thinking about this as the difference between a tool and a workspace.
 
-An AI assistant does tasks. You bring it a problem, it produces output, session ends. Useful. But every session is essentially zero-sum — you put effort in, you get output out, nothing carries forward.
+An AI assistant does tasks. You bring it a problem, it produces output, session ends. Useful. But every session is essentially zero-sum — you put effort in, you get output out, nothing carries forward. That limitation gets more expensive as [AI agents in 2026 move from demos to real execution](/blog/ai-agents-2026-solo-operators), because an agent acting on your behalf inherits whatever context you never gave it.
 
 An AI workspace is something different. It's an environment where your work _and_ the AI exist together — where context accumulates, workflows persist, and the AI's help gets more accurate over time because it's seeing how you actually operate. The files you're working with, the decisions you're making, the edits you're applying — all of that becomes signal.
 

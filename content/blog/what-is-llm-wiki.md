@@ -97,7 +97,7 @@ The gap between "who this was built for" and "who is excited about it" is pretty
 
 Solo founders, content creators, consultants, operations people — they read the tweets, got excited about the core insight, then opened the GitHub gist and saw terminal commands. That's where most of them stopped.
 
-The insight is genuinely valuable for anyone who works with large volumes of information over time. The implementation, though, assumes a technical comfort level that most non-developers don't have and don't want to acquire just to manage their notes.
+The insight is genuinely valuable for anyone who works with large volumes of information over time. The implementation, though, assumes a technical comfort level that most non-developers don't have and don't want to acquire just to manage their notes. For a consultant, that compounding corpus is also the substance clients are actually paying for — which is why [where you set your price from day one](/blog/solopreneur-pricing-day-one) deserves as much deliberate thought as how you store it.
 
 I'm somewhere in the middle. I can follow the architecture. But I don't want to be debugging a Python script on a Tuesday afternoon when I should be writing.
 

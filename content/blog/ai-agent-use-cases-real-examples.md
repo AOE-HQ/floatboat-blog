@@ -141,7 +141,7 @@ Okay, so you want to try this. Here's what I'd actually tell a friend:
 
 **Not every task is worth automating.** Before building a workflow, ask: do I do this exact thing more than once a week? If not, the setup cost probably isn't worth it.
 
-**Start small.** Pick one repeatable task. Get it working well. Then add another. The people who try to automate everything at once usually end up with a mess of half-working workflows.
+**Start small.** Pick one repeatable task. Get it working well. Then add another. The people who try to automate everything at once usually end up with a mess of half-working workflows. The flip side holds too: once a task outgrows what no-code tools can wire together, that's the moment to get clear on [what AI agent development services actually include and where their costs land](/blog/ai-agent-development-services) instead of forcing a fragile workaround.
 
 Wait… ! And one more thing I keep noticing: **the people getting the most out of AI agents aren't necessarily the most technical.** They're the ones who are clearest about what they want. Good prompting is just clear thinking, written down. [OpenAI's prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering) is actually a surprisingly useful read for non-developers — most of the advice is just about being precise.
 

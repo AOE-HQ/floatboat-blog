@@ -77,7 +77,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 问题不在于哪种格式更强大，而在于哪种融得进你的一天。就目前而言，对我来说是两种都用——只是用在不同的东西上。
 
-平台已经在往这个方向走了。Claude 的 [Artifacts 功能](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)能直接在聊天界面里生成并渲染 HTML；OpenAI 的 [Canvas 工作区](https://openai.com/index/introducing-canvas/)开启了并排编辑；`html-anything` 这类工具把 Agent 输出转成独立的 HTML 成果。更丰富的 AI 输出的基础设施正在出现——不管你有没有专门要求。
+平台已经在往这个方向走了。Claude 的 [Artifacts 功能](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)能直接在聊天界面里生成并渲染 HTML；OpenAI 的 [Canvas 工作区](https://openai.com/index/introducing-canvas/)开启了并排编辑；`html-anything` 这类工具把 Agent 输出转成独立的 HTML 成果。更丰富的 AI 输出的基础设施正在出现——不管你有没有专门要求。这些同样不用外包——[要不要请 AI Agent 开发服务](/zh/blog/ai-agent-development-services)，只有当输出周边的管道复杂到你一个人维护不动时才成为真问题，而不是在你想要更好看的交付物时。
 
 ![5.png](/zh/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
 

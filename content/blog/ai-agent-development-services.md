@@ -39,7 +39,7 @@ This part is where many people get surprised. **Ongoing maintenance typically co
 
 ### Custom vs Template-Based Builds
 
-Not all "custom" builds are built from scratch. A lot of agencies have template pipelines they adapt per client — which isn't necessarily bad, but it does affect your pricing leverage and what "custom" actually means in their proposal. Ask to see architectural examples from past builds. **A real custom build involves deliberate choices at the model, memory, and tooling level.**
+Not all "custom" builds are built from scratch. A lot of agencies have template pipelines they adapt per client — which isn't necessarily bad, but it does affect your pricing leverage and what "custom" actually means in their proposal. Ask to see architectural examples from past builds. **A real custom build involves deliberate choices at the model, memory, and tooling level.** That's why it pays to be clear on [what a genuinely custom build involves and when it actually earns its price tag](/blog/custom-ai-agent-development) before you start comparing proposals.
 
 ### What Most Services Skip by Default
 

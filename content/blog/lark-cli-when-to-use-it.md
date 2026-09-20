@@ -73,7 +73,7 @@ None of this is insurmountable. But it's more than one afternoon of setup.
 
 ### Setup and Maintenance Overhead
 
-Let's talk honestly about time. Getting a basic **Lark ​CLI** integration running — something that actually does a useful thing reliably — probably takes a competent developer a full day. For a solo operator who isn't primarily a developer, double that conservatively.
+Let's talk honestly about time. Getting a basic **Lark ​CLI** integration running — something that actually does a useful thing reliably — probably takes a competent developer a full day. For a solo operator who isn't primarily a developer, double that conservatively. A close look at [what a Feishu CLI setup actually involves in solo work](/blog/feishu-cli-solo-work-setup) tells the same story — the integration itself is the short part; the surrounding work isn't.
 
 Access credentials have a validity period, and developers need to set up business logic to regularly refresh credentials on their own servers to prevent expiration. That means your integration needs to _actively manage_ its own authentication. It's not a set-and-forget situation.
 

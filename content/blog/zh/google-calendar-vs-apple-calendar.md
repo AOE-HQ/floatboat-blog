@@ -31,7 +31,7 @@ draft: false
 
 真正的决定发生在这里，而不是在功能清单里。
 
-Google Calendar 天生是**网页优先、协作优先**的工具。在 Chromebook、Windows 笔记本或 iPhone 浏览器上，体验都一样。如果你的工作要跟"并不全用 Apple 设备"的人协调，Google 处理起来的摩擦更小。我确认过——共享整个日历、设置细粒度权限、把公开日历嵌到网站上，全部都能在 [Google Calendar 的共享设置](https://support.google.com/calendar/answer/37082?hl=en)里完成。
+Google Calendar 天生是**网页优先、协作优先**的工具。在 Chromebook、Windows 笔记本或 iPhone 浏览器上，体验都一样。如果你的工作要跟"并不全用 Apple 设备"的人协调，Google 处理起来的摩擦更小。同样的检验也适用于第三个大生态：如果你要约的人活在 [Outlook](/zh/blog/google-calendar-vs-outlook) 里——多数公司环境仍是它的天下——Google Calendar 与它的互操作通常比 iCloud 少些摩擦。我确认过——共享整个日历、设置细粒度权限、把公开日历嵌到网站上，全部都能在 [Google Calendar 的共享设置](https://support.google.com/calendar/answer/37082?hl=en)里完成。
 
 Apple Calendar 天生是**设备原生的体验**。它快、好看，如果你已经通过 iCloud 打理生活，它就能"自然工作"。Apple 支持站点上的 [《日历》使用手册](https://support.apple.com/guide/calendar/welcome/mac)覆盖了从委托管理到家庭共享日历的一切——它的能力比人们以为的要强。借助 Apple Intelligence 的端侧能力，Siri 解析自然语言来创建事件也变得更好了。"App 内发现"能从你的邮件和消息中识别日期、建议日程条目——这是个体贴的小设计。
 

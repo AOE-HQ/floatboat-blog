@@ -19,7 +19,7 @@ I didn't. And I've been thinking about why.
 
 ## What an LLM Knowledge Base Actually Is
 
-Plain version: you feed raw source material — articles, documents, PDFs, notes — into a folder. An LLM reads all of it and compiles a structured, interlinked wiki. That wiki grows over time. When you have a question, the LLM searches the wiki instead of your memory.
+Plain version: you feed raw source material — articles, documents, PDFs, notes — into a folder. An LLM reads all of it and compiles a structured, interlinked wiki. That wiki grows over time. When you have a question, the LLM searches the wiki instead of your memory. This is the mechanism behind [the LLM wiki concept](/blog/what-is-llm-wiki) that spread from Karpathy's workflow — a reference that compiles and cross-links itself instead of relying on you to maintain the structure.
 
 Karpathy's version has grown to roughly 100 articles and 400,000 words on a single research topic — built without him manually writing a word of it.
 
@@ -85,7 +85,7 @@ These are different jobs. A wiki answers "what do I know about X?" An execution 
 
 ### What Reusable AI Execution Covers That a Personal Wiki Doesn't
 
-Think about the tasks that actually eat your time: writing deliverables that follow your specific format, researching a topic and outputting it in your house style, processing client documents and flagging the relevant parts. A personal wiki doesn't make those faster. What makes them faster is AI, that's embedded in the work itself — that can read a file, draft a response, and iterate, all without rebuilding context every time.
+Think about the tasks that actually eat your time: writing deliverables that follow your specific format, researching a topic and outputting it in your house style, processing client documents and flagging the relevant parts. A personal wiki doesn't make those faster. What makes them faster is AI, that's embedded in the work itself — that can read a file, draft a response, and iterate, all without rebuilding context every time. That's the shift [AI agents are making in 2026](/blog/ai-agents-2026-solo-operators) — from answering questions about what you know to executing work inside it.
 
 This is why tools in the **AI workspace** category have started to make more sense for solo operators than DIY knowledge bases. Something like [Floatboat](</>) takes a different angle entirely — instead of having you build and curate a reference wiki, it learns from your actual working patterns (how you edit, decide, and iterate) and translates that into reusable AI workflows. It's less about storing what you know and more about automating how you work. The distinction feels small but in practice it's significant.
 

@@ -79,7 +79,7 @@ Lindy 像一个永远在线的助理，你可以通过 iMessage 或短信和它�
 
 说实话，值得一提——因为很多人都低估了这个组合已经走到多远。如果你的核心需求是**和 AI 一起思考**——起草、调研、做判断——一个配置得当、接好集成的 Custom [GPT](https://chatgpt.com/?utm_source=google&utm_medium=paid_search&utm_campaign=GOOG_C_SEM_GBR_Core_CHT_TST_ACQ_PER_MIX_ALL_NAMER_US_EN_031126&c_id=23637266097&c_agid=196969198991&c_crid=799723769010&c_kwid=kwd-368538592&c_ims=&c_pms=9060440&c_nw=g&c_dvc=c&gad_source=1&gad_campaignid=23637266097&gbraid=0AAAAA-I0E5f7Ogs8VCWcGfQiY2uNIfgCG&gclid=Cj0KCQjw7IjOBhDyARIsAFzrWQxtBo-XShB-1OvMIPmKMxn48aYGEesBJIN_bxeo4zlU840IJyMYl9UaArBNEALw_wcB) 能处理相当多的量。
 
-它不是工作流搭建器，不能自主运行。但对一个主要需要 AI 协助、而非 AI 自动化的单人创作者或创始人来说，它可能就是全部所需——而且成本只有零头。代价是：没有你，什么都不会跑。
+它不是工作流搭建器，不能自主运行。但对一个主要需要 AI 协助、而非 AI 自动化的单人创作者或创始人来说，它可能就是全部所需——而且成本只有零头。代价是：没有你，什么都不会跑。如果你找替代品的真实原因，是想把整件事整个交出去、而不是亲手设计每一步——那是上面所有工具之外的另一个品类，[Manus 替代品](/zh/blog/manus-ai-alternatives-2026) 那边才是委派式 Agent 的地盘。
 
 ![4.png](/zh/blog/images/gumloop-alternatives-2026/1774343538289-476a6d1b-9fa8-4a9a-96fc-3965b592b97f.webp)
 
@@ -87,7 +87,7 @@ Lindy 像一个永远在线的助理，你可以通过 iMessage 或短信和它�
 
 ### 这一类该看什么
 
-「**gumloop alternatives**」的讨论到了这个类别才更有意思。有些人找的不只是另一款自动化工具，而是能理解他们工作**上下文**、而不只是理解流程**结构**的东西。
+「**gumloop alternatives**」的讨论到了这个类别才更有意思。有些人找的不只是另一款自动化工具，而是能理解他们工作**上下文**、而不只是理解流程**结构**的东西。而且这份期待里越来越重的一部分，是跑完就能直接交付的产出——[html-anything](/zh/blog/html-anything-review-2026) 整个思路就压在这上面：让本地 AI Agent 直接写好能发出去的 HTML，而不是丢给你一堆还得自己排版的文字。
 
 最好的方案往往由几个因素决定：你的技术水平、想集成的具体工具、工作流的性质，以及你不可妥协的安全与合规特性。
 
@@ -107,11 +107,11 @@ Lindy 像一个永远在线的助理，你可以通过 iMessage 或短信和它�
 
 不是每次不爽都是换工具的理由。有几件事值得先试：
 
-**积分超支**：审计哪些节点在烧最多的积分。GPT-4、Claude Sonnet 这类高级模型调用每次约 20 积分，普通调用只要 2 积分。给轻量任务在流程中途切换模型选择，能明显省钱。
+**积分超支**：审计哪些节点在烧最多的积分。GPT-4、Claude Sonnet 这类高级模型调用每次约 20 积分，普通调用只要 2 积分。给轻量任务在流程中途切换模型选择，能明显省钱。同样的节点级账，放到出图节点上更明显——[选定哪款图像模型](/zh/blog/gpt-image-2-vs-midjourney-nano-banana-2) 直接决定成本怎么随体量变化：按张计价和按 GPU 时长计费，跑起来完全是两种曲线。
 
 **维护开销**：搭可独立更新的模块化子流程。数据源一变，你只想修一个节点——而不是重搭一条 15 步的流程。
 
-**运行之间丢上下文**：Gumloop 默认不会在两次流程执行之间保留记忆。任何需要连续性的场景，你都得显式地通过数据节点传递状态，或者把输出记到下一个流程能读到的地方。
+**运行之间丢上下文**：Gumloop 默认不会在两次流程执行之间保留记忆。任何需要连续性的场景，你都得显式地通过数据节点传递状态，或者把输出记到下一个流程能读到的地方。交接用什么格式，跟记不记日志同样要紧——[AI 步骤吐出来的是 HTML 还是 Markdown](/zh/blog/html-vs-markdown-ai-output)，决定了下一个节点、以及流程尽头那个真人，各自要接手多少清理工作。
 
 ![5.png](/zh/blog/images/gumloop-alternatives-2026/1774343550886-b551cff1-0246-4df2-a298-7bcbc4512cb3.webp)
 

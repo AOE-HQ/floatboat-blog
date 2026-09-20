@@ -93,7 +93,7 @@ Once a company's agents run on managed infrastructure — with specific tools, s
 
 The New Stack's coverage of [what Anthropic is actually trying to do here](https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/) puts it plainly: the infrastructure question is becoming someone else's problem to solve. The interesting design work moves up a layer.
 
-For solo operators and small teams, the practical implication is this: the AI tools you use in the next year or two will increasingly be built on infrastructure like this. You won't see it, but it's what makes long, autonomous tasks reliable instead of brittle.
+For solo operators and small teams, the practical implication is this: the AI tools you use in the next year or two will increasingly be built on infrastructure like this. You won't see it, but it's what makes long, autonomous tasks reliable instead of brittle — and that reliability is what makes it practical for [a one-person company to delegate multi-hour work to managed agents](/blog/claude-managed-agents-one-person-company) instead of babysitting a single prompt.
 
 ## What Solo Operators Should Take Away
 

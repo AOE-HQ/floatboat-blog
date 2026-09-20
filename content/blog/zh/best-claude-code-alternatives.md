@@ -34,7 +34,7 @@ Claude Code 为「终端编程 Agent 该是什么样」立下了标杆：读仓�
 
 **机构适配。**已经向 Microsoft 或 GitHub 付费的大型组织，常常在评估质量之前就因为采购原因默认选 Copilot。这是渠道叙事，不是能力叙事。
 
-一份可信的榜单必须按这些「工种」来排——IDE 原生、开源、git 原生、自主云端、机构级——而不是看谁在落地页上蹭了「Claude Code 替代品」这个关键词。《Claude Code vs Cowork vs Tag》讲的是 Anthropic 自家那几条产品线；这份榜单覆盖的是 Anthropic 自身技术栈之外的编程 Agent 版图。
+一份可信的榜单必须按这些「工种」来排——IDE 原生、开源、git 原生、自主云端、机构级——而不是看谁在落地页上蹭了「Claude Code 替代品」这个关键词。Anthropic 自家那几条[同源的 Agent 产品线](/zh/blog/claude-code-vs-cowork-vs-tag)——终端编码、桌面办公、群聊协作——是另一道选择题；这份榜单覆盖的是 Anthropic 自身技术栈之外的编程 Agent 版图。
 
 ## 2\. 这份排名的依据：工作形态，而非关键词
 
@@ -46,7 +46,7 @@ Claude Code 为「终端编程 Agent 该是什么样」立下了标杆：读仓�
 
 
 
-我们**排除**了非编码类 Agent（日历驱动助手、桌面知识工作 Agent、Agent 原生群聊），它们不进排名——它们解决的是另一类故障模式，会出现在下方「互补工具」一节。切换前请在各家官网核实价格与地区可用性——2026 年年中的定价变动很频繁。
+我们**排除**了非编码类 Agent（日历驱动助手、桌面知识工作 Agent、Agent 原生群聊），它们不进排名——它们解决的是另一类故障模式，会出现在下方「互补工具」一节。如果活儿在办公室而不是仓库，[Cowork 一类的办公 Agent](/zh/blog/best-claude-cowork-alternatives)会按非开发者的适配度另排一张榜，不看仓库能力。切换前请在各家官网核实价格与地区可用性——2026 年年中的定价变动很频繁。
 
 ## 3\. 最好的 Claude Code 替代品排名
 
@@ -124,7 +124,7 @@ Copilot 适合想给每位开发者一个零搭建默认配置的组织，以及
 
 **Floatboat（日历驱动的主动式 OS）。**如果你的故障模式是忘了会前准备、漏了会后跟进——而不是缺一个编程 Agent——那么日历运行时 Agent 与 Claude Code 是互补而非替代。许多工程团队在仓库里跑 Code，同时用一个日历 Agent 打理个人会议节奏；两者从不竞争。
 
-**FloatIM（Agent 原生群聊）。**如果你想要的是 Agent 作为受治理的群组话题里的一等参与者，而不是一段终端会话，FloatIM 是一种「场域」选择，不是「编码」选择。它不编辑你的仓库；它协调那些编辑仓库的人与 Agent。
+**FloatIM（Agent 原生群聊）。**如果你想要的是 Agent 作为受治理的群组话题里的一等参与者，而不是一段终端会话，FloatIM 是一种「场域」选择，不是「编码」选择。它不编辑你的仓库；它协调那些编辑仓库的人与 Agent。这同样适用于任何[驻在 Slack 或群聊里的 AI Teammate](/zh/blog/best-claude-tag-alternatives)——决定它有没有用的是场域适配，而不是模型深度。
 
 Floatboat 与 FloatIM 都不解决这份榜单所衡量的编码工作，所以它们不入排名。它们是技术栈的另一半——主动式 OS 与 Agent 原生网络——编程 Agent 是与之并排存在的。
 
@@ -144,7 +144,7 @@ Floatboat 与 FloatIM 都不解决这份榜单所衡量的编码工作，所以�
 
 ## 6\. 编程 Agent 的下一步
 
-三条趋势会让这份榜单在 2026–2027 年持续变动。**Harness 收敛。** Claude Code 的「端点路由」模式——把终端 harness 指向另一个模型——正在扩散，模糊了「产品」与「你自己配置的 shell」之间的界线。**云端与本地。** Devin 和 Codex 把委派推向云端，Cline 与 Aider 锚定本地文件与模型掌控。**IDE 与终端。** Cursor 与 Windsurf 吸收更多 agentic 深度，而终端 Agent 长出第一等的 IDE 集成——两类产品在不同房间里朝同一个循环靠近，边界还会继续模糊下去。
+三条趋势会让这份榜单在 2026–2027 年持续变动。**Harness 收敛。** Claude Code 的「端点路由」模式——把终端 harness 指向另一个模型——正在扩散，模糊了「产品」与「你自己配置的 shell」之间的界线。**云端与本地。** Devin 和 Codex 把委派推向云端，Cline 与 Aider 锚定本地文件与模型掌控。**IDE 与终端。** Cursor 与 Windsurf 吸收更多 agentic 深度，而终端 Agent 长出第一等的 IDE 集成——两类产品在不同房间里朝同一个循环靠近，边界还会继续模糊下去。下一个房间是浏览器：[Codex for Chrome 和 Claude for Chrome](/zh/blog/codex-for-chrome-vs-claude-for-chrome) 已经把同一个 Agent 循环带进登录态的浏览器工作——在那里起决定作用的是权限与多标签上下文，而不是终端手感。
 
 榜单奖励的是清醒：先定义你的工作住在哪里，再判断你该盯着它还是委派它，最后按工作形态选——而不是选某个泛目录里排第一的那个。Claude Code 定义了终端编程 Agent。那些替代品赢下的，是它从没被设计来拥有的工作。
 

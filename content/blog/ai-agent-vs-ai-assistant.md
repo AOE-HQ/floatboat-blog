@@ -41,7 +41,7 @@ This isn't a knock on assistants. For a lot of tasks, they're exactly right.
 
 Scheduling, quick Q&A, summarizing a document, drafting a reply — these are things where you _want_ to stay in control of every step. When you define clear parameters, you get consistent, reliable results. Less variance. Fewer surprises.
 
-The practical rule I've started using: if I can describe the task in one or two sentences and I don't need the tool to remember anything from yesterday, an assistant is probably the right fit. The moment I catch myself copy-pasting context from a previous conversation into a new one, that's a signal I might need something else.
+The practical rule I've started using: if I can describe the task in one or two sentences and I don't need the tool to remember anything from yesterday, an assistant is probably the right fit — and [a personal AI assistant at work](/blog/ai-assistant-for-personal-use-at-work) pays off fastest when it's matched to the routines you already repeat, not to a feature checklist. The moment I catch myself copy-pasting context from a previous conversation into a new one, that's a signal I might need something else.
 
 ![1.png](/blog/images/ai-agent-vs-ai-assistant/1775213428953-fa6d5508-2168-4dbe-b853-12c72b1eef09.webp)
 
@@ -97,7 +97,7 @@ Three questions. That's all.
 
   2. **Do you need context from past sessions or long-term memory?** If you're constantly re-explaining your situation every time you open a new chat, that's a sign you need persistent memory. That's an agent capability, not an assistant capability. No amount of prompt engineering fully compensates for the absence of persistent state.
 
-  3. **How much do you want to stay in the loop at each step?** If you want control at every decision point, an assistant is safer and more predictable. If you're okay trusting the system to figure out the path — and just want the outcome — an agent makes more sense.
+  3. **How much do you want to stay in the loop at each step?** If you want control at every decision point, an assistant is safer and more predictable. If you're okay trusting the system to figure out the path — and just want the outcome — an agent makes more sense. That appetite for oversight is also one of the biggest factors in [which AI agent platform fits you in 2026](/blog/best-ai-agent-platform-2026), ahead of most feature comparisons.
 
 No product recommendations here. Just the framework. The right answer depends entirely on what you're actually trying to do.
 
@@ -105,9 +105,9 @@ No product recommendations here. Just the framework. The right answer depends en
 
 Here's the honest part: this distinction is getting messier, not cleaner.
 
-A lot of tools that call themselves "assistants" are quietly adding agentic features — memory, tool use, multi-step execution. And some things called "agents" are basically just fancy chatbots. The [MIT Technology Review's coverage of AI agent development](https://www.technologyreview.com/2026/03/10/1134083/building-a-strong-data-infrastructure-for-ai-agent-success/) tracks this blending of capabilities well — it's one of the clearest trends in the space right now.
+A lot of tools that call themselves "assistants" are quietly adding agentic features — memory, tool use, multi-step execution. And some things called "agents" are basically just fancy chatbots. Even two products sold under the same agent label can sit far apart — [Genspark and Manus](/blog/genspark-vs-manus), for instance, split between research-and-creation assistance and hands-off delegation, a gap no product label captures. The [MIT Technology Review's coverage of AI agent development](https://www.technologyreview.com/2026/03/10/1134083/building-a-strong-data-infrastructure-for-ai-agent-success/) tracks this blending of capabilities well — it's one of the clearest trends in the space right now.
 
-The line is also blurring at the architecture level. An assistant could serve as the front-end interface to trigger agent-driven workflows in the backend — a hybrid model where you're talking to something that looks like a simple assistant, but it's actually kicking off an agentic process behind the scenes.[ Anthropic's research on tool use and agent behavior ](https://www.anthropic.com/research/measuring-agent-autonomy)gives some useful context on how these hybrid architectures are being designed.
+The line is also blurring at the architecture level. An assistant could serve as the front-end interface to trigger agent-driven workflows in the backend — a hybrid model where you're talking to something that looks like a simple assistant, but it's actually kicking off an agentic process behind the scenes. Where the AI lives — inside the environment where your files and tools already are, or beside them in a chat window — is the divide [workspace agents and chat assistants](/blog/workspace-agents-vs-chat-assistants) are organized around. [ Anthropic's research on tool use and agent behavior ](https://www.anthropic.com/research/measuring-agent-autonomy)gives some useful context on how these hybrid architectures are being designed.
 
 What I've started doing: instead of asking "is this an agent or an assistant," I ask — _how much does this system remember about me, and how much can it do without me holding its hand?_ Those two questions cut through the marketing noise pretty well.
 

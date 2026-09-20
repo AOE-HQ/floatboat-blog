@@ -125,7 +125,7 @@ draft: false
 
 免构建的选项比以前强多了。一份诚实的概览：
 
-**带自定义指令与 Actions 的 ChatGPT** ——能处理不少简单的类 Agent 任务。对文档密集的工作流出奇地好用。局限：你被圈在 OpenAI 生态里。
+**带自定义指令与 Actions 的 ChatGPT** ——能处理不少简单的类 Agent 任务。对文档密集的工作流出奇地好用。局限：你被圈在 OpenAI 生态里。如果反正要走这条路，[在 ChatGPT 里搭一个真 Agent](/zh/blog/how-to-build-an-ai-agent-with-chatgpt) 练的重点是写清指令，而不是折腾工具。
 
 **n8n** ——我见过的不需要深度编程、却最灵活的工作流工具。很擅长把许多工具接成自动化链。它有学习曲线，但可以学会。[Codecademy 对 Agent 框架的拆解](https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025) 提供了清晰对比，如果你想并排评估这些选项。
 

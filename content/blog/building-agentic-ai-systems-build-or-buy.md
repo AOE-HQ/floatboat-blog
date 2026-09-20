@@ -81,7 +81,7 @@ I've found it useful to map the build-or-buy decision to where your workflow act
 
 **Stage 3: Production.** The workflow runs regularly, other people depend on it, and reliability matters. This is where you need monitoring, recovery, and governance. If you built it, add observability. If you bought it, evaluate whether the platform's governance features are sufficient. Most platforms are catching up here — Anthropic's [guide on writing effective tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents) covers some of the principles that matter at this stage, particularly around designing tools that agents can use reliably.
 
-**Stage 4: Scaling.** Multiple workflows, multiple agents, multiple users. This is system territory. You're either deeply committed to a platform ecosystem or you're running your own orchestration layer. Few solo operators or small teams reach this stage with more than one or two workflows, and that's fine. Get Stage 3 right first.
+**Stage 4: Scaling.** Multiple workflows, multiple agents, multiple users. This is system territory. You're either deeply committed to a platform ecosystem or you're running your own orchestration layer — and at that point, [whether to build the orchestration yourself or let a workspace execute for you](/blog/dynamic-workflows-build-or-use-workspace) becomes its own build-or-buy decision, one layer up. Few solo operators or small teams reach this stage with more than one or two workflows, and that's fine. Get Stage 3 right first.
 
 The mistake I see most often: people jump to Stage 4 thinking before they've actually validated Stage 2. They buy an enterprise platform for a workflow they've tested three times. Don't do that.
 

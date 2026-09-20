@@ -45,7 +45,7 @@ Think about the last time you started a new conversation with an AI tool and spe
 
 ### The Context Reset Problem That Persistent Agents Solve
 
-There's a thing I've started calling "re-onboarding tax" — the invisible time cost of explaining yourself to an AI every single session. It's not huge per conversation. But it adds up, especially when you're working on ongoing projects with a lot of accumulated context.
+There's a thing I've started calling "re-onboarding tax" — the invisible time cost of explaining yourself to an AI every single session. It's not huge per conversation. But it adds up, especially when you're working on ongoing projects with a lot of accumulated context. It's also a cousin of the [context switching](/blog/stop-context-switching-workspace-agent) that drains solo operators between tools — except here the switch is forced by the AI's amnesia rather than by your calendar.
 
 The deeper problem is that simply enlarging context windows doesn't fix this — performance can degrade under real workloads, retrieval becomes expensive, and costs compound. Some researchers have called this "context rot": without context management, an AI agent's responses can become inaccurate or unreliable.
 
@@ -73,7 +73,7 @@ The analogy that landed for me: it's less like a tool you pick up, and more like
 
 Unlike traditional AI models that process each task independently, AI agents with memory can retain context, recognize patterns over time, and adapt based on past interactions — capabilities that are essential for goal-oriented applications where adaptive learning is required.
 
-Being able to ask "what did we decide about this last month?" and actually get a useful answer — that's the use case I keep coming back to.
+Being able to ask "what did we decide about this last month?" and actually get a useful answer — that's the use case I keep coming back to. It's also the kind of job that lands on the short list of [agent use cases that hold up outside demos](/blog/ai-agent-use-cases-real-examples).
 
 ## What Hermes Agent and Similar Projects Are Trying to Do
 
@@ -101,9 +101,9 @@ Here's my actual take, and I'm not going to hedge it.
 
 **If you're a developer or researcher** — someone who runs infrastructure, works in the terminal, is comfortable with SSH and Docker and command-line configuration — persistent agents like Hermes Agent are probably genuinely exciting right now. The system supports six terminal backends (local, Docker, SSH, Daytona, Singularity, and Modal), with serverless persistence options so the environment hibernates when idle, and multi-platform messaging from a single gateway. That's a powerful setup if you know what to do with it.
 
-**If you're a solo operator, content creator, or knowledge worker** who doesn't touch infrastructure — the raw concept is relevant, but the current implementation of most persistent agents isn't built for you yet.
+**If you're a solo operator, content creator, or knowledge worker** who doesn't touch infrastructure — the raw concept is relevant, but the current implementation of most persistent agents isn't built for you yet. That's the gap [workspace agents for one-person companies](/blog/workspace-agents-for-solo-operators) are filling: persistence delivered through a workspace you already open, not a server you maintain.
 
-The setup overhead is real. You need to be comfortable running something on a server, managing configuration, and tolerating the kind of rough edges that come with early-stage open-source projects.
+The setup overhead is real. You need to be comfortable running something on a server, managing configuration, and tolerating the kind of rough edges that come with early-stage open-source projects — the same total-cost-of-ownership question that decides whether [custom agent development](/blog/custom-ai-agent-development) is ever worth paying for.
 
 The _idea_ of persistent context — an AI that actually knows your work — that matters enormously for how we work. The tools that deliver it accessibly for non-developers are still catching up.
 

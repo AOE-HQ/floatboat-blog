@@ -38,7 +38,7 @@ Obsidian 在它擅长的领域非常出色：一个本地、可链接的知识�
 
 社区 AI 插件和 Obsidian 的 Web Clipper Interpreter 在 vault 工作流**内部**很有价值——总结一篇剪藏的文章、对着已索引笔记聊天、就地起草。它们优化的是书房。当任务是「结合 vault + 收件箱 + 本地 deck 文件夹，为周四的投资人会议把一切都准备好」时，它们很少能替代桌面 Agent。不同的工作，不同的台面。
 
-Claude Cowork 一类的桌面 Agent，以及 Floatboat 这类日历驱动运行时，与 Obsidian 共享同一个前提：**本地文件**。正因为 vault 已经是一个文件夹，你不需要某种专有导出就能给 Agent 上下文——你只需把路径指给它、划定权限、描述想要的结果。这就是 PKM 与 Agent OS 两个品类之间的实用桥梁——互补，而非竞争。想知道日历原生的触发方式与聊天发起的 Agent 有何不同，看 [日历驱动 AI vs 聊天式 AI](/zh/blog/calendar-driven-ai-vs-chat-ai)。
+Claude Cowork 一类的桌面 Agent，以及 Floatboat 这类日历驱动运行时，与 Obsidian 共享同一个前提：**本地文件**。正因为 vault 已经是一个文件夹，你不需要某种专有导出就能给 Agent 上下文——你只需把路径指给它、划定权限、描述想要的结果。这就是 PKM 与 Agent OS 两个品类之间的实用桥梁——互补，而非竞争。这个前提也跨生态成立——[豆包工作在本地 Windows 桌面和云电脑上都能执行](/zh/blog/what-is-doubao-work)——一堆本地明文文件因此仍是 Agent 能直接上手的上下文。想知道日历原生的触发方式与聊天发起的 Agent 有何不同，看 [日历驱动 AI vs 聊天式 AI](/zh/blog/calendar-driven-ai-vs-chat-ai)。
 
 ## 3\. 工作流：Vault 当事实源，Agent 当运行时
 

@@ -22,9 +22,9 @@ draft: false
 
 ## 1\. 开始之前：你需要什么
 
-你需要三样东西，外加大约十五分钟。当然，也有"什么都不建"这个选项——[Floatboat DeepSeek Agent](https://deepseek-agent.com) 这类工具把 Agent 循环、工具接线和桌面工作区都预配好了，你可以跳过"造 Agent"，直接用 Agent。本教程讲的是 DIY 路线，适合想要完全掌控工具面的人，也适合要构建现成客户端覆盖不到的领域专用 Agent 的人。
+你需要三样东西，外加大约十五分钟。当然，也有"什么都不建"这个选项——[Floatboat DeepSeek Agent](https://deepseek-agent.com) 这类工具把 Agent 循环、工具接线和桌面工作区都预配好了，你可以跳过"造 Agent"，直接用 Agent。本教程讲的是 DIY 路线，适合想要完全掌控工具面的人，也适合要构建现成客户端覆盖不到的领域专用 Agent 的人。如果你权衡的是整条技术栈而不仅是单个工具，[Agentic 系统自研还是购买的那笔账](/zh/blog/building-agentic-ai-systems-build-or-buy)是同一道题的更大版本。
 
-一个 Python 环境——Python 3.10 及以上，装有 `pip`；或者 Node.js 18 及以上。OpenAI SDK（`pip install openai` 或 `npm install openai`）负责 API 通信。DeepSeek 的 API 在线路层面与 OpenAI 完全兼容，所以不需要专用 SDK。
+一个 Python 环境——Python 3.10 及以上，装有 `pip`；或者 Node.js 18 及以上。OpenAI SDK（`pip install openai` 或 `npm install openai`）负责 API 通信。DeepSeek 的 API 在线路层面与 OpenAI 完全兼容，所以不需要专用 SDK。如果你此前的 Agent 经验只有[在 ChatGPT 里配置一个 Custom GPT](/zh/blog/how-to-build-an-ai-agent-with-chatgpt)，这里是唯一的概念跳跃——从「配置一个产品」到「拥有一个循环」——SDK 本身反而是最容易的部分。
 
 一个终端和一个文本编辑器。本教程里的 Agent 循环示例每个都不到五十行，你可以敲进单个文件，从命令行直接运行。如果想在动手前先看到全貌，[什么是 DeepSeek Agent](/zh/blog/what-is-deepseek-agent) 梳理了四种原型，帮你判断到底需不需要自定义 Agent，还是直接用现成工具就行。
 
@@ -230,7 +230,7 @@ DeepSeek V4 支持一种思考模式：在产出工具调用或最终回答之�
 
 ## 6\. 从 Demo 到生产：错误处理与修复
 
-天气 Agent 之所以能跑通，是因为对只有一个字符串参数的函数，模型总是返回合法的 JSON 参数。生产环境的 Agent 要乱得多：模型可能幻觉出参数名、传错类型，甚至调用不存在的工具。生产级 Agent 循环需要一层修复机制。
+天气 Agent 之所以能跑通，是因为对只有一个字符串参数的函数，模型总是返回合法的 JSON 参数。生产环境的 Agent 要乱得多：模型可能幻觉出参数名、传错类型，甚至调用不存在的工具。生产级 Agent 循环需要一层修复机制。循环跑得越频繁，修复层就越重要——[面向重复性工作的 Agent](/zh/blog/how-to-build-ai-agents-for-repeated-work) 的成败在第二十次运行，而不在第一次。
 
 **执行前先校验工具参数。** 把模型的输出当成不可信的用户输入——因为在 Agent 架构里，它恰恰就是。
 
@@ -286,7 +286,7 @@ DeepSeek V4 支持一种思考模式：在产出工具调用或最终回答之�
 
 ## 结语
 
-你刚刚构建了一个 DeepSeek Agent。不是聊天机器人——是 Agent。差别就在循环：模型不只是回答你的问题，它决定自己需要什么信息、通过工具调用去获取，再用结果决定下一步。你在这里实现的循环模式——定义工具、检查工具调用、执行、回喂、重复——与驱动 DeepSeek-TUI 的编码 Agent 和 Reasonix 的缓存优先助手的，是同一套架构。
+你刚刚构建了一个 DeepSeek Agent。不是聊天机器人——是 Agent。差别就在循环：模型不只是回答你的问题，它决定自己需要什么信息、通过工具调用去获取，再用结果决定下一步。你在这里实现的循环模式——定义工具、检查工具调用、执行、回喂、重复——与驱动 DeepSeek-TUI 的编码 Agent 和 Reasonix 的缓存优先助手的，是同一套架构。这套循环一旦看懂就是可迁移的——[搭一个完整 Agent 实际要花什么](/zh/blog/how-to-build-an-ai-agent)，也就从谜团变成了清单。
 
 天气 Agent 是个玩具，但模式可以扩展。把 `get_weather` 换成 `search_codebase`、`run_tests`、`query_database`、`read_file`、`write_file` 或 `create_calendar_event`——同样的五十行循环就变成一个编码 Agent、数据分析 Agent 或日程 Agent。工具定义在变；循环架构不变。
 

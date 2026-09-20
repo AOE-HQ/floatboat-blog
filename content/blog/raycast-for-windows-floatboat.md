@@ -31,7 +31,7 @@ Here's the thing, though: **the productivity landscape has shifted**. In 2026, w
 
 Floatboat is the first AI Agent Workspace built for one-person companies, freelancers, and solopreneurs — available on **both Windows and macOS**. It's not just a launcher or a chatbot. Think of it as your personal AI team, living right on your desktop, deeply connected to your local files, browser, and the tools you already use.
 
-Where Raycast gives you a command palette with plugins, Floatboat gives you a **full-stack AI workspace** that grows with your needs: start with a simple Agent Chat, then expand into split-screen file management, browser automation, drag-and-drop context flow, and reusable AI workflows called **Combo Skills**.
+Where Raycast gives you a command palette with plugins, Floatboat gives you a **full-stack AI workspace** that grows with your needs: start with a simple Agent Chat, then expand into split-screen file management, browser automation, drag-and-drop context flow, and reusable AI workflows called **Combo Skills**. And when the job is writing itself, the workspace stretches further: [Flow Mode](/blog/introducing-flow-mode) turns voice dictation into in-document co-authoring, so the same surface that launched the work is where the draft gets finished.
 
 * * *
 
@@ -69,7 +69,7 @@ One of Raycast's best features is its clipboard history and snippet system. Floa
 
   * The built-in browser lets your Agent navigate pages, gather information, and automate web tasks
 
-Everything moves seamlessly. Your context never breaks.
+Everything moves seamlessly. Your context never breaks. Handed that browser, an agent can run whole research cycles on its own — [the weekly TikTok Shop research automation](/blog/automate-tiktok-shop-research-fastmoss-floatboat) is what that looks like end to end: navigate, gather, compare, and deliver a brief without a human shepherding every step.
 
 ### 4\. Native Desktop Integration
 

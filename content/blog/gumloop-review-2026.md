@@ -93,7 +93,7 @@ Companies like Gusto and Shopify reportedly use it at scale, which suggests the 
 
 This is where I land personally. If your days look like: write something, research something, make a judgment call, communicate with someone, repeat — **the node-based model is not designed for that kind of work.** You'd spend more time mapping your process into flows than just doing the work.
 
-It also assumes a certain type of automation need: **high-volume, low-variation tasks.** If what you actually need is a thinking partner or a tool that can handle ambiguity — that's a different product category, one where [the Gumloop alternatives built around AI judgment](/blog/gumloop-alternatives-2026) look nothing like a node canvas. Tools like [n8n](https://n8n.io/) (open-source, self-hosted) might suit technical solo builders better on cost; simpler tools might suit lighter needs.
+It also assumes a certain type of automation need: **high-volume, low-variation tasks.** If what you actually need is a thinking partner or a tool that can handle ambiguity — that's a different product category, one where [the Gumloop alternatives built around AI judgment](/blog/gumloop-alternatives-2026) look nothing like a node canvas. Tools like [n8n](https://n8n.io/) (open-source, self-hosted) might suit technical solo builders better on cost; simpler tools might suit lighter needs. And if the work is AI-heavy but you'd rather not self-host, [how Relevance AI and n8n actually compare](/blog/relevance-ai-vs-n8n) is the matchup worth studying — that trade sits at the center of it.
 
 ![5.png](/blog/images/gumloop-review-2026/1774256641947-3e99ec7c-014a-4cb9-b5a1-03534423a3ee.webp)
 

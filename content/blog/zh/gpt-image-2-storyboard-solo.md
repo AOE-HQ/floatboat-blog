@@ -41,7 +41,7 @@ draft: false
 
 ### 用于构图规划的推理模式
 
-Thinking 模式是第二块拼图。[The Next Web 的报道](https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation) 把它描述为模型在生成之前先规划、推理并校验——并指出付费档（Plus 每月 20 美元、Pro 每月 200 美元）才能解锁它，免费档只能用 Instant。对分镜来说这格外重要，因为单次 prompt 最多能返回八帧、且帧间内嵌了角色与物体连续性。我用开场序列实测过——得到 8 帧，同一个人、同一个随行杯、同一套光线贯穿整组。不算完美，但可辨认。
+Thinking 模式是第二块拼图。[The Next Web 的报道](https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation) 把它描述为模型在生成之前先规划、推理并校验——并指出付费档（Plus 每月 20 美元、Pro 每月 200 美元）才能解锁它，免费档只能用 Instant。对分镜来说这格外重要，因为单次 prompt 最多能返回八帧、且帧间内嵌了角色与物体连续性。我用开场序列实测过——得到 8 帧，同一个人、同一个随行杯、同一套光线贯穿整组。不算完美，但可辨认。这套「批量生成再挑错」的打法在电影分镜之外同样吃香——[同样靠八帧一批撑起来的单人漫画整章工作流](/zh/blog/gpt-image-2-manga-comic-workflow)，大致标出了这种连续性能撑到哪、哪些帧该重抽。
 
 [BuildFastWithAI 的开发者拆解](https://www.buildfastwithai.com/blogs/chatgpt-images-2-0-gpt-image-2-2026) 诚实地标出了代价：Thinking 模式每次调用增加 15–30 秒延迟。对分镜草稿来说没问题；对任何实时场景就不行。
 

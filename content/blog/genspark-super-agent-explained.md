@@ -29,7 +29,7 @@ I ran a few research-heavy prompts through it. The multi-model cross-checking ca
 
 Here's how I think about this. A regular chatbot — ChatGPT, Claude, Gemini — gives you a conversation. You ask, it answers, you refine. That loop works well for a lot of things.
 
-The Genspark Super Agent tries to skip that loop. You describe an outcome, and it plans the steps to get there. Need a competitive analysis of five companies with a summary slide deck? Instead of prompting back and forth for twenty minutes, the Super Agent breaks that into sub-tasks: research each company, pull pricing, structure the comparison, build slides. Different specialized agents handle different parts.
+The Genspark Super Agent tries to skip that loop. You describe an outcome, and it plans the steps to get there. Need a competitive analysis of five companies with a summary slide deck? Instead of prompting back and forth for twenty minutes, the Super Agent breaks that into sub-tasks: research each company, pull pricing, structure the comparison, build slides. Different specialized agents handle different parts. That per-request assembly is one of two directions agent products took this year — the other keeps a standing team on staff, the way [Grok Bot gives each AI teammate a persistent cloud computer](/blog/grok-bot) and keeps it working between tasks.
 
 **The practical difference is in the output format.** A chatbot gives you text in a chat window. Genspark gives you structured deliverables — a Sparkpage with citations, a slide deck you can export, a spreadsheet with actual data. That's a real distinction, not just branding.
 

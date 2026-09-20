@@ -114,7 +114,7 @@ FloatCup is designed for the tournament, not forever. After the final on July 19
 
 FloatCup was built as a focused World Cup tool, but the underlying Calendar-Driven AI is the same engine that powers Floatboat's core product. If you found the experience useful — a calendar that does work instead of just showing time slots — Floatboat extends that to every calendar event you have.
 
-Beyond the World Cup, Floatboat's calendar-driven model means the same automatic preparation and follow-through you experienced for match reminders works for meetings, deadlines, and recurring tasks. The Match Reminder Combo Skill you may have installed for FloatCup is built on the same skill architecture as Floatboat's professional Combo Skills — voice notes to decks, call transcripts to follow-up emails, ticket triage to PR drafts. After the tournament ends, the workflow habits persist.
+Beyond the World Cup, Floatboat's calendar-driven model means the same automatic preparation and follow-through you experienced for match reminders works for meetings, deadlines, and recurring tasks. The Match Reminder Combo Skill you may have installed for FloatCup is built on the same skill architecture as Floatboat's professional Combo Skills — voice notes to decks, call transcripts to follow-up emails, ticket triage to PR drafts. After the tournament ends, the workflow habits persist. Those habits extend past the desktop, too: the same shift that put a match reminder inside your calendar puts agents inside your conversations, and [FloatIM's agent-native group chat](/blog/introducing-floatim) is built on exactly that premise — agents as first-class participants in a thread rather than bots bolted onto a human-first app.
 
 ## FloatCup vs. Other Calendar Services
 
@@ -122,6 +122,6 @@ Several services distribute World Cup ICS files — CalendarLabs, Yahoo Sports, 
 
 ## Conclusion
 
-FloatCup is built for one job: make sure you never miss a kickoff across 39 days and 104 matches. Subscribe once, pick your reminder interval, and every match lands in the calendar you already check — with correct local times and automatic updates if FIFA moves a kickoff. No file downloads, no re-imports, no configuring 104 individual events.
+FloatCup is built for one job: make sure you never miss a kickoff across 39 days and 104 matches. Subscribe once, pick your reminder interval, and every match lands in the calendar you already check — with correct local times and automatic updates if FIFA moves a kickoff. No file downloads, no re-imports, no configuring 104 individual events. That single-mindedness is what current tooling makes rational: when [one prompt can ship a browser-playable HTML game](/blog/vibe-coding-one-prompt-html-game), building a narrow tool that does its one job well is no longer the expensive option — it is the cheap one.
 
 If you prefer a manual approach or want to compare options first, the ICS import guide walks through every platform step by step. Either path gets the full schedule into your calendar; FloatCup is the zero-maintenance option for readers who want the tournament to run in the background until July 19.

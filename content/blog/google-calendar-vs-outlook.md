@@ -59,7 +59,7 @@ Let me break down the parts that actually matter for daily work.
 
 This section is for everyone trying to **integrate Outlook Calendar with Google Calendar** at the same time. It's a more common situation than either Microsoft or Google seems to design for.
 
-Here's what actually works: you can subscribe to a Google Calendar inside Outlook (or vice versa) using an ICS link. This gives you a read-only view of one calendar inside the other. Events show up, but you can't edit them from the subscribed side, and **updates can take hours to sync** — sometimes longer. It's a view, not a true integration.
+Here's what actually works: you can subscribe to a Google Calendar inside Outlook (or vice versa) using an ICS link. This gives you a read-only view of one calendar inside the other. Events show up, but you can't edit them from the subscribed side, and **updates can take hours to sync** — sometimes longer. It's a view, not a true integration. That read-only, slow-refresh pattern isn't unique to Microsoft's side of the fence, either — bridging [Google Calendar and Apple Calendar](/blog/google-calendar-vs-apple-calendar) through a webcal subscription runs into the same one-way limitation.
 
 For two-way sync — where changes in either calendar update the other — you need a third-party tool. I've tried a couple but haven't settled on one I'd fully recommend yet. They work, but they add another subscription, another set of permissions, and another thing that can break when an API changes. I'm one data point — your experience might be different.
 

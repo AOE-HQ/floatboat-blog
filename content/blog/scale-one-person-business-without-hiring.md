@@ -29,7 +29,7 @@ I've been thinking about this more carefully lately, and I think a lot of confus
 
 **Scaling revenue** means your income goes up. That can happen by raising prices, getting more clients, or selling something that doesn't require proportionally more of your time. All of these are valid.
 
-**Scaling yourself** means adding more hours. Working weekends. Taking every call. That's not scaling — that's just grinding, and it has a hard ceiling. Your body will find it eventually.
+**Scaling yourself** means adding more hours. Working weekends. Taking every call. That's not scaling — that's just grinding, and it has a hard ceiling. Your body will find it eventually. It's also the opposite of where the productivity conversation is heading — [OpenAI's four-day work week proposal](/blog/openai-4-day-work-week-one-person-company) rests on the premise that AI-driven gains should come back as time, not as more hours to fill.
 
 Scaling means creating repeatable workflows, reducing constant custom work, building predictable income, and increasing capacity without burning yourself out. It's about designing a business that can grow without relying on nonstop hustle.
 

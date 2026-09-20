@@ -24,7 +24,7 @@ The United States co-hosts the largest World Cup in history — 78 of 104 matche
 
 
 
-All three US matches kick off at 7:00 PM Pacific — prime time on the West Coast, late evening on the East Coast. Turkey won UEFA Playoff C in March 2026 to claim the final Group D spot.
+All three US matches kick off at 7:00 PM Pacific — prime time on the West Coast, late evening on the East Coast. The US matches are three of 104; [how the other 101 spread across four time zones](/blog/world-cup-2026-schedule) is the rest of that picture. Turkey won UEFA Playoff C in March 2026 to claim the final Group D spot.
 
 ### The Group D Picture
 
@@ -48,7 +48,7 @@ The USMNT's tournament history provides context for the expectations. The team r
 
 SoFi Stadium in Los Angeles and Lumen Field in Seattle are two of the most modern venues in the tournament. SoFi (capacity ~70,000 for World Cup configuration) is an indoor-outdoor stadium with a transparent roof — the match atmosphere is contained, and the climate is controlled regardless of Southern California's June heat. Lumen Field (~69,000) is an open-air stadium in Seattle's downtown core, known for one of the loudest crowd environments in American sports — the "12th Man" effect that has registered on seismographs during Seahawks games will be a factor in the USMNT's second group match against Australia.
 
-Both venues are accessible by public transit. SoFi is served by the Metro C Line and shuttle buses from downtown LA. Lumen Field is a 10-minute walk from Seattle's King Street Station, with light rail connections to Sea-Tac Airport. For fans traveling between the two cities, Alaska Airlines and Delta operate multiple daily nonstop flights (SEA–LAX, ~2.5 hours), making a West Coast doubleheader logistically viable for those planning to attend both matches in person.
+Both venues are accessible by public transit. SoFi is served by the Metro C Line and shuttle buses from downtown LA. Lumen Field is a 10-minute walk from Seattle's King Street Station, with light rail connections to Sea-Tac Airport. For fans traveling between the two cities, Alaska Airlines and Delta operate multiple daily nonstop flights (SEA–LAX, ~2.5 hours), making a West Coast doubleheader logistically viable for those planning to attend both matches in person. Zooming out, [how all 16 host cities group into travel regions](/blog/where-is-world-cup-2026-host-cities) is what turns a venue list into an actual trip plan.
 
 ## USA-Hosted Matches: The Big Picture
 

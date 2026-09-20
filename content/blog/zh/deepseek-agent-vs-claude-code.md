@@ -26,7 +26,7 @@ draft: false
 
 Claude Code 是具体产品——Anthropic 的终端编程 Agent，拥有明确的工作流、权限模型与 Claude 模型的原生集成。开发者说「Claude Code」时，指的是那个框架：plan 模式、diff 审查、子 Agent 派生、`/compact` 命令、测试反馈循环。
 
-「DeepSeek Agent」是品类，不是产品。它描述任何以 DeepSeek 模型为主要推理引擎的 Agent，包括 DeepSeek-TUI（围绕 V4 构建的 Rust 终端 Agent）、Reasonix（缓存优先的编程 Agent）、Deep Code（VS Code 扩展）——以及，关键的是——当你把它指向 DeepSeek 的 Anthropic 兼容端点时的 Claude Code 本身，参见 [DeepSeek 的 Agent 集成指南](https://api-docs.deepseek.com/guides/coding_agents)。
+「DeepSeek Agent」是品类，不是产品。它描述任何以 DeepSeek 模型为主要推理引擎的 Agent，包括 DeepSeek-TUI（围绕 V4 构建的 Rust 终端 Agent）、Reasonix（缓存优先的编程 Agent）、Deep Code（VS Code 扩展）——以及，关键的是——当你把它指向 DeepSeek 的 Anthropic 兼容端点时的 Claude Code 本身，参见 [DeepSeek 的 Agent 集成指南](https://api-docs.deepseek.com/guides/coding_agents)。品类之所以容易混淆，还因为「Agent」本身就是这个行业被用得最松的词——一个工具算 [AI Agent 还是 AI 助手](/zh/blog/ai-agent-vs-ai-assistant)，分界在于它是动手操作你的系统，还是只给建议，而厂商宣传常常把这条线往两个方向都拉扯。
 
 所以多数开发者真正想要的对比不是「DeepSeek Agent vs Claude Code」，而是「配 DeepSeek 的 Claude Code vs 配 Opus 的 Claude Code」——同一个框架、不同模型、不同成本与能力画像。本文两种视角都覆盖：框架对比（Claude Code vs DeepSeek-TUI 等 DeepSeek 原生 Agent）与模型对比（同一框架内的 Opus vs V4 Pro）。本文所依据的四种 DeepSeek Agent 原型的结构化概览，见 [什么是 DeepSeek Agent](/zh/blog/what-is-deepseek-agent)，那里定义了完整的分类体系。
 
@@ -94,7 +94,7 @@ DeepSeek V4 Pro 的定价——每百万输入 token 0.435 美元（缓存未命
 
 ## 7\. 什么时候 DeepSeek Agent 赢
 
-**成本是硬约束的高体量 Agent 循环。**每条 PR 的代码审查、自动化测试生成、lint 修复、文档更新、依赖升级——这些任务每天跑几百次，质量线是「够好」而非「架构完美」。V4 Flash 单次典型任务 0.007 美元，让这类自动化在经济上可行，而 Opus 定价做不到。
+**成本是硬约束的高体量 Agent 循环。**每条 PR 的代码审查、自动化测试生成、lint 修复、文档更新、依赖升级——这些任务每天跑几百次，质量线是「够好」而非「架构完美」。V4 Flash 单次典型任务 0.007 美元，让这类自动化在经济上可行，而 Opus 定价做不到。这类循环也把 [Agent 与 Chatbot 的结构性分界](/zh/blog/ai-agent-vs-chatbot) 磨得更清晰：工作是跑在定时任务和 PR 上的，不是停在等有人输入提示词的聊天窗口里。
 
 **并行子 Agent 架构。** DeepSeek-TUI 的 RLM 扇出——1 个 V4 Pro 协调者派生最多 16 个 V4 Flash 工作器——在 Opus 定价下经济上不合理（25.00 美元/M 输出 × 16 个并行 Agent），在 V4 Flash 定价下却显然成立（0.28 美元/M 输出 × 16）。如果你的工作流受益于并行探索（同时试多种实现方案、并行扫描代码库的不同区域），DeepSeek 原生 Agent 提供了通用框架没有的架构模式。
 
@@ -102,7 +102,7 @@ DeepSeek V4 Pro 的定价——每百万输入 token 0.435 美元（缓存未命
 
 **为非编程任务构建自定义 Agent 的开发者。**如果你的 Agent 要查询内部 API、自动化业务工作流或与专有系统交互，那么无论用哪个编程框架，你都在构建自定义 Agent 循环。[如何构建 DeepSeek Agent](/zh/blog/how-to-build-deepseek-agent) 覆盖了循环架构——API 设置、工具调用、你需要的生产模式——而不强迫你进入编程专用框架。[DeepSeek Agent 函数调用](/zh/blog/deepseek-agent-function-calling) 更深入探讨了工具调用层本身，从 schema 设计到 MCP 集成。
 
-**想让 DeepSeek 在真实桌面上干活、却不是开发者的人。** Claude Code 和 DeepSeek-TUI 都活在终端里。如果你不是开发者——或者你是，但某些任务不想碰命令行——[Floatboat DeepSeek Agent](https://deepseek-agent.com) 这类桌面客户端把同样的 V4 推理放到 GUI 后面：读取本地文件、驱动浏览器、记住你的偏好、按计划跑自动化。不需要 API key、不需要终端、不需要自建 Agent 循环。代价与其他托管工具对 DIY 工具一样：对工具表面的控制更少，换来零搭建时间。
+**想让 DeepSeek 在真实桌面上干活、却不是开发者的人。** Claude Code 和 DeepSeek-TUI 都活在终端里。如果你不是开发者——或者你是，但某些任务不想碰命令行——[Floatboat DeepSeek Agent](https://deepseek-agent.com) 这类桌面客户端把同样的 V4 推理放到 GUI 后面：读取本地文件、驱动浏览器、记住你的偏好、按计划跑自动化。本地文件加浏览器操控加定时自动化，这个组合恰恰落在 [浏览器 Agent、AI 浏览器与 AI 工作区](/zh/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace) 三类产品的分界线上——而厂商宣传时最爱把三者混为一谈。不需要 API key、不需要终端、不需要自建 Agent 循环。代价与其他托管工具对 DIY 工具一样：对工具表面的控制更少，换来零搭建时间。
 
 ## 8\. 混合方案：以 DeepSeek 为后端的 Claude Code
 
@@ -122,7 +122,7 @@ DeepSeek 官方的 awesome-deepseek-agent 清单把 Claude Code 收进其集成�
 
 ## 结语
 
-Claude Code 与 DeepSeek Agent 并非两个 SaaS 产品那种直接竞争。Claude Code 是框架；DeepSeek Agent 是品类。有意义的对比发生在模型层（同一框架内的 Opus vs V4 Pro）与架构层（Claude Code 的工作流 vs DeepSeek-TUI 的 RLM 扇出 vs 自定义 Agent 循环）。
+Claude Code 与 DeepSeek Agent 并非两个 SaaS 产品那种直接竞争。Claude Code 是框架；DeepSeek Agent 是品类。有意义的对比发生在模型层（同一框架内的 Opus vs V4 Pro）与架构层（Claude Code 的工作流 vs DeepSeek-TUI 的 RLM 扇出 vs 自定义 Agent 循环）。这两层决策又都嵌在一个更大的选择里——工作流到底该托付给哪个 [AI Agent 平台](/zh/blog/best-ai-agent-platform-2026)——多数团队是默认滑进去的，而不是主动选的。
 
 配 Opus 的 Claude Code 在最难的仓库级工程任务上仍然获胜——SWE-bench Pro 那 14 个百分点的差距不是营销话术，它反映的是多文件架构推理上的真实差异。DeepSeek V4 在成本（输出 token 28 倍差距）、算法编程基准、终端 Agent 任务，以及任何受益于廉价并行执行的架构上获胜。
 

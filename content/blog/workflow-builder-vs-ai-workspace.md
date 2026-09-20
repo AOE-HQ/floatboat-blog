@@ -97,7 +97,7 @@ Genuinely, both categories have real gaps worth naming.
 
 **Workflow​ builders** struggle with ambiguity. If your input data is messy, or your process branches in unexpected ways, the AI generates workflows that look correct but break in production. You spend hours re-prompting instead of fixing a simple bug. Maintenance overhead is real and often invisible in demos.
 
-**AI workspaces** struggle with scale and reliability. They're great at understanding context — less great at running the same process 500 times without variation. They can feel "soft" when you actually need something deterministic to just work.
+**AI workspaces** struggle with scale and reliability. They're great at understanding context — less great at running the same process 500 times without variation. That trade is really the line between [workspace agents and workflow builders](/blog/workspace-agents-vs-workflow-builders): one works alongside you and exercises judgment on whatever is in front of it, the other runs a defined pipeline the same way every time. They can feel "soft" when you actually need something deterministic to just work.
 
 As [The Digital Project Manager's review of AI workflow tools](https://thedigitalprojectmanager.com/tools/best-ai-workflow-tools/) notes, the best setups often combine both — a workspace for thinking and context, and a builder for the repeatable output layer. That's a more expensive and complex stack, but it's honest about what each tool actually does.
 

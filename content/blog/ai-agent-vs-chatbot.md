@@ -77,7 +77,7 @@ My personal rule of thumb: **does the task end at the answer, or does it start t
 
 Ask yourself "what's the difference between REST and GraphQL" — that ends at the answer. A chatbot is perfect. Fast, cheap, zero overhead.
 
-Ask yourself "monitor this competitor's site every morning, summarize new content, and send it to my Slack" — that starts at the answer. There's a loop. There are external systems. There are steps that depend on previous steps. That's an agent task.
+Ask yourself "monitor this competitor's site every morning, summarize new content, and send it to my Slack" — that starts at the answer. There's a loop. There are external systems. There are steps that depend on previous steps. That's an agent task — and once you're there, the next question is whether those steps are stable enough to encode in a workflow builder or better left to [an AI workspace](/blog/workflow-builder-vs-ai-workspace) that carries the context for you.
 
 There's also a practical cost consideration worth knowing: ​**agents are more expensive to run** ​. Each step in a plan typically requires at least one LLM call. A three-step agent task can easily cost 5–10x more than a single chatbot response. For simple, well-defined queries, that overhead is pure waste.
 

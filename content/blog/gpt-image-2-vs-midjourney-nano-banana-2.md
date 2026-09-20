@@ -89,7 +89,7 @@ It also still has weaknesses on pixel-precise placement, brand logo accuracy, an
 
 **Leads:** raw aesthetic quality. If your output is moodboards, concept art, editorial visuals, or anything where "looks beautiful" matters more than "is technically accurate," V8 still has the edge. The painterly textures, the cinematic lighting, the way it handles atmosphere — nothing else feels quite the same. The [V8 alpha launch notes](https://wavespeed.ai/blog/posts/what-is-midjourney-v8-features-pricing-how-to-use-2026/) lay out the speed and quality jumps; the 5x speed improvement alone makes V7 feel old.
 
-**Falls behind:** anything text-heavy, multilingual, or production-pipeline focused. No public API still hurts for solo operators trying to integrate generation into their workflow. The GPU-hour pricing model is opaque — you can't predict your monthly cost the way you can with a per-image rate. And character consistency, while improved, still requires more prompt-engineering work than the alternatives.
+**Falls behind:** anything text-heavy, multilingual, or production-pipeline focused. No public API still hurts for solo operators trying to integrate generation into their workflow — [agentic AI tools](/blog/agentic-ai-tools) assemble multi-step pipelines by calling models through APIs, so a generator without one sits outside the automation regardless of image quality. The GPU-hour pricing model is opaque — you can't predict your monthly cost the way you can with a per-image rate. And character consistency, while improved, still requires more prompt-engineering work than the alternatives.
 
 ## Nano Banana 2 — the web-search edge and who it fits
 

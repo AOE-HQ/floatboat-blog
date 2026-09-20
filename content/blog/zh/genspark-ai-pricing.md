@@ -75,7 +75,7 @@ _（发布前请核实：Genspark 会不定期调整定价与积分配比。发�
 
 ## 与同类工具比价
 
-最自然的对比是每月 20 美元的 ChatGPT Plus、每月 20 美元的 Perplexity Pro，以及 Midjourney（每月 10–60 美元）这类独立媒体工具。
+最自然的对比是每月 20 美元的 ChatGPT Plus、每月 20 美元的 Perplexity Pro，以及 Midjourney（每月 10–60 美元）这类独立媒体工具。真正和 Genspark 同一种计价方式的竞品只有一个——按 Agent 任务烧积分，而不是收一笔固定的月度聊天费——那就是 [Manus](/zh/blog/genspark-vs-manus)。计费模型相同，它才是这个品类里唯一货真价实的同口径比价对象。
 
 Genspark 的说辞是它把**调研、聊天、图片生成、视频创作、演示文稿和 AI Agent 打包进一个订阅**。纸面上，25 美元一个月是不少价值。如果你现在同时为两三个 AI 工具付费，合并进 Genspark 确实可能降低总支出。
 

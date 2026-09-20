@@ -129,7 +129,7 @@ For teams or developers who want a more robust framework for thinking about auto
 
 Let me be honest about when this actually makes sense to invest in.
 
-**It pays off when the workflow runs frequently and the manual version is genuinely tedious.** Pulling a weekly digest of project updates from multiple Feishu spaces and piping it into your notes? Worth setting up. Running the same thing once a month? Probably not — the maintenance cost will exceed the time saved.
+**It pays off when the workflow runs frequently and the manual version is genuinely tedious.** Pulling a weekly digest of project updates from multiple Feishu spaces and piping it into your notes? Worth setting up. Running the same thing once a month? Probably not — the maintenance cost will exceed the time saved. That frequency test is really the whole question of [when Lark CLI is worth building and when to skip it](/blog/lark-cli-when-to-use-it), and it deserves an answer before you write any setup code.
 
 **It pays off when the failure mode is low-stakes.** Read-only pipelines that pull information for your own reference are much lower risk than action-execution workflows that send messages or modify shared records. Start with the former; graduate to the latter only after you've lived with the setup for a while.
 

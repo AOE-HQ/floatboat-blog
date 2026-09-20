@@ -93,7 +93,7 @@ Custom GPTs cover a surprising amount of ground before you need to level up. But
 
 You'll probably outgrow them when you need real-world actions — sending emails, updating spreadsheets, posting to Slack — without manually approving each step. That's where Agent Mode comes in, available on Plus ($20/month), Pro, and Team plans. I checked the current pricing on [ChatGPT's official pricing page](https://chatgpt.com/pricing/) — Plus has been $20/month since launch, which still feels fair for what you get.
 
-Custom GPTs also don't maintain memory across sessions. Each conversation starts fresh. If persistent memory matters for your workflow, that's another reason to look at Agent Mode or the Assistants API.
+Custom GPTs also don't maintain memory across sessions. Each conversation starts fresh. If persistent memory matters for your workflow, that's another reason to look at Agent Mode or the Assistants API. And once you step past those workarounds into building your own, [what building a complete agent actually involves](/blog/how-to-build-an-ai-agent) changes shape: state, error handling, and maintenance stop being someone else's problem.
 
 The rule I use: if I'm spending more time working around a GPT's limitations than it's saving me, it's time to move to the next tool.
 

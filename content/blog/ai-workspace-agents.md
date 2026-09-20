@@ -105,7 +105,7 @@ This sounds small. It's not. Context-switching overhead is where a huge chunk of
 
 The more useful workspace agents let you capture a sequence of actions as something you can reuse. Some call these skills, some call them combos, some call them workflows. The naming isn't settled. The shape is: you did something once, and now the agent can do something similar next time without you re-explaining it.
 
-This is where workspace agents start resembling workflow builders — just shaped by demonstration instead of by diagram.
+This is where workspace agents start resembling workflow builders — just shaped by demonstration instead of by diagram — and once the same sequence keeps coming back, [whether to build that orchestration yourself or run it inside a workspace](/blog/dynamic-workflows-build-or-use-workspace) becomes the real fork in the road.
 
 ## Who workspace agents are built for
 

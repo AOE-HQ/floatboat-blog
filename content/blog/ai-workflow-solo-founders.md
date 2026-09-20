@@ -31,7 +31,7 @@ Last month I mapped out everything I do in a typical week. Content research, wri
 
 The standard advice is: use ChatGPT for writing, [Zapier for automation](https://zapier.com/workflows), Notion for project management, and maybe a separate tool for research. That's four tools, four logins, four sets of context that don't talk to each other. Each one knows a tiny slice of your work, but ​**none of them know how your work actually fits together** ​.
 
-I used to think more tools meant more productivity. I don't anymore.
+I used to think more tools meant more productivity. I don't anymore — the more convincing framing I've come across is [role-based AI workflows](/blog/what-gstack-gets-right-about-one-person-businesses), where each of those five jobs gets an AI with a defined role and its own context, instead of five tools that share none.
 
 ![22.PNG](/blog/images/ai-workflow-solo-founders/1775794469214-45bbbaf7-1e3c-4c4a-a8e7-feb28560363d.webp)
 

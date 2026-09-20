@@ -27,7 +27,7 @@ The key word is ​ _terminal_ ​. That black-box window developers use. Claude
 
 ### What "Agentic Coding" Means for Non-Coders
 
-When people say "agentic," they mean the tool takes multiple steps on its own. You say "build a login page," and Claude Code figures out the file structure, writes the components, runs the tests, and flags what broke. It functions more like an autonomous junior developer than a chat assistant.
+When people say "agentic," they mean the tool takes multiple steps on its own. You say "build a login page," and Claude Code figures out the file structure, writes the components, runs the tests, and flags what broke. It functions more like an autonomous junior developer than a chat assistant. It's also a window into where [AI agents are heading in 2026](/blog/ai-agents-2026-solo-operators) — less answering questions, more executing multi-step work on their own.
 
 That's genuinely powerful. But the word _codebase_ appears everywhere in its documentation . For a reason — it assumes you have one, or are building one. **This is not a smarter****[Claude.ai](http://Claude.ai)****chat window. It's something much more targeted.**
 
@@ -119,15 +119,15 @@ Mastering prompt structure and Claude's Projects feature will help you more than
 
 ### What "Building Your Own AI Tools" Actually Costs
 
-Claude Code does unlock something real: you can technically build mini-apps, scrapers, and internal automations without hiring a developer. For some people, that genuinely changes what's possible.
+Claude Code does unlock something real: you can technically build mini-apps, scrapers, and internal automations without hiring a developer. For some people, that genuinely changes what's possible. "Building your own" reaches further than code, too — even [wiring Feishu CLI into a solo work setup](/blog/feishu-cli-solo-work-setup) turns out to be a real project once maintenance enters the picture.
 
 But let's be clear about the full cost. It's not just $20/month. It's the learning time, the debugging sessions when something breaks for an unclear reason, and — as [Anthropic's documentation itself notes](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan) — the fact that both Claude chat and Claude Code draw from the same usage limit. Heavy coding sessions can eat into your regular Claude budget unexpectedly.
 
-I've watched enough people go down this road to say: without some coding foundation, the returns diminish fast. You'll spend more time fighting the tool than using it.
+I've watched enough people go down this road to say: without some coding foundation, the returns diminish fast. You'll spend more time fighting the tool than using it — time that, while you're still [working toward your first 100 customers](/blog/first-100-customers-solo-founder), almost always has better uses.
 
 ### Where These Lands
 
-If you're a solo operator without a coding background, the highest-ROI move is almost never "learn Claude Code." It's: get genuinely good at the AI tools already built for your workflow.
+If you're a solo operator without a coding background, the highest-ROI move is almost never "learn Claude Code." It's: get genuinely good at the AI tools already built for your workflow — and because [AI doesn't know how you work until you teach it](/blog/ai-workflow-for-solo-founders), how well a tool fits your working style matters more than how capable it is.
 
 Going deep on Claude's existing chat features, Projects, and Cowork will help you more than a terminal ever will for the kind of work most solo operators actually do.
 

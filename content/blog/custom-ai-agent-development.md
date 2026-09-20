@@ -85,7 +85,7 @@ Some businesses run on internal systems that simply don't have clean APIs — or
 
 If a custom agent saves your team 20 hours/week at $75/hour, that's roughly $6,000/month in recovered capacity. A $60,000 build pays back in 10 months. If it saves 3 hours/week? Math falls apart entirely.
 
-Do the break-even calculation before the vendor conversation.
+Do the break-even calculation before the vendor conversation — and walk in already clear on [what an AI agent development service actually involves](/blog/ai-agent-development-services), because that's the question most vendor pitches are designed to blur.
 
 ## When It Probably Isn't Worth It
 

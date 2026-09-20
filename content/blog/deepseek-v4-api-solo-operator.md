@@ -55,7 +55,7 @@ Here's the comparison across the three major options at the flagship level:
 
 V4 pricing ranges reflect lower and upper projections from multiple analyst sources. Official pricing will only be confirmed at launch. Current live API pricing from DeepSeek official docs. GPT-5.4 and Grok pricing as of April 2026.
 
-According to OpenAI's official pricing page, GPT-5.4 costs $2.50 per million input tokens and $15.00 per million output tokens **Get AI Perks** — and that's before you hit the 272K context threshold, where input costs double. Grok 4.1 Fast comes in at $0.20 per million input tokens with a 2-million-token context window, cheaper per token than GPT-5 mini, Gemini Flash, and every Anthropic model.
+According to OpenAI's official pricing page, GPT-5.4 costs $2.50 per million input tokens and $15.00 per million output tokens **Get AI Perks** — and that's before you hit the 272K context threshold, where input costs double. Grok 4.1 Fast comes in at $0.20 per million input tokens with a 2-million-token context window, cheaper per token than GPT-5 mini, Gemini Flash, and every Anthropic model. Budget pricing for individual builders is not new here — [opening the API itself to lower the solo cost barrier](/blog/grok-3-api-solo-operator) was xAI's earlier move, and the Fast tier extends it.
 
 The gap is real. But let me get into what it actually means.
 
@@ -89,13 +89,13 @@ But here's the honest version: for most of us running one-person content, resear
 
 I spent some time last month mapping out where I actually lose time in AI-assisted workflows. The breakdown was roughly: setup and prompt engineering (a lot), context management across long sessions (more than expected), and inference cost (almost none). The model cost was invisible in my day.
 
-The friction isn't tokens. It's designing workflows that don't break, maintaining context across complex tasks, and the human time to review outputs.
+The friction isn't tokens. It's designing workflows that don't break, maintaining context across complex tasks, and the human time to review outputs. That is also where model competition is heading — [how solo operators run long-context, Google-heavy workflows](/blog/gemini-3-5-integration-solo-operators) is becoming a bigger differentiator than another decimal off the price.
 
 ## The Costs That Don't Go Away
 
 ### Setup Time and Workflow Design
 
-Switching to a new model isn't free. Even with OpenAI-compatible APIs (which DeepSeek uses), you still need to test prompts, validate outputs, and rebuild any tool integrations. That's time.
+Switching to a new model isn't free. Even with OpenAI-compatible APIs (which DeepSeek uses), you still need to test prompts, validate outputs, and rebuild any tool integrations. That's time — the switching tax that [every new flagship launch marketed at solo businesses](/blog/meta-muse-spark-one-person-company) carries, whatever the benchmarks say.
 
 I'd estimate a real migration from a working GPT-5 setup to DeepSeek takes somewhere between a few hours and a few days depending on complexity — not plug-and-play.
 

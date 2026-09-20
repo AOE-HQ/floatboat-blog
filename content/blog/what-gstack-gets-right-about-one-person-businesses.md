@@ -69,7 +69,7 @@ I can't give you a controlled experiment. But I've run this pattern consistently
 
 There's a real reason role boundaries improve AI output — it's not just placebo.
 
-[Research from the St. Louis Fed summarizing recent AI productivity studies](https://www.stlouisfed.org/open-vault/2025/oct/generative-ai-productivity-future-work) found that workers who used AI daily saved an average of 5.4% of their work hours, or roughly 2.2 hours per week in a 40-hour week. But the gains weren't evenly distributed. Workers who integrated AI into structured, task-specific workflows saw the highest time savings — not the ones who used it as a general-purpose chat tool.
+[Research from the St. Louis Fed summarizing recent AI productivity studies](https://www.stlouisfed.org/open-vault/2025/oct/generative-ai-productivity-future-work) found that workers who used AI daily saved an average of 5.4% of their work hours, or roughly 2.2 hours per week in a 40-hour week. But the gains weren't evenly distributed. Workers who integrated AI into structured, task-specific workflows saw the highest time savings — not the ones who used it as a general-purpose chat tool. That line between structure and general-purpose chat is exactly where [an AI workflow for solo founders](/blog/ai-workflow-solo-founders) tends to succeed or fail.
 
 The mechanism: **when you give a language model a constrained role with clear scope, you reduce the ambiguity of what counts as a "good" output.** The model isn't trying to satisfy multiple simultaneous goals. It's optimizing for one thing — the thing you actually need right now.
 

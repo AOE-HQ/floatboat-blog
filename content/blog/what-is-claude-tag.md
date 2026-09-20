@@ -72,9 +72,9 @@ The official help center states that Claude Tag is available on Team and Enterpr
 
 Boundary clarity prevents expensive tool mismatches.
 
-Claude Tag is **not Claude Cowork**. Cowork is a user-initiated desktop agent for local folders and connectors inside the Claude app; Tag is a **channel-native shared worker** inside Slack. For the full Cowork definition and when knowledge workers should use desktop delegation, see what is Claude Cowork.
+Claude Tag is **not [Claude Cowork](/blog/what-is-claude-cowork)**. Cowork is a user-initiated desktop agent for local folders and connectors inside the Claude app; Tag is a **channel-native shared worker** inside Slack. For the full Cowork definition and when knowledge workers should use desktop delegation, see what is Claude Cowork.
 
-Claude Tag is **not Claude Code**. Code targets repositories, tests, and deployments through terminals and IDEs. Tag may open pull requests when granted Git access, but its design center is **team coordination in Slack** , not pair programming.
+Claude Tag is **not [Claude Code](/blog/what-is-claude-code)**. Code targets repositories, tests, and deployments through terminals and IDEs. Tag may open pull requests when granted Git access, but its design center is **team coordination in Slack** , not pair programming.
 
 Claude Tag is **not Slack AI or Slackbot**. Slack's native AI layer excels at **reading** your workspace — thread summaries, search answers, channel recaps, huddle notes — within existing paid plans. Tag **executes** multi-step work across connected systems and returns artifacts in-thread. Many teams run both: Slack AI for catch-up, Tag for delegated execution in specific channels.
 
