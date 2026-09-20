@@ -26,11 +26,7 @@ import {
   buildBreadcrumbJsonLd,
   getArticleBreadcrumbItems,
 } from "@/lib/schema";
-import {
-  getAdjacentPosts,
-  getPostBySlug,
-  getRelatedPosts,
-} from "@/lib/posts";
+import { getAdjacentPosts, getPostBySlug } from "@/lib/posts";
 
 const features = resolveFeatures(config);
 const locale = "zh" as const;
@@ -90,9 +86,6 @@ export default async function ZhBlogPostPage({ params }: PageProps) {
 
   const pageUrl = helpers.absoluteUrl(helpers.postPath(post.slug));
   const optional = resolveOptionalComponents(config);
-  const relatedPosts = optional.relatedPosts
-    ? getRelatedPosts(post, locale)
-    : [];
   const adjacentPosts = optional.prevNext
     ? getAdjacentPosts(slug, locale)
     : { prev: null, next: null };
@@ -113,7 +106,6 @@ export default async function ZhBlogPostPage({ params }: PageProps) {
       <ArticleLayout
         post={post}
         pageUrl={pageUrl}
-        relatedPosts={relatedPosts}
         adjacentPosts={adjacentPosts}
       />
       {post.faq && post.faq.length > 0 ? (

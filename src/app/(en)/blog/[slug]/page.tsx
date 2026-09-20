@@ -23,7 +23,7 @@ import {
   buildBreadcrumbJsonLd,
   getArticleBreadcrumbItems,
 } from "@/lib/schema";
-import { getAdjacentPosts, getPostBySlug, getRelatedPosts } from "@/lib/posts";
+import { getAdjacentPosts, getPostBySlug } from "@/lib/posts";
 
 const features = resolveFeatures(config);
 
@@ -81,7 +81,6 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const pageUrl = absoluteUrl(postPath(post.slug));
   const optional = resolveOptionalComponents(config);
-  const relatedPosts = optional.relatedPosts ? getRelatedPosts(post) : [];
   const adjacentPosts = optional.prevNext ? getAdjacentPosts(slug) : { prev: null, next: null };
   const breadcrumbs = getArticleBreadcrumbItems(post.title, post.slug);
   const popup = resolvePopupForPost(post.slug, "en");
@@ -97,7 +96,6 @@ export default async function BlogPostPage({ params }: PageProps) {
       <ArticleLayout
         post={post}
         pageUrl={pageUrl}
-        relatedPosts={relatedPosts}
         adjacentPosts={adjacentPosts}
       />
       {post.faq && post.faq.length > 0 ? (
