@@ -122,12 +122,3 @@ These aren't generic "ask about their portfolio" questions. These are the ones t
 That's my honest take on where ai automation agency pricing stands right now. The market is still maturing, the price ranges are wide, and the quality gap between agencies is real. If you're evaluating this spend, the best thing you can do is get specific — specific about what you need automated, specific about what success looks like, and specific about what happens after the build is done.
 
 Alright, that's today's little discovery. If you're going through this evaluation yourself, I'd be curious what you find.
-
-### Further Reading
-
-  * 👉 [Real AI Agent Use Cases: What They Actually Look Like in Practice](/blog/ai-agent-use-cases-real-examples)
-
-  * 👉 [How Solo Founders Are Using AI to Operate Like a Team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * 👉 [Lindy vs Gumloop: A Practical Comparison of AI Automation Tools](/blog/lindy-vs-gumloop)
-

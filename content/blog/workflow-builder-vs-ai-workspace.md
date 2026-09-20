@@ -114,16 +114,3 @@ As [The Digital Project Manager's review of AI workflow tools](https://thedigita
 The honest answer for a lot of solo operators is: **start with the workspace, add ​workflow** ​**​ automation for the specific tasks that are actually repetitive.** Don't build the full ops stack before you know which parts of your work are actually stable enough to automate. According to [Cybernews' breakdown of AI workflow builders](https://cybernews.com/ai-tools/best-ai-workflow-builder/), even among technically capable users, the most common mistake is over-engineering automation for work that hasn't stabilized yet.
 
 ![951dc46e1378298d1b3f45aec0389fdb.png](/blog/images/workflow-builder-vs-ai-workspace/1774257973478-6bef8d1b-c0ba-46fa-a07a-7c52cae854a7.webp)
-
-## Previous Posts:
-
-  * [Compare how Lindy and Gumloop differ when building agent-style workflows.](/blog/lindy-vs-gumloop)
-
-  * [Explore real-world AI agent use cases across research, content, and operations.](/blog/ai-agent-use-cases-real-examples)
-
-  * [See how one-person businesses are starting to operate like a full team using AI roles.](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [Learn how AI automation work is actually priced in the real market.](/blog/ai-automation-agency-pricing)
-
-  * [Understand the difference between AI agents and assistants in real workflows.](/blog/ai-agent-vs-ai-assistant)
-

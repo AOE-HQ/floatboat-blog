@@ -88,16 +88,3 @@ That's actually what got me looking into [Floatboat](</>). It's not replacing Go
 ![5.png](/blog/images/google-calendar-vs-apple-calendar/1779853874835-7180bfeb-d5e2-4523-a9c2-6ba4f9b1c035.webp)
 
 That's my honest take. The "which is better" framing is a bit misleading — what actually matters is which one fits the way you work. And if you've already figured that part out but your weeks still feel like you're manually chasing every task your calendar surfaces — maybe the next question isn't about which calendar to use. It's about what happens after the reminder fires. That's where Floatboat comes in, and where I've been spending my time lately.
-
-## Previous Posts:
-
-• Constantly jumping between calendars, email, docs, and task apps? Read [Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent) to see why tool-switching quietly eats more time than most solo operators realize.
-
-• If your calendar keeps reminding you about work but never actually moves it forward, [Workspace Agents for Solo Operators](/blog/workspace-agents-for-solo-operators) breaks down what happens after scheduling ends.
-
-• A packed calendar doesn't always mean meaningful progress. [AI Workflow for Solo Founders](/blog/ai-workflow-for-solo-founders) looks at why productive-looking systems still create manual work.
-
-• Wondering whether you need another assistant or something more proactive? [Workspace Agents vs Chat Assistants](/blog/workspace-agents-vs-chat-assistants) compares the two through everyday workflows.
-
-• Rebuilding the same weekly tasks over and over? [How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work) explores how recurring work loops can be handled differently.
-

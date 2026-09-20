@@ -96,16 +96,3 @@ You don't have to throw it away. You can keep the build for the parts where you 
 That's where I am with this right now. Dynamic Workflows is genuinely interesting if you're already living in Claude Code at the scale it's designed for. For most of the solo operators I talk to, the more honest answer is: you don't need a more powerful way to coordinate agents. You need fewer things falling through the cracks. Those aren't the same problem, and they don't have the same solution.
 
 Worth checking the official Claude Code docs before you commit either way — research previews change, and pricing and plan availability for Dynamic Workflows in particular are worth confirming against the latest documentation rather than what you read in a launch piece (including this one).
-
-## Previous Posts
-
-[How to Scale a One-Person Business Without Hiring](/blog/scale-one-person-business-without-hiring)
-
-[Claude Managed Agents: What They Mean for Solo Companies](/blog/claude-managed-agents-one-person-company)
-
-[How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-[Why One-Person Companies Need a Workspace Agent](/blog/workspace-agents-for-solo-operators)
-
-[Workspace Agents vs Workflow Builders: A Clear Comparison](/blog/workspace-agents-vs-workflow-builders)
-

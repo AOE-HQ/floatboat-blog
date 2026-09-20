@@ -122,12 +122,3 @@ draft: false
 以上就是我对当前 AI 自动化机构定价现状的真实看法。市场仍在成熟，价格区间很宽，机构之间的质量差距真实存在。如果你正在评估这笔支出，最好的做法是把话说具体——具体到你要自动化什么、成功长什么样、以及搭建完成之后会发生什么。
 
 好了，这就是今天的一点小发现。如果你也正在做同样的评估，我很想知道你会得出什么结论。
-
-### 延伸阅读
-
-  * 👉 [AI Agent 真实用例：实践中到底长什么样](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * 👉 [单人创始人如何用 AI 像团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * 👉 [Lindy vs Gumloop：AI 自动化工具的实用对比](/zh/blog/lindy-vs-gumloop)
-

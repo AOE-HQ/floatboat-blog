@@ -96,18 +96,3 @@ The question isn't which category is most advanced. It's which one matches the t
 I'm still experimenting with the higher-autonomy end of this. There's more here I haven't figured out. But after a year of using these tools at various levels, the thing that's consistently true: the operators getting the most out of agentic AI are the ones who started at the assistant level, learned the failure modes, and expanded autonomy deliberately from there.
 
 Not the ones who plugged in the most autonomous tool first and hoped for the best.
-
-## Previous Posts:
-
-### Previous Posts:
-
-  * Most people call everything “AI agents” now — but assistants, workflow agents, coding agents, and workspaces fail in very different ways: [AI workspace agents explained for solo operators](/blog/ai-workspace-agents)
-
-  * If you’re trying to understand where agentic workflows actually help (and where they quietly create more overhead), start here: [AI agent workflows and vibe coding for solo builders](/blog/ai-agent-workflow-vibe-coding)
-
-  * Why most solo operators over-focus on model quality when the real productivity gains usually come from workflow structure instead: [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
-
-  * Workflow builders and workspace agents sound similar in demos — but they solve different problems once your work crosses apps and files: [Workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * Claude Managed Agents, coding agents, and autonomous AI tools all sit on different points of the autonomy spectrum — this breakdown helps clarify the difference: [What are Claude Managed Agents?](/blog/what-are-claude-managed-agents)
-

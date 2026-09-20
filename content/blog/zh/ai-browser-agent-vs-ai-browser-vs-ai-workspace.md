@@ -144,16 +144,3 @@ SaaS 后台的活交给扩展，再加一个 AI 浏览器做调研；或者跨�
 以上是我对这三个品类现状的诚实看法。界线还会继续模糊下去——OpenAI 已经宣布要把 Atlas、Codex 和 ChatGPT 合并成一个应用。但结构性的差异是真实的，把正确的品类对上你真实的工作日，能省下大量试错成本。
 
 我还在继续试验。这一部分永远不会真正结束。
-
-## 延伸阅读
-
-  * 为什么你的 AI 工作流显得支离破碎：[真正的瓶颈不是模型，而是工具之间拼接的方式](/zh/blog/workspace-agents-for-solo-operators)
-
-  * 浏览器 Agent 与 AI 工作区：[理解预定义工作流与上下文感知 Agent 的区别](/zh/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace)
-
-  * [当你的工作横跨标签页、文件与 AI 工具时，如何停止上下文切换](/zh/blog/browser-ai-agent-what-it-can-do)
-
-  * 新的 AI 模型又发布了，该换吗？[关于为什么多数单人创业者高估了收益的务实看法](/zh/blog/ai-workspace-agents)
-
-  * [Claude Code on Linux：从浏览器里的 AI 转向终端原生工作流](/zh/blog/claude-managed-agents-one-person-company)
-

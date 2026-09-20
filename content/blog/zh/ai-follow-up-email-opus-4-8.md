@@ -104,16 +104,3 @@ Anthropic 于 2026 年 5 月下旬[发布了 Opus 4.8](https://www.anthropic.com
 以上就是我对 AI 跟进邮件的诚实看法。工作流不复杂，但需要一份像样的逐字稿和五分钟的复核。如果你的工作一周不止几场会，这很可能值得一试。
 
 接着回去搭东西了。
-
-## 往期文章
-
-[不招人也能扩张的一人公司是怎么做到的](/zh/blog/scale-one-person-business-without-hiring)
-
-[Claude Managed Agents：对一人公司意味着什么](/zh/blog/claude-managed-agents-one-person-company)
-
-[一人公司如何像一支团队一样用 AI](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-[为什么一人公司需要一个工作区 Agent](/zh/blog/workspace-agents-for-solo-operators)
-
-[工作区 Agent vs 工作流搭建器：一份清晰的对比](/zh/blog/workspace-agents-vs-workflow-builders)
-

@@ -146,16 +146,3 @@ AI 能不能访问你的文件、浏览器和项目历史，而不用你每次�
 如果你的配置跟我有点像，这个方向也许值得探索。我会继续试验，学到新东西再回来分享。
 
 继续做东西去了。
-
-## 往期文章：
-
-  * [如果「AI 忘记你的上下文」是个问题，这是为什么它每个会话都会发生](/zh/blog/why-ai-forgets-every-session)
-
-  * [好奇持久化 AI Agent 如何改变工作流模型？从这篇拆解看起](/zh/blog/what-is-persistent-ai-agent)
-
-  * [还是不确定 AI 工作区与传统工作流搭建器有何不同？这篇解释了转变](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [想要一个 AI 驱动的单人工作流实际长什么样的实例？看这套配置](/zh/blog/feishu-cli-solo-work-setup)
-
-  * [如果你好奇单人经营者日复一日如何靠 AI 放大产能，这篇值得一读](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

@@ -154,16 +154,3 @@ Floatboat 正是为这个转向而生。它不是更好的 Calendly 替代品，
 日历不是目的，是触发器。**最好的 AI 日程 Agent，是让日历产生产出、而不只是装着事件的那个。**
 
 * * *
-
-## 相关文章
-
-  * [FloatIM 正式上线：在 Agent 原生网络上与 AI Agent 群聊](/zh/blog/introducing-floatim)
-
-  * [单人经营者该不该用 AI Agent？](/zh/blog/ai-agent-solo-operators)
-
-  * [一人公司如何像团队一样用 AI 工作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-* * *
-
-_声明：Floatboat 是日历驱动的主动式 Agent OS（即本文定义的第 4 代），由 AOE Tech Labs Limited 开发。本文是基于公开信息的品类分析；第 1–3 代工具的描述基于截至 2026 年 6 月的公开文档与社区讨论。_
-

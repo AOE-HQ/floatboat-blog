@@ -104,16 +104,3 @@ What's worth paying attention to is the pattern. The agent infrastructure layer 
 If you're evaluating AI workspace tools (Floatboat, for instance, sits in that layer — integrating multiple AI capabilities into a single workspace flow), knowing that the underlying infrastructure question is increasingly "solved" by services like this helps you focus the right question: **does this tool use that infrastructure to actually reduce your thinking work, or is it still just a chat wrapper?**
 
 I'm still figuring out exactly what that bar looks like in practice. But I'll keep testing.
-
-**Previous posts:**
-
-  * [What is a Persistent AI Agent](/blog/what-is-persistent-ai-agent)
-
-  * [AI Agent vs AI Assistant](/blog/ai-agent-vs-ai-assistant)
-
-  * [How to Build an AI Agent for a One-Person Business](/blog/how-to-build-an-ai-agent)
-
-  * [AI Agent Use Cases: Real Examples](/blog/ai-agent-use-cases-real-examples)
-
-  * [Workflow Builder vs AI Workspace](/blog/workflow-builder-vs-ai-workspace)
-

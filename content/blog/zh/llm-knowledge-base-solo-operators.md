@@ -127,16 +127,3 @@ https://blog.langchain.dev/retrieval/
 _总之，这就是我的落脚点。我仍把 Karpathy 的帖子当作思考工具——但不是当作待办清单。如果你的处境确实符合深度研究的画像，它值得认真看一眼。对我们其余的人来说：也许有一条更轻的路，能让你拿到更多收益、缴更少的维护税。_
 
 下次见。
-
-## 延伸阅读
-
-  * **[判断为你的工作流自建定制 AI 系统是否真的说得通](/zh/blog/custom-ai-agent-development)**
-
-  * **[在决定自建知识系统之前，先搞懂 AI Agent 是怎么工作的](/zh/blog/how-to-build-an-ai-agent)**
-
-  * **[看看真实的 AI Agent 用例，理解知识系统到底在哪儿创造价值](/zh/blog/ai-agent-use-cases-real-examples)**
-
-  * **[看看单人创业者如何用 AI 工具执行工作，而不只是存储知识](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-
-  * **[理解 AI 工作区与传统工作流工具的区别](/zh/blog/workflow-builder-vs-ai-workspace)**
-

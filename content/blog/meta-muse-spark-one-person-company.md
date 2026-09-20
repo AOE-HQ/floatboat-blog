@@ -116,16 +116,3 @@ If your work is mostly multimodal processing, health-related research, or lightw
 That's my honest take, with all the caveats. A month or two from now, GPT-5.5 or the next Muse generation will be out, and the comparison will look different. But for solo operators, "wait a beat before switching" tends to age better than "switch immediately."
 
 Sometimes the most useful move when a new tool drops is to do nothing for two weeks — and watch what the people actually using it day-to-day end up saying.
-
-## Previous Posts:
-
-  * **[Should you switch AI models every time a new one drops? A breakdown of why most solo founders overestimate the gains](/blog/ai-model-switching-trap)**
-
-  * **[GPT Image 2 vs Midjourney vs Nano Banana 2 — how to actually choose the right tool for your workflow (not the leaderboard)](/blog/ai-image-tools-comparison)**
-
-  * **[AI storyboarding for solo creators: when it saves hours — and when it quietly breaks your sequence](/blog/ai-storyboarding-workflow)**
-
-  * **[Claude Code on Linux: why moving AI from browser to terminal changes more than just speed](/blog/claude-code-linux)**
-
-  * **[Workflow builders vs workspace agents: two completely different ways to automate your work (and why mixing them up costs time)](/blog/workflow-vs-agents)**
-

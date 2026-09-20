@@ -96,18 +96,3 @@ Anthropic 关于人们实际如何使用 Claude Code 的研究很有参考价值
 我仍在对更高自主度的一端做试验，还有很多没搞明白的地方。但用了一年各个级别的这类工具，有一件事始终成立：从 agentic AI 里收获最大的人，是那些从助手档起步、摸清失败模式、再有意识一步步放开自主度的人。
 
 而不是一上来就接上最自主的工具、寄希望于运气的人。
-
-## 往期文章
-
-### 往期文章
-
-  * 现在人们把什么都叫作「AI agent」——但助手、工作流 Agent、编程 Agent 与工作区失败的形态各不相同：[面向单人创业者的 AI 工作区 Agent 解读](/zh/blog/ai-workspace-agents)
-
-  * 想弄清 agentic 工作流到底在哪儿真正有用（又在哪里悄悄增加负担），从这里读起：[面向独立开发者的 AI agent 工作流与 vibe coding](/zh/blog/ai-agent-workflow-vibe-coding)
-
-  * 为什么多数单人创业者过分盯着模型质量，而真正的效率提升往往来自工作流结构：[单人创始人的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)
-
-  * 工作流构建器和工作区 Agent 在演示里听起来很像——可一旦你的工作横跨应用与文件，它们解决的问题就完全不同：[工作区 Agent 与工作流构建器](/zh/blog/workspace-agents-vs-workflow-builders)
-
-  * Claude Managed Agents、编程 Agent 与自主 AI 工具处于自主光谱上的不同位置——这篇拆解帮你厘清差别：[什么是 Claude Managed Agents？](/zh/blog/what-are-claude-managed-agents)
-

@@ -147,13 +147,3 @@ For office pools, label prediction content clearly as entertainment rather than 
 A bracket is a map, but a calendar is what makes the map actionable. Once the Round of 32 begins, matches arrive quickly, and it is easy to miss a kickoff if you are following multiple teams or time zones. The World Cup schedule gives the full list; FloatCup turns that list into reminders.
 
 If you use Floatboat, you can attach lightweight workflows to matches: pre-match briefs, watch-party notes, post-match recap drafts, or office-pool updates. If you do not use Floatboat, a standard calendar subscription still solves the main problem: correct match times across EDT, CDT, PDT, and your local timezone if you travel.
-
-## Related Reading- [World Cup 2026 Groups & Standings — fill the bracket from final group tables](/blog/world-cup-2026-groups-standings)
-- [World Cup 2026 Draw: Rules, Results & Groups — understand how paths begin](/blog/world-cup-2026-draw)
-- [World Cup 2026 Bracketology How-To — P21 bracketology method and office-pool logic](/blog/world-cup-2026-bracketology)
-- [FloatCup: Subscribe to World Cup 2026 Calendar in One Click — reminders for knockout matches](/blog/floatcup-world-cup-2026-calendar-subscribe)## Conclusion
-
-The World Cup 2026 bracket is larger, faster, and more volatile than older 32-team tournament templates. The Round of 32 gives more teams a route into the knockout phase, but it also creates one extra elimination hurdle for favorites. That makes a live tracker more useful than a static bracket image.
-
-Use this page as the bracket hub: download the tracker, check the current match table, then move between the groups page, prediction page, and bracketology guide depending on whether you need facts, picks, or method.
-

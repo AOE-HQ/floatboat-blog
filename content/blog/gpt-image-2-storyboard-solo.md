@@ -132,16 +132,3 @@ I want to be careful not to overstate this: **GPT​ Image 2 doesn't replace a s
 That's where I am with this. I'm not going to fire my future storyboard artist; I am going to stop pretending I don't have time to board my own short videos. **The tool isn't replacing the craft. It's removing the excuse.**
 
 When you need this, you'll know.
-
-## Previous Posts:
-
-  * [Learn how to structure AI workflows that actually hold up across multi-step creative tasks](/blog/ai-workflow-for-solo-founders)
-
-  * [See how AI agent workflows fix the chaos of unstructured “vibe-based” creation](/blog/ai-agent-workflow-vibe-coding)
-
-  * [Understand how solo operators use AI to produce like a full creative team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [Explore real AI agent use cases across content, automation, and production workflows](/blog/ai-agent-use-cases-real-examples)
-
-  * [Discover how to scale a one-person business without hiring by systemizing your work](/blog/scale-one-person-business-without-hiring)
-

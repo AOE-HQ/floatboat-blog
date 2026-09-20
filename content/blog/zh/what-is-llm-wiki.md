@@ -168,16 +168,3 @@ LLM wiki 通过让知识_持久而显式_来解决它：AI 在 wiki 里导航，
 如果两个答案都是「是」：[Karpathy 的 gist 就在那里](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)，社区实现也已经相当可用。
 
 如果任何一个答案是「否」：那个原则仍然重要。找到你自己的「编译一次、多次使用」的最简版本——那才是值得保留的部分。
-
-## 往期文章
-
-  * [还在困惑 AI 为什么总从零开始？这篇讲得很清楚](/zh/blog/why-ai-forgets-every-session)
-
-  * [想要持久化 AI 与一次性工具的简单解释？从这里开始](/zh/blog/what-is-persistent-ai-agent)
-
-  * [不确定你需要的是知识库还是更实用的东西？读这篇](/zh/blog/llm-knowledge-base-solo-operators)
-
-  * [如果你在纠结自建系统还是用现成工具，这篇能帮你](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [好奇 AI Agent 到底怎么融入真实单人工作流？这篇给出背景](/zh/blog/ai-agents-2026-solo-operators)
-

@@ -104,16 +104,3 @@ For solo operators, that system usually means having clear stopping criteria —
 The OpenAI four-day work week proposal is interesting as a policy signal — it tells you something about how the company sees AI disruption unfolding. But for someone running a one-person operation, the more useful frame is simpler: **AI gives you capacity. What you do with that capacity is a choice, not an automatic outcome.**
 
 The four-day week is a nice idea. The more achievable version, for people like me, is a calmer week — fewer tasks that don't need my brain, more time on the work that does.
-
-## Previous Posts:
-
-  * [Learn why AI still resets every session and what that means for your workflow](/blog/why-ai-forgets-between-sessions)
-
-  * [See what an AI workflow for solo founders actually looks like in practice](/blog/ai-workflow-for-solo-founders)
-
-  * [Understand how one-person businesses operate like a full team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [Explore the difference between AI assistants and real AI agents](/blog/ai-agent-vs-ai-assistant)
-
-  * [Go deeper into what a persistent AI agent means for long-term productivity](/blog/what-is-persistent-ai-agent)
-

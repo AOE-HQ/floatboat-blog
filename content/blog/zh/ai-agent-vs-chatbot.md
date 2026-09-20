@@ -103,16 +103,3 @@ Anthropic 明确指出：Agentic 系统往往用延迟和成本换取更好的�
 好了，这就是我一直想好好写清楚的那个区别。简版：**聊天机器人处理对话，Agent 处理任务**。实践中这条线是模糊的——这正是术语会乱的原因——但底层架构真的不一样。选工具或搭工作流时，知道自己需要的是哪一种，结果会差很多。
 
 如果你也在探索这片领域，希望这篇文章帮你更清楚了一点。我继续做实验去了。
-
-**往期文章：**
-
-  * [在真实工作流中分清 AI Agent 与 AI 助手](/zh/blog/ai-agent-vs-ai-assistant)。
-
-  * [看看 AI Agent 在调研、内容与运营中的真实用例](/zh/blog/ai-agent-use-cases-real-examples)。
-
-  * [看看一人公司如何借助 AI 角色，开始像完整团队一样运作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)。
-
-  * [了解 AI 自动化工作在真实市场上到底怎么定价](/zh/blog/ai-automation-agency-pricing)。
-
-  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差异](/zh/blog/lindy-vs-gumloop)。
-

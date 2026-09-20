@@ -104,16 +104,3 @@ draft: false
 OpenAI 的四天工作制提案，作为政策信号很有意思——它告诉了你这家公司如何看待 AI 颠覆的展开方式。但对一个经营一人业务的人来说，更有用的框架更简单：**AI 给你产能。你怎么用这份产能，是一个选择，不是一个自动发生的结果。**
 
 四天工作制是个不错的主意。对我这样的人来说，更可实现的版本是一个更平静的一周——不需要我脑子的任务更少，花在真正需要我的工作上的时间更多。
-
-## 延伸阅读
-
-* [了解 AI 为什么每次会话都重置、这对你的工作流意味着什么](/zh/blog/why-ai-forgets-between-sessions)
-
-* [看看面向单人创始人的 AI 工作流在实践里到底是什么样](/zh/blog/ai-workflow-for-solo-founders)
-
-* [了解一人公司如何靠 AI 像一整支团队那样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-* [探索 AI 助手与真正的 AI Agent 之间的区别](/zh/blog/ai-agent-vs-ai-assistant)
-
-* [深入理解持久化 AI Agent 对长期生产率意味着什么](/zh/blog/what-is-persistent-ai-agent)
-

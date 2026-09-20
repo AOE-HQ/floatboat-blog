@@ -106,16 +106,3 @@ _第三阶段——写手：_到这一步我才要草稿，并显式把第二阶
 _总之，这是我把这套方法跑了三周后得出的结论。gstack 这套开发者的外壳对程序员来说确实有意思。而底下那个想法——当 AI 知道自己戴的是哪顶帽子时会更锋利——适用于任何独自做复杂工作的人。我还在琢磨细节。但这个基本模式已经留下来了。_
 
 _回去继续干活了。_
-
-## 上一篇系列文章：
-
-  * [看看单人创业者如何把 AI 工作流组织得像一个完整团队](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [理解在工作流里分配角色时，AI Agent 与 AI 助手的实际差别](/zh/blog/ai-agent-vs-ai-assistant)
-
-  * [探索如何真正搭一个 AI Agent 系统，而不是依赖单一通用助手](/zh/blog/how-to-build-an-ai-agent)
-
-  * [看真实的 AI Agent 用例，理解角色化系统在实践中表现如何](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [在设计结构化、角色化的 AI 系统时，对比 Workflow 构建器与 AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)
-

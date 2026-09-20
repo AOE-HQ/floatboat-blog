@@ -130,16 +130,3 @@ GPT Image 2 支持最高 4K（4096×4096）输出。[Microsoft 的 Foundry 文�
 这就是我目前的进展。把它存下来，找一页短的试试，感受一下它在你手里是什么手感。模型会不断变化——今天为真的，三个月后未必为真。但有一件具体的事——带清晰 CJK 文字的单人叙事漫画——它刚刚跨过了一道值得你知道的门槛。
 
 回去画画了。
-
-## 延伸阅读
-
-* [看看如何为单人创作工作构建可复用的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)
-
-* [了解 2026 年 AI 工具如何融入真实的单人创业者工作流](/zh/blog/ai-agents-2026-solo-operators)
-
-* [学习一人创作者如何不靠招人扩大产出](/zh/blog/scale-one-person-business-without-hiring)
-
-* [发现那些真正有效、超越一次性 prompt 的实用 AI 工作流](/zh/blog/ai-workflow-solo-founders)
-
-* [探索 AI 如何帮你以一人之力像一整支创意团队那样运作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

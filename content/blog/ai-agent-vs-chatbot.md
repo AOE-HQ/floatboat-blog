@@ -104,16 +104,3 @@ The right framing, according to [IBM's analysis of chatbot and agent use cases](
 Alright, that's the distinction I've been meaning to write out properly. The short version: ​**chatbots handle conversations, agents handle tasks** ​. The line blurs in practice, which is why the terminology gets messy — but the underlying architecture really is different, and knowing which one you need makes a real difference when you're choosing tools or building workflows.
 
 If you're exploring this space too, I hope this made things a little clearer. Back to experimenting.
-
-**Previous Posts:**
-
-  * [Understand the difference between AI agents and assistants in real workflows](/blog/ai-agent-vs-ai-assistant).
-
-  * [Explore real-world AI agent use cases across research, content, and operations](/blog/ai-agent-use-cases-real-examples).
-
-  * [See how one-person businesses are starting to operate like a full team using AI roles](/blog/how-one-person-businesses-work-like-a-team-with-ai).
-
-  * [Learn how AI automation work is actually priced in the real market](/blog/ai-automation-agency-pricing).
-
-  * [Compare how Lindy and Gumloop differ when building agent-style workflows](/blog/lindy-vs-gumloop).
-

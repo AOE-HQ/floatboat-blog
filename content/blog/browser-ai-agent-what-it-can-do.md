@@ -136,16 +136,3 @@ For dev-leaning operators: the browser agent handles your signed-in web tools. L
 That's the honest picture as I see it right now. Browser AI agents are useful — genuinely useful — for the right tasks. But they're not magic, and the gap between the demo and the daily grind is still real.
 
 I'll know more in a few weeks. That part never really ends.
-
-## Previous Posts:
-
-  * Thinking about using browser agents for your entire workflow? Here’s[ where workspace agents actually help solo operators](/blog/workspace-agents-for-solo-operators) — and where they mostly create more overhead
-
-  * If you’re still trying to understand the difference between browser agents and regular AI chat tools, this breakdown explains [why the interaction model matters more than most people expect](/blog/workspace-agents-vs-chat-assistants)
-
-  * Curious[ why so many solo founders are rebuilding their workflows around AI agents instead of traditional automation tools?](/blog/ai-workspace-agents)
-
-  * Most people automate too early and create fragile systems. This guide [on AI workflows for solo founders ](/blog/ai-workflow-for-solo-founders)connects directly to the “predictable path” framework in this article
-
-  * Want a more grounded look at [where AI agents genuinely save time for one-person businesses](/blog/ai-agent-solo-operators) — beyond the flashy demos?
-

@@ -116,14 +116,3 @@ What I've started doing: instead of asking "is this an agent or an assistant," I
 Anyway — that's my understanding of it right now. Still learning. But at least the next time someone mentions "deploying an AI agent," I won't just nod along and secretly have no idea what makes it different from a chatbot.
 
 If you're exploring this stuff too, hopefully this saves you some of the time I spent going in circles.
-
-_Related posts:_
-
-  * [Real-world AI agent use cases across research, content, and operations](/blog/ai-agent-use-cases-real-examples)
-
-  * [How one-person businesses are starting to operate like a full team using AI roles](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [How AI automation is actually priced in the real market](/blog/ai-automation-agency-pricing)
-
-  * [How Lindy and Gumloop differ when it comes to agent-style workflows](/blog/lindy-vs-gumloop)
-

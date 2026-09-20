@@ -162,16 +162,3 @@ You can build with AI tools without giving up your understanding of what you're 
 I'm still figuring this out, honestly. The tools are moving fast enough that something I wrote about them three months ago would already need an update. What I do feel more certain about: ​**the value ​isn** ​'t in the prompts, it's in the systems. The solo founders building durable operations aren't the ones who found the best AI tool — they're the ones who built workflows that compound over time.
 
 That's one small piece figured out.
-
-## Previous Posts：
-
-  * [Understand the difference between AI agents vs chatbots](/blog/ai-agent-vs-chatbot)
-
-  * [Learn how AI agents actually work for solo operators in 2026](/blog/ai-agents-2026-solo-operators)
-
-  * [See how to build your own AI agent step by step](/blog/how-to-build-an-ai-agent)
-
-  * [Explore the shift from AI assistants to true AI agents](/blog/ai-agent-vs-ai-assistant)
-
-  * [Discover practical AI agent use cases in real workflows](/blog/ai-agent-use-cases-real-examples)
-

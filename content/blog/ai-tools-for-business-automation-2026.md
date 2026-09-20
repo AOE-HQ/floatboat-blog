@@ -104,16 +104,3 @@ I do this every three months. Takes about 45 minutes. Has saved me from more tha
 I'm still figuring out parts of this. The inbox automation category in particular is moving fast enough that I'd encourage checking current reviews rather than trusting any single article — including this one — as the final word on specific tools. The category of **ai tools for business automation** is genuinely maturing, and what was true six months ago sometimes isn't anymore.
 
 But the underlying logic? Mostly stable. Start with workflow pain. Keep your stack small. Audit it regularly. The tools are less important than the discipline.
-
-## Previous Posts:
-
-  * Most solo founders don’t need a custom AI platform — they need a clearer workflow first. Here’s how AI workflow design actually scales without creating operational chaos — [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
-
-  * Before hiring an agency to automate everything, understand the difference between workspace agents, workflow builders, and where each one actually fits — [workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * A lot of “AI automation” problems are really context-switching problems inside fragmented systems — this is the operational bottleneck most teams miss — [stop context switching with workspace agents](/blog/stop-context-switching-workspace-agent)
-
-  * If you’re evaluating AI vendors, this breakdown of AI workspace agents explains where the category genuinely helps — and where it still creates more setup overhead than value — [AI workspace agents explained](/blog/ai-workspace-agents)
-
-  * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](/blog/ai-agent-solo-operators)
-

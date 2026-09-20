@@ -154,16 +154,3 @@ _Anyway — that's where I've landed after spending way too many evenings readin
 _If you're just curious about the space, honestly, even building one small thing that works is a pretty satisfying experience. And if you decide it's not worth the hassle? That's also a completely valid conclusion. Sometimes the best tool is the one someone else already built._
 
 _Back to experimenting._
-
-## Previous Posts:
-
-  * [Explore real-world AI agent use cases before deciding what to build](/blog/ai-agent-use-cases-real-examples)
-
-  * [Understand the key differences between AI agents and chatbots when scoping your project](/blog/ai-agent-vs-chatbot)
-
-  * [See when to use workflow builders vs AI workspaces for building agent systems](/blog/workflow-builder-vs-ai-workspace)
-
-  * [Learn what AI agent development services actually cost before building from scratch](/blog/ai-agent-development-services)
-
-  * [Compare Gumloop and similar tools to evaluate no-code options for building agents](/blog/gumloop-review-2026)
-

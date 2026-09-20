@@ -142,16 +142,3 @@ draft: false
 从一个真实的数字开始。观察会发生什么。然后据此调整。
 
 这就是我诚实的看法。
-
-## 往期文章：
-
-  * [还在琢磨你的 offer？读这篇：第一批用户怎么获得牵引力](/zh/blog/first-100-customers-solo-founder)
-
-  * [定价只是体系里的一环——这篇讲单人创业者怎么搭出能规模化的工作流](/zh/blog/ai-workflow-solo-founders)
-
-  * [如果你的 AI 工具总觉得低效，这篇解释了为什么每个 session 都一切归零](/zh/blog/why-ai-forgets-every-session)
-
-  * [想理解 AI Agent 长期会如何嵌进你的业务？](/zh/blog/ai-agents-2026-solo-operators)
-
-  * [不确定该自建系统还是直接用更好的工具？这篇拆解能帮到你](/zh/blog/workflow-builder-vs-ai-workspace)
-

@@ -148,16 +148,3 @@ GitFlow 模型可以干净地映射过来：每个有界任务一条 feature 分
 我关注的一位实践者说得很好：最好的结果，来自把经典软件工程的纪律用在 AI 协作上。先设计再编码、写测试、用版本控制、守住标准——这些东西不仅依然适用，当 AI 写你一半代码时反而更重要。
 
 整件事说白了就是这样：Vibe 依然欢迎，护栏只是让它们更持久。
-
-## 上一篇：
-
-→ 了解为什么 [vibe coding 没有结构就会崩坏](/zh/blog/what-is-vibe-coding)，以及用什么替代它
-
-→ 了解 [AI Agent 对单人创业者到底怎么工作（不只是提示词）](/zh/blog/ai-agent-solo-operators)
-
-→ 学会怎么 [构建可重复的 AI 工作流，而不是一次性输出](/zh/blog/ai-workflow-for-solo-founders)
-
-→ 探索从 [聊天式 AI 到持久化、有状态的 Agent](/zh/blog/what-is-persistent-ai-agent) 的转变
-
-→ 发现 [一人公司如何用 AI 系统（而非单一工具）实现规模化](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

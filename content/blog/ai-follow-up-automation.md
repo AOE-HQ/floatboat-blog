@@ -109,10 +109,3 @@ The calendar's role in this loop is worth stating explicitly because it's the ar
 In a calendar-driven approach, the calendar is the central runtime that orchestrates all of these functions. The event triggers prep. The event ending triggers follow-up. The next event triggers prep that includes the follow-up from last time. The calendar doesn't just store time slots — it drives the entire work lifecycle. This shift from "calendar as container" to "calendar as engine" is what distinguishes an agentic calendar from a smart calendar with AI features bolted on. For the full definition of the category, see What Is an Agentic Calendar?.
 
 * * *
-
-## 6\. Related Reading
-
-  * What Is an Agentic Calendar? — The foundational definition of the category that makes the full prep-follow-up loop possible.
-
-  * Calendar-Driven AI vs Chat-Based AI — Why automated follow-up triggered by the calendar is architecturally different from asking a chat AI to summarize.
-

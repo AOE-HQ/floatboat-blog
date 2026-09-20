@@ -126,16 +126,3 @@ I'm not sure I've fully figured out my own solution here. I'm still experimentin
 ![5.png](/blog/images/why-ai-forgets-every-session/1775543648701-03ac0ad6-590b-4a19-b418-3b9157fc917e.webp)
 
 _This is based on my own experience running a solo content operation and the research I've been doing into AI memory architecture. I haven't been paid by anyone mentioned here. If you're experimenting with persistent context solutions, I'd genuinely be curious what you're finding — this space is moving fast and I'm still figuring parts of it out myself._
-
-## Previous Posts:
-
-  * [If you've ever tried maintaining your own automation setup, this real-world breakdown of Feishu CLI shows what solo operators actually deal with](/blog/feishu-cli-solo-work-setup).
-
-  * [Want to see how solo founders are using AI to operate like a full team (without constant re-explaining)? Start here](/blog/how-one-person-businesses-work-like-a-team-with-ai).
-
-  * [Still deciding between chat-based AI and something more execution-focused? This guide breaks down the difference between AI agents and assistants](/blog/ai-agent-vs-ai-assistant).
-
-  * [If you're trying to turn repeated prompts into reusable workflows, this step-by-step guide to building an AI agent is a solid next read](/blog/how-to-build-an-ai-agent).
-
-  * [And if you're exploring tools that go beyond stateless chats, this comparison of workflow builders vs AI workspaces will help you choose](/blog/workflow-builder-vs-ai-workspace).
-

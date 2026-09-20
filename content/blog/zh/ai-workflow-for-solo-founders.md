@@ -126,16 +126,3 @@ AI 工作区是另一种东西。它是一个"你的工作**和 AI 共存**"的�
 这就是我目前想清楚的部分。我仍在为自己摸索合适的配置——我不认为存在对所有人都正确的唯一答案。但视角的转变帮到了我：别再问"这个 AI 好不好？"，改问"这个 AI 知道我是怎么工作的吗？"
 
 这是两个截然不同的问题。而对独自经营的人来说，后者才是真正要紧的那个。
-
-## 往期文章：
-
-  * [如果你还在摸索"真正的 AI 工作流长什么样"，从这里开始](/zh/blog/ai-workflow-solo-founders)
-
-  * [这篇文章拆解了 AI 工具为什么总是忘光 session 之间的事](/zh/blog/why-ai-forgets-every-session)
-
-  * [想理解从助手到 Agent 的更大转变？](/zh/blog/ai-agents-2026-solo-operators)
-
-  * [读这篇](/zh/blog/ai-agents-2026-solo-operators) [不确定自己需要的是 AI Agent 还是更好的助手？这篇讲清楚了](/zh/blog/ai-agent-vs-ai-assistant)
-
-  * [如果你正纠结于"自己搭工作流"还是"用现成工作区"，这篇对你有用](/zh/blog/workflow-builder-vs-ai-workspace)
-

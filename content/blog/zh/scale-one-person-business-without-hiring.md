@@ -118,16 +118,3 @@ AI 对一人公司作用的诚实版本是：它压缩了跑杠杆一系统所�
 随着我自己这套系统不断演变，我大概还会反复回到天花板这个问题——我不觉得我已经全想明白了。但「加人之前先动三根杠杆」这个框架，比我试过的其他任何东西都有用。
 
 如果你的处境跟我的有点像，在急着招人之前，先坐下来跟这个问题待一会儿，多半是值得的。
-
-## 往期文章
-
-  * 学习如何作为单人创始人搭一条简单有效的**[AI 工作流](/zh/blog/ai-workflow-for-solo-founders)**
-
-  * 搞懂**[AI 工作区与工作流构建器](/zh/blog/workflow-builder-vs-ai-workspace)**的区别
-
-  * 看看为什么**[AI 会在会话之间遗忘——以及它如何拖慢你](/zh/blog/why-ai-forgets-between-sessions)**
-
-  * 探索如何让**[一人公司靠 AI 像团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-
-  * 发现**[真实工作流里的实用 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)**
-

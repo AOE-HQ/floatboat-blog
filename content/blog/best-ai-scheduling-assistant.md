@@ -153,7 +153,3 @@ The deepest distinction in the market isn't between tools — it's between tools
 Gen 3 begins to shift this — Agentic Calendars books meetings without you. [Cal.com](http://Cal.com) Agents handles scheduling requests without you. These are autonomous actions, but they're confined to the scheduling domain.
 
 Gen 4 extends autonomy across the work lifecycle. The system prepares briefs, gathers context, generates follow-ups, and tracks action items — none of which requires you to initiate anything. The calendar itself drives the work. For someone managing a high volume of calendar-structured work, this autonomy isn't a luxury feature; it's the difference between spending hours on prep and spending those hours on the work that only you can do.
-
-## Related Reading- [What Is an AI Scheduling Agent? — The full four-generation evolution, with deeper analysis of each generation's architecture and limitations.](/blog/ai-scheduling-agent)
-- [What Is an Agentic Calendar? — The foundational definition of the Gen 4 category and the technology stack behind it.](/blog/what-is-agentic-calendar)
-- [Calendar-Driven AI vs Chat-Based AI — How the calendar-driven and chat-based AI paradigms differ at the design philosophy level.](/blog/calendar-driven-ai-vs-chat-ai)

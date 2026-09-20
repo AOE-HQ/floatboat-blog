@@ -112,16 +112,3 @@ GPT-6 正朝着持久化、个性化的助手走去——模型了解你的工�
 我希望自己两年前——甚至早在 GPT-4 之前——就做过的一件事：花一个周末，把那些我早就知道答案的问题写下来。自从我开始这么做，每个助手都变得更好用了。
 
 总之——这就是我目前对这件事的立场。等模型真正发布，我会再来更新。
-
-## 延伸阅读
-
-→ 看看为什么[没有结构，大多数 AI 工作流都会崩（以及如何在 GPT-6 之前修好它）](/zh/blog/ai-agent-workflow-vibe-coding)
-
-→ 理解**[持久化 AI Agent 是什么、为什么记忆会比模型升级更重要](/zh/blog/what-is-persistent-ai-agent)**
-
-→ 了解 **[2026 年 AI 到底怎么融入单人创业者的工作流（撇开炒作）](/zh/blog/ai-agents-2026-solo-operators)**
-
-→ 探索如何**[构建不靠招人也能扩大一人业务的系统](/zh/blog/scale-one-person-business-without-hiring)**
-
-→ 拆解 AI 为什么**[每次会话都会「失忆」——以及现在该怎么做](/zh/blog/why-ai-forgets-every-session)**
-

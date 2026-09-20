@@ -140,12 +140,3 @@ AI 特别擅长**可重复、上下文厚重、输出明确**的任务；对需�
 这也是**Floatboat**正在做的方向——一个让你的 AI 角色住在一起、随着时间学会你工作风格、不必每个会话都从零开始的工作区。如果你觉得值得一试，可以[下载 Floatboat](</>)，体验给 AI 一份职位描述、而不是一句提示词是什么感觉。
 
 以上就是今天的分享，下次见。
-
-## 往期文章
-
-  * **[AI 自动化在真实市场上到底怎么定价](/zh/blog/ai-automation-agency-pricing)**
-
-  * **[Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](/zh/blog/lindy-vs-gumloop)**
-
-  * **[AI Agent 在调研、内容与运营中的真实用例](/zh/blog/ai-agent-use-cases-real-examples)**
-

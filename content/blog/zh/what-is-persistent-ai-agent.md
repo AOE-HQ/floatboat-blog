@@ -136,16 +136,3 @@ Hermes Agent 这类项目的架构野心，比给会话式工具外挂增量记�
 这个转变很重要。至于谁会用真正平易近人的方式交付它——那是接下来我要盯的事。
 
 _总之，这是今天的发现。或者至少是今天一次诚实的尝试——把一件我真心觉得有意思的东西画成地图。_
-
-## 往期文章
-
-  * [AI Agent 和传统工具到底有什么区别还是一头雾水？这篇梳理把界线讲清楚了](/zh/blog/ai-agent-vs-chatbot)
-
-  * [想知道 AI 在真实工作中——而不只是聊天里——怎么落地？这些用例是不错的起点](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [真正的转变不只是 Agent——而是工作流如何演进为 AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [想要一个实践中的具体例子？这是用飞书 CLI 搭单人工作流的配置](/zh/blog/feishu-cli-solo-work-setup)
-
-  * [想往深走？这篇指南讲了自建 AI Agent 真正需要什么](/zh/blog/how-to-build-an-ai-agent)
-

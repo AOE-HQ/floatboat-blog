@@ -164,16 +164,3 @@ Claude for Chrome 没有地区限制，全球付费订阅者都能用。
   * **两者都不支持移动浏览器。**只支持桌面 Chrome（Claude 的扩展也不支持 Brave、Arc 等其他 Chromium 浏览器）。
 
   * **速度有波动。**有些任务比手动做还慢，尤其是面对不熟悉的页面结构时。
-
-## 往期文章：
-
-  * 好奇最近为什么人人都在聊工作区 Agent？读 AI Workspace Agents：[单人创业者的新操作系统。](/zh/blog/workspace-agents-vs-chat-assistants)
-
-  * 如果你还在拿浏览器 Agent 和普通 AI 聊天工具比，[Workspace Agents vs Chat Assistants](/zh/blog/ai-workspace-agents)把差异讲得很清楚。
-
-  * 想理解 Anthropic 在浏览器自动化背后的更大战略？[What Are Claude Managed Agents](/zh/blog/what-are-claude-managed-agents)对系统设计挖得更深。
-
-  * 如果你正用 AI 工具搭一套精简的一人工作流，[AI Workflow for Solo Founders](/zh/blog/ai-workflow-for-solo-founders)和本文的观点直接相关。
-
-  * 想要更多「AI Agent 到底在哪儿省了时间」的实例，看 [AI Agents for Solo Operators](/zh/blog/ai-agent-solo-operators)。
-

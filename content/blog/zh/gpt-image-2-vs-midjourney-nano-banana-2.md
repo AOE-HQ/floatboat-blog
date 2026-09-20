@@ -146,20 +146,3 @@ GPT Image 2 在此领先，而且优势不小。Nano Banana 2 处理中日韩文
 **以下情况再等等：**你现在的配置没让你感到痛。Image Arena 领先 242 分是真的，但**基准差距并不总能转化为工作流差距。**如果你的产出在正常交付、客户也满意，升级可以等到下一个计费周期再说。
 
 ![6.png](/zh/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258163108-0603b3f3-2195-41f9-a39c-89e41c89fb4f.webp)
-
-## 往期文章
-
-  * [AI 工作区和 ChatGPT 的真正差别是什么？](/zh/blog/ai-workspace-agents)
-
-  * [不确定 AI Agent 到底做什么？](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [想自己搭工作流？](/zh/blog/how-to-build-an-ai-agent)
-
-  * [如果你在意工作流在实践中到底怎么跑，这篇挖得更深](/zh/blog/ai-agent-workflow-vibe-coding)：
-
-  * [单人创业者如何用 AI 像完整团队一样工作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-以上就是我的结论。真正的选择取决于你做什么东西。如果你拿不准，这周就从免费的 Nano Banana 2 档开始，需要精修成品时再叠上 GPT Image 2，只有当你想念某个别人给不出的特定视觉调性时，才加 Midjourney。
-
-等你需要它的时候，你自然会知道。
-

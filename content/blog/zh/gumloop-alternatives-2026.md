@@ -128,16 +128,3 @@ Lindy 像一个永远在线的助理，你可以通过 iMessage 或短信和它�
 最好的自动化工具，其实取决于**你的技术水平**、**你想自动化的工作流**，以及**你偏好灵活、还是偏好被托管好的一切**。没有任何一款工具能在所有这些维度上全胜——这也没关系。
 
 如果你真的拿不准，最快的验证方式，是用两款不同工具各搭一条真实工作流。不是演示，而是你真会去跑的那种。它比任何对比文章——包括这篇——都更能说明问题。
-
-## 上一篇：
-
-  * [对比 Lindy 和 Gumloop 在搭建 Agent 式工作流上的差异](/zh/blog/lindy-vs-gumloop)
-
-  * [看看调研、内容与运营等领域的真实 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [看一人公司如何用 AI 角色开始像一支完整团队那样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [了解真实市场上 AI 自动化工作是怎么定价的](/zh/blog/ai-automation-agency-pricing)
-
-  * [搞清真实工作流里 AI Agent 与 AI 助理的区别](/zh/blog/ai-agent-vs-ai-assistant)
-

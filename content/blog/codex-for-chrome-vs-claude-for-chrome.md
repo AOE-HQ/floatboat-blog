@@ -164,16 +164,3 @@ If you want to try both, give each one a specific domain. Codex for multi-tab op
   * **Neither works on mobile browsers.** Desktop Chrome only (Claude also doesn't support other Chromium browsers like Brave or Arc for its extension).
 
   * **Speed varies.** Some tasks take longer than doing them manually, especially on unfamiliar page structures.
-
-## Previous Posts:
-
-  * Curious why everyone keeps talking about workspace agents lately? Read AI Workspace Agents: [The New Operating System for Solo Founders.](/blog/workspace-agents-vs-chat-assistants)
-
-  * If you're still comparing browser agents with normal AI chat tools, [Workspace Agents vs Chat Assistants](/blog/ai-workspace-agents) breaks down the difference clearly.
-
-  * Want to understand Anthropic’s broader strategy behind browser automation? [What Are Claude Managed Agents ](/blog/what-are-claude-managed-agents)goes deeper into the system design.
-
-  * If you're building a lean one-person workflow with AI tools,[ AI Workflow for Solo Founders ](/blog/ai-workflow-for-solo-founders)connects directly to the ideas in this article.
-
-  * For more practical examples of where AI agents actually save time, check out[ AI Agents for Solo Operators](/blog/ai-agent-solo-operators).
-

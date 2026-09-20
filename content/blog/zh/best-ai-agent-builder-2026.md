@@ -92,16 +92,3 @@ Agent 坏掉的原因通常就那么几条：它调用的 API 改了返回格式
 对大多数像我这样工作的人——单人项目、在意成本、想要真 Agent 行为又不想背 DevOps 负担——n8n 是低代码档里更干净的答案。对需要极致掌控的开发者，LangGraph 值得那一段学习曲线。刚起步、需要明天就有东西能用？从 Make 开始。以后随时可以迁移。
 
 这是我的看法。你还是要自己判断什么适合你的处境。
-
-## 往期文章
-
-  * 拿不准 AI Agent、自动化与工作区到底怎么选？这篇讲清了每类在单人工作流里真正的位置 → [Workspace Agents vs Workflow Builders](/zh/blog/workspace-agents-vs-workflow-builders)
-
-  * 选构建工具之前，先弄懂「agentic AI」到底意味着什么、大多数工具又是在哪里悄悄碰到上限 → [AI Agent Tools for Solo Operators](/zh/blog/ai-agent-solo-operators)
-
-  * 如果你在搭第一个工作流，这篇指南建议从一个无聊的重复任务开始，而不是一上来就过度设计 → [AI Workflow for Solo Founders](/zh/blog/ai-workflow-for-solo-founders)
-
-  * n8n、Make 等工作流工具很强大——但随着 Agent 越来越复杂，上下文和记忆为什么会成为真正的瓶颈 → [Why AI Forgets Between Sessions](/zh/blog/why-ai-forgets-between-sessions)
-
-  * 好奇工作区式 Agent 相比独立构建工具的位置？这篇讲的是跨应用 AI 工作流背后更大的转变 → [AI Workspace Agents for Solo Operators](/zh/blog/ai-workspace-agents)
-

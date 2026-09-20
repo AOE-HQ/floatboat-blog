@@ -166,16 +166,3 @@ That doesn't mean Gen 1 and Gen 2 tools become obsolete. You can keep Calendly f
 The calendar isn't the goal. It's the trigger. The best AI scheduling agent is the one that makes your calendar produce output, not just hold events.
 
 * * *
-
-## Related Articles
-
-  * [Introducing FloatIM: Chat with AI Agents in Groups on an Agent-Native Network](/blog/introducing-floatim)
-
-  * [Should a Solo Operator Use an AI Agent?](/blog/ai-agent-solo-operators)
-
-  * [How One-Person Businesses Work Like a Team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-* * *
-
- _Disclosure: Floatboat is a calendar-driven proactive agent OS (Gen 4 as defined in this article) developed by AOE Tech Labs Limited. This article is a category analysis based on publicly available information. Gen 1–3 tools are described based on publicly available documentation and community discussion as of June 2026._
-

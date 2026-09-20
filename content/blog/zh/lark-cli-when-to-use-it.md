@@ -164,16 +164,3 @@ Lark CLI 是面向 Lark/飞书开放平台的命令行工具，覆盖 Messenger�
 总之，这就是我在这趟兔子洞里真正学到的东西。如果你在认真考虑 CLI 路线，投入之前花 30 分钟把开发者文档读一遍是值得的。有时候答案是「对，去搭」。但比我预期的更常出现的情况是：答案是「有个更简单、更少出故障的办法」。
 
 _继续做东西去了。_
-
-## 往期文章：
-
-  1. **[探索定制 AI Agent 与用现成平台的正反两面](/zh/blog/ai-agent-vs-ai-assistant)**
-
-  2. **[了解更多 Lark 集成与替代方案，搭更聪明的工作流](/zh/blog/how-to-build-an-ai-agent)**
-
-  3. **[看看 Gumloop 有哪些替代品，满足你的 AI 工作区需求](/zh/blog/gumloop-alternatives-2026)**
-
-  4. **[为定制需求找到最好的 AI Agent 开发服务](/zh/blog/ai-agent-development-services)**
-
-  5. **[了解在集成 Lark 这类工具时，工作流搭建器与 AI 工作区孰优孰劣](/zh/blog/workflow-builder-vs-ai-workspace)**
-

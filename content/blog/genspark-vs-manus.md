@@ -116,16 +116,3 @@ And if you're genuinely unsure — run both free tiers on the same task. The dif
 _Anyway — these are two tools I keep coming back to, for pretty different reasons. Genspark is the one I reach for when I need something well-structured, fast. Manus is the one I give the harder, messier tasks to._
 
 _If you're curious, the free tiers on both are genuinely usable. Worth a try._
-
-## Previous Posts:
-
-  * [Compare different Manus AI alternatives and what each tool does better in real workflows](/blog/manus-ai-alternatives-2026)
-
-  * [Break down Genspark pricing, credit usage, and whether the plans are actually worth it](/blog/genspark-ai-pricing)
-
-  * [Understand the core difference between AI agents and chatbots before choosing tools like Genspark or Manus](/blog/ai-agent-vs-chatbot)
-
-  * [Explore real-world AI agent use cases to see where autonomous tools like Manus actually shine](/blog/ai-agent-use-cases-real-examples)
-
-  * [See how solo creators structure workflows and delegate work using AI agents in practice](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

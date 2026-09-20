@@ -3,60 +3,45 @@
  "results": [
   {
    "file": "agentic-ai-tools",
-   "words": 1727,
-   "distinct_internal": 5,
-   "density": 2.9,
+   "words": 1559,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.9/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-workflow-vibe-coding",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "what-are-claude-managed-agents",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "ai-agent-development-services",
-   "words": 1671,
-   "distinct_internal": 5,
-   "density": 2.99,
+   "words": 1572,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "ai-automation-agency-pricing",
-    "gumloop-review-2026",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "ai-agent-solo-operators",
-   "words": 1836,
-   "distinct_internal": 5,
-   "density": 2.72,
+   "words": 1754,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.7/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-agent-vs-chatbot",
-    "ai-agents-2026-solo-operators",
-    "how-to-build-an-ai-agent"
-   ]
+   "targets": []
   },
   {
    "file": "ai-agent-use-cases-real-examples",
-   "words": 1499,
+   "words": 1431,
    "distinct_internal": 0,
    "density": 0.0,
    "fails": [
@@ -70,136 +55,99 @@
   },
   {
    "file": "ai-agent-vs-ai-assistant",
-   "words": 2015,
-   "distinct_internal": 4,
-   "density": 1.99,
+   "words": 1938,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "ai-agent-vs-chatbot",
-   "words": 1654,
-   "distinct_internal": 5,
-   "density": 3.02,
+   "words": 1557,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "ai-agent-workflow-vibe-coding",
-   "words": 2049,
-   "distinct_internal": 5,
-   "density": 2.44,
+   "words": 1957,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "what-is-vibe-coding"
-   ]
+   "targets": []
   },
   {
    "file": "ai-agents-2026-solo-operators",
-   "words": 2563,
-   "distinct_internal": 5,
-   "density": 1.95,
+   "words": 2439,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "feishu-cli-solo-work-setup",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "ai-assistant-for-personal-use-at-work",
-   "words": 1764,
-   "distinct_internal": 5,
-   "density": 2.83,
+   "words": 1588,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "meta-muse-spark-one-person-company",
-    "why-ai-forgets-between-sessions",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "targets": []
   },
   {
    "file": "ai-automation-agency-do-you-need-one",
-   "words": 1597,
-   "distinct_internal": 5,
-   "density": 3.13,
+   "words": 1418,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.1/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "ai-automation-agency-pricing",
-   "words": 1815,
-   "distinct_internal": 3,
-   "density": 1.65,
+   "words": 1758,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 1.7/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "ai-browser-agent-vs-ai-browser-vs-ai-workspace",
-   "words": 1990,
-   "distinct_internal": 5,
-   "density": 2.51,
+   "words": 1867,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.5/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-browser-agent-vs-ai-browser-vs-ai-workspace",
-    "ai-workspace-agents",
-    "browser-ai-agent-what-it-can-do",
-    "claude-managed-agents-one-person-company",
-    "workspace-agents-for-solo-operators"
-   ]
+   "targets": []
   },
   {
    "file": "ai-file-organizer-mac",
@@ -235,7 +183,7 @@
   },
   {
    "file": "ai-follow-up-automation",
-   "words": 2109,
+   "words": 2061,
    "distinct_internal": 0,
    "density": 0.0,
    "fails": [],
@@ -247,24 +195,19 @@
   },
   {
    "file": "ai-follow-up-email-opus-4-8",
-   "words": 1768,
-   "distinct_internal": 5,
-   "density": 2.83,
+   "words": 1685,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "claude-managed-agents-one-person-company",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "scale-one-person-business-without-hiring",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "ai-meeting-preparation",
-   "words": 2251,
+   "words": 2183,
    "distinct_internal": 0,
    "density": 0.0,
    "fails": [],
@@ -276,91 +219,67 @@
   },
   {
    "file": "ai-scheduling-agent",
-   "words": 3714,
-   "distinct_internal": 3,
-   "density": 0.81,
+   "words": 3611,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 0.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "introducing-floatim"
-   ]
+   "targets": []
   },
   {
    "file": "ai-tools-for-business-automation-2026",
-   "words": 1720,
-   "distinct_internal": 5,
-   "density": 2.91,
+   "words": 1541,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.9/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "ai-workflow-for-solo-founders",
-   "words": 2218,
-   "distinct_internal": 5,
-   "density": 2.25,
-   "fails": [
-    "angle residue",
-    "duplicate internal target"
-   ],
-   "warns": [
-    "density 2.3/1000w"
-   ],
-   "targets": [
-    "ai-agent-vs-ai-assistant",
-    "ai-agents-2026-solo-operators",
-    "ai-workflow-solo-founders",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
-  },
-  {
-   "file": "ai-workflow-solo-founders",
-   "words": 2129,
-   "distinct_internal": 5,
-   "density": 2.35,
+   "words": 2114,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.3/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "feishu-cli-solo-work-setup",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
+  },
+  {
+   "file": "ai-workflow-solo-founders",
+   "words": 2014,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [
+    "angle residue"
+   ],
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "ai-workspace-agents",
-   "words": 1886,
-   "distinct_internal": 5,
-   "density": 2.65,
+   "words": 1796,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.7/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-vs-chatbot",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "automate-tiktok-shop-research-fastmoss-floatboat",
@@ -380,37 +299,27 @@
   },
   {
    "file": "best-ai-agent-builder-2026",
-   "words": 1872,
-   "distinct_internal": 5,
-   "density": 2.67,
+   "words": 1707,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.7/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "why-ai-forgets-between-sessions",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "best-ai-agent-platform-2026",
-   "words": 1924,
-   "distinct_internal": 5,
-   "density": 2.6,
+   "words": 1769,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.6/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-agent-workflow-vibe-coding",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "best-ai-file-organizer",
@@ -444,22 +353,19 @@
   },
   {
    "file": "best-ai-scheduling-assistant",
-   "words": 3545,
-   "distinct_internal": 3,
-   "density": 0.85,
+   "words": 3466,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 0.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-scheduling-agent",
-    "calendar-driven-ai-vs-chat-ai",
-    "what-is-agentic-calendar"
-   ]
+   "targets": []
   },
   {
    "file": "best-ai-scheduling-assistants",
-   "words": 3477,
+   "words": 3413,
    "distinct_internal": 0,
    "density": 0.0,
    "fails": [],
@@ -471,22 +377,17 @@
   },
   {
    "file": "best-calendar-app-solo-operators",
-   "words": 1776,
-   "distinct_internal": 5,
-   "density": 2.82,
+   "words": 1600,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "how-to-build-ai-agents-for-repeated-work",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "best-claude-code-alternatives",
@@ -541,60 +442,45 @@
   },
   {
    "file": "browser-ai-agent-security-questions",
-   "words": 1755,
-   "distinct_internal": 5,
-   "density": 2.85,
+   "words": 1592,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "browser-ai-agent-what-it-can-do",
-    "gpt-image-2-storyboard-solo",
-    "gpt-image-2-vs-midjourney-nano-banana-2",
-    "meta-muse-spark-one-person-company",
-    "workspace-agents-for-solo-operators"
-   ]
+   "targets": []
   },
   {
    "file": "browser-ai-agent-what-it-can-do",
-   "words": 2030,
-   "distinct_internal": 5,
-   "density": 2.46,
+   "words": 1881,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.5/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "targets": []
   },
   {
    "file": "building-agentic-ai-systems-build-or-buy",
-   "words": 2141,
-   "distinct_internal": 5,
-   "density": 2.34,
+   "words": 1984,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.3/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "agentic-ai-tools",
-    "ai-agent-workflow-vibe-coding",
-    "ai-automation-agency-do-you-need-one",
-    "ai-workspace-agents",
-    "how-to-build-ai-agents-for-repeated-work"
-   ]
+   "targets": []
   },
   {
    "file": "calendar-driven-ai-vs-chat-ai",
-   "words": 2420,
+   "words": 2365,
    "distinct_internal": 0,
    "density": 0.0,
    "fails": [],
@@ -622,20 +508,15 @@
   },
   {
    "file": "claude-code-non-developers-solo-operators",
-   "words": 2109,
-   "distinct_internal": 5,
-   "density": 2.37,
+   "words": 2008,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "custom-ai-agent-development",
-    "feishu-cli-solo-work-setup",
-    "how-to-build-an-ai-agent"
-   ]
+   "targets": []
   },
   {
    "file": "claude-code-vs-cowork-vs-tag",
@@ -651,20 +532,15 @@
   },
   {
    "file": "claude-managed-agents-one-person-company",
-   "words": 1705,
-   "distinct_internal": 5,
-   "density": 2.93,
+   "words": 1613,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.9/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-workflow-for-solo-founders",
-    "what-is-persistent-ai-agent"
-   ]
+   "targets": []
   },
   {
    "file": "clean-up-downloads-folder-with-ai",
@@ -686,20 +562,15 @@
   },
   {
    "file": "codex-for-chrome-vs-claude-for-chrome",
-   "words": 1984,
-   "distinct_internal": 5,
-   "density": 2.52,
+   "words": 1851,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.5/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "what-are-claude-managed-agents",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "targets": []
   },
   {
    "file": "codex-harness-open-source",
@@ -745,20 +616,15 @@
   },
   {
    "file": "custom-ai-agent-development",
-   "words": 2208,
-   "distinct_internal": 5,
-   "density": 2.26,
+   "words": 2095,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.3/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-development-services",
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "deepseek-agent-function-calling",
@@ -807,20 +673,15 @@
   },
   {
    "file": "deepseek-v4-api-solo-operator",
-   "words": 2265,
-   "distinct_internal": 5,
-   "density": 2.21,
+   "words": 2185,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.2/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "llm-knowledge-base-solo-operators",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-between-sessions"
-   ]
+   "targets": []
   },
   {
    "file": "deepseek-v4-pro-0813",
@@ -851,58 +712,43 @@
   },
   {
    "file": "dynamic-workflows-build-or-use-workspace",
-   "words": 1697,
-   "distinct_internal": 5,
-   "density": 2.95,
+   "words": 1614,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.9/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "claude-managed-agents-one-person-company",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "scale-one-person-business-without-hiring",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "effort-control-fast-mode-ai-work",
-   "words": 1656,
-   "distinct_internal": 5,
-   "density": 3.02,
+   "words": 1577,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 3.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "claude-managed-agents-one-person-company",
-    "scale-one-person-business-without-hiring",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "targets": []
   },
   {
    "file": "feishu-cli-solo-work-setup",
-   "words": 2482,
-   "distinct_internal": 5,
-   "density": 2.01,
+   "words": 2393,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-development-services",
-    "ai-agent-vs-chatbot",
-    "genspark-vs-manus",
-    "gumloop-alternatives-2026",
-    "how-to-build-an-ai-agent"
-   ]
+   "targets": []
   },
   {
    "file": "file-organizer-vs-file-renamer-vs-file-sorter",
@@ -923,56 +769,43 @@
   },
   {
    "file": "first-100-customers-solo-founder",
-   "words": 3104,
-   "distinct_internal": 5,
-   "density": 1.61,
+   "words": 2993,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 1.6/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "feishu-cli-solo-work-setup",
-    "how-to-build-an-ai-agent",
-    "relevance-ai-vs-n8n",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "floatcup-world-cup-2026-calendar-subscribe",
-   "words": 1679,
-   "distinct_internal": 3,
-   "density": 1.79,
+   "words": 1620,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 1.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "world-cup-2026-google-calendar-ics",
-    "world-cup-2026-guide",
-    "world-cup-2026-schedule"
-   ]
+   "targets": []
   },
   {
    "file": "gemini-3-5-integration-solo-operators",
-   "words": 1641,
-   "distinct_internal": 5,
-   "density": 3.05,
+   "words": 1486,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 3.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "ai-workflow-solo-founders",
-    "ai-workspace-agents",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "targets": []
   },
   {
    "file": "gemini-3-7-flash",
@@ -1005,58 +838,41 @@
   },
   {
    "file": "genspark-ai-pricing",
-   "words": 1813,
-   "distinct_internal": 4,
-   "density": 2.21,
+   "words": 1696,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.2/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "genspark-super-agent-explained",
-   "words": 1746,
-   "distinct_internal": 5,
-   "density": 2.86,
-   "fails": [
-    "dead link /blog/agentic-ai-company-guide",
-    "dead link /blog/gemini-3-5-integration-solo-workflow"
-   ],
+   "words": 1585,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
    "warns": [
-    "density 2.9/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "agentic-ai-company-guide",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "gemini-3-5-integration-solo-workflow",
-    "how-one-person-businesses-work-like-a-team-with-ai"
-   ]
+   "targets": []
   },
   {
    "file": "genspark-vs-manus",
-   "words": 1831,
-   "distinct_internal": 5,
-   "density": 2.73,
+   "words": 1723,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.7/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "genspark-ai-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "manus-ai-alternatives-2026"
-   ]
+   "targets": []
   },
   {
    "file": "glm-5-3",
@@ -1074,41 +890,31 @@
   },
   {
    "file": "google-calendar-vs-apple-calendar",
-   "words": 1676,
-   "distinct_internal": 5,
-   "density": 2.98,
+   "words": 1515,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 3.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "how-to-build-ai-agents-for-repeated-work",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "targets": []
   },
   {
    "file": "google-calendar-vs-outlook",
-   "words": 1692,
-   "distinct_internal": 5,
-   "density": 2.96,
+   "words": 1505,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 3.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "how-to-build-ai-agents-for-repeated-work",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "targets": []
   },
   {
    "file": "gpt-5-6-floatboat",
@@ -1162,71 +968,53 @@
   },
   {
    "file": "gpt-image-2-manga-comic-workflow",
-   "words": 1962,
-   "distinct_internal": 5,
-   "density": 2.55,
+   "words": 1867,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.5/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workflow-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "scale-one-person-business-without-hiring"
-   ]
+   "targets": []
   },
   {
    "file": "gpt-image-2-storyboard-solo",
-   "words": 1903,
-   "distinct_internal": 5,
-   "density": 2.63,
+   "words": 1797,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.6/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-workflow-vibe-coding",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "scale-one-person-business-without-hiring"
-   ]
+   "targets": []
   },
   {
    "file": "gpt-image-2-vs-midjourney-nano-banana-2",
-   "words": 2082,
-   "distinct_internal": 5,
-   "density": 2.4,
+   "words": 1997,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-workflow-vibe-coding",
-    "ai-workspace-agents",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent"
-   ]
+   "targets": []
   },
   {
    "file": "grok-3-api-solo-operator",
-   "words": 1120,
-   "distinct_internal": 5,
-   "density": 4.46,
+   "words": 1038,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agent-vs-chatbot",
-    "ai-workflow-for-solo-founders",
-    "deepseek-v4-api-solo-operator",
-    "what-is-vibe-coding",
-    "why-ai-forgets-between-sessions"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "grok-4-6",
@@ -1257,41 +1045,31 @@
   },
   {
    "file": "gumloop-alternatives-2026",
-   "words": 1793,
-   "distinct_internal": 5,
-   "density": 2.79,
+   "words": 1696,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "gumloop-review-2026",
-   "words": 1525,
-   "distinct_internal": 5,
-   "density": 3.28,
+   "words": 1428,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.3/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "how-one-person-businesses-work-like-a-team-with-ai",
-   "words": 1993,
+   "words": 1929,
    "distinct_internal": 0,
    "density": 0.0,
    "fails": [
@@ -1305,54 +1083,39 @@
   },
   {
    "file": "how-to-build-ai-agents-for-repeated-work",
-   "words": 1651,
-   "distinct_internal": 5,
-   "density": 3.03,
+   "words": 1491,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "what-are-claude-managed-agents",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "how-to-build-an-ai-agent-with-chatgpt",
-   "words": 1702,
-   "distinct_internal": 5,
-   "density": 2.94,
+   "words": 1535,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.9/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-agent-workflow-vibe-coding",
-    "ai-workspace-agents",
-    "how-to-build-ai-agents-for-repeated-work",
-    "why-ai-forgets-between-sessions"
-   ]
+   "targets": []
   },
   {
    "file": "how-to-build-an-ai-agent",
-   "words": 1728,
-   "distinct_internal": 5,
-   "density": 2.89,
+   "words": 1636,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.9/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-development-services",
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "gumloop-review-2026",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "how-to-build-deepseek-agent",
@@ -1390,52 +1153,39 @@
   },
   {
    "file": "html-anything-review-2026",
-   "words": 1599,
-   "distinct_internal": 4,
-   "density": 2.5,
+   "words": 1510,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.5/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "claude-code-non-developers-solo-operators",
-    "stop-context-switching-workspace-agent"
-   ]
+   "targets": []
   },
   {
    "file": "html-is-the-new-markdown",
-   "words": 1627,
-   "distinct_internal": 5,
-   "density": 3.07,
+   "words": 1499,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.1/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "claude-code-non-developers-solo-operators",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "html-vs-markdown-ai-output",
-   "words": 1675,
-   "distinct_internal": 4,
-   "density": 2.39,
+   "words": 1546,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-workspace-agents",
-    "codex-for-chrome-vs-claude-for-chrome",
-    "html-anything-review-2026",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "targets": []
   },
   {
    "file": "introducing-floatim",
@@ -1498,26 +1248,31 @@
   },
   {
    "file": "lark-cli-when-to-use-it",
-   "words": 1879,
-   "distinct_internal": 5,
-   "density": 2.66,
-   "fails": [
-    "forbidden anchor: learn more"
-   ],
+   "words": 1784,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
    "warns": [
-    "density 2.7/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-development-services",
-    "ai-agent-vs-ai-assistant",
-    "gumloop-alternatives-2026",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "lindy-vs-gumloop",
-   "words": 2483,
+   "words": 2409,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
+  },
+  {
+   "file": "llm-knowledge-base-solo-operators",
+   "words": 1717,
    "distinct_internal": 0,
    "density": 0.0,
    "fails": [
@@ -1530,64 +1285,28 @@
    "targets": []
   },
   {
-   "file": "llm-knowledge-base-solo-operators",
-   "words": 1819,
-   "distinct_internal": 5,
-   "density": 2.75,
-   "fails": [
-    "angle residue"
-   ],
-   "warns": [
-    "density 2.7/1000w"
-   ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "custom-ai-agent-development",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
-  },
-  {
    "file": "manus-ai-alternatives-2026",
-   "words": 1901,
-   "distinct_internal": 4,
-   "density": 2.1,
-   "fails": [
-    "duplicate internal target"
-   ],
+   "words": 1794,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
    "warns": [
-    "density 2.1/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "meta-muse-spark-one-person-company",
-   "words": 1675,
-   "distinct_internal": 5,
-   "density": 2.99,
-   "fails": [
-    "dead link /blog/ai-model-switching-trap",
-    "dead link /blog/ai-image-tools-comparison",
-    "dead link /blog/ai-storyboarding-workflow",
-    "dead link /blog/claude-code-linux",
-    "dead link /blog/workflow-vs-agents"
-   ],
+   "words": 1556,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
    "warns": [
-    "density 3.0/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-image-tools-comparison",
-    "ai-model-switching-trap",
-    "ai-storyboarding-workflow",
-    "claude-code-linux",
-    "workflow-vs-agents"
-   ]
+   "targets": []
   },
   {
    "file": "minimax-h3-max-infinite-ai-livestream",
@@ -1609,21 +1328,15 @@
   },
   {
    "file": "no-code-ai-agent-builder",
-   "words": 1678,
-   "distinct_internal": 4,
-   "density": 2.38,
-   "fails": [
-    "duplicate internal target"
-   ],
+   "words": 1503,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-agent-workflow-vibe-coding",
-    "workspace-agents-vs-chat-assistants",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "oh-my-codex-vs-superpowers",
@@ -1642,37 +1355,27 @@
   },
   {
    "file": "openai-4-day-work-week-one-person-company",
-   "words": 1784,
-   "distinct_internal": 5,
-   "density": 2.8,
+   "words": 1685,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-vs-ai-assistant",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-between-sessions"
-   ]
+   "targets": []
   },
   {
    "file": "openai-gpt-6-one-person-company",
-   "words": 1612,
-   "distinct_internal": 5,
-   "density": 3.1,
+   "words": 1507,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.1/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-workflow-vibe-coding",
-    "ai-agents-2026-solo-operators",
-    "scale-one-person-business-without-hiring",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session"
-   ]
+   "targets": []
   },
   {
    "file": "organize-receipts-and-invoices-with-ai",
@@ -1706,79 +1409,53 @@
   },
   {
    "file": "relevance-ai-vs-n8n",
-   "words": 1780,
-   "distinct_internal": 5,
-   "density": 2.81,
+   "words": 1670,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "scale-one-person-business-without-hiring",
-   "words": 1766,
-   "distinct_internal": 5,
-   "density": 2.83,
+   "words": 1673,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "why-ai-forgets-between-sessions",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "solopreneur-pricing-day-one",
-   "words": 2086,
-   "distinct_internal": 5,
-   "density": 2.4,
+   "words": 1984,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "ai-workflow-solo-founders",
-    "first-100-customers-solo-founder",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "stop-context-switching-workspace-agent",
-   "words": 2119,
-   "distinct_internal": 5,
-   "density": 2.36,
-   "fails": [
-    "dead link /blog/stop-context-switching",
-    "dead link /blog/why-automation-ends-up-more-frustrating",
-    "dead link /blog/solo-founders-and-workspace-agents",
-    "dead link /blog/reduce-context-switching-manually",
-    "dead link /blog/ai-agents-for-solo-operators"
-   ],
+   "words": 2006,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agents-for-solo-operators",
-    "reduce-context-switching-manually",
-    "solo-founders-and-workspace-agents",
-    "stop-context-switching",
-    "why-automation-ends-up-more-frustrating"
-   ]
+   "targets": []
   },
   {
    "file": "vibe-coding-one-prompt-html-game",
@@ -1831,39 +1508,29 @@
   },
   {
    "file": "what-are-claude-managed-agents",
-   "words": 1580,
-   "distinct_internal": 5,
-   "density": 3.16,
+   "words": 1513,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.2/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "how-to-build-an-ai-agent",
-    "what-is-persistent-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "what-gstack-gets-right-about-one-person-businesses",
-   "words": 1921,
-   "distinct_internal": 5,
-   "density": 2.6,
+   "words": 1808,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.6/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "what-if-your-calendar-could-run-itself",
@@ -2040,22 +1707,17 @@
   },
   {
    "file": "what-is-llm-wiki",
-   "words": 2227,
-   "distinct_internal": 5,
-   "density": 2.25,
+   "words": 2127,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.2/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "llm-knowledge-base-solo-operators",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "what-is-minimax-h3",
@@ -2087,39 +1749,29 @@
   },
   {
    "file": "what-is-persistent-ai-agent",
-   "words": 1960,
-   "distinct_internal": 5,
-   "density": 2.55,
+   "words": 1839,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.6/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "feishu-cli-solo-work-setup",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "what-is-vibe-coding",
-   "words": 2056,
-   "distinct_internal": 5,
-   "density": 2.43,
+   "words": 1974,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-agent-vs-chatbot",
-    "ai-agents-2026-solo-operators",
-    "how-to-build-an-ai-agent"
-   ]
+   "targets": []
   },
   {
    "file": "what-is-voice-dictation-for-ai-agents",
@@ -2142,161 +1794,120 @@
   },
   {
    "file": "where-is-world-cup-2026-host-cities",
-   "words": 3545,
-   "distinct_internal": 3,
-   "density": 0.85,
+   "words": 3489,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 0.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "world-cup-2026-guide",
-    "world-cup-2026-schedule",
-    "world-cup-2026-schedule-usa"
-   ]
+   "targets": []
   },
   {
    "file": "why-ai-forgets-between-sessions",
-   "words": 1799,
-   "distinct_internal": 5,
-   "density": 2.78,
+   "words": 1710,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "why-ai-forgets-every-session",
-   "words": 2109,
-   "distinct_internal": 5,
-   "density": 2.37,
+   "words": 1958,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-vs-ai-assistant",
-    "feishu-cli-solo-work-setup",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "workflow-builder-vs-ai-workspace",
-   "words": 1742,
-   "distinct_internal": 5,
-   "density": 2.87,
+   "words": 1645,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.9/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "workspace-agents-for-solo-operators",
-   "words": 2071,
-   "distinct_internal": 5,
-   "density": 2.41,
+   "words": 1952,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "workspace-agents-vs-chat-assistants",
-   "words": 2390,
-   "distinct_internal": 5,
-   "density": 2.09,
+   "words": 2297,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.1/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-agents-2026-solo-operators",
-    "ai-workspace-agents",
-    "how-one-person-businesses-work-like-a-team-with-ai"
-   ]
+   "targets": []
   },
   {
    "file": "workspace-agents-vs-workflow-builders",
-   "words": 2060,
-   "distinct_internal": 5,
-   "density": 2.43,
+   "words": 1935,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 2.4/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-workflow-vibe-coding",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "targets": []
   },
   {
    "file": "world-cup-2026-bracket",
-   "words": 4705,
-   "distinct_internal": 4,
-   "density": 0.85,
+   "words": 4542,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 0.9/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "floatcup-world-cup-2026-calendar-subscribe",
-    "world-cup-2026-bracketology",
-    "world-cup-2026-draw",
-    "world-cup-2026-groups-standings"
-   ]
+   "targets": []
   },
   {
    "file": "world-cup-2026-bracketology",
-   "words": 2654,
-   "distinct_internal": 2,
-   "density": 0.75,
+   "words": 2609,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 0.8/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "floatcup-world-cup-2026-calendar-subscribe",
-    "world-cup-2026-bracket"
-   ]
+   "targets": []
   },
   {
    "file": "world-cup-2026-draw",
-   "words": 3070,
+   "words": 2984,
    "distinct_internal": 9,
-   "density": 2.93,
-   "fails": [
-    "duplicate internal target"
-   ],
+   "density": 3.02,
+   "fails": [],
    "warns": [
-    "density 2.9/1000w"
+    "density 3.0/1000w"
    ],
    "targets": [
     "floatcup-world-cup-2026-calendar-subscribe",
@@ -2312,9 +1923,9 @@
   },
   {
    "file": "world-cup-2026-google-calendar-ics",
-   "words": 3062,
+   "words": 2996,
    "distinct_internal": 3,
-   "density": 0.98,
+   "density": 1.0,
    "fails": [
     "duplicate internal target"
    ],
@@ -2329,20 +1940,16 @@
   },
   {
    "file": "world-cup-2026-groups-standings",
-   "words": 8534,
-   "distinct_internal": 4,
-   "density": 0.47,
-   "fails": [
-    "duplicate internal target"
-   ],
+   "words": 8344,
+   "distinct_internal": 1,
+   "density": 0.12,
+   "fails": [],
    "warns": [
-    "density 0.5/1000w"
+    "R1: 1 internal links",
+    "density 0.1/1000w"
    ],
    "targets": [
-    "world-cup-2026-bracket",
-    "world-cup-2026-bracketology",
-    "world-cup-2026-draw",
-    "world-cup-2026-schedule-usa"
+    "world-cup-2026-draw"
    ]
   },
   {
@@ -2361,214 +1968,175 @@
   },
   {
    "file": "world-cup-2026-schedule-usa",
-   "words": 2388,
-   "distinct_internal": 3,
-   "density": 1.26,
+   "words": 2329,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 1.3/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "floatcup-world-cup-2026-calendar-subscribe",
-    "world-cup-2026-guide",
-    "world-cup-2026-schedule"
-   ]
+   "targets": []
   },
   {
    "file": "world-cup-2026-schedule",
-   "words": 4108,
-   "distinct_internal": 3,
-   "density": 0.73,
+   "words": 4041,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 0.7/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "floatcup-world-cup-2026-calendar-subscribe",
-    "world-cup-2026-google-calendar-ics",
-    "world-cup-2026-guide"
-   ]
+   "targets": []
   },
   {
    "file": "zh/agentic-ai-tools",
-   "words": 252,
-   "distinct_internal": 5,
-   "density": 19.84,
+   "words": 205,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-workflow-vibe-coding",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "what-are-claude-managed-agents",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-agent-development-services",
-   "words": 447,
-   "distinct_internal": 5,
-   "density": 11.19,
+   "words": 414,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "ai-automation-agency-pricing",
-    "gumloop-review-2026",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-agent-solo-operators",
-   "words": 317,
-   "distinct_internal": 5,
-   "density": 15.77,
-   "fails": [
-    "angle residue"
-   ],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-agent-vs-chatbot",
-    "ai-agents-2026-solo-operators",
-    "how-to-build-an-ai-agent"
-   ]
-  },
-  {
-   "file": "zh/ai-agent-use-cases-real-examples",
-   "words": 221,
-   "distinct_internal": 3,
-   "density": 13.57,
+   "words": 276,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "zh parity: internal targets differ from en"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
+  },
+  {
+   "file": "zh/ai-agent-use-cases-real-examples",
+   "words": 201,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [
+    "angle residue"
+   ],
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-agent-vs-ai-assistant",
-   "words": 458,
-   "distinct_internal": 4,
-   "density": 8.73,
+   "words": 427,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-agent-vs-chatbot",
-   "words": 393,
-   "distinct_internal": 5,
-   "density": 12.72,
+   "words": 354,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-agent-workflow-vibe-coding",
-   "words": 376,
-   "distinct_internal": 5,
-   "density": 13.3,
+   "words": 339,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "what-is-vibe-coding"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-agents-2026-solo-operators",
-   "words": 302,
-   "distinct_internal": 5,
-   "density": 16.56,
+   "words": 267,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "feishu-cli-solo-work-setup",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-assistant-for-personal-use-at-work",
-   "words": 210,
-   "distinct_internal": 5,
-   "density": 23.81,
+   "words": 165,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "meta-muse-spark-one-person-company",
-    "why-ai-forgets-between-sessions",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-automation-agency-do-you-need-one",
-   "words": 183,
-   "distinct_internal": 5,
-   "density": 27.32,
+   "words": 144,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-automation-agency-pricing",
-   "words": 212,
-   "distinct_internal": 3,
-   "density": 14.15,
+   "words": 187,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-browser-agent-vs-ai-browser-vs-ai-workspace",
-   "words": 350,
-   "distinct_internal": 5,
-   "density": 14.29,
+   "words": 309,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-browser-agent-vs-ai-browser-vs-ai-workspace",
-    "ai-workspace-agents",
-    "browser-ai-agent-what-it-can-do",
-    "claude-managed-agents-one-person-company",
-    "workspace-agents-for-solo-operators"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-file-organizer-mac",
@@ -2600,7 +2168,7 @@
   },
   {
    "file": "zh/ai-follow-up-automation",
-   "words": 73,
+   "words": 66,
    "distinct_internal": 0,
    "density": 0.0,
    "fails": [],
@@ -2612,125 +2180,103 @@
   },
   {
    "file": "zh/ai-follow-up-email-opus-4-8",
-   "words": 254,
-   "distinct_internal": 5,
-   "density": 19.69,
+   "words": 214,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "claude-managed-agents-one-person-company",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "scale-one-person-business-without-hiring",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-meeting-preparation",
-   "words": 138,
-   "distinct_internal": 3,
-   "density": 21.74,
+   "words": 109,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "zh parity: internal targets differ from en"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-follow-up-automation",
-    "calendar-driven-ai-vs-chat-ai",
-    "what-is-agentic-calendar"
-   ]
+   "targets": []
   },
   {
    "file": "zh/ai-scheduling-agent",
-   "words": 849,
-   "distinct_internal": 3,
-   "density": 3.53,
+   "words": 811,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.5/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-solo-operators",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "introducing-floatim"
-   ]
+   "targets": []
   },
   {
    "file": "zh/ai-tools-for-business-automation-2026",
-   "words": 208,
-   "distinct_internal": 5,
-   "density": 24.04,
+   "words": 169,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-workflow-for-solo-founders",
-   "words": 277,
-   "distinct_internal": 5,
-   "density": 18.05,
-   "fails": [
-    "angle residue",
-    "duplicate internal target"
-   ],
-   "warns": [],
-   "targets": [
-    "ai-agent-vs-ai-assistant",
-    "ai-agents-2026-solo-operators",
-    "ai-workflow-solo-founders",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
-  },
-  {
-   "file": "zh/ai-workflow-solo-founders",
-   "words": 236,
-   "distinct_internal": 5,
-   "density": 21.19,
+   "words": 240,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "feishu-cli-solo-work-setup",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
+  },
+  {
+   "file": "zh/ai-workflow-solo-founders",
+   "words": 200,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [
+    "angle residue"
+   ],
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/ai-workspace-agents",
-   "words": 254,
-   "distinct_internal": 5,
-   "density": 19.69,
+   "words": 216,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-vs-chatbot",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/automate-tiktok-shop-research-fastmoss-floatboat",
-   "words": 303,
+   "words": 308,
    "distinct_internal": 1,
-   "density": 3.3,
+   "density": 3.25,
    "fails": [
     "angle residue"
    ],
    "warns": [
     "R1: 1 internal links",
-    "density 3.3/1000w"
+    "density 3.2/1000w"
    ],
    "targets": [
     "what-if-your-calendar-could-run-itself"
@@ -2738,33 +2284,27 @@
   },
   {
    "file": "zh/best-ai-agent-builder-2026",
-   "words": 362,
-   "distinct_internal": 5,
-   "density": 13.81,
+   "words": 304,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "why-ai-forgets-between-sessions",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/best-ai-agent-platform-2026",
-   "words": 249,
-   "distinct_internal": 5,
-   "density": 20.08,
+   "words": 208,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-agent-workflow-vibe-coding",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/best-ai-file-organizer",
@@ -2794,22 +2334,19 @@
   },
   {
    "file": "zh/best-ai-scheduling-assistant",
-   "words": 928,
-   "distinct_internal": 3,
-   "density": 3.23,
+   "words": 901,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 3.2/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-scheduling-agent",
-    "calendar-driven-ai-vs-chat-ai",
-    "what-is-agentic-calendar"
-   ]
+   "targets": []
   },
   {
    "file": "zh/best-ai-scheduling-assistants",
-   "words": 852,
+   "words": 840,
    "distinct_internal": 0,
    "density": 0.0,
    "fails": [],
@@ -2821,20 +2358,17 @@
   },
   {
    "file": "zh/best-calendar-app-solo-operators",
-   "words": 231,
-   "distinct_internal": 5,
-   "density": 21.65,
+   "words": 195,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "how-to-build-ai-agents-for-repeated-work",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/best-claude-code-alternatives",
@@ -2887,65 +2421,53 @@
   },
   {
    "file": "zh/browser-ai-agent-security-questions",
-   "words": 357,
-   "distinct_internal": 5,
-   "density": 14.01,
+   "words": 280,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "browser-ai-agent-what-it-can-do",
-    "gpt-image-2-storyboard-solo",
-    "gpt-image-2-vs-midjourney-nano-banana-2",
-    "meta-muse-spark-one-person-company",
-    "workspace-agents-for-solo-operators"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/browser-ai-agent-what-it-can-do",
-   "words": 327,
-   "distinct_internal": 5,
-   "density": 15.29,
+   "words": 294,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/building-agentic-ai-systems-build-or-buy",
-   "words": 525,
-   "distinct_internal": 5,
-   "density": 9.52,
+   "words": 485,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "agentic-ai-tools",
-    "ai-agent-workflow-vibe-coding",
-    "ai-automation-agency-do-you-need-one",
-    "ai-workspace-agents",
-    "how-to-build-ai-agents-for-repeated-work"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/calendar-driven-ai-vs-chat-ai",
-   "words": 161,
-   "distinct_internal": 3,
-   "density": 18.63,
+   "words": 137,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "zh parity: internal targets differ from en"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-meeting-preparation",
-    "ai-scheduling-agent",
-    "what-is-agentic-calendar"
-   ]
+   "targets": []
   },
   {
    "file": "zh/chatgpt-voice-mode-vs-dictation",
@@ -2963,18 +2485,15 @@
   },
   {
    "file": "zh/claude-code-non-developers-solo-operators",
-   "words": 664,
-   "distinct_internal": 5,
-   "density": 7.53,
+   "words": 625,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "custom-ai-agent-development",
-    "feishu-cli-solo-work-setup",
-    "how-to-build-an-ai-agent"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/claude-code-vs-cowork-vs-tag",
@@ -2990,18 +2509,15 @@
   },
   {
    "file": "zh/claude-managed-agents-one-person-company",
-   "words": 311,
-   "distinct_internal": 5,
-   "density": 16.08,
+   "words": 274,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-workflow-for-solo-founders",
-    "what-is-persistent-ai-agent"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/clean-up-downloads-folder-with-ai",
@@ -3021,24 +2537,21 @@
   },
   {
    "file": "zh/codex-for-chrome-vs-claude-for-chrome",
-   "words": 403,
-   "distinct_internal": 5,
-   "density": 12.41,
+   "words": 351,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "what-are-claude-managed-agents",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/codex-harness-open-source",
-   "words": 1262,
+   "words": 1265,
    "distinct_internal": 3,
-   "density": 2.38,
+   "density": 2.37,
    "fails": [],
    "warns": [
     "density 2.4/1000w"
@@ -3051,12 +2564,12 @@
   },
   {
    "file": "zh/context-engineering-for-ai-agents",
-   "words": 921,
+   "words": 924,
    "distinct_internal": 3,
-   "density": 3.26,
+   "density": 3.25,
    "fails": [],
    "warns": [
-    "density 3.3/1000w"
+    "density 3.2/1000w"
    ],
    "targets": [
     "ai-scheduling-agent",
@@ -3078,24 +2591,21 @@
   },
   {
    "file": "zh/custom-ai-agent-development",
-   "words": 481,
-   "distinct_internal": 5,
-   "density": 10.4,
+   "words": 446,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-development-services",
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/deepseek-agent-function-calling",
-   "words": 647,
+   "words": 652,
    "distinct_internal": 2,
-   "density": 3.09,
+   "density": 3.07,
    "fails": [
     "duplicate internal target"
    ],
@@ -3109,7 +2619,7 @@
   },
   {
    "file": "zh/deepseek-agent-vs-claude-code",
-   "words": 1308,
+   "words": 1311,
    "distinct_internal": 3,
    "density": 2.29,
    "fails": [],
@@ -3124,9 +2634,9 @@
   },
   {
    "file": "zh/deepseek-v4-1-flash",
-   "words": 782,
+   "words": 784,
    "distinct_internal": 2,
-   "density": 2.56,
+   "density": 2.55,
    "fails": [],
    "warns": [
     "density 2.6/1000w"
@@ -3138,18 +2648,15 @@
   },
   {
    "file": "zh/deepseek-v4-api-solo-operator",
-   "words": 838,
-   "distinct_internal": 5,
-   "density": 5.97,
+   "words": 808,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "llm-knowledge-base-solo-operators",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-between-sessions"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/deepseek-v4-pro-0813",
@@ -3178,52 +2685,43 @@
   },
   {
    "file": "zh/dynamic-workflows-build-or-use-workspace",
-   "words": 245,
-   "distinct_internal": 5,
-   "density": 20.41,
+   "words": 207,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "claude-managed-agents-one-person-company",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "scale-one-person-business-without-hiring",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/effort-control-fast-mode-ai-work",
-   "words": 297,
-   "distinct_internal": 5,
-   "density": 16.84,
+   "words": 264,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "claude-managed-agents-one-person-company",
-    "scale-one-person-business-without-hiring",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/feishu-cli-solo-work-setup",
-   "words": 307,
-   "distinct_internal": 5,
-   "density": 16.29,
+   "words": 273,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-development-services",
-    "ai-agent-vs-chatbot",
-    "genspark-vs-manus",
-    "gumloop-alternatives-2026",
-    "how-to-build-an-ai-agent"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/file-organizer-vs-file-renamer-vs-file-sorter",
@@ -3242,56 +2740,49 @@
   },
   {
    "file": "zh/first-100-customers-solo-founder",
-   "words": 268,
-   "distinct_internal": 5,
-   "density": 18.66,
+   "words": 236,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "feishu-cli-solo-work-setup",
-    "how-to-build-an-ai-agent",
-    "relevance-ai-vs-n8n",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/floatcup-world-cup-2026-calendar-subscribe",
-   "words": 320,
-   "distinct_internal": 3,
-   "density": 9.38,
+   "words": 292,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "world-cup-2026-google-calendar-ics",
-    "world-cup-2026-guide",
-    "world-cup-2026-schedule"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/gemini-3-5-integration-solo-operators",
-   "words": 346,
-   "distinct_internal": 5,
-   "density": 14.45,
+   "words": 310,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "ai-workflow-solo-founders",
-    "ai-workspace-agents",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/gemini-3-7-flash",
-   "words": 782,
+   "words": 784,
    "distinct_internal": 2,
-   "density": 2.56,
+   "density": 2.55,
    "fails": [],
    "warns": [
     "density 2.6/1000w"
@@ -3303,7 +2794,7 @@
   },
   {
    "file": "zh/gemini-3-8-flash",
-   "words": 1859,
+   "words": 1862,
    "distinct_internal": 3,
    "density": 1.61,
    "fails": [],
@@ -3318,58 +2809,47 @@
   },
   {
    "file": "zh/genspark-ai-pricing",
-   "words": 341,
-   "distinct_internal": 4,
-   "density": 11.73,
+   "words": 272,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/genspark-super-agent-explained",
-   "words": 320,
-   "distinct_internal": 5,
-   "density": 15.62,
-   "fails": [
-    "dead link /blog/agentic-ai-company-guide",
-    "dead link /blog/gemini-3-5-integration-solo-workflow"
+   "words": 238,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "warns": [],
-   "targets": [
-    "agentic-ai-company-guide",
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "gemini-3-5-integration-solo-workflow",
-    "how-one-person-businesses-work-like-a-team-with-ai"
-   ]
+   "targets": []
   },
   {
    "file": "zh/genspark-vs-manus",
-   "words": 453,
-   "distinct_internal": 5,
-   "density": 11.04,
+   "words": 414,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "genspark-ai-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "manus-ai-alternatives-2026"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/glm-5-3",
-   "words": 730,
+   "words": 732,
    "distinct_internal": 2,
-   "density": 2.74,
+   "density": 2.73,
    "fails": [],
    "warns": [
     "density 2.7/1000w"
@@ -3381,43 +2861,37 @@
   },
   {
    "file": "zh/google-calendar-vs-apple-calendar",
-   "words": 256,
-   "distinct_internal": 5,
-   "density": 19.53,
+   "words": 219,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "how-to-build-ai-agents-for-repeated-work",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/google-calendar-vs-outlook",
-   "words": 315,
-   "distinct_internal": 5,
-   "density": 15.87,
+   "words": 260,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "how-to-build-ai-agents-for-repeated-work",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/gpt-5-6-floatboat",
-   "words": 642,
+   "words": 646,
    "distinct_internal": 3,
-   "density": 4.67,
+   "density": 4.64,
    "fails": [
     "duplicate internal target"
    ],
@@ -3446,9 +2920,9 @@
   },
   {
    "file": "zh/gpt-6-astra",
-   "words": 1617,
+   "words": 1620,
    "distinct_internal": 3,
-   "density": 1.86,
+   "density": 1.85,
    "fails": [],
    "warns": [
     "density 1.9/1000w"
@@ -3461,71 +2935,59 @@
   },
   {
    "file": "zh/gpt-image-2-manga-comic-workflow",
-   "words": 302,
-   "distinct_internal": 5,
-   "density": 16.56,
+   "words": 266,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "ai-workflow-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "scale-one-person-business-without-hiring"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/gpt-image-2-storyboard-solo",
-   "words": 275,
-   "distinct_internal": 5,
-   "density": 18.18,
+   "words": 236,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-workflow-vibe-coding",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "scale-one-person-business-without-hiring"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/gpt-image-2-vs-midjourney-nano-banana-2",
-   "words": 579,
-   "distinct_internal": 5,
-   "density": 8.64,
+   "words": 537,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-workflow-vibe-coding",
-    "ai-workspace-agents",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/grok-3-api-solo-operator",
-   "words": 259,
-   "distinct_internal": 5,
-   "density": 19.31,
+   "words": 208,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agent-vs-chatbot",
-    "ai-workflow-for-solo-founders",
-    "deepseek-v4-api-solo-operator",
-    "what-is-vibe-coding",
-    "why-ai-forgets-between-sessions"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/grok-4-6",
-   "words": 502,
+   "words": 505,
    "distinct_internal": 3,
-   "density": 5.98,
+   "density": 5.94,
    "fails": [],
    "warns": [],
    "targets": [
@@ -3548,99 +3010,81 @@
   },
   {
    "file": "zh/gumloop-alternatives-2026",
-   "words": 426,
-   "distinct_internal": 5,
-   "density": 11.74,
+   "words": 387,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/gumloop-review-2026",
-   "words": 240,
-   "distinct_internal": 5,
-   "density": 20.83,
+   "words": 201,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/how-one-person-businesses-work-like-a-team-with-ai",
-   "words": 239,
-   "distinct_internal": 3,
-   "density": 12.55,
+   "words": 222,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
    "warns": [
-    "zh parity: internal targets differ from en"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-automation-agency-pricing",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "zh/how-to-build-ai-agents-for-repeated-work",
-   "words": 197,
-   "distinct_internal": 5,
-   "density": 25.38,
+   "words": 155,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-workflow-for-solo-founders",
-    "what-are-claude-managed-agents",
-    "workspace-agents-for-solo-operators",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/how-to-build-an-ai-agent-with-chatgpt",
-   "words": 318,
-   "distinct_internal": 5,
-   "density": 15.72,
+   "words": 271,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-agent-workflow-vibe-coding",
-    "ai-workspace-agents",
-    "how-to-build-ai-agents-for-repeated-work",
-    "why-ai-forgets-between-sessions"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/how-to-build-an-ai-agent",
-   "words": 271,
-   "distinct_internal": 5,
-   "density": 18.45,
+   "words": 238,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-development-services",
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "gumloop-review-2026",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/how-to-build-deepseek-agent",
-   "words": 1217,
+   "words": 1220,
    "distinct_internal": 2,
    "density": 1.64,
    "fails": [
@@ -3656,9 +3100,9 @@
   },
   {
    "file": "zh/how-to-use-obsidian-with-ai-agent",
-   "words": 742,
+   "words": 748,
    "distinct_internal": 4,
-   "density": 5.39,
+   "density": 5.35,
    "fails": [
     "duplicate internal target"
    ],
@@ -3672,52 +3116,45 @@
   },
   {
    "file": "zh/html-anything-review-2026",
-   "words": 301,
-   "distinct_internal": 4,
-   "density": 13.29,
+   "words": 272,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "claude-code-non-developers-solo-operators",
-    "stop-context-switching-workspace-agent"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/html-is-the-new-markdown",
-   "words": 339,
-   "distinct_internal": 5,
-   "density": 14.75,
+   "words": 250,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-workflow-for-solo-founders",
-    "ai-workspace-agents",
-    "claude-code-non-developers-solo-operators",
-    "stop-context-switching-workspace-agent",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/html-vs-markdown-ai-output",
-   "words": 464,
-   "distinct_internal": 4,
-   "density": 8.62,
+   "words": 380,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-workspace-agents",
-    "codex-for-chrome-vs-claude-for-chrome",
-    "html-anything-review-2026",
-    "workspace-agents-vs-chat-assistants"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/introducing-floatim",
-   "words": 197,
+   "words": 199,
    "distinct_internal": 2,
-   "density": 10.15,
+   "density": 10.05,
    "fails": [
     "angle residue"
    ],
@@ -3743,7 +3180,7 @@
   },
   {
    "file": "zh/kimi-k3-floatboat",
-   "words": 942,
+   "words": 944,
    "distinct_internal": 2,
    "density": 2.12,
    "fails": [],
@@ -3772,93 +3209,71 @@
   },
   {
    "file": "zh/lark-cli-when-to-use-it",
-   "words": 489,
-   "distinct_internal": 5,
-   "density": 10.22,
+   "words": 451,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-development-services",
-    "ai-agent-vs-ai-assistant",
-    "gumloop-alternatives-2026",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/lindy-vs-gumloop",
-   "words": 724,
-   "distinct_internal": 3,
-   "density": 4.14,
+   "words": 702,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "zh parity: internal targets differ from en"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai"
-   ]
+   "targets": []
   },
   {
    "file": "zh/llm-knowledge-base-solo-operators",
-   "words": 400,
-   "distinct_internal": 5,
-   "density": 12.5,
+   "words": 361,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "custom-ai-agent-development",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/manus-ai-alternatives-2026",
-   "words": 306,
-   "distinct_internal": 4,
-   "density": 13.07,
-   "fails": [
-    "duplicate internal target"
+   "words": 270,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "targets": []
   },
   {
    "file": "zh/meta-muse-spark-one-person-company",
-   "words": 377,
-   "distinct_internal": 5,
-   "density": 13.26,
-   "fails": [
-    "dead link /blog/ai-model-switching-trap",
-    "dead link /blog/ai-image-tools-comparison",
-    "dead link /blog/ai-storyboarding-workflow",
-    "dead link /blog/claude-code-linux",
-    "dead link /blog/workflow-vs-agents"
+   "words": 344,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "warns": [],
-   "targets": [
-    "ai-image-tools-comparison",
-    "ai-model-switching-trap",
-    "ai-storyboarding-workflow",
-    "claude-code-linux",
-    "workflow-vs-agents"
-   ]
+   "targets": []
   },
   {
    "file": "zh/minimax-h3-max-infinite-ai-livestream",
-   "words": 993,
+   "words": 997,
    "distinct_internal": 4,
-   "density": 4.03,
+   "density": 4.01,
    "fails": [
     "dead link /blog/34-vibe-coding-one-prompt-html-game"
    ],
@@ -3872,25 +3287,21 @@
   },
   {
    "file": "zh/no-code-ai-agent-builder",
-   "words": 249,
-   "distinct_internal": 4,
-   "density": 16.06,
-   "fails": [
-    "duplicate internal target"
+   "words": 200,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agent-solo-operators",
-    "ai-agent-workflow-vibe-coding",
-    "workspace-agents-vs-chat-assistants",
-    "workspace-agents-vs-workflow-builders"
-   ]
+   "targets": []
   },
   {
    "file": "zh/oh-my-codex-vs-superpowers",
-   "words": 426,
+   "words": 429,
    "distinct_internal": 3,
-   "density": 7.04,
+   "density": 6.99,
    "fails": [],
    "warns": [],
    "targets": [
@@ -3901,33 +3312,27 @@
   },
   {
    "file": "zh/openai-4-day-work-week-one-person-company",
-   "words": 274,
-   "distinct_internal": 5,
-   "density": 18.25,
+   "words": 235,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-vs-ai-assistant",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-between-sessions"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/openai-gpt-6-one-person-company",
-   "words": 277,
-   "distinct_internal": 5,
-   "density": 18.05,
+   "words": 241,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-workflow-vibe-coding",
-    "ai-agents-2026-solo-operators",
-    "scale-one-person-business-without-hiring",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/organize-receipts-and-invoices-with-ai",
@@ -3959,72 +3364,53 @@
   },
   {
    "file": "zh/relevance-ai-vs-n8n",
-   "words": 529,
-   "distinct_internal": 5,
-   "density": 9.45,
+   "words": 484,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/scale-one-person-business-without-hiring",
-   "words": 156,
-   "distinct_internal": 5,
-   "density": 32.05,
+   "words": 118,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-workflow-for-solo-founders",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "why-ai-forgets-between-sessions",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/solopreneur-pricing-day-one",
-   "words": 202,
-   "distinct_internal": 5,
-   "density": 24.75,
+   "words": 172,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "ai-workflow-solo-founders",
-    "first-100-customers-solo-founder",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/stop-context-switching-workspace-agent",
-   "words": 183,
-   "distinct_internal": 5,
-   "density": 27.32,
-   "fails": [
-    "dead link /blog/stop-context-switching",
-    "dead link /blog/why-automation-ends-up-more-frustrating",
-    "dead link /blog/solo-founders-and-workspace-agents",
-    "dead link /blog/reduce-context-switching-manually",
-    "dead link /blog/ai-agents-for-solo-operators",
-    "forbidden anchor: 感兴趣"
+   "words": 154,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agents-for-solo-operators",
-    "reduce-context-switching-manually",
-    "solo-founders-and-workspace-agents",
-    "stop-context-switching",
-    "why-automation-ends-up-more-frustrating"
-   ]
+   "targets": []
   },
   {
    "file": "zh/vibe-coding-one-prompt-html-game",
@@ -4071,41 +3457,35 @@
   },
   {
    "file": "zh/what-are-claude-managed-agents",
-   "words": 337,
-   "distinct_internal": 5,
-   "density": 14.84,
+   "words": 299,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "how-to-build-an-ai-agent",
-    "what-is-persistent-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/what-gstack-gets-right-about-one-person-businesses",
-   "words": 288,
-   "distinct_internal": 5,
-   "density": 17.36,
+   "words": 244,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/what-if-your-calendar-could-run-itself",
-   "words": 220,
+   "words": 225,
    "distinct_internal": 5,
-   "density": 22.73,
+   "density": 22.22,
    "fails": [],
    "warns": [],
    "targets": [
@@ -4133,9 +3513,9 @@
   },
   {
    "file": "zh/what-is-agentic-calendar",
-   "words": 238,
+   "words": 243,
    "distinct_internal": 5,
-   "density": 21.01,
+   "density": 20.58,
    "fails": [],
    "warns": [],
    "targets": [
@@ -4205,9 +3585,9 @@
   },
   {
    "file": "zh/what-is-deepseek-agent",
-   "words": 1159,
+   "words": 1162,
    "distinct_internal": 3,
-   "density": 2.59,
+   "density": 2.58,
    "fails": [],
    "warns": [
     "density 2.6/1000w"
@@ -4264,20 +3644,17 @@
   },
   {
    "file": "zh/what-is-llm-wiki",
-   "words": 322,
-   "distinct_internal": 5,
-   "density": 15.53,
+   "words": 293,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "llm-knowledge-base-solo-operators",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/what-is-minimax-h3",
@@ -4293,9 +3670,9 @@
   },
   {
    "file": "zh/what-is-obsidian-vault",
-   "words": 256,
+   "words": 258,
    "distinct_internal": 1,
-   "density": 3.91,
+   "density": 3.88,
    "fails": [
     "duplicate internal target"
    ],
@@ -4309,35 +3686,29 @@
   },
   {
    "file": "zh/what-is-persistent-ai-agent",
-   "words": 233,
-   "distinct_internal": 5,
-   "density": 21.46,
+   "words": 199,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-chatbot",
-    "feishu-cli-solo-work-setup",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/what-is-vibe-coding",
-   "words": 336,
-   "distinct_internal": 5,
-   "density": 14.88,
+   "words": 297,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [
     "angle residue"
    ],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-agent-vs-chatbot",
-    "ai-agents-2026-solo-operators",
-    "how-to-build-an-ai-agent"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/what-is-voice-dictation-for-ai-agents",
@@ -4358,147 +3729,118 @@
   },
   {
    "file": "zh/where-is-world-cup-2026-host-cities",
-   "words": 967,
-   "distinct_internal": 2,
-   "density": 2.07,
-   "fails": [
-    "duplicate internal target"
-   ],
+   "words": 943,
+   "distinct_internal": 0,
+   "density": 0.0,
+   "fails": [],
    "warns": [
-    "density 2.1/1000w",
-    "zh parity: internal targets differ from en"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "world-cup-2026-guide",
-    "world-cup-2026-schedule"
-   ]
+   "targets": []
   },
   {
    "file": "zh/why-ai-forgets-between-sessions",
-   "words": 204,
-   "distinct_internal": 5,
-   "density": 24.51,
+   "words": 164,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/why-ai-forgets-every-session",
-   "words": 254,
-   "distinct_internal": 5,
-   "density": 19.69,
+   "words": 210,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-vs-ai-assistant",
-    "feishu-cli-solo-work-setup",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/workflow-builder-vs-ai-workspace",
-   "words": 406,
-   "distinct_internal": 5,
-   "density": 12.32,
+   "words": 368,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-automation-agency-pricing",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "lindy-vs-gumloop"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/workspace-agents-for-solo-operators",
-   "words": 259,
-   "distinct_internal": 5,
-   "density": 19.31,
+   "words": 220,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agents-2026-solo-operators",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "what-is-persistent-ai-agent",
-    "why-ai-forgets-every-session",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/workspace-agents-vs-chat-assistants",
-   "words": 496,
-   "distinct_internal": 5,
-   "density": 10.08,
+   "words": 456,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-vs-ai-assistant",
-    "ai-agents-2026-solo-operators",
-    "ai-workspace-agents",
-    "how-one-person-businesses-work-like-a-team-with-ai"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/workspace-agents-vs-workflow-builders",
-   "words": 458,
-   "distinct_internal": 5,
-   "density": 10.92,
+   "words": 417,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "ai-agent-use-cases-real-examples",
-    "ai-agent-workflow-vibe-coding",
-    "how-one-person-businesses-work-like-a-team-with-ai",
-    "how-to-build-an-ai-agent",
-    "workflow-builder-vs-ai-workspace"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/world-cup-2026-bracket",
-   "words": 2298,
-   "distinct_internal": 4,
-   "density": 1.74,
+   "words": 2261,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 1.7/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "floatcup-world-cup-2026-calendar-subscribe",
-    "world-cup-2026-bracketology",
-    "world-cup-2026-draw",
-    "world-cup-2026-groups-standings"
-   ]
+   "targets": []
   },
   {
    "file": "zh/world-cup-2026-bracketology",
-   "words": 402,
-   "distinct_internal": 2,
-   "density": 4.98,
+   "words": 379,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "floatcup-world-cup-2026-calendar-subscribe",
-    "world-cup-2026-bracket"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/world-cup-2026-draw",
-   "words": 673,
+   "words": 634,
    "distinct_internal": 9,
-   "density": 13.37,
-   "fails": [
-    "duplicate internal target"
-   ],
+   "density": 14.2,
+   "fails": [],
    "warns": [],
    "targets": [
     "floatcup-world-cup-2026-calendar-subscribe",
@@ -4514,9 +3856,9 @@
   },
   {
    "file": "zh/world-cup-2026-google-calendar-ics",
-   "words": 739,
+   "words": 720,
    "distinct_internal": 3,
-   "density": 4.06,
+   "density": 4.17,
    "fails": [
     "duplicate internal target"
    ],
@@ -4529,20 +3871,16 @@
   },
   {
    "file": "zh/world-cup-2026-groups-standings",
-   "words": 6381,
-   "distinct_internal": 4,
-   "density": 0.63,
-   "fails": [
-    "duplicate internal target"
-   ],
+   "words": 6323,
+   "distinct_internal": 1,
+   "density": 0.16,
+   "fails": [],
    "warns": [
-    "density 0.6/1000w"
+    "R1: 1 internal links",
+    "density 0.2/1000w"
    ],
    "targets": [
-    "world-cup-2026-bracket",
-    "world-cup-2026-bracketology",
-    "world-cup-2026-draw",
-    "world-cup-2026-schedule-usa"
+    "world-cup-2026-draw"
    ]
   },
   {
@@ -4561,37 +3899,46 @@
   },
   {
    "file": "zh/world-cup-2026-schedule-usa",
-   "words": 708,
-   "distinct_internal": 3,
-   "density": 4.24,
+   "words": 676,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
-   "warns": [],
-   "targets": [
-    "floatcup-world-cup-2026-calendar-subscribe",
-    "world-cup-2026-guide",
-    "world-cup-2026-schedule"
-   ]
+   "warns": [
+    "R1: 0 internal links",
+    "density 0.0/1000w"
+   ],
+   "targets": []
   },
   {
    "file": "zh/world-cup-2026-schedule",
-   "words": 1805,
-   "distinct_internal": 3,
-   "density": 1.66,
+   "words": 1769,
+   "distinct_internal": 0,
+   "density": 0.0,
    "fails": [],
    "warns": [
-    "density 1.7/1000w"
+    "R1: 0 internal links",
+    "density 0.0/1000w"
    ],
-   "targets": [
-    "floatcup-world-cup-2026-calendar-subscribe",
-    "world-cup-2026-google-calendar-ics",
-    "world-cup-2026-guide"
-   ]
+   "targets": []
   }
  ],
  "orphans": [
+  "agentic-ai-tools",
+  "ai-agent-development-services",
+  "ai-agent-use-cases-real-examples",
+  "ai-agent-vs-ai-assistant",
+  "ai-agent-vs-chatbot",
+  "ai-agent-workflow-vibe-coding",
+  "ai-agents-2026-solo-operators",
   "ai-assistant-for-personal-use-at-work",
+  "ai-automation-agency-do-you-need-one",
+  "ai-automation-agency-pricing",
+  "ai-browser-agent-vs-ai-browser-vs-ai-workspace",
   "ai-follow-up-email-opus-4-8",
   "ai-tools-for-business-automation-2026",
+  "ai-workflow-for-solo-founders",
+  "ai-workflow-solo-founders",
+  "ai-workspace-agents",
   "automate-tiktok-shop-research-fastmoss-floatboat",
   "best-ai-agent-builder-2026",
   "best-ai-agent-platform-2026",
@@ -4600,41 +3947,85 @@
   "best-claude-cowork-alternatives",
   "best-claude-tag-alternatives",
   "browser-ai-agent-security-questions",
+  "browser-ai-agent-what-it-can-do",
   "building-agentic-ai-systems-build-or-buy",
   "claude-code-vs-cowork-vs-tag",
+  "claude-managed-agents-one-person-company",
+  "codex-for-chrome-vs-claude-for-chrome",
   "context-engineering-for-ai-agents",
+  "custom-ai-agent-development",
   "deepseek-v4-1-flash",
+  "deepseek-v4-api-solo-operator",
   "dynamic-workflows-build-or-use-workspace",
   "effort-control-fast-mode-ai-work",
+  "feishu-cli-solo-work-setup",
+  "first-100-customers-solo-founder",
   "gemini-3-5-integration-solo-operators",
   "gemini-3-8-flash",
+  "genspark-ai-pricing",
   "genspark-super-agent-explained",
+  "genspark-vs-manus",
   "google-calendar-vs-apple-calendar",
   "google-calendar-vs-outlook",
   "gpt-6-astra",
   "gpt-image-2-manga-comic-workflow",
+  "gpt-image-2-storyboard-solo",
+  "gpt-image-2-vs-midjourney-nano-banana-2",
   "grok-3-api-solo-operator",
   "grok-bot",
+  "gumloop-alternatives-2026",
+  "gumloop-review-2026",
+  "how-to-build-ai-agents-for-repeated-work",
+  "how-to-build-an-ai-agent",
   "how-to-build-an-ai-agent-with-chatgpt",
+  "html-anything-review-2026",
   "html-is-the-new-markdown",
   "html-vs-markdown-ai-output",
+  "introducing-floatim",
   "lark-cli-when-to-use-it",
+  "lindy-vs-gumloop",
+  "llm-knowledge-base-solo-operators",
+  "manus-ai-alternatives-2026",
+  "meta-muse-spark-one-person-company",
   "minimax-h3-max-infinite-ai-livestream",
   "no-code-ai-agent-builder",
   "oh-my-codex-vs-superpowers",
   "openai-4-day-work-week-one-person-company",
   "openai-gpt-6-one-person-company",
   "raycast-for-windows-floatboat",
+  "relevance-ai-vs-n8n",
+  "scale-one-person-business-without-hiring",
   "solopreneur-pricing-day-one",
+  "stop-context-switching-workspace-agent",
+  "what-are-claude-managed-agents",
   "what-gstack-gets-right-about-one-person-businesses",
   "what-is-claude-code",
   "what-is-claude-tag",
   "what-is-doubao-work",
   "what-is-jev-model",
   "what-is-llm-wiki",
+  "why-ai-forgets-between-sessions",
+  "why-ai-forgets-every-session",
+  "workflow-builder-vs-ai-workspace",
+  "workspace-agents-for-solo-operators",
+  "workspace-agents-vs-chat-assistants",
+  "workspace-agents-vs-workflow-builders",
+  "zh/agentic-ai-tools",
+  "zh/ai-agent-development-services",
+  "zh/ai-agent-use-cases-real-examples",
+  "zh/ai-agent-vs-ai-assistant",
+  "zh/ai-agent-vs-chatbot",
+  "zh/ai-agent-workflow-vibe-coding",
+  "zh/ai-agents-2026-solo-operators",
   "zh/ai-assistant-for-personal-use-at-work",
+  "zh/ai-automation-agency-do-you-need-one",
+  "zh/ai-automation-agency-pricing",
+  "zh/ai-browser-agent-vs-ai-browser-vs-ai-workspace",
   "zh/ai-follow-up-email-opus-4-8",
   "zh/ai-tools-for-business-automation-2026",
+  "zh/ai-workflow-for-solo-founders",
+  "zh/ai-workflow-solo-founders",
+  "zh/ai-workspace-agents",
   "zh/automate-tiktok-shop-research-fastmoss-floatboat",
   "zh/best-ai-agent-builder-2026",
   "zh/best-ai-agent-platform-2026",
@@ -4643,37 +4034,68 @@
   "zh/best-claude-cowork-alternatives",
   "zh/best-claude-tag-alternatives",
   "zh/browser-ai-agent-security-questions",
+  "zh/browser-ai-agent-what-it-can-do",
   "zh/building-agentic-ai-systems-build-or-buy",
   "zh/claude-code-vs-cowork-vs-tag",
+  "zh/claude-managed-agents-one-person-company",
+  "zh/codex-for-chrome-vs-claude-for-chrome",
   "zh/context-engineering-for-ai-agents",
+  "zh/custom-ai-agent-development",
   "zh/deepseek-v4-1-flash",
+  "zh/deepseek-v4-api-solo-operator",
   "zh/dynamic-workflows-build-or-use-workspace",
   "zh/effort-control-fast-mode-ai-work",
+  "zh/feishu-cli-solo-work-setup",
+  "zh/first-100-customers-solo-founder",
   "zh/gemini-3-5-integration-solo-operators",
   "zh/gemini-3-8-flash",
+  "zh/genspark-ai-pricing",
   "zh/genspark-super-agent-explained",
+  "zh/genspark-vs-manus",
   "zh/google-calendar-vs-apple-calendar",
   "zh/google-calendar-vs-outlook",
   "zh/gpt-6-astra",
   "zh/gpt-image-2-manga-comic-workflow",
+  "zh/gpt-image-2-storyboard-solo",
+  "zh/gpt-image-2-vs-midjourney-nano-banana-2",
   "zh/grok-3-api-solo-operator",
   "zh/grok-bot",
+  "zh/gumloop-alternatives-2026",
+  "zh/gumloop-review-2026",
+  "zh/how-to-build-ai-agents-for-repeated-work",
+  "zh/how-to-build-an-ai-agent",
   "zh/how-to-build-an-ai-agent-with-chatgpt",
+  "zh/html-anything-review-2026",
   "zh/html-is-the-new-markdown",
   "zh/html-vs-markdown-ai-output",
+  "zh/introducing-floatim",
   "zh/lark-cli-when-to-use-it",
+  "zh/lindy-vs-gumloop",
+  "zh/llm-knowledge-base-solo-operators",
+  "zh/manus-ai-alternatives-2026",
+  "zh/meta-muse-spark-one-person-company",
   "zh/minimax-h3-max-infinite-ai-livestream",
   "zh/no-code-ai-agent-builder",
   "zh/oh-my-codex-vs-superpowers",
   "zh/openai-4-day-work-week-one-person-company",
   "zh/openai-gpt-6-one-person-company",
   "zh/raycast-for-windows-floatboat",
+  "zh/relevance-ai-vs-n8n",
+  "zh/scale-one-person-business-without-hiring",
   "zh/solopreneur-pricing-day-one",
+  "zh/stop-context-switching-workspace-agent",
+  "zh/what-are-claude-managed-agents",
   "zh/what-gstack-gets-right-about-one-person-businesses",
   "zh/what-is-claude-code",
   "zh/what-is-claude-tag",
   "zh/what-is-doubao-work",
   "zh/what-is-jev-model",
-  "zh/what-is-llm-wiki"
+  "zh/what-is-llm-wiki",
+  "zh/why-ai-forgets-between-sessions",
+  "zh/why-ai-forgets-every-session",
+  "zh/workflow-builder-vs-ai-workspace",
+  "zh/workspace-agents-for-solo-operators",
+  "zh/workspace-agents-vs-chat-assistants",
+  "zh/workspace-agents-vs-workflow-builders"
  ]
 }

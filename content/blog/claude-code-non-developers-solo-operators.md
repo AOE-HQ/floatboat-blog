@@ -148,16 +148,3 @@ Oh, and one practical note: [Anthropic's support page on plans](https://support.
 Huh. I didn't expect figuring this out to feel this simple. But that's kind of the point — sometimes the answer really is just "not for you, yet."
 
 Anyway, that's today's little discovery. Back to building things.
-
-## Previous Posts:
-
-  * **[See what maintaining your own automation system actually looks like as a solo operator](/blog/feishu-cli-solo-work-setup)**
-
-  * **[Understand whether you should build your own AI tools or use existing ones](/blog/custom-ai-agent-development)**
-
-  * **[Learn how AI agents actually work before deciding if coding tools like Claude Code matter](/blog/how-to-build-an-ai-agent)**
-
-  * **[Explore the difference between AI agents and AI assistants for everyday workflows](/blog/ai-agent-vs-ai-assistant)**
-
-  * **[See real-world AI agent use cases to understand where coding agents actually fit](/blog/ai-agent-use-cases-real-examples)**
-

@@ -109,16 +109,3 @@ The discipline isn't picking the right level on any one task. It's not defaultin
 That's where I've landed. I'll probably keep adjusting — the framework that works in May might not be the one that works in August, especially as Fast Mode comes out of research preview and the surrounding tools change. But the core insight has stuck: the question isn't how to get Claude to think harder. It's when not to.
 
 Back to it.
-
-## Previous Posts
-
-[How to Scale a One-Person Business Without Hiring](/blog/scale-one-person-business-without-hiring)
-
-[Claude Managed Agents: What They Mean for Solo Companies](/blog/claude-managed-agents-one-person-company)
-
-[AI Doesn't Know How You Work — That's the Real Problem](/blog/ai-workflow-for-solo-founders)
-
-[AI Workspace Agents vs Chat Assistants: What's Different](/blog/workspace-agents-vs-chat-assistants)
-
-[How to Stop Context Switching with a Workspace Agent](/blog/stop-context-switching-workspace-agent)
-

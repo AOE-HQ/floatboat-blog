@@ -144,16 +144,3 @@ The question isn't "which one replaces the others." It's "which combination cove
 That's my honest take on where the three categories stand right now. The lines will keep blurring — OpenAI's already announced plans to merge Atlas, Codex, and ChatGPT into one app. But the structural differences are real, and matching the right category to your actual workday saves a lot of trial-and-error.
 
 I'm still experimenting. That part never really ends.
-
-## Previous Posts:
-
-  * Why your AI workflow feels fragmented: [the real bottleneck isn’t the model — it’s the way tools are stitched together](/blog/workspace-agents-for-solo-operators)
-
-  * Browser agents vs AI workspaces:[ understanding the difference between predefined workflows and context-aware agents](/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace)
-
-  * [How to stop context switching when your work lives across tabs, files, and AI tools](/blog/browser-ai-agent-what-it-can-do)
-
-  * The new AI model just dropped — should you switch? [A practical take on why most solo operators overestimate the gains](/blog/ai-workspace-agents)
-
-  * [Claude Code on Linux and the shift from browser-based AI to terminal-native workflows](/blog/claude-managed-agents-one-person-company)
-

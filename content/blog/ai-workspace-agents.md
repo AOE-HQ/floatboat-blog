@@ -166,16 +166,3 @@ Before signing up for anything in this category, I'd answer these:
 If you got clear answers on all three — it's probably worth thirty minutes of poking around.
 
 That's where I am with the category today. It's still early, the edges are fuzzy, the naming is contested. But there's something real here, and it's worth understanding on your own terms before the marketing catches up.
-
-**Previous Posts:**
-
-  * [AI Agent vs Chatbot: What Actually Changes in How You Work](/blog/ai-agent-vs-chatbot)
-
-  * [Workflow Builder vs AI Workspace: Two Very Different Shapes of Automation](/blog/workflow-builder-vs-ai-workspace)
-
-  * [What Is a Persistent AI Agent (And Why Memory Changes Everything)](/blog/what-is-persistent-ai-agent)
-
-  * [AI Workflow for Solo Founders: Where Context Switching Actually Hurts](/blog/ai-workflow-for-solo-founders)
-
-  * [How One-Person Businesses Start Working Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

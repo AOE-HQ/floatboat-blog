@@ -119,12 +119,3 @@ Recurring meetings — the weekly standup, the monthly client check-in, the quar
 Setup for a recurring meeting typically involves: tagging the calendar event series as a specific meeting type, confirming the prep template (or customizing it once), and verifying that the relevant document sources are connected. After that, every instance of the series gets prepped automatically. For someone with five recurring weekly meetings, that's five briefs per week — roughly 250 per year — that appear without manual effort.
 
 * * *
-
-## 6\. Related Reading
-
-  * AI Follow-Up Automation After Meetings — The post-meeting side of the pipeline: how AI converts meeting outcomes into tasks, drafts, and next-meeting prep.
-
-  * What Is an Agentic Calendar? — The foundational definition of calendar-driven AI systems that execute the full meeting lifecycle.
-
-  * Calendar-Driven AI vs Chat-Based AI — Why calendar-triggered prep is architecturally different from asking a chat AI to prepare.
-

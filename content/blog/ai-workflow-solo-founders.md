@@ -146,16 +146,3 @@ That's where I am with this right now. The shift from "AI as a chatbot" to "AI a
 If your setup looks anything like mine, this might be worth exploring. I'll keep experimenting and share more as I learn.
 
 Back to building things.
-
-## Previous Posts:
-
-  * [If AI forgetting your context is the problem, here’s why that happens every session](/blog/why-ai-forgets-every-session)
-
-  * [Curious how persistent AI memory changes the workflow model? Start with this breakdown](/blog/what-is-persistent-ai-agent)
-
-  * [Still unsure how AI workspaces differ from traditional workflow builders? This explains the shift](/blog/workflow-builder-vs-ai-workspace)
-
-  * [Want a practical example of what an AI-powered solo workflow looks like in action? See this setup](/blog/feishu-cli-solo-work-setup)
-
-  * [And if you're wondering how solo operators actually scale with AI day to day, this is worth reading](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

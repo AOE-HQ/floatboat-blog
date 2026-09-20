@@ -136,16 +136,3 @@ I'm still figuring this out — the persistent agent space is moving fast enough
 That shift matters. The tools that deliver it in a genuinely accessible way — that's what I'll be watching next.
 
 _Anyway, that's today's little discovery. Or at least today's honest attempt to map something I find genuinely interesting._
-
-## Previous Posts:
-
-  * [Still confused about how AI agents differ from traditional tools? This breakdown makes the distinction clear](/blog/ai-agent-vs-chatbot)
-
-  * [If you're wondering how AI fits into real work—not just chats—these use cases are a good starting point](/blog/ai-agent-use-cases-real-examples)
-
-  * [The real shift isn’t just agents—it’s how workflows are evolving into AI workspaces](/blog/workflow-builder-vs-ai-workspace)
-
-  * [Want a concrete example of how this looks in practice? Here’s a solo workflow setup using Feishu CLI](/blog/feishu-cli-solo-work-setup)
-
-  * [Thinking about going deeper? This guide explains what it actually takes to build your own AI agent](/blog/how-to-build-an-ai-agent)
-

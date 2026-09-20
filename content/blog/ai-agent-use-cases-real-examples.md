@@ -148,12 +148,3 @@ Wait… ! And one more thing I keep noticing: **the people getting the most out 
 ![5.png](/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.webp)
 
 _If you're also experimenting with AI workflows, I'd be curious about what's actually working for you. Still figuring a lot of this out myself — but that's kind of the fun part._
-
-**Previous Posts:**
-
-  * **[running a one-person business like a team using AI workflows](<https://<https://floatboat.ai/blog/how-one-person-businesses-work-like-a-team-with-ai>>)**
-
-  * **[how AI automation works is actually priced in the real market](<https://<https://floatboat.ai/blog/ai-automation-agency-pricing>>)**
-
-  * **[how Lindy and Gumloop differ when it comes to agent-style workflows](<https://<https://floatboat.ai/blog/lindy-vs-gumloop>>)**
-

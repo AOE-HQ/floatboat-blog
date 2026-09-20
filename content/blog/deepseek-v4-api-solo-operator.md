@@ -138,16 +138,3 @@ Also: if you have data privacy requirements, self-hosting is the only real optio
 ![6.png](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
 
 Anyway, that's where things stand. The cost story is real and the architecture improvements are interesting — but V4 isn't live yet, and cheaper tokens don't automatically mean better workflows. Worth keeping an eye on the next few weeks.
-
-## Previous Posts:
-
-→ [Understand how AI workflows actually break down beyond model cost](/blog/ai-workflow-for-solo-founders)
-
-→[ Learn why context management, not tokens, is the real bottleneck](/blog/why-ai-forgets-between-sessions)
-
-→ [Explore how AI agents change the way solo operators run systems](/blog/ai-agent-solo-operators)
-
-→ [See how persistent AI memory impacts long-term productivity](/blog/what-is-persistent-ai-agent)
-
-→ [Go deeper into building a structured LLM knowledge base](/blog/llm-knowledge-base-solo-operators)
-

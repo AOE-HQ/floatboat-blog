@@ -116,16 +116,3 @@ Reclaim AI 走的是更轻的路线。它叠在现有 Google Calendar 之上（2
 以上就是我对"单人创业者该用哪款日历"这个问题的诚实答案。工具本身没那么重要，重要的是它合不合你实际工作的方式——而不是你希望自己工作起来的样子。
 
 再过几周我会知道得更多。我正在试几套新组合，到时候把真正留下来的分享出来。
-
-## 延伸阅读
-
-* 如果你的日历排得满满当当、工作却仍感觉支离破碎，[别再做无谓的上下文切换：为什么工作区 Agent 很重要](/zh/blog/stop-context-switching-workspace-agent)探讨的是一整天在应用之间来回跳的隐性成本。
-
-* 还在纠结你需要的是更聪明的规划器，还是真正能执行工作的东西？[工作区 Agent vs 工作流构建工具](/zh/blog/workspace-agents-vs-workflow-builders)讲清了"整理任务"和"推进任务"的区别。
-
-* 智能日历能替你排任务——但它们仍然靠你自己去执行。[面向单人创始人的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)看的是单人创业者的精力到底在一天中哪个环节流失。
-
-* 如果你一直在试各种 AI 调度器、助理和规划系统，[AI 工作区 Agent](/zh/blog/ai-workspace-agents)解释了为什么下一层也许不是又一种日历视图，而是真正的执行。
-
-* 好奇提醒响起之后会发生什么？[如何为重复性工作构建 AI Agent](/zh/blog/how-to-build-ai-agents-for-repeated-work)探讨了周期性工作流如何不再每周手动重建。
-

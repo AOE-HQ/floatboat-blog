@@ -80,18 +80,3 @@ Google Calendar 和 Outlook 都擅长告诉你安排了什么。提醒会响、�
 这正是我开始研究 [Floatboat](</>) 的原因。它不取代任何一款日历——它跟在日历后面。你的日历放日程，Floatboat 用 Agent 把工作往前推：不用你开口就先从上下文备好会议简报、起草跟进、跑那些过去每周要吃掉一小时手动搭建的周期性工作循环。我用它还不久，但「从井井有条的日程」到「主动执行」的转变，是我今年找到的最有用的东西。如果你的日历排得满满的，产出却仍然靠你手动打开每个标签页、追每个下一步——那个落差就值得一探。
 
 以上就是我的诚实看法。选一个和你工作已经所在之处匹配的日历——跟自己的生态较劲，摩擦远比任何功能优势值得。而如果你已经想通了这点、一周却仍感觉在手动推着日历浮出的每个任务，那下一个值得探索的可能不是更好的日历，而是提醒响过之后发生的事。
-
-## 延伸阅读
-
-  * 还在整天来回切 Gmail、Docs、日历和任务应用？看看为什么很多单人创业者在重新思考「工具跳来跳去」：[停止上下文切换：为什么工作区 Agent 很重要](/zh/blog/stop-context-switching-workspace-agent)
-
-  * 如果你的日历不断浮出工作、每个下一步却仍要你手动做，[单人创业者的工作区 Agent](/zh/blog/workspace-agents-for-solo-operators) 讲的是另一种执行方式。
-
-  * 日历管日程，但工作流才推动工作。读 [单人创始人 AI 工作流：为什么演示和日常工作看起来不一样](/zh/blog/ai-workflow-for-solo-founders)，看工作系统通常在哪儿断掉。
-
-  * 不确定自己需要的是助手、自动化还是 Agent？[工作区 Agent vs 聊天助手](/zh/blog/workspace-agents-vs-chat-assistants) 在真实工作设置里拆清了差别。
-
-  * 如果周期性准备工作、跟进与行政循环不断吃掉你的一周，[如何为重复性工作构建 AI Agent](/zh/blog/how-to-build-ai-agents-for-repeated-work) 探讨了重复工作流的另一种处理方式。
-
-![5.png](/zh/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.webp)
-

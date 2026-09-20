@@ -107,16 +107,3 @@ n8n 则不是为「描述一个任务、让 AI 自己搞定」的人准备的。
 _总之，挖这个还挺有意思的。这两款工具在自己设计好的方向上都很出色——我只是觉得很多人最后很沮丧，是因为给处境选错了工具。希望这篇能帮你搞清楚自己到底在哪条道上。_
 
 _接着去造东西了。_
-
-## 往期文章
-
-  * **[搞懂 AI Agent 与传统自动化工作流的真正区别](/zh/blog/workflow-builder-vs-ai-workspace)**
-
-  * **[在选对工具之前，先学会一步一步怎么搭 AI Agent](/zh/blog/how-to-build-an-ai-agent)**
-
-  * **[看看现实世界里的 AI Agent 用例，找到 Relevance AI 这类工具真正发光的地方](/zh/blog/ai-agent-use-cases-real-examples)**
-
-  * **[对比 AI Agent 与 AI 助手，更好理解这些工具实际怎么运作](/zh/blog/ai-agent-vs-ai-assistant)**
-
-  * **[看单人创始人如何在不用完整开发团队的情况下用 AI 工具自动化工作流](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-

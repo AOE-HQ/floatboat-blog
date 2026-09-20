@@ -96,16 +96,3 @@ draft: false
 这就是我目前的立场。如果你本来就生活在 Claude Code 里、又处于它设计所对应的规模，Dynamic Workflows 确实很有意思。但对我聊过的大多数单人创业者来说，更诚实的答案是：你需要的不是一种更强大的 Agent 协调方式。你需要的是更少的事情从指缝里漏掉。这不是同一个问题，也没有同一个答案。
 
 在往任何一个方向投入之前，都值得去查官方 Claude Code 文档——研究预览会变，尤其是 Dynamic Workflows 的定价与计划可用性，最好对着最新文档确认，而不是照着某篇发布稿（包括这篇）里写的来。
-
-## 延伸阅读
-
-[不招人也能扩大一人业务规模](/zh/blog/scale-one-person-business-without-hiring)
-
-[Claude Managed Agents：对一人公司意味着什么](/zh/blog/claude-managed-agents-one-person-company)
-
-[一人公司如何靠 AI 像团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-[为什么一人公司需要一个工作区 Agent](/zh/blog/workspace-agents-for-solo-operators)
-
-[工作区 Agent vs 工作流构建工具：一份清晰的对比](/zh/blog/workspace-agents-vs-workflow-builders)
-

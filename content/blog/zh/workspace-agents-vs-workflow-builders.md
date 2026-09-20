@@ -122,16 +122,3 @@ Anthropic 研究团队对[这个区别有个有用的定义](https://www.anthrop
 ![5.png](/zh/blog/images/workspace-agents-vs-workflow-builders/1777341489448-c8adee60-91c1-4eef-bf0d-39c26644a653.webp)
 
 以上就是我的诚实看法。这两个品类其实并不在竞争——它们解决的是"工作如何完成"的不同部分。如果你的工作长成管线的形状，就建一条管线；如果它长成一张堆满东西的桌子，就找个能陪你坐在桌边的东西。等你真正需要它时，你会知道的。
-
-## 系列前文
-
-  * [还在结构化工作流和 AI 原生工具之间摇摆？从这里开始](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [如果你是 Agent 新手，这篇指南讲清 AI Agent 在真实场景里到底怎么运作](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [想超越工具、搭自己的系统？这篇是从零搭建 AI Agent 的实用入门](/zh/blog/how-to-build-an-ai-agent)
-
-  * [想要更实操的视角？这篇展示了 Agent 工作流在日常工作中是怎么跑的](/zh/blog/ai-agent-workflow-vibe-coding)
-
-  * [如果你在单干，这篇拆解了一人公司如何用 AI 像团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

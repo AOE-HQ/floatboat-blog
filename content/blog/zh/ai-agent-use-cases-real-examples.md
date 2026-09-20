@@ -148,12 +148,3 @@ Agent 不了解那些没有说出口的背景——客户内部的关系、对�
 ![5.png](/zh/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.webp)
 
 _如果你也正在试验 AI 工作流，我很想知道对你真正有效的是什么。我自己也还在摸索——不过，这大概正是有趣的部分。_
-
-**往期文章：**
-
-  * [一个人如何像一支团队那样用 AI 工作流运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [AI 自动化服务在真实市场里到底怎么定价](/zh/blog/ai-automation-agency-pricing)
-
-  * [Lindy 与 Gumloop 在 Agent 式工作流上的差别](/zh/blog/lindy-vs-gumloop)
-

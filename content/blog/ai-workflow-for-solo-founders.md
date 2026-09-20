@@ -126,16 +126,3 @@ According to [MIT Sloan and BCG's joint research on AI and organizational learni
 That's where I am with this right now. I'm still figuring out the right setup for my own workflow — I don't think there's a single right answer for everyone. But the framing shift helped me: stop asking "is this AI good?" and start asking "does this AI know how I work?"
 
 Those are very different questions. And for people running things solo, the second one is the one that actually matters.
-
-## Previous Posts：
-
-  * [If you’re still figuring out what a real AI workflow looks like, start here](/blog/ai-workflow-solo-founders)
-
-  * [This breaks down why AI tools keep forgetting everything between sessions](/blog/why-ai-forgets-every-session)
-
-  * [Want to understand the bigger shift from assistants to agents?](/blog/ai-agents-2026-solo-operators)
-
-  * [Read this](/blog/ai-agents-2026-solo-operators) [Not sure whether you need an AI agent or just a better assistant? This clarifies it](/blog/ai-agent-vs-ai-assistant)
-
-  * [If you're deciding between building workflows or using a workspace, this will help](/blog/workflow-builder-vs-ai-workspace)
-

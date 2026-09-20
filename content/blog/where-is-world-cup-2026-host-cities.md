@@ -129,8 +129,3 @@ The short answer is simple: most venues are in the United States, with additiona
 The World Cup 2026 is being held across 16 host cities in the United States, Canada, and Mexico. The United States has the largest venue footprint, Canada provides Vancouver and Toronto, and Mexico contributes Guadalajara, Monterrey, and Mexico City. Together, those cities create the largest geographic hosting map in men’s World Cup history.
 
 For fans, the practical answer is to treat host cities as planning regions. Use this page to understand the map, use the schedule to identify actual match dates, and use official FIFA and host-city pages before booking travel.
-
-
-## Related Reading- [World Cup 2026 Guide — the main hub for tournament format, schedule, and planning.](/blog/world-cup-2026-guide)
-- [World Cup 2026 Schedule: Full Fixtures & Calendar Sync — match dates and calendar context.](/blog/world-cup-2026-schedule)
-- [USA World Cup 2026 Schedule: Match Times & Reminders — USMNT-specific schedule planning.](/blog/world-cup-2026-schedule-usa)

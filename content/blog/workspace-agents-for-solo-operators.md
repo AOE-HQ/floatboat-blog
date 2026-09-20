@@ -128,16 +128,3 @@ It's probably not worth it yet if:
   * You're in a regulated field where the [judgment layer can't be agent-mediated](https://www.atomicwork.com/blog/ai-agents-vs-ai-automation) — finance, legal, medical without strong human review
 
 That's where I've landed. The one-person company is becoming a default shape of work, and the tooling is finally starting to bend toward that shape. Whether you adopt this year or next probably matters less than whether you stay aware of how the category is evolving. When the right tool clicks for your specific operation, you'll know. Until then — keep your stack lean, keep your judgment yours, and don't trust anyone telling you the agent will do everything. It won't. But it might do enough to give you back a Tuesday.
-
-## Previous Posts:
-
-  * [If you're still figuring out how AI fits into solo work, this guide breaks down AI agents for one-person operators](/blog/ai-agents-2026-solo-operators)
-
-  * [Struggling with AI “forgetting” your context? This explains why it happens between sessions](/blog/why-ai-forgets-every-session)
-
-  * [Not sure how to actually scale alone? Here’s how one-person businesses operate like a team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [If you're comparing tools, this helps clarify AI workspace vs workflow builder differences](/blog/workflow-builder-vs-ai-workspace)
-
-  * [And if you want to go deeper, this explains what a persistent AI agent actually is](/blog/what-is-persistent-ai-agent)
-

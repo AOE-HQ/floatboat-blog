@@ -128,16 +128,3 @@ draft: false
   * 你在强监管行业——金融、法律、医疗——在缺乏强力人工复核时，[判断层没法交给 Agent 中介](https://www.atomicwork.com/blog/ai-agents-vs-ai-automation)
 
 这就是我的落脚点。一人公司正在成为工作的默认形态之一，而工具终于开始朝这个形态弯过去。你今年采纳还是明年采纳，也许没那么重要；重要的是你对这个品类如何演化保持警觉。当对的工具为你的具体运营「咔哒」一声合上时，你会知道的。在那之前——保持工具栈精简、把判断权留给自己，别信任何告诉你「Agent 什么都能干」的人。它不能。但它也许能多做一点，好把一个周二还给你。
-
-## 往期文章：
-
-  * [如果你还在琢磨 AI 如何融入单人工作，这份指南拆解了一人经营者的 AI Agent](/zh/blog/ai-agents-2026-solo-operators)
-
-  * [正在为 AI「忘记」你的上下文而头疼？这篇解释它为什么会在会话之间发生](/zh/blog/why-ai-forgets-every-session)
-
-  * [不知道怎么真正独自放大产能？看看一人企业如何借 AI 像团队一样运作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [如果你在对比工具，这篇能帮你厘清 AI 工作区与工作流搭建器的差异](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [想再深入一点，这篇解释持久化 AI Agent 到底是什么](/zh/blog/what-is-persistent-ai-agent)
-

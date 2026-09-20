@@ -137,12 +137,3 @@ For solo founders and solopreneurs in particular, this gap is expensive. Every c
 The two paradigms are complementary. Use chat-based AI for exploration and creation. Use calendar-driven AI for execution and follow-through. The calendar isn't replacing the chat window; it's handling the work that the chat window was never designed to do.
 
 * * *
-
-## 6\. Related Reading
-
-  * What Is an Agentic Calendar? — The foundational definition of the category that calendar-driven AI enables.
-
-  * What Is an AI Scheduling Agent? — The four-generation evolution from smart schedulers to calendar-driven agent OS.
-
-  * How AI Meeting Prep Actually Works — A concrete walkthrough of what calendar-driven preparation looks like in practice.
-

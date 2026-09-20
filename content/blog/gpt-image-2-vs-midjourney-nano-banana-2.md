@@ -150,16 +150,3 @@ I want to be careful not to overstate this: **most solo creators don't need thre
 That's where I land. The actual choice depends on what you make. If you're not sure, start with the free Nano Banana 2 tier this week, layer in GPT Image 2 when you need polished output, and only add Midjourney if you find yourself missing a specific look the others can't give you.
 
 When you need this, you'll know.
-
-## Previous Posts:
-
-  * [What’s the real difference between AI workspaces and ChatGPT?](/blog/ai-workspace-agents)
-
-  * [Not sure what AI agents actually do?](/blog/ai-agent-use-cases-real-examples)
-
-  * [Want to build your own workflow?](/blog/how-to-build-an-ai-agent)
-
-  * [If you care about how workflows actually run in practice, this one goes deeper](/blog/ai-agent-workflow-vibe-coding):
-
-  * [How solo operators use AI to work like a full team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

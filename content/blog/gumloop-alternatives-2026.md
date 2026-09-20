@@ -128,16 +128,3 @@ Not every frustration is a reason to switch. A few things worth trying first:
 The best automation tool really depends on ​**your level of technical expertise** ​, ​**the workflows you want to automate** ​, and​**​ whether you prefer flexibility or a managed experience** ​. No single tool wins across all those dimensions — and that's okay.
 
 If you're genuinely unsure, the fastest way to find out is to build one real workflow in two different tools. Not a demo. A workflow you'd actually run. That'll tell you more than any comparison article — including this one.
-
-## Previous Posts:
-
-  * [Compare how Lindy and Gumloop differ when building agent-style workflows.](/blog/lindy-vs-gumloop)
-
-  * [Explore real-world AI agent use cases across research, content, and operations.](/blog/ai-agent-use-cases-real-examples)
-
-  * [See how one-person businesses are starting to operate like a full team using AI roles.](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [Learn how AI automation work is actually priced in the real market.](/blog/ai-automation-agency-pricing)
-
-  * [Understand the difference between AI agents and assistants in real workflows.](/blog/ai-agent-vs-ai-assistant)
-

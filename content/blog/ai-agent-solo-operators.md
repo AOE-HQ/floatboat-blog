@@ -104,16 +104,3 @@ The question to ask before choosing anything: ​**what specifically breaks down
 That's where I land on this. Not a definitive verdict — more like a clearer frame for thinking about which version of "AI agent" is actually relevant to you.
 
 The best tool is the one you'll actually use and can actually maintain. For most non-technical solo operators, that still points to workspace-native over self-hosted. But it's worth knowing what you're trading off when you make that choice.
-
-## Previous Posts:
-
-  * [Understand the difference between AI agents vs chatbots](/blog/ai-agent-vs-chatbot)
-
-  * [Learn how AI agents actually work for solo operators in 2026](/blog/ai-agents-2026-solo-operators)
-
-  * [See how to build your own AI agent step by step](/blog/how-to-build-an-ai-agent)
-
-  * [Explore the shift from AI assistants to true AI agents](/blog/ai-agent-vs-ai-assistant)
-
-  * [Discover practical AI agent use cases in real workflows](/blog/ai-agent-use-cases-real-examples)
-

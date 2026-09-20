@@ -235,7 +235,3 @@ FloatCup 包含：
 2026 世界杯赛程排得很密——平均每天 2.7 场、跨越四个时区、淘汰赛阶段长达 22 天。打印的日历视图适合纵览全局；而真正让你在赛事开始后不误点的，是实时订阅。如果比赛时间变动——小组赛期间常有的事——静态导入不会告诉你；实时日历订阅会。
 
 想要零维护方案的读者，FloatCup 能一键处理完整赛程、时区换算与提醒。偏好手动操作的读者，ICS 导入适用于所有主流日历平台，两分钟内即可完成。两种方式都已在上面各节详述。
-
-## 延伸阅读- [World Cup 2026 指南：日期、赛制与 FAQ——完整赛事概览](/zh/blog/world-cup-2026-guide)
-- [如何把 World Cup 2026 加入 Google Calendar（ICS 指南）——覆盖每个平台的分步导入方法](/zh/blog/world-cup-2026-google-calendar-ics)
-- [FloatCup：一键订阅 World Cup 2026 日历——零成本的日历同步](/zh/blog/floatcup-world-cup-2026-calendar-subscribe)

@@ -106,16 +106,3 @@ Gumloop 是一个真正有能力的平台——没有被过度吹捧，但也确
 它是给"已经知道自己的流程怎么运转、想把它们自动化"的人用的工具。不是给"边干边摸索流程"的人用的。
 
 _总之，这就是我花真时间用过它之后得出的结论。它不是万能答案；但对合适的团队来说，它可能真的能回答相当多的问题。如果使用场景契合，值得跑一次试用。_
-
-## 往期文章：
-
-  * [对比 Lindy 与 Gumloop 在构建 Agent 式工作流上的差别](/zh/blog/lindy-vs-gumloop)
-
-  * [探索调研、内容与运营里的真实 AI Agent 应用场景](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [看一人公司如何开始用 AI 角色像完整团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [了解 AI 自动化服务在真实市场里到底怎么定价](/zh/blog/ai-automation-agency-pricing)
-
-  * [理解真实工作流里 AI Agent 与 AI 助手的区别](/zh/blog/ai-agent-vs-ai-assistant)
-

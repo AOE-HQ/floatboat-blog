@@ -134,16 +134,3 @@ draft: false
 如果你每天结束时都累得发懵，却又说不出具体因为什么——这大概就是原因的一部分。解药不是往技术栈顶上再摞一个应用，而是让技术栈变短。
 
 总之，这是我目前对这件事的所在位置。如果你这周试了手动版，我很好奇你会有什么发现。
-
-## 系列前文
-
-  * [工作区 Agent 如何帮你减少摩擦、让单人工作更顺滑](/zh/blog/stop-context-switching)
-
-  * [为什么聊天工具与工作流搭建器常常是增加复杂度，而不是解决问题](/zh/blog/why-automation-ends-up-more-frustrating)
-
-  * [如果你在单人生意里身兼多职，工作区 Agent 如何帮你理顺一天](/zh/blog/solo-founders-and-workspace-agents)
-
-  * [试试这个简单的手动练习来减少上下文切换，看看工作区 Agent 适不适合你](/zh/blog/reduce-context-switching-manually)
-
-  * [对单人工作用的 AI Agent 感兴趣？这篇深入讲了它们能为单人创业者做什么、不做什么](/zh/blog/ai-agents-for-solo-operators)
-

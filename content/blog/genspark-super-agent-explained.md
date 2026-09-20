@@ -88,17 +88,3 @@ I've seen a lot of hype around this tool. Most Genspark AI review content out th
 That's my honest take. You'll have to decide what's right for your situation.
 
 ![5.png](/blog/images/genspark-super-agent-explained/1779673431655-693b179e-e7d1-4c95-af7e-f78b5a6c178b.webp)
-
-
-## Previous Posts:
-
-• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](/blog/ai-workflow-for-solo-founders) — Before adding another AI workspace, figure out whether your bottleneck is research, execution, or context-switching.
-
-• [AI Workspace Agents: Why Chat Windows Stop Scaling](/blog/ai-workspace-agents) — Multi-model systems start making more sense once work moves beyond a single chat window.
-
-• [How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai) — A look at how solo operators use AI systems to reduce repetitive work without adding unnecessary complexity.
-
-• [How to Evaluate an Agentic AI Company Before You Commit](/blog/agentic-ai-company-guide) — Whether you're evaluating a platform or a service, workflow fit matters more than feature lists.
-
-• [Gemini 3.5 Integration: Does Another Model Actually Change Your Workflow?](/blog/gemini-3-5-integration-solo-workflow) — More models don't automatically create better workflows; sometimes they create more decisions.
-

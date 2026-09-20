@@ -114,14 +114,3 @@ Genspark 的说辞是它把**调研、聊天、图片生成、视频创作、演
 以上就是 Genspark 定价目前的状况。这个平台还很年轻、变化很快——积分配比、价格档位和功能条款在我观望的这几个月里都动过。如果你正在评估它，请在准备购买时核对官方数字。我今天写的这些，明天可能就已经稍有不同了。
 
 好，回去继续干活了。
-
-## 上一篇系列文章：
-
-  * **AI Agent 在调研、内容与运营中的真实用例** [https://floatboat.ai/blog/ai-agent-use-cases-real-examples](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * **一人公司如何借 AI 角色像完整团队一样运转** [https://floatboat.ai/blog/how-one-person-businesses-work-like-a-team-with-ai](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * **AI 自动化服务在真实市场上到底怎么定价** [https://floatboat.ai/blog/ai-automation-agency-pricing](/zh/blog/ai-automation-agency-pricing)
-
-  * **Lindy 与 Gumloop 在 Agent 式工作流上有什么不同** [https://floatboat.ai/blog/lindy-vs-gumloop](/zh/blog/lindy-vs-gumloop)
-

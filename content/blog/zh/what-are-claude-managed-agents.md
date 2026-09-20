@@ -104,16 +104,3 @@ The New Stack 对 [Anthropic 到底想干什么](https://thenewstack.io/with-cla
 如果你正在评估 AI 工作区工具（比如 Floatboat 就处在这一层——把多种 AI 能力整合进单一工作区流程），那么知道底层基础设施问题正越来越多地被这类服务「解决」，能帮你把问题问对：**这个工具是真的用那层基础设施来减少你的思考负担，还是仍然只是个聊天壳？**
 
 这个标准在实践里到底长什么样，我还在摸索。但我会继续测下去。
-
-**往期文章：**
-
-  * [什么是持久化 AI Agent](/zh/blog/what-is-persistent-ai-agent)
-
-  * [AI Agent vs AI 助手](/zh/blog/ai-agent-vs-ai-assistant)
-
-  * [如何为一人公司构建 AI Agent](/zh/blog/how-to-build-an-ai-agent)
-
-  * [AI Agent 用例：真实示例](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [工作流构建器 vs AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)
-

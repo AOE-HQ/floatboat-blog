@@ -102,16 +102,3 @@ One more thing worth repeating: you're building your ​**first useful agent** �
 Building an AI agent for repeated work isn't about technology — it's about clarity. The teams and individuals who get real value out of their first agent are the ones who took the time to map the job before touching a tool. The ones who struggled? They usually started with the tool and worked backwards.
 
 Pick one repeated task, map it carefully, choose the lightest build path that gets you there, and keep a human in the loop until you trust the outputs. That's the whole playbook. Everything else is iteration.
-
-## Previous Posts:
-
-  * Most first-time builders overcomplicate AI agents. Here’s why starting with one narrow workflow usually works better than chasing a “full AI operating system” — [what is agentic AI tools](/blog/ai-agent-solo-operators)
-
-  * Workflow builders and workspace agents solve very different problems — this breakdown helps you choose the lightest setup that actually fits your work — [workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * Before automating everything, understand the difference between assistants, workflow agents, coding agents, and autonomous systems — [what are Claude managed agents](/blog/what-are-claude-managed-agents)
-
-  * AI workflows usually fail from too much complexity, not too little capability. This is the practical framework solo founders are using instead — [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
-
-  * If your AI setup already feels messy, fragmented context between tools is probably the bottleneck — not the model quality itself — [why AI workflows feel fragmented](/blog/workspace-agents-for-solo-operators)
-

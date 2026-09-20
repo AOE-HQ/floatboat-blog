@@ -108,16 +108,3 @@ Token 成本是最显而易见的成本——也是大家写文章都爱提的�
 我的结论就是这样。我大概会持续调整——五月好用的框架，八月未必还好用，尤其等 Fast Mode 走出 research preview、周边工具也变了之后。但核心洞察留住了：问题不是"怎么让 Claude 想得更深"，而是"什么时候不必想那么深"。
 
 回去干活了。
-
-## 往期文章
-
-[一个人不招人，怎么把业务做大](/zh/blog/scale-one-person-business-without-hiring)
-
-[Claude Managed Agents：对一人公司意味着什么](/zh/blog/claude-managed-agents-one-person-company)
-
-[AI 不知道你是怎么工作的——这才是真正的问题](/zh/blog/ai-workflow-for-solo-founders)
-
-[AI 工作区 Agent 与聊天助手：差别在哪](/zh/blog/workspace-agents-vs-chat-assistants)
-
-[如何用工作区 Agent 戒掉上下文切换](/zh/blog/stop-context-switching-workspace-agent)
-

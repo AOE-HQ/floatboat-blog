@@ -122,16 +122,3 @@ Combo Skills——直接在 AI 工作区里构建的 AI 工作流链——是另
 总之，这就是我目前的看法。Managed Agents 是一次真实的基础设施转向——不是炒作。但对单人创业者来说，问题不是"这厉不厉害"，而是"它是否解决了一个我确实有的问题，以及要付出多大的复杂度成本？"答案因你在构建的东西而异。
 
 我大概会在多 Agent 与记忆功能走出研究预览后再回来看这个话题。那才是对个人运营者来说真正变得有意思的时刻。
-
-## 延伸阅读
-
-→ 了解 **[AI Agent 到底怎么为单人创业者工作](/zh/blog/ai-agent-solo-operators)**
-
-→ 看看 **[真实工作流里 AI Agent 和 AI 助手的实际区别](/zh/blog/ai-agent-vs-ai-assistant)**
-
-→ 学习如何[设计可复用的 AI 工作流，而不是依赖一次性 prompt](/zh/blog/ai-workflow-for-solo-founders)
-
-→ 探索**[持久化 AI Agent 是什么、为什么记忆改变一切](/zh/blog/what-is-persistent-ai-agent)**
-
-→ 发现真实世界里能落到**[日常工作的 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)**
-

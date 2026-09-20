@@ -107,16 +107,3 @@ It's a tool for people who already know how their processes work and want to aut
 
 
 _Anyway, that's what I found after spending real time with it. It's not the answer to everything, but for the right kind of team, it might actually be the answer to quite a lot. Worth a test run if the use case fits._
-
-**Previous Posts:**
-
-  * [Compare how Lindy and Gumloop differ when building agent-style workflows.](/blog/lindy-vs-gumloop)
-
-  * [Explore real-world AI agent use cases across research, content, and operations.](/blog/ai-agent-use-cases-real-examples)
-
-  * [See how one-person businesses are starting to operate like a full team using AI roles.](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [Learn how AI automation work is actually priced in the real market.](/blog/ai-automation-agency-pricing)
-
-  * [Understand the difference between AI agents and assistants in real workflows.](/blog/ai-agent-vs-ai-assistant)
-

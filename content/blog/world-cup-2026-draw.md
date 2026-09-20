@@ -127,14 +127,6 @@ Once the groups are official, match times become personally relevant. Start with
 
 FloatCup can support the lightweight version of this workflow: [subscribe to the tournament calendar](/blog/floatcup-world-cup-2026-calendar-subscribe), receive reminders, and avoid checking a static schedule manually. Floatboat can add more active workflows, such as pre-match briefs or recap drafts attached to match events. The draw becomes useful when it changes what you watch and when you watch it.
 
-## Related Reading
-
-- [World Cup 2026 Guide: Dates, Format, Hosts & FAQ](/blog/world-cup-2026-guide) — tournament overview
-- [World Cup 2026 Groups & Standings](/blog/world-cup-2026-groups-standings) — live group tracking after the draw
-- [World Cup 2026 Bracket: Template & Tracker](/blog/world-cup-2026-bracket) — knockout path after group results
-- [USA World Cup 2026 Schedule Guide](/blog/world-cup-2026-schedule-usa) — USMNT fixtures, key matches, and US time zones
-- [World Cup 2026 Bracketology](/blog/world-cup-2026-bracketology) — group difficulty and knockout path-cost analysis
-
 ## Conclusion
 
 The World Cup 2026 draw created the first real tournament map. Mexico, Canada, and the United States each received different host-nation challenges, while groups such as D, F, and K immediately raised bigger questions about difficulty, travel, rotation, and knockout path cost.

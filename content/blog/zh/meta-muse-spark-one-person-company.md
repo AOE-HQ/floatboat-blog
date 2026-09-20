@@ -116,16 +116,3 @@ GPT-5.4 发布时，我干了一件有点蠢的事。我花了一整个周末重
 这就是我的真心话，带着所有保留条件。一两个月后，GPT-5.5 或下一代 Muse 就会出来，对比又会不一样。但对单人创业者来说，"换之前先等等"往往比"立刻换"更经得起时间考验。
 
 有时候，新工具发布后最有用的动作，是两周内什么都不做——然后看那些真正每天在用的人最后怎么说。
-
-## 上一篇系列文章：
-
-  * **[是不是每次新模型发布都该换？拆解为什么多数单人创始人高估了收益](/zh/blog/ai-model-switching-trap)**
-
-  * **[GPT Image 2 对比 Midjourney 对比 Nano Banana 2——怎么按工作流（而不是排行榜）真正选对工具](/zh/blog/ai-image-tools-comparison)**
-
-  * **[单人创作者用 AI 做分镜：什么时候省下几小时——什么时候悄悄毁掉你的序列](/zh/blog/ai-storyboarding-workflow)**
-
-  * **[Linux 上的 Claude Code：为什么把 AI 从浏览器搬进终端，改变的不只是速度](/zh/blog/claude-code-linux)**
-
-  * **[Workflow 构建器 vs 工作区 Agent：自动化工作的两条完全不同的路（以及为什么混着用会浪费时间）](/zh/blog/workflow-vs-agents)**
-

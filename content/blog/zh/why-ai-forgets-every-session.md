@@ -126,16 +126,3 @@ _我开始管它叫「重新解释税」。一旦我注意到它，就再也无�
 ![5.png](/zh/blog/images/why-ai-forgets-every-session/1775543648701-03ac0ad6-590b-4a19-b418-3b9157fc917e.webp)
 
 _以上基于我独自运营内容业务的亲身体验，以及我对 AI 记忆架构做的研究。这里提到的任何一方都没有付过我钱。如果你正在实验持久上下文方案，我真心想知道你发现了什么——这个领域跑得很快，我自己也还有一部分没弄明白。_
-
-## 上一篇：
-
-  * [如果你想维护自己的自动化配置，这份 Feishu CLI 的真实拆解展示了单人创业者实际要面对什么](/zh/blog/feishu-cli-solo-work-setup)。
-
-  * [想看看单人创始人如何用 AI 像完整团队一样运转（而不用反复重新解释）？从这里开始](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)。
-
-  * [还在聊天式 AI 和更偏执行的东西之间犹豫？这份指南拆解了 AI Agent 与 AI 助理的区别](/zh/blog/ai-agent-vs-ai-assistant)。
-
-  * [想把重复的提示词变成可复用工作流？这份构建 AI Agent 的分步指南很适合接着读](/zh/blog/how-to-build-an-ai-agent)。
-
-  * [如果你在探索超越无状态聊天的工具，这份工作流搭建器 vs AI Workspace 的对比能帮你做选择](/zh/blog/workflow-builder-vs-ai-workspace)。
-

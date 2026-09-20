@@ -158,16 +158,3 @@ Claude for Chrome 这边：记忆是 Claude 账户设置里偏好项下的一个
   * 如果你在 EU/UK 等着用 Codex：Claude for Chrome 现在就能用
 
 _截至 2026 年 5 月。浏览器 Agent 安全是一个活跃研究领域，这些工具也在快速演变。基于本文做决定前，请到官方文档核实当前行为。_
-
-## 往期文章
-
-  * 新 AI 模型发布了——该换吗？一篇务实的看法：为什么大多数单人创业者高估了换模型的红利：[Meta Muse Spark](/zh/blog/meta-muse-spark-one-person-company)
-
-  * 为什么你的 AI 工作流感觉支离破碎：真正的瓶颈不是模型，而是工具之间拼接的方式：[Workspace agents for solo operators](/zh/blog/workspace-agents-for-solo-operators)
-
-  * 浏览器 AI 工具眼下听起来都差不多——这篇讲清 Agent 扩展、AI 浏览器与桌面工作区之间的实际差别：[Browser agent extensions vs AI browsers vs desktop workspaces](/zh/blog/browser-ai-agent-what-it-can-do)
-
-  * GPT Image 2 做漫画和视觉叙事：什么真能行（又在哪里翻车）：[GPT Image 2 manga workflow](/zh/blog/gpt-image-2-storyboard-solo)
-
-  * 2026 年 AI 图像工具横评：GPT Image 2 vs Midjourney vs Nano Banana 2，哪个适合你的工作流：[AI image tools comparison](/zh/blog/gpt-image-2-vs-midjourney-nano-banana-2)
-

@@ -130,16 +130,3 @@ For everyone in between — curious, doing it for fun, want to test whether you 
 That's where I am with this right now. Bookmark it, try it on a short page, see how it feels in your hands. The model will keep changing — what's true today might not be true in three months. But for one specific thing — solo sequential art with legible CJK text — it just crossed a threshold that's worth knowing about.
 
 Back to drawing things.
-
-## Previous Posts:
-
-  * [See how to build a repeatable AI workflow for solo creative work](/blog/ai-workflow-for-solo-founders)
-
-  * [Understand how AI tools fit into real solo operator workflows in 2026](/blog/ai-agents-2026-solo-operators)
-
-  * [Learn how one-person creators are scaling output without hiring](/blog/scale-one-person-business-without-hiring)
-
-  * [Discover practical AI workflows that actually work beyond one-off prompts](/blog/ai-workflow-solo-founders)
-
-  * [Explore how AI can help you operate like a full creative team solo](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

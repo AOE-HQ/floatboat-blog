@@ -96,18 +96,3 @@ That last point is worth emphasizing. This isn't an irreversible decision. The s
 I'm still figuring this out. That's the honest version. Two weeks isn't enough to know where all the edges are. But I can tell you the direction feels right — not because HTML is flashier, but because **work artifacts should be readable, reviewable, and useful to the person who actually has to act on them.** That's a pretty grounded reason to care about the format.
 
 Anyway, that's where I'm at with this. Still experimenting, still adjusting. But at least I know what direction I'm adjusting toward. Back to building things.
-
-## Previous Posts:
-
-• [Curious how AI workflows change day-to-day work? Read: AI Workflow for Solo Founders: What Actually Works](/blog/ai-workflow-for-solo-founders)
-
-• [If output is becoming a workspace instead of a chat, read: AI Workspace Agents: What Changes Beyond Chat Interfaces](/blog/ai-workspace-agents)
-
-• [Wondering whether agents or workflows fit better? Read: Workspace Agents vs Workflow Builders](/blog/workspace-agents-vs-workflow-builders)
-
-• [Using coding agents already? Read: Claude Code for Non‑Developers: What Solo Operators Should Know](/blog/claude-code-non-developers-solo-operators)
-
-• [Thinking about keeping work artifacts inside one environment? Read: Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent)
-
-![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.webp)
-

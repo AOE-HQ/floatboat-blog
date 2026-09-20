@@ -96,18 +96,3 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 我还在摸索。这是诚实的版本。两周不足以摸清所有边界，但我可以告诉你方向是对的——不是因为 HTML 更花哨，而是因为**工作成果应该对真正要拿它行动的那个人可读、可审查、有用。**这是个相当接地气的、去在乎格式的理由。
 
 总之，这就是我对这件事目前的看法。还在实验，还在调整——但至少我知道自己在往哪个方向调。回去继续造东西了。
-
-## 上一篇：
-
-• [好奇 AI 工作流怎么改变日常工作？读：AI Workflow for Solo Founders: What Actually Works（单人创始人的 AI 工作流：什么真正有效）](/zh/blog/ai-workflow-for-solo-founders)
-
-• [如果输出正从聊天变成工作区？读：AI Workspace Agents: What Changes Beyond Chat Interfaces（AI 工作区 Agent：聊天界面之外改变了什么）](/zh/blog/ai-workspace-agents)
-
-• [拿不准 Agent 和工作流哪个更合适？读：Workspace Agents vs Workflow Builders（工作区 Agent 对比工作流搭建器）](/zh/blog/workspace-agents-vs-workflow-builders)
-
-• [已经在用编码 Agent？读：Claude Code for Non‑Developers: What Solo Operators Should Know（写给非开发者的 Claude Code：单人创业者该知道什么）](/zh/blog/claude-code-non-developers-solo-operators)
-
-• [想把手头的工作成果留在同一个环境里？读：Stop Context Switching: Why Workspace Agents Matter（别再上下文切换：为什么工作区 Agent 重要）](/zh/blog/stop-context-switching-workspace-agent)
-
-![6.png](/zh/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.webp)
-

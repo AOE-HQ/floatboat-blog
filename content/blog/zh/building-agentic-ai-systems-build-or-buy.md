@@ -90,16 +90,3 @@ Anthropic 在[构建高效 Agent](https://anthropic.com/research/building-effect
 以上就是我在「构建 Agentic AI 系统」该自研还是购买这个问题上的现状。答案并不是放之四海而皆准的——它取决于你的工作流实际走到哪一步、你能承接多少维护、以及价值是否配得上复杂度。
 
 等我把自己的另外两条工作流从阶段二推到阶段三之后，我会再回来更新。每弄懂一小块，就向前走一步。
-
-## 延伸阅读
-
-  * 如果你还在判断自己需要的到底是一个 Agent 还是更大的东西，从这里开始：[Agentic AI Tools：动手构建之前的品类地图](/zh/blog/agentic-ai-tools)
-
-  * 在构建完整系统之前，先确认你已经验证过一条可复现的工作流：[如何为重复性工作构建 AI Agent](/zh/blog/how-to-build-ai-agents-for-repeated-work)
-
-  * 好奇工作流自动化在哪里结束、真正的 Agent 系统在哪里开始？这篇文章把界线讲得很清楚：[AI 工作流 vs Agent 工作流：界线到底在哪里](/zh/blog/ai-agent-workflow-vibe-coding)
-
-  * 如果你正在考虑买而不是自己搭，这份指南帮你评估外部帮助何时真的有意义：[AI 自动化服务商：你真的需要一家吗？](/zh/blog/ai-automation-agency-do-you-need-one)
-
-  * 在考虑工具、记忆与上下文之间的长期协同？这篇是顺理成章的下一篇：[AI 工作区 Agent：它们为单人创业者真正改变了什么](/zh/blog/ai-workspace-agents)
-

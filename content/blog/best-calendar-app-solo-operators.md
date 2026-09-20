@@ -116,16 +116,3 @@ Smart calendars need ongoing input. If you won't feed it tasks consistently, you
 That's my honest take on the **best calendar app** question for solo operators. The tool matters less than most people think. What matters is whether it fits the way you actually work — not the way you wish you worked.
 
 I'll know more in a few weeks. I'm testing a couple of new setups and I'll share what sticks.
-
-## Previous Posts:
-
-  * If your calendar is full but work still feels fragmented, [Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent) explores the hidden cost of constantly jumping between apps all day.
-
-  * Still deciding whether you need a smarter planner or something that actually executes work? [Workspace Agents vs Workflow Builders](/blog/workspace-agents-vs-workflow-builders) breaks down the difference between organizing tasks and moving them forward.
-
-  * Smart calendars can schedule your tasks — but they still rely on you to execute them. [AI Workflow for Solo Founders](/blog/ai-workflow-for-solo-founders) looks at where solo operators actually lose momentum during the workday.
-
-  * If you've been experimenting with AI schedulers, assistants, and planning systems, [AI Workspace Agents](/blog/ai-workspace-agents) explains why the next layer may be execution instead of another calendar view.
-
-  * Wondering what happens after the reminder fires? [How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work) explores how recurring workflows can run with less manual rebuilding every week.
-

@@ -138,16 +138,3 @@ Fit matters more than features. Be honest about whether you actually have the pr
 Anyway — that's my read as of today. The **workspace agents vs chat assistants** question isn't really about which category wins. It's about which fits the work in front of you. For a quick question, chat is still the cleanest thing ever built. For a sprawling multi-tool job, a workspace agent earns its keep. The trick is being honest about which one you're actually doing.
 
 I'll update this if I change my mind. I've changed it before.
-
-**Previous Posts:**
-
-→ [Understand how AI workspace agents actually operate in real workflows](/blog/ai-workspace-agents)
-
-→ [See the real difference between AI agents and chat assistants in practice](/blog/ai-agent-vs-ai-assistant)
-
-→ [Learn how solo operators are using AI agents to scale their work in 2026](/blog/ai-agents-2026-solo-operators)
-
-→ [Explore practical AI agent use cases across real workflows](/blog/ai-agent-use-cases-real-examples)
-
-→ [Discover how one-person businesses run like full teams using AI systems](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

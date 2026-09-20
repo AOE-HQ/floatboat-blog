@@ -96,16 +96,3 @@ The point of these questions isn't to be adversarial — it's to set a professio
 ![f6.png](/blog/images/ai-automation-agency-do-you-need-one/1778750146141-a6995a3a-6e87-4831-bbb8-b93a7b6cbb56.webp)
 
 The honest truth about **ai automation agency services** is that the good ones are genuinely valuable and the mediocre ones are expensive timewasters who leave behind systems nobody on your team can maintain. The difference usually isn't visible in the sales process — it shows up in the handover. So before you sign anything, ask to see what the handover looks like. That single ask will tell you more than an hour of demos.
-
-## Previous Posts：
-
-  * Most solo founders don’t need a custom AI platform — they need a clearer workflow first. Here’s how AI workflow design actually scales without creating operational chaos — [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
-
-  * Before hiring an agency to automate everything, understand the difference between workspace agents, workflow builders, and where each one actually fits — [workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * A lot of “AI automation” problems are really context-switching problems inside fragmented systems — this is the operational bottleneck most teams miss — [stop context switching with workspace agents](/blog/stop-context-switching-workspace-agent)
-
-  * If you’re evaluating AI vendors, this breakdown of AI workspace agents explains where the category genuinely helps — and where it still creates more setup overhead than value — [AI workspace agents explained](/blog/ai-workspace-agents)
-
-  * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](/blog/ai-agent-solo-operators)
-

@@ -127,16 +127,3 @@ If the work you want to automate ​**happens the same way more than 20 times a 
 
 
 That's my honest take. The categories aren't really competing — they're solving different parts of how work gets done. If your work is shaped like a pipeline, build a pipeline. If it's shaped like a desk with a lot of stuff on it, get something that can sit at the desk with you. When you need this, you'll know.
-
-## Previous Posts:
-
-  * [Still deciding between structured workflows and AI-native tools?](/blog/workflow-builder-vs-ai-workspace)
-
-  * [If you're new to agents, this guide explains how AI agents actually work in real-world scenarios](/blog/ai-agent-use-cases-real-examples)
-
-  * [Want to go beyond tools and build your own system? Here’s a practical intro to building an AI agent from scratch](/blog/how-to-build-an-ai-agent)
-
-  * [For a more hands-on perspective, this piece shows how agent workflows actually run in day-to-day work](/blog/ai-agent-workflow-vibe-coding)
-
-  * [And if you're running solo, this breaks down how one-person businesses use AI to operate like a team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

@@ -115,16 +115,3 @@ Manus 在你工作流里的位置：它更像是一个你**委派任务给它的
 _总之——这是我出于相当不同的原因，会反复回来用的两个工具。Genspark 是我需要又快又结构良好的东西时伸手去拿的那一个；Manus 是我把更难、更乱的任务丢给它的那一个。_
 
 _如果你好奇，两者的免费档都真的能用。值得一试。_
-
-## 延伸阅读
-
-* [比较不同的 Manus AI 替代方案，看看各工具在真实工作流里分别擅长什么](/zh/blog/manus-ai-alternatives-2026)
-
-* [拆解 Genspark 定价与积分使用，评估这些方案到底值不值](/zh/blog/genspark-ai-pricing)
-
-* [在选 Genspark 或 Manus 这类工具前，先弄清 AI Agent 和聊天机器人的核心区别](/zh/blog/ai-agent-vs-chatbot)
-
-* [看看真实世界的 AI Agent 用例，了解 Manus 这类自主工具真正闪光的地方](/zh/blog/ai-agent-use-cases-real-examples)
-
-* [看看单人创作者在实践中如何用 AI Agent 组织工作流、分派任务](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

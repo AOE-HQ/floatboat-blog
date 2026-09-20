@@ -102,14 +102,3 @@ The default I've landed on: ​**draft and iterate in ​Markdown** ​, then co
 ![5.png](/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.webp)
 
 That's the framework. It's not complicated, but it took me a while to land on something this clear. The real difference isn't HTML vs Markdown — it's knowing which one matches the job you're doing right now. That one small piece figured out.
-
-## Previous Posts:
-
-• [HTML-Anything Review: Can AI Turn HTML Into Real Deliverables?](/blog/html-anything-review-2026) — I tested whether html-anything actually turns the "HTML is the new Markdown" idea into a usable workflow.
-
-• [Claude Code vs Chrome Extensions: Which Workflow Actually Saves Time?](/blog/codex-for-chrome-vs-claude-for-chrome) — Not every AI workflow needs a coding agent; here's where browser-native tools fit better.
-
-• [Workspace Agents vs Chat Assistants: Why the Difference Matters](/blog/workspace-agents-vs-chat-assistants) — The jump from chat responses to reusable work artifacts changes how AI output gets used.
-
-• [AI Workspace Agents: Why Solo Operators Need More Than Chat Windows](/blog/ai-workspace-agents) — Rich AI output starts making more sense once the workspace itself becomes part of the workflow.
-

@@ -115,14 +115,3 @@ Pieces 有篇文章讲 Agent 与助手的区别，里面有个说法我觉得很
 总之，这是我现在对这个话题的理解。还在继续学习。但至少下次有人提「部署一个 AI Agent」时，我不会再一边点头，一边暗自搞不清它跟聊天机器人到底差在哪。
 
 如果你也在琢磨这些东西，希望这篇能帮你省下我当初原地绕圈的时间。
-
-_相关阅读：_
-
-  * [AI Agent 真实落地案例：调研、内容与运营场景](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [一人公司如何靠 AI 分工，像完整团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [AI 自动化在真实市场上到底怎么定价](/zh/blog/ai-automation-agency-pricing)
-
-  * [Lindy 与 Gumloop 在 Agent 式工作流上有什么不同](/zh/blog/lindy-vs-gumloop)
-

@@ -235,7 +235,3 @@ If you only mark a handful of dates, these are the ones:
 The 2026 World Cup schedule is dense — 2.7 matches per day on average, four time zones, and a knockout bracket that runs for 22 days. A printed calendar view is useful for overview; a live subscription is what keeps you on time once the tournament starts. If match times shift — and they often do during the group stage — a static import will not tell you. A live calendar subscription will.
 
 For readers who want the zero-maintenance option, FloatCup handles the full schedule, timezone conversion, and reminders in one click. For those who prefer a manual approach, the ICS import works across every major calendar platform and takes under two minutes. Both are detailed in the sections above.
-
-## Related Reading- [World Cup 2026 Guide: Dates, Format, and FAQ — the full tournament overview](/blog/world-cup-2026-guide)
-- [How to Add World Cup 2026 to Google Calendar (ICS Guide) — step-by-step ICS import for every platform](/blog/world-cup-2026-google-calendar-ics)
-- [FloatCup: Subscribe to World Cup 2026 Calendar in One Click — the zero-effort calendar sync](/blog/floatcup-world-cup-2026-calendar-subscribe)

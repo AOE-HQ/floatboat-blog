@@ -88,16 +88,3 @@ Apple 的日历里没有内置任务系统。它跟独立的提醒事项 App（R
 ![5.png](/zh/blog/images/google-calendar-vs-apple-calendar/1779853874835-7180bfeb-d5e2-4523-a9c2-6ba4f9b1c035.webp)
 
 这就是我诚实的看法。"哪个更好"这个问法其实有点误导——真正要紧的是哪个贴合你的工作方式。而如果你已经解决了那一部分、一周下来却仍然像在手动追着日历冒出来的每件事跑——也许下一个问题就不是"该用哪个日历"，而是"提醒响了之后会发生什么"。这正是 Floatboat 登场的地方，也是我最近一直在花时间琢磨的地方。
-
-## 往期文章：
-
-  * 老在日历、邮件、文档和任务 App 之间跳来跳去？读[停止上下文切换：为什么工作区 Agent 重要](/zh/blog/stop-context-switching-workspace-agent)，看看工具切换是怎么在多数单人经营者没有意识到的情况下悄悄吃掉时间的。
-
-  * 如果你的日历总在提醒你有工作要做、却从不真正把它往前推，[单人经营者的工作区 Agent](/zh/blog/workspace-agents-for-solo-operators) 拆解了排程结束之后会发生什么。
-
-  * 排满的日历并不总等于有意义的进展。[单人创始人的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders) 分析了为什么看起来高效的系统仍会制造手动工作。
-
-  * 想知道你需要的是又一个助手、还是更主动的东西？[工作区 Agent vs 聊天助手](/zh/blog/workspace-agents-vs-chat-assistants) 用日常工作流对两者做了对比。
-
-  * 老在反复重建同样的每周任务？[如何为重复工作构建 AI Agent](/zh/blog/how-to-build-ai-agents-for-repeated-work) 探讨了重复性工作循环可以怎样换个方式处理。
-

@@ -102,16 +102,3 @@ That's where my thinking is on this right now. The shift from stateless chatbots
 I'm still experimenting. I'll share more once I have a clearer picture.
 
 Alright, that's today's little discovery. Well — more of a frustration I finally named. Sometimes that's the first step.
-
-## Previous Posts：
-
-  * **[What Is a Persistent AI Agent — and Why Does It Matter?](/blog/what-is-persistent-ai-agent)**
-
-  * **[Why AI Forgets Every Session — The Hidden Cost of Stateless AI](/blog/why-ai-forgets-every-session)**
-
-  * **[Workflow Builder vs AI Workspace — What’s the Real Difference?](/blog/workflow-builder-vs-ai-workspace)**
-
-  * **[How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-
-  * **[What Makes an AI Workflow Actually Work for Solo Founders](/blog/ai-agents-2026-solo-operators)**
-

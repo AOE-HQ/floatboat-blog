@@ -162,16 +162,3 @@ According to[ Carta's 2025 Solo Founders Report](https://carta.com/data/solo-fou
 ![5.png](/blog/images/first-100-customers-solo-founder/1775616268699-0fa95876-afc3-455e-93fc-afb0cb4c4b9f.webp)
 
 _Observations from tracking indie founders, micro-SaaS builders, and solo operators through this phase. Statistics cited are from the sources linked above; all data reflects the most recently published figures at time of writing. Individual results vary substantially based on market, execution, and timing._
-
-## Previous Posts:
-
-  * [Want a practical example of how solo operators actually set up their daily workflows? Start here](/blog/feishu-cli-solo-work-setup)
-
-  * [Still figuring out how to structure your AI-powered workflow end-to-end? This guide breaks it down](/blog/workflow-builder-vs-ai-workspace)
-
-  * [If you're exploring automation tools, this comparison helps clarify what fits your setup](/blog/relevance-ai-vs-n8n)
-
-  * [Not sure what AI agents actually do in real work scenarios? These examples make it concrete](/blog/ai-agent-use-cases-real-examples)
-
-  * [Thinking about going deeper? Here's what it really takes to build your own AI agent](/blog/how-to-build-an-ai-agent)
-

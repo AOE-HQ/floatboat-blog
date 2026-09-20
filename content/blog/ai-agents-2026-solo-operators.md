@@ -158,16 +158,3 @@ _That's what I'm doing, anyway._
 _Alright, that's today's little discovery. Catch you next time._
 
 ![5.png](/blog/images/ai-agents-2026-solo-operators/1775544805101-b21360a4-d95d-4dda-8c61-bae9406d801c.webp)
-
-## Previous Posts:
-
-  * [If you're exploring how automation actually works in a solo setup, this real-world breakdown of Feishu CLI is worth a read.](/blog/feishu-cli-solo-work-setup)
-
-  * [Want to see what AI agents look like in practice? This guide covers real use cases across different workflows.](/blog/ai-agent-use-cases-real-examples)
-
-  * [Not sure whether you need an agent or just a smarter assistant? This comparison helps clarify the difference.](/blog/ai-agent-vs-ai-assistant)
-
-  * [Thinking about building your own workflow instead of prompting from scratch? Start here.](/blog/how-to-build-an-ai-agent)
-
-  * [And if you're deciding between tools, this breakdown of workflow builders vs AI workspaces will help you choose.](/blog/workflow-builder-vs-ai-workspace)
-

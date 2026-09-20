@@ -118,16 +118,3 @@ Honestly? The right answer for most solo operators is probably: _start with no-c
 The honest summary: a **no code ai agent builder** is a real tool, not a toy — but it has an honest ceiling. Build in it when speed matters. Know when you've outgrown it.
 
 If the answer isn't clear yet, build the thing. You'll usually know within two weeks whether the tool is enough or whether you need something with more room to grow.
-
-## Previous Posts:
-
-  * Still figuring out whether you even need an “AI agent” yet? Start here: [What Is an AI Agent Platform? A Decision Framework for Solo Operators](/blog/ai-agent-solo-operators)
-
-  * Want to understand the difference between workflows, automations, and true agents? This breaks down where the line actually is: [AI Workflow vs Agent Workflow: Where the Line Actually Is](/blog/ai-agent-workflow-vibe-coding)
-
-  * Comparing Zapier, Make, n8n, or Flowise? This guide explains what actually matters when choosing an AI agent builder: [Best AI Agent Builder? What Actually Matters for Solo Operators](/blog/workspace-agents-vs-workflow-builders)
-
-  * If you're deciding between workspace-style AI tools and dedicated agents, this is the comparison worth reading first: [Workspace Agents vs Chat Assistants: The Difference That Actually Matters](/blog/workspace-agents-vs-chat-assistants)
-
-  * Thinking beyond “getting it working” and toward long-term maintainability? This piece on workflow builders vs workspace agents connects directly to that question: [Workspace Agents vs Workflow Builders: Which One Fits Real Solo Work?](/blog/workspace-agents-vs-workflow-builders)
-

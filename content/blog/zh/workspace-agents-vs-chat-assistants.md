@@ -138,16 +138,3 @@ Anthropic 工程团队对 [Agent 有一个干净的定义](https://www.anthropic
 不管怎样——这就是我截至今天的判断。**工作区 Agent vs 聊天助手**的问题，其实无关哪个品类会赢，而在于哪个适合眼前的工作。对一个快速问题，聊天仍是迄今最干净的东西；对一件庞杂的多工具任务，工作区 Agent 值回票价。诀窍在于对自己诚实：你实际在做的到底是哪一种。
 
 如果我改变想法，我会更新这篇文章。我以前就改过。
-
-## 延伸阅读
-
-→ [理解 AI 工作区 Agent 在真实工作流中如何运作](/zh/blog/ai-workspace-agents)
-
-→ [在实践中看 AI Agent 与 AI 助手的真正区别](/zh/blog/ai-agent-vs-ai-assistant)
-
-→ [了解单人创业者在 2026 年如何用 AI Agent 扩展工作](/zh/blog/ai-agents-2026-solo-operators)
-
-→ [探索真实工作流中实用的 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)
-
-→ [发现一人企业如何用 AI 系统像整支团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

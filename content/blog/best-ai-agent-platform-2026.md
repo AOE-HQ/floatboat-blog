@@ -122,16 +122,3 @@ According to [Gartner's research on low-code adoption](https://www.gartner.com/e
 I'm still actively testing different options here, and honestly the space is moving fast enough that anything specific I say about particular platforms might be outdated within months. What I'm more confident in is the framework — those five evaluation dimensions hold up regardless of which tools are hot at a given moment.
 
 That's where I'd start if I were making this decision today.
-
-## Previous Posts
-
-  * New to agents? Start here: why most solo operators should begin with simple workflows before building complex systems → [AI Agent Workflow for Solo Founders](/blog/ai-workflow-for-solo-founders)
-
-  * Still deciding between prompts, automations, and full workspaces? This breakdown maps the tradeoffs clearly → [Workspace Agents vs Workflow Builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * The biggest mistake in agent building is automating too much too early — here’s how solo operators actually scale AI workflows → [AI Agent Workflow Vibe Coding](/blog/ai-agent-workflow-vibe-coding)
-
-  * Before choosing tools, it helps to understand what “AI agents” actually are in practice — and where they quietly fail → [AI Agent Tools for Solo Operators Explained](/blog/ai-agent-solo-operators)
-
-  * If your workflows already span browser tabs, docs, and local files, this is the deeper dive on why workspace agents are becoming the next layer → [AI Workspace Agents for Solo Operators](/blog/ai-workspace-agents)
-

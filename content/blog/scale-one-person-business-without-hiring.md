@@ -118,16 +118,3 @@ Anyway. That's where I am with this.
 I'll probably keep revisiting the ceiling question as my own setup evolves — I don't think I've figured it all out. But the frame of "three levers before headcount" has been more useful than anything else I've tried.
 
 If your situation looks anything like mine, it's probably worth sitting with for a bit before jumping to hire.
-
-## Previous Posts：
-
-  * Learn how to build a simple, effective **[AI workflow as a solo founder](/blog/ai-workflow-for-solo-founders)**
-
-  * Understand the difference between **[AI workspaces vs workflow builders](/blog/workflow-builder-vs-ai-workspace)**
-
-  * See why **[AI forgets between sessions — and how it slows you down](/blog/why-ai-forgets-between-sessions)**
-
-  * Explore how **[one-person businesses can operate like a team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-
-  * Discover practical **[AI agent use cases for real workflows](/blog/ai-agent-use-cases-real-examples)**
-

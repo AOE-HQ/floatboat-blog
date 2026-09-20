@@ -102,16 +102,3 @@ The rule I use: if I'm spending more time working around a GPT's limitations tha
 That's my honest take on how to build an AI agent with ChatGPT. It's less about the builder and more about being clear on the task, writing good instructions, and testing with real edge cases. The tooling is genuinely accessible — you don't need to code, you just need to think carefully about what you're delegating.
 
 I'll probably keep refining my own setup as the tools evolve. That part never really ends.
-
-## Previous Posts:
-
-  * If you're still deciding whether you need a Custom GPT or a more autonomous setup, start here: [What Is an AI Agent Platform? A Decision Framework for Solo Operators](/blog/ai-agent-solo-operators)
-
-  * Want to understand where ChatGPT workflows stop and real agent behavior begins? This breaks down the line clearly: [AI Workflow vs Agent Workflow: Where the Line Actually Is](/blog/ai-agent-workflow-vibe-coding)
-
-  * If your AI keeps forgetting context between sessions, this explains why — and what to do about it: [Why Your AI Forgets Everything Between Sessions](/blog/why-ai-forgets-between-sessions)
-
-  * Thinking about moving beyond Custom GPTs into workspace-style AI systems? This is a useful next step: [AI Workspace Agents: What They Actually Change for Solo Operators](/blog/ai-workspace-agents)
-
-  * Once you've built your first GPT, this guide helps you turn repeatable tasks into something more reliable and scalable: [How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work)
-

@@ -92,16 +92,3 @@ Okay, that's my honest read. The **no code ai agent builder** category has gotte
 For most people who work the way I work — solo projects, cost-conscious, wanting real agent behavior without DevOps overhead — n8n is the cleaner answer in the low-code tier. For developers who need maximum control, LangGraph is worth the ramp. Starting out and need something working by tomorrow? Start with Make. You can always migrate.
 
 That's my take. You'll have to decide what fits your situation.
-
-## Previous Posts:
-
-  * Trying to decide between AI agents, automations, and workspaces? This breakdown explains where each category actually fits in solo workflows → [Workspace Agents vs Workflow Builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * Before choosing a builder, it helps to understand what “agentic AI” really means — and where most tools quietly hit their limits → [AI Agent Tools for Solo Operators](/blog/ai-agent-solo-operators)
-
-  * If you’re building your first workflow, this guide walks through how to start with one boring repeated task instead of overengineering everything → [AI Workflow for Solo Founders](/blog/ai-workflow-for-solo-founders)
-
-  * n8n, Make, and other workflow tools are powerful — but here’s why context and memory become the real bottleneck as agents get more complex → [Why AI Forgets Between Sessions](/blog/why-ai-forgets-between-sessions)
-
-  * Curious where workspace-style agents fit compared to standalone builders? This piece explains the bigger shift toward cross-app AI workflows → [AI Workspace Agents for Solo Operators](/blog/ai-workspace-agents)
-

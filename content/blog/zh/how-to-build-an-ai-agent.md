@@ -154,16 +154,3 @@ _总之——这就是我在花掉无数个夜晚读文档、看 Agent 做出各
 _如果你只是对这个领域好奇，说实话，哪怕只做出一个能跑的小东西，也是很过瘾的体验。如果你认定它不值得这番折腾？那同样是个完全合理的结论。有时候，最好的工具是别人已经造好的那个。_
 
 _我继续做实验去了。_
-
-## 延伸阅读
-
-  * [在决定要构建什么之前，先看看真实世界的 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [在为你的项目定范围时，理解 AI Agent 与聊天机器人的关键区别](/zh/blog/ai-agent-vs-chatbot)
-
-  * [看看在构建 Agent 系统时，何时用工作流搭建工具、何时用 AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [在从零构建之前，了解 AI Agent 开发服务实际要花多少钱](/zh/blog/ai-agent-development-services)
-
-  * [对比 Gumloop 及同类工具，评估构建 Agent 的无代码选项](/zh/blog/gumloop-review-2026)
-

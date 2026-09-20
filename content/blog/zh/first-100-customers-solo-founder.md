@@ -162,16 +162,3 @@ Wynter 对 100 位 B2B SaaS 营销高管的调查——引自 [Freemius《2025 �
 ![5.png](/zh/blog/images/first-100-customers-solo-founder/1775616268699-0fa95876-afc3-455e-93fc-afb0cb4c4b9f.webp)
 
 以上观察，来自对独立开发者、微型 SaaS 构建者与单人创业者走过这一阶段的长期追踪。文中引用的统计数据均出自上文链接的来源；所有数据反映的是撰写时最新公开的数字。不同个体的结果会因市场、执行与时机而有显著差异。
-
-## 延伸阅读
-
-  * [想看单人创业者如何实际搭建日常工作流的具体例子？从这里开始](/zh/blog/feishu-cli-solo-work-setup)
-
-  * [还在琢磨如何端到端组织你的 AI 工作流？这份指南把它拆开讲透](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [正在探索自动化工具？这份对比能帮你理清什么适合你的配置](/zh/blog/relevance-ai-vs-n8n)
-
-  * [不确定 AI Agent 在实际工作场景里到底做什么？这些例子让它变得具体](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [想再往深走一步？这是构建你自己的 AI Agent 真正需要的东西](/zh/blog/how-to-build-an-ai-agent)
-

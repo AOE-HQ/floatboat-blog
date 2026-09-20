@@ -104,16 +104,3 @@ I'll probably keep using this. It's one of those small things that actually matt
 That's my honest take on AI follow-up emails. The workflow isn't complicated, but it needs a decent transcript and five minutes of review. If your work involves more than a few meetings a week, it's probably worth a try.
 
 Back to building things.
-
-## Previous Posts:
-
-[How to Scale a One-Person Business Without Hiring](/blog/scale-one-person-business-without-hiring)
-
-[Claude Managed Agents: What They Mean for Solo Companies](/blog/claude-managed-agents-one-person-company)
-
-[How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-[Why One-Person Companies Need a Workspace Agent](/blog/workspace-agents-for-solo-operators)
-
-[Workspace Agents vs Workflow Builders: A Clear Comparison](/blog/workspace-agents-vs-workflow-builders)
-

@@ -132,16 +132,3 @@ Thinking 模式是第二块拼图。[The Next Web 的报道](https://thenextweb.
 关于这件事，我目前的结论是这样。我不会辞掉我未来的分镜师；但我会停止假装自己没时间给自己的短视频画分镜。**这个工具不是在取代手艺，而是在消除借口。**
 
 需要它的时候，你会知道的。
-
-## 延伸阅读
-
-  * [了解如何搭建在多步创作任务中真正立得住的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)
-
-  * [看看 AI Agent 工作流如何收拾无结构「凭感觉创作」的混乱](/zh/blog/ai-agent-workflow-vibe-coding)
-
-  * [理解单人创业者如何借助 AI 像一整支创作团队那样产出](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [探索内容、自动化与生产工作流中真实的 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [发现如何不靠招聘、通过系统化你的工作来扩展一人公司](/zh/blog/scale-one-person-business-without-hiring)
-

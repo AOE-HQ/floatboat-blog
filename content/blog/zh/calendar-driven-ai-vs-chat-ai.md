@@ -137,7 +137,3 @@ _如果你第一次接触 agentic calendar 和日历驱动的 AI，建议先读 
 两种范式互补：用聊天式 AI 做探索和创作，用日历驱动 AI 做执行和收尾。日历不是在取代聊天窗口，而是在处理聊天窗口从来就不是为它设计的那部分工作。
 
 * * *
-
-## 延伸阅读- [什么是 Agentic Calendar？——日历驱动 AI 所催生的品类的底层定义。](/zh/blog/what-is-agentic-calendar)
-- [什么是 AI 日程 Agent？——从智能排程器到日历驱动 Agent OS 的四代演进。](/zh/blog/ai-scheduling-agent)
-- [AI 会前准备是怎么做的？——日历驱动式准备在实际中的具体演示。](/zh/blog/ai-meeting-preparation)

@@ -80,18 +80,3 @@ Both Google Calendar and Outlook are good at telling you what's scheduled. Remin
 That's what got me looking into [Floatboat](</>). It doesn't replace either calendar — it sits after them. Your calendar holds the schedule, and Floatboat uses agents to push the work forward: prepping meeting briefs from context before you ask, drafting follow-ups, running recurring work loops that used to eat an hour of manual setup every week. I'm still early with it, but the shift from "organized schedule" to "proactive execution" has been the most useful thing I've found this year. If your calendar is full but your output still depends on you manually opening every tab and chasing every next step — that's the gap worth exploring.
 
 That's my honest take. Pick the calendar that matches where your work already lives — fighting your ecosystem creates more friction than any feature advantage is worth. And if you've already figured that out but your weeks still feel like you're manually pushing every task your calendar surfaces, maybe the next thing to explore isn't a better calendar. It's what happens after the reminder fires.
-
-## Previous Posts:
-
-• Still switching between Gmail, Docs, calendars, and task apps all day? See why many solo operators are rethinking tool-hopping in **[Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent)**
-
-• If your calendar keeps surfacing work but you're still manually doing every next step, here's how **[Workspace Agents for Solo Operators](/blog/workspace-agents-for-solo-operators)** approach execution differently.
-
-• Calendars manage schedules, but workflows move work. Read **[AI Workflow for Solo Founders: Why Demos and Daily Work Look Different](/blog/ai-workflow-for-solo-founders)** for a practical look at where work systems usually break.
-
-• Not sure whether you need an assistant, an automation, or an agent? **[Workspace Agents vs Chat Assistants](/blog/workspace-agents-vs-chat-assistants)** breaks down the differences in real-world work setups.
-
-• If recurring prep work, follow-ups, and admin loops keep eating your week, **[How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work)** explores how repetitive workflows can be handled differently.
-
-![5.png](/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.webp)
-

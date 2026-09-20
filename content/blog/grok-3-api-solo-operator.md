@@ -82,16 +82,3 @@ For where I am — mostly exploring, occasionally building something stable — 
 ![5.png](/blog/images/grok-3-api-solo-operator/1776932977603-7e7aba35-fa7d-4d76-b064-9b3b721ca245.webp)
 
 That's my honest take, two months in. Cheaper tokens are real, but they're not the barrier most solo operators actually hit. When you need this level of price optimization, you'll know.
-
-**Previous Posts:**
-
-  * [What Is Vibe Coding (And Why It Changes How You Build)](/blog/what-is-vibe-coding)
-
-  * [AI Workflow for Solo Founders: Where the Real Bottlenecks Are](/blog/ai-workflow-for-solo-founders)
-
-  * [DeepSeek V4 API for Solo Operators: When Cheap Actually Matters](/blog/deepseek-v4-api-solo-operator)
-
-  * [AI Agent vs Chatbot: Why This Distinction Affects Your Stack](/blog/ai-agent-vs-chatbot)
-
-  * [Why AI Forgets Between Sessions (And Why It Matters for Automation)](/blog/why-ai-forgets-between-sessions)
-

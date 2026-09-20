@@ -134,16 +134,3 @@ That's my honest take. You'll have to decide what's right for your situation.
 If you've been feeling fried by the end of every day without being able to point at a specific reason — this is probably part of it. The fix isn't another app on top of the stack. It's making the stack shorter.
 
 Anyway, that's where I am with this right now. If you try the manual version this week, I'd be curious what you find.
-
-## Previous Posts:
-
-  * [How workspace agents can help reduce friction and make solo work feel smoother](/blog/stop-context-switching)
-
-  * [Learn why chat tools and workflow builders often add more complexity instead of solving problems](/blog/why-automation-ends-up-more-frustrating)
-
-  * [If you're managing multiple roles in a solo business, here’s how workspace agents can streamline your day](/blog/solo-founders-and-workspace-agents)
-
-  * [Try this simple manual exercise to reduce context switching and see if a workspace agent fits](/blog/reduce-context-switching-manually)
-
-  * [Curious about AI agents for solo work? This post dives into what they do (and don’t do) for solo entrepreneurs](/blog/ai-agents-for-solo-operators)
-

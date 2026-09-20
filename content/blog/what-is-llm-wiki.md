@@ -169,16 +169,3 @@ That's where I am with this. The pattern is genuinely interesting — not becaus
 If the answer to both is yes: [Karpathy's gist is right there](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), and the community implementations are already good.
 
 If the answer to either is no: the principle still matters. Figure out your simplest version of "compile once, use many times." That's the part worth keeping.
-
-## Previous Posts:
-
-  * [Still confused about why AI keeps starting from scratch? This breaks it down clearly](/blog/why-ai-forgets-every-session)
-
-  * [Want a simpler explanation of persistent AI vs one-off tools? Start here](/blog/what-is-persistent-ai-agent)
-
-  * [Not sure whether you need a knowledge base or something more practical? Read this](/blog/llm-knowledge-base-solo-operators)
-
-  * [If you're deciding between building your own system or using a tool, this helps](/blog/workflow-builder-vs-ai-workspace)
-
-  * [Curious how AI agents actually fit into real solo workflows? This gives context](/blog/ai-agents-2026-solo-operators)
-

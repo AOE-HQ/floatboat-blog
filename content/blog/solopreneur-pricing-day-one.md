@@ -142,16 +142,3 @@ Okay, I think I've been sitting with this question long enough to say something 
 Start with something real. Watch what happens. Adjust from there.
 
 That's my honest take.
-
-## Previous Posts:
-
-  * [Still figuring out your offer? Read how to get traction with your first users](/blog/first-100-customers-solo-founder)
-
-  * [Pricing is just one part of the system — here’s how solo founders actually build workflows that scale](/blog/ai-workflow-solo-founders)
-
-  * [If your AI tools feel inefficient, this explains why everything resets every session](/blog/why-ai-forgets-every-session)
-
-  * [Want to understand where AI agents fit into your business long-term?](/blog/ai-agents-2026-solo-operators)
-
-  * [Not sure whether to build systems or just use better tools? This breakdown helps](/blog/workflow-builder-vs-ai-workspace)
-

@@ -107,7 +107,3 @@ If you do not use Floatboat, a standard calendar subscription through FloatCup s
 The USMNT has a favorable group and a home-continent advantage. Paraguay, Australia, and Turkey are all beatable opponents, and the West Coast venue path keeps travel manageable through the group stage. The bigger variable is the schedule itself — three 7:00 PM Pacific kickoffs mean East Coast viewers are in for late nights, and anyone tracking matches across multiple time zones needs a system that does the timezone math for them.
 
 A calendar subscription handles that automatically. Whether you use FloatCup for one-click setup or import an ICS file manually, the result is the same: every US match, every kickoff, correct in your time zone, with reminders that fire whether you remembered to check or not.
-
-## Related Reading- [World Cup 2026 Schedule: Full Fixtures & Calendar Sync — the complete 104-match fixture list](/blog/world-cup-2026-schedule)
-- [World Cup 2026 Guide: Dates, Format, Hosts & FAQ — full tournament overview](/blog/world-cup-2026-guide)
-- [FloatCup: Subscribe to World Cup 2026 Calendar in One Click — auto-updating calendar with reminders](/blog/floatcup-world-cup-2026-calendar-subscribe)

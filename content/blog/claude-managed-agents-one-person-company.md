@@ -122,14 +122,3 @@ These aren't competing options. They serve different points on the same journey.
 Anyway, that's where this stands for me. Managed Agents is a real infrastructure shift — not hype. But the question for a solo operator isn't "is this impressive" — it's "does this solve a problem I actually have, and at what complexity cost?" That answer varies depending on what you're building.
 
 I'll probably revisit this once the multi-agent and memory features come out of research preview. That's when the picture for individual operators gets genuinely interesting.
-
-## Previous Posts:
-
-→ Understand how **[AI agents actually work for solo operators](/blog/ai-agent-solo-operators)****​ ​**
-
-→ See the practical difference between **[AI agents vs AI assistants in real workflows](/blog/ai-agent-vs-ai-assistant)** → Learn how to[ design repeatable AI workflows instead of relying on one-off prompts](/blog/ai-workflow-for-solo-founders)
-
-→ Explore what **[persistent AI agents are and why memory changes everything](/blog/what-is-persistent-ai-agent)**
-
-→ Discover real-world **[AI agent use cases that actually translate into daily work](/blog/ai-agent-use-cases-real-examples)**
-

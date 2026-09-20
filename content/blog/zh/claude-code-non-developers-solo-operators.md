@@ -138,16 +138,3 @@ Claude Code 确实令人印象深刻——我是认真的。但「对谁印象�
 呼。我没想到搞清这件事会这么简单。但这某种程度上正是重点——有时候答案真的就是「暂时不适合你」。
 
 好吧，这就是今天的发现。回去干活了。
-
-## 延伸阅读
-
-  * [看看单人创业者自己维护一套自动化系统到底是什么样](/zh/blog/feishu-cli-solo-work-setup)
-
-  * [搞清楚该自己造 AI 工具，还是用现成的](/zh/blog/custom-ai-agent-development)
-
-  * [在决定 Claude Code 这类编码工具重不重要之前，先弄懂 AI Agent 是怎么工作的](/zh/blog/how-to-build-an-ai-agent)
-
-  * [看看 AI Agent 与 AI 助手在日常工作流里的区别](/zh/blog/ai-agent-vs-ai-assistant)
-
-  * [看看真实的 AI Agent 用例，理解编码 Agent 到底该用在哪儿](/zh/blog/ai-agent-use-cases-real-examples)
-

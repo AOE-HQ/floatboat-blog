@@ -101,16 +101,3 @@ Gemini 3.5 Flash is legitimately strong — fast, cost-effective, and particular
 But for anyone evaluating ​**AI tools for a one-person business** ​, the question about any **Gemini 3.5 integration** was never "is this model good?" It's: **does adding this to my ​workflow** ​**​ save more time than it costs to manage?** If you work with long documents, run batch tasks, or live inside Google Workspace — worth testing. If your setup is humming along and your bottleneck isn't the model itself, wait.
 
 That's my honest take. You'll have to decide what's right for your situation.
-
-## Previous Posts:
-
-• [AI Workflow for Solo Founders: What Actually Saves Time?](/blog/ai-workflow-solo-founders) — Before adding another model to your stack, map the workflow you're trying to improve first.
-
-• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](/blog/ai-workflow-for-solo-founders) — A practical look at where AI workflows break once they leave the demo stage.
-
-• [AI Workspace Agents: Why Chat Windows Stop Scaling](/blog/ai-workspace-agents) — Managing multiple models becomes easier when work happens inside one workspace instead of scattered tabs.
-
-• [Workspace Agents vs Chat Assistants: What's Actually Different?](/blog/workspace-agents-vs-chat-assistants) — The difference matters when you're deciding whether another model belongs in your workflow.
-
-• [How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai) — Adding another model only helps if it removes a real bottleneck in how a solo business operates.
-

@@ -134,16 +134,3 @@ DeepSeek 宣称的 SWE-bench 分数只来自发布前的内部基准，独立评
 ![6.png](/zh/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
 
 总之，情况就是这样。成本故事是真的，架构改进也确实有趣——但 V4 还没上线，而且更便宜的 token 不会自动带来更好的工作流。未来几周值得盯紧。
-
-## 上一篇系列文章：
-
-→ [看看 AI 工作流在模型成本之外是如何真正失效的](/zh/blog/ai-workflow-for-solo-founders)
-
-→ [了解为什么上下文管理、而非 token，才是真正的瓶颈](/zh/blog/why-ai-forgets-between-sessions)
-
-→ [探索 AI Agent 如何改变单人创业者运营系统的方式](/zh/blog/ai-agent-solo-operators)
-
-→ [看看持久化 AI 记忆如何影响长期生产力](/zh/blog/what-is-persistent-ai-agent)
-
-→ [深入了解如何搭建结构化的 LLM 知识库](/zh/blog/llm-knowledge-base-solo-operators)
-

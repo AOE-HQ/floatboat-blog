@@ -162,16 +162,3 @@ prompt 与工作流之间的区别，就是"问路"和"手里有张地图"之间
 说实话，我自己也还在摸索。工具变化太快，三个月前我写的关于它们的东西，现在大概就需要更新了。而有一件事我确实越来越确定：**价值不在 prompt 里，在系统里。**那些在打造可持久运营业务的单人创始人，不是找到最好 AI 工具的人——而是建出能随时间复利的工作流的人。
 
 这是想明白的一小块。
-
-## 延伸阅读
-
-* [理解 AI Agent 与聊天机器人的区别](/zh/blog/ai-agent-vs-chatbot)
-
-* [了解 2026 年 AI Agent 到底如何为单人创业者工作](/zh/blog/ai-agents-2026-solo-operators)
-
-* [看看如何一步步构建你自己的 AI Agent](/zh/blog/how-to-build-an-ai-agent)
-
-* [探索从 AI 助手到真正的 AI Agent 的转变](/zh/blog/ai-agent-vs-ai-assistant)
-
-* [在真实工作流中发现实用的 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)
-

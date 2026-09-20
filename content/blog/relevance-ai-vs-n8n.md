@@ -108,16 +108,3 @@ Still learning what you need? That's fine. Try the free tiers of both — Releva
 _Anyway, that was fun to dig into. Both tools are genuinely good at what they're designed for — I just think a lot of people end up frustrated because they picked the wrong one for their situation. Hopefully this helps you figure out which lane you're actually in._
 
 _Back to building things._
-
-## Previous Posts:
-
-  * **[Understand the real difference between AI agents and traditional automation workflows](/blog/workflow-builder-vs-ai-workspace)**
-
-  * **[Learn how to build an AI agent step by step before choosing the right tool](/blog/how-to-build-an-ai-agent)**
-
-  * **[Explore real-world AI agent use cases to see where tools like Relevance AI actually shine](/blog/ai-agent-use-cases-real-examples)**
-
-  * **[Compare AI agents vs AI assistants to better understand how these tools actually work](/blog/ai-agent-vs-ai-assistant)**
-
-  * **[See how solo founders use AI tools to automate workflows without a full dev team](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-

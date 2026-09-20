@@ -154,16 +154,3 @@ CLI 其实并不是为这种「接收端」设计的。它是命令行工具，�
 ![8.png](/zh/blog/images/feishu-cli-solo-work-setup/1774921937517-a7d45c45-2b64-45fa-92d0-426eab1032a6.webp)
 
 _反正，这就是我一直在摸索的东西。还在试验，还在学习——但希望它能在你身陷其中之前，让你更清楚地看到自己到底在建什么。_
-
-## 往期文章
-
-  1. **[想清楚工作流里用 AI Agent 还是聊天机器人的取舍](/zh/blog/ai-agent-vs-chatbot)**
-
-  2. **[了解如何轻松构建和维护自定义 AI Agent](/zh/blog/how-to-build-an-ai-agent)**
-
-  3. **[了解其他 AI Agent 开发服务，获得更好结果](/zh/blog/ai-agent-development-services)**
-
-  4. **[看看 Genspark 与 Manus 在 AI 自动化方案上的差异](/zh/blog/genspark-vs-manus)**
-
-  5. **[发现 Gumloop 的替代品，构建高效 AI 工作流](/zh/blog/gumloop-alternatives-2026)**
-

@@ -154,16 +154,3 @@ The bottom line is that Feishu CLI is genuinely capable for solo operator use ca
 ![8.png](/blog/images/feishu-cli-solo-work-setup/1774921937517-a7d45c45-2b64-45fa-92d0-426eab1032a6.webp)
 
 _Anyway, that's what I've been figuring out. Still experimenting, still learning — but hopefully this gives you a clearer picture of what you're actually building before you're in the middle of it._
-
-## Previous Posts:
-
-  1. **[Understand the trade-offs between using an AI agent and a chatbot for your workflow](/blog/ai-agent-vs-chatbot)**
-
-  2. **[Explore how to build and maintain custom AI agents with ease](/blog/how-to-build-an-ai-agent)**
-
-  3. **[Learn about alternative AI agent development services for better results](/blog/ai-agent-development-services)**
-
-  4. **[Check out the differences between Genspark and Manus for AI automation solutions](/blog/genspark-vs-manus)**
-
-  5. **[Discover alternatives to Gumloop for building efficient AI workflows](/blog/gumloop-alternatives-2026)**
-

@@ -136,12 +136,3 @@ Here's my honest take after testing both:
 And if you're genuinely unsure — take both free tiers and give each tool the _same real task_ you actually need to solve. The one that gets you to a working result in less time is probably your answer.
 
 This little test turned out to be more interesting than I thought. At first, I just wanted to compare tools. But it ended up helping me understand something else — how I actually like to work. Sometimes it’s not really about which tool is “better,”but which one fits your current rhythm a bit more naturally. Anyway…, that was a fun one to explore. If you’ve been playing around with AI workflows too, you might find these tools pretty interesting.
-
-**Previous Posts:**
-
-  * **[real-world AI ​agent​​ use cases across research, content, and operations](<https://<https://floatboat.ai/blog/ai-agent-use-cases-real-examples>>)**
-
-  * **[how one-person businesses are starting to operate like a full team using AI roles](<https://<https://floatboat.ai/blog/how-one-person-businesses-work-like-a-team-with-ai>>)**
-
-  * **[how AI automation ​work​​ is actually priced in the real market](<https://<https://floatboat.ai/blog/ai-automation-agency-pricing>>)**
-

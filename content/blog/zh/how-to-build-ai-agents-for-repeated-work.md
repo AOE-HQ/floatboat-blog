@@ -102,16 +102,3 @@ draft: false
 为重复性工作构建 AI Agent，与技术无关——与清晰有关。那些从第一个 agent 里拿到真实价值的团队和个人，都是在碰工具之前先花时间把任务画清楚的人。那些挣扎的人呢？他们通常从工具入手，再倒推回去。
 
 挑一件重复任务、仔细把它画清楚、选一条能到位的最终搭建路径，并在你信任输出之前始终把人留在循环里。整套打法就是这些。剩下的全是迭代。
-
-## 往期文章
-
-  * 多数第一次搭 agent 的人都会把它搞复杂。为什么从一个窄工作流入手，通常比追一个「全 AI 操作系统」更有效——[agentic AI 工具是什么](/zh/blog/ai-agent-solo-operators)
-
-  * 工作流搭建器和工作区 Agent 解决的是完全不同的问题——这篇拆解帮你选到真正贴合你工作的最轻配置——[工作区 Agent vs 工作流搭建器](/zh/blog/workspace-agents-vs-workflow-builders)
-
-  * 在自动化一切之前，先分清助理、工作流 agent、编程 agent 与自主系统的差别——[Claude managed agents 是什么](/zh/blog/what-are-claude-managed-agents)
-
-  * AI 工作流通常死于过度复杂，而不是能力不足。这是独立创业者正在用的务实框架——[独立创业者的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)
-
-  * 如果你的 AI 配置已经乱糟糟，工具之间的碎片化上下文很可能才是瓶颈——不是模型质量本身——[为什么 AI 工作流会显得碎片化](/zh/blog/workspace-agents-for-solo-operators)
-

@@ -158,16 +158,3 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 ![5.png](/zh/blog/images/manus-ai-alternatives-2026/1773994990431-3ff2ee3f-931a-4383-af80-cac4d760957a.webp)
 
 我还在试这几款里的几个——尤其是最近才配置的 Lindy。如果你也在 AI Agent 这片里摸来摸去，希望这篇能帮你省下我当时来回开标签页的功夫。总之，回去干活了。
-
-## 延伸阅读
-
-  * [看看真实世界的 AI Agent 用例，以及它们在实际中表现如何](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [看单人创业者如何用 AI 角色与工作流，把一人公司跑得像个团队](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [搞清 AI 自动化服务在真实市场里怎么定价（以及为什么报价差那么多）](/zh/blog/ai-automation-agency-pricing)
-
-  * [对比 Lindy 和 Gumloop 在构建 Agent 式工作流上的差异](/zh/blog/lindy-vs-gumloop)
-
-  * [看不同 AI Agent 工具在真实工作流上实测时的差别](/zh/blog/lindy-vs-gumloop)
-

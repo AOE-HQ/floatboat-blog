@@ -90,14 +90,3 @@ If the answer isn't obvious yet, wait. The project is moving fast, and what's av
 ![5.png](/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.webp)
 
 That's my honest take. The tool is early, the concept is solid, and the question is whether it fits into your workflow — not whether the idea behind it matters. It does. Back to building things.
-
-## Previous Posts:
-
-• [Already using coding agents? Read: Claude Code for Non-Developers: What Solo Operators Should Know](/blog/claude-code-non-developers-solo-operators)
-
-• [Thinking beyond chat interfaces? Read: AI Workspace Agents and the Future of Human-AI Workspaces](/blog/ai-workspace-agents)
-
-• [Need repeatable creative workflows instead of one-off prompts? Read: AI Workflow for Solo Founders: What Actually Works](/blog/ai-workflow-for-solo-founders)
-
-• [Trying to reduce tool-switching across your workflow? Read: Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent)
-

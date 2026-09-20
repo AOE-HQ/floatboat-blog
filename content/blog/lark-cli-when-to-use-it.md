@@ -164,17 +164,3 @@ And if you do decide to go the CLI route, start with **the official larksuite/cl
 Anyway, that's what I actually learned from this particular rabbit hole. If you're seriously considering the CLI path, it's worth it to spend 30 minutes reading through the developer documentation before committing. Sometimes the answer is "yes, build it." More often than I expected, the answer is "there's a simpler way that breaks less."
 
 _Back to building things._
-
-## Previous Posts:
-
-  1. **[Explore the pros and cons of building custom AI agents vs using pre-built platforms](/blog/ai-agent-vs-ai-assistant)**
-
-  2. **[Learn more about Lark integrations and alternatives to build smarter workflows](/blog/how-to-build-an-ai-agent)**
-
-  3. **[Check out alternatives to Gumloop for your AI workspace needs](/blog/gumloop-alternatives-2026)**
-
-  4. **[Discover the best AI agent development services for customized needs](/blog/ai-agent-development-services)**
-
-  5. **[Find out how workflow builders compare to AI workspaces for integrating tools like Lark](/blog/workflow-builder-vs-ai-workspace)**
-
-

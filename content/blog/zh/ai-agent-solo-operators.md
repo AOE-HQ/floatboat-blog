@@ -96,20 +96,3 @@ Floatboat 属于这一类——一款 AI 工作区桌面应用（Mac/Windows）�
 在选任何东西之前，先问自己：**你现有的 AI 工作流里，具体是哪一环出了问题？**如果答案是"我每个会话都在重新解释上下文"，那是记忆问题。如果是"电脑关机我就没法跑任务"，那是自动化问题。如果是"我花太多时间在工具之间切来切去"，那是集成问题。每个问题都有不同的解法。
 
 ![5.png](/zh/blog/images/ai-agent-solo-operators/1776232516527-e523f9cb-b36e-4b2e-89b1-ec9c36aa0a61.webp)
-
-## 上一篇系列文章：
-
-* [看懂 AI Agent 与聊天机器人的区别](/zh/blog/ai-agent-vs-chatbot)
-
-* [了解 2026 年 AI Agent 对单人创业者到底怎么工作](/zh/blog/ai-agents-2026-solo-operators)
-
-* [看看如何一步步搭建你自己的 AI Agent](/zh/blog/how-to-build-an-ai-agent)
-
-* [探索从 AI 助手到真正 AI Agent 的转变](/zh/blog/ai-agent-vs-ai-assistant)
-
-* [发现 AI Agent 在真实工作流里的实际用例](/zh/blog/ai-agent-use-cases-real-examples)
-
-这就是我的结论。不是一锤定音的裁决——更像是给你一个更清晰的框架，去思考哪种"AI Agent"对你真正有意义。
-
-最好的工具，是你真会去用、也真维护得动的那个。对大多数非技术型单人创业者来说，答案依然指向工作区原生而非自托管。但做这个选择时，值得想清楚你在用什么做交换。
-

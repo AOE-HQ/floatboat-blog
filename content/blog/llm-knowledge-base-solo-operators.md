@@ -128,16 +128,3 @@ If you answered yes to the first three and "knowing things" to the last one — 
 _Anyway, that's where I landed. I'm still using Karpathy's post as a thinking tool — but not as a to-do list. If your situation actually fits the deep research profile, it's worth a serious look. For the rest of us: there might be a lighter path that gets you more of the benefit with less of the maintenance tax._
 
 See you next time.
-
-## Previous Posts:
-
-  * **[Understand whether building custom AI systems actually makes sense for your workflow](/blog/custom-ai-agent-development)**
-
-  * **[Learn how AI agents work before deciding to build your own knowledge system](/blog/how-to-build-an-ai-agent)**
-
-  * **[Explore real AI agent use cases to see where knowledge systems actually add value](/blog/ai-agent-use-cases-real-examples)**
-
-  * **[See how solo operators use AI tools to execute work instead of just storing knowledge](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-
-  * **[Understand the difference between AI workspaces and traditional workflow tools](/blog/workflow-builder-vs-ai-workspace)**
-

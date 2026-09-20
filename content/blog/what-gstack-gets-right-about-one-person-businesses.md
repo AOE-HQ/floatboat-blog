@@ -106,16 +106,3 @@ Here's how I've translated the gstack logic into a non-code workflow. Three step
 _Anyway, that's where I landed after three weeks of running this. The developer ​_ ​ _wrapper_ ​ _​ (gstack) is genuinely interesting for coders. The underlying idea — that AI gets sharper when it knows which hat it's wearing — applies to anyone doing complex work alone. I'm still experimenting with the details. But the basic pattern has stuck._
 
 _Back to building things._
-
-## **Previous Posts:**
-
-  * [Learn how solo operators can structure AI workflows to function like a full team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [Understand the practical difference between AI agents and assistants when assigning roles in workflows](/blog/ai-agent-vs-ai-assistant)
-
-  * [Explore how to actually build an AI agent system instead of relying on a single general assistant](/blog/how-to-build-an-ai-agent)
-
-  * [See real-world AI agent use cases to understand how role-based systems perform in practice](/blog/ai-agent-use-cases-real-examples)
-
-  * [Compare workflow builders vs AI workspaces when designing structured, role-based AI systems](/blog/workflow-builder-vs-ai-workspace)
-
