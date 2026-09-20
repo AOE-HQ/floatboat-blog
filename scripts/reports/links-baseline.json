@@ -1045,27 +1045,31 @@
   },
   {
    "file": "gumloop-alternatives-2026",
-   "words": 1696,
-   "distinct_internal": 0,
-   "density": 0.0,
+   "words": 1762,
+   "distinct_internal": 2,
+   "density": 1.14,
    "fails": [],
    "warns": [
-    "R1: 0 internal links",
-    "density 0.0/1000w"
+    "density 1.1/1000w"
    ],
-   "targets": []
+   "targets": [
+    "gumloop-review-2026",
+    "lindy-vs-gumloop"
+   ]
   },
   {
    "file": "gumloop-review-2026",
-   "words": 1428,
-   "distinct_internal": 0,
-   "density": 0.0,
+   "words": 1494,
+   "distinct_internal": 2,
+   "density": 1.34,
    "fails": [],
    "warns": [
-    "R1: 0 internal links",
-    "density 0.0/1000w"
+    "density 1.3/1000w"
    ],
-   "targets": []
+   "targets": [
+    "gumloop-alternatives-2026",
+    "lindy-vs-gumloop"
+   ]
   },
   {
    "file": "how-one-person-businesses-work-like-a-team-with-ai",
@@ -1260,15 +1264,17 @@
   },
   {
    "file": "lindy-vs-gumloop",
-   "words": 2409,
-   "distinct_internal": 0,
-   "density": 0.0,
+   "words": 2465,
+   "distinct_internal": 2,
+   "density": 0.81,
    "fails": [],
    "warns": [
-    "R1: 0 internal links",
-    "density 0.0/1000w"
+    "density 0.8/1000w"
    ],
-   "targets": []
+   "targets": [
+    "gumloop-alternatives-2026",
+    "gumloop-review-2026"
+   ]
   },
   {
    "file": "llm-knowledge-base-solo-operators",
@@ -3010,27 +3016,27 @@
   },
   {
    "file": "zh/gumloop-alternatives-2026",
-   "words": 387,
-   "distinct_internal": 0,
-   "density": 0.0,
+   "words": 402,
+   "distinct_internal": 2,
+   "density": 4.98,
    "fails": [],
-   "warns": [
-    "R1: 0 internal links",
-    "density 0.0/1000w"
-   ],
-   "targets": []
+   "warns": [],
+   "targets": [
+    "gumloop-review-2026",
+    "lindy-vs-gumloop"
+   ]
   },
   {
    "file": "zh/gumloop-review-2026",
-   "words": 201,
-   "distinct_internal": 0,
-   "density": 0.0,
+   "words": 216,
+   "distinct_internal": 2,
+   "density": 9.26,
    "fails": [],
-   "warns": [
-    "R1: 0 internal links",
-    "density 0.0/1000w"
-   ],
-   "targets": []
+   "warns": [],
+   "targets": [
+    "gumloop-alternatives-2026",
+    "lindy-vs-gumloop"
+   ]
   },
   {
    "file": "zh/how-one-person-businesses-work-like-a-team-with-ai",
@@ -3221,15 +3227,17 @@
   },
   {
    "file": "zh/lindy-vs-gumloop",
-   "words": 702,
-   "distinct_internal": 0,
-   "density": 0.0,
+   "words": 714,
+   "distinct_internal": 2,
+   "density": 2.8,
    "fails": [],
    "warns": [
-    "R1: 0 internal links",
-    "density 0.0/1000w"
+    "density 2.8/1000w"
    ],
-   "targets": []
+   "targets": [
+    "gumloop-alternatives-2026",
+    "gumloop-review-2026"
+   ]
   },
   {
    "file": "zh/llm-knowledge-base-solo-operators",
@@ -3973,8 +3981,6 @@
   "gpt-image-2-vs-midjourney-nano-banana-2",
   "grok-3-api-solo-operator",
   "grok-bot",
-  "gumloop-alternatives-2026",
-  "gumloop-review-2026",
   "how-to-build-ai-agents-for-repeated-work",
   "how-to-build-an-ai-agent",
   "how-to-build-an-ai-agent-with-chatgpt",
@@ -3983,7 +3989,6 @@
   "html-vs-markdown-ai-output",
   "introducing-floatim",
   "lark-cli-when-to-use-it",
-  "lindy-vs-gumloop",
   "llm-knowledge-base-solo-operators",
   "manus-ai-alternatives-2026",
   "meta-muse-spark-one-person-company",
@@ -4060,8 +4065,6 @@
   "zh/gpt-image-2-vs-midjourney-nano-banana-2",
   "zh/grok-3-api-solo-operator",
   "zh/grok-bot",
-  "zh/gumloop-alternatives-2026",
-  "zh/gumloop-review-2026",
   "zh/how-to-build-ai-agents-for-repeated-work",
   "zh/how-to-build-an-ai-agent",
   "zh/how-to-build-an-ai-agent-with-chatgpt",
@@ -4070,7 +4073,6 @@
   "zh/html-vs-markdown-ai-output",
   "zh/introducing-floatim",
   "zh/lark-cli-when-to-use-it",
-  "zh/lindy-vs-gumloop",
   "zh/llm-knowledge-base-solo-operators",
   "zh/manus-ai-alternatives-2026",
   "zh/meta-muse-spark-one-person-company",

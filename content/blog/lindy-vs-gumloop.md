@@ -87,6 +87,8 @@ Lindy wins when **speed of setup and communication automation are what matter mo
 
 Gumloop is stronger when you need ​**precision, visibility into every step, and the ability to handle complex or high-volume data work** ​.
 
+If you want the full hands-on breakdown — learning curve, credit math, who it actually fits — that's in [the Gumloop review](/blog/gumloop-review-2026).
+
 ### Specific Scenarios Where Gumloop Wins
 
 **You're processing documents at scale.** Tasks like processing large document sets, enriching data, or running structured AI workflows tend to work well once a Gumloop pipeline is dialed in. The upfront setup investment pays off over time when the same flow runs repeatedly.
@@ -133,6 +135,6 @@ Here's my honest take after testing both:
 
   * Batch processing, data enrichment, or CRM workflows are central to your work
 
-And if you're genuinely unsure — take both free tiers and give each tool the _same real task_ you actually need to solve. The one that gets you to a working result in less time is probably your answer.
+And if you're genuinely unsure — take both free tiers and give each tool the _same real task_ you actually need to solve. The one that gets you to a working result in less time is probably your answer. And if neither fits — which happens more often than comparison posts admit — [the Gumloop alternatives I'd shortlist](/blog/gumloop-alternatives-2026) are grouped by the specific gap you're trying to close.
 
 This little test turned out to be more interesting than I thought. At first, I just wanted to compare tools. But it ended up helping me understand something else — how I actually like to work. Sometimes it’s not really about which tool is “better,”but which one fits your current rhythm a bit more naturally. Anyway…, that was a fun one to explore. If you’ve been playing around with AI workflows too, you might find these tools pretty interesting.
