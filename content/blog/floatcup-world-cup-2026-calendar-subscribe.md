@@ -22,7 +22,7 @@ FloatCup solves all of that with a single click.
 
 ### Step 1: Open FloatCup
 
-Navigate to the FloatCup page at [floatboat.ai/floatcup-2026](</floatcup-2026>) — no account required for the basic calendar subscription. The page presents a single "Subscribe" button and a brief explanation of what gets added to your calendar. If you already use Floatboat, FloatCup integrates with your existing workspace and pulls in your timezone and calendar preferences automatically.
+Navigate to the FloatCup page at floatboat.ai/floatcup-2026 — no account required for the basic calendar subscription. The page presents a single "Subscribe" button and a brief explanation of what gets added to your calendar. If you already use Floatboat, FloatCup integrates with your existing workspace and pulls in your timezone and calendar preferences automatically.
 
 FloatCup is a web-based tool that works in any modern browser. There is no app to install, no extension to add, and no permission to grant beyond the standard calendar subscription dialog your calendar app shows when you add a new feed. The entire process — from landing on the page to seeing matches in your calendar — typically takes under 30 seconds.
 
