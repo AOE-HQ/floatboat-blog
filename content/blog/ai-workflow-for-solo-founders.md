@@ -107,7 +107,7 @@ An AI workspace is something different. It's an environment where your work _and
 
 The workspace framing changes what you're optimizing for. Not "is this output good enough?" but "is this environment learning to work the way I work?"
 
-This is where tools like [Floatboat AI](</>) sit in my thinking — they're oriented toward the workspace model rather than the assistant model, with the idea that the AI adapts to your specific work patterns over time rather than starting fresh each session. I haven't used it long enough to say definitively whether it delivers on that, but the framing at least matches the problem I've been trying to solve.
+This is where tools like [Floatboat AI](https://floatboat.ai) sit in my thinking — they're oriented toward the workspace model rather than the assistant model, with the idea that the AI adapts to your specific work patterns over time rather than starting fresh each session. I haven't used it long enough to say definitively whether it delivers on that, but the framing at least matches the problem I've been trying to solve.
 
 ![5.png](/blog/images/ai-workflow-for-solo-founders/1776149080224-27f4c9cb-b310-4be4-bd6b-012eda5cf7ab.webp)
 

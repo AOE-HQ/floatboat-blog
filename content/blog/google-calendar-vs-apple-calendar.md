@@ -83,7 +83,7 @@ For solo operators especially — the people doing strategy, execution, client w
 
 If you find yourself in that gap — calendar packed, work still waiting for you to manually push every piece — it might be worth thinking about whether your workflow needs an execution layer on top of your calendar, not just a prettier reminder system.
 
-That's actually what got me looking into [Floatboat](</>). It's not replacing Google Calendar or Apple Calendar — it sits after them. Your calendar holds the promises (meetings, deadlines, follow-ups), and Floatboat uses agents to move those promises forward: prepping meeting briefs before you ask, generating follow-up drafts from context, running recurring work loops without you rebuilding the same flow every Monday. I'm still early with it, but the concept — not another reminder, but something that actually does the next step — is the most interesting shift I've explored this year.
+That's actually what got me looking into [Floatboat](https://floatboat.ai). It's not replacing Google Calendar or Apple Calendar — it sits after them. Your calendar holds the promises (meetings, deadlines, follow-ups), and Floatboat uses agents to move those promises forward: prepping meeting briefs before you ask, generating follow-up drafts from context, running recurring work loops without you rebuilding the same flow every Monday. I'm still early with it, but the concept — not another reminder, but something that actually does the next step — is the most interesting shift I've explored this year.
 
 ![5.png](/blog/images/google-calendar-vs-apple-calendar/1779853874835-7180bfeb-d5e2-4523-a9c2-6ba4f9b1c035.webp)
 

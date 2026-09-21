@@ -35,7 +35,7 @@ draft: false
 
 ### 工作流
 
-他配置了一个 AI Agent 工作流，用类似 [Floatboat AI](</>) 的工具来：读取上传的 brief、检索并总结网页内容、输出结构化初稿。Agent 不替代思考——**它负责把杂活干完。**
+他配置了一个 AI Agent 工作流，用类似 [Floatboat AI](https://floatboat.ai/zh) 的工具来：读取上传的 brief、检索并总结网页内容、输出结构化初稿。Agent 不替代思考——**它负责把杂活干完。**
 
 ### 产出
 

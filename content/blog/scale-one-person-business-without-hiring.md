@@ -83,7 +83,7 @@ AI is genuinely useful for Lever 1 (execution systems) and parts of Lever 3 (con
 
 The "build vs. use" question matters here. Most solo operators are better off using existing tools than building custom ones. The time cost of setup is real. I've spent hours configuring tools I used twice.
 
-One category I've been watching is AI workspaces — tools designed to handle multiple tasks in a single environment rather than requiring you to context-switch between five different apps. The promise is that you spend less time managing your tool stack and more time doing actual work. ​[Floatboat](</>)​ is one example in this space​, positioning itself as an AI workspace for solo operators who want document reading, research, and content editing in one place. I haven't done a deep dive on it yet — worth checking their **official site** if the category is interesting to you — but the underlying idea of reducing tool-switching overhead is real.
+One category I've been watching is AI workspaces — tools designed to handle multiple tasks in a single environment rather than requiring you to context-switch between five different apps. The promise is that you spend less time managing your tool stack and more time doing actual work. ​[Floatboat](https://floatboat.ai)​ is one example in this space​, positioning itself as an AI workspace for solo operators who want document reading, research, and content editing in one place. I haven't done a deep dive on it yet — worth checking their **official site** if the category is interesting to you — but the underlying idea of reducing tool-switching overhead is real.
 
 The honest version of what AI does for a one-person business: it compresses the time it takes to run Lever 1 systems. It doesn't replace the need to build them.
 

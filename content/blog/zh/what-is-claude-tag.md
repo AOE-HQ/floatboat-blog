@@ -68,7 +68,7 @@ Claude Tag 是一个嵌入 Slack 的 agentic 队友：管理员授予 `@Claude` 
 
 边界清晰能避免代价高昂的工具错配。
 
-Claude Tag **不是 [Claude Cowork](/zh/blog/what-is-claude-cowork)**。Cowork 是用户主动发起的桌面 Agent，处理 Claude 应用内的本地文件夹与连接器；Tag 是 Slack 内的**频道原生共享工作体**。完整的 Cowork 定义以及知识工作者何时该用桌面委派，见什么是 Claude Cowork。
+Claude Tag **不是 [Claude Cowork](/zh/blog/what-is-claude-cowork)**。Cowork 是用户主动发起的桌面 Agent，处理 Claude 应用内的本地文件夹与连接器；Tag 是 Slack 内的**频道原生共享工作体**。
 
 Claude Tag **不是 [Claude Code](/zh/blog/what-is-claude-code)**。Code 面向的是通过终端与 IDE 处理仓库、测试和部署。Tag 在获得 Git 授权时可以开 pull request，但它的设计中心是**Slack 里的团队协调**，而不是结对编程。
 

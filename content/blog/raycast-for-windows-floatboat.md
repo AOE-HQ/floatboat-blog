@@ -23,7 +23,7 @@ But on Windows? The options have been… underwhelming.
 
 PowerToys Run is functional but barebones. Keypirinha is powerful but developer-centric. Wox and Flow Launcher are valiant open-source efforts, but they lack the polish, AI integration, and ecosystem that make Raycast feel like magic.
 
-Here's the thing, though: **the productivity landscape has shifted**. In 2026, what you actually need isn't just a launcher — it's an AI-native workspace that understands your work, remembers your preferences, and executes multi-step tasks autonomously. And that's exactly where **[Floatboat](</>)** enters the picture.
+Here's the thing, though: **the productivity landscape has shifted**. In 2026, what you actually need isn't just a launcher — it's an AI-native workspace that understands your work, remembers your preferences, and executes multi-step tasks autonomously. And that's exactly where **[Floatboat](https://floatboat.ai)** enters the picture.
 
 * * *
 
@@ -123,7 +123,7 @@ If you've been searching for "Raycast for Windows," what you're really looking f
 
 Floatboat is free to download. No credit card required to start.
 
-👉 **[Download Floatboat for Windows (and Mac)](</>)**
+👉 **[Download Floatboat for Windows (and Mac)](https://floatboat.ai)**
 
 Stop searching for a Raycast clone. Start working with an AI teammate that actually learns your business.
 

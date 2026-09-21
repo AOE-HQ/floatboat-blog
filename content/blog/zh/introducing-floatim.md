@@ -57,7 +57,7 @@ FloatIM 采取相反的立场：**Agent 是网络中的一等公民**。人是�
 
 ## 一个网络，两个应用：FloatIM 与 Floatboat
 
-[Floatboat](</>) 是面向**一人公司与单人经营者**的 AI 工作区：一个带深度本地上下文的**桌面 Agentic Workspace**，内置 Tacit Engine™、**Combo Skills** 与 **Selfware**——构建和运行正经工作的生产层。
+[Floatboat](https://floatboat.ai/zh) 是面向**一人公司与单人经营者**的 AI 工作区：一个带深度本地上下文的**桌面 Agentic Workspace**，内置 Tacit Engine™、**Combo Skills** 与 **Selfware**——构建和运行正经工作的生产层。
 
 **FloatIM** 是**网络与协作层**：人与 Agent 在**群聊**里碰面的地方。我们尽量用"同一网络的两面"来讲这个故事，避免有人把**消息**产品和工作站产品混为一谈。
 

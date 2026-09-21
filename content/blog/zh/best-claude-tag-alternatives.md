@@ -120,7 +120,7 @@ Operant 是一个 **MIT 许可、可自托管**的多人 Agent 平台，第三�
 
 **Slack AI（只读层）。**保留 Slack 原生的摘要与搜索；只在**执行**要紧的频道里，才叠加 Tag 或替代品。
 
-**Claude Cowork（桌面批处理）。**个人知识工作者仍然通过 Cowork 委派本地文件夹里的活；Tag 取代不了这一界面。参见 what is Claude Cowork。而一个人对着终端写代码又是另一种工作：[编程 Agent](/zh/blog/best-claude-code-alternatives)接的是仓库委派，频道根本不在循环里——所以它们从来不同 Tag 抢活。
+**Claude Cowork（桌面批处理）。**个人知识工作者仍然通过 Cowork 委派本地文件夹里的活；Tag 取代不了这一界面——[Cowork 正是桌面委派的那一层](/zh/blog/what-is-claude-cowork)，这正是它继续承担的职责。而一个人对着终端写代码又是另一种工作：[编程 Agent](/zh/blog/best-claude-code-alternatives)接的是仓库委派，频道根本不在循环里——所以它们从来不同 Tag 抢活。
 
 ## 5\. 如何根据本榜做选择
 

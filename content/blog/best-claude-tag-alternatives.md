@@ -120,7 +120,7 @@ Some products **pair with** channel agents rather than replace Tag's Slack job:
 
 **Slack AI (read layer).** Keep Slack's native summaries and search; add Tag or alternatives only in channels where **execution** matters.
 
-**Claude Cowork (desktop batches).** Individual knowledge workers still delegate local folder work through Cowork; Tag does not replace that surface. See what is Claude Cowork. Solo terminal work is a different job again: [coding agents](/blog/best-claude-code-alternatives) handle repository delegation without a channel in the loop, which is why they never compete with Tag.
+**Claude Cowork (desktop batches).** Individual knowledge workers still delegate local folder work through Cowork; Tag does not replace that surface — [Cowork remains the desktop-delegation surface](/blog/what-is-claude-cowork), which is exactly the job it keeps doing. Solo terminal work is a different job again: [coding agents](/blog/best-claude-code-alternatives) handle repository delegation without a channel in the loop, which is why they never compete with Tag.
 
 ## 5\. How to Choose From This Ranking
 

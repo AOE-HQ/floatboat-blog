@@ -35,7 +35,7 @@ Previously: open tabs, manual notes, a lot of copying and pasting. Easily 3–4 
 
 ### Workflow
 
-They set up an AI agent workflow using a tool like [Floatboat AI](</>) that could: read uploaded briefs, search and summarize web content, and output a structured draft. The agent doesn't replace the thinking — **it handles the busywork.**
+They set up an AI agent workflow using a tool like [Floatboat AI](https://floatboat.ai) that could: read uploaded briefs, search and summarize web content, and output a structured draft. The agent doesn't replace the thinking — **it handles the busywork.**
 
 ### Output
 

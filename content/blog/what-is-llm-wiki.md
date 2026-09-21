@@ -121,7 +121,7 @@ There's also an emerging product category trying to solve this more directly for
 
 The idea: instead of you bringing context to the AI each session, the AI lives inside an environment where your work _already is._ Files, browsing, decisions, iterative edits — the context accumulates without you managing it.
 
-Tools like [Floatboat AI](</>) are building in this direction — an AI workspace that learns your working patterns over time rather than starting fresh each session. I haven't run it through enough real workflows to give you a definitive verdict, but the framing matches the problem the LLM wiki is pointing at: compounding context, not resetting it.
+Tools like [Floatboat AI](https://floatboat.ai) are building in this direction — an AI workspace that learns your working patterns over time rather than starting fresh each session. I haven't run it through enough real workflows to give you a definitive verdict, but the framing matches the problem the LLM wiki is pointing at: compounding context, not resetting it.
 
 ![5.png](/blog/images/what-is-llm-wiki/1776148854844-ad731b5c-a527-4da1-85c3-44bad00c024a.webp)
 

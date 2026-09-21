@@ -135,7 +135,7 @@ prompt 与工作流之间的区别，就是"问路"和"手里有张地图"之间
 
 ### 什么是 Combo Skills？
 
-到这里我想提一件我一直在探索的东西：[Floatboat AI](</>)，一款引入了 **Combo Skills**概念的桌面工作区工具。
+到这里我想提一件我一直在探索的东西：[Floatboat AI](https://floatboat.ai/zh)，一款引入了 **Combo Skills**概念的桌面工作区工具。
 
 这个想法与 Vibe Coding 在结构上不同。不是"一个 prompt 产出一个输出"，Combo Skills 把多项 AI 能力——读文件、分析内容、生成结构、打磨输出——串成一条**可复用、可重复的工作流**。你把流程建一次，之后每次需要它就跑一次。
 

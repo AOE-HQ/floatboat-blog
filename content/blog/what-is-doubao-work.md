@@ -16,7 +16,7 @@ draft: false
 
   * You describe a goal in natural language, and the agent executes continuously on your **local computer** (a Windows virtual desktop), a **cloud computer**, or in a browser.
 
-  * Compared with Doubao the chatbot, the core difference is the **execution layer**; compared with Tencent's WorkBuddy and Qwen Office by Alibaba, it's the **Feishu ecosystem**; compared with [Floatboat](</>), it's the **Feishu/IM context vs calendar-driven, proactive execution** — two different routes.
+  * Compared with Doubao the chatbot, the core difference is the **execution layer**; compared with Tencent's WorkBuddy and Qwen Office by Alibaba, it's the **Feishu ecosystem**; compared with [Floatboat](https://floatboat.ai), it's the **Feishu/IM context vs calendar-driven, proactive execution** — two different routes.
 
   * The **team edition** signs in with a Feishu (Lark) enterprise account and inherits organizational permissions and collaboration context — ByteDance's main battlefield for enterprise office agents.
 
@@ -158,7 +158,7 @@ Built on Seedream and Seedance, Doubao Work can generate Word documents, Excel s
 
 ## 5. Competitive Landscape: Doubao Work vs WorkBuddy vs Qwen Office vs Floatboat
 
-The 2026 AI office-agent market runs on at least two main lines: **domestic giants growing agents into their IM/document ecosystems** (Doubao Work, WorkBuddy, Qwen Office), and **calendar-driven agents growing into the schedule runtime** (led by [Floatboat](</>)). What they share is "natural-language goal → multi-step execution → verifiable deliverable." What differs is the **trigger, the collaboration foundation, and whose context gets inherited by default**.
+The 2026 AI office-agent market runs on at least two main lines: **domestic giants growing agents into their IM/document ecosystems** (Doubao Work, WorkBuddy, Qwen Office), and **calendar-driven agents growing into the schedule runtime** (led by [Floatboat](https://floatboat.ai)). What they share is "natural-language goal → multi-step execution → verifiable deliverable." What differs is the **trigger, the collaboration foundation, and whose context gets inherited by default**.
 
 ### 5.1 Positioning, Side by Side
 
@@ -212,7 +212,7 @@ The desktop edition's official notes are explicit about providing **computer con
 
 ### 5.4 Floatboat: The Calendar-Driven Option for International and Independent Users
 
-[Floatboat](</>) isn't "yet another chat agent inside Feishu/DingTalk." It's a **Calendar-Driven Agent OS**: it treats your calendar as the agent's runtime, so meetings, deadlines, and recurring tasks automatically trigger preparation and execution — a brief before a meeting, a draft before a deadline, a follow-up after — without you manually prompting each time. For the category definition, see what Agentic Calendar means.
+[Floatboat](https://floatboat.ai) isn't "yet another chat agent inside Feishu/DingTalk." It's a **Calendar-Driven Agent OS**: it treats your calendar as the agent's runtime, so meetings, deadlines, and recurring tasks automatically trigger preparation and execution — a brief before a meeting, a draft before a deadline, a follow-up after — without you manually prompting each time. For the category definition, see what Agentic Calendar means.
 
 Compared with the "user assigns a task, the agent goes and does it" model of Doubao Work and its peers, Floatboat differs in:
 
@@ -226,7 +226,7 @@ Compared with the "user assigns a task, the agent goes and does it" model of Dou
 
   * **Market**: Floatboat serves solopreneurs and small teams worldwide; Doubao Work targets mainland China and serves Feishu enterprises deeply.
 
-**Compared with Doubao Work**: Floatboat's strengths are **schedule-driven proactive execution, cross-calendar and cross-timezone operation, and no dependence on a Feishu/DingTalk platform choice**; Doubao Work's strengths are **organizational context inside Feishu permissions, the Windows virtual desktop, and Seed multimodal with the mainland office stack**. If your collaboration hub is Feishu group chats and cloud documents, Doubao Work fits better; if your hub is the **meetings and deadlines on your calendar** and you want agents running pipelines around events automatically, evaluate [Floatboat](</>).
+**Compared with Doubao Work**: Floatboat's strengths are **schedule-driven proactive execution, cross-calendar and cross-timezone operation, and no dependence on a Feishu/DingTalk platform choice**; Doubao Work's strengths are **organizational context inside Feishu permissions, the Windows virtual desktop, and Seed multimodal with the mainland office stack**. If your collaboration hub is Feishu group chats and cloud documents, Doubao Work fits better; if your hub is the **meetings and deadlines on your calendar** and you want agents running pipelines around events automatically, evaluate [Floatboat](https://floatboat.ai).
 
 ### 5.5 Why ByteDance Is Betting on Doubao Work Right Now
 
@@ -242,7 +242,7 @@ Making Doubao Work a brand of its own bundles ByteDance's strongest **agent exec
 
 **Prefer Qwen Office** if your organization is already on DingTalk; you need in-DingTalk-native experience plus desktop computer control plus scheduled cloud tasks; you have HarmonyOS or web-publishing needs; or your enterprise SSO must connect to multiple identity providers.
 
-**Prefer [Floatboat](</>)** if you're a solopreneur or consultant and **your calendar is the center of your work**; you need calendar-driven pipelines like automatic pre-meeting preparation, deadline delivery, and post-meeting follow-up; you pull schedules from multiple sources such as Google, Outlook, or Feishu calendars via ICS and **don't want to be locked into one IM ecosystem**; or your team is international or works across time zones.
+**Prefer [Floatboat](https://floatboat.ai)** if you're a solopreneur or consultant and **your calendar is the center of your work**; you need calendar-driven pipelines like automatic pre-meeting preparation, deadline delivery, and post-meeting follow-up; you pull schedules from multiple sources such as Google, Outlook, or Feishu calendars via ICS and **don't want to be locked into one IM ecosystem**; or your team is international or works across time zones.
 
 **There's no universal answer.** The honest advice is to take a real deliverable due next week and run it through each candidate product — **your software stack and trigger habits are more reliable than any comparison table.**
 
@@ -258,7 +258,7 @@ Before purchasing, it's worth having IT and legal review the automation- and dat
 
 Doubao Work's logic can be compressed into two sentences: **give the people who already use Doubao a dedicated desktop for getting work done, and give Feishu enterprises an agent colleague that inherits their permissions.**
 
-It became a standalone product not because the features couldn't be built, but because four separate logics — **chat, office, enterprise governance, and industry competition** — can no longer fit inside one entry point. The Seed team is pushing model capability toward cross-tool delivery; Feishu turns organizational context into an agent moat; WorkBuddy and Qwen Office occupy their IM niches in mainland China; and [Floatboat](</>) and peers hold the **calendar-driven** niche for international and independent users. ByteDance has to claim the Feishu office lane with a dedicated brand.
+It became a standalone product not because the features couldn't be built, but because four separate logics — **chat, office, enterprise governance, and industry competition** — can no longer fit inside one entry point. The Seed team is pushing model capability toward cross-tool delivery; Feishu turns organizational context into an agent moat; WorkBuddy and Qwen Office occupy their IM niches in mainland China; and [Floatboat](https://floatboat.ai) and peers hold the **calendar-driven** niche for international and independent users. ByteDance has to claim the Feishu office lane with a dedicated brand.
 
 What actually decides success isn't whether the deck gets generated — plenty of products can do that — but **whether the agent can deliver reliably inside real permission boundaries without causing trouble**. If your bigger question is "who's going to run the before-and-after work on my calendar automatically," keep reading about Agentic Calendar; if it's "I want an agent colleague inside Feishu," the Doubao Work team edition is the product to compare against.
 

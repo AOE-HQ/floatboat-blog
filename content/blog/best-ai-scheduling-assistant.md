@@ -38,7 +38,7 @@ That's starting to change. A new wave of AI scheduling assistants is expanding t
 
 The phrase "AI scheduling assistant" covers a spectrum so wide it risks meaning nothing. At one end: a tool that scans your calendar for open slots and generates a booking link. At the other: an agent operating system that runs your entire workday from the calendar, autonomously prepping for meetings, executing on deadlines, and following up after calls. Both are technically "AI scheduling assistants." The difference in what they do is substantial.
 
-For a deeper treatment of this evolution, see our full breakdown of [the four generations of AI scheduling](/blog/best-ai-scheduling-assistants). The short version, necessary for the comparisons that follow: the four generations are distinguished not by whether they use AI, but by what the AI is asked to do. Gen 1 finds time. Gen 2 optimizes time. Gen 3 adds context and execution. Gen 4 runs work from the calendar autonomously. Most tools on the market today live in Gen 1 or Gen 2. A handful are pushing into Gen 3. Among the tools reviewed here, Floatboat is the clearest example of Gen 4.
+The evolution matters here because [the four generations of AI scheduling](/blog/best-ai-scheduling-assistants) explain why tools that look similar behave nothing alike. The short version, necessary for the comparisons that follow: the four generations are distinguished not by whether they use AI, but by what the AI is asked to do. Gen 1 finds time. Gen 2 optimizes time. Gen 3 adds context and execution. Gen 4 runs work from the calendar autonomously. Most tools on the market today live in Gen 1 or Gen 2. A handful are pushing into Gen 3. Among the tools reviewed here, Floatboat is the clearest example of Gen 4.
 
 * * *
 
@@ -88,7 +88,7 @@ Gen 4 represents the leap from scheduling to execution. Floatboat treats the cal
 
 The architectural distinction is that every calendar event gets a persistent workspace with its own files, run history, and model choice. The system doesn't just tell you what's on your calendar; it does the prep work, the follow-up work, and the execution work that the calendar implies. It's proactive — acting on the schedule without being prompted — rather than reactive.
 
-For a full definition of this category, see [what defines an agentic calendar](/blog/what-is-agentic-calendar). For the purposes of this comparison, the key distinction is that Gen 4 is the only generation where the AI autonomously executes work — not just schedules it, not just optimizes it, not just acts on booking requests, but prepares, produces, and follows up across the full lifecycle of every calendar event.
+The category has a hard boundary, and [what defines an agentic calendar](/blog/what-is-agentic-calendar) sits exactly on the line this comparison turns on. For the purposes of this comparison, the key distinction is that Gen 4 is the only generation where the AI autonomously executes work — not just schedules it, not just optimizes it, not just acts on booking requests, but prepares, produces, and follows up across the full lifecycle of every calendar event.
 
 **Best for** : Solo founders, solopreneurs, and anyone whose calendar is the central nervous system of their work — where the gap between knowing something is scheduled and being ready for it is measured in lost output.
 
