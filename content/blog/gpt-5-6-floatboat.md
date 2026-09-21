@@ -92,7 +92,7 @@ If you are new to Floatboat, the setup is: download the desktop app, connect you
 
 The broader GPT-5.6 release also brought **ChatGPT Work** — an agent that gathers context across connected apps and files to create documents, spreadsheets, and presentations — alongside the merger of **Codex** into the ChatGPT desktop app，per [Axios](https://www.axios.com/2026/07/09/ai-openai-gpt-release). On Floatboat, the same GPT-5.6 models power your calendar agents without needing to navigate a separate code environment or work app — the models are embedded directly where your calendar events live.
 
-For a deeper understanding of how Sol, Terra, and Luna compare on benchmarks, pricing, and safety evaluations, see the full [GPT-5.6 model family overview](/blog/gpt-5-6-sol-terra-luna). If you want to understand the calendar-driven paradigm that makes tiered agents useful, the [agentic calendar explanation](/blog/what-is-agentic-calendar) covers the category from the ground up.
+For a deeper understanding of how Sol, Terra, and Luna compare on benchmarks, pricing, and safety evaluations, see the full [GPT-5.6 model family overview](/blog/gpt-5-6-sol-terra-luna). If you want to understand the calendar-driven paradigm that makes tiered agents useful, the agentic calendar explanation covers the category from the ground up.
 
   6. Conclusion
 

@@ -26,7 +26,7 @@ draft: false
 
 一个 Python 环境——Python 3.10 及以上，装有 `pip`；或者 Node.js 18 及以上。OpenAI SDK（`pip install openai` 或 `npm install openai`）负责 API 通信。DeepSeek 的 API 在线路层面与 OpenAI 完全兼容，所以不需要专用 SDK。如果你此前的 Agent 经验只有[在 ChatGPT 里配置一个 Custom GPT](/zh/blog/how-to-build-an-ai-agent-with-chatgpt)，这里是唯一的概念跳跃——从「配置一个产品」到「拥有一个循环」——SDK 本身反而是最容易的部分。
 
-一个终端和一个文本编辑器。本教程里的 Agent 循环示例每个都不到五十行，你可以敲进单个文件，从命令行直接运行。如果想在动手前先看到全貌，[什么是 DeepSeek Agent](/zh/blog/what-is-deepseek-agent) 梳理了四种原型，帮你判断到底需不需要自定义 Agent，还是直接用现成工具就行。
+一个终端和一个文本编辑器。本教程里的 Agent 循环示例每个都不到五十行，你可以敲进单个文件，从命令行直接运行。如果想在动手前先看到全貌，什么是 DeepSeek Agent 梳理了四种原型，帮你判断到底需不需要自定义 Agent，还是直接用现成工具就行。
 
 一把 DeepSeek API key。下一节讲怎么拿到。如果已经有 key，直接跳到第 2 步。
 

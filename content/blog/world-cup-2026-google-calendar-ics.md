@@ -108,7 +108,7 @@ FloatCup also includes reminder options. You can choose reminders such as 30 min
 
 What FloatCup adds beyond a basic ICS file is maintenance. Match times can update automatically when the feed changes, reminders can be pre-configured, and timezone conversion is handled by the calendar system. That is why FloatCup is the simplest option for readers who care less about file ownership and more about not missing matches.
 
-**CTA:** [Subscribe with FloatCup](/blog/floatcup-world-cup-2026-calendar-subscribe)
+**CTA:** Subscribe with FloatCup
 
 ## 7\. Troubleshooting Common ICS Import Problems
 

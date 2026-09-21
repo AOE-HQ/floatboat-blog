@@ -2455,56 +2455,36 @@
     "/blog/html-is-the-new-markdown": {
       "items": [
         {
-          "question": "Is Markdown going away?",
-          "answer": "No. Markdown is still the right format for documentation, version-controlled files, quick notes — anything lightweight and portable. The shift isn't \"Markdown is dead.\" It's that Markdown's default status for _all_ AI output is being questioned, and for human-facing deliverables, HTML is a strong alternative. The [Markdown Guide](<https://www.markdownguide.org/getting-started/>) remains one of the clearest references for when Markdown works well."
+          "question": "Is HTML output from an AI agent more expensive than Markdown?",
+          "answer": "Yes, in tokens. Structure and styling tags accumulate, so the same content typically costs more tokens as HTML than as Markdown; the exact multiplier varies by content and model, so test in your own pipeline. For high-volume pipelines the difference compounds, which is one structural reason Markdown still owns agent-to-agent and system-facing output."
         },
         {
-          "question": "What started the \"HTML is the new Markdown\" discussion?",
-          "answer": "Thariq Shihipar, an engineer on Anthropic's Claude Code team, published a post on X on May 8, 2026, with a companion site showing 20 self-contained HTML files across nine categories of work. The post went viral, hit Hacker News #1, and prompted several well-known developers to publicly reconsider their Markdown defaults."
+          "question": "Do I need to know HTML to use HTML output from an agent?",
+          "answer": "No. The browser does the rendering — you open the file and read it, the same way you would open a PDF. The skill that actually matters is asking well: specifying navigation, priority styling, or collapsible sections in the prompt is what separates a genuinely useful artifact from an HTML file that renders like a plain document with extra bytes."
         },
         {
-          "question": "Do you need a coding-agent CLI to use HTML output?",
-          "answer": "Not necessarily. Claude Code HTML workflows are where this conversation started, but any AI tool that can generate code can produce a self-contained HTML file. Claude Artifacts renders HTML directly in the browser. ChatGPT Canvas offers a side-panel editing workspace. You don't need a terminal to benefit from this — though if you're already using a CLI agent, asking for HTML output is one prompt change away."
-        },
-        {
-          "question": "Is HTML more expensive in tokens than Markdown?",
-          "answer": "Typically, yes. HTML includes structure and styling tags that Markdown doesn't need. The exact difference depends on how much styling is involved. I haven't run controlled benchmarks myself, so I won't throw out a specific multiplier — but the direction is consistent. For most solo operators, the token cost difference on individual outputs is small enough to not matter. For high-volume API use, it's worth measuring."
-        },
-        {
-          "question": "When does HTML output actually help solo operators?",
-          "answer": "When you're both the person directing the agent and the person reviewing the output. Project plans, content briefs, comparison documents, weekly reviews — anything where visual hierarchy helps you process information faster. If you're producing an artifact that someone else will read or that you'll refer back to, HTML tends to make that artifact more useful."
-        },
-        {
-          "question": "Is this just hype, or worth attention now?",
-          "answer": "Worth trying, not worth panicking over. The underlying idea — that agent output should be formatted for the human who reads it, not just the machine that writes it — is solid. If you're a skeptic, pick one deliverable you produce regularly and try generating it as HTML once. See if it changes how you engage with it. If it doesn't, you've lost nothing. If it does — well, that's interesting."
+          "question": "When should I still ask an agent for Markdown?",
+          "answer": "Whenever the output feeds a system rather than a person: documents you will diff in Git, messages another agent will parse, notes destined for an Obsidian vault, and anything that has to be pasted into Notion or Slack. If no human has to read, approve, or act on the artifact, HTML's visual affordances are cost without an audience."
         }
       ]
     },
     "/blog/html-vs-markdown-ai-output": {
       "items": [
         {
-          "question": "Is HTML better than Markdown for AI output?",
-          "answer": "Neither is universally better — it depends on the job. Choose HTML when humans need to inspect, compare, or interact with the output: reports, reviews, dashboards, prototypes, and shareable artifacts with styling and navigation. Choose Markdown when the output gets edited, versioned, kept internal, or consumed by another AI — it's lighter, cheaper, and diff-friendly. Ask what the output is for, not which format is trendier this month."
+          "question": "Does HTML output really cost that much more in tokens?",
+          "answer": "Generally more, not catastrophically more — the direction is reliable, the multiplier is not. On short outputs the gap is negligible; on long, heavily structured documents it becomes real money, because providers bill output per token. The honest check is to run the same prompt in both formats in the model you use and compare the counts yourself."
         },
         {
-          "question": "When should agents still use Markdown?",
-          "answer": "When the output feeds back into a system rather than being read by a human. Agent-to-agent workflows, Git-tracked documentation, config files, internal notes, and anything that will be hand-edited after generation. Markdown's token efficiency and diff-friendliness make it the right tool for these jobs."
+          "question": "Can I convert between the two formats after generation?",
+          "answer": "Yes, in both directions, with one asymmetry worth knowing. Markdown to HTML is close to lossless, because HTML can express everything Markdown expresses. HTML to Markdown loses layout by design — colors, columns, and interactive elements have no Markdown equivalent and arrive as plain structure — which is another argument for the draft-in-Markdown, deliver-in-HTML order: keep the source in the format that survives conversion."
         },
         {
-          "question": "Does HTML cost more tokens than Markdown?",
-          "answer": "Generally yes, because of the added structure and styling tags. The gap is small for short outputs and grows with document complexity. I'd recommend running the same prompt in both formats and checking token counts in your model's usage dashboard rather than relying on generalized estimates. The exact ratio depends on how much visual structure the HTML needs."
+          "question": "Should READMEs and GitHub docs be HTML now?",
+          "answer": "No — when a platform renders Markdown natively, fighting it makes no sense. A GitHub README written in HTML loses clean diffs, automatic anchors, and the conventions every contributor expects to find. HTML earns its place only when the document leaves the platform and has to stand on its own in front of a reader."
         },
         {
-          "question": "Which format is easier to maintain after generation?",
-          "answer": "Markdown, if you'll keep editing the output. It's plain text you can revise in any editor, and its diffs stay clean and readable in version control. HTML files — especially ones with embedded CSS — are harder to tweak without breaking the layout. That's why the pattern I recommend is to draft and iterate in Markdown, then convert to HTML once the output is a finished deliverable."
-        },
-        {
-          "question": "Can AI generate both Markdown and HTML in one workflow?",
-          "answer": "Yes — and this is the hybrid approach I'd recommend. Draft in Markdown during the thinking and iteration phase, then ask the agent to convert or regenerate as HTML when the output needs to be delivered, presented, or shared. Most capable models handle this conversion well. The rule I use: Markdown for process, HTML for delivery."
-        },
-        {
-          "question": "What about workspace tools like Claude Artifacts or ChatGPT Canvas?",
-          "answer": "Both make AI-generated HTML more accessible — Artifacts renders HTML directly in the Claude interface, and Canvas provides a side-panel editing workspace. They lower the barrier, but they have real limits: outputs are session-bound, not always easy to carry across platforms, and weaker at templating and reuse than local tools or custom workflows. Great for single-session work; less great for repeatable, cross-platform publishing."
+          "question": "What about PDF or DOCX as a third option?",
+          "answer": "They solve a different problem: fixed-layout fidelity for printing and formal distribution. An agent can produce them, but they are opaque to version control, awkward to edit, and impossible for the recipient to re-render on their own device. HTML covers the \"finished, portable, interactive\" job with a format the agent can actually reason about while writing it."
         }
       ]
     },
@@ -6543,56 +6523,36 @@
     "/zh/blog/html-is-the-new-markdown": {
       "items": [
         {
-          "question": "Markdown 要消失了吗？",
-          "answer": "不会。对文档、版本控制的文件、随手笔记——任何轻量可移植的东西——Markdown 依然是正确格式。这场转变不是「Markdown 已死」，而是 Markdown 在 _所有_ AI 输出上的默认地位开始被质疑；对面向人的交付物，HTML 是一个很强的替代。[Markdown Guide](<https://www.markdownguide.org/getting-started/>) 依然是讲清 Markdown 何时好用的最清楚的参考之一。"
+          "question": "AI agent 输出 HTML 比 Markdown 更贵吗？",
+          "answer": "是的，按 token 算贵。结构和样式标签会累积，同样的内容做成 HTML 通常花掉更多 token；具体倍率随内容和模型浮动，建议先在自己的管线里测一下。对高吞吐管线这笔差额会复利放大，这也是 Markdown 至今守着 agent 对 agent 和面向系统输出的结构性原因之一。"
         },
         {
-          "question": "「HTML is the new Markdown」的讨论是怎么起来的？",
-          "answer": "Anthropic Claude Code 团队的工程师 Thariq Shihipar 于 2026 年 5 月 8 日在 X 上发帖，配了一个展示 20 个自包含 HTML 文件、横跨九类工作的配套网站。帖子爆火、冲上 Hacker News 第一，还促使多位知名开发者公开反思自己默认用 Markdown 的习惯。"
+          "question": "用 HTML 输出需要我懂 HTML 吗？",
+          "answer": "不需要。渲染交给浏览器——你打开文件、读它，和打开一份 PDF 没有区别。真正要紧的技能是把要求说清楚：在提示词里指定导航、优先级配色或可折叠区块，才能把「一个渲染得像纯文档的 HTML 文件」和「真正好用的成果」区分开。"
         },
         {
-          "question": "用 HTML 输出需要编码 Agent CLI 吗？",
-          "answer": "不一定。这场讨论始于 Claude Code 的 HTML 工作流，但任何能生成代码的 AI 工具都能产出自包含的 HTML 文件。Claude Artifacts 直接在浏览器里渲染 HTML；ChatGPT Canvas 提供侧栏编辑工作区。你没有终端也能从中受益——不过如果你已经在用 CLI Agent，要 HTML 输出只是改一条提示词的事。"
-        },
-        {
-          "question": "HTML 比 Markdown 更费 token 吗？",
-          "answer": "通常是的。HTML 含 Markdown 不需要的结构和样式标签。确切差异取决于样式用得多不多。我自己没跑过受控基准，所以不随便报一个倍率——但方向是一致的。对大多数单人创业者来说，单次输出上的 token 成本差异小到可以忽略；对高吞吐的 API 使用来说，则值得量一量。"
-        },
-        {
-          "question": "HTML 输出什么时候真的帮到单人创业者？",
-          "answer": "当你既是给 Agent 下指令的人、又是审查输出的人时。项目计划、内容简报、对比文档、周度复盘——任何视觉层级能帮你更快处理信息的东西。如果你产出的成果是要给别人读、或你自己日后要回看的，HTML 往往能让它更有用。"
-        },
-        {
-          "question": "这只是炒作，还是现在值得关注？",
-          "answer": "值得一试，不必恐慌。底层的理念——Agent 输出应该为读它的人排版，而不是只为写它的机器——是扎实的。如果你持怀疑态度，挑一件你定期产出的交付物，试着用 HTML 生成一次，看看它是否改变了你与它的互动方式。没变，你什么也没损失；变了——那就挺有意思的。"
+          "question": "什么时候还是该让 agent 输出 Markdown？",
+          "answer": "凡是输出喂给系统而不是给人的场合：要进 Git diff 的文档、要被另一个 agent 解析的消息、要落进 Obsidian 仓库的笔记，以及一切必须粘进 Notion 或 Slack 的东西。如果没有一个真的人需要去读、批准或据以行动，HTML 的视觉可供性就是没有观众的成本。"
         }
       ]
     },
     "/zh/blog/html-vs-markdown-ai-output": {
       "items": [
         {
-          "question": "AI 输出用 HTML 比 Markdown 更好吗？",
-          "answer": "没有哪个普遍更好——取决于输出要干的活。需要人查看、对比、交互时选 HTML：报告、评审、看板、原型，以及要带样式与导航的可分享成果。输出要被编辑、进版本管理或给机器消费时选 Markdown：更轻、更省 token、diff 友好。要问的不是哪个更时髦，而是这份输出要做什么。"
+          "question": "HTML 输出的 token 成本真的高很多吗？",
+          "answer": "通常是更贵，但不是灾难性地贵——方向可靠，倍数不可靠。短输出上差距可以忽略；在长而重结构的文档上它变成真金白银，因为输出侧按 token 计费。诚实的检验是：同一个提示词在你的模型里跑两种格式，自己对比计数。"
         },
         {
-          "question": "Agent 什么时候仍该用 Markdown？",
-          "answer": "当输出是回流进系统、而不是给人类阅读的时候。Agent 对 Agent 的工作流、进 Git 的文档、配置文件、内部笔记，以及任何生成后还要手工编辑的东西。Markdown 的 token 效率和 diff 友好性，使它成为这些任务的正确工具。"
+          "question": "生成之后还能在两种格式之间转换吗？",
+          "answer": "能，双向都能，但有一个值得知道的不对称。Markdown 转 HTML 接近无损，因为 HTML 能表达 Markdown 表达的一切。HTML 转 Markdown 则按定义丢失布局——颜色、分栏、交互元素在 Markdown 里没有对应物，落地就是朴素的结构——这也是「Markdown 起草、HTML 交付」顺序的又一个论据：把源文件留在能扛住转换的那个格式里。"
         },
         {
-          "question": "HTML 比 Markdown 花更多 token 吗？",
-          "answer": "大体上是的，因为多了结构和样式标签。短输出时差距很小，随着文档复杂度增长而变大。比起依赖笼统的估算，我更建议用同一个提示词跑两种格式，在模型的用量面板里看 token 数。确切比例取决于 HTML 需要多少视觉结构。"
+          "question": "README 和 GitHub 文档现在该用 HTML 吗？",
+          "answer": "不该——平台原生渲染 Markdown 的时候，跟平台对着干毫无意义。用 HTML 写的 GitHub README 会丢掉干净的 diff、自动锚点，以及每个贡献者预期会在那里看到的全部惯例。HTML 只在文档离开平台、必须独自站到读者面前时，才挣得到它的位置。"
         },
         {
-          "question": "生成之后哪个格式更容易维护？",
-          "answer": "如果你想继续手动改这份输出，Markdown 宽容得多——纯文本，任何编辑器都能改，进版本库时 diff 也干净可读。HTML 文件尤其内嵌 CSS 的那种，想在不弄坏布局的前提下微调就很难。这也是我推荐「草稿与迭代用 Markdown、定稿交付才转 HTML」的原因。"
-        },
-        {
-          "question": "AI 能在同一条工作流里同时生成 Markdown 和 HTML 吗？",
-          "answer": "能——而且这正是我推荐的混合做法：在思考和迭代阶段用 Markdown 起草，当输出需要交付、演示或分享时，再让 Agent 转成 HTML 或重新生成。大多数能力足够的模型都能很好地完成这种转换。我用的规则是：**过程用 Markdown，交付用 HTML。**"
-        },
-        {
-          "question": "Claude Artifacts、ChatGPT Canvas 这类工作区工具呢？",
-          "answer": "它们都让 AI 生成的 HTML 更易上手：Artifacts 直接在 Claude 界面里渲染 HTML，Canvas 提供侧栏编辑工作区，确实降低了门槛。但也有真实限制——输出与会话绑定，未必能轻松带到其他平台；模板化和复用能力也比本地工具或自定义工作流有限。适合单次会话的工作，不太适合可重复、跨平台的发布。"
+          "question": "PDF 或 DOCX 算不算第三个选项？",
+          "answer": "它们解决的是另一个问题：为打印和正式分发提供固定版式的保真。Agent 也能产出它们，但它们对版本管理不透明、编辑起来别扭、收件人也无法在自己的设备上重新渲染。HTML 用一种 Agent 在书写时真正能推理的格式，覆盖了「成品、可携带、可交互」这个活。"
         }
       ]
     },
@@ -8173,6 +8133,566 @@
         {
           "question": "怎样在赛前收到提醒？",
           "answer": "通过 FloatCup（免费、一键）把世界杯赛程加进日历，或下载 ICS 文件；赛前 30 分钟、1 小时或 3 小时的提醒都包含在内。Floatboat 用户还可以安装 Match Reminder Combo Skill，获得工作区集成的提醒与赛后回顾。"
+        }
+      ]
+    },
+    "/blog/what-is-markdown": {
+      "items": [
+        {
+          "question": "What exactly is Markdown?",
+          "answer": "Markdown is a lightweight markup syntax for plain text: character-level conventions — # for headings, ** for emphasis, - for lists — that add structure to a file that stays human-readable. A processor converts it to HTML or other formats for rendering, while the source never stops being legible."
+        },
+        {
+          "question": "How is Markdown different from HTML?",
+          "answer": "Markdown is a writing-time source format; HTML is the publish-time target browsers consume, and most Markdown is converted into HTML as part of rendering. HTML expresses far more structure but is verbose to hand-write; Markdown deliberately covers only the structural core in characters that stay readable in the raw file. The two are complements in one pipeline, not competitors for one job."
+        },
+        {
+          "question": "Who actually uses Markdown today?",
+          "answer": "Practically anyone producing structured text: developers writing READMEs and pull-request descriptions, technical writers behind static documentation sites, note-takers in Obsidian and Bear, platforms like GitHub, Reddit, Discord, and Stack Overflow, and — since every major chat interface renders it — anyone who has pasted an AI answer into a document. The user base stopped being \"programmers\" long ago."
+        },
+        {
+          "question": "Is there one official Markdown standard?",
+          "answer": "No, and that is the most common wrong assumption. Gruber's original syntax has been frozen since version 1.0.1 in December 2004; CommonMark functions as the de facto baseline; GitHub Flavored Markdown extends it with tables, checkboxes, and strikethrough; apps like Obsidian add wiki-links and callouts on top. Writing the common subset keeps a document portable across all of them."
+        },
+        {
+          "question": "Do I need to know Markdown to work with AI agents?",
+          "answer": "Strictly, no — agents emit Markdown whether or not you understand it, and chat interfaces render it for you. Practically, the syntax pays out of proportion to its learning cost: you can request structure deliberately (\"answer as a table with these columns\"), store agent output so headings survive into your notes and retrieval pipelines, and read the raw .md files agents write to disk. It is the difference between receiving the format and being fluent in it."
+        }
+      ]
+    },
+    "/blog/markdown-cheat-sheet": {
+      "items": [
+        {
+          "question": "What is GFM?",
+          "answer": "GitHub Flavored Markdown — GFM — is GitHub's extension of Markdown: it adds tables, task lists, strikethrough, and autolinks on top of the core syntax, and it has become the de facto dialect most renderers support. This sheet flags which constructs are core and which are GFM."
+        },
+        {
+          "question": "Why is my Markdown table not rendering?",
+          "answer": "In most cases the table is missing either a blank line above it or its separator row of dashes between header and body. A table glued to the paragraph above it gets absorbed into that paragraph, and a table without the separator row renders as literal pipe characters instead of a grid. Two further checks: every row must carry the same number of unescaped pipes as the header, and any literal | inside a cell must be written as \\|."
+        },
+        {
+          "question": "Does Markdown support math formulas?",
+          "answer": "Not in core Markdown — the original spec has no math syntax, so formulas depend on engine-specific extensions; check your target renderer first. GitHub renders $...$ inline math and $$...$$ display math through MathJax; Obsidian supports the same dollar-sign syntax natively; Notion uses its own equation blocks rather than dollar delimiters. If the document must render everywhere, the portable fallbacks are formula images or fenced code blocks, at the cost of losing LaTeX copy-paste."
+        },
+        {
+          "question": "Why did my line break disappear?",
+          "answer": "Markdown collapses a single newline into a space, by design: paragraphs are delimited by blank lines, and soft wrapping in the source should not affect the output. To force a line break inside a paragraph, end the line with two spaces before the newline, or with a backslash under GFM. The two-space form is invisible in editors that strip trailing whitespace on save, a common way to lose a break that \"used to work\" — so the backslash and the plain \"use a blank line\" advice each have their advocates."
+        }
+      ]
+    },
+    "/zh/blog/markdown-cheat-sheet": {
+      "items": [
+        {
+          "question": "什么是 GFM？",
+          "answer": "GitHub Flavored Markdown（GFM）是 GitHub 对 Markdown 的扩展：在核心语法之上加入了表格、任务清单、删除线和自动链接，也成了多数渲染器事实上支持的方言。速查表会标明哪些语法属于核心、哪些属于 GFM。"
+        },
+        {
+          "question": "为什么我的 Markdown 表格不渲染？",
+          "answer": "大多数时候，表格缺了上方空行，或缺了表头与表体之间那行横线分隔。紧贴上一段的表格会被那个段落吞掉；没有分隔行的表格会渲染成一串字面竖线而不是网格。再查两件事：每一行的未转义竖线数量必须与表头一致；单元格里任何字面 | 都要写成 \\|。"
+        },
+        {
+          "question": "Markdown 支持数学公式吗？",
+          "answer": "核心 Markdown 不支持——原始规范没有数学语法，公式依赖各引擎自己的扩展，先查你的目标渲染器。GitHub 通过 MathJax 渲染 $...$ 行内公式和 $$...$$ 块级公式；Obsidian 原生支持同样的美元符语法；Notion 用自己的公式块而非美元定界符。如果文档必须在所有地方都能渲染，可移植的退路是公式图片或围栏代码块，代价是失去对底层 LaTeX 的复制粘贴。"
+        },
+        {
+          "question": "为什么我的换行消失了？",
+          "answer": "Markdown 按设计把单个换行折叠成空格：段落由空行分隔，源文件里的软换行本就不该影响输出。要在段落内强制换行，在该行末尾的换行符前放两个空格，或在 GFM 下改用反斜杠。两空格的写法在「保存时清除行尾空白」的编辑器里不可见，这是「原本好好的换行丢了」的常见原因——所以反斜杠派和「直接用空行」派各有人拥护。"
+        }
+      ]
+    },
+    "/blog/how-to-convert-markdown-to-pdf": {
+      "items": [
+        {
+          "question": "What is the easiest way to convert Markdown to PDF?",
+          "answer": "Paste your Markdown into a browser-based converter: it renders instantly and exports a print-ready PDF with no installation. For repeatable, scriptable exports, use Pandoc from the command line."
+        },
+        {
+          "question": "My table is wider than the page and gets cut off. What do I do?",
+          "answer": "Cut columns in the Markdown source until the table fits, or split it into two narrower tables — no export setting rescues a ten-column table as cleanly as restructuring it. If the wide table must stay wide, the paths differ: browser rendering wraps it like a web page, while pandoc needs explicit intervention such as a smaller font, landscape geometry, or a package that auto-sizes tables. This is the one defect where fixing the input beats fixing the tool every time."
+        },
+        {
+          "question": "Is any of this genuinely free, with no watermark?",
+          "answer": "Yes — all three paths can produce watermark-free PDFs. The web tool from section 2 is free to use and its export adds no watermark; pandoc and the VS Code extension are open source; Typora is the one paid item on the list. What you never get for free anywhere is unlimited batch convenience: the free web tier is per-document, and the free command-line batch costs you the setup time from section 3."
+        },
+        {
+          "question": "Why does my PDF look different from the Markdown preview?",
+          "answer": "Because the preview and the PDF are different rendering targets. The preview flows in a pane with no pages, while the PDF commits to fixed geometry — page size, margins, fonts — chosen by the export path, so gaps cluster around pagination and typefaces. The cure is to pick a path that exposes the levers from section 5 rather than debugging one that hides them, and to keep a wide gap between what you write and what you expect the export to fix."
+        }
+      ]
+    },
+    "/zh/blog/how-to-convert-markdown-to-pdf": {
+      "items": [
+        {
+          "question": "把 Markdown 转成 PDF 最简单的方法是什么？",
+          "answer": "把 Markdown 粘进浏览器端的转换器：即时渲染并导出打印级 PDF，无需安装。需要可重复、可脚本化的导出时，用命令行 Pandoc。"
+        },
+        {
+          "question": "表格比页面宽、右边缘被裁掉，怎么办？",
+          "answer": "先在 Markdown 源里砍列，或者把一张宽表拆成两张窄表——任何导出设置对十列宽表的抢救，都不如重构干净。如果宽表必须保留，三条路的待遇不同：浏览器渲染会像网页一样换行；pandoc 需要显式干预，比如缩小字号、用横版页面，或用自动调宽的宏包。这是唯一一个「修输入永远优于修工具」的缺陷。"
+        },
+        {
+          "question": "这些方法真的免费、无水印吗？",
+          "answer": "真的——三条路都能导出不带水印的 PDF。第 2 节的网页工具免费用，导出不加水印；pandoc 和 VS Code 那个扩展是开源的；Typora 是清单上唯一的付费项。真正没有免费午餐的是批量便利：免费网页版按份处理，免费的命令行批量则要你先付第 3 节那点搭环境的时间。"
+        },
+        {
+          "question": "为什么导出的 PDF 和预览长得不一样？",
+          "answer": "因为预览和 PDF 是两个渲染目标。预览在一个没有页面的窗格里流动；PDF 则要敲定一套固定的页面几何——纸张、边距、字体——由导出路径替你选，所以差异集中在分页和字体上。解法是选一条能摸到第 5 节那些旋钮的路，而不是去调试一条把旋钮藏起来的路；同时把预期放对：书写阶段管内容，导出阶段才管版式。"
+        }
+      ]
+    },
+    "/blog/convert-html-to-markdown": {
+      "items": [
+        {
+          "question": "Do tables survive the conversion?",
+          "answer": "Usually, yes. Well-formed HTML tables convert into Markdown pipe tables with structure intact; deeply nested or style-dependent tables may need light cleanup afterwards. Complex merged cells are the main lossy case."
+        },
+        {
+          "question": "What happens to inline styles and CSS when converting?",
+          "answer": "They are discarded, and that is the intended behavior rather than a defect. Converters map structure, not presentation: <strong> and <em> become bold and italic because they are semantic tags, while a span that only looks bold through CSS has nothing to map and vanishes. Color, fonts, spacing, and layout disappear along with it. If the visual presentation of a document is the point, the right export target is HTML or PDF, not Markdown — the same audience-based split the format debate keeps rediscovering."
+        },
+        {
+          "question": "Can I convert entire web pages, or batches of pages at once?",
+          "answer": "Single pages convert through any paste-based tool, and batch conversion is a solved scripting problem: a shell loop over pandoc, or a headless-browser plus Turndown pipeline when the pages render their content with JavaScript. The two real constraints are technical and ethical rather than tooling. Technically, JavaScript-rendered pages return an empty shell to a plain fetch, so the pipeline needs a rendering engine before it needs a converter. Ethically, clipping pages into private notes and republishing content at scale are different activities, and rate limits plus robots rules exist for a reason — a batch job that hammers a site is a batch job that gets blocked."
+        },
+        {
+          "question": "Is converted Markdown ready to publish as-is?",
+          "answer": "Treat it as a strong draft rather than a finished document. The recurring touch-ups are predictable: heading levels that skip numbers, dead JavaScript links, tables that need alignment characters, and the invisible non-breaking and zero-width characters that copied rich text deposits into otherwise clean files. The other variable is the destination engine — GitHub, Obsidian, and Notion each render slightly different dialects, so a file that looks right in one can break a table in another. A two-minute pass with a syntax reference and a live preview catches nearly all of it."
+        }
+      ]
+    },
+    "/zh/blog/convert-html-to-markdown": {
+      "items": [
+        {
+          "question": "表格能保留吗？",
+          "answer": "通常可以。结构良好的 HTML 表格会转成 Markdown 管道表格，结构保留；深层嵌套或依赖样式的表格转换后可能需要轻度清理。合并单元格是最常见的有损场景。"
+        },
+        {
+          "question": "转换时内联样式和 CSS 会怎么处理？",
+          "answer": "直接丢弃，而且这是设计意图，不是缺陷。转换器映射的是结构，不是呈现：<strong> 和 <em> 会变成加粗和斜体，因为它们是语义标签；一个只靠 CSS 显得加粗的 span 没有可映射的东西，就此消失。颜色、字体、间距、布局一并而去。如果文档的视觉呈现本身就是目的，正确的导出目标是 HTML 或 PDF，不是 Markdown——这和格式之争反复重新发现的那个按受众切分的结论是同一条。"
+        },
+        {
+          "question": "能整页转换网页，或者批量转换吗？",
+          "answer": "单个页面用任何粘贴式工具都能转，批量转换则是一个已有答案的脚本问题：对 pandoc 做一层 shell 循环，或者对用 JavaScript 渲染内容的页面用无头浏览器加 Turndown 的管线。真正的约束有两条，都不在工具上。技术上，JavaScript 渲染的页面对直接抓取返回空壳，管线得先有渲染引擎才谈得上转换器。伦理上，把页面剪进私人笔记和把内容规模化再发布是两种行为，速率限制和 robots 规则存在是有原因的——猛灌一个站点的批量任务，就是会被封禁的批量任务。"
+        },
+        {
+          "question": "转换出来的 Markdown 能直接发布吗？",
+          "answer": "把它当成一份高质量的草稿，而不是成品文档。反复出现的修整点很有规律：跳号的标题层级、失效的 JavaScript 链接、需要补对齐字符的表格，以及富文本悄悄混进本来干净文件里的不间断空格和零宽字符。另一个变量是目标引擎——GitHub、Obsidian、Notion 渲染的方言各有细微差别，在这个里看着正常的文件，可能在那个里表格就断了。开着语法参考和实时预览过一遍，两分钟就能抓住几乎全部问题。"
+        }
+      ]
+    },
+    "/zh/blog/what-is-markdown": {
+      "items": [
+        {
+          "question": "Markdown 到底是什么？",
+          "answer": "Markdown 是一套面向纯文本的轻量排版语法：# 即标题、** 即加粗、- 即列表——用字符级约定给文件加上结构，而文件本身始终保持人类可读。处理器再把它转换成 HTML 等格式用于渲染，源文件从未失去可读性。"
+        },
+        {
+          "question": "Markdown 和 HTML 有什么区别？",
+          "answer": "Markdown 是写作时的源格式，HTML 是浏览器实际消费的发布时目标，大多数 Markdown 在渲染过程中会被转换成 HTML。HTML 能表达的结构多得多，但手写冗长；Markdown 有意只覆盖结构性内核——标题、强调、列表、链接、代码、引用——用源文件里也保持可读的字符。两者是同一条管线里的互补品，不是抢同一份工作的对手。"
+        },
+        {
+          "question": "今天到底谁在用 Markdown？",
+          "answer": "几乎所有生产结构化文本的人：写 README 和 PR 描述的开发者、用静态文档站的技术写作者、用 Obsidian 和 Bear 记笔记的人、GitHub、Reddit、Discord、Stack Overflow 这些社区平台，以及——既然每个主流聊天界面都渲染它——任何曾经把 AI 回答粘贴进文档的人。它的用户群早就不再是「程序员」了。"
+        },
+        {
+          "question": "Markdown 有没有统一官方标准？",
+          "answer": "没有，这是关于这个格式最常见的错误假设。Gruber 的原版语法自 2004 年 12 月的 1.0.1 起就冻结了；CommonMark 事实上承担着基线规约的角色；GitHub Flavored Markdown 在其上扩展了表格、勾选框和删除线；Obsidian 这类应用又叠了 wiki 链接和 callout。写在公共子集上，文档就能在所有这些引擎间保持可移植。"
+        },
+        {
+          "question": "用 AI Agent 一定要会 Markdown 吗？",
+          "answer": "严格说不必——不管你懂不懂，Agent 产出的都是 Markdown，聊天界面也会替你渲染。但实际收益与学习成本严重不成比例地高：你可以有意识地要求结构（「用表格回答，列这几列」），存 Agent 输出时让标题层级活着进你的笔记和检索管线，还能直接读 Agent 写到磁盘的原始 .md 文件。区别在于：你是「收到」这个格式，还是「通晓」这个格式。"
+        }
+      ]
+    },
+    "/blog/markdown-documentation-site": {
+      "items": [
+        {
+          "question": "Do I need to know React or Vue to use Docusaurus or VitePress?",
+          "answer": "No, for standard Markdown documentation. The frameworks are JavaScript-based, but writing docs is writing .md files. You only touch React or Vue when embedding interactive components via MDX — which is optional."
+        },
+        {
+          "question": "Can I migrate my existing docs from Confluence or Google Docs?",
+          "answer": "Yes, with a conversion step. Exports convert to Markdown with varying fidelity — headings and lists survive well, complex layouts need cleanup. The same workflows used for converting HTML to Markdown apply, and the cleanup is usually a one-time cost per page."
+        },
+        {
+          "question": "How do documentation sites handle multiple versions of a product?",
+          "answer": "The major generators have built-in versioning: a docs snapshot is frozen per release, and readers switch versions from a dropdown. The maintenance cost is real — bug fixes sometimes need to land in several versions — which is why teams prune old versions aggressively."
+        }
+      ]
+    },
+    "/zh/blog/markdown-documentation-site": {
+      "items": [
+        {
+          "question": "用 Docusaurus 或 VitePress 需要会 React 或 Vue 吗？",
+          "answer": "写标准 Markdown 文档不需要。框架是 JavaScript 系的，但写文档就是写 .md 文件。只有通过 MDX 内嵌交互组件时才会碰 React/Vue——而那是可选项。"
+        },
+        {
+          "question": "现有文档能从 Confluence 或 Google Docs 迁移过来吗？",
+          "answer": "可以，需要一步转换。导出转 Markdown 的保真度不一——标题和列表存活良好，复杂版式需要清理。HTML 转 Markdown 的那套工作流在这里同样适用，清理通常是每页一次性的成本。"
+        },
+        {
+          "question": "文档站怎么处理产品的多个版本？",
+          "answer": "主流生成器内置版本化：某个版本发布时冻结一份文档快照，读者用下拉框切换。维护成本是真实的——bug 修复有时要同时落到多个版本——所以团队都会激进地裁剪旧版本。"
+        }
+      ]
+    },
+    "/blog/mermaid-diagrams-in-markdown": {
+      "items": [
+        {
+          "question": "Does GitHub render Mermaid automatically?",
+          "answer": "Yes. Code blocks marked mermaid render as diagrams in Markdown files, issues, and pull request descriptions on GitHub. No configuration or plugin is needed, as of 2026."
+        },
+        {
+          "question": "Can I use Mermaid in Notion or Google Docs?",
+          "answer": "Notion supports Mermaid in its code-block menu, though editing is less fluid than in dedicated tools. Google Docs has no native support; the workaround is rendering elsewhere and pasting an image, which gives up the text-based advantages."
+        },
+        {
+          "question": "My large flowchart renders as an unreadable tangle. What now?",
+          "answer": "Split it. Mermaid's auto-layout degrades fast past a dozen nodes with cross-links. Break one big diagram into stages — a top-level flow plus per-stage details — which is usually clearer for readers anyway."
+        }
+      ]
+    },
+    "/zh/blog/mermaid-diagrams-in-markdown": {
+      "items": [
+        {
+          "question": "GitHub 会自动渲染 Mermaid 吗？",
+          "answer": "会。标为 mermaid 的代码块在 GitHub 的 Markdown 文件、issue 和 pull request 描述里都渲染成图表。截至 2026 年无需任何配置或插件。"
+        },
+        {
+          "question": "Notion 或 Google Docs 里能用 Mermaid 吗？",
+          "answer": "Notion 在代码块菜单里支持 Mermaid，但编辑体验不如专职工具流畅。Google Docs 没有原生支持；绕法是在别处渲染好贴图过来——代价是放弃文本图表的全部优势。"
+        },
+        {
+          "question": "我的大流程图渲染成一团乱麻，怎么办？",
+          "answer": "拆分。Mermaid 的自动布局在超过十几个节点且有交叉链接时衰减很快。把一张大图拆成阶段——一张顶层流程图加各阶段细节——对读者来说通常本来就更清楚。"
+        }
+      ]
+    },
+    "/blog/markdown-to-slides": {
+      "items": [
+        {
+          "question": "Can I export to actual PowerPoint files?",
+          "answer": "Yes. Marp's CLI exports .pptx, and Pandoc outputs PowerPoint natively. The files are simpler than hand-built decks — text and images on themed slides — which is ideal for handouts and acceptable for most rooms, but not a full PowerPoint feature set."
+        },
+        {
+          "question": "How do I put two columns or images beside text?",
+          "answer": "Marp supports layout directives and multiple themes, including two-column styles; Pandoc does it through slide templates. Both work, but pixel-exact placement is the ceiling — this is the format's deliberate trade."
+        },
+        {
+          "question": "What about speaker notes?",
+          "answer": "Marp supports presenter notes via HTML comments, and the HTML export can show them in presenter view. Export targets vary in notes support, so verify the specific path — PDF handouts, for instance, are typically notes-free."
+        }
+      ]
+    },
+    "/zh/blog/markdown-to-slides": {
+      "items": [
+        {
+          "question": "能导出成真正的 PowerPoint 文件吗？",
+          "answer": "可以。Marp CLI 导出 .pptx，Pandoc 也原生输出 PowerPoint。这些文件比手工搭建的片子简单——主题化页面上的文字和图片——作为讲义足够好，对大多数会议室也够用，但不是完整的 PowerPoint 功能集。"
+        },
+        {
+          "question": "双栏、图文混排怎么做？",
+          "answer": "Marp 支持版式指令和多主题，包括双栏样式；Pandoc 通过幻灯片模板实现。都可行，但像素级摆放是天花板——这是这个格式自觉的取舍。"
+        },
+        {
+          "question": "演讲者备注呢？",
+          "answer": "Marp 用 HTML 注释支持演讲者备注，HTML 导出可以在演示视图里显示。各导出目标对备注的支持不一，先验证你的具体路径——比如 PDF 讲义通常没有备注。"
+        }
+      ]
+    },
+    "/blog/markdown-math-latex": {
+      "items": [
+        {
+          "question": "Why do my dollar signs show up as literal text?",
+          "answer": "The renderer either does not support math or its heuristics read your $...$ as currency. Check platform support first; then make sure display math uses $$ on its own lines — single-dollar inline math is where misdetection happens most."
+        },
+        {
+          "question": "Is it KaTeX or MathJax on GitHub?",
+          "answer": "MathJax, since GitHub enabled math rendering in 2022 and continuing as of 2026. The distinction matters mainly if you self-host and need rendering speed (KaTeX) or broad package coverage (MathJax)."
+        },
+        {
+          "question": "Can I number equations in Markdown?",
+          "answer": "Not portably. Equation numbering is a LaTeX feature that none of the common Markdown math renderers expose consistently. Numbered equations in a math-heavy document are a strong signal the document belongs in LaTeX or Typst."
+        }
+      ]
+    },
+    "/zh/blog/markdown-math-latex": {
+      "items": [
+        {
+          "question": "为什么我的美元符号显示成了字面文本？",
+          "answer": "渲染器要么不支持数学，要么它的启发式把你的 $...$ 识别成了货币。先查平台支持；再确认展示公式用的是独立成行的 $$——单美元行内公式是误判高发区。"
+        },
+        {
+          "question": "GitHub 上是 KaTeX 还是 MathJax？",
+          "answer": "MathJax，自 2022 年 GitHub 开启数学渲染延续至 2026 年。这个区别主要在你自建站点且需要渲染速度（KaTeX）或宏包覆盖面（MathJax）时才重要。"
+        },
+        {
+          "question": "Markdown 里能给公式编号吗？",
+          "answer": "不可移植。公式编号是 LaTeX 的功能，常见 Markdown 数学渲染器都没有一致地暴露它。数学密集文档里需要编号公式，是这份文档该去 LaTeX 或 Typst 的强烈信号。"
+        }
+      ]
+    },
+    "/blog/best-markdown-editors": {
+      "items": [
+        {
+          "question": "What happened to Typora's free version?",
+          "answer": "Typora ended its free beta and moved to a one-time paid license (roughly $15, as of September 2026) starting with version 1.0 in late 2021. Licenses cover three devices. If you have an old beta copy, it still works, but updates require a license."
+        },
+        {
+          "question": "Is Obsidian really free?",
+          "answer": "Free for personal use, including the core app and local files. Paid tiers exist for commercial use, hosted sync (Obsidian Sync), and publishing. The local-first workflow this article describes works entirely on the free tier."
+        },
+        {
+          "question": "Can I use multiple editors on the same notes?",
+          "answer": "Yes — that is the point of the format. A folder of .md files can be opened in Obsidian on the desktop, edited in VS Code, and previewed in a browser tool without conflict. The only real rule is avoiding two apps writing the same file at the same moment."
+        },
+        {
+          "question": "Which editor is best for AI-assisted writing?",
+          "answer": "All of them, increasingly — but the practical answer is whichever gives your AI access to the files. Desktop editors working on local folders pair naturally with file-reading agents; browser tools are starting to add AI features of their own. Judge it by whether the AI can read your whole library, not just the open file."
+        }
+      ]
+    },
+    "/zh/blog/best-markdown-editors": {
+      "items": [
+        {
+          "question": "Typora 的免费版怎么了？",
+          "answer": "Typora 结束了免费 beta，从 2021 年底的 1.0 版起转为一次性付费授权（约 $15，截至 2026 年 9 月），授权覆盖三台设备。手里的旧 beta 副本仍能用，但更新需要授权。"
+        },
+        {
+          "question": "Obsidian 真的免费吗？",
+          "answer": "个人使用免费，包括核心应用和本地文件。付费层在商用许可、托管同步（Obsidian Sync）和发布。本文描述的本地优先工作流在免费档内完整成立。"
+        },
+        {
+          "question": "多个编辑器打开同一批笔记可以吗？",
+          "answer": "可以——这正是这种格式的意义所在。一个 .md 文件夹可以在桌面端用 Obsidian、在 VS Code 里编辑、在浏览器工具里预览而互不冲突。唯一的真实规则是：别让两个应用同时写同一个文件。"
+        },
+        {
+          "question": "AI 辅助写作选哪个编辑器最好？",
+          "answer": "都行，而且越来越都行——务实的答案是看哪个能让你的 AI 读到文件。工作在本地文件夹上的桌面编辑器天然配「能读文件」的 agent；浏览器工具也在陆续加自己的 AI 功能。判断标准是 AI 能不能读到你的整个笔记库，而不只是打开的那一个文件。"
+        }
+      ]
+    },
+    "/blog/batch-convert-markdown-files": {
+      "items": [
+        {
+          "question": "Can I batch convert to PDF without installing anything?",
+          "answer": "Not realistically for a whole folder. Browser-based converters handle single files; folder-scale PDF conversion needs either Pandoc with a PDF engine installed locally, or a desktop tool that bundles the conversion. There is no way around a rendering engine for print-ready PDFs."
+        },
+        {
+          "question": "How do I preserve my folder structure when converting?",
+          "answer": "Pandoc loops and serious batch tools can walk subfolders and mirror the structure with output extensions swapped — in a shell loop, that means enabling recursive globbing or using a script that recreates directories. Check this before running: flattening a nested vault is the most common one-way mistake."
+        },
+        {
+          "question": "What breaks most often in batch conversions?",
+          "answer": "Tables, code blocks with unusual languages, and files whose frontmatter confuses the converter. Also: filenames. Conversion plus rename in one pass is where files get overwritten — convert first, rename in a separate, reversible step."
+        }
+      ]
+    },
+    "/zh/blog/batch-convert-markdown-files": {
+      "items": [
+        {
+          "question": "不安装任何东西能批量转 PDF 吗？",
+          "answer": "整个文件夹的话，基本不能。浏览器转换器处理单文件；文件夹级的 PDF 转换要么本地装 Pandoc 加 PDF 引擎，要么用内置转换的桌面工具。打印级 PDF 绕不开一个渲染引擎。"
+        },
+        {
+          "question": "转换时怎么保留文件夹结构？",
+          "answer": "Pandoc 循环和正经的批量工具都能遍历子文件夹并镜像结构（只换扩展名）——shell 循环里就是开启递归 glob 或用重建目录的脚本。运行前先确认这一点：把嵌套的笔记库压平是最常见的不可逆错误。"
+        },
+        {
+          "question": "批量转换最容易坏什么？",
+          "answer": "表格、带罕见语言标注的代码块、以及让转换器困惑的 frontmatter。还有：文件名。「转换加重命名」一把梭是文件互相覆盖的高发点——先转换，重命名作为独立的、可回退的第二步。"
+        }
+      ]
+    },
+    "/blog/markdown-viewer-online": {
+      "items": [
+        {
+          "question": "Can I open a .md file in Word?",
+          "answer": "Yes, but you will be reading the source, not the rendered document. Word opens .md as plain text, so you will see the #, |, and  syntax rather than headings and tables. To get a formatted Word document, render and export first: a browser viewer with Word or PDF export handles it, or a command-line converter such as pandoc if you prefer batch tools."
+        },
+        {
+          "question": "Can a Markdown viewer edit files?",
+          "answer": "Some are view-only, some are editors with a live preview, and the label rarely tells you which. The browser viewer in Section 2 is a split-pane editor — source on one side, render on the other — so small fixes happen where you are already reading. Quick Look and GitHub's web view are read-only for practical purposes; VS Code is an editor first with a preview attached."
+        },
+        {
+          "question": "How do I read a .md file on my phone?",
+          "answer": "Open it in your phone's browser with a client-side viewer — the same browser path works on mobile, with no app install required. The built-in file preview on iOS and Android shows raw text, which is survivable for a short note and miserable for a table. Dedicated Markdown reader apps exist, but they are hard to justify for occasional reading; the browser already handles it."
+        },
+        {
+          "question": "Is it safe to paste private notes into an online Markdown viewer?",
+          "answer": "It depends entirely on the viewer's architecture. A client-side tool renders in your browser and the content never leaves your machine, so pasting private material is no worse than opening the file locally. A server-side tool uploads the file to render it — fine for a public README, a real consideration for client notes or unreleased plans. Check which kind it is before pasting, not after."
+        }
+      ]
+    },
+    "/zh/blog/markdown-viewer-online": {
+      "items": [
+        {
+          "question": ".md 文件能用 Word 打开吗？",
+          "answer": "能，但你读到的是源码，不是排版后的文档。Word 把 .md 当纯文本打开，你看到的是 #、| 和  这些语法，而不是标题和表格。要拿到排版好的 Word 文档，先渲染再导出：带 Word/PDF 导出的浏览器查看器能做，偏好批量工具的话，pandoc 这类命令行转换器也行。"
+        },
+        {
+          "question": "Markdown 查看器能编辑文件吗？",
+          "answer": "有的只读，有的带实时预览可编辑，而名字很少告诉你它是哪种。第 2 节的浏览器查看器是分栏编辑器——一侧源码、一侧渲染——小修小补（一个错字、一行坏表格）就发生在你正在读的地方。Quick Look 和 GitHub 网页在实践上是只读的；VS Code 则是编辑器为主、预览为辅。"
+        },
+        {
+          "question": "手机上看 .md 文件怎么办？",
+          "answer": "在手机浏览器里用客户端查看器打开——同一条浏览器路径在移动端照样成立，不需要装 App。iOS 和 Android 的内置文件预览显示的是原始文本，短笔记还能忍，遇到表格就是灾难。专门的 Markdown 阅读应用存在，但为偶尔一读装一个并不划算；浏览器已经办得到。"
+        },
+        {
+          "question": "把私密笔记贴进在线 Markdown 查看器安全吗？",
+          "answer": "完全取决于查看器的架构。客户端工具在你的浏览器里渲染，内容从不离开你的机器，贴私密材料和在本地打开文件没有区别。服务器端工具会把文件上传后渲染——公开 README 无所谓，客户笔记或未发布计划就要掂量。先弄清是哪一种，再贴。"
+        }
+      ]
+    },
+    "/blog/markdown-for-ai-pipelines": {
+      "items": [
+        {
+          "question": "Is Markdown an official standard for AI input?",
+          "answer": "No. There is no ratification and none was needed. Markdown is a de facto standard — adopted because training data, tooling, and rendering support all converged on it. Official-standards status would change nothing about how models parse it."
+        },
+        {
+          "question": "Should I convert my PDFs to Markdown for RAG?",
+          "answer": "Usually, yes. PDFs interleave visual layout with content, which makes naive extraction lose headings and reading order; converting to Markdown first — then chunking by structure — preserves the section logic. The conversion step has its own tooling trade-offs covered in the HTML-to-Markdown guide."
+        },
+        {
+          "question": "What chunk size should I use for Markdown documents?",
+          "answer": "There is no universal number, as of 2026 — the guides cited above disagree in specifics while agreeing on the principle: split on headings, keep chunks semantically coherent, and let structure rather than a fixed character count drive boundaries. Start with section-level chunks, measure retrieval quality, and adjust."
+        },
+        {
+          "question": "Does formatting inside a note affect how well AI reads it?",
+          "answer": "Yes, at the margins. Heavy nesting, decorative emphasis, and tables used for layout all blur the structural signals that make Markdown machine-friendly. Core constructs — headings, lists, plain tables, code fences — parse cleanly and are what pipeline tooling expects."
+        }
+      ]
+    },
+    "/zh/blog/markdown-for-ai-pipelines": {
+      "items": [
+        {
+          "question": "Markdown 是 AI 输入的官方标准吗？",
+          "answer": "不是。没有任何组织批准，也不需要。它是事实标准——训练数据、工具链、渲染支持共同收敛的结果。「官方标准」地位不会改变模型解析它的任何方式。"
+        },
+        {
+          "question": "做 RAG 应该先把 PDF 转成 Markdown 吗？",
+          "answer": "通常应该。PDF 把视觉版式和内容交织在一起，朴素抽取会丢标题和阅读顺序；先转成 Markdown、再按结构切分，能保住章节逻辑。转换步骤有自己的工具取舍，见 HTML 转 Markdown 指南。"
+        },
+        {
+          "question": "Markdown 文档的 chunk 大小怎么定？",
+          "answer": "截至 2026 年没有万能数字——主流工程指南在细节上各有主张，但原则一致：按标题切、保持块内语义完整、让结构而不是固定字符数决定边界。从章节级 chunk 起步，测检索质量，再调。"
+        },
+        {
+          "question": "笔记里的格式会影响 AI 读取效果吗？",
+          "answer": "会，但只在边际上。深层嵌套、装饰性强调、拿表格当版式，都会模糊让 Markdown 机器友好的结构信号。核心语法——标题、列表、朴素表格、代码块——解析干净，也正是管线工具所期待的。"
+        }
+      ]
+    },
+    "/blog/markdown-for-note-taking": {
+      "items": [
+        {
+          "question": "Do I have to use Obsidian for Markdown notes?",
+          "answer": "No. Obsidian is one renderer for a folder of Markdown files, and a popular one because the free tier covers the core workflow. VS Code, Zettlr, or any text editor work identically at the file level — the notes do not change when the app does."
+        },
+        {
+          "question": "How is this different from Notion?",
+          "answer": "Notion stores notes in a proprietary cloud database and renders them in its own interface; export is possible but lossy for links and structure. Markdown notes store the content itself in open files, and tools render them. Notion suits teams that want databases and permissions; file-based Markdown suits anyone optimizing for longevity and portability."
+        },
+        {
+          "question": "How should I handle images and attachments?",
+          "answer": "Keep them in an assets/ or images/ subfolder next to the notes and reference them with relative links. The convention matters more than the specifics — a predictable attachment location keeps the library movable as a single unit."
+        },
+        {
+          "question": "What about handwriting or PDFs?",
+          "answer": "Those become attachments, not notes. Write a short Markdown note that summarizes the PDF or meeting, link to the file, and tag it by date. The Markdown layer is the index; the originals stay where they are."
+        }
+      ]
+    },
+    "/zh/blog/markdown-for-note-taking": {
+      "items": [
+        {
+          "question": "用 Markdown 记笔记必须用 Obsidian 吗？",
+          "answer": "不必。Obsidian 只是 Markdown 文件夹的一种渲染器，因为免费版就覆盖核心工作流而广受欢迎。VS Code、Zettlr 或任何文本编辑器在文件层面完全等价——应用换的时候，笔记不会变。"
+        },
+        {
+          "question": "和 Notion 有什么区别？",
+          "answer": "Notion 把笔记存在自有的云端数据库里，用它自己的界面渲染；导出可行，但链接和结构会有损耗。Markdown 笔记把内容本身存在开放的文件里，工具只负责渲染。Notion 适合要数据库和权限的团队；文件化 Markdown 适合把寿命和可迁移性放第一位的人。"
+        },
+        {
+          "question": "图片和附件怎么处理？",
+          "answer": "放在笔记旁边的 assets/ 或 images/ 子文件夹里，用相对链接引用。约定比细节重要——一个可预期的附件位置，让整个笔记库作为一个整体搬家。"
+        },
+        {
+          "question": "手写笔记和 PDF 怎么进这个体系？",
+          "answer": "它们作为附件存在，而不是笔记本体。写一条简短的 Markdown 笔记总结这个 PDF 或这场会议，链接到原文件，按日期标注。Markdown 层是索引，原件留在原地。"
+        }
+      ]
+    },
+    "/blog/markdown-resume": {
+      "items": [
+        {
+          "question": "The recruiter insists on a Word file. Now what?",
+          "answer": "Export one. Pandoc's .docx output from your markdown source is clean and parseable — the source stays Markdown; the Word file is a generated artifact you send and forget."
+        },
+        {
+          "question": "Can I have a designed, two-column resume with this workflow?",
+          "answer": "Not from plain Markdown directly — columns and graphics come from templates. The Pandoc route with a custom template gets you there, at the cost of template maintenance. Most resumes do not need it; content and clarity screen better than decoration."
+        },
+        {
+          "question": "One page or two?",
+          "answer": "Independent of format: one page for under a decade of experience, two when the second page is full of outcomes rather than padding. Markdown makes the cut easy — it is a deletion, not a re-layout."
+        },
+        {
+          "question": "How do I keep a public web version in sync?",
+          "answer": "Add an HTML export to your conversion step, or publish the same resume.md through a static site generator. Since the source is one file, the web version is a build target, not a separate document."
+        }
+      ]
+    },
+    "/zh/blog/markdown-resume": {
+      "items": [
+        {
+          "question": "招聘方坚持要 Word 文件怎么办？",
+          "answer": "导出一个。Pandoc 从 markdown 源生成的 .docx 干净且可解析——源文件依然是 Markdown；Word 文件是个生成物，发出去就不用管。"
+        },
+        {
+          "question": "我想要双栏、带设计的简历，这个工作流支持吗？",
+          "answer": "纯 Markdown 直接做不了——分栏和图形来自模板。Pandoc 配自定义模板可以做到，代价是维护模板。大多数简历并不需要；筛选时，内容与清晰度比装饰更顶用。"
+        },
+        {
+          "question": "一页还是两页？",
+          "answer": "和格式无关：十年以内经验一页；第二页塞满的是成果而不是注水时，才用两页。Markdown 让删减变得容易——那是一次删除，不是一次重排版。"
+        },
+        {
+          "question": "公开的网页版简历怎么保持同步？",
+          "answer": "在转换步骤里加一个 HTML 导出，或者用静态站点生成器发布同一份 resume.md。源文件只有一个，网页版是构建目标，不是又一份独立文档。"
+        }
+      ]
+    },
+    "/blog/markdown-table-how-to": {
+      "items": [
+        {
+          "question": "Can a cell span multiple columns in Markdown?",
+          "answer": "No. GFM has no cell spanning or row merging. If a table truly needs spanning, the options are inline HTML tables on platforms that permit them, or restructuring the data so each row is self-contained."
+        },
+        {
+          "question": "Why does my table show up as plain text on one platform?",
+          "answer": "The platform's renderer may be strict CommonMark, which does not include tables — they are a GFM extension. Check whether the platform documents GFM support; if it does, the usual culprit is a missing separator row or an unescaped pipe breaking the row structure."
+        },
+        {
+          "question": "How do I put a list inside a table cell?",
+          "answer": "You cannot nest a Markdown list in a cell. The pragmatic choices are br-separated short items (works on most platforms), comma-separated inline text, or moving the list out of the table entirely. Cells that want lists are usually rows that want to be sections."
+        }
+      ]
+    },
+    "/zh/blog/markdown-table-how-to": {
+      "items": [
+        {
+          "question": "Markdown 单元格能跨列吗？",
+          "answer": "不能。GFM 没有跨列和合并行。表格真的需要跨列时，选项是：在允许行内 HTML 的平台写 HTML 表格，或者重组数据让每一行自成一体。"
+        },
+        {
+          "question": "为什么我的表格在某个平台显示成纯文本？",
+          "answer": "那个平台的渲染器可能是严格 CommonMark——它没有表格，表格是 GFM 的扩展。先查平台文档是否声明支持 GFM；支持的话，常见元凶是缺分隔行，或者一根没转义的竖线破坏了行结构。"
+        },
+        {
+          "question": "单元格里能放列表吗？",
+          "answer": "不能在格内嵌套 Markdown 列表。务实的选项：br 分隔的短条目（多数平台有效）、逗号分隔的行内文本，或者把列表移出表格。想放列表的格子，通常是想变成小节的那一行。"
         }
       ]
     }

@@ -92,7 +92,7 @@ Floatboat 内置的提示词缓存配合 GPT-5.6 重设计的缓存系统——�
 
 GPT-5.6 的更大发布还带来了**ChatGPT Work**——一个跨已连接应用与文件收集上下文、用来创建文档、表格与演示稿的 agent——以及**Codex**并入 ChatGPT 桌面应用 [来源：<a href="<https://www.axios.com/2026/07/09/ai-openai-gpt-release>" rel="nofollow noopener">Axios</a>]。在 Floatboat 上，同样的 GPT-5.6 模型直接为你的日历 Agent 供能，不必去另一个代码环境或办公应用里绕一圈——模型就嵌在你日历事件所在的原地。
 
-想更深入理解 Sol、Terra、Luna 在基准、定价与安全评估上的对比，见完整的 [GPT-5.6 模型家族概览](/zh/blog/gpt-5-6-sol-terra-luna)。想弄明白让分档 Agent 变得有用的日历驱动范式，[agentic calendar 详解](/zh/blog/what-is-agentic-calendar) 会从底层把这个品类讲透。
+想更深入理解 Sol、Terra、Luna 在基准、定价与安全评估上的对比，见完整的 [GPT-5.6 模型家族概览](/zh/blog/gpt-5-6-sol-terra-luna)。想弄明白让分档 Agent 变得有用的日历驱动范式，agentic calendar 详解 会从底层把这个品类讲透。
 
   6. 结论
 

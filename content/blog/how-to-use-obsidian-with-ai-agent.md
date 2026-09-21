@@ -28,7 +28,7 @@ draft: false
 
 Obsidian is excellent at what it was built for: a local, linked knowledge base. You capture ideas as Markdown, connect them with [[wikilinks]], and watch a personal graph grow. The friction appears when today's job is not "write a better note" but "ship something that needs the note _and_ three other systems." Client context lives in the vault; the brief must also pull last week's email, a PDF on the Desktop, and a deadline on the calendar. Staying only inside Obsidian means endless copy-paste. Staying only inside a chat box means re-explaining the vault every session.
 
-That is why operators search for **how to use Obsidian with an AI agent**. They are not asking Obsidian to become Notion AI. They are asking for a runtime that can see the vault as one folder among many — then act across apps while the notes stay local and durable. For a precise definition of the folder itself, start with [what an Obsidian vault is](/blog/what-is-obsidian-vault); this guide assumes you already have one (or can create a folder of Markdown in minutes).
+That is why operators search for **how to use Obsidian with an AI agent**. They are not asking Obsidian to become Notion AI. They are asking for a runtime that can see the vault as one folder among many — then act across apps while the notes stay local and durable. For a precise definition of the folder itself, start with what an Obsidian vault is; this guide assumes you already have one (or can create a folder of Markdown in minutes).
 
 The mental model that holds: traditional apps are rooms in a courtyard. Obsidian is one strong room — maybe the library. An AI agent OS is closer to wiring the whole courtyard: lights, schedules, and runners that move between rooms with permission. You do not demolish the library. You stop pretending every errand must be done from inside it.
 
@@ -92,7 +92,7 @@ The market for "Obsidian with an AI agent" is not one product. As of mid-2026 it
 
   1. Floatboat — Best for calendar-driven work across the vault and other apps
 
-Floatboat ranks first when the job is not "chat with my notes" but "make Thursday's client work happen." It is a proactive agent OS on Mac and Windows: calendar events and deadlines can trigger prep and execution, local folders (including an Obsidian vault) stay in scope, and the same workspace chains into skills such as the <a href="/ai-file-organizer">AI File Organizer</a>. You keep thinking in Obsidian; Floatboat runs the courtyard — mail, files, models, and schedule — without forcing you to rebuild context in a plugin sidebar each morning. For the paradigm contrast with chat-only tools, see [Calendar-Driven AI vs Chat-Based AI](/blog/calendar-driven-ai-vs-chat-ai).
+Floatboat ranks first when the job is not "chat with my notes" but "make Thursday's client work happen." It is a proactive agent OS on Mac and Windows: calendar events and deadlines can trigger prep and execution, local folders (including an Obsidian vault) stay in scope, and the same workspace chains into skills such as the <a href="/ai-file-organizer">AI File Organizer</a>. You keep thinking in Obsidian; Floatboat runs the courtyard — mail, files, models, and schedule — without forcing you to rebuild context in a plugin sidebar each morning. For the paradigm contrast with chat-only tools, see Calendar-Driven AI vs Chat-Based AI.
 
 Skip Floatboat as the _first_ install if you only want semantic search while writing inside Obsidian and never leave the editor. In that case start with an in-vault plugin and add a desktop runtime later.
 
