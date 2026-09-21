@@ -47,7 +47,7 @@ The second category is tools that bring agent-like capabilities into a workspace
 
 Floatboat falls into this category — an AI workspace desktop app (Mac/Windows) designed around the idea of learning your work patterns over time. Its "Combo Skills" feature is essentially a reusable workflow: multi-step AI tasks that chain file reading, analysis, and content generation together without you manually setting each step up every time. It's built for solo operators and small teams who want workflow memory without server management.
 
-I haven't done a deep dive on Floatboat's memory system. Specifically, — if that's your primary criterion, it's worth going through [their site](https://floatboat.ai) to understand what "learning your work patterns" actually means under the hood.
+I haven't done a deep dive on Floatboat's memory system. Specifically, — if that's your primary criterion, it's worth going through their site to understand what "learning your work patterns" actually means under the hood.
 
 ![3.PNG](/blog/images/ai-agent-solo-operators/1776232488340-a69fe252-f146-45dc-83d7-82f3422d28e2.webp)
 

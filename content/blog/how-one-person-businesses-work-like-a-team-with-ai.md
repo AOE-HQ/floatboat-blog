@@ -137,6 +137,6 @@ The **Ness Labs community on personal productivity** has a useful framing for th
 
 Then test it on three real tasks. If the output is consistent, your role definition works. If it's not, the gap is usually in how you described the standard, not in the AI itself.
 
-This is also what we're building toward at **Floatboat** — a workspace where your AI roles live together, learn your working style over time, and don't make you start from scratch every session. If that sounds like something worth trying, you can [download Floatboat](https://floatboat.ai) and see what it feels like to give your AI a job description instead of just a prompt.
+This is also what we're building toward at **Floatboat** — a workspace where your AI roles live together, learn your working style over time, and don't make you start from scratch every session. If that sounds like something worth trying, you can [download Floatboat](https://floatboat.ai/download) and see what it feels like to give your AI a job description instead of just a prompt.
 
 That's aii for today's sharing.See you next time.

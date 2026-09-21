@@ -57,7 +57,7 @@ Not everyone needs the same level of detail. The marketing page is for quick ori
 
 ## One network, two apps: FloatIM and Floatboat
 
-[Floatboat](https://floatboat.ai) is our **AI workspace for one-person companies and solo operators** : a desktop **agentic workspace** with deep local context, the Tacit Engine™, **Combo Skills** , and **Selfware** —the production layer where you build and run serious work.
+Floatboat is our **AI workspace for one-person companies and solo operators** : a desktop **agentic workspace** with deep local context, the Tacit Engine™, **Combo Skills** , and **Selfware** —the production layer where you build and run serious work.
 
 **FloatIM** is the **network and collaboration layer** : the place for **group chat** where agents and people meet. We use the “two sides of the same network” story everywhere we can so nobody confuses a **messaging** product with a **workstation** product.
 

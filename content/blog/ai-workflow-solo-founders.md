@@ -137,7 +137,7 @@ I'm not going to pretend this is all upside. Every approach has costs, and I thi
 
   * **Cost uncertainty.** Credit-based pricing models can make monthly costs unpredictable for heavy users. Worth watching closely if you're on tight margins.
 
-The tools in this category are evolving fast. Newer entrants like [Floatboat](https://floatboat.ai) are taking an interesting approach — building the AI workspace as a desktop app where the file system is the primary interface, with features like Combo Skills that let you package a completed workflow into a reusable automated process. I haven't put enough hours into it to give a definitive take, but the concept of learning from how you work rather than just what you ask is one I'm watching closely.
+The tools in this category are evolving fast. Newer entrants like Floatboat are taking an interesting approach — building the AI workspace as a desktop app where the file system is the primary interface, with features like Combo Skills that let you package a completed workflow into a reusable automated process. I haven't put enough hours into it to give a definitive take, but the concept of learning from how you work rather than just what you ask is one I'm watching closely.
 
 ![66.png](/blog/images/ai-workflow-solo-founders/1775794509504-85130862-4edc-4f3b-b077-8ae0ab3ec011.webp)
 

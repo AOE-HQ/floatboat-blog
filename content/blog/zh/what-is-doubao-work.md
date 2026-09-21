@@ -16,7 +16,7 @@ draft: false
 
   * 用户用自然语言描述目标，Agent 可在**本地电脑**（Windows 虚拟桌面）、**云电脑**或浏览器里连续执行。
 
-  * 和聊天豆包比，核心差别在**执行层**；和国内 WorkBuddy、千问办公比，差别在**飞书生态**；和 [Floatboat](https://floatboat.ai/zh) 比，差别在**飞书/IM 上下文 vs 日历驱动、主动执行**两条路线。
+  * 和聊天豆包比，核心差别在**执行层**；和国内 WorkBuddy、千问办公比，差别在**飞书生态**；和 Floatboat 比，差别在**飞书/IM 上下文 vs 日历驱动、主动执行**两条路线。
 
   * **团队版**用飞书企业账号登录，继承组织权限与协作上下文，是字节打企业办公 Agent 的主阵地。
 
@@ -158,7 +158,7 @@ Seed 官方说明同时提到豆包办公任务模式与 TRAE Work / TRAE IDE �
 
 ## 5\. 竞争格局：豆包工作 vs WorkBuddy vs 千问办公 vs Floatboat
 
-2026 年 AI 办公 Agent 至少有两条主线：**国内大厂把 Agent 长进 IM/文档生态**（豆包工作、WorkBuddy、千问办公），以及**Calendar-Driven 把 Agent 长进日程运行时**（以 [Floatboat](https://floatboat.ai/zh) 为代表）。共性都是「自然语言目标 → 多步执行 → 可验收交付」；差异在**触发方式、协作底座和谁的上下文被默认继承**。
+2026 年 AI 办公 Agent 至少有两条主线：**国内大厂把 Agent 长进 IM/文档生态**（豆包工作、WorkBuddy、千问办公），以及**Calendar-Driven 把 Agent 长进日程运行时**（以 Floatboat 为代表）。共性都是「自然语言目标 → 多步执行 → 可验收交付」；差异在**触发方式、协作底座和谁的上下文被默认继承**。
 
 ### 5.1 四家定位对照
 
@@ -212,7 +212,7 @@ WorkBuddy Enterprise 则是腾讯云旗下面向企业的一站式 Agent 平台�
 
 ### 5.4 Floatboat：Calendar-Driven 路线的海外/独立创业者选项
 
-[Floatboat](https://floatboat.ai/zh) 不是「又一款飞书/钉钉里的聊天 Agent」，而是**Calendar-Driven Agent OS**：把日历当作 Agent 的运行时，会议、截止日和例行任务自动触发准备与执行——会前 brief、截止日前 draft、会后 follow-up，而不必每次手动 prompt。品类定义见 什么是 Agentic Calendar。
+Floatboat 不是「又一款飞书/钉钉里的聊天 Agent」，而是**Calendar-Driven Agent OS**：把日历当作 Agent 的运行时，会议、截止日和例行任务自动触发准备与执行——会前 brief、截止日前 draft、会后 follow-up，而不必每次手动 prompt。品类定义见 什么是 Agentic Calendar。
 
 与豆包工作等「用户下达任务、Agent 去干活」的模式相比，Floatboat 的差异在于：
 
@@ -226,7 +226,7 @@ WorkBuddy Enterprise 则是腾讯云旗下面向企业的一站式 Agent 平台�
 
   * **市场**：Floatboat 面向全球 solopreneur / 小团队；豆包工作面向中国大陆，深度服务飞书企业。
 
-**和豆包工作比**：Floatboat 的强项是**日程驱动的主动执行、跨日历/跨时区、不依赖飞书/钉钉选型**；豆包工作的强项是**飞书权限内的组织上下文、Windows 虚拟桌面、Seed 多模态与国内办公栈**。若你的协作中心是飞书群聊和云文档，豆包工作更贴；若你的协作中心是**日历上的会议与 deadline**，且希望 Agent 自动在事件前后跑 pipeline，应评估 [Floatboat](https://floatboat.ai/zh)。
+**和豆包工作比**：Floatboat 的强项是**日程驱动的主动执行、跨日历/跨时区、不依赖飞书/钉钉选型**；豆包工作的强项是**飞书权限内的组织上下文、Windows 虚拟桌面、Seed 多模态与国内办公栈**。若你的协作中心是飞书群聊和云文档，豆包工作更贴；若你的协作中心是**日历上的会议与 deadline**，且希望 Agent 自动在事件前后跑 pipeline，应评估 Floatboat。
 
 ### 5.5 字节为什么此时押注豆包工作
 
@@ -242,7 +242,7 @@ WorkBuddy Enterprise 则是腾讯云旗下面向企业的一站式 Agent 平台�
 
 **优先千问办公**，如果：组织已在钉钉；需要钉内原生 + 桌面电脑操控 + 云端定时任务；有 HarmonyOS 或网页发布诉求；企业 SSO 要对接多种 IdP。
 
-**优先****[Floatboat](https://floatboat.ai/zh)**，如果：独立创业/顾问，**日历是工作中枢**；需要会前自动准备、deadline 前交付、会后跟进等 Calendar-Driven pipeline；用 Google/Outlook/飞书日历 ICS 等多源日程，**不想被单一 IM 生态锁死**；团队在海外或跨国协作。
+**优先****Floatboat**，如果：独立创业/顾问，**日历是工作中枢**；需要会前自动准备、deadline 前交付、会后跟进等 Calendar-Driven pipeline；用 Google/Outlook/飞书日历 ICS 等多源日程，**不想被单一 IM 生态锁死**；团队在海外或跨国协作。
 
 **没有万能答案**。建议拿下周真实要交的任务，在对应产品里各跑一遍——**你的软件栈与触发习惯比任何对比表都可靠**。
 
@@ -258,7 +258,7 @@ WorkBuddy Enterprise 则是腾讯云旗下面向企业的一站式 Agent 平台�
 
 豆包工作的逻辑可以概括成两句话：**让会用豆包的人，有一个专门干活的桌面；让用飞书的企业，有一个继承权限的 Agent 同事。**
 
-它之所以单独成产品，不是因为功能做不出来，而是因为**聊天、办公、企业治理、行业竞争**四套逻辑已经无法塞进同一个入口。Seed 把模型能力推向「跨工具交付」；飞书把组织上下文变成 Agent 的护城河；WorkBuddy、千问办公在国内占 IM 生态位；[Floatboat](https://floatboat.ai/zh) 等则在海外与独立用户侧占**日历驱动**位——字节必须用独立品牌占住飞书办公赛道。
+它之所以单独成产品，不是因为功能做不出来，而是因为**聊天、办公、企业治理、行业竞争**四套逻辑已经无法塞进同一个入口。Seed 把模型能力推向「跨工具交付」；飞书把组织上下文变成 Agent 的护城河；WorkBuddy、千问办公在国内占 IM 生态位；Floatboat 等则在海外与独立用户侧占**日历驱动**位——字节必须用独立品牌占住飞书办公赛道。
 
 真正决定成败的，不是 PPT 能不能生成——多家都能——而是**在真实权限里能不能稳定交付、少闯祸**。若你更关心「日程上的会前会后谁来自动跑」，可继续读 Agentic Calendar；若你更关心「飞书里的 Agent 同事」，豆包工作团队版才是对位产品。
 

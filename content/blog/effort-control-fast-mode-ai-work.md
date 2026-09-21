@@ -87,7 +87,7 @@ The way I've gotten around this is by batching. I now group my work into two or 
 
 ![5.png](/blog/images/effort-control-fast-mode-ai-work/1780055446998-c9e1e674-652c-406e-b61f-5317d20a7c32.webp)
 
-This is roughly the same pattern that proactive agent OS tools like **[Floatboat](https://floatboat.ai)** are trying to automate at the workflow level — letting one upfront decision drive a chain of downstream execution. I'm doing it manually inside Claude, but the underlying idea is the same: stop making the same micro-decision over and over.
+This is roughly the same pattern that proactive agent OS tools like **Floatboat** are trying to automate at the workflow level — letting one upfront decision drive a chain of downstream execution. I'm doing it manually inside Claude, but the underlying idea is the same: stop making the same micro-decision over and over.
 
 ## A simple task-to-effort framework
 

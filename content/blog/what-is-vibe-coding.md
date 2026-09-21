@@ -135,7 +135,7 @@ The solo founders I've seen do this well aren't the best prompters. They're the 
 
 ### What Are Combo Skills?
 
-This is where I want to mention something I've been exploring: [Floatboat AI](https://floatboat.ai), a desktop workspace tool that introduced a concept called ​**Combo Skills** ​.
+This is where I want to mention something I've been exploring: Floatboat AI, a desktop workspace tool that introduced a concept called ​**Combo Skills** ​.
 
 The idea is structurally different from vibe coding. Instead of a single prompt producing a single output, Combo Skills chains multiple AI capabilities — reading files, analyzing content, generating structure, refining output — into a ​**reusable, repeatable workflow** ​. You build the process once, and it runs every time you need it.
 
