@@ -8583,6 +8583,106 @@
           "answer": "会，但只在边际上。深层嵌套、装饰性强调、拿表格当版式，都会模糊让 Markdown 机器友好的结构信号。核心语法——标题、列表、朴素表格、代码块——解析干净，也正是管线工具所期待的。"
         }
       ]
-    }
+    },
+    "/blog/markdown-for-note-taking": [
+      {
+        "question": "Do I have to use Obsidian for Markdown notes?",
+        "answer": "No. Obsidian is one renderer for a folder of Markdown files, and a popular one because the free tier covers the core workflow. VS Code, Zettlr, or any text editor work identically at the file level — the notes do not change when the app does."
+      },
+      {
+        "question": "How is this different from Notion?",
+        "answer": "Notion stores notes in a proprietary cloud database and renders them in its own interface; export is possible but lossy for links and structure. Markdown notes store the content itself in open files, and tools render them. Notion suits teams that want databases and permissions; file-based Markdown suits anyone optimizing for longevity and portability."
+      },
+      {
+        "question": "How should I handle images and attachments?",
+        "answer": "Keep them in an assets/ or images/ subfolder next to the notes and reference them with relative links. The convention matters more than the specifics — a predictable attachment location keeps the library movable as a single unit."
+      },
+      {
+        "question": "What about handwriting or PDFs?",
+        "answer": "Those become attachments, not notes. Write a short Markdown note that summarizes the PDF or meeting, link to the file, and tag it by date. The Markdown layer is the index; the originals stay where they are."
+      }
+    ],
+    "/zh/blog/markdown-for-note-taking": [
+      {
+        "question": "用 Markdown 记笔记必须用 Obsidian 吗？",
+        "answer": "不必。Obsidian 只是 Markdown 文件夹的一种渲染器，因为免费版就覆盖核心工作流而广受欢迎。VS Code、Zettlr 或任何文本编辑器在文件层面完全等价——应用换的时候，笔记不会变。"
+      },
+      {
+        "question": "和 Notion 有什么区别？",
+        "answer": "Notion 把笔记存在自有的云端数据库里，用它自己的界面渲染；导出可行，但链接和结构会有损耗。Markdown 笔记把内容本身存在开放的文件里，工具只负责渲染。Notion 适合要数据库和权限的团队；文件化 Markdown 适合把寿命和可迁移性放第一位的人。"
+      },
+      {
+        "question": "图片和附件怎么处理？",
+        "answer": "放在笔记旁边的 assets/ 或 images/ 子文件夹里，用相对链接引用。约定比细节重要——一个可预期的附件位置，让整个笔记库作为一个整体搬家。"
+      },
+      {
+        "question": "手写笔记和 PDF 怎么进这个体系？",
+        "answer": "它们作为附件存在，而不是笔记本体。写一条简短的 Markdown 笔记总结这个 PDF 或这场会议，链接到原文件，按日期标注。Markdown 层是索引，原件留在原地。"
+      }
+    ],
+    "/blog/markdown-resume": [
+      {
+        "question": "The recruiter insists on a Word file. Now what?",
+        "answer": "Export one. Pandoc's .docx output from your markdown source is clean and parseable — the source stays Markdown; the Word file is a generated artifact you send and forget."
+      },
+      {
+        "question": "Can I have a designed, two-column resume with this workflow?",
+        "answer": "Not from plain Markdown directly — columns and graphics come from templates. The Pandoc route with a custom template gets you there, at the cost of template maintenance. Most resumes do not need it; content and clarity screen better than decoration."
+      },
+      {
+        "question": "One page or two?",
+        "answer": "Independent of format: one page for under a decade of experience, two when the second page is full of outcomes rather than padding. Markdown makes the cut easy — it is a deletion, not a re-layout."
+      },
+      {
+        "question": "How do I keep a public web version in sync?",
+        "answer": "Add an HTML export to your conversion step, or publish the same resume.md through a static site generator. Since the source is one file, the web version is a build target, not a separate document."
+      }
+    ],
+    "/zh/blog/markdown-resume": [
+      {
+        "question": "招聘方坚持要 Word 文件怎么办？",
+        "answer": "导出一个。Pandoc 从 markdown 源生成的 .docx 干净且可解析——源文件依然是 Markdown；Word 文件是个生成物，发出去就不用管。"
+      },
+      {
+        "question": "我想要双栏、带设计的简历，这个工作流支持吗？",
+        "answer": "纯 Markdown 直接做不了——分栏和图形来自模板。Pandoc 配自定义模板可以做到，代价是维护模板。大多数简历并不需要；筛选时，内容与清晰度比装饰更顶用。"
+      },
+      {
+        "question": "一页还是两页？",
+        "answer": "和格式无关：十年以内经验一页；第二页塞满的是成果而不是注水时，才用两页。Markdown 让删减变得容易——那是一次删除，不是一次重排版。"
+      },
+      {
+        "question": "公开的网页版简历怎么保持同步？",
+        "answer": "在转换步骤里加一个 HTML 导出，或者用静态站点生成器发布同一份 resume.md。源文件只有一个，网页版是构建目标，不是又一份独立文档。"
+      }
+    ],
+    "/blog/markdown-table-how-to": [
+      {
+        "question": "Can a cell span multiple columns in Markdown?",
+        "answer": "No. GFM has no cell spanning or row merging. If a table truly needs spanning, the options are inline HTML tables on platforms that permit them, or restructuring the data so each row is self-contained."
+      },
+      {
+        "question": "Why does my table show up as plain text on one platform?",
+        "answer": "The platform's renderer may be strict CommonMark, which does not include tables — they are a GFM extension. Check whether the platform documents GFM support; if it does, the usual culprit is a missing separator row or an unescaped pipe breaking the row structure."
+      },
+      {
+        "question": "How do I put a list inside a table cell?",
+        "answer": "You cannot nest a Markdown list in a cell. The pragmatic choices are br-separated short items (works on most platforms), comma-separated inline text, or moving the list out of the table entirely. Cells that want lists are usually rows that want to be sections."
+      }
+    ],
+    "/zh/blog/markdown-table-how-to": [
+      {
+        "question": "Markdown 单元格能跨列吗？",
+        "answer": "不能。GFM 没有跨列和合并行。表格真的需要跨列时，选项是：在允许行内 HTML 的平台写 HTML 表格，或者重组数据让每一行自成一体。"
+      },
+      {
+        "question": "为什么我的表格在某个平台显示成纯文本？",
+        "answer": "那个平台的渲染器可能是严格 CommonMark——它没有表格，表格是 GFM 的扩展。先查平台文档是否声明支持 GFM；支持的话，常见元凶是缺分隔行，或者一根没转义的竖线破坏了行结构。"
+      },
+      {
+        "question": "单元格里能放列表吗？",
+        "answer": "不能在格内嵌套 Markdown 列表。务实的选项：br 分隔的短条目（多数平台有效）、逗号分隔的行内文本，或者把列表移出表格。想放列表的格子，通常是想变成小节的那一行。"
+      }
+    ]
   }
 }
