@@ -55,7 +55,7 @@ Here's the comparison across the three major options at the flagship level:
 
 V4 pricing ranges reflect lower and upper projections from multiple analyst sources. Official pricing will only be confirmed at launch. Current live API pricing from DeepSeek official docs. GPT-5.4 and Grok pricing as of April 2026.
 
-According to OpenAI's official pricing page, GPT-5.4 costs $2.50 per million input tokens and $15.00 per million output tokens **Get AI Perks** — and that's before you hit the 272K context threshold, where input costs double. Grok 4.1 Fast comes in at $0.20 per million input tokens with a 2-million-token context window, cheaper per token than GPT-5 mini, Gemini Flash, and every Anthropic model.
+According to OpenAI's official pricing page, GPT-5.4 costs $2.50 per million input tokens and $15.00 per million output tokens **Get AI Perks** — and that's before you hit the 272K context threshold, where input costs double. Grok 4.1 Fast comes in at $0.20 per million input tokens with a 2-million-token context window, cheaper per token than GPT-5 mini, Gemini Flash, and every Anthropic model. Budget pricing for individual builders is not new here — [opening the API itself to lower the solo cost barrier](/blog/grok-3-api-solo-operator) was xAI's earlier move, and the Fast tier extends it.
 
 The gap is real. But let me get into what it actually means.
 
@@ -89,13 +89,13 @@ But here's the honest version: for most of us running one-person content, resear
 
 I spent some time last month mapping out where I actually lose time in AI-assisted workflows. The breakdown was roughly: setup and prompt engineering (a lot), context management across long sessions (more than expected), and inference cost (almost none). The model cost was invisible in my day.
 
-The friction isn't tokens. It's designing workflows that don't break, maintaining context across complex tasks, and the human time to review outputs.
+The friction isn't tokens. It's designing workflows that don't break, maintaining context across complex tasks, and the human time to review outputs. That is also where model competition is heading — [how solo operators run long-context, Google-heavy workflows](/blog/gemini-3-5-integration-solo-operators) is becoming a bigger differentiator than another decimal off the price.
 
 ## The Costs That Don't Go Away
 
 ### Setup Time and Workflow Design
 
-Switching to a new model isn't free. Even with OpenAI-compatible APIs (which DeepSeek uses), you still need to test prompts, validate outputs, and rebuild any tool integrations. That's time.
+Switching to a new model isn't free. Even with OpenAI-compatible APIs (which DeepSeek uses), you still need to test prompts, validate outputs, and rebuild any tool integrations. That's time — the switching tax that [every new flagship launch marketed at solo businesses](/blog/meta-muse-spark-one-person-company) carries, whatever the benchmarks say.
 
 I'd estimate a real migration from a working GPT-5 setup to DeepSeek takes somewhere between a few hours and a few days depending on complexity — not plug-and-play.
 
@@ -138,16 +138,3 @@ Also: if you have data privacy requirements, self-hosting is the only real optio
 ![6.png](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
 
 Anyway, that's where things stand. The cost story is real and the architecture improvements are interesting — but V4 isn't live yet, and cheaper tokens don't automatically mean better workflows. Worth keeping an eye on the next few weeks.
-
-## Previous Posts:
-
-→ [Understand how AI workflows actually break down beyond model cost](/blog/ai-workflow-for-solo-founders)
-
-→[ Learn why context management, not tokens, is the real bottleneck](/blog/why-ai-forgets-between-sessions)
-
-→ [Explore how AI agents change the way solo operators run systems](/blog/ai-agent-solo-operators)
-
-→ [See how persistent AI memory impacts long-term productivity](/blog/what-is-persistent-ai-agent)
-
-→ [Go deeper into building a structured LLM knowledge base](/blog/llm-knowledge-base-solo-operators)
-

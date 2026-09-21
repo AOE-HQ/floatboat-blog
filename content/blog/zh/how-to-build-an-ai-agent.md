@@ -125,7 +125,7 @@ draft: false
 
 免构建的选项比以前强多了。一份诚实的概览：
 
-**带自定义指令与 Actions 的 ChatGPT** ——能处理不少简单的类 Agent 任务。对文档密集的工作流出奇地好用。局限：你被圈在 OpenAI 生态里。
+**带自定义指令与 Actions 的 ChatGPT** ——能处理不少简单的类 Agent 任务。对文档密集的工作流出奇地好用。局限：你被圈在 OpenAI 生态里。如果反正要走这条路，[在 ChatGPT 里搭一个真 Agent](/zh/blog/how-to-build-an-ai-agent-with-chatgpt) 练的重点是写清指令，而不是折腾工具。
 
 **n8n** ——我见过的不需要深度编程、却最灵活的工作流工具。很擅长把许多工具接成自动化链。它有学习曲线，但可以学会。[Codecademy 对 Agent 框架的拆解](https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025) 提供了清晰对比，如果你想并排评估这些选项。
 
@@ -154,16 +154,3 @@ _总之——这就是我在花掉无数个夜晚读文档、看 Agent 做出各
 _如果你只是对这个领域好奇，说实话，哪怕只做出一个能跑的小东西，也是很过瘾的体验。如果你认定它不值得这番折腾？那同样是个完全合理的结论。有时候，最好的工具是别人已经造好的那个。_
 
 _我继续做实验去了。_
-
-## 延伸阅读
-
-  * [在决定要构建什么之前，先看看真实世界的 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [在为你的项目定范围时，理解 AI Agent 与聊天机器人的关键区别](/zh/blog/ai-agent-vs-chatbot)
-
-  * [看看在构建 Agent 系统时，何时用工作流搭建工具、何时用 AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [在从零构建之前，了解 AI Agent 开发服务实际要花多少钱](/zh/blog/ai-agent-development-services)
-
-  * [对比 Gumloop 及同类工具，评估构建 Agent 的无代码选项](/zh/blog/gumloop-review-2026)
-

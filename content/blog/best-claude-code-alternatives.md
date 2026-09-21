@@ -34,7 +34,7 @@ Claude Code set the bar for what a terminal coding agent should do: read the rep
 
 **Institutional fit.** Large orgs that already pay Microsoft or GitHub often default to Copilot for procurement reasons before evaluating quality. That is a distribution story, not a capability one.
 
-A credible ranking has to sort by those jobs — IDE-native, open-source, git-native, autonomous cloud, institutional — rather than by who reused "Claude Code alternative" in a landing page. The Claude Code vs Cowork vs Tag piece covers the sibling surfaces; this list covers the coding-agent landscape outside Anthropic's own stack.
+A credible ranking has to sort by those jobs — IDE-native, open-source, git-native, autonomous cloud, institutional — rather than by who reused "Claude Code alternative" in a landing page. The [sibling Claude agent surfaces](/blog/claude-code-vs-cowork-vs-tag) — terminal coding, desktop office work, group chat — are a separate selection problem; this list covers the coding-agent landscape outside Anthropic's own stack.
 
 ## 2\. How This Ranking Works (Job Shape, Not Keywords)
 
@@ -46,7 +46,7 @@ Before assigning numbers, we filtered candidates by whether they solve the same 
 
 
 
-We **excluded** non-coding agents (calendar-driven assistants, desktop knowledge-work agents, agent-native group chat) from the numbered ranks. They solve different failure modes and appear in the complementary section below. Verify pricing and regional availability on each vendor's official site before switching — mid-2026 pricing shifts frequently.
+We **excluded** non-coding agents (calendar-driven assistants, desktop knowledge-work agents, agent-native group chat) from the numbered ranks. They solve different failure modes and appear in the complementary section below. If the job is office work rather than repository code, [Cowork-class office agents](/blog/best-claude-cowork-alternatives) are ranked by non-developer fit on their own list, not by repo capability. Verify pricing and regional availability on each vendor's official site before switching — mid-2026 pricing shifts frequently.
 
 ## 3\. The Best Claude Code Alternatives, Ranked
 
@@ -124,7 +124,7 @@ Some products **pair with** coding agents rather than replace Claude Code's repo
 
 **Floatboat (calendar-driven proactive OS).** If your failure mode is forgetting prep before calls or follow-ups after meetings — not lacking a coding agent — a calendar-runtime agent complements Claude Code rather than substituting it. Many engineering teams run Code in the repo and a calendar agent for their personal meeting rhythm; the two never compete.
 
-**FloatIM (agent-native group chat).** If you want agents as first-class participants in governed group threads rather than a terminal session, FloatIM is a venue choice, not a coding choice. It does not edit your repository; it coordinates the humans and agents who do.
+**FloatIM (agent-native group chat).** If you want agents as first-class participants in governed group threads rather than a terminal session, FloatIM is a venue choice, not a coding choice. It does not edit your repository; it coordinates the humans and agents who do. The same holds for any [AI teammate that lives in Slack or group chat](/blog/best-claude-tag-alternatives) — venue fit decides whether it helps, not model depth.
 
 Neither Floatboat nor FloatIM solves the coding job this ranking measures, so they are not numbered. They are the other half of the stack — the proactive OS and the agent-native network — that a coding agent sits alongside.
 
@@ -144,7 +144,7 @@ Budget follows job shape. Cursor, Windsurf, and Codex CLI are flat monthly tiers
 
 ## 6\. What's Next for Coding Agents
 
-Three trends will keep this list volatile through 2026–2027. **Harness convergence.** Claude Code's endpoint-route pattern — pointing a terminal harness at another model — is spreading, blurring the line between "product" and "shell you configure." **Cloud versus local.** Devin and Codex push delegation to the cloud; Cline and Aider anchor on local files and model control. **IDE versus terminal.** Cursor and Windsurf absorb more agentic depth while terminal agents grow first-class IDE integrations, and the two categories inch toward the same loop in different rooms.
+Three trends will keep this list volatile through 2026–2027. **Harness convergence.** Claude Code's endpoint-route pattern — pointing a terminal harness at another model — is spreading, blurring the line between "product" and "shell you configure." **Cloud versus local.** Devin and Codex push delegation to the cloud; Cline and Aider anchor on local files and model control. **IDE versus terminal.** Cursor and Windsurf absorb more agentic depth while terminal agents grow first-class IDE integrations, and the two categories inch toward the same loop in different rooms. The next room is the browser: [Codex for Chrome and Claude for Chrome](/blog/codex-for-chrome-vs-claude-for-chrome) already pull the same agent loop into signed-in browser work, where permissions and multi-tab context decide the fit, not terminal ergonomics.
 
 The ranking reward goes to clarity: define where your work lives, map whether you need to watch it or delegate it, then pick by job shape — not by whoever ranked first on a generic directory. Claude Code defined the terminal coding agent. The alternatives win the jobs it was never designed to own.
 

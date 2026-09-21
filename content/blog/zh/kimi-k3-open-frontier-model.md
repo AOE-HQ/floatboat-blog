@@ -106,7 +106,7 @@ Moonshot AI 搭建了一个名为 Kernel Optimization Arena 的内部评测环�
 
 ## 5. 定价与开源策略
 
-K3 的 API 定价——每百万输入 token 3 美元、每百万输出 token 15 美元——使其成为中国 AI 公司发布过的最贵模型。作为对比：K2.6 输入 0.95 美元、输出 4 美元；K2.7 Code 与之相同。K3 相比上一代涨价约 3 倍，达到 Claude Sonnet 级定价水平，约为 Claude Opus 4.8（5 美元/25 美元）的 60%，据 [Simon Willison](https://simonwillison.net/2026/Jul/16/kimi-k3) 报道。
+K3 的 API 定价——每百万输入 token 3 美元、每百万输出 token 15 美元——使其成为中国 AI 公司发布过的最贵模型。作为对比：K2.6 输入 0.95 美元、输出 4 美元；K2.7 Code 与之相同。K3 相比上一代涨价约 3 倍，达到 Claude Sonnet 级定价水平，约为 Claude Opus 4.8（5 美元/25 美元）的 60%，据 [Simon Willison](https://simonwillison.net/2026/Jul/16/kimi-k3) 报道。跟 Google 那边的预算主力一比，反差更扎眼：[Gemini 3.8 Flash 的尝鲜定价](/zh/blog/gemini-3-8-flash)在输入输出两头都比 K3 便宜 4 倍——Flash 产品线打的从来不是峰值能力，而是每一分勤奋的单价。
 
 定价转向很能说明问题。中国 AI 公司历来打成本牌——2025 年初 DeepSeek 对市场的颠覆既是能力故事，也是价格故事。K3 定在 Sonnet 级价位，说明 Moonshot AI 相信模型能力足以支撑溢价定位。缓存输入 token 降至每百万 0.30 美元，而 Moonshot AI 的 Mooncake 分离式服务架构——曾获 FAST 2025 最佳论文奖——在高复用场景下报告的缓存命中率超过 90%，详见 [Mooncake 技术报告](https://arxiv.org/html/2407.00079v1)。按那个命中率，实际输入成本约为标准输入价的四分之一。
 
@@ -138,7 +138,7 @@ Elon Musk 在 K3 发布报道下留言「Impressive」——一个词概括了�
 
 视觉理解能力——K3 原生具备，而非文本训练完成后外挂的独立视觉编码器——把 agentic 任务的边界扩展到了文本之外。一个日历驱动的 AI agent 准备设计评审时，可以同时查看最新的设计稿截图与会议纪要。一个处理游戏开发任务的 agent 可以读代码、运行它、把输出截图、与预期设计比对再迭代——这是纯文本模型执行不了的视觉反馈闭环。K3 的 Frontend Code Arena 第一名在这个语境下顺理成章：视觉推理对 K3 不是外挂，而是训练方式的一部分。同样的视觉反馈闭环也是 K3 上 vibe coding 体验如此顺畅的原因——原生视觉理解加上顶级前端生成能力，一条提示词就能产出一个可玩的 HTML 游戏，模型随后能看到它并持续迭代。想亲手看这个闭环如何运转，参阅[我们用一条提示词 vibe coding 一个 HTML 游戏的完整记录](/zh/blog/vibe-coding-one-prompt-html-game)。
 
-对运行 [agentic calendar 系统](/zh/blog/what-is-agentic-calendar)的独立创业者来说——agent 成本决定工具是日常主力还是一次性演示——K3 的定价正处在一个有趣的拐点。按每百万 token 3 美元/15 美元计，在最难的事件上跑 K3——那些真正需要前沿推理的任务——成本大致相当于过去用 GPT-5.5 跑所有任务的水平。再配上 0.95 美元/4 美元、专供日常编码的 K2.7 Code，以及负责分类与路由的 K2.6，一个让模型成本匹配任务复杂度的分层模型策略，如今在 Kimi 模型家族内就能实现。
+对运行 [agentic calendar 系统](/zh/blog/what-is-agentic-calendar)的独立创业者来说——agent 成本决定工具是日常主力还是一次性演示——K3 的定价正处在一个有趣的拐点。按每百万 token 3 美元/15 美元计，在最难的事件上跑 K3——那些真正需要前沿推理的任务——成本大致相当于过去用 GPT-5.5 跑所有任务的水平。再配上 0.95 美元/4 美元、专供日常编码的 K2.7 Code，以及负责分类与路由的 K2.6，一个让模型成本匹配任务复杂度的分层模型策略，如今在 Kimi 模型家族内就能实现。这套分层里，路由那一格值得比通常更多的推敲——agent 一天里的大多数调用其实是在「做决定」而不是「写文字」——而[一整个只为「做决定」而生的模型品类](/zh/blog/what-is-jev-model)，押注的正是这笔账。
 
 Floatboat 已将 Kimi K3 作为内置模型接入——无需 API key、无需配置、无需自建路由层。模型出现在 agent 工作区的模型列表中，与 DeepSeek、Claude、Gemini、MiniMax、GLM 等内置模型并列。想了解哪些日历事件适合交给 K3 的具体能力、典型独立创业者使用不同模型组合的成本，参阅[Kimi K3 in Floatboat——设置与事件映射](/zh/blog/kimi-k3-floatboat)。
 

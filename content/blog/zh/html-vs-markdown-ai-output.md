@@ -92,23 +92,10 @@ Markdown 版不赖。HTML 版有吸顶的导航侧栏、按颜色分级的优先
 
   3. **它需要视觉结构吗？**如果只是一份平铺列表、大纲或段落 → Markdown 够用。如果需要标签页、颜色编码、导航或并排对比 → HTML。
 
-  4. **会被复用或模板化吗？**如果你反复产出同一类型的输出、又想要视觉一致性，[Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) 或 html-anything 这类本地优先的 Agent 化 HTML 编辑器可以把流程模板化。一次性请求不需要那套基础设施。
+  4. **会被复用或模板化吗？**如果你反复产出同一类型的输出、又想要视觉一致性，[Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) 或 [html-anything](/zh/blog/html-anything-review-2026) 这类本地优先的 Agent 化 HTML 编辑器可以把流程模板化。一次性请求不需要那套基础设施。
 
 我最终落地的默认做法是：**草稿与迭代用 Markdown，交付给人时再转换或精修为 HTML。**这条混合工作流让我在思考阶段拿到 Markdown 的可编辑性，在交付阶段拿到 HTML 的可读性。这个组合我用了几个星期，感觉是对的——等我碰到更多边界情况，会知道得更准。
 
 ![4.png](/zh/blog/images/html-vs-markdown-ai-output/1779257727850-b81e9a55-b5e0-455f-b979-9c3e45cc7d9d.webp)
 
 这套框架就这么简单，但我花了不少时间才把它磨到这么清晰。真正的区别不在 HTML 和 Markdown——而在于你是否知道眼前这份活该配哪个格式。想通这一小块，就够了。
-
-## 往期文章
-
-• [HTML-Anything Review: Can AI Turn HTML Into Real Deliverables?](/zh/blog/html-anything-review-2026) — 我实测了 html-anything 是否真的把「HTML 是新的 Markdown」变成一条可用的工作流。
-
-• [Claude Code vs Chrome Extensions: Which Workflow Actually Saves Time?](/zh/blog/codex-for-chrome-vs-claude-for-chrome) — 不是每条 AI 工作流都需要编码 Agent；这里讲讲浏览器原生工具在哪些场景更合适。
-
-• [Workspace Agents vs Chat Assistants: Why the Difference Matters](/zh/blog/workspace-agents-vs-chat-assistants) — 从聊天回复到可复用的工作成果，这一步跨越改变了 AI 输出的使用方式。
-
-• [AI Workspace Agents: Why Solo Operators Need More Than Chat Windows](/zh/blog/ai-workspace-agents) — 当工作区本身成为工作流的一部分，丰富的 AI 输出才真正开始有意义。
-
-![5.png](/zh/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.webp)
-

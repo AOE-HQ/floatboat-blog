@@ -33,7 +33,7 @@ draft: false
 
   * **定价**——积分制、订阅制，还是真有能用的免费档？
 
-Manus 在研究然后构建（research-then-build）的工作流上很强，**尤其适合单人用户**。但它的积分体系、访问限制和成本，让人很难天天依赖它。这个缺口正是这些替代品的生存空间。
+Manus 在研究然后构建（research-then-build）的工作流上很强，**尤其适合单人用户**。但它的积分体系、访问限制和成本，让人很难天天依赖它。这个缺口正是这些替代品的生存空间。如果说让你动摇的主要是积分墙，而不是 Manus 本身的能力，那最先值得摆上桌的比较对象是 Genspark——[Genspark 与 Manus 的取舍](/zh/blog/genspark-vs-manus)，一头是你来引导的研究与产出、可预期的定价，另一头是放手的全自动执行与说不准的积分消耗。
 
 ## 通用 AI Agent 工作的最佳替代品
 
@@ -158,16 +158,3 @@ Floatboat 是一站式 AI Agent 工作区——一款面向「一个人干五个
 ![5.png](/zh/blog/images/manus-ai-alternatives-2026/1773994990431-3ff2ee3f-931a-4383-af80-cac4d760957a.webp)
 
 我还在试这几款里的几个——尤其是最近才配置的 Lindy。如果你也在 AI Agent 这片里摸来摸去，希望这篇能帮你省下我当时来回开标签页的功夫。总之，回去干活了。
-
-## 延伸阅读
-
-  * [看看真实世界的 AI Agent 用例，以及它们在实际中表现如何](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [看单人创业者如何用 AI 角色与工作流，把一人公司跑得像个团队](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [搞清 AI 自动化服务在真实市场里怎么定价（以及为什么报价差那么多）](/zh/blog/ai-automation-agency-pricing)
-
-  * [对比 Lindy 和 Gumloop 在构建 Agent 式工作流上的差异](/zh/blog/lindy-vs-gumloop)
-
-  * [看不同 AI Agent 工具在真实工作流上实测时的差别](/zh/blog/lindy-vs-gumloop)
-

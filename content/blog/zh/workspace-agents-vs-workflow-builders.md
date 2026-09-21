@@ -25,7 +25,7 @@ draft: false
 
 ### 工作区 Agent：AI 就嵌在正在发生的工作里
 
-工作区 Agent 是另一种思路。你不预先定义管线，而是坐进一个"AI 感知"的环境——通常是一个桌面或浏览器层——Agent 在你正在做的任何事情上与你并肩工作：文件、浏览器标签页、笔记、草稿。你让它做某事，它自己推导步骤、执行，你边做边调整。
+工作区 Agent 是另一种思路。你不预先定义管线，而是坐进一个"AI 感知"的环境——通常是一个桌面或浏览器层——Agent 在你正在做的任何事情上与你并肩工作：文件、浏览器标签页、笔记、草稿。你让它做某事，它自己推导步骤、执行，你边做边调整。这条线同样是 [工作区 Agent 和聊天助手](/zh/blog/workspace-agents-vs-chat-assistants) 的分界：在聊天助手里，对话本身就是产品；在工作区 Agent 里，对话只是你掌舵的方式。
 
 Anthropic 研究团队对[这个区别有个有用的定义](https://www.anthropic.com/research/building-effective-agents)：工作流是"LLM 与工具经由预定义代码路径被编排的系统"，而 Agent 是模型"动态地主导自己的流程与工具使用"的系统。那套语言是写给构建这些东西的工程师的，但也抓住了用户侧的差异。**工作流搭建器运行你画好的那条路径；工作区 Agent 在工作发生的过程中选路径。**
 
@@ -93,7 +93,7 @@ Anthropic 研究团队对[这个区别有个有用的定义](https://www.anthrop
 
 ### 横跨文件、标签页和工具的工作
 
-知识工作不是一条管线。它是十二个开着的标签页、三份 PDF、一份写了一半的文档、一条你一直打算读的 Slack 线程。工作流搭建器不是为"用我屏幕上已有的东西"设计的。那是工作区 Agent 的主场。
+知识工作不是一条管线。它是十二个开着的标签页、三份 PDF、一份写了一半的文档、一条你一直打算读的 Slack 线程。工作流搭建器不是为"用我屏幕上已有的东西"设计的。那是工作区 Agent 的主场。至于「主场」本身——装着这些标签页和文档的环境——则是另一个层面的决定：[工作流构建器还是 AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)，问的是工作住在哪，而不是 AI 在里面怎么干活。
 
 ## 两者都不擅长的事
 
@@ -122,16 +122,3 @@ Anthropic 研究团队对[这个区别有个有用的定义](https://www.anthrop
 ![5.png](/zh/blog/images/workspace-agents-vs-workflow-builders/1777341489448-c8adee60-91c1-4eef-bf0d-39c26644a653.webp)
 
 以上就是我的诚实看法。这两个品类其实并不在竞争——它们解决的是"工作如何完成"的不同部分。如果你的工作长成管线的形状，就建一条管线；如果它长成一张堆满东西的桌子，就找个能陪你坐在桌边的东西。等你真正需要它时，你会知道的。
-
-## 系列前文
-
-  * [还在结构化工作流和 AI 原生工具之间摇摆？从这里开始](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [如果你是 Agent 新手，这篇指南讲清 AI Agent 在真实场景里到底怎么运作](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [想超越工具、搭自己的系统？这篇是从零搭建 AI Agent 的实用入门](/zh/blog/how-to-build-an-ai-agent)
-
-  * [想要更实操的视角？这篇展示了 Agent 工作流在日常工作中是怎么跑的](/zh/blog/ai-agent-workflow-vibe-coding)
-
-  * [如果你在单干，这篇拆解了一人公司如何用 AI 像团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

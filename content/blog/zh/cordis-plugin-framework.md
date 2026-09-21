@@ -68,9 +68,9 @@ Koishi 跑在 Cordis v3 上。2026 年 8 月 13 日 DeepSeek Harness 发布开�
 
 ## 5\. 万物皆插件
 
-DeepSeek Harness（dsh）把 Cordis 的哲学贯彻到了字面层面。harness 里每一项能力都是一个插件：模型适配器、工具注册表、会话日志、沙箱、存储层、Agent 主循环，甚至 UI。harness 本身只是一个薄内核，负责挂载、卸载和追踪依赖；Agent 的真实能力全部活在它之上的插件里。
+DeepSeek Harness（dsh）把 Cordis 的哲学贯彻到了字面层面。harness 里每一项能力都是一个插件：模型适配器、工具注册表、会话日志、沙箱、存储层、Agent 主循环，甚至 UI。这份清单里悄悄躺着大多数用户当成自然规律的那件事——[AI 每次会话结束就把你忘干净](/zh/blog/why-ai-forgets-every-session)：既然会话日志是个插件，「记得住」就是一个可以更换的组件，而不是写死的天性。harness 本身只是一个薄内核，负责挂载、卸载和追踪依赖；Agent 的真实能力全部活在它之上的插件里。
 
-架构文档讲清了各部件如何映射到 Cordis 的 context 上。会话子系统拥有只追加的 SessionEvent 日志与内存存储，通过 ctx.sessions 暴露；系统提示子系统负责 prompt 分段与工具 schema 的组装，走 ctx.systemPrompt；工具子系统在 [ctx.tools](http://ctx.tools) 下提供有作用域的工具注册表与带守卫的执行管线；Agent 子系统通过 ctx.agents 暴露 Agent 接口、实时注册表与 agent 事件，默认驱动在 ctx.agentLoop 上实现该接口；LLM 层贡献消息与流词汇表，以及在 ctx.llm 的适配器接缝。
+架构文档讲清了各部件如何映射到 Cordis 的 context 上。会话子系统拥有只追加的 SessionEvent 日志与内存存储，通过 ctx.sessions 暴露——决定一个 Agent 是能[接着上一次会话的进度往下走](/zh/blog/why-ai-forgets-between-sessions)、还是每次对话都从零开始的，正是这个组件；系统提示子系统负责 prompt 分段与工具 schema 的组装，走 ctx.systemPrompt；工具子系统在 [ctx.tools](http://ctx.tools) 下提供有作用域的工具注册表与带守卫的执行管线；Agent 子系统通过 ctx.agents 暴露 Agent 接口、实时注册表与 agent 事件，默认驱动在 ctx.agentLoop 上实现该接口；LLM 层贡献消息与流词汇表，以及在 ctx.llm 的适配器接缝。
 
 插件针对这些 context 键注册能力，一切都走 Cordis 的服务与事件模型。实际效果是：想换模型后端、替换沙箱、或加一个自定义工具？在配置里挂一个插件即可——不需要 fork 源码，也不存在需要打补丁的"特权核心"。DeepSeek 开箱自带四个预设档位：**Standard**（完整编码 Agent，含文件系统、shell、网页搜索、子 Agent 与 plan 模式）、**Code**（模型生成的代码编排多轮工具调用）、**Minimal**（只有 bash 和一个文件编辑器——DeepSeek 自己官方模型基准测试用的就是这份配置），以及 **Creator**（用于带运行时检视与预设编写指导来构建自定义预设）。
 
@@ -78,9 +78,9 @@ DeepSeek Harness（dsh）把 Cordis 的哲学贯彻到了字面层面。harness 
 
 ## 6\. 这对 Agent 生态意味着什么
 
-对一个正在评估 Agent 基础设施的开发者来说，基于 Cordis 的设计改变了"开源"在 harness 语境下的含义。开放许可证让代码可以被检查；插件内核让它可以被**改造**。想要不同的沙箱、自定义工具、不同的模型后端，或一个贴合你产品的 UI？挂一个插件就行，而不是维护一个 fork。插件生态会成为护城河——DeepSeek 已经通过给 GitHub 加上 dsh-plugin 话题来提升可发现性、并为该 harness 建起 Discord 社区，表明了这份意图。
+对一个正在评估 Agent 基础设施的开发者来说，基于 Cordis 的设计改变了"开源"在 harness 语境下的含义。开放许可证让代码可以被检查；插件内核让它可以被**改造**。想要不同的沙箱、自定义工具、不同的模型后端，或一个贴合你产品的 UI？挂一个插件就行，而不是维护一个 fork。最后一项的意义不止于好看：当呈现层是一个组件，[Agent 的产出是纯文本还是可渲染的成品](/zh/blog/html-is-the-new-markdown)就成了一次挂载决定，而不是焊死在核心里的东西。插件生态会成为护城河——DeepSeek 已经通过给 GitHub 加上 dsh-plugin 话题来提升可发现性、并为该 harness 建起 Discord 社区，表明了这份意图。
 
-还有一个值得点名的二阶效应。让 Cordis 擅长插件管理的同一个性质——可逆性——正是让 Agent 运行时可以安全地自我修改的性质。一个能重组自身技术栈、任务中途加工具、或演化自身工作流的 Agent，只有当每一项变更都能被干净回滚时才值得信任。Cordis 的可逆效应，就是把"自我修改运行时的 Agent"从研究圈的好奇之物，变成站得住的工程范式的那个机制。
+还有一个值得点名的二阶效应。让 Cordis 擅长插件管理的同一个性质——可逆性——正是让 Agent 运行时可以安全地自我修改的性质。一个能重组自身技术栈、任务中途加工具、或演化自身工作流的 Agent，只有当每一项变更都能被干净回滚时才值得信任；而在 Agent 有能力给自己发新权限的场景里，[放行之前先问清它到底能动什么](/zh/blog/browser-ai-agent-security-questions)这门功课，分量还要再翻一倍。Cordis 的可逆效应，就是把"自我修改运行时的 Agent"从研究圈的好奇之物，变成站得住的工程范式的那个机制。
 
 与同一周那些封闭式 Agent 产品对比，也会很有启发性。DeepSeek 开源基于可逆插件内核的 harness 的同一周，xAI 发布了 Grok Bot——一个 Agent 环境是"由厂商控制的持久云电脑"的产品。两者都是对"Agent 基础设施往哪走"的押注，而它们的哲学几乎不可能差得更远：一个给你内核和插件，另一个给你 Teammate 和电脑。封闭产品那一侧的拆解，见我们的 Grok Bot 解析。
 

@@ -28,7 +28,7 @@ draft: false
 
 If you write for a living—as a solo founder drafting a launch post, a consultant shaping a client proposal, or an operator turning meeting talk into a plan—you already know the friction. **Speech-to-text** gets words onto the page faster than typing, but most tools treat dictation as a separate mode: stop talking, fix the paragraph, copy a chunk into chat, paste the rewrite back, repeat. **AI meeting notes** apps capture calls well, yet the deliverable often arrives _after_ the meeting, in another tab, disconnected from the doc you were trying to finish.
 
-**Floatboat Flow Mode** is our answer to that split. It is not a standalone dictation utility and not a post-meeting summarizer bolted onto the side. It is an expression layer inside [Floatboat](</>) where **voice input, editing, Agent rewrites, meeting capture, and version control** share one surface—the document you are actually trying to ship.
+**Floatboat Flow Mode** is our answer to that split. It is not a standalone dictation utility and not a post-meeting summarizer bolted onto the side. It is an expression layer inside Floatboat where **voice input, editing, Agent rewrites, meeting capture, and version control** share one surface—the document you are actually trying to ship.
 
 The goal is simple and hard at the same time: **keep your flow**. You talk; the draft grows. You touch the keyboard when you want precision. The Agent works on the span you select, not on a detached chat thread. When the meeting is still going, the outline of next steps can already be on the table.
 
@@ -40,7 +40,7 @@ Meeting AI has a parallel gap. Mature **AI note takers** like <a href="<https://
 
 Chat-based writing assistants add a third interruption. Paste a section into Claude or ChatGPT, get a rewrite, paste back. The intelligence is real; the **document is not the runtime**. For solopreneurs who already juggle calendar prep, client calls, and shipping copy, that extra loop is where momentum dies.
 
-We built Flow Mode around a different center: **the document is the workspace** , voice is the primary input, and the Agent is a collaborator inside the same file—aligned with Floatboat's broader **Calendar-Driven** story that work is triggered by what is on your schedule, not by whichever chat window you remembered to open. For the paradigm contrast in depth, see Calendar-Driven AI vs Chat-Based AI.
+We built Flow Mode around a different center: **the document is the workspace** , voice is the primary input, and the Agent is a collaborator inside the same file—aligned with Floatboat's broader **Calendar-Driven** story that work is triggered by what is on your schedule, not by whichever chat window you remembered to open. The point is not that conversation is the wrong surface everywhere — multi-party human–agent threads belong on [an agent-native messaging network like FloatIM](/blog/introducing-floatim) — it is that a draft is not a thread, and co-writing needs the document itself as the runtime. The paradigm contrast runs deeper than surfaces — [calendar-driven AI and chat-based AI](/blog/calendar-driven-ai-vs-chat-ai) disagree about exactly this.
 
 ## 3\. What Floatboat Flow Mode does (in plain terms)
 
@@ -84,7 +84,7 @@ Think of a typical client day: the calendar triggers a pre-meeting brief (prep p
 
 If you keep research in Obsidian or local markdown, Flow Mode also pairs naturally with the workflow in how to use Obsidian with an AI agent—speak a draft, refine in place, and keep context in files you control rather than in a disposable chat session.
 
-Flow Mode is **desktop workspace** functionality inside Floatboat on Mac and Windows—the same environment where Combo Skills, multi-model routing, and event-scoped Agent workspaces already live. Exact availability may vary by release; the live app and release notes always supersede this post.
+Flow Mode is **desktop workspace** functionality inside Floatboat on Mac and Windows—the same environment where Combo Skills, multi-model routing, and event-scoped Agent workspaces already live, so the draft you are dictating can sit beside an agent running [weekly TikTok Shop research](/blog/automate-tiktok-shop-research-fastmoss-floatboat) in the next pane—one desktop, several agent jobs, no tab juggling between them. Exact availability may vary by release; the live app and release notes always supersede this post.
 
 ## 5\. A quick scenario: from spoken draft to signed-off plan
 
@@ -96,7 +96,7 @@ At no point did you export the doc to a chat box or wait until Friday to "proces
 
 ## Conclusion
 
-**Floatboat Flow Mode** treats **AI voice dictation** as the start of co-authoring—not a shortcut to raw transcript. If your bottleneck is switching between speaking, typing, chatting, and meeting tools, the fix is not louder prompts; it is a single document stream that respects momentum.
+**Floatboat Flow Mode** treats **AI voice dictation** as the start of co-authoring—not a shortcut to raw transcript. If your bottleneck is switching between speaking, typing, chatting, and meeting tools, the fix is not louder prompts; it is a single document stream that respects momentum. Respecting momentum includes the small frictions around the document, too — the window hunting and app switching before you ever press record that [a Raycast-style launcher on Windows](/blog/raycast-for-windows-floatboat) takes off your hands.
 
-Try Flow Mode in the latest Floatboat build on [floatboat.ai](</>). If you are comparing paradigms first, read Calendar-Driven AI vs Chat-Based AI; if your week is meeting-heavy, pair this launch with the meeting prep and follow-up guides already on the blog.
+Try Flow Mode in the latest Floatboat build on floatboat.ai. If you are comparing paradigms first, read Calendar-Driven AI vs Chat-Based AI; if your week is meeting-heavy, pair this launch with the meeting prep and follow-up guides already on the blog.
 

@@ -90,7 +90,7 @@ Vault **不是 AI 产品**。近年来 Obsidian 官方的 AI 触点主要是 Web
 
 **文件同步文件夹（Dropbox、iCloud Drive、Google Drive Desktop）。**同步客户端搬运字节，不提供链接补全、图谱视图或面向笔记的编辑器。vault 可以住在一个同步文件夹里，但同步本身不是知识库。
 
-**读取文件夹的桌面 AI Agent。**截至 2026 年，越来越多工具把本地目录当作多步任务的工作记忆——会议简报、项目草稿、文件清理。vault 尤其适合这种模式的目录，因为笔记本身就是文本、彼此链接且经过人工整理。这种搭配是工作流选择，不是 Obsidian 必须自己实现的功能；我们在配套指南 [把 Obsidian 与 AI Agent 一起用](/zh/blog/how-to-use-obsidian-with-ai-agent) 里走了一遍实际配置。
+**读取文件夹的桌面 AI Agent。**截至 2026 年，越来越多工具把本地目录当作多步任务的工作记忆——会议简报、项目草稿、文件清理。vault 尤其适合这种模式的目录，因为笔记本身就是文本、彼此链接且经过人工整理——同一个文件夹也因此成了[一个 LLM 知识库](/zh/blog/llm-knowledge-base-solo-operators)最自然的起点，前提是你的素材量真的撑得起这一步。这种搭配是工作流选择，不是 Obsidian 必须自己实现的功能；[把 Obsidian 与 AI Agent 一起用](/zh/blog/how-to-use-obsidian-with-ai-agent) 跑通的正是这条路线。
 
 ## 5\. 谁该用 Vault——谁不该
 

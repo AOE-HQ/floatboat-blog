@@ -77,7 +77,7 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 
 问题不在于哪种格式更强大，而在于哪种融得进你的一天。就目前而言，对我来说是两种都用——只是用在不同的东西上。
 
-平台已经在往这个方向走了。Claude 的 [Artifacts 功能](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)能直接在聊天界面里生成并渲染 HTML；OpenAI 的 [Canvas 工作区](https://openai.com/index/introducing-canvas/)开启了并排编辑；`html-anything` 这类工具把 Agent 输出转成独立的 HTML 成果。更丰富的 AI 输出的基础设施正在出现——不管你有没有专门要求。
+平台已经在往这个方向走了。Claude 的 [Artifacts 功能](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)能直接在聊天界面里生成并渲染 HTML；OpenAI 的 [Canvas 工作区](https://openai.com/index/introducing-canvas/)开启了并排编辑；`html-anything` 这类工具把 Agent 输出转成独立的 HTML 成果。更丰富的 AI 输出的基础设施正在出现——不管你有没有专门要求。这些同样不用外包——[要不要请 AI Agent 开发服务](/zh/blog/ai-agent-development-services)，只有当输出周边的管道复杂到你一个人维护不动时才成为真问题，而不是在你想要更好看的交付物时。
 
 ![5.png](/zh/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
 
@@ -96,18 +96,3 @@ X 上五个词：**「HTML 就是新的 markdown。」**说出这话的是 Anthr
 我还在摸索。这是诚实的版本。两周不足以摸清所有边界，但我可以告诉你方向是对的——不是因为 HTML 更花哨，而是因为**工作成果应该对真正要拿它行动的那个人可读、可审查、有用。**这是个相当接地气的、去在乎格式的理由。
 
 总之，这就是我对这件事目前的看法。还在实验，还在调整——但至少我知道自己在往哪个方向调。回去继续造东西了。
-
-## 上一篇：
-
-• [好奇 AI 工作流怎么改变日常工作？读：AI Workflow for Solo Founders: What Actually Works（单人创始人的 AI 工作流：什么真正有效）](/zh/blog/ai-workflow-for-solo-founders)
-
-• [如果输出正从聊天变成工作区？读：AI Workspace Agents: What Changes Beyond Chat Interfaces（AI 工作区 Agent：聊天界面之外改变了什么）](/zh/blog/ai-workspace-agents)
-
-• [拿不准 Agent 和工作流哪个更合适？读：Workspace Agents vs Workflow Builders（工作区 Agent 对比工作流搭建器）](/zh/blog/workspace-agents-vs-workflow-builders)
-
-• [已经在用编码 Agent？读：Claude Code for Non‑Developers: What Solo Operators Should Know（写给非开发者的 Claude Code：单人创业者该知道什么）](/zh/blog/claude-code-non-developers-solo-operators)
-
-• [想把手头的工作成果留在同一个环境里？读：Stop Context Switching: Why Workspace Agents Matter（别再上下文切换：为什么工作区 Agent 重要）](/zh/blog/stop-context-switching-workspace-agent)
-
-![6.png](/zh/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.webp)
-

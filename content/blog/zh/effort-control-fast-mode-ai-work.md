@@ -79,7 +79,7 @@ Claude Code 的文档说得好：[Fast mode 最适合"响应延迟比成本更�
 
 ## 隐藏成本：决策疲劳
 
-Token 成本是最显而易见的成本——也是大家写文章都爱提的那个。但对一人经营来说，我更在意的成本是**决策疲劳**：那种"每个任务都要选一次档位"的微小、持续的心理税。
+Token 成本是最显而易见的成本——也是大家写文章都爱提的那个。而且这条成本线本身在松动：[DeepSeek V4 预测中的 API 定价](/zh/blog/deepseek-v4-api-solo-operator)，正把高投入档位拉进单人日常任务的预算——只是 token 变便宜，并不会替你决定哪个任务配得上高投入。但对一人经营来说，我更在意的成本是**决策疲劳**：那种"每个任务都要选一次档位"的微小、持续的心理税。
 
 如果每个提示词都要我挑投入档位，我不会挑——我会一律默认高投入，然后假装自己深思熟虑过。这就是陷阱。
 
@@ -87,7 +87,7 @@ Token 成本是最显而易见的成本——也是大家写文章都爱提的�
 
 ![5.png](/zh/blog/images/effort-control-fast-mode-ai-work/1780055446998-c9e1e674-652c-406e-b61f-5317d20a7c32.webp)
 
-这跟**[Floatboat](</>)**这类主动式 Agent OS 试图在工作流层面自动化的模式大致相同——让一个前置决策驱动一整条下游执行。我在 Claude 里手动做这件事，但底层想法一样：别再反复做同一个微决策。
+这跟**Floatboat**这类主动式 Agent OS 试图在工作流层面自动化的模式大致相同——让一个前置决策驱动一整条下游执行。我在 Claude 里手动做这件事，但底层想法一样：别再反复做同一个微决策。
 
 ## 一套简单的"任务到投入"框架
 
@@ -108,16 +108,3 @@ Token 成本是最显而易见的成本——也是大家写文章都爱提的�
 我的结论就是这样。我大概会持续调整——五月好用的框架，八月未必还好用，尤其等 Fast Mode 走出 research preview、周边工具也变了之后。但核心洞察留住了：问题不是"怎么让 Claude 想得更深"，而是"什么时候不必想那么深"。
 
 回去干活了。
-
-## 往期文章
-
-[一个人不招人，怎么把业务做大](/zh/blog/scale-one-person-business-without-hiring)
-
-[Claude Managed Agents：对一人公司意味着什么](/zh/blog/claude-managed-agents-one-person-company)
-
-[AI 不知道你是怎么工作的——这才是真正的问题](/zh/blog/ai-workflow-for-solo-founders)
-
-[AI 工作区 Agent 与聊天助手：差别在哪](/zh/blog/workspace-agents-vs-chat-assistants)
-
-[如何用工作区 Agent 戒掉上下文切换](/zh/blog/stop-context-switching-workspace-agent)
-

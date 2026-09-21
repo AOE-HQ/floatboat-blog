@@ -119,7 +119,7 @@ The GitFlow model maps cleanly: feature branches for each bounded task, PRs as h
 
 I've spent time with all four. Here's my honest take on where each fits inside a structured workflow, not as standalone tools.
 
-**[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)** is the strongest choice when you need deep codebase reasoning across large, multi-file tasks. It reads your repository structure, knows your branch state, creates commits with meaningful messages, and can open pull requests directly. The hooks system lets you enforce project-specific rules — linting, testing, formatting — that run automatically before and after certain actions. The CLAUDE.md file is genuinely useful for persisting project context across sessions. Best for: complex refactors, architectural decisions, projects where context depth matters.
+**[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)** is the strongest choice when you need deep codebase reasoning across large, multi-file tasks. It reads your repository structure, knows your branch state, creates commits with meaningful messages, and can open pull requests directly. The hooks system lets you enforce project-specific rules — linting, testing, formatting — that run automatically before and after certain actions. The CLAUDE.md file is genuinely useful for persisting project context across sessions. Most of that leverage comes from [how Claude Code actually works as a terminal coding agent](/blog/what-is-claude-code) — plan mode and sub-agents supplying exactly the structure that ad-hoc vibe coding skips. Best for: complex refactors, architectural decisions, projects where context depth matters.
 
 **Cursor** is the right tool for the daily interactive coding loop. Use Cursor for everyday coding with a visual IDE. Codex for autonomous background tasks. Claude Code for deep multi-file work that needs maximum context. The Composer mode handles multi-file edits cleanly. Tab autocomplete is fast. If you're most comfortable working visually inside an editor, Cursor is the better daily driver.
 
@@ -148,16 +148,3 @@ It doesn't need to be code. It needs to be ​**intentional** ​.
 As one practitioner I follow put it: the best results come when you apply classic software engineering discipline to your AI collaborations. Design before coding, write tests, use version control, maintain standards — these not only still apply, but are even more important when an AI is writing half your code.
 
 That's the whole thing, really. The vibes are still welcome. The guardrails are just what make them last.
-
-## Previous Posts:
-
-→ See why **[vibe coding breaks without structure](/blog/what-is-vibe-coding)** and what replaces it
-
-→ Learn how **[AI agents actually work for solo operators (beyond prompts)](/blog/ai-agent-solo-operators)**
-
-→ Understand how to **[build repeatable AI workflows instead of one-off outputs](/blog/ai-workflow-for-solo-founders)**
-
-→ Explore the shift from **[chat-based AI to persistent, stateful agents](/blog/what-is-persistent-ai-agent)**
-
-→ Discover how **[one-person businesses scale using AI systems, not just tools](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-

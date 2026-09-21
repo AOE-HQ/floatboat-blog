@@ -57,7 +57,7 @@ Claude's model is more ​**conversational** ​. You're working _with_ it about
 
   * **DevTools integration.** Codex can interact with Chrome DevTools directly — useful for testing web apps, debugging frontend issues, verifying browser behavior. Claude's sidebar isn't built for that.
 
-  * **Codex ecosystem integration.** If you're already using Codex CLI or the IDE extension, the Chrome plugin adds browser context to existing workflows. It's not a standalone tool — it's one piece of a larger system.
+  * **Codex ecosystem integration.** If you're already using Codex CLI or the IDE extension, the Chrome plugin adds browser context to existing workflows. It's not a standalone tool — it's one piece of a larger system, and the more surfaces you bolt on, the sooner the [oh-my-codex versus Superpowers](/blog/oh-my-codex-vs-superpowers) question — parallel orchestration or process discipline — stops being theoretical.
 
 ### Claude Strengths
 
@@ -164,16 +164,3 @@ If you want to try both, give each one a specific domain. Codex for multi-tab op
   * **Neither works on mobile browsers.** Desktop Chrome only (Claude also doesn't support other Chromium browsers like Brave or Arc for its extension).
 
   * **Speed varies.** Some tasks take longer than doing them manually, especially on unfamiliar page structures.
-
-## Previous Posts:
-
-  * Curious why everyone keeps talking about workspace agents lately? Read AI Workspace Agents: [The New Operating System for Solo Founders.](/blog/workspace-agents-vs-chat-assistants)
-
-  * If you're still comparing browser agents with normal AI chat tools, [Workspace Agents vs Chat Assistants](/blog/ai-workspace-agents) breaks down the difference clearly.
-
-  * Want to understand Anthropic’s broader strategy behind browser automation? [What Are Claude Managed Agents ](/blog/what-are-claude-managed-agents)goes deeper into the system design.
-
-  * If you're building a lean one-person workflow with AI tools,[ AI Workflow for Solo Founders ](/blog/ai-workflow-for-solo-founders)connects directly to the ideas in this article.
-
-  * For more practical examples of where AI agents actually save time, check out[ AI Agents for Solo Operators](/blog/ai-agent-solo-operators).
-

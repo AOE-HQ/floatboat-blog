@@ -21,7 +21,7 @@ The pitch is short: ​**your local AI agent writes the ​HTML** ​, you ship 
 
 html-anything is an open-source project from the [nexu-io team on GitHub](https://github.com/nexu-io/html-anything) — the same people behind Open Design, which pulled in tens of thousands of stars within weeks of launch. It's licensed under Apache-2.0, built in roughly three days with about 15,000 lines of code, and released in May 2026.
 
-The thesis behind it connects directly to what Thariq Shihipar argued in his [companion site on the unreasonable effectiveness of HTML](https://thariqs.github.io/html-effectiveness/): if your AI agent can produce rich, visual, interactive HTML instead of flat Markdown, the output becomes something people actually engage with. html-anything takes that argument and wraps a production workflow around it.
+The thesis behind it connects directly to what Thariq Shihipar argued in his [companion site on the unreasonable effectiveness of HTML](https://thariqs.github.io/html-effectiveness/): if your AI agent can produce rich, visual, interactive HTML instead of flat Markdown, the output becomes something people actually engage with. html-anything takes that argument and wraps a production workflow around it. The broader question underneath — [whether your AI output should be HTML or Markdown](/blog/html-vs-markdown-ai-output) — doesn't have a universal answer, and where you land on it decides whether infrastructure like this is essential or premature.
 
 Here's how I think about what it's trying to prove: the "agentic HTML editor" concept — agent does the writing, human does the reviewing and shipping — shouldn't require you to stitch together five different tools. One interface, templates included, export built in. That's the bet.
 
@@ -90,14 +90,3 @@ If the answer isn't obvious yet, wait. The project is moving fast, and what's av
 ![5.png](/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.webp)
 
 That's my honest take. The tool is early, the concept is solid, and the question is whether it fits into your workflow — not whether the idea behind it matters. It does. Back to building things.
-
-## Previous Posts:
-
-• [Already using coding agents? Read: Claude Code for Non-Developers: What Solo Operators Should Know](/blog/claude-code-non-developers-solo-operators)
-
-• [Thinking beyond chat interfaces? Read: AI Workspace Agents and the Future of Human-AI Workspaces](/blog/ai-workspace-agents)
-
-• [Need repeatable creative workflows instead of one-off prompts? Read: AI Workflow for Solo Founders: What Actually Works](/blog/ai-workflow-for-solo-founders)
-
-• [Trying to reduce tool-switching across your workflow? Read: Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent)
-

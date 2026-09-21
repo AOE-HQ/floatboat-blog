@@ -93,7 +93,7 @@ Custom GPT 的甜区是**可重复、定义清晰的任务**——那种你本�
 
 当你需要真实世界里的动作——发邮件、更新电子表格、往 Slack 发帖——却不想手动批准每一步时，你大概就超出它的能力了。这正是 Agent Mode 登场的地方：它在 Plus（每月 20 美元）、Pro 和 Team 套餐上可用。我查了 [ChatGPT 官方定价页](https://chatgpt.com/pricing/)上的当前价格——Plus 从上线起一直是每月 20 美元，以你得到的东西来说仍然厚道。
 
-Custom GPT 也不会跨 session 保持记忆。每次对话都从零开始。如果持久记忆对你的工作流很重要，那是另一个去看 Agent Mode 或 Assistants API 的理由。
+Custom GPT 也不会跨 session 保持记忆。每次对话都从零开始。如果持久记忆对你的工作流很重要，那是另一个去看 Agent Mode 或 Assistants API 的理由。而当你越过这些变通办法、真的自己动手时，[搭一个完整 Agent 的真实成本](/zh/blog/how-to-build-an-ai-agent)会换一副面孔：状态、报错处理和维护，都成了你自己的事。
 
 我用的判断规则是：如果我绕开 GPT 局限所花的时间，比它帮我省下的还多——那就是换下一个工具的时候了。
 
@@ -102,16 +102,3 @@ Custom GPT 也不会跨 session 保持记忆。每次对话都从零开始。如
 这就是我对"怎么用 ChatGPT 构建 AI Agent"的诚实看法。它重点不在构建器，而在于把任务想清楚、写好指令、拿真实的边角案例去测试。这套工具确实平易近人——你不需要会写代码，只需要想清楚自己在委托什么。
 
 我大概会随着工具演进继续打磨自己的配置。这部分永远不会真正结束。
-
-## 往期文章：
-
-  * 如果你还在纠结"要 Custom GPT 还是更自主的配置"，从这里开始：[什么是 AI Agent 平台？单人经营者的决策框架](/zh/blog/ai-agent-solo-operators)
-
-  * 想搞清 ChatGPT 工作流到哪儿为止、真正的 Agent 行为从哪儿开始？这篇把界线讲得很清楚：[AI 工作流 vs Agent 工作流：界线到底在哪](/zh/blog/ai-agent-workflow-vibe-coding)
-
-  * 如果你的 AI 老是忘记 session 之间的上下文，这篇解释了为什么——以及怎么办：[为什么你的 AI 会忘光 session 之间的一切](/zh/blog/why-ai-forgets-between-sessions)
-
-  * 在想跨出 Custom GPT、走向工作区式 AI 系统？这是有用的下一步：[AI 工作区 Agent：为单人经营者真正改变了什么](/zh/blog/ai-workspace-agents)
-
-  * 建好第一个 GPT 之后，这篇指南帮你把可重复任务做得更可靠、更能扩展：[如何为重复工作构建 AI Agent](/zh/blog/how-to-build-ai-agents-for-repeated-work)
-

@@ -99,9 +99,9 @@ Gen 4 changes the relationship between calendar and agent entirely. The calendar
 
 Floatboat is designed specifically for this generation: every calendar event becomes a trigger for a complete work pipeline, from pre-meeting briefs to deadline-driven drafts and post-meeting follow-ups. The work is initiated from the calendar event itself rather than from a separate prompt. In practice, each event can become a persistent workspace with files, run history, and model choice across frontier and open models. Events don't just hold time — they hold the work produced for and from that time.
 
-The architectural shift is from "AI that schedules" to "AI that operates." Gen 1–3 tools answer the question "when?" Gen 4 answers "what now?" — by reading your calendar rhythm and executing the work that rhythm implies.
+The architectural shift is from "AI that schedules" to "AI that operates" — [what makes a calendar agentic rather than just smart](/blog/what-is-agentic-calendar) comes down to whether it acts on your schedule or only tracks it. Gen 1–3 tools answer the question "when?" Gen 4 answers "what now?" — by reading your calendar rhythm and executing the work that rhythm implies.
 
-The jump from Gen 2 to Gen 3 isn't incremental — it's a category shift. Gen 1 and Gen 2 treat the calendar as a container for time. Gen 3 and Gen 4 treat it as a source of context and a trigger for action. If you're evaluating tools, the most important question isn't "how well does it schedule?" — it's "what does it do with the schedule once it's there?" That distinction separates time-savers from work-doers, and it explains why some solo operators are already quietly moving up the stack.
+The jump from Gen 2 to Gen 3 isn't incremental — it's a category shift. Gen 1 and Gen 2 treat the calendar as a container for time. Gen 3 and Gen 4 treat it as a source of context and a trigger for action. If you're evaluating tools, the most important question isn't "how well does it schedule?" — it's "what does it do with the schedule once it's there?" That distinction separates time-savers from work-doers — and [which scheduling assistants actually clear that bar](/blog/best-ai-scheduling-assistants) depends more on your use case than on any feature list. It also explains why some solo operators are already quietly moving up the stack.
 
 * * *
 
@@ -166,16 +166,3 @@ That doesn't mean Gen 1 and Gen 2 tools become obsolete. You can keep Calendly f
 The calendar isn't the goal. It's the trigger. The best AI scheduling agent is the one that makes your calendar produce output, not just hold events.
 
 * * *
-
-## Related Articles
-
-  * [Introducing FloatIM: Chat with AI Agents in Groups on an Agent-Native Network](/blog/introducing-floatim)
-
-  * [Should a Solo Operator Use an AI Agent?](/blog/ai-agent-solo-operators)
-
-  * [How One-Person Businesses Work Like a Team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-* * *
-
- _Disclosure: Floatboat is a calendar-driven proactive agent OS (Gen 4 as defined in this article) developed by AOE Tech Labs Limited. This article is a category analysis based on publicly available information. Gen 1–3 tools are described based on publicly available documentation and community discussion as of June 2026._
-

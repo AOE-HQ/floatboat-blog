@@ -93,7 +93,7 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 
 **工作流构建器**对付不了模糊。如果你的输入数据很乱，或流程在意想不到的地方分叉，AI 生成的工作流看起来是对的，一到生产就断。你花几小时反复改提示，而不是修一个简单的 bug。维护开销是真实的，而且在演示里常常隐形。
 
-**AI 工作区**在规模与可靠性上吃力。它们很擅长理解上下文——但不擅长把同一个流程不带偏差地跑 500 遍。当你真正需要一个确定性的东西「就是能跑」时，它们会显得「软」。
+**AI 工作区**在规模与可靠性上吃力。它们很擅长理解上下文——但不擅长把同一个流程不带偏差地跑 500 遍。这笔交换正是 [工作区 Agent 与工作流搭建器](/zh/blog/workspace-agents-vs-workflow-builders) 的分界线：一个在你身边并肩干活、对着眼前的事做判断，另一个把定好的流水线每次都照同样方式跑完。当你真正需要一个确定性的东西「就是能跑」时，它们会显得「软」。
 
 正如 [The Digital Project Manager 对 AI 工作流工具的评测](https://thedigitalprojectmanager.com/tools/best-ai-workflow-tools/)所说，最好的配置常常是两者结合——工作区管思考和上下文，构建器管可重复的输出层。那是更贵、更复杂的栈，但它对每款工具真正干什么很诚实。
 
@@ -110,16 +110,3 @@ AI 工作区则相反，从你现有的内容出发。你把文档放进去、�
 对很多单人创业者来说，诚实的答案是：**从工作区开始，再为你那些确实重复的具体任务加上工作流自动化。**在你确定工作的哪些部分稳定到可以自动化之前，别先把整套运营栈搭起来。按 [Cybernews 对 AI 工作流构建器的拆解](https://cybernews.com/ai-tools/best-ai-workflow-builder/)，即便在技术上很熟练的用户里，最常见的错误也是为还没稳定的工作过度设计自动化。
 
 ![951dc46e1378298d1b3f45aec0389fdb.png](/zh/blog/images/workflow-builder-vs-ai-workspace/1774257973478-6bef8d1b-c0ba-46fa-a07a-7c52cae854a7.webp)
-
-## 延伸阅读
-
-  * [对比 Lindy 和 Gumloop 在构建 Agent 式工作流上的差异。](/zh/blog/lindy-vs-gumloop)
-
-  * [探索研究、内容与运营中的真实 AI Agent 用例。](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [看看一人公司如何用 AI 角色开始像一支完整团队一样运转。](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [了解 AI 自动化工作在真实市场里是怎么定价的。](/zh/blog/ai-automation-agency-pricing)
-
-  * [理解真实工作流里 AI Agent 与 AI 助手的区别。](/zh/blog/ai-agent-vs-ai-assistant)
-

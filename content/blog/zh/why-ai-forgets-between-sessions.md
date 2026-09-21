@@ -33,7 +33,7 @@ draft: false
 
 数字是：**每次会话大约 8 到 12 分钟。**单独看还不算可怕，直到你意识到我一天要打开 AI 工具六到八次。也就是每天一个多小时，仅仅为了让 AI 回到它昨天本该在的位置。
 
-最气人的是这段时间不产生任何东西。没有产出、没有进展——只是在重新建立一个 AI 本来就该有的基线。对单人创业者来说，那一小时就是「今天交付点东西」和「又推到明天」之间的差别。
+最气人的是这段时间不产生任何东西。没有产出、没有进展——只是在重新建立一个 AI 本来就该有的基线。对单人创业者来说，那一小时就是「今天交付点东西」和「又推到明天」之间的差别。而且计时器还低估了损失——[AI 每轮会话到底丢了什么](/zh/blog/why-ai-forgets-every-session)，往往不是无关紧要的细节，而是已经拍板的决策和你磨合了很久的标准。
 
 ![22.PNG](/zh/blog/images/why-ai-forgets-between-sessions/1775794270856-268c9e7f-9d36-424d-8994-a5f030624566.webp)
 
@@ -102,16 +102,3 @@ draft: false
 我还在实验中。等我看得更清楚时，会再分享更多。
 
 好了，这就是今天的发现——嗯，更像是我终于给它命了名的一桩挫败。有时这就是第一步。
-
-## 延伸阅读
-
-  * **[什么是持久化 AI Agent——为什么它很重要？](/zh/blog/what-is-persistent-ai-agent)**
-
-  * **[为什么 AI 每轮会话都会忘——无状态 AI 的隐藏成本](/zh/blog/why-ai-forgets-every-session)**
-
-  * **[工作流搭建工具 vs AI 工作区——真正的区别是什么？](/zh/blog/workflow-builder-vs-ai-workspace)**
-
-  * **[一人企业如何借助 AI 像一支团队一样运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-
-  * **[什么样的 AI 工作流对单人创业者真正管用](/zh/blog/ai-agents-2026-solo-operators)**
-

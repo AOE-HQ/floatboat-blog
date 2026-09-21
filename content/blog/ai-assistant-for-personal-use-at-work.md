@@ -43,7 +43,7 @@ Personal use at work isn't about using AI at home. It's about using it **as an i
 
 This matters because:
 
-  * **Context lives with you.** You're not sharing prompts with a team. You need the tool to hold your specific context — your clients, your style, your recurring tasks — not just respond to generic requests.
+  * **Context lives with you.** You're not sharing prompts with a team. You need the tool to hold your specific context — your clients, your style, your recurring tasks — not just respond to generic requests. How much a tool actually retains between sessions is also where [the line between an AI assistant and an AI agent](/blog/ai-agent-vs-ai-assistant) gets drawn, so it's worth knowing which side you're shopping on before comparing plans.
 
   * **You're not a developer.** The useful question isn't what's possible through the API. It's what you can set up in a web interface or desktop app in under an hour.
 
@@ -108,16 +108,3 @@ I've run this approach with a few different tools. It works whether you're testi
 **Days 6–7: Honest evaluation.** How many times did it actually save you meaningful time? Did you find yourself going back to it naturally, or did you have to remind yourself it existed? Did context hold across sessions, or did you have to re-explain things every time? These questions matter more than whether the outputs were impressive in isolation.
 
 If you can't answer yes to at least two of those by day 7, the tool isn't the right fit for how you currently work — or you haven't found the right use cases yet.
-
-### Previous Posts:
-
-  * If your AI assistant still feels like “a smarter search engine,” this is the workflow shift that usually changes everything: [Why AI forgets between sessions — and why context matters more than model quality](/blog/why-ai-forgets-between-sessions)
-
-  * Most solo operators don’t actually need more AI tools — they need fewer places where context gets scattered: [Why your workflow feels fragmented: workspace agents for solo operators](/blog/workspace-agents-for-solo-operators)
-
-  * Testing AI assistants? The real productivity gain usually comes from workflow fit, not from switching to the newest model every month: [Meta Muse Spark vs GPT-5.4 for one-person companies](/blog/meta-muse-spark-one-person-company)
-
-  * If you’re deciding between a chat assistant and a workspace-style AI setup, this breakdown explains where each actually helps: [Workspace agents vs chat assistants](/blog/workspace-agents-vs-chat-assistants)
-
-  * A practical guide to building an AI workflow that actually survives past the “trial week” stage for solo founders: [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
-

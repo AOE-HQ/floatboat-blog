@@ -95,7 +95,7 @@ Claude for Chrome 待在浏览器侧边栏里，能操作已开在 Chrome 标签
 
 发起一笔付款；删除记录；提交法律文件；批准合同变更。**如果一次错误的代价很高，就不要让浏览器 Agent 无人监督地做。**两个工具都有行动前需确认的权限模式，凡是错了就难以挽回的事，你都该启用它们。
 
-Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍有 11.2% 的对抗性攻击得逞](https://www.anthropic.com/research/prompt-injection-defenses)。OpenAI 也承认，浏览器 Agent 里的提示注入「几乎不可能被彻底解决」。这些不是理论风险——研究人员已经发现真实存在的[野生间接提示注入载荷](https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/)，它们被埋在普通网站上，专等会浏览这些页面的 AI Agent 上钩。这不代表你不该用浏览器 Agent；而是说，高风险动作应当始终留在手动确认这道关卡后面。
+Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍有 11.2% 的对抗性攻击得逞](https://www.anthropic.com/research/prompt-injection-defenses)。OpenAI 也承认，浏览器 Agent 里的提示注入「几乎不可能被彻底解决」。这些不是理论风险——研究人员已经发现真实存在的[野生间接提示注入载荷](https://www.infosecurity-magazine.com/news/researchers-10-wild-indirect/)，它们被埋在普通网站上，专等会浏览这些页面的 AI Agent 上钩。这不代表你不该用浏览器 Agent；而是说，高风险动作应当始终留在手动确认这道关卡后面，并且在交出任何一个要紧的登录之前，把[该问的安全问题](/zh/blog/browser-ai-agent-security-questions)逐条过一遍。
 
 ![what5.png](/zh/blog/images/browser-ai-agent-what-it-can-do/1778482792348-c069ef6f-58c9-4820-bc61-f1478881ded4.webp)
 
@@ -113,7 +113,7 @@ Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍
 
 ## 浏览器 Agent 在单人创业者技术栈里的位置
 
-浏览器 Agent 不是现有工具的替代品，而是上面多出的一层——只有当你手头有清晰、重复、又在吞噬时间的浏览器工作流时，才值得加。
+浏览器 Agent 不是现有工具的替代品，而是上面多出的一层——只有当你手头有清晰、重复、又在吞噬时间的浏览器工作流时，才值得加。等瓶颈超出单个浏览器任务、扩大到一个人要撑起整块业务时，同一条委托光谱上更远的位置，站着 [Claude 的托管 Agent](/zh/blog/claude-managed-agents-one-person-company)。
 
 **你的核心工具**（CRM、邮件、文档、项目管理）保持原样。**浏览器 Agent**作为自动化层叠在上面，专攻跨工具任务——连接各核心工具的重复杂活、数据收集、表单填写。
 
@@ -132,20 +132,3 @@ Anthropic 公布过提示注入测试的数据：即使防御机制开启，[仍
 **Agent 悄无声息地卡住。**两个工具在标记问题上都进步了，但有时 Agent 就是……停了。打开通知。别把沉默当成功。
 
 **权限越滚越大。**人很容易不停地给更多网站放行。定期复查你的允许清单，把不常用的权限收回来。
-
-## 往期文章
-
-  * 想把浏览器 Agent 用在整个工作流上？这篇文章讲了[工作区 Agent 在哪些地方真正帮到单人创业者](/zh/blog/workspace-agents-for-solo-operators)——又在哪些地方多半只是徒增负担
-
-  * 如果你还在理解浏览器 Agent 与常规 AI 聊天工具的差别，这篇拆解解释了[为什么交互模型比多数人以为的更重要](/zh/blog/workspace-agents-vs-chat-assistants)
-
-  * 好奇[为什么这么多单人创始人在围绕 AI Agent 而非传统自动化工具重建工作流](/zh/blog/ai-workspace-agents)？
-
-  * 多数人自动化得太早，做出了一碰就碎的体系。这篇[面向单人创始人的 AI 工作流指南](/zh/blog/ai-workflow-for-solo-founders)和本文的「可预测路径」框架直接相关
-
-  * 想要更脚踏实地地看看[AI Agent 在一人公司里到底在哪里省时间](/zh/blog/ai-agent-solo-operators)——而不是看那些炫目的演示？
-
-这就是我目前看到的全貌。浏览器 AI Agent 对合适的任务确实有用——真正有用。但它们不是魔法，演示与日常苦干之间的落差依旧真实。
-
-过几周我会知道得更多。这部分永远不会真正结束。
-

@@ -122,7 +122,7 @@ If you watched the 2022 tournament and want to know what is different in 2026, t
 
 **Knockout structure**. 2022 had a Round of 16 straight from the group stage. 2026 inserts a Round of 32, which means group-stage underperformance is more survivable (8 third-place teams advance) but the knockout path is longer (5 matches to the title instead of 4).
 
-**Host geography**. Qatar 2022 was the most compact World Cup ever — every stadium within a 50-kilometer radius of Doha. 2026 is the most spread out — 16 cities across three countries and four time zones. Fans and teams will travel significantly between matches.
+**Host geography**. Qatar 2022 was the most compact World Cup ever — every stadium within a 50-kilometer radius of Doha. 2026 is the most spread out — 16 cities across three countries and four time zones. Fans and teams will travel significantly between matches, and [how the 16 host cities cluster into regional groups](/blog/where-is-world-cup-2026-host-cities) is the first thing worth planning around.
 
 **Tiebreaker rule change**. The new head-to-head priority rule for group-stage ties is a departure from the goal-difference-first approach that has been the default for decades. Every direct group matchup now carries knockout-level stakes from matchday one.
 

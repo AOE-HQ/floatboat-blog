@@ -97,7 +97,7 @@ The gap between "who this was built for" and "who is excited about it" is pretty
 
 Solo founders, content creators, consultants, operations people — they read the tweets, got excited about the core insight, then opened the GitHub gist and saw terminal commands. That's where most of them stopped.
 
-The insight is genuinely valuable for anyone who works with large volumes of information over time. The implementation, though, assumes a technical comfort level that most non-developers don't have and don't want to acquire just to manage their notes.
+The insight is genuinely valuable for anyone who works with large volumes of information over time. The implementation, though, assumes a technical comfort level that most non-developers don't have and don't want to acquire just to manage their notes. For a consultant, that compounding corpus is also the substance clients are actually paying for — which is why [where you set your price from day one](/blog/solopreneur-pricing-day-one) deserves as much deliberate thought as how you store it.
 
 I'm somewhere in the middle. I can follow the architecture. But I don't want to be debugging a Python script on a Tuesday afternoon when I should be writing.
 
@@ -121,7 +121,7 @@ There's also an emerging product category trying to solve this more directly for
 
 The idea: instead of you bringing context to the AI each session, the AI lives inside an environment where your work _already is._ Files, browsing, decisions, iterative edits — the context accumulates without you managing it.
 
-Tools like [Floatboat AI](</>) are building in this direction — an AI workspace that learns your working patterns over time rather than starting fresh each session. I haven't run it through enough real workflows to give you a definitive verdict, but the framing matches the problem the LLM wiki is pointing at: compounding context, not resetting it.
+Tools like Floatboat AI are building in this direction — an AI workspace that learns your working patterns over time rather than starting fresh each session. I haven't run it through enough real workflows to give you a definitive verdict, but the framing matches the problem the LLM wiki is pointing at: compounding context, not resetting it.
 
 ![5.png](/blog/images/what-is-llm-wiki/1776148854844-ad731b5c-a527-4da1-85c3-44bad00c024a.webp)
 
@@ -169,16 +169,3 @@ That's where I am with this. The pattern is genuinely interesting — not becaus
 If the answer to both is yes: [Karpathy's gist is right there](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), and the community implementations are already good.
 
 If the answer to either is no: the principle still matters. Figure out your simplest version of "compile once, use many times." That's the part worth keeping.
-
-## Previous Posts:
-
-  * [Still confused about why AI keeps starting from scratch? This breaks it down clearly](/blog/why-ai-forgets-every-session)
-
-  * [Want a simpler explanation of persistent AI vs one-off tools? Start here](/blog/what-is-persistent-ai-agent)
-
-  * [Not sure whether you need a knowledge base or something more practical? Read this](/blog/llm-knowledge-base-solo-operators)
-
-  * [If you're deciding between building your own system or using a tool, this helps](/blog/workflow-builder-vs-ai-workspace)
-
-  * [Curious how AI agents actually fit into real solo workflows? This gives context](/blog/ai-agents-2026-solo-operators)
-

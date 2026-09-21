@@ -33,7 +33,7 @@ draft: false
 
 你属于哪一类，与其说取决于技术水平，不如说取决于你在做什么、以及你愿意长期维持什么。
 
-**无代码构建工具**——Zapier、带 Maia AI 助手的 Make、Lindy——追求的是快速跑通一套可用的自动化。Zapier 推出了 Zapier Agents，可在其 8,000+ 应用生态里自主执行任务。只要你能用大白话描述工作流，往往一小时之内就能搭出第一版。诚实的代价是：你会很快撞到天花板。复杂分支逻辑、跨会话的持久记忆、自定义业务逻辑——要么只能靠维护起来很痛苦的变通方案，要么根本做不了。
+**无代码构建工具**——Zapier、带 Maia AI 助手的 Make、Lindy——追求的是快速跑通一套可用的自动化。Zapier 推出了 Zapier Agents，可在其 8,000+ 应用生态里自主执行任务。只要你能用大白话描述工作流，往往一小时之内就能搭出第一版。诚实的代价是：你会很快撞到天花板——[无代码 AI Agent 构建工具](/zh/blog/no-code-ai-agent-builder)够不够用，说到底取决于你的工作流离这条天花板有多远。复杂分支逻辑、跨会话的持久记忆、自定义业务逻辑——要么只能靠维护起来很痛苦的变通方案，要么根本做不了。
 
 **低代码构建工具**——n8n、Dify、Flowise——居中。你在可视化画布里工作，需要时也能直接写 JavaScript 或 Python。n8n 2.0 于 2026 年 1 月发布，原生集成 LangChain、自带 70+ AI 节点，很可能是这一档里能力最强的。Dify 走全家桶路线——Agent 设计、RAG 流水线、可观测性装进同一平台。Flowise 专为 LangChain 工作流打造，拖拽式界面比直接写 Python 更亲民。按 [Rasa 的低代码 AI Agent 平台指南（2026 年 4 月）](https://rasa.com/blog/best-low-code-ai-agents-platforms-for-2026/)，这三家都提供免费的自托管部署，这是值得算进成本的一项。
 
@@ -92,16 +92,3 @@ Agent 坏掉的原因通常就那么几条：它调用的 API 改了返回格式
 对大多数像我这样工作的人——单人项目、在意成本、想要真 Agent 行为又不想背 DevOps 负担——n8n 是低代码档里更干净的答案。对需要极致掌控的开发者，LangGraph 值得那一段学习曲线。刚起步、需要明天就有东西能用？从 Make 开始。以后随时可以迁移。
 
 这是我的看法。你还是要自己判断什么适合你的处境。
-
-## 往期文章
-
-  * 拿不准 AI Agent、自动化与工作区到底怎么选？这篇讲清了每类在单人工作流里真正的位置 → [Workspace Agents vs Workflow Builders](/zh/blog/workspace-agents-vs-workflow-builders)
-
-  * 选构建工具之前，先弄懂「agentic AI」到底意味着什么、大多数工具又是在哪里悄悄碰到上限 → [AI Agent Tools for Solo Operators](/zh/blog/ai-agent-solo-operators)
-
-  * 如果你在搭第一个工作流，这篇指南建议从一个无聊的重复任务开始，而不是一上来就过度设计 → [AI Workflow for Solo Founders](/zh/blog/ai-workflow-for-solo-founders)
-
-  * n8n、Make 等工作流工具很强大——但随着 Agent 越来越复杂，上下文和记忆为什么会成为真正的瓶颈 → [Why AI Forgets Between Sessions](/zh/blog/why-ai-forgets-between-sessions)
-
-  * 好奇工作区式 Agent 相比独立构建工具的位置？这篇讲的是跨应用 AI 工作流背后更大的转变 → [AI Workspace Agents for Solo Operators](/zh/blog/ai-workspace-agents)
-

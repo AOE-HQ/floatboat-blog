@@ -41,7 +41,7 @@ xAI 于 2025 年 4 月公开开放了 Grok 3 API。此后定价没动过：输�
 
 $3/$15 的 Grok 3 与 Claude Sonnet 并肩——它被定价成一个_高端_模型，而不是价格杀手。想要 xAI 的便宜货，你要的是**Grok 3 Mini**（$0.30/$0.50）或**Grok 4.1 Fast**（$0.20/$0.50）。这两款确实低于市场大多数。
 
-严肃通用模型的价格地板仍然是 DeepSeek V3。输入比 Grok 3 低一个数量级，输出便宜约 14 倍。
+严肃通用模型的价格地板仍然是 DeepSeek V3。输入比 Grok 3 低一个数量级，输出便宜约 14 倍——而且 [DeepSeek V4 目前的定价预测](/zh/blog/deepseek-v4-api-solo-operator)指向的是继续往下，而不是回升。
 
 所以当有人说「Grok 3 现在很便宜」——它并不便宜。便宜的是 _Mini_ 和 _Fast_ 变体。这个区分很要紧。
 
@@ -77,21 +77,6 @@ $3/$15 的 Grok 3 与 Claude Sonnet 并肩——它被定价成一个_高端_模
 
 托管式 Agent 平台（Claude 的、OpenAI 的，以及各种编排层）在解决另一个问题——它们管的是整条链，而不是单次调用成本。裸 API 给你灵活性和更低的单次成本，但管道工的事留给你自己。不同的工具，同一段旅程的不同阶段。如果你还在早期探索，托管式的东西能让你先动起来；如果你已经吃透工作流、想挤压成本，裸 API 路线就开始说得通了。
 
-至于我自己的位置——多半在探索、偶尔搭点稳定的东西——我最终落在一个混合方案里：高吞吐的后台任务用 Grok 3 Mini，重思考的活交给 Claude 或 GPT，任何想便宜又糙地跑规模的东西用 DeepSeek。这不是什么推荐，只是我最后停下的位置。
+至于我自己的位置——多半在探索、偶尔搭点稳定的东西——我最终落在一个混合方案里：高吞吐的后台任务用 Grok 3 Mini，重思考的活交给 Claude 或 GPT，任何想便宜又糙地跑规模的东西用 DeepSeek。这不是什么推荐，只是我最后停下的位置。这套组合能成立，是因为每个模型都有自己清晰的车道——这跟[判断一次新集成（比如眼下的 Gemini 3.5）究竟会不会改变你的干活方式](/zh/blog/gemini-3-5-integration-solo-operators)用的是同一把尺子：要么有明确分工，要么只是多养一个模型。
 
 _这就是我用两个月得出的真实看法。更便宜的 token 是真的，但它不是多数单人创业者真正撞上的那道门槛。当你需要这种级别的价格优化时，你自然会知道。_
-
-**往期文章：**
-
-  * [什么是 Vibe Coding（以及它如何改变你构建的方式）](/zh/blog/what-is-vibe-coding)
-
-  * [单人创始人的 AI 工作流：真正的瓶颈在哪里](/zh/blog/ai-workflow-for-solo-founders)
-
-  * [单人创业者的 DeepSeek V4 API：便宜什么时候才真正要紧](/zh/blog/deepseek-v4-api-solo-operator)
-
-  * [AI Agent vs 聊天机器人：为什么这个区分影响你的技术栈](/zh/blog/ai-agent-vs-chatbot)
-
-  * [为什么 AI 会在会话之间失忆（以及它对自动化意味着什么）](/zh/blog/why-ai-forgets-between-sessions)
-
-![5.png](/zh/blog/images/grok-3-api-solo-operator/1776932977603-7e7aba35-fa7d-4d76-b064-9b3b721ca245.webp)
-

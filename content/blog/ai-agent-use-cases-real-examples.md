@@ -35,7 +35,7 @@ Previously: open tabs, manual notes, a lot of copying and pasting. Easily 3–4 
 
 ### Workflow
 
-They set up an AI agent workflow using a tool like [Floatboat AI](</>) that could: read uploaded briefs, search and summarize web content, and output a structured draft. The agent doesn't replace the thinking — **it handles the busywork.**
+They set up an AI agent workflow using a tool like Floatboat AI that could: read uploaded briefs, search and summarize web content, and output a structured draft. The agent doesn't replace the thinking — **it handles the busywork.**
 
 ### Output
 
@@ -141,19 +141,10 @@ Okay, so you want to try this. Here's what I'd actually tell a friend:
 
 **Not every task is worth automating.** Before building a workflow, ask: do I do this exact thing more than once a week? If not, the setup cost probably isn't worth it.
 
-**Start small.** Pick one repeatable task. Get it working well. Then add another. The people who try to automate everything at once usually end up with a mess of half-working workflows.
+**Start small.** Pick one repeatable task. Get it working well. Then add another. The people who try to automate everything at once usually end up with a mess of half-working workflows. The flip side holds too: once a task outgrows what no-code tools can wire together, that's the moment to get clear on [what AI agent development services actually include and where their costs land](/blog/ai-agent-development-services) instead of forcing a fragile workaround.
 
 Wait… ! And one more thing I keep noticing: **the people getting the most out of AI agents aren't necessarily the most technical.** They're the ones who are clearest about what they want. Good prompting is just clear thinking, written down. [OpenAI's prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering) is actually a surprisingly useful read for non-developers — most of the advice is just about being precise.
 
 ![5.png](/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.webp)
 
 _If you're also experimenting with AI workflows, I'd be curious about what's actually working for you. Still figuring a lot of this out myself — but that's kind of the fun part._
-
-**Previous Posts:**
-
-  * **[running a one-person business like a team using AI workflows](<https://<https://floatboat.ai/blog/how-one-person-businesses-work-like-a-team-with-ai>>)**
-
-  * **[how AI automation works is actually priced in the real market](<https://<https://floatboat.ai/blog/ai-automation-agency-pricing>>)**
-
-  * **[how Lindy and Gumloop differ when it comes to agent-style workflows](<https://<https://floatboat.ai/blog/lindy-vs-gumloop>>)**
-

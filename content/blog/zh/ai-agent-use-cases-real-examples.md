@@ -35,7 +35,7 @@ draft: false
 
 ### 工作流
 
-他配置了一个 AI Agent 工作流，用类似 [Floatboat AI](</>) 的工具来：读取上传的 brief、检索并总结网页内容、输出结构化初稿。Agent 不替代思考——**它负责把杂活干完。**
+他配置了一个 AI Agent 工作流，用类似 Floatboat AI 的工具来：读取上传的 brief、检索并总结网页内容、输出结构化初稿。Agent 不替代思考——**它负责把杂活干完。**
 
 ### 产出
 
@@ -141,19 +141,10 @@ Agent 不了解那些没有说出口的背景——客户内部的关系、对�
 
 **不是每件事都值得自动化。**动手搭建前先问自己：这件事我一周会做不止一次吗？如果不是，那搭建成本多半不值。
 
-**从小处开始。**挑一件可重复的任务，先把它做到好用，再加下一件。想一口气把一切都自动化的人，最后往往只剩一堆半成品工作流。
+**从小处开始。**挑一件可重复的任务，先把它做到好用，再加下一件。想一口气把一切都自动化的人，最后往往只剩一堆半成品工作流。反过来的道理也成立：一旦任务超出了无代码工具能串起来的范围，就该认真弄清 [AI Agent 开发服务到底交付什么、成本落在哪](/zh/blog/ai-agent-development-services)，而不是硬凑一个脆弱的替代方案。
 
 对了……还有一件事我不断观察到：**从 AI Agent 里获益最多的人，未必是技术最强的。**而是那些最清楚自己想要什么的人。好的提示词，其实就是把清晰的思考写下来。[OpenAI 的提示词工程指南](https://platform.openai.com/docs/guides/prompt-engineering)对非开发者来说意外地有用——其中大部分建议归结起来就一句话：要精确。
 
 ![5.png](/zh/blog/images/ai-agent-use-cases-real-examples/1773915429561-e303e009-9113-4bb7-beee-f8765ed516cf.webp)
 
 _如果你也正在试验 AI 工作流，我很想知道对你真正有效的是什么。我自己也还在摸索——不过，这大概正是有趣的部分。_
-
-**往期文章：**
-
-  * [一个人如何像一支团队那样用 AI 工作流运转](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [AI 自动化服务在真实市场里到底怎么定价](/zh/blog/ai-automation-agency-pricing)
-
-  * [Lindy 与 Gumloop 在 Agent 式工作流上的差别](/zh/blog/lindy-vs-gumloop)
-

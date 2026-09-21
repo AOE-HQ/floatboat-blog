@@ -94,7 +94,7 @@ That pre-send review is also why dictation scales better across **long tasks**. 
 
 ## 4. How to Choose the Right Voice Workflow for Agent Work
 
-Choosing between Voice Mode and Dictation is less about which feature is "smarter" and more about **where the commit point lives** in your workflow. Agent work introduces a second axis: is the session producing **executable text**, **exploratory alignment**, or **a durable document** that outlives the chat?
+Choosing between Voice Mode and Dictation is less about which feature is "smarter" and more about **where the commit point lives** in your workflow. Agent work introduces a second axis: is the session producing **executable text**, **exploratory alignment**, or **a durable document** that outlives the chat? Developer tooling reached the same conclusion from another direction — the [oh-my-codex versus Superpowers](/blog/oh-my-codex-vs-superpowers) debate is a fight over where the commit point belongs: an approved written plan before any code runs.
 
 If your pipeline looks like "human specifies job → agent executes → human reviews output," the specify step almost always wants dictation or typing. You are building a contract: scope, tools allowed, success criteria, edge cases. Voice Mode can help you *discover* what belongs in that contract — talk through edge cases, hear the model ask clarifying questions — but the contract itself should land in editable text before it touches production agents. Teams that skip this step often report rework when a spoken phrase the model paraphrased differently in the transcript becomes the wrong trigger condition.
 

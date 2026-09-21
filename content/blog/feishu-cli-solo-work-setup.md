@@ -129,7 +129,7 @@ For teams or developers who want a more robust framework for thinking about auto
 
 Let me be honest about when this actually makes sense to invest in.
 
-**It pays off when the workflow runs frequently and the manual version is genuinely tedious.** Pulling a weekly digest of project updates from multiple Feishu spaces and piping it into your notes? Worth setting up. Running the same thing once a month? Probably not — the maintenance cost will exceed the time saved.
+**It pays off when the workflow runs frequently and the manual version is genuinely tedious.** Pulling a weekly digest of project updates from multiple Feishu spaces and piping it into your notes? Worth setting up. Running the same thing once a month? Probably not — the maintenance cost will exceed the time saved. That frequency test is really the whole question of [when Lark CLI is worth building and when to skip it](/blog/lark-cli-when-to-use-it), and it deserves an answer before you write any setup code.
 
 **It pays off when the failure mode is low-stakes.** Read-only pipelines that pull information for your own reference are much lower risk than action-execution workflows that send messages or modify shared records. Start with the former; graduate to the latter only after you've lived with the setup for a while.
 
@@ -154,16 +154,3 @@ The bottom line is that Feishu CLI is genuinely capable for solo operator use ca
 ![8.png](/blog/images/feishu-cli-solo-work-setup/1774921937517-a7d45c45-2b64-45fa-92d0-426eab1032a6.webp)
 
 _Anyway, that's what I've been figuring out. Still experimenting, still learning — but hopefully this gives you a clearer picture of what you're actually building before you're in the middle of it._
-
-## Previous Posts:
-
-  1. **[Understand the trade-offs between using an AI agent and a chatbot for your workflow](/blog/ai-agent-vs-chatbot)**
-
-  2. **[Explore how to build and maintain custom AI agents with ease](/blog/how-to-build-an-ai-agent)**
-
-  3. **[Learn about alternative AI agent development services for better results](/blog/ai-agent-development-services)**
-
-  4. **[Check out the differences between Genspark and Manus for AI automation solutions](/blog/genspark-vs-manus)**
-
-  5. **[Discover alternatives to Gumloop for building efficient AI workflows](/blog/gumloop-alternatives-2026)**
-

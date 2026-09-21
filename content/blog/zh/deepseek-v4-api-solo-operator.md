@@ -51,7 +51,7 @@ DeepSeek V4 是 V3.2 的继任者——V3.2 是目前同时驱动 `deepseek-chat
 
 V4 的价格区间反映的是多家分析机构给出的上下限预测。官方定价只会在发布时确认。当前在线 API 定价来自 DeepSeek 官方文档。GPT-5.4 和 Grok 的价格截至 2026 年 4 月。
 
-根据 OpenAI 官方定价页，GPT-5.4 每百万输入 token 2.50 美元、每百万输出 token 15.00 美元——而且这还没到 272K 上下文阈值，过了之后输入成本会翻倍。Grok 4.1 Fast 是每百万输入 token 0.20 美元，带 200 万 token 的上下文窗口，单 token 比 GPT-5 mini、Gemini Flash 以及 Anthropic 的所有模型都便宜。
+根据 OpenAI 官方定价页，GPT-5.4 每百万输入 token 2.50 美元、每百万输出 token 15.00 美元——而且这还没到 272K 上下文阈值，过了之后输入成本会翻倍。Grok 4.1 Fast 是每百万输入 token 0.20 美元，带 200 万 token 的上下文窗口，单 token 比 GPT-5 mini、Gemini Flash 以及 Anthropic 的所有模型都便宜。面向个人开发者的低价档并不是从 Fast 才开始的——[开放 API、把单人业务的成本门槛打下来](/zh/blog/grok-3-api-solo-operator)，是 xAI 更早落下的一步棋，Fast 档只是延续。
 
 差距是真实的。但让我说说它实际意味着什么。
 
@@ -85,13 +85,13 @@ V4 的价格区间反映的是多家分析机构给出的上下限预测。官�
 
 上个月我花了一些时间，梳理自己在 AI 辅助工作流里真正把时间丢在了哪里。大致拆解是：搭建与提示词工程（很多）、跨长会话的上下文管理（比预期的多）、推理成本（几乎为零）。模型成本在我一天里几乎是隐形的。
 
-摩擦不在 token。摩擦在于设计不容易坏的工作流、在复杂任务中维持上下文，以及人工审阅输出所花的时间。
+摩擦不在 token。摩擦在于设计不容易坏的工作流、在复杂任务中维持上下文，以及人工审阅输出所花的时间。模型竞争的重心也正往这里移——[长上下文、重度 Google 生态的工作流怎么搭](/zh/blog/gemini-3-5-integration-solo-operators)，正变成比单价再降一分钱更大的分水岭。
 
 ## 那些不会消失的成本
 
 ### 搭建时间与工作流设计
 
-切换到新模型不是免费的。即便用 OpenAI 兼容的 API（DeepSeek 用的就是），你仍然要测试提示词、验证输出、重建工具集成。这些都是时间。
+切换到新模型不是免费的。即便用 OpenAI 兼容的 API（DeepSeek 用的就是），你仍然要测试提示词、验证输出、重建工具集成。这些都是时间——也是[每一波面向单人业务的新旗舰发布](/zh/blog/meta-muse-spark-one-person-company)背后藏着的换模型税，基准分再亮眼，这笔成本都不会自己消失。
 
 我估计，从一个正常工作的 GPT-5 环境真正迁移到 DeepSeek，视复杂度需要几个小时到几天——不是即插即用。
 
@@ -134,16 +134,3 @@ DeepSeek 宣称的 SWE-bench 分数只来自发布前的内部基准，独立评
 ![6.png](/zh/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
 
 总之，情况就是这样。成本故事是真的，架构改进也确实有趣——但 V4 还没上线，而且更便宜的 token 不会自动带来更好的工作流。未来几周值得盯紧。
-
-## 上一篇系列文章：
-
-→ [看看 AI 工作流在模型成本之外是如何真正失效的](/zh/blog/ai-workflow-for-solo-founders)
-
-→ [了解为什么上下文管理、而非 token，才是真正的瓶颈](/zh/blog/why-ai-forgets-between-sessions)
-
-→ [探索 AI Agent 如何改变单人创业者运营系统的方式](/zh/blog/ai-agent-solo-operators)
-
-→ [看看持久化 AI 记忆如何影响长期生产力](/zh/blog/what-is-persistent-ai-agent)
-
-→ [深入了解如何搭建结构化的 LLM 知识库](/zh/blog/llm-knowledge-base-solo-operators)
-

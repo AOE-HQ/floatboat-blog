@@ -103,7 +103,7 @@ draft: false
 
 越有用的工作区 Agent，越能让你把一段操作序列存成可以复用的东西。有人叫它技能（skills），有人叫它 combo，有人叫它工作流。命名还没定。形态是：你做过一次，下次 Agent 就能做类似的事，不用你再解释一遍。
 
-从这里开始，工作区 Agent 开始变得像工作流搭建器——只是靠"演示"成型，而不是靠"画图"成型。
+从这里开始，工作区 Agent 开始变得像工作流搭建器——只是靠"演示"成型，而不是靠"画图"成型。等同一段操作反复出现，[自己搭一套编排还是直接交给工作区跑](/zh/blog/dynamic-workflows-build-or-use-workspace)，就成了绕不开的岔路口。
 
 ## 工作区 Agent 为谁而造
 
@@ -164,16 +164,3 @@ draft: false
 三个问题都有了清晰的答案——那花上半小时随便鼓捣一下，大概是值得的。
 
 以上就是我眼下对这个品类的看法。它还很早，边界模糊，命名有争议。但这里有真东西，值得在营销话术追上之前，按你自己的理解把它弄明白。
-
-**系列前文：**
-
-  * [AI Agent 与聊天机器人：你的工作方式到底改变了什么](/zh/blog/ai-agent-vs-chatbot)
-
-  * [工作流搭建器 vs AI 工作区：两种形态迥异的自动化](/zh/blog/workflow-builder-vs-ai-workspace)
-
-  * [什么是持久化 AI Agent（以及为什么记忆会改变一切）](/zh/blog/what-is-persistent-ai-agent)
-
-  * [单人创始人的 AI 工作流：上下文切换到底疼在哪](/zh/blog/ai-workflow-for-solo-founders)
-
-  * [一人公司如何用 AI 像团队一样工作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

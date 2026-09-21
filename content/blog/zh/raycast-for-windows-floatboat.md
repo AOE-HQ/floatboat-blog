@@ -23,7 +23,7 @@ _如果你一直在搜「Raycast for Windows」，你不是一个人。成千上
 
 PowerToys Run 能用但过于简陋；Keypirinha 强大却偏开发者向；Wox 和 Flow Launcher 是可敬的开源努力，但缺了让 Raycast 显得像魔法的打磨、AI 集成和生态。
 
-但问题是：**效率工具的版图已经变了。**在 2026 年，你真正需要的不是一款启动器——而是一个 AI 原生的工作区：它懂你的工作、记得你的偏好、还能自主执行多步任务。而**[Floatboat](</>)**正是在这里登场的。
+但问题是：**效率工具的版图已经变了。**在 2026 年，你真正需要的不是一款启动器——而是一个 AI 原生的工作区：它懂你的工作、记得你的偏好、还能自主执行多步任务。而**Floatboat**正是在这里登场的。
 
 * * *
 
@@ -31,7 +31,7 @@ PowerToys Run 能用但过于简陋；Keypirinha 强大却偏开发者向；Wox 
 
 Floatboat 是第一个为一人公司、自由职业者和单人创业者打造的 AI Agent Workspace——**Windows 和 macOS 都能用**。它不是启动器，也不是聊天机器人。把它想成你的私人 AI 团队：就住在你桌面上，与你本地文件、浏览器和你已经在用的工具深度相连。
 
-Raycast 给你的是带插件的命令面板；Floatboat 给你的是一个**全栈 AI 工作区**，随你的需求成长：从一个简单的 Agent Chat 起步，再扩展成分屏文件管理、浏览器自动化、拖拽式上下文流转，以及叫**Combo Skills**的可复用 AI 工作流。
+Raycast 给你的是带插件的命令面板；Floatboat 给你的是一个**全栈 AI 工作区**，随你的需求成长：从一个简单的 Agent Chat 起步，再扩展成分屏文件管理、浏览器自动化、拖拽式上下文流转，以及叫**Combo Skills**的可复用 AI 工作流。而当工作本身就是写作时，这个工作区还能再伸一层：[Flow Mode](/zh/blog/introducing-flow-mode) 把语音口述变成文档内的合写——启动工作的那块界面，也正是草稿写完的地方。
 
 * * *
 
@@ -69,7 +69,7 @@ Raycast 最好的功能之一是剪贴板历史和片段系统。Floatboat 把�
 
   * 内置浏览器让 Agent 可以浏览网页、收集信息、自动化网页任务
 
-一切顺滑流动。你的上下文从不断裂。
+一切顺滑流动。你的上下文从不断裂。把浏览器交给 Agent，它就能自己跑完整个调研周期——[每周 TikTok Shop 调研自动化](/zh/blog/automate-tiktok-shop-research-fastmoss-floatboat) 就是这件事端到端的样子：浏览、收集、对比、交出一份简报，全程不需要人守着每一步。
 
 ### 4\. 原生桌面集成
 
@@ -123,7 +123,7 @@ Floatboat 是为身兼数职的人量身打造的：
 
 Floatboat 免费下载。开始用不需要信用卡。
 
-👉 **[下载 Floatboat for Windows（及 Mac）](</>)**
+👉 **[下载 Floatboat for Windows（及 Mac）](https://floatboat.ai/zh/download)**
 
 别再找 Raycast 的克隆版了。开始和一个真正会学你业务的 AI 队友一起工作吧。
 

@@ -49,7 +49,7 @@ Luna is the fastest and cheapest tier at $1 per million input tokens and $6 per 
 
 Luna is built for high-volume, latency-sensitive workloads where unit economics dominate: classification, extraction, routing, short-form replies, and the preprocessing steps that feed into heavier agent pipelines. In a calendar-driven AI setup, Luna handles the work that does not need deep reasoning — categorizing calendar events by type, extracting action items from email threads, routing meeting requests to the right agent pipeline — before handing the hard cases up to Terra or Sol.
 
-This tier also matters for cost modeling at scale. A solo operator running 10 million input tokens and 2 million output tokens per month would pay about $110 on Sol, $55 on Terra, and $22 on Luna for the same token volume. The gap between $110 and $22 is the range within which agentic workflows move from experimental to daily-driver economics.
+This tier also matters for cost modeling at scale. A solo operator running 10 million input tokens and 2 million output tokens per month would pay about $110 on Sol, $55 on Terra, and $22 on Luna for the same token volume. The gap between $110 and $22 is the range within which agentic workflows move from experimental to daily-driver economics — and the same slide is visible outside pure text work, in [what a single creator can now push through a full GPT Image 2 storyboard](/blog/gpt-image-2-storyboard-solo).
 
 ### 2.4 Complete Pricing Reference
 

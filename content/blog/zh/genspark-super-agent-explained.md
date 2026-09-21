@@ -29,7 +29,7 @@ Genspark 由 [MainFunc（一家 Palo Alto 公司）](https://mainfunc.ai/)打造
 
 我的理解是这样的：普通聊天机器人——ChatGPT、Claude、Gemini——给你的是对话。你问，它答，你再打磨。这个循环对很多事都管用。
 
-Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结果，它自己规划抵达的步骤。需要做五家公司的竞品分析外加一页总结幻灯片？不用来回提示二十分钟，Super Agent 把它拆成子任务：逐家调研、抓定价、组织对比、生成幻灯片。不同的专门 Agent 处理不同环节。
+Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结果，它自己规划抵达的步骤。需要做五家公司的竞品分析外加一页总结幻灯片？不用来回提示二十分钟，Super Agent 把它拆成子任务：逐家调研、抓定价、组织对比、生成幻灯片。不同的专门 Agent 处理不同环节。这种「按次组装」是今年 Agent 产品的两大方向之一——另一个方向是养常驻队伍：[Grok Bot 给每个 AI 队友配一台持久云电脑](/zh/blog/grok-bot)，让它在任务之间也持续在岗。
 
 **实际差异在输出形态。**聊天机器人在聊天窗口里给你文字，Genspark 给你结构化交付物——带引用的 Sparkpage、可导出的幻灯片、带真实数据的电子表格。这是实打实的区别，不只是包装。
 
@@ -88,16 +88,3 @@ Genspark Super Agent 则试图跳过这个循环。你描述一个想要的结�
 这就是我的真实看法。什么适合你，还是得你自己判断。
 
 ![5.png](/zh/blog/images/genspark-super-agent-explained/1779673431655-693b179e-e7d1-4c95-af7e-f78b5a6c178b.webp)
-
-## 往期文章
-
-• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](/zh/blog/ai-workflow-for-solo-founders) — 在加入又一个 AI 工作区之前，先搞清楚你的瓶颈是调研、执行还是上下文切换。
-
-• [AI Workspace Agents: Why Chat Windows Stop Scaling](/zh/blog/ai-workspace-agents) — 一旦工作超出单一聊天窗口，多模型系统才开始真正说得通。
-
-• [How One-Person Businesses Work Like a Team With AI](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai) — 看看单人创业者如何用 AI 系统在不多添复杂度的前提下减少重复劳动。
-
-• [How to Evaluate an Agentic AI Company Before You Commit](/zh/blog/agentic-ai-company-guide) — 无论你评估的是平台还是服务，工作流契合度都比功能清单更重要。
-
-• [Gemini 3.5 Integration: Does Another Model Actually Change Your Workflow?](/zh/blog/gemini-3-5-integration-solo-workflow) — 更多模型不会自动带来更好的工作流；有时候只是带来更多决策。
-

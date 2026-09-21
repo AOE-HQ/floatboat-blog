@@ -21,13 +21,13 @@ After digging in, my honest answer is: it depends on what you're trying to autom
 
 ### How They Differ from Standard Claude Usage
 
-Most people use Claude the same way they use a chat interface. You type something, Claude responds, you copy what you need and move on. That interaction ends when the conversation ends. There's no persistent state, no memory of what you did yesterday, no ability to run something while you're not watching.
+Most people use Claude the same way they use a chat interface. You type something, Claude responds, you copy what you need and move on. That interaction ends when the conversation ends. There's no persistent state, no memory of what you did yesterday, no ability to run something while you're not watching. Even where Claude has moved into your existing tools — [Claude Tag working as a shared teammate inside Slack](/blog/what-is-claude-tag) — the model is still reactive: it does what it's asked in the channel, then waits, rather than running unsupervised for hours.
 
 **Claude Managed Agents is a fundamentally different layer.** It's a managed infrastructure service from Anthropic that handles the execution environment for AI agents — sandboxing, long-running sessions, scoped permissions, tool execution, and observability — [launched April 8, 2026 in public beta](https://medium.com/@unicodeveloper/claude-managed-agents-what-it-actually-offers-the-honest-pros-and-cons-and-how-to-run-agents-52369e5cff14).
 
 In plain terms: instead of you prompting Claude and waiting for a response, you define a task, set the guardrails, and the agent runs it — potentially for hours — without you sitting there. The infrastructure that makes that possible (containers, session state, error recovery) is handled by Anthropic, not you.
 
-That's the actual difference. It's not about smarter responses. It's about ​**who manages the execution environment** ​.
+That's the actual difference. It's not about smarter responses. It's about ​**who manages the execution environment** ​. Once you see it that way, [what counts as a managed agent](/blog/what-are-claude-managed-agents) stops being a marketing label and becomes a concrete question about where your agent's runtime actually lives.
 
 ### What "Managed" Means in Practice
 
@@ -65,7 +65,7 @@ The multi-agent feature — where one agent coordinates others to parallelize wo
 
 A separate but related thread: Claude's computer use capability has expanded significantly in early 2026. By March 2026, Anthropic had shipped 12 major features in approximately 12 weeks — including enhanced computer use capabilities with the Sonnet 4.6 update and persistent agent threads for Pro and Max users.
 
-Computer use means Claude can control a desktop: navigate applications, click, type, read screens. This is distinct from Managed Agents (which runs in a sandboxed cloud environment), but they're part of the same directional push toward agents that can complete real multi-step workflows on your behalf.
+Computer use means Claude can control a desktop: navigate applications, click, type, read screens. This is distinct from Managed Agents (which runs in a sandboxed cloud environment), but they're part of the same directional push toward agents that can complete real multi-step workflows on your behalf — the same push [browser AI agents](/blog/browser-ai-agent-what-it-can-do) belong to, only scoped to the tabs you're already signed into.
 
 For Windows users specifically, this opens up automation paths that were previously only accessible to people comfortable with scripting.
 
@@ -122,14 +122,3 @@ These aren't competing options. They serve different points on the same journey.
 Anyway, that's where this stands for me. Managed Agents is a real infrastructure shift — not hype. But the question for a solo operator isn't "is this impressive" — it's "does this solve a problem I actually have, and at what complexity cost?" That answer varies depending on what you're building.
 
 I'll probably revisit this once the multi-agent and memory features come out of research preview. That's when the picture for individual operators gets genuinely interesting.
-
-## Previous Posts:
-
-→ Understand how **[AI agents actually work for solo operators](/blog/ai-agent-solo-operators)****​ ​**
-
-→ See the practical difference between **[AI agents vs AI assistants in real workflows](/blog/ai-agent-vs-ai-assistant)** → Learn how to[ design repeatable AI workflows instead of relying on one-off prompts](/blog/ai-workflow-for-solo-founders)
-
-→ Explore what **[persistent AI agents are and why memory changes everything](/blog/what-is-persistent-ai-agent)**
-
-→ Discover real-world **[AI agent use cases that actually translate into daily work](/blog/ai-agent-use-cases-real-examples)**
-

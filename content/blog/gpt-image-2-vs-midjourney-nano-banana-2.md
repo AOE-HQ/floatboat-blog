@@ -89,7 +89,7 @@ It also still has weaknesses on pixel-precise placement, brand logo accuracy, an
 
 **Leads:** raw aesthetic quality. If your output is moodboards, concept art, editorial visuals, or anything where "looks beautiful" matters more than "is technically accurate," V8 still has the edge. The painterly textures, the cinematic lighting, the way it handles atmosphere — nothing else feels quite the same. The [V8 alpha launch notes](https://wavespeed.ai/blog/posts/what-is-midjourney-v8-features-pricing-how-to-use-2026/) lay out the speed and quality jumps; the 5x speed improvement alone makes V7 feel old.
 
-**Falls behind:** anything text-heavy, multilingual, or production-pipeline focused. No public API still hurts for solo operators trying to integrate generation into their workflow. The GPU-hour pricing model is opaque — you can't predict your monthly cost the way you can with a per-image rate. And character consistency, while improved, still requires more prompt-engineering work than the alternatives.
+**Falls behind:** anything text-heavy, multilingual, or production-pipeline focused. No public API still hurts for solo operators trying to integrate generation into their workflow — [agentic AI tools](/blog/agentic-ai-tools) assemble multi-step pipelines by calling models through APIs, so a generator without one sits outside the automation regardless of image quality. The GPU-hour pricing model is opaque — you can't predict your monthly cost the way you can with a per-image rate. And character consistency, while improved, still requires more prompt-engineering work than the alternatives.
 
 ## Nano Banana 2 — the web-search edge and who it fits
 
@@ -150,16 +150,3 @@ I want to be careful not to overstate this: **most solo creators don't need thre
 That's where I land. The actual choice depends on what you make. If you're not sure, start with the free Nano Banana 2 tier this week, layer in GPT Image 2 when you need polished output, and only add Midjourney if you find yourself missing a specific look the others can't give you.
 
 When you need this, you'll know.
-
-## Previous Posts:
-
-  * [What’s the real difference between AI workspaces and ChatGPT?](/blog/ai-workspace-agents)
-
-  * [Not sure what AI agents actually do?](/blog/ai-agent-use-cases-real-examples)
-
-  * [Want to build your own workflow?](/blog/how-to-build-an-ai-agent)
-
-  * [If you care about how workflows actually run in practice, this one goes deeper](/blog/ai-agent-workflow-vibe-coding):
-
-  * [How solo operators use AI to work like a full team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

@@ -29,7 +29,7 @@ I've been thinking about this more carefully lately, and I think a lot of confus
 
 **Scaling revenue** means your income goes up. That can happen by raising prices, getting more clients, or selling something that doesn't require proportionally more of your time. All of these are valid.
 
-**Scaling yourself** means adding more hours. Working weekends. Taking every call. That's not scaling — that's just grinding, and it has a hard ceiling. Your body will find it eventually.
+**Scaling yourself** means adding more hours. Working weekends. Taking every call. That's not scaling — that's just grinding, and it has a hard ceiling. Your body will find it eventually. It's also the opposite of where the productivity conversation is heading — [OpenAI's four-day work week proposal](/blog/openai-4-day-work-week-one-person-company) rests on the premise that AI-driven gains should come back as time, not as more hours to fill.
 
 Scaling means creating repeatable workflows, reducing constant custom work, building predictable income, and increasing capacity without burning yourself out. It's about designing a business that can grow without relying on nonstop hustle.
 
@@ -83,7 +83,7 @@ AI is genuinely useful for Lever 1 (execution systems) and parts of Lever 3 (con
 
 The "build vs. use" question matters here. Most solo operators are better off using existing tools than building custom ones. The time cost of setup is real. I've spent hours configuring tools I used twice.
 
-One category I've been watching is AI workspaces — tools designed to handle multiple tasks in a single environment rather than requiring you to context-switch between five different apps. The promise is that you spend less time managing your tool stack and more time doing actual work. ​[Floatboat](</>)​ is one example in this space​, positioning itself as an AI workspace for solo operators who want document reading, research, and content editing in one place. I haven't done a deep dive on it yet — worth checking their **official site** if the category is interesting to you — but the underlying idea of reducing tool-switching overhead is real.
+One category I've been watching is AI workspaces — tools designed to handle multiple tasks in a single environment rather than requiring you to context-switch between five different apps. The promise is that you spend less time managing your tool stack and more time doing actual work. ​Floatboat​ is one example in this space​, positioning itself as an AI workspace for solo operators who want document reading, research, and content editing in one place. I haven't done a deep dive on it yet — worth checking their **official site** if the category is interesting to you — but the underlying idea of reducing tool-switching overhead is real.
 
 The honest version of what AI does for a one-person business: it compresses the time it takes to run Lever 1 systems. It doesn't replace the need to build them.
 
@@ -118,16 +118,3 @@ Anyway. That's where I am with this.
 I'll probably keep revisiting the ceiling question as my own setup evolves — I don't think I've figured it all out. But the frame of "three levers before headcount" has been more useful than anything else I've tried.
 
 If your situation looks anything like mine, it's probably worth sitting with for a bit before jumping to hire.
-
-## Previous Posts：
-
-  * Learn how to build a simple, effective **[AI workflow as a solo founder](/blog/ai-workflow-for-solo-founders)**
-
-  * Understand the difference between **[AI workspaces vs workflow builders](/blog/workflow-builder-vs-ai-workspace)**
-
-  * See why **[AI forgets between sessions — and how it slows you down](/blog/why-ai-forgets-between-sessions)**
-
-  * Explore how **[one-person businesses can operate like a team with AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-
-  * Discover practical **[AI agent use cases for real workflows](/blog/ai-agent-use-cases-real-examples)**
-

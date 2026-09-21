@@ -41,7 +41,7 @@ Prices pulled from each provider's docs, verified late April 2026.
 
 Grok 3 at $3/$15 sits right next to Claude Sonnet — it's priced as a _premium_ model, not a cost-leader. If you want cheap from xAI, you want **Grok 3 Mini** ($0.30/$0.50) or **Grok 4.1 Fast** ($0.20/$0.50). Those actually undercut most of the market.
 
-DeepSeek V3 is still the pricing floor for serious general-purpose models. An order of magnitude below Grok 3 on input, about 14x cheaper on output.
+DeepSeek V3 is still the pricing floor for serious general-purpose models. An order of magnitude below Grok 3 on input, about 14x cheaper on output — and [the DeepSeek V4 projections](/blog/deepseek-v4-api-solo-operator) point further down, not up.
 
 So when someone says "Grok 3 is cheap now" — it's not. The _Mini_ and _Fast_ variants are cheap. That distinction matters.
 
@@ -77,21 +77,8 @@ Once I'd done the math on my own usage, I realized the real cost wasn't the toke
 
 Managed agent platforms (Claude's, OpenAI's, the orchestration layer stuff) are solving a different problem — they handle the chain, not the per-call cost. Raw APIs give you flexibility and lower cost per call but leave the plumbing to you. Different tools, different stages of the same journey. If you're early and exploring, the managed stuff gets you moving. If you've nailed down the workflow and want to squeeze cost, the raw API route starts to make sense.
 
-For where I am — mostly exploring, occasionally building something stable — I've settled into a mix. Grok 3 Mini for high-volume background tasks, Claude or GPT for the thinking-heavy stuff, DeepSeek for anything I want to run cheap and dirty at scale. Not a recommendation. Just where I landed.
+For where I am — mostly exploring, occasionally building something stable — I've settled into a mix. Grok 3 Mini for high-volume background tasks, Claude or GPT for the thinking-heavy stuff, DeepSeek for anything I want to run cheap and dirty at scale. Not a recommendation. Just where I landed. The mix works because each model has a distinct lane, which is the same test that [decides whether a new integration — Gemini 3.5 being the current candidate — changes how you actually work](/blog/gemini-3-5-integration-solo-operators) or just adds another model to manage.
 
 ![5.png](/blog/images/grok-3-api-solo-operator/1776932977603-7e7aba35-fa7d-4d76-b064-9b3b721ca245.webp)
 
 That's my honest take, two months in. Cheaper tokens are real, but they're not the barrier most solo operators actually hit. When you need this level of price optimization, you'll know.
-
-**Previous Posts:**
-
-  * [What Is Vibe Coding (And Why It Changes How You Build)](/blog/what-is-vibe-coding)
-
-  * [AI Workflow for Solo Founders: Where the Real Bottlenecks Are](/blog/ai-workflow-for-solo-founders)
-
-  * [DeepSeek V4 API for Solo Operators: When Cheap Actually Matters](/blog/deepseek-v4-api-solo-operator)
-
-  * [AI Agent vs Chatbot: Why This Distinction Affects Your Stack](/blog/ai-agent-vs-chatbot)
-
-  * [Why AI Forgets Between Sessions (And Why It Matters for Automation)](/blog/why-ai-forgets-between-sessions)
-

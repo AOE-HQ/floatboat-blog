@@ -101,13 +101,13 @@ Before committing to anything new, I ask myself three questions. They've saved m
 
 I've started thinking about this as the difference between a tool and a workspace.
 
-An AI assistant does tasks. You bring it a problem, it produces output, session ends. Useful. But every session is essentially zero-sum — you put effort in, you get output out, nothing carries forward.
+An AI assistant does tasks. You bring it a problem, it produces output, session ends. Useful. But every session is essentially zero-sum — you put effort in, you get output out, nothing carries forward. That limitation gets more expensive as [AI agents in 2026 move from demos to real execution](/blog/ai-agents-2026-solo-operators), because an agent acting on your behalf inherits whatever context you never gave it.
 
 An AI workspace is something different. It's an environment where your work _and_ the AI exist together — where context accumulates, workflows persist, and the AI's help gets more accurate over time because it's seeing how you actually operate. The files you're working with, the decisions you're making, the edits you're applying — all of that becomes signal.
 
 The workspace framing changes what you're optimizing for. Not "is this output good enough?" but "is this environment learning to work the way I work?"
 
-This is where tools like [Floatboat AI](</>) sit in my thinking — they're oriented toward the workspace model rather than the assistant model, with the idea that the AI adapts to your specific work patterns over time rather than starting fresh each session. I haven't used it long enough to say definitively whether it delivers on that, but the framing at least matches the problem I've been trying to solve.
+This is where tools like Floatboat AI sit in my thinking — they're oriented toward the workspace model rather than the assistant model, with the idea that the AI adapts to your specific work patterns over time rather than starting fresh each session. I haven't used it long enough to say definitively whether it delivers on that, but the framing at least matches the problem I've been trying to solve.
 
 ![5.png](/blog/images/ai-workflow-for-solo-founders/1776149080224-27f4c9cb-b310-4be4-bd6b-012eda5cf7ab.webp)
 
@@ -126,16 +126,3 @@ According to [MIT Sloan and BCG's joint research on AI and organizational learni
 That's where I am with this right now. I'm still figuring out the right setup for my own workflow — I don't think there's a single right answer for everyone. But the framing shift helped me: stop asking "is this AI good?" and start asking "does this AI know how I work?"
 
 Those are very different questions. And for people running things solo, the second one is the one that actually matters.
-
-## Previous Posts：
-
-  * [If you’re still figuring out what a real AI workflow looks like, start here](/blog/ai-workflow-solo-founders)
-
-  * [This breaks down why AI tools keep forgetting everything between sessions](/blog/why-ai-forgets-every-session)
-
-  * [Want to understand the bigger shift from assistants to agents?](/blog/ai-agents-2026-solo-operators)
-
-  * [Read this](/blog/ai-agents-2026-solo-operators) [Not sure whether you need an AI agent or just a better assistant? This clarifies it](/blog/ai-agent-vs-ai-assistant)
-
-  * [If you're deciding between building workflows or using a workspace, this will help](/blog/workflow-builder-vs-ai-workspace)
-

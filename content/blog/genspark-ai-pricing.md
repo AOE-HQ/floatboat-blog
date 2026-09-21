@@ -75,7 +75,7 @@ This is the section I wish I'd read before upgrading.
 
 ## How It Compares to Similar Tools on Price
 
-The obvious comparison points are ChatGPT Plus at $20/month, Perplexity Pro at $20/month, and standalone media tools like Midjourney ($10–$60/month).
+The obvious comparison points are ChatGPT Plus at $20/month, Perplexity Pro at $20/month, and standalone media tools like Midjourney ($10–$60/month). The one competitor priced like Genspark — credits burned per agent task rather than a flat monthly chat fee — is [Manus](/blog/genspark-vs-manus), and that shared billing model makes it the only genuine like-for-like price comparison in this category.
 
 Genspark's pitch is that it ​**bundles research, chat, image generation, video creation, presentations, and AI agents into one subscription** ​. On paper, that's a lot of value for $25/month. If you're currently paying for two or three separate AI tools, consolidating into Genspark could genuinely reduce your total spend.
 
@@ -114,14 +114,3 @@ I'm still experimenting with it. I'll probably keep using Plus for now and see h
 That's where things stand with Genspark pricing right now. The platform is still young and changing fast — credit allocations, pricing tiers, and feature terms have all shifted in the few months I've been watching. If you're evaluating it, check the official numbers at the time you're ready to buy. What I wrote today might already be slightly different tomorrow.
 
 Alright, back to building things.
-
-**Previous Posts:**
-
-  * **real-world AI agents use cases across research, content, and operations**[https://floatboat.ai/blog/ai-agent-use-cases-real-examples](/blog/ai-agent-use-cases-real-examples)
-
-  * **how one-person businesses are starting to operate like a full team using AI roles**[https://floatboat.ai/blog/how-one-person-businesses-work-like-a-team-with-ai](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * **how AI automation works is actually priced in the real market**[https://floatboat.ai/blog/ai-automation-agency-pricing](/blog/ai-automation-agency-pricing)
-
-  * **how Lindy and Gumloop differ when it comes to agent-style workflows**[https://floatboat.ai/blog/lindy-vs-gumloop](/blog/lindy-vs-gumloop)
-

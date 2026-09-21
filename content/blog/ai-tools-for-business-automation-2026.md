@@ -59,7 +59,7 @@ Here's roughly what I'd suggest for someone building their first automation stac
 
 **For meetings and async communication:** A meeting assistant like [Fathom](https://fathom.video/) or Fireflies. Both auto-join your calls, transcribe, and produce summaries. Fathom has a generous free tier. Fireflies at around $10/month adds CRM sync. I verified pricing on their official pages — worth checking directly as this changes. The point isn't the transcript. It's that action items go somewhere useful instead of disappearing into a summary email.
 
-**For email and inbox:** This is where I've seen the most movement in 2026. Tools like [Lindy](https://www.lindy.ai/) are building genuine inbox agents — draft replies, categorize threads, surface follow-ups. I haven't personally run one long-term yet, so I'm cautious about recommending any specific one with full confidence. What I can say is: the category is maturing fast, and it's worth trialing something if inbox management is eating your week.
+**For email and inbox:** This is where I've seen the most movement in 2026. Tools like [Lindy](https://www.lindy.ai/) are building genuine inbox agents — draft replies, categorize threads, surface follow-ups. I haven't personally run one long-term yet, so I'm cautious about recommending any specific one with full confidence. What I can say is: the category is maturing fast, and it's worth trialing something if inbox management is eating your week. Inbox agents are one corner of the broader spread of [agentic AI tools](/blog/agentic-ai-tools), though, and knowing which type you're actually shopping for keeps a trial from turning into a month of tool-hopping.
 
 **For content support:** Claude or ChatGPT as a general assistant for drafting, repurposing, and research summarization. Claude handles longer documents and nuanced writing tasks better in my experience. ChatGPT has a slightly larger ecosystem of integrations. Both have $20/month plans that are worth it if you're using them daily.
 
@@ -104,16 +104,3 @@ I do this every three months. Takes about 45 minutes. Has saved me from more tha
 I'm still figuring out parts of this. The inbox automation category in particular is moving fast enough that I'd encourage checking current reviews rather than trusting any single article — including this one — as the final word on specific tools. The category of **ai tools for business automation** is genuinely maturing, and what was true six months ago sometimes isn't anymore.
 
 But the underlying logic? Mostly stable. Start with workflow pain. Keep your stack small. Audit it regularly. The tools are less important than the discipline.
-
-## Previous Posts:
-
-  * Most solo founders don’t need a custom AI platform — they need a clearer workflow first. Here’s how AI workflow design actually scales without creating operational chaos — [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
-
-  * Before hiring an agency to automate everything, understand the difference between workspace agents, workflow builders, and where each one actually fits — [workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * A lot of “AI automation” problems are really context-switching problems inside fragmented systems — this is the operational bottleneck most teams miss — [stop context switching with workspace agents](/blog/stop-context-switching-workspace-agent)
-
-  * If you’re evaluating AI vendors, this breakdown of AI workspace agents explains where the category genuinely helps — and where it still creates more setup overhead than value — [AI workspace agents explained](/blog/ai-workspace-agents)
-
-  * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](/blog/ai-agent-solo-operators)
-

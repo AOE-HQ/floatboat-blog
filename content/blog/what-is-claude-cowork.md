@@ -50,7 +50,7 @@ Cowork is not a separate model. It is a **product mode** built on Claude's agent
 
 ### 2.1 The Core Definition
 
-Claude Cowork is an agentic task mode inside Claude where you describe a goal and desired outcome, Claude creates a plan, executes across the files and tools you authorize, and returns finished work — documents, organized folders, spreadsheets, research briefs — for your approval. Unlike Chat, Cowork can **read, edit, and create files** in folders you specify, run multi-step workflows without you re-prompting every step, and (on supported plans) continue work in remote sessions while you are away from your desk.
+Claude Cowork is an agentic task mode inside Claude where you describe a goal and desired outcome, Claude creates a plan, executes across the files and tools you authorize, and returns finished work — documents, organized folders, spreadsheets, research briefs — for your approval. Unlike Chat, Cowork can **read, edit, and create files** in folders you specify, run multi-step workflows without you re-prompting every step, and (on supported plans) continue work in remote sessions while you are away from your desk. That emphasis on polished deliverables over raw text is the same fault line argued in [HTML is the new Markdown](/blog/html-is-the-new-markdown): how much formatting an agent should own before the artifact reaches a human.
 
 The official help center states that Cowork uses the same agentic architecture as Claude Code, without requiring a terminal. Execution runs remotely in beta: Claude's work happens in an isolated environment on Anthropic's servers, sessions sync to your Claude account, and the desktop app bridges to local files or your browser when a task needs assets on your machine.
 
@@ -88,7 +88,7 @@ Use **Chat** when the work is conversational: explore an idea, rewrite a paragra
 
 Use **Claude Code** when the artifact is code: features, fixes, refactors, tests, infrastructure scripts. Code expects comfort with terminals or IDE extensions and grants deep repository access. If your job is shipping software, Code is the purpose-built path; Cowork will feel like the wrong tool even though both are "agents."
 
-Use **Claude Cowork** when the deliverable is operational knowledge work: organize a folder of contracts, build a spreadsheet from exports, synthesize research into a formatted doc, prepare materials for a meeting from connected apps, or run a recurring report on a schedule. Cowork fits episodic, file- and app-heavy batches that you initiate — or schedule explicitly — rather than pair-programming sessions.
+Use **Claude Cowork** when the deliverable is operational knowledge work: organize a folder of contracts, build a spreadsheet from exports, synthesize research into a formatted doc, prepare materials for a meeting from connected apps, or run a recurring report on a schedule. Cowork fits episodic, file- and app-heavy batches that you initiate — or schedule explicitly — rather than pair-programming sessions. These are also the job shapes where [delegated agent work has actually held up in practice](/blog/ai-agent-use-cases-real-examples), and where its failure modes are documented.
 
 The following table summarizes trigger, output, and typical user; verify current platform support on Anthropic's official pages before committing to a workflow.
 
@@ -106,7 +106,7 @@ Cowork did not invent desktop agents. It commercialized a pattern — local file
 
 **Desktop cowork clones (open source).** Eigent, OpenWork, Open Cowork, and PawWork position themselves as local-first or Cowork-inspired desktops with model choice, BYOK, and inspectable code. They trade Anthropic's polish and single-vendor billing for flexibility and data sovereignty. Cowork remains the reference implementation for "what Anthropic thinks a knowledge-work agent should feel like" inside Claude.
 
-**Chat-based assistants with tools.** ChatGPT Projects, Gemini with Workspace, and Claude Chat with artifacts handle fragments of the same job — research, drafting, file analysis — but typically require you to pull work forward turn by turn. Cowork's differentiation is **end-to-end task ownership** with less copy-paste assembly.
+**Chat-based assistants with tools.** ChatGPT Projects, Gemini with Workspace, and Claude Chat with artifacts handle fragments of the same job — research, drafting, file analysis — but typically require you to pull work forward turn by turn. Cowork's differentiation is **end-to-end task ownership** with less copy-paste assembly. All-in-one "super agent" products such as [Genspark's Super Agent](/blog/genspark-super-agent-explained) share that end-to-end ambition through hosted research-and-page generation, though they start from the open web rather than your local folders.
 
 **Calendar-driven proactive agents.** A separate architecture treats calendar events and deadlines as triggers: prep runs before calls, follow-ups after, deliverables ahead of due dates without you reopening an agent surface. That model answers "what should happen because this event exists?" rather than "what should happen when I assign a task?" The agentic calendar category formalizes the calendar-as-runtime idea; Cowork can participate in meeting workflows via connectors, but its design center remains user- or schedule-initiated task delegation, not event-native execution. Solopreneurs whose week is mostly recurring client calls and deadline blocks sometimes combine both layers — Cowork for ad-hoc file projects, calendar-driven agents for rhythm work — rather than treating either as a full replacement.
 
@@ -114,7 +114,7 @@ Cowork did not invent desktop agents. It commercialized a pattern — local file
 
 ## 5\. Who Should Use Cowork — and Who Should Not
 
-Cowork earns its subscription cost when your work produces **reviewable artifacts** from messy inputs — folders, exports, scattered notes — and you value Anthropic's integrated connectors and permission model over assembling your own agent stack.
+Cowork earns its subscription cost when your work produces **reviewable artifacts** from messy inputs — folders, exports, scattered notes — and you value Anthropic's integrated connectors and permission model over assembling your own agent stack. The same decision logic applies if someone quotes you for [custom agent development](/blog/ai-agent-development-services): first check whether the product you already subscribe to covers the integration and orchestration work being priced.
 
 Strong fits include operators who run recurring operational batches (weekly metrics decks, contract triage, campaign exports), consultants who live in local files and client folders, and team leads who want delegated research or document assembly without hiring a coordinator for every small project. Anthropic's enterprise positioning emphasizes cross-app passes — query Slack and Databricks in one run, per customer quotes on the product page — which matters when your pain is scattered tools, not missing intelligence.
 

@@ -31,7 +31,7 @@ I still use [ChatGPT](https://openai.com/gpt-5/) almost every day. So does prett
 
 A workspace agent bets on something different: **the AI shouldn't be a conversation you visit — it should be a worker that lives next to your files, tools, and tabs.** Instead of copying-pasting a document into a chat, the agent reads the document. Instead of describing a browser tab, the agent sees it. Instead of one turn at a time, it runs a loop.
 
-Anthropic's engineering team has a [clean definition of agents](https://www.anthropic.com/research/building-effective-agents) that I keep coming back to: agents are systems where an LLM dynamically directs its own process and tool usage, maintaining control over how it accomplishes a task — as opposed to workflows, where the path is hardcoded. That distinction matters more than the marketing realizes.
+Anthropic's engineering team has a [clean definition of agents](https://www.anthropic.com/research/building-effective-agents) that I keep coming back to: agents are systems where an LLM dynamically directs its own process and tool usage, maintaining control over how it accomplishes a task — as opposed to workflows, where the path is hardcoded. That distinction matters more than the marketing realizes. It's also why [workspace agents and workflow builders](/blog/workspace-agents-vs-workflow-builders) get lumped together so often: both put AI inside the work, but a workspace agent decides its path as it goes, while a workflow builder pins the path down before anything runs.
 
 Wait — this is the part worth sitting with. A chat assistant ​ _responds_ ​. A workspace agent ​ _operates_ ​. [IBM frames the same split a little differently](https://www.ibm.com/think/topics/ai-agents-vs-ai-assistants): assistants suggest actions for you to approve; agents reason, decide, and act using external tools. Same idea, different words.
 
@@ -138,16 +138,3 @@ Fit matters more than features. Be honest about whether you actually have the pr
 Anyway — that's my read as of today. The **workspace agents vs chat assistants** question isn't really about which category wins. It's about which fits the work in front of you. For a quick question, chat is still the cleanest thing ever built. For a sprawling multi-tool job, a workspace agent earns its keep. The trick is being honest about which one you're actually doing.
 
 I'll update this if I change my mind. I've changed it before.
-
-**Previous Posts:**
-
-→ [Understand how AI workspace agents actually operate in real workflows](/blog/ai-workspace-agents)
-
-→ [See the real difference between AI agents and chat assistants in practice](/blog/ai-agent-vs-ai-assistant)
-
-→ [Learn how solo operators are using AI agents to scale their work in 2026](/blog/ai-agents-2026-solo-operators)
-
-→ [Explore practical AI agent use cases across real workflows](/blog/ai-agent-use-cases-real-examples)
-
-→ [Discover how one-person businesses run like full teams using AI systems](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

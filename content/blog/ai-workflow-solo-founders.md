@@ -31,7 +31,7 @@ Last month I mapped out everything I do in a typical week. Content research, wri
 
 The standard advice is: use ChatGPT for writing, [Zapier for automation](https://zapier.com/workflows), Notion for project management, and maybe a separate tool for research. That's four tools, four logins, four sets of context that don't talk to each other. Each one knows a tiny slice of your work, but ​**none of them know how your work actually fits together** ​.
 
-I used to think more tools meant more productivity. I don't anymore.
+I used to think more tools meant more productivity. I don't anymore — the more convincing framing I've come across is [role-based AI workflows](/blog/what-gstack-gets-right-about-one-person-businesses), where each of those five jobs gets an AI with a defined role and its own context, instead of five tools that share none.
 
 ![22.PNG](/blog/images/ai-workflow-solo-founders/1775794469214-45bbbaf7-1e3c-4c4a-a8e7-feb28560363d.webp)
 
@@ -137,7 +137,7 @@ I'm not going to pretend this is all upside. Every approach has costs, and I thi
 
   * **Cost uncertainty.** Credit-based pricing models can make monthly costs unpredictable for heavy users. Worth watching closely if you're on tight margins.
 
-The tools in this category are evolving fast. Newer entrants like [Floatboat](</>) are taking an interesting approach — building the AI workspace as a desktop app where the file system is the primary interface, with features like Combo Skills that let you package a completed workflow into a reusable automated process. I haven't put enough hours into it to give a definitive take, but the concept of learning from how you work rather than just what you ask is one I'm watching closely.
+The tools in this category are evolving fast. Newer entrants like Floatboat are taking an interesting approach — building the AI workspace as a desktop app where the file system is the primary interface, with features like Combo Skills that let you package a completed workflow into a reusable automated process. I haven't put enough hours into it to give a definitive take, but the concept of learning from how you work rather than just what you ask is one I'm watching closely.
 
 ![66.png](/blog/images/ai-workflow-solo-founders/1775794509504-85130862-4edc-4f3b-b077-8ae0ab3ec011.webp)
 
@@ -146,16 +146,3 @@ That's where I am with this right now. The shift from "AI as a chatbot" to "AI a
 If your setup looks anything like mine, this might be worth exploring. I'll keep experimenting and share more as I learn.
 
 Back to building things.
-
-## Previous Posts:
-
-  * [If AI forgetting your context is the problem, here’s why that happens every session](/blog/why-ai-forgets-every-session)
-
-  * [Curious how persistent AI memory changes the workflow model? Start with this breakdown](/blog/what-is-persistent-ai-agent)
-
-  * [Still unsure how AI workspaces differ from traditional workflow builders? This explains the shift](/blog/workflow-builder-vs-ai-workspace)
-
-  * [Want a practical example of what an AI-powered solo workflow looks like in action? See this setup](/blog/feishu-cli-solo-work-setup)
-
-  * [And if you're wondering how solo operators actually scale with AI day to day, this is worth reading](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

@@ -73,7 +73,7 @@ None of this is insurmountable. But it's more than one afternoon of setup.
 
 ### Setup and Maintenance Overhead
 
-Let's talk honestly about time. Getting a basic **Lark ​CLI** integration running — something that actually does a useful thing reliably — probably takes a competent developer a full day. For a solo operator who isn't primarily a developer, double that conservatively.
+Let's talk honestly about time. Getting a basic **Lark ​CLI** integration running — something that actually does a useful thing reliably — probably takes a competent developer a full day. For a solo operator who isn't primarily a developer, double that conservatively. A close look at [what a Feishu CLI setup actually involves in solo work](/blog/feishu-cli-solo-work-setup) tells the same story — the integration itself is the short part; the surrounding work isn't.
 
 Access credentials have a validity period, and developers need to set up business logic to regularly refresh credentials on their own servers to prevent expiration. That means your integration needs to _actively manage_ its own authentication. It's not a set-and-forget situation.
 
@@ -164,17 +164,3 @@ And if you do decide to go the CLI route, start with **the official larksuite/cl
 Anyway, that's what I actually learned from this particular rabbit hole. If you're seriously considering the CLI path, it's worth it to spend 30 minutes reading through the developer documentation before committing. Sometimes the answer is "yes, build it." More often than I expected, the answer is "there's a simpler way that breaks less."
 
 _Back to building things._
-
-## Previous Posts:
-
-  1. **[Explore the pros and cons of building custom AI agents vs using pre-built platforms](/blog/ai-agent-vs-ai-assistant)**
-
-  2. **[Learn more about Lark integrations and alternatives to build smarter workflows](/blog/how-to-build-an-ai-agent)**
-
-  3. **[Check out alternatives to Gumloop for your AI workspace needs](/blog/gumloop-alternatives-2026)**
-
-  4. **[Discover the best AI agent development services for customized needs](/blog/ai-agent-development-services)**
-
-  5. **[Find out how workflow builders compare to AI workspaces for integrating tools like Lark](/blog/workflow-builder-vs-ai-workspace)**
-
-

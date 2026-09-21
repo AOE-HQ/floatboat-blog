@@ -59,7 +59,7 @@ Let me break down the parts that actually matter for daily work.
 
 This section is for everyone trying to **integrate Outlook Calendar with Google Calendar** at the same time. It's a more common situation than either Microsoft or Google seems to design for.
 
-Here's what actually works: you can subscribe to a Google Calendar inside Outlook (or vice versa) using an ICS link. This gives you a read-only view of one calendar inside the other. Events show up, but you can't edit them from the subscribed side, and **updates can take hours to sync** — sometimes longer. It's a view, not a true integration.
+Here's what actually works: you can subscribe to a Google Calendar inside Outlook (or vice versa) using an ICS link. This gives you a read-only view of one calendar inside the other. Events show up, but you can't edit them from the subscribed side, and **updates can take hours to sync** — sometimes longer. It's a view, not a true integration. That read-only, slow-refresh pattern isn't unique to Microsoft's side of the fence, either — bridging [Google Calendar and Apple Calendar](/blog/google-calendar-vs-apple-calendar) through a webcal subscription runs into the same one-way limitation.
 
 For two-way sync — where changes in either calendar update the other — you need a third-party tool. I've tried a couple but haven't settled on one I'd fully recommend yet. They work, but they add another subscription, another set of permissions, and another thing that can break when an API changes. I'm one data point — your experience might be different.
 
@@ -77,21 +77,6 @@ Both Google Calendar and Outlook are good at telling you what's scheduled. Remin
 
 **Scheduling is not execution.** The **Outlook calendar vs Google calendar** question matters for coordination, but it says nothing about whether the work behind those events is actually moving.
 
-That's what got me looking into [Floatboat](</>). It doesn't replace either calendar — it sits after them. Your calendar holds the schedule, and Floatboat uses agents to push the work forward: prepping meeting briefs from context before you ask, drafting follow-ups, running recurring work loops that used to eat an hour of manual setup every week. I'm still early with it, but the shift from "organized schedule" to "proactive execution" has been the most useful thing I've found this year. If your calendar is full but your output still depends on you manually opening every tab and chasing every next step — that's the gap worth exploring.
+That's what got me looking into Floatboat. It doesn't replace either calendar — it sits after them. Your calendar holds the schedule, and Floatboat uses agents to push the work forward: prepping meeting briefs from context before you ask, drafting follow-ups, running recurring work loops that used to eat an hour of manual setup every week. I'm still early with it, but the shift from "organized schedule" to "proactive execution" has been the most useful thing I've found this year. If your calendar is full but your output still depends on you manually opening every tab and chasing every next step — that's the gap worth exploring.
 
 That's my honest take. Pick the calendar that matches where your work already lives — fighting your ecosystem creates more friction than any feature advantage is worth. And if you've already figured that out but your weeks still feel like you're manually pushing every task your calendar surfaces, maybe the next thing to explore isn't a better calendar. It's what happens after the reminder fires.
-
-## Previous Posts:
-
-• Still switching between Gmail, Docs, calendars, and task apps all day? See why many solo operators are rethinking tool-hopping in **[Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent)**
-
-• If your calendar keeps surfacing work but you're still manually doing every next step, here's how **[Workspace Agents for Solo Operators](/blog/workspace-agents-for-solo-operators)** approach execution differently.
-
-• Calendars manage schedules, but workflows move work. Read **[AI Workflow for Solo Founders: Why Demos and Daily Work Look Different](/blog/ai-workflow-for-solo-founders)** for a practical look at where work systems usually break.
-
-• Not sure whether you need an assistant, an automation, or an agent? **[Workspace Agents vs Chat Assistants](/blog/workspace-agents-vs-chat-assistants)** breaks down the differences in real-world work setups.
-
-• If recurring prep work, follow-ups, and admin loops keep eating your week, **[How to Build AI Agents for Repeated Work](/blog/how-to-build-ai-agents-for-repeated-work)** explores how repetitive workflows can be handled differently.
-
-![5.png](/blog/images/google-calendar-vs-outlook/1780019885028-894c0c3e-59ce-4f55-9689-cdbf40d1aef7.webp)
-

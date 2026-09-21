@@ -89,7 +89,7 @@ GPT Image 2 在此领先，而且优势不小。Nano Banana 2 处理中日韩文
 
 **领先在：**纯粹的审美质感。如果你的产出是 moodboard、概念美术、社论视觉，或任何「好看」比「技术准确」更重要的东西，V8 仍有优势。那种绘画般的纹理、电影感的布光、它对氛围的拿捏——没有别的东西有同样的感觉。[V8 alpha 发布说明](https://wavespeed.ai/blog/posts/what-is-midjourney-v8-features-pricing-how-to-use-2026/)列出了速度与质量跃升；光是 5 倍提速就让 V7 显得过时。
 
-**落后在：**任何文字密集、多语言、或面向生产管线的东西。没有公开 API，对想在生产流里集成出图的单人创业者仍然很伤。GPU 时长的计费模式不透明——你没法像按张计价那样预测每月成本。角色一致性虽有改善，仍比对手需要更多提示词工程功夫。
+**落后在：**任何文字密集、多语言、或面向生产管线的东西。没有公开 API，对想在生产流里集成出图的单人创业者仍然很伤——[Agentic AI 工具](/zh/blog/agentic-ai-tools) 组装多步管线靠的就是通过 API 调用模型，一个没有 API 的出图模型，图再好看也只能留在自动化之外。GPU 时长的计费模式不透明——你没法像按张计价那样预测每月成本。角色一致性虽有改善，仍比对手需要更多提示词工程功夫。
 
 ## Nano Banana 2：联网搜索优势，以及适合谁
 
@@ -146,20 +146,3 @@ GPT Image 2 在此领先，而且优势不小。Nano Banana 2 处理中日韩文
 **以下情况再等等：**你现在的配置没让你感到痛。Image Arena 领先 242 分是真的，但**基准差距并不总能转化为工作流差距。**如果你的产出在正常交付、客户也满意，升级可以等到下一个计费周期再说。
 
 ![6.png](/zh/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258163108-0603b3f3-2195-41f9-a39c-89e41c89fb4f.webp)
-
-## 往期文章
-
-  * [AI 工作区和 ChatGPT 的真正差别是什么？](/zh/blog/ai-workspace-agents)
-
-  * [不确定 AI Agent 到底做什么？](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [想自己搭工作流？](/zh/blog/how-to-build-an-ai-agent)
-
-  * [如果你在意工作流在实践中到底怎么跑，这篇挖得更深](/zh/blog/ai-agent-workflow-vibe-coding)：
-
-  * [单人创业者如何用 AI 像完整团队一样工作](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-以上就是我的结论。真正的选择取决于你做什么东西。如果你拿不准，这周就从免费的 Nano Banana 2 档开始，需要精修成品时再叠上 GPT Image 2，只有当你想念某个别人给不出的特定视觉调性时，才加 Midjourney。
-
-等你需要它的时候，你自然会知道。
-

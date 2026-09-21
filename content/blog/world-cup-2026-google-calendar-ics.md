@@ -141,12 +141,3 @@ For most readers, the choice comes down to maintenance. A one-time ICS import ta
 If you want zero upkeep, a calendar subscription is the cleaner path. FloatCup is built for that use case: subscribe once, receive automatic match-time updates through the calendar, and use reminders without configuring 104 events manually.
 
 Either way, create a dedicated “World Cup 2026” calendar layer before you import or subscribe. It keeps the tournament separate from work meetings and makes cleanup after the final a one-step action instead of a manual deletion project.
-
-## Related Reading
-
-  * [World Cup 2026 Schedule: Full Fixtures & Calendar Sync](/blog/world-cup-2026-schedule) — the complete fixture list and calendar context.
-
-  * [FloatCup: Subscribe to the World Cup 2026 Calendar in One Click](/blog/floatcup-world-cup-2026-calendar-subscribe) — the zero-setup calendar subscription option.
-
-  * [USA World Cup 2026 Schedule: Match Times & Reminders](/blog/world-cup-2026-schedule-usa) — USMNT kickoff times and reminder setup.
-

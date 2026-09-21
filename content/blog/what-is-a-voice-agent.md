@@ -68,7 +68,7 @@ A voice agent is **not a telephony voice bot** in the classic sense. Phone bots 
 
 A voice agent is **not text chat with text-to-speech bolted on** as an afterthought. Read-aloud of typed replies misses the prosody, timing, and interruption semantics that make spoken interaction work. The best mid-2026 products train or tune audio pathways for dialogue rather than treating speech as an export format.
 
-Finally, a voice agent is **not synonymous with "any product that accepts microphone input."** Meeting transcribers like Otter or Fireflies produce records of what was said; they do not generally maintain an interactive spoken reasoning loop with the user during the call. Transcription is archival; voice agency is interactive.
+Finally, a voice agent is **not synonymous with "any product that accepts microphone input."** Meeting transcribers like Otter or Fireflies produce records of what was said; they do not generally maintain an interactive spoken reasoning loop with the user during the call. Transcription is archival; voice agency is interactive. The same caution applies to office-agent platforms: ByteDance's [Doubao Work](/blog/what-is-doubao-work) runs an agent across Feishu and a virtual desktop, where speech is at most one input channel — the defining loop is delegated computer work, not spoken reasoning.
 
 ---
 

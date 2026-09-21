@@ -120,7 +120,7 @@ Some products **pair with** channel agents rather than replace Tag's Slack job:
 
 **Slack AI (read layer).** Keep Slack's native summaries and search; add Tag or alternatives only in channels where **execution** matters.
 
-**Claude Cowork (desktop batches).** Individual knowledge workers still delegate local folder work through Cowork; Tag does not replace that surface. See what is Claude Cowork.
+**Claude Cowork (desktop batches).** Individual knowledge workers still delegate local folder work through Cowork; Tag does not replace that surface — [Cowork remains the desktop-delegation surface](/blog/what-is-claude-cowork), which is exactly the job it keeps doing. Solo terminal work is a different job again: [coding agents](/blog/best-claude-code-alternatives) handle repository delegation without a channel in the loop, which is why they never compete with Tag.
 
 ## 5\. How to Choose From This Ranking
 
@@ -138,7 +138,7 @@ Budget follows job shape. Tag adds Team/Enterprise seat costs plus org-metered t
 
 ## 6\. What's Next for AI Teammate Rankings
 
-Three trends will keep these lists volatile through 2026–2027. **Platform bundling** : Slackbot, Copilot in Teams, and Claude Tag will each claim "teammate" semantics inside incumbent chat — buyers must compare job fit, not tab names. **Agent-native networks** : FloatIM-class products pressure the assumption that agents must live inside human-first IM. **Governance as product** : Operant and Junior represent a split between **autonomy** (Tag Ambient) and **attribution/approval** — enterprise procurement will force explicit choice, not default sliders. The ranking also assumes Tag is not Claude Code with Slack notifications; for the product-form split — task horizon, cost, and permissions — see Claude Code vs Cowork vs Tag.
+Three trends will keep these lists volatile through 2026–2027. **Platform bundling** : Slackbot, Copilot in Teams, and Claude Tag will each claim "teammate" semantics inside incumbent chat — buyers must compare job fit, not tab names. **Agent-native networks** : FloatIM-class products pressure the assumption that agents must live inside human-first IM. **Governance as product** : Operant and Junior represent a split between **autonomy** (Tag Ambient) and **attribution/approval** — enterprise procurement will force explicit choice, not default sliders. The ranking also assumes Tag is not Claude Code with Slack notifications — the product-form split in [task horizon, cost, and permissions across the three Claude surfaces](/blog/claude-code-vs-cowork-vs-tag) is what actually separates them.
 
 The ranking reward goes to clarity: define the channel or network where work is public, map governance requirements, then pick from the numbered list — not from whoever ranked first on a generic AI directory.
 

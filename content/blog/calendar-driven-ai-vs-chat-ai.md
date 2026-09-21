@@ -66,7 +66,7 @@ Calendar-driven AI treats events as semantically distinct. A client pitch trigge
 
 The framing that best captures calendar-driven AI is the operating system metaphor. Your computer's OS doesn't wait for you to tell it to run a background process — it runs disk cleanup, checks for updates, indexes files, all without your involvement. The calendar, in a calendar-driven AI system, plays the same role. It's the runtime that schedules and executes work processes. The events are the cron jobs. The AI agents are the processes.
 
-This metaphor is useful because it clarifies what calendar-driven AI is not. It's not "an AI assistant that can access your calendar." That's a feature added to a chat interface. Calendar-driven AI is an architectural choice: the calendar is the primary execution environment, not a data source that happens to be connected.
+This metaphor is useful because it clarifies what calendar-driven AI is not. It's not "an AI assistant that can access your calendar." That's a feature added to a chat interface. Calendar-driven AI is an architectural choice: the calendar is the primary execution environment, not a data source that happens to be connected. That choice is what makes a calendar run itself — [the difference between scheduling work and letting the schedule trigger it](/blog/what-if-your-calendar-could-run-itself) is the difference between owning a calendar and having one work for you.
 
 * * *
 
@@ -130,19 +130,10 @@ Chat-based AI is also the right choice for tasks that don't follow a schedule. W
 
 ### 5.2 Calendar-Driven AI Excels At: Recurring Workflows, Deadline-Driven Tasks, Meeting Lifecycle
 
-If your work is structured around a schedule — recurring meetings, client calls, project deadlines, weekly reviews — calendar-driven AI addresses the fundamental friction of that structure: the gap between knowing something is on the calendar and being ready for it when it arrives.
+If your work is structured around a schedule — recurring meetings, client calls, project deadlines, weekly reviews — calendar-driven AI addresses the fundamental friction of that structure: the gap between knowing something is on the calendar and being ready for it when it arrives. The category built on closing that gap — [the agentic calendar](/blog/best-ai-scheduling-assistant) — now spans tools that differ mainly in how much of the work they take over.
 
 For solo founders and solopreneurs in particular, this gap is expensive. Every client call requires preparation. Every deadline requires materials. Every meeting produces action items that need tracking. Doing this manually means either spending significant time on prep and follow-up — time that could go to actual work — or operating at a lower level of preparation than the situation demands. Calendar-driven AI automates the assembly work, leaving the strategic thinking to the human.
 
 The two paradigms are complementary. Use chat-based AI for exploration and creation. Use calendar-driven AI for execution and follow-through. The calendar isn't replacing the chat window; it's handling the work that the chat window was never designed to do.
 
 * * *
-
-## 6\. Related Reading
-
-  * What Is an Agentic Calendar? — The foundational definition of the category that calendar-driven AI enables.
-
-  * What Is an AI Scheduling Agent? — The four-generation evolution from smart schedulers to calendar-driven agent OS.
-
-  * How AI Meeting Prep Actually Works — A concrete walkthrough of what calendar-driven preparation looks like in practice.
-

@@ -41,7 +41,7 @@ A working sequence on my screen literally looks like this. Turn 1: full establis
 
 ### Reasoning mode for composition planning
 
-Thinking mode is the second piece. [The Next Web's coverage](https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation) describes it as the model planning, reasoning, and verifying before generating — and notes that paid tiers (Plus at $20/month, Pro at $200/month) unlock it while the free tier only gets Instant. For storyboarding specifically this matters because a single prompt can return up to eight frames with character and object continuity baked in. I tested this with my opening sequence — got 8 frames where the same person, same tumbler, same lighting carried across the set. Not perfect, but recognizable.
+Thinking mode is the second piece. [The Next Web's coverage](https://thenextweb.com/news/openai-chatgpt-images-2-0-reasoning-image-generation) describes it as the model planning, reasoning, and verifying before generating — and notes that paid tiers (Plus at $20/month, Pro at $200/month) unlock it while the free tier only gets Instant. For storyboarding specifically this matters because a single prompt can return up to eight frames with character and object continuity baked in. I tested this with my opening sequence — got 8 frames where the same person, same tumbler, same lighting carried across the set. Not perfect, but recognizable. That batch-and-check pattern is doing real work outside film boards too — [the solo manga chapter workflow built on the same eight-frame batches](/blog/gpt-image-2-manga-comic-workflow) shows roughly how far that continuity stretches before frames need re-rolling.
 
 [BuildFastWithAI's developer breakdown](https://www.buildfastwithai.com/blogs/chatgpt-images-2-0-gpt-image-2-2026) flags the trade-off honestly: Thinking mode adds 15–30 seconds of latency per call. For storyboard drafting that's fine. For real-time anything, it's not.
 
@@ -132,16 +132,3 @@ I want to be careful not to overstate this: **GPT​ Image 2 doesn't replace a s
 That's where I am with this. I'm not going to fire my future storyboard artist; I am going to stop pretending I don't have time to board my own short videos. **The tool isn't replacing the craft. It's removing the excuse.**
 
 When you need this, you'll know.
-
-## Previous Posts:
-
-  * [Learn how to structure AI workflows that actually hold up across multi-step creative tasks](/blog/ai-workflow-for-solo-founders)
-
-  * [See how AI agent workflows fix the chaos of unstructured “vibe-based” creation](/blog/ai-agent-workflow-vibe-coding)
-
-  * [Understand how solo operators use AI to produce like a full creative team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [Explore real AI agent use cases across content, automation, and production workflows](/blog/ai-agent-use-cases-real-examples)
-
-  * [Discover how to scale a one-person business without hiring by systemizing your work](/blog/scale-one-person-business-without-hiring)
-

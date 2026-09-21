@@ -119,7 +119,7 @@ GitFlow 模型可以干净地映射过来：每个有界任务一条 feature 分
 
 这四个工具我都用过一段时间。以下是我对每个工具在结构化工作流里位置的诚实看法——不是把它们当孤立工具。
 
-[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) 是你需要在大型、多文件任务里做深度代码库推理时的最强选择。它会读取你的仓库结构、知道你的分支状态、创建带有意义信息的 commit，还能直接开 pull request。hooks 系统让你能强制项目专属规则——lint、测试、格式化——在特定动作前后自动运行。`CLAUDE.md` 文件对跨会话持久化项目上下文真的很有用。最适合：复杂重构、架构决策、看重上下文深度的项目。
+[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) 是你需要在大型、多文件任务里做深度代码库推理时的最强选择。它会读取你的仓库结构、知道你的分支状态、创建带有意义信息的 commit，还能直接开 pull request。hooks 系统让你能强制项目专属规则——lint、测试、格式化——在特定动作前后自动运行。`CLAUDE.md` 文件对跨会话持久化项目上下文真的很有用。这份杠杆大多来自 [Claude Code 作为一个终端编码 Agent 的实际工作方式](/zh/blog/what-is-claude-code)——Plan 模式和子 Agent 提供的，恰恰是随手 vibe coding 最缺的那层结构。最适合：复杂重构、架构决策、看重上下文深度的项目。
 
 **Cursor** 是日常交互式编码循环的正确工具。在可视化 IDE 里做日常编码用 Cursor，自主后台任务用 Codex，需要最大上下文的深度多文件工作用 Claude Code。Composer 模式能干净地处理多文件编辑，Tab 自动补全很快。如果你最习惯在编辑器里可视化地工作，Cursor 是更好的日常主力。
 
@@ -148,16 +148,3 @@ GitFlow 模型可以干净地映射过来：每个有界任务一条 feature 分
 我关注的一位实践者说得很好：最好的结果，来自把经典软件工程的纪律用在 AI 协作上。先设计再编码、写测试、用版本控制、守住标准——这些东西不仅依然适用，当 AI 写你一半代码时反而更重要。
 
 整件事说白了就是这样：Vibe 依然欢迎，护栏只是让它们更持久。
-
-## 上一篇：
-
-→ 了解为什么 [vibe coding 没有结构就会崩坏](/zh/blog/what-is-vibe-coding)，以及用什么替代它
-
-→ 了解 [AI Agent 对单人创业者到底怎么工作（不只是提示词）](/zh/blog/ai-agent-solo-operators)
-
-→ 学会怎么 [构建可重复的 AI 工作流，而不是一次性输出](/zh/blog/ai-workflow-for-solo-founders)
-
-→ 探索从 [聊天式 AI 到持久化、有状态的 Agent](/zh/blog/what-is-persistent-ai-agent) 的转变
-
-→ 发现 [一人公司如何用 AI 系统（而非单一工具）实现规模化](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

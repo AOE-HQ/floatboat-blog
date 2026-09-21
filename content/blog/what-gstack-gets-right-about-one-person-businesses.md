@@ -69,7 +69,7 @@ I can't give you a controlled experiment. But I've run this pattern consistently
 
 There's a real reason role boundaries improve AI output — it's not just placebo.
 
-[Research from the St. Louis Fed summarizing recent AI productivity studies](https://www.stlouisfed.org/open-vault/2025/oct/generative-ai-productivity-future-work) found that workers who used AI daily saved an average of 5.4% of their work hours, or roughly 2.2 hours per week in a 40-hour week. But the gains weren't evenly distributed. Workers who integrated AI into structured, task-specific workflows saw the highest time savings — not the ones who used it as a general-purpose chat tool.
+[Research from the St. Louis Fed summarizing recent AI productivity studies](https://www.stlouisfed.org/open-vault/2025/oct/generative-ai-productivity-future-work) found that workers who used AI daily saved an average of 5.4% of their work hours, or roughly 2.2 hours per week in a 40-hour week. But the gains weren't evenly distributed. Workers who integrated AI into structured, task-specific workflows saw the highest time savings — not the ones who used it as a general-purpose chat tool. That line between structure and general-purpose chat is exactly where [an AI workflow for solo founders](/blog/ai-workflow-solo-founders) tends to succeed or fail.
 
 The mechanism: **when you give a language model a constrained role with clear scope, you reduce the ambiguity of what counts as a "good" output.** The model isn't trying to satisfy multiple simultaneous goals. It's optimizing for one thing — the thing you actually need right now.
 
@@ -87,7 +87,7 @@ But there's a real category of work — the messy middle of figuring out what pr
 
 **The other real limit is memory.** gstack's virtual team has no shared context across sessions. The CEO role's insights from Tuesday are gone by Wednesday. For a developer running one focused project, that's manageable. For a solo operator running four simultaneous workstreams, it's genuine friction. Every session requires re-establishing who knows what.
 
-This is actually where tools in the AI workspace category become relevant — not as a replacement for role-based prompting, but as a layer that holds context across sessions. [Floatboat](</>) approaches this through what they call a "Tacit Engine" — the idea that the workspace learns from your actual working patterns over time, so the role assignments carry forward rather than resetting. I've been using it for a few weeks. It's not a finished product, and I'm still figuring out how to structure my workflows without creating too much overhead. But the underlying logic — that role-based prompting gets more powerful when the AI already knows your context — that part makes sense to me.
+This is actually where tools in the AI workspace category become relevant — not as a replacement for role-based prompting, but as a layer that holds context across sessions. Floatboat approaches this through what they call a "Tacit Engine" — the idea that the workspace learns from your actual working patterns over time, so the role assignments carry forward rather than resetting. I've been using it for a few weeks. It's not a finished product, and I'm still figuring out how to structure my workflows without creating too much overhead. But the underlying logic — that role-based prompting gets more powerful when the AI already knows your context — that part makes sense to me.
 
 ![4.png](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459040085-d71dae1a-98b1-417a-b922-e79b6eeec04f.webp)
 
@@ -106,16 +106,3 @@ Here's how I've translated the gstack logic into a non-code workflow. Three step
 _Anyway, that's where I landed after three weeks of running this. The developer ​_ ​ _wrapper_ ​ _​ (gstack) is genuinely interesting for coders. The underlying idea — that AI gets sharper when it knows which hat it's wearing — applies to anyone doing complex work alone. I'm still experimenting with the details. But the basic pattern has stuck._
 
 _Back to building things._
-
-## **Previous Posts:**
-
-  * [Learn how solo operators can structure AI workflows to function like a full team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * [Understand the practical difference between AI agents and assistants when assigning roles in workflows](/blog/ai-agent-vs-ai-assistant)
-
-  * [Explore how to actually build an AI agent system instead of relying on a single general assistant](/blog/how-to-build-an-ai-agent)
-
-  * [See real-world AI agent use cases to understand how role-based systems perform in practice](/blog/ai-agent-use-cases-real-examples)
-
-  * [Compare workflow builders vs AI workspaces when designing structured, role-based AI systems](/blog/workflow-builder-vs-ai-workspace)
-

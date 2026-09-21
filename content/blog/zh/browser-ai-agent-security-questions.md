@@ -19,7 +19,7 @@ Nova 来了。我关注的一个单人创业者社群里，有人发的一句话
 
 ## 为什么「先试再说」在浏览器 AI Agent 这里很危险
 
-大多数软件失败是安全的——它崩了，你关掉它，不会留下永久性后果。浏览器 AI Agent 不一样。它在你已经登录的会话里行动，这意味着一条糟糕的指令或一次被劫持的命令，就可能在你还未察觉时发出邮件、删掉文件或提交表单。
+大多数软件失败是安全的——它崩了，你关掉它，不会留下永久性后果。浏览器 AI Agent 不一样。它在你已经登录的会话里行动，这意味着一条糟糕的指令或一次被劫持的命令，就可能在你还未察觉时发出邮件、删掉文件或提交表单。这正是[浏览器 AI Agent 真正能做什么](/zh/blog/browser-ai-agent-what-it-can-do)的直接后果——它以你的登录身份点击、输入、读页面，所以你放行的每一项能力，同时也是你托付出去的一块信任面。
 
 Anthropic 自己在 [Claude in Chrome 的安全页面](https://support.claude.com/en/articles/12902428-using-claude-in-chrome-safely)上把「非预期操作」列为头号风险：Claude 可能误解指令，「对你的数据或账号造成**不可逆的改变**」。这句话是该页面第一条警告，而不是埋在角落里的小字。
 
@@ -158,16 +158,3 @@ Claude for Chrome 这边：记忆是 Claude 账户设置里偏好项下的一个
   * 如果你在 EU/UK 等着用 Codex：Claude for Chrome 现在就能用
 
 _截至 2026 年 5 月。浏览器 Agent 安全是一个活跃研究领域，这些工具也在快速演变。基于本文做决定前，请到官方文档核实当前行为。_
-
-## 往期文章
-
-  * 新 AI 模型发布了——该换吗？一篇务实的看法：为什么大多数单人创业者高估了换模型的红利：[Meta Muse Spark](/zh/blog/meta-muse-spark-one-person-company)
-
-  * 为什么你的 AI 工作流感觉支离破碎：真正的瓶颈不是模型，而是工具之间拼接的方式：[Workspace agents for solo operators](/zh/blog/workspace-agents-for-solo-operators)
-
-  * 浏览器 AI 工具眼下听起来都差不多——这篇讲清 Agent 扩展、AI 浏览器与桌面工作区之间的实际差别：[Browser agent extensions vs AI browsers vs desktop workspaces](/zh/blog/browser-ai-agent-what-it-can-do)
-
-  * GPT Image 2 做漫画和视觉叙事：什么真能行（又在哪里翻车）：[GPT Image 2 manga workflow](/zh/blog/gpt-image-2-storyboard-solo)
-
-  * 2026 年 AI 图像工具横评：GPT Image 2 vs Midjourney vs Nano Banana 2，哪个适合你的工作流：[AI image tools comparison](/zh/blog/gpt-image-2-vs-midjourney-nano-banana-2)
-

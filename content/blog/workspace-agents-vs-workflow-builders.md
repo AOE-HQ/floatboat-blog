@@ -25,7 +25,7 @@ Workflow builders are pipelines you construct ahead of time. You set a trigger (
 
 ### Workspace agents: AI inside the work as it happens
 
-Workspace agents are a different idea. Instead of pre-defining a pipeline, you sit inside an AI-aware environment — usually a desktop or browser layer — and the agent works alongside you on whatever you're doing right now. Files, browser tabs, notes, drafts. You ask it to do something, it figures out the steps, executes, and you adjust as it goes.
+Workspace agents are a different idea. Instead of pre-defining a pipeline, you sit inside an AI-aware environment — usually a desktop or browser layer — and the agent works alongside you on whatever you're doing right now. Files, browser tabs, notes, drafts. You ask it to do something, it figures out the steps, executes, and you adjust as it goes. That's also the line between [a workspace agent and a chat assistant](/blog/workspace-agents-vs-chat-assistants): in one, the conversation is the product; in the other, the conversation is just how you steer.
 
 Anthropic's research team has a [useful definition for this distinction](https://www.anthropic.com/research/building-effective-agents) — workflows are "systems where LLMs and tools are orchestrated through predefined code paths," while agents are systems where the model "dynamically directs its own processes and tool usage." That language is for engineers building these things, but it captures the user-facing difference too. **Workflow builders run the path you drew. Workspace agents pick the path while the work is happening.**
 
@@ -93,7 +93,7 @@ If you're a one-person business doing strategy _and_ execution _and_ content _an
 
 ### Work that lives across files, tabs, and tools
 
-Knowledge work isn't a pipeline. It's twelve open tabs, three PDFs, a half-written doc, and a Slack thread you keep meaning to read. Workflow builders aren't designed for "use the stuff that's already on my screen." That's the workspace agent's home turf.
+Knowledge work isn't a pipeline. It's twelve open tabs, three PDFs, a half-written doc, and a Slack thread you keep meaning to read. Workflow builders aren't designed for "use the stuff that's already on my screen." That's the workspace agent's home turf. And the workspace itself — the environment holding those tabs and docs — is a separate decision: [workflow builder or AI workspace](/blog/workflow-builder-vs-ai-workspace) is a question of where your work lives, not how the AI behaves.
 
 ## What neither one does well
 
@@ -127,16 +127,3 @@ If the work you want to automate ​**happens the same way more than 20 times a 
 
 
 That's my honest take. The categories aren't really competing — they're solving different parts of how work gets done. If your work is shaped like a pipeline, build a pipeline. If it's shaped like a desk with a lot of stuff on it, get something that can sit at the desk with you. When you need this, you'll know.
-
-## Previous Posts:
-
-  * [Still deciding between structured workflows and AI-native tools?](/blog/workflow-builder-vs-ai-workspace)
-
-  * [If you're new to agents, this guide explains how AI agents actually work in real-world scenarios](/blog/ai-agent-use-cases-real-examples)
-
-  * [Want to go beyond tools and build your own system? Here’s a practical intro to building an AI agent from scratch](/blog/how-to-build-an-ai-agent)
-
-  * [For a more hands-on perspective, this piece shows how agent workflows actually run in day-to-day work](/blog/ai-agent-workflow-vibe-coding)
-
-  * [And if you're running solo, this breaks down how one-person businesses use AI to operate like a team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

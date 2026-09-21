@@ -79,7 +79,7 @@ One thing to be careful about: when you ​[switch into fast mode mid-conversati
 
 ## The hidden cost: decision fatigue
 
-Token cost is the obvious cost. It's the one people write about. But for a one-person operation, the cost I've come to care about more is decision fatigue — the small, constant mental tax of choosing a setting for every task.
+Token cost is the obvious cost. It's the one people write about, though where that floor sits keeps moving — [DeepSeek V4's projected API pricing](/blog/deepseek-v4-api-solo-operator) would put extra-effort passes inside the budget of routine solo work. But for a one-person operation, the cost I've come to care about more is decision fatigue — the small, constant mental tax of choosing a setting for every task.
 
 If I have to pick an effort level for every prompt, I won't. I'll just default to high and pretend I'm being thoughtful. That's the trap.
 
@@ -87,7 +87,7 @@ The way I've gotten around this is by batching. I now group my work into two or 
 
 ![5.png](/blog/images/effort-control-fast-mode-ai-work/1780055446998-c9e1e674-652c-406e-b61f-5317d20a7c32.webp)
 
-This is roughly the same pattern that proactive agent OS tools like **[Floatboat](</>)** are trying to automate at the workflow level — letting one upfront decision drive a chain of downstream execution. I'm doing it manually inside Claude, but the underlying idea is the same: stop making the same micro-decision over and over.
+This is roughly the same pattern that proactive agent OS tools like **Floatboat** are trying to automate at the workflow level — letting one upfront decision drive a chain of downstream execution. I'm doing it manually inside Claude, but the underlying idea is the same: stop making the same micro-decision over and over.
 
 ## A simple task-to-effort framework
 
@@ -109,16 +109,3 @@ The discipline isn't picking the right level on any one task. It's not defaultin
 That's where I've landed. I'll probably keep adjusting — the framework that works in May might not be the one that works in August, especially as Fast Mode comes out of research preview and the surrounding tools change. But the core insight has stuck: the question isn't how to get Claude to think harder. It's when not to.
 
 Back to it.
-
-## Previous Posts
-
-[How to Scale a One-Person Business Without Hiring](/blog/scale-one-person-business-without-hiring)
-
-[Claude Managed Agents: What They Mean for Solo Companies](/blog/claude-managed-agents-one-person-company)
-
-[AI Doesn't Know How You Work — That's the Real Problem](/blog/ai-workflow-for-solo-founders)
-
-[AI Workspace Agents vs Chat Assistants: What's Different](/blog/workspace-agents-vs-chat-assistants)
-
-[How to Stop Context Switching with a Workspace Agent](/blog/stop-context-switching-workspace-agent)
-

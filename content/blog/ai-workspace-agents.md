@@ -105,7 +105,7 @@ This sounds small. It's not. Context-switching overhead is where a huge chunk of
 
 The more useful workspace agents let you capture a sequence of actions as something you can reuse. Some call these skills, some call them combos, some call them workflows. The naming isn't settled. The shape is: you did something once, and now the agent can do something similar next time without you re-explaining it.
 
-This is where workspace agents start resembling workflow builders — just shaped by demonstration instead of by diagram.
+This is where workspace agents start resembling workflow builders — just shaped by demonstration instead of by diagram — and once the same sequence keeps coming back, [whether to build that orchestration yourself or run it inside a workspace](/blog/dynamic-workflows-build-or-use-workspace) becomes the real fork in the road.
 
 ## Who workspace agents are built for
 
@@ -166,16 +166,3 @@ Before signing up for anything in this category, I'd answer these:
 If you got clear answers on all three — it's probably worth thirty minutes of poking around.
 
 That's where I am with the category today. It's still early, the edges are fuzzy, the naming is contested. But there's something real here, and it's worth understanding on your own terms before the marketing catches up.
-
-**Previous Posts:**
-
-  * [AI Agent vs Chatbot: What Actually Changes in How You Work](/blog/ai-agent-vs-chatbot)
-
-  * [Workflow Builder vs AI Workspace: Two Very Different Shapes of Automation](/blog/workflow-builder-vs-ai-workspace)
-
-  * [What Is a Persistent AI Agent (And Why Memory Changes Everything)](/blog/what-is-persistent-ai-agent)
-
-  * [AI Workflow for Solo Founders: Where Context Switching Actually Hurts](/blog/ai-workflow-for-solo-founders)
-
-  * [How One-Person Businesses Start Working Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

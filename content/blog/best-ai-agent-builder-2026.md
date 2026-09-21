@@ -33,7 +33,7 @@ Most reviews lead with integration counts and pricing tiers. Those matter, but t
 
 The category you belong in is less about technical skill level and more about what you're building and what you're willing to keep running long-term.
 
-**No-code builders** — Zapier, Make with its Maia AI assistant, Lindy — are optimized for getting a working automation up fast. Zapier launched Zapier Agents for autonomous task execution across its 8,000+ app ecosystem. If you can describe your workflow in plain English, you can often build a first version in under an hour. The honest tradeoff: you hit a ceiling quickly. Complex branching logic, persistent memory across sessions, custom business logic — these either require workarounds that are painful to maintain, or they're just not possible.
+**No-code builders** — Zapier, Make with its Maia AI assistant, Lindy — are optimized for getting a working automation up fast. Zapier launched Zapier Agents for autonomous task execution across its 8,000+ app ecosystem. If you can describe your workflow in plain English, you can often build a first version in under an hour. The honest tradeoff: you hit a ceiling quickly — and [whether a no-code AI agent builder](/blog/no-code-ai-agent-builder) is enough for your workflow is really a question of how far below that ceiling you plan to stay. Complex branching logic, persistent memory across sessions, custom business logic — these either require workarounds that are painful to maintain, or they're just not possible.
 
 **Low-code builders** — n8n, Dify, Flowise — sit in the middle. You work in a visual canvas but can drop into JavaScript or Python when you need to. n8n 2.0 shipped in January 2026 with native LangChain integration and 70+ AI nodes, making it probably the most capable option in this tier. Dify takes an all-in-one approach — agent design, RAG pipelines, and observability in a single platform. Flowise is purpose-built for LangChain workflows with a drag-and-drop interface that's more approachable than writing Python directly. According to the [Rasa guide on low-code AI agent platforms (April 2026)](https://rasa.com/blog/best-low-code-ai-agents-platforms-for-2026/), all three offer free self-hosted deployments, which is a meaningful cost consideration.
 
@@ -92,16 +92,3 @@ Okay, that's my honest read. The **no code ai agent builder** category has gotte
 For most people who work the way I work — solo projects, cost-conscious, wanting real agent behavior without DevOps overhead — n8n is the cleaner answer in the low-code tier. For developers who need maximum control, LangGraph is worth the ramp. Starting out and need something working by tomorrow? Start with Make. You can always migrate.
 
 That's my take. You'll have to decide what fits your situation.
-
-## Previous Posts:
-
-  * Trying to decide between AI agents, automations, and workspaces? This breakdown explains where each category actually fits in solo workflows → [Workspace Agents vs Workflow Builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * Before choosing a builder, it helps to understand what “agentic AI” really means — and where most tools quietly hit their limits → [AI Agent Tools for Solo Operators](/blog/ai-agent-solo-operators)
-
-  * If you’re building your first workflow, this guide walks through how to start with one boring repeated task instead of overengineering everything → [AI Workflow for Solo Founders](/blog/ai-workflow-for-solo-founders)
-
-  * n8n, Make, and other workflow tools are powerful — but here’s why context and memory become the real bottleneck as agents get more complex → [Why AI Forgets Between Sessions](/blog/why-ai-forgets-between-sessions)
-
-  * Curious where workspace-style agents fit compared to standalone builders? This piece explains the bigger shift toward cross-app AI workflows → [AI Workspace Agents for Solo Operators](/blog/ai-workspace-agents)
-

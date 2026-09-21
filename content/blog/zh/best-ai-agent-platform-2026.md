@@ -57,7 +57,7 @@ Zapier、Make、n8n 都从纯自动化工具起家，后来补上了 AI Agent �
 
 ### 工作区（Workspaces）
 
-这是一个被低估的品类。[Claude.ai](http://Claude.ai)（带 Projects）、带自定义 GPT 的 ChatGPT、Notion AI——它们传统上不叫"Agent 平台"，但对很大比例的真正用例来说，它们发挥的就是平台的作用。你给模型上下文、人设和某些信息的访问权，它就在那个上下文范围内执行任务。
+这是一个被低估的品类。[Claude.ai](http://Claude.ai)（带 Projects）、带自定义 GPT 的 ChatGPT、Notion AI——它们传统上不叫"Agent 平台"，但对很大比例的真正用例来说，它们发挥的就是平台的作用。你给模型上下文、人设和某些信息的访问权，它就在那个上下文范围内执行任务——到了这一步，[AI 助手和真正的 Agent 之间那条界线](/zh/blog/ai-agent-vs-ai-assistant)就成了一个实际问题，而不只是叫法之争。
 
 对单人经营者来说，**一个配置良好的工作区，常常胜过专用平台上建到一半的 Agent。** 维护成本更低、更容易迭代、也没有可断掉的集成点。代价是：工作区通常不擅长自动触发，也不擅长在外部系统里采取行动——除非再搭一些管道。
 
@@ -122,16 +122,3 @@ Anthropic 在 2025 年底发布了一个关于 [Agent Skills 跨平台可移植�
 我到现在还在积极测试不同的选项。老实说，这个领域跑得太快，我对具体平台说的一切，可能几个月内就过时。我更确信的是那套框架——无论当下哪个工具正火，那五个评估维度都站得住。
 
 如果今天我面临这个选择，我会从那里出发。
-
-## 系列前文
-
-  * Agent 新手？从这里开始：为什么多数单人经营者该先跑简单工作流、再建复杂系统 → [单人创始人的 AI 工作流](/zh/blog/ai-workflow-for-solo-founders)
-
-  * 还在提示词、自动化和完整工作区之间犹豫？这篇把取舍讲得很清楚 → [工作区 Agent vs 工作流搭建器](/zh/blog/workspace-agents-vs-workflow-builders)
-
-  * 做 Agent 最大的错误是太早自动化太多——这篇讲单人经营者如何真正规模化 AI 工作流 → [AI Agent 工作流与 Vibe Coding](/zh/blog/ai-agent-workflow-vibe-coding)
-
-  * 选工具之前，先理解"AI Agent"在实践中到底是什么——以及它们会在哪里悄悄失灵 → [给单人经营者讲清楚 AI Agent 工具](/zh/blog/ai-agent-solo-operators)
-
-  * 如果你的工作流已经横跨浏览器标签页、文档和本地文件，这篇深入讲为什么工作区 Agent 正在成为下一层 → [单人经营者的 AI 工作区 Agent](/zh/blog/ai-workspace-agents)
-

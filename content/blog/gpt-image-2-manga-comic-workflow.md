@@ -59,11 +59,11 @@ A working four-panel prompt for me looks roughly like: same scene anchor at the 
 
 ### Keeping character design consistent across a chapter
 
-This is where it gets interesting and also where I learned to manage expectations. According to [The New Stack's coverage of the launch](https://thenewstack.io/chatgpt-images-20-openai/), Thinking mode is specifically designed to maintain character and object consistency across multiple frames — manga and storyboarding are explicitly listed.
+This is where it gets interesting and also where I learned to manage expectations. According to [The New Stack's coverage of the launch](https://thenewstack.io/chatgpt-images-20-openai/), Thinking mode is specifically designed to maintain character and object consistency across multiple frames — manga and storyboarding are explicitly listed. Storyboarding is the same consistency problem wearing a different jacket — [what holds and what breaks when one person runs a full storyboard through GPT Image 2](/blog/gpt-image-2-storyboard-solo) maps closely onto the chapter-length limits below.
 
 In practice, with Thinking mode on and an 8-image batch from a single prompt, I got recognizable continuity for about 5–6 of those panels. The other 2–3 needed a small re-roll on the face. **That is a huge step up from generating panels one-at-a-time, where ​consistency** ​**​ was basically a coin flip.**
 
-For longer sequences, I keep a "reference sheet" — three panels of the character at different angles that worked well — and feed them back as image inputs for new panels. This is the closest thing I have to a real character lock right now.
+For longer sequences, I keep a "reference sheet" — three panels of the character at different angles that worked well — and feed them back as image inputs for new panels. This is the closest thing I have to a real character lock right now, and it is the kind of asset that survives model churn — [the prep that lets a solo operator actually benefit when GPT-6 lands](/blog/openai-gpt-6-one-person-company) is made of reusable inputs and prompts like these, not of habits tied to one tool.
 
 ### Speech bubbles, SFX, and mixed-script typography
 
@@ -127,19 +127,6 @@ For everyone in between — curious, doing it for fun, want to test whether you 
 
 ![6.png](/blog/images/gpt-image-2-manga-comic-workflow/1777087089441-d5498d93-a404-49d7-9839-cd0dc4614114.webp)
 
-That's where I am with this right now. Bookmark it, try it on a short page, see how it feels in your hands. The model will keep changing — what's true today might not be true in three months. But for one specific thing — solo sequential art with legible CJK text — it just crossed a threshold that's worth knowing about.
+That's where I am with this right now. Bookmark it, try it on a short page, see how it feels in your hands. The model will keep changing — what's true today might not be true in three months, and [whether another model switch pays off for a one-person operation](/blog/meta-muse-spark-one-person-company) gets decided by switching costs, not the launch stream. But for one specific thing — solo sequential art with legible CJK text — it just crossed a threshold that's worth knowing about.
 
 Back to drawing things.
-
-## Previous Posts:
-
-  * [See how to build a repeatable AI workflow for solo creative work](/blog/ai-workflow-for-solo-founders)
-
-  * [Understand how AI tools fit into real solo operator workflows in 2026](/blog/ai-agents-2026-solo-operators)
-
-  * [Learn how one-person creators are scaling output without hiring](/blog/scale-one-person-business-without-hiring)
-
-  * [Discover practical AI workflows that actually work beyond one-off prompts](/blog/ai-workflow-solo-founders)
-
-  * [Explore how AI can help you operate like a full creative team solo](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-

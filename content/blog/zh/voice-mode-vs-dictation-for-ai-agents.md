@@ -50,7 +50,7 @@ draft: false
 
 **双向音频。** 模型开口回话。延迟、音色选择与轮替质量定义体验。OpenAI 的 GPT-Live 采用全双工架构，你可以打断或抢话，而不必依赖僵硬的静音轮次检测——相比早期可能把停顿误判为「该我说了」的逐轮语音栈，这是有意义的升级 [<a href="https://openai.com/index/introducing-gpt-live/" rel="nofollow noopener">来源：OpenAI GPT-Live 发布公告</a>]。
 
-**会话级上下文。** Voice mode 运行在聊天或语音会话内。上下文随语音轮次累积；会话中切换到文本通常被支持，但重心仍在实时对话上。
+**会话级上下文。** Voice mode 运行在聊天或语音会话内。上下文随语音轮次累积；会话中切换到文本通常被支持，但重心仍在实时对话上——这也意味着，真正决定产出的是 [agent 在决策时刻手里有什么信息](/zh/blog/context-engineering-for-ai-agents)，而不是文字从哪个通道进来。
 
 **转述式转写。** OpenAI 说明语音转写稿并非逐字记录，可能与实际所说内容不完全一致 [<a href="https://help.openai.com/en/articles/20001274-chatgpt-voice" rel="nofollow noopener">来源：OpenAI ChatGPT Voice 帮助</a>]。用于推理没问题；但当你需要逐字的法律或代码语言、又来不及复核时，这就是问题。
 
@@ -98,7 +98,7 @@ Anthropic 的帮助中心把区别说得很直白：「Dictation 将你的语音
 
 **Voice mode 技术栈。** 音频采集 → 流式语音理解 → 模型推理（高档套餐常带工具使用、记忆、网络搜索） → 文本转语音合成 → 播放。全双工系统持续交错聆听与生成，而不是等用户说完一整句 [<a href="https://openai.com/index/introducing-gpt-live/" rel="nofollow noopener">来源：OpenAI GPT-Live</a>]。轮替、打断处理与附和语（「嗯」「明白」）都是第一性的产品问题。
 
-**Dictation 技术栈。** 音频采集 → 语音转文本（ASR） → 文本插入光标处 → *用户编辑* → 标准文本推理路径。下游的 agent 栈与打字完全一致。工具调用、文件编辑、Cowork 计划都从你批准过的文本触发。
+**Dictation 技术栈。** 音频采集 → 语音转文本（ASR） → 文本插入光标处 → *用户编辑* → 标准文本推理路径。下游的 agent 栈与打字完全一致。工具调用、文件编辑、Cowork 计划都从你批准过的文本触发——[AI 工作区 agent](/zh/blog/ai-workspace-agents) 正是这样在你与工具之间干活的：认的是你过目后的文本，不在乎它出自哪支麦克风。
 
 对独立创业者的实际含义：两种模式需要的投入不同——voice mode 需要耳机、安静环境、对转述的容忍度；dictation 需要好麦克风、标点口令、以及发送前通读一遍的习惯。把两种栈混进一个工作流——先听写一份简报，再开 voice mode「接着聊」——可行，但上下文未必能在 Cowork 听写与 Claude 手机语音之间干净迁移，因为 Anthropic 目前完全把 voice mode 排除在 Cowork 与 Code 之外 [<a href="https://support.claude.com/en/articles/11101966-use-voice-mode" rel="nofollow noopener">来源：Anthropic 帮助</a>]。
 
@@ -177,7 +177,7 @@ Flow Mode 说明「听写」本身也不止一种工作：提示词框听写指�
 
 **即便能打字、也该选 voice mode 的时刻：** 你人在移动中、你想要不用逐条组织的追问，或者你在练习口头表现（销售、播客大纲）——听到节奏本身很重要。
 
-两种模态都不能替代日历驱动的自动化去处理例行的准备与跟进——语音输入仍然存在于你必须打开的应用里。日历触发的 agent 对排定的工作保持无需拉取；语音与听写是在你*选择参与之后*降低摩擦。
+两种模态都不能替代日历驱动的自动化去处理例行的准备与跟进——语音输入仍然存在于你必须打开的应用里。这个天花板同样解释了 [Claude Managed Agents](/zh/blog/what-are-claude-managed-agents) 的出发点：把执行本身挪到托管基础设施上，任务跑起来时既不需要你开口也不需要你打字，语音与听写之争自然失效。日历触发的 agent 对排定的工作保持无需拉取；语音与听写是在你*选择参与之后*降低摩擦。
 
 ---
 

@@ -53,7 +53,7 @@ Motion、Reclaim 这类**日历工作流自动化**工具能守住你的日程�
 
 **第二层：带负责人的行动项。**每一项指派给一个人并带上截止日期。AI 从逐字稿里抽人名、映射到任务上。这个大概八成的情况能成——剩下两成需要手动修正，通常是因为某人说「这个我来处理」，却没说明「这个」到底是什么。
 
-**第三层：提醒与建任务。**在这里，**行动项 AI**开始和项目管理重叠了。有些工作流会把行动项直接推进 Notion、Asana 或一张简单的待办清单。我目前还在手动做——把条目复制进我的任务看板——但模式已经清楚到「自动化就是下一步」。Floatboat 这类 Proactive Agent OS 工具正在朝这个方向走：把日历事件变成被执行掉的产出，而不只是被记录下来的产出。
+**第三层：提醒与建任务。**在这里，**行动项 AI**开始和项目管理重叠了。有些工作流会把行动项直接推进 Notion、Asana 或一张简单的待办清单。我目前还在手动做——把条目复制进我的任务看板——但模式已经清楚到「自动化就是下一步」：[真正能自己跑起来的那条跟进管线](/zh/blog/ai-follow-up-automation)，触发点是会议结束的那一刻，而不是你记得去贴一份逐字稿。Floatboat 这类 Proactive Agent OS 工具正在朝这个方向走：把日历事件变成被执行掉的产出，而不只是被记录下来的产出。
 
 重点是：跟进不再活在你的记忆里，它活在一个系统里。而系统起草得比你快。
 
@@ -104,16 +104,3 @@ Anthropic 于 2026 年 5 月下旬[发布了 Opus 4.8](https://www.anthropic.com
 以上就是我对 AI 跟进邮件的诚实看法。工作流不复杂，但需要一份像样的逐字稿和五分钟的复核。如果你的工作一周不止几场会，这很可能值得一试。
 
 接着回去搭东西了。
-
-## 往期文章
-
-[不招人也能扩张的一人公司是怎么做到的](/zh/blog/scale-one-person-business-without-hiring)
-
-[Claude Managed Agents：对一人公司意味着什么](/zh/blog/claude-managed-agents-one-person-company)
-
-[一人公司如何像一支团队一样用 AI](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-[为什么一人公司需要一个工作区 Agent](/zh/blog/workspace-agents-for-solo-operators)
-
-[工作区 Agent vs 工作流搭建器：一份清晰的对比](/zh/blog/workspace-agents-vs-workflow-builders)
-

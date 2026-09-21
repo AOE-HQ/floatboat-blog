@@ -69,7 +69,7 @@ I built a content tracking tool with AI assistance last year. It saved me about 
 
 ### Automating Repetitive Workflows
 
-**This is where vibe coding genuinely shines for one-person companies.** Connecting a form submission to a spreadsheet update to a Slack notification — tasks that used to require knowing JavaScript — are now promptable. The gap between "I want this to happen automatically" and "this is happening automatically" has gotten very small.
+**This is where vibe coding genuinely shines for one-person companies.** Connecting a form submission to a spreadsheet update to a Slack notification — tasks that used to require knowing JavaScript — are now promptable. The gap between "I want this to happen automatically" and "this is happening automatically" has gotten very small. For the steps that live inside sites and web apps you don't control, a [browser AI agent](/blog/browser-ai-agent-what-it-can-do) picks up where generated scripts stop — with its own limits worth knowing before you rely on it.
 
 ### Rapid Prototyping and Idea Validation
 
@@ -101,7 +101,7 @@ That said — the security picture is real and worth knowing about before you sh
 
 ### When There's No Clear Plan or Structure
 
-The model works with what you give it. Vague prompt, vague output. Unlike a human developer who might push back and ask clarifying questions, AI will produce something plausible-looking that doesn't actually solve your problem. I've generated code that ran without errors and did the wrong thing. After the third time, I started calling that a pattern worth noting.
+The model works with what you give it. Vague prompt, vague output. Unlike a human developer who might push back and ask clarifying questions, AI will produce something plausible-looking that doesn't actually solve your problem. I've generated code that ran without errors and did the wrong thing. After the third time, I started calling that a pattern worth noting — the missing piece is a [structured agent workflow](/blog/ai-agent-workflow-vibe-coding) that plans and verifies instead of accepting the first plausible output.
 
 ### When Outputs Need Long-Term Maintenance
 
@@ -135,7 +135,7 @@ The solo founders I've seen do this well aren't the best prompters. They're the 
 
 ### What Are Combo Skills?
 
-This is where I want to mention something I've been exploring: [Floatboat AI](</>), a desktop workspace tool that introduced a concept called ​**Combo Skills** ​.
+This is where I want to mention something I've been exploring: Floatboat AI, a desktop workspace tool that introduced a concept called ​**Combo Skills** ​.
 
 The idea is structurally different from vibe coding. Instead of a single prompt producing a single output, Combo Skills chains multiple AI capabilities — reading files, analyzing content, generating structure, refining output — into a ​**reusable, repeatable workflow** ​. You build the process once, and it runs every time you need it.
 
@@ -162,16 +162,3 @@ You can build with AI tools without giving up your understanding of what you're 
 I'm still figuring this out, honestly. The tools are moving fast enough that something I wrote about them three months ago would already need an update. What I do feel more certain about: ​**the value ​isn** ​'t in the prompts, it's in the systems. The solo founders building durable operations aren't the ones who found the best AI tool — they're the ones who built workflows that compound over time.
 
 That's one small piece figured out.
-
-## Previous Posts：
-
-  * [Understand the difference between AI agents vs chatbots](/blog/ai-agent-vs-chatbot)
-
-  * [Learn how AI agents actually work for solo operators in 2026](/blog/ai-agents-2026-solo-operators)
-
-  * [See how to build your own AI agent step by step](/blog/how-to-build-an-ai-agent)
-
-  * [Explore the shift from AI assistants to true AI agents](/blog/ai-agent-vs-ai-assistant)
-
-  * [Discover practical AI agent use cases in real workflows](/blog/ai-agent-use-cases-real-examples)
-

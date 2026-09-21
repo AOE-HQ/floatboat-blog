@@ -47,7 +47,7 @@ The second category is tools that bring agent-like capabilities into a workspace
 
 Floatboat falls into this category — an AI workspace desktop app (Mac/Windows) designed around the idea of learning your work patterns over time. Its "Combo Skills" feature is essentially a reusable workflow: multi-step AI tasks that chain file reading, analysis, and content generation together without you manually setting each step up every time. It's built for solo operators and small teams who want workflow memory without server management.
 
-I haven't done a deep dive on Floatboat's memory system. Specifically, — if that's your primary criterion, it's worth going through [their site](</>) to understand what "learning your work patterns" actually means under the hood.
+I haven't done a deep dive on Floatboat's memory system. Specifically, — if that's your primary criterion, it's worth going through their site to understand what "learning your work patterns" actually means under the hood.
 
 ![3.PNG](/blog/images/ai-agent-solo-operators/1776232488340-a69fe252-f146-45dc-83d7-82f3422d28e2.webp)
 
@@ -65,9 +65,9 @@ I want to be fair to the self-hosted option here. For the right person, it's not
 
 Here's where I'd push back on the self-hosted path for most non-technical solo operators.
 
-**The setup time is real.** Spinning up a VPS, configuring Hermes, connecting an LLM provider, setting up a messaging gateway — even with a one-line installer, this is a multi-hour project if you're not already familiar with the environment. That's time not spent on your actual work.
+**The setup time is real.** Spinning up a VPS, configuring Hermes, connecting an LLM provider, setting up a messaging gateway — even with a one-line installer, this is a multi-hour project if you're not already familiar with the environment. That's time not spent on your actual work. It's the same gap in miniature as [wiring Feishu CLI into a solo work setup](/blog/feishu-cli-solo-work-setup), which reads as one line on a to-do list and behaves like a weekend.
 
-**Maintenance​ is the hidden cost.** It's not just the initial setup. Servers go down. Dependencies update. Your LLM provider's API changes. Every time something breaks, you're the one debugging it. For a developer, this is background noise. For a solo operator whose core work has nothing to do with infrastructure, it's a second job.
+**Maintenance​ is the hidden cost.** It's not just the initial setup. Servers go down. Dependencies update. Your LLM provider's API changes. Every time something breaks, you're the one debugging it. For a developer, this is background noise. For a solo operator whose core work has nothing to do with infrastructure, it's a second job. And a second job competes directly with the only work that compounds early on: [finding your first hundred customers](/blog/first-100-customers-solo-founder) happens in conversations and shipped work, not in server logs.
 
 **The ceiling on non-technical solo operators.** Anthropic's own engineering team writes about the core challenge with persistent AI agents: each new session begins with no memory of what came before, and managing that continuity across context windows is still genuinely hard, even with well-built systems. If you're not technical enough to troubleshoot when the memory system does something unexpected, that's a problem. The value of a self-hosted agent depends heavily on your ability to maintain and extend it over time.
 
@@ -81,7 +81,7 @@ If self-hosting isn't the right fit, the question becomes: what features actuall
 
 **Context that carries forward between sessions.** Not just within a conversation — across days and weeks. Look for tools that explicitly describe how they handle session memory, not just ones that mention "AI memory" in their marketing copy.
 
-**Skills or reusable workflows.** The ability to build a multi-step process once and run it repeatedly is the most practical form of execution memory for a solo operator. Whether a tool calls it "skills," "combo actions," or "automations" — the underlying question is: can I define how I want something done, and will the tool remember that?
+**Skills or reusable workflows.** The ability to build a multi-step process once and run it repeatedly is the most practical form of execution memory for a solo operator. Whether a tool calls it "skills," "combo actions," or "automations" — the underlying question is: can I define how I want something done, and will the tool remember that? That same build-versus-replay math is what decides [when a Lark CLI automation is worth building](/blog/lark-cli-when-to-use-it) — a process that won't run often enough rarely repays the plumbing it takes to maintain.
 
 **File and browser access in one environment.** Context switching between apps has a real cognitive cost. Tools that let you work with documents, research, and content generation in a single environment — without manual copy-pasting — reduce that cost meaningfully.
 
@@ -97,23 +97,10 @@ Here's the clearest way I can frame this.
 
 
 
-The question to ask before choosing anything: ​**what specifically breaks down in your current AI ​workflow** ​? If the answer is "I re-explain context every session," that's a memory problem. If it's "I can't run tasks when my computer is off," that's an automation problem. If it's "I spend too much time switching between tools," that's an integration problem. Each has a different solution.
+The question to ask before choosing anything: ​**what specifically breaks down in your current AI ​workflow** ​? If the answer is "I re-explain context every session," that's a memory problem. If it's "I can't run tasks when my computer is off," that's an automation problem. If it's "I spend too much time switching between tools," that's an integration problem. Each has a different solution. Diagnose first, pick second — that ordering is what separates [an AI workflow that actually fits a solo founder](/blog/ai-workflow-solo-founders) from a pile of subscriptions.
 
 ![5.png](/blog/images/ai-agent-solo-operators/1776232516527-e523f9cb-b36e-4b2e-89b1-ec9c36aa0a61.webp)
 
 That's where I land on this. Not a definitive verdict — more like a clearer frame for thinking about which version of "AI agent" is actually relevant to you.
 
 The best tool is the one you'll actually use and can actually maintain. For most non-technical solo operators, that still points to workspace-native over self-hosted. But it's worth knowing what you're trading off when you make that choice.
-
-## Previous Posts:
-
-  * [Understand the difference between AI agents vs chatbots](/blog/ai-agent-vs-chatbot)
-
-  * [Learn how AI agents actually work for solo operators in 2026](/blog/ai-agents-2026-solo-operators)
-
-  * [See how to build your own AI agent step by step](/blog/how-to-build-an-ai-agent)
-
-  * [Explore the shift from AI assistants to true AI agents](/blog/ai-agent-vs-ai-assistant)
-
-  * [Discover practical AI agent use cases in real workflows](/blog/ai-agent-use-cases-real-examples)
-

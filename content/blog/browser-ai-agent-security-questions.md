@@ -19,7 +19,7 @@ I'm not here to tell you not to use these tools. I use them. But **browser AI ag
 
 ## Why "Just Try It" Is Risky with Browser AI Agents
 
-Most software fails safely — it breaks, you close it, nothing permanent happens. Browser AI agents are different. They act in sessions where you're already logged in, which means a bad prompt or hijacked instruction can send an email, delete a file, or submit a form before you notice.
+Most software fails safely — it breaks, you close it, nothing permanent happens. Browser AI agents are different. They act in sessions where you're already logged in, which means a bad prompt or hijacked instruction can send an email, delete a file, or submit a form before you notice. That's a direct consequence of [what a browser AI agent can actually do](/blog/browser-ai-agent-what-it-can-do) — click, type, and read pages under your login — which makes every capability you grant also a surface you're trusting.
 
 Anthropic's own [safety page for Claude in Chrome](https://support.claude.com/en/articles/12902428-using-claude-in-chrome-safely) lists "unintended actions" as a top risk: Claude may misinterpret instructions, "potentially causing ​**irreversible changes to your data or accounts** ​." That's the first warning on the page, not buried in fine print.
 
@@ -158,16 +158,3 @@ Before connecting either extension to any account you care about:
   * If you're EU/UK and waiting for Codex: Claude for Chrome is available now
 
 _As of May 2026. Browser agent security is an active area of research and these tools are evolving quickly. Verify current behavior in official documentation before making decisions based on this post._
-
-## Previous Posts:
-
-  * The new AI model just dropped — should you switch? A practical take on why most solo operators overestimate the gains: [Meta Muse Spark](/blog/meta-muse-spark-one-person-company)
-
-  * Why your AI workflow feels fragmented: the real bottleneck isn’t the model — it’s the way tools are stitched together: [Workspace agents for solo operators](/blog/workspace-agents-for-solo-operators)
-
-  * Browser AI tools all sound the same right now — here’s the practical difference between agent extensions, AI browsers, and desktop workspaces: [Browser agent extensions vs AI browsers vs desktop workspaces](/blog/browser-ai-agent-what-it-can-do)
-
-  * GPT Image 2 for comics and visual storytelling: what actually works (and where it still breaks): [GPT Image 2 manga workflow](/blog/gpt-image-2-storyboard-solo)
-
-  * Comparing AI image tools in 2026: GPT Image 2 vs Midjourney vs Nano Banana 2 — which one fits your workflow: [AI image tools comparison](/blog/gpt-image-2-vs-midjourney-nano-banana-2)
-

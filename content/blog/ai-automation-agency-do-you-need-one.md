@@ -21,7 +21,7 @@ Before anything else, be honest about where you actually are.
 
 **Hire an AI automation agency if:** You have a concrete process that's costing you measurable time or money, your team has no capacity to build or maintain the solution internally, and you're willing to invest in proper scoping and handover — not just implementation.
 
-**DIY if:** Your workflows are well-defined, your team has someone who can commit real hours to building and testing, and the use case is narrow enough to start with a no-code tool or a well-designed prompt. A lot of what agencies sell for $15,000+ can be done with n8n or Make in a weekend, if you know what you're building.
+**DIY if:** Your workflows are well-defined, your team has someone who can commit real hours to building and testing, and the use case is narrow enough to start with a no-code tool or a well-designed prompt. A lot of what agencies sell for $15,000+ can be done with n8n or Make in a weekend, if you know what you're building. And knowing that starts with knowing the market: [how AI automation agency pricing actually breaks down](/blog/ai-automation-agency-pricing) is the quickest way to tell a fair quote from a padded one.
 
 **Wait if:** You haven't mapped your current processes well enough to know what "automated" would even look like. **Bringing in an agency before you understand your own workflows is how you end up paying someone else to figure out problems you should have solved yourself.** The discovery phase should sharpen a picture you already have, not paint it from scratch.
 
@@ -96,16 +96,3 @@ The point of these questions isn't to be adversarial — it's to set a professio
 ![f6.png](/blog/images/ai-automation-agency-do-you-need-one/1778750146141-a6995a3a-6e87-4831-bbb8-b93a7b6cbb56.webp)
 
 The honest truth about **ai automation agency services** is that the good ones are genuinely valuable and the mediocre ones are expensive timewasters who leave behind systems nobody on your team can maintain. The difference usually isn't visible in the sales process — it shows up in the handover. So before you sign anything, ask to see what the handover looks like. That single ask will tell you more than an hour of demos.
-
-## Previous Posts：
-
-  * Most solo founders don’t need a custom AI platform — they need a clearer workflow first. Here’s how AI workflow design actually scales without creating operational chaos — [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
-
-  * Before hiring an agency to automate everything, understand the difference between workspace agents, workflow builders, and where each one actually fits — [workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * A lot of “AI automation” problems are really context-switching problems inside fragmented systems — this is the operational bottleneck most teams miss — [stop context switching with workspace agents](/blog/stop-context-switching-workspace-agent)
-
-  * If you’re evaluating AI vendors, this breakdown of AI workspace agents explains where the category genuinely helps — and where it still creates more setup overhead than value — [AI workspace agents explained](/blog/ai-workspace-agents)
-
-  * The best AI systems for solo operators usually start small: one workflow, one repeated task, one measurable bottleneck — not a giant autonomous stack from day one — [AI agents for solo operators](/blog/ai-agent-solo-operators)
-

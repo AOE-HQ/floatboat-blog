@@ -93,7 +93,7 @@ Once a company's agents run on managed infrastructure — with specific tools, s
 
 The New Stack's coverage of [what Anthropic is actually trying to do here](https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/) puts it plainly: the infrastructure question is becoming someone else's problem to solve. The interesting design work moves up a layer.
 
-For solo operators and small teams, the practical implication is this: the AI tools you use in the next year or two will increasingly be built on infrastructure like this. You won't see it, but it's what makes long, autonomous tasks reliable instead of brittle.
+For solo operators and small teams, the practical implication is this: the AI tools you use in the next year or two will increasingly be built on infrastructure like this. You won't see it, but it's what makes long, autonomous tasks reliable instead of brittle — and that reliability is what makes it practical for [a one-person company to delegate multi-hour work to managed agents](/blog/claude-managed-agents-one-person-company) instead of babysitting a single prompt.
 
 ## What Solo Operators Should Take Away
 
@@ -104,16 +104,3 @@ What's worth paying attention to is the pattern. The agent infrastructure layer 
 If you're evaluating AI workspace tools (Floatboat, for instance, sits in that layer — integrating multiple AI capabilities into a single workspace flow), knowing that the underlying infrastructure question is increasingly "solved" by services like this helps you focus the right question: **does this tool use that infrastructure to actually reduce your thinking work, or is it still just a chat wrapper?**
 
 I'm still figuring out exactly what that bar looks like in practice. But I'll keep testing.
-
-**Previous posts:**
-
-  * [What is a Persistent AI Agent](/blog/what-is-persistent-ai-agent)
-
-  * [AI Agent vs AI Assistant](/blog/ai-agent-vs-ai-assistant)
-
-  * [How to Build an AI Agent for a One-Person Business](/blog/how-to-build-an-ai-agent)
-
-  * [AI Agent Use Cases: Real Examples](/blog/ai-agent-use-cases-real-examples)
-
-  * [Workflow Builder vs AI Workspace](/blog/workflow-builder-vs-ai-workspace)
-

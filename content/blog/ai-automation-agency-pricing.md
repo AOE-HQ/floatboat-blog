@@ -85,7 +85,7 @@ I'd ask about all of this before signing anything.
 
 If you're running a small team and you've identified a specific, repetitive process that eats hours every week — lead qualification, content repurposing, customer data entry, report generation — an agency can build something in a few weeks that would take you months to figure out on your own.
 
-It also makes sense when ​**the cost of the automation is clearly less than the cost of the manual work it replaces** ​. One source I read put it this way: a good agency pitches the price as a function of your ROI, not their hours. That framing makes the spend easier to evaluate.
+It also makes sense when ​**the cost of the automation is clearly less than the cost of the manual work it replaces** ​. One source I read put it this way: a good agency pitches the price as a function of your ROI, not their hours. That framing makes the spend easier to evaluate. Price is still only half the evaluation — [whether you need an agency at all](/blog/ai-automation-agency-do-you-need-one) is the other half, and it turns on scope, ownership, and what your team can maintain.
 
 And if your team doesn't have someone who's comfortable building workflows in tools like [n8n](https://n8n.io/) or Make, the agency is essentially buying you time and expertise you don't have in-house.
 
@@ -122,12 +122,3 @@ These aren't generic "ask about their portfolio" questions. These are the ones t
 That's my honest take on where ai automation agency pricing stands right now. The market is still maturing, the price ranges are wide, and the quality gap between agencies is real. If you're evaluating this spend, the best thing you can do is get specific — specific about what you need automated, specific about what success looks like, and specific about what happens after the build is done.
 
 Alright, that's today's little discovery. If you're going through this evaluation yourself, I'd be curious what you find.
-
-### Further Reading
-
-  * 👉 [Real AI Agent Use Cases: What They Actually Look Like in Practice](/blog/ai-agent-use-cases-real-examples)
-
-  * 👉 [How Solo Founders Are Using AI to Operate Like a Team](/blog/how-one-person-businesses-work-like-a-team-with-ai)
-
-  * 👉 [Lindy vs Gumloop: A Practical Comparison of AI Automation Tools](/blog/lindy-vs-gumloop)
-

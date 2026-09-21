@@ -28,7 +28,7 @@ Claude Cowork 之所以存在，是因为对话式 AI 在「执行」面前止�
 
 **Claude Cowork 替代品**的搜索量之所以上涨，是因为买家各自在优化不同的**办公岗位形态**，而不是因为 Cowork 在文件委派上做得不好。触发模型把市场切开了一道口子：Cowork 由用户发起或显式定时——你开一个任务或设一个节奏——但它不会仅凭日历语义就自动为每一场外部会议做准备，除非你自己接好连接器并养成习惯。生态锁定也重要：Cowork 走 Anthropic 订阅体系，据 Anthropic 2026 年 7 月的定价页，它比 Chat 消耗限额更快。已经在 Microsoft 365 里生活的企业团队会问：我为什么还需要第二个桌面 agent？而失败模式是「**开会前忘准备**」的单人创业者，要的是日历原生的执行，而不是又一个记得打开的聊天窗口。
 
-这就是为什么一份可信的替代品清单必须按**功能**排行——日历节奏、M365 技术栈、云端委派、开源操控、研究到成稿的输出——而不是按谁在 SEO 文案里复用了「Claude Cowork alternative」这个词。如果真正的问题是 Anthropic 系产品里该用哪个——Code、Cowork 还是 Tag——而不是拿什么替代 Cowork，那么答案就在 Claude Code vs Cowork vs Tag 这篇文章里。
+这就是为什么一份可信的替代品清单必须按**功能**排行——日历节奏、M365 技术栈、云端委派、开源操控、研究到成稿的输出——而不是按谁在 SEO 文案里复用了「Claude Cowork alternative」这个词。如果真正的问题是 Anthropic 系产品里该用哪个——Code、Cowork 还是 Tag——而不是拿什么替代 Cowork，那么答案就在[这三种形态怎么分活儿](/zh/blog/claude-code-vs-cowork-vs-tag)。
 
 ## 2\. 我们怎么排的（看功能，不看关键词）
 
@@ -58,7 +58,7 @@ Claude Cowork 之所以存在，是因为对话式 AI 在「执行」面前止�
 
 当你的工作已经活在 Outlook、Teams、Word、Excel、PowerPoint 和 SharePoint 里时，Microsoft Copilot Cowork 是最有分量的**企业办公 agent**替代品。微软把 Cowork 定位成一层 agentic 能力：以 Work IQ——邮件、会议、文件与聊天——为任务落地的基础，然后规划多步工作、在检查点暂停请求批准，最终返回成品工件而不只是一堆草稿建议。它于 2026 年 6 月在全球范围内正式可用。
 
-对 M365 里的非开发者来说，吸引力在熟悉感：你用大白话描述一个结果，Cowork 就在既有权限与审计边界内帮你发邮件、约会议、建文档、在 Teams 里发帖、检索组织资源。这和 Anthropic 的桌面文件夹 agent 是不同形态——云端租户执行 vs 本地虚拟机文件访问——但它解决了同一类问题：对从来不想碰终端的办公人员来说，「别再让我当应用之间的人工路由器」。
+对 M365 里的非开发者来说，吸引力在熟悉感：你用大白话描述一个结果，Cowork 就在既有权限与审计边界内帮你发邮件、约会议、建文档、在 Teams 里发帖、检索组织资源。这和 Anthropic 的桌面文件夹 agent 是不同形态——云端租户执行 vs 本地虚拟机文件访问——但它解决了同一类问题：对从来不想碰终端的办公人员来说，「别再让我当应用之间的人工路由器」。开发者也会在仓库里撞上同一个路由器问题——所以[编程 Agent](/zh/blog/best-claude-code-alternatives)另有按仓库工种来排的一份榜单，比的不是办公适配。
 
 代价：需要 Microsoft 365 Copilot 授权（常见标价约 30 美元/人/月），任务执行还要按 2026 年正式定价消耗按量计费的 Copilot Credits。对不在 M365 里的单人创业者、或需要任意本地文件夹控制、不想把文件传上租户存储的买家，它不是默认选项。
 
@@ -120,7 +120,7 @@ Genspark（包括其 Super Agent 及 2026 年对比中讨论的桌面向产品�
 
 ## 5\. 办公 Agent 接下来会怎样
 
-三个趋势会让替代品搜索在 2026–2027 持续活跃。**平台捆绑**：Microsoft Copilot Cowork、Anthropic Cowork、Google/Gemini 的 agent 模式都会在各自生态里争夺「cowork」语义——买家要比的是岗位适配，而不是标签页名字。**云与本地**：Manus、Perplexity Computer、Genspark 在推动「无需桌面会话的委派」；Cowork、Copilot Cowork、Eigent 锚定在你看得见的文件与权限上。**触发方式多样化**：Floatboat 这类日历驱动 agent 会吸收 Cowork 从来就不是为自动发起而设计的工作负载。
+三个趋势会让替代品搜索在 2026–2027 持续活跃。**平台捆绑**：Microsoft Copilot Cowork、Anthropic Cowork、Google/Gemini 的 agent 模式都会在各自生态里争夺「cowork」语义——买家要比的是岗位适配，而不是标签页名字。**云与本地**：Manus、Perplexity Computer、Genspark 在推动「无需桌面会话的委派」；Cowork、Copilot Cowork、Eigent 锚定在你看得见的文件与权限上。**触发方式多样化**：Floatboat 这类日历驱动 agent 会吸收 Cowork 从来就不是为自动发起而设计的工作负载。承载面还在继续增多——[Codex for Chrome 和 Claude for Chrome](/zh/blog/codex-for-chrome-vs-claude-for-chrome)正把办公式委派搬进浏览器本身，起决定作用的是登录态权限与多标签上下文，而不是本地文件访问。
 
 对比这件事，奖励的是清醒，不是炒作。先定义你的办公任务，画出工作在哪里发起，再从榜单里选——而不是从谁复用了「Claude Cowork alternative」这个词来选。
 

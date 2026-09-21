@@ -54,7 +54,7 @@ Plan mode.** Plan mode is a read-only state: the agent analyzes the codebase and
 
 Claude Code is **not Claude Cowork**. Cowork is the same local-agent loop aimed at knowledge work — files, folders, and connected apps — rather than repositories. Code targets engineers and trees of source files; Cowork targets researchers and analysts and their documents. They are siblings on the same rung, not two names for one product. The full distinction is covered in the three-way comparison linked above.
 
-Claude Code is **not Claude Tag**. Tag is the multiplayer, asynchronous surface: one Claude per Slack channel, organization identity, ambient follow-up. Code may open a PR; Tag lives in the channel where the decision to merge was made. Code is where one engineer ships. Tag is where a team delegates.
+Claude Code is **not [Claude Tag](/blog/what-is-claude-tag)**. Tag is the multiplayer, asynchronous surface: one Claude per Slack channel, organization identity, ambient follow-up. Code may open a PR; Tag lives in the channel where the decision to merge was made. Code is where one engineer ships. Tag is where a team delegates.
 
 Claude Code is **not Chat**. Chat is the low-friction, turn-based surface for drafting and Q&A. Code executes against a repository with tools and test runs. Chat answers; Code does.
 
@@ -62,7 +62,7 @@ Claude Code is **not an autocomplete plugin**. Copilot-style inline suggestions 
 
 ## 3\. How Claude Code Works
 
-The loop is plan, execute, verify, revise. On a nontrivial task, Claude Code first reads enough of the codebase to understand the change, typically drafting a plan in plan mode. It then executes: editing files, running commands, running tests. It reads the results — the failing test, the linter output, the type error — and revises until the artifact is reviewable. That feedback loop, not any single generation, is what separates an agent from a smarter autocomplete.
+The loop is plan, execute, verify, revise. On a nontrivial task, Claude Code first reads enough of the codebase to understand the change, typically drafting a plan in plan mode. It then executes: editing files, running commands, running tests. It reads the results — the failing test, the linter output, the type error — and revises until the artifact is reviewable. That feedback loop, not any single generation, is what separates an agent from a smarter autocomplete — and it is the ingredient [vibe coding](/blog/ai-agent-workflow-vibe-coding) skips when speed outruns the verify step.
 
 Concretely: ask Claude Code to fix a bug that spans a service and its client. It greps for the call site, reads both sides of the contract, drafts a plan in plan mode, then edits the two files, runs the relevant tests, and reacts to the failure. A developer who used to do that in a morning now reviews a diff in minutes. The value is not that the model wrote the lines; it is that the loop closed without the human babysitting each step.
 

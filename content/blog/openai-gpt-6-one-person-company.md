@@ -111,17 +111,4 @@ None of this requires GPT-6. All of it makes GPT-6 (or Claude, or whatever) imme
 
 The thing I wish I'd done two years ago, before GPT-4 even: spent the weekend writing down the questions I already knew the answers to. Every assistant has been easier to work with since I started doing that.
 
-Anyway — that's where I am on this right now. I'll update when the model actually ships.
-
-**Previous Posts:**
-
-→ See why[ most AI workflows break without structure (and how to fix it before GPT-6)](/blog/ai-agent-workflow-vibe-coding)
-
-→ Understand what **[persistent AI agents are and why memory will matter more than model upgrades](/blog/what-is-persistent-ai-agent)**
-
-→ Learn how **[AI actually fits into solo operator workflows in 2026 (beyond the hype)](/blog/ai-agents-2026-solo-operators)**
-
-→ Explore how to **[build systems that scale your one-person business without hiring](/blog/scale-one-person-business-without-hiring)**
-
-→ Break down why **[AI “forgets” every session — and what to do about it now](/blog/why-ai-forgets-every-session)**
-
+Anyway — that's where I am on this right now. I'll update when the model actually ships. It did: **[GPT-6 Astra](/blog/gpt-6-astra)**, and the headline for solo founders turned out to be long-horizon computer use and per-task cost — which makes every item in the list above more valuable, not less.

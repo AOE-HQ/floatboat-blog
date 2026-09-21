@@ -77,7 +77,7 @@ But I want to be honest about the friction. You need a browser to view HTML file
 
 The question isn't which format is more powerful. It's which fits into your day. Right now, for me, it's both — just for different things.
 
-Platforms are already moving in this direction. Claude's [Artifacts feature](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) lets you generate and render HTML directly in the chat interface. OpenAI's [Canvas workspace](https://openai.com/index/introducing-canvas/) opened up side-by-side editing. Tools like `html-anything` convert agent output into standalone HTML artifacts. The infrastructure for richer AI output is showing up whether you specifically asked for it or not.
+Platforms are already moving in this direction. Claude's [Artifacts feature](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) lets you generate and render HTML directly in the chat interface. OpenAI's [Canvas workspace](https://openai.com/index/introducing-canvas/) opened up side-by-side editing. Tools like `html-anything` convert agent output into standalone HTML artifacts. The infrastructure for richer AI output is showing up whether you specifically asked for it or not. None of it requires hiring help, either — [whether an AI agent development service is worth it](/blog/ai-agent-development-services) becomes a live question only when the plumbing around those outputs outgrows you, not when you want better-looking artifacts.
 
 ![5.png](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
 
@@ -96,18 +96,3 @@ That last point is worth emphasizing. This isn't an irreversible decision. The s
 I'm still figuring this out. That's the honest version. Two weeks isn't enough to know where all the edges are. But I can tell you the direction feels right — not because HTML is flashier, but because **work artifacts should be readable, reviewable, and useful to the person who actually has to act on them.** That's a pretty grounded reason to care about the format.
 
 Anyway, that's where I'm at with this. Still experimenting, still adjusting. But at least I know what direction I'm adjusting toward. Back to building things.
-
-## Previous Posts:
-
-• [Curious how AI workflows change day-to-day work? Read: AI Workflow for Solo Founders: What Actually Works](/blog/ai-workflow-for-solo-founders)
-
-• [If output is becoming a workspace instead of a chat, read: AI Workspace Agents: What Changes Beyond Chat Interfaces](/blog/ai-workspace-agents)
-
-• [Wondering whether agents or workflows fit better? Read: Workspace Agents vs Workflow Builders](/blog/workspace-agents-vs-workflow-builders)
-
-• [Using coding agents already? Read: Claude Code for Non‑Developers: What Solo Operators Should Know](/blog/claude-code-non-developers-solo-operators)
-
-• [Thinking about keeping work artifacts inside one environment? Read: Stop Context Switching: Why Workspace Agents Matter](/blog/stop-context-switching-workspace-agent)
-
-![6.png](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.webp)
-

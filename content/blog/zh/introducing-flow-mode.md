@@ -28,7 +28,7 @@ draft: false
 
 如果你靠写作为生——是起草发布帖的独立创始人、在打磨客户方案的顾问、或把会议发言变成计划的运营人——你早就懂那种摩擦。**语音转文字**把话变成字比打字快，但多数工具把听写当成一种独立模式：停下说话、改段落、把一段复制进聊天框、把改好的粘回来、再来一遍。**AI 会议纪要**应用能把会议录得好，可交付物往往在会**之后**才来，躺在另一个标签页里，和你正想写完的那份文档毫无关联。
 
-**Floatboat Flow Mode**是我们对这个割裂的回应。它不是独立的听写工具，也不是旁挂一个会后的总结器。它是 [Floatboat](</>) 内部的一层表达能力：**语音输入、编辑、Agent 改写、会议捕捉、版本控制**共用同一副界面——也就是你真正想交付的那份文档。
+**Floatboat Flow Mode**是我们对这个割裂的回应。它不是独立的听写工具，也不是旁挂一个会后的总结器。它是 Floatboat 内部的一层表达能力：**语音输入、编辑、Agent 改写、会议捕捉、版本控制**共用同一副界面——也就是你真正想交付的那份文档。
 
 这个目标又简单又难：**别打断你的流**。你说，草稿长。你要精确时，才碰键盘。Agent 在你选中的片段上干活，而不是在一条脱离文档的聊天线程里。会议还在开，下一步的框架就已经可以摆在桌面上了。
 
@@ -40,7 +40,7 @@ draft: false
 
 聊天式写作助手会补上第三种打断。把一段贴进 Claude 或 ChatGPT，拿回一版改写，再贴回去。智能是真的，但**文档不是运行时**。对已经要在日历准备、客户电话和发稿之间辗转的单人创业者来说，这条多余的回路正是心气耗尽的地方。
 
-我们围绕另一个重心打造了 Flow Mode：**文档即工作区**，语音是主要输入，Agent 是同一份文件里的协作者——这与 Floatboat 更大的**Calendar-Driven**故事一致：工作由你日程上的事触发，而不是由你「记得打开」的某个聊天窗口触发。范式的深入对比见 Calendar-Driven AI vs Chat-Based AI。
+我们围绕另一个重心打造了 Flow Mode：**文档即工作区**，语音是主要输入，Agent 是同一份文件里的协作者——这与 Floatboat 更大的**Calendar-Driven**故事一致：工作由你日程上的事触发，而不是由你「记得打开」的某个聊天窗口触发。这不是说对话式的表面一无是处——多人协作的「人 + agent」线程本来就该待在 [FloatIM 这样的 agent 原生消息网络](/zh/blog/introducing-floatim) 里——而是说草稿不是线程：合写需要以文档本身为运行时。这种范式之争，在[日历驱动 AI 与聊天式 AI 的分野](/zh/blog/calendar-driven-ai-vs-chat-ai)里有更完整的展开。
 
 ## 3\. Floatboat Flow Mode 做什么（大白话版）
 
@@ -84,7 +84,7 @@ Floatboat 仍是**那个从日历驱动工作的主动式 Agent OS**——Agent 
 
 如果你把研究存在 Obsidian 或本地 markdown 里，Flow Mode 也自然搭配「如何把 Obsidian 和 AI agent 一起用」那套工作流——口述一版草稿、就地打磨、把上下文留在你控制的文件里，而不是留在一场用完即弃的聊天会话里。
 
-Flow Mode 是 Mac 和 Windows 上 Floatboat 里的**桌面 workspace**功能——和 Combo Skills、多模型路由、事件级 Agent workspace 同处一个环境。具体可用性随版本而变；以线上应用和发布说明为准。
+Flow Mode 是 Mac 和 Windows 上 Floatboat 里的**桌面 workspace**功能——和 Combo Skills、多模型路由、事件级 Agent workspace 同处一个环境：你口述的这份草稿旁边，就可以是一个正在跑[每周 TikTok Shop 选品调研](/zh/blog/automate-tiktok-shop-research-fastmoss-floatboat)的 agent——一台桌面、多份 agent 工作，不必在标签页之间来回搬运。具体可用性随版本而变；以线上应用和发布说明为准。
 
 ## 5\. 一个快速场景：从口述草稿到定稿计划
 
@@ -96,7 +96,7 @@ Flow Mode 是 Mac 和 Windows 上 Floatboat 里的**桌面 workspace**功能—�
 
 ## 结论
 
-**Floatboat Flow Mode**把**AI 语音口述**当作合写的起点——而不是通往原始逐字稿的捷径。如果你的瓶颈是在说话、打字、聊天和会议工具之间来回切换，解法不是更响的提示词，而是一条尊重节奏的单一文档流。
+**Floatboat Flow Mode**把**AI 语音口述**当作合写的起点——而不是通往原始逐字稿的捷径。如果你的瓶颈是在说话、打字、聊天和会议工具之间来回切换，解法不是更响的提示词，而是一条尊重节奏的单一文档流。尊重节奏也包括文档之外的小摩擦——按下录音键之前那些找窗口、切应用的动作，交给 [Raycast 风格的 Windows 启动器](/zh/blog/raycast-for-windows-floatboat) 去做就好。
 
-在最新版 Floatboat 里试试 Flow Mode，入口 [floatboat.ai](</>)。如果你想先对比范式，去读 Calendar-Driven AI vs Chat-Based AI；如果你的周被会议占满，把这发布和博客上已有的会议准备、跟进指南配起来用。
+在最新版 Floatboat 里试试 Flow Mode，入口 floatboat.ai。如果你想先对比范式，去读 Calendar-Driven AI vs Chat-Based AI；如果你的周被会议占满，把这发布和博客上已有的会议准备、跟进指南配起来用。
 

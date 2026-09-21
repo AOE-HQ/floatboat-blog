@@ -98,6 +98,8 @@ n8n 回报有耐心的人。搭建更花时间，但一旦跑起来，强大得�
 
 n8n 则不是为「描述一个任务、让 AI 自己搞定」的人准备的。学习曲线是实打实的。如果团队不习惯节点、JSON、偶尔还要翻错误日志，它拖慢你的速度会多于帮你。
 
+而如果诚实的答案是：你的工作根本不是流水线形状的——是一段段要写的代码、一批批要处理的文档、一件件想单独交出去的任务——那真正的岔路口不在 Relevance 和 n8n 之间，而在 [哪种 Agent 形态适合你的工作](/zh/blog/claude-code-vs-cowork-vs-tag)：本地写代码、本地办公协作、异步共享同事，是三种不同的活儿，不是同一个工具里的三档设置。
+
 如果你想要介于两者之间的东西——AI 优先、但又内置工作流自动化——[Lindy AI](https://www.lindy.ai/) 这类工具值得一看。Lindy vs n8n 对比（第 20 期）展示了 Lindy 如何在一个地方同时处理 Agent 推理与工作流执行，正好补上「n8n 太技术、Relevance AI 太受限」的团队之间的空档。
 
 还在摸索自己需要什么？没关系。两个的免费档都试试——Relevance AI 给你 200 个 Actions 起步，n8n 的 Community Edition 自托管免费。小实验能告诉你很多。
@@ -107,16 +109,3 @@ n8n 则不是为「描述一个任务、让 AI 自己搞定」的人准备的。
 _总之，挖这个还挺有意思的。这两款工具在自己设计好的方向上都很出色——我只是觉得很多人最后很沮丧，是因为给处境选错了工具。希望这篇能帮你搞清楚自己到底在哪条道上。_
 
 _接着去造东西了。_
-
-## 往期文章
-
-  * **[搞懂 AI Agent 与传统自动化工作流的真正区别](/zh/blog/workflow-builder-vs-ai-workspace)**
-
-  * **[在选对工具之前，先学会一步一步怎么搭 AI Agent](/zh/blog/how-to-build-an-ai-agent)**
-
-  * **[看看现实世界里的 AI Agent 用例，找到 Relevance AI 这类工具真正发光的地方](/zh/blog/ai-agent-use-cases-real-examples)**
-
-  * **[对比 AI Agent 与 AI 助手，更好理解这些工具实际怎么运作](/zh/blog/ai-agent-vs-ai-assistant)**
-
-  * **[看单人创始人如何在不用完整开发团队的情况下用 AI 工具自动化工作流](/zh/blog/how-one-person-businesses-work-like-a-team-with-ai)**
-

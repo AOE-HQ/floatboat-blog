@@ -58,7 +58,7 @@ For fans, the practical move is to plan around clusters rather than the full map
 
 The country split also affects time zones. A fan watching from Europe, Asia, or South America may experience the same tournament as a sequence of very different kickoff windows depending on whether a match is in Mexico City, Los Angeles, Toronto, or New York/New Jersey. That is one reason the host-city layer works best when paired with a calendar layer. The city tells you the place; the calendar tells you what that place means in your local time.
 
-From a travel perspective, the three-country format rewards early decisions. If your priority is stadium variety, you may want a cluster such as Vancouver–Seattle or New York/New Jersey–Philadelphia–Boston. If your priority is following one team, the draw and bracket matter more than the map. If your priority is a once-in-a-lifetime venue, Mexico City or a final-stage U.S. stadium may drive the decision.
+From a travel perspective, the three-country format rewards early decisions. If your priority is stadium variety, you may want a cluster such as Vancouver–Seattle or New York/New Jersey–Philadelphia–Boston. If your priority is following one team, [the draw and the knockout bracket it sets up](/blog/world-cup-2026-bracket) matter more than the map. If your priority is a once-in-a-lifetime venue, Mexico City or a final-stage U.S. stadium may drive the decision.
 
   4. United States Host Cities
 
@@ -108,7 +108,7 @@ If you are planning around the United States national team, use the USA World Cu
 
 The right travel sequence is venue first, match second, local movement third. Do not start with a hotel or transit assumption before you know whether the match is actually in that city and whether the kickoff time creates a same-day travel problem. Once the match is confirmed, check the local host-city page for official mobility guidance, then use your calendar to block travel time around the event.
 
-For international visitors, the largest risk is underestimating distance. A map of North America can make host cities look like a connected tour route, but many city pairs require flights and recovery time. Treat each region as its own planning unit unless you have enough days between matches. This is especially important in the knockout stage, where a team’s next venue depends on results.
+For international visitors, the largest risk is underestimating distance. A map of North America can make host cities look like a connected tour route, but many city pairs require flights and recovery time. Treat each region as its own planning unit unless you have enough days between matches. This is especially important in the knockout stage, where a team’s next venue depends on results — until those results exist, a team’s route is [a bracket pick](/blog/world-cup-2026-bracketology), not a travel plan.
 
   8. How to Use This Host-City Guide
 
@@ -129,8 +129,3 @@ The short answer is simple: most venues are in the United States, with additiona
 The World Cup 2026 is being held across 16 host cities in the United States, Canada, and Mexico. The United States has the largest venue footprint, Canada provides Vancouver and Toronto, and Mexico contributes Guadalajara, Monterrey, and Mexico City. Together, those cities create the largest geographic hosting map in men’s World Cup history.
 
 For fans, the practical answer is to treat host cities as planning regions. Use this page to understand the map, use the schedule to identify actual match dates, and use official FIFA and host-city pages before booking travel.
-
-
-## Related Reading- [World Cup 2026 Guide — the main hub for tournament format, schedule, and planning.](/blog/world-cup-2026-guide)
-- [World Cup 2026 Schedule: Full Fixtures & Calendar Sync — match dates and calendar context.](/blog/world-cup-2026-schedule)
-- [USA World Cup 2026 Schedule: Match Times & Reminders — USMNT-specific schedule planning.](/blog/world-cup-2026-schedule-usa)

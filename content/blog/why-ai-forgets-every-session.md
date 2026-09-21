@@ -27,7 +27,7 @@ You've just spent 20 minutes re-briefing your AI on context it "knew" two days a
 
 This isn't a bug. It's by design. A stateless AI platform processes each request independently, without any memory of previous interactions. Every time a user engages with the AI, it treats the session as a brand-new conversation — the system does not rely on historical data from past interactions to inform its responses.
 
-That architectural choice has real tradeoffs. Stateless systems are easier to scale and more predictable. But the cost lands entirely on you, the user, every single session. You're not getting smarter AI over time — you're just getting faster at re-explaining yourself.
+That architectural choice has real tradeoffs. Stateless systems are easier to scale and more predictable. But the cost lands entirely on you, the user, every single session. You're not getting smarter AI over time — you're just getting faster at re-explaining yourself. And the pace compounds: [what the reset tax adds up to across a working week](/blog/why-ai-forgets-between-sessions) is over an hour a day spent just getting back to where you left off, before any real work starts.
 
 The hidden productivity drain here is what researchers call ​"prompt engineering overhead"**​: the cognitive load of constantly reinserting context into every new conversation. This architectural limitation creates several significant problems: developers and users must constantly re-insert context into every prompt, leading to longer, more complex prompts that are difficult to maintain. Computational inefficiency means systems repeatedly process identical or similar contextual information. And without persistent memory of user preferences and past interactions, AI systems struggle to deliver truly personalized experiences that improve over time.
 
@@ -126,16 +126,3 @@ I'm not sure I've fully figured out my own solution here. I'm still experimentin
 ![5.png](/blog/images/why-ai-forgets-every-session/1775543648701-03ac0ad6-590b-4a19-b418-3b9157fc917e.webp)
 
 _This is based on my own experience running a solo content operation and the research I've been doing into AI memory architecture. I haven't been paid by anyone mentioned here. If you're experimenting with persistent context solutions, I'd genuinely be curious what you're finding — this space is moving fast and I'm still figuring parts of it out myself._
-
-## Previous Posts:
-
-  * [If you've ever tried maintaining your own automation setup, this real-world breakdown of Feishu CLI shows what solo operators actually deal with](/blog/feishu-cli-solo-work-setup).
-
-  * [Want to see how solo founders are using AI to operate like a full team (without constant re-explaining)? Start here](/blog/how-one-person-businesses-work-like-a-team-with-ai).
-
-  * [Still deciding between chat-based AI and something more execution-focused? This guide breaks down the difference between AI agents and assistants](/blog/ai-agent-vs-ai-assistant).
-
-  * [If you're trying to turn repeated prompts into reusable workflows, this step-by-step guide to building an AI agent is a solid next read](/blog/how-to-build-an-ai-agent).
-
-  * [And if you're exploring tools that go beyond stateless chats, this comparison of workflow builders vs AI workspaces will help you choose](/blog/workflow-builder-vs-ai-workspace).
-

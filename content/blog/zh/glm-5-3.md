@@ -34,7 +34,7 @@ GLM-5.3 是一个与 GLM-5.2 同源的混合专家（MoE）模型：总参数约
 
 背后的强化学习基础设施值得点名，因为它解释了为什么提升集中在那个位置。IndexShare 负责长上下文处理；SAO（更早期长程 RL 工作的继任者）负责跨扩展任务序列的强化学习；Slime 训练框架（[Z.ai](https://Z.ai) 已开源）负责编排整条 pipeline。三者都出现在 GLM-5.2 的后训练里。GLM-5.3 增加的是规模与多样性：更多环境、更长的回合、更多的算力，全部对准同一个基座。公司自己的话——"我们可能离这个基座的智能上限还远得很"——等于承认：他们自己也不知道这个特定底座还能被推多远。
 
-有一个设计细节会影响模型在实际使用中的行为：GLM-5.3 保留了 GLM-5.2 引入的努力档位（effort-level）控制，让调用方在推理深度与延迟、token 成本之间做取舍。在 [Z.ai](https://Z.ai) 的内部 Code Bench 上，公司报告称在高推理档下，GLM-5.3 平均约用 50,000 个输出 token 完成 31.5% 的端到端任务——完成率高于 Claude Opus 4.8 的 29.5%，而后者达到这个成绩需要约 120,000 个 token，见 [MarkTechPost 的报道](https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/)。这是同一类任务上 2 比 1 的 token 效率优势，对任何按 token 付费跑长 Agent 任务的人来说，它和头版头条的完成率数字一样重要。和所有厂商自报的结果一样，这些数字在被独立复现之前都应视为声明而非事实，但效率主张的方向与 [Z.ai](https://Z.ai) 对整个 GLM-5 产品线的报告是一致的。
+有一个设计细节会影响模型在实际使用中的行为：GLM-5.3 保留了 GLM-5.2 引入的努力档位（effort-level）控制，让调用方在推理深度与延迟、token 成本之间做取舍。在 [Z.ai](https://Z.ai) 的内部 Code Bench 上，公司报告称在高推理档下，GLM-5.3 平均约用 50,000 个输出 token 完成 31.5% 的端到端任务——完成率高于 Claude Opus 4.8 的 29.5%，而后者达到这个成绩需要约 120,000 个 token，见 [MarkTechPost 的报道](https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/)。这是同一类任务上 2 比 1 的 token 效率优势，对任何按 token 付费跑长 Agent 任务的人来说，它和头版头条的完成率数字一样重要。和所有厂商自报的结果一样，这些数字在被独立复现之前都应视为声明而非事实，但效率主张的方向与 [Z.ai](https://Z.ai) 对整个 GLM-5 产品线的报告是一致的。这个杠杆也不是 GLM 独有——[Gemini 3.8 Flash 的思考档位](/zh/blog/gemini-3-8-flash)同样把推理勤奋度做成可调的成本旋钮——可见真正可迁移的是「档位纪律」，而不是对某家模型的忠诚。
 
 ## 3\. 编程数字——提升实际落在哪里
 

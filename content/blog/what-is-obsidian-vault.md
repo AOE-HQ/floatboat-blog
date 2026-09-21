@@ -90,7 +90,7 @@ Multiple vaults are normal. Consultants often keep a client vault separate from 
 
 **File sync folders (Dropbox, iCloud Drive, Google Drive Desktop).** Sync clients move bytes; they do not provide link autocomplete, graph view, or a note-centric editor. A vault can _live inside_ a synced folder, but sync alone is not a knowledge base.
 
-**Desktop AI agents that read folders.** As of 2026, a growing class of tools treats a local directory as working memory for multi-step tasks — meeting briefs, project drafts, file cleanup. A vault is an especially good directory for that pattern because notes are already text, linked, and human-curated. That pairing is a workflow choice, not a feature Obsidian must ship itself; we walk through the practical setup in our companion guide on [using Obsidian with an AI agent](/blog/how-to-use-obsidian-with-ai-agent).
+**Desktop AI agents that read folders.** As of 2026, a growing class of tools treats a local directory as working memory for multi-step tasks — meeting briefs, project drafts, file cleanup. A vault is an especially good directory for that pattern because notes are already text, linked, and human-curated — which is why the same folder is the natural starting point for [an LLM knowledge base](/blog/llm-knowledge-base-solo-operators), should your material ever justify one. That pairing is a workflow choice, not a feature Obsidian must ship itself; we walk through the practical setup in our companion guide on [using Obsidian with an AI agent](/blog/how-to-use-obsidian-with-ai-agent).
 
 ## 5\. Who Should Use a Vault — and Who Should Not
 

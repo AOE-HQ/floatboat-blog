@@ -42,7 +42,7 @@ The 2026 format makes third place more important than in older 32-team tournamen
 
 > Table above per FIFA's official standings page.
 
-Mexico controlled Group A better than any host could reasonably script: three wins, no goals conceded, and a clean route into the knockouts. The decisive result was Mexico’s 1–0 win over South Korea, because it created separation before the final matchday and allowed Mexico to finish the group with a 3–0 statement against Czech Republic.
+Mexico controlled Group A better than any host could reasonably script: three wins, no goals conceded, and a clean route into the knockouts. Part of that edge was structural — as a host, Mexico played its entire group stage [inside its own host cities](/blog/where-is-world-cup-2026-host-cities), with no cross-border travel between matches. The decisive result was Mexico’s 1–0 win over South Korea, because it created separation before the final matchday and allowed Mexico to finish the group with a 3–0 statement against Czech Republic.
 
 South Africa’s 1–0 win over South Korea became the advancement match. It turned a crowded lower half of the table into a clear second-place finish and made Group A a good example of why final matchday discipline matters as much as star power.
 
@@ -219,13 +219,3 @@ For a deeper definition and a group-by-group ranking, use the dedicated World Cu
 The group stage gives every team a label: group winner, runner-up, third-place qualifier, or eliminated. That label determines the first knockout assignment. A first-place finish usually gives a cleaner path, but the expanded Round of 32 makes the relationship less predictable than older formats. Strong third-place teams can still create dangerous matchups early.
 
 Use this page to understand why a team landed where it did. Then use the World Cup 2026 bracket to follow the actual knockout route. This division keeps the content cluster clean: the draw page explains how groups were created, this groups page explains what happened in the groups, and the bracket page explains what those results became.
-
-## Related Reading- World Cup 2026 Draw: Rules, Results and Groups — how the groups were created
-- [World Cup 2026 Bracket: Template, Tracker & PDF — knockout path after the groups](/blog/world-cup-2026-bracket)
-- [USA World Cup 2026 Group: Schedule, Opponents & Key Matches — deeper USMNT group analysis](/blog/world-cup-2026-schedule-usa)
-- [World Cup 2026 Group of Death Explained — difficulty ranking and interpretation](/blog/world-cup-2026-bracketology)## Conclusion
-
-The World Cup 2026 groups did more than sort teams into a table. They created the first version of the knockout map. Mexico, Switzerland, Brazil, the United States, Germany, the Netherlands, Belgium, Spain, France, Argentina, Colombia, and England won the twelve groups, but the expanded format made third place just as important for many storylines.
-
-That is why groups and standings belong on one canonical URL. Before the tournament, readers need group lists and key matches. During the tournament, they need live tables. After the group stage, they need final standings that explain the bracket. Keeping all three jobs together gives readers one page to return to and gives the World Cup content cluster a stable hub.
-

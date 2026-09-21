@@ -32,7 +32,7 @@ For the 2026 tournament, the format makes this more important. The expanded fiel
 
   2. Start With the Bracket Facts, Then Add Interpretation
 
-The first rule of bracketology is to keep the source layer clean. Use the official bracket or a maintained tracker for teams, dates, venues, and scores. Then build your own analysis on top of that layer. When those two layers get mixed together, readers cannot tell what is confirmed and what is your opinion.
+The first rule of bracketology is to keep the source layer clean. Use the official bracket or [a maintained bracket tracker](/blog/world-cup-2026-bracket) for teams, dates, venues, and scores. Then build your own analysis on top of that layer. When those two layers get mixed together, readers cannot tell what is confirmed and what is your opinion.
 
 For the current knockout path, use the World Cup 2026 bracket template and tracker as the factual reference. It records matchups, venues, dates, and available scores. This article uses that context to explain how to think about the bracket, not to replace the live tracker.
 
@@ -84,7 +84,7 @@ This framework is intentionally lightweight. It is not trying to simulate the to
 
   6. Common Bracketology Mistakes
 
-The most common mistake is picking names instead of paths. A famous team can have a difficult opponent, short rest, a hostile venue atmosphere, or a matchup that exposes its weaknesses. Bracketology should account for those conditions rather than treating the crest as the prediction.
+The most common mistake is picking names instead of paths. A famous team can have a difficult opponent, short rest, a hostile venue atmosphere, or a matchup that exposes its weaknesses. Bracketology should account for those conditions rather than treating the crest as the prediction. In a tournament spread across [16 North American host cities](/blog/where-is-world-cup-2026-host-cities), where a match is played is one of those conditions, not a detail.
 
 A second mistake is overreacting to the last result. A 3–0 win can hide poor finishing from the opponent; a 1–0 win can hide excellent control. Scores matter, but they are not the whole story. If you only sort teams by the previous scoreline, your bracket becomes a highlight-reel reaction rather than an analysis.
 
@@ -119,6 +119,3 @@ That makes bracketology especially useful once the quarterfinal opponents are kn
 World Cup bracketology is most valuable when the bracket is real enough to analyze but not finished enough to be obvious. The 2026 quarterfinal stage is exactly that moment. The Round of 32 and Round of 16 have already changed the field, and the remaining path is now concrete enough to compare matchups, fatigue, and collision points.
 
 Use the official bracket or the live tracker for facts. Use this guide to think through path difficulty, upset zones, and champion routes. And keep the entertainment disclaimer in place: a bracket can be smart, but football does not owe anyone a clean prediction.
-
-## Related Reading- [World Cup Bracket 2026: Template, Tracker & PDF — the factual bracket tracker and downloadable assets.](/blog/world-cup-2026-bracket)
-- [FloatCup: Subscribe to the World Cup 2026 Calendar in One Click — calendar reminders and match-time updates.](/blog/floatcup-world-cup-2026-calendar-subscribe)

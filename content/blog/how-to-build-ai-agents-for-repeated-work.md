@@ -69,7 +69,7 @@ Here's a truth the AI industry doesn't advertise enough: ​**most repeated work
 
 **A no-code builder** — If your task requires more back-and-forth reasoning (e.g., "research this company and summarize what matters for a sales call"), a builder tool with memory and tool access is worth considering. These are drag-and-drop environments where the agent can call APIs, search the web, or pull from a knowledge base.
 
-**A coded workspace agent** — Only reach here if the above options fail. This means writing actual logic, managing state, and handling errors yourself. It's more powerful, but the maintenance cost is real.
+**A coded workspace agent** — Only reach here if the above options fail. This means writing actual logic, managing state, and handling errors yourself. It's more powerful, but the maintenance cost is real. Once you're writing code anyway, the next fork is [how much orchestration to hand-roll versus adopting a workspace that already runs it](/blog/dynamic-workflows-build-or-use-workspace) — a choice worth pricing before the first line, not after.
 
 The rule I live by: ​**don't build what a prompt can do** ​. Don't code what a builder can handle. Save your engineering effort for the 10% of tasks that genuinely require it.
 
@@ -102,16 +102,3 @@ One more thing worth repeating: you're building your ​**first useful agent** �
 Building an AI agent for repeated work isn't about technology — it's about clarity. The teams and individuals who get real value out of their first agent are the ones who took the time to map the job before touching a tool. The ones who struggled? They usually started with the tool and worked backwards.
 
 Pick one repeated task, map it carefully, choose the lightest build path that gets you there, and keep a human in the loop until you trust the outputs. That's the whole playbook. Everything else is iteration.
-
-## Previous Posts:
-
-  * Most first-time builders overcomplicate AI agents. Here’s why starting with one narrow workflow usually works better than chasing a “full AI operating system” — [what is agentic AI tools](/blog/ai-agent-solo-operators)
-
-  * Workflow builders and workspace agents solve very different problems — this breakdown helps you choose the lightest setup that actually fits your work — [workspace agents vs workflow builders](/blog/workspace-agents-vs-workflow-builders)
-
-  * Before automating everything, understand the difference between assistants, workflow agents, coding agents, and autonomous systems — [what are Claude managed agents](/blog/what-are-claude-managed-agents)
-
-  * AI workflows usually fail from too much complexity, not too little capability. This is the practical framework solo founders are using instead — [AI workflow for solo founders](/blog/ai-workflow-for-solo-founders)
-
-  * If your AI setup already feels messy, fragmented context between tools is probably the bottleneck — not the model quality itself — [why AI workflows feel fragmented](/blog/workspace-agents-for-solo-operators)
-

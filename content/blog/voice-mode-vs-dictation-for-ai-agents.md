@@ -50,7 +50,7 @@ Four properties separate voice mode from dictation in practice.
 
 **Two-way audio.** The model speaks back. Latency, voice selection, and turn-taking quality define the experience. OpenAI's GPT-Live uses a full-duplex architecture so you can interrupt or overlap without rigid silence-based turn detection—a meaningful upgrade over earlier turn-by-turn voice stacks that could mistake a pause for "your turn is over" [OpenAI GPT-Live announcement](https://openai.com/index/introducing-gpt-live/).
 
-**Session-bound context.** Voice mode runs inside a chat or voice session. Context accumulates across spoken turns; switching to text mid-session is usually supported, but the center of gravity remains the live dialogue.
+**Session-bound context.** Voice mode runs inside a chat or voice session. Context accumulates across spoken turns; switching to text mid-session is usually supported, but the center of gravity remains the live dialogue — which is also why [what the agent actually knows at decision time](/blog/context-engineering-for-ai-agents) shapes the output more than which channel fed the words in.
 
 **Paraphrased transcripts.** OpenAI notes that voice transcripts are not verbatim records and may not exactly match what was said [OpenAI ChatGPT Voice help](https://help.openai.com/en/articles/20001274-chatgpt-voice). That is acceptable for reasoning; it is problematic when you needed word-perfect legal or code language without review.
 
@@ -98,7 +98,7 @@ Understanding the stack prevents category errors when comparing products.
 
 **Voice mode stack.** Audio capture → streaming speech understanding → model reasoning (often with tool use, memory, web search in premium tiers) → text-to-speech synthesis → playback. Full-duplex systems interleave listening and generation continuously rather than waiting for a complete user utterance [OpenAI GPT-Live](https://openai.com/index/introducing-gpt-live/). Turn-taking, interruption handling, and backchannel cues ("mhmm," "got it") are first-class product problems.
 
-**Dictation stack.** Audio capture → speech-to-text (ASR) → text inserted at cursor → *user edit* → standard text inference path. The agent stack downstream is identical to typing. Tool calls, file edits, and Cowork plans all trigger from approved text.
+**Dictation stack.** Audio capture → speech-to-text (ASR) → text inserted at cursor → *user edit* → standard text inference path. The agent stack downstream is identical to typing. Tool calls, file edits, and Cowork plans all trigger from approved text—precisely how [AI workspace agents](/blog/ai-workspace-agents) operate on your files and tools, whatever microphone captured the input.
 
 The practical implication for solopreneurs: voice mode investments (headphones, quiet environments, tolerance for paraphrase) differ from dictation investments (good mic, punctuation commands, habit of reading before Send). Mixing stacks in one workflow—dictating a brief, then opening voice mode to "continue"—can work, but context may not transfer cleanly between Cowork dictation and Claude mobile voice, because Anthropic currently excludes voice mode from Cowork and Code entirely [Anthropic help](https://support.claude.com/en/articles/11101966-use-voice-mode).
 
@@ -177,7 +177,7 @@ For scenario-level routing (client calls vs deep work vs coding sprints), see [v
 
 **When voice mode beats dictation even if typing is available:** you are stuck in motion, you want follow-up questions without crafting each one, or you are practicing spoken performance (sales, podcast outlines) where hearing rhythm matters.
 
-Neither modality replaces calendar-driven automation for recurring prep and follow-up—speech inputs still sit inside apps you must open. Calendar-triggered agents remain pull-free for scheduled work; voice and dictation reduce friction *after* you choose to engage.
+Neither modality replaces calendar-driven automation for recurring prep and follow-up—speech inputs still sit inside apps you must open. The same ceiling motivates [Claude Managed Agents](/blog/what-are-claude-managed-agents), where the run itself moves to hosted infrastructure and the voice-versus-dictation question stops mattering because no live session is waiting on you. Calendar-triggered agents remain pull-free for scheduled work; voice and dictation reduce friction *after* you choose to engage.
 
 ---
 

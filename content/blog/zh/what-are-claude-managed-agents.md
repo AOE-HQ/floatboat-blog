@@ -93,7 +93,7 @@ Anthropic 把 Managed Agents 做成了「元 harness」——一个设计目标�
 
 The New Stack 对 [Anthropic 到底想干什么](https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/)的报道说得很直白：基础设施问题正变成「别人去解决的问题」。有趣的工程工作向上移了一层。
 
-对单人创业者和小团队，实际含义是：未来一两年你用的 AI 工具，会越来越多地建在像这样的基础设施上。你看不见它，但正是它让长时间自主任务变得可靠、而不是一碰就碎。
+对单人创业者和小团队，实际含义是：未来一两年你用的 AI 工具，会越来越多地建在像这样的基础设施上。你看不见它，但正是它让长时间自主任务变得可靠、而不是一碰就碎——而正是这份可靠性，让[一人公司把几小时的工作真正托付给托管 agent](/zh/blog/claude-managed-agents-one-person-company)成为可行选项，而不再只是演示。
 
 ## 单人创业者该带走什么
 
@@ -104,16 +104,3 @@ The New Stack 对 [Anthropic 到底想干什么](https://thenewstack.io/with-cla
 如果你正在评估 AI 工作区工具（比如 Floatboat 就处在这一层——把多种 AI 能力整合进单一工作区流程），那么知道底层基础设施问题正越来越多地被这类服务「解决」，能帮你把问题问对：**这个工具是真的用那层基础设施来减少你的思考负担，还是仍然只是个聊天壳？**
 
 这个标准在实践里到底长什么样，我还在摸索。但我会继续测下去。
-
-**往期文章：**
-
-  * [什么是持久化 AI Agent](/zh/blog/what-is-persistent-ai-agent)
-
-  * [AI Agent vs AI 助手](/zh/blog/ai-agent-vs-ai-assistant)
-
-  * [如何为一人公司构建 AI Agent](/zh/blog/how-to-build-an-ai-agent)
-
-  * [AI Agent 用例：真实示例](/zh/blog/ai-agent-use-cases-real-examples)
-
-  * [工作流构建器 vs AI 工作区](/zh/blog/workflow-builder-vs-ai-workspace)
-

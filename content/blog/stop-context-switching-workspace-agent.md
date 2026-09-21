@@ -59,7 +59,7 @@ I built three of these last year. I've used one of them since. The other two wer
 
 ## What actually reduces context switching
 
-Okay, so here's where I land after a lot of trial and error. The thing that actually moves the needle isn't a "better" tool. It's a different _shape_ of tool. The category I keep coming back to is what people are starting to call a **workspace agent** — an AI that doesn't sit in its own tab, but lives where your work already is.
+Okay, so here's where I land after a lot of trial and error. The thing that actually moves the needle isn't a "better" tool. It's a different _shape_ of tool. The category I keep coming back to is what people are starting to call a **workspace agent** — an AI that doesn't sit in its own tab, but lives where your work already is. And the case for them is sharpest in [a one-person operation](/blog/workspace-agents-for-solo-operators), where a dropped thread has no one to catch it but you.
 
 ### One environment, not five tabs
 
@@ -134,16 +134,3 @@ That's my honest take. You'll have to decide what's right for your situation.
 If you've been feeling fried by the end of every day without being able to point at a specific reason — this is probably part of it. The fix isn't another app on top of the stack. It's making the stack shorter.
 
 Anyway, that's where I am with this right now. If you try the manual version this week, I'd be curious what you find.
-
-## Previous Posts:
-
-  * [How workspace agents can help reduce friction and make solo work feel smoother](/blog/stop-context-switching)
-
-  * [Learn why chat tools and workflow builders often add more complexity instead of solving problems](/blog/why-automation-ends-up-more-frustrating)
-
-  * [If you're managing multiple roles in a solo business, here’s how workspace agents can streamline your day](/blog/solo-founders-and-workspace-agents)
-
-  * [Try this simple manual exercise to reduce context switching and see if a workspace agent fits](/blog/reduce-context-switching-manually)
-
-  * [Curious about AI agents for solo work? This post dives into what they do (and don’t do) for solo entrepreneurs](/blog/ai-agents-for-solo-operators)
-

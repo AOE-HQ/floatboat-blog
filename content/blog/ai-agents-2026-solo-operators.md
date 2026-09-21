@@ -69,7 +69,7 @@ I've been experimenting with this for the past few months — specifically tryin
 
 Execution-ready AI still requires someone to do the thinking upfront. The agent doesn't know your business, your voice, your standards, or your edge cases — until you teach it. And that setup process is real work.
 
-I learned this the uncomfortable way. I tried to hand off a weekly research summary task to an agent workflow in late February 2026. My setup: I used n8n connected to a web scraper and Claude's API, with a system prompt defining output format and source criteria. The first two runs were fine. The third run, it started pulling in sources I'd never use, ignored the format I'd specified, and generated something I had to completely redo. I went back and looked at what happened: I'd written the source criteria too loosely ("relevant industry news") without specifying recency windows or domain exclusions. The agent didn't "forget" — it just never had what it needed to begin with.
+I learned this the uncomfortable way. I tried to hand off a weekly research summary task to an agent workflow in late February 2026. My setup: I used n8n connected to a web scraper and Claude's API, with a system prompt defining output format and source criteria. The first two runs were fine. The third run, it started pulling in sources I'd never use, ignored the format I'd specified, and generated something I had to completely redo. I went back and looked at what happened: I'd written the source criteria too loosely ("relevant industry news") without specifying recency windows or domain exclusions. The agent didn't "forget" — it just never had what it needed to begin with. That is the whole problem in one sentence: [AI doesn't know how you work](/blog/ai-workflow-for-solo-founders) until you write it down, and most failed automations die at that step, not at the tool.
 
 **The gap between "runs automatically" and "runs well" is almost entirely about how well you've defined the task upfront.** Good agents don't remove judgment — they move it earlier in the process.
 
@@ -93,11 +93,11 @@ My honest take: **Type 1 is where solo operators get the most consistent ​leve
 
 ### Packaging Repeatable Work vs. Prompting from Scratch
 
-The practical distinction I've landed on: **prompting from scratch is a conversation. Packaged workflows are infrastructure.**
+The practical distinction I've landed on: **prompting from scratch is a conversation. Packaged workflows are infrastructure.** The furthest version of the infrastructure mindset is [role-based AI workflows](/blog/what-gstack-gets-right-about-one-person-businesses), where the packaging is organized around the hats a one-person business wears rather than around isolated tasks.
 
 Every time you start fresh with a new prompt, you're rebuilding context — your situation, your constraints, your format preferences. Fine for one-off tasks. But if you're doing the same category of work every week — competitive research, content drafts, client updates — rebuilding that context each time is just wasted attention.
 
-The better version is to invest once in defining the workflow clearly: what inputs it needs, what decisions it makes, what the output looks like, and where it should stop and ask you something. That upfront investment — I'd budget 2-4 hours for a moderately complex workflow — pays off across every future run.
+The better version is to invest once in defining the workflow clearly: what inputs it needs, what decisions it makes, what the output looks like, and where it should stop and ask you something. That upfront investment — I'd budget 2-4 hours for a moderately complex workflow — pays off across every future run. And a good chunk of that definition is deciding where your standards and sources live between runs, which is the real question behind [whether a solo operator needs an LLM knowledge base](/blog/llm-knowledge-base-solo-operators) — not which product to buy.
 
 _Okay, this is the part where the actual work is. And honestly? I underestimated it at first._
 
@@ -158,16 +158,3 @@ _That's what I'm doing, anyway._
 _Alright, that's today's little discovery. Catch you next time._
 
 ![5.png](/blog/images/ai-agents-2026-solo-operators/1775544805101-b21360a4-d95d-4dda-8c61-bae9406d801c.webp)
-
-## Previous Posts:
-
-  * [If you're exploring how automation actually works in a solo setup, this real-world breakdown of Feishu CLI is worth a read.](/blog/feishu-cli-solo-work-setup)
-
-  * [Want to see what AI agents look like in practice? This guide covers real use cases across different workflows.](/blog/ai-agent-use-cases-real-examples)
-
-  * [Not sure whether you need an agent or just a smarter assistant? This comparison helps clarify the difference.](/blog/ai-agent-vs-ai-assistant)
-
-  * [Thinking about building your own workflow instead of prompting from scratch? Start here.](/blog/how-to-build-an-ai-agent)
-
-  * [And if you're deciding between tools, this breakdown of workflow builders vs AI workspaces will help you choose.](/blog/workflow-builder-vs-ai-workspace)
-

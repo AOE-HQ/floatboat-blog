@@ -42,7 +42,7 @@ I tested this with a 40-page market research PDF. Dropped it in, asked for a str
 
 ### Cost-sensitive repetitive tasks
 
-If you're running repetitive tasks through an API, cost matters. According to [Google's API pricing page](https://ai.google.dev/gemini-api/docs/pricing), Gemini 3.5 Flash comes in roughly 40% cheaper than Gemini 3.1 Pro while outperforming it on most coding and agentic benchmarks. For a solo operator watching every dollar, that math is worth noticing.
+If you're running repetitive tasks through an API, cost matters. According to [Google's API pricing page](https://ai.google.dev/gemini-api/docs/pricing), Gemini 3.5 Flash comes in roughly 40% cheaper than Gemini 3.1 Pro while outperforming it on most coding and agentic benchmarks. For a solo operator watching every dollar, that math is worth noticing — though it's a discount measured inside Google's own lineup, and [where DeepSeek V4's API pricing is projected to land](/blog/deepseek-v4-api-solo-operator) is a budget tier Flash never plays in.
 
 I want to be careful not to overstate this though. Per-token cost only matters if the output quality is good enough that you're not spending extra time editing. Three out of five times on my content tasks, the output was solid. The other two needed cleanup.
 
@@ -88,9 +88,9 @@ There are legitimate cases: one model for long-context research, another for wri
 
 The simplest **Gemini 3.5 integration** path: if you're already in the Gemini app or Google AI Studio, 3.5 Flash is the default — no setup needed. For API access, the model ID is `gemini-3.5-flash`.
 
-If you're using an AI workspace that supports multiple models, the more interesting move is routing Gemini 3.5 to specific task types rather than replacing everything. For example, I've been testing it inside [Floatboat](</>), which recently added Gemini 3.5 Flash as a model option — so I can run long-document research through Gemini while keeping Claude for writing tasks, all in the same workspace without switching tabs. That kind of model routing is where **multi-model setups actually start making sense** instead of just adding complexity.
+If you're using an AI workspace that supports multiple models, the more interesting move is routing Gemini 3.5 to specific task types rather than replacing everything. For example, I've been testing it inside Floatboat, which recently added Gemini 3.5 Flash as a model option — so I can run long-document research through Gemini while keeping Claude for writing tasks, all in the same workspace without switching tabs. That kind of model routing is where **multi-model setups actually start making sense** instead of just adding complexity.
 
-A quick decision framework before switching for any task: **Is the context window a bottleneck?** If yes, the 1M tokens might solve it. **Is cost the primary constraint?** Compare per-token pricing at your actual volume. **Have you already optimized prompts for another model?** Factor in re-tuning time. If two or more answers point toward switching, test it. If only one does, stay put.
+A quick decision framework before switching for any task: **Is the context window a bottleneck?** If yes, the 1M tokens might solve it. **Is cost the primary constraint?** Compare per-token pricing at your actual volume, and against more than one budget option — [the Grok 3 API's published rates](/blog/grok-3-api-solo-operator) among them. **Have you already optimized prompts for another model?** Factor in re-tuning time. If two or more answers point toward switching, test it. If only one does, stay put.
 
 ![5.png](/blog/images/gemini-3-5-integration-solo-operators/1779587021751-2a32816c-1462-48ab-9647-1205288fb412.webp)
 
@@ -101,16 +101,3 @@ Gemini 3.5 Flash is legitimately strong — fast, cost-effective, and particular
 But for anyone evaluating ​**AI tools for a one-person business** ​, the question about any **Gemini 3.5 integration** was never "is this model good?" It's: **does adding this to my ​workflow** ​**​ save more time than it costs to manage?** If you work with long documents, run batch tasks, or live inside Google Workspace — worth testing. If your setup is humming along and your bottleneck isn't the model itself, wait.
 
 That's my honest take. You'll have to decide what's right for your situation.
-
-## Previous Posts:
-
-• [AI Workflow for Solo Founders: What Actually Saves Time?](/blog/ai-workflow-solo-founders) — Before adding another model to your stack, map the workflow you're trying to improve first.
-
-• [AI Workflow for Solo Operators: The Difference Between Demos and Daily Work](/blog/ai-workflow-for-solo-founders) — A practical look at where AI workflows break once they leave the demo stage.
-
-• [AI Workspace Agents: Why Chat Windows Stop Scaling](/blog/ai-workspace-agents) — Managing multiple models becomes easier when work happens inside one workspace instead of scattered tabs.
-
-• [Workspace Agents vs Chat Assistants: What's Actually Different?](/blog/workspace-agents-vs-chat-assistants) — The difference matters when you're deciding whether another model belongs in your workflow.
-
-• [How One-Person Businesses Work Like a Team With AI](/blog/how-one-person-businesses-work-like-a-team-with-ai) — Adding another model only helps if it removes a real bottleneck in how a solo business operates.
-

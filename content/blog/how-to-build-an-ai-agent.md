@@ -125,7 +125,7 @@ If your task is well-defined (summarize emails, draft content from a template, s
 
 The no-build options are more capable than they used to be. An honest overview:
 
-**ChatGPT​ with custom instructions and actions** — handles a lot of simple agent-like tasks. Surprisingly good for document-heavy workflows. Limitation: you're inside OpenAI's ecosystem.
+**ChatGPT​ with custom instructions and actions** — handles a lot of simple agent-like tasks. Surprisingly good for document-heavy workflows. Limitation: you're inside OpenAI's ecosystem. If that's the route you take anyway, [building a real agent inside ChatGPT](/blog/how-to-build-an-ai-agent-with-chatgpt) is mostly an exercise in writing clearer instructions, not in tooling.
 
 **n8n** — the most flexible workflow tool I've come across that doesn't require deep coding. Works well for connecting many tools into an automated chain. It has a learning curve but it's learnable. [Codecademy's breakdown of agent frameworks](https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025) gives a clear comparison if you want to evaluate these options side by side.
 
@@ -154,16 +154,3 @@ _Anyway — that's where I've landed after spending way too many evenings readin
 _If you're just curious about the space, honestly, even building one small thing that works is a pretty satisfying experience. And if you decide it's not worth the hassle? That's also a completely valid conclusion. Sometimes the best tool is the one someone else already built._
 
 _Back to experimenting._
-
-## Previous Posts:
-
-  * [Explore real-world AI agent use cases before deciding what to build](/blog/ai-agent-use-cases-real-examples)
-
-  * [Understand the key differences between AI agents and chatbots when scoping your project](/blog/ai-agent-vs-chatbot)
-
-  * [See when to use workflow builders vs AI workspaces for building agent systems](/blog/workflow-builder-vs-ai-workspace)
-
-  * [Learn what AI agent development services actually cost before building from scratch](/blog/ai-agent-development-services)
-
-  * [Compare Gumloop and similar tools to evaluate no-code options for building agents](/blog/gumloop-review-2026)
-

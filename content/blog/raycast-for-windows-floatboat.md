@@ -23,7 +23,7 @@ But on Windows? The options have been… underwhelming.
 
 PowerToys Run is functional but barebones. Keypirinha is powerful but developer-centric. Wox and Flow Launcher are valiant open-source efforts, but they lack the polish, AI integration, and ecosystem that make Raycast feel like magic.
 
-Here's the thing, though: **the productivity landscape has shifted**. In 2026, what you actually need isn't just a launcher — it's an AI-native workspace that understands your work, remembers your preferences, and executes multi-step tasks autonomously. And that's exactly where **[Floatboat](</>)** enters the picture.
+Here's the thing, though: **the productivity landscape has shifted**. In 2026, what you actually need isn't just a launcher — it's an AI-native workspace that understands your work, remembers your preferences, and executes multi-step tasks autonomously. And that's exactly where **Floatboat** enters the picture.
 
 * * *
 
@@ -31,7 +31,7 @@ Here's the thing, though: **the productivity landscape has shifted**. In 2026, w
 
 Floatboat is the first AI Agent Workspace built for one-person companies, freelancers, and solopreneurs — available on **both Windows and macOS**. It's not just a launcher or a chatbot. Think of it as your personal AI team, living right on your desktop, deeply connected to your local files, browser, and the tools you already use.
 
-Where Raycast gives you a command palette with plugins, Floatboat gives you a **full-stack AI workspace** that grows with your needs: start with a simple Agent Chat, then expand into split-screen file management, browser automation, drag-and-drop context flow, and reusable AI workflows called **Combo Skills**.
+Where Raycast gives you a command palette with plugins, Floatboat gives you a **full-stack AI workspace** that grows with your needs: start with a simple Agent Chat, then expand into split-screen file management, browser automation, drag-and-drop context flow, and reusable AI workflows called **Combo Skills**. And when the job is writing itself, the workspace stretches further: [Flow Mode](/blog/introducing-flow-mode) turns voice dictation into in-document co-authoring, so the same surface that launched the work is where the draft gets finished.
 
 * * *
 
@@ -69,7 +69,7 @@ One of Raycast's best features is its clipboard history and snippet system. Floa
 
   * The built-in browser lets your Agent navigate pages, gather information, and automate web tasks
 
-Everything moves seamlessly. Your context never breaks.
+Everything moves seamlessly. Your context never breaks. Handed that browser, an agent can run whole research cycles on its own — [the weekly TikTok Shop research automation](/blog/automate-tiktok-shop-research-fastmoss-floatboat) is what that looks like end to end: navigate, gather, compare, and deliver a brief without a human shepherding every step.
 
 ### 4\. Native Desktop Integration
 
@@ -123,7 +123,7 @@ If you've been searching for "Raycast for Windows," what you're really looking f
 
 Floatboat is free to download. No credit card required to start.
 
-👉 **[Download Floatboat for Windows (and Mac)](</>)**
+👉 **[Download Floatboat for Windows (and Mac)](https://floatboat.ai/download)**
 
 Stop searching for a Raycast clone. Start working with an AI teammate that actually learns your business.
 
