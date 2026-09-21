@@ -2,7 +2,7 @@
 title: "What Is Markdown? — Plain-Text Format Behind Docs, Notes and AI"
 description: "Markdown is the 2004 plain-text syntax that became the default for docs, git repos, note apps and AI output — how it works, its dialects, and why it won."
 slug: "what-is-markdown"
-date: "2026-09-22"
+date: "2026-09-10"
 author: "Kostja"
 category: "AI Agents"
 tags: ["Markdown", "Plain Text", "AI Output"]
@@ -23,7 +23,7 @@ Unless you deliberately avoid software, Markdown crossed your desk before lunch 
 
 The format was born from a writing annoyance, not a research agenda. In 2004, publishing on the web meant hand-writing HTML — open a tag, close a tag, escape the ampersands — tolerable for engineers and miserable for writers. John Gruber, the blogger behind Daring Fireball, wanted to write in the plain-text conventions people already used in email — asterisks for emphasis, indentation for quotes — and publish without touching an angle bracket. With design feedback from Aaron Swartz, he released Markdown that year as a Perl script converting casual plain text into clean HTML, per [John Gruber's original Markdown project page](https://daringfireball.net/projects/markdown/). The design goal stated there still reads as the format's constitution: a marked-up document should be publishable as-is, as plain text, without looking like it has been marked up with tags.
 
-Twenty-two years later, the format runs READMEs, API documentation, static sites, release notes, and — the reason this article exists in 2026 — most of the structured text that AI agents produce for humans. If you operate a one-person business, Markdown is the connective tissue between your tools: the briefing your agent writes, the note you keep it in, the document you hand a client. Knowing what it is, where its dialects bend, and where it genuinely ends is a small investment that pays back daily.
+Twenty-two years later, the format runs READMEs, API documentation, [entire documentation sites](/blog/markdown-documentation-site), static sites, release notes, and — the reason this article exists in 2026 — most of the structured text that AI agents produce for humans. If you operate a one-person business, Markdown is the connective tissue between your tools: the briefing your agent writes, the note you keep it in, the document you hand a client. Knowing what it is, where its dialects bend, and where it genuinely ends is a small investment that pays back daily.
 
 ## 2. Markdown Defined
 

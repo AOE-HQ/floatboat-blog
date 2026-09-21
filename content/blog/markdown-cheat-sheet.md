@@ -2,7 +2,7 @@
 title: "Markdown Cheat Sheet — Syntax You'll Actually Use, With Examples"
 description: "A copy-paste Markdown cheat sheet: core syntax, GFM tables and task lists, and the escaping mistakes that break rendering in GitHub, Obsidian, and Notion."
 slug: "markdown-cheat-sheet"
-date: "2026-09-23"
+date: "2026-09-11"
 author: "Kostja"
 category: "Tool Comparisons"
 tags: ["markdown", "cheat sheet", "GFM"]
@@ -16,7 +16,7 @@ draft: false
 - Core Markdown — headings, emphasis, links, images, lists, quotes, rules — behaves identically in every renderer, making it the part worth learning first.
 - GFM extensions (tables, task lists, fenced code blocks, strikethrough, autolinks) follow GitHub's dialect; most modern tools support them, but Notion and Obsidian each normalize or extend them differently.
 - The expensive mistakes are structural rather than exotic: mis-indented nested lists, unescaped pipes inside table cells, and backticks inside inline code cause most "why won't this render" moments.
-- Every example below is real, copyable text. Paste any block into a live renderer and watch what it does — that feedback loop, not re-reading, is what makes syntax stick.
+- Every example below is real, copyable text. Paste any block into a live renderer — [an online viewer](/blog/markdown-viewer-online) is the zero-setup option — and watch what it does; that feedback loop, not re-reading, is what makes syntax stick.
 
 ---
 
@@ -154,7 +154,7 @@ Under the item `2.`, text starts in the fourth column, so a nested bullet must b
 | GFM  | Needs escaping: a \| b |
 ```
 
-Two habits prevent nearly every broken table. First, escape any literal `|` inside a cell as `\|`; an unescaped pipe silently splits the cell, and once the row's column count stops matching the header, engines degrade the whole table into plain text. Second, leave a blank line above the table — a table typed immediately after a paragraph is absorbed into that paragraph, pipes and all. The blank-line rule is general: blank lines are how Markdown separates blocks, so every table, list, or code block that "mysteriously merges" with the text above it is missing one.
+Two habits prevent nearly every broken table, and both follow from [how markdown tables actually parse](/blog/markdown-table-how-to). First, escape any literal `|` inside a cell as `\|`; an unescaped pipe silently splits the cell, and once the row's column count stops matching the header, engines degrade the whole table into plain text. Second, leave a blank line above the table — a table typed immediately after a paragraph is absorbed into that paragraph, pipes and all. The blank-line rule is general: blank lines are how Markdown separates blocks, so every table, list, or code block that "mysteriously merges" with the text above it is missing one.
 
 ### 3.3 Backticks inside inline code
 

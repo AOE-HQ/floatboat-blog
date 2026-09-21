@@ -26,7 +26,7 @@ You need three things and about fifteen minutes. Of course, there is also the op
 
 A Python environment — Python 3.10 or later with `pip` installed, or Node.js 18 or later. The OpenAI SDK (`pip install openai` or `npm install openai`) handles the API communication. DeepSeek's API is fully OpenAI-compatible at the wire level, so no specialized SDK is required. If your only agent-building experience so far is [a Custom GPT configured inside ChatGPT](/blog/how-to-build-an-ai-agent-with-chatgpt), this is the one conceptual jump — from configuring a product to owning a loop — and the SDK is the easy part.
 
-A terminal and a text editor. The agent loop examples in this tutorial are under fifty lines each. You can type them into a single file and run it from the command line. If you want to see the full picture before building, [What Is a DeepSeek Agent](/blog/what-is-deepseek-agent) maps out the four archetypes and helps you decide whether you even need a custom agent or should use an existing tool.
+A terminal and a text editor. The agent loop examples in this tutorial are under fifty lines each. You can type them into a single file and run it from the command line. If you want to see the full picture before building, What Is a DeepSeek Agent maps out the four archetypes and helps you decide whether you even need a custom agent or should use an existing tool.
 
 A DeepSeek API key. The next section walks through getting one. If you already have a key, skip to Step 2.
 

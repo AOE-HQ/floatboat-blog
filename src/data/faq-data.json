@@ -8139,6 +8139,10 @@
     "/blog/what-is-markdown": {
       "items": [
         {
+          "question": "What exactly is Markdown?",
+          "answer": "Markdown is a lightweight markup syntax for plain text: character-level conventions — # for headings, ** for emphasis, - for lists — that add structure to a file that stays human-readable. A processor converts it to HTML or other formats for rendering, while the source never stops being legible."
+        },
+        {
           "question": "How is Markdown different from HTML?",
           "answer": "Markdown is a writing-time source format; HTML is the publish-time target browsers consume, and most Markdown is converted into HTML as part of rendering. HTML expresses far more structure but is verbose to hand-write; Markdown deliberately covers only the structural core in characters that stay readable in the raw file. The two are complements in one pipeline, not competitors for one job."
         },
@@ -8159,6 +8163,10 @@
     "/blog/markdown-cheat-sheet": {
       "items": [
         {
+          "question": "What is GFM?",
+          "answer": "GitHub Flavored Markdown — GFM — is GitHub's extension of Markdown: it adds tables, task lists, strikethrough, and autolinks on top of the core syntax, and it has become the de facto dialect most renderers support. This sheet flags which constructs are core and which are GFM."
+        },
+        {
           "question": "Why is my Markdown table not rendering?",
           "answer": "In most cases the table is missing either a blank line above it or its separator row of dashes between header and body. A table glued to the paragraph above it gets absorbed into that paragraph, and a table without the separator row renders as literal pipe characters instead of a grid. Two further checks: every row must carry the same number of unescaped pipes as the header, and any literal | inside a cell must be written as \\|."
         },
@@ -8174,6 +8182,10 @@
     },
     "/zh/blog/markdown-cheat-sheet": {
       "items": [
+        {
+          "question": "什么是 GFM？",
+          "answer": "GitHub Flavored Markdown（GFM）是 GitHub 对 Markdown 的扩展：在核心语法之上加入了表格、任务清单、删除线和自动链接，也成了多数渲染器事实上支持的方言。速查表会标明哪些语法属于核心、哪些属于 GFM。"
+        },
         {
           "question": "为什么我的 Markdown 表格不渲染？",
           "answer": "大多数时候，表格缺了上方空行，或缺了表头与表体之间那行横线分隔。紧贴上一段的表格会被那个段落吞掉；没有分隔行的表格会渲染成一串字面竖线而不是网格。再查两件事：每一行的未转义竖线数量必须与表头一致；单元格里任何字面 | 都要写成 \\|。"
@@ -8191,6 +8203,10 @@
     "/blog/how-to-convert-markdown-to-pdf": {
       "items": [
         {
+          "question": "What is the easiest way to convert Markdown to PDF?",
+          "answer": "Paste your Markdown into a browser-based converter: it renders instantly and exports a print-ready PDF with no installation. For repeatable, scriptable exports, use Pandoc from the command line."
+        },
+        {
           "question": "My table is wider than the page and gets cut off. What do I do?",
           "answer": "Cut columns in the Markdown source until the table fits, or split it into two narrower tables — no export setting rescues a ten-column table as cleanly as restructuring it. If the wide table must stay wide, the paths differ: browser rendering wraps it like a web page, while pandoc needs explicit intervention such as a smaller font, landscape geometry, or a package that auto-sizes tables. This is the one defect where fixing the input beats fixing the tool every time."
         },
@@ -8206,6 +8222,10 @@
     },
     "/zh/blog/how-to-convert-markdown-to-pdf": {
       "items": [
+        {
+          "question": "把 Markdown 转成 PDF 最简单的方法是什么？",
+          "answer": "把 Markdown 粘进浏览器端的转换器：即时渲染并导出打印级 PDF，无需安装。需要可重复、可脚本化的导出时，用命令行 Pandoc。"
+        },
         {
           "question": "表格比页面宽、右边缘被裁掉，怎么办？",
           "answer": "先在 Markdown 源里砍列，或者把一张宽表拆成两张窄表——任何导出设置对十列宽表的抢救，都不如重构干净。如果宽表必须保留，三条路的待遇不同：浏览器渲染会像网页一样换行；pandoc 需要显式干预，比如缩小字号、用横版页面，或用自动调宽的宏包。这是唯一一个「修输入永远优于修工具」的缺陷。"
@@ -8223,6 +8243,10 @@
     "/blog/convert-html-to-markdown": {
       "items": [
         {
+          "question": "Do tables survive the conversion?",
+          "answer": "Usually, yes. Well-formed HTML tables convert into Markdown pipe tables with structure intact; deeply nested or style-dependent tables may need light cleanup afterwards. Complex merged cells are the main lossy case."
+        },
+        {
           "question": "What happens to inline styles and CSS when converting?",
           "answer": "They are discarded, and that is the intended behavior rather than a defect. Converters map structure, not presentation: <strong> and <em> become bold and italic because they are semantic tags, while a span that only looks bold through CSS has nothing to map and vanishes. Color, fonts, spacing, and layout disappear along with it. If the visual presentation of a document is the point, the right export target is HTML or PDF, not Markdown — the same audience-based split the format debate keeps rediscovering."
         },
@@ -8238,6 +8262,10 @@
     },
     "/zh/blog/convert-html-to-markdown": {
       "items": [
+        {
+          "question": "表格能保留吗？",
+          "answer": "通常可以。结构良好的 HTML 表格会转成 Markdown 管道表格，结构保留；深层嵌套或依赖样式的表格转换后可能需要轻度清理。合并单元格是最常见的有损场景。"
+        },
         {
           "question": "转换时内联样式和 CSS 会怎么处理？",
           "answer": "直接丢弃，而且这是设计意图，不是缺陷。转换器映射的是结构，不是呈现：<strong> 和 <em> 会变成加粗和斜体，因为它们是语义标签；一个只靠 CSS 显得加粗的 span 没有可映射的东西，就此消失。颜色、字体、间距、布局一并而去。如果文档的视觉呈现本身就是目的，正确的导出目标是 HTML 或 PDF，不是 Markdown——这和格式之争反复重新发现的那个按受众切分的结论是同一条。"
@@ -8255,6 +8283,10 @@
     "/zh/blog/what-is-markdown": {
       "items": [
         {
+          "question": "Markdown 到底是什么？",
+          "answer": "Markdown 是一套面向纯文本的轻量排版语法：# 即标题、** 即加粗、- 即列表——用字符级约定给文件加上结构，而文件本身始终保持人类可读。处理器再把它转换成 HTML 等格式用于渲染，源文件从未失去可读性。"
+        },
+        {
           "question": "Markdown 和 HTML 有什么区别？",
           "answer": "Markdown 是写作时的源格式，HTML 是浏览器实际消费的发布时目标，大多数 Markdown 在渲染过程中会被转换成 HTML。HTML 能表达的结构多得多，但手写冗长；Markdown 有意只覆盖结构性内核——标题、强调、列表、链接、代码、引用——用源文件里也保持可读的字符。两者是同一条管线里的互补品，不是抢同一份工作的对手。"
         },
@@ -8269,6 +8301,286 @@
         {
           "question": "用 AI Agent 一定要会 Markdown 吗？",
           "answer": "严格说不必——不管你懂不懂，Agent 产出的都是 Markdown，聊天界面也会替你渲染。但实际收益与学习成本严重不成比例地高：你可以有意识地要求结构（「用表格回答，列这几列」），存 Agent 输出时让标题层级活着进你的笔记和检索管线，还能直接读 Agent 写到磁盘的原始 .md 文件。区别在于：你是「收到」这个格式，还是「通晓」这个格式。"
+        }
+      ]
+    },
+    "/blog/markdown-documentation-site": {
+      "items": [
+        {
+          "question": "Do I need to know React or Vue to use Docusaurus or VitePress?",
+          "answer": "No, for standard Markdown documentation. The frameworks are JavaScript-based, but writing docs is writing .md files. You only touch React or Vue when embedding interactive components via MDX — which is optional."
+        },
+        {
+          "question": "Can I migrate my existing docs from Confluence or Google Docs?",
+          "answer": "Yes, with a conversion step. Exports convert to Markdown with varying fidelity — headings and lists survive well, complex layouts need cleanup. The same workflows used for converting HTML to Markdown apply, and the cleanup is usually a one-time cost per page."
+        },
+        {
+          "question": "How do documentation sites handle multiple versions of a product?",
+          "answer": "The major generators have built-in versioning: a docs snapshot is frozen per release, and readers switch versions from a dropdown. The maintenance cost is real — bug fixes sometimes need to land in several versions — which is why teams prune old versions aggressively."
+        }
+      ]
+    },
+    "/zh/blog/markdown-documentation-site": {
+      "items": [
+        {
+          "question": "用 Docusaurus 或 VitePress 需要会 React 或 Vue 吗？",
+          "answer": "写标准 Markdown 文档不需要。框架是 JavaScript 系的，但写文档就是写 .md 文件。只有通过 MDX 内嵌交互组件时才会碰 React/Vue——而那是可选项。"
+        },
+        {
+          "question": "现有文档能从 Confluence 或 Google Docs 迁移过来吗？",
+          "answer": "可以，需要一步转换。导出转 Markdown 的保真度不一——标题和列表存活良好，复杂版式需要清理。HTML 转 Markdown 的那套工作流在这里同样适用，清理通常是每页一次性的成本。"
+        },
+        {
+          "question": "文档站怎么处理产品的多个版本？",
+          "answer": "主流生成器内置版本化：某个版本发布时冻结一份文档快照，读者用下拉框切换。维护成本是真实的——bug 修复有时要同时落到多个版本——所以团队都会激进地裁剪旧版本。"
+        }
+      ]
+    },
+    "/blog/mermaid-diagrams-in-markdown": {
+      "items": [
+        {
+          "question": "Does GitHub render Mermaid automatically?",
+          "answer": "Yes. Code blocks marked mermaid render as diagrams in Markdown files, issues, and pull request descriptions on GitHub. No configuration or plugin is needed, as of 2026."
+        },
+        {
+          "question": "Can I use Mermaid in Notion or Google Docs?",
+          "answer": "Notion supports Mermaid in its code-block menu, though editing is less fluid than in dedicated tools. Google Docs has no native support; the workaround is rendering elsewhere and pasting an image, which gives up the text-based advantages."
+        },
+        {
+          "question": "My large flowchart renders as an unreadable tangle. What now?",
+          "answer": "Split it. Mermaid's auto-layout degrades fast past a dozen nodes with cross-links. Break one big diagram into stages — a top-level flow plus per-stage details — which is usually clearer for readers anyway."
+        }
+      ]
+    },
+    "/zh/blog/mermaid-diagrams-in-markdown": {
+      "items": [
+        {
+          "question": "GitHub 会自动渲染 Mermaid 吗？",
+          "answer": "会。标为 mermaid 的代码块在 GitHub 的 Markdown 文件、issue 和 pull request 描述里都渲染成图表。截至 2026 年无需任何配置或插件。"
+        },
+        {
+          "question": "Notion 或 Google Docs 里能用 Mermaid 吗？",
+          "answer": "Notion 在代码块菜单里支持 Mermaid，但编辑体验不如专职工具流畅。Google Docs 没有原生支持；绕法是在别处渲染好贴图过来——代价是放弃文本图表的全部优势。"
+        },
+        {
+          "question": "我的大流程图渲染成一团乱麻，怎么办？",
+          "answer": "拆分。Mermaid 的自动布局在超过十几个节点且有交叉链接时衰减很快。把一张大图拆成阶段——一张顶层流程图加各阶段细节——对读者来说通常本来就更清楚。"
+        }
+      ]
+    },
+    "/blog/markdown-to-slides": {
+      "items": [
+        {
+          "question": "Can I export to actual PowerPoint files?",
+          "answer": "Yes. Marp's CLI exports .pptx, and Pandoc outputs PowerPoint natively. The files are simpler than hand-built decks — text and images on themed slides — which is ideal for handouts and acceptable for most rooms, but not a full PowerPoint feature set."
+        },
+        {
+          "question": "How do I put two columns or images beside text?",
+          "answer": "Marp supports layout directives and multiple themes, including two-column styles; Pandoc does it through slide templates. Both work, but pixel-exact placement is the ceiling — this is the format's deliberate trade."
+        },
+        {
+          "question": "What about speaker notes?",
+          "answer": "Marp supports presenter notes via HTML comments, and the HTML export can show them in presenter view. Export targets vary in notes support, so verify the specific path — PDF handouts, for instance, are typically notes-free."
+        }
+      ]
+    },
+    "/zh/blog/markdown-to-slides": {
+      "items": [
+        {
+          "question": "能导出成真正的 PowerPoint 文件吗？",
+          "answer": "可以。Marp CLI 导出 .pptx，Pandoc 也原生输出 PowerPoint。这些文件比手工搭建的片子简单——主题化页面上的文字和图片——作为讲义足够好，对大多数会议室也够用，但不是完整的 PowerPoint 功能集。"
+        },
+        {
+          "question": "双栏、图文混排怎么做？",
+          "answer": "Marp 支持版式指令和多主题，包括双栏样式；Pandoc 通过幻灯片模板实现。都可行，但像素级摆放是天花板——这是这个格式自觉的取舍。"
+        },
+        {
+          "question": "演讲者备注呢？",
+          "answer": "Marp 用 HTML 注释支持演讲者备注，HTML 导出可以在演示视图里显示。各导出目标对备注的支持不一，先验证你的具体路径——比如 PDF 讲义通常没有备注。"
+        }
+      ]
+    },
+    "/blog/markdown-math-latex": {
+      "items": [
+        {
+          "question": "Why do my dollar signs show up as literal text?",
+          "answer": "The renderer either does not support math or its heuristics read your $...$ as currency. Check platform support first; then make sure display math uses $$ on its own lines — single-dollar inline math is where misdetection happens most."
+        },
+        {
+          "question": "Is it KaTeX or MathJax on GitHub?",
+          "answer": "MathJax, since GitHub enabled math rendering in 2022 and continuing as of 2026. The distinction matters mainly if you self-host and need rendering speed (KaTeX) or broad package coverage (MathJax)."
+        },
+        {
+          "question": "Can I number equations in Markdown?",
+          "answer": "Not portably. Equation numbering is a LaTeX feature that none of the common Markdown math renderers expose consistently. Numbered equations in a math-heavy document are a strong signal the document belongs in LaTeX or Typst."
+        }
+      ]
+    },
+    "/zh/blog/markdown-math-latex": {
+      "items": [
+        {
+          "question": "为什么我的美元符号显示成了字面文本？",
+          "answer": "渲染器要么不支持数学，要么它的启发式把你的 $...$ 识别成了货币。先查平台支持；再确认展示公式用的是独立成行的 $$——单美元行内公式是误判高发区。"
+        },
+        {
+          "question": "GitHub 上是 KaTeX 还是 MathJax？",
+          "answer": "MathJax，自 2022 年 GitHub 开启数学渲染延续至 2026 年。这个区别主要在你自建站点且需要渲染速度（KaTeX）或宏包覆盖面（MathJax）时才重要。"
+        },
+        {
+          "question": "Markdown 里能给公式编号吗？",
+          "answer": "不可移植。公式编号是 LaTeX 的功能，常见 Markdown 数学渲染器都没有一致地暴露它。数学密集文档里需要编号公式，是这份文档该去 LaTeX 或 Typst 的强烈信号。"
+        }
+      ]
+    },
+    "/blog/best-markdown-editors": {
+      "items": [
+        {
+          "question": "What happened to Typora's free version?",
+          "answer": "Typora ended its free beta and moved to a one-time paid license (roughly $15, as of September 2026) starting with version 1.0 in late 2021. Licenses cover three devices. If you have an old beta copy, it still works, but updates require a license."
+        },
+        {
+          "question": "Is Obsidian really free?",
+          "answer": "Free for personal use, including the core app and local files. Paid tiers exist for commercial use, hosted sync (Obsidian Sync), and publishing. The local-first workflow this article describes works entirely on the free tier."
+        },
+        {
+          "question": "Can I use multiple editors on the same notes?",
+          "answer": "Yes — that is the point of the format. A folder of .md files can be opened in Obsidian on the desktop, edited in VS Code, and previewed in a browser tool without conflict. The only real rule is avoiding two apps writing the same file at the same moment."
+        },
+        {
+          "question": "Which editor is best for AI-assisted writing?",
+          "answer": "All of them, increasingly — but the practical answer is whichever gives your AI access to the files. Desktop editors working on local folders pair naturally with file-reading agents; browser tools are starting to add AI features of their own. Judge it by whether the AI can read your whole library, not just the open file."
+        }
+      ]
+    },
+    "/zh/blog/best-markdown-editors": {
+      "items": [
+        {
+          "question": "Typora 的免费版怎么了？",
+          "answer": "Typora 结束了免费 beta，从 2021 年底的 1.0 版起转为一次性付费授权（约 $15，截至 2026 年 9 月），授权覆盖三台设备。手里的旧 beta 副本仍能用，但更新需要授权。"
+        },
+        {
+          "question": "Obsidian 真的免费吗？",
+          "answer": "个人使用免费，包括核心应用和本地文件。付费层在商用许可、托管同步（Obsidian Sync）和发布。本文描述的本地优先工作流在免费档内完整成立。"
+        },
+        {
+          "question": "多个编辑器打开同一批笔记可以吗？",
+          "answer": "可以——这正是这种格式的意义所在。一个 .md 文件夹可以在桌面端用 Obsidian、在 VS Code 里编辑、在浏览器工具里预览而互不冲突。唯一的真实规则是：别让两个应用同时写同一个文件。"
+        },
+        {
+          "question": "AI 辅助写作选哪个编辑器最好？",
+          "answer": "都行，而且越来越都行——务实的答案是看哪个能让你的 AI 读到文件。工作在本地文件夹上的桌面编辑器天然配「能读文件」的 agent；浏览器工具也在陆续加自己的 AI 功能。判断标准是 AI 能不能读到你的整个笔记库，而不只是打开的那一个文件。"
+        }
+      ]
+    },
+    "/blog/batch-convert-markdown-files": {
+      "items": [
+        {
+          "question": "Can I batch convert to PDF without installing anything?",
+          "answer": "Not realistically for a whole folder. Browser-based converters handle single files; folder-scale PDF conversion needs either Pandoc with a PDF engine installed locally, or a desktop tool that bundles the conversion. There is no way around a rendering engine for print-ready PDFs."
+        },
+        {
+          "question": "How do I preserve my folder structure when converting?",
+          "answer": "Pandoc loops and serious batch tools can walk subfolders and mirror the structure with output extensions swapped — in a shell loop, that means enabling recursive globbing or using a script that recreates directories. Check this before running: flattening a nested vault is the most common one-way mistake."
+        },
+        {
+          "question": "What breaks most often in batch conversions?",
+          "answer": "Tables, code blocks with unusual languages, and files whose frontmatter confuses the converter. Also: filenames. Conversion plus rename in one pass is where files get overwritten — convert first, rename in a separate, reversible step."
+        }
+      ]
+    },
+    "/zh/blog/batch-convert-markdown-files": {
+      "items": [
+        {
+          "question": "不安装任何东西能批量转 PDF 吗？",
+          "answer": "整个文件夹的话，基本不能。浏览器转换器处理单文件；文件夹级的 PDF 转换要么本地装 Pandoc 加 PDF 引擎，要么用内置转换的桌面工具。打印级 PDF 绕不开一个渲染引擎。"
+        },
+        {
+          "question": "转换时怎么保留文件夹结构？",
+          "answer": "Pandoc 循环和正经的批量工具都能遍历子文件夹并镜像结构（只换扩展名）——shell 循环里就是开启递归 glob 或用重建目录的脚本。运行前先确认这一点：把嵌套的笔记库压平是最常见的不可逆错误。"
+        },
+        {
+          "question": "批量转换最容易坏什么？",
+          "answer": "表格、带罕见语言标注的代码块、以及让转换器困惑的 frontmatter。还有：文件名。「转换加重命名」一把梭是文件互相覆盖的高发点——先转换，重命名作为独立的、可回退的第二步。"
+        }
+      ]
+    },
+    "/blog/markdown-viewer-online": {
+      "items": [
+        {
+          "question": "Can I open a .md file in Word?",
+          "answer": "Yes, but you will be reading the source, not the rendered document. Word opens .md as plain text, so you will see the #, |, and  syntax rather than headings and tables. To get a formatted Word document, render and export first: a browser viewer with Word or PDF export handles it, or a command-line converter such as pandoc if you prefer batch tools."
+        },
+        {
+          "question": "Can a Markdown viewer edit files?",
+          "answer": "Some are view-only, some are editors with a live preview, and the label rarely tells you which. The browser viewer in Section 2 is a split-pane editor — source on one side, render on the other — so small fixes happen where you are already reading. Quick Look and GitHub's web view are read-only for practical purposes; VS Code is an editor first with a preview attached."
+        },
+        {
+          "question": "How do I read a .md file on my phone?",
+          "answer": "Open it in your phone's browser with a client-side viewer — the same browser path works on mobile, with no app install required. The built-in file preview on iOS and Android shows raw text, which is survivable for a short note and miserable for a table. Dedicated Markdown reader apps exist, but they are hard to justify for occasional reading; the browser already handles it."
+        },
+        {
+          "question": "Is it safe to paste private notes into an online Markdown viewer?",
+          "answer": "It depends entirely on the viewer's architecture. A client-side tool renders in your browser and the content never leaves your machine, so pasting private material is no worse than opening the file locally. A server-side tool uploads the file to render it — fine for a public README, a real consideration for client notes or unreleased plans. Check which kind it is before pasting, not after."
+        }
+      ]
+    },
+    "/zh/blog/markdown-viewer-online": {
+      "items": [
+        {
+          "question": ".md 文件能用 Word 打开吗？",
+          "answer": "能，但你读到的是源码，不是排版后的文档。Word 把 .md 当纯文本打开，你看到的是 #、| 和  这些语法，而不是标题和表格。要拿到排版好的 Word 文档，先渲染再导出：带 Word/PDF 导出的浏览器查看器能做，偏好批量工具的话，pandoc 这类命令行转换器也行。"
+        },
+        {
+          "question": "Markdown 查看器能编辑文件吗？",
+          "answer": "有的只读，有的带实时预览可编辑，而名字很少告诉你它是哪种。第 2 节的浏览器查看器是分栏编辑器——一侧源码、一侧渲染——小修小补（一个错字、一行坏表格）就发生在你正在读的地方。Quick Look 和 GitHub 网页在实践上是只读的；VS Code 则是编辑器为主、预览为辅。"
+        },
+        {
+          "question": "手机上看 .md 文件怎么办？",
+          "answer": "在手机浏览器里用客户端查看器打开——同一条浏览器路径在移动端照样成立，不需要装 App。iOS 和 Android 的内置文件预览显示的是原始文本，短笔记还能忍，遇到表格就是灾难。专门的 Markdown 阅读应用存在，但为偶尔一读装一个并不划算；浏览器已经办得到。"
+        },
+        {
+          "question": "把私密笔记贴进在线 Markdown 查看器安全吗？",
+          "answer": "完全取决于查看器的架构。客户端工具在你的浏览器里渲染，内容从不离开你的机器，贴私密材料和在本地打开文件没有区别。服务器端工具会把文件上传后渲染——公开 README 无所谓，客户笔记或未发布计划就要掂量。先弄清是哪一种，再贴。"
+        }
+      ]
+    },
+    "/blog/markdown-for-ai-pipelines": {
+      "items": [
+        {
+          "question": "Is Markdown an official standard for AI input?",
+          "answer": "No. There is no ratification and none was needed. Markdown is a de facto standard — adopted because training data, tooling, and rendering support all converged on it. Official-standards status would change nothing about how models parse it."
+        },
+        {
+          "question": "Should I convert my PDFs to Markdown for RAG?",
+          "answer": "Usually, yes. PDFs interleave visual layout with content, which makes naive extraction lose headings and reading order; converting to Markdown first — then chunking by structure — preserves the section logic. The conversion step has its own tooling trade-offs covered in the HTML-to-Markdown guide."
+        },
+        {
+          "question": "What chunk size should I use for Markdown documents?",
+          "answer": "There is no universal number, as of 2026 — the guides cited above disagree in specifics while agreeing on the principle: split on headings, keep chunks semantically coherent, and let structure rather than a fixed character count drive boundaries. Start with section-level chunks, measure retrieval quality, and adjust."
+        },
+        {
+          "question": "Does formatting inside a note affect how well AI reads it?",
+          "answer": "Yes, at the margins. Heavy nesting, decorative emphasis, and tables used for layout all blur the structural signals that make Markdown machine-friendly. Core constructs — headings, lists, plain tables, code fences — parse cleanly and are what pipeline tooling expects."
+        }
+      ]
+    },
+    "/zh/blog/markdown-for-ai-pipelines": {
+      "items": [
+        {
+          "question": "Markdown 是 AI 输入的官方标准吗？",
+          "answer": "不是。没有任何组织批准，也不需要。它是事实标准——训练数据、工具链、渲染支持共同收敛的结果。「官方标准」地位不会改变模型解析它的任何方式。"
+        },
+        {
+          "question": "做 RAG 应该先把 PDF 转成 Markdown 吗？",
+          "answer": "通常应该。PDF 把视觉版式和内容交织在一起，朴素抽取会丢标题和阅读顺序；先转成 Markdown、再按结构切分，能保住章节逻辑。转换步骤有自己的工具取舍，见 HTML 转 Markdown 指南。"
+        },
+        {
+          "question": "Markdown 文档的 chunk 大小怎么定？",
+          "answer": "截至 2026 年没有万能数字——主流工程指南在细节上各有主张，但原则一致：按标题切、保持块内语义完整、让结构而不是固定字符数决定边界。从章节级 chunk 起步，测检索质量，再调。"
+        },
+        {
+          "question": "笔记里的格式会影响 AI 读取效果吗？",
+          "answer": "会，但只在边际上。深层嵌套、装饰性强调、拿表格当版式，都会模糊让 Markdown 机器友好的结构信号。核心语法——标题、列表、朴素表格、代码块——解析干净，也正是管线工具所期待的。"
         }
       ]
     }

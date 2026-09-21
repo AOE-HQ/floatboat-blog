@@ -2,7 +2,7 @@
 title: "Convert HTML to Markdown — Clean Captures From Web and AI Chats"
 description: "Convert HTML to Markdown to turn AI chat replies and web clippings into clean, portable .md files — what survives, what breaks, and the tools to use."
 slug: "convert-html-to-markdown"
-date: "2026-09-25"
+date: "2026-09-13"
 author: "Kostja"
 category: "AI Agents"
 tags: ["html to markdown", "AI chat", "capture"]

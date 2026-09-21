@@ -30,7 +30,7 @@ Most productivity apps treat notes as records inside a vendor database. That mod
 
 Obsidian took the opposite bet. Official help materials describe the product as a local-first knowledge base that stores notes as plain Markdown on your device, with optional sync and publishing rather than cloud lock-in as the default. The unit of that bet is the **vault** : a folder you control, opened by an editor that understands links, graphs, and plugins.
 
-That design aged well for a reason AI made obvious. Language models and desktop agents work best on durable text files they can open, search, and rewrite with permission. A vault is already that shape. Understanding what a vault is — and what it is not — is the first step before you bolt chat plugins, clippers, or cross-app agents onto your notes.
+That design aged well for a reason AI made obvious. Language models and desktop agents work best on durable text files they can open, search, and rewrite with permission. A vault is already that shape — and [the day-to-day note-taking workflow built on those files](/blog/markdown-for-note-taking) is what turns the shape into a knowledge base. Understanding what a vault is — and what it is not — is the first step before you bolt chat plugins, clippers, or cross-app agents onto your notes.
 
 ### 1.2 The Word "Vault" Is Literal
 
@@ -90,7 +90,7 @@ Multiple vaults are normal. Consultants often keep a client vault separate from 
 
 **File sync folders (Dropbox, iCloud Drive, Google Drive Desktop).** Sync clients move bytes; they do not provide link autocomplete, graph view, or a note-centric editor. A vault can _live inside_ a synced folder, but sync alone is not a knowledge base.
 
-**Desktop AI agents that read folders.** As of 2026, a growing class of tools treats a local directory as working memory for multi-step tasks — meeting briefs, project drafts, file cleanup. A vault is an especially good directory for that pattern because notes are already text, linked, and human-curated — which is why the same folder is the natural starting point for [an LLM knowledge base](/blog/llm-knowledge-base-solo-operators), should your material ever justify one. That pairing is a workflow choice, not a feature Obsidian must ship itself; we walk through the practical setup in our companion guide on [using Obsidian with an AI agent](/blog/how-to-use-obsidian-with-ai-agent).
+**Desktop AI agents that read folders.** As of 2026, a growing class of tools treats a local directory as working memory for multi-step tasks — meeting briefs, project drafts, file cleanup. A vault is an especially good directory for that pattern because notes are already text, linked, and human-curated — which is why the same folder is the natural starting point for [an LLM knowledge base](/blog/llm-knowledge-base-solo-operators), should your material ever justify one. That pairing is a workflow choice, not a feature Obsidian must ship itself; we walk through the practical setup in our companion guide on using Obsidian with an AI agent.
 
 ## 5\. Who Should Use a Vault — and Who Should Not
 

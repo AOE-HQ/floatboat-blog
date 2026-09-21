@@ -2,7 +2,7 @@
 title: "如何把 Markdown 转成 PDF——按折腾程度排序的三种方法"
 description: "把 Markdown 转成 PDF 有三条路：免安装的浏览器工具、命令行 pandoc、编辑器自带导出。本文按折腾程度逐条讲清各自适合谁、pandoc 的 LaTeX 依赖坑怎么绕，以及表格溢出、代码块截断、中文字体缺失这些高频翻车点的解法。"
 slug: "how-to-convert-markdown-to-pdf"
-date: "2026-09-24"
+date: "2026-09-12"
 author: "Kostja"
 category: "Tool Comparisons"
 tags: ["Markdown 转 PDF", "Pandoc", "PDF 导出"]
@@ -95,7 +95,7 @@ for f in *.md; do pandoc "$f" -o "${f%.md}.pdf"; done
 
 一行就把当前文件夹里所有 .md 全部转掉，代价不超过第 3 节那点 pandoc 设置。对一个每周都在变的文件夹，把它包成脚本，这个问题就永久关闭了——这就是技术用户跑了很多年的批量答案，到今天仍然是免费默认。
 
-免费网页工具，明说，一次只处理一份文档——转一份简历没问题，转一个四十个文件的文件夹就选错工具了。文件夹级的批量转换是 Floatboat 桌面版的活：把一个 Markdown 文件夹指给它，一起导出，不用写循环、不用开终端。如果你的量到了这个级别，[下载页](https://floatboat.ai/zh/download)有桌面版。
+免费网页工具，明说，一次只处理一份文档——转一份[从 markdown 源导出的简历](/zh/blog/markdown-resume)没问题，转一个四十个文件的文件夹就选错工具了。文件夹级的批量转换，是[文件夹规模的 markdown 工作流](/zh/blog/batch-convert-markdown-files)接手的部分：把一个 Markdown 文件夹指给桌面版，一起导出，不用写循环、不用开终端。如果你的量到了这个级别，[下载页](https://floatboat.ai/zh/download)有桌面版。
 
 ## 7. 结论
 

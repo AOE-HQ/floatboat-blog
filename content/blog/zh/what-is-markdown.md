@@ -2,7 +2,7 @@
 title: "Markdown 是什么——撑起文档、笔记与 AI 输出的纯文本格式"
 description: "Markdown 是 2004 年由 John Gruber 发布的纯文本排版语法：井号即标题、星号即加粗、横线即列表。本文讲清它的定义与工作原理、方言生态（GFM、CommonMark、Obsidian 扩展），以及它为何成了文档、笔记与 AI 输出的通用格式，并附上手路径。"
 slug: "what-is-markdown"
-date: "2026-09-22"
+date: "2026-09-10"
 author: "Kostja"
 category: "AI Agents"
 tags: ["Markdown", "纯文本", "AI 输出"]
@@ -23,7 +23,7 @@ draft: false
 
 这个格式诞生于一个写作上的烦心事，而不是什么研究议程。2004 年，在网上发布内容意味着手写 HTML——开标签、闭标签、转义与符号——工程师尚可忍受，对写作者是折磨。Daring Fireball 的博主 John Gruber 想用大家写纯文本邮件时已经在用的惯例来写作：星号表强调、缩进表引用，然后不经手一个尖括号就能发布。在 Aaron Swartz 的语法设计反馈之下，他在那年发布了 Markdown——一个把这种随手的纯文本转换成干净 HTML 的 Perl 脚本，见 [John Gruber 的 Markdown 原始项目页](https://daringfireball.net/projects/markdown/)。项目页上写明的设计目标至今仍是这个格式的宪法：一份标记后的文档应当能原样作为纯文本发布，而不显得「被标签标记过」。
 
-二十二年后，这个格式运行着 README、API 文档、静态网站、发布说明，以及——本文写于 2026 年的原因——AI Agent 产给人类看的大部分结构化文本。如果你经营一门一个人的生意，Markdown 就是你各工具之间的结缔组织：Agent 写的简报、你存它的笔记、最终交给客户的文档。搞清它是什么、方言在哪里分叉、边界在哪里，是一次几小时的投资，每个工作日都在回本。
+二十二年后，这个格式运行着 README、API 文档、[完整的文档站](/zh/blog/markdown-documentation-site)、静态网站、发布说明，以及——本文写于 2026 年的原因——AI Agent 产给人类看的大部分结构化文本。如果你经营一门一个人的生意，Markdown 就是你各工具之间的结缔组织：Agent 写的简报、你存它的笔记、最终交给客户的文档。搞清它是什么、方言在哪里分叉、边界在哪里，是一次几小时的投资，每个工作日都在回本。
 
 ## 2. Markdown 的定义
 

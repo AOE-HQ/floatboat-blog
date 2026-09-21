@@ -2,7 +2,7 @@
 title: "如何把 HTML 转成 Markdown——把网页和 AI 聊天记录变成干净文档"
 description: "把 HTML 转成 Markdown，是把网页剪藏和 AI 聊天回复变成可归档 .md 文件的关键一步：本文讲清哪些结构转得干净、哪些会丢、渲染引擎差异带来的坑，以及浏览器工具与 turndown、pandoc、MarkItDown 各自的适用场景。"
 slug: "convert-html-to-markdown"
-date: "2026-09-25"
+date: "2026-09-13"
 author: "Kostja"
 category: "AI Agents"
 tags: ["HTML 转 Markdown", "AI 聊天", "剪藏"]

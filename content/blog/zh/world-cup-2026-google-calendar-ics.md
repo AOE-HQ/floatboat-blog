@@ -104,7 +104,7 @@ FloatCup 还提供提醒选项。你可以选开球前 30 分钟、1 小时或 3
 
 在普通 ICS 文件之上，FloatCup 多给的是**维护**。数据源变化时比赛时间能自动更新、提醒能预先配好、时区换算交给日历系统处理。这正是对"不那么在意文件归属、更在意别错过比赛"的读者而言，FloatCup 是最简单选项的原因。
 
-**行动号召：** [用 FloatCup 一键订阅](/zh/blog/floatcup-world-cup-2026-calendar-subscribe)
+**行动号召：** 用 FloatCup 一键订阅
 
 ## 7\. 常见 ICS 导入问题排查
 

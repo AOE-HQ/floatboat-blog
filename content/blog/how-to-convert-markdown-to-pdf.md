@@ -2,7 +2,7 @@
 title: "How to Convert Markdown to PDF — Three Ways Ranked by Friction"
 description: "Convert Markdown to PDF via a free no-install browser tool, pandoc on the command line, or editor plugins — with fixes for broken tables, code, and fonts."
 slug: "how-to-convert-markdown-to-pdf"
-date: "2026-09-24"
+date: "2026-09-12"
 author: "Kostja"
 category: "Tool Comparisons"
 tags: ["markdown to pdf", "pandoc", "export"]
@@ -95,7 +95,7 @@ for f in *.md; do pandoc "$f" -o "${f%.md}.pdf"; done
 
 That one line converts every .md file in the current folder, at no cost beyond the pandoc setup from section 3. For a folder that changes weekly, wrap it in a script and the problem stays solved; this is the batch answer technical users have been running for years, and it remains the free default.
 
-The free web tool, stated plainly, takes one document at a time — fine for a resume, wrong for a folder of forty files. Folder-level batch conversion is what the desktop version of Floatboat is for: point it at a folder of Markdown files and export them together, without writing a loop or opening a terminal. If your volume justifies that, the [download page](https://floatboat.ai/download) has the desktop build.
+The free web tool, stated plainly, takes one document at a time — fine for [a resume exported from its markdown source](/blog/markdown-resume), wrong for a folder of forty files. Folder-level batch conversion is where [the folder-scale markdown workflow](/blog/batch-convert-markdown-files) takes over from single-file tools: the desktop version of Floatboat takes a folder of Markdown files and exports them together, without writing a loop or opening a terminal. If your volume justifies that, the [download page](https://floatboat.ai/download) has the desktop build.
 
 ## 7. Conclusion
 
