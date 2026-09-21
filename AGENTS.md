@@ -55,5 +55,6 @@ CI (`npm run check:images` in `.github/workflows`) fails the PR if any png/jpeg 
 2. **Stop after commit.** Report what is ready and wait. Multiple tasks may accumulate across branches — that is intentional; the owner batches them.
 3. **When the owner says "PR"**: push every ready branch and open one PR per branch (`gh pr create --repo AOE-HQ/floatboat-blog --base main --head <branch>`), each with problem/fix/verification in the body. CI runs on the PR; merging is the owner's call.
 4. **Merge = deploy.** Any push to `main` triggers `deploy-ghcr-eks.yaml` (image build → GHCR → EKS rollout). Never commit directly to `main`.
+4. **Small updates ride the next big PR.** Do not open standalone PRs for small fixes (dead-link swaps, copy tweaks, doc corrections). Commit them to a ready branch and ship them together with the next substantial PR — the owner reviews one batch, not a trickle. (Exception: a production-breaking error may be hotfixed as its own PR — say so in the body.)
 5. **Shared working tree**: if multiple agent sessions use this repo concurrently, create a `git worktree` per session (`git worktree add ../<name> <branch>`) — one branch per worktree. Before committing, review your diff hunk-by-hunk: with a shared tree, another session's half-finished changes can end up inside your files.
 
