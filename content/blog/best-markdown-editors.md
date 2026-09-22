@@ -5,9 +5,9 @@ slug: "best-markdown-editors"
 date: "2026-09-20"
 author: "Kostja"
 category: "Tool Comparisons"
+cover: "/blog/images/best-markdown-editors/og-en.webp"
 locale: "en"
 draft: false
-tags: ["markdown", "editors", "comparison"]
 ---
 
 ## TL;DR

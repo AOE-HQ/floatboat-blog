@@ -5,7 +5,7 @@ slug: "what-is-markdown"
 date: "2026-09-10"
 author: "Kostja"
 category: "AI Agents"
-tags: ["Markdown", "纯文本", "AI 输出"]
+cover: "/blog/images/what-is-markdown/og-zh.webp"
 locale: "zh"
 draft: false
 ---

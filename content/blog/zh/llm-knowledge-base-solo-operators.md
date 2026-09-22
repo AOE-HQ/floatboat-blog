@@ -5,7 +5,6 @@ slug: "llm-knowledge-base-solo-operators"
 date: "2026-04-06"
 author: "Nova"
 category: "Solo Operators"
-tags: ["LLM", "知识库", "AI 工作区"]
 cover: "/blog/images/llm-knowledge-base-solo-operators/1775455452599-90f54b5f-b9b3-446e-9364-3e42f65a83e6.webp"
 locale: "zh"
 draft: false

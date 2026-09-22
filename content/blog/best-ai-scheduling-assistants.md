@@ -5,7 +5,6 @@ slug: "best-ai-scheduling-assistants"
 date: "2026-06-29"
 author: "Floatboat"
 category: "Calendar AI"
-tags: ["best AI scheduling assistant", "AI scheduling tools compared", "smart scheduler vs scheduling agent", "AI calendar automation", "agentic calendar tools", "automated meeting scheduler AI", "AI time management tools"]
 cover: "/blog/images/best-ai-scheduling-assistants/1782710522338-443c7736-110b-40eb-9203-41f4cf720a27.webp"
 locale: "en"
 draft: false

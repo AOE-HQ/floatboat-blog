@@ -5,7 +5,6 @@ slug: "deepseek-agent-vs-claude-code"
 date: "2026-08-14"
 author: "Vera"
 category: "Tool Comparisons"
-tags: ["Deepseek"]
 cover: "/blog/images/deepseek-agent-vs-claude-code/1785730534671-93151505-4783-42c7-a4f0-436a2962d0f0.webp"
 locale: "en"
 draft: false

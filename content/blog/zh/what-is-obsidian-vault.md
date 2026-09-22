@@ -5,7 +5,6 @@ slug: "what-is-obsidian-vault"
 date: "2026-07-30"
 author: "Jade"
 category: "Solo Operators"
-tags: ["Obsidian", "Markdown", "知识库", "本地优先"]
 cover: "/blog/images/what-is-obsidian-vault/1785394728358-997e9875-6e3b-42f5-81d6-bdb171ea74c0.webp"
 locale: "zh"
 draft: false

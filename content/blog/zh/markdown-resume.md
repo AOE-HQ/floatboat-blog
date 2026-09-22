@@ -5,7 +5,7 @@ slug: "markdown-resume"
 date: "2026-09-06"
 author: "Kostja"
 category: "Solo Operators"
-tags: ["Markdown", "简历", "Pandoc"]
+cover: "/blog/images/markdown-resume/og-zh.webp"
 locale: "zh"
 draft: false
 ---

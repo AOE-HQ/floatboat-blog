@@ -5,7 +5,6 @@ slug: "ai-workspace-agents"
 date: "2026-04-23"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/ai-workspace-agents/1776938878052-6b014d80-d7df-44ac-a9cc-7ca100b7648f.webp"
 locale: "en"
 draft: false

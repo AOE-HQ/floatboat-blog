@@ -5,7 +5,6 @@ slug: "gpt-image-2-storyboard-solo"
 date: "2026-04-25"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["Label"]
 cover: "/blog/images/gpt-image-2-storyboard-solo/1777087203252-67197c48-76f8-4e00-a613-b150e8f7adc4.webp"
 locale: "en"
 draft: false

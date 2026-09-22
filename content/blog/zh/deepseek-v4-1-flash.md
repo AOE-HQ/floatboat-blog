@@ -5,7 +5,6 @@ slug: "deepseek-v4-1-flash"
 date: "2026-09-09"
 author: "Judy"
 category: "Model & Benchmarks"
-tags: ["DeepSeek", "V4.1 Flash", "大模型", "多模态"]
 cover: "/blog/images/deepseek-v4-1-flash/deepseek-v4-1-flash.webp"
 locale: "zh"
 draft: false

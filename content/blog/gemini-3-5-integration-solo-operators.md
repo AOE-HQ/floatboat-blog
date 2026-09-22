@@ -6,7 +6,6 @@ date: "2026-05-21"
 updated: "2026-05-24"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["Label"]
 cover: "/blog/images/gemini-3-5-integration-solo-operators/1779327361164-3a4f4c15-1174-4518-ab31-17dbca050535.webp"
 locale: "en"
 draft: false

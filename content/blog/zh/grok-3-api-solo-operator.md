@@ -5,7 +5,6 @@ slug: "grok-3-api-solo-operator"
 date: "2026-04-23"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["Grok", "AI API", "单人创业"]
 cover: "/blog/images/grok-3-api-solo-operator/logo.svg"
 locale: "zh"
 draft: false

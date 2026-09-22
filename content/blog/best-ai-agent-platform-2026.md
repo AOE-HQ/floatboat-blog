@@ -5,7 +5,6 @@ slug: "best-ai-agent-platform-2026"
 date: "2026-05-15"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["Label"]
 cover: "/blog/images/best-ai-agent-platform-2026/1778827146133-71511ef0-ae66-4d3d-847b-0798fbe12bf9.webp"
 locale: "en"
 draft: false

@@ -5,7 +5,6 @@ slug: "best-claude-code-alternatives"
 date: "2026-08-14"
 author: "Jade"
 category: "Tool Comparisons"
-tags: ["Claude"]
 cover: "/blog/images/best-claude-code-alternatives/1786688337472-cab72042-df03-48ba-a62b-a8a92ebc8fb4.webp"
 locale: "en"
 draft: false

@@ -5,7 +5,6 @@ slug: "ai-agent-vs-ai-assistant"
 date: "2026-04-03"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["AI Agent", "AI 助手", "AI 工作流"]
 cover: "/blog/images/ai-agent-vs-ai-assistant/1773919300903-6c8781b3-4b98-47b2-abd6-027a7ac425ec.webp"
 locale: "zh"
 draft: false

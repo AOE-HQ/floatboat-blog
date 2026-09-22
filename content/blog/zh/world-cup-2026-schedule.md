@@ -5,7 +5,6 @@ slug: "world-cup-2026-schedule"
 date: "2026-07-15"
 author: "Eathen"
 category: "Calendar AI"
-tags: ["世界杯 2026", "赛程", "日历订阅"]
 cover: "/blog/images/world-cup-2026-schedule/1782464350603-376acd2b-c815-490e-a0be-105fe9554a9e.webp"
 locale: "zh"
 draft: false

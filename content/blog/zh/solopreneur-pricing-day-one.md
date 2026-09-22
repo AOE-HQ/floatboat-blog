@@ -5,7 +5,6 @@ slug: "solopreneur-pricing-day-one"
 date: "2026-04-13"
 author: "Nova"
 category: "Solo Operators"
-tags: ["单人创业者", "定价", "自由职业", "商业模式"]
 cover: "/blog/images/solopreneur-pricing-day-one/1776074913528-787456c2-7200-46cb-a7ba-84e32a402425.webp"
 locale: "zh"
 draft: false

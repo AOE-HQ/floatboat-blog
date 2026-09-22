@@ -5,7 +5,6 @@ slug: "how-to-use-obsidian-with-ai-agent"
 date: "2026-07-30"
 author: "Judy"
 category: "AI Agents"
-tags: ["Obsidian", "AI Agent", "本地优先", "知识管理"]
 cover: "/blog/images/how-to-use-obsidian-with-ai-agent/1785394277288-140819a7-b840-45a2-b91f-34a691399d32.webp"
 locale: "zh"
 draft: false

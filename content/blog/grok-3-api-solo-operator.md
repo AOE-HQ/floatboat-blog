@@ -5,7 +5,6 @@ slug: "grok-3-api-solo-operator"
 date: "2026-04-23"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["Label"]
 cover: "/blog/images/grok-3-api-solo-operator/logo.svg"
 locale: "en"
 draft: false

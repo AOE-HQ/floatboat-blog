@@ -5,7 +5,6 @@ slug: "gpt-image-2-vs-midjourney-nano-banana-2"
 date: "2026-04-27"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["Label"]
 cover: "/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258012756-3cdd7264-9746-4fb6-91db-2aa7605b6c70.webp"
 locale: "en"
 draft: false

@@ -5,9 +5,9 @@ slug: "markdown-for-note-taking"
 date: "2026-09-05"
 author: "Kostja"
 category: "Solo Operators"
+cover: "/blog/images/markdown-for-note-taking/og-en.webp"
 locale: "en"
 draft: false
-tags: ["markdown", "note-taking", "obsidian"]
 ---
 
 ## TL;DR

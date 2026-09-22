@@ -5,9 +5,9 @@ slug: "mermaid-diagrams-in-markdown"
 date: "2026-09-16"
 author: "Kostja"
 category: "Tool Comparisons"
+cover: "/blog/images/mermaid-diagrams-in-markdown/og-en.webp"
 locale: "en"
 draft: false
-tags: ["markdown", "mermaid", "diagrams"]
 ---
 
 ## TL;DR

@@ -5,7 +5,6 @@ slug: "effort-control-fast-mode-ai-work"
 date: "2026-05-29"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["Label"]
 cover: "/blog/images/effort-control-fast-mode-ai-work/1780043480579-68902de4-9057-48a7-8fca-ff70aeb4ba2f.webp"
 locale: "en"
 draft: false

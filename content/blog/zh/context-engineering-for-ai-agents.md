@@ -5,7 +5,6 @@ slug: "context-engineering-for-ai-agents"
 date: "2026-07-01"
 author: "Pan Yang"
 category: "AI Agents"
-tags: ["Context Engineering", "上下文工程", "AI Agent", "日历驱动 AI", "Agent 架构"]
 cover: "/blog/images/context-engineering-for-ai-agents/1782897541424-e8cf18e8-43be-443a-9450-eca948c53826.webp"
 locale: "zh"
 draft: false

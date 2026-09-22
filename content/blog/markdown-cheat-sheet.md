@@ -5,7 +5,7 @@ slug: "markdown-cheat-sheet"
 date: "2026-09-11"
 author: "Kostja"
 category: "Tool Comparisons"
-tags: ["markdown", "cheat sheet", "GFM"]
+cover: "/blog/images/markdown-cheat-sheet/og-en.webp"
 locale: "en"
 draft: false
 ---

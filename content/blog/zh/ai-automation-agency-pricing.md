@@ -5,7 +5,6 @@ slug: "ai-automation-agency-pricing"
 date: "2026-05-07"
 author: "Nova"
 category: "Solo Operators"
-tags: ["AI 自动化", "定价", "单人创业"]
 cover: "/blog/images/ai-automation-agency-pricing/1773741753347-399bc4f1-9844-457f-8efd-6c76ac9ba8b5.webp"
 locale: "zh"
 draft: false

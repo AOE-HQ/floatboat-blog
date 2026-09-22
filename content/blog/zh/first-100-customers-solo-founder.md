@@ -5,7 +5,6 @@ slug: "first-100-customers-solo-founder"
 date: "2026-04-08"
 author: "Nova"
 category: "Solo Operators"
-tags: ["单人创始人", "获客", "社群", "微 SaaS"]
 cover: "/blog/images/first-100-customers-solo-founder/1775614789972-3bf9b5ce-b21a-494c-af63-d2b68b8f1b28.webp"
 locale: "zh"
 draft: false

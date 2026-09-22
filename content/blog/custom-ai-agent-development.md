@@ -5,7 +5,6 @@ slug: "custom-ai-agent-development"
 date: "2026-03-27"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/custom-ai-agent-development/1774580576067-d0eab05d-e7ad-4ac3-b954-bf7bd4f429ad.webp"
 locale: "en"
 draft: false

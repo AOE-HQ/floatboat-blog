@@ -5,7 +5,6 @@ slug: "how-to-build-an-ai-agent"
 date: "2026-03-25"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/how-to-build-an-ai-agent/1774419094012-12b90959-f544-4cac-887f-83f62be9cb0f.webp"
 locale: "en"
 draft: false

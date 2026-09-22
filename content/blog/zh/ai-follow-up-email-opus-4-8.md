@@ -5,7 +5,6 @@ slug: "ai-follow-up-email-opus-4-8"
 date: "2026-06-07"
 author: "Nova"
 category: "Calendar AI"
-tags: ["AI 邮件", "会议跟进", "Claude Opus 4.8", "AI 工作流"]
 cover: "/blog/images/ai-follow-up-email-opus-4-8/1780822513606-bbdb8519-6256-4301-a0b9-6fdd60005896.webp"
 locale: "zh"
 draft: false

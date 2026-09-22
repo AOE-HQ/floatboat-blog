@@ -5,7 +5,6 @@ slug: "what-is-deepseek-agent"
 date: "2026-08-14"
 author: "Jade"
 category: "AI Agents"
-tags: ["DeepSeek", "AI Agent", "Agent 架构", "开发者工具"]
 cover: "/blog/images/what-is-deepseek-agent/1785731448524-17e07cd3-95df-4fac-a35a-e53b035f3942.webp"
 locale: "zh"
 draft: false

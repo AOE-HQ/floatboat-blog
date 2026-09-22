@@ -5,7 +5,7 @@ slug: "what-is-markdown"
 date: "2026-09-10"
 author: "Kostja"
 category: "AI Agents"
-tags: ["Markdown", "Plain Text", "AI Output"]
+cover: "/blog/images/what-is-markdown/og-en.webp"
 locale: "en"
 draft: false
 ---

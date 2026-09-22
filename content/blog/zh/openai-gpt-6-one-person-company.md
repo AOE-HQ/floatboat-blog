@@ -5,7 +5,6 @@ slug: "openai-gpt-6-one-person-company"
 date: "2026-04-24"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["OpenAI", "GPT-6", "单人创业者", "AI 工作流"]
 cover: "/blog/images/openai-gpt-6-one-person-company/1776999283525-c20f585a-37dc-40e8-810c-5599543af31d.webp"
 locale: "zh"
 draft: false

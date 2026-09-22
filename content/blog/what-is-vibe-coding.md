@@ -5,7 +5,6 @@ slug: "what-is-vibe-coding"
 date: "2026-04-16"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/what-is-vibe-coding/1776318240258-7782d4ee-7298-4a95-a248-956cb56e292f.webp"
 locale: "en"
 draft: false

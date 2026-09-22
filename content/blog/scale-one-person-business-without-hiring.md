@@ -5,7 +5,6 @@ slug: "scale-one-person-business-without-hiring"
 date: "2026-04-15"
 author: "Nova"
 category: "Solo Operators"
-tags: ["Label"]
 cover: "/blog/images/scale-one-person-business-without-hiring/1776232668468-eeeca175-e546-43ee-b605-652f7b5b0f80.webp"
 locale: "en"
 draft: false

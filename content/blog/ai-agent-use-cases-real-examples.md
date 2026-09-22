@@ -5,7 +5,6 @@ slug: "ai-agent-use-cases-real-examples"
 date: "2026-03-20"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/ai-agent-use-cases-real-examples/1773826490323-3f61f515-1b1a-4322-9251-519d32b6dd0f.webp"
 locale: "en"
 draft: false

@@ -5,7 +5,6 @@ slug: "gumloop-review-2026"
 date: "2026-03-23"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["Gumloop", "无代码自动化", "AI Agent", "工具评测"]
 cover: "/blog/images/gumloop-review-2026/1774256136741-8c5fad55-61e8-4d7d-8cc2-cbb506963241.webp"
 locale: "zh"
 draft: false

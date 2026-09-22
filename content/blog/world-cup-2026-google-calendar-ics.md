@@ -5,7 +5,6 @@ slug: "world-cup-2026-google-calendar-ics"
 date: "2026-07-15"
 author: "Jackson"
 category: "Calendar AI"
-tags: ["world cup soccer 2026 fixture in calendar format"]
 cover: "/blog/images/world-cup-2026-google-calendar-ics/1783564724894-58d74578-5163-46d0-a378-e5a1c7dcd1ee.webp"
 locale: "en"
 draft: false

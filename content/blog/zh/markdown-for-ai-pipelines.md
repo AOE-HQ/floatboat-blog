@@ -5,9 +5,9 @@ slug: "markdown-for-ai-pipelines"
 date: "2026-09-14"
 author: "Kostja"
 category: "AI Agents"
+cover: "/blog/images/markdown-for-ai-pipelines/og-zh.webp"
 locale: "zh"
 draft: false
-tags: ["markdown", "RAG", "LLM", "chunking"]
 ---
 
 ## TL;DR

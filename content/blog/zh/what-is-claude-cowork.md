@@ -5,7 +5,6 @@ slug: "what-is-claude-cowork"
 date: "2026-08-14"
 author: "Jade"
 category: "AI Agents"
-tags: ["Claude", "Anthropic", "Claude Cowork", "知识工作", "桌面 Agent"]
 cover: "/blog/images/what-is-claude-cowork/1786690967364-b508ce48-c213-477f-8633-a2e96f074787.webp"
 locale: "zh"
 draft: false
