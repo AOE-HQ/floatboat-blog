@@ -16,7 +16,7 @@ draft: false
 
 我断断续续用 API 跑 Grok 3 已经一两个月了。没什么重型负载——就是每日摘要的背景脚本、RSS 解析、一些用完即弃的内容草稿。不是深度压测，但足够形成真实看法了。
 
-![2.png](/zh/blog/images/grok-3-api-solo-operator/1776932927149-9465aa19-4edb-4c43-b3bb-93195a4fc28d.webp)
+![2.png](/blog/images/grok-3-api-solo-operator/1776932927149-9465aa19-4edb-4c43-b3bb-93195a4fc28d.webp)
 
 ## Grok 3 API 是什么
 
@@ -28,7 +28,7 @@ xAI 于 2025 年 4 月公开开放了 Grok 3 API。此后定价没动过：输�
 
 **开源是另一回事。** Musk [说过 Grok 3 会在 Grok 2.5 发布约六个月后开源](https://techcrunch.com/2025/08/24/elon-musk-says-xai-has-open-sourced-grok-2-5/)，算下来大约在 2026 年 2 月。我上次查 Hugging Face 时，Grok 3 的权重还没上传。如果你在意这个，建议直接去核实。
 
-![3.png](/zh/blog/images/grok-3-api-solo-operator/1776932944516-b691cc85-59e0-46c8-bbc1-bea506233ac4.webp)
+![3.png](/blog/images/grok-3-api-solo-operator/1776932944516-b691cc85-59e0-46c8-bbc1-bea506233ac4.webp)
 
 还有一件事值得提醒：Grok 2.5 是在带反竞争条款的自定义「Community License」下发布的——不是真正的 MIT 或 Apache 许可。如果 Grok 3 沿用同一模式（[维基百科的 Grok 词条](<https://en.wikipedia.org/wiki/Grok_\(chatbot\))>暗示会如此），那「开放权重」就不会等于「可以拿来自由做产品」。我可能说错——但别把标题字面意思当真。
 
@@ -46,7 +46,7 @@ $3/$15 的 Grok 3 与 Claude Sonnet 并肩——它被定价成一个_高端_模
 
 ## 开源对单人创业者是正确的选择吗？
 
-![4.png](/zh/blog/images/grok-3-api-solo-operator/1776932961124-2046ebbb-8767-4a1e-8e43-f33c89c1db95.webp)
+![4.png](/blog/images/grok-3-api-solo-operator/1776932961124-2046ebbb-8767-4a1e-8e43-f33c89c1db95.webp)
 
 这里我得老实说我自己真正在意什么——很可能也是你在意的。
 

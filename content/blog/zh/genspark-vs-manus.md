@@ -14,7 +14,7 @@ draft: false
 
 我在两者内部都花过时间。下面是我的真实看法。
 
-![2.PNG](/zh/blog/images/genspark-vs-manus/1774490435929-dbccfbe3-07af-4058-9246-e661757ffddc.webp)
+![2.PNG](/blog/images/genspark-vs-manus/1774490435929-dbccfbe3-07af-4058-9246-e661757ffddc.webp)
 
 ## Genspark 是做什么的
 
@@ -26,7 +26,7 @@ draft: false
 
 Genspark 在你工作流里的位置：**把它想成一个"研究与创作"工具。**你丢给它一个主题或任务，它产出一份成品或接近成品的资产。交互过程大体由你主导。
 
-![3.PNG](/zh/blog/images/genspark-vs-manus/1774490447280-9b914f3a-6d09-481b-8010-1da20c57960e.webp)
+![3.PNG](/blog/images/genspark-vs-manus/1774490447280-9b914f3a-6d09-481b-8010-1da20c57960e.webp)
 
 ## Manus 是做什么的
 
@@ -42,7 +42,7 @@ Manus 调动多个协同工作的 AI Agent，各自专精于浏览网页、分�
 
 Manus 在你工作流里的位置：它更像是一个你**委派任务给它的系统**，而不是你使用的工具。这很强大，但也意味着你需要仔细想清楚，到底把什么交给它。
 
-![4.PNG](/zh/blog/images/genspark-vs-manus/1774490470107-d441d25b-5db9-4e40-942d-73baef56a8b4.webp)
+![4.PNG](/blog/images/genspark-vs-manus/1774490470107-d441d25b-5db9-4e40-942d-73baef56a8b4.webp)
 
 ## 关键差异并排看
 
@@ -73,7 +73,7 @@ Manus 在你工作流里的位置：它更像是一个你**委派任务给它的
 
 [维基百科上关于 Manus AI 的页面](<https://en.wikipedia.org/wiki/Manus_\(AI_agent\)>)对架构和收购背景有不错的概述，想要完整来龙去脉可以看它。
 
-![5.png](/zh/blog/images/genspark-vs-manus/1774490483985-beeef324-09b1-42b5-b9c9-9db4cf561ae4.webp)
+![5.png](/blog/images/genspark-vs-manus/1774490483985-beeef324-09b1-42b5-b9c9-9db4cf561ae4.webp)
 
 ## 两个工具仍然做不好的事
 
@@ -109,7 +109,7 @@ Manus 在你工作流里的位置：它更像是一个你**委派任务给它的
 
 如果你真的拿不准——拿同一个任务把两者的免费档都跑一遍。二十分钟内，差异就会很明显。
 
-![6.png](/zh/blog/images/genspark-vs-manus/1774490499301-3a15efe3-bb96-4148-a36b-a790ae99020b.webp)
+![6.png](/blog/images/genspark-vs-manus/1774490499301-3a15efe3-bb96-4148-a36b-a790ae99020b.webp)
 
 _总之——这是我出于相当不同的原因，会反复回来用的两个工具。Genspark 是我需要又快又结构良好的东西时伸手去拿的那一个；Manus 是我把更难、更乱的任务丢给它的那一个。_
 

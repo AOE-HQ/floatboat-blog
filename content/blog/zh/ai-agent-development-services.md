@@ -16,7 +16,7 @@ draft: false
 
 我很庆幸当时慢了下来。下面是我关于 **AI Agent 开发服务**真正学到的东西——包含什么、常常漏掉什么，什么时候你真的需要它，什么时候不需要。我会尽量两边都讲实话，因为这个话题下的大多数内容，都是卖这项服务的人写的。
 
-![2.png](/zh/blog/images/ai-agent-development-services/1774342947259-df4a4b46-2cf1-44dd-8ce0-8828ade9d5fc.webp)
+![2.png](/blog/images/ai-agent-development-services/1774342947259-df4a4b46-2cf1-44dd-8ce0-8828ade9d5fc.webp)
 
 ## AI Agent 开发服务到底包含什么
 
@@ -46,7 +46,7 @@ draft: false
 
 安全与合规的范围界定是另一个常见漏项。如果你的 Agent 会碰到敏感数据，或运行在强监管行业，这些要求会显著增加成本和时间，值得尽早摆到桌面上。
 
-![3.png](/zh/blog/images/ai-agent-development-services/1774342962861-8fd5df09-98eb-4664-b975-1a4bcfc32b6f.webp)
+![3.png](/blog/images/ai-agent-development-services/1774342962861-8fd5df09-98eb-4664-b975-1a4bcfc32b6f.webp)
 
 ## 什么时候该做定制开发
 
@@ -68,7 +68,7 @@ draft: false
 
 [Make.com](http://Make.com) 的付费套餐每月 $9 起，含 10,000 次操作。n8n 的云端套餐到 2025 年已彻底取消活跃工作流数量限制。这两个都不是玩具——真实团队在用它们大规模跑生产工作流。**如果你的用例能用一句话说清楚、需要的工具也都是常见 SaaS——那现在上开发服务，大概率属于过度投入。**
 
-![4.png](/zh/blog/images/ai-agent-development-services/1774342977563-e508403c-7ca9-4afb-8616-b170551c5047.webp)
+![4.png](/blog/images/ai-agent-development-services/1774342977563-e508403c-7ca9-4afb-8616-b170551c5047.webp)
 
 ### 需求不清楚、或者很可能变
 
@@ -106,7 +106,7 @@ draft: false
 
   * **构建中途需求变了怎么办？**趁还没出事，先弄清他们的变更管理流程。
 
-![5.png](/zh/blog/images/ai-agent-development-services/1774342994721-50c93cb8-af1b-44d4-b5b1-16dcd95b9ccd.webp)
+![5.png](/blog/images/ai-agent-development-services/1774342994721-50c93cb8-af1b-44d4-b5b1-16dcd95b9ccd.webp)
 
 好了，信息量不小。老实说一句总结：**定制 AI Agent 开发服务，只有在你的需求复杂、稳定，而且 ROI 这笔账真的算得过来时才有意义。**对大多数还在探索这个领域的单人创业者和团队来说，先用无代码工具起步、把用例验证清楚，才是更聪明的做法。
 

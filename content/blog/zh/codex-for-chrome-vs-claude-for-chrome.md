@@ -36,7 +36,7 @@ Codex for Chrome 不是独立扩展——它是 Codex 桌面应用的插件。�
 
 它生来就是干**任务委派**的：把事交出去，让它跑，回来看产出。
 
-![co2.PNG](/zh/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481696378-b1371527-164f-46db-a24b-b8839b4343e5.webp)
+![co2.PNG](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481696378-b1371527-164f-46db-a24b-b8839b4343e5.webp)
 
 ### Claude：侧边栏 Agent 模型
 
@@ -46,7 +46,7 @@ Claude 走的是完全不同的路。它作为**侧边栏**，开在你正在看
 
 Claude 的模式更偏**对话式**。你是**和**它一起处理屏幕上的东西，而不是把任务丢给后台进程。我扔给它一份很长的客户报告、要几个具体数据点——它从头读到尾，一点没丢线索。那一步就是……直接跑通了。
 
-![co3.PNG](/zh/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481711947-9bef106e-6ee4-4fee-b49a-a6bb5959bd47.webp)
+![co3.PNG](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481711947-9bef106e-6ee4-4fee-b49a-a6bb5959bd47.webp)
 
 ## 各自赢在哪里
 
@@ -68,7 +68,7 @@ Claude 的模式更偏**对话式**。你是**和**它一起处理屏幕上的�
 
   * **对话感。**侧边栏模型意味着你是在就屏幕上的东西展开对话。对文档密集型的工作，这比把事情丢给后台 Agent 更自然。我还在摸索两种方式各自在我工作流里最合适的位置，但凡是调研量大的活，我的手总是伸向 Claude。
 
-![co4.png](/zh/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481723709-c5714d02-c345-4a36-8c93-86f7bc9426eb.webp)
+![co4.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481723709-c5714d02-c345-4a36-8c93-86f7bc9426eb.webp)
 
 ## 权限、记忆与提示注入
 
@@ -100,7 +100,7 @@ OpenAI 的文档明确警告要「把页面内容当作不可信上下文」。�
 
 在 $20/月这一档，**Codex 让你用到完整模型栈，而 Claude 把你锁在 Haiku 上**。这个「价格 ÷ 能力」的比值，值得好好想想。
 
-![co5.png](/zh/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481733192-0b37e66a-6bf2-4188-92bd-e4b54825f4ea.webp)
+![co5.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481733192-0b37e66a-6bf2-4188-92bd-e4b54825f4ea.webp)
 
 ### Codex Chrome 在欧盟/英国的状态
 
@@ -142,7 +142,7 @@ Claude for Chrome 没有地区限制，全球付费订阅者都能用。
 
 如果你的浏览器工作主要是读文章、查邮件、轻度调研——那这两款你现在可能都不需要。授予权限、管理安全、学习交互模型的成本，配不上那些你 30 秒就能自己做完的任务。只有当你的浏览器工作流涉及**真正的重复或复杂**时，这些工具才值得占一席之地。如果答案不明显，那通常说明：留在现在这套方案里就好。
 
-![co6.png](/zh/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481745855-d3ba8176-2bca-43f6-b3ac-e5107c4bab7f.webp)
+![co6.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481745855-d3ba8176-2bca-43f6-b3ac-e5107c4bab7f.webp)
 
 ## 能不能两个并排跑？
 

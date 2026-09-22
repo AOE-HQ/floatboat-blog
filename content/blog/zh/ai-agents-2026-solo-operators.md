@@ -34,7 +34,7 @@ Agent 与普通软件的分水岭在于：它能理解自然语言指令、结�
 
 这场转变也是 Anthropic 的 MCP 在 2024 年 11 月发布后迅速成为大事的原因。MCP 是开放标准，让 AI agent 真正连上你的工具——Google Drive、Slack、浏览器、本地文件——而不只是「嘴上说说」。发布至今，社区已造出数千个 MCP server，它如今是 agent 连接工具与数据的事实标准。正是这套基础设施，让执行层 AI 成为可能。
 
-![2.png](/zh/blog/images/ai-agents-2026-solo-operators/1775544775539-e804c584-d9f1-49fb-892a-d37f2d3a708a.webp)
+![2.png](/blog/images/ai-agents-2026-solo-operators/1775544775539-e804c584-d9f1-49fb-892a-d37f2d3a708a.webp)
 
 ### 为什么 Google 和 xAI 都在往同一个方向走
 
@@ -60,7 +60,7 @@ xAI 的 [Grok 4.20](https://x.ai/) 于 2026 年 2 月发布 beta，架构上确�
 
 过去几个月我一直在拿它做实验——重点尝试给内容研究搭结构化工作流，让它不用我每次重讲一遍流程就能跑起来。有的成了，有的完全没成。下面细说。
 
-![3.png](/zh/blog/images/ai-agents-2026-solo-operators/1775544784583-b2c02934-2d06-4cb0-825b-ecdab09ba8b2.webp)
+![3.png](/blog/images/ai-agents-2026-solo-operators/1775544784583-b2c02934-2d06-4cb0-825b-ecdab09ba8b2.webp)
 
 ### 一个至今没解决的问题：上下文丢失与重复搭建
 
@@ -110,7 +110,7 @@ _好了，真功夫的部分到了。说实话，一开始我低估了它。_
 
 有些 agent 是你直接对话的会话式助理；另一些在后台工作——盯着特定事件，条件满足就动手。对单人创业者来说两种都有用武之地——但后台那一类往往被用得太少。
 
-![4.png](/zh/blog/images/ai-agents-2026-solo-operators/1775544795210-1bfbadf7-dff0-4ad0-a316-1a8f37fb6d9f.webp)
+![4.png](/blog/images/ai-agents-2026-solo-operators/1775544795210-1bfbadf7-dff0-4ad0-a316-1a8f37fb6d9f.webp)
 
 ## 该看什么、该跳过什么
 
@@ -156,4 +156,4 @@ _反正我就是这么做的。_
 
 _好了，这就是今天的发现。下次见。_
 
-![5.png](/zh/blog/images/ai-agents-2026-solo-operators/1775544805101-b21360a4-d95d-4dda-8c61-bae9406d801c.webp)
+![5.png](/blog/images/ai-agents-2026-solo-operators/1775544805101-b21360a4-d95d-4dda-8c61-bae9406d801c.webp)

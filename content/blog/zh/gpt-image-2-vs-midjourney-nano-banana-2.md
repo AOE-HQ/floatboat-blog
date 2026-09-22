@@ -20,7 +20,7 @@ draft: false
 
 所以三选一的选择空间变了，性价比曲线也移动了。值得重新审视一下你的订阅。
 
-![2.PNG](/zh/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258121575-7df5df29-3319-44f5-b0d7-47b5487aebef.webp)
+![2.PNG](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258121575-7df5df29-3319-44f5-b0d7-47b5487aebef.webp)
 
 ## 我是怎么对比的
 
@@ -38,7 +38,7 @@ GPT Image 2 的 Thinking 模式可以从单条提示词生成最多 8 帧、且�
 
 三者现在都支持某种多轮/感知上下文的编辑。**GPT Image 2 最「外科手术式」**——你说「其他都别动，只把她的衬衫换成藏青色」，它就照做。Midjourney 的编辑器在改进，但感觉更像「重绘这一区域」。Nano Banana 2 在 Gemini 应用里是对话式的，这一点上意外地强。
 
-![3.PNG](/zh/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258131708-4d5133f4-13e6-440f-a47e-ab8388c35a16.webp)
+![3.PNG](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258131708-4d5133f4-13e6-440f-a47e-ab8388c35a16.webp)
 
 ### 定价与额度经济学
 
@@ -74,7 +74,7 @@ GPT Image 2 在此领先，而且优势不小。Nano Banana 2 处理中日韩文
 
 我不是律师。给付费客户交付成品前，请对照最新条款自行核实。
 
-![4.png](/zh/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258142374-e9744eed-c845-45ea-836c-627ec578ae78.webp)
+![4.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258142374-e9744eed-c845-45ea-836c-627ec578ae78.webp)
 
 ## GPT Image 2：赢在哪里，弱在哪里
 
@@ -96,7 +96,7 @@ GPT Image 2 在此领先，而且优势不小。Nano Banana 2 处理中日韩文
 
 **代价：**免费输出的水印让它们无法用于客户交付；小尺寸的密集文本仍会翻车；而且当你只想要小改动时，模型偶尔会改过头。对草稿、头脑风暴、社媒内容，以及任何 Google 生态原生的人来说，它是个出色的默认选择。
 
-![5.png](/zh/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258152422-cb2fa446-1ab8-4602-9449-557bf9c1db2b.webp)
+![5.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258152422-cb2fa446-1ab8-4602-9449-557bf9c1db2b.webp)
 
 ## 决策框架
 
@@ -144,4 +144,4 @@ GPT Image 2 在此领先，而且优势不小。Nano Banana 2 处理中日韩文
 
 **以下情况再等等：**你现在的配置没让你感到痛。Image Arena 领先 242 分是真的，但**基准差距并不总能转化为工作流差距。**如果你的产出在正常交付、客户也满意，升级可以等到下一个计费周期再说。
 
-![6.png](/zh/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258163108-0603b3f3-2195-41f9-a39c-89e41c89fb4f.webp)
+![6.png](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258163108-0603b3f3-2195-41f9-a39c-89e41c89fb4f.webp)

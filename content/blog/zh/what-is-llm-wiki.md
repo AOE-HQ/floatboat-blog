@@ -27,7 +27,7 @@ draft: false
 
 LLM wiki 把这件事翻了过来。不是即时检索原始文档，而是让 LLM 预编译你的素材，编成一份结构化的 wiki——一个相互链接的 markdown 文件目录。之后你再提问，AI 不再去翻原始 PDF，而是在一个已经综合过它们的知识库里导航。当时流传最广的那个说法——「用 RAG，你每次饿了都要现做菜；用 wiki，你建的是一间厨房」——意思传达到了，但要注意：它并不是 gist 里的原句。
 
-![2.png](/zh/blog/images/what-is-llm-wiki/1776148819751-87607be9-70fc-4c53-85a0-0954d5cc9ca9.webp)
+![2.png](/blog/images/what-is-llm-wiki/1776148819751-87607be9-70fc-4c53-85a0-0954d5cc9ca9.webp)
 
 ### 它怎么运作：原始素材、编译后的 wiki 与 Schema 层
 
@@ -41,7 +41,7 @@ RAG 做检索。LLM wiki 做积累。这才是真正的区别，值得多看一�
 
 Notion 或 Obsidian 这类传统笔记应用给你一个容器，但所有维护都留给你——你得自己打标签、自己连链接、自己更新，而多数人的 Notion 数据库里塞满了第二个月起就再没人碰过的页面。LLM wiki 把维护问题外包出去解决了——交叉引用、过时信息标记、连接自动更新，全交给 LLM。正如 [Analytics Vidhya 对 Karpathy 方法的拆解](https://www.analyticsvidhya.com/blog/2026/04/llm-wiki-by-andrej-karpathy/)所解释的，每新增一份素材，wiki 都变得更值钱，因为每一次吸收做的是整合（integrate），而不只是追加（append）。
 
-![3.png](/zh/blog/images/what-is-llm-wiki/1776148835868-b86aa41a-ae09-4afd-8063-480d8965502f.webp)
+![3.png](/blog/images/what-is-llm-wiki/1776148835868-b86aa41a-ae09-4afd-8063-480d8965502f.webp)
 
 ## 2. Karpathy 的做法为什么爆火
 
@@ -63,7 +63,7 @@ Notion 或 Obsidian 这类传统笔记应用给你一个容器，但所有维护
 
 这个案例很重要，因为它说明这个模式远不止学术研究适用。它适用于_任何_随时间积累知识的领域——而多数知识工作正是如此。
 
-![4.png](/zh/blog/images/what-is-llm-wiki/1776148844507-69f786e7-f0f2-40bf-8c44-c85ed94817ad.webp)
+![4.png](/blog/images/what-is-llm-wiki/1776148844507-69f786e7-f0f2-40bf-8c44-c85ed94817ad.webp)
 
 ## 3. 它实际上为谁而建
 
@@ -97,7 +97,7 @@ LLM wiki 通过让知识_持久而显式_来解决它：AI 在 wiki 里导航，
 
 思路是：不是每个会话都由你把上下文带给 AI，而是让 AI 住进一个你的工作_本来就在那里_的环境。文件、浏览、决策、迭代式编辑——上下文在那里积累，不需要你管理。Floatboat AI 之类的工具正在朝这个方向建——一个随时间学习你工作模式、而不是每会话从零开始的工作区。我还没拿足够多的真实工作流跑过它，给不出定论，但这个框架与 LLM wiki 所指的问题是同一个：让上下文复利，而不是重置。
 
-![5.png](/zh/blog/images/what-is-llm-wiki/1776148854844-ad731b5c-a527-4da1-85c3-44bad00c024a.webp)
+![5.png](/blog/images/what-is-llm-wiki/1776148854844-ad731b5c-a527-4da1-85c3-44bad00c024a.webp)
 
 ## 5. 你该不该自己建一个 LLM wiki？
 
@@ -131,7 +131,7 @@ LLM wiki 通过让知识_持久而显式_来解决它：AI 在 wiki 里导航，
 
 这就是 [LLM](https://techterms.com/definition/llm) wiki 所指的产品品类。不是更好的 RAG，而是一个懂你怎么工作的工作区。
 
-![6.png](/zh/blog/images/what-is-llm-wiki/1776148866360-405fe00c-6fed-475f-a61d-1503898579ec.webp)
+![6.png](/blog/images/what-is-llm-wiki/1776148866360-405fe00c-6fed-475f-a61d-1503898579ec.webp)
 
 ## 7. 结语
 

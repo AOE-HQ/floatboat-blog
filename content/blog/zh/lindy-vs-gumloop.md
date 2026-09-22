@@ -32,7 +32,7 @@ draft: false
 
 
 
-![1.png](/zh/blog/images/lindy-vs-gumloop/1773918556813-4bf8c62b-19ce-4093-8528-22fef050e458.webp)
+![1.png](/blog/images/lindy-vs-gumloop/1773918556813-4bf8c62b-19ce-4093-8528-22fef050e458.webp)
 
 ## 两个工具各自到底为做什么而生
 
@@ -46,7 +46,7 @@ draft: false
 
 整体上是一种更「有引导」的体验。Lindy 的模板重度偏向收件箱、会议与日历场景，如果你的痛点正好在这些地方，上手会很快。如果你好奇「在流程中途做决策的 Agent」底层到底意味着什么，[Anthropic 关于用 Claude 构建的文档](https://docs.anthropic.com/en/docs/build-with-claude/overview) 提供了一个有用的入门读本，讲 LLM 型 Agent 如何推理与交接任务——不针对 Lindy，但有助于建立概念。
 
-![2.png](/zh/blog/images/lindy-vs-gumloop/1773918570051-c76b80d3-eb1b-4abb-94c9-cc46fb13ad68.webp)
+![2.png](/blog/images/lindy-vs-gumloop/1773918570051-c76b80d3-eb1b-4abb-94c9-cc46fb13ad68.webp)
 
 ### Gumloop——工作流搭建器，聚焦可视化画布
 
@@ -56,7 +56,7 @@ draft: false
 
 话虽如此，Gumloop 不会引导你走向某个成果，也不会建议你下一步该建什么。你从一块空白画布开始，平台期待你自己想清楚逻辑、边界情况与执行成本。在我的测试里，让一条流水线干净跑通，我花了将近 30–40 分钟。不痛苦——但它向前期要求更多。
 
-![3.png](/zh/blog/images/lindy-vs-gumloop/1773918578776-1f6cf3a5-1ccc-4fff-9479-1bf93c23607c.webp)
+![3.png](/blog/images/lindy-vs-gumloop/1773918578776-1f6cf3a5-1ccc-4fff-9479-1bf93c23607c.webp)
 
 ## 关键差异并排看
 
@@ -80,7 +80,7 @@ draft: false
 
 **你想要 Agent 之间互相交接。**如果你的用例涉及串联 Agent——比如一个研究 Agent 喂给一个起草 Agent——Lindy 能以一种相当平易近人的方式原生处理。
 
-![4.png](/zh/blog/images/lindy-vs-gumloop/1773918614594-9dddfba6-5f67-4fbe-93d0-57c9633dab36.webp)
+![4.png](/blog/images/lindy-vs-gumloop/1773918614594-9dddfba6-5f67-4fbe-93d0-57c9633dab36.webp)
 
 ## 什么时候 Gumloop 更合适
 
@@ -96,7 +96,7 @@ draft: false
 
 **你在跑 CRM 或销售数据工作流。** Gumloop 连接 Salesforce、HubSpot、Apollo 等工具。实操上，这意味着你能构建拉取账户数据、跑 AI 分析、再回推结构化输出的流水线——不过它到底能提速多少，取决于你把流程设计得多好。
 
-![5.png](/zh/blog/images/lindy-vs-gumloop/1773918631558-16a3526e-926d-4207-9b58-21b4c51849e5.webp)
+![5.png](/blog/images/lindy-vs-gumloop/1773918631558-16a3526e-926d-4207-9b58-21b4c51849e5.webp)
 
 ## 两个工具都不擅长什么
 

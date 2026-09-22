@@ -28,7 +28,7 @@ _试了其它选项几周之后，我想把发现分享给你——不是一份�
 
 这基本就是我看到的反馈总结。**陡峭的学习曲线、难预测的积分计费、以及「你的工作天然适合装进节点」这个默认假设**——正是这三件事把人推向其它选项，而三条其实都指向[节点模型真正撑不住的地方](/zh/blog/gumloop-review-2026)，而不是缺了什么功能。
 
-![2.png](/zh/blog/images/gumloop-alternatives-2026/1774343510434-c82b392f-9bd4-46be-a413-f7571234445d.webp)
+![2.png](/blog/images/gumloop-alternatives-2026/1774343510434-c82b392f-9bd4-46be-a413-f7571234445d.webp)
 
 ## 我们在这里怎么看待替代品
 
@@ -50,7 +50,7 @@ n8n 开源、高度可定制，在安全或基础设施控制是硬指标时非�
 
 **适合**：开发者、技术型创始人、能打理 VPS 和偶尔凌晨两点的 Docker 故障的运维团队。**不适合**：没有技术背景、只想事情跑起来又不想背着维护包袱的单人创业者。
 
-![3.png](/zh/blog/images/gumloop-alternatives-2026/1774343522861-d0c6b853-e264-4aa0-8d06-cc7c9096b1fb.webp)
+![3.png](/blog/images/gumloop-alternatives-2026/1774343522861-d0c6b853-e264-4aa0-8d06-cc7c9096b1fb.webp)
 
 ### Make（原 Integromat）
 
@@ -80,7 +80,7 @@ Lindy 像一个永远在线的助理，你可以通过 iMessage 或短信和它�
 
 它不是工作流搭建器，不能自主运行。但对一个主要需要 AI 协助、而非 AI 自动化的单人创作者或创始人来说，它可能就是全部所需——而且成本只有零头。代价是：没有你，什么都不会跑。如果你找替代品的真实原因，是想把整件事整个交出去、而不是亲手设计每一步——那是上面所有工具之外的另一个品类，[Manus 替代品](/zh/blog/manus-ai-alternatives-2026) 那边才是委派式 Agent 的地盘。
 
-![4.png](/zh/blog/images/gumloop-alternatives-2026/1774343538289-476a6d1b-9fa8-4a9a-96fc-3965b592b97f.webp)
+![4.png](/blog/images/gumloop-alternatives-2026/1774343538289-476a6d1b-9fa8-4a9a-96fc-3965b592b97f.webp)
 
 ## 想要一个贴合你工作方式的一体化 Workspace
 
@@ -112,7 +112,7 @@ Lindy 像一个永远在线的助理，你可以通过 iMessage 或短信和它�
 
 **运行之间丢上下文**：Gumloop 默认不会在两次流程执行之间保留记忆。任何需要连续性的场景，你都得显式地通过数据节点传递状态，或者把输出记到下一个流程能读到的地方。交接用什么格式，跟记不记日志同样要紧——[AI 步骤吐出来的是 HTML 还是 Markdown](/zh/blog/html-vs-markdown-ai-output)，决定了下一个节点、以及流程尽头那个真人，各自要接手多少清理工作。
 
-![5.png](/zh/blog/images/gumloop-alternatives-2026/1774343550886-b551cff1-0246-4df2-a298-7bcbc4512cb3.webp)
+![5.png](/blog/images/gumloop-alternatives-2026/1774343550886-b551cff1-0246-4df2-a298-7bcbc4512cb3.webp)
 
 ## 怎么选：一个简单的决策框架
 

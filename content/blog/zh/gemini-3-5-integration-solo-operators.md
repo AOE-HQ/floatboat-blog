@@ -23,7 +23,7 @@ Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](htt
 
 速度方面，我用一份 15 页的简报做了几次并排对比，Gemini 3.5 Flash 回来得明显更快。至于更复杂的任务上是否依然如此，我还在验证。
 
-![2.PNG](/zh/blog/images/gemini-3-5-integration-solo-operators/1779586988856-d48cf5f8-29a9-4897-8c16-dcf400f118ea.webp)
+![2.PNG](/blog/images/gemini-3-5-integration-solo-operators/1779586988856-d48cf5f8-29a9-4897-8c16-dcf400f118ea.webp)
 
 ### 与 Claude、GPT 的关键差异（不把它变成一场模型基准赛）
 
@@ -45,7 +45,7 @@ Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](htt
 
 不过我不想把这点夸过头。按 token 计费的成本只有当输出质量足够好、不必再花额外时间修改时才成立。我的内容类任务里，五次有三次输出是扎实的，另外两次需要清理。
 
-![3.PNG](/zh/blog/images/gemini-3-5-integration-solo-operators/1779586999467-5d43a8ba-14fc-4be6-b5f2-a756d66c0759.webp)
+![3.PNG](/blog/images/gemini-3-5-integration-solo-operators/1779586999467-5d43a8ba-14fc-4be6-b5f2-a756d66c0759.webp)
 
 ### Google Workspace 重度工作流
 
@@ -67,7 +67,7 @@ Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](htt
 
 对单人创业者来说，这种认知开销累加得很快。我以前以为工具越多效率越高，现在不这么认为了。
 
-![4.png](/zh/blog/images/gemini-3-5-integration-solo-operators/1779587011861-d6f16ca7-cbef-4200-9d4c-acae1af9e643.webp)
+![4.png](/blog/images/gemini-3-5-integration-solo-operators/1779587011861-d6f16ca7-cbef-4200-9d4c-acae1af9e643.webp)
 
 ## 更大的问题：你到底需不需要多个模型
 
@@ -91,7 +91,7 @@ Gemini 3.5 Flash 于 2026 年 5 月 19 日发布。据 [Google 官方公告](htt
 
 在任何任务切换前，先套一个快速决策框架：**上下文窗口是瓶颈吗？**如果是，100 万 token 可能正好解决问题。**成本是主要约束吗？**按你的实际用量对比每 token 定价，而且别只对比一家——[Grok 3 API 公开的定价](/zh/blog/grok-3-api-solo-operator)这类预算选项，值得放进同一张表里一起算。**你已经为另一个模型优化过提示词吗？**把重新调优的时间算进去。如果两个以上问题的答案指向切换，就去试；如果只有一个指向切换，那就按兵不动。
 
-![5.png](/zh/blog/images/gemini-3-5-integration-solo-operators/1779587021751-2a32816c-1462-48ab-9647-1205288fb412.webp)
+![5.png](/blog/images/gemini-3-5-integration-solo-operators/1779587021751-2a32816c-1462-48ab-9647-1205288fb412.webp)
 
 ## 要不要拨下这个开关？
 

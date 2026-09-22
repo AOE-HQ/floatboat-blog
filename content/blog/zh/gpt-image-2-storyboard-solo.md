@@ -26,7 +26,7 @@ draft: false
 
 同一个人、同一套衣服、同一家咖啡店、同一个动作方向（讲究的话，还有 180 度轴线规则）。如果角色在第 1 帧穿绿夹克、第 2 帧变成蓝色，你就破坏了这份契约。这正是以往每一款 AI 图像工具的翻车点。
 
-![2.PNG](/zh/blog/images/gpt-image-2-storyboard-solo/1777087277254-40a47c3a-d138-4929-a350-fee1a2771747.webp)
+![2.PNG](/blog/images/gpt-image-2-storyboard-solo/1777087277254-40a47c3a-d138-4929-a350-fee1a2771747.webp)
 
 ## GPT Image 2 到底为分镜带来了什么
 
@@ -48,7 +48,7 @@ Thinking 模式是第二块拼图。[The Next Web 的报道](https://thenextweb.
 
 我用一句话把所有 prompt 锚定在同一风格上：_"black and white storyboard frame, light pencil shading, simple line work, square panel border."_（黑白分镜帧、浅铅笔排线、简洁线条、方形画格边框）。24 帧坚持了下来。到第 18 帧左右线条略偏柔和，但观众看不出来。
 
-![3.png](/zh/blog/images/gpt-image-2-storyboard-solo/1777087287558-19b86600-549d-4442-af0b-6349842043a4.webp)
+![3.png](/blog/images/gpt-image-2-storyboard-solo/1777087287558-19b86600-549d-4442-af0b-6349842043a4.webp)
 
 ## 一套现实的单人分镜工作流
 
@@ -70,7 +70,7 @@ Thinking 模式是第二块拼图。[The Next Web 的报道](https://thenextweb.
 
 这就是值得理解的工作流转变。编辑是外科手术式的。构图不再整组崩坏。
 
-![4.png](/zh/blog/images/gpt-image-2-storyboard-solo/1777087297016-aa372eb9-61b3-4287-a2cf-517bb3042f8d.webp)
+![4.png](/blog/images/gpt-image-2-storyboard-solo/1777087297016-aa372eb9-61b3-4287-a2cf-517bb3042f8d.webp)
 
 ## 它仍然不行的地方
 
@@ -102,7 +102,7 @@ Thinking 模式是第二块拼图。[The Next Web 的报道](https://thenextweb.
 
 我想小心一点，别把话说过头：**GPT Image 2 并不会在影视或广告制作中取代分镜师。**它取代的是「因为请不起分镜师，所以干脆没有分镜」这件事。这是另一套价值主张，也正是对单人创业者最有意义的那套。
 
-![5.png](/zh/blog/images/gpt-image-2-storyboard-solo/1777087307353-395dad4b-2935-4ca2-a629-04bc1b8c6799.webp)
+![5.png](/blog/images/gpt-image-2-storyboard-solo/1777087307353-395dad4b-2935-4ca2-a629-04bc1b8c6799.webp)
 
 ## 谁适合用，谁该跳过
 

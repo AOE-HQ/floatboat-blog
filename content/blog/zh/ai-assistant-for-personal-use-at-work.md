@@ -30,7 +30,7 @@ draft: false
 
 **如果你很依赖规划**——季度复盘、项目范围界定、决策追踪——最大的收获不是生成，而是**结构化思考**。让 AI 对你起草的计划唱反调，或指出项目大纲里的漏洞，会改变你交付物的质量。[Zapier 2026 年对 AI 个人助手的拆解](https://zapier.com/blog/ai-personal-assistant/)说得很到位：真正在复利增值的工具，是你用来做**判断**而非只做生成的工具。
 
-![f2.PNG](/zh/blog/images/ai-assistant-for-personal-use-at-work/1778661949770-c56cb1e1-70b2-476e-8db8-b708769eb49a.webp)
+![f2.PNG](/blog/images/ai-assistant-for-personal-use-at-work/1778661949770-c56cb1e1-70b2-476e-8db8-b708769eb49a.webp)
 
 ## 「个人使用」对单人工作意味着什么
 
@@ -58,7 +58,7 @@ draft: false
 
 **桌面 AI 工作区**是一个在 2026 年仍在成熟的品类。它的设想——一个凌驾于你的文件、浏览器和本地应用之上、能跨所有这些进行协调的 AI——对有跨应用工作流的单人创业者是对的。想一想：读一份 PDF、从网页里取点东西、在文档里起草、经由某个已连接的服务发出去。如果你经常做这类工作，这种形态有实打实的上升空间。诚实的告诫：配置比插件或网页应用重，而且品类还太早期，各工具差异巨大。场景合适值得一试，但对新手不是起点。
 
-![f3.PNG](/zh/blog/images/ai-assistant-for-personal-use-at-work/1778661960784-ee4846be-8dbd-43e9-b2da-d8aafbca23f1.webp)
+![f3.PNG](/blog/images/ai-assistant-for-personal-use-at-work/1778661960784-ee4846be-8dbd-43e9-b2da-d8aafbca23f1.webp)
 
 ## 隐私与文件处理检查清单
 
@@ -88,7 +88,7 @@ draft: false
 
 一个我实际用下来很有用的做法：涉及客户材料或任何受 NDA 约束的会话，我会单独建一个项目，或开一个关掉 Memory 的新会话，干完活再关掉。这点摩擦很小，现在已经成了自动习惯。
 
-![f4.png](/zh/blog/images/ai-assistant-for-personal-use-at-work/1778662001563-2d3286ca-288f-459f-b16f-d45434dd3ed7.webp)
+![f4.png](/blog/images/ai-assistant-for-personal-use-at-work/1778662001563-2d3286ca-288f-459f-b16f-d45434dd3ed7.webp)
 
 ## 付费前的 7 天试用计划
 
