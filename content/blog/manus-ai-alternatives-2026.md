@@ -5,7 +5,6 @@ slug: "manus-ai-alternatives-2026"
 date: "2026-08-23"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["Label"]
 cover: "/blog/images/manus-ai-alternatives-2026/1773994793965-fc472904-8a59-4665-b162-c3bb810b336d.webp"
 locale: "en"
 draft: false

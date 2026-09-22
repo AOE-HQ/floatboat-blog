@@ -5,7 +5,6 @@ slug: "meta-muse-spark-one-person-company"
 date: "2026-05-01"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["Label"]
 cover: "/blog/images/meta-muse-spark-one-person-company/1777599263146-c698e3b7-2cc3-48d2-9516-374977aac95e.webp"
 locale: "en"
 draft: false

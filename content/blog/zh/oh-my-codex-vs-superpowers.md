@@ -5,7 +5,6 @@ slug: "oh-my-codex-vs-superpowers"
 date: "2026-04-30"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["AI 编码 Agent", "OpenAI Codex", "Claude Code", "开发者工具"]
 cover: "/blog/images/oh-my-codex-vs-superpowers/1777514461509-019a42cd-60f0-4a98-a14e-15689382a93a.webp"
 locale: "zh"
 draft: false

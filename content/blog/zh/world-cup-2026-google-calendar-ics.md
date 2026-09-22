@@ -5,7 +5,6 @@ slug: "world-cup-2026-google-calendar-ics"
 date: "2026-07-15"
 author: "Jackson"
 category: "Calendar AI"
-tags: ["2026 世界杯", "ICS", "日历订阅", "Google Calendar", "足球赛程"]
 cover: "/blog/images/world-cup-2026-google-calendar-ics/1783564724894-58d74578-5163-46d0-a378-e5a1c7dcd1ee.webp"
 locale: "zh"
 draft: false

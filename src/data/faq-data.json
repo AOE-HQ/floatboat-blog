@@ -1783,56 +1783,40 @@
     "/blog/genspark-ai-pricing": {
       "items": [
         {
-          "question": "Is the Genspark free tier actually useful?",
-          "answer": "For testing, yes; for daily work, no. The free plan gives you about 100 credits per day, 1 GB of AI Drive storage, and basic access to Sparkpages and the Super Agent. It is enough to find out whether Genspark fits your research style, and no credit card is required. But a single deep Sparkpage can eat 30–80 credits, so beyond two or three tasks a day the cap binds quickly."
+          "question": "How many credits does the free plan give, and is that enough to evaluate Genspark?",
+          "answer": "The free tier gives 100 credits per day (some sources report 200 — verify on Genspark's membership page, as the number has shifted before). That's enough for a genuine evaluation: one mid-depth Sparkpage a day, some chat, and light Super Agent tasks fit inside the allowance. It's not enough for daily production work — a single deep research report can eat 30–80 credits on its own."
         },
         {
-          "question": "Which plan should I pick: Plus or Pro?",
-          "answer": "Start with Plus unless you produce content at volume. Plus costs $24.99/month ($19.99 on annual billing) for 10,000 monthly credits, 50 GB of storage, and priority access to premium models. Pro jumps to $249.99/month for 125,000 credits, 1 TB of storage, and every model and agent on the platform. The steep 10x gap makes Pro worthwhile mainly for agencies and content teams that keep buying credit top-ups on Plus."
+          "question": "Is Genspark Plus worth $24.99 a month?",
+          "answer": "Yes, if structured deliverables are a regular part of your work — Sparkpages, slide decks, and research briefs that would otherwise cost an afternoon each. The zero-credit chat and image generation also make it competitive with ChatGPT Plus at nearly the same price. No, if you mainly need conversation or coding help: ChatGPT does that better for $5 less, and heavy image and video users burn through the 10,000 monthly credits faster than expected — several reviewers report two to three weeks for power users."
         },
         {
-          "question": "How many credits does each Genspark task consume?",
-          "answer": "It varies a lot. Basic AI chat costs zero credits on paid plans through December 2026. Sparkpages run roughly 5–80 credits each depending on depth and sources, while a full slide deck can pass 100. Video generation is the most expensive, and the phone-call feature burns about 1 credit per second — a three-minute call is roughly 180 credits. With 10,000 monthly credits, heavy users report running out in two to three weeks."
+          "question": "Genspark Plus vs ChatGPT Plus at nearly the same price — how do I choose?",
+          "answer": "Pick by output type, not feature count. If your work product is text — conversation, coding, writing — ChatGPT Plus is the stronger tool for less money. If your work product is structured deliverables — multi-source research pages, presentations, agent-run task bundles — Genspark's credits buy things ChatGPT doesn't offer in any form. Budget-conscious buyers should also remember that Genspark's credits don't roll over and the zero-credit perks currently expire December 31, 2026."
         },
         {
-          "question": "What happens when I run out of credits mid-month?",
-          "answer": "Credit-consuming features pause until your next billing cycle, while AI chat and image generation keep working on paid plans because they don't draw credits (through December 2026). To continue immediately, buy a credit pack — $20 for 10,000 credits or $40 for 20,000. Packs are valid for three months, so leftover top-up credits don't reset at your next billing date."
-        },
-        {
-          "question": "Is AI chat and image generation really \"unlimited\" on paid plans?",
-          "answer": "Only with caveats. There is no monthly cap, which is why Genspark advertises them as unlimited, but a session-based rate limit resets every five hours and heavy use will hit it. The zero-credit perk is also guaranteed only through December 31, 2026, after which the terms could change. If you're planning around these features long term, watch Genspark's announcements."
-        },
-        {
-          "question": "Can I use Genspark outputs commercially?",
-          "answer": "Yes — paid subscribers get commercial use rights for AI-generated content, but only guaranteed through December 31, 2026. Genspark hasn't said what happens after that date. If you build client deliverables on Genspark output, keep that deadline in mind and check for updates before year-end."
+          "question": "What happens after the December 31, 2026 terms deadline?",
+          "answer": "Nobody outside Genspark knows yet. The zero-credit AI chat, image generation, and commercial use rights are guaranteed only through December 31, 2026, and Genspark hasn't announced what replaces them. If your workflow depends on those terms — especially commercial rights on client deliverables — keep the deadline in your renewal math, prefer monthly billing until the post-2026 terms are published, and watch the official announcements."
         }
       ]
     },
     "/blog/genspark-super-agent-explained": {
       "items": [
         {
-          "question": "How is Genspark Super Agent different from a regular chatbot?",
-          "answer": "In one line: a chatbot gives you a conversation, while the Super Agent coordinates a task. It breaks your request into sub-tasks and sends different specialized agents and models to handle each one, then assembles a structured deliverable. That's why the article calls it closer to a command center than a chat window — the practical difference shows up in output format, from cited research pages to exportable slide decks."
+          "question": "Is the Genspark Super Agent free to use?",
+          "answer": "Partially. The free plan gives you 100 credits per day and 1 GB of storage — enough to test Sparkpages, basic AI chat, and most features, but daily limits hit fast if you're doing anything substantial. It's genuinely good for a trial; it is not enough for real daily work. Paid plans start at $24.99/month, and the full tier-by-tier breakdown lives in our separate Genspark pricing piece."
         },
         {
-          "question": "How does Genspark's multi-model setup work?",
-          "answer": "Through what Genspark calls a Mixture of Agents architecture. Your query runs through several models at once — including GPT-5, Claude, and Gemini — and the answers are cross-referenced before you get a result. The idea is that multiple models checking each other reduces the confident-but-wrong outputs single-model tools sometimes produce. In the author's side-by-side tests, the cross-checking caught things single models missed — not every time, but often enough to notice."
+          "question": "Who is the Genspark Super Agent actually for?",
+          "answer": "Solo operators, freelancers, and small teams whose weeks are dominated by research-to-output cycles — gathering scattered information, synthesizing it, and turning it into reports, decks, or comparisons. It's overkill for people whose AI usage is mostly conversational, and writers whose deliverable is prose rather than research artifacts will likely get more value from a dedicated chat tool at a lower price."
         },
         {
-          "question": "What are Sparkpages, and what else can Genspark produce?",
-          "answer": "Research-style queries return a Sparkpage: a dynamically generated page that pulls together sources, organizes them into sections with citations, and includes a built-in copilot for follow-up questions. Beyond that, Genspark offers AI Slides (exportable decks with charts and speaker notes), AI Sheets, and AI Docs. Workspace 4.0 even added native PowerPoint, Excel, and Word plugins, so you can run these agents inside your existing Office apps."
+          "question": "Genspark or Manus — how do I choose?",
+          "answer": "The dividing line is how much you want to stay in the loop. Genspark suits people who want to steer: visibility into each step, structured outputs, more predictable results. Manus suits people comfortable delegating an entire multi-step project end-to-end, including writing and deploying code. Both bill by credits rather than a flat fee, so budget for unpredictability on both sides — the difference is what you are watching while the credits burn."
         },
         {
-          "question": "When does Genspark make sense for a solo operator?",
-          "answer": "When a big share of your work is research-to-output cycles — gathering scattered information and turning it into a report, deck, comparison, or brief — because the Sparkpage workflow cuts real steps out of that process. It also helps if you're paying for several separate AI tools and can consolidate into one subscription. It makes less sense if you mainly use AI conversationally: for bouncing ideas or quick answers, a simple chat tool is enough."
-        },
-        {
-          "question": "Should I pay for Genspark if I already use ChatGPT or Claude?",
-          "answer": "It depends on your use case. If you mostly brainstorm, draft, and ask quick questions, chat tools are simpler and probably enough — the author wouldn't replace Claude or ChatGPT with Genspark. But if you regularly turn research into structured deliverables, Genspark handles that multi-step process in ways chat-only tools don't. Treat it as an addition for the deliverable side of your work, not a replacement for your everyday chat assistant."
-        },
-        {
-          "question": "How much does Genspark cost, and is there a free plan?",
-          "answer": "As of the article's May 2026 check: a free plan with 100 credits per day, a Plus plan at $24.99/month ($19.99 annual) with 10,000 monthly credits, and a Pro plan at $249.99/month aimed at teams. Chat and image generation are currently unlimited on paid plans, but only through December 2026, and slide, fact-check, and video actions all consume credits — verify per-action costs on the live pricing page."
+          "question": "Does the Super Agent replace ChatGPT?",
+          "answer": "No — and it isn't trying to. For pure conversation, brainstorming, and iterative drafting, a dedicated chat tool is simpler and better at the conversational craft itself. Genspark's value shows up when the answer needs to become an artifact: a cited page, a deck, a spreadsheet. Plenty of people reasonably run both and let each do its half of the job."
         }
       ]
     },
@@ -2603,28 +2587,20 @@
     "/blog/lark-cli-when-to-use-it": {
       "items": [
         {
-          "question": "Should a solo operator build on Lark CLI?",
-          "answer": "Usually not as a first choice. Building is worth it only when the integration is core to your business, you or a teammate write code regularly, no existing tool covers it, and you can commit to ongoing maintenance. If it's a nice-to-have workflow — or you'll be the only person who can fix it when it breaks — use a lighter path. The real question isn't \"can I build this?\" but \"what happens the week I don't have time to fix it?\""
+          "question": "Should you install Lark CLI at all?",
+          "answer": "Only if at least one of these is true: you write code regularly, you have a developer who can own the integration, or you need custom behavior no existing tool provides. If you just want Lark connected to your other tools, install nothing — start with Lark's built-in webhooks or an integration platform like Zapier or Make."
         },
         {
-          "question": "What is Lark CLI, and who is it built for?",
-          "answer": "It's a command-line tool for the Lark/Feishu Open Platform covering Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, and Meetings — 200+ commands and 19 AI Agent Skills. In plain terms, it lets you interact with your Lark workspace programmatically from a terminal or an AI agent. It's built mainly for developers integrating Lark into bots, internal apps, and automated pipelines. If your mental model of integration is drag-and-drop, it's probably not your tool."
+          "question": "How does Lark CLI relate to lark-mcp?",
+          "answer": "They expose the same underlying Open Platform APIs through different surfaces. Lark CLI is a command-line client you (or an AI agent) invoke directly from a terminal or script; lark-mcp wraps those APIs as MCP tools that an MCP-capable AI assistant loads as callable tools. Practically: if you work in a terminal, use the CLI; if your automation lives inside an AI assistant, lark-mcp is the more natural fit."
         },
         {
-          "question": "What does building on Lark CLI really cost?",
-          "answer": "More than it looks like. A basic integration that reliably does something useful takes a competent developer about a full day, and a non-developer should double that. Before anything runs you must create a Lark app (App ID and App Secret), pick the right token type, handle token expiry — user tokens last only two hours — and configure OAuth redirect URLs where needed. Some permissions require admin approval, and maintenance continues quarterly."
+          "question": "Can non-developers use Lark CLI?",
+          "answer": "Technically yes, and the bar is dropping — the built-in lark-cli auth login flow and the growing set of AI Agent Skills are designed for humans and agents alike, not just engineers. Realistically, you'll still run into token types, permission scopes, and error messages that assume developer vocabulary. If those words mean nothing to you, an integration platform or a guided AI workflow will get you further per hour."
         },
         {
-          "question": "Why do Lark CLI integrations fail quietly?",
-          "answer": "Maintenance is where solo operators get hurt. Lark updates an API and your commands start returning odd results with nobody monitoring; token-refresh logic fails during a holiday week and automations stop until a client asks why; six months later you've forgotten what half the configuration does. Token expiry is the most common silent failure — without automatic refresh, expect things to stop working every couple of hours. The bus factor is 1: you."
-        },
-        {
-          "question": "What should solo operators use instead of Lark CLI?",
-          "answer": "Start with Lark's built-in webhook support — simple, no auth dance, easy to test. Zapier, Make, and n8n all have Lark integrations: less flexible, but the maintenance burden is theirs. If you already use an AI assistant with MCP support, the lark-mcp package is a middle path — still technical, but designed for AI-assisted workflows rather than raw API scripting."
-        },
-        {
-          "question": "Is Lark CLI the same as lark-mcp?",
-          "answer": "They're related but different. Lark CLI (larksuite/cli) is a command-line tool for humans and agents. lark-mcp wraps the same Lark APIs as Model Context Protocol tools so AI assistants can call them directly — document processing, conversation management, calendar scheduling. If you work with AI tools like Cursor or Claude, lark-mcp is the more relevant path."
+          "question": "Is Lark CLI free?",
+          "answer": "The CLI itself is open source under an MIT license, so the tool costs nothing. What you pay with is time: setup, permission approvals, and ongoing maintenance. For a solo operator, that time cost is usually the entire decision — the license never is."
         }
       ]
     },
@@ -3431,28 +3407,16 @@
     "/blog/what-is-doubao-work": {
       "items": [
         {
-          "question": "Are \"Doubao Office\" and Doubao Work the same product?",
-          "answer": "Yes. In everyday speech, \"Doubao Office\" refers to the \"work tasks / office tasks\" mode inside the app; **Doubao Work** is the formal brand, with its own website at doubao.com/work and a separate desktop client."
-        },
-        {
-          "question": "Why did ByteDance make Doubao Work a standalone product?",
-          "answer": "The core reasons: office agents and chat products differ in user expectations, compute costs, and enterprise-governance requirements; model capability has already reached the point of cross-tool delivery, which needs its own entry point; Feishu team scenarios need their own permission and subscription system; TRAE and Coze capabilities need a unified office front door; and since WorkBuddy and Qwen Office both compete as standalone brands, Doubao Work needs to go head-to-head at the same level."
+          "question": "Is Doubao Work free?",
+          "answer": "Partly — the personal edition has a free tier with daily work-task quotas, and heavier use sits behind paid subscriptions that raise the quotas and unlock cloud computers and higher model tiers. The exact split shifts as ByteDance tunes the packaging, so treat the official pricing page as the source of truth. The team and enterprise editions are separate per-seat purchases, not an upsell inside the free tier."
         },
         {
           "question": "Is there an international version of Doubao Work?",
-          "answer": "No. The international product is Dola ([dola.com](<http://dola.com>)), a general AI assistant with no Doubao Work-grade local agent or Feishu enterprise integration."
+          "answer": "No — as of September 2026 there is no international edition, and the product is aimed at mainland-China users and Feishu (Lark) organizations. ByteDance's international general assistant is Dola, which handles everyday chat, writing, and creation but has no office-agent entry point, no local virtual-desktop control, and no Feishu team integration; international users wanting agent-driven office work have to look elsewhere."
         },
         {
-          "question": "Can I use it without Feishu?",
-          "answer": "Yes. The personal edition's core capabilities don't depend on Feishu. Signing in with Feishu (or adding a connector) is what unlocks organizational context and team-collaboration features. It also won't replace Feishu: even in the team edition, Doubao Work is an agent execution layer on top of Feishu, which stays the collaboration foundation."
-        },
-        {
-          "question": "How do I choose among WorkBuddy, Qwen Office, and Floatboat?",
-          "answer": "If you're already on **Feishu** → prefer Doubao Work; already on **DingTalk** → prefer Qwen Office; primarily on **Tencent IM/docs** → prefer WorkBuddy; and if you're **calendar-driven, want pre/post-meeting automation, and don't want to be tied to one IM** → look at [Floatboat](</>) and the Calendar-Driven AI explanation. Decide by trial-running real tasks before subscribing."
-        },
-        {
-          "question": "What's the difference between Doubao Work and Floatboat?",
-          "answer": "Both \"get work done,\" but **their default context and trigger differ**. Doubao Work: you start the task, the team edition reads Feishu organizational data, and its strengths are in-Feishu delivery and domestic desktop GUI control. Floatboat: calendar events trigger the agent to prepare and execute automatically (before meetings, at deadlines, for follow-ups), and its strengths are the [Proactive Agent OS](</>) and cross-calendar integration. Feishu teams should look at Doubao Work; solopreneurs and cross-timezone calendar users can compare [Floatboat](</>)."
+          "question": "Doubao Work vs Floatboat: which should I choose?",
+          "answer": "Choose by where your work context lives, because that is what each product inherits. If your team's default home is Feishu — group chats, docs, Feishu-managed permissions — Doubao Work's team edition will feel native, and its Windows virtual-desktop control is unique among the options here. If your work is organized around meetings and deadlines on a calendar and you want preparation and follow-up to happen automatically rather than on request, the calendar-driven model is the better fit. They also differ in market: Doubao Work serves mainland China first; Floatboat is built for international, cross-timezone use."
         }
       ]
     },
@@ -3483,28 +3447,20 @@
     "/blog/what-is-llm-wiki": {
       "items": [
         {
-          "question": "What is an LLM wiki?",
-          "answer": "A folder of markdown files that an LLM pre-compiles from your raw sources — summaries, concept and entity pages, cross-references — plus a schema file that tells the AI how to organize and update it. Karpathy's framing: with RAG you cook every time you're hungry; with an LLM wiki you build a kitchen whose recipes keep improving. Raw documents stay untouched; the LLM does the bookkeeping."
+          "question": "How is an LLM wiki different from Notion or Obsidian?",
+          "answer": "The container isn't the difference — the maintenance is. Notion and Obsidian give you a place to write things down, but you do the tagging, linking, and updating yourself, which is why most personal wikis decay within a few months. An LLM wiki inverts that: you drop in raw sources, and the model writes the pages, builds the cross-references, flags contradictions, and revisits stale entries as part of every ingest. You keep the editorial role — deciding what enters the corpus and which questions to ask — and hand off the librarian role."
         },
         {
-          "question": "How is an LLM wiki different from RAG?",
-          "answer": "RAG retrieves; an LLM wiki accumulates. With RAG, every query digs through raw documents and starts from scratch, rediscovering things each time. With an LLM wiki, sources are pre-compiled into a structured, linked knowledge base, so queries navigate what has already been synthesized. Each new source is integrated rather than merely appended — which is why the wiki gets more valuable as it grows."
+          "question": "Can I run an LLM wiki if I can't program?",
+          "answer": "Not Karpathy's reference implementation — it assumes a terminal-based coding agent, markdown folders, and a willingness to debug when ingestion goes sideways. But as of September 2026 there are real alternatives that never touch a shell: Readwise's free open-source app (released April 2026), the MIT-licensed Curated Thoughts desktop app, and MindStudio's five-minute no-code setup. Below all of those, the lightest version of the pattern — a living context document you paste into important sessions — needs nothing but a text file."
         },
         {
-          "question": "Why did Karpathy's LLM wiki go viral?",
-          "answer": "Because it named a frustration people already had — the \"every AI session starts from scratch\" problem — and because it wasn't code, it was an idea file: a conceptual pattern you paste into an LLM agent and let it build out for you. Karpathy's tweet drew 16+ million views, and the follow-up gist passed 5,000 stars within days. Timing also mattered: coding agents had become capable enough to maintain files autonomously."
+          "question": "What's the relationship between an LLM wiki and RAG?",
+          "answer": "They attack the same problem — getting an LLM to answer from your material — at different times. RAG retrieves from raw sources at query time, which means every question re-derives its context and nothing compounds. An LLM wiki pre-compiles the sources into structured pages first, so queries navigate an already-synthesized knowledge base. The two can even stack: feed the compiled wiki pages to a RAG pipeline as the retrieval corpus, instead of raw PDFs. Think of it as moving the work from read-time to write-time."
         },
         {
-          "question": "Do I need to be technical to build an LLM wiki?",
-          "answer": "Practically, yes — Karpathy's own setup assumes Claude Code, Obsidian, shell commands, and a willingness to debug when things break. The architecture is conceptually simple, but current implementations are built for developers and researchers. Non-technical readers should take the principle — compile knowledge once, query many times — rather than the specific tooling."
-        },
-        {
-          "question": "What's the simplest version for a solo operator who won't build one?",
-          "answer": "A living context document: 500–800 words describing your current projects, working preferences, and standards, pasted into important AI sessions and updated monthly. It's a manual version of the same pattern and takes ten minutes to set up. Middle-ground options like Notion AI or ChatGPT's memory feature hold context across sessions less structurally but far more easily, and workspace-first tools are working on removing the setup entirely."
-        },
-        {
-          "question": "Should I build my own LLM wiki?",
-          "answer": "It depends. Yes if you're comfortable with a terminal, work with a defined corpus that grows over time — research, documentation, a domain you analyze — and keep adding sources regularly enough for the maintenance to pay off. Probably not if your knowledge base is shallow (under 30–40 sources) or your work is varied and ad-hoc: a well-maintained system prompt plus a few reference documents covers most of the same ground with zero infrastructure."
+          "question": "How many sources make an LLM wiki worth building?",
+          "answer": "There's no hard threshold, but the pattern pays off when a corpus is both deep and growing. Under roughly 30–40 sources that rarely change, a well-maintained system prompt plus a couple of reference documents covers most of the same ground with zero infrastructure. At 50+ sources arriving regularly — research literatures, client files, a beat you cover — the maintenance the LLM takes over starts repaying the setup cost, and the gap widens as the corpus grows."
         }
       ]
     },
@@ -5851,56 +5807,40 @@
     "/zh/blog/genspark-ai-pricing": {
       "items": [
         {
-          "question": "Genspark 的免费档真的有用吗？",
-          "answer": "测试阶段有用，日常干活不够。免费方案每天约 100 积分（部分来源称 200）、1 GB 的 AI Drive 存储，以及 Sparkpages 与 Super Agent 的基础访问。用来确认 Genspark 是否适合你的研究风格足够了，而且开始不需要信用卡。但一次深度 Sparkpages 就要吃掉 30–80 积分，所以每天超过两三件任务，上限很快就会卡住。"
+          "question": "免费档每天给多少积分？够用来评估 Genspark 吗？",
+          "answer": "免费档每天给 100 积分（有些来源说 200——这个数字变动过，以 Genspark 会员页面的实时数字为准）。做一次真正的评估是够的：每天一个中等深度的 Sparkpage、一些聊天和轻度 Super Agent 任务，都装得下这个额度。但支撑不了日常生产——一份深度研究报告自己就能吃掉 30–80 积分。"
         },
         {
-          "question": "Plus 和 Pro 该选哪一档？",
-          "answer": "除非你是大批量产出内容，否则从 Plus 开始。Plus 每月 24.99 美元（年付折合每月 19.99 美元），含 10,000 月积分、50 GB 存储与高级模型优先访问权。Pro 直接跳到每月 249.99 美元，含 125,000 积分、1 TB 存储，以及平台上全部模型与 Agent。悬殊的 10 倍价差让 Pro 主要对在 Plus 上不断加购积分的代理商与内容团队才划算。"
+          "question": "Genspark Plus 每月 24.99 美元，值不值？",
+          "answer": "值——前提是结构化交付物是你工作里的常规项：Sparkpages、幻灯片、研究简报，这些东西不交给 Genspark 就得各花掉你一个下午。零积分的聊天和图片生成，也让它跟几乎同价的 ChatGPT Plus 有一战之力。不值——如果你主要需要对话或编码帮助：ChatGPT 做得更好还便宜 5 美元；而重度图片和视频用户会烧 10,000 月积分烧得比预期快，多位评测者报告重度用户两到三周见底。"
         },
         {
-          "question": "Genspark 每个任务要消耗多少积分？",
-          "answer": "差别很大。付费方案的基础 AI 聊天在 2026 年 12 月前零积分。Sparkpages 视深度与来源数量大约每个 5–80 积分，整份幻灯片可能超过 100。视频生成最贵，电话功能大约每秒 1 积分——3 分钟通话约 180 积分。以每月 10,000 积分算，重度用户报告两到三周就会用完。"
+          "question": "Genspark Plus 和 ChatGPT Plus 几乎同价，怎么选？",
+          "answer": "按产出类型选，不按功能数量选。如果你的工作产品是文字——对话、编码、写作——ChatGPT Plus 是更便宜也更强的工具。如果你的工作产品是结构化交付物——多来源研究页、演示文稿、Agent 打包的任务——Genspark 的积分买到的是 ChatGPT 任何形态都不提供的东西。精打细算的人还要记住两点：Genspark 积分不结转，零积分福利目前只保证到 2026 年 12 月 31 日。"
         },
         {
-          "question": "月中用完积分会怎样？",
-          "answer": "消耗积分的功能会暂停到下一个计费周期，而 AI 聊天与图片生成在付费方案上仍可用，因为它们不消耗积分（2026 年 12 月前）。想立即继续，可以买积分包——20 美元买 10,000 积分、40 美元买 20,000。积分包三个月内有效，所以补充包没用完的积分不会在你下一个账单日清零。"
-        },
-        {
-          "question": "付费方案的聊天和图片生成真的无限吗？",
-          "answer": "有保留条款的\"无限\"。没有月度上限，Genspark 也因此这么宣传；但每五小时重置一次的会话级速率限制会拦下重度使用。零积分这项福利也只保证到 2026 年 12 月 31 日，之后条款可能变化。若要长期围绕这些功能做规划，请留意 Genspark 的公告。"
-        },
-        {
-          "question": "Genspark 的产出可以商用吗？",
-          "answer": "可以——付费订阅者拥有 AI 生成内容的商用权利，但只保证到 2026 年 12 月 31 日。Genspark 尚未公布该日期之后的安排。如果你拿 Genspark 的产出做客户交付物，请把这个期限纳入计划，并在年底前留意更新。"
+          "question": "2026 年 12 月 31 日条款到期之后会怎样？",
+          "answer": "Genspark 之外没人知道。零积分的 AI 聊天、图片生成和商用权利只保证到 2026 年 12 月 31 日，官方还没公布后续安排。如果你的工作流依赖这些条款——尤其是客户交付物上的商用权利——请把这个日期放进续费算式，在新条款公布之前倾向按月付费，并盯紧官方公告。"
         }
       ]
     },
     "/zh/blog/genspark-super-agent-explained": {
       "items": [
         {
-          "question": "Genspark 和普通聊天机器人有什么不同？",
-          "answer": "一句话：聊天机器人给你一段对话，Super Agent 则帮你协调一整件事。它把请求拆成子任务，派不同的专门 Agent 和模型去分别处理，最后组装成一份结构化交付物。这正是文章说它更像\"指挥中心\"而非聊天窗口的原因——实际差异最终落在输出形态上：从带引用的调研页，到可导出的幻灯片。"
+          "question": "Genspark Super Agent 免费吗？",
+          "answer": "部分免费。免费版每天 100 点数、1 GB 存储——够试 Sparkpages、基础 AI 聊天和大部分功能，但只要你做点正经事，每日上限很快就到顶。拿来试用是真好；扛每日真实工作不够。付费方案从每月 $24.99 起，逐档的完整拆解在我们另一篇 Genspark 定价文里。"
         },
         {
-          "question": "Genspark 的多模型机制是怎么运作的？",
-          "answer": "靠 Genspark 所称的「Mixture of Agents」架构。你的问题会同时流经多个模型——包括 GPT-5、Claude 和 Gemini——各模型的答案交叉比对后再给你结果。思路是多个模型互相校验，减少单模型工具偶尔产生的\"自信但错误\"的输出。作者做的对照测试里，交叉校验确实抓到单模型漏掉的东西——不是每次都灵，但灵到让人注意到。"
+          "question": "Genspark Super Agent 到底适合谁？",
+          "answer": "适合一周被「调研到产出」循环占满的单人创业者、自由职业者和小团队——从零散来源收集信息、整合，再变成报告、演示或对比。对 AI 使用以对话为主的人是杀鸡用牛刀；交付物是散文而不是调研成果的写作者，多半能在更低价的专用聊天工具上拿到更多价值。"
         },
         {
-          "question": "什么是 Sparkpage？Genspark 还能产出什么？",
-          "answer": "调研类请求返回的是一个 Sparkpage：动态生成的页面，聚合多来源信息、组织成带引用的章节，并内置 copilot 供你追问。此外 Genspark 还有 AI Slides（可导出、带图表和演讲者备注的演示文稿）、AI Sheets 与 AI Docs。Workspace 4.0 更原生支持 PowerPoint、Excel、Word 插件——你可以直接在 Office 应用里调用这些 Agent。"
+          "question": "Genspark 和 Manus 怎么选？",
+          "answer": "分界线是你想留在环里的程度。Genspark 适合想掌舵的人：每步可见、产出结构化、结果更可预期。Manus 适合愿意把一个多步项目端到端整个授权出去的人，包括写代码和部署。两边都按积分计费而不是一口价，所以两边都要为不可预测性留预算——区别只在于积分燃烧时你在看什么。"
         },
         {
-          "question": "单人创业者什么情况下该用 Genspark？",
-          "answer": "当你的工作有很大一块是\"调研到产出\"的循环时——把零散信息收集起来、整合成报告、演示、对比或简报——Sparkpage 工作流能实实在在砍掉环节。如果你同时在为好几个 AI 工具付费、想合并成一个订阅，也说得通。但若你主要是对话式用法——碰撞想法、快速问答——专用聊天工具更简单，八成够用。"
-        },
-        {
-          "question": "已有 ChatGPT 或 Claude，Genspark 还值得买吗？",
-          "answer": "看需求。若你主要是头脑风暴、起草和快速问答，聊天工具更简单、大概够用——作者不会拿 Genspark 替换 Claude 或 ChatGPT。但若你经常要把调研变成结构化交付物，Genspark 处理这类多步骤流程的方式，是纯聊天工具做不到的。把它当作交付那一侧工作的加法，而不是日常聊天助手的替代品。"
-        },
-        {
-          "question": "Genspark 怎么收费？有免费版吗？",
-          "answer": "按文中 2026 年 5 月查到的定价：免费版每天 100 点数；Plus 版 $24.99/月（年付 $19.99），每月 10,000 点数；Pro 版 $249.99/月，面向团队。付费版目前聊天与图像生成不限量，但仅到 2026 年 12 月；幻灯片、事实核查、视频等动作都要耗点数——具体每次操作的成本，以官网定价页为准。"
+          "question": "Super Agent 能取代 ChatGPT 吗？",
+          "answer": "不能——它也没打算这么做。纯对话、头脑风暴、迭代起草，专用聊天工具更简单，对话技艺本身也更好。Genspark 的价值出现在答案需要变成成果物的时候：一张带引用的页面、一份幻灯片、一张表格。很多人两个都用、各干各的那一半，完全合理。"
         }
       ]
     },
@@ -6671,28 +6611,20 @@
     "/zh/blog/lark-cli-when-to-use-it": {
       "items": [
         {
-          "question": "单人经营者该不该自建 Lark CLI 集成？",
-          "answer": "多数情况下不建议作为首选。只有当集成是你业务的核心、你或队友经常写代码、现有工具覆盖不了、并且能持续投入维护时，才值得自建。如果只是锦上添花的工作流，或者坏了只有你一个人能修，就选更轻的路。真正的问题不是「我能不能搭出来」，而是「我没时间修它的那一周会发生什么」。"
+          "question": "到底该不该装 Lark CLI？",
+          "answer": "只有当下面至少一条成立时才值得装：你经常写代码；你有一个能长期拥有这套集成的开发者；或者你需要任何现成工具都给不了的定制行为。如果你只是想让 Lark 连上其他工具，什么都别装——从 Lark 内置的 webhook 或 Zapier、Make 这类集成平台开始。"
         },
         {
-          "question": "Lark CLI 是什么？主要给谁用？",
-          "answer": "它是面向 Lark/飞书开放平台的命令行工具，覆盖消息、文档、多维表格、电子表格、日历、邮件、任务、会议等核心域——200+ 条命令和 19 个 AI Agent Skill。说白了：让你从终端或 AI Agent 以编程方式操控 Lark 工作区。它主要为把 Lark 集成进 bot、内部应用与自动化管线的开发者设计；如果你想要的是拖拽式集成，它大概不适合你。"
+          "question": "Lark CLI 和 lark-mcp 是什么关系？",
+          "answer": "它们是同一套开放平台 API 的两种不同表面。Lark CLI 是命令行客户端，你（或 AI agent）从终端或脚本直接调用；lark-mcp 把这些 API 封装成 MCP 工具，由支持 MCP 的 AI 助手加载为可调用工具。实操上：你在终端里干活就用 CLI；你的自动化长在 AI 助手的对话里，lark-mcp 是更自然的形态。"
         },
         {
-          "question": "用 Lark CLI 搭集成，实际要付出多少成本？",
-          "answer": "比看上去多得多。一个能稳定干点真事的基础集成，称职的开发者要花约一整天，非开发者至少翻倍。动手前要创建 Lark 应用（App ID 与 App Secret）、选对 token 类型、处理过期——用户 token 只有两小时有效；需要代表用户操作时还得配 OAuth 回调。部分 API 权限要管理员批准，之后还有按季度计的维护。"
+          "question": "不懂代码的人能用 Lark CLI 吗？",
+          "answer": "技术上能，而且门槛在降——内置的 lark-cli auth login 流程和持续增加的 AI Agent Skill 就是同时为人和 agent 设计的，不只面向工程师。但现实是，你仍会撞上 token 类型、权限范围和默认你懂开发者词汇的报错信息。如果这些词对你毫无意义，集成平台或带引导的 AI 工作流能让你每小时走得更远。"
         },
         {
-          "question": "为什么 Lark CLI 集成会悄悄坏掉？",
-          "answer": "因为维护往往只有你一个人。Lark 更新 API，命令开始返回异常结果而没人盯着；token 刷新逻辑在假期周挂掉，自动化停了，直到客户来问才被发现；六个月后想交接或写文档，你已忘了半边配置的用途。token 过期是最常见的静默故障——不做自动刷新，就要做好每隔几小时无声失灵的准备。bus factor 是 1：就是你。"
-        },
-        {
-          "question": "单人运营该用什么替代方案？",
-          "answer": "先试 Lark 自带的 webhook——简单、没有认证的复杂流程、容易测试。Zapier、Make、n8n 都有 Lark 集成：灵活度低一些，但维护负担在它们那边。如果你已经在用支持 MCP 的 AI 助手，lark-mcp 包是值得探索的中间路线——仍偏技术，但它是为 AI 辅助工作流设计的，而不是原始 API 脚本。"
-        },
-        {
-          "question": "Lark CLI 和 lark-mcp 是一回事吗？",
-          "answer": "相关但不同。Lark CLI（larksuite/cli）是给人和 Agent 用的命令行工具；lark-mcp 则把同一套 Lark API 封装成 Model Context Protocol 工具，让 AI 助手可以直接调用——文档处理、会话管理、日历排程都能做。如果你在用 Cursor 或 Claude 这类 AI 工具，lark-mcp 是更对路的选择。"
+          "question": "Lark CLI 免费吗？",
+          "answer": "CLI 本身是 MIT 许可的开源工具，软件不花钱。你付的是时间：搭建、权限审批、持续维护。对单人经营者来说，这个时间成本通常就是全部的决定因素——许可证从来都不是。"
         }
       ]
     },
@@ -7499,28 +7431,16 @@
     "/zh/blog/what-is-doubao-work": {
       "items": [
         {
-          "question": "豆包办公和豆包工作是同一个产品吗？",
-          "answer": "是。口语「豆包办公」多指 App 内「工作任务 / 办公任务」模式；**「豆包工作」**是正式品牌，官网 doubao.com/work，有独立桌面客户端。"
-        },
-        {
-          "question": "为什么字节要把豆包工作单独做成产品？",
-          "answer": "核心原因：办公 Agent 与聊天产品的用户预期、算力成本、企业治理要求不同；模型能力已支持跨工具交付，需要独立入口；飞书团队场景需要独立权限与订阅体系；TRAE、扣子等能力需统一办公出口；WorkBuddy、千问办公均以独立品牌竞争，豆包工作需同级对标。"
+          "question": "豆包工作免费吗？",
+          "answer": "部分免费。个人版有带每日工作任务额度的免费档，更重的使用需要付费订阅——提高额度，并解锁云电脑与更高模型档位。免费与付费的边界随字节调整包装而变动，以官方定价页为准。团队版与企业版是按席位单独采购的，不是免费档里的加购。"
         },
         {
           "question": "豆包工作有海外版吗？",
-          "answer": "没有。海外产品是 Dola（[dola.com](<http://dola.com>)），通用 AI 助手，无豆包工作级本地 Agent 与飞书企业集成。"
+          "answer": "没有——截至 2026 年 9 月没有国际版，产品面向中国大陆用户与飞书（Lark）组织。字节在海外的通用助手是 Dola，覆盖日常对话、写作与创作，但没有办公 Agent 入口、没有本地虚拟桌面操控、也没有飞书团队集成；想要 Agent 办公能力的海外用户只能看别家。"
         },
         {
-          "question": "不用飞书可以用吗？",
-          "answer": "可以。个人版核心能力不依赖飞书。飞书登录或连接器才解锁组织上下文与团队协作能力。它也不能替代飞书：即便在团队版，豆包工作也只是飞书之上的 Agent 执行层，飞书仍是协作底座。"
-        },
-        {
-          "question": "和 WorkBuddy、千问办公、Floatboat 怎么选？",
-          "answer": "已在**飞书** → 优先豆包工作；已在**钉钉** → 优先千问办公；**腾讯系 IM/文档**为主→ 优先 WorkBuddy；**日历驱动、会前会后自动化、不想绑单一 IM** → 看 [Floatboat](</>) 与 Calendar-Driven AI 解释。用真实任务试跑后再定订阅。"
-        },
-        {
-          "question": "豆包工作和 Floatboat 有什么区别？",
-          "answer": "两者都能「干活」，但**默认上下文和触发方式不同**。豆包工作：你发起任务，团队版读飞书组织数据，强项是飞书内交付与国内桌面 GUI。Floatboat：日历事件触发 Agent 自动准备与执行（会前、deadline、跟进），强项是 [Proactive Agent OS](</>) 与跨日历集成。飞书团队选豆包工作；独立创业者、跨国日历用户可对比 [Floatboat](</>)。"
+          "question": "豆包工作和 Floatboat 怎么选？",
+          "answer": "看你的工作上下文住在哪里，因为两家继承的正是这个东西。团队的默认主场是飞书——群聊、文档、飞书管理的权限——豆包工作团队版会更原生，其 Windows 虚拟桌面操控也是本文各家中的独一份。工作围绕日历上的会议与 deadline 展开、希望准备和跟进「自动发生」而不是「按需请求」，Calendar-Driven 模式更合适。两者市场也不同：豆包工作先服务中国大陆，Floatboat 为跨国、跨时区使用而生。"
         }
       ]
     },
@@ -7551,28 +7471,20 @@
     "/zh/blog/what-is-llm-wiki": {
       "items": [
         {
-          "question": "什么是 LLM wiki？",
-          "answer": "一个由 LLM 从你的原始素材\"预编译\"出来的 markdown 文件目录——含摘要、概念页、实体页与交叉引用——外加一份告诉 AI 如何组织与更新的 schema 配置文件。Karpathy 的比喻：RAG 是\"饿了才做饭\"，LLM wiki 是\"建一座菜谱会不断改良的厨房\"。原始文档保持原样不动，簿记维护交给 LLM。"
+          "question": "LLM wiki 和 Notion、Obsidian 这类笔记应用有什么区别？",
+          "answer": "区别不在容器，在维护。Notion 和 Obsidian 给你一个写东西的地方，但打标签、连链接、做更新的都是你自己——这也是多数个人 wiki 几个月后就荒掉的原因。LLM wiki 把这件事反了过来：你丢进原始素材，模型来写页面、建交叉引用、标出矛盾，并在每次吸收时回头修订过期条目。你保留的是编辑角色——决定什么进语料、问什么问题——交出去的是图书管理员的角色。"
         },
         {
-          "question": "LLM wiki 和 RAG 有什么不同？",
-          "answer": "RAG 是\"检索\"，LLM wiki 是\"积累\"。RAG 每次提问都去原始文档里现翻，次次从零开始、反复重新发现；LLM wiki 则把素材预编译成结构化、互相链接的知识库，查询时直接导航其中已被综合过的内容。每加一个新来源都是\"整合\"而非\"追加\"——所以 wiki 越用越值钱。"
+          "question": "不会编程，能玩 LLM wiki 吗？",
+          "answer": "Karpathy 的参考实现不行——它默认你会用基于终端的编程 Agent、markdown 目录，还得愿意在吸收出岔子时去调试。但截至 2026 年 9 月，已经有完全不碰 shell 的真选择：Readwise 的免费开源 app（2026 年 4 月发布）、MIT 协议的桌面应用 Curated Thoughts、MindStudio 的五分钟无代码方案。比这些更轻的，还有这个模式的最简版本——一份在重要会话开头贴进去的活上下文文档——只需要一个文本文件。"
         },
         {
-          "question": "Karpathy 的 LLM wiki 为什么会火？",
-          "answer": "因为它点破了一个大家早就有、却说不出名字的痛点——\"每次开 AI 会话都从零开始\"；也因为载体不是代码，而是一份\"想法文件\"：把模式粘进 LLM Agent 就能让它替你搭建。那条推文有 1600 多万次浏览，后续的 gist 几天内就过了 5000 star。时点也关键：编码 Agent 的成熟，让\"让 AI 自主维护文件\"第一次真正可行。"
+          "question": "LLM wiki 和 RAG 是什么关系？",
+          "answer": "它们在两个不同的时间点上解决同一个问题——让 LLM 基于你的材料作答。RAG 在查询时对原始素材做检索，意味着每个问题都要重新推导上下文，什么都不会积累；LLM wiki 则先把素材预编译成结构化页面，提问时导航的是一份已经综合过的知识库。两者甚至可以叠加：把编译好的 wiki 页面当作 RAG 检索管道的语料，替代原始 PDF。可以把它理解为把工作量从「读时」挪到了「写时」。"
         },
         {
-          "question": "非技术背景能搭建 LLM wiki 吗？",
-          "answer": "实际上，门槛不低——Karpathy 自己的方案默认你会用 Claude Code、Obsidian、命令行，并且愿意在东西坏掉时动手调试。架构在概念上很简单，但现有实现是给开发者与研究者准备的。非技术读者更该带走的是那个原理——\"编译一次、多次查询\"——而不是具体工具链。"
-        },
-        {
-          "question": "不想自建的话，最简替代版是什么？",
-          "answer": "一份常青的\"上下文文档\"：用 500–800 字写清你当前的项目、工作偏好与标准，重要 AI 会话开头粘进去，每月更新一次。这是同一模式的纯手动版，十分钟就能搭好。中间档还有 Notion AI、ChatGPT 的 memory 这类方案——跨会话记得住些东西，结构弱但摩擦极低；工作区型工具则正试图把搭建步骤整个省掉。"
-        },
-        {
-          "question": "我该不该自建一个 LLM wiki？",
-          "answer": "看情况。如果你习惯命令行、手里有一批随时间增长的明确素材（研究、文档、你深耕的领域），并且会持续喂新来源、让维护成本摊得开——那值得建。如果你的知识库还很浅（不到 30–40 个来源），或工作多变、以即兴为主——大概率不值：一份维护良好的系统提示词加几份参考文档，零基建就能覆盖大部分同样的收益。"
+          "question": "多少份素材，才值得建一个 LLM wiki？",
+          "answer": "没有硬性门槛，但语料既要够深、又要持续增长，这个模式才回本。大约 30–40 份以下、且很少变化的素材，一份维护良好的系统提示词加几份参考文档就能覆盖大部分需求，而且零基础设施。50 份以上、还在源源不断到来——研究文献、客户文件、你长期报道的领域——LLM 接管的那部分维护工作就开始回本，而且语料越大，差距拉得越开。"
         }
       ]
     },

@@ -5,7 +5,6 @@ slug: "deepseek-v4-pro-0813"
 date: "2026-08-14"
 author: "Judy"
 category: "Model & Benchmarks"
-tags: ["DeepSeek", "V4 Pro", "大模型", "Agent 基准"]
 cover: "/blog/images/deepseek-v4-pro-0813/1786684761358-df353ff3-1758-420a-99ea-593ebe093d5a.webp"
 locale: "zh"
 draft: false

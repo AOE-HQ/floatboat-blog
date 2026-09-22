@@ -5,7 +5,6 @@ slug: "what-is-persistent-ai-agent"
 date: "2026-04-08"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/what-is-persistent-ai-agent/1775615255707-60dd9542-8790-42c6-af6d-2abefa791147.webp"
 locale: "en"
 draft: false

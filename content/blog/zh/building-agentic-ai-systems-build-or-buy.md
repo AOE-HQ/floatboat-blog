@@ -5,7 +5,6 @@ slug: "building-agentic-ai-systems-build-or-buy"
 date: "2026-05-22"
 author: "Nova"
 category: "AI Agents"
-tags: ["Agentic AI", "自研还是购买", "单人创业者"]
 cover: "/blog/images/building-agentic-ai-systems-build-or-buy/1779416315684-9a5f20eb-e1a7-42db-ae44-cc0ceaf77299.webp"
 locale: "zh"
 draft: false

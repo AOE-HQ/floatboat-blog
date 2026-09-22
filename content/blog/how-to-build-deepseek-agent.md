@@ -5,7 +5,6 @@ slug: "how-to-build-deepseek-agent"
 date: "2026-08-14"
 author: "Judy"
 category: "AI Agents"
-tags: ["Deepseek"]
 cover: "/blog/images/how-to-build-deepseek-agent/1785731143951-b1dd145e-e396-4efb-b0ff-97bc80e8dd6e.webp"
 locale: "en"
 draft: false

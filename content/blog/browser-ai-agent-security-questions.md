@@ -5,7 +5,6 @@ slug: "browser-ai-agent-security-questions"
 date: "2026-05-12"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/browser-ai-agent-security-questions/1778563937090-298eee0e-5d27-4059-8761-8be6e622f89b.webp"
 locale: "en"
 draft: false

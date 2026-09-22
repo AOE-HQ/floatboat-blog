@@ -5,7 +5,6 @@ slug: "genspark-vs-manus"
 date: "2026-03-26"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["Label"]
 cover: "/blog/images/genspark-vs-manus/1774490149131-b9a09fcd-daef-46d3-ad43-4123aaab32cb.webp"
 locale: "en"
 draft: false

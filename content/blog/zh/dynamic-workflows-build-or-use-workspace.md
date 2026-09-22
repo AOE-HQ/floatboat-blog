@@ -5,7 +5,6 @@ slug: "dynamic-workflows-build-or-use-workspace"
 date: "2026-05-29"
 author: "Nova"
 category: "AI Agents"
-tags: ["Dynamic Workflows", "Claude Code", "子 Agent", "单人创业者", "工作区"]
 cover: "/blog/images/dynamic-workflows-build-or-use-workspace/1780043068596-45dedbea-9c23-42ca-9b2d-606c1af82b56.webp"
 locale: "zh"
 draft: false

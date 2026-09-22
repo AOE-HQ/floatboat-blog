@@ -5,9 +5,9 @@ slug: "markdown-to-slides"
 date: "2026-09-17"
 author: "Kostja"
 category: "Tool Comparisons"
+cover: "/blog/images/markdown-to-slides/og-zh.webp"
 locale: "zh"
 draft: false
-tags: ["markdown", "幻灯片", "演示"]
 ---
 
 ## TL;DR

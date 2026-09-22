@@ -5,9 +5,9 @@ slug: "markdown-table-how-to"
 date: "2026-09-07"
 author: "Kostja"
 category: "Tool Comparisons"
+cover: "/blog/images/markdown-table-how-to/og-en.webp"
 locale: "en"
 draft: false
-tags: ["markdown", "tables", "gfm"]
 ---
 
 ## TL;DR

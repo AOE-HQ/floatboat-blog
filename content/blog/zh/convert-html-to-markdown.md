@@ -5,7 +5,7 @@ slug: "convert-html-to-markdown"
 date: "2026-09-13"
 author: "Kostja"
 category: "AI Agents"
-tags: ["HTML 转 Markdown", "AI 聊天", "剪藏"]
+cover: "/blog/images/convert-html-to-markdown/og-zh.webp"
 locale: "zh"
 draft: false
 ---

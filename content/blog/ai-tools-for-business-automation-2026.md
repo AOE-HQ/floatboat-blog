@@ -5,7 +5,6 @@ slug: "ai-tools-for-business-automation-2026"
 date: "2026-05-15"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["Label"]
 cover: "/blog/images/ai-tools-for-business-automation-2026/1778826913191-9404b5ae-6142-4515-b400-536b2fa11f21.webp"
 locale: "en"
 draft: false

@@ -5,7 +5,6 @@ slug: "html-is-the-new-markdown"
 date: "2026-05-20"
 author: "Kostja"
 category: "AI Agents"
-tags: ["HTML", "Markdown", "AI Agents", "Claude Code"]
 cover: "/blog/images/html-is-the-new-markdown/1779256712079-199ac290-7f16-4930-935c-b32be4a734cc.webp"
 locale: "en"
 draft: false

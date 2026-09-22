@@ -5,7 +5,6 @@ slug: "gpt-image-2-manga-comic-workflow"
 date: "2026-04-25"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["Label"]
 cover: "/blog/images/gpt-image-2-manga-comic-workflow/1777086983412-02342d60-b663-4941-8b04-105dd5c46331.webp"
 locale: "en"
 draft: false

@@ -5,7 +5,6 @@ slug: "what-gstack-gets-right-about-one-person-businesses"
 date: "2026-04-06"
 author: "Nova"
 category: "Solo Operators"
-tags: ["gstack", "Claude Code", "角色化提示", "单人创业者", "AI 工作流"]
 cover: "/blog/images/what-gstack-gets-right-about-one-person-businesses/1775210711995-9c430fc3-3dfc-4182-a1e6-a0fba7026754.webp"
 locale: "zh"
 draft: false

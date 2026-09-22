@@ -5,7 +5,7 @@ slug: "how-to-convert-markdown-to-pdf"
 date: "2026-09-12"
 author: "Kostja"
 category: "Tool Comparisons"
-tags: ["markdown to pdf", "pandoc", "export"]
+cover: "/blog/images/how-to-convert-markdown-to-pdf/og-en.webp"
 locale: "en"
 draft: false
 ---

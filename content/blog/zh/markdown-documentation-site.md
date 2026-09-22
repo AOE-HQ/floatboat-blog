@@ -5,9 +5,9 @@ slug: "markdown-documentation-site"
 date: "2026-09-15"
 author: "Kostja"
 category: "Tool Comparisons"
+cover: "/blog/images/markdown-documentation-site/og-zh.webp"
 locale: "zh"
 draft: false
-tags: ["markdown", "文档", "docs-as-code"]
 ---
 
 ## TL;DR

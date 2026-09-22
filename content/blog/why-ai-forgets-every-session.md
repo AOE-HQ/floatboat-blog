@@ -5,7 +5,6 @@ slug: "why-ai-forgets-every-session"
 date: "2026-04-07"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/why-ai-forgets-every-session/1775543445475-368990de-1c82-4614-90bf-4e1b6b851900.webp"
 locale: "en"
 draft: false

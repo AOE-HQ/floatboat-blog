@@ -5,9 +5,9 @@ slug: "batch-convert-markdown-files"
 date: "2026-09-21"
 author: "Kostja"
 category: "AI Agents"
+cover: "/blog/images/batch-convert-markdown-files/og-en.webp"
 locale: "en"
 draft: false
-tags: ["markdown", "batch convert", "export"]
 ---
 
 ## TL;DR

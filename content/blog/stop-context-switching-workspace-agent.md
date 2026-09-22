@@ -5,7 +5,6 @@ slug: "stop-context-switching-workspace-agent"
 date: "2026-05-01"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/stop-context-switching-workspace-agent/1777599600509-10571637-8b09-45c4-b74b-09c0f5756b91.webp"
 locale: "en"
 draft: false

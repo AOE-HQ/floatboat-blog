@@ -5,7 +5,6 @@ slug: "meta-muse-spark-one-person-company"
 date: "2026-05-01"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["Meta Muse Spark", "GPT-5.4", "模型选择", "单人创业者", "工作流"]
 cover: "/blog/images/meta-muse-spark-one-person-company/1777599263146-c698e3b7-2cc3-48d2-9516-374977aac95e.webp"
 locale: "zh"
 draft: false

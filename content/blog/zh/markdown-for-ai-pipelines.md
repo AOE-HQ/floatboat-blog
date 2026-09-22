@@ -5,9 +5,9 @@ slug: "markdown-for-ai-pipelines"
 date: "2026-09-14"
 author: "Kostja"
 category: "AI Agents"
+cover: "/blog/images/markdown-for-ai-pipelines/og-zh.webp"
 locale: "zh"
 draft: false
-tags: ["markdown", "RAG", "LLM", "chunking"]
 ---
 
 ## TL;DR
@@ -30,7 +30,7 @@ tags: ["markdown", "RAG", "LLM", "chunking"]
 
 检索增强生成（RAG）有一个脏活第一步问题：任何东西在被检索之前，文档必须先被切成足够小、能做向量匹配的块。切得不好——切在思路中间、章节中间——检索器送来的碎片会误导模型，模型再强也白搭。
 
-2026 年的技术共识收敛到了结构感知切分，而 Markdown 就是它读取的结构。向量数据库与数据管线生态在 2025–2026 年发布的工程指南——从 [Firecrawl 的切分策略对比](https://www.firecrawl.dev/blog/mastering-rag-chunking-strategies)、[Weaviate 的 chunking 指南](https://weaviate.io/blog/chunking-strategies-for-rag)，到 [Redis 对同一问题的生产笔记](https://redis.io/blog/chunking-strategies-for-rag/)——都把「按标题切分」当作基线策略而非高级技巧（以其 2025–2026 年更新为准）。它们描述的模式一致：先按章节边界切，保持每块语义完整，再把标题路径挂成元数据，让每个 chunk 都知道自己是谁。
+2026 年的技术共识收敛到了结构感知切分，而 Markdown 就是它读取的结构。向量数据库与数据管线生态在 2025–2026 年发布的工程指南——从 [Firecrawl 的切分策略对比](https://www.firecrawl.dev/blog/mastering-rag-chunking-strategies)、[Weaviate 的 chunking 指南](https://weaviate.io/blog/chunking-strategies-for-rag)，到 [Atlan 的 2026 RAG 切分完全指南](https://atlan.com/know/chunking-strategies-rag)——都把「按标题切分」当作基线策略而非高级技巧（以其 2025–2026 年更新为准）。它们描述的模式一致：先按章节边界切，保持每块语义完整，再把标题路径挂成元数据，让每个 chunk 都知道自己是谁。
 
 Markdown 让这个策略几乎零成本，因为章节边界是显式标记的。用干净 Markdown 写的文档——一节一个话题、`##` 标题语义明确、没有装饰性嵌套——不需要额外预处理就能转成可检索的块。而写成无结构散文、或从文字处理器导出成标签汤的文档，需要启发式解析去猜边界，而启发式一定会猜错一些。这正是 [Markdown 作为接口格式的养成习惯](/zh/blog/what-is-markdown)最有力的论据：文档纪律付一次成本，人类读者和检索质量各领一次回报。
 

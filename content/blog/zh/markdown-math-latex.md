@@ -5,9 +5,9 @@ slug: "markdown-math-latex"
 date: "2026-09-19"
 author: "Kostja"
 category: "Tool Comparisons"
+cover: "/blog/images/markdown-math-latex/og-zh.webp"
 locale: "zh"
 draft: false
-tags: ["markdown", "latex", "数学公式"]
 ---
 
 ## TL;DR

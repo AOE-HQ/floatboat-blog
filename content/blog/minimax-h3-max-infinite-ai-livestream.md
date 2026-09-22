@@ -5,7 +5,6 @@ slug: "minimax-h3-max-infinite-ai-livestream"
 date: "2026-09-02"
 author: "Tan Shaoqing"
 category: "Model & Benchmarks"
-tags: ["Label"]
 cover: "/blog/images/minimax-h3-max-infinite-ai-livestream/1788353341933-6ea061e0-855d-40ce-8532-47b935e63b33.webp"
 locale: "en"
 draft: false

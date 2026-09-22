@@ -5,7 +5,6 @@ slug: "what-are-claude-managed-agents"
 date: "2026-04-10"
 author: "Nova"
 category: "AI Agents"
-tags: ["Label"]
 cover: "/blog/images/what-are-claude-managed-agents/1775730561883-47b39a9c-89b4-4323-a051-3a97af2dda5e.webp"
 locale: "en"
 draft: false

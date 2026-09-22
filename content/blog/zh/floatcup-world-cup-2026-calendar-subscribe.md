@@ -5,7 +5,6 @@ slug: "floatcup-world-cup-2026-calendar-subscribe"
 date: "2026-07-15"
 author: "Jade"
 category: "Product Updates"
-tags: ["2026 世界杯", "日历订阅"]
 cover: "/blog/images/floatcup-world-cup-2026-calendar-subscribe/1783514827876-4880f990-784a-4656-be8d-21c1202b7d71.webp"
 locale: "zh"
 draft: false
@@ -22,7 +21,7 @@ FloatCup 用一次点击解决所有这些问题。
 
 ### 第一步：打开 FloatCup
 
-访问 [floatboat.ai/floatcup-2026](</floatcup-2026>) 的 FloatCup 页面——基础日历订阅不需要任何账号。页面上只有一个「订阅」按钮，外加一段简短说明，告诉你日历里会多出什么。如果你已经在用 Floatboat，FloatCup 会接入你现有的 workspace，自动读取你的时区与日历偏好。
+访问 floatboat.ai/floatcup-2026 的 FloatCup 页面——基础日历订阅不需要任何账号。页面上只有一个「订阅」按钮，外加一段简短说明，告诉你日历里会多出什么。如果你已经在用 Floatboat，FloatCup 会接入你现有的 workspace，自动读取你的时区与日历偏好。
 
 FloatCup 是基于网页的工具，任何现代浏览器都能用。不需要安装应用、不需要添加扩展，除了日历应用在添加新订阅时弹出的标准对话框之外，也不需要授予任何额外权限。整个过程——从打开页面到日历里出现比赛——通常不到 30 秒。
 

@@ -5,7 +5,7 @@ slug: "markdown-viewer-online"
 date: "2026-09-08"
 author: "Kostja"
 category: "Tool Comparisons"
-tags: ["markdown viewer", "预览", "在线工具"]
+cover: "/blog/images/markdown-viewer-online/og-zh.webp"
 locale: "zh"
 draft: false
 ---

@@ -5,7 +5,6 @@ slug: "solopreneur-pricing-day-one"
 date: "2026-04-13"
 author: "Nova"
 category: "Solo Operators"
-tags: ["Label"]
 cover: "/blog/images/solopreneur-pricing-day-one/1776074913528-787456c2-7200-46cb-a7ba-84e32a402425.webp"
 locale: "en"
 draft: false

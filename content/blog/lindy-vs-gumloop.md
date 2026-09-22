@@ -5,7 +5,6 @@ slug: "lindy-vs-gumloop"
 date: "2026-03-20"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["Label"]
 cover: "/blog/images/lindy-vs-gumloop/1773740299614-6f97fed0-616c-4f7e-a790-00151f378bb7.webp"
 locale: "en"
 draft: false

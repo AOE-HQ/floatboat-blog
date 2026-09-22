@@ -5,7 +5,6 @@ slug: "deepseek-v4-api-solo-operator"
 date: "2026-04-17"
 author: "Nova"
 category: "Model & Benchmarks"
-tags: ["Label"]
 cover: "/blog/images/deepseek-v4-api-solo-operator/1776413247809-72ec2a34-7233-43a8-a56d-c9064bb29c82.webp"
 locale: "en"
 draft: false

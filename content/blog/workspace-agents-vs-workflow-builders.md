@@ -5,7 +5,6 @@ slug: "workspace-agents-vs-workflow-builders"
 date: "2026-04-28"
 author: "Nova"
 category: "Tool Comparisons"
-tags: ["Label"]
 cover: "/blog/images/workspace-agents-vs-workflow-builders/1777341351447-26891077-6fbd-4d37-8b62-14477dd48340.webp"
 locale: "en"
 draft: false
