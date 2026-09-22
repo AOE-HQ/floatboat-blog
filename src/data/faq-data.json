@@ -8219,392 +8219,520 @@
     "/blog/markdown-documentation-site": {
       "items": [
         {
-          "question": "Do I need to know React or Vue to use Docusaurus or VitePress?",
-          "answer": "No, for standard Markdown documentation. The frameworks are JavaScript-based, but writing docs is writing .md files. You only touch React or Vue when embedding interactive components via MDX — which is optional."
+          "question": "How much does a Markdown documentation site cost?",
+          "answer": "The generator is free, and the honest budget is team time plus a few optional services. All five generators are open source; static hosting tiers (GitHub Pages, Cloudflare Pages, Netlify) comfortably serve documentation-scale traffic without charge; Algolia DocSearch is free for public documentation sites on application; and a domain is the only purchase most teams ever make. Some themes gate their newest builds behind sponsorship tiers — Material for MkDocs' Insiders build is the prominent example — though the free builds remain complete. The costs that actually accumulate are operational: build maintenance, versioning discipline, and migration effort."
         },
         {
-          "question": "Can I migrate my existing docs from Confluence or Google Docs?",
-          "answer": "Yes, with a conversion step. Exports convert to Markdown with varying fidelity — headings and lists survive well, complex layouts need cleanup. The same workflows used for converting HTML to Markdown apply, and the cleanup is usually a one-time cost per page."
+          "question": "When should you not build a documentation site?",
+          "answer": "When the audience is small, internal, and rarely changing, a well-organized folder of Markdown in the repository — or a genuinely good README — beats a full site, because the site adds a build to maintain without adding readers. A second honest case is the product whose interface churns weekly: documentation written against a moving target goes stale faster than it can be corrected, and early users forgive a short, current page more readily than a large, wrong one. The third case is organizational: if nobody owns the docs, the site should not ship. A documentation site is a small software project, and unowned software projects produce exactly the kind of quietly wrong content that makes documentation worse than none."
         },
         {
-          "question": "How do documentation sites handle multiple versions of a product?",
-          "answer": "The major generators have built-in versioning: a docs snapshot is frozen per release, and readers switch versions from a dropdown. The maintenance cost is real — bug fixes sometimes need to land in several versions — which is why teams prune old versions aggressively."
+          "question": "Which generator should a small team start with?",
+          "answer": "Start from the team's language: JavaScript or TypeScript shops fit Docusaurus or Astro Starlight naturally, Python shops move fastest with MkDocs and Material, and teams wanting zero dependencies or very large page counts do well with Hugo or VitePress. If the product maintains multiple releases, Docusaurus's first-class versioning is worth more than any styling advantage elsewhere. The consolation is that this decision is unusually reversible: all five generators read plain Markdown, so switching later is a configuration exercise rather than a content rewrite."
+        },
+        {
+          "question": "Can non-developers contribute to a docs-as-code site?",
+          "answer": "Yes, through paths with far less friction than the command line: GitHub's web editor edits Markdown in the browser, preview deployments show the rendered result of every pull request, and an edit link on each page routes a suggested fix to the right file. The realistic division of labor has writers drafting pull requests and engineers reviewing and merging them — the same shape as code review. Expect an adoption curve measured in weeks, and soften it with a short style guide and a templates folder, because the blank page combined with unfamiliar tooling is what actually drives casual contributors away."
+        },
+        {
+          "question": "How long does a Confluence or Notion migration actually take?",
+          "answer": "A focused migration of one well-kept space is days; a workspace-wide migration is a multi-week project with a ninety-day cleanup tail. The conversion itself is the small part — the schedule is set by link repair and by restructuring tables and databases, which no exporter survives intact. Teams that scope the work as one fast pass followed by an owned cleanup quarter finish; teams that scope it as moving everything perfectly at once are usually still exporting."
         }
       ]
     },
     "/zh/blog/markdown-documentation-site": {
       "items": [
         {
-          "question": "用 Docusaurus 或 VitePress 需要会 React 或 Vue 吗？",
-          "answer": "写标准 Markdown 文档不需要。框架是 JavaScript 系的，但写文档就是写 .md 文件。只有通过 MDX 内嵌交互组件时才会碰 React/Vue——而那是可选项。"
+          "question": "Markdown 文档站要花多少钱？",
+          "answer": "生成器免费，真正该做预算的是团队时间，外加少数可选服务。这五个生成器全是开源的；静态托管档位（GitHub Pages、Cloudflare Pages、Netlify）免费额度就足以服务文档量级的流量；Algolia DocSearch 对公开文档站点申请后免费；域名是多数团队唯一的开销。部分主题把最新构建放在赞助档位之后——Material for MkDocs 的 Insiders 构建是最著名的例子——不过免费构建依旧是完整的。真正会累积的是运营性成本：构建维护、版本化纪律、迁移投入。"
         },
         {
-          "question": "现有文档能从 Confluence 或 Google Docs 迁移过来吗？",
-          "answer": "可以，需要一步转换。导出转 Markdown 的保真度不一——标题和列表存活良好，复杂版式需要清理。HTML 转 Markdown 的那套工作流在这里同样适用，清理通常是每页一次性的成本。"
+          "question": "什么时候不该建文档站？",
+          "answer": "当受众小、纯内部、变化少的时候，仓库里一个组织良好的 Markdown 文件夹——或一个真正写得好的 README——胜过一整个站点，因为站点只增加了一个要维护的构建，没有增加读者。第二种诚实情形是界面每周都在变的产品：对着移动靶写的文档，腐化的速度比修正的速度还快，早期用户原谅一个短而新的页面，远胜于原谅一个又大又错的。第三种是组织性的：没人负责文档，站点就不该上。文档站是一个小型软件项目，而无主的软件项目产出的，恰恰是那种让「有文档」比「没文档」更糟的、悄悄出错的内容。"
         },
         {
-          "question": "文档站怎么处理产品的多个版本？",
-          "answer": "主流生成器内置版本化：某个版本发布时冻结一份文档快照，读者用下拉框切换。维护成本是真实的——bug 修复有时要同时落到多个版本——所以团队都会激进地裁剪旧版本。"
+          "question": "小团队该从哪个生成器起步？",
+          "answer": "从团队语言出发：JavaScript/TypeScript 团队天然适合 Docusaurus 或 Astro Starlight，Python 团队用 MkDocs + Material 最快，想要零依赖或超大规模页数的团队选 Hugo 或 VitePress。如果产品要维护多个版本，Docusaurus 的一等版本化的价值高于其他任何地方的样式优势。安慰是这个决定异常地可逆：五个生成器都读纯 Markdown，以后换生成器是改配置，不是重写内容。"
+        },
+        {
+          "question": "非开发者能给 docs-as-code 站点做贡献吗？",
+          "answer": "可以，而且路径比命令行顺滑得多：GitHub 网页编辑器在浏览器里直接改 Markdown，预览部署展示每个 pull request 的渲染结果，每页的编辑链接把修改建议路由到正确的文件。现实的分工是写作者起草 pull request、工程师评审合并——和代码评审同一个形状。预期一个以周计的适应曲线，并配一份简短写作规范和一个模板文件夹，因为真正劝退随手贡献者的，是空白页加陌生工具的组合。"
+        },
+        {
+          "question": "Confluence 或 Notion 迁移实际要多久？",
+          "answer": "一个维护良好的空间，专注迁移只需几天；整个工作区的迁移是以周计的项目，外加九十天的清理长尾。转换本身是最小的部分——工期由链接修复和表格、数据库的重构决定，没有导出器能在它们面前全身而退。把工作定义成「一遍快过，跟着一个有主人的清理季度」的团队能收尾；定义成「一次把所有东西完美搬完」的团队，通常还在导出。"
         }
       ]
     },
     "/blog/mermaid-diagrams-in-markdown": {
       "items": [
         {
-          "question": "Does GitHub render Mermaid automatically?",
-          "answer": "Yes. Code blocks marked mermaid render as diagrams in Markdown files, issues, and pull request descriptions on GitHub. No configuration or plugin is needed, as of 2026."
+          "question": "Can Mermaid draw the whole UML family?",
+          "answer": "Partially, and it does not aim for full UML compliance. Mermaid covers class diagrams, sequence diagrams, state diagrams, and flowcharts standing in for component behavior, which handles the everyday majority of what teams use UML for. What it lacks are the formal corners — object diagrams, interaction overviews, profile support — and any process that requires a certified UML tool should keep using one. For documenting logic inside a repository, the Mermaid subset is usually enough."
         },
         {
-          "question": "Can I use Mermaid in Notion or Google Docs?",
-          "answer": "Notion supports Mermaid in its code-block menu, though editing is less fluid than in dedicated tools. Google Docs has no native support; the workaround is rendering elsewhere and pasting an image, which gives up the text-based advantages."
+          "question": "Can I export a Mermaid diagram to SVG or PNG?",
+          "answer": "Yes, through three main routes. The Mermaid Live Editor exports SVG and PNG directly in the browser; mermaid-cli (mmdc) renders diagram files from the command line for build pipelines; and some platforms expose their own paths, such as Obsidian export plugins or an embedded live editor in tools that do not render natively. SVG is the better default because it scales, while PNG is the safe harbor for slides and tools that mangle SVG."
         },
         {
-          "question": "My large flowchart renders as an unreadable tangle. What now?",
-          "answer": "Split it. Mermaid's auto-layout degrades fast past a dozen nodes with cross-links. Break one big diagram into stages — a top-level flow plus per-stage details — which is usually clearer for readers anyway."
+          "question": "Does Mermaid work offline?",
+          "answer": "Yes, wherever the library ships with the tool. Obsidian bundles Mermaid locally, so diagrams render with no network connection, and documentation sites bundle it into their built assets the same way they bundle any JavaScript. What needs a connection is the browser-based live editor and any platform that renders diagrams outside your machine. If offline rendering is a hard requirement, the check is simply whether the tool vendors the library — most desktop and self-hosted tools do."
+        },
+        {
+          "question": "How does Mermaid compare to PlantUML?",
+          "answer": "They solve the same problem — diagrams as text — with different instincts. PlantUML is older, deeper, and covers more formal notations, at the cost of a Java runtime and syntax that reads more like a programming language; Mermaid is JavaScript-native, renders on more Markdown platforms out of the box, and reads closer to English. Teams that live in GitHub or GitLab Markdown usually land on Mermaid for portability, while teams generating diagrams from structured data often prefer PlantUML's expressiveness. Both degrade to readable text where they do not render."
+        },
+        {
+          "question": "Do version differences between platforms matter in practice?",
+          "answer": "Less than they used to, more than you would like. The core types — flowchart, sequence, ER, state, gantt, pie — render consistently everywhere that renders Mermaid at all; the friction concentrates in newer types like mindmap and in occasional syntax changes between major versions. The workable rule is to reserve new diagram features for places where you control the renderer and to keep shared diagrams on the conservative core. When a diagram renders on your machine but not on a platform, check the version pin before rewriting the code."
         }
       ]
     },
     "/zh/blog/mermaid-diagrams-in-markdown": {
       "items": [
         {
-          "question": "GitHub 会自动渲染 Mermaid 吗？",
-          "answer": "会。标为 mermaid 的代码块在 GitHub 的 Markdown 文件、issue 和 pull request 描述里都渲染成图表。截至 2026 年无需任何配置或插件。"
+          "question": "Mermaid 能画 UML 全家桶吗？",
+          "answer": "能画一部分，而且它并不追求完整的 UML 兼容。Mermaid 覆盖类图、时序图、状态图，以及代替组件图的流程图，这已经接住了团队日常使用 UML 的大头。缺的是形式化的角落——对象图、交互概览、profile 支持——任何要求认证 UML 工具的流程应该继续用专业工具。在仓库里记录逻辑，Mermaid 的子集通常够用。"
         },
         {
-          "question": "Notion 或 Google Docs 里能用 Mermaid 吗？",
-          "answer": "Notion 在代码块菜单里支持 Mermaid，但编辑体验不如专职工具流畅。Google Docs 没有原生支持；绕法是在别处渲染好贴图过来——代价是放弃文本图表的全部优势。"
+          "question": "Mermaid 图能导出 SVG 或 PNG 吗？",
+          "answer": "可以，主要有三条路。Mermaid Live Editor 在浏览器里直接导出 SVG 和 PNG；mermaid-cli（mmdc）在命令行渲染图文件，适合构建管线；一些平台有自己的路径，比如 Obsidian 的导出插件，或者在不原生渲染的工具里嵌入在线编辑器。SVG 是更好的默认值，因为能缩放；PNG 是幻灯片和那些糟蹋 SVG 的工具的安全港。"
         },
         {
-          "question": "我的大流程图渲染成一团乱麻，怎么办？",
-          "answer": "拆分。Mermaid 的自动布局在超过十几个节点且有交叉链接时衰减很快。把一张大图拆成阶段——一张顶层流程图加各阶段细节——对读者来说通常本来就更清楚。"
+          "question": "Mermaid 离线能用吗？",
+          "answer": "凡是随工具打包了库的地方都能。Obsidian 本地内置 Mermaid，没有网络也照常渲染；文档站把它打进构建产物，和打包任何 JavaScript 是一回事。需要联网的是浏览器版在线编辑器，以及在远端渲染图的平台。如果离线渲染是硬需求，检查方法很简单：看工具是否自带这份库——多数桌面和自托管工具都带。"
+        },
+        {
+          "question": "Mermaid 和 PlantUML 比怎么样？",
+          "answer": "它们解决同一个问题——把图表当文本——但直觉不同。PlantUML 更老、更深、覆盖更多形式化标记，代价是要 Java 运行时、语法更像编程语言；Mermaid 是 JavaScript 原生，开箱即渲染的 Markdown 平台更多，读起来更接近英语。泡在 GitHub 或 GitLab Markdown 里的团队多半因为可移植性选 Mermaid，从结构化数据生成图的团队则常常更偏爱 PlantUML 的表达力。两者在渲染不了的地方都退化成可读文本。"
+        },
+        {
+          "question": "平台间的版本差异，实际影响大吗？",
+          "answer": "比过去小，比你希望的大。核心类型——流程图、时序图、ER 图、状态图、甘特图、饼图——在所有能渲染 Mermaid 的地方表现一致；摩擦集中在新类型（比如 mindmap）和大版本之间偶发的语法变化上。可行的规则是：新图特性留给你自己控制渲染器的地方，需要共享的图守住保守核心。当一张图在你机器上能渲染、在某个平台上不能，先查版本锁定，再动手改代码。"
         }
       ]
     },
     "/blog/markdown-to-slides": {
       "items": [
         {
-          "question": "Can I export to actual PowerPoint files?",
-          "answer": "Yes. Marp's CLI exports .pptx, and Pandoc outputs PowerPoint natively. The files are simpler than hand-built decks — text and images on themed slides — which is ideal for handouts and acceptable for most rooms, but not a full PowerPoint feature set."
+          "question": "What happens if the venue network goes down?",
+          "answer": "Nothing, provided the deck was exported before leaving. PDF and the image-based PPTX carry every font and image inside the file, and a self-contained HTML export does the same when assets are local. The one real dependency is remote images referenced by URL, so swap those for committed files before traveling, then test in airplane mode. A live demo needs its own offline plan; no export format will save it."
         },
         {
-          "question": "How do I put two columns or images beside text?",
-          "answer": "Marp supports layout directives and multiple themes, including two-column styles; Pandoc does it through slide templates. Both work, but pixel-exact placement is the ceiling — this is the format's deliberate trade."
+          "question": "How do we share a template across a team?",
+          "answer": "The template is a file in the repository, so it ships through the same review process as code. A Marp theme is one CSS file committed next to the decks, Pandoc teams share a reference document or a Beamer theme, and Slidev themes are packages with version numbers. A styling change lands as a pull request and every deck picks it up on the next build."
         },
         {
-          "question": "What about speaker notes?",
-          "answer": "Marp supports presenter notes via HTML comments, and the HTML export can show them in presenter view. Export targets vary in notes support, so verify the specific path — PDF handouts, for instance, are typically notes-free."
+          "question": "Can I add video or audio?",
+          "answer": "Partially, and the export matrix decides where. A Marp deck can embed a <video> element that plays in the HTML export, but it freezes into a still in PDF and image-based PPTX; Slidev and Reveal.js handle embeds more naturally. The honest boundary: when the argument depends on video, either go native or let the video file travel alongside the export and play from the OS player."
+        },
+        {
+          "question": "Marp, Pandoc, Slidev, or Reveal.js — which do I start with?",
+          "answer": "Start with Marp unless one of three conditions holds. You already run Pandoc for other documents — stay in that pipeline. The talk is built around code the audience watches evolve, which is Slidev's home ground. Or the browser needs to be the deck and front-end time exists — Reveal.js. All four read plain Markdown outlines, so switching later is a re-render, not a rewrite."
+        },
+        {
+          "question": "Can I keep editing the exported PPTX in PowerPoint?",
+          "answer": "Under Marp's default export, no: each slide arrives as a full-bleed image on a PowerPoint page. The experimental editable mode and Pandoc's PPTX writer both produce selectable text at some cost in visual fidelity. If the deck's afterlife is a colleague dragging boxes around every week, the workflow that team wants is PowerPoint itself — text-driven decks are for decks that stay text."
         }
       ]
     },
     "/zh/blog/markdown-to-slides": {
       "items": [
         {
-          "question": "能导出成真正的 PowerPoint 文件吗？",
-          "answer": "可以。Marp CLI 导出 .pptx，Pandoc 也原生输出 PowerPoint。这些文件比手工搭建的片子简单——主题化页面上的文字和图片——作为讲义足够好，对大多数会议室也够用，但不是完整的 PowerPoint 功能集。"
+          "question": "现场网络断了会怎样？",
+          "answer": "只要出发前导出完毕，什么都不会发生。PDF 和图片型 PPTX 把每个字体、每张图都装在文件里，自包含的 HTML 导出在资源为本地时也一样。唯一真实的依赖是按 URL 引用的远程图片——出发前换成提交进仓库的文件，然后开飞行模式过一遍片子。现场演示需要另备离线方案；任何导出格式都救不了它。"
         },
         {
-          "question": "双栏、图文混排怎么做？",
-          "answer": "Marp 支持版式指令和多主题，包括双栏样式；Pandoc 通过幻灯片模板实现。都可行，但像素级摆放是天花板——这是这个格式自觉的取舍。"
+          "question": "团队模板怎么共享？",
+          "answer": "模板就是仓库里的一个文件，走和代码一样的评审流程。Marp 主题是提交在片子旁边的一个 CSS 文件，Pandoc 团队共享 reference 文档或 Beamer 主题，Slidev 主题是带版本号的包。样式改动以 pull request 落地，每份片子在下一次构建时自动用上新主题，共享盘上的公司模板文件也不会再被人误覆盖。"
         },
         {
-          "question": "演讲者备注呢？",
-          "answer": "Marp 用 HTML 注释支持演讲者备注，HTML 导出可以在演示视图里显示。各导出目标对备注的支持不一，先验证你的具体路径——比如 PDF 讲义通常没有备注。"
+          "question": "能加视频或音频吗？",
+          "answer": "部分能，取决于导出矩阵。Marp 片子可以嵌 <video> 元素，在 HTML 导出里正常播放，但在 PDF 和图片型 PPTX 里会冻成一张静帧；Slidev 和 Reveal.js 对浏览器内嵌的处理更自然。诚实的边界是：论证依赖视频的片子属于原生工具的地盘，或者让视频文件跟着导出件一起走，用操作系统自带的播放器放。"
+        },
+        {
+          "question": "Marp、Pandoc、Slidev 还是 Reveal.js，先学哪个？",
+          "answer": "除非命中以下三条之一，否则从 Marp 起步。你已经在用 Pandoc 处理其他文档——留在那条管线里。演讲围绕观众看着演进的代码展开——那是 Slidev 的主场。或者浏览器本身需要成为片子、前端时间又充裕——那是 Reveal.js。四者读的都是纯 Markdown 大纲，以后换工具是重新渲染一次，不是重写。"
+        },
+        {
+          "question": "导出的 PPTX 还能在 PowerPoint 里编辑吗？",
+          "answer": "Marp 默认导出下不能：每一页都是 PowerPoint 页面上的整幅图片。实验性可编辑模式和 Pandoc 的 PPTX 写出器都能产出可选中的文本，代价是部分视觉保真度。如果这份片子的后续命运是同事每周在里面拖拽文本框，那个团队要的工作流就是 PowerPoint 本身——文本驱动的片子，留给始终是文本的片子。"
         }
       ]
     },
     "/blog/markdown-math-latex": {
       "items": [
         {
-          "question": "Why do my dollar signs show up as literal text?",
-          "answer": "The renderer either does not support math or its heuristics read your $...$ as currency. Check platform support first; then make sure display math uses $$ on its own lines — single-dollar inline math is where misdetection happens most."
+          "question": "Which local editor should I pick for math-heavy notes?",
+          "answer": "Pick by corpus, not by feature list. Typora renders math live as you type using MathJax and suits single, export-driven documents — a problem set, a report — under a one-time license. Obsidian also renders through MathJax and adds the knowledge-base layer of links, search, plugins, and configurable macros, which is why long-lived note vaults tend to standardize on it. VS Code with a preview extension covers the remaining case, where the notes live in the same repository as the code."
         },
         {
-          "question": "Is it KaTeX or MathJax on GitHub?",
-          "answer": "MathJax, since GitHub enabled math rendering in 2022 and continuing as of 2026. The distinction matters mainly if you self-host and need rendering speed (KaTeX) or broad package coverage (MathJax)."
+          "question": "My target platform can't render math — can I fall back to images?",
+          "answer": "Yes, and there are three tiers of effort. Pandoc's --webtex option swaps each formula for an image URL rendered by a web service — the fastest path, at the cost of depending on that service staying up. Server-side rendering, such as KaTeX at build time in Hugo's pipeline, bakes the formulas into the HTML itself. Pre-rendering to SVG or PNG files keeps the most control and the least editability; keep the LaTeX source in a comment next to the image either way, or the formulas become unfixable screenshots."
         },
         {
-          "question": "Can I number equations in Markdown?",
-          "answer": "Not portably. Equation numbering is a LaTeX feature that none of the common Markdown math renderers expose consistently. Numbered equations in a math-heavy document are a strong signal the document belongs in LaTeX or Typst."
+          "question": "Why won't my formula render on GitHub even though GitHub supports math?",
+          "answer": "The usual suspects are delimiter hygiene. A literal $ elsewhere on the line confuses the pairing, and GitHub's guidance is to escape it as \\$; expressions that overlap with Markdown syntax have a dedicated backtick-delimited variant; multiline expressions belong in a math code fence rather than loose $$. And if the formula sits inside backticks as a code block, GitHub will faithfully show its source forever — code blocks never render math."
+        },
+        {
+          "question": "Do Markdown equations survive export to Word or PDF?",
+          "answer": "Through Pandoc, yes. Converting to .docx turns TeX math into native Word equations — editable equations, not pictures. PDF output through a LaTeX engine handles the full formula range, while lighter Markdown-to-PDF converters vary widely in math support. Test the exact export chain with your gnarliest formula rather than a sample integral, because the difference shows up precisely in the formulas that matter."
+        },
+        {
+          "question": "Is $$ the only accepted display delimiter?",
+          "answer": "No — kramdown, Pandoc, and Hugo also accept LaTeX's own \\[ ... \\] form, and some engines accept \\begin{equation} blocks directly. Dollar signs remain the most portable choice across GitHub-flavored ecosystems, which is why they dominate in practice. Pick the bracket form when a document targets one known engine that prefers it, and say so in the document so future readers know which convention is load-bearing."
         }
       ]
     },
     "/zh/blog/markdown-math-latex": {
       "items": [
         {
-          "question": "为什么我的美元符号显示成了字面文本？",
-          "answer": "渲染器要么不支持数学，要么它的启发式把你的 $...$ 识别成了货币。先查平台支持；再确认展示公式用的是独立成行的 $$——单美元行内公式是误判高发区。"
+          "question": "数学笔记重的本地编辑器，该怎么选？",
+          "answer": "按语料库选，别按功能清单选。Typora 用 MathJax 实时渲染边写边出图，适合一次一篇、以导出为终点的文档——一份习题集、一份报告——买断制授权。Obsidian 同样走 MathJax 渲染，但多出知识库这一层：链接、检索、插件、可配置的宏，所以长寿的笔记库多半最后都落在它上面。剩下的场景——笔记和代码住在同一个仓库里——交给装了预览扩展的 VS Code 就好。"
         },
         {
-          "question": "GitHub 上是 KaTeX 还是 MathJax？",
-          "answer": "MathJax，自 2022 年 GitHub 开启数学渲染延续至 2026 年。这个区别主要在你自建站点且需要渲染速度（KaTeX）或宏包覆盖面（MathJax）时才重要。"
+          "question": "目标平台渲染不了公式，能转成图片兜底吗？",
+          "answer": "能，而且有三档投入。Pandoc 的 --webtex 选项把每条公式换成 Web 服务渲染的图片 URL——最快的路，代价是押注那个服务一直在线。服务端渲染，比如 Hugo 管线里构建期的 KaTeX，把公式直接烤进 HTML。预渲染成 SVG 或 PNG 控制力最强、可编辑性最差；无论哪一档，都在图片旁边用注释保留 LaTeX 源码，否则公式就变成永远改不动的截图。"
         },
         {
-          "question": "Markdown 里能给公式编号吗？",
-          "answer": "不可移植。公式编号是 LaTeX 的功能，常见 Markdown 数学渲染器都没有一致地暴露它。数学密集文档里需要编号公式，是这份文档该去 LaTeX 或 Typst 的强烈信号。"
+          "question": "GitHub 明明支持数学，我的公式为什么不渲染？",
+          "answer": "惯犯都在定界符卫生上。行内 $...$ 会被同行别处的字面 $ 搅乱配对，官方建议转义成 \\$；与 Markdown 语法撞车的表达式有专门的反引号变体；多行表达式该进 math 代码围栏，而不是松散的 $$。还有一条：公式若躺在反引号里当代码块，GitHub 会永远忠实地展示它的源码——代码块里的数学不渲染。"
+        },
+        {
+          "question": "Markdown 公式导出成 Word 或 PDF 还能活吗？",
+          "answer": "走 Pandoc，能。转 .docx 时 TeX 数学变成 Word 原生公式——可编辑的公式，不是图片。经 LaTeX 引擎出 PDF 能覆盖全部公式范围；轻量级 Markdown 转 PDF 工具的数学支持参差不齐。用你最凶的那条公式去实测导出链路，别拿示例积分糊弄——差距恰恰在要紧的公式上现形。"
+        },
+        {
+          "question": "$$ 是唯一认可的展示定界符吗？",
+          "answer": "不是——kramdown、Pandoc、Hugo 都认 LaTeX 自家的 \\[ ... \\]，有些引擎还直接吃 \\begin{equation} 块。美元符号仍是 GitHub 系生态里最通行的选择，这也是它流行的原因；当文档只面向某个明确偏好括号形式的引擎时，就用那种形式，并在文档里注明，让后来的读者知道哪套约定在起作用。"
         }
       ]
     },
     "/blog/best-markdown-editors": {
       "items": [
         {
-          "question": "What happened to Typora's free version?",
-          "answer": "Typora ended its free beta and moved to a one-time paid license (roughly $15, as of September 2026) starting with version 1.0 in late 2021. Licenses cover three devices. If you have an old beta copy, it still works, but updates require a license."
+          "question": "Can a Markdown editor replace Notion?",
+          "answer": "For writing-centric use, mostly yes — and the files get more portable in the deal. Obsidian with Dataview covers lightweight databases, wikilinks replace page links, and everything lives in plain text that any tool can read, which Notion's server-side pages cannot promise; the trade is that plain Markdown tables stay flat, with no relations, rollups, or filtered views beyond what a plugin fakes. For team workspaces with permissions, real-time co-editing, and structured databases, Notion remains the better instrument, and none of the editors above replaces it."
         },
         {
-          "question": "Is Obsidian really free?",
-          "answer": "Free for personal use, including the core app and local files. Paid tiers exist for commercial use, hosted sync (Obsidian Sync), and publishing. The local-first workflow this article describes works entirely on the free tier."
+          "question": "Typora and Obsidian — if I can only pick one?",
+          "answer": "Pick by your dominant action, not by feature totals. If most of your time goes into drafting documents whose value is the finished text, Typora's invisible markup wins; if most of your time goes into connecting, resurfacing, and restructuring notes whose value is the network, Obsidian wins. Since both read the same folder of .md files, the honest answer for many people is both on one vault — draft in Typora, link and file in Obsidian — and either can be swapped out later without a migration."
         },
         {
-          "question": "Can I use multiple editors on the same notes?",
-          "answer": "Yes — that is the point of the format. A folder of .md files can be opened in Obsidian on the desktop, edited in VS Code, and previewed in a browser tool without conflict. The only real rule is avoiding two apps writing the same file at the same moment."
+          "question": "What is the best free Markdown editor?",
+          "answer": "Three free paths cover nearly everyone, and the syntax itself costs one evening with a Markdown cheat sheet. If VS Code is already on the machine, it is the zero-effort answer for anything code-adjacent; for a personal knowledge base, Obsidian's free tier is unbeatable for individual use; Zettlr and MarkText are the open-source picks for academic work and minimal WYSIWYG respectively. Viewing and converting the occasional file needs nothing installed at all, because the browser workspace above handles it."
         },
         {
-          "question": "Which editor is best for AI-assisted writing?",
-          "answer": "All of them, increasingly — but the practical answer is whichever gives your AI access to the files. Desktop editors working on local folders pair naturally with file-reading agents; browser tools are starting to add AI features of their own. Judge it by whether the AI can read your whole library, not just the open file."
+          "question": "Is Obsidian Sync worth it over iCloud or Dropbox?",
+          "answer": "If the vault is all-Apple and one device writes at a time, iCloud is free and fine, and Dropbox-style folder sync behaves similarly. Pay the $4 a month once any of three things is true: you edit on phones as well as desktops, you want end-to-end encryption plus a month of version history as insurance against your own mistakes, or more than one person touches the vault. In practice Sync's version history saves more vaults than its conflict handling does — for years of accumulated notes, that insurance is the actual product."
+        },
+        {
+          "question": "Do these editors work with AI writing tools?",
+          "answer": "Unevenly, and mostly by philosophy rather than capability. VS Code has GitHub Copilot woven through its editing surfaces; iA Writer keeps no AI inside the app and hands text to any chatbot through Quiet Mode for copy-and-compare; Obsidian stays neutral in the core while community Copilot plugins carry the experiments. Typora, Zettlr, and MarkText have no AI features, which matters less than it appears — plain .md files are exactly what chatbots and agents read and write, so the file layer is already AI-native even when the editor is not."
         }
       ]
     },
     "/zh/blog/best-markdown-editors": {
       "items": [
         {
-          "question": "Typora 的免费版怎么了？",
-          "answer": "Typora 结束了免费 beta，从 2021 年底的 1.0 版起转为一次性付费授权（约 $15，截至 2026 年 9 月），授权覆盖三台设备。手里的旧 beta 副本仍能用，但更新需要授权。"
+          "question": "Markdown 编辑器能取代 Notion 吗？",
+          "answer": "以写作为中心的使用场景，基本能——而且文件在此过程中变得更可移植。Obsidian 加 Dataview 覆盖轻量数据库，双链替代页面链接，一切都活在任何工具都能读的纯文本里，这是 Notion 存在服务器上的页面给不了的承诺；代价是朴素的 Markdown 表格始终是平的，没有关联、汇总和筛选视图，插件能模拟的也算有限。至于带权限、实时共笔和结构化数据库的团队工作区，Notion 仍是更好的乐器，上面这些编辑器都替代不了它。"
         },
         {
-          "question": "Obsidian 真的免费吗？",
-          "answer": "个人使用免费，包括核心应用和本地文件。付费层在商用许可、托管同步（Obsidian Sync）和发布。本文描述的本地优先工作流在免费档内完整成立。"
+          "question": "Typora 和 Obsidian 二选一，选哪个？",
+          "answer": "按你的主导动作选，不按功能总数选。如果你的时间大多花在起草上、价值在成品文字，Typora 的隐形标记赢；如果你的时间大多花在连接、翻检、重组笔记上、价值在网络本身，Obsidian 赢。而由于两者读的是同一个 .md 文件夹，对很多人诚实的答案是：一个 vault，两个都用——Typora 里写，Obsidian 里连和归档——日后随便换掉哪一个，都不存在迁移。"
         },
         {
-          "question": "多个编辑器打开同一批笔记可以吗？",
-          "answer": "可以——这正是这种格式的意义所在。一个 .md 文件夹可以在桌面端用 Obsidian、在 VS Code 里编辑、在浏览器工具里预览而互不冲突。唯一的真实规则是：别让两个应用同时写同一个文件。"
+          "question": "免费党最优解是什么？",
+          "answer": "三条免费路径几乎覆盖所有人，语法本身用一晚上的 Markdown 速查表就能补齐。如果机器上已经有 VS Code，它是一切代码相邻场景的零成本答案；要个人知识库，Obsidian 的个人免费档无可匹敌；Zettlr 和 MarkText 分别是学术工作和极简 WYSIWYG 的开源之选。而偶尔查看、转换一个文件根本不需要安装任何东西——上面的浏览器工作区包办。"
         },
         {
-          "question": "AI 辅助写作选哪个编辑器最好？",
-          "answer": "都行，而且越来越都行——务实的答案是看哪个能让你的 AI 读到文件。工作在本地文件夹上的桌面编辑器天然配「能读文件」的 agent；浏览器工具也在陆续加自己的 AI 功能。判断标准是 AI 能不能读到你的整个笔记库，而不只是打开的那一个文件。"
+          "question": "Obsidian Sync 比 iCloud 或 Dropbox 值在哪？",
+          "answer": "如果 vault 是纯苹果生态、同一时间只有一台设备在写，iCloud 免费且够用，Dropbox 一类的文件夹同步表现也类似。一旦下面三件事中任何一件成立，每月 $4 就值得花：你手机和桌面都要编辑；你想要端到端加密外加一个月版本历史，给自己的失误上一道保险；或者不止一个人碰这个 vault。实际经验里，Sync 的版本历史救回来的 vault 比它的冲突处理多——对积攒了多年的笔记而言，这道保险才是真正的产品。"
+        },
+        {
+          "question": "这些编辑器能配合 AI 写作工具吗？",
+          "answer": "能，但参差，而且分歧主要在哲学而非能力。VS Code 把 GitHub Copilot 编进了每一块编辑表面；iA Writer 坚持不在应用内放 AI，经 Quiet Mode 把文字交给任意聊天机器人做复制对比；Obsidian 核心保持中立，社区 Copilot 插件承载实验。Typora、Zettlr 和 MarkText 没有 AI 功能，但这比看上去不重要——纯 .md 文件正是聊天机器人和代理读写的对象，所以即使编辑器不是 AI 原生，文件层早已是。"
         }
       ]
     },
     "/blog/batch-convert-markdown-files": {
       "items": [
         {
-          "question": "Can I batch convert to PDF without installing anything?",
-          "answer": "Not realistically for a whole folder. Browser-based converters handle single files; folder-scale PDF conversion needs either Pandoc with a PDF engine installed locally, or a desktop tool that bundles the conversion. There is no way around a rendering engine for print-ready PDFs."
+          "question": "Will Chinese (or other non-ASCII) filenames get garbled during batch conversion?",
+          "answer": "The conversion step itself renames nothing — garbled names come from the stages around it. A ZIP extracted with the wrong code page turns every CJK filename into mojibake, and tools that mishandle UTF-8 paths can write output under mangled names. Keep the whole chain UTF-8, extract archives of unclear origin with 7-Zip, and smoke-test one file whose name contains your worst characters; if names are already mojibake, re-extract from the original archive instead of renaming by guesswork."
         },
         {
-          "question": "How do I preserve my folder structure when converting?",
-          "answer": "Pandoc loops and serious batch tools can walk subfolders and mirror the structure with output extensions swapped — in a shell loop, that means enabling recursive globbing or using a script that recreates directories. Check this before running: flattening a nested vault is the most common one-way mistake."
+          "question": "How do images follow the files after conversion?",
+          "answer": "Only if their relative paths stay valid, which is a property of the folder, not the tool. PDF conversion resolves image links against the source file's location (or Pandoc's --resource-path), and HTML output keeps working as long as the assets folder moves together with the converted files. The operating rule is to convert the folder a file lives in, never the file alone — then verify with the image-reference check before deleting anything."
         },
         {
-          "question": "What breaks most often in batch conversions?",
-          "answer": "Tables, code blocks with unusual languages, and files whose frontmatter confuses the converter. Also: filenames. Conversion plus rename in one pass is where files get overwritten — convert first, rename in a separate, reversible step."
+          "question": "Can comments and annotations be preserved?",
+          "answer": "Not through the Markdown route, because comments live in the source system rather than in the Markdown body. Notion exports page and inline comments only in HTML format, as of September 2026, so an archive that needs discussion threads should take an HTML export for the record even if Markdown handles the content. Annotations added after conversion — PDF highlights, Word comments — are new downstream layers; plan who adds them and where they are stored, rather than expecting the converter to carry the old ones over."
+        },
+        {
+          "question": "Why does my converted PDF look different from the Markdown preview?",
+          "answer": "A preview renders with a website's CSS, while a PDF bakes in concrete fonts, margins, and pagination, so the two never match exactly. The gaps that actually annoy people are narrow tables that clip and long code lines that wrap or spill — both fixable with a stylesheet for HTML-backed PDFs or preamble settings for LaTeX-backed ones. HTML output preserves the preview look far better than PDF does, which is worth weighing in the route decision."
         }
       ]
     },
     "/zh/blog/batch-convert-markdown-files": {
       "items": [
         {
-          "question": "不安装任何东西能批量转 PDF 吗？",
-          "answer": "整个文件夹的话，基本不能。浏览器转换器处理单文件；文件夹级的 PDF 转换要么本地装 Pandoc 加 PDF 引擎，要么用内置转换的桌面工具。打印级 PDF 绕不开一个渲染引擎。"
+          "question": "批量转换会把中文（或其他非 ASCII）文件名搞乱吗？",
+          "answer": "转换这一步本身不改任何名字——乱掉名字的是它周围的环节。用错误代码页解压的 ZIP 会把每个中文名变成乱码；处理 UTF-8 路径不当的工具会把输出写到错乱的名字下。保持全链路 UTF-8，来路不明的压缩包用 7-Zip 解，并拿一个名字里含有你最刁钻字符的文件先做冒烟测试；名字已经乱掉的，从原始压缩包重新解压，别靠猜着手改。"
         },
         {
-          "question": "转换时怎么保留文件夹结构？",
-          "answer": "Pandoc 循环和正经的批量工具都能遍历子文件夹并镜像结构（只换扩展名）——shell 循环里就是开启递归 glob 或用重建目录的脚本。运行前先确认这一点：把嵌套的笔记库压平是最常见的不可逆错误。"
+          "question": "转换之后，图片怎么跟过去？",
+          "answer": "只有相对路径保持有效，图片才跟得过去——这是文件夹的属性，不是工具的属性。PDF 转换按源文件所在位置解析图片链接（或用 Pandoc 的 --resource-path），HTML 输出只要素材文件夹和转换结果一起移动就一直有效。所以操作法则是：转换文件所在的文件夹，永远不要单转一个文件——然后用图片引用检查核实一遍，再考虑删任何东西。"
         },
         {
-          "question": "批量转换最容易坏什么？",
-          "answer": "表格、带罕见语言标注的代码块、以及让转换器困惑的 frontmatter。还有：文件名。「转换加重命名」一把梭是文件互相覆盖的高发点——先转换，重命名作为独立的、可回退的第二步。"
+          "question": "评论和批注能保留吗？",
+          "answer": "走 Markdown 这条路留不下来，因为评论住在源系统里，不在 Markdown 正文里。截至 2026 年 9 月，Notion 只在 HTML 格式里导出页面评论和行内评论——需要讨论串的存档，应当为存档额外做一次 HTML 导出，哪怕正文走 Markdown。转换之后新加的批注——PDF 高亮、Word 评论——是下游新增的层；规划好谁来加、存在哪，而不是指望转换器把旧评论带过去。"
+        },
+        {
+          "question": "为什么转换出的 PDF 和 Markdown 预览长得不一样？",
+          "answer": "预览是套着某个网站的 CSS 渲染的，PDF 则把具体的字体、页边距和分页烤死在里面，两者永远不可能完全一致。真正让人恼火的差距是窄表格被裁切、长代码行被折行或溢出——前者用样式表（HTML 系 PDF）或导言区设置（LaTeX 系 PDF）都能修。HTML 输出对预览观感的保留远好于 PDF，这一点值得进路线决策。"
         }
       ]
     },
     "/blog/markdown-viewer-online": {
       "items": [
         {
-          "question": "Can I open a .md file in Word?",
-          "answer": "Yes, but you will be reading the source, not the rendered document. Word opens .md as plain text, so you will see the #, |, and  syntax rather than headings and tables. To get a formatted Word document, render and export first: a browser viewer with Word or PDF export handles it, or a command-line converter such as pandoc if you prefer batch tools."
+          "question": "Do online Markdown viewers support dark mode?",
+          "answer": "Many do, and the better client-side viewers either follow your operating system's appearance setting or expose a per-pane toggle so the rendered side and the source side can differ. It is worth checking deliberately rather than assuming: a viewer that looks fine in light theme can leave a blinding white preview pane in a dark room, and a dark-themed render exports to PDF badly, so flip to light before exporting. If you read .md files mostly in the evening, this is a five-second test on your first visit."
         },
         {
-          "question": "Can a Markdown viewer edit files?",
-          "answer": "Some are view-only, some are editors with a live preview, and the label rarely tells you which. The browser viewer in Section 2 is a split-pane editor — source on one side, render on the other — so small fixes happen where you are already reading. Quick Look and GitHub's web view are read-only for practical purposes; VS Code is an editor first with a preview attached."
+          "question": "Will an online viewer slow down on very large Markdown files?",
+          "answer": "Usually not until the file reaches several megabytes. Client-side rendering happens inside your browser tab, so a normal document — a README, meeting notes, an agent deliverable, nearly anything under a megabyte — renders instantly, while multi-megabyte concatenations such as merged exports or raw agent logs can make the preview stutter, especially on phones. The workaround is boring but effective: split the file, or view the sections you need and leave the rest."
         },
         {
-          "question": "How do I read a .md file on my phone?",
-          "answer": "Open it in your phone's browser with a client-side viewer — the same browser path works on mobile, with no app install required. The built-in file preview on iOS and Android shows raw text, which is survivable for a short note and miserable for a table. Dedicated Markdown reader apps exist, but they are hard to justify for occasional reading; the browser already handles it."
+          "question": "Can I view several Markdown files at once?",
+          "answer": "Most online viewers handle one document per tab, so the honest answer is one tab per file — which scales worse than it sounds once a whole folder of .md files arrives at once. At that point viewing stops being a reading problem and becomes a conversion problem: converting the batch to HTML or PDF in a single pass beats thirty browser tabs. For a handful of files, tabs are free and entirely adequate."
         },
         {
-          "question": "Is it safe to paste private notes into an online Markdown viewer?",
-          "answer": "It depends entirely on the viewer's architecture. A client-side tool renders in your browser and the content never leaves your machine, so pasting private material is no worse than opening the file locally. A server-side tool uploads the file to render it — fine for a public README, a real consideration for client notes or unreleased plans. Check which kind it is before pasting, not after."
+          "question": "Is a Markdown viewer the same thing as a Markdown editor?",
+          "answer": "No — a viewer optimizes reading and an editor optimizes writing, even though browser tools increasingly do both on one screen. The distinction shows up when your usage drifts: if you came to read but find yourself fixing tables and rewriting sections every time, you have crossed into the editor layer, where the dedicated Markdown editors separate less on rendering quality than on storage model — plain files versus a database, local versus synced. A viewer that edits a little is a convenience; an editor you only read in is a wasted setup."
         }
       ]
     },
     "/zh/blog/markdown-viewer-online": {
       "items": [
         {
-          "question": ".md 文件能用 Word 打开吗？",
-          "answer": "能，但你读到的是源码，不是排版后的文档。Word 把 .md 当纯文本打开，你看到的是 #、| 和  这些语法，而不是标题和表格。要拿到排版好的 Word 文档，先渲染再导出：带 Word/PDF 导出的浏览器查看器能做，偏好批量工具的话，pandoc 这类命令行转换器也行。"
+          "question": "在线 Markdown 查看器支持暗色模式吗？",
+          "answer": "多数支持，而且较好的客户端查看器要么跟随操作系统的外观设置，要么提供逐面板切换，让渲染侧和源码侧可以不一样。这件事值得主动核对而不是默认信任：浅色主题下看着舒服的查看器，可能深夜里留给你一块刺眼的白色预览面板；而暗色主题的渲染导出 PDF 会很难看，导出前切回浅色。如果你多半在晚上读 .md 文件，这是首次访问时五秒钟就能做完的测试。"
         },
         {
-          "question": "Markdown 查看器能编辑文件吗？",
-          "answer": "有的只读，有的带实时预览可编辑，而名字很少告诉你它是哪种。第 2 节的浏览器查看器是分栏编辑器——一侧源码、一侧渲染——小修小补（一个错字、一行坏表格）就发生在你正在读的地方。Quick Look 和 GitHub 网页在实践上是只读的；VS Code 则是编辑器为主、预览为辅。"
+          "question": "在线查看器遇到超大的 Markdown 文件会卡吗？",
+          "answer": "通常要到文件达到好几兆才会。客户端渲染发生在你的浏览器标签页里，所以正常文档——README、会议纪要、agent 交付物，几乎一切一兆以内的东西——都是瞬间渲染；而合并导出或 agent 原始日志那种好几兆的拼接文件会让预览卡顿，手机上尤其明显。解法无聊但有效：把文件拆开，或者只看你需要的部分。"
         },
         {
-          "question": "手机上看 .md 文件怎么办？",
-          "answer": "在手机浏览器里用客户端查看器打开——同一条浏览器路径在移动端照样成立，不需要装 App。iOS 和 Android 的内置文件预览显示的是原始文本，短笔记还能忍，遇到表格就是灾难。专门的 Markdown 阅读应用存在，但为偶尔一读装一个并不划算；浏览器已经办得到。"
+          "question": "能一次看多个 Markdown 文件吗？",
+          "answer": "多数在线查看器一个标签页处理一个文档，所以如实的答案是一个文件一个标签页——而当一整个文件夹的 .md 文件一次涌来时，这种做法的伸缩性比听起来更糟。到了那个点上，「看」就不再是阅读问题而是转换问题：把整批一次转成 HTML 或 PDF，好过开三十个浏览器标签页。只有几个文件的话，标签页不要钱，完全够用。"
         },
         {
-          "question": "把私密笔记贴进在线 Markdown 查看器安全吗？",
-          "answer": "完全取决于查看器的架构。客户端工具在你的浏览器里渲染，内容从不离开你的机器，贴私密材料和在本地打开文件没有区别。服务器端工具会把文件上传后渲染——公开 README 无所谓，客户笔记或未发布计划就要掂量。先弄清是哪一种，再贴。"
+          "question": "Markdown 查看器和 Markdown 编辑器是一回事吗？",
+          "answer": "不是——查看器为阅读优化，编辑器为写作优化，尽管浏览器工具越来越倾向于一屏兼做两件事。分界线在你用法漂移时显形：如果你本来只想读，却发现自己每次都在修表格、改段落，你已经跨进了编辑层——在那里，专职的 Markdown 编辑器之间的差别更多在存储模型——纯文件还是数据库、本地还是同步——而不是渲染质量。会顺手改两笔的查看器是便利；只会被拿来读的编辑器是浪费的配置。"
         }
       ]
     },
     "/blog/markdown-for-ai-pipelines": {
       "items": [
         {
-          "question": "Is Markdown an official standard for AI input?",
-          "answer": "No. There is no ratification and none was needed. Markdown is a de facto standard — adopted because training data, tooling, and rendering support all converged on it. Official-standards status would change nothing about how models parse it."
+          "question": "Do wikis and Confluence pages need converting to Markdown too?",
+          "answer": "Yes — through a scheduled export, not by hand.\n\nWiki engines and Confluence store content in a database and render HTML on the fly, so the practical route is a scheduled export into Markdown files a pipeline can index directly. Teams that skip the export end up reverse-engineering structure out of rendered HTML, which is slower and lossier. Conversion tooling has matured enough that the export runs unattended."
         },
         {
-          "question": "Should I convert my PDFs to Markdown for RAG?",
-          "answer": "Usually, yes. PDFs interleave visual layout with content, which makes naive extraction lose headings and reading order; converting to Markdown first — then chunking by structure — preserves the section logic. The conversion step has its own tooling trade-offs covered in the HTML-to-Markdown guide."
+          "question": "Is chunk overlap a good thing or a bad thing?",
+          "answer": "It is a trade-off, not a virtue.\n\nOverlap protects sentences that straddle a cut made by a structure-blind splitter, and the standard guidance is 10 to 20 percent of the chunk size. The costs are real: duplicated text is embedded and stored twice, and near-duplicate hits can crowd out distinct results. When chunks align to headings and each section holds one topic, the seams rarely land mid-thought and overlap matters much less."
         },
         {
-          "question": "What chunk size should I use for Markdown documents?",
-          "answer": "There is no universal number, as of 2026 — the guides cited above disagree in specifics while agreeing on the principle: split on headings, keep chunks semantically coherent, and let structure rather than a fixed character count drive boundaries. Start with section-level chunks, measure retrieval quality, and adjust."
+          "question": "How should tables be handled in a RAG pipeline?",
+          "answer": "Keep them whole, serialize them, or index them separately — but never flatten them blind.\n\nSmall tables should stay inside their section's chunk so they arrive with context; larger ones can be serialized to text or HTML so every row keeps its column meaning; very large ones index best as separate units with the header row attached to each fragment. What kills a table is stripping it to bare cell values with the header row gone. The numbers survive that operation; the meaning does not."
         },
         {
-          "question": "Does formatting inside a note affect how well AI reads it?",
-          "answer": "Yes, at the margins. Heavy nesting, decorative emphasis, and tables used for layout all blur the structural signals that make Markdown machine-friendly. Core constructs — headings, lists, plain tables, code fences — parse cleanly and are what pipeline tooling expects."
+          "question": "Do I need to maintain a separate \"AI version\" of my documents?",
+          "answer": "No — a forked AI version would drift from the source within weeks.\n\nA clean Markdown document already serves both audiences at once: the headings a person skims are the boundaries a chunker splits on, and the frontmatter a person ignores is the metadata a filter runs on. Maintain one source and let the structure do the double duty. Effort spent duplicating content pays better spent repairing structure."
+        },
+        {
+          "question": "Where should machine-facing metadata go — frontmatter or prose?",
+          "answer": "Frontmatter, without exception.\n\nA review date or tag written into a closing paragraph gets chunked as content, where it pollutes whatever section it lands in and stays invisible to filters. The same fields in frontmatter are stripped before chunking and attached to every chunk as structured metadata. Parsers read the header; they do not skim the postscript."
+        },
+        {
+          "question": "Why did my coding agent write an unprompted README?",
+          "answer": "Because the contract role runs in both directions.\n\nAgents default to emitting the format they parse best, and an agent finishing a piece of work often needs to leave instructions for the next one. A README or an AGENTS.md is exactly that handoff, written to the file both the next agent and every human visitor will read. What looks like unprompted housekeeping is the agent maintaining the pipeline's interchange format on its own initiative."
         }
       ]
     },
     "/zh/blog/markdown-for-ai-pipelines": {
       "items": [
         {
-          "question": "Markdown 是 AI 输入的官方标准吗？",
-          "answer": "不是。没有任何组织批准，也不需要。它是事实标准——训练数据、工具链、渲染支持共同收敛的结果。「官方标准」地位不会改变模型解析它的任何方式。"
+          "question": "Wiki 和 Confluence 页面也需要转成 Markdown 吗？",
+          "answer": "需要——走定时导出，而不是手工。\n\nWiki 引擎和 Confluence 把内容存在数据库里、即时渲染成 HTML，所以可行路线是定时导出成 Markdown 文件，供管线直接索引。跳过导出的团队最后只能从渲染后的 HTML 里逆向工程结构，更慢、损耗更大。转换工具已经成熟到导出可以无人值守运行。"
         },
         {
-          "question": "做 RAG 应该先把 PDF 转成 Markdown 吗？",
-          "answer": "通常应该。PDF 把视觉版式和内容交织在一起，朴素抽取会丢标题和阅读顺序；先转成 Markdown、再按结构切分，能保住章节逻辑。转换步骤有自己的工具取舍，见 HTML 转 Markdown 指南。"
+          "question": "chunk 之间的重叠是好是坏？",
+          "answer": "是权衡，不是优点。\n\n重叠的作用是保护被无结构切分器切在句子中间的内容，标准建议是块大小的 10% 到 20%。代价真实存在：重复文本被嵌入和存储两遍，近似重复的命中会把不同结果挤出前列。当块对齐标题、每节只有一个话题时，刀口很少落在句子中间，重叠就没那么重要了。"
         },
         {
-          "question": "Markdown 文档的 chunk 大小怎么定？",
-          "answer": "截至 2026 年没有万能数字——主流工程指南在细节上各有主张，但原则一致：按标题切、保持块内语义完整、让结构而不是固定字符数决定边界。从章节级 chunk 起步，测检索质量，再调。"
+          "question": "表格在 RAG 管线里怎么处理？",
+          "answer": "整块保留、序列化，或单独索引——但绝不要盲目压平。\n\n小表应留在所在小节的块里，带着上下文到达；大表可以序列化成文本或 HTML，让每一行保留列含义；超大表最好作为独立单元索引，并把表头行挂到每个片段上。杀死一张表的操作，是把它的格子在去掉表头后压成裸值。数字活了下来，含义没有。"
         },
         {
-          "question": "笔记里的格式会影响 AI 读取效果吗？",
-          "answer": "会，但只在边际上。深层嵌套、装饰性强调、拿表格当版式，都会模糊让 Markdown 机器友好的结构信号。核心语法——标题、列表、朴素表格、代码块——解析干净，也正是管线工具所期待的。"
+          "question": "我需要为文档单独维护一个「AI 专用版」吗？",
+          "answer": "不需要——分叉出去的 AI 版几周内就会和源文件漂移。\n\n一份干净的 Markdown 文档本来就在同时服务两类读者：人扫读的标题就是切分器下刀的边界，人忽略的 frontmatter 就是过滤器运行的元数据。维护一个源，让结构做双重工作。花在复制内容上的力气，花在修复结构上回报更高。"
+        },
+        {
+          "question": "面向机器的元数据该放哪里——frontmatter 还是正文？",
+          "answer": "frontmatter，没有例外。\n\n写在结尾段落里的评审日期或标签会被当成内容切块，污染它落进的任何小节，还对过滤器不可见。同样的字段放进 frontmatter，会在切分前被剥出，并作为结构化元数据挂到每个块上。解析器读的是文件头，不是附注。"
+        },
+        {
+          "question": "为什么我的编码 agent 会主动写一个 README？",
+          "answer": "因为契约角色是双向的。\n\nagent 默认输出自己解析得最好的格式，而收尾工作的 agent 常常需要给下一个 agent 留指令。README 或 AGENTS.md 正是这样一次交接，写给下一个 agent 和每一个人类访客都会读的那个文件。看似无人要求的整理行为，其实是 agent 在自主维护管线的交换格式。"
         }
       ]
     },
     "/blog/markdown-for-note-taking": {
       "items": [
         {
-          "question": "Do I have to use Obsidian for Markdown notes?",
-          "answer": "No. Obsidian is one renderer for a folder of Markdown files, and a popular one because the free tier covers the core workflow. VS Code, Zettlr, or any text editor work identically at the file level — the notes do not change when the app does."
+          "question": "How many notes a day is normal?",
+          "answer": "There is no universal number, but a working solo operator typically produces between one and five notes a day — a meeting note, a few atomic captures, an occasional reference page. The health metric is not volume; it is that every note lands in the inbox the same day it is created. Sustained zero-note weeks mean the capture habit has slipped or the work has drifted into chat apps, while ten-plus notes a day usually means notes have become too fine-grained and are worth merging."
         },
         {
-          "question": "How is this different from Notion?",
-          "answer": "Notion stores notes in a proprietary cloud database and renders them in its own interface; export is possible but lossy for links and structure. Markdown notes store the content itself in open files, and tools render them. Notion suits teams that want databases and permissions; file-based Markdown suits anyone optimizing for longevity and portability."
+          "question": "Should I keep one vault or split notes into several?",
+          "answer": "Start with one. Multiple vaults feel organized on day one and fragment links by month three, because the valuable connection — this client meeting relates to that pricing note — is precisely the one that crosses the boundary you drew. Split only when a border is genuinely permanent and access-controlled, such as a client NDA folder or a shared team library. A top-level folder inside a single vault delivers most of the separation at none of the link cost."
         },
         {
-          "question": "How should I handle images and attachments?",
-          "answer": "Keep them in an assets/ or images/ subfolder next to the notes and reference them with relative links. The convention matters more than the specifics — a predictable attachment location keeps the library movable as a single unit."
+          "question": "Isn't good search enough? Why bother with structure at all?",
+          "answer": "Search finds the notes you can describe; structure connects the notes you did not know were related. For obvious retrieval — the contract note from March — search wins, and that is exactly why minimal conventions survive. But consistent names make search results predictable, headings make notes chunkable by tools and AI, and links surface the adjacent note that no query would have produced. The two are complements: search for retrieval, structure for serendipity and machine-readability."
         },
         {
-          "question": "What about handwriting or PDFs?",
-          "answer": "Those become attachments, not notes. Write a short Markdown note that summarizes the PDF or meeting, link to the file, and tag it by date. The Markdown layer is the index; the originals stay where they are."
+          "question": "Do I need Obsidian specifically to use this workflow?",
+          "answer": "No. The files are the system, and they work in Notepad, VS Code, or whatever editor is installed. Obsidian adds conveniences on top — [[wikilinks]], graph views, plugins — but it writes plain Markdown files that remain fully usable without it. Choose the app for its editing experience, and treat it as a replaceable renderer over a library that stays yours."
         }
       ]
     },
     "/zh/blog/markdown-for-note-taking": {
       "items": [
         {
-          "question": "用 Markdown 记笔记必须用 Obsidian 吗？",
-          "answer": "不必。Obsidian 只是 Markdown 文件夹的一种渲染器，因为免费版就覆盖核心工作流而广受欢迎。VS Code、Zettlr 或任何文本编辑器在文件层面完全等价——应用换的时候，笔记不会变。"
+          "question": "每天记多少条笔记算正常？",
+          "answer": "没有通用数字，但一个在运转的独立工作者通常每天产出一到五条——一条会议笔记、几条原子速记、偶尔一页参考资料。健康的指标不是数量，而是每条笔记都在当天落进收件箱。连续几周零笔记，说明捕获习惯滑掉了，或者工作漂进了聊天应用；一天十条以上，多半说明笔记切得太碎，值得合并。"
         },
         {
-          "question": "和 Notion 有什么区别？",
-          "answer": "Notion 把笔记存在自有的云端数据库里，用它自己的界面渲染；导出可行，但链接和结构会有损耗。Markdown 笔记把内容本身存在开放的文件里，工具只负责渲染。Notion 适合要数据库和权限的团队；文件化 Markdown 适合把寿命和可迁移性放第一位的人。"
+          "question": "笔记该放一个库还是拆成几个？",
+          "answer": "从一个开始。多个库在第一天显得井井有条，到第三个月就开始割裂链接——因为最有价值的那条连接（这场客户会议和那条定价笔记有关）恰好穿过你亲手画的边界。只有边界真正永久且需要权限隔离时才值得拆，比如客户的保密文件夹或团队共享库。单库里的一个顶层文件夹，能给你九成的分隔感，而不用付任何链接成本。"
         },
         {
-          "question": "图片和附件怎么处理？",
-          "answer": "放在笔记旁边的 assets/ 或 images/ 子文件夹里，用相对链接引用。约定比细节重要——一个可预期的附件位置，让整个笔记库作为一个整体搬家。"
+          "question": "搜索足够好的话，还需要结构吗？",
+          "answer": "搜索找到的是你描述得出来的笔记；结构连接的是你不知道彼此相关的笔记。对于显而易见的检索——三月那份合同——搜索赢了，这也正是极简约定能存活的原因。但一致的命名让搜索结果可预测，标题让笔记能被工具和 AI 可靠切块，链接则浮现出任何查询都不会给出的相邻笔记。两者是互补：检索靠搜索，机缘和机器可读性靠结构。"
         },
         {
-          "question": "手写笔记和 PDF 怎么进这个体系？",
-          "answer": "它们作为附件存在，而不是笔记本体。写一条简短的 Markdown 笔记总结这个 PDF 或这场会议，链接到原文件，按日期标注。Markdown 层是索引，原件留在原地。"
+          "question": "这套工作流必须用 Obsidian 吗？",
+          "answer": "不必。文件才是系统本身，用记事本、VS Code 或任何已安装的编辑器都能跑。Obsidian 在上面加了便利——[[双链]]、关系图谱、插件——但它写的就是纯 Markdown 文件，离开它照样可用。为编辑体验挑应用，把它当作库之上可替换的渲染器；库始终属于你。"
         }
       ]
     },
     "/blog/markdown-resume": {
       "items": [
         {
-          "question": "The recruiter insists on a Word file. Now what?",
-          "answer": "Export one. Pandoc's .docx output from your markdown source is clean and parseable — the source stays Markdown; the Word file is a generated artifact you send and forget."
+          "question": "I'm a fresh graduate with no work experience — does this workflow still apply?",
+          "answer": "Yes, and it applies with less to migrate, not more to compensate for. Promote coursework, thesis work, capstone projects, and internships into full entries in the standard shape — heading with role and dates, a scope line, formula bullets — because a shipped student project with a real user count is evidence in exactly the way a job bullet is. Starting the single-source habit now is also the cheapest it will ever be: your first resume becomes the seed commit of a repository you can still be committing into a decade from now."
         },
         {
-          "question": "Can I have a designed, two-column resume with this workflow?",
-          "answer": "Not from plain Markdown directly — columns and graphics come from templates. The Pandoc route with a custom template gets you there, at the cost of template maintenance. Most resumes do not need it; content and clarity screen better than decoration."
+          "question": "How should I arrange freelance and contract work?",
+          "answer": "Pick the shape by volume: a long list of small engagements compresses into one umbrella entry such as \"Independent Consultant, 2021–2024\" with the strongest engagements as bullets underneath, while one or two substantial contracts each deserve a full entry in the standard role shape. Dates stay honest at the engagement level either way, and the goal is a coherent story rather than a gap-free one. Clients you cannot or should not name can be described by industry and scale without losing the point."
         },
         {
-          "question": "One page or two?",
-          "answer": "Independent of format: one page for under a decade of experience, two when the second page is full of outcomes rather than padding. Markdown makes the cut easy — it is a deletion, not a re-layout."
+          "question": "What about projects I'm not allowed to name?",
+          "answer": "Describe the system rather than the client: the industry, the scale, and the techniques are yours to tell, while the name usually belongs to the employer. A line like \"payments platform at eight-figure daily volume for a European retailer\" gives a hiring manager more to work with than a bare name would, and it can be defended in an interview without touching the agreement. Confidentiality is a wording problem, not a format problem, so the Markdown workflow handles it without any extra machinery."
         },
         {
-          "question": "How do I keep a public web version in sync?",
-          "answer": "Add an HTML export to your conversion step, or publish the same resume.md through a static site generator. Since the source is one file, the web version is a build target, not a separate document."
+          "question": "Should I send a PDF or a Word file?",
+          "answer": "Send PDF by default and DOCX only when a portal requires it, because PDF pins the layout while both formats carry a selectable text layer when exported from Markdown. When Word is mandatory, the same source file exports the DOCX through pandoc with a reference template — that is a second command, not a second document to maintain. If a human asks for Word so they can edit, pasting the plain Markdown source is often the cleanest possible answer."
+        },
+        {
+          "question": "Is the one-page resume rule real?",
+          "answer": "As a default, yes, with a deliberate exception at roughly one page per decade of relevant experience. The reason is reading behavior rather than dogma: a second page that carries one orphan line reads as accidental, and accidental reads as careless. The pre-submission checklist treats pagination as an explicit check for exactly this reason — decide the page count at the source, then make the export obey it."
         }
       ]
     },
     "/zh/blog/markdown-resume": {
       "items": [
         {
-          "question": "招聘方坚持要 Word 文件怎么办？",
-          "answer": "导出一个。Pandoc 从 markdown 源生成的 .docx 干净且可解析——源文件依然是 Markdown；Word 文件是个生成物，发出去就不用管。"
+          "question": "应届生没有工作经历，这套流程还适用吗？",
+          "answer": "适用，而且要迁移的东西更少，而不是要弥补的更多。把课程作业、毕业论文、课程设计项目和实习升格为标准形状的完整条目——标题带职位和时间、一句范围、公式化 bullet——因为一个有真实用户数的课程项目，和一条工作 bullet 一样是证据。单一源的习惯现在开始也最便宜：你的第一份简历，就是十年后还在 commit 的那个仓库的种子提交。"
         },
         {
-          "question": "我想要双栏、带设计的简历，这个工作流支持吗？",
-          "answer": "纯 Markdown 直接做不了——分栏和图形来自模板。Pandoc 配自定义模板可以做到，代价是维护模板。大多数简历并不需要；筛选时，内容与清晰度比装饰更顶用。"
+          "question": "自由职业和外包经历怎么排？",
+          "answer": "按体量选形状：一长串小单子压成一条伞形条目——「独立顾问，2021–2024」——底下用 bullet 列最强的几单；一两个分量重的合同，各自配一条标准形状的完整条目。无论哪种，日期在单个项目层面保持诚实，目标不是没有空窗，而是故事连贯。不能提或不必提的客户，用行业和规模描述，要点并不损失。"
         },
         {
-          "question": "一页还是两页？",
-          "answer": "和格式无关：十年以内经验一页；第二页塞满的是成果而不是注水时，才用两页。Markdown 让删减变得容易——那是一次删除，不是一次重排版。"
+          "question": "保密项目怎么处理？",
+          "answer": "描述系统，而不是客户：行业、规模、用到的技术是你讲得的，名字通常属于雇主。「为一家欧洲零售商处理八位数日交易量的支付平台」比一个光秃秃的名字给招聘者的信息更多，而且在面试里可以自证，不碰保密协议。保密是措辞问题，不是格式问题，Markdown 工作流不需要为此加任何机关。"
         },
         {
-          "question": "公开的网页版简历怎么保持同步？",
-          "answer": "在转换步骤里加一个 HTML 导出，或者用静态站点生成器发布同一份 resume.md。源文件只有一个，网页版是构建目标，不是又一份独立文档。"
+          "question": "发 PDF 还是发 Word？",
+          "answer": "默认发 PDF，门户强制时才发 DOCX，因为 PDF 钉死版式，而从 Markdown 导出的两种格式都带可选中的文本层。非要 Word 时，同一份源经 pandoc 加参考模板导出 DOCX——那是第二条命令，不是第二份要维护的文档。如果是活人要 Word「方便改」，把 Markdown 源直接粘给他，往往才是最干净的答案。"
+        },
+        {
+          "question": "一页纸规则是真的吗？",
+          "answer": "作为默认是真的，例外要刻意：大约每十年相关经验多一页。理由是阅读行为而不是教条——第二页只剩一行孤行，读起来像事故，而事故读起来像粗心。投递前清单把分页当一项显式检查，正是因为这个：在源文件决定页数，然后让导出服从它。"
         }
       ]
     },
     "/blog/markdown-table-how-to": {
       "items": [
         {
-          "question": "Can a cell span multiple columns in Markdown?",
-          "answer": "No. GFM has no cell spanning or row merging. If a table truly needs spanning, the options are inline HTML tables on platforms that permit them, or restructuring the data so each row is self-contained."
+          "question": "Can a Markdown table be sorted?",
+          "answer": "No — a Markdown table is static text, and neither GFM nor CommonMark defines sorting behavior. The standard workflow is to sort the source data first, in the spreadsheet or CSV, and regenerate the table so the rendered order follows the data rather than a hand arrangement. Some platforms and wiki engines layer interactive sorting on top of rendered tables, but that behavior belongs to the site, not the format, so it should never be relied on for a document that travels."
         },
         {
-          "question": "Why does my table show up as plain text on one platform?",
-          "answer": "The platform's renderer may be strict CommonMark, which does not include tables — they are a GFM extension. Check whether the platform documents GFM support; if it does, the usual culprit is a missing separator row or an unescaped pipe breaking the row structure."
+          "question": "What is the best way to break a line inside a table cell?",
+          "answer": "The de facto answer is an HTML <br> tag inside the cell, which GitHub, Obsidian, and most blog platforms render as a line break. Use it for short two-part cells — a label above a value, a street above a city — and treat anything longer as a signal that the content wants to be a list item or its own row. Because <br> is HTML rather than Markdown, stricter renderers display it as literal text, so tables that depend on it should get a render check wherever they will live."
         },
         {
-          "question": "How do I put a list inside a table cell?",
-          "answer": "You cannot nest a Markdown list in a cell. The pragmatic choices are br-separated short items (works on most platforms), comma-separated inline text, or moving the list out of the table entirely. Cells that want lists are usually rows that want to be sections."
+          "question": "How do you maintain a Markdown table with hundreds of rows?",
+          "answer": "By not maintaining it by hand. At that scale the table should be generated: keep the data in a CSV, a spreadsheet, or a database query, and produce the Markdown as a build step or through a converter, editing the source data rather than the pipes. Hand-edited hundred-row tables drift quickly — rows get inserted out of order, separator rows get broken, and every review of the diff turns into noise. The Markdown file then works as a rendered artifact, the same way a chart works as an artifact of its underlying data."
+        },
+        {
+          "question": "Do Markdown tables work in every renderer?",
+          "answer": "No. Tables come from GitHub Flavored Markdown, while CommonMark — the base specification most strict renderers implement — does not include them at all. Most mainstream platforms (GitHub, GitLab, Obsidian, the major static-site generators) speak GFM or a close dialect, but command-line tools, minimal editors, and some comment systems will show the table as pipe-separated plain text. The safe habit is to check the actual destination renderer once, early, before investing in a large table."
+        },
+        {
+          "question": "Can you merge cells in a Markdown table?",
+          "answer": "No — GFM tables have no merged cells, no row spanning, and no column widths. When a design seems to require a merged cell, the usual choices are dropping to an HTML <table> with rowspan or colspan, or restructuring so the merged information lives in a subheading or its own short table. The HTML route works wherever raw HTML is allowed and costs portability everywhere else, which makes the restructure the safer default for documents that move between tools."
+        },
+        {
+          "question": "Are Markdown tables accessible to screen readers?",
+          "answer": "More than they get credit for, with clear limits. The header row becomes real th markup in GFM renderers, and that header-cell association is the core feature screen readers need. What Markdown cannot provide is a caption, scope attributes, or multi-level headers, so keep tables to one header row, put the table's takeaway in the paragraph before it, and never use a table for page layout. For a genuinely complex table, raw HTML with proper accessibility attributes is the honest tool."
         }
       ]
     },
     "/zh/blog/markdown-table-how-to": {
       "items": [
         {
-          "question": "Markdown 单元格能跨列吗？",
-          "answer": "不能。GFM 没有跨列和合并行。表格真的需要跨列时，选项是：在允许行内 HTML 的平台写 HTML 表格，或者重组数据让每一行自成一体。"
+          "question": "Markdown 表格能排序吗？",
+          "answer": "不能——Markdown 表格是静态文本，GFM 和 CommonMark 都没有定义排序行为。标准做法是先在源头（电子表格或 CSV）排好序再重新生成表格，让渲染顺序跟着数据走，而不是手工调出来的。部分平台和 wiki 引擎会在渲染层叠加上交互排序，但那属于站点能力而非格式能力，别指望它跟着文档到处走。"
         },
         {
-          "question": "为什么我的表格在某个平台显示成纯文本？",
-          "answer": "那个平台的渲染器可能是严格 CommonMark——它没有表格，表格是 GFM 的扩展。先查平台文档是否声明支持 GFM；支持的话，常见元凶是缺分隔行，或者一根没转义的竖线破坏了行结构。"
+          "question": "单元格内换行的最佳实践是什么？",
+          "answer": "事实标准是在单元格内用 HTML 的 <br> 标签，GitHub、Obsidian 和多数博客平台都会把它渲染成换行。适用范围是短小的两段式内容——上面标签、下面数值；再长就说明这个内容想成为列表项或独立一行。因为 <br> 是 HTML 而非 Markdown，更严格的渲染器会把它当字面文本显示，所以依赖它的表格要在实际投放的渲染器上过一遍渲染检查。"
         },
         {
-          "question": "单元格里能放列表吗？",
-          "answer": "不能在格内嵌套 Markdown 列表。务实的选项：br 分隔的短条目（多数平台有效）、逗号分隔的行内文本，或者把列表移出表格。想放列表的格子，通常是想变成小节的那一行。"
+          "question": "几百行的 Markdown 表怎么维护？",
+          "answer": "靠的不是手工。这个量级下表格应该是「生成」出来的：数据放在 CSV、电子表格或数据库查询里，用构建步骤或转换器产出 Markdown，改的是源数据而不是竖线。手编的百行表格漂移很快——行插错位置、分隔行被打断、diff 审查全是噪音。此时 Markdown 文件的角色是渲染产物，就像图表是其底层数据的产物一样。"
+        },
+        {
+          "question": "Markdown 表格在所有渲染器里都能用吗？",
+          "answer": "不能。表格来自 GitHub Flavored Markdown，而多数严格渲染器实现的 CommonMark 基础规范完全不含表格。主流平台（GitHub、GitLab、Obsidian、主流静态站点生成器）都说 GFM 或相近方言，但命令行工具、极简编辑器和部分评论系统会把表格显示成竖线分隔的纯文本。安全的习惯是：趁早，在真实的目标渲染器上验一次。"
+        },
+        {
+          "question": "Markdown 表格能合并单元格吗？",
+          "answer": "不能——GFM 表格没有合并单元格，没有跨行跨列，也没有列宽。当设计看起来需要合并单元格时，通常的选择是退到带 rowspan 或 colspan 的 HTML <table>，或者重构：把被合并的信息放进子标题或独立的小表。HTML 路线在允许原始 HTML 的地方可行，在其他任何地方都要付可移植性代价，所以对要在多工具间流转的文档，重构是更安全的默认。"
+        },
+        {
+          "question": "Markdown 表格对屏幕阅读器友好吗？",
+          "answer": "比它得到的口碑更友好，但有边界。GFM 渲染器会把表头行变成真正的 th 标记，而「数据单元格—表头」关联正是屏幕阅读器最需要的核心能力。Markdown 给不了的是 caption、scope 属性和多级表头，所以保持单行表头、把表格的结论写进表格前那段正文、绝不拿表格做页面布局。真正复杂的表格，诚实的工具是带完整无障碍属性的原始 HTML。"
         }
       ]
     }
