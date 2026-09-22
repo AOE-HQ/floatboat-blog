@@ -34,7 +34,7 @@ draft: false
 
 为什么是这一篇引爆，而不是每天诞生的千百条格式观点？先是圈内可信度：说话的人就是做这款工具的。再是时机：artifacts 画布和类 Canvas 编辑界面已经把「富渲染」变成了日常体验，这个主张是顺着体感说的，不是逆着说的。最关键的是证据本身——二十个能打开的文件，胜过一段构造精巧的三段论，每次都是。
 
-![2.PNG](/zh/blog/images/html-is-the-new-markdown/1779256961857-78b2726d-6fb5-44ca-92fe-3339ba9a712a.webp)
+![2.PNG](/blog/images/html-is-the-new-markdown/1779256961857-78b2726d-6fb5-44ca-92fe-3339ba9a712a.webp)
 
 ## 2. 论证本身说了什么
 
@@ -46,7 +46,7 @@ draft: false
 
 不过真正让论证服人的不是推理，是那二十个文件。截图根本传达不出差异——你得把同一份项目的 Markdown 计划和 HTML 计划并排打开，体会自己的眼睛愿意停留在哪一份上。我就这么做了，也就是下一节。
 
-![3.PNG](/zh/blog/images/html-is-the-new-markdown/1779256973035-39e4af2c-0ba0-4f0a-a212-50dc6664d3a1.webp)
+![3.PNG](/blog/images/html-is-the-new-markdown/1779256973035-39e4af2c-0ba0-4f0a-a212-50dc6664d3a1.webp)
 
 ## 3. 我的 Claude Code 双格式实验
 
@@ -66,7 +66,7 @@ Agent 内部工作是第三类。思维链日志、agent 之间传递的中间�
 
 最结实的一块阵地可能是本地笔记生态。Obsidian 仓库——一个存放在你设备上的纯 Markdown 文件夹，[Obsidian 仓库是什么](/zh/blog/what-is-obsidian-vault)讲的就是这个定义——全部价值都建立在磁盘上的 `.md` 文件上：双向链接、插件、主题，全都假设自己拿到的是可解析的纯文本。喂给仓库的 agent 输出必须以 Markdown 到达；一个 HTML 成果会打破系统运行的每一条假设，无论它渲染得多好看。
 
-![4.png](/zh/blog/images/html-is-the-new-markdown/1779256991459-69f12edf-2595-47cd-a828-9fa43b9d1fb6.webp)
+![4.png](/blog/images/html-is-the-new-markdown/1779256991459-69f12edf-2595-47cd-a828-9fa43b9d1fb6.webp)
 
 ## 5. 从争论到基础设施：5 月到 9 月
 
@@ -84,7 +84,7 @@ Agent 内部工作是第三类。思维链日志、agent 之间传递的中间�
 
 还有些场景根本不该动。GitHub README、配置文档、agent 之间的消息、要落进仓库的笔记——它们活在原生渲染 Markdown 的生态里，硬塞 HTML 是拿一个已解决的问题换一句格式宣言。有用的问题从来不是哪种格式更强大，而是哪种更容得下这份成果要度过的那一天。
 
-![5.png](/zh/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
+![5.png](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
 
 ## 7. 结语
 

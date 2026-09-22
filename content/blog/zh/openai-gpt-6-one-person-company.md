@@ -28,7 +28,7 @@ draft: false
 
 现在任何给你 GPT-6 基准数据的文章，我都会当同人文看。
 
-![2.PNG](/zh/blog/images/openai-gpt-6-one-person-company/1776999379453-6ad29803-06c1-4dc1-bd12-09aa45f459f7.webp)
+![2.PNG](/blog/images/openai-gpt-6-one-person-company/1776999379453-6ad29803-06c1-4dc1-bd12-09aa45f459f7.webp)
 
 ### 来自公开渠道的时间线估计
 
@@ -62,7 +62,7 @@ GPT-4 于 2023 年 3 月发布。GPT-5 于 2025 年 8 月 7 日发布。间隔 2
 
 我试着还原自己从 GPT-4 到 GPT-5 的迁移，诚实地评估提速：在我已经有成熟工作流的任务上，大概 15%。在我没有工作流的任务上，零到负——因为我又开始调 prompt、跑对比、对着本来可能没问题的输出反复自我怀疑。
 
-![3.PNG](/zh/blog/images/openai-gpt-6-one-person-company/1776999389626-bc1b9921-324d-459e-aea2-cccbd6409f29.webp)
+![3.PNG](/blog/images/openai-gpt-6-one-person-company/1776999389626-bc1b9921-324d-459e-aea2-cccbd6409f29.webp)
 
 ## 更强的能力，同一个瓶颈
 
@@ -88,7 +88,7 @@ GPT-4 于 2023 年 3 月发布。GPT-5 于 2025 年 8 月 7 日发布。间隔 2
 
 我一直在慢慢把自己重复性的东西，每条工作流整理进一份简单的文档。不花哨。输入格式、prompt、好的输出示例、坏的输出示例。每条工作流花一小时，第一次用新模型跑它就回本。
 
-![4.png](/zh/blog/images/openai-gpt-6-one-person-company/1776999400545-0652390f-5e98-4310-9be2-7ca07d5418d4.webp)
+![4.png](/blog/images/openai-gpt-6-one-person-company/1776999400545-0652390f-5e98-4310-9be2-7ca07d5418d4.webp)
 
 ### 构建能迁移到任何模型的上下文体系
 

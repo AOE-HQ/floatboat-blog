@@ -26,7 +26,7 @@ draft: false
 
 但对很多独立经营者来说，现实是：**你没得选，只能两个都上**。一半客户发 Google Calendar 邀请，另一半用 Outlook。你最后两个都得看——这本身就是一种问题。我后面会讲。
 
-![2.PNG](/zh/blog/images/google-calendar-vs-outlook/1780019846262-8ed92d81-d0ff-4ec8-8605-2108d126d034.webp)
+![2.PNG](/blog/images/google-calendar-vs-outlook/1780019846262-8ed92d81-d0ff-4ec8-8605-2108d126d034.webp)
 
 ## Google Workspace 工作流 vs Microsoft 365 工作流
 
@@ -48,7 +48,7 @@ Outlook 是**更重、更结构化**的系统。新版 Outlook 桌面应用进�
 
 **共享：**Google Calendar 可以轻松把整个日历共享给任何有 Google 账号的人。权限很直接：只读、可编辑或完全管理。Outlook 在 Microsoft 365 组织内提供更结构化的共享——[委派访问](https://learn.microsoft.com/en-us/graph/outlook-share-or-delegate-calendar)能让某人真的替你发会议邀请。对同时打理多段客户关系的顾问来说，委派功能确实实用。Google Calendar 没有真正的委派角色。
 
-![3.PNG](/zh/blog/images/google-calendar-vs-outlook/1780019862192-ac9f8050-de60-4833-be07-cec46bf8862f.webp)
+![3.PNG](/blog/images/google-calendar-vs-outlook/1780019862192-ac9f8050-de60-4833-be07-cec46bf8862f.webp)
 
 **任务：**两家平台如今都把任务放进日历视图里。Google Tasks 以侧边栏集成，你可以把任务拖到时间块上。Microsoft To Do 集成得更深——标记过的邮件变成任务、Planner 任务流入、My Day 给你一个日历+任务合并的视图。Outlook 的任务集成更成熟。这点我承认。
 
@@ -66,7 +66,7 @@ Outlook 是**更重、更结构化**的系统。新版 Outlook 桌面应用进�
 
 有一点要提醒：两家平台里导入的日历都不参与排程工具——比如 Outlook 的「Find a time」或 Google 的「Suggested times」。所以就算你能看到另一个日历的事件，同事试着找和你都有空的时段时，也看不到那些被占的块。如果你每天跨两套生态工作，这是个实打实的缺口。
 
-![4.png](/zh/blog/images/google-calendar-vs-outlook/1780019873501-e9c8c60b-a93c-4c98-a5cc-ea47d953e95e.webp)
+![4.png](/blog/images/google-calendar-vs-outlook/1780019873501-e9c8c60b-a93c-4c98-a5cc-ea47d953e95e.webp)
 
 ## 日历选择 vs 执行落差
 

@@ -31,7 +31,7 @@ draft: false
 
 我在升级前用了大约一周免费档，它够你测试这个平台跟你工作方式合不合拍，而且不需要信用卡，这一点确实不错。但如果你每天做的事超过两三件，每日上限很快就会吃紧——光是 Sparkpages 一项，按深度不同每个就要吃掉 30–80 积分，一次深度研究查询可能午饭前就烧掉你大半天的配额。
 
-![1.png](/zh/blog/images/genspark-ai-pricing/1778148126100-e50affb1-8a4b-4296-a8d2-13cfa38970f0.webp)
+![1.png](/blog/images/genspark-ai-pricing/1778148126100-e50affb1-8a4b-4296-a8d2-13cfa38970f0.webp)
 
 ### 付费方案——什么变了、多少钱
 
@@ -61,7 +61,7 @@ Plus 到 Pro 之间的落差依然很大——入门价就直接跳到 10 倍。
 
 积分也不会结转。没用完的在下一个计费周期重置。这一点在你想"买个年费囤积分"之前值得先知道。
 
-![2.png](/zh/blog/images/genspark-ai-pricing/1778148140351-a1e48d0b-b162-4453-8e1c-4268273b772f.webp)
+![2.png](/blog/images/genspark-ai-pricing/1778148140351-a1e48d0b-b162-4453-8e1c-4268273b772f.webp)
 
 ## 3. 价格里不含什么
 
@@ -93,7 +93,7 @@ Plus 是**自由职业者、单人创作者和小团队**的甜点位——他�
 
 Pro、Team 和 Enterprise 是"量"的答案。每月 249.99 美元的 Pro，只有每天大批量产出的代理商和内容团队才回得了本——信号是你在 Plus 上不止偶尔买补充包。Team 则改写了组织的算术：每席 30 美元、每席 12,000 积分，五人团队每月 150 美元、共 60,000 积分，单积分成本约为单个 Pro 席位的一半，还附带 SSO 和 2 到 150 席的席位管理。Enterprise 面向采购与安全要求，每席 25,000 积分起、合同定制——要在这个层级做承诺，不妨先扫一遍整个按积分计费的 Agent 市场，我们的 [2026 年 Manus AI 替代品盘点](/zh/blog/manus-ai-alternatives-2026) 显示这个场子已经相当拥挤，因为席位和 SSO 一旦落地，迁移成本只会越滚越大。
 
-![3.png](/zh/blog/images/genspark-ai-pricing/1778148157727-9f5fe890-7286-4f95-8bf0-982c7eb62b1b.webp)
+![3.png](/blog/images/genspark-ai-pricing/1778148157727-9f5fe890-7286-4f95-8bf0-982c7eb62b1b.webp)
 
 ## 6. 值吗？一个现实的评估
 
@@ -109,7 +109,7 @@ Pro、Team 和 Enterprise 是"量"的答案。每月 249.99 美元的 Pro，只�
 
 我还在继续试验。现在大概会继续用 Plus，看看 2026 年 12 月条款变化之后情况如何。
 
-![4.png](/zh/blog/images/genspark-ai-pricing/1778148170127-f4968f72-120b-4291-8d4d-ec13a7d2be06.webp)
+![4.png](/blog/images/genspark-ai-pricing/1778148170127-f4968f72-120b-4291-8d4d-ec13a7d2be06.webp)
 
 ## 7. 结语
 

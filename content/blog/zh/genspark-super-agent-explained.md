@@ -48,7 +48,7 @@ Genspark 一直刷屏的原因很简单：按次组装的模型能产出看起�
 
 用错这个工具最快的方式，是把它当成某个邻近的东西。它不是聊天机器人：有聊天功能，但对话是通往工作的界面，不是工作本身——如果你用 AI 主要是碰撞想法、起草邮件，那是另一个工具的活儿。它也不是常驻队友：不像住在持久电脑上、在任务之间积累上下文的 Agent，Super Agent 的小队按次组建，用记忆换取新鲜度。它也不是「走开，回来收获成品」式的无人监督代理——你留在环里，审阅、掌舵，而这恰恰是后文与 Manus 的比较变得有意思的那个维度。
 
-![2.PNG](/zh/blog/images/genspark-super-agent-explained/1779673381664-2e0980fe-80bd-46da-854d-9ddc3f9fa6fb.webp)
+![2.PNG](/blog/images/genspark-super-agent-explained/1779673381664-2e0980fe-80bd-46da-854d-9ddc3f9fa6fb.webp)
 
 ## 3. 它如何工作：Sparkpage 与一体化工作区
 
@@ -62,7 +62,7 @@ Sparkpages 之外，工作区还有**AI Slides**（生成带图表和演讲者�
 
 「成品交付物」这个野心在东方也有对应物，值得认识一下：[字节跳动的 Doubao Work](/zh/blog/what-is-doubao-work) 同样能在单个任务里生成文档、幻灯片、表格和带数据的页面，区别在于它的交付物落进飞书的 IM 与日历底座，而 Genspark 的工作区是从搜索长出来的。同一个目的地，不同的起点——也说明这个形态的产品不是一家公司的偶然。
 
-![3.PNG](/zh/blog/images/genspark-super-agent-explained/1779673408611-b6f822e4-0fb4-4ce6-a781-21ab85b8d6db.webp)
+![3.PNG](/blog/images/genspark-super-agent-explained/1779673408611-b6f822e4-0fb4-4ce6-a781-21ab85b8d6db.webp)
 
 ## 4. 发布后新增了什么
 
@@ -94,7 +94,7 @@ Sparkpages 之外，工作区还有**AI Slides**（生成带图表和演讲者�
 
 我可能是错的，但我的直觉是：主业以写作为重心、而不是以调研和交付物为重心的人，多半该继续用现有的东西。
 
-![4.png](/zh/blog/images/genspark-super-agent-explained/1779673420780-a791d4a8-9eb5-4eb2-a35e-4cd92c3e7d6b.webp)
+![4.png](/blog/images/genspark-super-agent-explained/1779673420780-a791d4a8-9eb5-4eb2-a35e-4cd92c3e7d6b.webp)
 
 ## 7. 上限、定价背景与需要核实的地方
 
@@ -102,7 +102,7 @@ Sparkpages 之外，工作区还有**AI Slides**（生成带图表和演讲者�
 
 还有几件事建议带着同样的怀疑去核实。这工具周围的营销干了很多活——「截至 2026 年 6 月估值 26 亿美元」确实抓眼球，但估值不会告诉你它适不适合你某个周二的下午。市面上的 Genspark 评测内容，读起来大多像只用了十五分钟就开写的人写的，所以这里给具体版。认真用过之后我能说的是：Sparkpage 这个理念对调研型工作真有用；就我的体验，多模型方案比单模型工具输出更可靠；以及信用体系在「每次操作花多少」上需要更高的透明度——我开始用时如此，现在仍然如此。
 
-![5.png](/zh/blog/images/genspark-super-agent-explained/1779673431655-693b179e-e7d1-4c95-af7e-f78b5a6c178b.webp)
+![5.png](/blog/images/genspark-super-agent-explained/1779673431655-693b179e-e7d1-4c95-af7e-f78b5a6c178b.webp)
 
 ## 8. 结论
 

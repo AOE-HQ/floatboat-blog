@@ -44,7 +44,7 @@ draft: false
 
 关于这张表，有两个诚实的提醒。第一，行分的是场景，不是文件类型：一份只有你自己会读的「报告」，不管标题写什么，它都是内部笔记——按「接下来发生什么」分类，别按文档自称什么分类。第二，边界情况是存在的——一份客户读一次、然后团队改一个季度的评审，就同时是两种活——第 6 节的四问框架就是处理这些的。表给你默认答案；问题给你例外情况。
 
-![2.PNG](/zh/blog/images/html-vs-markdown-ai-output/1779257703236-364222d3-afd9-45e9-944c-5987e5d1d98b.webp)
+![2.PNG](/blog/images/html-vs-markdown-ai-output/1779257703236-364222d3-afd9-45e9-944c-5987e5d1d98b.webp)
 
 ## 3. Markdown 依然赢的地方：可编辑、进版本管理、给机器读
 
@@ -74,7 +74,7 @@ Agent 输出的另一半干的是另一种活：有人得查看、对比或交�
 
 这一节的规律与第 3 节镜像：输出要被人阅读、对比、据其行动时，HTML 配得上那份额外的重量。
 
-![3.PNG](/zh/blog/images/html-vs-markdown-ai-output/1779257716630-6dd7dde5-eee0-4078-81c7-941064b412e0.webp)
+![3.PNG](/blog/images/html-vs-markdown-ai-output/1779257716630-6dd7dde5-eee0-4078-81c7-941064b412e0.webp)
 
 ## 5. Token 成本与维护：方向比倍数更重要
 
@@ -106,9 +106,9 @@ Agent 输出的另一半干的是另一种活：有人得查看、对比或交�
 
 这条混合规则也顺带说明了工具该长什么样。一个两种格式并排存在的工作区——比如 Floatboat 的桌面端和免费网页工具，在同一个文件树里渲染 Markdown、处理 HTML 成果物，草稿和交付物之间没有导出仪式——恰好对应这个选择在现实中的运行方式：按活选，不按人选。周一的内部笔记和周四的客户报告，不再是一个工具决策，而是变回它本来的样子：一个格式决策。任何强迫你对某一种格式宣誓效忠的工具，都在为你本不必做的决定收费。
 
-![4.png](/zh/blog/images/html-vs-markdown-ai-output/1779257727850-b81e9a55-b5e0-455f-b979-9c3e45cc7d9d.webp)
+![4.png](/blog/images/html-vs-markdown-ai-output/1779257727850-b81e9a55-b5e0-455f-b979-9c3e45cc7d9d.webp)
 
-![5.png](/zh/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.webp)
+![5.png](/blog/images/html-vs-markdown-ai-output/1779257740440-440c9851-0720-4acb-be05-718956e916e1.webp)
 
 ## 7. 结论
 

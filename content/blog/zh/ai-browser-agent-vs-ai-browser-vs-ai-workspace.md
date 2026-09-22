@@ -18,7 +18,7 @@ draft: false
 
 但每个品类背后的**设计前提**有本质差异——正是这个前提，决定了它会在哪里出问题、能扩展到什么规模、究竟为谁而做。再往下挖一层也是同一回事：工具是等你的指令，还是自己规划下一步，这条[AI 助手与 AI Agent 的分界](/zh/blog/ai-agent-vs-ai-assistant)横穿这三个品类。
 
-![float2.PNG](/zh/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562043793-f2deaeec-107e-47b2-bf45-36b7485509ed.webp)
+![float2.PNG](/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562043793-f2deaeec-107e-47b2-bf45-36b7485509ed.webp)
 
 ## 类别 1：浏览器 Agent 扩展
 
@@ -36,7 +36,7 @@ draft: false
 
 如果你一天的大部分时间都泡在已经登录的网页应用里，这一类工具正好在你所在的地方接住你。
 
-![float3.PNG](/zh/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562052406-4e029276-c72e-4b1c-b2f7-e1e0727a6ae5.webp)
+![float3.PNG](/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562052406-4e029276-c72e-4b1c-b2f7-e1e0727a6ae5.webp)
 
 ### 短板在哪
 
@@ -58,7 +58,7 @@ draft: false
 
 三者都基于 Chromium，所以 Chrome 扩展大多能直接沿用。但 AI 层深入的程度是任何扩展都够不着的——它住在地址栏里，能读取跨标签页的上下文，并在会话之间维持持久记忆。
 
-![float4.png](/zh/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562061786-5f701673-f4b7-4630-8c95-c95cc7d80764.webp)
+![float4.png](/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562061786-5f701673-f4b7-4630-8c95-c95cc7d80764.webp)
 
 ### 适用场景
 
@@ -98,7 +98,7 @@ Comet 的页内助手做内容调研确实好用。Dia 的「Skills」体系允�
 
 而且桌面工作区天然绑在某一台机器上。如果你在笔记本和台式机之间切换，或有时用手机干活，「所有东西都在一个地方」这个前提就会变得复杂。
 
-![float5.png](/zh/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562070592-c70787d2-d112-4a1a-be89-a8aea5a944fc.webp)
+![float5.png](/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562070592-c70787d2-d112-4a1a-be89-a8aea5a944fc.webp)
 
 ## 横向对比：覆盖范围、上下文与控制力
 
@@ -138,7 +138,7 @@ SaaS 后台的活交给扩展，再加一个 AI 浏览器做调研；或者跨�
 
 **重度使用下的定价透明。**浏览器 Agent 工作比普通 AI 对话更烧使用额度，而多数[定价页面](https://www.anthropic.com/pricing)不会在一开始就讲清楚这一点。
 
-![float6.png](/zh/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562080116-08fedd13-1d7a-40c3-99a9-242273ee23ed.webp)
+![float6.png](/blog/images/ai-browser-agent-vs-ai-browser-vs-ai-workspace/1778562080116-08fedd13-1d7a-40c3-99a9-242273ee23ed.webp)
 
 以上是我对这三个品类现状的诚实看法。界线还会继续模糊下去——OpenAI 已经宣布要把 Atlas、Codex 和 ChatGPT 合并成一个应用。但结构性的差异是真实的，把正确的品类对上你真实的工作日，能省下大量试错成本。
 

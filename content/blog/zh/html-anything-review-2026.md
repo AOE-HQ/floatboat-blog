@@ -26,7 +26,7 @@ html-anything 是 [GitHub 上的 nexu-io 团队](https://github.com/nexu-io/html
 
 好，这有点意思。让我挖一挖它实际是怎么工作的。
 
-![2.PNG](/zh/blog/images/html-anything-review-2026/1779257398214-9c46c2c6-4145-4be9-a479-0ab97da685ff.webp)
+![2.PNG](/blog/images/html-anything-review-2026/1779257398214-9c46c2c6-4145-4be9-a479-0ab97da685ff.webp)
 
 ## 它怎么把 HTML 争论变成工具
 
@@ -42,7 +42,7 @@ html-anything 是 [GitHub 上的 nexu-io 团队](https://github.com/nexu-io/html
 
 我自己没测过每一条导出路径。我只能就文档所示和仓库结构所证来谈。模板库确实庞大——我点开过相当一部分技能，它们都是真的，不是占位文件。
 
-![3.PNG](/zh/blog/images/html-anything-review-2026/1779257413581-d6224eaf-7338-4f72-acb9-884c7a933e98.webp)
+![3.PNG](/blog/images/html-anything-review-2026/1779257413581-d6224eaf-7338-4f72-acb9-884c7a933e98.webp)
 
 ## 对单人创业者来说，什么真的很好用
 
@@ -58,7 +58,7 @@ html-anything 是 [GitHub 上的 nexu-io 团队](https://github.com/nexu-io/html
 
 哦，还有 Hyperframes 功能——通过 [Remotion 的渲染框架](https://www.remotion.dev/docs/)把 HTML 转成 MP4——值得知道一下。它是一条额外的渲染管线，我没试过，但「不离开工作流就把一段排好版的 HTML 变成视频片段」这个思路，是那种会让你脱口而出「等等，它连这个都能做？」的东西。
 
-![4.png](/zh/blog/images/html-anything-review-2026/1779257425395-df0bf7d0-87d1-4f0b-9435-38cfe7894835.webp)
+![4.png](/blog/images/html-anything-review-2026/1779257425395-df0bf7d0-87d1-4f0b-9435-38cfe7894835.webp)
 
 ## html-anything 哪些地方可能太技术
 
@@ -86,6 +86,6 @@ html-anything 是 [GitHub 上的 nexu-io 团队](https://github.com/nexu-io/html
 
 如果答案还不明显，就再等等。这项目动得很快，三个月后能用的东西可能就不一样了。先把[仓库](https://github.com/nexu-io/html-anything)收藏起来，准备好了再回来看。
 
-![5.png](/zh/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.webp)
+![5.png](/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.webp)
 
 以上就是我的诚实看法。工具还很早，概念是扎实的，真正的问题是它能不能嵌进你的工作流——而不是它背后的想法重不重要。它重要。接着回去搭东西了。

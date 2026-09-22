@@ -24,7 +24,7 @@ draft: false
 
 这个品类周边的数据已经让人没法无视。[单人创始的初创公司占比从 2019 年的 23.7% 跳到 2025 年年中的 36.3%](https://entrepreneurloop.com/ai-tools-to-scale-solo-business/)，而近几年美国注册的新企业里，多数是没有雇员的主体。所以这不再是边缘模式——它已经是当下大量工作被组织起来的方式。可工具，仍然大多是为团队设计的。
 
-![2.PNG](/zh/blog/images/workspace-agents-for-solo-operators/1777428173310-7b5fd1f2-256f-4ae9-ae61-30ec52fe5316.webp)
+![2.PNG](/blog/images/workspace-agents-for-solo-operators/1777428173310-7b5fd1f2-256f-4ae9-ae61-30ec52fe5316.webp)
 
 ### 为什么现有 AI 工具栈在这里触顶
 
@@ -48,7 +48,7 @@ draft: false
 
 有些工具推出了持久记忆功能，但实现仍参差不齐——多数把记忆压成几千 token 的摘要，[而不是你真实工作方式的完整颗粒度](https://www.jenova.ai/en/resources/ai-chat-with-memory)。我在一个聊天会话里投入许多小时、看着它产出我真喜欢的东西，然后开一个新会话、同一个问题得到的却是泛泛的回复。_老实说？那个落差，正是单人经营者感到最失望的地方。_不是模型笨，而是关于你具体运营的一切，什么都不会留存。
 
-![3.PNG](/zh/blog/images/workspace-agents-for-solo-operators/1777428186112-2d4d23d5-4206-474e-8316-d55b7b5e4726.webp)
+![3.PNG](/blog/images/workspace-agents-for-solo-operators/1777428186112-2d4d23d5-4206-474e-8316-d55b7b5e4726.webp)
 
 ## 为什么工作流搭建器同样没打中
 
@@ -74,7 +74,7 @@ draft: false
 
 对单人经营者，日常摩擦的大部分就住在这里。**当一人公司的代价，是不断把你自己的大脑重新装载进你打开的任何工具里。**一个能托住这份「已装载状态」的工作区，是有分量的解锁。
 
-![4.png](/zh/blog/images/workspace-agents-for-solo-operators/1777428202705-5c36983c-9e91-4a06-8312-69ae8ca7113b.webp)
+![4.png](/blog/images/workspace-agents-for-solo-operators/1777428202705-5c36983c-9e91-4a06-8312-69ae8ca7113b.webp)
 
 ### 可复用的执行，而不是重复的提示
 
@@ -98,7 +98,7 @@ draft: false
 
 我看过单人创始人试图把错误的那一层——判断层——外包出去，结果产出的东西技术上高效、战略上跑偏。_那是我见过最多的失败模式。_
 
-![5.png](/zh/blog/images/workspace-agents-for-solo-operators/1777428222221-bcca48e5-1c22-4759-8d95-fc8e7e04b4d8.webp)
+![5.png](/blog/images/workspace-agents-for-solo-operators/1777428222221-bcca48e5-1c22-4759-8d95-fc8e7e04b4d8.webp)
 
 ### 它不会修复一个定义不清的业务
 

@@ -34,7 +34,7 @@ draft: false
 
 最气人的是这段时间不产生任何东西。没有产出、没有进展——只是在重新建立一个 AI 本来就该有的基线。对单人创业者来说，那一小时就是「今天交付点东西」和「又推到明天」之间的差别。而且计时器还低估了损失——[AI 每轮会话到底丢了什么](/zh/blog/why-ai-forgets-every-session)，往往不是无关紧要的细节，而是已经拍板的决策和你磨合了很久的标准。
 
-![22.PNG](/zh/blog/images/why-ai-forgets-between-sessions/1775794270856-268c9e7f-9d36-424d-8994-a5f030624566.webp)
+![22.PNG](/blog/images/why-ai-forgets-between-sessions/1775794270856-268c9e7f-9d36-424d-8994-a5f030624566.webp)
 
 ## 为什么一个人同时干五份活时，这个问题更严重
 
@@ -64,7 +64,7 @@ draft: false
 
 嗯。把它这么写出来，大多数 AI 配置为什么让人感觉不完整，就非常清楚了。它们在解决第一个问题，却忽略了第二和第三个。
 
-![33.png](/zh/blog/images/why-ai-forgets-between-sessions/1775794284806-db0bfaed-2c66-4d67-ab2c-a6621ee14e45.webp)
+![33.png](/blog/images/why-ai-forgets-between-sessions/1775794284806-db0bfaed-2c66-4d67-ab2c-a6621ee14e45.webp)
 
 ## 谁从无状态 AI 中损失最大
 
@@ -94,7 +94,7 @@ draft: false
 
 在说出对具体工具的结论之前，我想再多推敲一下。但方向很清晰：面向单人创业者的下一代 AI，不会只是更聪明的模型，而是**能与你的工作保持连续性的模型** ——而那将改变它们实际有用程度的一切。
 
-![44.png](/zh/blog/images/why-ai-forgets-between-sessions/1775794296570-c8e7ad18-0d3f-4b42-b3cb-32057456fef7.webp)
+![44.png](/blog/images/why-ai-forgets-between-sessions/1775794296570-c8e7ad18-0d3f-4b42-b3cb-32057456fef7.webp)
 
 目前我的思考就是这样。从无状态聊天机器人到持久 AI 环境的转变正在发生，只是缓慢。如果你在独自经营、并且觉得你的 AI 工具在逼你不断重复自己——那不是你的问题，是架构的问题。而我认为，这正是这个品类最需要被解决的一个摩擦点。
 

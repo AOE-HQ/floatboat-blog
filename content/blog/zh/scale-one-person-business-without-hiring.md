@@ -34,7 +34,7 @@ draft: false
 
 实际差别体现在你周二的下午怎么过：你是在做一件第一次做的事——即兴发挥、边做边学？还是在跑一套你已经建好并打磨过的流程？后者能放大，前者不能。
 
-![2.PNG](/zh/blog/images/scale-one-person-business-without-hiring/1776232782029-f09d0d62-65f2-4f60-a80d-d729144dca5f.webp)
+![2.PNG](/blog/images/scale-one-person-business-without-hiring/1776232782029-f09d0d62-65f2-4f60-a80d-d729144dca5f.webp)
 
 ## 单人创业者真正能用的三根杠杆
 
@@ -72,7 +72,7 @@ draft: false
 
 这也是工具真正能帮上忙的地方——不是替你做思考，而是降低你在已做过的工作上「重新进入」的成本。
 
-![3.png](/zh/blog/images/scale-one-person-business-without-hiring/1776232793191-329039fc-fd60-4f6b-9c28-3f7e6c3dff2a.webp)
+![3.png](/blog/images/scale-one-person-business-without-hiring/1776232793191-329039fc-fd60-4f6b-9c28-3f7e6c3dff2a.webp)
 
 ## AI 在这张图里处于什么位置
 
@@ -86,7 +86,7 @@ AI 对杠杆一（执行系统）和杠杆三的部分内容（上下文延续�
 
 AI 对一人公司作用的诚实版本是：它压缩了跑杠杆一系统所需的时间，但不能替代「把系统建出来」这件事。
 
-![4.png](/zh/blog/images/scale-one-person-business-without-hiring/1776232802794-c4b28dc1-89dd-4e52-9e4c-f89daabbc868.webp)
+![4.png](/blog/images/scale-one-person-business-without-hiring/1776232802794-c4b28dc1-89dd-4e52-9e4c-f89daabbc868.webp)
 
 ## 你确实需要帮忙的信号（以及需要哪种）
 
@@ -110,7 +110,7 @@ AI 对一人公司作用的诚实版本是：它压缩了跑杠杆一系统所�
 
 这话听着不舒服，但对我很有用。
 
-![5.png](/zh/blog/images/scale-one-person-business-without-hiring/1776232813446-838fdbd1-7411-45dd-850c-6a9cb4906723.webp)
+![5.png](/blog/images/scale-one-person-business-without-hiring/1776232813446-838fdbd1-7411-45dd-850c-6a9cb4906723.webp)
 
 反正，这就是我目前的看法。
 

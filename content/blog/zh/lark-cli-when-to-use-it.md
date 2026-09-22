@@ -16,7 +16,7 @@ draft: false
 
 这不是一篇教程。我不会带你走安装步骤——[官方 Lark CLI 文档](https://open.larksuite.com/document/mcp_open_tools/feishu-cli-let-ai-actually-do-your-work-in-feishu)讲得比我清楚。我要做的是分享我在判断 **Lark CLI** 到底值不值得拿来搭东西时——尤其当你单打独斗时——真正学到的东西。
 
-![2.png](/zh/blog/images/lark-cli-when-to-use-it/1774843305912-9bb85990-5ad4-4c3b-a3e1-d76e5a6a8abe.webp)
+![2.png](/blog/images/lark-cli-when-to-use-it/1774843305912-9bb85990-5ad4-4c3b-a3e1-d76e5a6a8abe.webp)
 
 ## TL;DR
 
@@ -70,7 +70,7 @@ Lark CLI 是面向 Lark/飞书开放平台的命令行工具，覆盖 Messenger�
 
 这些没有一样是过不去的坎。但它不止「一个下午的设置」，而且其中每一步，都是非开发者会直接停下来的地方。
 
-![3.png](/zh/blog/images/lark-cli-when-to-use-it/1774843317226-3917604d-1067-441e-9e5c-912f9cc48070.webp)
+![3.png](/blog/images/lark-cli-when-to-use-it/1774843317226-3917604d-1067-441e-9e5c-912f9cc48070.webp)
 
 ## 3. 用 Lark CLI 搭东西的真实成本
 
@@ -98,7 +98,7 @@ Lark CLI 是面向 Lark/飞书开放平台的命令行工具，覆盖 Messenger�
 
 这不是假设。这是任何「一个人搭、一个人维护」的定制集成的宿命。bus factor 是 1。那个人就是你。
 
-![4.png](/zh/blog/images/lark-cli-when-to-use-it/1774843329012-37f7a2b1-5de5-4ddc-8b22-ae1403fa1f58.webp)
+![4.png](/blog/images/lark-cli-when-to-use-it/1774843329012-37f7a2b1-5de5-4ddc-8b22-ae1403fa1f58.webp)
 
 ## 4. 什么时候 Lark CLI 值得用
 
@@ -142,7 +142,7 @@ Lark CLI 是面向 Lark/飞书开放平台的命令行工具，覆盖 Messenger�
 
 真正的问题不是「我能搭出来吗？」——你多半能。而是**「在我没时间修它的那一周，会发生什么？」**
 
-![5.png](/zh/blog/images/lark-cli-when-to-use-it/1774843340728-2cfa780f-2b70-4853-98f5-cc9d08c50936.webp)
+![5.png](/blog/images/lark-cli-when-to-use-it/1774843340728-2cfa780f-2b70-4853-98f5-cc9d08c50936.webp)
 
 ## 7. 如果你是单人运作，该怎么做
 
