@@ -182,7 +182,7 @@ The desktop notes are explicit about **computer control** — screen perception,
 
 ### 5.4 Floatboat: The Calendar-Driven Option for International and Independent Users
 
-Floatboat isn't "yet another chat agent inside Feishu/DingTalk." It's a **Calendar-Driven Agent OS**: your calendar is the agent's runtime, so meetings, deadlines, and recurring tasks automatically trigger preparation and execution — a brief before a meeting, a draft before a deadline, a follow-up after. For the category definition, see the [agentic calendar category](/blog/what-is-agentic-calendar).
+Floatboat isn't "yet another chat agent inside Feishu/DingTalk." It's a **Calendar-Driven Agent OS**: your calendar is the agent's runtime, so meetings, deadlines, and recurring tasks automatically trigger preparation and execution — a brief before a meeting, a draft before a deadline, a follow-up after. For the category definition, see the agentic calendar category.
 
 Compared with the "user assigns a task, the agent goes and does it" model of Doubao Work and its peers, Floatboat differs in:
 
@@ -224,4 +224,4 @@ Doubao Work's logic can be compressed into two sentences: **give the people who 
 
 It became a standalone product not because the features couldn't be built, but because four separate logics — **chat, office, enterprise governance, and industry competition** — can no longer fit inside one entry point. Seed pushes model capability toward cross-tool delivery; Feishu turns organizational context into an agent moat; WorkBuddy and Qwen Office occupy their IM niches in mainland China; Floatboat and peers hold the **calendar-driven** niche internationally.
 
-What actually decides success isn't whether the deck gets generated — plenty of products can do that — but **whether the agent can deliver reliably inside real permission boundaries without causing trouble**. If your bigger question is "who's going to run the before-and-after work on my calendar automatically," keep reading about [agentic calendar systems](/blog/what-is-agentic-calendar); if it's "I want an agent colleague inside Feishu," the Doubao Work team edition is the product to compare against.
+What actually decides success isn't whether the deck gets generated — plenty of products can do that — but **whether the agent can deliver reliably inside real permission boundaries without causing trouble**. If your bigger question is "who's going to run the before-and-after work on my calendar automatically," keep reading about agentic calendar systems; if it's "I want an agent colleague inside Feishu," the Doubao Work team edition is the product to compare against.

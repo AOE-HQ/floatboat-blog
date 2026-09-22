@@ -182,7 +182,7 @@ Seed 官方说明同时提到豆包办公任务模式与 TRAE Work / TRAE IDE �
 
 ### 5.4 Floatboat：Calendar-Driven 路线的海外/独立创业者选项
 
-Floatboat 不是「又一款飞书/钉钉里的聊天 Agent」，而是**Calendar-Driven Agent OS**：把日历当作 Agent 的运行时，会议、截止日和例行任务自动触发准备与执行——会前 brief、截止日前 draft、会后 follow-up，而不必每次手动 prompt。品类定义见 [agentic calendar 品类说明](/zh/blog/what-is-agentic-calendar)。
+Floatboat 不是「又一款飞书/钉钉里的聊天 Agent」，而是**Calendar-Driven Agent OS**：把日历当作 Agent 的运行时，会议、截止日和例行任务自动触发准备与执行——会前 brief、截止日前 draft、会后 follow-up，而不必每次手动 prompt。品类定义见 agentic calendar 品类说明。
 
 与豆包工作等「用户下达任务、Agent 去干活」的模式相比，Floatboat 的差异在于：
 
@@ -224,4 +224,4 @@ Floatboat 不是「又一款飞书/钉钉里的聊天 Agent」，而是**Calenda
 
 它之所以单独成产品，不是因为功能做不出来，而是因为**聊天、办公、企业治理、行业竞争**四套逻辑已经无法塞进同一个入口。Seed 把模型能力推向「跨工具交付」；飞书把组织上下文变成 Agent 的护城河；WorkBuddy、千问办公在国内占 IM 生态位；Floatboat 等则在海外与独立用户侧占**日历驱动**位。
 
-真正决定成败的，不是 PPT 能不能生成——多家都能——而是**在真实权限里能不能稳定交付、少闯祸**。若你更关心「日程上的会前会后谁来自动跑」，可继续读 [agentic calendar 体系](/zh/blog/what-is-agentic-calendar)；若你更关心「飞书里的 Agent 同事」，豆包工作团队版才是对位产品。
+真正决定成败的，不是 PPT 能不能生成——多家都能——而是**在真实权限里能不能稳定交付、少闯祸**。若你更关心「日程上的会前会后谁来自动跑」，可继续读 agentic calendar 体系；若你更关心「飞书里的 Agent 同事」，豆包工作团队版才是对位产品。
