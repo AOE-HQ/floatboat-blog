@@ -113,7 +113,7 @@ Every editor above is a single-player instrument, and that is design, not omissi
 
 Two environments are the honest exceptions. Docs-as-code teams collaborate through Git rather than through the editor: VS Code is where the writing happens, pull requests are where the reviewing happens, and CI publishes — slower than Google Docs, vastly better for a thousand-page documentation set that needs versioning and review history. For genuinely simultaneous editing of one file, browser-native tools such as HedgeDoc-style pads or Google Docs with Markdown round-trips remain the right instrument, and the plain files move back into an installed editor once a document graduates from meeting scratchpad to maintained reference.
 
-The pattern that works for small teams is unglamorous. Keep the [note-taking workflow in Markdown](/blog/markdown-for-note-taking) single-owner, link generously instead of duplicating, and treat a shared vault as a library rather than a whiteboard. Teams that need to brainstorm together should brainstorm in a multiplayer tool and let one person file the outcome as a note. Fighting the file system on this point is how teams end up with `Q3-plan-final-final-2.md`.
+The pattern that works for small teams is unglamorous. Keep the note-taking workflow in Markdown single-owner, link generously instead of duplicating, and treat a shared vault as a library rather than a whiteboard. Teams that need to brainstorm together should brainstorm in a multiplayer tool and let one person file the outcome as a note. Fighting the file system on this point is how teams end up with `Q3-plan-final-final-2.md`.
 
 ## 10. The Browser Layer — Viewing and Converting Without Installing
 
