@@ -6,8 +6,6 @@ import type { PopupCopy } from "@/lib/popup-data";
 
 type PopupLocale = "en" | "zh";
 
-const SCROLL_THRESHOLD = 0.3;
-const DWELL_MS = 8_000;
 const DISMISS_SILENCE_MS = 3 * 24 * 60 * 60 * 1000;
 const CONVERT_SILENCE_MS = 30 * 24 * 60 * 60 * 1000;
 const DOWNLOAD_URL = "https://floatboat.ai/download";
@@ -119,43 +117,11 @@ export function BlogCtaPopup({
 }) {
   const [visible, setVisible] = useState(false);
   const [now, setNow] = useState(() => Date.now());
-  const shownRef = useRef(false);
 
   useEffect(() => {
     if (readSilence()) return;
-
-    let dwell = false;
-    let depth = false;
-
-    const maybeShow = () => {
-      if (dwell && depth && !shownRef.current) {
-        shownRef.current = true;
-        window.removeEventListener("scroll", onScroll);
-        window.clearTimeout(timer);
-        setVisible(true);
-        sendPopupEvent("cta_popup_view");
-      }
-    };
-
-    const onScroll = () => {
-      const doc = document.documentElement;
-      const scrollable = doc.scrollHeight - window.innerHeight;
-      depth =
-        scrollable <= 0 || window.scrollY / scrollable >= SCROLL_THRESHOLD;
-      maybeShow();
-    };
-
-    const timer = window.setTimeout(() => {
-      dwell = true;
-      maybeShow();
-    }, DWELL_MS);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.clearTimeout(timer);
-    };
+    setVisible(true);
+    sendPopupEvent("cta_popup_view");
   }, []);
 
   useEffect(() => {
