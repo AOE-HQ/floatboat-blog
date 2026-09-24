@@ -17,7 +17,7 @@ const STORAGE_DISMISSED = "fb_cta_popup_dismissed_at";
 const STORAGE_CONVERTED = "fb_cta_popup_converted_at";
 
 /* 活动截止时间：改活动档期时只动这一行（过期后倒计时条自动隐藏） */
-const COUNTDOWN_ENDS_AT = "2026-12-31T23:59:59+08:00";
+const COUNTDOWN_ENDS_AT = "2026-09-25T16:24:15+08:00";
 
 const CLOSE_LABEL: Record<PopupLocale, string> = {
   en: "Close",
