@@ -8,7 +8,8 @@ type PopupLocale = "en" | "zh";
 
 const DISMISS_SILENCE_MS = 3 * 24 * 60 * 60 * 1000;
 const CONVERT_SILENCE_MS = 30 * 24 * 60 * 60 * 1000;
-const DOWNLOAD_URL = "https://floatboat.ai/download";
+const PRICING_URL =
+  "https://floatboat.ai/pricing?entry=harness-offer&utm_source=blog&utm_medium=cta-popup";
 const EVENT_ENDPOINT =
   process.env.NEXT_PUBLIC_ATTRIBUTION_WEB_EVENT_URL ??
   "https://floatboat.ai/api/analytics/events";
@@ -210,7 +211,7 @@ export function BlogCtaPopup({
         <p className="mt-4 text-sm leading-6 text-gray-600">{copy.body}</p>
 
         <a
-          href={DOWNLOAD_URL}
+          href={PRICING_URL}
           target="_blank"
           rel="nofollow noopener noreferrer"
           data-placement="blog_cta_popup"

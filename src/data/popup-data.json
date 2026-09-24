@@ -1279,6 +1279,346 @@
         "title": "104 场比赛按你时区排好",
         "body": "6 月 11 日到 7 月 19 日、16 座城市，赛程表自动同步。"
       }
+    },
+    "ai-file-organizer-mac": {
+      "en": {
+        "title": "AI file organizers on Mac — what to check before you run one",
+        "body": "Permissions, local processing, and what organized should mean — five checks before an organizer touches your Mac."
+      },
+      "zh": {
+        "title": "Mac 上的 AI 文件整理，运行前先查五件事",
+        "body": "权限、本地处理、什么才算「整理好了」——让整理器碰你的 Mac 前先过这五项。"
+      }
+    },
+    "ai-file-organizer-windows": {
+      "en": {
+        "title": "AI file organizers that run offline on Windows",
+        "body": "Local processing keeps files on your disk. Which Windows tools actually deliver it — and what they still miss."
+      },
+      "zh": {
+        "title": "Windows 上能离线跑的 AI 文件整理",
+        "body": "哪些 Windows 整理工具真正离线工作，还缺什么——一篇讲清。"
+      }
+    },
+    "batch-convert-markdown-files": {
+      "en": {
+        "title": "Batch convert Markdown files — when one file becomes a folder",
+        "body": "Thirty files or three thousand: the route that fits changes with scale. Scripts, converters, and agents compared."
+      },
+      "zh": {
+        "title": "一个文件夹的 Markdown 怎么批量转",
+        "body": "三十篇、三百篇、三千篇，路线完全不同——先选对路线再动手。"
+      }
+    },
+    "best-ai-file-organizer": {
+      "en": {
+        "title": "The best AI file organizers, ranked by what they actually do",
+        "body": "Content understanding, privacy, and platform fit — the ranking criteria most roundups skip."
+      },
+      "zh": {
+        "title": "按真实能力排名的 AI 文件整理器",
+        "body": "内容理解、隐私边界、平台适配——多数榜单跳过的排名维度都在这里。"
+      }
+    },
+    "best-ai-file-renamer": {
+      "en": {
+        "title": "The best AI file renamers, ranked by real renaming power",
+        "body": "Renaming is where AI file tools earn or lose their keep — see which ones handle real naming conventions."
+      },
+      "zh": {
+        "title": "按重命名实力排名的 AI 改名工具",
+        "body": "改名是 AI 文件工具的照妖镜——谁能真正读懂你的命名规范，一篇看全。"
+      }
+    },
+    "best-markdown-editors": {
+      "en": {
+        "title": "The best Markdown editors in 2026, ranked by workflow",
+        "body": "Six editors across four workflows — pick by the job your files do, not the feature list."
+      },
+      "zh": {
+        "title": "2026 年最好用的 Markdown 编辑器",
+        "body": "六个编辑器按工作流排名——选编辑器是在选你文件的工作方式。"
+      }
+    },
+    "best-voice-dictation-for-ai-agents": {
+      "en": {
+        "title": "The best voice dictation tools for AI agent work",
+        "body": "Dictation ranked by job shape — capture, commands, or drafting. Match the tool to what you say."
+      },
+      "zh": {
+        "title": "AI Agent 工作流里最好用的语音听写",
+        "body": "按任务形态排名的听写工具——捕获、指令还是起草，各有各的对位。"
+      }
+    },
+    "chatgpt-voice-mode-vs-dictation": {
+      "en": {
+        "title": "ChatGPT Voice Mode vs dictation — when to talk or type",
+        "body": "Talking to a model and dictating work are different jobs. The line between them, drawn from daily use."
+      },
+      "zh": {
+        "title": "ChatGPT 语音模式 vs 听写：何时说、何时写",
+        "body": "和模型对话、把工作口述成稿是两件事——边界画在日常使用里。"
+      }
+    },
+    "clean-up-downloads-folder-with-ai": {
+      "en": {
+        "title": "Your Downloads folder, cleaned by AI the safe way",
+        "body": "A safe cleanup order for the messiest folder on your disk — what to move, what to keep, what AI drafts."
+      },
+      "zh": {
+        "title": "用 AI 安全清理下载文件夹",
+        "body": "先移什么、后删什么、哪些交给 AI 起草——一份不会误删的清理顺序。"
+      }
+    },
+    "convert-html-to-markdown": {
+      "en": {
+        "title": "Convert HTML back to clean Markdown",
+        "body": "Web pages and AI chats carry clean text under the markup — a reliable way to strip it out."
+      },
+      "zh": {
+        "title": "把 HTML 转回干净的 Markdown",
+        "body": "网页与 AI 聊天记录里都有干净的文本——一条可靠的剥离路径。"
+      }
+    },
+    "do-ai-file-organizers-upload-your-files": {
+      "en": {
+        "title": "Does that AI file organizer upload your files?",
+        "body": "An honest answer about local vs cloud processing — and the one question to ask before granting folder access."
+      },
+      "zh": {
+        "title": "AI 文件整理器会把文件上传吗？",
+        "body": "本地处理与云端处理的真实边界——授权文件夹访问前先问这一个。"
+      }
+    },
+    "file-organizer-vs-file-renamer-vs-file-sorter": {
+      "en": {
+        "title": "File organizer, sorter, or renamer — which to buy",
+        "body": "Three tools that look alike and do different jobs. The buy decision, by what your folder actually needs."
+      },
+      "zh": {
+        "title": "文件整理器、排序器还是改名器？",
+        "body": "长得像、干的活不同——按你文件夹的真实需求做购买决定。"
+      }
+    },
+    "how-to-convert-markdown-to-pdf": {
+      "en": {
+        "title": "Markdown to PDF, three ways ranked by friction",
+        "body": "Browser, Pandoc, or built-in export — pick the route that matches how often you convert."
+      },
+      "zh": {
+        "title": "Markdown 转 PDF 的三条路",
+        "body": "浏览器、Pandoc、编辑器导出——按你的转换频率选路线。"
+      }
+    },
+    "kimi-k3-open-frontier-model": {
+      "en": {
+        "title": "Kimi K3 — a 2.8T open model changes agentic coding",
+        "body": "What an open frontier model means for the tools you already run — and the coding workflows it unlocks."
+      },
+      "zh": {
+        "title": "Kimi K3：2.8T 开源模型改变 Agentic Coding",
+        "body": "开源旗舰模型对你手头工具链意味着什么——以及它解锁的编码工作流。"
+      }
+    },
+    "markdown-cheat-sheet": {
+      "en": {
+        "title": "A Markdown cheat sheet you'll actually use",
+        "body": "Core syntax plus the GFM extensions that render everywhere — copy, paste, and keep the escapes handy."
+      },
+      "zh": {
+        "title": "一份真正会用的 Markdown 速查表",
+        "body": "核心语法与 GFM 扩展，可直接复制——转义与嵌套的坑也都标好了。"
+      }
+    },
+    "markdown-documentation-site": {
+      "en": {
+        "title": "Docs-as-code without the toolchain migraines",
+        "body": "A folder of Markdown files becomes a versioned, searchable docs site — what to set up and what to skip."
+      },
+      "zh": {
+        "title": "不折腾工具链的 Markdown 文档站",
+        "body": "一个 Markdown 文件夹如何变成可搜索、可版本化的文档站——该建什么、该跳过什么。"
+      }
+    },
+    "markdown-for-ai-pipelines": {
+      "en": {
+        "title": "Why Markdown runs the AI pipeline",
+        "body": "Context in, contracts through, output out — the three roles Markdown plays in production AI systems."
+      },
+      "zh": {
+        "title": "为什么 AI 管线跑在 Markdown 上",
+        "body": "语境进、契约过、结果出——Markdown 在生产级 AI 系统里的三重角色。"
+      }
+    },
+    "markdown-for-note-taking": {
+      "en": {
+        "title": "A Markdown note-taking workflow that outlives any app",
+        "body": "Files, naming, headings, links — the habits that keep a note library readable for decades."
+      },
+      "zh": {
+        "title": "比任何应用都长寿的 Markdown 笔记流",
+        "body": "文件、命名、标题、互链——让笔记库十年后依然可读的四个习惯。"
+      }
+    },
+    "markdown-math-latex": {
+      "en": {
+        "title": "Math in Markdown — LaTeX that renders everywhere",
+        "body": "Dollar-sign LaTeX, renderer quirks, and the honest limits — for documents that are mostly text with formulas."
+      },
+      "zh": {
+        "title": "Markdown 里能渲染的 LaTeX 公式",
+        "body": "美元符号语法、渲染器差异与诚实的边界——适合以文字为主、夹带公式的文档。"
+      }
+    },
+    "markdown-resume": {
+      "en": {
+        "title": "The Markdown resume — one source, every format",
+        "body": "Maintain one source file and export PDF, Word, and web on demand. Git history included."
+      },
+      "zh": {
+        "title": "Markdown 简历——一份源文件，导出所有格式",
+        "body": "维护一份纯文本源文件，按需导出 PDF/Word/网页，git 历史免费附赠。"
+      }
+    },
+    "markdown-table-how-to": {
+      "en": {
+        "title": "Markdown tables — syntax, alignment, and the tricky parts",
+        "body": "Pipes, alignment colons, and escaping — plus the failure modes that break tables on real platforms."
+      },
+      "zh": {
+        "title": "Markdown 表格怎么做——语法、对齐与易错点",
+        "body": "管道、对齐冒号与转义——以及真实平台上会弄坏表格的失败模式。"
+      }
+    },
+    "markdown-to-slides": {
+      "en": {
+        "title": "Presentations from plain text — Markdown to slides",
+        "body": "An outline folds into a deck: Marp and Pandoc compared, exports explained, limits stated."
+      },
+      "zh": {
+        "title": "从纯文本到幻灯片——Markdown 做演示",
+        "body": "大纲折成卡片：Marp 与 Pandoc 对比、导出矩阵、诚实的边界。"
+      }
+    },
+    "markdown-viewer-online": {
+      "en": {
+        "title": "Read any .md file online — no install",
+        "body": "A browser viewer for READMEs, agent output, and attachments — with the privacy line drawn clearly."
+      },
+      "zh": {
+        "title": "在线查看任何 .md 文件",
+        "body": "README、agent 产物、邮件附件——浏览器里直接读，隐私边界画清楚。"
+      }
+    },
+    "mermaid-diagrams-in-markdown": {
+      "en": {
+        "title": "Flowcharts from plain text — Mermaid in Markdown",
+        "body": "Diagram types, syntax traps, and the AI workflow for writing charts — all inside code fences."
+      },
+      "zh": {
+        "title": "Markdown 里的 Mermaid 图表",
+        "body": "图表类型、语法陷阱与 AI 生成工作流——全部活在代码围栏里。"
+      }
+    },
+    "organize-receipts-and-invoices-with-ai": {
+      "en": {
+        "title": "Organize receipts and invoices with AI, tax-ready",
+        "body": "A filing template that survives tax season — what to capture, how to name, and where AI drafts."
+      },
+      "zh": {
+        "title": "用 AI 整理收据与发票，报税即用",
+        "body": "一套撑过报税季的归档模板——捕捉什么、如何命名、AI 起草哪部分。"
+      }
+    },
+    "vibe-coding-one-prompt-html-game": {
+      "en": {
+        "title": "Vibe coding a one-prompt HTML game",
+        "body": "One prompt, one playable browser game — what holds and what breaks when an agent builds it all."
+      },
+      "zh": {
+        "title": "一条提示词做出 HTML 小游戏",
+        "body": "一条提示词、一个浏览器可玩的游戏——agent 构建时哪里成立、哪里翻车。"
+      }
+    },
+    "voice-agent-vs-voice-dictation-for-work": {
+      "en": {
+        "title": "Voice agent or voice dictation — pick the right layer",
+        "body": "Two voice tools, two different jobs. The layer decision most voice content skips."
+      },
+      "zh": {
+        "title": "Voice Agent 还是语音听写——选对层",
+        "body": "两种语音工具、两种不同的活——多数内容跳过的分层决策。"
+      }
+    },
+    "voice-mode-vs-dictation-for-ai-agents": {
+      "en": {
+        "title": "Voice mode or dictation — which job shape fits?",
+        "body": "Talking to an agent and dictating text are different jobs. The shapes, mapped from real use."
+      },
+      "zh": {
+        "title": "语音模式还是听写——哪种任务形态适合你",
+        "body": "和 agent 对话、把文字口述成稿是两种活——从真实使用里画出边界。"
+      }
+    },
+    "what-is-a-voice-agent": {
+      "en": {
+        "title": "What is a voice agent? Definition, architecture, job shapes",
+        "body": "The category defined — architecture, job shapes, and where voice agents actually earn their keep."
+      },
+      "zh": {
+        "title": "什么是 Voice Agent？定义、架构与任务形态",
+        "body": "品类的完整定义——架构、任务形态，以及语音 agent 真正创造价值的场景。"
+      }
+    },
+    "what-is-an-ai-file-organizer": {
+      "en": {
+        "title": "What is an AI file organizer? Three forms, one data boundary",
+        "body": "Three forms of AI file organization — and the data boundary question to ask before granting access."
+      },
+      "zh": {
+        "title": "什么是 AI 文件整理器？三种形态一条边界",
+        "body": "AI 文件整理的三种形态——以及授权访问前该问的数据边界问题。"
+      }
+    },
+    "what-is-deepseek-harness": {
+      "en": {
+        "title": "DeepSeek Harness — the execution layer for agents",
+        "body": "The harness wave explained: what the execution layer does, and why vendors are shipping their own."
+      },
+      "zh": {
+        "title": "DeepSeek Harness——Agent 的执行层",
+        "body": "Harness 浪潮解析：执行层做什么，为什么厂商都开始自研。"
+      }
+    },
+    "what-is-jev-model": {
+      "en": {
+        "title": "Jev — the System One model that never generates text",
+        "body": "Typed probabilistic decisions instead of generated text — the model class built for classification and routing."
+      },
+      "zh": {
+        "title": "Jev——从不生成文本的 System One 模型",
+        "body": "用类型化概率决策替代文本生成——为分类与路由而生的模型品类。"
+      }
+    },
+    "what-is-markdown": {
+      "en": {
+        "title": "What is Markdown? The plain-text format behind AI output",
+        "body": "The 2004 syntax, the dialects, and why agents default to it — defined in one read."
+      },
+      "zh": {
+        "title": "什么是 Markdown？文档、笔记与 AI 输出背后的格式",
+        "body": "2004 年的语法、各方言分叉，以及为什么 agent 默认输出它——一次读完。"
+      }
+    },
+    "what-is-voice-dictation-for-ai-agents": {
+      "en": {
+        "title": "What is voice dictation for AI agents? Defined",
+        "body": "Dictation defined for the agent era — capture, commands, and drafting as three distinct jobs."
+      },
+      "zh": {
+        "title": "什么是面向 AI Agent 的语音听写？",
+        "body": "Agent 时代的听写定义——捕获、指令与起草是三种不同的活。"
+      }
     }
   }
 }
