@@ -2,8 +2,7 @@
 
 OpenBlog-powered bilingual blog module mirroring [floatboat.ai/blog](https://floatboat.ai/blog). Content lives in `content/blog/` as Markdown with YAML frontmatter.
 
-**OpenBlog source:** `E:\自有部署项目\openblog`
-**Strategy / client docs:** `e:\clients\floatboat\`
+This repository is self-contained for Blog content, routes, validation, build, and deployment. Product research, keyword strategy, weekly reporting, and internal planning are maintained outside this repository and are not required to build or publish it.
 
 ## Stack
 
@@ -66,6 +65,13 @@ progress in `scripts/data/floatboat_manifest.json`.
 
 Images: `public/blog/images/{slug}/` (shared by both locales).
 
+### Ownership
+
+- Published article copy, frontmatter, slug, locale, category, FAQ data, and images are maintained in this repository.
+- Current article inventory is derived from `content/blog/`; do not maintain a second manual inventory.
+- Link maps and audit reports generated from the corpus are reproducible outputs, not independent editorial sources.
+- Planning documents may propose work, but repository files and validation determine what is actually publishable.
+
 ## Routes
 
 | Path | Description |
@@ -93,3 +99,7 @@ See `integrations/DEPLOY.md`.
 - Site + chrome + theme: `openblog.config.ts`
 - Nav/footer fallbacks: `src/chrome/site-chrome.ts`
 - i18n: `src/config/i18n.ts`
+
+## Contribution Workflow
+
+Read [`AGENTS.md`](./AGENTS.md) before making changes. Work on a feature branch or isolated worktree, run checks appropriate to the changed files, and stop after the local commit unless the owner explicitly requests a PR. Merging to `main` deploys production.
