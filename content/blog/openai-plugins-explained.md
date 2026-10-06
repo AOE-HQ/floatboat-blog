@@ -20,7 +20,7 @@ draft: false
 
 ## These Are Not the ChatGPT Plugins of 2023
 
-OpenAI reused a familiar name for a substantially different product. The first ChatGPT plugins were mostly remote APIs described by a manifest: ChatGPT selected an endpoint, passed arguments, and returned the result in a conversation. The new platform treats a plugin as a packaged application that can work across ChatGPT and Codex, render its own interface, teach the agent how to use its tools, authenticate a user, respond to events, and be discovered through several surfaces.
+OpenAI reused a familiar name for a substantially different product. The first ChatGPT plugins were mostly remote APIs described by a manifest: ChatGPT selected an endpoint, passed arguments, and returned the result in a conversation. Introduced within the broader [OpenAI DevDay 2026 platform release](/blog/openai-devday-2026-announcements), the new platform treats a plugin as a packaged application that can work across ChatGPT and Codex, render its own interface, teach the agent how to use its tools, authenticate a user, respond to events, and be discovered through several surfaces.
 
 That makes “plugin” an application-layer term rather than a protocol. MCP supplies tools and data. Skills supply operating knowledge. Extensions supply interface surfaces. Authentication binds a person and their permissions. Packaging, review, and directory discovery turn those parts into something people can install and reuse.
 
@@ -109,4 +109,4 @@ OpenAI Plugins are becoming the application layer of ChatGPT and Codex. MCP give
 
 That combination is more ambitious than the plugin system ChatGPT launched with in 2023. It is also more demanding. The opportunity is to put a real product where people already work with AI. The cost is accepting a host platform, its review rules, and a larger security surface. The right plugin will be one whose workflow genuinely benefits from all of those layers—not an API wrapped in a new name.
 
-Sources: [OpenAI Plugins documentation](https://developers.openai.com/plugins), [Plugin Extensions](https://developers.openai.com/plugins/build/extensions), [MCP Events](https://developers.openai.com/plugins/build/mcp-events), and the [OpenAI DevDay 2026 recap](https://openai.com/index/devday-2026-recap/).
+This guide was verified against the [OpenAI Plugins documentation](https://developers.openai.com/plugins), [Plugin Extensions](https://developers.openai.com/plugins/build/extensions), [MCP Events](https://developers.openai.com/plugins/build/mcp-events), and the [OpenAI DevDay 2026 recap](https://openai.com/index/devday-2026-recap/).

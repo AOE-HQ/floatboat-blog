@@ -111,4 +111,4 @@ DevDay 2026 showed OpenAI moving beyond the model-and-chat era. Dots are the wor
 
 No single announcement completes that vision, and several pieces remain previews or staged rollouts. But the direction is clear: OpenAI wants to own the operating surface where people assign work, agents execute it, teams review it, and software reaches users.
 
-Primary source: [OpenAI DevDay 2026 official recap](https://openai.com/index/devday-2026-recap/). Availability and product details were checked against OpenAI's linked product and developer documentation on October 6, 2026.
+The release list follows the [OpenAI DevDay 2026 official recap](https://openai.com/index/devday-2026-recap/). Availability and product details were checked against OpenAI's linked product and developer documentation on October 6, 2026.

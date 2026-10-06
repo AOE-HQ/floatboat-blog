@@ -20,7 +20,7 @@ draft: false
 
 ## 这不是 2023 年的 ChatGPT Plugins
 
-OpenAI 沿用了旧名称，但产品已经变了。最早的 ChatGPT 插件大多是由 manifest 描述的远程 API：ChatGPT 选择接口、传递参数，再把结果写回对话。新版平台把 Plugin 当成可运行在 ChatGPT 与 Codex 中的完整应用。它可以渲染自己的界面、说明工具该怎么用、验证用户身份、响应外部事件，并通过多个入口被发现。
+OpenAI 沿用了旧名称，但产品已经变了。最早的 ChatGPT 插件大多是由 manifest 描述的远程 API：ChatGPT 选择接口、传递参数，再把结果写回对话。作为 [OpenAI DevDay 2026 整套平台发布](/zh/blog/openai-devday-2026-announcements)的一部分，新版平台把 Plugin 当成可运行在 ChatGPT 与 Codex 中的完整应用。它可以渲染自己的界面、说明工具该怎么用、验证用户身份、响应外部事件，并通过多个入口被发现。
 
 因此，Plugin 是应用层概念，不是一种协议。MCP 提供工具与数据；Skills 提供工作方法；Extensions 提供界面；身份验证绑定用户和权限；打包、审核与目录分发把这些组件变成可安装产品。
 
@@ -109,4 +109,4 @@ OpenAI Plugins 正在成为 ChatGPT 与 Codex 的应用层。MCP 提供标准能
 
 它比 2023 年的插件系统野心得多，也更难做好。机会是在用户已经使用 AI 的地方放进一个真正可工作的产品；代价是接受宿主平台、审核规则和更大的安全面。值得构建的 Plugin，应当确实需要这些层共同发挥作用，而不是把一个 API 换个名字包装起来。
 
-主要来源：[OpenAI Plugins 文档](https://developers.openai.com/plugins)、[Plugin Extensions](https://developers.openai.com/plugins/build/extensions)、[MCP Events](https://developers.openai.com/plugins/build/mcp-events)与 [OpenAI DevDay 2026 官方复盘](https://openai.com/index/devday-2026-recap/)。
+本文依据 [OpenAI Plugins 文档](https://developers.openai.com/plugins)、[Plugin Extensions](https://developers.openai.com/plugins/build/extensions)、[MCP Events](https://developers.openai.com/plugins/build/mcp-events)与 [OpenAI DevDay 2026 官方复盘](https://openai.com/index/devday-2026-recap/)完成核验。

@@ -111,4 +111,4 @@ DevDay 2026 表明 OpenAI 正在离开“模型加聊天”的阶段。Dots 是�
 
 这套愿景还没有全部落地，不少能力仍在预览或分批上线。但方向已经很清楚：OpenAI 想掌握人们分派工作、智能体执行、团队审查，以及软件触达用户的整个操作界面。
 
-主要来源：[OpenAI DevDay 2026 官方复盘](https://openai.com/index/devday-2026-recap/)。开放范围和产品状态于 2026 年 10 月 6 日对照 OpenAI 链接的产品与开发者文档核验。
+发布清单以 [OpenAI DevDay 2026 官方复盘](https://openai.com/index/devday-2026-recap/)为准；开放范围和产品状态于 2026 年 10 月 6 日对照 OpenAI 链接的产品与开发者文档核验。
