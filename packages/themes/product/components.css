@@ -18,7 +18,11 @@
 }
 
 .ob-toc {
-  border: 1px solid var(--ob-color-border);
-  border-radius: var(--ob-radius-md);
-  background: var(--ob-color-surface);
+  max-height: calc(100vh - 10rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.ob-toc ol {
+  border-color: var(--ob-color-border);
 }

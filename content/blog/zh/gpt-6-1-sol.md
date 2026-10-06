@@ -107,4 +107,4 @@ GPT-6.1 Sol 的意义不在型号又增加了一个小数点，而在于它把�
 
 它值得作为新的生产默认候选接受测试，但不值得盲目迁移。最终要看的仍是完成了多少合格工作、重试了多少次，以及真实 API 账单或订阅额度消耗了多少。
 
-主要来源：[OpenAI GPT-6.1 Sol 发布说明](https://openai.com/index/introducing-gpt-6-1-sol/)、[OpenAI 模型目录](https://developers.openai.com/api/docs/models)与 [DevDay 2026 官方复盘](https://openai.com/index/devday-2026-recap/)。
+本文依据 [OpenAI GPT-6.1 Sol 发布说明](https://openai.com/index/introducing-gpt-6-1-sol/)、[OpenAI 模型目录](https://developers.openai.com/api/docs/models)与 [DevDay 2026 官方复盘](https://openai.com/index/devday-2026-recap/)完成核验。

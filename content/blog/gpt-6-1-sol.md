@@ -107,4 +107,4 @@ GPT-6.1 Sol is significant because it moves frontier-like agent capability down 
 
 The model deserves testing as a new production default. It does not deserve blind migration. Measure the completed work, the retries, and the real quota or API spend. That is where the claimed fifth-of-Astra economics either becomes a practical advantage—or disappears.
 
-Sources: [OpenAI's GPT-6.1 Sol announcement](https://openai.com/index/introducing-gpt-6-1-sol/), [OpenAI model catalog](https://developers.openai.com/api/docs/models), and the [DevDay 2026 recap](https://openai.com/index/devday-2026-recap/).
+This analysis was verified against [OpenAI's GPT-6.1 Sol announcement](https://openai.com/index/introducing-gpt-6-1-sol/), the [OpenAI model catalog](https://developers.openai.com/api/docs/models), and the [DevDay 2026 recap](https://openai.com/index/devday-2026-recap/).
