@@ -1,6 +1,6 @@
 ---
-title: "豆包工作是什么 — 字节跳动独立 AI 办公 Agent 完整定义、本地操控与飞书集成能力说明"
-description: "豆包工作 Doubao Work 是字节跳动 2026 年 8 月正式发布的 AI 办公 Agent 平台，支持 Windows 虚拟桌面操控、飞书企业深度集成与云电脑后台任务。本文解析产品定义、为何独立成品牌，以及与 WorkBuddy、千问办公、Floatboat 的竞争格局。"
+title: "豆包工作是什么——字节跳动的 AI 办公 Agent"
+description: "豆包工作是字节跳动 2026 年 8 月发布的独立 AI 办公 Agent：Windows 虚拟桌面本地操控、云电脑挂机、飞书企业集成，交付文档、表格与 PPT 成品，并与 WorkBuddy、千问办公、Floatboat 对比怎么选。"
 slug: "what-is-doubao-work"
 date: "2026-08-27"
 author: "Kostja"

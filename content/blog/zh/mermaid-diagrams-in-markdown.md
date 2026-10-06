@@ -1,6 +1,6 @@
 ---
-title: "Markdown 里画 Mermaid 图——用纯文本写流程图"
-description: "Mermaid 如何把 Markdown 代码块变成图表：语法基础、在 GitHub/Obsidian/Notion 的渲染现状、它的短板，以及为什么 AI 写 Mermaid 又快又好。"
+title: "Mermaid 图表实例与语法：流程图、甘特图、时间线"
+description: "每种图表类型都给出可直接复制的 Mermaid 实例：流程图、甘特图、时间线、饼图、ER 图的写法与语法要点，GitHub/Obsidian/Notion 的渲染支持差异，以及标签加引号这类最常见的语法坑。"
 slug: "mermaid-diagrams-in-markdown"
 date: "2026-09-16"
 author: "Kostja"
@@ -220,6 +220,20 @@ mindmap
 ````
 
 饼图在复盘和时间审计里挣得了一席之地：三到五块能讲清故事，再多就是噪音。思维导图是头脑风暴的头五分钟：没有箭头要操心，只有缩进，这也是它和 Obsidian 这类大纲工具如此合拍的原因。两者都渲染得小、读起来快——这正是一条文本图表该达到的及格线。
+
+### 4.6 时间线：把历史写成变更记录
+
+时间线是这轮巡礼里最新的图类型——Mermaid 10.1 才加入，也最先栽在锁定旧版本的平台手里（前文的渲染矩阵同样适用）。语法读起来像一份 changelog：一行一个时间段，冒号后面跟这一段的事件。
+
+````markdown
+```mermaid
+timeline
+    title 上线时间线
+    2026-07 : 第一篇文章发布
+    2026-08 : 渲染矩阵上线
+    2026-09 : Mermaid 深度篇发布
+```
+````
 
 ## 5. 语法坑：粘贴之前值得知道的事
 

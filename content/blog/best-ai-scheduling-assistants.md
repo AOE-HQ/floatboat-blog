@@ -1,5 +1,5 @@
 ---
-title: "Best AI Scheduling Assistants — From Smart Schedulers to Agentic Calendars"
+title: "Best AI Scheduling Assistants, Ranked by Generation"
 description: "Compare the best AI scheduling assistants across four generations — smart schedulers, AI optimizers, scheduling agents, and calendar-driven agent OS. Choose by use case."
 slug: "best-ai-scheduling-assistants"
 date: "2026-06-29"

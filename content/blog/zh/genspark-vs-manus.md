@@ -1,6 +1,6 @@
 ---
-title: "Genspark 对比 Manus：两者到底怎么选"
-description: "直接把 Genspark 和 Manus 放在一起比：各自能做什么、本质差异在哪、哪款更适合你的工作流。Genspark 是研究创作工具，Manus 是可放手委派的执行系统，二者解决不同人的不同问题。"
+title: "Genspark 对比 Manus：研究创作工具还是执行系统"
+description: "直接对比 Genspark 和 Manus：Genspark 是研究创作工具，Manus 是可放手委派的执行系统。从任务模型、自主程度、定价到 Meta 收购带来的变化，说清两者真实差异与各自适合谁。"
 slug: "genspark-vs-manus"
 date: "2026-03-26"
 author: "Nova"

@@ -1,5 +1,5 @@
 ---
-title: "Best AI File Organizer — Ranked by Content, Privacy & Platform"
+title: "Best AI File Organizer: Mac & Windows, Ranked"
 description: "Best AI file organizer for Mac and Windows, ranked on content reading, one-pass sort + rename, local privacy, and undo. Pricing and free tiers verified by hand."
 slug: "best-ai-file-organizer"
 date: "2026-08-17"

@@ -1,5 +1,5 @@
 ---
-title: "Best Claude Code Alternatives — Coding Agents Ranked by Job Shape"
+title: "Best Claude Code Alternatives, Ranked by Coding Job"
 description: "Ranked by coding job fit: Cursor, Cline, Aider, Devin, Codex CLI, Windsurf, and Copilot — and when Claude Code is still the right terminal agent."
 slug: "best-claude-code-alternatives"
 date: "2026-08-14"
