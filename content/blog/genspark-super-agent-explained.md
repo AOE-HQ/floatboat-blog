@@ -1,6 +1,6 @@
 ---
-title: "Genspark Super Agent Explained — Multi-Model AI for Real Work"
-description: "The Genspark Super Agent turns one request into finished deliverables by coordinating multiple AI models — what it does, what's new, and who it fits."
+title: "Genspark Super Agent: What's New in 2026 and Who It Fits"
+description: "The multi-model agent workspace (GPT-5, Claude, Gemini cross-checking) as of September 2026: what's new since launch — custom agents marketplace, AI Secretary, the Claw desktop client — plus pricing and an honest verdict on who it fits."
 slug: "genspark-super-agent-explained"
 date: "2026-05-25"
 author: "Kostja"

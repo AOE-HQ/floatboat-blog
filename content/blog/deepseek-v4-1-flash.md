@@ -1,6 +1,6 @@
 ---
-title: "DeepSeek V4.1 Flash — The Two-Day Beta That Tests Whether Flash Can Replace Pro"
-description: "DeepSeek opened a two-day beta of V4.1 Flash on Sept 8, 2026 — a new architecture with native multimodal input and community-measured speeds above 300 tokens/s. Its feedback form asks whether the model can replace V4 Pro. Here is what the beta reveals before it expires on September 10."
+title: "DeepSeek V4.1 Flash: What the Two-Day Beta Revealed"
+description: "DeepSeek's two-day V4.1 Flash beta: a new architecture, native multimodal input, community-measured speeds above 300 tokens/s, and the question of whether Flash can replace V4 Pro."
 slug: "deepseek-v4-1-flash"
 date: "2026-09-09"
 author: "Judy"

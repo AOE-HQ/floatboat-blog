@@ -1,5 +1,5 @@
 ---
-title: "Math in Markdown — LaTeX Formulas That Render Everywhere (and Where They Don't)"
+title: "Math in Markdown: LaTeX Syntax and Where It Renders"
 description: "How math in markdown works: dollar-sign LaTeX syntax, where it renders (GitHub, Obsidian, Jekyll), the KaTeX vs MathJax split, and honest workarounds."
 slug: "markdown-math-latex"
 date: "2026-09-19"

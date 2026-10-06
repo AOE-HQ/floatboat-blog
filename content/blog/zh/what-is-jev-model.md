@@ -1,6 +1,6 @@
 ---
-title: "Jev 是什么 — 不生成文本的 System One 决策模型全解析：typed decisions、RLCD 与 193.6x 性能争议"
-description: "Jev 是 TypeSafe AI 于 2026 年 9 月 15 日发布的「System One」模型：读取自然语言状态，返回带 calibrated confidence 的 typed probabilistic decisions——分类、路由、评分——而完全不生成自由文本。本文解析其 RLCD 训练方法如何让概率针对真实结果校准、官方宣称的 193.6x 加速与 444.6x 成本优势及每十亿输入 token $42 的定价，以及 Hacker News 上 1,881 分、494 条评论的分裂反响与「重新包装的分类器」这一社区争议。"
+title: "Jev 是什么——不生成文本的决策模型"
+description: "Jev 是 TypeSafe AI 发布的 System One 模型：读取状态、返回带置信度的 typed decisions，而不生成任何文本。本文拆解其 RLCD 训练方法、官方宣称的 193.6x 加速与 444.6x 成本优势，以及 Hacker News 上「重新包装的分类器」之争。"
 slug: "what-is-jev-model"
 date: "2026-09-18"
 author: "Tan Shaoqing"

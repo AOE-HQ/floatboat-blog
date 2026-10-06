@@ -1,5 +1,5 @@
 ---
-title: "What Is an Obsidian Vault — Local Markdown Knowledge Base Explained"
+title: "What Is an Obsidian Vault? Local Notes, Explained"
 description: "An Obsidian vault is a folder of Markdown notes on your device. Learn how vaults work, what they contain, how they differ from Notion, and why local files matter for AI."
 slug: "what-is-obsidian-vault"
 date: "2026-07-30"

@@ -1,6 +1,6 @@
 ---
-title: "Mermaid Diagrams in Markdown — Flowcharts From Plain Text"
-description: "How Mermaid turns fenced code blocks into diagrams: syntax basics, where it renders (GitHub, Obsidian, Notion), what it does badly, and how AI writes it."
+title: "Mermaid Diagram Examples: Flowchart, Gantt, Timeline Syntax"
+description: "Copy-paste Mermaid examples for every major diagram type — flowchart, gantt, timeline, pie, and ER — with the core syntax, where each renders (GitHub, Obsidian, Notion), and the common errors that break diagrams."
 slug: "mermaid-diagrams-in-markdown"
 date: "2026-09-16"
 author: "Kostja"
@@ -220,6 +220,20 @@ mindmap
 ````
 
 A pie chart earns its keep in postmortems and time audits, where three to five slices tell the story and more than that turns into noise. A mindmap is the first five minutes of brainstorming: there are no arrows to think about, only indentation, which is why it pairs so naturally with outliners like Obsidian. Both render small and read instantly, which is exactly the bar a text-based diagram should clear.
+
+### 4.6 Timeline: History as a Changelog
+
+Timeline is the newest type in this tour — it arrived with Mermaid 10.1, so it is the first to break on a platform pinned to an older release (the rendering matrix above applies). The syntax reads like a changelog: a period, a colon, then the events of that period.
+
+````markdown
+```mermaid
+timeline
+    title Launch history
+    2026-07 : First post published
+    2026-08 : Rendering matrix added
+    2026-09 : Mermaid deep-dive ships
+```
+````
 
 ## 5. Syntax Traps Worth Knowing Before You Paste
 

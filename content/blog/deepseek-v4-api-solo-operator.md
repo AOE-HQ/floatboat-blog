@@ -1,6 +1,6 @@
 ---
 title: "DeepSeek V4 API: Cost and Impact for Solo Operators"
-description: "DeepSeek V4 API cuts inference costs significantly. Here's what that means for one-person companies building on AI in 2025.126 chars"
+description: "DeepSeek V4 API is projected to cut inference costs significantly. Here's what that means for one-person companies building on AI in 2026."
 slug: "deepseek-v4-api-solo-operator"
 date: "2026-04-17"
 author: "Nova"
