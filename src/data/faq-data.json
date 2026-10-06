@@ -1,5 +1,125 @@
 {
   "pages": {
+    "/blog/gpt-6-1-sol": {
+      "items": [
+        {
+          "question": "What is GPT-6.1 Sol?",
+          "answer": "GPT-6.1 Sol is OpenAI's lower-cost GPT-6.1 model for coding, document work, computer use, and automation. It supports a 1.05 million-token context window and up to 128,000 output tokens through the API model ID `gpt-6.1-sol`."
+        },
+        {
+          "question": "How much does GPT-6.1 Sol cost?",
+          "answer": "OpenAI lists GPT-6.1 Sol at $2 per million input tokens, $0.10 per million cached input tokens, and $10 per million output tokens. Actual workflow cost still depends on context size, output length, retries, and tool calls."
+        },
+        {
+          "question": "Is GPT-6.1 Sol available in regular ChatGPT?",
+          "answer": "At launch, OpenAI documented GPT-6.1 Sol for the API and for work surfaces including Codex and ChatGPT Work. That is not the same as universal availability in ordinary ChatGPT model pickers, so check the current plan and product documentation before promising access."
+        },
+        {
+          "question": "Should I use GPT-6.1 Sol instead of GPT-6.1 Astra?",
+          "answer": "Use Sol when cost, long context, and high-volume agent work matter more than getting the strongest result on every difficult task. Astra remains the better escalation model for the hardest reasoning or quality-sensitive work; many systems will benefit from routing routine work to Sol and exceptions to Astra."
+        }
+      ]
+    },
+    "/zh/blog/gpt-6-1-sol": {
+      "items": [
+        {
+          "question": "GPT-6.1 Sol 是什么？",
+          "answer": "GPT-6.1 Sol 是 OpenAI 面向编程、文档处理、电脑操作和自动化任务推出的低成本 GPT-6.1 模型。它在 API 中的模型 ID 是 `gpt-6.1-sol`，支持 105 万 token 上下文和最多 12.8 万 token 输出。"
+        },
+        {
+          "question": "GPT-6.1 Sol 的 API 价格是多少？",
+          "answer": "OpenAI 的目录价是每百万输入 token 2 美元、每百万缓存输入 token 0.10 美元、每百万输出 token 10 美元。实际任务成本还会受到上下文长度、输出长度、重试次数和工具调用数量影响。"
+        },
+        {
+          "question": "普通 ChatGPT 用户可以使用 GPT-6.1 Sol 吗？",
+          "answer": "发布时，OpenAI 明确记录的是 API、Codex 和 ChatGPT Work 等工作场景，并不等于所有普通 ChatGPT 套餐的模型选择器都会出现 Sol。对外承诺前应核对当前套餐与产品文档。"
+        },
+        {
+          "question": "GPT-6.1 Sol 和 Astra 应该怎么选？",
+          "answer": "大量、长上下文、成本敏感的 Agent 工作优先考虑 Sol；最困难的推理和质量不能妥协的任务继续交给 Astra。更实际的做法通常是用 Sol 处理常规任务，再把少数难例升级到 Astra。"
+        }
+      ]
+    },
+    "/blog/openai-plugins-explained": {
+      "items": [
+        {
+          "question": "Are the new OpenAI Plugins the same as the old ChatGPT plugins?",
+          "answer": "No. The 2026 plugin system is a broader application package for ChatGPT and Codex. It can combine MCP tools, skills, account connections, interactive panels, file viewers, events, review, and distribution rather than exposing only a remote API action."
+        },
+        {
+          "question": "What is the difference between an OpenAI Plugin and an MCP server?",
+          "answer": "MCP is the protocol layer that exposes tools, resources, prompts, and events. A plugin is the packaged user experience around those capabilities, including permissions, workflow instructions, interface extensions, identity, review, and discovery. A plugin may contain or connect to an MCP server."
+        },
+        {
+          "question": "Do I need a full plugin if I already have an MCP server?",
+          "answer": "Not always. A reliable MCP server may be enough when users only need a few actions and conversation is a sufficient interface. Build a full plugin when persistent UI, custom file rendering, event triggers, packaged workflow knowledge, or directory distribution materially improves the product."
+        },
+        {
+          "question": "Can OpenAI Plugins run work without a user prompt?",
+          "answer": "They can when MCP Events are configured and approved. A connected service can publish a state change that starts an automation, but production implementations need event validation, idempotency, rate limits, audit logs, and approval gates for irreversible actions."
+        }
+      ]
+    },
+    "/zh/blog/openai-plugins-explained": {
+      "items": [
+        {
+          "question": "新版 OpenAI Plugins 和旧版 ChatGPT 插件一样吗？",
+          "answer": "不一样。2026 年的 Plugin 是面向 ChatGPT 与 Codex 的完整应用封装，可以组合 MCP 工具、Skills、账号连接、交互面板、文件查看器、事件触发、审核和分发，而不只是暴露一个远程 API 动作。"
+        },
+        {
+          "question": "OpenAI Plugin 和 MCP Server 有什么区别？",
+          "answer": "MCP 是暴露工具、资源、提示词和事件的协议层；Plugin 是围绕这些能力形成的产品层，还包含权限、工作流说明、交互界面、身份、审核与发现机制。一个 Plugin 可以包含或连接 MCP Server。"
+        },
+        {
+          "question": "已经有 MCP Server，还需要做完整 Plugin 吗？",
+          "answer": "不一定。如果用户只需要几个稳定动作，而且对话界面已经够用，MCP Server 就可能足够。只有当持久界面、自定义文件渲染、事件触发、工作流知识或目录分发确实改善产品时，完整 Plugin 才值得额外成本。"
+        },
+        {
+          "question": "OpenAI Plugin 可以在没有用户提示词时自动运行吗？",
+          "answer": "配置并获批 MCP Events 后可以。外部服务的状态变化能够触发自动化，但正式环境仍需要校验事件、防止重复执行、限制频率、记录审计日志，并在不可逆操作前保留人工确认。"
+        }
+      ]
+    },
+    "/blog/openai-devday-2026-announcements": {
+      "items": [
+        {
+          "question": "How many products did OpenAI announce at DevDay 2026?",
+          "answer": "OpenAI described the event as containing more than 20 major announcements. Counting each separately titled item in the official recap gives 25. Lists that report 21 or another number usually combine related releases or exclude availability and distribution announcements."
+        },
+        {
+          "question": "What was the most important OpenAI DevDay 2026 announcement?",
+          "answer": "Dots were the keynote centerpiece, but the larger announcement was the connected stack: GPT-6.1 Sol supplies lower-cost intelligence, Codex and the Agents API execute work, Plugins connect third-party products, and Space and Pages preserve shared context and artifacts."
+        },
+        {
+          "question": "Are all DevDay 2026 products available now?",
+          "answer": "No. Availability varies by plan, region, workspace administration, and client platform. Decisions API was a limited preview, Private Inference was planned for later, collaborative slides were coming soon, and several products launched only for specific paid or enterprise plans."
+        },
+        {
+          "question": "What is the difference between Dots, Agents API, and Codex?",
+          "answer": "Dots are persistent user-facing agents that take ongoing responsibility. Agents API is developer infrastructure for building and hosting agent workflows, including computer use. Codex is OpenAI's coding environment and agent surface for software work. They overlap in agent behavior but serve different users and deployment layers."
+        }
+      ]
+    },
+    "/zh/blog/openai-devday-2026-announcements": {
+      "items": [
+        {
+          "question": "OpenAI DevDay 2026 一共发布了多少项产品？",
+          "answer": "OpenAI 官方表述是“超过 20 项重大更新”。按官方回顾页面中每个独立标题逐项计数，共有 25 项。其他文章出现 21 项等数字，通常是合并了关联发布，或没有计入可用性与分发层更新。"
+        },
+        {
+          "question": "OpenAI DevDay 2026 最重要的发布是什么？",
+          "answer": "Dots 是主题演讲的中心，但更重要的是整套系统已经连起来：GPT-6.1 Sol 提供低成本智能，Codex 和 Agents API 负责执行，Plugins 接入第三方产品，Space 与 Pages 保存共享上下文和成果。"
+        },
+        {
+          "question": "DevDay 2026 的所有产品现在都能使用吗？",
+          "answer": "不能。可用性取决于套餐、地区、工作区管理员设置和客户端平台。Decisions API 当时仍是有限预览，Private Inference 计划稍后推出，协作幻灯片尚未正式上线，部分产品只面向特定付费或企业套餐。"
+        },
+        {
+          "question": "Dots、Agents API 和 Codex 有什么区别？",
+          "answer": "Dots 是面向用户、持续承担责任的常驻智能体；Agents API 是开发者用来构建和托管 Agent 工作流的基础设施，并包含电脑操作能力；Codex 则是面向软件工作的编程环境和编码 Agent。三者都涉及 Agent，但用户和部署层不同。"
+        }
+      ]
+    },
     "/blog": {
       "items": [
         {
