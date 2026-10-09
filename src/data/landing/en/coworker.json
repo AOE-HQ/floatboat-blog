@@ -2,82 +2,86 @@
   "slug": "coworker",
   "locale": "en",
   "seo": {
-    "title": "Floatboat Coworker — A Local-First AI Workspace for Real Work",
-    "description": "Work with an AI coworker that can use project files, tools, and persistent context on your computer while keeping important actions visible and reviewable.",
-    "keywords": ["AI coworker", "local AI workspace", "workspace agent", "desktop AI agent"]
+    "title": "Floatboat Coworker — A Work Agent for Delegated Tasks",
+    "description": "Delegate a defined task to an AI Work Agent that can use approved files and tools, complete the work, and return a reviewable deliverable.",
+    "keywords": ["AI work agent", "AI coworker", "task agent", "delegate work to AI"]
   },
-  "breadcrumb": "AI Coworker",
+  "breadcrumb": "Coworker",
   "hero": {
-    "eyebrow": "A workspace agent on your computer",
-    "title": "An AI coworker that works where your work already lives.",
-    "description": "Give Floatboat a goal and let it work across files, tools, and project context on your computer—while you keep control of permissions, approvals, and final decisions.",
+    "eyebrow": "A Work Agent inside Floatboat",
+    "title": "Delegate a task. Get back finished work.",
+    "description": "Give the Floatboat Coworker a clear outcome, the relevant materials, and approval boundaries. It handles the task inside your Agent Workspace and returns a deliverable you can inspect, revise, or accept.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=hero" },
-    "secondaryCta": { "label": "Local or cloud?", "href": "/blog/local-first-vs-cloud-agent-workspace" },
-    "proof": ["Local project access", "Persistent context", "Reviewable actions"]
+    "secondaryCta": { "label": "Explore the Agent Workspace", "href": "/agent-workspace" },
+    "proof": ["Outcome-based delegation", "Scoped files and tools", "Reviewable deliverables"]
   },
-  "demo": { "eyebrow": "A desk, not an empty chat", "title": "Give the agent a project instead of re-explaining it", "description": "The coworker can inspect the working folder, prepare deliverables, and save results back into the project." },
+  "demo": {
+    "eyebrow": "One task, one accountable result",
+    "title": "Brief the work instead of steering every step",
+    "description": "The Coworker turns a bounded assignment into an execution plan, uses approved project resources, and comes back with the requested artifact."
+  },
   "features": {
-    "eyebrow": "Built for continuity",
-    "title": "Your files, tools, and context form one workspace.",
-    "description": "The coworker operates around the project rather than treating every request as a new conversation.",
+    "eyebrow": "Built for delegation",
+    "title": "A Work Agent owns the task between brief and delivery.",
+    "description": "Coworker is the task-facing role inside Floatboat—not the workspace itself and not an open-ended chat companion.",
     "items": [
-      { "label": "Context", "title": "Projects remember how work is done", "description": "Keep briefs, references, working rules, and prior outputs available to the next task." },
-      { "label": "Execution", "title": "The agent can produce real artifacts", "description": "Move beyond answers in a chat window to documents, organized files, research, and repeatable workflows." },
-      { "label": "Boundaries", "title": "Local access stays explicit", "description": "Scope the folders and tools the coworker can use and review actions that deserve human judgment." }
+      { "label": "Brief", "title": "Start from a defined outcome", "description": "Describe what done looks like, provide constraints, and identify the decisions that still require your approval." },
+      { "label": "Execution", "title": "Let the agent handle connected steps", "description": "The Coworker can use approved files and tools to research, draft, organize, or produce the requested result." },
+      { "label": "Handoff", "title": "Receive work you can inspect", "description": "Get a file or other concrete artifact with enough context to review, revise, and decide what happens next." }
     ]
   },
   "scenario": {
-    "eyebrow": "A client brief",
-    "title": "Turn a folder of context into a finished deliverable.",
-    "description": "The coworker can read the source material, identify gaps, assemble a brief, and save the result without a manual upload loop.",
+    "eyebrow": "A delegated client brief",
+    "title": "Hand off the assignment without handing away judgment.",
+    "description": "A bounded task gives the Coworker room to execute while keeping the goal, resources, and approval points explicit.",
     "steps": [
-      { "title": "Point to the project", "description": "Choose the folder and describe the outcome rather than uploading files one by one." },
-      { "title": "Inspect the work", "description": "Follow what the agent read, what it produced, and where judgment is still required." },
-      { "title": "Keep the result in context", "description": "Save the artifact beside the source material so the next task starts from the completed work." }
+      { "title": "Define the deliverable", "description": "State the outcome, audience, format, constraints, and deadline for this assignment." },
+      { "title": "Approve the working scope", "description": "Choose the files and tools the Work Agent may use and mark actions that need confirmation." },
+      { "title": "Review the handoff", "description": "Inspect the completed artifact, request a revision, or accept it and close the task." }
     ]
   },
   "audiences": {
-    "title": "For work that spans more than one prompt.",
-    "description": "The coworker is most useful when output depends on existing files, repeated standards, and several connected steps.",
+    "title": "For assignments with a clear finish line.",
+    "description": "Coworker is most useful when you can describe the desired result but do not want to manually drive every intermediate step.",
     "items": [
-      { "label": "Founders", "title": "Move from decision to deliverable", "description": "Research a choice, prepare the document, and organize the follow-up without opening five separate tools." },
-      { "label": "Creators", "title": "Build on your existing body of work", "description": "Use drafts, references, and voice examples already stored in the project." },
-      { "label": "Operators", "title": "Standardize repeated client work", "description": "Keep project rules and reusable procedures close to the files they govern." }
+      { "label": "Founders", "title": "Delegate the next concrete outcome", "description": "Hand off research, a decision brief, or a follow-up package while keeping final judgment." },
+      { "label": "Creators", "title": "Turn source material into a draft", "description": "Provide references, format, and voice guidance, then review a finished artifact instead of prompting section by section." },
+      { "label": "Operators", "title": "Complete repeatable assignments", "description": "Use a tested brief and approved resources for recurring reports, preparation, and client deliverables." }
     ]
   },
   "howItWorks": {
-    "title": "Give context once, then work in a visible loop.",
-    "description": "The coworker combines autonomy for routine steps with checkpoints for decisions.",
+    "title": "Brief, execute, hand off.",
+    "description": "Coworker provides a simple Work Agent loop inside the broader Agent Workspace.",
     "items": [
-      { "title": "Open a workspace", "description": "Choose the project and the local resources relevant to the job." },
-      { "title": "Describe the outcome", "description": "State what done looks like, including constraints and approval boundaries." },
-      { "title": "Review the artifacts", "description": "Inspect the work, correct the reusable context, and approve the final result." }
+      { "title": "Brief the outcome", "description": "Explain what must be delivered and which conditions define acceptable work." },
+      { "title": "Let the task run", "description": "The agent uses the approved context and tools, pausing when an action crosses an approval boundary." },
+      { "title": "Review and close", "description": "Receive the artifact, ask for focused changes if needed, and decide whether the assignment is complete." }
     ]
   },
   "comparison": {
-    "title": "A coworker is not just a longer chat session.",
-    "description": "It is the combination of context, tools, files, and controlled execution that changes the working model.",
+    "title": "A Work Agent is accountable for an assignment, not a conversation.",
+    "description": "Coworker is designed around delegated outcomes and concrete handoffs rather than an endless sequence of prompts.",
     "columns": ["Floatboat Coworker", "General AI chat"],
     "rows": [
-      { "label": "Starting context", "values": ["Project workspace", "Blank conversation"] },
-      { "label": "Local files", "values": ["Scoped in place", "Uploaded manually"] },
-      { "label": "Outputs", "values": ["Saved as project artifacts", "Returned mainly as messages"] },
-      { "label": "Repeat work", "values": ["Reusable skills and context", "Prompt recreated each time"] }
+      { "label": "Unit of work", "values": ["A bounded assignment", "A conversational turn"] },
+      { "label": "Direction", "values": ["Outcome and constraints", "Repeated prompts"] },
+      { "label": "Execution", "values": ["Connected steps with approved resources", "Answer generated from supplied context"] },
+      { "label": "Handoff", "values": ["Reviewable deliverable", "Primarily a response"] }
     ]
   },
   "faq": {
-    "title": "AI Coworker questions",
+    "title": "Work Agent questions",
     "items": [
-      { "question": "What makes this different from a chatbot?", "answer": "The coworker operates inside a persistent workspace with project files, tools, and reusable instructions. It can produce and organize artifacts instead of only returning an answer." },
-      { "question": "Does Floatboat upload every local file?", "answer": "No. Access is scoped to the work you choose. Local-first execution is intended to avoid unnecessary upload loops and to keep sensitive project material under clearer control." },
-      { "question": "Can I see what the agent is doing?", "answer": "Yes. The workspace is designed around visible steps, outputs, and approval boundaries rather than invisible background automation." },
-      { "question": "Can I reuse a successful workflow?", "answer": "Yes. Repeatable instructions can become skills or Combos so the next project starts with a tested working method." }
+      { "question": "What is a Work Agent?", "answer": "A Work Agent accepts a bounded assignment, uses the approved context and tools needed to complete it, and returns a concrete result. The task can end when the handoff is accepted." },
+      { "question": "How is Coworker different from the Agent Workspace?", "answer": "Coworker is the agent role you delegate a task to. The Agent Workspace is the persistent environment that provides files, tools, rules, history, and review controls for that work." },
+      { "question": "Can the Coworker act without my approval?", "answer": "Routine steps can run within the scope you provide. Sensitive or consequential actions should remain behind explicit approval boundaries that you can review." },
+      { "question": "What can the Coworker deliver?", "answer": "Depending on the task and enabled tools, it can return documents, research, organized files, drafts, code, or other editable artifacts supported by the workspace." }
     ]
   },
   "finalCta": {
-    "title": "Give your AI a real place to work.",
-    "description": "Bring project context, local files, tools, and reviewable execution into one workspace on your computer.",
+    "title": "Hand off the task, not your judgment.",
+    "description": "Give the Floatboat Coworker a clear assignment and receive work you can inspect, revise, and approve.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=final_cta" },
-    "secondaryCta": { "label": "Learn about workspace agents", "href": "/blog/ai-workspace-agents" }
+    "secondaryCta": { "label": "See the Agent Workspace", "href": "/agent-workspace" }
   }
 }

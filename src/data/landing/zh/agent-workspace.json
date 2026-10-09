@@ -1,0 +1,87 @@
+{
+  "slug": "agent-workspace",
+  "locale": "zh",
+  "seo": {
+    "title": "Floatboat Agent 工作站：让 Agent、文件与工作留在同一空间",
+    "description": "在 macOS 和 Windows 的持续工作空间中，让 Agent 使用本地文件、工具、项目规则和可编辑交付物，同时保留人的审阅和控制。",
+    "keywords": ["AI Agent 工作站", "Agent 工作空间", "本地优先 AI 工作空间", "多 Agent 工作空间"]
+  },
+  "breadcrumb": "Agent 工作站",
+  "hero": {
+    "eyebrow": "一体化 Agent 工作站",
+    "title": "给 Agent 一个工作空间，而不是又一个聊天框。",
+    "description": "Floatboat 把 Agent、本地文件、模型、工具、项目规则和交付物放进同一个持续的桌面环境，让工作从已有上下文继续，而不是每次从 Prompt 重新开始。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=agent-workspace&download_placement=hero" },
+    "secondaryCta": { "label": "认识 Work Agent", "href": "/zh/coworker" },
+    "proof": ["本地优先的项目访问", "多 Agent 协作", "人可控的执行过程"]
+  },
+  "demo": {
+    "eyebrow": "持续的工作场所",
+    "title": "让项目、规则和成果留在一起",
+    "description": "Agent 可以使用同一组获授权的文件和工具，留下可检查的产物，并从项目已经积累的经验继续工作。"
+  },
+  "features": {
+    "eyebrow": "工作空间，不只是聊天",
+    "title": "Agent 所处的环境，本身就是产品的一部分。",
+    "description": "Floatboat 为工作提供持续的容器，让上下文、执行、审阅和交付保持连接。",
+    "items": [
+      { "label": "环境", "title": "真实文件和工具就在手边", "description": "使用获授权的本地文件夹、项目材料、浏览器上下文和工具，不必反复把它们复制进对话。" },
+      { "label": "延续", "title": "上下文不随单次任务结束", "description": "让工作空间规则、文件夹指导、运行记录和过往产物在下一项工作开始时仍可使用。" },
+      { "label": "控制", "title": "人一直在执行闭环中", "description": "检查产物、改变 Agent 方向、切换模型或指令，并审批需要人工判断的操作。" }
+    ]
+  },
+  "scenario": {
+    "eyebrow": "从研究到交付的项目",
+    "title": "从源材料走到最终产物，整个过程不丢失上下文。",
+    "description": "工作空间可以把 Brief、参考材料、工作规则、Agent 运行、审阅意见和最终交付物组成同一段连续工作。",
+    "steps": [
+      { "title": "打开真实项目", "description": "让工作空间在边界内使用相关文件夹、文件、工具和规则。" },
+      { "title": "让 Agent 分工", "description": "分配研究、起草、检查或制作步骤，同时共享同一份项目上下文。" },
+      { "title": "审阅并留下结果", "description": "检查执行过程，在需要时介入，并把可编辑交付物保存在源材料旁边。" }
+    ]
+  },
+  "audiences": {
+    "title": "适合会随时间积累的知识工作。",
+    "description": "当工作依赖文件、可重复标准、多个相连步骤，且成果需要在聊天结束后继续使用时，Agent 工作站才会发挥价值。",
+    "items": [
+      { "label": "一人公司", "title": "在一张工作台上协调多种角色", "description": "让研究、运营、内容和客户交付保持连接，无需在多个 AI 工具之间重建上下文。" },
+      { "label": "开发者", "title": "围绕代码库和项目规则工作", "description": "让 Agent 在开发实际发生的环境中使用代码、文档、工具和审查要求。" },
+      { "label": "专业服务", "title": "产出可检查的工作成果", "description": "把源文件转化为报告、演示、分析和其他交付物，同时保留清晰的审阅点。" }
+    ]
+  },
+  "howItWorks": {
+    "title": "一个工作空间连接上下文、执行与交付。",
+    "description": "工作空间是持续基础；Work Agent、触发器、Skills 和 FloatIM 都是使用它的方式。",
+    "items": [
+      { "title": "连接工作环境", "description": "选择任务需要的项目文件、工具、模型和权限边界。" },
+      { "title": "运行并监督 Agent", "description": "委派任务、让 Agent 协作，并检查需要关注的步骤或产物。" },
+      { "title": "保留应该延续的信息", "description": "把交付物、项目规则和有用上下文留在工作空间，服务下一个任务或流程。" }
+    ]
+  },
+  "comparison": {
+    "title": "Agent 工作站改变的，是答案产生之后的工作。",
+    "description": "它不是更大的聊天窗口，而是一个用于执行、审阅和继续真实工作的持续环境。",
+    "columns": ["Floatboat Agent 工作站", "通用 AI 聊天"],
+    "rows": [
+      { "label": "工作上下文", "values": ["持续的项目环境", "对话历史"] },
+      { "label": "文件与工具", "values": ["在工作实际发生的地方限定使用", "通常手动上传或复制"] },
+      { "label": "执行方式", "values": ["Agent、工具、触发器和人工审阅", "Prompt 与回答轮次"] },
+      { "label": "工作结果", "values": ["可编辑的项目交付物", "主要是一条消息"] }
+    ]
+  },
+  "faq": {
+    "title": "Agent 工作站常见问题",
+    "items": [
+      { "question": "什么是 AI Agent 工作站？", "answer": "它是一个持续的工作环境，Agent 可以在其中使用获授权的文件、工具、模型、规则和过往产物完成真实项目，而不只是回答孤立问题。" },
+      { "question": "它和 Floatboat Coworker 有什么区别？", "answer": "Agent 工作站是长期保存上下文和工作资源的环境；Coworker 是可以接受边界明确的任务、并向你返回交付物的 Work Agent。" },
+      { "question": "本地优先是否意味着数据绝不会离开电脑？", "answer": "不是。本地优先表示工作从真实桌面环境和文件开始。数据如何处理仍取决于你选择的云端模型和连接器，应单独评估每条外部链路。" },
+      { "question": "多个 Agent 可以在同一工作空间中工作吗？", "answer": "可以。Floatboat 支持多个 Agent 使用共享项目上下文工作，同时把人的审阅、改向和批准保留在执行过程中。" }
+    ]
+  },
+  "finalCta": {
+    "title": "给 Agent 工作一个可以继续的地方。",
+    "description": "把 Agent、文件、工具、规则和可编辑交付物放进 macOS 和 Windows 上的同一个桌面工作空间。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=agent-workspace&download_placement=final_cta" },
+    "secondaryCta": { "label": "把任务交给 Work Agent", "href": "/zh/coworker" }
+  }
+}

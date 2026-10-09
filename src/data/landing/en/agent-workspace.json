@@ -1,0 +1,87 @@
+{
+  "slug": "agent-workspace",
+  "locale": "en",
+  "seo": {
+    "title": "Floatboat Agent Workspace — One Place for Agents, Files, and Work",
+    "description": "Run agents alongside local files, tools, project rules, and editable deliverables in one persistent, human-controlled workspace for Mac and Windows.",
+    "keywords": ["AI agent workspace", "agent workspace", "local-first AI workspace", "multi-agent workspace"]
+  },
+  "breadcrumb": "Agent Workspace",
+  "hero": {
+    "eyebrow": "An all-in-one agent workspace",
+    "title": "Give agents a workspace, not another chat window.",
+    "description": "Floatboat brings agents, local files, models, tools, project rules, and deliverables into one persistent desktop environment—so work can continue from context instead of restarting with every prompt.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=hero" },
+    "secondaryCta": { "label": "Meet the Work Agent", "href": "/coworker" },
+    "proof": ["Local-first project access", "Multi-agent collaboration", "Human-controlled execution"]
+  },
+  "demo": {
+    "eyebrow": "A persistent place to work",
+    "title": "Keep the project, rules, and results together",
+    "description": "Agents can work from the same approved files and tools, leave inspectable outputs, and continue from what the project has already learned."
+  },
+  "features": {
+    "eyebrow": "Workspace, not just chat",
+    "title": "The environment around the agent is part of the product.",
+    "description": "Floatboat gives work a durable home where context, execution, review, and delivery remain connected.",
+    "items": [
+      { "label": "Environment", "title": "Real files and tools stay in reach", "description": "Work with approved local folders, project materials, browser context, and tools instead of repeatedly copying them into a conversation." },
+      { "label": "Continuity", "title": "Context survives the individual task", "description": "Keep workspace rules, folder-specific guidance, run history, and prior outputs available when the next piece of work begins." },
+      { "label": "Control", "title": "People remain inside the execution loop", "description": "Review artifacts, redirect agents, change models or instructions, and approve actions that require human judgment." }
+    ]
+  },
+  "scenario": {
+    "eyebrow": "A research-to-delivery project",
+    "title": "Move from source material to a finished artifact without losing the thread.",
+    "description": "A workspace can hold the brief, references, working rules, agent runs, review notes, and final deliverable as one continuous body of work.",
+    "steps": [
+      { "title": "Open the real project", "description": "Give the workspace access to the relevant folder, files, tools, and rules." },
+      { "title": "Let agents divide the work", "description": "Assign research, drafting, checking, or production steps while they share the same project context." },
+      { "title": "Review and keep the result", "description": "Inspect the work, intervene where needed, and save the editable deliverable beside its source material." }
+    ]
+  },
+  "audiences": {
+    "title": "For knowledge work that accumulates over time.",
+    "description": "An Agent Workspace matters when the job depends on files, repeatable standards, connected steps, and results that must remain usable after the chat ends.",
+    "items": [
+      { "label": "Solo operators", "title": "Coordinate many roles from one desk", "description": "Keep research, operations, content, and client delivery connected without rebuilding context across separate AI tools." },
+      { "label": "Developers", "title": "Work with repositories and project rules", "description": "Let agents operate around code, documentation, tools, and review requirements in the environment where development happens." },
+      { "label": "Professional services", "title": "Produce work that can be examined", "description": "Turn source files into reports, presentations, analyses, and other deliverables with visible review points." }
+    ]
+  },
+  "howItWorks": {
+    "title": "One workspace connects context, execution, and delivery.",
+    "description": "The workspace is the durable foundation; individual Work Agents, triggers, Skills, and FloatIM are ways to use it.",
+    "items": [
+      { "title": "Connect the work environment", "description": "Choose the project files, tools, models, and permission boundaries relevant to the job." },
+      { "title": "Run and supervise agents", "description": "Delegate tasks, let agents collaborate, and inspect the steps or artifacts that require attention." },
+      { "title": "Preserve what should carry forward", "description": "Keep deliverables, project rules, and useful context in the workspace for the next task or workflow." }
+    ]
+  },
+  "comparison": {
+    "title": "An Agent Workspace changes what happens after the answer.",
+    "description": "The difference is not a larger chat window. It is a persistent environment for doing, reviewing, and continuing real work.",
+    "columns": ["Floatboat Agent Workspace", "General AI chat"],
+    "rows": [
+      { "label": "Working context", "values": ["Persistent project environment", "Conversation history"] },
+      { "label": "Files and tools", "values": ["Scoped where work lives", "Often uploaded or copied in"] },
+      { "label": "Execution", "values": ["Agents, tools, triggers, and review", "Prompt-and-response turns"] },
+      { "label": "Outcome", "values": ["Editable project deliverables", "Primarily a message"] }
+    ]
+  },
+  "faq": {
+    "title": "Agent Workspace questions",
+    "items": [
+      { "question": "What is an AI Agent Workspace?", "answer": "It is a persistent work environment where agents can use approved files, tools, models, rules, and prior outputs to complete and continue real projects—not just answer isolated prompts." },
+      { "question": "How is this different from the Floatboat Coworker?", "answer": "The Agent Workspace is the environment that holds context and resources over time. The Coworker is a Work Agent you can give a bounded task to and receive a deliverable from." },
+      { "question": "Does local-first mean nothing ever leaves my computer?", "answer": "No. Local-first means work begins from your real desktop environment and files. Data handling still depends on the cloud models and connectors you choose, so each external path should be evaluated separately." },
+      { "question": "Can more than one agent work in the same workspace?", "answer": "Yes. Floatboat supports multiple agents working from shared project context, with human review, redirection, and approval remaining part of the process." }
+    ]
+  },
+  "finalCta": {
+    "title": "Give agent work a place to continue.",
+    "description": "Bring agents, files, tools, rules, and editable deliverables into one desktop workspace for Mac and Windows.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=final_cta" },
+    "secondaryCta": { "label": "Delegate to a Work Agent", "href": "/coworker" }
+  }
+}
