@@ -11,11 +11,11 @@ function Cta({ href, label, primary = false }: { href: string; label: string; pr
   return href.startsWith("/") ? <Link href={href} className={classes}>{label}</Link> : <a href={href} className={classes}>{label}</a>;
 }
 
-function SectionHeading({ eyebrow, title, description }: { eyebrow?: string; title: string; description: string }) {
+function SectionHeading({ eyebrow, title, description, inverted = false }: { eyebrow?: string; title: string; description: string; inverted?: boolean }) {
   return <div className="mx-auto mb-10 max-w-3xl text-center">
     {eyebrow && <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{eyebrow}</p>}
     <h2 className="font-serif text-3xl tracking-[-0.03em] sm:text-5xl">{title}</h2>
-    <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[var(--ob-color-text-subtle)] sm:text-lg">{description}</p>
+    <p className={`mx-auto mt-4 max-w-2xl text-base leading-7 sm:text-lg ${inverted ? "text-white/65" : "text-[var(--ob-color-text-subtle)]"}`}>{description}</p>
   </div>;
 }
 
@@ -90,7 +90,7 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       </div>
     </section>
 
-    <section className="bg-[#24221f] py-20 text-white sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><SectionHeading title={page.audiences.title} description={page.audiences.description} /><div className="grid gap-5 md:grid-cols-3">{page.audiences.items.map(item => <article key={item.title} className="rounded-3xl border border-white/10 bg-white/[0.04] p-7"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f7d68b]">{item.label}</p><h3 className="mt-8 font-serif text-2xl">{item.title}</h3><p className="mt-3 leading-7 text-white/65">{item.description}</p></article>)}</div></div></section>
+    <section className="bg-[#24221f] py-20 text-white sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><SectionHeading title={page.audiences.title} description={page.audiences.description} inverted /><div className="grid gap-5 md:grid-cols-3">{page.audiences.items.map(item => <article key={item.title} className="rounded-3xl border border-white/10 bg-white/[0.04] p-7"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f7d68b]">{item.label}</p><h3 className="mt-8 font-serif text-2xl">{item.title}</h3><p className="mt-3 leading-7 text-white/65">{item.description}</p></article>)}</div></div></section>
 
     <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28"><SectionHeading title={page.howItWorks.title} description={page.howItWorks.description} /><ol className="grid gap-8 md:grid-cols-3">{page.howItWorks.items.map((item, index) => <li key={item.title}><span className="font-serif text-5xl text-black/15">0{index + 1}</span><h3 className="mt-4 text-xl font-semibold">{item.title}</h3><p className="mt-2 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></li>)}</ol></section>
 

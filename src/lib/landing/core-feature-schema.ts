@@ -21,7 +21,7 @@ export const coreFeaturePageSchema = z.object({
   locale: z.enum(["en", "zh"]),
   seo: z.object({
     title: z.string().min(20),
-    description: z.string().min(80),
+    description: z.string().min(40),
     keywords: z.array(z.string().min(1)).min(3),
   }),
   breadcrumb: z.string().min(1),

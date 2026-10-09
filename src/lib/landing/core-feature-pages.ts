@@ -48,7 +48,13 @@ export function buildCoreFeatureMetadata(
 ): Metadata {
   const path = featurePath(page.locale, page.slug);
   const alternatePath = featurePath(page.locale === "en" ? "zh" : "en", page.slug);
-  const image = `/blog/landing/${page.slug}/og-${page.locale}.webp`;
+  const imageBySlug: Record<CoreFeatureSlug, string> = {
+    floatim: "/blog/images/introducing-floatim/1782710364987-7c54039b-3629-4fbf-846d-062532c5ae38.webp",
+    coworker: "/blog/images/ai-workspace-agents/1776938869107-4bf55783-56f6-40d6-a60f-b3adf3a971f0.webp",
+    "ai-scheduling-assistant": "/blog/images/ai-scheduling-agent/1782710542623-c3e3520b-3084-478b-82b4-d29dae842c00.webp",
+    "ai-file-organizer": `/blog/images/what-is-an-ai-file-organizer/og-${page.locale}.webp`,
+  };
+  const image = imageBySlug[page.slug];
 
   return {
     title: { absolute: page.seo.title },
@@ -67,7 +73,7 @@ export function buildCoreFeatureMetadata(
       title: page.seo.title,
       description: page.seo.description,
       url: path,
-      images: [{ url: image, width: 1200, height: 630 }],
+      images: [{ url: image }],
     },
     twitter: {
       card: "summary_large_image",
