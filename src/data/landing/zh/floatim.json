@@ -1,0 +1,84 @@
+{
+  "slug": "floatim",
+  "locale": "zh",
+  "seo": {
+    "title": "FloatIM：面向人与 AI Agent 的原生协作群聊",
+    "description": "让人与 AI Agent 在共享项目空间中协作，把对话、任务交接、文件、决策和最终产物保留在同一个工作上下文中。",
+    "keywords": ["AI Agent 群聊", "Agent 工作空间", "多 Agent 协作", "FloatIM"]
+  },
+  "breadcrumb": "FloatIM",
+  "hero": {
+    "eyebrow": "Agent 原生沟通",
+    "title": "让人、Agent 和它们之间的工作待在同一个房间。",
+    "description": "FloatIM 为每个项目提供共享空间：人可以分配工作，Agent 可以相互协作，最终产物与产生它的决策和上下文保持关联。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=floatim&download_placement=hero" },
+    "secondaryCta": { "label": "阅读 FloatIM 介绍", "href": "/zh/blog/introducing-floatim" },
+    "proof": ["人与 Agent 共同参与", "共享项目上下文", "可检查的任务交接"]
+  },
+  "demo": { "eyebrow": "工作空间，而不是另一个收件箱", "title": "查看工作如何在不同专家之间流转", "description": "研究任务可以转化为草稿，再形成经过审查的交付物，无需在多个聊天窗口之间复制上下文。" },
+  "features": {
+    "eyebrow": "围绕工作构建",
+    "title": "让对话成为真正的工作界面。",
+    "description": "每个空间都容纳推进同一项工作所需的人、Agent、上下文和产物。",
+    "items": [
+      { "label": "空间", "title": "项目上下文集中保存", "description": "消息、文件、决策和输出位于同一空间，不再散落在相互隔离的聊天记录中。" },
+      { "label": "Agent", "title": "不同专家可以交接工作", "description": "研究 Agent 可以把证据交给写作 Agent，同时保留来源、约束和原始任务要求。" },
+      { "label": "控制", "title": "人始终参与关键决策", "description": "你可以查看进度、澄清判断并批准重要操作，而不必手动管理每一个中间步骤。" }
+    ]
+  },
+  "scenario": {
+    "eyebrow": "一次产品发布",
+    "title": "把分散消息变成一条可见的工作链。",
+    "description": "原本横跨聊天、文档和任务工具的发布工作，可以在同一个共享空间中完成。",
+    "steps": [
+      { "title": "定义结果", "description": "一次性提供目标、截止时间、参考资料和执行边界。" },
+      { "title": "按专业分工", "description": "研究、写作和审查 Agent 分别承担适合自己的部分。" },
+      { "title": "审查最终产物", "description": "最终结果连同来源、关键决策和交接历史一起返回。" }
+    ]
+  },
+  "audiences": {
+    "title": "适合所有需要多个角色共同完成的工作。",
+    "description": "FloatIM 面向已经需要协调多个工具、协作者或 AI Agent 的个人和团队。",
+    "items": [
+      { "label": "个人经营者", "title": "运行一个小型 Agent 团队", "description": "为研究、运营和内容 Agent 设置不同职责，而不必亲自充当消息中转站。" },
+      { "label": "工作室", "title": "让客户与 Agent 保持同步", "description": "按项目划分空间，同时保留任务要求、修改记录和交付物。" },
+      { "label": "团队", "title": "把 Agent 加入真实协作", "description": "让 Agent 在共享工作中直接贡献，而不是再增加一层彼此割裂的自动化。" }
+    ]
+  },
+  "howItWorks": {
+    "title": "从一个项目空间开始，按需要增加能力。",
+    "description": "即使更多人和 Agent 加入，整个工作流程依然清晰可见。",
+    "items": [
+      { "title": "创建项目空间", "description": "明确目标，并加入定义这项工作的文件和上下文。" },
+      { "title": "邀请人与 Agent", "description": "加入需要参与的协作者和专业 Agent。" },
+      { "title": "批准并复用", "description": "审查结果、保留历史，并在下一个项目中复用成功的工作方式。" }
+    ]
+  },
+  "comparison": {
+    "title": "Agent 原生协作不等于在聊天软件里加入机器人。",
+    "description": "关键区别在于 Agent 是外围应答工具，还是工作中的正式参与者。",
+    "columns": ["FloatIM", "传统团队聊天"],
+    "rows": [
+      { "label": "Agent 角色", "values": ["正式协作者", "机器人或集成"] },
+      { "label": "工作上下文", "values": ["空间级、持续保存", "散落在消息和应用中"] },
+      { "label": "Agent 交接", "values": ["可见且结构化", "通常依靠人工"] },
+      { "label": "产物", "values": ["与决策保持关联", "以孤立链接形式分享"] }
+    ]
+  },
+  "faq": {
+    "title": "关于 FloatIM",
+    "items": [
+      { "question": "FloatIM 是另一个 Slack 替代品吗？", "answer": "FloatIM 围绕人与 AI Agent 的协作设计。消息是交互界面，但核心目标是协调委派工作，并将上下文和产物保存在一起。" },
+      { "question": "Agent 执行之前可以由人审查吗？", "answer": "可以。重要操作可以设置审批节点，常规研究、草拟和整理则可以在两次审查之间继续进行。" },
+      { "question": "所有项目都会共享同一套上下文吗？", "answer": "不会。项目空间会隔离上下文，避免无关客户或项目之间共享文件、决策和 Agent 工作记录。" },
+      { "question": "是否必须先构建自己的 Agent？", "answer": "不需要。你可以从 Floatboat 已有的 Agent 和 Skills 开始，再根据重复工作逐步加入专用流程。" }
+    ]
+  },
+  "finalCta": {
+    "title": "给你的 Agent 一个共同工作的地方。",
+    "description": "下载 Floatboat，把人与 Agent、上下文和交付物放进同一个共享工作空间。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=floatim&download_placement=final_cta" },
+    "secondaryCta": { "label": "了解工作空间 Agent", "href": "/zh/blog/ai-workspace-agents" }
+  }
+}
+

@@ -1,0 +1,83 @@
+{
+  "slug": "ai-file-organizer",
+  "locale": "zh",
+  "seo": {
+    "title": "AI 文件整理器：预览并批准后再整理本地文件",
+    "description": "使用 AI Agent 整理、重命名和分类本地文件，在电脑上执行经过批准的操作之前，先完整预览建议的目录结构和文件变更。",
+    "keywords": ["AI 文件整理器", "AI 整理文件", "自动文件分类", "AI 文件重命名"]
+  },
+  "breadcrumb": "AI 文件整理器",
+  "hero": {
+    "eyebrow": "本地文件整理",
+    "title": "描述你想要的秩序，在移动任何文件前先预览。",
+    "description": "让 Floatboat 检查杂乱文件夹、提出可用的整理结构，并只在你批准后直接在电脑上执行重命名和移动。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=file-organizer&download_placement=hero" },
+    "secondaryCta": { "label": "了解 AI 文件整理器", "href": "/zh/blog/what-is-an-ai-file-organizer" },
+    "proof": ["在本地文件夹运行", "执行前完整预览", "逐文件报告结果"]
+  },
+  "demo": { "eyebrow": "可检查的整理流程", "title": "应用变更之前先审查建议结构", "description": "整理器把分析与执行分开，让你可以在文件发生变化之前修正分类和命名规则。" },
+  "features": {
+    "eyebrow": "根据上下文整理",
+    "title": "不只是按照文件扩展名移动文件。",
+    "description": "Floatboat 可以结合文件名、目录上下文和文档内容，提出符合实际工作的整理结构。",
+    "items": [
+      { "label": "理解", "title": "按照含义归类文件", "description": "即使命名不一致，也能区分合同、发票、研究资料、草稿和素材。" },
+      { "label": "预览", "title": "查看每一项建议变更", "description": "在批准操作之前检查目标目录和新文件名。" },
+      { "label": "复用", "title": "保存成功的整理规则", "description": "在新的下载目录、客户文件夹或周期项目中复用相同结构。" }
+    ]
+  },
+  "scenario": {
+    "eyebrow": "拥挤的下载文件夹",
+    "title": "把混杂文件变成值得信任的结构。",
+    "description": "整理器可以识别哪些文件属于同一类、标记不确定项目，并留下可以审计的结果。",
+    "steps": [
+      { "title": "选择文件夹", "description": "把任务范围限定在你希望 Agent 检查的确切本地目录。" },
+      { "title": "审查整理方案", "description": "检查建议分类、文件名、重复项和需要人工决定的文件。" },
+      { "title": "批准变更", "description": "执行已经接受的移动操作，并获得逐文件结果摘要。" }
+    ]
+  },
+  "audiences": {
+    "title": "适合所有文件到达速度超过人工分类速度的工作。",
+    "description": "当文件夹混合了不同项目、格式、来源和命名习惯时，整理器最有价值。",
+    "items": [
+      { "label": "自由职业者", "title": "清晰分离客户工作", "description": "把收到的素材、参考资料、合同和交付物整理进一致的项目结构。" },
+      { "label": "运营人员", "title": "标准化周期性记录", "description": "使用可复用规则重命名并归档发票、报告、收据和导出数据。" },
+      { "label": "创作者", "title": "整理素材和研究资料", "description": "归类源视频、转写稿、缩略图和草稿，无需把整个资料库上传到外部服务。" }
+    ]
+  },
+  "howItWorks": {
+    "title": "先分析，再执行文件操作。",
+    "description": "整个流程在理解文件夹和真正改变文件之间建立清晰边界。",
+    "items": [
+      { "title": "描述目标结构", "description": "说明最终结果、命名规则和必须保持不变的文件夹。" },
+      { "title": "修正预览", "description": "在执行前审查不确定匹配并调整分类。" },
+      { "title": "执行并检查记录", "description": "运行批准的变更，并查看移动、重命名、跳过和重复文件摘要。" }
+    ]
+  },
+  "comparison": {
+    "title": "规则只能整理文件名，Agent 可以理解文件背后的工作。",
+    "description": "当扩展名和命名模式不足以完成分类时，根据含义整理会更有价值。",
+    "columns": ["Floatboat", "规则型整理工具"],
+    "rows": [
+      { "label": "使用文件上下文", "values": ["支持", "通常不支持"] },
+      { "label": "预览全部变更", "values": ["属于核心流程", "视工具而定"] },
+      { "label": "处理不确定项", "values": ["标记并等待审查", "直接应用规则"] },
+      { "label": "本地执行", "values": ["在你的电脑上", "视工具而定"] }
+    ]
+  },
+  "faq": {
+    "title": "关于 AI 文件整理器",
+    "items": [
+      { "question": "整理器会上传我的文件吗？", "answer": "该流程围绕电脑上的本地文件夹设计。你决定访问范围，并可以在批准文件操作前审查完整方案。" },
+      { "question": "它可以同时重命名和移动文件吗？", "answer": "可以。一份批准的方案可以创建目录、重命名文件并将其移动到建议位置，同时逐文件报告结果。" },
+      { "question": "Agent 无法确定分类时怎么办？", "answer": "不确定匹配应该被标记出来供你审查，而不是被强行归类。你可以在执行前修正方案。" },
+      { "question": "整理方法可以重复使用吗？", "answer": "可以。成功的规则可以保存为可复用工作流，用于周期导出、客户入驻、下载目录或项目归档。" }
+    ]
+  },
+  "finalCta": {
+    "title": "整理文件夹，同时保留控制权。",
+    "description": "让 Floatboat 提出结构、审查重要变更，并在本地整理已经批准的文件。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=file-organizer&download_placement=final_cta" },
+    "secondaryCta": { "label": "对比文件整理工具", "href": "/zh/blog/best-ai-file-organizer" }
+  }
+}

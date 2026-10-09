@@ -1,0 +1,84 @@
+{
+  "slug": "ai-scheduling-assistant",
+  "locale": "zh",
+  "seo": {
+    "title": "AI 日程助理：让日历时间真正触发并完成工作",
+    "description": "使用能够准备、执行和跟进计划任务的 AI 日程助理，同时保留原有日历、项目上下文和必要的人工审批边界。",
+    "keywords": ["AI 日程助理", "日历 Agent", "自动化日程", "Agentic Calendar"]
+  },
+  "breadcrumb": "AI 日程助理",
+  "hero": {
+    "eyebrow": "Agent 工作空间中的日程能力",
+    "title": "日历不应只提醒你工作，还应该触发工作。",
+    "description": "把会议、截止时间和周期性时间块变成 Agent 可以准备、执行并跟进的任务，同时保留在同一个工作空间中。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=scheduling&download_placement=hero" },
+    "secondaryCta": { "label": "对比 AI 日程助理", "href": "/zh/blog/best-ai-scheduling-assistants" },
+    "proof": ["兼容现有日历", "提前准备任务", "需要时由人审批"]
+  },
+  "demo": { "eyebrow": "让时间成为触发器", "title": "查看一个日程时间块如何变成准备好的工作", "description": "Floatboat 可以在事件前收集上下文、执行可重复步骤，并在事件结束后安排后续行动。" },
+  "features": {
+    "eyebrow": "不止安排时间",
+    "title": "让日程把时间与执行连接起来。",
+    "description": "日历依旧保持熟悉，工作空间负责围绕它完成准备和后续处理。",
+    "items": [
+      { "label": "准备", "title": "开始之前准备好上下文", "description": "在会议或工作时间块开始前收集文档、过往决策和待解决问题。" },
+      { "label": "执行", "title": "把周期事件变成工作流", "description": "使用日程触发报告、审查、研究或其他可重复任务。" },
+      { "label": "跟进", "title": "事件结束后完成闭环", "description": "生成行动项、整理产物并安排下一步，让上下文不在会后丢失。" }
+    ]
+  },
+  "scenario": {
+    "eyebrow": "每周复盘",
+    "title": "日程到来时，相关工作已经准备完成。",
+    "description": "无需打开日历后重新拼凑这一周，让 Agent 提前组织好复盘材料。",
+    "steps": [
+      { "title": "日程生成任务", "description": "周期事件提供截止时间、执行节奏和基本目标。" },
+      { "title": "Agent 收集输入", "description": "相关文件、笔记和未完成行动会在事件前完成整理。" },
+      { "title": "由你审查和决策", "description": "会议从准备好的简报开始，批准的后续行动返回工作空间继续执行。" }
+    ]
+  },
+  "audiences": {
+    "title": "适合日历中包含大量周期性运营工作的用户。",
+    "description": "当每个周期时间块都带有准备和跟进工作时，日程 Agent 的价值最明显。",
+    "items": [
+      { "label": "个人经营者", "title": "维持稳定运营节奏", "description": "运行每周计划、报告和跟进，而不必每次重新搭建流程。" },
+      { "label": "客户团队", "title": "提前准备每次客户复盘", "description": "将最新产物、开放问题和决策带入每个计划好的客户节点。" },
+      { "label": "创作者", "title": "保持内容发布节奏", "description": "把研究、写作、审查和发布连接到日历，但不把整个工作空间局限为日历。" }
+    ]
+  },
+  "howItWorks": {
+    "title": "保留现有日历，增加一层执行能力。",
+    "description": "Floatboat 把日程时间作为更大 Agent 工作空间中的一个工作来源。",
+    "items": [
+      { "title": "连接或导入日程", "description": "继续使用当前工作依赖的日历系统。" },
+      { "title": "附加可复用任务", "description": "定义事件前后需要准备、执行或审查的内容。" },
+      { "title": "在正确时间接收结果", "description": "获得产物、决策请求或下一步行动，而不是只有一个提醒。" }
+    ]
+  },
+  "comparison": {
+    "title": "安排时间与完成工作是两件不同的事。",
+    "description": "传统工具优化空闲时间；Agentic Scheduler 把时间连接到上下文和执行。",
+    "columns": ["Floatboat", "传统日程工具"],
+    "rows": [
+      { "label": "安排会议", "values": ["支持", "支持"] },
+      { "label": "准备上下文", "values": ["由 Agent 协助", "通常手动完成"] },
+      { "label": "执行计划任务", "values": ["支持", "不支持"] },
+      { "label": "处理后续行动", "values": ["属于同一工作流", "依赖提醒或外部工具"] }
+    ]
+  },
+  "faq": {
+    "title": "关于 AI 日程助理",
+    "items": [
+      { "question": "Floatboat 会替代我的日历吗？", "answer": "不会。它会继续使用现有日历，并围绕已安排的时间增加准备、执行和跟进能力。" },
+      { "question": "日历事件可以运行周期工作流吗？", "answer": "可以。周期事件可以连接周报、会议简报、内容审查或跟进流程等可重复任务。" },
+      { "question": "Agent 会在没有批准时直接行动吗？", "answer": "审批边界由工作流决定。常规准备可以自动运行，外部消息、文件变更或其他重要操作则可以等待审查。" },
+      { "question": "日程还是 Floatboat 的唯一核心定位吗？", "answer": "不是。日程是 Floatboat Agent 工作空间中的一项重要能力；文件、工具、Agent、持续上下文和审批共同组成更完整的工作环境。" }
+    ]
+  },
+  "finalCta": {
+    "title": "让已经预留的时间真正带来执行结果。",
+    "description": "使用 Floatboat 准备日程工作、运行重复步骤，并将后续行动留在项目上下文中。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=scheduling&download_placement=final_cta" },
+    "secondaryCta": { "label": "什么是 Agentic Calendar？", "href": "/zh/blog/what-is-agentic-calendar" }
+  }
+}
+

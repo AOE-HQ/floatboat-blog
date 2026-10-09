@@ -1,0 +1,83 @@
+{
+  "slug": "ai-file-organizer",
+  "locale": "en",
+  "seo": {
+    "title": "AI File Organizer — Organize Local Files With Preview and Approval",
+    "description": "Organize, rename, and sort local files with an AI agent that previews the proposed structure before making approved changes on your computer.",
+    "keywords": ["AI file organizer", "organize files with AI", "automatic file organizer", "AI file renamer"]
+  },
+  "breadcrumb": "AI File Organizer",
+  "hero": {
+    "eyebrow": "Local file organization",
+    "title": "Describe the order you want. Preview it before anything moves.",
+    "description": "Let Floatboat inspect a messy folder, propose a useful structure, and apply only the renames and moves you approve—directly on your computer.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=hero" },
+    "secondaryCta": { "label": "See how AI organizers work", "href": "/blog/what-is-an-ai-file-organizer" },
+    "proof": ["Runs on local folders", "Preview before execution", "Per-file results"]
+  },
+  "demo": { "eyebrow": "A reversible workflow", "title": "Inspect the proposed structure before applying it", "description": "The organizer separates analysis from execution so you can correct categories and naming rules before files change." },
+  "features": {
+    "eyebrow": "Organize with context",
+    "title": "More than moving files by extension.",
+    "description": "Floatboat can use filenames, folder context, and document content to propose a structure that reflects the work itself.",
+    "items": [
+      { "label": "Understand", "title": "Group files by meaning", "description": "Separate contracts, invoices, research, drafts, and assets even when filenames are inconsistent." },
+      { "label": "Preview", "title": "See every proposed change", "description": "Review destinations and new names before approving the operation." },
+      { "label": "Repeat", "title": "Save the organization rule", "description": "Reuse a successful structure for future downloads, client folders, or recurring projects." }
+    ]
+  },
+  "scenario": {
+    "eyebrow": "A crowded Downloads folder",
+    "title": "Turn a mixed folder into a structure you can trust.",
+    "description": "The organizer can identify what belongs together, flag uncertain files, and leave you with an auditable result.",
+    "steps": [
+      { "title": "Choose the folder", "description": "Scope the task to the exact local directory you want the agent to inspect." },
+      { "title": "Review the plan", "description": "Check proposed groups, filenames, duplicates, and files that need a decision." },
+      { "title": "Approve the changes", "description": "Apply the accepted moves and receive a per-file summary of what happened." }
+    ]
+  },
+  "audiences": {
+    "title": "Useful wherever files arrive faster than people can classify them.",
+    "description": "The organizer works best on folders that mix projects, formats, sources, and naming conventions.",
+    "items": [
+      { "label": "Freelancers", "title": "Separate client work cleanly", "description": "Sort incoming assets, references, contracts, and deliverables into consistent project structures." },
+      { "label": "Operations", "title": "Standardize recurring records", "description": "Rename and place invoices, reports, receipts, and exported data using repeatable rules." },
+      { "label": "Creators", "title": "Tame footage and research", "description": "Group source media, transcripts, thumbnails, and drafts without uploading the archive to a separate service." }
+    ]
+  },
+  "howItWorks": {
+    "title": "Analysis first. File operations second.",
+    "description": "The workflow creates a clear boundary between understanding the folder and changing it.",
+    "items": [
+      { "title": "Describe the target structure", "description": "Explain the outcome, naming convention, and folders that must remain untouched." },
+      { "title": "Correct the preview", "description": "Review uncertain matches and adjust categories before execution." },
+      { "title": "Apply and audit", "description": "Run the approved changes and keep a summary of moved, renamed, skipped, and duplicate files." }
+    ]
+  },
+  "comparison": {
+    "title": "Rules sort filenames. An agent can organize the work behind them.",
+    "description": "Meaning-aware organization is useful when extensions and naming patterns are not enough.",
+    "columns": ["Floatboat", "Rule-based organizer"],
+    "rows": [
+      { "label": "Uses file context", "values": ["Yes", "Usually no"] },
+      { "label": "Previews every change", "values": ["Built into the workflow", "Varies"] },
+      { "label": "Handles ambiguity", "values": ["Flags for review", "Applies the rule"] },
+      { "label": "Local execution", "values": ["On your computer", "Depends on the tool"] }
+    ]
+  },
+  "faq": {
+    "title": "File Organizer questions",
+    "items": [
+      { "question": "Does the organizer upload my files?", "answer": "The workflow is designed around local folders on your computer. You choose the scope and can review the plan before approved file operations run." },
+      { "question": "Can it rename and move files together?", "answer": "Yes. A single approved plan can create folders, rename files, and move them into the proposed structure while reporting the result per file." },
+      { "question": "What happens when the agent is unsure?", "answer": "Uncertain matches should be surfaced for review rather than silently forced into a category. You can correct the plan before execution." },
+      { "question": "Can I reuse an organization system?", "answer": "Yes. A successful rule can become a reusable workflow for recurring exports, client onboarding, downloads, or project archives." }
+    ]
+  },
+  "finalCta": {
+    "title": "Clean the folder without surrendering control.",
+    "description": "Let Floatboat propose the structure, review every important change, and organize the approved files locally.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=final_cta" },
+    "secondaryCta": { "label": "Compare file organizers", "href": "/blog/best-ai-file-organizer" }
+  }
+}

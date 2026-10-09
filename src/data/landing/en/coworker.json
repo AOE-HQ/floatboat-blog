@@ -1,0 +1,84 @@
+{
+  "slug": "coworker",
+  "locale": "en",
+  "seo": {
+    "title": "Floatboat Coworker — A Local-First AI Workspace for Real Work",
+    "description": "Work with an AI coworker that can use project files, tools, and persistent context on your computer while keeping important actions visible and reviewable.",
+    "keywords": ["AI coworker", "local AI workspace", "workspace agent", "desktop AI agent"]
+  },
+  "breadcrumb": "AI Coworker",
+  "hero": {
+    "eyebrow": "A workspace agent on your computer",
+    "title": "An AI coworker that works where your work already lives.",
+    "description": "Give Floatboat a goal and let it work across files, tools, and project context on your computer—while you keep control of permissions, approvals, and final decisions.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=hero" },
+    "secondaryCta": { "label": "Local or cloud?", "href": "/blog/local-first-vs-cloud-agent-workspace" },
+    "proof": ["Local project access", "Persistent context", "Reviewable actions"]
+  },
+  "demo": { "eyebrow": "A desk, not an empty chat", "title": "Give the agent a project instead of re-explaining it", "description": "The coworker can inspect the working folder, prepare deliverables, and save results back into the project." },
+  "features": {
+    "eyebrow": "Built for continuity",
+    "title": "Your files, tools, and context form one workspace.",
+    "description": "The coworker operates around the project rather than treating every request as a new conversation.",
+    "items": [
+      { "label": "Context", "title": "Projects remember how work is done", "description": "Keep briefs, references, working rules, and prior outputs available to the next task." },
+      { "label": "Execution", "title": "The agent can produce real artifacts", "description": "Move beyond answers in a chat window to documents, organized files, research, and repeatable workflows." },
+      { "label": "Boundaries", "title": "Local access stays explicit", "description": "Scope the folders and tools the coworker can use and review actions that deserve human judgment." }
+    ]
+  },
+  "scenario": {
+    "eyebrow": "A client brief",
+    "title": "Turn a folder of context into a finished deliverable.",
+    "description": "The coworker can read the source material, identify gaps, assemble a brief, and save the result without a manual upload loop.",
+    "steps": [
+      { "title": "Point to the project", "description": "Choose the folder and describe the outcome rather than uploading files one by one." },
+      { "title": "Inspect the work", "description": "Follow what the agent read, what it produced, and where judgment is still required." },
+      { "title": "Keep the result in context", "description": "Save the artifact beside the source material so the next task starts from the completed work." }
+    ]
+  },
+  "audiences": {
+    "title": "For work that spans more than one prompt.",
+    "description": "The coworker is most useful when output depends on existing files, repeated standards, and several connected steps.",
+    "items": [
+      { "label": "Founders", "title": "Move from decision to deliverable", "description": "Research a choice, prepare the document, and organize the follow-up without opening five separate tools." },
+      { "label": "Creators", "title": "Build on your existing body of work", "description": "Use drafts, references, and voice examples already stored in the project." },
+      { "label": "Operators", "title": "Standardize repeated client work", "description": "Keep project rules and reusable procedures close to the files they govern." }
+    ]
+  },
+  "howItWorks": {
+    "title": "Give context once, then work in a visible loop.",
+    "description": "The coworker combines autonomy for routine steps with checkpoints for decisions.",
+    "items": [
+      { "title": "Open a workspace", "description": "Choose the project and the local resources relevant to the job." },
+      { "title": "Describe the outcome", "description": "State what done looks like, including constraints and approval boundaries." },
+      { "title": "Review the artifacts", "description": "Inspect the work, correct the reusable context, and approve the final result." }
+    ]
+  },
+  "comparison": {
+    "title": "A coworker is not just a longer chat session.",
+    "description": "It is the combination of context, tools, files, and controlled execution that changes the working model.",
+    "columns": ["Floatboat Coworker", "General AI chat"],
+    "rows": [
+      { "label": "Starting context", "values": ["Project workspace", "Blank conversation"] },
+      { "label": "Local files", "values": ["Scoped in place", "Uploaded manually"] },
+      { "label": "Outputs", "values": ["Saved as project artifacts", "Returned mainly as messages"] },
+      { "label": "Repeat work", "values": ["Reusable skills and context", "Prompt recreated each time"] }
+    ]
+  },
+  "faq": {
+    "title": "AI Coworker questions",
+    "items": [
+      { "question": "What makes this different from a chatbot?", "answer": "The coworker operates inside a persistent workspace with project files, tools, and reusable instructions. It can produce and organize artifacts instead of only returning an answer." },
+      { "question": "Does Floatboat upload every local file?", "answer": "No. Access is scoped to the work you choose. Local-first execution is intended to avoid unnecessary upload loops and to keep sensitive project material under clearer control." },
+      { "question": "Can I see what the agent is doing?", "answer": "Yes. The workspace is designed around visible steps, outputs, and approval boundaries rather than invisible background automation." },
+      { "question": "Can I reuse a successful workflow?", "answer": "Yes. Repeatable instructions can become skills or Combos so the next project starts with a tested working method." }
+    ]
+  },
+  "finalCta": {
+    "title": "Give your AI a real place to work.",
+    "description": "Bring project context, local files, tools, and reviewable execution into one workspace on your computer.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=final_cta" },
+    "secondaryCta": { "label": "Learn about workspace agents", "href": "/blog/ai-workspace-agents" }
+  }
+}
+

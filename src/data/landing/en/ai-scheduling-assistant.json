@@ -1,0 +1,84 @@
+{
+  "slug": "ai-scheduling-assistant",
+  "locale": "en",
+  "seo": {
+    "title": "AI Scheduling Assistant — Turn Calendar Time Into Executed Work",
+    "description": "Use an AI scheduling assistant that prepares, runs, and follows up on scheduled work while keeping your existing calendar and approval boundaries.",
+    "keywords": ["AI scheduling assistant", "calendar agent", "automated scheduling", "agentic calendar"]
+  },
+  "breadcrumb": "AI Scheduling Assistant",
+  "hero": {
+    "eyebrow": "Scheduling inside an agent workspace",
+    "title": "Your calendar should trigger work, not just remind you about it.",
+    "description": "Turn meetings, deadlines, and recurring blocks into agent-ready tasks that can be prepared, executed, and followed up from the same workspace.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=scheduling&download_placement=hero" },
+    "secondaryCta": { "label": "Compare scheduling assistants", "href": "/blog/best-ai-scheduling-assistants" },
+    "proof": ["Works with existing calendars", "Prepares scheduled tasks", "Human approval where needed"]
+  },
+  "demo": { "eyebrow": "Time becomes a trigger", "title": "See a scheduled block turn into prepared work", "description": "Floatboat can gather context before the event, run repeatable steps, and queue the follow-up after it ends." },
+  "features": {
+    "eyebrow": "Beyond booking",
+    "title": "Scheduling connects time to execution.",
+    "description": "The calendar remains familiar while the workspace handles the preparation and follow-through around it.",
+    "items": [
+      { "label": "Prepare", "title": "Arrive with the context ready", "description": "Collect documents, prior decisions, and open questions before a meeting or work block begins." },
+      { "label": "Run", "title": "Turn recurring events into workflows", "description": "Use a schedule to trigger reports, reviews, research, or other repeatable tasks." },
+      { "label": "Follow up", "title": "Close the loop after the event", "description": "Generate action items, organize outputs, and schedule the next step while the context is still fresh." }
+    ]
+  },
+  "scenario": {
+    "eyebrow": "A weekly review",
+    "title": "The event arrives with the work already prepared.",
+    "description": "Instead of opening a calendar block and reconstructing the week, let the agent assemble the review package beforehand.",
+    "steps": [
+      { "title": "The schedule creates a task", "description": "A recurring event provides the deadline, cadence, and basic intent." },
+      { "title": "The agent gathers the inputs", "description": "Relevant files, notes, and unfinished actions are assembled before the event." },
+      { "title": "You review and decide", "description": "The meeting starts from a prepared brief, and approved follow-ups return to the workspace." }
+    ]
+  },
+  "audiences": {
+    "title": "For people whose calendars contain repeated operational work.",
+    "description": "Scheduling becomes more valuable when every recurring block has preparation and follow-up attached to it.",
+    "items": [
+      { "label": "Solo operators", "title": "Protect the operating rhythm", "description": "Run weekly planning, reporting, and follow-up without rebuilding the process each time." },
+      { "label": "Client teams", "title": "Prepare every account review", "description": "Bring the latest artifacts, open questions, and decisions into each scheduled client touchpoint." },
+      { "label": "Creators", "title": "Keep a publishing cadence moving", "description": "Connect research, drafting, review, and distribution to the calendar without making the calendar the whole workspace." }
+    ]
+  },
+  "howItWorks": {
+    "title": "Keep your calendar. Add an execution layer.",
+    "description": "Floatboat treats calendar time as one source of work inside a broader agent workspace.",
+    "items": [
+      { "title": "Connect or import the schedule", "description": "Use the calendar system your work already depends on." },
+      { "title": "Attach a reusable task", "description": "Define what should be prepared, executed, or reviewed around the event." },
+      { "title": "Receive the result and follow-up", "description": "Get the artifact, decision request, or next action at the right moment." }
+    ]
+  },
+  "comparison": {
+    "title": "Booking time and running work are different jobs.",
+    "description": "Traditional calendar tools optimize availability; an agentic scheduler connects time to context and execution.",
+    "columns": ["Floatboat", "Traditional scheduler"],
+    "rows": [
+      { "label": "Books meetings", "values": ["Yes", "Yes"] },
+      { "label": "Prepares context", "values": ["Agent-assisted", "Usually manual"] },
+      { "label": "Runs scheduled tasks", "values": ["Yes", "No"] },
+      { "label": "Handles follow-up", "values": ["Part of the workflow", "Reminder or external tool"] }
+    ]
+  },
+  "faq": {
+    "title": "Scheduling Assistant questions",
+    "items": [
+      { "question": "Does Floatboat replace my calendar?", "answer": "No. The goal is to work with the calendars you already use and add preparation, execution, and follow-up around scheduled time." },
+      { "question": "Can a calendar event run a recurring workflow?", "answer": "Yes. A recurring event can be connected to a repeatable task such as a weekly report, meeting brief, content review, or follow-up sequence." },
+      { "question": "Will the agent act without approval?", "answer": "Approval boundaries depend on the workflow. Routine preparation can run automatically while external messages, file changes, or other consequential actions can wait for review." },
+      { "question": "Is scheduling still the main Floatboat product?", "answer": "Scheduling is one important capability inside the broader Floatboat agent workspace. Files, tools, agents, persistent context, and approvals form the larger operating environment." }
+    ]
+  },
+  "finalCta": {
+    "title": "Put execution behind the time you already reserved.",
+    "description": "Use Floatboat to prepare scheduled work, run repeatable steps, and keep the follow-up attached to the project.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=scheduling&download_placement=final_cta" },
+    "secondaryCta": { "label": "What is an agentic calendar?", "href": "/blog/what-is-agentic-calendar" }
+  }
+}
+
