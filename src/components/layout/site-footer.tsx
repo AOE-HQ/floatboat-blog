@@ -87,7 +87,7 @@ function DiscordIcon() {
  * locale-aware labels and the Contact link. The newsletter card keeps the
  * per-article copy feature; its design is identical to the main site.
  */
-export function SiteFooter() {
+export function SiteFooter({ showNewsletter = true }: { showNewsletter?: boolean }) {
   const pathname = usePathname() ?? "/";
   const locale = getLocaleFromPathname(pathname);
   const isZh = locale === "zh";
@@ -101,9 +101,11 @@ export function SiteFooter() {
   return (
     <footer id="footer">
       <div className="mx-auto max-w-[1440px]">
-        <div className="px-10 pt-12 pb-8 max-lg:px-5">
-          <NewsletterSubscribe copy={newsletterCopy} />
-        </div>
+        {showNewsletter && (
+          <div className="px-10 pt-12 pb-8 max-lg:px-5">
+            <NewsletterSubscribe copy={newsletterCopy} />
+          </div>
+        )}
 
         <div className="flex flex-col gap-4 px-10 py-6 max-lg:px-5 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col items-start gap-3">
@@ -157,8 +159,8 @@ export function SiteFooter() {
           <p className="text-[14px] font-normal leading-[1.43] text-[var(--ob-color-muted)]">
             © {new Date().getFullYear()} AOE Tech Labs Limited.{" "}
             {isZh
-              ? "让日历自动跑活的 Proactive Agent。"
-              : "The Proactive Agent that Runs Work from the Calendar."}
+              ? "让人与 Agent 在同一个工作空间完成工作。"
+              : "The AI workspace where people and agents get work done."}
           </p>
           <div className="flex flex-wrap items-center justify-start gap-2 sm:justify-center sm:gap-6">
             <a aria-label={isZh ? "博客" : "Blog"} title={isZh ? "博客" : "Blog"} href={blogHref} className={legalLinkClass}>

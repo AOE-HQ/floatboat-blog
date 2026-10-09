@@ -32,6 +32,62 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /floatim
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /coworker
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /ai-scheduling-assistant
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /ai-file-organizer
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/floatim
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/coworker
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/ai-scheduling-assistant
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/ai-file-organizer
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
     - host: www.floatboat.ai
       http:
         paths:
@@ -43,6 +99,62 @@ spec:
                 port:
                   number: 80
           - path: /zh/blog
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /floatim
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /coworker
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /ai-scheduling-assistant
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /ai-file-organizer
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/floatim
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/coworker
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/ai-scheduling-assistant
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/ai-file-organizer
             pathType: Prefix
             backend:
               service:

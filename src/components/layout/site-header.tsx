@@ -150,7 +150,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full bg-[var(--ob-color-bg-glass)] backdrop-blur-[16px]">
       <div className="mx-auto max-w-[1440px] px-10 max-lg:px-5">
         <div className="flex h-[76px] items-center gap-5">
-          <div className="flex-1">
+          <div className="min-w-0 flex-1">
             <a
               href={isZh ? `${FB_SITE}/zh` : FB_SITE}
               target="_self"
@@ -171,7 +171,7 @@ export function SiteHeader() {
 
           <nav
             aria-label="Primary"
-            className="relative flex max-w-max flex-1 shrink-0 items-center justify-center"
+            className="relative hidden max-w-max flex-1 shrink-0 items-center justify-center md:flex"
           >
             <ul className="flex flex-1 list-none items-center justify-center gap-6">
               {NAV_MENUS.map((group) => (
@@ -245,6 +245,64 @@ export function SiteHeader() {
               {isZh ? "下载" : "Download"}
             </a>
           </div>
+
+          <details className="group relative ml-auto shrink-0 md:hidden">
+            <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-full text-[var(--ob-color-text)] transition-colors hover:bg-black/[0.05] [&::-webkit-details-marker]:hidden">
+              <span className="sr-only">{isZh ? "打开导航菜单" : "Open navigation menu"}</span>
+              <svg
+                className="h-5 w-5 group-open:hidden"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                aria-hidden
+              >
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+              <svg
+                className="hidden h-5 w-5 group-open:block"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                aria-hidden
+              >
+                <path d="m6 6 12 12M18 6 6 18" />
+              </svg>
+            </summary>
+            <div className="absolute right-0 top-12 max-h-[calc(100vh-96px)] w-[min(320px,calc(100vw-40px))] overflow-y-auto rounded-2xl border border-black/[0.06] bg-white p-3 shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
+              <nav aria-label={isZh ? "移动端导航" : "Mobile navigation"}>
+                {NAV_MENUS.map((group) => (
+                  <div key={group.en} className="border-b border-black/[0.06] py-2 last:border-0">
+                    <p className="px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--ob-color-muted)]">
+                      {isZh ? group.zh : group.en}
+                    </p>
+                    {group.items.map((item) => (
+                      <a
+                        key={item.en}
+                        href={menuItemHref(item, isZh)}
+                        className="block rounded-lg px-3 py-2 text-sm font-medium text-[var(--ob-color-text)] hover:bg-[var(--ob-color-surface-hover)]"
+                      >
+                        {isZh ? item.zh : item.en}
+                      </a>
+                    ))}
+                  </div>
+                ))}
+                <div className="flex flex-wrap items-center gap-3 px-3 py-3">
+                  {NAV_LINKS.map((link) => (
+                    <a
+                      key={link.en}
+                      href={isZh ? link.zhHref : link.href}
+                      className="text-sm font-medium text-[var(--ob-color-text)]"
+                    >
+                      {isZh ? link.zh : link.en}
+                    </a>
+                  ))}
+                  <LanguageSwitcher />
+                </div>
+              </nav>
+            </div>
+          </details>
         </div>
       </div>
     </header>

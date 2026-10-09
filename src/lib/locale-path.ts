@@ -33,5 +33,12 @@ export function pathForLocale(pathname: string, targetLocale: BlogLocale): strin
     return `${blogPathForLocale(targetLocale)}${relative}`;
   }
 
+  const landingMatch = pathname.match(
+    /^\/(?:zh\/)?(floatim|coworker|ai-scheduling-assistant|ai-file-organizer)\/?$/,
+  );
+  if (landingMatch) {
+    return `${targetLocale === "zh" ? "/zh" : ""}/${landingMatch[1]}`;
+  }
+
   return blogPathForLocale(targetLocale);
 }
