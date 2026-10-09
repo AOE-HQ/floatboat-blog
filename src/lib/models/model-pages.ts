@@ -16,6 +16,7 @@ export type ModelLocale = "en" | "zh";
 
 type Localized = { en: string; zh: string };
 type Card = { label: Localized; title: string; description: Localized; meta: Localized };
+type ContentItem = { title: Localized; description: Localized };
 
 export type ModelFamily = {
   slug: ModelSlug;
@@ -24,7 +25,31 @@ export type ModelFamily = {
   badge: Localized;
   summary: Localized;
   hero: { title: Localized; description: Localized; prompts: Localized[] };
+  facts: Array<{ label: Localized; value: Localized }>;
+  positioning: {
+    eyebrow: Localized;
+    title: Localized;
+    description: Localized;
+    traits: Array<{ label: Localized; value: Localized; description: Localized }>;
+  };
   lineup: { eyebrow: Localized; title: Localized; description: Localized; items: Card[] };
+  workflows: {
+    eyebrow: Localized;
+    title: Localized;
+    description: Localized;
+    items: Array<{ title: Localized; brief: Localized; process: Localized; outcome: Localized }>;
+  };
+  capabilities: {
+    eyebrow: Localized;
+    title: Localized;
+    description: Localized;
+    items: ContentItem[];
+  };
+  selection: {
+    title: Localized;
+    choose: { title: Localized; items: Localized[] };
+    alternative: { title: Localized; items: Localized[] };
+  };
   steps?: { eyebrow: Localized; title: Localized; items: Array<{ title: Localized; description: Localized }> };
   extensions?: { eyebrow: Localized; title: Localized; items: Array<{ title: string; description: Localized }> };
   comparison?: { title: Localized; description: Localized; rows: Array<{ label: Localized; values: [Localized, Localized, Localized] }> };
