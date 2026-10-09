@@ -65,7 +65,7 @@ These four releases are best read as one platform move: build, render, trigger, 
 
 ## 5. Shared Work: Space, Pages, Slides, Teams, and Meetings
 
-**ChatGPT Space** gives a team, ChatGPT, and a dot a shared home for project files and context. It is available on desktop and web for Pro, Business, and Enterprise; mobile can find, read, and share pages, while mobile creation and editing are still coming.
+**[ChatGPT Space](/blog/what-is-chatgpt-space)** gives a team, ChatGPT, and a dot a shared home for project files and context. It is available on desktop and web for Pro, Business, and Enterprise; mobile can find, read, and share pages, while mobile creation and editing are still coming.
 
 **Pages** are collaborative documents where people and agents can write, research, generate charts and images, and build visualizations. **Collaborative slides**, due in the weeks after DevDay, add concurrent editing, comments, presentation, and export to PowerPoint or Google Slides.
 

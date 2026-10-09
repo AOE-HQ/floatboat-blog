@@ -30,6 +30,8 @@ The two words matter:
 
 Put together: an environment where AI doesn't wait passively for a prompt, but operates inside the mess of your day with some persistence and initiative.
 
+The category now spans different architectures. Our guide to [local-first versus cloud agent workspaces](/blog/local-first-vs-cloud-agent-workspace) explains where state and execution live; [ChatGPT Space](/blog/what-is-chatgpt-space) shows how a major chat product is adding durable Pages and files; and the connector guide explains how [MCP, OAuth, and permissions](/blog/ai-agent-connectors-explained) control access to outside systems.
+
 That's the shape of it. The specifics — how autonomous, how much memory, how it handles permissions — vary wildly between products. This category is still forming.
 
 ### Why a new category is emerging now

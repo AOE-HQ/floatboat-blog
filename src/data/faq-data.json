@@ -8855,6 +8855,46 @@
           "answer": "比它得到的口碑更友好，但有边界。GFM 渲染器会把表头行变成真正的 th 标记，而「数据单元格—表头」关联正是屏幕阅读器最需要的核心能力。Markdown 给不了的是 caption、scope 属性和多级表头，所以保持单行表头、把表格的结论写进表格前那段正文、绝不拿表格做页面布局。真正复杂的表格，诚实的工具是带完整无障碍属性的原始 HTML。"
         }
       ]
-    }
+    },
+    "/blog/local-first-vs-cloud-agent-workspace": {"items": [
+      {"question": "Does local-first mean the AI model runs offline?", "answer": "No. Local-first describes where the workspace state and authoritative files live. A local-first application can still call a cloud model, so check model routing, retention, and network settings separately."},
+      {"question": "Can a cloud agent access files on a sleeping laptop?", "answer": "Not unless those files were uploaded or synchronized elsewhere. A desktop bridge can expose local files, but it normally has to remain online for the cloud session to reach them."},
+      {"question": "Is a hybrid agent workspace safer?", "answer": "Only when its boundary is explicit. Keep sensitive files, credentials, and approvals in the trusted layer, give remote workers narrow access, and log what crosses the boundary."}
+    ]},
+    "/zh/blog/local-first-vs-cloud-agent-workspace": {"items": [
+      {"question": "本地优先是否意味着模型完全离线运行？", "answer": "不是。本地优先描述的是工作状态和权威文件主要存放在哪里，应用仍然可以调用云端模型，因此还要分别核对模型路由、数据保留和网络设置。"},
+      {"question": "电脑合盖后，云端 Agent 还能读取本地文件吗？", "answer": "通常不能，除非文件已经上传或同步到其他位置。桌面桥接可以开放本地文件，但设备和桥接程序一般必须在线。"},
+      {"question": "混合 Agent 工作站一定更安全吗？", "answer": "不一定。只有明确划分信任边界才有意义：敏感文件、凭证和审批留在可信层，远程执行只获得最小访问，并记录跨边界的数据与动作。"}
+    ]},
+    "/blog/what-is-chatgpt-space": {"items": [
+      {"question": "What is ChatGPT Space?", "answer": "ChatGPT Space is OpenAI's persistent home for editable Pages, uploaded files, organization, and collaboration inside ChatGPT. It replaces Library for accounts with access."},
+      {"question": "Is ChatGPT Space the same as Projects?", "answer": "No. Projects remain separate for project chats, files, and instructions. Space centers on Pages, uploaded work, organization, and collaboration."},
+      {"question": "Does ChatGPT Space run agents automatically?", "answer": "Space stores and organizes durable work. Always-on execution is a separate agent capability, while connectors determine which external systems those agents can use."}
+    ]},
+    "/zh/blog/what-is-chatgpt-space": {"items": [
+      {"question": "ChatGPT Space 是什么？", "answer": "它是 OpenAI 在 ChatGPT 中为可编辑 Pages、上传文件、内容组织和多人协作提供的持久空间；对于获得权限的账户，它会替代 Library。"},
+      {"question": "ChatGPT Space 和 Projects 是同一个功能吗？", "answer": "不是。Projects 仍独立存在，用于项目聊天、文件和指令；Space 更侧重 Pages、工作成果的组织与协作。"},
+      {"question": "ChatGPT Space 会自动持续运行 Agent 吗？", "answer": "Space 负责保存和组织长期工作。持续执行属于独立的 Agent 能力；Connector 决定这些 Agent 可以使用哪些外部系统。"}
+    ]},
+    "/blog/ai-agent-connectors-explained": {"items": [
+      {"question": "Is MCP the same as an AI connector?", "answer": "MCP is a protocol for exposing resources and tools to compatible AI hosts. A connector is the complete integration, which may include an MCP server, authentication, permissions, policies, and setup."},
+      {"question": "Why do agent connectors use OAuth?", "answer": "OAuth lets a user delegate limited account access without sharing a password. The token should be restricted by audience, expiration, scopes, and the user's resource permissions."},
+      {"question": "Should every agent action require approval?", "answer": "No. Read-only and reversible actions can often follow policy automatically. Sending, publishing, deleting, paying, or changing production systems deserves stricter approval."}
+    ]},
+    "/zh/blog/ai-agent-connectors-explained": {"items": [
+      {"question": "MCP 和 AI Connector 是一回事吗？", "answer": "MCP 是让兼容 AI Host 调用资源与工具的协议；Connector 是完整集成，可能同时包含 MCP Server、身份验证、权限、策略和配置界面。"},
+      {"question": "Agent Connector 为什么需要 OAuth？", "answer": "OAuth 让用户在不共享密码的情况下委托有限访问。Token 仍应受 Audience、有效期、Scope 和用户自身资源权限约束。"},
+      {"question": "Agent 的每个动作都应该审批吗？", "answer": "不需要。只读和可逆动作通常可以按策略自动执行；发送、发布、删除、付款或修改生产系统等动作，应设置更严格审批。"}
+    ]},
+    "/blog/what-is-an-agent-harness": {"items": [
+      {"question": "What is an agent harness?", "answer": "An agent harness is the runtime and control layer around a model. It manages context, the agent loop, tools, state, sandboxes, approvals, observability, and recovery."},
+      {"question": "How is a harness different from an agent framework?", "answer": "A framework or SDK helps developers build agent systems. A harness is the operating implementation that runs the loop and policies. A framework can be used to build a harness."},
+      {"question": "Can a better harness improve the same model?", "answer": "Yes. Better context selection, reliable tools, verification, state management, and recovery can materially improve completion quality without changing the underlying model."}
+    ]},
+    "/zh/blog/what-is-an-agent-harness": {"items": [
+      {"question": "Agent Harness 是什么？", "answer": "它是模型外围的运行和控制层，负责上下文、Agent Loop、工具、状态、沙箱、审批、可观测性和失败恢复。"},
+      {"question": "Agent Harness 和 Agent Framework 有什么区别？", "answer": "Framework 或 SDK 帮助开发者搭建 Agent 系统；Harness 是实际运行循环和策略的实现。开发者可以用 Framework 构建 Harness。"},
+      {"question": "不换模型，只优化 Harness 会有提升吗？", "answer": "会。更准确的上下文选择、更稳定的工具、验证、状态管理和恢复机制，都可能在模型不变的情况下明显提高任务完成质量。"}
+    ]}
   }
 }
