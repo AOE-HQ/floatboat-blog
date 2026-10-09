@@ -46,6 +46,13 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /agent-workspace
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /floatim
             pathType: Prefix
             backend:
@@ -75,6 +82,13 @@ spec:
                 port:
                   number: 80
           - path: /zh/floatim
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/agent-workspace
             pathType: Prefix
             backend:
               service:
@@ -133,6 +147,13 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /agent-workspace
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /floatim
             pathType: Prefix
             backend:
@@ -162,6 +183,13 @@ spec:
                 port:
                   number: 80
           - path: /zh/floatim
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/agent-workspace
             pathType: Prefix
             backend:
               service:
