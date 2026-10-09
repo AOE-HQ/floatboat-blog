@@ -70,4 +70,3 @@ export function FeatureDemo({ slug, locale }: { slug: CoreFeatureSlug; locale: L
     </div>
   );
 }
-

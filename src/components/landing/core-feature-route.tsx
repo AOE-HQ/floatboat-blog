@@ -4,4 +4,3 @@ import { getCoreFeaturePage, type CoreFeatureSlug, type LandingLocale } from "@/
 export function CoreFeatureRoute({ locale, slug }: { locale: LandingLocale; slug: CoreFeatureSlug }) {
   return <CoreFeaturePage page={getCoreFeaturePage(locale, slug)} />;
 }
-

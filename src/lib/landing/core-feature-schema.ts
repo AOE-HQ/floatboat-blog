@@ -79,4 +79,3 @@ export const coreFeaturePageSchema = z.object({
 });
 
 export type CoreFeaturePageData = z.infer<typeof coreFeaturePageSchema>;
-

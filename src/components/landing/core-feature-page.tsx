@@ -18,7 +18,6 @@ function SectionHeading({ eyebrow, title, description, inverted = false }: { eye
     <p className={`mx-auto mt-4 max-w-2xl text-base leading-7 sm:text-lg ${inverted ? "text-white/65" : "text-[var(--ob-color-text-subtle)]"}`}>{description}</p>
   </div>;
 }
-
 export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
   const isZh = page.locale === "zh";
   const currentPath = featurePath(page.locale, page.slug);
