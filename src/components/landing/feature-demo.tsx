@@ -2,26 +2,10 @@
 
 import { useState } from "react";
 
-import type { CoreFeatureSlug, LandingLocale } from "@/lib/landing/core-feature-pages";
+import type { LandingLocale } from "@/lib/landing/core-feature-pages";
 
-const demoCopy = {
-  en: {
-    floatim: ["Research the launch", "Draft the announcement", "Prepare the follow-up"],
-    coworker: ["Read the project folder", "Build the client brief", "Save the deliverables"],
-    "ai-scheduling-assistant": ["Prepare tomorrow's meeting", "Run the weekly report", "Queue the follow-up"],
-    "ai-file-organizer": ["Scan Downloads", "Preview the new structure", "Apply approved changes"],
-  },
-  zh: {
-    floatim: ["调研发布信息", "起草公告", "准备后续行动"],
-    coworker: ["读取项目文件夹", "生成客户简报", "保存交付物"],
-    "ai-scheduling-assistant": ["准备明天的会议", "执行周报任务", "安排后续跟进"],
-    "ai-file-organizer": ["扫描下载文件夹", "预览新结构", "执行已批准的变更"],
-  },
-} as const;
-
-export function FeatureDemo({ slug, locale }: { slug: CoreFeatureSlug; locale: LandingLocale }) {
+export function FeatureDemo({ items, locale }: { items: string[]; locale: LandingLocale }) {
   const [active, setActive] = useState(0);
-  const items = demoCopy[locale][slug];
   const isZh = locale === "zh";
 
   return (

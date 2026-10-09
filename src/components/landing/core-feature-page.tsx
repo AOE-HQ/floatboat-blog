@@ -67,7 +67,14 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
           {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-emerald-600">✓</span>{item}</li>)}
         </ul>
       </div>
-      <FeatureDemo slug={page.slug} locale={page.locale} />
+      <div>
+        <div className="mb-5 px-1">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{page.demo.eyebrow}</p>
+          <h2 className="mt-2 font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{page.demo.title}</h2>
+          <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--ob-color-text-subtle)]">{page.demo.description}</p>
+        </div>
+        <FeatureDemo items={page.scenario.steps.map((step) => step.title)} locale={page.locale} />
+      </div>
     </section>
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
