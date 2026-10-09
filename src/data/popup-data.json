@@ -1610,6 +1610,22 @@
         "body": "2004 年的语法、各方言分叉，以及为什么 agent 默认输出它——一次读完。"
       }
     },
+    "local-first-vs-cloud-agent-workspace": {
+      "en": {"title": "Keep your work local, send only what needs the cloud", "body": "See how Floatboat organizes files, agents, models, and human review in one local-first workspace."},
+      "zh": {"title": "工作留在本地，云端只做必要部分", "body": "看看 Floatboat 如何把文件、Agent、模型与人工审阅放进同一个本地优先工作站。"}
+    },
+    "what-is-chatgpt-space": {
+      "en": {"title": "Build around durable work, not disposable chats", "body": "Explore a local-first Agent Workspace where files and deliverables remain visible and under your control."},
+      "zh": {"title": "围绕长期成果工作，而不是困在聊天记录里", "body": "体验以文件和交付物为中心、保持可见与可控的本地优先 Agent 工作站。"}
+    },
+    "ai-agent-connectors-explained": {
+      "en": {"title": "Give every workflow the access it actually needs", "body": "Connect tools inside Floatboat while keeping files, approvals, and review in one Agent Workspace."},
+      "zh": {"title": "让每条工作流只获得真正需要的权限", "body": "在 Floatboat 中连接工具，同时把文件、审批和审阅保留在一个 Agent 工作站里。"}
+    },
+    "what-is-an-agent-harness": {
+      "en": {"title": "A model answers. A workspace helps it finish the job.", "body": "Use models, tools, files, reusable workflows, and human control together in Floatboat."},
+      "zh": {"title": "模型负责回答，工作站负责把事情做完", "body": "在 Floatboat 中统一使用模型、工具、文件、可复用流程和人工控制。"}
+    },
     "what-is-voice-dictation-for-ai-agents": {
       "en": {
         "title": "What is voice dictation for AI agents? Defined",

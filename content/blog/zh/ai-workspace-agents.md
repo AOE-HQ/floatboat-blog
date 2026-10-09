@@ -30,6 +30,8 @@ draft: false
 
 合起来，就是：一个 AI 不会被动等提示词，而是带着一定的持久性和主动性，在你乱糟糟的日常里干活的环境。轮廓就是这样。至于具体细节——有多自主、记多少东西、怎么处理权限——产品之间天差地别。这个品类还在成型。
 
+这个品类现在已经出现了不同架构。[本地优先与云端 Agent 工作站](/zh/blog/local-first-vs-cloud-agent-workspace)解释状态和执行环境分别放在哪里；[ChatGPT Space](/zh/blog/what-is-chatgpt-space)展示了聊天产品如何加入持久 Pages 与文件；Connector 指南则解释 [MCP、OAuth 与权限](/zh/blog/ai-agent-connectors-explained)怎样控制 Agent 对外部系统的访问。
+
 ### 为什么现在冒出一个新品类
 
 一年前，大多数 AI 工作区工具其实只是聊天界面加一个"连接你的 Google Drive"勾选框。有用，但 Agent 永远不知道你在做什么——除非你告诉它——而且标签页一关，它就把一切忘光。

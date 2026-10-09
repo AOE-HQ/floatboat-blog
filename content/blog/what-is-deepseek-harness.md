@@ -37,6 +37,8 @@ The project also has an internal proof point. DeepSeek had been testing V4 again
 
 DeepSeek Harness is the execution layer between the DeepSeek V4 model and real software engineering work — the agent framework that manages context, calls tools, executes commands, and recovers from errors so the model can complete multi-step tasks instead of producing isolated code snippets. In the formula the company's own job posting uses, **Model + Harness = Agent**: the model is the reasoning engine, and the harness is everything else — the loop that turns reasoning into finished work.
 
+For the product-independent version of that definition—covering context, tools, memory, sandboxes, approvals, and recovery—see [what an agent harness is](/blog/what-is-an-agent-harness).
+
 The term "harness" comes from the agent-engineering community, where it describes the scaffolding around a language model: the prompt assembly, tool definitions, execution loop, context management, and state persistence that turn a chat-completion endpoint into something that can actually act. Claude Code is a harness. OpenCode is a harness. DeepSeek Harness is DeepSeek's own version, built from scratch around V4's specific architecture rather than adapted to it.
 
 ### 2.2 What the Job Posting Tells Us About the Architecture
