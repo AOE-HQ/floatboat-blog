@@ -65,7 +65,7 @@ OpenAI 的官方表述是“超过 20 项重大公告”。如果把官方 recap
 
 ## 第五条主线：Space、Pages、Slides、Teams 与 Meetings
 
-**ChatGPT Space** 为团队、ChatGPT 和 dot 提供共享项目文件与上下文。Pro、Business 和 Enterprise 用户可以在桌面端和网页使用；移动端现阶段主要支持查找、阅读和分享，创建与编辑仍在后续路线中。
+**[ChatGPT Space](/zh/blog/what-is-chatgpt-space)** 为团队、ChatGPT 和 dot 提供共享项目文件与上下文。Pro、Business 和 Enterprise 用户可以在桌面端和网页使用；移动端现阶段主要支持查找、阅读和分享，创建与编辑仍在后续路线中。
 
 **Pages** 是人与智能体共同编辑的文档，可以写作、研究、生成图表与图片，并创建可视化。**Collaborative Slides** 计划在 DevDay 后数周推出，支持多人和智能体同时编辑、评论、演示，并导出为 PowerPoint 或 Google Slides。
 
