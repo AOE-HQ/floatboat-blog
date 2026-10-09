@@ -3,5 +3,6 @@ import { buildCoreFeatureMetadata, getCoreFeaturePage } from "@/lib/landing/core
 
 const page = getCoreFeaturePage("zh", "coworker");
 export const metadata = buildCoreFeatureMetadata(page);
-export default function CoworkerPage() { return <CoreFeatureRoute locale="zh" slug="coworker" />; }
-
+export default function CoworkerPage() {
+  return <CoreFeatureRoute locale="zh" slug="coworker" />;
+}

@@ -3,5 +3,6 @@ import { buildCoreFeatureMetadata, getCoreFeaturePage } from "@/lib/landing/core
 
 const page = getCoreFeaturePage("en", "floatim");
 export const metadata = buildCoreFeatureMetadata(page);
-export default function FloatIMPage() { return <CoreFeatureRoute locale="en" slug="floatim" />; }
-
+export default function FloatIMPage() {
+  return <CoreFeatureRoute locale="en" slug="floatim" />;
+}
