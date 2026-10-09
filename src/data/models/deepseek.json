@@ -1,0 +1,19 @@
+{
+  "slug": "deepseek", "name": "DeepSeek", "access": "picker",
+  "badge": { "en": "DeepSeek · Client picker", "zh": "DeepSeek · 客户端可选" },
+  "summary": { "en": "V4 Pro for complex code and mathematics; Flash for efficient everyday execution.", "zh": "V4 Pro 面向复杂代码与数学推理，Flash 面向高性价比日常执行。" },
+  "hero": { "title": { "en": "Spend depth on the hard part, not every part.", "zh": "把推理深度用在真正困难的部分。" }, "description": { "en": "Select DeepSeek V4 Pro for difficult code and mathematical reasoning. Move routine coding and general work to DeepSeek Flash when efficiency matters more.", "zh": "复杂代码与数理推理选择 DeepSeek V4 Pro；常规编程和通用任务在更重视效率时选择 DeepSeek Flash。" }, "prompts": [{ "en": "Prove or disprove this approach", "zh": "证明或否定这个方案" }, { "en": "Debug this algorithm", "zh": "调试这个算法" }, { "en": "Make this routine edit quickly", "zh": "快速完成常规修改" }] },
+  "lineup": { "eyebrow": { "en": "Depth versus efficiency", "zh": "深度与效率" }, "title": { "en": "Two DeepSeek lanes for two cost profiles.", "zh": "两条 DeepSeek 路径，对应两种成本结构。" }, "description": { "en": "Choose based on how much reasoning the task deserves.", "zh": "根据任务真正需要的推理量来选择。" }, "items": [
+    { "label": { "en": "Hard problems", "zh": "困难问题" }, "title": "deepseek-v4-pro", "description": { "en": "Complex coding, algorithms, and mathematical reasoning.", "zh": "复杂编程、算法与数理推理。" }, "meta": { "en": "Client picker", "zh": "客户端可选" } },
+    { "label": { "en": "Everyday work", "zh": "日常任务" }, "title": "deepseek-flash", "description": { "en": "DeepSeek V4.1 Flash for efficient coding and general requests.", "zh": "DeepSeek V4.1 Flash，适合高性价比编程与通用请求。" }, "meta": { "en": "Client picker", "zh": "客户端可选" } }
+  ]},
+  "extensions": { "eyebrow": { "en": "Practical split", "zh": "实际分工" }, "title": { "en": "Escalate only when the problem earns it.", "zh": "只有问题值得时，才升级推理强度。" }, "items": [
+    { "title": "V4 Pro", "description": { "en": "Use for algorithm design, difficult failures, and work where a wrong assumption compounds.", "zh": "用于算法设计、疑难故障，以及错误假设会持续放大的任务。" } },
+    { "title": "V4.1 Flash", "description": { "en": "Use for common edits, explanations, and repeatable tasks where throughput dominates.", "zh": "用于常规修改、解释和吞吐优先的重复任务。" } }
+  ]},
+  "faq": [
+    { "question": { "en": "Are `deepseek-flash` and DeepSeek V4.1 Flash the same listing?", "zh": "`deepseek-flash` 与 DeepSeek V4.1 Flash 是同一项吗？" }, "answer": { "en": "The client uses `deepseek-flash` as the model ID and presents it as DeepSeek V4.1 Flash; the platform matrix may use the fuller version label.", "zh": "客户端使用 `deepseek-flash` 作为模型 ID，并显示为 DeepSeek V4.1 Flash；平台矩阵可能使用完整版本名称。" } },
+    { "question": { "en": "When is Pro worth choosing?", "zh": "什么时候值得选择 Pro？" }, "answer": { "en": "Choose Pro when the task has genuinely difficult reasoning, algorithmic, or mathematical failure modes—not simply because it is the larger option.", "zh": "当任务确实存在高难度推理、算法或数学错误风险时选择 Pro，而不是仅因为它规格更高。" } }
+  ],
+  "finalCta": { "title": { "en": "Reserve Pro for the problems that need Pro.", "zh": "把 Pro 留给真正需要 Pro 的问题。" }, "description": { "en": "Switch between depth and efficiency without moving the project or rebuilding its context.", "zh": "在不迁移项目、不重建上下文的前提下切换深度与效率。" } }
+}

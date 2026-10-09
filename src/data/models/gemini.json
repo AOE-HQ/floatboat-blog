@@ -1,0 +1,19 @@
+{
+  "slug": "gemini", "name": "Gemini", "access": "picker",
+  "badge": { "en": "Google · Client picker", "zh": "Google · 客户端可选" },
+  "summary": { "en": "Pro for long-context multimodal analysis; Flash for fast, high-throughput work.", "zh": "Pro 面向长上下文多模态分析，Flash 面向快速高吞吐任务。" },
+  "hero": { "title": { "en": "Choose Gemini by the size and speed of the input.", "zh": "根据输入规模和速度要求选择 Gemini。" }, "description": { "en": "Gemini 3.1 Pro Preview is the lane for large, mixed inputs. Gemini 3.8 Flash is the lane for quick turns and repeated lightweight work.", "zh": "Gemini 3.1 Pro Preview 适合大型混合输入；Gemini 3.8 Flash 适合快速响应和重复轻量任务。" }, "prompts": [{ "en": "Analyze this document set", "zh": "分析这组文档" }, { "en": "Compare these screenshots", "zh": "比较这些截图" }, { "en": "Classify this batch quickly", "zh": "快速分类这批内容" }] },
+  "lineup": { "eyebrow": { "en": "Two operating modes", "zh": "两种工作模式" }, "title": { "en": "Pro absorbs more; Flash turns work around faster.", "zh": "Pro 处理更大输入，Flash 更快完成周转。" }, "description": { "en": "Both are directly selectable, but they solve different bottlenecks.", "zh": "两者都可直接选择，但解决的是不同瓶颈。" }, "items": [
+    { "label": { "en": "Large & mixed", "zh": "大型混合输入" }, "title": "gemini-3.1-pro-preview", "description": { "en": "Long-context understanding and multimodal image-text analysis.", "zh": "超长上下文理解与图文多模态分析。" }, "meta": { "en": "Client picker · Preview", "zh": "客户端可选 · Preview" } },
+    { "label": { "en": "Fast & repeated", "zh": "快速重复任务" }, "title": "gemini-3.8-flash", "description": { "en": "Low-latency, high-throughput processing for frequent tasks.", "zh": "面向高频任务的低延迟、高吞吐处理。" }, "meta": { "en": "Client picker", "zh": "客户端可选" } }
+  ]},
+  "extensions": { "eyebrow": { "en": "Decision rule", "zh": "选择原则" }, "title": { "en": "Choose the bottleneck you need to remove.", "zh": "先判断需要消除的是哪种瓶颈。" }, "items": [
+    { "title": "Gemini Pro", "description": { "en": "Use when fitting the whole source set into one analysis matters more than response speed.", "zh": "当一次容纳完整资料比响应速度更重要时使用。" } },
+    { "title": "Gemini Flash", "description": { "en": "Use when many small requests must complete quickly and consistently.", "zh": "当大量小任务需要快速、稳定完成时使用。" } }
+  ]},
+  "faq": [
+    { "question": { "en": "Is Gemini 3.1 Pro still a preview model?", "zh": "Gemini 3.1 Pro 仍是预览版吗？" }, "answer": { "en": "The current client identifier is `gemini-3.1-pro-preview`, so the page preserves the preview label rather than implying general availability.", "zh": "当前客户端标识为 `gemini-3.1-pro-preview`，因此页面保留 Preview 标识，不暗示其已全面正式发布。" } },
+    { "question": { "en": "Should I always use Pro for better quality?", "zh": "为了质量是否总该使用 Pro？" }, "answer": { "en": "No. Flash is the better fit when latency and throughput define success; Pro is for context-heavy or multimodal analysis.", "zh": "不需要。若成功标准是延迟与吞吐，Flash 更合适；Pro 适合上下文密集或多模态分析。" } }
+  ],
+  "finalCta": { "title": { "en": "Use Pro for breadth. Use Flash for pace.", "zh": "需要广度选 Pro，需要速度选 Flash。" }, "description": { "en": "Both Gemini routes stay connected to the same files and project workflow.", "zh": "两条 Gemini 路径都与同一套文件和项目工作流保持连接。" } }
+}

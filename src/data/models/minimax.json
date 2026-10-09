@@ -1,0 +1,13 @@
+{
+  "slug": "minimax", "name": "MiniMax", "access": "platform",
+  "badge": { "en": "MiniMax · Platform matrix", "zh": "MiniMax · 平台矩阵" },
+  "summary": { "en": "A multimodal family spanning text, speech, and long-form content.", "zh": "覆盖文本、语音与长文本内容的多模态模型系列。" },
+  "hero": { "title": { "en": "MiniMax matters when the workflow crosses media types.", "zh": "当工作流跨越多种媒体类型时，MiniMax 才有独特价值。" }, "description": { "en": "The platform matrix positions MiniMax across text, speech, and long-form multimodal work. No exact model ID was supplied, so this page describes capability scope rather than inventing a release name.", "zh": "平台矩阵将 MiniMax 定位于文本、语音与长文本多模态任务。由于现有资料未提供准确 Model ID，本页说明能力范围，不虚构发布名称。" }, "prompts": [{ "en": "Turn this script into spoken content", "zh": "把脚本转成语音内容" }, { "en": "Work across this long mixed-media brief", "zh": "处理这份长篇混合媒体简报" }] },
+  "lineup": { "eyebrow": { "en": "Capability scope", "zh": "能力范围" }, "title": { "en": "Text, speech, and long-form work in one family.", "zh": "一个系列覆盖文本、语音与长内容。" }, "description": { "en": "This is an ecosystem capability listing, not a promise that one unnamed model handles every modality.", "zh": "这是生态能力范围说明，不代表某个未命名模型包办所有模态。" }, "items": [
+    { "label": { "en": "Language", "zh": "语言" }, "title": "Text", "description": { "en": "Drafting, transformation, and general language work.", "zh": "起草、转换与通用语言任务。" }, "meta": { "en": "Platform capability", "zh": "平台能力" } },
+    { "label": { "en": "Audio", "zh": "音频" }, "title": "Speech", "description": { "en": "Speech-oriented creation and processing paths.", "zh": "面向语音创作与处理的能力路径。" }, "meta": { "en": "Platform capability", "zh": "平台能力" } },
+    { "label": { "en": "Extended input", "zh": "长输入" }, "title": "Long-form multimodal", "description": { "en": "Work that combines long content with more than one modality.", "zh": "结合长内容与多种模态的任务。" }, "meta": { "en": "Platform capability", "zh": "平台能力" } }
+  ]},
+  "faq": [{ "question": { "en": "Which MiniMax model ID is supported?", "zh": "支持哪个 MiniMax Model ID？" }, "answer": { "en": "The supplied matrix names capability categories rather than a specific ID, so this page does not claim one.", "zh": "现有矩阵给出的是能力类别，而非具体 ID，因此本页不声称某个型号。" } }, { "question": { "en": "Is MiniMax in the current client picker?", "zh": "MiniMax 在当前客户端选择器中吗？" }, "answer": { "en": "It is listed in platform and ecosystem support, not in the supplied current picker list.", "zh": "它属于平台与生态支持，不在现有客户端选择器清单中。" } }],
+  "finalCta": { "title": { "en": "Track MiniMax when the workflow becomes multimodal.", "zh": "当工作流走向多模态时，关注 MiniMax。" }, "description": { "en": "Judge the eventual product route by its exact model, modality, and availability—not by the family name alone.", "zh": "应根据最终产品界面的具体模型、模态与可用性判断，而不能只看系列名称。" } }
+}
