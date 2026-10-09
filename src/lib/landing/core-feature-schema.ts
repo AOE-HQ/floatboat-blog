@@ -13,6 +13,7 @@ const mediaSchema = z.object({
 
 export const coreFeaturePageSchema = z.object({
   slug: z.enum([
+    "agent-workspace",
     "floatim",
     "coworker",
     "ai-scheduling-assistant",

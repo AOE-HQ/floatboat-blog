@@ -35,6 +35,13 @@ const NAV_MENUS: NavMenuGroup[] = [
     zh: "产品",
     items: [
       {
+        en: "Agent Workspace",
+        zh: "Agent 工作站",
+        descEn: "Keep agents, local files, tools, and deliverables in one workspace",
+        descZh: "让 Agent、本地文件、工具和交付物留在同一工作空间",
+        path: "/agent-workspace",
+      },
+      {
         en: "Flow Mode",
         zh: "心流模式",
         descEn: "Speak and iterate — ideas become finished work in real time",

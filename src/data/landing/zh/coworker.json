@@ -2,82 +2,86 @@
   "slug": "coworker",
   "locale": "zh",
   "seo": {
-    "title": "Floatboat Coworker：面向真实工作的本地优先 AI 工作空间",
-    "description": "让 AI Coworker 在你的电脑上使用项目文件、工具和持续上下文，同时保持权限、操作过程和关键决策清晰可审查。",
-    "keywords": ["AI Coworker", "本地 AI 工作空间", "工作空间 Agent", "桌面 AI Agent"]
+    "title": "Floatboat Coworker：可委派任务的 AI Work Agent",
+    "description": "把边界明确的任务交给 AI Work Agent，让它使用获授权的文件和工具完成工作，并返回可审阅的交付物。",
+    "keywords": ["AI Work Agent", "AI Coworker", "任务 Agent", "把工作委派给 AI"]
   },
-  "breadcrumb": "AI Coworker",
+  "breadcrumb": "Coworker",
   "hero": {
-    "eyebrow": "运行在电脑上的工作空间 Agent",
-    "title": "让 AI 在工作实际发生的地方与你协作。",
-    "description": "给 Floatboat 一个目标，让它在你的电脑上使用文件、工具和项目上下文完成工作，同时由你控制权限、审批和最终判断。",
+    "eyebrow": "Floatboat 中的 Work Agent",
+    "title": "交代任务，收回完成的工作。",
+    "description": "给 Floatboat Coworker 一个清晰结果、相关材料和审批边界。它在 Agent 工作站中执行任务，并返回你可以检查、修订或接受的交付物。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=hero" },
-    "secondaryCta": { "label": "本地还是云端？", "href": "/zh/blog/local-first-vs-cloud-agent-workspace" },
-    "proof": ["访问本地项目", "持续保存上下文", "操作可检查"]
+    "secondaryCta": { "label": "了解 Agent 工作站", "href": "/zh/agent-workspace" },
+    "proof": ["按结果委派", "限定文件和工具", "可审阅的交付物"]
   },
-  "demo": { "eyebrow": "工作台，而不是空白聊天", "title": "把项目交给 Agent，而不是反复解释项目", "description": "Coworker 可以检查工作文件夹、准备交付物，并把结果保存回项目中。" },
+  "demo": {
+    "eyebrow": "一项任务，一个负责到底的结果",
+    "title": "交代工作，而不是逐步遥控",
+    "description": "Coworker 把边界明确的委派转化为执行计划，使用获授权的项目资源，并带着指定产物返回。"
+  },
   "features": {
-    "eyebrow": "为持续工作构建",
-    "title": "文件、工具和上下文组成一个工作空间。",
-    "description": "Coworker 围绕整个项目工作，而不是把每次请求当成一次全新的对话。",
+    "eyebrow": "为委派而设计",
+    "title": "Work Agent 对从任务交代到交付的过程负责。",
+    "description": "Coworker 是 Floatboat 中面向任务的 Agent 角色，不是工作空间本身，也不是无边界的聊天伙伴。",
     "items": [
-      { "label": "上下文", "title": "项目记得工作应该如何完成", "description": "让任务要求、参考资料、工作规则和过去产物可以继续服务下一项任务。" },
-      { "label": "执行", "title": "Agent 可以生成真实产物", "description": "从聊天答案扩展到文档、整理后的文件、研究结果和可重复工作流。" },
-      { "label": "边界", "title": "本地访问范围清晰明确", "description": "限定 Coworker 可以使用的文件夹和工具，并审查需要人工判断的操作。" }
+      { "label": "交代", "title": "从明确结果开始", "description": "说明完成标准、约束，以及哪些决定仍需要你批准。" },
+      { "label": "执行", "title": "让 Agent 处理相互连接的步骤", "description": "Coworker 可以使用获授权的文件和工具进行研究、起草、整理或制作。" },
+      { "label": "交接", "title": "收到可以检查的工作", "description": "获得文件或其他具体产物，并有足够上下文进行审阅、修订和后续决策。" }
     ]
   },
   "scenario": {
-    "eyebrow": "一份客户简报",
-    "title": "把一整个项目文件夹变成可以交付的结果。",
-    "description": "Coworker 可以读取材料、识别缺口、组织简报并保存结果，不再需要逐个上传文件。",
+    "eyebrow": "一份被委派的客户简报",
+    "title": "交出任务，但不交出判断权。",
+    "description": "边界明确的任务让 Coworker 有空间执行，同时让目标、资源和审批点保持清晰。",
     "steps": [
-      { "title": "指向项目", "description": "选择文件夹并描述最终结果，而不是逐一上传文件。" },
-      { "title": "检查工作过程", "description": "查看 Agent 读取了什么、生成了什么，以及哪些地方仍需判断。" },
-      { "title": "把结果留在上下文中", "description": "将产物保存在源材料旁边，让下一项任务从已完成工作继续。" }
+      { "title": "定义交付物", "description": "说明这项任务的结果、受众、格式、约束和截止时间。" },
+      { "title": "批准工作范围", "description": "选择 Work Agent 可以使用的文件和工具，并标记需要确认的操作。" },
+      { "title": "审阅交接成果", "description": "检查完成的产物，提出修订，或接受结果并结束任务。" }
     ]
   },
   "audiences": {
-    "title": "适合无法用一个 Prompt 完成的工作。",
-    "description": "当输出依赖已有文件、重复标准和多个相互关联的步骤时，Coworker 最有价值。",
+    "title": "适合有清晰终点的任务。",
+    "description": "当你能说清想要的结果，但不想亲自推动每个中间步骤时，Coworker 最有价值。",
     "items": [
-      { "label": "创业者", "title": "从决策直接走到交付", "description": "研究选择、准备文档并整理后续行动，无需同时打开多个工具。" },
-      { "label": "创作者", "title": "在已有作品上继续积累", "description": "使用项目中已经保存的草稿、参考资料和风格样本。" },
-      { "label": "运营人员", "title": "标准化重复的客户工作", "description": "把项目规则和可复用流程保存在它们所管理的文件附近。" }
+      { "label": "创业者", "title": "委派下一个具体结果", "description": "交出研究、决策简报或跟进材料，同时保留最终判断。" },
+      { "label": "创作者", "title": "把源材料变成草稿", "description": "提供参考材料、格式和语气要求，然后审阅完整产物，而不是逐节提示。" },
+      { "label": "运营人员", "title": "完成可重复的委派", "description": "使用经过验证的任务交代和获授权资源，完成周期报告、准备和客户交付。" }
     ]
   },
   "howItWorks": {
-    "title": "一次提供上下文，在可见循环中持续工作。",
-    "description": "Coworker 让常规步骤自主运行，同时为重要决策保留检查点。",
+    "title": "交代、执行、交接。",
+    "description": "Coworker 在更广泛的 Agent 工作站中提供简洁的 Work Agent 闭环。",
     "items": [
-      { "title": "打开工作空间", "description": "选择项目，以及与任务相关的本地资源。" },
-      { "title": "描述最终结果", "description": "说明完成标准、约束条件和审批边界。" },
-      { "title": "审查工作产物", "description": "检查结果、修正可复用上下文并批准最终交付。" }
+      { "title": "交代结果", "description": "解释必须交付什么，以及哪些条件定义合格的工作。" },
+      { "title": "让任务执行", "description": "Agent 使用获批准的上下文和工具，并在操作越过审批边界时暂停。" },
+      { "title": "审阅并结束", "description": "接收产物，在需要时要求定向修改，并判断委派是否已经完成。" }
     ]
   },
   "comparison": {
-    "title": "Coworker 不只是一次更长的聊天。",
-    "description": "上下文、工具、文件与可控执行结合在一起，才会形成新的工作方式。",
+    "title": "Work Agent 对一项委派负责，而不是对一段对话负责。",
+    "description": "Coworker 围绕被委派的结果和具体交接设计，而不是无限延续的 Prompt 序列。",
     "columns": ["Floatboat Coworker", "通用 AI 聊天"],
     "rows": [
-      { "label": "起始上下文", "values": ["完整项目空间", "空白对话"] },
-      { "label": "本地文件", "values": ["在原位置限定访问", "逐个手动上传"] },
-      { "label": "输出", "values": ["保存为项目产物", "主要返回聊天消息"] },
-      { "label": "重复工作", "values": ["复用 Skills 和上下文", "每次重新编写 Prompt"] }
+      { "label": "工作单元", "values": ["边界明确的委派", "一轮对话"] },
+      { "label": "指导方式", "values": ["结果与约束", "反复输入 Prompt"] },
+      { "label": "执行方式", "values": ["使用获批准资源完成连续步骤", "基于提供的上下文生成回答"] },
+      { "label": "交接结果", "values": ["可审阅的交付物", "主要是一条回答"] }
     ]
   },
   "faq": {
-    "title": "关于 AI Coworker",
+    "title": "Work Agent 常见问题",
     "items": [
-      { "question": "它和聊天机器人有什么不同？", "answer": "Coworker 运行在包含项目文件、工具和可复用指令的持续工作空间中，可以生成并整理真实产物，而不只是返回答案。" },
-      { "question": "Floatboat 会上传所有本地文件吗？", "answer": "不会。访问范围由你选择。本地优先执行的目标是减少不必要的上传，并让敏感项目资料保持在更清晰的控制之下。" },
-      { "question": "我能看到 Agent 正在做什么吗？", "answer": "可以。工作空间强调可见步骤、产物和审批边界，而不是无法检查的后台自动化。" },
-      { "question": "成功的工作流可以复用吗？", "answer": "可以。重复指令可以保存为 Skill 或 Combo，让下一个项目从经过验证的方法开始。" }
+      { "question": "什么是 Work Agent？", "answer": "Work Agent 接受一项边界明确的委派，使用完成它所需的获授权上下文和工具，并返回具体结果。交接被接受后，这项任务就可以结束。" },
+      { "question": "Coworker 和 Agent 工作站有什么区别？", "answer": "Coworker 是你委派任务的 Agent 角色。Agent 工作站是为该任务提供文件、工具、规则、历史和审阅控制的持续环境。" },
+      { "question": "Coworker 可以不经我批准直接操作吗？", "answer": "常规步骤可以在你提供的范围内执行。敏感或后果重大的操作应保留明确的审批边界，由你检查。" },
+      { "question": "Coworker 可以交付什么？", "answer": "根据任务和已启用工具，它可以返回文档、研究结果、整理后的文件、草稿、代码或工作站支持的其他可编辑产物。" }
     ]
   },
   "finalCta": {
-    "title": "给 AI 一个真正可以工作的地方。",
-    "description": "把项目上下文、本地文件、工具和可检查的执行过程放进电脑上的同一个工作空间。",
+    "title": "交出任务，但不交出你的判断。",
+    "description": "给 Floatboat Coworker 一项清晰委派，收回你可以检查、修订和批准的工作。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=final_cta" },
-    "secondaryCta": { "label": "了解工作空间 Agent", "href": "/zh/blog/ai-workspace-agents" }
+    "secondaryCta": { "label": "查看 Agent 工作站", "href": "/zh/agent-workspace" }
   }
 }
