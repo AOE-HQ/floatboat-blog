@@ -81,4 +81,4 @@ Floatboat 把 Connectors 视为 Agent Workspace 的一层，而不是用连接�
 
 Agent Connector 本质上是一条带权限的执行边界。MCP 统一工具接口，OAuth 委托身份，Scope 限制能力，资源权限限制触达范围，Host 决定什么时候必须由人审批。如果一个产品只展示很长的应用 Logo 列表，你仍然无法判断这些 Connector 是否安全、是否真正有用。
 
-本文的协议与安全判断依据 [MCP Authorization](https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization)、[OpenAI Connector 与 MCP 工具](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)、[OpenAI Plugin Authentication](https://developers.openai.com/plugins/build/auth)，以及 [MCP Server 安全指南](https://developers.openai.com/plugins/build/mcp-server)。
+本文的协议与安全判断依据 [MCP Authorization](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)、[OpenAI Connector 与 MCP 工具](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)、[OpenAI Plugin Authentication](https://developers.openai.com/plugins/build/auth)，以及 [MCP Server 安全指南](https://developers.openai.com/plugins/build/mcp-server)。

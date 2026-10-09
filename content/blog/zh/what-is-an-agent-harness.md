@@ -90,4 +90,4 @@ OpenAI 把 Codex Harness 描述为 App、CLI 和 IDE 体验背后的共享 Agent
 
 Agent Harness 是让模型能力真正可用的操作层。它提供完成工作所需的循环、上下文、工具、记忆、沙箱、策略和恢复机制。更强的模型当然重要，但没有可靠 Harness，它仍然只是一台没有方向盘、刹车和仪表盘的强劲发动机。
 
-本文对 Harness 的拆解依据 [OpenAI Sandbox Agents](https://developers.openai.com/api/docs/guides/agents/sandboxes)、[Codex as a platform](https://developers.openai.com/blog/codex-as-a-platform)，以及 [DeepSeek Harness](https://deepseek.com/harness/en/)。
+本文对 Harness 的拆解依据 [OpenAI Sandbox Agents](https://developers.openai.com/api/docs/guides/agents/sandboxes)、[Codex as a platform](https://developers.openai.com/blog/codex-as-a-platform)，以及 [DeepSeek Harness](https://www.deepseek.com/en/harness/)。

@@ -90,4 +90,4 @@ Ask whether it can show you:
 
 An agent harness is the operating layer that makes model intelligence usable. It supplies the loop, context, tools, memory, sandbox, policy, and recovery needed to finish work. Better models matter, but without a reliable harness they remain powerful engines with no steering, brakes, or dashboard.
 
-Sources: [OpenAI Sandbox Agents](https://developers.openai.com/api/docs/guides/agents/sandboxes), [OpenAI Codex as a platform](https://developers.openai.com/blog/codex-as-a-platform), and [DeepSeek Harness](https://deepseek.com/harness/en/).
+Sources: [OpenAI Sandbox Agents](https://developers.openai.com/api/docs/guides/agents/sandboxes), [OpenAI Codex as a platform](https://developers.openai.com/blog/codex-as-a-platform), and [DeepSeek Harness](https://www.deepseek.com/en/harness/).
