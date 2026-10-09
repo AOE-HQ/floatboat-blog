@@ -6,7 +6,7 @@
   "lineup": { "eyebrow": { "en": "Claude lineup", "zh": "Claude 阵容" }, "title": { "en": "Pick depth or throughput without leaving the project.", "zh": "在同一项目中选择推理深度或执行效率。" }, "description": { "en": "The client exposes the 4.6 generation directly; newer families also appear in the broader Floatboat support matrix.", "zh": "客户端可直接选择 4.6 代模型；更新系列也进入了 Floatboat 的更广泛支持矩阵。" }, "items": [
     { "label": { "en": "Deep work", "zh": "深度任务" }, "title": "claude-opus-4-6", "description": { "en": "Complex architecture, long-horizon planning, and difficult reasoning.", "zh": "复杂架构、长程规划与高难度推理。" }, "meta": { "en": "Client picker", "zh": "客户端可选" } },
     { "label": { "en": "Daily workhorse", "zh": "日常主力" }, "title": "claude-sonnet-4-6", "description": { "en": "High-performance coding and general agent execution.", "zh": "高性能编程与通用 Agent 执行。" }, "meta": { "en": "Client picker", "zh": "客户端可选" } },
-    { "label": { "en": "Broader matrix", "zh": "扩展矩阵" }, "title": "Claude 5 / 5.5", "description": { "en": "Opus, Sonnet, and Fable families in platform and ecosystem support.", "zh": "平台与生态矩阵中的 Opus、Sonnet 与 Fable 系列。" }, "meta": { "en": "Platform support", "zh": "平台支持" } }
+    { "label": { "en": "Capacity ready", "zh": "容量已就绪" }, "title": "claude-opus-5 / claude-sonnet-5 / claude-fable-5", "description": { "en": "Evaluation profiles with 1M context and 128k output budgets.", "zh": "已配置 1M 上下文与 128k 输出预算的评测画像。" }, "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" } }
   ]},
   "extensions": { "eyebrow": { "en": "Where Claude fits", "zh": "Claude 适用场景" }, "title": { "en": "Work that rewards coherence, not just a quick answer.", "zh": "适合重视长程一致性，而不只是快速回答的任务。" }, "items": [
     { "title": "Architecture reviews", "description": { "en": "Hold constraints, tradeoffs, and dependencies together before proposing a design.", "zh": "在提出设计前，同时把握约束、取舍与依赖关系。" } },
@@ -15,7 +15,7 @@
   ]},
   "faq": [
     { "question": { "en": "When should I choose Opus instead of Sonnet?", "zh": "什么时候应选 Opus 而不是 Sonnet？" }, "answer": { "en": "Choose Opus when reasoning depth and architectural consistency outweigh latency. Sonnet is the stronger default for everyday coding and agent work.", "zh": "当推理深度和架构一致性比延迟更重要时选择 Opus；日常编程和 Agent 工作优先考虑 Sonnet。" } },
-    { "question": { "en": "Are Claude 5 models in the client picker?", "zh": "Claude 5 系列都在客户端选择器中吗？" }, "answer": { "en": "The current picker list provided here names Opus 4.6 and Sonnet 4.6. Claude 5 and 5.5 belong to the broader platform and ecosystem matrix.", "zh": "当前客户端清单明确列出 Opus 4.6 与 Sonnet 4.6；Claude 5 与 5.5 属于更广泛的平台和生态矩阵。" } }
+    { "question": { "en": "Are Claude 5 models in the client picker?", "zh": "Claude 5 系列在客户端选择器中吗？" }, "answer": { "en": "No. `claude-opus-5`, `claude-sonnet-5`, and `claude-fable-5` have evaluation and capacity budgets, but are not exposed in the picker.", "zh": "不在。`claude-opus-5`、`claude-sonnet-5` 与 `claude-fable-5` 已配置评测与容量预算，但未在选择器露出。" } }
   ],
   "finalCta": { "title": { "en": "Give complex work enough room to stay coherent.", "zh": "给复杂工作足够空间，保持前后一致。" }, "description": { "en": "Select Claude when architecture, code, and long-running decisions need to remain aligned.", "zh": "当架构、代码和长程决策需要持续对齐时，选择 Claude。" } }
 }

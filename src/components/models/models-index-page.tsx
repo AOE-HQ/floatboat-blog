@@ -7,7 +7,8 @@ const DOWNLOAD = "https://floatboat.ai/download/success?from=models&download_pla
 export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
   const isZh = locale === "zh";
   const pickerModels = MODEL_FAMILIES.filter((model) => model.access === "picker");
-  const platformModels = MODEL_FAMILIES.filter((model) => model.access === "platform");
+  const comboItems = MODEL_FAMILIES.flatMap((model) => model.lineup.items.filter((item) => item.meta.en.startsWith("Live ·")).map((item) => ({ model, item })));
+  const capacityModels = MODEL_FAMILIES.filter((model) => model.access === "capacity");
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -27,7 +28,7 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
           {isZh ? "模型可以变化，工作空间不必重来。" : "Change the model without rebuilding the workspace."}
         </h1>
         <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">
-          {isZh ? "在同一个桌面工作空间中使用 Auto Mode 或手动选择模型，让文件、工具、规则和可编辑交付物保持连接。" : "Use Auto Mode or select a model inside the same desktop workspace, while files, tools, project rules, and editable deliverables stay connected."}
+          {isZh ? "开箱即用，无需自备 API Key。在同一个桌面工作空间中使用全员可用的 Auto Mode，或从订阅配置开放的模型中直接选择。" : "Ready out of the box with no API key required. Use Auto Mode, available to everyone, or directly select models enabled by your subscription configuration."}
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
           <a href={isZh ? DOWNLOAD.replace("/download/", "/zh/download/") : DOWNLOAD} className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{isZh ? "下载 Floatboat" : "Download Floatboat"}</a>
@@ -51,12 +52,25 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
             ))}
           </div>
           <div className="mb-10 mt-20 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{isZh ? "平台与生态" : "Platform & ecosystem"}</p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "更广泛的模型支持矩阵" : "The broader model support matrix"}</h2>
-            <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{isZh ? "这些模型通过 Floatboat 平台、官网评测或生态能力原生支持并逐步接入；不代表每个版本都已进入客户端模型选择器。" : "These models are supported or rolling out across the Floatboat platform, benchmarks, and ecosystem; not every version is necessarily present in the client picker."}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{isZh ? "多模态 Combo" : "Multimedia Combos"}</p>
+            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "已上线的图像与视频执行引擎" : "Live image and video engines"}</h2>
+            <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{isZh ? "这些模型通过内置 Combo Skill 调用，不出现在主对话模型下拉菜单中。" : "These models run through built-in Combo Skills rather than the main chat-model dropdown."}</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {platformModels.map((model) => (
+            {comboItems.map(({ model, item }) => (
+              <Link key={item.title} href={modelPath(locale, model.slug)} className="group flex min-h-64 flex-col rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-7 shadow-[var(--ob-shadow-raised)] transition hover:-translate-y-1">
+                <div className="flex items-start justify-between gap-4"><span className="rounded-full bg-black/[0.05] px-3 py-1 text-xs font-semibold text-[var(--ob-color-muted)]">{localize(item.meta, locale)}</span><span className="text-lg transition group-hover:translate-x-1">→</span></div>
+                <div className="mt-auto pt-10"><h3 className="font-serif text-2xl tracking-tight">{item.title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{localize(item.description, locale)}</p><p className="mt-4 text-xs leading-5 text-[var(--ob-color-muted)]">{model.name}</p></div>
+              </Link>
+            ))}
+          </div>
+          <div className="mb-10 mt-20 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{isZh ? "底层能力" : "Configured capacity"}</p>
+            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "配置已完成，尚未在主选择器露出" : "Configured below the client picker"}</h2>
+            <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{isZh ? "这些模型已经完成容量预算或协议适配，但当前不在客户端主选择器中。" : "These models have capacity budgets or protocol adapters in place, but are not exposed in the main client picker."}</p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {capacityModels.map((model) => (
               <Link key={model.slug} href={modelPath(locale, model.slug)} className="group flex min-h-64 flex-col rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-7 shadow-[var(--ob-shadow-raised)] transition hover:-translate-y-1">
                 <div className="flex items-start justify-between gap-4"><span className="rounded-full bg-black/[0.05] px-3 py-1 text-xs font-semibold text-[var(--ob-color-muted)]">{localize(model.badge, locale)}</span><span className="text-lg transition group-hover:translate-x-1">→</span></div>
                 <div className="mt-auto pt-10"><h3 className="font-serif text-3xl tracking-tight">{model.name}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{localize(model.summary, locale)}</p><p className="mt-4 text-xs leading-5 text-[var(--ob-color-muted)]">{model.lineup.items.map((item) => item.title).join(" · ")}</p></div>

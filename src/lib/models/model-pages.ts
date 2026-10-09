@@ -6,9 +6,10 @@ import glm from "@/data/models/glm.json";
 import kimi from "@/data/models/kimi.json";
 import minimax from "@/data/models/minimax.json";
 import openai from "@/data/models/openai.json";
+import qwen from "@/data/models/qwen.json";
 import seedance from "@/data/models/seedance.json";
 
-export const MODEL_SLUGS = ["auto-mode", "claude", "openai", "gemini", "deepseek", "kimi", "glm", "minimax", "seedance"] as const;
+export const MODEL_SLUGS = ["auto-mode", "claude", "openai", "gemini", "deepseek", "seedance", "kimi", "qwen", "glm", "minimax"] as const;
 
 export type ModelSlug = (typeof MODEL_SLUGS)[number];
 export type ModelLocale = "en" | "zh";
@@ -19,7 +20,7 @@ type Card = { label: Localized; title: string; description: Localized; meta: Loc
 export type ModelFamily = {
   slug: ModelSlug;
   name: string;
-  access: "picker" | "platform";
+  access: "picker" | "combo" | "capacity";
   badge: Localized;
   summary: Localized;
   hero: { title: Localized; description: Localized; prompts: Localized[] };
@@ -31,7 +32,7 @@ export type ModelFamily = {
   finalCta: { title: Localized; description: Localized };
 };
 
-export const MODEL_FAMILIES = [autoMode, claude, openai, gemini, deepseek, kimi, glm, minimax, seedance] as ModelFamily[];
+export const MODEL_FAMILIES = [autoMode, claude, openai, gemini, deepseek, seedance, kimi, qwen, glm, minimax] as ModelFamily[];
 
 export function localize(value: Localized, locale: ModelLocale) {
   return value[locale];

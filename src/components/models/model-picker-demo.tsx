@@ -2,7 +2,8 @@ import type { ModelFamily, ModelLocale } from "@/lib/models/model-pages";
 import { localize } from "@/lib/models/model-pages";
 
 export function ModelPickerDemo({ model, locale }: { model: ModelFamily; locale: ModelLocale }) {
-  const isPlatform = model.access === "platform";
+  const isPicker = model.access === "picker";
+  const supportLabel = model.access === "combo" ? (locale === "zh" ? "内置 Combo 已上线" : "Live in a built-in Combo") : (locale === "zh" ? "底层能力已就绪" : "Configured below the picker");
 
   return (
     <div className="overflow-hidden rounded-[28px] border border-black/[0.08] bg-[#f5f1e8] shadow-[0_28px_70px_rgba(38,33,27,0.15)]">
@@ -16,7 +17,7 @@ export function ModelPickerDemo({ model, locale }: { model: ModelFamily; locale:
         <aside className="border-r border-black/[0.07] bg-white/40 p-3">
           <div className="grid size-9 place-items-center rounded-xl bg-[#24221f] font-serif text-sm text-white">F</div>
           <div className="mt-8 space-y-2 text-xs text-black/45">
-            <p className="rounded-lg bg-white/80 px-2 py-2 text-black/75">{isPlatform ? (locale === "zh" ? "模型矩阵" : "Model matrix") : (locale === "zh" ? "新对话" : "New chat")}</p>
+            <p className="rounded-lg bg-white/80 px-2 py-2 text-black/75">{isPicker ? (locale === "zh" ? "新对话" : "New chat") : (locale === "zh" ? "模型矩阵" : "Model matrix")}</p>
             <p className="px-2 py-2">{locale === "zh" ? "文件" : "Files"}</p>
             <p className="px-2 py-2">{locale === "zh" ? "工具" : "Tools"}</p>
           </div>
@@ -24,7 +25,7 @@ export function ModelPickerDemo({ model, locale }: { model: ModelFamily; locale:
         <div className="flex min-w-0 flex-col p-5 sm:p-7">
           <div className="flex items-center justify-between gap-3">
             <div>
-              <p className="text-xs uppercase tracking-[0.16em] text-black/40">{isPlatform ? (locale === "zh" ? "平台与生态支持" : "Platform & ecosystem support") : (locale === "zh" ? "当前模型" : "Current model")}</p>
+              <p className="text-xs uppercase tracking-[0.16em] text-black/40">{isPicker ? (locale === "zh" ? "当前模型" : "Current model") : supportLabel}</p>
               <h2 className="mt-1 text-xl font-semibold">{model.name}</h2>
             </div>
             <span className="rounded-full border border-black/10 bg-white/65 px-3 py-1 text-xs">{localize(model.badge, locale)}</span>
@@ -42,7 +43,7 @@ export function ModelPickerDemo({ model, locale }: { model: ModelFamily; locale:
             </div>
           </div>
           <div className="rounded-2xl border border-black/[0.09] bg-white px-4 py-3 text-sm text-black/45 shadow-sm">
-            {isPlatform ? (locale === "zh" ? "具体可用性以产品界面为准" : "Check the product surface for live availability") : (locale === "zh" ? "描述目标，或添加项目文件…" : "Describe the outcome or add project files…")}
+            {model.access === "capacity" ? (locale === "zh" ? "当前未在客户端主选择器露出" : "Not exposed in the main client picker") : model.access === "combo" ? (locale === "zh" ? "通过内置 Combo Skill 调用" : "Run through a built-in Combo Skill") : (locale === "zh" ? "描述目标，或添加项目文件…" : "Describe the outcome or add project files…")}
           </div>
         </div>
       </div>

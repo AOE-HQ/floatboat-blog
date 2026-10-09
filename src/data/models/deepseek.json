@@ -12,7 +12,7 @@
     { "title": "V4.1 Flash", "description": { "en": "Use for common edits, explanations, and repeatable tasks where throughput dominates.", "zh": "用于常规修改、解释和吞吐优先的重复任务。" } }
   ]},
   "faq": [
-    { "question": { "en": "Are `deepseek-flash` and DeepSeek V4.1 Flash the same listing?", "zh": "`deepseek-flash` 与 DeepSeek V4.1 Flash 是同一项吗？" }, "answer": { "en": "The client uses `deepseek-flash` as the model ID and presents it as DeepSeek V4.1 Flash; the platform matrix may use the fuller version label.", "zh": "客户端使用 `deepseek-flash` 作为模型 ID，并显示为 DeepSeek V4.1 Flash；平台矩阵可能使用完整版本名称。" } },
+    { "question": { "en": "Are `deepseek-flash` and DeepSeek V4.1 Flash the same listing?", "zh": "`deepseek-flash` 与 DeepSeek V4.1 Flash 是同一项吗？" }, "answer": { "en": "Yes. `deepseek-flash` is the standard model ID and `deepseek-v4.1-flash` is its client alias. It replaces the retired `deepseek-v4-flash`.", "zh": "是。`deepseek-flash` 是标准 Model ID，`deepseek-v4.1-flash` 是客户端别名，并已替代退役的 `deepseek-v4-flash`。" } },
     { "question": { "en": "When is Pro worth choosing?", "zh": "什么时候值得选择 Pro？" }, "answer": { "en": "Choose Pro when the task has genuinely difficult reasoning, algorithmic, or mathematical failure modes—not simply because it is the larger option.", "zh": "当任务确实存在高难度推理、算法或数学错误风险时选择 Pro，而不是仅因为它规格更高。" } }
   ],
   "finalCta": { "title": { "en": "Reserve Pro for the problems that need Pro.", "zh": "把 Pro 留给真正需要 Pro 的问题。" }, "description": { "en": "Switch between depth and efficiency without moving the project or rebuilding its context.", "zh": "在不迁移项目、不重建上下文的前提下切换深度与效率。" } }
