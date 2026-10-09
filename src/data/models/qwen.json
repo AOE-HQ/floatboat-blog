@@ -1,14 +1,320 @@
 {
-  "slug": "qwen", "name": "Qwen", "access": "capacity",
-  "badge": { "en": "Alibaba · Capacity configured", "zh": "阿里通义千问 · 容量已登记" },
-  "summary": { "en": "Qwen 3.7 Max has a configured 1M long-text capacity profile below the client picker.", "zh": "Qwen 3.7 Max 已配置 1M 长文本容量画像，当前未在客户端主选择器露出。" },
-  "hero": { "title": { "en": "Qwen 3.7 Max is prepared for long-text workloads.", "zh": "Qwen 3.7 Max 已为长文本任务完成底层准备。" }, "description": { "en": "The `qwen-3.7-max` capacity profile carries a 1M budget and a long-text channel adapter. It is not exposed in the main client picker.", "zh": "`qwen-3.7-max` 已配置 1M 预算并适配长文本通道，当前未在客户端主选择器默认露出。" }, "prompts": [{ "en": "Process a long source set", "zh": "处理大型资料集" }, { "en": "Work through a long Chinese document", "zh": "处理长篇中文文档" }] },
-  "facts":[{"label":{"en":"Model ID","zh":"Model ID"},"value":{"en":"qwen-3.7-max","zh":"qwen-3.7-max"}},{"label":{"en":"Capacity","zh":"容量画像"},"value":{"en":"1M budget","zh":"1M 预算"}},{"label":{"en":"Channel","zh":"通道"},"value":{"en":"Long-text adapter","zh":"长文本通道"}},{"label":{"en":"Availability","zh":"可用状态"},"value":{"en":"Not in main picker","zh":"未在主选择器露出"}}],
-  "positioning":{"eyebrow":{"en":"Readiness profile","zh":"就绪画像"},"title":{"en":"A long-text route prepared for Chinese and mixed source sets.","zh":"为中文与混合资料集准备的长文本路径。"},"description":{"en":"Qwen 3.7 Max has a registered context role below the picker, with no claim of current direct access.","zh":"Qwen 3.7 Max 已在选择器下层登记长文本定位，但当前不声称可以直接使用。"},"traits":[{"label":{"en":"Strength","zh":"能力方向"},"value":{"en":"Long source processing","zh":"长资料处理"},"description":{"en":"The adapter is prepared for context-heavy textual work.","zh":"通道适配面向上下文密集型文本工作。"}},{"label":{"en":"Language fit","zh":"语言场景"},"value":{"en":"Chinese long-form work","zh":"中文长篇工作"},"description":{"en":"Its page focuses on the confirmed long-text role, not generic claims.","zh":"本页聚焦已确认的长文本定位，不扩展泛化能力宣称。"}},{"label":{"en":"Scale","zh":"规模"},"value":{"en":"1M budget","zh":"1M 预算"},"description":{"en":"Capacity is registered for large inputs.","zh":"已为大型输入登记容量。"}},{"label":{"en":"Boundary","zh":"当前边界"},"value":{"en":"No main-picker access","zh":"主选择器不可选"},"description":{"en":"Readiness does not equal launch.","zh":"底层就绪不等于已经上线。"}}]},
-  "lineup": { "eyebrow": { "en": "Configured capacity", "zh": "已配置容量" }, "title": { "en": "One registered model with a defined long-text role.", "zh": "一个已登记型号，对应明确的长文本定位。" }, "description": { "en": "This page documents configuration readiness without presenting Qwen as a current picker option.", "zh": "本页记录配置就绪状态，不把 Qwen 表述为当前客户端可选项。" }, "items": [{ "label": { "en": "Long text", "zh": "长文本" }, "title": "qwen-3.7-max", "description": { "en": "A 1M capacity budget with a long-text channel adapter.", "zh": "1M 容量预算与长文本通道适配。" }, "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" } }] },
-  "workflows":{"eyebrow":{"en":"Intended workload","zh":"目标工作负载"},"title":{"en":"Prepared for documents that should not be reduced to isolated excerpts.","zh":"面向不应被拆成孤立片段的长文档。"},"description":{"en":"These scenarios explain the configured role without presenting a live client feature.","zh":"这些场景用于说明已配置角色，不把它表述为已上线客户端功能。"},"items":[{"title":{"en":"Chinese document synthesis","zh":"中文长文综合"},"brief":{"en":"Connect arguments across a long Chinese source.","zh":"连接长篇中文材料中的论点。"},"process":{"en":"The configured long-text channel is intended to keep distant sections in view.","zh":"已配置的长文本通道旨在同时保留相距较远的章节。"},"outcome":{"en":"A document-wide synthesis rather than excerpt summaries.","zh":"形成全篇综合，而不是片段摘要。"}},{"title":{"en":"Large source review","zh":"大型资料审阅"},"brief":{"en":"Review a large textual collection under one set of criteria.","zh":"依据统一标准审阅大型文本资料集。"},"process":{"en":"The 1M profile supplies the registered capacity for the source set.","zh":"1M 画像为资料集提供已登记容量。"},"outcome":{"en":"Findings that preserve relationships across sources.","zh":"保留来源关系的审阅结论。"}},{"title":{"en":"Readiness planning","zh":"就绪规划"},"brief":{"en":"Plan a future Qwen route using confirmed runtime facts.","zh":"基于已确认运行时事实规划未来 Qwen 路径。"},"process":{"en":"Use the exact ID, budget, adapter, and current access boundary.","zh":"使用准确 ID、预算、通道与当前入口边界。"},"outcome":{"en":"A plan without premature availability claims.","zh":"一份不提前声称可用性的计划。"}}]},
-  "capabilities":{"eyebrow":{"en":"Configured foundation","zh":"已配置基础"},"title":{"en":"A precise record of what is ready.","zh":"准确记录已经准备好的部分。"},"description":{"en":"The page stays within the confirmed runtime matrix.","zh":"页面严格遵循已确认的运行时矩阵。"},"items":[{"title":{"en":"Exact model identity","zh":"准确模型标识"},"description":{"en":"The registered ID is `qwen-3.7-max`.","zh":"已登记 ID 为 `qwen-3.7-max`。"}},{"title":{"en":"1M capacity profile","zh":"1M 容量画像"},"description":{"en":"A 1M budget is configured below the picker.","zh":"选择器下层已配置 1M 预算。"}},{"title":{"en":"Long-text adapter","zh":"长文本通道适配"},"description":{"en":"The runtime includes a channel for long textual workloads.","zh":"运行时已包含长文本工作负载通道。"}},{"title":{"en":"Explicit status","zh":"明确状态"},"description":{"en":"The model is not currently exposed in the client picker.","zh":"该模型当前未在客户端选择器露出。"}}]},
-  "selection":{"title":{"en":"Use this page to understand readiness, not to start a Qwen session.","zh":"用本页了解就绪状态，而不是开始 Qwen 会话。"},"choose":{"title":{"en":"This profile matters when","zh":"这个画像适用于评估"},"items":[{"en":"Future work centers on long Chinese documents.","zh":"未来工作围绕长篇中文文档。"},{"en":"You need the exact registered Qwen capacity.","zh":"需要准确的 Qwen 已登记容量。"},{"en":"You are reviewing platform preparation.","zh":"正在审查平台准备情况。"}]},"alternative":{"title":{"en":"Use a live option when","zh":"这些情况应改用已上线选项"},"items":[{"en":"The task must begin in the client today.","zh":"任务今天就要在客户端开始。"},{"en":"A current long-context model can satisfy the requirement.","zh":"当前长上下文模型可以满足需求。"},{"en":"You need a direct product entry rather than a roadmap signal.","zh":"你需要直接产品入口，而不是路线准备信号。"}]}},
-  "faq": [{ "question": { "en": "Is Qwen 3.7 Max available in the client picker?", "zh": "Qwen 3.7 Max 已在客户端选择器中吗？" }, "answer": { "en": "No. Its capacity and long-text channel are configured below the picker, but it is not exposed in the main client list.", "zh": "没有。其容量与长文本通道已完成配置，但当前未在客户端主选择器露出。" } }],
-  "finalCta": { "title": { "en": "Qwen 3.7 Max is configured below the picker.", "zh": "Qwen 3.7 Max 已完成底层配置。" }, "description": { "en": "The page records its exact readiness state without claiming a public client entry.", "zh": "本页准确记录其就绪状态，不声称已经提供客户端公开入口。" } }
+  "slug": "qwen",
+  "name": "Qwen",
+  "access": "capacity",
+  "badge": {
+    "en": "Alibaba · Capacity configured",
+    "zh": "阿里通义千问 · 容量已登记"
+  },
+  "summary": {
+    "en": "Qwen 3.7 Max has a configured 1M long-text capacity profile below the client picker.",
+    "zh": "Qwen 3.7 Max 已配置 1M 长文本容量画像，当前未在客户端主选择器露出。"
+  },
+  "seo": {"title":{"en":"Qwen 3.7 Max Model: 1M Context, Model ID and Use Cases","zh":"Qwen 3.7 Max 模型：1M 上下文、Model ID 与用途"},"description":{"en":"Learn about Qwen 3.7 Max, its exact model ID, configured 1M context profile, long-text role, Chinese document use cases, and current status.","zh":"了解 Qwen 3.7 Max 的准确 Model ID、1M 上下文画像、长文本定位、中文文档用途与当前状态。"},"keywords":[{"en":"Qwen 3.7 Max","zh":"Qwen 3.7 Max"},{"en":"Qwen model","zh":"Qwen 模型"},{"en":"Qwen 1M context","zh":"Qwen 1M 上下文"},{"en":"qwen-3.7-max","zh":"qwen-3.7-max"}]},
+  "hero": {
+    "title": {
+        "en": "Qwen 3.7 Max model, 1M context profile, and long-text use cases.",
+        "zh": "Qwen 3.7 Max 模型、1M 上下文画像与长文本用途。"
+    },
+    "description": {
+      "en": "The `qwen-3.7-max` capacity profile carries a 1M budget and a long-text channel adapter. It is not exposed in the main client picker.",
+      "zh": "`qwen-3.7-max` 已配置 1M 预算并适配长文本通道，当前未在客户端主选择器默认露出。"
+    },
+    "prompts": [
+      { "en": "Process a long source set", "zh": "处理大型资料集" },
+      { "en": "Work through a long Chinese document", "zh": "处理长篇中文文档" }
+    ]
+  },
+  "facts": [
+    {
+      "label": { "en": "Model ID", "zh": "Model ID" },
+      "value": { "en": "qwen-3.7-max", "zh": "qwen-3.7-max" }
+    },
+    {
+      "label": { "en": "Capacity", "zh": "容量画像" },
+      "value": { "en": "1M budget", "zh": "1M 预算" }
+    },
+    {
+      "label": { "en": "Channel", "zh": "通道" },
+      "value": { "en": "Long-text adapter", "zh": "长文本通道" }
+    },
+    {
+      "label": { "en": "Availability", "zh": "可用状态" },
+      "value": { "en": "Not in main picker", "zh": "未在主选择器露出" }
+    }
+  ],
+  "positioning": {
+    "eyebrow": { "en": "Qwen 3.7 Max model overview", "zh": "Qwen 3.7 Max 模型概览" },
+    "title": {
+      "en": "A long-text route prepared for Chinese and mixed source sets.",
+      "zh": "为中文与混合资料集准备的长文本路径。"
+    },
+    "description": {
+      "en": "Qwen 3.7 Max has a registered context role below the picker, with no claim of current direct access.",
+      "zh": "Qwen 3.7 Max 已在选择器下层登记长文本定位，但当前不声称可以直接使用。"
+    },
+    "traits": [
+      {
+        "label": { "en": "Strength", "zh": "能力方向" },
+        "value": { "en": "Long source processing", "zh": "长资料处理" },
+        "description": {
+          "en": "The adapter is prepared for context-heavy textual work.",
+          "zh": "通道适配面向上下文密集型文本工作。"
+        }
+      },
+      {
+        "label": { "en": "Language fit", "zh": "语言场景" },
+        "value": { "en": "Chinese long-form work", "zh": "中文长篇工作" },
+        "description": {
+          "en": "Its page focuses on the confirmed long-text role, not generic claims.",
+          "zh": "本页聚焦已确认的长文本定位，不扩展泛化能力宣称。"
+        }
+      },
+      {
+        "label": { "en": "Scale", "zh": "规模" },
+        "value": { "en": "1M budget", "zh": "1M 预算" },
+        "description": {
+          "en": "Capacity is registered for large inputs.",
+          "zh": "已为大型输入登记容量。"
+        }
+      },
+      {
+        "label": { "en": "Boundary", "zh": "当前边界" },
+        "value": { "en": "No main-picker access", "zh": "主选择器不可选" },
+        "description": {
+          "en": "Readiness does not equal launch.",
+          "zh": "底层就绪不等于已经上线。"
+        }
+      }
+    ]
+  },
+  "lineup": {
+    "eyebrow": { "en": "Configured capacity", "zh": "已配置容量" },
+    "title": {
+      "en": "One registered model with a defined long-text role.",
+      "zh": "一个已登记型号，对应明确的长文本定位。"
+    },
+    "description": {
+      "en": "This page documents configuration readiness without presenting Qwen as a current picker option.",
+      "zh": "本页记录配置就绪状态，不把 Qwen 表述为当前客户端可选项。"
+    },
+    "items": [
+      {
+        "label": { "en": "Long text", "zh": "长文本" },
+        "title": "qwen-3.7-max",
+        "description": {
+          "en": "A 1M capacity budget with a long-text channel adapter.",
+          "zh": "1M 容量预算与长文本通道适配。"
+        },
+        "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" }
+      }
+    ]
+  },
+  "workflows": {
+    "eyebrow": { "en": "Intended workload", "zh": "目标工作负载" },
+    "title": {
+      "en": "Prepared for documents that should not be reduced to isolated excerpts.",
+      "zh": "面向不应被拆成孤立片段的长文档。"
+    },
+    "description": {
+      "en": "These scenarios explain the configured role without presenting a live client feature.",
+      "zh": "这些场景用于说明已配置角色，不把它表述为已上线客户端功能。"
+    },
+    "items": [
+      {
+        "title": { "en": "Chinese document synthesis", "zh": "中文长文综合" },
+        "brief": {
+          "en": "Connect arguments across a long Chinese source.",
+          "zh": "连接长篇中文材料中的论点。"
+        },
+        "process": {
+          "en": "The configured long-text channel is intended to keep distant sections in view.",
+          "zh": "已配置的长文本通道旨在同时保留相距较远的章节。"
+        },
+        "outcome": {
+          "en": "A document-wide synthesis rather than excerpt summaries.",
+          "zh": "形成全篇综合，而不是片段摘要。"
+        }
+      },
+      {
+        "title": { "en": "Large source review", "zh": "大型资料审阅" },
+        "brief": {
+          "en": "Review a large textual collection under one set of criteria.",
+          "zh": "依据统一标准审阅大型文本资料集。"
+        },
+        "process": {
+          "en": "The 1M profile supplies the registered capacity for the source set.",
+          "zh": "1M 画像为资料集提供已登记容量。"
+        },
+        "outcome": {
+          "en": "Findings that preserve relationships across sources.",
+          "zh": "保留来源关系的审阅结论。"
+        }
+      },
+      {
+        "title": { "en": "Readiness planning", "zh": "就绪规划" },
+        "brief": {
+          "en": "Plan a future Qwen route using confirmed runtime facts.",
+          "zh": "基于已确认运行时事实规划未来 Qwen 路径。"
+        },
+        "process": {
+          "en": "Use the exact ID, budget, adapter, and current access boundary.",
+          "zh": "使用准确 ID、预算、通道与当前入口边界。"
+        },
+        "outcome": {
+          "en": "A plan without premature availability claims.",
+          "zh": "一份不提前声称可用性的计划。"
+        }
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": { "en": "Configured foundation", "zh": "已配置基础" },
+    "title": {
+      "en": "A precise record of what is ready.",
+      "zh": "准确记录已经准备好的部分。"
+    },
+    "description": {
+      "en": "The page stays within the confirmed runtime matrix.",
+      "zh": "页面严格遵循已确认的运行时矩阵。"
+    },
+    "items": [
+      {
+        "title": { "en": "Exact model identity", "zh": "准确模型标识" },
+        "description": {
+          "en": "The registered ID is `qwen-3.7-max`.",
+          "zh": "已登记 ID 为 `qwen-3.7-max`。"
+        }
+      },
+      {
+        "title": { "en": "1M capacity profile", "zh": "1M 容量画像" },
+        "description": {
+          "en": "A 1M budget is configured below the picker.",
+          "zh": "选择器下层已配置 1M 预算。"
+        }
+      },
+      {
+        "title": { "en": "Long-text adapter", "zh": "长文本通道适配" },
+        "description": {
+          "en": "The runtime includes a channel for long textual workloads.",
+          "zh": "运行时已包含长文本工作负载通道。"
+        }
+      },
+      {
+        "title": { "en": "Explicit status", "zh": "明确状态" },
+        "description": {
+          "en": "The model is not currently exposed in the client picker.",
+          "zh": "该模型当前未在客户端选择器露出。"
+        }
+      }
+    ]
+  },
+  "selection": {
+    "title": {
+      "en": "Use this page to understand readiness, not to start a Qwen session.",
+      "zh": "用本页了解就绪状态，而不是开始 Qwen 会话。"
+    },
+    "choose": {
+      "title": {
+        "en": "This profile matters when",
+        "zh": "这个画像适用于评估"
+      },
+      "items": [
+        {
+          "en": "Future work centers on long Chinese documents.",
+          "zh": "未来工作围绕长篇中文文档。"
+        },
+        {
+          "en": "You need the exact registered Qwen capacity.",
+          "zh": "需要准确的 Qwen 已登记容量。"
+        },
+        {
+          "en": "You are reviewing platform preparation.",
+          "zh": "正在审查平台准备情况。"
+        }
+      ]
+    },
+    "alternative": {
+      "title": {
+        "en": "Use a live option when",
+        "zh": "这些情况应改用已上线选项"
+      },
+      "items": [
+        {
+          "en": "The task must begin in the client today.",
+          "zh": "任务今天就要在客户端开始。"
+        },
+        {
+          "en": "A current long-context model can satisfy the requirement.",
+          "zh": "当前长上下文模型可以满足需求。"
+        },
+        {
+          "en": "You need a direct product entry rather than a roadmap signal.",
+          "zh": "你需要直接产品入口，而不是路线准备信号。"
+        }
+      ]
+    }
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "What is Qwen 3.7 Max?",
+        "zh": "Qwen 3.7 Max 是什么模型？"
+      },
+      "answer": {
+        "en": "Qwen 3.7 Max is an Alibaba Qwen model with a configured 1M capacity profile and a long-text channel role.",
+        "zh": "Qwen 3.7 Max 是阿里通义千问模型，已配置 1M 容量画像与长文本通道定位。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the exact Qwen model ID?",
+        "zh": "准确的 Qwen Model ID 是什么？"
+      },
+      "answer": {
+        "en": "The registered model ID is `qwen-3.7-max`.",
+        "zh": "已登记 Model ID 为 `qwen-3.7-max`。"
+      }
+    },
+    {
+      "question": {
+        "en": "How large is the Qwen 3.7 Max context profile?",
+        "zh": "Qwen 3.7 Max 的上下文有多大？"
+      },
+      "answer": {
+        "en": "The runtime matrix includes a 1M budget and a long-text channel adapter for Qwen 3.7 Max.",
+        "zh": "运行时矩阵已为 Qwen 3.7 Max 配置 1M 预算与长文本通道适配。"
+      }
+    },
+    {
+      "question": {
+        "en": "What workload is this profile intended for?",
+        "zh": "这个画像面向什么工作负载？"
+      },
+      "answer": {
+        "en": "It is positioned for long textual source sets, including extended Chinese document work, without claiming broader unconfirmed capabilities.",
+        "zh": "它面向长文本资料集，包括长篇中文文档工作；页面不会扩展声称其他未确认能力。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the current Qwen 3.7 Max support status?",
+        "zh": "Qwen 3.7 Max 当前是什么支持状态？"
+      },
+      "answer": {
+        "en": "No. The model remains below the picker and has no current public client entry.",
+        "zh": "不是。该模型仍位于选择器下层，目前没有公开客户端入口。"
+      }
+    }
+  ],
+  "finalCta": {
+    "title": {
+      "en": "Qwen 3.7 Max is configured below the picker.",
+      "zh": "Qwen 3.7 Max 已完成底层配置。"
+    },
+    "description": {
+      "en": "The page records its exact readiness state without claiming a public client entry.",
+      "zh": "本页准确记录其就绪状态，不声称已经提供客户端公开入口。"
+    }
+  }
 }

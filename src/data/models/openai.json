@@ -1,28 +1,394 @@
 {
-  "slug": "openai", "name": "OpenAI", "access": "picker",
+  "slug": "openai",
+  "name": "OpenAI",
+  "access": "picker",
   "badge": { "en": "OpenAI · Client picker", "zh": "OpenAI · 客户端可选" },
-  "summary": { "en": "GPT-6 Astra is live in chat; GPT-Image-2 is live in the drawing Combo; coding models are configured below the picker.", "zh": "GPT-6 Astra 已在对话选择器上线；GPT-Image-2 已在画图 Combo 上线；代码模型已完成底层配置。" },
-  "hero": { "title": { "en": "One OpenAI family, three different access paths.", "zh": "同一 OpenAI 系列，三种不同接入路径。" }, "description": { "en": "GPT-6 Astra is live for reasoning, GPT-Image-2 is live through the drawing Combo, and the configured Sol, Terra, and Codex profiles remain below the main picker.", "zh": "GPT-6 Astra 已上线处理推理任务；GPT-Image-2 已通过画图 Combo 上线；已配置的 Sol、Terra 与 Codex 画像仍位于主选择器下层。" }, "prompts": [{ "en": "Reason through this decision", "zh": "推演这个决策" }, { "en": "Implement and verify this feature", "zh": "实现并验证这个功能" }, { "en": "Turn this brief into an image", "zh": "把这份简报变成图像" }] },
-  "facts":[{"label":{"en":"Live chat model","zh":"已上线对话型号"},"value":{"en":"GPT-6 Astra","zh":"GPT-6 Astra"}},{"label":{"en":"Live image model","zh":"已上线图像型号"},"value":{"en":"GPT-Image-2 via Combo","zh":"GPT-Image-2 · 通过 Combo"}},{"label":{"en":"Configured capacity","zh":"已配置容量"},"value":{"en":"Sol · Terra · Codex","zh":"Sol · Terra · Codex"}},{"label":{"en":"API key","zh":"API Key"},"value":{"en":"Not required","zh":"无需自备"}}],
-  "positioning":{"eyebrow":{"en":"Agent behavior","zh":"Agent 工作方式"},"title":{"en":"Astra is the OpenAI route for high-stakes reasoning in the client.","zh":"Astra 是客户端中承担高要求推理的 OpenAI 路径。"},"description":{"en":"This page separates what users can select now from image generation in a Combo and code-specialized capacity prepared below the picker.","zh":"本页明确区分当前可直接选择的 Astra、通过 Combo 使用的图像能力，以及选择器下层已准备的代码专用容量。"},"traits":[{"label":{"en":"Live role","zh":"当前角色"},"value":{"en":"Flagship reasoning","zh":"旗舰推理"},"description":{"en":"Astra handles complex instructions, decisions, and agent orchestration.","zh":"Astra 处理复杂指令、决策与 Agent 编排。"}},{"label":{"en":"Work style","zh":"工作方式"},"value":{"en":"Reasons before execution","zh":"执行前充分推演"},"description":{"en":"Best where the cost of a weak plan is high.","zh":"适合薄弱方案会造成高成本后果的任务。"}},{"label":{"en":"Visual lane","zh":"视觉路径"},"value":{"en":"Delivered through a Combo","zh":"通过 Combo 承载"},"description":{"en":"GPT-Image-2 produces images rather than chat output.","zh":"GPT-Image-2 生成图像，而不是作为文本对话型号出现。"}},{"label":{"en":"Status discipline","zh":"状态边界"},"value":{"en":"Configured is not selectable","zh":"已配置不等于可选择"},"description":{"en":"Sol, Terra, and Codex remain below the main picker.","zh":"Sol、Terra 与 Codex 当前仍未在主选择器露出。"}}]},
-  "lineup": { "eyebrow": { "en": "Role-based lineup", "zh": "按角色选择" }, "title": { "en": "Do not treat every GPT model as interchangeable.", "zh": "不要把所有 GPT 模型视为可以互换。" }, "description": { "en": "The useful distinction is the job each model is meant to do, not only its generation number.", "zh": "真正有用的区别是每个模型承担的工作，而不只是代际编号。" }, "items": [
-    { "label": { "en": "Frontier", "zh": "前沿" }, "title": "gpt-6-astra", "description": { "en": "Strong reasoning and broad instruction following.", "zh": "强推理与通用指令遵从。" }, "meta": { "en": "Client picker", "zh": "客户端可选" } },
-    { "label": { "en": "Capacity ready", "zh": "容量已就绪" }, "title": "gpt-5.6-sol / gpt-5.6-terra", "description": { "en": "1M context and 272K cliff profiles configured below the picker.", "zh": "已配置 1M 上下文与 272K cliff 画像，未在主选择器露出。" }, "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" } },
-    { "label": { "en": "Evaluation", "zh": "评测支持" }, "title": "gpt-5.3-codex / gpt-5.3-codex-spark", "description": { "en": "Code-specialized models with 400K / 128K capacity configuration.", "zh": "代码专用模型，已配置 400K / 128K 容量。" }, "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" } },
-    { "label": { "en": "Live Combo", "zh": "Combo 已上线" }, "title": "gpt-image-2", "description": { "en": "High-quality image, illustration, and cover generation.", "zh": "高质量图片、插画与封面图生成。" }, "meta": { "en": "Live · ai-image-drawing", "zh": "已上线 · ai-image-drawing" } }
-  ]},
-  "workflows":{"eyebrow":{"en":"Outcome-based routes","zh":"按交付结果选择路径"},"title":{"en":"Use the live OpenAI capability that matches the deliverable.","zh":"根据交付物选择已经上线的 OpenAI 能力。"},"description":{"en":"A reasoning task and an image brief should not be forced through the same product entry.","zh":"推理任务与图像简报不应被塞进同一个产品入口。"},"items":[{"title":{"en":"Complex product decision","zh":"复杂产品决策"},"brief":{"en":"Resolve competing requirements before committing to implementation.","zh":"在进入实现前解决相互冲突的需求。"},"process":{"en":"Astra follows constraints, compares consequences, and builds an actionable direction.","zh":"Astra 跟踪约束、比较后果并形成可执行方向。"},"outcome":{"en":"A reasoned decision ready for the project team.","zh":"一份可交给项目团队执行的推理结论。"}},{"title":{"en":"Agent orchestration","zh":"Agent 编排"},"brief":{"en":"Coordinate a multi-step task that mixes planning and execution.","zh":"协调一个混合规划与执行的多步骤任务。"},"process":{"en":"Astra keeps the instruction hierarchy in view while the task progresses.","zh":"Astra 在任务推进中持续把握指令层级。"},"outcome":{"en":"A coherent run instead of disconnected answers.","zh":"一段连贯执行，而不是互不相连的回答。"}},{"title":{"en":"Image from a creative brief","zh":"根据创意简报生成图像"},"brief":{"en":"Produce an illustration, cover, or campaign visual.","zh":"制作插画、封面或活动视觉。"},"process":{"en":"The `ai-image-drawing` Combo sends the visual task to GPT-Image-2.","zh":"`ai-image-drawing` Combo 将视觉任务交给 GPT-Image-2。"},"outcome":{"en":"A visual asset rather than another text response.","zh":"获得视觉资产，而不是另一段文字回答。"}}]},
-  "capabilities":{"eyebrow":{"en":"OpenAI in Floatboat","zh":"OpenAI 在 Floatboat 中"},"title":{"en":"One provider family, accurately separated by product surface.","zh":"同一供应商系列，按产品入口准确区分。"},"description":{"en":"Only live capabilities receive a direct-use claim; configured models retain their exact readiness label.","zh":"只有已上线能力才声称可直接使用；已配置型号继续保持准确的就绪状态标识。"},"items":[{"title":{"en":"Frontier reasoning","zh":"旗舰推理"},"description":{"en":"GPT-6 Astra is selectable for complex reasoning and broad instruction following.","zh":"GPT-6 Astra 可直接用于复杂推理与通用指令遵从。"}},{"title":{"en":"Agent task execution","zh":"Agent 任务执行"},"description":{"en":"Astra is positioned for deep Agent orchestration and architecture-level work.","zh":"Astra 面向深度 Agent 编排与架构级工作。"}},{"title":{"en":"Image generation","zh":"图像生成"},"description":{"en":"GPT-Image-2 is live as the default high-quality model in `ai-image-drawing`.","zh":"GPT-Image-2 已作为 `ai-image-drawing` 的默认高质量生图模型上线。"}},{"title":{"en":"Prepared code capacity","zh":"已准备的代码容量"},"description":{"en":"Sol, Terra, and Codex profiles are configured but not exposed in the picker.","zh":"Sol、Terra 与 Codex 画像已配置，但未在选择器露出。"}}]},
-  "selection":{"title":{"en":"Choose the available route, not only the model name.","zh":"选择真实可用的路径，而不只是一个模型名称。"},"choose":{"title":{"en":"Choose GPT-6 Astra when","zh":"适合选择 GPT-6 Astra"},"items":[{"en":"The task needs strong reasoning before implementation.","zh":"任务需要在实现前进行强推理。"},{"en":"You are coordinating several dependent Agent steps.","zh":"你正在协调多个相互依赖的 Agent 步骤。"},{"en":"Instruction following and architectural judgment matter together.","zh":"指令遵从与架构判断同样重要。"}]},"alternative":{"title":{"en":"Use another Floatboat route when","zh":"这些情况使用其他 Floatboat 路径"},"items":[{"en":"The deliverable is an image; open the drawing Combo.","zh":"交付物是图像，应打开画图 Combo。"},{"en":"You need faster routine processing; consider a Flash model.","zh":"需要更快处理常规任务，可考虑 Flash 型号。"},{"en":"Do not select Sol, Terra, or Codex from the main picker; they are not exposed there.","zh":"不要尝试在主选择器选择 Sol、Terra 或 Codex，它们尚未露出。"}]}},
-  "extensions": { "eyebrow": { "en": "Choose by outcome", "zh": "按结果选择" }, "title": { "en": "Reason, build, respond, or generate.", "zh": "推理、构建、快速响应或生成图像。" }, "items": [
-    { "title": "Astra", "description": { "en": "Use when the task needs careful reasoning before action.", "zh": "用于需要先严谨推理、再采取行动的任务。" } },
-    { "title": "Sol", "description": { "en": "Use for implementation-heavy coding and sustained technical work.", "zh": "用于实现密集型编程与持续技术工作。" } },
-    { "title": "Codex", "description": { "en": "Configured code-specialized capacity below the main picker.", "zh": "已在主选择器下层配置代码专用模型容量。" } },
-    { "title": "GPT Image 2", "description": { "en": "Use when the deliverable is visual rather than another block of text.", "zh": "用于交付物是视觉内容，而不是另一段文字的任务。" } }
-  ]},
-  "faq": [
-    { "question": { "en": "Which OpenAI model is directly selectable now?", "zh": "当前可直接选择哪个 OpenAI 模型？" }, "answer": { "en": "GPT-6 Astra is live in the main chat picker. GPT-Image-2 is live through `ai-image-drawing`; the listed Sol, Terra, and Codex models are configured below the picker.", "zh": "GPT-6 Astra 已在主对话选择器上线；GPT-Image-2 通过 `ai-image-drawing` 上线；列出的 Sol、Terra 与 Codex 模型已完成底层配置但未在主选择器露出。" } },
-    { "question": { "en": "Why is GPT Image 2 listed with text models?", "zh": "为什么 GPT Image 2 与文本模型列在一起？" }, "answer": { "en": "It represents a different output lane—image generation—within the same broader workflow and project context.", "zh": "它代表同一完整工作流与项目上下文中的另一条输出路径：图像生成。" } }
+  "summary": {
+    "en": "GPT-6 Astra is live in chat; GPT-Image-2 is live in the drawing Combo; coding models are configured below the picker.",
+    "zh": "GPT-6 Astra 已在对话选择器上线；GPT-Image-2 已在画图 Combo 上线；代码模型已完成底层配置。"
+  },
+  "seo": {"title":{"en":"OpenAI Models: GPT-6 Astra, GPT-Image-2, Sol, Terra and Codex","zh":"OpenAI 模型：GPT-6 Astra、GPT-Image-2、Sol、Terra 与 Codex"},"description":{"en":"Explore GPT-6 Astra, GPT-Image-2, GPT-5.6 Sol and Terra, and GPT-5.3 Codex models by capabilities, model IDs, status, and use cases.","zh":"了解 GPT-6 Astra、GPT-Image-2、GPT-5.6 Sol 与 Terra、GPT-5.3 Codex 的能力、Model ID、状态与适用场景。"},"keywords":[{"en":"GPT-6 Astra","zh":"GPT-6 Astra"},{"en":"OpenAI models","zh":"OpenAI 模型"},{"en":"GPT-Image-2","zh":"GPT-Image-2"},{"en":"GPT-5.3 Codex","zh":"GPT-5.3 Codex"}]},
+  "hero": {
+    "title": {
+        "en": "OpenAI models: GPT-6 Astra, GPT-Image-2, Sol, Terra, and Codex.",
+        "zh": "OpenAI 模型：GPT-6 Astra、GPT-Image-2、Sol、Terra 与 Codex。"
+    },
+    "description": {
+      "en": "GPT-6 Astra is live for reasoning, GPT-Image-2 is live through the drawing Combo, and the configured Sol, Terra, and Codex profiles remain below the main picker.",
+      "zh": "GPT-6 Astra 已上线处理推理任务；GPT-Image-2 已通过画图 Combo 上线；已配置的 Sol、Terra 与 Codex 画像仍位于主选择器下层。"
+    },
+    "prompts": [
+      { "en": "Reason through this decision", "zh": "推演这个决策" },
+      { "en": "Implement and verify this feature", "zh": "实现并验证这个功能" },
+      { "en": "Turn this brief into an image", "zh": "把这份简报变成图像" }
+    ]
+  },
+  "facts": [
+    {
+      "label": { "en": "Live chat model", "zh": "已上线对话型号" },
+      "value": { "en": "GPT-6 Astra", "zh": "GPT-6 Astra" }
+    },
+    {
+      "label": { "en": "Live image model", "zh": "已上线图像型号" },
+      "value": {
+        "en": "GPT-Image-2 via Combo",
+        "zh": "GPT-Image-2 · 通过 Combo"
+      }
+    },
+    {
+      "label": { "en": "Configured capacity", "zh": "已配置容量" },
+      "value": { "en": "Sol · Terra · Codex", "zh": "Sol · Terra · Codex" }
+    },
+    {
+      "label": { "en": "API key", "zh": "API Key" },
+      "value": { "en": "Not required", "zh": "无需自备" }
+    }
   ],
-  "finalCta": { "title": { "en": "Match the GPT lane to the deliverable.", "zh": "让 GPT 能力路径匹配最终交付物。" }, "description": { "en": "Choose Astra for reasoning now, and use the wider OpenAI matrix as each capability becomes available in its product surface.", "zh": "当前用 Astra 处理推理任务，并在相应产品界面开放时使用更广泛的 OpenAI 能力矩阵。" } }
+  "positioning": {
+    "eyebrow": { "en": "OpenAI model characteristics", "zh": "OpenAI 模型特点" },
+    "title": {
+      "en": "Astra is the OpenAI route for high-stakes reasoning in the client.",
+      "zh": "Astra 是客户端中承担高要求推理的 OpenAI 路径。"
+    },
+    "description": {
+      "en": "This page separates what users can select now from image generation in a Combo and code-specialized capacity prepared below the picker.",
+      "zh": "本页明确区分当前可直接选择的 Astra、通过 Combo 使用的图像能力，以及选择器下层已准备的代码专用容量。"
+    },
+    "traits": [
+      {
+        "label": { "en": "Live role", "zh": "当前角色" },
+        "value": { "en": "Flagship reasoning", "zh": "旗舰推理" },
+        "description": {
+          "en": "Astra handles complex instructions, decisions, and agent orchestration.",
+          "zh": "Astra 处理复杂指令、决策与 Agent 编排。"
+        }
+      },
+      {
+        "label": { "en": "Work style", "zh": "工作方式" },
+        "value": { "en": "Reasons before execution", "zh": "执行前充分推演" },
+        "description": {
+          "en": "Best where the cost of a weak plan is high.",
+          "zh": "适合薄弱方案会造成高成本后果的任务。"
+        }
+      },
+      {
+        "label": { "en": "Visual lane", "zh": "视觉路径" },
+        "value": { "en": "Delivered through a Combo", "zh": "通过 Combo 承载" },
+        "description": {
+          "en": "GPT-Image-2 produces images rather than chat output.",
+          "zh": "GPT-Image-2 生成图像，而不是作为文本对话型号出现。"
+        }
+      },
+      {
+        "label": { "en": "Status discipline", "zh": "状态边界" },
+        "value": {
+          "en": "Configured is not selectable",
+          "zh": "已配置不等于可选择"
+        },
+        "description": {
+          "en": "Sol, Terra, and Codex remain below the main picker.",
+          "zh": "Sol、Terra 与 Codex 当前仍未在主选择器露出。"
+        }
+      }
+    ]
+  },
+  "lineup": {
+    "eyebrow": { "en": "Role-based lineup", "zh": "按角色选择" },
+    "title": {
+      "en": "Do not treat every GPT model as interchangeable.",
+      "zh": "不要把所有 GPT 模型视为可以互换。"
+    },
+    "description": {
+      "en": "The useful distinction is the job each model is meant to do, not only its generation number.",
+      "zh": "真正有用的区别是每个模型承担的工作，而不只是代际编号。"
+    },
+    "items": [
+      {
+        "label": { "en": "Frontier", "zh": "前沿" },
+        "title": "gpt-6-astra",
+        "description": {
+          "en": "Strong reasoning and broad instruction following.",
+          "zh": "强推理与通用指令遵从。"
+        },
+        "meta": { "en": "Client picker", "zh": "客户端可选" }
+      },
+      {
+        "label": { "en": "Capacity ready", "zh": "容量已就绪" },
+        "title": "gpt-5.6-sol / gpt-5.6-terra",
+        "description": {
+          "en": "1M context and 272K cliff profiles configured below the picker.",
+          "zh": "已配置 1M 上下文与 272K cliff 画像，未在主选择器露出。"
+        },
+        "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" }
+      },
+      {
+        "label": { "en": "Evaluation", "zh": "评测支持" },
+        "title": "gpt-5.3-codex / gpt-5.3-codex-spark",
+        "description": {
+          "en": "Code-specialized models with 400K / 128K capacity configuration.",
+          "zh": "代码专用模型，已配置 400K / 128K 容量。"
+        },
+        "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" }
+      },
+      {
+        "label": { "en": "Live Combo", "zh": "Combo 已上线" },
+        "title": "gpt-image-2",
+        "description": {
+          "en": "High-quality image, illustration, and cover generation.",
+          "zh": "高质量图片、插画与封面图生成。"
+        },
+        "meta": {
+          "en": "Live · ai-image-drawing",
+          "zh": "已上线 · ai-image-drawing"
+        }
+      }
+    ]
+  },
+  "workflows": {
+    "eyebrow": { "en": "Outcome-based routes", "zh": "按交付结果选择路径" },
+    "title": {
+      "en": "Use the live OpenAI capability that matches the deliverable.",
+      "zh": "根据交付物选择已经上线的 OpenAI 能力。"
+    },
+    "description": {
+      "en": "A reasoning task and an image brief should not be forced through the same product entry.",
+      "zh": "推理任务与图像简报不应被塞进同一个产品入口。"
+    },
+    "items": [
+      {
+        "title": { "en": "Complex product decision", "zh": "复杂产品决策" },
+        "brief": {
+          "en": "Resolve competing requirements before committing to implementation.",
+          "zh": "在进入实现前解决相互冲突的需求。"
+        },
+        "process": {
+          "en": "Astra follows constraints, compares consequences, and builds an actionable direction.",
+          "zh": "Astra 跟踪约束、比较后果并形成可执行方向。"
+        },
+        "outcome": {
+          "en": "A reasoned decision ready for the project team.",
+          "zh": "一份可交给项目团队执行的推理结论。"
+        }
+      },
+      {
+        "title": { "en": "Agent orchestration", "zh": "Agent 编排" },
+        "brief": {
+          "en": "Coordinate a multi-step task that mixes planning and execution.",
+          "zh": "协调一个混合规划与执行的多步骤任务。"
+        },
+        "process": {
+          "en": "Astra keeps the instruction hierarchy in view while the task progresses.",
+          "zh": "Astra 在任务推进中持续把握指令层级。"
+        },
+        "outcome": {
+          "en": "A coherent run instead of disconnected answers.",
+          "zh": "一段连贯执行，而不是互不相连的回答。"
+        }
+      },
+      {
+        "title": {
+          "en": "Image from a creative brief",
+          "zh": "根据创意简报生成图像"
+        },
+        "brief": {
+          "en": "Produce an illustration, cover, or campaign visual.",
+          "zh": "制作插画、封面或活动视觉。"
+        },
+        "process": {
+          "en": "The `ai-image-drawing` Combo sends the visual task to GPT-Image-2.",
+          "zh": "`ai-image-drawing` Combo 将视觉任务交给 GPT-Image-2。"
+        },
+        "outcome": {
+          "en": "A visual asset rather than another text response.",
+          "zh": "获得视觉资产，而不是另一段文字回答。"
+        }
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": { "en": "OpenAI in Floatboat", "zh": "OpenAI 在 Floatboat 中" },
+    "title": {
+      "en": "One provider family, accurately separated by product surface.",
+      "zh": "同一供应商系列，按产品入口准确区分。"
+    },
+    "description": {
+      "en": "Only live capabilities receive a direct-use claim; configured models retain their exact readiness label.",
+      "zh": "只有已上线能力才声称可直接使用；已配置型号继续保持准确的就绪状态标识。"
+    },
+    "items": [
+      {
+        "title": { "en": "Frontier reasoning", "zh": "旗舰推理" },
+        "description": {
+          "en": "GPT-6 Astra is selectable for complex reasoning and broad instruction following.",
+          "zh": "GPT-6 Astra 可直接用于复杂推理与通用指令遵从。"
+        }
+      },
+      {
+        "title": { "en": "Agent task execution", "zh": "Agent 任务执行" },
+        "description": {
+          "en": "Astra is positioned for deep Agent orchestration and architecture-level work.",
+          "zh": "Astra 面向深度 Agent 编排与架构级工作。"
+        }
+      },
+      {
+        "title": { "en": "Image generation", "zh": "图像生成" },
+        "description": {
+          "en": "GPT-Image-2 is live as the default high-quality model in `ai-image-drawing`.",
+          "zh": "GPT-Image-2 已作为 `ai-image-drawing` 的默认高质量生图模型上线。"
+        }
+      },
+      {
+        "title": { "en": "Prepared code capacity", "zh": "已准备的代码容量" },
+        "description": {
+          "en": "Sol, Terra, and Codex profiles are configured but not exposed in the picker.",
+          "zh": "Sol、Terra 与 Codex 画像已配置，但未在选择器露出。"
+        }
+      }
+    ]
+  },
+  "selection": {
+    "title": {
+      "en": "Choose the available route, not only the model name.",
+      "zh": "选择真实可用的路径，而不只是一个模型名称。"
+    },
+    "choose": {
+      "title": {
+        "en": "Choose GPT-6 Astra when",
+        "zh": "适合选择 GPT-6 Astra"
+      },
+      "items": [
+        {
+          "en": "The task needs strong reasoning before implementation.",
+          "zh": "任务需要在实现前进行强推理。"
+        },
+        {
+          "en": "You are coordinating several dependent Agent steps.",
+          "zh": "你正在协调多个相互依赖的 Agent 步骤。"
+        },
+        {
+          "en": "Instruction following and architectural judgment matter together.",
+          "zh": "指令遵从与架构判断同样重要。"
+        }
+      ]
+    },
+    "alternative": {
+      "title": {
+        "en": "Use another Floatboat route when",
+        "zh": "这些情况使用其他 Floatboat 路径"
+      },
+      "items": [
+        {
+          "en": "The deliverable is an image; open the drawing Combo.",
+          "zh": "交付物是图像，应打开画图 Combo。"
+        },
+        {
+          "en": "You need faster routine processing; consider a Flash model.",
+          "zh": "需要更快处理常规任务，可考虑 Flash 型号。"
+        },
+        {
+          "en": "Do not select Sol, Terra, or Codex from the main picker; they are not exposed there.",
+          "zh": "不要尝试在主选择器选择 Sol、Terra 或 Codex，它们尚未露出。"
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "eyebrow": { "en": "Choose by outcome", "zh": "按结果选择" },
+    "title": {
+      "en": "Reason, build, respond, or generate.",
+      "zh": "推理、构建、快速响应或生成图像。"
+    },
+    "items": [
+      {
+        "title": "Astra",
+        "description": {
+          "en": "Use when the task needs careful reasoning before action.",
+          "zh": "用于需要先严谨推理、再采取行动的任务。"
+        }
+      },
+      {
+        "title": "Sol",
+        "description": {
+          "en": "Use for implementation-heavy coding and sustained technical work.",
+          "zh": "用于实现密集型编程与持续技术工作。"
+        }
+      },
+      {
+        "title": "Codex",
+        "description": {
+          "en": "Configured code-specialized capacity below the main picker.",
+          "zh": "已在主选择器下层配置代码专用模型容量。"
+        }
+      },
+      {
+        "title": "GPT Image 2",
+        "description": {
+          "en": "Use when the deliverable is visual rather than another block of text.",
+          "zh": "用于交付物是视觉内容，而不是另一段文字的任务。"
+        }
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "Which OpenAI models are covered on this page?",
+        "zh": "本页包含哪些 OpenAI 模型？"
+      },
+      "answer": {
+        "en": "The matrix covers GPT-6 Astra, GPT-Image-2, GPT-5.6 Sol and Terra, and GPT-5.3 Codex and Codex Spark, with their distinct roles and status.",
+        "zh": "矩阵包含 GPT-6 Astra、GPT-Image-2、GPT-5.6 Sol 与 Terra，以及 GPT-5.3 Codex 与 Codex Spark，并区分各自角色和状态。"
+      }
+    },
+    {
+      "question": {
+        "en": "What work is GPT-6 Astra intended for?",
+        "zh": "GPT-6 Astra 适合什么工作？"
+      },
+      "answer": {
+        "en": "Astra is the live OpenAI option for flagship reasoning, complex instruction following, architecture decisions, and deep Agent orchestration.",
+        "zh": "Astra 是已上线的 OpenAI 旗舰推理选项，适合复杂指令遵从、架构决策与深度 Agent 编排。"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is GPT Image 2 listed with text models?",
+        "zh": "为什么 GPT Image 2 与文本模型列在一起？"
+      },
+      "answer": {
+        "en": "It represents a different output lane—image generation—within the same broader workflow and project context.",
+        "zh": "它代表同一完整工作流与项目上下文中的另一条输出路径：图像生成。"
+      }
+    },
+    {
+      "question": {
+        "en": "What can GPT-Image-2 generate?",
+        "zh": "GPT-Image-2 可以生成什么？"
+      },
+      "answer": {
+        "en": "GPT-Image-2 is positioned for high-quality image generation, illustrations, cover artwork, and other visual deliverables.",
+        "zh": "GPT-Image-2 面向高质量图片生成、插画、封面图以及其他视觉交付物。"
+      }
+    },
+    {
+      "question": {
+        "en": "What are GPT-5.3 Codex and Codex Spark for?",
+        "zh": "GPT-5.3 Codex 与 Codex Spark 有什么用途？"
+      },
+      "answer": {
+        "en": "They are code-specialized evaluation profiles with configured 400K and 128K capacity, respectively.",
+        "zh": "它们属于代码专用评测画像，分别配置了 400K 与 128K 容量。"
+      }
+    }
+  ],
+  "finalCta": {
+    "title": {
+      "en": "Match the GPT lane to the deliverable.",
+      "zh": "让 GPT 能力路径匹配最终交付物。"
+    },
+    "description": {
+      "en": "Choose Astra for reasoning now, and use the wider OpenAI matrix as each capability becomes available in its product surface.",
+      "zh": "当前用 Astra 处理推理任务，并在相应产品界面开放时使用更广泛的 OpenAI 能力矩阵。"
+    }
+  }
 }

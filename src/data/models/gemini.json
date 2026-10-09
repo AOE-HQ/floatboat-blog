@@ -1,26 +1,389 @@
 {
-  "slug": "gemini", "name": "Gemini", "access": "picker",
+  "slug": "gemini",
+  "name": "Gemini",
+  "access": "picker",
   "badge": { "en": "Google · Client picker", "zh": "Google · 客户端可选" },
-  "summary": { "en": "Pro for long-context multimodal analysis; Flash for fast, high-throughput work.", "zh": "Pro 面向长上下文多模态分析，Flash 面向快速高吞吐任务。" },
-  "hero": { "title": { "en": "Choose Gemini by the size and speed of the input.", "zh": "根据输入规模和速度要求选择 Gemini。" }, "description": { "en": "Gemini 3.1 Pro Preview is the lane for large, mixed inputs. Gemini 3.8 Flash is the lane for quick turns and repeated lightweight work.", "zh": "Gemini 3.1 Pro Preview 适合大型混合输入；Gemini 3.8 Flash 适合快速响应和重复轻量任务。" }, "prompts": [{ "en": "Analyze this document set", "zh": "分析这组文档" }, { "en": "Compare these screenshots", "zh": "比较这些截图" }, { "en": "Classify this batch quickly", "zh": "快速分类这批内容" }] },
-  "facts":[{"label":{"en":"Live chat models","zh":"已上线对话型号"},"value":{"en":"3.1 Pro Preview · 3.8 Flash","zh":"3.1 Pro Preview · 3.8 Flash"}},{"label":{"en":"Pro context","zh":"Pro 上下文"},"value":{"en":"1M+ long context","zh":"1M+ 超长上下文"}},{"label":{"en":"Inputs","zh":"输入类型"},"value":{"en":"Long text · Images · Mixed material","zh":"长文本 · 图像 · 混合材料"}},{"label":{"en":"API key","zh":"API Key"},"value":{"en":"Not required","zh":"无需自备"}}],
-  "positioning":{"eyebrow":{"en":"Agent behavior","zh":"Agent 工作方式"},"title":{"en":"An analyst for material that is too large or varied to inspect piecemeal.","zh":"面对庞大或混合资料时，更像一位整体分析者。"},"description":{"en":"Gemini Pro is defined by how much source material it can keep in view; Flash is defined by how quickly it can turn repeated requests around.","zh":"Gemini Pro 的价值在于同时把握大量资料；Flash 的价值在于快速周转重复请求。"},"traits":[{"label":{"en":"Pro style","zh":"Pro 风格"},"value":{"en":"Absorbs the whole source set","zh":"先容纳完整资料集"},"description":{"en":"Useful when splitting material would hide relationships.","zh":"适合拆分材料会丢失关系的任务。"}},{"label":{"en":"Flash style","zh":"Flash 风格"},"value":{"en":"Responds in quick cycles","zh":"以快速循环响应"},"description":{"en":"Useful for frequent, lightweight processing.","zh":"适合高频、轻量的处理工作。"}},{"label":{"en":"Input strength","zh":"输入优势"},"value":{"en":"Text and images together","zh":"图文结合"},"description":{"en":"Keeps visual and textual evidence in one analysis.","zh":"将视觉证据与文本信息放在同一次分析中。"}},{"label":{"en":"Decision rule","zh":"选择原则"},"value":{"en":"Remove the actual bottleneck","zh":"解决真正的瓶颈"},"description":{"en":"Choose Pro for breadth and Flash for pace.","zh":"资料规模是瓶颈就选 Pro，周转速度是瓶颈就选 Flash。"}}]},
-  "lineup": { "eyebrow": { "en": "Two operating modes", "zh": "两种工作模式" }, "title": { "en": "Pro absorbs more; Flash turns work around faster.", "zh": "Pro 处理更大输入，Flash 更快完成周转。" }, "description": { "en": "Both are directly selectable, but they solve different bottlenecks.", "zh": "两者都可直接选择，但解决的是不同瓶颈。" }, "items": [
-    { "label": { "en": "Large & mixed", "zh": "大型混合输入" }, "title": "gemini-3.1-pro-preview", "description": { "en": "Long-context understanding and multimodal image-text analysis.", "zh": "超长上下文理解与图文多模态分析。" }, "meta": { "en": "Client picker · Preview", "zh": "客户端可选 · Preview" } },
-    { "label": { "en": "Fast & repeated", "zh": "快速重复任务" }, "title": "gemini-3.8-flash", "description": { "en": "Low-latency, high-throughput processing for frequent tasks.", "zh": "面向高频任务的低延迟、高吞吐处理。" }, "meta": { "en": "Client picker", "zh": "客户端可选" } },
-    { "label": { "en": "Live image Combo", "zh": "生图 Combo 已上线" }, "title": "gemini-3-pro-image-preview", "description": { "en": "Complex generation, precision editing, multi-image redraw, and style fusion.", "zh": "复杂画面生成、高精度编辑、多图重绘与风格融合。" }, "meta": { "en": "Live · ai-image-drawing", "zh": "已上线 · ai-image-drawing" } },
-    { "label": { "en": "Live image Combo", "zh": "生图 Combo 已上线" }, "title": "gemini-2.5-flash-image / gemini-3.1-flash-image-preview", "description": { "en": "Fast image generation and local edits.", "zh": "快速图片生成与局部改图。" }, "meta": { "en": "Live · ai-image-drawing", "zh": "已上线 · ai-image-drawing" } }
-  ]},
-  "workflows":{"eyebrow":{"en":"Context-heavy work","zh":"上下文密集型工作"},"title":{"en":"Use Gemini when the source set is part of the problem.","zh":"当资料规模本身就是问题的一部分时，使用 Gemini。"},"description":{"en":"These examples depend on seeing relationships across documents, images, or repeated inputs.","zh":"这些任务需要在文档、图像或重复输入之间看见关系。"},"items":[{"title":{"en":"Cross-document research","zh":"跨文档研究"},"brief":{"en":"Compare a large collection without losing contradictions between sources.","zh":"比较大型资料集，同时保留来源之间的矛盾。"},"process":{"en":"Pro keeps more of the source set available while forming themes and checking claims.","zh":"Pro 在归纳主题和核对说法时保留更多原始材料。"},"outcome":{"en":"A synthesis that remains traceable to the full evidence set.","zh":"一份仍可追溯完整证据集的综合结论。"}},{"title":{"en":"Visual product review","zh":"视觉产品审查"},"brief":{"en":"Review screenshots together with requirements and written feedback.","zh":"结合需求与文字反馈审查多张截图。"},"process":{"en":"Pro connects layout evidence, text, and constraints in one pass.","zh":"Pro 在一次处理中连接布局证据、文字与约束。"},"outcome":{"en":"Prioritized findings grounded in both images and requirements.","zh":"一份同时基于图像和需求的优先级问题清单。"}},{"title":{"en":"High-volume classification","zh":"高频批量分类"},"brief":{"en":"Apply a clear rubric to many small pieces of content.","zh":"依据明确规则处理大量小型内容。"},"process":{"en":"Flash prioritizes consistent, fast turns over extensive deliberation.","zh":"Flash 优先保持快速、稳定的处理节奏，而不是展开深度推理。"},"outcome":{"en":"A processed batch with less turnaround time.","zh":"以更短周转时间完成的批量结果。"}}]},
-  "capabilities":{"eyebrow":{"en":"Gemini in Floatboat","zh":"Gemini 在 Floatboat 中"},"title":{"en":"Long context, mixed inputs, and a faster companion model.","zh":"超长上下文、混合输入，以及一个更快的搭档。"},"description":{"en":"The live chat models cover analysis and throughput; separate Gemini image models run through the drawing Combo.","zh":"已上线对话型号覆盖分析与吞吐；独立的 Gemini 图像型号通过画图 Combo 使用。"},"items":[{"title":{"en":"1M+ context analysis","zh":"1M+ 上下文分析"},"description":{"en":"Gemini 3.1 Pro Preview is positioned for long documents, large code sets, and cross-file work.","zh":"Gemini 3.1 Pro Preview 面向长文档、大型代码集与跨文件工作。"}},{"title":{"en":"Image-text understanding","zh":"图文理解"},"description":{"en":"Pro can analyze visual and textual material together in the client workflow.","zh":"Pro 可在客户端工作流中结合分析图像与文本材料。"}},{"title":{"en":"High-throughput response","zh":"高吞吐响应"},"description":{"en":"Gemini 3.8 Flash handles frequent lightweight requests with a faster cadence.","zh":"Gemini 3.8 Flash 以更快节奏处理高频轻量请求。"}},{"title":{"en":"Separate image-generation lane","zh":"独立生图路径"},"description":{"en":"Gemini image models are live through `ai-image-drawing`, not the main chat picker.","zh":"Gemini 图像模型通过 `ai-image-drawing` 上线，不属于主对话选择器。"}}]},
-  "selection":{"title":{"en":"Choose by what is slowing the work down.","zh":"根据真正拖慢工作的因素进行选择。"},"choose":{"title":{"en":"Choose Gemini Pro when","zh":"适合选择 Gemini Pro"},"items":[{"en":"You need to inspect a large source set as a whole.","zh":"需要把大型资料集作为一个整体分析。"},{"en":"The task combines images, text, or many files.","zh":"任务同时包含图像、文本或大量文件。"},{"en":"Relationships across the material matter more than response speed.","zh":"材料之间的关系比响应速度更重要。"}]},"alternative":{"title":{"en":"Choose Flash or another route when","zh":"这些情况改选 Flash 或其他路径"},"items":[{"en":"The task is repeated, lightweight, and latency-sensitive.","zh":"任务重复、轻量且对延迟敏感。"},{"en":"Deep architecture decisions are the main risk; consider Claude Opus.","zh":"主要风险是深层架构决策，可考虑 Claude Opus。"},{"en":"The deliverable is a generated image; use the drawing Combo.","zh":"交付物是生成图片，应使用画图 Combo。"}]}},
-  "extensions": { "eyebrow": { "en": "Decision rule", "zh": "选择原则" }, "title": { "en": "Choose the bottleneck you need to remove.", "zh": "先判断需要消除的是哪种瓶颈。" }, "items": [
-    { "title": "Gemini Pro", "description": { "en": "Use when fitting the whole source set into one analysis matters more than response speed.", "zh": "当一次容纳完整资料比响应速度更重要时使用。" } },
-    { "title": "Gemini Flash", "description": { "en": "Use when many small requests must complete quickly and consistently.", "zh": "当大量小任务需要快速、稳定完成时使用。" } }
-  ]},
-  "faq": [
-    { "question": { "en": "Is Gemini 3.1 Pro still a preview model?", "zh": "Gemini 3.1 Pro 仍是预览版吗？" }, "answer": { "en": "The current client identifier is `gemini-3.1-pro-preview`, so the page preserves the preview label rather than implying general availability.", "zh": "当前客户端标识为 `gemini-3.1-pro-preview`，因此页面保留 Preview 标识，不暗示其已全面正式发布。" } },
-    { "question": { "en": "Should I always use Pro for better quality?", "zh": "为了质量是否总该使用 Pro？" }, "answer": { "en": "No. Flash is the better fit when latency and throughput define success; Pro is for context-heavy or multimodal analysis.", "zh": "不需要。若成功标准是延迟与吞吐，Flash 更合适；Pro 适合上下文密集或多模态分析。" } }
+  "summary": {
+    "en": "Pro for long-context multimodal analysis; Flash for fast, high-throughput work.",
+    "zh": "Pro 面向长上下文多模态分析，Flash 面向快速高吞吐任务。"
+  },
+  "seo": {"title":{"en":"Gemini 3.1 Pro vs 3.8 Flash: Context, Features and Use Cases","zh":"Gemini 3.1 Pro 与 3.8 Flash：上下文、能力与用途对比"},"description":{"en":"Compare Gemini 3.1 Pro Preview and Gemini 3.8 Flash by 1M+ context, multimodal analysis, speed, image models, and suitable workloads.","zh":"对比 Gemini 3.1 Pro Preview 与 Gemini 3.8 Flash 的 1M+ 上下文、多模态分析、速度、生图型号与适用任务。"},"keywords":[{"en":"Gemini 3.1 Pro","zh":"Gemini 3.1 Pro"},{"en":"Gemini 3.8 Flash","zh":"Gemini 3.8 Flash"},{"en":"Gemini Pro vs Flash","zh":"Gemini Pro 和 Flash 对比"},{"en":"Gemini 1M context","zh":"Gemini 1M 上下文"}]},
+  "hero": {
+    "title": {
+        "en": "Gemini 3.1 Pro vs 3.8 Flash.",
+        "zh": "Gemini 3.1 Pro 与 3.8 Flash 对比。"
+    },
+    "description": {
+      "en": "Gemini 3.1 Pro Preview is the lane for large, mixed inputs. Gemini 3.8 Flash is the lane for quick turns and repeated lightweight work.",
+      "zh": "Gemini 3.1 Pro Preview 适合大型混合输入；Gemini 3.8 Flash 适合快速响应和重复轻量任务。"
+    },
+    "prompts": [
+      { "en": "Analyze this document set", "zh": "分析这组文档" },
+      { "en": "Compare these screenshots", "zh": "比较这些截图" },
+      { "en": "Classify this batch quickly", "zh": "快速分类这批内容" }
+    ]
+  },
+  "facts": [
+    {
+      "label": { "en": "Live chat models", "zh": "已上线对话型号" },
+      "value": {
+        "en": "3.1 Pro Preview · 3.8 Flash",
+        "zh": "3.1 Pro Preview · 3.8 Flash"
+      }
+    },
+    {
+      "label": { "en": "Pro context", "zh": "Pro 上下文" },
+      "value": { "en": "1M+ long context", "zh": "1M+ 超长上下文" }
+    },
+    {
+      "label": { "en": "Inputs", "zh": "输入类型" },
+      "value": {
+        "en": "Long text · Images · Mixed material",
+        "zh": "长文本 · 图像 · 混合材料"
+      }
+    },
+    {
+      "label": { "en": "API key", "zh": "API Key" },
+      "value": { "en": "Not required", "zh": "无需自备" }
+    }
   ],
-  "finalCta": { "title": { "en": "Use Pro for breadth. Use Flash for pace.", "zh": "需要广度选 Pro，需要速度选 Flash。" }, "description": { "en": "Both Gemini routes stay connected to the same files and project workflow.", "zh": "两条 Gemini 路径都与同一套文件和项目工作流保持连接。" } }
+  "positioning": {
+    "eyebrow": { "en": "Gemini model characteristics", "zh": "Gemini 模型特点" },
+    "title": {
+      "en": "An analyst for material that is too large or varied to inspect piecemeal.",
+      "zh": "面对庞大或混合资料时，更像一位整体分析者。"
+    },
+    "description": {
+      "en": "Gemini Pro is defined by how much source material it can keep in view; Flash is defined by how quickly it can turn repeated requests around.",
+      "zh": "Gemini Pro 的价值在于同时把握大量资料；Flash 的价值在于快速周转重复请求。"
+    },
+    "traits": [
+      {
+        "label": { "en": "Pro style", "zh": "Pro 风格" },
+        "value": {
+          "en": "Absorbs the whole source set",
+          "zh": "先容纳完整资料集"
+        },
+        "description": {
+          "en": "Useful when splitting material would hide relationships.",
+          "zh": "适合拆分材料会丢失关系的任务。"
+        }
+      },
+      {
+        "label": { "en": "Flash style", "zh": "Flash 风格" },
+        "value": { "en": "Responds in quick cycles", "zh": "以快速循环响应" },
+        "description": {
+          "en": "Useful for frequent, lightweight processing.",
+          "zh": "适合高频、轻量的处理工作。"
+        }
+      },
+      {
+        "label": { "en": "Input strength", "zh": "输入优势" },
+        "value": { "en": "Text and images together", "zh": "图文结合" },
+        "description": {
+          "en": "Keeps visual and textual evidence in one analysis.",
+          "zh": "将视觉证据与文本信息放在同一次分析中。"
+        }
+      },
+      {
+        "label": { "en": "Decision rule", "zh": "选择原则" },
+        "value": {
+          "en": "Remove the actual bottleneck",
+          "zh": "解决真正的瓶颈"
+        },
+        "description": {
+          "en": "Choose Pro for breadth and Flash for pace.",
+          "zh": "资料规模是瓶颈就选 Pro，周转速度是瓶颈就选 Flash。"
+        }
+      }
+    ]
+  },
+  "lineup": {
+    "eyebrow": { "en": "Two operating modes", "zh": "两种工作模式" },
+    "title": {
+      "en": "Pro absorbs more; Flash turns work around faster.",
+      "zh": "Pro 处理更大输入，Flash 更快完成周转。"
+    },
+    "description": {
+      "en": "Both are directly selectable, but they solve different bottlenecks.",
+      "zh": "两者都可直接选择，但解决的是不同瓶颈。"
+    },
+    "items": [
+      {
+        "label": { "en": "Large & mixed", "zh": "大型混合输入" },
+        "title": "gemini-3.1-pro-preview",
+        "description": {
+          "en": "Long-context understanding and multimodal image-text analysis.",
+          "zh": "超长上下文理解与图文多模态分析。"
+        },
+        "meta": {
+          "en": "Client picker · Preview",
+          "zh": "客户端可选 · Preview"
+        }
+      },
+      {
+        "label": { "en": "Fast & repeated", "zh": "快速重复任务" },
+        "title": "gemini-3.8-flash",
+        "description": {
+          "en": "Low-latency, high-throughput processing for frequent tasks.",
+          "zh": "面向高频任务的低延迟、高吞吐处理。"
+        },
+        "meta": { "en": "Client picker", "zh": "客户端可选" }
+      },
+      {
+        "label": { "en": "Live image Combo", "zh": "生图 Combo 已上线" },
+        "title": "gemini-3-pro-image-preview",
+        "description": {
+          "en": "Complex generation, precision editing, multi-image redraw, and style fusion.",
+          "zh": "复杂画面生成、高精度编辑、多图重绘与风格融合。"
+        },
+        "meta": {
+          "en": "Live · ai-image-drawing",
+          "zh": "已上线 · ai-image-drawing"
+        }
+      },
+      {
+        "label": { "en": "Live image Combo", "zh": "生图 Combo 已上线" },
+        "title": "gemini-2.5-flash-image / gemini-3.1-flash-image-preview",
+        "description": {
+          "en": "Fast image generation and local edits.",
+          "zh": "快速图片生成与局部改图。"
+        },
+        "meta": {
+          "en": "Live · ai-image-drawing",
+          "zh": "已上线 · ai-image-drawing"
+        }
+      }
+    ]
+  },
+  "workflows": {
+    "eyebrow": { "en": "Context-heavy work", "zh": "上下文密集型工作" },
+    "title": {
+      "en": "Use Gemini when the source set is part of the problem.",
+      "zh": "当资料规模本身就是问题的一部分时，使用 Gemini。"
+    },
+    "description": {
+      "en": "These examples depend on seeing relationships across documents, images, or repeated inputs.",
+      "zh": "这些任务需要在文档、图像或重复输入之间看见关系。"
+    },
+    "items": [
+      {
+        "title": { "en": "Cross-document research", "zh": "跨文档研究" },
+        "brief": {
+          "en": "Compare a large collection without losing contradictions between sources.",
+          "zh": "比较大型资料集，同时保留来源之间的矛盾。"
+        },
+        "process": {
+          "en": "Pro keeps more of the source set available while forming themes and checking claims.",
+          "zh": "Pro 在归纳主题和核对说法时保留更多原始材料。"
+        },
+        "outcome": {
+          "en": "A synthesis that remains traceable to the full evidence set.",
+          "zh": "一份仍可追溯完整证据集的综合结论。"
+        }
+      },
+      {
+        "title": { "en": "Visual product review", "zh": "视觉产品审查" },
+        "brief": {
+          "en": "Review screenshots together with requirements and written feedback.",
+          "zh": "结合需求与文字反馈审查多张截图。"
+        },
+        "process": {
+          "en": "Pro connects layout evidence, text, and constraints in one pass.",
+          "zh": "Pro 在一次处理中连接布局证据、文字与约束。"
+        },
+        "outcome": {
+          "en": "Prioritized findings grounded in both images and requirements.",
+          "zh": "一份同时基于图像和需求的优先级问题清单。"
+        }
+      },
+      {
+        "title": { "en": "High-volume classification", "zh": "高频批量分类" },
+        "brief": {
+          "en": "Apply a clear rubric to many small pieces of content.",
+          "zh": "依据明确规则处理大量小型内容。"
+        },
+        "process": {
+          "en": "Flash prioritizes consistent, fast turns over extensive deliberation.",
+          "zh": "Flash 优先保持快速、稳定的处理节奏，而不是展开深度推理。"
+        },
+        "outcome": {
+          "en": "A processed batch with less turnaround time.",
+          "zh": "以更短周转时间完成的批量结果。"
+        }
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": { "en": "Gemini in Floatboat", "zh": "Gemini 在 Floatboat 中" },
+    "title": {
+      "en": "Long context, mixed inputs, and a faster companion model.",
+      "zh": "超长上下文、混合输入，以及一个更快的搭档。"
+    },
+    "description": {
+      "en": "The live chat models cover analysis and throughput; separate Gemini image models run through the drawing Combo.",
+      "zh": "已上线对话型号覆盖分析与吞吐；独立的 Gemini 图像型号通过画图 Combo 使用。"
+    },
+    "items": [
+      {
+        "title": { "en": "1M+ context analysis", "zh": "1M+ 上下文分析" },
+        "description": {
+          "en": "Gemini 3.1 Pro Preview is positioned for long documents, large code sets, and cross-file work.",
+          "zh": "Gemini 3.1 Pro Preview 面向长文档、大型代码集与跨文件工作。"
+        }
+      },
+      {
+        "title": { "en": "Image-text understanding", "zh": "图文理解" },
+        "description": {
+          "en": "Pro can analyze visual and textual material together in the client workflow.",
+          "zh": "Pro 可在客户端工作流中结合分析图像与文本材料。"
+        }
+      },
+      {
+        "title": { "en": "High-throughput response", "zh": "高吞吐响应" },
+        "description": {
+          "en": "Gemini 3.8 Flash handles frequent lightweight requests with a faster cadence.",
+          "zh": "Gemini 3.8 Flash 以更快节奏处理高频轻量请求。"
+        }
+      },
+      {
+        "title": {
+          "en": "Separate image-generation lane",
+          "zh": "独立生图路径"
+        },
+        "description": {
+          "en": "Gemini image models are live through `ai-image-drawing`, not the main chat picker.",
+          "zh": "Gemini 图像模型通过 `ai-image-drawing` 上线，不属于主对话选择器。"
+        }
+      }
+    ]
+  },
+  "selection": {
+    "title": {
+      "en": "Choose by what is slowing the work down.",
+      "zh": "根据真正拖慢工作的因素进行选择。"
+    },
+    "choose": {
+      "title": { "en": "Choose Gemini Pro when", "zh": "适合选择 Gemini Pro" },
+      "items": [
+        {
+          "en": "You need to inspect a large source set as a whole.",
+          "zh": "需要把大型资料集作为一个整体分析。"
+        },
+        {
+          "en": "The task combines images, text, or many files.",
+          "zh": "任务同时包含图像、文本或大量文件。"
+        },
+        {
+          "en": "Relationships across the material matter more than response speed.",
+          "zh": "材料之间的关系比响应速度更重要。"
+        }
+      ]
+    },
+    "alternative": {
+      "title": {
+        "en": "Choose Flash or another route when",
+        "zh": "这些情况改选 Flash 或其他路径"
+      },
+      "items": [
+        {
+          "en": "The task is repeated, lightweight, and latency-sensitive.",
+          "zh": "任务重复、轻量且对延迟敏感。"
+        },
+        {
+          "en": "Deep architecture decisions are the main risk; consider Claude Opus.",
+          "zh": "主要风险是深层架构决策，可考虑 Claude Opus。"
+        },
+        {
+          "en": "The deliverable is a generated image; use the drawing Combo.",
+          "zh": "交付物是生成图片，应使用画图 Combo。"
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "eyebrow": { "en": "Decision rule", "zh": "选择原则" },
+    "title": {
+      "en": "Choose the bottleneck you need to remove.",
+      "zh": "先判断需要消除的是哪种瓶颈。"
+    },
+    "items": [
+      {
+        "title": "Gemini Pro",
+        "description": {
+          "en": "Use when fitting the whole source set into one analysis matters more than response speed.",
+          "zh": "当一次容纳完整资料比响应速度更重要时使用。"
+        }
+      },
+      {
+        "title": "Gemini Flash",
+        "description": {
+          "en": "Use when many small requests must complete quickly and consistently.",
+          "zh": "当大量小任务需要快速、稳定完成时使用。"
+        }
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "Is Gemini 3.1 Pro still a preview model?",
+        "zh": "Gemini 3.1 Pro 仍是预览版吗？"
+      },
+      "answer": {
+        "en": "The current client identifier is `gemini-3.1-pro-preview`, so the page preserves the preview label rather than implying general availability.",
+        "zh": "当前客户端标识为 `gemini-3.1-pro-preview`，因此页面保留 Preview 标识，不暗示其已全面正式发布。"
+      }
+    },
+    {
+      "question": {
+        "en": "Should I always use Pro for better quality?",
+        "zh": "为了质量是否总该使用 Pro？"
+      },
+      "answer": {
+        "en": "No. Flash is the better fit when latency and throughput define success; Pro is for context-heavy or multimodal analysis.",
+        "zh": "不需要。若成功标准是延迟与吞吐，Flash 更合适；Pro 适合上下文密集或多模态分析。"
+      }
+    },
+    {
+      "question": {
+        "en": "What does the 1M+ context help with?",
+        "zh": "1M+ 上下文适合解决什么问题？"
+      },
+      "answer": {
+        "en": "It is useful when relationships across a large document set, many files, or mixed text-and-image material need to remain visible in one analysis.",
+        "zh": "当一次分析需要保留大型文档集、大量文件或图文混合材料之间的关系时，1M+ 上下文更有价值。"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Gemini image-generation models are listed?",
+        "zh": "有哪些 Gemini 图像生成模型？"
+      },
+      "answer": {
+        "en": "The matrix lists `gemini-3-pro-image-preview`, `gemini-2.5-flash-image`, and `gemini-3.1-flash-image-preview` for complex generation, editing, and faster image work.",
+        "zh": "矩阵列出 `gemini-3-pro-image-preview`、`gemini-2.5-flash-image` 与 `gemini-3.1-flash-image-preview`，分别覆盖复杂生成、编辑与快速生图。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the Gemini 3.1 Pro model ID?",
+        "zh": "Gemini 3.1 Pro 的 Model ID 是什么？"
+      },
+      "answer": {
+        "en": "The standard model ID is `gemini-3.1-pro-preview`; `3.1-pro` and Gemini 3.1 Pro are display aliases for the same model.",
+        "zh": "标准 Model ID 是 `gemini-3.1-pro-preview`；`3.1-pro` 与 Gemini 3.1 Pro 是同一模型的展示别名。"
+      }
+    }
+  ],
+  "finalCta": {
+    "title": {
+      "en": "Use Pro for breadth. Use Flash for pace.",
+      "zh": "需要广度选 Pro，需要速度选 Flash。"
+    },
+    "description": {
+      "en": "Both Gemini routes stay connected to the same files and project workflow.",
+      "zh": "两条 Gemini 路径都与同一套文件和项目工作流保持连接。"
+    }
+  }
 }

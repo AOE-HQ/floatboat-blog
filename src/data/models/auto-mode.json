@@ -1,37 +1,388 @@
 {
-  "slug": "auto-mode", "name": "Auto Mode", "access": "picker",
+  "slug": "auto-mode",
+  "name": "Auto Mode",
+  "access": "picker",
   "badge": { "en": "Default", "zh": "默认" },
-  "summary": { "en": "Let Floatboat route each task to a suitable model and fall back when needed.", "zh": "让 Floatboat 为每项任务选择合适模型，并在需要时自动降级。" },
-  "hero": {
-    "title": { "en": "Start with the task, not the model menu.", "zh": "从任务出发，而不是从模型菜单出发。" },
-    "description": { "en": "Auto Mode weighs reasoning depth, context size, modality, and response speed, then keeps the result in the same workspace.", "zh": "Auto Mode 综合判断推理深度、上下文规模、输入模态与响应速度，再把结果留在同一个工作空间。" },
-    "prompts": [{ "en": "Plan a difficult project", "zh": "规划复杂项目" }, { "en": "Summarize a long document", "zh": "总结长文档" }, { "en": "Inspect this screenshot", "zh": "分析截图" }, { "en": "Refactor this code", "zh": "重构代码" }]
+  "summary": {
+    "en": "Let Floatboat route each task to a suitable model and fall back when needed.",
+    "zh": "让 Floatboat 为每项任务选择合适模型，并在需要时自动降级。"
   },
-  "facts": [{"label":{"en":"Access","zh":"使用入口"},"value":{"en":"Default client option","zh":"客户端默认选项"}},{"label":{"en":"Availability","zh":"开放范围"},"value":{"en":"Available to everyone","zh":"面向所有用户开放"}},{"label":{"en":"Routing signals","zh":"调度依据"},"value":{"en":"Task, context, modality, availability","zh":"任务、上下文、模态与可用性"}},{"label":{"en":"API key","zh":"API Key"},"value":{"en":"Not required","zh":"无需自备"}}],
-  "positioning":{"eyebrow":{"en":"Agent behavior","zh":"Agent 工作方式"},"title":{"en":"A dispatcher that removes model management from the job.","zh":"把模型管理从任务中拿走的调度者。"},"description":{"en":"Auto Mode is for people who want to describe the work once and let Floatboat decide how much reasoning, context, and speed it needs.","zh":"畅用模式适合只想说明工作、不想持续研究型号的人。Floatboat 会判断任务需要多少推理、上下文与响应速度。"},"traits":[{"label":{"en":"Initiative","zh":"主动程度"},"value":{"en":"Routes without extra setup","zh":"无需额外配置即可调度"},"description":{"en":"The request itself supplies the routing signal.","zh":"用户的任务描述本身就是调度依据。"}},{"label":{"en":"Continuity","zh":"任务连续性"},"value":{"en":"Keeps one workspace","zh":"保持同一工作空间"},"description":{"en":"Files, rules, and prior output stay with the project.","zh":"文件、规则与此前产出继续留在项目中。"}},{"label":{"en":"Resilience","zh":"连续可用"},"value":{"en":"Supports fallback","zh":"支持自动降级"},"description":{"en":"A suitable fallback can keep work moving when a route is unavailable.","zh":"首选路径不可用时，可用合适的降级路径继续任务。"}},{"label":{"en":"Control","zh":"用户控制"},"value":{"en":"Manual choice remains available","zh":"仍可手动指定模型"},"description":{"en":"Switch to a fixed model when repeatability matters.","zh":"需要固定行为或可重复结果时，可改为手动选择。"}}]},
-  "lineup": {
-    "eyebrow": { "en": "Routing signals", "zh": "路由依据" },
-    "title": { "en": "Different work calls for different strengths.", "zh": "不同任务，需要不同能力。" },
-    "description": { "en": "Auto Mode selects a route by what the request actually demands—not by one permanent favorite.", "zh": "Auto Mode 根据请求的实际需求选择路径，而不是永远使用同一个偏好模型。" },
-    "items": [
-      { "label": { "en": "Deliberate", "zh": "深度" }, "title": "Reasoning", "description": { "en": "Planning, proofs, architecture, and difficult debugging.", "zh": "规划、证明、架构设计与疑难调试。" }, "meta": { "en": "Higher deliberation", "zh": "更高推理强度" } },
-      { "label": { "en": "Large input", "zh": "长输入" }, "title": "Long context", "description": { "en": "Repositories, research collections, and long documents.", "zh": "代码库、研究资料与长文档。" }, "meta": { "en": "Context-oriented", "zh": "上下文优先" } },
-      { "label": { "en": "Multimodal", "zh": "多模态" }, "title": "Vision & media", "description": { "en": "Screenshots, diagrams, images, and mixed inputs.", "zh": "截图、图表、图像与混合输入。" }, "meta": { "en": "Image + text", "zh": "图像与文本" } },
-      { "label": { "en": "Everyday", "zh": "日常" }, "title": "Fast work", "description": { "en": "Drafting, classification, and lightweight edits.", "zh": "起草、分类与轻量修改。" }, "meta": { "en": "Lower latency", "zh": "更低延迟" } }
+  "seo": {"title":{"en":"AI Model Router and Automatic Model Selection | Floatboat Auto Mode","zh":"AI 模型自动路由与智能选择｜Floatboat 畅用模式"},"description":{"en":"Learn how an AI model router selects models by task complexity, context, modality, speed, and availability, with automatic fallback when a route is unavailable.","zh":"了解 AI 模型自动路由如何根据任务复杂度、上下文、输入模态、速度与可用性选择模型，并在路径不可用时自动降级。"},"keywords":[{"en":"AI model router","zh":"AI 模型路由"},{"en":"automatic model selection","zh":"自动选择模型"},{"en":"LLM routing","zh":"大模型智能路由"},{"en":"Auto Mode","zh":"畅用模式"}]},
+  "hero": {
+    "title": {
+      "en": "AI model routing that selects the right model for each task.",
+      "zh": "根据任务自动选择模型的 AI 智能路由。"
+    },
+    "description": {
+      "en": "Auto Mode weighs reasoning depth, context size, modality, and response speed, then keeps the result in the same workspace.",
+      "zh": "Auto Mode 综合判断推理深度、上下文规模、输入模态与响应速度，再把结果留在同一个工作空间。"
+    },
+    "prompts": [
+      { "en": "Plan a difficult project", "zh": "规划复杂项目" },
+      { "en": "Summarize a long document", "zh": "总结长文档" },
+      { "en": "Inspect this screenshot", "zh": "分析截图" },
+      { "en": "Refactor this code", "zh": "重构代码" }
     ]
   },
-  "workflows":{"eyebrow":{"en":"Typical handoffs","zh":"典型交接"},"title":{"en":"Give Auto the task before choosing the engine.","zh":"先交代任务，再让畅用模式选择引擎。"},"description":{"en":"The value is most visible when one project moves between different kinds of work.","zh":"当一个项目连续经历不同类型的工作时，自动调度的价值最明显。"},"items":[{"title":{"en":"From research to implementation","zh":"从调研到实现"},"brief":{"en":"Study the source material, decide on an approach, and implement it.","zh":"阅读资料、确定方案并完成实现。"},"process":{"en":"Auto can favor context capacity during reading and deeper reasoning during decisions.","zh":"阅读阶段优先上下文能力，关键决策阶段再提高推理强度。"},"outcome":{"en":"One continuous project instead of separate model sessions.","zh":"不拆分模型会话的连续项目结果。"}},{"title":{"en":"Mixed daily queue","zh":"混合日常任务"},"brief":{"en":"Handle summaries, edits, debugging, and document work in sequence.","zh":"连续处理摘要、修改、调试和文档任务。"},"process":{"en":"Each request is evaluated on its own demands instead of inheriting one permanent model choice.","zh":"每个请求按自身需求判断，而不是沿用一个固定型号。"},"outcome":{"en":"Less model switching during routine work.","zh":"日常工作中减少手动切换。"}},{"title":{"en":"Continue through disruption","zh":"在波动中继续推进"},"brief":{"en":"Keep a task moving when the preferred route is unavailable.","zh":"首选路径暂不可用时继续推进任务。"},"process":{"en":"Floatboat can select a suitable fallback while preserving project context.","zh":"Floatboat 可选择合适的降级路径，同时保留项目上下文。"},"outcome":{"en":"Fewer interruptions caused by a single model route.","zh":"减少单一模型路径造成的中断。"}}]},
-  "capabilities":{"eyebrow":{"en":"What Auto manages","zh":"畅用模式管理什么"},"title":{"en":"Routing decisions that normally interrupt the work.","zh":"接管那些原本会打断工作的模型决策。"},"description":{"en":"Auto changes the route, not the project the user is working in.","zh":"畅用模式改变的是执行路径，不是用户正在处理的项目。"},"items":[{"title":{"en":"Task-complexity routing","zh":"按任务复杂度调度"},"description":{"en":"Distinguishes lightweight requests from work that deserves deeper reasoning.","zh":"区分轻量请求与真正需要深度推理的工作。"}},{"title":{"en":"Context-aware selection","zh":"按上下文规模选择"},"description":{"en":"Accounts for repositories, document sets, and long-running conversations.","zh":"考虑代码库、资料集与长程对话所需的上下文。"}},{"title":{"en":"Modality fit","zh":"匹配输入模态"},"description":{"en":"Considers whether the task includes text, images, or mixed material.","zh":"根据文本、图像或混合材料选择合适路径。"}},{"title":{"en":"Automatic fallback","zh":"自动降级"},"description":{"en":"Can move to a suitable alternative when the preferred route is unavailable.","zh":"首选路径不可用时可切换到合适替代方案。"}}]},
-  "selection":{"title":{"en":"Use Auto when the work changes shape.","zh":"当工作会不断变换形态时，使用畅用模式。"},"choose":{"title":{"en":"Choose Auto Mode when","zh":"适合选择畅用模式"},"items":[{"en":"You want a reliable default without tracking every model release.","zh":"你需要可靠默认选项，不想追踪每次模型更新。"},{"en":"One project mixes research, reasoning, editing, and execution.","zh":"同一项目混合调研、推理、修改与执行。"},{"en":"Continuity matters more than fixing one model for every request.","zh":"任务连续性比固定使用同一模型更重要。"}]},"alternative":{"title":{"en":"Choose a model directly when","zh":"这些情况更适合手动选择"},"items":[{"en":"A repeatable workflow requires the same model behavior every time.","zh":"可重复工作流要求每次保持相同模型行为。"},{"en":"You are testing or comparing a specific model.","zh":"你正在测试或比较某个具体模型。"},{"en":"A task has a known requirement that only one listed route satisfies.","zh":"任务存在只有某个已列路径才能满足的明确要求。"}]}},
-  "steps": { "eyebrow": { "en": "How routing works", "zh": "路由方式" }, "title": { "en": "One request, three decisions behind the scenes.", "zh": "一次请求，背后完成三步判断。" }, "items": [
-    { "title": { "en": "Read the task", "zh": "识别任务" }, "description": { "en": "Floatboat identifies the required depth, context, and modality.", "zh": "Floatboat 判断所需推理深度、上下文和模态。" } },
-    { "title": { "en": "Choose a route", "zh": "选择路径" }, "description": { "en": "It selects a suitable model and can fall back if that route is unavailable.", "zh": "系统选择合适模型，并在路径不可用时自动降级。" } },
-    { "title": { "en": "Keep continuity", "zh": "保持连续" }, "description": { "en": "Files, rules, and output remain attached to the same project.", "zh": "文件、规则与输出继续留在同一项目中。" } }
-  ]},
-  "faq": [
-    { "question": { "en": "Can I override Auto Mode?", "zh": "可以覆盖 Auto Mode 的选择吗？" }, "answer": { "en": "Yes. Select a model directly when repeatability or explicit control matters.", "zh": "可以。当可重复性或明确控制更重要时，可直接指定模型。" } },
-    { "question": { "en": "Does one request go to every provider?", "zh": "一次请求会发给所有供应商吗？" }, "answer": { "en": "No. Auto Mode selects a route; it does not broadcast the request to every model.", "zh": "不会。Auto Mode 会选择一条路径，而不是向所有模型广播请求。" } },
-    { "question": { "en": "What happens when a route is unavailable?", "zh": "首选路径不可用时怎么办？" }, "answer": { "en": "Auto Mode can choose a suitable fallback so the task can continue.", "zh": "Auto Mode 可以选择合适的降级模型，让任务继续进行。" } }
+  "facts": [
+    {
+      "label": { "en": "Access", "zh": "使用入口" },
+      "value": { "en": "Default client option", "zh": "客户端默认选项" }
+    },
+    {
+      "label": { "en": "Availability", "zh": "开放范围" },
+      "value": { "en": "Available to everyone", "zh": "面向所有用户开放" }
+    },
+    {
+      "label": { "en": "Routing signals", "zh": "调度依据" },
+      "value": {
+        "en": "Task, context, modality, availability",
+        "zh": "任务、上下文、模态与可用性"
+      }
+    },
+    {
+      "label": { "en": "API key", "zh": "API Key" },
+      "value": { "en": "Not required", "zh": "无需自备" }
+    }
   ],
-  "finalCta": { "title": { "en": "Let the task choose the route.", "zh": "让任务决定模型路径。" }, "description": { "en": "Use Auto Mode when finishing the work matters more than managing a model roster.", "zh": "当完成工作比管理模型名单更重要时，使用 Auto Mode。" } }
+  "positioning": {
+    "eyebrow": { "en": "How AI model routing works", "zh": "AI 模型路由原理" },
+    "title": {
+      "en": "A dispatcher that removes model management from the job.",
+      "zh": "把模型管理从任务中拿走的调度者。"
+    },
+    "description": {
+      "en": "Auto Mode is for people who want to describe the work once and let Floatboat decide how much reasoning, context, and speed it needs.",
+      "zh": "畅用模式适合只想说明工作、不想持续研究型号的人。Floatboat 会判断任务需要多少推理、上下文与响应速度。"
+    },
+    "traits": [
+      {
+        "label": { "en": "Initiative", "zh": "主动程度" },
+        "value": {
+          "en": "Routes without extra setup",
+          "zh": "无需额外配置即可调度"
+        },
+        "description": {
+          "en": "The request itself supplies the routing signal.",
+          "zh": "用户的任务描述本身就是调度依据。"
+        }
+      },
+      {
+        "label": { "en": "Continuity", "zh": "任务连续性" },
+        "value": { "en": "Keeps one workspace", "zh": "保持同一工作空间" },
+        "description": {
+          "en": "Files, rules, and prior output stay with the project.",
+          "zh": "文件、规则与此前产出继续留在项目中。"
+        }
+      },
+      {
+        "label": { "en": "Resilience", "zh": "连续可用" },
+        "value": { "en": "Supports fallback", "zh": "支持自动降级" },
+        "description": {
+          "en": "A suitable fallback can keep work moving when a route is unavailable.",
+          "zh": "首选路径不可用时，可用合适的降级路径继续任务。"
+        }
+      },
+      {
+        "label": { "en": "Control", "zh": "用户控制" },
+        "value": {
+          "en": "Manual choice remains available",
+          "zh": "仍可手动指定模型"
+        },
+        "description": {
+          "en": "Switch to a fixed model when repeatability matters.",
+          "zh": "需要固定行为或可重复结果时，可改为手动选择。"
+        }
+      }
+    ]
+  },
+  "lineup": {
+    "eyebrow": { "en": "Routing signals", "zh": "路由依据" },
+    "title": {
+      "en": "Different work calls for different strengths.",
+      "zh": "不同任务，需要不同能力。"
+    },
+    "description": {
+      "en": "Auto Mode selects a route by what the request actually demands—not by one permanent favorite.",
+      "zh": "Auto Mode 根据请求的实际需求选择路径，而不是永远使用同一个偏好模型。"
+    },
+    "items": [
+      {
+        "label": { "en": "Deliberate", "zh": "深度" },
+        "title": "Reasoning",
+        "description": {
+          "en": "Planning, proofs, architecture, and difficult debugging.",
+          "zh": "规划、证明、架构设计与疑难调试。"
+        },
+        "meta": { "en": "Higher deliberation", "zh": "更高推理强度" }
+      },
+      {
+        "label": { "en": "Large input", "zh": "长输入" },
+        "title": "Long context",
+        "description": {
+          "en": "Repositories, research collections, and long documents.",
+          "zh": "代码库、研究资料与长文档。"
+        },
+        "meta": { "en": "Context-oriented", "zh": "上下文优先" }
+      },
+      {
+        "label": { "en": "Multimodal", "zh": "多模态" },
+        "title": "Vision & media",
+        "description": {
+          "en": "Screenshots, diagrams, images, and mixed inputs.",
+          "zh": "截图、图表、图像与混合输入。"
+        },
+        "meta": { "en": "Image + text", "zh": "图像与文本" }
+      },
+      {
+        "label": { "en": "Everyday", "zh": "日常" },
+        "title": "Fast work",
+        "description": {
+          "en": "Drafting, classification, and lightweight edits.",
+          "zh": "起草、分类与轻量修改。"
+        },
+        "meta": { "en": "Lower latency", "zh": "更低延迟" }
+      }
+    ]
+  },
+  "workflows": {
+    "eyebrow": { "en": "Typical handoffs", "zh": "典型交接" },
+    "title": {
+      "en": "Give Auto the task before choosing the engine.",
+      "zh": "先交代任务，再让畅用模式选择引擎。"
+    },
+    "description": {
+      "en": "The value is most visible when one project moves between different kinds of work.",
+      "zh": "当一个项目连续经历不同类型的工作时，自动调度的价值最明显。"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "From research to implementation",
+          "zh": "从调研到实现"
+        },
+        "brief": {
+          "en": "Study the source material, decide on an approach, and implement it.",
+          "zh": "阅读资料、确定方案并完成实现。"
+        },
+        "process": {
+          "en": "Auto can favor context capacity during reading and deeper reasoning during decisions.",
+          "zh": "阅读阶段优先上下文能力，关键决策阶段再提高推理强度。"
+        },
+        "outcome": {
+          "en": "One continuous project instead of separate model sessions.",
+          "zh": "不拆分模型会话的连续项目结果。"
+        }
+      },
+      {
+        "title": { "en": "Mixed daily queue", "zh": "混合日常任务" },
+        "brief": {
+          "en": "Handle summaries, edits, debugging, and document work in sequence.",
+          "zh": "连续处理摘要、修改、调试和文档任务。"
+        },
+        "process": {
+          "en": "Each request is evaluated on its own demands instead of inheriting one permanent model choice.",
+          "zh": "每个请求按自身需求判断，而不是沿用一个固定型号。"
+        },
+        "outcome": {
+          "en": "Less model switching during routine work.",
+          "zh": "日常工作中减少手动切换。"
+        }
+      },
+      {
+        "title": {
+          "en": "Continue through disruption",
+          "zh": "在波动中继续推进"
+        },
+        "brief": {
+          "en": "Keep a task moving when the preferred route is unavailable.",
+          "zh": "首选路径暂不可用时继续推进任务。"
+        },
+        "process": {
+          "en": "Floatboat can select a suitable fallback while preserving project context.",
+          "zh": "Floatboat 可选择合适的降级路径，同时保留项目上下文。"
+        },
+        "outcome": {
+          "en": "Fewer interruptions caused by a single model route.",
+          "zh": "减少单一模型路径造成的中断。"
+        }
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": { "en": "What Auto manages", "zh": "畅用模式管理什么" },
+    "title": {
+      "en": "Routing decisions that normally interrupt the work.",
+      "zh": "接管那些原本会打断工作的模型决策。"
+    },
+    "description": {
+      "en": "Auto changes the route, not the project the user is working in.",
+      "zh": "畅用模式改变的是执行路径，不是用户正在处理的项目。"
+    },
+    "items": [
+      {
+        "title": { "en": "Task-complexity routing", "zh": "按任务复杂度调度" },
+        "description": {
+          "en": "Distinguishes lightweight requests from work that deserves deeper reasoning.",
+          "zh": "区分轻量请求与真正需要深度推理的工作。"
+        }
+      },
+      {
+        "title": { "en": "Context-aware selection", "zh": "按上下文规模选择" },
+        "description": {
+          "en": "Accounts for repositories, document sets, and long-running conversations.",
+          "zh": "考虑代码库、资料集与长程对话所需的上下文。"
+        }
+      },
+      {
+        "title": { "en": "Modality fit", "zh": "匹配输入模态" },
+        "description": {
+          "en": "Considers whether the task includes text, images, or mixed material.",
+          "zh": "根据文本、图像或混合材料选择合适路径。"
+        }
+      },
+      {
+        "title": { "en": "Automatic fallback", "zh": "自动降级" },
+        "description": {
+          "en": "Can move to a suitable alternative when the preferred route is unavailable.",
+          "zh": "首选路径不可用时可切换到合适替代方案。"
+        }
+      }
+    ]
+  },
+  "selection": {
+    "title": {
+      "en": "Use Auto when the work changes shape.",
+      "zh": "当工作会不断变换形态时，使用畅用模式。"
+    },
+    "choose": {
+      "title": { "en": "Choose Auto Mode when", "zh": "适合选择畅用模式" },
+      "items": [
+        {
+          "en": "You want a reliable default without tracking every model release.",
+          "zh": "你需要可靠默认选项，不想追踪每次模型更新。"
+        },
+        {
+          "en": "One project mixes research, reasoning, editing, and execution.",
+          "zh": "同一项目混合调研、推理、修改与执行。"
+        },
+        {
+          "en": "Continuity matters more than fixing one model for every request.",
+          "zh": "任务连续性比固定使用同一模型更重要。"
+        }
+      ]
+    },
+    "alternative": {
+      "title": {
+        "en": "Choose a model directly when",
+        "zh": "这些情况更适合手动选择"
+      },
+      "items": [
+        {
+          "en": "A repeatable workflow requires the same model behavior every time.",
+          "zh": "可重复工作流要求每次保持相同模型行为。"
+        },
+        {
+          "en": "You are testing or comparing a specific model.",
+          "zh": "你正在测试或比较某个具体模型。"
+        },
+        {
+          "en": "A task has a known requirement that only one listed route satisfies.",
+          "zh": "任务存在只有某个已列路径才能满足的明确要求。"
+        }
+      ]
+    }
+  },
+  "steps": {
+    "eyebrow": { "en": "How routing works", "zh": "路由方式" },
+    "title": {
+      "en": "One request, three decisions behind the scenes.",
+      "zh": "一次请求，背后完成三步判断。"
+    },
+    "items": [
+      {
+        "title": { "en": "Read the task", "zh": "识别任务" },
+        "description": {
+          "en": "Floatboat identifies the required depth, context, and modality.",
+          "zh": "Floatboat 判断所需推理深度、上下文和模态。"
+        }
+      },
+      {
+        "title": { "en": "Choose a route", "zh": "选择路径" },
+        "description": {
+          "en": "It selects a suitable model and can fall back if that route is unavailable.",
+          "zh": "系统选择合适模型，并在路径不可用时自动降级。"
+        }
+      },
+      {
+        "title": { "en": "Keep continuity", "zh": "保持连续" },
+        "description": {
+          "en": "Files, rules, and output remain attached to the same project.",
+          "zh": "文件、规则与输出继续留在同一项目中。"
+        }
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "When should I use Auto Mode instead of choosing a model?",
+        "zh": "什么时候应该使用畅用模式，而不是手动选择模型？"
+      },
+      "answer": {
+        "en": "Use Auto Mode when the task matters more than maintaining a fixed model choice, especially when one project moves between research, reasoning, editing, and execution.",
+        "zh": "当完成任务比固定模型更重要时使用畅用模式，尤其适合同一项目会在调研、推理、修改与执行之间切换的情况。"
+      }
+    },
+    {
+      "question": {
+        "en": "Can I override Auto Mode?",
+        "zh": "可以覆盖 Auto Mode 的选择吗？"
+      },
+      "answer": {
+        "en": "Yes. Select a model directly when repeatability or explicit control matters.",
+        "zh": "可以。当可重复性或明确控制更重要时，可直接指定模型。"
+      }
+    },
+    {
+      "question": {
+        "en": "Does one request go to every provider?",
+        "zh": "一次请求会发给所有供应商吗？"
+      },
+      "answer": {
+        "en": "No. Auto Mode selects a route; it does not broadcast the request to every model.",
+        "zh": "不会。Auto Mode 会选择一条路径，而不是向所有模型广播请求。"
+      }
+    },
+    {
+      "question": {
+        "en": "What happens when a route is unavailable?",
+        "zh": "首选路径不可用时怎么办？"
+      },
+      "answer": {
+        "en": "Auto Mode can choose a suitable fallback so the task can continue.",
+        "zh": "Auto Mode 可以选择合适的降级模型，让任务继续进行。"
+      }
+    },
+    {
+      "question": {
+        "en": "What signals does an AI model router use?",
+        "zh": "AI 模型路由会参考哪些信号？"
+      },
+      "answer": {
+        "en": "Auto Mode evaluates task complexity, context size, input modality, response speed, and route availability before selecting a model.",
+        "zh": "畅用模式会在选择模型前判断任务复杂度、上下文规模、输入模态、响应速度与路径可用性。"
+      }
+    }
+  ],
+  "finalCta": {
+    "title": {
+      "en": "Let the task choose the route.",
+      "zh": "让任务决定模型路径。"
+    },
+    "description": {
+      "en": "Use Auto Mode when finishing the work matters more than managing a model roster.",
+      "zh": "当完成工作比管理模型名单更重要时，使用 Auto Mode。"
+    }
+  }
 }
