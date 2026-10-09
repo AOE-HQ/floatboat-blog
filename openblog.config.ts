@@ -5,9 +5,9 @@ const FLOATBOAT_SITE = "https://floatboat.ai";
 const config = defineConfig({
   site: {
     name: "Floatboat",
-    tagline: "The Proactive Agent that Runs Work from the Calendar",
+    tagline: "The Agent Workspace for Real Work",
     description:
-      "Notes on calendar-driven AI, proactive agents, and solo operations. Practical writing about turning meetings, deadlines, and recurring work into pipelines that run themselves.",
+      "Practical notes on agent workspaces, local-first execution, proactive agents, reusable workflows, models, and tools for solo operators and teams.",
     locale: "en-US",
     url: FLOATBOAT_SITE,
     deployMode: "subdirectory",
@@ -41,8 +41,8 @@ const config = defineConfig({
           title: "Blog",
           links: [
             { label: "Blog", href: "/blog", match: "blog" },
-            { label: "What is an agentic calendar", href: "/blog/what-is-agentic-calendar", match: "blog" },
-            { label: "Calendar-driven AI vs chat AI", href: "/blog/calendar-driven-ai-vs-chat-ai", match: "blog" },
+            { label: "What is an Agent Workspace?", href: "/blog/ai-workspace-agents", match: "blog" },
+            { label: "Local-first vs cloud workspaces", href: "/blog/local-first-vs-cloud-agent-workspace", match: "blog" },
           ],
         },
         {

@@ -1,12 +1,12 @@
 {
   "fallback": {
     "en": {
-      "title": "Turn the workflows in this blog into a routine that runs itself.",
-      "body": "Floatboat is the calendar-driven agent for meeting prep, follow-ups, and recurring tasks — it starts before you ask."
+      "title": "Turn what you learned into work an agent can finish.",
+      "body": "Floatboat is an Agent Workspace for local files, tools, models, and reusable workflows — with review and approval kept visible."
     },
     "zh": {
-      "title": "把博客里读到的工作流，变成会自动运转的例行程序。",
-      "body": "Floatboat 是日历驱动的 Agent：会前准备、会后跟进与重复性任务，都会在你开口前自动开始。"
+      "title": "把读到的方法，变成 Agent 能完成的实际工作。",
+      "body": "Floatboat 是围绕本地文件、工具、模型与可复用工作流构建的 Agent Workspace，并让审核与授权始终清晰可见。"
     }
   },
   "slugs": {
