@@ -1,77 +1,77 @@
-# Floatboat Blog — 主站反向代理
+# Floatboat 内容站与产品页部署路由
 
-博客独立部署后，在 **floatboat.ai**（自有站点 / Railway + Cloudflare）配置 Rewrite，使访客只见主域 URL。
+本仓库独立部署在 `blog.floatboat.ai`，同时通过 Kubernetes Ingress 将归属本仓库的路径挂载到 `floatboat.ai` 与 `www.floatboat.ai`。访客使用主域 URL，canonical 也始终指向主域。
 
-## 环境变量（主站侧）
+## 路由归属
 
-| 变量 | 示例 | 说明 |
-|------|------|------|
-| `BLOG_ORIGIN` | `https://blog.floatboat.ai` | 博客 deployment origin（不含路径） |
+`k8s/ingress-main.yaml` 是主域路径归属的维护源。当前由本服务承接：
 
-## Rewrite 规则
+- `/blog`、`/zh/blog` 及其子路径
+- `/agent-workspace`、`/zh/agent-workspace`
+- `/coworker`、`/zh/coworker`
+- `/ai-scheduling-assistant`、`/zh/ai-scheduling-assistant`
+- `/ai-file-organizer`、`/zh/ai-file-organizer`
+- `/floatim`、`/zh/floatim`
 
-| 请求路径 | 转发目标 |
-|---------|---------|
-| `/blog/*` | `${BLOG_ORIGIN}/blog/*` |
-| `/zh/blog/*` | `${BLOG_ORIGIN}/zh/blog/*` |
-| `/blog/sitemap.xml` | `${BLOG_ORIGIN}/blog/sitemap.xml` |
+不要把 `/_next/image`、`/brand/*` 或 `/api/analytics/events` 整体转给本服务。博客静态资源应位于 `/blog/...`，例如：
 
-Do **not** send `/_next/image` or `/brand/*` to the main site. Those root paths belong to aoe-backend. Blog static files must live under `/blog/...` so the existing rewrite hits the Blog pod:
+- 文章图片：`/blog/images/...`
+- 品牌标志：`/blog/brand/floatboat-logo.svg`
 
-- covers: `/blog/images/...`
-- logo: `/blog/brand/floatboat-logo.svg`
+`/api/analytics/events` 继续由主站 `aoe-backend` 处理。内容站复用主站的 `fb_anon_id` 与 `fb_attr_params` Cookie，使博客、功能页与主站 CTA 之间的归因保持连续。
 
-Keep `/api/analytics/events` routed to the main `aoe-backend`; do not send it
-to `BLOG_ORIGIN`. The Blog collector uses the same `fb_anon_id` and
-`fb_attr_params` cookies as the main site, so the attribution chain survives
-the `/blog` to main-site CTA flow.
-
-Enable the collector in the Blog deployment:
-
-```env
-NEXT_PUBLIC_ATTRIBUTION_WEB_EVENTS_ENABLED=true
-# Leave empty when the Blog is served at floatboat.ai/blog and /api remains
-# on the main site. Set an absolute main-site URL for a separate preview host.
-# NEXT_PUBLIC_ATTRIBUTION_WEB_EVENT_URL=https://floatboat.ai/api/analytics/events
-```
-
-## 博客侧 env
+## 生产环境变量
 
 ```env
 SITE_URL=https://floatboat.ai
 DEPLOY_MODE=subdirectory
 BLOG_BASE_PATH=/blog
 ASSET_PREFIX=/blog
+NEXT_PUBLIC_ATTRIBUTION_WEB_EVENTS_ENABLED=true
 ```
 
-## 验收 checklist
+主域部署时可以不设置 `NEXT_PUBLIC_ATTRIBUTION_WEB_EVENT_URL`，请求会发往同源的 `/api/analytics/events`。独立预览域需要显式设置完整的主站采集地址：
 
-- [ ] `/blog` 样式与静态资源完整
-- [ ] `canonical` = `https://floatboat.ai/blog/{slug}`（中文 = `/zh/blog/{slug}`）
-- [ ] sitemap `<loc>` 无 deployment 子域泄漏
-- [ ] 中英页面 hreflang 互指
-- [ ] 语言切换器可在有对侧版本的文章间跳转
+```env
+NEXT_PUBLIC_ATTRIBUTION_WEB_EVENT_URL=https://floatboat.ai/api/analytics/events
+```
 
-## 回滚
+## CI、镜像与 EKS
 
-移除主站 Rewrite → 旧 CMS `/blog` 恢复。
+Pull Request 会运行文章校验与生产构建，但不会生成托管预览。合并并推送到 `main` 后，GitHub Actions 会：
 
-## Docker / CI / EKS
+1. 校验 `content/blog/**/*.md`。
+2. 执行 `npm run build`。
+3. 构建并推送不可变镜像 `ghcr.io/aoe-hq/floatboat-blog:<sha>`。
+4. 部署到 EKS 的 `aoe/floatboat-blog`。
 
-Markdown 在 Git 里。push 到 `main` 后 GitHub Actions 会：
+部署源站为 `https://blog.floatboat.ai`。主域入口由 `floatboat-blog-main-nginx` Ingress 转发；仅更新应用代码而未更新 Ingress 时，新功能页不会在主域生效。
 
-1. 校验全部 `content/blog/**/*.md`
-2. `npm run build` 生成静态页
-3. 构建并推送不可变镜像 `ghcr.io/aoe-hq/floatboat-blog:<sha>`
-4. 部署到 EKS `aoe/floatboat-blog`，公网入口 `https://blog.floatboat.ai/blog`
-
-主站 `floatboat.ai/blog` 与 `/zh/blog` 由 Ingress `floatboat-blog-main-nginx` 切到本服务；`/api/analytics/events` 仍留在 `aoe-backend`。回滚：删除该 Ingress。
-
-本地构建：
+## 本地容器验证
 
 ```bash
 docker build -t floatboat-blog .
 docker run --rm -p 3000:3000 floatboat-blog
 ```
 
-打开 `http://localhost:3000/blog`。生产环境仍需把 `/blog`、`/zh/blog` rewrite 到这个服务，并把 `/api/analytics/events` 留在主站。
+至少检查：
+
+- `http://localhost:3000/blog`
+- `http://localhost:3000/agent-workspace`
+- `http://localhost:3000/coworker`
+- 对应的 `/zh/...` 页面
+
+## 上线验收
+
+- [ ] 博客、Agent Workspace、Work Agent 及其他功能页在主域返回 200
+- [ ] 样式、字体与 `/blog/...` 静态资源完整
+- [ ] canonical 指向 `https://floatboat.ai/...`，不泄漏 deployment 子域
+- [ ] 中英文页面的 hreflang 与语言切换互指正确
+- [ ] `/api/analytics/events` 仍由主站后端接收
+- [ ] `blog.floatboat.ai` 源站可以用于部署验证
+
+## 回滚
+
+- 应用回滚：将 Deployment 切回上一不可变镜像。
+- 主域路由回滚：从 `k8s/ingress-main.yaml` 移除对应路径并重新应用 Ingress。
+- 不要删除整个 Ingress 来回滚单一功能页，否则会同时中断博客和其他由本仓库承接的产品页。

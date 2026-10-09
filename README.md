@@ -1,15 +1,21 @@
-# Floatboat Blog
+# Floatboat Blog and Product Pages
 
-OpenBlog-powered bilingual blog module mirroring [floatboat.ai/blog](https://floatboat.ai/blog). Content lives in `content/blog/` as Markdown with YAML frontmatter.
+This repository powers Floatboat's bilingual editorial site and selected product landing pages. It combines OpenBlog content infrastructure with a Next.js 16 App Router application, shared product chrome, analytics, and deployment configuration.
 
-**OpenBlog source:** `E:\自有部署项目\openblog`
-**Strategy / client docs:** `e:\clients\floatboat\`
+## What lives here
+
+- English and Chinese articles in `content/blog/`
+- Blog indexes, article pages, taxonomy pages, authors, and sitemap
+- Product landing pages for Agent Workspace, Work Agent, AI Scheduling Assistant, AI File Organizer, and FloatIM
+- Shared header, footer, landing-page components, metadata, analytics, and deployment manifests
+
+Product strategy and research remain in their source repositories; this deployment repository contains only the copy and implementation needed to ship the site.
 
 ## Stack
 
 - OpenBlog 0.2 (`@openblog/core`, `@openblog/components`, `@openblog/content`)
-- Next.js 16 (App Router) + TypeScript + Tailwind CSS
-- Deploy mode: **subdirectory** on `floatboat.ai/blog`
+- Next.js 16 (App Router), TypeScript, and Tailwind CSS
+- Subdirectory deployment on `floatboat.ai`, with an independent origin at `blog.floatboat.ai`
 
 ## Quick start
 
@@ -19,77 +25,81 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3777/blog](http://localhost:3777/blog).
+Open [http://localhost:3777/blog](http://localhost:3777/blog) for the blog or [http://localhost:3777/agent-workspace](http://localhost:3777/agent-workspace) for the primary product page.
 
 ## Environment
 
-Copy `.env.example` to `.env.local`:
+Copy `.env.example` to `.env.local` when local overrides are needed.
 
-| Variable | Production | Local dev |
-|----------|------------|-----------|
-| `SITE_URL` | `https://floatboat.ai` | `http://localhost:3000` |
+| Variable | Production | Local development |
+|---|---|---|
+| `SITE_URL` | `https://floatboat.ai` | `http://localhost:3777` |
 | `DEPLOY_MODE` | `subdirectory` | `subdirectory` |
 | `BLOG_BASE_PATH` | `/blog` | `/blog` |
-| `ASSET_PREFIX` | `/blog` (when behind rewrite) | — |
+| `ASSET_PREFIX` | `/blog` | unset |
+| `PORT` | `3000` in Kubernetes | `3777` via npm scripts |
 
-## Scripts
+Analytics and attribution variables are documented in `.env.example`.
+
+## Commands
 
 | Command | Purpose |
-|---------|---------|
-| `npm run dev` | Local development |
-| `npm run build` | Production SSG build |
-| `npm run validate:posts` | Frontmatter validation |
-| `npm run theme:sync` | Sync theme from `openblog.config.ts` |
+|---|---|
+| `npm run dev` | Sync the theme and start the local server on port 3777 |
+| `npm run build` | Sync the theme, validate posts, and create a production build |
+| `npm run start` | Serve a production build on port 3777 |
+| `npm run lint` | Run ESLint |
+| `npm run validate:posts` | Validate article frontmatter and content invariants |
+| `npm run theme:sync` | Generate theme CSS from `openblog.config.ts` |
+| `npm run images:webp` | Generate optimized WebP article images |
+| `npm run check:images` | Check article image policy |
 
-## Content
-
-```
-content/blog/
-├── *.md              # English posts (locale: en)
-└── zh/*.md           # Chinese posts (locale: zh)
-```
-
-Export/migration from the live site:
-
-```powershell
-cd scripts
-python export_floatboat_blog.py               # all native posts (en+zh, with images)
-python export_floatboat_blog.py --missing-only
-python export_floatboat_blog.py --limit 5     # smoke test
-python export_floatboat_blog.py --no-images
-```
-
-The exporter reads the live `sitemap.xml`, detects each article's actual content
-language, and writes its **native** copy to the matching locale folder.
-Translated counterparts are produced by a separate translation pass that tracks
-progress in `scripts/data/floatboat_manifest.json`.
-
-Images: `public/blog/images/{slug}/` (shared by both locales).
+See `AGENTS.md` for the repository's complete content, image, accessibility, and verification rules.
 
 ## Routes
 
-| Path | Description |
-|------|-------------|
-| `/blog` | English article index |
-| `/blog/{slug}` | English editorial post |
-| `/zh/blog` | Chinese article index |
-| `/zh/blog/{slug}` | Chinese editorial post |
-| `/blog/sitemap.xml` | Blog sitemap (hreflang en/zh) |
+Every public page has an English route and a `/zh` counterpart.
 
-## Deployment
+| Route | Purpose |
+|---|---|
+| `/blog`, `/zh/blog` | Article indexes |
+| `/blog/{slug}`, `/zh/blog/{slug}` | Editorial articles |
+| `/blog/category/{slug}`, `/zh/blog/category/{slug}` | Category archives |
+| `/blog/author/{slug}`, `/zh/blog/author/{slug}` | Author archives |
+| `/agent-workspace`, `/zh/agent-workspace` | Floatboat Agent Workspace |
+| `/coworker`, `/zh/coworker` | Floatboat Work Agent |
+| `/ai-scheduling-assistant`, `/zh/ai-scheduling-assistant` | AI Scheduling Assistant |
+| `/ai-file-organizer`, `/zh/ai-file-organizer` | AI File Organizer |
+| `/floatim`, `/zh/floatim` | FloatIM |
+| `/blog/sitemap.xml` | Canonical bilingual sitemap |
 
-Pushing Markdown to `main` runs GitHub Actions: validate posts, production build, publish an immutable GHCR image, and deploy it to EKS at `https://blog.floatboat.ai/blog`.
+## Content and assets
 
-When mounted at `floatboat.ai/blog/*` via Cloudflare/Railway rewrite:
+Articles use Markdown with YAML frontmatter:
 
-1. Set `SITE_URL=https://floatboat.ai`
-2. Set `ASSET_PREFIX=/blog` if `/_next/static` 404s on the main domain
-3. Rewrite `/blog/*` and `/zh/blog/*` to this deployment
+```text
+content/blog/
+├── *.md       # English posts (locale: en)
+└── zh/*.md    # Chinese posts (locale: zh)
+```
 
-See `integrations/DEPLOY.md`.
+Article images live under `public/blog/images/{slug}/` and are shared across locales. Use the image scripts above instead of adding avoidable PNG or JPEG assets directly.
+
+The legacy migration utility remains available in `scripts/export_floatboat_blog.py`; its progress file is `scripts/data/floatboat_manifest.json`. It is not part of the normal publishing flow.
 
 ## Configuration
 
-- Site + chrome + theme: `openblog.config.ts`
-- Nav/footer fallbacks: `src/chrome/site-chrome.ts`
-- i18n: `src/config/i18n.ts`
+- Site identity, theme, and OpenBlog behavior: `openblog.config.ts`
+- Shared site header and footer: `src/components/layout/site-header.tsx` and `src/components/layout/site-footer.tsx`
+- Product landing-page content and presentation: `src/lib/landing/` and `src/components/landing/`
+- Locale helpers: `src/config/i18n.ts`
+- Subdomain compatibility routing: `src/proxy.ts`
+- CI and deployment: `.github/workflows/`, `Dockerfile`, and `k8s/`
+
+## Deployment
+
+Pull requests run validation and production-build checks but do not create a hosted preview. A push to `main` builds an immutable GHCR image and deploys it to EKS at `https://blog.floatboat.ai`.
+
+Public `floatboat.ai` routes are forwarded to that deployment by the main-site/edge routing layer. Keep `/api/analytics/events` on the main backend so attribution remains continuous across editorial and product pages.
+
+See `integrations/DEPLOY.md` for route ownership, environment settings, verification, and rollback details. See `docs/DEPLOY-ROUTING.md` for the optional subdomain compatibility mode.

@@ -124,15 +124,15 @@
       "items": [
         {
           "question": "What kind of articles are on this blog?",
-          "answer": "Floatboat's blog covers calendar-driven AI and proactive agents, model news and benchmarks, practical tool comparisons, and how solo operators put these systems to work. Articles are grouped by topic above and are published in both English and Chinese."
+          "answer": "Floatboat's blog covers Agent Workspaces, local-first execution, proactive agents, models, practical tool comparisons, and reusable workflows for solo operators and teams. Articles are grouped by topic and published in both English and Chinese."
         },
         {
-          "question": "Is Floatboat a calendar-driven AI agent?",
-          "answer": "Yes. Floatboat is the proactive desktop agent that runs work from your calendar: it prepares for meetings, drafts and follows up, and starts recurring routines — connected to Google Calendar, Outlook, or Feishu. Posts under the \"Calendar AI\" topic explain the approach and how to put it to work."
+          "question": "What is Floatboat?",
+          "answer": "Floatboat is a local-first Agent Workspace for Mac and Windows. It brings agents, files, tools, models, workflows, and deliverables into one visible workspace. Calendar events can trigger work, alongside files, schedules, webhooks, and messages where configured."
         },
         {
           "question": "I found a workflow I want to try. How do I start?",
-          "answer": "Start with one task you actually want automated. Most how-to articles include the exact steps and tooling. If the workflow involves Floatboat, start the $1 trial from floatboat.ai/download, connect your calendar, and give the agent one meeting or one recurring task to run end to end."
+          "answer": "Start with one real project and one clear outcome. Give the agent only the files and tools it needs, define the review point, and let it complete the work end to end. Most how-to articles include concrete steps and recommended tooling."
         },
         {
           "question": "Can I subscribe to new articles?",
@@ -4148,15 +4148,15 @@
       "items": [
         {
           "question": "这个博客都发些什么文章？",
-          "answer": "Floatboat 博客围绕日历驱动 AI 与主动式 Agent、模型新闻与评测、实用工具对比，以及单人创业者如何落地这些系统展开。文章按主题分栏展示，并同时提供英文与中文版本。"
+          "answer": "Floatboat 博客围绕 Agent Workspace、本地优先执行、主动式 Agent、模型、实用工具对比，以及个人与团队如何复用工作流展开。文章按主题分栏展示，并同时提供英文与中文版本。"
         },
         {
-          "question": "Floatboat 是日历驱动的 AI Agent 吗？",
-          "answer": "是的。Floatboat 是主动式桌面 Agent，让工作从你的日历自动跑起来：它会准备会议、起草并跟进后续，也会自动开始周期性的例行任务——可接入 Google、Outlook 或飞书日历。“Calendar AI”栏目下的文章正是在解释这套思路以及如何落地。"
+          "question": "Floatboat 是什么？",
+          "answer": "Floatboat 是面向 Mac 与 Windows 的本地优先 Agent Workspace，把 Agent、文件、工具、模型、工作流与交付物放进同一个可见工作区。除了日历事件，也可以按实际配置由文件、计划任务、Webhook 或消息触发工作。"
         },
         {
           "question": "看到想试的工作流，我该怎么开始？",
-          "answer": "先挑一件你真正想自动化的任务。多数实践类文章都会给出具体步骤和所需工具；如果工作流涉及 Floatboat，可从 floatboat.ai/download 以 $1 试用，接入日历后，让 Agent 先完整跑一场会议或一件每周重复的任务。"
+          "answer": "先选一个真实项目和一个清晰结果，只给 Agent 完成任务所需的文件与工具，并明确需要你审核的节点，再让它端到端完成。多数实践类文章都会给出具体步骤和推荐工具。"
         },
         {
           "question": "可以订阅博客更新吗？",
