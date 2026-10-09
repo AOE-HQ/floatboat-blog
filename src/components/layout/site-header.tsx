@@ -110,6 +110,13 @@ const NAV_MENUS: NavMenuGroup[] = [
     zh: "资源",
     items: [
       {
+        en: "Models",
+        zh: "模型",
+        descEn: "Choose Auto Mode or a model inside one Agent Workspace",
+        descZh: "在同一个 Agent Workspace 中使用 Auto Mode 或选择模型",
+        path: "/models",
+      },
+      {
         en: "Blog",
         zh: "博客",
         descEn: "Opinions, guides, and user stories",
