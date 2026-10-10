@@ -635,28 +635,36 @@
     "/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace": {
       "items": [
         {
-          "question": "What really separates AI browser agents, AI browsers, and workspaces?",
-          "answer": "They sit at different layers of your workflow. A browser agent extension automates pages inside the browser you already use, which makes it ideal for signed-in SaaS work. An AI-native browser is a standalone app with AI built into the browsing experience, strongest for research-heavy days. A desktop AI workspace coordinates across your browser, local files, and desktop apps. Match the layer to where the friction in your day lives."
+          "question": "What separates a browser agent, an AI browser, and an AI workspace?",
+          "answer": "A browser agent delegates actions in a current or remote browser session. An AI browser makes assistance part of browsing across pages and tabs. An AI workspace uses a broader project or desktop boundary that can include files, tools, research, and deliverables."
         },
         {
-          "question": "Which category should I pick for my work?",
-          "answer": "Match the category to your bottleneck. If most of your day is inside logged-in SaaS dashboards, start with an extension and keep your existing setup. If you mainly read, compare, and summarize in the browser, an AI-native browser removes friction extensions cannot. If tasks span files, web pages, and local apps, a desktop workspace fits. In practice, most solo operators end up combining two categories rather than picking only one."
+          "question": "Which category should I choose for web automation?",
+          "answer": "Choose a browser agent when the task mainly acts across websites and browser-only permissions are sufficient. Use API or workflow automation when triggers, transformations, and destinations are deterministic."
         },
         {
-          "question": "Can I use a browser agent extension and an AI browser together?",
-          "answer": "Yes, they do not conflict. An extension runs inside your existing browser, while an AI browser is a separate app. The cost overlap is usually small because extensions are typically bundled with a subscription you already have, and several AI browsers, like Comet, are free. An extension for SaaS dashboard work plus an AI browser for research is the most common combination among solo operators."
+          "question": "When is an AI browser better than a browser agent?",
+          "answer": "An AI browser fits when reading, comparing, and reasoning across tabs is the main job. A browser agent fits when completing actions is central. Products may offer both, so test read and action permissions separately."
         },
         {
-          "question": "Which category is safest for handling client data?",
-          "answer": "None of them are enterprise-grade for sensitive data in mid-2026. Researchers have documented prompt injection vulnerabilities across all three categories. The safe pattern is to use AI tools for thinking and organizing, but handle client credentials and financial data manually, and to check each tool's official security documentation before putting real data through it."
+          "question": "When should I choose an AI workspace?",
+          "answer": "Choose it when a deliverable requires files, research, several tools, and durable project context. If the task is confined to one website or follows fixed integration steps, the broader workspace boundary may add unnecessary access and setup."
         },
         {
-          "question": "What can't any of these categories do yet?",
-          "answer": "Three gaps remain. Context does not hand off between devices: you cannot start a task on a desktop workspace and continue it on your phone's AI browser. Reliable agentic execution still drops off after three or four steps, so these tools work better as planners than autopilots. And heavy-use pricing is not transparent — browser agent work burns subscription usage faster than regular AI chat."
+          "question": "Which category is safest for sensitive work?",
+          "answer": "No category is safest by name. Compare the actual context boundary, execution location, identity, least-privilege controls, approval gates, logs, retention, and recovery. Keep consequential actions behind informed approval."
         },
         {
-          "question": "I'm in the EU or UK — which options work right now?",
-          "answer": "Claude for Chrome works in the EU and UK. Codex for Chrome does not, with no timeline given. All three AI browsers are available, though Atlas and Dia are macOS-only. Comet is probably the most accessible option across regions and platforms right now."
+          "question": "Does a cloud browser use my existing browser login?",
+          "answer": "Not necessarily. Many cloud browsers use separate cookies and signed-in sessions, while an agent in your current browser may use that profile's session. Verify execution location, credential flow, retention, and sign-out for the exact product."
+        },
+        {
+          "question": "How should I test these three categories?",
+          "answer": "Give each candidate the same task, permission boundary, failure cases, and acceptance checks. Measure citations, unauthorized actions, approval quality, recovery, review time, elapsed time, and cost; record plan, version, device, and date."
+        },
+        {
+          "question": "Can I combine an AI browser and AI workspace?",
+          "answer": "Yes, but pilot the smallest boundary first. Add a second product only when evidence shows a recurring task the first cannot cover, and account for duplicated context, subscriptions, permissions, and records."
         }
       ]
     },
@@ -2615,28 +2623,36 @@
     "/blog/gumloop-review-2026": {
       "items": [
         {
-          "question": "Who should actually use Gumloop?",
-          "answer": "Teams with defined, repeatable, multi-step processes — typically ops, marketing, or data teams of 3–10 people with a dedicated person to build and maintain flows. The article cites Gumloop shining at batch CRM updates, document processing, and lead enrichment at volume. For judgment-heavy, mixed work like a solo creator's typical day, the node-based model is usually more overhead than help."
+          "question": "Is Gumloop a no-code workflow builder or an AI agent platform?",
+          "answer": "Both. Teams can build deterministic visual flows, create agents that choose among enabled tools, or place an Agent Node inside a fixed workflow. Use fixed logic for predictable steps and agents only where runtime judgment is necessary."
         },
         {
-          "question": "What is Gumloop, and how does building flows work?",
-          "answer": "It's a no-code AI automation platform built on a visual canvas. You drag nodes onto a board and connect them — one node scrapes a page, the next calls an LLM to summarize, another writes to a Google Sheet — and the connected steps become a working flow. Gummie, a meta-agent, generates flows from a natural-language description. In practice, how well it works depends on how clearly you can map your task into discrete steps."
+          "question": "Is Gumloop easy for non-technical teams?",
+          "answer": "The canvas removes coding, but not process decomposition, data mapping, output design, permission decisions, or failure handling. Non-developers can build with it; no-code does not mean no systems thinking."
         },
         {
-          "question": "How is Gumloop different from Zapier?",
-          "answer": "Zapier is trigger-and-action: something happens in one app and triggers something in another. Gumloop is AI-native — models like ChatGPT and Claude sit inside your flows, processing and making decisions along the way — which handles more complex, multi-step logic but is heavier to set up. As one comparison in the article puts it, Gumloop is like Zapier and ChatGPT had a baby."
+          "question": "How much does Gumloop cost in 2026?",
+          "answer": "Gumloop's August 2026 announcement says tokens and compute pass through at cost with a base 8% orchestration fee. Plans can change and some documents still mention credits, so inspect your task breakdown and calculate cost per accepted outcome."
         },
         {
-          "question": "Is Gumloop hard to learn if I'm not technical?",
-          "answer": "It's no-code, but that doesn't mean no learning curve. The article reports users needing 50–100 hours to feel comfortable, with one non-engineer reviewer saying it took weeks to reach intermediate level. Gumloop rewards process thinkers: every step, branch, and condition has to be explicit, and you'll constantly tune prompts to keep outputs consistent. Templates help, but don't expect to spin it up in an afternoon."
+          "question": "Does Gumloop connect to my apps?",
+          "answer": "Gumloop documents many business integrations plus MCP and API-oriented nodes. Verify the exact read/write action, authentication method, scopes, limits, and error behavior you need; a connector logo alone does not prove task coverage."
         },
         {
-          "question": "What does Gumloop cost, and how do credits work?",
-          "answer": "A free tier includes 2,000 credits and 2 concurrent flow runs — enough to test, not to run real automation. The Solo plan starts at $37/month (10,000 credits, one seat), and Team starts at $244/month. Credits are the tricky part: standard AI calls run about 2 credits, advanced models about 20, and an enrichment flow over 100 contacts costs 6,001 credits. Overage charges apply with no automatic shutoff, so verify on the official pricing page."
+          "question": "How should a team secure Gumloop credentials?",
+          "answer": "Use least privilege, prefer durable service ownership, enable only required agent tools, separate testing from production, document credential owners, and rehearse revocation and rotation. Gate high-impact writes with validation or approval."
         },
         {
-          "question": "What kind of work should not be automated with Gumloop?",
-          "answer": "Work that doesn't fit into discrete nodes. If your days are mixed and judgment-heavy — write something, research, make a call, communicate, repeat — mapping that into explicit flows takes more time than doing the work. Gumloop assumes high-volume, low-variation automation. It also demands ongoing maintenance: AI outputs drift, so inconsistent downstream results are a real risk unless you build in error handling."
+          "question": "How do you test a Gumloop workflow before launch?",
+          "answer": "Use fixed representative and adversarial cases in staging, measure accepted outcomes and cost, then force timeouts, malformed inputs, revoked permissions, and duplicates. Production access should depend on written thresholds."
+        },
+        {
+          "question": "What happens when a Gumloop flow fails?",
+          "answer": "Gumloop documents node logs, failure notifications, and Error Shield. Your system still needs an owner, retry and idempotency rules, partial-batch reconciliation, and a safe path for irreversible actions."
+        },
+        {
+          "question": "Who should not use Gumloop?",
+          "answer": "Teams with simple trigger-action needs, mostly one-off tasks, prohibited data flows, no automation owner, or portability and code-control requirements their evaluated plan cannot satisfy should choose a simpler or more programmable option."
         }
       ]
     },
@@ -3271,28 +3287,36 @@
     "/blog/openai-gpt-6-one-person-company": {
       "items": [
         {
-          "question": "When is GPT-6 launching?",
-          "answer": "No official date as of late April 2026. OpenAI finished pretraining on March 24, 2026; Altman said launch was \"a few weeks\" away, and the flagship was still in safety evaluation as of writing. Best guess from public signals: late Q2 or Q3 2026. Watch OpenAI's official announcements rather than leaks or Twitter."
+          "question": "Is GPT-6 Astra available now?",
+          "answer": "Yes. OpenAI released GPT-6 Astra on September 3, 2026. Floatboat's confirmed Desktop matrix also lists gpt-6-astra in the main conversation selector, although visibility can depend on subscription configuration."
         },
         {
-          "question": "Will GPT-6 be a bigger leap than GPT-4 to GPT-5?",
-          "answer": "Nobody knows yet, including the people writing about it. GPT-4 to GPT-5 took 29 months and landed as a meaningful-but-not-dramatic upgrade for most workflows — real but small. GPT-6 is reportedly coming on a shorter gap, which could mean a smaller delta per release, or the opposite. Temper expectations; the benchmark articles circulating now are speculation."
+          "question": "Do I need an OpenAI API key to use GPT-6 Astra in Floatboat?",
+          "answer": "No. Officially listed Floatboat models are served through Floatboat's managed gateway. You select GPT-6 Astra in the client rather than adding your own OpenAI key; plan-based availability may still apply."
         },
         {
-          "question": "Will a more powerful model automatically make you faster?",
-          "answer": "Not automatically — and that's the central lesson of the GPT-4 to GPT-5 rollout. A better model speeds up generation, which is one step in a longer loop: deciding what you want, gathering context, generating, reviewing, shipping. The surrounding steps stay just as slow. In practice, expect roughly 15% faster on workflows you've already dialed in, and zero or negative gains on everything else."
+          "question": "Which one-person-company tasks are a good fit for Astra?",
+          "answer": "Strong candidates include research across many approved sources, difficult software changes, complex document work, and bounded workflows that span several applications. The task should have a clear result, verifiable evidence, limited permissions, and a review point."
         },
         {
-          "question": "What should I build before GPT-6 arrives?",
-          "answer": "Standardize your repeatable work and build context that transfers to any model. For each recurring job, write a simple doc — input format, prompt, an example of good output and one of bad output. Then write a one-page profile of your work and audience, keep a file of your best outputs per work type, and document the decisions you make repeatedly and why. None of it needs GPT-6, and all of it pays off the day any new model ships."
+          "question": "When should I use a cheaper model instead?",
+          "answer": "Use a cheaper model or deterministic automation for routine extraction, classification, reformatting, templated writing, and any task where both models meet the same acceptance criteria. Frontier capability should earn its higher cost on the specific workflow."
         },
         {
-          "question": "Should I wait until GPT-6 ships before building anything?",
-          "answer": "No — don't wait. The work that makes GPT-6 useful is the same work that makes your current model more useful: documented workflows, a clear profile of your work, style references, and written-down decisions. It compounds across model generations. Waiting just delays the scaffolding you already need, and the people who benefit most from a new release are the ones who had systems ready before it dropped."
+          "question": "How should a solo founder calculate GPT-6 Astra's cost?",
+          "answer": "Measure cost per accepted result: model and tool charges plus review time, retries, and expected failure cost. Compare Astra with a cheaper baseline on the same real tasks. Token price alone does not show whether the workflow is economical."
         },
         {
-          "question": "Are the 2M-token context window rumors true?",
-          "answer": "Unverified — and treat everything else leaked about GPT-6 the same way. OpenAI has published no model card and no spec sheet naming GPT-6 as of late April 2026. The only confirmed facts are that pretraining finished on March 24, 2026 and that Altman expects launch \"a few weeks\" out. Until OpenAI publishes details, treat rumored specs as fan fiction."
+          "question": "Does Astra's long context mean I should upload everything?",
+          "answer": "No. A 1.05-million-token window is useful when relationships across many files matter, but irrelevant or untrusted material can still degrade the task. Prefer the smallest approved source set that contains the evidence needed."
+        },
+        {
+          "question": "Can GPT-6 Astra run a one-person company autonomously?",
+          "answer": "That is not a well-bounded or safely testable task. Delegate specific workflows with a definition of done, least-privilege tools, action logs, and approval before external or irreversible actions."
+        },
+        {
+          "question": "How do I evaluate GPT-6 Astra before adopting it?",
+          "answer": "Use 10–20 representative tasks, including difficult and previously failed cases. Define acceptance criteria first, then compare pass rate, intervention count, review time, total cost, and failure severity against your current model."
         }
       ]
     },
@@ -4924,27 +4948,35 @@
       "items": [
         {
           "question": "浏览器 Agent、AI 浏览器与 AI 工作区到底有何区别？",
-          "answer": "它们位于工作流的不同层级。浏览器 Agent 扩展叠加在你现有的浏览器上，专攻登录态的 SaaS 操作；AI 原生浏览器是独立应用，AI 融入浏览体验本身，最擅长研究密集的日子；桌面 AI 工作区则是跨浏览器、本地文件与桌面应用的协调层。把层级对上你一天里摩擦所在的位置即可。"
+          "answer": "浏览器 Agent 在当前或远程浏览器会话中委托动作；AI 浏览器让助手融入跨页面和标签页的浏览过程；AI 工作区使用更大的项目或桌面边界，可组合文件、工具、调研与交付物。"
         },
         {
-          "question": "我这种情况该选哪一类？",
-          "answer": "对着你的瓶颈选。白天大多泡在已登录的 SaaS 后台里，先上扩展、保留现有配置；主要在浏览器里阅读、比对、总结，AI 原生浏览器能消掉扩展消不掉的摩擦；任务横跨文件、网页与本地应用，桌面工作区才合适。实际上多数单人创业者最终会组合其中两类，而不是只挑一个。"
+          "question": "网页自动化应该选哪一类？",
+          "answer": "任务主要是在网站之间执行动作，而且浏览器权限已经足够时，选择浏览器 Agent。触发、转换和目标位置都确定时，应改用 API 或工作流自动化。"
         },
         {
-          "question": "可以同时用浏览器 Agent 扩展和 AI 浏览器吗？",
-          "answer": "可以，两者并不冲突。扩展跑在你现有的浏览器里，AI 浏览器是独立应用。费用重叠通常很小——扩展一般捆绑在已有订阅里，而 Comet 等几款 AI 浏览器是免费的。扩展管 SaaS 后台、AI 浏览器做调研，是单人创业者里最常见的组合。"
+          "question": "什么时候 AI 浏览器比浏览器 Agent 更合适？",
+          "answer": "主要工作是跨标签页阅读、比较与推理时，AI 浏览器更合适；核心是完成网页动作时，浏览器 Agent 更合适。产品可能同时支持两者，应分别测试读取与动作权限。"
         },
         {
-          "question": "处理客户数据时，哪一类最安全？",
-          "answer": "截至 2026 年中，没有哪一类达到企业级数据安全水准，三类都被记录过提示注入漏洞。稳妥做法是：让 AI 做思考与组织，凡涉及客户凭证或财务数据一律手动处理；把真实数据放进去之前，先查看各家的官方安全文档。"
+          "question": "什么时候应该选择 AI 工作区？",
+          "answer": "交付物需要文件、调研、多种工具和持久项目上下文时选择。任务只限于一个网站，或遵循固定集成步骤时，更大的工作区边界可能只会增加访问范围和配置。"
         },
         {
-          "question": "这三类工具目前还解决不了什么？",
-          "answer": "还有三个缺口。设备之间的上下文交接——你在桌面工作区开了头，没法在手机 AI 浏览器上续上；多步执行超过三四步可靠性就明显下滑，当规划器用比当自动驾驶稳；重度使用的定价不透明——浏览器 Agent 工作烧订阅额度的速度比普通 AI 对话更快。"
+          "question": "处理敏感工作时哪一类最安全？",
+          "answer": "不能按类别名称判断。应比较真实上下文边界、执行位置、身份、最小权限、审批、日志、留存和恢复，并让所有高影响动作经过知情审批。"
         },
         {
-          "question": "我在欧盟或英国，现在能用哪些？",
-          "answer": "Claude for Chrome 在欧盟和英国可用；Codex for Chrome 还不行，没有给出时间表。三款 AI 浏览器都能用，但 Atlas 与 Dia 仅限 macOS。目前跨地区、跨平台最容易上手的大概是 Comet。"
+          "question": "云端浏览器会使用我现有浏览器的登录吗？",
+          "answer": "不一定。许多云端浏览器使用独立 Cookie 与登录会话，当前浏览器中的 Agent 则可能使用该配置文件的会话。应核验执行位置、凭证流程、会话保留与退出方法。"
+        },
+        {
+          "question": "怎样测试这三类产品？",
+          "answer": "给所有候选相同任务、权限边界、正常与失败案例和验收标准。衡量引用、越权动作、审批质量、恢复、审阅时间、总耗时和成本，并记录套餐、版本、设备与测试日期。"
+        },
+        {
+          "question": "AI 浏览器和 AI 工作区可以组合使用吗？",
+          "answer": "可以，但应先试点最小边界。只有证据显示存在第一个产品无法覆盖的重复任务时才增加第二个，同时计算上下文、订阅、权限和记录的重复成本。"
         }
       ]
     },
@@ -6903,28 +6935,36 @@
     "/zh/blog/gumloop-review-2026": {
       "items": [
         {
-          "question": "Gumloop 到底适合谁来用？",
-          "answer": "有明确、可重复的多步骤流程的团队——通常是 3–10 人、且有专人负责搭建与维护 flow 的运营、市场或数据团队。文中指出 Gumloop 在批量更新 CRM、处理文档、规模化线索富化这类场景确实出彩。对判断密集型、混杂着写写研研的一人日常来说，节点模型往往不是帮忙，而是负担。"
+          "question": "Gumloop 是无代码工作流工具，还是 AI Agent 平台？",
+          "answer": "两者都是。团队可以搭确定性 flow，也可以创建会从获准工具中选择动作的 Agent，还能把 Agent Node 放进固定流程。可预测步骤用固定逻辑，确实需要运行时判断的环节再用 Agent。"
         },
         {
-          "question": "Gumloop 是什么？搭建 flow 是怎么运作的？",
-          "answer": "它是一个建立在可视化画布上的无代码 AI 自动化平台。你把节点拖上画板连起来——一个节点抓网页、下一个调 LLM 做总结、再下一个写入 Google Sheet——连起来的步骤就成了一条能跑的 flow。Gummie 这个元 Agent 还能用自然语言描述替你生成 flow。实际效果取决于你能把自己的任务拆得多清楚。"
+          "question": "非技术团队容易上手 Gumloop 吗？",
+          "answer": "画布省去了写代码，但生产流程仍需要拆解业务、映射数据、设计输出、配置权限和处理故障。非开发者可以使用，但无代码不等于不需要系统思维。"
         },
         {
-          "question": "Gumloop 和 Zapier 有什么不同？",
-          "answer": "Zapier 是\"触发器—动作\"式：一个应用发生点事，触发另一个应用里的动作。Gumloop 是 AI 原生的——ChatGPT、Claude 这类模型直接嵌进 flow 里，沿途会处理数据、做判断——能扛更复杂的多步逻辑，但搭建也更重。文中那句比喻很贴切：就像 Zapier 和 ChatGPT 生了个孩子。"
+          "question": "2026 年 Gumloop 怎么收费？",
+          "answer": "Gumloop 2026 年 8 月的公告称，token 与计算资源按成本转计，并收取基础 8% 编排费。套餐会变化，部分文档仍使用 credit；应查看自己的任务明细，并计算单个合格结果总成本。"
         },
         {
-          "question": "非技术背景学起来难吗？",
-          "answer": "它是 no-code，但这不等于没有学习曲线。文中提到用户普遍要 50–100 小时才觉得顺手；有位非工程师评论者说花了几周才到中级水平。Gumloop 奖励流程思维者：每一步、每个分支、每个条件都得显式定义，还要不断调提示词来稳住输出。模板有帮助，但别指望一个下午就上手。"
+          "question": "Gumloop 是否支持我使用的应用？",
+          "answer": "官方文档覆盖常见业务系统，也支持 MCP 和 API 节点。应核对具体读写动作、认证方式、scope、限制和错误行为；看到连接器 logo 不代表任务已经完全覆盖。"
         },
         {
-          "question": "Gumloop 怎么收费？credit 体系怎么算？",
-          "answer": "免费档含 2,000 credits 与 2 个并发流程运行——测试够用，撑不起真实自动化。Solo 套餐 $37/月起（10,000 credits、1 席位），Team 套餐 $244/月起。绕人的是 credit 计价：标准 AI 调用约 2 credits、高级模型约 20 credits，一条给 100 个联系人做富化的流程要 6,001 credits；超出配额照常计费且无自动关闭，下单前务必以官方定价页为准。"
+          "question": "团队应该如何保护 Gumloop 凭据？",
+          "answer": "使用最低权限账号，长期流程优先采用服务化所有权，只启用 Agent 必需工具，分开测试与生产，记录负责人，并演练撤销与轮换。高影响写操作还应增加审批。"
         },
         {
-          "question": "什么类型的工作不适合用它自动化？",
-          "answer": "装不进离散节点的工作。如果你的日子是混合、判断密集型的——写点东西、调研、做判断、沟通、循环——把流程显式映射成 flow 的时间比直接干活还多。Gumloop 预设的是高并发、低变体的自动化；同时它需要持续维护——AI 输出会漂移，不内建错误处理，下游结果不一致的风险很真实。"
+          "question": "上线前怎么测试 Gumloop 流程？",
+          "answer": "建立固定的正常与对抗样本，在测试目标中运行，统计合格结果和成本，再主动制造超时、坏输入、权限撤销与重复事件。只有达到书面阈值，才开放生产权限。"
+        },
+        {
+          "question": "Gumloop 流程失败后会怎样？",
+          "answer": "官方文档提供节点日志、失败通知和 Error Shield。但团队仍要指定负责人，定义重试与幂等规则，准备批量任务对账方式，并为不可逆动作保留安全恢复路径。"
+        },
+        {
+          "question": "哪些团队不适合 Gumloop？",
+          "answer": "只有简单触发需求、任务大多一次性、数据不能流转、没有自动化负责人，或必须具备当前套餐无法证明的代码级控制与可迁移性的团队，应考虑更简单或更可编程的方案。"
         }
       ]
     },
@@ -7559,28 +7599,36 @@
     "/zh/blog/openai-gpt-6-one-person-company": {
       "items": [
         {
-          "question": "GPT-6 什么时候发布？",
-          "answer": "截至 2026 年 4 月底没有官方日期。OpenAI 于 3 月 24 日完成预训练，Altman 说发布「还要几周」，而截至撰稿，旗舰模型仍在安全评估中。综合公开信号的最佳猜测：2026 年 Q2 末或 Q3。关注 OpenAI 官方公告，而不是泄露消息或 Twitter。"
+          "question": "GPT-6 Astra 现在已经可以使用了吗？",
+          "answer": "可以。OpenAI 于 2026 年 9 月 3 日发布 GPT-6 Astra。Floatboat 已确认的 Desktop 模型矩阵也把 gpt-6-astra 列在主对话选择器中，但客户端可见范围仍可能受订阅配置影响。"
         },
         {
-          "question": "GPT-6 会是比 GPT-4→5 更大的跃迁吗？",
-          "answer": "现在没人知道——包括写这个话题的人。GPT-4→5 隔了 29 个月，落地后对多数工作流是一次「有意义但不算剧烈」的升级：真实，但很小。GPT-6 据称发布间隔更短，可能意味着单次发布的增量更小，也可能恰恰相反。先管理预期——眼下流传的基准文章，都是猜测。"
+          "question": "在 Floatboat 中使用 GPT-6 Astra 需要 OpenAI API Key 吗？",
+          "answer": "不需要。Floatboat 官方上架模型由统一网关托管，用户直接在客户端选择 GPT-6 Astra，不必添加自己的 OpenAI Key；具体套餐仍可能影响模型可用范围。"
         },
         {
-          "question": "更强的模型会自动让我更快吗？",
-          "answer": "不会自动变快——这正是 GPT-4→5 那轮发布留下的核心教训。更好的模型只加速「生成」这一步，而它只是更长链条里的一环：想清楚要什么、准备上下文、生成、复核、交付，其余步骤该多慢还是多慢。实际体感：已有成熟工作流的任务大约快 15%，没有工作流的任务为零甚至为负。"
+          "question": "一人公司的哪些任务适合 Astra？",
+          "answer": "适合大量一手资料综合、困难软件修改、复杂文档工作，以及边界清晰的跨应用流程。任务应有明确结果、可核验证据、受限权限和与风险匹配的复核点。"
         },
         {
-          "question": "GPT-6 到来之前，我该建好什么？",
-          "answer": "把重复性工作标准化，并搭一套能迁移到任何模型的上下文。给每条重复任务写一份简单文档——输入格式、提示词、好的输出示例与坏的输出示例。再写一页纸说明你做什么、服务谁；按工作类型留存一份「最佳输出」文件；把你反复做的决策连同理由写下来。这些都不需要 GPT-6，却会在任何新模型上线当天就回本。"
+          "question": "哪些任务应该改用更便宜的模型？",
+          "answer": "常规提取、分类、改格式、模板化写作，以及两个模型都能满足相同验收标准的任务，应优先交给便宜模型或确定性自动化。旗舰能力必须在具体工作流上证明其额外成本合理。"
         },
         {
-          "question": "要不要等 GPT-6 发布再动手搭建？",
-          "answer": "不用等。让 GPT-6 有用的功课——文档化的工作流、清晰的工作画像、风格参考、写下来的决策——和让当前模型更有用的是同一批，它会跨代复利。等待只会推迟你本来就需要搭的脚手架；每次新模型发布时获益最大的，都是提前把系统备好的人。"
+          "question": "一人公司应该怎样计算 Astra 的成本？",
+          "answer": "计算每个验收通过结果的总成本：模型与工具费用，加上人工复核、重试和预期错误损失。用同一组真实任务与便宜基线比较；token 单价不能单独说明工作流是否划算。"
         },
         {
-          "question": "200 万上下文窗口的传闻是真的吗？",
-          "answer": "未经证实——对 GPT-6 的其他泄露消息也该持同样态度。截至 2026 年 4 月底，OpenAI 没有发布任何点名 GPT-6 的模型卡或规格表。已确认的只有两件事：预训练于 3 月 24 日完成，Altman 预期发布「还要几周」。在官方公布细节前，传闻规格当同人文看就好。"
+          "question": "Astra 的长上下文是否意味着应该上传所有资料？",
+          "answer": "不是。105 万 token 窗口适合需要跨大量文件理解关系的任务，但无关或不可信的材料仍会干扰结果。应使用包含必要证据的最小批准资料集。"
+        },
+        {
+          "question": "GPT-6 Astra 能自主经营一人公司吗？",
+          "answer": "“经营公司”不是边界清晰、可安全测试的任务。应委派具体工作流，写明完成标准，采用最小权限与动作日志，并在外部或不可逆操作前要求人工批准。"
+        },
+        {
+          "question": "正式采用前应怎样评测 GPT-6 Astra？",
+          "answer": "选择 10–20 个代表性任务，包括困难案例和过去失败过的案例。先写验收标准，再与当前模型比较通过率、人工介入次数、复核时间、总成本和失败严重程度。"
         }
       ]
     },
