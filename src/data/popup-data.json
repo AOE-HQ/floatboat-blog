@@ -10,6 +10,10 @@
     }
   },
   "slugs": {
+    "what-is-gemini-agent": {
+      "en": {"title":"A work agent should outlast the model underneath it","body":"Keep projects, tools, Skills, and model choice together in a workspace you can use now."},
+      "zh": {"title":"真正的 Work Agent，不该被单一模型锁住","body":"现在就把项目、工具、Skills 和模型选择放进同一个持续工作空间。"}
+    },
     "agentic-ai-tools": {
       "en": {
         "title": "Five agentic tool classes, mapped to real autonomy levels",

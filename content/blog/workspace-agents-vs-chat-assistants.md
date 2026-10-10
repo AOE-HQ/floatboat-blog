@@ -100,6 +100,8 @@ This is where **workspace agents vs chat assistants** stops being a tie and beco
 
 The engineering challenge, as the field keeps rediscovering, is that _maintaining the right context_ becomes the defining problem as tasks get longer-horizon. Chat UIs weren't designed for that. Workspace UIs are.
 
+Google's new [Gemini Agent](/blog/what-is-gemini-agent) makes that architectural split explicit: the persistent work agent owns context, tools, and permissions, while different models can be routed underneath it.
+
 ![5.png](/blog/images/workspace-agents-vs-chat-assistants/1776999769997-ac84c264-70bd-4725-ac36-920e79b4c427.webp)
 
 ### Multi-role solo work
