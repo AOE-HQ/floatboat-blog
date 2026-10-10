@@ -192,7 +192,7 @@ Compared with the "user assigns a task, the agent goes and does it" model of Dou
 
   * **Typical scenarios**: pre-meeting preparation and post-meeting follow-up for solopreneurs, consultants, and cross-border teams — see [AI meeting preparation](/blog/ai-meeting-preparation); Doubao Work leans toward **in-Feishu document/deck/video delivery plus local GUI control**.
 
-  * **Collaboration shape and market**: Floatboat + [FloatIM](</floatim>) take the agent-native group-chat route for solopreneurs and small teams worldwide; Doubao Work takes deep Feishu integration for mainland-China enterprises.
+  * **Collaboration shape and market**: Floatboat + [FloatIM](/floatim) take the agent-native group-chat route for solopreneurs and small teams worldwide; Doubao Work takes deep Feishu integration for mainland-China enterprises.
 
 The short version: if your collaboration hub is Feishu group chats and cloud documents, Doubao Work fits better. If your hub is the **meetings and deadlines on your calendar** and you want agents running pipelines around events automatically, evaluate Floatboat.
 

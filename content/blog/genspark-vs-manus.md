@@ -72,7 +72,7 @@ The background operation capability is real and useful — you can kick off a ta
 
 It also writes and deploys code. If you need a working web page or a prototype generated from a prompt, Manus handles that in a way Genspark simply doesn't.
 
-The [Wikipedia page on Manus AI](<https://en.wikipedia.org/wiki/Manus_\(AI_agent\)>) has a solid overview of the architecture and acquisition context if you want the full backstory.
+The [Wikipedia page on Manus AI](https://en.wikipedia.org/wiki/Manus_\(AI_agent\)) has a solid overview of the architecture and acquisition context if you want the full backstory.
 
 ![5.png](/blog/images/genspark-vs-manus/1774490483985-beeef324-09b1-42b5-b9c9-9db4cf561ae4.webp)
 

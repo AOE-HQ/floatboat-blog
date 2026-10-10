@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { BlogShell } from "@openblog/components";
 
 import { absoluteBlogIndexUrl, openGraphLocale } from "@/lib/locale-site";
-import { getBlogIndexData } from "@/lib/posts";
+import { getAllPostMeta, getBlogIndexData } from "@/lib/posts";
 
 import { site } from "@/config/site";
 
@@ -15,9 +15,9 @@ import { MarketingBand } from "@/components/blog/marketing-band";
 const og = openGraphLocale("en");
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "AI Agents, Models, and Workflows Blog",
   description:
-    "Notes on AI teammates, automation, and high-frequency communication. Practical writing about giving AI a real role, clear boundaries, and useful handoffs.",
+    "Explore Floatboat guides to AI agents, frontier models, agent workspaces, automation workflows, file tools, and practical systems for solo operators.",
 
   alternates: {
     canonical: absoluteBlogIndexUrl("en"),
@@ -29,8 +29,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: `Blog | ${site.name}`,
-    description: site.description,
+    title: `AI Agents, Models, and Workflows Blog | ${site.name}`,
+    description:
+      "Model analysis, agent architecture, automation workflows, file tools, and practical AI systems from Floatboat.",
     url: absoluteBlogIndexUrl("en"),
     siteName: site.name,
     type: "website",
@@ -41,13 +42,16 @@ export const metadata: Metadata = {
 
 export default function BlogIndexPage() {
   const data = getBlogIndexData();
+  const libraryPosts = getAllPostMeta().filter(
+    (post) => post.slug !== data.featured?.slug,
+  );
 
   return (
     <BlogShell className="py-8 lg:py-12">
       <BlogHero
         siteName={site.name}
-        title="Practical AI for solo operators"
-        description="Notes on AI teammates, automation, and high-frequency communication. Real workflows, honest trade-offs, and useful handoffs."
+        title="AI agents, models, and workflow guides"
+        description="Browse the complete Floatboat library: model analysis, agent architecture, automation workflows, file tools, and practical systems for solo operators."
         articleCount={data.articleCount}
         categories={data.categories}
         locale="en"
@@ -59,9 +63,9 @@ export default function BlogIndexPage() {
         </section>
       ) : null}
 
-      {data.latest.length > 0 ? (
+      {libraryPosts.length > 0 ? (
         <section className="mt-14 lg:mt-20" aria-label="Browse articles">
-          <TopicBrowser posts={data.latest} />
+          <TopicBrowser posts={libraryPosts} />
         </section>
       ) : null}
 

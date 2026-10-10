@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">五类 Agentic AI 工具</title><desc id="desc">从互动助手到常驻工作区 Agent，比较执行范围、自主度和控制。</desc>
+  <rect width="1200" height="675" fill="#f6f0e4"/><rect x="42" y="42" width="1116" height="591" rx="28" fill="#fffaf0" stroke="#25231f" stroke-width="3"/>
+  <text x="82" y="105" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="34" font-weight="700" fill="#25231f">先选执行边界，再选产品</text>
+  <text x="82" y="141" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="18" fill="#625d54">自主度越高，越要计算成本、权限和恢复。</text>
+  <line x1="113" y1="515" x2="1080" y2="515" stroke="#25231f" stroke-width="3"/><path d="M1080 515l-16-10v20z" fill="#25231f"/>
+  <g font-family="Arial,'Microsoft YaHei',sans-serif" fill="#25231f">
+    <g transform="translate(82 195)"><rect width="188" height="250" rx="18" fill="#f0c66d"/><text x="18" y="42" font-size="22" font-weight="700">助手</text><text x="18" y="82" font-size="16">一次对话</text><text x="18" y="110" font-size="16">人全程驾驶</text><text x="18" y="190" font-size="15">控制：</text><text x="18" y="216" font-size="15">审阅输出</text></g>
+    <g transform="translate(294 195)"><rect width="188" height="250" rx="18" fill="#e8b981"/><text x="18" y="42" font-size="22" font-weight="700">工作流</text><text x="18" y="82" font-size="16">路径已知</text><text x="18" y="110" font-size="16">应用动作</text><text x="18" y="190" font-size="15">控制：</text><text x="18" y="216" font-size="15">分支与异常</text></g>
+    <g transform="translate(506 195)"><rect width="188" height="250" rx="18" fill="#d7aa9b"/><text x="18" y="42" font-size="22" font-weight="700">Agent Builder</text><text x="18" y="82" font-size="16">路由可变</text><text x="18" y="110" font-size="16">工具集已定</text><text x="18" y="190" font-size="15">控制：</text><text x="18" y="216" font-size="15">评测与策略</text></g>
+    <g transform="translate(718 195)"><rect width="188" height="250" rx="18" fill="#a8bdac"/><text x="18" y="42" font-size="22" font-weight="700">编程 Agent</text><text x="18" y="82" font-size="16">仓库与终端</text><text x="18" y="110" font-size="16">测试与 Diff</text><text x="18" y="190" font-size="15">控制：</text><text x="18" y="216" font-size="15">Sandbox 与审查</text></g>
+    <g transform="translate(930 195)"><rect width="188" height="250" rx="18" fill="#91aec5"/><text x="18" y="42" font-size="22" font-weight="700">工作区</text><text x="18" y="82" font-size="16">应用与记忆</text><text x="18" y="110" font-size="16">定时执行</text><text x="18" y="190" font-size="15">控制：</text><text x="18" y="216" font-size="15">管理员与 Log</text></g>
+    <text x="82" y="570" font-size="17" font-weight="700">互动式</text><text x="1030" y="570" font-size="17" font-weight="700">常驻</text><text x="470" y="607" font-size="16">执行范围与治理负担递增 →</text>
+  </g>
+</svg>

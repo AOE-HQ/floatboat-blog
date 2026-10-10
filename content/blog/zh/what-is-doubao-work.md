@@ -192,7 +192,7 @@ Floatboat 不是「又一款飞书/钉钉里的聊天 Agent」，而是**Calenda
 
   * **典型场景**：独立创业者、顾问、跨国团队的**会前准备与会后跟进**——详见 [AI 会前准备](/zh/blog/ai-meeting-preparation)；豆包工作更偏**飞书内交付 + 本地 GUI 操控**。
 
-  * **协作形态与市场**：Floatboat + [FloatIM](</floatim>) 走面向全球 solopreneur / 小团队的 Agent-native 群聊网络；豆包工作走面向国内飞书企业的深度集成。
+  * **协作形态与市场**：Floatboat + [FloatIM](/floatim) 走面向全球 solopreneur / 小团队的 Agent-native 群聊网络；豆包工作走面向国内飞书企业的深度集成。
 
 简版结论：若你的协作中心是飞书群聊和云文档，豆包工作更贴；若你的协作中心是**日历上的会议与 deadline**，且希望 Agent 自动在事件前后跑 pipeline，应评估 Floatboat。
 

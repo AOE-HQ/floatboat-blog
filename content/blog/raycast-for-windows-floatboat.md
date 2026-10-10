@@ -1,6 +1,6 @@
 ---
-title: "Finding Raycast for Windows? Try Floatboat!"
-description: "Searching for a Raycast alternative on Windows? Discover how Floatboat goes beyond a launcher with an AI-native workspace, Combo Skills, local context, and autonomous workflows."
+title: "Raycast for Windows Is Here: Raycast or Floatboat?"
+description: "Raycast now runs on Windows. Compare Raycast and Floatboat by search, extensions, AI agents, files, projects, automation, pricing, and the work each product fits best."
 slug: "raycast-for-windows-floatboat"
 date: "2026-09-03"
 author: "Floatboat Team"
@@ -10,123 +10,154 @@ locale: "en"
 draft: false
 ---
 
-_If you've been searching for "Raycast for Windows," you're not alone. Thousands of Windows users envy what Mac users have — a lightning-fast, keyboard-driven launcher that actually understands how they work. But what if the answer isn't a Raycast clone at all, but something fundamentally better?_
+Yes—there is now an official **Raycast for Windows**. Raycast released its Windows public beta in November 2025 and took it out of beta with Raycast 2.0 on August 25, 2026. As of October 10, 2026, the official Windows page offers the 2.7 release for Windows 10 21H2+ and Windows 11 through its installer or WinGet ([Raycast for Windows](https://www.raycast.com/windows), [Windows changelog](https://www.raycast.com/changelog/windows)).
 
-* * *
+That changes the question behind this article. Windows users no longer need a substitute merely because Raycast is unavailable. The useful decision is now: **do you want a keyboard-first launcher with an expanding AI layer, or a persistent Agent Workspace built around files, projects, and deliverables?**
 
-## The Raycast Gap on Windows
+Raycast and Floatboat overlap more than they once did. Both run on Windows, search local files, connect AI to tools, and support repeatable work. But they still begin from different places. Raycast begins with a universal command bar. Floatboat begins with a project environment in which agents, approved local files, tools, rules, and outputs stay together.
 
-If you're a Mac user who recently switched to Windows — or a Windows user who's watched enviously as your Mac friends summon AI, manage files, and automate workflows from a single keystroke — you know the pain. Raycast has become the gold standard for productivity launchers on macOS: fast, extensible, AI-powered, and beautifully designed.
+## What Raycast for Windows includes now
 
-But on Windows? The options have been… underwhelming.
+Raycast's Windows app is no longer a thin preview. Its free launcher foundation includes app and file search, Clipboard History, Snippets, Quicklinks, calculator, window management, system commands, Notes, and an extension store. Most core features work offline; online AI features and Cloud Sync require a connection. Extensions without native-code dependencies are intended to work across platforms, while extensions that rely on macOS-specific or native behavior still need Windows support from their developers ([Raycast Windows FAQ](https://www.raycast.com/windows)).
 
-PowerToys Run is functional but barebones. Keypirinha is powerful but developer-centric. Wox and Flow Launcher are valiant open-source efforts, but they lack the polish, AI integration, and ecosystem that make Raycast feel like magic.
+The AI surface has expanded quickly:
 
-Here's the thing, though: **the productivity landscape has shifted**. In 2026, what you actually need isn't just a launcher — it's an AI-native workspace that understands your work, remembers your preferences, and executes multi-step tasks autonomously. And that's exactly where **Floatboat** enters the picture.
+- AI Chat can plan, call extension tools, run code, check results, and pause for user decisions.
+- Projects group conversations with their own memory and can point at a working directory.
+- Automations run prompts on a schedule and deliver the result to a chat.
+- AI Extensions and MCP servers can expose files, terminal actions, Slack, Notion, Linear, and other tools.
+- Custom providers, Ollama, OpenRouter, and extension-provided models broaden model choice.
 
-* * *
+Those capabilities are documented in Raycast's Windows changelog, especially releases 2.2 through 2.7. The important correction is that “Raycast is only a launcher” is no longer accurate. In September 2026, Raycast described its AI Chat as an agent that can form a plan, use extensions, execute code, verify results, recover from failure, and ask for a decision ([Raycast Windows changelog](https://www.raycast.com/changelog/windows)).
 
-## What Is Floatboat?
+Raycast also changed its commercial boundary after beta. Core launcher features remain free, while AI Chat, Dictation, Cloud Sync, and bring-your-own-model options sit in paid plans or usage-based AI allowances. Prices and included credits can change, so check the [current Raycast pricing page](https://www.raycast.com/pricing) rather than relying on an old review.
 
-Floatboat is the first AI Agent Workspace built for one-person companies, freelancers, and solopreneurs — available on **both Windows and macOS**. It's not just a launcher or a chatbot. Think of it as your personal AI team, living right on your desktop, deeply connected to your local files, browser, and the tools you already use.
+## Where Floatboat is actually different
 
-Where Raycast gives you a command palette with plugins, Floatboat gives you a **full-stack AI workspace** that grows with your needs: start with a simple Agent Chat, then expand into split-screen file management, browser automation, drag-and-drop context flow, and reusable AI workflows called **Combo Skills**. And when the job is writing itself, the workspace stretches further: [Flow Mode](/blog/introducing-flow-mode) turns voice dictation into in-document co-authoring, so the same surface that launched the work is where the draft gets finished.
+Floatboat is not the unofficial Windows port of Raycast, and it should not be evaluated as one. It is a desktop [Agent Workspace](/blog/ai-workspace-agents) for Windows and macOS. The central object is a persistent project environment, not a global launcher.
 
-* * *
+An approved folder, project rules, browser context, models, Agent runs, review notes, and editable outputs can remain in one workspace. Floatboat's public product page describes a research-to-delivery flow: open the real project, let agents divide the work, review the result, and keep the artifact beside its source material ([Floatboat Agent Workspace](https://floatboat.ai/agent-workspace)).
 
-## Why Floatboat Is More Than "Raycast for Windows"
+That difference changes the interaction model:
 
-### 1\. It Learns How You Work
+- **Raycast optimizes access.** Invoke a command, find an item, trigger an extension, or ask AI without leaving the keyboard.
+- **Floatboat optimizes continuity.** Keep source files, working rules, execution history, human review, and finished artifacts attached to the same project.
 
-Raycast is fast, but it doesn't learn. You configure it, install extensions, and manually set up workflows.
+The boundary is not absolute. Raycast Projects now preserve memory and a working directory; Floatboat includes search, browser, and desktop actions. But their centers of gravity remain different enough to guide a choice.
 
-Floatboat's **Tacit Engine** takes a radically different approach: it observes how you edit, decide, and execute across every part of your work. Over time, it captures the operating instincts that make your business tick — your judgment, your standards, your preferred way of getting things done. No extra setup required.
+## Raycast vs. Floatboat on Windows
 
-_Your way of working is your business's biggest asset. Floatboat treats it that way._
+| Decision area | Raycast | Floatboat |
+|---|---|---|
+| Primary surface | Global launcher and command palette | Persistent Agent Workspace |
+| Best first job | Open, search, calculate, paste, trigger a command | Take a project from source material to an editable deliverable |
+| Local files | Fast indexed search and AI access through files, extensions, or project directories | Approved project folders remain part of the working environment |
+| Extensibility | Store extensions, Script Commands, AI Extensions, MCP | Skills, Combo workflows, tools, connectors, multiple agents |
+| AI organization | Quick AI, AI Chat, agents, Projects, scheduled Automations | Workspace context, Agent runs, project rules, review, reusable Skills/Combos |
+| Human control | Tool confirmation and questions inside AI runs | Artifact review, redirection, model/instruction changes, approval boundaries |
+| Offline boundary | Most launcher features work offline; cloud AI and sync do not | Local-first is not fully offline; data paths depend on selected models and connectors |
+| Platform | Windows 10 21H2+, Windows 11, macOS, iOS companion | Windows 10/11 and macOS desktop |
 
-### 2\. Combo Skills: Your One-Person Playbook
+This table is deliberately about product shape rather than declaring one universally better. Raycast has the stronger case when the command bar itself is the product you want. Floatboat has the stronger case when the durable project environment and resulting files matter more than instant command invocation.
 
-Instead of browsing extension stores for individual plugins, Floatboat lets you build **Combo Skills** — reusable AI workflows that capture how you get work done, then replay that playbook whenever similar work shows up.
+## Choose Raycast when speed at the keyboard is the job
 
-  * **Sales founder?** Turn voice notes into a client-ready pitch deck in 10 minutes.
+Raycast is a natural fit if most of your day consists of small, high-frequency actions:
 
-  * **Content creator?** Go from scattered research and rough drafts to publish-ready articles — in your unique voice.
+- launching apps and switching windows;
+- finding a file without opening Explorer;
+- inserting snippets or previous clipboard content;
+- running a Script Command or extension action;
+- checking a calendar, issue, pull request, or setting from one palette;
+- asking a quick AI question in place.
 
-  * **Small business owner?** Run a strategic contract review that flags risks and suggests counter-proposals.
+The extension ecosystem is especially valuable when the exact command you need already exists. Developers who know React and TypeScript can also build extensions, although Windows compatibility must be checked when an extension depends on native code.
 
-These aren't templates. They're living workflows that adapt to your context, and you can find more in the **ComboStore** — a marketplace of ready-to-use skills built by the community.
+A useful Raycast workflow might be: open the global hotkey, find a GitHub pull request, copy a prepared review snippet, arrange the browser and editor into a saved window layout, then ask Quick AI to summarize the selected text. Each action is small; the command palette removes friction between them.
 
-### 3\. Context Flows Like Water
+## Choose Floatboat when the project has to survive the chat
 
-One of Raycast's best features is its clipboard history and snippet system. Floatboat takes this concept to another level with **frictionless context flow** :
+Floatboat is a better fit when the work accumulates across files and stages:
 
-  * Drag browser content into folders to save as Markdown
+- research sources need to become a report, deck, or client brief;
+- multiple agents need to divide research, drafting, checking, or production;
+- project rules and folder-specific instructions should carry into later tasks;
+- the output must remain an editable file next to its inputs;
+- a person needs to inspect, redirect, approve, or re-run parts of the work;
+- a successful process should become a reusable Skill or Combo.
 
-  * Drag Agent responses directly into files
+For example, a consultant can open a client folder containing the brief, interview notes, prior deck, and house style. One Agent gathers evidence, another drafts the analysis, and a reviewer checks the claims. The final presentation remains with the source material instead of ending as a message to copy elsewhere.
 
-  * Drag local files into chat — no uploading, no copy-pasting
+This is where the [local-first versus cloud workspace](/blog/local-first-vs-cloud-agent-workspace) distinction matters. Floatboat can work from approved local folders, but “local-first” does not mean every model or connector is offline. The data path still depends on the engine and external tools selected for that workflow.
 
-  * The built-in browser lets your Agent navigate pages, gather information, and automate web tasks
+## You may want both
 
-Everything moves seamlessly. Your context never breaks. Handed that browser, an agent can run whole research cycles on its own — [the weekly TikTok Shop research automation](/blog/automate-tiktok-shop-research-fastmoss-floatboat) is what that looks like end to end: navigate, gather, compare, and deliver a brief without a human shepherding every step.
+The products are not mutually exclusive. A command launcher and an Agent Workspace can occupy different layers of the same Windows setup.
 
-### 4\. Native Desktop Integration
+Use Raycast as the fast front door for apps, snippets, system settings, and small extension actions. Use Floatboat for a longer research, production, or operations job whose context and outputs should remain together. The duplication becomes wasteful only when both products are configured to perform the same AI chat or scheduled task without a clear owner.
 
-Floatboat isn't a web app pretending to be a desktop tool. It's a **native desktop application** (Windows 10+ and macOS 13+) with deep system integration:
+A practical division of labor is:
 
-  * Access all local files and software on your computer
+1. Raycast handles actions that should finish in seconds.
+2. Floatboat owns jobs that create or change a durable artifact.
+3. Choose one system of record for each automation.
+4. Avoid giving both tools broad write access to the same service until you understand their approval and logging behavior.
 
-  * Write tasks directly to your system Reminders
+## Three Windows workflows to test before choosing
 
-  * Invoke your local email client
+Do not compare feature lists in the abstract. Install the candidates and run the work you repeat every week.
 
-  * Connect to 3,500+ tools instantly
+### Test 1: ten tiny actions
 
-  * Works with your existing stack — Slack, Google Drive, and beyond
+Launch five apps, find two files, insert a snippet, calculate a conversion, and position two windows. Measure keystrokes and recovery when search returns the wrong item. This test favors launcher ergonomics and will show why Raycast exists.
 
-### 5\. The User Protection Program
+### Test 2: one messy deliverable
 
-Here's something no launcher or AI tool offers: **a pay-for-results guarantee**. Floatboat's User Protection Program is a bold experiment — if AI clearly fails to deliver, you can request protected credit recovery up to the value of what you paid. It's a small but concrete step toward pricing AI around value, not just compute.
+Take a folder containing PDFs, notes, links, and an old template. Ask the product to create a report or presentation, then revise it after feedback. Check whether sources, decisions, and the editable output stay connected. This exposes the difference between an AI command and a workspace.
 
-* * *
+### Test 3: one recurring job
 
-## Floatboat vs. Raycast: A Quick Comparison
+Schedule a weekly research or review task. Inspect where its credentials live, what happens when the computer sleeps, how failures appear, where the result lands, and how to stop the next run. A schedule is not useful automation unless ownership and recovery are clear.
 
+## Migrating from Raycast on Mac to Raycast on Windows
 
+If your goal is simply to keep using Raycast after moving to Windows, use Raycast. The migration is now straightforward, but feature parity should be verified rather than assumed.
 
-<table><colgroup><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p>Feature</p></th><th colspan="1" rowspan="1"><p>Raycast (Mac only)</p></th><th colspan="1" rowspan="1"><p>Floatboat (Win + Mac)</p></th></tr><tr><td colspan="1" rowspan="1"><p>Platform</p></td><td colspan="1" rowspan="1"><p>macOS only</p></td><td colspan="1" rowspan="1"><p>Windows 10+ &amp; macOS 13+</p></td></tr><tr><td colspan="1" rowspan="1"><p>Core Model</p></td><td colspan="1" rowspan="1"><p>Launcher + Extensions</p></td><td colspan="1" rowspan="1"><p>AI Agent Workspace</p></td></tr><tr><td colspan="1" rowspan="1"><p>AI Capability</p></td><td colspan="1" rowspan="1"><p>AI Chat, Commands</p></td><td colspan="1" rowspan="1"><p>Full autonomous Agent</p></td></tr><tr><td colspan="1" rowspan="1"><p>Learning</p></td><td colspan="1" rowspan="1"><p>Manual configuration</p></td><td colspan="1" rowspan="1"><p>Tacit Engine auto-learns</p></td></tr><tr><td colspan="1" rowspan="1"><p>Workflows</p></td><td colspan="1" rowspan="1"><p>Scripted quicklinks</p></td><td colspan="1" rowspan="1"><p>Combo Skills (no-code)</p></td></tr><tr><td colspan="1" rowspan="1"><p>File Integration</p></td><td colspan="1" rowspan="1"><p>Clipboard, snippets</p></td><td colspan="1" rowspan="1"><p>Full local file system</p></td></tr><tr><td colspan="1" rowspan="1"><p>Browser</p></td><td colspan="1" rowspan="1"><p>None (system browser)</p></td><td colspan="1" rowspan="1"><p>Built-in AI-aware browser</p></td></tr><tr><td colspan="1" rowspan="1"><p>Marketplace</p></td><td colspan="1" rowspan="1"><p>Extension Store</p></td><td colspan="1" rowspan="1"><p>ComboStore</p></td></tr><tr><td colspan="1" rowspan="1"><p>Guarantee</p></td><td colspan="1" rowspan="1"><p>None</p></td><td colspan="1" rowspan="1"><p>User Protection Program</p></td></tr></table>
+1. Install from Raycast's Windows page, Microsoft Store, or `winget install raycast`.
+2. Confirm the PC meets Windows 10 21H2+ or Windows 11 requirements.
+3. List the extensions and Script Commands you actually use; check native or macOS-specific dependencies.
+4. Decide whether paid Cloud Sync is worth using for settings, chats, and notes across devices.
+5. Re-create global hotkeys carefully; Windows, PowerToys, GPU utilities, and accessibility software may already claim them.
+6. Review folders included in file indexing, especially large, network, removable, or rapidly changing directories.
+7. Decide whether you need paid AI Chat, Dictation, custom providers, or local models before moving AI workflows.
 
+The mistake is migrating an entire configuration before testing the five commands that account for most of your daily use.
 
+## Moving from a launcher workflow to an Agent Workspace
 
-* * *
+Moving work into Floatboat is not an extension-for-extension migration. Start with one project whose output matters.
 
-## Who Is Floatboat For?
+1. Choose a bounded folder and remove material the Agent does not need.
+2. Define the deliverable and approval points in plain language.
+3. Add project rules, examples, and the tools required for that job—not every available integration.
+4. Run the workflow once with visible human review.
+5. Check every changed file and external action.
+6. Only then turn the successful sequence into a reusable Skill, Combo, or scheduled trigger.
 
-Floatboat is purpose-built for people who wear many hats:
+This approach avoids the most common automation failure: granting broad access before the process itself is reliable. The same principle applies to any [AI agent connector](/blog/ai-agent-connectors-explained): verify identity, scope, write actions, approval, token storage, and revocation before enabling unattended execution.
 
-  * **Solopreneurs** who are the founder, marketer, ops manager, and support team — all at once
+## Limits worth knowing before installing either
 
-  * **Freelancers** who need to scale output without scaling headcount
+Raycast's Windows experience is current and actively developed, but not every Store extension is automatically cross-platform. Its launcher core is free, while several AI, sync, dictation, and bring-your-own-model features require a paid plan. File indexing also consumes local resources, so exclusions matter on machines with large repositories or network volumes.
 
-  * **Consultants** drowning in proposals, research, and client deliverables
+Floatboat is not a drop-in replacement for Raycast's root search, clipboard workflow, or mature extension catalog. Its value appears on longer work with files and deliverables; using a full workspace for every calculator query or app launch adds unnecessary weight. Local-first also must not be read as a promise that selected cloud models and connectors never receive data.
 
-  * **Creators** juggling content across platforms
+Neither product eliminates the need to review permissions. MCP, extensions, browser automation, local folders, and SaaS connectors all enlarge what an AI system can read or change. Start narrow, test failure behavior, and expand access only after the workflow earns trust.
 
-  * **Anyone** who's tired of paying for AI tools that don't actually deliver results
+## The answer is no longer “find a Raycast replacement”
 
-If you've been searching for "Raycast for Windows," what you're really looking for is a way to work faster, smarter, and more autonomously on your PC. Floatboat doesn't just fill that gap — it redefines what a productivity tool should be in the AI era.
+If you searched for Raycast on Windows because you want Raycast, the official app is now the direct answer. It offers the launcher, file search, clipboard, snippets, extensions, Notes, and a much more capable AI layer than the original beta.
 
-* * *
+Choose Floatboat for a different reason: you need a persistent environment where agents work from real project material, produce editable artifacts, and remain inside a reviewable project history. Choose Raycast for command-speed access. Use both when those jobs are genuinely separate.
 
-## Ready to Set Sail?
-
-Floatboat is free to download. No credit card required to start.
-
-👉 **[Download Floatboat for Windows (and Mac)](https://floatboat.ai/download)**
-
-Stop searching for a Raycast clone. Start working with an AI teammate that actually learns your business.
-
-* * *
-
-_Floatboat is built by AOE Tech Labs for one-person companies in the AI era. Available on Windows 10+ and macOS 13+._
-
+The most honest comparison is not “old launcher versus futuristic Agent.” In 2026, both products use AI and tools. The deciding factor is what you want to preserve: **a fast command path, or a durable body of work.**

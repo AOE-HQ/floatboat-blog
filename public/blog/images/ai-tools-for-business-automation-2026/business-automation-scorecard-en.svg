@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Business automation tool scorecard</title><desc id="desc">Seven comparable dimensions surround one fixed workflow pilot: task fit, cost unit, permissions and data, integration quality, observability and recovery, evaluation, and exit.</desc>
+  <rect width="1200" height="720" rx="32" fill="#0b1020"/>
+  <text x="70" y="78" fill="#f8fafc" font-family="Arial, sans-serif" font-size="34" font-weight="700">Compare tools on one workflow</text>
+  <text x="70" y="118" fill="#94a3b8" font-family="Arial, sans-serif" font-size="19">Same inputs · same permissions · same acceptance rules</text>
+  <rect x="420" y="175" width="360" height="110" rx="28" fill="#172554" stroke="#60a5fa" stroke-width="3"/>
+  <text x="600" y="220" text-anchor="middle" fill="#dbeafe" font-family="Arial, sans-serif" font-size="25" font-weight="700">Fixed workflow pilot</text>
+  <text x="600" y="255" text-anchor="middle" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="17">normal + failure cases</text>
+  <g font-family="Arial, sans-serif" font-size="19" font-weight="700">
+    <g><rect x="80" y="335" width="300" height="76" rx="17" fill="#134e4a"/><text x="105" y="382" fill="#ccfbf1">1 · Task fit</text></g>
+    <g><rect x="450" y="335" width="300" height="76" rx="17" fill="#3f3f46"/><text x="475" y="382" fill="#f4f4f5">2 · Cost unit</text></g>
+    <g><rect x="820" y="335" width="300" height="76" rx="17" fill="#3f3f46"/><text x="845" y="382" fill="#f4f4f5">3 · Permissions &amp; data</text></g>
+    <g><rect x="80" y="450" width="300" height="76" rx="17" fill="#3f3f46"/><text x="105" y="497" fill="#f4f4f5">4 · Integration quality</text></g>
+    <g><rect x="450" y="450" width="300" height="76" rx="17" fill="#3f3f46"/><text x="475" y="485" fill="#f4f4f5">5 · Observability</text><text x="475" y="508" fill="#d4d4d8" font-size="16">and recovery</text></g>
+    <g><rect x="820" y="450" width="300" height="76" rx="17" fill="#3f3f46"/><text x="845" y="497" fill="#f4f4f5">6 · Evaluation</text></g>
+    <g><rect x="450" y="565" width="300" height="76" rx="17" fill="#4c1d95"/><text x="475" y="612" fill="#ede9fe">7 · Exit capability</text></g>
+  </g>
+  <text x="70" y="680" fill="#94a3b8" font-family="Arial, sans-serif" font-size="17">Score 0–3 with evidence. Calculate cost per accepted outcome, not per subscription.</text>
+</svg>

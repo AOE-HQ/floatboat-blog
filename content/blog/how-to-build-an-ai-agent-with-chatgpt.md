@@ -1,6 +1,6 @@
 ---
-title: "How to Build an AI Agent with ChatGPT"
-description: "How to build an ai agent with chatgpt works best when the workflow, files, permissions, and review steps are clearly defined."
+title: "How to Build an AI Agent with ChatGPT in 2026"
+description: "Build a reusable agent workflow in ChatGPT without an API: choose the right ChatGPT surface, define instructions, knowledge, apps, permissions, tests, and rollout."
 slug: "how-to-build-an-ai-agent-with-chatgpt"
 date: "2026-05-19"
 author: "Nova"
@@ -10,94 +10,162 @@ locale: "en"
 draft: false
 ---
 
-Long time no see, I'm Nova. Last Tuesday I spent about an hour turning a messy content research workflow into something that runs mostly on its own inside ChatGPT. Not with code. Not with an API. Just the Custom GPT builder, a few uploaded files, and instructions I rewrote three times before they actually worked.
+You can build a useful **AI agent with ChatGPT** without opening an API playground or writing application code. But “build an agent” now has several possible meanings inside ChatGPT: save a repeatable set of instructions, package a workflow as a plugin, connect approved apps, or delegate a longer multi-step task in ChatGPT Work.
 
-I want to walk you through exactly how I did it — the setup, the files, the permissions, the testing — because **how to build an AI agent with ChatGPT** is one of those things that sounds more technical than it actually is, but also has more hidden steps than the typical tutorial lets on.
+The right path depends on what must persist and what the system may do. A research checklist needs reusable guidance. A document workflow may need reference files. A status-update agent may need permission to read Drive and Slack. A workflow that changes records needs an app with supported write actions, workspace approval, and a human-review policy.
 
-If you're running a small operation and want to hand off a repeatable task to ChatGPT without writing a single line of code, this is what I'd suggest trying first.
+This guide focuses on the no-code, in-product route. It does not cover building an agent into your own website or product.
 
-## Before You Start: What ChatGPT Can Handle
+## What “an AI agent in ChatGPT” means now
 
-Let's get something straight. [A Custom GPT](https://chatgpt.com/features/agent/) is not a fully autonomous agent that goes off and runs your business while you sleep. It's closer to a very well-briefed assistant who follows the same playbook every time — and that's actually more useful than it sounds.
+For a reusable workflow, OpenAI’s current direction is **plugins**. A plugin can combine:
 
-What it can do: follow instructions you define, reference files you upload, browse the web, run code for data analysis, and generate images. According to [OpenAI's official documentation on Custom GPTs](https://help.openai.com/en/articles/8554407-gpts-in-chatgpt), a GPT combines instructions, knowledge, and selected capabilities into a tailored experience. You configure it once, and every conversation starts with that context already loaded.
+- **skills**: instructions and supporting reference material that explain how to perform a task;
+- **apps**: connections that provide information or supported actions in another service.
 
-What it can't do — at least not in the Custom GPT format — is take actions on external websites, send emails on your behalf, or run background tasks. That's the territory of ChatGPT's newer ​**Agent Mode** ​, which is a separate feature entirely.
+OpenAI is transitioning legacy custom GPT workflows to plugins. If your workspace still has an existing custom GPT, treat its instructions and knowledge as migration inputs rather than starting a new personal GPT. Current official guidance says personal ChatGPT accounts cannot create new GPTs; managed workspace creation and sharing depend on plan, permissions, and admin settings.
 
-The sweet spot for Custom GPTs is **repeatable, well-defined tasks** where you'd otherwise paste the same instructions into a blank chat every time. If your task fits that description, keep reading.
+For longer one-off work rather than a reusable package, ChatGPT Work can complete multi-step tasks with the files, tools, browser, and apps authorized for that workspace. Availability and controls vary by plan, rollout, and workspace policy.
 
-![h2.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182686832-25e4900e-7dac-44b3-ad0e-7e887b384af6.webp)
+The practical choice is:
 
-## Step 1: Turn One Task into a Repeatable Workflow
+| Need | Best starting point |
+|---|---|
+| Repeat the same method with new inputs | A skill or plugin |
+| Reuse instructions plus connected services | A plugin with approved apps |
+| Complete a longer, changing assignment | ChatGPT Work task |
+| Put an assistant inside your own product | OpenAI API, outside this guide |
 
-This is the step most people skip, and it's the one that matters most.
+OpenAI’s current [Skills and Plugins guide](https://learn.chatgpt.com/docs/skills-and-plugins) explains this product boundary.
 
-Before you touch the GPT builder, write down the exact task you want to automate. Not "help with content" — that's too vague. More like: "Take a rough topic brief, research it using uploaded reference documents, and output a structured outline with H2s, key points, and suggested angles."
+## Before you build: check access and choose one task
 
-**The quality of your instructions determines the quality of your agent's output.** I've built maybe a dozen Custom GPTs at this point, and the ones that actually stuck in my workflow all started with a very specific job description.
+Plugin creation is not simply a universal button for every account. OpenAI’s [Build plugins guide](https://learn.chatgpt.com/docs/build-plugins) says the no-code creation flow applies when plugin creation, editing, the required permission, and Plugin Creator are enabled in your workspace. Apps must also be allowed and connected.
 
-Ask yourself: what does this task look like on a regular Tuesday? What inputs do I always provide? What output format do I always want? What mistakes do I keep correcting? Write those down. That's your agent's first draft of instructions.
+Before doing any design work, check:
 
-One thing I learned the hard way — don't try to make one GPT do five different jobs. I built a "research + writing + editing" GPT once. Turns out I overcomplicated this. Three separate GPTs, each with a narrow job, worked ten times better.
+1. Is Plugin Creator available in ChatGPT or ChatGPT Work?
+2. Do you have permission to create or edit plugins?
+3. Is the app you need allowed by the workspace?
+4. Does your account in that external service already have the required access?
+5. Are the actions you need read-only, write, or consequential?
 
-## Step 2: Add Instructions, Files, and Examples
+Then choose one narrow job. Good first workflows have a clear trigger, repeat frequently, use familiar inputs, produce a reviewable output, and remain useful even when a person approves the final action. Examples include turning a document into a decision brief, preparing a meeting pack, comparing two proposals against a checklist, or drafting a weekly status update from approved sources.
 
-Open ChatGPT, go to **Explore GPTs** in the sidebar, and click ​**Create** ​. You'll see two tabs: Create (conversational) and Configure (manual). I always use Configure — it's faster and you get more control.
+Avoid “manage my business” or “be my marketing agent.” They hide multiple jobs, conflicting success criteria, and excessive permissions.
 
-**Instructions** are the core. This is where you tell your GPT what it does, how it should respond, and what to avoid. [OpenAI's guidelines for writing GPT instructions](https://help.openai.com/en/articles/9358033-key-guidelines-for-writing-instructions-for-custom-gpts) recommend using explicit step structures for multi-step workflows — something like "When X happens → do Y" — and separating sections with clear headings.
+## Step 1: write the task contract
 
-I'd add one thing from my own experience: ​**include 2–3 examples of good output directly in the instructions** ​. I paste in a sample input and the exact output I'd want, and the difference is night and day.
+Before opening Plugin Creator, write a compact contract:
 
-**Knowledge files** are your GPT's reference library. You can upload up to 20 files, each up to 512 MB — style guides, product docs, past work samples, data sheets. One rule: put behavioral instructions in the Instructions field, not in knowledge files. I buried a formatting rule inside a PDF once, and the GPT ignored it half the time.
+- **Purpose:** the job and the user it serves.
+- **Trigger:** what the user provides or asks.
+- **Inputs:** files, fields, apps, date range, and required context.
+- **Process:** mandatory checks and order of operations.
+- **Output:** format, audience, length, and quality standard.
+- **Boundaries:** prohibited actions and sources.
+- **Escalation:** when to ask a question, mark uncertainty, or stop.
+- **Review:** which result or action needs approval.
 
-**Capabilities** are the built-in tools you can toggle on: web browsing, code interpreter, and image generation. Turn on only what the task actually needs. Leaving unnecessary tools on can sometimes confuse the model.
+A usable brief might say:
 
-Oh, one detail that's easy to miss. As of early 2026, OpenAI has [retired several older models](https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes) including GPT-4o and various GPT-5.1 variants. If you're building a new GPT today, you're on GPT-5.2 or newer. Worth checking, because behavior varies between model generations.
+> Prepare a weekly project update from the project plan and messages in the approved Slack channel. Report completed work, decisions, risks, blockers, and next actions. Cite the source for each decision. Do not send messages or edit source files. If dates conflict, list the conflict for review.
 
-![h3.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182695411-06adc34b-a391-4bb3-8c16-ec27fe74e9e3.webp)
+This is more valuable than telling ChatGPT to “act as an autonomous project manager.”
 
-## Step 3: Define Permissions and Review Points
+## Step 2: create the reusable workflow
 
-Before you share your GPT — or start relying on it yourself — decide what it should and shouldn't be allowed to do.
+When Plugin Creator is available:
 
-**Who can use it.** You can keep it private, share via link, or publish to the GPT Store. For team use, Business and Enterprise plans let you share within your workspace with admin controls.
+1. Start a conversation in Chat or Work.
+2. Type `@`, select **Plugin Creator**, and describe the task contract.
+3. Add a template, good example, checklist, or reference file.
+4. Answer questions and refine the instructions.
+5. Review the name, description, instructions, and resources before finishing.
 
-**What data it can access.** Your GPT only sees the files you upload and whatever the user shares in conversation. If you're connecting to external APIs through Actions, that's a different layer — read [OpenAI's guide on configuring actions](https://help.openai.com/en/articles/9442513-configuring-actions-in-gpts) before touching it.
+New workspace plugins begin private according to the official build guide, which makes private testing the right default. Keep the first version focused on one workflow. A clear name and description help both people and ChatGPT recognize when it applies.
 
-**Where you want human review.** I set a personal rule: for any GPT that produces client-facing output, I review before sending. The GPT drafts, I approve. For internal tasks like organizing notes — I let it run more freely. But I still spot-check weekly.
+If Plugin Creator is absent, do not invent an account workaround. Availability may depend on plan, rollout, workspace role, and admin policy. You can still test the task contract in an ordinary chat, use an available installed plugin, or ask the workspace administrator about access.
 
-I haven't tested this myself yet, but it's worth noting: OpenAI introduced **Workspace Agents** in April 2026 for Business and Enterprise plans. These are an evolution of Custom GPTs that can run in the cloud and work in Slack. Custom GPTs for individual users aren't going away, but if you're evaluating this for a team, that's clearly where **building agentic AI** is heading.
+## Step 3: separate instructions from knowledge
 
-## Step 4: Test with Real Edge Cases
+Instructions explain **how to work**. Reference material provides **facts, examples, and formats**.
 
-This is where I see the biggest gap between "I built a GPT" and "I built a GPT that actually works."
+Put stable operating rules in the workflow: required steps, output sections, refusal boundaries, and how to handle missing information. Use supporting files for a template, glossary, approved policy, or examples of good results. Do not bury a critical rule only inside a long reference document.
 
-Most people test with their ideal input — clean, well-structured, best-case. That tells you almost nothing. What you need to test:
+Good reference material is current, small enough to review, clearly named, and owned by someone. Add an update date when facts can expire. If two sources conflict, tell the workflow which one wins—or require it to surface the conflict.
 
-**Incomplete inputs.** What happens when you give it half the information? Does it ask for clarification, or make something up? A well-instructed GPT should ask. If it doesn't, add a line: "If the user doesn't provide [X], ask before proceeding."
+## Step 4: add apps only when the task needs them
 
-**Conflicting instructions.** Give it a prompt that contradicts your instructions. See which one wins. This happens more than you'd think.
+Apps supply external information or supported actions. Adding an app does not grant new access: workspace availability, role access, the connected account, scopes, and source-system permissions still apply. OpenAI’s [ChatGPT Work security overview](https://learn.chatgpt.com/docs/enterprise/chatgpt-work-cloud-security) documents those layers.
 
-**Long documents.** I ran a GPT on a 40-page research doc. It got through about half before things got vague. Good to know the boundary exists before a real project depends on it.
+For each app, record:
 
-**Consistency.** Run the same prompt three times. If outputs vary wildly, your instructions aren't specific enough. Tighten them. Add examples.
+- why the workflow needs it;
+- what it may read;
+- what it may create, edit, or send;
+- which identity the connection uses;
+- which actions require confirmation;
+- what the workflow should do when access fails.
 
-I rewrote my content research GPT's instructions twice based on testing alone. That loop — prompt, check, revise, repeat — is the actual work of ​**how to build AI agents** ​. The builder is just the interface.
+Start read-only. Add write actions individually after the read workflow passes its tests. Use the narrowest account and scopes that can perform the task. A plugin cannot safely compensate for an overprivileged connected account.
 
-![h4.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182704348-40232f7e-f1b8-45ac-9596-f19cd79d05cf.webp)
+## Step 5: design approvals and stop conditions
 
-## When to Move Beyond ChatGPT
+An agent is safer when “stop” is an intentional outcome. Require confirmation before external communication, publishing, record deletion, financial or legal commitments, permission changes, or other consequential actions.
 
-Custom GPTs cover a surprising amount of ground before you need to level up. But there's a ceiling.
+Define stop conditions for missing required data, conflicting sources, unavailable tools, ambiguous recipients, unexpected record counts, or results outside a budget or date range. The workflow should return what it found, what is missing, and the smallest question needed to continue.
 
-You'll probably outgrow them when you need real-world actions — sending emails, updating spreadsheets, posting to Slack — without manually approving each step. That's where Agent Mode comes in, available on Plus ($20/month), Pro, and Team plans. I checked the current pricing on [ChatGPT's official pricing page](https://chatgpt.com/pricing/) — Plus has been $20/month since launch, which still feels fair for what you get.
+Do not rely on polite instruction alone for high-impact boundaries. Use workspace action controls, app permissions, least-privilege accounts, and human approval where supported.
 
-Custom GPTs also don't maintain memory across sessions. Each conversation starts fresh. If persistent memory matters for your workflow, that's another reason to look at Agent Mode or the Assistants API. And once you step past those workarounds into building your own, [what building a complete agent actually involves](/blog/how-to-build-an-ai-agent) changes shape: state, error handling, and maintenance stop being someone else's problem.
+## Step 6: test with an evaluation set
 
-The rule I use: if I'm spending more time working around a GPT's limitations than it's saving me, it's time to move to the next tool.
+Previewing one ideal input is not testing. Prepare a small, versioned set that includes:
 
-![h5.png](/blog/images/how-to-build-an-ai-agent-with-chatgpt/1779182712841-9be02d1a-d970-494d-8b6e-254c5c7c2b8f.webp)
+- normal cases with known good outputs;
+- incomplete and ambiguous inputs;
+- conflicting or stale references;
+- inaccessible files or disconnected apps;
+- content that tries to override the workflow instructions;
+- cases that require refusal, escalation, or approval;
+- maximum realistic input size and peak workload.
 
-That's my honest take on how to build an AI agent with ChatGPT. It's less about the builder and more about being clear on the task, writing good instructions, and testing with real edge cases. The tooling is genuinely accessible — you don't need to code, you just need to think carefully about what you're delegating.
+Score the complete result: required facts present, unsupported claims, format compliance, correct source use, tool/action correctness, appropriate escalation, human edit time, and end-to-end latency. For write workflows, verify that a failed retry cannot create duplicate changes and that recovery is documented.
 
-I'll probably keep refining my own setup as the tools evolve. That part never really ends.
+After every instruction, model, app, permission, or source change, rerun the evaluation set. A workflow is not “done” because it worked once.
+
+## Step 7: choose how to share and publish
+
+Keep the workflow private while testing. Before workspace sharing, document its owner, intended audience, required apps, data classification, known limitations, test result, support path, and review date.
+
+Sharing and publishing depend on workspace settings and permissions. Users still need access to the underlying apps and source data. Publishing a plugin does not grant those permissions automatically.
+
+For a team rollout:
+
+1. pilot with a small group;
+2. observe failures and unnecessary permissions;
+3. update instructions and tests;
+4. confirm app and role access;
+5. publish to the intended audience;
+6. review after meaningful source, tool, or policy changes.
+
+## What this approach can and cannot do
+
+This route is strong for repeatable knowledge work: research briefs, document comparison, meeting preparation, structured drafting, triage, and supported actions through approved apps. It gives non-developers a practical way to package a method instead of repasting a long prompt.
+
+It is not the right route for embedding an agent in a customer product, implementing arbitrary backend logic, bypassing workspace controls, or guaranteeing unattended execution of high-consequence work. If you need a custom application, use the API and an engineering lifecycle. If you need a persistent multi-step assignment with broader execution, evaluate ChatGPT Work rather than pretending a reusable instruction package is an always-running employee.
+
+For a platform-neutral build process, see [how to build an AI agent](/blog/how-to-build-an-ai-agent). To decide whether a deterministic flow is enough, compare [AI agents and chatbots](/blog/ai-agent-vs-chatbot).
+
+## A final launch checklist
+
+- One task, trigger, finish state, and owner are defined.
+- Instructions, reference files, and app responsibilities are separated.
+- Data sources are approved and current.
+- Read and write permissions follow least privilege.
+- Consequential actions require the right review.
+- Normal, failure, adversarial, and escalation cases pass.
+- Users know the limitations and support path.
+- An owner can update, disable, export, or replace the workflow.
+
+That is the practical meaning of building an AI agent with ChatGPT today: not creating a magical autonomous worker, but packaging a bounded method with the context, tools, permissions, tests, and ownership needed to use it repeatedly.

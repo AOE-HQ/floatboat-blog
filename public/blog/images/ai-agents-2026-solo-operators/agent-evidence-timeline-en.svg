@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence timeline for AI agents</title><desc id="desc">Five dated milestones from computer use and MCP to foundation governance, security standards work, and measured AI adoption.</desc>
+  <rect width="1200" height="720" rx="32" fill="#0b1020"/>
+  <text x="70" y="82" fill="#f8fafc" font-family="Arial, sans-serif" font-size="34" font-weight="700">AI agents: evidence, not a hype curve</text>
+  <text x="70" y="122" fill="#94a3b8" font-family="Arial, sans-serif" font-size="19">Product capability, infrastructure, governance, and adoption are different signals</text>
+  <line x1="120" y1="350" x2="1080" y2="350" stroke="#475569" stroke-width="6"/>
+  <g font-family="Arial, sans-serif">
+    <g><circle cx="150" cy="350" r="18" fill="#22d3ee"/><text x="100" y="300" fill="#67e8f9" font-size="18" font-weight="700">Oct 22, 2024</text><text x="85" y="398" fill="#f8fafc" font-size="20" font-weight="700">Computer use beta</text><text x="85" y="426" fill="#94a3b8" font-size="16">Models act through UI</text></g>
+    <g><circle cx="365" cy="350" r="18" fill="#2dd4bf"/><text x="305" y="300" fill="#5eead4" font-size="18" font-weight="700">Nov 25, 2024</text><text x="315" y="398" fill="#f8fafc" font-size="20" font-weight="700">MCP released</text><text x="290" y="426" fill="#94a3b8" font-size="16">Open tool/data protocol</text></g>
+    <g><circle cx="590" cy="350" r="18" fill="#a78bfa"/><text x="525" y="300" fill="#c4b5fd" font-size="18" font-weight="700">Dec 9, 2025</text><text x="510" y="398" fill="#f8fafc" font-size="20" font-weight="700">AAIF launched</text><text x="475" y="426" fill="#94a3b8" font-size="16">Neutral foundation governance</text></g>
+    <g><circle cx="815" cy="350" r="18" fill="#fb7185"/><text x="750" y="300" fill="#fda4af" font-size="18" font-weight="700">Jan–May 2026</text><text x="745" y="398" fill="#f8fafc" font-size="20" font-weight="700">NIST agent security</text><text x="740" y="426" fill="#94a3b8" font-size="16">Identity and authority matter</text></g>
+    <g><circle cx="1040" cy="350" r="18" fill="#fbbf24"/><text x="978" y="300" fill="#fde68a" font-size="18" font-weight="700">Apr 3, 2026</text><text x="953" y="398" fill="#f8fafc" font-size="20" font-weight="700">Fed adoption note</text><text x="930" y="426" fill="#94a3b8" font-size="16">AI use ≠ agent deployment</text></g>
+  </g>
+  <rect x="120" y="525" width="960" height="105" rx="20" fill="#172554"/>
+  <text x="600" y="566" text-anchor="middle" fill="#dbeafe" font-family="Arial, sans-serif" font-size="23" font-weight="700">The supported conclusion</text>
+  <text x="600" y="601" text-anchor="middle" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="18">Tool use is easier to build—and more important to constrain, observe, and evaluate.</text>
+</svg>

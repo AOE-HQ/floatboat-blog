@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent 构建工具七维评分框架</title>
+  <desc id="desc">围绕同一个可测量试点，依次评估任务适配、控制、数据权限、评测、可观测恢复、成本单位与退出能力。</desc>
+  <rect width="1200" height="720" rx="32" fill="#0b1020"/>
+  <text x="70" y="82" fill="#f8fafc" font-family="Arial, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">AI Agent 构建工具七维评分</text>
+  <text x="70" y="122" fill="#94a3b8" font-family="Arial, Microsoft YaHei, sans-serif" font-size="19">所有候选跑同一组生产型测试，再按证据给 0～4 分</text>
+  <circle cx="600" cy="398" r="116" fill="#172554" stroke="#60a5fa" stroke-width="3"/>
+  <text x="600" y="382" text-anchor="middle" fill="#dbeafe" font-family="Arial, Microsoft YaHei, sans-serif" font-size="27" font-weight="700">可测量试点</text>
+  <text x="600" y="418" text-anchor="middle" fill="#bfdbfe" font-family="Arial, Microsoft YaHei, sans-serif" font-size="17">固定输入 · 相同权限</text>
+  <text x="600" y="446" text-anchor="middle" fill="#bfdbfe" font-family="Arial, Microsoft YaHei, sans-serif" font-size="17">以验收结果为准</text>
+  <g font-family="Arial, Microsoft YaHei, sans-serif" font-size="19" font-weight="700" text-anchor="middle">
+    <g><rect x="470" y="160" width="260" height="76" rx="18" fill="#134e4a"/><text x="600" y="207" fill="#ccfbf1">1 · 任务适配</text></g>
+    <g><rect x="780" y="225" width="260" height="76" rx="18" fill="#3f3f46"/><text x="910" y="272" fill="#f4f4f5">2 · 控制能力</text></g>
+    <g><rect x="840" y="380" width="280" height="76" rx="18" fill="#3f3f46"/><text x="980" y="427" fill="#f4f4f5">3 · 数据与权限</text></g>
+    <g><rect x="710" y="545" width="260" height="76" rx="18" fill="#3f3f46"/><text x="840" y="592" fill="#f4f4f5">4 · 评测能力</text></g>
+    <g><rect x="230" y="545" width="320" height="76" rx="18" fill="#3f3f46"/><text x="390" y="592" fill="#f4f4f5">5 · 可观测性与恢复</text></g>
+    <g><rect x="80" y="380" width="260" height="76" rx="18" fill="#3f3f46"/><text x="210" y="427" fill="#f4f4f5">6 · 成本单位</text></g>
+    <g><rect x="160" y="225" width="260" height="76" rx="18" fill="#3f3f46"/><text x="290" y="272" fill="#f4f4f5">7 · 退出能力</text></g>
+  </g>
+  <g fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round">
+    <path d="M600 236V282"/><path d="M780 276L700 330"/><path d="M840 418H716"/><path d="M752 545L680 492"/><path d="M500 545L535 507"/><path d="M340 418H484"/><path d="M420 278L500 330"/>
+  </g>
+  <text x="70" y="675" fill="#94a3b8" font-family="Arial, Microsoft YaHei, sans-serif" font-size="17">测试前先定权重和一票否决项，不发布脱离场景的通用总分。</text>
+</svg>

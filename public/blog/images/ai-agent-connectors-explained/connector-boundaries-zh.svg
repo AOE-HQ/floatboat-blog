@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent Connector 的控制边界</title>
+  <desc id="desc">从用户意图经过 Host 策略、Connector 工具、身份和资源权限，再到审批与审计的工作流。</desc>
+  <rect width="1200" height="560" fill="#f7f0e5"/>
+  <text x="64" y="72" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" fill="#17131f">Connector 是一连串控制边界</text>
+  <text x="64" y="108" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#554e5d">登录成功只是从任务意图到真实动作之间的一道门。</text>
+  <g font-family="Microsoft YaHei, sans-serif">
+    <g transform="translate(64 165)"><rect width="180" height="112" rx="14" fill="#fff" stroke="#17131f" stroke-width="2"/><text x="90" y="43" text-anchor="middle" font-size="17" font-weight="700">用户意图</text><text x="90" y="72" text-anchor="middle" font-size="14" fill="#625a69">任务与限制</text></g>
+    <g transform="translate(287 165)"><rect width="180" height="112" rx="14" fill="#ede4ff" stroke="#6f43c0" stroke-width="3"/><text x="90" y="43" text-anchor="middle" font-size="17" font-weight="700">Host 策略</text><text x="90" y="72" text-anchor="middle" font-size="14" fill="#625a69">工具与审批</text></g>
+    <g transform="translate(510 165)"><rect width="180" height="112" rx="14" fill="#fff" stroke="#17131f" stroke-width="2"/><text x="90" y="43" text-anchor="middle" font-size="17" font-weight="700">Connector</text><text x="90" y="72" text-anchor="middle" font-size="14" fill="#625a69">结构与校验</text></g>
+    <g transform="translate(733 165)"><rect width="180" height="112" rx="14" fill="#fff" stroke="#17131f" stroke-width="2"/><text x="90" y="43" text-anchor="middle" font-size="17" font-weight="700">身份</text><text x="90" y="72" text-anchor="middle" font-size="14" fill="#625a69">OAuth 与角色</text></g>
+    <g transform="translate(956 165)"><rect width="180" height="112" rx="14" fill="#fff" stroke="#17131f" stroke-width="2"/><text x="90" y="43" text-anchor="middle" font-size="17" font-weight="700">资源</text><text x="90" y="72" text-anchor="middle" font-size="14" fill="#625a69">记录级权限</text></g>
+    <g fill="#6f43c0"><path d="M252 216h25v10h-25z"/><path d="m277 221-14-10v20z"/><path d="M475 216h25v10h-25z"/><path d="m500 221-14-10v20z"/><path d="M698 216h25v10h-25z"/><path d="m723 221-14-10v20z"/><path d="M921 216h25v10h-25z"/><path d="m946 221-14-10v20z"/></g>
+    <path d="M1046 295v72H377v-72" fill="none" stroke="#6f43c0" stroke-width="4" stroke-dasharray="9 8"/>
+    <g transform="translate(287 390)"><rect width="180" height="96" rx="14" fill="#ffd966" stroke="#17131f" stroke-width="2"/><text x="90" y="38" text-anchor="middle" font-size="17" font-weight="700">批准或拒绝</text><text x="90" y="66" text-anchor="middle" font-size="14">在动作产生后果之前</text></g>
+    <g transform="translate(733 390)"><rect width="180" height="96" rx="14" fill="#17131f"/><text x="90" y="38" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">审计</text><text x="90" y="66" text-anchor="middle" font-size="14" fill="#d9d2df">主体 · 目标 · 结果</text></g>
+    <path d="M477 438h246" stroke="#17131f" stroke-width="3"/><path d="m723 438-15-10v20z" fill="#17131f"/>
+  </g>
+</svg>

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { BlogShell } from "@openblog/components";
 
 import { site } from "@/config/site";
-import { getBlogIndexData } from "@/lib/posts";
+import { getAllPostMeta, getBlogIndexData } from "@/lib/posts";
 
 import { absoluteBlogIndexUrl, openGraphLocale } from "@/lib/locale-site";
 
@@ -16,9 +16,9 @@ const og = openGraphLocale("zh");
 const locale = "zh" as const;
 
 export const metadata: Metadata = {
-  title: "博客",
+  title: "AI Agent、模型与工作流博客",
   description:
-    "关于 AI 队友、自动化与高频协作的笔记。实践向内容：如何给 AI 明确角色、边界与可交付成果。",
+    "Floatboat 中文博客：深入解析 AI Agent、主流模型、Agent Workspace、自动化工作流、文件工具与一人公司实践。浏览完整文章库、对比指南和实操教程。",
   alternates: {
     canonical: absoluteBlogIndexUrl("zh"),
     languages: {
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `博客 | ${site.name}`,
+    title: `AI Agent、模型与工作流博客 | ${site.name}`,
     description:
-      "关于 AI 队友、自动化与高频协作的笔记。实践向内容：如何给 AI 明确角色、边界与可交付成果。",
+      "深入解析 AI Agent、主流模型、Agent Workspace、自动化工作流、文件工具与一人公司实践。",
     url: absoluteBlogIndexUrl("zh"),
     siteName: site.name,
     type: "website",
@@ -41,13 +41,16 @@ export const metadata: Metadata = {
 
 export default function ZhBlogIndexPage() {
   const data = getBlogIndexData(locale);
+  const libraryPosts = getAllPostMeta(locale).filter(
+    (post) => post.slug !== data.featured?.slug,
+  );
 
   return (
     <BlogShell className="py-8 lg:py-12">
       <BlogHero
         siteName={site.name}
-        title="日历驱动的 AI Agent 实战笔记"
-        description="关于 AI 队友、自动化与高频协作的笔记。实践向内容：如何给 AI 明确角色、边界与可交付成果。"
+        title="AI Agent、模型与工作流文章库"
+        description="从模型能力、Agent 架构到自动化工作流与生产力工具，浏览 Floatboat 的完整中文指南、对比和实践文章。"
         articleCount={data.articleCount}
         categories={data.categories}
         locale={locale}
@@ -60,9 +63,9 @@ export default function ZhBlogIndexPage() {
         </section>
       ) : null}
 
-      {data.latest.length > 0 ? (
+      {libraryPosts.length > 0 ? (
         <section className="mt-14 lg:mt-20" aria-label="浏览全部文章">
-          <TopicBrowser posts={data.latest} locale={locale} localePrefix="/zh" />
+          <TopicBrowser posts={libraryPosts} locale={locale} localePrefix="/zh" />
         </section>
       ) : null}
 

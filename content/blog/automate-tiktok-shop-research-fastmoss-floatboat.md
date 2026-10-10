@@ -37,7 +37,7 @@ The FloatSchedule starts the assignment itself:
 
 Floatboat restores the project, opens the authorized FastMoss session in its built-in browser, and gets to work.
 
-This is what happens when [FastMoss](https://www.fastmoss.com/) becomes the vertical intelligence layer inside [Floatboat](</ai-agent-workspace>), an Agent operating environment built to work across browsers, files, models, connected services, and time.
+This is what happens when [FastMoss](https://www.fastmoss.com/) becomes the vertical intelligence layer inside [Floatboat](/ai-agent-workspace), an Agent operating environment built to work across browsers, files, models, connected services, and time.
 
 ## 08:00 — The calendar starts the work
 
@@ -248,7 +248,7 @@ The live evidence in this article was captured from FastMoss on August 4–5, 20
 
   * [FastMoss MCP](https://developer.fastmoss.com/mcp/overview.html)
 
-  * [Floatboat Agent Workspace](</ai-agent-workspace>)
+  * [Floatboat Agent Workspace](/ai-agent-workspace)
 
   * [Calendar-Driven AI](/blog/what-if-your-calendar-could-run-itself)
 

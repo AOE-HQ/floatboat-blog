@@ -1,6 +1,6 @@
 ---
-title: "HTML-Anything Review 2026"
-description: "html-anything review for 2026: what this open-source AI HTML editor proves, where it helps, and where the setup may be too much."
+title: "HTML Anything Review 2026: Capabilities, Costs, and Risks"
+description: "An evidence-based HTML Anything review covering setup, supported coding agents, templates, exports, real costs, security boundaries, alternatives, and who should use it."
 slug: "html-anything-review-2026"
 date: "2026-05-20"
 author: "Nova"
@@ -10,82 +10,153 @@ locale: "en"
 draft: false
 ---
 
-Hi, Nova is here. So the whole "HTML is the new Markdown" debate hits, everyone's talking about richer agent output, and then — about a week later — a tool shows up that basically says: okay, here's the infrastructure to actually do that. Not just talk about it. Do it.
+HTML Anything is an open-source, local web application that turns source material into designed HTML through a coding-agent CLI already installed on your computer. It combines 75 skill templates, a streaming preview, and exports for HTML, PNG, WeChat, X, and Zhihu. The repository is active, Apache-2.0 licensed, and currently documents nine supported agent CLIs.
 
-That tool is html-anything. And this is my honest html-anything review after spending time with the repo, the docs, and the template library — though I want to be upfront that I haven't done a full local install myself. More on why below.
+The short review: **it is compelling for people who already run coding agents locally and repeatedly produce visual deliverables. It is not a zero-setup design app, not a hosted SaaS with support guarantees, and not automatically private just because the orchestration runs on your machine.**
 
-## What Html-Anything Is Trying to Prove
+## Current product status
 
-The pitch is short: ​**your local AI agent writes the ​HTML** ​, you ship it.
+HTML Anything remains publicly available in the [`nexu-io/html-anything` repository](https://github.com/nexu-io/html-anything). The official quickstart still requires cloning the repository, installing dependencies with `pnpm`, starting the Next.js app, and opening `localhost:3000`. An official first-party desktop installer is not documented as generally available; the project has tracked desktop-client work, while a Windows installer discussed in the issue tracker is a community build.
 
-html-anything is an open-source project from the [nexu-io team on GitHub](https://github.com/nexu-io/html-anything) — the same people behind Open Design, which pulled in tens of thousands of stars within weeks of launch. It's licensed under Apache-2.0, built in roughly three days with about 15,000 lines of code, and released in May 2026.
+There is no HTML Anything subscription price. The source is Apache-2.0. But “free” only describes the editor code. You still pay for or consume the allowance of the coding agent it invokes, plus any local or hosted infrastructure and your review time.
 
-The thesis behind it connects directly to what Thariq Shihipar argued in his [companion site on the unreasonable effectiveness of HTML](https://thariqs.github.io/html-effectiveness/): if your AI agent can produce rich, visual, interactive HTML instead of flat Markdown, the output becomes something people actually engage with. html-anything takes that argument and wraps a production workflow around it. The broader question underneath — [whether your AI output should be HTML or Markdown](/blog/html-vs-markdown-ai-output) — doesn't have a universal answer, and where you land on it decides whether infrastructure like this is essential or premature.
+| Cost layer | What to expect |
+|---|---|
+| HTML Anything | No license fee for the open-source repository |
+| Coding agent | Your existing Claude Code, Codex, Cursor, Gemini CLI, Copilot, OpenCode, Qwen, Aider, or IBM Bob plan/API usage |
+| Hosting | Local machine by default; optional web-layer hosting has its own cost |
+| Rendering | Browser resources locally; video handoff may add Remotion/rendering work |
+| Operations | Updates, dependency fixes, backups, security review, and output QA are yours |
 
-Here's how I think about what it's trying to prove: the "agentic HTML editor" concept — agent does the writing, human does the reviewing and shipping — shouldn't require you to stitch together five different tools. One interface, templates included, export built in. That's the bet.
+Calling it “zero API key” is technically narrower than “free AI.” HTML Anything reuses an authenticated CLI session instead of asking you to paste another key into the app.
 
-Okay, this is kind of interesting. Let me dig into how it actually works.
+## What the product actually does
 
-![2.PNG](/blog/images/html-anything-review-2026/1779257398214-9c46c2c6-4145-4be9-a479-0ab97da685ff.webp)
+The official architecture has four useful layers.
 
-## How It Turns the HTML Debate Into a Tool
+### Agent detection and generation
 
-### Local agent CLIs, skills, templates, preview, export
+At startup, the server scans `PATH` and recognizes nine CLIs: Claude Code, OpenAI Codex, Cursor Agent, Gemini CLI, GitHub Copilot CLI, OpenCode, Qwen Coder, Aider, and IBM Bob. Each has an adapter that launches a subprocess and parses streamed output.
 
-The architecture is local-first, which is the detail that actually matters for people who care about where their data goes. html-anything doesn't run your prompts through a cloud service of its own. Instead, it **auto-detects whatever coding-agent ​CLI** ​**​ you already have logged in on your machine** — Claude Code, Cursor Agent, Codex, Gemini CLI, Copilot CLI, OpenCode, Qwen Coder, or Aider. Eight CLIs, as of this writing. It scans your PATH, finds the session, and reuses it. No second API key required.
+This is convenient but consequential. Some documented invocation flags allow broad tool use or skip confirmations. The effective permissions depend on the chosen agent, its configuration, the process working directory, and your operating-system account. Treat agent selection as a security decision, not just a model picker.
 
-That's where the "zero API key AI tool" label comes from, and it's accurate — but with a caveat I'll get to in the FAQ.
+### Seventy-five skills across nine surfaces
 
-The template system is where the tool gets opinionated. ​**75 Skill templates across 9 deliverable surfaces** ​: magazine articles, keynote decks, posters, resumes, Xiaohongshu cards, tweet cards, web prototypes, data reports, and Hyperframes videos. Each skill follows the [Claude Code ](https://docs.anthropic.com/en/docs/claude-code/skills)[SKILL.md](http://SKILL.md)[ convention](https://docs.anthropic.com/en/docs/claude-code/skills) with extended frontmatter for mode, scenario, surface, and design system.
+The templates cover magazine pages, decks, résumés, posters, social cards, web prototypes, data reports, office documents, and Hyperframes video scripts. Each skill is a folder containing `SKILL.md`, an example, and optional assets or references. Hard constraints specify grid, typography, contrast, focus states, and use of real data.
 
-Preview happens in a sandboxed iframe with SSE streaming — you see the output build in real time as the agent generates it. Export targets include WeChat (with inline CSS), X, Zhihu, standalone HTML, and PNG. The WeChat export is a small thing that signals who this team is building for — cross-platform content creators who need to publish across very different distribution channels.
+This template layer is the product's strongest differentiator. A direct “make this HTML” prompt can produce a page once. A versioned skill can make the same class of report or card repeatedly and can be reviewed like source material.
 
-I haven't tested every export path myself. I can speak to what the documentation shows and what the repo structure confirms. The template library is genuinely extensive — I clicked through a good chunk of the skills and they're real, not placeholder files.
+### Streaming preview
 
-![3.PNG](/blog/images/html-anything-review-2026/1779257413581-d6224eaf-7338-4f72-acb9-884c7a933e98.webp)
+The agent's JSON-line output is converted to server-sent events and appended into an iframe preview. The repository describes the iframe as sandboxed with `allow-scripts allow-same-origin`; generated HTML can use scripts and external design resources while storage is separated from the host app.
 
-## What Works Well for Solo Operators
+Sandboxing reduces risk, but generated HTML remains executable code. An open issue has specifically discussed unsanitized HTML injection. Do not assume a preview is safe enough to open arbitrary untrusted HTML, and do not publish generated scripts without inspection.
 
-### Reports, decks, social cards, prototypes, reusable artifacts
+### Export
 
-If you're running a one-person operation and you already have Claude Code or another agent CLI set up, here's where I think html-anything earns its place:
+The documented paths include standalone `.html`, `.png`, WeChat with inlined CSS, and copy/export flows for X, Weibo, Xiaohongshu, and Zhihu. Deck mode includes PDF export. Hyperframes produces frame scripts intended for handoff to Remotion; it is not the same thing as a one-click, managed video-rendering service.
 
-**Reusable templates for recurring output.** This is the thing that separates it from just asking an agent for HTML in a one-off prompt. If you produce a weekly data report, or you regularly make social cards for content distribution, or you need consistent-looking slide decks — having 75 pre-built skills means you're not re-prompting from scratch every time. The design system layer gives output visual consistency without you manually styling anything.
+![HTML Anything interface showing deck preview and task history](/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.webp)
 
-**Multi-surface export in one tool.** Taking the same content and pushing it to WeChat, X, and a standalone HTML file from a single workspace — that removes real friction. I've seen people do this with three different tools and a lot of copy-pasting. Having it in one place is a quiet win.
+## What “local-first” does and does not mean
 
-**Local-first means your data stays put.** For solo operators working with client material or proprietary research, this matters more than most tool reviews acknowledge. Your prompts and outputs don't pass through a third-party server. They go through whatever agent CLI you've already authenticated with. That's it.
+HTML Anything's application and source files can run locally. Tabular parsing is documented as happening in the browser, and the agent process stays on the user's laptop even when the web layer is deployed. That reduces the need to send content through an additional HTML Anything service.
 
-Oh, and the Hyperframes feature — which converts HTML to MP4 via [Remotion's rendering framework](https://www.remotion.dev/docs/) — is worth knowing about. It's an extra rendering pipeline, and I haven't tried it, but the concept of turning a styled HTML artifact into a video clip without leaving the workflow is the kind of thing that makes you go: wait, it does that too?
+It does **not** mean the selected AI model runs locally. Claude Code, Codex, Cursor, Gemini CLI, and similar tools may transmit prompts and files to their respective providers according to each account, plan, and configuration. A local CLI is a local client, not proof of local inference.
 
-![4.png](/blog/images/html-anything-review-2026/1779257425395-df0bf7d0-87d1-4f0b-9435-38cfe7894835.webp)
+Before using client material, verify:
 
-## Where Html-Anything May Be Too Technical
+- which files the agent can read and write;
+- whether the agent sends context to a cloud model;
+- the provider's retention and training terms for that account;
+- whether external fonts, scripts, or images load in preview or export;
+- whether generated HTML contains analytics, remote dependencies, or secrets;
+- where exported artifacts and task history are stored.
 
-### CLI dependency, template fit, setup friction, review needs
+For a broader treatment, see [whether AI file tools upload your files](/blog/do-ai-file-organizers-upload-your-files) and the distinction between [local-first and cloud agent workspaces](/blog/local-first-vs-cloud-agent-workspace).
 
-Here's where I want to be direct, because I think this is the most important section for non-developer solo operators.
+## Three workflows where it earns the setup
 
-​**The hard prerequisite is a logged-in coding-agent ​CLI** ​. If you don't already have Claude Code, Codex, or one of the other eight supported CLIs installed and authenticated on your machine, html-anything doesn't work. There's no browser-only version. No "sign up and go." This is a local-first AI editor that assumes you're already in the terminal. For content creators and solo entrepreneurs who aren't developers, this is a real barrier — not a minor one.
+### A recurring client report
 
-​**Template fit ​isn** ​'t guaranteed. 75 skills is a lot, but if your specific deliverable doesn't match one of the nine surfaces, you're either customizing a template or prompting from scratch. I could see this working beautifully for someone who produces magazine-style articles and Xiaohongshu cards regularly. I could also see someone whose output is mostly long-form documentation finding the template library less useful.
+Input a reviewed CSV and a short narrative brief. Use a data-report skill with locked brand colors and required chart labels. Generate, verify totals against the source, check mobile and print layouts, then export HTML or PNG.
 
-**Output​ needs human review.** This one applies to every AI-generation tool, but it's worth saying clearly: html-anything produces a first draft. The preview is live and the templates are polished, but you still need to read the output, check facts, and adjust before publishing. The tool doesn't remove that step.
+The gain is not “AI made a report.” It is that next week's report can reuse the same constraints. The template should be stored with the client workflow, not rediscovered in chat history.
 
-**Community and support are still early.** The Discord exists but it's run by the upstream Open Design team, and for a project released in May 2026, the issue tracker and community conversations are still finding their shape. If you hit a problem, you might be filing the first issue about it.
+### A multi-channel content package
 
-**Hyperframes adds a layer.** The HTML-to-MP4 path via Remotion requires an extra rendering chain. It's not broken — it's just another dependency to manage, and for someone who was hoping for a simple tool, it might feel like one thing too many.
+Start from one approved article. Generate a magazine page, a Xiaohongshu card set, and a platform-safe image export. Verify that claims, links, cropping, and typography survive each target. Publish manually unless a separate approved workflow handles account access.
 
-I'm probably not using this to its full potential — I haven't run a full end-to-end session. But I've read enough of the repo and docs to know where the friction points are, and I'd rather say that out loud than pretend I've tested every edge.
+HTML Anything is a renderer and editor here; it does not verify the source article or own the publishing approval.
 
-## Should You Try It Now or Just Watch?
+### A disposable product prototype
 
-Here's my honest take. If you already have a coding-agent CLI installed and you regularly produce visual content across multiple platforms, html-anything is worth trying today. The template library is real, the export pipeline covers platforms most tools ignore, and the local-first architecture solves a trust problem that matters.
+Use a prototype skill to create a one-page dashboard or landing-page concept. Replace placeholder text with real constraints, test keyboard focus and responsive behavior, then hand the result to a production workflow.
 
-If you're not a CLI person — if your workflow lives in [Claude's Artifacts panel](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) or ChatGPT Canvas — html-anything isn't replacing those tools for you right now. Those are faster for one-off tasks. html-anything is for when you need **repeatable, multi-surface, visually consistent output** from an agent you already trust.
+Generated standalone HTML is useful for discussion. It is not automatically maintainable production code, accessible across assistive technologies, secure against hostile input, or connected to a real backend.
 
-If the answer isn't obvious yet, wait. The project is moving fast, and what's available in three months may look different. Bookmark the [repo](https://github.com/nexu-io/html-anything), check back when you're ready.
+## Where the review is less favorable
 
-![5.png](/blog/images/html-anything-review-2026/1779257436300-02f9e044-9c32-4fdb-b4ad-d79bc05539a7.webp)
+### Setup is developer-shaped
 
-That's my honest take. The tool is early, the concept is solid, and the question is whether it fits into your workflow — not whether the idea behind it matters. It does. Back to building things.
+The supported route requires Git, Node/pnpm, a terminal, and an authenticated coding-agent CLI. PATH discovery and provider login are common failure points. A nontechnical user seeking a browser signup and managed support will find this substantially heavier than Claude Artifacts, ChatGPT Canvas, or a conventional visual editor.
+
+### Templates are opinionated
+
+Seventy-five templates sound broad, but fit matters more than count. Strong defaults accelerate familiar deliverables and constrain unusual ones. Teams with an established design system should expect to build or edit skills rather than treating bundled examples as brand-ready.
+
+### Export is not deployment
+
+An HTML download or copied social card does not supply domains, analytics governance, forms, authentication, CMS workflows, accessibility certification, or ongoing hosting. If the real job is maintaining a website, a site builder or a normal codebase may be the better system of record.
+
+### The trust boundary is wide
+
+The server spawns privileged local CLIs, and generated HTML executes in a browser preview. Agent flags, scripts, remote assets, dependencies, and imported source material all deserve review. Local-first architecture reduces one data hop; it does not erase supply-chain, prompt-injection, or generated-code risk.
+
+### Support is community-shaped
+
+The project is active, with issues and pull requests, but it is an open-source repository rather than a purchased support contract. Public issues include onboarding confusion, PATH discovery, desktop packaging, export races, and HTML injection. That transparency is useful; it also shows what users may need to troubleshoot themselves.
+
+## Alternatives by actual job
+
+| Need | Better first option |
+|---|---|
+| One-off interactive HTML | Ask an existing coding agent directly, or use an artifact/canvas tool |
+| Repeatable branded HTML from files | HTML Anything or a reusable skill in your current agent workspace |
+| Production marketing site | A maintained web codebase or hosted site builder |
+| Long-lived documentation | Markdown plus a documentation generator; see [HTML versus Markdown for AI output](/blog/html-vs-markdown-ai-output) |
+| Design-heavy cross-channel assets | A visual design tool with templates and review workflows |
+| Agent work spanning many file types | An [AI workspace rather than a browser-only agent](/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace) |
+
+The closest open-source alternative is the same team's broader Open Design project. HTML Anything is the focused HTML editor; Open Design aims at a larger design system and contributor ecosystem.
+
+## How to test it without fooling yourself
+
+Use one repeatable deliverable and a fixed test packet.
+
+1. Choose a weekly report, deck, social card set, or prototype—not a showcase prompt.
+2. Prepare three inputs: clean, messy, and sensitive-but-redacted.
+3. Record installation time, generation time, agent usage, manual edits, and export failures.
+4. Compare against your current method using the same content and acceptance checklist.
+5. Inspect generated HTML for scripts, external requests, accessibility, responsive layout, and copied secrets.
+6. Test the real destination: paste into WeChat or Zhihu, open the HTML offline, print the PDF, and view PNGs at target dimensions.
+7. Change one source fact and rerun. A reusable system should update cleanly without restyling everything.
+8. Keep it only if it replaces a recurring manual process. A polished demo is not a workflow ROI result.
+
+A passing result should preserve every approved fact, meet brand and accessibility requirements, export reliably, and save review time after model usage and troubleshooting are counted.
+
+## Verdict
+
+HTML Anything is a credible open-source answer to a narrow but real problem: turning recurring source material into visually constrained HTML artifacts through an agent CLI you already use. The breadth of its skill library, inspectable source, streaming preview, and China-relevant export targets distinguish it from a generic HTML prompt.
+
+Its weaknesses are equally concrete. Installation is developer-oriented, “zero API key” still consumes an external agent account, local-first does not guarantee local inference, exports do not replace production systems, and generated executable HTML needs security and accessibility review.
+
+**Try it** if you already operate a coding-agent CLI and produce the same visual deliverables every week. **Use a simpler artifact tool** for occasional output. **Use a maintained site or document system** when the artifact must remain editable, collaborative, governed, and online for years.
+
+### Sources
+
+- [HTML Anything repository and README](https://github.com/nexu-io/html-anything)
+- [Apache-2.0 license](https://github.com/nexu-io/html-anything/blob/main/LICENSE)
+- [Project issue tracker](https://github.com/nexu-io/html-anything/issues)
+- [Desktop-client project status](https://github.com/nexu-io/html-anything/issues/112)
+- [PPTX export issue and investigation](https://github.com/nexu-io/html-anything/issues/62)

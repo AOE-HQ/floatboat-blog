@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Seven-part AI agent builder scorecard</title>
+  <desc id="desc">A loop connecting task fit, control, data and permissions, evaluation, observability, cost unit, and exit capability around a measured pilot.</desc>
+  <rect width="1200" height="720" rx="32" fill="#0b1020"/>
+  <text x="70" y="82" fill="#f8fafc" font-family="Arial, sans-serif" font-size="34" font-weight="700">AI agent builder scorecard</text>
+  <text x="70" y="122" fill="#94a3b8" font-family="Arial, sans-serif" font-size="19">Score 0–4 with evidence from the same production-shaped pilot</text>
+  <circle cx="600" cy="398" r="116" fill="#172554" stroke="#60a5fa" stroke-width="3"/>
+  <text x="600" y="382" text-anchor="middle" fill="#dbeafe" font-family="Arial, sans-serif" font-size="27" font-weight="700">Measured pilot</text>
+  <text x="600" y="418" text-anchor="middle" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="17">fixed inputs · equal scopes</text>
+  <text x="600" y="446" text-anchor="middle" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="17">accepted outcomes</text>
+  <g font-family="Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">
+    <g><rect x="470" y="160" width="260" height="76" rx="18" fill="#134e4a"/><text x="600" y="207" fill="#ccfbf1">1 · Task fit</text></g>
+    <g><rect x="780" y="225" width="260" height="76" rx="18" fill="#3f3f46"/><text x="910" y="272" fill="#f4f4f5">2 · Control</text></g>
+    <g><rect x="840" y="380" width="280" height="76" rx="18" fill="#3f3f46"/><text x="980" y="427" fill="#f4f4f5">3 · Data &amp; permissions</text></g>
+    <g><rect x="710" y="545" width="260" height="76" rx="18" fill="#3f3f46"/><text x="840" y="592" fill="#f4f4f5">4 · Evaluation</text></g>
+    <g><rect x="230" y="545" width="320" height="76" rx="18" fill="#3f3f46"/><text x="390" y="592" fill="#f4f4f5">5 · Observability &amp; recovery</text></g>
+    <g><rect x="80" y="380" width="260" height="76" rx="18" fill="#3f3f46"/><text x="210" y="427" fill="#f4f4f5">6 · Cost unit</text></g>
+    <g><rect x="160" y="225" width="260" height="76" rx="18" fill="#3f3f46"/><text x="290" y="272" fill="#f4f4f5">7 · Exit capability</text></g>
+  </g>
+  <g fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round">
+    <path d="M600 236V282"/><path d="M780 276L700 330"/><path d="M840 418H716"/><path d="M752 545L680 492"/><path d="M500 545L535 507"/><path d="M340 418H484"/><path d="M420 278L500 330"/>
+  </g>
+  <text x="70" y="675" fill="#94a3b8" font-family="Arial, sans-serif" font-size="17">Set weights and disqualifiers before testing. Do not publish a universal total.</text>
+</svg>

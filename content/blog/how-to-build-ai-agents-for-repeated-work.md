@@ -1,6 +1,6 @@
 ---
 title: "How to Build AI Agents for Repeated Work"
-description: "How to build ai agents starts with one repeated workflow, clear inputs, review points, and a practical reason to build."
+description: "Build an AI agent for repeated work with a task contract, bounded tools, state, approvals, evaluations, observability, and safe recovery—not just a prompt."
 slug: "how-to-build-ai-agents-for-repeated-work"
 date: "2026-05-14"
 author: "Nova"
@@ -10,94 +10,142 @@ locale: "en"
 draft: false
 ---
 
-Hi, I'm Nova. Let me be honest with you — I spent three weeks trying to build my "perfect" AI agent system before I had a single useful one running. The architecture diagrams were beautiful. The actual output? Zero. So if you're here looking for a 20-component multi-agent pipeline walkthrough, you're in the wrong place. What I _can_ give you is the one framework that finally got me a working agent in a single afternoon — focused entirely on ​**repeated work** ​, not grand automation ambitions.
+The best repeated-work agent is not the one with the most autonomy. It is the smallest system that can complete a defined job, show its evidence, stay inside its authority, and stop safely when the job no longer matches its instructions.
 
-Here's what I've learned: the best first agent isn't the smartest one. It's the one that solves one boring, repetitive job and does it reliably enough that you actually trust it.
+This guide takes one example all the way through: turning a support ticket into a categorized, evidence-backed reply draft. The same method applies to document intake, lead enrichment, meeting follow-up, weekly reporting, and other recurring work.
 
-## Step 1: Choose One Repeated Job
+## Before building: decide whether you need an agent
 
-This is where most people — myself included — go wrong. They pick something vague like "customer communication" or "research," and then wonder why the agent keeps drifting.
+Anthropic distinguishes workflows, where code determines the path, from agents, where a model chooses its steps and tools. Its [building effective agents guide](https://www.anthropic.com/engineering/building-effective-agents) recommends starting with the simplest workable approach because agentic systems exchange latency and cost for flexibility.
 
-The right starting point is painfully specific. Ask yourself: **what task do I do more than three times a week, in roughly the same way, with roughly the same inputs?**
+Use this ladder:
 
-Good candidates look like:
+1. **Template or rule:** the input and transformation are fully predictable.
+2. **Single model call:** the task requires interpretation but no external action.
+3. **Deterministic workflow with an AI step:** the path is fixed; the model classifies, extracts, or drafts.
+4. **Agent:** the number or order of steps cannot be known in advance, and the model must choose among tools.
+5. **Agent Workspace:** the work is exploratory and a person needs to review sources, intermediate files, and changing outputs.
 
-  * Summarizing incoming support tickets into a one-line triage note
+A support reply often needs level three, not four. The trigger, customer lookup, policy lookup, schema validation, and approval can remain deterministic; the model can classify the request and draft a response. Add agentic tool choice only when a fixed retrieval path is genuinely insufficient.
 
-  * Drafting a weekly status report from a shared doc
+## Step 1: choose a task with a verifiable finish line
 
-  * Extracting action items from meeting transcripts
+A useful candidate has recurring inputs, a stable business goal, a verifiable result, narrowly scoped tools, reversible early outputs, and enough volume to justify maintenance.
 
-  * Categorizing new leads by industry from a CRM field
+“Handle support” is too broad. “For billing tickets, retrieve the customer and invoice, select the relevant policy, and draft a reply for an agent to approve” is buildable.
 
-Bad candidates: anything that requires judgment calls that change every time, anything with unpredictable inputs, anything where you're not sure what "done" looks like.
+Do not start with work whose success depends on unstated taste, conflicting owners, irreversible actions, or facts that cannot be retrieved reliably.
 
-As [OpenAI's workspace agent guide](https://openai.com/academy/workspace-agents/) puts it — shared agents work best when they're tied to a **specific, recurring workflow** your team already understands. The word "specific" is doing a lot of work there. If you can't describe the job in one sentence, you're not ready to automate it.
+## Step 2: write a task contract
 
-**Exit condition:** If you can't name one concrete repeated task right now, stop here. Don't build anything yet.
+Before choosing a framework, write the operating contract:
 
-![how2.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749633546-f921baee-44da-494e-91bc-fc66137da119.webp)
+| Contract field | Support-draft example |
+|---|---|
+| Trigger | New ticket tagged billing |
+| Required input | Ticket text, customer ID, invoice ID |
+| Allowed sources | CRM, billing ledger, approved policy library |
+| Allowed tools | Read customer, read invoice, retrieve policy, create draft |
+| Output | JSON classification plus reply draft with evidence links |
+| Approval | Support agent must approve before send |
+| Stop conditions | Missing ID, conflicting records, no applicable policy, suspected fraud |
+| Forbidden actions | Sending, refunding, deleting, changing account access |
 
-## Step 2: Map Inputs, Decisions, and Outputs
+This document is the agent’s boundary and the basis for tests. Keep it in version control or another durable system, rather than only inside a builder UI.
 
-Once you've chosen the job, resist the urge to open any tools. Spend 20 minutes with a blank doc instead.
+## Step 3: design tools as narrow contracts
 
-Draw three columns:
+A tool connects a non-deterministic model to a deterministic system. It needs a clear name, purpose, input schema, output schema, error behavior, permission scope, timeout, and audit record.
 
-**Inputs** — What information does this task always start with? (e.g., raw email text, a spreadsheet row, a Slack message)
+Prefer a “get invoice by ID” tool over unrestricted database queries; a “create reply draft” tool over a general email tool; and a “request refund review” tool over a direct refund action.
 
-**Decisions** — What choices get made in the middle? (e.g., "Is this urgent or not?" / "Which category does this belong to?") This is the column most people skip, and it's the most important one. Every decision point is a place where your agent can fail or go off-track.
+Anthropic’s [tool-design guidance](https://www.anthropic.com/engineering/writing-tools-for-agents) warns that overlapping or vague tools make selection harder. Return only the context needed for the next decision, but include stable identifiers and source timestamps so the run can be audited.
 
-**Outputs** — What does "done" look like? A filled spreadsheet cell? A drafted message? A Slack notification? Be specific about the format, not just the content.
+For every write tool, decide whether it is idempotent. If the same call arrives twice after a retry, it should not create two refunds, two tasks, or two emails.
 
-This mapping exercise does two things. First, it shows you whether the task is actually automatable — if the decisions column is full of "it depends on context I can't describe," you've found your exit condition. Second, it tells you exactly what to put in your prompt or workflow later.
+## Step 4: separate instructions, context, and state
 
-According to [Anthropic's research on building effective agents](https://www.anthropic.com/research/building-effective-agents), ​**the most successful implementations use simple, composable patterns rather than complex frameworks** ​. That simplicity starts at the mapping stage — not at the tooling stage.
+These are different things:
 
-![how3.PNG](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749645548-530c5952-179c-461f-a06e-06ad50ee1fad.webp)
+- **Instructions** define the job, rules, and output format.
+- **Context** is the high-signal information needed for the current decision.
+- **State** records what has already happened in this run and across runs.
 
-## Step 3: Pick the Lightest Build Path
+Do not load an entire knowledge base into every request. Retrieve the relevant policy, record its identifier and version, and pass the smallest useful excerpt. Anthropic’s [context-engineering guidance](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) recommends curating high-signal context and avoiding bloated, ambiguous tool sets.
 
-Here's a truth the AI industry doesn't advertise enough: ​**most repeated work doesn't need a real "agent" at all** ​. Before you commit to building one, work through this decision tree from lightest to heaviest.
+State should include a run ID, input version, completed steps, tool results, pending approval, final outcome, and side-effect identifiers. This is what lets an operator inspect and resume a failed run.
 
-### Prompt, Automation, Builder, or Workspace
+## Step 5: put approvals before consequences
 
-**A better prompt** — If your task is self-contained and runs inside a single conversation (e.g., "reformat this transcript"), a well-structured prompt with clear instructions and output format might be everything you need. Test this first, always. A strong prompt is free, instant to iterate, and requires zero infrastructure.
+| Action class | Examples | Default treatment |
+|---|---|---|
+| Read | Retrieve a ticket or policy | Allow within scoped access |
+| Draft | Create a reply or proposed task | Allow, log, and review |
+| Reversible write | Add a label or draft record | Allow only after pilot controls |
+| Consequential write | Send, publish, pay, delete, change permissions | Require explicit approval |
 
-**An automation tool** — If the task involves moving data between apps (e.g., "when a form is submitted, extract the key fields and post to Slack"), a no-code tool like n8n, Zapier, or Make will get you there without writing a line of code. These tools now have native AI nodes that let you drop an LLM step into any workflow. [n8n's AI agent platform](https://n8n.io/ai-agents/) is a good example — it lets you add conditions and filter data before the AI even touches it, which keeps costs down and outputs clean.
+An approval must occur before the tool call, show the proposed action and supporting evidence, expire after a defined period, and record who approved it. Define what happens on rejection or timeout.
 
-**A no-code builder** — If your task requires more back-and-forth reasoning (e.g., "research this company and summarize what matters for a sales call"), a builder tool with memory and tool access is worth considering. These are drag-and-drop environments where the agent can call APIs, search the web, or pull from a knowledge base.
+Treat content from tickets, email, documents, and web pages as untrusted data. It can contain instructions intended to redirect the agent. Source content should not be allowed to redefine system rules or tool permissions.
 
-**A coded workspace agent** — Only reach here if the above options fail. This means writing actual logic, managing state, and handling errors yourself. It's more powerful, but the maintenance cost is real. Once you're writing code anyway, the next fork is [how much orchestration to hand-roll versus adopting a workspace that already runs it](/blog/dynamic-workflows-build-or-use-workspace) — a choice worth pricing before the first line, not after.
+## Step 6: build the smallest execution loop
 
-The rule I live by: ​**don't build what a prompt can do** ​. Don't code what a builder can handle. Save your engineering effort for the 10% of tasks that genuinely require it.
+A minimal loop is enough:
 
-## Step 4: Add Memory and Human Review
+1. Validate the input.
+2. Load the task contract and current state.
+3. Retrieve only relevant context.
+4. Ask the model for the next action in a structured format.
+5. Validate the proposed tool and arguments against policy.
+6. Execute or pause for approval.
+7. Record the event and result.
+8. Continue until success, safe stop, or budget limit.
+9. Run a final deterministic validator.
 
-Your first agent draft will not be right. That's fine — the goal of this step is to keep it from being _dangerously_ wrong.
+Set maximum turns, tool-call limits, timeouts, and cost limits. A stop with a clear reason is a valid outcome; endless retries are not resilience. If the path is known, implement it as a workflow rather than letting the model rediscover it on every run.
 
-**Memory** means giving your agent context it can use across runs. The simplest version is just a text file or a doc that the agent can read at the start of each task: your company's terminology, a list of past decisions, preferred output formats. You don't need a vector database for this. A well-maintained text document works surprisingly well for small, focused agents.
+## Step 7: build an evaluation set before deployment
 
-**Human review** is non-negotiable at the start. For the first two weeks, treat your agent's output as a draft, not a final product. Review everything it produces. Not because you don't trust AI — but because this is how you catch the gaps in your mapping from Step 2.
+Use historical cases representing normal work and failure edges. Include missing identifiers, duplicate events, conflicting records, outdated policies, unavailable tools, prompt injection inside source text, requests outside policy, interrupted runs, and data changed between read and write.
 
-Build a simple checkpoint: after the agent generates output, it goes to you (or a teammate) for a quick approve/edit/reject. Over time, you'll notice that most outputs fall into one of three buckets: always right, always wrong in the same way, or unpredictable. The first bucket you can stop reviewing. The second bucket you fix in the prompt. The third bucket is a signal you've picked the wrong task.
+Each case needs expected facts, allowed actions, forbidden actions, and an acceptance rubric. Anthropic’s [agent eval guidance](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) emphasizes evaluating the full trajectory—tool calls and state changes—not only the final answer.
 
-[Gartner research cited in enterprise AI guides](https://onereach.ai/blog/best-practices-for-ai-agent-implementations/) predicts that over 40% of agentic AI projects will fail or be cancelled by 2027 due to escalating costs, unclear value, or insufficient risk controls. The human review step is your direct defense against becoming that statistic. It's not overhead — it's your feedback loop.
+Measure task correctness, evidence completeness, tool and argument selection, forbidden-action rate, human correction time, recovery without duplicate effects, latency, and cost per accepted outcome. There is no universal safe accuracy threshold; the required bar depends on consequence and human review.
 
-![how4.png](/blog/images/how-to-build-ai-agents-for-repeated-work/1778749654339-123add4e-863e-4c0d-bab5-c8798d1436bd.webp)
+## Step 8: deploy in stages
 
-## Step 5: Test, Simplify, or Stop Building
+Start with offline evaluation. Then run **shadow mode**, where the agent sees real inputs and produces results without external writes. Next, allow drafts or another reversible action. Only then consider higher-impact tools, still with explicit approval.
 
-This step has three branches, and knowing which one applies to you is the whole game.
+Review every failure by category: bad input, missing context, ambiguous instruction, wrong tool choice, tool failure, permission denial, model error, or weak validator. Changing the model helps only some categories.
 
-**Test** — Run your agent on 10–20 real examples from the past. Not synthetic test cases — actual instances of the task you've already done manually. Compare the agent's output to what you would have done. Calculate a rough accuracy rate. If it's above 85% on the boring cases, you're in good shape to deploy with review.
+## Step 9: make every run observable
 
-**Simplify** — If the agent keeps failing in the same place, go back to your decision map from Step 2. You've almost certainly found a decision point that's more complex than it looks. The fix is usually to narrow the task further, not to upgrade the model. **Complexity is your enemy at this stage.**
+A production run should answer which input and instruction versions were used; what context was retrieved and when; which tools and arguments were proposed and executed; what each tool returned; where approval occurred; why the run stopped; and what it cost.
 
-**Stop building** — This one is underrated. If after two rounds of iteration your agent still produces outputs you wouldn't trust without rewriting them entirely, the task might not be ready to automate. And that's genuinely okay. Some tasks look repetitive but rely on tacit knowledge that's hard to encode. Identifying this early saves you weeks of frustration.
+Alert on repeated retries, tool-error spikes, approval backlog, unusual cost, stalled sessions, and attempted forbidden actions. Sample successful runs as well as failures; a system can drift while still returning HTTP 200.
 
-One more thing worth repeating: you're building your ​**first useful agent** ​, not a complete system. As your trust grows and your task map gets tighter, you can layer on more. But the foundation has to be one job done reliably.
+## Step 10: design failure recovery
 
-Building an AI agent for repeated work isn't about technology — it's about clarity. The teams and individuals who get real value out of their first agent are the ones who took the time to map the job before touching a tool. The ones who struggled? They usually started with the tool and worked backwards.
+Define retry rules for transient errors, a dead-letter queue, checkpoint and resume behavior, idempotency keys for writes, rollback procedures, an operator handoff containing state and evidence, and a kill switch.
 
-Pick one repeated task, map it carefully, choose the lightest build path that gets you there, and keep a human in the loop until you trust the outputs. That's the whole playbook. Everything else is iteration.
+Test recovery deliberately. Interrupt the run after a read, after approval, and immediately before and after a write. Rotate a credential during execution. Replay the same trigger. The system should fail closed and avoid duplicate consequences.
+
+## When not to build the agent
+
+Stop or choose a simpler approach when the task contract cannot be written without “use judgment” at every step; authoritative data is unavailable; no one owns approvals and incidents; the only tool has excessive authority; output cannot be evaluated; the task changes faster than it can be maintained; or expected benefit does not cover review and operations.
+
+For a fixed app-to-app process, use a workflow builder; see the [no-code agent builder selection guide](/blog/no-code-ai-agent-builder). For changing, artifact-heavy work that needs active human direction, compare [workflow builders with an AI workspace](/blog/workflow-builder-vs-ai-workspace). For the execution layer, read [what an agent harness does](/blog/what-is-an-agent-harness).
+
+## Production-readiness checklist
+
+- [ ] One named task owner and one operational owner
+- [ ] Versioned task contract and tool schemas
+- [ ] Least-privilege credentials
+- [ ] Approvals before consequential actions
+- [ ] Evaluation cases covering normal and adversarial inputs
+- [ ] Full run logs with source and side-effect IDs
+- [ ] Tested retry, resume, rollback, and kill switch
+- [ ] Dashboards for quality, intervention, cost, and latency
+- [ ] Scheduled review for policy, connector, model, and prompt changes
+
+The build sequence is straightforward: narrow the job, formalize the contract, expose small tools, control state, insert approvals, evaluate trajectories, deploy gradually, observe every run, and rehearse recovery. That is how a repeated task becomes an operable agent rather than a prompt attached to production credentials.

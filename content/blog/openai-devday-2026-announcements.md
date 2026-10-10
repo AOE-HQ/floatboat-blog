@@ -4,24 +4,21 @@ description: "A complete map of OpenAI DevDay 2026: Dots, GPT-6.1 Sol, Codex Clo
 slug: "openai-devday-2026-announcements"
 date: "2026-10-06"
 author: "Floatboat"
-category: "Industry News"
+category: "Product Updates"
 cover: "/blog/images/openai-devday-2026-announcements/og-en.webp"
 locale: "en"
 draft: false
 ---
 
-**TL;DR**
+OpenAI DevDay 2026, held on September 29, was not mainly a model launch. Its more than 20 announcements connect into an operating stack: persistent agents receive work, models reason, Codex and APIs execute, plugins connect outside software, Space and Pages hold artifacts, and identity and marketplace products distribute access.
 
-- OpenAI described DevDay 2026 as more than 20 major announcements. Counting the separately titled items in its official recap produces 25, spanning agents, models, Codex, APIs, plugins, collaboration, identity, subscriptions, and enterprise purchasing.
-- The main story was not one model. OpenAI assembled a stack: Dots take ongoing responsibility; GPT-6.1 Sol supplies lower-cost intelligence; Codex and the Agents API execute work; Plugins bring third-party applications into the interface; Space and Pages hold shared context; identity and Marketplace handle distribution and purchasing.
-- Many releases have narrow availability. Dots require eligible premium plans or an admin-enabled beta, Decisions API is a limited preview, collaborative slides are coming later, and Private Inference is planned for the fall.
-- OpenAI is moving from selling models and chat toward controlling the operating surface for AI work. That creates a more coherent platform—and more dependency on OpenAI's permissions, pricing, and product boundaries.
+The distinction between *announced* and *available* is essential. Some products shipped across all plans; some require specific plans, administrators, regions, or clients; Decisions API is now a public beta; collaborative slides and Private Inference remain future-facing. This recap uses OpenAI’s official material and reflects status checked on October 10, 2026—not just keynote wording.
 
 ## Why the Count Is 25, Not 21
 
 OpenAI's official language is deliberately broad: “more than 20 major announcements.” If each separately titled item in the recap is counted once, the total is 25. Other recaps reach different numbers by splitting features, counting demonstrations, or combining closely related releases. This article uses the official page as the boundary and treats its 25 headings as the release list.
 
-The count matters less than the structure. DevDay 2026 was not a bag of unrelated updates. The releases form five connected layers: persistent agents, models and privacy, developer execution, plugin distribution, and collaborative work. Seen that way, the day was OpenAI's clearest attempt yet to become the place where AI work starts, runs, gets reviewed, and reaches other people.
+The count matters less than the structure. DevDay 2026 was not a bag of unrelated updates. The releases form five connected layers: persistent agents, models and privacy, developer execution, plugin distribution, and collaborative work. Seen that way, the day was OpenAI's clearest attempt yet to become the place where AI work starts, runs, gets reviewed, and reaches other people. The [official recap](https://openai.com/index/devday-2026-recap/) is the source of record for this grouping and for launch-day eligibility.
 
 ## 1. Persistent Work: Dots, GPT-6.1 Sol, Ultrafast, and Private Intelligence
 
@@ -29,7 +26,7 @@ The count matters less than the structure. DevDay 2026 was not a bag of unrelate
 
 **GPT-6.1 Sol** supplies the economic engine. OpenAI prices it at $2 per million input tokens and $10 per million output tokens—one-fifth of Astra's standard rates—while reporting near-Astra results on coding, computer use, document work, and automation. Our separate [GPT-6.1 Sol analysis](/blog/gpt-6-1-sol) examines the benchmarks and their limits.
 
-**Ultrafast** is a premium processing tier rather than a new model. OpenAI reports up to 300 tokens per second, as much as 8× standard speed in Codex and 6× in the API. Astra Ultrafast is available through the API and on Pro 500 and Enterprise in ChatGPT Work and Codex; GPT-6.1 Sol support is coming later.
+**Ultrafast** is a premium processing tier rather than a new model. OpenAI reports up to 300 tokens per second, as much as 8× standard speed in Codex and 6× in the API. Astra Ultrafast launched at DevDay. GPT-6.1 Sol Ultrafast, originally announced as “coming soon,” became available through the Responses API on October 8, with separate premium pricing and rate limits. The [API changelog](https://developers.openai.com/api/docs/changelog) is the better source for post-keynote state changes.
 
 **Private Intelligence** addresses the enterprise trust layer. Zero Data Retention with Private Safety Processing is designed to run automated safety review without OpenAI personnel seeing the underlying content. Private Inference, planned for the fall, adds confidential computing and verifiable controls. The second product is a preview, not a shipping guarantee.
 
@@ -47,7 +44,7 @@ Taken together, these are not four convenience features. They turn Codex from a 
 
 ## 3. The Agent Platform: Decisions API, Computer Use, and AWS
 
-**Decisions API** focuses Luna on questions with a finite set of allowed answers. Applications can feed it text or images and receive a classification, routing choice, or next-action decision. It is in limited preview, with broader availability promised after DevDay.
+**Decisions API** focuses Luna on questions with a finite set of allowed answers. Applications can feed it text or images and receive a probability, fixed-set choice, score, or next-action decision. It launched in limited preview, then entered public beta on October 6. OpenAI’s [current Decisions documentation](https://developers.openai.com/api/docs/guides/decisions) says `gpt-6-luna` is the only supported model and GA is expected later; public beta is not GA.
 
 **Agents API with Computer Use** adds hosted environments in which agents can operate software through its interface. It also incorporates multi-agent work, tool search, tool calling, and context compaction. OpenAI manages the execution infrastructure, reducing the amount of orchestration a developer must build.
 
@@ -71,7 +68,7 @@ These four releases are best read as one platform move: build, render, trigger, 
 
 **Create teams and share tasks** introduces shared pages, slides, plugins, spreadsheets, and recurring team work that can run on a schedule or in response to events. **@ChatGPT in Slack and Microsoft Teams** moves the assistant into existing channels, threads, and direct messages, with tools governed by workspace and user permissions.
 
-The **Meetings plugin** records notes, creates personalized summaries and action items, and saves them into ChatGPT Space. OpenAI says audio is deleted after notes are ready and cannot be replayed. It launched as a macOS beta for Pro and Business, with Enterprise support planned.
+The **Meetings plugin** records notes, creates personalized summaries and action items, and saves them into ChatGPT Space. OpenAI says audio is deleted after notes are ready and cannot be replayed. The [current Meetings documentation](https://help.openai.com/en/articles/20001546-the-meetings-plugin-in-chatgpt) lists a macOS beta for Pro and Business, a limited Enterprise alpha, and Windows, iOS, and Android as coming later.
 
 This collaboration layer is the connective tissue of the event. Dots need durable context; agents need somewhere to leave artifacts; teams need to review and refine recurring work. Space, Pages, Slides, Tasks, chat integrations, and Meetings provide that shared state.
 
@@ -87,15 +84,36 @@ This collaboration layer is the connective tissue of the event. Dots need durabl
 
 ## Availability at a Glance
 
-| Status | Announcements |
+![OpenAI DevDay 2026 announcements grouped by current release status](/blog/images/openai-devday-2026-announcements/status-map-en.svg)
+
+*Status is attached to each product surface, not to the event as a whole. “Available” can still require a paid plan, administrator setting, supported market, or specific client.*
+
+| Status checked October 10 | Announcements |
 |---|---|
-| Available, subject to plan or region | Dots, GPT-6.1 Sol, Astra Ultrafast, Codex Cloud, Codex CLI, Code Review, Codex Security Cloud, Agents API with Computer Use, Bedrock Managed Agents, Plugin Extensions, plugin creation/discovery, Sites plugins, MCP Events, Space, Pages, team tasks, Slack/Teams integration, Meetings beta, profiles, Sign in with ChatGPT, Pro 500 |
-| Limited preview | Decisions API |
-| Preview / planned | Private Inference |
-| Coming soon | GPT-6.1 Sol Ultrafast, collaborative slides, some mobile editing and enterprise availability |
+| Available, subject to plan, market, admin, or platform | Dots, GPT-6.1 Sol, Astra Ultrafast, GPT-6.1 Sol Ultrafast API, Codex Cloud, Codex CLI, Code Review, Codex Security Cloud, Agents API with Computer Use, Bedrock Managed Agents, Plugin Extensions, plugin creation/discovery, Sites plugins, MCP Events, Space, Pages, team tasks, Slack/Teams integration, profiles, Sign in with ChatGPT, Pro 500 |
+| Beta | Decisions API public beta; Meetings beta on macOS for Pro and Business |
+| Alpha / restricted test | Meetings for a limited Enterprise group |
+| Preview / planned | Private Inference preview announced for fall |
+| Coming soon | Collaborative slides; some Space mobile creation/editing; Meetings on Windows, iOS, and Android |
 | Enterprise interest / approval | OpenAI Marketplace |
 
 “Available” does not mean every user sees every feature. Plans, regions, workspace administrator settings, client platforms, and staged rollouts still apply.
+
+## What Changes for Users
+
+The user-facing shift is from isolated chats to durable work. Dots can own ongoing responsibilities; Space holds shared project context; Pages preserve work products; plugins and connected tools bring outside systems into the same surface. Team tasks and MCP Events add schedules and event triggers, so a user no longer has to initiate every run with a fresh prompt.
+
+That convenience increases the importance of scope. Before enabling a persistent agent or plugin, users should be able to answer which workspace can see it, which connected account it uses, whether an action is a draft or a commit, and where the result will remain. A task running “while you are away” still needs an owner, a stop path, and a review point.
+
+DevDay also did not make every surface universal. Space and Pages require specified paid plans; Meetings is a macOS beta; standard Chat availability differs from ChatGPT Work and Codex; Dots have plan, market, and administrator conditions. Product names cannot substitute for checking the current account.
+
+## What Changes for Developers
+
+For developers, the stack reduces how much orchestration must be built from scratch. Agents API adds hosted computer use, multi-agent work, tool search, tool calling, and context compaction. Plugins add UI surfaces and distribution inside ChatGPT. MCP Events add external triggers. Sign in with ChatGPT can provide identity and, for participating partners, controlled plan usage.
+
+The trade-off is that product boundaries now matter to architecture. A developer must distinguish API availability from Codex or ChatGPT availability; a public beta from GA; an MCP proposal from a stable dependency; a plugin permission from the underlying service’s resource permissions; and a Marketplace procurement relationship from end-user installation.
+
+The practical question is not “which DevDay feature can we add?” It is which layer the application genuinely needs. A fixed classification may fit Decisions API. An open-ended interface workflow may need Agents API with Computer Use. A collaborative ChatGPT experience may need a plugin or Site. Combining every layer creates more identity, data, approval, and failure boundaries than most first versions require.
 
 ## What DevDay Did Not Resolve
 
@@ -105,10 +123,22 @@ Permissions also become more consequential. An always-on agent with connected ap
 
 Finally, the most capable experiences sit behind expensive plans or enterprise controls. OpenAI is widening access to intelligence with GPT-6.1 Sol while charging a premium for speed, high allowances, persistent agents, and governed collaboration. That tension is part of the product strategy, not an accidental launch detail.
 
+## A Five-Question Adoption Check
+
+Before choosing a feature from the announcement list, verify:
+
+1. **Current state:** Is it GA, beta, alpha, preview, coming soon, or merely an announced direction?
+2. **Exact surface:** Does it exist in the API, Codex, ChatGPT Work, ordinary Chat, a desktop client, or an AWS environment?
+3. **Eligibility:** Which plan, region, platform, workspace setting, and administrator approval are required?
+4. **Control boundary:** Which identity, files, plugins, connected tools, and actions can the feature reach, and where does human approval occur?
+5. **Exit and fallback:** What happens when the preview changes, allowance runs out, a plugin is removed, or the hosted environment is unavailable?
+
+Use a small reversible workflow for beta products and keep a fallback for core operations. Announcements are useful for planning; only current product documentation should drive a production promise.
+
 ## The Real DevDay Announcement Was the Stack
 
 DevDay 2026 showed OpenAI moving beyond the model-and-chat era. Dots are the workers. GPT-6.1 Sol is the cost-effective reasoning layer. Codex and Agents API execute. Plugins bring third-party applications and events into the environment. Space and Pages retain shared context and artifacts. Sign in with ChatGPT and Marketplace handle identity, usage, and distribution.
 
 No single announcement completes that vision, and several pieces remain previews or staged rollouts. But the direction is clear: OpenAI wants to own the operating surface where people assign work, agents execute it, teams review it, and software reaches users.
 
-The release list follows the [OpenAI DevDay 2026 official recap](https://openai.com/index/devday-2026-recap/). Availability and product details were checked against OpenAI's linked product and developer documentation on October 6, 2026.
+The release list follows OpenAI’s official DevDay recap. Post-event state changes were checked against OpenAI developer and Help Center documentation on October 10, 2026.

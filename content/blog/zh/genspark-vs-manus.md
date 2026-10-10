@@ -71,7 +71,7 @@ Manus 在你工作流里的位置：它更像是一个你**委派任务给它的
 
 它还会写代码并部署。如果你需要从一个 prompt 生成一个可用的网页或原型，Manus 的处理方式是 Genspark 根本不具备的。
 
-[维基百科上关于 Manus AI 的页面](<https://en.wikipedia.org/wiki/Manus_\(AI_agent\)>)对架构和收购背景有不错的概述，想要完整来龙去脉可以看它。
+[维基百科上关于 Manus AI 的页面](https://en.wikipedia.org/wiki/Manus_\(AI_agent\))对架构和收购背景有不错的概述，想要完整来龙去脉可以看它。
 
 ![5.png](/blog/images/genspark-vs-manus/1774490483985-beeef324-09b1-42b5-b9c9-9db4cf561ae4.webp)
 

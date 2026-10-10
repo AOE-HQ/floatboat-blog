@@ -1,6 +1,6 @@
 ---
-title: "Building Agentic AI Systems: Build or Buy?"
-description: "Building agentic ai systems requires architecture, maintenance, oversight, and a clear build-or-buy decision."
+title: "Agentic AI Systems: Build, Buy, or Use a Hybrid?"
+description: "A practical build-versus-buy framework for agentic AI systems, covering task fit, governance, integration, evaluation, total cost, lock-in, migration, and hybrid architecture."
 slug: "building-agentic-ai-systems-build-or-buy"
 date: "2026-05-22"
 author: "Nova"
@@ -10,82 +10,204 @@ locale: "en"
 draft: false
 ---
 
-Hi, I'm Nova. I've been going back and forth on this for weeks. I have a few AI workflows that work — content research, client intake sorting, weekly reporting. They're Custom GPTs, mostly. Simple, useful, fine. But lately I keep bumping into their edges, and the question has shifted from "how do I build an agent" to something harder: do I build a whole system around these things, buy one, or pay someone else to figure it out?
+The build-or-buy question for an agentic AI system is not a choice between “custom and powerful” or “packaged and limited.” It is a decision about which control planes your organization must own—and which ones a vendor can operate better.
 
-If you've already validated a workflow with a single agent and you're wondering what happens next, this is that conversation. **Building agentic AI systems** is a different decision than building your first agent — and the trade-offs are not obvious until you're in the middle of them.
+The realistic options are:
 
-## When an Agent Becomes a System
+- **Build:** own the application, orchestration, integrations, state, controls, and operations.
+- **Buy:** configure a managed product and accept its execution, identity, data, and release model.
+- **Hybrid:** own the task contract, policy, evaluations, and differentiating logic while buying models, runtimes, observability, connectors, or workspace surfaces.
 
-A single agent is a tool. It takes instructions, uses some files, and gives you output. You can build one in an afternoon.
+For many teams, hybrid is the useful default hypothesis, not an automatic conclusion. The right answer comes from evidence gathered on one representative workflow.
 
-A system is what happens when that agent needs to talk to other agents, remember things between sessions, access live data, recover from errors gracefully, and operate under some kind of permission structure that doesn't just rely on you personally checking every output.
+## First decide whether you need an agentic system
 
-The shift usually happens around three signals. First, you find yourself duct-taping multiple agents together — one does research, another formats, a third checks against a style guide — and you're manually passing outputs between them. Second, you need persistence: the agent should remember what happened last Tuesday without you re-explaining everything. Third, other people start using it, and suddenly "just trust the output" isn't good enough.
+Anthropic’s [engineering guidance on effective agents](https://www.anthropic.com/engineering/building-effective-agents) recommends starting with the simplest design that succeeds. A single model call is enough for a bounded transformation. A deterministic workflow fits known steps. An agent becomes relevant when the route cannot be specified in advance and the model must choose tools using environmental feedback.
 
-Anthropic put it well in their guide on [building effective agents](https://anthropic.com/research/building-effective-agents): they recommend starting with the simplest possible solution and only increasing complexity when needed. Workflows — where tools and LLMs follow predefined paths — should come before fully autonomous agents. That advice is solid. But it also means that when you _do_ need the next level, you need to think carefully about whether you're building it, buying it, or outsourcing the build.
+A system begins when that agent needs durable state, multiple integrations, shared use, permissions, evaluations, monitoring, deployment controls, and recovery. Multiple agents are not the threshold. One agent with production consequences already needs system engineering.
 
-![2.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416388917-b1def5dd-72f1-49d4-9163-1f77ea13ac08.webp)
+Before comparing vendors or frameworks, write a task contract:
 
-## Build vs. Buy vs. Outsource: Comparison Table
+- input and trigger;
+- accepted outcome and evidence;
+- allowed sources and actions;
+- human approval points;
+- stop, time, and budget limits;
+- recovery and escalation behavior;
+- data classification and retention;
+- accountable owner.
 
-I've been thinking about this as a three-column problem. Here's how the trade-offs actually look when you're a small team or solo operator:
+If those fields are unclear, a procurement scorecard will only compare demos.
 
+## Build, buy, and hybrid: what each option really owns
 
+| Layer | Build | Buy | Hybrid |
+|---|---|---|---|
+| Task and product behavior | Team owns | Configured within product | Team owns differentiating logic |
+| Model and orchestration | Team selects and operates | Vendor operates | Split by component |
+| Identity and permissions | Team integrates and enforces | Vendor capabilities and tenant controls | Enterprise identity plus vendor runtime |
+| Connectors | Team builds or licenses | Vendor catalog | Buy common, build critical |
+| State and artifacts | Team-defined stores | Vendor-defined storage and export | Portable system of record plus managed execution |
+| Evaluation | Team must build | Vendor may provide tools, team still defines success | Team owns test cases; infrastructure may be managed |
+| Reliability and recovery | Team owns end to end | Contract plus product controls | Explicit boundary and shared runbook |
+| Release cadence | Team controls | Vendor controls | Versioned interface between both |
 
-<table><colgroup><col/><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p></p></th><th colspan="1" rowspan="1"><p>Build (in-house)</p></th><th colspan="1" rowspan="1"><p>Buy (platform)</p></th><th colspan="1" rowspan="1"><p>Outsource (agency/contractor)</p></th></tr><tr><td colspan="1" rowspan="1"><p>Upfront cost</p></td><td colspan="1" rowspan="1"><p>Low (your time)</p></td><td colspan="1" rowspan="1"><p>Medium ($20–100+/mo per seat)</p></td><td colspan="1" rowspan="1"><p>High ($5K–50K+ per project)</p></td></tr><tr><td colspan="1" rowspan="1"><p>Time to first result</p></td><td colspan="1" rowspan="1"><p>1–4 weeks</p></td><td colspan="1" rowspan="1"><p>1–3 days</p></td><td colspan="1" rowspan="1"><p>4–12 weeks</p></td></tr><tr><td colspan="1" rowspan="1"><p>Customization</p></td><td colspan="1" rowspan="1"><p>Full control</p></td><td colspan="1" rowspan="1"><p>Limited to platform features</p></td><td colspan="1" rowspan="1"><p>High, but dependent on contractor</p></td></tr><tr><td colspan="1" rowspan="1"><p>Maintenance burden</p></td><td colspan="1" rowspan="1"><p>100% on you</p></td><td colspan="1" rowspan="1"><p>Handled by vendor</p></td><td colspan="1" rowspan="1"><p>Depends on contract</p></td></tr><tr><td colspan="1" rowspan="1"><p>Switching cost</p></td><td colspan="1" rowspan="1"><p>Low (you own the code)</p></td><td colspan="1" rowspan="1"><p>Medium to high (vendor lock-in)</p></td><td colspan="1" rowspan="1"><p>High (knowledge transfer)</p></td></tr><tr><td colspan="1" rowspan="1"><p>Best for</p></td><td colspan="1" rowspan="1"><p>Teams with dev capacity</p></td><td colspan="1" rowspan="1"><p>Solo operators, small teams wanting speed</p></td><td colspan="1" rowspan="1"><p>Complex integrations, one-time builds</p></td></tr><tr><td colspan="1" rowspan="1"><p>Worst for</p></td><td colspan="1" rowspan="1"><p>People without engineering time</p></td><td colspan="1" rowspan="1"><p>Highly custom workflows</p></td><td colspan="1" rowspan="1"><p>Ongoing iteration needs</p></td></tr></table>
+“Build” does not eliminate vendors: it commonly relies on hosted models, clouds, databases, identity providers, and frameworks. “Buy” does not eliminate engineering: integrations, permissions, acceptance testing, incident response, and change management remain yours.
 
+## Decide by task shape and strategic differentiation
 
+Buy is a strong candidate when the job is common, the product already supports required systems, configuration can express the policy, and switching the implementation would not erase a competitive advantage. Examples include internal search, meeting preparation, standard ticket triage, and drafting inside a supported suite—provided the product passes your data and permission review.
 
-The honest answer? Most people I know in the solo/small-team space start with buy, hit limits, then selectively build the pieces that matter most. Almost nobody I talk to outsources the whole thing on the first pass — it's too expensive and you don't yet know enough about what you actually need.
+Build is a stronger candidate when the agent embodies proprietary decision logic, needs specialized tools, must run in a constrained environment, or requires latency, availability, audit, and recovery behavior that a managed product cannot guarantee.
 
-## What Changes at System Level
+Hybrid fits when the business logic is distinctive but the infrastructure is not. A team might own the qualification policy, tool schemas, evaluation set, and system of record while using a managed model, durable runtime, or connector service.
 
-### Memory, Tools, Permissions, Monitoring, Recovery
+Do not confuse unfamiliarity with differentiation. “Our process is complicated” is not proof that custom orchestration creates value. Conversely, a vendor checkbox is not proof that a product can represent your actual exceptions.
 
-This is the part where things get real. When you move from a single agent to ​**developing an agentic AI system** ​, five things suddenly need answers:
+## Governance: the responsibility cannot be outsourced
 
-**Memory.** A standalone Custom GPT has no memory between sessions — [OpenAI's documentation confirms this](https://help.openai.com/en/articles/8554407-gpts-in-chatgpt): each conversation starts fresh. At system level, you need something that persists. That might be a database, a vector store, or a structured knowledge graph. The choice depends on whether your agent needs to recall facts (structured) or context (semantic). I've been experimenting with both, and my honest take is that most small teams should start with a simple key-value store or a Google Sheet before investing in vector infrastructure. Don't over-engineer the memory layer until you know what needs remembering.
+NIST’s [AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) organizes risk work around Govern, Map, Measure, and Manage. Those functions still apply when software is purchased. A vendor may supply controls and evidence, but your organization decides the purpose, acceptable risk, human role, and whether deployment should continue.
 
-**Tools.** Single agents use the tools you give them — web browsing, code execution, file access. Systems need tool orchestration: which agent gets which tools, in what order, and what happens when a tool fails mid-task. This is where frameworks like LangGraph or CrewAI come in if you're building, or platform features if you're buying. I haven't fully worked out my own workflow with multi-tool orchestration yet, but I've put enough hours in to know that the debugging is where 80% of the time goes.
+For each option, identify:
 
-**Permissions.** When it's just you, permissions don't matter — you trust yourself. The moment someone else uses your system, you need to decide: can this agent read customer data? Can it send emails? Can it modify a shared document? According to [LangChain's 2026 State of Agent Engineering report](https://www.langchain.com/state-of-agent-engineering), 57% of surveyed organizations now have agents in production, but quality and governance are still the top barriers. Permissions are boring until they're a crisis.
+- system owner and risk owner;
+- intended use and prohibited use;
+- affected users and data classes;
+- model, tool, and connector inventory;
+- least-privilege identities;
+- approval requirements by action impact;
+- evaluation and monitoring owner;
+- incident, rollback, and offboarding procedures;
+- vendor change and deprecation process.
 
-![3.PNG](/blog/images/building-agentic-ai-systems-build-or-buy/1779416401483-9b7fe0c9-a289-4062-8d25-9f01ae8d87c8.webp)
+Never grant broad workspace, mailbox, CRM, browser, or database access merely to simplify setup. Separate read, draft, reversible write, and consequential write. A bought platform should expose enough control to scope identities and inspect actions. A custom system should enforce authorization outside the model loop.
 
-**Monitoring.** You need to see what your agents are doing. Not just outputs — the reasoning, the tool calls, the decision points. LangSmith, Arize, and other observability tools exist for this, and the LangChain report found that 89% of teams with production agents have some form of observability in place. If you're building from scratch, at minimum log every tool call and every decision branch. You'll thank yourself the first time something breaks at 2 AM.
+## Integration: count semantics, not connector logos
 
-**Recovery.** What happens when an agent fails mid-task? Does it retry? Does it alert you? Does it silently produce garbage? At system level, you need checkpoints — places where the agent pauses, saves state, and can resume or escalate. This is the difference between a toy and a tool. I'm still figuring this out myself, but the **principle of building AI agents** that actually holds up: design for failure first, happy paths second.
+A connector catalog can hide the difficult work. Evaluate each required integration across:
 
-## Ownership and Maintenance Trade-offs
+| Question | Why it matters |
+|---|---|
+| Authentication model | User delegation, service identity, and shared credentials create different risk |
+| Permission granularity | A connector may expose an entire account for one narrow task |
+| Read and write coverage | “Supports CRM” may mean search only, not the operation you need |
+| Event behavior | Polling, webhooks, ordering, and duplicate delivery affect correctness |
+| Error contract | Retries need stable error types and external IDs |
+| Rate and payload limits | Demo-sized inputs may not represent production |
+| Versioning | API or schema changes can break flows silently |
+| Audit evidence | You need to know what identity changed which record |
 
-Here's the thing nobody talks about enough: the build decision isn't just "can I build it?" It's "can I maintain it in six months when the model updates, the API changes, and I've forgotten why I structured the prompts that way?"
+Build a thin integration test for the real operation. Include expired credentials, missing permissions, duplicate events, schema changes, partial responses, and a timeout after a successful write.
 
-I used to think more tools meant more productivity. I don't anymore. Every new component in your system is something that can break, something that needs updating, and something you have to explain to the next person who touches it.
+## Evaluation: use one acceptance suite for every option
 
-If you're ​**building AI agents from scratch** ​, you own the upside — full customization, no vendor lock-in, no monthly fees beyond API costs. But you also own every failure mode. When OpenAI retires a model (and they do — GPT-4o was [fully retired in April 2026](https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes)), you're the one migrating your prompts. When a tool integration changes its API, you're the one fixing it on a Saturday.
+The comparison is invalid if a custom prototype and a managed demo receive different tasks. Create one dataset with normal, edge, adversarial, and recovery cases. Run every option in a safe environment.
 
-If you buy a platform, you trade that maintenance burden for feature limitations and, usually, some form of vendor lock-in. The platform handles model updates, but you're constrained to what it supports. For a solo operator running three or four workflows, that trade-off often makes sense. For a team with a specific, high-value workflow that needs to behave exactly right — building is usually worth it.
+Anthropic’s current [agent evaluation guide](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) distinguishes the task, repeated trials, graders, and the full trajectory. OpenAI’s [agent evaluation documentation](https://developers.openai.com/api/docs/guides/agent-evals) similarly recommends trace grading for tool choice, handoffs, instruction violations, and end-to-end behavior.
 
-I'm not going to say "it depends" and leave it there. Here's how I actually think about this: if the workflow generates revenue or saves more than five hours per week, build the critical path yourself and buy the supporting infrastructure. If it's a nice-to-have efficiency tool, buy. If you don't know yet, buy something cheap, test for a month, then decide.
+Measure:
 
-![4.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416413657-0e49baa1-0461-401f-a6c1-02de17864c97.webp)
+- accepted outcome rate and human correction time;
+- evidence and source quality;
+- tool and argument accuracy;
+- permission or policy violations;
+- intervention and escalation rate;
+- duplicate or missing side effects;
+- latency and cost per accepted outcome;
+- recovery time;
+- time for a second operator to explain the run.
 
-## Decision Tree by Workflow Maturity
+Repeat stochastic cases. A single successful demo proves that a path exists, not that a service is reliable.
 
-I've found it useful to map the build-or-buy decision to where your workflow actually is:
+## Total cost of ownership: model the workload, not a generic price
 
-**Stage 1: Experimental.** You're still figuring out if the workflow works at all. At this stage, buy. Use ChatGPT, use a Custom GPT, use whatever gets you to a working proof of concept fastest. Don't write code yet. Don't commit to a framework.
+Avoid fixed claims such as “buy takes days” or “custom maintenance is a percentage of build cost.” TCO depends on workload, control requirements, team skills, and contract terms.
 
-**Stage 2: Validated.** The workflow works. You've used it 20+ times. You know the inputs, outputs, and common failure modes. Now you can make an informed decision. If the platform you're on handles it well — stay. If you're hitting limits — start building the specific pieces that are constrained.
+Use a scenario model:
 
-**Stage 3: Production.** The workflow runs regularly, other people depend on it, and reliability matters. This is where you need monitoring, recovery, and governance. If you built it, add observability. If you bought it, evaluate whether the platform's governance features are sufficient. Most platforms are catching up here — Anthropic's [guide on writing effective tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents) covers some of the principles that matter at this stage, particularly around designing tools that agents can use reliably.
+**Build TCO** = discovery + engineering + evaluation + infrastructure + model use + integrations + security review + on-call + maintenance + migrations + opportunity cost.
 
-**Stage 4: Scaling.** Multiple workflows, multiple agents, multiple users. This is system territory. You're either deeply committed to a platform ecosystem or you're running your own orchestration layer — and at that point, [whether to build the orchestration yourself or let a workspace execute for you](/blog/dynamic-workflows-build-or-use-workspace) becomes its own build-or-buy decision, one layer up. Few solo operators or small teams reach this stage with more than one or two workflows, and that's fine. Get Stage 3 right first.
+**Buy TCO** = licenses + usage or credits + premium models + connectors + implementation + governance + review labor + overage + support + exit cost.
 
-The mistake I see most often: people jump to Stage 4 thinking before they've actually validated Stage 2. They buy an enterprise platform for a workflow they've tested three times. Don't do that.
+**Hybrid TCO** includes both plus boundary work: interface versioning, duplicated logs, vendor coordination, and reconciliation.
 
-![5.png](/blog/images/building-agentic-ai-systems-build-or-buy/1779416434481-84be521e-d43c-4284-80a2-34091648e591.webp)
+Calculate cost per accepted business outcome at expected, low, and peak volume. Include failure and review rates. Validate prices against a dated vendor quote rather than embedding volatile figures in the architecture decision.
 
-That's where I am on the build-or-buy question for ​**building agentic AI systems** ​. The answer isn't universal — it depends on where your workflow actually is, how much maintenance you can absorb, and whether the value justifies the complexity.
+Cost is not only spending. Time-to-learning matters during exploration; predictable unit economics matters at scale; scarce engineering capacity has an alternative use.
 
-I'll check back in after I've moved two more of my own workflows from Stage 2 to Stage 3. That's one small piece figured out.
+## Lock-in: ownership of code is not portability
+
+Custom systems can be locked to a cloud, model API, framework, database schema, or a few engineers’ undocumented knowledge. Managed products can lock value into proprietary workflows, conversations, permissions, connector mappings, and run history.
+
+Assess portability by artifact:
+
+| Asset | Portability test |
+|---|---|
+| Task contract and policy | Can another runtime enforce it? |
+| Prompts and tool schemas | Can they be exported in usable form? |
+| Evaluations | Can the same cases run elsewhere? |
+| Project data and artifacts | Are formats, relationships, and permissions preserved? |
+| State and run history | Can incomplete work and evidence be reconstructed? |
+| Identity and credentials | Can access be revoked and reassigned cleanly? |
+| Business logic | Is it separated from vendor-specific nodes? |
+
+An export button is not an exit plan. Prove portability by rebuilding one representative task on a second stack and restoring a small export.
+
+## A defensible hybrid architecture
+
+A hybrid design works when ownership boundaries are explicit. One common pattern is:
+
+1. the company owns the task contract, policies, evaluation set, and system-of-record IDs;
+2. a managed model or agent runtime plans and executes within a narrow tool catalog;
+3. company-controlled gateways authenticate, authorize, validate, and log tool calls;
+4. consequential writes pause for approval;
+5. durable state records checkpoints and external side-effect IDs;
+6. the interface is versioned so the runtime can be replaced.
+
+This is not automatically cheaper or simpler. It is valuable when it keeps differentiated logic and governance portable while outsourcing commodity operations.
+
+## Run a build-versus-buy pilot
+
+Use a time-boxed pilot with the same task and acceptance suite.
+
+### 1. Establish the baseline
+
+Measure the current human or workflow process: accepted outcomes, review time, failure modes, volume, and service expectations.
+
+### 2. Select finalists
+
+Include the smallest credible build and one or two managed options. Add a hybrid only if there is a clear ownership boundary.
+
+### 3. Complete governance and integration gates
+
+Verify identity, permissions, retention, residency if required, audit evidence, incident handling, data use terms, and exit provisions. Test the actual write path.
+
+### 4. Run shadow and draft modes
+
+Use real inputs without consequential writes, then allow reviewed drafts or reversible actions.
+
+### 5. Exercise failures and change
+
+Revoke access, duplicate an event, change a schema, interrupt a write, replace the model, and export the artifacts. Record recovery effort.
+
+### 6. Compare evidence
+
+Score quality, risk, integration fit, operator burden, TCO scenarios, and exit readiness. Document trade-offs and a review date instead of declaring a permanent winner.
+
+## Decision matrix
+
+| Evidence from the pilot | Direction |
+|---|---|
+| Commodity task, strong product fit, acceptable controls | Buy |
+| Proprietary behavior, specialized environment, strict operational guarantees | Build |
+| Differentiating logic with commodity infrastructure | Hybrid |
+| Requirements still changing and little evaluation data | Buy or prototype narrowly; defer irreversible architecture |
+| No option meets permission or recovery requirements | Do not deploy yet |
+
+For the implementation lifecycle behind the custom option, see [how to build an AI agent](/blog/how-to-build-an-ai-agent). To distinguish managed project context from process automation, compare [workflow builders and AI workspaces](/blog/workflow-builder-vs-ai-workspace). For evaluating service providers rather than products, use the [custom AI agent development guide](/blog/custom-ai-agent-development).
+
+## The decision is about durable ownership
+
+Build when control over behavior and operations is strategically necessary and the organization can operate it. Buy when the task is well served by a managed product and its governance and exit terms pass inspection. Use hybrid when a clean boundary lets you own policy, evidence, and differentiation without rebuilding commodity infrastructure.
+
+Whichever option wins, keep the task contract, evaluation set, permission model, run evidence, and exit plan under your control. Those are the durable assets of an agentic system.
