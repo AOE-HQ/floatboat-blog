@@ -1,6 +1,6 @@
 ---
-title: "Relevance AI 还是 n8n：哪个适合你？"
-description: "Relevance AI 与 n8n 常在同一次搜索里出现，却是为不同人解决不同问题的两款工具。本文讲清它们的本质差异、适用人群，并给出可直接照做的选择建议，帮你一次选对。"
+title: "Relevance AI vs n8n：Agent、工作流、成本与控制权"
+description: "从 Agent 构建、工作流控制、计费单位、部署、数据治理与维护成本完整比较 Relevance AI 和 n8n，并用同一套可复现试点、故障测试和迁移清单做选择。"
 slug: "relevance-ai-vs-n8n"
 date: "2026-04-01"
 author: "Nova"
@@ -10,101 +10,158 @@ locale: "zh"
 draft: false
 ---
 
-好久不见，我是 Nova。我坐在那，浏览器开着两个标签页——一边是 [Relevance AI](https://relevanceai.com/)，一边是 [n8n](https://n8n.io/?ps_partner_key=ZWFiZDIyYjkwZTFl&ps_xid=a2QKHm2KuZ1wkV&gsxid=a2QKHm2KuZ1wkV&gspk=ZWFiZDIyYjkwZTFl&gad_source=1)——想搞明白为什么大家总把这两者在同一个话题里提起。它们都解决自动化问题，这没错。但挖得越深，我越意识到它们其实在为完全不同的人解决_非常不同_的问题。说实话，一开始这让我很困惑。
+Relevance AI 和 n8n 都能用 AI 自动化工作，但起点不同。Relevance AI 从 Agent 与多 Agent Workforce 出发：定义角色、工具、知识、交接和护栏。n8n 从明确的工作流图出发：触发、分支、转换、凭据、重试与动作都由节点连接，AI Agent 是图中的一种能力。
 
-于是我花了几周时间把两个都测了一遍、读了真实用户讨论帖，试着弄清你什么时候真的会选这一个而不是另一个。这就是我的发现。
+没有绝对赢家。业务运营人员想快速搭建并监督 Agent 团队，优先评估 Relevance AI；技术负责人需要确定性编排、广泛集成和云端/自托管选择，优先评估 n8n。两者也能组合，但额外边界必须有明确负责人。
 
-## 为什么这两款工具总被拿来对比
+## 当前差异一览
 
-### 它们为不同用户解决不同问题
+| 判断项 | Relevance AI | n8n |
+|---|---|---|
+| 核心抽象 | Agent 与多 Agent Workforces | 节点工作流，可加入 AI Agent |
+| 构建方式 | 低/无代码 Agent、Tool、Knowledge、Workforce Builder | 可视化节点、Expression、Code、Custom/API Node |
+| AI 行为 | 角色 Agent、AI/固定/条件交接、升级处理 | AI Agent Node、AI Steps、Tools、Memory/RAG、Evaluations |
+| 确定性逻辑 | Tool 与固定/条件 Workforce 路线 | 强项：分支、转换、重试、子工作流 |
+| 部署 | 厂商托管云服务 | n8n Cloud 或自托管 Community/付费版本 |
+| 计费单位 | 订阅 + Actions + Vendor Credits | Cloud/付费方案按完整 Workflow Execution；模型/API 另算 |
+| 治理 | 历史、Activity Center、Analytics、Evaluation 和控制项按套餐变化 | Credentials、Projects、History、Evaluation；SSO、环境、Git、Secrets、Logs 按套餐变化 |
+| 许可证 | 专有服务 | Fair-code Sustainable Use License；Community Edition 源码可见，但不是 OSI Open Source |
+| 运维责任 | 平台由厂商运行 | Cloud 由厂商；自托管由你的团队负责 |
 
-这个我花了挺久才转过弯来的反转是：**Relevance AI 和 n8n 其实并不是正面竞争。**它们被拿来对比，是因为都身处「AI 自动化」这个领域，但两者的核心哲学几乎相反。
+一个常见说法需要纠正：n8n 不是简单的“开源且无限”。官方称其 fair-code。Community Edition 可以自托管，不按 Cloud Execution 计费，但基础设施、升级、备份、监控、安全和外部 API 都归你负责。
 
-Relevance AI 围绕「创建 AI Agent」来构建——用大白话描述、给它们工具、放手让它们跑起来的自主劳动者。n8n 是工作流自动化平台——每一步逻辑都由_你_设计，AI 只是你可以接进去的一项能力。
+## Relevance AI：以 Agent 团队为产品界面
 
-一个是关于_快速搭建 AI Agent_，另一个是关于_掌控复杂工作流的每一个节点_。两者都确实有用。问题是哪一个匹配你真实的工作方式。
+Relevance AI 的核心对象是带指令、工具和知识的 Agent。多个 Agent 可以在视觉画布中组成 Workforce；交接可由 AI 判断、固定顺序或条件规则决定。研究 Agent 可以把结果交给写作者，再交给审阅者，而无需把每个判断拆成低层集成节点。
 
-## Relevance AI 是为什么而生的
+平台还提供无代码 Tool Builder、App/API Integrations、Knowledge Sources、Triggers、Schedules、Escalations、Approvals、运行历史与 Evaluation。这不是给 Prompt 套壳，而是托管的 Agent Runtime 与运营控制面。
 
-### 面向非技术团队的无代码 AI Agent 构建器
+抽象层也有代价。输入变化大时，Agent 自选路径很方便；与固定图相比，却更难预测。付款、删除记录、受监管决定或大批量客户沟通，应优先收紧工具并设置明确审批。
 
-Relevance AI 把自己定位成搭建「AI 劳动力」的平台——这个说法相当准确。你用自然语言描述一个 Agent 的角色，给它分配工具（比如网页搜索、CRM 访问或邮件），它自己想办法执行任务。
+### 当前定价结构
 
-我觉得有意思的是：**从想法到跑起来的 Agent，速度快得惊人。**上手引导做得精致。你挑一个模板、定制 Agent 的行为、拿真实任务去测。不需要连节点、不需要懂 API 载荷。
+Relevance AI 实时定价页目前列出：
 
-它还通过了 SOC 2 Type II 认证和 GDPR 合规——如果你处理的是敏感业务数据，这很重要。
+- Free：每月 200 Actions，1 个 Workforce、1 名 Builder 与 1 个 Project；
+- Pro：月付 29 美元，年付折算 19 美元/月；月付套餐列出每月 2,500 Actions；
+- Team：月付 349 美元，年付折算 234 美元/月，并增加协作能力；
+- Enterprise：定制定价与控制项。
 
-定价按用量计费——拆成**Actions**（你的 Agent 实际做的事）和**Vendor Credits**（AI 模型成本）。[按 Relevance AI 官方文档](https://relevanceai.com/docs/admin/subscriptions/plans)，免费档每月给 200 个 Actions，付费档对个人用户约 $19/月起步。有一点值得知道：如果 Agent 每个任务要调多次 LLM，成本会涨得很快。它很灵活，但未必总是可预期。
+Vendor Credits 用于模型成本，与 Actions 分开；两者都能加购。价格和额度会变，正式采购应以实时页面及试点导出的用量为准。
 
-**适合谁：**销售和营销运营团队、支持团队、想不写代码就有 Agent 在跑的非技术运营者。
+一个 Action 是一次 Agent 工作，可以是发邮件，也可以是多步 Tool Workflow。它比逐步骤收费更接近结果，但不会消除模型成本和 Fan-out：Workforce 调用子 Agent 与工具时，会消耗 Actions 与 Credits。
 
-![2.png](/blog/images/relevance-ai-vs-n8n/1775027254741-c24a3f90-cee7-450b-901c-f9fde10c0a6b.webp)
+## n8n：先编排，再把 Agent 放进图里
 
-## n8n 是为什么而生的
+n8n 是工作流自动化平台。它把 Trigger 连到应用节点、HTTP Request、Data Mapping、Code、Conditions、Sub-workflows、Error Paths 与 Queues。AI Agent Node 可以调用工具、使用 Retrieval 或 Memory，并在某些 Tool Call 前等待人工批准；Evaluation 与 Tracing 能力随套餐和部署变化。
 
-### 开发者友好、完全可控的工作流自动化
+需要明确路径时，这种结构尤其适合：接收 Webhook、验证字段、补充记录、调用模型、等待批准、更新 CRM、通知负责人。AI 负责模糊环节，但不控制整条流程。
 
-n8n 是开源的，这一点塑造了它的一切。你用基于节点的可视化编辑器搭工作流——每个触发器、分支、转换和动作都可见、可配置。[n8n 官方定价页](https://n8n.io/pricing/)显示云端方案 $20/月起、含 2,500 次工作流执行，另有完全免费的 Community Edition 可自托管、执行不限量。
+灵活性也扩大运维风险。Credentials、Webhooks、Code Nodes、Community Nodes、文件系统访问和任意 API 都增加攻击面。n8n 提供 Security Audit 命令，但自托管团队必须真正修补实例、保护数据库与 Encryption Key，并设计备份。
 
-自托管选项对有数据控制要求的团队意义重大。你把它跑在自己的基础设施上——VPS、Docker 环境或自有服务器都行。完全自有，没有厂商锁定。
+### 当前定价结构
 
-等等……AI 能力呢？有，但得你自己搭。n8n 带 AI Agent 节点，支持工具调用、记忆和多步推理——但你要在更大的工作流里去配置它。灵活性是实打实的：一条工作流可以从 API 拉数据、过一遍 LLM、更新 CRM、再发一条 Slack 通知——全在你亲手设计的一条连通的流程里。
+n8n Cloud 与付费自托管方案按完成的 Workflow Execution 计费，不逐节点收费。并发、历史、存储、Projects、Environments 与治理功能也有限额。价格因地区和付款周期不同，应查实时表。
 
-代价是搭建时间和技能门槛。**如果团队里没人会管服务器、也没人会调试 JSON 载荷，n8n 用起来会很难受。**
+Community Edition 是 GitHub 提供的标准自托管版本。它不包含所有付费协作与治理功能；“没有 Cloud Execution 账单”也不等于生产免费。服务器、数据库、备份、监控、故障响应、升级，以及模型和第三方 API 仍要计入。
 
-**适合谁：**开发者、技术运维团队、习惯写代码的单干型搭建者，以及任何需要完全数据控制或自托管的人。
+## 谁更便宜
 
-## 关键差异逐项对比
+没有工作负载就没有诚实答案，两家的计费单位无法一一换算。
 
-### 表：目标用户 · 搭建复杂度 · AI 能力 · 定价模式 · 数据控制
+Relevance AI：
 
+`总成本 = 订阅 + Action 加购 + Vendor Credits/BYOL 模型 + 集成 + 复核人工`
 
-<table><colgroup><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p>特性</p></th><th colspan="1" rowspan="1"><p>Relevance AI</p></th><th colspan="1" rowspan="1"><p>n8n</p></th></tr><tr><td colspan="1" rowspan="1"><p>目标用户</p></td><td colspan="1" rowspan="1"><p>非技术团队、运营负责人</p></td><td colspan="1" rowspan="1"><p>开发者、技术团队</p></td></tr><tr><td colspan="1" rowspan="1"><p>搭建复杂度</p></td><td colspan="1" rowspan="1"><p>低——引导式上手 + 模板</p></td><td colspan="1" rowspan="1"><p>中高——节点配置、自托管</p></td></tr><tr><td colspan="1" rowspan="1"><p>AI 能力</p></td><td colspan="1" rowspan="1"><p>原生 Agent 构建器，支持多 Agent 系统</p></td><td colspan="1" rowspan="1"><p>AI Agent 节点（需手动接线）</p></td></tr><tr><td colspan="1" rowspan="1"><p>定价模式</p></td><td colspan="1" rowspan="1"><p>按用量（Actions + Vendor Credits）</p></td><td colspan="1" rowspan="1"><p>按执行次数（云端）或免费（自托管）</p></td></tr><tr><td colspan="1" rowspan="1"><p>数据控制</p></td><td colspan="1" rowspan="1"><p>仅云端（SOC 2、GDPR 合规）</p></td><td colspan="1" rowspan="1"><p>自托管获得完全控制</p></td></tr><tr><td colspan="1" rowspan="1"><p>集成数量</p></td><td colspan="1" rowspan="1"><p>持续增长，聚焦商业工具</p></td><td colspan="1" rowspan="1"><p>原生与社区节点覆盖 1,100+ 应用</p></td></tr><tr><td colspan="1" rowspan="1"><p>调试体验</p></td><td colspan="1" rowspan="1"><p>Agent 运行日志、结构化界面</p></td><td colspan="1" rowspan="1"><p>可视化执行追踪、完善工具</p></td></tr><tr><td colspan="1" rowspan="1"><p>开源</p></td><td colspan="1" rowspan="1"><p>否</p></td><td colspan="1" rowspan="1"><p>是（Community Edition）</p></td></tr></table>
+n8n Cloud：
 
+`总成本 = 套餐/Executions + 模型/API + 超额 + 构建与复核人工`
 
+自托管 n8n：
 
-## 谁该用 Relevance AI
+`总成本 = 可能的许可证层级 + 基础设施 + 模型/API + 工程 + 安全 + 支持`
 
-如果你的团队需要_现在就能跑_的 AI Agent、又没有多余的开发者，Relevance AI 是更快的那条路。它是给业务运营者设计的——比如销售团队想搭一个开拓客户的 Agent，或支持负责人想自动化工单分流。
+一次调用三个专家 Agent 的任务，无法直接和包含 20 个节点的一次 n8n Execution 比。应该比较同一业务结果，例如一条已经批准的 Lead Enrichment 记录。
 
-模板库真的有用。**你不是从零开始。**而多 Agent 编排——一个 Agent 把活委派给另一个——在你掌握基础之后，对更复杂的工作流也运转良好。
+## 按任务与团队选择
 
-话虽如此，对成本要有现实的预期。动手之前，[Relevance AI 定价页](https://relevanceai.com/pricing)值得仔细读一遍。如果你的 Agent 持续运行或大量调用 LLM，升级档位之前最好先把用量模型算清楚。
+### 更适合 Relevance AI
 
-**选 Relevance AI，如果：**你想快速部署 Agent、你不是技术背景、而你的主要工作流围绕销售、支持或调研。
+- 自动化由运营人员而非开发者负责；
+- 输入变化大，适合角色 Agent 与自适应交接；
+- 托管服务和快速套用模板比基础设施控制更重要；
+- 所选套餐中的 Calling、Meeting 或 Workforce 能力正好匹配；
+- 团队能约束工具并检查 Escalation、History 与 Evaluation。
 
-![3.png](/blog/images/relevance-ai-vs-n8n/1775027270552-1c51c0b4-df2a-4570-9a94-6165c3649cb8.webp)
+### 更适合 n8n
 
-## 谁该用 n8n
+- 技术负责人需要明确分支、转换、重试与错误路径；
+- 工作流接触大量 API，或需要 Custom Node/Code；
+- 自托管、网络位置或基础设施集成是硬要求；
+- AI 只应是确定性流程中的一个受限步骤；
+- 团队能运营实例，或愿意用 n8n Cloud 免去这项工作。
 
-n8n 回报有耐心的人。搭建更花时间，但一旦跑起来，强大得惊人。你可以在单条工作流里搭出触及 10+ 应用的自动化、应用条件逻辑、优雅处理错误、自定义一切。
+### 两个都不适合
 
-开源社区很活跃——[n8n 社区论坛](https://community.n8n.io/)有超过 45,000 名成员分享模板、调试技巧和自定义节点。夜里 11 点撞墙时，这真的救命。
+- 工作主要是文件、文档和单次委派，而非重复事件流水线；
+- 没有人负责监控和事故响应；
+- 现成 SaaS 自动化已能安全完成任务；
+- 业务流程还在剧烈变化，自动化只会冻结错误假设。
 
-对数据要求严格的团队，自托管是显然之选。数据放在哪由你决定，不需要第三方云。
+可继续参考 [Workflow Builder 与 AI Workspace](/zh/blog/workflow-builder-vs-ai-workspace)，以及 [Agentic System 应该自建还是购买](/zh/blog/building-agentic-ai-systems-build-or-buy)。
 
-我在真实用户反馈里注意到一件事：**自托管的免费 Community Edition 是真的不限量。**这很罕见。只要你有搭起来的技术能力，就能在服务器成本之外一分钱不花地跑复杂自动化。
+## 真正决定结果的治理与部署问题
 
-**选 n8n，如果：**你是技术背景、需要完整工作流控制、在意数据所有权，或想要最低的长期成本。
+### 数据位置不是隐私的全部
 
-![4.png](/blog/images/relevance-ai-vs-n8n/1775027282859-5c40b5bb-cda5-45e6-807c-926d585579d2.webp)
+Relevance AI 由厂商托管，并声明 SOC 2 Type II 与 GDPR 合规；n8n 可以自托管。两点都不能单独决定隐私。两边都可能把选中数据发送给模型服务商和已连接 SaaS。应画出每个 Processor、Credential、Log、Knowledge Store 与 Backup。
 
-## 两个都不合适的时候
+### 自托管同时带来控制与义务
 
-好吧，我说实话——这两款工具都有真实的边界。
+n8n 自托管允许选择 Region、Network、Database 与运营控制，也把补丁、Encryption Key、数据库可用性、Queue、日志留存、灾备和 Node 审查交给团队。Community Node 与代码执行尤其要审慎。
 
-需要跨大量应用的复杂分支逻辑或多步协调时，Relevance AI 会显得受限。它擅长「思考」的部分，但编排变复杂后就会触到边缘——你往往还得再配第二个工具去管执行层。
+### Agent 自主性必须配合受限工具
 
-n8n 则不是为「描述一个任务、让 AI 自己搞定」的人准备的。学习曲线是实打实的。如果团队不习惯节点、JSON、偶尔还要翻错误日志，它拖慢你的速度会多于帮你。
+两边都应先用只读 Credentials，把检索与修改分开。发送、删除、发布、购买或改客户记录前必须批准。设计 Idempotency Key 和重试规则，避免 Timeout 导致外部动作重复。
 
-而如果诚实的答案是：你的工作根本不是流水线形状的——是一段段要写的代码、一批批要处理的文档、一件件想单独交出去的任务——那真正的岔路口不在 Relevance 和 n8n 之间，而在 [哪种 Agent 形态适合你的工作](/zh/blog/claude-code-vs-cowork-vs-tag)：本地写代码、本地办公协作、异步共享同事，是三种不同的活儿，不是同一个工具里的三档设置。
+### 协作与治理能力按套餐变化
 
-如果你想要介于两者之间的东西——AI 优先、但又内置工作流自动化——[Lindy AI](https://www.lindy.ai/) 这类工具值得一看。Lindy vs n8n 对比（第 20 期）展示了 Lindy 如何在一个地方同时处理 Agent 推理与工作流执行，正好补上「n8n 太技术、Relevance AI 太受限」的团队之间的空档。
+不能假设自托管 Community Edition 包含 SSO、Git Environments、高级角色、Log Streaming 或企业支持；也不能假设 Relevance AI Free/Pro 包含 Team/Enterprise 的 Evaluation、End User 或治理。架构审批前要核对准确套餐。
 
-还在摸索自己需要什么？没关系。两个的免费档都试试——Relevance AI 给你 200 个 Actions 起步，n8n 的 Community Edition 自托管免费。小实验能告诉你很多。
+## 一套可复现的两周试点
 
-![5.png](/blog/images/relevance-ai-vs-n8n/1775027292740-c9cccead-b73f-440f-8e38-babc63234ece.webp)
+两边测试同一工作流，而不是各挑一个漂亮模板。可选“入站 Lead Qualification + 人工批准”。
 
-_总之，挖这个还挺有意思的。这两款工具在自己设计好的方向上都很出色——我只是觉得很多人最后很沮丧，是因为给处境选错了工具。希望这篇能帮你搞清楚自己到底在哪条道上。_
+1. **固定输入与结果。** 使用 50 条已有结论的历史线索，输出结构化建议、证据和跟进草稿。
+2. **使用相同工具。** CRM 只读、获准 Web Research 和沙箱目标；第一周禁止生产写入。
+3. **先定义成功。** 准确率、无依据断言、完成率、P50/P95 时间、复核分钟数和每条批准线索成本。
+4. **按平台自然方式构建。** Relevance AI 用角色 Agent 与 Workforce；n8n 用明确节点，只把模糊判断交给 AI Agent。
+5. **主动注入故障。** CRM 缺字段、Credential 过期、Rate Limit、重复 Webhook、模型 Timeout 和抓取页面里的恶意文字。
+6. **加入审批。** 邮件和 CRM 写入必须由人批准，拒绝、编辑和超时都要能恢复。
+7. **测维护。** 改一条评分规则并替换一个集成，记录更新和回归测试时间。
+8. **算完整成本。** 平台单位、模型/API、基础设施、构建时间、复核和失败运行全部计入。
 
-_接着去造东西了。_
+应选择“故障能被未来维护团队理解和恢复”的平台，而不是首次 Demo 最漂亮的平台。
+
+## 迁移与锁定风险
+
+Relevance AI 逻辑分布在 Agent Instructions、Tools、Knowledge、Workforce Connections 与平台历史中。n8n 逻辑分布在导出 Workflow JSON、Credentials、Nodes、Expressions、Code 与部署配置中。两边的 Export 都不等于可直接迁移的业务流程。
+
+另存一份平台外流程规范：Schemas、Decision Rules、Prompts、Evaluation Cases、Approvals、Integration Contracts 和 Rollback。关键数据尽量留在可控系统中；关键第三方 API 用稳定接口封装；模型替换与工作流迁移分开测试。
+
+若两者组合，应指定唯一编排事实源。合理模式是 n8n 负责 Trigger、Validation、Retry 与 Write，Relevance AI 只处理边界明确的研究或分类。不要让两边互相重试和委派，形成循环。
+
+## 结论
+
+业务团队需要托管式角色 Agent 与 Workforce，Relevance AI 更直接；技术团队需要明确自动化逻辑、扩展性和部署控制，n8n 更合适。两者都能做 Agent 与确定性流程，差异在于谁是第一抽象，以及谁承担运维。
+
+不要根据集成数量或“无代码/开发者工具”标签拍板。用同一流程、同一批准结果、同一故障集做测试，按实时套餐核对功能。真正合适的平台，是上线半年后团队仍能安全理解、运行和修改的那个。
+
+### 官方资料
+
+- [Relevance AI Pricing](https://relevanceai.com/pricing-new)
+- [Relevance AI Introduction](https://relevanceai.com/docs/get-started/introduction)
+- [Relevance AI Workforces](https://relevanceai.com/docs/get-started/core-concepts/workforces)
+- [n8n Pricing](https://n8n.io/pricing/)
+- [n8n Documentation 与 Fair-code 说明](https://docs.n8n.io/)
+- [n8n Security Audit](https://docs.n8n.io/hosting/securing/security-audit/)

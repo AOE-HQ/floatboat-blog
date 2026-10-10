@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="t d">
+  <title id="t">AI 自动化交付方式决策路径</title><desc id="d">按照流程稳定性、内部负责人、持续需求和专业复杂度，在暂缓、自建、招聘和委托机构之间选择。</desc>
+  <rect width="1200" height="600" fill="#f7f0e5"/><g font-family="Microsoft YaHei,sans-serif" fill="#17131f">
+  <text x="60" y="62" font-size="30" font-weight="700">流程清楚以后，再选择交付方式</text>
+  <g transform="translate(430 105)"><rect width="340" height="78" rx="15" fill="#fff" stroke="#17131f" stroke-width="2"/><text x="170" y="32" text-anchor="middle" font-size="18" font-weight="700">流程是否稳定并且可以衡量？</text><text x="170" y="57" text-anchor="middle" font-size="14">触发 · 输出 · 异常 · 负责人</text></g>
+  <path d="M430 144H235v82M770 144h195v82" fill="none" stroke="#6f43c0" stroke-width="4"/><text x="325" y="132" font-size="15">否</text><text x="850" y="132" font-size="15">是</text>
+  <g transform="translate(90 226)"><rect width="290" height="110" rx="15" fill="#ffd966" stroke="#17131f" stroke-width="2"/><text x="145" y="42" text-anchor="middle" font-size="23" font-weight="700">暂缓</text><text x="145" y="72" text-anchor="middle" font-size="15">记录案例并确定负责人</text></g>
+  <g transform="translate(820 226)"><rect width="290" height="110" rx="15" fill="#ede4ff" stroke="#6f43c0" stroke-width="3"/><text x="145" y="38" text-anchor="middle" font-size="18" font-weight="700">内部是否有人能搭建</text><text x="145" y="62" text-anchor="middle" font-size="18" font-weight="700">并维护安全版本？</text></g>
+  <path d="M965 336v52H620M965 388h135" fill="none" stroke="#6f43c0" stroke-width="4"/><text x="780" y="376" font-size="15">否</text><text x="1035" y="376" font-size="15">是</text>
+  <g transform="translate(930 408)"><rect width="220" height="110" rx="15" fill="#fff" stroke="#17131f" stroke-width="2"/><text x="110" y="44" text-anchor="middle" font-size="23" font-weight="700">内部自建</text><text x="110" y="74" text-anchor="middle" font-size="15">范围窄、可逆</text></g>
+  <g transform="translate(430 408)"><rect width="380" height="110" rx="15" fill="#fff" stroke="#17131f" stroke-width="2"/><text x="190" y="35" text-anchor="middle" font-size="17" font-weight="700">需求是否持续并会不断积累？</text><text x="100" y="74" text-anchor="middle" font-size="22" font-weight="700">招聘</text><text x="280" y="74" text-anchor="middle" font-size="22" font-weight="700">委托机构</text><text x="100" y="96" text-anchor="middle" font-size="13">持续需求组合</text><text x="280" y="96" text-anchor="middle" font-size="13">有边界的复杂项目</text><path d="M190 48v58" stroke="#d4c7df" stroke-width="2"/></g>
+  </g></svg>

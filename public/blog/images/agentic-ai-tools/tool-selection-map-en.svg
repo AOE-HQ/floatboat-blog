@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Five agentic AI tool categories</title><desc id="desc">A map from interactive assistants to persistent workspace agents, comparing operating scope, autonomy and controls.</desc>
+  <rect width="1200" height="675" fill="#f6f0e4"/><rect x="42" y="42" width="1116" height="591" rx="28" fill="#fffaf0" stroke="#25231f" stroke-width="3"/>
+  <text x="82" y="105" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#25231f">Choose the boundary before the brand</text>
+  <text x="82" y="141" font-family="Arial,sans-serif" font-size="18" fill="#625d54">More autonomy means more scope to price, permission and recover.</text>
+  <line x1="113" y1="515" x2="1080" y2="515" stroke="#25231f" stroke-width="3"/><path d="M1080 515l-16-10v20z" fill="#25231f"/>
+  <g font-family="Arial,sans-serif" fill="#25231f">
+    <g transform="translate(82 195)"><rect width="188" height="250" rx="18" fill="#f0c66d"/><text x="18" y="42" font-size="22" font-weight="700">Assistant</text><text x="18" y="82" font-size="16">One conversation</text><text x="18" y="110" font-size="16">Human steering</text><text x="18" y="190" font-size="15">Control:</text><text x="18" y="216" font-size="15">review output</text></g>
+    <g transform="translate(294 195)"><rect width="188" height="250" rx="18" fill="#e8b981"/><text x="18" y="42" font-size="22" font-weight="700">Workflow</text><text x="18" y="82" font-size="16">Known path</text><text x="18" y="110" font-size="16">App actions</text><text x="18" y="190" font-size="15">Control:</text><text x="18" y="216" font-size="15">branches + errors</text></g>
+    <g transform="translate(506 195)"><rect width="188" height="250" rx="18" fill="#d7aa9b"/><text x="18" y="42" font-size="22" font-weight="700">Builder</text><text x="18" y="82" font-size="16">Variable route</text><text x="18" y="110" font-size="16">Defined tool set</text><text x="18" y="190" font-size="15">Control:</text><text x="18" y="216" font-size="15">evals + policy</text></g>
+    <g transform="translate(718 195)"><rect width="188" height="250" rx="18" fill="#a8bdac"/><text x="18" y="42" font-size="22" font-weight="700">Coding agent</text><text x="18" y="82" font-size="16">Repo + terminal</text><text x="18" y="110" font-size="16">Tests + diffs</text><text x="18" y="190" font-size="15">Control:</text><text x="18" y="216" font-size="15">sandbox + review</text></g>
+    <g transform="translate(930 195)"><rect width="188" height="250" rx="18" fill="#91aec5"/><text x="18" y="42" font-size="22" font-weight="700">Workspace</text><text x="18" y="82" font-size="16">Apps + memory</text><text x="18" y="110" font-size="16">Schedules</text><text x="18" y="190" font-size="15">Control:</text><text x="18" y="216" font-size="15">admin + run logs</text></g>
+    <text x="82" y="570" font-size="17" font-weight="700">INTERACTIVE</text><text x="958" y="570" font-size="17" font-weight="700">PERSISTENT</text><text x="472" y="607" font-size="16">Increasing execution scope and governance burden →</text>
+  </g>
+</svg>

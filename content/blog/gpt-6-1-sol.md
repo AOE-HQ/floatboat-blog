@@ -10,101 +10,168 @@ locale: "en"
 draft: false
 ---
 
-**TL;DR**
+GPT-6.1 Sol is OpenAI’s cost-performance model for complex coding, computer use, professional documents, and multi-step agent work. Its standard short-context API rates are one-fifth of GPT-6 Astra’s input and output rates, while OpenAI reports results close to Astra on several agentic evaluations.
 
-- GPT-6.1 Sol is OpenAI's new middle ground: a major upgrade to GPT-6 Sol that approaches GPT-6 Astra on coding, computer use, document work, and multi-step automation while charging $2 per million input tokens and $10 per million output tokens—one-fifth of Astra's standard rates.
-- It is available through the API as `gpt-6.1-sol` and in ChatGPT Work and Codex for Plus, Pro, Business, Enterprise, and Edu users. It is not available in ordinary Chat at launch.
-- The model has a 1.05-million-token context window, a 128K output limit, image input, and function, web-search, file-search, and computer-use tools.
-- “One-fifth the price” describes token rates, not a guaranteed 80% reduction on every task. Reasoning effort, retries, tool calls, cache reuse, and subscription allowances all change the real bill.
-- Use Astra when the last few points of success rate matter more than cost, GPT-6.1 Sol for difficult production work with a budget, and Luna for narrow, high-volume tasks.
+That headline needs two qualifications. First, “one-fifth” describes the rate card, not the cost of every completed task. Long context, reasoning tokens, processing tier, tool fees, retries, and acceptance rate all affect the bill. Second, OpenAI availability does not imply Floatboat availability: **GPT-6.1 Sol is not in Floatboat’s current supported-model matrix or client selector.** This page analyzes the OpenAI model; it does not announce a Floatboat integration.
 
-## GPT-6.1 Sol Is an Upgrade to Sol, Not a New Astra
+## GPT-6.1 Sol at a glance
 
-The name invites confusion. GPT-6.1 Sol is the successor to GPT-6 Sol, not a renamed version of GPT-6 Astra and not the GPT-6.1 Astra model whose wider release was paused over safety concerns. OpenAI positions it as the practical workhorse of the GPT-6 family: much closer to Astra's capability than its price suggests, but without claiming to replace the flagship on every difficult task.
-
-That distinction matters because the GPT-6 lineup now reflects three different operating priorities. [GPT-6 Astra](/blog/gpt-6-astra) is the high-end choice for the hardest work. GPT-6.1 Sol is the cost-performance choice for complex work that must run repeatedly. GPT-6 Luna is the volume choice for focused tasks. The useful question is no longer “which model is smartest?” It is “how much capability does this job need, and what failure rate can it tolerate?”
-
-At launch, GPT-6.1 Sol is available in the OpenAI API and in ChatGPT Work and Codex. Plus, Pro, Business, Enterprise, and Edu subscribers can use it in those work surfaces, but it does not appear in standard Chat. That product boundary is easy to miss and explains why some subscribers can select the model in Codex while finding nothing new in the familiar chat model picker.
-
-## Specs and Pricing
-
-| Specification | GPT-6.1 Sol |
+| Item | Current OpenAI specification |
 |---|---|
-| API model ID | `gpt-6.1-sol` |
-| Context window | 1.05 million tokens |
-| Maximum output | 128K tokens |
+| Model ID | `gpt-6.1-sol` |
+| Positioning | Near-Astra performance for complex work at lower cost |
+| Context window | 1,050,000 tokens |
+| Maximum output | 128,000 tokens |
 | Knowledge cutoff | April 30, 2026 |
-| Input | Text and images |
-| Output | Text |
-| Reasoning effort | low, medium, high, xhigh, max |
-| Tools | Functions, web search, file search, computer use |
-| Standard input price | $2 / million tokens |
-| Cached input price | $0.10 / million tokens |
-| Standard output price | $10 / million tokens |
+| Modalities | Text input/output; image input; no audio |
+| Reasoning effort | `low`, `medium` (default), `high`, `xhigh`, `max` |
+| API endpoints | Responses and Chat Completions; use Responses for tool calling |
+| Structured output | Supported |
+| Fine-tuning | Not supported |
+| Data residency | US and EU where eligible; regional processing can add a price premium |
 
-The headline comparison is simple: Astra costs $10 in and $50 out per million tokens, so GPT-6.1 Sol's standard input and output prices are exactly one-fifth as high. Luna remains far cheaper at $0.10 in and $0.50 out. The unusually aggressive figure is cached input: $0.10 per million tokens, 95% below Sol's standard input price. That makes a material difference for agents that repeatedly reuse a large policy, codebase map, document corpus, or workflow description.
+The [official model page](https://developers.openai.com/api/docs/models/gpt-6.1-sol) lists web search, file search, image generation, Code Interpreter, hosted shell, apply patch, skills, computer use, MCP, and tool search for the Responses API. Function calling is supported there; OpenAI’s reasoning guidance says GPT-6.1 Sol does not support function calling through Chat Completions.
 
-But token price is only the first line of the calculation. A model that uses more reasoning tokens, retries a failed tool call, or takes a longer path through a computer-use task can cost more despite a cheaper rate card. Conversely, a more capable model can be cheaper per completed job if it finishes in one attempt. For production evaluation, track cost per accepted result—not cost per million tokens in isolation.
+The 1.05M context window is capacity, not a recommendation to fill every request. Prompts over 272K input tokens move the entire request into OpenAI’s long-context price band. Retrieval, file selection, summaries, and cache design still matter.
 
-## Where the Upgrade Shows Up
+## Where GPT-6.1 Sol is available
 
-### Coding: the clearest case for the new default
+OpenAI released `gpt-6.1-sol` to the API on September 29, 2026. It is also available in Codex and ChatGPT Work for eligible Plus, Pro, Business, Enterprise, and Edu users. OpenAI’s [ChatGPT rate card](https://help.openai.com/en/articles/20001415-chatgpt-rate-card-enterprise-token-based-pricing) explicitly says GPT-6.1 Sol, GPT-6 Sol, and GPT-6 Luna are Work and Codex models and are not available in Chat.
 
-On DeepSWE v1.1, a benchmark built around long-horizon work in real repositories, OpenAI reports that GPT-6.1 Sol matches Astra while beating GPT-6 Sol's best score by 6.4 percentage points at a lower reasoning setting and cost. This is the strongest argument for adopting it as a default coding model: the gain is not just code completion quality, but the ability to stay coherent while navigating, editing, testing, and repairing a real codebase.
+These channels have different economics:
 
-The caveat is familiar. A benchmark harness is not your repository. Teams should still test the model against their own build system, review standards, dependency constraints, and failure recovery. The model that wins a benchmark may still be the wrong fit if it makes expensive architectural changes or consumes more subscription allowance than expected.
+- **API:** metered token, cache-write, processing-tier, tool, and possibly regional-processing charges.
+- **Codex and ChatGPT Work:** access and consumption depend on the user’s plan, included allowance, credits, and administrator settings.
+- **Standard Chat:** not an available model-picker option according to the current OpenAI documentation.
 
-### Professional documents and business workflows
+Do not convert API dollars into assumed subscription usage. OpenAI publishes a separate rate card for token-based enterprise usage, while included plan limits are governed by the plan.
 
-On GDP.pdf, which asks models to reason over complex PDFs containing tables, diagrams, charts, and fine print, GPT-6.1 Sol approaches Astra and reportedly beats Opus 5.5 with fallbacks at less than half the cost per task. On AutomationBench, which covers multi-step workflows across 47 tools in sales, marketing, operations, support, finance, and HR, it scores 2.2 points above Opus 5.5 at medium effort and 4.8 points above GPT-6 Sol at the same setting.
+### Floatboat support status
 
-These tests matter more than a generic knowledge score for agent builders. They combine imperfect source material, tool selection, sequencing, and verification—the places where real automations break. They still do not prove reliability for a particular CRM, finance process, or regulated workflow, but they are closer to production work than a single-turn question set.
+GPT-6.1 Sol does **not** belong to Floatboat’s currently confirmed supported models. It is absent from the current client selector and from the confirmed bottom-layer model registry. Floatboat’s supported OpenAI chat model is GPT-6 Astra; configured OpenAI capacity also includes specific GPT-5.6 and GPT-5.3 Codex models, not GPT-6.1 Sol.
 
-### Computer use
+If that matrix changes later, the product directory should be updated from the maintained model source before this article is revised. Until then, use OpenAI’s API, Codex, or ChatGPT Work for GPT-6.1 Sol; do not interpret Floatboat branding on this publication as product availability.
 
-GPT-6.1 Sol gains seven points over GPT-6 Sol on the OSWorld 2.0 offline set at maximum reasoning effort. It finishes within 2.1 points of Astra while OpenAI estimates roughly one-seventh the cost per task. That is potentially more important than the raw score: computer-use agents consume long trajectories, screenshots, and repeated actions, so cost compounds quickly.
+## Pricing: short context, long context, and speed tiers
 
-Do not confuse computer use with a cloud computer. Computer use is the model's ability to perceive and operate software through its interface. A cloud computer is the persistent machine on which an agent may run. A product can provide either one without the other.
+OpenAI’s [current API pricing](https://developers.openai.com/api/docs/pricing) distinguishes context length and processing tier. Standard prices per million tokens are:
 
-### Science and factuality
+| Standard processing | Input | Cached input | Cache write | Output |
+|---|---:|---:|---:|---:|
+| Up to 272K input tokens | $2.00 | $0.10 | $2.50 | $10.00 |
+| More than 272K input tokens | $4.00 | $0.20 | $5.00 | $15.00 |
 
-On Terminal-Bench Science 0.1, GPT-6.1 Sol more than doubles GPT-6 Sol's score at maximum effort, with an average task cost of $5.47 in OpenAI's evaluation. Astra still leads the measured models at 68.1%, so hard scientific work remains one of the clearest reasons to pay for the flagship.
+For a request over the threshold, the long-context rates apply to the full request—not only the portion above 272K. OpenAI also lists Batch and Flex at 50% below Standard, Fast at 2× Standard, and Ultrafast at 6× Standard. Regional processing adds 10% where applicable. Availability and service guarantees differ, so the cheapest listed tier is not automatically valid for an interactive workflow.
 
-OpenAI also reports that GPT-6.1 Sol reduces the share of difficult answers containing a factual error from 11.4% to 7.7% at low effort, about a 32% relative reduction. The test set consists of conversations selected because users had previously flagged an error; it is deliberately adversarial and should not be read as the hallucination rate of normal use.
+![GPT-6.1 Sol cost factors across context and processing tiers](/blog/images/gpt-6-1-sol/cost-boundaries-en.svg)
 
-## GPT-6.1 Sol vs Astra, Sol, and Luna
+*Token rates are only the base. Reasoning output, tools, retries, cache writes, and the share of results that pass review determine cost per accepted job.*
 
-| Choose | When it fits | Main trade-off |
-|---|---|---|
-| GPT-6 Astra | The hardest scientific, cyber, coding, or computer-use task; failure is more expensive than inference | Highest price and more restricted capabilities |
-| GPT-6.1 Sol | Difficult production work, long documents, coding agents, and repeated multi-tool workflows | Near-frontier rather than absolute frontier performance |
-| GPT-6 Sol | Existing tested deployments that do not yet justify migration | Worse price-performance than its successor |
-| GPT-6 Luna | Classification, routing, extraction, and other focused high-volume work | Less reliable on long, ambiguous tasks |
+### Three transparent cost examples
 
-This is a different structure from the previous [GPT-5.6 Sol, Terra, and Luna family](/blog/gpt-5-6-sol-terra-luna). GPT-6.1 Sol is not one of three evenly spaced tiers. It sits between a heavily guarded flagship and an extremely cheap volume model, making it the obvious first candidate for most serious agent workloads—but not an automatic migration.
+The following examples use Standard processing and text-token rates only. They exclude tool-call fees and assume the request stays below 272K input tokens.
 
-## What the Launch Claims Do Not Prove
+**Document review:** 80K uncached input and 8K output:
 
-First, most numbers come from OpenAI's research environment. OpenAI explicitly notes that production output can differ because system prompts, available tools, reasoning settings, and harnesses differ. Second, “cost per task” depends on assumptions about token usage and fallbacks. Third, API economics do not map cleanly to ChatGPT or Codex subscription quotas. Early community measurements about allowance consumption are useful leads, not settled facts.
+> (80,000 ÷ 1,000,000 × $2) + (8,000 ÷ 1,000,000 × $10) = **$0.24**
 
-There is also no basis for assuming that every product offering OpenAI models has already added GPT-6.1 Sol. Integration requires commercial, technical, and evaluation work. Unless a product publishes support, treat availability there as unknown.
+**Repeated agent run:** 20K uncached input, 180K cached input, and 15K output:
 
-## A Practical Migration Test
+> $0.04 + $0.018 + $0.15 = **$0.208**
 
-Use a small set of tasks that represent the expensive failures in your own workflow:
+This assumes the reusable prefix is already in cache. Creating that cache can incur the $2.50-per-million cache-write rate.
 
-1. A repository change that requires navigation, implementation, tests, and review.
-2. A long PDF task with charts, footnotes, and conflicting details.
-3. A multi-tool workflow with one recoverable failure.
-4. A computer-use task that requires visual verification.
-5. A repeated task that can reuse a large cached prefix.
+**Long-context analysis:** 350K uncached input and 20K output:
 
-For each, record accepted completion rate, elapsed time, input and output tokens, cache hits, tool-call count, human corrections, and total cost. Compare GPT-6.1 Sol with the model you actually use—not only with Astra at maximum effort. The best reasoning setting is often the lowest one that reliably passes your acceptance test.
+> (350,000 ÷ 1,000,000 × $4) + (20,000 ÷ 1,000,000 × $15) = **$1.70**
 
-## The Bottom Line
+Reasoning tokens are billed as output tokens, and a failed run still costs money. For real evaluation, calculate:
 
-GPT-6.1 Sol is significant because it moves frontier-like agent capability down the cost curve. Its best case is not casual chat. It is repeated, difficult work where Astra may be excellent but economically excessive: coding agents, document-heavy professional analysis, computer use, and long multi-tool workflows.
+> cost per accepted result = total model + cache + tool charges ÷ outputs that pass acceptance
 
-The model deserves testing as a new production default. It does not deserve blind migration. Measure the completed work, the retries, and the real quota or API spend. That is where the claimed fifth-of-Astra economics either becomes a practical advantage—or disappears.
+A cheaper rate can lose if it needs more attempts or human repair. A stronger model can win economically when it completes a costly workflow once.
 
-This analysis was verified against [OpenAI's GPT-6.1 Sol announcement](https://openai.com/index/introducing-gpt-6-1-sol/), the [OpenAI model catalog](https://developers.openai.com/api/docs/models), and the [DevDay 2026 recap](https://openai.com/index/devday-2026-recap/).
+## What OpenAI’s benchmarks support—and what they do not
+
+OpenAI’s [GPT-6.1 Sol announcement](https://openai.com/index/introducing-gpt-6-1-sol/) describes gains across agentic coding, computer use, scientific work, professional documents, and automation. The useful way to read those numbers is as a map of where to test, not as a forecast for your workload.
+
+### Coding and repository work
+
+OpenAI reports GPT-6.1 Sol matching Astra on DeepSWE v1.1 and improving over GPT-6 Sol’s best result by 6.4 percentage points at a lower effort and cost. DeepSWE evaluates long-horizon work in real repositories, so it is more relevant to agents that must navigate, edit, test, and repair than a code-completion score.
+
+It does not establish performance on your language, repository conventions, test suite, permissions, or review standard. A migration test should include real patches and reject unnecessary architectural changes even if the build passes.
+
+### Computer use and multi-tool work
+
+On the OSWorld 2.0 offline set, OpenAI reports a seven-point gain over GPT-6 Sol at maximum effort, within 2.1 points of Astra, at roughly one-seventh Astra’s task cost in its evaluation. On AutomationBench, OpenAI reports improvements over GPT-6 Sol at the same effort across workflows involving 47 tools.
+
+These results support testing Sol for long action sequences. They do not guarantee that a browser, connector, approval system, or recovery loop will be reliable. The [agent harness](/blog/what-is-an-agent-harness) and tool implementation can change the outcome as much as the model.
+
+### Documents, science, and factuality
+
+OpenAI reports near-Astra performance on GDP.pdf, which uses dense professional documents, and more than double GPT-6 Sol’s score on Terminal-Bench Science 0.1 at maximum effort. The published average Sol cost for that science evaluation is $5.47 per task; that is a benchmark-specific measurement, not a general science-task price.
+
+OpenAI also reports fewer difficult responses containing factual errors than GPT-6 Sol at low effort. The prompt set was selected because earlier users had flagged errors, so the percentage is not a normal-use hallucination rate. For consequential work, source checks and human review remain necessary.
+
+The announcement notes that evaluations ran in OpenAI’s research environment or API and can differ from production products because prompts, tools, effort, and harnesses differ. Competitor figures came from public reports, not necessarily one controlled harness. Those limitations belong next to the benchmark claims.
+
+## Reasoning effort changes the product you are buying
+
+GPT-6.1 Sol defaults to `medium` and supports `low` through `max`; it does not accept `none` or `minimal`. Lower effort generally reduces reasoning-token usage and latency. Higher effort gives the model more room for planning, debugging, synthesis, and multi-step trade-offs.
+
+OpenAI’s [deployment checklist](https://developers.openai.com/api/docs/guides/deployment-checklist) recommends `low` for extraction, routing, classification, and routine rewrites; `medium` or `high` for diagnosis, comparison, planning, and code; and `xhigh` or `max` only when representative evaluations justify the extra cost and latency. Pro reasoning mode is a separate choice and can add model work beyond the selected effort.
+
+Do not set `max` simply because the task is important. Start at the lowest plausible effort and promote only the failures that matter. A routing policy might send a structured extraction to Luna, a complex deliverable to Sol at medium, and an unresolved high-impact case to Astra.
+
+## When GPT-6.1 Sol is a good fit
+
+Sol is a strong candidate when all of these are true:
+
+- the task needs more planning and coherence than a narrow volume model provides;
+- the workflow repeats often enough that Astra’s price matters;
+- text or image context is large, but you can manage it below the long-context threshold most of the time;
+- the work benefits from Responses API tools or multi-step execution;
+- you have an acceptance test and a path to escalate failures.
+
+Examples include repository-level changes, board-ready deliverables built from several sources, document-heavy analysis, and multi-tool operational work. OpenAI’s [model selection guide](https://developers.openai.com/api/docs/guides/model-selection) similarly positions Sol for complex projects where cost matters and advises comparing it with Astra on the same tasks.
+
+## When to choose something else
+
+### Choose GPT-6 Astra for the hardest quality-first work
+
+Astra remains OpenAI’s stated flagship. Use it when a small quality improvement is worth much more than inference cost, or when your evaluation shows Sol misses high-impact cases. See the separate [GPT-6 Astra analysis](/blog/gpt-6-astra) for its role and constraints.
+
+### Choose GPT-6 Luna for scoped, high-volume work
+
+Luna is far cheaper and supports `none` reasoning. It is the better first test for classification, routing, extraction, and tightly specified transformations. Escalation often works better than sending every request to Sol.
+
+### Keep an older model when migration has no measured benefit
+
+An existing production model may have tuned prompts, known edge cases, and stable latency. The new model’s lower list price does not justify migration until it passes regression tests. The older [GPT-5.6 Sol, Terra, and Luna family](/blog/gpt-5-6-sol-terra-luna) also uses different capability and price assumptions; do not map family names mechanically.
+
+### Choose a supported Floatboat model for Floatboat workflows
+
+GPT-6.1 Sol is not a Floatboat option today. If the task must run inside Floatboat, select from the current supported-model directory rather than designing around this model ID. This is a product-support constraint, not a judgment about the OpenAI model’s quality.
+
+## A decision-grade evaluation checklist
+
+Build a small test set from work you actually accept or reject. Include ordinary cases, expensive failures, ambiguous instructions, long context, a broken tool, and a task that benefits from cached context.
+
+For each model and effort setting, record:
+
+1. accepted completion rate and failure category;
+2. input, cached input, cache-write, reasoning, and visible output tokens;
+3. tool calls, tool errors, and duplicate or unnecessary actions;
+4. elapsed time and time to first useful output;
+5. human correction time and severity of missed issues;
+6. total model and tool cost per accepted result;
+7. behavior near the 272K long-context threshold;
+8. whether a cheaper model plus escalation beats a single-model policy.
+
+Use the Responses API when tools are part of the test. Keep the same system instructions, tool definitions, fixtures, and acceptance rubric across comparisons. Repeat enough cases to distinguish a real pattern from a lucky run. The principles in [context engineering for AI agents](/blog/context-engineering-for-ai-agents) help keep irrelevant context from turning a large window into unnecessary cost.
+
+## The bottom line
+
+GPT-6.1 Sol is a credible OpenAI default candidate for complex work where Astra-level pricing is difficult to sustain. Its 1.05M window, 128K maximum output, image input, broad Responses API tool support, and five reasoning efforts make it flexible. Its short-context Standard rates are $2 input, $0.10 cached input, $2.50 cache writes, and $10 output per million tokens.
+
+But cost changes after 272K input tokens, across processing tiers, and with regional processing. Benchmark results identify promising workloads; they do not replace evaluation. Most importantly for Floatboat readers, GPT-6.1 Sol is **not currently supported by Floatboat**. Test it only through the OpenAI channels that officially expose it, and choose models for Floatboat work from the current confirmed directory.

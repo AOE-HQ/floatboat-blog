@@ -37,7 +37,7 @@ FloatSchedule 自己启动了这项任务：
 
 Floatboat 恢复项目、在内置浏览器里打开已授权的 FastMoss 会话，然后开始干活。
 
-这就是当 [FastMoss](https://www.fastmoss.com/) 成为 [Floatboat](</ai-agent-workspace>)（一个横跨浏览器、文件、模型、已连接服务与时间运行的 Agent 操作环境）内部的垂直情报层时发生的事。
+这就是当 [FastMoss](https://www.fastmoss.com/) 成为 [Floatboat](/ai-agent-workspace)（一个横跨浏览器、文件、模型、已连接服务与时间运行的 Agent 操作环境）内部的垂直情报层时发生的事。
 
 ## 08:00 — 日历发起工作
 
@@ -248,7 +248,7 @@ FastMoss 提供垂直电商情报。Floatboat 给这份情报配上手、记忆�
 
   * [FastMoss MCP](https://developer.fastmoss.com/mcp/overview.html)
 
-  * [Floatboat Agent Workspace](</ai-agent-workspace>)
+  * [Floatboat Agent Workspace](/ai-agent-workspace)
 
   * [Calendar-Driven AI](/zh/blog/what-if-your-calendar-could-run-itself)
 

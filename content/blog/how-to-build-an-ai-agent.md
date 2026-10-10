@@ -1,6 +1,6 @@
 ---
-title: "How to Build an AI Agent: What It Actually Takes"
-description: "Building an AI agent isn't as simple as picking a tool. Here's what the process actually involves — and how to decide whether doing it yourself is the right move."
+title: "How to Build an AI Agent: From Task Contract to Recovery"
+description: "A practical guide to building an AI agent from task definition and tool design through permissions, state, evals, observability, deployment, and failure recovery."
 slug: "how-to-build-an-ai-agent"
 date: "2026-03-25"
 author: "Nova"
@@ -10,146 +10,186 @@ locale: "en"
 draft: false
 ---
 
-Hello, Nova is coming~ I've been poking around AI tools for a while now, and lately the question I keep seeing everywhere is: **"How do I build an AI agent?"**
+Building an AI agent is not mainly a prompting exercise. It is a systems job: define an outcome, give a model controlled access to tools and state, evaluate complete trajectories, and make every consequential action observable and recoverable.
 
-People treat it like it's one thing. Like there's a single answer. But after spending a few months experimenting with different setups — some worked, most didn't on the first try — I realized the question itself is a little misleading. What you're actually asking is closer to: _"What kind of agent, for what purpose, and am I the right person to build it?"_
+This guide follows that engineering lifecycle. It does not assume a specific model or framework, and it does not begin with a multi-agent diagram. Anthropic’s current [guidance on effective agents](https://www.anthropic.com/engineering/building-effective-agents) recommends starting with the simplest approach that works because autonomy exchanges predictability, latency, and cost for flexibility.
 
-That's what this post is actually about.
+## What are you actually building?
 
-## What "Building an AI Agent" Actually Means
+An agent is a model that chooses and uses tools in a loop, observes the environment, updates its plan, and stops when it reaches an outcome or a control boundary. A fixed sequence of model calls is better described as a workflow.
 
-Let me clear this up first, because I was confused about it for way longer than I should have been.
+| System | Who chooses the next step? | Good fit |
+|---|---|---|
+| Single model call | Application code | One bounded transformation |
+| Workflow | Predetermined code, graph, or rules | Stable multi-step process |
+| Agent | Model, inside policy and runtime limits | Open-ended work where the path cannot be known in advance |
 
-A chatbot answers questions. **An ​****[AI agent](https://www.ibm.com/think/topics/ai-agents)****​​ takes action.** It can plan multi-step tasks, use external tools, remember context across steps, and make decisions without you prompting it at every turn. The difference sounds subtle until you try to build one.
+Do not add autonomy merely because a model supports tool calling. First prove that a single call or workflow cannot meet the quality target. For guidance on stabilizing repeatable business work before automating it, use the separate [repeated-work agent guide](/blog/how-to-build-ai-agents-for-repeated-work). This article starts once an agent is justified.
 
-![2.PNG](/blog/images/how-to-build-an-ai-agent/1774419249726-02da6b63-c1f3-4c40-b9b9-2896277d7e0d.webp)
+## 1. Write the task contract
 
-### What's happening under the hood: model, memory, tool calls, execution
+Before choosing a model, write a one-page contract:
 
-At its core, every AI agent is built from a few components working together:
+- **Trigger:** who or what starts the task?
+- **Inputs:** which fields, files, and identities are required?
+- **Outcome:** what artifact or environmental change counts as complete?
+- **Allowed sources:** which systems may the agent read?
+- **Allowed actions:** which tools may it call, and with what scope?
+- **Evidence:** what must accompany the result?
+- **Approval:** which actions require a person?
+- **Stop conditions:** success, blocked state, iteration limit, time limit, and budget limit.
+- **Non-goals:** what the agent must refuse or escalate.
 
-  * **The ​LLM** ​**​ backbone** — the model doing the reasoning (GPT-4, Claude, Gemini, etc.)
+“Research this company” is not a task contract. “Produce a sourced risk memo using these five repositories; do not contact anyone; stop when every claim has a source or is marked unknown” is testable.
 
-  * **Memory** — short-term (what happened in this session) and sometimes long-term (a vector database of past context)
+Define the unit of success at the same time. It might be an accepted memo, a correct patch with passing tests, or a CRM draft approved without correction. Avoid proxy metrics such as response length or the number of tool calls.
 
-  * **Tool calls** — how the agent interacts with the outside world: searching the web, reading files, calling APIs
+## 2. Design the loop before selecting a framework
 
-  * **Execution loop** — the "think → act → observe → repeat" cycle that makes it actually _do_ things
+A minimal loop is straightforward:
 
-An AI agent consists of five core components:**​ ​LLM** ​​**​ backbone, memory system, tool integration layer, planning module, and orchestration layer ​** ​— missing any one of these leads to unreliable behavior in production.
+1. load the task, policy, and current state;
+2. ask the model for a structured response or tool call;
+3. validate the request against schema and policy;
+4. execute the tool in the correct environment;
+5. append the observation and state change;
+6. stop, pause for approval, or continue within limits.
 
-That last part is the one that trips people up most. It's not hard to get an agent to ​ _run_ ​. It's hard to get it to run ​ _reliably_ ​.
+Keep deterministic work outside the model. Authentication, authorization, schema validation, arithmetic, retries, idempotency, and policy enforcement belong in code. Let the model handle interpretation, planning, search strategy, classification, and synthesis where flexible judgment creates value.
 
-## The Two Paths People Take
+Frameworks can provide durable execution, streaming, checkpoints, and human interruption. LangGraph, for example, documents [durable execution and human-in-the-loop](https://langchain-ai.github.io/langgraph/) as orchestration primitives. Those features are useful, but the framework does not define the task or make unsafe tools safe. Keep prompts, tool schemas, policy, and evaluations portable enough to inspect outside it.
 
-Once you've decided you want to build something, there are really only two roads.
+## 3. Choose the model with an evaluation
 
-### The code path — what it requires
+Start with a capable model while establishing the baseline. Then test smaller or faster models against the same cases. Evaluate the capabilities your task needs:
 
-This means writing Python (mostly), picking a framework, and wiring everything together yourself. The current frameworks that are actually in production use as of early 2026:
+- correct tool selection and argument construction;
+- instruction following under conflicting context;
+- long-context retrieval and source attribution;
+- recovery after tool errors;
+- structured output validity;
+- latency and cost per accepted outcome.
 
-**LangGraph** is currently the most widely adopted for serious builds. [LangGraph](https://github.com/langchain-ai/langgraph) leads in enterprise adoption with 34.5M monthly downloads, and around 400 companies use LangGraph Platform to deploy agents in production. It models your agent as a graph of steps — which sounds nerdy, but it means you can actually _see_ what your agent is doing and debug it properly.
+Route only when the decision rule can itself be evaluated. Every route adds another failure point. Pin model versions where supported, record the version for every run, and rerun regression cases before changing it.
 
-**CrewAI** is simpler to get started with and works well if you need multiple agents collaborating on a task. Good for role-based setups (one agent researches, one writes, one reviews). You can learn more about how these frameworks compare in [Langflow's 2025 framework guide](https://www.langflow.org/blog/the-complete-guide-to-choosing-an-ai-agent-framework-in-2025).
+## 4. Treat tools as a security and reliability interface
 
-**AutoGen** (from Microsoft) has some caveats worth knowing. In October 2025, Microsoft merged AutoGen with Semantic Kernel into the unified Microsoft Agent Framework, with AutoGen now in maintenance mode, receiving only bug fixes and security patches. If you're starting fresh, I'd lean toward LangGraph or CrewAI instead.
+Tool names and descriptions are part of the agent-computer interface. Each tool should have one clear purpose, a narrow schema, predictable errors, and a result that supplies enough ground truth for the next decision.
 
-The code path requires: Python comfort, basic API knowledge, patience for debugging, and willingness to read a lot of error logs.
+Prefer `search_orders(customer_id, date_range)` over unrestricted database queries. Prefer `create_email_draft(...)` over `send_email(...)` during early deployment. Prefer a refund proposal followed by approval over direct payment mutation.
 
-![3.PNG](/blog/images/how-to-build-an-ai-agent/1774419261911-afbbdd03-4dad-4632-958d-93d368ad2f22.webp)
+| Contract field | Question |
+|---|---|
+| Preconditions | What must be true before execution? |
+| Input schema | Which fields and enumerations are valid? |
+| Identity | Whose credentials are used? |
+| Side effect | What external state changes? |
+| Idempotency | Can a retry duplicate the action? |
+| Result | What evidence and identifiers return? |
+| Error model | Which errors are retryable, blocked, or terminal? |
+| Approval | Can a person inspect and edit the proposed call? |
 
-### The no-code path — what builders can and can't do
+Do not expose a general shell, browser session, or broad cloud credential when three narrow tools will do. Treat web pages, emails, uploaded files, and tool output as untrusted data: they can contain instructions that conflict with policy.
 
-Tools like ​**Dify** ​, ​**n8n** ​, and various visual builders let you drag and drop agent workflows without code. Dify is the most beginner-friendly option because of its visual drag-and-drop interface.
+## 5. Separate context, state, and memory
 
-What they're genuinely good for: prototyping fast, simple automation chains, connecting common tools (email, Slack, Google Drive).
+These terms are often collapsed, which creates fragile systems.
 
-Where they hit a wall: complex conditional logic, custom memory setups, anything that needs fine-grained control over how the agent reasons. The **[Anthropic documentation on building effective agents](https://www.anthropic.com/engineering/building-effective-agents)** is worth reading here — it lays out clearly when you need more control than no-code tools can give you.
+- **Context** is what the model sees for the current decision: instructions, recent messages, retrieved sources, and tool results.
+- **State** is the authoritative machine record: task status, completed steps, approvals, external IDs, retries, and checkpoints.
+- **Memory** is selected information intended to influence future runs: preferences, prior outcomes, or reusable facts.
 
-## What Building One Actually Takes — Honestly
+Keep state outside the model transcript. Store facts in structured fields, artifacts in durable storage, and large sources behind stable identifiers. Retrieve only what the current step needs. Anthropic’s [context engineering guidance](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) describes just-in-time retrieval using lightweight references rather than loading everything in advance.
 
-This is the section most tutorials skip. They show you the happy path. Here's the rest of it.
+Memory needs an explicit write policy: what may be stored, who can inspect or delete it, when it expires, and how conflicting facts are resolved. A vector database is a retrieval mechanism, not a truth system.
 
-### Realistic time to get something stable
+## 6. Put permissions and approvals in the runtime
 
-Getting a demo running: maybe a weekend. Getting something that works reliably on real inputs, with edge cases handled? That's weeks, sometimes months. I'm not trying to discourage you — I'm just saying ​**don't plan your project timeline around the tutorial** ​.
+Do not ask the model whether it is authorized. The runtime must decide.
 
-### Ongoing maintenance after it's running
+| Tier | Examples | Default control |
+|---|---|---|
+| Read | Search approved documents | Least-privilege access and logging |
+| Draft | Create an unsent email or proposed change | Reviewable artifact |
+| Reversible write | Add a label, write to a test table | Scoped credential and rollback |
+| Consequential write | Send, publish, pay, delete, change access | Explicit approval and strong identity check |
 
-This one surprised me. An agent isn't deploy-and-forget. The external tools it calls change. The APIs it uses update or deprecate endpoints. The model behavior shifts between versions. You're signing up for ongoing babysitting.
+OpenAI’s official [agent safety guidance](https://developers.openai.com/api/docs/guides/agent-builder-safety) recommends treating untrusted input and tool calls as control points. Guardrails complement—not replace—authentication, authorization, and ordinary software security.
 
-Budget for three cost layers: development, infrastructure ($0.50–$15 per million tokens for LLM APIs), and ongoing maintenance at 15–25% of initial build cost annually.
+At approval time, show the exact action, target, arguments, evidence, and expected side effect. Approval records belong in durable state so a resumed run cannot reinterpret them.
 
-### The most common failure points
+## 7. Create evaluations before broad deployment
 
-From what I've seen and read:
+Agent evaluation must score the trajectory as well as the final answer. Anthropic’s current [agent eval guide](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) recommends combining outcome checks with process inspection for multi-turn systems.
 
-**Cost explosions.** An agent that loops unnecessarily makes hundreds of LLM calls, generating bills that dwarf the value delivered. Always set hard limits on turns and cost before you deploy anything.
+Build an initial dataset from four buckets:
 
-**Quality drift.** Agents can drift from their intended behavior as conversation history grows longer. What worked perfectly in testing behaves strangely in production.
+1. normal representative tasks;
+2. edge cases with missing, stale, or conflicting inputs;
+3. adversarial cases such as prompt injection and requests outside permission;
+4. recovery cases with timeouts, malformed tool results, duplicate events, and expired credentials.
 
-**Silent tool failures.** External APIs that fail or return different formats break agent workflows quietly. You often don't know something is broken until a user tells you.
+Score outcome correctness, evidence quality, forbidden-action rate, tool accuracy, unnecessary steps, latency, cost, stop and escalation behavior, and recovery without duplicated side effects.
 
-**Over-engineering architecture.** Over 40% of agentic AI projects risk cancellation due to poor architecture decisions and unclear deployment strategies. The answer is almost always: start with the simplest possible version.
+Use deterministic checks wherever possible: schema validation, database assertions, test suites, diff checks, and exact policy predicates. Use human review or calibrated model graders for qualities that cannot be reduced to a rule. Review traces when a score changes; a correct final answer can conceal a dangerous path.
 
-![4.png](/blog/images/how-to-build-an-ai-agent/1774419275409-20ea7a05-7023-4669-989d-b5ce64f0df61.webp)
+## 8. Make every run observable
 
-## Who Should Actually Build Their Own
+A production trace should connect:
 
-Okay. Real talk.
+- task and user identity;
+- model, prompt, policy, and tool versions;
+- retrieved source identifiers and versions;
+- model responses and tool requests;
+- sanitized tool inputs and outputs;
+- state transitions, approvals, retries, and checkpoints;
+- token use, latency, cost, and terminal status;
+- external side-effect IDs.
 
-### When custom-building genuinely makes sense
+Do not put secrets or unnecessary personal data in logs. Use structured events, correlation IDs, access controls, and retention rules. Alert on loop-limit hits, repeated tool errors, approval backlogs, policy denials, cost anomalies, and declining task success—not merely HTTP failures.
 
-You should probably build your own agent if:
+An operator should be able to answer: What did the agent know? What did it try? What changed outside the system? Can we safely retry?
 
-  * **Your use case is genuinely unique.** No existing tool handles the specific combination of steps you need.
+## 9. Deploy in stages
 
-  * **You have real data privacy requirements.** Self-hosted agents keep your data in your control.
+Use a promotion ladder:
 
-  * **You need this to scale.** Managed platforms can get expensive at volume. Custom builds often have lower per-run costs.
+1. **Offline evaluation:** mocked or sandboxed tools.
+2. **Replay:** historical tasks with frozen external state.
+3. **Shadow mode:** real inputs, no external writes.
+4. **Draft mode:** produce artifacts for mandatory review.
+5. **Limited writes:** reversible actions for a small cohort.
+6. **Expanded operation:** only after thresholds and rollback drills pass.
 
-  * **You or your team can actually maintain it.** This is the honest filter most people skip.
+Configure hard limits for iterations, elapsed time, model spend, tool calls, retrieved data, and concurrent runs. Separate development, test, and production credentials. Use feature flags and a kill switch that stops new work without destroying evidence needed for recovery.
 
-You can verify what the current state of various frameworks looks like by checking [LangChain's official documentation](https://www.langchain.com/langchain) — they update it regularly and it's more reliable than most tutorials.
+Deployment also needs ownership: who responds to alerts, approves changes, rotates credentials, reviews evaluations, and decides when to disable the agent?
 
-### When it's more effort than it's worth
+## 10. Design recovery before failure
 
-Here's the plot twist — most people asking "how to build an AI agent" don't actually need to _build_ one. They need an agent to _exist_ that does a specific job.
+Agents fail in partial states. A message may have been sent even though the caller timed out. A payment API may succeed before the checkpoint is written. A human may approve a proposal that becomes stale before execution.
 
-Those are different problems.
+Recovery requires durable checkpoints, idempotency keys for side-effecting tools, retry policies by error type, reconciliation against the external system of record, compensating actions, a blocked queue, and resumable runs that preserve the original policy and approval context.
 
-If your task is well-defined (summarize emails, draft content from a template, schedule follow-ups), there are existing tools that handle this without code. Building customs are the right call maybe 20% of the time. The other 80%? You're paying complexity tax for something you didn't need.
+Test recovery by interrupting the run immediately before and after every write. If the system cannot determine whether a side effect occurred, it is not ready for unattended operation.
 
-## If You Don't Want to Build — What the Alternatives Look Like
+## Production-readiness checklist
 
-The no-build options are more capable than they used to be. An honest overview:
+- Is the outcome testable, and are non-goals explicit?
+- Did a simpler workflow fail the same evaluation?
+- Are tools narrow, validated, permission-scoped, and idempotent?
+- Are context, state, and memory separated?
+- Do high-impact actions require informed approval?
+- Does the evaluation set include adversarial and recovery cases?
+- Can operators trace sources, decisions, approvals, and side effects?
+- Can a run pause, resume, retry, reconcile, and stop safely?
+- Are model, prompt, policy, and tool changes versioned and regression-tested?
+- Is there an owner, budget, rollback plan, and kill switch?
 
-**ChatGPT​ with custom instructions and actions** — handles a lot of simple agent-like tasks. Surprisingly good for document-heavy workflows. Limitation: you're inside OpenAI's ecosystem. If that's the route you take anyway, [building a real agent inside ChatGPT](/blog/how-to-build-an-ai-agent-with-chatgpt) is mostly an exercise in writing clearer instructions, not in tooling.
+If several answers are “no,” the next step is not another prompt. It is finishing the control system around the model.
 
-**n8n** — the most flexible workflow tool I've come across that doesn't require deep coding. Works well for connecting many tools into an automated chain. It has a learning curve but it's learnable. [Codecademy's breakdown of agent frameworks](https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025) gives a clear comparison if you want to evaluate these options side by side.
+## Build the smallest agent you can operate
 
-**Dify** — visual, fast, good for prototyping. Less control, but genuinely fast to get something running.
+The core implementation can be a short loop. The production system is everything that makes that loop bounded: task contracts, narrow tools, durable state, least privilege, evaluations, traces, staged deployment, and recovery.
 
-**Claude's Projects + ​API** — if your "agent" is really just a well-prompted assistant with long memory and specific tools, the API handles a lot of this without framework overhead.
-
-None of these are perfect. All of them are faster than building from scratch if your use case fits.
-
-## A Simple Framework to Help You Decide
-
-Before you write a single line of code — or open any tool — ask yourself these three questions:
-
-  1. **Can I describe this task in 2 sentences?** If you can't clearly define what your agent should do and when it should stop, building it will be chaos.
-
-  2. **Does this need to run more than once?** If it's a one-time task, just do it manually. Agents earn their keep through repetition.
-
-  3. **What breaks if it fails silently?** The higher the stakes, the more you need logging, circuit breakers, and human-in-the-loop fallbacks. Building production-ready agents requires comprehensive logging of every agent step, circuit breakers that halt agents exceeding defined cost or turn limits, and human escalation pathways for cases the agent cannot handle confidently.
-
-If you've answered all three and still want to build — go for it. The ecosystem is genuinely good right now. Just go in with clear eyes about what you're actually taking on.
-
-![5.png](/blog/images/how-to-build-an-ai-agent/1774419289200-db663991-6fcb-4bc9-be2f-4f4376a1bffe.webp)
-
-_Anyway — that's where I've landed after spending way too many evenings reading docs and watching agents do unexpected things._
-
-_If you're just curious about the space, honestly, even building one small thing that works is a pretty satisfying experience. And if you decide it's not worth the hassle? That's also a completely valid conclusion. Sometimes the best tool is the one someone else already built._
-
-_Back to experimenting._
+Start with one agent and one clearly owned outcome. Add routing, specialist agents, or long-term memory only when an evaluation shows that the added complexity improves accepted results. If you need to choose between visual builders and code, the [no-code agent builder guide](/blog/no-code-ai-agent-builder) compares the operating trade-offs; if the task belongs inside a broader work environment, see [workflow builder vs AI workspace](/blog/workflow-builder-vs-ai-workspace).

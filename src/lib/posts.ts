@@ -4,6 +4,7 @@ import {
   extractLeadParagraph,
   extractToc,
   type Post,
+  type PostMeta,
 } from "@openblog/core";
 
 import type { BlogLocale } from "@/config/i18n";
@@ -60,6 +61,14 @@ export function getPostBySlug(
 
 export function getBlogIndexData(locale: BlogLocale = "en") {
   return getContentService(locale).getBlogIndexData();
+}
+
+/** All published post metadata for index browsing, without serializing article bodies. */
+export function getAllPostMeta(locale: BlogLocale = "en"): PostMeta[] {
+  return getContentService(locale).listPosts().map(({ content, ...post }) => {
+    void content;
+    return post;
+  });
 }
 
 export function getPostsByCategory(categorySlug: string, locale: BlogLocale = "en") {

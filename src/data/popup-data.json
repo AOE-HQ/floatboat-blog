@@ -12,62 +12,62 @@
   "slugs": {
     "agentic-ai-tools": {
       "en": {
-        "title": "Five agentic tool classes, mapped to real autonomy levels",
-        "body": "Once you know which class you need, watch one apply it on a live calendar."
+        "title": "Give an agent a workspace, not blanket access",
+        "body": "Floatboat keeps files, tools, models, approvals, and outputs visible while you expand a workflow one permission at a time."
       },
       "zh": {
-        "title": "五类 Agentic 工具对号入座之后",
-        "body": "选对自主度只是第一步，真正的分水岭是它能不能自己盯日程。"
+        "title": "给 Agent 工作区，不要给无边界权限",
+        "body": "Floatboat 把文件、工具、模型、审批与产物放在可见位置，让你每次只扩大一项权限。"
       }
     },
     "ai-agent-development-services": {
       "en": {
-        "title": "Before you hire an agent dev shop",
-        "body": "The signing checklist in this article is the same one a calendar-native agent clears out of the box."
+        "title": "Test the workflow before you commission it",
+        "body": "Use a workspace agent to document the task, approval points, and edge cases before turning an idea into a development contract."
       },
       "zh": {
-        "title": "签约 AI 开发服务商之前",
-        "body": "文中的签约清单，一款日历原生 Agent 开箱就能划掉大半。"
+        "title": "先验证工作，再委托开发",
+        "body": "先用工作区 Agent 跑清任务、审批点与异常案例，再把模糊想法写成可验收的开发合同。"
       }
     },
     "ai-agent-solo-operators": {
       "en": {
-        "title": "Solo? Your agent choice is a context problem",
-        "body": "Self-built or off-the-shelf workspace, the tiebreaker is who remembers your last meeting."
+        "title": "Pilot one task before choosing an agent",
+        "body": "Compare every path with the same permissions, failure cases, acceptance checks, and total-cost record."
       },
       "zh": {
-        "title": "单人创业者的 Agent 选型题",
-        "body": "自建还是用现成工作区，胜负手只有一个：谁记得住你上次开完会。"
+        "title": "选 Agent 前，先试点一项任务",
+        "body": "用相同权限、失败案例、验收标准与总成本记录比较每条路径。"
       }
     },
     "ai-agent-use-cases-real-examples": {
       "en": {
-        "title": "Agent use cases with their failure modes included",
-        "body": "Every workflow here runs on triggers — exactly what a calendar hands an agent."
+        "title": "Pilot one job you can verify",
+        "body": "Keep source files, Agent runs, review, and editable results together while you test a bounded workflow in Floatboat."
       },
       "zh": {
-        "title": "真实案例里的 Agent 边界",
-        "body": "文中每个能落地的场景都靠触发器驱动，而日历正是触发器的老家。"
+        "title": "先试点一项能够验收的工作",
+        "body": "在 Floatboat 中把来源文件、Agent 运行、人工审阅和可编辑成果放在一起，验证一条边界清楚的流程。"
       }
     },
     "ai-agent-vs-ai-assistant": {
       "en": {
-        "title": "The assistant asks; the agent acts",
-        "body": "The autonomy gap is easiest to see on a schedule an agent owns end to end."
+        "title": "Find where assistance becomes delegation",
+        "body": "Compare next-step control, tools, permissions, state, supervision, and recovery—not the product label."
       },
       "zh": {
-        "title": "助手在问，Agent 在做",
-        "body": "自主性的差距，放到一份由 Agent 接管的日历上看最直观。"
+        "title": "找出辅助变成委托的边界",
+        "body": "比较下一步控制、工具、权限、状态、监督与恢复，不要只看产品标签。"
       }
     },
     "ai-agent-vs-chatbot": {
       "en": {
-        "title": "The chatbot answers; the agent executes",
-        "body": "Multi-step work is where chat ends and a scheduling agent starts earning keep."
+        "title": "When the answer is only the start of the work",
+        "body": "Floatboat gives agents a workspace for files, tools, execution, and human review—not only another chat response."
       },
       "zh": {
-        "title": "Chatbot 负责答，Agent 负责跑",
-        "body": "多步任务正是聊天止步、日程型 Agent 起跑的地方。"
+        "title": "当回答只是工作的起点",
+        "body": "Floatboat 为 Agent 提供文件、工具、执行与人工复核共同所在的工作站，而不只是多一个聊天回答。"
       }
     },
     "ai-agent-workflow-vibe-coding": {
@@ -82,42 +82,42 @@
     },
     "ai-agents-2026-solo-operators": {
       "en": {
-        "title": "2026 agents are past the demo stage",
-        "body": "With agents in production everywhere, the solo question is which routine to hand over first."
+        "title": "Start with one bounded agent task",
+        "body": "Choose a reversible workflow, run it in shadow mode, and measure accepted outcomes before granting more access."
       },
       "zh": {
-        "title": "2026 年，Agent 过了演示期",
-        "body": "各家都已进生产环境，单人公司该想的是先交出哪件例行事务。"
+        "title": "先试一件有边界的 Agent 任务",
+        "body": "选可逆工作流，先做影子运行，再按验收结果决定是否扩大权限。"
       }
     },
     "ai-assistant-for-personal-use-at-work": {
       "en": {
-        "title": "Pick by scenario, not by leaderboard",
-        "body": "Admin, research, client work — each maps to a different slice of automation on your calendar."
+        "title": "Move approved work into a visible workspace",
+        "body": "Floatboat keeps source files, models, tools, review points, and accepted outputs together without turning a personal shortcut into an invisible process."
       },
       "zh": {
-        "title": "按场景选助手，不按榜单",
-        "body": "行政、调研、客户活，各自对应日历上一块不同的自动化。"
+        "title": "把已批准的工作放进可见工作区",
+        "body": "Floatboat 把来源文件、模型、工具、审批点与验收产物放在一起，不让个人捷径变成隐形流程。"
       }
     },
     "ai-automation-agency-do-you-need-one": {
       "en": {
-        "title": "Outsource it or automate it yourself?",
-        "body": "Before signing an agency, price what scheduling agents already do without a contractor."
+        "title": "Test the workflow before you outsource the operating model",
+        "body": "Use Floatboat to make the inputs, draft outputs, review points, and internal ownership visible before committing to a larger build."
       },
       "zh": {
-        "title": "外包还是自己自动化？",
-        "body": "签机构之前，先对照日程型 Agent 已经能独立做完的部分。"
+        "title": "外包整套系统前，先验证真实工作流",
+        "body": "用 Floatboat 把输入、草稿成果、审批节点与内部负责人放进同一个工作现场，再决定是否扩大建设。"
       }
     },
     "ai-automation-agency-pricing": {
       "en": {
-        "title": "Agency quotes, decoded",
-        "body": "The three billing models here often cost more than a year of an agent doing the prep itself."
+        "title": "Turn a vague workflow into a comparable quote",
+        "body": "Map the trigger, inputs, approvals, exceptions, and acceptance test before you ask an agency to price the build."
       },
       "zh": {
-        "title": "机构报价单拆解",
-        "body": "文中三种计费模式加起来，往往够一款 Agent 替你干满一整年会前准备。"
+        "title": "先把模糊需求变成可比报价",
+        "body": "询价之前，先梳理触发条件、输入、审批、异常与验收测试，才能让不同机构报价同一件事。"
       }
     },
     "ai-browser-agent-vs-ai-browser-vs-ai-workspace": {
@@ -172,32 +172,32 @@
     },
     "ai-tools-for-business-automation-2026": {
       "en": {
-        "title": "The 2026 automation stack, sorted",
-        "body": "Sorted by job, the stack shrinks to what an agent can genuinely operate."
+        "title": "Compare automation tools on one workflow",
+        "body": "Normalize billing units, inspect permissions, test recovery, and export before you commit."
       },
       "zh": {
-        "title": "2026 自动化工具栈盘点",
-        "body": "按活儿归类之后，工具栈会缩到 Agent 真能接管的那几件。"
+        "title": "用同一条流程比较自动化工具",
+        "body": "统一换算计费、检查权限、测试恢复，并在锁定前验证导出。"
       }
     },
     "ai-workflow-for-solo-founders": {
       "en": {
-        "title": "AI doesn't know how you work — yet",
-        "body": "Hand it your calendar and it learns the routine you never wrote down."
+        "title": "Turn one repeated task into a measured pilot",
+        "body": "Audit the work, define acceptance cases, start with drafts, and expand permissions only after the evidence supports it."
       },
       "zh": {
-        "title": "AI 不了解你的工作方式——暂时",
-        "body": "把日历交给它，它会学着你没写下来的那套惯例去干活。"
+        "title": "把一项重复工作变成可衡量试点",
+        "body": "先审计工作、定义验收案例、从草稿开始，再根据证据逐步扩大权限。"
       }
     },
     "ai-workflow-solo-founders": {
       "en": {
-        "title": "A solo workflow that survives busy weeks",
-        "body": "The setup here keeps running through back-to-back calls without your supervision."
+        "title": "Design the system before choosing the stack",
+        "body": "Map triggers, context, decisions, tools, review, records, and recovery before adding another AI subscription."
       },
       "zh": {
-        "title": "经得起爆忙周的个人工作流",
-        "body": "连轴开会的那几天，这套配置依然在替你运转。"
+        "title": "选技术栈之前，先把系统设计清楚",
+        "body": "先画清触发、上下文、决策、工具、复核、记录与恢复，再增加新的 AI 订阅。"
       }
     },
     "ai-workspace-agents": {
@@ -222,22 +222,22 @@
     },
     "best-ai-agent-builder-2026": {
       "en": {
-        "title": "Agent builders, judged by upkeep",
-        "body": "The real ranking is what each builder costs you after the demo glow wears off."
+        "title": "Score your agent builder on real work",
+        "body": "Use one test pack to compare control, permissions, recovery, cost, and the ability to leave."
       },
       "zh": {
-        "title": "按维护成本排的 Agent Builder 榜",
-        "body": "演示光环褪去后还剩多少维护量，才是这份榜单的真排名。"
+        "title": "用真实任务给 Agent 工具评分",
+        "body": "用同一组测试比较控制、权限、恢复、成本与迁移能力。"
       }
     },
     "best-ai-agent-platform-2026": {
       "en": {
-        "title": "Agent platforms for people who ship alone",
-        "body": "Score a platform by one metric: routine absorbed per hour of setup."
+        "title": "Make every platform run the same test",
+        "body": "Use one task, one permission boundary, one evaluation set, and one cost model before you choose a winner."
       },
       "zh": {
-        "title": "写给单人作业者的 Agent 平台榜",
-        "body": "评分标准只有一条：每投入一小时配置，能换回多少例行事务。"
+        "title": "让所有平台参加同一场测试",
+        "body": "用同一任务、权限边界、评估集与成本模型比较，再决定哪个候选胜出。"
       }
     },
     "best-ai-scheduling-assistant": {
@@ -262,12 +262,12 @@
     },
     "best-calendar-app-solo-operators": {
       "en": {
-        "title": "The calendar app question for solos",
-        "body": "Whatever you pick, it gets more valuable once an agent can act on it."
+        "title": "Put every calendar through the same week",
+        "body": "Test accounts, tasks, booking, privacy, automation, offline use, and exit before moving your real schedule."
       },
       "zh": {
-        "title": "单人创业者的日历应用之问",
-        "body": "选哪家都行，但只有能被 Agent 执行的日历才值回票价。"
+        "title": "让所有候选日历接受同一周测试",
+        "body": "迁移真实日程前，统一验证账户、任务、预约、隐私、自动化、离线与退出。"
       }
     },
     "best-claude-code-alternatives": {
@@ -302,32 +302,32 @@
     },
     "browser-ai-agent-security-questions": {
       "en": {
-        "title": "Five questions before you share logins",
-        "body": "Question three is exactly why desktop agents with local permissions keep winning."
+        "title": "Keep the browser task inside a visible boundary",
+        "body": "Floatboat keeps the files, tools, permissions, approval points, and resulting artifacts together so browser work can be reviewed before it becomes an external action."
       },
       "zh": {
-        "title": "交出浏览器登录前先问五个问题",
-        "body": "第三个问题的答案，正是本地权限桌面 Agent 的优势所在。"
+        "title": "让浏览器任务始终留在可见边界内",
+        "body": "Floatboat 把文件、工具、权限、审批点与产物放在一起，让浏览器工作在变成外部动作前得到审阅。"
       }
     },
     "browser-ai-agent-what-it-can-do": {
       "en": {
-        "title": "What browser agents cannot do for you",
-        "body": "The gaps line up neatly with what a workspace agent takes over instead."
+        "title": "Test one browser task before expanding access",
+        "body": "Start with read-only or draft work, save the expected state, and verify the same cases before allowing reversible writes."
       },
       "zh": {
-        "title": "浏览器 Agent 的能与非",
-        "body": "它够不着的部分，恰好是工作区 Agent 接管的部分。"
+        "title": "先测试一个浏览器任务，再扩大权限",
+        "body": "从只读或草稿开始，保存预期状态；同一组案例持续通过后，再开放可逆写入。"
       }
     },
     "building-agentic-ai-systems-build-or-buy": {
       "en": {
-        "title": "Build or buy, for agentic systems",
-        "body": "Most solo builds converge: buy the runtime, build only the routines."
+        "title": "Make the architecture earn its place",
+        "body": "Compare build, buy, and hybrid on one task, one acceptance suite, full operating cost, and a tested exit path."
       },
       "zh": {
-        "title": "Agentic 系统：自建还是买",
-        "body": "单人团队大多会收敛到同一个答案：买运行时，只自建例行流程。"
+        "title": "让架构选择经得起验证",
+        "body": "用同一任务、同一验收集、完整运行成本和真实退出演练比较自研、购买与混合方案。"
       }
     },
     "calendar-driven-ai-vs-chat-ai": {
@@ -522,12 +522,12 @@
     },
     "gemini-3-5-integration-solo-operators": {
       "en": {
-        "title": "Gemini 3.5 for Google-heavy work",
-        "body": "Long context helps most when it is pointed at your whole week, not a chat window."
+        "title": "Test the workflow, not just the model",
+        "body": "Use Floatboat to compare models on the same files, keep outputs reviewable, and retain one working context instead of rebuilding it across tabs."
       },
       "zh": {
-        "title": "Gemini 3.5 与 Google 重度工作流",
-        "body": "长上下文对着你的整周日程用，才不算浪费。"
+        "title": "测工作流，不只测模型",
+        "body": "用 Floatboat 在同一批文件上比较模型，让结果保持可审阅，也不必在不同标签页里反复重建上下文。"
       }
     },
     "gemini-3-7-flash": {
@@ -592,22 +592,22 @@
     },
     "google-calendar-vs-apple-calendar": {
       "en": {
-        "title": "Google Calendar vs Apple Calendar",
-        "body": "Ecosystem, sharing, sync — the deciding list, plus what agents add to either side."
+        "title": "Choose one calendar source of truth",
+        "body": "Compare ecosystems, sharing, offline access, privacy, automation, and migration before moving events."
       },
       "zh": {
-        "title": "Google 日历对比 Apple 日历",
-        "body": "生态、共享、同步逐项过，外加 Agent 能给两边各加什么。"
+        "title": "选定唯一日历数据源",
+        "body": "迁移事件前，先比较生态、共享、离线、隐私、自动化与迁移成本。"
       }
     },
     "google-calendar-vs-outlook": {
       "en": {
-        "title": "Outlook or Google for solo ops",
-        "body": "Whichever wins, follow-through should never rest on manual calendar discipline."
+        "title": "Choose the calendar that owns the identity",
+        "body": "Compare delegation, rooms, tasks, governance, coexistence, and migration before changing ecosystems."
       },
       "zh": {
-        "title": "Outlook 还是 Google",
-        "body": "选谁都行，但收尾不该靠手动盯日历的自律。"
+        "title": "按工作身份选择日历",
+        "body": "切换生态前，先比较委派、会议室、任务、治理、共存与迁移成本。"
       }
     },
     "gpt-5-6-floatboat": {
@@ -672,12 +672,12 @@
     },
     "grok-3-api-solo-operator": {
       "en": {
-        "title": "Grok 3 API goes open weight",
-        "body": "Pricing and the free tier, read through a solo operator's weekly volume."
+        "title": "Want model choice without maintaining every API?",
+        "body": "Use supported models inside Floatboat while keeping files, review, and deliverables in one Agent Workspace."
       },
       "zh": {
-        "title": "开源的 Grok 3 API",
-        "body": "用单人用户一周的真实用量来读这份价格表。"
+        "title": "想选模型，又不想维护每一家 API？",
+        "body": "在 Floatboat 中直接使用已支持模型，把文件、审阅和交付物留在同一个 Agent Workspace。"
       }
     },
     "grok-4-6": {
@@ -732,32 +732,32 @@
     },
     "how-to-build-ai-agents-for-repeated-work": {
       "en": {
-        "title": "Start with one repeated workflow",
-        "body": "Inputs, review points, and a trigger — the calendar supplies that last part free."
+        "title": "Turn one repeated job into a safe agent",
+        "body": "Use the task contract, evaluation plan, and recovery checklist before connecting production tools."
       },
       "zh": {
-        "title": "从一件重复工作开始建 Agent",
-        "body": "输入、复查点、触发器——最后这件，日历白送。"
+        "title": "把一件重复工作变成安全 Agent",
+        "body": "连接生产工具前，先完成任务契约、评估方案与恢复检查表。"
       }
     },
     "how-to-build-an-ai-agent-with-chatgpt": {
       "en": {
-        "title": "A ChatGPT-built agent, done properly",
-        "body": "Workflow, files, permissions, review steps — then a schedule to run on."
+        "title": "Start with one workflow, not an all-purpose agent",
+        "body": "Define the trigger, sources, finish state, permissions, and review point before you package the task for repeat use."
       },
       "zh": {
-        "title": "把 ChatGPT 做成靠谱 Agent",
-        "body": "工作流、文件、权限、复查都定好之后，还差一张日程表。"
+        "title": "先做好一条工作流，不做万能 Agent",
+        "body": "先定义触发、信源、完成状态、权限和复核点，再把任务封装成可以重复使用的流程。"
       }
     },
     "how-to-build-an-ai-agent": {
       "en": {
-        "title": "What building an agent actually involves",
-        "body": "The honest process map, ending right where managed scheduling picks up."
+        "title": "Build the control system, not just the loop",
+        "body": "Use the production checklist for tools, permissions, evals, traces, staged deployment, and safe recovery."
       },
       "zh": {
-        "title": "造一个 Agent 到底要做什么",
-        "body": "流程图很诚实，结尾正好接上托管调度的部分。"
+        "title": "别只构建循环，还要构建控制系统",
+        "body": "用上线清单检查工具、权限、评估、追踪、分阶段部署和安全恢复。"
       }
     },
     "how-to-build-deepseek-agent": {
@@ -782,12 +782,12 @@
     },
     "html-anything-review-2026": {
       "en": {
-        "title": "html-anything, reviewed for 2026",
-        "body": "What the open-source editor proves, and its setup cost in plain numbers."
+        "title": "Need HTML output without turning it into another isolated tool?",
+        "body": "Floatboat keeps the source files, model choice, generated artifact, and human review in one agent workspace."
       },
       "zh": {
-        "title": "2026 版 html-anything 评测",
-        "body": "它证明了什么、配置要花多少功夫，都在明面上。"
+        "title": "想生成 HTML，又不想多一个孤立工具？",
+        "body": "Floatboat 把源文件、模型选择、生成结果与人工复核放在同一个 Agent Workspace 里。"
       }
     },
     "html-is-the-new-markdown": {
@@ -902,12 +902,12 @@
     },
     "no-code-ai-agent-builder": {
       "en": {
-        "title": "No-code builders and their ceilings",
-        "body": "Prototype fast, but read the maintenance cliff before anything becomes routine."
+        "title": "Test the workflow, not the demo",
+        "body": "Use the selection matrix and pilot checklist before giving an agent permission to act."
       },
       "zh": {
-        "title": "无代码 Builder 与它们的天花板",
-        "body": "原型可以飞快，但成为例行流程前先看清维护悬崖。"
+        "title": "验收流程，而不是演示",
+        "body": "在给 Agent 开放动作权限前，用选型矩阵和试点清单完成验证。"
       }
     },
     "oh-my-codex-vs-superpowers": {
@@ -942,22 +942,22 @@
     },
     "raycast-for-windows-floatboat": {
       "en": {
-        "title": "Beyond a launcher on Windows",
-        "body": "Raycast users: what an AI-native workspace adds after the command palette."
+        "title": "Need the work to outlive the command?",
+        "body": "Open the real project in Floatboat and keep files, Agent runs, review, and editable results in one workspace."
       },
       "zh": {
-        "title": "Windows 上不止是启动器",
-        "body": "Raycast 用户看过来：命令面板之后，AI 工作区还补了什么。"
+        "title": "不只执行命令，还要留下成果？",
+        "body": "在 Floatboat 中打开真实项目，把文件、Agent 运行、人工审阅和可编辑成果留在同一个 Workspace。"
       }
     },
     "relevance-ai-vs-n8n": {
       "en": {
-        "title": "Relevance AI vs n8n, actually different",
-        "body": "Same search results, different jobs — the boundary is drawn clearly here."
+        "title": "A workflow builder is not always the workspace",
+        "body": "Floatboat keeps files, models, tools, delegated tasks, and human review together when the work is broader than an event pipeline."
       },
       "zh": {
-        "title": "Relevance AI 与 n8n 的边界",
-        "body": "搜在一起，干的不是一种活，界线这篇文章画清了。"
+        "title": "工作流编排器，不一定就是工作现场",
+        "body": "当任务不只是事件流水线，Floatboat 把文件、模型、工具、委派任务与人工复核留在同一个工作站。"
       }
     },
     "scale-one-person-business-without-hiring": {
@@ -992,12 +992,12 @@
     },
     "what-are-claude-managed-agents": {
       "en": {
-        "title": "Claude Managed Agents, explained",
-        "body": "What hosting changes for you — and what still needs a calendar behind it."
+        "title": "Choose the right Claude surface",
+        "body": "Compare hosted agent infrastructure with Cowork, Claude Code, and chat before you design a pilot."
       },
       "zh": {
-        "title": "读懂 Claude Managed Agents",
-        "body": "托管改变了什么，以及哪些活仍然需要一张日程来承载。"
+        "title": "先选对 Claude 产品形态",
+        "body": "在设计试点前，先比较托管 Agent 基础设施、Cowork、Claude Code 与普通对话。"
       }
     },
     "what-gstack-gets-right-about-one-person-businesses": {
@@ -1112,12 +1112,12 @@
     },
     "what-is-persistent-ai-agent": {
       "en": {
-        "title": "Persistence is the whole point",
-        "body": "What changes when your agent still remembers yesterday's meeting this morning."
+        "title": "Persistence needs clear boundaries",
+        "body": "Separate chat context, workflow state, memory, retrieval, and the current source of truth."
       },
       "zh": {
-        "title": "持久化才是关键",
-        "body": "当 Agent 今早还记得你昨天的会，一切都不一样了。"
+        "title": "持久化必须有清楚边界",
+        "body": "分清对话上下文、流程状态、记忆、检索与当前事实源。"
       }
     },
     "what-is-vibe-coding": {
@@ -1142,12 +1142,12 @@
     },
     "why-ai-forgets-between-sessions": {
       "en": {
-        "title": "Why closing the tab wipes everything",
-        "body": "What each session costs you in lost context — and the fix that carries it forward."
+        "title": "Find the layer that actually forgot",
+        "body": "Test context, history, memory, retrieval, and durable state separately before choosing a fix."
       },
       "zh": {
-        "title": "关掉标签页，AI 为什么失忆",
-        "body": "每次会话你到底丢了什么，以及把上下文续下去的办法。"
+        "title": "先找出真正失效的那一层",
+        "body": "分别测试上下文、历史、记忆、检索和持久状态，再选择对应的修复方法。"
       }
     },
     "why-ai-forgets-every-session": {
@@ -1162,12 +1162,12 @@
     },
     "workflow-builder-vs-ai-workspace": {
       "en": {
-        "title": "Pipelines, or a teammate alongside?",
-        "body": "Defined pipelines versus a teammate working alongside — choose by load."
+        "title": "Test the task, not the category label",
+        "body": "Run one real task through both options, then compare permissions, recovery, review effort, and accepted-result cost."
       },
       "zh": {
-        "title": "Workflow Builder 还是 AI 工作区",
-        "body": "一条是定死的流水线，一边是并肩干活的搭档，按负载选。"
+        "title": "别凭品类名称做选择",
+        "body": "让两个候选方案处理同一项真实任务，再比较权限、恢复、复核成本和最终可用成果。"
       }
     },
     "workspace-agents-for-solo-operators": {
@@ -1610,21 +1610,33 @@
         "body": "2004 年的语法、各方言分叉，以及为什么 agent 默认输出它——一次读完。"
       }
     },
+    "gpt-6-1-sol": {
+      "en": {"title": "GPT-6.1 Sol is not currently a Floatboat model", "body": "For Floatboat workflows, choose from the confirmed model directory and compare supported options against the same files and acceptance criteria."},
+      "zh": {"title": "GPT-6.1 Sol 目前不是 Floatboat 支持模型", "body": "在 Floatboat 中请从已确认的模型目录选择，并用相同文件与验收标准比较现有选项。"}
+    },
+    "openai-devday-2026-announcements": {
+      "en": {"title": "Adopt the workflow, not the keynote slide", "body": "Use Floatboat to keep supported models, files, tools, and review points visible while platform previews and availability continue to change."},
+      "zh": {"title": "采用真实工作流，不要只跟着发布会清单", "body": "用 Floatboat 管理已支持的模型、文件、工具与审阅节点，不让平台 Preview 和开放范围变化打乱工作。"}
+    },
+    "openai-plugins-explained": {
+      "en": {"title": "Connected tools are only useful when the work stays reviewable", "body": "Floatboat keeps files, tool results, proposed changes, and approval points together in one agent workspace."},
+      "zh": {"title": "工具连上之后，工作仍要可见、可审", "body": "Floatboat 把文件、工具结果、待确认改动与审批节点放在同一个 Agent Workspace 里。"}
+    },
     "local-first-vs-cloud-agent-workspace": {
       "en": {"title": "Keep your work local, send only what needs the cloud", "body": "See how Floatboat organizes files, agents, models, and human review in one local-first workspace."},
       "zh": {"title": "工作留在本地，云端只做必要部分", "body": "看看 Floatboat 如何把文件、Agent、模型与人工审阅放进同一个本地优先工作站。"}
     },
     "what-is-chatgpt-space": {
-      "en": {"title": "Build around durable work, not disposable chats", "body": "Explore a local-first Agent Workspace where files and deliverables remain visible and under your control."},
-      "zh": {"title": "围绕长期成果工作，而不是困在聊天记录里", "body": "体验以文件和交付物为中心、保持可见与可控的本地优先 Agent 工作站。"}
+      "en": {"title": "Prefer files you can keep, inspect, and move?", "body": "Floatboat gives agents a local-first workspace around your actual files—without making a cloud Page the only copy."},
+      "zh": {"title": "不想让云端 Page 成为唯一副本？", "body": "Floatboat 让 Agent 直接围绕本地文件工作，成果始终可查看、可迁移，也更容易接入原有流程。"}
     },
     "ai-agent-connectors-explained": {
-      "en": {"title": "Give every workflow the access it actually needs", "body": "Connect tools inside Floatboat while keeping files, approvals, and review in one Agent Workspace."},
-      "zh": {"title": "让每条工作流只获得真正需要的权限", "body": "在 Floatboat 中连接工具，同时把文件、审批和审阅保留在一个 Agent 工作站里。"}
+      "en": {"title": "Keep connected work visible before it commits", "body": "Bring tools into a Floatboat Agent Workspace where files, proposed changes, and approval points remain reviewable."},
+      "zh": {"title": "让外部工具真正执行前仍然可见、可审", "body": "在 Floatboat Agent 工作站中连接工具，把文件、待提交变更与审批节点保留在可审阅的工作现场。"}
     },
     "what-is-an-agent-harness": {
-      "en": {"title": "A model answers. A workspace helps it finish the job.", "body": "Use models, tools, files, reusable workflows, and human control together in Floatboat."},
-      "zh": {"title": "模型负责回答，工作站负责把事情做完", "body": "在 Floatboat 中统一使用模型、工具、文件、可复用流程和人工控制。"}
+      "en": {"title": "Put the model inside a controllable workspace", "body": "Run models with files, tools, reusable Skills, visible progress, and human review in Floatboat."},
+      "zh": {"title": "把模型放进真正可控的工作站", "body": "在 Floatboat 中统一使用文件、工具与可复用 Skills，并让执行进度和人工审查保持可见。"}
     },
     "what-is-voice-dictation-for-ai-agents": {
       "en": {

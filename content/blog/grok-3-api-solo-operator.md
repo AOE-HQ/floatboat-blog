@@ -1,6 +1,6 @@
 ---
-title: "Grok 3 API Is Open — Does It Lower the AI Cost Barrier for Solo Operators?"
-description: "Grok 3 API is now open source. Here's what the pricing, free tier, and open access mean for one-person companies running AI workflows.138 chars"
+title: "Grok 3 API in 2026: Retirement, Redirects, and Costs"
+description: "The Grok 3 API is retired and its model slug redirects to Grok 4.3. Learn what existing users are billed, which xAI model fits each workload, and how to migrate safely."
 slug: "grok-3-api-solo-operator"
 date: "2026-04-23"
 author: "Nova"
@@ -10,74 +10,145 @@ locale: "en"
 draft: false
 ---
 
-Nova here. A few weeks ago someone DM'd me: _Grok 3's API is open now, pricing's public — worth switching to if I'm running things solo?_
+The Grok 3 API is no longer a current xAI model. xAI retired the `grok-3` API slug on May 15, 2026. Requests that still name it do not necessarily fail: xAI redirects them to `grok-4.3` with reasoning effort set to `none`, and bills them at Grok 4.3 rates.
 
-I've been asked this four or five times at this point. Let me give you an actual answer — even if it's not the one people are hoping for.
+That makes most older “Should I switch to Grok 3?” advice obsolete. The useful questions now are whether an existing integration is silently using a different model, what the redirected request costs, and which current xAI model should replace it. For a solo developer or small business, the migration risk is less about changing one string than about assuming unchanged behavior and spend.
 
-I've been running Grok 3 through the API on and off for a couple of months. Nothing heavy — background scripts for daily digest summaries, RSS parsing, some throwaway content drafts. Not a deep stress test, but enough to form a real take.
+All model status and prices below were checked against xAI’s official documentation on October 10, 2026. Prices are in US dollars and can change; verify the live console before making a production decision.
 
-![2.png](/blog/images/grok-3-api-solo-operator/1776932927149-9465aa19-4edb-4c43-b3bb-93195a4fc28d.webp)
+## The current status of the Grok 3 API
 
-## What Is Grok 3 API
+xAI’s [May 15 retirement notice](https://docs.x.ai/developers/migration/may-15-retirement) lists `grok-3` among the retired API models. After the cutoff, the slug routes to `grok-4.3` with reasoning disabled. xAI says the old slug continues to resolve, so an application can appear healthy even though the model behind it has changed.
 
-xAI opened the Grok 3 API publicly in April 2025. Pricing hasn't moved since: $3 per million input tokens, $15 per million output, 131K context window. I double-checked against the [xAI models and pricing docs](https://docs.x.ai/developers/models) — that's the rate as of when I'm writing this.
+| What your application sends | What xAI serves after May 15, 2026 | Current billing consequence |
+|---|---|---|
+| `grok-3` | `grok-4.3` with reasoning effort `none` | Grok 4.3 pricing |
+| Explicit `grok-4.3` with `none` | Grok 4.3 without reasoning | Same model behavior is declared in your configuration |
+| Explicit `grok-4.3` with higher effort | Grok 4.3 with the selected reasoning level | More deliberate reasoning; test latency, output, and cost |
 
-The word "open" trips people up here, so let me split it.
+An automatic redirect prevents an immediate outage, but it is not a migration strategy. Your logs, invoices, model documentation, and evaluation records should identify the model actually serving traffic. An old slug hides that information from the place most developers look first: application configuration.
 
-**API access is open** — no waitlist, you sign up, get a key, and there's a $25 starter credit on new accounts. Same friction level as OpenAI or Anthropic at this point.
+## Why an explicit migration matters even when requests still work
 
-**Open source is a different story.** Musk [said Grok 3 would be open-sourced roughly six months after Grok 2.5 dropped](https://techcrunch.com/2025/08/24/elon-musk-says-xai-has-open-sourced-grok-2-5/), putting it around February 2026. Last time I checked Hugging Face, the Grok 3 weights weren't up yet. Worth checking directly if that matters to you.
+A model change can alter instruction following, formatting, tool choice, latency, and the amount of output generated. Those changes matter in automated work even if a sample chat still looks acceptable.
 
-![3.png](/blog/images/grok-3-api-solo-operator/1776932944516-b691cc85-59e0-46c8-bbc1-bea506233ac4.webp)
+For example, an application that expects a fixed JSON shape may break on a small formatting difference. A research workflow may call search tools more or less often. A summarizer may produce longer output and increase cost without raising an error. None of these failures is prevented by HTTP 200.
 
-One more thing worth flagging: Grok 2.5 was released under a custom "Community License" with anti-competitive clauses — not a real MIT or Apache license. If Grok 3 follows the same pattern (and the [Wikipedia entry on Grok](<https://en.wikipedia.org/wiki/Grok_\(chatbot\)>) suggests it will), "open weights" won't mean "free to build a product on." I could be wrong here — but don't assume the headline means what the headline sounds like.
+Replace the retired slug deliberately, then rerun the evaluations that represent the workflow:
 
-## Grok 3 Pricing vs OpenAI vs DeepSeek
+1. Collect successful, ambiguous, and known-failure inputs from production.
+2. Run them against the current model with the intended reasoning setting.
+3. Compare task success, schema validity, citation quality, latency, and total request cost.
+4. Set a rollback condition before moving all traffic.
+5. Update dashboards and documentation so the model name matches what is billed.
 
-The thing that surprised me first time I looked at the pricing page: Grok 3 isn't actually the cheap option.
+This is the same discipline required when [building an AI agent for repeated work](/blog/how-to-build-ai-agents-for-repeated-work): reliable automation depends on observable inputs, outputs, and failure handling, not a provider name alone.
 
-Prices pulled from each provider's docs, verified late April 2026.
+## What Grok 4.3 costs after the redirect
 
-Grok 3 at $3/$15 sits right next to Claude Sonnet — it's priced as a _premium_ model, not a cost-leader. If you want cheap from xAI, you want **Grok 3 Mini** ($0.30/$0.50) or **Grok 4.1 Fast** ($0.20/$0.50). Those actually undercut most of the market.
+xAI’s current [API pricing page](https://docs.x.ai/developers/pricing) lists Grok 4.3 with a one-million-token context window. For prompts below 200,000 tokens, the published rates are $1.25 per million input tokens, $0.20 per million cached input tokens, and $2.50 per million output tokens. Once a prompt reaches the 200,000-token long-context threshold, xAI bills all tokens in that request at the long-context rates: $2.50 input, $0.40 cached input, and $5 output per million tokens.
 
-DeepSeek V3 is still the pricing floor for serious general-purpose models. An order of magnitude below Grok 3 on input, about 14x cheaper on output — and [the DeepSeek V4 projections](/blog/deepseek-v4-api-solo-operator) point further down, not up.
+| Grok 4.3 usage | Input / 1M | Cached input / 1M | Output / 1M |
+|---|---:|---:|---:|
+| Prompt below 200k tokens | $1.25 | $0.20 | $2.50 |
+| Prompt at or above 200k tokens | $2.50 | $0.40 | $5.00 |
 
-So when someone says "Grok 3 is cheap now" — it's not. The _Mini_ and _Fast_ variants are cheap. That distinction matters.
+The threshold is easy to misread. It is not a surcharge only on the tokens beyond 200,000. The published pricing rule says that when the prompt reaches the threshold, the long-context rates apply to all tokens in the request.
 
-## Is Open Source the Right Move for Solo Operators?
+A simple text-only estimate is:
 
-![4.png](/blog/images/grok-3-api-solo-operator/1776932961124-2046ebbb-8767-4a1e-8e43-f33c89c1db95.webp)
+**request cost ≈ input tokens × input rate + output tokens × output rate**
 
-Here's where I have to be honest about what I actually care about, which is probably what you care about too.
+Use the rates per million tokens, and separate cached input where applicable. This estimate is useful for planning, but xAI now returns the exact billed cost for each response through `usage.cost_in_usd_ticks`. The [cost-tracking documentation](https://docs.x.ai/developers/cost-tracking) says that figure includes token charges, server-side tool charges, and applicable cache discounts. Measuring actual requests is therefore more reliable than estimating an average from list prices.
 
-**When open API access genuinely changes things for a solo operator:**
+## Search and tools can cost more than the text suggests
 
-  * You've been running the same workload for months, your token bill is climbing past ~$80/month, and you already know exactly what prompt shapes work. Swapping to a cheaper API is a real lever.
+Grok does not gain current information merely because it is associated with X. xAI’s model documentation states that real-time events require search tools to be enabled. The API offers Web Search, X Search, code execution, file and collections search, image generation, remote MCP tools, and developer-defined functions.
 
-  * You're building something that needs real-time web context (Grok's X/Twitter integration is genuinely different from what the others have).
+Tool-enabled cost has at least two layers:
 
-  * You're running high-volume output-heavy jobs — this is where Grok 3 Mini or DeepSeek actually pay for themselves.
+- model tokens used to plan, inspect results, and write the answer;
+- server-side tool usage billed under the current tool price.
 
-**When it doesn't:**
+As of the fact-check date, xAI lists Web Search and code execution at $5 per 1,000 calls. X Search is billed at $5 per 1,000 posts fetched and $10 per 1,000 profiles fetched, while collections search is $2.50 per 1,000 calls. X Search can fetch the same post more than once across searches, and the usage count is not de-duplicated.
 
-  * You're spending less than ~$30/month on tokens. At that volume, the API line item isn't your bottleneck. Switching saves single-digit dollars and costs you a day of re-testing prompts.
+This makes “research the latest discussion on X” a different economic workload from plain text generation. Define date ranges, allowed accounts, maximum turns, and required citations. Then record the returned tool-usage fields instead of assuming one user request equals one search charge. The broader [agent connector security questions](/blog/browser-ai-agent-security-questions) also apply when an API can call external systems or your own functions.
 
-  * You're still figuring out what you want to build. Cheaper tokens don't help you design the thing. I've watched myself do this — chase a 5x cheaper API while the actual problem was that my prompts weren't stable yet.
+## Which current xAI model should replace Grok 3?
 
-  * Your main friction is gluing steps together, not model cost per call.
+There is no single successor for every old Grok 3 workload. xAI’s current catalog separates general work, code-specialized work, and models with different context and price profiles.
 
-I used to think more pricing transparency would be the unlock for people like us. I've changed my mind on that. The unlock is figuring out _what your stable workflow looks like_ first. Price optimization is a problem you earn the right to solve.
+| Workload | Candidate to evaluate | Why it enters the shortlist | Main caveat |
+|---|---|---|---|
+| Existing Grok 3 integration that needs minimum disruption | `grok-4.3` with `none` | This matches xAI’s redirect behavior and has a 1M context window | Explicitly retest behavior; do not rely on the hidden redirect |
+| Research or complex work needing adjustable reasoning | `grok-4.3` with the chosen effort | Four documented effort levels and tool support | More reasoning can change latency and cost |
+| Current flagship general and coding work | `grok-4.7` | xAI identifies it as the current flagship; 500k context | $2 input and $6 output per million below 200k, higher beyond the threshold |
+| Agentic coding workflow | `grok-build-0.1` | Current code-focused option in xAI’s price list | Test against your repositories, tools, and acceptance checks |
 
-## What Cheaper APIs Don't Solve
+Do not select by generation number alone. Start with the cheapest candidate that satisfies the actual task, then promote only if a measured failure requires it. A background classifier and a high-stakes research report should not inherit the same model configuration merely because they share a provider.
 
-This is the part I wish someone had told me earlier.
+## When xAI’s API is a good fit for a small operation
 
-Once I'd done the math on my own usage, I realized the real cost wasn't the token bill — it was the time I spent wiring things together. Pulling a doc from Drive, handing it to the model, pasting the output into a draft, running it through a second pass, saving the result somewhere I'd actually find it again. A call to Grok 3 versus GPT-5.2 versus DeepSeek is the same shape of _one_ step in that chain. The chain itself is what eats my afternoon.
+The xAI API deserves evaluation when the workload benefits from a capability that is concrete and testable:
 
-Managed agent platforms (Claude's, OpenAI's, the orchestration layer stuff) are solving a different problem — they handle the chain, not the per-call cost. Raw APIs give you flexibility and lower cost per call but leave the plumbing to you. Different tools, different stages of the same journey. If you're early and exploring, the managed stuff gets you moving. If you've nailed down the workflow and want to squeeze cost, the raw API route starts to make sense.
+- **X-native research:** X Search can query posts, profiles, and threads, constrain dates and accounts, and return citations. This is useful for monitoring a defined set of sources or studying reactions where X is itself the primary data surface.
+- **Combined web and X research:** a workflow can use both server-side tools in the same request, then bring back cited results.
+- **OpenAI-client compatibility:** xAI’s [quickstart](https://docs.x.ai/developers/quickstart) documents use through the OpenAI SDK by changing the base URL and API key, reducing the initial integration work for compatible applications.
+- **Per-request cost evidence:** the billed-cost field makes it practical to attribute spending to a customer, workflow, or scheduled run.
+- **Prepaid control:** xAI’s billing documentation supports prepaid credits, which can place a hard operational boundary around experimentation when invoiced billing is not enabled.
 
-For where I am — mostly exploring, occasionally building something stable — I've settled into a mix. Grok 3 Mini for high-volume background tasks, Claude or GPT for the thinking-heavy stuff, DeepSeek for anything I want to run cheap and dirty at scale. Not a recommendation. Just where I landed. The mix works because each model has a distinct lane, which is the same test that [decides whether a new integration — Gemini 3.5 being the current candidate — changes how you actually work](/blog/gemini-3-5-integration-solo-operators) or just adds another model to manage.
+The strongest case is not “Grok is cheaper.” It is “this workflow needs xAI’s specific search surface or performs better in our evaluation at an acceptable total cost.”
 
-![5.png](/blog/images/grok-3-api-solo-operator/1776932977603-7e7aba35-fa7d-4d76-b064-9b3b721ca245.webp)
+## When it is the wrong choice
 
-That's my honest take, two months in. Cheaper tokens are real, but they're not the barrier most solo operators actually hit. When you need this level of price optimization, you'll know.
+Do not add the xAI API just to increase the number of available models. Every provider adds key management, billing, error handling, monitoring, policy review, and regression testing.
+
+It is usually the wrong next step when:
+
+- the task works reliably with a model already in the stack;
+- X data is not material to the result;
+- the workflow has no evaluation set, so “better” cannot be measured;
+- the application cannot tolerate model redirects or changing aliases;
+- long prompts regularly cross the 200k pricing threshold without producing proportional value;
+- no one monitors tool calls, retries, and actual cost per completed job;
+- the real need is a finished workflow rather than a raw model endpoint.
+
+For non-developers, a raw API key is not a complete product. It does not provide a task queue, approval flow, file organization, retry policy, or a place to review deliverables. The distinction between an endpoint and an operating environment is covered more fully in [agentic AI tools](/blog/agentic-ai-tools).
+
+## A seven-step decision test before switching
+
+### 1. Define the job, not the model preference
+
+Write down the input, required output, acceptable latency, source requirements, and failure cost. “Use Grok” is not a job definition.
+
+### 2. Confirm the exact model that serves the request
+
+Remove `grok-3` and aliases from the test configuration. Pin the intended current model or consciously choose a documented moving alias.
+
+### 3. Build a small evaluation set
+
+Include common inputs, edge cases, adversarial or ambiguous requests, and examples that must be refused or escalated. Score the deliverable, not how persuasive the prose sounds.
+
+### 4. Measure total cost per successful job
+
+Capture `cost_in_usd_ticks`, tool-usage counts, retries, and failed outputs. A low token rate can lose its advantage when an agent performs many searches or repeats a failed step.
+
+### 5. Test the context threshold
+
+Measure prompt size in the real workflow. If it can approach 200k tokens, test both sides of the threshold and decide whether retrieval or context trimming is more economical.
+
+### 6. Set spend and failure boundaries
+
+Use prepaid credits or a documented billing limit, restrict search scope, cap agent turns, and decide when a human must approve an external action.
+
+### 7. Compare the maintenance cost
+
+Count integration time, monitoring, model migrations, and prompt revalidation. Saving a few dollars in inference is not a saving if it creates another unmaintained production path.
+
+## What the Grok 3 episode teaches about model selection
+
+The Grok 3 API was a real product, but it is now a historical model name that resolves to something else. That is the durable lesson for a small team: model identifiers, prices, and defaults are dependencies, not marketing labels.
+
+If an existing application still sends `grok-3`, move to an explicit current model and retest it. If evaluating xAI for a new workload, start from the current [models and pricing catalog](https://docs.x.ai/developers/models), include tool usage in the cost, and choose the model only after the workflow has measurable success criteria.
+
+Floatboat takes a different route for people who need to use models rather than maintain provider integrations: supported models can be selected inside one Agent Workspace while files, review, and deliverables stay in the workflow. The API route remains appropriate when you are building software and need direct control. The workspace route is often simpler when the goal is to finish the work itself.

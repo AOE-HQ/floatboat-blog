@@ -1,6 +1,6 @@
 ---
 title: "What Are Claude Managed Agents?"
-description: "Claude Managed Agents is Anthropic's new hosted agent infrastructure. Here's what it does, who it's for, and what it means if you're not a developer."
+description: "Claude Managed Agents is Anthropic's hosted runtime for long-running agents. Learn what it manages, where it fits, its limits, and how teams should evaluate it."
 slug: "what-are-claude-managed-agents"
 date: "2026-04-10"
 author: "Nova"
@@ -10,96 +10,120 @@ locale: "en"
 draft: false
 ---
 
-I was reading the Anthropic release notes yesterday morning — mostly because I track this stuff obsessively — and something stopped me mid-scroll."Fully managed agent infrastructure. Deploy and manage autonomous agents in stateful sessions with persistent event history."
+Claude Managed Agents is a hosted service for running long-horizon agents on the Claude Platform. It is not a new Claude model, a chat mode, or a ready-made employee. A development team supplies the agent definition, tools, credentials, policies, and success criteria; Anthropic operates the runtime that keeps the work moving.
 
-Wait. That's not a model update. That's not a new chat feature. That's Anthropic saying: _​we'll run your AI agents for you.​_ The announcement got 2 million views within two hours. One developer posted: "there goes a whole YC batch." That kind of reaction usually means something real shifted. So I spent the day reading through the docs, the engineering blog, and the early coverage to figure out what Claude Managed Agents actually is — and whether any of it matters to people like us.
+That distinction matters. “Managed” removes part of the infrastructure burden. It does not remove the need to design the job, constrain access, test failure cases, and review consequential outputs.
 
-Hi, I’m Nova! Here's what I found.
+## The short definition
 
-![2.png](/blog/images/what-are-claude-managed-agents/1775730586728-6d11b474-4b85-486d-9184-c0ffd522defc.webp)
+Anthropic describes three separable parts of an agent:
 
-## What Claude Managed Agents Actually Is
+| Part | What it does |
+|---|---|
+| Session | Keeps an append-only history of actions and results |
+| Harness | Calls Claude and routes tool requests |
+| Sandbox | Provides an execution environment for code and files |
 
-The clearest way I can put it: **Claude Managed Agents is infrastructure, not a product you use in a chat window.**
+Managed Agents virtualizes those parts behind stable interfaces. Anthropic can change the underlying harness or sandbox without requiring every customer to rebuild its integration. Its engineering account calls this a “meta-harness”: infrastructure intended to accommodate different agent designs over time. See Anthropic’s [architecture explanation](https://www.anthropic.com/engineering/managed-agents).
 
-The Claude Platform now offers two paths: direct model access where you build your own conversation loop, and fully managed agent infrastructure where Anthropic handles stateful sessions and persistent event history. Claude Managed Agents is the second path. You can see both options laid out in the [Claude API documentation](https://platform.claude.com/docs/en/home), which is where I'd start if you want the technical picture.
+The service belongs to the Claude Platform, so its primary audience is product, platform, and engineering teams deploying an agent programmatically. A person looking for an interactive assistant should start with Claude chat, Cowork, or Claude Code instead.
 
-![3.png](/blog/images/what-are-claude-managed-agents/1775730604254-8c285a71-a0b0-43dd-ae4f-6b1c6421cb39.webp)
+## What Managed Agents contributes
 
-**It's a managed agent harness — not a new model.** The underlying AI is still Claude (Opus 4.6, Sonnet 4.6). What's new is the scaffolding around it. Managed Agents handles secure sandboxed code execution, authentication, checkpointing, scoped permissions, and persistent long-running sessions — all the plumbing that used to take engineering teams months to build themselves.
+The useful capability is not a magical level of autonomy. It is a managed execution envelope for work that may span many steps.
 
-### A Meta-Harness, Not Just Another Tool
+- **Durable sessions:** the event history lives outside a single model context window, allowing a system to reconstruct state after interruption.
+- **Isolated execution:** a sandbox gives the agent a bounded place to run code and modify files.
+- **Tool routing:** the harness connects model decisions to approved tools and records what happened.
+- **Scoped access:** production agents can be given narrower permissions and credentials than the people who operate them.
+- **Tracing:** teams can inspect an execution rather than treating the final answer as the only evidence.
+- **Long-running work:** the runtime is designed for jobs that cannot reliably fit into one request-response exchange.
 
-![4.png](/blog/images/what-are-claude-managed-agents/1775730623124-70a80ac9-c523-4617-842a-f90deec73a40.webp)
+These features make it easier to operate an agent. They do not prove that the agent will complete a particular business process correctly.
 
-Anthropic's engineering team describes the design philosophy as "decoupling the brain from the hands." The detail that caught my attention: the session serves as a durable event log outside Claude's context window — if the system restarts or a container crashes, the agent picks up exactly where it left off using the recorded event stream. Disposable containers can fail and be replaced without losing progress. That's a real reliability guarantee. The Anthropic engineering blog post on [scaling managed agents](https://www.anthropic.com/engineering/managed-agents) goes deep on why they built it this way — worth reading if you're curious about the architecture thinking.
+## What it does not provide
 
-### Public Beta Status and What That Means
+Managed Agents should not be confused with a finished workflow application. It does not discover your approval policy, clean your data, decide which source is authoritative, or define what “done” means.
 
-Claude Managed Agents is currently in beta. All endpoints require the `managed-agents-2026-04-01` beta header. The SDK sets this automatically, but behaviors may be refined between releases. Certain features — including outcomes, multiagent coordination, and memory — are in research preview and require separate access requests.
+It also does not make high-impact actions safe by default. An agent with access to production systems can still select the wrong record, misread an instruction, repeat an action, or continue from stale state. Sandboxing limits where code runs; it does not validate the business meaning of the result.
 
-In practice: it's real and usable, but it's not a finished product. If you're building something customer-facing on top of it right now, budget time for unexpected changes.
+Availability and preview labels can also change. Before committing to a design, verify the current endpoints, region and account eligibility, limits, pricing, and preview conditions in the [Claude Platform documentation](https://platform.claude.com/docs/en/home). Do not treat a launch-period header, price, or model list as permanent architecture.
 
-## What It Can Do — and Who It's Built For
+## Managed Agents vs Cowork, Claude Code, and chat
 
-The key capabilities are minimal infrastructure (no need to build your own agent loop, sandbox, or tool execution layer) and stateful sessions with persistent file systems and conversation history across multiple interactions.
+| Surface | Best fit | Who operates it | Typical boundary |
+|---|---|---|---|
+| Claude chat | Questions, analysis, drafting | An end user | One conversation |
+| Claude Cowork | Delegated work across files and connected apps | A knowledge worker | A reviewed desktop task |
+| Claude Code | Repository and terminal work | A developer or technical operator | A local or remote coding environment |
+| Claude Managed Agents | A custom agent offered as a service | A product or platform team | A programmatic, hosted runtime |
 
-Sessions can run autonomously for hours, with outputs that persist even through disconnections. Multi-agent coordination — where one agent spins up and directs other agents to parallelize work — is available in research preview.
+Cowork and Claude Code are user-facing harnesses. Managed Agents is infrastructure that can host custom harnesses, including task-specific ones. The choice is therefore not “which agent is smartest?” It is “are we using an existing work surface, or building an agent-backed product?”
 
-![5.png](/blog/images/what-are-claude-managed-agents/1775730635313-a66b0135-a330-4f9e-a480-9c056117994e.webp)
+For a broader conceptual comparison, see [what an agent harness does](/blog/what-is-an-agent-harness). For the data-access layer behind tools, see [AI agent connectors explained](/blog/ai-agent-connectors-explained).
 
-### The Intended User: Dev Teams and Agent Platform Builders
+## Workloads that fit—and ones that do not
 
-This is the part I want to be honest about, because it's easy to get excited and misread who this is actually for.
+A strong candidate has a repeatable objective, machine-readable inputs, bounded tools, observable intermediate steps, and a result a reviewer can verify. Examples include document intake, repository maintenance, structured research, reconciliation, or triage that ends in a queue for human approval.
 
-Claude Managed Agents abstracts away months of infrastructure work. Users can define the agents they want to run — in natural language or through a YAML file — set guardrails, and run them on Anthropic's platform with the underlying infrastructure handled automatically. The [official Claude Managed Agents overview](https://platform.claude.com/docs/en/managed-agents/overview) is precise about this: it's a developer API surface, not an end-user product.
+A weak candidate has an ambiguous objective, irreversible actions, poorly governed credentials, or no reliable test for correctness. “Handle customer refunds autonomously” is not a deployable specification. “Collect the order record, check four explicit policy conditions, draft a recommendation, and require an employee to approve the refund” is testable.
 
-Early adopters tell the story clearly. The initial user base includes Notion, Rakuten, and Asana — companies that needed to ship agent features to their own users without building the runtime infrastructure themselves. Rakuten reportedly deployed specialist agents for sales, marketing, and finance in under a week each.
+Start with the second form.
 
-**This is a developer tool. Specifically, it's for teams building products that include AI agents.** Not for solo operators who want a smarter assistant.
+## A safe setup pattern
 
-![6.png](/blog/images/what-are-claude-managed-agents/1775730648441-f3377238-255d-470a-9835-f3845068f333.webp)
+### 1. Define the contract
 
-## What It Doesn't Do
+Write down accepted inputs, allowed tools, expected artifacts, completion conditions, and stop conditions. Include what the agent must do when evidence conflicts or a required source is unavailable.
 
-### It's Not a Workspace
+### 2. Minimize authority
 
-Claude Managed Agents has no interface. There's no dashboard where you chat with it, drag files in, or watch it work. It's accessible through a set of APIs on the Claude Platform — you define an agent, configure a cloud environment, and launch sessions programmatically.
+Separate read, draft, and execute permissions. Use dedicated service credentials with the narrowest practical scope. Keep deletion, payment, publishing, access-control changes, and external communication behind explicit approval.
 
-If you were hoping for something like "a really powerful Claude that can do long tasks without me babysitting it" — that's closer to what Claude Cowork is building toward (desktop automation, file work, knowledge tasks). Managed Agents is the infrastructure layer underneath products like that.
+### 3. Make state inspectable
 
-### It's Not Plug-and-Play for Non-Developers
+Store source references, tool calls, intermediate artifacts, approvals, and the final outcome. A durable session is useful only if an operator can understand and recover it.
 
-Pricing runs on two dimensions. All tokens consumed by a session are billed at standard Claude Platform rates, plus $0.08 per session-hour of active runtime — with idle time not counting toward that billing. You can find the exact breakdown on the [Managed Agents pricing page](https://platform.claude.com/docs/en/about-claude/pricing). Accessible for a dev team, but there's nothing to install or subscribe to as a regular user. You'd need to either build on top of it or use a product that's already integrated it.
+### 4. Test recovery, not only success
 
-![7.png](/blog/images/what-are-claude-managed-agents/1775730661291-ec410158-091c-45c8-9693-7b75e34ea6a7.webp)
+Interrupt a session, revoke a credential, return malformed tool output, duplicate an event, and change an upstream record mid-run. Check whether the agent stops safely and whether resuming repeats side effects.
 
-## Why This Launch Matters Even if You Won't Use It
+### 5. Stage deployment
 
-Huh. This is where I keep landing when I think about it.
+Run historical cases first, then shadow production without acting, then allow low-risk writes with approval. Expand scope only after error categories and rollback procedures are understood.
 
-### The Agent Stack Is Splitting Into Infrastructure vs. Tools
+## How to evaluate a pilot
 
-Here's what I think is actually happening: the AI tooling world is starting to look like web hosting did in the 2010s. First there were raw servers. Then managed cloud services abstracted the infrastructure. Then products built on top became the things regular people actually used.
+Use a fixed case set and compare the agent with the current process. Track more than completion rate:
 
-Anthropic built Managed Agents as a "meta-harness" — a system designed to remain stable as the specific harnesses and models underneath it keep changing. The interfaces are meant to outlast any particular implementation, including the ones Anthropic runs today. They're explicitly building for agent architectures that don't exist yet. The [SiliconANGLE writeup on the launch](https://siliconangle.com/2026/04/08/anthropic-launches-claude-managed-agents-speed-ai-agent-development/) frames this competitive context well — every major AI lab is now building toward the same managed infrastructure layer.
+| Measure | Question |
+|---|---|
+| Correctness | Did the result satisfy the written acceptance test? |
+| Evidence quality | Can each important claim or decision be traced? |
+| Intervention rate | How often did a person need to rescue the run? |
+| Unsafe-action rate | Did it attempt anything outside policy? |
+| Recovery quality | Could an interrupted run resume without duplicate effects? |
+| Cost and latency | Is the full run economical and timely at expected volume? |
 
-That's a long-term infrastructure play. And it means the layer where non-technical users eventually interact with AI agents — the workspace, the tool, the product — is separating from the layer where agents actually run.
+Review failures by category: bad input, missing context, wrong tool choice, tool error, permission problem, flawed reasoning, or inadequate review. Changing the model will not fix every category.
 
-### What This Signals About Where AI Work Is Heading
+## Security boundaries to decide before launch
 
-Once a company's agents run on managed infrastructure — with specific tools, session formats, and sandboxing — switching to another provider becomes significantly more complex. Every major player is building a fuller stack, moving from raw model access toward platforms that wrap models in production-ready tooling.
+Treat every connected system as an expansion of the blast radius. Ask:
 
-The New Stack's coverage of [what Anthropic is actually trying to do here](https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/) puts it plainly: the infrastructure question is becoming someone else's problem to solve. The interesting design work moves up a layer.
+- Can untrusted text reach the agent through email, documents, tickets, or web pages?
+- Which tools can write, send, publish, delete, purchase, or change permissions?
+- Are secrets exposed to the model, the sandbox, or only to a brokered tool?
+- Can one tenant or session read another tenant’s state?
+- Are tool calls idempotent, and can they be rolled back?
+- Who receives an alert when a run stalls or crosses a risk threshold?
 
-For solo operators and small teams, the practical implication is this: the AI tools you use in the next year or two will increasingly be built on infrastructure like this. You won't see it, but it's what makes long, autonomous tasks reliable instead of brittle — and that reliability is what makes it practical for [a one-person company to delegate multi-hour work to managed agents](/blog/claude-managed-agents-one-person-company) instead of babysitting a single prompt.
+Prompt injection, compromised source material, and excessive permissions remain application risks even when the runtime is managed. The production owner—not the hosting layer—must define the approval and incident-response model.
 
-## What Solo Operators Should Take Away
+## The practical conclusion
 
-I don't think most people reading this will build directly on Claude Managed Agents. That's fine — and that's the honest answer.
+Claude Managed Agents can shorten the path from a prototype agent to an operated service because sessions, harness execution, sandboxing, and traces no longer all need to be built from scratch. The remaining work is the work that determines whether the product is trustworthy: narrow task design, permissions, evaluations, human gates, and recovery.
 
-What's worth paying attention to is the pattern. The agent infrastructure layer is maturing and becoming someone else's problem to maintain. The products built on top of it — the ones that actually handle your files, your research, your workflows — are where the interesting interface work is happening now.
+If your decision is specifically about delegation inside a very small business, the companion guide to [Claude managed agents for a one-person company](/blog/claude-managed-agents-one-person-company) applies these boundaries to that narrower operating model.
 
-If you're evaluating AI workspace tools (Floatboat, for instance, sits in that layer — integrating multiple AI capabilities into a single workspace flow), knowing that the underlying infrastructure question is increasingly "solved" by services like this helps you focus the right question: **does this tool use that infrastructure to actually reduce your thinking work, or is it still just a chat wrapper?**
-
-I'm still figuring out exactly what that bar looks like in practice. But I'll keep testing.
+Choose it when you are building a programmatic agent service and want Anthropic to operate much of the runtime. Choose Cowork or Claude Code when the real need is an existing interface for a person to delegate work. Choose ordinary chat when the task is conversational and immediate.
