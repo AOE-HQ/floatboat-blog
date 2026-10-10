@@ -12,6 +12,12 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 Independent OpenBlog app mounted at `https://floatboat.ai/blog`. Cloudflare / Ingress rewrites `/blog/*` and `/zh/blog/*` to this service. Anything else on `floatboat.ai` still hits `aoe-backend`.
 
+## Article workflow gate
+
+Before creating or substantially rewriting an article, read `E:\clients\floatboat\blog\README.md`, `E:\clients\floatboat\blog\publishing-contract.md`, and every currently applicable rule in `E:\Agent执行\内容构建\Blog\article-shared\`. “Run the complete Skills” means this full project entry chain, not only the individual research or writing specification named in the prompt.
+
+Create an internal research brief before drafting. After the complete bilingual page is assembled—including frontmatter, body, FAQ, popup, internal links, and media—issue a content verdict using `BLOCKED`, `NEEDS_REVISION`, or `PUBLISH_READY`. Technical checks such as build, TypeScript, image validation, and link audits do not establish editorial readiness. Do not commit, push, or create/update a PR for an article marked `BLOCKED` or `NEEDS_REVISION`, unless the user explicitly asks to publish an unfinished draft.
+
 ## Images
 
 Script: `scripts/convert-blog-images-to-webp.mjs`

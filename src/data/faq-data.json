@@ -1,5 +1,25 @@
 {
   "pages": {
+    "/blog/what-is-gemini-agent": {"items": [
+      {"question":"What is Gemini Agent?","answer":"Gemini Agent is Google's cloud-based universal work agent. It accepts objectives, plans multi-step work, uses connected business tools, coordinates subagents, and returns finished work rather than only a chat response."},
+      {"question":"Is Gemini Agent a new Gemini model?","answer":"No. Google separates the agent from the model beneath it. The agent holds context, tools, memory, permissions, and workflows, while steps can be routed across Gemini and Anthropic Claude models."},
+      {"question":"How is Gemini Agent different from the Gemini app?","answer":"The Gemini app is primarily a personal assistant and interactive surface. The new work agent is designed for persistent enterprise execution, shared business context, subagent orchestration, governed identities, and audit controls."},
+      {"question":"Can Gemini Agent use Claude?","answer":"Google says the work agent can currently orchestrate Gemini-family and Anthropic Claude models, with other private and open models planned. Availability may depend on the enterprise preview and administrator configuration."},
+      {"question":"Can Gemini Agent keep working after I close my laptop?","answer":"Yes, according to Google's announced design. It runs in Google Cloud, so long tasks can continue for hours or days and be resumed from another supported device or channel."},
+      {"question":"What are Gemini coworker agents?","answer":"Coworker agents are persistent agents with defined roles, scoped context, storage, and dedicated company identities. Temporary subagents are created for one job and coordinated in parallel or sequence."},
+      {"question":"Which apps can Gemini Agent connect to?","answer":"Google announced Workspace, Microsoft 365, Teams, Slack, Git, Jira, Salesforce, ServiceNow, several data platforms, desktop files, and MCP tools. Exact availability can vary during preview."},
+      {"question":"Is Gemini Agent generally available and how much does it cost?","answer":"The October 2026 universal work agent launched in private preview for selected enterprise customers. Google has not announced a simple standalone consumer price or broad consumer release date."}
+    ]},
+    "/zh/blog/what-is-gemini-agent": {"items": [
+      {"question":"Gemini Agent 是什么？","answer":"Gemini Agent 是 Google 构建在云端的通用工作 Agent。它接收目标后可以规划和执行多步骤任务、调用企业工具、协调子 Agent，并交付完成的工作结果。"},
+      {"question":"Gemini Agent 是新的 Gemini 模型吗？","answer":"不是。Google 明确把 Agent 与底层模型分开：Agent 保存上下文、记忆、工具、权限和工作流，具体步骤则可以交给 Gemini 或 Anthropic Claude 模型。"},
+      {"question":"Gemini Agent 和 Gemini App 有什么区别？","answer":"Gemini App 主要是个人助手与交互入口；新的工作 Agent 面向持久企业任务、共享业务上下文、多 Agent 编排、身份治理和审计控制。"},
+      {"question":"Gemini Agent 可以调用 Claude 吗？","answer":"可以。Google 表示目前能在 Gemini 系列和 Anthropic Claude 模型之间调度，未来还计划接入其他私有模型和开放模型。实际范围取决于企业私测与管理员配置。"},
+      {"question":"关掉电脑后 Gemini Agent 还会继续工作吗？","answer":"按照 Google 公布的架构，可以。它运行在 Google Cloud，耗时数小时或数天的任务可以在设备关闭后继续，并从其他受支持入口恢复。"},
+      {"question":"Gemini 的 coworker agents 是什么？","answer":"它们是拥有固定职责、限定上下文、独立存储和企业身份的长期 Agent。临时子 Agent 则只为某个任务创建，可按顺序或并行协作。"},
+      {"question":"Gemini Agent 可以连接哪些应用？","answer":"Google 公布的范围包括 Workspace、Microsoft 365、Teams、Slack、Git、Jira、Salesforce、ServiceNow、多种数据平台、本地文件和 MCP 工具。私测阶段的具体可用项可能不同。"},
+      {"question":"Gemini Agent 已经全面开放了吗？价格是多少？","answer":"2026 年 10 月发布的通用工作 Agent 目前面向部分企业客户私测。Google 尚未公布简单的个人订阅价格，也没有给出消费端全面开放日期。"}
+    ]},
     "/blog/gpt-6-1-sol": {
       "items": [
         {
