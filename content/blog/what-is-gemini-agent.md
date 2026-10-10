@@ -58,6 +58,45 @@ The announced connections include Gmail, Drive, Docs, Slides, Sheets, Chat, Cale
 
 The important part is not the length of that list. It is whether an agent can preserve one objective while moving between those systems. Connectors alone do not create an agent; they create access. Planning, state, error recovery, and approvals determine whether that access becomes reliable work.
 
+## Three workflows Gemini Agent is designed to handle
+
+The announcement is easier to understand as a set of work patterns than as a feature list. The following examples describe the architecture Google announced; they should not be read as independent tests of the private-preview product.
+
+### Turn a request into a coordinated project update
+
+Imagine a manager forwarding a customer escalation and asking for an executive update by Friday. A work agent could find the relevant email thread and Drive files, collect issue status from Jira, check calendars for the next review, draft a status document, and turn the approved version into a presentation.
+
+A chatbot can help write each artifact, but the user still carries state between applications. Gemini Agent is meant to hold the objective across the whole sequence. The important product questions are whether it cites the records it used, pauses before sending or modifying anything, and recovers cleanly when a connector fails.
+
+### Produce a research package, not just a research answer
+
+Google's own launch example moves from market research to a financial model in Sheets and then to a presentation in Slides. That is a useful distinction: the desired output is a reusable package of evidence, calculations, and communication—not a long message in a chat window.
+
+This workflow tests several layers at once. Research needs traceable sources; spreadsheet work needs deterministic calculations; the presentation needs to preserve the important caveats. Multi-model routing is only helpful if the handoffs do not lose assumptions or introduce conflicting figures.
+
+### Investigate an engineering or operations incident
+
+An engineering agent could read an incident report, inspect Git and Jira history, query logs or data, ask temporary subagents to test competing explanations, and prepare a proposed patch or runbook update inside a sandbox. A human could then approve the change and retain the execution trail for review.
+
+This is where persistent execution and coworker identities become operationally meaningful. It is also where weak controls become dangerous. Read access, code execution, deployment authority, and outbound communication should be separate permissions—not one broad “let the agent work” switch.
+
+## What is available, in preview, or still unproven
+
+Gemini Agent was announced with a broad architecture, but announcement, preview access, and generally available product behavior are not the same thing.
+
+| Area | Confirmed status | What not to assume yet |
+|---|---|---|
+| Universal work agent | Announced by Google on October 8, 2026 | Broad access for every Gemini or Workspace account |
+| Availability | Private preview for selected enterprise customers | A public consumer launch date or self-serve plan |
+| Model routing | Gemini and Claude support announced; private and open models planned | Identical model choice in every account, region, or workflow |
+| Persistent execution and memory | Core parts of the announced architecture | That every memory control and long-running trigger is already exposed to all preview users |
+| Connectors and MCP | A wide tool registry was announced | Equal depth, write permissions, and reliability for every connector |
+| Coworker agents | Persistent identities, storage, and scoped context were announced | Unrestricted autonomous employees or a replacement for organizational accountability |
+| Industry editions | Financial services and legal previews announced; other sectors described as forthcoming | Finished vertical products for every industry |
+| Performance claims | Google published customer examples and internal product claims | An independent benchmark against other work agents |
+
+This boundary matters for searchers asking “Is Gemini Agent available?” or “Can I use Gemini Agent now?” The accurate short answer is: the product has been announced and is being tested with selected enterprises, while exact access, connector scope, pricing, and general availability remain account- and program-dependent.
+
 ## Gemini Agent vs the Gemini app
 
 The names overlap, but the product scopes are different.
@@ -73,11 +112,40 @@ The names overlap, but the product scopes are different.
 
 Earlier products and features called Gemini Agent or Agent Mode do not automatically have the full enterprise architecture described at Gemini at Work 2026. When reading coverage, check whether it refers to the consumer Gemini app, managed developer agents, or this new universal work agent.
 
+## How to compare Gemini Agent with other work agents
+
+There is no single “best AI agent” independent of the work environment. Gemini Agent has an obvious advantage for organizations whose documents, identity, communication, and data already live in Google's ecosystem. A local or cross-model agent can offer a different advantage: more control over where context lives and which model or execution environment is used.
+
+Use these six questions instead of comparing feature counts:
+
+1. **Where does context live?** A cloud workspace can follow the user across devices; a project-local workspace can be easier to isolate, inspect, and move.
+2. **Where does execution happen?** Persistent cloud execution suits scheduled and event-driven jobs. Local or hybrid execution can be preferable for files, developer tools, or data that should not leave a managed environment.
+3. **How portable is the model layer?** Announced multi-model routing is valuable, but buyers should ask who controls routing, which models are available, and whether their prompts, memory, and Skills survive a model change.
+4. **How is the agent represented?** Enterprise agents need their own identity, scoped credentials, audit history, and an owner. Personal assistants usually inherit the user's session and are harder to govern as durable workers.
+5. **What can trigger work?** Compare interactive prompts, schedules, external events, email, APIs, and background monitoring. Then verify which triggers are available in production, not only on a roadmap.
+6. **Can completed work leave the platform?** Documents, code, data, logs, and learned procedures should remain usable if the team changes agents or vendors.
+
+The comparison is therefore not simply Gemini Agent versus another chatbot. It is Google-centered cloud continuity versus alternatives built around local control, a neutral project workspace, a particular business system, or a developer environment.
+
 ## Security and cost are part of the product, not footnotes
 
 An agent that can send messages, alter records, run code, and continue unattended needs more than a permission dialog. Google describes identity and policy management, role-based access, authorization controls, secure sandboxes, network gateways, audit records, and project-level spending caps.
 
 These controls are a major part of the enterprise pitch, but their effectiveness will depend on implementation. Buyers should test least-privilege access, approval boundaries, revocation, trace visibility, prompt-injection handling, and what happens when a cost cap pauses a multi-step task.
+
+## A practical Gemini Agent pilot checklist
+
+An enterprise pilot should test one bounded but representative workflow from beginning to end. A polished demo that only drafts text will not reveal whether the agent can be trusted with real work.
+
+- **Define the finish line.** Choose a task with an observable result, such as a weekly account review with cited inputs, a reconciled spreadsheet, or a proposed code change.
+- **Start with least privilege.** Grant only the folders, systems, and actions required for that task. Confirm that denied access produces a safe failure rather than an improvised workaround.
+- **Inspect the evidence trail.** Require source links, tool-call history, changed records, model choices, and approvals to be understandable by someone other than the operator.
+- **Force a partial failure.** Remove a document, break a connector, or return contradictory data. Measure whether the agent asks for help, retries safely, or silently produces an incomplete result.
+- **Test pause, revoke, and resume.** A persistent agent should stop predictably, lose access promptly when credentials are revoked, and resume without repeating destructive actions.
+- **Set a real budget boundary.** Verify what happens when a task approaches a model or project spending cap and whether lower-cost routing changes output quality.
+- **Export the outcome.** Make sure the final documents, code, logs, and decisions can be retained outside the agent's interface.
+
+The best pilot metric is not how autonomous the agent appears. It is how much verified work reaches the finish line per unit of human review, cost, and operational risk.
 
 ## Availability and pricing
 
