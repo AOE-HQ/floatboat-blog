@@ -276,12 +276,12 @@
     },
     "best-claude-code-alternatives": {
       "en": {
-        "title": "Claude Code alternatives by job shape",
-        "body": "Terminal, editor, or cloud — pick per task, then hand the busywork to your calendar."
+        "title": "Compare coding agents by accepted changes",
+        "body": "Run the same repository tasks, then compare review time, permissions, recovery, and total cost."
       },
       "zh": {
-        "title": "按任务形态排的 Claude Code 替代品",
-        "body": "终端、编辑器还是云端，按活儿选；杂务交给日程去追。"
+        "title": "按可接受的代码变更比较编程 Agent",
+        "body": "让候选工具运行同一批仓库任务，再比较审查时间、权限、纠错与总成本。"
       }
     },
     "best-claude-cowork-alternatives": {
@@ -296,12 +296,12 @@
     },
     "best-claude-tag-alternatives": {
       "en": {
-        "title": "AI teammates for Slack, ranked",
-        "body": "A shared teammate earns its seat when it can see meetings, not just mentions."
+        "title": "Choose an AI teammate by its collaboration contract",
+        "body": "Test shared context, identity, approvals, attribution, failure recovery, and cost controls before rollout."
       },
       "zh": {
-        "title": "Slack 里的 AI 队友怎么选",
-        "body": "看得见会议的队友，才不只是个被 @ 的机器人。"
+        "title": "按协作契约选择 AI Teammate",
+        "body": "上线前验证共享上下文、身份、审批、归因、失败恢复和费用控制。"
       }
     },
     "browser-ai-agent-security-questions": {
@@ -686,12 +686,12 @@
     },
     "grok-4-6": {
       "en": {
-        "title": "Grok 4.6: 500K context, one trap",
-        "body": "The 200K pricing cliff, plus where official and third-party scores disagree."
+        "title": "Where Grok 4.6 fits after 4.7",
+        "body": "Understand the 500K context window, the 200K pricing boundary, and why benchmark versions cannot be compared directly."
       },
       "zh": {
-        "title": "Grok 4.6：500K 上下文与一个坑",
-        "body": "200K 的价格悬崖，官方与第三方成绩的分歧也讲清了。"
+        "title": "Grok 4.7 发布后，4.6 该放在哪",
+        "body": "看清 50 万 token 上下文、20 万 token 计费分界，以及为什么不同版本的基准不能直接比较。"
       }
     },
     "grok-bot": {
@@ -1046,12 +1046,12 @@
     },
     "what-is-claude-cowork": {
       "en": {
-        "title": "Claude Cowork and your local files",
-        "body": "What it does with connected apps — and where desktop agents go further."
+        "title": "Claude Cowork is becoming Claude",
+        "body": "See how multi-step knowledge work differs from chat and Claude Code, and what the unified Claude experience changes."
       },
       "zh": {
-        "title": "Claude Cowork 与你的本地文件",
-        "body": "它对联通应用做了什么，桌面 Agent 又在哪一步走得更远。"
+        "title": "Claude Cowork 正在并入统一 Claude",
+        "body": "厘清多步知识工作与普通对话、Claude Code 的边界，以及统一 Claude 体验带来的变化。"
       }
     },
     "what-is-claude-tag": {

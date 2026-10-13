@@ -1239,84 +1239,108 @@
     "/blog/best-claude-code-alternatives": {
       "items": [
         {
-          "question": "Is Cursor a drop-in replacement for Claude Code?",
-          "answer": "No. Cursor is an AI IDE optimized for editor-native daily flow — autocomplete, chat, and agent mode inside the editor. Claude Code is a terminal agent optimized for deep, repo-scale reasoning with plan mode and sub-agents. They solve different jobs, and many teams run both rather than switching. If your pain is the terminal, Cursor doesn't replace Claude Code; if your pain is the editor, Claude Code doesn't replace Cursor either."
+          "question": "What is the best Claude Code alternative for IDE-first development?",
+          "answer": "Cursor is the strongest starting point when you want chat, multi-file edits, and agent workflows inside a VS Code-style editor. Test remote-agent permissions and usage costs before standardizing it."
         },
         {
-          "question": "What is the best free alternative to Claude Code?",
-          "answer": "The leading free options are **Cline** in VS Code and **Aider** in the terminal. Both are open source and model-agnostic: bring your own Anthropic, OpenAI, Google, or local model key and pay only for inference. Cline is the most-installed open-source agent in VS Code; Aider produces a clean, reviewable git commit per change. Expect to configure keys and models yourself — free, open, and yours, but less polished than a managed product."
+          "question": "Which Claude Code alternative is open source?",
+          "answer": "Cline and Aider are both open-source options. Cline runs in VS Code, while Aider is terminal- and Git-centered; both leave model-provider configuration and usage costs to you."
         },
         {
-          "question": "Which alternative is closest to Claude Code's autonomy?",
-          "answer": "For terminal autonomy, **Aider** is the closest free match — you own the whole loop and every edit lands as a clean commit. For unattended, ticket-to-PR work, **Devin** is the autonomous cloud counterpart: it takes a well-scoped ticket, works in a sandboxed environment, and returns a pull request while you sleep. The real question is whether you want to watch the loop or delegate it entirely; each is the right answer for a different horizon."
+          "question": "Is OpenAI Codex a direct Claude Code competitor?",
+          "answer": "Yes. Both are coding agents that can inspect repositories, edit files, and run commands. Codex is especially relevant when you want to combine interactive local work with parallel tasks in isolated cloud environments."
         },
         {
-          "question": "Should I switch from Claude Code to Cursor?",
-          "answer": "Only if your daily pain is the terminal, not the model. Cursor wins the editor flow — completions, chat, and agent mode in the IDE — while Claude Code wins the hard, repo-scale refactor with its deep reasoning and 1M-token context window. For many engineers the pragmatic answer is both: Cursor in the editor for everyday work, Claude Code in the shell for the architectural problems."
+          "question": "Is GitHub Copilot enough to replace Claude Code?",
+          "answer": "It can be for teams prioritizing broad IDE coverage and GitHub-centered administration. For deep multi-step repository work, test it against your actual builds and review requirements rather than assuming platform coverage equals autonomy."
         },
         {
-          "question": "Does Floatboat replace Claude Code?",
-          "answer": "No. Floatboat is a calendar-driven proactive agent for meeting prep and follow-up, not a repository coding agent — it sits in a different job shape entirely. It pairs with a coding agent rather than replacing it: run Claude Code or Cursor in the repo, and let a calendar agent handle your meeting rhythm. The two never compete."
+          "question": "When should I choose Devin instead of Claude Code?",
+          "answer": "Choose Devin for well-scoped asynchronous tickets with reproducible environments and clear acceptance tests. Claude Code is usually a better fit when an engineer wants to supervise the work interactively from a terminal."
         },
         {
-          "question": "When is Claude Code still the best choice?",
-          "answer": "When you want the deepest Claude reasoning on a large codebase from a terminal, value plan-mode research and sub-agents, and don't need model freedom or IDE-native flow. That is the reference job — the hard refactor on a big, messy repository — that none of the alternatives beats it on. If your requirement is model-agnostic or editor-native, pick from the ranked alternatives instead."
+          "question": "Can Cline or Aider use different AI models?",
+          "answer": "Yes. Both support multiple model providers, which reduces harness lock-in. The trade-off is that your team must manage credentials, model selection, rate limits, and variable inference costs."
+        },
+        {
+          "question": "How should I compare coding-agent prices?",
+          "answer": "Calculate cost per accepted change. Include subscription fees, model usage, remote compute, setup time, reruns, and the senior review time needed before a change can merge."
+        },
+        {
+          "question": "How can I test a Claude Code alternative fairly?",
+          "answer": "Give each candidate the same historical tasks, starting commit, environment, and acceptance tests. Compare mergeable output, review minutes, recovery from failed tests, permission exposure, and total cost."
         }
       ]
     },
     "/blog/best-claude-cowork-alternatives": {
       "items": [
         {
-          "question": "Is Floatboat a drop-in replacement for Claude Cowork?",
-          "answer": "No. Cowork is a user-initiated desktop agent for local and connector-backed file work inside Claude. Floatboat is Calendar-Driven — events and deadlines trigger pipelines. For a drop-in OSS desktop Cowork pattern, evaluate Eigent."
+          "question": "What is the best Claude Cowork alternative for Microsoft 365?",
+          "answer": "Microsoft 365 Copilot is the natural choice when source material and deliverables live in Outlook, Teams, SharePoint, Word, Excel, and PowerPoint. Confirm the required agents and licenses in your tenant."
         },
         {
-          "question": "When should I choose Microsoft Copilot Cowork over Claude Cowork?",
-          "answer": "When your organization standardizes on Microsoft 365, needs tenant-bound audit and permissions, and wants email, Teams, and Office artifacts executed inside that stack — not when you need Anthropic-only local folder control outside M365."
+          "question": "What is the best Cowork alternative for Google Workspace?",
+          "answer": "Gemini for Google Workspace fits teams centered on Gmail, Drive, Docs, Sheets, and Slides. Test cross-app generation and permission behavior with the exact edition and region you use."
         },
         {
-          "question": "Is Manus the same kind of product as Claude Cowork?",
-          "answer": "Both delegate multi-step knowledge work to non-developers, but Manus runs primarily in cloud sandboxes for async research and content packages; Cowork runs as a desktop agent with local file permissions. Route sensitive local files to Cowork or Eigent; route long async research to Manus."
+          "question": "How is ChatGPT Work different from Claude Cowork?",
+          "answer": "ChatGPT Work emphasizes a broad mix of connected apps and local or cloud execution, while Cowork is Anthropic's environment for file- and tool-based knowledge work. Connector coverage and permission boundaries should decide between them."
         },
         {
-          "question": "How does Perplexity Computer compare to Cowork for office work?",
-          "answer": "Computer orchestrates multi-model, cross-app cloud workflows with background execution; Cowork deepens local file and Anthropic connector work. Computer fits integration-heavy delegation; Cowork fits folder-heavy document batches on your machine."
+          "question": "Is Manus a replacement for Claude Cowork?",
+          "answer": "Manus can replace Cowork for cloud-browser-heavy research and web operations. It is less suitable when work depends on a governed local file tree or when sensitive accounts cannot be used in a managed browser."
         },
         {
-          "question": "Which open-source option is most like Claude Cowork?",
-          "answer": "**Eigent** is the most cited open-source Cowork desktop in 2026 third-party roundups — multi-agent, local files, BYOK, macOS/Windows/Linux."
+          "question": "When does Floatboat make more sense than Cowork?",
+          "answer": "Floatboat is differentiated when a calendar event should trigger preparation or follow-up automatically on a desktop. It is not the first choice when the main need is editing documents inside Microsoft or Google office suites."
         },
         {
-          "question": "When is Claude Cowork still the best choice?",
-          "answer": "When you want Anthropic-managed execution, local folder access, connector and plugin depth, and you primarily initiate knowledge-work tasks yourself or on explicit schedules — especially if you already pay for Claude Pro or Max."
+          "question": "Can Cowork alternatives create finished documents and presentations?",
+          "answer": "Some can, but capability varies by product, plan, and rollout. Test whether the system creates a usable native file with correct formatting and sharing permissions rather than only generating text to copy."
+        },
+        {
+          "question": "What security checks matter for an office agent?",
+          "answer": "Verify source permissions, handling of external instructions, action approvals, credential boundaries, audit records, retention, and whether a restricted user can retrieve information they should not see."
+        },
+        {
+          "question": "How should I evaluate a Claude Cowork alternative?",
+          "answer": "Run the same recurring jobs with the same sources and required output format. Score source coverage, artifact usability, permission fidelity, approval design, correction time, and repeatability."
         }
       ]
     },
     "/blog/best-claude-tag-alternatives": {
       "items": [
         {
-          "question": "Is FloatIM a drop-in replacement for Claude Tag?",
-          "answer": "No. Claude Tag is a **Slack-native shared**`@Claude` under Claude Team/Enterprise with Anthropic-hosted execution. FloatIM is an **agent-native messaging network** where agents are first-class participants — often paired with Floatboat for local-first work. Choose FloatIM when agent-first group chat is the job; choose Tag when Slack + Anthropic governance is fixed."
+          "question": "What is the closest Slack-native alternative to Claude Tag?",
+          "answer": "Agentforce in Slack is the closest fit for Salesforce-centered workflows. It supports agents in channels and DMs, but requires Agentforce licensing and administration across Salesforce and Slack."
         },
         {
-          "question": "How does Viktor compare to Claude Tag?",
-          "answer": "Both support `@` delegation and async multi-step work in Slack. Tag is Anthropic-native with one shared Claude per channel and org-metered billing. Viktor is a third-party generalist employee across Slack/Teams with its own sandbox and pricing — often accessible without Claude Enterprise packaging."
+          "question": "What should Microsoft Teams users choose instead of Claude Tag?",
+          "answer": "Copilot Studio agents can be published to Teams channels, group chats, and meeting chats. They are the strongest fit when Microsoft identity, Microsoft 365 data, and Teams are already the organizational standard."
         },
         {
-          "question": "Can Floatboat replace Claude Tag for my team?",
-          "answer": "Not for shared Slack channel delegation. Floatboat is a **calendar-driven proactive agent OS** for solo operators and small teams whose triggers are events and deadlines. It complements Tag or FloatIM for **meeting prep and follow-up** , not multiplayer `#channel` triage."
+          "question": "Is Glean an alternative to Claude Tag?",
+          "answer": "Yes, when the main job is finding authoritative knowledge across enterprise systems and bringing it into Slack or Teams. It is less direct for open-ended coding or general autonomous execution."
         },
         {
-          "question": "Which option is best for approval before external sends?",
-          "answer": "**Junior** ranks highest in this list for approval-gated defaults. **Operant** adds named-approver policy for self-hosted teams. Claude Tag can be configured conservatively, but Ambient autonomy is the feature enterprises evaluate against Junior's draft-first model."
+          "question": "When is Moveworks a better choice than Claude Tag?",
+          "answer": "Moveworks is a better fit when the shared agent primarily resolves IT, HR, finance, or employee-service requests. Tag is broader and better suited to general Anthropic-powered delegation in Slack."
         },
         {
-          "question": "Which self-hosted option is closest to Claude Tag?",
-          "answer": "**Operant** is the most direct open-source counterpoint in 2026 matrices — multiplayer Slack/Teams agents with per-user OAuth, BYOK models, and governance you operate. Tag wins on zero-ops and Anthropic-native depth; Operant wins on residency and attribution."
+          "question": "How is FloatIM different from Claude Tag?",
+          "answer": "Claude Tag adds a shared teammate to Slack, while FloatIM is a dedicated messaging network designed for humans and multiple agents as first-class participants. The latter requires adopting another collaboration surface."
         },
         {
-          "question": "When is Claude Tag still the best choice?",
-          "answer": "When you want shared `@Claude` inside Slack, Anthropic Agent Identity, Opus 4.8 agentic execution, and org-level tool scopes — and you already have or will buy Claude Team/Enterprise without needing a separate agent-native IM or self-hosted control plane."
+          "question": "Does Claude Tag use shared or individual permissions?",
+          "answer": "Tag works in shared Slack channels, but administrators configure its connected tools, spend limits, and access. Any pilot should verify how requester identity, channel context, and tool permissions combine before enabling actions."
+        },
+        {
+          "question": "What should I test before deploying an AI teammate in group chat?",
+          "answer": "Test shared task continuity, identity propagation, action approval, attribution, private-channel isolation, failure recovery, and administrator cost controls with multiple users and permission levels."
+        },
+        {
+          "question": "When should a team keep Claude Tag?",
+          "answer": "Keep Tag when the organization already uses Slack and Claude Team or Enterprise, wants Anthropic-native execution, and accepts Tag's shared-context and governance model. Switch only for a specific platform, data, or workflow advantage."
         }
       ]
     },
@@ -2566,58 +2590,26 @@
     },
     "/blog/grok-4-6": {
       "items": [
-        {
-          "question": "What is Grok 4.6?",
-          "answer": "Grok 4.6 is xAI's flagship model released August 12, 2026 — a post-training upgrade on Grok 4.5 focused on long-running agents, coding, and knowledge work, with a 500,000-token context window and a reasoning-effort ladder up to `xhigh`."
-        },
-        {
-          "question": "How much does Grok 4.6 cost?",
-          "answer": "Prompts under 200,000 tokens bill at $2 per 1M input and $6 per 1M output tokens (cached input $0.50). At or above 200K tokens, the entire request doubles to $4 / $12. A faster variant is available at 2x the base rates."
-        },
-        {
-          "question": "Does Grok 4.6 support images?",
-          "answer": "Yes for input, text only for output. Grok 4.6 accepts text and image input and produces text output, with no stated output length limit."
-        },
-        {
-          "question": "Is Grok 4.6 open-source?",
-          "answer": "No. Unlike DeepSeek's V4 line (MIT-licensed weights), Grok 4.6 has no open-weight release and no self-hosting option. It is available through the xAI API, Grok Build, Cursor, and partners like OpenRouter and Vercel."
-        },
-        {
-          "question": "Is Grok 4.6 better than GPT-5.6 Sol?",
-          "answer": "They match at 61 on the Artificial Analysis Intelligence Index, but the composite hides a workload split: Grok 4.6 leads on agentic knowledge work (GDPval-AA v2) while GPT-5.6 Sol leads on the hardest software-engineering benchmarks (DeepSWE v1.1, Terminal-Bench v3.0)."
-        },
-        {
-          "question": "How does Grok 4.6 compare to DeepSeek V4 Pro 0813?",
-          "answer": "Both shipped the same week targeting agentic workloads at budget prices. Grok 4.6 has the stronger composite intelligence and knowledge-work scores ($2/$6); DeepSeek V4 Pro is ~4x cheaper on input and ~7x on output ($0.435/$0.87) with MIT-licensed weights and a first-party harness. Choice depends on whether cost or benchmark headroom matters more for your workload."
-        }
+        {"question":"What is Grok 4.6?","answer":"Grok 4.6 is xAI's August 2026 model for coding, agentic tasks, and knowledge work. It accepts text and images, returns text, supports tool use and structured outputs, and offers four reasoning-effort settings."},
+        {"question":"How large is the Grok 4.6 context window?","answer":"The official xAI model page lists a 500,000-token context window. That capacity is useful for large repositories and document sets, but prompts at or above 200,000 tokens enter a higher pricing tier."},
+        {"question":"How much does the Grok 4.6 API cost?","answer":"Below 200K prompt tokens, xAI lists $2 per million input tokens, $0.50 per million cached input tokens, and $6 per million output tokens. At 200K prompt tokens or more, the listed rates are $4, $1, and $12 respectively, applied to the whole request."},
+        {"question":"Is Grok 4.6 an open-weight model?","answer":"No. xAI provides Grok 4.6 through its API and supported products or partners, but it has not released model weights for self-hosting."},
+        {"question":"Does Grok 4.6 know current events automatically?","answer":"No. xAI lists a February 1, 2026 knowledge cutoff and says real-time information requires server-side web or X search tools."},
+        {"question":"How did Grok 4.6 perform on benchmarks?","answer":"At launch, xAI reported an Artificial Analysis Intelligence Index score of 61 and strong agentic knowledge-work results. Benchmark versions must be checked carefully: for example, Terminal-Bench v2.1 and v3.0 results are not directly comparable."},
+        {"question":"Should a new project use Grok 4.6 or Grok 4.7?","answer":"Grok 4.7 is xAI's newer model and is the better first candidate for a new evaluation. Grok 4.6 remains reasonable where it is already validated, where 4.7 is unavailable, or where a fixed earlier version is needed for regression testing."},
+        {"question":"How should teams evaluate Grok 4.6?","answer":"Use representative tasks and score completion quality, tool reliability, review burden, context behavior, total token cost, and end-to-end latency. Keep the harness, permissions, reasoning setting, and retry policy equal when comparing models."}
       ]
     },
     "/blog/grok-bot": {
       "items": [
-        {
-          "question": "What is the difference between Grok and Grok Bot?",
-          "answer": "Grok is the AI model (the reasoning engine, most recently Grok 4.6). Grok Bot is the agent product: a persistent, named teammate that runs on its own cloud computer, signs into your apps, and completes multi-step work. Regular Grok answers questions; Grok Bot does work."
-        },
-        {
-          "question": "How does Grok Bot access my apps?",
-          "answer": "Bots use a persistent cloud VM with a browser, filesystem, and terminal. They use connectors/MCP where available and computer use (visually operating the interface) for apps and websites without a clean API. Bots sign in with your credentials and sessions persist across tasks."
-        },
-        {
-          "question": "Is Grok Bot secure?",
-          "answer": "It is safe to use if you understand its model. Every Bot on your account shares one cloud computer — same cookies, files, and credentials — and xAI's docs explicitly say not to use separate Bots as a security boundary. Treat the whole Bot roster as a single trust zone, use scoped accounts for sensitive systems, and require approvals for high-stakes actions."
-        },
-        {
-          "question": "How much does Grok Bot cost?",
-          "answer": "It is not sold standalone. It is included with SuperGrok Heavy (~$300/mo), Cursor Ultra ($200/mo), or Cursor Teams Premium ($120/seat/mo). There is no free tier and no standalone plan; enterprise access is waitlist-only."
-        },
-        {
-          "question": "Can Grok Bot run on my own computer?",
-          "answer": "The main work happens on the vendor's cloud computer, separate from your local machine. A Bot runs local commands only when that capability is explicitly enabled and you approve it under your local-computer policy."
-        },
-        {
-          "question": "How does Grok Bot compare to open-source agent harnesses?",
-          "answer": "They are opposite bets. Grok Bot gives you a managed teammate whose computer the vendor controls — optimized for outcomes, but it concentrates your credentials and is not portable. Open-source harnesses like DeepSeek Harness give you the kernel and plugins on your own infrastructure — optimized for control and portability, at the cost of running it yourself."
-        }
+        {"question":"What is Grok Bot?","answer":"Grok Bot is xAI's persistent work agent. Each Bot can use a cloud computer, sign into authorized tools, carry out multi-step jobs, and continue working after the user steps away."},
+        {"question":"Is Grok Bot the same as Grok?","answer":"No. Grok is primarily a conversational assistant, while Grok Bot is designed to act across apps and return completed work. The products may use related models, but their execution surfaces and permissions differ."},
+        {"question":"What is @bot on X?","answer":"@bot is an automated X account that forwards a mention or reply to the user's connected Grok Bot. X's help page says @bot does not answer the request itself."},
+        {"question":"What can Grok Bot do with X?","answer":"After the official X plugin is connected, a Bot can search posts, read timelines, check mentions, pull trends, and manage bookmarks, subject to account permissions and product availability."},
+        {"question":"Can multiple Grok Bots work together?","answer":"Yes. xAI supports multiple Bots running in parallel, messaging one another, and coordinating in group threads. Team Bots can also share approved context, tools, and memory across a team."},
+        {"question":"How does a Grok Bot learn a recurring workflow?","answer":"A user can let a Bot follow a process, save it as a routine, and refine it with corrections. The routine still needs monitoring because interfaces, credentials, and source data can change."},
+        {"question":"Is Grok Bot safe to connect to work accounts?","answer":"It can be piloted safely only with deliberate controls: dedicated or least-privilege accounts, approval gates for consequential actions, audit records, revocable credentials, and a recovery plan. A broad personal login is a poor default."},
+        {"question":"When is Grok Bot a better choice than workflow automation?","answer":"Grok Bot is more plausible for judgment-heavy work across browser tools, especially where no clean API exists. Deterministic, rule-based processes are often easier to audit in a conventional workflow engine."}
       ]
     },
     "/blog/gumloop-alternatives-2026": {
@@ -3814,30 +3806,14 @@
     },
     "/blog/what-is-claude-cowork": {
       "items": [
-        {
-          "question": "Is Claude Cowork the same as Claude Desktop?",
-          "answer": "No. Claude Desktop is the application. Inside it (and on web/mobile), you choose **Chat** or **Cowork** from the same message entry point. Chat is conversational; Cowork is task delegation with file and tool execution."
-        },
-        {
-          "question": "How much does Claude Cowork cost?",
-          "answer": "Cowork is included in paid Claude plans — Pro, Max, Team, and Enterprise — not sold separately. As of July 2026, Anthropic lists Pro at about $17/month with annual billing ($20 monthly), Max at $100 or $200/month tiers, and Team at $20/seat/month for standard seats. Cowork consumes plan usage limits faster than Chat; check Anthropic's current pricing page for your region and plan."
-        },
-        {
-          "question": "Can Claude Cowork run when my laptop is closed?",
-          "answer": "Yes, for remote sessions in beta. Anthropic documents that Cowork tasks run in the cloud, continue when you step away, and scheduled tasks can run without a device online. Local file access still requires the desktop app on the machine where those files live when the task needs them."
-        },
-        {
-          "question": "What's the difference between Claude Cowork and Claude Code?",
-          "answer": "Claude Code targets software engineering — writing, debugging, and shipping code via terminal or IDE integrations. Cowork targets non-coding knowledge work — research, documents, analysis, operational multi-step tasks — using the same agentic architecture with a knowledge-worker UX."
-        },
-        {
-          "question": "Does Claude Cowork replace calendar automation or meeting prep tools?",
-          "answer": "Partially, if you manually start or schedule Cowork tasks and connect calendar, CRM, and messaging apps. It does not, by default, treat every calendar event as an automatic trigger the way calendar-driven agent systems do. For prep and follow-up tied directly to events, compare Cowork's manual/scheduled model against calendar-native agents in our scheduling agent overview."
-        },
-        {
-          "question": "What kinds of tasks is Claude Cowork actually good at?",
-          "answer": "Cowork is built for operational knowledge work that ends in a reviewable artifact: research synthesis into a formatted document, building a spreadsheet from exports, organizing a folder of contracts, preparing meeting materials from connected apps, or running a recurring report on a schedule. It is a weaker fit for conversational drafting (use Chat) or software engineering (use Claude Code) — the deciding question is whether the job ends in a polished file in a folder you chose."
-        }
+        {"question":"What is Claude Cowork?","answer":"Claude Cowork is Anthropic's agentic workspace for multi-step knowledge work. It can work across authorized files and tools, coordinate subtasks, and return documents, spreadsheets, presentations, or other artifacts for review."},
+        {"question":"Is Claude Cowork still a separate mode?","answer":"It depends on the account. Anthropic is gradually merging Cowork and chat into one Claude experience for Pro and Max users, while some accounts still show separate Chat and Cowork options."},
+        {"question":"How is Claude Cowork different from regular Claude chat?","answer":"Regular chat is suited to answers, explanation, and short drafting. Cowork handles longer tasks that may read or change files, use connected tools, run code, and produce a completed artifact."},
+        {"question":"How is Claude Cowork different from Claude Code?","answer":"Claude Code is designed for software engineering in repositories, terminals, and IDEs. Cowork uses a similar agentic approach for documents, analysis, operations, and other cross-app knowledge work."},
+        {"question":"Can Claude Cowork run when my laptop is closed?","answer":"Cloud Cowork tasks and cloud-based schedules can continue when the laptop is closed. Tasks that require local files, browser sessions, or local applications may still need Claude Desktop and the relevant computer to be available."},
+        {"question":"Which plans support Claude Cowork?","answer":"Anthropic's current help material lists Cowork on paid Pro, Max, Team, and Enterprise plans, with surface availability and beta status varying by plan and administrator settings."},
+        {"question":"Can Claude Cowork run scheduled tasks?","answer":"Yes. Scheduled tasks can run on demand or on a recurring cadence and can use configured connectors, plugins, and cloud files. Local-resource dependencies may change whether the computer must remain online."},
+        {"question":"How should I test Claude Cowork safely?","answer":"Start with a bounded, reversible task; restrict folders and accounts; state acceptance criteria; require evidence; and review correctness, completeness, traceability, approval behavior, and the real time saved after corrections."}
       ]
     },
     "/blog/what-is-claude-tag": {
@@ -5575,84 +5551,108 @@
     "/zh/blog/best-claude-code-alternatives": {
       "items": [
         {
-          "question": "Cursor 是 Claude Code 的直接替代品吗？",
-          "answer": "不是。Cursor 是为编辑器原生日常流程优化的 AI IDE——自动补全、聊天、Agent 模式都在编辑器里；Claude Code 是为仓库级深度推理优化的终端 Agent，主打 Plan 模式与子 Agent。它们解决的是不同的工作，很多团队不是二选一，而是两个都跑。痛点在终端，Cursor 替代不了 Claude Code；痛点在编辑器，反之亦然。"
+          "question": "IDE 内开发最适合哪款 Claude Code 替代品？",
+          "answer": "如果希望对话、多文件修改和 Agent 流程都留在类似 VS Code 的编辑器里，Cursor 是最合适的起点。统一部署前仍要测试远程 Agent 权限和实际用量成本。"
         },
         {
-          "question": "什么是 Claude Code 最好的免费替代品？",
-          "answer": "最领先的免费选项是 **Cline**（VS Code）和 **Aider**（终端）。两者都与模型无关：自带 Anthropic、OpenAI、Google 或本地模型的 key 都行，只为推理付费。Cline 是 VS Code 里安装量最大的开源 Agent；Aider 的每次改动都是一条干净、可审阅的 git 提交。代价是要自己配置 key 和模型——免费、开源、归你所有，但不如托管产品精致。"
+          "question": "哪些 Claude Code 替代品是开源的？",
+          "answer": "Cline 和 Aider 都是开源选项。Cline 运行在 VS Code 中，Aider 更偏终端和 Git；两者都需要用户自行配置模型服务并承担推理费用。"
         },
         {
-          "question": "哪个替代品最接近 Claude Code 的自主性？",
-          "answer": "论终端自主性，**Aider** 是最接近的免费选择——整个循环归你掌控，每处修改都落成干净提交。论「工单进、PR 出」的无人值守工作，**Devin** 是云端对应物：接下范围清晰的工单，在沙箱环境里干活，往往你睡觉时它交回 pull request。真正的区别在于你想盯着循环跑，还是把整个循环委派出去——两种答案对应两种视野。"
+          "question": "OpenAI Codex 是 Claude Code 的直接竞品吗？",
+          "answer": "是。两者都能读取代码仓库、修改文件和执行命令。需要把本地交互与隔离云环境中的并行任务结合起来时，Codex 尤其值得比较。"
         },
         {
-          "question": "我应该从 Claude Code 换成 Cursor 吗？",
-          "answer": "只有当你的日常痛点在终端、而不是模型时，才该换。Cursor 赢下编辑器流程——补全、聊天、Agent 模式都在 IDE 里；Claude Code 赢下需要深度推理和 100 万 token 上下文的硬核仓库级重构。对许多工程师来说，务实的答案是两个都要：编辑器里用 Cursor 做日常，shell 里用 Claude Code 啃架构问题。"
+          "question": "GitHub Copilot 足以替代 Claude Code 吗？",
+          "answer": "对重视 IDE 覆盖和 GitHub 统一管理的团队可能足够。遇到复杂多步骤仓库任务时，应拿真实构建和审查要求测试，不能把平台覆盖面直接等同于自主能力。"
         },
         {
-          "question": "Floatboat 能替代 Claude Code 吗？",
-          "answer": "不能。Floatboat 是为会前准备与会后跟进服务的日历驱动主动 Agent，不是仓库编程 Agent——它处在完全不同的工作形态。它与编程 Agent 搭配而非顶替：仓库里跑 Claude Code 或 Cursor，会议节奏交给日历 Agent，两者从不竞争。"
+          "question": "什么情况下应该用 Devin 而不是 Claude Code？",
+          "answer": "有边界清楚的异步工单、可复现环境和明确验收测试时，可以选 Devin。工程师希望在终端里持续监督任务时，Claude Code 通常更合适。"
         },
         {
-          "question": "什么时候 Claude Code 仍然是最好的选择？",
-          "answer": "当你想在终端里对大型代码库做最深的 Claude 推理、重视 Plan 模式的研究式探索与子 Agent、且不需要模型自由或 IDE 原生流程时。这正是基准工种——大型混乱仓库里的硬核重构——任何替代品都无法胜过它的地方。如果你的需求是模型无关或编辑器原生，就去上面的排名列表里选。"
+          "question": "Cline 或 Aider 能切换不同模型吗？",
+          "answer": "可以。两者都支持多种模型服务，降低了 Agent 外壳的锁定，但团队要自行管理密钥、模型选择、速率限制和波动的推理费用。"
+        },
+        {
+          "question": "编程 Agent 的价格应该怎么比较？",
+          "answer": "应计算“每个被接受变更的总成本”，把订阅、模型用量、远程计算、配置时间、重跑次数和合并前的高级工程师审查时间都算进去。"
+        },
+        {
+          "question": "怎样公平测试 Claude Code 替代品？",
+          "answer": "给每个候选相同的历史任务、起始 commit、运行环境和验收测试，再比较可合并结果、审查时间、失败纠错、权限暴露面和总成本。"
         }
       ]
     },
     "/zh/blog/best-claude-cowork-alternatives": {
       "items": [
         {
-          "question": "Floatboat 是 Claude Cowork 的开箱即用替代品吗？",
-          "answer": "不是。Cowork 是在 Claude 里由用户发起的桌面 agent，处理本地与连接器支撑的文件工作。Floatboat 是 Calendar-Driven 的——事件与截止日触发 pipeline。要开箱即用的开源桌面 Cowork 模式，请评估 Eigent。"
+          "question": "Microsoft 365 环境中最合适的 Claude Cowork 替代品是什么？",
+          "answer": "当资料和交付物都在 Outlook、Teams、SharePoint、Word、Excel 与 PowerPoint 中时，Microsoft 365 Copilot 最自然，但要在自己的租户中确认所需 Agent 与许可证。"
         },
         {
-          "question": "什么时候该选 Microsoft Copilot Cowork 而不是 Claude Cowork？",
-          "answer": "当你的组织统一采用 Microsoft 365、需要租户边界内的审计与权限、希望邮件、Teams 与 Office 工件都在那套技术栈内被执行时——而不是当你在 M365 之外还需要 Anthropic 独家的本地文件夹控制时。"
+          "question": "Google Workspace 团队应选哪款 Cowork 替代品？",
+          "answer": "以 Gmail、Drive、Docs、Sheets 和 Slides 为核心的团队适合 Gemini。需要按照实际版本和地区测试跨应用生成与权限表现。"
         },
         {
-          "question": "Manus 和 Claude Cowork 是同一类产品吗？",
-          "answer": "两者都让非开发者委派多步知识工作，但 Manus 主要跑在云端沙箱里，做异步研究与内容打包；Cowork 是带本地文件权限的桌面 agent。敏感本地文件走 Cowork 或 Eigent；长时异步研究走 Manus。"
+          "question": "ChatGPT Work 与 Claude Cowork 有什么区别？",
+          "answer": "ChatGPT Work 更强调多种连接应用及本地或云端执行，Cowork 则是 Anthropic 面向文件与工具知识工作的环境。选择应由连接器覆盖和权限边界决定。"
         },
         {
-          "question": "在办公工作上，Perplexity Computer 和 Cowork 怎么比？",
-          "answer": "Computer 用后台执行编排多模型、跨应用的云端工作流；Cowork 深耕本地文件与 Anthropic 连接器工作。Computer 适合集成密集型的委派；Cowork 适合你机器上文件夹密集的文档批任务。"
+          "question": "Manus 能替代 Claude Cowork 吗？",
+          "answer": "以云浏览器调研和网页操作为主时，Manus 可以替代 Cowork。若任务依赖受治理的本地文件，或敏感账号不能进入托管浏览器，它就不合适。"
         },
         {
-          "question": "哪个开源选项最像 Claude Cowork？",
-          "answer": "**Eigent**是 2026 年第三方盘点里被引用最多的开源 Cowork 桌面——多 agent、本地文件、BYOK、支持 macOS/Windows/Linux。"
+          "question": "什么情况下 Floatboat 比 Cowork 更合适？",
+          "answer": "需要由日历事件在桌面端自动触发会前准备或会后跟进时，Floatboat 更有差异化。若核心需求是在微软或 Google 办公套件内编辑文档，它不是首选。"
         },
         {
-          "question": "什么时候 Claude Cowork 仍然是最佳选择？",
-          "answer": "当你想要 Anthropic 托管的执行、本地文件夹访问、连接器与插件的纵深，并且主要由你自己发起知识工作任务、或按明确定时运行——尤其当你在为 Claude Pro 或 Max 付费时。"
+          "question": "Cowork 替代品能直接生成文档和演示文稿吗？",
+          "answer": "部分产品可以，但能力会随产品、套餐和发布批次变化。应验证它是否创建格式与共享权限正确的原生文件，而不是只给一段待复制文字。"
+        },
+        {
+          "question": "评估办公 Agent 时要做哪些安全检查？",
+          "answer": "应检查资料权限、外部指令处理、动作审批、凭据边界、审计记录和保留策略，并验证受限用户是否可能检索到无权查看的内容。"
+        },
+        {
+          "question": "应如何评估 Claude Cowork 替代品？",
+          "answer": "用相同资料、相同输出格式运行同一批重复任务，再比较资料覆盖、交付物可用性、权限一致性、审批设计、修正时间和重复执行能力。"
         }
       ]
     },
     "/zh/blog/best-claude-tag-alternatives": {
       "items": [
         {
-          "question": "FloatIM 是 Claude Tag 的直接替代品吗？",
-          "answer": "不是。Claude Tag 是 Claude Team/Enterprise 下、由 Anthropic 托管执行的 **Slack 原生共享 `@Claude`**。FloatIM 则是** Agent-native 消息网络**，Agent 是一等参与者——通常与 Floatboat 搭配来做本地优先的工作。当你要的是 Agent 优先的群聊时选 FloatIM；当 Slack + Anthropic 治理是既定事实时选 Tag。"
+          "question": "哪款产品最接近 Slack 原生的 Claude Tag 替代品？",
+          "answer": "对以 Salesforce 为核心的流程，Agentforce in Slack 最接近。它支持频道和私信中的 Agent，但需要 Agentforce 许可证以及横跨 Salesforce 与 Slack 的管理配置。"
         },
         {
-          "question": "Viktor 和 Claude Tag 相比如何？",
-          "answer": "两者都支持在 Slack 里 `@` 委派与异步多步工作。Tag 是 Anthropic 原生：每频道一个共享 Claude，按组织计量计费。Viktor 是横跨 Slack/Teams 的第三方通用型员工，自带沙盒与定价——通常不需要 Claude Enterprise 打包也能用。"
+          "question": "Microsoft Teams 用户应该选择什么来替代 Claude Tag？",
+          "answer": "Copilot Studio Agent 可以发布到 Teams 频道、群聊和会议聊天。若 Microsoft 身份、Microsoft 365 数据与 Teams 已是组织标准，它最合适。"
         },
         {
-          "question": "Floatboat 能替我的团队取代 Claude Tag 吗？",
-          "answer": "取代不了 Slack 频道里的共享委派。Floatboat 是面向单人创业者与小团队的**日历驱动主动式 Agent OS**，它的触发器是事件与截止日期。它是在**会议准备与会后跟进**上与 Tag 或 FloatIM 互补，而不是做多人共享 `#channel` 的分诊。"
+          "question": "Glean 能作为 Claude Tag 的替代品吗？",
+          "answer": "如果核心任务是跨企业系统找到权威知识并带回 Slack 或 Teams，Glean 可以替代。对开放式编程或通用自主执行，它的定位没那么直接。"
         },
         {
-          "question": "要求外部发送前审批的话，哪个选项最好？",
-          "answer": "**Junior**在本榜中审批前置的默认设置上排最高。**Operant**为自托管团队补充了具名审批人策略。Claude Tag 也能配置得保守，但 Ambient 自主性正是企业拿来跟 Junior 先出稿模式对比的看点。"
+          "question": "什么情况下 Moveworks 比 Claude Tag 更合适？",
+          "answer": "当共享 Agent 主要解决 IT、HR、财务或其他员工服务请求时，Moveworks 更贴合。Tag 的范围更广，适合 Slack 中通用的 Anthropic 委派。"
         },
         {
-          "question": "哪个自托管选项最接近 Claude Tag？",
-          "answer": "2026 年的各家对比矩阵里，**Operant**是最直接的开源对应物——多人 Slack/Teams Agent，带按用户 OAuth、BYOK 模型，治理由你操作。Tag 赢在零运维与 Anthropic 原生深度；Operant 赢在数据驻留与归因。"
+          "question": "FloatIM 与 Claude Tag 有什么不同？",
+          "answer": "Claude Tag 把共享 Teammate 加入 Slack；FloatIM 则是让人和多个 Agent 作为一等成员参与的独立消息网络，因此需要组织接受新的协作界面。"
         },
         {
-          "question": "什么时候 Claude Tag 仍然是最好选择？",
-          "answer": "当你想要 Slack 里的共享 `@Claude`、Anthropic Agent Identity、Opus 4.8 的 Agentic 执行、组织级工具范围——而且你已经有或愿意购买 Claude Team/Enterprise、并不需要另起一套 Agent-native IM 或自托管控制平面时。"
+          "question": "Claude Tag 使用共享权限还是个人权限？",
+          "answer": "Tag 工作在共享 Slack 频道中，但连接工具、用量上限和访问范围由管理员配置。启用动作前必须验证请求者身份、频道上下文与工具权限如何共同生效。"
+        },
+        {
+          "question": "在群聊中部署 AI Teammate 前应该测试什么？",
+          "answer": "应让多名不同权限的用户测试共享任务接力、身份传递、动作审批、责任归属、私密频道隔离、失败恢复和管理员费用控制。"
+        },
+        {
+          "question": "团队什么情况下应该继续使用 Claude Tag？",
+          "answer": "如果组织已经使用 Slack 和 Claude Team 或 Enterprise，需要 Anthropic 原生执行，并接受 Tag 的共享上下文与治理方式，就应继续使用。只有其他平台、数据或流程带来明确优势时再迁移。"
         }
       ]
     },
@@ -6902,58 +6902,26 @@
     },
     "/zh/blog/grok-4-6": {
       "items": [
-        {
-          "question": "Grok 4.6 是什么？",
-          "answer": "Grok 4.6 是 xAI 于 2026 年 8 月 12 日发布的旗舰模型——在 Grok 4.5 基础上做的训练后升级，聚焦长时运行 Agent、编程与知识工作，带 50 万 token 上下文窗口，以及最高到 `xhigh` 的推理力度阶梯。"
-        },
-        {
-          "question": "Grok 4.6 多少钱？",
-          "answer": "20 万 token 以下的提示词按每百万输入 token $2、输出 $6 计费（缓存输入 $0.50）。达到或超过 20 万 token 时，整份请求翻倍为 $4 / $12。另有一个按基础费率 2 倍计价的更快变体。"
-        },
-        {
-          "question": "Grok 4.6 支持图像吗？",
-          "answer": "输入支持、输出仅文本。Grok 4.6 接受文本与图像输入，产出文本输出，没有声明的输出长度上限。"
-        },
-        {
-          "question": "Grok 4.6 开源吗？",
-          "answer": "不是。与 DeepSeek 的 V4 系列（MIT 许可权重）不同，Grok 4.6 没有开放权重发布、也没有自托管选项。它只能通过 xAI API、Grok Build、Cursor 以及 OpenRouter、Vercel 等合作伙伴使用。"
-        },
-        {
-          "question": "Grok 4.6 比 GPT-5.6 Sol 更好吗？",
-          "answer": "两者在 Artificial Analysis 智能指数上同为 61，但综合分掩盖了负载分野：Grok 4.6 在 Agentic 知识工作（GDPval-AA v2）上领先，而 GPT-5.6 Sol 在最难的软件工程基准（DeepSWE v1.1、Terminal-Bench v3.0）上领先。"
-        },
-        {
-          "question": "Grok 4.6 与 DeepSeek V4 Pro 0813 相比如何？",
-          "answer": "两者同周发布，都瞄准预算价位的 Agentic 负载。Grok 4.6 综合智能与知识工作分数更强（$2/$6）；DeepSeek V4 Pro 输入便宜约 4 倍、输出约 7 倍（$0.435/$0.87），且带 MIT 许可权重与第一方 harness。选哪个，取决于对你的负载来说，是成本更要紧，还是基准余量更要紧。"
-        }
+        {"question":"Grok 4.6 是什么？","answer":"Grok 4.6 是 xAI 在 2026 年 8 月发布的编程、Agent 任务与知识工作模型。它支持文本和图像输入、文本输出、工具调用、结构化输出，以及四档推理力度。"},
+        {"question":"Grok 4.6 的上下文窗口有多大？","answer":"xAI 官方模型页标注为 500,000 token。它适合大型代码仓与文档集，但提示词达到 200,000 token 后会进入更高费率。"},
+        {"question":"Grok 4.6 API 价格是多少？","answer":"提示词低于 20 万 token 时，xAI 标价为每百万输入 token 2 美元、缓存输入 0.50 美元、输出 6 美元；达到 20 万及以上时分别变为 4、1、12 美元，并对整次请求计费。"},
+        {"question":"Grok 4.6 是开放权重模型吗？","answer":"不是。xAI 通过 API、旗下产品与合作平台提供 Grok 4.6，但没有发布可供自托管的模型权重。"},
+        {"question":"Grok 4.6 会自动知道最新事件吗？","answer":"不会。xAI 标注的知识截止时间是 2026 年 2 月 1 日；实时信息需要启用网页搜索或 X 搜索工具。"},
+        {"question":"Grok 4.6 的基准表现如何？","answer":"发布时，xAI 公布的 Artificial Analysis Intelligence Index 为 61 分，Agent 化知识工作表现突出。阅读成绩时必须核对版本，例如 Terminal-Bench v2.1 与 v3.0 不能直接比较。"},
+        {"question":"新项目应该用 Grok 4.6 还是 Grok 4.7？","answer":"Grok 4.7 是更新型号，新项目通常应优先测试 4.7。已经验证 4.6、平台尚未开放 4.7，或需要固定旧版本做回归时，继续使用 4.6 仍然合理。"},
+        {"question":"团队应该怎样评估 Grok 4.6？","answer":"应使用真实任务，记录完成质量、工具可靠性、人工返工量、上下文表现、总 token 成本与端到端耗时。模型对比时还要统一框架、权限、推理档位和重试策略。"}
       ]
     },
     "/zh/blog/grok-bot": {
       "items": [
-        {
-          "question": "Grok 与 Grok Bot 有什么区别？",
-          "answer": "Grok 是 AI 模型（推理引擎，最新为 Grok 4.6）。Grok Bot 是 Agent 产品：一个持久、具名的队友，跑在自己的云电脑上，登录你的应用，完成多步工作。普通 Grok 回答问题；Grok Bot 干活。"
-        },
-        {
-          "question": "Grok Bot 怎么访问我的应用？",
-          "answer": "Bot 使用一台带浏览器、文件系统与终端的持久云 VM。有连接器/MCP 的地方就用它们；没有干净 API 的应用与网站就使用 computer use（视觉操作界面）。Bot 用你的凭证登录，会话跨任务保持。"
-        },
-        {
-          "question": "Grok Bot 安全吗？",
-          "answer": "只要你理解它的模型，就可以安全使用。你账号上的每个 Bot 共享一台云电脑——同样的 cookie、文件与凭证——xAI 文档明确说不要把独立的 Bot 当作安全边界。把整个 Bot 花名册当作单一信任区，敏感系统用带作用域的账号，高危动作要求批准。"
-        },
-        {
-          "question": "Grok Bot 多少钱？",
-          "answer": "它不单独销售。包含于 SuperGrok Heavy（约 $300/月）、Cursor Ultra（$200/月）或 Cursor Teams Premium（每席 $120/月）。没有免费档，没有独立套餐；企业访问只能进候补名单。"
-        },
-        {
-          "question": "Grok Bot 能跑在我自己的电脑上吗？",
-          "answer": "主要工作在厂商的云电脑上完成，与你本地机器分开。Bot 只有在你本地电脑策略下显式启用并批准该能力时，才会运行本地命令。"
-        },
-        {
-          "question": "Grok Bot 与开源 Agent harness 相比如何？",
-          "answer": "它们是方向相反的赌注。Grok Bot 给你一个由厂商控制电脑的托管队友——为成果优化，但集中了你的凭证、也不可移植。DeepSeek Harness 等开源 harness 把内核与插件放在你自己的基础设施上——为掌控与可移植性优化，代价是要自己运维。"
-        }
+        {"question":"Grok Bot 是什么？","answer":"Grok Bot 是 xAI 的常驻工作 Agent。每个 Bot 可以使用云电脑，登录获准工具，执行多步任务，并在用户离开后继续运行。"},
+        {"question":"Grok Bot 和 Grok 是同一个产品吗？","answer":"不是。Grok 主要是对话式助手，Grok Bot 则负责跨应用执行并交付结果。两者可能使用相关模型，但执行环境和权限有所不同。"},
+        {"question":"X 上的 @bot 是什么？","answer":"@bot 是 X 上的自动账号，会把帖子或回复中的请求转交给用户已连接的 Grok Bot。X 官方帮助页明确说，@bot 不会自己回答请求。"},
+        {"question":"Grok Bot 连接 X 后能做什么？","answer":"接入官方 X 插件后，Bot 可以搜索帖子、阅读时间线、检查提及、获取趋势并管理书签，具体能力受账号权限和功能开放范围约束。"},
+        {"question":"多个 Grok Bot 可以协作吗？","answer":"可以。xAI 支持多个 Bot 并行运行、互发消息和在群聊中协调；Team Bots 还可以让团队共享获准的上下文、工具与记忆。"},
+        {"question":"Grok Bot 怎样学习重复流程？","answer":"用户可以让 Bot 跟随一次实际流程，保存为 Routine，再通过修改意见完善。界面、凭据和源数据都会变化，因此 Routine 仍需监控。"},
+        {"question":"把工作账号连接到 Grok Bot 安全吗？","answer":"只有在使用专用或最小权限账号、为关键动作设置审批、保留审计记录、确保凭据可撤销并准备恢复方案时，才适合受控试点。直接授予广泛个人权限并不稳妥。"},
+        {"question":"Grok Bot 什么时候比传统工作流自动化更合适？","answer":"它更适合需要判断、跨多个网页工具且缺少完整 API 的任务。规则固定、每次都应相同执行的流程，通常用传统工作流引擎更容易审计。"}
       ]
     },
     "/zh/blog/gumloop-alternatives-2026": {
@@ -8150,30 +8118,14 @@
     },
     "/zh/blog/what-is-claude-cowork": {
       "items": [
-        {
-          "question": "Claude Cowork 和 Claude Desktop 是一回事吗？",
-          "answer": "不是。Claude Desktop 是应用程序。在它里面（以及网页端/移动端），你从同一个消息入口选择 **Chat** 或 **Cowork**。Chat 是对话式的；Cowork 是带文件与工具执行的任务委派。"
-        },
-        {
-          "question": "Claude Cowork 多少钱？",
-          "answer": "Cowork 包含在付费 Claude 套餐里——Pro、Max、Team、Enterprise——不单独售卖。截至 2026 年 7 月，Anthropic 将 Pro 标为年付约 $17/月（月付 $20）、Max 有 $100 或 $200/月两档、Team 标准席位 $20/席/月。Cowork 消耗套餐额度的速度比 Chat 快；请查看 Anthropic 当前定价页核对你所在地区与套餐。"
-        },
-        {
-          "question": "合上笔记本后，Claude Cowork 还能跑吗？",
-          "answer": "能——针对测试版中的远程会话。Anthropic 文档说明：Cowork 任务在云端运行，你离开后继续跑，定时任务无需设备在线也能完成。当任务需要本地文件时，本地文件访问仍要求文件所在那台机器上装着桌面应用。"
-        },
-        {
-          "question": "Claude Cowork 和 Claude Code 有什么区别？",
-          "answer": "Claude Code 瞄准软件工程——经终端或 IDE 集成编写、调试和发布代码。Cowork 瞄准非编码的知识工作——研究、文档、分析、运营类多步任务——用同一套 Agent 架构，配知识工作者的 UX。"
-        },
-        {
-          "question": "Claude Cowork 能替代日历自动化或会议准备工具吗？",
-          "answer": "如果你手动启动或排定 Cowork 任务、并接上日历、CRM 与消息应用，它能部分替代。但默认情况下，它不会像日历驱动 Agent 系统那样把每个日历事件都当作自动触发器。需要与会话直接绑定的准备与跟进，请在我们的日程 Agent 综述里，把 Cowork 的手动/定时模型与日历原生的 Agent 对比着看。"
-        },
-        {
-          "question": "Claude Cowork 到底擅长哪类任务？",
-          "answer": "Cowork 是为「以可验收成果物收尾的运营型知识工作」而造的：把调研综合成格式化文档、从导出数据建电子表格、整理一文件夹合同、从已连接应用准备会议材料、或按计划跑周期报告。它不太适合对话式起草（用 Chat）或软件工程（用 Claude Code）——判定的问题是：这份工作最终是不是落在你选定文件夹里的一份精修文件上。"
-        }
+        {"question":"Claude Cowork 是什么？","answer":"Claude Cowork 是 Anthropic 面向多步知识工作的 Agent 工作区。它能在获准文件和工具中执行、协调子任务，并交付文档、表格、演示文稿等成果供人复核。"},
+        {"question":"Claude Cowork 还是独立模式吗？","answer":"取决于账号。Anthropic 正向 Pro 与 Max 用户逐步推送 Cowork 与 Chat 合并后的统一 Claude 体验，部分账号仍保留两个独立入口。"},
+        {"question":"Claude Cowork 与普通 Claude 对话有什么区别？","answer":"普通对话适合回答、解释和短文起草；Cowork 面向更长的任务，可以读写文件、调用已连接工具、运行代码并交付完整成果。"},
+        {"question":"Claude Cowork 与 Claude Code 有什么区别？","answer":"Claude Code 为代码仓、终端和 IDE 中的软件工程而设计；Cowork 采用相似的 Agent 化方式，但主要处理文档、分析、运营和跨应用知识工作。"},
+        {"question":"合上笔记本后 Claude Cowork 还能运行吗？","answer":"云端 Cowork 任务和云端定时任务可以继续运行。若任务依赖本地文件、浏览器会话或桌面应用，仍可能需要 Claude Desktop 和对应电脑在线。"},
+        {"question":"哪些套餐支持 Claude Cowork？","answer":"Anthropic 当前帮助资料列出 Pro、Max、Team 与 Enterprise 付费套餐，但网页、移动端、Beta 状态和组织接入仍会因套餐与管理员设置而异。"},
+        {"question":"Claude Cowork 可以运行定时任务吗？","answer":"可以。定时任务既能按需执行，也能按周期运行，并使用已配置的连接器、插件和云端文件；依赖本地资源时，电脑是否需要在线会有所不同。"},
+        {"question":"怎样安全测试 Claude Cowork？","answer":"先选边界清楚且可回滚的任务，限制文件夹和账号权限，写明验收标准并要求证据，再检查准确性、完整性、可追溯性、审批行为和扣除返工后的真实节省时间。"}
       ]
     },
     "/zh/blog/what-is-claude-tag": {
