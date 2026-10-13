@@ -14,6 +14,8 @@ There is no single **best AI agent platform in 2026**. A platform that is excell
 
 This guide gives every candidate the same task contract, permission boundary, evaluation set, and cost model. It does not rank products from demos, connector counts, or unverifiable personal experience.
 
+**Information checked October 13, 2026.** Platform names, launch stages, limits, and packaging can change. The product examples below link to current first-party documentation; confirm region, plan, preview status, and data terms for your account before a pilot.
+
 ## Define the task before the platform
 
 Write a one-page task contract:
@@ -50,6 +52,24 @@ Best when a team wants managed model/tool infrastructure while keeping applicati
 ### Vertical products
 
 Best when a product already solves the exact job—support, research, sales operations, coding, or another domain—with appropriate controls. A narrower product can outperform a general platform because its workflow and evaluation are already specialized. Verify portability and avoid forcing unrelated work into it.
+
+These layers are easier to compare once you separate the model from the surrounding [agent harness](/blog/what-is-an-agent-harness): the runtime, tools, state, permissions, approvals, traces, and evaluation machinery that make an agent operable.
+
+## Best AI agent platforms to pilot in 2026
+
+The table is a routing shortlist, not a ranking. Each candidate earns a pilot for a different operating model, and official documentation only proves that a feature is documented—not that it will satisfy your task.
+
+| Candidate | Put it on the shortlist when | First-party evidence to inspect | Verify in the pilot |
+|---|---|---|---|
+| OpenAI Agent Platform | You want a choice between a managed agent harness, an SDK-controlled loop, and lower-level model calls | OpenAI’s [agent runtime comparison](https://developers.openai.com/api/docs/guides/agents) distinguishes the managed Agents API, application-run Agents SDK, and Responses API; its SDK guidance links tracing and evaluation workflows | Approval ownership, storage, trace-data policy, tool isolation, and export needs |
+| Microsoft Copilot Studio | The workflow lives in Microsoft 365 or Power Platform and business makers need connectors, approvals, and administrator policy | Microsoft documents deterministic paths, human-in-the-loop actions, and solution versioning/export in its [agent flows overview](https://learn.microsoft.com/microsoft-copilot-studio/flows-overview), alongside separate security and governance controls | Environment separation, DLP policy, identity, capacity billing, audit coverage, and non-Microsoft systems |
+| Google Vertex AI Agent Engine | A Python team wants a managed Google Cloud deployment with cloud identity and CI/CD-friendly source deployment | Google documents deployment from source or agent objects and optional per-agent identity in [Vertex AI Agent Engine deployment](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/deploy) | Supported frameworks and regions, IAM granularity, networking, cold starts, and which evaluation features are Preview |
+| Amazon Bedrock AgentCore | The organization already governs workloads through AWS IAM and CloudWatch and wants managed runtime, tools, and telemetry | AWS documents traces, metrics, error views, token usage, and OpenTelemetry-compatible output in [AgentCore Observability](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html) | Which resources require extra instrumentation, log destinations and payload exposure, IAM boundaries, recovery, and metered cost |
+| LangGraph with LangSmith | The team wants code-defined orchestration plus separate tracing and evaluation, with cloud, hybrid, or self-hosting choices | LangSmith documents offline regression evaluation and online production evaluation in its [evaluation types](https://docs.langchain.com/langsmith/evaluation-types) | Deployment responsibility, data plane, telemetry, licensing, checkpointer storage, and migration away from hosted services |
+
+There are other credible candidates, including visual automation suites and domain-specific products. Do not add one merely to make the list longer. Add it when the task contract reveals a required system, deployment model, or control that the current shortlist cannot cover.
+
+The most important current-status trap is launch stage. A documented capability can still be Preview or available only in selected regions or plans. For example, Google’s current [agent evaluation walkthrough](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/evaluate) labels that evaluation surface Preview. Record launch stage next to every scored capability instead of flattening “documented” into “production-ready.”
 
 ## Eight criteria for a reproducible shortlist
 

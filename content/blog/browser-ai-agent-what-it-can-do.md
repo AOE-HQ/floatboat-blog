@@ -10,6 +10,8 @@ locale: "en"
 draft: false
 ---
 
+**Information checked October 13, 2026.** Browser surfaces, sign-in behavior, uploads, and administrative controls vary by product, plan, rollout, and workspace policy.
+
 A **browser AI agent** can read pages, navigate, click, type, compare information, and sometimes complete supported actions. That sounds like a person using a browser, but it does not mean every website task is reliable or appropriate to automate.
 
 The useful question is not “Can it use a browser?” It is “Can it complete this task, in this browser context, with these permissions, and leave a result I can verify?” This guide focuses on capability and task selection. For threat modeling and prompt injection, use the separate [browser AI agent security checklist](/blog/browser-ai-agent-security-questions).
@@ -143,7 +145,7 @@ Run the same cases after browser, model, site, permission, or workflow changes. 
 
 ## Choose the tool before choosing the autonomy
 
-Use direct research or search when you only need public information. Use an app or plugin when it provides a stable structured connection. Use the built-in browser for a separate web session or visual page work. Use an extension when the task needs an existing signed-in browser profile. Use cloud browser delegation when its separate session, supported authentication, and availability match the task.
+Use direct research or search when you only need public information. Use an app or plugin when it provides a stable structured connection. Use the built-in browser for a separate web session or visual page work. Use an extension when the task needs an existing signed-in browser profile. Use cloud browser delegation when its separate session, supported authentication, and availability match the task. The [AI browser versus browser agent versus workspace comparison](/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace) helps choose the execution surface before granting authority.
 
 Then grant the minimum authority needed. Start at read-only or draft, measure corrections, and move to reversible writes only after the same evaluation set passes. High-consequence actions should remain human decisions.
 

@@ -16,6 +16,8 @@ Solo operators have more than two choices. The market includes workspace agents,
 
 This guide avoids fixed feature counts and prices because they age quickly. Verify availability, plan limits, data terms, and integrations on the vendor's current pages before buying.
 
+Product documentation cited below was checked on October 13, 2026. This is a buying-path and pilot guide, not a ranking of individual vendors.
+
 ## Start with the job, not the agent label
 
 Write a one-sentence task contract first:
@@ -39,7 +41,7 @@ A deterministic workflow may be safer than an agent. A workspace agent may be fa
 
 A workspace agent operates where research, files, browser tabs, and drafts already live. It is a strong starting point for comparing sources, transforming documents, or preparing an update while you remain available to guide it.
 
-Check which files and sites it can access, whether actions require confirmation, what persists between sessions, and whether runs can be inspected or resumed. OpenAI's current [cloud-browser guidance](https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt) illustrates the boundaries worth checking: site access, separate signed-in sessions, confirmation for consequential actions, takeover, and websites that block automation.
+Check which files and sites it can access, whether actions require confirmation, what persists between sessions, and whether runs can be inspected or resumed. OpenAI's current [browser guidance](https://learn.chatgpt.com/docs/browser) illustrates the boundaries worth checking: website permissions, a separate remote browser session, confirmation for consequential actions, and websites that block automation.
 
 Do not assume “workspace” means universal access or unlimited autonomy. Test the exact account, plan, region, and website involved.
 

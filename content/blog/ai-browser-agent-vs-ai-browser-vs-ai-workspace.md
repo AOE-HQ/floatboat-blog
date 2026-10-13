@@ -14,6 +14,8 @@ Browser agents, AI browsers, and AI workspaces increasingly borrow each other's 
 
 The durable distinction is the **system boundary**: where the task runs, which context it can see, which identity it uses, and what happens when execution fails. This article owns that category and selection question. For a deeper look at browser tasks, see [what browser agents can do](/blog/browser-ai-agent-what-it-can-do); for threat controls, use the [browser-agent safety guide](/blog/browser-ai-agent-security-questions).
 
+**Information checked October 13, 2026.** Browser features are rolling out unevenly by plan, account, region, device, and administrator policy. Treat the linked first-party pages as a current starting point and verify the controls shown in your own account.
+
 ## The three categories in one minute
 
 | Category | Primary boundary | Best starting point for | Main trade-off |
@@ -23,6 +25,18 @@ The durable distinction is the **system boundary**: where the task runs, which c
 | AI workspace | A broader project or desktop environment | Combining files, tools, research, and deliverables | More setup, broader data scope, and sometimes device dependence |
 
 These are not maturity levels. An AI workspace is not automatically more capable, and an AI browser is not automatically safer. Choose the smallest boundary that contains the task.
+
+## Three current products show why labels overlap
+
+The same product can occupy more than one row of the category table. Current official documentation shows three materially different execution models:
+
+| Current mode | Execution and context boundary | What it demonstrates |
+|---|---|---|
+| ChatGPT cloud browser | A separate remote browser session; it can continue after the user closes the device and keeps its own website sessions | A browser agent can sit inside a wider workspace while remaining separate from the user’s local browser. OpenAI documents site-access permission, confirmation for consequential actions, and takeover in its [cloud browser guide](https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt) |
+| Browse with Copilot in Edge | Runs in the user’s Edge window, can use open tabs and existing cookies, and exposes visible pause or takeover controls | An AI browser can also become a local browser agent. Microsoft’s [Browse with Copilot documentation](https://support.microsoft.com/en-us/microsoft-copilot/browse-with-copilot) says availability is rolling out; its separate [Edge at work documentation](https://support.microsoft.com/en-us/microsoft-copilot/using-microsoft-copilot-in-edge-at-work) marks enterprise action mode as limited preview |
+| Gemini in Chrome | Uses the current tab by default and lets a user explicitly share additional open tabs; it is not available in Incognito | An AI browser can begin as contextual assistance without implying unlimited browser access. Google’s [Gemini in Chrome help](https://support.google.com/gemini/answer/16283624) documents gradual availability and up to ten shared tabs on desktop |
+
+This is why a checkbox saying “browser agent” is weak evidence. Record the actual runtime, tab and profile scope, sign-in behavior, background behavior, confirmation policy, and availability for the account you will deploy.
 
 ## 1. Browser agent: delegate actions in a browser
 
@@ -51,6 +65,8 @@ Adoption cost matters. Test profile separation, extension compatibility, passwor
 An AI workspace uses a project, task, or desktop environment as its boundary. It may combine local or uploaded files, browser research, connected services, terminals, documents, and persistent instructions. The unit of work is usually a deliverable or ongoing project rather than a tab.
 
 Its value appears when a task crosses surfaces: review source files, research missing facts, build an artifact, and preserve the evidence and revisions together. The same breadth increases governance questions. Determine which files are explicitly shared, whether tools run locally or remotely, which connected accounts are reachable, what persists, and whether another device can resume the work.
+
+If local files or device-bound tools are central to the decision, compare the separate trade-offs in [local-first versus cloud agent workspaces](/blog/local-first-vs-cloud-agent-workspace). “Workspace” alone does not tell you where execution or storage happens.
 
 **Choose it for:** research-to-deliverable work, multi-file projects, or tasks requiring several tools and durable project context.
 
@@ -97,6 +113,8 @@ If you cannot reconstruct what happened, keep the tool in read-only or draft-onl
 
 All three categories can encounter untrusted web content. A page can contain instructions intended to redirect an agent, while connected files or messages may carry similar content. Separate data from instructions, restrict domains and tools, use least privilege, and require informed approval for consequential actions.
 
+This is not a hypothetical category flaw that one vendor has solved. OpenAI’s 2026 security guidance describes prompt injection as an evolving problem and recommends constraining the impact even when manipulation succeeds, rather than relying only on input filtering ([OpenAI: Designing AI agents to resist prompt injection](https://openai.com/index/designing-agents-to-resist-prompt-injection/)). Product safeguards still need a narrow permission boundary and an operator-visible approval step.
+
 This article does not attempt a full threat model. The selection implication is simple: a larger context boundary and greater write authority require stronger controls and more complete logs.
 
 ## A reproducible category pilot
@@ -135,5 +153,7 @@ You may eventually use more than one category, but do not begin with an assumed 
 7. What changes when the device is offline or the browser closes?
 8. Can profiles, projects, data, and history be exported or deleted?
 9. Does the representative pilot outperform the manual baseline after review time?
+
+Also write the test date beside every answer. A browser feature that is absent today may be rolling out, while a control shown in a vendor announcement may not be enabled for your region, plan, profile, or managed tenant.
 
 The best category is the narrowest one that contains the real task and still provides the context, authority, evidence, and recovery you need.

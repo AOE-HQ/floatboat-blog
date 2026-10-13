@@ -391,8 +391,8 @@
     "/blog/ai-agent-solo-operators": {
       "items": [
         {
-          "question": "Does a solo operator actually need an AI agent?",
-          "answer": "Only when a bounded task benefits from tool use, changing steps, or background execution. If the path is fixed, use workflow automation; if success is subjective or the task is rare, keep a person in control. Define one task contract and compare a pilot with the manual baseline before buying."
+          "question": "What is the best AI agent for a solo operator?",
+          "answer": "There is no universal winner. Choose the least complex operating model that passes your real task, permission, recovery, evidence, total-cost, and exit tests. Compare a bounded pilot with the manual baseline before buying."
         },
         {
           "question": "What types of AI agent can a solo operator choose?",
@@ -419,8 +419,8 @@
           "answer": "Use a separate identity and least privilege. Distinguish reading, drafting, reversible writing, and consequential actions. Sending, publishing, paying, deleting, and changing access should normally require informed approval."
         },
         {
-          "question": "How do I avoid AI agent lock-in?",
-          "answer": "Before purchase, test whether prompts, knowledge, workflow definitions, logs, records, and outputs can be exported in usable formats. Document external dependencies and confirm how data is deleted when you leave."
+          "question": "What should I verify before paying for an AI agent?",
+          "answer": "Verify the exact task, current feature evidence, identity, data path, retention, approvals, interruption recovery, exportable logs, observed monthly cost, rollback, and exit path. Test exports and deletion before purchase."
         }
       ]
     },
@@ -608,35 +608,35 @@
       "items": [
         {
           "question": "Can I use a personal AI assistant for work?",
-          "answer": "Only when employer policy, contracts, professional duties, and the data classification permit it. A personal subscription does not authorize uploading internal or client information. If a managed work account exists, prefer it and stay within the administrator-approved tools, connections, retention settings, and use cases."
+          "answer": "Only when employer policy, account terms, data classification, and the task permit it."
         },
         {
-          "question": "What is the difference between a personal AI account and a work-managed account?",
-          "answer": "A work-managed account can be covered by an organizational contract, administrator policy, identity controls, configured retention, approved connectors, audit logs, and offboarding. A personal account is controlled by the individual and may use different data terms. Do not assume the same brand provides the same protections across account types."
+          "question": "What data should not be pasted into a personal account?",
+          "answer": "Restricted, confidential, regulated, client, credential, or personal data unless explicitly approved."
         },
         {
-          "question": "What work data should I never paste into a personal AI account?",
-          "answer": "Do not enter credentials, security secrets, health or payment records, privileged legal material, restricted personal data, or information whose contract or policy prohibits external processing. Confidential client files, employee data, source code, contracts, and unpublished financials require an explicitly approved managed environment and minimum necessary disclosure."
+          "question": "Should I use a personal or work account?",
+          "answer": "Use the organization-approved account for work data and controls; personal convenience does not override policy."
         },
         {
-          "question": "Is 'not used for training' the same as 'not stored'?",
-          "answer": "No. Model training, product history, memory, abuse monitoring, support access, backups, and enterprise audit logs are separate processing purposes. Check the exact product, plan, account type, region, feature, default retention, deletion behavior, subprocessors, and human-access conditions."
+          "question": "How should tasks be classified?",
+          "answer": "By data sensitivity, action impact, reversibility, and required reviewer."
         },
         {
-          "question": "Should I use a chat assistant, browser connector, or AI workspace?",
-          "answer": "Use chat for interactive, inspectable research and drafting; a browser connector for approved tasks inside specific email, calendar, document, or web services; and a workspace or agent only when a persistent project genuinely needs files, tools, shared context, or schedules. Broader access requires stronger permission, approval, logging, and recovery controls."
+          "question": "Which product shape fits simple drafting?",
+          "answer": "A chat assistant may be enough when approved context can be supplied safely and no external action is needed."
         },
         {
-          "question": "What controls matter more than model rankings for work use?",
-          "answer": "Compare managed identity, retention and deletion, training terms, permission granularity, source citations, project and memory isolation, export, draft-only operation, approval before external actions, audit logs, connector administration, and offboarding. A marginally better answer does not compensate for an unmanaged account or unclear data flow."
+          "question": "When do connectors or agents add risk?",
+          "answer": "When they widen access or can write, send, delete, or change records."
         },
         {
-          "question": "How should I deploy a personal AI assistant safely at work?",
-          "answer": "Begin with one approved low-risk task, use a managed account, disclose only the minimum necessary data, keep the assistant draft-only, require fact and policy review, store accepted output in the organization's system of record, revoke unused connectors, and document inputs, prohibited data, acceptance criteria, reviewer, and escalation path."
+          "question": "What should I compare besides model quality?",
+          "answer": "Retention, training policy, admin controls, permissions, logs, approvals, export, deletion, and support."
         },
         {
-          "question": "How do I evaluate whether a work AI assistant is worthwhile?",
-          "answer": "Run a seven-day test on approved examples and measure accepted-output rate, correction time, factual errors, citation quality, policy exceptions, data exposure, and full cost. Test ambiguity, conflicting sources, missing information, refusal and escalation. Generation speed alone can hide verification and rework."
+          "question": "How should a seven-day trial work?",
+          "answer": "Use approved sample tasks, record edits and failures, and avoid production writes until controls are verified."
         }
       ]
     },
@@ -719,12 +719,12 @@
           "answer": "A browser agent delegates actions in a current or remote browser session. An AI browser makes assistance part of browsing across pages and tabs. An AI workspace uses a broader project or desktop boundary that can include files, tools, research, and deliverables."
         },
         {
-          "question": "Which category should I choose for web automation?",
-          "answer": "Choose a browser agent when the task mainly acts across websites and browser-only permissions are sufficient. Use API or workflow automation when triggers, transformations, and destinations are deterministic."
+          "question": "Is an AI browser the same as a browser agent?",
+          "answer": "Not necessarily. An AI browser may only read or compare tab context, while some AI browsers also offer an action mode that clicks, types, and navigates as a browser agent."
         },
         {
-          "question": "When is an AI browser better than a browser agent?",
-          "answer": "An AI browser fits when reading, comparing, and reasoning across tabs is the main job. A browser agent fits when completing actions is central. Products may offer both, so test read and action permissions separately."
+          "question": "How does a local browser agent differ from a cloud browser?",
+          "answer": "A local agent may use the current browser window, cookies, and tabs, while a cloud browser normally has a separate remote session and may continue after the device closes. Verify each product's actual behavior."
         },
         {
           "question": "When should I choose an AI workspace?",
@@ -735,16 +735,16 @@
           "answer": "No category is safest by name. Compare the actual context boundary, execution location, identity, least-privilege controls, approval gates, logs, retention, and recovery. Keep consequential actions behind informed approval."
         },
         {
-          "question": "Does a cloud browser use my existing browser login?",
-          "answer": "Not necessarily. Many cloud browsers use separate cookies and signed-in sessions, while an agent in your current browser may use that profile's session. Verify execution location, credential flow, retention, and sign-out for the exact product."
+          "question": "Can browser agents be protected completely from prompt injection?",
+          "answer": "No complete protection should be assumed. Limit domains, tools, accounts, and data; separate untrusted content from instructions; require approval for consequential actions; and retain logs for review."
         },
         {
           "question": "How should I test these three categories?",
           "answer": "Give each candidate the same task, permission boundary, failure cases, and acceptance checks. Measure citations, unauthorized actions, approval quality, recovery, review time, elapsed time, and cost; record plan, version, device, and date."
         },
         {
-          "question": "Can I combine an AI browser and AI workspace?",
-          "answer": "Yes, but pilot the smallest boundary first. Add a second product only when evidence shows a recurring task the first cannot cover, and account for duplicated context, subscriptions, permissions, and records."
+          "question": "When is workflow automation better than a browser agent?",
+          "answer": "Prefer APIs or deterministic automation when triggers, transformations, and destinations are known. Use browser delegation when the website interface is unavoidable or the next step genuinely depends on what is found."
         }
       ]
     },
@@ -1003,8 +1003,8 @@
     "/blog/ai-workflow-for-solo-founders": {
       "items": [
         {
-          "question": "What is the first step in building an AI workflow for a solo business?",
-          "answer": "Audit repeated tasks for one week, recording the trigger, output, frequency, systems, decisions, exceptions, owner, system of record, and consequence of error. Then choose one frequent, bounded, observable, reversible task with available data. Do not start by buying tools or automating the whole business."
+          "question": "What is an AI workflow for a solo business?",
+          "answer": "It is a repeatable path from a known trigger and approved inputs to a verifiable result, with explicit tools, review, records, and failure handling. Build it around one bounded task rather than trying to automate the whole business."
         },
         {
           "question": "Which task makes a good first AI workflow pilot?",
@@ -1015,8 +1015,8 @@
           "answer": "Use 20–50 representative historical or synthetic cases when available, but coverage matters more than a fixed count. Include ordinary, missing, ambiguous, conflicting, inaccessible, edge, and must-stop cases. Set task-specific success and critical-error gates rather than applying one universal accuracy target."
         },
         {
-          "question": "Should I add persistent memory to my workflow?",
-          "answer": "Only for information with a defined purpose, correction method, retention period, and deletion path. Keep run-specific facts in the current input and stable rules in versioned instructions or approved references. Test missing, stale, and conflicting context before persisting more information."
+          "question": "What should an AI workflow task contract include?",
+          "answer": "Define the trigger, finish state, required sources, allowed tools, prohibited actions, output format, approvals, escalation, retries, and failure behavior. Keep run-specific facts in the current input and stable rules in versioned references."
         },
         {
           "question": "How should I roll out an AI workflow safely?",
@@ -1039,8 +1039,8 @@
     "/blog/ai-workflow-solo-founders": {
       "items": [
         {
-          "question": "What is an AI workflow for a solo founder?",
-          "answer": "It is a repeatable system that moves one business task from a defined trigger through inputs, decisions, actions, review, and a system of record to a verified completion state. It is not simply a long prompt or a collection of AI subscriptions."
+          "question": "What is an AI workflow system for a solo founder?",
+          "answer": "It is a small operating system for repeated work that defines triggers, inputs, decision logic, tools, review, the system of record, observability, and recovery. It is not simply a long prompt or a collection of AI subscriptions."
         },
         {
           "question": "What layers does a durable AI workflow need?",
@@ -1067,8 +1067,8 @@
           "answer": "Avoid pricing commitments, legal filings, payments, deletion, access changes, employment decisions, and unsupervised customer promises. Start with gathering evidence, structuring inputs, or drafting a result that stops for approval."
         },
         {
-          "question": "What documents should a workflow design produce?",
-          "answer": "Create a one-page task contract, architecture diagram, context and data inventory, tool-permission matrix, success and critical-error criteria, evaluation set, run record, recovery plan, named owner, review date, and retirement path."
+          "question": "What recovery controls should an AI workflow have?",
+          "answer": "Record run IDs, source and configuration versions, tool calls, approvals, errors, final status, cost, and external action IDs. Make retries idempotent, keep a manual queue for unresolved cases, and document rollback and retirement paths."
         }
       ]
     },
@@ -1179,8 +1179,8 @@
           "answer": "No. Build a shortlist for one defined task instead. Give every candidate the same inputs, permission boundary, evaluation cases, and cost assumptions. A universal leaderboard mixes managed workspaces, visual builders, developer frameworks, cloud services, and vertical products that solve different jobs."
         },
         {
-          "question": "What types of AI agent platforms should I shortlist?",
-          "answer": "Consider managed workspace agents, visual automation or agent builders, developer frameworks and SDKs, managed cloud agent services, and specialized vertical products. Start with the category that fits the task owner, required control, deployment, and maintenance capacity; do not compare every category as if it were interchangeable."
+          "question": "Which AI agent platform should a non-technical operations team shortlist?",
+          "answer": "Start with a managed workspace or visual builder that supports the team's real systems, approvals, ownership, audit trail, and export path. Prove it on one bounded pilot instead of comparing every platform category as if it were interchangeable."
         },
         {
           "question": "What criteria matter most when comparing agent platforms?",
@@ -1191,8 +1191,8 @@
           "answer": "Use a sandbox or read-only environment and the same representative task, source data, permissions, and evaluation suite for every finalist. Include normal, ambiguous, missing-data, conflicting-source, tool-failure, expired-authentication, adversarial, escalation, recovery, and write-verification cases. Preserve configurations and evidence so results can be reproduced."
         },
         {
-          "question": "What should an agent platform log?",
-          "answer": "Operators should be able to reconstruct model and workflow versions, inputs and sources, tool requests, sanitized results, state changes, approvals, retries, costs, final status, and external action IDs. Test recovery after uncertain writes, timeouts, duplicate events, schema changes, and expired credentials."
+          "question": "Which governance controls matter most?",
+          "answer": "Verify least-privilege identities, tool and action restrictions, approval gates, environment separation, retention and training terms, audit events, administrator policy, and controls enforced outside the prompt."
         },
         {
           "question": "How do I compare AI agent platform costs?",
@@ -1203,8 +1203,8 @@
           "answer": "Test whether instructions, workflows, tool schemas, evaluation cases, state, artifacts, logs, and business records export in usable formats. Keep identities and systems of record under your control, document proprietary dependencies, and ask a second team to operate or migrate one pilot workflow before purchase."
         },
         {
-          "question": "When is an automation platform better than an agent platform?",
-          "answer": "When the trigger, sequence, rules, and exceptions are known, deterministic automation is easier to test and recover. Add agent autonomy only when model-directed next-step selection materially improves a task whose path changes with the evidence found."
+          "question": "Can a Preview feature count in an AI agent platform score?",
+          "answer": "Record it separately. A documented Preview or limited-rollout capability may have restricted support, regions, plans, or terms, so it should not be scored as equivalent to a generally available feature."
         }
       ]
     },
@@ -1527,36 +1527,36 @@
     "/blog/browser-ai-agent-what-it-can-do": {
       "items": [
         {
-          "question": "What can a browser AI agent actually do?",
-          "answer": "It can navigate pages, read visible content, compare sources, click, type, fill supported forms, and sometimes perform authorized actions. Capability depends on whether it uses a built-in browser, extension, cloud browser, or app integration, plus the account and website permissions available in that context."
+          "question": "What is a browser AI agent?",
+          "answer": "An agent that observes pages and uses browser actions within a specific profile, session, and permission boundary."
         },
         {
-          "question": "Which browser tasks are the best fit for an agent?",
-          "answer": "Start with observable, reversible work: extracting known fields from named pages, comparing options against a fixed schema, preparing a form without submitting it, or checking visible page state. Stable inputs, clear completion criteria, narrow permissions, and inexpensive errors make a task easier to automate and verify."
+          "question": "Can it use my signed-in websites?",
+          "answer": "Only when the selected browser surface supports that session and the user account has permission."
         },
         {
-          "question": "What is the difference between a browser extension, built-in browser, and cloud browser?",
-          "answer": "An extension can work in an existing supported browser profile and signed-in tabs. A built-in browser uses a separate profile inside the app. A cloud browser runs on a remote computer and does not automatically inherit local tabs, cookies, extensions, files, or saved passwords. Sign-in and other capabilities vary by plan and workspace."
+          "question": "What tasks fit best?",
+          "answer": "Read-only research, structured extraction, comparison, drafts, and reversible low-impact writes."
         },
         {
-          "question": "Will a browser AI agent work on every website?",
-          "answer": "No. Sites may block automated browsers, require unsupported authentication or CAPTCHA, change their interface, restrict downloads or uploads, or deny the requested origin. Treat a blocked site as a normal stop condition. The agent should ask for takeover, use an approved alternative, or return the evidence gathered so far."
+          "question": "What tasks need approval?",
+          "answer": "Purchases, submissions, deletion, permission changes, external messages, and legal or financial commitments."
         },
         {
-          "question": "Should I use browser control or an app integration?",
-          "answer": "Prefer a supported app or plugin when it provides a stable structured read or write operation. Use browser control when the task genuinely depends on the rendered interface, an existing signed-in tab, or a site without a suitable integration. Browser clicking is usually more sensitive to layout and session changes."
+          "question": "Why does browser context matter?",
+          "answer": "Built-in, extension, and cloud browsers can have different profiles, cookies, files, and controls."
         },
         {
-          "question": "How do I test a browser AI agent reproducibly?",
-          "answer": "Record the browser surface, account role, permissions, starting URL, test data, task, allowed sites, prohibited actions, stop conditions, and expected state. Run normal, missing-data, changed-layout, blocked-site, expired-session, conflicting-value, and interrupted-write cases, preserving screenshots, links, traces, and backend state where available."
+          "question": "How should success be verified?",
+          "answer": "Check visible page state and backend state, and save stable identifiers or receipts."
         },
         {
-          "question": "Why must a write be verified beyond the confirmation page?",
-          "answer": "A page can look successful even when the backend did not commit, or the browser may time out after a successful write. Verify the resulting record or external state before retrying. Otherwise a retry can create duplicate records, messages, reservations, or other side effects."
+          "question": "What are common failures?",
+          "answer": "Stale pages, hidden state, authentication, CAPTCHAs, layout changes, partial writes, and prompt injection."
         },
         {
-          "question": "Which browser tasks should remain human decisions?",
-          "answer": "Keep financial, legal, medical, account-permission, deletion, public publishing, and other consequential or irreversible decisions with a person. The agent can gather evidence, prefill a draft, and surface conflicts, but should stop before commitment and present exactly what will happen."
+          "question": "How do I test safely?",
+          "answer": "Use a bounded task, test account, expected-state checklist, reversible writes, and recorded failures."
         }
       ]
     },
@@ -2107,28 +2107,36 @@
     "/blog/dynamic-workflows-build-or-use-workspace": {
       "items": [
         {
-          "question": "Do Dynamic Workflows mean I need to build my own agent stack?",
-          "answer": "No. Dynamic Workflows is one option for orchestrating sub-agents inside Claude Code, not a signal that every AI-using solo operator should now be building agent systems. If your work is codebase-scale or research-heavy and you already live in Claude Code, it's worth trying. If your work is calendar- and client-driven, the workflow layer probably isn't the missing piece — what's missing is execution across the schedule you already have."
+          "question": "What are Dynamic Workflows?",
+          "answer": "Anthropic describes generated orchestration code that delegates work to subagents and consolidates results."
         },
         {
-          "question": "Who can use Dynamic Workflows, and is it on by default?",
-          "answer": "It's a research preview on Max, Team, and Enterprise plans — Pro isn't included — plus the API, Bedrock, Vertex AI, and Microsoft Foundry. On Max and Team it's enabled by default; Enterprise admins have to switch it on. You also need Claude Code v2.1.154 or later. As with any research preview, check the latest documentation before committing, since plan availability and pricing can shift."
+          "question": "When should I build orchestration?",
+          "answer": "When a repeated task needs explicit decomposition, specialized roles, custom validation, and owned execution order."
         },
         {
-          "question": "How much more expensive is a workflow run than a normal session?",
-          "answer": "Noticeably more. Anthropic's own docs warn that workflows burn substantially more tokens than a standard session, and a multi-agent run can be an order of magnitude more expensive than a single-agent one. That's acceptable for codebase-scale migrations but poor economics for small daily tasks. The guidance is to start with a scoped task to calibrate cost before launching a repo-wide audit."
+          "question": "When should I use a workspace?",
+          "answer": "When changing inputs, artifacts, human steering, connected tools, and review matter more than custom coordination."
         },
         {
-          "question": "What if I already built part of a sub-agent workflow?",
-          "answer": "Keep it for the use case it actually fits — deep research, audits, or large refactors — and stop trying to make it cover the rest of your week. The mistake most people make (including me) is forcing one architecture to serve both deep occasional work and daily repetitive work; they want different tools. Anthropic frames workflows as best for problems too big for a single pass by one agent — a specific use case, not a default mode."
+          "question": "Is more agents always better?",
+          "answer": "No. Compare against a single-agent baseline and measure quality, latency, and cost."
         },
         {
-          "question": "When do sub-agents create more maintenance than value?",
-          "answer": "Roughly when the task isn't repeating enough to amortize the setup, or when the workflow touches so many different tools that you spend real time on the seams between them. A rough personal rule: if you've spent more time configuring it than running it after the second week, it's not earning its place. Cut it — or move that part of the work to a layer you don't have to maintain."
+          "question": "Can a workspace run workflows?",
+          "answer": "It may, depending on the product; workspace and orchestration are overlapping layers."
         },
         {
-          "question": "Is an AI workspace better for non-developers?",
-          "answer": "For most non-developer solo operators, yes — at least for the daily-execution layer. Dynamic Workflows assumes a Claude Code environment and a Max-or-above plan. A workspace that sits across calendar, tasks, and recurring work is usually closer to what a creator, consultant, or service provider needs day to day. Coordinating agent fleets and making sure Tuesday's deliverables actually go out are different jobs with different tools."
+          "question": "What must a build owner maintain?",
+          "answer": "Code, tools, permissions, evaluations, observability, cost controls, upgrades, and recovery."
+        },
+        {
+          "question": "What should a pilot include?",
+          "answer": "One bounded task, rubric, baseline, capped tools, time, and spend, plus failure tests."
+        },
+        {
+          "question": "What is the deciding trade-off?",
+          "answer": "Custom control versus operational ownership."
         }
       ]
     },
@@ -2919,36 +2927,36 @@
     "/blog/how-to-build-ai-agents-for-repeated-work": {
       "items": [
         {
-          "question": "Do I need coding skills to build a simple agent?",
-          "answer": "Not always. A fixed workflow with one model step may be enough. Code becomes useful for custom authentication, strict schemas, versioned tests, complex recovery, high volume, or integrations a builder cannot expose safely. Choose the lightest layer that still meets the task contract."
+          "question": "When does repeated work need an agent?",
+          "answer": "When inputs vary and the system must choose steps or tools; fixed paths usually fit deterministic workflows."
         },
         {
-          "question": "Which repeated task should I automate first?",
-          "answer": "Choose a recurring job with identifiable inputs, a stable goal, a verifiable output, narrowly scoped tools, and reversible early actions. Avoid tasks driven by unstated taste, unavailable facts, conflicting owners, or irreversible decisions."
+          "question": "What is a task contract?",
+          "answer": "A definition of inputs, allowed actions, expected output, finish conditions, reviewers, and failure behavior."
         },
         {
-          "question": "What is the smallest useful agent I can build?",
-          "answer": "If a single prompt reliably transforms one input into one output, you may not need an agent. The smallest actual agent is a bounded loop that can choose among a few narrow read or draft tools, record state, stop on uncertainty, and return evidence for review."
+          "question": "How narrow should tools be?",
+          "answer": "Each tool should have one clear purpose, explicit parameters, stable identifiers, and bounded authority."
         },
         {
-          "question": "Does every repeated task need an actual agent?",
-          "answer": "No. Use rules for predictable transformations, one model call for contained interpretation, and a deterministic workflow when the path is known. Use an agent only when the number or order of steps cannot be predefined and model-directed tool choice adds enough value to justify extra cost and risk."
+          "question": "What state should be stored?",
+          "answer": "Only durable facts needed for future runs, with source, version, owner, and correction path."
         },
         {
-          "question": "How many workflows should one agent handle?",
-          "answer": "Start with one task contract, even if the task uses several tools. Expand only after the original workflow has stable evaluations, clear ownership, tested recovery, and no need for broad credentials. Separate agents are often easier to evaluate than one agent with unrelated responsibilities."
+          "question": "Where should approvals go?",
+          "answer": "Immediately before consequential external writes, sends, payments, deletion, or permission changes."
         },
         {
-          "question": "What should I do when my agent keeps failing?",
-          "answer": "Classify the failure first: input, missing context, ambiguous instruction, wrong tool, tool outage, permission, model error, or weak validator. Narrow the task or fix the relevant layer. A stronger model will not repair missing source data, unsafe permissions, or non-idempotent writes."
+          "question": "What should an evaluation set contain?",
+          "answer": "Representative normal, edge, adversarial, and failure cases with expected facts and allowed actions."
         },
         {
-          "question": "What should an AI agent evaluation test?",
-          "answer": "Test the full trajectory, not only the final answer: retrieved evidence, tool choice, arguments, state changes, approvals, forbidden actions, and recovery. Include duplicates, missing fields, conflicting sources, prompt injection, outages, interruption, and data changed between read and write."
+          "question": "What must be observable?",
+          "answer": "Inputs, model and version, tool calls, evidence, state changes, approvals, cost, latency, errors, and output."
         },
         {
-          "question": "How do I prevent duplicate actions after a retry?",
-          "answer": "Give each trigger and write a stable idempotency key, record side-effect IDs in durable state, and check them before executing again. Test interruption immediately before and after writes, because checkpointing alone does not guarantee exactly-once behavior."
+          "question": "How should rollout proceed?",
+          "answer": "Offline evaluation, shadow mode, draft-only, limited writes, then broader scope if gates pass."
         }
       ]
     },
@@ -3831,36 +3839,36 @@
     "/blog/what-are-claude-managed-agents": {
       "items": [
         {
-          "question": "Do I need to be a developer to use Claude Managed Agents?",
-          "answer": "Direct use is designed for product, platform, and engineering teams because the service is operated through the Claude Platform. Non-developers normally encounter it through an application built on top of the runtime; for direct personal work, Claude chat or Cowork is the closer fit."
+          "question": "What are Claude Managed Agents?",
+          "answer": "Anthropic-hosted infrastructure for running long-lived agents with managed execution, state, and operational controls."
         },
         {
-          "question": "Is Claude Managed Agents a new model?",
-          "answer": "No. It is a hosted runtime around Claude models. Anthropic separates the session, harness, and sandbox so that long-running execution and state can be managed independently of a particular model release."
+          "question": "Is it a consumer Claude interface?",
+          "answer": "No. It is platform infrastructure, unlike chat, Cowork, or Claude Code."
         },
         {
-          "question": "How is Claude Managed Agents different from using the Claude API directly?",
-          "answer": "With direct model access, your application owns state, tool loops, execution, and recovery. Managed Agents supplies a hosted session, harness, and sandbox layer. Your team still owns the business workflow, tool definitions, permissions, tests, and human approvals."
+          "question": "What does Anthropic manage?",
+          "answer": "The documented runtime layer may manage sessions, execution environments, persistence, and operational interfaces; verify current docs."
         },
         {
-          "question": "How is Managed Agents different from Claude Cowork?",
-          "answer": "Cowork is a user-facing work surface for delegating tasks across files and connected apps. Managed Agents is infrastructure for teams building a custom agent service. If a person needs to complete a task directly, Cowork is usually the relevant comparison."
+          "question": "What must the customer still build?",
+          "answer": "Task logic, tools, permissions, approvals, evaluation, monitoring, and domain-specific recovery."
         },
         {
-          "question": "Does a sandbox make an agent safe?",
-          "answer": "No. A sandbox constrains code execution, but it cannot decide whether a refund, message, deletion, or permission change is correct. Use narrow credentials, explicit tool allowlists, idempotent writes, logs, and human approval for consequential actions."
+          "question": "Which tasks fit?",
+          "answer": "Repeated, machine-readable, bounded tasks with observable steps and verifiable outputs."
         },
         {
-          "question": "What should a Managed Agents pilot measure?",
-          "answer": "Use a fixed evaluation set and track correctness, evidence quality, intervention rate, unsafe-action attempts, recovery after interruption, latency, and full-run cost. Classify failures before changing the model because input, tool, permission, and review problems require different fixes."
+          "question": "Which tasks do not fit?",
+          "answer": "Vague authority such as “run the business,” irreversible actions without approval, or tasks with no reliable evaluator."
         },
         {
-          "question": "Which workloads are a poor fit?",
-          "answer": "Avoid ambiguous goals, irreversible actions, broad credentials, and work with no reliable acceptance test. Reframe an open-ended mandate into a bounded sequence that gathers evidence, produces a draft or recommendation, and stops for approval."
+          "question": "How should a pilot start?",
+          "answer": "One narrow task, least privilege, test cases, human review, cost limits, and failure recovery."
         },
         {
-          "question": "Can a session resume safely after interruption?",
-          "answer": "Durable state supports recovery, but safe resumption is an application property. Test duplicate events, expired credentials, changed upstream records, and non-idempotent tool calls so a resumed run does not repeat side effects."
+          "question": "What changes should be rechecked?",
+          "answer": "Availability, regions, models, quotas, endpoints, preview status, and pricing."
         }
       ]
     },
@@ -4943,8 +4951,8 @@
     "/zh/blog/ai-agent-solo-operators": {
       "items": [
         {
-          "question": "单人创业者真的需要 AI Agent 吗？",
-          "answer": "只有当一个边界明确的任务需要工具调用、变化步骤或后台执行时，Agent 才可能值得。路径固定就用工作流自动化；成功标准主观或频率很低，就保持人工掌舵。先写任务合同，再用试点与人工基线比较。"
+          "question": "哪种 AI Agent 最适合单人经营者？",
+          "answer": "没有通用第一名。应选择能通过真实任务、权限、恢复、证据、总成本与退出测试的最简单运行模式，并在购买前把有边界试点与人工基线比较。"
         },
         {
           "question": "单人创业者有哪些 AI Agent 路径可选？",
@@ -4971,8 +4979,8 @@
           "answer": "使用独立身份和最小权限，区分读取、草稿、可逆写入与高影响动作。发送、发布、付款、删除和修改访问权通常应要求知情审批。"
         },
         {
-          "question": "怎样避免被 AI Agent 平台锁定？",
-          "answer": "购买前实际测试指令、知识、流程定义、日志、记录与成果能否以可用格式导出，记录外部依赖，并确认离开平台时怎样删除数据。"
+          "question": "付费前应该核验 AI Agent 的哪些信息？",
+          "answer": "核验具体任务、当前功能证据、身份、数据路径、保留、审批、中断恢复、可导出日志、实测月成本、回滚与退出路径，并在购买前测试导出和删除。"
         }
       ]
     },
@@ -5159,36 +5167,36 @@
     "/zh/blog/ai-assistant-for-personal-use-at-work": {
       "items": [
         {
-          "question": "我可以在工作中使用个人 AI 助手吗？",
-          "answer": "只有当雇主政策、合同、专业职责和数据分级允许时才可以。个人订阅不会授权你上传内部或客户信息。如果有工作托管账号，应优先使用，并遵守管理员批准的工具、连接、保留设置和用例。"
+          "question": "工作中可以使用个人 AI 助手吗？",
+          "answer": "只有雇主政策、账号条款、数据分级和具体任务都允许时才可以。"
         },
         {
-          "question": "个人 AI 账号和工作托管账号有什么区别？",
-          "answer": "工作托管账号可能受组织合同、管理员策略、身份控制、保留设置、批准的 Connector、Audit Log 和离职流程管理。个人账号由个人控制，可能适用不同数据条款。不能因为品牌相同，就假设不同账号有相同保护。"
+          "question": "哪些数据不应贴进个人账号？",
+          "answer": "未经明确批准的受限、机密、受监管、客户、凭证或个人数据。"
         },
         {
-          "question": "哪些工作数据绝对不应输入个人 AI 账号？",
-          "answer": "不要输入凭据、安全机密、健康或支付记录、法律特权材料、受限个人数据，以及合同或政策禁止外部处理的信息。保密客户文件、员工数据、源代码、合同和未发布财务只能在明确批准的托管环境中按最小必要原则使用。"
+          "question": "应使用个人账号还是工作账号？",
+          "answer": "工作数据应使用组织批准的账号和控制；个人便利不能覆盖政策。"
         },
         {
-          "question": "「不用于训练」是否等于「不存储」？",
-          "answer": "不等于。模型训练、产品 History、Memory、滥用监测、Support Access、Backup 和企业 Audit Log 是不同处理目的。要核对准确产品、套餐、账号类型、地区、功能、默认保留、删除行为、Subprocessor 与人工访问条件。"
+          "question": "如何给任务分级？",
+          "answer": "按数据敏感度、动作影响、可逆性和所需复核者分级。"
         },
         {
-          "question": "工作中该选聊天助手、浏览器 Connector 还是 AI Workspace？",
-          "answer": "可见、可审的互动研究与起草用 Chat；只有经批准且任务确实在特定邮箱、日历、文档或 Web Service 内时才用 Connector；只有持续项目真的需要文件、工具、共享上下文或日程时才用 Workspace 或 Agent。权限越广，审批、Log 和恢复就要越强。"
+          "question": "简单起草适合什么产品形态？",
+          "answer": "如果获准上下文能安全提供且无需外部动作，聊天助手通常足够。"
         },
         {
-          "question": "工作中选 AI 助手时，哪些控制比模型排名更重要？",
-          "answer": "比较托管身份、保留与删除、训练条款、权限粒度、来源引用、Project 与 Memory 隔离、导出、Draft-only、外部动作审批、Audit Log、Connector 管理和离职处理。略好的回答无法弥补无法管理的账号或说不清的 Data Flow。"
+          "question": "连接器或 Agent 何时增加风险？",
+          "answer": "当它扩大访问范围，或能写入、发送、删除、修改记录时。"
         },
         {
-          "question": "怎么在工作中安全部署个人 AI 助手？",
-          "answer": "从一项已批准的低风险任务开始，使用托管账号，只披露最小必要数据，保持 Draft-only，要求人工核对事实与政策，把验收输出存入组织 System of Record，撤销无用 Connector，并记录输入、禁止数据、验收标准、审核人和升级路径。"
+          "question": "除模型质量外还应比较什么？",
+          "answer": "留存、训练政策、管理控制、权限、日志、审批、导出、删除和支持。"
         },
         {
-          "question": "怎么评估工作用 AI 助手是否值得？",
-          "answer": "用已批准案例跑七天，测验收通过率、修改时间、事实错误、引用质量、政策例外、数据暴露与完整成本。还要测模糊指令、冲突来源、缺失信息、拒绝与升级。只看生成速度会遮住核验和返工。"
+          "question": "七天试用应怎样做？",
+          "answer": "使用获准样例任务，记录修改与失败，在控制核验前不执行生产写入。"
         }
       ]
     },
@@ -5271,12 +5279,12 @@
           "answer": "浏览器 Agent 在当前或远程浏览器会话中委托动作；AI 浏览器让助手融入跨页面和标签页的浏览过程；AI 工作区使用更大的项目或桌面边界，可组合文件、工具、调研与交付物。"
         },
         {
-          "question": "网页自动化应该选哪一类？",
-          "answer": "任务主要是在网站之间执行动作，而且浏览器权限已经足够时，选择浏览器 Agent。触发、转换和目标位置都确定时，应改用 API 或工作流自动化。"
+          "question": "AI 浏览器就等于浏览器 Agent 吗？",
+          "answer": "不一定。有些 AI 浏览器只读取或比较标签页上下文；另一些还提供点击、输入和导航的动作模式，此时才兼具浏览器 Agent 能力。"
         },
         {
-          "question": "什么时候 AI 浏览器比浏览器 Agent 更合适？",
-          "answer": "主要工作是跨标签页阅读、比较与推理时，AI 浏览器更合适；核心是完成网页动作时，浏览器 Agent 更合适。产品可能同时支持两者，应分别测试读取与动作权限。"
+          "question": "本地浏览器 Agent 与云端浏览器有什么不同？",
+          "answer": "本地 Agent 可能使用当前浏览器窗口、Cookie 和标签页；云端浏览器通常有独立远程会话，并可能在设备关闭后继续。具体行为必须逐产品验证。"
         },
         {
           "question": "什么时候应该选择 AI 工作区？",
@@ -5287,16 +5295,16 @@
           "answer": "不能按类别名称判断。应比较真实上下文边界、执行位置、身份、最小权限、审批、日志、留存和恢复，并让所有高影响动作经过知情审批。"
         },
         {
-          "question": "云端浏览器会使用我现有浏览器的登录吗？",
-          "answer": "不一定。许多云端浏览器使用独立 Cookie 与登录会话，当前浏览器中的 Agent 则可能使用该配置文件的会话。应核验执行位置、凭证流程、会话保留与退出方法。"
+          "question": "浏览器 Agent 能彻底避免提示注入吗？",
+          "answer": "不能假设存在彻底防护。应限制域名、工具、账号和数据，把不可信内容与指令分开，高影响动作必须审批，并保留可复核日志。"
         },
         {
           "question": "怎样测试这三类产品？",
           "answer": "给所有候选相同任务、权限边界、正常与失败案例和验收标准。衡量引用、越权动作、审批质量、恢复、审阅时间、总耗时和成本，并记录套餐、版本、设备与测试日期。"
         },
         {
-          "question": "AI 浏览器和 AI 工作区可以组合使用吗？",
-          "answer": "可以，但应先试点最小边界。只有证据显示存在第一个产品无法覆盖的重复任务时才增加第二个，同时计算上下文、订阅、权限和记录的重复成本。"
+          "question": "什么时候工作流自动化比浏览器 Agent 更合适？",
+          "answer": "触发、转换和目标都已知时，优先使用 API 或确定性自动化；只有必须经过网页界面，或下一步确实随网页证据变化时，才考虑浏览器委托。"
         }
       ]
     },
@@ -5555,8 +5563,8 @@
     "/zh/blog/ai-workflow-for-solo-founders": {
       "items": [
         {
-          "question": "单人业务搭 AI 工作流的第一步是什么？",
-          "answer": "先审计一周重复任务，记录触发、结果、频率、系统、判断、异常、负责人、事实源和错误后果。再选择一项高频、有边界、可观察、可逆且已有数据的工作。不要从买工具或自动化整家公司开始。"
+          "question": "什么是单人业务的 AI 工作流？",
+          "answer": "它是一条可重复路径：从已知触发和获准输入出发，经明确工具、复核、记录与故障处理，抵达可验收结果。搭建时应围绕一项有边界任务，而不是试图自动化整家公司。"
         },
         {
           "question": "什么任务适合作为第一个 AI 工作流试点？",
@@ -5567,8 +5575,8 @@
           "answer": "条件允许时使用 20–50 个代表性历史或合成案例，但覆盖比固定数量更重要。包含普通、缺失、含糊、冲突、不可访问、边界与必须停止案例，并按任务设置成功线和严重错误闸门。"
         },
         {
-          "question": "工作流应该加入持久记忆吗？",
-          "answer": "只有信息用途、纠正方式、保留期限和删除路径明确时才加入。运行事实放在当次输入，稳定规则放在版本化指令或获准资料中；持久化更多信息前先测试缺失、过期和冲突上下文。"
+          "question": "AI 工作流的任务契约应该包含什么？",
+          "answer": "写清触发、完成状态、必需信源、允许工具、禁止动作、输出格式、审批、升级、重试与失败行为。当次事实放在当前输入，稳定规则放在版本化资料中。"
         },
         {
           "question": "怎样安全上线 AI 工作流？",
@@ -5591,8 +5599,8 @@
     "/zh/blog/ai-workflow-solo-founders": {
       "items": [
         {
-          "question": "什么是单人创业者的 AI 工作流？",
-          "answer": "它是一套可重复系统，让一项业务任务从明确触发，经过输入、决策、动作、复核和事实源，到达经验证的完成状态。它不只是长 Prompt，也不是一堆 AI 订阅。"
+          "question": "什么是单人创业者的 AI 工作流系统？",
+          "answer": "它是重复工作的轻量操作系统，明确触发、输入、决策逻辑、工具、复核、事实系统、可观测性与恢复。它不只是长 Prompt，也不是一堆 AI 订阅。"
         },
         {
           "question": "耐用的 AI 工作流需要哪些层？",
@@ -5619,8 +5627,8 @@
           "answer": "不要从价格承诺、法律申报、付款、删除、权限修改、员工决定或无人复核的客户承诺开始。先自动化证据收集、输入整理或停在审批前的草稿。"
         },
         {
-          "question": "工作流设计阶段应留下哪些文档？",
-          "answer": "应留下任务契约、架构图、上下文与数据清单、工具权限矩阵、成功和严重错误标准、评估集、运行记录、恢复计划、负责人、复查日期与退役路径。"
+          "question": "AI 工作流应具备哪些恢复控制？",
+          "answer": "记录运行 ID、信源和配置版本、工具调用、审批、错误、最终状态、成本与外部动作 ID；让重试保持幂等，把无法安全处理的案例送入人工队列，并写明回滚和退役路径。"
         }
       ]
     },
@@ -5731,8 +5739,8 @@
           "answer": "不存在。应为一项明确任务建立 shortlist，让所有候选使用相同输入、权限边界、评估案例与成本假设。托管工作区、可视化 Builder、开发框架、云服务和垂直产品解决不同工作，不能混成总榜。"
         },
         {
-          "question": "应该把哪些类型的 AI Agent 平台列入候选？",
-          "answer": "可考虑托管工作区 Agent、可视化自动化或 Agent Builder、开发框架与 SDK、托管云 Agent 服务，以及专业垂直产品。先根据任务负责人、控制需求、部署方式和维护能力选择类别，不要假设所有类别可以互换。"
+          "question": "非技术运营团队应优先入围哪类 AI Agent 平台？",
+          "answer": "先看能接入真实业务系统、支持审批、所有权、审计与导出的托管工作区或可视化 Builder，再用一项有边界的试点验证，不要把所有平台类别当成可以互换。"
         },
         {
           "question": "比较 Agent 平台最重要的标准是什么？",
@@ -5743,8 +5751,8 @@
           "answer": "在沙箱或只读环境，让每个入围者使用相同任务、数据、权限和评估集，覆盖正常、含糊、缺数据、信源冲突、工具故障、认证过期、对抗、升级、恢复和写入验真，并保存配置与证据供复现。"
         },
         {
-          "question": "Agent 平台应该记录什么？",
-          "answer": "运营者应能还原模型与流程版本、输入信源、工具请求、脱敏结果、状态变化、审批、重试、成本、终态和外部动作 ID，并测试不确定写入、超时、重复事件、Schema 变化和凭证过期后的恢复。"
+          "question": "最重要的平台治理控制有哪些？",
+          "answer": "核对最小权限身份、工具与动作限制、审批门禁、环境隔离、留存与训练条款、审计事件、管理员策略，以及 Prompt 之外的强制控制。"
         },
         {
           "question": "怎样比较 AI Agent 平台成本？",
@@ -5755,8 +5763,8 @@
           "answer": "测试指令、流程、工具 Schema、评估案例、状态、成果、日志和业务记录能否以可用格式导出；身份和事实源由自己控制；记录专有依赖；购买前让第二支团队试着运营或迁移一条试点流程。"
         },
         {
-          "question": "什么时候自动化平台比 Agent 平台更合适？",
-          "answer": "触发、顺序、规则和异常已知时，确定性自动化更容易测试与恢复。只有任务路径随证据变化，而且模型决定下一步能显著改善结果时，才增加 Agent 自主性。"
+          "question": "Preview 功能能否计入 AI Agent 平台评分？",
+          "answer": "可以单独记录，但不能与正式可用功能同分。Preview 或有限开放能力可能在支持、地区、套餐和条款上受限。"
         }
       ]
     },
@@ -6079,36 +6087,36 @@
     "/zh/blog/browser-ai-agent-what-it-can-do": {
       "items": [
         {
-          "question": "浏览器 AI Agent 到底能做什么？",
-          "answer": "它可以导航网页、读取可见内容、比较信源、点击、输入、填写受支持表单，有时还能执行获准动作。实际能力取决于它使用内置浏览器、扩展、云浏览器还是 App 集成，以及当前上下文中的账号和网站权限。"
+          "question": "什么是浏览器 AI Agent？",
+          "answer": "在特定 Profile、Session 与权限边界内观察网页并执行浏览器动作的 Agent。"
         },
         {
-          "question": "哪些浏览器任务最适合交给 Agent？",
-          "answer": "先选结果可观察、动作可逆的工作，例如从指定页面抽取已知字段、按固定结构比较选项、填写但不提交表单，或检查可见页面状态。输入稳定、完成标准清楚、权限狭窄、错误代价低时，更容易自动化和验证。"
+          "question": "它能使用我的登录态吗？",
+          "answer": "只有所选浏览器入口支持该 Session，且账号本身有权限时才可以。"
         },
         {
-          "question": "浏览器扩展、内置浏览器与云浏览器有什么区别？",
-          "answer": "扩展可以使用受支持浏览器的现有 Profile 与登录标签；内置浏览器使用应用内独立 Profile；云浏览器在远程计算机运行，不会自动继承本地标签、Cookie、扩展、文件或密码。登录等能力还会因套餐和工作区而异。"
+          "question": "哪些任务最适合？",
+          "answer": "只读调研、结构化抽取、比较、草稿与低影响可逆写入。"
         },
         {
-          "question": "浏览器 AI Agent 能在所有网站上工作吗？",
-          "answer": "不能。网站可能阻止自动浏览器、要求不支持的认证或 CAPTCHA、改变界面、限制上传下载，或封锁请求来源。把被阻止视为正常停止条件；Agent 应请求接管、改用获准替代方案，或返回已经收集的证据。"
+          "question": "哪些动作必须审批？",
+          "answer": "购买、提交、删除、改权限、对外发消息及法律或财务承诺。"
         },
         {
-          "question": "应该使用浏览器控制还是 App 集成？",
-          "answer": "有稳定的结构化读取或写入操作时，优先使用受支持 App 或 Plugin。任务确实依赖渲染界面、现有登录标签，或网站没有合适集成时，再使用浏览器控制。视觉点击通常更容易受到布局与 Session 变化影响。"
+          "question": "为什么浏览器上下文重要？",
+          "answer": "内置、扩展与云浏览器可能使用不同 Profile、Cookie、文件和控制。"
         },
         {
-          "question": "怎样可复现地测试浏览器 AI Agent？",
-          "answer": "记录浏览器表面、账号角色、权限、起始 URL、测试数据、任务、允许网站、禁止动作、停止条件和预期状态。运行正常、缺数据、布局变化、网站封锁、Session 过期、值冲突和写入中断案例，并保存截图、链接、轨迹和可用的后端状态。"
+          "question": "如何验证成功？",
+          "answer": "同时检查可见页面与后端状态，并保存稳定 ID 或回执。"
         },
         {
-          "question": "为什么写入后不能只看确认页面？",
-          "answer": "页面看似成功时，后端可能没有提交；也可能后端已写入，但浏览器随后超时。重试前先核对最终记录或外部状态，否则可能创建重复记录、消息、预约或其他副作用。"
+          "question": "常见失败有哪些？",
+          "answer": "过期页面、隐藏状态、认证、验证码、布局变化、部分写入和提示注入。"
         },
         {
-          "question": "哪些浏览器任务应始终由人决定？",
-          "answer": "财务、法律、医疗、账号权限、删除、公开发布及其他高影响或不可逆决定应留给人。Agent 可以收集证据、预填草稿、标出冲突，但应在承诺前停止，并准确展示接下来会发生什么。"
+          "question": "如何安全测试？",
+          "answer": "限定任务、测试账号、预期状态清单、可逆写入并记录失败。"
         }
       ]
     },
@@ -6659,28 +6667,36 @@
     "/zh/blog/dynamic-workflows-build-or-use-workspace": {
       "items": [
         {
-          "question": "Dynamic Workflows 意味着我得自己搭一套 Agent 技术栈吗？",
-          "answer": "不用。Dynamic Workflows 只是 Claude Code 里编排子 Agent 的一个选项，不代表每个用 AI 的单人创业者都得搭 Agent 系统。工作是代码库级、研究重度、又活在 Claude Code 里的人值得一试；日历与客户驱动的工作，缺的不是工作流这一层，而是横跨你既有日程的执行。"
+          "question": "Dynamic Workflows 是什么？",
+          "answer": "Anthropic 描述的一种生成编排代码、委派给子 Agent 并汇总结果的方式。"
         },
         {
-          "question": "Dynamic Workflows 谁能用？默认就开着吗？",
-          "answer": "研究预览，向 Max、Team、Enterprise 开放（Pro 除外），也可走 API、Bedrock、Vertex AI 与 Foundry。Max、Team 默认开启，Enterprise 需管理员开启，要求 Claude Code v2.1.154 以上。预览会变，投入前对照最新文档确认。"
+          "question": "什么时候该自建编排？",
+          "answer": "重复任务确实需要明确拆解、专门角色、自定义验证和执行顺序控制时。"
         },
         {
-          "question": "跑一次工作流比普通会话贵多少？",
-          "answer": "贵不少。官方文档明确提醒工作流会比标准会话烧掉多得多的 token，多 Agent 运行可能比单 Agent 会话贵一个数量级。代码库级迁移没问题，小型日常任务就不划算了。建议先拿一个有边界的任务校准成本，再对全仓库发起审计。"
+          "question": "什么时候该用工作区？",
+          "answer": "输入变化、产物、人为引导、连接工具与复核比定制协调更重要时。"
         },
         {
-          "question": "如果我已经构建了一部分子 Agent 工作流怎么办？",
-          "answer": "把它留给真正适合的用例——深度研究、审计或大型重构——别再试图让它覆盖你一周的其余部分。最常见的错误（我也犯过）是让一套架构同时服务深度偶发工作与日常重复工作，它们想要不同的工具。Anthropic 把工作流框定为适合单 Agent 一趟跑不完的大问题：那是具体用例，不是默认模式。"
+          "question": "Agent 越多越好吗？",
+          "answer": "不是，应和单 Agent 基线比较质量、时延与成本。"
         },
         {
-          "question": "子 Agent 什么时候会造成大于价值的维护负担？",
-          "answer": "大致在任务重复得不够、摊不平搭建成本的时候；或工作流要触碰的工具太多，让你把大量时间花在它们的接缝上。一条粗略的个人经验：第二周之后配置时间已超过运行时间，它就不配待着。砍掉它，或把那部分工作挪到一个不需要你维护的层。"
+          "question": "工作区能运行工作流吗？",
+          "answer": "视产品而定；工作区与编排是会重叠的不同层。"
         },
         {
-          "question": "AI 工作区对非开发者更好吗？",
-          "answer": "对大多数非开发者单人创业者，是的——至少日常执行层如此。Dynamic Workflows 需要 Claude Code 环境与 Max 及以上计划；横跨日历、任务与周期性工作的工作区，更贴近创作者、顾问与服务提供者的日常。编排 Agent 和把周二交付物发出去，是两件不同的事。"
+          "question": "自建方要维护什么？",
+          "answer": "代码、工具、权限、评估、可观测性、成本、升级与恢复。"
+        },
+        {
+          "question": "试点应包含什么？",
+          "answer": "一个有边界任务、验收表、基线、工具、时间和费用上限，以及失败测试。"
+        },
+        {
+          "question": "核心权衡是什么？",
+          "answer": "定制控制与运维责任。"
         }
       ]
     },
@@ -7471,36 +7487,36 @@
     "/zh/blog/how-to-build-ai-agents-for-repeated-work": {
       "items": [
         {
-          "question": "搭一个简单 agent 需要会写代码吗？",
-          "answer": "不一定。固定流程加一个模型步骤可能已经足够。需要自定义鉴权、严格 schema、版本化测试、复杂恢复、高吞吐，或搭建器无法安全提供的集成时，代码才更合适。选择能满足任务契约的最轻实现层。"
+          "question": "重复工作什么时候需要 Agent？",
+          "answer": "输入会变化、系统必须选择步骤或工具时；固定路径通常更适合确定性工作流。"
         },
         {
-          "question": "先从哪件重复任务开始自动化？",
-          "answer": "选择有可识别输入、稳定目标、可验证输出、窄权限工具与可逆早期动作的重复工作。依赖说不清的品味、无法取得的事实、冲突责任人或不可逆决定的任务，不适合作为起点。"
+          "question": "什么是任务契约？",
+          "answer": "对输入、允许动作、预期产物、结束条件、复核者与失败行为的明确约定。"
         },
         {
-          "question": "我能搭的最小可用 agent 是什么？",
-          "answer": "如果单次提示就能稳定完成一进一出，你可能根本不需要 Agent。最小的真正 Agent 是一个有边界的循环：只能选择少数读取或草稿工具，记录状态，在不确定时停止，并把证据交给人复核。"
+          "question": "工具应有多窄？",
+          "answer": "每个工具一个清晰目的、明确参数、稳定 ID 和受限权限。"
         },
         {
-          "question": "每件重复工作都需要真正的 Agent 吗？",
-          "answer": "不需要。可预测转换用规则，单次理解用一次模型调用，路径已知就用确定性 workflow。只有步骤数量或顺序无法预先规定，而且由模型选工具带来的价值足以覆盖成本与风险时，才使用 Agent。"
+          "question": "应保存什么状态？",
+          "answer": "仅保存未来运行需要的持久事实，并记录来源、版本、负责人和纠正路径。"
         },
         {
-          "question": "一个 agent 该处理几个工作流？",
-          "answer": "先只维护一份任务契约，即使任务会调用多个工具。只有原流程已有稳定评估、明确责任人、经过测试的恢复机制，而且不需要扩大凭据权限时，才扩展范围。多个职责独立的 Agent 通常更容易验收。"
+          "question": "审批应放在哪里？",
+          "answer": "放在对外写入、发送、付款、删除或改权限等高影响动作之前。"
         },
         {
-          "question": "Agent 老在同一处失败，该怎么办？",
-          "answer": "先分类：输入、上下文缺失、指令含糊、工具选择、工具故障、权限、模型错误或校验不足。收窄任务或修复对应层。更强模型无法补回缺失来源，也不会自动修复过度授权或非幂等写入。"
+          "question": "评估集应包含什么？",
+          "answer": "有代表性的正常、边缘、对抗与失败案例，并写明预期事实和允许动作。"
         },
         {
-          "question": "AI Agent 评估应该测试什么？",
-          "answer": "不要只看最终答案，要检查完整轨迹：检索证据、工具选择、参数、状态变化、审批、禁止动作与恢复。案例应包含重复事件、字段缺失、来源冲突、提示注入、工具故障、中断和读写之间数据变化。"
+          "question": "哪些内容必须可观察？",
+          "answer": "输入、模型版本、工具调用、证据、状态变化、审批、成本、时延、错误与产物。"
         },
         {
-          "question": "如何避免重试后重复执行动作？",
-          "answer": "为每个触发与写操作设置稳定的幂等键，在持久状态中记录副作用 ID，并在再次执行前检查。还要专门在写入前后中断测试，因为有 checkpoint 并不等于天然实现 exactly-once。"
+          "question": "如何分阶段上线？",
+          "answer": "离线评估、影子运行、仅草稿、有限写入，通过门槛后再扩大。"
         }
       ]
     },
@@ -8383,36 +8399,36 @@
     "/zh/blog/what-are-claude-managed-agents": {
       "items": [
         {
-          "question": "用 Claude Managed Agents 必须是开发者吗？",
-          "answer": "直接使用主要面向产品、平台与工程团队，因为服务通过 Claude Platform 运行。非开发者通常会使用建立在这套运行时之上的应用；若只是个人直接完成工作，Claude chat 或 Cowork 更接近需求。"
+          "question": "Claude Managed Agents 是什么？",
+          "answer": "Anthropic 托管的长时 Agent 运行基础设施，提供受管执行、状态与运维控制。"
         },
         {
-          "question": "Claude Managed Agents 是新模型吗？",
-          "answer": "不是。它是围绕 Claude 模型运行的托管层。Anthropic 将 session、harness 与 sandbox 分开，使长时间执行与状态管理不绑定某一个模型版本。"
+          "question": "它是普通 Claude 用户界面吗？",
+          "answer": "不是，它属于平台基础设施，不等同于聊天、Cowork 或 Claude Code。"
         },
         {
-          "question": "和直接调用 Claude API 有什么区别？",
-          "answer": "直接访问模型时，应用自己管理状态、工具循环、执行与恢复；Managed Agents 提供托管的 session、harness 和 sandbox。业务流程、工具定义、权限、测试和人工审批仍由接入团队负责。"
+          "question": "Anthropic 管理什么？",
+          "answer": "按现行文档可能管理会话、执行环境、持久化与运维接口，具体范围需重新核对。"
         },
         {
-          "question": "Managed Agents 与 Claude Cowork 有什么区别？",
-          "answer": "Cowork 是让人直接委派文件与连接应用任务的工作界面；Managed Agents 是供团队构建自定义 Agent 服务的基础设施。若目标是让个人直接完成一项工作，通常应比较 Cowork。"
+          "question": "客户仍要构建什么？",
+          "answer": "任务逻辑、工具、权限、审批、评估、监控与领域恢复机制。"
         },
         {
-          "question": "有 sandbox 就代表 Agent 安全了吗？",
-          "answer": "不代表。Sandbox 限制代码执行环境，却不能判断退款、发信、删除或权限变更是否正确。高影响动作仍需最小权限、工具白名单、幂等写入、日志和人工审批。"
+          "question": "哪些任务适合？",
+          "answer": "重复、机器可读、边界明确、过程可观察且产物可验收的任务。"
         },
         {
-          "question": "试点应该衡量哪些指标？",
-          "answer": "使用固定评估集，跟踪正确率、证据质量、人工介入率、越权尝试、受中断后的恢复、时延与完整运行成本。先给失败分类，再决定是否换模型，因为输入、工具、权限和复核问题的修法不同。"
+          "question": "哪些任务不适合？",
+          "answer": "“经营整个业务”等模糊授权、无审批的不可逆动作，或没有可靠验收器的任务。"
         },
         {
-          "question": "哪些任务不适合使用 Managed Agents？",
-          "answer": "目标模糊、动作不可逆、凭据范围过大或无法可靠验收的工作都不适合。应把开放式目标改写成有边界的步骤：收集证据、生成草稿或建议，然后停在人工审批处。"
+          "question": "试点怎样开始？",
+          "answer": "一个窄任务、最小权限、测试案例、人工复核、成本上限与失败恢复。"
         },
         {
-          "question": "会话中断后恢复就一定安全吗？",
-          "answer": "持久状态为恢复提供基础，但安全续跑仍取决于应用设计。需要测试重复事件、凭据过期、上游记录变化和非幂等工具调用，避免恢复后重复产生副作用。"
+          "question": "哪些变化需要重查？",
+          "answer": "可用范围、地区、模型、配额、端点、预览状态与价格。"
         }
       ]
     },

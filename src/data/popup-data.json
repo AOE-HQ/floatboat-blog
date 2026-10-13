@@ -102,12 +102,12 @@
     },
     "ai-assistant-for-personal-use-at-work": {
       "en": {
-        "title": "Move approved work into a visible workspace",
-        "body": "Floatboat keeps source files, models, tools, review points, and accepted outputs together without turning a personal shortcut into an invisible process."
+        "title": "Use personal AI at work only within policy",
+        "body": "Classify the data and action first, use the approved account, and test controls before any production write."
       },
       "zh": {
-        "title": "把已批准的工作放进可见工作区",
-        "body": "Floatboat 把来源文件、模型、工具、审批点与验收产物放在一起，不让个人捷径变成隐形流程。"
+        "title": "在政策边界内使用个人 AI",
+        "body": "先判断数据与动作级别，使用组织批准的账号，并在生产写入前验证控制。"
       }
     },
     "ai-automation-agency-do-you-need-one": {
@@ -483,11 +483,11 @@
     "dynamic-workflows-build-or-use-workspace": {
       "en": {
         "title": "Build orchestration or use a workspace?",
-        "body": "The article lands where most solos do: workspace first, orchestration later."
+        "body": "Choose custom control when measured parallelism justifies maintenance; choose a workspace when artifacts, steering, and review matter more."
       },
       "zh": {
-        "title": "编排自建还是工作区直接用",
-        "body": "多数单人用户的答案在文中：先用工作区，编排以后再说。"
+        "title": "自建编排，还是使用工作区？",
+        "body": "并行价值足以覆盖维护成本时选定制控制；产物、引导与复核更重要时先用工作区。"
       }
     },
     "effort-control-fast-mode-ai-work": {

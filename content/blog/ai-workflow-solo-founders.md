@@ -14,6 +14,8 @@ The best **AI workflow for a solo founder** is not the stack with the most tools
 
 This article covers system design—what components the workflow needs and how they fit together. If you already know the target workflow and want a build sequence, use the companion guide: [how to implement an AI workflow for a solo business](/blog/ai-workflow-for-solo-founders).
 
+This page answers **what the operating system should contain**: boundaries, state, review, records, and recovery. It deliberately does not repeat the companion page's audit, pilot, and rollout sequence. Standards and product references were checked on October 13, 2026.
+
 ## Start with work, not software
 
 List the recurring outputs that keep the business moving: a qualified lead, a client brief, a published article, an invoice package, a meeting follow-up, or a weekly operating review. Choose one output and map the path backward.
@@ -53,6 +55,8 @@ Give each tool the smallest necessary access. Separate read from write. Sending,
 Define what a reviewer sees: the proposed result, sources, changes, uncertainty, and next action. Also define when the workflow stops—missing data, conflicting instructions, inaccessible systems, unexpected volume, or an action outside its authority.
 
 The goal is not to eliminate human work. It is to concentrate judgment where it matters and remove mechanical handoffs.
+
+The [NIST Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) supports this context-specific design: different uses require different human–AI configurations, review, tracking, and management oversight.
 
 ### 6. System of record
 

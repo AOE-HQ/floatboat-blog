@@ -14,6 +14,8 @@ An **AI workflow for a solo business** should begin with one repeated job, not a
 
 This is the implementation guide: audit, choose, specify, prototype, test, launch, and improve. For architecture and tool-layer decisions, first read [AI workflow system design for solo founders](/blog/ai-workflow-solo-founders).
 
+Search intent matters here: this page answers **how to build and validate one workflow**. It is not a list of workflow ideas or a software ranking. Product and standards references were checked on October 13, 2026.
+
 ## Step 1: run a one-week workflow audit
 
 Record repeated tasks as they occur. For each one, capture:
@@ -35,6 +37,8 @@ Score each task from 1–5 on frequency, clarity, observability, reversibility, 
 Examples include drafting a meeting brief from approved notes, converting a research packet into a structured outline, classifying inbound requests for review, or preparing a weekly status report. Avoid payments, deletion, legal submissions, access changes, or unsupervised customer commitments.
 
 Choose one pilot. Parallel pilots multiply uncertainty and make it hard to learn which change produced the result.
+
+If the candidate list is still vague, use the task-shape and risk matrix in [AI agent use cases with real examples](/blog/ai-agent-use-cases-real-examples) before continuing.
 
 ## Step 3: write the task contract
 
@@ -64,6 +68,8 @@ Measure the existing process and the pilot on the same dimensions:
 - correct escalation and recovery.
 
 Do not adopt a universal “90% accuracy” target. A formatting error and an unauthorized payment are not comparable. Set task-specific thresholds and make critical errors a separate gate.
+
+This risk-weighted approach matches the [NIST Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf), which calls for review, tracking, documentation, and oversight appropriate to the context rather than one generic threshold.
 
 ## Step 5: build the smallest useful version
 
@@ -108,6 +114,8 @@ Move through permission levels:
 5. narrowly defined automatic action, only when justified.
 
 Define rollback before each increase. Keep high-consequence decisions human. Review logs and a sample of successful runs, not just failures; a silent wrong result may never create an alert.
+
+For agent implementations, OpenAI's [guardrails and human review guidance](https://developers.openai.com/api/docs/guides/agents/guardrails-approvals) makes the same distinction: automated checks validate inputs, outputs, or tool behavior, while approval interrupts should pause sensitive side effects before execution.
 
 ## Step 10: calculate whether the workflow earns its place
 
