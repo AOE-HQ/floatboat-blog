@@ -3,6 +3,27 @@ import Link from "next/link";
 import capabilities from "@/data/use-cases/capabilities.json";
 import type { PersonaPageData } from "@/lib/use-cases/persona-page-schema";
 
+const supportingCopy = {
+  en: {
+    "Agent Workspace": "The same context stays available across follow-ups, revisions, and recurring work, so the agent can continue from an inspectable project instead of starting over in a new chat.",
+    "Flow Mode": "It is useful when the work becomes clearer through conversation: you can redirect the draft while it is taking shape instead of waiting for a complete first version.",
+    "AI File Organizer": "The organizer handles file preparation as a separate, visible step; people still decide which folders are in scope and verify the proposed structure before relying on it.",
+    "AI Scheduling Assistant": "Calendar time becomes an execution context with the relevant files and expected result attached, while changes and external actions remain reviewable.",
+    FloatIM: "The message thread becomes an entry point to the underlying workspace, so collaborators can see the request, progress, questions, and returned artifact without reconstructing the task elsewhere.",
+    "Skills Marketplace": "A Skill packages a repeatable method and its expected output, giving the team a starting point that can still be inspected, changed, and governed for each project.",
+    "Multiple AI Models": "The model can change with the stage of work while approved files, instructions, prior decisions, and deliverables remain in the same workspace. Users do not need separate provider API keys for officially available models.",
+  },
+  zh: {
+    "Agent 工作站": "后续追问、修改和周期任务可以继续使用同一上下文，让 Agent 从可检查的项目继续工作，而不是每次打开新对话都重新解释背景。",
+    心流模式: "当任务需要通过交流逐渐变清晰时，可以在内容成形过程中持续改向，而不用等到完整初稿生成后再从头修改。",
+    "AI 文件整理器": "文件准备会作为单独且可见的步骤执行；哪些文件夹进入范围、采用什么结构以及最终是否接受，仍由用户确认。",
+    "AI 日程助理": "日历中的时间块会带上相关文件、任务背景与预期成果，日程变化和对外行动仍然保持可检查、可确认。",
+    FloatIM: "消息线程会成为底层工作空间的入口，让协作者直接看到任务、进度、待确认问题和返回成果，不必在其他工具中重新拼接上下文。",
+    "Skills Marketplace": "Skill 会封装可复用的方法和预期输出，为团队提供统一起点，同时允许针对每个项目检查、修改和设置治理边界。",
+    多模型: "工作不同阶段可以切换适合的模型，而核准文件、任务要求、历史决定和交付物仍保留在同一工作空间。官方上架模型无需用户分别准备供应商 API Key。",
+  },
+} as const;
+
 export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData; roleLabel: string }) {
   const isZh = page.locale === "zh";
   const items = capabilities[page.slug][page.locale];
@@ -20,7 +41,10 @@ export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData
         <div className={index % 2 ? "lg:order-2" : ""}>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-muted)]">0{index + 1}</p>
           <h3 className="mt-3 font-serif text-3xl sm:text-4xl">{title}</h3>
-          <p className="mt-5 max-w-xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{isZh ? <>使用 <Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{title}</Link>，{description}</> : <>Use <Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{title}</Link> to {lowerFirst(description)}</>}</p>
+          <div className="mt-5 max-w-xl space-y-3 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
+            <p>{index < 2 ? (isZh ? <>使用 <Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{title}</Link>，{description}</> : <>Use <Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{title}</Link> to {lowerFirst(description)}</>) : description}</p>
+            <p>{supportingCopy[page.locale][title as keyof typeof supportingCopy[typeof page.locale]]}</p>
+          </div>
         </div>
         <div className={`${index % 2 ? "lg:order-1" : ""} rounded-[28px] border border-black/[0.08] bg-[var(--ob-color-surface)] p-5 shadow-[var(--ob-shadow-raised)]`}>
           <div className="rounded-2xl bg-[#24221f] p-5 text-white">
