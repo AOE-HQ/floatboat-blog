@@ -50,27 +50,27 @@
   "burdens": {
     "eyebrow": "The repetitive work around the profession",
     "title": "researchers and insight teams should not spend their best hours rebuilding context.",
-    "description": "Before high-value judgment begins, someone must collect context, normalize formats, trace changes, and prepare a usable work product.",
+    "description": "Research quality erodes when collection outpaces classification, notes lose their sources, and conflicting findings are flattened into a convenient summary.",
     "items": [
       {
         "label": "Context",
         "title": "Source collection outgrows bookmarks",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Search results, papers, reports, datasets, and archived pages quickly exceed what browser tabs and bookmarks can explain."
       },
       {
         "label": "Format",
         "title": "Notes lose their evidence trail",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "A useful observation becomes unreliable when its quotation, page, method, publication date, or retrieval context disappears."
       },
       {
         "label": "Coordination",
         "title": "Conflicting findings need structure",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Studies can disagree because of sample, method, scope, or date; a prose summary often hides those reasons."
       },
       {
         "label": "Continuity",
         "title": "Monitoring work never really ends",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "New publications keep arriving, but few deserve to reopen the evidence matrix or change the current conclusion."
       }
     ]
   },
@@ -224,42 +224,42 @@
   },
   "faq": {
     "title": "AI workspace questions for researchers and insight teams",
-    "description": "The practical questions concern sources, review, privacy, and control—not promises of one-click professional work.",
+    "description": "Researchers need provenance, explicit inclusion rules, and a clear separation between source extraction and interpretation.",
     "items": [
       {
-        "question": "Is Floatboat specialized software for this profession?",
-        "answer": "No. Floatboat is a general-purpose Agent Workspace that helps researchers and insight teams work with approved material and editable deliverables. It does not replace specialist systems or accountable professionals."
+        "question": "Is Floatboat a reference manager or academic database?",
+        "answer": "No. Keep your authoritative databases and citation manager. Floatboat helps turn a selected source set into searchable notes, comparison tables, research briefs, and repeatable monitoring workflows."
       },
       {
-        "question": "Can it make professional decisions?",
-        "answer": "It should not. Use it to organize, compare, extract, and draft; keep interpretation, trade-offs, and consequential decisions with qualified people."
+        "question": "Can it decide which evidence is credible?",
+        "answer": "It can expose methods, dates, samples, claims, and limitations, but the researcher defines inclusion criteria, resolves ambiguity, weighs evidence, and owns the interpretation."
       },
       {
-        "question": "Can we use our own templates and standards?",
-        "answer": "Yes. Configure work around approved templates, terminology, checklists, output formats, and review steps."
+        "question": "Can we define our own review protocol and evidence fields?",
+        "answer": "Yes. Configure the question, databases or source set, date range, inclusion rules, extraction schema, quality checks, and output format for each project."
       },
       {
-        "question": "How do we reduce hallucinations and errors?",
-        "answer": "Keep outputs tied to inspectable sources, preserve open questions, and require people to verify important facts, figures, claims, and conclusions."
+        "question": "How do we prevent fabricated citations or unsupported synthesis?",
+        "answer": "Require every extracted claim to retain its source location, keep unavailable evidence marked as unavailable, and verify citations, quotations, and numerical findings before using the synthesis."
       },
       {
-        "question": "How should sensitive information be handled?",
-        "answer": "Follow organizational policy and applicable obligations, review the data handling of every model, tool, and connector, and grant the narrowest practical access."
+        "question": "Can unpublished or restricted research material be used?",
+        "answer": "Only when permissions, agreements, and organizational policy allow it. Separate restricted projects, limit access, and review how each selected model and connector processes the material."
       },
       {
-        "question": "Will it automatically send messages or publish work?",
-        "answer": "Recommended workflows keep every external send, publication, submission, and consequential action behind explicit human approval."
+        "question": "Will it update a literature review automatically?",
+        "answer": "It can monitor approved sources and draft a dated change brief, but a researcher should decide which new items meet the protocol and whether they alter the review."
       },
       {
-        "question": "What is the best first use case?",
-        "answer": "Choose a repetitive task with a bounded source set and an output that is easy to inspect. Validate quality before saving the workflow or sharing it with a team."
+        "question": "What is a good first research workflow?",
+        "answer": "Choose a small, known corpus and define the extraction fields in advance. Build an evidence matrix, audit it against the originals, and only then expand the source set."
       }
     ]
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
     "title": "Give the repetitive preparation around researchers and insight teams a better workspace.",
-    "description": "Choose a bounded working set, a trusted standard, and a deliverable that a person can review.",
+    "description": "Start with one bounded corpus and an explicit extraction schema. Build a source trail that survives beyond the first summary.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-researchers&download_placement=final_cta"

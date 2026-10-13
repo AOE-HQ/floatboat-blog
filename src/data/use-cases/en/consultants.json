@@ -50,27 +50,27 @@
   "burdens": {
     "eyebrow": "The repetitive work around the profession",
     "title": "consultants and advisory teams should not spend their best hours rebuilding context.",
-    "description": "Before high-value judgment begins, someone must collect context, normalize formats, trace changes, and prepare a usable work product.",
+    "description": "An engagement loses momentum when interview notes, source material, hypotheses, and deck edits stop telling the same story.",
     "items": [
       {
         "label": "Context",
         "title": "Client context changes every week",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "New interviews, documents, and sponsor feedback change the working picture faster than a static brief can capture it."
       },
       {
         "label": "Format",
         "title": "Research is difficult to trace",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Claims get copied into working documents while the original interview, report, or calculation becomes difficult to recover."
       },
       {
         "label": "Coordination",
         "title": "Analysis and slides drift apart",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "The analysis may change after the exhibit is built, leaving recommendations, numbers, and presentation pages out of sync."
       },
       {
         "label": "Continuity",
         "title": "Each engagement repeats setup work",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Every new engagement recreates folder structures, interview guides, research logs, status formats, and review routines."
       }
     ]
   },
@@ -224,42 +224,42 @@
   },
   "faq": {
     "title": "AI workspace questions for consultants and advisory teams",
-    "description": "The practical questions concern sources, review, privacy, and control—not promises of one-click professional work.",
+    "description": "Consulting teams need to preserve source trails, adapt to changing client context, and keep recommendations accountable to the people presenting them.",
     "items": [
       {
-        "question": "Is Floatboat specialized software for this profession?",
-        "answer": "No. Floatboat is a general-purpose Agent Workspace that helps consultants and advisory teams work with approved material and editable deliverables. It does not replace specialist systems or accountable professionals."
+        "question": "Is Floatboat a consulting methodology or project-management system?",
+        "answer": "No. It is a workspace for executing the research, synthesis, drafting, and coordination steps around an engagement. Your team still chooses the methodology, workplan, governance, and system of record."
       },
       {
-        "question": "Can it make professional decisions?",
-        "answer": "It should not. Use it to organize, compare, extract, and draft; keep interpretation, trade-offs, and consequential decisions with qualified people."
+        "question": "Can it produce a client recommendation on its own?",
+        "answer": "It can connect supplied evidence to hypotheses and draft alternatives, but consultants must test assumptions, resolve contradictions, weigh trade-offs, and own the advice presented to a client."
       },
       {
-        "question": "Can we use our own templates and standards?",
-        "answer": "Yes. Configure work around approved templates, terminology, checklists, output formats, and review steps."
+        "question": "Can each engagement use its own templates and terminology?",
+        "answer": "Yes. A workspace can begin from the client brief, interview guide, issue tree, exhibit conventions, and review cadence selected for that engagement."
       },
       {
-        "question": "How do we reduce hallucinations and errors?",
-        "answer": "Keep outputs tied to inspectable sources, preserve open questions, and require people to verify important facts, figures, claims, and conclusions."
+        "question": "How do we keep a recommendation tied to evidence?",
+        "answer": "Maintain source links beside claims, distinguish client statements from external evidence, expose unresolved assumptions, and have the workstream owner verify every number and conclusion before it reaches a deck."
       },
       {
-        "question": "How should sensitive information be handled?",
-        "answer": "Follow organizational policy and applicable obligations, review the data handling of every model, tool, and connector, and grant the narrowest practical access."
+        "question": "How should confidential client material be handled?",
+        "answer": "Follow the engagement's confidentiality terms and firm policy, separate workspaces where appropriate, grant only necessary access, and review the data handling of every selected model, tool, and connector."
       },
       {
-        "question": "Will it automatically send messages or publish work?",
-        "answer": "Recommended workflows keep every external send, publication, submission, and consequential action behind explicit human approval."
+        "question": "Will drafts go directly to the client?",
+        "answer": "Not in the recommended setup. Workshop packs, executive summaries, emails, and decks remain editable drafts until the engagement team approves the evidence, language, recipients, and release."
       },
       {
-        "question": "What is the best first use case?",
-        "answer": "Choose a repetitive task with a bounded source set and an output that is easy to inspect. Validate quality before saving the workflow or sharing it with a team."
+        "question": "Where should a consulting team start?",
+        "answer": "Use one completed discovery cycle: provide approved interview notes and background documents, generate a source-linked working brief, and compare it with what the team would normally prepare by hand."
       }
     ]
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
     "title": "Give the repetitive preparation around consultants and advisory teams a better workspace.",
-    "description": "Choose a bounded working set, a trusted standard, and a deliverable that a person can review.",
+    "description": "Start with one engagement question, its approved evidence, and the next client deliverable. Keep the source trail visible while the recommendation takes shape.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-consultants&download_placement=final_cta"

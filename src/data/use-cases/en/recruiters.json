@@ -50,27 +50,27 @@
   "burdens": {
     "eyebrow": "The repetitive work around the profession",
     "title": "recruiters and talent teams should not spend their best hours rebuilding context.",
-    "description": "Before high-value judgment begins, someone must collect context, normalize formats, trace changes, and prepare a usable work product.",
+    "description": "Hiring slows down when the role, evidence, interview criteria, and candidate communication are rebuilt by different people at every stage.",
     "items": [
       {
         "label": "Context",
         "title": "Job requirements begin ambiguous",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "A job title can hide conflicting expectations about outcomes, seniority, constraints, and what success should look like."
       },
       {
         "label": "Format",
         "title": "Candidate context is repeatedly reconstructed",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Recruiters and interviewers repeatedly turn résumés, notes, portfolios, and correspondence into their own partial summaries."
       },
       {
         "label": "Coordination",
         "title": "Interview evidence arrives in different formats",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Scorecards, free-form notes, and delayed feedback make it difficult to compare evidence against the agreed role criteria."
       },
       {
         "label": "Continuity",
         "title": "Status communication consumes focus",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Scheduling changes, interviewer reminders, candidate updates, and debrief follow-ups compete with actual recruiting judgment."
       }
     ]
   },
@@ -224,42 +224,42 @@
   },
   "faq": {
     "title": "AI workspace questions for recruiters and talent teams",
-    "description": "The practical questions concern sources, review, privacy, and control—not promises of one-click professional work.",
+    "description": "Recruiting automation must improve preparation without turning incomplete evidence into a hiring decision or weakening candidate privacy.",
     "items": [
       {
-        "question": "Is Floatboat specialized software for this profession?",
-        "answer": "No. Floatboat is a general-purpose Agent Workspace that helps recruiters and talent teams work with approved material and editable deliverables. It does not replace specialist systems or accountable professionals."
+        "question": "Is Floatboat an ATS or candidate-ranking system?",
+        "answer": "No. Your ATS remains the hiring system of record. Floatboat helps prepare role briefs, interview materials, evidence summaries, and communication drafts around the information your team is permitted to use."
       },
       {
-        "question": "Can it make professional decisions?",
-        "answer": "It should not. Use it to organize, compare, extract, and draft; keep interpretation, trade-offs, and consequential decisions with qualified people."
+        "question": "Can it screen out or rank candidates automatically?",
+        "answer": "That is not the intended workflow. It can organize job-related evidence against approved criteria, but recruiters and hiring managers must evaluate people, investigate gaps, and make employment decisions."
       },
       {
-        "question": "Can we use our own templates and standards?",
-        "answer": "Yes. Configure work around approved templates, terminology, checklists, output formats, and review steps."
+        "question": "Can it use our role brief and interview scorecard?",
+        "answer": "Yes. Define outcomes, required evidence, legal constraints, question areas, and the scorecard format before candidate preparation begins."
       },
       {
-        "question": "How do we reduce hallucinations and errors?",
-        "answer": "Keep outputs tied to inspectable sources, preserve open questions, and require people to verify important facts, figures, claims, and conclusions."
+        "question": "How do we prevent invented candidate claims?",
+        "answer": "Limit summaries to candidate-provided or approved sources, preserve links to the original evidence, label missing information as unknown, and require a recruiter to verify every claim used in an interview brief."
       },
       {
-        "question": "How should sensitive information be handled?",
-        "answer": "Follow organizational policy and applicable obligations, review the data handling of every model, tool, and connector, and grant the narrowest practical access."
+        "question": "What candidate information belongs in the workspace?",
+        "answer": "Only job-relevant information that policy and applicable law permit the team to process. Avoid unnecessary sensitive attributes, keep access narrow, and review the data practices of each model and connector."
       },
       {
-        "question": "Will it automatically send messages or publish work?",
-        "answer": "Recommended workflows keep every external send, publication, submission, and consequential action behind explicit human approval."
+        "question": "Can it contact candidates or schedule interviews without review?",
+        "answer": "It can prepare messages and scheduling options, but a responsible recruiter should confirm recipients, availability, wording, and stage before any candidate-facing action."
       },
       {
-        "question": "What is the best first use case?",
-        "answer": "Choose a repetitive task with a bounded source set and an output that is easy to inspect. Validate quality before saving the workflow or sharing it with a team."
+        "question": "What is the safest first recruiting workflow?",
+        "answer": "Start with an approved role brief and scorecard, then generate an interviewer packet for one candidate. Check every statement against the source material before deciding whether to reuse the process."
       }
     ]
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
     "title": "Give the repetitive preparation around recruiters and talent teams a better workspace.",
-    "description": "Choose a bounded working set, a trusted standard, and a deliverable that a person can review.",
+    "description": "Begin with one approved role brief and a structured interview packet. Reduce preparation time without handing candidate judgment to the system.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-recruiters&download_placement=final_cta"

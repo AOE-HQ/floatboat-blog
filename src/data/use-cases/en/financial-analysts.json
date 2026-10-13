@@ -50,27 +50,27 @@
   "burdens": {
     "eyebrow": "The repetitive work around the profession",
     "title": "financial analysts and finance teams should not spend their best hours rebuilding context.",
-    "description": "Before high-value judgment begins, someone must collect context, normalize formats, trace changes, and prepare a usable work product.",
+    "description": "Financial analysis breaks down when updated numbers, operating explanations, model assumptions, and management commentary no longer reconcile to the same period and source.",
     "items": [
       {
         "label": "Context",
         "title": "Numbers and narrative live apart",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "A workbook may show the movement while filings, transcripts, emails, and operating notes contain the explanation."
       },
       {
         "label": "Format",
         "title": "Source updates trigger repetitive work",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Each new filing, forecast, close, or market update triggers another round of extraction, normalization, and commentary."
       },
       {
         "label": "Coordination",
         "title": "Assumptions disappear inside models",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Inputs change across tabs and versions, while the reason, owner, date, and downstream effect of the change are easy to lose."
       },
       {
         "label": "Continuity",
         "title": "Recurring reports restart from old copies",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Monthly and weekly reviews are often rebuilt from copied files instead of a controlled trail of sources, assumptions, and changes."
       }
     ]
   },
@@ -224,42 +224,42 @@
   },
   "faq": {
     "title": "AI workspace questions for financial analysts and finance teams",
-    "description": "The practical questions concern sources, review, privacy, and control—not promises of one-click professional work.",
+    "description": "Finance teams need number-level provenance, visible assumptions, period consistency, and clear ownership of every financial conclusion.",
     "items": [
       {
-        "question": "Is Floatboat specialized software for this profession?",
-        "answer": "No. Floatboat is a general-purpose Agent Workspace that helps financial analysts and finance teams work with approved material and editable deliverables. It does not replace specialist systems or accountable professionals."
+        "question": "Is Floatboat a financial model, ERP, or market-data terminal?",
+        "answer": "No. Those systems remain the sources of record and calculation. Floatboat helps analysts organize approved extracts, filings, transcripts, assumptions, and commentary into reviewable work products."
       },
       {
-        "question": "Can it make professional decisions?",
-        "answer": "It should not. Use it to organize, compare, extract, and draft; keep interpretation, trade-offs, and consequential decisions with qualified people."
+        "question": "Can it make an investment or financial recommendation?",
+        "answer": "It can prepare evidence, changes, scenarios, and questions, but analysts remain responsible for materiality, valuation, forecasts, recommendations, and any decision based on them."
       },
       {
-        "question": "Can we use our own templates and standards?",
-        "answer": "Yes. Configure work around approved templates, terminology, checklists, output formats, and review steps."
+        "question": "Can it follow our chart of accounts, KPI definitions, or research template?",
+        "answer": "Yes. Supply the approved metric definitions, periods, sign conventions, reporting structure, assumption register, and review format before analysis begins."
       },
       {
-        "question": "How do we reduce hallucinations and errors?",
-        "answer": "Keep outputs tied to inspectable sources, preserve open questions, and require people to verify important facts, figures, claims, and conclusions."
+        "question": "How do we keep numbers from being mixed across periods or units?",
+        "answer": "Carry source, period, currency, unit, and calculation status with each figure; reject silent gaps; and reconcile all numbers to the source system or approved model before using the commentary."
       },
       {
-        "question": "How should sensitive information be handled?",
-        "answer": "Follow organizational policy and applicable obligations, review the data handling of every model, tool, and connector, and grant the narrowest practical access."
+        "question": "How should confidential financial data be handled?",
+        "answer": "Use only data permitted by company policy and applicable obligations, restrict each workspace to necessary files, and review the processing and retention behavior of every model and connector."
       },
       {
-        "question": "Will it automatically send messages or publish work?",
-        "answer": "Recommended workflows keep every external send, publication, submission, and consequential action behind explicit human approval."
+        "question": "Will it publish a report or update a model automatically?",
+        "answer": "Not in the recommended workflow. Draft commentary, watchlist updates, and proposed changes remain pending until an analyst validates the figures and approves the destination."
       },
       {
-        "question": "What is the best first use case?",
-        "answer": "Choose a repetitive task with a bounded source set and an output that is easy to inspect. Validate quality before saving the workflow or sharing it with a team."
+        "question": "What is a practical first finance workflow?",
+        "answer": "Take one completed reporting period, provide the approved actuals, plan, definitions, and operating notes, then compare the generated variance table and commentary with the signed-off version."
       }
     ]
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
     "title": "Give the repetitive preparation around financial analysts and finance teams a better workspace.",
-    "description": "Choose a bounded working set, a trusted standard, and a deliverable that a person can review.",
+    "description": "Start with one closed period or one researched company. Keep every figure tied to its source, unit, date, and assumption before reusing the workflow.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-financial-analysts&download_placement=final_cta"

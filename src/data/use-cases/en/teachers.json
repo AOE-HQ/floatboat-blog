@@ -50,27 +50,27 @@
   "burdens": {
     "eyebrow": "The repetitive work around the profession",
     "title": "teachers and education teams should not spend their best hours rebuilding context.",
-    "description": "Before high-value judgment begins, someone must collect context, normalize formats, trace changes, and prepare a usable work product.",
+    "description": "A lesson rarely begins with a blank page. Teachers first reconcile curriculum goals, old materials, class needs, school formats, and the practical limits of the timetable.",
     "items": [
       {
         "label": "Context",
         "title": "Resources live in too many places",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Readings, slides, worksheets, shared-drive folders, and last year's plans rarely arrive as one coherent teaching set."
       },
       {
         "label": "Format",
         "title": "One lesson becomes five formats",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "A single idea may need a lesson outline, slide sequence, student handout, activity sheet, and notes for another teacher."
       },
       {
         "label": "Coordination",
         "title": "Routine messages interrupt preparation",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Notices, reminders, meeting notes, and family updates compete with the uninterrupted time needed to plan and teach."
       },
       {
         "label": "Continuity",
         "title": "Career evidence is rebuilt at deadline",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Observations, training records, classroom examples, and outcomes are often scattered until an appraisal or promotion deadline arrives."
       }
     ]
   },
@@ -224,42 +224,42 @@
   },
   "faq": {
     "title": "AI workspace questions for teachers and education teams",
-    "description": "The practical questions concern sources, review, privacy, and control—not promises of one-click professional work.",
+    "description": "Teachers need to know whether an AI workspace fits lesson preparation, protects student context, and keeps classroom decisions with educators.",
     "items": [
       {
-        "question": "Is Floatboat specialized software for this profession?",
-        "answer": "No. Floatboat is a general-purpose Agent Workspace that helps teachers and education teams work with approved material and editable deliverables. It does not replace specialist systems or accountable professionals."
+        "question": "Is Floatboat a learning management system or an AI lesson planner?",
+        "answer": "Neither. It is an Agent Workspace for assembling files, instructions, models, and tools around a teaching task. Your LMS remains the system for classes and records; Floatboat helps prepare the editable work that goes into it."
       },
       {
-        "question": "Can it make professional decisions?",
-        "answer": "It should not. Use it to organize, compare, extract, and draft; keep interpretation, trade-offs, and consequential decisions with qualified people."
+        "question": "Can it decide what or how I should teach?",
+        "answer": "No. It can prepare options from your curriculum, sources, and format, but the teacher decides accuracy, sequence, differentiation, accessibility, and what is appropriate for a particular class."
       },
       {
-        "question": "Can we use our own templates and standards?",
-        "answer": "Yes. Configure work around approved templates, terminology, checklists, output formats, and review steps."
+        "question": "Can it follow our curriculum and school templates?",
+        "answer": "Yes. Add the relevant goals, rubric, lesson format, terminology, and approved sources to the workspace so drafts begin from your actual constraints rather than a generic lesson pattern."
       },
       {
-        "question": "How do we reduce hallucinations and errors?",
-        "answer": "Keep outputs tied to inspectable sources, preserve open questions, and require people to verify important facts, figures, claims, and conclusions."
+        "question": "How should teachers check AI-generated lesson material?",
+        "answer": "Review factual claims against the assigned sources, check examples and reading level, test instructions from a student's perspective, and keep uncertain material visibly flagged instead of letting it pass into slides or handouts."
       },
       {
-        "question": "How should sensitive information be handled?",
-        "answer": "Follow organizational policy and applicable obligations, review the data handling of every model, tool, and connector, and grant the narrowest practical access."
+        "question": "Should student names, grades, or support needs go into a workspace?",
+        "answer": "Only when school policy and the selected tools permit it. Prefer de-identified or minimum-necessary information, restrict access, and examine how every model and connector handles the data before adding student records."
       },
       {
-        "question": "Will it automatically send messages or publish work?",
-        "answer": "Recommended workflows keep every external send, publication, submission, and consequential action behind explicit human approval."
+        "question": "Can it send family or class communications automatically?",
+        "answer": "It can help prepare audience-specific drafts, but a teacher or authorized school colleague should confirm the facts, tone, recipients, and timing before anything is sent."
       },
       {
-        "question": "What is the best first use case?",
-        "answer": "Choose a repetitive task with a bounded source set and an output that is easy to inspect. Validate quality before saving the workflow or sharing it with a team."
+        "question": "What is a sensible first workflow for a teacher?",
+        "answer": "Start with one upcoming unit and a known set of curriculum goals and sources. Ask for a lesson outline plus one editable classroom asset, review the result, then save only the steps that genuinely reduce preparation time."
       }
     ]
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
     "title": "Give the repetitive preparation around teachers and education teams a better workspace.",
-    "description": "Choose a bounded working set, a trusted standard, and a deliverable that a person can review.",
+    "description": "Bring one upcoming unit, the sources you trust, and the format your school expects. Turn them into a lesson pack you can still teach in your own way.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-teachers&download_placement=final_cta"

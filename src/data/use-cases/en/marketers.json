@@ -50,27 +50,27 @@
   "burdens": {
     "eyebrow": "The repetitive work around the profession",
     "title": "marketers and growth teams should not spend their best hours rebuilding context.",
-    "description": "Before high-value judgment begins, someone must collect context, normalize formats, trace changes, and prepare a usable work product.",
+    "description": "Marketing work fragments when audience evidence, approved claims, channel drafts, review feedback, and performance data live in separate production loops.",
     "items": [
       {
         "label": "Context",
         "title": "Audience evidence is separated from creative work",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Interview notes, search behavior, sales calls, support themes, and analytics rarely travel with the creative brief they should inform."
       },
       {
         "label": "Format",
         "title": "Every channel needs a new format",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "A campaign idea must become email, social, landing-page, sales, and regional variants without losing the approved message."
       },
       {
         "label": "Coordination",
         "title": "Review feedback is hard to reconcile",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Product, legal, brand, regional, and channel feedback arrives in different places and often refers to different draft versions."
       },
       {
         "label": "Continuity",
         "title": "Performance reporting repeats every cycle",
-        "description": "Turn this step into structured, inspectable preparation so the team spends less time repeating work or recovering missing context."
+        "description": "Data is exported again, campaign context is reconstructed, and the original hypothesis gets separated from the final results."
       }
     ]
   },
@@ -224,42 +224,42 @@
   },
   "faq": {
     "title": "AI workspace questions for marketers and growth teams",
-    "description": "The practical questions concern sources, review, privacy, and control—not promises of one-click professional work.",
+    "description": "Marketing teams need to scale adaptation without inventing claims, losing approvals, confusing attribution, or flattening every channel into the same copy.",
     "items": [
       {
-        "question": "Is Floatboat specialized software for this profession?",
-        "answer": "No. Floatboat is a general-purpose Agent Workspace that helps marketers and growth teams work with approved material and editable deliverables. It does not replace specialist systems or accountable professionals."
+        "question": "Is Floatboat a marketing automation or publishing platform?",
+        "answer": "No. Your CRM, analytics, ad, email, and CMS tools remain the systems of record and distribution. Floatboat helps prepare the research, briefs, variants, and review artifacts that move between them."
       },
       {
-        "question": "Can it make professional decisions?",
-        "answer": "It should not. Use it to organize, compare, extract, and draft; keep interpretation, trade-offs, and consequential decisions with qualified people."
+        "question": "Can it choose positioning or launch a campaign on its own?",
+        "answer": "It can organize evidence and draft strategic options, but marketing owners decide the audience, positioning, claims, budget, channel mix, and publication plan."
       },
       {
-        "question": "Can we use our own templates and standards?",
-        "answer": "Yes. Configure work around approved templates, terminology, checklists, output formats, and review steps."
+        "question": "Can it follow our brand voice and approved claims?",
+        "answer": "Yes. Supply the current message house, style rules, claim evidence, prohibited language, channel requirements, and approval path for the campaign."
       },
       {
-        "question": "How do we reduce hallucinations and errors?",
-        "answer": "Keep outputs tied to inspectable sources, preserve open questions, and require people to verify important facts, figures, claims, and conclusions."
+        "question": "How do we stop AI from inventing product claims?",
+        "answer": "Restrict drafting to approved product sources and claim libraries, require evidence beside factual assertions, flag unsupported language, and keep product or legal review where the campaign requires it."
       },
       {
-        "question": "How should sensitive information be handled?",
-        "answer": "Follow organizational policy and applicable obligations, review the data handling of every model, tool, and connector, and grant the narrowest practical access."
+        "question": "Can customer research or campaign data be used?",
+        "answer": "Only when consent, contracts, policy, and applicable privacy rules permit it. Prefer aggregated or de-identified inputs and check how every selected model and connector handles the data."
       },
       {
-        "question": "Will it automatically send messages or publish work?",
-        "answer": "Recommended workflows keep every external send, publication, submission, and consequential action behind explicit human approval."
+        "question": "Will it publish channel variants automatically?",
+        "answer": "The recommended workflow keeps every asset as an editable draft until the appropriate owner approves the claim, creative, audience, destination, and timing."
       },
       {
-        "question": "What is the best first use case?",
-        "answer": "Choose a repetitive task with a bounded source set and an output that is easy to inspect. Validate quality before saving the workflow or sharing it with a team."
+        "question": "What is a useful first marketing workflow?",
+        "answer": "Take one approved campaign brief and source asset, generate two channel-specific drafts, and review message fidelity and channel fit before expanding the workflow."
       }
     ]
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
     "title": "Give the repetitive preparation around marketers and growth teams a better workspace.",
-    "description": "Choose a bounded working set, a trusted standard, and a deliverable that a person can review.",
+    "description": "Start with one approved brief and one source asset. Adapt it to the channels that matter while keeping claims, feedback, and performance questions traceable.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-marketers&download_placement=final_cta"
