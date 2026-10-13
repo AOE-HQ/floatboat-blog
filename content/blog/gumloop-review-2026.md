@@ -1,6 +1,6 @@
 ---
 title: "Gumloop Review 2026: Powerful, But Is It Right for You?"
-description: "Gumloop can automate complex workflows — but who actually gets the most out of it? Here's an honest look at what it does well, where it falls short, and who it's really built for."
+description: "A 2026 Gumloop review of flows versus agents, runtime identity and permissions, current cost structure, run visibility, failure recovery, and a reproducible adoption pilot."
 slug: "gumloop-review-2026"
 date: "2026-03-23"
 author: "Nova"
@@ -14,11 +14,11 @@ Gumloop is best understood as a visual operations layer for repeatable, multi-st
 
 The short verdict: **Gumloop is a strong candidate when a team can describe the inputs, decisions, side effects, and acceptable outputs of a recurring process.** It is a weaker fit for one-off work, loosely defined “AI employee” ambitions, or automations whose risk cannot be bounded. This review provides a reproducible way to decide, not a universal score.
 
-> **Review basis, checked October 10, 2026:** Gumloop's product documentation, current pricing announcement, and support documentation. Features and billing can vary by plan; confirm the controls in your workspace before production use.
+> **Information checked October 13, 2026:** This review uses Gumloop's official product documentation, pricing announcement, and support documentation. Features and billing can vary by plan; confirm the controls in your workspace before production use.
 
 ## What Gumloop is in 2026
 
-Gumloop's basic unit is a **flow**: connected nodes that receive inputs, apply parameters, and produce outputs. The official [Gumloop documentation](https://docs.gumloop.com/nodes/data_writers/csv_to_xlsx) describes data loaders, AI processors, text and list operations, flow controls, and integration nodes. A flow can start from a schedule, email, Slack message, webhook, or another supported trigger. Subflows contain reusable logic; interfaces let other people run a flow without seeing its canvas.
+Gumloop has two execution models. In a **flow**, connected nodes receive inputs, apply parameters, and pass outputs along an explicit path; Gumloop's official [flow tutorial](https://www.gumloop.com/blog/notion-chatgpt-integration) also documents reusable subflows. In an **agent**, the model selects among permitted tools while working toward a goal, as described in the current [Agents guide](https://docs.gumloop.com/core-concepts/agents). Current [trigger documentation](https://docs.gumloop.com/core-concepts/agent_triggers) covers scheduled, webhook, app-event, and one-time starts. Because the old Interface documentation now redirects to Hosted Pages, this review does not assume that the legacy feature remains available under the same name or plan.
 
 Agents add a different execution model. A fixed flow says which step follows which. An agent chooses among enabled tools at runtime. Gumloop can also place an Agent Node inside a deterministic workflow. That hybrid matters: predictable parts remain explicit, while a bounded agent handles the step that genuinely requires interpretation.
 
@@ -44,6 +44,8 @@ Templates are scaffolding, not production proof. Rename nodes by business purpos
 Gumloop documents integrations for Google Workspace, Slack, Salesforce, Airtable, GitHub, Outlook, and other systems. Connector count is a poor evaluation metric: one connector may expose a narrow read action, while another can modify a large data surface. Evaluate the exact operation you need.
 
 For every connection, record the authentication method, requested scopes, readable and writable resources, credential owner, reuse permissions, offboarding behavior, and rotation procedure. Gumloop's [MCP documentation](https://docs.gumloop.com/nodes/mcp/gamma) shows that teams can enable or disable individual tools for an agent. Use that granularity. A research agent that only retrieves a presentation should not also receive creation tools; an email workflow should save drafts during its pilot before it can send.
+
+Trigger choice can also change which identity and credential set a run uses. Gumloop's current [team rollout guidance](https://support.gumloop.com/articles/4970577938-how-do-i-roll-out-an-agent-to-my-whole-team-or-company) distinguishes direct Slack mentions that can run under the message author's identity from channel triggers that run under the trigger owner's identity. Treat that as an access-control decision, not a user-interface detail, and verify the behavior for every delivery channel you enable.
 
 Workspace collaboration improves shared ownership, but shared assets also widen the blast radius of a bad configuration. Treat flows, agents, connections, and templates as production assets. Separate builders from approvers where a workflow can publish, pay, delete, or contact customers.
 

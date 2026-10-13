@@ -1492,35 +1492,35 @@
       "items": [
         {
           "question": "Does a browser AI agent need my password to act as me?",
-          "answer": "Not necessarily. If the agent operates inside a browser profile with authenticated sessions, the session already carries your authority. Use a separate profile, avoid logging it into password managers, banking, identity administration, production cloud, payroll, or payment systems, and grant only the sites required for the task."
+          "answer": "No. An authenticated browser session can already carry your authority, so session access must be treated as a credential."
         },
         {
-          "question": "Which browser extension permissions should I review?",
-          "answer": "Review host and optional host permissions, tab access, content-script matches, cookies, downloads, history, debugger access, native messaging, clipboard or file access, and whether grants are permanent or requested per site, session, or action. The effective browser profile and its existing logins matter as much as the manifest."
+          "question": "What browser-agent permissions should I check?",
+          "answer": "Check site scope, tab and host access, cookies, downloads, history, clipboard, local files, debugger access, and native messaging."
         },
         {
-          "question": "Does turning off memory or using incognito protect my data?",
-          "answer": "Those controls address different layers. Memory settings may limit cross-session personalization without eliminating cloud processing or required logs. Incognito can isolate local browser history without changing what an agent provider receives. Ask separately about page context, stored runs, memory, audit logs, retention, training, deletion, and subprocessors."
+          "question": "How can I reduce browser-agent access?",
+          "answer": "Use a dedicated profile, per-site or runtime grants, least-privileged accounts, and no banking, payroll, identity-admin, or production-cloud sessions."
         },
         {
-          "question": "What is indirect prompt injection in a browser agent?",
-          "answer": "It occurs when instructions embedded in a webpage, email, document, image, ticket, or tool output redirect the agent away from the user's goal. OWASP calls prompt injection LLM01, while NIST also describes this pattern as agent hijacking. Defenses must constrain permissions and consequences even if detection fails."
+          "question": "What is indirect prompt injection?",
+          "answer": "It is untrusted page, email, file, image, or tool content that tries to redirect the agent away from the user’s goal."
         },
         {
-          "question": "How should I test a browser AI agent for prompt injection?",
-          "answer": "Use a mock page, email, document, or image containing an instruction to abandon the task, reveal a harmless canary, open an unrelated site, or send a draft. A secure run should surface the conflict, preserve the user's goal, avoid the unauthorized action, and log the event. Repeat after meaningful model, extension, browser, or policy updates."
+          "question": "Which browser-agent actions need human approval?",
+          "answer": "Sending, publishing, purchasing, deleting, changing permissions, deploying, and other high-consequence actions should require confirmation at the final step."
         },
         {
-          "question": "Which browser-agent actions always need human confirmation?",
-          "answer": "Require fresh final-step confirmation for sending, publishing, purchasing, deleting, changing permissions, deploying, moving sensitive data, or making legal, financial, employment, healthcare, or customer commitments. The confirmation should show the exact target, content, amount, record, or permission change."
+          "question": "What should a browser-agent audit trail record?",
+          "answer": "Record the user, policy, model, version, goal, sources, pages, tool calls, approvals, data movement, errors, timestamps, and final state."
         },
         {
-          "question": "What logs should a browser AI agent provide?",
-          "answer": "Logs should identify the user, agent and configuration versions, goal, input sources, pages visited, tools called, permission grants, confirmations, cross-application data movement, errors, retries, final state, timestamps, and a stable run ID. Administrators also need export, stop, credential-revocation, and recovery paths."
+          "question": "How should a company pilot a browser agent?",
+          "answer": "Start with read-only low-risk tasks in a dedicated profile, run injection tests, verify stop and recovery paths, then expand one permission at a time."
         },
         {
-          "question": "What evidence should an enterprise request from a browser-agent vendor?",
-          "answer": "Request architecture and data-flow diagrams, exact extension permissions, prompt-injection evaluations, confirmation policy, tenant and identity controls, retention and deletion terms, subprocessors, administrator logs, vulnerability and incident processes, update controls, independent assurance with scope, and a tested kill switch and recovery procedure."
+          "question": "What security evidence should an enterprise request?",
+          "answer": "Request data-flow and subprocessor details, retention and training terms, permission documentation, security assessments, incident procedures, and exportable run records."
         }
       ]
     },
@@ -1727,28 +1727,36 @@
     "/blog/claude-managed-agents-one-person-company": {
       "items": [
         {
-          "question": "Is Claude Managed Agents actually useful for a one-person business?",
-          "answer": "It depends on what you're trying to automate. Managed Agents is most valuable for long-horizon, multi-step tasks — synthesizing research across twenty sources, extracting structured data from documents, or producing a polished draft from a brief — where the agent can run for hours without you at each handoff. For a repeatable personal workflow where you'd rather avoid API integrations and YAML configs, the article suggests starting with Combo Skills instead."
+          "question": "What are Claude Managed Agents?",
+          "answer": "They are Anthropic-hosted infrastructure for durable agent sessions, controlled tools, and observable execution."
         },
         {
-          "question": "How is it different from how I normally use Claude?",
-          "answer": "Normal Claude use ends when the conversation ends: you prompt, it answers, and there's no persistent state. Managed Agents is a managed infrastructure layer — Anthropic handles sandboxing, long-running sessions, scoped permissions, tool execution, and observability. You define the task and guardrails, and the agent executes, potentially for hours, without you watching. The difference isn't smarter responses; it's who manages the execution environment. Billing reflects that: standard token rates plus $0.08 per session-hour of active runtime, with no flat monthly fee."
+          "question": "Is a Managed Agent just Claude chat running for longer?",
+          "answer": "No. It is a runtime and building layer for operating agents, not simply a longer chat mode."
         },
         {
-          "question": "Do I still need to write prompts or know how to code?",
-          "answer": "Someone still has to define what the agent does and how it should behave, but you don't manage the infrastructure yourself. You can describe an agent in natural language or configure it via a YAML file, so prompting skill mostly becomes agent-design skill. That said, working inside a platform API adds overhead that isn't worth it for simple automations, and multi-agent coordination still requires separate access while it's in research preview."
+          "question": "Does a one-person company need Managed Agents?",
+          "answer": "Only when a recurring workflow needs a service boundary, durable sessions, controlled tools, and operational visibility."
         },
         {
-          "question": "Is it safe to use for business?",
-          "answer": "For most solo operators running standard token-based access without sensitive credentials attached to agents, the risk is manageable with reasonable scope controls. If production credentials, customer data, or financial access are involved, be deliberate: grant the minimum permissions a task needs, review what agents do in session logs, and remember that session data lives on Anthropic's infrastructure. Indirect prompt injection — hidden instructions inside content an agent reads — is the most relevant threat to design against."
+          "question": "What infrastructure can Managed Agents replace?",
+          "answer": "They may reduce work around sandboxes, session recovery, credential handling, and traces, but not process design or human review."
         },
         {
-          "question": "Are Managed Agents fully autonomous?",
-          "answer": "Not exactly. Managed Agents is designed as a \"meta-harness\": a stable infrastructure where different agent harnesses, from Claude Code to task-specific agents, can run. Execution is autonomous in the sense that the agent doesn't need you to supervise each step, but you define the task, tools, and guardrails up front — so human judgment at the design layer still matters."
+          "question": "Which actions should remain human-approved?",
+          "answer": "Messages, purchases, deletions, production changes, and other consequential external actions should require approval."
         },
         {
-          "question": "Managed Agents or Combo Skills — which should a solo operator choose?",
-          "answer": "They serve different points on the same journey rather than competing. Combo Skills — repeatable multi-step workflows composed inside an AI workspace — are usually where a solo operator starts, because there's no API or YAML management. Managed Agents is the fit when you need reliable, reproducible, production-grade execution, such as shipping agent features into a product other people use. It's not either/or — you can move from one to the other as your needs evolve."
+          "question": "How should a solo operator pilot Managed Agents?",
+          "answer": "Start with one reversible workflow, low-sensitivity data, minimal tool permissions, logging, and explicit failure tests."
+        },
+        {
+          "question": "How should I estimate Managed Agent cost?",
+          "answer": "Include model usage, runtime, retries, storage, monitoring, and the time required to investigate failures."
+        },
+        {
+          "question": "Should I use a Managed Agent or an AI workspace?",
+          "answer": "Use a workspace for supervised, judgment-heavy work and consider a managed runtime for service-like, repeatable execution."
         }
       ]
     },
@@ -2143,28 +2151,36 @@
     "/blog/effort-control-fast-mode-ai-work": {
       "items": [
         {
-          "question": "Should I always pick the highest effort setting?",
-          "answer": "No — and that instinct is exactly what this article pushes back on. On simple sorting, tagging, or drafting, max or extra effort doesn't make the output meaningfully better; it just makes you wait longer and burns your rate limit. Higher effort pays off only where being slightly wrong carries a real downstream cost. The discipline is judging when more thinking helps, not defaulting to \"more is better\" on everything."
+          "question": "What is AI effort control?",
+          "answer": "It adjusts how much reasoning a supported model applies, trading thoroughness against latency and token use."
         },
         {
-          "question": "What is Effort Control in Claude?",
-          "answer": "It's a selector next to the model picker on claude.ai and Cowork that controls how much thinking Claude puts into a response. Higher levels make the model think more frequently and deeply — better answers, more tokens. Lower levels respond faster and consume your rate limits more slowly. The levels run from low through high (the default), extra, and max. The author's impressions come from real sessions, not benchmarks."
+          "question": "Is Fast Mode the same as lower effort?",
+          "answer": "No. Effort changes reasoning depth; Fast Mode changes serving speed on supported models, usually at premium pricing."
         },
         {
-          "question": "How is Effort Control different from Fast Mode?",
-          "answer": "Effort Control is a thinking knob; Fast Mode is a speed knob. Effort picks how carefully Claude reasons on a response. Fast Mode is a separate speed setting that can return up to 2.5x more output tokens per second from the same model at premium pricing — currently a research preview on the API and in Claude Code. The two combine: the author's go-to configuration for repetitive work is Fast Mode plus low effort."
+          "question": "Which tasks should use low effort?",
+          "answer": "Extraction, formatting, classification, and other reversible tasks with deterministic checks are good starting points."
         },
         {
-          "question": "When is higher effort actually worth it?",
-          "answer": "When the cost of almost-right is higher than the cost of waiting. The article names three situations: decisions you'd hesitate to walk back — pricing, positioning, a difficult client email; review-heavy work where you want the model to read carefully and push back; and long-context synthesis where the whole document has to hold together. In practice, extra has delivered the author's biggest quality jump; max feels more situational."
+          "question": "When should I increase effort?",
+          "answer": "Increase it for competing constraints, difficult diagnosis, long plans, or costly mistakes after a lower setting fails a named acceptance criterion."
         },
         {
-          "question": "When should I reach for Fast Mode or lower effort instead?",
-          "answer": "For low-stakes, repetitive work — drafting, sorting links, tagging notes, summarizing, first-pass outlines you'll rewrite anyway. Lower effort is genuinely fine there, and Fast Mode removes the latency that makes a sequence of small tasks feel like waiting rooms. One caveat: switching into Fast Mode mid-conversation means paying full uncached input pricing on the whole context, so decide at the start of a session."
+          "question": "When is Fast Mode worth the premium?",
+          "answer": "Use it when waiting blocks a person or dependent step and the saved time has measurable value."
         },
         {
-          "question": "Can effort settings replace human review?",
-          "answer": "No — and be wary of anyone who claims otherwise. Higher effort makes Claude more likely to catch its own mistakes and push back on flawed reasoning, but \"more likely\" isn't \"always\". For anything touching money, legal exposure, client commitments, or published work, the author still reviews the output. Effort Control improves the quality of the first draft; it doesn't remove the need for the last pass."
+          "question": "Should important work always use maximum effort?",
+          "answer": "No. Importance and reasoning difficulty differ; maximum effort can add cost without improving accepted output."
+        },
+        {
+          "question": "How do I test effort levels fairly?",
+          "answer": "Run representative tasks at standard speed, score accepted results and reviewer time, then test Fast Mode on the winning effort level."
+        },
+        {
+          "question": "What should I measure besides latency?",
+          "answer": "Measure total time to acceptance, cost, corrections, constraint failures, reviewer minutes, and whether the output was used."
         }
       ]
     },
@@ -2415,28 +2431,36 @@
     "/blog/genspark-vs-manus": {
       "items": [
         {
-          "question": "What is the real difference between Genspark and Manus?",
-          "answer": "It comes down to how much you stay in the loop. Genspark is a research-and-create workspace: you steer the task, and multiple models (GPT, Claude, Gemini) cross-check each other into citation-backed Sparkpages. Manus is a delegation system: you set a goal and it autonomously browses the web, writes code, manages files, and delivers end-to-end. Neither is wrong — they are two different relationships with an AI."
+          "question": "What is the main difference between Genspark and Manus?",
+          "answer": "Genspark is a stronger starting candidate for research-to-artifact work, while Manus is a stronger candidate for broader multi-tool delegation; both claims require testing."
         },
         {
           "question": "Which is better for research?",
-          "answer": "It depends on the shape of the task. For structured, citation-backed research outputs, Genspark's Sparkpage format is strong. For deep autonomous research on complex topics — where you want Manus to browse, synthesize, and deliver a report without you guiding each step — Manus handles it better. Roughly: Genspark wins when you want fast, verifiable assets; Manus wins when the topic is complex enough to hand over completely."
+          "answer": "Choose the product that returns inspectable sources, handles conflicting evidence, and performs reliably on your own corpus."
         },
         {
-          "question": "Which is cheaper to use regularly?",
-          "answer": "Genspark is more predictable: the Plus plan is $24.99 per month with 10,000 monthly credits and covers most solo-creator needs. Manus starts at $20 per month, but complex tasks can consume 500–900 credits with no upfront estimate, so heavy use often ends up more expensive. Want stable costs? Genspark. Can you tolerate unpredictable credit burn for genuinely complex work? Manus has the lower entry price."
+          "question": "Which one creates better artifacts?",
+          "answer": "Compare editability, source provenance, constraint retention, and cleanup time rather than judging screenshots alone."
         },
         {
-          "question": "Is Manus still independent after the Meta acquisition?",
-          "answer": "Yes, it continues to operate as a standalone service at manus.im with its own subscriptions. Meta plans to integrate the underlying technology, but the product remains directly available. The practical consideration is data: it now flows through Meta's infrastructure, so weigh that carefully if you handle sensitive information."
+          "question": "Which agent is more autonomous?",
+          "answer": "Autonomy varies by task, plan, integration, and permission level, and greater autonomy does not guarantee better results."
         },
         {
-          "question": "Do both tools require coding knowledge?",
-          "answer": "No. Both are designed for non-technical users. Manus can produce code as an output — writing and deploying a web page from a prompt is one of its strengths — but you do not need to know how to code to use either tool. Coding is something Manus does for you when a task requires it."
+          "question": "How should I compare Genspark and Manus fairly?",
+          "answer": "Run the same bounded seven-task trial twice and record accuracy, interventions, cleanup, repeatability, and cost."
         },
         {
-          "question": "Which one should I start with?",
-          "answer": "Start with whichever matches the work you do daily. Content creators, researchers, and solo founders who want fast, structured output with step-by-step visibility should start with Genspark — its free tier is genuinely usable. If you regularly take on complex, multi-step projects and can tolerate unpredictable credits, try Manus seriously. Unsure? Run both free tiers on the same task; the difference appears within twenty minutes."
+          "question": "Which is cheaper, Genspark or Manus?",
+          "answer": "The answer depends on current plans, credits, retries, premium tool calls, and your monthly workload."
+        },
+        {
+          "question": "Are Genspark and Manus safe for logged-in accounts?",
+          "answer": "Only when permissions are narrowly scoped, consequential actions require approval, and writes can be inspected or reversed."
+        },
+        {
+          "question": "What should I do if neither product passes the test?",
+          "answer": "Reduce the workflow scope or evaluate alternatives using the same evidence, permission, reliability, and cost criteria."
         }
       ]
     },
@@ -2863,36 +2887,36 @@
     "/blog/gumloop-review-2026": {
       "items": [
         {
-          "question": "Is Gumloop a no-code workflow builder or an AI agent platform?",
-          "answer": "Both. Teams can build deterministic visual flows, create agents that choose among enabled tools, or place an Agent Node inside a fixed workflow. Use fixed logic for predictable steps and agents only where runtime judgment is necessary."
+          "question": "What is Gumloop?",
+          "answer": "Gumloop is a visual operations platform that combines deterministic flows, AI nodes, agents, triggers, interfaces, and app connections for repeatable multi-step work."
         },
         {
-          "question": "Is Gumloop easy for non-technical teams?",
-          "answer": "The canvas removes coding, but not process decomposition, data mapping, output design, permission decisions, or failure handling. Non-developers can build with it; no-code does not mean no systems thinking."
+          "question": "What is the difference between a Gumloop flow and an agent?",
+          "answer": "A flow follows an explicit sequence of nodes; an agent chooses among enabled tools at runtime. An Agent Node can also run inside a deterministic flow."
         },
         {
-          "question": "How much does Gumloop cost in 2026?",
-          "answer": "Gumloop's August 2026 announcement says tokens and compute pass through at cost with a base 8% orchestration fee. Plans can change and some documents still mention credits, so inspect your task breakdown and calculate cost per accepted outcome."
+          "question": "Who is Gumloop best for?",
+          "answer": "It best fits teams with recurring work, definable inputs and outputs, bounded AI judgment, available integrations, and a named owner for failures."
         },
         {
-          "question": "Does Gumloop connect to my apps?",
-          "answer": "Gumloop documents many business integrations plus MCP and API-oriented nodes. Verify the exact read/write action, authentication method, scopes, limits, and error behavior you need; a connector logo alone does not prove task coverage."
+          "question": "Is Gumloop production-ready by default?",
+          "answer": "No. Production use still requires least-privileged credentials, validation, approvals for high-impact actions, recovery tests, monitoring, and clear ownership."
         },
         {
-          "question": "How should a team secure Gumloop credentials?",
-          "answer": "Use least privilege, prefer durable service ownership, enable only required agent tools, separate testing from production, document credential owners, and rehearse revocation and rotation. Gate high-impact writes with validation or approval."
+          "question": "How does Gumloop pricing work in 2026?",
+          "answer": "Gumloop’s August 2026 announcement says model tokens and compute are passed through at cost with a base 8% orchestration fee; verify the current workspace breakdown."
         },
         {
-          "question": "How do you test a Gumloop workflow before launch?",
-          "answer": "Use fixed representative and adversarial cases in staging, measure accepted outcomes and cost, then force timeouts, malformed inputs, revoked permissions, and duplicates. Production access should depend on written thresholds."
+          "question": "Whose credentials does a shared Gumloop agent use?",
+          "answer": "It depends on the trigger and configuration. Direct Slack mentions and channel triggers can run under different identities."
         },
         {
-          "question": "What happens when a Gumloop flow fails?",
-          "answer": "Gumloop documents node logs, failure notifications, and Error Shield. Your system still needs an owner, retry and idempotency rules, partial-batch reconciliation, and a safe path for irreversible actions."
+          "question": "How should I test Gumloop before adopting it?",
+          "answer": "Use one bounded workflow, define accepted and forbidden outcomes, test edge cases and forced failures, then measure cost per accepted outcome."
         },
         {
-          "question": "Who should not use Gumloop?",
-          "answer": "Teams with simple trigger-action needs, mostly one-off tasks, prohibited data flows, no automation owner, or portability and code-control requirements their evaluated plan cannot satisfy should choose a simpler or more programmable option."
+          "question": "When should I avoid Gumloop?",
+          "answer": "Avoid it when native rules already solve the task, goals change every run, data cannot use the proposed services, failures are irreversible without review, or nobody owns operations."
         }
       ]
     },
@@ -2999,36 +3023,36 @@
     "/blog/how-to-build-an-ai-agent-with-chatgpt": {
       "items": [
         {
-          "question": "Do I need to know how to code to build an AI agent with ChatGPT?",
-          "answer": "Not for the in-product route. When Plugin Creator is available in your workspace, you can describe a workflow conversationally, add instructions and reference material, test it, and refine it. Code is needed when you want to embed an agent in your own product or build a custom server-backed integration rather than a ChatGPT workflow."
+          "question": "What counts as an AI agent in ChatGPT?",
+          "answer": "It is a bounded, reusable workflow built from instructions, knowledge, approved apps, permissions, and a review policy."
         },
         {
-          "question": "Should I build a custom GPT, skill, plugin, or ChatGPT Work task?",
-          "answer": "Use a skill or plugin for a reusable method, a plugin with approved apps when the method needs connected information or actions, and ChatGPT Work for a longer multi-step assignment. OpenAI is transitioning legacy custom GPT workflows to plugins. Use the API—not these no-code surfaces—when the agent must live inside your own product."
+          "question": "Do I need the API to build a ChatGPT agent?",
+          "answer": "No for workflows that stay inside ChatGPT. A custom product or unsupported integration may require platform APIs."
         },
         {
-          "question": "Who can create a plugin in ChatGPT?",
-          "answer": "The no-code flow requires plugin creation and editing to be enabled, the Use plugins permission, and Plugin Creator availability in the workspace. App availability and sharing also depend on admin settings and role access. If the creator is missing, test the workflow in a normal chat or ask the workspace administrator rather than assuming a plan grants access."
+          "question": "Should I start with a custom GPT, a plugin, or a ChatGPT Work task?",
+          "answer": "Choose based on what must persist, which apps are needed, whether actions are required, and how long the delegation should run."
         },
         {
-          "question": "What should the first ChatGPT agent workflow do?",
-          "answer": "Choose one frequent, bounded task with familiar inputs and a reviewable output, such as preparing a meeting brief, comparing proposals against a checklist, or drafting a status update from approved sources. Define the trigger, finish state, required steps, missing-data behavior, prohibited actions, and review point before building."
+          "question": "What should the agent instructions include?",
+          "answer": "Define the goal, inputs, exclusions, output schema, allowed tools, approval points, and stop conditions."
         },
         {
-          "question": "Does adding an app give the plugin access to all company data?",
-          "answer": "No. Access still depends on workspace availability, role permissions, the authenticated account, approved scopes, source-system permissions, and action controls. Adding a plugin does not grant new access. Start read-only, use the narrowest account and scopes, and add write actions only after testing."
+          "question": "Can a ChatGPT agent use company data?",
+          "answer": "Only through approved files and apps, subject to workspace permissions, retention settings, and company policy."
         },
         {
-          "question": "How do I know when the agent is reliable enough?",
-          "answer": "Create a versioned evaluation set with normal, incomplete, ambiguous, conflicting, inaccessible, adversarial, refusal, escalation, and peak-size cases. Set task-specific acceptance and critical-error thresholds, then measure factual support, format, tool behavior, escalation, edit time, and latency. Rerun the set after instruction, model, app, permission, or source changes."
+          "question": "How should I test a ChatGPT agent?",
+          "answer": "Test normal cases plus missing data, conflicting sources, permission failures, unsafe requests, and interrupted execution."
         },
         {
-          "question": "Can a ChatGPT plugin take actions in other tools?",
-          "answer": "It can when the plugin includes an approved app that exposes the supported action and the user or connected account has permission. Availability and confirmation behavior depend on workspace and app controls. Treat external communication, publishing, deletion, account changes, and other consequential actions as approval-gated."
+          "question": "When is human approval necessary?",
+          "answer": "Require approval before consequential external writes, messages, purchases, deletions, or changes to production records."
         },
         {
-          "question": "Do ChatGPT workflows have memory across conversations?",
-          "answer": "Do not design around a blanket yes or no. ChatGPT memory varies by plan, region, platform, workspace settings, and available sources, while legacy GPT behavior and plugins have separate product rules. Put required task facts in explicit inputs or approved references, and test the exact workspace experience you will deploy."
+          "question": "How do I maintain a ChatGPT agent?",
+          "answer": "Version its instructions and rerun a fixed evaluation set whenever the model, knowledge, apps, or permissions change."
         }
       ]
     },
@@ -3339,28 +3363,36 @@
     "/blog/llm-knowledge-base-solo-operators": {
       "items": [
         {
-          "question": "Do solo operators actually need an LLM knowledge base?",
-          "answer": "Usually not — most solo operators have an execution bottleneck, not a knowledge one. An LLM knowledge base is reference memory: it answers \"what do I know about X?\" and will not speed up writing deliverables in your format or processing client documents. That requires execution memory — AI embedded in the work itself. The exception is genuinely research-heavy roles that synthesize a large, growing body of domain material over months; there, the system can eventually pay for itself."
+          "question": "What is an LLM knowledge base?",
+          "answer": "It is a retrieval layer that indexes source material and selects relevant passages to support a model answer."
         },
         {
-          "question": "Is an LLM knowledge base the same as a \"second brain\"?",
-          "answer": "Similar idea, different execution. A second brain, per Tiago Forte's framework, is curated manually by you — you connect ideas and revisit notes. An LLM knowledge base is compiled and maintained by an AI from raw source material: it creates backlinks, writes concept summaries, and runs health checks to find gaps. That removes much of the manual curation, but it still needs consistent feeding."
+          "question": "Is it the same as an LLM wiki?",
+          "answer": "No. A generated wiki is one possible interface; a knowledge base also includes ingestion, retrieval, permissions, freshness rules, and evaluation."
         },
         {
-          "question": "Isn't this basically just RAG?",
-          "answer": "The opposite, actually. Karpathy's approach deliberately skips vector databases and embeddings: the wiki is just markdown files the LLM navigates directly — readable, human-auditable, and cheap at personal scale. RAG is one retrieval technique; this setup removes most of that machinery. It is closer to letting the model read the whole shelf than fetching fragments to answer a query."
+          "question": "When does a solo operator need one?",
+          "answer": "It is most useful when the same source set is reused, manual search is costly, and answers can be checked against citations."
         },
         {
-          "question": "What does building and maintaining one actually cost?",
-          "answer": "More than people expect. A minimal working version takes from a focused weekend to several weeks of iteration before it feels stable and trustworthy. The bigger tax is curation: deciding what goes in, what gets pruned, and when to re-run compilation becomes a second job of its own. Systems that demand ongoing attention are the first to be abandoned when a busy month hits."
+          "question": "When should I skip an LLM knowledge base?",
+          "answer": "Skip a permanent system for one-off work, very small collections, or rapidly changing sources without a clear update owner."
         },
         {
-          "question": "What is the minimum viable version to test whether it fits me?",
-          "answer": "Start simpler than you think. Drop a month of research notes into a folder, run them through a single Claude or GPT session with a compilation prompt, and check whether the output is actually useful. Clear, structured prompts go a long way before you need any infrastructure. If the result feels valuable, then invest in a real ingestion pipeline."
+          "question": "Does an LLM knowledge base prevent hallucinations?",
+          "answer": "No. Citations and evaluation can reduce risk, but generated answers still require review against the original evidence."
         },
         {
-          "question": "I tried a knowledge system before and quit — will this be different?",
-          "answer": "Only if the reason you quit was curation overhead, because an AI-compiled system reduces some of that. If you stopped because retrieval was not useful enough to justify the maintenance, that is a fit problem — and an LLM knowledge base does not solve a fit problem. Be honest about which one it was before you rebuild."
+          "question": "Should I build or buy an LLM knowledge base?",
+          "answer": "Build when you need unusual source handling or deployment control; use a managed product when standard connectors and hosted retrieval meet the need."
+        },
+        {
+          "question": "How should I test an LLM knowledge base?",
+          "answer": "Use real questions that cover exact lookup, synthesis, conflicting sources, missing evidence, and appropriate refusal."
+        },
+        {
+          "question": "What is the biggest hidden cost?",
+          "answer": "The largest ongoing cost is ownership of failed imports, stale copies, access control, retention, and deletion."
         }
       ]
     },
@@ -3395,28 +3427,36 @@
     "/blog/meta-muse-spark-one-person-company": {
       "items": [
         {
-          "question": "Should I switch from GPT-5.4 to Meta Muse Spark?",
-          "answer": "Short-term, probably not — unless your current model has a specific, recurring pain point in your work. Switching means rewriting prompts and workflow docs, debugging new outputs, and relearning quirks; the author's own migration to GPT-5.4 took roughly two months to break even on time saved. Muse Spark's gains are real but concentrated in specific tasks, so keep your main setup and test before committing."
+          "question": "What is Meta Muse Spark?",
+          "answer": "It is Meta’s hosted multimodal reasoning model family for tool use, agentic work, coding, and document or visual inputs."
         },
         {
-          "question": "Is Muse Spark actually better than GPT-5.4?",
-          "answer": "It depends on the task. Overall, Muse Spark scores 52 on the Artificial Analysis Intelligence Index versus GPT-5.4's 57, and it trails on coding, computer-use, and long-horizon agentic benchmarks. But it leads on HealthBench Hard (42.8% versus 40.1%) and multimodal work, and Meta is candid that it isn't trying to beat the frontier. Treat this as one week of hands-on data, not a final verdict."
+          "question": "What is the current Muse Spark version?",
+          "answer": "As checked October 13, 2026, Meta lists Muse Spark 1.3 as the current model on its developer pages."
         },
         {
-          "question": "Is Muse Spark open source, and how does it relate to Llama 4?",
-          "answer": "Muse Spark is closed, unlike Llama 4, which was open-weights. Today it's only accessible through meta.ai and the Meta AI app, with API access limited to selected partners, and Meta only \"hopes\" to open-source future Muse models. It's Meta's first release after rebuilding its AI stack following Llama 4's benchmark controversy, and the claim that it matches Maverick with over 10x less compute is not yet independently verified."
+          "question": "Is Muse Spark an open-weight replacement for Llama 4?",
+          "answer": "No. Muse Spark launched as a hosted product; verify the exact license and artifact if open weights or local deployment are required."
         },
         {
-          "question": "Why do some people get gains from a model upgrade and others don't?",
-          "answer": "Because the model isn't what changes your output — the interface between your workflow and the model is. The author knows people who get more from GPT-3.5 than others get from GPT-5.4, because they've defined what to delegate, what to do themselves, and where to use scripts as fallback. Others on the newest model see no gains because they treat every session as a fresh chat and rebuild context from scratch each time."
+          "question": "How can a solo business access Muse Spark?",
+          "answer": "Meta offers consumer surfaces and a developer path through Meta Model API; availability and terms should be checked before adoption."
         },
         {
-          "question": "Is always wanting to switch models itself the problem?",
-          "answer": "Often, yes. The urge to switch usually isn't because your current model is inadequate — it's because there's unexamined friction somewhere in your workflow. Switching creates the feeling of making progress while the friction stays, so the cycle repeats at the next release. Before changing models, name the actual bottleneck; that's usually where the fix is."
+          "question": "What workloads should a solo operator test first?",
+          "answer": "Start with repeated multimodal intake, source-backed synthesis, bounded coding or browser tasks, and routine drafting."
         },
         {
-          "question": "If I want to try Muse Spark, how should I evaluate it?",
-          "answer": "Keep your current setup as the main driver and run Muse Spark on one specific category of task for two weeks — ideally one where its strengths show, such as multimodal processing, health-related research, or lightweight investigation. Compare the outputs against your baseline, then decide whether to expand. Watching what day-to-day users say over that window beats switching everything on launch day."
+          "question": "How should I compare Muse Spark with my current model?",
+          "answer": "Use the same source pack, tools, output contract, time limit, and scoring rubric on completed real tasks."
+        },
+        {
+          "question": "What migration costs should I include?",
+          "answer": "Include prompt changes, integrations, evaluations, logging, review rules, fallback design, and staff time."
+        },
+        {
+          "question": "When should I not switch to Muse Spark?",
+          "answer": "Stay put when the current workflow meets its target, migration disrupts revenue work, local deployment is mandatory, or required tools are unavailable."
         }
       ]
     },
@@ -3451,36 +3491,36 @@
     "/blog/no-code-ai-agent-builder": {
       "items": [
         {
-          "question": "Can no-code agents run reliably every day?",
-          "answer": "They can, but reliability must be measured at the workflow level rather than inferred from platform uptime. Track accepted outcomes, wrong actions, interventions, retries, and recovery after connector or schema changes. A completed run is not necessarily a correct run."
+          "question": "What is a no-code AI agent builder?",
+          "answer": "It is a visual platform for combining instructions, models, data, and tools so a model can choose bounded actions without coding the entire orchestration layer from scratch."
         },
         {
-          "question": "What's the difference between no-code, low-code, and workspace-native AI?",
-          "answer": "No-code prioritizes visual assembly and managed connectors. Low-code adds custom code, APIs, and sometimes self-hosting. An Agent Workspace is for exploratory work where a person reviews files and intermediate artifacts, while a builder is for a repeatable event-driven process. Copilot Studio is better understood as a managed low-code agent platform within Microsoft governance."
+          "question": "How is an AI agent builder different from conventional automation?",
+          "answer": "Conventional automation follows a predefined path; an agent can choose among allowed tools or paths. Reliable systems usually combine both."
         },
         {
-          "question": "What kinds of workflows suit no-code builders best?",
-          "answer": "Choose bounded processes with repeatable inputs, narrow tools, reversible outputs, and a named reviewer. Support reply drafting, CRM enrichment, and meeting follow-up are good candidates when sending, publishing, purchasing, deletion, and permission changes remain behind approval."
+          "question": "What is the best no-code AI agent builder?",
+          "answer": "There is no universal winner. Choose by task fit, tool boundaries, deterministic controls, observability, approval, data handling, cost, and portability."
         },
         {
-          "question": "Can I fix failures without a developer?",
-          "answer": "Often, if the platform exposes inputs, selected tools, arguments, outputs, and errors. Prompt changes can address instruction problems; filters and schemas can address data problems. If a run cannot be replayed or its tool path is hidden, diagnosis may require a more observable low-code or coded system."
+          "question": "Which workflows are a good fit for no-code agents?",
+          "answer": "Bounded, repeated workflows with measurable inputs, reversible outputs, existing connectors, and a human reviewer are a good fit."
         },
         {
-          "question": "When should I avoid no-code entirely?",
-          "answer": "Avoid it when the workflow needs custom authentication, transaction guarantees, high-volume queues, strict version-controlled tests, specialized evaluation, or deep internal integration. Regulated data does not automatically require self-hosting, but it does require a documented assessment of storage, retention, subprocessors, credentials, and access controls."
+          "question": "What controls should a no-code agent builder provide?",
+          "answer": "Look for narrow tool permissions, schemas, branching, retries, timeouts, approval before side effects, detailed run records, credential controls, and exportable tests."
         },
         {
-          "question": "When is it time to move from no-code to low-code?",
-          "answer": "Move when prompts contain business rules that should be tests, broad credentials compensate for weak tool controls, failures cannot be replayed, or cost per accepted outcome no longer works. Preserve the task contract, schemas, prompts, and evaluation set outside the platform so rebuilding is possible."
+          "question": "How should I evaluate a no-code agent builder?",
+          "answer": "Write an acceptance contract, test historical and adversarial cases in shadow mode, allow one reversible write, and measure outcomes, errors, recovery, latency, and cost."
         },
         {
-          "question": "How should I compare no-code agent builder pricing?",
-          "answer": "Use an expected-volume scenario and include platform operations or credits, model usage, premium connectors, retrieval and storage, retries, test runs, and human review. Compare cost per accepted outcome. Confirm current prices and entitlements on each vendor's official page because plans change frequently."
+          "question": "Is a self-hosted builder automatically safer?",
+          "answer": "No. Self-hosting can increase control, but it transfers patching, backups, monitoring, credential protection, and incident response to your team."
         },
         {
-          "question": "What should I test before allowing an agent to write to another app?",
-          "answer": "Run historical cases and shadow mode first. Include missing fields, duplicates, conflicting evidence, tool outages, prompt injection in source content, and out-of-policy requests. Start with one reversible write such as creating a draft, while consequential actions keep explicit approval."
+          "question": "When should I move from no-code to code or an agent workspace?",
+          "answer": "Use code for custom authentication, high-volume queues, transaction guarantees, or versioned tests; use a workspace for changing exploratory work that needs human redirection."
         }
       ]
     },
@@ -3875,28 +3915,36 @@
     "/blog/what-gstack-gets-right-about-one-person-businesses": {
       "items": [
         {
-          "question": "Do I need to be a developer to use role-based prompting?",
-          "answer": "No. Everything in this article works in Claude.ai, ChatGPT, or any general chat interface — you are changing how you open a session, not installing tools. gstack itself is a Claude Code skill pack for developers, but the underlying role-based pattern translates into a non-code workflow: name the cognitive mode, separate phases into sessions, and file summaries forward."
+          "question": "What is gstack?",
+          "answer": "It is an open-source set of Claude Code skills spanning discovery, planning, design, review, browser QA, release, and retrospectives."
         },
         {
-          "question": "Isn't this basically just writing a better prompt?",
-          "answer": "It is a specific pattern within prompting. The key difference is that you are explicitly constraining the cognitive frame for a task — defining what the model should prioritize, what it should ignore, and what counts as success — rather than just adding detail. The constraint on what the AI should not do is often more valuable than what you ask it to do."
+          "question": "Can non-developers use the gstack method?",
+          "answer": "Its coding tools are developer-specific, but its stage contracts and review gates can be adapted to other workflows."
         },
         {
-          "question": "What if I don't know which role I need?",
-          "answer": "That is a sign you are in a pre-phase: figuring out the problem itself. Do that part yourself, or run an explicit free-exploration session — tell the model you do not have a defined question yet and want to think it through together. Forcing a role too early on messy problems can narrow your thinking, so move to role-based phases once the problem is clear."
+          "question": "Do AI role names improve output quality?",
+          "answer": "Not by themselves. Clear constraints, inspectable artifacts, checks, and stop conditions provide the operational value."
         },
         {
-          "question": "Does this work for creative work?",
-          "answer": "Yes — the roles just look different. Generative ideation mode (produce ten directions without filtering) is not the same as editing mode (tighten and cut), but the principle is identical. What matters is not the role label: research on role prompting is mixed, and the gains come from the constraints and scope you attach to the role."
+          "question": "What is a stage contract?",
+          "answer": "It defines the stage input, one bounded job, required output, review checks, and conditions that stop or escalate the work."
         },
         {
-          "question": "How is this different from using a separate tool for each task?",
-          "answer": "Lighter. You are switching frames within one tool rather than switching applications — most of the specialization benefit without the context-switching overhead. A system prompt sets general behavior; a role-based frame goes further by scoping what this specific step should optimize for, which is closer to having a focused specialist than to juggling apps."
+          "question": "How can a content workflow apply the method?",
+          "answer": "Separate source collection, claim verification, outline approval, drafting, editing, and publication into reviewable stages."
         },
         {
-          "question": "Do my role assignments carry across sessions?",
-          "answer": "Not automatically. gstack's virtual team has no shared context — the CEO role's Tuesday insights are gone by Wednesday — which is real friction when you run several workstreams at once. The fixes are manual: file a 3–5 sentence summary forward into the next session, or use a workspace layer that holds context for you, the direction Floatboat's Tacit Engine takes by learning your working patterns over time."
+          "question": "Why save artifacts between workflow stages?",
+          "answer": "Artifacts make handoffs inspectable and allow one stage to be rerun without regenerating the entire workflow."
+        },
+        {
+          "question": "Where does the gstack analogy break down?",
+          "answer": "Non-code work often lacks automated tests and may carry legal, financial, privacy, or customer consequences."
+        },
+        {
+          "question": "What should a solo founder copy first?",
+          "answer": "Start with one recurring workflow, add explicit review gates, and measure rework and errors that escape the process."
         }
       ]
     },
@@ -6051,36 +6099,36 @@
     "/zh/blog/browser-ai-agent-security-questions": {
       "items": [
         {
-          "question": "浏览器 AI Agent 需要知道密码才能以我的身份行动吗？",
-          "answer": "不一定。如果 Agent 运行在已登录的浏览器 Profile 里，会话本身就携带你的权力。应使用独立 Profile，不在其中登录密码管理器、银行、身份管理、生产云、薪资或支付系统，并只授予任务所需站点。"
+          "question": "浏览器 AI Agent 必须知道密码才能代我操作吗？",
+          "answer": "不必。已登录浏览器会话本身就携带权限，因此会话访问也应按凭据管理。"
         },
         {
-          "question": "哪些浏览器扩展权限必须检查？",
-          "answer": "检查 Host Permission、Optional Host Permission、Tab、Content Script、Cookie、Download、History、Debugger、Native Messaging、剪贴板与文件访问，以及它们是永久授予，还是按站点、会话或动作请求。浏览器 Profile 中已有的登录和 Manifest 同样重要。"
+          "question": "应检查哪些浏览器 Agent 权限？",
+          "answer": "检查站点范围、Tab 与 Host 权限、Cookie、下载、历史、剪贴板、本地文件、Debugger 和 Native Messaging。"
         },
         {
-          "question": "关掉 Memory 或使用 Incognito 能保护数据吗？",
-          "answer": "它们解决的层次不同。Memory 设置可能只限制跨会话个性化，不会消除云处理或必需 Log。Incognito 可能隔离本地浏览历史，不会改变 Agent 厂商收到什么。要分开询问页面上下文、Run History、Memory、Audit Log、保留、训练、删除和 Subprocessor。"
+          "question": "如何缩小浏览器 Agent 的访问范围？",
+          "answer": "使用独立 Profile、按站点或运行时授权、最小权限账户，并避免登录银行、薪资、身份管理和生产云。"
         },
         {
-          "question": "浏览器 Agent 的间接 Prompt Injection 是什么？",
-          "answer": "它指网页、邮件、文档、图片、工单或工具输出中的指令把 Agent 从用户目标上带走。OWASP 把 Prompt Injection 列为 LLM01，NIST 也用 Agent Hijacking 描述这类问题。即使检测失败，权限和动作后果也应受到限制。"
+          "question": "什么是间接提示注入？",
+          "answer": "网页、邮件、文件、图片或工具输出中的不可信内容试图让 Agent 偏离用户目标。"
         },
         {
-          "question": "怎么测试浏览器 AI Agent 的 Prompt Injection 防护？",
-          "answer": "在 Mock Page、测试邮件、文档或图片中放入指令，要求 Agent 放弃原任务、泄露无害 Canary、打开无关网站或发送草稿。安全 Run 应显示冲突、保留用户目标、不做未授权动作并留下 Log。模型、扩展、浏览器或策略更新后要重跑。"
+          "question": "哪些浏览器 Agent 动作必须人工审批？",
+          "answer": "发送、发布、购买、删除、改权限、部署等高后果动作应在最后一步确认。"
         },
         {
-          "question": "哪些浏览器 Agent 动作必须人工确认？",
-          "answer": "发送、发布、购买、删除、改权限、部署、转移敏感数据，以及作出法律、财务、雇佣、医疗或客户承诺前，都要在最后一步重新确认。确认界面应显示准确目标、内容、金额、记录或权限变更。"
+          "question": "浏览器 Agent 的审计记录应包含什么？",
+          "answer": "记录用户、策略、模型与版本、目标、来源、页面、工具调用、审批、数据搬运、错误、时间戳和最终状态。"
         },
         {
-          "question": "浏览器 AI Agent 应提供哪些日志？",
-          "answer": "Log 应记录用户、Agent 与配置版本、目标、输入源、访问页面、工具调用、授权、人工确认、跨应用数据搬运、错误、重试、最终状态、时间戳和稳定 Run ID。管理员还需要导出、Stop、撤权和恢复路径。"
+          "question": "企业应如何试点浏览器 Agent？",
+          "answer": "从独立 Profile 中的低风险只读任务开始，测试提示注入、停止和恢复，再一次只增加一项权限。"
         },
         {
-          "question": "企业评估浏览器 Agent 厂商时应要哪些证据？",
-          "answer": "要求架构与 Data Flow Diagram、完整扩展权限、Prompt Injection 评测、人工确认策略、Tenant 和身份控制、保留删除与 Subprocessor、管理员 Run Log、漏洞与事故流程、扩展更新控制、带 Scope 的独立保证，以及经过测试的 Kill Switch 与恢复流程。"
+          "question": "企业应向浏览器 Agent 厂商索取哪些证据？",
+          "answer": "索取数据流与子处理商、保留与训练条款、权限文档、安全评估、事故流程和可导出的 Run Record。"
         }
       ]
     },
@@ -6287,28 +6335,36 @@
     "/zh/blog/claude-managed-agents-one-person-company": {
       "items": [
         {
-          "question": "对一个人运营的业务，Claude Managed Agents 真的有用吗？",
-          "answer": "取决于你想自动化什么。它最擅长「长时域、多步骤」任务：综合二十个来源的研究、从文档堆抽取结构化数据、照 brief 产出成稿，能无人值守连跑几小时。若只想自动化个人可复用工作流、又不想碰 API 与 YAML，文章建议先从 Combo Skills 起步。"
+          "question": "Claude Managed Agents 是什么？",
+          "answer": "它是 Anthropic 托管的 Agent 基础设施，用于持久会话、受控工具和可观察的执行。"
         },
         {
-          "question": "它和我平时用的 Claude 有什么区别？",
-          "answer": "平时用 Claude，对话结束交互就结束。Managed Agents 是托管基础设施层——沙箱、长时会话、工具执行、权限都由 Anthropic 负责。你定义任务与护栏，agent 就能连跑几小时无需你盯着。计费为 token 用量加每会话小时 0.08 美元的运行时费。"
+          "question": "Managed Agent 只是运行更久的 Claude 聊天吗？",
+          "answer": "不是。它是用于运营 Agent 的运行时与构建层，而不只是更长的聊天模式。"
         },
         {
-          "question": "还需要写 prompt 或会写代码吗？",
-          "answer": "总得有人定义 agent 做什么、怎么表现，但基础设施不用你管。用自然语言描述或 YAML 配置都行——写 prompt 的技能基本变成设计 agent 的技能。不过平台 API 的额外开销，对简单自动化未必划算；多 agent 协调仍在研究预览，需单独申请访问。"
+          "question": "一人公司需要 Managed Agents 吗？",
+          "answer": "只有当重复流程需要服务边界、持久会话、受控工具和运营可见性时才需要。"
         },
         {
-          "question": "拿来做业务安全吗？",
-          "answer": "对大多用标准 token 访问、未把敏感凭据挂到 agent 上的单人创业者，风险可控。一旦涉及生产凭据、客户数据或财务访问：只授任务所需最小权限、常查会话日志，并知会话数据存放在 Anthropic 基础设施里。最该防的是内容里藏指令的间接 prompt injection。"
+          "question": "Managed Agents 能替代哪些基础设施？",
+          "answer": "它可能减少沙箱、会话恢复、凭据处理和追踪方面的工作，但不能替代流程设计与人工复核。"
         },
         {
-          "question": "Managed Agents 是完全自主的吗？",
-          "answer": "不完全是。它被设计成「meta-harness」：一个稳定基础设施，让 Claude Code 到任务专用 agent 的各种 harness 都能跑。执行层面确实自主——不需你盯每一步——但任务、工具与护栏都由你事先定义，设计层的人类判断依然不可或缺。"
+          "question": "哪些操作应该保留人工审批？",
+          "answer": "消息发送、购买、删除、生产环境变更及其他重要外部操作都应要求审批。"
         },
         {
-          "question": "Managed Agents 和 Combo Skills，单人创业者该怎么选？",
-          "answer": "它们不是竞争，而是同一条路上的不同路段。Combo Skills——在 AI 工作区内编排的可复用多步工作流——通常是单人创业者的起点，不用管 API 或 YAML；需要可靠、可复现、生产级执行（如把 agent 能力嵌进产品）时，Managed Agents 才是对的工具。"
+          "question": "单人经营者应如何试点 Managed Agents？",
+          "answer": "从一个可撤销流程开始，使用低敏感资料、最小工具权限、完整日志和明确的失败测试。"
+        },
+        {
+          "question": "如何估算 Managed Agent 成本？",
+          "answer": "应计入模型用量、运行时、重试、存储、监控以及排查失败所需的时间。"
+        },
+        {
+          "question": "应该使用 Managed Agent 还是 AI 工作区？",
+          "answer": "有人监督且判断密集的工作适合工作区；服务式、可重复执行的流程才考虑托管运行时。"
         }
       ]
     },
@@ -6703,28 +6759,36 @@
     "/zh/blog/effort-control-fast-mode-ai-work": {
       "items": [
         {
-          "question": "是不是所有任务都该用最高 effort 档？",
-          "answer": "不该——这恰恰是这篇文章最想纠的惯性。给链接归类、打标签、起草这类简单任务开到最高档，并不会让产出更好，只会让你等更久、白白烧掉速率额度。只有\"稍微做错就要付出真实代价\"的任务，高投入才回本。纪律不是每件事都往高里开，而是判断什么时候多想一步真的有用。"
+          "question": "什么是 AI Effort Control？",
+          "answer": "它调节受支持模型投入的推理量，在分析完整度、延迟和 Token 消耗之间取舍。"
         },
         {
-          "question": "Claude 的 Effort Control 是什么？",
-          "answer": "它是 claude.ai 与 Cowork 上模型选择器旁新增的档位，控制 Claude 在一次回答里投入多少思考。档位越高，思考越频繁越深入——回答更好、token 更多；档位越低，响应越快、速率限制消耗越慢。档位从 low 到 high（默认）再到 extra、max。作者的印象来自几十次真实会话，不是基准测试。"
+          "question": "Fast Mode 等于降低 Effort 吗？",
+          "answer": "不等于。Effort 改变推理深度，Fast Mode 改变受支持模型的输出速度，并通常收取溢价。"
         },
         {
-          "question": "Effort Control 和 Fast Mode 有什么区别？",
-          "answer": "Effort Control 是\"思考旋钮\"，Fast Mode 是\"速度旋钮\"。前者决定 Claude 多想、想多深；后者是独立的速度档，同一模型在溢价定价下每秒最多多产出 2.5 倍 token，目前在 API 与 Claude Code 里是 research preview。两者可以叠加——作者如今处理最重复的活时最常用的配置，就是 Fast Mode + 低投入。"
+          "question": "哪些任务适合 Low Effort？",
+          "answer": "抽取、格式转换、分类等可回滚且有确定校验方式的任务适合作为起点。"
         },
         {
-          "question": "什么情况下高 effort 才真的值得？",
-          "answer": "当\"差不多对\"的代价高于\"多等一会儿\"的代价时。文中点名三类：你不想反悔的决策（调价、定位、难回的客户邮件）、希望模型仔细读并敢于反驳的审核工作、必须整体自洽的长上下文综合。作者实测下来，extra 是质量跃升最大的一档；max 更像偶发特需。"
+          "question": "什么时候应提高 Effort？",
+          "answer": "多重约束、复杂诊断、长程计划或错误代价较高，并且低档位违反明确验收标准时再提高。"
         },
         {
-          "question": "什么时候该用 Fast Mode 或低 effort？",
-          "answer": "低风险重复的活——起草、归类、打标签、摘要、反正要重写的初版大纲。这些低投入就够；Fast Mode 还能消除\"一连串小任务像在等叫号\"的延迟感。一个提醒：对话中途切进 Fast Mode，要为整段上下文按全量未缓存输入 token 付费——所以在 session 开头就要定好，别半路切。"
+          "question": "什么时候 Fast Mode 值得付费？",
+          "answer": "等待会卡住人或后续步骤，而且节省的时间有可衡量价值时。"
         },
         {
-          "question": "提高 effort 能替代人工审核吗？",
-          "answer": "不能——谁要是暗示能，请留个心眼。高投入让 Claude 更可能抓出自己的错误、反驳站不住脚的推理，但\"更可能\"不等于\"总是\"。任何涉及钱、法律风险、客户承诺或要发布的内容，作者仍会亲自过一遍。Effort Control 改变的是初稿有多好，省不掉最后一审。"
+          "question": "重要任务都应使用 Max Effort 吗？",
+          "answer": "不应。任务重要性不等于推理难度，拉满可能只增加成本而不提高通过率。"
+        },
+        {
+          "question": "如何公平比较不同 Effort？",
+          "answer": "先在 Standard 速度下跑同一批代表任务，按通过率和复核时间评分，再对胜出档位测试 Fast Mode。"
+        },
+        {
+          "question": "除了延迟还要衡量什么？",
+          "answer": "衡量从提交到通过的总时间、成本、修改次数、约束错误、复核时间和最终采用率。"
         }
       ]
     },
@@ -6975,28 +7039,36 @@
     "/zh/blog/genspark-vs-manus": {
       "items": [
         {
-          "question": "Genspark 和 Manus 的本质区别是什么？",
-          "answer": "区别在于你留在环内多少。Genspark 是研究与创作工作区：由你掌舵，GPT、Claude、Gemini 等多个模型互相交叉核验，产出带引用的 Sparkpage。Manus 是委派系统：你定目标，它自主浏览网页、写代码、管理文件，端到端交付成果。两者都没错——只是与 AI 的两种不同关系。"
+          "question": "Genspark 与 Manus 的核心差别是什么？",
+          "answer": "Genspark 更适合作为研究到交付物任务的起测对象，Manus 更偏跨工具委派，但这两个判断都需要实测。"
         },
         {
-          "question": "做研究的话，哪个更好？",
-          "answer": "看任务形态。要结构化、带引用的研究产出，Genspark 的 Sparkpage 很强；要对复杂主题做深度自主研究——希望它自己浏览、综合、交付一份报告、无需你逐步引导——Manus 更好。粗略地说：想要又快又可核验的成果选 Genspark；课题复杂到值得整单托付时选 Manus。"
+          "question": "谁更适合做研究？",
+          "answer": "应选择能在你的资料上返回可检查来源、处理矛盾证据且重复表现稳定的产品。"
         },
         {
-          "question": "日常使用哪个更便宜？",
-          "answer": "Genspark 更可预测：Plus 计划每月 24.99 美元，含 10,000 月积分，覆盖多数单人创作者需求。Manus 起价每月 20 美元，但复杂任务一次可烧 500–900 积分、且没有用前估算，重度使用常常反而更贵。要稳定成本选 Genspark；能接受复杂任务积分不可预测、又常接大活，Manus 入门价更低。"
+          "question": "谁生成的交付物更好？",
+          "answer": "应比较可编辑性、来源可追溯性、约束保持和清理时间，而不是只看演示截图。"
         },
         {
-          "question": "被 Meta 收购后，Manus 还独立吗？",
-          "answer": "仍独立。Manus 继续以独立服务形式在 manus.im 运营，有自己的订阅体系。Meta 计划整合其底层技术，但产品本身仍可直接使用。真正要想清楚的是数据：如今数据流经 Meta 的基础设施——如果你处理敏感信息，这一点要慎重权衡。"
+          "question": "谁的自主程度更高？",
+          "answer": "自主程度会随任务、套餐、集成与权限变化，而且更自主不等于结果更好。"
         },
         {
-          "question": "两个工具都需要会写代码吗？",
-          "answer": "不需要。两者都为非技术用户设计。Manus 可以把代码当作产出物来生成——从一个 prompt 写出并部署网页正是它的强项之一——但使用这两款工具都不需要你会编程。编码是 Manus 在任务需要时替你做的事。"
+          "question": "如何公平比较 Genspark 和 Manus？",
+          "answer": "让两者把同一套边界明确的七项任务各跑两次，记录准确度、人工介入、清理量、重复稳定性和成本。"
         },
         {
-          "question": "我到底该先试哪一个？",
-          "answer": "从你每天都做的那类工作出发。内容创作者、研究者与单人创始人，需要快速、结构化产出、又想看到每一步生成过程——先试 Genspark，它的免费档真的够用。如果你经常接复杂多步项目、又能接受积分不可预测，认真试 Manus。拿不准？用同一个任务把两个免费档都跑一遍，二十分钟内差异自现。"
+          "question": "Genspark 与 Manus 谁更便宜？",
+          "answer": "答案取决于当前套餐、积分、重试、高级工具调用以及你的每月工作量。"
+        },
+        {
+          "question": "Genspark 与 Manus 使用已登录账号安全吗？",
+          "answer": "只有在权限严格收敛、重要操作需要审批且写入可检查或撤销时，才适合使用。"
+        },
+        {
+          "question": "如果两者都没有通过测试怎么办？",
+          "answer": "缩小流程范围，或用同样的证据、权限、可靠性与成本标准评估替代品。"
         }
       ]
     },
@@ -7423,36 +7495,36 @@
     "/zh/blog/gumloop-review-2026": {
       "items": [
         {
-          "question": "Gumloop 是无代码工作流工具，还是 AI Agent 平台？",
-          "answer": "两者都是。团队可以搭确定性 flow，也可以创建会从获准工具中选择动作的 Agent，还能把 Agent Node 放进固定流程。可预测步骤用固定逻辑，确实需要运行时判断的环节再用 Agent。"
+          "question": "Gumloop 是什么？",
+          "answer": "Gumloop 是一套可视化运营平台，把确定性 Flow、AI 节点、Agent、触发器、操作界面和应用连接组合起来，用于重复的多步骤工作。"
         },
         {
-          "question": "非技术团队容易上手 Gumloop 吗？",
-          "answer": "画布省去了写代码，但生产流程仍需要拆解业务、映射数据、设计输出、配置权限和处理故障。非开发者可以使用，但无代码不等于不需要系统思维。"
+          "question": "Gumloop 的 Flow 和 Agent 有什么区别？",
+          "answer": "Flow 按预先连接的节点顺序执行；Agent 会在运行时从获准工具中选择动作，也可以嵌入确定性 Flow。"
         },
         {
-          "question": "2026 年 Gumloop 怎么收费？",
-          "answer": "Gumloop 2026 年 8 月的公告称，token 与计算资源按成本转计，并收取基础 8% 编排费。套餐会变化，部分文档仍使用 credit；应查看自己的任务明细，并计算单个合格结果总成本。"
+          "question": "Gumloop 最适合哪些团队？",
+          "answer": "适合流程会重复、输入输出可定义、AI 判断有边界、所需集成可用，并且有人负责故障处理的团队。"
         },
         {
-          "question": "Gumloop 是否支持我使用的应用？",
-          "answer": "官方文档覆盖常见业务系统，也支持 MCP 和 API 节点。应核对具体读写动作、认证方式、scope、限制和错误行为；看到连接器 logo 不代表任务已经完全覆盖。"
+          "question": "Gumloop 默认就能直接用于生产吗？",
+          "answer": "不能。生产使用仍需最小权限凭据、结果校验、高影响动作审批、恢复测试、监控和明确负责人。"
         },
         {
-          "question": "团队应该如何保护 Gumloop 凭据？",
-          "answer": "使用最低权限账号，长期流程优先采用服务化所有权，只启用 Agent 必需工具，分开测试与生产，记录负责人，并演练撤销与轮换。高影响写操作还应增加审批。"
+          "question": "2026 年 Gumloop 如何计费？",
+          "answer": "Gumloop 2026 年 8 月的官方公告称，模型 Token 和计算按成本转计，并收取基础 8% 编排费；实际费用应以工作区任务明细为准。"
         },
         {
-          "question": "上线前怎么测试 Gumloop 流程？",
-          "answer": "建立固定的正常与对抗样本，在测试目标中运行，统计合格结果和成本，再主动制造超时、坏输入、权限撤销与重复事件。只有达到书面阈值，才开放生产权限。"
+          "question": "共享 Gumloop Agent 使用谁的凭据？",
+          "answer": "取决于触发方式和配置；Slack 直接 @Agent 与频道触发器可能使用不同的运行身份。"
         },
         {
-          "question": "Gumloop 流程失败后会怎样？",
-          "answer": "官方文档提供节点日志、失败通知和 Error Shield。但团队仍要指定负责人，定义重试与幂等规则，准备批量任务对账方式，并为不可逆动作保留安全恢复路径。"
+          "question": "采用 Gumloop 前应该怎样测试？",
+          "answer": "选择一条边界清楚的流程，定义合格与禁止结果，测试边缘案例和强制故障，再计算每个合格结果的成本。"
         },
         {
-          "question": "哪些团队不适合 Gumloop？",
-          "answer": "只有简单触发需求、任务大多一次性、数据不能流转、没有自动化负责人，或必须具备当前套餐无法证明的代码级控制与可迁移性的团队，应考虑更简单或更可编程的方案。"
+          "question": "哪些情况不适合用 Gumloop？",
+          "answer": "应用自带规则已经够用、每次目标都不同、数据不能经过拟议服务、错误不可逆又没有复核，或上线后无人负责时都不适合。"
         }
       ]
     },
@@ -7559,36 +7631,36 @@
     "/zh/blog/how-to-build-an-ai-agent-with-chatgpt": {
       "items": [
         {
-          "question": "用 ChatGPT 构建 Agent 需要会写代码吗？",
-          "answer": "使用 ChatGPT 产品内的路线不需要写代码。工作区可用 Plugin Creator 时，可以通过对话描述流程、添加指令与参考材料、测试并迭代。只有要把 Agent 嵌入自己的产品，或构建自定义服务端集成，而不是 ChatGPT 工作流时，才需要走代码和 API 路线。"
+          "question": "什么算 ChatGPT 里的 AI Agent？",
+          "answer": "它是由指令、知识、获批 App、权限与复核规则组成的边界明确、可复用工作流。"
         },
         {
-          "question": "应该创建 Custom GPT、Skill、Plugin，还是 ChatGPT Work 任务？",
-          "answer": "复用一种方法时用 Skill 或 Plugin；既要复用方法又要连接信息或动作时，用包含获准 App 的 Plugin；较长的一次性多步骤委托使用 ChatGPT Work。OpenAI 正把旧 Custom GPT 工作流迁移到 Plugins。Agent 要嵌入自己的产品时，则应使用 API。"
+          "question": "构建 ChatGPT Agent 必须使用 API 吗？",
+          "answer": "留在 ChatGPT 内的工作流不必使用 API；自定义产品或未支持的集成可能需要平台 API。"
         },
         {
-          "question": "谁可以在 ChatGPT 中创建 Plugin？",
-          "answer": "无代码流程要求工作区启用 Plugin 创建与编辑、用户拥有 Use plugins 权限，而且 Plugin Creator 已开放。App 是否可用、能否分享也取决于管理员和角色设置。找不到创建入口时，先在普通对话里测试流程，或向管理员确认，不要仅凭套餐名称猜测。"
+          "question": "应该从自定义 GPT、Plugin 还是 ChatGPT Work 任务开始？",
+          "answer": "根据需要保留什么、连接哪些 App、是否执行操作，以及委派要运行多久来选择。"
         },
         {
-          "question": "第一个 ChatGPT Agent 工作流应该做什么？",
-          "answer": "选择高频、有边界、输入熟悉且输出可复核的一项任务，例如准备会议简报、按检查表比较方案，或从获准来源起草周报。构建前先定义触发、完成状态、必做步骤、缺数据时怎么办、禁止动作和人工复核点。"
+          "question": "Agent 指令应该包含什么？",
+          "answer": "应明确目标、输入、排除项、输出结构、允许的工具、审批点与停止条件。"
         },
         {
-          "question": "给 Plugin 添加 App，会自动获得全部公司数据吗？",
-          "answer": "不会。访问仍受工作区开放范围、角色、连接账号、授权 Scope、源系统权限和 Action Control 共同限制。添加 Plugin 不会凭空增加权限。应从只读开始，使用最窄账号与 Scope，通过测试后再逐项开放写入。"
+          "question": "ChatGPT Agent 能使用公司数据吗？",
+          "answer": "只能通过获批文件与 App，并受工作区权限、保留设置和公司政策约束。"
         },
         {
-          "question": "怎么判断 Agent 够不够可靠？",
-          "answer": "建立可版本管理的评估集，覆盖正常、缺失、含糊、冲突、无权访问、对抗、拒绝、升级和最大输入。按任务设置验收线与严重错误线，衡量事实依据、格式、工具行为、升级、人工修改时间和延迟；指令、模型、App、权限或信源变化后都要重跑。"
+          "question": "如何测试 ChatGPT Agent？",
+          "answer": "除了正常场景，还要测试资料缺失、来源冲突、权限失败、不安全请求与执行中断。"
         },
         {
-          "question": "ChatGPT Plugin 可以修改其他工具里的内容吗？",
-          "answer": "当 Plugin 包含已获准且提供相应动作的 App，并且用户或连接账号拥有权限时，可以执行受支持动作。具体可用性与确认方式由工作区和 App 控制。对外沟通、发布、删除、账号修改和其他高影响动作应保留审批。"
+          "question": "什么时候必须人工审批？",
+          "answer": "重要的外部写入、消息发送、购买、删除或生产记录变更之前必须审批。"
         },
         {
-          "question": "ChatGPT 工作流会跨对话记住内容吗？",
-          "answer": "不要用绝对的会或不会设计流程。ChatGPT Memory 会因套餐、地区、平台、工作区设置与可用来源而不同，旧 GPT 和 Plugin 也有不同产品规则。任务必需事实应放在明确输入或获准参考资料中，并在实际部署工作区测试。"
+          "question": "如何维护 ChatGPT Agent？",
+          "answer": "对指令进行版本管理，并在模型、知识、App 或权限变化后重跑固定评测集。"
         }
       ]
     },
@@ -7899,28 +7971,36 @@
     "/zh/blog/llm-knowledge-base-solo-operators": {
       "items": [
         {
-          "question": "单人创业者真的需要 LLM 知识库吗？",
-          "answer": "通常不需要——大多数单人创业者的瓶颈在执行，而不是知识。LLM 知识库是「参考记忆」，回答的是「关于 X 我知道什么」；它不会让「按你的格式写交付物、处理客户文档」这类执行变快——那需要的是「执行记忆」：嵌入工作本身的 AI。例外是真正研究密集的角色：数月里不断综合大量增长的领域素材，它才可能回本。"
+          "question": "什么是 LLM 知识库？",
+          "answer": "它是一套对资料建立索引，并选择相关原文片段来支撑模型回答的检索系统。"
         },
         {
-          "question": "LLM 知识库和第二大脑是一回事吗？",
-          "answer": "理念相似，执行不同。第二大脑（依 Tiago Forte 的框架）由你手动打理——你亲自连接想法、回访笔记；LLM 知识库则由 AI 从原始素材编译并维护：自动建反向链接、写概念摘要、跑「健康检查」找缺口。人工打理大大减少，但依然需要持续投喂。"
+          "question": "LLM 知识库等于 LLM Wiki 吗？",
+          "answer": "不等于。自动生成的 Wiki 只是一种呈现方式，知识库还包括导入、检索、权限、时效规则和评测。"
         },
         {
-          "question": "这不基本就是 RAG 吗？",
-          "answer": "恰恰相反。Karpathy 的做法刻意跳过了向量数据库与 embedding：wiki 就是一堆 markdown 文件，LLM 直接在其中导航——可读、可被人审计，个人规模下几乎零成本。RAG 只是一种检索技术，而这套方案去掉了那套复杂机制：与其说检索片段，不如说让模型直接「读整架书」。"
+          "question": "单人经营者什么时候需要 LLM 知识库？",
+          "answer": "当同一批资料会反复使用、手工搜索成本高，而且答案能通过引用回到原文核验时，它最有价值。"
         },
         {
-          "question": "自建并维护一套的真实成本有多大？",
-          "answer": "比想象中高。最小可用版本从「一个专注的周末」到数周迭代不等，才会稳定可信。更重的税是持续打理：决定什么该进、什么该删、何时重跑编译，本身就会变成一份「第二工作」。需要持续关照的系统，在忙起来的那一个月最先被弃用。"
+          "question": "什么时候应该跳过 LLM 知识库？",
+          "answer": "一次性任务、很小的资料集，或无人负责更新的高频变化资料，不适合建设永久知识库。"
         },
         {
-          "question": "想测试它适不适合我，最小可行版本怎么做？",
-          "answer": "从比你想象的更简单处开始。把一个月的研究笔记丢进一个文件夹，用带编译 prompt 的单次 Claude 或 GPT 会话跑一遍，看产出是否真的有用。在需要任何基础设施之前，清晰的结构化 prompt 就能起很大作用；如果结果让你觉得值，再投入建正式的摄入流水线。"
+          "question": "LLM 知识库能杜绝幻觉吗？",
+          "answer": "不能。引用与评测可以降低风险，但生成答案仍需对照原始证据复核。"
         },
         {
-          "question": "我以前试过知识系统后来放弃了，这次会不一样吗？",
-          "answer": "那取决于你放弃的原因。如果输在打理开销，AI 编译系统确实能减轻一部分；如果是因为检索价值撑不起维护成本，那是匹配度问题——LLM 知识库解决不了匹配度问题。重建之前，先诚实回答自己属于哪一种。"
+          "question": "LLM 知识库应该自建还是购买？",
+          "answer": "需要特殊资料处理或部署控制时自建；标准连接器与托管检索已经够用时选择成品。"
+        },
+        {
+          "question": "如何测试 LLM 知识库？",
+          "answer": "用真实问题覆盖精确查找、跨文档综合、来源冲突、证据缺失与合理拒答。"
+        },
+        {
+          "question": "LLM 知识库最大的隐性成本是什么？",
+          "answer": "最大的持续成本是处理失败导入、过期副本、访问控制、数据保留与删除。"
         }
       ]
     },
@@ -7955,28 +8035,36 @@
     "/zh/blog/meta-muse-spark-one-person-company": {
       "items": [
         {
-          "question": "我应该从 GPT-5.4 换成 Meta Muse Spark 吗？",
-          "answer": "短期看大概率不用——除非现在的模型在你工作里有具体、反复的痛点。切换意味着重写提示词与工作流、调试输出、重新适应怪癖；作者自己迁到 GPT-5.4 也约两个月才回本。Muse Spark 的提升真实但集中，先保主力、测完再定。"
+          "question": "Meta Muse Spark 是什么？",
+          "answer": "它是 Meta 面向工具调用、Agent 工作、编码及文档和视觉输入的托管多模态推理模型系列。"
         },
         {
-          "question": "Muse Spark 真的比 GPT-5.4 强吗？",
-          "answer": "取决于任务。总体上 Muse Spark 在综合智能指数落后（52 对 57），编码、computer-use、长程 agentic 也不如 GPT-5.4；但在 HealthBench Hard 与多模态任务上领先。Meta 也没把它包装成前沿碾压者。这只是一周亲测的数据点。"
+          "question": "当前 Muse Spark 是哪个版本？",
+          "answer": "截至 2026 年 10 月 13 日，Meta 开发者页面列出的当前型号是 Muse Spark 1.3。"
         },
         {
-          "question": "Muse Spark 是开源的吗？和 Llama 4 是什么关系？",
-          "answer": "Muse Spark 是闭源的，不像 Llama 4 开放权重。目前只能通过 meta.ai 与 Meta AI 应用访问，API 只对特定合作伙伴开放，Meta 仅「希望」未来开源。它是 Llama 4 风波后重建技术栈的首款产品，其「约十分之一算力」说法未经独立验证。"
+          "question": "Muse Spark 是 Llama 4 的开放权重替代品吗？",
+          "answer": "不是。Muse Spark 以托管产品起步；若要求开放权重或本地部署，必须核对具体许可证与制品。"
         },
         {
-          "question": "为什么有人换了模型就提效，有人换了没感觉？",
-          "answer": "因为改变产出的不是模型本身，而是工作流与模型之间的接口。作者认识用 GPT-3.5 产出比有些人用 GPT-5.4 还多的人——他们想清了该委托什么、自己做什么、何时用脚本兜底；也有人用着最新模型却毫无提升——因为他们把每段对话都当全新聊天，每次都从头重建上下文。"
+          "question": "一人公司如何使用 Muse Spark？",
+          "answer": "Meta 提供消费端入口和 Meta Model API 开发者路径，采用前应核对地区、版本与条款。"
         },
         {
-          "question": "「总想换模型」这个念头本身是不是问题？",
-          "answer": "往往是。想换的焦虑通常不是因为现在的模型不够好，而是工作流里某处还没被正视的摩擦。换模型给你一种「我在做点什么」的感觉，但底层摩擦还在，下次发布循环又起。换之前，先给真正的瓶颈命名——答案通常在那里，而不是在下一个模型里。"
+          "question": "应先测试哪些工作负载？",
+          "answer": "优先选择重复的多模态输入、有来源综合、边界明确的编码或浏览器任务，以及日常写作。"
         },
         {
-          "question": "想试试 Muse Spark，该怎么评估它？",
-          "answer": "把现有环境留作主力，只在某一类特定任务上跑 Muse Spark 两周——最好是能发挥它强项的那类：多模态处理、健康相关研究、轻量调研。把输出与基线对比，再决定要不要铺开。这两周里，多看看真正每天用它的人最后怎么说，往往比发布当天就全量切换更稳。"
+          "question": "如何与现有模型公平比较？",
+          "answer": "对同一批已完成任务使用相同来源、工具、输出契约、时限和评分标准。"
+        },
+        {
+          "question": "迁移成本应包括什么？",
+          "answer": "包括提示词、集成、评测、日志、复核规则、降级方案和人工时间。"
+        },
+        {
+          "question": "哪些情况不应切换到 Muse Spark？",
+          "answer": "现有流程已达标、迁移会干扰营收、本地部署是硬要求或关键工具不可用时，不必切换。"
         }
       ]
     },
@@ -8011,36 +8099,36 @@
     "/zh/blog/no-code-ai-agent-builder": {
       "items": [
         {
-          "question": "无代码 Agent 能每天可靠运行吗？",
-          "answer": "可以，但可靠性必须按完整工作流衡量，不能从平台 uptime 推断。应跟踪合格结果、错误动作、人工介入、重试以及连接器或 schema 变化后的恢复。运行显示完成，不代表结果正确。"
+          "question": "什么是无代码 AI Agent 搭建器？",
+          "answer": "它用可视化方式组合指令、模型、数据和工具，让模型在限定范围内选择动作，而不必从头编写整套编排层。"
         },
         {
-          "question": "无代码、低代码与工作区 AI 有什么区别？",
-          "answer": "无代码强调可视化搭建与托管连接器；低代码增加自定义代码、API，有时还能自托管。Agent Workspace 适合人持续检查文件与中间成果的探索型工作，搭建器适合事件驱动的重复流程。Copilot Studio 更适合归为微软治理体系内的托管低代码 Agent 平台。"
+          "question": "AI Agent 搭建器与传统自动化有什么区别？",
+          "answer": "传统自动化沿预先规定的路径执行；Agent 可以在获准工具或路径中做选择。可靠系统通常会把两者组合使用。"
         },
         {
-          "question": "什么类型的工作流最适合无代码搭建器？",
-          "answer": "优先选择输入可重复、工具权限窄、输出可逆且有明确复核者的流程。客服回复草稿、CRM 补全和会议后续都可以，但发送、发布、购买、删除与权限变更应继续保留审批。"
+          "question": "哪款无代码 AI Agent 搭建器最好？",
+          "answer": "没有适合所有任务的第一名。应按任务匹配、工具边界、确定性控制、可观测性、审批、数据处理、成本和可迁移性选择。"
         },
         {
-          "question": "没有开发者，我能自己修故障吗？",
-          "answer": "如果平台能展示输入、所选工具、参数、输出与错误，很多故障可以自己修：指令问题调整提示，数据问题增加过滤器与 schema。如果无法重放运行或工具路径不可见，就可能需要可观测性更强的低代码或代码系统。"
+          "question": "哪些流程适合无代码 Agent？",
+          "answer": "边界明确、会重复、输入可衡量、输出可撤销、已有连接器并有人复核的流程比较合适。"
         },
         {
-          "question": "什么时候应该完全避开无代码？",
-          "answer": "流程需要自定义鉴权、事务保证、高吞吐队列、严格的版本化测试、专用评估或内部系统深度集成时，应避开纯无代码。监管数据并不自动要求自托管，但必须审查存储、保留期、子处理方、凭据与访问控制。"
+          "question": "无代码 Agent 搭建器应具备哪些控制能力？",
+          "answer": "应核对窄权限工具、Schema、分支、重试、超时、外部动作前审批、详细运行记录、凭据控制以及可导出的测试资产。"
         },
         {
-          "question": "什么时候该从无代码升级到低代码？",
-          "answer": "当提示词里塞满本应成为测试的业务规则、宽权限凭据用来弥补工具控制不足、失败无法重放，或每个合格结果的成本失去优势时，就该迁移。把任务契约、schema、提示词和评估集保存在平台之外，可以降低重建成本。"
+          "question": "应该如何评估无代码 Agent 搭建器？",
+          "answer": "先写验收契约，用历史与对抗案例测试，从影子模式开始，只开放一个可逆写动作，再衡量结果、错误、恢复、时延与总成本。"
         },
         {
-          "question": "如何比较不同无代码 Agent 搭建器的价格？",
-          "answer": "按预计业务量建立完整场景，计算平台 operations 或 credits、模型用量、高级连接器、检索与存储、重试、测试运行和人工复核。比较每个合格结果的成本，并从厂商官方页面核对当前价格与权益。"
+          "question": "自托管搭建器一定更安全吗？",
+          "answer": "不一定。自托管可能增加控制权，也会把补丁、备份、监控、凭据保护和事故响应责任交给团队。"
         },
         {
-          "question": "允许 Agent 写入其他应用前应该测试什么？",
-          "answer": "先回放历史案例并运行影子模式，覆盖字段缺失、重复记录、证据冲突、工具故障、来源内容中的提示注入和越权请求。最初只开放创建草稿等可逆写入，高影响动作继续要求显式批准。"
+          "question": "什么时候应从无代码转向代码或 Agent Workspace？",
+          "answer": "自定义鉴权、高吞吐队列、事务保证和版本化测试更适合代码；目标变化频繁、需要人调整方向的探索工作更适合 Agent Workspace。"
         }
       ]
     },
@@ -8435,28 +8523,36 @@
     "/zh/blog/what-gstack-gets-right-about-one-person-businesses": {
       "items": [
         {
-          "question": "用角色化提示需要懂开发吗？",
-          "answer": "不需要。这篇文章里的一切在 Claude.ai、ChatGPT 或任何通用聊天界面里都成立——你改变的只是开场会话的方式，不需要安装工具。gstack 本身是给开发者用的 Claude Code 技能包，但底层的角色化模式可以转成一套非代码工作流：先说出认知模式、把阶段拆进不同会话、把摘要存档往前带。"
+          "question": "gstack 是什么？",
+          "answer": "它是一套开源 Claude Code 技能，覆盖产品发现、规划、设计、审查、浏览器 QA、发布与复盘。"
         },
         {
-          "question": "这不就是写个更好的提示词吗？",
-          "answer": "它是提示词里的一个特定模式。关键区别在于：你显式约束任务所需的认知框架——定义该优先什么、该忽略什么、什么算成功——而不只是加细节。而且「不该做什么」的约束，往往比你要求它做什么更有价值。"
+          "question": "非开发者能使用 gstack 方法吗？",
+          "answer": "其代码工具有开发者专用性，但阶段契约和审核门可以迁移到其他工作流。"
         },
         {
-          "question": "如果我不知道该用哪个角色怎么办？",
-          "answer": "这说明你处在前置阶段：先把问题本身搞清楚。那部分自己做，或显式跑一次自由探索会话——告诉模型你还没有明确的问题，想一起想想。对混沌期的问题过早强加角色，反而会收窄思路；等问题清晰了，再进入角色化阶段。"
+          "question": "给 AI 起角色名能提升输出质量吗？",
+          "answer": "不能单独做到。真正产生运营价值的是明确约束、可检查交付物、检查规则和停止条件。"
         },
         {
-          "question": "这对创意工作也适用吗？",
-          "answer": "适用——只是角色的样子不同。「发散式创意模式——先出十个方向、不做筛选」和「编辑模式——收紧、删减」不是一回事，但原理相同。要紧的不是角色标签：关于角色提示的研究结论并不一致，收益来自你绑在角色上的约束与范围。"
+          "question": "什么是阶段契约？",
+          "answer": "它定义阶段输入、一个边界明确的任务、规定输出、审核标准，以及停止或升级的条件。"
         },
         {
-          "question": "这和每个任务用独立工具有什么不同？",
-          "answer": "更轻。你是在一个工具内切换框架，而不是切换应用——拿到专业化的大部分好处，却不必付上下文切换的代价。系统提示词设定一般行为；角色化框架更进一步，把「这一步该优化什么」圈出来，更像有位专注的专家，而不是在一堆应用间来回倒腾。"
+          "question": "内容工作流如何应用这种方法？",
+          "answer": "把来源收集、事实核验、大纲批准、起草、编辑和发布拆成可审核的阶段。"
         },
         {
-          "question": "我设的角色能跨会话延续吗？",
-          "answer": "默认不能。gstack 的虚拟团队没有共享上下文——CEO 角色周二的洞见，周三就没了；同时跑多条工作流时，这是真实的摩擦。对策是手动的：把 3–5 句摘要存进下一个会话，或用一层替你保存上下文的工作区载体——Floatboat 的 Tacit Engine 正是这个方向，它随时间学习你的工作模式。"
+          "question": "为什么要在阶段之间保存交付物？",
+          "answer": "交付物让交接可检查，也允许只重跑一个阶段，而不必重新生成整条流程。"
+        },
+        {
+          "question": "gstack 类比在哪些地方会失效？",
+          "answer": "非代码工作通常缺少自动化测试，还可能带来法律、财务、隐私或客户后果。"
+        },
+        {
+          "question": "单人创始人最先应该复制什么？",
+          "answer": "从一个重复流程开始，设置明确审核门，并测量返工量与流程漏出的错误。"
         }
       ]
     },

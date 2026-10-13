@@ -14,6 +14,8 @@ draft: false
 
 比“哪家最好”更有价值的问题是：**哪一个平台为这项任务提供了足够的控制，同时没有让搭建与运维成本超过工作本身的价值？**
 
+> **信息核对截至 2026 年 10 月 13 日。** 下文涉及的产品名称、迁移状态、套餐可用性和预览标记均按厂商官方资料核对。购买或部署前，仍应在你的地区和账号内重新确认。
+
 ## 什么才算无代码 Agent 搭建器
 
 工作流里放一个文本生成节点，不一定就是 Agent。实际的 Agent 搭建器通常允许你定义目标、提供上下文、挂载一组工具，再由模型判断使用哪个工具或路径；传统自动化则严格沿着搭建者预先规定的路线运行。
@@ -28,14 +30,16 @@ draft: false
 
 | 平台 | 官方资料强调的能力 | 选型时必须核验的边界 |
 |---|---|---|
-| Zapier Agents | 连接业务数据与 Zapier 应用生态的专用 Agent | 用量计费、动作限制、日志深度与套餐上限 |
-| Make AI Agents | 画布内构建 Agent，将场景复用为工具并查看决策过程 | 新旧版本、模型提供商、credits 与记忆行为 |
+| Zapier Agents / 向 AI by Zapier 迁移 | 从获准动作中选择操作，并使用已连接的业务数据 | 迁移进度、activity 计量、字段限制与套餐上限 |
+| Make AI Agents (New) | Agent 位于 scenario 内，可调用模块、其他 scenario、MCP 工具并使用知识文件 | 当前版本可用性、模型提供商、credits 与对话行为 |
 | n8n | 将 AI Agent 节点与普通工作流、代码及 API 组合，可云托管或自托管 | 基础设施责任、凭据安全、节点与版本维护 |
-| Microsoft Copilot Studio | 在微软托管生态内以图形界面和自然语言创建 Agent | 租户许可、环境治理、连接器权益与容量 |
+| Microsoft Copilot Studio | 托管 Agent 搭配确定性 agent flow、AI 动作与人工介入步骤 | 租户许可、环境、DLP、连接器权益、容量与预览状态 |
 
-Zapier 的[官方 Agents 页面](https://zapier.com/agents)强调企业知识、活动监控、网页操作和应用连接；Make 的[当前 AI Agents 页面](https://www.make.com/en/ai-agents)强调画布内可见性、工具复用与决策查看；[n8n AI 文档](https://docs.n8n.io/advanced-ai/)展示如何把 Agent 节点放入普通工作流；微软将 [Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio)定义为支持图形与自然语言创作的托管平台。
+Zapier 当前的 [Agents 动作指南](https://help.zapier.com/hc/en-us/articles/26028298697485-Use-actions-on-Zapier-Agents)明确说明该产品正在迁往 AI by Zapier，并解释了动作选择、字段限制与 activity 消耗方式。迁移期间，不能默认新旧入口的能力完全一致。Make 的[当前 Agent 指南](https://help.make.com/create-your-first-ai-agent)把 Agent 放在 scenario 内，要求配置工具、指令并先测试；[scenario 输入输出文档](https://help.make.com/scenario-inputs-and-outputs)则说明如何给可复用 scenario 定义结构化契约。[n8n AI 文档](https://docs.n8n.io/advanced-ai/)展示如何把 Agent 节点放入普通工作流，其[运行记录文档](https://docs.n8n.io/workflows/executions/all-executions/)补充了执行历史与重试行为。微软的 [agent flow 概览](https://learn.microsoft.com/zh-cn/microsoft-copilot-studio/flows-overview)覆盖确定性流程、AI 动作、人工介入、版本管理与通过 solution 导入导出。
 
 这些是厂商能力说明，不是特定流程可靠性的证据。购买前应从官方定价与许可页面重新核对当时的地区、套餐、credits、连接器和预览状态。价格与权益变化频繁，不适合作为没有核验日期的长期比较结论。
+
+如果需要先拉一份更宽的候选清单，可以参考 [AI Agent Builder 对比](/zh/blog/best-ai-agent-builder-2026)，先区分工作流产品、Agent Workspace 与开发平台，再做厂商选择。这两个决定不要混在一起。
 
 ## 比功能数量更重要的七个维度
 
@@ -49,7 +53,7 @@ Agent 能否只调用指定动作？能否约束字段和参数？“创建客�
 
 ### 3. 可观测性
 
-每次运行至少要看到原始输入、所选工具、参数、结果、错误、最终输出、耗时与成本。一个绿色“完成”状态不够。Make 当前官方资料明确强调逐步决策可见性；评估其他平台时也应验证同等深度。
+每次运行至少要看到原始输入、所选工具、参数、结果、错误、最终输出、耗时与成本。一个绿色“完成”状态不够。每个平台都应现场打开一次真实失败记录；营销截图无法证明日志保留、重放行为，也无法证明第二位操作者能定位问题。
 
 ### 4. 人工审批
 

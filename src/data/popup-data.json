@@ -312,12 +312,12 @@
     },
     "browser-ai-agent-security-questions": {
       "en": {
-        "title": "Keep the browser task inside a visible boundary",
-        "body": "Floatboat keeps the files, tools, permissions, approval points, and resulting artifacts together so browser work can be reviewed before it becomes an external action."
+        "title": "Review the boundary before the browser agent acts",
+        "body": "Check site access, data handling, prompt-injection controls, final-step approvals, audit records, and recovery before granting an authenticated session."
       },
       "zh": {
-        "title": "让浏览器任务始终留在可见边界内",
-        "body": "Floatboat 把文件、工具、权限、审批点与产物放在一起，让浏览器工作在变成外部动作前得到审阅。"
+        "title": "浏览器 Agent 行动前，先审查安全边界",
+        "body": "开放已登录会话前，检查站点权限、数据处理、提示注入防护、最后一步审批、审计记录与恢复路径。"
       }
     },
     "browser-ai-agent-what-it-can-do": {
@@ -373,11 +373,11 @@
     "claude-managed-agents-one-person-company": {
       "en": {
         "title": "Managed agents for a one-person company",
-        "body": "Hosting changes the math the moment agents can inherit your schedule."
+        "body": "A hosted runtime helps only when the workflow has clear permissions, review gates, and failure handling."
       },
       "zh": {
         "title": "托管 Agent 与一人公司",
-        "body": "当托管 Agent 能继承你的日程，账就算得过来了。"
+        "body": "只有流程具备清晰权限、审核门与失败处理时，托管运行时才真正有价值。"
       }
     },
     "codex-for-chrome-vs-claude-for-chrome": {
@@ -492,12 +492,12 @@
     },
     "effort-control-fast-mode-ai-work": {
       "en": {
-        "title": "Effort control: think hard or move fast",
-        "body": "Routine tasks get fast mode; the ones on your calendar earn the deep thinking."
+        "title": "Spend reasoning and speed where they change the result",
+        "body": "Choose effort by ambiguity and consequence; pay for faster output only when waiting blocks a person or dependent step."
       },
       "zh": {
-        "title": "力度控制：深想还是快跑",
-        "body": "例行任务开快档，上了日程的正事才配深度思考。"
+        "title": "把推理和速度用在真正改变结果的地方",
+        "body": "按歧义和错误后果选择 Effort；只有等待会卡住人或后续步骤时，才为更快输出付费。"
       }
     },
     "feishu-cli-solo-work-setup": {
@@ -582,12 +582,12 @@
     },
     "genspark-vs-manus": {
       "en": {
-        "title": "Genspark vs Manus, minus the hype",
-        "body": "The verdict is drawn by workflow — and neither one touches your calendar."
+        "title": "Genspark vs Manus: test the workflow",
+        "body": "Compare evidence, artifacts, permissions, repeatability, and workload cost—not demo autonomy."
       },
       "zh": {
-        "title": "Genspark 对 Manus，拒绝吹捧",
-        "body": "按工作流分高下，也别忘了两家都没碰你的日历。"
+        "title": "Genspark 对比 Manus：用任务实测",
+        "body": "比较证据、交付物、权限、重复稳定性与工作量成本，而不是演示中的自主程度。"
       }
     },
     "glm-5-3": {
@@ -872,12 +872,12 @@
     },
     "llm-knowledge-base-solo-operators": {
       "en": {
-        "title": "An LLM knowledge base: build it?",
-        "body": "The honest cost case, set against agents that already read your working context."
+        "title": "Should you build an LLM knowledge base?",
+        "body": "Compare retrieval value with ingestion, freshness, access, and review costs."
       },
       "zh": {
-        "title": "要不要给自己建 LLM 知识库",
-        "body": "成本账算完，再对比一下已经会读你工作上下文的 Agent。"
+        "title": "要不要搭 LLM 知识库？",
+        "body": "把检索收益与导入、时效、权限和复核成本放在一起比较。"
       }
     },
     "manus-ai-alternatives-2026": {
@@ -892,12 +892,12 @@
     },
     "meta-muse-spark-one-person-company": {
       "en": {
-        "title": "Meta Muse Spark, before you switch",
-        "body": "The Llama 4 replacement claim, tested against one-person workflows."
+        "title": "Evaluate Muse Spark before you migrate",
+        "body": "Test the current version on a narrow real workflow, include review and migration costs, and switch only where accepted output improves."
       },
       "zh": {
-        "title": "换 Meta Muse Spark 前想清楚",
-        "body": "「Llama 4 替代品」这个说法，放到一人公司的工作流里再验一次。"
+        "title": "迁移前先评估 Muse Spark",
+        "body": "用当前版本测试一条真实窄路径，把复核与迁移成本算进去，只在通过审核的产出确实改善时切换。"
       }
     },
     "minimax-h3-max-infinite-ai-livestream": {
@@ -1012,12 +1012,12 @@
     },
     "what-gstack-gets-right-about-one-person-businesses": {
       "en": {
-        "title": "What gstack got right",
-        "body": "The viral insight is not about code: give AI a role and it sticks."
+        "title": "What gstack gets right for solo work",
+        "body": "The transferable lesson is explicit stages, artifacts, review gates, and stop conditions—not role-play alone."
       },
       "zh": {
-        "title": "gstack 说对的那件事",
-        "body": "爆火的洞察与代码无关：给 AI 一个角色，它就能一直干下去。"
+        "title": "gstack 对单人工作真正有用的地方",
+        "body": "可迁移的是明确阶段、交付物、审核门和停止条件，而不是单纯给 AI 安排角色。"
       }
     },
     "what-if-your-calendar-could-run-itself": {

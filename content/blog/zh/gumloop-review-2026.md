@@ -1,6 +1,6 @@
 ---
 title: "Gumloop 评测 2026：功能很强，但适合你吗？"
-description: "Gumloop 能自动化复杂工作流——但谁才是真正从中获益的人？这篇评测诚实拆解它擅长什么、短板在哪里、到底为谁而生，覆盖可视化流程构建、学习曲线、credit 定价体系与适用人群。"
+description: "2026 年 Gumloop 评测：区分 Flow 与 Agent，核对运行身份和权限、当前成本结构、执行可见性与故障恢复，并提供一套可复现的采用试点方法，帮助团队判断哪些流程值得上线、哪些不应交给 Agent。"
 slug: "gumloop-review-2026"
 date: "2026-03-23"
 author: "Nova"
@@ -14,11 +14,11 @@ Gumloop 更准确的定位，是一层面向重复、多步骤工作的可视化
 
 先给结论：**如果团队能说清楚一项重复工作的输入、判断、外部动作和合格输出，Gumloop 值得进入试点。** 如果需求只是偶发任务、模糊的「AI 员工」想象，或者出错后果无法控制，它就未必合适。本文不打一个适用于所有人的总分，而是给出一套可以复跑的评测方法。
 
-> **资料核验时间：2026 年 10 月 10 日。** 本文依据 Gumloop 官方产品文档、定价公告与支持文档。功能和计费可能因套餐而异；正式上线前，应以你的工作区实际提供的控制项为准。
+> **信息核对截至 2026 年 10 月 13 日。** 本文依据 Gumloop 官方产品文档、定价公告与支持文档。功能和计费可能因套餐而异；正式上线前，应以你的工作区实际提供的控制项为准。
 
 ## 2026 年的 Gumloop 到底是什么
 
-Gumloop 的基本单位是 flow：节点接收输入，根据参数处理，再把输出交给下一个节点。官方 [Gumloop 文档](https://docs.gumloop.com/nodes/data_writers/csv_to_xlsx)列出了数据读取、AI 处理、文本与列表操作、流程控制和应用集成等节点。流程可以由定时任务、邮件、Slack 消息、Webhook 等事件触发；subflow 用来复用逻辑；interface 让同事通过简化界面运行流程，不必进入画布。
+Gumloop 目前有两种执行模型。**Flow** 用连接好的节点接收输入、套用参数，并沿明确路径传递输出；Gumloop 官方的 [Flow 教程](https://www.gumloop.com/blog/notion-chatgpt-integration)也说明了可复用的 Subflow。**Agent** 则会围绕目标在获准工具中选择动作，具体机制见当前的 [Agents 指南](https://docs.gumloop.com/core-concepts/agents)。[触发器文档](https://docs.gumloop.com/core-concepts/agent_triggers)分别说明了定时、Webhook、应用事件和一次性启动。旧版 Interface 文档目前会跳转到 Hosted Pages，因此本文不假设该旧功能仍以相同名称或套餐提供。
 
 Agent 是另一种执行方式。固定 flow 预先规定每一步怎么走；Agent 会在运行时从获准工具中选择动作。Gumloop 也允许把 Agent Node 放进确定性工作流。这个混合方式很实用：可预测的部分继续明确编排，只有真正需要语义判断的环节才交给 Agent。
 
@@ -44,6 +44,8 @@ Agent 是另一种执行方式。固定 flow 预先规定每一步怎么走；Ag
 Gumloop 官方文档覆盖 Google Workspace、Slack、Salesforce、Airtable、GitHub、Outlook 等业务系统。评估时不要只数连接器数量。一个连接器可能只有单一读取动作，另一个却能修改大范围数据；真正要核对的是你所需的具体操作。
 
 每条连接至少记录认证方式、申请的 scope、可读写资源、凭据负责人、复用权限、人员离开后的处理方式，以及撤销和轮换流程。Gumloop 的 [MCP 文档](https://docs.gumloop.com/nodes/mcp/gamma)显示，团队可以逐项启用或停用 Agent 工具。只需读取演示文稿的研究 Agent，不该同时拿到创建工具；邮件流程在试点期也应先保存草稿，而不是直接发送。
+
+触发方式还可能改变一次运行使用谁的身份和凭据。Gumloop 当前的[团队部署说明](https://support.gumloop.com/articles/4970577938-how-do-i-roll-out-an-agent-to-my-whole-team-or-company)区分了两种情况：Slack 中直接 @Agent 的请求可以按消息发送者的身份运行，而频道触发器则按触发器所有者的身份运行。这不是界面细节，而是访问控制决策；每开放一种交付渠道，都应单独核验实际身份行为。
 
 工作区协作有利于共同维护，但共享资产也会扩大错误配置的影响范围。把 flow、Agent、连接和共享模板都当作生产资产管理。对发布、付款、删除、客户触达等高影响动作，最好把构建者和批准者分开。
 

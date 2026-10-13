@@ -14,6 +14,8 @@ A browser AI agent does not need your password in plain text to act with your au
 
 That changes the security question. The issue is not simply whether the model provider is trustworthy. It is whether untrusted page content, broad browser access, an ambiguous instruction, or a compromised connected service can cause the agent to read the wrong data or take the wrong action. The five questions below turn that broad concern into a practical evaluation.
 
+This checklist was re-verified on **October 13, 2026**. Product permissions and safeguards change, so inspect the current browser manifest, vendor documentation, and enterprise terms before each rollout. If you are still deciding which product category you need, first compare an [AI browser, browser agent, and agent workspace](/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace); their security boundaries are not interchangeable.
+
 ## The Browser-Agent Threat Model
 
 A useful threat model separates four actors:
