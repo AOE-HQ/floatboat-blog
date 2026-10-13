@@ -1,0 +1,27 @@
+{
+  "slug": "for-small-business", "locale": "zh",
+  "seo": {"title": "小企业 AI Agent Workspace | Floatboat", "description": "面向小企业经营者和团队的 AI Agent Workspace，用于准备客户工作、协调日常运营、整理周期文件，并由员工和经营者保留关键审批。", "keywords": ["小企业 AI", "企业 AI Agent", "小企业自动化", "AI 工作空间", "小团队效率工具"]},
+  "breadcrumb": "小企业经营者与团队",
+  "hero": {"eyebrow": "减少系统之间的运营断点", "title": "小企业的 AI Agent Workspace", "description": "把客户请求、运营文件、员工交接、周期复盘和经营决定连在一起，得到可以继续修改的工作成果，而不是再增加一个需要维护的待办队列。", "primaryCta": {"label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-small-business&download_placement=hero"}, "secondaryCta": {"label": "查看工作流", "href": "#workflows"}, "proof": ["围绕现有业务文件工作", "所有产出都能由员工复核", "对外行动需要人工批准"], "preview": {"label": "运营工作空间", "matter": "客户需求 · 报价与交付", "inputs": ["客户消息", "服务与价格表", "历史交付记录"], "outputs": ["回复初稿", "报价工作表", "交付清单"], "review": "团队审批"}},
+  "burdens": {"eyebrow": "业务系统之间的空隙", "title": "小团队在每次交接中消耗时间", "description": "客户、运营、财务和排程系统分别保存一部分信息，员工仍要靠人工拼出一项工作的完整背景。", "items": [
+    {"label": "接洽", "title": "客户需求往往并不完整", "description": "回复之前还要补齐范围、时间、价格、库存或服务细节，避免过早作出错误承诺。"},
+    {"label": "交接", "title": "下一位同事看不到完整任务", "description": "消息、文件、承诺和变化分散在不同工具，接手的人只能再次询问相同问题。"},
+    {"label": "例行工作", "title": "周期行政事务仍然靠人启动", "description": "每周更新、供应商检查、客户跟进和经营报告，都依赖某个人记得下一步。"},
+    {"label": "控制", "title": "自动化速度可能超过内部规则", "description": "准备好报价或消息很有用，但未经价格、权限与负责人确认就发送，会带来新的风险。"}
+  ]},
+  "workflows": {"eyebrow": "三条运营流程", "title": "先处理跨角色、跨工具的准备工作", "description": "这些流程整理现有业务信息，并在涉及客户、财务或政策承诺之前停下来。", "items": [
+    {"number": "01", "title": "把客户需求变成工作包", "job": "将客户请求与核准的服务信息、历史记录和待补问题整理到一起。", "flow": ["记录需求", "检查业务文件", "找出缺口", "准备回复和工作包"], "output": "回复初稿、报价工作表、关键假设和交付清单。", "boundary": "员工确认价格、可用性、条款、收件人和所有客户承诺。"},
+    {"number": "02", "title": "完成一次运营交接", "job": "把文件、历史决定、职责、截止时间与未解决问题整理成一份交接简报。", "flow": ["选择任务背景", "恢复历史决定", "标出建议负责人", "审阅交接内容"], "output": "交接简报、文件索引、行动清单和开放问题。", "boundary": "管理者确认职责、权限、截止时间和运营计划变化。"},
+    {"number": "03", "title": "准备每周经营复盘", "job": "围绕待决定事项，汇总已经确认的客户、运营、现金、人员和供应商更新。", "flow": ["汇总核准更新", "按主题整理变化", "找出异常", "起草复盘材料"], "output": "包含来源、异常与决策提示的简明运营报告。", "boundary": "经营者核验数字，并决定优先级、支出、人员与对外行动。"}
+  ]},
+  "faq": {"title": "小企业使用 AI 工作空间的常见问题", "description": "小企业需要的是尊重正式系统、员工权限、客户承诺和经营者审批的实用自动化。", "items": [
+    {"question": "Floatboat 会替代 CRM、财务或项目系统吗？", "answer": "不会。这些系统仍然保存正式记录。Floatboat 根据团队获准使用的文件与信息，协助准备跨系统工作。"},
+    {"question": "它可以自动向客户报价吗？", "answer": "它能按照核准价格与范围准备报价工作表，但发送前应由获授权人员确认价格、可用性、条款与收件人。"},
+    {"question": "多名员工可以使用同一条流程吗？", "answer": "可以在具备适当访问、负责人和审批规则后共享流程。团队共享并不意味着每个人都应该看到全部文件。"},
+    {"question": "客户与员工信息应该怎样处理？", "answer": "遵守适用政策与义务，尽量减少使用的数据，按角色限制访问，并核查每个所选模型与连接器的数据处理方式。"},
+    {"question": "它可以写入外部业务系统吗？", "answer": "这取决于当前集成与权限。写入、发送、财务变化和不可逆操作都应设置为单独的审批点。"},
+    {"question": "小企业最适合先自动化什么？", "answer": "先选择客户接洽工作包或每周经营简报这类重复准备任务，不要从高风险决定或无人监督的对外行动开始。"},
+    {"question": "它与一人公司的工作流有什么不同？", "answer": "小企业页面更关注多人交接、按角色授权和共同审阅；一人公司页面更关注同一个人在多个业务角色之间切换。"}
+  ]},
+  "finalCta": {"eyebrow": "从一次重复交接开始", "title": "连接业务系统之间的工作", "description": "选择一条输入已知、负责人明确的客户或运营流程。先改善交接，再逐步扩大自动化范围。", "primaryCta": {"label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-small-business&download_placement=final_cta"}, "secondaryCta": {"label": "了解 Agent Workspace", "href": "/zh/agent-workspace"}}
+}

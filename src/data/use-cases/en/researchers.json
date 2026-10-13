@@ -1,0 +1,272 @@
+{
+  "slug": "researchers",
+  "locale": "en",
+  "seo": {
+    "title": "Agent Workspace for Researchers | Floatboat",
+    "description": "An AI agent workspace for researchers to collect sources, build evidence matrices, compare findings, draft literature reviews, and maintain research briefs.",
+    "keywords": [
+      "AI for researchers",
+      "AI research assistant",
+      "literature review AI",
+      "evidence synthesis",
+      "research workflow",
+      "research productivity"
+    ]
+  },
+  "breadcrumb": "researchers and insight teams",
+  "hero": {
+    "eyebrow": "A configurable AI workspace for real work",
+    "title": "An AI agent workspace for researchers and insight teams",
+    "description": "Collect sources, build evidence matrices, compare findings, and maintain recurring research briefs while preserving human verification and methodology.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-researchers&download_placement=hero"
+    },
+    "secondaryCta": {
+      "label": "Explore sample workflows",
+      "href": "#workflows"
+    },
+    "proof": [
+      "Works from approved materials",
+      "Every output stays editable",
+      "Human approval before consequential action"
+    ],
+    "preview": {
+      "label": "Illustrative workspace",
+      "matter": "Market transition · Evidence workspace",
+      "inputs": [
+        "Research question",
+        "Approved sources",
+        "Coding framework"
+      ],
+      "outputs": [
+        "Source map",
+        "Evidence matrix",
+        "Synthesis outline"
+      ],
+      "review": "Human review"
+    }
+  },
+  "burdens": {
+    "eyebrow": "The repetitive work around the profession",
+    "title": "researchers and insight teams should not spend their best hours rebuilding context.",
+    "description": "Research quality erodes when collection outpaces classification, notes lose their sources, and conflicting findings are flattened into a convenient summary.",
+    "items": [
+      {
+        "label": "Context",
+        "title": "Source collection outgrows bookmarks",
+        "description": "Search results, papers, reports, datasets, and archived pages quickly exceed what browser tabs and bookmarks can explain."
+      },
+      {
+        "label": "Format",
+        "title": "Notes lose their evidence trail",
+        "description": "A useful observation becomes unreliable when its quotation, page, method, publication date, or retrieval context disappears."
+      },
+      {
+        "label": "Coordination",
+        "title": "Conflicting findings need structure",
+        "description": "Studies can disagree because of sample, method, scope, or date; a prose summary often hides those reasons."
+      },
+      {
+        "label": "Continuity",
+        "title": "Monitoring work never really ends",
+        "description": "New publications keep arriving, but few deserve to reopen the evidence matrix or change the current conclusion."
+      }
+    ]
+  },
+  "buildingBlocks": {
+    "eyebrow": "General capabilities, professional context",
+    "title": "Compose the workflow from practical building blocks.",
+    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "items": [
+      {
+        "action": "Read",
+        "example": "Start from approved files, records, and sources rather than an empty prompt.",
+        "result": "A grounded working set."
+      },
+      {
+        "action": "Organize",
+        "example": "Classify material, normalize names, and identify missing inputs.",
+        "result": "A navigable project structure."
+      },
+      {
+        "action": "Extract",
+        "example": "Pull facts, dates, data, claims, and open questions.",
+        "result": "Structured content ready to verify."
+      },
+      {
+        "action": "Compare",
+        "example": "Contrast versions, standards, periods, or alternatives.",
+        "result": "A focused list of changes and differences."
+      },
+      {
+        "action": "Create",
+        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
+        "result": "Editable work products."
+      },
+      {
+        "action": "Repeat",
+        "example": "Save proven steps, formats, and approval points.",
+        "result": "A reusable workflow shaped by the team."
+      }
+    ]
+  },
+  "workflows": {
+    "eyebrow": "Three configurable starting points",
+    "title": "Start from real assignments, not a fixed professional playbook.",
+    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Prepare a literature review",
+        "job": "Turn a defined question and source set into a searchable inventory and thematic synthesis.",
+        "flow": [
+          "Set scope",
+          "Collect sources",
+          "Code findings",
+          "Draft synthesis"
+        ],
+        "output": "A source inventory, themes, gaps, and review outline.",
+        "boundary": "Researchers verify inclusion criteria, citations, methods, and interpretation."
+      },
+      {
+        "number": "02",
+        "title": "Build an evidence matrix",
+        "job": "Compare claims, samples, methods, dates, and limitations across a selected body of work.",
+        "flow": [
+          "Define fields",
+          "Extract evidence",
+          "Compare studies",
+          "Flag conflicts"
+        ],
+        "output": "A traceable matrix of findings and limitations.",
+        "boundary": "The researcher resolves ambiguity and decides evidentiary weight."
+      },
+      {
+        "number": "03",
+        "title": "Run recurring topic monitoring",
+        "job": "Track selected publications and update a living brief when meaningful evidence appears.",
+        "flow": [
+          "Define watchlist",
+          "Collect updates",
+          "Classify changes",
+          "Publish brief"
+        ],
+        "output": "A dated update with new evidence and unresolved questions.",
+        "boundary": "Humans approve sources and decide whether an update changes the conclusion."
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Your method remains the method",
+    "title": "Bring the standards your team already trusts.",
+    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "inputsLabel": "Define the working context",
+    "inputs": [
+      "Approved files and data sources",
+      "Team templates and terminology",
+      "Checklists or evaluation criteria",
+      "Delivery format and naming rules",
+      "Scope, date, and audience"
+    ],
+    "controlsLabel": "Define the control points",
+    "controls": [
+      "What the agent may read or change",
+      "Which steps require a question",
+      "Who reviews each output",
+      "What must never be sent automatically",
+      "What can be saved and shared"
+    ]
+  },
+  "progression": {
+    "eyebrow": "From one task to a reusable system",
+    "title": "Start with one bounded assignment. Keep only what proves useful.",
+    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "items": [
+      {
+        "label": "Ad hoc",
+        "title": "Complete one deliverable",
+        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+      },
+      {
+        "label": "Saved workflow",
+        "title": "Reuse the successful method",
+        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+      },
+      {
+        "label": "Team practice",
+        "title": "Share a controlled starting point",
+        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "Human-controlled by design",
+    "title": "Automate preparation, not professional responsibility.",
+    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
+    "assistsTitle": "Floatboat can help prepare",
+    "assists": [
+      "Source indexes, context briefs, and evidence maps",
+      "Comparisons, extracted fields, and open questions",
+      "Meeting packs, status summaries, and communication drafts",
+      "Grounded outlines, reports, and editable first drafts",
+      "Recurring updates from approved materials"
+    ],
+    "retainsTitle": "researchers and insight teams retain",
+    "retains": [
+      "Professional interpretation and final judgment",
+      "Verification of facts, data, and sources",
+      "Privacy, access, and sensitive-information decisions",
+      "Strategy, priority, and resource decisions",
+      "Approval for every external publication, submission, or consequential action"
+    ],
+    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+  },
+  "faq": {
+    "title": "AI workspace questions for researchers and insight teams",
+    "description": "Researchers need provenance, explicit inclusion rules, and a clear separation between source extraction and interpretation.",
+    "items": [
+      {
+        "question": "Is Floatboat a reference manager or academic database?",
+        "answer": "No. Keep your authoritative databases and citation manager. Floatboat helps turn a selected source set into searchable notes, comparison tables, research briefs, and repeatable monitoring workflows."
+      },
+      {
+        "question": "Can it decide which evidence is credible?",
+        "answer": "It can expose methods, dates, samples, claims, and limitations, but the researcher defines inclusion criteria, resolves ambiguity, weighs evidence, and owns the interpretation."
+      },
+      {
+        "question": "Can we define our own review protocol and evidence fields?",
+        "answer": "Yes. Configure the question, databases or source set, date range, inclusion rules, extraction schema, quality checks, and output format for each project."
+      },
+      {
+        "question": "How do we prevent fabricated citations or unsupported synthesis?",
+        "answer": "Require every extracted claim to retain its source location, keep unavailable evidence marked as unavailable, and verify citations, quotations, and numerical findings before using the synthesis."
+      },
+      {
+        "question": "Can unpublished or restricted research material be used?",
+        "answer": "Only when permissions, agreements, and organizational policy allow it. Separate restricted projects, limit access, and review how each selected model and connector processes the material."
+      },
+      {
+        "question": "Will it update a literature review automatically?",
+        "answer": "It can monitor approved sources and draft a dated change brief, but a researcher should decide which new items meet the protocol and whether they alter the review."
+      },
+      {
+        "question": "What is a good first research workflow?",
+        "answer": "Choose a small, known corpus and define the extraction fields in advance. Build an evidence matrix, audit it against the originals, and only then expand the source set."
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Start from one real assignment",
+    "title": "Give the repetitive preparation around researchers and insight teams a better workspace.",
+    "description": "Start with one bounded corpus and an explicit extraction schema. Build a source trail that survives beyond the first summary.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-researchers&download_placement=final_cta"
+    },
+    "secondaryCta": {
+      "label": "Explore Agent Workspace",
+      "href": "/agent-workspace"
+    }
+  }
+}

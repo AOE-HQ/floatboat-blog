@@ -18,8 +18,8 @@
      --ob-color-text-subtle (alias) → #423f3b          secondary body
      --ob-color-primary    #171717  → #f7d68b          CTA yellow
      --ob-color-primary-fg #ffffff  → #1b1a18          on-yellow ink
-     --ob-color-accent     #0070f3  → #6466f1          brand violet (sparing)
-     --ob-color-accent-hover (alias)→ #5558e8
+     --ob-color-accent     #0070f3  → #1b1a18          warm black emphasis
+     --ob-color-accent-hover (alias)→ #3b3935
      --ob-color-border     #ebebeb  → rgb(0 0 0/.08)   hairline
      --ob-color-code-bg    #0a0a0a  → #262420          warm-near-black code
      --ob-color-code-fg    #fafafa  → #f7f5f1
@@ -37,8 +37,8 @@
   --ob-color-text-subtle: #423f3b;
   --ob-color-primary: #f7d68b;
   --ob-color-primary-fg: #1b1a18;
-  --ob-color-accent: #6466f1;
-  --ob-color-accent-hover: #5558e8;
+  --ob-color-accent: #1b1a18;
+  --ob-color-accent-hover: #3b3935;
   --ob-color-border: rgb(0 0 0 / 0.08);
   --ob-color-code-bg: #262420;
   --ob-color-code-fg: #f7f5f1;
@@ -97,26 +97,23 @@
   --ob-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Warm dark variant. Light-first: dark only reacts to system preference and
-   mirrors the geist system hook (html.ob-theme-system). */
-@media (prefers-color-scheme: dark) {
-  :root.ob-theme-system {
-    --ob-color-bg: #201e1b;
-    --ob-color-surface: #2a2723;
-    --ob-color-text: #ede8e2;
-    --ob-color-muted: #a8a29a;
-    --ob-color-text-muted: #a8a29a;
-    --ob-color-text-subtle: #d4cec6;
-    --ob-color-primary: #f7d68b;
-    --ob-color-primary-fg: #1b1a18;
-    --ob-color-accent: #8b8df8;
-    --ob-color-accent-hover: #a4a6fa;
-    --ob-color-border: rgb(255 255 255 / 0.1);
-    --ob-color-code-bg: #121110;
-    --ob-color-code-fg: #e9e4dc;
-    --ob-color-image-slot: #2c2a27;
-    --ob-shadow-raised: 0 1px 2px rgb(0 0 0 / 0.3);
-  }
+/* Use Cases is a light editorial surface. Keep its neutral hierarchy stable
+   when the site follows a dark system preference; product demos provide the
+   only intentional dark panels inside this template. */
+.use-cases-theme {
+  color-scheme: light;
+  --ob-color-bg: #f0eeeb;
+  --ob-color-surface: #fbfaf8;
+  --ob-color-text: #1b1a18;
+  --ob-color-muted: #7a7671;
+  --ob-color-text-muted: #7a7671;
+  --ob-color-text-subtle: #423f3b;
+  --ob-color-primary: #f7d68b;
+  --ob-color-primary-fg: #1b1a18;
+  --ob-color-primary-hover: #f3cf79;
+  --ob-color-accent: #1b1a18;
+  --ob-color-accent-hover: #3b3935;
+  --ob-color-border: rgb(0 0 0 / 0.08);
 }
 
 @keyframes ob-image-shimmer {
@@ -152,17 +149,4 @@
   );
   transform: translateX(-100%);
   animation: ob-image-shimmer 1.4s ease-in-out infinite;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root.ob-theme-system .ob-image-shimmer-bar::after {
-    background: linear-gradient(
-      105deg,
-      transparent 0%,
-      transparent 38%,
-      rgb(255 255 255 / 0.18) 50%,
-      transparent 62%,
-      transparent 100%
-    );
-  }
 }

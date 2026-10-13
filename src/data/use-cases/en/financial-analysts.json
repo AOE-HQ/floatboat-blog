@@ -1,0 +1,272 @@
+{
+  "slug": "financial-analysts",
+  "locale": "en",
+  "seo": {
+    "title": "Agent Workspace for Financial Analysts | Floatboat",
+    "description": "An AI agent workspace for financial analysts to organize source data, prepare variance commentary, build research packets, and maintain recurring monitoring.",
+    "keywords": [
+      "AI for financial analysts",
+      "financial analysis AI",
+      "AI financial research",
+      "variance analysis",
+      "financial reporting automation",
+      "investment research workflow"
+    ]
+  },
+  "breadcrumb": "financial analysts and finance teams",
+  "hero": {
+    "eyebrow": "A configurable AI workspace for real work",
+    "title": "An AI agent workspace for financial analysts and finance teams",
+    "description": "Organize financial sources, prepare variance commentary, build research packets, and maintain recurring monitoring with reviewable assumptions.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-financial-analysts&download_placement=hero"
+    },
+    "secondaryCta": {
+      "label": "Explore sample workflows",
+      "href": "#workflows"
+    },
+    "proof": [
+      "Works from approved materials",
+      "Every output stays editable",
+      "Human approval before consequential action"
+    ],
+    "preview": {
+      "label": "Illustrative workspace",
+      "matter": "Quarterly review · Analysis workspace",
+      "inputs": [
+        "Financial statements",
+        "Operating metrics",
+        "Assumption set"
+      ],
+      "outputs": [
+        "Variance table",
+        "Question list",
+        "Review narrative"
+      ],
+      "review": "Human review"
+    }
+  },
+  "burdens": {
+    "eyebrow": "The repetitive work around the profession",
+    "title": "financial analysts and finance teams should not spend their best hours rebuilding context.",
+    "description": "Financial analysis breaks down when updated numbers, operating explanations, model assumptions, and management commentary no longer reconcile to the same period and source.",
+    "items": [
+      {
+        "label": "Context",
+        "title": "Numbers and narrative live apart",
+        "description": "A workbook may show the movement while filings, transcripts, emails, and operating notes contain the explanation."
+      },
+      {
+        "label": "Format",
+        "title": "Source updates trigger repetitive work",
+        "description": "Each new filing, forecast, close, or market update triggers another round of extraction, normalization, and commentary."
+      },
+      {
+        "label": "Coordination",
+        "title": "Assumptions disappear inside models",
+        "description": "Inputs change across tabs and versions, while the reason, owner, date, and downstream effect of the change are easy to lose."
+      },
+      {
+        "label": "Continuity",
+        "title": "Recurring reports restart from old copies",
+        "description": "Monthly and weekly reviews are often rebuilt from copied files instead of a controlled trail of sources, assumptions, and changes."
+      }
+    ]
+  },
+  "buildingBlocks": {
+    "eyebrow": "General capabilities, professional context",
+    "title": "Compose the workflow from practical building blocks.",
+    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "items": [
+      {
+        "action": "Read",
+        "example": "Start from approved files, records, and sources rather than an empty prompt.",
+        "result": "A grounded working set."
+      },
+      {
+        "action": "Organize",
+        "example": "Classify material, normalize names, and identify missing inputs.",
+        "result": "A navigable project structure."
+      },
+      {
+        "action": "Extract",
+        "example": "Pull facts, dates, data, claims, and open questions.",
+        "result": "Structured content ready to verify."
+      },
+      {
+        "action": "Compare",
+        "example": "Contrast versions, standards, periods, or alternatives.",
+        "result": "A focused list of changes and differences."
+      },
+      {
+        "action": "Create",
+        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
+        "result": "Editable work products."
+      },
+      {
+        "action": "Repeat",
+        "example": "Save proven steps, formats, and approval points.",
+        "result": "A reusable workflow shaped by the team."
+      }
+    ]
+  },
+  "workflows": {
+    "eyebrow": "Three configurable starting points",
+    "title": "Start from real assignments, not a fixed professional playbook.",
+    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Prepare a company research packet",
+        "job": "Organize filings, transcripts, metrics, and open questions before deeper analysis.",
+        "flow": [
+          "Define scope",
+          "Collect sources",
+          "Extract metrics",
+          "Build brief"
+        ],
+        "output": "A source-linked company brief and diligence question list.",
+        "boundary": "Analysts verify every figure and decide what is financially material."
+      },
+      {
+        "number": "02",
+        "title": "Draft a variance review",
+        "job": "Connect actuals, plan, prior periods, and operating context into an editable management narrative.",
+        "flow": [
+          "Load approved data",
+          "Calculate changes",
+          "Gather context",
+          "Draft commentary"
+        ],
+        "output": "A variance table, drivers, and review-ready commentary.",
+        "boundary": "Finance owners validate calculations, causes, and management implications."
+      },
+      {
+        "number": "03",
+        "title": "Maintain recurring market monitoring",
+        "job": "Update a controlled watchlist and surface changes that deserve analyst attention.",
+        "flow": [
+          "Set watchlist",
+          "Collect updates",
+          "Compare periods",
+          "Prepare alert"
+        ],
+        "output": "A dated monitoring brief with changed assumptions and follow-ups.",
+        "boundary": "The analyst decides significance and retains all investment or financial judgment."
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Your method remains the method",
+    "title": "Bring the standards your team already trusts.",
+    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "inputsLabel": "Define the working context",
+    "inputs": [
+      "Approved files and data sources",
+      "Team templates and terminology",
+      "Checklists or evaluation criteria",
+      "Delivery format and naming rules",
+      "Scope, date, and audience"
+    ],
+    "controlsLabel": "Define the control points",
+    "controls": [
+      "What the agent may read or change",
+      "Which steps require a question",
+      "Who reviews each output",
+      "What must never be sent automatically",
+      "What can be saved and shared"
+    ]
+  },
+  "progression": {
+    "eyebrow": "From one task to a reusable system",
+    "title": "Start with one bounded assignment. Keep only what proves useful.",
+    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "items": [
+      {
+        "label": "Ad hoc",
+        "title": "Complete one deliverable",
+        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+      },
+      {
+        "label": "Saved workflow",
+        "title": "Reuse the successful method",
+        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+      },
+      {
+        "label": "Team practice",
+        "title": "Share a controlled starting point",
+        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "Human-controlled by design",
+    "title": "Automate preparation, not professional responsibility.",
+    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
+    "assistsTitle": "Floatboat can help prepare",
+    "assists": [
+      "Source indexes, context briefs, and evidence maps",
+      "Comparisons, extracted fields, and open questions",
+      "Meeting packs, status summaries, and communication drafts",
+      "Grounded outlines, reports, and editable first drafts",
+      "Recurring updates from approved materials"
+    ],
+    "retainsTitle": "financial analysts and finance teams retain",
+    "retains": [
+      "Professional interpretation and final judgment",
+      "Verification of facts, data, and sources",
+      "Privacy, access, and sensitive-information decisions",
+      "Strategy, priority, and resource decisions",
+      "Approval for every external publication, submission, or consequential action"
+    ],
+    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+  },
+  "faq": {
+    "title": "AI workspace questions for financial analysts and finance teams",
+    "description": "Finance teams need number-level provenance, visible assumptions, period consistency, and clear ownership of every financial conclusion.",
+    "items": [
+      {
+        "question": "Is Floatboat a financial model, ERP, or market-data terminal?",
+        "answer": "No. Those systems remain the sources of record and calculation. Floatboat helps analysts organize approved extracts, filings, transcripts, assumptions, and commentary into reviewable work products."
+      },
+      {
+        "question": "Can it make an investment or financial recommendation?",
+        "answer": "It can prepare evidence, changes, scenarios, and questions, but analysts remain responsible for materiality, valuation, forecasts, recommendations, and any decision based on them."
+      },
+      {
+        "question": "Can it follow our chart of accounts, KPI definitions, or research template?",
+        "answer": "Yes. Supply the approved metric definitions, periods, sign conventions, reporting structure, assumption register, and review format before analysis begins."
+      },
+      {
+        "question": "How do we keep numbers from being mixed across periods or units?",
+        "answer": "Carry source, period, currency, unit, and calculation status with each figure; reject silent gaps; and reconcile all numbers to the source system or approved model before using the commentary."
+      },
+      {
+        "question": "How should confidential financial data be handled?",
+        "answer": "Use only data permitted by company policy and applicable obligations, restrict each workspace to necessary files, and review the processing and retention behavior of every model and connector."
+      },
+      {
+        "question": "Will it publish a report or update a model automatically?",
+        "answer": "Not in the recommended workflow. Draft commentary, watchlist updates, and proposed changes remain pending until an analyst validates the figures and approves the destination."
+      },
+      {
+        "question": "What is a practical first finance workflow?",
+        "answer": "Take one completed reporting period, provide the approved actuals, plan, definitions, and operating notes, then compare the generated variance table and commentary with the signed-off version."
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Start from one real assignment",
+    "title": "Give the repetitive preparation around financial analysts and finance teams a better workspace.",
+    "description": "Start with one closed period or one researched company. Keep every figure tied to its source, unit, date, and assumption before reusing the workflow.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-financial-analysts&download_placement=final_cta"
+    },
+    "secondaryCta": {
+      "label": "Explore Agent Workspace",
+      "href": "/agent-workspace"
+    }
+  }
+}

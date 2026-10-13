@@ -64,7 +64,7 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
         <p className="mt-6 max-w-xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{page.hero.description}</p>
         <div className="mt-8 flex flex-wrap gap-3"><Cta {...page.hero.primaryCta} primary /><Cta {...page.hero.secondaryCta} /></div>
         <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--ob-color-muted)]">
-          {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-emerald-600">✓</span>{item}</li>)}
+          {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-[var(--ob-color-text)]">✓</span>{item}</li>)}
         </ul>
       </div>
       <div>
@@ -96,7 +96,7 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       </div>
     </section>
 
-    <section className="bg-[#24221f] py-20 text-white sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><SectionHeading title={page.audiences.title} description={page.audiences.description} inverted /><div className="grid gap-5 md:grid-cols-3">{page.audiences.items.map(item => <article key={item.title} className="rounded-3xl border border-white/10 bg-white/[0.04] p-7"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f7d68b]">{item.label}</p><h3 className="mt-8 font-serif text-2xl">{item.title}</h3><p className="mt-3 leading-7 text-white/65">{item.description}</p></article>)}</div></div></section>
+    <section className="border-y border-black/[0.06] py-20 sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><SectionHeading title={page.audiences.title} description={page.audiences.description} /><div className="grid gap-5 md:grid-cols-3">{page.audiences.items.map(item => <article key={item.title} className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-muted)]">{item.label}</p><h3 className="mt-8 font-serif text-2xl">{item.title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></article>)}</div></div></section>
 
     <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28"><SectionHeading title={page.howItWorks.title} description={page.howItWorks.description} /><ol className="grid gap-8 md:grid-cols-3">{page.howItWorks.items.map((item, index) => <li key={item.title}><span className="font-serif text-5xl text-black/15">0{index + 1}</span><h3 className="mt-4 text-xl font-semibold">{item.title}</h3><p className="mt-2 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></li>)}</ol></section>
 

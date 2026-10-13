@@ -1,0 +1,272 @@
+{
+  "slug": "consultants",
+  "locale": "en",
+  "seo": {
+    "title": "Agent Workspace for Consultants and Client Work | Floatboat",
+    "description": "An AI agent workspace for consultants to organize client context, conduct research, compare options, prepare workshops, and create editable deliverables.",
+    "keywords": [
+      "AI for consultants",
+      "consulting AI tools",
+      "consulting research",
+      "AI presentation for consultants",
+      "client deliverables",
+      "consulting workflow"
+    ]
+  },
+  "breadcrumb": "consultants and advisory teams",
+  "hero": {
+    "eyebrow": "A configurable AI workspace for real work",
+    "title": "An AI agent workspace for consultants and advisory teams",
+    "description": "Bring client context, research, analysis, workshop preparation, and editable deliverables into a controlled AI workspace for consultants.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-consultants&download_placement=hero"
+    },
+    "secondaryCta": {
+      "label": "Explore sample workflows",
+      "href": "#workflows"
+    },
+    "proof": [
+      "Works from approved materials",
+      "Every output stays editable",
+      "Human approval before consequential action"
+    ],
+    "preview": {
+      "label": "Illustrative workspace",
+      "matter": "Growth strategy · Client workspace",
+      "inputs": [
+        "Client brief",
+        "Interview notes",
+        "Market sources"
+      ],
+      "outputs": [
+        "Evidence map",
+        "Workshop brief",
+        "Deck outline"
+      ],
+      "review": "Human review"
+    }
+  },
+  "burdens": {
+    "eyebrow": "The repetitive work around the profession",
+    "title": "consultants and advisory teams should not spend their best hours rebuilding context.",
+    "description": "An engagement loses momentum when interview notes, source material, hypotheses, and deck edits stop telling the same story.",
+    "items": [
+      {
+        "label": "Context",
+        "title": "Client context changes every week",
+        "description": "New interviews, documents, and sponsor feedback change the working picture faster than a static brief can capture it."
+      },
+      {
+        "label": "Format",
+        "title": "Research is difficult to trace",
+        "description": "Claims get copied into working documents while the original interview, report, or calculation becomes difficult to recover."
+      },
+      {
+        "label": "Coordination",
+        "title": "Analysis and slides drift apart",
+        "description": "The analysis may change after the exhibit is built, leaving recommendations, numbers, and presentation pages out of sync."
+      },
+      {
+        "label": "Continuity",
+        "title": "Each engagement repeats setup work",
+        "description": "Every new engagement recreates folder structures, interview guides, research logs, status formats, and review routines."
+      }
+    ]
+  },
+  "buildingBlocks": {
+    "eyebrow": "General capabilities, professional context",
+    "title": "Compose the workflow from practical building blocks.",
+    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "items": [
+      {
+        "action": "Read",
+        "example": "Start from approved files, records, and sources rather than an empty prompt.",
+        "result": "A grounded working set."
+      },
+      {
+        "action": "Organize",
+        "example": "Classify material, normalize names, and identify missing inputs.",
+        "result": "A navigable project structure."
+      },
+      {
+        "action": "Extract",
+        "example": "Pull facts, dates, data, claims, and open questions.",
+        "result": "Structured content ready to verify."
+      },
+      {
+        "action": "Compare",
+        "example": "Contrast versions, standards, periods, or alternatives.",
+        "result": "A focused list of changes and differences."
+      },
+      {
+        "action": "Create",
+        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
+        "result": "Editable work products."
+      },
+      {
+        "action": "Repeat",
+        "example": "Save proven steps, formats, and approval points.",
+        "result": "A reusable workflow shaped by the team."
+      }
+    ]
+  },
+  "workflows": {
+    "eyebrow": "Three configurable starting points",
+    "title": "Start from real assignments, not a fixed professional playbook.",
+    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Turn discovery into a working brief",
+        "job": "Consolidate interviews, documents, constraints, and open questions before the team commits to an approach.",
+        "flow": [
+          "Gather inputs",
+          "Map stakeholders",
+          "Surface assumptions",
+          "Review brief"
+        ],
+        "output": "A client-context brief with open questions and source links.",
+        "boundary": "Consultants validate what the client meant and decide the engagement direction."
+      },
+      {
+        "number": "02",
+        "title": "Build an evidence-backed recommendation",
+        "job": "Connect research findings to hypotheses, alternatives, and implications without losing the source trail.",
+        "flow": [
+          "Frame question",
+          "Collect evidence",
+          "Compare options",
+          "Draft recommendation"
+        ],
+        "output": "An evidence matrix, option set, and recommendation narrative.",
+        "boundary": "The consulting team owns assumptions, analysis quality, and final advice."
+      },
+      {
+        "number": "03",
+        "title": "Prepare a workshop or executive deck",
+        "job": "Transform approved analysis into a coherent session plan, exhibit list, and editable presentation structure.",
+        "flow": [
+          "Choose audience",
+          "Define decisions",
+          "Sequence exhibits",
+          "Prepare facilitation"
+        ],
+        "output": "A workshop pack or executive-ready deck outline.",
+        "boundary": "A consultant approves claims, tone, and every client-facing deliverable."
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Your method remains the method",
+    "title": "Bring the standards your team already trusts.",
+    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "inputsLabel": "Define the working context",
+    "inputs": [
+      "Approved files and data sources",
+      "Team templates and terminology",
+      "Checklists or evaluation criteria",
+      "Delivery format and naming rules",
+      "Scope, date, and audience"
+    ],
+    "controlsLabel": "Define the control points",
+    "controls": [
+      "What the agent may read or change",
+      "Which steps require a question",
+      "Who reviews each output",
+      "What must never be sent automatically",
+      "What can be saved and shared"
+    ]
+  },
+  "progression": {
+    "eyebrow": "From one task to a reusable system",
+    "title": "Start with one bounded assignment. Keep only what proves useful.",
+    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "items": [
+      {
+        "label": "Ad hoc",
+        "title": "Complete one deliverable",
+        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+      },
+      {
+        "label": "Saved workflow",
+        "title": "Reuse the successful method",
+        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+      },
+      {
+        "label": "Team practice",
+        "title": "Share a controlled starting point",
+        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "Human-controlled by design",
+    "title": "Automate preparation, not professional responsibility.",
+    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
+    "assistsTitle": "Floatboat can help prepare",
+    "assists": [
+      "Source indexes, context briefs, and evidence maps",
+      "Comparisons, extracted fields, and open questions",
+      "Meeting packs, status summaries, and communication drafts",
+      "Grounded outlines, reports, and editable first drafts",
+      "Recurring updates from approved materials"
+    ],
+    "retainsTitle": "consultants and advisory teams retain",
+    "retains": [
+      "Professional interpretation and final judgment",
+      "Verification of facts, data, and sources",
+      "Privacy, access, and sensitive-information decisions",
+      "Strategy, priority, and resource decisions",
+      "Approval for every external publication, submission, or consequential action"
+    ],
+    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+  },
+  "faq": {
+    "title": "AI workspace questions for consultants and advisory teams",
+    "description": "Consulting teams need to preserve source trails, adapt to changing client context, and keep recommendations accountable to the people presenting them.",
+    "items": [
+      {
+        "question": "Is Floatboat a consulting methodology or project-management system?",
+        "answer": "No. It is a workspace for executing the research, synthesis, drafting, and coordination steps around an engagement. Your team still chooses the methodology, workplan, governance, and system of record."
+      },
+      {
+        "question": "Can it produce a client recommendation on its own?",
+        "answer": "It can connect supplied evidence to hypotheses and draft alternatives, but consultants must test assumptions, resolve contradictions, weigh trade-offs, and own the advice presented to a client."
+      },
+      {
+        "question": "Can each engagement use its own templates and terminology?",
+        "answer": "Yes. A workspace can begin from the client brief, interview guide, issue tree, exhibit conventions, and review cadence selected for that engagement."
+      },
+      {
+        "question": "How do we keep a recommendation tied to evidence?",
+        "answer": "Maintain source links beside claims, distinguish client statements from external evidence, expose unresolved assumptions, and have the workstream owner verify every number and conclusion before it reaches a deck."
+      },
+      {
+        "question": "How should confidential client material be handled?",
+        "answer": "Follow the engagement's confidentiality terms and firm policy, separate workspaces where appropriate, grant only necessary access, and review the data handling of every selected model, tool, and connector."
+      },
+      {
+        "question": "Will drafts go directly to the client?",
+        "answer": "Not in the recommended setup. Workshop packs, executive summaries, emails, and decks remain editable drafts until the engagement team approves the evidence, language, recipients, and release."
+      },
+      {
+        "question": "Where should a consulting team start?",
+        "answer": "Use one completed discovery cycle: provide approved interview notes and background documents, generate a source-linked working brief, and compare it with what the team would normally prepare by hand."
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Start from one real assignment",
+    "title": "Give the repetitive preparation around consultants and advisory teams a better workspace.",
+    "description": "Start with one engagement question, its approved evidence, and the next client deliverable. Keep the source trail visible while the recommendation takes shape.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-consultants&download_placement=final_cta"
+    },
+    "secondaryCta": {
+      "label": "Explore Agent Workspace",
+      "href": "/agent-workspace"
+    }
+  }
+}

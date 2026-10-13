@@ -1,8 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { blogPathForLocale } from "@/config/i18n";
 import { getLocaleFromPathname } from "@/lib/locale-path";
 import { resolveNewsletterForPost } from "@/lib/newsletter-data";
 
@@ -11,6 +11,63 @@ import { NewsletterSubscribe } from "./newsletter-subscribe";
 const FB_SITE = "https://floatboat.ai";
 const EN_POST_PATH = /^\/blog\/([^/]+)\/?$/;
 const ZH_POST_PATH = /^\/zh\/blog\/([^/]+)\/?$/;
+
+type FooterLink = {
+  en: string;
+  zh: string;
+  path?: string;
+  href?: string;
+  zhHref?: string;
+};
+
+const FOOTER_GROUPS: Array<{ en: string; zh: string; links: FooterLink[] }> = [
+  {
+    en: "Product",
+    zh: "产品",
+    links: [
+      { en: "Agent Workspace", zh: "Agent 工作站", path: "/agent-workspace" },
+      { en: "Flow Mode", zh: "心流模式", href: `${FB_SITE}/flow-mode`, zhHref: `${FB_SITE}/zh/flow-mode` },
+      { en: "AI Scheduling Assistant", zh: "AI 日程助理", path: "/ai-scheduling-assistant" },
+      { en: "AI File Organizer", zh: "AI 文件整理器", path: "/ai-file-organizer" },
+      { en: "FloatIM", zh: "FloatIM", path: "/floatim" },
+    ],
+  },
+  {
+    en: "Explore",
+    zh: "探索",
+    links: [
+      { en: "Use Cases", zh: "使用场景", path: "/use-cases" },
+      { en: "Models", zh: "模型", path: "/models" },
+      { en: "Combo Store", zh: "Combo 商店", href: `${FB_SITE}/combostore`, zhHref: `${FB_SITE}/zh/combostore` },
+      { en: "Connectors", zh: "连接器", href: `${FB_SITE}/connectors`, zhHref: `${FB_SITE}/zh/connectors` },
+      { en: "Skills Marketplace", zh: "Skills Marketplace", href: `${FB_SITE}/skills-marketplace`, zhHref: `${FB_SITE}/zh/skills-marketplace` },
+    ],
+  },
+  {
+    en: "Resources",
+    zh: "资源",
+    links: [
+      { en: "Blog", zh: "博客", path: "/blog" },
+      { en: "Documentation", zh: "文档", href: `${FB_SITE}/docs`, zhHref: `${FB_SITE}/zh/docs` },
+      { en: "Alternatives", zh: "产品对比", href: `${FB_SITE}/alternatives` },
+      { en: "Markdown Tool", zh: "Markdown 工具", href: `${FB_SITE}/tools/markdown`, zhHref: `${FB_SITE}/zh/tools/markdown` },
+    ],
+  },
+  {
+    en: "Company",
+    zh: "公司",
+    links: [
+      { en: "Pricing", zh: "价格", href: `${FB_SITE}/pricing`, zhHref: `${FB_SITE}/zh/pricing` },
+      { en: "About", zh: "关于", href: `${FB_SITE}/about`, zhHref: `${FB_SITE}/zh/about` },
+      { en: "Contact", zh: "联系", href: "mailto:contact@floatboat.ai" },
+    ],
+  },
+];
+
+function footerHref(link: FooterLink, isZh: boolean) {
+  if (link.path) return `${isZh ? "/zh" : ""}${link.path}`;
+  return isZh && link.zhHref ? link.zhHref : link.href ?? "#";
+}
 
 /** Blog post slug from the current pathname, or null for hubs/non-post routes. */
 function postSlugFromPathname(pathname: string, locale: "en" | "zh"): string | null {
@@ -91,12 +148,11 @@ export function SiteFooter({ showNewsletter = true }: { showNewsletter?: boolean
   const pathname = usePathname() ?? "/";
   const locale = getLocaleFromPathname(pathname);
   const isZh = locale === "zh";
-  const blogHref = blogPathForLocale(locale);
   const slug = postSlugFromPathname(pathname, locale);
   const newsletterCopy = resolveNewsletterForPost(slug, locale);
 
-  const legalLinkClass =
-    "flex h-10 items-center justify-center px-[10px] py-[5px] text-[14px] leading-[1.43] font-medium text-[var(--ob-color-muted)] transition-colors hover:text-[var(--ob-color-text)]";
+  const footerLinkClass =
+    "inline-flex min-h-9 items-center text-sm leading-6 text-[var(--ob-color-muted)] transition-colors hover:text-[var(--ob-color-text)]";
 
   return (
     <footer id="footer">
@@ -107,91 +163,67 @@ export function SiteFooter({ showNewsletter = true }: { showNewsletter?: boolean
           </div>
         )}
 
-        <div className="flex flex-col gap-4 px-10 py-6 max-lg:px-5 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex flex-col items-start gap-3">
-            <a
-              className="inline-flex items-end gap-2"
-              aria-label="floatboat"
-              title="floatboat"
-              href={isZh ? `${FB_SITE}/zh` : FB_SITE}
-              target="_self"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/blog/brand/floatboat-logo.svg"
-                alt="floatboat"
-                width={775}
-                height={256}
-                className="h-9 w-auto"
-              />
-            </a>
-            <p className="text-[14px] font-medium leading-[1.43] text-[var(--ob-color-muted)]">
-              {isZh ? "知行合一，扬帆远航" : "Sail onward with what you've learned"}
-            </p>
-          </div>
-          <div className="flex items-center gap-6 text-[var(--ob-color-muted)]">
-            <SocialIcon label="Email" title="Email" href="mailto:contact@floatboat.ai">
-              <EmailIcon />
-            </SocialIcon>
-            <SocialIcon label="X" title="X" href="https://x.com/float_schedule?s=11">
-              <XIcon />
-            </SocialIcon>
-            <SocialIcon
-              label="LinkedIn"
-              title="LinkedIn"
-              href="https://www.linkedin.com/company/floatboat/"
-            >
-              <LinkedInIcon />
-            </SocialIcon>
-            <SocialIcon
-              label="Discord"
-              title="Discord"
-              href="https://discord.gg/Ecp2PR24H4"
-            >
-              <DiscordIcon />
-            </SocialIcon>
+        <div className="border-t border-black/[0.08] px-10 py-14 max-lg:px-5 sm:py-16">
+          <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(4,minmax(0,1fr))] lg:gap-8">
+            <div className="max-w-sm lg:pr-8">
+              <a
+                className="inline-flex items-end gap-2"
+                aria-label="Floatboat"
+                title="Floatboat"
+                href={isZh ? `${FB_SITE}/zh` : FB_SITE}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/blog/brand/floatboat-logo.svg"
+                  alt="Floatboat"
+                  width={775}
+                  height={256}
+                  className="h-9 w-auto"
+                />
+              </a>
+              <p className="mt-5 font-serif text-2xl leading-snug tracking-[-0.02em] text-[var(--ob-color-text)]">
+                {isZh ? "让人、Agent、文件和工具在同一个工作空间完成工作。" : "One workspace for people, agents, files, and tools to finish real work."}
+              </p>
+              <p className="mt-3 text-sm leading-6 text-[var(--ob-color-muted)]">
+                {isZh ? "开箱即用，无需自备 API Key。" : "Ready to use without bringing your own API keys."}
+              </p>
+              <a
+                href={isZh ? `${FB_SITE}/zh/download/success?from=footer` : `${FB_SITE}/download/success?from=footer`}
+                className="mt-6 inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--ob-color-primary)] px-5 text-sm font-semibold text-[var(--ob-color-primary-fg)] transition hover:bg-[var(--ob-color-primary-hover)]"
+              >
+                {isZh ? "下载 Floatboat" : "Download Floatboat"}
+              </a>
+            </div>
+
+            {FOOTER_GROUPS.map((group) => <nav key={group.en} aria-label={isZh ? group.zh : group.en}>
+              <h2 className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-text)]">{isZh ? group.zh : group.en}</h2>
+              <ul className="mt-4 space-y-1">
+                {group.links.map((link) => {
+                  const href = footerHref(link, isZh);
+                  const label = isZh ? link.zh : link.en;
+                  return <li key={link.en}>
+                    {link.path ? <Link href={href} className={footerLinkClass}>{label}</Link> : <a href={href} className={footerLinkClass}>{label}</a>}
+                  </li>;
+                })}
+              </ul>
+            </nav>)}
           </div>
         </div>
 
-        <div className="h-px w-full bg-black/[0.08]" />
-
-        <div className="flex flex-col gap-4 px-10 py-6 max-lg:px-5 sm:flex-row sm:items-start sm:justify-between">
-          <p className="text-[14px] font-normal leading-[1.43] text-[var(--ob-color-muted)]">
-            © {new Date().getFullYear()} AOE Tech Labs Limited.{" "}
-            {isZh
-              ? "让人与 Agent 在同一个工作空间完成工作。"
-              : "The AI workspace where people and agents get work done."}
-          </p>
-          <div className="flex flex-wrap items-center justify-start gap-2 sm:justify-center sm:gap-6">
-            <a aria-label={isZh ? "博客" : "Blog"} title={isZh ? "博客" : "Blog"} href={blogHref} className={legalLinkClass}>
-              {isZh ? "博客" : "Blog"}
-            </a>
-            <a
-              aria-label={isZh ? "隐私政策" : "Privacy Policy"}
-              title={isZh ? "隐私政策" : "Privacy Policy"}
-              href={isZh ? `${FB_SITE}/zh/privacy` : `${FB_SITE}/privacy`}
-              target="_self"
-              className={legalLinkClass}
-            >
-              {isZh ? "隐私政策" : "Privacy Policy"}
-            </a>
-            <a
-              aria-label={isZh ? "用户协议" : "Terms of Service"}
-              title={isZh ? "用户协议" : "Terms of Service"}
-              href={isZh ? `${FB_SITE}/zh/terms` : `${FB_SITE}/terms`}
-              target="_self"
-              className={legalLinkClass}
-            >
-              {isZh ? "用户协议" : "Terms of Service"}
-            </a>
-            <a
-              aria-label={isZh ? "联系" : "Contact"}
-              title={isZh ? "联系" : "Contact"}
-              href="mailto:contact@floatboat.ai"
-              className={legalLinkClass}
-            >
-              {isZh ? "联系：contact@floatboat.ai" : "Contact: contact@floatboat.ai"}
-            </a>
+        <div className="border-t border-black/[0.08] px-10 py-6 max-lg:px-5">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-sm leading-6 text-[var(--ob-color-muted)]">© {new Date().getFullYear()} AOE Tech Labs Limited.</p>
+            <div className="flex items-center gap-6 text-[var(--ob-color-muted)]">
+              <SocialIcon label="Email" title="Email" href="mailto:contact@floatboat.ai"><EmailIcon /></SocialIcon>
+              <SocialIcon label="X" title="X" href="https://x.com/float_schedule?s=11"><XIcon /></SocialIcon>
+              <SocialIcon label="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/company/floatboat/"><LinkedInIcon /></SocialIcon>
+              <SocialIcon label="Discord" title="Discord" href="https://discord.gg/Ecp2PR24H4"><DiscordIcon /></SocialIcon>
+            </div>
+            <nav aria-label={isZh ? "法律信息" : "Legal"} className="flex flex-wrap items-center gap-x-5 gap-y-1">
+              <a href={isZh ? `${FB_SITE}/zh/privacy` : `${FB_SITE}/privacy`} className={footerLinkClass}>{isZh ? "隐私政策" : "Privacy"}</a>
+              <a href={isZh ? `${FB_SITE}/zh/terms` : `${FB_SITE}/terms`} className={footerLinkClass}>{isZh ? "用户协议" : "Terms"}</a>
+              <a href="mailto:contact@floatboat.ai" className={footerLinkClass}>{isZh ? "联系" : "Contact"}</a>
+            </nav>
           </div>
         </div>
       </div>

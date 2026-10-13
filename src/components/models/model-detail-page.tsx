@@ -123,29 +123,29 @@ export function ModelDetailPage({
         </dl>
       </section>
 
-      <section className="border-y border-black/[0.06] bg-[#24221f] py-20 text-white sm:py-28">
+      <section className="border-y border-black/[0.06] py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f7d68b]">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
               {localize(model.positioning.eyebrow, locale)}
             </p>
             <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
               {localize(model.positioning.title, locale)}
             </h2>
-            <p className="mt-5 text-lg leading-8 text-white/65">
+            <p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
               {localize(model.positioning.description, locale)}
             </p>
           </div>
-          <div className="grid gap-px overflow-hidden rounded-3xl bg-white/10 sm:grid-cols-2">
+          <div className="grid gap-5 sm:grid-cols-2">
             {model.positioning.traits.map((trait) => (
-              <article key={trait.label.en} className="bg-[#2b2926] p-7">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#f7d68b]">
+              <article key={trait.label.en} className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">
                   {localize(trait.label, locale)}
                 </p>
                 <h3 className="mt-3 text-xl font-semibold">
                   {localize(trait.value, locale)}
                 </h3>
-                <p className="mt-3 leading-7 text-white/60">
+                <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">
                   {localize(trait.description, locale)}
                 </p>
               </article>
@@ -271,7 +271,7 @@ export function ModelDetailPage({
           {localize(model.selection.title, locale)}
         </h2>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          <article className="rounded-3xl bg-[#e9f2de] p-7">
+          <article className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7">
             <h3 className="text-xl font-semibold">
               {localize(model.selection.choose.title, locale)}
             </h3>
@@ -284,7 +284,7 @@ export function ModelDetailPage({
               ))}
             </ul>
           </article>
-          <article className="rounded-3xl bg-[#f1ece4] p-7">
+          <article className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7">
             <h3 className="text-xl font-semibold">
               {localize(model.selection.alternative.title, locale)}
             </h3>
@@ -329,10 +329,10 @@ export function ModelDetailPage({
       )}
 
       {model.extensions && (
-        <section className="bg-[#24221f] py-20 text-white sm:py-28">
+        <section className="border-y border-black/[0.06] py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <div className="mx-auto mb-10 max-w-3xl text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f7d68b]">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
                 {localize(model.extensions.eyebrow, locale)}
               </p>
               <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
@@ -343,10 +343,10 @@ export function ModelDetailPage({
               {model.extensions.items.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-3xl border border-white/10 bg-white/[0.04] p-7"
+                  className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7"
                 >
                   <h3 className="font-serif text-2xl">{item.title}</h3>
-                  <p className="mt-3 leading-7 text-white/65">
+                  <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">
                     {localize(item.description, locale)}
                   </p>
                 </article>

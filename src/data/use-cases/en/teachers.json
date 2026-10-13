@@ -1,0 +1,272 @@
+{
+  "slug": "teachers",
+  "locale": "en",
+  "seo": {
+    "title": "Agent Workspace for Teachers and Lesson Planning | Floatboat",
+    "description": "An AI agent workspace for teachers to organize course materials, plan lessons, prepare presentations, draft class communications, and maintain career evidence.",
+    "keywords": [
+      "AI for teachers",
+      "teacher AI tools",
+      "AI lesson planning",
+      "AI presentation maker for teachers",
+      "teacher productivity",
+      "teaching portfolio"
+    ]
+  },
+  "breadcrumb": "teachers and education teams",
+  "hero": {
+    "eyebrow": "A configurable AI workspace for real work",
+    "title": "An AI agent workspace for teachers and education teams",
+    "description": "Organize teaching materials, prepare lesson packs, draft class communications, and maintain a reviewable teaching portfolio in one AI workspace.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-teachers&download_placement=hero"
+    },
+    "secondaryCta": {
+      "label": "Explore sample workflows",
+      "href": "#workflows"
+    },
+    "proof": [
+      "Works from approved materials",
+      "Every output stays editable",
+      "Human approval before consequential action"
+    ],
+    "preview": {
+      "label": "Illustrative workspace",
+      "matter": "Year 8 history · Unit workspace",
+      "inputs": [
+        "Curriculum goals",
+        "Source readings",
+        "School templates"
+      ],
+      "outputs": [
+        "Lesson outline",
+        "Slide draft",
+        "Student handout"
+      ],
+      "review": "Human review"
+    }
+  },
+  "burdens": {
+    "eyebrow": "The repetitive work around the profession",
+    "title": "teachers and education teams should not spend their best hours rebuilding context.",
+    "description": "A lesson rarely begins with a blank page. Teachers first reconcile curriculum goals, old materials, class needs, school formats, and the practical limits of the timetable.",
+    "items": [
+      {
+        "label": "Context",
+        "title": "Resources live in too many places",
+        "description": "Readings, slides, worksheets, shared-drive folders, and last year's plans rarely arrive as one coherent teaching set."
+      },
+      {
+        "label": "Format",
+        "title": "One lesson becomes five formats",
+        "description": "A single idea may need a lesson outline, slide sequence, student handout, activity sheet, and notes for another teacher."
+      },
+      {
+        "label": "Coordination",
+        "title": "Routine messages interrupt preparation",
+        "description": "Notices, reminders, meeting notes, and family updates compete with the uninterrupted time needed to plan and teach."
+      },
+      {
+        "label": "Continuity",
+        "title": "Career evidence is rebuilt at deadline",
+        "description": "Observations, training records, classroom examples, and outcomes are often scattered until an appraisal or promotion deadline arrives."
+      }
+    ]
+  },
+  "buildingBlocks": {
+    "eyebrow": "General capabilities, professional context",
+    "title": "Compose the workflow from practical building blocks.",
+    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "items": [
+      {
+        "action": "Read",
+        "example": "Start from approved files, records, and sources rather than an empty prompt.",
+        "result": "A grounded working set."
+      },
+      {
+        "action": "Organize",
+        "example": "Classify material, normalize names, and identify missing inputs.",
+        "result": "A navigable project structure."
+      },
+      {
+        "action": "Extract",
+        "example": "Pull facts, dates, data, claims, and open questions.",
+        "result": "Structured content ready to verify."
+      },
+      {
+        "action": "Compare",
+        "example": "Contrast versions, standards, periods, or alternatives.",
+        "result": "A focused list of changes and differences."
+      },
+      {
+        "action": "Create",
+        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
+        "result": "Editable work products."
+      },
+      {
+        "action": "Repeat",
+        "example": "Save proven steps, formats, and approval points.",
+        "result": "A reusable workflow shaped by the team."
+      }
+    ]
+  },
+  "workflows": {
+    "eyebrow": "Three configurable starting points",
+    "title": "Start from real assignments, not a fixed professional playbook.",
+    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Build a lesson material pack",
+        "job": "Turn curriculum goals and approved sources into an outline, slide draft, activity sheet, and teacher notes.",
+        "flow": [
+          "Choose goals",
+          "Organize sources",
+          "Draft materials",
+          "Teacher review"
+        ],
+        "output": "A coordinated lesson pack ready to edit.",
+        "boundary": "The teacher decides pedagogy, accuracy, differentiation, and what reaches students."
+      },
+      {
+        "number": "02",
+        "title": "Prepare class and family communications",
+        "job": "Convert approved dates, policies, and class notes into clear updates for different audiences.",
+        "flow": [
+          "Select facts",
+          "Choose audience",
+          "Draft versions",
+          "Approve and send"
+        ],
+        "output": "Editable class notices, reminders, and meeting notes.",
+        "boundary": "A teacher or school staff member approves every message and handles sensitive student context."
+      },
+      {
+        "number": "03",
+        "title": "Maintain a teaching portfolio",
+        "job": "Organize observations, outcomes, training records, and examples into a traceable professional record.",
+        "flow": [
+          "Collect evidence",
+          "Tag requirements",
+          "Find gaps",
+          "Draft narrative"
+        ],
+        "output": "An evidence index and editable promotion or review narrative.",
+        "boundary": "The educator verifies evidence and owns every professional claim."
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Your method remains the method",
+    "title": "Bring the standards your team already trusts.",
+    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "inputsLabel": "Define the working context",
+    "inputs": [
+      "Approved files and data sources",
+      "Team templates and terminology",
+      "Checklists or evaluation criteria",
+      "Delivery format and naming rules",
+      "Scope, date, and audience"
+    ],
+    "controlsLabel": "Define the control points",
+    "controls": [
+      "What the agent may read or change",
+      "Which steps require a question",
+      "Who reviews each output",
+      "What must never be sent automatically",
+      "What can be saved and shared"
+    ]
+  },
+  "progression": {
+    "eyebrow": "From one task to a reusable system",
+    "title": "Start with one bounded assignment. Keep only what proves useful.",
+    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "items": [
+      {
+        "label": "Ad hoc",
+        "title": "Complete one deliverable",
+        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+      },
+      {
+        "label": "Saved workflow",
+        "title": "Reuse the successful method",
+        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+      },
+      {
+        "label": "Team practice",
+        "title": "Share a controlled starting point",
+        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "Human-controlled by design",
+    "title": "Automate preparation, not professional responsibility.",
+    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
+    "assistsTitle": "Floatboat can help prepare",
+    "assists": [
+      "Source indexes, context briefs, and evidence maps",
+      "Comparisons, extracted fields, and open questions",
+      "Meeting packs, status summaries, and communication drafts",
+      "Grounded outlines, reports, and editable first drafts",
+      "Recurring updates from approved materials"
+    ],
+    "retainsTitle": "teachers and education teams retain",
+    "retains": [
+      "Professional interpretation and final judgment",
+      "Verification of facts, data, and sources",
+      "Privacy, access, and sensitive-information decisions",
+      "Strategy, priority, and resource decisions",
+      "Approval for every external publication, submission, or consequential action"
+    ],
+    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+  },
+  "faq": {
+    "title": "AI workspace questions for teachers and education teams",
+    "description": "Teachers need to know whether an AI workspace fits lesson preparation, protects student context, and keeps classroom decisions with educators.",
+    "items": [
+      {
+        "question": "Is Floatboat a learning management system or an AI lesson planner?",
+        "answer": "Neither. It is an Agent Workspace for assembling files, instructions, models, and tools around a teaching task. Your LMS remains the system for classes and records; Floatboat helps prepare the editable work that goes into it."
+      },
+      {
+        "question": "Can it decide what or how I should teach?",
+        "answer": "No. It can prepare options from your curriculum, sources, and format, but the teacher decides accuracy, sequence, differentiation, accessibility, and what is appropriate for a particular class."
+      },
+      {
+        "question": "Can it follow our curriculum and school templates?",
+        "answer": "Yes. Add the relevant goals, rubric, lesson format, terminology, and approved sources to the workspace so drafts begin from your actual constraints rather than a generic lesson pattern."
+      },
+      {
+        "question": "How should teachers check AI-generated lesson material?",
+        "answer": "Review factual claims against the assigned sources, check examples and reading level, test instructions from a student's perspective, and keep uncertain material visibly flagged instead of letting it pass into slides or handouts."
+      },
+      {
+        "question": "Should student names, grades, or support needs go into a workspace?",
+        "answer": "Only when school policy and the selected tools permit it. Prefer de-identified or minimum-necessary information, restrict access, and examine how every model and connector handles the data before adding student records."
+      },
+      {
+        "question": "Can it send family or class communications automatically?",
+        "answer": "It can help prepare audience-specific drafts, but a teacher or authorized school colleague should confirm the facts, tone, recipients, and timing before anything is sent."
+      },
+      {
+        "question": "What is a sensible first workflow for a teacher?",
+        "answer": "Start with one upcoming unit and a known set of curriculum goals and sources. Ask for a lesson outline plus one editable classroom asset, review the result, then save only the steps that genuinely reduce preparation time."
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Start from one real assignment",
+    "title": "Give the repetitive preparation around teachers and education teams a better workspace.",
+    "description": "Bring one upcoming unit, the sources you trust, and the format your school expects. Turn them into a lesson pack you can still teach in your own way.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-teachers&download_placement=final_cta"
+    },
+    "secondaryCta": {
+      "label": "Explore Agent Workspace",
+      "href": "/agent-workspace"
+    }
+  }
+}

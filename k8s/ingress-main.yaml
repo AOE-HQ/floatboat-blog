@@ -46,6 +46,20 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /use-cases
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/use-cases
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /agent-workspace
             pathType: Prefix
             backend:
@@ -141,6 +155,20 @@ spec:
                 port:
                   number: 80
           - path: /zh/models
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /use-cases
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/use-cases
             pathType: Prefix
             backend:
               service:

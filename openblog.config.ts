@@ -26,44 +26,11 @@ const config = defineConfig({
       { label: "Download", href: `${FLOATBOAT_SITE}/download`, external: true },
       { label: "Blog", href: "/blog", match: "blog" },
     ],
-    footer: {
-      columns: [
-        {
-          title: "Product",
-          links: [
-            { label: "Pricing", href: `${FLOATBOAT_SITE}/pricing`, external: true },
-            { label: "About", href: `${FLOATBOAT_SITE}/about`, external: true },
-            { label: "Download", href: `${FLOATBOAT_SITE}/download`, external: true },
-            { label: "Docs", href: `${FLOATBOAT_SITE}/docs`, external: true },
-          ],
-        },
-        {
-          title: "Blog",
-          links: [
-            { label: "Blog", href: "/blog", match: "blog" },
-            { label: "What is an Agent Workspace?", href: "/blog/ai-workspace-agents", match: "blog" },
-            { label: "Local-first vs cloud workspaces", href: "/blog/local-first-vs-cloud-agent-workspace", match: "blog" },
-          ],
-        },
-        {
-          title: "Community",
-          links: [
-            { label: "X (Twitter)", href: "https://x.com/float_schedule", external: true },
-            { label: "LinkedIn", href: "https://www.linkedin.com/company/floatboat/", external: true },
-            { label: "Discord", href: "https://discord.gg/Ecp2PR24H4", external: true },
-          ],
-        },
-      ],
-      legal: [
-        { label: "Privacy Policy", href: `${FLOATBOAT_SITE}/privacy`, external: true },
-        { label: "Terms of Service", href: `${FLOATBOAT_SITE}/terms`, external: true },
-      ],
-    },
   },
 
   theme: {
     preset: "vercel-geist",
-    colorMode: "system",
+    colorMode: "light",
     strategy: "hybrid",
   },
 
