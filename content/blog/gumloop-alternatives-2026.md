@@ -1,6 +1,6 @@
 ---
 title: "Gumloop Alternatives in 2026: What Else Is Worth Considering"
-description: "Looking for Gumloop alternatives? Here's a clear breakdown of what else is out there — by use case, workflow style, and the kind of operator each tool actually fits."
+description: "Compare Gumloop alternatives n8n, Make, Relay.app, and Lindy by workflow fit, permissions, recovery, cost units, migration risk, and a reproducible pilot."
 slug: "gumloop-alternatives-2026"
 date: "2026-03-24"
 author: "Nova"
@@ -72,7 +72,7 @@ Human steps also have a cost that plan pages do not capture: queue time, reviewe
 
 ## Lindy: when you want an assistant, not a canvas
 
-Lindy belongs in the shortlist when the intended interaction is conversational delegation: give an agent a goal, connect business systems, and let it decide among allowed actions. This can fit inbox work, scheduling, CRM follow-up, or research where the path varies from case to case.
+Lindy belongs in the shortlist when the intended interaction is conversational delegation: give an agent a goal, connect business systems, and let it decide among allowed actions. This can fit inbox work, scheduling, CRM follow-up, or research where the path varies from case to case. Lindy's official [action configuration guide](https://www.lindy.ai/academy-lessons/action-configuration) documents per-action model selection and an “Ask for Confirmation” option for inserting a person into the workflow. Its [changelog](https://www.lindy.ai/changelog/) also documents task history, retries, task termination, and monitoring actions. Treat those as features to verify in the plan and workflow you intend to use.
 
 That is architecturally different from a deterministic Gumloop flow. The benefit is less manual branch design; the cost is less predictability. Evaluate Lindy by action-level permissions, confirmation behavior, run history, model/tool cost, and how the agent behaves when information is missing. Do not rely on claims that it is simply “easier” or “more autonomous.”
 

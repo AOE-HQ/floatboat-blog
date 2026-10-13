@@ -1,6 +1,6 @@
 ---
 title: "2026 年 Gumloop 替代品：还有哪些值得考虑"
-description: "找 Gumloop 替代品？本文不做谁更厉害的排名，而是给一张按用例划分的决策地图——分工作流风格、按操作者类型讲清楚每款工具（n8n、Make、Lindy、ChatGPT 与 AI Workspace 类）到底适合谁、不适合谁，以及留在 Gumloop 修补短板的务实做法。"
+description: "2026 年 Gumloop 替代品对比：从工作流适配、权限、故障恢复、真实成本单位、迁移风险与可复跑试点，分析 n8n、Make、Relay.app 和 Lindy 分别适合哪些自动化与 Agent 场景。"
 slug: "gumloop-alternatives-2026"
 date: "2026-03-24"
 author: "Nova"
@@ -72,7 +72,7 @@ Relay.app 的差异点，是把人工工作当作原生流程元素，而不是�
 
 ## Lindy：需要助理，而不是画布时
 
-如果理想交互是对话式委派——给 Agent 一个目标、连接业务系统、让它从允许的动作中选择——Lindy 值得进入短名单。收件箱、日程、CRM 跟进和研究等路径会随个案变化的工作，更接近这一模式。
+如果理想交互是对话式委派——给 Agent 一个目标、连接业务系统、让它从允许的动作中选择——Lindy 值得进入短名单。收件箱、日程、CRM 跟进和研究等路径会随个案变化的工作，更接近这一模式。Lindy 官方的[动作配置指南](https://www.lindy.ai/academy-lessons/action-configuration)说明了逐动作选择模型和「Ask for Confirmation」人工确认；官方[更新日志](https://www.lindy.ai/changelog/)还记录了任务历史、重试、终止任务与监控动作。正式采用前，仍应在目标套餐与真实流程中逐项验证。
 
 这与确定性的 Gumloop flow 是不同架构。好处是少画分支，代价是路径更难预测。应按具体动作权限、确认机制、运行记录、模型与工具成本、信息不足时的行为来评估 Lindy，而不是相信「更简单」或「更自主」的宣传。
 
