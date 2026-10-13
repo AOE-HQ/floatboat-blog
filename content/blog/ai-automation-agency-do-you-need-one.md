@@ -14,6 +14,8 @@ You need an AI automation agency when the work is understood, the integration is
 
 That distinction matters because an agency can shorten the path to a production workflow, but it cannot supply missing process ownership. This guide helps you choose among four real options—do nothing yet, build it yourself, hire an employee or contractor, or engage an agency—and then structure a pilot that leaves you with evidence rather than a persuasive demo.
 
+> **Verified October 13, 2026:** Platform features and service pricing change. The decision framework is stable, but every vendor capability and cost in a proposal must be checked at purchase time.
+
 ## Start with the process, not the promise of AI
 
 Write down one workflow before talking to vendors. It should have a trigger, inputs, decision points, exceptions, an output, an owner, and a rough baseline. “Automate sales” is not a workflow. “When a qualified form submission arrives, enrich the company record, draft a personalized reply, route uncertain cases to an owner, and record the outcome” is close enough to investigate.

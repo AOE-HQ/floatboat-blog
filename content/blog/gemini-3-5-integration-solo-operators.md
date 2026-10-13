@@ -161,6 +161,8 @@ If Gemini 3.5 does not replace a model, a manual step, or a paid service, it may
 
 Gemini 3.5 Flash remains usable and stable, with a large context window, multimodal inputs, structured output, tool use, caching, and batch processing. It is also now a legacy Flash model in Google's catalog. Existing integrations should be judged on measured reliability and migration cost; new integrations should compare it with the current recommended models before committing.
 
+If the goal is not model integration but delegated multi-step work, start with the separate guide to [what a Gemini agent is](/blog/what-is-gemini-agent); an agent architecture introduces tools, state, permissions, and recovery concerns that a model comparison alone does not answer.
+
 For solo operators, the best integration is not the one with the longest specification sheet. It is the one repeated workflow that produces a reviewable result, uses an appropriate data surface, and clearly replaces time or software you already pay for. A multi-model workspace can make that comparison easier, but it cannot remove the need for an evaluation set and a human approval boundary.
 
 ### Official sources

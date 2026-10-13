@@ -1,6 +1,6 @@
 ---
-title: "Grok 4.6 — Agentic Frontier Model, Benchmarks, Reality Check"
-description: "Grok 4.6 explained: 500K context, $2/$6 pricing, the 200K token price trap, benchmark claims vs independent scores, and where it fits next to DeepSeek V4 Pro."
+title: "Grok 4.6: Specs, Benchmarks, Pricing, and Its Place After 4.7"
+description: "A sourced guide to Grok 4.6: 500K context, reasoning modes, API pricing, independent benchmarks, long-context costs, and whether it still makes sense after Grok 4.7."
 slug: "grok-4-6"
 date: "2026-08-14"
 author: "Jade"
@@ -10,68 +10,100 @@ locale: "en"
 draft: false
 ---
 
-**TL;DR**
-  * Grok 4.6 is xAI's August 12, 2026 release — a post-training upgrade on Grok 4.5, not a new architecture, focused on long-running agents, coding, and knowledge work, with a 500,000-token context window.
+Grok 4.6 is xAI's August 2026 model for coding, agentic tasks, and knowledge work. Its headline specifications remain competitive: a 500,000-token context window, text and image input, configurable reasoning, and API pricing that starts at $2 per million input tokens and $6 per million output tokens. But it is no longer xAI's newest frontier model—Grok 4.7 arrived in September—so the useful question is where 4.6 still fits today.
 
-  * It matches GPT-5.6 Sol on the Artificial Analysis Intelligence Index (61 points), trailing only Claude Opus 5 and Claude Fable 5 — and it holds Grok 4.5's $2 input / $6 output per 1M token price, with a faster variant at 2x.
+This guide separates four things that are often mixed together in launch coverage: xAI's product claims, current API specifications, independent benchmark results, and the practical cost of long-context work.
 
-  * The headline price is incomplete: prompts at or above 200,000 tokens double to $4 / $12 per 1M tokens for the entire request, which rewrites the economics of genuinely long-context agent work.
+**Information checked October 13, 2026.** Model availability, prices, and documentation described as current refer to that date.
 
-  * Its strongest independent scores are in agentic knowledge work — GDPval-AA v2 Elo 1753, just behind Claude Opus 5 — while its software-engineering results are mixed, with benchmark-version confusion inflating some comparisons.
+## Grok 4.6 at a glance
 
-  * Grok 4.6 shipped the same week as DeepSeek's V4 Pro 0813 GA, giving buyers a rare same-week head-to-head between two agent-focused frontier models at budget prices.
+| Item | Confirmed specification |
+|---|---|
+| Model ID | `grok-4.6` |
+| Released | August 12, 2026 |
+| Intended use | Coding, agentic tasks, and knowledge work |
+| Input and output | Text and image input; text output |
+| Context window | 500,000 tokens |
+| Reasoning effort | `low`, `medium`, `high`, `xhigh`; `high` is default |
+| Price below 200K prompt tokens | $2 input, $0.50 cached input, $6 output per 1M tokens |
+| Price at 200K prompt tokens or more | $4 input, $1 cached input, $12 output per 1M tokens |
+| Knowledge cutoff | February 1, 2026 |
+| Open weights | No |
 
-## 1\. What Grok 4.6 Is and Isn't
+These specifications come from the current [xAI model documentation](https://docs.x.ai/developers/models/grok-4.6), [API pricing table](https://docs.x.ai/developers/pricing), and [release notes](https://docs.x.ai/developers/release-notes). Prices can change, so production buyers should treat the live pricing page—not a launch article—as the source of truth.
 
-Grok 4.6 is a point release over Grok 4.5, and xAI was explicit about the strategy: hold the foundation model constant and spend the improvement on a longer training run, regenerated supervised fine-tuning trajectories, and reinforcement learning in agentic environments. The result is a model tuned to stay on task across many steps — researching a topic, working across a codebase, or turning an idea into a polished artifact — rather than a model that answers harder single-turn questions. That is a different bet from a scale-up release, and it shows up directly in where the model does and does not lead.
+## What changed from Grok 4.5
 
-What Grok 4.6 is not is an open-weight model. Unlike DeepSeek's V4 line, which ships MIT-licensed weights, Grok 4.6 has no weights release and no self-hosting path — it is available through the xAI API, Grok Build, Cursor, and partners like OpenRouter, Vercel, and Cloudflare. For a solo founder that distinction matters as much as the benchmark table, because it determines whether your agentic workflow can move off a vendor's API if prices change or the product direction shifts.
+xAI described Grok 4.6 as a continuation of Grok 4.5 rather than a new base-model generation. According to the [launch announcement](https://x.ai/news/grok-4-6), the company extended supplemental training, regenerated supervised fine-tuning trajectories across reasoning efforts and agent harnesses, and used reinforcement learning tasks spanning coding, knowledge work, web development, and other technical environments.
 
-The release also came with a deliberate access strategy: Grok 4.6 is live in Cursor and Grok Build immediately, with 2x included usage for the first week. The Cursor placement is notable — it is xAI's clearest signal yet that coding-agent workloads, not just chat, are the arena it is competing in. The same week DeepSeek slipped its V4 Pro GA into production, xAI held a formal launch for a model aimed at the same jobs, which makes the two releases a natural pair to evaluate together.
+That training target matters more than the decimal in the model name. Grok 4.6 was designed to maintain progress across longer sequences of research, implementation, checking, and revision. xAI also emphasized stronger first passes on interactive and visual projects. These are vendor claims, not guarantees for every workflow, but they explain why the official evaluation suite leans heavily toward multi-step work instead of only question answering.
 
-## 2\. Specs, Context, and the 200K Price Trap
+Grok 4.6 launched in Cursor and Grok Build, then reached the xAI API and additional partners. xAI later announced availability in GitHub Copilot and major cloud or routing platforms. Availability through a product does not mean every account has the same access; enterprise model settings can still determine whether it appears.
 
-The technical sheet for Grok 4.6 looks strong on paper: a 500,000-token context window, text and image input with text output and no stated output limit, and a reasoning-effort ladder that now runs low / medium / high (default) / xhigh. The API model ID is `grok-4.6`, with rate limits of 150 requests per second and 50 million tokens per minute. xAI has not published a parameter count, and the knowledge cutoff is February 1, 2026 — worth knowing if you use the model for current-event research.
+Readers evaluating the xAI stack rather than this release alone can use our earlier [Grok API guide for solo operators](/blog/grok-3-api-solo-operator) to understand the surrounding questions of search access, provider integration, and production controls.
 
-The pricing table is where most coverage has been incomplete. xAI's headline — $2 per 1M input tokens, $6 per 1M output — applies only to prompts under 200,000 tokens. Once a request reaches that threshold, the rate for the entire request doubles to $4 input / $12 output, and cached input rises from $0.50 to $1.00 per 1M tokens. The doubling applies to all tokens in the request, not just those over the line, so a 200K prompt costs the same per-token as a 500K prompt — there is no "cheap first 200K" band.
+## The 500K context window has a pricing boundary
 
-That structure has a direct implication for agentic work, where long context is the point. A coding agent that keeps a large repository's contents in context, or a research agent that accumulates documents across a session, can cross 200K tokens quickly. When it does, the effective cost of the session jumps 2x, and the "cheap frontier model" framing collapses toward premium pricing. The practical mitigation is exactly what xAI's own docs recommend: set a `prompt_cache_key` so repeated context is served from cache at $0.50–$1.00 per 1M tokens, which is a 75% discount on cached input and matters enormously for multi-turn loops.
+The 500,000-token window is useful for large repositories, document collections, or long agent histories. It does not mean filling the window is always economical.
 
-The reasoning-effort ladder deserves a closer look as a cost lever. With low, medium, high, and xhigh available on the `reasoning_effort` parameter, xAI has given developers a knob that works like DeepSeek's expanded effort settings on V4: use low for routine extraction and formatting, medium for typical agent steps, high (the default) for planning and debugging, and reserve xhigh for the hardest problems. Because token consumption scales with effort level, the dial is effectively a price selector in disguise — a habit of running everything at xhigh silently converts a budget model into a premium-priced one. Teams that route effort levels by task type report keeping effective per-task cost at or below the short-context headline rates.
+xAI applies a different rate once the prompt reaches 200,000 tokens. Below that threshold, standard rates are $2 input, $0.50 cached input, and $6 output per million tokens. At 200,000 prompt tokens or more, the entire request is billed at $4 input, $1 cached input, and $12 output. The [pricing documentation](https://docs.x.ai/developers/pricing) says the long-context rate applies to all tokens in the request, not only the portion above the threshold.
 
-There is also a deployment consideration that rarely appears in launch coverage: rate limits. Grok 4.6's API is capped at 150 requests per second and 50 million tokens per minute, with availability in `us-east-1` and `us-west-2`. For a solo operator running one or two agent loops that is generous headroom. For a team parallelizing a burst of long-context jobs, the token-per-minute ceiling becomes the practical constraint before the price does — and the 200K threshold then interacts with that ceiling, since crossing into the long-context band doubles the tokens you can bill through in the same minute. Budgeting a burst means planning for both limits at once.
+That creates a discontinuity: prompts just below and above 200K can contain nearly the same information but have materially different token charges. Long-running agents should keep reusable material stable enough to benefit from caching, compact tool histories instead of appending them forever, and test whether extra context actually improves the final artifact.
 
-## 3\. Benchmarks: What the Numbers Say
+Four reasoning-effort settings provide another cost and latency control. Extraction and classification rarely need the same effort as debugging or multi-stage planning. The best setting is therefore a routing decision, not a universal maximum.
 
-The cleanest way to read Grok 4.6 is through independent evaluation, because the launch materials present numbers on two different benchmark versions that are easy to conflate. On the Artificial Analysis Intelligence Index — a composite of nine benchmarks — Grok 4.6 scores 61, matching GPT-5.6 Sol Max and trailing Claude Opus 5 (63) and Claude Fable 5 (62). Independent measurement verified the claim at 60.92, ranking fourth of twenty models. That is a real frontier placement: the model's strongest results are on agentic knowledge work rather than static reasoning.
+## How to read the benchmarks without mixing versions
 
-The per-benchmark picture is more granular. On GDPval-AA v2, Artificial Analysis's measure of real-world agentic knowledge work, Grok 4.6 posts an Elo of 1753 — behind only Claude Opus 5 and statistically indistinguishable from Claude Fable 5. On AA-Briefcase, a long-horizon agentic knowledge benchmark, it lands at Elo 1577, in Fable 5 territory. On terminal-based software tasks (Terminal-Bench v2.1), it scores 88.4%, level with the leaders. The one place the launch table is genuinely misleading is the coding-engineering side: xAI's own chart shows Grok 4.6 at 26% on Terminal-Bench v3.0 (a harder version) and 65.9% on DeepSWE v1.1, while GPT-5.6 Sol leads both — and a different 88.4% figure on v2.1 has been circulating as if it were the same test. Different benchmark versions, not comparable; the model is strong on agentic knowledge work, mid-pack on the hardest software-engineering evals.
+The launch table reports an Artificial Analysis Intelligence Index score of 61, GDPval-AA v2 Elo of 1753, CursorBench v3.2 at 69.9%, DeepSWE v1.1 at 65.9%, Terminal-Bench v3.0 at 26%, and AA-Briefcase Elo of 1577. xAI states that third-party model scores are the best self-reported or publicly available results.
 
-The pattern across these numbers tells a coherent story about what xAI optimized. Grok 4.5's weakness was consistency over long horizons — it could start strong on a task and drift before finishing. Grok 4.6's training emphasis on agentic environments is aimed squarely at that failure mode, and the benchmarks that improved most are the ones that punish drift: AA-Briefcase, GDPval, and τ³-Banking all reward completing a multi-step task in order rather than producing a good single answer. The trade-off is visible in the same table — pure reasoning and the hardest coding evals did not move the same way, which is consistent with a post-training run that traded some breadth for reliability on sustained work.
+Artificial Analysis independently reported an Intelligence Index score of 61 and highlighted Grok 4.6's agentic knowledge-work performance. Its [August 2026 analysis](https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis/) also reported 88.4% on Terminal-Bench v2.1.
 
-## 4\. Where Grok 4.6 Wins and Loses
+The two Terminal-Bench figures are not contradictory: they refer to different benchmark versions. v2.1 and v3.0 should not be placed in one ranking as though they were the same test. The same caution applies whenever a leaderboard changes its task set, scoring method, or inference configuration.
 
-The win column for Grok 4.6 is concentrated in agentic knowledge work and long-horizon interactive tasks. Beyond the GDPval and AA-Briefcase scores, it leads the field on customer-service-style tool use (τ³-Banking at 50.7%, top two) and shows the largest single gain of any model on legal reasoning benchmarks (Harvey LAB at 15.8%, up from 12.9% on Grok 4.5, versus GPT-5.6 Sol's 2.5%). On visual and interactive work — producing polished front-end artifacts from a single prompt — xAI says the model produces stronger first attempts than its predecessor, and independent reviewers report the "obviously synthetic" look that used to plague AI front-ends has largely disappeared.
+A defensible interpretation is narrower than “Grok 4.6 beats model X.” At launch, it showed strong multi-step knowledge-work performance and competitive coding-agent results at a relatively low list price. That justifies testing; it does not predict performance on a particular repository, document set, or toolchain.
 
-The loss column is software engineering depth. DeepSWE v1.1 at 65.9% trails GPT-5.6 Sol's 73% and Fable 5's 70%; Terminal-Bench v3.0 at 26% trails GPT-5.6 Sol's 34.6%. If your workload is terminal-heavy or repo-scale refactoring, Grok 4.6 is not the leader. The model also sits mid-table on some vibe-coding and web-development leaderboards. For context on how this compares to another model whose multimodal focus is video generation rather than agents, our [MiniMax H3 explainer](/blog/what-is-minimax-h3) covers the neighboring territory — but for agentic work, the two are not substitutes.
+If price and deployment control matter more than the xAI ecosystem, our [DeepSeek V4 Pro analysis](/blog/deepseek-v4-pro-0813) provides a useful comparison point without pretending that vendor benchmarks are interchangeable.
 
-## 5\. Grok 4.6 vs DeepSeek V4 Pro 0813
+## Where Grok 4.6 is strongest—and where it stops
 
-The same-week pairing with DeepSeek's V4 Pro 0813 is the most useful comparison available this month, because the two models target the same workloads with the same price philosophy. Grok 4.6 lists at $2 / $6 per 1M tokens; V4 Pro is at $0.435 / $0.87 — about a quarter of Grok's input rate and a seventh of its output rate, though both are an order of magnitude below the premium closed tier. Both are post-training upgrades aimed at long-running agents, and both arrived within 24 hours of each other in mid-August.
+Grok 4.6 is most plausible when reasoning is combined with sustained tool use:
 
-Where they differ is in what they optimize. Grok 4.6 wins on agentic knowledge work and on the raw composite — its Intelligence Index of 61 matches GPT-5.6 Sol, while V4 Pro 0813's independent composite sat at 53 when last measured. DeepSeek wins on price, on MIT-licensed weights (self-hosting is possible), and on the presence of a first-party harness in its ecosystem. On coding specifically, the two are closer than the composite gap suggests, and neither's official scores have been fully independently verified. For a buyer the honest question is workload-first: knowledge-heavy agent tasks point to Grok, cost-minimized agentic coding at scale points to DeepSeek. Our [DeepSeek V4 Pro 0813 analysis](/blog/deepseek-v4-pro-0813) covers the other side of that comparison in depth.
+- researching across sources and producing a structured deliverable;
+- navigating a codebase, editing files, and checking work over multiple steps;
+- analyzing a large collection of documents or images with text output;
+- creating an interactive prototype through several rounds of refinement;
+- running a harness where function calling and structured output matter.
 
-## 6\. Practical Takeaways
+Its 500K window is an option, not the sole reason to choose it. The stronger case is the combination of context capacity, reasoning controls, tool support, and launch-time agentic results.
 
-If Grok 4.6 is in your evaluation pool, four facts should shape the decision. First, budget long-context work at the 200K+ rates, not the headline rate — a research agent that accumulates context will cross the threshold and pay $4 / $12 per 1M tokens, so size the session and the cache key before committing. Second, use the `reasoning_effort` dial: low and medium cover most routine agent tasks, and reserving `xhigh` for the hardest problems keeps the token bill in check. Third, treat the coding benchmarks with version discipline — the 88.4% Terminal-Bench figure and the 26% figure are different tests, and neither supports the other's narrative. Fourth, remember there is no open-weight path; your agentic workflow on Grok runs on xAI's API, which is a vendor-lock decision even if it is a cheap one today.
+The limits are clear. The model is closed-weight and cannot be self-hosted. Current information is not automatically available from training data: xAI's [models documentation](https://docs.x.ai/developers/models) says real-time events require search tools. The model accepts text and images but returns text; xAI uses separate APIs for image, video, and voice generation.
 
-For agentic knowledge work specifically — research, legal-style reasoning, long-horizon document tasks — Grok 4.6 is the most cost-effective frontier option available in August 2026, and the independent evidence for that is stronger than for its coding claims. For a framework on how DeepSeek's four agent archetypes compare when cost is the binding constraint, see [what is a DeepSeek Agent](/blog/what-is-deepseek-agent). And for solopreneurs who want the same agentic capability class at a lower price point with open weights, DeepSeek's V4 family remains the value alternative this week.
+## Does Grok 4.6 still make sense after Grok 4.7?
 
-One more consideration for teams that run agents unattended: reliability over time is where Grok 4.6's agentic training shows up in practice. Independent reviewers running the model through coding-agent harnesses report that it completes long multi-step sessions with fewer restarts than Grok 4.5, and xAI's own launch materials emphasize "stronger first attempts" on visual and interactive artifacts. For an unattended agent, a strong first attempt is not a luxury — it is the difference between a task that finishes in one run and a loop that burns tokens re-requesting and patching. If you automate work while you sleep, that single trait may justify the model on its own, independent of any benchmark table.
+Grok 4.7 became xAI's newer coding and knowledge-work model on September 21, 2026. xAI says it uses a new, larger base model, improves long-running work and verification, and is served at the same starting token price as 4.6. The [Grok 4.7 announcement](https://x.ai/news/grok-4-7) also publishes higher results than 4.6 on several updated evaluations.
 
-## Conclusion
+For a new evaluation, 4.7 is therefore the obvious first xAI candidate. Grok 4.6 can still be reasonable when an existing workflow has already been validated against its behavior, a provider has not enabled 4.7, regression testing needs an earlier model, or migration requires a new safety or compliance review.
 
-Grok 4.6 is xAI's sharpest release yet, and its sharpness is specific: a frontier model that leads on agentic knowledge work, holds the same price as its predecessor, and is honest enough in its own benchmark table that a careful reader can see where it loses. The model's real competition this week is not Claude Opus 5 or Fable 5 at the top of the index — it is DeepSeek's V4 Pro at the bottom of the price curve, offering a similar agentic workload fit at a fraction of the cost.
+Do not assume an unversioned “latest” choice will preserve behavior. Workflows that require consistency should pin a supported version and rerun evaluations before migrating.
 
-The decision between them is a workload routing problem, not a model-picking problem. Grok 4.6 earns its $2/$6 price on knowledge-heavy agent tasks where its GDPval and AA-Briefcase scores are genuinely frontier. DeepSeek wins where token volume is high and cost is binding, because a seventh of the output price compounds fast over a long agent loop. Whatever you choose, budget for the real cost structure — the 200K threshold, the reasoning-effort dial, the cache key — and validate on your own tasks before you trust either model's scorecard.
+## A practical evaluation plan
 
+Use representative work instead of one generic benchmark prompt. Include a routine case, a difficult case, and a historically failure-prone case. Score the artifact, not only the first response.
+
+Track six things:
+
+1. **Completion quality:** Did the model satisfy explicit acceptance criteria?
+2. **Tool reliability:** Did it choose tools correctly and recover from failures?
+3. **Review burden:** How much human correction was required?
+4. **Context behavior:** Did more context help, or introduce drift?
+5. **Total cost:** Include input, cache, output, retries, and the 200K boundary.
+6. **End-to-end latency:** Measure the whole task, not first-token speed.
+
+When comparing 4.6 with 4.7, keep the harness, permissions, context, reasoning setting, retries, and scoring rubric the same. Otherwise the result measures the surrounding system as much as the model.
+
+## Bottom line
+
+Grok 4.6 was a meaningful xAI release for agentic coding and knowledge work. Its confirmed strengths are a 500K context window, configurable reasoning, multimodal input, and competitive launch-time agent evaluations at a starting price of $2 per million input tokens and $6 per million output tokens.
+
+The caveats are just as concrete. Long prompts trigger higher rates for the whole request, benchmark versions cannot be mixed, real-time knowledge requires search tools, and Grok 4.7 is now the newer candidate. Grok 4.6 is best preserved where it is already validated—not treated as the automatic starting point for a new deployment.

@@ -130,4 +130,6 @@ Thinking 模式是第二块拼图。[The Next Web 的报道](https://thenextweb.
 
 关于这件事，我目前的结论是这样。我不会辞掉我未来的分镜师；但我会停止假装自己没时间给自己的短视频画分镜。**这个工具不是在取代手艺，而是在消除借口。**
 
+在把生产流程固定到某一个图像模型之前，建议用相同参考图、文字渲染案例、修改请求与交付要求，对照评估 [GPT-Image-2、Midjourney 与 Nano Banana 2](/zh/blog/gpt-image-2-vs-midjourney-nano-banana-2)。
+
 需要它的时候，你会知道的。

@@ -1,6 +1,6 @@
 ---
 title: "AI Assistant for Personal Use at Work"
-description: "AI assistant for personal use at work helps solo operators choose the right assistant for files, routines, and daily execution."
+description: "Choose an AI assistant for personal use at work by employer policy, account ownership, data sensitivity, connected-app permissions, approval controls, and review needs."
 slug: "ai-assistant-for-personal-use-at-work"
 date: "2026-05-13"
 author: "Nova"
@@ -9,6 +9,8 @@ cover: "/blog/images/ai-assistant-for-personal-use-at-work/1778661709595-55d8271
 locale: "en"
 draft: false
 ---
+
+**Information checked October 13, 2026.** Work-account features, connected apps, retention, and administrator controls change by provider, edition, region, device, and organizational policy.
 
 Using a personal AI assistant at work is not only a tool choice. It is a decision about employer policy, account ownership, data handling, and which part of a task remains your responsibility.
 
@@ -24,7 +26,7 @@ Three situations are often confused:
 
 The first may be low risk. The second can create shadow-AI risk because the employer may have no inventory, contract, deletion path, or control over the account. The third can provide governance, but only if the organization has configured it and the user stays inside the approved boundary.
 
-Account type matters. Google explicitly distinguishes personal Gemini accounts from work or school accounts; connected apps, retention, administrator controls, and data protections can differ. OpenAI likewise describes separate business-data commitments for business products. Do not transfer a privacy statement from one account type to another because the brand name is the same.
+Account type matters. Google's [Gemini Apps Privacy Hub](https://support.google.com/gemini/answer/13594961) explains data handling for Gemini Apps, while its [work-account Connected Apps documentation](https://support.google.com/gemini/answer/14959807) describes administrator-controlled availability and feature limits. OpenAI publishes separate [business data privacy commitments](https://openai.com/enterprise-privacy/) for its business products. Read the documentation for the exact account and feature; do not transfer a privacy promise from one product tier to another because the brand name is the same.
 
 ## Start With Employer Policy
 
@@ -71,7 +73,7 @@ Google's [work-account connected-app documentation](https://support.google.com/g
 
 Best for persistent projects, repeatable workflows, shared files, tools, and scheduled work. It requires more governance because context lasts longer and actions can cross systems. If all you need is help revising one paragraph, a persistent workspace is unnecessary.
 
-The distinction between an [AI assistant and an AI agent](/blog/ai-agent-vs-ai-assistant) becomes important here: the more the system can choose steps and act, the more you must evaluate permissions, approvals, logs, and recovery—not only answer quality.
+The distinction between an [AI assistant and an AI agent](/blog/ai-agent-vs-ai-assistant) becomes important here: the more the system can choose steps and act, the more you must evaluate permissions, approvals, logs, and recovery—not only answer quality. The [agent connector guide](/blog/ai-agent-connectors-explained) provides a second checklist for OAuth scope, write authority, and revocation.
 
 ## Privacy and Account Questions to Verify
 

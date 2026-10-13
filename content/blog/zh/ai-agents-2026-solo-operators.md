@@ -16,29 +16,31 @@ AI Agent 对单人经营者真正有价值的时刻，是它能通过工具完�
 
 下面把已发生的事实与预测分开，并给出一套从任务选择到试点验收的方法。
 
+> **证据核验日期：2026 年 10 月 13 日。** 易变的产品案例均邻接一手来源；厂商路线图与基准成绩在自己的任务上验证前，只能作为方向性信息。
+
 ## 先看证据：AI Agent 发展时间线
 
 行业新闻经常把产品发布、使用调研、技术标准和市场预测混成同一种证据。它们不是。以下节点说明「什么开始成为可能」，但不能证明某个单人业务一定应该自动化。
 
 ### 2024 年 10 月 22 日：computer use 进入公开 API 测试
 
-Anthropic 为 Claude 3.5 Sonnet 发布 computer use 公测，开发者可以让模型看屏幕、移动鼠标、点击和输入。意义在于，模型开始能操作没有专用 API 的界面；限制也同样明确：这是 beta 能力，不等于任何浏览器任务都适合无人值守。
+Anthropic 为 Claude 3.5 Sonnet [发布 Computer Use 公测](https://www.anthropic.com/news/3-5-models-and-computer-use)，开发者可以让模型看屏幕、移动鼠标、点击和输入。意义在于，模型开始能操作没有专用 API 的界面；限制也同样明确：这是 Beta 能力，不等于任何浏览器任务都适合无人值守。
 
 ### 2024 年 11 月 25 日：MCP 作为开放协议发布
 
-Anthropic 开源 Model Context Protocol，用统一方式连接 AI 应用、数据源与工具。共享协议可以减少重复集成，却不会自动让所有 MCP 服务可信，也不会给 Agent 使用所有动作的权限。
+Anthropic [发布 Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)，用统一方式连接 AI 应用、数据源与工具。共享协议可以减少重复集成，却不会自动让所有 MCP 服务可信，也不会给 Agent 使用所有动作的权限。
 
 ### 2025 年 12 月 9 日：MCP 进入中立基金会治理
 
-Linux Foundation 宣布成立 Agentic AI Foundation，MCP、goose 与 AGENTS.md 成为首批贡献项目，白金成员包括 AWS、Anthropic、Block、Bloomberg、Cloudflare、Google、Microsoft 与 OpenAI。这个节点能证明多家基础设施厂商共同参与，不能被换算成单人经营者的采用率。
+[Linux Foundation 宣布成立 Agentic AI Foundation](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation)，MCP、goose 与 AGENTS.md 成为首批贡献项目，白金成员包括 AWS、Anthropic、Block、Bloomberg、Cloudflare、Google、Microsoft 与 OpenAI。这个节点能证明多家基础设施厂商共同参与，不能被换算成单人经营者的采用率。
 
-### 2026 年 1 月至 5 月：Agent 安全成为标准议题
+### 2026 年 5 月：Agent 安全成为标准议题
 
-NIST 旗下 CAISI 在 1 月公开征集 AI Agent 安全证据；5 月发布的汇总指出，反馈者普遍认为 Agent 带来独特威胁，传统网络安全实践需要调整。NIST 同期还推进 Agent 身份与授权工作。方向已经很清楚：能调用工具的 Agent 必须有明确身份、权限与限制。
+NIST 旗下 CAISI 发布了关于 AI Agent 安全的 RFI，随后又发布[意见汇总](https://www.nist.gov/publications/summary-analysis-responses-request-information-regarding-security-considerations-ai)。汇总指出，反馈者普遍认为 Agent 带来独特威胁，现有网络安全实践需要调整。
 
 ### 2026 年 4 月 3 日：美国采用数据提醒我们不要混口径
 
-美联储的一份研究笔记对比了截至 2025 年的三类调查：2025 年末约 18% 的企业使用 AI；同年 11 月，约 41% 的个人表示在工作中使用生成式 AI；面向企业高管的另一份调查又得到不同口径。作者明确解释，样本、统计单位、提问方式和报告偏差都会造成差异。
+[美联储研究笔记](https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html)对比了截至 2025 年的三类调查：2025 年末约 18% 的企业使用 AI；同年 11 月，约 41% 的个人表示在工作中使用生成式 AI；面向企业高管的另一份调查又得到不同口径。作者明确解释，样本、统计单位、提问方式和报告偏差都会造成差异。
 
 这些数字衡量的是 AI 或生成式 AI，并不是自主 Agent。它们能说明接触和使用正在增长，也说明不能把不同调查拼成一个耸动的「Agent 普及率」。
 
@@ -46,7 +48,7 @@ NIST 旗下 CAISI 在 1 月公开征集 AI Agent 安全证据；5 月发布的�
 
 ## 实际工作里，什么才算 Agent
 
-Anthropic 把 Agent 定义为：模型自己决定过程与工具使用，而不是只沿固定脚本执行。其工程指南还区分了 Agent 与 workflow——后者由预先写好的代码路径编排模型和工具。
+Anthropic 的 [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)把 Agent 定义为：模型自己决定过程与工具使用，而不是只沿固定脚本执行。该指南还区分了 Agent 与 Workflow——后者由预先写好的代码路径编排模型和工具。
 
 对单人经营者来说，应该在三种实现中选择：
 
@@ -56,7 +58,7 @@ Anthropic 把 Agent 定义为：模型自己决定过程与工具使用，而不
 | 确定性工作流 | 步骤和分支提前定义 | 周报、文件转换、分派 | 集成和重试失败 |
 | Agent | 模型在边界内选择步骤或工具 | 可变调研、分诊、排障 | 意外动作与难覆盖路径 |
 
-选择能完成任务的最低自主程度。Anthropic 的工程建议也是同一方向：定义清楚的任务优先使用可预测的工作流；只有确实需要灵活判断时才用 Agent，并接受额外延迟、成本与复杂度。
+选择能完成任务的最低自主程度。Anthropic 的[工程指南](https://www.anthropic.com/engineering/building-effective-agents)也是同一方向：定义清楚的任务优先使用可预测的工作流；只有确实需要灵活判断时才用 Agent，并接受额外延迟、成本与复杂度。
 
 ## 哪些一人公司任务更适合
 
@@ -177,13 +179,3 @@ Agent 成本包括模型、搜索、工具动作、重试、订阅和人工复�
 这足以让单人经营者试一条有边界的工作流，却不能证明每家公司都需要自主 Agent，也不能把企业部署比例直接套到一人公司身上。
 
 输入有变化、确实需要有限判断时用 Agent；路径已知时用确定性工作流；一次模型调用足够时就不要加复杂度。目标不是最大自主程度，而是以你承担得起的失败方式，稳定完成工作。
-
-## 一手资料
-
-- [Anthropic：computer use 公告，2024 年 10 月 22 日](https://www.anthropic.com/news/3-5-models-and-computer-use)
-- [Anthropic：发布 MCP，2024 年 11 月 25 日](https://www.anthropic.com/news/model-context-protocol)
-- [Linux Foundation：Agentic AI Foundation，2025 年 12 月 9 日](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation)
-- [美联储：Monitoring AI Adoption in the U.S. Economy，2026 年 4 月 3 日](https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html)
-- [NIST：AI Agent 安全征集意见分析，2026 年 5 月 18 日](https://www.nist.gov/publications/summary-analysis-responses-request-information-regarding-security-considerations-ai)
-- [Anthropic：Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)
-- [OpenAI：Agent 工作流评测](https://developers.openai.com/api/docs/guides/agent-evals)

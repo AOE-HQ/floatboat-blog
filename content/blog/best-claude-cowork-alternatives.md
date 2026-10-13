@@ -1,6 +1,6 @@
 ---
-title: "Best Claude Cowork Alternatives — Office Agents for Non-Developers"
-description: "Ranked by job fit for non-developer knowledge work: calendar-driven agents, M365 Copilot Cowork, cloud agents like Manus and Perplexity Computer, plus Eigent and Genspark."
+title: "Best Claude Cowork Alternatives for Office Work"
+description: "Compare Microsoft 365 Copilot, Gemini for Workspace, ChatGPT Work, Manus, and Floatboat by files, app access, approvals, and finished deliverables."
 slug: "best-claude-cowork-alternatives"
 date: "2026-08-14"
 author: "Remy"
@@ -10,122 +10,79 @@ locale: "en"
 draft: false
 ---
 
-**TL;DR**
-  * **Claude Cowork** is Anthropic's desktop agent for non-coding knowledge work — local files, Office deliverables, multi-step tasks without a terminal. For the full definition, see what is Claude Cowork.
+Claude Cowork is built for multi-step knowledge work across files, connected tools, and office deliverables. The right alternative is not necessarily the chatbot with the best prose. It is the system that can reach the documents you are allowed to use, produce the required artifact, pause at the right approval point, and leave enough evidence to review the work.
 
-  * This ranking uses **job fit for non-developer office work** , not keyword overlap alone: who delivers documents, research, and multi-step tasks without you acting as the project manager.
+Cowork is only one of Anthropic's agent surfaces. The practical differences among [Claude Code, Cowork, and Tag](/blog/claude-code-vs-cowork-vs-tag) matter because a repository task, a personal office task, and a shared channel assignment require different permissions and review loops.
 
-  * **Floatboat** ranks first when your calendar drives the week and prep or follow-up must happen without reopening a desktop agent.
+For Microsoft-heavy organizations, **Microsoft 365 Copilot** has the strongest native context. **Gemini for Google Workspace** is the natural choice for work centered on Gmail, Drive, Docs, Sheets, and Slides. **ChatGPT Work** is the broadest general-purpose option across research, connected apps, and local or cloud tasks. **Manus** fits cloud-first browser delegation. **Floatboat** is relevant when work should start from a calendar event on a desktop rather than from a chat prompt.
 
-  * **Microsoft Copilot Cowork** leads for M365-native teams; **Manus** and **Perplexity Computer** lead for cloud-delegated research and long-running tasks; **Eigent** for open-source local desktop control; **Genspark** for research-heavy slides and reports.
+## Cowork alternatives at a glance
 
-  * **Claude Cowork** remains the reference when you want Anthropic polish, local folder access, and explicit task assignment inside a paid Claude plan.
+| Alternative | Best fit | Data boundary | Key limitation to test |
+|---|---|---|---|
+| **Microsoft 365 Copilot** | Word, Excel, PowerPoint, Outlook, Teams | Microsoft Graph and tenant controls | Licensing and admin configuration |
+| **Gemini for Workspace** | Gmail, Drive, Docs, Sheets, Slides | Google Workspace permissions | Cross-app features vary by edition and rollout |
+| **ChatGPT Work** | Research plus mixed connected tools | Workspace apps and selected execution environment | App permissions and action approvals differ |
+| **Manus** | Browser-heavy cloud delegation | Managed cloud workspace | Sensitive logins and action review |
+| **Floatboat** | Calendar-triggered desktop workflows | Local desktop plus configured integrations | Not a suite-native document copilot |
 
-## 1\. The Problem Cowork Solves — and Why People Still Search Alternatives
+## 1. Microsoft 365 Copilot: best for governed Microsoft work
 
-Claude Cowork exists because conversational AI stopped short of execution. Anthropic packaged the agentic engine behind Claude Code into a surface aimed at **everyone who is not a developer** — researchers, analysts, operations, legal, finance — where you describe an outcome and return to finished files rather than chat paragraphs you still have to paste into Word or Excel. Public positioning and third-party reviews in 2026 consistently frame Cowork as the desktop agent for **knowledge work beyond coding** : organized folders, formatted documents, spreadsheets with working formulas, and multi-step batches you initiate from the Claude app.
+Microsoft 365 Copilot is the strongest Cowork alternative when the source material already lives in SharePoint, OneDrive, Outlook, Teams, Word, Excel, and PowerPoint. Microsoft also provides specialized agents such as [Researcher](https://www.microsoft.com/en-us/copilot/features/researcher-agent), which can combine work content with web research, and Analyst for data-oriented work.
 
-Search volume for **Claude Cowork alternatives** grew because buyers optimize for different **office job shapes** , not because Cowork failed at file delegation. Trigger model splits the market: Cowork is user-initiated or explicitly scheduled — you open a task or set a cadence — but it does not automatically prep every external call from calendar semantics unless you wire connectors and build the habit. Ecosystem lock-in matters: Cowork runs through Anthropic's subscription and consumes limits faster than Chat, according to Anthropic's pricing page as of July 2026. Enterprise teams already living in Microsoft 365 ask why they need a second desktop agent. Solo operators whose failure mode is **forgetting before calls** want calendar-native execution, not another chat window to remember to open.
+Its advantage is not a generic model claim; it is identity and context. Existing Microsoft permissions can govern what a user and an agent can retrieve. That makes it a better fit for an enterprise report assembled from internal email, spreadsheets, and presentations than a separate desktop agent that first needs every source connected.
 
-That is why a credible alternatives list must rank by **function** — calendar rhythm, M365 stack, cloud delegation, open-source control, research-to-deck output — rather than by who reused the phrase "Claude Cowork alternative" in SEO copy. If the real question is which Anthropic surface to use — Code, Cowork, or Tag — rather than what replaces Cowork, the split lives in [how those three surfaces divide the work](/blog/claude-code-vs-cowork-vs-tag).
+Test the exact workflow before buying seats. Confirm whether the agent can create the final file—not merely draft text—and whether your administrator has enabled the required agents. Researcher with computer use, for example, has had separate availability conditions. A feature visible in a launch post may not be enabled in your tenant.
 
-## 2\. How We Ranked These Alternatives (Function, Not Keywords)
+## 2. Gemini for Google Workspace: best for Google-native teams
 
-Before comparing logos, we sorted candidates by whether they solve the same **non-developer office job** Cowork targets: delegate multi-step knowledge work and receive reviewable deliverables — not whether they rank for the same search term.
+Gemini is the most direct alternative for organizations whose work graph is Gmail, Drive, Docs, Sheets, Slides, and Chat. Google describes Gemini as able to orchestrate cross-app work and produce formatted documents, structured spreadsheets, and presentations from selected Workspace context. See Google's [official Workspace announcement](https://workspace.google.com/blog/product-announcements/less-switching-more-flow-5-new-agentic-capabilities-across-google-workspace-apps).
 
+Choose it when moving files out of Google Workspace would add friction or violate policy. The important evaluation is permission fidelity: use test accounts with different Drive access and confirm that citations, generated files, and sharing settings behave as expected. Also verify edition and regional availability, because Workspace features roll out gradually.
 
+## 3. ChatGPT Work: best for mixed research and execution
 
-<table><colgroup><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p>Job shape</p></th><th colspan="1" rowspan="1"><p>What the agent must do</p></th><th colspan="1" rowspan="1"><p>Who fits</p></th></tr><tr><td colspan="1" rowspan="1"><p><strong>Calendar-driven ops</strong></p></td><td colspan="1" rowspan="1"><p>Prep and follow-up tied to events and deadlines without you starting a session</p></td><td colspan="1" rowspan="1"><p>Floatboat</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Enterprise M365 work</strong></p></td><td colspan="1" rowspan="1"><p>Email, Teams, Word/Excel/PPT inside tenant boundaries</p></td><td colspan="1" rowspan="1"><p>Microsoft Copilot Cowork</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Cloud-delegated research</strong></p></td><td colspan="1" rowspan="1"><p>Long-running, hands-off tasks while your laptop is closed</p></td><td colspan="1" rowspan="1"><p>Manus, Perplexity Computer</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Local desktop + BYOK</strong></p></td><td colspan="1" rowspan="1"><p>Cowork-like file batches with model choice and inspectable code</p></td><td colspan="1" rowspan="1"><p>Eigent</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Research → slides/reports</strong></p></td><td colspan="1" rowspan="1"><p>Single-prompt synthesis into polished office output</p></td><td colspan="1" rowspan="1"><p>Genspark</p></td></tr></table>
+ChatGPT Work is a broad option when a task spans web research, connected services, files, and an execution environment. OpenAI's [connected-app documentation](https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt) explains only the app layer: authorized services can provide information and, where supported, actions. The separate [ChatGPT Work and Codex guide](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) documents how Work handles longer research and deliverable tasks and distinguishes local and cloud execution.
 
+This breadth is useful for teams whose documents are not confined to one office suite. It also means governance must be explicit. An app that can search data may not support writes; an action may require approval; a local task and a cloud task have different data boundaries. Inventory permissions per workflow instead of assuming every connector behaves the same way.
 
+## 4. Manus: best for browser-heavy cloud assignments
 
-Products that are primarily **connector automation** (Zapier-style rules) or **team app builders** were excluded from the ranked list below. They appear in alternative searches but solve different failure modes — wiring apps, not delegating ambiguous folder work.
+Manus is oriented toward cloud execution: the agent can research, navigate web tools, and assemble outputs while the user is away. It is a candidate for market scans, data gathering, travel research, and other browser-heavy work where the primary inputs are online rather than a governed local file tree.
 
-## 3\. The Best Claude Cowork Alternatives, Product by Product
+That same strength creates the main risk. A cloud browser may encounter login credentials, personal data, downloads, or instructions embedded in untrusted pages. Pilot with low-risk accounts, require confirmation before consequential actions, and inspect the session record. Verify current capabilities and limits in the [official Manus documentation](https://help.manus.im/), because packaging changes faster than a static comparison article can.
 
-The order below reflects **non-developer knowledge workers and solopreneurs** evaluating Cowork in mid-2026. If your work is almost entirely episodic folder cleanup with no recurring calendar rhythm, skip to Eigent or stay on Cowork; the ranking shifts. Verify pricing and regional availability on each vendor's official site before switching.
+## 5. Floatboat: best when the calendar should start the work
 
-### 1\. Floatboat — Best when the calendar runs your week
+Floatboat addresses a narrower failure mode: the user should not have to remember to open an agent before a meeting or follow-up. Its [Agent Workspace overview](/agent-workspace) presents calendar events as one supported trigger for work in the desktop workspace, alongside other configured inputs.
 
-Floatboat tops this list for buyers whose Cowork search is really about **proactive office execution tied to the schedule they already live in**. Cowork waits for you to open a task; Floatboat treats calendar events and deadlines as the runtime — a client call routes prep, a deliverable date routes draft assembly, and a completed meeting can route follow-up without you remembering to reopen an agent surface. Product documentation positions it as a Calendar-Driven proactive agent OS with built-in frontier models (Claude, GPT, Gemini, DeepSeek, and others) and no per-provider API key setup.
+Choose it when timing is the problem—repeated meeting preparation, client follow-ups, and work tied to a personal schedule. Do not choose it merely because you need better in-document editing. Microsoft 365 Copilot or Gemini will usually fit suite-native authoring better, while Cowork remains strong for an Anthropic-centered file-and-tool workflow.
 
-The fit is strongest when your week encodes the business — external calls, renewals, content deadlines — and your failure mode is forgetting, not lacking a better chat window. That aligns with the agentic calendar idea: the event initiates work. Scenario depth lives in AI meeting preparation and AI follow-up automation; the paradigm contrast is in Calendar-Driven AI vs Chat-Based AI.
+For a deeper test of this trigger model, compare [calendar-driven AI with chat-based AI](/blog/calendar-driven-ai-vs-chat-ai): the important distinction is whether work begins because a person remembers to ask or because an event reaches its scheduled time.
 
-Floatboat is a poor Cowork replacement when your calendar is sparse, when you need deep local folder surgery on arbitrary directories, or when your organization standardizes on Microsoft Copilot Cowork inside M365 — different design centers, not inferior products.
+## When Claude Cowork remains the better fit
 
-### 2\. Microsoft Copilot Cowork — Best for Microsoft 365 knowledge workers
+Cowork is still compelling when you want Claude to work across files and connected tools, produce office artifacts, and multitask from one Claude environment. Anthropic's scheduled-task documentation says recurring Cowork tasks can use connected tools, skills, and plugins and deliver reports, briefings, and summaries. Paid-plan and surface availability can vary; check the [current help article](https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork).
 
-Microsoft Copilot Cowork is the most authoritative **enterprise office-agent** alternative when your work already lives in Outlook, Teams, Word, Excel, PowerPoint, and SharePoint. Microsoft positioned Cowork as an agentic layer that grounds tasks in Work IQ — email, meetings, files, and chats — then plans multi-step work, pauses for approval at checkpoints, and returns finished artifacts rather than draft suggestions alone. It reached general availability worldwide in June 2026.
+Stay with Cowork when its connectors cover your systems, reviewers prefer Claude's workflow, and the permission boundary is acceptable. Switch only for a concrete advantage: native Microsoft or Google context, a broader mixed-tool environment, cloud-browser delegation, or calendar-triggered execution.
 
-For non-developers inside M365, the appeal is familiarity: you describe an outcome in plain language; Cowork sends email, schedules meetings, creates documents, posts in Teams, and searches organizational resources within existing permissions and audit boundaries. That is a different shape from Anthropic's desktop folder agent — cloud-tenant execution versus local VM file access — but it solves the same **"stop being the human router between apps"** problem for office staff who never wanted a terminal in the first place. Developers fight the same router problem in the repository, which is why [coding agents](/blog/best-claude-code-alternatives) are ranked by repo job shape in their own comparison, not by office fit.
+## Run a deliverable test, not a prompt contest
 
-Trade-offs: requires a Microsoft 365 Copilot license (roughly $30/user/month as commonly listed) plus usage-based Copilot Credits for task execution as of GA pricing in 2026. It is the wrong default for solopreneurs outside M365 or buyers who need arbitrary local folder control without uploading to tenant storage.
+Choose three recurring office jobs, such as a weekly client brief, a spreadsheet-to-slide update, and meeting follow-up. For each candidate, use the same source set and require the same final format.
 
-### 3\. Manus — Best for hands-off cloud research and long tasks
+Score the result on:
 
-Manus is a **cloud-native autonomous agent** frequently compared to Cowork in 2026 roundups — not because it clones the desktop UI, but because both let non-developers delegate multi-step knowledge work. Manus runs workflows in remote sandboxes: research compilation, web gathering, content production, and reporting that can continue while your computer is off. Third-party comparisons (Mindber, Sliq, LinkedIn enterprise analyses) consistently route **public or non-sensitive research** to Manus and **local, NDA-bound file work** to Cowork-style desktops.
+1. **Source coverage:** did it find the authorized email, file, and record that mattered?
+2. **Artifact quality:** is the output a usable document, sheet, or deck rather than text to copy elsewhere?
+3. **Permission fidelity:** can a restricted user reproduce only what they are allowed to see?
+4. **Approval design:** does the agent pause before sending, sharing, purchasing, or changing records?
+5. **Correction cost:** how long does a reviewer need to verify facts and repair formatting?
+6. **Repeatability:** can the job run again without rebuilding the instructions from scratch?
 
-Choose Manus when you want to brief an agent once and collect a finished package later — competitive scans, market briefs, structured reports — without sitting beside a desktop session. It is weaker when deliverables must stay on local disks under strict data-sovereignty rules, or when your highest-value work is editing existing Office files in place rather than generating new artifacts from scratch.
+Include one adversarial input containing misleading instructions in a document or webpage. The result will reveal more about the product's readiness than a polished vendor demo.
 
-Pricing is credit-based (commonly cited tiers from roughly $19–$199/month depending on usage); treat numbers as directional and confirm on [manus.im](http://manus.im).
+## Bottom line
 
-### 4\. Perplexity Computer — Best for multi-model, long-horizon office workflows
+The best Claude Cowork alternative follows the location of the work. Microsoft 365 Copilot wins when company knowledge and artifacts live in Microsoft 365. Gemini fits a Google Workspace organization. ChatGPT Work covers a mixed toolset. Manus suits cloud-browser assignments. Floatboat is differentiated by calendar-triggered desktop work.
 
-Perplexity Computer markets itself as a **general-purpose digital worker** : natural-language tasks, sub-agents, background execution, and integrations across hundreds of apps (Gmail, Slack, Notion, calendar tools, and more). Unlike Cowork's single-vendor Claude stack, Computer orchestrates multiple frontier models and routes subtasks to whichever model fits — breadth over the deep local-file intimacy Cowork optimizes for.
-
-For non-developers, the practical appeal is delegation at scale: parallel research, recurring monitoring, cross-app workflows, and light app or report creation without assembling MCP servers yourself. Perplexity also offers a Personal Computer companion on macOS that bridges cloud agents to local files for users who want desktop reach — a hybrid pattern Cowork implements natively inside Claude Desktop.
-
-Trade-offs: Perplexity Max pricing (commonly **$200/month** for full Computer access as of 2026) targets power users; Cowork may cost less inside an existing Claude Pro or Max subscription if your work is document-heavy rather than integration-heavy. Computer excels when tasks span many cloud tools; Cowork excels when tasks span many **local** files.
-
-### 5\. Eigent — Best open-source local desktop for Cowork-like file work
-
-Eigent is the most cited **open-source Cowork desktop** in authoritative 2026 lists — roughly 15k GitHub stars, official site at [eigent.ai](http://eigent.ai), built on the CAMEL multi-agent framework. It targets operators who want Cowork's "assign work on local files, get deliverables" pattern with **BYOK model choice** , inspectable code, and parallel multi-agent execution on macOS, Windows, and Linux.
-
-Eigent fits non-developers who are willing to tolerate some setup in exchange for no Anthropic subscription lock-in and optional fully local models via Ollama or vLLM. It does not replace calendar-native triggers or M365 tenant integration out of the box; pair it with Floatboat or Copilot Cowork when those job shapes dominate your week.
-
-We include one OSS desktop rather than four similar clones — Eigent has the strongest third-party endorsement density in Cowork-alternative roundups as of mid-2026.
-
-### 6\. Genspark — Best for research-heavy slides, reports, and office output
-
-Genspark (including its Super Agent and desktop-oriented offerings discussed in 2026 comparisons) targets **non-developers who need polished office output from messy inputs** — slide decks, structured reports, data summaries — without managing a desktop agent stack. Genspark's cloud computer model emphasizes single-prompt delegation: describe the outcome, receive finished research artifacts and presentation-ready materials rather than a thread of suggestions.
-
-Third-party no-code agent roundups place Genspark alongside Cowork and Manus for **accessibility** : users delegate through familiar chat surfaces rather than terminal or folder-permission workflows. Genspark Claw and desktop integrations discussed in 2026 coverage add local file and Microsoft Office touchpoints for users who want Cowork-like deliverables with Genspark's research orchestration on the back end.
-
-Choose Genspark when your Cowork frustration is **output velocity for client-facing decks and reports** , not calendar triggers or local VM file control. It is a weaker fit for strict local-only data policies or deep arbitrary-folder automation comparable to Cowork's sandbox.
-
-### Comparison table (quick reference)
-
-
-
-<table><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p>Rank</p></th><th colspan="1" rowspan="1"><p>Tool</p></th><th colspan="1" rowspan="1"><p>Office job center</p></th><th colspan="1" rowspan="1"><p>Trigger</p></th><th colspan="1" rowspan="1"><p>Non-dev UX</p></th><th colspan="1" rowspan="1"><p>Best-fit scenario</p></th></tr><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><strong>Floatboat</strong></p></td><td colspan="1" rowspan="1"><p>Calendar-driven prep &amp; follow-up</p></td><td colspan="1" rowspan="1"><p>Calendar events</p></td><td colspan="1" rowspan="1"><p>No code</p></td><td colspan="1" rowspan="1"><p>Recurring calls, deadlines, meeting ops</p></td></tr><tr><td colspan="1" rowspan="1"><p>2</p></td><td colspan="1" rowspan="1"><p><strong>Microsoft Copilot Cowork</strong></p></td><td colspan="1" rowspan="1"><p>M365 docs, mail, Teams</p></td><td colspan="1" rowspan="1"><p>User task in Copilot app</p></td><td colspan="1" rowspan="1"><p>No code</p></td><td colspan="1" rowspan="1"><p>Enterprise knowledge workers in Microsoft stack</p></td></tr><tr><td colspan="1" rowspan="1"><p>3</p></td><td colspan="1" rowspan="1"><p><strong>Manus</strong></p></td><td colspan="1" rowspan="1"><p>Cloud research &amp; content packages</p></td><td colspan="1" rowspan="1"><p>User brief → async run</p></td><td colspan="1" rowspan="1"><p>No code</p></td><td colspan="1" rowspan="1"><p>Long-running delegated research</p></td></tr><tr><td colspan="1" rowspan="1"><p>4</p></td><td colspan="1" rowspan="1"><p><strong>Perplexity Computer</strong></p></td><td colspan="1" rowspan="1"><p>Cross-app cloud workflows</p></td><td colspan="1" rowspan="1"><p>User task / schedules</p></td><td colspan="1" rowspan="1"><p>No code</p></td><td colspan="1" rowspan="1"><p>Multi-tool research, monitoring, integrations</p></td></tr><tr><td colspan="1" rowspan="1"><p>5</p></td><td colspan="1" rowspan="1"><p><strong>Eigent</strong></p></td><td colspan="1" rowspan="1"><p>Local files &amp; multi-agent desktop</p></td><td colspan="1" rowspan="1"><p>User desktop session</p></td><td colspan="1" rowspan="1"><p>Low-code setup</p></td><td colspan="1" rowspan="1"><p>OSS, BYOK, local control</p></td></tr><tr><td colspan="1" rowspan="1"><p>6</p></td><td colspan="1" rowspan="1"><p><strong>Genspark</strong></p></td><td colspan="1" rowspan="1"><p>Slides, reports, research output</p></td><td colspan="1" rowspan="1"><p>User prompt</p></td><td colspan="1" rowspan="1"><p>No code</p></td><td colspan="1" rowspan="1"><p>Decks and reports from research prompts</p></td></tr><tr><td colspan="1" rowspan="1"><p>—</p></td><td colspan="1" rowspan="1"><p><strong>Claude Cowork</strong> (reference)</p></td><td colspan="1" rowspan="1"><p>Local files &amp; connectors</p></td><td colspan="1" rowspan="1"><p>User task / schedule</p></td><td colspan="1" rowspan="1"><p>No code</p></td><td colspan="1" rowspan="1"><p>Anthropic-native desktop delegation</p></td></tr></table>
-
-
-
-**Claude Cowork** stays the reference row: strongest when you already pay for Claude, want local folder permissions, and prefer Anthropic's connector and plugin roadmap. It is not ranked above Floatboat here because this list optimizes for **alternative job shapes** solopreneurs and office workers often need after Cowork's trigger and ecosystem limits surface.
-
-## 4\. How to Choose the Right Alternative
-
-Start with **where your work lives** , not with brand loyalty. If the week is already on your calendar and forgetting kills you, start with Floatboat. If every deliverable routes through Outlook and SharePoint, demo Microsoft Copilot Cowork before installing another desktop agent. If you want to delegate overnight research without keeping Claude Desktop awake, evaluate Manus or Perplexity Computer. If policy requires inspectable local agents, pilot Eigent. If the bottleneck is turning research into slides and client reports, try Genspark.
-
-Budget follows job shape. Cowork bundles into Claude plans (Pro from roughly $17–20/month, Max at $100–200/month as listed July 2026). Copilot Cowork adds seat license plus Copilot Credits for metered tasks. Perplexity Computer commonly sits at $200/month for Max tier access. Manus and Genspark use their own credit or subscription tiers. Eigent is free software with BYOK API costs. Price the **workflow** , not the sticker.
-
-
-
-<table><colgroup><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p>Your office job</p></th><th colspan="1" rowspan="1"><p>Start here</p></th><th colspan="1" rowspan="1"><p>Reconsider if</p></th></tr><tr><td colspan="1" rowspan="1"><p>Recurring meeting prep / follow-up</p></td><td colspan="1" rowspan="1"><p><strong>Floatboat</strong></p></td><td colspan="1" rowspan="1"><p>Calendar is empty</p></td></tr><tr><td colspan="1" rowspan="1"><p>Work stays inside Microsoft 365</p></td><td colspan="1" rowspan="1"><p><strong>Copilot Cowork</strong></p></td><td colspan="1" rowspan="1"><p>You need arbitrary local folders outside tenant</p></td></tr><tr><td colspan="1" rowspan="1"><p>Delegate long research while away</p></td><td colspan="1" rowspan="1"><p><strong>Manus</strong> or <strong>Perplexity Computer</strong></p></td><td colspan="1" rowspan="1"><p>Files must never leave your machine</p></td></tr><tr><td colspan="1" rowspan="1"><p>OSS + local files + model choice</p></td><td colspan="1" rowspan="1"><p><strong>Eigent</strong></p></td><td colspan="1" rowspan="1"><p>You want zero setup and vendor polish</p></td></tr><tr><td colspan="1" rowspan="1"><p>Research → decks and reports fast</p></td><td colspan="1" rowspan="1"><p><strong>Genspark</strong></p></td><td colspan="1" rowspan="1"><p>You need deep local VM file automation</p></td></tr><tr><td colspan="1" rowspan="1"><p>Anthropic connectors + local folders</p></td><td colspan="1" rowspan="1"><p><strong>Claude Cowork</strong></p></td><td colspan="1" rowspan="1"><p>Triggers or stack mismatch above</p></td></tr></table>
-
-
-
-Many operators **combine layers** : Copilot Cowork or Cowork for document batches inside their stack, plus Floatboat for calendar rhythm — complementary triggers, not one-app loyalty.
-
-## 5\. What's Next for Office Agents
-
-Three trends will keep alternative searches active through 2026–2027. **Platform bundling** : Microsoft Copilot Cowork, Anthropic Cowork, and Google/Gemini agent modes will each claim "cowork" semantics inside their ecosystems — buyers must compare job fit, not tab names. **Cloud versus local** : Manus, Perplexity Computer, and Genspark push delegation without a desktop session; Cowork, Copilot Cowork, and Eigent anchor on files and permissions you can see. **Trigger diversification** : calendar-driven agents like Floatboat absorb workloads Cowork was never designed to initiate automatically. And the surfaces keep multiplying — [Codex for Chrome and Claude for Chrome](/blog/codex-for-chrome-vs-claude-for-chrome) pull office-style delegation into the browser itself, where signed-in permissions and multi-tab context decide the fit, not local file access.
-
-The comparison landscape rewards clarity over hype. Define your office job, map where work starts, then pick from the ranked list — not from whoever reused the keyword "Claude Cowork alternative."
-
-## Conclusion
-
-The best Claude Cowork alternative depends on your **office job shape** , not a universal scorecard. **Floatboat** ranks first for calendar-driven meeting ops and follow-up without prompting. **Microsoft Copilot Cowork** is the enterprise default inside M365. **Manus** and **Perplexity Computer** lead cloud delegation for research and long-horizon tasks. **Eigent** is the authoritative open-source local desktop. **Genspark** fits research-heavy slides and reports for non-developers.
-
-**Claude Cowork** remains the reference for Anthropic-native local delegation when explicit task assignment and folder control match how you work. Read the what-is Claude Cowork hub for the canonical product definition, then choose by job fit — not by SEO keyword overlap.
-
+Start with the systems that hold your data, then evaluate the artifact, permissions, and review burden. Model preference comes after those constraints—not before them.

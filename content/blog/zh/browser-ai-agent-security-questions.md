@@ -14,6 +14,8 @@ draft: false
 
 因此，问题不只是「模型厂商可不可信」。更完整的问法是：不可信网页、过宽的浏览器权限、模糊指令或受损连接服务，能否引导 Agent 读错数据、做错动作。下面五个问题，用来把这种抽象担忧变成可执行评估。
 
+这份清单已在 **2026 年 10 月 13 日**重新核验。产品权限与防护会变化，因此每次上线前都应重新检查浏览器 Manifest、厂商文档和企业条款。如果还没有确定需要哪类产品，可先比较 [AI Browser、Browser Agent 与 Agent Workspace](/zh/blog/ai-browser-agent-vs-ai-browser-vs-ai-workspace)；三者的安全边界并不相同。
+
 ## 浏览器 Agent 的威胁模型
 
 先把四个角色分开：

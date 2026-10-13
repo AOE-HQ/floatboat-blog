@@ -10,11 +10,13 @@ locale: "en"
 draft: false
 ---
 
+**Information checked October 13, 2026.** Commands and PDF engines vary by Pandoc version and platform; verify the current manual before automating a production export.
+
 ## TL;DR
 
 - Converting Markdown to PDF comes down to three paths, each fitting a different situation: a no-install browser tool for one-off documents like resumes and reports, a command-line pipeline with pandoc when you need repeatable, scriptable exports, and the export built into your editor for quick drafts you already have open.
-- Ranked by friction, the browser route wins for most people: paste the Markdown, check the live preview, export a print-ready PDF. Nothing to install, nothing to configure.
-- Pandoc is the most powerful route but hides a famous trap: its default PDF engine is LaTeX, which can drag a multi-gigabyte TeX installation into your life. As of 2026, `--pdf-engine=typst` cuts that dependency to one small binary.
+- A browser print route has low setup for occasional documents, while Pandoc is better suited to repeatable exports. Neither route guarantees print-ready typography without checking the resulting PDF.
+- Pandoc delegates PDF creation to an engine. TeX distributions can be large; Typst is another documented engine option, but engine choice should follow template, font, math, and accessibility requirements.
 - The defects that make converted PDFs look broken — clipped tables, code blocks split mid-line, Chinese text as empty boxes — are fixable in every path, but each path exposes different levers.
 - For one file, any path works. For a whole folder of files, only the command line loops for free; folder-level batch conversion is what desktop tools are for.
 
@@ -32,7 +34,7 @@ If the format itself is new to you, our [Markdown explainer](/blog/what-is-markd
 
 For a single document and a deadline, installing a document toolchain is the wrong amount of effort. The browser route treats PDF export as a rendering problem: your Markdown becomes a laid-out page, that page goes through the browser's print pipeline, and the PDF comes out the other end. It is the same pipeline your browser already uses to print anything, which is why this path needs no installation and almost no learning curve — and why it ranks first for anyone who does not convert documents for a living.
 
-The workflow, concretely: open [Floatboat's free Markdown tool](https://floatboat.ai/tools/markdown) in a browser tab, paste your Markdown or open the .md file, and watch the rendered preview update as you edit. When the preview looks right, export, and you get a print-ready PDF — sized for paper rather than for a browser window, so margins and pagination behave the way a printed document should. Because rendering happens with the fonts already available to your machine, the document you preview is the document you export.
+The workflow is simple: open the Markdown in a trusted renderer, inspect the preview, then use its PDF export or the browser print dialog. Check page size, margins, links, selectable text, fonts, headers, and page breaks in the PDF itself. A preview can differ from print output because print stylesheets, font substitution, and browser settings participate in export.
 
 This route has honest limits, and they are worth stating plainly. It processes one document at a time, it offers no scripting, and it will never be the right answer for a build pipeline that regenerates forty PDFs on every release — for that, the command line in the next section is the correct tool, and no web page replaces it. It also assumes your starting point is Markdown; if what you actually have is a web page or a Word file, run it through an [HTML-to-Markdown conversion](/blog/convert-html-to-markdown) first, then come back here.
 
@@ -93,9 +95,9 @@ The command line loops naturally, and the loop is short enough to memorize:
 for f in *.md; do pandoc "$f" -o "${f%.md}.pdf"; done
 ```
 
-That one line converts every .md file in the current folder, at no cost beyond the pandoc setup from section 3. For a folder that changes weekly, wrap it in a script and the problem stays solved; this is the batch answer technical users have been running for years, and it remains the free default.
+That loop converts matching `.md` files in the current folder. For a recurring folder, put the command, Pandoc version, engine, fonts, and template in version control, write to a separate output directory, and fail the run when a source does not produce a valid PDF.
 
-The free web tool, stated plainly, takes one document at a time — fine for [a resume exported from its markdown source](/blog/markdown-resume), wrong for a folder of forty files. Folder-level batch conversion is where [the folder-scale markdown workflow](/blog/batch-convert-markdown-files) takes over from single-file tools: the desktop version of Floatboat takes a folder of Markdown files and exports them together, without writing a loop or opening a terminal. If your volume justifies that, the [download page](https://floatboat.ai/download) has the desktop build.
+A one-document renderer is suitable for [a resume exported from Markdown](/blog/markdown-resume), but repeated folders need a batch process. The [folder-scale Markdown workflow](/blog/batch-convert-markdown-files) covers manifests, separate output directories, resumability, and verification rather than assuming a GUI or script is correct by default.
 
 ## 7. Conclusion
 

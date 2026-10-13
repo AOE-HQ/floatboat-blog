@@ -10,19 +10,13 @@ locale: "en"
 draft: false
 ---
 
-Long time no see. I'm Nova. I had both extensions installed for about 48 hours before I realized I was spending more time deciding which one to ask than actually getting things done. That's when I figured this comparison needed to exist.
-
-If you're a solo operator, consultant, or running a tiny team — and you're already paying for ChatGPT or Claude — you've probably seen both of these drop in the last few months and wondered: do I switch? Do I run both? Do I need either?
-
-I've been poking at both since Codex for Chrome launched on May 7. Here's what I've found so far — no winner declared, just the actual differences that matter when you're choosing.
-
-**Quick context note:** everything here is as of May 2026. Both tools are moving fast. Verify pricing, features, and regional availability before committing.
+This comparison evaluates two browser-agent designs without claiming hands-on testing. Dynamic capabilities, plan access, and regional availability were checked against official documentation on October 13, 2026 and should be verified again before adoption.
 
 ## A 30-Second Snapshot of Both Tools
 
-**Codex for Chrome** is OpenAI's extension, launched days ago. It connects through the [Codex desktop app](https://developers.openai.com/codex/app/chrome-extension) and lets Codex operate inside your signed-in browser — accessing web apps, pulling context across tabs, working with DevTools, all running in the background.
+**Codex for Chrome** is OpenAI's browser extension for the [Codex desktop app](https://developers.openai.com/codex/app/chrome-extension). Current supported browser actions and setup requirements should be verified in that official documentation.
 
-**[Claude for Chrome](https://claude.com/blog/claude-for-chrome)** is Anthropic's browser agent, piloted since August 2025 and now in open beta for paid subscribers. It lives in a sidebar panel inside Chrome, reads the live page you're on, and can navigate, click, fill forms, and run multi-step workflows. Anthropic's [original announcement post](https://www.anthropic.com/news/claude-for-chrome) covers the safety approach in detail.
+**Claude for Chrome** is Anthropic's browser-agent surface. Availability, plan access, and supported actions are dynamic; verify the current status in [Anthropic's official Chrome documentation](https://code.claude.com/docs/en/chrome), checked October 13, 2026. Anthropic's [original announcement](https://www.anthropic.com/news/claude-for-chrome) provides historical safety context but is not the source of truth for current access.
 
 Same category. Very different design philosophy.
 
@@ -42,9 +36,9 @@ It's built for ​**task delegation** ​. Hand off something, let it run, come 
 
 Claude takes a fundamentally different approach. It opens as a ​**sidebar on whatever tab you're already viewing** ​. The page you're looking at _is_ the context — Claude reads the live DOM, not a screenshot.
 
-The default model is Sonnet 4.5 (with Opus 4.6 and Haiku 4.5 also available depending on your plan). What matters in practice: that large context window means a 50-page PDF, a 200-message email thread, a giant GitHub diff — it reads the whole thing in one pass.
+Available models and plan gates can change. What matters for this comparison is the sidebar's access to the current page; long-document behavior should be tested with representative pages and a fixed acceptance rubric.
 
-Claude's model is more ​**conversational** ​. You're working _with_ it about what's on screen, not delegating to a background process. I threw a long client report at it and asked for specific data points — it got through the whole thing without losing the thread. That step just… worked.
+Claude's model is more ​**conversational** ​. You're working _with_ it about what's on screen, not delegating to a background process. The sidebar supports continuing questions about the current page, but long-document performance should be tested with your own material and acceptance criteria.
 
 ![co3.PNG](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481711947-9bef106e-6ee4-4fee-b49a-a6bb5959bd47.webp)
 
@@ -60,13 +54,13 @@ Claude's model is more ​**conversational** ​. You're working _with_ it about
 
 ### Claude Strengths
 
-  * **Live page reading with deep context.** Claude sees the actual content of your current tab. Combined with its context window, it handles enormous documents in a single read without chunking. For research and content analysis, this is where it shines.
+  * **Live page reading.** Claude works with the content of the current tab. Long-document behavior should be tested with representative pages and explicit acceptance criteria rather than assumed from a context-window claim.
 
   * **Scheduled tasks and workflow recording.** Claude supports [scheduled automations](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome) — daily, weekly, monthly. You can also record a workflow once and replay it later. Codex's Chrome extension doesn't have built-in scheduling.
 
   * **Claude Code integration.** If you use Claude Code in the terminal, the Chrome extension [connects directly](https://code.claude.com/docs/en/chrome) — build in the terminal, test in the browser, same session. That loop is already shipping.
 
-  * **Conversational feel.** The sidebar model means you're having a dialogue about what's on screen. For document-heavy work, this feels more natural than delegating to a background agent. I'm still figuring out where each approach fits best in my own workflow, but for anything research-heavy, I keep reaching for Claude.
+  * **Conversational feel.** The sidebar model means you're having a dialogue about what's on screen. For document-heavy work, this feels more natural than delegating to a background agent. Whether research work fits this interface better should be decided with a matched-task pilot.
 
 ![co4.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481723709-c5714d02-c345-4a36-8c93-86f7bc9426eb.webp)
 
@@ -90,25 +84,11 @@ Anthropic published specific numbers: 23.6% attack success rate without mitigati
 
 OpenAI's docs explicitly warn to "treat page content as untrusted context." Neither company claims the problem is solved.
 
-**My take:** start with sites you trust. Don't grant either agent access to sensitive financial or medical pages until you've tested on lower-stakes tasks first. This isn't fearmongering — it's just where the technology is right now. I could be wrong about the timeline, but I'd rather be cautious here.
+**Security baseline:** start with trusted sites and low-risk tasks; do not expand access on financial, medical, or administrative pages until controls are proven.
 
-## Pricing, Plan Access, and Regional Availability
+## Plan and Regional Availability
 
-**Codex for Chrome** is included with your ChatGPT plan at no extra cost. It draws from your existing usage limits. Free and Plus ($20/mo) users get access; [Pro at $100/mo](https://developers.openai.com/codex/pricing) offers 5x the capacity (currently 10x through May 31, 2026 as a launch promo). Even the free tier gets limited trial access.
-
-**Claude for Chrome** requires a paid plan — Pro ($20/mo), Max ($100/mo+), Team, or Enterprise. But here's a detail worth flagging: **Pro plan users are limited to Haiku 4.5** in the Chrome extension — the fastest but least capable model. You need Max ($100/mo) to unlock Opus 4.6 or Sonnet 4.5. That's a meaningful quality gap for complex browser tasks.
-
-At the $20/mo tier, ​**Codex gives you access to its full model stack while Claude limits you to Haiku** ​. That price-to-capability ratio is worth thinking about.
-
-![co5.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481733192-0b37e66a-6bf2-4188-92bd-e4b54825f4ea.webp)
-
-### EU/UK Status for Codex Chrome
-
-If you're based in the EU or UK, this is the most important paragraph in this article: **Codex for Chrome is not available in the EU or UK at launch.** [Neowin confirmed](https://www.neowin.net/news/openai-codex-can-now-work-directly-in-chrome-on-macos-and-windows/) it's excluded from all EU and UK regions, with OpenAI saying support is "coming soon." No timeline given. EU-based users who install the extension will find it connects fine, but the Codex app won't expose the Chrome plugin.
-
-Claude for Chrome has no regional restrictions. It works globally for paid subscribers.
-
-If you're an EU-based operator choosing between these two today, the decision's already made for you — at least temporarily.
+Plans, models, usage limits, and regional gates change quickly. For Codex, use [OpenAI’s Codex pricing](https://developers.openai.com/codex/pricing) and [Chrome extension documentation](https://developers.openai.com/codex/app/chrome-extension). For Claude, use [Anthropic’s Chrome documentation](https://code.claude.com/docs/en/chrome) and current pricing page. Do not buy based on an expired promotion, a secondary regional report, or a fixed model mapping.
 
 ## Decision Framework
 
@@ -119,8 +99,6 @@ If you're an EU-based operator choosing between these two today, the decision's 
   * Your work involves **multi-tab background tasks** — pulling data from multiple dashboards, updating records, testing web apps
 
   * You need DevTools access for frontend debugging
-
-  * You want browser agent capabilities at the $20/mo tier without model restrictions
 
   * You're not based in the EU or UK
 
@@ -136,8 +114,6 @@ If you're an EU-based operator choosing between these two today, the decision's 
 
   * You're in the EU/UK and need a browser agent that works today
 
-  * You're willing to pay $100/mo for Max to get the full model selection
-
 ### When Neither Is Right
 
 If your browser work is mostly reading articles, checking email, and light research — you probably don't need either yet. The overhead of granting permissions, managing security, and learning the interaction model isn't worth it for tasks you can handle in 30 seconds. These tools earn their spot when your browser workflows involve ​**genuine repetition or complexity** ​. If the answer isn't obvious, that's usually a sign to stay with what you have.
@@ -146,7 +122,7 @@ If your browser work is mostly reading articles, checking email, and light resea
 
 ## Can You Run Them Side by Side?
 
-Yes. They're separate extensions and don't conflict technically. I've had both installed simultaneously.
+Yes. They're separate extensions and don't conflict technically. Run both only in a controlled pilot, with separate site grants and a written acceptance rubric.
 
 But the practical friction is real: **context switching between two agent paradigms is mentally expensive.** Codex thinks in background tasks and tab groups. Claude thinks in conversations about the current page. Trying to use both on the same workflow means spending more time choosing which one to ask than doing the actual work.
 

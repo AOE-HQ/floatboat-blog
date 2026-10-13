@@ -130,4 +130,6 @@ I want to be careful not to overstate this: **GPT​ Image 2 doesn't replace a s
 
 That's where I am with this. I'm not going to fire my future storyboard artist; I am going to stop pretending I don't have time to board my own short videos. **The tool isn't replacing the craft. It's removing the excuse.**
 
+Before committing a production workflow to one image model, compare [GPT-Image-2, Midjourney, and Nano Banana 2](/blog/gpt-image-2-vs-midjourney-nano-banana-2) against the same references, text-rendering cases, edit requests, and delivery requirements.
+
 When you need this, you'll know.

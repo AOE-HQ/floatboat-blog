@@ -10,6 +10,8 @@ locale: "en"
 draft: false
 ---
 
+**Information checked October 13, 2026.** Product availability, limits, regions, models, and pricing can change; verify them in current Anthropic documentation before implementation.
+
 Claude Managed Agents is a hosted service for running long-horizon agents on the Claude Platform. It is not a new Claude model, a chat mode, or a ready-made employee. A development team supplies the agent definition, tools, credentials, policies, and success criteria; Anthropic operates the runtime that keeps the work moving.
 
 That distinction matters. “Managed” removes part of the infrastructure burden. It does not remove the need to design the job, constrain access, test failure cases, and review consequential outputs.

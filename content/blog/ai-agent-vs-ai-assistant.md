@@ -14,6 +14,8 @@ An AI assistant helps a person perform a task. An AI agent can be delegated an o
 
 This article owns the assistant comparison: interaction model, triggers, tools, permissions, state, supervision, risk, and evaluation. The separate [AI agent vs chatbot guide](/blog/ai-agent-vs-chatbot) owns the broader taxonomy of chatbot, workflow, and agent architectures.
 
+> **Verified October 13, 2026:** Product labels remain inconsistent. The comparison below classifies systems by control, authority, and supervision rather than vendor naming.
+
 ## Working definitions
 
 An **AI assistant** provides support in response to a user: drafting, summarizing, explaining, recommending, or preparing a proposed action. The person generally decides what happens next and remains the active operator.

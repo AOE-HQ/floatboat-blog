@@ -1,6 +1,6 @@
 ---
 title: "How to Clean Up Downloads Folder with AI, the Safe Way"
-description: "Stop dreading Downloads. Clean up your Downloads folder with AI using a sample-first protocol, copy-paste prompt recipes, and a five-minute weekly habit."
+description: "Clean up a Downloads folder with AI using a sample-first protocol, scoped prompt recipes, small-batch approval, recovery tests, and a repeatable review cadence."
 slug: "clean-up-downloads-folder-with-ai"
 date: "2026-08-31"
 author: "Floatboat"
@@ -12,7 +12,9 @@ draft: false
 
 ## TL;DR
 
-- Cleaning up a Downloads folder with AI means letting an organizer propose where each file belongs and what to name it, then approving the moves yourself — never letting a black box rearrange hundreds of files unsupervised.
+- Cleaning up a Downloads folder with AI can mean letting an organizer propose where each file belongs and what to name it, then approving the moves yourself. Start with a copy rather than an unsupervised production folder.
+
+Information checked October 13, 2026.
 - Run the first pass on a copied sample of 20–50 files in a scratch folder, never the real Downloads folder: preview the plan, approve, and test undo before you scale up.
 - Copy-paste the prompts below for the five situations behind most Downloads clutter: client work, invoices, screenshots, installers, and duplicates.
 - A cleanup survives as a five-minute weekly routine with a watch folder and rules — not a heroic one-time event.
@@ -40,7 +42,7 @@ Follow this sequence on your first run:
 4. **Approve, then verify in the scratch folder.** Open a few files, confirm the names are searchable, and check the tree matches what you asked. A contract renamed into something unrecognizable is exactly what you want to discover on a copy.
 5. **Test undo before you need it.** Trigger the rollback — ⌘Z in Floatboat, "undo run" or "restore last batch" elsewhere — and confirm every file returns with its original name and location.
 
-Preview-then-approve-then-undo is not a Floatboat invention; as of September 2026 it is the safety standard across the category. <a href="https://www.getsortio.com/" rel="nofollow noopener">Sortio</a> previews every run and reverts it in one click, FileSensei offers a dry-run mode that logs what it would do without moving a file, and open-source organizers such as <a href="https://github.com/hyperfield/ai-file-sorter" rel="nofollow noopener">ai-file-sorter</a> and <a href="https://github.com/Tew12345678910/Tidy-AI" rel="nofollow noopener">Tidy-AI</a> ship "plan-then-apply" workflows for exactly this reason. If your tool lacks preview, approval, or undo, the fix is not courage — it is a different tool.
+Preview, approval, and recovery are the safety controls to look for; implementations differ by product and version. If a tool cannot show proposed changes or provide a documented recovery path, test only on a disposable copy or choose another method. Do not assume an operating-system undo command can reverse a bulk rename or move.
 
 Once the scratch run behaves, the real run is anti-climactic: same prompt, same tool you already watched succeed. For a genuinely huge backlog, work in batches, because a plan covering a thousand files is not reviewable.
 
@@ -100,7 +102,7 @@ A "Duplicates — review" folder is the honest output: it does not pretend the t
 
 A cleaned Downloads folder reverts to chaos in about two weeks unless something enforces the structure, because the folder is an intake point and intake never stops. Manual organizers learn this the hard way: the folder they conquered in a heroic Sunday is back to 300 files by Friday. The fix is to stop treating organization as an event and treat it as a small recurring mechanism with three escalating levels.
 
-A five-minute weekly run is the bottom rung and the one that matters most: once a week, open your organizer, run your usual prompt against everything that landed since last time, and spend five minutes approving the plan. That cadence alone keeps the backlog at near zero; five minutes is small enough to survive real life. The middle rung is a watch folder that files as files arrive, where most organizers let you attach a prompt or rule to a folder so every new download is renamed and routed the moment it lands. Sortio gates this behind its Pro tier, <a href="https://filesensei.com/" rel="nofollow noopener">FileSensei</a> watches Downloads out of the box, and <a href="https://www.noodlesoft.com/" rel="nofollow noopener">Hazel</a> has watched folders with hand-written rules on the Mac since 2006 — this is where "auto-sort downloads" actually lives. Enable a watch folder only after your prompt has proven itself for a couple of weeks, because a bad prompt on autopilot is a mess that happened while you were not looking.
+Choose a weekly review window and approve only the files added since the previous run. The review may take more or less than five minutes depending on volume and ambiguity. A watched folder should come later, only after the same rules have succeeded on representative samples and you have tested duplicates, name collisions, unavailable destinations, and recovery.
 
 The top rung is promoting a trusted prompt into a deterministic rule. Once a prompt has produced the right result several times, several organizers let you freeze it into a rule that applies instantly, with no AI judgment needed for the cases it covers. That is the right long-term state for Downloads: stable, predictable, and cheap, with the AI reserved for files that do not fit the pattern.
 
@@ -133,5 +135,5 @@ The pattern behind all six exclusions is the same: the organizer tidies the file
 
 ## Bottom Line
 
-You do not need to clean Downloads in one heroic session, and you should not trust any tool — AI or not — to rearrange it unsupervised on the first try. The whole method fits in one sentence: copy a sample, run a prompt, read the preview, approve, and make the cleanup a five-minute weekly ritual. Ready to run the protocol in the next fifteen minutes? Floatboat's AI File Organizer performs the walkthrough above on your own machine — point it at a test copy, chat through the plan, preview the tree, and undo with ⌘Z if you change your mind. [Try the AI File Organizer on your messiest folder](https://floatboat.ai/ai-file-organizer).
+You do not need to clean Downloads in one session, and you should not trust any tool—AI or not—to rearrange it unsupervised on the first try. Copy a sample, define exclusions, inspect the proposed tree, approve a small batch, and verify the result before expanding. If you evaluate [Floatboat's AI File Organizer](https://floatboat.ai/ai-file-organizer), use the same sample-first protocol and verify its current preview, data-processing, and recovery behavior in your installed version.
 

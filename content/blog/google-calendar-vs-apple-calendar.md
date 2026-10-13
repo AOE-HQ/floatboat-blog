@@ -10,6 +10,8 @@ locale: "en"
 draft: false
 ---
 
+Information checked October 13, 2026. Availability can vary by account type, operating-system version, administrator policy, and region; verify the linked Google and Apple documentation before migrating.
+
 Google Calendar and Apple Calendar both handle events, invitations, recurring schedules, alerts, multiple calendars, and subscribed calendars. The practical difference is where the calendar account lives and which people, devices, and automations need to use it.
 
 Choose the account system first; the viewing app comes second. Apple Calendar can display a Google account on Apple devices, so choosing Google as the source of truth does not require giving up Apple’s native app.

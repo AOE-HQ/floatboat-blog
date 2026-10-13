@@ -14,6 +14,8 @@ Building an AI agent is not mainly a prompting exercise. It is a systems job: de
 
 This guide follows that engineering lifecycle. It does not assume a specific model or framework, and it does not begin with a multi-agent diagram. Anthropic’s current [guidance on effective agents](https://www.anthropic.com/engineering/building-effective-agents) recommends starting with the simplest approach that works because autonomy exchanges predictability, latency, and cost for flexibility.
 
+> **Verified October 13, 2026:** Framework APIs and model names change quickly. The build sequence below is intentionally vendor-neutral; confirm current tool, tracing, and deployment syntax in the framework you choose.
+
 ## What are you actually building?
 
 An agent is a model that chooses and uses tools in a loop, observes the environment, updates its plan, and stops when it reaches an outcome or a control boundary. A fixed sequence of model calls is better described as a workflow.

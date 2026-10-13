@@ -10,6 +10,8 @@ locale: "en"
 draft: false
 ---
 
+Information checked October 13, 2026.
+
 The best calendar app for a solo operator is the one that preserves a trustworthy schedule across every account and device without creating another system to maintain.
 
 That answer may be Google Calendar, Apple Calendar, Outlook, Fantastical, or a planning layer such as Morgen. An automatic scheduler may help if unscheduled tasks are the problem. But those products solve different jobs, so a feature-count ranking is misleading.
@@ -48,7 +50,7 @@ These are starting points, not permanent winners. Availability, provider support
 
 ### Google Calendar: strong default for a Google-centered business
 
-Google Calendar is a practical base when client invitations, Meet links, shared Google calendars, and browser access already define the workflow. Its official documentation covers granular [calendar sharing permissions](https://support.google.com/calendar/answer/37082?hl=en) and appointment schedules that can check selected calendars for conflicts. Some availability features require an eligible Google Workspace or Google One plan, so test with the account that will host the booking page.
+Google Calendar is a practical base when client invitations, Meet links, shared Google calendars, and browser access already define the workflow. Google documents how appointment schedules can [check selected calendars for conflicts](https://support.google.com/calendar/answer/16287054?hl=en) and notes that checking secondary calendars requires an eligible Google Workspace or Google One plan. Test with the account that will host the booking page.
 
 Google Tasks can appear on the calendar, but an event and a task remain different objects. Test recurring tasks, timed tasks, mobile completion, and visibility on shared calendars instead of assuming parity with a dedicated task manager.
 
@@ -66,7 +68,7 @@ That integration does not make every Outlook surface identical. Test the exact w
 
 ### Fantastical: a multi-provider client, not a new calendar backend
 
-Fantastical is useful when a solo operator wants Google, iCloud, Microsoft 365, or CalDAV accounts in a polished client with quick capture, calendar sets, tasks, and availability sharing. Its current Windows documentation lists account types and task support, while the [Flexibits privacy FAQ](https://flexibits.com/privacy/faq) explains which data remains on device and the exceptions for features such as Openings and Apple Watch sync.
+Fantastical is useful when a solo operator wants several calendar services in one Windows client. Its official Windows settings page lists [iCloud, Google, Exchange, Microsoft 365 and CalDAV account support](https://flexibits.com/fantastical-windows/help/settings), while its Windows FAQ limits editable tasks to [Google Tasks, Microsoft 365 tasks and Todoist](https://flexibits.com/fantastical-windows/faq). Test the exact calendar and task accounts you use.
 
 The important limitation is architectural: Fantastical usually operates on provider data. Provider APIs determine some recurrence, task, sharing, and sync behavior. Test every important account type rather than generalizing from one.
 

@@ -1,6 +1,6 @@
 ---
 title: "AI Agent Workflow: Fixing What Vibe Coding Breaks"
-description: "Vibe coding moves fast — until it doesn't. Here's why structured AI agent workflows are what solo developers actually need to ship reliably.143 chars"
+description: "Turn vibe-coded prototypes into reviewable software with a bounded AI agent workflow: acceptance criteria, repository rules, tests, diff review, and merge gates."
 slug: "ai-agent-workflow-vibe-coding"
 date: "2026-04-20"
 author: "Nova"
@@ -10,140 +10,158 @@ locale: "en"
 draft: false
 ---
 
-Hey, I'm Nova, I started paying serious attention to this problem around mid-2025, after watching the same pattern repeat in different communities I follow. Someone ships something fast with AI, feels amazing for two weeks, then spends a month untangling a mess they can barely understand.
+Vibe coding is excellent at answering one question: *Can this idea exist?* It is much less reliable at answering the next one: *Can another person safely change, test, deploy, and undo it?*
 
-Sound familiar?
+The difference is not a better prompt. It is a workflow that turns intent into evidence.
 
-The promise was never a problem. The missing structure was.
+**Information checked October 13, 2026.** Tool interfaces will keep changing; the controls in this guide—scoped tasks, executable checks, reviewable diffs, and protected merges—do not depend on one coding agent.
 
-## The Promise of Vibe Coding
+If the term itself is unfamiliar, start with [what vibe coding means](/blog/what-is-vibe-coding). This guide begins at the point where a prototype needs to become maintained software.
 
-### Why It Attracted Solo Builders
+## The exact moment vibe coding stops being enough
 
-When Andrej Karpathy coined "[vibe coding](https://en.wikipedia.org/wiki/Vibe_coding)" in February 2025, he described a form of coding where you "fully give in to the vibes, embrace exponentials, and forget that the code even exists." For solo builders and non-developers, that framing was genuinely exciting. No more syntax anxiety, no gatekeeping from technical knowledge. Just describe what you want and watch it appear.
+The danger is not generated code by itself. The danger is accepting code without a clear definition of success or a reliable way to detect regressions.
 
-And it worked — at least in the beginning. By 2026, 72% of developers use AI-powered coding tools daily, and 41% of global code is AI-generated. [Y Combinator reported that](https://daily.dev/blog/vibe-coding-how-ai-changing-developers-code) 25% of its Winter 2025 batch ran codebases that were 95% AI-generated. The speed gains were real.
+A loose conversation can be enough for a disposable mock-up. Change modes when any of these become true:
 
-But speed without structure isn't productivity. It's just faster debt accumulation.
+- real users or customer data are involved;
+- authentication, payments, permissions, secrets, or destructive actions enter the design;
+- more than one component must change together;
+- another developer will inherit the code;
+- a rollback would matter;
+- the feature must keep working after the next change.
 
-![2.png](/blog/images/ai-agent-workflow-vibe-coding/1776653246584-c6e218bb-11f3-4b33-b0c7-cf41d4ffaf9a.webp)
+At that boundary, “looks right” is no longer an acceptance test. The agent needs a bounded task, and the repository needs controls that do not depend on the agent remembering every instruction.
 
-## Why Vibe Coding Breaks Without Structure
+![A prototype crossing into production needs explicit controls](/blog/images/ai-agent-workflow-vibe-coding/1776653246584-c6e218bb-11f3-4b33-b0c7-cf41d4ffaf9a.webp)
 
-### No Plan, No Guardrails, No Review Loop
+## A seven-stage AI agent workflow
 
-Here's the thing that took me a while to internalize. Vibe coding doesn't fail because AI is bad at writing code. It fails because **most people use it without any plan, any enforced rules, or any review step between generation and deployment.**
+The following loop works with an IDE agent, a terminal agent, or a background coding service. The important part is the handoff between stages.
 
-Every time you change your mind mid-build, you incur a little more tech debt — vestiges of the old ideas still hanging around in the code. This tech debt confuses future agents working in the code, which leads to a vicious cycle of more and more bugs.
+### 1. Write an acceptance packet
 
-The process feels like progress because output is constantly appearing. But "stuff appearing on screen" is not the same thing as "a working system you can extend and maintain."
+Give the agent a short task packet, not a wish. It should contain:
 
-Currently, vibe coding agents see your requirements as preferences, not as enforced policies. They don't do what they promised. To ensure reliable agent behavior, systems must treat policies as strict rules.
+- the user-visible outcome;
+- what is explicitly out of scope;
+- examples of valid and invalid behavior;
+- files or subsystems likely to be involved;
+- commands that must pass;
+- security, privacy, performance, and compatibility constraints;
+- the evidence required at handoff.
 
-This is the gap a real **AI agent workflow** closes.
+“Add CSV import” is a wish. “Accept UTF-8 CSV up to 10 MB, reject unknown columns, do not persist a partially parsed file, and pass these three fixtures” is a task an agent can finish and a reviewer can verify.
 
-### The Compounding Error Problem
+### 2. Make the agent map the repository before editing
 
-A December 2025 analysis by CodeRabbit of 470 open-source GitHub pull requests found that code co-authored by generative AI contained approximately 1.7 times more "major" issues compared to human-written code — including misconfigurations (75% more common) and security vulnerabilities (2.74x higher).
+Ask for the relevant entry points, data flow, existing tests, and likely side effects. The answer is not automatically correct; its value is that it exposes assumptions before they become a large diff.
 
-I read that and immediately thought about a pattern I see constantly: ​**each error multiplies downstream** ​. The AI fixes one thing and breaks two others, because it doesn't see the full dependency chain. AI is often unaware of the full codebase context, especially in large, complex architectures — [an agent fixes a bug in one file but causes breaking changes in files referencing it, simply because it didn't see the connection.](https://towardsdatascience.com/the-reality-of-vibe-coding-ai-agents-and-the-security-debt-crisis/)
+For unfamiliar failures, make reproduction part of this stage. A failing test or a minimal reproduction is a better starting signal than a paragraph that says “the upload is broken.”
 
-This isn't a reason to stop using AI. It's a reason to build a workflow where this failure mode gets caught before it compounds.
+### 3. Review the plan, then freeze the scope
 
-## What a Real AI Agent Workflow Looks Like
+The plan should name the files it expects to change and explain why. Reject plans that quietly combine a feature, dependency upgrade, database migration, and unrelated cleanup.
 
-### Brainstorm → Plan → Execute as a Structured Chain
+Scope can change, but it should change explicitly. If implementation reveals a new dependency, pause, update the plan and acceptance packet, then continue. This prevents the common pattern in which an agent keeps broadening the task to make its current approach work.
 
-The shift from vibe coding to a structured **AI agent workflow** isn't about adding bureaucracy. It's about doing the thinking _before_ the code appears.
+### 4. Execute in a branch with least privilege
 
-Instead of iterating in code, iterate on the plan. The details are expensive to work out in code — even when an agent is writing it. Work through them in a planning document first.
+Give the agent only the repository, credentials, network access, and commands the task needs. Use a feature branch or isolated worktree so the resulting diff is separable from unrelated work.
 
-A simple structure that actually works:
+Least privilege is also a quality tool. An agent that cannot write outside the target workspace or deploy directly to production has fewer ways to turn a wrong assumption into an incident.
 
-**Step 1 — Specification.** Write a plain-language spec before touching any tool. What does this do? What are the edge cases? What should it never do? This document is what AI will read. The more precise it is, the more precise the output.
+### 5. Run deterministic checks
 
-**Step 2 — Plan review.** Run the spec through the agent in "plan mode" (Claude Code has this natively). Ask it to surface ambiguities. Fix them before execution.
+The agent may propose tests, but the repository decides what passes. Run the project’s formatter, linter, type checker, unit tests, integration tests, build, migration validation, secret scan, or other relevant checks. Record the commands and results.
 
-**Step 3 — Bounded execution.** Give the agent one task at a time, not an entire feature. If you ask for too much in one go, it's likely to get confused or produce a "[jumbled mess](https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e)" that's hard to untangle — like 10 devs working without talking to each other. The fix is to stop, back up, and split the problem into smaller pieces.
+Tests are not a substitute for review. They are executable acceptance evidence. NIST’s [Secure Software Development Framework](https://www.nist.gov/publications/secure-software-development-framework-ssdf-version-11-recommendations-mitigating-risk) treats code review or analysis and executable-code testing as separate practices for finding vulnerabilities and verifying requirements.
 
-**Step 4 — Review output before accepting.** This sounds obvious. Most vibe coders skip it.
+### 6. Review the diff, not the agent’s summary
 
-### Where Human Checkpoints Belong
+An agent’s summary is a navigation aid. The diff is the artifact that will ship.
 
-Not everywhere — that defeats the point. But at minimum: before merging any changes to main, and after any step that touches authentication, data handling, or external API calls. Those are the places where a "hallucinated bypass" — where an AI accidentally removes a security check — is most likely to occur.
+Review for:
 
-![3.png](/blog/images/ai-agent-workflow-vibe-coding/1776653272959-834b0551-c228-4876-a899-b8ef19c2329e.webp)
+- changes outside the agreed scope;
+- deleted validation, authorization, logging, or error handling;
+- new dependencies and generated files;
+- schema and migration reversibility;
+- silent changes to public interfaces;
+- tests that only confirm the implementation rather than the requirement;
+- secrets, personal data, and telemetry.
 
-## AI Agent Workflow as a System (Not Prompts)
+GitHub’s own guidance for its coding agent says to [review the pull request thoroughly before merging](https://docs.github.com/en/copilot/how-tos/copilot-on-github/use-copilot-agents/review-copilot-output). That instruction is worth applying to every coding agent.
 
-### Why Structure Beats One-Off Outputs
+### 7. Merge through gates and leave a rollback path
 
-This is the reframe that changed how I think about AI coding tools. The goal isn't to get one good output from one good prompt. The goal is to **build a system that produces consistent, reviewable outputs every time.**
+Keep the default branch protected. GitHub can require approving reviews, passing status checks, resolved conversations, or other conditions before merge; its [pull-request management documentation](https://docs.github.com/en/pull-requests/reference/managing-and-standardizing-pull-requests) explains how protected branches and rulesets enforce those conditions.
 
-The value comes when agents operate inside conventions, structured specifications, and deterministic processes. A growing number of teams are adopting spec-driven development (SDD) where structured specifications drive what agents produce and ad hoc prompts are eliminated.
+The handoff should include the changed behavior, validation results, known limitations, deployment notes, and rollback steps. If nobody can explain how to reverse the change, it is not ready merely because CI is green.
 
-Concretely: your project folder should have an `AGENTS.md` or `CLAUDE.md` file that tells the agent your architecture, your naming conventions, your forbidden patterns, and your coding standards. This persists across sessions. The agent builds on accumulated context rather than starting from scratch every time.
+![Human checkpoints belong at the plan, diff, and merge boundaries](/blog/images/ai-agent-workflow-vibe-coding/1776653272959-834b0551-c228-4876-a899-b8ef19c2329e.webp)
 
-### From Prompting to Repeatable Execution
+## Put durable rules in the repository
 
-Think of the workflow as layers. At the top, human decisions: what to build, what quality bar to hold, what to review. In the middle, structured specs that the agent reads. At the bottom, the agent executes within those constraints.
+Repeating architecture and test rules in every chat is brittle. Store stable guidance beside the code: build commands, directory responsibilities, naming conventions, forbidden operations, generated-file policy, and the definition of done.
 
-The most powerful emerging pattern in 2026 is the agent-driven test loop: the coding agent writes code, generates tests, runs them, fixes failures, and iterates — all before opening a PR.
+The exact filename depends on the tool. For example, GitHub documents repository-wide and path-specific custom instructions as well as `AGENTS.md` support in its [repository instruction guide](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/configure-custom-instructions/add-repository-instructions-in-your-ide). The broader design is an [agent harness](/blog/what-is-an-agent-harness): instructions, permissions, tools, state, and validation around the model.
 
-That loop only works if the agent has something to test ​ _against_ ​. Which is why the spec has to come first.
+Keep these files concise and enforceable. “Write clean code” is not useful. “Run `npm test` and `npm run typecheck`; do not edit generated files under `src/api/generated`; migrations need a down path” is.
 
-## The GitFlow Model for AI Agent Workflows (AITDD)
+Repository instructions also need maintenance. A stale command or obsolete architecture note can mislead an agent with more confidence than an absent note.
 
-### Code Review Built Into the Agent Loop
+## Three checkpoints humans should not delegate
 
-AI Test-Driven Development (AITDD) is a pattern gaining traction among teams that have moved past the vibe coding phase. The logic borrows from TDD: **write the tests first, then have the agent write code that passes them.**
+Automation can cover routine validation, but three decisions need accountable ownership.
 
-When paired, TDD gives structure to your flow, and agentic coding gives speed to your structure. This combination shines when working with complex logic files — pricing engines, rules-based validators, or multi-condition workflows.
+### The product checkpoint
 
-In practice: write a failing test that describes the expected behavior. Tell the agent "make this test pass." The test becomes the spec. The test becomes the review mechanism. You don't need to read every line of code — you need to know the tests pass and the edge cases are covered.
+Before implementation, a person decides whether the acceptance criteria describe the right behavior. An agent can expose ambiguity; it cannot decide whose needs matter when requirements conflict.
 
-Kalvium Labs, a team of 200+ engineers, standardized the use of Claude Code for pull request reviews, cutting time-to-first-commit by 35–40%. Their mandatory "AI Review" process caught 2–3 potential production bugs weekly.
+### The risk checkpoint
 
-### Why Versioning and Iteration Matter
+Authentication, authorization, payments, deletion, encryption, personal data, infrastructure, dependency changes, and database migrations deserve an explicit security or domain review. The higher the blast radius, the smaller the task and the stronger the approval rule should be.
 
-Run everything through version control. Every. Single. Change. The reason isn't just about rollback — it's about **making the agent's decisions auditable.** When something breaks (and it will), you need to see exactly what changed and when.
+### The release checkpoint
 
-The GitFlow model maps cleanly: feature branches for each bounded task, PRs as human review checkpoints, main branch protected. The agent never commits directly to main. You do.
+Someone must decide whether the evidence is sufficient to deploy. That decision includes operational questions that a code test may not answer: monitoring, feature flags, data backfill, support impact, and rollback readiness.
 
-![4.png](/blog/images/ai-agent-workflow-vibe-coding/1776653323969-b2e4daa4-29d0-4961-bc15-66b172245f9d.webp)
+![Version control turns agent output into an auditable change](/blog/images/ai-agent-workflow-vibe-coding/1776653323969-b2e4daa4-29d0-4961-bc15-66b172245f9d.webp)
 
-## Which AI Coding Tools Fit Into the Workflow
+## A compact example: adding CSV import
 
-### Claude Code vs Cursor vs Codex vs OpenCode
+Suppose a solo developer asks an agent to add CSV import to a billing app.
 
-I've spent time with all four. Here's my honest take on where each fits inside a structured workflow, not as standalone tools.
+The vibe-coded version is one prompt: “Add CSV import to invoices.” The structured version is a small sequence:
 
-**[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)** is the strongest choice when you need deep codebase reasoning across large, multi-file tasks. It reads your repository structure, knows your branch state, creates commits with meaningful messages, and can open pull requests directly. The hooks system lets you enforce project-specific rules — linting, testing, formatting — that run automatically before and after certain actions. The CLAUDE.md file is genuinely useful for persisting project context across sessions. Most of that leverage comes from [how Claude Code actually works as a terminal coding agent](/blog/what-is-claude-code) — plan mode and sub-agents supplying exactly the structure that ad-hoc vibe coding skips. Best for: complex refactors, architectural decisions, projects where context depth matters.
+1. Define the accepted encoding, columns, size limit, duplicate policy, partial-failure behavior, and permission check.
+2. Identify the existing upload boundary, invoice validator, transaction layer, audit log, and tests.
+3. Approve a plan limited to the import endpoint, parser, service, and fixtures.
+4. Add failing tests for a valid file, an unknown column, a duplicate invoice, an unauthorized user, and rollback after row failure.
+5. Implement in a branch with no production credentials.
+6. Run tests, type checks, dependency and secret scans, then inspect the complete diff.
+7. Merge only after required checks pass; deploy behind a flag with an error-rate alert and a disable path.
 
-**Cursor** is the right tool for the daily interactive coding loop. Use Cursor for everyday coding with a visual IDE. Codex for autonomous background tasks. Claude Code for deep multi-file work that needs maximum context. The Composer mode handles multi-file edits cleanly. Tab autocomplete is fast. If you're most comfortable working visually inside an editor, Cursor is the better daily driver.
+The process is not slow because most checkpoints are small. It is faster than discovering after deployment that half an import committed before the parser failed.
 
-**Codex (OpenAI)** shines for asynchronous, well-defined tasks. Assign tasks asynchronously — Codex spins up a sandboxed VM, works independently, and delivers a pull request. Best for routine features, test generation, and documentation. I find it less useful for tasks that require iterative human feedback during execution.
+## Choose tools after designing the workflow
 
-**OpenCode** is the open-source wildcard. Through Models.dev integration, it connects to over 75 LLM providers out of the box. You can route different tasks to different models: a cheap, fast model for simple questions, a reasoning model for architecture decisions, and a coding-specialized model for implementation. Best for developers who want maximum model flexibility and don't want vendor lock-in.
+Tool comparisons age quickly. Start with four questions instead:
 
-Honestly? The developers I've seen get the best results in 2026 aren't dogmatic about one tool. They use Cursor for interactive daily work, Claude Code for complex reasoning tasks, and Codex for background execution.
+- Can the agent inspect the repository and show a plan before editing?
+- Can you constrain filesystem, network, command, and credential access?
+- Can it run the repository’s real checks and return the raw results?
+- Does it produce a reviewable diff or pull request without bypassing merge policy?
 
-### Gemini CLI and GitHub Copilot CLI for Terminal Users
+An interactive editor may suit ambiguous work with frequent feedback. A terminal agent may suit repository-wide changes and local validation. A background agent may suit bounded tasks with crisp acceptance criteria. None removes the need for the seven stages above.
 
-If you live in the terminal and want lighter tooling: [GitHub Copilot CLI](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line) handles natural-language shell command generation cleanly. Gemini CLI is a strong option for Google ecosystem users. Neither replaces a full agent workflow, but both fit well as supporting tools in the execution layer.
+## Keep the speed; replace hope with evidence
 
-## AI Agent Workflows for Solo Operators Who Don't Code
+Vibe coding is a productive exploration mode. The mistake is carrying its acceptance standard into maintained software.
 
-### Structured Execution Outside Development
+A reliable AI agent workflow does not try to make the model infallible. It makes mistakes visible while they are still cheap: requirements before edits, repository rules before improvisation, tests before confidence, diff review before merge, and rollback before release.
 
-Wait — this matters even if you never write a line of code. The same structure that prevents vibe coding disasters applies to ​**any multi-step AI workflow** ​: content pipelines, research processes, document analysis, client deliverable generation.
+That pattern also applies beyond code. Research, content, and document workflows become more dependable when the request, allowed sources, validation checks, approval point, and final evidence are explicit.
 
-The pattern is identical: spec first, bounded execution, human review before output goes anywhere important. I use a version of this for my own content work. The "agent" is a structured prompt chain. The "tests" are a self-check list before anything publishes. The "version control" is a simple dated changelog in a Notion doc.
-
-It doesn't need to be code. It needs to be ​**intentional** ​.
-
-![5.png](/blog/images/ai-agent-workflow-vibe-coding/1776653352463-63d4f2af-a409-4845-8ed3-6135d15cb62f.webp)
-
-As one practitioner I follow put it: the best results come when you apply classic software engineering discipline to your AI collaborations. Design before coding, write tests, use version control, maintain standards — these not only still apply, but are even more important when an AI is writing half your code.
-
-That's the whole thing, really. The vibes are still welcome. The guardrails are just what make them last.
+![The same bounded workflow can govern non-code agent work](/blog/images/ai-agent-workflow-vibe-coding/1776653352463-63d4f2af-a409-4845-8ed3-6135d15cb62f.webp)

@@ -14,6 +14,8 @@ A no-code AI agent builder lets you combine instructions, a model, data, and act
 
 The useful question is not “Which builder is best?” It is: **which platform exposes enough control for this job, while keeping the build and operating burden proportionate to its value?**
 
+> **Information checked October 13, 2026:** Product names, rollout status, plan availability, and preview labels below were checked against official vendor documentation. Recheck them in your region and account before buying or deploying.
+
 ## What counts as a no-code agent builder?
 
 A visual automation with one text-generation step is not automatically an agent. A practical agent builder usually lets you define a goal, provide context, attach a set of tools, and let the model choose which tool or path to use. A conventional workflow follows a path the builder specified in advance.
@@ -28,14 +30,16 @@ This is not a ranking. Each platform emphasizes a different operating model, and
 
 | Platform | Officially documented strength | Important boundary to verify |
 |---|---|---|
-| Zapier Agents | Specialized agents connected to business data and actions across Zapier’s app ecosystem | Usage accounting, action controls, logs, and exact plan limits |
-| Make AI Agents | Agents inside a visual scenario canvas, with reusable tools and visible decisions | Current generation availability, provider options, credits, and memory behavior |
+| Zapier Agents / AI by Zapier transition | Agents that can select approved app actions and work with connected business data | Migration status, activity accounting, field controls, and exact plan limits |
+| Make AI Agents (New) | An agent inside a scenario, with modules, scenarios, and MCP server tools plus knowledge files | Current generation availability, provider options, credits, and conversation behavior |
 | n8n | AI agent nodes combined with workflow nodes, code, APIs, and hosted or self-hosted deployment | Infrastructure ownership, credential security, and node/version maintenance |
-| Microsoft Copilot Studio | Graphical and natural-language agent creation within Microsoft’s managed ecosystem | Tenant licensing, environments, governance, connector entitlements, and capacity |
+| Microsoft Copilot Studio | Managed agents plus deterministic agent flows, AI actions, and human-in-the-loop steps | Tenant licensing, environments, DLP, connector entitlements, capacity, and preview status |
 
-Zapier’s [official Agents page](https://zapier.com/agents) emphasizes company knowledge, activity monitoring, web work, and connections across its app catalog. Make documents agents that select from attached scenarios as tools and return structured results; its newer [AI Agents overview](https://www.make.com/en/ai-agents) emphasizes in-canvas visibility and reuse. The [n8n AI documentation](https://docs.n8n.io/advanced-ai/) combines agent nodes with ordinary workflow controls. Microsoft describes [Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio) as a managed platform with graphical and natural-language authoring.
+Zapier's current [Agents action guide](https://help.zapier.com/hc/en-us/articles/26028298697485-Use-actions-on-Zapier-Agents) says the product is moving to AI by Zapier and documents action selection, field restrictions, and activity consumption. Do not assume the old and new surfaces are feature-identical during that transition. Make's [current agent guide](https://help.make.com/create-your-first-ai-agent) places the agent inside a scenario and requires tools, instructions, and testing; its [scenario input/output documentation](https://help.make.com/scenario-inputs-and-outputs) shows how a reusable scenario can expose a structured contract. The [n8n AI documentation](https://docs.n8n.io/advanced-ai/) combines agent nodes with ordinary workflow controls, while its [execution documentation](https://docs.n8n.io/workflows/executions/all-executions/) covers run history and retries. Microsoft's [agent-flow overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview) documents deterministic flows, AI actions, human-in-the-loop steps, versioning, and solution-based import and export.
 
 Those are vendor descriptions, not proof that a particular workflow will be reliable. Verify the current plan and regional availability on the official pricing page before purchase. Prices, bundled credits, beta status, and connector entitlements are volatile and should not be copied from an undated comparison table.
+
+If you want a broader shortlist before running this framework, the [AI agent builder comparison](/blog/best-ai-agent-builder-2026) separates workflow products, agent workspaces, and developer platforms. Keep that category decision separate from the vendor decision.
 
 ## Seven dimensions that matter more than feature counts
 
@@ -49,7 +53,7 @@ Look for filters, schemas, branching, retries, timeouts, idempotency controls, a
 
 ### 3. Observability
 
-You need the original input, selected tools, arguments, results, errors, final output, cost, and timing for each run. A green “completed” badge is not enough. Make’s current product material explicitly highlights step-level decision visibility; confirm the equivalent depth in every shortlisted platform.
+You need the original input, selected tools, arguments, results, errors, final output, cost, and timing for each run. A green “completed” badge is not enough. Inspect a real failed run in every shortlisted platform; marketing screenshots cannot prove log retention, replay behavior, or what a second operator can diagnose.
 
 ### 4. Human approval
 

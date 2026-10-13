@@ -14,6 +14,8 @@ draft: false
 
 本文要求所有候选平台使用同一任务契约、权限边界、评估集和成本模型，不根据 Demo、Connector 数量或无法核验的体验排名。
 
+**信息核对截至 2026 年 10 月 13 日。**平台名称、功能阶段、额度与套餐都可能变化。下文产品示例均链接一手官方文档；开始试点前，仍需按自己的地区、套餐和账号核对 Preview 状态与数据条款。
+
 ## 先定义任务，再看平台
 
 用一页纸写清触发与完成状态、必需输入与获准信源、需要模型判断的决定、允许工具与动作、禁止动作与敏感数据、审批升级与停止条件、低位/常态/峰值用量、负责人和事实源。
@@ -31,6 +33,24 @@ draft: false
 **云 Agent 服务：**适合希望托管模型/工具基础设施，同时在代码中保留应用逻辑的团队；重点审查身份、网络、数据区域、轨迹、评估、扩展和运行时依赖。
 
 **垂直产品：**当产品已解决客服、研究、销售、编码等确切工作时优先测试。窄产品可能因为流程和评估更专业而优于通用平台，但仍要核对可迁移性。
+
+把模型与外围系统拆开，几类平台会更容易比较。外围这层就是 [Agent Harness](/zh/blog/what-is-an-agent-harness)：运行时、工具、状态、权限、审批、轨迹和评估共同决定 Agent 能不能稳定运营。
+
+## 2026 年值得进入试点的 AI Agent 平台
+
+下面是按运行方式分流的候选名单，不是名次表。每个平台因为不同理由值得试点；官方文档只能证明功能有文档，不能证明它一定适合你的任务。
+
+| 候选平台 | 什么时候值得入围 | 应查看的一手证据 | 试点时重点验证 |
+|---|---|---|---|
+| OpenAI Agent Platform | 需要在托管 Agent Harness、由应用掌控的 SDK 循环和更底层模型调用之间选择 | OpenAI 的 [Agent 运行时对比](https://developers.openai.com/api/docs/guides/agents) 区分了托管 Agents API、运行在应用内的 Agents SDK 与 Responses API，并给出轨迹和评估入口 | 审批由谁负责、状态怎样存、轨迹数据政策、工具隔离和导出需求 |
+| Microsoft Copilot Studio | 流程主要在 Microsoft 365 或 Power Platform 中，业务人员需要 Connector、审批和管理员策略 | Microsoft 的 [Agent Flow 概览](https://learn.microsoft.com/microsoft-copilot-studio/flows-overview) 说明了确定性路径、人工介入、Solution 版本与导出，并另有安全治理控制 | 环境隔离、DLP、身份、容量计费、审计覆盖和非微软系统接入 |
+| Google Vertex AI Agent Engine | Python 团队希望使用 Google Cloud 托管部署、云身份和适合 CI/CD 的源码部署 | Google 的 [Vertex AI Agent Engine 部署文档](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/deploy) 说明了从源码或 Agent 对象部署，以及可选的单 Agent 身份 | 支持的框架与地区、IAM 粒度、网络、冷启动，以及哪些评估能力仍属 Preview |
+| Amazon Bedrock AgentCore | 组织已用 AWS IAM 与 CloudWatch 治理工作负载，希望获得托管运行时、工具和遥测 | AWS 的 [AgentCore Observability](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html) 说明了轨迹、指标、错误视图、Token 用量与 OpenTelemetry 兼容输出 | 哪些资源需额外埋点、日志去向与载荷暴露、IAM 边界、恢复和实际计费 |
+| LangGraph + LangSmith | 团队希望用代码定义编排，同时独立做轨迹与评估，并比较云端、混合或自托管 | LangSmith 的 [评估类型文档](https://docs.langchain.com/langsmith/evaluation-types) 分开介绍上线前回归评估与生产中的在线评估 | 部署责任、数据平面、遥测、许可、Checkpoint 存储，以及离开托管服务的迁移成本 |
+
+市场上还有其他可信候选，包括可视化自动化套件和垂直产品。不要为了让表格更长而硬塞一个名字；只有任务契约暴露出当前名单覆盖不了的系统、部署方式或控制要求时，才新增候选。
+
+最容易误判的是功能阶段。某项能力出现在官方文档里，仍可能处于 Preview，或只开放给部分地区与套餐。例如，Google 当前的 [Agent 评估教程](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/evaluate) 就把相关评估能力标为 Preview。评分表里应单列功能阶段，不能把“有文档”直接等同于“可上生产”。
 
 ## 建立 shortlist 的八项标准
 

@@ -10,7 +10,7 @@ locale: "en"
 draft: false
 ---
 
-Yes—there is now an official **Raycast for Windows**. Raycast released its Windows public beta in November 2025 and took it out of beta with Raycast 2.0 on August 25, 2026. As of October 10, 2026, the official Windows page offers the 2.7 release for Windows 10 21H2+ and Windows 11 through its installer or WinGet ([Raycast for Windows](https://www.raycast.com/windows), [Windows changelog](https://www.raycast.com/changelog/windows)).
+Yes—there is now an official **Raycast for Windows**. Raycast released its Windows public beta in November 2025 and took it out of beta with Raycast 2.0 on August 25, 2026. Information checked October 13, 2026: the official Windows page offers the 2.7 release for Windows 10 21H2+ and Windows 11 through its installer or WinGet ([Raycast for Windows](https://www.raycast.com/windows), [Windows changelog](https://www.raycast.com/changelog/windows)).
 
 That changes the question behind this article. Windows users no longer need a substitute merely because Raycast is unavailable. The useful decision is now: **do you want a keyboard-first launcher with an expanding AI layer, or a persistent Agent Workspace built around files, projects, and deliverables?**
 

@@ -15,7 +15,7 @@ draft: false
 - **An online Markdown viewer is a browser tool that turns a raw .md file into readable formatting — headings, tables, lists, code blocks — the moment you open it, with nothing installed and nothing uploaded in the better implementations; it exists because .md files keep arriving from repositories, AI agents, and download folders with no renderer attached.**
 - You need one whenever a .md file reaches you outside the tool that rendered it: a README downloaded from a GitHub repo, a deliverable an AI agent wrote, an email attachment, a note exported from a vault — reading it raw means reading syntax.
 - Rendering quality is dialect-dependent. A viewer that speaks GitHub Flavored Markdown handles tables, task lists, and fenced code correctly; one limited to the core 2004 spec prints literal pipes and tildes where structure should be.
-- Privacy splits the category in two: server-side viewers upload your file to render it; client-side tools do the work in your browser and the file never leaves your machine. Which kind you are using is worth knowing before you paste anything private.
+- Privacy depends on implementation. Some viewers send content to a server; others claim client-side processing. Before opening private material, inspect the current privacy statement, network behavior, and export path rather than inferring safety from “online” or “client-side.”
 - The established alternatives — VS Code's preview, GitHub's web view, macOS Quick Look with a plugin — remain the better choice when you already live inside them.
 
 ---

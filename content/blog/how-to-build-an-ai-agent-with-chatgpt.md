@@ -12,6 +12,8 @@ draft: false
 
 You can build a useful **AI agent with ChatGPT** without opening an API playground or writing application code. But “build an agent” now has several possible meanings inside ChatGPT: save a repeatable set of instructions, package a workflow as a plugin, connect approved apps, or delegate a longer multi-step task in ChatGPT Work.
 
+Information checked October 13, 2026.
+
 The right path depends on what must persist and what the system may do. A research checklist needs reusable guidance. A document workflow may need reference files. A status-update agent may need permission to read Drive and Slack. A workflow that changes records needs an app with supported write actions, workspace approval, and a human-review policy.
 
 This guide focuses on the no-code, in-product route. It does not cover building an agent into your own website or product.

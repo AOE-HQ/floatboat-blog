@@ -10,6 +10,8 @@ locale: "en"
 draft: false
 ---
 
+**Information checked October 13, 2026.** The conversion model is stable, but library options and source-page structure change; verify current project documentation.
+
 ## TL;DR
 
 - **Converting HTML to Markdown strips a rendered document — a web page, a rich-text email, an AI chat reply you just copied — down to its structural skeleton:** headings, lists, tables, links, and emphasis rewritten as plain Markdown, with scripts and styling discarded. The two dominant scenarios in 2026 are archiving web content and turning AI chat output into files you keep.
@@ -25,7 +27,7 @@ For most of Markdown's life, the pipeline pointed one way. You wrote plain text 
 
 The format itself did not change to cause this. Markdown remains what it has been since 2004 — the plain-text syntax that stores, diffs, and travels better than anything built around it, which is the case our [what Markdown is](/blog/what-is-markdown) primer makes in full. What changed is where text lives first. When the answer to a hard question appears in a chat window, the interface has already rendered it as HTML whether or not anyone chose that; when you copy it, HTML is what leaves.
 
-The loudest format argument of the past year made this direction more important, not less. The claim that [HTML is the new Markdown](/blog/html-is-the-new-markdown) for human-facing AI output was always about the emission side — what agents should produce when a person has to read the result. Capture is a different question with an uncontroversial answer: however the debate resolves, the content people decide to keep still lands best in Markdown, because notes apps, repositories, and knowledge bases ingest Markdown, not rendered pages. Emission is contested; storage is settled; and every contested emission eventually needs the corridor from HTML back to plain text.
+The claim that [HTML is the new Markdown](/blog/html-is-the-new-markdown) concerns human-facing delivery. Capture is a separate decision. Markdown is often useful when the destination is a repository, notes system, or text-processing pipeline, while HTML may be the better archival source when layout, comments, interactive elements, or page semantics must survive. Choose the destination first; conversion is necessarily lossy when the source uses structures the target dialect cannot represent.
 
 The volume comes from ordinary solo work, not from exotic pipelines. A founder pastes a model's market analysis into a research file, a developer saves a framework's documentation page next to the code that depends on it, a consultant clips a competitor's pricing page into the client folder where the comparison lives. None of these people think of themselves as doing format conversion. They are moving content into the places it survives, and HTML-to-Markdown is the toll booth on that road.
 
@@ -35,7 +37,7 @@ The problem with a great AI answer is the container it arrives in. Chat threads 
 
 The detail that makes conversion necessary rather than optional is how the clipboard works. When a model's reply contains headings, bold terms, and a comparison table, the interface has already rendered those as HTML elements — the `##` you see displayed is an `<h2>` by the time your browser paints it, and pressing copy puts the HTML on the clipboard alongside the flat text. Pasting into a plain-text editor takes the flat flavor and loses the table; pasting into a word processor keeps the formatting in the wrong container. The structure you want exists at that moment — it is just in the wrong format, and a converter is the tool that maps it onto the right one.
 
-The lightest workflow runs in a browser tab. Open [Floatboat's free Markdown tool](https://floatboat.ai/tools/markdown), switch to the Convert tab, and paste the copied reply — rich text, an HTML fragment, or a page section all work — and it lands in the editor as clean Markdown, with the font and span residue that rides along with copied rich text stripped out; the conversion runs client-side, so the content never leaves your browser. From there it is a normal split-pane editor: fix the table alignment, give the file a real name, and export to Word, PDF, or standalone HTML when the document has to travel.
+The lightest workflow runs in a browser or local editor: paste a copied fragment, inspect the resulting Markdown, repair headings and tables, and save the source URL and capture date. Do not assume a web converter is client-side or private unless its implementation and network behavior are documented; sensitive content is safer in a locally installed, inspected tool.
 
 One habit separates people who build a usable archive from people who collect orphaned snippets: capture the question with the answer. A reply rarely stands alone — the prompt that produced it carries the constraints and context that make the answer interpretable months later, so paste both and cut the chat filler. Name files by topic rather than date, add a line of frontmatter recording the source and the model if your notes tool supports it, and a chat record starts behaving like documentation. If your chat vendor offers a native Markdown export, use it — conversion is for the majority of threads that live behind a copy button and nothing else.
 

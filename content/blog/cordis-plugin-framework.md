@@ -1,6 +1,6 @@
 ---
-title: "Cordis — The Plugin Kernel Behind DeepSeek Harness"
-description: "Cordis is the plugin framework powering DeepSeek Harness: reversible effects, reactive dependencies, and why 'everything is a plugin' matters for agents."
+title: "Cordis Plugin Framework: How DeepSeek Harness Composes Services"
+description: "A practical explanation of Cordis beneath DeepSeek Harness: contexts, services, dependency injection, effects, events, isolation, hot reload, and when plugin architecture helps agents."
 slug: "cordis-plugin-framework"
 date: "2026-08-14"
 author: "Jade"
@@ -10,84 +10,72 @@ locale: "en"
 draft: false
 ---
 
-**TL;DR**
-  * Cordis is a **meta-framework** — a framework for building frameworks — whose core capability is a reversible plugin system: components can be mounted, unmounted, and hot-reloaded at runtime, with every side effect cleanly rolled back on removal.
+Cordis is the vendored plugin framework underneath DeepSeek Harness. It gives the harness a shared context where models, tools, sessions, file access, policies, and even the agent loop can be mounted as plugins instead of being hard-wired into one application.
 
-  * Its design is formalized in a paper, _A Programming Paradigm for Spatiotemporal Composability_ , which splits dynamic composition into two dimensions: **temporal composability** (fully reverting a component's effects) and **spatial composability** (declaring and reactively managing inter-component dependencies).
+**Information checked October 13, 2026.** DeepSeek Harness's repository-level [AGENTS.md](https://github.com/deepseek-ai/deepseek-harness/blob/master/AGENTS.md) explicitly marks public APIs as pre-stable and requires consumers to be updated, so developers should verify the repository version before relying on a specific surface.
 
-  * Cordis has been the foundation of the open-source chatbot framework **Koishi for four years** , and it is now the plugin kernel of **DeepSeek Harness (dsh)** , where "everything is a plugin" — the model adapter, tool registry, session log, and agent loop are all swappable components.
+## The problem Cordis solves
 
-  * The three mechanisms that make it work: ctx.effect for reversible side effects, lifecycle events (ready / dispose / fork) for clean teardown, and a service system for dependency ordering.
+Agent systems accumulate side effects: event listeners, tool registrations, background tasks, services, files, and network clients. Loading a plugin is easy; unloading or replacing it safely is harder. A stale listener or service can survive a reload and cause duplicate actions, conflicting policies, or leaked resources.
 
-  * For agent infrastructure, this matters because it makes **self-evolving runtimes safe** : an agent that can change its own runtime is only worth having if those changes are reversible.
+Cordis treats lifecycle as part of the architecture. A plugin mounts into a `Context`, registers effects through that context, and is expected to dispose those effects when it unloads. Dependencies determine when it can start. This makes dynamic composition possible without pretending that modules are stateless.
 
-## 1\. Why a Plugin Kernel Matters for Agents
+The [official Cordis tutorial](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/cordis-tutorial/index.md) describes the framework as the runtime where every harness capability is a plugin. For the surrounding product architecture, see [what DeepSeek Harness is](/blog/what-is-deepseek-harness) and our broader [agent harness explainer](/blog/what-is-an-agent-harness).
 
-Plugin systems are not new. Every major application from IDEs to browsers has shipped with one, and the idea of hot-loading a module without restarting the host has been around for decades. So when DeepSeek announced that its open-source agent harness was built on "everything is a plugin," the initial reaction from developers was understandable: what makes this different from the plugin architecture in a text editor or a CI tool?
+## Five concepts define Cordis
 
-The difference is that agent runtimes stretch plugin systems in a direction they were never designed for. An agent loop is not a static host with extensions — it is a system that manages state across many steps, holds context, calls tools, and most importantly, can be asked to modify its own behavior mid-run. When a component in that system is removed or replaced, everything downstream that depended on it must either adapt or fail gracefully. Text editors can tolerate a plugin leaving a dangling reference; an agent that has already committed to a multi-step plan cannot.
+### Context
 
-That is the gap Cordis is built to close. Rather than treating plugin management as a convenience feature, it treats **composition itself as the problem to solve formally**. The paper behind it starts from the observation that modern software — plugin systems, self-evolving agent harnesses — increasingly requires dynamic composition, yet its formal foundations remain underdeveloped. Cordis is that foundation, and understanding it is the fastest way to understand why DeepSeek chose it as the base layer for its agent runtime rather than building a conventional plugin manager from scratch.
+A context is the container and visibility boundary for services, events, configuration, and effects. Plugins receive a context rather than importing every implementation directly. Child or isolated contexts can expose different service instances to different plugin groups.
 
-## 2\. Spatiotemporal Composability, Explained
+### Plugins
 
-The paper's title — _A Programming Paradigm for Spatiotemporal Composability_ — sounds intimidating, but the two terms in it map to two concrete problems that every dynamic system faces.
+A plugin can be a function with `apply(ctx)` behavior or a `Service` subclass. The loader mounts plugins from `cordis.yml`, producing a tree rather than one flat startup list. Configuration can enable, disable, group, and isolate branches.
 
-**Temporal composability** is the ability to completely revert a component's side effects upon removal. When a plugin is unloaded, everything it registered — event listeners, tool definitions, memory allocations, command handlers — must disappear with it, leaving the system exactly as if the plugin had never been loaded. Most frameworks can remove a plugin's code; very few can guarantee that its effects are fully undone, which is why repeated reload cycles in conventional systems slowly accumulate leaks.
+### Services and dependency injection
 
-**Spatial composability** is the ability to declare and reactively manage inter-component dependencies. When plugin A provides a service that plugin B uses, the system must ensure B loads only after A is ready, unloads before A stops, and never starts if A failed. More subtly, when the context changes — a service is replaced, a dependency shifts — every component affected must be notified and respond according to its declared contract.
+A service claims a stable key such as `ctx.tools`, `ctx.llm`, or `ctx.agents`. Consumers declare required services through `inject`. If a dependency is absent, the plugin waits; if the provider disappears, dependent plugins dispose and can load again when the service returns.
 
-Cordis formalizes both by lifting classical effect and coeffect concepts into runtime mechanisms. Every context transformation carries an inverse that the runtime tracks (the revertible effect). Every change to the context notifies components against their coeffect specifications (the reactive coeffect). The two contexts are unified into a single context type, which becomes the programming paradigm — and from there, components and a calculus of dynamic composition let the property scale from a single component to a whole system of interleaved ones.
+This is more than convenience. It prevents consumers from calling a service that has already been removed and expresses startup order through capabilities rather than manual sequencing. The behavior is documented in the harness [service guide](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/framework/service.md).
 
-The practical payoff is path independence: the final state of a Cordis application depends only on which plugins are enabled, not on the order they were loaded or unloaded. That property is what makes hot module replacement safe, and it is the same property an agent runtime needs if it is ever going to reconfigure itself without corrupting its own state.
+### Effects and disposal
 
-## 3\. The Three Mechanisms
+An effect is work whose cleanup belongs to the plugin lifecycle: registering a tool, starting a timer, subscribing to an event, or opening a resource. Cordis helpers associate a disposer with the context so teardown can unwind registrations.
 
-Cordis implements this paradigm through three cooperating mechanisms, all exposed through a shared context object (ctx).
+This is the practical meaning behind “reversible effects.” It does not guarantee that every external action can be undone. Sending an email or changing a remote record remains irreversible unless the application provides a compensating action.
 
-**ctx.effect — reversible side effects.** This is the heart of temporal composability. When a plugin registers a side effect, it calls ctx.effect() and provides the cleanup function — the "inverse" — as its return value. The runtime stores that inverse and executes it when the plugin unloads. Anything that needs cleaning up — connections, memory, registered handlers, subscriptions — goes in the effect, and Cordis guarantees it runs in reverse order of registration at teardown. This is the same idea as C++'s RAII or Rust's Drop trait, lifted from the language level to the runtime level so that even plugins written by different teams unload cleanly.
+### Events
 
-**Lifecycle events.** Cordis exposes three user-facing lifecycle events plus internal system events. ready fires when the lifecycle starts (or immediately if the context is already active). dispose fires when the context is unloaded, triggering the cleanup chain. fork fires every time a plugin is loaded, and it is itself a plugin function — so a reusable plugin can spawn child contexts, each with its own lifecycle. The internal events (internal/runtime, internal/fork, internal/service, internal/update) handle the bookkeeping: tracking plugin states, service changes, and configuration updates.
+Events allow plugins to observe or intercept behavior without importing one another. Cordis also supports waterfall semantics: a listener can pass a possibly modified result to the next listener or short-circuit when it owns the decision. Dispatch behavior is part of an event's contract and should be documented.
 
-**Service management.** The service system handles spatial composability. Plugins declare dependencies via an inject property, and Cordis resolves the dependency graph: plugin B loads only after plugin A provides the service it needs, unloads before A stops, and never activates if A fails. Dependencies are expressed by service name, giving the runtime the ordering information it needs to guarantee safe teardown in any load/unload order.
+## Why this architecture suits an agent harness
 
-Together these three mechanisms mean a Cordis developer rarely needs to reason about cleanup order, dependency race conditions, or reload leakage — the framework takes those guarantees on itself. The discipline is the cost: every plugin must declare its effects and dependencies explicitly, which is a meaningful contract to uphold, but one that pays off in exactly the environments where agents live.
+An agent harness must swap models, add tools, enforce policies, persist sessions, and support different execution environments. A plugin kernel lets those concerns change independently while sharing typed services.
 
-There is also a configuration layer worth naming, because it is what makes the framework usable by people who do not write plugin code. Cordis ships a declarative component loader with configuration reconciliation and hot module replacement: plugins are declared in configuration rather than wired imperatively, and when a config changes, the loader diffs the declared state against the running state and mounts, unmounts, or updates only the plugins that changed. This is the mechanism behind the "select, swap, or extend any capability in configuration" claim in the DeepSeek Harness docs — the configuration file is not a settings panel bolted on top of a static system; it is the interface to the dynamic composition engine itself.
+Examples include replacing an LLM adapter without changing the tool registry, isolating two shell services with different timeouts, inserting a policy listener before a tool call, or hot-reloading a development plugin while the rest of the application remains mounted.
 
-The event model deserves one more note, because it is where Cordis's guarantees get auditable. Every plugin lifecycle transition — a fork created, a runtime spawned, a service value replaced, a configuration updated — emits a typed internal event. That means an operator can observe exactly what the system did, in what order, and why. For an agent runtime, that auditability is not a nicety: if an agent reconfigures itself and the result is wrong, the event log is what lets you reconstruct the sequence and decide whether the change should be rolled back. Reversibility is only useful if you can tell what was reversed.
+The architecture also imposes discipline. Every registration needs a disposer; service keys need stable ownership; event order and short-circuit rules need documentation; and configuration changes need tests. “Everything is a plugin” is not a license to make boundaries vague.
 
-## 4\. From Koishi to DeepSeek Harness
+## Cordis configuration and hot reload
 
-Cordis was not built for DeepSeek. It has been in production for four years as the foundation of **Koishi** , an open-source cross-platform chatbot framework created by the developer shigma. Koishi's name comes from a character in the Touhou Project franchise, and the project has accumulated roughly 6,000 GitHub stars building chat agents that run across Discord, Telegram, and other platforms. What made Koishi a useful test bed for Cordis is precisely what agent runtimes need: plugins that register commands and services, get hot-reloaded during development, and must clean up after themselves when disabled.
+The harness tutorial uses a small launcher that creates a root `Context`, mounts the Loader, and reads `cordis.yml`. The YAML file describes the plugin tree and configuration. During development, changes can cause affected branches to dispose and remount.
 
-Koishi ran on Cordis v3. When DeepSeek Harness shipped its developer preview on August 13, 2026, it was built on **Cordis v4** — and the same day, the Cordis team published the formal paper that had been driving the v4 redesign. The timing was not incidental: v4's explicit focus on reversible effects and reactive coeffects is the machinery an agent harness needs, and the paper made that machinery legible to the broader engineering community. The connection is documented directly in the DeepSeek Harness architecture docs, which name Cordis as the framework underneath, and in the GitHub repository, which links the paper as the design's source. For the full context on what DeepSeek Harness itself does at the execution-layer level, see our explainer on DeepSeek Harness.
+Hot reload is valuable only when lifecycle cleanup is correct. A plugin that registers a listener outside the context or opens an unmanaged resource can still leak across reloads. Developers should test repeated mount–unmount cycles, not only first startup.
 
-The four-year provenance matters for a practical reason: Cordis is not a proof of concept that DeepSeek is betting on. It is battle-tested software with an established plugin ecosystem, a real community, and a formal spec. When you build on a harness whose kernel has survived four years of real plugin churn, the "everything is a plugin" claim carries more weight than it would for a framework that shipped last week.
+## What Cordis does not provide by itself
 
-## 5\. Everything Is a Plugin
+Cordis is not an agent model, prompt framework, or complete security boundary. It does not decide which tool calls are safe, guarantee sandboxing, evaluate model output, or provide business-level rollback. Those responsibilities belong to harness services and deployment policy.
 
-DeepSeek Harness (dsh) takes the Cordis philosophy literally. Every capability in the harness is a plugin: the model adapter, the tool registry, the session log, the sandbox, the storage layer, the agent loop, and even the UI. That list quietly includes the complaint most users treat as a law of nature — [your AI forgetting you the moment a session ends](/blog/why-ai-forgets-every-session) — because if the session log is a plugin, continuity is a component you can swap, not a baked-in limit. The harness itself is a thin kernel that mounts, unmounts, and tracks dependencies; the agent's actual capabilities live entirely in the plugins above it.
+Service isolation can give plugin groups separate instances, but infrastructure credentials, operating-system permissions, and network access still need enforcement below the framework.
 
-The architecture doc lays out how the pieces map onto Cordis contexts. The session subsystem owns the append-only SessionEvent log and in-memory store, exposed as ctx.sessions — the component that decides whether an agent [picks up where the last session left off](/blog/why-ai-forgets-between-sessions) or starts every conversation from zero. The system-prompt subsystem handles prompt-section and tool-schema assembly via ctx.systemPrompt. The tools subsystem provides a scoped tool registry and guarded execution pipeline under [ctx.tools](http://ctx.tools). The agent subsystem exposes the Agent interface, live registry, and agent events through ctx.agents, with the default driver implementing that interface at ctx.agentLoop. The LLM layer contributes message and stream vocabulary plus the adapter seam at ctx.llm.
+## When to build a Cordis plugin
 
-Plugins register capabilities against these context keys, and everything works through the Cordis service and event model. The practical result is that you can swap a model backend, replace the sandbox, or add a custom tool by mounting a plugin in configuration — no source fork, no privileged core to patch. DeepSeek ships four preset profiles out of the box: **Standard** (the full coding agent with filesystem, shell, web search, subagents, and plan mode), **Code** (model-generated code orchestrates multiple tool-call rounds), **Minimal** (only bash and a file editor, the configuration DeepSeek used for its own official model benchmarking), and **Creator** (for building custom presets with runtime inspection and preset-authoring guidance).
+Build a plugin when a capability needs a clear lifecycle and should be replaceable or intercepted: an LLM provider, tool family, policy layer, event observer, persistence service, or UI extension. Keep simple application logic local when no independent lifecycle or reuse exists.
 
-This is a meaningfully different posture from monolithic agent tools where the loop, tools, and UI are welded together. It is also the reason DeepSeek's own benchmark numbers were reproducible: the harness used for scoring V4 Pro is the same open source with a plugin configuration, which is documented in the V4 Pro 0813 release notes. That link between the benchmark and the released code is covered in our DeepSeek V4 Pro 0813 analysis.
+A good plugin has one owned capability, declared dependencies, validated configuration, managed effects, and tests for both activation and disposal. A bad plugin reaches into unrelated services, assumes load order, or leaves cleanup to process exit.
 
-## 6\. Why This Matters for the Agent Ecosystem
+## Bottom line
 
-For a developer evaluating agent infrastructure, the Cordis-based design changes what "open source" means for a harness. An open license makes code inspectable; a plugin kernel makes it _transformable_. If you want a different sandbox, a custom tool, a different model backend, or a UI that matches your product, you mount a plugin instead of maintaining a fork. That last item matters beyond cosmetics: when the presentation layer is a component, [whether an agent ships its output as plain text or a rendered artifact](/blog/html-is-the-new-markdown) becomes a mounting decision rather than something welded into the core. The plugin ecosystem becomes the moat — and DeepSeek has signaled that intent by adding the dsh-plugin topic on GitHub for discoverability and standing up a Discord community around the harness.
+Cordis gives DeepSeek Harness a composable runtime: contexts define scope, services define capabilities, injection defines readiness, effects define cleanup, and events define extension points. Its value is not the slogan “everything is a plugin,” but the ability to add and remove behavior without leaving the agent system in an unknown state.
 
-There is a second-order effect worth naming. The same property that makes Cordis good for plugin management — reversibility — is what makes an agent runtime safe to self-modify. An agent that can reconfigure its own stack, add tools mid-task, or evolve its own workflow is only worth trusting if every change can be rolled back cleanly — and the discipline of [asking what an agent is allowed to touch before you grant it access](/blog/browser-ai-agent-security-questions) matters twice over when the agent can grant itself new capabilities. Cordis's revertible effects are the mechanism that turns "agents that modify their own runtime" from a research curiosity into a defensible engineering pattern.
-
-That is also where the comparison to the closed agent products of the same week becomes instructive. The same week DeepSeek open-sourced a harness built on a reversible plugin kernel, xAI shipped Grok Bot — a product where the agent's environment is a persistent cloud computer the vendor controls. Both are bets on where agent infrastructure goes, and they could hardly differ more in philosophy: one gives you the kernel and the plugins, the other gives you the teammate and the computer. We break down the closed-product side of that comparison in our Grok Bot explainer.
-
-* * *
-
-## Conclusion
-
-Cordis is easy to underestimate because it does not do anything flashy — it manages plugin lifecycles, dependency ordering, and cleanup. But those three things are precisely where agent runtimes fail when they try to evolve themselves. The formal guarantee that a component can be removed with all its effects reversed, and that dependencies react correctly to every context change, is what makes dynamic composition safe enough to build a self-modifying agent on.
-
-DeepSeek's choice to build its harness on a four-year-old plugin kernel, rather than a purpose-built monolith, is a statement about where the agent ecosystem is heading. The winning harnesses will not be the ones with the most tools built in — they will be the ones whose plugin ecosystems make it cheapest to compose the tools you need. Cordis gives DeepSeek that, and it gives every developer building on dsh the same leverage. Whether you are contributing a plugin, evaluating a harness, or just trying to understand why "everything is a plugin" is more than a slogan, the reversible kernel is the part worth understanding.
-
+For developers extending the harness, lifecycle and dependency boundaries are the framework's real API. Treating them as optional removes most of the benefit Cordis was designed to provide.

@@ -14,6 +14,8 @@ The best AI agent use case is not the one with the most steps. It is a recurring
 
 This guide separates documented examples from illustrative workflows. It does not claim personal tests, invented users, or unsupported time savings. The goal is to help you choose a first use case that can survive real files, permissions, exceptions, and review.
 
+Product examples and linked documentation were rechecked on October 13, 2026. They illustrate task shapes, not independent performance results.
+
 ## Use this five-part test before you automate
 
 | Question | Good signal | Warning sign |

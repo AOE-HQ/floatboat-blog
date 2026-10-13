@@ -48,7 +48,7 @@ The organizer's boundary is cost and scope. Because it runs an LLM per file — 
 
 ## 3. Head-to-Head: Judging Each Pair on Real Failure
 
-Feature tables in vendor comparisons tell you what a tool *can* do, rarely when it will let you down. The table below compares the three forms on dimensions chosen to expose where each breaks, not where it shines. Capabilities and pricing reflect official product pages as of September 2026.
+Feature tables tell you what a tool *can* do, rarely which job is primary or whether a capability is opt-in. The table below compares the three forms by failure boundary, not brand. Product examples and prices were rechecked on official pages on October 13, 2026.
 
 | Dimension | File sorter | File renamer | File organizer |
 | --- | --- | --- | --- |
@@ -122,7 +122,7 @@ The third trap is the ranked list that mixes jobs. A single leaderboard scoring 
 
 ## 6. What's Next for This Category
 
-Three shifts are visible across the ecosystem as of late 2026, and each affects the buy-now-versus-buy-later decision. The first is the move toward on-device AI, driven by the obvious privacy problem that organizing files means reading them. Where earlier tools processed filenames in the cloud, the current generation advertises local models and zero uploads: [NudgeFile](https://nudgefile.com/) runs entirely offline on Windows through a bundled local model, and FilesDesk and Zush both offer Ollama or LM Studio modes where files never leave the machine. Privacy is becoming a headline differentiator, and the default path matters: cloud by default with local as an option is a very different posture from local by default.
+The most decision-relevant shift visible on October 13, 2026 is not that one form replaces another, but that products increasingly combine them. [NudgeFile](https://nudgefile.com/) documents local processing on Windows; FilesDesk and Zush offer local-model options; Zush now also documents folder sorting in beta. The label on the homepage therefore matters less than the default workflow and active inference mode. Cloud by default with a local option is a different privacy posture from local by default, and a rename flow with optional sorting is different from a rename-and-route organizer.
 
 The second shift is from single-purpose utilities toward agents that tidy a folder and then act on it. The open-source wave on Hacker News — projects like llama-fs and hyperfield's AI File Sorter — shows hobbyists converging on the same read-approve-apply pattern commercial tools standardized, and the frontier is moving from "organize this folder" to "organize this folder and then do something with it." That is where Floatboat's AI file organizer sits: fully on-device with no uploads, it negotiates the plan with you in plain language before anything moves, then keeps going — the same workspace can feed organized files into calendar-driven agents, FloatIM, and one-click skills. It is a different position from a folder-cleaning utility, and worth weighing only if you have the follow-on workflow. The third shift is consolidation — sorters absorbing rule builders, organizers absorbing watch folders — which makes the "what job am I buying" question harder next year, not easier. Buy for the job you have today; the tools are converging underneath you.
 

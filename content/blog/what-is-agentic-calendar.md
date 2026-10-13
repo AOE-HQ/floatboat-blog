@@ -10,12 +10,14 @@ locale: "en"
 draft: false
 ---
 
+Information checked October 13, 2026. “Agentic calendar” is an emerging category label rather than a settled industry standard; evaluate each product by documented triggers, permissions, outputs, review steps, and failure handling.
+
 **TL;DR**
 
-- An agentic calendar is a calendar-based AI system that proactively executes work before, during, and after scheduled events — going beyond time-slot management to autonomous task execution triggered by calendar events.
+- An agentic calendar is a proposed category for calendar-based AI systems in which events can trigger defined preparation or follow-up work beyond time-slot management.
 - It differs from smart schedulers (which find time slots) and AI note-takers (which record what happened) by acting on the schedule rather than merely observing it.
-- Three defining properties set it apart: it is proactive (acting without prompts), event-triggered (calendar entries become execution signals), and autonomous (it decides what context to gather and what outputs to produce).
-- The term is new enough that market understanding is still forming — this article provides the first structured definition of the category.
+- Three useful tests are whether it can run from a time or event trigger, gather permitted context, and produce a reviewable output without a fresh chat prompt.
+- The term is still forming. This article offers a working definition, not a claim of industry consensus or priority.
 
 ---
 
@@ -33,7 +35,7 @@ The shift is from a calendar that *stores* work to a calendar that *runs* work.
 
 ### 1.2 The Shift from "When" to "What Happens Before and After"
 
-This distinction matters because the bottleneck for most knowledge workers isn't finding time — it's converting time into output. A 2025 survey by [Salesforce](https://www.salesforce.com/news/stories/ai-in-marketing-research/) found that marketers using AI saved an average of five hours per week, with the gains concentrated not in scheduling but in content generation and data analysis — the before-and-after work that surrounds calendar events. The calendar entry itself is a few pixels on a screen. The work that makes that entry productive happens in the margins around it.
+This distinction matters because finding time and producing an output are different jobs. A calendar entry records a commitment; preparation, evidence gathering, drafting, review, and follow-up require separate work and controls.
 
 Smart scheduling addresses the coordination problem. Agentic calendaring addresses the execution problem. They're complementary layers, not competitors. A Calendly link fills your calendar efficiently; an agentic calendar does something with what's on it.
 
@@ -49,11 +51,11 @@ This definition places three demands on any system that claims the label. It mus
 
 ### 2.2 Three Defining Properties
 
-**Proactive, not just responsive.** A responsive tool waits for input. You type a prompt, it replies. You click a button, it executes. An agentic calendar reverses this relationship: the calendar event initiates the interaction. The system decides what preparation is appropriate for a client call versus a standup versus a deadline, and it begins that preparation autonomously. You don't open the tool and ask it to prepare; it prepares, and then tells you it's ready.
+**Event-initiated, not necessarily unprompted forever.** The calendar event initiates a configured workflow, but the workflow still needs a defined scope, permissions, and output. A client call and a deadline may use different rules. The important test is whether the event can start a reviewable action without a fresh chat request—not whether the product claims unlimited autonomy.
 
 **Event-triggered.** The calendar entry is the instruction. When you create an event titled "Q2 investor update," the system recognizes the event type — a deadline-driven deliverable — and begins assembling context: the Q1 update for continuity, the current metrics dashboard, the narrative draft from the last board discussion. The event type determines the agent behavior. This is not natural language processing of event titles (though that can be part of it); it's a mapping from calendar semantics to work pipelines.
 
-**Autonomous in execution scope.** Autonomy here has a specific, limited meaning. An agentic calendar decides what context to gather, which files to surface, which model to use for which step, and what format the output should take. It does not make strategic decisions on your behalf. It does not send the investor update without review. The autonomy is in the execution of the prep-work-follow-up chain, not in the judgment calls. Think of it as an autonomous research assistant, not an autonomous CEO.
+**Bounded in execution scope.** A product may select context, files, a model, or an output format within configured permissions. Those choices and approval gates vary by product. Treat “autonomy” as a claim to verify through logs, source attribution, retries, and external-action controls—not as permission to make strategic decisions.
 
 ### 2.3 What an Agentic Calendar Is Not
 

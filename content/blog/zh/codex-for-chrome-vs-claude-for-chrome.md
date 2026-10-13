@@ -10,19 +10,13 @@ locale: "zh"
 draft: false
 ---
 
-好久不见，我是 Nova。我把两个扩展都装上大约 48 小时后才发现，我花在「该问哪一个」上的时间，比真正干活的时间还多。就在那时我意识到：这篇对比必须存在。
-
-如果你是单人创业者、顾问，或带着一个小团队——而且已经在为 ChatGPT 或 Claude 付费——过去几个月你大概已经看到这两款产品先后上线，于是开始琢磨：要换吗？两个都装？还是其实一个都不需要？
-
-从 Codex for Chrome 在 5 月 7 日上线起，我两款都在用。以下是我目前发现的东西——不宣告谁赢，只讲你在做选择时真正有意义的差异。
-
-**快速背景说明：** 文中所说均以 2026 年 5 月为时间点。这两款工具迭代都很快。下单前请自行核实定价、功能与地区可用性。
+本文比较两种浏览器 Agent 的工作方式，不声称亲自测试。动态能力、套餐和地区可用范围已于 2026 年 10 月 13 日按官方文档复核，采用前仍应再次确认。
 
 ## 两款工具 30 秒速览
 
-**Codex for Chrome** 是 OpenAI 的扩展，几天前刚上线。它通过 [Codex 桌面应用](https://developers.openai.com/codex/app/chrome-extension)连接，让 Codex 在你已登录的浏览器里干活——访问网页应用、跨标签页取上下文、操作 DevTools，全程在后台运行。
+**Codex for Chrome** 是配合 [Codex 桌面应用](https://developers.openai.com/codex/app/chrome-extension)使用的浏览器扩展。当前支持的浏览器动作与设置要求应以这份官方文档为准。
 
-**[Claude for Chrome](https://claude.com/blog/claude-for-chrome)** 是 Anthropic 的浏览器 Agent，2025 年 8 月起试点，现已对付费订阅用户开放公测。它住在 Chrome 内的侧边栏面板里，读取你当前打开的实时页面，能导航、点击、填表、跑多步工作流。Anthropic 的[原始发布文章](https://www.anthropic.com/news/claude-for-chrome)详细讲了它的安全做法。
+**Claude for Chrome** 是 Anthropic 的浏览器 Agent 界面。可用范围、套餐访问与支持动作会变化；应以 [Anthropic 当前 Chrome 官方文档](https://code.claude.com/docs/en/chrome)为准，该页面已于 2026 年 10 月 13 日复核。Anthropic 的[原始发布文章](https://www.anthropic.com/news/claude-for-chrome)只提供历史安全背景，不代表当前访问条件。
 
 同一个品类。设计哲学截然不同。
 
@@ -42,9 +36,9 @@ Codex for Chrome 不是独立扩展——它是 Codex 桌面应用的插件。�
 
 Claude 走的是完全不同的路。它作为**侧边栏**，开在你正在看的那个标签页上。你眼前的页面本身就是上下文——Claude 读的是实时 DOM，不是截图。
 
-默认模型是 Sonnet 4.5（按你的套餐，还能用 Opus 4.6 和 Haiku 4.5）。实际有意义的是：那个大上下文窗口意味着——50 页 PDF、200 条消息的邮件线程、一份巨大的 GitHub diff——它一口气通读。
+可用模型与套餐门槛会变化。对这篇比较真正重要的是侧边栏能使用当前页面；长文档行为应通过代表性页面与固定验收标准测试。
 
-Claude 的模式更偏**对话式**。你是**和**它一起处理屏幕上的东西，而不是把任务丢给后台进程。我扔给它一份很长的客户报告、要几个具体数据点——它从头读到尾，一点没丢线索。那一步就是……直接跑通了。
+Claude 的模式更偏**对话式**。你是**和**它一起处理屏幕上的东西，而不是把任务丢给后台进程。侧边栏形态适合围绕当前页面持续提问，但长文档表现仍应使用自己的材料和验收标准测试。
 
 ![co3.PNG](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481711947-9bef106e-6ee4-4fee-b49a-a6bb5959bd47.webp)
 
@@ -60,13 +54,13 @@ Claude 的模式更偏**对话式**。你是**和**它一起处理屏幕上的�
 
 ### Claude 的优势
 
-  * **带深层上下文的实时页面读取。**Claude 能看到你当前标签页的真实内容。配上它的上下文窗口，再大的文档也一次读完、无需分块。做调研和内容分析时，这是它的高光。
+  * **实时页面读取。**Claude 处理当前标签页的内容。长文档表现应使用代表性页面和明确验收标准测试，不能仅凭上下文窗口推断。
 
   * **定时任务与工作流录制。**Claude 支持[定时自动化](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome)——按日、按周、按月。你还可以把某个工作流录一遍，之后回放。Codex 的 Chrome 扩展没有内置定时能力。
 
   * **Claude Code 集成。**如果你在终端里用 Claude Code，这个 Chrome 扩展能[直接对接](https://code.claude.com/docs/en/chrome)——终端里构建、浏览器里测试，同一会话。这条闭环已经在上线运行了。
 
-  * **对话感。**侧边栏模型意味着你是在就屏幕上的东西展开对话。对文档密集型的工作，这比把事情丢给后台 Agent 更自然。我还在摸索两种方式各自在我工作流里最合适的位置，但凡是调研量大的活，我的手总是伸向 Claude。
+  * **对话感。**侧边栏模型意味着你是在就屏幕上的东西展开对话。对文档密集型的工作，这比把事情丢给后台 Agent 更自然。研究型任务是否更适合这一界面，应通过同一任务的并行试点判断。
 
 ![co4.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481723709-c5714d02-c345-4a36-8c93-86f7bc9426eb.webp)
 
@@ -90,25 +84,11 @@ Anthropic 公布了具体数字：无防护时攻击成功率 23.6%，有防御�
 
 OpenAI 的文档明确警告要「把页面内容当作不可信上下文」。两家公司都没声称这问题已解决。
 
-**我的看法：**先从你信任的站点开始。在你先用低风险任务测过之前，别把敏感财务或医疗页面交给任何一个 Agent。这不是危言耸听——只是这项技术当下的真实状态。时间线我可能看错，但我宁愿谨慎一点。
+**安全基线：**先从可信站点和低风险任务开始，不要在财务、医疗或管理后台页面扩大权限。
 
-## 定价、套餐入口与地区可用性
+## 套餐与地区可用性
 
-**Codex for Chrome** 随你的 ChatGPT 套餐附带，不加钱。它消耗你现有的用量额度。Free 和 Plus（$20/月）用户都能用；[Pro（$100/月）](https://developers.openai.com/codex/pricing)提供 5 倍容量（作为上线促销，2026 年 5 月 31 日前是 10 倍）。连免费档都有有限的试用额度。
-
-**Claude for Chrome** 需要付费套餐——Pro（$20/月）、Max（$100/月以上）、Team 或 Enterprise。但有个细节值得划重点：**Pro 用户在这个 Chrome 扩展里只能用到 Haiku 4.5**——最快但能力最弱的模型。想解锁 Opus 4.6 或 Sonnet 4.5，得上 Max（$100/月）。对复杂的浏览器任务来说，这是实打实的质量差距。
-
-在 $20/月这一档，**Codex 让你用到完整模型栈，而 Claude 把你锁在 Haiku 上**。这个「价格 ÷ 能力」的比值，值得好好想想。
-
-![co5.png](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481733192-0b37e66a-6bf2-4188-92bd-e4b54825f4ea.webp)
-
-### Codex Chrome 在欧盟/英国的状态
-
-如果你在欧盟或英国，这是全文最重要的一段：**Codex for Chrome 上线时不覆盖欧盟和英国。**[Neowin 已证实](https://www.neowin.net/news/openai-codex-can-now-work-directly-in-chrome-on-macos-and-windows/)它被排除在所有欧盟与英国地区之外，OpenAI 只说支持「即将到来」。没有时间表。欧盟用户装上扩展会发现能正常连接，但 Codex 应用里不会出现 Chrome 插件。
-
-Claude for Chrome 没有地区限制，全球付费订阅者都能用。
-
-如果你身处欧盟、今天就要在这两款里选一个，那决定已经替你做好了——至少暂时如此。
+套餐、模型、额度与地区门槛变化很快。Codex 应以 [OpenAI 官方 Codex 定价](https://developers.openai.com/codex/pricing)和 [Chrome 扩展文档](https://developers.openai.com/codex/app/chrome-extension)为准；Claude 应以 [Anthropic 官方 Chrome 文档](https://code.claude.com/docs/en/chrome)与当前定价页为准。不要根据旧促销、二手地区报道或固定模型映射做购买决定。
 
 ## 决策框架
 
@@ -119,8 +99,6 @@ Claude for Chrome 没有地区限制，全球付费订阅者都能用。
   * 你的工作涉及**多标签页后台任务**——从多个看板取数、更新记录、测试网页应用
 
   * 你需要用 DevTools 做前端调试
-
-  * 你想在 $20/月档就拿到浏览器 Agent 能力、且不被锁模型
 
   * 你不在欧盟或英国
 
@@ -136,8 +114,6 @@ Claude for Chrome 没有地区限制，全球付费订阅者都能用。
 
   * 你在欧盟/英国，需要一个今天就能用的浏览器 Agent
 
-  * 你愿意为 Max 付 $100/月，换取完整模型选择
-
 ### 当两者都不合适
 
 如果你的浏览器工作主要是读文章、查邮件、轻度调研——那这两款你现在可能都不需要。授予权限、管理安全、学习交互模型的成本，配不上那些你 30 秒就能自己做完的任务。只有当你的浏览器工作流涉及**真正的重复或复杂**时，这些工具才值得占一席之地。如果答案不明显，那通常说明：留在现在这套方案里就好。
@@ -146,7 +122,7 @@ Claude for Chrome 没有地区限制，全球付费订阅者都能用。
 
 ## 能不能两个并排跑？
 
-可以。它们是两个独立扩展，技术上不冲突。我两款同时装过。
+技术上可以同时安装，但应避免给两个 Agent 重叠的高风险权限，并分别记录站点授权。
 
 但实际的摩擦是真实的：**在两种 Agent 范式之间来回切换，心智成本很高。** Codex 用后台任务和标签组思考；Claude 用关于当前页面的对话思考。硬要在同一个工作流里同时用两者，意味着你花在「选哪个来问」上的时间比干活还多。
 

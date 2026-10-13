@@ -26,7 +26,7 @@ draft: false
 
 For a decade, "voice AI" meant one of two things in practice. Dictation software turned speech into text wherever your cursor lived — useful, fast, and deliberately dumb about meaning beyond transcription. Phone systems used speech recognition to route you to the right department — useful for enterprises, and deliberately narrow about what you could say. Neither pattern answered the question people started asking in 2024–2026: *Can I talk to an AI the way I talk to a colleague, and have it think, use tools, and talk back?*
 
-That question is what created **voice agents** as a distinct category. The major labs shipped consumer voice modes within weeks of each other in mid-2026: OpenAI's GPT-Live on July 8, Anthropic's expanded Claude Voice Mode on July 23, xAI's Grok Voice Think Fast 2.0 on July 29, while Google's Gemini Live continued adding camera and screen context on Android and iOS. Developers got parallel surfaces — OpenAI's Realtime API with the `gpt-realtime` family, xAI's WebSocket voice endpoint — aimed at embedding speech-native agents into support lines, coaching apps, and in-car assistants. The products differ; the job shape is shared: **audio in, reasoning, audio out**, with latency low enough that conversation feels continuous.
+That question is what created **voice agents** as a distinct category. Major AI vendors now offer consumer voice experiences and developer voice surfaces, but their release dates, architectures, and supported tools differ. As of October 13, 2026, compare them through current official product documentation rather than a compressed launch timeline.
 
 Solopreneurs feel this shift acutely. You can rehearse a pitch on a walk, debug a decision out loud in the car, or ask follow-up questions without breaking stride — but only if the system treats speech as the primary interface, not a transcription shortcut pasted into chat. That is the bar a voice agent clears and a dictation layer does not.
 
@@ -52,7 +52,7 @@ According to <a href="https://openai.com/index/introducing-gpt-live/" rel="nofol
 
 **Conversational state.** The agent maintains dialogue context across turns — pronouns resolve, earlier constraints persist, and follow-up questions make sense without repeating the setup. Session length can stretch to multi-minute work conversations, not single-command utterances.
 
-**Reasoning and tools.** A voice agent is not a speech synthesizer wrapped around a search box. It plans, calls functions, searches, or delegates to stronger models when questions exceed what a fast voice layer handles alone — OpenAI's GPT-Live explicitly delegates deep work to GPT-5.5 in the background while keeping the voice thread alive.
+**Reasoning and tools.** A voice agent is not merely a speech synthesizer wrapped around a search box. Depending on the documented product surface, it may search, call tools, or hand work to another component. Buyers should verify those capabilities in current official documentation rather than infer an internal model-routing design.
 
 **Turn-taking and interruption.** Production-grade voice agents support barge-in: you can cut off a bad answer, correct a misunderstanding, or redirect mid-sentence. Full-duplex systems extend that to overlapping speech; turn-based systems simulate it with stop/start boundaries. Either way, control feels bilateral.
 
@@ -86,11 +86,11 @@ Turn-based architectures still appear in production — listen fully, think, the
 
 **Full-duplex** means the model can process incoming audio while generating outgoing audio — enabling backchannels ("mhmm"), graceful pauses, and rapid corrections without rigid "your turn / my turn" gates. GPT-Live is OpenAI's consumer-facing expression of this pattern. **Turn-based** dialogue enforces clearer segments: the user finishes, the model responds. Developers simulate interruption with endpoint detection and cancel tokens, but the cognitive model differs.
 
-When evaluating products, ask whether interruption is a first-class feature or a hack. Consumer reviews of Gemini Live, GPT-Live, and Grok Voice in August 2026 consistently rank **time-to-first-audio** and **barge-in reliability** above raw benchmark scores — because voice UX is timing-sensitive in ways text chat is not.
+When evaluating products, test whether interruption is a first-class behavior under your actual network conditions, because timing affects voice usability differently from text chat.
 
 ### 3.3 Delegated Reasoning and Tool Use
 
-Voice layers are often too small or too fast to carry frontier reasoning alone. **Delegated reasoning** sends hard queries to a stronger text model or tool runner while the voice surface keeps talking — summarizing progress, asking clarifying questions, or filling dead air productively. GPT-Live's delegation to GPT-5.5 is the clearest public example; Claude Voice Mode's model picker (Haiku vs Sonnet vs Opus) achieves a related goal by letting users upgrade intelligence mid-session rather than mid-stack.
+Some products separate low-latency conversation from slower tool work or deeper reasoning. When a vendor documents that separation, evaluate how the handoff affects latency, context, permissions, and the final record. Do not assume that every voice agent uses the same routing architecture simply because the conversation sounds fluid.
 
 Tool access completes the "agent" half of the name. Anthropic's July 2026 update routes voice through connected apps like Gmail and Slack on paid plans — spoken requests that trigger real actions, not monologues. OpenAI's Realtime API exposes function calling and remote MCP servers for developers building support agents that look up orders or book appointments during a call. Without tools, you have a voice **assistant**; with durable actions across sessions, you approach voice **agency** — though product marketers use both words loosely.
 
@@ -102,7 +102,7 @@ None of these entries is a buying guide; they map **how each lab packages the sa
 
 ### 4.1 OpenAI: GPT-Live and the Realtime API
 
-**GPT-Live** is OpenAI's consumer voice product inside ChatGPT — full-duplex conversation with GPT-Live-1 and a lighter GPT-Live-1 mini tier on free plans, as described in the company's July 2026 launch post. It delegates heavy reasoning to GPT-5.5 behind the scenes. Video and screen sharing were not supported in GPT-Live at launch; legacy Advanced Voice Mode remained available for some multimodal features.
+**ChatGPT Voice** is OpenAI's consumer voice experience inside ChatGPT. As of October 13, 2026, the [official Voice help page](https://help.openai.com/en/articles/20001274-chatgpt-voice) documents spoken conversations, account-dependent limits, and supported mobile video or screen sharing. Treat exact model names and availability as changeable product details and verify them there.
 
 For builders, the programmable surface is the **Realtime API** and `gpt-realtime` model family — WebSocket or WebRTC audio, tool calling, SIP phone calling in GA announcements — not GPT-Live itself, which remains a ChatGPT app feature without a public API model ID as of August 2026. If you are architecting a custom voice agent, you likely target Realtime; if you are a solopreneur rehearsing a talk on a walk, you likely use GPT-Live.
 
@@ -110,7 +110,7 @@ For builders, the programmable surface is the **Realtime API** and `gpt-realtime
 
 **Claude Voice Mode** targets longer spoken working sessions — practicing pitches, comparing offers, thinking through process aloud. Through mid-2025 it ran on Haiku for speed; the July 23, 2026 update added **Opus and Sonnet** via an in-session model picker so users can escalate intelligence without restarting. Paid tiers unlock broader model access and more connected tools; free tier users remain on Haiku with limited connectors.
 
-Third-party reporting notes Anthropic did not ship a new speech-native foundation model for this release — the upgrade is **routing and tool access** for existing Claude models through a voice pipeline with external TTS. That makes Claude Voice Mode feel closer to "smart chat, spoken" than to a single end-to-end audio transformer — a legitimate design choice that favors reasoning depth over duplex theatrics.
+Anthropic's official Voice Mode documentation describes the user experience and availability, but it should not be used to infer an undocumented underlying audio architecture. For buyers, the verifiable questions are simpler: can the session use the context you need, which tools are available, what record remains afterward, and where human approval sits.
 
 ### 4.3 Google: Gemini Live
 

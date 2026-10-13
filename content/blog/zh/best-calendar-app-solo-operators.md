@@ -10,6 +10,8 @@ locale: "zh"
 draft: false
 ---
 
+信息核对截至 2026 年 10 月 13 日。
+
 对单人经营者而言，最好的日历应用应该在所有账户和设备之间维护一份可信日程，而不是再制造一套需要照料的系统。
 
 答案可能是 Google Calendar、Apple Calendar、Outlook、Fantastical，也可能是在基础日历之上增加 Morgen 一类规划层。如果真正的问题是大量未排时间的任务，自动调度器才值得测试。这些产品承担的职责不同，用功能数量直接排名会误导选择。
@@ -48,7 +50,7 @@ draft: false
 
 ### Google Calendar：适合以 Google 为业务身份的工作
 
-当客户邀请、Meet、共享 Google 日历和浏览器使用构成日常工作时，Google Calendar 是实际的基础选择。官方文档说明了细分的[日历共享权限](https://support.google.com/calendar/answer/37082?hl=en)，预约日程也能用选定的多个日历检查冲突。部分空闲检查能力需要符合条件的 Google Workspace 或 Google One 套餐，所以应用真正承载预约页的账户测试。
+当客户邀请、Meet、共享 Google 日历和浏览器使用构成日常工作时，Google Calendar 是实际的基础选择。Google 官方说明预约日程可[使用选定日历检查时间冲突](https://support.google.com/calendar/answer/16287054?hl=en)，并注明检查辅助日历需要符合条件的 Google Workspace 或 Google One 套餐，因此应使用真正承载预约页的账户测试。
 
 Google Tasks 可以显示在日历里，但事件和任务仍是不同对象。重复任务、定时任务、手机端完成以及共享日历中的可见性，都需要实际测试，不能假设它与专业任务工具完全一致。
 
@@ -66,7 +68,7 @@ Google Tasks 可以显示在日历里，但事件和任务仍是不同对象。�
 
 ### Fantastical：多服务商客户端，不是新的日历后端
 
-如果需要把 Google、iCloud、Microsoft 365 或 CalDAV 账户放入一个界面，并使用快速输入、Calendar Sets、任务与空闲分享，Fantastical 值得测试。它当前的 Windows 文档列出了账户类型和任务支持，[Flexibits 隐私 FAQ](https://flexibits.com/privacy/faq)则解释了哪些数据留在设备，以及 Openings、Apple Watch 同步等功能的例外。
+如果需要在 Windows 客户端中集中多个日历服务，Fantastical 值得测试。其官方设置文档列出 [iCloud、Google、Exchange、Microsoft 365 与 CalDAV 账号支持](https://flexibits.com/fantastical-windows/help/settings)，Windows FAQ 则把可编辑任务限定为 [Google Tasks、Microsoft 365 Tasks 与 Todoist](https://flexibits.com/fantastical-windows/faq)。应使用自己真实的日历与任务账号验证。
 
 关键边界是：Fantastical 通常操作服务商的数据。重复规则、任务、共享和同步的部分行为取决于服务商 API，不能用一个账户的结果概括全部账户。
 
