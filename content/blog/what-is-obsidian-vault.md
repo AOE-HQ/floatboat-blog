@@ -1,6 +1,6 @@
 ---
-title: "What Is an Obsidian Vault? Local Notes, Explained"
-description: "An Obsidian vault is a folder of Markdown notes on your device. Learn how vaults work, what they contain, how they differ from Notion, and why local files matter for AI."
+title: "What Is an Obsidian Vault? Files, Settings, and Boundaries"
+description: "An Obsidian vault is a local folder containing Markdown notes, attachments, and vault-specific settings. Learn what lives inside it, what local storage does and does not guarantee, and when to use one or several vaults."
 slug: "what-is-obsidian-vault"
 date: "2026-07-30"
 author: "Jade"
@@ -10,106 +10,76 @@ locale: "en"
 draft: false
 ---
 
-**TL;DR**
-  * An **Obsidian vault** is a folder of plain Markdown files on your device that Obsidian opens as a personal knowledge base — not a proprietary cloud database.
+An Obsidian vault is a folder on your local file system that Obsidian treats as a knowledge base. The notes are Markdown text files. Images, PDFs, and other attachments can sit beside them, while a hidden `.obsidian` folder stores settings that apply to that vault.
 
-  * Each vault can hold notes, attachments, and an .obsidian config folder for settings, plugins, and themes. You can run multiple vaults for separate life contexts.
+That plain definition is more useful than calling a vault a “second brain.” It tells you what you can back up, what another program can read, where plugins are configured, and which privacy claims the folder alone cannot support.
 
-  * Vaults emphasize **local ownership** , **bidirectional links** , and **open formats** , so notes remain readable in any text editor and usable by other tools.
+*Information checked October 13, 2026. Obsidian details below reflect its current public help and changelog.*
 
-  * A vault is **not** Notion, Apple Notes, or a sync service by itself. Optional Obsidian Sync and Publish are add-ons; the core app stays free and local-first.
+## The vault contract: your folder remains the source of truth
 
-  * For a practical guide to pairing that local folder with desktop agents, see [how to use Obsidian with an AI agent](/blog/how-to-use-obsidian-with-ai-agent).
+Obsidian’s [official data-storage guide](https://obsidian.md/help/data-storage) says notes are Markdown-formatted plain-text files in a local folder, including its subfolders. You can edit those files with another text editor or move them with a file manager; Obsidian watches for external changes and refreshes its view.
 
-## 1\. Why Vaults Matter Now
+This gives a vault three practical properties:
 
-### 1.1 Knowledge Work Needs a Durable Home
+- **Readable without Obsidian.** A `.md` note remains text if the app is unavailable.
+- **Addressable by path.** Backups, Git, scripts, and authorized desktop tools can work with the same files.
+- **Scoped as a unit.** Internal links, settings, themes, hotkeys, and community-plugin configuration belong to that vault.
 
-Most productivity apps treat notes as records inside a vendor database. That model is convenient until you need to leave the app, version the files, encrypt a disk, or let another program — including an AI agent — read the same corpus without export gymnastics. When notes live only behind a login and a proprietary schema, every new tool becomes another migration project.
+The folder model is why a vault pairs naturally with a [Markdown note-taking workflow](/blog/markdown-for-note-taking). Obsidian adds linking, backlinks, search, graph views, and plugins; it does not replace the underlying files with a proprietary note database.
 
-Obsidian took the opposite bet. Official help materials describe the product as a local-first knowledge base that stores notes as plain Markdown on your device, with optional sync and publishing rather than cloud lock-in as the default. The unit of that bet is the **vault** : a folder you control, opened by an editor that understands links, graphs, and plugins.
+## What actually lives inside a vault
 
-That design aged well for a reason AI made obvious. Language models and desktop agents work best on durable text files they can open, search, and rewrite with permission. A vault is already that shape — and [the day-to-day note-taking workflow built on those files](/blog/markdown-for-note-taking) is what turns the shape into a knowledge base. Understanding what a vault is — and what it is not — is the first step before you bolt chat plugins, clippers, or cross-app agents onto your notes.
+| Item | Typical format | What it does |
+|---|---|---|
+| Notes | `.md` | Stores the text, headings, links, and YAML properties you write |
+| Attachments | Images, PDFs, audio, and other files | Supplies media embedded or linked from notes |
+| Vault configuration | `.obsidian/` | Stores vault-specific preferences, hotkeys, themes, and plugin settings |
+| Canvases | `.canvas` | Stores spatial boards as structured files |
+| Bases | `.base` plus note properties | Saves database-like views over files without moving note data into a separate database |
 
-### 1.2 The Word "Vault" Is Literal
+The distinction in the last row matters. [Obsidian Bases](https://obsidian.md/help/bases) can display, sort, filter, and edit notes through tables, cards, lists, kanban boards, and maps. The note data still lives in local Markdown files and their properties; the `.base` file describes the view. A Base is therefore a lens over the vault, not a replacement for it.
 
-In Obsidian, "vault" is not marketing metaphor for "encrypted cloud." It is the name for **a directory on disk**. Create or open a vault and you are pointing Obsidian at a folder. Create a note and you create a .md file. Move the folder and you move the knowledge base. Delete Obsidian and the files remain.
+Attachments are also ordinary files. Where they land depends on your Files and Links settings, so a tidy-looking note can still depend on an attachment stored elsewhere in the vault. A backup that copies only `.md` files is not a complete vault backup.
 
-That literalism is the product's core promise and the source of most beginner confusion. People searching "what is an Obsidian vault" often expect a subscription tier or a special file type. They get a folder — and that is the point.
+## “Local” is a storage fact, not a complete privacy guarantee
 
-## 2\. Obsidian Vault Defined
+A local vault starts on your device, and Obsidian’s core app does not require you to upload it. That does **not** mean every workflow involving the vault stays local.
 
-### 2.1 The Core Definition
+- Obsidian Sync creates a remote vault when you choose to use it.
+- Dropbox, iCloud, OneDrive, Git remotes, or another sync service copy files under that service’s rules.
+- Community plugins may call external services.
+- An AI tool can send selected note content to a remote model even when the source file is local.
 
-An Obsidian vault is a local folder of Markdown notes (and related attachments) that the Obsidian app treats as one knowledge base. Inside the app you browse, link, search, and graph those files; on disk they remain ordinary files you can open in VS Code, commit with Git, back up with any sync tool you choose, or hand to another program that can read a directory.
+Obsidian states that Sync uses end-to-end encryption by default for remote vaults, while also making clear that it does not encrypt the local vault itself; local disk protection remains your responsibility. The details and limitations are documented in its [Sync security guide](https://obsidian.md/help/sync/security).
 
-According to <a href="<https://obsidian.md/help/obsidian>" rel="nofollow noopener">Obsidian's own about page</a>, the design centers on plain text you own, links as first-class citizens, and a toolkit you extend with plugins rather than a single prescribed workflow. The vault is the container that makes those principles concrete: one folder, one graph of notes, one set of settings living beside the content.
+So the accurate statement is: **you control the files and choose which services receive copies or content.** “Local-first” is not the same as “never leaves this computer.”
 
-### 2.2 Five Defining Properties
+## One vault or several?
 
-**Folder-as-database.** The vault is not a hidden binary store. Notes are files; folders are folders. Search, backups, and migrations work like any other document tree because they _are_ a document tree.
+Obsidian lets you open multiple folders as separate vaults. The best reason to split is a boundary that changes how the material should be handled:
 
-**Plain Markdown by default.** Formatting uses open Markdown conventions. You can edit in Obsidian's Live Preview or source mode, or step outside Obsidian entirely without losing the corpus.
+- work notes and personal journals have different access rules;
+- one client’s files must not be visible to another client’s plugins or automations;
+- a shared vault needs a different plugin set from a private research vault;
+- a large archive should stay closed during everyday work.
 
-**Bidirectional linking.** Typing [[Note name]] creates internal links. Backlinks and graph views surface relationships that folders alone cannot express — the "second brain" pattern Obsidian popularized for networked notes.
+Do not create nested vaults. Obsidian warns that internal links are local to a vault and may not update correctly when one vault sits inside another. If the only problem is topic clutter, folders, properties, tags, and Bases are usually cheaper than another vault. Split for trust or tooling boundaries, not merely because two subjects differ.
 
-**Per-vault configuration.** Settings, community plugins, themes, and hotkeys live in an .obsidian directory inside that vault. Switching vaults switches context cleanly; a work vault need not inherit personal journal plugins.
+## What a vault is not
 
-**Optional cloud, not mandatory cloud.** The core app does not require an account. <a href="<https://obsidian.md/pricing>" rel="nofollow noopener">Obsidian Sync and Publish</a> are paid add-ons for encrypted multi-device sync and public sites. Many users sync with iCloud, Syncthing, or Git instead.
+**It is not Obsidian Sync.** A vault exists without an account or paid service. Sync is an optional way to replicate it across devices.
 
-### 2.3 What an Obsidian Vault Is Not
+**It is not automatically encrypted.** The folder inherits the security of your device, disk, backups, and any services you connect.
 
-Boundary clarity prevents expensive tool mismatches.
+**It is not a hosted multiplayer workspace.** Files can be shared and synced, but the default model is not the same as a browser-first team database with page permissions and live comments.
 
-A vault is **not Notion**. Notion stores pages in a hosted workspace with databases, permissions, and a proprietary runtime. A vault stores files on your machine. Notion wins at multiplayer workspaces out of the box; a vault wins at ownership and portability.
+**It is not an AI system.** Plain files make agent access possible, but the model, permissions, and write-back policy come from whatever tool you add. The practical setup belongs in the separate guide to [using Obsidian with an AI agent](/blog/how-to-use-obsidian-with-ai-agent).
 
-A vault is **not Apple Notes or Google Keep**. Those apps optimize quick capture inside a vendor ecosystem. Obsidian vaults optimize durable, linkable Markdown you can keep for decades.
+## When the vault model is a good fit
 
-A vault is **not Obsidian Sync**. Sync is an optional encrypted service that can synchronize a vault across devices. The vault exists whether or not you buy Sync.
+Choose a vault when durable ownership, offline access, file-level backups, and tool interoperability matter more than effortless guest collaboration. It is especially strong for writers, researchers, consultants, and solo operators who want notes to outlast one app or subscription.
 
-A vault is **not an AI product**. Obsidian's official AI surface in recent years is primarily the Web Clipper's Interpreter, which lets you connect _your_ model providers when clipping pages — not a built-in chat subscription that rewrites your entire library. Deeper "chat with my vault" experiences usually come from community plugins or external desktop agents that read the same folder.
+Choose a hosted workspace first when the main job is real-time editing with people who will not install Obsidian, or when a team needs centralized permissions and administration more than local file control. Many people use both: a vault for private or long-lived thinking, and a hosted workspace for shared operations.
 
-## 3\. What Lives Inside a Vault
-
-Opening a vault in a file manager is the fastest way to demystify it. You typically see Markdown notes, asset folders for images and PDFs, and the hidden (or visible) .obsidian configuration directory. New notes create new files; renaming a note renames a file; moving notes between folders is filesystem work that Obsidian reflects in its sidebar.
-
-Attachments stay local unless you choose otherwise. That matters for privacy-minded operators: research PDFs, client screenshots, and voice memo exports can live next to the notes that reference them without uploading to a third-party note host. It also means disk space and backup discipline are your responsibility — a fair trade for ownership.
-
-Power features still sit on top of files. **Properties** (YAML frontmatter) add structured fields to notes — status, client, due date — that other views can filter. **Canvas** stores spatial layouts in open .canvas JSON so brainstorms remain portable. **Bases** , introduced as a core plugin in 2025, builds database-like table, card, list, and map views over note properties while keeping the underlying data in Markdown. None of these features convert the vault into a closed database; they add views and metadata on open formats. That matters when you later hand the same folder to a script, a Git repo, or an AI agent: the agent sees files and frontmatter, not a locked vendor schema.
-
-Daily practice varies widely. Some people run a single inbox note and process weekly. Others maintain dense Zettelkasten webs with hundreds of atomic notes. Both patterns still resolve to the same vault contract: if you can find the file in the folder, Obsidian can open it, and so can anything else you authorize. The app’s search, backlinks pane, and bookmarks are conveniences on top of that contract — not a second copy of your data.
-
-Multiple vaults are normal. Consultants often keep a client vault separate from a personal Zettelkasten. Researchers isolate lab notes from teaching materials. The cost is context switching; the benefit is blast-radius control when plugins, templates, or sharing policies differ. A useful rule of thumb: split vaults when trust boundaries or plugin stacks diverge, not merely when topic tags feel crowded. Tags and folders can separate topics inside one vault; separate vaults separate _worlds_.
-
-## 4\. How Vaults Compare to Related Concepts
-
-**Cloud knowledge bases (Notion, Coda, Craft).** These tools excel when teams co-edit online and need permissions, comments, and hosted databases. Vaults excel when a single operator (or a small group syncing files) wants offline speed, Git-friendly history, and zero format lock-in. Many people use both: Notion for team pages, a vault for private thinking.
-
-**Other local Markdown apps (Logseq, Foam, Typora + folders).** Several apps share the "folder of Markdown" idea. Obsidian's differentiators are the mature plugin ecosystem, graph and backlink UX, and commercial polish across desktop and mobile — not the invention of local text files.
-
-**File sync folders (Dropbox, iCloud Drive, Google Drive Desktop).** Sync clients move bytes; they do not provide link autocomplete, graph view, or a note-centric editor. A vault can _live inside_ a synced folder, but sync alone is not a knowledge base.
-
-**Desktop AI agents that read folders.** As of 2026, a growing class of tools treats a local directory as working memory for multi-step tasks — meeting briefs, project drafts, file cleanup. A vault is an especially good directory for that pattern because notes are already text, linked, and human-curated — which is why the same folder is the natural starting point for [an LLM knowledge base](/blog/llm-knowledge-base-solo-operators), should your material ever justify one. That pairing is a workflow choice, not a feature Obsidian must ship itself; we walk through the practical setup in our companion guide on using Obsidian with an AI agent.
-
-## 5\. Who Should Use a Vault — and Who Should Not
-
-Vaults fit operators who care about **long-term ownership** of notes: writers, researchers, consultants, and solo founders who expect their knowledge base to outlive any single app subscription. They also fit people who already think in folders and Markdown, or who want Git-backed history for important writing. If you have ever lost years of notes to a shutdown SaaS product, the vault model’s appeal is emotional as well as technical — the failure mode is “I still have the folder,” not “I hope the export still works.”
-
-Vaults are a weaker default when your primary need is **realtime multiplayer editing** with guests who will never install Obsidian, or when you refuse any local filesystem management and want everything behind a single SaaS login. Mobile capture works on iOS and Android, but heavy vault maintenance still feels most natural on desktop for large corpora. Shared publishing is possible through Obsidian Publish or by exporting selected notes, yet that is a deliberate publish step — not the default collaboration surface Notion users expect.
-
-Onboarding friction is real. Linking, plugins, and templates can overwhelm in the first week. The antidote is small scope: one vault, daily notes, a handful of project pages, and links only when two ideas actually need each other. Feature tourism — installing twenty community plugins before you have a writing habit — is the most common way people abandon an otherwise good vault.
-
-Pricing shape is unusually clear for the category. The <a href="<https://obsidian.md/>" rel="nofollow noopener">core Obsidian app</a> is free for personal and commercial use as of 2026; you pay only if you want official Sync, Publish, Catalyst early access, or an optional commercial support license. That model means "try a vault" has almost no financial barrier — only the learning curve of linking notes instead of dumping them into one infinite scroll.
-
-## 6\. What's Next for Local Knowledge Bases
-
-Local Markdown is no longer a niche protest against cloud docs. It is becoming the interchange format between human note-taking and machine execution. Obsidian's roadmap in 2025–2026 expanded Bases, Web Clipper tooling, CLI automation, and sync headless clients — infrastructure that makes vaults easier to query and operate without abandoning plain files.
-
-The market split looks durable: hosted collaborative workspaces on one side, local-first personal knowledge graphs on the other, with agents and clippers bridging both. Vaults will not replace Slack or shared Notion wikis. They remain the personal layer where thinking compounds — and, increasingly, the folder agents are allowed to read when you want work done from notes you already trust.
-
-## Conclusion
-
-An Obsidian vault is simply a folder of Markdown notes that Obsidian opens as a linked knowledge base. Its power is mundane on purpose: open formats, local control, links and graphs on top of files you already understand. It is not a cloud workspace, not a sync plan, and not an AI subscription — it is the durable home for notes that other tools, including AI agents, can meet on your disk.
-
-If you need the definition, start a vault and open the folder beside the app. If you need the next step — using those notes across calendar, email, and project files without living only inside Obsidian — continue with the how-to guide linked above.
-
+The shortest useful definition is still the best one: an Obsidian vault is a local folder of notes and supporting files, with Obsidian-specific capabilities layered on top. Once you understand the folder, the rest of the product becomes easier to reason about.

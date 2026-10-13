@@ -1,25 +1,77 @@
 {
   "pages": {
-    "/blog/what-is-gemini-agent": {"items": [
-      {"question":"What is Gemini Agent?","answer":"Gemini Agent is Google's cloud-based universal work agent. It accepts objectives, plans multi-step work, uses connected business tools, coordinates subagents, and returns finished work rather than only a chat response."},
-      {"question":"Is Gemini Agent a new Gemini model?","answer":"No. Google separates the agent from the model beneath it. The agent holds context, tools, memory, permissions, and workflows, while steps can be routed across Gemini and Anthropic Claude models."},
-      {"question":"How is Gemini Agent different from the Gemini app?","answer":"The Gemini app is primarily a personal assistant and interactive surface. The new work agent is designed for persistent enterprise execution, shared business context, subagent orchestration, governed identities, and audit controls."},
-      {"question":"Can Gemini Agent use Claude?","answer":"Google says the work agent can currently orchestrate Gemini-family and Anthropic Claude models, with other private and open models planned. Availability may depend on the enterprise preview and administrator configuration."},
-      {"question":"Can Gemini Agent keep working after I close my laptop?","answer":"Yes, according to Google's announced design. It runs in Google Cloud, so long tasks can continue for hours or days and be resumed from another supported device or channel."},
-      {"question":"What are Gemini coworker agents?","answer":"Coworker agents are persistent agents with defined roles, scoped context, storage, and dedicated company identities. Temporary subagents are created for one job and coordinated in parallel or sequence."},
-      {"question":"Which apps can Gemini Agent connect to?","answer":"Google announced Workspace, Microsoft 365, Teams, Slack, Git, Jira, Salesforce, ServiceNow, several data platforms, desktop files, and MCP tools. Exact availability can vary during preview."},
-      {"question":"Is Gemini Agent generally available and how much does it cost?","answer":"The October 2026 universal work agent launched in private preview for selected enterprise customers. Google has not announced a simple standalone consumer price or broad consumer release date."}
-    ]},
-    "/zh/blog/what-is-gemini-agent": {"items": [
-      {"question":"Gemini Agent 是什么？","answer":"Gemini Agent 是 Google 构建在云端的通用工作 Agent。它接收目标后可以规划和执行多步骤任务、调用企业工具、协调子 Agent，并交付完成的工作结果。"},
-      {"question":"Gemini Agent 是新的 Gemini 模型吗？","answer":"不是。Google 明确把 Agent 与底层模型分开：Agent 保存上下文、记忆、工具、权限和工作流，具体步骤则可以交给 Gemini 或 Anthropic Claude 模型。"},
-      {"question":"Gemini Agent 和 Gemini App 有什么区别？","answer":"Gemini App 主要是个人助手与交互入口；新的工作 Agent 面向持久企业任务、共享业务上下文、多 Agent 编排、身份治理和审计控制。"},
-      {"question":"Gemini Agent 可以调用 Claude 吗？","answer":"可以。Google 表示目前能在 Gemini 系列和 Anthropic Claude 模型之间调度，未来还计划接入其他私有模型和开放模型。实际范围取决于企业私测与管理员配置。"},
-      {"question":"关掉电脑后 Gemini Agent 还会继续工作吗？","answer":"按照 Google 公布的架构，可以。它运行在 Google Cloud，耗时数小时或数天的任务可以在设备关闭后继续，并从其他受支持入口恢复。"},
-      {"question":"Gemini 的 coworker agents 是什么？","answer":"它们是拥有固定职责、限定上下文、独立存储和企业身份的长期 Agent。临时子 Agent 则只为某个任务创建，可按顺序或并行协作。"},
-      {"question":"Gemini Agent 可以连接哪些应用？","answer":"Google 公布的范围包括 Workspace、Microsoft 365、Teams、Slack、Git、Jira、Salesforce、ServiceNow、多种数据平台、本地文件和 MCP 工具。私测阶段的具体可用项可能不同。"},
-      {"question":"Gemini Agent 已经全面开放了吗？价格是多少？","answer":"2026 年 10 月发布的通用工作 Agent 目前面向部分企业客户私测。Google 尚未公布简单的个人订阅价格，也没有给出消费端全面开放日期。"}
-    ]},
+    "/blog/what-is-gemini-agent": {
+      "items": [
+        {
+          "question": "What is Gemini Agent?",
+          "answer": "Gemini Agent is Google's cloud-based universal work agent. It accepts objectives, plans multi-step work, uses connected business tools, coordinates subagents, and returns finished work rather than only a chat response."
+        },
+        {
+          "question": "Is Gemini Agent a new Gemini model?",
+          "answer": "No. Google separates the agent from the model beneath it. The agent holds context, tools, memory, permissions, and workflows, while steps can be routed across Gemini and Anthropic Claude models."
+        },
+        {
+          "question": "How is Gemini Agent different from the Gemini app?",
+          "answer": "The Gemini app is primarily a personal assistant and interactive surface. The new work agent is designed for persistent enterprise execution, shared business context, subagent orchestration, governed identities, and audit controls."
+        },
+        {
+          "question": "Can Gemini Agent use Claude?",
+          "answer": "Google says the work agent can currently orchestrate Gemini-family and Anthropic Claude models, with other private and open models planned. Availability may depend on the enterprise preview and administrator configuration."
+        },
+        {
+          "question": "Can Gemini Agent keep working after I close my laptop?",
+          "answer": "Yes, according to Google's announced design. It runs in Google Cloud, so long tasks can continue for hours or days and be resumed from another supported device or channel."
+        },
+        {
+          "question": "What are Gemini coworker agents?",
+          "answer": "Coworker agents are persistent agents with defined roles, scoped context, storage, and dedicated company identities. Temporary subagents are created for one job and coordinated in parallel or sequence."
+        },
+        {
+          "question": "Which apps can Gemini Agent connect to?",
+          "answer": "Google announced Workspace, Microsoft 365, Teams, Slack, Git, Jira, Salesforce, ServiceNow, several data platforms, desktop files, and MCP tools. Exact availability can vary during preview."
+        },
+        {
+          "question": "Is Gemini Agent generally available and how much does it cost?",
+          "answer": "The October 2026 universal work agent launched in private preview for selected enterprise customers. Google has not announced a simple standalone consumer price or broad consumer release date."
+        }
+      ]
+    },
+    "/zh/blog/what-is-gemini-agent": {
+      "items": [
+        {
+          "question": "Gemini Agent 是什么？",
+          "answer": "Gemini Agent 是 Google 构建在云端的通用工作 Agent。它接收目标后可以规划和执行多步骤任务、调用企业工具、协调子 Agent，并交付完成的工作结果。"
+        },
+        {
+          "question": "Gemini Agent 是新的 Gemini 模型吗？",
+          "answer": "不是。Google 明确把 Agent 与底层模型分开：Agent 保存上下文、记忆、工具、权限和工作流，具体步骤则可以交给 Gemini 或 Anthropic Claude 模型。"
+        },
+        {
+          "question": "Gemini Agent 和 Gemini App 有什么区别？",
+          "answer": "Gemini App 主要是个人助手与交互入口；新的工作 Agent 面向持久企业任务、共享业务上下文、多 Agent 编排、身份治理和审计控制。"
+        },
+        {
+          "question": "Gemini Agent 可以调用 Claude 吗？",
+          "answer": "可以。Google 表示目前能在 Gemini 系列和 Anthropic Claude 模型之间调度，未来还计划接入其他私有模型和开放模型。实际范围取决于企业私测与管理员配置。"
+        },
+        {
+          "question": "关掉电脑后 Gemini Agent 还会继续工作吗？",
+          "answer": "按照 Google 公布的架构，可以。它运行在 Google Cloud，耗时数小时或数天的任务可以在设备关闭后继续，并从其他受支持入口恢复。"
+        },
+        {
+          "question": "Gemini 的 coworker agents 是什么？",
+          "answer": "它们是拥有固定职责、限定上下文、独立存储和企业身份的长期 Agent。临时子 Agent 则只为某个任务创建，可按顺序或并行协作。"
+        },
+        {
+          "question": "Gemini Agent 可以连接哪些应用？",
+          "answer": "Google 公布的范围包括 Workspace、Microsoft 365、Teams、Slack、Git、Jira、Salesforce、ServiceNow、多种数据平台、本地文件和 MCP 工具。私测阶段的具体可用项可能不同。"
+        },
+        {
+          "question": "Gemini Agent 已经全面开放了吗？价格是多少？",
+          "answer": "2026 年 10 月发布的通用工作 Agent 目前面向部分企业客户私测。Google 尚未公布简单的个人订阅价格，也没有给出消费端全面开放日期。"
+        }
+      ]
+    },
     "/blog/gpt-6-1-sol": {
       "items": [
         {
@@ -384,7 +436,7 @@
       "items": [
         {
           "question": "Do AI agents actually save time in real-world work?",
-      "answer": "They can, but measure the complete workflow, including setup and review. Establish a baseline, then track accepted outputs, correction time, errors, recovery, cost, and time to a verified result."
+          "answer": "They can, but measure the complete workflow, including setup and review. Establish a baseline, then track accepted outputs, correction time, errors, recovery, cost, and time to a verified result."
         },
         {
           "question": "What exactly is an AI agent?",
@@ -392,19 +444,19 @@
         },
         {
           "question": "Do I need to know how to code to use AI agents?",
-      "answer": "Not for every use case. Many products provide visual or natural-language setup, but reliable deployment still requires someone to define tools, permissions, acceptance tests, failure handling, and ownership."
+          "answer": "Not for every use case. Many products provide visual or natural-language setup, but reliable deployment still requires someone to define tools, permissions, acceptance tests, failure handling, and ownership."
         },
         {
           "question": "How is this different from just using ChatGPT?",
-      "answer": "A chat response primarily returns a message. An Agent can continue through a tool loop: inspect state, act, observe, verify, and continue or pause. The surrounding Harness and permissions determine whether that loop is reliable."
+          "answer": "A chat response primarily returns a message. An Agent can continue through a tool loop: inspect state, act, observe, verify, and continue or pause. The surrounding Harness and permissions determine whether that loop is reliable."
         },
         {
           "question": "Where do AI agents still fall short?",
-      "answer": "Agents struggle when goals are implicit, tool state is ambiguous, success is subjective, or errors have irreversible consequences. Keep accountable human review before external, financial, legal, hiring, access-control, or production actions."
+          "answer": "Agents struggle when goals are implicit, tool state is ambiguous, success is subjective, or errors have irreversible consequences. Keep accountable human review before external, financial, legal, hiring, access-control, or production actions."
         },
         {
           "question": "What should I expect when I start using AI agents?",
-      "answer": "Start with a bounded read-only or draft-only pilot. Test representative and failure cases, record tool calls and approvals, compare with a baseline, and expand one permission only after the previous boundary is reliable."
+          "answer": "Start with a bounded read-only or draft-only pilot. Test representative and failure cases, record tool calls and approvals, compare with a baseline, and expand one permission only after the previous boundary is reliable."
         }
       ]
     },
@@ -803,28 +855,36 @@
     "/blog/ai-meeting-preparation": {
       "items": [
         {
+          "question": "What is AI meeting preparation?",
+          "answer": "It is a pre-meeting workflow that uses an event to locate authorized evidence, identify open commitments and conflicts, and produce a reviewable decision brief before the call starts."
+        },
+        {
           "question": "How is AI meeting prep different from an AI note-taker?",
-          "answer": "Note-takers like Fireflies, Otter, and Fathom work inside the meeting — they transcribe, summarize, and extract action items after the conversation starts. AI meeting prep works before it: gathering who is attending and why, surfacing relevant documents, generating a one-page brief, and carrying over unfinished action items. They are complementary, not competitors — last meeting's notes become the next meeting's prep context."
+          "answer": "Meeting prep works before the meeting and assembles context for decisions. A note-taker captures what happens during or after the meeting; its confirmed output can become evidence for the next preparation cycle."
         },
         {
-          "question": "Which meetings does automated prep help the most?",
-          "answer": "Recurring meetings deliver the highest return — weekly standups, monthly client check-ins, quarterly reviews — because the format repeats while the content changes. But any meeting whose context is scattered across email, documents, and notes benefits too: client calls about proposals, product reviews, and weekly planning sessions. The article also shows how the same pipeline adapts to a first meeting with a new prospect."
+          "question": "What should an AI meeting brief contain?",
+          "answer": "Include purpose, relevant attendees and roles, last decisions, open commitments, source links, decision questions, conflicts or missing information, and placeholders for owners and due dates."
         },
         {
-          "question": "Why use a calendar-driven AI instead of asking a chat AI to prep?",
-          "answer": "A chat-based workflow only runs if you remember to open the tool, gather the inputs, and ask — and when you have eight meetings in a day, that memory fails. A calendar-driven system is triggered by the calendar event itself: thirty minutes before the call, context is gathered, documents surfaced, and the brief generated, whether you asked or not. It removes the remembering burden entirely, so even meetings with no buffer start prepared."
+          "question": "Can AI prepare for a meeting from the calendar invite alone?",
+          "answer": "Usually not. An invite supplies routing signals such as people, time, description, and attachments, but reliable preparation requires authorized source documents, prior decisions, and current project records."
         },
         {
-          "question": "Can automated prep handle confidential meetings?",
-          "answer": "Yes, with the right setup. To trigger prep, the system reads calendar event metadata — title, attendees, time — and uses email and document sources to gather context. For confidential meetings, materials are assembled locally rather than uploaded to a cloud service: the system processes data where it lives. If local processing is a hard requirement, verify the tool supports on-device AI, not cloud-only processing."
+          "question": "How should permissions work in AI meeting preparation?",
+          "answer": "Retrieval should follow the brief recipient's existing access. If a linked file cannot be opened, the workflow should disclose the missing source rather than infer its contents or expand sharing automatically."
         },
         {
-          "question": "What do I need to connect to set this up?",
-          "answer": "The minimum is calendar access, so the system can see upcoming events and trigger prep. For full context gathering, add email and at least one document source such as Google Drive, Notion, Dropbox, or local files; a task manager adds action item carry-over. Connections must stay live, not be imported once. Most systems also let you scope access to specific labels, folders, and calendars rather than granting blanket access."
+          "question": "How can AI handle conflicting meeting information?",
+          "answer": "Label evidence as confirmed, reported, or conflicting; preserve its source and timestamp; and place unresolved conflicts on the decision agenda instead of silently choosing one statement."
         },
         {
-          "question": "Does automated prep mean I stop preparing?",
-          "answer": "No — automation covers the assembly work, while the judgment stays yours. The brief is a starting point, not a script: you still review it, adjust the emphasis, and decide what to prioritize in the minutes before the meeting. What changes is that a 60-second scan replaces the ten minutes you used to spend hunting down the materials the brief summarizes."
+          "question": "Should meeting briefs be generated automatically?",
+          "answer": "Automatic drafting can work for low-risk, repeatable meetings, but distribution and consequential actions should require review. Sensitive meetings or events without adequate sources should start manually or request clarification."
+        },
+        {
+          "question": "How do I evaluate an AI meeting-prep workflow?",
+          "answer": "Pilot it on real low-risk meetings and measure preparation time, citation accuracy, missed commitments, stale or false claims, permission failures, and whether the brief improved the decisions or questions in the meeting."
         }
       ]
     },
@@ -1483,28 +1543,36 @@
     "/blog/calendar-driven-ai-vs-chat-ai": {
       "items": [
         {
-          "question": "Which is better: calendar-driven AI or chat-based AI?",
-          "answer": "Neither is universally better — the two paradigms answer to different triggers. Chat-based AI is built for open-ended, on-demand work: brainstorming, deep research, debugging something unfamiliar. Calendar-driven AI is built for schedule-bound work: recurring meetings, client calls, deadlines, and the preparation and follow-up around them. The practical question is not which paradigm is smarter, but which one fits the work in front of you — and for most people, the honest answer is both."
+          "question": "What is calendar-driven AI?",
+          "answer": "It is an AI workflow whose eligibility and timing come from a dated event, deadline, or recurrence rule. The event can route context and start a bounded task without a fresh chat prompt."
         },
         {
-          "question": "Can I use both paradigms together?",
-          "answer": "Yes, and this is likely how most people will end up working. Use calendar-driven AI for recurring, schedule-bound work — meeting preparation, follow-up, deadline tracking — because it doesn't depend on your memory or initiative. Use chat-based AI for ad-hoc, exploratory work like research, brainstorming, and drafting, where its flexibility and conversational depth shine. They serve different parts of the workflow; choosing only one means over-serving half your tasks and under-serving the other half."
+          "question": "How is calendar-driven AI different from chat-based AI?",
+          "answer": "Chat starts when a person asks and supports evolving instructions. Calendar-driven work starts when a time rule is met and is better for stable recurring jobs with known sources, outputs, and exception owners."
         },
         {
-          "question": "Is calendar-driven AI just scheduled prompts?",
-          "answer": "No. A scheduled prompt runs the same instruction at the same time regardless of context — \"Every Monday at 9am, summarize my calendar\" does the identical task every week. Calendar-driven AI starts from the specific event and adapts: the attendees, your history with that client, related documents, and the inferred event type all shape what it does. A first call with a new prospect triggers different preparation than a renewal conversation with an existing client. The event provides the trigger; the AI decides the work from the event's meaning."
+          "question": "Is scheduled AI automatically an AI agent?",
+          "answer": "No. A scheduled reminder or fixed prompt may have no reasoning, tools, or recovery behavior. Agentic scheduling additionally requires context selection, bounded actions, observable failures, and an escalation path."
         },
         {
-          "question": "Isn't calendar-driven AI just an AI assistant that can access your calendar?",
-          "answer": "No. An assistant that merely reads your calendar is still chat-based: you open it, prompt it, and it responds. Calendar-driven AI is an architectural choice — the calendar becomes the execution environment, events act as prompts, and time acts as the trigger, so preparation and follow-up happen without you initiating. That is why the article calls it a runtime rather than a feature: the system pushes assembled work to you instead of waiting for you to pull it."
+          "question": "When should I use chat instead of a calendar trigger?",
+          "answer": "Use chat for novel, ambiguous, sensitive, or judgment-heavy work where instructions change during execution and a person needs to inspect intermediate steps."
         },
         {
-          "question": "Why can't chat-based AI handle recurring, deadline-driven work?",
-          "answer": "Because it acts only when prompted and has no sense of time across sessions. It won't assemble a brief before your 9am meeting or chase an action item after a deadline unless you reopen the window and ask. Each session starts from zero context, so recurring work means re-explaining the background every time — the human becomes the integration layer. Its strengths, flexibility, and depth for exploration come precisely from not carrying schedule awareness."
+          "question": "When is a calendar trigger the better choice?",
+          "answer": "Use it when timing is part of the task specification, the job repeats, sources and output are stable, late or missing results are detectable, and someone owns exceptions."
         },
         {
-          "question": "Which paradigm should a solo founder or freelancer choose?",
-          "answer": "It depends on the mix of work, not the person. Solo founders typically run both kinds: scheduled, recurring items like client calls, investor updates, and weekly planning, alongside unscheduled exploration like strategy, market research, and content. Calendar-driven AI fits the first category; chat-based AI fits the second. The setup that works best usually combines them, so scheduled work doesn't slip through the cracks while open-ended thinking keeps a flexible surface."
+          "question": "What can go wrong with calendar-driven AI?",
+          "answer": "Wrong eligibility rules, duplicate events, timezone changes, stale templates, revoked connectors, and silent repeat failures can compound. Every workflow needs run history, source logs, retry rules, and a pause control."
+        },
+        {
+          "question": "Can calendar-driven and chat-based AI work together?",
+          "answer": "Yes. Let the calendar create a bounded draft, then let the user open a conversation to question, revise, or approve it. Confirmed results can return to the project or next event."
+        },
+        {
+          "question": "How should I calculate the cost of scheduled AI?",
+          "answer": "Multiply eligible runs by retrieval, model, tool, and review cost, then compare that with time saved on artifacts people actually use. Track false triggers and unopened outputs, not only token price."
         }
       ]
     },
@@ -1567,28 +1635,36 @@
     "/blog/claude-code-vs-cowork-vs-tag": {
       "items": [
         {
-          "question": "Which should I use — Claude Code, Cowork, or Tag?",
-          "answer": "Match the product form to the job and its horizon. Choose Claude Code when the work is a repository: code, tests, and diffs one engineer runs locally for about an hour. Choose Claude Cowork when the object is your files, folders, and connected apps as a single knowledge worker. Choose Claude Tag when the work is already owned by a Slack channel — multiplayer, hours long, and worth an agent that can schedule its own follow-up. Minute-scale questions still belong in chat."
+          "question": "What is the main difference between Claude Code, Cowork, and Tag?",
+          "answer": "Claude Code works from a repository, Cowork works across a person's files and connected apps, and Tag works in shared Slack context. Choose the surface that matches the task's source of truth and reviewer."
         },
         {
-          "question": "What's the real difference between the three?",
-          "answer": "It is not model quality; it is product form. All three run the same agent loop — plan, tools, long-running execution — aimed at different objects. Code is single-player and scoped to one engineer's repository. Cowork is the same single-player local loop aimed at files and connectors. Tag is the first multiplayer form: one Claude per channel, visible to everyone there, asynchronous, with memory that outlives the session and organization-level billing. Code and Cowork share a rung; Tag is the next one."
+          "question": "When should I use Claude Code?",
+          "answer": "Use Claude Code when repository source, tests, diffs, and engineering review define whether the work is complete."
         },
         {
-          "question": "Is Claude Cowork just a lighter Claude Code?",
-          "answer": "No — and mistaking it for one leads to the wrong purchase. Cowork is Claude Code with a different object: a consultant reorganizing folders and building decks is not an engineer shipping to a repository. Its file-and-connector scope is the point, not a limitation. Both are local, single-player, and user-initiated; neither is a half-step toward Tag. Pick by whether the work lives in a repo or in documents and connected apps."
+          "question": "When should I use Claude Cowork?",
+          "answer": "Use Cowork when one owner needs Claude to carry a multi-step knowledge-work task across documents, files, and approved connectors."
         },
         {
-          "question": "Is Claude Tag just Claude Code with Slack notifications?",
-          "answer": "No. A notification layer does not make a coworker. Tag separates itself only when three migrations happen together: single-player to multiplayer (the thread is the prompt and anyone can continue it), pull to push (it watches and picks work up without being asked), and synchronous turns to asynchronous, long-horizon work with self-scheduled check-ins. It is also not Slack AI, which reads the workspace; Tag executes across connected tools and writes back to the thread."
+          "question": "When should I use Claude Tag?",
+          "answer": "Use Tag when the task belongs to a team channel and the useful context, review, and handoff should remain visible in Slack."
         },
         {
-          "question": "When does an async coworker make sense over a local agent?",
-          "answer": "When the job's horizon exceeds about an hour and collaboration is the bottleneck. A local agent fits roughly an hour of work beside you; an async coworker earns its place once the model can run for hours and schedule its own later check-in. That requires three conditions to actually hold: long-horizon autonomy, inspectable memory, and judgment about when to act. Its first jobs are dense in collaboration and raw context — public incidents, launch channels, escalations."
+          "question": "Is Claude Cowork still a separate mode?",
+          "answer": "It depends on the current Claude app experience. Anthropic has been moving capabilities into a more unified Claude interface, so check the product surface available to your account rather than relying on an older label."
         },
         {
-          "question": "Why is Claude Tag harder to adopt than Code or Cowork?",
-          "answer": "Two gates, both about context. Cost: a channel is asynchronous, so the cache prefix that keeps 1:1 sessions cheap is often gone — a small team treating a frontier coworker as free labor can burn five figures a month. Permissions: a coworker that cannot see the work cannot do it, and one that sees everything is a liability; channel-scoped identities and admin-provisioned tools are still not a finished identity system. Small, transparent tech companies clear both gates first."
+          "question": "Can the three Claude surfaces be combined?",
+          "answer": "Yes. A team can coordinate in Tag, do document-heavy preparation in Cowork, and hand repository changes to Claude Code, provided ownership and review stay explicit."
+        },
+        {
+          "question": "How do future or scheduled tasks differ across Cowork and Tag?",
+          "answer": "Anthropic says Tag can plan future work and schedule tasks for itself after a person delegates in Slack. Cowork's cloud or scheduled work remains distinct from local-file access, which depends on an authorized desktop connection."
+        },
+        {
+          "question": "What is the safest way to adopt these Claude agents?",
+          "answer": "Pilot one reversible workflow with limited permissions, a named reviewer, clear completion criteria, and an audit trail before expanding access."
         }
       ]
     },
@@ -1703,56 +1779,72 @@
     "/blog/context-engineering-for-ai-agents": {
       "items": [
         {
-          "question": "Isn't \"Context Engineering\" just a new buzzword for prompt engineering, RAG, and knowledge management?",
-          "answer": "Those are tools that serve Context, not substitutes for it. Prompt engineering writes the instruction, RAG retrieves the document, and knowledge management organizes the wiki. Context Engineering decides what the agent needs to know across all four layers and how that information stays current — it is the architecture layer that coordinates the others. The term is new because the problem it names only became legible once models and harnesses matured enough to expose it as the bottleneck."
+          "question": "What is context engineering for AI agents?",
+          "answer": "It is the design of the instructions, tools, retrieved evidence, task state, environment data, and memory available when an agent makes a decision."
         },
         {
-          "question": "If models keep improving, why will Context Engineering still matter?",
-          "answer": "Because models absorb capability, not Context. Reasoning, tool use, and longer windows get absorbed into the model over time, but your specific facts do not. A stronger model cannot infer what you decided in a client call last Tuesday unless that information was captured, structured, and delivered. In fact, each upgrade makes missing Context more visible: the smarter the agent, the clearer that it does not know your situation."
+          "question": "How is context engineering different from prompt engineering?",
+          "answer": "Prompt engineering focuses on how a request is expressed. Context engineering also decides which evidence and tools are available, how permissions apply, what persists, and how state is compacted across a multi-step run."
         },
         {
-          "question": "If I switch models or agent frameworks, does my Context investment disappear?",
-          "answer": "If your Context lives in a single product's proprietary format, yes — migration is painful. That is a risk for users and a reason to prefer products that store Context in accessible, structured forms. But Context depth is inherently sticky: even when you can technically export meeting history and project documents, restructuring them for a new agent takes real work. Treat Context portability as a feature to evaluate, not an afterthought."
+          "question": "Does a larger context window always improve an agent?",
+          "answer": "No. Stale plans, similar records, overlapping tools, and untrusted instructions can crowd out relevant evidence. The goal is decision-relevant precision, not maximum token volume."
         },
         {
-          "question": "Does this apply only to complex multi-agent setups, or to simple use cases too?",
-          "answer": "Context matters more, not less, when the agent operates in a narrow domain. A general-purpose agent can get away with vague Context because its output is broad and can be refined in conversation. A calendar-driven agent preparing you for a specific meeting with a specific client needs precise Context — wrong or missing Context produces errors that are immediately visible and costly. The narrower the task, the higher the Context fidelity required."
+          "question": "What belongs in an agent's context?",
+          "answer": "Include stable policy, current task state, clear tool contracts, minimal authoritative evidence, temporary working memory, and only the durable memories whose provenance and lifecycle are defined."
         },
         {
-          "question": "How does Context accumulate without becoming a second job?",
-          "answer": "It has to arrive passively, as a side effect of normal work, because manual curation demands sustained user discipline and fails at scale. That is why calendar-driven architecture is the natural vehicle: events, attachments, and recurrence patterns enter automatically and stay ordered by time. File systems, email, version control, and project trackers can play the same role. The goal is Context captured before the user polishes or forgets it."
+          "question": "How should an agent handle retrieved documents?",
+          "answer": "Treat retrieved text as data, preserve source and timestamp, filter by identity and permissions, rank authoritative records first, expose conflicts, and prevent document instructions from overriding system policy."
         },
         {
-          "question": "Does every agent need to be calendar-driven?",
-          "answer": "No. The calendar is the densest, most natural source of Environmental Context, but it is not the only one — file systems, email, version control, and project trackers all carry it. The principle is to prefer tools that observe your actual activity over tools that wait for you to narrate it. For most solopreneurs the richest signal lives in the calendar, inbox, and meeting history, which is why calendar-driven agents have a structural head start."
+          "question": "What is context compaction?",
+          "answer": "It is the replacement of long histories with smaller structured state. Good compaction preserves decisions, commitments, owners, deadlines, evidence links, attempted actions, and unresolved conflicts."
+        },
+        {
+          "question": "What should become durable agent memory?",
+          "answer": "Persist only information that remains useful across sessions and has an owner, provenance, confirmation rule, expiry or review date, and deletion path. Temporary hypotheses should expire with the task."
+        },
+        {
+          "question": "How do I evaluate context engineering?",
+          "answer": "Test missing, stale, conflicting, malicious, and permission-restricted inputs. Measure source precision, missing evidence, unauthorized retrieval, unsupported claims, tool-selection errors, recovery, and context cost per accepted task."
         }
       ]
     },
     "/blog/cordis-plugin-framework": {
       "items": [
         {
-          "question": "Is Cordis a DeepSeek product?",
-          "answer": "No. Cordis is an independent open-source meta-framework created by the developer shigma, and it has been the foundation of the Koishi chatbot framework for four years. DeepSeek Harness is built on Cordis, which is why it appears in DeepSeek's architecture documentation."
+          "question": "What is Cordis?",
+          "answer": "Cordis is the vendored framework DeepSeek Harness uses to compose plugins, contexts, services, dependency injection, effects, and events."
         },
         {
-          "question": "What is a meta-framework?",
-          "answer": "A framework for building frameworks. Instead of providing APIs for a specific domain (like chatbots or web servers), Cordis provides the fundamental mechanisms for plugin systems, dependency management, and resource lifecycle control. The name comes from the Latin _cor_ , meaning \"heart.\""
+          "question": "Why does DeepSeek Harness use Cordis?",
+          "answer": "Cordis gives Harness replaceable modules and explicit lifecycle control, so tools and services can be mounted, waited on, reloaded, and cleaned up predictably."
         },
         {
-          "question": "What does \"spatiotemporal composability\" mean?",
-          "answer": "It is the paper's term for two properties a dynamic system needs: temporal composability (a component's side effects can be fully reverted when it is removed) and spatial composability (components can declare dependencies that the runtime manages reactively). Together they make plugin systems safe to reload and evolve."
+          "question": "What is a Cordis Context?",
+          "answer": "A Context is the container through which a plugin accesses services, registers behavior, and scopes resources to a lifecycle."
         },
         {
-          "question": "How does Cordis clean up plugin side effects?",
-          "answer": "Through ctx.effect. Every side-effect-producing call returns a cleanup function, which the runtime stores and executes in reverse registration order when the plugin unloads. This is analogous to RAII in C++ or Drop in Rust, but handled at the runtime level so third-party plugins unload cleanly too."
+          "question": "How does dependency injection work in Cordis?",
+          "answer": "Plugins declare the services they require with injection rules. Cordis waits for those services and activates or deactivates dependent behavior as availability changes."
         },
         {
-          "question": "What are the four preset modes in DeepSeek Harness?",
-          "answer": "DeepSeek ships four presets. Standard is the full coding agent with filesystem, shell, web search, subagents, and plan mode. Code lets model-generated code orchestrate multiple tool-call rounds. Minimal — only bash and a file editor — is the configuration DeepSeek used for its own official benchmarks. Creator is for building custom presets with runtime inspection and preset-authoring guidance."
+          "question": "What are reversible effects in Cordis?",
+          "answer": "Effects pair a side effect with a disposer. When a plugin unloads or its context ends, Cordis runs cleanup so listeners, timers, and other resources do not leak."
         },
         {
-          "question": "Why does reversibility matter for AI agents specifically?",
-          "answer": "An agent that can modify its own runtime — add tools, change its loop, evolve its workflow — is only safe to trust if every change can be rolled back. Reversible effects are the mechanism that makes self-modifying agents an engineering pattern rather than a research risk."
+          "question": "Does Cordis support hot reload?",
+          "answer": "Its lifecycle and reversible-effect design support safe plugin reload patterns, provided the plugin registers its resources through the framework's cleanup mechanisms."
+        },
+        {
+          "question": "Is Cordis an agent model or a security sandbox?",
+          "answer": "No. Cordis is runtime composition infrastructure. It does not supply an AI model and does not replace operating-system isolation, permission design, or application-level security controls."
+        },
+        {
+          "question": "When should a Harness extension become a Cordis plugin?",
+          "answer": "Use a plugin when the extension has an independent lifecycle, depends on shared services, or must be removable and testable without rewriting the main runtime."
         }
       ]
     },
@@ -2387,28 +2479,36 @@
     "/blog/gpt-5-6-floatboat": {
       "items": [
         {
-          "question": "Do I need an OpenAI API key to use GPT-5.6 in Floatboat?",
-          "answer": "No. Sol, Terra, and Luna are built into Floatboat with zero configuration — no API key to provision, no OpenAI billing account, and no routing layer to build. They appear in your agent workspace automatically alongside DeepSeek, Claude, Gemini, MiniMax, Kimi, and GLM, ready from the first agent you configure."
+          "question": "Are GPT-5.6 models available in Floatboat's default picker?",
+          "answer": "No. GPT-5.6 Sol and Terra are configured in Floatboat's underlying evaluation and capacity layer, but they are not exposed in the default client picker."
         },
         {
-          "question": "Does Floatboat automatically switch between Sol, Terra, and Luna?",
-          "answer": "Yes, if you use Auto Mode. It routes each task to the appropriate tier based on the event's complexity, context length, and timing. You can also choose a specific tier for each agent pipeline when you prefer manual control. Either way, Terra is the baseline default — it handles most routine agent work efficiently while Sol covers the occasional complex event."
+          "question": "Which GPT-5.6 models are configured below the picker?",
+          "answer": "The confirmed matrix includes gpt-5.6-sol and gpt-5.6-terra below the picker. GPT-5.6 Luna is not in the confirmed matrix."
         },
         {
-          "question": "How do I know which tier to use for a specific calendar event?",
-          "answer": "Start with Terra as your default. Switch to Sol for complex events — client reviews, project retrospectives, high-stakes meetings — or anything you'd spend more than 30 minutes preparing manually. Use Luna for high-volume routine work: recurring status updates, standard follow-ups, and event classification. After two to three weeks the mapping becomes intuitive, and Auto Mode can make the call for you if you'd rather not decide."
+          "question": "What is GPT-5.6 Sol designed for?",
+          "answer": "OpenAI positions Sol for demanding reasoning and agentic work. That does not mean it is currently selectable in Floatboat."
         },
         {
-          "question": "Can I use GPT-5.6 Sol Ultra mode in Floatboat?",
-          "answer": "Yes. Sol Ultra coordinates multiple sub-agents across parallel workstreams and is unlocked through the Sol tier. For a complex meeting brief, the agent can pull the last meeting's notes, check the CRM, scan recent email threads, and draft talking points simultaneously rather than sequentially. It's best suited for events requiring multi-document synthesis, such as client meeting preparation with cross-referenced research."
+          "question": "What is GPT-5.6 Terra designed for?",
+          "answer": "Terra is the lower-cost GPT-5.6 variant. In Floatboat, it is underlying configuration rather than a default-picker launch."
         },
         {
-          "question": "How much does the tiered setup cost per month?",
-          "answer": "Pricing is per tier — Sol at $5/$30 per million input/output tokens, Terra at $2.50/$15, Luna at $1/$6. At moderate usage (roughly 50 agent events a month), running everything on Terra costs about $43, all-Luna about $17, and the recommended full stack — Sol for hard cases, Terra for daily work, Luna for routing — about $55, roughly 35% less than the ~$85 of running it all on the flagship. Built-in prompt caching reduces these numbers further."
+          "question": "Is GPT-5.6 Luna supported by Floatboat?",
+          "answer": "No confirmed Floatboat configuration lists GPT-5.6 Luna."
         },
         {
-          "question": "How do I get started with GPT-5.6 in Floatboat?",
-          "answer": "If you already use Floatboat, open any agent workspace and you'll see Sol, Terra, and Luna listed alongside the other models — no separate integration step. If you're new: download the desktop app, connect your calendar, and create your first agent pipeline; the models are available from that first agent. For the first few weeks, keep Terra as the default and let Sol handle the occasional complex event."
+          "question": "Do OpenAI's GPT-5.6 prices apply directly to Floatboat?",
+          "answer": "Not necessarily. OpenAI's prices describe its own channels; Floatboat packaging and billing must be verified separately."
+        },
+        {
+          "question": "Is OpenAI access the same as Floatboat support?",
+          "answer": "No. A model can exist in OpenAI's products while remaining below Floatboat's picker or absent from Floatboat."
+        },
+        {
+          "question": "What would confirm a Floatboat launch?",
+          "answer": "The client picker or official Floatboat release documentation, not capacity configuration alone."
         }
       ]
     },
@@ -2590,26 +2690,74 @@
     },
     "/blog/grok-4-6": {
       "items": [
-        {"question":"What is Grok 4.6?","answer":"Grok 4.6 is xAI's August 2026 model for coding, agentic tasks, and knowledge work. It accepts text and images, returns text, supports tool use and structured outputs, and offers four reasoning-effort settings."},
-        {"question":"How large is the Grok 4.6 context window?","answer":"The official xAI model page lists a 500,000-token context window. That capacity is useful for large repositories and document sets, but prompts at or above 200,000 tokens enter a higher pricing tier."},
-        {"question":"How much does the Grok 4.6 API cost?","answer":"Below 200K prompt tokens, xAI lists $2 per million input tokens, $0.50 per million cached input tokens, and $6 per million output tokens. At 200K prompt tokens or more, the listed rates are $4, $1, and $12 respectively, applied to the whole request."},
-        {"question":"Is Grok 4.6 an open-weight model?","answer":"No. xAI provides Grok 4.6 through its API and supported products or partners, but it has not released model weights for self-hosting."},
-        {"question":"Does Grok 4.6 know current events automatically?","answer":"No. xAI lists a February 1, 2026 knowledge cutoff and says real-time information requires server-side web or X search tools."},
-        {"question":"How did Grok 4.6 perform on benchmarks?","answer":"At launch, xAI reported an Artificial Analysis Intelligence Index score of 61 and strong agentic knowledge-work results. Benchmark versions must be checked carefully: for example, Terminal-Bench v2.1 and v3.0 results are not directly comparable."},
-        {"question":"Should a new project use Grok 4.6 or Grok 4.7?","answer":"Grok 4.7 is xAI's newer model and is the better first candidate for a new evaluation. Grok 4.6 remains reasonable where it is already validated, where 4.7 is unavailable, or where a fixed earlier version is needed for regression testing."},
-        {"question":"How should teams evaluate Grok 4.6?","answer":"Use representative tasks and score completion quality, tool reliability, review burden, context behavior, total token cost, and end-to-end latency. Keep the harness, permissions, reasoning setting, and retry policy equal when comparing models."}
+        {
+          "question": "What is Grok 4.6?",
+          "answer": "Grok 4.6 is xAI's August 2026 model for coding, agentic tasks, and knowledge work. It accepts text and images, returns text, supports tool use and structured outputs, and offers four reasoning-effort settings."
+        },
+        {
+          "question": "How large is the Grok 4.6 context window?",
+          "answer": "The official xAI model page lists a 500,000-token context window. That capacity is useful for large repositories and document sets, but prompts at or above 200,000 tokens enter a higher pricing tier."
+        },
+        {
+          "question": "How much does the Grok 4.6 API cost?",
+          "answer": "Below 200K prompt tokens, xAI lists $2 per million input tokens, $0.50 per million cached input tokens, and $6 per million output tokens. At 200K prompt tokens or more, the listed rates are $4, $1, and $12 respectively, applied to the whole request."
+        },
+        {
+          "question": "Is Grok 4.6 an open-weight model?",
+          "answer": "No. xAI provides Grok 4.6 through its API and supported products or partners, but it has not released model weights for self-hosting."
+        },
+        {
+          "question": "Does Grok 4.6 know current events automatically?",
+          "answer": "No. xAI lists a February 1, 2026 knowledge cutoff and says real-time information requires server-side web or X search tools."
+        },
+        {
+          "question": "How did Grok 4.6 perform on benchmarks?",
+          "answer": "At launch, xAI reported an Artificial Analysis Intelligence Index score of 61 and strong agentic knowledge-work results. Benchmark versions must be checked carefully: for example, Terminal-Bench v2.1 and v3.0 results are not directly comparable."
+        },
+        {
+          "question": "Should a new project use Grok 4.6 or Grok 4.7?",
+          "answer": "Grok 4.7 is xAI's newer model and is the better first candidate for a new evaluation. Grok 4.6 remains reasonable where it is already validated, where 4.7 is unavailable, or where a fixed earlier version is needed for regression testing."
+        },
+        {
+          "question": "How should teams evaluate Grok 4.6?",
+          "answer": "Use representative tasks and score completion quality, tool reliability, review burden, context behavior, total token cost, and end-to-end latency. Keep the harness, permissions, reasoning setting, and retry policy equal when comparing models."
+        }
       ]
     },
     "/blog/grok-bot": {
       "items": [
-        {"question":"What is Grok Bot?","answer":"Grok Bot is xAI's persistent work agent. Each Bot can use a cloud computer, sign into authorized tools, carry out multi-step jobs, and continue working after the user steps away."},
-        {"question":"Is Grok Bot the same as Grok?","answer":"No. Grok is primarily a conversational assistant, while Grok Bot is designed to act across apps and return completed work. The products may use related models, but their execution surfaces and permissions differ."},
-        {"question":"What is @bot on X?","answer":"@bot is an automated X account that forwards a mention or reply to the user's connected Grok Bot. X's help page says @bot does not answer the request itself."},
-        {"question":"What can Grok Bot do with X?","answer":"After the official X plugin is connected, a Bot can search posts, read timelines, check mentions, pull trends, and manage bookmarks, subject to account permissions and product availability."},
-        {"question":"Can multiple Grok Bots work together?","answer":"Yes. xAI supports multiple Bots running in parallel, messaging one another, and coordinating in group threads. Team Bots can also share approved context, tools, and memory across a team."},
-        {"question":"How does a Grok Bot learn a recurring workflow?","answer":"A user can let a Bot follow a process, save it as a routine, and refine it with corrections. The routine still needs monitoring because interfaces, credentials, and source data can change."},
-        {"question":"Is Grok Bot safe to connect to work accounts?","answer":"It can be piloted safely only with deliberate controls: dedicated or least-privilege accounts, approval gates for consequential actions, audit records, revocable credentials, and a recovery plan. A broad personal login is a poor default."},
-        {"question":"When is Grok Bot a better choice than workflow automation?","answer":"Grok Bot is more plausible for judgment-heavy work across browser tools, especially where no clean API exists. Deterministic, rule-based processes are often easier to audit in a conventional workflow engine."}
+        {
+          "question": "What is Grok Bot?",
+          "answer": "Grok Bot is xAI's persistent work agent. Each Bot can use a cloud computer, sign into authorized tools, carry out multi-step jobs, and continue working after the user steps away."
+        },
+        {
+          "question": "Is Grok Bot the same as Grok?",
+          "answer": "No. Grok is primarily a conversational assistant, while Grok Bot is designed to act across apps and return completed work. The products may use related models, but their execution surfaces and permissions differ."
+        },
+        {
+          "question": "What is @bot on X?",
+          "answer": "@bot is an automated X account that forwards a mention or reply to the user's connected Grok Bot. X's help page says @bot does not answer the request itself."
+        },
+        {
+          "question": "What can Grok Bot do with X?",
+          "answer": "After the official X plugin is connected, a Bot can search posts, read timelines, check mentions, pull trends, and manage bookmarks, subject to account permissions and product availability."
+        },
+        {
+          "question": "Can multiple Grok Bots work together?",
+          "answer": "Yes. xAI supports multiple Bots running in parallel, messaging one another, and coordinating in group threads. Team Bots can also share approved context, tools, and memory across a team."
+        },
+        {
+          "question": "How does a Grok Bot learn a recurring workflow?",
+          "answer": "A user can let a Bot follow a process, save it as a routine, and refine it with corrections. The routine still needs monitoring because interfaces, credentials, and source data can change."
+        },
+        {
+          "question": "Is Grok Bot safe to connect to work accounts?",
+          "answer": "It can be piloted safely only with deliberate controls: dedicated or least-privilege accounts, approval gates for consequential actions, audit records, revocable credentials, and a recovery plan. A broad personal login is a poor default."
+        },
+        {
+          "question": "When is Grok Bot a better choice than workflow automation?",
+          "answer": "Grok Bot is more plausible for judgment-heavy work across browser tools, especially where no clean API exists. Deterministic, rule-based processes are often easier to audit in a conventional workflow engine."
+        }
       ]
     },
     "/blog/gumloop-alternatives-2026": {
@@ -2851,28 +2999,36 @@
     "/blog/how-to-use-obsidian-with-ai-agent": {
       "items": [
         {
-          "question": "Do I need a special Obsidian plugin to use an AI agent?",
-          "answer": "Not necessarily. Many desktop agents only need the vault folder path. Plugins such as Copilot or Claudian help when you want chat or coding-agent UX _inside_ Obsidian; folder-level agents and MCP bridges help when work spans other apps or IDEs. You can use both."
+          "question": "Do I need an Obsidian plugin to use an AI agent?",
+          "answer": "No. A file-capable agent can work with an authorized vault folder directly. Use an in-vault plugin when you want AI inside Obsidian, or the official CLI for repeatable Obsidian commands."
         },
         {
-          "question": "Will an AI agent overwrite my vault?",
-          "answer": "Only if you grant write access and approve destructive actions. Start read-only or write to an AI Inbox folder. Prefer tools that preview file moves — including Floatboat's <a href=\"/ai-file-organizer\">AI File Organizer</a> — before bulk changes. Coding-agent embeds and MCP write tools deserve the same caution."
+          "question": "What is the safest first AI task for a vault?",
+          "answer": "Start read-only: ask for an inventory, a source-linked summary, or unanswered questions from one project folder. Confirm the scope before allowing a small write."
         },
         {
-          "question": "Is this the same as Obsidian Copilot or Web Clipper Interpreter?",
-          "answer": "No. Those tools primarily enhance capture and conversation inside or into Obsidian. A desktop AI agent orchestrates tasks across local files and connected apps. Interpreter can use your own model providers when clipping pages; it does not replace calendar-triggered project execution. Copilot can add agentic modes _inside_ the vault; that is still a different center of gravity than a calendar-driven OS."
+          "question": "Should I give the agent access to my whole vault?",
+          "answer": "Usually not. Grant the smallest useful project folder and exclude journals, archives, credentials, and `.obsidian/` until a task genuinely needs them."
         },
         {
-          "question": "Can Floatboat read my Obsidian vault?",
-          "answer": "Yes, in the same way it can read other local folders you authorize on Mac or Windows. Point the workspace at the vault path for the relevant project or event. Pair it with the <a href=\"/ai-file-organizer\">file organizer</a> when Downloads or project dumps need sorting first."
+          "question": "What is an Agent Inbox?",
+          "answer": "It is a dedicated writable folder for AI drafts. Source notes remain read-only, and a human promotes approved output into the permanent knowledge base."
         },
         {
-          "question": "Which Obsidian AI agent should I pick first?",
-          "answer": "If your week is meeting- and deadline-shaped and notes are only one input, start with Floatboat. If you mostly need Q&A and drafting while editing notes, start with Copilot for Obsidian. If you already run Claude Code daily, evaluate Claudian or an MCP bridge. If you only want related-note discovery, Smart Connections may be enough without any \"agent\" branding."
+          "question": "When should I use Obsidian CLI instead of direct file access?",
+          "answer": "Use CLI for structured actions such as search, note operations, daily notes, properties, or Bases. Use direct folder access when the job must combine vault notes with files outside Obsidian."
         },
         {
-          "question": "Should I replace Obsidian with an AI note app?",
-          "answer": "Usually no, if you already value local Markdown and linking. Replace workflows that force you to redo cross-app assembly by hand — not the knowledge base that already works. For category contrast with chat-only tools, see <a href=\"/blog/what-is-claude-cowork\">Claude Cowork</a> and calendar-driven alternatives discussed across our agent guides."
+          "question": "Can an AI agent break wikilinks or frontmatter?",
+          "answer": "Yes, if it has write access. Review filenames, `[[wikilinks]]`, embeds, attachment paths, YAML keys, and value types after every small batch."
+        },
+        {
+          "question": "Does a local Obsidian vault mean AI processing stays local?",
+          "answer": "No. The source files are local, but an agent or plugin may send selected content to a remote model. Check permissions, processing location, retention, and model-training terms."
+        },
+        {
+          "question": "How should I back up a vault before agent writes?",
+          "answer": "Back up the entire folder, including attachments and relevant configuration, or commit a clean Git state. Sync alone is not a backup because mistakes can sync too."
         }
       ]
     },
@@ -3007,28 +3163,36 @@
     "/blog/kimi-k3-floatboat": {
       "items": [
         {
-          "question": "Is Kimi K3 available in Floatboat?",
-          "answer": "Yes. Kimi K3 is one of Floatboat's built-in model families — alongside DeepSeek, Claude, Gemini, MiniMax, and GLM — and has been selectable in the model dropdown since July 16, 2026. No separate Kimi API key, no routing setup, no billing configuration. Auto Mode can also route work to K3 when event complexity calls for it."
+          "question": "Is Kimi K3 available in Floatboat's default picker?",
+          "answer": "No. Floatboat has underlying capacity configuration for kimi-k3, but it is not exposed in the default picker."
         },
         {
-          "question": "What is Kimi K3?",
-          "answer": "Kimi K3 is Moonshot AI's 2.8-trillion-parameter open model, launched on July 16, 2026. It supports a 1-million-token context window, includes native visual understanding, and is designed for long-horizon coding, knowledge work, and reasoning. Kimi describes K3 as the world's first open 3T-class model and has committed to releasing the full model weights by July 27, 2026."
+          "question": "What does the Kimi K3 capacity record mean?",
+          "answer": "The runtime has a model profile and budget entry for evaluation or future routing; it is not proof of launch."
         },
         {
-          "question": "Is Kimi K3 open source?",
-          "answer": "Kimi describes K3 as an open model and says the full model weights will be released by July 27, 2026. The weights are not yet publicly available as of this writing. Once released, K3 will be the first open-weight model in the 3T-parameter class."
+          "question": "What are Kimi K3's main specifications?",
+          "answer": "Use Moonshot's official documentation for architecture, context, modality, and benchmark claims because releases can change."
         },
         {
-          "question": "What should I use Kimi K3 for in Floatboat?",
-          "answer": "Point K3 at the handful of events each month where correctness dominates cost. Its 1M context shines for multi-document preparation — a client quarterly review that must synthesize previous meeting notes, CRM history, and email threads in a single pass. Native visual understanding handles design reviews and screenshot-driven iteration; always-on max reasoning suits complex synthesis like retrospectives and negotiation briefs. Keep routine coding on K2.7 Code and classification on K2.6."
+          "question": "What model ID does Floatboat use?",
+          "answer": "The confirmed underlying ID is kimi-k3. Compatibility entries do not make K3 a picker option."
         },
         {
-          "question": "Is Kimi K3 the best coding model?",
-          "answer": "No single benchmark can determine whether a model is best for every coding task. Kimi's official technical blog shows K3 leading on some coding benchmarks (such as SWE Marathon) and trailing on others (such as DeepSWE and FrontierSWE) compared to Claude Fable 5 and GPT-5.6 Sol. The model that works best for your codebase depends on your repository structure, test suite, toolchain, and acceptance criteria — test K3 against your actual workflow before switching."
+          "question": "Does the profile guarantee a 1M context window?",
+          "answer": "No. A configured budget is not a user-facing guarantee; limits depend on deployment and release state."
         },
         {
-          "question": "How much does Kimi K3 cost to run?",
-          "answer": "K3 is Moonshot's priciest model: $3 per million input tokens and $15 per million output, though cached input drops to $0.30 per million. Running a solopreneur's 30–50 calendar events a month entirely on K3 costs roughly $85. A tiered strategy — K3 for complex events, K2.7 Code for routine work, K2.6 for routing — lands around $55, and realistic caching can push that toward $40."
+          "question": "Can I use Kimi K3 without an API key today?",
+          "answer": "The confirmed matrix does not establish a public launch, so no-key access should not be promised."
+        },
+        {
+          "question": "How should teams evaluate Kimi K3?",
+          "answer": "Test representative tasks with acceptance criteria, cost limits, and human review instead of relying on one benchmark."
+        },
+        {
+          "question": "What would confirm Kimi K3's Floatboat launch?",
+          "answer": "Its appearance in the client picker or an explicit Floatboat release note."
         }
       ]
     },
@@ -3806,41 +3970,73 @@
     },
     "/blog/what-is-claude-cowork": {
       "items": [
-        {"question":"What is Claude Cowork?","answer":"Claude Cowork is Anthropic's agentic workspace for multi-step knowledge work. It can work across authorized files and tools, coordinate subtasks, and return documents, spreadsheets, presentations, or other artifacts for review."},
-        {"question":"Is Claude Cowork still a separate mode?","answer":"It depends on the account. Anthropic is gradually merging Cowork and chat into one Claude experience for Pro and Max users, while some accounts still show separate Chat and Cowork options."},
-        {"question":"How is Claude Cowork different from regular Claude chat?","answer":"Regular chat is suited to answers, explanation, and short drafting. Cowork handles longer tasks that may read or change files, use connected tools, run code, and produce a completed artifact."},
-        {"question":"How is Claude Cowork different from Claude Code?","answer":"Claude Code is designed for software engineering in repositories, terminals, and IDEs. Cowork uses a similar agentic approach for documents, analysis, operations, and other cross-app knowledge work."},
-        {"question":"Can Claude Cowork run when my laptop is closed?","answer":"Cloud Cowork tasks and cloud-based schedules can continue when the laptop is closed. Tasks that require local files, browser sessions, or local applications may still need Claude Desktop and the relevant computer to be available."},
-        {"question":"Which plans support Claude Cowork?","answer":"Anthropic's current help material lists Cowork on paid Pro, Max, Team, and Enterprise plans, with surface availability and beta status varying by plan and administrator settings."},
-        {"question":"Can Claude Cowork run scheduled tasks?","answer":"Yes. Scheduled tasks can run on demand or on a recurring cadence and can use configured connectors, plugins, and cloud files. Local-resource dependencies may change whether the computer must remain online."},
-        {"question":"How should I test Claude Cowork safely?","answer":"Start with a bounded, reversible task; restrict folders and accounts; state acceptance criteria; require evidence; and review correctness, completeness, traceability, approval behavior, and the real time saved after corrections."}
+        {
+          "question": "What is Claude Cowork?",
+          "answer": "Claude Cowork is Anthropic's agentic workspace for multi-step knowledge work. It can work across authorized files and tools, coordinate subtasks, and return documents, spreadsheets, presentations, or other artifacts for review."
+        },
+        {
+          "question": "Is Claude Cowork still a separate mode?",
+          "answer": "It depends on the account. Anthropic is gradually merging Cowork and chat into one Claude experience for Pro and Max users, while some accounts still show separate Chat and Cowork options."
+        },
+        {
+          "question": "How is Claude Cowork different from regular Claude chat?",
+          "answer": "Regular chat is suited to answers, explanation, and short drafting. Cowork handles longer tasks that may read or change files, use connected tools, run code, and produce a completed artifact."
+        },
+        {
+          "question": "How is Claude Cowork different from Claude Code?",
+          "answer": "Claude Code is designed for software engineering in repositories, terminals, and IDEs. Cowork uses a similar agentic approach for documents, analysis, operations, and other cross-app knowledge work."
+        },
+        {
+          "question": "Can Claude Cowork run when my laptop is closed?",
+          "answer": "Cloud Cowork tasks and cloud-based schedules can continue when the laptop is closed. Tasks that require local files, browser sessions, or local applications may still need Claude Desktop and the relevant computer to be available."
+        },
+        {
+          "question": "Which plans support Claude Cowork?",
+          "answer": "Anthropic's current help material lists Cowork on paid Pro, Max, Team, and Enterprise plans, with surface availability and beta status varying by plan and administrator settings."
+        },
+        {
+          "question": "Can Claude Cowork run scheduled tasks?",
+          "answer": "Yes. Scheduled tasks can run on demand or on a recurring cadence and can use configured connectors, plugins, and cloud files. Local-resource dependencies may change whether the computer must remain online."
+        },
+        {
+          "question": "How should I test Claude Cowork safely?",
+          "answer": "Start with a bounded, reversible task; restrict folders and accounts; state acceptance criteria; require evidence; and review correctness, completeness, traceability, approval behavior, and the real time saved after corrections."
+        }
       ]
     },
     "/blog/what-is-claude-tag": {
       "items": [
         {
-          "question": "Is Claude Tag the same thing as an \"AI teammate\"?",
-          "answer": "**AI teammate** is a category — an agent that behaves like a colleague in your collaboration stack. **Claude Tag** is Anthropic's branded implementation for Slack: shared channel identity, `@Claude` delegation, and org-level tool access. Other products also market \"AI teammates\" on different platforms or protocols."
+          "question": "What is Claude Tag?",
+          "answer": "Claude Tag is Anthropic's shared Slack agent experience, invoked as @Claude in approved channel context."
         },
         {
-          "question": "How is Claude Tag different from Claude Cowork?",
-          "answer": "Cowork is a **user-initiated desktop agent** for local files and connectors inside the Claude app. Tag is a **shared Slack channel agent** — one identity per channel — with multiplayer visibility and organization-level billing. Cowork fits solo file batches; Tag fits team-visible execution in Slack."
+          "question": "Did Claude Tag replace the earlier Slack app?",
+          "answer": "Anthropic introduced Tag as the newer Slack experience; administrators should follow current migration and availability guidance."
         },
         {
-          "question": "Do I need Claude Enterprise or Team to use Claude Tag?",
-          "answer": "Yes, as of the beta launch in June 2026. Claude Tag is gated to **Team and Enterprise** plans and runs on Slack initially. Individual Pro or Max subscribers use Cowork and Chat on personal surfaces, not the shared channel Tag model."
+          "question": "What context can Claude Tag use?",
+          "answer": "It can use permitted conversation context and connected resources, subject to workspace configuration and access controls."
         },
         {
-          "question": "What happens to Claude in Slack on August 3, 2026?",
-          "answer": "On August 3, 2026, Anthropic replaces the legacy Claude in Slack app with the Claude Tag experience. Administrators must opt in and reconfigure channel access and tool connections within the published migration window — commonly cited as ending around July 23, 2026 — and permissions do not carry over automatically. Treat it as a governance project, not a silent upgrade."
+          "question": "Can Claude Tag act outside Slack?",
+          "answer": "It can use approved connected tools, but only within the permissions and review boundaries configured by the organization."
         },
         {
-          "question": "Can Claude Tag automatically prep meetings from my calendar?",
-          "answer": "Only if you connect relevant tools and either `@` Claude with calendar-aware requests or configure Ambient behavior. Tag does not, by default, treat every calendar event as an automatic prep trigger the way calendar-driven agent systems do. For event-native prep and follow-up, compare Tag against calendar-runtime agents in our AI scheduling agent overview."
+          "question": "Is Claude Tag the same as Slack search or Slack AI?",
+          "answer": "No. Search retrieves information; Tag is designed to carry out multi-step team work using selected context and tools."
         },
         {
-          "question": "Is FloatIM a Claude Tag alternative?",
-          "answer": "FloatIM is an **agent-native messaging network** — agents are first-class participants, not Slack plugins. It fits teams that want governable multi-agent group chat outside Slack's tenant boundary. See the ranked alternatives article for when FloatIM versus Tag is the better job fit."
+          "question": "How does Tag differ from Cowork and Claude Code?",
+          "answer": "Tag is team-owned in Slack, Cowork centers on individual knowledge work, and Claude Code centers on repositories."
+        },
+        {
+          "question": "What security controls matter most?",
+          "answer": "Least-privilege access, approved channels and tools, named reviewers, auditability, and clear escalation paths."
+        },
+        {
+          "question": "What is a good first pilot?",
+          "answer": "Choose a reversible, low-risk channel workflow with bounded inputs, an explicit deliverable, and a human approver."
         }
       ]
     },
@@ -3995,28 +4191,36 @@
     "/blog/what-is-obsidian-vault": {
       "items": [
         {
-          "question": "Is an Obsidian vault a special file type?",
-          "answer": "No. A vault is a plain folder on your device, and notes are typically .md files you can open in any editor. Obsidian stores settings and plugins under a hidden .obsidian directory and may create formats like .canvas or .base for specific features, but the knowledge base itself stays ordinary, portable files on disk — delete Obsidian and the files remain."
+          "question": "What is an Obsidian vault?",
+          "answer": "It is a folder on your local file system that Obsidian treats as a knowledge base. Notes are Markdown files, with attachments and vault-specific settings alongside them."
         },
         {
-          "question": "Do I need Obsidian Sync to use a vault?",
-          "answer": "No. Sync is an optional paid add-on for encrypted multi-device sync and publishing, not a requirement. Many people keep a single-device vault, or sync with tools they already trust — iCloud, Syncthing, or Git — and the core app works fully offline without an account. Buy Sync only if you want Obsidian's own encrypted sync between devices."
+          "question": "Is a vault a special proprietary file type?",
+          "answer": "No. The vault is an ordinary folder and most notes are `.md` text files. Obsidian adds knowledge-base features without replacing those files with a closed note format."
         },
         {
-          "question": "Can I have more than one vault?",
-          "answer": "Yes. Separate vaults are common for work versus personal notes, or to isolate clients and projects. Each vault has its own files, plugin settings, and configuration. The useful rule of thumb: split vaults when trust boundaries or plugin stacks diverge — not merely when tags feel crowded. The cost is context switching; the payoff is control over your blast radius."
+          "question": "What is stored in the `.obsidian` folder?",
+          "answer": "Vault-specific preferences, hotkeys, themes, and community-plugin configuration. The folder is usually hidden by the operating system."
         },
         {
-          "question": "Is my vault private?",
-          "answer": "Locally, yes — files stay on your device unless you choose to sync or publish them, and Obsidian's core app does not require uploading your notes to its servers. The caveat: third-party sync, cloud AI plugins, or the Web Clipper Interpreter with a remote model provider see what you send them under their own policies. The control is yours, so choose those services deliberately."
+          "question": "Do I need Obsidian Sync to create a vault?",
+          "answer": "No. A local vault works without an account or paid sync service. Sync is an optional way to maintain a remote copy across devices."
         },
         {
-          "question": "How is a vault different from a Google Drive folder of docs?",
-          "answer": "A Drive folder of documents is storage plus an online editor ecosystem. An Obsidian vault is local Markdown plus a note app built around linking, backlinks, graph view, and plugins. You can place a vault inside a synced Drive or Dropbox folder — many people do — but Drive alone does not give you the knowledge-base experience: backlinks, relationship graphs, and file-level control."
+          "question": "Is a local vault automatically encrypted?",
+          "answer": "No. Local files inherit the security of your device and disk. Obsidian Sync encryption applies to the remote vault and does not encrypt the local folder for you."
         },
         {
-          "question": "Can an AI agent read and use my Obsidian vault?",
-          "answer": "Yes — and that is increasingly the point. Because a vault is plain text on disk, an agent that can read directories can open, search, and (with permission) rewrite your notes directly, seeing files and frontmatter rather than a locked vendor schema. Whether that pairing is worth it is a workflow choice, not an Obsidian feature; the companion guide on using Obsidian with an AI agent walks through the practical setup."
+          "question": "Can I use more than one vault?",
+          "answer": "Yes. Multiple vaults are useful when work, clients, or plugin stacks have different trust boundaries. Use folders and properties instead when the difference is only topical."
+        },
+        {
+          "question": "Can I put one vault inside another?",
+          "answer": "You should not. Obsidian warns that internal links are local to a vault and may not update correctly in nested vaults."
+        },
+        {
+          "question": "Does Obsidian Bases turn the vault into a database?",
+          "answer": "It creates database-like views, but note data remains in local Markdown files and their properties. The `.base` file describes the view rather than copying notes into a separate database."
         }
       ]
     },
@@ -4115,28 +4319,36 @@
     "/blog/where-is-world-cup-2026-host-cities": {
       "items": [
         {
-          "question": "Where is the World Cup 2026 being held?",
-          "answer": "In the United States, Canada, and Mexico — the first men's World Cup shared by three host nations. Rather than a single destination, the tournament runs on a continent-scale network of 16 host cities, so the practical question is which region and which city your matches are in. The United States carries 11 host markets, Canada has 2, and Mexico has 3."
+          "question": "Where was the 2026 World Cup held?",
+          "answer": "In Canada, Mexico, and the United States from June 11 to July 19, 2026. It was the first men's World Cup organized across three countries."
         },
         {
-          "question": "How many host cities does the 2026 World Cup have?",
-          "answer": "Sixteen in total: 11 host markets in the United States, 2 in Canada (Vancouver and Toronto), and 3 in Mexico (Guadalajara, Monterrey, and Mexico City). FIFA sometimes labels venues by metro area rather than city — San Francisco Bay Area and New York/New Jersey are the notable cases — so treat the list as host markets rather than city names alone."
+          "question": "How many host cities did World Cup 2026 have?",
+          "answer": "Sixteen host markets: 2 in Canada, 3 in Mexico, and 11 in the United States."
         },
         {
-          "question": "Why is the tournament spread across three countries?",
-          "answer": "Because the 2026 edition expands to 48 teams and 104 matches, which no single country's existing venue network could comfortably absorb. FIFA chose a unified bid across the United States, Canada, and Mexico, giving the tournament the largest geographic footprint in men's World Cup history. The three-country split is also identity, not just logistics: Estadio Azteca in Mexico City connects the event to World Cup history."
+          "question": "Where was the World Cup 2026 final played, and who won?",
+          "answer": "At New York New Jersey Stadium in East Rutherford, New Jersey. Spain beat Argentina 1–0 after extra time on July 19."
         },
         {
-          "question": "Which stadiums will host 2026 World Cup matches?",
-          "answer": "Sixteen venues, commonly known as BC Place, Lumen Field, Levi's Stadium, SoFi Stadium, Estadio Akron, Arrowhead Stadium, AT&T Stadium, NRG Stadium, Mercedes-Benz Stadium, Estadio BBVA, Estadio Azteca, BMO Field, Gillette Stadium, MetLife Stadium, Lincoln Financial Field, and Hard Rock Stadium. Capacities in tournament configuration can differ from everyday numbers, and official materials often use clean venue names rather than these commercial ones."
+          "question": "Where was the opening match played?",
+          "answer": "Mexico City Stadium hosted the opener on June 11. Mexico beat South Africa 2–0."
         },
         {
-          "question": "Why do FIFA venue names differ from stadium names I know?",
-          "answer": "Because FIFA typically uses clean tournament labels — \"New York/New Jersey Stadium\" or \"Los Angeles Stadium\" — instead of sponsor-backed brand names, to keep references consistent and avoid commercial conflicts. Some labels also refer to a metro area rather than the downtown of that city. When in doubt, search city plus stadium together, like \"New York/New Jersey Stadium MetLife,\" and confirm the actual venue location before booking."
+          "question": "Why do FIFA stadium names differ from commercial names?",
+          "answer": "FIFA uses neutral tournament labels to avoid commercial naming conflicts and keep official schedules consistent. Historical records should therefore use FIFA's event names."
         },
         {
-          "question": "How far apart are the host cities for travel planning?",
-          "answer": "Farther than a map suggests. Host cities stretch from Vancouver and Seattle to Mexico City and Miami, so many city pairs require flights rather than quick hops, and three countries mean different time zones and kickoff windows. The article advises planning around regional clusters — a Texas group, an East Coast corridor — and taking distance seriously in the knockout stage, when a team's next venue depends on results."
+          "question": "Were all stadiums inside the named host city?",
+          "answer": "No. Several labels described metro areas: Boston's venue was in Foxborough, Dallas's in Arlington, Los Angeles's in Inglewood, and New York New Jersey's in East Rutherford."
+        },
+        {
+          "question": "Which host market staged the most matches?",
+          "answer": "Dallas hosted nine matches, the highest total of any 2026 host market, including one semifinal."
+        },
+        {
+          "question": "Where can I see every knockout result and venue?",
+          "answer": "Use FIFA's official knockout-stage results or the completed World Cup 2026 bracket, which records the route from the Round of 32 through the final."
         }
       ]
     },
@@ -4335,56 +4547,72 @@
     "/blog/world-cup-2026-bracket": {
       "items": [
         {
-          "question": "What is a World Cup bracket?",
-          "answer": "It's the knockout-stage map showing how winning teams advance after the group stage. In 2026 the path runs through a Round of 32, Round of 16, quarterfinals, semifinals, a third-place match, and the final — with each table row showing the fixture, date, venue, and winner. The bracket works upstream-first: final group tables determine which team lands in which slot."
+          "question": "Who won the 2026 FIFA World Cup?",
+          "answer": "Spain beat Argentina 1-0 after extra time in the final."
         },
         {
-          "question": "Why does the 2026 World Cup bracket start with a Round of 32?",
-          "answer": "Because the tournament expanded from 32 to 48 teams, and the larger field needs an extra elimination round before the familiar knockout stages. The Round of 32 adds one more pressure point for group winners and gives strong third-place qualifiers a genuine chance to reshape the draw — which is also why the 2026 bracket tracks differently than older templates."
+          "question": "Who scored the winning goal?",
+          "answer": "Ferran Torres scored in the 106th minute."
         },
         {
-          "question": "Where can I download a bracket template or printable PDF tracker?",
-          "answer": "From the asset section near the top of this page. There are two formats: a PNG bracket preview for quick scanning and sharing, and a printable PDF tracker designed for recording scores, winners, and office-pool notes. The PDF avoids official FIFA marks and uses neutral editorial labeling."
+          "question": "Why did the knockout stage begin with a Round of 32?",
+          "answer": "The expanded 48-team tournament sent 32 teams into the knockout phase."
         },
         {
-          "question": "When can I fill in the bracket?",
-          "answer": "A prediction bracket can be filled before the tournament starts. The official knockout bracket, however, only becomes fillable once group-stage results fix each team's placement — a group winner, runner-up, or third-place qualifier can land on very different paths depending on the official allocation."
+          "question": "How many knockout matches were played?",
+          "answer": "The bracket contained 32 matches including the third-place play-off and final."
         },
         {
-          "question": "Where do the matchups and scores on this page come from?",
-          "answer": "From the FIFA Official Bracket, which is attributed under every knockout table on this page. Group-stage placement context comes from the World Cup 2026 groups and standings article, because that page explains how each bracket slot was earned. Interpretive notes about path difficulty are editorial analysis, clearly separated from official tournament claims."
+          "question": "What was Spain's route to the title?",
+          "answer": "The page lists Spain's official opponents and results from the Round of 32 through the final."
         },
         {
-          "question": "Is filling out a bracket the same as betting?",
-          "answer": "No. Bracket predictions on this site are for entertainment and office-pool purposes, not betting advice, and prediction content is labeled accordingly. This page itself stays factual — match, date, venue, score, winner, and next path — so readers can keep the tracker, the picks, and the scoring method distinct."
+          "question": "What does AET mean?",
+          "answer": "AET means after extra time: the match remained level after 90 minutes and required an additional 30 minutes."
+        },
+        {
+          "question": "How are penalty shoot-outs recorded?",
+          "answer": "The match score and shoot-out result are shown separately so a draw after extra time is not mistaken for a regulation win."
+        },
+        {
+          "question": "What is the authoritative source for these results?",
+          "answer": "FIFA's official match centre and tournament reports are the primary sources."
         }
       ]
     },
     "/blog/world-cup-2026-bracketology": {
       "items": [
         {
-          "question": "What does World Cup bracketology mean?",
-          "answer": "It means reading the knockout bracket as a path, not just a list of matches. World Cup bracketology weighs matchups, rest days, venue context, upset risk, and future opponents rather than only picking a champion. The useful question is not which team is strongest in isolation, but who must beat whom, in what order, with what recovery window, and under what pressure."
+          "question": "What does World Cup 2026 bracketology mean now that the tournament is over?",
+          "answer": "It means auditing the completed knockout path and comparing it with the reasoning recorded before each match, rather than continuing to forecast finished games."
         },
         {
-          "question": "How does the 48-team format change bracketology?",
-          "answer": "It makes path reading matter more. The expanded field adds a Round of 32 before the Round of 16, so the road to the final is longer: more knockout matches mean more chances for injuries, extra time, penalties, emotional swings, and unexpected underdog runs. Fatigue, rotation, and matchup cost therefore deserve more weight in 2026 than they did in 32-team tournaments."
+          "question": "Who won World Cup 2026?",
+          "answer": "Spain beat Argentina 1–0 after extra time in the final on July 19, with Ferran Torres scoring in the 106th minute."
         },
         {
-          "question": "How is World Cup bracketology different from predictions?",
-          "answer": "Predictions focus on what you think will happen — who wins a specific match. Bracketology focuses on how the bracket is structured and why one path may be easier or harder than another. A good bracketology take can explain path difficulty without making a hard champion pick. Predictions are the layer that ranks champion narratives, upset angles, and pool-style choices."
+          "question": "What were the 2026 semifinals?",
+          "answer": "Spain beat France 2–0, while Argentina beat England 2–1. Spain and Argentina then met in the final."
         },
         {
-          "question": "Should I fill my bracket from the champion backward?",
-          "answer": "Usually no. Filling from the champion backward forces every earlier pick to fit one story. It is better to fill round by round, starting with the earliest remaining matchups, and decide each game on evidence — then re-check the final path. That reduces favorite bias and shows where a single upset changes the entire route."
+          "question": "How should I grade an old bracket?",
+          "answer": "Score outcome accuracy, path accuracy, the stated mechanism, and confidence calibration separately. A correct result can come from weak reasoning, and a wrong result can still identify the real uncertainty."
         },
         {
-          "question": "Is this betting advice?",
-          "answer": "No. This article is for entertainment and editorial analysis only — not betting advice, financial advice, or a guarantee of match outcomes. Treat picks as reasoning exercises for office pools and group chats. A bracket can be smart, but football does not owe anyone a clean prediction."
+          "question": "Why should I keep the original timestamped bracket?",
+          "answer": "It prevents hindsight edits. Without a pre-match screenshot, file, or message, you can study the path but cannot honestly score your own forecast."
         },
         {
-          "question": "Where can I get a printable World Cup 2026 bracket?",
-          "answer": "Use the World Cup 2026 bracket template and tracker. It includes the bracket structure, match dates, venues, and downloadable tracker assets. If you would rather not check a static schedule manually, the FloatCup World Cup 2026 calendar subscription keeps the schedule layer updated and sends reminders automatically."
+          "question": "Is bracketology the same as a power ranking?",
+          "answer": "No. A power ranking orders teams in isolation; bracketology traces who can actually meet, in what round, and how one result changes the remaining route."
+        },
+        {
+          "question": "How should extra time affect a bracket audit?",
+          "answer": "Record it as a path cost and a recovery factor to monitor, not as automatic proof that fatigue caused the next result."
+        },
+        {
+          "question": "Is this bracketology method betting advice?",
+          "answer": "No. It is an editorial and learning framework for reviewing sports predictions, not betting or financial advice and not a guarantee of future outcomes."
         }
       ]
     },
@@ -4696,7 +4924,7 @@
       "items": [
         {
           "question": "AI Agent 真的能在真实工作里省时间吗？",
-      "answer": "可能，但必须按完整流程实测，不能预设节时数字。先建立人工基线，再记录可直接采用的产出、修正时间、错误、恢复情况、成本，以及从输入到验收结果的时间。"
+          "answer": "可能，但必须按完整流程实测，不能预设节时数字。先建立人工基线，再记录可直接采用的产出、修正时间、错误、恢复情况、成本，以及从输入到验收结果的时间。"
         },
         {
           "question": "AI Agent 到底是什么？",
@@ -4704,7 +4932,7 @@
         },
         {
           "question": "用 AI Agent 需要会写代码吗？",
-      "answer": "不是所有场景都需要写代码，许多产品提供可视化或自然语言配置。但可靠上线仍需要有人定义工具、权限、验收条件、失败处理和责任归属。"
+          "answer": "不是所有场景都需要写代码，许多产品提供可视化或自然语言配置。但可靠上线仍需要有人定义工具、权限、验收条件、失败处理和责任归属。"
         },
         {
           "question": "这和直接用 ChatGPT 有什么不同？",
@@ -4712,11 +4940,11 @@
         },
         {
           "question": "AI Agent 在哪些环节仍会失灵？",
-      "answer": "当目标隐含、工具状态含糊、成功标准主观，或错误会造成不可逆后果时，Agent 最容易失灵。对外沟通、金融、法律、招聘、访问控制和生产变更之前，应保留明确责任人的审核。"
+          "answer": "当目标隐含、工具状态含糊、成功标准主观，或错误会造成不可逆后果时，Agent 最容易失灵。对外沟通、金融、法律、招聘、访问控制和生产变更之前，应保留明确责任人的审核。"
         },
         {
           "question": "刚开始用 AI Agent，该抱什么预期？",
-      "answer": "先做边界清楚的只读或草稿试点，测试正常与失败样本，记录每次工具调用和审批，与人工基线比较。上一层边界可靠后，再逐项扩大权限。"
+          "answer": "先做边界清楚的只读或草稿试点，测试正常与失败样本，记录每次工具调用和审批，与人工基线比较。上一层边界可靠后，再逐项扩大权限。"
         }
       ]
     },
@@ -5115,28 +5343,36 @@
     "/zh/blog/ai-meeting-preparation": {
       "items": [
         {
-          "question": "这和 AI 会议记录工具有什么不同？",
-          "answer": "记录工具（如 Fireflies、Otter、Fathom）在会议内部工作——会议开始后转写、总结、提取行动项。AI 会前准备则抢在会前：弄清谁参会、为什么开，调出相关文档，生成一页式简报，并带回上次未完成的待办事项。两者互补——上一场会的记录，就是下一场会准备的上下文。"
+          "question": "什么是 AI 会前准备？",
+          "answer": "它是一条会前流程：用日历事件定位已授权证据，找出未完成承诺与资料冲突，并在开会前生成可审查的决策简报。"
         },
         {
-          "question": "哪些会议最适合自动化会前准备？",
-          "answer": "回报最高的是固定会议——每周站会、每月客户同步、每季复盘，因为格式固定而内容每次不同。但任何上下文散落在邮件、文档与笔记里的会议都受益：客户提案会、产品评审、每周规划会。文中也展示了同一套流水线如何适配与新潜在客户的第一场会。"
+          "question": "AI 会前准备与 AI 会议记录有什么区别？",
+          "answer": "会前准备在会议开始前整理决策所需背景；会议记录在会议中或会后捕捉实际发生的内容。人工确认后的记录可以成为下一轮会前准备的证据。"
         },
         {
-          "question": "为什么用日历驱动，而不是让聊天 AI 准备？",
-          "answer": "聊天式流程只有在你还记得打开工具、收集输入并提问时才运行——一天八场会时，这份记忆会失灵。日历驱动由日历事件本身触发：会前 30 分钟，上下文已收集、文档已调出、简报已生成，无论你问没问。它把「记得准备」的负担整个卸下，让没有空档的会议也能有备而来。"
+          "question": "AI 会议简报应该包含什么？",
+          "answer": "应包含会议目的、相关参会者及角色、上次决定、未完成承诺、资料链接、待决问题、冲突或缺失信息，以及负责人和截止日期的填写位置。"
         },
         {
-          "question": "涉及机密会议也能用吗？",
-          "answer": "可以，但要选对方案。系统为触发准备需要读取日历事件元数据（标题、参会人、时间），也需要邮件与文档源来收集上下文；对机密会议，准备材料在本地拼装，不会上传到云端处理，系统在数据所在之处工作。如果你硬性要求本地处理，先确认工具支持设备端 AI，而不只是云端处理。"
+          "question": "AI 只看日历邀请就能完成会前准备吗？",
+          "answer": "通常不能。邀请只能提供人员、时间、描述和附件等检索线索；可靠简报还需要已授权的源文档、上次决定和当前项目记录。"
         },
         {
-          "question": "搭建它需要接入哪些工具？",
-          "answer": "最低要求是日历权限——系统得看到日程才能触发准备。要完整收集上下文，再加邮箱与文档源（Google Drive、Notion、Dropbox 或本地文件）；接入任务管理器则获得待办结转。连接要实时生效而非一次性导入；访问范围也可只连特定标签、文件夹与日历，不必开放全部。"
+          "question": "AI 会前准备应该如何处理权限？",
+          "answer": "检索应遵循简报接收者原有权限。链接文件打不开时，流程应明确报告资料缺失，不能猜测内容，也不能自动扩大分享范围。"
         },
         {
-          "question": "有了它，我就不用再自己准备了吗？",
-          "answer": "不是——自动化掉的是拼装环节，判断仍在你手上。简报是起点而非剧本：会前你仍要过一遍、调整侧重点、决定优先谈什么。真正的变化是，过去要花 10 分钟翻找材料，如今只需 60 秒扫读简报所汇总的内容。"
+          "question": "AI 应如何处理互相冲突的会议资料？",
+          "answer": "应把证据标记为已确认、单方记录或存在冲突，保留来源和时间，并把未解决冲突列入会议议程，而不是静默选择其中一种说法。"
+        },
+        {
+          "question": "会议简报应该自动生成吗？",
+          "answer": "低风险、可重复的会议可以自动起草，但分发和重要动作应由人确认。敏感会议或缺少资料的事件应手动启动，或先请求补充信息。"
+        },
+        {
+          "question": "如何评估 AI 会前准备流程？",
+          "answer": "用真实的低风险会议试点，记录准备时间、引用准确率、遗漏承诺、陈旧或错误陈述、权限失败，以及简报是否改善了会上决策或提问。"
         }
       ]
     },
@@ -5795,28 +6031,36 @@
     "/zh/blog/calendar-driven-ai-vs-chat-ai": {
       "items": [
         {
-          "question": "日历驱动 AI 和聊天式 AI，到底哪个更好？",
-          "answer": "没有哪个绝对更好——两种范式响应的触发器不同。聊天式 AI 为开放式、随叫随到的工作而生：头脑风暴、深度研究、排查陌生问题；日历驱动 AI 为绑定日程的工作而生：周期性会议、客户电话、截止日，以及它们前后的准备与跟进。真正该问的不是\"哪个更聪明\"，而是\"眼前这份工作属于哪一类\"。对多数人来说，老实的答案往往是两者都用。"
+          "question": "什么是日历驱动 AI？",
+          "answer": "它是由日期事件、截止时间或重复规则决定执行资格与时机的 AI 流程。事件可以路由上下文并启动边界明确的任务，无需用户重新发送提示词。"
         },
         {
-          "question": "这两种范式能一起用吗？",
-          "answer": "可以，而且这大概率会成为多数人的工作方式。日历驱动 AI 负责周期性的、绑日程的活——会前准备、会后跟进、截止日跟踪，因为它不依赖你的记忆和主动；聊天式 AI 负责临时的、探索性的活——研究、头脑风暴、起草，它的灵活与对话深度正好用在这里。它们各管一段工作流；只押一个，意味着让另一半工作被将就。"
+          "question": "日历驱动 AI 与聊天式 AI 有什么区别？",
+          "answer": "聊天在人发起请求后开始，适合不断变化的指令；日历流程在时间规则满足后开始，适合数据源、输出与异常负责人都明确的重复工作。"
         },
         {
-          "question": "日历驱动 AI 只是定时执行的提示词吗？",
-          "answer": "不是。定时提示词是在固定时间重复同一条指令，不管上下文——\"每周一早上 9 点总结日程\"每次跑的都是一模一样的事。日历驱动 AI 从具体事件出发应变：与会人是谁、和这位客户的历史、关联文档、推断出的事件类型，都会改变它做什么。给新客户的第一次通话和老客户的续约沟通，准备完全不同。事件负责触发，AI 依据事件的含义决定干什么。"
+          "question": "定时 AI 就一定是 AI Agent 吗？",
+          "answer": "不一定。定时提醒或固定提示词可能没有推理、工具和恢复能力。Agent 化调度还需要上下文选择、受限动作、可见失败和异常升级路径。"
         },
         {
-          "question": "日历驱动 AI 不就是能访问日历的 AI 助手吗？",
-          "answer": "不是。\"能读日历\"的助手本质仍是聊天式——你打开、你提问、它回答。日历驱动 AI 是一种架构选择：日历成为执行环境，事件是提示词，时间是触发器，准备与跟进因此不需要你发起。这正是正文把它称为\"运行时\"而非\"功能\"的原因：系统把组装好的材料推给你，而不是等你来拉。"
+          "question": "什么情况下应该用聊天，而不是日历触发？",
+          "answer": "任务新颖、模糊、敏感或高度依赖判断，执行中还会改变指令，而且人需要查看中间步骤时，应使用聊天。"
         },
         {
-          "question": "聊天式 AI 为什么管不了周期性、绑截止日的工作？",
-          "answer": "因为它只在被提示时行动，跨会话也没有时间概念。它不会在 9 点会议前自动拼好简报，也不会在截止日后主动追进待办——除非你重新打开窗口去问。每段会话都从零上下文开始，周期性工作意味着每次都要重新交代背景，人成了集成层。它的灵活与探索深度，恰恰来自不背日程包袱这件事。"
+          "question": "什么情况下日历触发更合适？",
+          "answer": "当时间本身属于任务要求、工作会重复、资料源与输出稳定、延迟或缺失能被发现，而且有人负责异常时，日历触发更合适。"
         },
         {
-          "question": "独立创始人或自由职业者该选哪种范式？",
-          "answer": "取决于工作构成，而不是\"你是哪种人\"。独立创始人的工作通常两类都在跑：客户电话、投资人更新、周计划这类绑日程的周期活，加上产品战略、市场研究、内容创作这类不绑日程的探索活。日历驱动 AI 管第一类，聊天式 AI 管第二类。最顺手的配置通常是两者配合——日程上的事不掉链子，开放式思考也始终有块灵活的桌面。"
+          "question": "日历驱动 AI 可能出现哪些问题？",
+          "answer": "错误触发规则、重复事件、时区变化、过期模板、连接器失效和重复失败会持续累积。流程必须有运行历史、来源日志、重试规则和暂停控制。"
+        },
+        {
+          "question": "日历驱动与聊天式 AI 能组合使用吗？",
+          "answer": "可以。先由日历生成边界明确的草稿，再让用户通过对话追问、修改或审批，最后把确认结果写回项目或下一次事件。"
+        },
+        {
+          "question": "日历定时 AI 的成本应该怎么算？",
+          "answer": "用符合条件的运行次数乘以检索、模型、工具与审查成本，再与真正被采用的产物所节省的时间比较。还要记录误触发和无人打开的输出，不能只看 token 单价。"
         }
       ]
     },
@@ -5879,28 +6123,36 @@
     "/zh/blog/claude-code-vs-cowork-vs-tag": {
       "items": [
         {
-          "question": "我该用 Claude Code、Cowork 还是 Tag？",
-          "answer": "让形态匹配工作与时长。对象是代码仓库，选 Claude Code；对象是你作为知识工作者的文件、文件夹与连接应用，选 Claude Cowork；工作已被一个 Slack 频道「共同拥有」、要多人参与、要跑数小时且能自我排程，选 Claude Tag。分钟级的问题，仍归聊天。"
+          "question": "Claude Code、Cowork 和 Tag 最主要的区别是什么？",
+          "answer": "Claude Code 围绕代码仓工作，Cowork 面向个人的文件与连接应用，Tag 则进入共享 Slack 语境。应按任务的事实源和复核者选择入口。"
         },
         {
-          "question": "三者真正的区别是什么？",
-          "answer": "不在模型质量，在产品形态。三者跑的是同一个 Agent 循环，作用对象却不同：Code 单用户，限一名工程师的仓库；Cowork 同一循环对准文件与连接器；Tag 是第一个多人形态——每频道一个 Claude、异步、记忆久、组织级计量。Code 与 Cowork 同在一级，Tag 在下一级。"
+          "question": "什么时候该用 Claude Code？",
+          "answer": "当源码、测试、代码差异和工程评审决定任务是否完成时，优先使用 Claude Code。"
         },
         {
-          "question": "Claude Cowork 只是轻量版 Claude Code 吗？",
-          "answer": "不是——把它当轻量版会买错东西。Cowork 是换了作用对象的 Claude Code：整理文件夹、做演示稿的顾问，不是往仓库发代码的工程师；文件与连接器范围正是重点，而非缺陷。两者都本地、单用户，也都不是迈向 Tag 的半级台阶。按工作活在仓库还是文档与应用里来选。"
+          "question": "什么时候该用 Claude Cowork？",
+          "answer": "当一名负责人需要 Claude 跨文档、文件和已授权连接器完成多步骤知识工作时，适合使用 Cowork。"
         },
         {
-          "question": "Claude Tag 只是加了 Slack 通知的 Claude Code 吗？",
-          "answer": "不是。加一层通知成不了同事。只有三个迁移同时发生，Tag 才与另两者分开：单用户到多人（线程即提示词，谁都能接手）、pull 到 push（自己盯活、无需提示就捡起）、同步轮次到可自我排程的异步长周期。它也不是 Slack AI——那是帮团队读懂工作区，Tag 则跨工具执行、把结果写回线程。"
+          "question": "什么时候该用 Claude Tag？",
+          "answer": "当任务属于团队频道，且上下文、复核与交接都应留在 Slack 中供成员查看时，适合使用 Tag。"
         },
         {
-          "question": "什么时候异步同事比本地 Agent 更合适？",
-          "answer": "当任务的时长超过约一小时、瓶颈在协作时。本地 Agent 适合陪你跑约一小时的工作；当模型能连续干数小时并自我排定稍后复检，异步同事才值得上场。它还依赖三个条件：长周期自主、可审查的记忆、判断何时该行动的判断力。它最先接的活，正是协作与原始上下文密集的那种。"
+          "question": "Claude Cowork 仍然是独立模式吗？",
+          "answer": "这取决于你当前看到的 Claude 应用体验。Anthropic 正把部分能力整合进更统一的 Claude 界面，应以账户内实际入口为准，不要依赖旧名称。"
         },
         {
-          "question": "为什么 Tag 比 Code、Cowork 更难在企业落地？",
-          "answer": "两道关卡都跟上下文有关。成本：频道异步，让 1:1 会话便宜的缓存前缀往往已不在——小团队把前沿同事当免费劳动力，一个月可烧五位数。权限：看不见工作就干不了活，什么都能看见是隐患；按频道划分的身份与管理员配置的工具，尚不算完成态身份系统。小型、透明的科技公司最先过关。"
+          "question": "这三种 Claude 入口可以组合使用吗？",
+          "answer": "可以。团队可在 Tag 中协调，在 Cowork 中处理文档密集任务，再把代码仓修改交给 Claude Code，但责任人和复核流程必须清楚。"
+        },
+        {
+          "question": "Cowork 与 Tag 的未来任务或定时任务有何不同？",
+          "answer": "Anthropic 表示，用户在 Slack 委派任务后，Tag 可以规划未来工作并为自己安排任务；Cowork 的云端或定时工作仍与本地文件访问有别，后者依赖已授权的桌面连接。"
+        },
+        {
+          "question": "采用这些 Claude Agent 最安全的方式是什么？",
+          "answer": "先试点一个可撤销的流程，限制权限，指定复核者，写清完成标准并保留审计记录，再逐步扩大范围。"
         }
       ]
     },
@@ -6015,56 +6267,72 @@
     "/zh/blog/context-engineering-for-ai-agents": {
       "items": [
         {
-          "question": "「Context Engineering」是不是只是给提示词工程、RAG 和知识管理换了个新说法？",
-          "answer": "那些只是为 Context 服务的工具，不是替代品。提示词工程写指令，RAG 检索文档，知识管理整理 wiki。Context Engineering 决定的是：跨全部四层，Agent 需要知道什么，以及这些信息如何保持不过时——它是协调各层的架构层。这个词之所以新，是因为它命名的问题直到模型与 harness 成熟到足以把它暴露为瓶颈，才变得清晰可读。"
+          "question": "什么是 AI Agent 上下文工程？",
+          "answer": "它设计的是 Agent 做决定时可用的指令、工具、检索证据、任务状态、环境数据和记忆。"
         },
         {
-          "question": "模型越来越强，为什么还需要上下文工程？",
-          "answer": "因为模型吸收的是能力，不是 Context。推理、工具调用、更长的窗口都会随时间被模型吸收，但你工作里的具体事实不会。模型再强，也推断不出你上周二在客户电话里做了什么决定——除非那条信息被捕获、结构化并交付给它。实际上每次升级都会让缺失的 Context 更显眼：Agent 越聪明，越暴露出它不懂你的处境。"
+          "question": "上下文工程与提示工程有什么区别？",
+          "answer": "提示工程关注请求如何表达；上下文工程还决定可用证据和工具、权限如何生效、哪些状态应保留，以及多步骤任务如何压缩状态。"
         },
         {
-          "question": "如果我换了模型或 Agent 框架，之前投入的 Context 会全部消失吗？",
-          "answer": "如果你的 Context 只存在某个产品的专有格式里，会——迁移会很痛苦。这对用户是风险，也是优先选择「以可访问、结构化形式存储 Context 的产品」的理由。但 Context 深度天生有黏性：即使技术上能导出会议历史与项目文档，把它们重组给一个新 Agent 仍需实打实的功夫。请把「Context 可迁移性」当作要评估的功能，而不是事后补想的事。"
+          "question": "更大的上下文窗口一定会让 Agent 更好吗？",
+          "answer": "不一定。过期计划、相似记录、重叠工具和不可信指令会挤占相关证据。目标是与当前决策相关的精确上下文，而不是最大 token 数量。"
         },
         {
-          "question": "这只跟复杂的多 Agent 场景有关吗？简单用例也用得上？",
-          "answer": "Agent 在窄领域运作时，Context 只会更重要。通用 Agent 能靠含糊的 Context 蒙混过去，因为产出宽泛、能用对话修正；一个为「某位具体客户的某场具体会议」做准备的日历驱动 Agent，则需要精确的 Context——错误或缺失会产生立刻可见、代价高昂的失误。任务越窄，要求的 Context 保真度越高。"
+          "question": "Agent 的上下文应该包含什么？",
+          "answer": "应包含稳定策略、当前任务状态、清晰工具契约、最少但权威的证据、临时工作记忆，以及有明确出处和生命周期的长期记忆。"
         },
         {
-          "question": "上下文怎么积累，才不会变成第二份工作？",
-          "answer": "它必须被动到来——作为日常工作的副产品，因为手动打理要求用户持续自律，规模一大就会失败。这正是日历驱动架构的优势：事件、附件与重复规律自动进入系统，并天然按时间排列；文件系统、邮件、版本控制、项目看板也能扮演同样角色。目标是在用户还没来得及打磨或遗忘之前，就把 Context 收进来。"
+          "question": "Agent 应如何处理检索到的文档？",
+          "answer": "应把文档当数据，保留来源与时间，按实体和权限过滤，优先事实源，展示冲突，并阻止文档中的指令覆盖系统策略。"
         },
         {
-          "question": "每个 Agent 都必须做成日历驱动吗？",
-          "answer": "不是。日历是环境上下文最密、最天然的来源，却不是唯一来源——文件系统、邮件、版本控制与项目看板都承载环境上下文。真正的原则是：选「观察你实际活动」的工具，而不是「等你叙述」的工具。对多数单人创业者，最丰富的信号确实住在日历、收件箱与会议历史里，这正是日历驱动 Agent 有结构性先发优势的原因。"
+          "question": "什么是上下文压缩？",
+          "answer": "它用更小的结构化状态代替长历史。合格压缩要保留决定、承诺、负责人、截止日期、证据链接、已尝试动作和未解决冲突。"
+        },
+        {
+          "question": "哪些信息应该成为 Agent 长期记忆？",
+          "answer": "只有跨会话仍有价值，并且具备所有者、出处、确认规则、过期或复核日期和删除路径的信息才应保留。临时假设应随任务结束而失效。"
+        },
+        {
+          "question": "如何评估上下文工程？",
+          "answer": "用缺失、过期、冲突、恶意和受权限限制的输入测试，记录来源精确率、证据遗漏、越权检索、无依据陈述、工具误选、纠错能力和每个被接受任务的上下文成本。"
         }
       ]
     },
     "/zh/blog/cordis-plugin-framework": {
       "items": [
         {
-          "question": "Cordis 是 DeepSeek 的产品吗？",
-          "answer": "不是。Cordis 是开发者 shigma 创建的独立开源元框架，作为 Koishi 聊天机器人框架的底座已有四年。DeepSeek Harness 构建在 Cordis 之上，所以它会出现在 DeepSeek 的架构文档里。"
+          "question": "Cordis 是什么？",
+          "answer": "Cordis 是 DeepSeek Harness 内置使用的框架，用于组合插件、Context、Service、依赖注入、Effect 与 Event。"
         },
         {
-          "question": "什么是元框架？",
-          "answer": "用来构建框架的框架。Cordis 不针对某个具体领域（比如聊天机器人或 Web 服务器）提供 API，而是提供插件系统、依赖管理与资源生命周期控制所需的基础机制。它的名字来自拉丁语 _cor_，意为\"心脏\"。"
+          "question": "DeepSeek Harness 为什么使用 Cordis？",
+          "answer": "Cordis 提供可替换模块和明确的生命周期控制，让工具与服务能够按规则挂载、等待、重载和清理。"
         },
         {
-          "question": "\"时空可组合性\"是什么意思？",
-          "answer": "这是论文对动态系统所需的两个性质的命名：时间可组合性（组件的副作用在移除时可被彻底还原）与空间可组合性（组件可以声明依赖，由运行时响应式管理）。两者合在一起，让插件系统可以被安全地重载与演化。"
+          "question": "Cordis Context 是什么？",
+          "answer": "Context 是插件访问服务、注册行为并把资源限定在特定生命周期内的容器。"
         },
         {
-          "question": "Cordis 如何清理插件的副作用？",
-          "answer": "通过 ctx.effect。每个会产生副作用的调用都返回一个清理函数，运行时把它存下来，在插件卸载时按注册的逆序执行。这相当于 C++ 的 RAII 或 Rust 的 Drop，但在运行时层面处理，所以第三方插件也能干净卸载。"
+          "question": "Cordis 如何实现依赖注入？",
+          "answer": "插件通过注入规则声明所需服务。Cordis 会等待服务就绪，并随服务可用性变化启用或停用依赖行为。"
         },
         {
-          "question": "DeepSeek Harness 的四种预设模式是什么？",
-          "answer": "Standard（完整编码 Agent，含文件系统、shell、网页搜索、子 Agent 与 plan 模式）、Code（模型生成的代码编排工具调用）、Minimal（只有 bash 与文件编辑器——DeepSeek 官方基准所用）、Creator（构建自定义预设，带运行时检视与编写指导）。"
+          "question": "Cordis 的可逆 Effect 是什么？",
+          "answer": "Effect 把副作用和清理函数配对。插件卸载或 Context 结束时，Cordis 执行清理，避免监听器、定时器等资源泄漏。"
         },
         {
-          "question": "为什么可逆性对 AI Agent 尤其重要？",
-          "answer": "一个能修改自身运行时的 Agent——加工具、改主循环、演化工作流——只有在其每一项变更都能被回滚时，才值得被信任。可逆副作用就是把\"自修改 Agent\"变成工程范式而非研究风险的那个机制。"
+          "question": "Cordis 支持热重载吗？",
+          "answer": "其生命周期与可逆 Effect 设计支持安全的插件重载模式，前提是插件通过框架的清理机制登记资源。"
+        },
+        {
+          "question": "Cordis 是 Agent 模型或安全沙箱吗？",
+          "answer": "都不是。Cordis 是运行时组合基础设施，不提供 AI 模型，也不能替代操作系统隔离、权限设计或应用安全控制。"
+        },
+        {
+          "question": "什么情况下该把 Harness 扩展做成 Cordis 插件？",
+          "answer": "当扩展有独立生命周期、依赖共享服务，或需要在不改写主运行时的情况下移除和测试时，适合做成插件。"
         }
       ]
     },
@@ -6699,28 +6967,36 @@
     "/zh/blog/gpt-5-6-floatboat": {
       "items": [
         {
-          "question": "在 Floatboat 里用 GPT-5.6 需要 OpenAI API 密钥吗？",
-          "answer": "不需要。Sol、Terra、Luna 已内置在 Floatboat 里，零配置——不用申请 API 密钥、不用建 OpenAI 计费账号、不用搭路由层。它们自动出现在你的 agent workspace，与其他内置模型并列，从第一个 agent 起就能用。"
+          "question": "GPT-5.6 模型已进入 Floatboat 默认选择器吗？",
+          "answer": "没有。GPT-5.6 Sol 与 Terra 已进入底层评测和容量配置，但尚未在默认选择器中露出。"
         },
         {
-          "question": "Floatboat 会在 Sol、Terra、Luna 之间自动切换吗？",
-          "answer": "会——只要你用 Auto Mode。它按事件复杂度、上下文长度与时间，把任务路由到合适的档位；想手动控制，也可以为每条 agent pipeline 单独指定档位。无论哪种方式，Terra 都是基线默认，能高效处理多数例行 Agent 工作，Sol 则接偶尔的复杂事件。"
+          "question": "选择器下方配置了哪些 GPT-5.6 型号？",
+          "answer": "确认矩阵包含 gpt-5.6-sol 与 gpt-5.6-terra，GPT-5.6 Luna 不在其中。"
         },
         {
-          "question": "怎么知道某个具体日历事件该用哪一档？",
-          "answer": "先用 Terra 当默认。复杂事件——客户复盘、项目回顾、高利害会议——切到 Sol，这类往往也是你手动准备会超过 30 分钟的事件；高量级例行事件——周期性状态更新、标准跟进、事件分类——用 Luna。用上两三周，映射就会变成直觉；不想自己判断，就交给 Auto Mode。"
+          "question": "GPT-5.6 Sol 主要面向什么任务？",
+          "answer": "OpenAI 将 Sol 定位于高难度推理与 Agent 工作；这不代表它已能在 Floatboat 中直接选择。"
         },
         {
-          "question": "我能在 Floatboat 里用 GPT-5.6 Sol Ultra 模式吗？",
-          "answer": "可以。Sol Ultra 通过 Sol 档解锁，能跨并行工作流调度多个子 agent：准备复杂会议简报时，agent 可同时拉取上次会议纪要、查 CRM、扫近期邮件线程、起草谈话要点，而不是依次来做。它最适合需要多文档综合的事件，比如带交叉引用研究的客户会议准备。"
+          "question": "GPT-5.6 Terra 主要面向什么任务？",
+          "answer": "Terra 是成本更低的 GPT-5.6 变体，在 Floatboat 中仍是底层配置状态。"
         },
         {
-          "question": "分档用下来每月大概要花多少钱？",
-          "answer": "分档计费：Sol 输入/输出每百万 token 5/30 美元，Terra 2.50/15，Luna 1/6。按中等用量估算，推荐的三档全栈（Sol 难活、Terra 日常、Luna 路由）每月约 55 美元，比全跑旗舰档的约 85 美元省约 35%，内置提示词缓存还能再降。"
+          "question": "Floatboat 支持 GPT-5.6 Luna 吗？",
+          "answer": "目前没有确认配置包含 GPT-5.6 Luna。"
         },
         {
-          "question": "我是新用户，该怎么开始用 GPT-5.6？",
-          "answer": "老用户直接打开任意 agent workspace，三档模型与其余模型列在一起，无需额外集成步骤。新用户三步：下载桌面应用、连接日历、创建第一条 agent pipeline。头几周建议把 Terra 设为默认、让 Sol 偶尔接复杂事件：成本可控，又能熟悉各档能力。"
+          "question": "OpenAI 公布的价格会直接适用于 Floatboat 吗？",
+          "answer": "不一定。OpenAI 价格对应其自身渠道，Floatboat 套餐和计费需另行核实。"
+        },
+        {
+          "question": "OpenAI 已提供某模型，是否等于 Floatboat 也支持？",
+          "answer": "不等于。模型可能已在 OpenAI 出现，但在 Floatboat 中仍位于选择器下方或尚未登记。"
+        },
+        {
+          "question": "什么信息才算确认 Floatboat 正式上线？",
+          "answer": "应以客户端选择器或 Floatboat 官方发布说明为准，不能仅凭容量配置判断。"
         }
       ]
     },
@@ -6902,26 +7178,74 @@
     },
     "/zh/blog/grok-4-6": {
       "items": [
-        {"question":"Grok 4.6 是什么？","answer":"Grok 4.6 是 xAI 在 2026 年 8 月发布的编程、Agent 任务与知识工作模型。它支持文本和图像输入、文本输出、工具调用、结构化输出，以及四档推理力度。"},
-        {"question":"Grok 4.6 的上下文窗口有多大？","answer":"xAI 官方模型页标注为 500,000 token。它适合大型代码仓与文档集，但提示词达到 200,000 token 后会进入更高费率。"},
-        {"question":"Grok 4.6 API 价格是多少？","answer":"提示词低于 20 万 token 时，xAI 标价为每百万输入 token 2 美元、缓存输入 0.50 美元、输出 6 美元；达到 20 万及以上时分别变为 4、1、12 美元，并对整次请求计费。"},
-        {"question":"Grok 4.6 是开放权重模型吗？","answer":"不是。xAI 通过 API、旗下产品与合作平台提供 Grok 4.6，但没有发布可供自托管的模型权重。"},
-        {"question":"Grok 4.6 会自动知道最新事件吗？","answer":"不会。xAI 标注的知识截止时间是 2026 年 2 月 1 日；实时信息需要启用网页搜索或 X 搜索工具。"},
-        {"question":"Grok 4.6 的基准表现如何？","answer":"发布时，xAI 公布的 Artificial Analysis Intelligence Index 为 61 分，Agent 化知识工作表现突出。阅读成绩时必须核对版本，例如 Terminal-Bench v2.1 与 v3.0 不能直接比较。"},
-        {"question":"新项目应该用 Grok 4.6 还是 Grok 4.7？","answer":"Grok 4.7 是更新型号，新项目通常应优先测试 4.7。已经验证 4.6、平台尚未开放 4.7，或需要固定旧版本做回归时，继续使用 4.6 仍然合理。"},
-        {"question":"团队应该怎样评估 Grok 4.6？","answer":"应使用真实任务，记录完成质量、工具可靠性、人工返工量、上下文表现、总 token 成本与端到端耗时。模型对比时还要统一框架、权限、推理档位和重试策略。"}
+        {
+          "question": "Grok 4.6 是什么？",
+          "answer": "Grok 4.6 是 xAI 在 2026 年 8 月发布的编程、Agent 任务与知识工作模型。它支持文本和图像输入、文本输出、工具调用、结构化输出，以及四档推理力度。"
+        },
+        {
+          "question": "Grok 4.6 的上下文窗口有多大？",
+          "answer": "xAI 官方模型页标注为 500,000 token。它适合大型代码仓与文档集，但提示词达到 200,000 token 后会进入更高费率。"
+        },
+        {
+          "question": "Grok 4.6 API 价格是多少？",
+          "answer": "提示词低于 20 万 token 时，xAI 标价为每百万输入 token 2 美元、缓存输入 0.50 美元、输出 6 美元；达到 20 万及以上时分别变为 4、1、12 美元，并对整次请求计费。"
+        },
+        {
+          "question": "Grok 4.6 是开放权重模型吗？",
+          "answer": "不是。xAI 通过 API、旗下产品与合作平台提供 Grok 4.6，但没有发布可供自托管的模型权重。"
+        },
+        {
+          "question": "Grok 4.6 会自动知道最新事件吗？",
+          "answer": "不会。xAI 标注的知识截止时间是 2026 年 2 月 1 日；实时信息需要启用网页搜索或 X 搜索工具。"
+        },
+        {
+          "question": "Grok 4.6 的基准表现如何？",
+          "answer": "发布时，xAI 公布的 Artificial Analysis Intelligence Index 为 61 分，Agent 化知识工作表现突出。阅读成绩时必须核对版本，例如 Terminal-Bench v2.1 与 v3.0 不能直接比较。"
+        },
+        {
+          "question": "新项目应该用 Grok 4.6 还是 Grok 4.7？",
+          "answer": "Grok 4.7 是更新型号，新项目通常应优先测试 4.7。已经验证 4.6、平台尚未开放 4.7，或需要固定旧版本做回归时，继续使用 4.6 仍然合理。"
+        },
+        {
+          "question": "团队应该怎样评估 Grok 4.6？",
+          "answer": "应使用真实任务，记录完成质量、工具可靠性、人工返工量、上下文表现、总 token 成本与端到端耗时。模型对比时还要统一框架、权限、推理档位和重试策略。"
+        }
       ]
     },
     "/zh/blog/grok-bot": {
       "items": [
-        {"question":"Grok Bot 是什么？","answer":"Grok Bot 是 xAI 的常驻工作 Agent。每个 Bot 可以使用云电脑，登录获准工具，执行多步任务，并在用户离开后继续运行。"},
-        {"question":"Grok Bot 和 Grok 是同一个产品吗？","answer":"不是。Grok 主要是对话式助手，Grok Bot 则负责跨应用执行并交付结果。两者可能使用相关模型，但执行环境和权限有所不同。"},
-        {"question":"X 上的 @bot 是什么？","answer":"@bot 是 X 上的自动账号，会把帖子或回复中的请求转交给用户已连接的 Grok Bot。X 官方帮助页明确说，@bot 不会自己回答请求。"},
-        {"question":"Grok Bot 连接 X 后能做什么？","answer":"接入官方 X 插件后，Bot 可以搜索帖子、阅读时间线、检查提及、获取趋势并管理书签，具体能力受账号权限和功能开放范围约束。"},
-        {"question":"多个 Grok Bot 可以协作吗？","answer":"可以。xAI 支持多个 Bot 并行运行、互发消息和在群聊中协调；Team Bots 还可以让团队共享获准的上下文、工具与记忆。"},
-        {"question":"Grok Bot 怎样学习重复流程？","answer":"用户可以让 Bot 跟随一次实际流程，保存为 Routine，再通过修改意见完善。界面、凭据和源数据都会变化，因此 Routine 仍需监控。"},
-        {"question":"把工作账号连接到 Grok Bot 安全吗？","answer":"只有在使用专用或最小权限账号、为关键动作设置审批、保留审计记录、确保凭据可撤销并准备恢复方案时，才适合受控试点。直接授予广泛个人权限并不稳妥。"},
-        {"question":"Grok Bot 什么时候比传统工作流自动化更合适？","answer":"它更适合需要判断、跨多个网页工具且缺少完整 API 的任务。规则固定、每次都应相同执行的流程，通常用传统工作流引擎更容易审计。"}
+        {
+          "question": "Grok Bot 是什么？",
+          "answer": "Grok Bot 是 xAI 的常驻工作 Agent。每个 Bot 可以使用云电脑，登录获准工具，执行多步任务，并在用户离开后继续运行。"
+        },
+        {
+          "question": "Grok Bot 和 Grok 是同一个产品吗？",
+          "answer": "不是。Grok 主要是对话式助手，Grok Bot 则负责跨应用执行并交付结果。两者可能使用相关模型，但执行环境和权限有所不同。"
+        },
+        {
+          "question": "X 上的 @bot 是什么？",
+          "answer": "@bot 是 X 上的自动账号，会把帖子或回复中的请求转交给用户已连接的 Grok Bot。X 官方帮助页明确说，@bot 不会自己回答请求。"
+        },
+        {
+          "question": "Grok Bot 连接 X 后能做什么？",
+          "answer": "接入官方 X 插件后，Bot 可以搜索帖子、阅读时间线、检查提及、获取趋势并管理书签，具体能力受账号权限和功能开放范围约束。"
+        },
+        {
+          "question": "多个 Grok Bot 可以协作吗？",
+          "answer": "可以。xAI 支持多个 Bot 并行运行、互发消息和在群聊中协调；Team Bots 还可以让团队共享获准的上下文、工具与记忆。"
+        },
+        {
+          "question": "Grok Bot 怎样学习重复流程？",
+          "answer": "用户可以让 Bot 跟随一次实际流程，保存为 Routine，再通过修改意见完善。界面、凭据和源数据都会变化，因此 Routine 仍需监控。"
+        },
+        {
+          "question": "把工作账号连接到 Grok Bot 安全吗？",
+          "answer": "只有在使用专用或最小权限账号、为关键动作设置审批、保留审计记录、确保凭据可撤销并准备恢复方案时，才适合受控试点。直接授予广泛个人权限并不稳妥。"
+        },
+        {
+          "question": "Grok Bot 什么时候比传统工作流自动化更合适？",
+          "answer": "它更适合需要判断、跨多个网页工具且缺少完整 API 的任务。规则固定、每次都应相同执行的流程，通常用传统工作流引擎更容易审计。"
+        }
       ]
     },
     "/zh/blog/gumloop-alternatives-2026": {
@@ -7163,28 +7487,36 @@
     "/zh/blog/how-to-use-obsidian-with-ai-agent": {
       "items": [
         {
-          "question": "用 AI Agent 需要装一个专门的 Obsidian 插件吗？",
-          "answer": "不一定。很多桌面 Agent 只需要 vault 的文件夹路径。当你想在 Obsidian **内部**获得聊天或编码 Agent 体验时，Copilot 或 Claudian 这类插件有用；当工作横跨其它应用或 IDE 时，文件夹级 Agent 与 MCP 桥有用。两者可以一起用。"
+          "question": "使用 AI Agent 一定要安装 Obsidian 插件吗？",
+          "answer": "不一定。能读文件的 Agent 获得 Vault 文件夹权限后即可工作；想在 Obsidian 内直接使用 AI 时再装插件，需要可重复的 Obsidian 命令时可用官方 CLI。"
         },
         {
-          "question": "AI Agent 会覆盖我的 vault 吗？",
-          "answer": "只有在你授予写入权限、并批准破坏性操作时才会。先只读，或写入一个 AI Inbox 文件夹。优先选择会先预览文件移动的工具——包括 Floatboat 的<a href=\"/ai-file-organizer\">文件整理功能</a>——再执行批量改动。编码 Agent 嵌入和 MCP 写入工具同样值得这份谨慎。"
+          "question": "第一次让 Agent 处理 Vault，最安全的任务是什么？",
+          "answer": "先做只读任务，例如列出一个项目目录的文件、按来源路径总结，或找出未决问题；确认没有越界后，再开放一次小范围写入。"
         },
         {
-          "question": "这和 Obsidian Copilot 或 Web Clipper Interpreter 是一回事吗？",
-          "answer": "不是。那些工具主要增强 Obsidian 内部或向 Obsidian 导入时的捕捉与对话。桌面 AI Agent 则是在本地文件与已连接应用之间编排任务。Interpreter 在剪藏页面时可以用你自己的模型供应商，但它替代不了由日历触发的项目执行。Copilot 能在 vault **内部**加 Agent 模式，但那和日历驱动 OS 的重心仍然不同。"
+          "question": "应该把整个 Vault 都授权给 Agent 吗？",
+          "answer": "通常不该。只开放当前任务需要的项目目录，私人日记、归档、疑似凭据与 `.obsidian/` 默认排除，除非任务确有必要。"
         },
         {
-          "question": "Floatboat 能读我的 Obsidian 库吗？",
-          "answer": "能，就像它能读你在 Mac 或 Windows 上授权的其它本地文件夹一样。把 workspace 指向相关项目或事件的 vault 路径。当下载文件夹或项目转储需要先整理时，把它和<a href=\"/ai-file-organizer\">文件整理功能</a>搭配用。"
+          "question": "什么是 Agent Inbox？",
+          "answer": "它是专门接收 AI 草稿的可写目录。来源笔记保持只读，只有经过人工审核的内容才移入正式知识库。"
         },
         {
-          "question": "我应该先选哪款 Obsidian AI Agent？",
-          "answer": "如果你的每周由会议与截止日期塑形、笔记只是众多输入之一，从 Floatboat 开始。如果你主要需要编辑笔记时的问答与起草，从 Copilot for Obsidian 开始。如果你已经天天用 Claude Code，评估 Claudian 或某个 MCP 桥。如果你只想要相关笔记发现，Smart Connections 可能就够了，不必有什么「Agent」头衔。"
+          "question": "什么时候该用 Obsidian CLI，而不是直接读文件？",
+          "answer": "搜索、笔记操作、每日笔记、属性或 Bases 等结构化任务适合 CLI；需要把 Vault 与外部 PDF、下载文件等一起处理时，直接授权文件夹更合适。"
         },
         {
-          "question": "我该用 AI 笔记应用替换 Obsidian 吗？",
-          "answer": "如果你重视本地 Markdown 和链接，通常不需要。要替换的是那些逼你手工重做跨应用组装的工作流——而不是一个本来就正常运转的知识库。想与纯聊天工具做品类对比，见 <a href=\"/blog/what-is-claude-cowork\">Claude Cowork</a> 以及我们各篇 Agent 指南里讨论的日历驱动替代品。"
+          "question": "AI Agent 会弄坏内部链接或 frontmatter 吗？",
+          "answer": "有写权限时可能会。每批修改后都要检查文件名、`[[内部链接]]`、嵌入、附件路径、YAML 键和值类型。"
+        },
+        {
+          "question": "Vault 在本地，是否代表 AI 处理也一定在本地？",
+          "answer": "不代表。源文件在本机，但 Agent 或插件仍可能把选中内容发往云端模型；应核对权限、处理地点、保留期限与训练条款。"
+        },
+        {
+          "question": "允许 Agent 写入前，该怎样备份 Vault？",
+          "answer": "备份整个文件夹，包括附件与相关配置；使用 Git 时先提交干净版本。同步不能代替备份，因为误删也会同步。"
         }
       ]
     },
@@ -7319,28 +7651,36 @@
     "/zh/blog/kimi-k3-floatboat": {
       "items": [
         {
-          "question": "Kimi K3 在 Floatboat 里能用吗？",
-          "answer": "能。Kimi K3 是 Floatboat 的内置模型家族之一——与 DeepSeek、Claude、Gemini、MiniMax、GLM 并列——自 2026 年 7 月 16 日起就可在模型下拉菜单中选用。无需单独的 Kimi API Key、无需路由配置、无需计费设置；Auto Mode 也会在事件复杂度合适时自动把任务路由给 K3。"
+          "question": "Kimi K3 已进入 Floatboat 默认选择器吗？",
+          "answer": "没有。Floatboat 已配置 kimi-k3 的底层容量，但它尚未在默认选择器中露出。"
         },
         {
-          "question": "Kimi K3 是什么？",
-          "answer": "Kimi K3 是 Moonshot AI 的 2.8 万亿参数开源模型，于 2026 年 7 月 16 日发布。它支持 100 万 token 上下文窗口，带原生视觉理解，面向长时程编码、知识工作与推理设计。Kimi 称 K3 为全球首个开源 3T 级模型，并承诺在 2026 年 7 月 27 日前发布完整模型权重。"
+          "question": "Kimi K3 容量记录意味着什么？",
+          "answer": "运行时已有模型画像和预算条目，可供评测或后续路由准备，但不能证明已公开上线。"
         },
         {
-          "question": "Kimi K3 是开源的吗？",
-          "answer": "Kimi 称 K3 为开放模型，并表示完整模型权重将在 2026 年 7 月 27 日前发布。截至本文写作时，权重尚未公开。一旦发布，K3 将成为 3T 参数级别里第一款开源权重的模型。"
+          "question": "Kimi K3 的主要参数是什么？",
+          "answer": "架构、上下文、多模态和基准应以 Moonshot 官方文档为准，因为版本会变化。"
         },
         {
-          "question": "Kimi K3 适合处理 Floatboat 里的哪些任务？",
-          "answer": "把 K3 留给每月少数「正确性压倒成本」的事件。100 万上下文适合多文档准备——比如客户季度评审要一遍读完往期纪要、CRM 记录与邮件线程再综合成简报；原生视觉理解处理设计评审与截图驱动的迭代；常开最大推理应对复盘、复杂谈判简报这类综合任务。日常编码交给 K2.7 Code，事件分类交给 K2.6，更划算。"
+          "question": "Floatboat 使用的模型 ID 是什么？",
+          "answer": "确认的底层 ID 是 kimi-k3，兼容条目不代表它已成为选择器选项。"
         },
         {
-          "question": "Kimi K3 是最好的编码模型吗？",
-          "answer": "没有任何单项基准能判定一个模型对全部编码任务都最好。Kimi 官方技术博客显示，相对 Claude Fable 5 与 GPT-5.6 Sol，K3 在部分编码基准上领先（如 SWE Marathon），在另一些上落后（如 DeepSWE 和 FrontierSWE）。对你的代码库来说哪个模型最好，取决于你的仓库结构、测试套件、工具链与验收标准——切换前请拿真实工作流去测 K3。"
+          "question": "容量画像是否保证 100 万上下文？",
+          "answer": "不保证。配置预算不是用户承诺，实际限制取决于部署和发布状态。"
         },
         {
-          "question": "用 Kimi K3 的成本大概是多少？",
-          "answer": "K3 是 Moonshot 目前最贵的模型：输入每百万 token $3、输出每百万 $15，缓存输入则降到每百万 $0.30。一位单人创业者每月 30–50 个日历事件全部跑 K3，大约 $85；分层方案——复杂事件用 K3、常规工作用 K2.7 Code、路由用 K2.6——约 $55，按现实的缓存水平还能降到约 $40。"
+          "question": "现在能免 API Key 使用 Kimi K3 吗？",
+          "answer": "确认矩阵没有证明它已公开上线，因此不能承诺免 Key 接入。"
+        },
+        {
+          "question": "团队应该如何评估 Kimi K3？",
+          "answer": "用代表性任务测试，并设置验收标准、成本上限和人工复核，不要只看单项基准。"
+        },
+        {
+          "question": "什么信息才算确认正式上线？",
+          "answer": "应看到客户端选择器中的模型，或明确的 Floatboat 发布说明。"
         }
       ]
     },
@@ -8118,41 +8458,73 @@
     },
     "/zh/blog/what-is-claude-cowork": {
       "items": [
-        {"question":"Claude Cowork 是什么？","answer":"Claude Cowork 是 Anthropic 面向多步知识工作的 Agent 工作区。它能在获准文件和工具中执行、协调子任务，并交付文档、表格、演示文稿等成果供人复核。"},
-        {"question":"Claude Cowork 还是独立模式吗？","answer":"取决于账号。Anthropic 正向 Pro 与 Max 用户逐步推送 Cowork 与 Chat 合并后的统一 Claude 体验，部分账号仍保留两个独立入口。"},
-        {"question":"Claude Cowork 与普通 Claude 对话有什么区别？","answer":"普通对话适合回答、解释和短文起草；Cowork 面向更长的任务，可以读写文件、调用已连接工具、运行代码并交付完整成果。"},
-        {"question":"Claude Cowork 与 Claude Code 有什么区别？","answer":"Claude Code 为代码仓、终端和 IDE 中的软件工程而设计；Cowork 采用相似的 Agent 化方式，但主要处理文档、分析、运营和跨应用知识工作。"},
-        {"question":"合上笔记本后 Claude Cowork 还能运行吗？","answer":"云端 Cowork 任务和云端定时任务可以继续运行。若任务依赖本地文件、浏览器会话或桌面应用，仍可能需要 Claude Desktop 和对应电脑在线。"},
-        {"question":"哪些套餐支持 Claude Cowork？","answer":"Anthropic 当前帮助资料列出 Pro、Max、Team 与 Enterprise 付费套餐，但网页、移动端、Beta 状态和组织接入仍会因套餐与管理员设置而异。"},
-        {"question":"Claude Cowork 可以运行定时任务吗？","answer":"可以。定时任务既能按需执行，也能按周期运行，并使用已配置的连接器、插件和云端文件；依赖本地资源时，电脑是否需要在线会有所不同。"},
-        {"question":"怎样安全测试 Claude Cowork？","answer":"先选边界清楚且可回滚的任务，限制文件夹和账号权限，写明验收标准并要求证据，再检查准确性、完整性、可追溯性、审批行为和扣除返工后的真实节省时间。"}
+        {
+          "question": "Claude Cowork 是什么？",
+          "answer": "Claude Cowork 是 Anthropic 面向多步知识工作的 Agent 工作区。它能在获准文件和工具中执行、协调子任务，并交付文档、表格、演示文稿等成果供人复核。"
+        },
+        {
+          "question": "Claude Cowork 还是独立模式吗？",
+          "answer": "取决于账号。Anthropic 正向 Pro 与 Max 用户逐步推送 Cowork 与 Chat 合并后的统一 Claude 体验，部分账号仍保留两个独立入口。"
+        },
+        {
+          "question": "Claude Cowork 与普通 Claude 对话有什么区别？",
+          "answer": "普通对话适合回答、解释和短文起草；Cowork 面向更长的任务，可以读写文件、调用已连接工具、运行代码并交付完整成果。"
+        },
+        {
+          "question": "Claude Cowork 与 Claude Code 有什么区别？",
+          "answer": "Claude Code 为代码仓、终端和 IDE 中的软件工程而设计；Cowork 采用相似的 Agent 化方式，但主要处理文档、分析、运营和跨应用知识工作。"
+        },
+        {
+          "question": "合上笔记本后 Claude Cowork 还能运行吗？",
+          "answer": "云端 Cowork 任务和云端定时任务可以继续运行。若任务依赖本地文件、浏览器会话或桌面应用，仍可能需要 Claude Desktop 和对应电脑在线。"
+        },
+        {
+          "question": "哪些套餐支持 Claude Cowork？",
+          "answer": "Anthropic 当前帮助资料列出 Pro、Max、Team 与 Enterprise 付费套餐，但网页、移动端、Beta 状态和组织接入仍会因套餐与管理员设置而异。"
+        },
+        {
+          "question": "Claude Cowork 可以运行定时任务吗？",
+          "answer": "可以。定时任务既能按需执行，也能按周期运行，并使用已配置的连接器、插件和云端文件；依赖本地资源时，电脑是否需要在线会有所不同。"
+        },
+        {
+          "question": "怎样安全测试 Claude Cowork？",
+          "answer": "先选边界清楚且可回滚的任务，限制文件夹和账号权限，写明验收标准并要求证据，再检查准确性、完整性、可追溯性、审批行为和扣除返工后的真实节省时间。"
+        }
       ]
     },
     "/zh/blog/what-is-claude-tag": {
       "items": [
         {
-          "question": "Claude Tag 和\"AI 队友\"是一回事吗？",
-          "answer": "**AI 队友**是一个品类——指在你的协作栈里行为像同事的 Agent。**Claude Tag**是 Anthropic 为 Slack 做的品牌化实现：共享频道身份、`@Claude` 委派、组织级工具访问。其他产品也在不同平台或协议上兜售\"AI 队友\"。"
+          "question": "Claude Tag 是什么？",
+          "answer": "Claude Tag 是 Anthropic 的共享 Slack Agent 体验，可在获准频道中通过 @Claude 调用。"
         },
         {
-          "question": "Claude Tag 和 Claude Cowork 有什么区别？",
-          "answer": "Cowork 是处理 Claude 应用内本地文件与连接器的**用户主动发起桌面 Agent**。Tag 是带多人可见性与组织计费的**共享 Slack 频道 Agent**。Cowork 适合单人文件批处理；Tag 适合 Slack 里团队可见的执行。"
+          "question": "Claude Tag 是否取代了早期 Slack 应用？",
+          "answer": "Anthropic 将 Tag 作为更新的 Slack 体验推出；管理员应以当前迁移和可用范围说明为准。"
         },
         {
-          "question": "用 Claude Tag 需要 Claude Enterprise 或 Team 吗？",
-          "answer": "需要，截至 2026 年 6 月的 beta 发布如此。Claude Tag 被限制在**Team 和 Enterprise**方案内，初始跑在 Slack 上。个人 Pro 或 Max 订阅者用的是个人表面上的 Cowork 与 Chat，而不是共享频道的 Tag 模式。"
+          "question": "Claude Tag 能使用哪些上下文？",
+          "answer": "它可使用获准的对话上下文与连接资源，具体受工作区配置和访问控制约束。"
         },
         {
-          "question": "2026 年 8 月 3 日，Slack 里的 Claude 会怎样？",
-          "answer": "Anthropic 会把旧版 Claude in Slack 应用替换成 Claude Tag 体验。管理员必须在公布的迁移窗口内选择启用并重新配置频道访问与工具连接——不要假设权限会悄悄自动迁移。"
+          "question": "Claude Tag 能在 Slack 外执行操作吗？",
+          "answer": "它可调用获准连接工具，但必须遵守组织配置的权限和复核边界。"
         },
         {
-          "question": "Claude Tag 能根据我的日历自动准备会议吗？",
-          "answer": "只有当你连接相关工具、并向 Claude 发出日历感知的请求（@ 它）或配置 Ambient 行为时才可能。Tag 默认不会像日历驱动 Agent 系统那样把每个日历事件当作自动准备触发器。要事件原生的准备与跟进，请在我们的 AI 日程 Agent 总览里把 Tag 和日历运行时 Agent 放在一起对比。"
+          "question": "Claude Tag 等同于 Slack 搜索或 Slack AI 吗？",
+          "answer": "不等同。搜索负责找信息，Tag 面向利用选定上下文和工具完成多步骤团队工作。"
         },
         {
-          "question": "FloatIM 是 Claude Tag 的替代品吗？",
-          "answer": "FloatIM 是一个**Agent 原生消息网络**——Agent 是一等参与者，而不是 Slack 插件。它适合想要在 Slack 租户边界之外拥有可治理的多 Agent 群聊的团队。FloatIM 与 Tag 哪个更适合你的工作形态，见排好序的替代品文章。"
+          "question": "Tag 与 Cowork、Claude Code 有何区别？",
+          "answer": "Tag 的工作归团队 Slack 频道所有，Cowork 面向个人知识工作，Claude Code 面向代码仓。"
+        },
+        {
+          "question": "最重要的安全控制有哪些？",
+          "answer": "最小权限、获准频道和工具、明确复核者、可审计记录与清晰升级路径。"
+        },
+        {
+          "question": "什么任务适合作为首次试点？",
+          "answer": "选择可撤销、低风险的频道流程，限定输入，写清交付物，并指定人工审批者。"
         }
       ]
     },
@@ -8307,28 +8679,36 @@
     "/zh/blog/what-is-obsidian-vault": {
       "items": [
         {
-          "question": "Obsidian Vault 是一种特殊文件类型吗？",
-          "answer": "不是。vault 是设备上的普通文件夹，笔记通常是任何编辑器都能打开的 .md 文件。Obsidian 把设置与插件放进隐藏的 .obsidian 目录，也可能为特定功能生成 .canvas、.base 等格式——但知识库本身仍是磁盘上普通、可移植的文件：卸载 Obsidian，文件依然还在。"
+          "question": "Obsidian Vault 是什么？",
+          "answer": "它是设备上的本地文件夹，Obsidian 把它当作知识库打开；里面主要是 Markdown 笔记、附件和该 Vault 专属的设置。"
         },
         {
-          "question": "用 Vault 需要 Obsidian Sync 吗？",
-          "answer": "不需要。Sync 是用于加密多设备同步与发布的付费附加项，不是必需品。许多人只保留单设备 vault，或用自己已信任的工具同步——iCloud、Syncthing 或 Git——核心应用完全离线可用、无需账号。只有想要 Obsidian 自家加密同步时才需要买 Sync。"
+          "question": "Vault 是一种专有文件格式吗？",
+          "answer": "不是。Vault 是普通文件夹，笔记大多是 `.md` 文本；Obsidian 在其上增加知识库功能，而不会把笔记换成封闭格式。"
         },
         {
-          "question": "我可以有多个 Vault 吗？",
-          "answer": "可以。把工作与个人笔记分开、或按客户与项目隔离，用独立 vault 很常见。每个 vault 有自己的文件、插件设置与配置。经验法则：只有当信任边界或插件栈出现分叉时才拆——而不是标签看着挤就拆。代价是上下文切换；收益是把爆炸半径握在自己手里。"
+          "question": "`.obsidian` 文件夹里有什么？",
+          "answer": "当前 Vault 的设置、快捷键、主题与社区插件配置。操作系统通常会把这个目录隐藏起来。"
         },
         {
-          "question": "我的 Vault 私密吗？",
-          "answer": "本地而言，是的——文件留在你的设备上，除非你选择同步或发布；Obsidian 核心应用不会把笔记上传到它的服务器。要注意：第三方同步、云端 AI 插件、或接入远程模型服务商的 Web Clipper Interpreter，会按各自政策看到你发送的内容。控制权在你，请审慎选择服务。"
+          "question": "创建 Vault 必须购买 Obsidian Sync 吗？",
+          "answer": "不需要。本地 Vault 不登录账号、不开付费同步也能使用；Sync 只是可选的跨设备远程副本服务。"
         },
         {
-          "question": "Vault 和 Google Drive 里的文档文件夹有什么不同？",
-          "answer": "Drive 的文档文件夹是「存储 + 在线编辑器生态」；Obsidian Vault 是「本地 Markdown + 为链接、反向链接、图谱与插件而生的笔记应用」。可以把 vault 放进同步的 Drive 或 Dropbox 文件夹，但单靠 Drive 给不了你反向链接、关系图谱与文件级控制这套知识库体验。"
+          "question": "本地 Vault 会自动加密吗？",
+          "answer": "不会。本地文件依赖设备和磁盘本身的安全措施；Obsidian Sync 的加密针对远程 Vault，不会代替本机磁盘加密。"
         },
         {
-          "question": "AI Agent 能读取并使用我的 Obsidian Vault 吗？",
-          "answer": "能——而且这是重点。vault 是磁盘上的纯文本，能读目录的 AI Agent 可直接打开、搜索、改写你的笔记——看到的是文件与 frontmatter，而非锁死的 schema。是否搭配属工作流选择而非 Obsidian 功能；实操见配套指南《把 Obsidian 与 AI Agent 一起用》。"
+          "question": "可以同时使用多个 Vault 吗？",
+          "answer": "可以。当工作、客户或插件配置存在不同信任边界时，多个 Vault 很有用；如果只是主题不同，通常先用文件夹与属性即可。"
+        },
+        {
+          "question": "可以把一个 Vault 放进另一个 Vault 吗？",
+          "answer": "不建议。Obsidian 明确提醒，内部链接以 Vault 为边界，嵌套后可能无法正确更新。"
+        },
+        {
+          "question": "Obsidian Bases 会把 Vault 变成数据库吗？",
+          "answer": "它提供类似数据库的视图，但笔记数据仍在本地 Markdown 与属性中；`.base` 保存视图定义，不会另复制一套笔记数据库。"
         }
       ]
     },
@@ -8427,28 +8807,36 @@
     "/zh/blog/where-is-world-cup-2026-host-cities": {
       "items": [
         {
-          "question": "2026 世界杯在哪里举办？",
-          "answer": "在美国、加拿大和墨西哥——这是首届由三个东道国共同承办的男子世界杯。赛事不是单一目的地，而是横跨 16 个主办城市的北美网络；所以更该用一张主办城市地图来回答\"在哪办\"，而不是一个地名。其中美国 11 个主办市场、加拿大 2 个、墨西哥 3 个。"
+          "question": "2026 年世界杯在哪里举行？",
+          "answer": "赛事于 2026 年 6 月 11 日至 7 月 19 日在加拿大、墨西哥和美国举行，是首届由三个国家共同承办的男子世界杯。"
         },
         {
           "question": "2026 世界杯有多少个主办城市？",
-          "answer": "一共 16 个主办市场：美国 11 个，加拿大 2 个（温哥华、多伦多），墨西哥 3 个（瓜达拉哈拉、蒙特雷、墨西哥城）。FIFA 有时会用都会区而非城市来标注场馆——旧金山湾区、纽约/新泽西就是典型——所以请把它当作\"主办市场\"清单来理解，别只按城市名对号入座。"
+          "answer": "共有 16 个主办市场：加拿大 2 个、墨西哥 3 个、美国 11 个。"
         },
         {
-          "question": "为什么这届世界杯横跨三个国家？",
-          "answer": "因为 2026 届扩军到 48 队、104 场比赛，任何单一国家的现有场馆网络都很难独自吃下。FIFA 最终选了美加墨联合承办，使它成为男子世界杯历史上地理跨度最大的一届。三国的分工也不只是物流考虑，更是身份：墨西哥城的阿兹特克体育场把本届赛事和世界杯历史连在了一起。"
+          "question": "2026 世界杯决赛在哪里踢，谁夺冠？",
+          "answer": "决赛在新泽西州东卢瑟福的 New York New Jersey Stadium 举行；7 月 19 日，西班牙加时 1∶0 击败阿根廷。"
         },
         {
-          "question": "哪些球场会承办 2026 世界杯比赛？",
-          "answer": "一共 16 座球场，常见叫法包括 BC Place、Lumen Field、Levi's Stadium、SoFi Stadium、Estadio Akron、Arrowhead Stadium、AT&T Stadium、NRG Stadium、Mercedes-Benz Stadium、Estadio BBVA、Estadio Azteca、BMO Field、Gillette Stadium、MetLife Stadium、Lincoln Financial Field 和 Hard Rock Stadium。赛事配置下的容量可能和日常数字不同，官方资料也更常用中立的赛事名而非这些商业名。"
+          "question": "揭幕战在哪里举行？",
+          "answer": "6 月 11 日的揭幕战在 Mexico City Stadium 举行，墨西哥 2∶0 击败南非。"
         },
         {
-          "question": "为什么官方球场名和我熟悉的场馆名不一样？",
-          "answer": "因为 FIFA 通常用干净的赛事标签——\"纽约/新泽西体育场\"、\"洛杉矶体育场\"——而不是带赞助商的品牌名，以便跨材料保持一致、避免商业冲突。有些标签还指代整个都会区，而不是该城市的市中心。拿不准时把城市和球场名一起搜，例如 \"New York/New Jersey Stadium MetLife\"，订酒店前务必先确认场馆实际位置。"
+          "question": "为什么 FIFA 球场名和商业名称不一样？",
+          "answer": "FIFA 使用中立赛事名称，以避免商业冠名冲突并保持官方赛程一致；查历史比赛记录时应优先采用赛事名。"
         },
         {
-          "question": "各主办城市之间离得远吗？行程怎么排？",
-          "answer": "比地图看起来要远。主办城市从温哥华、西雅图一路铺到墨西哥城和迈阿密，很多城市对之间需要坐飞机而不是短途即达；三个国家还意味着时区和开球时间窗各不相同。文中建议按区域集群规划——德州集群、美东走廊——并在淘汰赛阶段尤其重视距离，因为球队的下一站要看比赛结果而定。"
+          "question": "所有球场都在主办城市行政区内吗？",
+          "answer": "不是。部分名称指都会区，例如波士顿赛场在福克斯堡、达拉斯赛场在阿灵顿、洛杉矶赛场在英格尔伍德、纽约新泽西赛场在东卢瑟福。"
+        },
+        {
+          "question": "哪个主办市场承办的比赛最多？",
+          "answer": "达拉斯共承办 9 场，是 2026 年所有主办市场中最多的，其中包括一场半决赛。"
+        },
+        {
+          "question": "在哪里能查看全部淘汰赛比分与场馆？",
+          "answer": "可查看 FIFA 官方淘汰赛赛果，或站内已完赛的 2026 世界杯签表；后者记录了从 32 强赛到决赛的完整路径。"
         }
       ]
     },
@@ -8647,56 +9035,72 @@
     "/zh/blog/world-cup-2026-bracket": {
       "items": [
         {
-          "question": "世界杯对阵表（Bracket）是什么？",
-          "answer": "它是淘汰赛阶段的「地图」：展示各队从小组赛后一路晋级的方式。2026 年的路径是 32 强赛→16 强赛→四分之一决赛→半决赛→三四名决赛→决赛，每一行都列出对阵、日期、球场与胜者。用法要上游先行：先确认最终小组排名，再据此填对阵表。"
+          "question": "谁赢得了 2026 年世界杯？",
+          "answer": "西班牙在决赛中加时 1 比 0 击败阿根廷。"
         },
         {
-          "question": "为什么 2026 年世界杯会先打 32 强赛？",
-          "answer": "因为本届从 32 队扩到 48 队，更大的参赛规模需要多一轮淘汰赛来衔接熟悉的后段赛程。32 强赛给小组第一多设了一道坎，也让成绩靠前的小组第三有机会真正改写对阵——这正是 2026 对阵表与旧模板不同的地方。"
+          "question": "谁打进了制胜球？",
+          "answer": "费兰·托雷斯在第 106 分钟进球。"
         },
         {
-          "question": "在哪里下载对阵模板和可打印的 PDF 追踪表？",
-          "answer": "在本页靠上的「下载」资源区，有两种格式：PNG 对阵图预览，用于快速浏览与分享；可打印的 PDF 追踪表，用来手写记录比分、胜者与办公室竞猜笔记。PDF 不使用官方 FIFA 标志，采用中立的编辑标注。"
+          "question": "淘汰赛为什么从 32 强开始？",
+          "answer": "本届扩军至 48 队，共有 32 队进入淘汰赛。"
         },
         {
-          "question": "什么时候可以填对阵表？",
-          "answer": "预测版对阵表在赛前就能填。但官方淘汰赛对阵表必须等小组赛结果确定落位后才能填——小组第一、第二还是成绩靠前的小组第三，按官方分配会走上完全不同的路径。"
+          "question": "淘汰赛一共进行了多少场？",
+          "answer": "包括三四名决赛和决赛在内，共 32 场。"
         },
         {
-          "question": "本页的比赛对阵和比分来自哪里？",
-          "answer": "来自 FIFA 官方对阵表——本页每张淘汰赛表格下方都标明了出处。各队为何落到某个位置，则连接到「2026 世界杯小组赛与积分榜」一文，因为那里解释了名额如何挣得。关于路径难度的点评属于编辑分析，与官方说法明确分开。"
+          "question": "西班牙的夺冠路径是什么？",
+          "answer": "页面按官方赛果列出西班牙从 32 强到决赛的全部对手与比分。"
         },
         {
-          "question": "填对阵表算是在赌博吗？",
-          "answer": "不算。本站的预测内容仅供娱乐与办公室竞猜参考，不是投注建议，相关文章也做了明确标注。本页本身保持事实性——比赛、日期、球场、比分、胜者与下一路径——让读者能把追踪表、预测与计分方法清楚分开。"
+          "question": "AET 是什么意思？",
+          "answer": "AET 表示加时赛后，即 90 分钟战平后又进行了 30 分钟比赛。"
+        },
+        {
+          "question": "点球大战如何记录？",
+          "answer": "页面把比赛比分和点球结果分开，避免把加时后的平局误写成常规时间胜利。"
+        },
+        {
+          "question": "这些赛果以什么来源为准？",
+          "answer": "以 FIFA 官方比赛中心和赛事报告为一手来源。"
         }
       ]
     },
     "/zh/blog/world-cup-2026-bracketology": {
       "items": [
         {
-          "question": "世界杯对阵解析是什么意思？",
-          "answer": "世界杯对阵解析，是把淘汰赛签表当作一条「路径」来读，而不只是一串比赛。它权衡对阵、休整、场馆背景、冷门风险与后续对手，而不只是选一个冠军。有用的问题不是「孤立地看谁最强」，而是「谁必须在什么顺序、多长的恢复窗口、多大的压力下击败谁」。"
+          "question": "赛事结束后，2026 世界杯 Bracketology 还是什么意思？",
+          "answer": "它指对照完整淘汰赛路径，复盘赛前记录的推理，而不是继续预测已经结束的比赛。"
         },
         {
-          "question": "48 队赛制会怎样改变对阵解析？",
-          "answer": "它让「读路径」变得更加关键。扩军后多出一轮 32 强赛，通往决赛的路更长了：淘汰赛场次变多，意味着受伤、加时、点球、情绪起伏与出人意料的黑马之旅，机会都随之增加。所以 2026 年给体能消耗、轮换与对阵成本的分量，要比旧版 32 队赛制更重。"
+          "question": "谁赢得了 2026 世界杯？",
+          "answer": "西班牙在 7 月 19 日的决赛中加时 1∶0 击败阿根廷，费兰·托雷斯第 106 分钟打入制胜球。"
         },
         {
-          "question": "世界杯对阵解析和预测有什么不同？",
-          "answer": "预测关注你认为会发生什么——某场比赛谁会赢；对阵解析关注签表如何构成，以及为什么某条路径可能比另一条更容易或更难。一篇好的对阵解析可以不给出强硬的冠军选择，就解释清楚路径难度。预测则是给冠军叙事、冷门角度与竞猜式选择排序的那一层。"
+          "question": "2026 世界杯两场半决赛结果是什么？",
+          "answer": "西班牙 2∶0 击败法国，阿根廷 2∶1 击败英格兰；随后西班牙与阿根廷会师决赛。"
         },
         {
-          "question": "应该从冠军倒推着填签表吗？",
-          "answer": "通常不要。从冠军倒推，会让前面每个选择都去凑同一个故事。更好的做法是逐轮填写：从最早还未决出的对阵开始，凭证据逐个判断，最后再复查整条决赛路径。这能减少热门偏见，也能让你看出「一场冷门就会改变整条路线」的位置。"
+          "question": "旧签表应该怎样评分？",
+          "answer": "分别检查结果、路径、赛前理由与信心校准。猜对可能只是理由含糊的好运，猜错也可能准确识别了真正的不确定性。"
         },
         {
-          "question": "这是投注建议吗？",
-          "answer": "不是。本文仅供娱乐与编辑分析——不构成投注建议、财务建议，也不保证比赛结果。把选择当作办公室竞猜与群聊里的推理练习就好。一张签表可以很聪明，但足球不欠任何人一个干净利落的预测。"
+          "question": "为什么要保留带时间戳的原始签表？",
+          "answer": "它能阻止事后改写。没有赛前截图、文件或消息，就只能研究比赛路径，无法诚实评估自己的预测。"
         },
         {
-          "question": "在哪里可以拿到可打印的 2026 世界杯签表？",
-          "answer": "用 World Cup 2026 签表模板与跟踪器。它包含签表结构、比赛日期、场馆与可下载的跟踪器素材。如果你不想手动查静态赛程，也可以订阅 FloatCup 的 World Cup 2026 日历——赛程层自动更新，提醒到点自动送达。"
+          "question": "Bracketology 和实力榜是一回事吗？",
+          "answer": "不是。实力榜把球队单独排序；Bracketology 追踪谁会在哪一轮相遇，以及一场结果如何改变后续路径。"
+        },
+        {
+          "question": "复盘签表时该怎样看待加时赛？",
+          "answer": "把加时记作路径成本与下一轮需要观察的恢复因素，但不能自动断言疲劳导致了后续结果。"
+        },
+        {
+          "question": "这套 Bracketology 方法属于投注建议吗？",
+          "answer": "不属于。它只是复盘体育预测的编辑与学习框架，不构成投注或财务建议，也不保证未来结果。"
         }
       ]
     },
@@ -9556,83 +9960,285 @@
         }
       ]
     },
-    "/blog/local-first-vs-cloud-agent-workspace": {"items": [
-      {"question": "Does local-first mean the AI model runs offline?", "answer": "No. Local-first describes where the workspace state and authoritative files live. A local-first application can still call a cloud model, so check model routing, retention, and network settings separately."},
-      {"question": "Can a cloud agent access files on a sleeping laptop?", "answer": "Not unless those files were uploaded or synchronized elsewhere. A desktop bridge can expose local files, but it normally has to remain online for the cloud session to reach them."},
-      {"question": "Is a hybrid agent workspace safer?", "answer": "Only when its boundary is explicit. Keep sensitive files, credentials, and approvals in the trusted layer, give remote workers narrow access, and log what crosses the boundary."},
-      {"question": "Is local-first the same as using a local AI model?", "answer": "No. Local-first describes where project state and authoritative files live. The workspace can still send selected content to a cloud model, while a cloud workspace can use an open-weight model."},
-      {"question": "What data should I check before choosing an agent workspace?", "answer": "Trace original file storage, data sent for model inference, tool execution, credentials, logs, snapshots, and final artifacts. Review the path for a real workflow rather than relying on a local or cloud label."},
-      {"question": "When is a cloud agent workspace the better choice?", "answer": "Cloud is usually stronger for scheduled work, event-driven automation, cross-device access, team collaboration, centralized policy, and jobs that need managed or elastic compute."},
-      {"question": "How can I test whether an agent workspace is portable?", "answer": "Export a representative project and open its documents, code, data, and logs without the original agent product. Also verify how credentials, memory, and task history can be removed or transferred."}
-    ]},
-    "/zh/blog/local-first-vs-cloud-agent-workspace": {"items": [
-      {"question": "本地优先是否意味着模型完全离线运行？", "answer": "不是。本地优先描述的是工作状态和权威文件主要存放在哪里，应用仍然可以调用云端模型，因此还要分别核对模型路由、数据保留和网络设置。"},
-      {"question": "电脑合盖后，云端 Agent 还能读取本地文件吗？", "answer": "通常不能，除非文件已经上传或同步到其他位置。桌面桥接可以开放本地文件，但设备和桥接程序一般必须在线。"},
-      {"question": "混合 Agent 工作站一定更安全吗？", "answer": "不一定。只有明确划分信任边界才有意义：敏感文件、凭证和审批留在可信层，远程执行只获得最小访问，并记录跨边界的数据与动作。"},
-      {"question": "本地优先和使用本地模型是一回事吗？", "answer": "不是。本地优先描述项目状态与权威文件存放在哪里，它仍然可以把选中的内容发送给云端模型；云端 Workspace 也可以使用开源模型。"},
-      {"question": "选择 Agent 工作站前应核对哪些数据路径？", "answer": "至少检查原始文件存储、发送给模型的数据、工具执行位置、凭证、日志、快照和最终成果。应跟踪一条真实工作流，而不是只看本地或云端标签。"},
-      {"question": "什么任务更适合云端 Agent 工作站？", "answer": "定时执行、事件触发、跨设备接续、团队协作、集中策略管理，以及需要托管或弹性算力的任务，通常更适合云端。"},
-      {"question": "怎样判断 Agent Workspace 是否容易迁移？", "answer": "导出一个真实项目，确认文档、代码、数据与日志不用原产品也能打开；同时检查凭证、记忆和任务历史能否删除或转移。"}
-    ]},
-    "/blog/what-is-chatgpt-space": {"items": [
-      {"question": "What is ChatGPT Space?", "answer": "ChatGPT Space is a persistent area in ChatGPT for editable Pages, files, folders, and shared work. It gives maintained artifacts a home outside the conversation that produced them."},
-      {"question": "Is ChatGPT Space the same as Projects?", "answer": "No. A Project organizes chats, sources, files, and project instructions so repeated conversations can use the same context. Space organizes editable Pages and files around durable work. OpenAI keeps the two features separate."},
-      {"question": "Does ChatGPT Space replace Library?", "answer": "OpenAI says Space replaces Library for accounts that have access to Space. That does not mean every saved file should become a Page; source files can remain files while actively maintained documents are better Page candidates."},
-      {"question": "Who can use ChatGPT Space?", "answer": "As of October 10, 2026, OpenAI documents Page creation and editing for ChatGPT Pro, Business, and Enterprise. Availability and sharing options can also depend on region, workspace role, and administrator settings."},
-      {"question": "Can collaborators see my private ChatGPT conversations or Memory?", "answer": "Sharing a Page does not give collaborators access to your private chats or Memory. However, information that you or an agent writes onto the shared Page becomes visible to people who can view it."},
-      {"question": "Do files attached to a Page inherit its permissions?", "answer": "Files uploaded into a Page follow the Page's permissions. A link to a separately stored file does not grant access to that source; the original service keeps enforcing its own permissions."},
-      {"question": "Does ChatGPT Space update Pages automatically?", "answer": "Not by itself. OpenAI says Keep Updated was not available at launch. Recurring work must be configured as a separate scheduled task or agent workflow and then verified."},
-      {"question": "When should I use Space instead of a Project?", "answer": "Use Space when the maintained Page or document is the center of the work. Use a Project when ongoing conversations need the same bounded files, sources, and instructions. Some workflows benefit from using both."}
-    ]},
-    "/zh/blog/what-is-chatgpt-space": {"items": [
-      {"question": "ChatGPT Space 是什么？", "answer": "它是 ChatGPT 中用于管理可编辑 Pages、文件、文件夹和共享工作的持久空间，让需要长期维护的成果不再只能留在生成它的聊天记录里。"},
-      {"question": "ChatGPT Space 和 Projects 是同一个功能吗？", "answer": "不是。Project 通过聊天、来源、文件和项目指令为多轮对话提供限定上下文；Space 更关注可编辑 Pages 与长期成果的组织。OpenAI 仍将两者作为独立功能。"},
-      {"question": "ChatGPT Space 会替代 Library 吗？", "answer": "OpenAI 表示，对于已经获得 Space 使用资格的账户，Space 会替代 Library。但这不代表每个旧文件都应转成 Page；原始材料可以继续作为文件，需要持续维护的文档更适合进入 Page。"},
-      {"question": "哪些账号可以使用 ChatGPT Space？", "answer": "截至 2026 年 10 月 10 日，OpenAI 官方说明中，创建和编辑 Space 内容面向 ChatGPT Pro、Business 和 Enterprise。地区、账号角色和管理员策略还可能影响实际可用范围。"},
-      {"question": "共享 Page 后，别人能看到我的私人聊天或 Memory 吗？", "answer": "不能直接看到。共享 Page 不会开放你的私人聊天或 Memory；但你或 Agent 写入 Page 的内容会对有权查看该页面的人可见。"},
-      {"question": "Page 里的文件会继承页面权限吗？", "answer": "直接上传到 Page 的文件跟随 Page 权限；链接到其他位置的文件不会自动开放，仍由原服务控制访问。需要注意，复制或摘要到 Page 的内容会对 Page 读者可见。"},
-      {"question": "ChatGPT Space 会自动更新 Page 吗？", "answer": "不会仅凭页面内容自动运行。OpenAI 表示 Keep Updated 在上线时不可用；周期性工作需要另行配置定时任务或 Agent 流程，并核对是否真的启用和执行。"},
-      {"question": "什么时候该用 Space，什么时候该用 Project？", "answer": "需要长期维护、共同编辑一份成果时优先考虑 Space；多轮聊天需要反复使用同一批文件、来源和指令时，Project 更合适。有些工作可以用 Project 讨论，再用 Page 保存确认后的版本。"}
-    ]},
-    "/blog/ai-agent-connectors-explained": {"items": [
-      {"question": "Is MCP the same as an AI agent connector?", "answer": "No. MCP standardizes how an AI host discovers and calls tools, resources, and prompts. A connector is the full integration, including the service API, authentication, credentials, permissions, host policy, approvals, logging, and recovery."},
-      {"question": "Why do AI agent connectors use OAuth?", "answer": "OAuth lets a connector act on a user's behalf without receiving the account password. It protects delegated access, but the token still needs narrow scopes, an intended audience, safe storage, expiration, revocation, and service-side authorization."},
-      {"question": "Are OAuth scopes enough to limit an AI agent?", "answer": "No. Effective access also depends on the user's account role, folder or project permissions, the tools exposed by the connector, and the agent host's policy. All four layers should be reviewed together."},
-      {"question": "Should every connector action require approval?", "answer": "Not necessarily. Repeated low-risk reads can often run under policy. Sending, publishing, deleting, paying, deploying, or changing production data should receive stronger approval based on the action, target, and impact."},
-      {"question": "What is prompt injection in a connector workflow?", "answer": "Prompt injection occurs when retrieved content contains instructions that try to redirect the agent. Treat emails, documents, web pages, tickets, tool descriptions, and tool results as untrusted data, and keep consequential actions behind policy and approval."},
-      {"question": "Are local MCP servers safer than remote connectors?", "answer": "Not automatically. Local servers may keep some data on the device, but a poorly sandboxed process can reach local files, secrets, or commands. Remote services introduce a separate processor and token custodian. Choose according to the data boundary and operating model."},
-      {"question": "How should a team test a connector before rollout?", "answer": "Map one real workflow, inventory its tools, test both allowed and denied resources, introduce hostile content, inspect the approval details, revoke the credential, and verify that the audit trail can reconstruct what happened."},
-      {"question": "Why does a connector return incomplete or duplicate results?", "answer": "Common causes include pagination, caching, rate limits, stale sync checkpoints, timeouts, and unsafe retries. Diagnose the failing boundary before retrying, and use idempotency or reconciliation for actions that can create side effects."}
-    ]},
-    "/zh/blog/ai-agent-connectors-explained": {"items": [
-      {"question": "MCP 和 AI Agent Connector 是一回事吗？", "answer": "不是。MCP 统一 AI Host 发现与调用工具、资源和提示词的方式；Connector 则是完整集成，还包含服务 API、认证、凭证、权限、Host 策略、审批、日志和恢复机制。"},
-      {"question": "AI Agent Connector 为什么使用 OAuth？", "answer": "OAuth 让 Connector 无须取得账户密码，就能代表用户访问服务。但 Token 仍需要限制 Scope 和 Audience，妥善保管，设置过期与撤销，并由业务系统逐次鉴权。"},
-      {"question": "限制 OAuth Scope 就能管住 Agent 吗？", "answer": "不能。实际权限还取决于用户或服务账户的角色、文件夹或项目权限、Connector 开放的工具，以及 Agent Host 的策略。审查时要看这四层的交集。"},
-      {"question": "Connector 的每次调用都需要人工审批吗？", "answer": "不一定。重复、低风险的读取可以按策略运行；发送、发布、删除、付款、部署或修改生产数据等动作，应根据目标与影响提高审批强度。"},
-      {"question": "Connector 工作流中的 Prompt Injection 是什么？", "answer": "Agent 读取的邮件、文档、网页、工单、工具描述或返回结果里可能藏有诱导指令。系统应把这些内容视为不可信数据，并把有后果的动作留在策略与审批之后。"},
-      {"question": "本地 MCP Server 一定比远程 Connector 安全吗？", "answer": "不一定。本地运行可以让部分数据留在设备上，但缺少沙箱的进程可能读取文件、密钥或执行命令；远程服务则会引入新的数据处理方和 Token 保管方。需要根据数据边界与运维能力选择。"},
-      {"question": "团队应该怎样试运行一个 Connector？", "answer": "先选一条真实工作流，盘点 Tool List，分别测试允许与拒绝路径，加入恶意内容，检查审批信息，撤销凭证，并确认审计记录能够还原执行过程。"},
-      {"question": "为什么 Connector 会返回不完整或重复结果？", "answer": "常见原因包括分页、缓存、Rate Limit、同步水位、超时和不安全重试。应该先定位失败边界；可能产生副作用的动作还需要 Idempotency 或执行后的状态核对。"}
-    ]},
-    "/blog/what-is-an-agent-harness": {"items": [
-      {"question": "What is an agent harness?", "answer": "An agent harness is the runtime and control layer around a model. It manages context, the agent loop, tools, state, sandboxes, approvals, observability, and recovery."},
-      {"question": "How is a harness different from an agent framework?", "answer": "A framework or SDK helps developers build agent systems. A harness is the operating implementation that runs the loop and policies. A framework can be used to build a harness."},
-      {"question": "Can a better harness improve the same model?", "answer": "Yes. Better context selection, clearer tool contracts, deterministic verification, state management, and recovery can improve task completion without changing the underlying model."},
-      {"question": "Is an agent harness the same as a workspace?", "answer": "No. A workspace is where people, agents, files, and artifacts meet. A harness operates and controls agent runs. A product may bundle both, or a workspace may connect to a remote harness."},
-      {"question": "Does every agent harness need a sandbox?", "answer": "Not necessarily. Read-only or tightly scoped tools may not require a full sandbox. Code execution and computer use usually benefit from isolation, but authorization and approval still have to be enforced outside the sandbox."},
-      {"question": "How does an agent harness recover from failure?", "answer": "It stores durable checkpoints, classifies the failure, and chooses a safe response such as bounded retry, argument correction, resume, rollback, or human review. External side effects need idempotency or state checks before they are repeated."},
-      {"question": "What should an agent harness trace?", "answer": "A useful trace connects model turns, context versions, tool calls, execution identity, approvals, artifacts, verification, cost, and terminal status under one run ID, while redacting sensitive data."},
-      {"question": "When is a full agent harness unnecessary?", "answer": "A single model call or fixed workflow is usually better for predictable classification, summarization, or deterministic transformations. A harness earns its complexity when work is multi-step, tool-using, interruptible, consequential, or independently verifiable."}
-    ]},
-    "/zh/blog/what-is-an-agent-harness": {"items": [
-      {"question": "Agent Harness 是什么？", "answer": "它是模型外围的运行和控制层，负责上下文、Agent Loop、工具、状态、沙箱、审批、可观测性和失败恢复。"},
-      {"question": "Agent Harness 和 Agent Framework 有什么区别？", "answer": "Framework 或 SDK 帮助开发者搭建 Agent 系统；Harness 是实际运行循环和策略的实现。开发者可以用 Framework 构建 Harness。"},
-      {"question": "不换模型，只优化 Harness 会有提升吗？", "answer": "会。更准确的上下文选择、更清楚的工具契约、确定性验证、状态管理和恢复机制，都可能在模型不变时提高任务完成质量。"},
-      {"question": "Agent Harness 和 Workspace 是一回事吗？", "answer": "不是。Workspace 是人、Agent、文件和交付物共同工作的空间；Harness 负责操作和控制 Agent 运行。一个产品可以同时包含两者，也可以让 Workspace 连接远程 Harness。"},
-      {"question": "所有 Agent Harness 都需要 Sandbox 吗？", "answer": "不一定。只读或范围很窄的工具未必需要完整 Sandbox；代码执行和电脑操作通常更需要隔离。但身份授权和人工审批仍应在 Sandbox 之外强制执行。"},
-      {"question": "Agent Harness 如何从失败中恢复？", "answer": "它保存持久检查点，判断失败发生在哪一层，再选择限次重试、修正参数、恢复运行、回滚或人工处理。涉及外部副作用时，重放之前必须检查幂等键或真实状态。"},
-      {"question": "Agent Harness 应该记录哪些 Trace？", "answer": "一条有用的 Trace 应在同一 Run ID 下关联模型轮次、上下文版本、工具调用、执行身份、审批、交付物、验证、成本与停止状态，同时对敏感数据进行脱敏。"},
-      {"question": "什么任务不需要完整的 Agent Harness？", "answer": "路径明确的分类、摘要或确定性格式转换，通常用单次模型调用或固定 Workflow 更简单。任务步骤不确定、需要工具、可能中断、具有真实副作用或能够独立验证时，Harness 才更有价值。"}
-    ]}
+    "/blog/local-first-vs-cloud-agent-workspace": {
+      "items": [
+        {
+          "question": "Does local-first mean the AI model runs offline?",
+          "answer": "No. Local-first describes where the workspace state and authoritative files live. A local-first application can still call a cloud model, so check model routing, retention, and network settings separately."
+        },
+        {
+          "question": "Can a cloud agent access files on a sleeping laptop?",
+          "answer": "Not unless those files were uploaded or synchronized elsewhere. A desktop bridge can expose local files, but it normally has to remain online for the cloud session to reach them."
+        },
+        {
+          "question": "Is a hybrid agent workspace safer?",
+          "answer": "Only when its boundary is explicit. Keep sensitive files, credentials, and approvals in the trusted layer, give remote workers narrow access, and log what crosses the boundary."
+        },
+        {
+          "question": "Is local-first the same as using a local AI model?",
+          "answer": "No. Local-first describes where project state and authoritative files live. The workspace can still send selected content to a cloud model, while a cloud workspace can use an open-weight model."
+        },
+        {
+          "question": "What data should I check before choosing an agent workspace?",
+          "answer": "Trace original file storage, data sent for model inference, tool execution, credentials, logs, snapshots, and final artifacts. Review the path for a real workflow rather than relying on a local or cloud label."
+        },
+        {
+          "question": "When is a cloud agent workspace the better choice?",
+          "answer": "Cloud is usually stronger for scheduled work, event-driven automation, cross-device access, team collaboration, centralized policy, and jobs that need managed or elastic compute."
+        },
+        {
+          "question": "How can I test whether an agent workspace is portable?",
+          "answer": "Export a representative project and open its documents, code, data, and logs without the original agent product. Also verify how credentials, memory, and task history can be removed or transferred."
+        }
+      ]
+    },
+    "/zh/blog/local-first-vs-cloud-agent-workspace": {
+      "items": [
+        {
+          "question": "本地优先是否意味着模型完全离线运行？",
+          "answer": "不是。本地优先描述的是工作状态和权威文件主要存放在哪里，应用仍然可以调用云端模型，因此还要分别核对模型路由、数据保留和网络设置。"
+        },
+        {
+          "question": "电脑合盖后，云端 Agent 还能读取本地文件吗？",
+          "answer": "通常不能，除非文件已经上传或同步到其他位置。桌面桥接可以开放本地文件，但设备和桥接程序一般必须在线。"
+        },
+        {
+          "question": "混合 Agent 工作站一定更安全吗？",
+          "answer": "不一定。只有明确划分信任边界才有意义：敏感文件、凭证和审批留在可信层，远程执行只获得最小访问，并记录跨边界的数据与动作。"
+        },
+        {
+          "question": "本地优先和使用本地模型是一回事吗？",
+          "answer": "不是。本地优先描述项目状态与权威文件存放在哪里，它仍然可以把选中的内容发送给云端模型；云端 Workspace 也可以使用开源模型。"
+        },
+        {
+          "question": "选择 Agent 工作站前应核对哪些数据路径？",
+          "answer": "至少检查原始文件存储、发送给模型的数据、工具执行位置、凭证、日志、快照和最终成果。应跟踪一条真实工作流，而不是只看本地或云端标签。"
+        },
+        {
+          "question": "什么任务更适合云端 Agent 工作站？",
+          "answer": "定时执行、事件触发、跨设备接续、团队协作、集中策略管理，以及需要托管或弹性算力的任务，通常更适合云端。"
+        },
+        {
+          "question": "怎样判断 Agent Workspace 是否容易迁移？",
+          "answer": "导出一个真实项目，确认文档、代码、数据与日志不用原产品也能打开；同时检查凭证、记忆和任务历史能否删除或转移。"
+        }
+      ]
+    },
+    "/blog/what-is-chatgpt-space": {
+      "items": [
+        {
+          "question": "What is ChatGPT Space?",
+          "answer": "ChatGPT Space is a persistent area in ChatGPT for editable Pages, files, folders, and shared work. It gives maintained artifacts a home outside the conversation that produced them."
+        },
+        {
+          "question": "Is ChatGPT Space the same as Projects?",
+          "answer": "No. A Project organizes chats, sources, files, and project instructions so repeated conversations can use the same context. Space organizes editable Pages and files around durable work. OpenAI keeps the two features separate."
+        },
+        {
+          "question": "Does ChatGPT Space replace Library?",
+          "answer": "OpenAI says Space replaces Library for accounts that have access to Space. That does not mean every saved file should become a Page; source files can remain files while actively maintained documents are better Page candidates."
+        },
+        {
+          "question": "Who can use ChatGPT Space?",
+          "answer": "As of October 10, 2026, OpenAI documents Page creation and editing for ChatGPT Pro, Business, and Enterprise. Availability and sharing options can also depend on region, workspace role, and administrator settings."
+        },
+        {
+          "question": "Can collaborators see my private ChatGPT conversations or Memory?",
+          "answer": "Sharing a Page does not give collaborators access to your private chats or Memory. However, information that you or an agent writes onto the shared Page becomes visible to people who can view it."
+        },
+        {
+          "question": "Do files attached to a Page inherit its permissions?",
+          "answer": "Files uploaded into a Page follow the Page's permissions. A link to a separately stored file does not grant access to that source; the original service keeps enforcing its own permissions."
+        },
+        {
+          "question": "Does ChatGPT Space update Pages automatically?",
+          "answer": "Not by itself. OpenAI says Keep Updated was not available at launch. Recurring work must be configured as a separate scheduled task or agent workflow and then verified."
+        },
+        {
+          "question": "When should I use Space instead of a Project?",
+          "answer": "Use Space when the maintained Page or document is the center of the work. Use a Project when ongoing conversations need the same bounded files, sources, and instructions. Some workflows benefit from using both."
+        }
+      ]
+    },
+    "/zh/blog/what-is-chatgpt-space": {
+      "items": [
+        {
+          "question": "ChatGPT Space 是什么？",
+          "answer": "它是 ChatGPT 中用于管理可编辑 Pages、文件、文件夹和共享工作的持久空间，让需要长期维护的成果不再只能留在生成它的聊天记录里。"
+        },
+        {
+          "question": "ChatGPT Space 和 Projects 是同一个功能吗？",
+          "answer": "不是。Project 通过聊天、来源、文件和项目指令为多轮对话提供限定上下文；Space 更关注可编辑 Pages 与长期成果的组织。OpenAI 仍将两者作为独立功能。"
+        },
+        {
+          "question": "ChatGPT Space 会替代 Library 吗？",
+          "answer": "OpenAI 表示，对于已经获得 Space 使用资格的账户，Space 会替代 Library。但这不代表每个旧文件都应转成 Page；原始材料可以继续作为文件，需要持续维护的文档更适合进入 Page。"
+        },
+        {
+          "question": "哪些账号可以使用 ChatGPT Space？",
+          "answer": "截至 2026 年 10 月 10 日，OpenAI 官方说明中，创建和编辑 Space 内容面向 ChatGPT Pro、Business 和 Enterprise。地区、账号角色和管理员策略还可能影响实际可用范围。"
+        },
+        {
+          "question": "共享 Page 后，别人能看到我的私人聊天或 Memory 吗？",
+          "answer": "不能直接看到。共享 Page 不会开放你的私人聊天或 Memory；但你或 Agent 写入 Page 的内容会对有权查看该页面的人可见。"
+        },
+        {
+          "question": "Page 里的文件会继承页面权限吗？",
+          "answer": "直接上传到 Page 的文件跟随 Page 权限；链接到其他位置的文件不会自动开放，仍由原服务控制访问。需要注意，复制或摘要到 Page 的内容会对 Page 读者可见。"
+        },
+        {
+          "question": "ChatGPT Space 会自动更新 Page 吗？",
+          "answer": "不会仅凭页面内容自动运行。OpenAI 表示 Keep Updated 在上线时不可用；周期性工作需要另行配置定时任务或 Agent 流程，并核对是否真的启用和执行。"
+        },
+        {
+          "question": "什么时候该用 Space，什么时候该用 Project？",
+          "answer": "需要长期维护、共同编辑一份成果时优先考虑 Space；多轮聊天需要反复使用同一批文件、来源和指令时，Project 更合适。有些工作可以用 Project 讨论，再用 Page 保存确认后的版本。"
+        }
+      ]
+    },
+    "/blog/ai-agent-connectors-explained": {
+      "items": [
+        {
+          "question": "Is MCP the same as an AI agent connector?",
+          "answer": "No. MCP standardizes how an AI host discovers and calls tools, resources, and prompts. A connector is the full integration, including the service API, authentication, credentials, permissions, host policy, approvals, logging, and recovery."
+        },
+        {
+          "question": "Why do AI agent connectors use OAuth?",
+          "answer": "OAuth lets a connector act on a user's behalf without receiving the account password. It protects delegated access, but the token still needs narrow scopes, an intended audience, safe storage, expiration, revocation, and service-side authorization."
+        },
+        {
+          "question": "Are OAuth scopes enough to limit an AI agent?",
+          "answer": "No. Effective access also depends on the user's account role, folder or project permissions, the tools exposed by the connector, and the agent host's policy. All four layers should be reviewed together."
+        },
+        {
+          "question": "Should every connector action require approval?",
+          "answer": "Not necessarily. Repeated low-risk reads can often run under policy. Sending, publishing, deleting, paying, deploying, or changing production data should receive stronger approval based on the action, target, and impact."
+        },
+        {
+          "question": "What is prompt injection in a connector workflow?",
+          "answer": "Prompt injection occurs when retrieved content contains instructions that try to redirect the agent. Treat emails, documents, web pages, tickets, tool descriptions, and tool results as untrusted data, and keep consequential actions behind policy and approval."
+        },
+        {
+          "question": "Are local MCP servers safer than remote connectors?",
+          "answer": "Not automatically. Local servers may keep some data on the device, but a poorly sandboxed process can reach local files, secrets, or commands. Remote services introduce a separate processor and token custodian. Choose according to the data boundary and operating model."
+        },
+        {
+          "question": "How should a team test a connector before rollout?",
+          "answer": "Map one real workflow, inventory its tools, test both allowed and denied resources, introduce hostile content, inspect the approval details, revoke the credential, and verify that the audit trail can reconstruct what happened."
+        },
+        {
+          "question": "Why does a connector return incomplete or duplicate results?",
+          "answer": "Common causes include pagination, caching, rate limits, stale sync checkpoints, timeouts, and unsafe retries. Diagnose the failing boundary before retrying, and use idempotency or reconciliation for actions that can create side effects."
+        }
+      ]
+    },
+    "/zh/blog/ai-agent-connectors-explained": {
+      "items": [
+        {
+          "question": "MCP 和 AI Agent Connector 是一回事吗？",
+          "answer": "不是。MCP 统一 AI Host 发现与调用工具、资源和提示词的方式；Connector 则是完整集成，还包含服务 API、认证、凭证、权限、Host 策略、审批、日志和恢复机制。"
+        },
+        {
+          "question": "AI Agent Connector 为什么使用 OAuth？",
+          "answer": "OAuth 让 Connector 无须取得账户密码，就能代表用户访问服务。但 Token 仍需要限制 Scope 和 Audience，妥善保管，设置过期与撤销，并由业务系统逐次鉴权。"
+        },
+        {
+          "question": "限制 OAuth Scope 就能管住 Agent 吗？",
+          "answer": "不能。实际权限还取决于用户或服务账户的角色、文件夹或项目权限、Connector 开放的工具，以及 Agent Host 的策略。审查时要看这四层的交集。"
+        },
+        {
+          "question": "Connector 的每次调用都需要人工审批吗？",
+          "answer": "不一定。重复、低风险的读取可以按策略运行；发送、发布、删除、付款、部署或修改生产数据等动作，应根据目标与影响提高审批强度。"
+        },
+        {
+          "question": "Connector 工作流中的 Prompt Injection 是什么？",
+          "answer": "Agent 读取的邮件、文档、网页、工单、工具描述或返回结果里可能藏有诱导指令。系统应把这些内容视为不可信数据，并把有后果的动作留在策略与审批之后。"
+        },
+        {
+          "question": "本地 MCP Server 一定比远程 Connector 安全吗？",
+          "answer": "不一定。本地运行可以让部分数据留在设备上，但缺少沙箱的进程可能读取文件、密钥或执行命令；远程服务则会引入新的数据处理方和 Token 保管方。需要根据数据边界与运维能力选择。"
+        },
+        {
+          "question": "团队应该怎样试运行一个 Connector？",
+          "answer": "先选一条真实工作流，盘点 Tool List，分别测试允许与拒绝路径，加入恶意内容，检查审批信息，撤销凭证，并确认审计记录能够还原执行过程。"
+        },
+        {
+          "question": "为什么 Connector 会返回不完整或重复结果？",
+          "answer": "常见原因包括分页、缓存、Rate Limit、同步水位、超时和不安全重试。应该先定位失败边界；可能产生副作用的动作还需要 Idempotency 或执行后的状态核对。"
+        }
+      ]
+    },
+    "/blog/what-is-an-agent-harness": {
+      "items": [
+        {
+          "question": "What is an agent harness?",
+          "answer": "An agent harness is the runtime and control layer around a model. It manages context, the agent loop, tools, state, sandboxes, approvals, observability, and recovery."
+        },
+        {
+          "question": "How is a harness different from an agent framework?",
+          "answer": "A framework or SDK helps developers build agent systems. A harness is the operating implementation that runs the loop and policies. A framework can be used to build a harness."
+        },
+        {
+          "question": "Can a better harness improve the same model?",
+          "answer": "Yes. Better context selection, clearer tool contracts, deterministic verification, state management, and recovery can improve task completion without changing the underlying model."
+        },
+        {
+          "question": "Is an agent harness the same as a workspace?",
+          "answer": "No. A workspace is where people, agents, files, and artifacts meet. A harness operates and controls agent runs. A product may bundle both, or a workspace may connect to a remote harness."
+        },
+        {
+          "question": "Does every agent harness need a sandbox?",
+          "answer": "Not necessarily. Read-only or tightly scoped tools may not require a full sandbox. Code execution and computer use usually benefit from isolation, but authorization and approval still have to be enforced outside the sandbox."
+        },
+        {
+          "question": "How does an agent harness recover from failure?",
+          "answer": "It stores durable checkpoints, classifies the failure, and chooses a safe response such as bounded retry, argument correction, resume, rollback, or human review. External side effects need idempotency or state checks before they are repeated."
+        },
+        {
+          "question": "What should an agent harness trace?",
+          "answer": "A useful trace connects model turns, context versions, tool calls, execution identity, approvals, artifacts, verification, cost, and terminal status under one run ID, while redacting sensitive data."
+        },
+        {
+          "question": "When is a full agent harness unnecessary?",
+          "answer": "A single model call or fixed workflow is usually better for predictable classification, summarization, or deterministic transformations. A harness earns its complexity when work is multi-step, tool-using, interruptible, consequential, or independently verifiable."
+        }
+      ]
+    },
+    "/zh/blog/what-is-an-agent-harness": {
+      "items": [
+        {
+          "question": "Agent Harness 是什么？",
+          "answer": "它是模型外围的运行和控制层，负责上下文、Agent Loop、工具、状态、沙箱、审批、可观测性和失败恢复。"
+        },
+        {
+          "question": "Agent Harness 和 Agent Framework 有什么区别？",
+          "answer": "Framework 或 SDK 帮助开发者搭建 Agent 系统；Harness 是实际运行循环和策略的实现。开发者可以用 Framework 构建 Harness。"
+        },
+        {
+          "question": "不换模型，只优化 Harness 会有提升吗？",
+          "answer": "会。更准确的上下文选择、更清楚的工具契约、确定性验证、状态管理和恢复机制，都可能在模型不变时提高任务完成质量。"
+        },
+        {
+          "question": "Agent Harness 和 Workspace 是一回事吗？",
+          "answer": "不是。Workspace 是人、Agent、文件和交付物共同工作的空间；Harness 负责操作和控制 Agent 运行。一个产品可以同时包含两者，也可以让 Workspace 连接远程 Harness。"
+        },
+        {
+          "question": "所有 Agent Harness 都需要 Sandbox 吗？",
+          "answer": "不一定。只读或范围很窄的工具未必需要完整 Sandbox；代码执行和电脑操作通常更需要隔离。但身份授权和人工审批仍应在 Sandbox 之外强制执行。"
+        },
+        {
+          "question": "Agent Harness 如何从失败中恢复？",
+          "answer": "它保存持久检查点，判断失败发生在哪一层，再选择限次重试、修正参数、恢复运行、回滚或人工处理。涉及外部副作用时，重放之前必须检查幂等键或真实状态。"
+        },
+        {
+          "question": "Agent Harness 应该记录哪些 Trace？",
+          "answer": "一条有用的 Trace 应在同一 Run ID 下关联模型轮次、上下文版本、工具调用、执行身份、审批、交付物、验证、成本与停止状态，同时对敏感数据进行脱敏。"
+        },
+        {
+          "question": "什么任务不需要完整的 Agent Harness？",
+          "answer": "路径明确的分类、摘要或确定性格式转换，通常用单次模型调用或固定 Workflow 更简单。任务步骤不确定、需要工具、可能中断、具有真实副作用或能够独立验证时，Harness 才更有价值。"
+        }
+      ]
+    }
   }
 }

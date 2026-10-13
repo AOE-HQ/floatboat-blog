@@ -11,8 +11,14 @@
   },
   "slugs": {
     "what-is-gemini-agent": {
-      "en": {"title":"A work agent should outlast the model underneath it","body":"Keep projects, tools, Skills, and model choice together in a workspace you can use now."},
-      "zh": {"title":"真正的 Work Agent，不该被单一模型锁住","body":"现在就把项目、工具、Skills 和模型选择放进同一个持续工作空间。"}
+      "en": {
+        "title": "A work agent should outlast the model underneath it",
+        "body": "Keep projects, tools, Skills, and model choice together in a workspace you can use now."
+      },
+      "zh": {
+        "title": "真正的 Work Agent，不该被单一模型锁住",
+        "body": "现在就把项目、工具、Skills 和模型选择放进同一个持续工作空间。"
+      }
     },
     "agentic-ai-tools": {
       "en": {
@@ -156,12 +162,12 @@
     },
     "ai-meeting-preparation": {
       "en": {
-        "title": "Prep that starts at the invite, not the panic",
-        "body": "Watch context, briefs, and carried-over todos assemble themselves before your next client call."
+        "title": "Build a meeting brief you can verify",
+        "body": "Retrieve only authorized evidence, expose conflicts, cite the source, and review the draft before the call."
       },
       "zh": {
-        "title": "会前准备从收到邀请就开始",
-        "body": "客户通话前，上下文、简报与上次待办自动就位，不用你催。"
+        "title": "生成一份可以核验的会议简报",
+        "body": "只检索已授权证据，标出冲突与来源，并在开会前由人确认草稿。"
       }
     },
     "ai-scheduling-agent": {
@@ -336,12 +342,12 @@
     },
     "calendar-driven-ai-vs-chat-ai": {
       "en": {
-        "title": "Calendar-driven vs chat: two paradigms",
-        "body": "One waits for prompts; the other treats every event as a trigger."
+        "title": "Choose the trigger that fits the work",
+        "body": "Use chat for evolving judgment; use calendar rules for repeatable work with visible failures and review."
       },
       "zh": {
-        "title": "日历驱动与对话驱动的分野",
-        "body": "一个等指令，一个把每个日程都当成触发器。"
+        "title": "按任务选择正确的触发方式",
+        "body": "变化中的判断交给聊天；规则稳定、失败可见且有人复核的重复工作交给日历。"
       }
     },
     "claude-code-non-developers-solo-operators": {
@@ -356,12 +362,12 @@
     },
     "claude-code-vs-cowork-vs-tag": {
       "en": {
-        "title": "Code, Cowork, or Tag — by work shape",
-        "body": "Match the surface to the job; the calendar is the shared ground beneath all three."
+        "title": "Code, Cowork, or Tag—which workspace owns the job?",
+        "body": "Choose by source of truth, reviewer, and finished artifact: repository, knowledge-work files, or shared Slack context."
       },
       "zh": {
-        "title": "Code、Cowork 还是 Tag",
-        "body": "按活型选入口，而日历是三者共同的动作底座。"
+        "title": "Code、Cowork 还是 Tag：工作归属决定入口",
+        "body": "按事实源、复核者和最终产物选择：代码仓、知识工作文件，或共享 Slack 上下文。"
       }
     },
     "claude-managed-agents-one-person-company": {
@@ -396,22 +402,22 @@
     },
     "context-engineering-for-ai-agents": {
       "en": {
-        "title": "Context beats models",
-        "body": "The richest context source you already maintain every day is your calendar."
+        "title": "Engineer context from the decision backward",
+        "body": "Select the minimum authoritative evidence, preserve permissions, and keep memory traceable and reviewable."
       },
       "zh": {
-        "title": "上下文工程：上下文赢过模型",
-        "body": "你维护得最勤的上下文源，其实一直是日历。"
+        "title": "从决策反推 Agent 所需上下文",
+        "body": "选择最少但权威的证据，保留权限边界，并让记忆可追溯、可复核。"
       }
     },
     "cordis-plugin-framework": {
       "en": {
-        "title": "The plugin kernel behind DeepSeek Harness",
-        "body": "Kernel layering on display — the same design a serious agent workspace uses."
+        "title": "How Cordis composes DeepSeek Harness",
+        "body": "Contexts, services, injection, effects, and events explain how plugins mount, wait, reload, and clean up."
       },
       "zh": {
-        "title": "DeepSeek Harness 的插件内核",
-        "body": "这套内核分层，和成熟 Agent 工作区是同一条思路。"
+        "title": "Cordis 如何组合 DeepSeek Harness",
+        "body": "从 Context、Service、Inject、Effect 与 Event 看插件如何挂载、等待、重载和清理。"
       }
     },
     "custom-ai-agent-development": {
@@ -616,12 +622,12 @@
     },
     "gpt-5-6-floatboat": {
       "en": {
-        "title": "GPT-5.6, built into Floatboat",
-        "body": "Sol, Terra, and Luna with no API key — each tier mapped to daily routines."
+        "title": "GPT-5.6 support in Floatboat, precisely",
+        "body": "Sol and Terra are configured below the picker; Luna is not in the confirmed matrix. None is a default-picker option."
       },
       "zh": {
-        "title": "内置 Floatboat 的 GPT-5.6",
-        "body": "Sol、Terra、Luna 免 API key 直用，三档各自对应你的日常事务。"
+        "title": "准确理解 Floatboat 的 GPT-5.6 支持状态",
+        "body": "Sol 与 Terra 仅完成选择器下方配置，Luna 未进入确认矩阵；三者都不是默认选择项。"
       }
     },
     "gpt-5-6-sol-terra-luna": {
@@ -776,12 +782,12 @@
     },
     "how-to-use-obsidian-with-ai-agent": {
       "en": {
-        "title": "Obsidian plus a desktop agent",
-        "body": "Your local Markdown stays yours; the agent reads it against meeting context."
+        "title": "Give an AI agent the smallest useful vault scope",
+        "body": "Keep source notes read-only, preserve source paths, and send drafts to an Agent Inbox before approved writes enter the vault."
       },
       "zh": {
-        "title": "Obsidian 搭配桌面 Agent",
-        "body": "本地 Markdown 还是你说了算，Agent 对着会议上下文来读。"
+        "title": "只给 Agent 完成任务所需的最小 Vault 权限",
+        "body": "来源笔记保持只读、保留路径，把草稿先写入 Agent Inbox，审核后再进入正式知识库。"
       }
     },
     "html-anything-review-2026": {
@@ -836,12 +842,12 @@
     },
     "kimi-k3-floatboat": {
       "en": {
-        "title": "Kimi K3 inside Floatboat",
-        "body": "What a 2.8T model adds — without an API key of your own."
+        "title": "Kimi K3: capacity prepared, not launched",
+        "body": "Floatboat records underlying capacity for kimi-k3, but the model is not exposed in the default client picker."
       },
       "zh": {
-        "title": "Floatboat 里的 Kimi K3",
-        "body": "2.8T 参数带来什么，以及为什么你不需要自备 API key。"
+        "title": "Kimi K3：已准备底层容量，尚未正式上线",
+        "body": "Floatboat 已登记 kimi-k3 的底层容量，但它尚未进入客户端默认模型选择器。"
       }
     },
     "lark-cli-when-to-use-it": {
@@ -1056,12 +1062,12 @@
     },
     "what-is-claude-tag": {
       "en": {
-        "title": "@Claude as a Slack teammate",
-        "body": "A tag-based agent makes sense once it can see the meeting too."
+        "title": "@Claude as a shared Slack agent",
+        "body": "Tag uses selected channel context and connected tools for team-owned work—with explicit permissions and review."
       },
       "zh": {
-        "title": "作为 Slack 队友的 @Claude",
-        "body": "队友能看见会议，才算真的入伙。"
+        "title": "作为共享 Slack Agent 的 @Claude",
+        "body": "Tag 使用获准频道上下文与连接工具完成团队任务，但权限、审批和责任人必须明确。"
       }
     },
     "what-is-deepseek-agent": {
@@ -1106,12 +1112,12 @@
     },
     "what-is-obsidian-vault": {
       "en": {
-        "title": "What an Obsidian vault really is",
-        "body": "Plain Markdown on your device — and why agents work well with it."
+        "title": "An Obsidian vault is an open local file boundary",
+        "body": "Markdown and attachments stay in ordinary folders, so AI access can be scoped, reviewed, and revoked at the file-system boundary."
       },
       "zh": {
-        "title": "Obsidian vault 本色科普",
-        "body": "不过是设备上的一堆 Markdown，偏偏和 Agent 相性极佳。"
+        "title": "Obsidian Vault 是开放的本地文件边界",
+        "body": "Markdown 与附件保存在普通文件夹中，因此可以按文件系统范围授予、审查和撤销 AI 权限。"
       }
     },
     "what-is-persistent-ai-agent": {
@@ -1136,12 +1142,12 @@
     },
     "where-is-world-cup-2026-host-cities": {
       "en": {
-        "title": "16 host cities, mapped",
-        "body": "Stadium logic and the country split — match-day trips slot straight onto your calendar."
+        "title": "Where World Cup 2026 was played",
+        "body": "All 16 host markets, official venue names, and the route from the Mexico City opener to Spain's final win."
       },
       "zh": {
-        "title": "16 座主办城市一次看全",
-        "body": "球场分布与国别划分，看球行程顺手排进日历。"
+        "title": "2026 世界杯在哪些城市举行",
+        "body": "16 个主办市场、官方场馆名，以及从墨西哥城揭幕战到西班牙夺冠的完整地点脉络。"
       }
     },
     "why-ai-forgets-between-sessions": {
@@ -1206,22 +1212,22 @@
     },
     "world-cup-2026-bracket": {
       "en": {
-        "title": "The 2026 bracket, tracked for you",
-        "body": "Knockout matchups, dates, and venues with a printable tracker included."
+        "title": "The completed 2026 World Cup bracket",
+        "body": "Every knockout result from the Round of 32 to Spain's 1-0 extra-time victory over Argentina in the final."
       },
       "zh": {
-        "title": "2026 淘汰赛对阵追踪",
-        "body": "对阵、日期、场地齐全，还带打印版追踪表。"
+        "title": "完整的 2026 世界杯淘汰赛对阵",
+        "body": "从 32 强到决赛逐场记录，西班牙最终加时 1 比 0 击败阿根廷夺冠。"
       }
     },
     "world-cup-2026-bracketology": {
       "en": {
-        "title": "Bracketology without the mistakes",
-        "body": "Read the quarterfinal path like a pro, then keep your picks synced everywhere."
+        "title": "Audit your 2026 bracket honestly",
+        "body": "The results are final. Separate a lucky pick from sound reasoning with a hindsight-resistant scorecard."
       },
       "zh": {
-        "title": "像行家一样填对阵表",
-        "body": "淘汰赛路径怎么读，选完的表还能全设备同步。"
+        "title": "复盘你的 2026 世界杯签表",
+        "body": "赛果已定。用一张不受事后偏见影响的评分表，分清幸运命中与可靠推理。"
       }
     },
     "world-cup-2026-draw": {
@@ -1615,32 +1621,74 @@
       }
     },
     "gpt-6-1-sol": {
-      "en": {"title": "GPT-6.1 Sol is not currently a Floatboat model", "body": "For Floatboat workflows, choose from the confirmed model directory and compare supported options against the same files and acceptance criteria."},
-      "zh": {"title": "GPT-6.1 Sol 目前不是 Floatboat 支持模型", "body": "在 Floatboat 中请从已确认的模型目录选择，并用相同文件与验收标准比较现有选项。"}
+      "en": {
+        "title": "GPT-6.1 Sol is not currently a Floatboat model",
+        "body": "For Floatboat workflows, choose from the confirmed model directory and compare supported options against the same files and acceptance criteria."
+      },
+      "zh": {
+        "title": "GPT-6.1 Sol 目前不是 Floatboat 支持模型",
+        "body": "在 Floatboat 中请从已确认的模型目录选择，并用相同文件与验收标准比较现有选项。"
+      }
     },
     "openai-devday-2026-announcements": {
-      "en": {"title": "Adopt the workflow, not the keynote slide", "body": "Use Floatboat to keep supported models, files, tools, and review points visible while platform previews and availability continue to change."},
-      "zh": {"title": "采用真实工作流，不要只跟着发布会清单", "body": "用 Floatboat 管理已支持的模型、文件、工具与审阅节点，不让平台 Preview 和开放范围变化打乱工作。"}
+      "en": {
+        "title": "Adopt the workflow, not the keynote slide",
+        "body": "Use Floatboat to keep supported models, files, tools, and review points visible while platform previews and availability continue to change."
+      },
+      "zh": {
+        "title": "采用真实工作流，不要只跟着发布会清单",
+        "body": "用 Floatboat 管理已支持的模型、文件、工具与审阅节点，不让平台 Preview 和开放范围变化打乱工作。"
+      }
     },
     "openai-plugins-explained": {
-      "en": {"title": "Connected tools are only useful when the work stays reviewable", "body": "Floatboat keeps files, tool results, proposed changes, and approval points together in one agent workspace."},
-      "zh": {"title": "工具连上之后，工作仍要可见、可审", "body": "Floatboat 把文件、工具结果、待确认改动与审批节点放在同一个 Agent Workspace 里。"}
+      "en": {
+        "title": "Connected tools are only useful when the work stays reviewable",
+        "body": "Floatboat keeps files, tool results, proposed changes, and approval points together in one agent workspace."
+      },
+      "zh": {
+        "title": "工具连上之后，工作仍要可见、可审",
+        "body": "Floatboat 把文件、工具结果、待确认改动与审批节点放在同一个 Agent Workspace 里。"
+      }
     },
     "local-first-vs-cloud-agent-workspace": {
-      "en": {"title": "Keep your work local, send only what needs the cloud", "body": "See how Floatboat organizes files, agents, models, and human review in one local-first workspace."},
-      "zh": {"title": "工作留在本地，云端只做必要部分", "body": "看看 Floatboat 如何把文件、Agent、模型与人工审阅放进同一个本地优先工作站。"}
+      "en": {
+        "title": "Keep your work local, send only what needs the cloud",
+        "body": "See how Floatboat organizes files, agents, models, and human review in one local-first workspace."
+      },
+      "zh": {
+        "title": "工作留在本地，云端只做必要部分",
+        "body": "看看 Floatboat 如何把文件、Agent、模型与人工审阅放进同一个本地优先工作站。"
+      }
     },
     "what-is-chatgpt-space": {
-      "en": {"title": "Prefer files you can keep, inspect, and move?", "body": "Floatboat gives agents a local-first workspace around your actual files—without making a cloud Page the only copy."},
-      "zh": {"title": "不想让云端 Page 成为唯一副本？", "body": "Floatboat 让 Agent 直接围绕本地文件工作，成果始终可查看、可迁移，也更容易接入原有流程。"}
+      "en": {
+        "title": "Prefer files you can keep, inspect, and move?",
+        "body": "Floatboat gives agents a local-first workspace around your actual files—without making a cloud Page the only copy."
+      },
+      "zh": {
+        "title": "不想让云端 Page 成为唯一副本？",
+        "body": "Floatboat 让 Agent 直接围绕本地文件工作，成果始终可查看、可迁移，也更容易接入原有流程。"
+      }
     },
     "ai-agent-connectors-explained": {
-      "en": {"title": "Keep connected work visible before it commits", "body": "Bring tools into a Floatboat Agent Workspace where files, proposed changes, and approval points remain reviewable."},
-      "zh": {"title": "让外部工具真正执行前仍然可见、可审", "body": "在 Floatboat Agent 工作站中连接工具，把文件、待提交变更与审批节点保留在可审阅的工作现场。"}
+      "en": {
+        "title": "Keep connected work visible before it commits",
+        "body": "Bring tools into a Floatboat Agent Workspace where files, proposed changes, and approval points remain reviewable."
+      },
+      "zh": {
+        "title": "让外部工具真正执行前仍然可见、可审",
+        "body": "在 Floatboat Agent 工作站中连接工具，把文件、待提交变更与审批节点保留在可审阅的工作现场。"
+      }
     },
     "what-is-an-agent-harness": {
-      "en": {"title": "Put the model inside a controllable workspace", "body": "Run models with files, tools, reusable Skills, visible progress, and human review in Floatboat."},
-      "zh": {"title": "把模型放进真正可控的工作站", "body": "在 Floatboat 中统一使用文件、工具与可复用 Skills，并让执行进度和人工审查保持可见。"}
+      "en": {
+        "title": "Put the model inside a controllable workspace",
+        "body": "Run models with files, tools, reusable Skills, visible progress, and human review in Floatboat."
+      },
+      "zh": {
+        "title": "把模型放进真正可控的工作站",
+        "body": "在 Floatboat 中统一使用文件、工具与可复用 Skills，并让执行进度和人工审查保持可见。"
+      }
     },
     "what-is-voice-dictation-for-ai-agents": {
       "en": {
