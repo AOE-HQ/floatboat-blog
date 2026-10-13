@@ -64,7 +64,7 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
         <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{page.hero.description}</p>
         <div className="mt-8 flex flex-wrap gap-3"><Cta {...page.hero.primaryCta} primary /><Cta {...page.hero.secondaryCta} /></div>
         <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--ob-color-muted)]">
-          {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-emerald-700">✓</span>{item}</li>)}
+          {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-[#1b1a18]">✓</span>{item}</li>)}
         </ul>
       </div>
       <div className="relative">
@@ -72,13 +72,13 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
         <div className="rounded-[32px] border border-black/[0.08] bg-[#fbfaf8] p-3 shadow-[0_24px_80px_rgba(27,26,24,0.12)] sm:p-5">
           <div className="flex items-center justify-between border-b border-black/[0.07] px-2 pb-4">
             <div><p className="text-xs font-semibold uppercase tracking-[0.17em] text-[var(--ob-color-muted)]">{page.hero.preview.label}</p><p className="mt-1 font-semibold">{page.hero.preview.matter}</p></div>
-            <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">{page.hero.preview.review}</span>
+            <span className="rounded-full bg-[#1b1a18] px-3 py-1 text-xs font-semibold text-white">{page.hero.preview.review}</span>
           </div>
           <div className="grid gap-3 pt-4 sm:grid-cols-2">
             <div className="rounded-2xl bg-[#f0eeeb] p-4"><p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--ob-color-muted)]">{isZh ? "工作材料" : "Working material"}</p><ul className="mt-3 space-y-2">{page.hero.preview.inputs.map((item) => <li key={item} className="flex items-center gap-2 text-sm"><span className="size-2 rounded-full bg-[#1b1a18]" />{item}</li>)}</ul></div>
             <div className="rounded-2xl bg-[#24221f] p-4 text-white"><p className="text-xs font-semibold uppercase tracking-[0.14em] text-white/45">{isZh ? "准备中的交付物" : "Prepared outputs"}</p><ul className="mt-3 space-y-2">{page.hero.preview.outputs.map((item) => <li key={item} className="flex items-center gap-2 text-sm"><span className="grid size-4 place-items-center rounded bg-[#f7d68b] text-[10px] text-[#24221f]">✓</span>{item}</li>)}</ul></div>
           </div>
-          <div className="mt-3 flex items-center gap-3 rounded-2xl border border-[#e9d18f] bg-[#fff5d7] p-4 text-sm leading-6 text-[#5a4819]"><span className="text-lg">↳</span>{isZh ? "在任何正式意见、发送或提交前交回律师审阅。" : "Returned to counsel before any opinion, send, or filing."}</div>
+          <div className="mt-3 flex items-center gap-3 rounded-2xl border border-[#e9d18f] bg-[#fff5d7] p-4 text-sm leading-6 text-[#1b1a18]"><span className="text-lg">↳</span>{isZh ? "在任何发送、发布、提交或重要行动前交回人工复核。" : "Returned for human review before any send, publication, submission, or consequential action."}</div>
         </div>
       </div>
     </section>
@@ -90,7 +90,7 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
 
     <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28"><Heading {...page.buildingBlocks} />
       <div className="overflow-hidden rounded-[28px] border border-black/[0.08] bg-[var(--ob-color-surface)]">
-        <div className="hidden grid-cols-[0.55fr_1.15fr_1.15fr] bg-[#24221f] px-6 py-4 text-xs font-semibold uppercase tracking-[0.13em] text-white/65 md:grid"><span>{isZh ? "工作积木" : "Building block"}</span><span>{isZh ? "律师语境" : "Legal context"}</span><span>{isZh ? "可审阅结果" : "Reviewable result"}</span></div>
+        <div className="hidden grid-cols-[0.55fr_1.15fr_1.15fr] bg-[#24221f] px-6 py-4 text-xs font-semibold uppercase tracking-[0.13em] text-white/65 md:grid"><span>{isZh ? "工作积木" : "Building block"}</span><span>{isZh ? "工作语境" : "Work context"}</span><span>{isZh ? "可审阅结果" : "Reviewable result"}</span></div>
         {page.buildingBlocks.items.map((item) => <div key={item.action} className="grid gap-3 border-t border-black/[0.07] px-6 py-5 first:border-0 md:grid-cols-[0.55fr_1.15fr_1.15fr]"><strong>{item.action}</strong><span className="text-[var(--ob-color-text-subtle)]">{item.example}</span><span className="text-[var(--ob-color-muted)]">{item.result}</span></div>)}
       </div>
     </section>
@@ -103,12 +103,12 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
     </div></section>
 
     <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[0.8fr_1.2fr]"><Heading {...page.customization} align="left" />
-      <div className="grid gap-5 sm:grid-cols-2"><div className="rounded-3xl border border-black/[0.07] bg-white/55 p-7"><h3 className="font-serif text-2xl">{page.customization.inputsLabel}</h3><ul className="mt-6 space-y-3">{page.customization.inputs.map((item) => <li key={item} className="flex gap-3 leading-6"><span className="text-[var(--ob-color-accent)]">◆</span>{item}</li>)}</ul></div><div className="rounded-3xl border border-black/[0.07] bg-white/55 p-7"><h3 className="font-serif text-2xl">{page.customization.controlsLabel}</h3><ul className="mt-6 space-y-3">{page.customization.controls.map((item) => <li key={item} className="flex gap-3 leading-6"><span className="text-emerald-700">✓</span>{item}</li>)}</ul></div></div>
+      <div className="grid gap-5 sm:grid-cols-2"><div className="rounded-3xl border border-black/[0.07] bg-white/55 p-7"><h3 className="font-serif text-2xl">{page.customization.inputsLabel}</h3><ul className="mt-6 space-y-3">{page.customization.inputs.map((item) => <li key={item} className="flex gap-3 leading-6"><span className="text-[#1b1a18]">◆</span>{item}</li>)}</ul></div><div className="rounded-3xl border border-black/[0.07] bg-white/55 p-7"><h3 className="font-serif text-2xl">{page.customization.controlsLabel}</h3><ul className="mt-6 space-y-3">{page.customization.controls.map((item) => <li key={item} className="flex gap-3 leading-6"><span className="text-[#1b1a18]">✓</span>{item}</li>)}</ul></div></div>
     </section>
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><Heading {...page.progression} /><div className="grid gap-5 md:grid-cols-3">{page.progression.items.map((item, index) => <article key={item.title} className="relative rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-7"><span className="grid size-10 place-items-center rounded-full bg-[#24221f] text-sm text-white">{index + 1}</span><p className="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{item.label}</p><h3 className="mt-3 font-serif text-2xl">{item.title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></article>)}</div></div></section>
 
-    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28"><Heading {...page.boundaries} /><div className="grid overflow-hidden rounded-[32px] border border-black/[0.08] lg:grid-cols-2"><div className="bg-[#e8f2ea] p-7 sm:p-10"><h3 className="font-serif text-3xl text-[#24452e]">{page.boundaries.assistsTitle}</h3><ul className="mt-7 space-y-4">{page.boundaries.assists.map((item) => <li key={item} className="flex gap-3 leading-7"><span className="text-emerald-700">✓</span>{item}</li>)}</ul></div><div className="bg-[#f2e9e5] p-7 sm:p-10"><h3 className="font-serif text-3xl text-[#5b3027]">{page.boundaries.retainsTitle}</h3><ul className="mt-7 space-y-4">{page.boundaries.retains.map((item) => <li key={item} className="flex gap-3 leading-7"><span className="text-[#9b4d3c]">—</span>{item}</li>)}</ul></div></div><p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-6 text-[var(--ob-color-muted)]">{page.boundaries.note}</p></section>
+    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28"><Heading {...page.boundaries} /><div className="grid overflow-hidden rounded-[32px] border border-black/[0.08] lg:grid-cols-2"><div className="bg-[#fff5d7] p-7 sm:p-10"><h3 className="font-serif text-3xl text-[#1b1a18]">{page.boundaries.assistsTitle}</h3><ul className="mt-7 space-y-4">{page.boundaries.assists.map((item) => <li key={item} className="flex gap-3 leading-7"><span className="text-[#1b1a18]">✓</span>{item}</li>)}</ul></div><div className="bg-[#f0eeeb] p-7 sm:p-10"><h3 className="font-serif text-3xl text-[#1b1a18]">{page.boundaries.retainsTitle}</h3><ul className="mt-7 space-y-4">{page.boundaries.retains.map((item) => <li key={item} className="flex gap-3 leading-7"><span className="text-[#1b1a18]">—</span>{item}</li>)}</ul></div></div><p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-6 text-[var(--ob-color-muted)]">{page.boundaries.note}</p></section>
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28"><div className="mx-auto max-w-4xl px-5 sm:px-8"><Heading eyebrow={isZh ? "常见问题" : "Questions before you start"} title={page.faq.title} description={page.faq.description} /><div className="space-y-3">{page.faq.items.map((item) => <details key={item.question} className="group rounded-2xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-5"><summary className="cursor-pointer list-none pr-8 font-semibold">{item.question}<span className="float-right text-xl transition group-open:rotate-45">+</span></summary><p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{item.answer}</p></details>)}</div></div></section>
 
