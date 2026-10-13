@@ -14,7 +14,7 @@ draft: false
 
 - **Voice mode** is a two-way spoken conversation: you talk, the AI talks back, and the exchange stays inside a live dialogue loop. **Dictation** is speech-to-text into an input box—you review and edit the transcript, then send it as a normal text prompt.
 - The distinction is architectural, not cosmetic. Voice mode optimizes turn-taking, interruptions, and spoken reasoning. Dictation optimizes precision, editability, and compatibility with text-native agent workflows (Cowork tasks, terminal commands, long briefs).
-- ChatGPT now defaults to **GPT-Live** for full-duplex voice, while keeping Dictation as a separate path that does not consume live voice allowance. Claude separates the same boundary: Voice Mode in chat apps, dictation only in Cowork and Code.
+- ChatGPT documents Voice and Dictation as separate controls: Voice runs a spoken conversation, while Dictation creates editable text before sending. Claude likewise documents Voice Mode as a chat experience; availability in other work surfaces should be checked separately.
 - Neither shape wins everywhere. Solopreneurs should match the job—exploration and hands-free thinking favor voice mode; drafting specs, steering agents, and coding favor dictation.
 - For definitions and vocabulary across this cluster, start with our hub on [voice dictation for AI agents](/blog/what-is-voice-dictation-for-ai-agents).
 
@@ -54,7 +54,7 @@ Four properties separate voice mode from dictation in practice.
 
 **Paraphrased transcripts.** OpenAI notes that voice transcripts are not verbatim records and may not exactly match what was said [OpenAI ChatGPT Voice help](https://help.openai.com/en/articles/20001274-chatgpt-voice). That is acceptable for reasoning; it is problematic when you needed word-perfect legal or code language without review.
 
-**Usage accounting.** Live voice often draws from separate limits or plan tiers. Dictation typically does not—OpenAI explicitly states dictation does not use live voice conversation allowance, which matters for heavy daily users on capped plans.
+**Usage accounting.** Limits and plan availability change by product and account. Verify them in each vendor’s current official documentation; the durable distinction here is conversational audio versus editable text.
 
 ### 2.3 What Voice Mode Is Not
 
@@ -68,7 +68,7 @@ It is also not, by itself, a *voice agent* in the proactive sense: an entity tha
 
 ### 3.1 The Core Definition
 
-**Dictation** (voice typing, speech-to-text input, or `/voice` in developer tools) converts spoken audio into *text in an input field*. You see the transcript, edit it, and explicitly send it—Enter, Run, or Submit—like any typed prompt. The model may never hear your voice; it only reads the text you approved.
+**Dictation** (voice typing or speech-to-text input) converts spoken audio into *text in an input field*. You see the transcript, edit it, and explicitly send it—Enter, Run, or Submit—like any typed prompt. The model may never hear your voice; it only reads the text you approved.
 
 Anthropic's help center states the distinction plainly: "Dictation converts your speech to text so you can type prompts by speaking. Voice mode is a full two-way conversation" [Anthropic voice mode help](https://support.claude.com/en/articles/11101966-use-voice-mode). That one sentence is the architectural boundary for Claude; the same logic applies across the ecosystem.
 
@@ -78,7 +78,7 @@ Anthropic's help center states the distinction plainly: "Dictation converts your
 
 **Single-shot or serial prompts.** Each send is a discrete agent invocation unless the product auto-chains. Dictation fits long briefs built in one take, serial steering messages ("now tighten section two"), and precision vocabulary (API names, client surnames, legal terms) you verify on screen.
 
-**Surface portability.** Dictation appears where text prompts appear: Claude Cowork's task field, Claude Code's terminal via `/voice`, ChatGPT's dictation control, macOS and Windows system dictation into any app. The AI product does not own the entire loop—your editor or shell does.
+**Surface portability.** Dictation appears where text prompts appear: ChatGPT's dictation control and operating-system dictation can place editable text into a composer, editor, or shell. The AI product does not own the entire loop.
 
 **No spoken reply required.** The model responds in text (or code diffs) as it would for typing. That keeps Cowork and Code usable in open offices and shared spaces where spoken AI replies would be disruptive.
 
@@ -110,7 +110,7 @@ Latency expectations diverge too. Voice mode optimizes *perceived conversational
 
 ### 5.1 ChatGPT: GPT-Live, Legacy Voice, and Dictation
 
-OpenAI reorganized ChatGPT voice around **GPT-Live** as the default live experience on paid tiers (GPT-Live-1) and free (GPT-Live-1 mini), with full-duplex conversation, web search, memory, and widget-style visual answers in the same chat [OpenAI help](https://help.openai.com/en/articles/20001274-chatgpt-voice). **Standard** voice remains a turn-by-turn path that transcribes before responding. **Advanced Voice Mode** persists for capabilities GPT-Live did not initially ship— notably video, screen sharing on mobile, and voice inside custom GPTs [ToolColumn comparison, as of mid-2026](https://www.toolcolumn.com/learn/gpt-live-vs-advanced-voice-mode).
+As of October 13, 2026, OpenAI describes **Voice** as a spoken conversation and documents account-dependent options, limits, video and screen sharing on supported mobile experiences [OpenAI Voice help](https://help.openai.com/en/articles/20001274-chatgpt-voice). Its separate [Dictation FAQ](https://help.openai.com/en/articles/12168547-voice-dictation-faq) says microphone audio is transcribed into editable text that the user can revise before sending. That official product boundary—not a model-name comparison—is the useful distinction for agent work.
 
 **ChatGPT Dictation** sits outside that stack: record speech, review transcription, send as text. OpenAI's own guidance—use voice for live back-and-forth; use dictation when you want an editable prompt—mirrors the framework in this article. Deeper product-by-product tables live in [ChatGPT voice mode vs dictation](/blog/chatgpt-voice-mode-vs-dictation); here the takeaway is that OpenAI treats them as sibling features with different quotas and UX entry points, not as one mode with a text fallback.
 
@@ -124,7 +124,7 @@ Claude Desktop on Mac adds **quick entry** (Option + Space, Caps Lock to dictate
 
 ### 5.3 Coding Agents: Terminal Dictation, Not Voice Mode
 
-Developer-facing agents inherit the dictation side almost exclusively. **Claude Code** exposes `/voice` to transcribe speech into the terminal prompt; the CLI may print "Voice mode enabled," but the behavior is dictation—no spoken assistant reply in the loop [Voibe resource citing Anthropic docs, Aug 2026](https://www.getvoibe.com/resources/dictate-in-claude-cowork/). Parallel agent sessions, test output, and diff review remain text-native; speaking a refactor request is convenience, not conversation.
+Developer-facing agents are usually evaluated on text artifacts: the submitted instruction, command output, diff and approval record. Operating-system dictation can reduce typing, but it does not turn that review loop into a spoken conversation. Treat vendor-specific voice commands as current-product details to verify in official documentation, not as defining features of coding agents.
 
 The same pattern appears across **Cursor**, **Windsurf**, and other IDE agents: voice input, when present, fills the prompt or inline edit field. The agent responds in code and text. Full-duplex voice pair programming has not become the default job shape—partially because reading code on screen dominates the loop, partially because spoken replies disrupt focus in shared environments.
 

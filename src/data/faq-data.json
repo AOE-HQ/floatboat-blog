@@ -1283,56 +1283,72 @@
     "/blog/best-ai-scheduling-assistant": {
       "items": [
         {
-          "question": "Which AI scheduling assistant should I choose?",
-          "answer": "Start from the pain, not the product. If your only problem is the scheduling back-and-forth, a Gen 1 tool like Calendly or Doodle solves it completely. If your days are fragmented and you need focus time defended, look at Gen 2 optimizers such as Motion, Reclaim, or Clockwise. If you are drowning in prep and follow-up for every client call, you need Gen 4 — where Floatboat is the clearest example. Then narrow by integration needs and whether you work alone or on a team."
+          "question": "What is the best AI scheduling assistant?",
+          "answer": "There is no universal winner; choose by booking, polling, time blocking, team optimization, or event-driven execution."
         },
         {
-          "question": "What's the difference between a smart scheduler and a scheduling agent?",
-          "answer": "A smart scheduler (Gen 1–2) optimizes where events sit — it finds open slots, prioritizes tasks, and rearranges your calendar for efficiency. A scheduling agent (Gen 3–4) acts on what the calendar contains: it books meetings from emails, prepares briefs before calls, and extracts action items afterward. The smart scheduler answers \"when\"; the scheduling agent answers \"what happens because of when.\""
+          "question": "Which type is best for external booking?",
+          "answer": "A mature booking-link tool is usually enough if its time zones, buffers, and rescheduling fit your workflow."
         },
         {
-          "question": "What can a calendar-driven agent (Gen 4) actually do for me?",
-          "answer": "Gen 4 treats the calendar as a runtime rather than a grid. When a client call appears, the system gathers relevant emails, surfaces the latest drafts, and prepares a brief before you sit down. When it ends, it extracts action items and drafts follow-ups. When a deadline approaches, it starts assembling deliverables. Each event keeps a persistent workspace with files, run history, and model choice — the agent does the prep, follow-up, and production work the calendar implies."
+          "question": "Which type is best for group availability?",
+          "answer": "Use a polling tool when participants need to compare several candidate times."
         },
         {
-          "question": "Are AI scheduling assistants worth it for solo founders?",
-          "answer": "Yes — at different tiers. Gen 1 tools like Calendly are close to mandatory; the free tier alone removes the scheduling-email tax. Gen 2 pays off if you battle context-switching. Gen 4 matters most when your calendar runs your business, since every client call needs prep nobody else will do and every meeting leaves follow-ups nobody else will track. At roughly 15 client calls a week the difference is transformative; at three, it is marginal."
+          "question": "Which type is best for task time blocking?",
+          "answer": "Choose an optimizer that can reschedule tasks while respecting locked time and deadlines."
         },
         {
-          "question": "Do these tools work with my existing Google Calendar and Outlook?",
-          "answer": "Mostly yes, with varying coverage. Calendly, Motion, Reclaim, Clockwise, and Agentic Calendars support Google and Outlook; Morgen adds iCloud and CalDAV; Floatboat is designed for Google, Outlook, iCloud, Lark, and ICS feeds while connecting events to an agent workspace. Two caveats: Motion replaces your native calendar rather than augmenting it, and Outlook support ranges from read-only to full two-way sync across tools — check the vendor's integration page first."
+          "question": "What should teams test in a scheduling assistant?",
+          "answer": "Test cross-member constraints, admin controls, focus-time behavior, overrides, and recovery."
         },
         {
-          "question": "What does \"autonomy\" really mean across the generations?",
-          "answer": "Autonomy is a ladder. Gen 1 and Gen 2 assist — they recommend, optimize, and remind, but you still do the work. Gen 3 starts acting for you within the scheduling domain, booking meetings from emails and handling booking requests. Gen 4 extends action across the whole lifecycle: preparing briefs, gathering context, drafting follow-ups, and tracking action items without anyone initiating. The question that decides the purchase isn't feature count; it's whether the AI waits for you or acts on your behalf."
+          "question": "Should price decide the scheduling-assistant choice?",
+          "answer": "Compare total workflow cost, including setup, correction, and failed-run recovery, not just subscription price."
+        },
+        {
+          "question": "What permissions should a scheduling assistant receive?",
+          "answer": "Grant only the calendars and fields required for the pilot; add email or file access only for a defined job."
+        },
+        {
+          "question": "How long should a scheduling-assistant pilot run?",
+          "answer": "Run it long enough to include normal rescheduling and at least one exception, using a fixed scorecard."
         }
       ]
     },
     "/blog/best-ai-scheduling-assistants": {
       "items": [
         {
-          "question": "Which AI scheduling assistant should I choose?",
-          "answer": "There's no universal winner — pick by your primary pain point. If the problem is scheduling back-and-forth, start with a Gen 1 tool like Calendly. If it's fragmented days and context-switching, look at Gen 2 (Motion, Reclaim, Clockwise, Morgen). If it's the manual overhead of preparing for and following up after every calendar event, you need a Gen 4 calendar-driven agent OS such as Floatboat. Also weigh team size and integration needs, which decide between individual-first and team-first tools."
+          "question": "What is the best AI scheduling assistant?",
+          "answer": "There is no universal winner. Calendly or Google fit bookable availability, Outlook Scheduling Poll fits Microsoft group consensus, Motion fits task planning, and Reclaim fits flexible time protection."
         },
         {
-          "question": "What are the four generations of AI scheduling?",
-          "answer": "They differ in what the AI is asked to do, not whether it uses AI. Gen 1 smart schedulers (Calendly, Doodle) find time and automate booking. Gen 2 AI optimizers (Motion, Reclaim) prioritize tasks and rearrange your calendar. Gen 3 scheduling agents (Agentic Calendars, Cal.com Agents) add context and act on booking requests. Gen 4 calendar-driven agent OS (Floatboat) runs work from the calendar autonomously — preparing, executing, and following up."
+          "question": "How is this roundup different from the singular scheduling-assistant guide?",
+          "answer": "This page is a buyer shortlist with current products and a trial method; the singular page explains product categories."
         },
         {
-          "question": "What's the difference between a smart scheduler and a scheduling agent?",
-          "answer": "A smart scheduler (Gen 1–2) optimizes time-slot placement — it finds open slots, prioritizes tasks, rearranges your calendar for efficiency. A scheduling agent (Gen 3–4) acts on the calendar's contents — it books meetings from emails, prepares briefs before calls, extracts action items after. The smart scheduler answers \"when\"; the scheduling agent answers \"what happens because of when.\""
+          "question": "Is Calendly an AI task planner?",
+          "answer": "Its core job is booking and routing availability. Do not assume it prioritizes a project backlog."
         },
         {
-          "question": "Are AI scheduling assistants worth it for solo founders?",
-          "answer": "Gen 1 tools are basically mandatory — the time saved on scheduling email alone justifies the free tier. Gen 2 tools are valuable if you struggle with context-switching or use your calendar as a task manager. Gen 4 matters most when you are the entire company: every client call needs prep nobody else will do and produces action items nobody else will track. Automating that leaves you the strategic work that actually moves the business forward."
+          "question": "Can Google Calendar replace a separate scheduling tool?",
+          "answer": "It may for straightforward appointment pages, but eligibility, conflict checks, payments, and co-host rules depend on the account."
         },
         {
-          "question": "Which tools integrate with Google Calendar and Outlook?",
-          "answer": "Coverage varies. Calendly, Motion, Reclaim, Clockwise, and Agentic Calendars support Google and Outlook. Morgen adds iCloud and CalDAV. Floatboat supports Google, Outlook, iCloud, Notion Calendar, Lark, and arbitrary ICS feeds — the broadest native support in the list. If you need the tool to connect to CRM, email, tasks, and files automatically, only Gen 3 and Gen 4 tools treat integrations as core architecture rather than a settings panel."
+          "question": "What does Outlook Scheduling Poll solve?",
+          "answer": "It lets attendees vote on proposed times and can finalize a meeting under documented conditions; it does not plan tasks."
         },
         {
-          "question": "What can a calendar-driven agent OS do that earlier tools can't?",
-          "answer": "Gen 4 executes the work a calendar implies instead of just arranging events. For each event it can prepare a brief by gathering relevant emails and document drafts, extract action items and draft follow-ups when a call ends, and start assembling deliverables as a deadline approaches — none of it requires you to initiate anything. Gen 1 and Gen 2 assist you; Gen 4 acts on your behalf across the full prep-to-follow-up lifecycle."
+          "question": "Should I choose Motion or Reclaim?",
+          "answer": "Test Motion when task replanning is central; test Reclaim when protecting flexible tasks, habits, and focus blocks around an existing calendar is central."
+        },
+        {
+          "question": "How should I test an AI scheduling assistant?",
+          "answer": "Run the same representative week, add an exception, and measure conflicts, unwanted moves, notification noise, and correction time."
+        },
+        {
+          "question": "Should I connect two scheduling assistants to one calendar?",
+          "answer": "Only when they own different jobs; otherwise define one writer to avoid conflicting changes."
         }
       ]
     },
@@ -1663,56 +1679,72 @@
     "/blog/chatgpt-voice-mode-vs-dictation": {
       "items": [
         {
-          "question": "Is ChatGPT Voice Mode the same as dictation?",
-          "answer": "No. Voice Mode (waveform icon) starts a live spoken conversation where ChatGPT responds in audio and the thread accumulates a non-verbatim transcript. Dictation (microphone icon in the composer) converts your speech into **editable text in the message box** that you send like a typed prompt. OpenAI documents them as separate features with different limits and use cases."
+          "question": "What is the difference between ChatGPT Voice Mode and dictation?",
+          "answer": "Voice holds a spoken exchange; Dictation creates editable text before you send it."
         },
         {
-          "question": "Which is better for writing long agent prompts?",
-          "answer": "Dictation is usually better. Long agent prompts benefit from review-before-send: fixing names, adding JSON or code blocks, and ensuring constraints are literal. Voice Mode prioritizes conversational flow over a static, editable artifact before the model acts. Many builders dictate the final prompt even after brainstorming aloud in Voice Mode."
+          "question": "Which is better for writing a precise prompt?",
+          "answer": "Dictation, because you can inspect names, constraints, and formatting before submission."
         },
         {
-          "question": "Does dictation use GPT-Live minutes?",
-          "answer": "Native ChatGPT Dictation does not draw on the separate GPT-Live / Voice Mode allowance described for Live sessions on paid plans. It uses speech-to-text into the composer; sent messages still count against your plan's regular chat limits. Exact policy details can change — confirm on OpenAI's help center for your account tier."
+          "question": "Does Voice Mode leave an exact transcript?",
+          "answer": "OpenAI warns that voice transcripts may not match the conversation exactly."
         },
         {
-          "question": "Can Voice Mode replace a voice agent for my product?",
-          "answer": "Not by itself. ChatGPT Voice Mode is a consumer conversation feature inside OpenAI's app, with transcripts that may not match spoken words verbatim and without your custom tool runtime. A production **voice agent** typically needs your auth, memory, tool policies, and deployment surface — the architecture is different from either ChatGPT icon alone. Voice Mode can prototype dialogue; dictation often produces the spec; your agent platform executes it."
+          "question": "Does ChatGPT Dictation send automatically?",
+          "answer": "Its documented flow is to transcribe, let you edit, and then send; verify current app behavior before relying on it."
         },
         {
-          "question": "When should I use document dictation instead of ChatGPT's composer?",
-          "answer": "When the deliverable is a multi-section document, a meeting plan with owners, or any file that will be revised across sessions tied to calendar events — not a single chat message. ChatGPT Dictation stops at the composer edge; document-native tools like Floatboat Flow Mode keep voice, edits, and Agent passes in one persistent draft. Pair ChatGPT for open-ended reasoning with document dictation for what must ship on schedule."
+          "question": "Is Voice Mode better for brainstorming?",
+          "answer": "Often, when rapid follow-up and spoken pacing matter more than a reusable prompt."
         },
         {
-          "question": "What happened to Advanced Voice Mode vs GPT-Live?",
-          "answer": "GPT-Live is OpenAI's full-duplex voice model family rolled out broadly in 2026, powering the Live Voice experience with concurrent listen-and-speak behavior. Advanced and Standard Voice options remain for users who want different turn-taking or account-specific visual features. Tapping Voice in updated clients increasingly routes through GPT-Live-class experiences; availability still depends on plan, region, and app version."
+          "question": "Which should I use for agent instructions?",
+          "answer": "Prefer editable text for high-impact or repeatable instructions; use Voice to explore first if helpful."
+        },
+        {
+          "question": "Do Voice and Dictation have the same privacy controls?",
+          "answer": "They are separate features; review OpenAI’s current data-control and retention documentation for each."
+        },
+        {
+          "question": "Can I combine both in one workflow?",
+          "answer": "Yes. Explore aloud, then dictate or type a reviewed instruction into the composer."
         }
       ]
     },
     "/blog/claude-code-non-developers-solo-operators": {
       "items": [
         {
-          "question": "Can I use Claude Code without knowing how to code?",
-          "answer": "Technically yes — some non-technical people have made it work. But the setup involves a terminal, Node.js, and some patience with things going wrong. For most non-developers, Claude chat with Projects, or Cowork through the desktop app, is a better starting point."
+          "question": "Can non-developers use Claude Code?",
+          "answer": "Yes, if they can work carefully in a terminal and review file changes; it is not a no-code app."
         },
         {
-          "question": "What does Claude Code actually cost in 2026?",
-          "answer": "Per [Anthropic's official pricing](<https://claude.com/pricing>): Pro is $20/month ($17 billed annually) and includes Claude Code. Max 5x is $100/month and Max 20x is $200/month. No free access — you need at least a Pro subscription or API credits."
+          "question": "What can a solo operator do with Claude Code?",
+          "answer": "They can draft, transform, and organize text or data files, automate repeatable repository tasks, and inspect changes."
         },
         {
-          "question": "Is Claude Code just Claude in a terminal?",
-          "answer": "Sort of, but more capable. It can read your whole codebase, edit multiple files simultaneously, run commands, and operate autonomously across multi-step tasks. It is designed for sustained technical work, not one-off questions."
+          "question": "Do I need to know Git to use Claude Code?",
+          "answer": "Basic version control is strongly recommended because it makes changes inspectable and recoverable."
         },
         {
-          "question": "What's the difference between Claude Code and Cowork?",
-          "answer": "Claude Code is for coding and developer workflows in the terminal. Cowork is Anthropic's agent tool for general knowledge work — processing local files, running multi-step research and automation tasks — without requiring terminal skills. Both are available on Pro and Max plans through the desktop app. If agentic capabilities interest you but code doesn't, Cowork is where to start."
+          "question": "What should I not automate first?",
+          "answer": "Avoid credentials, payments, destructive bulk edits, and legally sensitive decisions until controls are proven."
         },
         {
-          "question": "Should I learn Claude Code to build my own AI tools?",
-          "answer": "Usually not as your first move. If you have no coding foundation, the real cost is rarely the $20/month — it's the learning time, the debugging sessions when something breaks for unclear reasons, and the fact that heavy coding sessions share your usage budget with regular Claude chat. Returns diminish fast, so for most solo operators the higher-ROI move is going deep on Claude chat, Projects, and Cowork."
+          "question": "How much does Claude Code cost?",
+          "answer": "It depends on the current plan, model, and workload; use Anthropic’s official pricing and a bounded pilot."
         },
         {
-          "question": "Should I upgrade to Max for Claude Code?",
-          "answer": "Only if you're hitting Pro limits regularly. According to Anthropic's support documentation, the best signal to upgrade is when usage interruptions happen often enough that the lost time costs more than the $80/month difference. For light or occasional use, start with a Pro and watch your usage patterns for a few weeks first."
+          "question": "How should file permissions be scoped?",
+          "answer": "Start in a copy or narrow project folder and expand only after reviewing behavior."
+        },
+        {
+          "question": "Is Cowork a better choice for non-coding work?",
+          "answer": "It may offer a more suitable surface for document work; compare permissions, artifacts, and review flow."
+        },
+        {
+          "question": "What is a reproducible first Claude Code pilot?",
+          "answer": "Give it one version-controlled folder, one reversible task, and an explicit acceptance checklist."
         }
       ]
     },
@@ -2563,72 +2595,72 @@
     "/blog/google-calendar-vs-apple-calendar": {
       "items": [
         {
-          "question": "Which is better for solo work: Google Calendar or Apple Calendar?",
-          "answer": "Use Google Calendar when work centers on Google Workspace, mixed devices, external collaboration, or web administration. Use iCloud Calendar when scheduling is mainly personal or family-based and Apple-native integration is the priority. You can also use a Google account inside Apple Calendar."
+          "question": "Which is better, Google Calendar or Apple Calendar?",
+          "answer": "Google usually fits cross-platform work and Workspace collaboration; iCloud Calendar fits Apple-centered personal or family use."
         },
         {
-          "question": "Can I use Google Calendar and Apple Calendar together?",
-          "answer": "Yes. Add the Google account to Apple Calendar and both apps operate on the same Google calendars. By contrast, adding an iCloud public link to Google creates a read-only subscription. Keep one editable source of truth to avoid duplicates and conflicting changes."
+          "question": "Can Apple Calendar display Google Calendar?",
+          "answer": "Yes. Apple Calendar can act as a client for a Google account on Apple devices."
         },
         {
-          "question": "What should I check before syncing my calendars?",
-          "answer": "Confirm the source of truth, default calendar, account owners, sharing permissions, recurring events, time zones, subscribed feeds, tasks, and connected automations. Test creation, editing, deletion, invitations, and offline behavior with dummy events before moving real scheduling."
+          "question": "Should I maintain editable copies in both systems?",
+          "answer": "No. Pick one source of truth and use account connection or subscription for the other view."
         },
         {
-          "question": "How do sharing and tasks differ?",
-          "answer": "Google Calendar offers free/busy, details, edit, and sharing-management permissions, subject to Workspace policy. iCloud offers private sharing with view or edit access and public read-only links. Google Tasks appears in Calendar; Apple keeps tasks in the separate Reminders app."
+          "question": "Is an ICS subscription two-way sync?",
+          "answer": "Usually not. A subscribed feed is commonly read-only and may refresh with delay."
         },
         {
-          "question": "Which calendar works better offline?",
-          "answer": "Apple Calendar is a native client and retains synchronized data locally. Google Calendar offers an optional Chrome offline mode, but Google documents that offline users cannot create or edit events, email guests, or access Tasks. Test the exact device and account because sync behavior varies."
+          "question": "Which is better for sharing?",
+          "answer": "It depends on collaborators and account policy. Google offers documented sharing roles, while iCloud sharing works best inside the Apple account context."
         },
         {
-          "question": "Is iCloud Calendar end-to-end encrypted with Advanced Data Protection?",
-          "answer": "No. Apple lists Calendars as encrypted in transit and on server, with keys stored by Apple even when Advanced Data Protection is enabled. Avoid putting secrets in event titles or descriptions and share only the detail level others need."
+          "question": "Which is better offline?",
+          "answer": "Test the exact device and account combination; offline behavior differs between native apps, web access, and cached data."
         },
         {
-          "question": "How do I migrate without losing events?",
-          "answer": "Export an ICS backup, create separate destination calendars, import one calendar at a time, and validate recurring-event exceptions, time zones, all-day events, organizers, and invitees. Rebuild sharing, tasks, video links, and automations separately, then use a read-only overlap period."
+          "question": "How do I migrate safely?",
+          "answer": "Export a backup, import into separate destination calendars, rebuild sharing and integrations, and test recurring exceptions before retiring the old source."
         },
         {
-          "question": "Can Gemini or Apple Intelligence run my calendar automatically?",
-          "answer": "Their native features can help create, find, edit, or schedule events, depending on plan, device, language, region, and settings. Work across documents or external business systems requires additional tools and permissions. Review generated changes before they affect others."
+          "question": "Does choosing Google mean giving up Apple’s app?",
+          "answer": "No. You can keep Google as the account source while using Apple Calendar as the interface."
         }
       ]
     },
     "/blog/google-calendar-vs-outlook": {
       "items": [
         {
-          "question": "Which calendar should I use — Google Calendar or Outlook?",
-          "answer": "Choose the calendar attached to the organization's work identity. Google Calendar is the natural default for Google Workspace; Outlook is the natural default for Exchange, Teams, Microsoft 365 rooms, delegation, and compliance. Consultants may need to retain both source accounts."
+          "question": "Should a Google Workspace company use Google Calendar?",
+          "answer": "Usually yes, because identity, Meet, groups, resources, and administration stay in one ecosystem, subject to policy."
         },
         {
-          "question": "What's the real difference between the two calendars?",
-          "answer": "The main difference is the surrounding work system. Google Calendar aligns with Gmail, Meet, Drive, Groups and Tasks. Outlook aligns with Exchange, Teams, resource mailboxes, formal delegation, Microsoft To Do, Planner, Graph and Microsoft 365 governance."
+          "question": "When is Outlook Calendar the better fit?",
+          "answer": "When Exchange, Teams, shared mailboxes, room resources, delegation, and Microsoft 365 governance are central."
         },
         {
-          "question": "Can Google Calendar and Outlook sync with each other?",
-          "answer": "They can coexist, but an ICS subscription is a read-only awareness layer and an import is a one-time copy. For ongoing work, keep each organization's meetings in its own account and use a client that displays both. Third-party two-way sync adds conflict, duplicate, privacy, and revocation risks."
+          "question": "Can Google Calendar and Outlook sync perfectly?",
+          "answer": "Do not assume it. Subscriptions and connectors can have delays or omit organizer, response, attachment, or status details."
         },
         {
-          "question": "What should I check before linking calendars?",
-          "answer": "Confirm the organizer account, source of truth, default calendar, cross-tenant sharing policy, recurring-event behavior, time zones, room booking, tasks, automations, and notifications. Test external invitations, updates, cancellation, delegation, and what free/busy recipients can see."
+          "question": "What is the safest coexistence pattern?",
+          "answer": "Keep one authoritative calendar per identity, expose only required availability, and use a unified view without duplicating ownership."
         },
         {
-          "question": "When is Outlook the better choice?",
-          "answer": "Outlook is the better default when the organization uses Exchange Online and Teams or needs formal delegates, resource mailboxes, Scheduling Assistant, Microsoft To Do/Planner integration, retention, eDiscovery, or other Microsoft 365 governance."
+          "question": "Which has better delegation?",
+          "answer": "Compare the exact Workspace and Exchange roles your organization needs; sharing and delegate access are not interchangeable."
         },
         {
-          "question": "When is Google Calendar the better choice?",
-          "answer": "Google Calendar is the better default for a Google Workspace organization, a browser-first team, or a workflow built around Gmail, Meet, Drive, Groups, Google Tasks, Calendar API and Apps Script. Administrator policy still determines external sharing and app access."
+          "question": "Which is better for room booking?",
+          "answer": "Use the ecosystem that owns the organization’s resource accounts and test cross-tenant behavior."
         },
         {
-          "question": "Can I migrate Tasks or Microsoft To Do items with an ICS file?",
-          "answer": "No. ICS is primarily event data and does not preserve the full task model, flagged-email links, Planner assignments, comments, files, or completion semantics. Plan task migration separately from calendar migration."
+          "question": "How should tasks affect the choice?",
+          "answer": "Google Calendar connects with Google Tasks; Outlook sits in a broader Microsoft task ecosystem. Test assignment, visibility, and mobile behavior."
         },
         {
-          "question": "Are Gemini and Copilot calendar features available to everyone?",
-          "answer": "No. Availability varies by personal or managed account, license, administrator enablement, client, region, language, event type and release channel. Verify the feature in the actual tenant and review automatic accept, decline, or rescheduling actions."
+          "question": "What must be tested before migration?",
+          "answer": "Test recurrence, organizers, attendee responses, time zones, attachments, privacy, rooms, tasks, and automations."
         }
       ]
     },
@@ -3991,28 +4023,36 @@
     "/blog/voice-mode-vs-dictation-for-ai-agents": {
       "items": [
         {
-          "question": "Is voice mode just dictation with text-to-speech added on?",
-          "answer": "No. Dictation ends at transcription; you send text through the normal inference path. Voice mode manages a multi-turn spoken session—turn detection, overlapping speech in full-duplex systems, and spoken replies—without requiring a manual Send after each utterance. The downstream model may be similar, but the product contract differs."
+          "question": "How does voice mode differ from dictation for AI agents?",
+          "answer": "Voice optimizes a live dialogue loop; dictation optimizes an editable input artifact."
         },
         {
-          "question": "Can I use Claude Voice Mode inside Cowork or Claude Code?",
-          "answer": "Not as of Anthropic's published documentation. Dictation is available in Cowork and Code; full voice mode is limited to Claude chat apps. Plan workflows accordingly: dictate task briefs in Cowork, use Voice Mode separately for spoken reasoning."
+          "question": "Which is safer for tool-running agents?",
+          "answer": "Dictation usually offers a clearer review point before a consequential run."
         },
         {
-          "question": "Does ChatGPT Dictation count against GPT-Live voice limits?",
-          "answer": "OpenAI states dictation is separate from live voice conversation allowance [<a href=\"https://help.openai.com/en/articles/20001274-chatgpt-voice\" rel=\"nofollow noopener\">Source: OpenAI help</a>]. Heavy users drafting long prompts may prefer dictation partly for quota reasons, not only for editability."
+          "question": "When should an agent workflow use voice mode?",
+          "answer": "For exploration, clarification, rehearsal, or hands-free reasoning where conversation is the work."
         },
         {
-          "question": "Which should coding agents use—voice mode or dictation?",
-          "answer": "Dictation. Terminal and IDE agents expect text prompts and return diffs or logs. Claude Code's `/voice` transcribes into the prompt; it does not speak answers back. Confirm transcripts before running destructive commands."
+          "question": "When should an agent workflow use dictation?",
+          "answer": "For specifications, commands, briefs, and repeatable prompts that must be reviewed or reused."
         },
         {
-          "question": "How does this relate to voice agents that run work proactively?",
-          "answer": "Voice mode and dictation are *input channels* inside apps you open. A voice agent adds scheduling, tool orchestration, and persistent goals—closer to an always-on worker than a chat session. Input paradigm still matters once the agent is listening, but the category question is broader than either modality alone."
+          "question": "Does dictation give the model audio cues?",
+          "answer": "Usually no. The model receives the approved text rather than prosody or tone."
         },
         {
-          "question": "Can I mix voice mode and dictation in one workflow?",
-          "answer": "Yes, sequentially: explore aloud, then dictate a cleaned brief into Cowork or ChatGPT text. Do not assume context transfers automatically between Claude Voice Mode and Cowork projects—copy explicit constraints and names when switching surfaces."
+          "question": "Can system dictation work with coding agents?",
+          "answer": "It can enter text into a terminal or editor, but commands still need review."
+        },
+        {
+          "question": "What should a voice-versus-dictation pilot measure?",
+          "answer": "Measure correction time, submission errors, reviewability, context transfer, and artifact quality."
+        },
+        {
+          "question": "Can voice replace proactive automation?",
+          "answer": "No. Voice reduces input friction, while scheduled or event-driven agents address initiation."
         }
       ]
     },
@@ -4091,80 +4131,108 @@
     "/blog/what-if-your-calendar-could-run-itself": {
       "items": [
         {
-          "question": "Will an AI that runs my calendar take over my schedule or send things without my permission?",
-          "answer": "No — in the designs we are describing, autonomy is scoped and reversible. Anything that leaves your calendar or inbox passes through an approval step you control, either by reviewing each item or by setting rules for low-risk ones. You can also dial autonomy up or down, or switch an event type back to manual entirely. What the approach removes is the burden of remembering and assembling, not your authority over what happens next."
+          "question": "Can a calendar really run itself?",
+          "answer": "Only in a bounded sense: events can trigger configured workflows, but permissions, evidence, review, retries, and failures still need ownership."
         },
         {
-          "question": "I use my calendar as a to-do list and notes. Do I have to reorganize everything before this becomes useful?",
-          "answer": "You do not need a perfect calendar, but you do need honest entries, because triggers fire only on what the calendar knows. A deadline typed into an event's notes is not a trigger; a real event with a title, a time, and connected context is. Start by promoting the three or four commitments that matter each week into real events and leave the rest as-is; most systems improve with use, learning your recurring series and their sources."
+          "question": "What can an event trigger?",
+          "answer": "Depending on the product and configuration, it may trigger a preparation brief, a deadline check, or a follow-up draft."
         },
         {
-          "question": "How is this different from an AI scheduler like Calendly or Motion, or from a chat assistant with calendar access?",
-          "answer": "Scheduling tools solve the front of the lifecycle — finding a time and booking the meeting — and a calendar-driven system assumes that part is handled. Chat assistants with calendar access are still chat assistants: they act when prompted and lose context between sessions. Calendar-driven AI instead treats the event itself as the trigger, running work before, around, and after it on a schedule that does not depend on you asking. The categories complement each other."
+          "question": "Does calendar-driven AI send messages automatically?",
+          "answer": "Some products may support external actions, but a prudent pilot keeps them behind approval until controls are verified."
         },
         {
-          "question": "Does calendar-driven AI need access to everything in my calendar, email, and files to be useful?",
-          "answer": "It needs access to the sources behind the work you want automated, which is rarely everything. Most implementations let you scope connections by calendar, email folder, or document source, and you can add more as trust builds. Even calendar-only access produces value on timing and recurrence, but richer context — the right thread, the right document — comes from the email and file connections behind the people you meet."
+          "question": "What data does it need?",
+          "answer": "Useful output may require selected calendar, email, files, or meeting evidence; grant only the minimum necessary access."
         },
         {
-          "question": "I run a small business with only a few meetings a week. Is this still relevant to me?",
-          "answer": "It depends on whether your few meetings carry weight. If your income depends on a handful of client calls, proposals, and renewals, calendar-driven AI removes exactly the costliest failure mode — the forgotten follow-up, the under-prepared pitch, the deadline discovered late — even at low volumes. If your calendar is mostly internal and low-stakes, a plain calendar and a chat assistant may serve you better. Start with the one recurring client meeting and the one hard deadline that actually hurt when they slipped."
+          "question": "What happens when a trigger fails?",
+          "answer": "The system should expose the failure, retry policy, duplicate prevention, and audit record rather than silently skipping or repeating work."
         },
         {
-          "question": "Is calendar-driven AI something I can use today, or is this a vision of the future?",
-          "answer": "It is usable today, but maturity is uneven across the three moments. Automated meeting preparation and follow-up are the most developed, with working tools and documented workflows, including those linked throughout this article; deadline-driven sequences across days are the least mature. The platform capabilities, model access, and calendar APIs are all in place — what is still evolving is how well products route events, keep context trustworthy, and make approval painless."
+          "question": "Is this the same as a reminder?",
+          "answer": "No. A reminder notifies a person; a workflow trigger starts a defined action that should produce a reviewable state or output."
+        },
+        {
+          "question": "What is the smallest useful experiment?",
+          "answer": "Choose one recurring meeting and one real deadline, define expected outputs, keep external actions in review, and compare correction work for a week."
+        },
+        {
+          "question": "When should I keep a conventional calendar?",
+          "answer": "When event-related work is light, sources cannot be safely connected, or exception handling costs more than manual preparation."
         }
       ]
     },
     "/blog/what-is-a-voice-agent": {
       "items": [
         {
-          "question": "Is ChatGPT Voice the same as a voice agent?",
-          "answer": "Yes in category terms. OpenAI's GPT-Live-powered ChatGPT Voice is a consumer **voice agent**: you speak, the model responds with speech, maintains context, and can delegate complex work to stronger models. Older \"Advanced Voice Mode\" branding referred to earlier realtime stacks; GPT-Live is the full-duplex generation as of July 2026. Developers building custom products typically use the Realtime API instead of GPT-Live itself."
+          "question": "What is a voice agent?",
+          "answer": "A voice agent is an AI system that accepts speech, maintains dialogue state, and returns spoken responses, sometimes with documented tool use."
         },
         {
-          "question": "How is a voice agent different from voice dictation?",
-          "answer": "Voice **dictation** converts speech into **text** as the primary artifact — usually inside a document or field — for editing and downstream agent actions. A voice **agent** treats **spoken dialogue** as the primary interface; text may never appear. You might use both in one day: dictate a client memo at your desk, then take a walk and talk through pricing strategy with a voice agent. The categories differ by center of gravity, not by microphone hardware."
+          "question": "Is a voice agent the same as dictation?",
+          "answer": "No. Dictation produces editable text, while a voice agent sustains a spoken interaction."
         },
         {
-          "question": "Can telephony bots be voice agents?",
-          "answer": "They can use voice-agent **models**, but the **product category** differs. Telephony bots optimize phone-network constraints — scripts, disclosures, queueing, CRM writes — while consumer voice agents optimize open-ended dialogue. A Realtime API deployment on a SIP trunk blurs the line in architecture, yet operations teams still evaluate telephony bots on containment and compliance, not on brainstorming quality."
+          "question": "Is a voice agent the same as a phone bot?",
+          "answer": "Not necessarily. Telephony bots often use narrower flows and specific compliance controls."
         },
         {
-          "question": "Which voice agent is best for solopreneurs?",
-          "answer": "There is no universal winner — job shape decides. GPT-Live emphasizes natural duplex conversation in ChatGPT; Gemini Live leads when you need camera or screen context on Android; Claude Voice Mode lets paid users switch to Opus or Sonnet mid-call for harder reasoning; Grok Voice targets low-latency API use cases if you build software. For desk-bound writing with agent collaboration, consider dictation-first tools instead of extending voice-agent sessions into document production."
+          "question": "What components does a voice agent need?",
+          "answer": "It needs speech input, dialogue state, a reasoning or policy layer, speech output, and safety controls."
         },
         {
-          "question": "Does Floatboat include a voice agent?",
-          "answer": "No. Floatboat **Flow Mode** provides **AI voice dictation** into documents with in-place agent editing — a dictation-for-agents pattern, not a speech-in/speech-out conversational agent. For the category definition of that adjacent stack, start with our voice dictation for AI agents hub; this article covers the conversational voice-agent side."
+          "question": "Can voice agents call tools?",
+          "answer": "Some can, but buyers must verify the documented tools, permissions, and approval points."
+        },
+        {
+          "question": "How should voice-agent latency be evaluated?",
+          "answer": "Measure interruption handling and end-to-end response under your actual network and task."
+        },
+        {
+          "question": "What voice-agent privacy questions matter?",
+          "answer": "Ask about recording, retention, training use, subprocessors, access controls, and deletion."
+        },
+        {
+          "question": "When is a voice agent a poor fit?",
+          "answer": "When exact text, silent work, dense visual review, or deterministic approval matters more than conversation."
         }
       ]
     },
     "/blog/what-is-agentic-calendar": {
       "items": [
         {
-          "question": "How is an agentic calendar different from a smart scheduler I already use?",
-          "answer": "Smart schedulers — Calendly, Motion, Reclaim — answer the \"when\" question: they find time slots and optimize your schedule. An agentic calendar asks what should happen because of this event, acting on the schedule rather than just managing it — preparing briefs before calls, drafting deliverables before deadlines, and automating follow-ups. It sits at the most advanced end of the AI scheduling assistant spectrum, but not every scheduling assistant is agentic."
+          "question": "What is an agentic calendar?",
+          "answer": "It is an emerging label for calendar-based AI in which events can trigger defined, reviewable preparation or follow-up work."
         },
         {
-          "question": "Can an agentic calendar really execute tasks, or is it just a smarter reminder?",
-          "answer": "It executes. The scope depends on the implementation, but the category definition includes drafting documents, extracting and assigning action items, generating follow-up communications, surfacing relevant files, and routing outputs to the right channels. What it doesn't do is make final decisions or send communications without review — it prepares and drafts, while you approve and send. Autonomy in preparation; human judgment in final action."
+          "question": "Is agentic calendar an industry standard?",
+          "answer": "No settled standard exists; compare documented triggers, permissions, outputs, approvals, and failure handling."
         },
         {
-          "question": "What's the difference between an agentic calendar and keeping ChatGPT open during meetings?",
-          "answer": "Chat-based AI is reactive: you decide when to ask, what to ask, and what context to provide, and it doesn't connect one meeting to the next. An agentic calendar is proactive and event-triggered — preparation happens before you open a chat window, follow-up happens after you close it, and each event's outcomes feed into the next one. You don't have to remember to ask; the system is already running on your schedule."
+          "question": "How is it different from a smart scheduler?",
+          "answer": "A scheduler finds or rearranges time; an agentic-calendar pattern uses an event to start work around that time."
         },
         {
-          "question": "Do I need to change my calendar to use an agentic calendar?",
-          "answer": "No. Agentic calendars connect to existing calendar infrastructure — Google Calendar, Outlook, iCloud, or any ICS feed. The calendar you already use becomes the data source and trigger layer, and the agentic calendar adds an execution layer on top. You don't migrate events or change your workflow; connect the calendar you have and the system starts working from it."
+          "question": "How is it different from a meeting notetaker?",
+          "answer": "A notetaker records a meeting; an event-triggered system may prepare before it or create reviewable tasks and drafts afterward."
         },
         {
-          "question": "How is an agentic calendar different from workflow tools like Zapier or Make?",
-          "answer": "Workflow automation binds fixed triggers to fixed actions — when a new calendar event is created, send a Slack message — and runs the same recipe every time. An agentic calendar adapts to context: prep for a first sales call differs from prep for a renewal conversation, even with similar event titles. The trade-off is predictability — a workflow always does the same thing, while an agentic calendar decides what's relevant from the event's semantics, attendees, and history."
+          "question": "Does it act without approval?",
+          "answer": "Product policies vary. External actions should remain behind review until permissions, evidence, retries, and rollback are tested."
         },
         {
-          "question": "Who actually needs an agentic calendar?",
-          "answer": "The most natural fit is solo founders and solopreneurs — with no assistant or team, the calendar is their org chart and every meeting is company output. Distributed teams benefit too, because meeting context doesn't travel automatically. In general: if your calendar is the central nervous system of your work, not just a list of appointments, the category is worth your attention. If you could delete the app and still function, it probably isn't."
+          "question": "What permissions does it need?",
+          "answer": "Only the minimum sources required for the workflow, such as selected calendar, email, files, or meeting records."
+        },
+        {
+          "question": "What should a pilot measure?",
+          "answer": "Measure trigger reliability, source attribution, output usefulness, false matches, correction time, retries, and audit history."
+        },
+        {
+          "question": "Who may not need one?",
+          "answer": "People with few recurring events or little event-related preparation may be better served by a conventional calendar and an on-demand assistant."
         }
       ]
     },
@@ -6059,56 +6127,72 @@
     "/zh/blog/best-ai-scheduling-assistant": {
       "items": [
         {
-          "question": "我该怎么选 AI 日程工具？",
-          "answer": "先从痛点出发，而非产品。只是约时间来回拉扯，第 1 代（Calendly、Doodle）就能彻底解决；一天被切碎、需守护专注时间，看第 2 代优化器；被每通客户电话的准备与跟进淹没，则需要第 4 代——Floatboat 是最清晰的代表。最后按集成需求与个人/团队缩小范围。"
+          "question": "最佳 AI 日程助手是哪一个？",
+          "answer": "没有通用榜首，应按约档、投票、时间块、团队优化或事件驱动执行选择。"
         },
         {
-          "question": "智能排程器和日程 Agent 有什么区别？",
-          "answer": "智能排程器（第 1–2 代）优化的是事件在日历上的位置——找空档、排优先级、为效率重排。日程 Agent（第 3–4 代）对日历里的内容采取行动：从邮件约出会议、在通话前备好简报、在通话后提取待办。排程器回答「何时」；日程 Agent 回答「因为安排在何时，所以会发生什么」。"
+          "question": "对外约档适合哪类工具？",
+          "answer": "若时区、缓冲与改期满足需求，成熟预约链接工具通常足够。"
         },
         {
-          "question": "日历驱动 Agent（第 4 代）到底能做什么？",
-          "answer": "第 4 代把日历当作运行时而非网格。客户电话上了日历，系统先收集相关邮件、调出最新草稿、备好简报；通话一结束，它提取待办、起草跟进；截止日临近，开始组装交付物。每个事件都带含文件、运行历史与模型选择的持久化工作区——Agent 执行日历所蕴含的准备、跟进与产出，无需你发起。"
+          "question": "多人找共同时间适合哪类工具？",
+          "answer": "需要比较多个候选时段时，适合使用时间投票工具。"
         },
         {
-          "question": "AI 日程工具对单人创始人值得吗？",
-          "answer": "值得，只是分层级。Calendly 这类第 1 代工具几乎是必需品——光是省下的约档邮件就值回免费档；苦于上下文切换，第 2 代有价值；当生意靠日历运转，第 4 代最要紧——每通客户电话的准备没人替你干，每场会议的跟进没人替你追。一周约 15 通客户电话时差距是变革性的，只有 3 通时可忽略。"
+          "question": "自动安排任务时间块适合哪类工具？",
+          "answer": "应选择能在遵守锁定时段与截止时间的前提下重排任务的优化工具。"
         },
         {
-          "question": "这些工具能和 Google Calendar、Outlook 一起用吗？",
-          "answer": "大体可以，覆盖不一。主流工具都支持 Google/Outlook；Morgen 另加 iCloud/CalDAV；Floatboat 还支持 Lark、ICS，并连到 Agent 工作区。注意 Motion 取代而非增强原生日历；Outlook 支持在工具间从只读到双向同步不等——先查官方集成页。"
+          "question": "团队试点日程助手该测什么？",
+          "answer": "应测跨成员约束、管理员控制、专注时间、手动覆盖与恢复。"
         },
         {
-          "question": "随着代际演进，「自主性」到底指什么？",
-          "answer": "自主性是一架阶梯。第 1、2 代是协助——给建议、做优化、发提醒，活还是你来干；第 3 代开始替你行动，但只限排程领域——从邮件约会、处理约档请求；第 4 代把行动延伸到整个生命周期：备简报、收上下文、起草跟进、追踪待办，全程无需人发起。决定购买的不是功能数量，而是 AI 等着你，还是替你行动。"
+          "question": "应按价格选择日程助手吗？",
+          "answer": "不只看订阅价，还要比较设置、纠错与失败恢复的总成本。"
+        },
+        {
+          "question": "日程助手应获得哪些权限？",
+          "answer": "试点只给必要日历与字段；只有明确任务需要时才增加邮件或文件权限。"
+        },
+        {
+          "question": "日程助手试点应持续多久？",
+          "answer": "至少覆盖正常改期与一次异常，并用固定评分表而不是厂商演示判断。"
         }
       ]
     },
     "/zh/blog/best-ai-scheduling-assistants": {
       "items": [
         {
-          "question": "AI 日程助手到底该怎么选？",
-          "answer": "没有通吃的赢家——按你最主要的痛点来选。如果是约时间的来回复拉，从第一代开始（Calendly、Doodle）；如果是碎片化的一天和上下文切换，看第二代（Motion、Reclaim、Clockwise、Morgen）；如果痛点是每个日历事件都要手动准备与跟进，你需要第四代日历驱动 Agent OS（如 Floatboat）。再叠加团队规模与集成需求，就能收窄到具体工具。"
+          "question": "最好的 AI 日程助手是哪一个？",
+          "answer": "没有通用冠军。可预约时间可测试 Calendly 或 Google，Microsoft 多人协商可测试 Outlook Scheduling Poll，任务规划看 Motion，弹性时间保护看 Reclaim。"
         },
         {
-          "question": "AI 排程的四代分别是什么？",
-          "answer": "区别不在是否用了 AI，而在 AI 被要求做什么。第一代智能排程器（Calendly、Doodle）找时间并自动约时；第二代 AI 优化器（Motion、Reclaim 等）排任务优先级并重排日程；第三代日程 Agent（Agentic Calendars、Cal.com Agents）加上下文，并对约时请求采取行动；第四代日历驱动 Agent OS（Floatboat）从日历自主驱动工作——自动准备、执行与会后跟进。"
+          "question": "这篇盘点和单数的 AI 日程助手指南有什么区别？",
+          "answer": "本页负责当前产品选购与试用；单数页负责解释工具类型。"
         },
         {
-          "question": "智能排程器和日程 Agent 有什么区别？",
-          "answer": "智能排程器（第一到二代）优化的是时间空档的排布——找空档、排任务优先级、为效率重排日历。日程 Agent（第三到四代）对日历的内容采取行动——从邮件约出会议、会前准备简报、会后提炼行动项。智能排程器回答的是\"什么时候\"；日程 Agent 回答的是\"因为排在什么时候，会发生什么\"。"
+          "question": "Calendly 是 AI 任务规划器吗？",
+          "answer": "核心任务是预约与路由，不能默认它会给项目任务排优先级。"
         },
         {
-          "question": "对单人创始人来说，AI 日程助手值得吗？",
-          "answer": "第一代工具几乎是必需的——光是省下的排程邮件时间就值回免费档。第二代有价值，前提是你苦于上下文切换、或把日历当任务管理器用。第四代对你最直接相关：当你就是整个公司，每场客户通话的准备没人替你做、每场会议的行动项没人替你追踪。把这些自动化，你才能去做真正推动业务前进的战略工作。"
+          "question": "Google Calendar 能替代独立预约工具吗？",
+          "answer": "简单预约页可能可以，但账户资格、冲突检查、收款与共同主持规则需逐项核验。"
         },
         {
-          "question": "哪些工具能集成 Google Calendar 和 Outlook？",
-          "answer": "覆盖度不一。Calendly、Motion、Reclaim、Clockwise 和 Agentic Calendars 支持 Google 与 Outlook；Morgen 增加 iCloud 和 CalDAV；Floatboat 支持 Google、Outlook、iCloud、Notion Calendar、飞书和任意 ICS feed，是清单里原生日历支持最广的。若你需要工具自动连上 CRM、邮件、任务与文件，只有第三、四代把集成当作核心架构，而不是一个设置面板。"
+          "question": "Outlook Scheduling Poll 解决什么问题？",
+          "answer": "它让参与者对候选时间投票，并可在文档规定的条件下定稿会议；它不负责排任务。"
         },
         {
-          "question": "日历驱动 Agent OS 能做前几代做不到的事？",
-          "answer": "第四代执行日历所隐含的工作，而不只是安排事件。对每个事件，它能自动准备简报——汇集相关邮件与文档草稿；通话结束后提炼行动项、起草跟进；截止日临近时开始组装交付物——没有一件需要你先发起。第一、二代是「辅助你」，第四代是「替你行动」，覆盖从会前准备到会后跟进的完整生命周期。"
+          "question": "Motion 和 Reclaim 怎么选？",
+          "answer": "核心是任务重排时测试 Motion；核心是围绕既有日历保护弹性任务、习惯与专注时间时测试 Reclaim。"
+        },
+        {
+          "question": "如何试用 AI 日程助手？",
+          "answer": "用同一组代表性日程跑一周，加入一次异常，记录冲突、错误移动、通知噪声与修正时间。"
+        },
+        {
+          "question": "同一日历可以连接两个日程助手吗？",
+          "answer": "只有两者职责不同才合理；若做同一件事，应指定唯一写入者，避免冲突。"
         }
       ]
     },
@@ -6439,56 +6523,72 @@
     "/zh/blog/chatgpt-voice-mode-vs-dictation": {
       "items": [
         {
-          "question": "ChatGPT 语音模式和听写是同一个东西吗？",
-          "answer": "不是。Voice Mode（波形图标）开启实时语音对话，ChatGPT 以音频回应，线程累积的是非逐字转写。Dictation（composer 里的麦克风图标）把你的语音转成**消息框里可编辑的文本**，像打出来的提示词一样发送。OpenAI 把它们记录为限制与用途都不同的两个独立功能。"
+          "question": "ChatGPT Voice Mode 和听写有什么区别？",
+          "answer": "Voice 是语音对话；听写先生成可编辑文字，再由你发送。"
         },
         {
-          "question": "写长的 agent 提示词，哪个更好？",
-          "answer": "通常听写更好。长 agent 提示词受益于发送前审阅：改名字、加 JSON 或代码块、确保约束逐字精确。Voice Mode 优先对话流畅度，而不是模型行动之前的静态可编辑产物。很多构建者即便在 Voice Mode 里出声完成了头脑风暴，最后仍用听写产出最终提示词。"
+          "question": "哪个更适合写精确提示词？",
+          "answer": "听写更合适，因为发送前可以检查名称、约束与格式。"
         },
         {
-          "question": "听写会消耗 GPT-Live 分钟数吗？",
-          "answer": "原生 ChatGPT Dictation 不占用付费套餐 Live 会话的独立 GPT-Live / Voice Mode 额度。它是进 composer 的语音转文本；发送的消息仍计入套餐的常规聊天限制。具体政策可能变化——请按你的账号档位在 OpenAI 帮助中心确认。"
+          "question": "Voice Mode 会留下逐字准确的转写吗？",
+          "answer": "OpenAI 提醒，语音转写未必与原对话完全一致。"
         },
         {
-          "question": "Voice Mode 能替代我产品里的 voice agent 吗？",
-          "answer": "不能凭它自己。ChatGPT Voice Mode 是 OpenAI 应用内的消费级对话功能，转写未必与口语逐字一致，也没有你的自定义工具运行时。一个生产级 **voice agent** 通常需要你自己的鉴权、记忆、工具策略与部署面——架构与 ChatGPT 的哪个图标单独都不同。Voice Mode 可以为对话做原型；听写常常产出规格；你的 agent 平台负责执行。"
+          "question": "ChatGPT 听写会自动发送吗？",
+          "answer": "官方说明的流程是先转写、允许编辑、再发送；依赖这一行为前仍应核验当前应用版本。"
         },
         {
-          "question": "什么时候该用文档听写而不是 ChatGPT 的 composer？",
-          "answer": "当交付物是一份多章节文档、一份带责任人的会议计划，或任何会跨会话修订、挂接日历事件的文件——而不是一条聊天消息。ChatGPT Dictation 止步于 composer 边缘；Floatboat Flow Mode 这类文档原生工具把语音、编辑与 Agent 运行留在同一份持久草稿里。用 ChatGPT 做开放式推理，用文档听写交付必须按期出货的东西。"
+          "question": "Voice Mode 更适合头脑风暴吗？",
+          "answer": "当即时追问与口头节奏比可复用文字更重要时，通常更合适。"
         },
         {
-          "question": "Advanced Voice Mode 和 GPT-Live 之间发生了什么？",
-          "answer": "GPT-Live 是 OpenAI 在 2026 年大范围推送的全双工语音模型家族，以边听边说行为驱动 Live Voice 体验。Advanced 与 Standard 语音选项仍在，服务想要不同轮替方式或账号专属视觉功能的用户。在更新后的客户端里，点 Voice 越来越多地路由到 GPT-Live 级体验；可用性仍取决于套餐、地区与应用版本。"
+          "question": "Agent 指令该用哪一个？",
+          "answer": "高影响或重复任务优先使用可编辑文字；有需要时可先用 Voice 探索。"
+        },
+        {
+          "question": "Voice 与听写的数据控制相同吗？",
+          "answer": "它们是不同功能，应分别查看 OpenAI 当前的数据控制与保留说明。"
+        },
+        {
+          "question": "可以在同一工作流里组合吗？",
+          "answer": "可以。先口头探索，再把审定后的指令听写或输入 composer。"
         }
       ]
     },
     "/zh/blog/claude-code-non-developers-solo-operators": {
       "items": [
         {
-          "question": "我不会编程，能用 Claude Code 吗？",
-          "answer": "技术上可以——确实有非技术背景的人让它跑起来了。但配置过程涉及终端、Node.js，还要有耐心应对各种出错。对多数非开发者来说，Claude chat 配 Projects，或通过桌面应用用 Cowork，是更好的起点。"
+          "question": "非开发者能用 Claude Code 吗？",
+          "answer": "可以，但要能谨慎使用终端并审阅文件变化；它不是无代码应用。"
         },
         {
-          "question": "2026 年 Claude Code 到底要花多少钱？",
-          "answer": "按 [Anthropic 官方定价](<https://claude.com/pricing>)：Pro 每月 $20（按年付每月 $17），包含 Claude Code；Max 5x 每月 $100；Max 20x 每月 $200。没有免费访问——你至少需要一个 Pro 订阅或 API 额度。"
+          "question": "独立运营者可用 Claude Code 做什么？",
+          "answer": "可以起草、转换和整理文本或数据文件，自动化仓库内重复任务并检查变更。"
         },
         {
-          "question": "Claude Code 就是把 Claude 搬进终端吗？",
-          "answer": "可以这么说，但能力更强。它能读你整个代码库、同时改多个文件、运行命令，并在多步任务上自主运作。它是为持续的技术工作设计的，不是为一问一答。"
+          "question": "使用 Claude Code 需要会 Git 吗？",
+          "answer": "强烈建议掌握基础版本控制，以便检查和恢复改动。"
         },
         {
-          "question": "Claude Code 和 Cowork 有什么区别？",
-          "answer": "Claude Code 面向终端里的编码与开发者工作流。Cowork 是 Anthropic 面向通用知识工作的 Agent 工具——处理本地文件、跑多步研究与自动化任务——不需要终端技能。两者都能通过桌面应用在 Pro 和 Max 套餐上使用。如果你对自主能力感兴趣、但对代码不感兴趣，Cowork 是起点。"
+          "question": "哪些任务不该先自动化？",
+          "answer": "在控制机制验证前，应避开凭据、付款、破坏性批量编辑与法律敏感决策。"
         },
         {
-          "question": "该为「自己造工具」去学 Claude Code 吗？",
-          "answer": "通常不必作为第一选择。没有编程底子的话，真正的成本很少是每月 $20，而是学习时间、出问题时原因不明的调试过程，以及重度编码会话与你日常 Claude 用量共用同一预算这件事。回报会快速递减；对多数单人创业者，回报率更高的做法是把 Claude chat、Projects 与 Cowork 用透。"
+          "question": "Claude Code 成本多少？",
+          "answer": "成本取决于当前套餐、模型与任务量，应查看 Anthropic 官方价格并做有限试点。"
         },
         {
-          "question": "我应该为 Claude Code 升级到 Max 吗？",
-          "answer": "只有当你会频繁撞上 Pro 上限时才需要。按 Anthropic 支持文档的说法，升级的最佳信号是：使用中断出现的频率，高到损失的时间超过了每月 $80 的差价。轻度或偶尔使用的话，先开 Pro，观察几周自己的用量规律再说。"
+          "question": "文件权限应如何设置？",
+          "answer": "先在副本或小范围项目目录试用，审阅行为后再扩权。"
+        },
+        {
+          "question": "Cowork 更适合非编程工作吗？",
+          "answer": "文档任务可能更适合 Cowork，但仍要比较权限、产物与审阅流程。"
+        },
+        {
+          "question": "可复现的首次 Claude Code 试点怎么做？",
+          "answer": "提供一个受版本控制的目录、一个可逆任务和明确的验收清单。"
         }
       ]
     },
@@ -7339,72 +7439,72 @@
     "/zh/blog/google-calendar-vs-apple-calendar": {
       "items": [
         {
-          "question": "单人工作到底该选 Google Calendar 还是 Apple Calendar？",
-          "answer": "工作围绕 Google Workspace、混合设备、外部协作或网页管理时选 Google Calendar；日程以个人或家庭为主、重视 Apple 原生整合时选 iCloud Calendar。也可以直接在 Apple Calendar 中使用 Google 账户。"
+          "question": "Google Calendar 和 Apple Calendar 哪个更好？",
+          "answer": "跨平台工作与 Workspace 协作通常更适合 Google；Apple 设备为主的个人或家庭使用更适合 iCloud 日历。"
         },
         {
-          "question": "能同时用 Google Calendar 和 Apple Calendar 吗？",
-          "answer": "可以。把 Google 账户加入 Apple Calendar，两个 App 读写的是同一份 Google 日历；把 iCloud 公开链接加到 Google，则只是只读订阅。应只保留一个可编辑数据源，避免重复与冲突。"
+          "question": "Apple Calendar 能显示 Google Calendar 吗？",
+          "answer": "可以，Apple Calendar 可在 Apple 设备上作为 Google 账户的客户端。"
         },
         {
-          "question": "同步日历前需要检查什么？",
-          "answer": "确认唯一数据源、默认日历、账户所有者、共享权限、重复事件、时区、订阅 feed、任务和连接自动化。迁移真实日程前，用测试事件验证创建、编辑、删除、邀请与离线行为。"
+          "question": "应不应该在两个系统里都维护可编辑副本？",
+          "answer": "不建议。应选一个唯一数据源，另一端通过账户连接或订阅查看。"
         },
         {
-          "question": "共享和任务管理有什么区别？",
-          "answer": "Google Calendar 有空闲/忙碌、详情、编辑与管理共享等权限，但受 Workspace 策略限制；iCloud 有私有查看/编辑共享和公开只读链接。Google Tasks 显示在 Calendar 中，Apple 则把任务放在独立的 Reminders App。"
+          "question": "ICS 订阅等于双向同步吗？",
+          "answer": "通常不等于；订阅 feed 多为只读，而且刷新可能延迟。"
         },
         {
-          "question": "哪个日历的离线能力更好？",
-          "answer": "Apple Calendar 是原生客户端，会在本地保留已同步数据。Google Calendar 可开启 Chrome 离线模式，但官方说明离线时不能创建或编辑事件、给参与者发邮件或访问 Tasks。实际同步行为还应按目标设备与账户实测。"
+          "question": "哪个更适合共享？",
+          "answer": "取决于协作者和账户策略；Google 有明确共享角色，iCloud 共享更适合 Apple 账户环境。"
         },
         {
-          "question": "开启 Advanced Data Protection 后，iCloud Calendar 是端到端加密吗？",
-          "answer": "不是。Apple 将 Calendars 列为传输中与服务器端加密，密钥由 Apple 保存，即使开启 Advanced Data Protection 也是如此。不要在事件标题与描述中放秘密，并只共享他人真正需要的详情。"
+          "question": "哪个离线体验更好？",
+          "answer": "应测试具体设备与账户组合；原生 App、网页与缓存数据的离线行为并不相同。"
         },
         {
-          "question": "迁移时如何避免丢失事件？",
-          "answer": "先导出 ICS 备份，分别创建目标日历并逐个导入，再核对重复事件例外、时区、全天事件、组织者与参与者。共享、任务、视频链接和自动化需要另行重建，最后保留一段只读重叠期。"
+          "question": "如何安全迁移？",
+          "answer": "先导出备份，分别导入目标日历，重建共享与集成，并在停用旧数据源前测试重复事件例外。"
         },
         {
-          "question": "Gemini 或 Apple Intelligence 能自动运营日历吗？",
-          "answer": "原生能力可以帮助创建、查找、编辑或安排事件，但受套餐、设备、语言、地区与设置限制。跨文档或外部业务系统的工作还需要额外工具与权限；任何会影响他人的更改都应复核。"
+          "question": "选择 Google 是否意味着不能用 Apple Calendar？",
+          "answer": "不意味着；可以让 Google 作为账户数据源，同时用 Apple Calendar 查看和编辑。"
         }
       ]
     },
     "/zh/blog/google-calendar-vs-outlook": {
       "items": [
         {
-          "question": "到底该选 Google Calendar 还是 Outlook？",
-          "answer": "选择与组织工作身份绑定的日历。Google Workspace 默认用 Google Calendar；Exchange、Teams、Microsoft 365 会议室、委派与合规体系默认用 Outlook。顾问可能需要保留两个源账户。"
+          "question": "Google Workspace 公司应该用 Google Calendar 吗？",
+          "answer": "通常应该，这样身份、Meet、群组、资源与管理留在同一生态，但仍受组织策略约束。"
         },
         {
-          "question": "两款日历的根本区别是什么？",
-          "answer": "根本差异是周边工作系统。Google Calendar 对齐 Gmail、Meet、Drive、Groups 与 Tasks；Outlook 对齐 Exchange、Teams、资源邮箱、正式委派、Microsoft To Do、Planner、Graph 和 Microsoft 365 治理。"
+          "question": "哪些情况更适合 Outlook Calendar？",
+          "answer": "当 Exchange、Teams、共享邮箱、会议室资源、委派与 Microsoft 365 治理是核心时。"
         },
         {
-          "question": "Google Calendar 和 Outlook 能互通吗？",
-          "answer": "可以共存，但 ICS 订阅只是只读知晓层，导入则是一次性副本。长期工作应让各组织会议留在各自账户，并用一个客户端同时显示。第三方双向同步会增加冲突、重复、隐私与撤权风险。"
+          "question": "Google Calendar 与 Outlook 能完美同步吗？",
+          "answer": "不能默认如此。订阅和连接器可能延迟，也可能遗漏组织者、回复、附件或状态细节。"
         },
         {
-          "question": "互链日历前要检查什么？",
-          "answer": "确认组织者账户、唯一数据源、默认日历、跨租户共享策略、重复事件、时区、会议室、任务、自动化与通知。实测外部邀请、更新、取消、委派，以及只看空闲状态的人能看到什么。"
+          "question": "最稳妥的共存方式是什么？",
+          "answer": "每个身份保留一个权威日历，只暴露必要空闲状态，并用统一视图查看，不复制会议所有权。"
         },
         {
-          "question": "什么时候 Outlook 更合适？",
-          "answer": "组织使用 Exchange Online 与 Teams，或需要正式委派、资源邮箱、Scheduling Assistant、Microsoft To Do/Planner、保留、eDiscovery 等 Microsoft 365 治理时，Outlook 是更合适的默认项。"
+          "question": "哪家的委派更强？",
+          "answer": "应比较组织实际需要的 Workspace 与 Exchange 角色；共享权限和代理委派不是一回事。"
         },
         {
-          "question": "什么时候 Google Calendar 更合适？",
-          "answer": "组织使用 Google Workspace、团队以浏览器为主，或流程围绕 Gmail、Meet、Drive、Groups、Google Tasks、Calendar API 与 Apps Script 时，Google Calendar 更适合作为默认项；外部共享与应用访问仍受管理员策略约束。"
+          "question": "哪个更适合会议室预订？",
+          "answer": "应使用拥有组织资源账户的生态，并实际测试跨租户行为。"
         },
         {
-          "question": "ICS 文件能迁移 Google Tasks 或 Microsoft To Do 吗？",
-          "answer": "不能。ICS 主要承载事件数据，无法完整保留任务模型、标记邮件链接、Planner 分配、评论、文件或完成状态语义。任务迁移必须与日历迁移分开规划。"
+          "question": "任务功能会如何影响选择？",
+          "answer": "Google Calendar 连接 Google Tasks，Outlook 位于更广的 Microsoft 任务生态；应测试指派、可见性与移动端行为。"
         },
         {
-          "question": "Gemini 和 Copilot 的日历功能对所有人开放吗？",
-          "answer": "不是。可用性取决于个人或托管账户、许可证、管理员开关、客户端、地区、语言、事件类型与发布通道。应在真实租户核验，并检查自动接受、拒绝或改期的近期动作。"
+          "question": "迁移前必须测试什么？",
+          "answer": "测试重复事件、组织者、参与者回复、时区、附件、隐私、会议室、任务与自动化。"
         }
       ]
     },
@@ -8767,28 +8867,36 @@
     "/zh/blog/voice-mode-vs-dictation-for-ai-agents": {
       "items": [
         {
-          "question": "Voice mode 只是加了文字转语音的 dictation 吗？",
-          "answer": "不是。Dictation 到转写为止；你通过正常的推理路径发送文本。Voice mode 管理一场多轮语音会话——轮次检测、全双工系统里的语音重叠、语音回复——不要求每次发言后手动点发送。下游模型可能相似，但产品契约不同。"
+          "question": "对 AI Agent 而言，语音模式与听写有何不同？",
+          "answer": "语音模式优化实时对话循环，听写优化可编辑的输入产物。"
         },
         {
-          "question": "我能在 Cowork 或 Claude Code 里用 Claude Voice Mode 吗？",
-          "answer": "按 Anthropic 已发布的文档，不能。Cowork 与 Code 里有听写；完整的 voice mode 仅限 Claude 聊天应用。据此规划工作流：在 Cowork 里听写任务简报，把 Voice Mode 留给口语推理。"
+          "question": "哪个更适合会调用工具的 Agent？",
+          "answer": "听写通常能在高影响执行前提供更清楚的审阅点。"
         },
         {
-          "question": "ChatGPT Dictation 会计入 GPT-Live 语音额度吗？",
-          "answer": "OpenAI 说明听写与实时语音对话额度相互独立 [<a href=\"https://help.openai.com/en/articles/20001274-chatgpt-voice\" rel=\"nofollow noopener\">来源：OpenAI 帮助</a>]。经常要起草长提示词的重度用户偏好听写，一半是为了配额，不只是为了可编辑性。"
+          "question": "Agent 工作流何时该用语音模式？",
+          "answer": "用于探索、澄清、排练或免提推理，也就是对话本身就是工作时。"
         },
         {
-          "question": "编码 agent 该用语音模式还是听写？",
-          "answer": "听写。终端与 IDE agent 期待文本提示词、返回 diff 或日志。Claude Code 的 `/voice` 把语音转写进提示词；它不会把答案念出来。运行破坏性命令前，先确认转写稿。"
+          "question": "Agent 工作流何时该用听写？",
+          "answer": "用于需要审阅或复用的规格、命令、简报与提示词。"
         },
         {
-          "question": "这与主动干活的 voice agent 有什么关系？",
-          "answer": "Voice mode 与 dictation 是你打开的应用内部的*输入通道*。Voice agent 增加了调度、工具编排与持久目标——更像一个常驻工人，而不是一场聊天。agent 开始监听之后输入范式仍然重要，但品类问题比任何单一模态都更宽。"
+          "question": "听写会把语气信息传给模型吗？",
+          "answer": "通常不会。模型收到的是你批准的文字，而不是韵律或语调。"
         },
         {
-          "question": "我能在同一个工作流里混用 voice mode 和 dictation 吗？",
-          "answer": "可以，按顺序来：先出声探索，再把整理好的简报听写进 Cowork 或 ChatGPT 文本。不要假设上下文会在 Claude Voice Mode 与 Cowork 项目之间自动迁移——切换界面时，显式复制约束与人名。"
+          "question": "系统听写能配合编码 Agent 吗？",
+          "answer": "可以把文字输入终端或编辑器，但命令仍需审阅。"
+        },
+        {
+          "question": "语音模式与听写的试点该测什么？",
+          "answer": "应测修正时间、提交错误、可审阅性、上下文转移和产物质量。"
+        },
+        {
+          "question": "语音能替代主动自动化吗？",
+          "answer": "不能。语音降低输入摩擦，定时或事件驱动 Agent 解决任务启动。"
         }
       ]
     },
@@ -8867,80 +8975,108 @@
     "/zh/blog/what-if-your-calendar-could-run-itself": {
       "items": [
         {
-          "question": "帮我管日历的 AI，会不会接管我的日程、不经我同意就发东西？",
-          "answer": "不会——在我们描述的这类设计里，自主权是有边界的、可撤回的。任何要离开你日历或收件箱的东西，都要经过一道由你把控的审批：要么逐条审，要么给低风险项设好规则。你也可以把自主档位调高调低，或把某类事件整个改回全手动。这套思路拿掉的，是「记住」和「拼装」的负担，而不是你对接下来发生什么的主导权。"
+          "question": "日历真的能自己运行吗？",
+          "answer": "只能在有限意义上：事件可触发已配置流程，但权限、证据、审批、重试与失败仍需明确负责人。"
         },
         {
-          "question": "我把日历当待办清单和笔记用。在它变得有用之前，我是不是得把所有东西重新整理一遍？",
-          "answer": "你不需要一份完美的日历，但需要诚实的条目，因为触发器只对日历知道的东西生效。写进事件备注里的截止日期不是触发器；一个带标题、带时间、带关联上下文的真实事件才是。可以先从每周最重要的三四个承诺下手，把它们升级成真实事件，其余的保持原样；大多数系统越用越准，会学习你的周期性序列和它们的数据源。"
+          "question": "日历事件可以触发什么？",
+          "answer": "视产品与配置而定，可触发准备简报、截止日期检查或跟进草稿。"
         },
         {
-          "question": "这和 Calendly、Motion 这类 AI 日程工具，或者能读日历的聊天助手，有什么区别？",
-          "answer": "日程工具解决的是生命周期前段——找个时间、把会议订下来——日历驱动的系统假定这部分已经搞定。能读日历的聊天助手仍然是聊天助手：你问它才动，会话之间丢上下文。日历驱动 AI 则把事件本身当作触发器，在事件之前、周围和之后，按一条不依赖你开口的日程运转。这几类东西是互相补充的。"
+          "question": "日历驱动 AI 会自动发送消息吗？",
+          "answer": "部分产品可能支持外部动作，但稳妥试用应先保留审批，直到控制机制得到验证。"
         },
         {
-          "question": "日历驱动 AI 是不是要读光我的日历、邮件和文件才有用？",
-          "answer": "它需要的是你要自动化那项工作背后的数据源，而这通常不是全部。多数实现允许你按日历、邮件文件夹或文档来源去限定接入范围，信任建立起来以后再逐步增加。就算只连日历，也已经在时机和周期性上产生价值；但更丰富的上下文——对的邮件、对的文档——来自你见的人背后那些邮件与文件的连接。"
+          "question": "它需要哪些数据？",
+          "answer": "有价值的输出可能需要指定日历、邮件、文件或会议证据；只开放必要的最少权限。"
         },
         {
-          "question": "我经营一家小公司，一周只有几场会议。这对我还有用吗？",
-          "answer": "要看你这几场会议扛不扛事。如果收入靠的是少数几通客户电话、几份提案和几轮续费，那么日历驱动 AI 恰好消掉最贵的那种失灵——被忘掉的跟进、没准备的提案、发现得太晚的截止日期——即便量很小。如果你的日历大多是对内的、风险不高的，朴素日历加聊天助手也许更适合你。先从那一场真正让你吃过亏的周期性客户会议，和那一个真实的硬截止日期开始。"
+          "question": "触发失败时应该怎么办？",
+          "answer": "系统应显示失败、重试策略、去重机制与审计记录，而不是静默漏跑或重复执行。"
         },
         {
-          "question": "日历驱动 AI 现在就能用，还是说这只是对未来的想象？",
-          "answer": "现在就能用，但三个时刻的成熟度参差不齐。自动化的会议准备和跟进最成熟，有能用的工具和成文的流程——包括本文里到处引用的那些；跨几天的截止日期序列最不成熟。平台能力、模型接入和日历 API 都已经就位——仍在演进的是，产品如何路由事件、如何让上下文长期可信、如何让审批不那么费事。"
+          "question": "这和提醒一样吗？",
+          "answer": "不一样。提醒通知人；工作流触发器启动定义好的动作，并应产生可复核状态或输出。"
+        },
+        {
+          "question": "最小可行试验是什么？",
+          "answer": "选一场周期会议和一个真实截止日期，定义预期输出，把外部动作留在审批后，连续一周比较修正工作量。"
+        },
+        {
+          "question": "什么情况下应继续用普通日历？",
+          "answer": "当事件相关工作很少、数据源无法安全连接，或异常处理成本高于手工准备时。"
         }
       ]
     },
     "/zh/blog/what-is-a-voice-agent": {
       "items": [
         {
-          "question": "ChatGPT Voice 就是 voice agent 吗？",
-          "answer": "按品类说，是的。由 GPT-Live 驱动的 ChatGPT Voice 是消费级 **voice agent**：你说话，模型以语音回应、维持上下文，并能委托复杂工作给更强的模型。旧的「Advanced Voice Mode」品牌指更早的实时技术栈；截至 2026 年 7 月，GPT-Live 是全双工一代。构建自定义产品的开发者通常用 Realtime API，而不是 GPT-Live 本身。"
+          "question": "什么是 Voice Agent？",
+          "answer": "Voice Agent 是能接收语音、保持对话状态并返回语音，且可能调用已公开工具的 AI 系统。"
         },
         {
-          "question": "Voice agent 与语音听写有什么不同？",
-          "answer": "语音**听写**把语音转成**文本**作为主要产物——通常在文档或输入框里——供编辑与下游 agent 动作。语音 **agent** 把**口语对话**当作主界面；文本可能从不出现。你可能一天两者都用：在桌前口述客户备忘录，然后出去散步、和 voice agent 把定价策略聊透。两个品类之别在重心，不在麦克风硬件。"
+          "question": "Voice Agent 等于语音听写吗？",
+          "answer": "不等于。听写产出可编辑文字，Voice Agent 维持语音互动。"
         },
         {
-          "question": "电话机器人可以是 voice agent 吗？",
-          "answer": "它们可以用 voice agent 的**模型**，但**产品品类**不同。电话机器人优化电话网络约束——脚本、话术、排队、CRM 写入——而消费级 voice agents 优化开放式对话。架在 SIP 中继上的 Realtime API 部署在架构上模糊了界线，但运营团队评估电话机器人仍看问题解决率与合规，不看头脑风暴质量。"
+          "question": "Voice Agent 和电话机器人一样吗？",
+          "answer": "不一定。电话机器人通常流程更窄，并带有特定合规控制。"
         },
         {
-          "question": "对独立创业者，哪个 voice agent 最好？",
-          "answer": "没有万能赢家——任务形态说了算。GPT-Live 强调 ChatGPT 里自然的双工对话；需要在 Android 上带摄像头或屏幕上下文时，Gemini Live 领先；Claude Voice Mode 让付费用户在通话中途切到 Opus 或 Sonnet 处理更难的推理；如果你自己开发软件，Grok Voice 瞄准低延迟 API 场景。桌面写作为主、要与 agent 协作的场景，考虑听写优先的工具，而不是把 voice agent 会话硬伸进文档生产。"
+          "question": "Voice Agent 需要哪些组件？",
+          "answer": "需要语音输入、对话状态、推理或策略层、语音输出与安全控制。"
         },
         {
-          "question": "Floatboat 包含 voice agent 吗？",
-          "answer": "不包含。Floatboat **Flow Mode** 提供进文档的 **AI 语音听写**，带原位 agent 编辑——是「给 agent 的听写」模式，不是语音进/语音出的对话 agent。想了解那个相邻品类的定义，从我们的面向 AI Agent 的语音听写枢纽文章读起；本文覆盖的是对话式 voice agent 那一侧。"
+          "question": "Voice Agent 能调用工具吗？",
+          "answer": "部分产品可以，但须核验公开工具、权限与审批点。"
+        },
+        {
+          "question": "应如何评估 Voice Agent 的延迟？",
+          "answer": "应在真实网络与任务下测试打断处理和端到端响应。"
+        },
+        {
+          "question": "哪些 Voice Agent 隐私问题最重要？",
+          "answer": "应询问录音、保留、训练用途、分包商、访问控制与删除。"
+        },
+        {
+          "question": "哪些场景不适合 Voice Agent？",
+          "answer": "精确文字、安静工作、密集视觉审阅或确定性审批比对话更重要时。"
         }
       ]
     },
     "/zh/blog/what-is-agentic-calendar": {
       "items": [
         {
-          "question": "Agentic Calendar 和我现在用的智能排程器有什么本质区别？",
-          "answer": "智能排程器（Calendly、Motion 那类）回答「什么时候」：找时间档、优化日程。Agentic Calendar 回答的是「因为这个事件该发生什么」：会前备简报、赶截止日期起草交付物、会后自动跟进，不管理日程而是执行日程，处在 AI 日程助手光谱的最前端。"
+          "question": "什么是 Agentic Calendar？",
+          "answer": "它是一个仍在形成的品类称呼，指日历事件可触发事先定义、可复核的准备或跟进工作。"
         },
         {
-          "question": "Agentic Calendar 真能自己执行任务吗，还是只是更聪明的提醒？",
-          "answer": "能执行。具体范围取决于实现，但品类的定义本身就包含任务执行：起草文档、提炼并分派行动项、生成跟进沟通、浮出相关文件、把成果路由到正确渠道。它不做的是替你拍板最终决定，或未经审阅就把消息发出去——它负责准备和起草，批准与发送留给你。准备环节交给自主，最终动作留给人判断。"
+          "question": "Agentic Calendar 是行业标准吗？",
+          "answer": "目前没有统一标准，应比较文档明确的触发、权限、输出、审批与失败处理。"
         },
         {
-          "question": "和开会时开着 ChatGPT 窗口，有什么区别？",
-          "answer": "聊天式 AI 是响应式的：你决定何时问、问什么、给什么上下文，也不衔接上一场或下一场会议。Agentic Calendar 主动且由事件触发：你打开窗口前准备已完成，关掉后跟进仍在继续，结果还会回流进下一场。它不需要你记得开口——它已在你设定的日程上跑起来了。"
+          "question": "它和智能排程器有什么区别？",
+          "answer": "排程器负责寻找或重排时间；Agentic Calendar 模式让事件触发围绕该时间的工作。"
         },
         {
-          "question": "用它需要换掉我现在的日历吗？",
-          "answer": "不用。它天生对接现有日历——Google Calendar、Outlook、iCloud 或任何 ICS 源。你现在用的日历直接成为数据源与触发层，agentic 系统只是在上面加执行层：读取并据此行动。不需迁移事件或改变工作流，接上现有日历就能跑。"
+          "question": "它和会议记录工具有什么区别？",
+          "answer": "记录工具记录会议；事件触发系统还可能在会前准备，或在会后生成待审任务与草稿。"
         },
         {
-          "question": "它和 Zapier、Make 这类工作流自动化工具的区别在哪？",
-          "answer": "工作流自动化把固定触发器接到固定动作上——如「新事件创建就发 Slack 消息」——每次都跑同一套配方。Agentic Calendar 依据上下文应变：首次销售电话与老客户续约的准备完全不同。代价是可预测性：工作流总做同一件事，它则看事件语义、参与人和历史来判断什么相关。"
+          "question": "它会不经批准直接行动吗？",
+          "answer": "各产品不同。在权限、证据、重试与回滚完成测试前，外部动作应保留人工审批。"
         },
         {
-          "question": "到底谁需要 Agentic Calendar？",
-          "answer": "最天然的受众是独立创始人与单人创业者——没有助理也没有团队，日历就是你的组织架构图，每场会议都是公司产出。分布式团队同样受益，因为会议周围的上下文不会自动跟着人走。更宽泛地说：日历是工作的中枢神经系统、而不只是一串约见，就值得关注；删掉日历也能正常运转，则未必适合你。"
+          "question": "它需要哪些权限？",
+          "answer": "只应开放流程必需的最少来源，例如指定日历、邮件、文件或会议记录。"
+        },
+        {
+          "question": "试用应测什么？",
+          "answer": "测试触发可靠性、来源可追溯性、输出价值、错误匹配、修正时间、重试与审计记录。"
+        },
+        {
+          "question": "谁可能不需要 Agentic Calendar？",
+          "answer": "周期事件少、几乎没有围绕事件的准备工作时，普通日历加按需助手可能更合适。"
         }
       ]
     },

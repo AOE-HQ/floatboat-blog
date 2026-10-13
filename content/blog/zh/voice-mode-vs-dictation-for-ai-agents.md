@@ -14,7 +14,7 @@ draft: false
 
 - **Voice mode** 是双向语音对话：你说话，AI 回话，整个交流发生在实时对话循环里。**Dictation** 是语音转文本进输入框——你审阅并编辑转写稿，再把它当作普通文本提示词发送。
 - 这个区别是架构性的，不是外观性的。Voice mode 优化轮替、打断与口语化推理；dictation 优化精确性、可编辑性，以及与文本原生 agent 工作流（Cowork 任务、终端命令、长简报）的兼容性。
-- ChatGPT 现在默认 **GPT-Live** 承载全双工语音，同时保留 Dictation 作为不占用实时语音额度的独立路径。Claude 划出了同样的边界：聊天应用里有 Voice Mode，Cowork 与 Code 里只有听写。
+- ChatGPT 将 Voice 与 Dictation 作为不同入口：前者进行语音对话，后者先生成可编辑文字再发送。
 - 没有哪种形态处处占优。独立创业者应该按任务匹配——探索与免提交互思考偏向 voice mode；写规格、指挥 agent、写代码偏向 dictation。
 - 想了解本系列的定义与词汇，从我们的枢纽文章[面向 AI Agent 的语音听写](/zh/blog/what-is-voice-dictation-for-ai-agents)读起。
 
@@ -54,7 +54,7 @@ draft: false
 
 **转述式转写。** OpenAI 说明语音转写稿并非逐字记录，可能与实际所说内容不完全一致 [<a href="https://help.openai.com/en/articles/20001274-chatgpt-voice" rel="nofollow noopener">来源：OpenAI ChatGPT Voice 帮助</a>]。用于推理没问题；但当你需要逐字的法律或代码语言、又来不及复核时，这就是问题。
 
-**用量计费。** 实时语音往往消耗单独的额度或套餐档位。听写通常不需要——OpenAI 明确说明听写不占用实时语音对话额度，这一点对配额有限的重度用户很重要。
+**用量计费。** 限额与套餐可用范围会随产品和账号变化，应查看各厂商当前官方文档；本文采用的稳定边界是语音对话与可编辑文字。
 
 ### 2.3 Voice Mode 不是什么
 
@@ -68,7 +68,7 @@ Voice mode 不是系统级语音转文本。它不会把文字插进 Excel、Gma
 
 ### 3.1 核心定义
 
-**Dictation**（语音输入、语音转文本，开发者工具里的 `/voice`）把口语音频转换成*输入框里的文本*。你看到转写稿，编辑它，然后显式发送——回车、Run 或 Submit——就像任何打出来的提示词一样。模型可能从未「听」过你的声音；它只读你批准过的文本。
+**Dictation**（语音输入或语音转文本）把口语音频转换成*输入框里的文本*。你看到转写稿，编辑它，然后显式发送——回车、Run 或 Submit——就像任何打出来的提示词一样。模型可能从未「听」过你的声音；它只读你批准过的文本。
 
 Anthropic 的帮助中心把区别说得很直白：「Dictation 将你的语音转换为文本，让你可以用说话的方式输入提示词。Voice mode 则是完整的双向对话」 [<a href="https://support.claude.com/en/articles/11101966-use-voice-mode" rel="nofollow noopener">来源：Anthropic voice mode 帮助</a>]。这一句话就是 Claude 的架构边界；同样的逻辑适用于整个生态。
 
@@ -78,7 +78,7 @@ Anthropic 的帮助中心把区别说得很直白：「Dictation 将你的语音
 
 **单发或串行提示词。** 除非产品自动串联，每次发送都是一次独立的 agent 调用。Dictation 适合一口气说成的长简报、串行 steering 消息（「现在收紧第二节」），以及你会在屏幕上核对的精确词汇（API 名称、客户姓氏、法律术语）。
 
-**界面可移植。** Dictation 出现在文本提示词出现的一切地方：Claude Cowork 的任务栏、通过 `/voice` 的 Claude Code 终端、ChatGPT 的听写控件、macOS 与 Windows 系统听写进任意应用。AI 产品不独占整个循环——你的编辑器或 shell 也是循环的一部分。
+**界面可移植。** Dictation 出现在文本提示词出现的地方：ChatGPT 的听写控件以及操作系统听写，都可以把可编辑文字放进输入框、编辑器或 shell。AI 产品不独占整个循环。
 
 **不要求语音回复。** 模型像对待打字输入一样以文本（或代码 diff）回应。这让 Cowork 与 Code 在开放办公室与共享空间里依然可用——语音回复在那儿会打扰别人。
 
@@ -110,7 +110,7 @@ Anthropic 的帮助中心把区别说得很直白：「Dictation 将你的语音
 
 ### 5.1 ChatGPT：GPT-Live、传统语音与听写
 
-OpenAI 把 ChatGPT 的语音重组为以 **GPT-Live** 为付费档（GPT-Live-1）与免费档（GPT-Live-1 mini）的默认实时体验，在同一聊天里提供全双工对话、网络搜索、记忆与组件式可视化答案 [<a href="https://help.openai.com/en/articles/20001274-chatgpt-voice" rel="nofollow noopener">来源：OpenAI 帮助</a>]。**Standard** 语音保留为先转写再回复的逐轮路径。**Advanced Voice Mode** 仍然承担 GPT-Live 初期未上线的能力——主要是视频、移动端屏幕共享以及自定义 GPT 内的语音 [<a href="https://www.toolcolumn.com/learn/gpt-live-vs-advanced-voice-mode" rel="nofollow noopener">来源：ToolColumn 对比，截至 2026 年中</a>]。
+截至 2026 年 10 月 13 日，OpenAI 将 **Voice** 描述为语音对话，并在[官方 Voice 帮助](https://help.openai.com/en/articles/20001274-chatgpt-voice)中说明因账号而异的选项、用量限制，以及受支持移动端的视频和屏幕共享。独立的[听写 FAQ](https://help.openai.com/en/articles/12168547-voice-dictation-faq)则明确：麦克风音频先转成可编辑文字，用户修改后再发送。对 agent 工作真正有用的是这条官方产品边界，而不是模型名称之争。
 
 **ChatGPT Dictation** 在这套栈之外：录语音、审转写、按文本发送。OpenAI 自己的指引——实时来回用语音，要可编辑的提示词用听写——与本文的框架一致。逐产品对照表在 [ChatGPT 语音模式 vs 听写](/zh/blog/chatgpt-voice-mode-vs-dictation)；这里的要点是：OpenAI 把两者当作配额与 UX 入口都不同的兄弟功能，而不是一个带文本回退的模式。
 
@@ -124,7 +124,7 @@ Mac 上的 Claude Desktop 另有 **quick entry**（Option + Space、Caps Lock �
 
 ### 5.3 编码 Agent：终端听写，而非 Voice Mode
 
-面向开发者的 agent 几乎只继承听写这一侧。**Claude Code** 提供 `/voice` 把语音转写进终端提示词；CLI 可能打印「Voice mode enabled」，但行为是听写——循环里没有语音助手回复 [<a href="https://www.getvoibe.com/resources/dictate-in-claude-cowork/" rel="nofollow noopener">来源：Voibe 引用 Anthropic 文档，2026 年 8 月</a>]。并行 agent 会话、测试输出与 diff 审阅仍是文本原生；说一句重构需求是便利，不是对话。
+面向开发者的 agent 通常围绕文本产物来评估：已提交的指令、命令输出、diff 与审批记录。操作系统听写可以减少打字，却不会把审阅循环变成语音对话。任何厂商专属语音命令都应视为需要去官方文档核验的当前产品细节，而不是编码 agent 的定义性能力。
 
 同样的模式遍布 **Cursor**、**Windsurf** 与其他 IDE agent：有语音输入时，填的是提示词或内联编辑框。agent 以代码与文本回应。全双工语音结对编程没有成为默认任务形态——部分因为盯屏读代码主导循环，部分因为语音回复在共享环境里打扰专注。
 

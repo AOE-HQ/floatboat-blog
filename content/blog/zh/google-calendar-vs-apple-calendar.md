@@ -10,6 +10,8 @@ locale: "zh"
 draft: false
 ---
 
+信息核对截至 2026 年 10 月 13 日。功能可能受账户类型、系统版本、管理员策略与地区影响，迁移前应重新核对文中 Google 与 Apple 官方文档。
+
 Google Calendar 与 Apple Calendar 都能管理事件、邀请、重复日程、提醒、多日历与订阅日历。真正的差异在于：日历账户存在哪里，以及哪些人、设备和自动化需要访问它。
 
 先选择账户系统，再选择查看它的 App。Apple Calendar 可以在 Apple 设备上直接显示 Google 账户，因此把 Google 作为唯一数据源，并不意味着必须放弃 Apple 的原生日历界面。

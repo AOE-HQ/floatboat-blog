@@ -252,22 +252,22 @@
     },
     "best-ai-scheduling-assistant": {
       "en": {
-        "title": "What an agentic calendar actually is",
-        "body": "Definition first — then watch one reschedule around a blocked afternoon by itself."
+        "title": "Choose an AI scheduling assistant by the job",
+        "body": "Compare booking, polling, time blocking, team optimization, and event-driven execution with one scorecard."
       },
       "zh": {
-        "title": "Agentic 日历到底是什么",
-        "body": "先看定义，再看它怎么自己绕开一个被占死的下午。"
+        "title": "按任务选择 AI 日程助手",
+        "body": "用同一套评分表比较约档、投票、时间块、团队优化与事件驱动执行。"
       }
     },
     "best-ai-scheduling-assistants": {
       "en": {
-        "title": "From smart schedulers to agentic ones",
-        "body": "The lineup ends where the calendar stops suggesting and starts doing."
+        "title": "A buyer’s shortlist for scheduling tools",
+        "body": "Compare booking, group consensus, task planning, and flexible time protection by the job you need done."
       },
       "zh": {
-        "title": "从智能排程到 Agentic 排程",
-        "body": "榜单的终点，是日历从给你建议变成替你动手。"
+        "title": "按真实需求筛选日程工具",
+        "body": "从预约、多人协商、任务规划与弹性时间保护出发比较候选。"
       }
     },
     "best-calendar-app-solo-operators": {
@@ -352,12 +352,12 @@
     },
     "claude-code-non-developers-solo-operators": {
       "en": {
-        "title": "Claude Code from a non-developer's seat",
-        "body": "What it can and can't do for you — and what to schedule around it."
+        "title": "Claude Code for non-developers: a bounded pilot",
+        "body": "Start with one reversible task, narrow file access, version control, and an explicit acceptance checklist."
       },
       "zh": {
-        "title": "非开发者视角的 Claude Code",
-        "body": "它能替你做什么、不能做什么，以及该围绕它排什么日程。"
+        "title": "非开发者使用 Claude Code：先做有限试点",
+        "body": "从一个可逆任务开始，收窄文件权限，启用版本控制，并写清验收标准。"
       }
     },
     "claude-code-vs-cowork-vs-tag": {
@@ -1022,22 +1022,22 @@
     },
     "what-if-your-calendar-could-run-itself": {
       "en": {
-        "title": "Your calendar, running itself",
-        "body": "Events as triggers: prep before, follow-through after, deadlines watched for you."
+        "title": "Test calendar-triggered workflows safely",
+        "body": "Use bounded triggers, review gates, retries, and audit history for preparation and follow-up."
       },
       "zh": {
-        "title": "如果日历能自己转",
-        "body": "日程即触发器：会前备好、会后收尾、截止日自己盯。"
+        "title": "安全测试日历触发流程",
+        "body": "用有限触发、人工复核、失败重试与审计记录控制准备和跟进。"
       }
     },
     "what-is-agentic-calendar": {
       "en": {
-        "title": "Agentic calendars act, not track",
-        "body": "The definition piece, with examples of schedules that do actual work."
+        "title": "A working definition of agentic calendars",
+        "body": "Evaluate the emerging category by documented triggers, permissions, outputs, approvals, and failures."
       },
       "zh": {
-        "title": "Agentic 日历：行动而非记录",
-        "body": "定义与实例都在这：会自己干活的日程长什么样。"
+        "title": "Agentic Calendar 的工作定义",
+        "body": "按有文档依据的触发、权限、输出、审批与失败处理评估这一新兴品类。"
       }
     },
     "what-is-claude-code": {
@@ -1362,12 +1362,12 @@
     },
     "chatgpt-voice-mode-vs-dictation": {
       "en": {
-        "title": "ChatGPT Voice Mode vs dictation — when to talk or type",
-        "body": "Talking to a model and dictating work are different jobs. The line between them, drawn from daily use."
+        "title": "ChatGPT Voice Mode vs dictation: choose the right input",
+        "body": "Compare spoken conversation with editable text by artifact, review point, and task risk."
       },
       "zh": {
-        "title": "ChatGPT 语音模式 vs 听写：何时说、何时写",
-        "body": "和模型对话、把工作口述成稿是两件事——边界画在日常使用里。"
+        "title": "ChatGPT 语音模式与听写：按任务选择入口",
+        "body": "从产物、审阅点与任务风险出发，比较语音对话和可编辑文字。"
       }
     },
     "clean-up-downloads-folder-with-ai": {
@@ -1562,22 +1562,22 @@
     },
     "voice-mode-vs-dictation-for-ai-agents": {
       "en": {
-        "title": "Voice mode or dictation — which job shape fits?",
-        "body": "Talking to an agent and dictating text are different jobs. The shapes, mapped from real use."
+        "title": "Voice mode or dictation for agent work?",
+        "body": "Choose by job shape, reviewability, context transfer, and the artifact the agent will receive."
       },
       "zh": {
-        "title": "语音模式还是听写——哪种任务形态适合你",
-        "body": "和 agent 对话、把文字口述成稿是两种活——从真实使用里画出边界。"
+        "title": "Agent 工作该用语音模式还是听写？",
+        "body": "按任务形态、可审阅性、上下文转移与 Agent 最终收到的产物选择。"
       }
     },
     "what-is-a-voice-agent": {
       "en": {
-        "title": "What is a voice agent? Definition, architecture, job shapes",
-        "body": "The category defined — architecture, job shapes, and where voice agents actually earn their keep."
+        "title": "What is a voice agent? Definition, architecture, and limits",
+        "body": "Understand the speech loop, dialogue state, tool boundaries, privacy questions, and poor-fit tasks."
       },
       "zh": {
-        "title": "什么是 Voice Agent？定义、架构与任务形态",
-        "body": "品类的完整定义——架构、任务形态，以及语音 agent 真正创造价值的场景。"
+        "title": "什么是 Voice Agent？定义、架构与边界",
+        "body": "理解语音循环、对话状态、工具边界、隐私问题与不适用任务。"
       }
     },
     "what-is-an-ai-file-organizer": {
