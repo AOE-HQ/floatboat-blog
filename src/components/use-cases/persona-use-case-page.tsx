@@ -5,6 +5,7 @@ import { personaPath } from "@/lib/use-cases/persona-pages";
 
 import { PersonaCapabilities } from "./persona-capabilities";
 import { PersonaLiveDemo } from "./persona-live-demo";
+import { PersonaWorkScenes } from "./persona-work-scenes";
 
 const SITE_ORIGIN = "https://floatboat.ai";
 
@@ -72,17 +73,7 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
 
     <PersonaLiveDemo page={page} />
 
-    <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8">
-      <Heading {...page.burdens} title={isZh ? `${roleLabel}可以交给 Agent 的工作` : `What ${roleLabel} can delegate`} />
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">{page.burdens.items.map((item, index) => <article key={item.title} className="rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-6 shadow-[var(--ob-shadow-raised)]"><span className="text-xs font-semibold text-[var(--ob-color-accent)]">0{index + 1} · {item.label}</span><h3 className="mt-8 font-serif text-2xl tracking-tight">{item.title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></article>)}</div>
-    </div></section>
-
-    <section id="workflows" className="bg-[#24221f] py-20 text-white sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><Heading {...page.workflows} title={isZh ? `${roleLabel}工作流` : `${roleLabel} workflows in Floatboat`} inverted />
-      <div className="space-y-5">{page.workflows.items.map((workflow) => <article key={workflow.number} className="grid gap-7 rounded-[28px] border border-white/10 bg-white/[0.04] p-6 lg:grid-cols-[0.72fr_1.28fr] lg:p-8">
-        <div><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f7d68b]">{workflow.number}</p><h3 className="mt-4 font-serif text-3xl tracking-tight">{workflow.title}</h3><p className="mt-4 leading-7 text-white/65">{workflow.job}</p></div>
-        <div><div className="flex flex-wrap items-center gap-2">{workflow.flow.map((step, index) => <div key={step} className="contents"><span className="rounded-full border border-white/15 bg-white/[0.06] px-4 py-2 text-sm">{step}</span>{index < workflow.flow.length - 1 && <span className="text-white/25">→</span>}</div>)}</div><p className="mt-6 text-sm"><strong className="text-[#f7d68b]">{isZh ? "交付物：" : "Output: "}</strong>{workflow.output}</p><p className="mt-3 border-l-2 border-white/15 pl-4 text-sm leading-6 text-white/50">{workflow.boundary}</p></div>
-      </article>)}</div>
-    </div></section>
+    <PersonaWorkScenes page={page} roleLabel={roleLabel} />
 
     <PersonaCapabilities page={page} roleLabel={roleLabel} />
 
