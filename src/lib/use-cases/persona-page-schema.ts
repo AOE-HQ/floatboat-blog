@@ -21,6 +21,10 @@ export const personaPageSchema = z.object({
     "financial-analysts",
     "executive-assistants",
     "marketers",
+    "for-solopreneur",
+    "for-creators",
+    "for-small-business",
+    "for-studio",
   ]),
   locale: z.enum(["en", "zh"]),
   seo: z.object({
@@ -59,7 +63,7 @@ export const personaPageSchema = z.object({
       example: z.string().min(1),
       result: z.string().min(1),
     })).min(5),
-  }),
+  }).optional(),
   workflows: z.object({
     eyebrow: z.string().min(1),
     title: z.string().min(1),
@@ -81,13 +85,13 @@ export const personaPageSchema = z.object({
     inputs: z.array(z.string().min(1)).min(4),
     controlsLabel: z.string().min(1),
     controls: z.array(z.string().min(1)).min(4),
-  }),
+  }).optional(),
   progression: z.object({
     eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     items: z.array(cardSchema).min(3),
-  }),
+  }).optional(),
   boundaries: z.object({
     eyebrow: z.string().min(1),
     title: z.string().min(1),
@@ -97,7 +101,7 @@ export const personaPageSchema = z.object({
     retainsTitle: z.string().min(1),
     retains: z.array(z.string().min(1)).min(4),
     note: z.string().min(1),
-  }),
+  }).optional(),
   faq: z.object({
     title: z.string().min(1),
     description: z.string().min(1),

@@ -10,6 +10,10 @@ const burdenOrder: Record<PersonaPageData["slug"], number[]> = {
   "financial-analysts": [0, 1, 3],
   "executive-assistants": [0, 1, 2],
   marketers: [0, 1, 3],
+  "for-solopreneur": [0, 1, 2],
+  "for-creators": [0, 1, 2],
+  "for-small-business": [0, 1, 2],
+  "for-studio": [0, 1, 2],
 };
 
 export function PersonaWorkScenes({ page, roleLabel }: { page: PersonaPageData; roleLabel: string }) {

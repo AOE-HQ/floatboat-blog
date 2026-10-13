@@ -7,12 +7,16 @@ import { titleCase } from "@/lib/title-case";
 const relatedSlugs: Record<PersonaSlug, PersonaSlug[]> = {
   lawyers: ["consultants", "researchers", "executive-assistants"],
   teachers: ["researchers", "marketers", "executive-assistants"],
-  consultants: ["researchers", "financial-analysts", "marketers"],
+  consultants: ["researchers", "financial-analysts", "for-studio"],
   researchers: ["consultants", "financial-analysts", "teachers"],
-  recruiters: ["executive-assistants", "marketers", "consultants"],
-  "financial-analysts": ["researchers", "consultants", "executive-assistants"],
-  "executive-assistants": ["consultants", "recruiters", "financial-analysts"],
-  marketers: ["researchers", "consultants", "recruiters"],
+  recruiters: ["executive-assistants", "for-small-business", "consultants"],
+  "financial-analysts": ["researchers", "consultants", "for-small-business"],
+  "executive-assistants": ["for-small-business", "for-solopreneur", "recruiters"],
+  marketers: ["for-creators", "for-studio", "consultants"],
+  "for-solopreneur": ["for-small-business", "for-creators", "consultants"],
+  "for-creators": ["marketers", "for-solopreneur", "for-studio"],
+  "for-small-business": ["for-solopreneur", "executive-assistants", "marketers"],
+  "for-studio": ["for-creators", "marketers", "consultants"],
 };
 
 export function PersonaRelatedPages({ page }: { page: PersonaPageData }) {

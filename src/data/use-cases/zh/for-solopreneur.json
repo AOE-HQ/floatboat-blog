@@ -1,0 +1,27 @@
+{
+  "slug": "for-solopreneur", "locale": "zh",
+  "seo": {"title": "一人公司 AI Agent Workspace | Floatboat", "description": "面向一人公司和独立经营者的 AI Agent Workspace，用于准备客户提案、项目交付、内容、跟进与周期经营工作，同时保留经营者审批。", "keywords": ["一人公司 AI", "独立经营者 AI", "一人公司工具", "AI Agent Workspace", "个人创业工作流"]},
+  "breadcrumb": "一人公司与独立经营者",
+  "hero": {"eyebrow": "把一人公司背后的多种角色放进同一工作空间", "title": "一人公司的 AI Agent Workspace", "description": "从客户需求或一段语音记录开始，继续完成提案、项目交付、后续跟进和流程沉淀。业务承诺与关键决定始终由经营者确认。", "primaryCta": {"label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-solopreneur&download_placement=hero"}, "secondaryCta": {"label": "查看工作流", "href": "#workflows"}, "proof": ["不同角色共用同一业务背景", "客户交付物可以继续编辑", "对外发送前由经营者确认"], "preview": {"label": "业务工作空间", "matter": "新客户 · 提案与启动", "inputs": ["通话语音记录", "服务方案模板", "客户背景"], "outputs": ["提案初稿", "随附邮件", "启动清单"], "review": "经营者审批"}},
+  "burdens": {"eyebrow": "销售与交付之间的工作", "title": "所有角色最后都回到同一个人", "description": "一人公司需要在销售、交付、运营、财务和内容之间不断切换，却没有同事替自己保存这些角色之间的上下文。", "items": [
+    {"label": "背景", "title": "每个角色都从自己的记忆开始", "description": "客户承诺、定价依据、项目历史和下一步常常散落在只有经营者本人看得懂的记录里。"},
+    {"label": "交付", "title": "专业呈现会挤占收费工作", "description": "提案、演示、进展说明和跟进消息必须完整可信，背后却没有专门的制作团队。"},
+    {"label": "跟进", "title": "一个小承诺会变成一串待办", "description": "一次通话可能同时产生提案、账务备注、资料研究、日历安排和多条相互依赖的消息。"},
+    {"label": "复用", "title": "有效方法留在了旧项目里", "description": "已经验证过的客户接洽或交付方法，经常靠回忆重建，没有成为下一次可直接使用的起点。"}
+  ]},
+  "workflows": {"eyebrow": "三个起点", "title": "把获客、交付与跟进连起来", "description": "每条流程都从现有业务材料开始，返回由经营者检查和修改的成果。", "items": [
+    {"number": "01", "title": "把客户通话变成提案", "job": "结合语音记录、客户背景、服务模板和待确认问题，准备完整提案材料。", "flow": ["记录通话", "恢复客户背景", "起草提案", "审阅后发送"], "output": "可编辑提案、随附邮件、关键假设和后续清单。", "boundary": "经营者确认范围、价格、主张、承诺、收件人和发送时间。"},
+    {"number": "02", "title": "准备一套客户交付材料", "job": "在审阅或交接前，把源文件、历史决定、当前进度和交付物整理到一起。", "flow": ["选择项目文件", "找回历史决定", "准备交付物", "整理进展说明"], "output": "客户交付物、进展说明、决定清单和后续事项。", "boundary": "经营者核验质量，并决定哪些内容适合与客户共享。"},
+    {"number": "03", "title": "完成每周经营复盘", "job": "把在办项目、待跟进事项、近期截止时间和未决问题整理成一份经营简报。", "flow": ["汇总未完成工作", "按业务角色分类", "确定优先级", "准备本周行动"], "output": "包含优先级、待执行动作和暂缓决定的每周简报。", "boundary": "Floatboat 负责准备视图；经营者决定优先级并作出承诺。"}
+  ]},
+  "faq": {"title": "一人公司使用 AI 工作空间的常见问题", "description": "真正需要确认的是业务上下文能否延续、客户成果是否可靠，以及哪些重复工作值得保存。", "items": [
+    {"question": "Floatboat 是 CRM 或企业管理套件吗？", "answer": "不是。客户、账务和项目系统仍负责正式记录。Floatboat 把完成具体任务需要的文件、指令、Agent 与交付物放在同一工作环境中。"},
+    {"question": "它可以在没有我的情况下经营业务吗？", "answer": "不可以。它能准备工作、呈现待决定事项并重复已批准步骤，但优先级、价格、客户关系、业务承诺与对外行动仍由经营者负责。"},
+    {"question": "可以使用我自己的提案和交付模板吗？", "answer": "可以。为当前客户提供适用的服务措辞、结构、定价假设、品牌语气和审阅清单。"},
+    {"question": "怎样隔离不同客户的资料？", "answer": "为客户建立独立项目与文件夹，限制文件访问，采用清楚命名，并在复用流程前检查连接器权限。"},
+    {"question": "它会自动发送提案或账单吗？", "answer": "对外发送与财务承诺应保留明确的经营者审批。准备好某项操作，不等于已经获得执行许可。"},
+    {"question": "最适合先自动化哪项工作？", "answer": "选择输入相对稳定、经常重复且自己熟悉验收标准的工作，例如提案准备或每周客户进展说明。"},
+    {"question": "业务变化后，保存的流程还能修改吗？", "answer": "可以。服务、工具、客户和审批点变化后，流程仍应能够调整，而不是要求经营者重新搭建一遍。"}
+  ]},
+  "finalCta": {"eyebrow": "从一个真实客户任务开始", "title": "让不同角色共用同一业务背景", "description": "带上一个客户需求、一份可信模板和下一项交付物。保留有效方法，也保留经营者自己的判断。", "primaryCta": {"label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-solopreneur&download_placement=final_cta"}, "secondaryCta": {"label": "了解 Agent Workspace", "href": "/zh/agent-workspace"}}
+}

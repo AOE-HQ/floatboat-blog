@@ -110,5 +110,21 @@
       ["多模型", "/zh/models", "按研究、推理、快速文案变体、图像工作或长上下文活动复盘选择合适模型。"],
       ["FloatIM", "/zh/floatim", "让市场人员、创作者、审阅者与 Agent 围绕同一活动线程从 Brief 协作到获批素材。"]
     ]
+  },
+  "for-solopreneur": {
+    "en": [["Agent Workspace", "/agent-workspace", "Keep client work, operations, content, decisions, and deliverables connected without rebuilding context for every role."], ["Flow Mode", "/flow-mode", "Capture a spoken update or rough idea while the working brief and deliverable change in real time."], ["AI Scheduling Assistant", "/ai-scheduling-assistant", "Turn sales follow-up, delivery milestones, and recurring administration into prepared work blocks."], ["Multiple AI Models", "/models", "Use the right model for research, drafting, analysis, or fast execution inside the same business workspace."]],
+    "zh": [["Agent 工作站", "/zh/agent-workspace", "把客户工作、运营、内容、决定和交付物持续放在一起，无需为每个角色重新搭建背景。"], ["心流模式", "/zh/flow-mode", "通过语音补充进展或想法，让工作 Brief 与交付物实时变化。"], ["AI 日程助理", "/zh/ai-scheduling-assistant", "把销售跟进、交付节点和周期行政事务变成准备充分的工作块。"], ["多模型", "/zh/models", "在同一业务工作空间中为研究、起草、分析和快速执行选择合适模型。"]]
+  },
+  "for-creators": {
+    "en": [["Agent Workspace", "/agent-workspace", "Keep source material, research, drafts, brand guidance, revisions, and publishing assets in one creative project."], ["Flow Mode", "/flow-mode", "Talk through an idea while the outline, script, article, or campaign draft develops beside you."], ["Multiple AI Models", "/models", "Switch between research, long-form writing, image work, and rapid channel adaptation without losing context."], ["AI File Organizer", "/ai-file-organizer", "Organize recordings, notes, references, drafts, and exported assets locally with predictable names."]],
+    "zh": [["Agent 工作站", "/zh/agent-workspace", "把源素材、研究、初稿、品牌要求、修改记录与发布资产保留在同一创作项目。"], ["心流模式", "/zh/flow-mode", "边说边推进想法，让提纲、脚本、文章或活动初稿在身边逐步成形。"], ["多模型", "/zh/models", "在不丢失背景的情况下切换研究、长文写作、图像工作和渠道适配模型。"], ["AI 文件整理器", "/zh/ai-file-organizer", "在本机用清晰命名整理录音、笔记、参考资料、初稿和导出资产。"]]
+  },
+  "for-small-business": {
+    "en": [["Agent Workspace", "/agent-workspace", "Keep customer requests, operating files, quotes, updates, and follow-ups connected across everyday business work."], ["AI Scheduling Assistant", "/ai-scheduling-assistant", "Prepare recurring reviews, customer follow-ups, vendor work, and owner priorities around real deadlines."], ["AI File Organizer", "/ai-file-organizer", "Organize customer, vendor, finance, and operating folders locally before the next handoff or review."], ["FloatIM", "/floatim", "Coordinate owners, staff, and agents in one thread while approvals and returned files remain visible."]],
+    "zh": [["Agent 工作站", "/zh/agent-workspace", "让客户请求、运营文件、报价、进展和跟进在日常业务中保持关联。"], ["AI 日程助理", "/zh/ai-scheduling-assistant", "围绕真实截止时间准备周期复盘、客户跟进、供应商事务与经营者重点工作。"], ["AI 文件整理器", "/zh/ai-file-organizer", "在本机整理客户、供应商、财务和运营文件夹，再进入下一次交接或审阅。"], ["FloatIM", "/zh/floatim", "让经营者、员工与 Agent 在同一线程协作，并保持审批和返回文件可见。"]]
+  },
+  "for-studio": {
+    "en": [["Agent Workspace", "/agent-workspace", "Keep briefs, source files, specialist work, feedback, decisions, and client deliverables connected across projects."], ["FloatIM", "/floatim", "Give the studio one shared thread for human and agent handoffs without separating discussion from the actual files."], ["AI File Organizer", "/ai-file-organizer", "Prepare client and production folders locally with consistent project, version, and delivery naming."], ["Skills Marketplace", "/skills-marketplace", "Reuse proven research, production, review, and delivery methods while adapting them for each client."]],
+    "zh": [["Agent 工作站", "/zh/agent-workspace", "让 Brief、源文件、专业分工、反馈、决定与客户交付物跨项目保持关联。"], ["FloatIM", "/zh/floatim", "让工作室在人类与 Agent 交接时使用同一共享线程，不让讨论脱离实际文件。"], ["AI 文件整理器", "/zh/ai-file-organizer", "在本机按照统一的项目、版本与交付命名准备客户和制作文件夹。"], ["Skills Marketplace", "/zh/skills-marketplace", "复用已验证的研究、制作、审阅与交付方法，同时为每位客户进行调整。"]]
   }
 }

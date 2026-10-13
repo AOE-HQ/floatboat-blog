@@ -8,6 +8,10 @@ import enRecruiters from "@/data/use-cases/en/recruiters.json";
 import enFinancialAnalysts from "@/data/use-cases/en/financial-analysts.json";
 import enExecutiveAssistants from "@/data/use-cases/en/executive-assistants.json";
 import enMarketers from "@/data/use-cases/en/marketers.json";
+import enSolopreneur from "@/data/use-cases/en/for-solopreneur.json";
+import enCreators from "@/data/use-cases/en/for-creators.json";
+import enSmallBusiness from "@/data/use-cases/en/for-small-business.json";
+import enStudio from "@/data/use-cases/en/for-studio.json";
 import zhLawyers from "@/data/use-cases/zh/lawyers.json";
 import zhTeachers from "@/data/use-cases/zh/teachers.json";
 import zhConsultants from "@/data/use-cases/zh/consultants.json";
@@ -16,6 +20,10 @@ import zhRecruiters from "@/data/use-cases/zh/recruiters.json";
 import zhFinancialAnalysts from "@/data/use-cases/zh/financial-analysts.json";
 import zhExecutiveAssistants from "@/data/use-cases/zh/executive-assistants.json";
 import zhMarketers from "@/data/use-cases/zh/marketers.json";
+import zhSolopreneur from "@/data/use-cases/zh/for-solopreneur.json";
+import zhCreators from "@/data/use-cases/zh/for-creators.json";
+import zhSmallBusiness from "@/data/use-cases/zh/for-small-business.json";
+import zhStudio from "@/data/use-cases/zh/for-studio.json";
 
 import { personaPageSchema, type PersonaPageData } from "./persona-page-schema";
 
@@ -32,6 +40,10 @@ const pages = {
     "financial-analysts": enFinancialAnalysts,
     "executive-assistants": enExecutiveAssistants,
     marketers: enMarketers,
+    "for-solopreneur": enSolopreneur,
+    "for-creators": enCreators,
+    "for-small-business": enSmallBusiness,
+    "for-studio": enStudio,
   },
   zh: {
     lawyers: zhLawyers,
@@ -42,6 +54,10 @@ const pages = {
     "financial-analysts": zhFinancialAnalysts,
     "executive-assistants": zhExecutiveAssistants,
     marketers: zhMarketers,
+    "for-solopreneur": zhSolopreneur,
+    "for-creators": zhCreators,
+    "for-small-business": zhSmallBusiness,
+    "for-studio": zhStudio,
   },
 } as const;
 
