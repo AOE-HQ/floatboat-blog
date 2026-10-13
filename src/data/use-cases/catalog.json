@@ -1,0 +1,14 @@
+[
+  {"slug":"lawyers","type":"profession","focus":["professional","research","client"],"model":["team","multi-client"],"rhythm":["one-off","project"]},
+  {"slug":"teachers","type":"profession","focus":["education","content"],"model":["individual","team"],"rhythm":["project","recurring"]},
+  {"slug":"consultants","type":"profession","focus":["research","professional","client"],"model":["individual","team","multi-client"],"rhythm":["one-off","project"]},
+  {"slug":"researchers","type":"profession","focus":["research","professional"],"model":["individual","team"],"rhythm":["one-off","project","recurring"]},
+  {"slug":"recruiters","type":"profession","focus":["operations","people"],"model":["team"],"rhythm":["project","recurring"]},
+  {"slug":"financial-analysts","type":"profession","focus":["research","professional","operations"],"model":["individual","team"],"rhythm":["one-off","project","recurring"]},
+  {"slug":"executive-assistants","type":"profession","focus":["operations","people"],"model":["team"],"rhythm":["one-off","recurring"]},
+  {"slug":"marketers","type":"profession","focus":["content","research","operations"],"model":["individual","team"],"rhythm":["project","recurring"]},
+  {"slug":"for-solopreneur","type":"work-identity","focus":["client","content","operations"],"model":["individual","multi-client"],"rhythm":["one-off","project","recurring"]},
+  {"slug":"for-creators","type":"work-identity","focus":["content","research"],"model":["individual","multi-client"],"rhythm":["one-off","project","recurring"]},
+  {"slug":"for-small-business","type":"organization","focus":["operations","client","people"],"model":["team"],"rhythm":["project","recurring"]},
+  {"slug":"for-studio","type":"organization","focus":["content","client","operations"],"model":["team","multi-client"],"rhythm":["project","recurring"]}
+]

@@ -61,7 +61,7 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
   return <div className="overflow-hidden bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
     <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
       <Link href={isZh ? "/zh" : "/"} className="hover:text-[var(--ob-color-text)]">{isZh ? "首页" : "Home"}</Link>
-      <span className="mx-2">/</span><span>{isZh ? "使用场景" : "Use cases"}</span>
+      <span className="mx-2">/</span><Link href={isZh ? "/zh/use-cases" : "/use-cases"} className="hover:text-[var(--ob-color-text)]">{isZh ? "使用场景" : "Use Cases"}</Link>
       <span className="mx-2">/</span><span>{page.breadcrumb}</span>
     </nav>
 
