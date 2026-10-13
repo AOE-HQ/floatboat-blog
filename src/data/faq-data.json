@@ -1736,27 +1736,35 @@
       "items": [
         {
           "question": "Do I actually need custom AI agent development?",
-          "answer": "Maybe not. The honest through-line of this article is that most people who ask about custom development don't need it — especially when their use case is already covered by no-code tools. The clearest signal that you do is having actually tried configuring existing tools and hit real walls. If you haven't tested the alternatives yet, start there before you have the vendor conversation."
+          "answer": "Only if a validated task needs model-directed decisions and existing products cannot meet the integration, permission, or deployment boundary. If fixed rules can describe the path, use deterministic automation. If the workflow is still unclear, prototype before commissioning a production agent."
         },
         {
-          "question": "How much does custom AI agent development cost?",
-          "answer": "Based on the 2025–2026 pricing data the article cites: $5,000–$15,000 for a single-purpose automation agent, $20,000–$80,000 for a multi-step reasoning agent with tool integration, and $100,000–$500,000+ for multi-agent systems with custom training and enterprise integration. Where you land within those ranges depends mainly on integration complexity, compliance requirements, and whether the project involves custom model training."
+          "question": "What belongs in a custom agent requirements contract?",
+          "answer": "Define the trigger, allowed inputs, required outcome, non-goals, model decisions, tools, approval points, refusal and escalation rules, acceptance tests, and behavior during timeout, partial completion, duplicate events, or outages. Include forbidden actions as well as desired features."
         },
         {
-          "question": "What costs continue after the build is done?",
-          "answer": "A meaningful share, and this is where budgets quietly blow up. The article cites research that 80% of enterprises underestimate AI infrastructure costs by more than 25%. API usage alone can run $100–$1,000+ per month for a moderate-use agent; add hosting, vector storage for memory, monitoring, and tuning, and ongoing costs typically land between $500 and $5,000 per month. AI systems drift, so maintenance isn't optional — include it in your decision."
+          "question": "What architecture does a production AI agent need?",
+          "answer": "At minimum: a task interface, orchestration harness, versioned model policy, narrow tools, explicit state, authorization and approval policies, evaluation and observability, plus a controlled execution boundary. A framework name alone is not an architecture."
         },
         {
-          "question": "When is custom development worth the money?",
-          "answer": "When you have genuinely exhausted the alternatives. The article identifies two triggers: high-complexity, high-specificity needs — regulated industries, proprietary data that cannot leave your infrastructure, unusual decision logic — and deep integrations that no visual workflow builder handles reliably. The second half is the math: if the agent saves 20 hours a week at $75/hour, a $60,000 build pays back in about ten months."
+          "question": "How should tools and permissions be designed?",
+          "answer": "Give each tool one clear purpose, a precise schema, minimum access, server-side validation, bounded retries, and idempotency for writes. Separate read, draft, reversible write, external action, and irreversible action. Require explicit approval or separate authorization for consequential operations."
         },
         {
-          "question": "Can no-code tools like Zapier or Make cover my use case?",
-          "answer": "For a large share of use cases, yes. The article points to Zapier — connecting 7,000+ apps, with paid plans from around $33/month — along with Make, n8n, and Relevance AI, covering email triage, prospect research, lead handling, and monitoring workflows. If your case fits that territory, you almost certainly need an afternoon with these tools, not a custom build. Prototype and validate the workflow first."
+          "question": "How do you evaluate a custom AI agent?",
+          "answer": "Use versioned tasks covering normal work, ambiguity, tool failure, duplicate events, prompt injection, required approvals, refusals, and previous incidents. Grade the final state, execution trace, unauthorized actions, intervention, latency, cost, and recovery—not only the text response."
         },
         {
-          "question": "What if my requirements are still unclear or changing?",
-          "answer": "Then defer custom development. The article cites Gartner's projection that over 40% of agentic AI projects will be canceled by the end of 2027, and unstable requirements are a classic failure mode: build custom too early and you are effectively committing to a rebuild in six months. Prototype with no-code tools first, and check whether the need is a configuration problem — prompts, RAG, tool setup — rather than a development problem."
+          "question": "What must be included in the final delivery?",
+          "answer": "Require the task contract, architecture and data-flow diagrams, tool and state specifications, permission matrix, threat model, versioned eval suite, acceptance report, reproducible deployment, monitoring, rollback and incident runbooks, source and IP terms, credentials transfer, and owner training."
+        },
+        {
+          "question": "Should I build, buy, or use a hybrid?",
+          "answer": "Buy or configure for standard workflows, build when a proprietary process or control boundary justifies operational ownership, and use a hybrid when only one layer is distinctive. Custom does not have to mean rebuilding identity, model access, scheduling, and observability from scratch."
+        },
+        {
+          "question": "How is this guide different from the AI agent development services article?",
+          "answer": "This guide defines the system to build and the technical evidence required for acceptance. The services article covers sourcing: comparing agencies or freelancers, structuring a paid pilot and contract, reviewing pricing structure, and managing the provider relationship."
         }
       ]
     },
@@ -2615,28 +2623,36 @@
     "/blog/gumloop-alternatives-2026": {
       "items": [
         {
-          "question": "Which Gumloop alternative should I choose?",
-          "answer": "No single tool wins — the right pick depends on your technical skill, your workflow type, and whether you prefer flexibility or a managed experience. High-volume, defined-process automation points to Gumloop, n8n, or Make; daily task management with AI assistance points to Lindy or ChatGPT; self-hosted developer control points to n8n; and a context-aware AI workspace fits when context fragmentation is the real problem. Build one real workflow in two candidates — that tells you more than any comparison article."
+          "question": "What is the best Gumloop alternative in 2026?",
+          "answer": "There is no universal winner. Test n8n for self-hosting and custom logic, Make for managed visual SaaS automation, Relay.app for human approvals and handoffs, and Lindy for assistant-style delegation. The best choice is the one that passes your task, permission, recovery, cost, and exit tests."
         },
         {
-          "question": "Is there a free alternative to Gumloop?",
-          "answer": "Yes. n8n is free to self-host with unlimited executions — by far the most generous free option in this category. Make keeps a permanent free tier at 1,000 operations per month, while Lindy offers only a 7-day trial. Free tiers generally assume you can manage the hosting yourself or keep your volume low."
+          "question": "Is n8n a good alternative to Gumloop?",
+          "answer": "Yes when deployment control, custom code, direct APIs, and self-hosting matter. Include infrastructure, backups, monitoring, security maintenance, and operator time in the comparison; self-hosted software is not operationally free."
         },
         {
-          "question": "Which Gumloop alternative is easiest for non-technical users?",
-          "answer": "Make and Lindy are generally the most accessible. Make suits visual workflow building on a single canvas, while Lindy fits people who prefer a conversational, assistant-style interface over designing nodes. Both have predictable pricing, but neither handles high-volume, logic-heavy data work as well as Gumloop or n8n, and Lindy has no permanent free tier."
+          "question": "When should I choose Make instead of Gumloop?",
+          "answer": "Choose Make when the workflow is mainly deterministic SaaS data movement and visual field mapping. Model the number of bundles and billable modules, plus external AI tokens; a single business run may consume many platform operations."
         },
         {
-          "question": "Can n8n do everything Gumloop does?",
-          "answer": "Mostly yes, and with more flexibility — but the trade-off is a steeper learning curve and infrastructure overhead. n8n gives you complete control over how workflows run, including custom code, API calls, and complex logic, provided you are comfortable with JavaScript, JSON, and REST APIs. It also adds failure handling and self-hosting options that Gumloop does not offer."
+          "question": "Why consider Relay.app as a Gumloop alternative?",
+          "answer": "Relay.app documents native approvals, data requests, assigned tasks, and human path selection, with reminders and escalation. It is worth testing when accountable human decisions are part of the workflow, but each required connector action still needs verification."
         },
         {
-          "question": "Is Make.com actually cheaper than Gumloop?",
-          "answer": "Yes, significantly for standard workflows. Make's Core plan starts around $10 per month and offers solid value, plus a free tier at 1,000 operations. Gumloop's entry paid tier starts at $37 per month with a credit system that can scale unexpectedly — advanced model calls run about 20 credits each versus 2 for standard calls."
+          "question": "How is Lindy different from Gumloop?",
+          "answer": "Lindy emphasizes assistant-style delegation, while Gumloop can express explicit visual flows as well as agentic steps. Lindy may reduce branch design for variable tasks, but you should evaluate action permissions, confirmations, run history, and behavior when information is missing."
         },
         {
-          "question": "Should I switch away from Gumloop if I've already built flows in it?",
-          "answer": "Not necessarily. If your flows are running and the cost is predictable, the switching cost is real. Moving is worth it only when you hit structural limitations — needing self-hosting, better context continuity, or lower pricing at your actual usage volume. Before switching, audit credit-hungry nodes and try modular subflows to close specific gaps in place."
+          "question": "How do I compare automation costs across different pricing models?",
+          "answer": "Calculate cost per accepted outcome: platform usage, hosting, model/API charges, human review and rework, and maintenance divided by accepted outputs. Compare median and p95 costs because loops, fan-out, long inputs, and retries distort averages."
+        },
+        {
+          "question": "How should I test a Gumloop alternative?",
+          "answer": "Build the same bounded workflow in Gumloop and one candidate using 20–30 fixed normal and failure cases. Measure accepted-without-edit rate, false actions, runtime, normalized cost, review time, recovery time, and the effort needed to change and retest it."
+        },
+        {
+          "question": "Should I migrate existing Gumloop workflows?",
+          "answer": "Only for a structural gap such as hosting, identity, approval, audit, connector action, or portability. If current flows meet acceptance, permission, recovery, and cost thresholds, optimize them before paying the risk and effort of migration."
         }
       ]
     },
@@ -4279,28 +4295,36 @@
     "/blog/workspace-agents-vs-chat-assistants": {
       "items": [
         {
-          "question": "Are workspace agents actually different from chat assistants?",
-          "answer": "Yes — the difference isn't model quality but the surface the AI lives on and who holds context. A chat assistant is a conversation: self-contained turns in a chat window, with state that mostly disappears when you close the tab. A workspace agent lives next to your files, tabs, and tools, reads what's already open, and runs a loop over a goal with context that accumulates across sessions. One responds; the other operates."
+          "question": "What is the difference between a workspace agent and a chat assistant?",
+          "answer": "A chat assistant is optimized for a person-led exchange. A workspace agent is optimized for a bounded task or deliverable that may use project context, tools, durable operational state, and a longer execution loop. Verify behavior rather than relying on the interface name."
         },
         {
           "question": "When should I stick with a chat assistant?",
-          "answer": "For short, self-contained tasks — rewriting a paragraph, explaining a concept, quick research, drafting a short reply — the setup cost of a workspace agent is pure overhead. Also choose chat when you don't want AI near your files: a sandboxed conversation is the more honest option for confidential work, since giving an agent broad workspace access compounds risks like prompt injection, OWASP's top LLM-app risk."
+          "answer": "Use chat for explanation, brainstorming, critique, interactive analysis, short work with one supplied input, low-frequency tasks, or sensitive work where you want to expose only one selected item. It also fits decisions where you should choose every next step."
         },
         {
-          "question": "When does a workspace agent pull ahead?",
-          "answer": "When a task spans more than two or three surfaces — a PDF, a Google Doc, a spreadsheet, a browser tab — you stop being the context-transfer layer. Agents read all of those directly, and on research-heavy work the difference is closer to 50% than 10%. They also win on repeated tasks where context matters (a weekly client update without re-explaining everything) and on multi-role solo work, where the cost of starting any new kind of work drops."
+          "question": "When should I choose a workspace agent?",
+          "answer": "Choose it when a defined deliverable needs several sources or tools, intermediate artifacts and task state must survive a longer run, the route may change with evidence, permissions can be narrowed, and both the result and execution trail can be reviewed."
         },
         {
-          "question": "Can I use both at the same time?",
-          "answer": "Yes, and most people I know do. They're different tools for different job sizes rather than competitors: a chat assistant for quick one-offs, a workspace-style setup for ongoing projects. I use a chat assistant most days and keep a workspace agent for the work that lives across files, tabs, and tools."
+          "question": "Do chat assistants have memory and tools too?",
+          "answer": "Some do. They may use history, preferences, projects, files, search, and connected apps. A workspace agent also does not automatically see everything or preserve operational state. Map the exact context and permissions available on your account and plan."
         },
         {
-          "question": "Do workspace agents replace human judgment?",
-          "answer": "No — and be skeptical of anyone who says otherwise. Both still fail on long multi-step work: chat assistants forget what you said three turns ago; agents wander off and do something you didn't ask for. Neither is set-and-forget. When an agent can write to your systems, human-in-the-loop approval on destructive actions is the minimum bar. Treat agent output like a junior assistant's first draft — useful, often good, always worth checking."
+          "question": "What is the difference between memory and task state?",
+          "answer": "Memory informs or personalizes a response. Operational state records completed steps, tool results, artifacts, approvals, committed side effects, open questions, and the next safe action. Long tasks need state to resume without duplicating writes."
         },
         {
-          "question": "How do I choose between the two?",
-          "answer": "Skip the feature matrix and ask three questions. Does my work actually span multiple surfaces? If most of your AI use is ask-and-answer, chat is probably fine. Is there repeatable context you keep re-explaining? That tax is what a workspace agent removes. How comfortable am I with broad access? For sensitive work, be deliberate about what the agent can see and do. Fit matters more than features."
+          "question": "Which permissions should a workspace agent receive?",
+          "answer": "Use a separate identity and least privilege. Separate read, draft, reversible write, and consequential write. Sending, publishing, purchasing, deleting, granting access, or accepting terms should normally require informed approval."
+        },
+        {
+          "question": "How do I compare the cost of chat and workspace agents?",
+          "answer": "Count subscription allocation, model and tool usage, runtime, setup, active supervision, corrections, failed-run recovery, and maintenance. Compare total cost per accepted result from your pilot, not sticker price or an assumed efficiency percentage."
+        },
+        {
+          "question": "How should I test a workspace agent against chat?",
+          "answer": "Give both the same sources, task, model where possible, permission ceiling, acceptance criteria, and failure cases. Measure accepted claims, citations, omissions, unauthorized actions, supervision, elapsed time, cost, recovery, and artifact editability."
         }
       ]
     },
@@ -6048,27 +6072,35 @@
       "items": [
         {
           "question": "我到底需不需要定制 AI Agent 开发？",
-          "answer": "未必。这篇文章反复在讲的老实答案就是：大多数来问定制开发的人并不需要它——尤其是当你的用例现成无代码工具已经能覆盖时。真正需要定制的清晰信号，是你亲手试过配置现有工具、并且撞上了真墙。如果替代方案还没测过，就先从那儿开始，再去跟服务商谈。"
+          "answer": "只有当一项经过验证的任务需要模型动态决策，而现有产品无法满足集成、权限或部署边界时，才需要定制。固定规则能够描述路径，就用确定性自动化；流程仍不清楚，就先做原型。"
         },
         {
-          "question": "定制 AI Agent 开发要花多少钱？",
-          "answer": "按文中引用的 2025–2026 定价数据：单一用途自动化 Agent 约 $5,000–$15,000；带工具集成的多步推理 Agent 约 $20,000–$80,000；带定制训练与企业集成的多 Agent 系统约 $100,000–$500,000+。落在区间哪一端，主要看集成复杂度、合规要求，以及是否涉及定制模型训练。"
+          "question": "定制 Agent 的需求合同应该包含什么？",
+          "answer": "写清触发方式、允许输入、目标状态、非目标、模型决策、工具、审批点、拒绝和升级规则、验收测试，以及超时、部分完成、重复事件和服务中断时的行为；禁止动作也必须明确。"
         },
         {
-          "question": "开发完成后还有哪些持续成本？",
-          "answer": "不少，而且预算大多是在这儿超支的。文中引用研究称 80% 的企业把 AI 基础设施成本低估了 25% 以上。仅 API 一项，中等用量的 Agent 每月就要 $100–$1,000+；再加上托管、存记忆的向量数据库、监控与调优，持续成本通常在 $500–$5,000/月。AI 系统会漂移，维护省不掉——开工前就要把它算进账里。"
+          "question": "生产级 AI Agent 需要怎样的架构？",
+          "answer": "至少包括任务入口、编排 Harness、版本化模型策略、窄工具、明确状态、授权与审批策略、评测与可观测性，以及受控执行边界。只报出一个框架名称，不等于给出了架构。"
         },
         {
-          "question": "什么情况下定制开发才真的值？",
-          "answer": "当你把替代方案真的用尽了的时候。文中点名两类真实触发条件：高复杂度、高特异性需求（强监管行业、不能离开你基础设施的专有数据、异常特殊的决策逻辑），以及任何可视化搭建器都处理不来的深度集成。另一半是算账：若每周省 20 小时、按 $75/小时计，$60,000 的构建约 10 个月回本。"
+          "question": "工具与权限应该怎样设计？",
+          "answer": "每个工具只负责一个明确用途，使用精确 schema、最小权限、服务端校验、有上限的重试，并为写操作提供幂等性。读取、起草、可逆写入、外部动作和不可逆动作要分开；高影响操作必须审批或单独授权。"
         },
         {
-          "question": "像 Zapier、Make 这类无代码工具够用吗？",
-          "answer": "很多用例确实够。文中点名 Zapier（连接 7000+ 应用、付费约 $33/月起）、Make、n8n 与 Relevance AI，覆盖邮件摘要分发、潜客调研、线索处理、数据源监控等一大片场景。如果你的工作流落在这个范围，你要的几乎肯定是一个下午的现成工具——而不是定制开发。先搭原型、验证工作流。"
+          "question": "怎样评测一个定制 AI Agent？",
+          "answer": "使用版本化任务覆盖正常工作、歧义、工具故障、重复事件、提示注入、必要审批、拒绝和历史事故。评测最终状态、执行轨迹、越权动作、人工介入、延迟、成本和恢复，而不只是文字回答。"
         },
         {
-          "question": "需求还不明确或还在变，怎么办？",
-          "answer": "那就先按住别做。文中引用 Gartner 预测：到 2027 年底超过 40% 的 Agentic AI 项目会被取消，需求不稳正是典型失败模式——太早做定制，等于承诺六个月后返工。先用无代码工具搭原型验证；再自查它到底是「配置问题」（提示词、RAG、工具设置），而不是「开发问题」。"
+          "question": "最终交付物必须包含什么？",
+          "answer": "至少需要任务合同、架构和数据流图、工具与状态规格、权限矩阵、威胁模型、版本化评测套件、验收报告、可复现部署、监控、回滚与事故 Runbook、源代码和知识产权条款、凭据迁移与负责人培训。"
+        },
+        {
+          "question": "应该自建、购买还是采用混合方案？",
+          "answer": "标准流程优先购买或配置；专有流程或特殊控制边界足以支撑长期运维时才自建；只有一层具有差异化时采用混合方案。定制不等于从头重建身份、模型访问、调度和可观测性。"
+        },
+        {
+          "question": "本文与 AI Agent 开发服务文章有什么区别？",
+          "answer": "本文定义要构建的系统及技术验收证据；开发服务文章负责供应商采购，包括比较开发公司或自由职业者、设计付费试点与合同、审查定价结构，以及管理合作关系。"
         }
       ]
     },
@@ -6927,28 +6959,36 @@
     "/zh/blog/gumloop-alternatives-2026": {
       "items": [
         {
-          "question": "哪款 Gumloop 替代品适合我？",
-          "answer": "没有一款能全胜——怎么选取决于你的技术水平、要自动化的工作流类型，以及你偏好灵活还是被托管好的体验。大批量、流程明确就考虑 Gumloop、n8n 或 Make；日常任务管理加 AI 协助就选 Lindy 或 ChatGPT；要自托管的开发者掌控就选 n8n；上下文碎片化才是真问题时，就探索上下文感知的 AI Workspace 品类。用两款工具各搭一条真实工作流跑一次，比任何对比文章都管用。"
+          "question": "2026 年哪款 Gumloop 替代品最好？",
+          "answer": "没有通用赢家。自托管和自定义逻辑测试 n8n，托管可视化 SaaS 自动化测试 Make，人工审批与交接测试 Relay.app，助理式委派测试 Lindy。最佳选择应通过你的任务、权限、恢复、成本与退出测试。"
         },
         {
-          "question": "有没有免费的 Gumloop 替代品？",
-          "answer": "有。n8n 自托管免费、执行不限次数——这个类别里最慷慨的免费选项，遥遥领先。Make 保留每月 1,000 次操作的永久免费档，Lindy 则只有 7 天试用。免费档通常默认你自己能搞定托管、或把用量压得比较低。"
+          "question": "n8n 是合适的 Gumloop 替代品吗？",
+          "answer": "当部署控制、自定义代码、直接 API 与自托管很重要时，是。比较时必须加入基础设施、备份、监控、安全维护与运维工时；自托管软件不等于运营成本为零。"
         },
         {
-          "question": "对非技术用户来说，哪款最易上手？",
-          "answer": "最友好的通常是 Make 和 Lindy。Make 适合在一块画布上可视化搭建工作流；Lindy 适合喜欢对话式、助理式界面、而不是摆弄节点的人。两者定价都可预期，但处理大批量、重逻辑的数据工作都不如 Gumloop 或 n8n，而且 Lindy 没有永久免费档。"
+          "question": "什么情况下应该用 Make 替代 Gumloop？",
+          "answer": "工作主要是确定性的 SaaS 数据流转与可视化字段映射时，可以选择 Make。成本要按 bundle 和计费 module 计算，再加外部 AI token；一次业务运行可能消耗多次平台 operation。"
         },
         {
-          "question": "n8n 能做 Gumloop 能做的所有事吗？",
-          "answer": "大体能，而且更灵活——代价是学习曲线更陡、有基础设施包袱。n8n 让你完全掌控工作流的运行方式，支持自定义代码、API 调用与复杂逻辑，前提是你熟悉 JavaScript、JSON 和 REST API。它还提供了 Gumloop 没有的失败处理与自托管能力。"
+          "question": "为什么把 Relay.app 作为 Gumloop 替代品？",
+          "answer": "Relay.app 官方文档提供审批、补充数据、分配任务和人工选择路径，并支持提醒与升级。它适合人工判断本来就是流程一部分的场景，但仍需逐项核验所需连接器动作。"
         },
         {
-          "question": "Make.com 真的比 Gumloop 便宜吗？",
-          "answer": "对标准工作流来说，是的，便宜很多。Make 的 Core 套餐每月约 $10 起，性价比扎实，还有每月 1,000 次操作的免费档。Gumloop 的入门付费档每月 $37 起，且积分机制可能超预期飙升——高级模型调用每次约 20 积分，普通调用只要 2 积分。"
+          "question": "Lindy 与 Gumloop 有什么不同？",
+          "answer": "Lindy 更偏助理式委派，Gumloop 则既能画明确 flow，也支持 Agent 步骤。Lindy 可能减少变化任务的分支设计，但必须评估动作权限、确认机制、运行记录，以及信息不足时的处理方式。"
         },
         {
-          "question": "我已经在 Gumloop 里搭好了流程，该换掉吗？",
-          "answer": "不一定。如果你的流程在正常跑、成本也可预期，迁移成本是真实存在的。只有撞上结构性限制时才值得动：需要自托管、更好的上下文连续性，或在你实际用量下想要更低的价格。换之前先审计烧积分的节点、试着搭模块化子流程，就地补上具体短板。"
+          "question": "不同计费模式如何统一比较？",
+          "answer": "计算单个合格结果成本：平台用量、托管、模型/API、人工复核返工与维护成本相加，再除以合格输出数。同时比较中位数与 p95，因为循环、扇出、长输入和重试会扭曲平均数。"
+        },
+        {
+          "question": "如何测试 Gumloop 替代品？",
+          "answer": "在 Gumloop 和一个候选方案中搭建同一条边界清楚的流程，用 20–30 个固定正常与故障案例测试。记录无需修改即可接受的比例、错误动作、耗时、归一化成本、复核时间、恢复时间，以及修改后重测的工作量。"
+        },
+        {
+          "question": "已有 Gumloop 工作流应该迁移吗？",
+          "answer": "只有托管、身份、审批、审计、连接器动作或可迁移性存在结构性缺口时才值得迁移。若现有流程已达到验收、权限、恢复与成本阈值，应先优化，而不是承担迁移风险。"
         }
       ]
     },
@@ -8591,28 +8631,36 @@
     "/zh/blog/workspace-agents-vs-chat-assistants": {
       "items": [
         {
-          "question": "工作区 Agent 和聊天助手真的有本质区别吗？",
-          "answer": "有——区别不在模型质量，而在 AI 栖身的表面、以及谁在持有上下文。聊天助手是一场对话：在聊天窗口里一轮轮自足进行，关掉标签页，大部分状态也随之消失。工作区 Agent 住在文件、标签页和工具旁边，直接读已打开的东西，围绕一个目标跑循环，上下文跨会话累积。一个在回应，一个在运作。"
+          "question": "工作区 Agent 和聊天助手有什么区别？",
+          "answer": "聊天助手为人主导的交流优化；工作区 Agent 为有边界的任务或交付物优化，可能使用项目上下文、工具、持久运行状态和更长执行循环。应核验真实行为，而不是只看界面名称。"
         },
         {
           "question": "什么时候该用聊天助手而不是工作区 Agent？",
-          "answer": "当任务是简短、自足的——改写一段文字、解释一个概念、快速调研、起草简短回复——Agent 的搭建成本纯属开销。另一个场景是你不想让 AI 靠近文件：对机密工作，沙箱化的聊天会话更诚实，因为给 Agent 广泛的工作区访问权会放大 prompt 注入这类风险——OWASP 把它列为 LLM 应用的第一大风险类别。"
+          "answer": "解释、头脑风暴、批评、交互分析、只需一个输入的短任务、低频任务，或只想披露一份选定材料的敏感工作，优先聊天助手。人应决定每个下一步时也适合聊天。"
         },
         {
-          "question": "什么时候工作区 Agent 更占优？",
-          "answer": "当任务横跨两三个以上表面——PDF、Google 文档、电子表格、浏览器标签页——你就不再是「上下文搬运层」。Agent 直接读所有这些表面，研究密集的工作上时间差接近 50% 而非 10%。它还赢在上下文重要的重复任务（每周客户更新不必重新解释一切）和多角色单人工作——开启每种新工作的启动成本都更低。"
+          "question": "什么时候应该选择工作区 Agent？",
+          "answer": "明确交付物需要多个来源或工具、中间产物和任务状态要跨越长运行、路径会依据证据变化、权限能够收窄，而且结果与执行轨迹都能审核时再选择。"
         },
         {
-          "question": "两者可以同时用吗？",
-          "answer": "可以，而且我认识的大多数人都是这样。与其说是竞争者，不如说是应对不同任务规模的不同工具：聊天助手处理快速一次性任务，工作区式配置处理进行中的项目。我几乎每天用聊天助手，同时让工作区 Agent 去管那些横跨文件、标签页与工具的活。"
+          "question": "聊天助手也有记忆和工具吗？",
+          "answer": "有些产品支持历史、偏好、项目、文件、搜索和连接应用；工作区 Agent 也不会自动看到一切或必然保存运行状态。应按实际账户和套餐逐项映射上下文与权限。"
         },
         {
-          "question": "工作区 Agent 会取代人的判断吗？",
-          "answer": "不会，而且要对任何持相反说法的人保持怀疑。两者在长周期的多步骤任务上仍会失败：聊天助手忘掉你三轮前说的话，Agent 跑偏去做你没让做的事——都不是「设好就忘」。一旦 Agent 能写入你的系统，对破坏性动作做人在环中的审批就是最低门槛。把它的输出当初级助理的初稿：有用、往往不错，但永远值得一查。"
+          "question": "记忆与任务状态有什么区别？",
+          "answer": "记忆用于告知或个性化回答；运行状态记录已完成步骤、工具结果、产物、审批、已提交副作用、未决问题和下一项安全动作。长任务需要状态来避免恢复后重复写入。"
         },
         {
-          "question": "怎么判断哪个更适合我的工作？",
-          "answer": "跳过功能对比表，先问自己三个问题：我的工作真的横跨多个表面吗？如果多数 AI 使用是「提问—拿答案」，聊天大概就够。有没有我一直在重复解释的上下文？那份税正是工作区 Agent 能免掉的。我对广泛访问权的接受度有多高？涉及敏感工作时，要审慎决定 Agent 能看什么、能做什么。匹配度比功能更重要。"
+          "question": "工作区 Agent 应获得哪些权限？",
+          "answer": "使用独立身份和最小权限，分开读取、草稿、可逆写入和高影响写入。发送、发布、购买、删除、授予访问权或接受条款通常应要求知情审批。"
+        },
+        {
+          "question": "聊天与工作区 Agent 的成本怎样比较？",
+          "answer": "合计订阅分摊、模型与工具用量、运行时间、配置、主动监督、修正、失败恢复和维护。应比较试点中每个可验收结果的总成本，而不是标价或假设的效率比例。"
+        },
+        {
+          "question": "怎样让工作区 Agent 与聊天助手做对照测试？",
+          "answer": "给两者相同来源、任务、尽可能相同的模型、权限上限、验收标准和失败案例。衡量可验收事实、引用、遗漏、越权、监督、耗时、成本、恢复和产物可编辑性。"
         }
       ]
     },

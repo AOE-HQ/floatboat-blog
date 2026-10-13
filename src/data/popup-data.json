@@ -416,12 +416,12 @@
     },
     "custom-ai-agent-development": {
       "en": {
-        "title": "When custom agent development makes sense",
-        "body": "The sense check is inside; most solos find scheduled agents close the gap first."
+        "title": "Make the custom agent testable",
+        "body": "Turn the idea into a requirements contract, permission model, eval suite, and handover checklist."
       },
       "zh": {
-        "title": "定制 Agent 开发的适用时刻",
-        "body": "判断标准在文中；多数单人场景，日程型 Agent 先补上了缺口。"
+        "title": "让定制 Agent 可以验收",
+        "body": "把想法变成需求合同、权限模型、评测套件和完整交接清单。"
       }
     },
     "deepseek-agent-function-calling": {
@@ -706,12 +706,12 @@
     },
     "gumloop-alternatives-2026": {
       "en": {
-        "title": "Gumloop alternatives, by use case",
-        "body": "Workflow shape decides the winner — the same test your recurring tasks pose."
+        "title": "Choose a Gumloop alternative by architecture",
+        "body": "Compare control, permissions, recovery, real cost units, and exit paths—not feature counts."
       },
       "zh": {
-        "title": "按场景找 Gumloop 替代品",
-        "body": "工作流形态决定胜负，这和你的重复任务面临同一道测试。"
+        "title": "按架构选择 Gumloop 替代品",
+        "body": "比较控制、权限、恢复、真实成本单位与退出路径，而不是功能数量。"
       }
     },
     "gumloop-review-2026": {
@@ -1186,12 +1186,12 @@
     },
     "workspace-agents-vs-chat-assistants": {
       "en": {
-        "title": "Workspace agents vs chat assistants",
-        "body": "Fundamentally different mechanics — the comparison that ends the debate."
+        "title": "Compare one task, not two interfaces",
+        "body": "Use the same context, permissions, failure cases, evidence, and cost record before expanding the boundary."
       },
       "zh": {
-        "title": "工作区 Agent 对聊天助手",
-        "body": "机制层面就不同，这篇对比可以终结争论。"
+        "title": "比较同一任务，而不是两个界面",
+        "body": "统一上下文、权限、失败案例、证据与成本记录，再决定是否扩大边界。"
       }
     },
     "workspace-agents-vs-workflow-builders": {
