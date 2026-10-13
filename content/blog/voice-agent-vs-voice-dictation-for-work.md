@@ -12,6 +12,8 @@ draft: false
 
 ## TL;DR
 
+Information checked October 13, 2026. Treat product labels as marketing terms and verify permissions, data paths, and supported actions in current vendor documentation.
+
 - **Voice dictation for work** is a speech-to-text layer: your voice becomes editable text in a document, field, or chat input, optionally polished by a language model before it lands. The output is usually *words you can revise*, not a finished workflow.
 - A **voice agent** is a different speech layer: it runs an intent-to-action loop—listening, reasoning, calling tools, and responding—often across apps, APIs, or a live conversation channel. The output is often *state change* (a booked slot, a filed ticket, an updated CRM row), not a paragraph.
 - Solopreneurs fail when they treat these as one category. Hands-free exploration, precise prompt entry, document co-authoring, and live meetings each favor a different layer—or a deliberate stack of both.

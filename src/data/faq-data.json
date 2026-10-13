@@ -1211,52 +1211,72 @@
     "/blog/best-ai-file-organizer": {
       "items": [
         {
-          "question": "What is the best AI file organizer in 2026?",
-          "answer": "For most Mac and Windows users who want content-aware organizing with a local option, Floatboat AI File Organizer tops our weighted scorecard, with Sortio the close runner-up for automation-first workflows. The honest answer is narrower: “best” depends on whether your files are sensitive (favor local), whether they keep arriving (favor watch folders), and whether you refuse to let software move them (favor in-place renamers). All prices and capabilities were verified against official pages as of September 2026."
+          "question": "What is the best AI file organizer for Mac and Windows?",
+          "answer": "There is no universal winner. Shortlist by OS, formats, rename-and-route needs, privacy mode, preview and undo. This ranking measures documented fit, not tested accuracy."
         },
         {
-          "question": "Can an AI file organizer work fully offline?",
-          "answer": "Yes. Floatboat runs its classifier and renaming models on-device with zero uploads; AI File Sorter runs built-in GGUF models locally; FilesDesk supports full offline operation via Ollama, LM Studio, or vLLM on its lifetime license; and Zush, Sortio, NameQuick, and NudgeFile all offer local or on-device modes. The trade-off is universal: a capable local model is a multi-gigabyte download and runs slower on modest hardware than a cloud model."
+          "question": "Should an AI file organizer read file contents?",
+          "answer": "Only when the destination or name depends on information inside the document. If names, extensions or dates suffice, rules are cheaper and more predictable."
         },
         {
-          "question": "Will an AI file organizer move my files without asking?",
-          "answer": "It depends on the tool’s philosophy, which is why this ranking scores preview and undo separately. Floatboat and AI File Sorter show a full preview and apply nothing until you approve; Sortio previews each run and keeps undo history; NameQuick offers an explicit review-before-renaming mode; NudgeFile is automation-first by design; and Zush never moves files because it renames in place. Before any purchase, run the tool once on a copied folder and verify both the preview step and the undo path."
+          "question": "Are local organizers always more private?",
+          "answer": "Local inference removes the model provider from the content path, but licensing traffic and sensitive local indexes can remain. Verify the active mode and protect the device."
         },
         {
-          "question": "Do I need the Mac version or the Windows version?",
-          "answer": "Platform matters more than most roundups admit because this market is Mac-heavy and Windows users have fewer native options. Windows-only users effectively shortlist NudgeFile, Sortio, FilesDesk, AI File Sorter, and — now that its official site lists Windows — NameQuick. Mac users have every tool in this ranking. For mixed households, FilesDesk and Zush sell per-device licenses cheaply enough to buy twice, while Floatboat and Sortio cover both platforms from one account."
+          "question": "What should I test before buying?",
+          "answer": "Use copies of representative PDFs, scans, photos and sheets. Check unsupported formats, preview, partial failure, conflicts, undo and network mode."
         },
         {
-          "question": "What is the difference between an AI file organizer, a renamer, and a sorter?",
-          "answer": "An organizer reads file contents, then both renames and files into a structure you approve — the category this ranking evaluates. A renamer improves filenames, and a sorter routes files by rules; many “organizers” on the market are one of those two in disguise, the most common cause of buyer disappointment. Zush and, to a degree, NameQuick sit closer to the renamer end, which is why they rank where they do on an organizer rubric despite being excellent at what they do."
+          "question": "Is a watch folder necessary?",
+          "answer": "It matters for recurring inboxes. For a one-time archive cleanup, a reviewed batch may be safer and cheaper."
         },
         {
-          "question": "Which AI file organizer is best for scanned documents and invoices?",
-          "answer": "FilesDesk and NameQuick are the strongest for scans and invoices. FilesDesk documents an explicit OCR-for-scans and vision-for-images pipeline with EXIF support and undercuts the market at $40 one-time for its self-managed local license; NameQuick pairs built-in OCR with naming presets, watched folders, and the ability to file PDF invoices straight from email. If your invoices arrive as scans and your budget is near zero, trial both on the same batch and compare correction rates."
+          "question": "Can an organizer damage or lose files?",
+          "answer": "Any rename or move can conflict or misfile documents. Test copies, require preview, confirm conflict behavior and treat undo as convenience, not backup."
+        },
+        {
+          "question": "How much do AI file organizers cost?",
+          "answer": "Models include subscriptions, allowances, one-time self-managed licenses and open source. Include provider fees, hardware and setup time."
+        },
+        {
+          "question": "When should I choose a renamer instead?",
+          "answer": "Choose a renamer when the folder tree works and only names are bad, or when software must not move files."
         }
       ]
     },
     "/blog/best-ai-file-renamer": {
       "items": [
         {
-          "question": "What's the difference between an AI file renamer and an AI file organizer?",
-          "answer": "A renamer changes filenames in place; an organizer also decides where files belong — creating folders, moving and grouping files by project, type, or date. Renamers suit people whose folder structure is fine and whose names are unsearchable. Organizers suit people whose files are in the wrong folders. Floatboat, Zush, FilesDesk, and RenameClick do both, so this ranking evaluates only their renaming layer."
+          "question": "What is the best AI file renamer?",
+          "answer": "It depends on formats, naming rules, OS and privacy mode. Prioritize controllable templates, review, undo and in-place behavior."
         },
         {
-          "question": "Will an AI renamer move my files into folders?",
-          "answer": "Only if you let it. In this ranking, Zush and nymos rename where files live and never reorganize folders; Floatboat, FilesDesk, and RenameClick can move or sort files but only through separate, approval-gated flows; Renamer.ai's Magic Folders act automatically by design. If moving files is unacceptable, pick a structurally in-place rename workflow or leave organize flows off."
+          "question": "How is an AI renamer different from a batch renamer?",
+          "answer": "Batch renamers transform names or metadata with rules. AI renamers infer meaning from content, so suggestions require review."
         },
         {
-          "question": "Do these tools work on scanned documents, photos, and audio?",
-          "answer": "Yes, to different degrees. Scanned documents are handled through OCR in nymos, Renamer.ai, FilesDesk, and Zush. Photos and images are read by vision models in all seven tools here. Audio is the differentiator: RenameClick transcribes recordings locally, and Zush reads audio content and metadata; other tools mostly use embedded metadata for audio files."
+          "question": "Can an AI renamer work offline?",
+          "answer": "Some offer local models; others are cloud-only. A local option does not mean the default mode is offline."
         },
         {
-          "question": "Are my files uploaded to the cloud?",
-          "answer": "It depends on the tool and the mode. Floatboat processes everything on-device with zero uploads. RenameClick defaults to a local model but offers optional cloud providers. Zush, FilesDesk, and nymos offer managed cloud, bring-your-own-key, or local options — choose local for confidential documents. Renamer.ai processes in the cloud."
+          "question": "Will an AI renamer move my files?",
+          "answer": "Rename may be in place while optional sorting or automation moves files. Review actions and disable routing when locations must stay fixed."
         },
         {
-          "question": "Which should a Mac user pick? And which a Windows user?",
-          "answer": "On Mac, nymos is the strictest in-place pick, Zush the most capable overall, and Floatboat the privacy-first choice. On Windows, Zush, FilesDesk, and RenameClick are the strongest content-based options — FilesDesk is cheapest over time with its one-time license, RenameClick is offline-first by default, and Bulk Rename Utility covers the free rules-based case."
+          "question": "Which files can AI renamers understand?",
+          "answer": "Coverage varies across PDFs, scans, Office, photos, RAW, audio and video. Test your exact codec, scan quality and language."
+        },
+        {
+          "question": "How should I design a naming convention?",
+          "answer": "Use verifiable fields, define missing-field behavior, limit length and avoid characters forbidden by the OS."
+        },
+        {
+          "question": "Is undo enough for safe batch renaming?",
+          "answer": "No. Undo may fail after moves, sync, locks or collisions. Test copies, keep backups and verify history after restart."
+        },
+        {
+          "question": "When are rules better than AI?",
+          "answer": "Use rules for prefixes, numbering, date normalization and metadata formatting; use AI when names depend on file meaning."
         }
       ]
     },
@@ -1463,28 +1483,36 @@
     "/blog/best-voice-dictation-for-ai-agents": {
       "items": [
         {
-          "question": "What is the best voice dictation for AI agents overall?",
-          "answer": "There is no single best product — only best **job shape** fit. For system-wide prompt dictation across Cursor, Claude Code, and messaging apps, **Wispr Flow** is the strongest generalist. For technical vocabulary, **Aqua Voice**. For offline privacy, **Superwhisper**. For long-form document co-authoring with an Agent, **Floatboat Flow Mode** complements those layers."
+          "question": "What is the best voice dictation tool for AI agents?",
+          "answer": "It depends on whether you need cross-app input, technical vocabulary, local or offline processing, host-native input, or document-centered work."
         },
         {
-          "question": "Is Claude Code `/voice` enough without a separate dictation app?",
-          "answer": "Often yes **if** Claude Code is your only agent surface and you use a Claude.ai-account path where `/voice` is supported. It is tuned for coding vocabulary and project hints. The moment you regularly dictate into Cursor, plain terminals, GitHub, or email, a system-wide tool avoids re-learning per-app mic behavior."
+          "question": "How is dictation different from voice mode?",
+          "answer": "Dictation produces editable text, while voice mode is an interaction channel that may use dictation, an agent, or both."
         },
         {
-          "question": "How is Cursor Agent voice different from Wispr Flow or Aqua Voice?",
-          "answer": "Cursor Agent voice is **scoped to Cursor's Agent / Agents Window** — built-in speech-to-text for controlling Agent, not universal OS input. Wispr Flow and Aqua Voice are **system-wide**: the same push-to-talk works wherever the cursor is, including Cursor, Claude Code, and browsers. Many developers use both: built-in for quick Agent prompts, system-wide for everything else."
+          "question": "Should I choose system-wide or built-in dictation?",
+          "answer": "System-wide dictation spans applications; built-in dictation is simpler when work stays inside one supported host."
         },
         {
-          "question": "Is voice dictation the same as voice mode for AI agents?",
-          "answer": "No. **Dictation** converts speech to text in an input field; you still review and submit. **Voice mode** implies a conversational loop where the agent listens and responds continuously. That distinction changes which product you need; see §2.1 and the linked comparison on voice mode versus dictation."
+          "question": "How should I test dictation accuracy?",
+          "answer": "Use your own names, technical terms, punctuation, file references, and spoken commands, then measure correction time."
         },
         {
-          "question": "Where does Floatboat Flow Mode fit in this ranking?",
-          "answer": "Flow Mode is **not ranked in the top three** because it targets **document-centric co-authoring** inside Floatboat — real-time dictation plus in-place Agent edits, annotation bundles, and version history — rather than OS-wide cursor insertion. It complements Wispr, Aqua, or Superwhisper when your deliverable is a long doc tied to calendar-driven Agent work."
+          "question": "How should I evaluate dictation privacy?",
+          "answer": "Check audio and transcript processing, retention, telemetry, account controls, and optional cloud post-processing."
         },
         {
-          "question": "Can I use on-device dictation with AI coding agents?",
-          "answer": "Yes. **Superwhisper** runs on-device Whisper-class models with system-wide insertion, including Cursor and Claude Code prompt fields. You trade cloud-streaming convenience for local audio processing. Verify latency on your hardware before standardizing an agent workflow on it."
+          "question": "Does on-device dictation mean every feature is local?",
+          "answer": "Not necessarily. Formatting, language-model cleanup, sync, or optional modes may still use cloud services."
+        },
+        {
+          "question": "Do I need more than one dictation tool?",
+          "answer": "Only when separate tools cover genuinely different job shapes rather than duplicating the same input layer."
+        },
+        {
+          "question": "Which metrics matter in a trial?",
+          "answer": "Measure correction time, latency, application coverage, vocabulary handling, data path, reliability, and total cost."
         }
       ]
     },
@@ -1763,24 +1791,36 @@
     "/blog/clean-up-downloads-folder-with-ai": {
       "items": [
         {
-          "question": "Will an AI file organizer delete my files?",
-          "answer": "No reputable organizer deletes anything unless you ask it to; the category is built on move-and-rename operations with undo history, because deletion is what users fear. If a tool offers deletion, leave it off, and keep \"never delete, I will review\" in every prompt you write."
+          "question": "What is the safest first step for an AI Downloads cleanup?",
+          "answer": "Copy 20 to 50 representative files into a disposable test folder before touching the real Downloads folder."
         },
         {
-          "question": "Does cleaning my Downloads folder with AI upload my files somewhere?",
-          "answer": "It depends on the tool: some organizers run entirely on-device, while others send extracted text or metadata to a cloud model to make sorting decisions. If your Downloads folder holds tax documents or client contracts, check the tool's privacy model before the first run and prefer an on-device option if upload is a deal-breaker."
+          "question": "Should an AI organizer delete files during the first run?",
+          "answer": "No. Disable deletion and require a proposal or preview before any move or rename."
         },
         {
-          "question": "Can the AI actually understand what is inside my files?",
-          "answer": "Most organizers read contents for text-based formats — PDFs with a text layer, Word, Excel, text files — and many read image content for screenshots and photos. The honest limits are scans without a text layer and ambiguous content, so treat proposed names for those with more skepticism."
+          "question": "What should a Downloads cleanup instruction include?",
+          "answer": "Define the outcome, destination folders, naming rules, exclusions, a no-delete rule, and a preview requirement."
         },
         {
-          "question": "What if the organizer puts something in the wrong place?",
-          "answer": "Undo the run (or restore the single file from history), then fix the prompt rather than the files — \"put PDFs under Invoices by year, not Documents\" — and re-run. Because the tool moves rather than deletes, a wrong destination costs seconds, not a file."
+          "question": "How should I verify a proposed cleanup?",
+          "answer": "Check ambiguous files, duplicate handling, filename collisions, destination paths, and files the tool could not classify."
         },
         {
-          "question": "How do I keep my Downloads folder clean on Windows and macOS?",
-          "answer": "The protocol is identical on both platforms; only the mechanics differ, like the Downloads location and Finder features on Mac. Start with the sample-first run, add a watch folder or rule so new downloads file themselves, and review for five minutes once a week."
+          "question": "Is undo guaranteed after a bulk file operation?",
+          "answer": "No. Test the product’s documented recovery behavior on copies and do not assume an operating-system undo will work."
+        },
+        {
+          "question": "When should I enable a watched Downloads folder?",
+          "answer": "Only after the same rules succeed repeatedly on representative samples and failure cases have been tested."
+        },
+        {
+          "question": "Which files should stay outside the first cleanup?",
+          "answer": "Exclude sensitive, shared, synchronized, encrypted, application-managed, and legally retained files until their behavior is understood."
+        },
+        {
+          "question": "How often should I review Downloads?",
+          "answer": "Choose a cadence based on file volume and ambiguity, then process only new files in small approved batches."
         }
       ]
     },
@@ -2091,24 +2131,36 @@
     "/blog/do-ai-file-organizers-upload-your-files": {
       "items": [
         {
-          "question": "Does a tool that says it never stores files still upload them?",
-          "answer": "Yes — these are separate claims. \"Not stored\" or \"deleted after processing\" describes what the vendor keeps after the job; \"uploaded\" describes what is transmitted to run the job in the first place. A cloud tool can truthfully promise to delete your file the moment processing finishes while still sending its contents to a model provider for every sort. Read the wording for transmission, not just retention."
+          "question": "Do AI file organizers upload your files?",
+          "answer": "Some do, some do not, and one app may differ by mode. Check whether names, text or page images leave the device."
         },
         {
-          "question": "Does offline mode guarantee that nothing leaves my device?",
-          "answer": "Not by itself. Offline capability proves the tool can run its AI locally, but only if that mode is actually active — a tool that defaults to cloud and offers local as an opt-in still transmits data whenever you forget to switch. Even genuinely local tools make small network calls for license checks and updates, which are not file content. The reliable test is to disconnect from the network and confirm that content-reading features still work."
+          "question": "What is the difference between local, BYOK and managed cloud?",
+          "answer": "Local runs on-device; BYOK sends data to your chosen provider; managed cloud uses infrastructure selected by the app vendor."
         },
         {
-          "question": "Are free tools more likely to upload my files?",
-          "answer": "Not necessarily — several free and open-source organizers run entirely on local models and upload nothing. The correlation to watch is the opposite one: a free tool with no subscription and no local model has to pay for cloud inference somehow, so scrutinize its privacy page and sub-processor list before assuming its cost model is benign. Price is a weak signal either way; the architecture disclosure is the strong one."
+          "question": "Does not stored mean not uploaded?",
+          "answer": "No. Data can be transmitted, processed and deleted without long-term storage. Ask separately about transmission, logs and retention."
         },
         {
-          "question": "Is a local model as accurate as a cloud model for organizing files?",
-          "answer": "For typical cleanup — invoices from a handful of vendors, screenshots, downloads — the accuracy gap is small. On genuinely ambiguous files, or very large batches, cloud models are more accurate and dramatically faster; vendors that offer both modes report local runs taking minutes where cloud takes seconds. If your folder is straightforward and your data is sensitive, local accuracy is usually good enough; if your files are complex and non-sensitive, cloud is the pragmatic choice."
+          "question": "Does BYOK keep files private?",
+          "answer": "It may bypass the app vendor, but data still reaches the model provider unless the endpoint is local."
         },
         {
-          "question": "Do AI file organizers train their models on my files?",
-          "answer": "The leading tools explicitly commit that your files are not used for training — some state it in their privacy policies and bind their AI subprocessors contractually not to train on API data. That commitment is worth verifying in the vendor's own wording, and it is separate from retention: not being trained on is not the same as not being transmitted or not being logged. Check both sentences in the privacy policy rather than assuming one implies the other."
+          "question": "Can an offline test prove nothing is uploaded?",
+          "answer": "No. It shows a feature can run locally in that configuration, not what happens online. Add network logs and policy review."
+        },
+        {
+          "question": "What should I look for in a privacy policy?",
+          "answer": "Check transmitted data, location, subprocessors, retention, training use, deletion and mode-specific terms."
+        },
+        {
+          "question": "Is local processing automatically secure or compliant?",
+          "answer": "No. It reduces transfer but leaves device encryption, access, backups and policy to you."
+        },
+        {
+          "question": "What is the safest evaluation method?",
+          "answer": "Start with synthetic files, select the mode, review disclosures, record network behavior, then test noncritical copies."
         }
       ]
     },
@@ -2215,28 +2267,36 @@
     "/blog/file-organizer-vs-file-renamer-vs-file-sorter": {
       "items": [
         {
-          "question": "What is the difference between a file organizer and a file renamer?",
-          "answer": "A file renamer only changes filenames and leaves your folder structure untouched, while a file organizer reads file contents, renames files, and routes them into a folder structure in one operation. If your folders already make sense and only the names are bad, a renamer is the right — and usually cheaper — tool; if both names and structure are unusable, you need an organizer that reads what each file is before deciding where it belongs."
+          "question": "What is the difference between an organizer, sorter and renamer?",
+          "answer": "A sorter routes, a renamer changes names, and an organizer combines content understanding with naming and placement."
         },
         {
-          "question": "Is an AI file sorter the same as an AI file organizer?",
-          "answer": "No. A file sorter groups files using surface signals — filenames, extensions, dates, metadata — while a file organizer reads file contents to make routing decisions. The difference shows up on files that look identical from the outside but differ on the inside, such as `scan_0042.pdf`, an invoice, and a lease: a sorter cannot separate them, an organizer can, because it reads the document. Use a sorter when names and types contain enough information; use an organizer when correct filing depends on knowing what each file is."
+          "question": "What if my folders are already correct?",
+          "answer": "Choose a renamer to improve searchability without redesigning the tree."
         },
         {
-          "question": "Should I use a file renamer and a file organizer together?",
-          "answer": "Yes, if your mess genuinely mixes jobs — for example, a folder with obviously named screenshots alongside unnamed PDFs that need reading to file correctly. Sensible layering is a sorter or deterministic rules for files whose names already describe them, plus an organizer for the ambiguous remainder. A more advanced pattern is promoting recurring flows into deterministic rules so they stop consuming per-file AI processing, which is why several organizer vendors ship a rule builder alongside their AI mode."
+          "question": "What if names are clear but files are misplaced?",
+          "answer": "Choose a sorter, often deterministic rules. AI is unnecessary when surface signals reveal the destination."
         },
         {
-          "question": "Are rule-based tools like Hazel or File Juggler obsolete now that AI organizers exist?",
-          "answer": "No — rule engines remain the right tool when your folder logic is stable enough to write down, with real advantages: deterministic execution, zero per-file cost, no AI allowance required. Hazel (macOS) and File Juggler (Windows) are mature products for exactly this job. What they cannot do is route files where the deciding information is inside the document and the naming is arbitrary — the case where an organizer that reads content earns its per-file cost. Many power users run a rule engine for stable flows and an AI layer for the long tail, rather than either tool alone."
+          "question": "When do I need a full organizer?",
+          "answer": "When names and structure are poor and correct filing depends on information inside each file."
         },
         {
-          "question": "Which form should I buy if I'm worried about an AI moving my files?",
-          "answer": "If you are not comfortable with any tool moving files, buy a rename-only tool that guarantees zero movement — content-aware renamers such as nymos explicitly promise never to reorganize anything. If your discomfort is specifically about *unreviewed* changes rather than moves in principle, an organizer that shows you the complete rename-and-route plan and requires approval before anything moves, with whole-batch undo afterward, addresses the same concern while still saving the manual filing."
+          "question": "Is a sorter the same as a rules engine?",
+          "answer": "Not always. Some infer categories with AI; rules are preferable when routing logic can be written precisely."
         },
         {
-          "question": "Do file organizers upload my documents to the cloud?",
-          "answer": "It depends entirely on the tool's default processing path. Many AI organizers process content through a hosted model by default; some offer a local model (Ollama, LM Studio) as a configuration option; a smaller set — including Floatboat's organizer — run classification and renaming entirely on-device with no uploads and full offline operation. Before buying, check where the default path sends your files and whether the local option keeps the same features, particularly if you handle sensitive documents such as contracts, medical records, or client data."
+          "question": "Can one product be all three?",
+          "answer": "Yes. Check the default mode, what each mode reads, and whether moves are previewed and reversible."
+        },
+        {
+          "question": "Which category is safest?",
+          "answer": "None inherently. Use copies, preview batches, test recovery and keep an independent backup."
+        },
+        {
+          "question": "Can I combine a sorter and an organizer?",
+          "answer": "Yes. Use rules for obvious recurring files and content-aware organizing for ambiguous leftovers."
         }
       ]
     },
@@ -3651,60 +3711,72 @@
     "/blog/organize-receipts-and-invoices-with-ai": {
       "items": [
         {
-          "question": "Is it safe to let an AI read my receipts?",
-          "answer": "It depends entirely on where the reading happens. If the tool processes documents locally on your device, nothing about the receipt content leaves your machine. If the tool is cloud-based, the document — vendor, amounts, account details, any tax identifiers — is sent to a server to be read, so the real question is whether you are comfortable with that provider holding a year of financial documents. Read the product's data-flow description first, and treat financial documents as the files where this decision matters most."
+          "question": "Which fields should AI extract from receipts and invoices?",
+          "answer": "Common fields include vendor, relevant date, amount, currency, document type, and invoice number."
         },
         {
-          "question": "Can AI really read scanned and photographed receipts?",
-          "answer": "Yes, with an important caveat. Digital invoices and e-receipts contain a text layer and are read very reliably. Photographed or scanned paper — especially thermal receipts, folds, and handwriting — has no text layer until OCR runs, and accuracy drops with image quality. Treat extraction from scans as a strong draft: preview the proposed filename and verify the amount against the physical receipt or your statement before approving, because a misread number filed away quietly is worse than one that needs a second look."
+          "question": "Must receipts use year-first folders?",
+          "answer": "No. A year-first tree is one option; confirm filing periods and categories with the accountant or authority using the archive."
         },
         {
-          "question": "Does this replace QuickBooks or Expensify?",
-          "answer": "No — it sits next to them. A file organizer names, sorts, and archives documents so they are findable and audit-ready; a bookkeeping or expense tool records transactions, categorizes them, and produces reports and returns. You usually want both: the organizer keeps the evidence layer clean, and the bookkeeping tool references that archive or receives clean exports. If you only need auto-categorized deductions with no local archive, an expense app is the simpler starting point."
+          "question": "Which date should appear in the filename?",
+          "answer": "Choose issue, transaction, paid, or another required date consistently according to the confirmed filing policy."
         },
         {
-          "question": "What is the best file name format for receipts?",
-          "answer": "Use a date-first format: `{YYYY-MM-DD}_{Vendor}_{Amount}_{Type}.pdf`, for example `2026-09-14_Acme-Inc_142.83_Receipt.pdf`. The ISO date sorts chronologically on every operating system, the vendor name groups that supplier's history, and the amount lets you match a bank feed without opening files. Add an invoice number when you issue invoices and a currency code when you work in more than one currency."
+          "question": "Can AI decide whether an expense is tax deductible?",
+          "answer": "No. File organization is not tax or accounting advice, and uncertain treatment requires a qualified reviewer."
         },
         {
-          "question": "How long should I keep digital receipts?",
-          "answer": "Long enough to support the returns they belong to: per [IRS recordkeeping guidance](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping), records must be kept for as long as they are needed to prove income or deductions on a return, employment-tax records are kept for four years, and the general limitation window runs three to seven years depending on the situation. Many practitioners keep everything for ten years because digital storage is cheap and reconstructing a six-year-old deduction is not. Legible digital copies are accepted as records, so once a receipt is scanned and filed, the paper can go."
+          "question": "Should original receipts and invoices be preserved?",
+          "answer": "Yes, until applicable legal, tax, accounting, and audit retention requirements are confirmed."
+        },
+        {
+          "question": "What should happen when extracted fields are uncertain?",
+          "answer": "Place the document in an exception queue and do not guess a filename, amount, category, or filing period."
+        },
+        {
+          "question": "Does a desktop organizer guarantee local processing?",
+          "answer": "No. Verify the selected model, OCR service, telemetry, sync path, retention, and deletion controls."
+        },
+        {
+          "question": "What should a monthly receipt review include?",
+          "answer": "Reconcile documents with source records, verify extracted fields, review exceptions, and approve changes in small batches."
         }
       ]
     },
     "/blog/raycast-for-windows-floatboat": {
       "items": [
         {
-          "question": "Is Raycast officially available for Windows?",
-          "answer": "Yes. Raycast ended its Windows beta with version 2.0 on August 25, 2026. It supports Windows 10 21H2+ and Windows 11 and is available from Raycast, the Microsoft Store, or WinGet."
-        },
-        {
-          "question": "Is Raycast for Windows still in beta?",
-          "answer": "No. The public beta began in November 2025 and ended with Raycast 2.0 in August 2026. Check the Windows changelog for the current release and any feature-specific limitations."
-        },
-        {
-          "question": "Does every Raycast extension work on Windows?",
-          "answer": "No. Raycast says extensions without native-code dependencies should work across platforms, but extensions that depend on macOS APIs or native components need explicit Windows support. Verify your essential extensions before migrating."
-        },
-        {
-          "question": "Is Raycast free on Windows?",
-          "answer": "Raycast's core launcher features are free. Paid plans cover capabilities such as AI Chat, Dictation, Cloud Sync, and bring-your-own-model options, with AI usage governed by the current credit policy. Check Raycast's pricing page for live terms."
+          "question": "Is Raycast available on Windows?",
+          "answer": "Yes. Verify the current Windows version and system requirements on Raycast’s official Windows page."
         },
         {
           "question": "What is the main difference between Raycast and Floatboat?",
-          "answer": "Raycast is launcher-first: it minimizes the time needed to find and invoke commands. Floatboat is workspace-first: it keeps agents, approved project files, rules, review, and editable deliverables together across a longer job."
+          "answer": "Raycast centers fast command access, while Floatboat centers persistent project work and editable deliverables."
         },
         {
-          "question": "Can Raycast run AI agents on Windows?",
-          "answer": "Yes. Raycast AI Chat can plan, call extension or MCP tools, run code, verify results, and ask for user decisions. Projects and Automations add persistent organization and scheduled work, so describing Raycast as only a launcher is outdated."
+          "question": "What is Raycast best suited for?",
+          "answer": "It is a strong candidate for frequent launcher, search, snippet, window, and extension actions."
+        },
+        {
+          "question": "What is Floatboat best suited for?",
+          "answer": "It is a candidate for multi-file work that needs persistent context, review, and editable project artifacts."
         },
         {
           "question": "Can I use Raycast and Floatboat together?",
-          "answer": "Yes. Raycast can handle app launching, search, snippets, and small commands, while Floatboat owns longer projects that create durable files. Give each automation one clear system of record and avoid overlapping write access until permissions are understood."
+          "answer": "Yes, when their jobs are distinct and each recurring automation has one clear owner."
         },
         {
-          "question": "Which should I choose for Windows?",
-          "answer": "Choose Raycast when global search and keyboard-speed commands are the priority. Evaluate Floatboat when work spans source files, multiple steps, review, and an editable deliverable. Test both with one real recurring task before paying."
+          "question": "Do all Raycast extensions work on Windows?",
+          "answer": "No. Check each extension for native code, macOS-specific behavior, and documented Windows support."
+        },
+        {
+          "question": "Does local-first mean every Floatboat workflow is offline?",
+          "answer": "No. The selected model, connector, browser action, and sync path determine where data goes."
+        },
+        {
+          "question": "How should I compare the products?",
+          "answer": "Test a sequence of tiny actions, one messy multi-file deliverable, and one recurring job with failure recovery."
         }
       ]
     },
@@ -3883,24 +3955,36 @@
     "/blog/voice-agent-vs-voice-dictation-for-work": {
       "items": [
         {
-          "question": "Is voice dictation just speech-to-text?",
-          "answer": "No. Basic speech-to-text transcribes audio literally; **AI voice dictation for work** often adds a language-model pass that removes fillers, resolves self-corrections, and formats for the active field. The deliverable is still primarily **text you edit**, not a completed workflow—the full ASR-plus-polish stack is defined in §2.1 and the voice-dictation cluster hub."
+          "question": "What is the core difference between a voice agent and voice dictation?",
+          "answer": "Dictation produces editable text, while a voice agent may choose tools and take approved actions."
         },
         {
-          "question": "Is a voice agent the same as voice mode in ChatGPT or Claude?",
-          "answer": "Not necessarily. **Voice mode** is an input channel that may behave like dictation, conversational Q&A, or tool-using agency depending on product settings. A **voice agent** implies an intent-to-action loop with tool execution and turn management. Section 2.3 and the voice-mode comparison article in this cluster explain when the channel collapses categories—and when it should not."
+          "question": "Is voice mode a separate product category?",
+          "answer": "No. Voice mode is an interface channel that can behave like dictation, an agent, or a hybrid."
         },
         {
-          "question": "Can one app be both a dictation tool and a voice agent?",
-          "answer": "Yes, and many will. The taxonomy still matters: know which mode you invoked and which success artifact you expect. Using agent mode to draft a long memo you intend to own line-by-line is usually the wrong tool; using dictation to \"book my flight\" without an action pipeline is equally wrong."
+          "question": "When should I choose voice dictation?",
+          "answer": "Choose it when text is the primary deliverable and the user should remain the author and editor."
         },
         {
-          "question": "What should solo founders buy first?",
-          "answer": "Buy for your **most frequent failure**, not the flashiest demo. If typing speed caps output, start with dictation and compare ranked options for agent-backed writing. If you drown in cross-app busywork, prioritize a voice agent with scoped tools. Most founders eventually use both; sequence by pain, not by hype."
+          "question": "When should I choose a voice agent?",
+          "answer": "Choose one for a bounded task that needs tool use or a controlled state change."
         },
         {
-          "question": "Where does Floatboat Flow Mode fit—agent or dictation?",
-          "answer": "Flow Mode is a **document-centric dictation path** with in-file agent collaboration: speech feeds a draft you control, with selection-based rewrites and meeting lines that become plans. It is not a telephony voice agent. Pair it with agent tooling for calendar-side execution rather than treating it as a full replacement for either layer—the Flow Mode announcement post covers the feature set in detail."
+          "question": "Is meeting transcription the same as either category?",
+          "answer": "No. Recording and transcription capture speech; the distinction depends on who consumes the output and what happens next."
+        },
+        {
+          "question": "Can dictation and voice agents be combined?",
+          "answer": "Yes. Dictation can support composition while an agent handles a separate, approved execution step."
+        },
+        {
+          "question": "What is the main risk of a voice agent?",
+          "answer": "The main operational risk is excessive permission or an unintended action caused by ambiguous or untrusted input."
+        },
+        {
+          "question": "Which voice actions should remain human-approved?",
+          "answer": "Consequential messages, writes, purchases, deletions, and final authorship where accountability requires it."
         }
       ]
     },
@@ -4087,24 +4171,36 @@
     "/blog/what-is-an-ai-file-organizer": {
       "items": [
         {
-          "question": "Is an AI file organizer the same thing as an AI file sorter or a file renamer?",
-          "answer": "No, though vendors use the labels loosely. A file sorter moves or groups files using type, date, keywords, or rules and rarely renames them; a file renamer rewrites filenames from content but leaves files where they are; an AI file organizer reads files and does both — rename and route — in one approved pass. When you read a product page, check which form it describes rather than which label it uses."
+          "question": "What is an AI file organizer?",
+          "answer": "Software that interprets names, metadata or contents and proposes or performs classification, renaming or routing. Preview, approval and automatic execution vary by product and mode."
         },
         {
-          "question": "Does an AI file organizer read the contents of my files, and is that safe?",
-          "answer": "The most capable organizers do read contents — document text, and in vision-capable tools, images and scans — because content is what makes classification accurate on anonymous files. Whether that is safe depends entirely on where that reading happens. On-device tools process content locally and keep it offline; cloud tools process it on a vendor's servers, which is why you should check the vendor's own statements on uploads and retention before pointing any organizer at legal, medical, or financial files."
+          "question": "How is it different from a sorter?",
+          "answer": "A sorter primarily routes by names, types, metadata or rules; an organizer can read content, rename and build structure."
         },
         {
-          "question": "Will an AI file organizer break file links or references when it moves things?",
-          "answer": "Moving files can break paths that other documents, shortcuts, or apps point to, which is why the review step matters more than it looks. Serious tools show the full proposed tree before anything moves, keep an undo history that reverses a batch, and several restrict themselves to renaming in place precisely so paths stay stable. If your project depends on stable absolute paths, prefer a rename-in-place workflow or test on a copied folder first."
+          "question": "How is it different from a renamer?",
+          "answer": "A renamer improves names while preserving location in its core flow; an organizer handles both naming and placement."
         },
         {
-          "question": "I already use Hazel or File Juggler. Do I still need an AI file organizer?",
-          "answer": "Not necessarily — and that is a feature, not a shortcoming. Rule engines are deterministic, fast, and free to run, and they remain the right tool for stable, high-volume flows you can express as conditions. Their limit is the anonymous long tail: files whose names and patterns you cannot predict. Many people run both, using rules for the predictable intake and an AI organizer a few times a year for the backlog that rules will never catch."
+          "question": "How does an AI file organizer work?",
+          "answer": "It extracts text or visual features, asks a local or remote model for labels, proposes a plan and applies approved operations."
         },
         {
-          "question": "What is the difference between an AI file organizer and AI in Notion, Evernote, or Obsidian?",
-          "answer": "Those tools organize notes and knowledge bases inside their own databases or vaults, not the files on your operating system. The organizing habit is the same, but the substrate is different, and the two do not replace each other: an Obsidian AI assistant tidies your vault, while a file organizer tidies your Desktop, Downloads, and project folders. Keeping both habits is reasonable; expecting either one to do the other's job is where the confusion starts.\n\n---\n\nTry the AI File Organizer on your messiest folder — [Floatboat's file agent](https://floatboat.ai/ai-file-organizer) sorts, renames, and tidies on your own machine, with no uploads and full undo."
+          "question": "Does it need internet access?",
+          "answer": "Cloud and BYOK modes do; local modes may work offline after setup. Licensing, downloads and updates may still connect."
+        },
+        {
+          "question": "What file types can it organize?",
+          "answer": "Support varies. Scans need OCR, images need vision, and sheets, audio, video or proprietary formats require explicit support."
+        },
+        {
+          "question": "Is it the same as cloud storage or document management?",
+          "answer": "No. Organizers change files, cloud storage syncs them, and document management adds records, permissions and retention."
+        },
+        {
+          "question": "Who should use one?",
+          "answer": "People with mixed, poorly named files whose destinations depend on content. Simple rules are better when they already solve retrieval."
         }
       ]
     },
@@ -5891,52 +5987,72 @@
     "/zh/blog/best-ai-file-organizer": {
       "items": [
         {
-          "question": "2026 年最好的 AI 文件整理器是什么？",
-          "answer": "对想要内容感知整理、又有本地选项的大多数 Mac 和 Windows 用户来说，Floatboat AI File Organizer 在我们的加权记分卡上居首，Sortio 以微小差距居次、适合自动化优先的工作流。诚实的答案更窄：「最好」取决于你的文件是否敏感（偏向本地）、是否源源不断（偏向监视文件夹）、你是否拒绝让软件移动它们（偏向原地重命名工具）。所有价格和能力截至 2026 年 9 月对照官方页面核实。"
+          "question": "Mac 和 Windows 上最好的 AI 文件整理器是哪款？",
+          "answer": "没有适合所有人的冠军。应按系统、格式、改名加归档需求、隐私模式、预览和撤销筛选；本文排名衡量公开能力，不代表实测准确率。"
         },
         {
-          "question": "AI 文件整理器能完全离线工作吗？",
-          "answer": "能。Floatboat 的分类器和重命名模型在端侧运行、零上传；AI File Sorter 本地运行内置 GGUF 模型；FilesDesk 终身许可支持经 Ollama、LM Studio 或 vLLM 完全离线；Zush、Sortio、NameQuick 和 NudgeFile 都提供本地或端侧模式。代价是普遍的：一个能干的本地模型是数 GB 的下载，在普通硬件上比云端模型慢。"
+          "question": "AI 文件整理器一定要读取内容吗？",
+          "answer": "只有名称或位置依赖文档内部信息时才需要。若文件名、扩展名或日期已经足够，规则分类通常更便宜也更可预测。"
         },
         {
-          "question": "AI 文件整理器会不会不问一声就移动我的文件？",
-          "answer": "取决于工具的理念，这正是这份排名把预览和撤销单独打分的原因。Floatboat 和 AI File Sorter 展示完整预览、批准前不执行任何操作；Sortio 每次运行都预览并保留撤销历史；NameQuick 提供明确的重命名前审阅模式；NudgeFile 设计上自动化优先；Zush 从不移动文件，因为它原地重命名。任何购买之前，先在复制的文件夹上跑一遍，同时验证预览步骤和撤销路径。"
+          "question": "本地整理器一定更保护隐私吗？",
+          "answer": "本地推理让模型供应商退出内容链，但许可流量和敏感本地索引仍可能存在。要核对当前模式并保护设备。"
         },
         {
-          "question": "我需要 Mac 版还是 Windows 版？",
-          "answer": "平台比大多数 roundup 承认的更重要，因为这个市场 Mac 偏重、Windows 用户原生选择更少。纯 Windows 用户实际入围的是 NudgeFile、Sortio、FilesDesk、AI File Sorter，以及——现在官网已列出 Windows——NameQuick。Mac 用户拥有本排名的所有工具。混合双机家庭里，FilesDesk 和 Zush 的按设备许可便宜到可以买两次，而 Floatboat 和 Sortio 用一个账号覆盖两个平台。"
+          "question": "购买前应该测试什么？",
+          "answer": "用有代表性的 PDF、扫描件、照片和表格副本，检查不支持的格式、预览、部分失败、冲突、撤销和联网模式。"
         },
         {
-          "question": "AI 文件整理器、重命名工具、分类器有什么区别？",
-          "answer": "整理器读取文件内容，然后既重命名又归档进你批准的结构——正是这份排名评估的品类。重命名工具改善文件名，分类器按规则路由文件；市面许多「整理器」其实是两者之一换了马甲，这是买家失望最常见的原因。Zush 和某种程度上 NameQuick 更靠近重命名一端，这就是它们在整理器评分规则下排名如此的原因——尽管它们在各自的本职上非常出色。"
+          "question": "监视文件夹是必需的吗？",
+          "answer": "它适合持续进入新文件的收件箱；一次性清理旧档案时，人工复核的批处理可能更安全、更便宜。"
         },
         {
-          "question": "哪款 AI 文件整理器最适合扫描件和发票？",
-          "answer": "FilesDesk 和 NameQuick 是扫描件与发票的最强选择。FilesDesk 明确记载了扫描件走 OCR、图片走视觉的流水线，支持 EXIF，$40 一次性自管本地许可低于市场价；NameQuick 把内置 OCR 与命名预设、监视文件夹、以及直接从邮件归档 PDF 发票的能力配成一套。如果你的发票以扫描件形式到达、预算接近零，用同一批文件试用两者，比较纠正率。"
+          "question": "整理器会损坏或丢失文件吗？",
+          "answer": "任何改名或移动都可能冲突或归错档。先测副本、要求预览、确认冲突处理，并把撤销当便利功能而非备份。"
+        },
+        {
+          "question": "AI 文件整理器一般多少钱？",
+          "answer": "有订阅、额度、一次性自管许可和开源方案；还要计算模型费用、硬件和配置时间。"
+        },
+        {
+          "question": "什么时候应该选重命名工具？",
+          "answer": "目录结构能用、只有名称混乱，或不允许软件移动文件时，应选重命名工具。"
         }
       ]
     },
     "/zh/blog/best-ai-file-renamer": {
       "items": [
         {
-          "question": "AI 文件重命名工具和 AI 文件整理器有什么区别？",
-          "answer": "重命名工具原地改文件名；整理器还要决定文件属于哪里——创建文件夹、按项目、类型或日期移动和分组文件。重命名工具适合文件夹结构没问题、名字没法搜的人；整理器适合文件放错文件夹的人。Floatboat、Zush、FilesDesk 和 RenameClick 两者都做，所以这份排名只评估它们的重命名层。"
+          "question": "最好的 AI 文件重命名工具是哪款？",
+          "answer": "取决于格式、命名规则、系统和隐私模式。应优先看模板控制、复核、撤销和原地操作。"
         },
         {
-          "question": "AI 重命名工具会把我的文件移动进文件夹吗？",
-          "answer": "只有你允许它才会。在这份排名里，Zush 和 nymos 在文件所在之处重命名、从不重组文件夹；Floatboat、FilesDesk 和 RenameClick 可以移动或分类文件，但只通过单独的、需批准的流程；Renamer.ai 的 Magic Folders 按设计自动执行。如果移动文件不可接受，选结构上原地的重命名工作流，或关掉整理流程。"
+          "question": "AI 重命名与批量改名有什么区别？",
+          "answer": "批量工具按规则处理名称或元数据；AI 从内容推断含义，因此建议需要复核。"
         },
         {
-          "question": "这些工具能处理扫描件、照片和音频吗？",
-          "answer": "能，程度不同。扫描件在 nymos、Renamer.ai、FilesDesk 和 Zush 里走 OCR。照片和图片在全部七款工具里由视觉模型读取。音频是分水岭：RenameClick 本地转录录音，Zush 读取音频内容和元数据；其他工具对音频文件大多只用内嵌元数据。"
+          "question": "AI 重命名工具能离线吗？",
+          "answer": "有些支持本地模型，有些只支持云端；存在本地选项不代表默认离线。"
         },
         {
-          "question": "我的文件会被上传到云端吗？",
-          "answer": "取决于工具和模式。Floatboat 全部在端侧处理、零上传。RenameClick 默认本地模型，但提供可选的云供应商。Zush、FilesDesk 和 nymos 提供托管云、BYOK 或本地选项——机密文档请选本地。Renamer.ai 在云端处理。"
+          "question": "AI 重命名工具会移动文件吗？",
+          "answer": "改名可以原地完成，但可选分类或自动化可能移动文件。位置必须固定时应检查动作并关闭路由。"
         },
         {
-          "question": "Mac 用户该选哪个？Windows 用户呢？",
-          "answer": "Mac 上，nymos 是最严格的原地选择，Zush 是综合能力最强者，Floatboat 是隐私优先之选。Windows 上，Zush、FilesDesk 和 RenameClick 是最强的基于内容的选项——FilesDesk 靠一次性许可长期最便宜，RenameClick 默认离线优先，Bulk Rename Utility 覆盖免费的规则型场景。"
+          "question": "AI 重命名工具支持哪些文件？",
+          "answer": "PDF、扫描件、Office、照片、RAW、音视频的覆盖各异，应测试真实编码、扫描质量和语言。"
+        },
+        {
+          "question": "命名规范应该怎么设计？",
+          "answer": "使用可核验字段，规定字段缺失时的处理，控制长度，并避开系统禁止字符。"
+        },
+        {
+          "question": "有撤销就能安全批量改名吗？",
+          "answer": "不能。移动、同步、占用或重名后撤销可能失败；应测试副本、保留备份并核对重启后的历史。"
+        },
+        {
+          "question": "什么时候规则比 AI 更合适？",
+          "answer": "前缀、编号、日期统一和元数据格式化用规则；名称依赖文件含义时再用 AI。"
         }
       ]
     },
@@ -6143,28 +6259,36 @@
     "/zh/blog/best-voice-dictation-for-ai-agents": {
       "items": [
         {
-          "question": "总体来说，面向 AI Agent 的最佳语音听写是哪个？",
-          "answer": "没有唯一最佳——只有最佳**任务形态**匹配。跨 Cursor、Claude Code 与即时通讯的系统级提示词听写，**Wispr Flow** 是最强通才。技术词汇选 **Aqua Voice**。离线隐私选 **Superwhisper**。与 Agent 协作的长文档共创，**Floatboat Flow Mode** 是上述层的互补。"
+          "question": "面向 AI Agent 的最佳语音听写工具是什么？",
+          "answer": "取决于你需要跨应用输入、技术词汇、本机或离线处理、宿主内置输入，还是文档中心工作。"
         },
         {
-          "question": "不装独立听写应用，Claude Code `/voice` 够用吗？",
-          "answer": "通常够，**前提是** Claude Code 是你唯一的 agent 界面，且你走的是支持 `/voice` 的 Claude.ai 账号路径。它为编码词表与项目提示做了调优。一旦你开始常态化地向 Cursor、普通终端、GitHub 或邮件听写，一个系统级工具能免去逐应用重新学习麦克风行为的麻烦。"
+          "question": "语音听写与语音模式有什么区别？",
+          "answer": "听写产出可编辑文本；语音模式是一条交互通道，可能使用听写、Agent 或两者结合。"
         },
         {
-          "question": "Cursor Agent 语音与 Wispr Flow、Aqua Voice 有何不同？",
-          "answer": "Cursor Agent 语音**限定在 Cursor 的 Agent / Agents 窗口**——为控制 Agent 而建的内置语音转文本，不是通用 OS 输入。Wispr Flow 与 Aqua Voice 是**系统级**的：同一组按键说话在光标所在的任何地方生效，包括 Cursor、Claude Code 与浏览器。许多开发者两者都用：内置的管快速 Agent 提示词，系统级的管其余一切。"
+          "question": "应该选择系统级还是内置听写？",
+          "answer": "系统级听写可跨应用；工作只留在一个受支持宿主内时，内置听写更简单。"
         },
         {
-          "question": "语音听写和面向 AI Agent 的语音模式是一回事吗？",
-          "answer": "不是。**Dictation** 把语音转成输入框里的文本；你仍要审阅并提交。**Voice mode** 意味着 agent 持续监听并回应的对话循环。这个区别决定你该买什么；参见 §2.1 与语音模式 vs 听写的关联对比文章。"
+          "question": "如何测试听写准确度？",
+          "answer": "使用自己的专名、技术术语、标点、文件引用和口述命令，并测量修正时间。"
         },
         {
-          "question": "Floatboat Flow Mode 在这份排名里处于什么位置？",
-          "answer": "Flow Mode **没有进入前三**，因为它瞄准的是 Floatboat 内的**文档中心人机共创**——实时听写加 Agent 原位编辑、批注包与版本历史——而不是 OS 级的光标插入。当你的交付物是挂接日历驱动 Agent 工作的长文档时，它补充 Wispr、Aqua 或 Superwhisper。"
+          "question": "如何评估听写隐私？",
+          "answer": "检查音频与转写处理、保留、遥测、账号控制和可选云端后处理。"
         },
         {
-          "question": "我能用本机听写配合 AI 编码 agent 吗？",
-          "answer": "可以。**Superwhisper** 本机运行 Whisper 级模型并系统级插入，包括 Cursor 与 Claude Code 提示词框。你用本地音频处理换掉了云端流式的便利。把 agent 工作流标准化在其上之前，请先在自己的硬件上验证延迟。"
+          "question": "本机听写等于全部功能都在本地吗？",
+          "answer": "不一定。格式化、语言模型清理、同步或可选模式仍可能使用云服务。"
+        },
+        {
+          "question": "需要同时使用多个听写工具吗？",
+          "answer": "只有工具覆盖真正不同的任务形态，而不是重复同一输入层时才需要。"
+        },
+        {
+          "question": "试用时哪些指标重要？",
+          "answer": "测量修正时间、延迟、应用覆盖、词汇处理、数据路径、可靠性和总成本。"
         }
       ]
     },
@@ -6443,24 +6567,36 @@
     "/zh/blog/clean-up-downloads-folder-with-ai": {
       "items": [
         {
-          "question": "AI 文件整理器会删除我的文件吗？",
-          "answer": "有信誉的整理器不会删除任何东西，除非你要求；这个品类建立在「移动加重命名加撤销历史」之上，因为删除正是用户最怕的事。如果一款工具提供删除功能，关掉它，并在你写的每段提示词里保留「绝不删除，由我审阅」。"
+          "question": "用 AI 清理下载文件夹最安全的第一步是什么？",
+          "answer": "先把 20 到 50 个代表性文件复制到可丢弃的测试文件夹，再处理真实下载目录。"
         },
         {
-          "question": "用 AI 清理下载文件夹，会把我的文件传到某处吗？",
-          "answer": "取决于工具：一些整理器完全在端侧运行，另一些把提取的文本或元数据发给云模型来做分类决策。如果你的下载文件夹里有报税文件或客户合同，第一次运行前先查清工具的隐私模型；如果上传是不可接受的，优先选端侧方案。"
+          "question": "第一次运行时应该允许 AI 整理器删除文件吗？",
+          "answer": "不应该。关闭删除，并要求在移动或重命名前提供计划或预览。"
         },
         {
-          "question": "AI 真的能读懂我的文件里装着什么吗？",
-          "answer": "多数整理器能读文本类格式的内容——带文本层的 PDF、Word、Excel、文本文件——很多还能读截图和照片的图片内容。诚实的局限是无文本层的扫描件和含糊的内容，对这两类给出的名字要多一分怀疑。"
+          "question": "下载文件夹清理指令应该包含什么？",
+          "answer": "写清目标、目标目录、命名规则、排除项、禁止删除规则和预览要求。"
         },
         {
-          "question": "如果整理器把东西放错了地方怎么办？",
-          "answer": "撤销这次运行（或从历史里单独还原那个文件），然后修的是提示词而不是文件——比如「把 PDF 放进按年份的 Invoices，不是 Documents」——再重跑。因为工具是移动而非删除，放错地方损失的是几秒钟，不是一个文件。"
+          "question": "如何核验拟议清理方案？",
+          "answer": "检查歧义文件、重复文件处理、文件名冲突、目标路径，以及工具无法分类的文件。"
         },
         {
-          "question": "在 Windows 和 macOS 上，怎么让下载文件夹长期保持干净？",
-          "answer": "两个平台的流程完全一致，只是机制不同，比如下载文件夹的位置和 Mac 上的 Finder 功能。从「样本优先」的首跑开始，加一个监视文件夹或规则让新下载自己归档，然后每周花五分钟审阅一次。"
+          "question": "批量文件操作后一定能撤销吗？",
+          "answer": "不一定。应在副本上测试产品写明的恢复行为，不能假设操作系统撤销一定有效。"
+        },
+        {
+          "question": "什么时候可以启用下载目录监视？",
+          "answer": "只有同一规则在代表性样本上反复成功，而且故障案例也已测试后才启用。"
+        },
+        {
+          "question": "哪些文件不应放进第一次清理？",
+          "answer": "在理解其行为前，应排除敏感、共享、同步、加密、应用管理及依法保留的文件。"
+        },
+        {
+          "question": "应该多久复核一次下载文件夹？",
+          "answer": "按文件数量和歧义选择节奏，每次只对新增文件进行小批量批准。"
         }
       ]
     },
@@ -6771,24 +6907,36 @@
     "/zh/blog/do-ai-file-organizers-upload-your-files": {
       "items": [
         {
-          "question": "一个声称「从不存储文件」的工具，还会上传它们吗？",
-          "answer": "会——这是两个不同的命题。「不存储」或「处理后删除」描述的是任务完成后厂商保留什么；「上传」描述的是为了让任务运行、一开始就传输了什么。一个云工具可以诚实地承诺处理完成即删除你的文件，同时每次整理都把文件内容发给模型供应商。读措辞时要读传输，而不只是留存。"
+          "question": "AI 文件整理器会上传文件吗？",
+          "answer": "有些会，有些不会，同一应用也因模式而异。应核对名称、文本或页面图像是否离开设备。"
         },
         {
-          "question": "离线模式能保证什么都不离开我的设备吗？",
-          "answer": "单靠它不能。离线能力证明工具可以本地运行 AI，但前提是那个模式真的处于激活状态——一个默认云端、本地是可选项的工具，在你忘记切换时照样传输数据。即便是真正本地的工具，也会有许可检查和更新之类的小额网络请求，那些不是文件内容。可靠的验证方法是断网，然后确认内容读取功能仍然工作。"
+          "question": "本地、BYOK 与托管云有什么区别？",
+          "answer": "本地在设备运行；BYOK 发给自选供应商；托管云使用应用厂商选择的基础设施。"
         },
         {
-          "question": "免费工具更容易上传我的文件吗？",
-          "answer": "不一定——好几款免费开源整理器完全跑在本地模型上、什么都不上传。真正该警惕的相关性是反过来的：一个既无订阅、又无本地模型的免费工具，总得以某种方式为云推理买单，所以在假定它的成本模式无害之前，细读它的隐私页和子处理商列表。价格两头都是弱信号；架构披露才是强信号。"
+          "question": "不存储等于不上传吗？",
+          "answer": "不等于。数据可先传输和处理再删除；应分别询问传输、日志和留存。"
         },
         {
-          "question": "整理文件时，本地模型和云模型一样准吗？",
-          "answer": "对典型的清理场景——来自少数几个供应商的发票、截图、下载——准确度差距很小。对真正含糊的文件或超大批量，云模型更准也快得多；同时提供两种模式的厂商报告，本地跑以分钟计、云端以秒计。如果你的文件夹简单而数据敏感，本地准确度通常够用；如果文件复杂而不敏感，云是务实之选。"
+          "question": "BYOK 能保证文件不外传吗？",
+          "answer": "它可能绕过应用厂商，但除非端点在本地，数据仍会到达模型供应商。"
         },
         {
-          "question": "AI 文件整理器会用我的文件训练模型吗？",
-          "answer": "头部工具都明确承诺文件不用于训练——一些写在隐私政策里，并以合同方式约束 AI 子处理商不得用 API 数据训练。这一承诺值得在厂商自己的措辞里核实，而且它与留存是两回事：不被用于训练，不等于不被传输、也不等于不被记录。请在隐私政策里把两句话都查了，不要用一个推出另一个。"
+          "question": "断网测试能证明绝不上传吗？",
+          "answer": "不能。它只证明当前配置可本地运行，不能证明联网行为；还需网络日志和政策核对。"
+        },
+        {
+          "question": "隐私政策应该看什么？",
+          "answer": "核对传输数据、地点、子处理商、留存、训练用途、删除和分模式条款。"
+        },
+        {
+          "question": "本地处理就自动安全或合规吗？",
+          "answer": "不是。它减少传输，却把设备加密、访问、备份和政策责任留给你。"
+        },
+        {
+          "question": "怎样最安全地评估？",
+          "answer": "先用虚构文件，明确模式，阅读披露并记录网络行为，再测试非关键文件副本。"
         }
       ]
     },
@@ -6895,28 +7043,36 @@
     "/zh/blog/file-organizer-vs-file-renamer-vs-file-sorter": {
       "items": [
         {
-          "question": "文件整理器和文件重命名工具有什么区别？",
-          "answer": "重命名工具只改文件名、目录结构原封不动；整理器读取文件内容，重命名并把文件路由进文件夹结构，一次操作完成。如果你的文件夹已经讲得通、只有名字不行，重命名工具是正确——通常也更便宜——的选择；如果名字和结构都不可用，你需要一个先读懂每个文件是什么、再决定它属于哪里的整理器。"
+          "question": "整理器、分类器和重命名工具有什么区别？",
+          "answer": "分类器负责路由，重命名工具改名称，整理器结合内容理解、命名和归档。"
         },
         {
-          "question": "AI 文件分类器和 AI 文件整理器是一回事吗？",
-          "answer": "不是。分类器用表面信号分组文件——文件名、扩展名、日期、元数据；整理器读取文件内容来做路由决策。差别体现在那些外表相同、内里不同的文件上，比如 `scan_0042.pdf`、一张发票和一份租约：分类器分不开它们，整理器可以，因为它读了文档。当名字和类型已包含足够信息时用分类器；当正确归档取决于知道每个文件是什么时，用整理器。"
+          "question": "文件夹已经正确时选什么？",
+          "answer": "选重命名工具，在不重构目录树的情况下改善检索。"
         },
         {
-          "question": "应该同时使用重命名工具和整理器吗？",
-          "answer": "可以，如果你的混乱真的横跨两种任务——比如一个文件夹里既有名字清楚的截图，又有需要读取才能正确归档的无名 PDF。合理的分层是：名字已经自述的文件交给分类器或确定性规则，含糊的剩余部分交给整理器。更进阶的模式是把重复出现的流程提升为确定性规则，让它们不再消耗单文件 AI 处理——这也是好几家整理器厂商在 AI 模式旁边附带规则构建器的原因。"
+          "question": "名称清楚但位置混乱时选什么？",
+          "answer": "选分类器，通常规则就够；表面信号能决定去向时不必使用 AI。"
         },
         {
-          "question": "既然 AI 整理器已经存在，Hazel 或 File Juggler 这类规则工具过时了吗？",
-          "answer": "没有——当你的文件夹逻辑稳定到可以写下来时，规则引擎仍是正确工具，且有实打实的优势：确定性执行、单文件零成本、不需要 AI 额度。Hazel（macOS）和 File Juggler（Windows）正是为这份工作打磨的成熟产品。它们做不到的，是在决定性信息藏在文档内部、命名又随意的场景里路由文件——那正是读内容的整理器赚回单文件成本的地方。很多高级用户为稳定流程跑规则引擎、为长尾跑 AI 层，而不是只用其一。"
+          "question": "什么时候需要完整整理器？",
+          "answer": "名称和结构都很差，且正确归档依赖文件内部信息时。"
         },
         {
-          "question": "如果我担心 AI 移动我的文件，该买哪种形态？",
-          "answer": "如果你完全不能接受工具移动文件，买保证零移动的纯重命名工具——nymos 这类感知内容的重命名工具明确承诺绝不重组任何东西。如果你在意的是「未经审阅」的改动，而不是移动本身，那么一个展示完整「重命名加路由」计划、移动前需要批准、事后支持整批撤销的整理器，同样化解这种担忧，还顺便省掉手动归档。"
+          "question": "分类器等于规则引擎吗？",
+          "answer": "不一定。有些用 AI 推断类别；路由逻辑能准确写出时应优先规则。"
         },
         {
-          "question": "文件整理器会把我的文档上传到云端吗？",
-          "answer": "这完全取决于工具的默认处理路径。很多 AI 整理器默认通过托管模型处理内容；一些提供本地模型（Ollama、LM Studio）作为配置选项；更小的一组——包括 Floatboat 的整理器——完全在端侧运行分类和重命名，零上传、完全离线。购买前，查清默认路径把你的文件发到哪里、本地选项是否保留同样的功能，尤其当你要处理合同、医疗记录或客户数据这类敏感文档时。"
+          "question": "一款产品能同时属于三类吗？",
+          "answer": "可以。要核对默认模式、各模式读取什么，以及移动是否可预览和撤销。"
+        },
+        {
+          "question": "哪一类最安全？",
+          "answer": "没有天然安全的品类。应使用副本、逐批预览、测试恢复并保留独立备份。"
+        },
+        {
+          "question": "可以组合分类器和整理器吗？",
+          "answer": "可以。明显且重复的文件交给规则，含糊的剩余项交给读取内容的整理器。"
         }
       ]
     },
@@ -8331,60 +8487,72 @@
     "/zh/blog/organize-receipts-and-invoices-with-ai": {
       "items": [
         {
-          "question": "让 AI 读我的收据安全吗？",
-          "answer": "完全取决于读取发生在哪里。如果工具在你设备上本地处理文档，收据内容不会离开你的机器分毫。如果工具基于云端，文档——供应商、金额、账户信息、任何税务标识——会被发到一台服务器上去读，所以真正的问题是：你能否接受那家供应商持有你一年的财务文档。先读产品的数据流说明，并把财务文档当作这个决定最要紧的文件。"
+          "question": "AI 应从收据和发票中抽取哪些字段？",
+          "answer": "常见字段包括供应商、相关日期、金额、币种、文档类型和发票号。"
         },
         {
-          "question": "AI 真能读出扫描和拍照的收据吗？",
-          "answer": "能，但有一个重要前提。数字发票和电子收据带有文本层，读取非常可靠。拍照或扫描的纸品——尤其热敏小票、折痕和手写——在 OCR 跑过之前没有文本层，准确度随图片质量下降。把扫描件的提取当作一份高质量草稿：批准之前预览建议的文件名、对照实体收据或账单核对金额，因为一个被悄悄归档的错误数字，比一个需要再看一眼的数字糟糕得多。"
+          "question": "收据必须按年份优先建立目录吗？",
+          "answer": "不必须。年份优先只是一种方案，应向实际使用档案的会计或主管机关确认期间和类别。"
         },
         {
-          "question": "这能取代 QuickBooks 或 Expensify 吗？",
-          "answer": "不能——它与它们并肩工作。文件整理器负责命名、分类和归档文档，让它们可被找到、随时可审计；记账或费用工具记录交易、归类、出报表和申报。你通常两者都要：整理器保持证据层干净，记账工具引用这个档案或接收干净的导出。如果你只需要自动归类的可抵扣项、不需要本地档案，费用类应用是更简单的起点。"
+          "question": "文件名应该使用哪个日期？",
+          "answer": "按照已确认的归档政策，一致使用开具日、交易日、支付日或其他规定日期。"
         },
         {
-          "question": "收据的最佳文件名格式是什么？",
-          "answer": "用日期在前的格式：`{YYYY-MM-DD}_{Vendor}_{Amount}_{Type}.pdf`，例如 `2026-09-14_Acme-Inc_142.83_Receipt.pdf`。ISO 日期在所有操作系统上都按时间排序，供应商名归拢该供应商的全部历史，金额让你不用打开文件就能和银行流水对上。自己开发票时加发票号，使用多于一种货币时加货币代码。"
+          "question": "AI 能判断一笔费用是否可以税务抵扣吗？",
+          "answer": "不能。文件整理不构成税务或会计建议，不确定处理需要合格复核者判断。"
         },
         {
-          "question": "电子收据应该保存多久？",
-          "answer": "至少要覆盖它们所支撑的申报：按 [IRS 的记录保存指引](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping)，记录必须保存到足以证明申报表上的收入或抵扣为止，雇佣税记录保存四年，一般追诉期视情况为三到七年。许多从业者保存十年，因为数字存储便宜，而重建一笔六年前的抵扣并不便宜。清晰可读的电子副本可作为记录，所以收据一旦扫描归档，纸本就可以处理掉了。"
+          "question": "应该保留收据和发票原件吗？",
+          "answer": "应该，直到适用的法律、税务、会计和审计保留要求得到确认。"
+        },
+        {
+          "question": "抽取字段不确定时应该怎么办？",
+          "answer": "把文档放入异常队列，不猜测文件名、金额、类别或归档期间。"
+        },
+        {
+          "question": "桌面整理器能保证完全本地处理吗？",
+          "answer": "不能。应核对所选模型、OCR 服务、遥测、同步路径、保留和删除控制。"
+        },
+        {
+          "question": "每月凭证复核应该包含什么？",
+          "answer": "与原始记录对账，核验抽取字段，处理异常，并小批量批准变更。"
         }
       ]
     },
     "/zh/blog/raycast-for-windows-floatboat": {
       "items": [
         {
-          "question": "Raycast 已经正式支持 Windows 了吗？",
-          "answer": "是。Raycast Windows 在 2026 年 8 月 25 日随 2.0 版本结束 Beta，支持 Windows 10 21H2+ 与 Windows 11，可从官网、Microsoft Store 或 WinGet 安装。"
+          "question": "Raycast 有 Windows 版吗？",
+          "answer": "有。当前版本与系统要求应以 Raycast 官方 Windows 页面为准。"
         },
         {
-          "question": "Raycast Windows 现在还是测试版吗？",
-          "answer": "不是。公开测试始于 2025 年 11 月，并于 2026 年 8 月随 Raycast 2.0 结束。当前版本和具体功能限制应查 Windows 更新日志。"
+          "question": "Raycast 与 Floatboat 的核心差别是什么？",
+          "answer": "Raycast 以快速命令入口为中心，Floatboat 以持久项目工作与可编辑交付物为中心。"
         },
         {
-          "question": "Raycast 的所有扩展都能在 Windows 使用吗？",
-          "answer": "不能保证。Raycast 表示，不依赖原生代码的扩展原则上可跨平台运行；依赖 macOS API 或原生组件的扩展仍需开发者适配。迁移前应逐个核对高频扩展。"
+          "question": "Raycast 最适合什么工作？",
+          "answer": "它适合高频启动、搜索、片段、窗口与扩展动作。"
         },
         {
-          "question": "Raycast Windows 免费吗？",
-          "answer": "核心 Launcher 功能免费。AI Chat、Dictation、Cloud Sync 和自定义模型等能力属于付费方案，AI 使用还受当前 Credits 规则影响；实时价格和额度应查看官方 Pricing。"
+          "question": "Floatboat 最适合什么工作？",
+          "answer": "它适合需要持久上下文、人工复核和可编辑项目成果的多文件工作。"
         },
         {
-          "question": "Raycast 和 Floatboat 最主要的区别是什么？",
-          "answer": "Raycast 以 Launcher 为中心，尽量缩短查找与执行命令的路径；Floatboat 以 Workspace 为中心，让 Agent、授权项目文件、规则、人工审阅和可编辑成果在长任务中保持连续。"
+          "question": "Raycast 与 Floatboat 可以一起使用吗？",
+          "answer": "可以，但职责应分开，每项重复自动化只能有一个明确负责人。"
         },
         {
-          "question": "Raycast Windows 能运行 AI Agent 吗？",
-          "answer": "能。AI Chat 已能规划、调用扩展或 MCP 工具、运行代码、验证结果并向用户提问；Projects 与 Automations 又增加了持久组织和定时执行，所以把 Raycast 说成只有启动器已经过时。"
+          "question": "所有 Raycast 扩展都支持 Windows 吗？",
+          "answer": "不支持。应检查原生代码、macOS 专属行为和开发者写明的 Windows 支持。"
         },
         {
-          "question": "Raycast 和 Floatboat 可以同时使用吗？",
-          "answer": "可以。Raycast 负责应用启动、搜索、Snippets 和小型命令，Floatboat 负责会产生长期文件的项目。每项 Automation 应只有一个事实来源，权限尚未厘清前不要重叠开放写操作。"
+          "question": "本地优先等于所有 Floatboat 工作流都离线吗？",
+          "answer": "不等于。所选模型、连接器、浏览器操作和同步路径决定数据去向。"
         },
         {
-          "question": "Windows 用户应该选 Raycast 还是 Floatboat？",
-          "answer": "重视全局搜索和键盘命令速度，优先 Raycast；任务涉及来源文件、多步骤执行、人工审阅和可编辑交付物，则评估 Floatboat。付费前最好用一项真实周期任务分别测试。"
+          "question": "应该如何比较两款产品？",
+          "answer": "测试一组小动作、一份混乱的多文件交付物，以及一项包含故障恢复的重复任务。"
         }
       ]
     },
@@ -8563,24 +8731,36 @@
     "/zh/blog/voice-agent-vs-voice-dictation-for-work": {
       "items": [
         {
-          "question": "语音听写就是语音转文本吗？",
-          "answer": "不是。基础语音转文本逐字记录音频；**面向工作的 AI 语音听写**通常加一道语言模型流程：去填充词、解开自我修正、按当前字段格式化。交付物仍然主要是**你编辑的文本**，不是一条跑完的工作流——完整 ASR 加润色的栈定义见 §2.1 与语音听写系列枢纽文章。"
+          "question": "Voice Agent 与语音听写的核心差别是什么？",
+          "answer": "听写产出可编辑文本，Voice Agent 则可能选择工具并执行获批操作。"
         },
         {
-          "question": "Voice agent 和 ChatGPT 或 Claude 里的 voice mode 是一回事吗？",
-          "answer": "不一定。**Voice mode** 是一条输入通道，按产品设置不同，可能表现得像听写、像对话问答、或像用工具的能动性。**Voice agent** 意味着带工具执行与轮次管理的意图到行动循环。第 2.3 节和本系列中的 voice mode 对比文章解释了这条通道什么时候会抹平品类——什么时候不该。"
+          "question": "语音模式是独立产品类别吗？",
+          "answer": "不是。语音模式是一条界面通道，可能表现为听写、Agent 或混合形态。"
         },
         {
-          "question": "一个应用能同时是听写工具和 voice agent 吗？",
-          "answer": "可以，而且很多会是。分类学仍然重要：知道你调用的是哪个模式、你期待哪种成功产物。用 agent 模式起草一份你要逐行拥有的长备忘录，通常是选错了工具；用听写去「帮我订机票」而没有动作管线，同样错。"
+          "question": "什么时候应该选择语音听写？",
+          "answer": "当文本是首要交付物，而且用户需要保留作者与编辑控制时选择听写。"
         },
         {
-          "question": "独立创始人应该先买什么？",
-          "answer": "为你**最高频的失败**买，不为最炫的演示买。如果打字速度卡住了产出，从听写开始，对比 agent 支持写作的排名选项。如果你淹死在跨应用琐事里，优先选一个带限定范围工具的 voice agent。多数创始人最终两者都用；按痛点排序，不按热度排序。"
+          "question": "什么时候应该选择 Voice Agent？",
+          "answer": "边界明确的任务需要工具使用或受控状态变更时可以选择 Voice Agent。"
         },
         {
-          "question": "Floatboat Flow Mode 属于哪边——agent 还是听写？",
-          "answer": "Flow Mode 是一条**文档中心听写路径**，带文件内 agent 协作：语音喂给你掌控的草稿，支持基于选区的改写与会谈行变成计划。它不是电话型 voice agent。把它与管日历侧执行的 agent 工具配对，而不是把它当作任何一层的完全替代——Flow Mode 公告文章详细覆盖了功能集。"
+          "question": "会议转写等于这两个类别之一吗？",
+          "answer": "不等于。录音与转写负责捕获语音，分类取决于谁消费结果以及下一步发生什么。"
+        },
+        {
+          "question": "语音听写与 Voice Agent 可以组合吗？",
+          "answer": "可以。听写支持内容撰写，Agent 负责独立且获批的执行步骤。"
+        },
+        {
+          "question": "Voice Agent 的主要风险是什么？",
+          "answer": "主要运营风险是权限过宽，或含糊及不可信输入导致意外操作。"
+        },
+        {
+          "question": "哪些语音操作应该保留人工审批？",
+          "answer": "重要消息、写入、购买、删除，以及需要明确责任归属的最终署名。"
         }
       ]
     },
@@ -8767,24 +8947,36 @@
     "/zh/blog/what-is-an-ai-file-organizer": {
       "items": [
         {
-          "question": "AI 文件整理器和 AI 文件分类器、文件重命名工具是一回事吗？",
-          "answer": "不是，尽管厂商用词很随意。文件分类器按类型、日期、关键词或规则移动或分组文件，很少重命名；重命名工具依据内容改写文件名，但文件原地不动；AI 文件整理器读取文件，在一次获批的操作里完成两件事——重命名和归位。读产品页时，看它描述的是哪种形态，而不是它贴的是哪个标签。"
+          "question": "什么是 AI 文件整理器？",
+          "answer": "它分析名称、元数据或内容，再提议或执行分类、重命名与路由；是否预览、请求批准或自动执行，取决于产品和模式。"
         },
         {
-          "question": "AI 文件整理器会读取我文件的内容吗？这安全吗？",
-          "answer": "能力最强的整理器确实会读内容——文档文本，在具备视觉能力的工具里还有图片和扫描件——因为内容正是让「无名文件」分类变准的东西。它是否安全，完全取决于读取发生在哪里。端侧工具在本地处理内容、保持离线；云端工具在厂商服务器上处理，所以把任何整理器指向法律、医疗或财务文件之前，先查厂商自己关于上传和留存的声明。"
+          "question": "它与文件分类器有什么区别？",
+          "answer": "分类器主要按名称、类型、元数据或规则路由；整理器还能读内容、改名和建立结构。"
         },
         {
-          "question": "AI 文件整理器移动文件时，会不会弄断链接或引用？",
-          "answer": "移动文件可能弄断其他文档、快捷方式或应用指向的路径，这正是「审阅」步骤比看上去更重要的原因。严肃的工具会在任何文件移动前展示完整建议树，保留可回滚一批操作的撤销历史，还有一些工具干脆只做原地重命名，就是为了让路径保持稳定。如果你的项目依赖稳定的绝对路径，优先选择原地重命名的工作流，或者先在复制的文件夹上测试。"
+          "question": "它与重命名工具有什么区别？",
+          "answer": "重命名工具核心流程只改名称并保留位置；整理器同时处理名称和位置。"
         },
         {
-          "question": "我已经在用 Hazel 或 File Juggler 了，还需要 AI 文件整理器吗？",
-          "answer": "不一定——而这是特性，不是缺陷。规则引擎确定性强、速度快、运行免费，对能写成条件的稳定大批量流程仍是正确工具。它们的极限是「无名长尾」：那些你无法预测名字和模式的文件。很多人的做法是两者并用：可预测的入口交给规则，一年几次用 AI 整理器清理规则永远接不住的积压。"
+          "question": "AI 文件整理器如何工作？",
+          "answer": "它提取文本或视觉特征，由本地或远程模型生成标签，提出计划，再执行获批操作。"
         },
         {
-          "question": "AI 文件整理器和 Notion、Evernote、Obsidian 里的 AI 有什么区别？",
-          "answer": "那些工具整理的是自己数据库或 vault 里的笔记和知识库，不是你操作系统上的文件。整理的习惯是同一个，但底层对象不同，两者不能互相替代：Obsidian 的 AI 助理整理你的 vault，文件整理器整理你的桌面、下载和项目文件夹。两个习惯都保留是合理的；指望任何一个去做另一个的工作，混乱就从这里开始。\n\n---\n\n在你最乱的文件夹上试试 AI File Organizer —— [Floatboat 的文件 Agent](https://floatboat.ai/ai-file-organizer) 在你自己的电脑上完成分类、重命名和整理：零上传，支持完整撤销。"
+          "question": "它需要联网吗？",
+          "answer": "云端和 BYOK 需要联网；本地模式配置后可能离线，但许可、下载和更新仍可能联网。"
+        },
+        {
+          "question": "它能整理哪些文件？",
+          "answer": "支持范围不一；扫描件需要 OCR，图片需要视觉，表格、音视频和专有格式必须明确支持。"
+        },
+        {
+          "question": "它等于云存储或文档管理吗？",
+          "answer": "不等于。整理器修改文件，云存储负责同步，文档管理还包含记录、权限和留存。"
+        },
+        {
+          "question": "谁适合使用？",
+          "answer": "适合处理混合、名称混乱且位置依赖内容的文件；简单规则能解决时不必增加整理器。"
         }
       ]
     },

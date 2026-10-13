@@ -1332,12 +1332,12 @@
     },
     "best-ai-file-renamer": {
       "en": {
-        "title": "The best AI file renamers, ranked by real renaming power",
-        "body": "Renaming is where AI file tools earn or lose their keep — see which ones handle real naming conventions."
+        "title": "Choose an AI file renamer by workflow",
+        "body": "Compare naming control, in-place behavior, review, undo and privacy mode—not an unverified accuracy claim."
       },
       "zh": {
-        "title": "按重命名实力排名的 AI 改名工具",
-        "body": "改名是 AI 文件工具的照妖镜——谁能真正读懂你的命名规范，一篇看全。"
+        "title": "按工作流选择 AI 文件重命名工具",
+        "body": "比较命名控制、原地操作、复核、撤销和隐私模式，不用未经验证的准确率话术。"
       }
     },
     "best-markdown-editors": {
@@ -1352,12 +1352,12 @@
     },
     "best-voice-dictation-for-ai-agents": {
       "en": {
-        "title": "The best voice dictation tools for AI agent work",
-        "body": "Dictation ranked by job shape — capture, commands, or drafting. Match the tool to what you say."
+        "title": "A documented voice-dictation shortlist",
+        "body": "Filter candidates by application coverage, vocabulary, data path, correction time, and current vendor documentation."
       },
       "zh": {
-        "title": "AI Agent 工作流里最好用的语音听写",
-        "body": "按任务形态排名的听写工具——捕获、指令还是起草，各有各的对位。"
+        "title": "基于官方文档的语音听写候选清单",
+        "body": "按应用覆盖、词汇、数据路径、修正时间与厂商当前文档筛选候选。"
       }
     },
     "chatgpt-voice-mode-vs-dictation": {
@@ -1372,12 +1372,12 @@
     },
     "clean-up-downloads-folder-with-ai": {
       "en": {
-        "title": "Your Downloads folder, cleaned by AI the safe way",
-        "body": "A safe cleanup order for the messiest folder on your disk — what to move, what to keep, what AI drafts."
+        "title": "Plan a safer AI-assisted Downloads cleanup",
+        "body": "Start on a copy, forbid deletion, inspect proposed moves, approve small batches, and test recovery before expanding."
       },
       "zh": {
-        "title": "用 AI 安全清理下载文件夹",
-        "body": "先移什么、后删什么、哪些交给 AI 起草——一份不会误删的清理顺序。"
+        "title": "规划更安全的 AI 辅助下载目录清理",
+        "body": "先在副本上测试，禁止删除，检查拟议移动，小批量批准，并在扩大范围前验证恢复。"
       }
     },
     "convert-html-to-markdown": {
@@ -1392,22 +1392,22 @@
     },
     "do-ai-file-organizers-upload-your-files": {
       "en": {
-        "title": "Does that AI file organizer upload your files?",
-        "body": "An honest answer about local vs cloud processing — and the one question to ask before granting folder access."
+        "title": "Does an AI file organizer upload your files?",
+        "body": "Check the exact data path, retention policy and active mode before granting folder access."
       },
       "zh": {
-        "title": "AI 文件整理器会把文件上传吗？",
-        "body": "本地处理与云端处理的真实边界——授权文件夹访问前先问这一个。"
+        "title": "AI 文件整理器会上传文件吗？",
+        "body": "授权文件夹之前，核对具体数据路径、留存政策和当前启用模式。"
       }
     },
     "file-organizer-vs-file-renamer-vs-file-sorter": {
       "en": {
-        "title": "File organizer, sorter, or renamer — which to buy",
-        "body": "Three tools that look alike and do different jobs. The buy decision, by what your folder actually needs."
+        "title": "Organizer, sorter or renamer—which job do you need?",
+        "body": "Match the tool to the broken layer: file names, folder placement, or both."
       },
       "zh": {
-        "title": "文件整理器、排序器还是改名器？",
-        "body": "长得像、干的活不同——按你文件夹的真实需求做购买决定。"
+        "title": "文件整理器、分类器还是重命名工具？",
+        "body": "先判断坏的是文件名、归档位置，还是两者都有，再选择对应工具。"
       }
     },
     "how-to-convert-markdown-to-pdf": {
@@ -1532,12 +1532,12 @@
     },
     "organize-receipts-and-invoices-with-ai": {
       "en": {
-        "title": "Organize receipts and invoices with AI, tax-ready",
-        "body": "A filing template that survives tax season — what to capture, how to name, and where AI drafts."
+        "title": "Build a verifiable receipt archive",
+        "body": "Verify every extracted field, preserve originals, isolate uncertain documents, and confirm retention rules with your accountant or authority."
       },
       "zh": {
-        "title": "用 AI 整理收据与发票，报税即用",
-        "body": "一套撑过报税季的归档模板——捕捉什么、如何命名、AI 起草哪部分。"
+        "title": "建立可核验的收据与发票档案",
+        "body": "逐项核验抽取字段，保留原件，隔离不确定凭证，并向会计或主管机关确认保留规则。"
       }
     },
     "vibe-coding-one-prompt-html-game": {

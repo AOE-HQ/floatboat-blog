@@ -14,7 +14,7 @@ draft: false
 
 An AI file renamer reads what is inside a file — the text of a scanned invoice, the subject of a photo, the vendor on a contract — and proposes a clear, searchable filename that you review before it touches disk. This ranking covers **renaming only**: files already in the right folder that carry names like `IMG_8841.HEIC`, `final-v7(2).docx`, and `scan_0042.pdf`.
 
-- **Ranked by job fit, not feature count.** Seven tools scored on a weighted rubric built for someone with decent folders and unsearchable names, with every claim checked against official pages as of September 2026.
+- **Ranked by job fit, not feature count.** Seven tools are scored for people whose folders work but filenames do not. Product, price and privacy claims were rechecked on official pages on October 13, 2026; the ranking is a source audit, not a shared-corpus accuracy test.
 - **Zush takes the overall spot** for its combination of content-based naming depth, in-place discipline, and undo coverage on both Mac and Windows.
 - **Floatboat is the pick when privacy and zero-regret batches come first**: its renaming model runs fully on your device, and one ⌘Z rolls back an entire approved batch.
 - **If your files also need to move into folders**, you are looking for an organizer, not a renamer — that is a separate ranking with a separate test.
@@ -32,7 +32,7 @@ The mechanics have matured: every serious tool here reads document text, OCRs sc
 
 ## 2. How This Ranking Works
 
-We started from the reader's job, not from marketing categories. The lead persona here is a solopreneur or knowledge worker whose folders are mostly fine, whose names are mostly not, and whose files include client documents they would rather not upload anywhere. For that person, six properties decide whether a renamer earns its place, and we scored each tool from 1–10 on every property using official sites and documentation as of September 2026:
+We started from the reader's job, not from marketing categories. The lead persona here is a solopreneur or knowledge worker whose folders are mostly fine, whose names are mostly not, and whose files include client documents they would rather not upload anywhere. For that person, six properties decide whether a renamer earns its place, and we scored each tool from 1–10 on every property using current official sites and documentation:
 
 1. **Renaming fidelity** — does it name from real content (document text, OCR, image content, metadata), not filename patterns?
 2. **In-place discipline** — does it rename where files live and resist reorganizing your folder tree without explicit, reversible approval?
@@ -41,7 +41,7 @@ We started from the reader's job, not from marketing categories. The lead person
 5. **Naming control** — templates, naming blocks, and custom prompts that reproduce your house convention.
 6. **Runtime & privacy** — managed cloud, bring-your-own-key (BYOK), or local/offline models, and what happens to file content.
 
-Because fidelity, batch safety, and in-place discipline do most of the work for this reader, they carry 25%, 20%, and 20% of the weighted score; coverage, control, and privacy split the remainder at 15%, 10%, and 10%. Where an official page publishes a format count, language list, or price, we link it and stamp it *as of September 2026*; claims that exist only in third-party reviews are labeled as such.
+Because fidelity, batch safety, and in-place discipline do most of the work for this reader, they carry 25%, 20%, and 20% of the weighted score; coverage, control, and privacy split the remainder at 15%, 10%, and 10%. “Fidelity” here means documented controls and review paths, not measured naming accuracy. Published format counts, plan limits and prices are linked to their source and dated October 13, 2026.
 
 ## 3. The Best AI File Renamers, Ranked
 
@@ -51,7 +51,7 @@ The rankings below answer one question only: which tool gives this reader the mo
 
 Zush scored highest because it is a *renaming system*, not just a renamer: it reads each file's actual content across 107 published formats and builds filenames from content, metadata, dates, and your own rules.
 
-[Zush's site](https://zushapp.com/) documents 145+ naming blocks and custom AI blocks that extract any detail you describe and reuse it in templates, plus filenames generated in 60+ languages. It renames in place rather than moving files between folders, watches Downloads, Desktop, and screenshots folders, and every applied batch lands in a rename history you can undo. Its gap is one of defaults, not capability: unless you switch to BYOK or a local LM Studio/Ollama mode, analysis goes through Zush's managed cloud relay, and the block-and-template system — powerful for accountants and photographers with strict conventions — is more than a casual user needs. Free tier covers 50 renames; PRO removes the limit at $10/month or $48 once.
+[Zush's site](https://zushapp.com/) documents reusable naming blocks and custom AI fields, folder monitoring, preview and undo history. The rename flow can stay in place, while optional folder sorting is now documented separately as beta; buyers who never want moves should leave that option off. Managed cloud, BYOK, Ollama and LM Studio modes have different data paths. The current list price is $10 monthly or $48 one-time, with 50 free renames; temporary checkout discounts are excluded.
 
 ### 2. Floatboat — Best when privacy and whole-batch reversal come first
 
@@ -85,7 +85,7 @@ Magic Folders watch a location you choose and rename new arrivals in the backgro
 
 ### Quick-reference
 
-Below is the ranked shortlist; prices are verified on official pages as of September 2026. Read the rename-workflow column carefully: for every AI tool here the rename flow is in place, and organize flows move files only when you engage them — except Renamer.ai's Magic Folders, which act by design.
+Below is the ranked shortlist; prices were rechecked on official pages on October 13, 2026. Read the rename-workflow column carefully: a product may offer in-place renaming and a separate move or automation mode. The table scores the former, while each product section flags the latter.
 
 | Rank | Tool | Platform | Where AI runs | Renames in place? | Free → paid start |
 |---|---|---|---|---|---|
@@ -119,7 +119,7 @@ Two judgment calls matter more than any individual row. Decide how you feel abou
 
 ## 6. What's Next for AI File Renamers
 
-Three shifts are visible from the September 2026 feature sets. The first is local-model quality closing the gap with cloud: on-device renaming used to mean visibly worse names, and tools like Floatboat's Apple Silicon / Windows GPU pipeline and RenameClick's default local model now make offline the *default* answer for privacy-conscious users rather than a downgrade. The second is the reading layer widening — OCR for scans, EXIF for photos, vision for images, and speech transcription for audio are becoming table stakes, which is what turns a renamer into a reliable index builder rather than a cosmetic fix.
+Three product shifts are visible in the official pages rechecked on October 13, 2026. First, more vendors expose local-model modes, but that does not prove local suggestions equal cloud suggestions; test both on copied files. Second, the reading layer is widening from document text to OCR, EXIF, image vision and, in some tools, audio transcription. Third, rename-only products increasingly add optional routing, which makes it more important to verify whether a workflow will merely change names or also move files.
 
 The third shift is a divergence, not a convergence. Renamers are quietly absorbing light organizing (watch folders, optional category moves), while full organizers expose rename-only workflows — yet the tools that "never move a file" are holding that line as a product identity. That split maps to the data-boundary axis: the more a tool is allowed to read and move, the more trust it must earn through approval and reversal. Expect the next round of differentiation to be about undo depth and audit trails as much as name quality, and expect rules-based renamers to outlive every AI trend — they own the pattern-shaped niche AI cannot beat on determinism.
 

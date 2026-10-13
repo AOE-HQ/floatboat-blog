@@ -10,7 +10,7 @@ locale: "zh"
 draft: false
 ---
 
-现在确实有官方 **Raycast Windows 版**。Raycast 在 2025 年 11 月开放 Windows 公测，并于 2026 年 8 月 25 日随 2.0 版本结束 Beta。截至 2026 年 10 月 10 日，官网提供 2.7 版本，支持 Windows 10 21H2+ 与 Windows 11，可以直接下载或通过 WinGet 安装（[Raycast Windows 官网](https://www.raycast.com/windows)、[Windows 更新日志](https://www.raycast.com/changelog/windows)）。
+现在确实有官方 **Raycast Windows 版**。Raycast 在 2025 年 11 月开放 Windows 公测，并于 2026 年 8 月 25 日随 2.0 版本结束 Beta。信息核对截至 2026 年 10 月 13 日：官网提供 2.7 版本，支持 Windows 10 21H2+ 与 Windows 11，可以直接下载或通过 WinGet 安装（[Raycast Windows 官网](https://www.raycast.com/windows)、[Windows 更新日志](https://www.raycast.com/changelog/windows)）。
 
 因此，「Windows 上有没有 Raycast 替代品」已经不是最准确的问题。现在真正需要判断的是：**你要的是一个以键盘为中心的全局启动器，还是一个围绕项目文件与交付物持续工作的 Agent Workspace？**
 
