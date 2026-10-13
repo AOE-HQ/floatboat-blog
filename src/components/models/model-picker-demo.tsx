@@ -8,9 +8,9 @@ export function ModelPickerDemo({ model, locale }: { model: ModelFamily; locale:
   return (
     <div className="overflow-hidden rounded-[28px] border border-black/[0.08] bg-[#f5f1e8] shadow-[0_28px_70px_rgba(38,33,27,0.15)]">
       <div className="flex items-center gap-2 border-b border-black/[0.07] bg-white/70 px-5 py-3">
-        <span className="size-2.5 rounded-full bg-[#f5a9a4]" />
-        <span className="size-2.5 rounded-full bg-[#f4cf77]" />
-        <span className="size-2.5 rounded-full bg-[#9ed4ae]" />
+        <span className="size-2.5 rounded-full bg-black/15" />
+        <span className="size-2.5 rounded-full bg-black/15" />
+        <span className="size-2.5 rounded-full bg-black/15" />
         <span className="ml-3 text-xs font-medium text-black/45">Floatboat · {model.name}</span>
       </div>
       <div className="grid min-h-[420px] grid-cols-[92px_1fr] sm:grid-cols-[150px_1fr]">

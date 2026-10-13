@@ -63,7 +63,7 @@ const config = defineConfig({
 
   theme: {
     preset: "vercel-geist",
-    colorMode: "system",
+    colorMode: "light",
     strategy: "hybrid",
   },
 

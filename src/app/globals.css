@@ -116,28 +116,6 @@
   --ob-color-border: rgb(0 0 0 / 0.08);
 }
 
-/* Warm dark variant. Light-first: dark only reacts to system preference and
-   mirrors the geist system hook (html.ob-theme-system). */
-@media (prefers-color-scheme: dark) {
-  :root.ob-theme-system {
-    --ob-color-bg: #201e1b;
-    --ob-color-surface: #2a2723;
-    --ob-color-text: #ede8e2;
-    --ob-color-muted: #a8a29a;
-    --ob-color-text-muted: #a8a29a;
-    --ob-color-text-subtle: #d4cec6;
-    --ob-color-primary: #f7d68b;
-    --ob-color-primary-fg: #1b1a18;
-    --ob-color-accent: #f7d68b;
-    --ob-color-accent-hover: #f3cf79;
-    --ob-color-border: rgb(255 255 255 / 0.1);
-    --ob-color-code-bg: #121110;
-    --ob-color-code-fg: #e9e4dc;
-    --ob-color-image-slot: #2c2a27;
-    --ob-shadow-raised: 0 1px 2px rgb(0 0 0 / 0.3);
-  }
-}
-
 @keyframes ob-image-shimmer {
   100% {
     transform: translateX(100%);
@@ -171,17 +149,4 @@
   );
   transform: translateX(-100%);
   animation: ob-image-shimmer 1.4s ease-in-out infinite;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root.ob-theme-system .ob-image-shimmer-bar::after {
-    background: linear-gradient(
-      105deg,
-      transparent 0%,
-      transparent 38%,
-      rgb(255 255 255 / 0.18) 50%,
-      transparent 62%,
-      transparent 100%
-    );
-  }
 }

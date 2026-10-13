@@ -121,8 +121,11 @@ export function BlogCtaPopup({
 
   useEffect(() => {
     if (readSilence()) return;
-    setVisible(true);
-    sendPopupEvent("cta_popup_view");
+    const timer = window.setTimeout(() => {
+      setVisible(true);
+      sendPopupEvent("cta_popup_view");
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -184,10 +187,10 @@ export function BlogCtaPopup({
         {countdownLive ? (
           <div className="mt-4 flex items-center justify-center gap-1.5 rounded-lg bg-gray-100 px-3 py-2 text-sm">
             <span className="text-gray-500">{COUNTDOWN_LABEL[locale]}</span>
-            <span className="font-extrabold text-orange-500">{dd}D</span>
+            <span className="font-extrabold text-[#1b1a18]">{dd}D</span>
             <span className="font-extrabold text-[#1b1a18]">{hh}H</span>
-            <span className="font-extrabold text-pink-500">{mm}M</span>
-            <span className="font-extrabold text-teal-500">{ss}S</span>
+            <span className="font-extrabold text-[#1b1a18]">{mm}M</span>
+            <span className="font-extrabold text-[#1b1a18]">{ss}S</span>
           </div>
         ) : null}
 
@@ -201,7 +204,7 @@ export function BlogCtaPopup({
             {TICKET_LINE1[locale]}
           </p>
           <p className="mt-1 font-extrabold leading-none">
-            <span className="bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-3xl text-transparent">
+            <span className="text-3xl text-[#f7d68b]">
               $1
             </span>
             <span className="text-lg text-white"> {TICKET_LINE2[locale]}</span>
@@ -216,7 +219,7 @@ export function BlogCtaPopup({
           rel="nofollow noopener noreferrer"
           data-placement="blog_cta_popup"
           onClick={onCtaClick}
-          className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1b1a18] to-orange-400 px-5 py-3 text-sm font-bold text-white no-underline shadow-md transition-transform hover:scale-[1.02]"
+          className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-[#f7d68b] px-5 py-3 text-sm font-bold text-[#1b1a18] no-underline shadow-md transition-transform hover:scale-[1.02]"
         >
           {CTA_LABEL[locale]}
           <span aria-hidden="true">→</span>

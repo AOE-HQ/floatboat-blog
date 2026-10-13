@@ -12,7 +12,7 @@ export function FeatureDemo({ items, locale }: { items: string[]; locale: Landin
     <div className="overflow-hidden rounded-[28px] border border-black/10 bg-[#24221f] text-white shadow-[0_30px_80px_rgba(43,38,31,0.22)]">
       <div className="flex items-center justify-between border-b border-white/10 px-5 py-3 text-xs text-white/55">
         <span>FLOATBOAT WORKSPACE</span>
-        <span className="flex items-center gap-2"><i className="size-2 rounded-full bg-emerald-400" />{isZh ? "本地运行" : "Running locally"}</span>
+        <span className="flex items-center gap-2"><i className="size-2 rounded-full bg-[#f7d68b]" />{isZh ? "本地运行" : "Running locally"}</span>
       </div>
       <div className="grid min-h-[360px] md:grid-cols-[220px_1fr]">
         <div className="border-b border-white/10 p-4 md:border-b-0 md:border-r">

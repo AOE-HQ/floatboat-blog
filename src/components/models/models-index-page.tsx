@@ -45,8 +45,8 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {pickerModels.map((model, index) => (
-              <Link key={model.slug} href={modelPath(locale, model.slug)} className={`group flex min-h-72 flex-col rounded-3xl border border-black/[0.07] p-7 shadow-[var(--ob-shadow-raised)] transition hover:-translate-y-1 ${index === 0 ? "bg-[#24221f] text-white lg:col-span-2" : "bg-[var(--ob-color-surface)]"}`}>
-                <div className="flex items-start justify-between gap-4"><span className={`rounded-full px-3 py-1 text-xs font-semibold ${index === 0 ? "bg-white/10 text-[#f7d68b]" : "bg-black/[0.05] text-[var(--ob-color-muted)]"}`}>{localize(model.badge, locale)}</span><span className="text-lg transition group-hover:translate-x-1">→</span></div>
+              <Link key={model.slug} href={modelPath(locale, model.slug)} className={`group flex min-h-72 flex-col rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-7 shadow-[var(--ob-shadow-raised)] transition hover:-translate-y-1 ${index === 0 ? "lg:col-span-2" : ""}`}>
+                <div className="flex items-start justify-between gap-4"><span className="rounded-full bg-black/[0.05] px-3 py-1 text-xs font-semibold text-[var(--ob-color-muted)]">{localize(model.badge, locale)}</span><span className="text-lg transition group-hover:translate-x-1">→</span></div>
                 <div className="mt-auto pt-12"><h3 className="font-serif text-3xl tracking-tight">{model.name}</h3><p className={`mt-3 max-w-xl leading-7 ${index === 0 ? "text-white/65" : "text-[var(--ob-color-text-subtle)]"}`}>{localize(model.summary, locale)}</p>{model.slug !== "auto-mode" && <p className={`mt-4 text-xs leading-5 ${index === 0 ? "text-white/50" : "text-[var(--ob-color-muted)]"}`}>{model.lineup.items.map((item) => item.title).join(" · ")}</p>}</div>
               </Link>
             ))}
