@@ -46,14 +46,14 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /use-cases/lawyers
+          - path: /use-cases
             pathType: Prefix
             backend:
               service:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/use-cases/lawyers
+          - path: /zh/use-cases
             pathType: Prefix
             backend:
               service:
@@ -161,14 +161,14 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /use-cases/lawyers
+          - path: /use-cases
             pathType: Prefix
             backend:
               service:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/use-cases/lawyers
+          - path: /zh/use-cases
             pathType: Prefix
             backend:
               service:

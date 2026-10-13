@@ -12,7 +12,16 @@ const cardSchema = z.object({
 });
 
 export const personaPageSchema = z.object({
-  slug: z.literal("lawyers"),
+  slug: z.enum([
+    "lawyers",
+    "teachers",
+    "consultants",
+    "researchers",
+    "recruiters",
+    "financial-analysts",
+    "executive-assistants",
+    "marketers",
+  ]),
   locale: z.enum(["en", "zh"]),
   seo: z.object({
     title: z.string().min(20),
