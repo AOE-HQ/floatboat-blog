@@ -20,7 +20,7 @@ export function PersonaWorkScenes({ page, roleLabel }: { page: PersonaPageData; 
   const isZh = page.locale === "zh";
   const tasks = [...page.workflows.items.map((item) => item.title), ...page.hero.preview.outputs];
 
-  return <section id="workflows" className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
+  return <section id="workflows" className="border-y border-black/[0.06] py-20 sm:py-28">
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.2em]">{isZh ? "常见任务与代表场景" : "Common tasks and representative workflows"}</p>
@@ -55,7 +55,7 @@ export function PersonaWorkScenes({ page, roleLabel }: { page: PersonaPageData; 
                 <p className="mt-3 text-sm leading-6">{workflow.flow.join(isZh ? "、" : " · ")}</p>
               </div>
             </div>
-            <div className="mt-7 border-l-2 border-[#1b1a18] bg-[#fff5d7] px-5 py-4">
+            <div className="mt-7 border border-black/[0.08] border-l-2 border-l-[#1b1a18] bg-[var(--ob-color-surface)] px-5 py-4">
               <p className="text-xs font-semibold uppercase tracking-[0.14em]">{isZh ? "最终得到" : "Deliverable"}</p>
               <p className="mt-2 leading-7">{workflow.output}</p>
             </div>

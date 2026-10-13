@@ -62,18 +62,18 @@ export function UseCaseCatalog({ locale, cards }: { locale: PersonaLocale; cards
         {(Object.keys(labels.tabs) as Dimension[]).map((item) => <button key={item} type="button" role="tab" aria-selected={dimension === item} onClick={() => chooseDimension(item)} className={`rounded-full px-4 py-2 text-sm font-semibold transition ${dimension === item ? "bg-[#24221f] text-white" : "bg-white/60 text-[var(--ob-color-text-subtle)] hover:bg-white"}`}>{labels.tabs[item]}</button>)}
       </div>
       <div className="mt-4 flex flex-wrap gap-2">
-        {Object.entries(filters).map(([value, label]) => <button key={value} type="button" onClick={() => setFilter(value)} className={`rounded-full border px-3 py-1.5 text-sm transition ${filter === value ? "border-[#1b1a18] bg-[#fff5d7] text-[#1b1a18]" : "border-black/[0.08] bg-transparent text-[var(--ob-color-muted)] hover:border-black/25"}`}>{label}</button>)}
+        {Object.entries(filters).map(([value, label]) => <button key={value} type="button" onClick={() => setFilter(value)} className={`rounded-full border px-3 py-1.5 text-sm transition ${filter === value ? "border-[#1b1a18] bg-[#24221f] text-white" : "border-black/[0.08] bg-transparent text-[var(--ob-color-muted)] hover:border-black/25 hover:text-[var(--ob-color-text)]"}`}>{label}</button>)}
       </div>
     </div>
 
     <p className="mt-6 text-sm text-[var(--ob-color-muted)]" aria-live="polite">{locale === "zh" ? `显示 ${visibleCards.length} 个页面` : `Showing ${visibleCards.length} pages`}</p>
 
     {visibleCards.length ? <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-      {visibleCards.map((card, index) => <Link key={card.slug} href={card.href} className="group flex min-h-[340px] flex-col rounded-[30px] border border-black/[0.08] bg-white/55 p-6 transition hover:-translate-y-1 hover:bg-white hover:shadow-[var(--ob-shadow-raised)]">
+      {visibleCards.map((card, index) => <Link key={card.slug} href={card.href} className="group flex min-h-[340px] flex-col rounded-[30px] border border-black/[0.08] bg-[var(--ob-color-surface)] p-6 transition hover:-translate-y-1 hover:shadow-[var(--ob-shadow-raised)]">
         <div className="flex items-center justify-between gap-4 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--ob-color-muted)]"><span>{labels.types[card.type as keyof typeof labels.types]}</span><span>{String(index + 1).padStart(2, "0")}</span></div>
         <h3 className="mt-7 font-serif text-3xl leading-tight tracking-[-0.03em]">{titleCase(card.title)}</h3>
         <p className="mt-4 line-clamp-4 leading-7 text-[var(--ob-color-text-subtle)]">{card.description}</p>
-        <div className="mt-6 flex flex-wrap gap-2">{card.outputs.slice(0, 3).map((output) => <span key={output} className="rounded-full bg-[#f0eeeb] px-3 py-1 text-xs text-[var(--ob-color-text-subtle)]">{output}</span>)}</div>
+        <div className="mt-6 flex flex-wrap gap-2">{card.outputs.slice(0, 3).map((output) => <span key={output} className="rounded-full border border-black/[0.08] px-3 py-1 text-xs text-[var(--ob-color-text-subtle)]">{output}</span>)}</div>
         <span className="mt-auto pt-7 text-sm font-semibold">{labels.view} →</span>
       </Link>)}
     </div> : <div className="mt-6 rounded-[28px] border border-dashed border-black/15 px-6 py-16 text-center text-[var(--ob-color-muted)]">{labels.empty}</div>}

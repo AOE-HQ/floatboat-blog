@@ -78,7 +78,7 @@ export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData
     return `multiple AI models inside one ${roleLabel} project`;
   };
 
-  return <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
+  return <section className="border-y border-black/[0.06] py-20 sm:py-28">
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
       <div className="mx-auto mb-16 max-w-3xl text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.2em]">{isZh ? "完成工作的能力组合" : "A capability stack for the work"}</p>

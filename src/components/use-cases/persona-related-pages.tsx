@@ -41,7 +41,7 @@ export function PersonaRelatedPages({ page }: { page: PersonaPageData }) {
         {relatedPages.map((relatedPage, index) => <Link
           key={relatedPage.slug}
           href={personaPath(page.locale, relatedPage.slug)}
-          className="group flex min-h-64 flex-col rounded-[28px] border border-black/[0.08] bg-white/55 p-6 transition hover:-translate-y-1 hover:bg-white hover:shadow-[var(--ob-shadow-raised)]"
+          className="group flex min-h-64 flex-col rounded-[28px] border border-black/[0.08] bg-[var(--ob-color-surface)] p-6 transition hover:-translate-y-1 hover:shadow-[var(--ob-shadow-raised)]"
         >
           <span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-muted)]">0{index + 1}</span>
           <h3 className="mt-5 font-serif text-3xl leading-tight tracking-[-0.025em]">

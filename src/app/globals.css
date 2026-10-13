@@ -97,6 +97,25 @@
   --ob-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Use Cases is a light editorial surface. Keep its neutral hierarchy stable
+   when the site follows a dark system preference; product demos provide the
+   only intentional dark panels inside this template. */
+.use-cases-theme {
+  color-scheme: light;
+  --ob-color-bg: #f0eeeb;
+  --ob-color-surface: #fbfaf8;
+  --ob-color-text: #1b1a18;
+  --ob-color-muted: #7a7671;
+  --ob-color-text-muted: #7a7671;
+  --ob-color-text-subtle: #423f3b;
+  --ob-color-primary: #f7d68b;
+  --ob-color-primary-fg: #1b1a18;
+  --ob-color-primary-hover: #f3cf79;
+  --ob-color-accent: #1b1a18;
+  --ob-color-accent-hover: #3b3935;
+  --ob-color-border: rgb(0 0 0 / 0.08);
+}
+
 /* Warm dark variant. Light-first: dark only reacts to system preference and
    mirrors the geist system hook (html.ob-theme-system). */
 @media (prefers-color-scheme: dark) {
