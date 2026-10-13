@@ -1895,28 +1895,36 @@
     "/blog/codex-harness-open-source": {
       "items": [
         {
-          "question": "Can I run Codex Harness without paying OpenAI?",
-          "answer": "No — open source covers the harness code, not the models. You can run, modify, and commercialize the code under Apache 2.0, but every agent turn routes through OpenAI's models and billing, so inference still requires an API key or an eligible Codex subscription. There are no open-weight GPT-5.6 models inside the repo."
+          "question": "What is Codex Harness?",
+          "answer": "It is the open agent runtime and integration layer behind Codex workflows."
         },
         {
-          "question": "What exactly is open source, and what isn't?",
-          "answer": "OpenAI released the Codex CLI, the `codex-rs` harness core, the SDK, app-server, the Codex Security CLI, and the Skills/Plugins repositories. Not included: the IDE extension, the Codex Cloud managed service, and model weights. The authoritative list is on developers.openai.com, and the code is Apache 2.0 — verify the license in-repo before redistributing."
+          "question": "Which components are open?",
+          "answer": "OpenAI names Codex CLI, app-server, and the official SDK as open-source components."
         },
         {
-          "question": "Was Codex Harness open sourced for the first time in August 2026?",
-          "answer": "No. The Codex CLI and core harness have been on GitHub since 2025. The August 2026 announcement formalized platform positioning and documented app-server as the integration target; what was new was the \"open agent runtime you embed\" narrative, sample apps like Relay, and named enterprise embeds — not the code drop itself."
+          "question": "Are model weights included?",
+          "answer": "No. Model access and managed services remain separate."
         },
         {
-          "question": "Which integration should I choose: CLI, SDK, or app-server?",
-          "answer": "Use `codex exec` when a human operator or CI job runs bounded tasks and exits. Reach for the SDK (`@openai/codex-sdk` or `openai-codex`) when your backend code must start, resume, or stream agent work. Embed app-server when agents stay visible inside your product UI and you need persistent threads, streamed events, and approval requests. Most teams prototype with the CLI, then graduate to SDK/app-server once the workflow is stable."
+          "question": "When should I use codex exec?",
+          "answer": "Use it for bounded scripts, CI jobs, and one-off background work."
         },
         {
-          "question": "How does Codex Harness differ from DeepSeek Harness?",
-          "answer": "Codex Harness is OpenAI's vertical runtime, native to the Responses API and tightly coupled to OpenAI's subscription surface. DeepSeek Harness (`dsh`) is a pluginized, model-agnostic MIT preview built on the Cordis kernel. The licenses, architectures, and vendor incentives differ, so the two are not drop-in substitutes."
+          "question": "When should I use the SDK?",
+          "answer": "Use it when application code must start, resume, or stream tasks."
         },
         {
-          "question": "Are GitHub repos like `codex-harnesses` official?",
-          "answer": "No. Community repositories with \"harness\" in the name are usually project scaffolds — `AGENTS.md`, hooks, and scripts — not OpenAI's runtime. They can be useful starting points, but the maintained official code lives in `openai/codex` on GitHub under Apache 2.0; when in doubt, compare any fork against the component list in §4."
+          "question": "When should I use app-server?",
+          "answer": "Use it when an agent is part of a persistent product UI with events, interruption, and approvals."
+        },
+        {
+          "question": "Does open source remove inference cost?",
+          "answer": "No. Budget model access separately."
+        },
+        {
+          "question": "What must an embedding product still own?",
+          "answer": "It still owns context, tools, permissions, approval UX, observability, and system-of-record writes."
         }
       ]
     },
@@ -2031,28 +2039,36 @@
     "/blog/deepseek-agent-function-calling": {
       "items": [
         {
-          "question": "Which DeepSeek models support function calling?",
-          "answer": "Function calling is native to both deepseek-v4-pro and deepseek-v4-flash, so you only need to pass a tools array — no special model variant. The API is OpenAI-compatible, using the same tools, message.tool_calls, and role: \"tool\" pattern you already know from GPT-4o or Claude. Both models also support up to 128 parallel tool calls in one turn. For high-volume tool loops, V4 Flash is the cheaper workhorse; use V4 Pro for planning and synthesis turns."
+          "question": "What is DeepSeek function calling?",
+          "answer": "It is a model request for your application to execute a structured tool."
         },
         {
-          "question": "How does the tool-call loop actually work?",
-          "answer": "You send a tools array plus your messages; when the model decides a tool can help, it returns structured entries in message.tool_calls instead of plain text. Your code executes each call locally, appends the results as role: \"tool\" messages with matching tool_call_ids, and sends the whole history back for another turn. The loop repeats until the model produces a final answer — typically with tool_choice: \"none\". Preserving the original tool_calls array exactly when echoing it back is where most production bugs start."
+          "question": "Does the model execute tools itself?",
+          "answer": "No. Your code validates, authorizes, executes, and returns results."
         },
         {
-          "question": "Can I use thinking mode and function calling together?",
-          "answer": "Yes. V4 supports thinking (chain-of-thought) and tool calling at the same time, something earlier model generations handled unreliably. When enabled, the model writes its reasoning into a reasoning_content field before emitting tool calls; you don't need to parse it for the loop to work, but logging it helps debugging. The cost: thinking tokens are billed as output tokens, and one high-effort reasoning step can add hundreds of tokens. Apply thinking selectively — planning and synthesis turns rather than every execution turn."
+          "question": "What model name should new examples use?",
+          "answer": "Use current documented names such as deepseek-flash and verify the live catalog."
         },
         {
-          "question": "Does DeepSeek V4 support parallel tool calls, and when should I avoid them?",
-          "answer": "Yes — V4 can return up to 128 tool calls in one turn. Execute each independently and append each result as a separate tool message; order doesn't matter as long as tool_call_ids match. Parallel calls save latency, not tokens, since every result still enters context. Avoid them when tools share state — read_file and write_file on the same path, for example — because concurrent execution creates races your loop can't control. Start sequential, then enable parallel calls for read-only tools."
+          "question": "What is strict mode for?",
+          "answer": "It can improve schema adherence where supported, but business validation is still required."
         },
         {
-          "question": "What is the difference between inline function calling and MCP?",
-          "answer": "Inline function calling defines tools directly in the request, and your code executes them locally through a registry. MCP moves tools onto external servers that the agent discovers and calls at runtime, so the tool surface can be dynamic or maintained by a separate team. Both use the same message format in the loop — only the execution layer changes. Start with inline definitions; switch to MCP past roughly 20 tools, when tools change often, or when they need isolated execution environments."
+          "question": "Can calls run in parallel?",
+          "answer": "A model may return multiple calls, but the executor must cap safe concurrency."
         },
         {
-          "question": "Why do agent loops break in production, and how do I fix them?",
-          "answer": "Most failures come from the tool-calling layer, not the model: malformed JSON arguments, unknown tool names, wrong parameter types. Prevent them with clean schemas — plus strict mode when arguments are critical — and add a repair layer that validates before executing and returns structured JSON errors the model can read and self-correct from. Set max_turns, bail after repeated identical failed calls, log every tool call, and truncate large tool outputs so context doesn't balloon."
+          "question": "How should tool errors be returned?",
+          "answer": "Return bounded structured results that let the loop stop, retry, or request review."
+        },
+        {
+          "question": "When is MCP useful?",
+          "answer": "Use it when tools need standardized discovery or isolated credentials. MCP is implemented by the client or harness; the model still emits tool calls."
+        },
+        {
+          "question": "Is reasoning_content an audit record?",
+          "answer": "No. Treat it as a protocol or debugging field, not a reliable explanation of a decision or evidence for approval."
         }
       ]
     },
@@ -2467,56 +2483,72 @@
     "/blog/gemini-3-7-flash": {
       "items": [
         {
-          "question": "Is Gemini 3.7 Flash better than Gemini 3.6 Flash?",
-          "answer": "Yes, on every category Google reported and on Artificial Analysis's independent Intelligence Index (56 vs 52 at high reasoning). The largest gains are in long-horizon software engineering (DeepSWE v1.1: 49.0% → 65.3%), production code quality (FrontierCode 1.1: 34.4% → 43.6%), and document processing (GDP.pdf: 22.0% → 34.0%). It also runs roughly three times faster in output tokens per second. The caveats: CharXiv Reasoning is a small regression, and it still trails GPT-5.6 Terra on the hardest terminal and computer-use benchmarks."
+          "question": "What is the exact Gemini 3.7 Flash model ID?",
+          "answer": "The Developer API identifier is `gemini-3.7-flash`."
         },
         {
-          "question": "How much does Gemini 3.7 Flash cost?",
-          "answer": "Through December 31, 2026, it costs $0.75 per million input tokens and $3.75 per million output tokens, with context caching at $0.075 — half the original 3.6 Flash rate. Starting January 1, 2027, rates double to $1.50 input and $7.50 output, with caching at $0.15. For comparison, Claude Sonnet 5 lists at $2/$10 and GPT-5.6 Terra at $2/$12."
+          "question": "How large is its context window?",
+          "answer": "Google lists 1,048,576 input tokens and up to 65,536 output tokens."
         },
         {
-          "question": "Why does the price double in January?",
-          "answer": "The $0.75/$3.75 rate is an introductory promotion designed to drive developer adoption, not the standard price. Google has stated the standard rate from January 1, 2027 will be $1.50/$7.50. Teams building production agent pipelines on the promotional price should either price their product at the January rate or plan a migration before year-end."
+          "question": "What does Gemini 3.7 Flash cost?",
+          "answer": "Through December 31, 2026, Google lists $0.75/MTok input and $3.75/MTok output on the standard paid tier; the listed rates double January 1, 2027."
         },
         {
-          "question": "Is Gemini 3.7 Flash available in Floatboat?",
-          "answer": "Yes. Gemini is a built-in model family in Floatboat, and Gemini 3.7 Flash appears in the model roster alongside DeepSeek, GLM, Kimi, Claude, and MiniMax — no API key, no routing configuration, no external billing. Select it directly in any agent workspace, or let Auto Mode route to it when the task profile calls for a fast, capable workhorse."
+          "question": "Which inputs and tools does it support?",
+          "answer": "It accepts text, image, audio, and video inputs and supports agent features such as function calling; verify the endpoint and region for each tool."
         },
         {
-          "question": "Do I need to change my API code to migrate from 3.6 Flash?",
-          "answer": "Yes, migration is not a drop-in swap. You must remove `temperature`, `top_p`, and `top_k`, replace the numeric `thinking_budget` with the three-tier `thinking_level` setting (low/medium/high, medium default), drop `candidate_count`, and standardize multi-turn interaction around server-side `previous_interaction_id`. Google says 3.6 Flash is not being shut down, giving teams time to migrate and test."
+          "question": "How do I migrate from an older Flash model?",
+          "answer": "Replay real requests, replace legacy thinking parameters with `thinking_level`, remove rejected fields, canary writes, and retain rollback."
         },
         {
-          "question": "Is Gemini 3.7 Flash open source?",
-          "answer": "No. Gemini 3.7 Flash is API-only — no open weights, no self-hosting, no air-gapped deployment. If open-weight access matters for your workflow, the alternative is a model like GLM-5.3, which offers MIT-style weights for self-hosting while trading away Gemini's throughput and multimodal capabilities."
+          "question": "Is Gemini 3.7 Flash obsolete after 3.8?",
+          "answer": "No. It remains useful where accepted-task quality is stable and predictable latency or tokens matter more than persistent reasoning."
+        },
+        {
+          "question": "How should I compare 3.7 with 3.8?",
+          "answer": "Compare accepted-task cost, p95 latency, tool recovery, and correction time on the same workload."
+        },
+        {
+          "question": "What is the biggest pricing trap?",
+          "answer": "Thinking output, cache storage, grounding, retries, and endpoint class can matter more than the headline input rate."
         }
       ]
     },
     "/blog/gemini-3-8-flash": {
       "items": [
         {
-          "question": "Is Gemini 3.8 Flash better than Claude Opus 5 or GPT-5.6 Sol?",
-          "answer": "Not across the board, but on the jobs solo builders actually automate it is often the better buy. It leads both flagships on finance-agent and legal benchmarks, and sits level with Claude Opus 5 on long-horizon coding (73.7% vs. 74.0%) at roughly one-seventh the token price. The flagships still win on computer use (75.4% vs. 59.0%), open-ended agent orchestration (51.8% vs. 19.1%), and broad knowledge-work Elo. For coding agents or professional analysis, 3.8 Flash is the rational default; if an agent must drive a screen or sustain open-ended autonomy, pay for Opus 5."
+          "question": "What is the Gemini 3.8 Flash model ID?",
+          "answer": "Use `gemini-3.8-flash`."
         },
         {
-          "question": "Gemini 3.8 Flash vs. Gemini 3.7 Flash — which should I use?",
-          "answer": "Use the one that fits the effort budget — the per-token price is identical ($0.75/$3.75 through year-end) but actual spend is not. At high effort, 3.8 Flash runs about $0.58 per task versus $0.40 for 3.7 Flash, buying an eight-point DeepSWE gain. Choose 3.8 where a hard multi-step task rewards accuracy: long coding sessions, complex research, high-stakes deliverables. Keep 3.7 Flash for high-volume, low-variance work — Google says it stays fully supported — and inside 3.8, the LOW/MEDIUM/HIGH thinking dial gives you the same trade-off continuously."
+          "question": "What changed from 3.7?",
+          "answer": "Google emphasizes longer-horizon planning, iterative tools, and verification; that can improve completion while using more tokens."
         },
         {
-          "question": "Why does the price go up to $1.50/$7.50 in January 2027?",
-          "answer": "Because the January increase is the end of an introductory discount, not a mid-life hike. Both 3.7 and 3.8 Flash launched at $0.75/$3.75 per million tokens, a rate Google's terms say expires December 31, 2026, with the standard $1.50/$7.50 applying from January 1, 2027. Even doubled, 3.8 Flash still costs less than half as much per token as Claude Opus 5 ($5/$25) or GPT-5.6 Sol ($4/$20) — and on the six-week release cadence, a newer Flash will likely arrive before the change matters."
+          "question": "Which thinking levels are supported?",
+          "answer": "Low, medium, and high are supported; medium is default and minimal is not accepted."
         },
         {
-          "question": "Who can actually use Gemini 3.8 Flash Cyber?",
-          "answer": "Only vetted defenders, and only through Google's Fairwind Program — there is no public API. Fairwind admits government cyber authorities, critical-infrastructure operators, and maintainers of widely used software, with more than 650 partners globally. Because the Cyber model carries more permissive security mitigations, Google restricts it to organizations it can hold accountable and pairs it with the CodeMender patch harness. Everyone else gets standard 3.8 Flash with stricter guardrails — the right and sufficient tool for code review and security work in a normal business."
+          "question": "What are its context limits?",
+          "answer": "Google lists 1,048,576 input tokens and up to 65,536 output tokens."
         },
         {
-          "question": "Does Floatboat already include Gemini 3.8 Flash?",
-          "answer": "Yes. Gemini 3.8 Flash is already in Floatboat's built-in model picker beside DeepSeek, MiniMax, GLM, Kimi, Claude, and the GPT-5 family, with no API key or configuration required. Select it per event, and because each event keeps its own persistent agent workspace, you can switch models mid-task without losing context. Start where the extra reasoning pays — long coding sessions and complex briefs — and leave routine work on cheaper models."
+          "question": "How much does it cost?",
+          "answer": "The official standard paid rate through December 31, 2026 is $0.75/MTok input and $3.75/MTok output, including thinking."
         },
         {
-          "question": "What should solo founders use Gemini 3.8 Flash for?",
-          "answer": "Use it where a wrong draft costs you hours. For long coding sprints, run it at MEDIUM or HIGH effort — that is where the DeepSWE gains over 3.7 Flash pay off. For meeting prep and client briefs, the 1M-token context lets an agent read the whole thread instead of chunking it. Keep routine follow-ups and recurring automations on 3.7 Flash or a low effort level, where extra reasoning tokens are pure waste. Match effort to error cost, not to headline scores."
+          "question": "Is Gemini 3.8 Flash Cyber the same endpoint?",
+          "answer": "No. The Cyber variant has separate access and claims that should not be transferred to the general model."
+        },
+        {
+          "question": "When should I keep Gemini 3.7?",
+          "answer": "Keep 3.7 when it already passes routine tasks and wins on p95 latency or accepted-task cost."
+        },
+        {
+          "question": "What should a 3.8 pilot measure?",
+          "answer": "Measure completion, tool validity, wall time, total tokens, retries, and human correction at low and medium effort."
         }
       ]
     },
@@ -2631,28 +2663,36 @@
     "/blog/glm-5-3": {
       "items": [
         {
-          "question": "Is GLM-5.3 better than GLM-5.2?",
-          "answer": "On every benchmark [Z.ai](<https://Z.ai>) reported, yes, and on long-horizon tasks the margins are large: Terminal-Bench 3.0 improved from 4.6 to 28.3, DeepSWE v1.1 from 46.2 to 66.9, and CyberGym from 77.2% to 84.5%. The base model is identical — all gains came from post-training scaling. The two-week wait for open weights will let the community verify these numbers independently, but the direction is consistent with the model's design."
+          "question": "What is the GLM-5.3 API model ID?",
+          "answer": "The hosted Z.ai identifier is `glm-5.3`."
         },
         {
-          "question": "How much does GLM-5.3 cost?",
-          "answer": "Until open weights ship, GLM-5.3 is available through the GLM Coding Plan: Lite ¥118, Pro ¥538, and Max ¥1078 per month in China, or $18/$80/$168 internationally. Plans meter usage in credits, reset every five hours, and cap weekly usage per tier. API access follows shortly after launch, and the weights themselves will be open under a license expected to match GLM-5.2's MIT release."
+          "question": "Can GLM-5.3 disable thinking?",
+          "answer": "No. Z.ai documents thinking as always enabled with low, high, or max reasoning effort."
         },
         {
-          "question": "Why does GLM-5.3 have cybersecurity capabilities?",
-          "answer": "[Z.ai](<https://Z.ai>) says it added vulnerability-discovery data to the post-training mix expecting a modest improvement and instead observed an emergent capability — the model began reasoning across entire exploitation chains rather than spotting isolated bugs. CyberGym scoring (84.5%) edged out Claude Mythos 5 and GPT-5.6 Sol, though on the deeper ExploitBench and ExploitGym tests it still trails both closed models significantly."
+          "question": "How can I use GLM-5.3?",
+          "answer": "Choose the hosted API, GLM Coding Plan in supported coding agents, or a verified open-weight deployment."
         },
         {
-          "question": "Does GLM-5.3 support images?",
-          "answer": "No. GLM-5.3 is text-only, and native vision is the single most requested community feature — chief scientist Tang Jie's public consultation drew over 400,000 views with vision dominating the comments. Zhipu has historically shipped vision in the separate GLM-V line, and GLM-5.3 continues that split."
+          "question": "Are the weights open source?",
+          "answer": "Verify the current artifact and GLM-specific license; open weights do not automatically mean OSI-approved open source."
         },
         {
-          "question": "Is GLM-5.3 available in Floatboat?",
-          "answer": "Yes. GLM is a built-in model family in Floatboat alongside DeepSeek, Kimi, Gemini, Claude, and MiniMax — no API key, no routing configuration, no external billing. GLM-5.3 becomes available in the model selector the same way previous GLM versions did, and Auto Mode routes to it when event complexity calls for it."
+          "question": "What must I change when migrating?",
+          "answer": "Remove `thinking.type: disabled`, validate reasoning events, tool JSON, streaming, cancellation, and token accounting."
         },
         {
-          "question": "Is GLM-5.3 safe to use given its security capabilities?",
-          "answer": "[Z.ai](<https://Z.ai>) delayed the open-weights release by two weeks for safety evaluation and hardening, ran a red-team program that found 2,436 vulnerabilities across 269 projects, and published a public security disclosure ledger. The DARKNAVY team evaluated the release as balancing risk mitigation and capability well. The inherent trade-off remains: an open-weight model with real exploitation capability can be pointed in either direction, so deployment should include the same hardening you would apply to any model with agentic access to your infrastructure."
+          "question": "Is it mainly a coding model?",
+          "answer": "Z.ai positions it around long-horizon coding, but vendor benchmarks should become hypotheses for your own repository suite."
+        },
+        {
+          "question": "How should I compare API and self-hosting cost?",
+          "answer": "Compare hosted tokens and retries with accelerators, idle capacity, replicas, observability, and operator labor."
+        },
+        {
+          "question": "Which route is best for a pilot?",
+          "answer": "The hosted API is simplest; use Coding Plan for seat-based coding and weights only when control justifies operations and legal review."
         }
       ]
     },
@@ -3247,28 +3287,36 @@
     "/blog/how-to-build-deepseek-agent": {
       "items": [
         {
-          "question": "What is the agent loop, and why isn't one tool call enough?",
-          "answer": "An agent doesn't answer once — it loops. The model requests a tool, your code executes it, the result goes back into the conversation as a `tool` role message, and the model decides the next step with the full history in front of it. That cycle repeats until the model produces a final answer. A single tool call is just one turn: without feeding the result back and re-asking, the model can't plan, correct itself, or reach a multi-step goal. This is exactly the part most tutorials skip."
+          "question": "What are the minimum parts of a DeepSeek Agent?",
+          "answer": "You need a credential, current model, bounded tools, loop, validation, stop conditions, and logs."
         },
         {
-          "question": "V4 Pro or V4 Flash — which model should I use?",
-          "answer": "Default to `deepseek-v4-flash` for the agent loop. It handles high-volume tool calls, classification, routing, and simple debugging at roughly a third of Pro's input price. Promote individual turns to `deepseek-v4-pro` when response quality really matters — typically the planning step at the start of a task and the synthesis step at the end. The two models share the same API surface, so upgrading is a one-line model-name change."
+          "question": "Which model should a first build use?",
+          "answer": "Start with deepseek-flash and escalate only after evaluation."
         },
         {
-          "question": "Why build my own agent instead of using an existing tool?",
-          "answer": "If your agent only edits code, tools like DeepSeek-TUI and Reasonix already implement the loop well. But they are purpose-built for developer workflows. When the agent needs to query a proprietary database, interact with internal APIs, or automate a business process, a custom loop gives you full control over the tool surface — and understanding the loop is what makes debugging and customization possible in the first place."
+          "question": "Is changing the base URL enough?",
+          "answer": "Not for production. Feature compatibility and error behavior must be tested."
         },
         {
-          "question": "Can I use DeepSeek with LangChain or LangGraph?",
-          "answer": "Yes. Both frameworks support DeepSeek as a drop-in OpenAI-compatible provider. Set `OPENAI_API_BASE=https://api.deepseek.com` and `OPENAI_API_KEY=your-deepseek-key` in the environment, then use the standard `ChatOpenAI` class with `model=\"deepseek-v4-pro\"`. The agent loop pattern in this tutorial is what LangChain's `AgentExecutor` does under the hood — understanding the raw loop helps when LangChain's abstractions break, which they do."
+          "question": "What is the agent loop?",
+          "answer": "Send tools, receive calls, execute safely, return results, and repeat until a bounded stop."
         },
         {
-          "question": "What if the model calls a tool that doesn't exist?",
-          "answer": "The repair pattern in §6 catches this. Return a structured error — `{\"error\": \"Unknown tool: X. Available: [list]\"}` — and the model will typically correct itself on the next turn. V4 models are significantly better at self-correction than V3, but you should still validate every tool call before executing it."
+          "question": "How do I prevent infinite loops?",
+          "answer": "Set turn, time, call, and spend limits."
         },
         {
-          "question": "How much will this cost in production?",
-          "answer": "Back-of-envelope: a typical agent task uses 5–15 turns. At V4 Flash pricing ($0.14/M in, $0.28/M out), a task averaging 10 turns with 2,000 input tokens and 500 output tokens per turn costs roughly $0.004 — less than half a cent. A thousand such tasks per month: $4. At V4 Pro pricing: roughly $0.013 per task, or $13 for a thousand. The economics are favorable enough that the main cost concern is not the API bill but the engineering time spent tuning the agent loop."
+          "question": "How should writes be protected?",
+          "answer": "Use least privilege, validation, approval, and idempotency keys."
+        },
+        {
+          "question": "What should tests include?",
+          "answer": "Test missing evidence, malformed arguments, duplicates, outages, and denied approvals."
+        },
+        {
+          "question": "When should I use an existing harness?",
+          "answer": "Use one when it already provides the sandbox, approvals, and session controls you need."
         }
       ]
     },
@@ -3475,28 +3523,36 @@
     "/blog/kimi-k3-open-frontier-model": {
       "items": [
         {
-          "question": "Is Kimi K3 better than Claude Fable 5 or GPT-5.6 Sol?",
-          "answer": "On specific benchmarks, yes — K3 ranks first on Frontend Code Arena (1,679), ahead of both Fable 5 and GPT-5.6 Sol. On the broader Artificial Analysis Intelligence Index, it ranks third (57) behind Fable 5 and GPT-5.6 Sol. On long-horizon knowledge work (AA-Briefcase), it ranks second (1,527), ahead of GPT-5.6 Sol Max. The honest answer is that K3 is in the same tier as these models — trading blows rather than winning outright — with frontend coding as its clearest advantage."
+          "question": "Is Kimi K3 open weight?",
+          "answer": "Yes. Moonshot released full weights and supporting infrastructure under the Kimi K3 License."
         },
         {
-          "question": "Can I run Kimi K3 locally?",
-          "answer": "K3 is a 2.8-trillion-parameter model. Even with quantization-aware training (MXFP4 weights), running it locally requires server-class GPU infrastructure. A 1.58-bit quantized version would need over 512 GB of RAM just to load. For most developers, the practical access points are the Kimi API or built-in integrations like Floatboat. The open weights release on July 27 will enable community quantization and optimization efforts, but local inference at usable speeds on consumer hardware is unlikely without significant advances in compression techniques."
+          "question": "Is the Kimi K3 License unrestricted?",
+          "answer": "Do not assume so; review redistribution, derivatives, hosted access, branding, and restricted-use clauses."
         },
         {
-          "question": "What is Kimi Delta Attention?",
-          "answer": "KDA (Kimi Delta Attention) is a hybrid linear attention mechanism that replaces standard quadratic attention in most layers of the Transformer. In K3, every 4 attention layers follow a 3:1 pattern — 3 KDA layers use linear attention, 1 layer uses full attention. The result is a 75% reduction in KV cache memory usage and up to 6.3x decoding speedup at 1-million-token context lengths, with no loss of retrieval precision at critical points where exact token-level attention is needed."
+          "question": "What is the hosted API model ID?",
+          "answer": "Use `kimi-k3`."
         },
         {
-          "question": "Is Kimi K3 fully open source?",
-          "answer": "Moonshot AI has committed to releasing full model weights by July 27, 2026. The architecture — KDA and AttnRes — was previously published as open research on GitHub. The training code, dataset, and training methodology details are expected in the technical report that accompanies the weight release. At 2.8 trillion parameters, K3 is the largest model for which open weights have been promised. Whether \"open weights\" plus published architecture constitutes \"fully open source\" is a debate the AI community has been having for two years — K3 inherits that ambiguity."
+          "question": "How large is the context window?",
+          "answer": "Moonshot lists a 1-million-token window, though product plans and coding routes may expose different limits."
         },
         {
-          "question": "Is Kimi K3 available in Floatboat?",
-          "answer": "Yes. Kimi K3 is built into Floatboat with zero configuration — no API key, no routing setup, no external accounts. It appears in the agent workspace model selector alongside DeepSeek, Claude, Gemini, MiniMax, GLM, and the rest of the built-in model roster. For a complete guide on which calendar events match K3's capabilities, see the Kimi K3 in Floatboat walkthrough referenced in the setup section above."
+          "question": "What is Kimi K3 API pricing?",
+          "answer": "The launch post lists $0.30/MTok cache-hit input, $3 cache-miss input, and $15 output; verify current channel and currency."
         },
         {
-          "question": "When was Kimi K3 released?",
-          "answer": "Kimi K3 was officially released on July 16, 2026, by Moonshot AI. It is available immediately through kimi.com, the Kimi mobile app, Kimi Work desktop client, Kimi Code CLI, and the Kimi API. Full model weights are scheduled for release by July 27, 2026."
+          "question": "Can I self-host Kimi K3 cheaply?",
+          "answer": "Not necessarily. Moonshot recommends supernodes with 64 or more accelerators for efficient inference."
+        },
+        {
+          "question": "Which agent features should I test?",
+          "answer": "Test streaming, tool schemas, parallel calls, recovery, vision input, and cache accounting on the exact gateway."
+        },
+        {
+          "question": "How should hosted and self-hosted K3 be compared?",
+          "answer": "Use the same workload and compare accepted-task cost including accelerator hours, replicas, and operator time."
         }
       ]
     },
@@ -3683,28 +3739,36 @@
     "/blog/minimax-h3-max-infinite-ai-livestream": {
       "items": [
         {
-          "question": "Is H3 Max Live the same as MiniMax H3?",
-          "answer": "No. **MiniMax H3** is the base omni-modal video model (open weights for H3-Base, 2K paths, Ref2VA). **H3 Max** is fal's post-trained, speed-optimized variant served at 768p on fal's API. **H3 Max Live** is a **livestream workflow** — and an experimental continuity endpoint — built on top of H3 Max, not a separate MiniMax release."
+          "question": "Is H3 Max Live one infinite video?",
+          "answer": "No. It is an experimental loop that generates short clips, validates them, buffers them, and publishes a continuous stream."
         },
         {
-          "question": "Can I run an infinite AI livestream on fal's public API today?",
-          "answer": "You can build the loop yourself with the public **H3 Max** text-to-video and image-to-video endpoints, a queue, and RTMP tooling. fal's **native continuity** endpoint showcased in H3 Max Live was described as experimental; check fal's docs and model catalog for GA status before relying on cross-scene memory in production."
+          "question": "What did fal report for H3 Max?",
+          "answer": "fal reported a five-second 768p clip with synchronized audio in under three seconds under its demo conditions."
         },
         {
-          "question": "Why would Twitch or Kick flag an AI livestream?",
-          "answer": "Platforms enforce community guidelines through automated systems and reports. Fully AI-generated, chat-steered content with unpredictable NSFW risk does not fit neatly into existing creator categories. Reported friction in August 2026 may reflect moderation rules, category mismatch, or viewer reports — not a technical inability to stream. Policy varies by platform and may change as AI streams proliferate."
+          "question": "Is H3 Max Live a public SLA-backed API?",
+          "answer": "Do not assume so; verify current endpoint availability and terms on fal before architecture work."
         },
         {
-          "question": "How much does a 24/7 H3 Max AI stream cost?",
-          "answer": "At fal's list rate of about **$0.08 per second at 768p** , generating one hour of footage per clock hour costs roughly **$288** ; a full day approaches **$6,900** before failed jobs, parallel redundancy, or lower-duty cycles. Real demos cited **~$4,000/day** with sponsorship or intermittent generation. Budget for peak chat load, not average clip length."
+          "question": "What throughput does a livestream need?",
+          "answer": "Accepted generated media seconds per wall-clock second must remain above one after failures and moderation."
         },
         {
-          "question": "How is this different from MiniMax M3 or the Realtime API?",
-          "answer": "**MiniMax M3** is a text-centric frontier LLM for agents and coding. The **MiniMax Realtime API** is for low-latency **voice** conversation. **H3 Max Live** is **video clip generation** piped into a broadcast buffer. The word \"realtime\" in H3 Max coverage means **faster than playback** , not speech-to-speech dialogue."
+          "question": "How large should the buffer be?",
+          "answer": "Determine it from lower-percentile generation time, rejection rate, retry time, and desired recovery window."
         },
         {
-          "question": "When should I use H3 Max vs standard MiniMax H3?",
-          "answer": "Use **standard H3 (on fal or MiniMax) when you need 2K output, reference-to-video with many assets, or instruction-based editing — quality and modality breadth first. Use H3 Max when you need maximum throughput** , stronger prompt adherence at 768p, or interactive/high-volume generation — including livestream buffers. Many teams will use both: H3 Max for speed paths, standard H3 for hero shots."
+          "question": "What must the kill switch do?",
+          "answer": "Stop generation, block queued clips, switch to approved fallback media, and revoke publishing credentials if required."
+        },
+        {
+          "question": "How do I calculate 24/7 cost?",
+          "answer": "Start with 86,400 seconds times the current rate, adjust for replicas and acceptance yield, then add planning, moderation, encoding, egress, and labor."
+        },
+        {
+          "question": "What is a valid go-live test?",
+          "answer": "Run for hours under concurrency and require stable buffer depth, acceptable audio/transitions, a proven kill path, and viable total cost."
         }
       ]
     },
@@ -4479,28 +4543,36 @@
     "/blog/what-is-deepseek-agent": {
       "items": [
         {
-          "question": "What exactly is a DeepSeek Agent?",
-          "answer": "A DeepSeek Agent is any AI agent that uses a DeepSeek model — typically V4 Pro or V4 Flash — as its primary reasoning engine: the model that decides which tool to call, plans multi-step work, and keeps context across sessions. It is not a single product or codebase, but a category. Point Claude Code at DeepSeek's Anthropic-compatible endpoint and it becomes one for that session; run deepseek-tui and that setup is another."
+          "question": "Is DeepSeek Agent one official product?",
+          "answer": "No. It is a category of agent systems using DeepSeek inference."
         },
         {
-          "question": "Is there an official DeepSeek Agent from DeepSeek?",
-          "answer": "Not yet. Nothing in the ecosystem is an official DeepSeek product — DeepSeek itself has not shipped an agent. Its awesome-deepseek-agent repository is a signal that the V4 models are ready for agentic workloads, not a product launch. The company is hiring an Agent Harness team, and the job description points to a desktop coding agent in the vein of Claude Code's desktop app — likely arriving after community tools have explored that architecture."
+          "question": "What makes it an agent?",
+          "answer": "A harness lets the model select tools, observe results, and continue under controls."
         },
         {
-          "question": "Can I use DeepSeek V4 in Claude Code without losing features?",
-          "answer": "Yes. Point Claude Code at DeepSeek's Anthropic-compatible endpoint and choose `deepseek-v4-pro` or `deepseek-v4-flash`; most features — the agent loop, tool permissions, diff review, sub-agents — work identically because they live at the harness layer, not the model layer. What you lose is Claude-specific behavior such as Opus's architectural reasoning or features tied to Anthropic-only API parameters. In exchange, each turn costs dramatically less."
+          "question": "What is the model’s role?",
+          "answer": "It proposes text, reasoning, or tool calls; the application executes actions."
         },
         {
-          "question": "Isn't a DeepSeek Agent just a model with function calling?",
-          "answer": "No. Function calling is a single API capability: send tool definitions and receive a structured request to call one of them. An agent is the system built around that capability — an execution loop that makes the call, feeds the result back, and repeats. The engineering complexity of a DeepSeek Agent lives in that loop: error handling, context management, state persistence, tool permissions, multi-turn planning. A `tools` array is roughly the first 5%."
+          "question": "What forms are common?",
+          "answer": "Existing coding harnesses, DeepSeek-oriented clients, custom loops, and business or channel integrations."
         },
         {
-          "question": "Do DeepSeek V4 models support tool calling and MCP?",
-          "answer": "Yes. Both V4 Pro and V4 Flash support up to 128 parallel function calls through the standard OpenAI-compatible `tools` array, and both support the Model Context Protocol (MCP) for structured tool integration. On MCPAtlas Public, V4 Pro scored 73.6, tying Claude Opus 4.6 on agentic tool-use benchmarks."
+          "question": "Can Claude Code or Codex use DeepSeek?",
+          "answer": "Yes. DeepSeek publishes official integration guides for both."
         },
         {
-          "question": "How should I choose among the four archetypes?",
-          "answer": "Match the archetype to your constraints. Writing code and want the lowest cost per agent turn? Configure a generic harness — Claude Code or Cline — to use V4 Flash for routine work. Want to push DeepSeek's pricing as far as the architecture allows? Evaluate DeepSeek-TUI, whose RLM fan-out can't be replicated in a generic harness. Need an agent inside your team's chat platform? Look at AstrBot or OpenClaw. Prefer a visual interface over a terminal? Start with Cherry Studio or LobeHub."
+          "question": "Is a model alias a fixed checkpoint?",
+          "answer": "Not necessarily. Log serving metadata and watch routing notices."
+        },
+        {
+          "question": "How should I choose a harness?",
+          "answer": "Compare permissions, sandboxing, sessions, integrations, failure recovery, and accepted-task cost."
+        },
+        {
+          "question": "What are essential production controls?",
+          "answer": "Use least privilege, schemas, approvals, idempotency, limits, logs, and failure tests."
         }
       ]
     },
@@ -4599,28 +4671,36 @@
     "/blog/what-is-minimax-h3": {
       "items": [
         {
-          "question": "Is MiniMax H3 free to use commercially?",
-          "answer": "No — it is free for non-commercial use, and commercial use is allowed only for organizations under $20 million in annual revenue, with attribution. Funded teams above that threshold need to review the MiniMax H3 Community License before shipping commercial work."
+          "question": "What is MiniMax H3?",
+          "answer": "An omni-modal video system that accepts text, images, video, and audio and generates video with native stereo audio."
         },
         {
-          "question": "Does MiniMax H3 generate audio?",
-          "answer": "Yes. H3 generates 32 kHz stereo audio natively in the same pass as the video, driven by the same transformer that predicts the visual latents. Reference audio can also be reused, but audio cannot be provided as the sole input — it must accompany at least one image or video reference."
+          "question": "Is H3 fully open source?",
+          "answer": "No. H3-Base weights are downloadable under the MiniMax community license, while the complete hosted workflow includes other modules."
         },
         {
-          "question": "Can I run MiniMax H3 locally?",
-          "answer": "You can run H3-Base locally with SGLang, vLLM, diffusers, or ComfyUI, on a recommended four-GPU setup. The open release covers 768p generation with full attention; the H3-Context-IR preprocessing module and 2K regeneration remain API-only, and sparse attention is scheduled for a later release."
+          "question": "What can FL2VA do?",
+          "answer": "It supports text-to-video and first/last-frame-conditioned audio-video generation."
         },
         {
-          "question": "How does MiniMax H3 compare to Seedance 2.0?",
-          "answer": "H3 undercuts Seedance on price ($0.13/s at 2K versus roughly $0.24/s at 720p for Seedance, a third-party estimate), ships native stereo audio, and is open-weight. Seedance keeps the edge on cinematic tension and high-impact action sequences, and teams needing 4K should look at Kling 3.0 or Veo 3.1 instead."
+          "question": "What can Ref2VA do?",
+          "answer": "It conditions generation on text plus reference images, clips, or audio."
         },
         {
-          "question": "What is the difference between the FL2VA and Ref2VA checkpoints?",
-          "answer": "FL2VA covers text-to-audio-video and first/last-frame-to-video (zero, one, or two input images). Ref2VA handles reference-to-video with mixed inputs — up to 9 images, 3 video clips, and 3 audio files in one request, capped at 12 files total."
+          "question": "What output does H3 document?",
+          "answer": "The model card lists 4–15 seconds, 24 FPS, up to 2K through regeneration, and 32 kHz stereo audio."
         },
         {
-          "question": "What are MiniMax H3's main limitations?",
-          "answer": "There's no 4K path — 2K is the ceiling, which matters for theatrical or broadcast deliverables. High-tension, high-impact shots land weaker than Seedance 2.0's, the cost of its stability-first design. Very small text and extremely intricate details can still break, so treat every generation as needing a QA pass. Its instruction-following is aggressive and literal, favoring faithful execution over interpretive flair. And reproducing the full hosted 2K workflow locally keeps an API dependency on the Context-IR module."
+          "question": "What does hosted H3 cost?",
+          "answer": "Current list price is $0.08 per second at 768p and $0.13 at 2K, with some inputs and regeneration charged separately."
+        },
+        {
+          "question": "How should H3 be compared?",
+          "answer": "Use identical assets and score accepted-clip cost, continuity, motion, audio synchronization, and regeneration rate."
+        },
+        {
+          "question": "What should commercial users check?",
+          "answer": "Read the current community license and any territory or revenue conditions before deployment."
         }
       ]
     },
@@ -6843,28 +6923,36 @@
     "/zh/blog/codex-harness-open-source": {
       "items": [
         {
-          "question": "不付钱给 OpenAI 也能运行 Codex Harness 吗？",
-          "answer": "不能——开源的是 harness 代码，不是模型。你可以在 Apache 2.0 下运行、修改甚至商业化这套代码，但每一轮 Agent 交互都走 OpenAI 的模型与计费，推理仍需要 API Key 或符合条件的 Codex 订阅。仓库里没有任何开源的 GPT-5.6 权重。"
+          "question": "Codex Harness 是什么？",
+          "answer": "它是 Codex 工作流背后的开放 Agent 运行时与集成层。"
         },
         {
-          "question": "到底哪些开源了，哪些没有？",
-          "answer": "OpenAI 开放了 Codex CLI、`codex-rs` harness 核心、SDK、app-server、Codex Security CLI 以及 Skills/Plugins 仓库；**未开放**的是 IDE 扩展、Codex Cloud 托管服务与模型权重。权威清单在 developers.openai.com 上，代码采用 Apache 2.0——再分发前请在仓库内核实许可证。"
+          "question": "哪些组件开放？",
+          "answer": "OpenAI 明确列出 Codex CLI、app-server 与官方 SDK。"
         },
         {
-          "question": "Codex Harness 是 2026 年 8 月才首次开源的吗？",
-          "answer": "不是。Codex CLI 与核心 harness 自 2025 年起就在 GitHub 上；2026 年 8 月的公告是把平台定位正式化、把 app-server 文档化为集成目标。真正的新内容是「可嵌入的开放 Agent 运行时」的叙事、Relay 等示例应用与点名企业嵌入案例——而不是代码本身。"
+          "question": "包含模型权重吗？",
+          "answer": "不包含，模型访问与托管服务仍然分开。"
         },
         {
-          "question": "CLI、SDK、app-server 该怎么选？",
-          "answer": "当人类操作员或 CI 任务运行有边界的任务并随即退出时，用 `codex exec`。当你的后端代码需要启动、恢复或流式读取 Agent 任务时，用 SDK（`@openai/codex-sdk` 或 `openai-codex`）。当 Agent 要一直可见地出现在你的产品 UI 里、需要持久线程、流式事件与审批请求时，嵌入 app-server。多数团队先用 CLI 做原型，等工作流稳定后再升级到 SDK/app-server。"
+          "question": "什么时候用 codex exec？",
+          "answer": "用于有边界脚本、CI 任务与一次性后台工作。"
         },
         {
-          "question": "Codex Harness 与 DeepSeek Harness 有什么区别？",
-          "answer": "Codex Harness 是 OpenAI 的纵向运行时，原生对接 Responses API，并与 OpenAI 订阅体系深度耦合。DeepSeek Harness（`dsh`）是基于 Cordis 内核构建的插件化、模型无关的 MIT 预览版。两者的许可证、架构与厂商动机都不同，不能互相替代。"
+          "question": "什么时候用 SDK？",
+          "answer": "应用代码需要启动、恢复或流式接收任务时使用。"
         },
         {
-          "question": "像 `codex-harnesses` 这样的 GitHub 仓库是官方的吗？",
-          "answer": "不是。名字里带 harness 的社区仓库通常是项目脚手架——`AGENTS.md`、hooks、脚本——并不是 OpenAI 的运行时。它们可以作为不错的起点，但受维护的官方代码在 GitHub 的 `openai/codex` 上，采用 Apache 2.0；拿不准时，请把任何 fork 与 §4 的组件清单做对比。"
+          "question": "什么时候用 app-server？",
+          "answer": "Agent 进入持久产品界面，需要事件、打断与审批时使用。"
+        },
+        {
+          "question": "开源后推理免费吗？",
+          "answer": "不免费，模型访问仍需单独预算。"
+        },
+        {
+          "question": "嵌入产品仍要负责什么？",
+          "answer": "仍要负责上下文、工具、权限、审批体验、可观察性与系统写入。"
         }
       ]
     },
@@ -6979,28 +7067,36 @@
     "/zh/blog/deepseek-agent-function-calling": {
       "items": [
         {
-          "question": "DeepSeek 哪些模型支持函数调用？",
-          "answer": "V4 Pro 与 V4 Flash 都原生支持，请求里带上 tools 数组即可。API 兼容 OpenAI 格式，与 GPT-4o、Claude 的用法一致。两款模型单轮最多支持 128 个并行工具调用。想控制成本，工具执行轮多用 Flash，规划和综合轮交给 Pro。"
+          "question": "什么是 DeepSeek 函数调用？",
+          "answer": "它是模型请求应用执行结构化工具的机制。"
         },
         {
-          "question": "工具调用循环到底怎么跑？",
-          "answer": "模型判断某工具有用时，不直接回答，而是返回结构化工具调用。你的代码执行后，把结果以 tool 消息配上对应调用 id 追加进历史，再发回 API 继续，直到模型给出最终答案。最容易踩坑：回传时原样保留 assistant 消息里的 tool_calls，否则结果与调用会失联。"
+          "question": "模型会自己执行工具吗？",
+          "answer": "不会，应用代码负责校验、授权、执行与回传。"
         },
         {
-          "question": "思考模式和函数调用能一起用吗？",
-          "answer": "可以。V4 能把思考与工具调用组合，这是早几代模型做不到的。开启后模型会先内部推理再发工具调用；循环跑通并不依赖这段推理，但记日志有助调试。成本上，思考 token 按输出计费，高强度推理一次可能多花几百 token，建议只开在规划轮与综合轮。"
+          "question": "新示例用什么模型名？",
+          "answer": "使用 deepseek-flash 等当前官方名称，并核对实时目录。"
         },
         {
-          "question": "DeepSeek V4 支持并行工具调用吗？什么时候该避免？",
-          "answer": "支持。V4 单轮最多返回 128 个工具调用；逐个独立执行，每个结果作为独立 tool 消息追加即可，id 对上、顺序无所谓。并行省延迟不省 token——结果都计入上下文。工具碰共享状态时别并行（如读写同一路径会产生竞态）。建议先串行跑稳，再给搜索这类只读工具开并行。"
+          "question": "strict 模式做什么？",
+          "answer": "它可在受支持处提高 schema 符合度，但仍需业务校验。"
         },
         {
-          "question": "内联函数调用和 MCP 有什么区别？",
-          "answer": "内联函数调用把工具定义写进请求，由你的代码本地执行。MCP 把工具放到外部服务器，由 Agent 在运行时发现并调用，适合工具动态变化或由其他团队维护。两种方式在循环里消息格式相同，只是执行层不同。先用内联，等工具超过约 20 个、频繁变动或需要沙箱这类隔离环境时，再切到 MCP。"
+          "question": "能并行调用吗？",
+          "answer": "模型可返回多个调用，但执行器必须限制安全并发。"
         },
         {
-          "question": "生产环境里 Agent 循环为什么坏？怎么修？",
-          "answer": "生产故障大多出在工具调用层而非模型：JSON 畸形、工具名写错、参数类型不对。先用清晰的 schema 预防，参数至关重要时开严格模式；再建修复层：先校验后执行，把结构化 JSON 错误返回给模型让它自我纠正。还要设轮次上限、连错即停、记录每次调用，并截断大段工具输出，防止上下文膨胀。"
+          "question": "工具错误怎么回传？",
+          "answer": "用有边界的结构化结果，让循环停止、重试或请求审核。"
+        },
+        {
+          "question": "什么时候用 MCP？",
+          "answer": "工具需要标准发现或隔离凭据时使用。MCP 由客户端或框架实现，模型仍然只是发出工具调用。"
+        },
+        {
+          "question": "reasoning_content 能作为审计记录吗？",
+          "answer": "不能。它只是协议或调试字段，不是可靠的决策解释，也不能替代审批证据。"
         }
       ]
     },
@@ -7415,56 +7511,72 @@
     "/zh/blog/gemini-3-7-flash": {
       "items": [
         {
-          "question": "Gemini 3.7 Flash 比 Gemini 3.6 Flash 更强吗？",
-          "answer": "是的。Google 报告的每个类别都更强，Artificial Analysis 的独立 Intelligence Index 也更高（高推理档 56 vs 52）。最大提升在长程软件工程（DeepSWE v1.1：49.0% → 65.3%）、生产代码质量（FrontierCode 1.1：34.4% → 43.6%）和文档处理（GDP.pdf：22.0% → 34.0%）；每秒输出 token 也快了约三倍。局限在于：CharXiv Reasoning 有轻微回退，最难的终端与 computer-use 基准上仍落后于 GPT-5.6 Terra。"
+          "question": "Gemini 3.7 Flash 的准确 Model ID 是什么？",
+          "answer": "Developer API ID 为 `gemini-3.7-flash`。"
         },
         {
-          "question": "Gemini 3.7 Flash 的价格是多少？",
-          "answer": "2026 年 12 月 31 日前，每百万输入 token 0.75 美元、每百万输出 token 3.75 美元，上下文缓存 0.075 美元——是 3.6 Flash 首发价的一半。从 2027 年 1 月 1 日起翻倍：输入 1.50 美元、输出 7.50 美元，缓存 0.15 美元。作为对比，Claude Sonnet 5 标价 $2/$10，GPT-5.6 Terra 标价 $2/$12。"
+          "question": "上下文窗口多大？",
+          "answer": "Google 列出的输入窗口为 1,048,576 token，最大输出为 65,536 token。"
         },
         {
-          "question": "为什么 1 月价格会翻倍？",
-          "answer": "$0.75/$3.75 是拉动开发者上车的首发促销价，不是常规价。Google 已明确 2027 年 1 月 1 日起的常规价为 $1.50/$7.50。靠促销价搭建生产级 Agent 流水线的团队，要么按 1 月价格给产品定价，要么在年底前规划迁移。"
+          "question": "Gemini 3.7 Flash 多少钱？",
+          "answer": "标准付费层在 2026 年 12 月 31 日前为输入 0.75 美元/百万 token、输出 3.75 美元/百万 token；官方表列出的价格从 2027 年 1 月 1 日起翻倍。"
         },
         {
-          "question": "Floatboat 里能用 Gemini 3.7 Flash 吗？",
-          "answer": "可以。Gemini 是 Floatboat 的内置模型家族，Gemini 3.7 Flash 出现在与 DeepSeek、GLM、Kimi、Claude、MiniMax 并列的模型清单里——不需要 API key、不需要路由配置、没有外部计费。在任意 Agent 工作区直接选中它，或当任务画像需要一台又快又能扛事的跑量主力时，让 Auto Mode 路由过去。"
+          "question": "它支持哪些输入和工具？",
+          "answer": "可接收文本、图片、音频和视频，并支持函数调用等 Agent 能力；每项工具仍需按端点和地区核验。"
         },
         {
-          "question": "从 3.6 Flash 迁移需要改 API 代码吗？",
-          "answer": "需要，迁移不是无缝替换。你必须删掉 `temperature`、`top_p`、`top_k`，把数值型的 `thinking_budget` 换成三档 `thinking_level`（low/medium/high，默认 medium），移除 `candidate_count`，并把多轮交互统一为服务端 `previous_interaction_id`。Google 表示 3.6 Flash 不会被关停，给团队留出了迁移与测试的时间。"
+          "question": "怎样从旧版 Flash 安全迁移？",
+          "answer": "回放真实请求，把旧 thinking 参数改为 `thinking_level`，移除不支持字段，小流量开放写操作并保留回退。"
         },
         {
-          "question": "Gemini 3.7 Flash 开源吗？",
-          "answer": "不开源。Gemini 3.7 Flash 仅限 API——没有开放权重、不能自托管、无法离线隔离部署。如果你的工作流必须依赖开放权重，替代方案是 GLM-5.3 这类模型：提供 MIT 式权重可自托管，代价是放弃 Gemini 的吞吐与多模态能力。"
+          "question": "3.8 发布后 3.7 是否已经过时？",
+          "answer": "没有。若任务通过率稳定，且延迟或 token 可预测性更重要，3.7 仍是合理选择。"
+        },
+        {
+          "question": "如何公平比较 3.7 与 3.8？",
+          "answer": "在同一任务集上比较合格任务成本、p95 延迟、工具恢复和人工修正时间。"
+        },
+        {
+          "question": "最容易漏算哪类成本？",
+          "answer": "思考输出、缓存存储、grounding、重试与端点类型往往比输入标价影响更大。"
         }
       ]
     },
     "/zh/blog/gemini-3-8-flash": {
       "items": [
         {
-          "question": "Gemini 3.8 Flash 比 Claude Opus 5 或 GPT-5.6 Sol 强吗？",
-          "answer": "不是全面更强，但在多数单人开发者真正自动化的活上常常更划算：金融与法律基准领先两款旗舰，长时程编码与 Claude Opus 5 基本持平（73.7% 对 74.0%），token 价却只有约七分之一。前沿模型仍在计算机使用、开放式 Agent 编排与知识广度上明显取胜。做编码 Agent 或专业分析，3.8 Flash 是理性默认；需要驱动屏幕或开放式自主，才值得为 Opus 5 付钱。"
+          "question": "Gemini 3.8 Flash 的 Model ID 是什么？",
+          "answer": "使用 `gemini-3.8-flash`。"
         },
         {
-          "question": "Gemini 3.8 Flash 对 Gemini 3.7 Flash——我该用哪个？",
-          "answer": "按投入预算选，因为每 token 价格相同（年底前 $0.75/$3.75），实际花费却不同。高投入档下 3.8 Flash 每任务约 $0.58，3.7 Flash 为 $0.40，换来 DeepSWE 多八个点。奖励准确率的多步难题用 3.8——长编码会话、复杂研究、高价值交付物；高量低方差的工作留 3.7，谷歌称它仍完全受支持。3.8 的 LOW/MEDIUM/HIGH 思考档，正是同一取舍的连续版。"
+          "question": "它相对 3.7 真正改变了什么？",
+          "answer": "Google 强调更长链路的规划、迭代工具与校验；这可能提高完成率，也可能增加 token。"
         },
         {
-          "question": "为什么价格要在 2027 年 1 月涨到 $1.50/$7.50？",
-          "answer": "因为这是发布折扣到期，不是中途提价。两款 Flash 都按每百万 token $0.75/$3.75 发布，条款写明该费率 2026 年 12 月 31 日到期，次日起执行 $1.50/$7.50 标准价。即便翻倍，3.8 Flash 每 token 成本仍不到 Claude Opus 5（$5/$25）或 GPT-5.6 Sol（$4/$20）的一半；而按六周一款的节奏，更新的 Flash 大概率会在涨价真正产生影响前先到。"
+          "question": "支持哪些 thinking level？",
+          "answer": "支持 low、medium、high，默认 medium，不接受 minimal。"
         },
         {
-          "question": "谁真的能用上 Gemini 3.8 Flash Cyber？",
-          "answer": "只有经审核的防御方，而且只能通过谷歌的 Fairwind 计划——没有公开 API。该计划面向政府网络主管部门、关键基础设施运营方与广泛使用软件的维护者，全球已有 650 多个伙伴。由于 Cyber 版搭载更宽松的安全缓解，谷歌只把它开放给能问责的组织，并搭配 CodeMender 补丁生成框架。其余人拿到的是护栏更严的标准版——对普通业务里的代码审查与安全工作来说，它已经足够。"
+          "question": "上下文上限是多少？",
+          "answer": "Google 列出 1,048,576 输入 token 与最大 65,536 输出 token。"
         },
         {
-          "question": "Floatboat 已经内置 Gemini 3.8 Flash 了吗？",
-          "answer": "是。Gemini 3.8 Flash 已内置在 Floatboat 的模型选择器里，与 DeepSeek、MiniMax、GLM、Kimi、Claude 和 GPT-5 家族并列，无需 API key 或任何配置。可按事件选用；每个事件都有独立的持久 Agent 工作区，中途切换模型也不丢上下文。从长编码会话与复杂简报这类高收益的活开始，例行工作留给更便宜的模型。"
+          "question": "Gemini 3.8 Flash 多少钱？",
+          "answer": "2026 年 12 月 31 日前，官方标准付费价为输入 0.75 美元/百万 token、输出 3.75 美元/百万 token，含思考 token。"
         },
         {
-          "question": "单人创业者该用 Gemini 3.8 Flash 做什么？",
-          "answer": "用在\"草稿错了就要赔上几小时\"的活上：长编码冲刺用 MEDIUM 或 HIGH 档，这是相对 3.7 Flash 的 DeepSWE 增益兑现之处；会议准备与客户简报用中档，100 万上下文让 Agent 读整条线索而非分块。例行跟进与周期性自动化留在 3.7 Flash 或低档位，多余的推理 token 纯属浪费。让投入档位匹配错误的成本，而不是匹配头条分数。"
+          "question": "Gemini 3.8 Flash Cyber 是同一端点吗？",
+          "answer": "不是。Cyber 变体有独立准入，不能把它的能力或限制套给通用版。"
+        },
+        {
+          "question": "什么时候应继续用 3.7？",
+          "answer": "若 3.7 已能稳定通过日常任务，并在 p95 延迟或合格任务成本上占优，就应保留。"
+        },
+        {
+          "question": "3.8 试点应测什么？",
+          "answer": "分别在 low 与 medium 下测完成率、工具参数、墙钟时间、总 token、重试与人工修正。"
         }
       ]
     },
@@ -7579,28 +7691,36 @@
     "/zh/blog/glm-5-3": {
       "items": [
         {
-          "question": "GLM-5.3 比 GLM-5.2 强吗？",
-          "answer": "在 [Z.ai](<https://Z.ai>) 报告的所有基准上都更强，而且长程任务的差距很大：Terminal-Bench 3.0 从 4.6 提升到 28.3，DeepSWE v1.1 从 46.2 提升到 66.9，CyberGym 从 77.2% 提升到 84.5%。基座模型完全相同——所有提升都来自后训练扩展。等开放权重的两周会让社区独立核验这些数字，但方向与模型的设计是一致的。"
+          "question": "GLM-5.3 的 API Model ID 是什么？",
+          "answer": "Z.ai 托管 API ID 为 `glm-5.3`。"
         },
         {
-          "question": "GLM-5.3 多少钱？",
-          "answer": "在开放权重落地之前，GLM-5.3 通过 GLM Coding Plan 提供：国内 Lite ¥118、Pro ¥538、Max ¥1078 每月，国际版 $18/$80/$168。套餐按积分计量用量、每五小时重置、按档位设每周上限。API 访问在发布后不久跟进，权重本身将以预计与 GLM-5.2 相同的 MIT 许可开放。"
+          "question": "GLM-5.3 可以关闭 thinking 吗？",
+          "answer": "不可以。Z.ai 文档说明 thinking 始终开启，可选 low、high、max 推理强度。"
         },
         {
-          "question": "GLM-5.3 为什么有网络安全能力？",
-          "answer": "[Z.ai](<https://Z.ai>) 表示，它把漏洞发现数据加入后训练配比时只预期小幅提升，结果观察到的却是一项涌现能力——模型开始跨整条利用链推理，而不只是发现孤立 bug。CyberGym 得分（84.5%）小幅压过 Claude Mythos 5 和 GPT-5.6 Sol，但在更深的 ExploitBench 和 ExploitGym 测试上，它仍明显落后于这两款闭源模型。"
+          "question": "可以通过哪些方式使用 GLM-5.3？",
+          "answer": "可选托管 API、编码 Agent 中的 GLM Coding Plan，或经核验的开放权重部署。"
         },
         {
-          "question": "GLM-5.3 支持图片吗？",
-          "answer": "不支持。GLM-5.3 是纯文本模型，原生视觉是社区呼声最高的功能——首席科学家唐杰的公开意见征集获得超过 40 万次浏览，视觉相关请求在评论区占主导。智谱历来把视觉放在独立的 GLM-V 产品线里，GLM-5.3 延续了这个分工。"
+          "question": "开放权重就等于标准开源吗？",
+          "answer": "不等于；必须核对当前工件与 GLM 专用许可证，不能把开放权重自动视为 OSI 开源。"
         },
         {
-          "question": "Floatboat 里能用 GLM-5.3 吗？",
-          "answer": "能。GLM 是 Floatboat 里与 DeepSeek、Kimi、Gemini、Claude、MiniMax 并列的内置模型家族——不需要 API key、不需要路由配置、没有外部计费。GLM-5.3 会像之前各代 GLM 一样出现在模型选择器里，Auto Mode 也会在事件复杂度需要时路由到它。"
+          "question": "迁移时必须改什么？",
+          "answer": "删除 `thinking.type: disabled`，并验证 reasoning 事件、工具 JSON、流式输出、取消与 token 统计。"
         },
         {
-          "question": "考虑到 GLM-5.3 的安全能力，用它安全吗？",
-          "answer": "[Z.ai](<https://Z.ai>) 推迟两周发布权重做安全评估与加固：发布前红队项目在 269 个项目里找到 2,436 个漏洞，并公开了安全披露台账；DARKNAVY 团队评价它在风险缓解与能力之间取得了良好平衡。固有权衡仍在——带真实利用能力的开放权重模型可以被指向任一方向，部署时应与对待任何能访问你基础设施的模型同等加固。"
+          "question": "它主要适合编码吗？",
+          "answer": "Z.ai 将其定位在长周期编码，但厂商榜单只能用于形成假设，仍需仓库任务验证。"
+        },
+        {
+          "question": "API 与自托管成本怎样比较？",
+          "answer": "把托管 token 和重试，与加速卡、闲置容量、副本、监控和运维人力对比。"
+        },
+        {
+          "question": "哪条路径最适合试点？",
+          "answer": "托管 API 最简单；Coding Plan 适合席位制编码，只有控制价值足够大时才考虑权重。"
         }
       ]
     },
@@ -8195,28 +8315,36 @@
     "/zh/blog/how-to-build-deepseek-agent": {
       "items": [
         {
-          "question": "Agent 循环是什么？为什么一次工具调用还不够？",
-          "answer": "Agent 不是回答一次就结束——它循环。模型请求调用某个工具，你的代码执行它，结果作为 `tool` 角色消息回到对话，模型带着完整历史决定下一步。如此往复，直到模型给出最终回答。一次工具调用只是单个回合：不把结果喂回去再问一轮，模型就无法规划、自我纠正，也完不成多步目标。而这恰恰是多数教程跳过的部分。"
+          "question": "构建 DeepSeek Agent 最少需要什么？",
+          "answer": "需要凭据、当前模型、有界工具、循环、校验、停止条件和日志。"
         },
         {
-          "question": "V4 Pro 和 V4 Flash，我该怎么选？",
-          "answer": "默认把 Agent 循环跑在 `deepseek-v4-flash` 上——高频工具调用、分类、路由和简单调试它都够用，输入价格大约是 Pro 的三分之一。只有当回答质量真正要紧时才把个别回合升到 `deepseek-v4-pro`——通常是任务开头的规划步和结尾的综合步。两款模型共用同一个 API 面，升级只是一行模型名的改动。"
+          "question": "首个版本用什么模型？",
+          "answer": "从 deepseek-flash 开始，有评测依据再升级。"
         },
         {
-          "question": "为什么要自己写，而不是直接用现成工具？",
-          "answer": "看你的 Agent 做什么。如果它只是改代码，DeepSeek-TUI、Reasonix 这类工具已经把循环实现得很好了。但它们专为开发者工作流而造。当 Agent 需要查询专有数据库、对接内部 API、自动化业务流程时，自定义循环才能让你完全掌控工具面——而理解循环本身，正是你能够调试和定制的起点。"
+          "question": "只改 base URL 够吗？",
+          "answer": "生产环境不够，还要测试功能兼容与错误行为。"
         },
         {
-          "question": "DeepSeek 能用在 LangChain 或 LangGraph 里吗？",
-          "answer": "能。两个框架都把 DeepSeek 当作即插即用的 OpenAI 兼容供应商来支持。在环境里设置 `OPENAI_API_BASE=https://api.deepseek.com` 和 `OPENAI_API_KEY=your-deepseek-key`，再用标准的 `ChatOpenAI` 类、`model=\"deepseek-v4-pro\"` 即可。本教程讲的 Agent 循环模式，正是 LangChain 的 `AgentExecutor` 在底层做的事——当 LangChain 的抽象坏掉时（它们确实会坏），理解原始循环就很有用。"
+          "question": "Agent 循环是什么？",
+          "answer": "发送工具、接收调用、安全执行、回传结果，直到有边界地停止。"
         },
         {
-          "question": "模型调用不存在的工具怎么办？",
-          "answer": "这正是第 6 节修复模式要处理的。返回一个结构化错误——`{\"error\": \"Unknown tool: X. Available: [list]\"}`——模型通常会在下一回合自我纠正。V4 模型的自我纠正能力显著强于 V3，但你仍应在执行前校验每一次工具调用。"
+          "question": "如何防止无限循环？",
+          "answer": "限制轮数、时间、调用次数与预算。"
         },
         {
-          "question": "生产环境跑起来要花多少钱？",
-          "answer": "粗略估算：一个典型 Agent 任务用 5–15 回合。按 V4 Flash 价格（输入 $0.14/M、输出 $0.28/M），一个平均 10 回合、每回合 2,000 输入 token 与 500 输出 token 的任务大约花 $0.004——不到半分钱。每月一千个这样的任务：$4。按 V4 Pro 价格：每任务约 $0.013，一千个约 $13。成本面友好到，主要顾虑不是 API 账单，而是你用来调优 Agent 循环的工程时间。"
+          "question": "如何保护写操作？",
+          "answer": "使用最小权限、校验、审批和幂等键。"
+        },
+        {
+          "question": "测试应包含什么？",
+          "answer": "包含证据缺失、畸形参数、重复、故障与审批拒绝。"
+        },
+        {
+          "question": "何时使用现有框架？",
+          "answer": "当它已提供所需沙箱、审批和会话控制时。"
         }
       ]
     },
@@ -8423,28 +8551,36 @@
     "/zh/blog/kimi-k3-open-frontier-model": {
       "items": [
         {
-          "question": "Kimi K3 比 Claude Fable 5 或 GPT-5.6 Sol 更强吗？",
-          "answer": "在特定基准上，是的——K3 在 Frontend Code Arena 排名第一（1,679 分），领先 Fable 5 与 GPT-5.6 Sol。在更宽口径的 Artificial Analysis Intelligence Index 上，它排第三（57 分），落后于 Fable 5 与 GPT-5.6 Sol。在长程知识工作（AA-Briefcase）上，它排第二（1,527 分），领先 GPT-5.6 Sol Max。诚实的答案是：K3 与这些模型处于同一梯队——互有胜负而非全面胜出——前端编码是它最明确的强项。"
+          "question": "Kimi K3 是开放权重模型吗？",
+          "answer": "是。Moonshot 已按 Kimi K3 License 发布完整权重和相关基础设施。"
         },
         {
-          "question": "我能在本地运行 Kimi K3 吗？",
-          "answer": "K3 是一个 2.8 万亿参数的模型。即便有量化感知训练（MXFP4 权重），本地运行也需要服务器级 GPU 基础设施。一个 1.58-bit 量化版本光是加载就需要超过 512 GB 内存。对多数开发者来说，现实的接入点是 Kimi API 或 Floatboat 这类内置集成。7 月 27 日的开放权重会启动社区量化与优化工作，但除非压缩技术有重大突破，在消费级硬件上以可用速度本地推理的可能性不大。"
+          "question": "Kimi K3 License 是否没有限制？",
+          "answer": "不能这样假设；应审查再分发、衍生工件、对外托管、品牌和限制用途。"
         },
         {
-          "question": "什么是 Kimi Delta Attention？",
-          "answer": "KDA（Kimi Delta Attention）是一种混合线性注意力机制，在 Transformer 的大多数层中替代标准二次方注意力。在 K3 中，每 4 个注意力层遵循 3:1 模式——3 层 KDA 使用线性注意力，1 层使用全注意力。结果是 KV cache 内存占用降低 75%，在 100 万 token 上下文长度下解码加速最高 6.3 倍，同时在需要精确 token 级注意力的关键节点不损失检索精度。"
+          "question": "托管 API 的 Model ID 是什么？",
+          "answer": "使用 `kimi-k3`。"
         },
         {
-          "question": "Kimi K3 完全开源了吗？",
-          "answer": "Moonshot AI 已承诺在 2026 年 7 月 27 日前发布完整模型权重。架构本身——KDA 与 AttnRes——此前已作为开放研究发布在 GitHub 上。训练代码、数据集与训练方法细节预计随权重发布的技术报告一并公开。以 2.8 万亿参数计，K3 是迄今承诺开放权重的最大模型。「开放权重」加公开架构是否算「完全开源」，是 AI 社区争论了两年的话题——K3 也继承了这种模糊性。"
+          "question": "上下文窗口多大？",
+          "answer": "Moonshot 列出 100 万 token，但会员和编码产品的可用限制可能不同。"
         },
         {
-          "question": "Kimi K3 在 Floatboat 里可用吗？",
-          "answer": "可以。Kimi K3 内置于 Floatboat，零配置——无需 API key、无需路由设置、无需外部账号。它出现在 agent 工作区的模型选择器中，与 DeepSeek、Claude、Gemini、MiniMax、GLM 等内置模型并列。关于哪些日历事件匹配 K3 能力的完整指南，参阅上文设置章节提到的 Kimi K3 in Floatboat 详解。"
+          "question": "Kimi K3 API 价格是多少？",
+          "answer": "发布文列出缓存命中输入 0.30 美元、未命中输入 3 美元、输出 15 美元/百万 token；应核验当前渠道与币种。"
         },
         {
-          "question": "Kimi K3 是什么时候发布的？",
-          "answer": "Kimi K3 由 Moonshot AI 于 2026 年 7 月 16 日正式发布。立即通过 kimi.com、Kimi 手机 App、Kimi Work 桌面客户端、Kimi Code CLI 与 Kimi API 提供。完整模型权重定于 2026 年 7 月 27 日前发布。"
+          "question": "Kimi K3 能低成本自托管吗？",
+          "answer": "不一定。Moonshot 建议用 64 张或更多加速卡组成 supernode 才能高效推理。"
+        },
+        {
+          "question": "Agent 接入应测试哪些能力？",
+          "answer": "在准确网关上测试流式输出、工具 schema、并行调用、恢复、视觉输入与缓存记账。"
+        },
+        {
+          "question": "如何比较托管与自托管 K3？",
+          "answer": "用同一任务集，并把加速卡小时、副本和运维时间计入合格任务成本。"
         }
       ]
     },
@@ -8631,28 +8767,36 @@
     "/zh/blog/minimax-h3-max-infinite-ai-livestream": {
       "items": [
         {
-          "question": "H3 Max Live 和 MiniMax H3 一样吗？",
-          "answer": "不一样。**MiniMax H3** 是基础全模态视频模型（H3-Base 开放权重、2K 路径、Ref2VA）。**H3 Max** 是 fal 在自家 API 上以 768p 提供服务的 post-trained、速度优化变体。**H3 Max Live** 是建立在 H3 Max 之上的**直播工作流**——外加一个实验性连续性端点——不是 MiniMax 的独立发布。"
+          "question": "H3 Max Live 是一条无限长视频吗？",
+          "answer": "不是。它是不断生成短片、校验、缓冲并连续推流的实验性循环。"
         },
         {
-          "question": "我今天就能用 fal 的公开 API 跑一个无限 AI 直播吗？",
-          "answer": "你可以用公开的 **H3 Max** 文生视频与图生视频端点、一个队列和 RTMP 工具自己搭出这个循环。H3 Max Live 展示的 fal **原生连续性**端点被描述为实验性的；在把跨场景记忆依赖到生产之前，先查 fal 的文档和模型目录确认 GA 状态。"
+          "question": "fal 对 H3 Max 报告了什么速度？",
+          "answer": "fal 称在其演示条件下，5 秒 768p 同步音频片段可在 3 秒内生成。"
         },
         {
-          "question": "Twitch 或 Kick 为什么要标记 AI 直播？",
-          "answer": "平台通过自动化系统和举报执行社区准则。完全由 AI 生成、由聊天指挥、NSFW 风险不可预测的内容，并不能干净地套进现有创作者品类。2026 年 8 月报道的摩擦，可能反映的是审核规则、品类错配或观众举报——而不是技术上的直播能力不足。政策因平台而异，并会随 AI 直播的扩散而变化。"
+          "question": "H3 Max Live 是公开且带 SLA 的 API 吗？",
+          "answer": "不能这样假设；架构设计前应在 fal 核对当前端点与条款。"
         },
         {
-          "question": "24/7 的 H3 Max AI 直播要多少钱？",
-          "answer": "按 fal 约 **768p 每秒 0.08 美元**的目录价，每个钟头生成一小时画面约需 **288 美元**；满打满算一天接近 **6,900 美元**，还不算失败任务、并行冗余或更低占空比。真实演示在赞助或间歇生成下引用约 **4,000 美元/天**。请按聊天峰值负载来预算，而不是按平均片段长度。"
+          "question": "连续直播需要多高吞吐？",
+          "answer": "扣除失败与审核后，合格媒体秒数与墙钟秒数之比必须长期大于 1。"
         },
         {
-          "question": "这和 MiniMax M3 或 Realtime API 有什么不同？",
-          "answer": "**MiniMax M3** 是面向 Agent 与编码的、以文本为中心的前沿 LLM。**MiniMax Realtime API** 面向低延迟的**语音**对话。**H3 Max Live** 是把**视频片段生成**接进广播缓冲。H3 Max 报道里出现的「realtime」，指的是**快过播放**，不是语音对语音对话。"
+          "question": "缓冲区应设多大？",
+          "answer": "应根据较低分位生成耗时、拒收率、重试时间和目标恢复窗口计算。"
         },
         {
-          "question": "什么时候用 H3 Max，什么时候用标准 MiniMax H3？",
-          "answer": "**需要 2K 输出、多资产的参考图转视频、或基于指令的剪辑时用标准 H3（fal 或 MiniMax 上都行）——画质与模态广度优先。需要最大吞吐量**、768p 下更强的提示词遵从性、或互动/高量生成（包括直播缓冲）时用 H3 Max。很多团队会两个都用：H3 Max 走速度路径，标准 H3 出主镜头。"
+          "question": "kill switch 必须做什么？",
+          "answer": "停止生成、拦截排队片段、切换审核过的兜底素材，并在需要时撤销推流凭据。"
+        },
+        {
+          "question": "怎样计算 24/7 完整成本？",
+          "answer": "先用 86,400 秒乘当前单价，再按副本和通过率调整，并加入规划、审核、编码、流量和人力。"
+        },
+        {
+          "question": "怎样才算通过上线测试？",
+          "answer": "并发压测数小时，缓冲稳定、音频和转场合格、紧急停止有效且总成本可承受。"
         }
       ]
     },
@@ -9427,28 +9571,36 @@
     "/zh/blog/what-is-deepseek-agent": {
       "items": [
         {
-          "question": "DeepSeek Agent 到底是什么？",
-          "answer": "DeepSeek Agent 指任何以 DeepSeek 模型（通常是 V4 Pro 或 V4 Flash）作为主推理引擎的 AI Agent——由这个模型决定调用哪个工具、规划多步任务、并跨 session 维护上下文。它不是某一款产品或代码库，而是一个类别：把 Claude Code 指向 DeepSeek 的 Anthropic 兼容端点，那个会话里它就变成了 DeepSeek Agent；跑 deepseek-tui 则是另一种。"
+          "question": "DeepSeek Agent 是一个官方产品吗？",
+          "answer": "不是，它是使用 DeepSeek 推理的 Agent 系统类别。"
         },
         {
-          "question": "DeepSeek 官方出 DeepSeek Agent 了吗？",
-          "answer": "还没有。目前生态里没有任何一款是 DeepSeek 的官方产品——DeepSeek 自己尚未发布 Agent。awesome-deepseek-agent 仓库是一个信号（V4 模型已准备好承接 agentic 工作负载），而不是产品发布。公司正在招聘 Agent Harness 团队，职位描述指向一个 Claude Code 桌面 App 路数的桌面编程 Agent——很可能要等社区工具把那套架构先探索完。"
+          "question": "什么让它成为 Agent？",
+          "answer": "框架让模型在控制下选择工具、观察结果并继续执行。"
         },
         {
-          "question": "在 Claude Code 里用 DeepSeek V4 会丢功能吗？",
-          "answer": "不会。把 Claude Code 指向 DeepSeek 的 Anthropic 兼容端点、选择 `deepseek-v4-pro` 或 `deepseek-v4-flash` 即可；大部分功能——agent 循环、工具权限、diff 审核、子 Agent——都原样工作，因为它们活在宿主层而不是模型层。你失去的是 Claude 特有行为，如 Opus 的架构推理风格、或依赖 Anthropic 专属 API 参数的功能；换来的则是每回合成本大幅下降。"
+          "question": "模型负责什么？",
+          "answer": "模型提出文本、推理或工具调用，应用执行动作。"
         },
         {
-          "question": "DeepSeek Agent 不就是个带函数调用的模型吗？",
-          "answer": "不是。函数调用只是单个 API 能力——发一份带工具定义的提示，拿回一个调用其中某个工具的结构化请求。Agent 是围绕这项能力构建的系统：一个执行循环，真正发起调用、把结果喂回去、再重复。DeepSeek Agent 的工程复杂度大多活在这个循环里——错误处理、上下文管理、状态持久化、工具权限、多轮规划。一个 `tools` 数组大约只是头 5%。"
+          "question": "常见形态有哪些？",
+          "answer": "现有编程框架、DeepSeek 客户端、自建循环与业务或频道集成。"
         },
         {
-          "question": "DeepSeek V4 支持工具调用和 MCP 吗？",
-          "answer": "支持。V4 Pro 与 V4 Flash 都通过标准 OpenAI 兼容的 `tools` 数组支持最多 128 个并行函数调用，也都支持 Model Context Protocol（MCP）做结构化工具集成。V4 Pro 在 MCPAtlas Public 上拿到 73.6，在 agentic 工具使用基准上与 Claude Opus 4.6 打平。"
+          "question": "Claude Code 或 Codex 能用 DeepSeek 吗？",
+          "answer": "能，DeepSeek 为两者提供官方接入指南。"
         },
         {
-          "question": "四种原型该怎么选？",
-          "answer": "按你的约束对号入座。写代码、想要最低的每回合成本，就把 Claude Code 或 Cline 这类通用宿主框架配置成例行任务用 V4 Flash；想把 DeepSeek 定价允许的架构潜力推到极限，就评估 DeepSeek-TUI——它的 RLM 扇出在通用框架里复现不了；需要团队聊天平台里的 Agent，看 AstrBot 或 OpenClaw；想要图形界面、不想碰终端，就从 Cherry Studio 或 LobeHub 开始。"
+          "question": "模型别名是固定检查点吗？",
+          "answer": "未必，应记录服务元数据并关注路由公告。"
+        },
+        {
+          "question": "怎么选框架？",
+          "answer": "比较权限、沙箱、会话、集成、失败恢复与验收任务成本。"
+        },
+        {
+          "question": "上线必备控制是什么？",
+          "answer": "最小权限、schema、审批、幂等、限额、日志与失败测试。"
         }
       ]
     },
@@ -9547,28 +9699,36 @@
     "/zh/blog/what-is-minimax-h3": {
       "items": [
         {
-          "question": "MiniMax H3 可以免费商用吗？",
-          "answer": "不可以——非商业使用免费；商用只允许年营收 2,000 万美元以下的组织使用，且需署名。超过该门槛的已融资团队，在交付商业作品前需要审阅 MiniMax H3 社区许可。"
+          "question": "MiniMax H3 是什么？",
+          "answer": "它是可统一理解文本、图像、视频与音频，并生成原生立体声视频的全模态系统。"
         },
         {
-          "question": "MiniMax H3 会生成音频吗？",
-          "answer": "会。H3 在与视频同一次前向中原生生成 32 kHz 立体声，由预测视觉潜变量的同一个 transformer 驱动。参考音频也可以复用，但音频不能作为唯一输入——它必须伴随至少一张图片或一段视频参考。"
+          "question": "H3 完全开源吗？",
+          "answer": "不是。H3-Base 权重可按 MiniMax 社区许可下载，完整托管流程还包含其他模块。"
         },
         {
-          "question": "我能在本地跑 MiniMax H3 吗？",
-          "answer": "能用 SGLang、vLLM、diffusers 或 ComfyUI 在本地跑 H3-Base，推荐四卡 GPU 配置。开放发布覆盖全注意力下的 768p 生成；H3-Context-IR 预处理模块与 2K 重生成仍仅限 API，稀疏注意力安排在后续版本。"
+          "question": "FL2VA 能做什么？",
+          "answer": "它支持文生视频及首帧、尾帧条件的音视频生成。"
         },
         {
-          "question": "MiniMax H3 和 Seedance 2.0 比怎么样？",
-          "answer": "H3 在价格上低于 Seedance（2K 每秒 $0.13，对比 Seedance 720p 约每秒 $0.24 的第三方估算），自带原生立体声，而且开放权重。Seedance 在电影张力与高冲击动作场面上保持优势；需要 4K 的团队应改看 Kling 3.0 或 Veo 3.1。"
+          "question": "Ref2VA 能做什么？",
+          "answer": "它使用文本加参考图片、视频或音频控制生成。"
         },
         {
-          "question": "FL2VA 和 Ref2VA 两个检查点有什么区别？",
-          "answer": "FL2VA 覆盖文本转音视频，以及首/尾帧转视频（零、一或两张输入图）。Ref2VA 负责带混合输入的参考转视频——单次请求最多 9 张图、3 段视频、3 个音频文件，总量上限 12 个文件。"
+          "question": "官方输出规格是什么？",
+          "answer": "模型卡列出 4–15 秒、24 FPS，通过重生成到 2K，并输出 32 kHz 立体声。"
         },
         {
-          "question": "MiniMax H3 的主要局限有哪些？",
-          "answer": "没有 4K 路径——2K 是天花板，对要影院或广电级交付的团队是硬约束。高张力、高冲击镜头弱于 Seedance，这是它稳定优先设计的代价。极小文字与极繁复细节仍可能崩坏，任何单次生成都要过一遍 QA。它的指令遵从激进、偏「字面」，忠实执行多于发挥性诠释；而且要在本地复现托管工作流的完整 2K 质量，仍依赖 Context-IR 的 API。"
+          "question": "托管 H3 多少钱？",
+          "answer": "当前 768p 每秒 0.08 美元、2K 每秒 0.13 美元，部分输入与重生成另计。"
+        },
+        {
+          "question": "怎么比较 H3？",
+          "answer": "用同一素材比较合格视频成本、连续性、运动、音画同步与重生成率。"
+        },
+        {
+          "question": "商用前应检查什么？",
+          "answer": "核对最新社区许可及地区、营收等适用条件。"
         }
       ]
     },

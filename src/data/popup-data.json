@@ -392,12 +392,12 @@
     },
     "codex-harness-open-source": {
       "en": {
-        "title": "OpenAI's agent runtime, open-sourced",
-        "body": "A harness is infrastructure; the routines you schedule on top are yours to keep."
+        "title": "Codex opens the harness, not the model",
+        "body": "Choose exec, SDK, or app-server by lifecycle needs; inference and managed services remain separate."
       },
       "zh": {
-        "title": "开源的 Codex Harness",
-        "body": "Harness 是地基，日程上排出来的例行流程才是你的资产。"
+        "title": "Codex 开放的是框架，不是模型",
+        "body": "按生命周期选择 exec、SDK 或 app-server；推理与托管服务仍然分开。"
       }
     },
     "context-engineering-for-ai-agents": {
@@ -432,12 +432,12 @@
     },
     "deepseek-agent-function-calling": {
       "en": {
-        "title": "Function calling, hands-on",
-        "body": "Once tools are callable, running them on a schedule is the natural next step."
+        "title": "Tool calls need an executor and guardrails",
+        "body": "The model emits tool calls; the client or harness implements MCP, permissions, execution, and approval. Treat reasoning fields as debug data, not audit evidence."
       },
       "zh": {
-        "title": "Function Calling 实操",
-        "body": "工具能被调用之后，下一步自然是按日程自动调用。"
+        "title": "工具调用还需要执行器与护栏",
+        "body": "模型只发出工具调用；MCP、权限、执行与审批由客户端或框架实现。推理字段可用于调试，不能替代审计证据。"
       }
     },
     "deepseek-agent-vs-claude-code": {
@@ -542,22 +542,22 @@
     },
     "gemini-3-7-flash": {
       "en": {
-        "title": "Gemini 3.7 Flash, at half price",
-        "body": "Coding gains plus a price cut — good timing for always-on agents."
+        "title": "Test 3.7 before replacing it",
+        "body": "Compare 3.7 and 3.8 on accepted-task cost, p95 latency, tool recovery, and rollback—not one prompt."
       },
       "zh": {
-        "title": "半价的 Gemini 3.7 Flash",
-        "body": "编码变强还降价，对常驻 Agent 来说时机刚刚好。"
+        "title": "替换 3.7 前先做回放",
+        "body": "用合格任务成本、p95 延迟、工具恢复和回退能力比较 3.7 与 3.8。"
       }
     },
     "gemini-3-8-flash": {
       "en": {
-        "title": "Gemini 3.8 Flash: the agent workhorse",
-        "body": "1M context and DeepSWE numbers — bench-tested before you commit routines to it."
+        "title": "Route 3.8 by task difficulty",
+        "body": "Run low and medium effort on the same workload; reserve high for failures where deeper verification pays."
       },
       "zh": {
-        "title": "Gemini 3.8 Flash：干活主力",
-        "body": "1M 上下文与 DeepSWE 成绩，交给例行任务前先看实测。"
+        "title": "按任务难度路由 3.8",
+        "body": "同一任务先测 low 与 medium，只有深度校验值得时才把失败项升到 high。"
       }
     },
     "genspark-ai-pricing": {
@@ -592,12 +592,12 @@
     },
     "glm-5-3": {
       "en": {
-        "title": "GLM-5.3's coding jump, checked",
-        "body": "Official benchmarks against independent scores, before you trust it with standing tasks."
+        "title": "Verify GLM-5.3 weights before self-hosting",
+        "body": "Confirm downloadable artifacts and license terms before comparing a self-hosted route with the hosted API and Coding Plan."
       },
       "zh": {
-        "title": "GLM-5.3 的编码跃升核实",
-        "body": "官方跑分与第三方实测都看完，再放心把常驻任务交给它。"
+        "title": "自托管前先核验 GLM-5.3 权重",
+        "body": "确认可下载工件与许可证条款，再把自托管路径与托管 API、Coding Plan 做比较。"
       }
     },
     "google-calendar-vs-apple-calendar": {
@@ -772,12 +772,12 @@
     },
     "how-to-build-deepseek-agent": {
       "en": {
-        "title": "Build a DeepSeek agent, step by step",
-        "body": "Model selection and tool wiring included — the execution cadence comes from your calendar."
+        "title": "Build a bounded DeepSeek agent loop",
+        "body": "Start with current model names, least-privilege tools, stop conditions, idempotency, and logs."
       },
       "zh": {
-        "title": "手把手建 DeepSeek Agent",
-        "body": "选型与工具接线都教了，执行节奏由你的日程决定。"
+        "title": "构建有边界的 DeepSeek Agent 循环",
+        "body": "从当前模型名、最小权限工具、停止条件、幂等与日志开始。"
       }
     },
     "how-to-use-obsidian-with-ai-agent": {
@@ -902,12 +902,12 @@
     },
     "minimax-h3-max-infinite-ai-livestream": {
       "en": {
-        "title": "Video generated faster than playback",
-        "body": "H3 Max Live on fal renders streams quicker than real time — use cases inside."
+        "title": "Load-test the stream, not one clip",
+        "body": "Prove buffer depth, acceptance yield, moderation, kill switch, and 24/7 cost over an hours-long run."
       },
       "zh": {
-        "title": "比播放还快的视频生成",
-        "body": "fal 上的 H3 Max Live 跑赢实时，玩法都在文中。"
+        "title": "压测直播管线，而非单条视频",
+        "body": "用数小时测试验证缓冲、通过率、审核、紧急停止和 24/7 完整成本。"
       }
     },
     "no-code-ai-agent-builder": {
@@ -1072,12 +1072,12 @@
     },
     "what-is-deepseek-agent": {
       "en": {
-        "title": "Four DeepSeek agent archetypes",
-        "body": "Native CLI through workspace builds — each with different scheduling needs."
+        "title": "A DeepSeek model is not the whole agent",
+        "body": "The harness, tools, permissions, state, approvals, and recovery determine what the system can safely do."
       },
       "zh": {
-        "title": "DeepSeek Agent 的四种形态",
-        "body": "从原生 CLI 到工作区构建，各自的调度需求不一样。"
+        "title": "DeepSeek 模型不等于完整 Agent",
+        "body": "框架、工具、权限、状态、审批与恢复机制共同决定系统能安全做什么。"
       }
     },
     "what-is-doubao-work": {
@@ -1102,12 +1102,12 @@
     },
     "what-is-minimax-h3": {
       "en": {
-        "title": "MiniMax H3: text to 2K video",
-        "body": "Open-weight omni-modal generation, capabilities and limits catalogued."
+        "title": "MiniMax H3: verify the full workflow",
+        "body": "Check the official model card, community license, hosted modules, and complete per-clip cost."
       },
       "zh": {
-        "title": "MiniMax H3：从文本到 2K 视频",
-        "body": "开放权重的全模态生成，能力与边界都列好了。"
+        "title": "MiniMax H3：核对完整工作流",
+        "body": "采用前核对官方模型卡、社区许可、托管模块与每条成片的完整成本。"
       }
     },
     "what-is-obsidian-vault": {
@@ -1422,12 +1422,12 @@
     },
     "kimi-k3-open-frontier-model": {
       "en": {
-        "title": "Kimi K3 — a 2.8T open model changes agentic coding",
-        "body": "What an open frontier model means for the tools you already run — and the coding workflows it unlocks."
+        "title": "Separate K3 API from K3 weights",
+        "body": "Benchmark kimi-k3 for simplicity; assess the Kimi K3 License, 64+ accelerator guidance, and operations before self-hosting."
       },
       "zh": {
-        "title": "Kimi K3：2.8T 开源模型改变 Agentic Coding",
-        "body": "开源旗舰模型对你手头工具链意味着什么——以及它解锁的编码工作流。"
+        "title": "分开评估 K3 API 与权重",
+        "body": "API 先测易用性；自托管前审查许可证、64+ 加速卡建议和完整运维成本。"
       }
     },
     "markdown-cheat-sheet": {

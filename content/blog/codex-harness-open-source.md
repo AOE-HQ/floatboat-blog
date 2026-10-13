@@ -10,6 +10,8 @@ locale: "en"
 draft: false
 ---
 
+**Information checked October 13, 2026.** Open-source components, product access, and model availability change independently; confirm the linked OpenAI repositories and documentation before embedding the harness.
+
 **TL;DR**
   * **Codex Harness** is the execution layer behind Codex App, CLI, and IDE experiences — the agent loop that manages context, tool calls, sandboxing, approvals, and multi-turn state. OpenAI published it as a **platform** on August 19, 2026 in [Codex as a platform](https://developers.openai.com/blog/codex-as-a-platform), with source in `openai/codex` on GitHub under Apache 2.0.
 
@@ -29,9 +31,7 @@ On **August 19, 2026** , OpenAI's developer blog shifted the public story from "
 
 That repositioning matters because the Codex CLI had already been on GitHub since early 2025. The August announcement was not a surprise code drop — it was **platform documentation and go-to-market** : app-server as a stable integration target, sample apps like **Relay** (a fictional shipment dashboard with approval-gated rebooking), and named enterprise embeds (Cisco App Builder on Cloud Control, Thrive Holdings / Crete tax-prep workflow).
 
-The strategic read, echoed across developer commentary, is familiar: **give away the runtime, meter the inference.** Harness code is auditable and forkable; every agent turn still routes through OpenAI models and billing. Anthropic's Claude Agent SDK and MCP play a parallel game on a different stack — closed Claude Code versus open Codex harness with optional third-party frontends.
-
-Community reaction on Hacker News and other developer forums often highlights that contrast: OpenAI's harness is inspectable Rust, without the signed-build restrictions some closed agents use, and OpenAI has publicly tolerated third-party harnesses (OpenCode, pi) for subscribers in ways competitors have not. That policy detail matters if your organization standardizes on **one subscription** but wants **multiple agent UIs** — a common pattern in enterprises that split IDE, ops, and calendar tooling across vendors.
+The official boundary is narrower and more useful: OpenAI publishes the CLI, app-server, and SDK as open-source components, while model access and managed services remain separate. Subscription use, third-party clients, authentication, and token sharing must follow the applicable current OpenAI documentation rather than comparisons inferred from forum discussion.
 
 ## 2\. What Codex Harness Actually Is
 
@@ -89,8 +89,6 @@ The primary repository is [openai/codex](https://github.com/openai/codex) on Git
 
 **Codex Security** is a sibling open-source line (`openai/codex-security`) for vulnerability scanning workflows — same harness philosophy (open tooling, paid model access) applied to security review rather than feature development. It illustrates how OpenAI is productizing multiple agent shapes on one runtime rather than treating Codex as terminal-only coding.
 
-OpenAI also supports **third-party harnesses** with Codex credentials in some programs (e.g. OpenCode, pi) — a contrast with stricter subscription binding elsewhere in the industry.
-
 ### 4.1 Enterprise Embeds Named in the Platform Post
 
 OpenAI's August announcement is not purely theoretical. Public examples cited in the platform post include:
@@ -111,7 +109,7 @@ The platform post cites an internal benchmark result that is worth quoting preci
 
 Those figures are **OpenAI-reported** on a specific benchmark suite; treat them as directional evidence that compaction and turn management change cost and score, not as guarantees in your production repo. They align with the broader industry lesson from other agent stacks — including DeepSeek's execution layer — that the loop around the model can dominate both bill and reliability.
 
-Independent evaluators have not, to our knowledge, reproduced the exact ARC-AGI-3 harness ablation in public writeups as of late August 2026 — so the sixfold token claim should be tracked as **vendor science** , useful for prioritization ("invest in compaction before chasing the next model tier") rather than as a contractual SLA. The qualitative takeaway still holds: when GPT-5.6 Sol, Terra, and Luna share a generation but differ in price, **harness efficiency** determines whether your calendar agent can afford Luna on every classifier and Sol only on escalation.
+Treat the ARC-AGI-3 harness ablation and token figures as OpenAI-reported results under its stated setup, not as an SLA or a general estimate for another application. Reproduce the comparison on your own tasks before assigning savings to compaction or orchestration changes.
 
 For teams already routing calendar events to tiered models — Sol for hard prep, Terra for daily work, Luna for classification — the harness layer is where **routing meets execution policy** : which tools an event-triggered agent may call, when it must ask a human before sending email, how it compacts a week of meeting notes before the next turn.
 
@@ -136,8 +134,6 @@ Calendar-driven products mirror the top row with a different control plane: the 
 <table><colgroup><col/><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p>Stack</p></th><th colspan="1" rowspan="1"><p>Open source?</p></th><th colspan="1" rowspan="1"><p>Integration model</p></th><th colspan="1" rowspan="1"><p>Model binding</p></th></tr><tr><td colspan="1" rowspan="1"><p><strong>Codex Harness</strong></p></td><td colspan="1" rowspan="1"><p>Apache 2.0 runtime</p></td><td colspan="1" rowspan="1"><p>exec / SDK / app-server</p></td><td colspan="1" rowspan="1"><p>Optimized for OpenAI; Responses API</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Claude Code</strong></p></td><td colspan="1" rowspan="1"><p>No</p></td><td colspan="1" rowspan="1"><p>Terminal/IDE product</p></td><td colspan="1" rowspan="1"><p>Anthropic models</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>DeepSeek Harness (</strong><code>dsh</code><strong>)</strong></p></td><td colspan="1" rowspan="1"><p>MIT preview</p></td><td colspan="1" rowspan="1"><p>Cordis plugin kernel</p></td><td colspan="1" rowspan="1"><p>Model-agnostic; V4-native</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Community templates</strong> (<code>codex-harnesses</code>, etc.)</p></td><td colspan="1" rowspan="1"><p>Varies</p></td><td colspan="1" rowspan="1"><p>AGENTS.md + scripts</p></td><td colspan="1" rowspan="1"><p>Not OpenAI runtime — scaffolding only</p></td></tr></table>
 
 
-
-DeepSeek shipped [DeepSeek Harness v0.1](/blog/what-is-deepseek-harness) in August 2026 as a **model-native, pluginized** answer to execution-layer ownership. Codex Harness is **vertical** : deeply integrated with OpenAI's Responses API, compaction endpoints, and subscription surface. Anthropic's Claude Code remains the polished closed product for teams already standardized on Claude models — but OpenAI's open runtime plus third-party harness compatibility is a deliberate distribution bet.
 
 If you are building **multi-vendor** agent infrastructure, treat model comparison and harness comparison as two different decisions. Floatboat sidesteps part of that tradeoff by shipping multiple model families built-in — OpenAI tiers, DeepSeek, Claude, Gemini, and others — while owning calendar orchestration above any single harness. The harness you embed is a long-lived infrastructure bet; the model roster can rotate quarterly without rewriting your own product-level approval UX.
 

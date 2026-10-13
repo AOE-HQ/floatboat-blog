@@ -10,6 +10,8 @@ locale: "zh"
 draft: false
 ---
 
+**信息核对截至 2026 年 10 月 13 日。** 开源组件、产品权限和模型可用范围会分别变化，嵌入框架前请核对文中的 OpenAI 仓库与官方文档。
+
 **TL;DR**
   * **Codex Harness**是 Codex App、CLI 与 IDE 体验背后的执行层——负责管理上下文、工具调用、沙箱、审批与多轮状态的 Agent 循环。OpenAI 于 2026 年 8 月 19 日以**平台**形式发布（见 [Codex as a platform](https://developers.openai.com/blog/codex-as-a-platform)），源码位于 GitHub 的 `openai/codex`，采用 Apache 2.0 协议。
 
@@ -29,9 +31,7 @@ draft: false
 
 这次重新定位之所以重要，是因为 Codex CLI 早在 2025 年初就已挂在 GitHub 上。八月的公告不是一次出人意料的代码发布，而是**平台文档与上市策略**：把 app-server 定义为稳定的集成目标、提供像**Relay**这样的示例应用（一个虚构的货运看板，改签需要审批闸门），并列出具名的企业嵌入案例（Cisco Cloud Control 上的 App Builder、Thrive Holdings / Crete 的报税工作流）。
 
-开发者评论中反复出现的战略解读并不陌生：**运行时白送，推理按量收费。** Harness 代码可以审计、可以 fork；但每一轮 Agent 交互仍然走 OpenAI 的模型与计费。Anthropic 的 Claude Agent SDK 与 MCP 在不同技术栈上打着同样的牌——封闭的 Claude Code，对阵开放的 Codex Harness 加可选的第三方前端。
-
-Hacker News 等开发者论坛上的社区反应常常突出这一对比：OpenAI 的 harness 是可检查的 Rust 代码，没有某些封闭 Agent 依赖的签名构建限制；而且 OpenAI 公开允许订阅用户使用第三方 harness（OpenCode、pi），竞争对手则没有这样做。如果你的组织统一采购**一个订阅**、却想要**多个 Agent UI**，这个政策细节就很重要——把 IDE、运维和日历工具分散给多家厂商的企业，普遍存在这种形态。
+官方边界更窄，也更有用：OpenAI 把 CLI、app-server 与 SDK 列为开源组件，模型访问与托管服务仍然分开。订阅使用、第三方客户端、认证与 token sharing 必须遵循 OpenAI 当前适用文档，不能从论坛讨论或竞品比较中推断政策。
 
 ## 2\. Codex Harness 到底是什么
 
@@ -89,8 +89,6 @@ Codex Harness 不是孤岛。MCP 服务器配置存放在 `~/.codex/config.toml`
 
 **Codex Security**是一条姊妹开源线（`openai/codex-security`），面向漏洞扫描工作流——同一套 harness 哲学（工具开源、模型付费）从功能开发延伸到了安全评审。它说明 OpenAI 正在同一套运行时上产品化多种 Agent 形态，而不是把 Codex 局限为终端里的编码工具。
 
-OpenAI 还在某些计划中支持用 Codex 凭证搭配**第三方 harness**（如 OpenCode、pi）——这与业内其他地方更严格的订阅绑定形成对比。
-
 ### 4.1 平台博文点名的企业嵌入案例
 
 OpenAI 的八月公告不只是理论。平台博文中引用的公开案例包括：
@@ -111,7 +109,7 @@ OpenAI 的八月公告不只是理论。平台博文中引用的公开案例包�
 
 这些数字是**OpenAI 自报的**、来自特定的基准套件；请把它们当作方向性证据——说明压缩与轮次管理确实改变成本与得分——而不是你生产仓库里的保证。它们与其他 Agent 技术栈（包括 DeepSeek 的执行层）得出的行业共识一致：模型外围的循环，往往同时决定账单与可靠性。
 
-据我们所知，截至 2026 年 8 月下旬，公开评测中还没有独立评测方复现过完整的 ARC-AGI-3 harness 消融实验——所以「token 降至六分之一」的说法应按**厂商数据**看待：它对排定优先级有用（「在追下一代模型之前，先投入上下文压缩」），而不是合同级 SLA。定性的结论依然成立：当 GPT-5.6 Sol、Terra 与 Luna 属于同一代、却价格不同时，**harness 的效率**决定了你的日历 Agent 能否在每个分类任务上都用得起 Luna、只在升级任务上才动用 Sol。
+ARC-AGI-3 的 harness 消融与 token 数字应明确写成 OpenAI 在其设定下报告的结果，而不是 SLA 或其他应用的通用节省估计。把压缩或编排收益写进预算前，应在自己的任务上复现比较。
 
 对于已经把日历事件路由到分级模型的团队——Sol 处理高难度准备、Terra 处理日常工作、Luna 做分类——harness 层正是**路由与执行策略交汇**的地方：事件触发的 Agent 可以调用哪些工具、发邮件前何时必须询问人类、在进入下一轮之前如何压缩一周的会议纪要。
 
@@ -137,8 +135,6 @@ Symphony 是一份**规范与参考模式**，不是 app-server 的替代品。�
 <table><colgroup><col/><col/><col/><col/></colgroup><tr><th colspan="1" rowspan="1"><p>技术栈</p></th><th colspan="1" rowspan="1"><p>是否开源</p></th><th colspan="1" rowspan="1"><p>集成方式</p></th><th colspan="1" rowspan="1"><p>模型绑定</p></th></tr><tr><td colspan="1" rowspan="1"><p><strong>Codex Harness</strong></p></td><td colspan="1" rowspan="1"><p>Apache 2.0 运行时</p></td><td colspan="1" rowspan="1"><p>exec / SDK / app-server</p></td><td colspan="1" rowspan="1"><p>为 OpenAI 优化；Responses API</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Claude Code</strong></p></td><td colspan="1" rowspan="1"><p>否</p></td><td colspan="1" rowspan="1"><p>终端/IDE 产品</p></td><td colspan="1" rowspan="1"><p>Anthropic 模型</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>DeepSeek Harness</strong>（<code>dsh</code>）</p></td><td colspan="1" rowspan="1"><p>MIT 预览版</p></td><td colspan="1" rowspan="1"><p>Cordis 插件内核</p></td><td colspan="1" rowspan="1"><p>模型无关；V4 原生</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>社区模板</strong>（<code>codex-harnesses</code> 等）</p></td><td colspan="1" rowspan="1"><p>各不相同</p></td><td colspan="1" rowspan="1"><p>AGENTS.md + 脚本</p></td><td colspan="1" rowspan="1"><p>非 OpenAI 运行时——仅脚手架</p></td></tr></table>
 
 
-
-DeepSeek 于 2026 年 8 月发布了 [DeepSeek Harness v0.1](/zh/blog/what-is-deepseek-harness)，作为**模型原生、插件化**的执行层自主方案。Codex Harness 是**纵向**的：与 OpenAI 的 Responses API、压缩端点与订阅体系深度集成。Anthropic 的 Claude Code 依然是已标准化在 Claude 模型上的团队会选择的精致封闭产品——但 OpenAI 的开放运行时加上第三方 harness 兼容，是一次刻意的分发押注。
 
 如果你在构建**多厂商**的 Agent 基础设施，请把模型对比与 harness 对比当成两个不同的决策。Floatboat 通过内置多家模型家族绕开了部分取舍——OpenAI 分级模型、DeepSeek、Claude、Gemini 等——同时在任何单一 harness 之上自持日历编排。你嵌入的 harness 是长期的基础设施赌注；模型名册可以每季度轮换，而不必重写你产品层面的审批 UX。
 
