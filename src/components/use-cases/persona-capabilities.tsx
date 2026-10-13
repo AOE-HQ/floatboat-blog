@@ -58,6 +58,24 @@ export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData
   const isZh = page.locale === "zh";
   const items = capabilities[page.slug][page.locale];
   const lowerFirst = (value: string) => value.charAt(0).toLowerCase() + value.slice(1);
+  const contextualAnchor = (title: string) => {
+    if (isZh) {
+      if (title === "Agent 工作站") return `能持续保留${roleLabel}项目背景的 Agent 工作站`;
+      if (title === "心流模式") return `让${roleLabel}边说边修改成果的心流模式`;
+      if (title === "AI 文件整理器") return `在本机整理${roleLabel}资料的 AI 文件整理器`;
+      if (title === "AI 日程助理") return `把日程变成${roleLabel}工作入口的 AI 日程助理`;
+      if (title === "FloatIM") return `连接${roleLabel}、团队与 Agent 的 FloatIM`;
+      if (title === "Skills Marketplace") return `为${roleLabel}提供可复用流程的 Skills Marketplace`;
+      return `让${roleLabel}在同一项目切换模型的多模型能力`;
+    }
+    if (title === "Agent Workspace") return `an Agent Workspace that preserves ${roleLabel} project context`;
+    if (title === "Flow Mode") return `Flow Mode for revising ${roleLabel} deliverables while speaking`;
+    if (title === "AI File Organizer") return `an AI File Organizer for local ${roleLabel} files`;
+    if (title === "AI Scheduling Assistant") return `an AI scheduling assistant that prepares ${roleLabel} work`;
+    if (title === "FloatIM") return `FloatIM threads connecting ${roleLabel}, teams, and agents`;
+    if (title === "Skills Marketplace") return `reusable ${roleLabel} workflows from the Skills Marketplace`;
+    return `multiple AI models inside one ${roleLabel} project`;
+  };
 
   return <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -72,7 +90,7 @@ export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-muted)]">0{index + 1}</p>
           <h3 className="mt-3 font-serif text-3xl sm:text-4xl">{title}</h3>
           <div className="mt-5 max-w-xl space-y-3 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
-            <p>{index < 2 ? (isZh ? <>使用 <Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{title}</Link>，{description}</> : <>Use <Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{title}</Link> to {lowerFirst(description)}</>) : description}</p>
+            <p>{index < 2 ? (isZh ? <><Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{contextualAnchor(title)}</Link>，{description}</> : <><Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{contextualAnchor(title)}</Link> can {lowerFirst(description)}</>) : description}</p>
             <p>{supportingCopy[page.locale][title as keyof typeof supportingCopy[typeof page.locale]]}</p>
           </div>
         </div>
