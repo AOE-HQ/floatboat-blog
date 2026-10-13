@@ -3,7 +3,7 @@ import Link from "next/link";
 import capabilities from "@/data/use-cases/capabilities.json";
 import type { PersonaPageData } from "@/lib/use-cases/persona-page-schema";
 
-export function PersonaCapabilities({ page }: { page: PersonaPageData }) {
+export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData; roleLabel: string }) {
   const isZh = page.locale === "zh";
   const items = capabilities[page.slug][page.locale];
 
@@ -11,7 +11,7 @@ export function PersonaCapabilities({ page }: { page: PersonaPageData }) {
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
       <div className="mx-auto mb-16 max-w-3xl text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.2em]">{isZh ? "完成工作的能力组合" : "A capability stack for the work"}</p>
-        <h2 className="mt-3 font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{isZh ? `围绕${page.breadcrumb}的实际工作，而不是堆叠功能。` : `Capabilities selected around the real work of ${page.breadcrumb}.`}</h2>
+        <h2 className="mt-3 font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{isZh ? `适合${roleLabel}的 Floatboat 能力` : `Floatboat capabilities for ${roleLabel}`}</h2>
         <p className="mt-5 text-lg leading-7 text-[var(--ob-color-text-subtle)]">{isZh ? "工作站保存上下文，其他能力负责输入、执行、协作与交付。最终判断和重要行动仍由人控制。" : "The workspace holds context while supporting capabilities handle input, execution, collaboration, and delivery. People retain consequential decisions."}</p>
       </div>
 
