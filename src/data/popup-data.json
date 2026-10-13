@@ -142,22 +142,22 @@
     },
     "ai-follow-up-automation": {
       "en": {
-        "title": "Follow-ups that fire themselves",
-        "body": "Turn decisions from the last call into owned, dated tasks before the next one lands."
+        "title": "From meeting evidence to reviewed follow-up",
+        "body": "Turn verified decisions into owned tasks and drafts, with explicit destinations and approval before anything is sent."
       },
       "zh": {
-        "title": "自己会响的跟进任务",
-        "body": "上一通会上的每个决定，自动带上负责人和截止日落进日程。"
+        "title": "从会议证据到可复核的跟进",
+        "body": "把已核验决议转成带负责人的任务与草稿，明确写入位置，并在发送前保留审批。"
       }
     },
     "ai-follow-up-email-opus-4-8": {
       "en": {
-        "title": "Post-meeting emails, already drafted",
-        "body": "See what a follow-up looks like when your calendar queues it instead of your memory."
+        "title": "A follow-up draft grounded in the meeting",
+        "body": "Use transcript evidence to structure decisions and next steps, then review recipients, dates, and commitments before sending."
       },
       "zh": {
-        "title": "回到工位前，跟进邮件已经写好",
-        "body": "由日程排队而不是靠记忆催办的会后再跟进，长这样。"
+        "title": "以会议证据为准的跟进草稿",
+        "body": "依据逐字稿整理决议与下一步，发送前复核收件人、日期和承诺。"
       }
     },
     "ai-meeting-preparation": {
@@ -172,12 +172,12 @@
     },
     "ai-scheduling-agent": {
       "en": {
-        "title": "Four generations of scheduling agents",
-        "body": "Generation four doesn't just book — it prepares, attends, and follows through."
+        "title": "What an AI scheduling agent can actually do",
+        "body": "Compare booking, calendar optimization, contextual assistance, and controlled actions without treating the four generations as an industry standard."
       },
       "zh": {
-        "title": "日程 Agent 的四代演进",
-        "body": "第四代不只会订会议，还管会前准备、会中跟进与收尾。"
+        "title": "AI 日程 Agent 到底能做什么",
+        "body": "比较预约、日历优化、上下文协助与受控动作，不把“四代”框架误写成行业标准。"
       }
     },
     "ai-tools-for-business-automation-2026": {
@@ -212,12 +212,12 @@
     },
     "ai-workspace-agents": {
       "en": {
-        "title": "Workspace agents, in plain language",
-        "body": "They read your files and your schedule — which is why they can act, not merely answer."
+        "title": "Workspace agents, defined by evidence",
+        "body": "Look for durable state, approved tools, controlled actions, and reviewable outputs—not an agent label alone."
       },
       "zh": {
-        "title": "工作区 Agent 白话指南",
-        "body": "读得了文件也读得了日历，所以它们能动手，不只是会答。"
+        "title": "用可验证条件定义工作区 Agent",
+        "body": "看持久状态、获准工具、受控动作和可复核产物，而不是只看“Agent”标签。"
       }
     },
     "automate-tiktok-shop-research-fastmoss-floatboat": {
@@ -1302,12 +1302,12 @@
     },
     "ai-file-organizer-windows": {
       "en": {
-        "title": "AI file organizers that run offline on Windows",
-        "body": "Local processing keeps files on your disk. Which Windows tools actually deliver it — and what they still miss."
+        "title": "Verify what “local” means on Windows",
+        "body": "Check model execution, network traffic, OneDrive placeholders, preview, and restore evidence before giving an organizer folder access."
       },
       "zh": {
-        "title": "Windows 上能离线跑的 AI 文件整理",
-        "body": "哪些 Windows 整理工具真正离线工作，还缺什么——一篇讲清。"
+        "title": "先核验 Windows 上的“本地”含义",
+        "body": "授权目录前，检查模型位置、网络流量、OneDrive 占位符、预览与恢复证据。"
       }
     },
     "batch-convert-markdown-files": {

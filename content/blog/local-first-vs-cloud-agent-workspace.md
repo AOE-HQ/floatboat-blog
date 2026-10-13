@@ -16,6 +16,8 @@ That distinction changes the buying decision. A desktop agent can call a cloud m
 
 The short answer: choose local-first when direct access to files, portability, and operator control matter most. Choose cloud when work must continue without a particular computer, be shared across a team, or react to schedules and events around the clock. Choose hybrid only after documenting which data and actions may cross the boundary.
 
+Product documentation and availability claims were checked on October 13, 2026.
+
 ## The difference is the workspace boundary
 
 A **local-first agent workspace** treats your computer and file system as the primary working environment. The application may still call cloud models, but project state and artifacts remain anchored in folders you can inspect and back up.

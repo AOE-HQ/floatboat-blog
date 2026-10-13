@@ -12,7 +12,7 @@ draft: false
 
 OpenAI DevDay 2026, held on September 29, was not mainly a model launch. Its more than 20 announcements connect into an operating stack: persistent agents receive work, models reason, Codex and APIs execute, plugins connect outside software, Space and Pages hold artifacts, and identity and marketplace products distribute access.
 
-The distinction between *announced* and *available* is essential. Some products shipped across all plans; some require specific plans, administrators, regions, or clients; Decisions API is now a public beta; collaborative slides and Private Inference remain future-facing. This recap uses OpenAI’s official material and reflects status checked on October 10, 2026—not just keynote wording.
+The distinction between *announced* and *available* is essential. Availability can depend on a plan, administrator, region, client, rollout, or contract. This recap uses current OpenAI product documentation and reflects status checked on October 13, 2026—not just keynote wording.
 
 ## Why the Count Is 25, Not 21
 
@@ -22,23 +22,23 @@ The count matters less than the structure. DevDay 2026 was not a bag of unrelate
 
 ## 1. Persistent Work: Dots, GPT-6.1 Sol, Ultrafast, and Private Intelligence
 
-**Dots** were the center of the keynote: always-on agents that learn what matters to a user and take ongoing responsibility rather than waiting for one request at a time. They are available on Pro and Business Premium in eligible markets; Enterprise, Edu, and Healthcare workspaces can try the beta only when an administrator enables it. OpenAI says future directions include texting and teams of specialist dots, but those should not be described as generally available features.
+**Dots** were the center of the keynote: persistent agents that can continue work between conversations. OpenAI's current [Dots documentation](https://learn.chatgpt.com/docs/dots) says rollout is gradual and lists plan, age, region, and administrator conditions; eligibility does not guarantee immediate access.
 
-**GPT-6.1 Sol** supplies the economic engine. OpenAI prices it at $2 per million input tokens and $10 per million output tokens—one-fifth of Astra's standard rates—while reporting near-Astra results on coding, computer use, document work, and automation. Our separate [GPT-6.1 Sol analysis](/blog/gpt-6-1-sol) examines the benchmarks and their limits.
+**GPT-6.1 Sol** supplies the lower-cost model layer. Its [official model card](https://developers.openai.com/api/docs/models/gpt-6.1-sol) lists a 1.05-million-token context window, supported tools, and current API pricing, and describes performance as near Astra rather than publishing a universal replacement claim. Our separate [GPT-6.1 Sol analysis](/blog/gpt-6-1-sol) examines the positioning and its limits.
 
-**Ultrafast** is a premium processing tier rather than a new model. OpenAI reports up to 300 tokens per second, as much as 8× standard speed in Codex and 6× in the API. Astra Ultrafast launched at DevDay. GPT-6.1 Sol Ultrafast, originally announced as “coming soon,” became available through the Responses API on October 8, with separate premium pricing and rate limits. The [API changelog](https://developers.openai.com/api/docs/changelog) is the better source for post-keynote state changes.
+**Ultrafast** is a premium processing tier rather than a new model. The [Ultrafast guide](https://developers.openai.com/api/docs/guides/ultrafast-mode) documents separate rate limits and higher pricing; the [API changelog](https://developers.openai.com/api/docs/changelog) records GPT-6.1 Sol Ultrafast reaching the Responses API on October 8. Actual latency gains depend on the workload and connection, so the article does not treat keynote speed figures as a guaranteed throughput rate.
 
-**Private Intelligence** addresses the enterprise trust layer. Zero Data Retention with Private Safety Processing is designed to run automated safety review without OpenAI personnel seeing the underlying content. Private Inference, planned for the fall, adds confidential computing and verifiable controls. The second product is a preview, not a shipping guarantee.
+**Private Intelligence** addresses the enterprise trust layer. OpenAI's [Private Safety Processing guide](https://developers.openai.com/api/docs/guides/private-safety-processing) describes automated safety review in a hardware-attested runtime, customer-controlled storage, and bounded signals leaving the protected review. It also spells out eligibility, storage, key, and retention responsibilities; this is not a blanket promise that every OpenAI workload is private or zero-retention.
 
 ## 2. Codex Becomes a Cloud Development Environment
 
-**Codex in the cloud** allows development tasks to continue with the laptop closed and be accessed from a phone or other device. Reusable environments give a team a shared setup with approved settings and permissions.
+**Codex in the cloud** allows development tasks to continue with the laptop closed and be accessed from web, mobile, or desktop. The [cloud environments guide](https://learn.chatgpt.com/docs/environments/cloud-environments) documents reusable repository, dependency, tool, and access setups, with each new task receiving an isolated workspace.
 
-**The refreshed Codex CLI** adds two-way voice, an `/agents` view for delegation and monitoring, better prompt editing and session resumption, worktree improvements, and a cleaner terminal interface. This is the local control surface for the same distributed execution model.
+**The Codex CLI** remains the local terminal control surface. Its current [command reference](https://learn.chatgpt.com/docs/cli/reference) is the source of truth for stable, beta, and experimental commands, including cloud, resume, review, sandbox, and plugin operations; capabilities should be checked there rather than inferred from a keynote demo.
 
-**Code Review** brings summaries, diffs, and questions about changes into the ChatGPT desktop experience before feedback reaches GitHub or GitLab. Automatic reviews can run in the cloud while the developer is away.
+**Code Review** can review uncommitted work, a base-branch diff, or a commit. The [developer command reference](https://learn.chatgpt.com/docs/developer-commands) documents both interactive `/review` and non-interactive `codex review`, including mutually exclusive review targets.
 
-**Codex Security Cloud** scans repositories on demand or on a schedule, investigates and deduplicates findings, and prepares fixes. It includes access to Daybreak Blue models without requiring a separate Daybreak application. Availability is limited to eligible paid and institutional plans.
+**Codex Security Cloud** scans connected GitHub repositories in Codex cloud and lets users review findings and proposed patches. The current [Security Cloud setup guide](https://learn.chatgpt.com/docs/security/setup) describes it as a separate plugin and tells users to confirm workspace access; it should not be presented as universally available.
 
 Taken together, these are not four convenience features. They turn Codex from a terminal assistant into a hosted development environment with reusable infrastructure, parallel workers, review, and security operations. The open-source runtime behind the product remains a separate question, covered in our [Codex Harness analysis](/blog/codex-harness-open-source).
 
@@ -46,41 +46,39 @@ Taken together, these are not four convenience features. They turn Codex from a 
 
 **Decisions API** focuses Luna on questions with a finite set of allowed answers. Applications can feed it text or images and receive a probability, fixed-set choice, score, or next-action decision. It launched in limited preview, then entered public beta on October 6. OpenAI’s [current Decisions documentation](https://developers.openai.com/api/docs/guides/decisions) says `gpt-6-luna` is the only supported model and GA is expected later; public beta is not GA.
 
-**Agents API with Computer Use** adds hosted environments in which agents can operate software through its interface. It also incorporates multi-agent work, tool search, tool calling, and context compaction. OpenAI manages the execution infrastructure, reducing the amount of orchestration a developer must build.
+**Agents API with Computer Use** adds durable sessions around an OpenAI-managed Codex harness. The [Agents API overview](https://developers.openai.com/api/docs/guides/agents-api/overview) separates the agent, environment, session, and events, while the [Computer Use guide](https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use) documents an OpenAI-hosted browser and explicit website-access and sign-in handling.
 
-**Bedrock Managed Agents, powered by OpenAI** brings the same general capabilities into AWS with native resource integration and customer-specific configuration. For organizations standardized on AWS governance, this is a different deployment path rather than another end-user agent.
+**Bedrock Managed Agents, powered by OpenAI** adapts the agent and session concepts for AWS. OpenAI's [comparison guide](https://developers.openai.com/api/docs/guides/agents-api/bedrock-managed-agents) makes the boundary explicit: Amazon Bedrock hosts the harness and inference, while AgentCore Runtime or self-hosted compute runs commands and tools.
 
 The three products occupy different layers: Decisions API makes narrow choices, Agents API runs open-ended work, and Bedrock packages agent execution for AWS. Combining them under one “agent API” label would hide the actual architecture.
 
 ## 4. Plugins Turn ChatGPT Into an Application Platform
 
-**Plugin Extensions** let developers add sidebar entries, interactive panels, composer entry points, and file viewers to ChatGPT. A plugin can now have a durable working surface rather than only returning text from a tool call.
+**Plugin Extensions** let developers add sidebar apps, conversation panels, composer mentions, settings, and file viewers to supported ChatGPT surfaces. The [official extensions reference](https://developers.openai.com/plugins/build/extensions) also marks surface-specific limitations and coming-soon availability.
 
-**Improved creation, submission, and discovery** includes Plugin Creator, clearer review feedback, easier updates, and recommendations inside relevant conversations. **Sites can host plugins**, allowing a workspace to share an application while each person uses their own data connections and permissions. **MCP Events** allow changes in connected services to trigger automations rather than waiting for a prompt.
+**Plugin packaging and discovery** now use a shared public directory across supported ChatGPT and Codex surfaces; the [packaging guide](https://developers.openai.com/plugins/build/plugins) distinguishes that directory from local or repository marketplaces. **Sites can use plugins** with each viewer's own connected permissions, as documented in the [Sites guide](https://learn.chatgpt.com/docs/sites). **MCP Events** let ChatGPT subscribe to supported service events through webhooks; the [MCP Events specification](https://developers.openai.com/plugins/build/mcp-events) documents supported surfaces, lifecycle methods, and current protocol constraints.
 
 These four releases are best read as one platform move: build, render, trigger, review, and distribute third-party software inside ChatGPT. The mechanics and security implications deserve their own treatment, so our [OpenAI Plugins guide](/blog/openai-plugins-explained) covers them without repeating the entire DevDay catalog.
 
-## 5. Shared Work: Space, Pages, Slides, Teams, and Meetings
+## 5. Shared Work: Space, Pages, Teams, and Meetings
 
-**[ChatGPT Space](/blog/what-is-chatgpt-space)** gives a team, ChatGPT, and a dot a shared home for project files and context. It is available on desktop and web for Pro, Business, and Enterprise; mobile can find, read, and share pages, while mobile creation and editing are still coming.
+**[ChatGPT Space](/blog/what-is-chatgpt-space)** brings pages, files, and shared work together. The current [Space guide](https://learn.chatgpt.com/docs/space) explains spaces, page sharing, connected sources, and permission inheritance without assuming every account has identical availability.
 
-**Pages** are collaborative documents where people and agents can write, research, generate charts and images, and build visualizations. **Collaborative slides**, due in the weeks after DevDay, add concurrent editing, comments, presentation, and export to PowerPoint or Google Slides.
+**Pages** are editable documents for notes, plans, research, generated media, and visualizations. The [Pages guide](https://learn.chatgpt.com/docs/space/pages) documents direct editing, comments, subpages, file references, prompts, and Agent instructions. Slides should be treated according to the current product UI and documentation, not a keynote delivery estimate.
 
-**Create teams and share tasks** introduces shared pages, slides, plugins, spreadsheets, and recurring team work that can run on a schedule or in response to events. **@ChatGPT in Slack and Microsoft Teams** moves the assistant into existing channels, threads, and direct messages, with tools governed by workspace and user permissions.
+**Teams and Team Tasks** can run scheduled or supported event-triggered work with a team service account and configured connections. The [team administration guide](https://learn.chatgpt.com/docs/enterprise/teams) documents the required permissions and makes clear that tasks do not inherit a creator's personal memory or chat history. The separate [Slack and Teams guide](https://learn.chatgpt.com/docs/enterprise/chatgpt-slack-and-teams) explains the service-account and workspace-connection boundary.
 
-The **Meetings plugin** records notes, creates personalized summaries and action items, and saves them into ChatGPT Space. OpenAI says audio is deleted after notes are ready and cannot be replayed. The [current Meetings documentation](https://help.openai.com/en/articles/20001546-the-meetings-plugin-in-chatgpt) lists a macOS beta for Pro and Business, a limited Enterprise alpha, and Windows, iOS, and Android as coming later.
+The **Meetings plugin** can create meeting notes and action items for ChatGPT Space. Because access and platform support can change, readers should verify the current plugin listing and workspace settings rather than rely on launch-day platform claims.
 
-This collaboration layer is the connective tissue of the event. Dots need durable context; agents need somewhere to leave artifacts; teams need to review and refine recurring work. Space, Pages, Slides, Tasks, chat integrations, and Meetings provide that shared state.
+This collaboration layer is the connective tissue of the event. Dots need durable context; agents need somewhere to leave artifacts; teams need to review and refine recurring work. Space, Pages, Team Tasks, chat integrations, and meeting notes provide that shared state.
 
 ## 6. Distribution, Identity, Subscription, and Procurement
 
-**Shareable profiles** collect a person's Sites and plugins so others can discover and reuse them. They also expose shared skills inside a workspace.
+**Sign in with ChatGPT** is an identity connection and, for supported partners, a separate permission to use eligible ChatGPT plan usage. The current [partner and permission guide](https://learn.chatgpt.com/docs/sign-in-with-chatgpt) lists participating apps and stresses that signing in and using plan allowance are distinct grants.
 
-**Sign in with ChatGPT** turns the account into an identity and usage layer for other tools. At launch, eligible Plus and Pro users can apply plan usage across 16 partners including Devin, Notion, Vercel, T3, OpenClaw, and Dactyl, while users retain control over how much each partner can consume.
+**Pro 500** is one of the current Pro subscription levels and includes Ultrafast access. OpenAI's [pricing page](https://learn.chatgpt.com/docs/pricing) is the correct source for current price, plan inclusions, usage rules, and regional or workspace conditions; API token pricing is separate.
 
-**Pro 500** offers 25× the Plus usage allowance and includes Ultrafast. The plan makes OpenAI's most demanding work surfaces a premium subscription business rather than an API-only proposition.
-
-**OpenAI Marketplace** lets eligible enterprise customers apply part of an existing OpenAI commitment toward approved partner software. The initial 32 partners span design, customer experience, legal, cybersecurity, and open-source model infrastructure. This is procurement distribution, not a consumer app store.
+The keynote also described broader enterprise distribution and procurement. Because those arrangements are account- and contract-specific and are not fully documented in the public product guides used here, this article does not turn launch-day partner counts or procurement terms into a current availability promise.
 
 ## Availability at a Glance
 
@@ -88,14 +86,10 @@ This collaboration layer is the connective tissue of the event. Dots need durabl
 
 *Status is attached to each product surface, not to the event as a whole. “Available” can still require a paid plan, administrator setting, supported market, or specific client.*
 
-| Status checked October 10 | Announcements |
+| Status checked October 13 | Announcements |
 |---|---|
-| Available, subject to plan, market, admin, or platform | Dots, GPT-6.1 Sol, Astra Ultrafast, GPT-6.1 Sol Ultrafast API, Codex Cloud, Codex CLI, Code Review, Codex Security Cloud, Agents API with Computer Use, Bedrock Managed Agents, Plugin Extensions, plugin creation/discovery, Sites plugins, MCP Events, Space, Pages, team tasks, Slack/Teams integration, profiles, Sign in with ChatGPT, Pro 500 |
-| Beta | Decisions API public beta; Meetings beta on macOS for Pro and Business |
-| Alpha / restricted test | Meetings for a limited Enterprise group |
-| Preview / planned | Private Inference preview announced for fall |
-| Coming soon | Collaborative slides; some Space mobile creation/editing; Meetings on Windows, iOS, and Android |
-| Enterprise interest / approval | OpenAI Marketplace |
+| Documented as available on supported surfaces, subject to plan, market, admin, or platform | Dots, GPT-6.1 Sol, Ultrafast, Codex Cloud, Codex CLI, Code Review, Codex Security Cloud, Agents API with Computer Use, Bedrock Managed Agents, Plugin Extensions, Sites plugins, MCP Events, Space, Pages, Team Tasks, Slack/Teams integration, Sign in with ChatGPT, Pro 500 |
+| Beta | Decisions API public beta; other product surfaces may separately carry beta or preview labels in their current documentation |
 
 “Available” does not mean every user sees every feature. Plans, regions, workspace administrator settings, client platforms, and staged rollouts still apply.
 
@@ -105,13 +99,13 @@ The user-facing shift is from isolated chats to durable work. Dots can own ongoi
 
 That convenience increases the importance of scope. Before enabling a persistent agent or plugin, users should be able to answer which workspace can see it, which connected account it uses, whether an action is a draft or a commit, and where the result will remain. A task running “while you are away” still needs an owner, a stop path, and a review point.
 
-DevDay also did not make every surface universal. Space and Pages require specified paid plans; Meetings is a macOS beta; standard Chat availability differs from ChatGPT Work and Codex; Dots have plan, market, and administrator conditions. Product names cannot substitute for checking the current account.
+DevDay also did not make every surface universal. Standard Chat availability differs from ChatGPT Work and Codex; Dots have plan, market, rollout, and administrator conditions; plugins and shared work depend on workspace settings. Product names cannot substitute for checking the current account.
 
 ## What Changes for Developers
 
 For developers, the stack reduces how much orchestration must be built from scratch. Agents API adds hosted computer use, multi-agent work, tool search, tool calling, and context compaction. Plugins add UI surfaces and distribution inside ChatGPT. MCP Events add external triggers. Sign in with ChatGPT can provide identity and, for participating partners, controlled plan usage.
 
-The trade-off is that product boundaries now matter to architecture. A developer must distinguish API availability from Codex or ChatGPT availability; a public beta from GA; an MCP proposal from a stable dependency; a plugin permission from the underlying service’s resource permissions; and a Marketplace procurement relationship from end-user installation.
+The trade-off is that product boundaries now matter to architecture. A developer must distinguish API availability from Codex or ChatGPT availability; a public beta from GA; an MCP proposal from a stable dependency; and a plugin permission from the underlying service’s resource permissions.
 
 The practical question is not “which DevDay feature can we add?” It is which layer the application genuinely needs. A fixed classification may fit Decisions API. An open-ended interface workflow may need Agents API with Computer Use. A collaborative ChatGPT experience may need a plugin or Site. Combining every layer creates more identity, data, approval, and failure boundaries than most first versions require.
 
@@ -137,8 +131,8 @@ Use a small reversible workflow for beta products and keep a fallback for core o
 
 ## The Real DevDay Announcement Was the Stack
 
-DevDay 2026 showed OpenAI moving beyond the model-and-chat era. Dots are the workers. GPT-6.1 Sol is the cost-effective reasoning layer. Codex and Agents API execute. Plugins bring third-party applications and events into the environment. Space and Pages retain shared context and artifacts. Sign in with ChatGPT and Marketplace handle identity, usage, and distribution.
+DevDay 2026 showed OpenAI moving beyond the model-and-chat era. Dots are the workers. GPT-6.1 Sol is the lower-cost reasoning layer. Codex and Agents API execute. Plugins bring third-party applications and events into the environment. Space and Pages retain shared context and artifacts. Sign in with ChatGPT adds an identity and, for supported partners, plan-usage layer.
 
 No single announcement completes that vision, and several pieces remain previews or staged rollouts. But the direction is clear: OpenAI wants to own the operating surface where people assign work, agents execute it, teams review it, and software reaches users.
 
-The release list follows OpenAI’s official DevDay recap. Post-event state changes were checked against OpenAI developer and Help Center documentation on October 10, 2026.
+The release list follows OpenAI’s official DevDay recap. Post-event state changes were checked against OpenAI developer and Help Center documentation on October 13, 2026.

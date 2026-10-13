@@ -10,9 +10,9 @@ locale: "zh"
 draft: false
 ---
 
-OpenAI DevDay 2026 于 9 月 29 日举行。整场发布的重点并不是一个新模型，而是一套逐渐闭合的工作栈：持续 Agent 接收任务，模型负责推理，Codex 与 API 执行，Plugins 连接外部软件，Space 与 Pages 保存成果，身份和 Marketplace 负责分发。
+OpenAI DevDay 2026 于 9 月 29 日举行。整场发布的重点并不是一个新模型，而是一套逐渐闭合的工作栈：持续 Agent 接收任务，模型负责推理，Codex 与 API 执行，Plugins 连接外部软件，Space 与 Pages 保存成果，身份系统负责连接外部应用。
 
-阅读这场发布时，必须区分「已经宣布」与「现在可用」。有的能力已经向所有套餐开放，有的受套餐、地区、管理员或客户端限制；Decisions API 目前是 Public Beta；协作 Slides 与 Private Inference 仍属于后续能力。本文依据 OpenAI 官方资料，并把状态更新到 2026 年 10 月 10 日，而不是停留在 Keynote 当天。
+阅读这场发布时，必须区分「已经宣布」与「现在可用」。开放状态可能取决于套餐、管理员、地区、客户端、分批发布或合同。本文依据 OpenAI 当前产品文档，并把状态更新到 2026 年 10 月 13 日，而不是停留在 Keynote 当天。
 
 ## 为什么是 25 项，而不是固定的 21 项
 
@@ -22,23 +22,23 @@ OpenAI 的官方表述是“超过 20 项重大公告”。如果把官方 recap
 
 ## 第一条主线：Dots、GPT-6.1 Sol、Ultrafast 与 Private Intelligence
 
-**Dots** 是整场发布的中心。它们是持续在线的智能体，会逐渐了解用户在意什么，并承担长期责任，而不只是等待单次请求。Dots 面向符合条件市场中的 Pro 与 Business Premium 开放；Enterprise、Edu 和 Healthcare 工作区需要管理员主动开启 beta。短信和多个专业 dot 组成团队仍属于后续方向，不能写成已经全面上线。
+**Dots** 是整场发布的中心。它们是能在多次对话之间继续推进工作的持续 Agent。OpenAI 当前的 [Dots 文档](https://learn.chatgpt.com/docs/dots)明确说明采用分批开放，并列出套餐、年龄、地区与管理员条件；符合条件也不代表账号会立即获得入口。
 
-**GPT-6.1 Sol** 提供经济基础。标准输入和输出价格分别为每百万 token 2 美元和 10 美元，是 Astra 的五分之一；OpenAI 称其编程、Computer Use、专业文档和自动化能力接近 Astra。具体评测与限制见我们的 [GPT-6.1 Sol 详解](/zh/blog/gpt-6-1-sol)。
+**GPT-6.1 Sol** 提供成本更低的模型层。其[官方模型页](https://developers.openai.com/api/docs/models/gpt-6.1-sol)列出 105 万 Token 上下文、支持工具与当前 API 价格，并将性能表述为接近 Astra，而不是对所有任务作替代承诺。具体定位与限制见我们的 [GPT-6.1 Sol 详解](/zh/blog/gpt-6-1-sol)。
 
-**Ultrafast** 是付费速度层，不是新模型。OpenAI 称 Codex 中最高可达到每秒 300 Token、约 8 倍标准速度，API 中最高约 6 倍。Astra Ultrafast 在 DevDay 上线；原本标注 Coming Soon 的 GPT-6.1 Sol Ultrafast 已于 10 月 8 日进入 Responses API，采用独立的高价处理档位和 Rate Limit。Keynote 之后的变化应以 [API Changelog](https://developers.openai.com/api/docs/changelog)为准。
+**Ultrafast** 是付费处理层，不是新模型。[Ultrafast 官方指南](https://developers.openai.com/api/docs/guides/ultrafast-mode)说明它采用独立 Rate Limit 与更高价格；[API Changelog](https://developers.openai.com/api/docs/changelog)记录了 GPT-6.1 Sol Ultrafast 于 10 月 8 日进入 Responses API。实际延迟收益取决于任务和连接，因此本文不把发布会速度数字写成稳定吞吐承诺。
 
-**Private Intelligence** 补上企业信任层。Zero Data Retention with Private Safety Processing 用于在 OpenAI 人员看不到底层内容的情况下执行自动安全审查；Private Inference 计划在秋季预览，通过机密计算和可验证控制保护推理过程。后者仍是计划，不是已经交付的能力。
+**Private Intelligence** 补上企业信任层。OpenAI 的 [Private Safety Processing 指南](https://developers.openai.com/api/docs/guides/private-safety-processing)描述了硬件证明运行时、客户控制的存储，以及只能让受限安全信号离开保护区的自动审查流程；文档也列出资格、存储、密钥和保留责任。这并不等于所有 OpenAI 工作负载都默认零保留或完全私有。
 
 ## 第二条主线：Codex 变成云端开发环境
 
-**Codex in the cloud** 可以在笔记本关闭后继续运行开发任务，并允许用户从手机或其他设备访问。可复用环境让团队共享经过批准的设置和权限。
+**Codex in the cloud** 可以在电脑休眠后继续运行开发任务，并从网页、移动端或桌面端访问。[云环境指南](https://learn.chatgpt.com/docs/environments/cloud-environments)说明，可复用环境包含代码仓、依赖、工具与访问设置，每个新任务仍使用独立工作区。
 
-**新版 Codex CLI** 增加双向语音、用于委派和跟踪工作的 `/agents` 视图，并改善提示编辑、会话恢复、worktree 工作流和终端阅读体验。
+**Codex CLI** 仍是本地终端入口。当前[命令参考](https://learn.chatgpt.com/docs/cli/reference)逐项标注 Stable、Beta 与 Experimental 命令，覆盖 Cloud、Resume、Review、Sandbox 和 Plugin；具体能力应以该页面为准，而不是从 Keynote 演示推断。
 
-**Code Review** 在 ChatGPT 桌面端展示摘要与 diff，开发者可以在向 GitHub PR 或 GitLab MR 提交反馈前继续追问 Codex。自动审查也能在云端后台运行。
+**Code Review** 可以检查未提交改动、与基准分支的差异或某次 Commit。[开发者命令参考](https://learn.chatgpt.com/docs/developer-commands)同时说明交互式 `/review` 与非交互式 `codex review`，以及互斥的 Review Target。
 
-**Codex Security Cloud** 可以按需或定时扫描仓库，调查并合并重复问题，再准备修复方案。它还包含 Daybreak Blue 模型权限，不需要另行申请 Daybreak。
+**Codex Security Cloud** 在 Codex 云端扫描已连接的 GitHub 仓库，并提供 Findings 与候选 Patch 供审阅。当前 [Security Cloud 设置指南](https://learn.chatgpt.com/docs/security/setup)把它定义为独立 Plugin，并要求用户确认 Workspace 权限，不能写成所有套餐默认可用。
 
 这四项不是零散的易用性更新。它们共同把 Codex 从终端助手变成拥有可复用环境、并行执行、代码审查和安全运维的托管开发环境。产品背后的开放运行时是另一项问题，可参阅 [Codex Harness 文章](/zh/blog/codex-harness-open-source)。
 
@@ -46,41 +46,39 @@ OpenAI 的官方表述是“超过 20 项重大公告”。如果把官方 recap
 
 **Decisions API** 用 Luna 回答一组答案有限的明确问题。应用可以输入文字或图片，得到概率、固定选项、评分或下一步动作。它在 DevDay 当天是 Limited Preview，10 月 6 日进入 Public Beta。OpenAI 的[当前 Decisions 文档](https://developers.openai.com/api/docs/guides/decisions)注明目前只支持 `gpt-6-luna`，GA 仍在后续计划中；Public Beta 不能写成正式 GA。
 
-**Agents API with Computer Use** 提供托管环境，让智能体通过软件界面完成任务，同时引入多智能体、工具搜索、工具调用和上下文压缩。底层基础设施由 OpenAI 运行。
+**Agents API with Computer Use** 围绕 OpenAI 托管的 Codex Harness 提供持久 Session。[Agents API 概览](https://developers.openai.com/api/docs/guides/agents-api/overview)区分 Agent、Environment、Session 与 Events；[Computer Use 指南](https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use)则说明 OpenAI 托管浏览器，以及网站访问审批和登录需要怎样由应用处理。
 
-**Bedrock Managed Agents, powered by OpenAI** 则把相关能力带进 AWS，原生接入 AWS 资源与治理环境。它是面向 AWS 组织的部署路径，不是另一种普通用户智能体。
+**Bedrock Managed Agents, powered by OpenAI** 把 Agent 与 Session 概念适配到 AWS。OpenAI 的[对比指南](https://developers.openai.com/api/docs/guides/agents-api/bedrock-managed-agents)明确区分：Harness 与模型推理由 Amazon Bedrock 承载，命令和工具则运行在 AgentCore Runtime 或自托管计算环境中。
 
 三者处在不同层级：Decisions API 做窄范围判断，Agents API 执行开放式工作，Bedrock 负责把智能体执行纳入 AWS。把它们统称为一个“Agent API”，会掩盖真正的架构。
 
 ## 第四条主线：Plugins 把 ChatGPT 变成应用平台
 
-**Plugin Extensions** 允许开发者在 ChatGPT 中加入侧栏入口、交互面板、输入框入口和文件查看器。插件不再只能完成工具调用后返回一段文字。
+**Plugin Extensions** 可以在支持的 ChatGPT 界面加入 Sidebar App、Conversation Panel、Composer Mention、设置与文件查看器。[官方 Extensions 参考](https://developers.openai.com/plugins/build/extensions)也标注了各入口的平台限制与尚未开放的范围。
 
-**创建、提交和发现机制升级**包括 Plugin Creator、更清晰的审核反馈、更方便的更新与会话内推荐。**Sites 可以承载 Plugins**，让工作区成员使用同一个应用，但各自连接数据与权限。**MCP Events** 则允许连接服务的变化主动触发自动化。
+**Plugin 打包与发现**现在使用支持的 ChatGPT 与 Codex 表面共享的公共目录；[打包指南](https://developers.openai.com/plugins/build/plugins)明确区分公共目录、本地 Marketplace 与仓库 Marketplace。**Sites 可以使用 Plugins**，并按每位访问者自己的连接权限读取数据，具体边界见 [Sites 指南](https://learn.chatgpt.com/docs/sites)。**MCP Events** 通过 Webhook 让 ChatGPT 订阅服务事件；[MCP Events 规范](https://developers.openai.com/plugins/build/mcp-events)列出支持入口、生命周期方法与当前协议限制。
 
 这四项应当作为一个平台动作理解：第三方软件可以在 ChatGPT 中构建、渲染、触发、审核并分发。具体机制和安全问题见 [OpenAI Plugins 详解](/zh/blog/openai-plugins-explained)。
 
-## 第五条主线：Space、Pages、Slides、Teams 与 Meetings
+## 第五条主线：Space、Pages、Teams 与 Meetings
 
-**[ChatGPT Space](/zh/blog/what-is-chatgpt-space)** 为团队、ChatGPT 和 dot 提供共享项目文件与上下文。Pro、Business 和 Enterprise 用户可以在桌面端和网页使用；移动端现阶段主要支持查找、阅读和分享，创建与编辑仍在后续路线中。
+**[ChatGPT Space](/zh/blog/what-is-chatgpt-space)** 把 Pages、文件与共享成果放在一起。当前 [Space 指南](https://learn.chatgpt.com/docs/space)说明 Space、页面分享、连接来源与权限继承，不假设所有账号的开放状态完全相同。
 
-**Pages** 是人与智能体共同编辑的文档，可以写作、研究、生成图表与图片，并创建可视化。**Collaborative Slides** 计划在 DevDay 后数周推出，支持多人和智能体同时编辑、评论、演示，并导出为 PowerPoint 或 Google Slides。
+**Pages** 是用于笔记、计划、研究、生成媒体与可视化的可编辑文档。[Pages 指南](https://learn.chatgpt.com/docs/space/pages)记录了直接编辑、评论、子页面、文件引用、Prompt 与 Agent Instructions。Slides 的状态应以当前产品入口和文档为准，不再沿用发布会交付时间估计。
 
-**Teams 与 Team Tasks** 支持共享 Pages、Slides、Plugins、Spreadsheets 和周期任务。工作既可以按计划运行，也可以由新邮件或 Slack 消息等事件触发。**Slack 和 Microsoft Teams 中的 @ChatGPT** 让团队直接在频道、线程和私信中使用受管理员和个人权限控制的工具。
+**Teams 与 Team Tasks** 可以使用团队服务账号与配置连接，按计划或受支持事件触发运行。[团队管理指南](https://learn.chatgpt.com/docs/enterprise/teams)列出所需权限，并明确任务不会继承创建者的个人 Memory、Custom Instructions 或 Chat History；独立的 [Slack 与 Teams 指南](https://learn.chatgpt.com/docs/enterprise/chatgpt-slack-and-teams)说明服务账号和 Workspace Connection 边界。
 
-**Meetings plugin** 负责生成会议笔记、个性化摘要与行动项，并保存到 ChatGPT Space。OpenAI 表示，笔记生成后音频会被删除，之后无法访问或回放。[当前 Meetings 文档](https://help.openai.com/en/articles/20001546-the-meetings-plugin-in-chatgpt)标注为 macOS 上面向 Pro 与 Business 的 Beta，Enterprise 仅有限量 Alpha，Windows、iOS 与 Android 则在后续计划中。
+**Meetings Plugin** 可以为 ChatGPT Space 生成会议笔记与行动项。由于套餐和平台范围会变化，读者应以当前 Plugin Listing 与 Workspace 设置为准，而不是沿用发布日的平台承诺。
 
-这部分是整场发布的连接层。Dots 需要持久上下文，智能体需要留下产物，团队需要审查和调整周期工作；Space、Pages、Slides、Tasks、聊天集成和 Meetings 共同提供了共享状态。
+这部分是整场发布的连接层。Dots 需要持久上下文，智能体需要留下产物，团队需要审查和调整周期工作；Space、Pages、Team Tasks、聊天集成和会议笔记共同提供了共享状态。
 
 ## 分发、身份、订阅与采购
 
-**Shareable Profiles** 汇集个人创建的 Sites 与 Plugins，方便他人发现和复用，也允许工作区成员发现共享 Skills。
+**Sign in with ChatGPT** 是身份连接；在受支持伙伴中，使用符合条件的 ChatGPT 套餐额度属于另一项独立授权。当前[合作伙伴与权限指南](https://learn.chatgpt.com/docs/sign-in-with-chatgpt)列出参与应用，并强调登录授权与套餐用量授权不是同一件事。
 
-**Sign in with ChatGPT** 把账号变成外部工具的身份与用量入口。符合条件的 Plus 和 Pro 用户可以在 Devin、Notion、Vercel、T3、OpenClaw、Dactyl 等 16 家首发合作伙伴中使用计划额度，并控制各工具可消耗多少。
+**Pro 500** 是当前 Pro 订阅层级之一，并包含 Ultrafast 权限。OpenAI 的[定价页](https://learn.chatgpt.com/docs/pricing)才是当前价格、套餐内容、用量规则与地区或 Workspace 条件的准确信源；API Token 价格应另行计算。
 
-**Pro 500** 提供 Plus 25 倍的额度，并包含 Ultrafast。这说明 OpenAI 正把高强度工作界面发展成高级订阅业务，而不只是 API 服务。
-
-**OpenAI Marketplace** 允许符合条件的企业客户把一部分既有 OpenAI 采购承诺用于经批准的合作软件。首批 32 家合作伙伴覆盖设计、客户体验、法律、网络安全与开源模型基础设施。它更接近企业采购市场，而不是消费级应用商店。
+发布会还描述了更广泛的企业分发与采购方向。由于这些安排依赖具体账号与合同，且本文采用的公共产品文档没有完整列出当前条款，因此不再把首发合作伙伴数量或采购条件写成现行开放承诺。
 
 ## 上线状态速查
 
@@ -88,14 +86,10 @@ OpenAI 的官方表述是“超过 20 项重大公告”。如果把官方 recap
 
 *状态属于具体产品入口，而不是整场活动。「已开放」仍可能要求特定套餐、管理员设置、市场或客户端。*
 
-| 截至 10 月 10 日的状态 | 对应发布 |
+| 截至 10 月 13 日的状态 | 对应发布 |
 |---|---|
-| 已开放，但受套餐、市场、管理员或平台限制 | Dots、GPT-6.1 Sol、Astra Ultrafast、GPT-6.1 Sol Ultrafast API、Codex Cloud、Codex CLI、Code Review、Codex Security Cloud、带 Computer Use 的 Agents API、Bedrock Managed Agents、Plugin Extensions、插件创建与发现、Sites Plugins、MCP Events、Space、Pages、Team Tasks、Slack/Teams 集成、Profiles、Sign in with ChatGPT、Pro 500 |
-| Beta | Decisions API Public Beta；Meetings 面向 macOS Pro 与 Business 的 Beta |
-| Alpha 或限制测试 | Meetings 面向少量 Enterprise 客户的 Alpha |
-| 预览或计划 | Private Inference 宣布在秋季提供 Preview |
-| Coming Soon | 协作 Slides；Space 部分移动创建与编辑；Meetings 的 Windows、iOS 与 Android 版本 |
-| 企业申请或批准 | OpenAI Marketplace |
+| 官方文档记录为已在支持入口开放，仍受套餐、市场、管理员或平台限制 | Dots、GPT-6.1 Sol、Ultrafast、Codex Cloud、Codex CLI、Code Review、Codex Security Cloud、带 Computer Use 的 Agents API、Bedrock Managed Agents、Plugin Extensions、Sites Plugins、MCP Events、Space、Pages、Team Tasks、Slack/Teams 集成、Sign in with ChatGPT、Pro 500 |
+| Beta | Decisions API Public Beta；其他产品入口可能在各自当前文档中另行标注 Beta 或 Preview |
 
 “已开放”不等于所有账号都立即看得到。计划层级、所在地区、管理员设置、客户端平台与分批发布仍然适用。
 
@@ -105,13 +99,13 @@ OpenAI 的官方表述是“超过 20 项重大公告”。如果把官方 recap
 
 便利也扩大了权限边界。启用常驻 Agent 或 Plugin 之前，用户应能回答：哪个 Workspace 能看到它、它使用哪个连接账号、动作是生成草稿还是真正提交、成果会留在哪里。即使任务会「在你离开后继续」，也必须有负责人、停止方式和审阅节点。
 
-DevDay 也没有让所有能力在所有地方都可用。Space 与 Pages 依赖指定付费套餐，Meetings 仍是 macOS Beta，普通 Chat 与 ChatGPT Work、Codex 的模型范围不同，Dots 还有套餐、市场和管理员条件。看到产品名称以后，仍要回到当前账号检查。
+DevDay 也没有让所有能力在所有地方都可用。普通 Chat 与 ChatGPT Work、Codex 的模型范围不同；Dots 受套餐、市场、分批开放与管理员条件约束；Plugins 与共享工作还取决于 Workspace 设置。看到产品名称以后，仍要回到当前账号检查。
 
 ## 对开发者真正改变了什么
 
 开发者不再需要从零搭建所有 Agent 基础设施。Agents API 提供托管 Computer Use、多 Agent、Tool Search、Tool Calling 与 Context Compaction；Plugins 增加 ChatGPT 内的界面和分发；MCP Events 提供外部触发；Sign in with ChatGPT 则可承担身份，以及合作工具中的受控套餐用量。
 
-代价是架构必须理解产品边界。API 上线不等于 Codex 或 ChatGPT 上线；Public Beta 不等于 GA；MCP Proposal 不能当成稳定依赖；Plugin 权限也不能替代原服务的资源权限；Marketplace 采购关系更不是最终用户安装状态。
+代价是架构必须理解产品边界。API 上线不等于 Codex 或 ChatGPT 上线；Public Beta 不等于 GA；MCP Proposal 不能当成稳定依赖；Plugin 权限也不能替代原服务的资源权限。
 
 更实际的问题不是「DevDay 的哪些功能都能加上」，而是应用真正需要哪一层。固定分类适合 Decisions API，开放式界面任务可能需要带 Computer Use 的 Agents API，ChatGPT 内的协作体验才考虑 Plugin 或 Site。首版把所有层都叠在一起，只会引入更多身份、数据、审批和故障边界。
 
@@ -137,8 +131,8 @@ Beta 产品先用范围小、可逆的流程试运行，核心业务保留降级
 
 ## 真正的发布是整套工作栈
 
-DevDay 2026 表明 OpenAI 正在离开“模型加聊天”的阶段。Dots 是工作者，GPT-6.1 Sol 是性价比较高的推理层，Codex 与 Agents API 负责执行，Plugins 引入第三方应用和事件，Space 与 Pages 保存共享上下文与产物，Sign in with ChatGPT 和 Marketplace 负责身份、用量与分发。
+DevDay 2026 表明 OpenAI 正在离开“模型加聊天”的阶段。Dots 是工作者，GPT-6.1 Sol 是成本较低的推理层，Codex 与 Agents API 负责执行，Plugins 引入第三方应用和事件，Space 与 Pages 保存共享上下文与产物，Sign in with ChatGPT 则增加身份层，并为受支持伙伴提供独立的套餐用量授权。
 
 这套愿景还没有全部落地，不少能力仍在预览或分批上线。但方向已经很清楚：OpenAI 想掌握人们分派工作、智能体执行、团队审查，以及软件触达用户的整个操作界面。
 
-发布清单以 OpenAI DevDay 2026 官方复盘为准；会后状态变化于 2026 年 10 月 10 日对照 OpenAI Developer 与 Help Center 文档复核。
+发布清单以 OpenAI DevDay 2026 官方复盘为准；会后状态变化于 2026 年 10 月 13 日对照 OpenAI Developer 与 Help Center 文档复核。

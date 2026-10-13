@@ -228,7 +228,7 @@
         },
         {
           "question": "Are all DevDay 2026 products available now?",
-          "answer": "No. As of October 10, Decisions API is a public beta, Meetings is a macOS beta with a limited Enterprise alpha, and collaborative slides and Private Inference have not shipped as general features. Even available products can depend on plan, market, administrator settings, and client platform."
+          "answer": "No. As of October 13, Decisions API is a public beta, Meetings is a macOS beta with a limited Enterprise alpha, and collaborative slides and Private Inference have not shipped as general features. Even available products can depend on plan, market, administrator settings, and client platform."
         },
         {
           "question": "What is the difference between Dots, Agents API, and Codex?",
@@ -241,10 +241,6 @@
         {
           "question": "Is the Decisions API generally available?",
           "answer": "No. It moved from limited preview to public beta on October 6. OpenAI says GA is expected later, and GPT-6 Luna is currently the only supported model. Production promises should preserve that beta status."
-        },
-        {
-          "question": "What did DevDay 2026 change for ChatGPT users?",
-          "answer": "It connected persistent agents, shared Space context, collaborative Pages, plugins, team tasks, and event triggers into a more durable work surface. Access is fragmented across plans and clients, so users still need to check the exact account and workspace settings."
         },
         {
           "question": "What did DevDay 2026 change for developers?",
@@ -268,7 +264,7 @@
         },
         {
           "question": "DevDay 2026 的所有产品现在都能使用吗？",
-          "answer": "不能。截至 10 月 10 日，Decisions API 是 Public Beta；Meetings 是 macOS Beta，Enterprise 只面向少量客户 Alpha；协作 Slides 与 Private Inference 尚未作为通用功能上线。已经开放的产品也可能受套餐、市场、管理员和客户端限制。"
+          "answer": "不能。截至 10 月 13 日，Decisions API 是 Public Beta；Meetings 是 macOS Beta，Enterprise 只面向少量客户 Alpha；协作 Slides 与 Private Inference 尚未作为通用功能上线。已经开放的产品也可能受套餐、市场、管理员和客户端限制。"
         },
         {
           "question": "Dots、Agents API 和 Codex 有什么区别？",
@@ -281,10 +277,6 @@
         {
           "question": "Decisions API 已经正式 GA 了吗？",
           "answer": "没有。它在 10 月 6 日从 Limited Preview 进入 Public Beta，OpenAI 表示 GA 将在后续提供，目前只支持 GPT-6 Luna。对外承诺时仍应保留 Beta 状态。"
-        },
-        {
-          "question": "DevDay 2026 对 ChatGPT 用户最大的变化是什么？",
-          "answer": "持续 Agent、Space 共享上下文、Pages、Plugins、Team Tasks 和事件触发被连接成更持久的工作界面。不过开放范围分散在不同套餐与客户端，用户仍需检查自己的账号和 Workspace 设置。"
         },
         {
           "question": "DevDay 2026 对开发者最大的变化是什么？",
@@ -457,6 +449,14 @@
         {
           "question": "What should I expect when I start using AI agents?",
           "answer": "Start with a bounded read-only or draft-only pilot. Test representative and failure cases, record tool calls and approvals, compare with a baseline, and expand one permission only after the previous boundary is reliable."
+        },
+        {
+          "question": "How do I choose the best first AI agent use case?",
+          "answer": "Score recurring tasks by input availability, tool access, output verifiability, risk, setup burden, and the point where a human can approve the result. Start with a valuable task that is bounded, reversible, and easy to inspect."
+        },
+        {
+          "question": "What is the safest AI agent use case to automate first?",
+          "answer": "Read-only monitoring, classification, or draft generation is usually safer than sending messages or changing production records. Keep the first pilot inside a sandbox or review queue and require approval before external or irreversible actions."
         }
       ]
     },
@@ -535,28 +535,36 @@
     "/blog/ai-agent-workflow-vibe-coding": {
       "items": [
         {
-          "question": "Is an AI agent workflow better than vibe coding?",
-          "answer": "For one-off prototypes or throwaway personal projects, vibe coding is fine — fast, fun, low stakes. For anything you plan to extend, maintain, or show users, yes: a structured AI agent workflow produces better outcomes with less total rework. Vibe coding gets you roughly 70% of the way — the first draft looks great, then the app starts breaking as features pile up and a human still has to clean up. Structure closes that gap."
+          "question": "What is an AI agent workflow for vibe coding?",
+          "answer": "It is a repeatable process that turns a coding request into scoped requirements, a reviewed plan, bounded implementation, automated checks, diff review, and a controlled merge with rollback steps."
         },
         {
-          "question": "What actually breaks when vibe coding has no structure?",
-          "answer": "It's not that AI writes bad code — it's that most people use it with no plan, no enforced rules, and no review step between generation and deployment. Every mid-build change of mind adds tech debt that confuses future agents, and each error compounds downstream: an agent fixes one file and breaks two that reference it, because it can't see the whole dependency chain. The fix is catching those failure modes before they multiply."
+          "question": "When should I stop vibe coding and switch to a structured workflow?",
+          "answer": "Switch when real users or data are involved, a change touches security or payments, several components must change together, another person will maintain the code, or rollback matters."
         },
         {
-          "question": "What does a structured AI agent workflow look like in practice?",
-          "answer": "A simple chain that works: first write a plain-language spec — what it does, its edge cases, what it should never do. Then run the spec through the agent in plan mode and fix ambiguities before executing. Execute in bounded chunks, one task at a time. Review output before accepting it — especially before merging to main or after any step touching authentication, data handling, or external API calls, where \"hallucinated bypasses\" are most likely."
+          "question": "What should an acceptance packet contain?",
+          "answer": "State the user-visible outcome, exclusions, valid and invalid examples, likely files, required commands, risk constraints, and the evidence the agent must return."
         },
         {
-          "question": "Do you need to know how to code to use it?",
-          "answer": "Not necessarily, but you need to be comfortable reading outputs and catching things that look wrong — the review step requires judgment, not syntax knowledge. If you can't tell whether the output did what you asked, you can't catch the failure modes that compound, regardless of tool. A test-driven loop can substitute for line-by-line review: when tests pass and edge cases are covered, you don't need to read every line of code."
+          "question": "Should the coding agent write the tests?",
+          "answer": "It can propose or write tests, but the tests must trace back to independently defined acceptance criteria and should include failure paths, permissions, and regression cases."
         },
         {
-          "question": "Can solo operators who don't write code use these workflows?",
-          "answer": "Yes — the same structure applies to any multi-step AI workflow, from content pipelines to research and client deliverables. The pattern is identical: spec first, bounded execution, human review before output goes anywhere important. In practice that can mean treating a structured prompt chain as the \"agent,\" a self-check list as the \"tests,\" and a dated changelog as \"version control.\" It doesn't need to be code — it needs to be intentional."
+          "question": "Are passing tests enough to merge AI-generated code?",
+          "answer": "No. Review the complete diff for scope creep, removed validation, new dependencies, interface changes, data handling, migration reversibility, and tests that merely mirror the implementation."
         },
         {
-          "question": "Which AI coding tools should you start with?",
-          "answer": "Start simple: pick one agent tool and one version control habit. Cursor at about $20/month is the most accessible entry point for non-terminal users; Claude Code is worth the upgrade when you work on larger, more complex projects. The tools matter less than the workflow discipline around them — design before coding, write tests, keep every change in version control. Those habits count even more when AI writes half your code."
+          "question": "Why put AI instructions in the repository?",
+          "answer": "Repository instructions keep build commands, directory rules, forbidden operations, and the definition of done close to the code, so they can be versioned and reused across sessions."
+        },
+        {
+          "question": "Which AI coding decisions still need a human?",
+          "answer": "Humans should own the product acceptance criteria, explicit review of high-risk changes, and the final release decision including monitoring and rollback readiness."
+        },
+        {
+          "question": "Which AI coding tool is best for this workflow?",
+          "answer": "Choose after defining the workflow. The tool should inspect before editing, respect permission boundaries, run the repository’s real checks, and produce a reviewable diff without bypassing merge policy."
         }
       ]
     },
@@ -743,112 +751,144 @@
     "/blog/ai-file-organizer-mac": {
       "items": [
         {
-          "question": "Will an AI file organizer for Mac mess up my files?",
-          "answer": "Not if you pick one with a review step and full undo, and test it on a throwaway folder first. A safe organizer shows every proposed rename and move as a tree, executes nothing until you approve, and keeps a history that reverses the whole batch, not just the last file. Renames in place are lower risk than folder moves, because a move changes paths that apps, aliases, and saved workflows may point to."
+          "question": "What can an AI file organizer do on a Mac?",
+          "answer": "Depending on the app, it may propose names, classify files, move them into folders, add Finder tags, or flag likely duplicates. Confirm each permitted action before the first run."
         },
         {
-          "question": "Does an AI file organizer for Mac upload my files to the cloud?",
-          "answer": "It depends entirely on the tool's architecture, so check the vendor's docs rather than the marketing page. Fully on-device tools like Floatboat analyze with a local model and upload nothing; hybrid tools keep OCR and indexing local but send extracted text to a model you choose; managed cloud tools send content to the vendor's servers — nymos's subscription processes inside the EU, for example. Ask where analysis runs and what the vendor retains."
+          "question": "Is it safe to organize files in iCloud Drive?",
+          "answer": "It can be, but first download the complete test folder, check sync status and free space, decide whether destinations remain in the synced area, and remember that changes may propagate to other devices."
         },
         {
-          "question": "Can an AI file organizer work offline on a Mac?",
-          "answer": "Yes, when the model runs locally. On Apple Silicon, Floatboat and Floxtop run the classifier and naming model through the Neural Engine or GPU, so analysis works with no connection. Cloud and hybrid tools need a network unless you configure a local model such as Ollama. Two caveats: the model download happens on first launch, and offloaded iCloud Drive files must be downloaded before their contents can be read."
+          "question": "Does an AI file organizer need Full Disk Access?",
+          "answer": "Not always. Start with access to one selected folder; grant Full Disk Access only when the vendor clearly explains why it is required and what functionality depends on it."
         },
         {
-          "question": "Is it better to rename files in place or move them into folders on a Mac?",
-          "answer": "That depends on what your files are for. Renaming in place keeps every path, alias, and reference valid and is the safe default for a structure you depend on — the philosophy of nymos and Zush. Moving files changes paths, which is the point when you are taming a flat dump of Downloads, Desktop, and screenshots, but you want a tool that previews destinations and can reverse the whole batch if a client folder gets buried."
+          "question": "Does on-device OCR mean no file data leaves my Mac?",
+          "answer": "Not necessarily. OCR may be local while extracted text, filenames, thumbnails, prompts, or telemetry go to another service, so verify the complete data flow and retention policy."
         },
         {
-          "question": "Why can't Spotlight find my files after I organized them?",
-          "answer": "Spotlight searches file names immediately, so descriptive renames help within seconds. If you are searching by the contents of a scan or photo, Spotlight can only index what it can read — an image-only scan that was never OCR'd stays invisible to content search, and text inside images is not indexed automatically. Run files through a tool with OCR that keeps a local index, or let a content-reading organizer rename files from the text it extracts, and the search surface improves even when the pixels cannot be indexed."
+          "question": "Will renaming or moving files preserve Finder tags and metadata?",
+          "answer": "Do not assume it will. Test representative files and verify tags, comments, dates, extended attributes, permissions, application references, and Spotlight results after the operation."
         },
         {
-          "question": "What macOS version do I need for an AI file organizer?",
-          "answer": "It varies more than most roundups admit. nymos starts at macOS 14 (Sonoma), most current tools including Zush and Floxtop require macOS 15, NameQuick needs 15.4 or newer, and Tidow's present builds target macOS 26 with AI features on M1 or later. Check the floor before you download, and remember that Apple Silicon on-device tools run best on M-series chips."
+          "question": "Is renaming safer than moving files?",
+          "answer": "Renaming usually has a smaller blast radius than moving an entire folder tree, but both change pathnames and can break references. Test the exact applications and automations you depend on."
+        },
+        {
+          "question": "What should a real undo feature restore?",
+          "answer": "It should restore names and locations for the whole batch, survive an app restart, handle partial failures, and provide a history or manifest of original and final paths."
+        },
+        {
+          "question": "What is the safest way to test an AI file organizer on Mac?",
+          "answer": "Back up first, copy 20–50 representative files into a disposable folder, review every proposed change, execute and undo the batch, then verify metadata, references, Finder, and Spotlight before expanding scope."
         }
       ]
     },
     "/blog/ai-file-organizer-windows": {
       "items": [
         {
-          "question": "What is the best AI file organizer for Windows?",
-          "answer": "There is no single best tool, because the category splits by supervision style. If you want a background sorter that watches folders and routes new files automatically, Microsoft Store apps like NudgeFile fit that job. If you prefer open source and full control, AI File Sorter by hyperfield runs local models and lets you review everything. If you want content-aware renaming with a buy-once license, FilesDesk or the indie AI File Organizer Pro match that. Floatboat's organizer suits people who want to describe the folder tree in plain words, preview it, and run everything on-device with whole-batch undo. Test the shortlist on one real folder before trusting screenshots."
+          "question": "What does an AI file organizer for Windows do?",
+          "answer": "It classifies, renames, and moves files from filenames, metadata, or content, ideally with a preview before changes."
         },
         {
-          "question": "Do AI file organizers for Windows upload my files?",
-          "answer": "It depends on the architecture, and the difference is visible on each tool's privacy page. Local-first tools — NudgeFile with its built-in Ollama processor, AI File Sorter in offline mode, and Floatboat's organizer — keep filenames and contents on your machine. Cloud-backed tools are honest about sending data to a model provider; Sortio, for example, sends filenames and metadata to your chosen provider by default and uploads file contents if you enable a content feature. The question to ask before installing is not \"is it AI\" but \"what does the AI see.\""
+          "question": "Can a Windows AI file organizer work offline?",
+          "answer": "Yes, if inference runs locally and the files are downloaded; cloud placeholders or cloud APIs break a fully offline workflow."
         },
         {
-          "question": "Why are so many AI file organizers Mac-only?",
-          "answer": "The macOS market got there first. Indie developers built renamers and organizers for the machines they use, and Mac users demonstrated they will pay for polished file utilities — nymos and Sparkle both sit on the macOS side as of September 2026. Apple Silicon also gave developers one predictable chip to optimize local models for. Windows has a longer hardware tail, so local AI there is more of a configuration exercise, which makes polished consumer apps harder to ship. The Windows-native supply is smaller but real, and it skews toward local and open-source tools."
+          "question": "Does local processing mean OneDrive files stay off the cloud?",
+          "answer": "No. A local organizer may still change folders already synchronized by OneDrive."
         },
         {
-          "question": "Do I need a powerful GPU or NPU to run an AI file organizer on Windows?",
-          "answer": "No, but hardware changes the experience. Text classification and naming run acceptably on CPU with a small local model, which is why several tools default to compact models that work on older laptops. Vision work — categorizing thousands of screenshots and photos — is where a discrete GPU or the NPU on a newer Copilot+ PC earns its keep. Tools built on Ollama let you pick model size: start small, and reach for a bigger model if naming quality demands it."
+          "question": "What are OneDrive Files On-Demand placeholders?",
+          "answer": "They are File Explorer entries whose full contents may remain in the cloud until downloaded."
         },
         {
-          "question": "Will an organizer mess up files that OneDrive syncs?",
-          "answer": "Only if you do not check first. If your Desktop or Documents are redirected through Known Folder Move, those folders sync automatically, and an organizer that renames or moves files in them will propagate those changes through OneDrive. That is usually fine, but two rules keep it safe: verify the tool handles files that are cloud-only rather than downloaded, and understand that \"local\" no longer means \"only on this PC.\" If either makes you uncomfortable, organize a folder that is not synced."
+          "question": "Should I organize my entire Downloads folder at once?",
+          "answer": "No. Start with a small copied batch, review names and destinations, then expand."
         },
         {
-          "question": "Can I undo a large AI organization run on Windows?",
-          "answer": "Preview-first tools make large runs reversible. Floatboat's organizer rolls back the entire batch with one click, and NudgeFile keeps a transaction log with one-click restore of any rename or routing operation. The safe pattern is the same everywhere: keep the preview step honest, run in batches, and take a backup or a folder listing before the first big pass on a folder you cannot afford to lose. Undo after a whole drive reorganization is a heavier story than undo after one Downloads folder."
+          "question": "What rollback features should I require?",
+          "answer": "Look for a transaction log, undo by batch, or a manifest that records every rename and move."
+        },
+        {
+          "question": "Can AI organizers detect duplicates safely?",
+          "answer": "Treat duplicate suggestions as candidates; compare hashes or content and review before deletion."
+        },
+        {
+          "question": "What is the safest Windows setup?",
+          "answer": "Use a backed-up test folder, make cloud files available offline, preview every move, and verify search after completion."
         }
       ]
     },
     "/blog/ai-follow-up-automation": {
       "items": [
         {
-          "question": "Do I have to trigger follow-up myself, or does it run automatically?",
-          "answer": "You don't start it — the system does. The follow-up pipeline triggers when the calendar event ends, with no prompt, no button click, and no context-switching on your part. That timing is the whole point: manual follow-up a few hours after a meeting has already lost fidelity, while immediate capture works while the meeting is still fresh. An imperfect action item routed right away beats a perfect one written up three days later — or never."
+          "question": "What is AI follow-up automation?",
+          "answer": "A workflow that turns meeting evidence into reviewed decisions, action items, drafts, and downstream records."
         },
         {
-          "question": "Why do action items keep getting lost between meetings?",
-          "answer": "Because follow-up is usually a manual habit that competes with everything else on your calendar, and it decays fast: details fade, ownership gets ambiguous, urgency drops. For solo founders it's worse — there's no team to share the load, and follow-up volume grows linearly with the number of meetings. The standard coping mechanisms (\"I'll remember,\" \"I'll type it up later,\" \"I'll block Friday\") all break under real volume, and the 24-hour window where follow-up matters passes unused."
+          "question": "What input does it need?",
+          "answer": "A transcript, notes, chat, agenda, or other reliable record of what was actually agreed."
         },
         {
-          "question": "How does AI follow-up automation actually work?",
-          "answer": "Through a three-stage post-meeting pipeline. First, decision capture separates real resolutions from discussion and outputs a short structured list — typically three to seven decisions per meeting. Second, action extraction turns those decisions into tasks with owners and deadlines, drawn from both explicit statements and the next meeting in the series. Third, the prep loop feeds unfinished items into the next meeting's preparation, so the whole loop — prep, meet, follow-up, prep — keeps running itself."
+          "question": "Is a meeting summary the same as follow-up automation?",
+          "answer": "No. A summary records discussion; automation also assigns ownership, destination, and approval."
         },
         {
-          "question": "Can it handle vague or unstructured meetings?",
-          "answer": "Yes, within limits. It works best when a meeting has clear decision points and assignments. For brainstorming or exploratory sessions the output is simply sparser — the system captures whatever concrete outcomes did emerge and never fabricates structure where none existed. That's the honest trade-off: unstructured meetings yield fewer decisions, but what did emerge still gets captured instead of dissolving into the broader discussion."
+          "question": "How should action items be structured?",
+          "answer": "Each item needs an action, owner, due date or review date, source evidence, and status."
         },
         {
-          "question": "Can it really tell decisions apart from small talk?",
-          "answer": "Yes, with reasonable accuracy. The system looks for linguistic and structural signals to sort conversation into modes — social talk, information exchange, deliberation, and resolution — and only resolution produces decisions and action items. It doesn't need to classify every sentence perfectly; it only has to spot the resolution moments, which tend to be linguistically distinct, such as converging phrases or a shift from many speakers to one person summarizing."
+          "question": "Can AI send follow-ups automatically?",
+          "answer": "Technically yes in some integrations, but external commitments should normally require human approval."
         },
         {
-          "question": "Does it work with the tools and task manager I already use?",
-          "answer": "That's the design intent. A calendar-driven system sits at the orchestration layer: it reads your calendar for triggers, processes the meeting content, and routes output to your existing task manager, email, or Slack. Integration with major tools — Linear, Notion, Asana, Todoist, and similar — matters because it means you keep your current workflow. Extracted action items simply appear as tasks in the system you already use, in the same format and fields you already use."
+          "question": "How are uncertain items handled?",
+          "answer": "Mark them as unresolved or request clarification instead of inventing an owner or deadline."
+        },
+        {
+          "question": "What tools can receive the output?",
+          "answer": "Email, task managers, CRM, project tools, and the next meeting brief, depending on configured connectors."
+        },
+        {
+          "question": "How do you measure quality?",
+          "answer": "Track extraction accuracy, missing decisions, incorrect owners, approval edits, delivery failures, and completed actions."
         }
       ]
     },
     "/blog/ai-follow-up-email-opus-4-8": {
       "items": [
         {
-          "question": "Can an AI follow-up email invent things that were never discussed?",
-          "answer": "It can, and that's the biggest risk to check for. In my tests, the draft from a well-structured 45-minute call came back accurate, but a messy meeting with unclear decisions produced wrong action items. Models are improving — Anthropic reports Claude Opus 4.8 is roughly four times less likely to leave flaws in its work unremarked — yet nothing replaces reading the draft for invented commitments or misattributed owners before you send."
+          "question": "What should an AI follow-up email include?",
+          "answer": "A concise recap, confirmed decisions, owned next steps, dates, open questions, and only supported commitments."
         },
         {
-          "question": "What is an AI follow-up email?",
-          "answer": "An email drafted by an AI model from meeting context, usually a transcript or your notes. The AI extracts what was discussed, which decisions were made, and who is doing what by when, then structures it into a sendable recap with action items. You still review and edit before it goes out. A good follow-up confirms the discussion, makes next steps visible, and creates a little pressure to act."
+          "question": "Does the model need a full transcript?",
+          "answer": "Not always, but it needs enough reliable evidence to distinguish decisions from discussion."
         },
         {
-          "question": "How can AI draft a follow-up after a meeting?",
-          "answer": "Feed a meeting transcript into a model like Claude, GPT, or Gemini with a prompt that specifies your format. The model identifies decisions, assigns action items to people mentioned in the transcript, and drafts the email. I keep a saved prompt for this — it takes under five minutes per meeting once it's set up. Tools like [Fireflies](<https://fireflies.ai/blog/ai-tools-to-automate-follow-up-emails/>) and [Read.ai](<http://Read.ai>) can automate this step further with built-in follow-up features."
+          "question": "Can Claude Opus 4.8 draft follow-up emails?",
+          "answer": "Yes; the workflow still needs a prompt, source material, and human review."
         },
         {
-          "question": "What should I review before sending an AI follow-up?",
-          "answer": "Three things: tone (does it match the relationship?), factual accuracy (especially pricing, deadlines, and commitments), and completeness (did the AI miss anything — including what wasn't said?). I never send without reading the draft. Sensitive commitments like price or scope changes get verified against my own notes, because a wrong action item attributed to the wrong person can do real damage."
+          "question": "What should remain human-reviewed?",
+          "answer": "Recipients, tone, commitments, owners, dates, sensitive details, and any action that sends or writes externally."
         },
         {
-          "question": "When should AI create tasks instead of emails?",
-          "answer": "When the meeting produces internal action items that don't need external communication. If the follow-up is for your own team, pushing items directly into a task board (Notion, Asana, a simple list) skips the email step entirely. I still draft the email for client-facing follow-ups, but for internal meetings, tasks-only is faster. The test I use: does the other person need to see a recap, or just know what they're responsible for? If the second one, skip the email."
+          "question": "How should uncertainty appear?",
+          "answer": "State that an item needs confirmation or omit it; do not convert ambiguity into a firm promise."
         },
         {
-          "question": "How do I make the follow-up workflow reusable?",
-          "answer": "Keep one saved prompt instead of writing from scratch each time. With a fixed structure — recap, decisions, action items, deadlines, open questions — the only variable is the transcript: meeting ends, transcript gets pasted, draft appears, you review, you send. Under five minutes per meeting. For recurring meetings like client check-ins or team syncs, this scales well, because recipients learn the format and you stop reinventing the email every time."
+          "question": "Can the workflow create tasks too?",
+          "answer": "Only when connected to a task system with mapped fields, permissions, and an approval policy."
+        },
+        {
+          "question": "Is a fixed template useful?",
+          "answer": "Yes, as an acceptance checklist, but the evidence and wording must still match each meeting."
+        },
+        {
+          "question": "What makes this repeatable?",
+          "answer": "Stable required fields, reliable transcripts, explicit approval, and measurement of edits and missed items."
         }
       ]
     },
@@ -891,28 +931,36 @@
     "/blog/ai-scheduling-agent": {
       "items": [
         {
-          "question": "What is the difference between an AI scheduling agent and a calendar app?",
-          "answer": "A calendar app shows you _when_. An AI scheduling agent figures out _what to do_ with that time. Google Calendar and Apple Calendar are time containers. AI scheduling agents — across all four generations — add intelligence on top: finding optimal slots, prioritizing tasks, preparing context, and (at Gen 4) executing work automatically."
+          "question": "What is an AI scheduling agent?",
+          "answer": "Software that interprets scheduling intent and can use calendar tools to find, create, move, or cancel events within permissions."
         },
         {
-          "question": "Do I still need Calendly if I use an AI scheduling agent?",
-          "answer": "Yes, for external booking. Gen 1 tools like Calendly handle the coordination layer — letting people outside your organization find time on your calendar. Gen 2+ tools complement that layer rather than replacing it. You can run Calendly for booking and a Gen 4 tool for execution on the same calendar."
+          "question": "How is it different from a booking link?",
+          "answer": "A booking link exposes availability; an agent interprets a request and may coordinate several calendar actions."
         },
         {
-          "question": "Can an AI scheduling agent join my meetings?",
-          "answer": "Gen 3 tools can provide pre-meeting context and research. Gen 4 tools prep briefs before meetings, draft follow-ups after, and maintain per-event workspaces with files and run history. Actual meeting joining — the agent sitting in your Zoom call — varies by tool and is not a standard capability across the category as of mid-2026."
+          "question": "Are the four generations an industry standard?",
+          "answer": "No. They are an editorial framework for comparing booking, optimization, contextual assistance, and execution."
         },
         {
-          "question": "Is an AI scheduling agent the same as a virtual assistant?",
-          "answer": "Related but different. A virtual assistant is a human service — someone you hire to manage your calendar and tasks. An AI scheduling agent is software that runs on your machine, with no dependency on another person's availability, time zone, or working hours. The two can coexist: a virtual assistant might configure your AI scheduling agent, or the agent might handle routine scheduling while the human VA handles judgment-intensive coordination."
+          "question": "What can Cal.com Agents do?",
+          "answer": "Its official launch describes agenda queries, rescheduling, adding attendees, and creating appointments across supported surfaces."
         },
         {
-          "question": "How do I choose between Gen 2, Gen 3, and Gen 4?",
-          "answer": "Use the five-question framework from this article. If you only need scheduling optimization (better task placement, conflict resolution) → Gen 2. If you need basic meeting prep and email-driven scheduling → Gen 3. If your calendar _is_ your operating system — you have no team, no assistant, and every event demands real work output → Gen 4."
+          "question": "Does every scheduling agent prepare and follow up on meetings?",
+          "answer": "No. Those capabilities require meeting context, connectors, triggers, and explicit product support."
         },
         {
-          "question": "Can AI scheduling agents handle multi-party coordination across different organizations?",
-          "answer": "Gen 1 tools (Calendly, Doodle) handle this well for simple availability polling. Gen 2 tools (Motion, Reclaim) are better suited to internal team scheduling. For complex multi-party, cross-organization coordination — like interview panels across companies — domain-specific Gen 3 tools (Findem, Glider AI) offer dedicated solutions. General-purpose Gen 3 and Gen 4 tools are improving here but may still require manual override for edge cases involving external calendars with restrictive sharing policies."
+          "question": "What permissions matter?",
+          "answer": "Calendar scope, attendee changes, conferencing, connected messaging, external sends, and approval for consequential edits."
+        },
+        {
+          "question": "What should teams test first?",
+          "answer": "Time zones, conflicts, recurring events, attendee consent, cancellation behavior, and audit history."
+        },
+        {
+          "question": "When is a scheduling agent worthwhile?",
+          "answer": "When coordination is frequent enough that intent parsing and controlled calendar actions save more work than they create."
         }
       ]
     },
@@ -1027,28 +1075,36 @@
     "/blog/ai-workspace-agents": {
       "items": [
         {
-          "question": "What exactly is an AI workspace agent?",
-          "answer": "An AI workspace agent is software that works like a coworker living inside your actual work environment — your files, apps, and browser — taking multi-step actions and carrying context across sessions. \"Workspace\" means it operates where your work already lives; \"agent\" means it doesn't just answer questions but reads files, opens apps, and gets things done on your behalf. The specifics vary by product because the category is still forming."
+          "question": "What is an AI workspace agent?",
+          "answer": "An agent with durable instructions or state, access to approved tools and files, and a way to produce reviewable work."
         },
         {
-          "question": "How is a workspace agent different from a chatbot like ChatGPT?",
-          "answer": "Chat assistants are conversation-shaped: you bring a question, they bring an answer, and the context dies when the tab closes. Workspace agents are environment-shaped: they operate on your files directly, remember what happened last Tuesday, and carry intent across steps. The line is blurring as chat products add connectors and desktop agents grow chat capabilities, but the direction each starts from is different."
+          "question": "How is it different from a chatbot?",
+          "answer": "A chatbot mainly answers turns; a workspace agent can carry state across steps and act through tools."
         },
         {
-          "question": "How is a workspace agent different from a workflow builder like Zapier?",
-          "answer": "Workflow builders are pre-defined: you draw the flowchart, set the triggers, and X triggers Y then Z reliably every time. Workspace agents work the opposite way — you describe the outcome and the agent figures out the sequence itself. A Zap always does the exact same thing, which is great for repeated, predictable work; agents are better when the shape of the task itself keeps changing."
+          "question": "How is it different from a workflow builder?",
+          "answer": "A workflow builder follows predefined branches; an agent can plan within goals and constraints, with less deterministic behavior."
         },
         {
-          "question": "Who is a workspace agent for, and who doesn't need one?",
-          "answer": "They're aimed at solo operators doing multi-role work and independent consultants running several parallel projects — anyone paying a context-switching tax between tools. You probably don't need one if your work is one narrow task, if your workflows are stable and repeated, if you're on a large team with established tooling, or if you're new to AI (start with a chat assistant instead)."
+          "question": "Does every workspace agent run locally?",
+          "answer": "No. Workspaces may be local, cloud-hosted, or hybrid, with different data and execution boundaries."
         },
         {
-          "question": "What are the main limitations right now?",
-          "answer": "Reliability on long tasks: beyond 3–5 steps agents drift and need babysitting. Permissions and security are immature for a tool with file and browser access. Pricing is opaque, with credit and token systems. And interoperability is poor: skills built in one tool don't transfer, so you're locked into an ecosystem. None are necessarily dealbreakers, but they're worth knowing upfront."
+          "question": "What can current workspace agents do?",
+          "answer": "Depending on product and permissions, they can research, create files, use connected apps, run code, schedule work, and request approvals."
         },
         {
-          "question": "How do I decide whether to adopt a workspace agent?",
-          "answer": "Answer three questions first: what specific workflow are you trying to improve; is your work more repeated (use a workflow builder) or more varied and context-heavy (use an agent); and are you comfortable giving the tool real access to your files and apps? If you have clear answers to all three, a thirty-minute trial is probably worthwhile."
+          "question": "What should remain visible to users?",
+          "answer": "Inputs, tools used, permissions, intermediate evidence, outputs, approvals, failures, and run history."
+        },
+        {
+          "question": "What are the main risks?",
+          "answer": "Excessive permissions, prompt injection, stale memory, unsupported actions, hidden data movement, and weak review."
+        },
+        {
+          "question": "How should a team adopt one?",
+          "answer": "Start with a bounded repeatable task, least privilege, test cases, named reviewers, and measurable acceptance criteria."
         }
       ]
     },
@@ -4936,7 +4992,7 @@
         },
         {
           "question": "这和直接用 ChatGPT 有什么不同？",
-          "answer": "ChatGPT（或任何单轮提示的 AI）一次只回应一个输入。Agent 则能把动作串起来——先检索、再总结、再格式化、再输出——无需你在步骤之间手动搬运结果。正是这种\"串链\"能力，让 Agent 能端到端地完成调研、起草、内容再利用或竞品监控。"
+          "answer": "聊天回答主要返回一段消息；Agent 则可以在工具循环中检查状态、采取动作、观察结果、验证，再继续推进或暂停。这个循环能否可靠运行，取决于外围 Harness、工具权限、审批和停止条件，而不只是模型本身。"
         },
         {
           "question": "AI Agent 在哪些环节仍会失灵？",
@@ -4945,6 +5001,14 @@
         {
           "question": "刚开始用 AI Agent，该抱什么预期？",
           "answer": "先做边界清楚的只读或草稿试点，测试正常与失败样本，记录每次工具调用和审批，与人工基线比较。上一层边界可靠后，再逐项扩大权限。"
+        },
+        {
+          "question": "怎样选择第一个 AI Agent 应用场景？",
+          "answer": "可以按输入是否可得、工具权限、结果是否可验证、风险、搭建成本和人工审批位置给重复任务评分。优先选择有价值、边界清楚、可撤销且容易检查的任务。"
+        },
+        {
+          "question": "最适合首先自动化的低风险 Agent 场景是什么？",
+          "answer": "只读监控、分类或生成草稿，通常比直接发消息或修改生产记录风险更低。首个试点应留在沙箱或待审队列中，对外和不可逆动作必须先由人批准。"
         }
       ]
     },
@@ -5023,28 +5087,36 @@
     "/zh/blog/ai-agent-workflow-vibe-coding": {
       "items": [
         {
-          "question": "AI Agent 工作流比 Vibe Coding 更好吗？",
-          "answer": "对一次性原型或用完即弃的个人项目，vibe coding 够好——快、有趣、风险低。对任何你要扩展、维护或拿给用户看的东西，是的：结构化的 AI Agent 工作流能用更少的总返工换来更好的结果。vibe coding 大概能带你走七成——初稿很漂亮，可功能越加越多、越迭代应用越容易坏，最后还是得有人类收拾残局。结构补上的正是这段距离。"
+          "question": "什么是面向 Vibe Coding 的 AI Agent 工作流？",
+          "answer": "它是一套可重复流程，把编程请求依次变成有边界的需求、经审查的计划、受控实现、自动检查、Diff 审查，以及带回滚方案的合并。"
         },
         {
-          "question": "Vibe Coding 没有结构，到底会坏在哪？",
-          "answer": "不是 AI 写不好代码，而是大多数人用起来既没计划、也没强制规则、更没生成与部署之间的审查。中途每改一次想法，就多欠一笔让以后 Agent 犯迷糊的技术债；每个错误还会向下游复利：Agent 修好一个文件，却弄坏引用它的两个文件，因为它看不到完整依赖链。解法是在这些失效模式放大之前抓住它们。"
+          "question": "什么时候应该停止 Vibe Coding，切换到结构化流程？",
+          "answer": "当任务涉及真实用户或数据、安全或支付、多个组件联动、他人后续维护，或出错后必须回滚时，就该切换。"
         },
         {
-          "question": "一套结构化的 AI Agent 工作流实际怎么跑？",
-          "answer": "行之有效的简单链路是：先用大白话写一份 spec——做什么、边界情况、绝不该做什么；再以「计划模式」让 Agent 把含糊之处都挑出来，执行前修掉；随后有界执行，一次只给一个任务；最后验收前先审查输出。重点检查点是合并进 main 之前，以及涉及身份验证、数据处理或外部 API 调用的步骤之后——「幻觉式绕过」最容易出现在那里。"
+          "question": "验收包里应该写什么？",
+          "answer": "写清用户最终看到的结果、明确不做的事、正确与错误示例、可能涉及的文件、必须通过的命令、风险限制，以及 Agent 交付时要提供的证据。"
         },
         {
-          "question": "用这套工作流需要会写代码吗？",
-          "answer": "不一定，但你要能读懂输出、看出不对劲的地方——审查靠的是判断力，不是语法知识。判断不了输出有没有照你要求做，就抓不住会复利放大的失效模式，用哪个工具都一样。想更省力，可以用测试循环代替逐行读码：只要测试通过、边界情况覆盖到了，代码就不必每行都读。"
+          "question": "测试应该由编程 Agent 来写吗？",
+          "answer": "Agent 可以建议或编写测试，但测试必须对应独立定义的验收标准，并覆盖失败路径、权限和回归场景。"
         },
         {
-          "question": "不写代码的单人创业者也能用吗？",
-          "answer": "能——同一套结构适用于任何多步骤 AI 工作流：内容管线、调研流程、文档分析、客户交付物都算。模式完全一致：先 spec、有界执行、产出流向重要场合前先人工审查。落到实践可以是：「Agent」是一串结构化的 prompt 链，「测试」是发布前的自查清单，「版本控制」是带日期的 changelog。它不必是代码，但必须是有意为之。"
+          "question": "测试全部通过，就能合并 AI 生成的代码吗？",
+          "answer": "不能。还要审完整 Diff，检查范围膨胀、校验被删、新依赖、接口变化、数据处理、迁移可逆性，以及只会复述实现的测试。"
         },
         {
-          "question": "应该从哪些工具开始？",
-          "answer": "从简单的开始：选一个 Agent 工具，养成一个版本控制习惯。每月约 $20 的 Cursor 对不习惯终端的人是最容易的入口；在更大更复杂的项目上，Claude Code 值得升级。但工具本身，不如围绕它的工作流纪律重要——先设计再编码、写测试、每次改动都进版本控制。当 AI 写你一半代码时，这些习惯反而更关键。"
+          "question": "为什么要把 AI 指令放进仓库？",
+          "answer": "这样构建命令、目录规则、禁止操作和完成标准能与代码一起版本管理，并在不同会话中重复使用。"
+        },
+        {
+          "question": "哪些 AI 编程决定仍然必须由人负责？",
+          "answer": "产品验收标准、高风险改动的明确审查，以及包含监控和回滚准备在内的最终发布决定，都必须由人负责。"
+        },
+        {
+          "question": "哪款 AI 编程工具最适合这套流程？",
+          "answer": "先设计流程再选工具。合适的工具应能先检查再编辑、遵守权限边界、运行仓库真实检查，并在不绕过合并规则的前提下产出可审查 Diff。"
         }
       ]
     },
@@ -5231,112 +5303,144 @@
     "/zh/blog/ai-file-organizer-mac": {
       "items": [
         {
-          "question": "Mac 上的 AI 文件整理器会把我的文件搞乱吗？",
-          "answer": "只要你选了一款带审阅步骤和完整撤销的工具、并先在一次性文件夹上测试，就不会。安全的整理器把每个建议的重命名和移动展示成一棵树，批准前不执行任何操作，并保留能回滚整批——而不只是最后一个文件——的历史。原地重命名的风险低于文件夹移动，因为移动会改变应用、alias 和已保存工作流可能指向的路径。"
+          "question": "Mac 上的 AI 文件整理器能做什么？",
+          "answer": "视工具而定，它可以建议文件名、分类文件、移动进目录、添加 Finder 标签，或标出疑似重复项。第一次运行前要逐项确认允许哪些操作。"
         },
         {
-          "question": "Mac 上的 AI 文件整理器会把我的文件上传到云端吗？",
-          "answer": "完全取决于工具的架构，所以查厂商文档，而不是营销页。Floatboat 这类完全端侧的工具用本地模型分析、什么都不上传；混合工具把 OCR 和索引留在本地、但把提取的文本发给你选定的模型；托管云工具把内容发到厂商的服务器——例如 nymos 的订阅在欧盟境内处理。问清两件事：分析在哪里运行、厂商留存什么。"
+          "question": "整理 iCloud Drive 里的文件安全吗？",
+          "answer": "可以安全操作，但应先完整下载测试文件夹，检查同步状态和剩余空间，确认目标是否仍在同步区，并意识到改动可能传播到其他设备。"
         },
         {
-          "question": "AI 文件整理器能在 Mac 上离线工作吗？",
-          "answer": "能，前提是模型在本地运行。在 Apple Silicon 上，Floatboat 和 Floxtop 经 Neural Engine 或 GPU 运行分类和命名模型，分析无需联网。云端和混合工具需要网络，除非你配置 Ollama 之类的本地模型。两个注意点：模型下载发生在首次启动，而 iCloud Drive 里被偏移的文件必须先下载下来才能读取内容。"
+          "question": "AI 文件整理器一定需要“完全磁盘访问权限”吗？",
+          "answer": "不一定。先只授权一个选定文件夹；只有厂商明确解释了为何需要、哪些功能依赖它时，才考虑授予完全磁盘访问权限。"
         },
         {
-          "question": "在 Mac 上，原地重命名和移动进文件夹哪个更好？",
-          "answer": "取决于你的文件是干什么用的。原地重命名保住每一条路径、alias 和引用，是依赖现有结构时的安全默认——nymos 和 Zush 的哲学。移动文件会改变路径，而这正是你驯服下载、桌面和截图那堆平铺杂物时想要的，但你要选一款能预览目标位置、并在客户文件夹被埋错时能回滚整批的工具。"
+          "question": "端侧 OCR 是否代表文件数据绝不会离开 Mac？",
+          "answer": "不一定。OCR 可能在本地完成，但提取文本、文件名、缩略图、提示词或遥测仍可能发往外部服务，因此要核对完整数据流和保留政策。"
         },
         {
-          "question": "为什么整理完之后 Spotlight 找不到我的文件？",
-          "answer": "Spotlight 立即索引文件名，所以描述性重命名几秒内就能被搜到。如果你按扫描件或照片的内容搜索，Spotlight 只能索引它读得到的东西——从未做过 OCR 的纯图片扫描件在内容搜索里始终隐形，图片里的文字不会被自动索引。让文件过一个带 OCR、且保留本地索引的工具，或者让读内容的整理器依据提取的文本重命名，即使像素无法被索引，搜索面也会改善。"
+          "question": "重命名或移动后，Finder 标签和元数据一定会保留吗？",
+          "answer": "不要默认会保留。应用代表性文件做测试，并核对标签、注释、时间、扩展属性、权限、应用引用和 Spotlight 搜索结果。"
         },
         {
-          "question": "我需要什么 macOS 版本才能用 AI 文件整理器？",
-          "answer": "比大多数 roundup 承认的更参差。nymos 从 macOS 14（Sonoma）起步，包括 Zush 和 Floxtop 在内的多数现役工具要求 macOS 15，NameQuick 需要 15.4 或更新，Tidow 目前的版本面向 macOS 26、AI 功能需 M1 或更新芯片。下载前查清门槛，并记住 Apple Silicon 端侧工具在 M 系芯片上表现最佳。"
+          "question": "重命名一定比移动文件安全吗？",
+          "answer": "重命名的影响面通常小于移动整棵目录，但两者都会改变路径，也都可能破坏引用。应验证自己依赖的具体应用和自动化流程。"
+        },
+        {
+          "question": "真正可靠的撤销功能应该恢复什么？",
+          "answer": "它应恢复整批文件的名称和位置，应用重启后仍可使用，能处理执行到一半失败的情况，并保留原路径与最终路径记录。"
+        },
+        {
+          "question": "在 Mac 上测试 AI 文件整理器，最安全的方法是什么？",
+          "answer": "先备份，再把 20–50 个有代表性的文件复制到一次性文件夹；逐项审预览，执行并撤销整批，核对元数据、引用、Finder 和 Spotlight 后再扩大范围。"
         }
       ]
     },
     "/zh/blog/ai-file-organizer-windows": {
       "items": [
         {
-          "question": "Windows 上最好的 AI 文件整理器是什么？",
-          "answer": "没有单一最佳，因为这个品类按监督方式分裂。如果你想要一个监视文件夹、自动路由新文件的后台分类器，NudgeFile 这类 Microsoft Store 应用正合此任。如果你偏好开源和完全掌控，hyperfield 的 AI File Sorter 跑本地模型、让你审阅一切。如果你想要内容感知重命名加一次买断，FilesDesk 或独立开发的 AI File Organizer Pro 匹配。Floatboat 的整理器适合想用大白话描述目录树、预览它、端侧运行一切、并带整批撤销的人。先在一个真实文件夹上测试入围者，别信截图。"
+          "question": "Windows AI 文件整理器能做什么？",
+          "answer": "依据文件名、元数据或内容分类、重命名和移动文件，最好在改动前提供预览。"
         },
         {
-          "question": "Windows 上的 AI 文件整理器会上传我的文件吗？",
-          "answer": "取决于架构，差别就写在每款工具的隐私页上。本地优先的工具——带内置 Ollama 处理器的 NudgeFile、离线模式下的 AI File Sorter、以及 Floatboat 的整理器——把文件名和内容留在你的机器上。带云端的工具对把数据发给模型供应商是坦白的；例如 Sortio 默认把文件名和元数据发给你选定的供应商，启用内容功能后才上传文件内容。安装前该问的不是「它是不是 AI」，而是「AI 能看到什么」。"
+          "question": "Windows 上能完全离线整理吗？",
+          "answer": "可以，前提是模型本地运行且文件已下载；云端占位符或云 API 会破坏完全离线边界。"
         },
         {
-          "question": "为什么这么多 AI 文件整理器只有 Mac 版？",
-          "answer": "macOS 市场先到。独立开发者为自己的机器开发重命名工具和整理器，而 Mac 用户证明了他们愿意为精致的文件工具付费——截至 2026 年 9 月，nymos 和 Sparkle 都站在 macOS 一侧。Apple Silicon 还给了开发者一块可预测的芯片去优化本地模型。Windows 的硬件长尾更长，本地 AI 更多是配置功课，精致的消费级应用因此更难交付。Windows 原生的供给更小但真实存在，且偏向本地和开源工具。"
+          "question": "本地处理是否意味着 OneDrive 文件不会上云？",
+          "answer": "不是。本地工具仍可能修改已被 OneDrive 同步的目录。"
         },
         {
-          "question": "在 Windows 上跑 AI 文件整理器需要很强的 GPU 或 NPU 吗？",
-          "answer": "不需要，但硬件改变体验。文本分类和命名用小型本地模型在 CPU 上就能接受地跑，这正是好几款工具默认用能在老笔记本上工作的紧凑模型的原因。视觉类工作——给几千张截图和照片分类——才是独立 GPU 或较新 Copilot+ PC 上 NPU 的价值所在。基于 Ollama 的工具让你选模型大小：先从小模型开始，命名质量有要求再上更大的。"
+          "question": "Files On-Demand 占位文件是什么？",
+          "answer": "它们显示在文件资源管理器中，但完整内容可能仍在云端，直到用户下载。"
         },
         {
-          "question": "整理器会把 OneDrive 同步的文件搞乱吗？",
-          "answer": "只有你不先检查才会。如果你的桌面或文稿经已知文件夹移动被重定向，这些文件夹自动同步，整理器在其中重命名或移动文件会通过 OneDrive 传播这些改动。这通常没问题，但两条规则保证安全：验证工具能正确处理「仅云端」而未下载的文件，并理解「本地」不再意味着「只在这台 PC 上」。任何一条让你不安，就整理一个不在同步范围内的文件夹。"
+          "question": "应一次整理整个下载文件夹吗？",
+          "answer": "不应。先复制一小批测试，检查命名与去向，再扩大范围。"
         },
         {
-          "question": "我能撤销 Windows 上一次大规模的 AI 整理吗？",
-          "answer": "预览优先的工具让大规模运行可逆。Floatboat 的整理器一键回滚整批，NudgeFile 保留事务日志、可一键还原任何重命名或路由操作。安全模式到处一样：让预览步骤保持诚实、分批运行，并在第一次大规模动手前对丢不起的文件夹做备份或导出一份文件清单。整块硬盘重组后的撤销，比一个下载文件夹后的撤销是重得多的故事。"
+          "question": "应要求哪些回滚能力？",
+          "answer": "事务日志、按批撤销，或记录每次重命名和移动的清单。"
+        },
+        {
+          "question": "AI 能安全删除重复文件吗？",
+          "answer": "应把重复项视为候选，先比对哈希或内容，再人工确认删除。"
+        },
+        {
+          "question": "最安全的 Windows 流程是什么？",
+          "answer": "使用有备份的测试目录、让云文件可离线、预览每项移动，并在完成后检查搜索。"
         }
       ]
     },
     "/zh/blog/ai-follow-up-automation": {
       "items": [
         {
-          "question": "跟进需要我自己发起吗，还是系统会自动跑？",
-          "answer": "不用你记得发起——系统自己动。日历事件一结束，跟进管线就以「会议结束」为触发器自动启动，没有提示词、没有按钮点击，也不用你切换上下文。时机正是关键：会后几小时再手工跟进，细节已经衰减；立即捕获则趁会议还新鲜，产出更准、也更可能存在——一条马上被路由出去的不完美行动项，胜过三天后才整理、甚至永不整理的完美行动项。"
+          "question": "什么是 AI 跟进自动化？",
+          "answer": "把会议证据转成经复核的决议、行动项、草稿和下游记录的工作流。"
         },
         {
-          "question": "为什么行动项总在会议之间流失？",
-          "answer": "因为跟进通常是手动习惯，要和日历上的一切抢时间，而且衰减极快：细节淡去、归属含混、紧迫感下降。对单人创始人更糟——没人分担，跟进量随会议数量线性增长。常见的应对都撑不住：「我会记住」撑不过十场会，「打完电话再整理」常没有缓冲时间，「周五集中跟进」则让行动项躺上四天，白白错过跟进真正起作用的 24 小时窗口。"
+          "question": "它需要什么输入？",
+          "answer": "逐字稿、笔记、聊天记录、议程或其他能证明实际共识的可靠记录。"
         },
         {
-          "question": "AI 跟进自动化实际是怎么运作的？",
-          "answer": "靠一条三阶段的会后管线。先是决策捕获：把真正的定论从讨论中分离出来，输出结构化清单——每场会通常三到七条决定；接着行动抽取：把决定转成带负责人和截止日的任务，截止日既来自会上明说，也由系列会议的下一场倒推；最后是准备闭环：把未完成项喂进下一场会议的准备，让「准备—开会—跟进—再准备」的循环自行运转。"
+          "question": "会议摘要等于跟进自动化吗？",
+          "answer": "不等于。摘要记录讨论，自动化还要明确负责人、写入位置和审批。"
         },
         {
-          "question": "能处理模糊或非结构化的会议吗？",
-          "answer": "能，但有边界。会议有清晰决策点和任务分配时它表现最好；对头脑风暴、探索式讨论这类开放式对话，产出会比较稀疏——系统只捕捉确实浮现出的具体成果，不会在本来没有结构的地方凭空造出结构。这正是它的诚实之处：无结构会议能抽出的决定更少，但浮现出的东西不会就此淹没在讨论里。"
+          "question": "行动项应如何结构化？",
+          "answer": "每项应包含动作、负责人、截止或复核日期、来源证据和状态。"
         },
         {
-          "question": "它真能分清\"决定\"和\"闲聊\"吗？",
-          "answer": "能，而且准确率合理。系统靠语言与结构信号把对话分成不同形态——社交话、信息交换、权衡、收束——只有「收束」会产出决定和行动项。它不必把每句话都分类对，只要认出收束时刻即可，而这类时刻通常特征明显：出现「那就定」「就这么推进」等收拢话术，或从多人各抒己见变成一人做总结。"
+          "question": "AI 可以自动发送跟进吗？",
+          "answer": "部分集成可以，但涉及对外承诺的内容通常仍应人工审批。"
         },
         {
-          "question": "它能接进我现有的工具和任务管理器吗？",
-          "answer": "这正是它的设计意图。日历驱动的系统站在编排层：读你的日历拿触发器、处理会议内容、把产出路由到你已有的任务管理器、邮箱或 Slack。接入 Linear、Notion、Asana、Todoist 这类主流工具很重要——意味着你不需要抛弃现有工作流：抽取出的行动项只是以你惯用的格式和字段，出现在你本来就在用的系统里。"
+          "question": "不确定事项怎么处理？",
+          "answer": "标成未决或请求澄清，不要凭空补负责人和日期。"
+        },
+        {
+          "question": "结果可以写到哪里？",
+          "answer": "取决于连接器，可进入邮件、任务系统、CRM、项目工具和下一次会议简报。"
+        },
+        {
+          "question": "如何衡量质量？",
+          "answer": "跟踪抽取准确率、遗漏决议、错误负责人、审批改动、投递失败和最终完成率。"
         }
       ]
     },
     "/zh/blog/ai-follow-up-email-opus-4-8": {
       "items": [
         {
-          "question": "AI 跟进邮件会编造会上没讨论过的内容吗？",
-          "answer": "有可能，这是最需要提防的风险。我测试时，一场结构良好的 45 分钟会议的草稿基本准确；但决议不清的混乱会议，就出现过错误的行动项。模型在进步——Anthropic 报告 Claude Opus 4.8 把自身瑕疵留而不提的可能性比上代低约四倍——但发送前亲自读稿，核对有没有凭空冒出的承诺、归错人的负责人，这一步仍不可替代。"
+          "question": "AI 跟进邮件应包含什么？",
+          "answer": "简短回顾、已确认决议、带负责人的下一步、日期、未决问题和有证据的承诺。"
         },
         {
-          "question": "什么是 AI 跟进邮件？",
-          "answer": "由 AI 根据会议上下文——通常是逐字稿或你的笔记——起草的邮件。AI 提炼出讨论了什么、定了哪些决议、谁在什么时候做什么，整理成一封带行动项的简短总结供你发送。发出前你仍需自己复核编辑。一封好的跟进邮件要确认讨论内容、让下一步可见，并制造一点点推动行动的压力。"
+          "question": "一定需要完整逐字稿吗？",
+          "answer": "不一定，但证据必须足以区分正式决议与讨论过程。"
         },
         {
-          "question": "AI 如何在会议后起草跟进？",
-          "answer": "把会议逐字稿喂给 Claude、GPT、Gemini 之类的模型，配一条指定输出格式的提示词。模型识别决议、把行动项指派给稿中提到的人，再起草邮件。我为此存了一条提示词——配好后每场会五分钟以内搞定。Fireflies、[Read.ai](<http://Read.ai>) 这类工具内置的跟进功能，还能把这一步进一步自动化。"
+          "question": "Claude Opus 4.8 能起草跟进邮件吗？",
+          "answer": "能；完整流程仍需要提示词、来源材料和人工复核。"
         },
         {
-          "question": "发送前我必须复核哪些内容？",
-          "answer": "三件事：语气（符不符合你和对方的关系？）、事实准确性（尤其是价格、截止日期与承诺）、完整性（AI 有没有漏掉什么——包括会上没被说出口的话？）。我从不跳过读草稿。改价、调范围这类敏感承诺，我会对照自己的笔记核对——一个归错人的行动项或凭空多出的承诺，可能造成真实的伤害。"
+          "question": "哪些内容必须人工检查？",
+          "answer": "收件人、语气、承诺、负责人、日期、敏感信息及任何对外写入或发送动作。"
         },
         {
-          "question": "AI 什么时候该建任务而不是发邮件？",
-          "answer": "当会议产出的行动项只涉及内部、不需要对外沟通时。如果跟进是给自己团队的，直接把条目推进任务看板（Notion、Asana 或一张简单清单），可以完全省掉邮件。客户相关的跟进我仍会写邮件，但内部会议只建任务更快。我的判断标准：对方需要看到一份总结，还是只需要知道自己负责什么？如果是后者，跳过邮件。"
+          "question": "不确定信息应怎样写？",
+          "answer": "明确标注待确认或直接省略，不要把模糊讨论改写成确定承诺。"
         },
         {
-          "question": "怎么让跟进工作流可复用？",
-          "answer": "存一条固定提示词，而不是每次从零写。保持同一套结构——回顾、决议、行动项、截止日期、未决问题——唯一的变量只剩逐字稿：会开完、稿贴上、草稿出来、你复核、你发送，每场会五分钟以内。对客户对账、团队同步这类周期性会议，这个模式很好扩展：收件人习惯了固定格式，你也不用每次重造一封邮件。"
+          "question": "工作流也能创建任务吗？",
+          "answer": "只有连接任务系统，并映射字段、配置权限和审批策略后才可以。"
+        },
+        {
+          "question": "固定模板有用吗？",
+          "answer": "有，可作为验收清单，但证据和措辞仍要适配每场会议。"
+        },
+        {
+          "question": "怎样让流程可重复？",
+          "answer": "固定必填字段、可靠逐字稿、明确审批，并统计修改和遗漏。"
         }
       ]
     },
@@ -5379,28 +5483,36 @@
     "/zh/blog/ai-scheduling-agent": {
       "items": [
         {
-          "question": "AI 日程 Agent 和日历 App 有什么区别？",
-          "answer": "日历 App 告诉你_何时_；AI 日程 Agent 想清楚拿这段时间_做什么_。Google Calendar 与 Apple Calendar 是时间容器；AI 日程 Agent——四代皆是——在上面加智能：找最优空档、排任务优先级、准备上下文，（第 4 代）自动执行工作。"
+          "question": "什么是 AI 日程 Agent？",
+          "answer": "理解排程意图，并在权限范围内调用日历工具查找、创建、移动或取消事件的软件。"
         },
         {
-          "question": "用了 AI 日程 Agent 还需要 Calendly 吗？",
-          "answer": "外部预约需要。Calendly 这类第 1 代工具处理协调层——让组织之外的人能在你日历上找到时间。第 2 代以上工具是在那一层之上做补充，而不是取代。你可以在同一份日历上：Calendly 负责预约，第 4 代工具负责执行。"
+          "question": "它和预约链接有何区别？",
+          "answer": "预约链接展示空闲时间；Agent 会理解请求，并可能协调多个日历动作。"
         },
         {
-          "question": "AI 日程 Agent 能进我的会议吗？",
-          "answer": "第 3 代工具能提供会前上下文与研究。第 4 代工具会在会前备好简报、会后起草跟进，并用文件与运行历史维护每个事件的工作区。至于\"真的坐进你的 Zoom 会议\"——因工具而异，截至 2026 年中仍不是整个品类的标准能力。"
+          "question": "“四代”是行业标准吗？",
+          "answer": "不是，是本文比较预约、优化、上下文协助与执行能力的编辑框架。"
         },
         {
-          "question": "AI 日程 Agent 和虚拟助理是一回事吗？",
-          "answer": "相关但不同。虚拟助理（virtual assistant）是**人的服务**——你雇一个人来管日历和任务；AI 日程 Agent 是**跑在你机器上的软件**，不依赖另一个人的可及性、时区或工作时间。两者可以共存：人类助理可以帮你配置 AI 日程 Agent，或者 Agent 处理例行排程、人类 VA 处理重判断的协调。"
+          "question": "Cal.com Agents 能做什么？",
+          "answer": "官方发布说明包括查询日程、改期、添加参会者和创建预约等受支持动作。"
         },
         {
-          "question": "第 2、3、4 代之间怎么选？",
-          "answer": "用本文的五个问题框架。你只需要排程优化（更好的任务排布、冲突解决）→ 第 2 代；需要基础会前准备和邮件驱动的排程 → 第 3 代；如果你的日历_就是_操作系统——没有团队、没有助理、每个事件都要求真实的工作产出 → 第 4 代。"
+          "question": "所有日程 Agent 都会准备和跟进会议吗？",
+          "answer": "不会，这些能力需要会议上下文、连接器、触发器和明确产品支持。"
         },
         {
-          "question": "AI 日程 Agent 能跨组织处理多方协调吗？",
-          "answer": "第 1 代工具（Calendly、Doodle）在简单可约性轮询上做得很好；第 2 代（Motion、Reclaim）更适合内部团队排程。对复杂的多方、跨组织协调——比如跨公司的面试小组——垂类第 3 代工具（Findem、Glider AI）提供专门方案。通用第 3、4 代工具在这方面在进步，但遇到共享策略受限的外部日历等边缘情况时，可能仍需人工干预。"
+          "question": "哪些权限最重要？",
+          "answer": "日历范围、参会者修改、会议链接、消息连接、对外发送和高影响改动审批。"
+        },
+        {
+          "question": "团队首先该测试什么？",
+          "answer": "时区、冲突、重复事件、参会者同意、取消行为与审计记录。"
+        },
+        {
+          "question": "什么时候值得使用？",
+          "answer": "当协调足够频繁，意图理解和受控日历动作节省的工作明显多于新增管理成本时。"
         }
       ]
     },
@@ -5515,28 +5627,36 @@
     "/zh/blog/ai-workspace-agents": {
       "items": [
         {
-          "question": "到底什么是 AI 工作区 Agent？",
-          "answer": "AI 工作区 Agent 是一种住进你真实工作环境的 AI 软件：操作文件、应用与浏览器，代表你执行多步操作，并跨会话携带上下文。「工作区」指它在工作本来发生的地方运行；「Agent」指它不只是回答问题，还会自己读文件、开应用、把事情做完。能做到多自主，产品之间差异很大。"
+          "question": "什么是 AI 工作区 Agent？",
+          "answer": "拥有持久指令或状态、可访问获准工具与文件，并能交付可复核成果的 Agent。"
         },
         {
-          "question": "工作区 Agent 和 ChatGPT 这类聊天助手有什么区别？",
-          "answer": "聊天助手是「对话形」的：你带问题来、它带答案走，标签页一关上下文就结束。工作区 Agent 是「环境形」的：直接操作你的文件，记得上周二发生了什么，把意图一路带到后续步骤。随着聊天产品接入连接器、桌面 Agent 长出对话能力，界限正在模糊，但两者出发的方向不同。"
+          "question": "它与聊天机器人有何不同？",
+          "answer": "聊天机器人主要逐轮回答；工作区 Agent 可跨步骤保留状态并通过工具行动。"
         },
         {
-          "question": "工作区 Agent 和 Zapier 这类工作流搭建器有什么区别？",
-          "answer": "工作流搭建器是「预先定义」的：你画好流程图、设好触发器，X 触发 Y 再 Z，每次都稳定执行。工作区 Agent 相反——你描述想要的结果，由 Agent 自己推导操作序列。一条 Zap 每次都做完全一样的事，适合重复、可预测的工作；任务形态本身经常变化的场景，则更适合 Agent。"
+          "question": "它与工作流搭建器有何不同？",
+          "answer": "工作流按预设分支执行；Agent 可在目标与约束内规划，但行为确定性更低。"
         },
         {
-          "question": "工作区 Agent 适合谁用？谁不需要？",
-          "answer": "它瞄准身兼多职的单人经营者和同时跑多个并行项目的独立顾问——任何在工具之间支付上下文切换税的人。如果你的工作是某种单一窄任务、工作流已经稳定重复、身处有成熟工具链的大团队，或者你刚接触 AI（这种情况建议先从聊天助手开始），你大概不需要它。"
+          "question": "工作区 Agent 都在本地运行吗？",
+          "answer": "不是，可能是本地、云端或混合架构，数据与执行边界各不相同。"
         },
         {
-          "question": "它目前最大的限制是什么？",
-          "answer": "目前主要卡在四件事：长任务可靠性——超过 3–5 步就容易跑偏，你得盯着；权限与安全还不成熟，能读文件、上浏览器的工具既强大也危险；定价不透明，积分、按 token 计费各有说法；互操作性差，建好的技能带不走，会被锁进一个生态。这些不一定是劝退理由，但值得提前知道。"
+          "question": "当前工作区 Agent 能做什么？",
+          "answer": "视产品和权限而定，可研究、创建文件、调用连接应用、运行代码、定时工作并请求审批。"
         },
         {
-          "question": "怎么判断自己该不该入手一个工作区 Agent？",
-          "answer": "先回答三个问题：你想改进的具体工作流是什么；你的工作是重复型居多（选工作流搭建器）还是多变、上下文密集（选工作区 Agent）；你是否愿意让工具真正访问你的文件和应用。三个问题都有了清晰答案，花半小时实际试试大概是值得的。"
+          "question": "哪些信息应对用户可见？",
+          "answer": "输入、所用工具、权限、中间证据、产物、审批、失败和运行历史。"
+        },
+        {
+          "question": "主要风险是什么？",
+          "answer": "权限过大、提示注入、过期记忆、无依据动作、隐藏数据流动和复核不足。"
+        },
+        {
+          "question": "团队应如何采用？",
+          "answer": "从边界清楚的重复任务开始，使用最小权限、测试用例、指定复核者和可衡量验收标准。"
         }
       ]
     },
@@ -9989,6 +10109,10 @@
         {
           "question": "How can I test whether an agent workspace is portable?",
           "answer": "Export a representative project and open its documents, code, data, and logs without the original agent product. Also verify how credentials, memory, and task history can be removed or transferred."
+        },
+        {
+          "question": "When should I choose a local-first agent workspace?",
+          "answer": "Choose local-first when ordinary files are the source of truth, direct folder access matters, work must remain portable, or a person needs to review changes before they leave the device. Confirm separately whether any selected model or connector still sends data to the cloud."
         }
       ]
     },
@@ -10021,6 +10145,10 @@
         {
           "question": "怎样判断 Agent Workspace 是否容易迁移？",
           "answer": "导出一个真实项目，确认文档、代码、数据与日志不用原产品也能打开；同时检查凭证、记忆和任务历史能否删除或转移。"
+        },
+        {
+          "question": "什么情况下更适合本地优先的 Agent 工作站？",
+          "answer": "当普通文件需要作为唯一可信来源、任务依赖直接访问目录、成果必须易于迁移，或修改离开设备前必须人工审阅时，本地优先更合适。模型或 Connector 是否仍会把数据发送到云端，需要另行确认。"
         }
       ]
     },
