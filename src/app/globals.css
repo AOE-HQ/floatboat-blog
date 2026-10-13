@@ -18,8 +18,8 @@
      --ob-color-text-subtle (alias) → #423f3b          secondary body
      --ob-color-primary    #171717  → #f7d68b          CTA yellow
      --ob-color-primary-fg #ffffff  → #1b1a18          on-yellow ink
-     --ob-color-accent     #0070f3  → #6466f1          brand violet (sparing)
-     --ob-color-accent-hover (alias)→ #5558e8
+     --ob-color-accent     #0070f3  → #1b1a18          warm black emphasis
+     --ob-color-accent-hover (alias)→ #3b3935
      --ob-color-border     #ebebeb  → rgb(0 0 0/.08)   hairline
      --ob-color-code-bg    #0a0a0a  → #262420          warm-near-black code
      --ob-color-code-fg    #fafafa  → #f7f5f1
@@ -37,8 +37,8 @@
   --ob-color-text-subtle: #423f3b;
   --ob-color-primary: #f7d68b;
   --ob-color-primary-fg: #1b1a18;
-  --ob-color-accent: #6466f1;
-  --ob-color-accent-hover: #5558e8;
+  --ob-color-accent: #1b1a18;
+  --ob-color-accent-hover: #3b3935;
   --ob-color-border: rgb(0 0 0 / 0.08);
   --ob-color-code-bg: #262420;
   --ob-color-code-fg: #f7f5f1;
@@ -109,8 +109,8 @@
     --ob-color-text-subtle: #d4cec6;
     --ob-color-primary: #f7d68b;
     --ob-color-primary-fg: #1b1a18;
-    --ob-color-accent: #8b8df8;
-    --ob-color-accent-hover: #a4a6fa;
+    --ob-color-accent: #f7d68b;
+    --ob-color-accent-hover: #f3cf79;
     --ob-color-border: rgb(255 255 255 / 0.1);
     --ob-color-code-bg: #121110;
     --ob-color-code-fg: #e9e4dc;

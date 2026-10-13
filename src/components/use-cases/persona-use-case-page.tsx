@@ -68,14 +68,14 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
         </ul>
       </div>
       <div className="relative">
-        <div className="absolute -inset-10 -z-10 rounded-full bg-[#d8d4ff]/60 blur-3xl" />
+        <div className="absolute -inset-10 -z-10 rounded-full bg-[#ded8cf]/60 blur-3xl" />
         <div className="rounded-[32px] border border-black/[0.08] bg-[#fbfaf8] p-3 shadow-[0_24px_80px_rgba(27,26,24,0.12)] sm:p-5">
           <div className="flex items-center justify-between border-b border-black/[0.07] px-2 pb-4">
             <div><p className="text-xs font-semibold uppercase tracking-[0.17em] text-[var(--ob-color-muted)]">{page.hero.preview.label}</p><p className="mt-1 font-semibold">{page.hero.preview.matter}</p></div>
             <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">{page.hero.preview.review}</span>
           </div>
           <div className="grid gap-3 pt-4 sm:grid-cols-2">
-            <div className="rounded-2xl bg-[#f0eeeb] p-4"><p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--ob-color-muted)]">{isZh ? "工作材料" : "Working material"}</p><ul className="mt-3 space-y-2">{page.hero.preview.inputs.map((item) => <li key={item} className="flex items-center gap-2 text-sm"><span className="size-2 rounded-full bg-[#6466f1]" />{item}</li>)}</ul></div>
+            <div className="rounded-2xl bg-[#f0eeeb] p-4"><p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--ob-color-muted)]">{isZh ? "工作材料" : "Working material"}</p><ul className="mt-3 space-y-2">{page.hero.preview.inputs.map((item) => <li key={item} className="flex items-center gap-2 text-sm"><span className="size-2 rounded-full bg-[#1b1a18]" />{item}</li>)}</ul></div>
             <div className="rounded-2xl bg-[#24221f] p-4 text-white"><p className="text-xs font-semibold uppercase tracking-[0.14em] text-white/45">{isZh ? "准备中的交付物" : "Prepared outputs"}</p><ul className="mt-3 space-y-2">{page.hero.preview.outputs.map((item) => <li key={item} className="flex items-center gap-2 text-sm"><span className="grid size-4 place-items-center rounded bg-[#f7d68b] text-[10px] text-[#24221f]">✓</span>{item}</li>)}</ul></div>
           </div>
           <div className="mt-3 flex items-center gap-3 rounded-2xl border border-[#e9d18f] bg-[#fff5d7] p-4 text-sm leading-6 text-[#5a4819]"><span className="text-lg">↳</span>{isZh ? "在任何正式意见、发送或提交前交回律师审阅。" : "Returned to counsel before any opinion, send, or filing."}</div>

@@ -185,7 +185,7 @@ export function BlogCtaPopup({
           <div className="mt-4 flex items-center justify-center gap-1.5 rounded-lg bg-gray-100 px-3 py-2 text-sm">
             <span className="text-gray-500">{COUNTDOWN_LABEL[locale]}</span>
             <span className="font-extrabold text-orange-500">{dd}D</span>
-            <span className="font-extrabold text-violet-600">{hh}H</span>
+            <span className="font-extrabold text-[#1b1a18]">{hh}H</span>
             <span className="font-extrabold text-pink-500">{mm}M</span>
             <span className="font-extrabold text-teal-500">{ss}S</span>
           </div>
@@ -216,7 +216,7 @@ export function BlogCtaPopup({
           rel="nofollow noopener noreferrer"
           data-placement="blog_cta_popup"
           onClick={onCtaClick}
-          className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 px-5 py-3 text-sm font-bold text-white no-underline shadow-md transition-transform hover:scale-[1.02]"
+          className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1b1a18] to-orange-400 px-5 py-3 text-sm font-bold text-white no-underline shadow-md transition-transform hover:scale-[1.02]"
         >
           {CTA_LABEL[locale]}
           <span aria-hidden="true">→</span>
