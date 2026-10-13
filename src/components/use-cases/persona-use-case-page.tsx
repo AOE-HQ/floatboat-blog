@@ -57,17 +57,16 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
       <span className="mx-2">/</span><span>{page.breadcrumb}</span>
     </nav>
 
-    <section className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-16 sm:px-8 lg:grid-cols-[0.94fr_1.06fr] lg:py-24">
-      <div>
+    <section className="mx-auto max-w-5xl px-5 py-20 text-center sm:px-8 sm:py-28">
+      <div className="mx-auto max-w-4xl">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--ob-color-accent)]">{page.hero.eyebrow}</p>
-        <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-[0.98] tracking-[-0.055em] sm:text-7xl">{page.hero.title}</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{page.hero.description}</p>
-        <div className="mt-8 flex flex-wrap gap-3"><Cta {...page.hero.primaryCta} primary /><Cta {...page.hero.secondaryCta} /></div>
-        <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--ob-color-muted)]">
-          {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-[#1b1a18]">✓</span>{item}</li>)}
-        </ul>
+        <h1 className="mt-5 font-serif text-5xl leading-[0.98] tracking-[-0.055em] sm:text-7xl">{page.hero.title}</h1>
+        <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{page.hero.description}</p>
       </div>
-      <div className="relative">
+    </section>
+
+    <section className="mx-auto max-w-6xl px-5 pb-20 sm:px-8 sm:pb-28">
+      <div className="relative mx-auto max-w-5xl">
         <div className="absolute -inset-10 -z-10 rounded-full bg-[#ded8cf]/60 blur-3xl" />
         <div className="rounded-[32px] border border-black/[0.08] bg-[#fbfaf8] p-3 shadow-[0_24px_80px_rgba(27,26,24,0.12)] sm:p-5">
           <div className="flex items-center justify-between border-b border-black/[0.07] px-2 pb-4">
