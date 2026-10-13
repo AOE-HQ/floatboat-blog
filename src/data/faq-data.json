@@ -355,36 +355,36 @@
     "/blog/ai-agent-development-services": {
       "items": [
         {
-          "question": "What does an AI agent development company actually deliver?",
-          "answer": "A complete engagement should deliver more than code: a process map and baseline, task and permission boundaries, architecture and data-flow diagrams, tool contracts, a versioned evaluation set, a controlled pilot, production monitoring and rollback, runbooks, documentation, and owner training. The statement of work should identify every artifact and also list exclusions such as data cleanup, security testing, model usage, and ongoing support."
+          "question": "What are AI agent development services?",
+          "answer": "They are external discovery, design, implementation, evaluation, deployment, and support services for systems that use models and tools to complete tasks."
         },
         {
-          "question": "Should I hire an AI agent agency or build in-house?",
-          "answer": "Hire externally when the task is valuable and stable enough to specify, integrations or controls exceed internal capacity, and an internal owner can accept the handover. Build in-house when the capability is strategically differentiating, changes frequently, and you already have engineering, security, data, and operations capacity. If the process is still changing, buy discovery or run a narrow prototype first."
+          "question": "When should a company hire an AI agent developer?",
+          "answer": "Hire one when the workflow is understood, risk is consequential, and internal teams cannot responsibly build and operate it."
         },
         {
-          "question": "How much does custom AI agent development cost?",
-          "answer": "There is no credible universal price because scope depends on data readiness, integrations, permissions, evaluation, security, deployment, and support. Ask bidders to separate discovery, engineering, integration, evaluation, security, infrastructure, model consumption, licenses, support, and changes. Compare total cost per successful task—including human review and operations—rather than a headline development fee."
+          "question": "Do I need an agent or a workflow?",
+          "answer": "Use a workflow for a stable path; use an agent only where the next step genuinely requires model judgment."
         },
         {
-          "question": "What should an AI agent proof of concept test?",
-          "answer": "Use representative normal, ambiguous, missing-data, tool-failure, malicious, refusal, and escalation cases. Track full task success, critical errors, escalation quality, tool reliability, human review time, latency, cost per successful task, and traceability against the current-process baseline. Start in a sandbox or with read-only access; a polished happy-path demo is not an acceptance test."
+          "question": "What should the statement of work include?",
+          "answer": "Include the task contract, architecture, integrations, permissions, evaluations, observability, deployment, documentation, support, and handover."
         },
         {
-          "question": "What security questions should I ask an AI agent vendor?",
-          "answer": "Ask where data and traces are processed and retained, whether they are used for training, which subprocessors receive them, and how deletion and tenant isolation work. Require least-privilege credentials, approval gates, audit logs, incident responsibilities, and defenses against prompt injection, malicious retrieved content, tool misuse, and data leakage. Internal security and privacy owners should review the evidence."
+          "question": "How should vendors prove their capability?",
+          "answer": "Require relevant production evidence, a bounded paid pilot, reproducible evaluations, and failure recovery rather than only a polished demo."
         },
         {
-          "question": "What should be in an AI agent development contract?",
-          "answer": "Define ownership and licenses for source, prompts, tools, evaluation data, and documentation; permitted use of your data and traces; subprocessors and retention; acceptance and remediation; responsibility for dependency changes; support targets; liability; and termination. Require an exit package with current source, infrastructure configuration, schemas, exports, evals, runbooks, and credential rotation."
+          "question": "What security questions should I ask?",
+          "answer": "Ask about data flow, credentials, least privilege, approvals, retention, subprocessors, logs, incidents, and deletion."
         },
         {
-          "question": "How do I avoid vendor lock-in with an AI agent service?",
-          "answer": "Require exportable prompts, tool definitions, traces, evaluation sets, data, and documentation. Identify proprietary components in the architecture, keep credentials and production accounts under your control, and make the handover and exit package an acceptance deliverable. Portability does not mean every component is interchangeable; it means another qualified team can operate or replace the system."
+          "question": "How should AI agent development pricing be compared?",
+          "answer": "Compare total first-year scope, usage, support, internal review, change requests, and exit cost rather than headline build fees."
         },
         {
-          "question": "When is a workflow better than a custom AI agent?",
-          "answer": "Choose a deterministic workflow when inputs, rules, and exception paths are known. Use an agent only when the task benefits from interpreting varied information, choosing among tools, or adapting the next step inside firm boundaries. The simplest architecture that meets the requirement is usually easier to test, secure, and maintain."
+          "question": "Who owns the AI agent after launch?",
+          "answer": "The contract should name ownership of code, prompts, credentials, data, tests, runbooks, monitoring, and production failures."
         }
       ]
     },
@@ -463,36 +463,36 @@
     "/blog/ai-agent-vs-ai-assistant": {
       "items": [
         {
-          "question": "What's the simplest way to explain the difference?",
-          "answer": "An assistant helps a person complete work while the person normally controls the next step. An agent can be delegated a bounded outcome and choose intermediate actions within policy. The practical distinction is control and authority, not whether the product has a chat box, tools, or memory."
+          "question": "What is the difference between an AI agent and an AI assistant?",
+          "answer": "An assistant supports a person who controls the next step; an agent can be delegated an outcome and choose actions within a boundary."
         },
         {
-          "question": "Can the same product contain an assistant and agents?",
-          "answer": "Yes. An assistant can be the collaborative interface where a person asks questions, reviews drafts, and invokes specialized agents. The agents may then run bounded processes behind that interface. Evaluate each layer's triggers, tools, identity, state, approvals, and stop controls separately."
+          "question": "Is a tool-using assistant automatically an agent?",
+          "answer": "No. Having tools does not by itself determine who controls execution."
         },
         {
-          "question": "Does tool use make an AI assistant an agent?",
-          "answer": "No. An assistant can call a tool while a person watches, and a fixed workflow can call many tools without model-directed control. Ask whether the model chooses and sequences actions based on environmental feedback, and whether those calls can alter external state without a new user instruction."
+          "question": "How do triggers differ between agents and assistants?",
+          "answer": "Assistants usually respond to users; agents may also start from schedules, events, queues, or delegated goals."
         },
         {
-          "question": "Do AI agents always have better memory than assistants?",
-          "answer": "No. Modern assistants can use history, projects, files, and saved preferences, while an agent can be stateless between runs. Agents that pause, resume, or write to external systems need durable operational state, but that state must be engineered; it is not guaranteed by the agent label."
+          "question": "How do permissions differ?",
+          "answer": "Assistants often propose actions; agents need explicit scopes, approvals, and limits because they may execute them."
         },
         {
-          "question": "Which permissions are appropriate for an AI agent?",
-          "answer": "Use least privilege and separate read, draft, reversible write, and consequential write. Sending, publishing, paying, deleting, or changing access should normally require informed approval that shows the exact target, arguments, evidence, and expected effect. Authorization must be enforced outside the model."
+          "question": "Does memory make a product an agent?",
+          "answer": "No. Persistent memory changes available context, not control of the next step."
         },
         {
-          "question": "When should I choose an assistant instead of an agent?",
-          "answer": "Choose an assistant for interactive analysis, drafting, explanation, and judgment-heavy work where a person should shape each next step. Choose an agent only when the outcome is testable, the path genuinely varies, tools can be narrowed, and stop, approval, escalation, and recovery behavior are explicit."
+          "question": "Is an agent safer than an assistant?",
+          "answer": "Neither label is inherently safer; risk depends on authority, data, controls, observability, and recovery."
         },
         {
-          "question": "How should I evaluate an AI assistant?",
-          "answer": "Test representative prompts for factuality, relevance, source quality, instruction following, clarity, unsafe advice, edit effort, and whether users can recognize uncertainty. The useful metric is improvement in the person's accepted result, not preference for fluent prose."
+          "question": "When should I choose an AI assistant?",
+          "answer": "Choose an assistant when human judgment should remain continuous and the desired output is advice, analysis, or a draft."
         },
         {
-          "question": "How should I evaluate an AI agent?",
-          "answer": "Evaluate the outcome and the full trajectory: tool choice, arguments, evidence, state changes, approvals, policy violations, interventions, duplicated side effects, recovery, latency, and cost. Include normal, edge, adversarial, and interrupted cases, with repeated trials where behavior varies."
+          "question": "When should I choose an AI agent?",
+          "answer": "Choose an agent when paths vary, delegation adds measurable value, and actions can be bounded, evaluated, and recovered."
         }
       ]
     },
@@ -571,36 +571,36 @@
     "/blog/ai-agents-2026-solo-operators": {
       "items": [
         {
-          "question": "Do solo operators need AI agents in 2026?",
-          "answer": "Not by default. A solo operator should test an agent when one repeated task has a stable objective, accessible inputs, a visible output, and a failure cost they can contain. Many jobs are better served by a deterministic workflow or a single model call. The goal is dependable work, not maximum autonomy."
+          "question": "What makes an AI agent useful to a solo operator?",
+          "answer": "It is useful when it completes a bounded task through tools while preserving review and recovery points."
         },
         {
-          "question": "What is the difference between an agent and an AI workflow?",
-          "answer": "A workflow follows steps and branches defined in advance. An agent lets the model choose steps or tools within a boundary. Workflows are usually more predictable for recurring reports, transformations, and routing; agents are useful when variable inputs require bounded judgment."
+          "question": "What changed for AI agents in 2026?",
+          "answer": "Tool access, reusable instructions, state, open protocols, and evaluations became more common product building blocks."
         },
         {
-          "question": "What do current AI adoption statistics actually show?",
-          "answer": "A 2026 Federal Reserve note reported different rates depending on the survey and unit: roughly 18% of firms used AI at year-end 2025, while about 41% of individuals reported work-related generative-AI use in November 2025. These are AI adoption measures, not proof that the same share deploys autonomous agents."
+          "question": "Does every solo business need an AI workforce?",
+          "answer": "No. One supervised recurring task is a safer starting point than a fleet of agents."
         },
         {
-          "question": "Which task should a solo operator automate first?",
-          "answer": "Start with a frequent, reversible, low-impact task whose output is cheap to verify: source collection with review, document preparation, draft-only triage, quiet monitoring, or a pre-flight check. Avoid starting with payments, contracts, public claims, account deletion, or irreversible customer communication."
+          "question": "Which task should I automate first?",
+          "answer": "Choose frequent, low-consequence, reversible work with clear inputs and acceptance criteria."
         },
         {
-          "question": "What is MCP and what does it not solve?",
-          "answer": "The Model Context Protocol is an open standard for connecting AI applications to tools and data. It reduces custom integration work and entered Linux Foundation governance in 2025. It does not make every server trustworthy, authorize every action, prevent prompt injection, or replace least-privilege access and approval."
+          "question": "What should remain human-controlled?",
+          "answer": "Keep strategy, ambiguous judgment, account permissions, payments, publication, deletion, and other consequential actions human-controlled."
         },
         {
-          "question": "How should I pilot an AI agent safely?",
-          "answer": "Record a manual baseline, run the agent in shadow mode, then allow only reversible writes to a staging area. Use limits for time, runs, and spend; require approval for consequential actions; and measure accepted outputs, correction time, unsafe actions, duplicate writes, cost, and supervision effort before expanding."
+          "question": "How should a solo operator pilot an agent?",
+          "answer": "Start offline, move to shadow mode, permit one reversible action, then expand only when evidence supports it."
         },
         {
-          "question": "What are the biggest risks for a one-person business?",
-          "answer": "The main risks are wrong results, wrong actions, prompt injection through untrusted content, excessive permissions, credential or data exposure, invisible background failure, and review costs that erase any time saved. Narrow tool scopes, draft-only operation, traces, stop conditions, and human approval reduce the blast radius."
+          "question": "Which agent metrics matter?",
+          "answer": "Track accepted outcomes, corrections, review minutes, tool failures, recovery, cost, and unauthorized actions."
         },
         {
-          "question": "How do I know whether an agent pilot worked?",
-          "answer": "Compare it with the manual baseline over several real cycles. Track accepted-output rate, corrections, missed exceptions, unsafe or duplicate actions, latency, direct cost, and attention spent supervising. Rerun a fixed test set after any model, prompt, connector, or workflow change."
+          "question": "How can I avoid AI agent vendor lock-in?",
+          "answer": "Keep source data, task contracts, evaluation cases, prompts, artifacts, and run history exportable."
         }
       ]
     },
@@ -643,36 +643,36 @@
     "/blog/ai-automation-agency-do-you-need-one": {
       "items": [
         {
-          "question": "Do I actually need to hire an AI automation agency?",
-          "answer": "Consider an agency when one stable, consequential workflow requires several skills at once and your team cannot build and operate it responsibly. Wait if the process is still changing, prototype internally if the boundary is narrow and reversible, and consider hiring when automation is becoming a continuous portfolio of work."
+          "question": "What does an AI automation agency do?",
+          "answer": "It maps processes, configures platforms or integrations, tests workflows, deploys them, and may provide ongoing support."
         },
         {
-          "question": "Should I build the automation myself or hire someone?",
-          "answer": "DIY fits a narrow workflow that one internal owner can test and maintain with existing tools. A hire or long-term contractor fits a continuing backlog where business knowledge should accumulate internally. An agency fits a bounded project that needs concentrated design, integration, security, testing, and training."
+          "question": "Do I need an AI automation agency?",
+          "answer": "Hire one when the process is stable, integration risk is real, and internal teams cannot responsibly build and operate it."
         },
         {
-          "question": "How much does an AI automation agency cost?",
-          "answer": "There is no universal price because integration depth, data quality, compliance, support, geography, and scope vary. Compare written quotes against the same brief and include discovery, build, software and model usage, internal time, support, change requests, and migration in the first-year cost."
+          "question": "When should I not hire an AI automation agency?",
+          "answer": "Wait when the process changes weekly, a native tool solves most of it, or nobody internally will own the result."
         },
         {
-          "question": "What should an AI automation agency deliver?",
-          "answer": "Expect a bounded workflow in a client-controlled environment, test evidence covering normal and failure cases, an architecture and data-flow record, an operational runbook, agreed rights to code and configuration, client-controlled production accounts, training, and a documented list of limitations."
+          "question": "What are the alternatives to an automation agency?",
+          "answer": "You can do nothing yet, build internally, hire an employee or contractor, or use an existing product."
         },
         {
-          "question": "How do I evaluate an agency before granting production access?",
-          "answer": "Review a redacted handover package, meet the actual delivery team, test their understanding of a likely failure, inspect credential and incident practices, identify subcontractors and sub-processors, check a relevant reference, and require a concrete offboarding plan."
+          "question": "Should I hire an agency or a freelancer?",
+          "answer": "Agencies offer broader capacity and continuity; freelancers may fit narrower scopes, but evidence and ownership matter more than the label."
         },
         {
-          "question": "What should an AI automation pilot measure?",
-          "answer": "Measure functional output, exception routing, false positives and negatives, manual corrections, latency, usage cost, operator effort, alerts, safe retry behavior, permissions, approval boundaries, revocation, and recovery. Keep consequential actions in draft or sandbox mode until those controls work."
+          "question": "What should a paid automation pilot include?",
+          "answer": "Include one bounded workflow, a baseline, acceptance cases, forbidden actions, recovery tests, documentation, and handover."
         },
         {
-          "question": "What belongs in the agency contract?",
-          "answer": "Define deliverables, exclusions, dependencies, acceptance tests, change control, support, extra-work rates, asset rights, account ownership, data purpose and retention, model-training restrictions, sub-processors, incident notice, audit evidence, and end-of-contract export, deletion, credential rotation, and transition support."
+          "question": "Who should own the automation?",
+          "answer": "A named internal owner should control priorities, credentials, acceptance, incidents, and vendor decisions."
         },
         {
-          "question": "How do I avoid vendor lock-in?",
-          "answer": "Keep production accounts, repositories, billing, and primary credentials under client control; require portable documentation and exports; record proprietary dependencies; train an internal owner; and test the exit process before the final payment rather than relying on a general promise of ownership."
+          "question": "How should I choose an AI automation agency?",
+          "answer": "Compare evidence, architecture, security, operating model, total cost, contract, and exit path on the same scope."
         }
       ]
     },
@@ -1139,36 +1139,36 @@
     "/blog/best-ai-agent-builder-2026": {
       "items": [
         {
-          "question": "What is the best AI agent builder in 2026?",
-          "answer": "There is no defensible universal winner. The best builder is the one that passes your workflow's non-negotiable requirements, performs well on a fixed test set, makes failures diagnosable, and has an acceptable cost per approved outcome. The article provides a seven-part scorecard so different teams can reach a reproducible answer."
+          "question": "What is an AI agent builder?",
+          "answer": "It is a platform or framework for defining model instructions, tools, state, control flow, evaluations, and deployment."
         },
         {
-          "question": "How should I compare AI agent builders fairly?",
-          "answer": "Give every candidate the same workflow, inputs, source material, tool permissions, and acceptance criteria. Score task fit, control, data and permissions, evaluation, observability and recovery, cost unit, and exit capability from 0 to 4. Set weights and disqualifiers before testing so a polished demo cannot change the rules."
+          "question": "What is the best AI agent builder?",
+          "answer": "There is no universal winner; the best choice fits the task, risk, team skills, and operating model."
         },
         {
-          "question": "When do I need an agent instead of ordinary automation?",
-          "answer": "Use automation when the path can be known in advance: when X happens, perform steps A, B, and C. An agent is justified when ambiguous inputs require bounded decisions such as selecting an approved tool, asking for missing information, or escalating. Adding a model call to a fixed workflow does not by itself make the workflow an agent."
+          "question": "How do no-code, low-code, and frameworks differ?",
+          "answer": "No-code minimizes setup, low-code adds control, and frameworks maximize customization while increasing engineering burden."
         },
         {
-          "question": "How do I estimate the real cost of an AI agent builder?",
-          "answer": "Calculate cost per accepted outcome, not only the subscription price. Include platform usage, model tokens, connected tools, infrastructure, failed runs, retries, human review, and incident handling. Confirm the vendor's billing unit—such as activities, operations, executions, messages, or seats—and model current, expected, and burst volume."
+          "question": "What should I evaluate first in an agent builder?",
+          "answer": "Evaluate tool boundaries, deterministic controls, observability, approvals, data handling, recovery, cost, and portability."
         },
         {
-          "question": "Is a self-hosted agent builder automatically more private?",
-          "answer": "No. Self-hosting one layer does not keep data local if prompts, documents, embeddings, tool payloads, or traces go to external model and observability services. Map every data hop and verify scopes, retention, region, training policy, encryption, and deletion for the complete system."
+          "question": "How do I compare agent builders fairly?",
+          "answer": "Run the same historical and adversarial task pack with identical permissions and acceptance criteria."
         },
         {
-          "question": "What should an AI agent builder pilot test?",
-          "answer": "Test normal requests, missing information, conflicting instructions, duplicate events, unavailable tools, stale knowledge, malicious instruction text, and cases that require escalation. Record accepted outcomes, unsafe actions, unnecessary escalations, latency, usage consumption, review time, and repair time. Then change one component and rerun the set to test regression detection."
+          "question": "What does total agent-builder cost include?",
+          "answer": "Include subscription or hosting, model and tool usage, implementation, review, failures, maintenance, and migration."
         },
         {
-          "question": "Which features matter most for a production agent?",
-          "answer": "The priorities depend on impact, but production systems generally need least-privilege tool access, approval gates for consequential actions, versioned evaluations, detailed traces, safe retries, rollback or resume behavior, and usable export. For high-impact work, a zero in permissions, evaluation, or recovery should be a disqualifier rather than an averageable weakness."
+          "question": "When should I avoid an AI agent builder?",
+          "answer": "Avoid one when a native app rule or simple deterministic workflow already solves the task reliably."
         },
         {
-          "question": "Can I move an agent to another builder later?",
-          "answer": "Only if both logic and data are portable. During the trial, export prompts, workflow definitions, tool schemas, evaluation sets, run history, knowledge sources, state, and secrets references. An export that only the original vendor can interpret is a backup, not a practical migration path."
+          "question": "How do I reduce agent-builder lock-in?",
+          "answer": "Keep task contracts, prompts, schemas, evaluations, source data, artifacts, and run records exportable."
         }
       ]
     },
@@ -1563,36 +1563,36 @@
     "/blog/building-agentic-ai-systems-build-or-buy": {
       "items": [
         {
-          "question": "How do I choose between building, buying, and a hybrid agentic AI system?",
-          "answer": "Run the same representative task and acceptance suite through the smallest credible version of each option. Compare outcome quality, governance, integration fit, recovery, operator effort, total cost scenarios, and exit readiness. Build when differentiated behavior and operational control matter; buy for strong commodity fit; use hybrid when the ownership boundary is explicit."
+          "question": "Do I need an agentic AI system?",
+          "answer": "Only when the route cannot be fully specified in advance and the system must choose tools using environmental feedback."
         },
         {
-          "question": "When does one AI agent become an agentic system?",
-          "answer": "As soon as it needs production controls such as durable state, integrations, shared identities, permissions, evaluations, monitoring, deployment, and failure recovery. Multiple agents are not required. A single agent that can alter customer or business systems already needs system-level ownership and controls."
+          "question": "Should I build, buy, or use a hybrid?",
+          "answer": "Choose by required control, strategic differentiation, governance, integration, evaluation, total cost, and exit requirements."
         },
         {
-          "question": "Does buying a platform transfer governance responsibility to the vendor?",
-          "answer": "No. The vendor can provide controls, documentation, and operational commitments, but your organization still defines intended use, risk tolerance, data scope, human approvals, acceptance criteria, and whether deployment should continue. Procurement must verify that product controls can enforce those decisions."
+          "question": "Which responsibilities cannot be outsourced?",
+          "answer": "Your organization still owns the purpose, acceptable risk, human role, and decision to continue or stop deployment."
         },
         {
-          "question": "How should I compare agent integrations?",
-          "answer": "Test the exact read and write operations rather than counting connector logos. Check identity type, permission granularity, event ordering, duplicate delivery, rate limits, payload limits, error contracts, versioning, and audit evidence. Include expired credentials, partial responses, schema changes, and timeouts after successful writes."
+          "question": "How should I compare build and buy options?",
+          "answer": "Run every option against the same acceptance suite and a representative workload."
         },
         {
-          "question": "How do I calculate total cost of ownership for an AI agent system?",
-          "answer": "Model cost per accepted outcome at expected, low, and peak volume. Include discovery, implementation, licenses, model and infrastructure use, connectors, security review, human review, failed runs, support, on-call work, maintenance, migrations, and exit. Use current vendor quotes instead of generic timelines or fixed maintenance percentages."
+          "question": "What belongs in total cost of ownership?",
+          "answer": "Include building or configuration, model and runtime use, review, failures, monitoring, support, and migration."
         },
         {
           "question": "Does owning the code prevent vendor lock-in?",
-          "answer": "No. Custom systems can be locked to a cloud, model API, framework, schema, or undocumented team knowledge. Managed systems can lock workflows, permissions, artifacts, and history into proprietary formats. Test portability by moving one task, its evaluations, data, policy, and run evidence to a second stack."
+          "answer": "No. Models, data schemas, tools, evaluations, and operational knowledge can still create lock-in."
         },
         {
-          "question": "What should my organization own in a hybrid architecture?",
-          "answer": "At minimum, own the task contract, policy, permission model, evaluation cases, system-of-record identifiers, and exit plan. A managed runtime can plan and execute through narrow tools, while a company-controlled gateway authenticates, authorizes, validates, and logs consequential calls."
+          "question": "What is a defensible hybrid architecture?",
+          "answer": "Keep policy, evaluations, and data boundaries under your control while buying replaceable runtime or connector layers."
         },
         {
-          "question": "What can invalidate a build-versus-buy pilot?",
-          "answer": "Different tasks, hidden manual assistance, demo-only data, no failure tests, or comparing sticker prices instead of full operating cost will invalidate it. Use the same cases and controls, run shadow or draft mode, exercise revoked access and interrupted writes, and document the evidence and review date."
+          "question": "How should I test an exit path?",
+          "answer": "Export configurations, data, and traces, then rehearse replacing one important dependency."
         }
       ]
     },
@@ -2243,28 +2243,36 @@
     "/blog/first-100-customers-solo-founder": {
       "items": [
         {
-          "question": "Do I need to be on social media to get my first 100 customers?",
-          "answer": "Not necessarily — it depends entirely on where your specific customer already spends time. Some niches are highly active on LinkedIn or X; others live almost entirely in private Slack groups, industry forums, or niche newsletters. The question isn't \"which platform should I be on?\" but \"where do the people who most need my product already gather?\" Social media is one possible answer, not the default one."
+          "question": "What should count as a customer?",
+          "answer": "Choose paid accounts, completed transactions, active subscribers, or a retained cohort and use the definition consistently."
         },
         {
-          "question": "Should I charge from day one, or offer free first?",
-          "answer": "Charge something from the start, even a fraction of your eventual price. Free users will tell you the product is great and never open it again; paying customers tell you what's broken because they paid for something that was supposed to work. Early revenue is also a filter that selects for serious customers — roughly 70% of indie SaaS founders now ask for a credit card upfront. Use a few free conversations to learn, but don't mistake free users for validation."
+          "question": "How should a solo founder get customers zero through ten?",
+          "answer": "Focus on one buyer and problem, use legitimate direct contact, and offer a bounded paid pilot."
         },
         {
-          "question": "How many customer conversations do I need before I have enough signal?",
-          "answer": "There's no magic number, but most founders find that 15 to 25 substantive conversations — actual problem exploration, not demos — start surfacing repeating patterns. When four different people describe the same frustration in almost the same words, you have enough signal to act on. If every conversation still surfaces a fundamentally different problem, keep going."
+          "question": "Why charge early?",
+          "answer": "A paid offer tests willingness to pay rather than usage or polite interest alone."
         },
         {
-          "question": "What if I can't find any community around my product?",
-          "answer": "That's diagnostic information, not just a distribution problem. If no community actively discusses the problem you solve, either the problem isn't felt widely enough to form a community organically, or the community exists somewhere you haven't looked. Both possibilities are worth investigating seriously before you keep building. An absent community is a market signal about whether the problem is real and sharply felt."
+          "question": "What should I learn from customers ten through thirty?",
+          "answer": "Record buying reasons, onboarding friction, time to first value, support, retention, and loss reasons."
         },
         {
-          "question": "Should I offer a lifetime deal or steep discount to attract early customers?",
-          "answer": "Careful. Discounts attract price-sensitive customers who are often your worst long-term fit — they churn fastest, complain most about pricing, and refer least. A better approach: charge a fair early-adopter price in exchange for feedback access, a case study, or genuine goodwill from being part of building something. You want customers who believe the product is worth paying for, not people who bought it at 80% off and tell you nothing useful."
+          "question": "What should be standardized between customers thirty and one hundred?",
+          "answer": "Standardize only repeated qualification, proposal, onboarding, education, and feedback steps."
         },
         {
-          "question": "How do I know when to stop doing manual work and start systematizing?",
-          "answer": "When you can write down exactly how you'd acquire one more customer in enough detail that a new teammate could follow it — the specific communities, message types, and follow-up sequences — you understand the process well enough to systematize. If you can't describe it at that level of specificity, you don't understand it yet, and automation would just lock in the wrong process. Systematize consistent delivery; keep anything still about learning manual."
+          "question": "Should early customer outreach be automated?",
+          "answer": "Not until the message earns replies and platform, privacy, and reputation risks are controlled."
+        },
+        {
+          "question": "Which customer metrics should I review weekly?",
+          "answer": "Track qualified conversations, offers, paid conversions, first value, retention, support, refunds, and loss reasons."
+        },
+        {
+          "question": "What should the first 100 customers leave behind?",
+          "answer": "They should clarify the ideal customer, promise, price, onboarding, acquisition channel, and support load."
         }
       ]
     },
@@ -2923,28 +2931,36 @@
     "/blog/how-one-person-businesses-work-like-a-team-with-ai": {
       "items": [
         {
-          "question": "How is giving AI a role different from a one-off request?",
-          "answer": "A request is transactional; a role is ongoing. With a request you ask for a product description and start from scratch next time. With a role you define who the AI is, what it knows about you, and what good output looks like — \"you are my product communicator, you know our tone and positioning\" — so it holds a consistent standard without you re-explaining context every session. That continuity is what changes your work."
+          "question": "Can one person work like a team with AI?",
+          "answer": "A solo operator can adopt role boundaries, handoffs, and review gates, but AI is not an accountable employee."
         },
         {
-          "question": "Do I need to switch tools to make this work?",
-          "answer": "Not necessarily — the tool isn't the point; the role definition is. Start with whatever you already use: write your context, your standard, and format preferences into the system prompt, then test on real tasks. If the output becomes consistent, the idea works, and you can decide later whether a more structured AI workspace is worth adopting."
+          "question": "What is an AI role contract?",
+          "answer": "It defines the job, approved inputs, required output, exclusions, review criteria, and handoff."
         },
         {
-          "question": "How long does writing a role definition take?",
-          "answer": "The first one takes 20–30 minutes; after that it's small tweaks of a few minutes here and there. Start from a blank document and write the job description — duties, what the role knows about you, and its delivery format. The first two weeks feel like an investment; by week three the role mostly runs itself."
+          "question": "Are AI personas enough to improve quality?",
+          "answer": "No. Clear constraints, evidence, artifacts, and review create the operational value."
         },
         {
-          "question": "Which AI roles matter most for a one-person business?",
-          "answer": "Three show up most: a research analyst that tracks your field and separates signal from noise, a content production role that knows your voice and turns raw thinking into polished output, and an operations coordinator for repeating workflows like outreach drafts and tracking updates. Don't set up all three at once — start with whichever currently costs you the most time."
+          "question": "Which four AI-assisted roles can I start with?",
+          "answer": "A practical starting loop is research, decision, production, and review."
         },
         {
-          "question": "What if I don't fully know how to do the task myself yet?",
-          "answer": "Then the role won't work — and that's useful information, not a flaw. AI executes clarity; it can't manufacture it. If you can't describe what good looks like, the output will sound confident but miss the point. Do the task yourself a few times first, then hand it over. The framework only works once you can define the job."
+          "question": "Should every AI role share all available context?",
+          "answer": "No. Share only approved, relevant context because flawed evidence can propagate across stages."
         },
         {
-          "question": "Where does this approach break down — and when do I still need a real person?",
-          "answer": "Roles break down at the edges of your own clarity and whenever work depends on relationship context — like knowing a client is having a hard quarter. AI excels at repeatable, context-heavy, output-defined tasks but underperforms where judgment about people, creative direction, client trust, or strategy under real uncertainty is required; those still need humans. Building roles also takes upfront thinking — it's an investment, not a shortcut."
+          "question": "When should I use a workflow instead of several roles?",
+          "answer": "Use a workflow when the sequence, inputs, and expected outputs are stable."
+        },
+        {
+          "question": "Which responsibilities must stay human?",
+          "answer": "Legal responsibility, client relationships, risk tolerance, conflicts, and consequential approvals remain human."
+        },
+        {
+          "question": "How should I start using AI roles?",
+          "answer": "Test two stages on one recurring deliverable and measure rework, missing evidence, and review time."
         }
       ]
     },
@@ -3731,56 +3747,72 @@
     "/blog/scale-one-person-business-without-hiring": {
       "items": [
         {
-          "question": "Can a one-person business really scale without hiring?",
-          "answer": "Yes, for most solo operators — once you stop equating growth with headcount. Hiring adds coordination: onboarding, managing, reviewing, and communicating can eat more time than the help saves early on. The goal is growing output without growing complexity: turn repeated work into systems, productize your offer, and carry context forward so every project does not restart from zero. There is a point where help makes sense; most people reach that question too early."
+          "question": "What does scaling a one-person business mean?",
+          "answer": "Define whether the target is revenue, margin, delivery capacity, or owner time before choosing a lever."
         },
         {
-          "question": "What does \"scaling\" actually mean for a solo operator?",
-          "answer": "It means growing output without growing your own hours. Scaling revenue is income rising through higher prices, more clients, or offers that do not consume proportionally more time. Scaling yourself — more hours, weekend work — is not scaling; it is grinding with a hard ceiling. The practical test is Tuesday afternoon: are you improvising something new, or running a process you have already refined?"
+          "question": "What is the first step before scaling?",
+          "answer": "Map a representative month and identify whether demand, price, variation, delivery, or owner decisions are the constraint."
         },
         {
-          "question": "How do I know if my offer is scalable?",
-          "answer": "Ask yourself: if three more clients exactly like your current ones arrived tomorrow, could you deliver without working significantly more hours? If no, your offer needs more structure. Productized services — standardized scope, fixed price, repeatable delivery — cut scope creep and make workload predictable. When the offer has a fixed shape, delivery gets faster every time instead of reinventing the wheel per client."
+          "question": "Which levers can I test before hiring?",
+          "answer": "Narrow the offer, change pricing or packaging, delete low-value steps, automate stable repetition, or add bounded contractor capacity."
         },
         {
-          "question": "Does AI replace the need to build systems first?",
-          "answer": "No. AI compresses the time it takes to run the systems — drafting, summarizing, researching — and it helps with context continuity. But judgment stays yours: what angle to take, whether a relationship is worth pursuing, how to position something. And AI does not remove the need to build the systems in the first place. Most solo operators are also better off using existing tools than building custom ones."
+          "question": "What should a solo business automate?",
+          "answer": "Automate stable, testable repetition with clear recovery and approval for consequential actions."
         },
         {
-          "question": "When is hiring actually the right move — contractors or employees first?",
-          "answer": "When demand exceeds what your best-optimized process can handle — not your current, messy one. Build the system first, genuinely streamline, and see whether you are still overloaded; if yes, you have earned the hire. When you do bring someone in, contractors first, almost always: you keep flexibility, avoid fixed costs in slow periods, and test whether the role is truly needed."
+          "question": "How should I measure delivery capacity?",
+          "answer": "Track contribution and contribution per constrained owner hour, including rework and support."
         },
         {
-          "question": "How do I know when I've hit my ceiling?",
-          "answer": "Look at structure, not effort. The question is not how hard you are working but whether your current setup allows more output without proportionally more time. If yes, you have room to scale; if no, change the structure before adding people. Different shapes cap differently — a high-touch consulting practice peaks sooner than a productized service. And much of what feels like \"only I can do this\" is habit, not necessity."
+          "question": "Is using a contractor the same as scaling without labor?",
+          "answer": "No. It is delegation that still needs a brief, quality controls, data boundaries, and contingency."
+        },
+        {
+          "question": "When is hiring the right answer?",
+          "answer": "Hire when demand is durable, the ongoing role is understood and accountable, and the business can carry its full cost."
+        },
+        {
+          "question": "How should I test a scaling lever?",
+          "answer": "Run one reversible 30-day experiment on one constraint and measure contribution, time, quality, cycle time, and exceptions."
         }
       ]
     },
     "/blog/solopreneur-pricing-day-one": {
       "items": [
         {
-          "question": "I have no experience yet — shouldn't I charge less, or work free to build a portfolio?",
-          "answer": "Less experience is a real factor, but it's not a reason to price at zero. Free engagements feel different from paid ones: free clients rarely push back, so the feedback is weak, while paying clients ask harder questions that sharpen your offer. If you lack experience, make your scope smaller rather than your price — a narrow, well-defined offer at a real price teaches you more than unlimited free work."
+          "question": "Does pricing from day one mean charging before discovery?",
+          "answer": "No. Charge once the customer, problem, deliverable, boundaries, and decision date are clear."
         },
         {
-          "question": "How do I set my first price when I have no data, no comps, and no testimonials?",
-          "answer": "Use the \"10x value\" rule as an anchor. Estimate the concrete improvement your work produces — money saved, revenue added — then price at roughly one-tenth of that value. If your work saves someone $50,000 a year in software spend, a $5,000 engagement is rational, not greedy. Treat it as a sanity check rather than a mechanical formula: it anchors the price to what the client gets instead of your hours."
+          "question": "What should the first paid offer include?",
+          "answer": "Define the deliverable, acceptance criteria, inputs, revisions, exclusions, timeline, payment, and change rules."
         },
         {
-          "question": "Should I charge hourly, per project, or by value?",
-          "answer": "Hourly is easy but traps you if you're selling expertise: clients start optimizing for hours rather than outcomes. Project-based is cleaner — you agree on a deliverable and a price, and your efficiency makes you more per hour without renegotiating. Value-based is the hardest to set up but the most defensible long-term. If you're unsure, the article's advice is to start with project-based, because it forces you to define scope."
+          "question": "When should a solopreneur charge hourly?",
+          "answer": "Hourly pricing fits uncertain scope when time is the clearest unit and boundaries are explicit."
         },
         {
-          "question": "How do I know if my price is too high or the prospect just isn't a good fit?",
-          "answer": "Probe the no. Ask something like: \"Can you help me understand what's not working about the budget?\" If they say they simply don't have it, that's a fit problem, not a price problem. If they say they're not sure the value justifies the cost, that's a framing conversation worth having. And if everyone says yes immediately without negotiation, you're probably priced too low."
+          "question": "When should I use project pricing?",
+          "answer": "Use it for a defined deliverable with documented assumptions and a change process."
         },
         {
-          "question": "Should I publish my prices publicly?",
-          "answer": "There's no hard rule. Published pricing filters out casual tire-kickers and saves you time; private pricing gives you room to adjust for scope. The article leans toward publishing a starting price with \"from $X\" language — it sets a floor under the conversation without locking you in. Either way, the price should reflect the problem you're positioned to solve, not just the effort involved."
+          "question": "When does a retainer or subscription fit?",
+          "answer": "It fits recurring access or output when capacity, response time, and unused entitlement are clear."
         },
         {
-          "question": "How do I raise my prices without losing existing clients?",
-          "answer": "Raise your price for new clients first, keep existing clients at their current rate, and be transparent if they ask. Sustainable increases come from stronger demand signals and clearer positioning, not from overnight announcements of doubled rates. Give yourself a few months of new-client pricing before changing existing relationships, and when you do change them, announce the increase with lead time and a reason."
+          "question": "How do I calculate a first price floor?",
+          "answer": "Include direct costs, owner time, tax and overhead assumptions, rework allowance, and minimum acceptable contribution."
+        },
+        {
+          "question": "How should I test the first price?",
+          "answer": "Offer the same package to comparable prospects and record acceptance, objections, effort, rework, and outcome."
+        },
+        {
+          "question": "Should I raise, lower, or redesign the offer?",
+          "answer": "Use demand, outcome, capacity, and scope evidence; low conversion does not prove that price alone is wrong."
         }
       ]
     },
@@ -5003,36 +5035,36 @@
     "/zh/blog/ai-agent-development-services": {
       "items": [
         {
-          "question": "AI Agent 开发公司应该交付哪些东西？",
-          "answer": "完整交付不只是代码，还应包含流程图与现状基线、任务和权限边界、架构与数据流图、工具契约、版本化测试集、受控试点、生产监控与回滚、运行手册、系统文档和接手培训。工作说明书还要列出数据清洗、安全测试、模型用量和持续支持等排除项。"
+          "question": "什么是 AI Agent 开发服务？",
+          "answer": "外部团队为模型调用工具完成任务提供调研、设计、实现、评估、部署与支持。"
         },
         {
-          "question": "AI Agent 应该外包开发还是内部自建？",
-          "answer": "任务价值明确、流程相对稳定，集成或控制要求超过内部能力，而且公司有负责人能做决策和接手时，适合外包。能力构成核心差异化、需求频繁变化，且内部已有工程、安全、数据和运维能力时，适合自建。流程尚未稳定时，先购买需求梳理或做小型原型。"
+          "question": "什么时候应外包 AI Agent 开发？",
+          "answer": "流程已明确、风险有实际后果，而内部团队无法负责任地建设和运维时。"
         },
         {
-          "question": "定制 AI Agent 开发要多少钱？",
-          "answer": "不存在可信的统一价格，因为数据准备、集成数量、权限、评估、安全、部署和支持都会改变范围。要求候选方分别列出需求、开发、集成、评估、安全、基础设施、模型用量、第三方许可、支持和变更费用。应比较包含人工复核与运维在内的每个成功任务总成本，而不是一次性报价。"
+          "question": "应该做 Agent 还是 Workflow？",
+          "answer": "路径稳定时用 Workflow，只有下一步确实需要模型判断时才用 Agent。"
         },
         {
-          "question": "AI Agent 概念验证应该测试什么？",
-          "answer": "测试集应覆盖正常、含糊、缺数据、工具故障、恶意指令、拒绝与人工升级场景。把任务成功、严重错误、升级质量、工具可靠性、人工复核时间、延迟、每个成功任务成本和可追溯性与现有流程基线比较。先在沙箱或只读权限中进行，好看的成功演示不能替代验收。"
+          "question": "SOW 应包含什么？",
+          "answer": "应包含任务契约、架构、集成、权限、评测、可观测性、部署、文档、支持和交接。"
         },
         {
-          "question": "采购 AI Agent 时要问哪些安全问题？",
-          "answer": "询问数据与轨迹在哪里处理、保留多久、是否用于训练、哪些子处理方能接触，以及删除和租户隔离方式。要求最小权限凭证、审批节点、审计日志、事故责任，以及对提示注入、恶意检索内容、工具滥用和数据泄露的防护证据，并让内部安全与隐私负责人参与审查。"
+          "question": "如何验证供应商能力？",
+          "answer": "看相关生产证据、受限付费试点、可复现评测和失败恢复，而不是只看精美 Demo。"
         },
         {
-          "question": "AI Agent 开发合同必须写清哪些条款？",
-          "answer": "要界定源码、提示词、工具、评估数据和文档的权利，客户数据与轨迹的允许用途，子处理方与留存，验收与整改，依赖变化的责任，支持目标、责任分配和终止权。退出包应包含最新源码、基础设施配置、数据结构、导出、测试集、运行手册和凭证轮换方案。"
+          "question": "应询问哪些安全问题？",
+          "answer": "询问数据流、凭据、最小权限、审批、保留、子处理商、日志、事故和删除。"
         },
         {
-          "question": "怎样避免被 AI Agent 服务商锁定？",
-          "answer": "要求提示词、工具定义、执行轨迹、测试集、数据和文档可导出；在架构中标明专有组件；生产账号与凭证由客户掌控；把交接与退出包列为验收交付物。可迁移不代表组件都能直接替换，而是另一支合格团队能够接手运营或逐步替换。"
+          "question": "如何比较 AI Agent 开发价格？",
+          "answer": "比较首年完整范围、用量、支持、内部复核、变更和退出成本，而不只看建设费。"
         },
         {
-          "question": "什么时候工作流比定制 AI Agent 更合适？",
-          "answer": "输入、规则和异常路径已知时，优先确定性工作流。只有任务需要理解多样信息、在工具之间选择，或在严格边界内动态决定下一步时，才使用 Agent。满足需求的最简单架构通常更容易测试、安全审查和维护。"
+          "question": "上线后由谁负责 AI Agent？",
+          "answer": "合同应明确代码、提示词、凭据、数据、测试、Runbook、监控和生产故障归属。"
         }
       ]
     },
@@ -5111,36 +5143,36 @@
     "/zh/blog/ai-agent-vs-ai-assistant": {
       "items": [
         {
-          "question": "最简单的解释方式是什么？",
-          "answer": "助手帮助人完成工作，下一步通常仍由人控制；Agent 可以接受一个有边界的成果委托，在政策内自行选择中间行动。实践中的区别是控制权和权限，而不是产品有没有聊天框、工具或记忆。"
+          "question": "AI Agent 与 AI Assistant 有什么区别？",
+          "answer": "Assistant 辅助由人控制下一步；Agent 可以接受结果委托并在边界内选择行动。"
         },
         {
-          "question": "同一个产品可以同时包含助手和 Agent 吗？",
-          "answer": "可以。助手可以充当协作界面，让人提问、复核草稿并调用专业 Agent；Agent 再在后台运行有边界的流程。应分别检查每一层的触发、工具、身份、状态、审批和停止控制。"
+          "question": "会用工具的 Assistant 自动就是 Agent 吗？",
+          "answer": "不是，是否有工具本身不能决定谁控制执行。"
         },
         {
-          "question": "会调用工具，就算 AI Agent 吗？",
-          "answer": "不算。助手可以在人注视下调用工具，固定工作流也可以调用多个工具，却仍没有模型主导的控制权。应检查模型是否依据环境反馈选择并串联行动，以及这些调用能否在没有新用户指令时改变外部状态。"
+          "question": "Agent 与 Assistant 的触发方式有何不同？",
+          "answer": "Assistant 通常响应用户；Agent 还可能由日程、事件、队列或目标委托启动。"
         },
         {
-          "question": "AI Agent 的记忆一定比助手更好吗？",
-          "answer": "不一定。现代助手可以使用历史、项目、文件和保存偏好；Agent 如果没有额外存储，两次运行之间也可能完全无状态。需要暂停、恢复或写入外部系统的 Agent 必须有持久运行状态，但这需要工程实现，不是 Agent 标签自动附带。"
+          "question": "Agent 与 Assistant 的权限有何不同？",
+          "answer": "Assistant 常提出建议；Agent 可能执行动作，因此需要明确 Scope、审批和限制。"
         },
         {
-          "question": "AI Agent 适合获得哪些权限？",
-          "answer": "遵循最小权限，并区分读取、草稿、可逆写入和高影响写入。对外发送、发布、付款、删除或修改访问权通常应要求知情审批，展示准确目标、参数、依据和预期影响；授权必须在模型之外执行。"
+          "question": "有 Memory 就算 Agent 吗？",
+          "answer": "不算，持久记忆改变可用上下文，不改变下一步控制权。"
         },
         {
-          "question": "什么时候应该选择助手而不是 Agent？",
-          "answer": "交互式分析、草拟、解释和依赖判断的工作，需要人持续塑造下一步时，优先助手。只有成果可测试、路径确实多变、工具能够收窄，而且停止、审批、升级与恢复行为都明确时，才选择 Agent。"
+          "question": "Agent 比 Assistant 更安全吗？",
+          "answer": "名称本身不决定安全，风险取决于权限、数据、控制、可观测性和恢复。"
         },
         {
-          "question": "AI 助手应该怎样评估？",
-          "answer": "使用代表性请求检查事实、相关性、来源、指令遵循、清晰度、不安全建议、编辑成本，以及用户能否识别不确定性。真正有用的指标是人最终接受的成果是否改善，而不是回复文风是否讨喜。"
+          "question": "什么时候应选择 AI Assistant？",
+          "answer": "人应持续保留判断，产出是建议、分析或草稿时。"
         },
         {
-          "question": "AI Agent 应该怎样评估？",
-          "answer": "同时检查结果与完整轨迹：工具选择和参数、证据、状态变化、审批、政策违规、人工干预、重复副作用、恢复、延迟与成本。案例应覆盖正常、边界、对抗和中断情形，有随机性时需要重复运行。"
+          "question": "什么时候应选择 AI Agent？",
+          "answer": "路径会变化、委托有可衡量价值，且动作可约束、可评估、可恢复时。"
         }
       ]
     },
@@ -5219,36 +5251,36 @@
     "/zh/blog/ai-agents-2026-solo-operators": {
       "items": [
         {
-          "question": "单人经营者在 2026 年一定需要 AI Agent 吗？",
-          "answer": "不一定。只有当一件重复任务目标稳定、输入可取得、输出可见，而且失败后果可以控制时，才值得试点。很多工作更适合确定性流程或单次模型调用。目标不是最大自主程度，而是可靠完成工作。"
+          "question": "AI Agent 对单人经营者什么时候有用？",
+          "answer": "它通过工具完成有边界的任务，同时保留复核与恢复点时。"
         },
         {
-          "question": "AI Agent 与 AI 工作流有什么区别？",
-          "answer": "工作流按照预先定义的步骤和分支运行；Agent 则让模型在边界内选择步骤或工具。周期报告、转换与分派通常更适合可预测的工作流；只有可变输入确实需要有限判断时，Agent 才更合适。"
+          "question": "2026 年 AI Agent 发生了什么变化？",
+          "answer": "工具接入、可复用指令、状态、开放协议与评测更常成为标准构件。"
         },
         {
-          "question": "当前 AI 采用率数字究竟说明什么？",
-          "answer": "美联储 2026 年研究笔记因调查对象和统计单位不同得到不同结果：2025 年末约 18% 的企业使用 AI；同年 11 月约 41% 的个人表示在工作中使用生成式 AI。这些是 AI 采用口径，不能证明相同比例部署了自主 Agent。"
+          "question": "每家一人公司都需要 AI 团队吗？",
+          "answer": "不需要，一项受监督的重复任务比一组 Agent 更适合作为起点。"
         },
         {
-          "question": "单人经营者应该先自动化哪种任务？",
-          "answer": "优先选择高频、可逆、低影响且便于验收的任务，例如带人工复核的资料收集、文档准备、只出草稿的分诊、默认安静的监测或发布前检查。不要从付款、合同、公开宣称、删除账户或不可撤回的客户沟通开始。"
+          "question": "应该先自动化什么任务？",
+          "answer": "选择高频、低后果、可回滚且输入和验收清楚的工作。"
         },
         {
-          "question": "MCP 是什么，又不能解决什么？",
-          "answer": "Model Context Protocol 是连接 AI 应用、工具与数据的开放标准，减少了重复集成，并在 2025 年进入 Linux Foundation 治理。它不会自动让所有服务可信，也不能替代最小权限、审批、提示词注入防护或明确授权。"
+          "question": "哪些事情应由人控制？",
+          "answer": "战略、模糊判断、账户权限、付款、发布、删除等高后果动作。"
         },
         {
-          "question": "怎样安全试点一条 AI Agent 工作流？",
-          "answer": "先记录人工基线，再进行不执行外部动作的影子运行，然后只允许写入暂存区等可逆位置。限制时间、次数与花费；有后果的动作必须审批；扩大范围前衡量验收结果、修正时间、不安全动作、重复写入、成本和监督精力。"
+          "question": "单人经营者应如何试点 Agent？",
+          "answer": "从离线开始，进入影子模式，再开放一个可逆动作，只随证据扩权。"
         },
         {
-          "question": "一人公司使用 Agent 的主要风险是什么？",
-          "answer": "主要风险包括错误结果、错误动作、恶意内容触发提示词注入、权限过宽、凭证或数据泄露、后台失败不可见，以及复核成本吃掉节省时间。缩小工具权限、只生成草稿、保留轨迹、设置停止条件和人工审批，可以限制影响范围。"
+          "question": "应该衡量哪些 Agent 指标？",
+          "answer": "衡量合格结果、修改、复核时间、工具失败、恢复、成本和未授权动作。"
         },
         {
-          "question": "怎样判断 Agent 试点是否成功？",
-          "answer": "连续几个真实周期与人工基线比较，记录验收通过率、修正、遗漏例外、不安全或重复动作、延迟、直接成本与监督时间。模型、提示词、连接器或流程发生变化后，都要重新运行固定测试集。"
+          "question": "如何避免 Agent 厂商锁定？",
+          "answer": "保持源数据、任务契约、评测案例、提示、产物和 Run History 可导出。"
         }
       ]
     },
@@ -5291,36 +5323,36 @@
     "/zh/blog/ai-automation-agency-do-you-need-one": {
       "items": [
         {
-          "question": "我到底需不需要请一家 AI 自动化公司？",
-          "answer": "当一条稳定且后果明确的工作流需要多类专业能力，而团队无法负责任地完成建设和运维时，可以考虑机构。流程仍在变化就暂缓；边界窄、可逆就内部试做；自动化将成为持续需求组合时则应考虑招聘。"
+          "question": "AI 自动化公司做什么？",
+          "answer": "它负责梳理流程、配置平台或集成、测试并部署工作流，也可能持续提供支持。"
         },
         {
-          "question": "应该自己搭、招聘，还是找机构？",
-          "answer": "现成工具能完成、一个内部负责人可以测试维护的窄流程适合自建；需求持续积累、业务知识需要留在内部时适合招聘或长期合作；有明确边界且同时需要设计、集成、安全、测试和培训时，机构更有优势。"
+          "question": "我需要 AI 自动化公司吗？",
+          "answer": "流程稳定、集成风险真实，而内部团队无法负责任地建设和运维时。"
         },
         {
-          "question": "AI 自动化公司一般要花多少钱？",
-          "answer": "这类服务没有统一价格，集成深度、数据质量、合规要求、支持方式、地区和项目范围都会影响报价。应使用同一份 Brief 获取书面方案，并把需求梳理、开发、软件与模型调用、内部投入、支持、变更和迁移纳入首年总成本。"
+          "question": "什么时候不应找 AI 自动化公司？",
+          "answer": "流程每周变化、原生工具已解决大半，或内部无人接手时。"
         },
         {
-          "question": "机构在项目结束时应该交付什么？",
-          "answer": "应包括运行在客户可控环境中的有边界工作流、覆盖正常与失败案例的测试记录、架构和数据流说明、运维 Runbook、约定的代码与配置权利、由客户控制的生产账号、培训，以及尚未解决的限制清单。"
+          "question": "AI 自动化公司有哪些替代选择？",
+          "answer": "可以暂缓、内部搭建、招聘员工或自由职业者，或者使用现成产品。"
         },
         {
-          "question": "开放生产权限之前，怎样筛选机构？",
-          "answer": "查看脱敏交接包，与实际交付团队沟通，让对方解释一个可能的故障，检查凭证和事故处理方式，识别分包商与子处理方，核对相关客户证明，并要求给出具体的离场与迁移方案。"
+          "question": "应该选择 Agency 还是 Freelancer？",
+          "answer": "Agency 容量和连续性更强，Freelancer 适合窄范围；证据和所有权比标签重要。"
         },
         {
-          "question": "AI 自动化试点应该验收什么？",
-          "answer": "应检查功能结果、异常分流、误报漏报、人工修正、延迟、调用成本、操作投入、告警、安全重试、权限、审批边界、撤销和恢复。在控制有效之前，把有后果的动作保留在草稿或沙箱模式。"
+          "question": "付费自动化试点应包含什么？",
+          "answer": "包含一条受限流程、基线、验收案例、禁止动作、恢复测试、文档和交接。"
         },
         {
-          "question": "与机构签订的合同里应该写什么？",
-          "answer": "写明交付物、排除项、依赖、验收测试、变更流程、支持期、额外收费、资产权利、账号归属、数据用途与保留、模型训练限制、子处理方、事故通知、审计证据，以及终止后的导出、删除、凭证轮换和迁移支持。"
+          "question": "谁应该拥有自动化？",
+          "answer": "指定内部负责人管理优先级、凭据、验收、事故和供应商决策。"
         },
         {
-          "question": "怎样避免被 AI 自动化供应商锁定？",
-          "answer": "让生产账号、代码仓库、付费关系和主凭证始终由客户控制；要求可迁移的文档与导出文件；记录专有依赖；培训内部负责人；并在支付尾款前实际测试离场流程，而不是只相信笼统的所有权承诺。"
+          "question": "如何选择 AI 自动化公司？",
+          "answer": "针对同一范围比较证据、架构、安全、运营模式、总成本、合同和退出路径。"
         }
       ]
     },
@@ -5787,36 +5819,36 @@
     "/zh/blog/best-ai-agent-builder-2026": {
       "items": [
         {
-          "question": "2026 年最好的 AI Agent 构建工具是什么？",
-          "answer": "不存在经得起检验的通用冠军。真正合适的工具，应通过当前工作流的一票否决项，在固定测试集上表现可靠，让故障可诊断，并且每个验收结果的成本可以接受。本文的七维评分框架，目的就是让不同团队都能得到可复现的答案。"
+          "question": "什么是 AI Agent Builder？",
+          "answer": "它是用来定义模型指令、工具、状态、控制流、评测和部署的平台或框架。"
         },
         {
-          "question": "怎样公平比较不同的 AI Agent 构建工具？",
-          "answer": "让所有候选使用相同的工作流、输入、资料、工具权限和验收标准。分别给任务适配、控制、数据与权限、评测、可观测与恢复、成本单位、退出能力打 0～4 分。测试前先定权重与淘汰条件，避免漂亮演示临时改变规则。"
+          "question": "哪款 AI Agent Builder 最好？",
+          "answer": "没有通用第一名，应选择匹配任务、风险、团队能力和运维方式的工具。"
         },
         {
-          "question": "什么时候需要 Agent，而不是普通自动化？",
-          "answer": "如果路径能提前写死——发生 X，依次执行 A、B、C——优先用自动化。只有当含糊输入需要在边界内做判断，例如选择已批准的工具、追问缺失信息或升级人工时，Agent 才有必要。在固定流程中加入一次模型调用，并不会自动变成 Agent。"
+          "question": "No-code、Low-code 与 Framework 有何区别？",
+          "answer": "No-code 降低搭建门槛，Low-code 增加控制，Framework 自定义最强但工程负担更高。"
         },
         {
-          "question": "如何计算 AI Agent 构建工具的真实成本？",
-          "answer": "按每个验收通过的结果计算，而不是只看订阅价。把平台用量、模型 Token、外部工具、基础设施、失败与重试、人工复核和故障处理都算进去；确认厂商究竟按活动、操作、执行、消息还是席位计费，再分别测算当前、预期和峰值用量。"
+          "question": "首先应该评估 Agent Builder 的什么？",
+          "answer": "评估工具边界、确定性控制、可观测性、审批、数据处理、恢复、成本和可迁移性。"
         },
         {
-          "question": "自托管 Agent 构建工具就一定更私密吗？",
-          "answer": "不一定。只自托管其中一层，不能阻止提示词、文档、向量、工具载荷或轨迹进入外部模型与可观测服务。应画出完整数据路径，并逐项核对授权范围、保留期、区域、训练政策、加密与删除方式。"
+          "question": "如何公平比较 Agent Builder？",
+          "answer": "用相同权限与验收标准运行同一批历史任务和对抗任务。"
         },
         {
-          "question": "AI Agent 构建工具的试点应该测什么？",
-          "answer": "测试正常请求、信息缺失、冲突指令、重复事件、工具不可用、知识过期、恶意指令文本，以及必须转交人工的情况。记录验收通过、不安全动作、无谓升级、延迟、用量、复核与修复时间；然后改动一个组件并完整回归，验证能否发现退步。"
+          "question": "Agent Builder 的总成本包括什么？",
+          "answer": "包括订阅或托管、模型和工具用量、实现、复核、失败、维护和迁移。"
         },
         {
-          "question": "生产环境中的 Agent 最需要哪些能力？",
-          "answer": "优先级取决于影响程度，但通常需要最小权限、重要动作审批、版本化评测、详细轨迹、安全重试、回滚或恢复，以及可用的导出。对高影响工作流，权限、评测或恢复出现 0 分时应直接淘汰，而不是用其他高分抵消。"
+          "question": "什么时候不需要 AI Agent Builder？",
+          "answer": "原生应用规则或简单确定性 Workflow 已能可靠解决任务时。"
         },
         {
-          "question": "以后能把 Agent 迁移到其他构建工具吗？",
-          "answer": "只有逻辑和数据都能迁移才算。试用期就应导出提示词、流程定义、工具结构、评测集、运行历史、知识源、状态与密钥引用。若导出格式只有原厂服务能够解释，它只是备份，不是实际可行的迁移路径。"
+          "question": "如何降低 Agent Builder 锁定？",
+          "answer": "保持任务契约、提示、Schema、Evals、源数据、产物和 Run Record 可导出。"
         }
       ]
     },
@@ -6211,36 +6243,36 @@
     "/zh/blog/building-agentic-ai-systems-build-or-buy": {
       "items": [
         {
-          "question": "Agentic AI 系统应该自研、购买还是采用混合架构？",
-          "answer": "让每个候选方案运行同一项代表性任务和验收集，比较结果质量、治理、集成、恢复、运维负担、总成本情景和退出准备度。差异化行为与运行控制具有战略价值时偏向自研；通用需求与产品高度适配时偏向购买；责任边界清楚时再考虑混合。"
+          "question": "我真的需要 Agentic AI 系统吗？",
+          "answer": "只有执行路径无法完全预先规定，系统必须根据环境反馈选择工具时才需要。"
         },
         {
-          "question": "单个 AI Agent 什么时候算一套 Agentic 系统？",
-          "answer": "一旦它需要持久状态、集成、共享身份、权限、评估、监控、部署和故障恢复，就已经进入系统层面。并不需要多个 Agent；一个能够改变客户或业务系统的 Agent，也需要明确的系统责任人与生产控制。"
+          "question": "应该自研、购买还是采用混合架构？",
+          "answer": "应根据控制要求、战略差异、治理、集成、评测、总成本和退出需求选择。"
         },
         {
-          "question": "购买平台后，治理责任会转给供应商吗？",
-          "answer": "不会。供应商可以提供控制、文档和运行承诺，但预期用途、风险容忍度、数据范围、人工审批、验收标准以及是否继续部署，仍由采用方决定。采购审查要验证产品控制能否真正执行这些决定。"
+          "question": "哪些责任不能外包？",
+          "answer": "组织仍需负责系统用途、可接受风险、人的角色，以及继续或停止部署的决定。"
         },
         {
-          "question": "如何比较不同方案的 Agent 集成能力？",
-          "answer": "测试准确的读写操作，不要只数连接器图标。核对身份类型、权限粒度、事件顺序、重复投递、限速、载荷、错误契约、版本和审计证据，并覆盖凭证过期、部分响应、结构变化，以及外部写入成功后本地超时。"
+          "question": "如何比较自研与购买方案？",
+          "answer": "让所有方案运行同一套验收评测和有代表性的真实负载。"
         },
         {
-          "question": "怎样计算 AI Agent 系统的总拥有成本？",
-          "answer": "按预期、低谷和峰值负载计算每个可接受结果的成本。纳入需求发现、实施、许可、模型和基础设施、连接器、安全审查、人工复核、失败运行、支持、值班、维护、迁移和退出成本，并使用当前厂商报价，而不是通用周期或固定维护比例。"
+          "question": "总拥有成本应该包含什么？",
+          "answer": "包含构建或配置、模型与运行时、复核、失败、监控、支持和迁移。"
         },
         {
           "question": "拥有代码就能避免厂商锁定吗？",
-          "answer": "不能。自研系统可能被云、模型 API、框架、数据结构或团队隐性知识锁定；托管系统则可能把流程、权限、成果和历史锁在专有格式里。应用第二套技术栈迁移一项任务及其评估、数据、政策和运行证据，实际验证可迁移性。"
+          "answer": "不能。模型、数据结构、工具、评测和运营知识仍可能形成锁定。"
         },
         {
-          "question": "混合架构中，企业至少应掌握什么？",
-          "answer": "至少掌握任务契约、政策、权限模型、评估案例、事实源 ID 和退出计划。托管运行时可以通过窄工具规划执行，而企业控制的网关负责高影响调用的认证、授权、校验和日志。"
+          "question": "什么是边界清楚的混合架构？",
+          "answer": "把政策、评测与数据边界留在组织内部，同时购买可替换的运行时或连接器层。"
         },
         {
-          "question": "哪些问题会让自研与购买试点失去参考价值？",
-          "answer": "候选方案处理不同任务、演示中隐藏人工协助、只使用演示数据、不测试故障，或只比较标价而非完整运行成本，都会让结论失真。应共用案例和控制，运行影子或草稿模式，测试权限撤销与写入中断，并记录证据和复审日期。"
+          "question": "如何测试退出路径？",
+          "answer": "导出配置、数据与运行轨迹，并演练替换一项重要依赖。"
         }
       ]
     },
@@ -6891,28 +6923,36 @@
     "/zh/blog/first-100-customers-solo-founder": {
       "items": [
         {
-          "question": "我需要上社交媒体才能拿到前 100 个客户吗？",
-          "answer": "不一定——完全取决于你的客户已经在哪些地方。有些细分领域在 LinkedIn 或 X 上很活跃；另一些几乎只活在私密 Slack 群、行业论坛或细分通讯稿里。要回答的不是「我该上哪个平台」，而是「最需要我产品的人已经聚集在哪里」。社交媒体只是可能的答案之一，不是默认答案。"
+          "question": "什么应该算作客户？",
+          "answer": "统一使用付费账号、完成交易、活跃订阅或留存同期群中的一种定义。"
         },
         {
-          "question": "从第一天就收费，还是先免费？",
-          "answer": "从第一天就收费，哪怕先收最终价格的一小部分。免费用户会夸产品好、然后再也不打开；付费用户才会告诉你哪里坏了，因为他们为「本该能用」的东西付了钱。早期收入还是筛选机制——约 70% 的独立 SaaS 创始人如今要求用户先绑卡。想学东西可以用少量免费对话，但别把免费用户当成验证。"
+          "question": "单人创始人如何获得第 0 到 10 个客户？",
+          "answer": "聚焦一种买家和一个问题，通过合规直接接触提供边界明确的付费试点。"
         },
         {
-          "question": "需要多少次客户对话才够我行动？",
-          "answer": "没有魔法数字，但多数创始人发现：15 到 25 次实质对话（不是演示，是真正探讨问题）后，重复模式开始浮现。四个不同的人用几乎相同的措辞描述同一种挫败，信号就够了；如果每次聊到的还是根本不同的问题，就继续聊。"
+          "question": "为什么要尽早收费？",
+          "answer": "付费方案能验证付费意愿，而不只是使用或礼貌性的兴趣。"
         },
         {
-          "question": "找不到与产品相关的社群怎么办？",
-          "answer": "这本身就是诊断信息。没有社群在活跃讨论你解决的问题，要么这个问题没被广泛感受到、不足以自然形成社群，要么社群在你还没找过的地方。两处都值得在继续开发前认真排查——社群的缺席是在提醒你：这个问题是否真实、是否被强烈感受到。"
+          "question": "从第 10 到 30 个客户应该学什么？",
+          "answer": "记录购买原因、入门摩擦、首次价值时间、支持、留存和流失原因。"
         },
         {
-          "question": "要不要用终身买断或大幅折扣吸引早期客户？",
-          "answer": "要小心。折扣吸引来的是价格敏感型客户，他们往往是最差的长期匹配——流失最快、抱怨定价最多、转介绍最少。更好的做法：收取合理的早期采用价，换回反馈渠道、案例研究或参与共创的诚意。你要的是相信产品值得付费的人，而不是因打了折扣才买、却什么有用信息都不给的客户。"
+          "question": "从第 30 到 100 个客户应该标准化什么？",
+          "answer": "只标准化已经重复的资格判断、提案、入门、教育和反馈步骤。"
         },
         {
-          "question": "怎么知道手动做够了、可以开始系统化？",
-          "answer": "当你能把「再获一个客户的完整做法」写到新成员照着就能执行的粒度——具体社群、消息类型、跟进序列——就够了解、可以系统化了。写不到这个粒度，说明还没理解透，自动化只会把错误的流程固化下来。稳定交付的部分去自动化，仍在摸索的部分继续手动。"
+          "question": "早期客户外联应该自动化吗？",
+          "answer": "在消息赢得真实回复，且平台、隐私与声誉风险受控前，不应自动化。"
+        },
+        {
+          "question": "每周应该复盘哪些客户指标？",
+          "answer": "记录合格对话、报价、付费转化、首次价值、留存、支持、退款和流失原因。"
+        },
+        {
+          "question": "前 100 个客户应该留下什么？",
+          "answer": "应留下更清晰的理想客户、承诺、价格、入门流程、获客渠道与支持负担。"
         }
       ]
     },
@@ -7571,28 +7611,36 @@
     "/zh/blog/how-one-person-businesses-work-like-a-team-with-ai": {
       "items": [
         {
-          "question": "给 AI 一个角色，和发一次性请求有什么不同？",
-          "answer": "请求是一次性的交易，角色是持续的存在。发请求时你只说「帮我写段产品描述」，下次又从头再来；给角色时你定义它是谁、了解你什么、好输出长什么样——「你是我的产品沟通官，知道我们的语气和定位」。这样它能稳定维持同一套标准，不必每个会话都重新解释上下文。改变的正是这种连续性。"
+          "question": "一个人能借助 AI 像团队一样工作吗？",
+          "answer": "单人经营者可以采用角色边界、交接与审核门，但 AI 不是承担责任的员工。"
         },
         {
-          "question": "做到这套做法，需要换工具吗？",
-          "answer": "不一定。重点不在工具，而在角色定义本身。先从你正在用的工具开始：把上下文、标准和格式偏好写进系统提示词，拿真实任务测一测。输出变稳定了，说明思路成立；之后你再决定要不要换一个更结构化的 AI 工作区。"
+          "question": "什么是 AI 角色契约？",
+          "answer": "它定义任务、获批输入、规定输出、排除项、复核标准与交接内容。"
         },
         {
-          "question": "写一份角色定义要多久？",
-          "answer": "第一个角色大概 20–30 分钟；之后就是这里几分钟、那里几分钟的小修小补。从空白文档开始写「职位描述」——职责、它需要了解你的哪些情况、用什么格式交付。头两周会感觉像在投入，到第三周基本就自动运转了。"
+          "question": "给 AI 安排人设就能提升质量吗？",
+          "answer": "不能。真正产生运营价值的是清晰约束、证据、交付物和复核。"
         },
         {
-          "question": "一人公司最需要哪些 AI 角色，先配哪个？",
-          "answer": "最常见的三个：研究分析师——跟住领域动态、从噪声里提炼信号；内容生产——懂你的语气、格式和受众，把原始想法变成成品；运营协调员——处理外联草稿、进度更新这类重复工作流。别一次全建，先挑目前最烧你时间的那一个。"
+          "question": "可以从哪四个 AI 辅助角色开始？",
+          "answer": "一套实用起点是研究、决策、生产与复核。"
         },
         {
-          "question": "如果我自己还没完全会做这个任务呢？",
-          "answer": "那角色就不会成立——这不算缺陷，反而是有用的信号。AI 擅长执行清晰，却不能凭空制造清晰：你说不出「好」长什么样，输出就会听起来自信却答非所问。先自己上手做几遍，再交给 AI。角色框架只有在你定义得出这份工作时才成立。"
+          "question": "每个 AI 角色都应该共享全部上下文吗？",
+          "answer": "不应。只共享获批且相关的上下文，因为错误证据会跨阶段传播。"
         },
         {
-          "question": "这套做法在哪些情况下失灵？什么时候还得找人？",
-          "answer": "角色会在你自身清晰度的边界上失灵，也搞不定依赖真实关系背景的工作——比如你知道某位客户正经历一个难熬的季度。AI 擅长可重复、上下文厚重、输出明确的任务，但在判断人心、创意方向、客户信任、或真实不确定性下的战略思考上明显逊色，这些仍需要人。而且搭好角色本身也要前期思考，它是投资，不是捷径。"
+          "question": "什么时候应该使用工作流而不是多个角色？",
+          "answer": "顺序、输入和预期输出稳定时，应使用工作流。"
+        },
+        {
+          "question": "哪些责任必须留给人？",
+          "answer": "法律责任、客户关系、风险容忍、利益冲突与重要审批必须由人负责。"
+        },
+        {
+          "question": "如何开始使用 AI 角色？",
+          "answer": "先在一项重复交付物上测试两个阶段，并测量返工、证据遗漏与复核时间。"
         }
       ]
     },
@@ -8379,56 +8427,72 @@
     "/zh/blog/scale-one-person-business-without-hiring": {
       "items": [
         {
-          "question": "不招人，一人公司真的能做大吗？",
-          "answer": "对大多数单人创业者能——前提是不再把「做大」等同于「加人」。招人带来协调成本：带新人、管理、评审、沟通，早期吃掉的时间可能比帮手省下的还多。真正的目标是让产出增长、复杂度不增长：把重复工作做成系统、产品化你的服务、让上下文可延续，每个项目都不从零开始。需要帮手的临界点确实存在，只是多数人问得太早。"
+          "question": "扩大一人公司到底指什么？",
+          "answer": "选择杠杆前，先明确目标是收入、利润、交付产能还是经营者时间。"
         },
         {
-          "question": "对一人公司来说，「做大」到底指什么？",
-          "answer": "指不增加自己工时地提升产出。「做大收入」——靠涨价、更多客户或不需要按比例多花时间的产品，让进账上涨；「做大自己」——加更多工时、周末全搭进去，那不是做大，是硬扛，有坚硬的天花板。实操测试在周二下午：你是在即兴做一件新事，还是在跑一套已经打磨过的流程？"
+          "question": "扩张前的第一步是什么？",
+          "answer": "画出一个代表性月份，判断约束来自需求、价格、变化、交付还是经营者决策。"
         },
         {
-          "question": "怎么判断我的服务「可规模化」？",
-          "answer": "问自己：如果明天多来三个和现在一模一样的客户，我能不大幅增加工时就把活交付吗？不能，说明服务需要更多结构。产品化服务——标准化范围、固定价格、可重复交付——能抑制范围蔓延、让工作量可预期。当服务有固定形态时，交付一次比一次快，而不是每个客户都重新发明轮子。"
+          "question": "招聘前可以测试哪些杠杆？",
+          "answer": "收窄产品、改变价格或包装、删除低价值步骤、自动化稳定重复，或增加边界明确的承包商产能。"
         },
         {
-          "question": "AI 能替代「先把系统建出来」吗？",
-          "answer": "不能。AI 压缩的是跑系统的时间——起草、总结、调研——也对上下文延续有帮助。但判断仍是你的：取什么角度、一段客户关系值不值得追、东西怎么定位。AI 也不替你「把系统建出来」这一步。而且对多数单人创业者，用现成工具比自建更划算——配置成本是实打实的。"
+          "question": "一人公司应该自动化什么？",
+          "answer": "自动化稳定、可测试且有清晰恢复机制的重复工作，对重要操作保留审批。"
         },
         {
-          "question": "什么时候才真正该招人？先承包商还是雇员？",
-          "answer": "当需求超过「优化到最好」的流程所能承载时——而不是现在这套乱糟糟的流程接不住时。先把系统建起来、真正理顺工作流，再看是否仍然过载；如果还是，那你就「挣到」这次招聘了。真要带人时，几乎永远先承包商：保住灵活性、淡季不背固定成本，还能先验证这个岗位是否真的需要。"
+          "question": "如何测量交付产能？",
+          "answer": "记录扣除直接成本后的贡献，以及包含返工和支持的每个受限经营者小时贡献。"
         },
         {
-          "question": "怎么知道我已经撞上天花板了？",
-          "answer": "看结构，不看努力。问题不是「你够不够拼」，而是「现有结构能否在不按比例加时间的情况下产出更多」。能，还有放大空间；不能，先改结构再加人。不同形态的天花板不同：高接触的咨询业务比产品化服务更早触顶。而且很多「只有我能做」的感觉，其实是习惯，不是必需。"
+          "question": "使用承包商等于没有人力投入吗？",
+          "answer": "不等于。这仍是委派，需要 brief、质量控制、数据边界与备用方案。"
+        },
+        {
+          "question": "什么时候招聘才是正确答案？",
+          "answer": "需求稳定、持续岗位已被理解并需要负责，且企业能承担完整成本时应该招聘。"
+        },
+        {
+          "question": "如何测试一个扩张杠杆？",
+          "answer": "针对一个约束运行一项可撤销的 30 天实验，测量贡献、时间、质量、周期和异常。"
         }
       ]
     },
     "/zh/blog/solopreneur-pricing-day-one": {
       "items": [
         {
-          "question": "我还没有经验，难道不该收低些、或先免费做几单攒口碑吗？",
-          "answer": "经验少是真实因素，但不足以定零价或免单。免费客户很少反驳，反馈弱；付费客户问更难的问题，反而帮你打磨 offer。缺经验就收窄范围，而不是压低价格——窄范围、定义清楚的收费 offer，教你的事远多过无限量免费工作。"
+          "question": "从第一天定价等于在调研前收费吗？",
+          "answer": "不等于。客户、问题、交付物、边界与决定日期清楚后才收费。"
         },
         {
-          "question": "没有成交数据、没有对标、也没有客户评价，第一个价格怎么定？",
-          "answer": "用「10 倍价值」法则当锚点：估算工作带来的具体改善——省下的钱、多赚的钱——按约十分之一定价。若你帮客户每年省 5 万美元，收 5,000 美元就合理。把它当 sanity check 而非公式：锚在客户所得上，而不是你的工时。"
+          "question": "第一份付费方案应该包含什么？",
+          "answer": "明确交付物、验收标准、输入、修改次数、排除项、时间、付款与变更规则。"
         },
         {
-          "question": "该按时计费、按项目计费，还是按价值计价？",
-          "answer": "按时计费简单，但卖的是专业能力时会把你套住——客户开始优化「小时数」而不是结果。按项目计费更干净：约定交付物、报一个价，效率越高你每小时赚得越多，不必重新谈判。按价值计价最难搭建，但长期最站得住。拿不准时，文章的建议是从按项目计费开始，因为它会逼你把范围定义清楚。"
+          "question": "单人经营者什么时候适合按小时收费？",
+          "answer": "范围不确定、时间是最清楚单位且工时边界明确时适合。"
         },
         {
-          "question": "怎么分辨是价格太高，还是这个潜在客户本来就不合适？",
-          "answer": "去追问那个「不」。试着问：「你能帮我理解一下，预算这关具体卡在哪里吗？」如果对方说就是没有这笔预算，那是匹配问题，不是价格问题；如果说拿不准这个价值值不值，那是一场值得展开的框定对话。反过来，如果所有人都立刻答应、毫不还价，你很可能定低了。"
+          "question": "什么时候适合按项目收费？",
+          "answer": "交付物明确，并记录假设和变更流程时适合。"
         },
         {
-          "question": "我应该公开标价吗？",
-          "answer": "没有硬性规则。公开标价能替你挡掉「随便问问」型的人、省下时间；私下报价则给你按范围调整的空间。文章倾向公开一个「从 X 美元起」的起步价——它给对话设了一个地板，又不会把你锁死。无论哪种，价格都应该反映你定位去解决的问题，而不只是其中的付出。"
+          "question": "什么时候适合顾问费或订阅？",
+          "answer": "持续访问或重复产出，并且产能、响应时间与未使用额度清楚时适合。"
         },
         {
-          "question": "怎么涨价又不失去现有客户？",
-          "answer": "最干净的做法：先对新客户涨价，老客户维持当前价格，他们若问起就如实相告。可持续的涨价来自更强的需求信号与更清晰的定位，而不是某天突然宣布价格翻倍。在动老客户关系之前，先给自己几个月跑新客户价格；真要涨的时候，提前通知并给出理由。"
+          "question": "如何计算第一个价格底线？",
+          "answer": "计入直接成本、经营者工时、税费与管理成本假设、返工余量和最低可接受贡献。"
+        },
+        {
+          "question": "如何测试第一个价格？",
+          "answer": "向可比较的潜在客户提供同一方案，并记录接受、异议、投入、返工与结果。"
+        },
+        {
+          "question": "应该涨价、降价还是重做方案？",
+          "answer": "根据需求、结果、产能和范围证据判断；转化低并不能证明只有价格有问题。"
         }
       ]
     },

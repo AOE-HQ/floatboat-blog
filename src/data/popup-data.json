@@ -32,12 +32,12 @@
     },
     "ai-agent-development-services": {
       "en": {
-        "title": "Test the workflow before you commission it",
-        "body": "Use a workspace agent to document the task, approval points, and edge cases before turning an idea into a development contract."
+        "title": "Define the service before choosing who builds it",
+        "body": "Compare a workflow, internal build, freelancer, agency, and managed product against the same task contract, evidence, security controls, pilot, and exit path."
       },
       "zh": {
-        "title": "先验证工作，再委托开发",
-        "body": "先用工作区 Agent 跑清任务、审批点与异常案例，再把模糊想法写成可验收的开发合同。"
+        "title": "先定义服务，再选择由谁建设",
+        "body": "用同一份任务契约、证据、安全控制、试点与退出路径，比较 Workflow、内部自建、自由开发者、机构和托管产品。"
       }
     },
     "ai-agent-solo-operators": {
@@ -112,12 +112,12 @@
     },
     "ai-automation-agency-do-you-need-one": {
       "en": {
-        "title": "Test the workflow before you outsource the operating model",
-        "body": "Use Floatboat to make the inputs, draft outputs, review points, and internal ownership visible before committing to a larger build."
+        "title": "Decide whether the workflow needs an agency",
+        "body": "Stabilize the process, name an internal owner, compare build options, and use one bounded paid pilot before outsourcing a larger operating system."
       },
       "zh": {
-        "title": "外包整套系统前，先验证真实工作流",
-        "body": "用 Floatboat 把输入、草稿成果、审批节点与内部负责人放进同一个工作现场，再决定是否扩大建设。"
+        "title": "先判断这条工作流是否需要机构",
+        "body": "先稳定流程、指定内部负责人、比较建设路径，再用一条受限付费试点决定是否外包更大的运营系统。"
       }
     },
     "ai-automation-agency-pricing": {
@@ -512,12 +512,12 @@
     },
     "first-100-customers-solo-founder": {
       "en": {
-        "title": "Your first 100 customers",
-        "body": "This playbook works better once follow-ups stop depending on your memory."
+        "title": "Turn the first 100 customers into evidence",
+        "body": "Define who counts, learn through paid pilots, and standardize only the acquisition and onboarding steps that truly repeat."
       },
       "zh": {
-        "title": "前 100 个客户怎么来",
-        "body": "这套打法成立的前提，是跟进不再依赖你的记性。"
+        "title": "把前 100 个客户变成经营证据",
+        "body": "先定义什么算客户，用付费试点学习，只标准化真正重复的获客与入门步骤。"
       }
     },
     "floatcup-world-cup-2026-calendar-subscribe": {
@@ -732,12 +732,12 @@
     },
     "how-one-person-businesses-work-like-a-team-with-ai": {
       "en": {
-        "title": "One-person business, full-team output",
-        "body": "Giving AI clear roles is the whole trick — calendars are what make roles stick."
+        "title": "Give AI roles clear operating contracts",
+        "body": "Team-like discipline comes from bounded jobs, inspectable handoffs, evidence checks, and human approval—not titles alone."
       },
       "zh": {
-        "title": "一人公司，整队产出",
-        "body": "诀窍就一条：给 AI 清晰的角色，而日历让角色固定下来。"
+        "title": "给 AI 角色写清运营契约",
+        "body": "类似团队的纪律来自边界明确的任务、可检查交接、证据核验与人工批准，而不是角色头衔。"
       }
     },
     "how-to-build-ai-agents-for-repeated-work": {
@@ -972,22 +972,22 @@
     },
     "scale-one-person-business-without-hiring": {
       "en": {
-        "title": "Scale without hiring",
-        "body": "Every growth lever here runs on routines — precisely what agents keep alive."
+        "title": "Scale one constraint at a time",
+        "body": "Test offer, pricing, deletion, automation, or contractor capacity against contribution, owner time, quality, and exceptions."
       },
       "zh": {
-        "title": "不招人的规模化",
-        "body": "文中的增长杠杆全靠例行流程撑着，而那正是 Agent 的看家本领。"
+        "title": "一次只扩张一个约束",
+        "body": "用贡献、经营者时间、质量与异常，分别测试产品、定价、删减、自动化或承包商产能。"
       }
     },
     "solopreneur-pricing-day-one": {
       "en": {
-        "title": "Price from day one",
-        "body": "Charging early gets easier when invoicing and chasing stop being your job."
+        "title": "Treat the first price as a testable hypothesis",
+        "body": "Bound the offer, calculate a defensible floor, and test one package with comparable prospects before drawing conclusions."
       },
       "zh": {
-        "title": "第一天就敢报价",
-        "body": "当开票和催款不再是你亲手做的事，早报价就没那么难。"
+        "title": "把第一个价格当作可测试假设",
+        "body": "先限定方案、计算可解释底线，再向可比较的潜在客户测试同一包装，然后才得出结论。"
       }
     },
     "stop-context-switching-workspace-agent": {

@@ -16,6 +16,8 @@ Hiring an **AI agent development service** is not primarily a model-selection de
 
 This guide is for teams comparing an agency, freelancer, implementation partner, or internal build. It avoids universal price ranges: requirements, integrations, data and risk make those numbers misleading. Instead, it shows how to define the service, compare evidence, structure a paid pilot, and expose the costs hidden behind a headline quote.
 
+> **Verified October 13, 2026:** Vendor capabilities, model access, and platform pricing change quickly. Recheck every proposed dependency and commercial term during procurement.
+
 ## First decide whether the task needs an agent
 
 Anthropic distinguishes a **workflow**, where code determines the execution path, from an **agent**, where a model dynamically directs its process and tool use. Its advice is deliberately conservative: use the simplest approach that works and accept an agent’s additional cost and latency only when flexibility earns it. See [Anthropic’s agent architecture guidance](https://www.anthropic.com/engineering/building-effective-agents).

@@ -10,6 +10,8 @@ locale: "en"
 draft: false
 ---
 
+Information checked October 13, 2026.
+
 The build-or-buy question for an agentic AI system is not a choice between “custom and powerful” or “packaged and limited.” It is a decision about which control planes your organization must own—and which ones a vendor can operate better.
 
 The realistic options are:

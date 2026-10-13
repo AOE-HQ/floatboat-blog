@@ -1,6 +1,6 @@
 ---
 title: "AI Agents in 2026: What Solo Operators Actually Need to Know"
-description: "AI agents are moving from demos to real execution in 2026. Here's what that shift means if you're running a business on your own."
+description: "A primary-source timeline of AI agents in 2026, with task-fit, risk and tool-selection guidance plus a four-stage pilot for solo operators."
 slug: "ai-agents-2026-solo-operators"
 date: "2026-04-07"
 author: "Nova"
@@ -16,29 +16,31 @@ The important 2026 story is not that every one-person business needs an “AI wo
 
 This guide separates evidence from forecasts and gives a practical way to choose one task, assess the risk, and run a pilot.
 
+> **Evidence checked October 13, 2026:** Time-sensitive product examples are linked to primary sources. Treat vendor roadmaps and benchmark claims as directional until verified on your own task.
+
 ## What changed: an evidence timeline
 
 Agent news mixes product launches, usage surveys, technical standards, and forecasts as if they measure the same thing. They do not. The following milestones show what became possible; none proves that a particular solo business should automate a task.
 
 ### October 22, 2024: computer use entered a public API beta
 
-Anthropic announced computer use for Claude 3.5 Sonnet, allowing developers to direct a model to view a screen, move a cursor, click, and type. This mattered because a model could act through interfaces that lacked a purpose-built API. It was also explicitly a beta, not evidence that arbitrary browser work was safe to leave unattended.
+Anthropic [announced computer use](https://www.anthropic.com/news/3-5-models-and-computer-use) for Claude 3.5 Sonnet, allowing developers to direct a model to view a screen, move a cursor, click, and type. This mattered because a model could act through interfaces that lacked a purpose-built API. It was also explicitly a beta, not evidence that arbitrary browser work was safe to leave unattended.
 
 ### November 25, 2024: MCP was released as an open protocol
 
-Anthropic open-sourced the Model Context Protocol to standardize connections between AI applications, data sources, and tools. A shared protocol reduces custom integration work. It does not make every connected server trustworthy, or grant an agent permission to use every exposed action.
+Anthropic [released the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol) to standardize connections between AI applications, data sources, and tools. A shared protocol reduces custom integration work. It does not make every connected server trustworthy, or grant an agent permission to use every exposed action.
 
 ### December 9, 2025: MCP moved into neutral foundation governance
 
-The Linux Foundation announced the Agentic AI Foundation with MCP, goose, and AGENTS.md as founding contributions. AWS, Anthropic, Block, Bloomberg, Cloudflare, Google, Microsoft, and OpenAI were listed among platinum members. The concrete signal is broad infrastructure participation—not a measured adoption rate for solo operators.
+The [Linux Foundation announced the Agentic AI Foundation](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation) with MCP, goose, and AGENTS.md as founding contributions. AWS, Anthropic, Block, Bloomberg, Cloudflare, Google, Microsoft, and OpenAI were listed among platinum members. The concrete signal is broad infrastructure participation—not a measured adoption rate for solo operators.
 
-### January–May 2026: agent security became a standards question
+### May 2026: agent security became a standards question
 
-NIST’s Center for AI Standards and Innovation requested evidence about AI-agent security in January. Its May summary reported broad agreement among respondents that agents introduce distinct threats and that existing cybersecurity practices need adaptation. NIST also opened work on agent identity and authorization. The direction is clear: tool-using agents need explicit identities, authority, and limits.
+NIST’s Center for AI Standards and Innovation issued a request for information about AI-agent security and later published a [response analysis](https://www.nist.gov/publications/summary-analysis-responses-request-information-regarding-security-considerations-ai). The summary reported broad agreement among respondents that agents introduce distinct threats and that existing cybersecurity practices need adaptation.
 
 ### April 3, 2026: U.S. adoption data showed why percentages need labels
 
-A Federal Reserve note compared three surveys through 2025. It reported roughly 18% of firms using AI at year-end 2025 and about 41% of individuals using generative AI for work in November 2025. A senior-leader survey yielded still another measure. The authors explain that sampling, unit of analysis, wording, and reporting bias can drive the gaps.
+A [Federal Reserve note](https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html) compared three surveys through 2025. It reported roughly 18% of firms using AI at year-end 2025 and about 41% of individuals using generative AI for work in November 2025. A senior-leader survey yielded still another measure. The authors explain that sampling, unit of analysis, wording, and reporting bias can drive the gaps.
 
 Those figures are about AI or generative-AI adoption—not autonomous agents. They show growing exposure, while warning against turning unlike measurements into one dramatic “agent adoption” number.
 
@@ -46,7 +48,7 @@ Those figures are about AI or generative-AI adoption—not autonomous agents. Th
 
 ## What counts as an agent for practical work?
 
-Anthropic defines an agent as a model that directs its own process and tool use rather than following only a fixed script. Its earlier engineering guide distinguishes agents from workflows, where tools and models follow predefined code paths.
+Anthropic’s [Building Effective Agents guide](https://www.anthropic.com/engineering/building-effective-agents) defines an agent as a model that directs its own process and tool use rather than following only a fixed script. It distinguishes agents from workflows, where tools and models follow predefined code paths.
 
 For a solo operator, that distinction creates three implementation choices:
 
@@ -177,13 +179,3 @@ The 2026 evidence supports a narrower conclusion than the headlines: models gain
 That is enough reason for a solo operator to test one bounded workflow. It is not evidence that every business needs autonomous agents or that deployment statistics from enterprises translate to one-person companies.
 
 Use an agent where variable inputs require bounded judgment. Use a deterministic workflow where the path is known. Use a single model call where that is enough. The goal is not maximum autonomy; it is dependable work with a failure mode you can afford.
-
-## Primary sources
-
-- [Anthropic: computer use announcement, October 22, 2024](https://www.anthropic.com/news/3-5-models-and-computer-use)
-- [Anthropic: introducing MCP, November 25, 2024](https://www.anthropic.com/news/model-context-protocol)
-- [Linux Foundation: Agentic AI Foundation, December 9, 2025](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation)
-- [Federal Reserve: Monitoring AI Adoption in the U.S. Economy, April 3, 2026](https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html)
-- [NIST: analysis of AI-agent security responses, May 18, 2026](https://www.nist.gov/publications/summary-analysis-responses-request-information-regarding-security-considerations-ai)
-- [Anthropic: Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)
-- [OpenAI: Evaluate agent workflows](https://developers.openai.com/api/docs/guides/agent-evals)
