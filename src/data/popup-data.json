@@ -382,12 +382,12 @@
     },
     "codex-for-chrome-vs-claude-for-chrome": {
       "en": {
-        "title": "Two browser coding agents, one decision",
-        "body": "Choose by where your work lives — the calendar hands each its queue."
+        "title": "Codex for Chrome or Claude for Chrome?",
+        "body": "Compare task shape, site permissions, approvals, and prompt-injection controls with current official documentation."
       },
       "zh": {
-        "title": "两款浏览器编码 Agent 二选一",
-        "body": "看你的活儿在哪边，队列交给日历来派发。"
+        "title": "Codex for Chrome 还是 Claude for Chrome？",
+        "body": "按任务形态、站点权限、审批与提示注入控制比较，并核验当前官方文档。"
       }
     },
     "codex-harness-open-source": {
@@ -442,32 +442,32 @@
     },
     "deepseek-agent-vs-claude-code": {
       "en": {
-        "title": "DeepSeek Agent vs Claude Code",
-        "body": "Cost and performance compared — with the routine work priced as its own line."
+        "title": "Compare the harness before the model",
+        "body": "Separate Claude Code workflow controls from DeepSeek routing, then compare cost per accepted task."
       },
       "zh": {
-        "title": "DeepSeek Agent 对比 Claude Code",
-        "body": "成本与性能都摆出来了，例行杂务的账另算。"
+        "title": "先比较框架，再比较模型",
+        "body": "把 Claude Code 的流程控制与 DeepSeek 路由拆开，再比较每个验收任务的总成本。"
       }
     },
     "deepseek-v4-1-flash": {
       "en": {
-        "title": "Can a Flash model hold an agent loop?",
-        "body": "The two-day beta answers it — speed matters most when the loop runs on a schedule."
+        "title": "V4.1 Flash is now the production model",
+        "body": "Check the deepseek-flash ID, retired aliases, peak pricing, and temporary V4 Pro routing before migration."
       },
       "zh": {
-        "title": "Flash 模型撑得住 Agent 循环吗",
-        "body": "两天 Beta 给了答案：循环按日程跑起来时，速度才最值钱。"
+        "title": "V4.1 Flash 已是正式模型",
+        "body": "迁移前核对 deepseek-flash、退役别名、峰谷价格与 V4 Pro 临时路由。"
       }
     },
     "deepseek-v4-api-solo-operator": {
       "en": {
-        "title": "DeepSeek V4 API costs, solo math",
-        "body": "Token prices read differently when the agent runs all week, not one session."
+        "title": "Budget the accepted task, not just tokens",
+        "body": "Peak windows, cache hits, retries, tools, and rejected outputs determine the real DeepSeek API cost."
       },
       "zh": {
-        "title": "DeepSeek V4 API 的单人账本",
-        "body": "当 Agent 一周七天在岗而不是一次性会话，token 价格要换算法。"
+        "title": "预算要算验收任务，不只算 token",
+        "body": "峰谷时段、缓存命中、重试、工具与被拒输出共同决定 DeepSeek API 的真实成本。"
       }
     },
     "deepseek-v4-pro-0813": {
@@ -562,22 +562,22 @@
     },
     "genspark-ai-pricing": {
       "en": {
-        "title": "Genspark pricing, limits included",
-        "body": "The free-tier math changes once an agent clock is running all week."
+        "title": "Measure Genspark cost per accepted artifact",
+        "body": "Use current official plan rules, representative jobs, retries, and review time instead of a copied credit table."
       },
       "zh": {
-        "title": "Genspark 价格与额度真相",
-        "body": "当 Agent 整周在岗，免费额度的算术会变。"
+        "title": "测量每个合格产物的 Genspark 成本",
+        "body": "用当前官方套餐规则、代表任务、重试与审阅时间取代静态积分表。"
       }
     },
     "genspark-super-agent-explained": {
       "en": {
-        "title": "Super Agent, explained and bounded",
-        "body": "Structured outputs are its strength; scheduled execution is where it stops."
+        "title": "Genspark Super Agent: capabilities and boundaries",
+        "body": "Evaluate multi-step work by artifacts, permissions, retries, and current official product documentation."
       },
       "zh": {
-        "title": "Super Agent 的能与不能",
-        "body": "结构化产出是强项，定时执行就到边界了。"
+        "title": "Genspark Super Agent：能力与边界",
+        "body": "按产物、权限、重试和当前官方产品文档评估多步工作。"
       }
     },
     "genspark-vs-manus": {
@@ -632,22 +632,22 @@
     },
     "gpt-5-6-sol-terra-luna": {
       "en": {
-        "title": "GPT-5.6's three tiers, decoded",
-        "body": "Ultra-mode subagent orchestration, read carefully before assigning standing work."
+        "title": "GPT-5.6 prices changed after launch",
+        "body": "Compare current Sol, Terra, and Luna rates—and test GPT-6 tiers before choosing a default."
       },
       "zh": {
-        "title": "GPT-5.6 三档拆解",
-        "body": "Ultra 模式的子 Agent 编排读懂了，再把常驻任务派给它。"
+        "title": "GPT-5.6 发布后已经调价",
+        "body": "按当前 Sol、Terra、Luna 价格比较，并在设默认模型前测试 GPT-6 各档。"
       }
     },
     "gpt-6-astra": {
       "en": {
-        "title": "GPT-6 Astra: specs and fine print",
-        "body": "The ARC-AGI-3 dispute and gating, reported without launch-day spin."
+        "title": "GPT-6 Astra: current cost and boundaries",
+        "body": "Check the 1.05M context, >272K premium, supported tools, and Critical cyber safeguards before adoption."
       },
       "zh": {
-        "title": "GPT-6 Astra：参数与细则",
-        "body": "绕开发布会话术，看 ARC-AGI-3 争议与限用条款。"
+        "title": "GPT-6 Astra：当前成本与边界",
+        "body": "采用前核对 1.05M 上下文、超过 272K 的溢价、工具支持与 Critical 网络安全防护。"
       }
     },
     "gpt-image-2-manga-comic-workflow": {
@@ -852,22 +852,22 @@
     },
     "lark-cli-when-to-use-it": {
       "en": {
-        "title": "Lark CLI: worth it for solos?",
-        "body": "Where command-line automation pays off, and where a workspace agent is simply cheaper."
+        "title": "When Lark CLI is worth owning",
+        "body": "Choose it only for a defined integration with minimum scopes, logs, recovery, and a maintenance owner."
       },
       "zh": {
-        "title": "单人值不值得上 Lark CLI",
-        "body": "命令行自动化在哪一步回本，哪一步不如工作区 Agent 便宜。"
+        "title": "什么时候值得维护 Lark CLI",
+        "body": "只有集成明确，并具备最小权限、日志、恢复和维护负责人时才采用。"
       }
     },
     "lindy-vs-gumloop": {
       "en": {
-        "title": "Lindy vs Gumloop, judged on fit",
-        "body": "Use case first, setup second — the same order for testing any standing automation."
+        "title": "Lindy vs Gumloop: choose by workflow control",
+        "body": "Run the same task and compare permissions, setup, recovery, observability, and accepted output."
       },
       "zh": {
-        "title": "Lindy 对 Gumloop，先看适配",
-        "body": "场景优先、配置其次，测常驻自动化就该按这个顺序。"
+        "title": "Lindy vs Gumloop：按工作流控制方式选择",
+        "body": "用同一任务比较权限、设置、恢复、可观测性与合格产物。"
       }
     },
     "llm-knowledge-base-solo-operators": {

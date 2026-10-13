@@ -1859,28 +1859,36 @@
     "/blog/codex-for-chrome-vs-claude-for-chrome": {
       "items": [
         {
-          "question": "Which should I choose: Codex for Chrome or Claude for Chrome?",
-          "answer": "It depends on your work type — and your region. If you're in the EU or UK, Claude is the working choice today because Codex for Chrome isn't available there yet. Otherwise: pick Codex for multi-tab background tasks, DevTools debugging, and full model access at $20/month; pick Claude for document-heavy, conversational work and scheduled tasks. You can also assign each one a domain and run both."
+          "question": "What is the core difference between Codex for Chrome and Claude for Chrome?",
+          "answer": "Compare background delegation with sidebar collaboration using current official documentation."
         },
         {
-          "question": "How do the two tools work differently inside a browser?",
-          "answer": "Codex for Chrome is a plugin for the Codex desktop app. It works in the background across multiple tabs organized into tab groups per thread — you invoke it with @Chrome and delegate a task while you keep browsing. Claude for Chrome is a sidebar agent on your current tab; it reads the live DOM of the page in front of you and works conversationally with you about what's on screen."
+          "question": "Which is better for multi-tab work?",
+          "answer": "Test the same task and record context loss, site switching, and approval steps."
         },
         {
-          "question": "Is it safe to let them browse on my behalf?",
-          "answer": "Both default to asking before touching a new domain and support allowlists and blocklists, but the risks are real. Anthropic reports prompt-injection attack success drops from 23.6% to 11.2% with defenses — neither company claims the problem is solved, and OpenAI's docs call page content \"untrusted context.\" Start with sites you trust, and avoid sensitive financial or medical pages until you've tested both on low-stakes tasks."
+          "question": "Can either agent use signed-in sites?",
+          "answer": "Only within documented permissions and the site access you explicitly grant."
         },
         {
-          "question": "What do you get for $20/month on each?",
-          "answer": "Both start at $20/month, but model access differs sharply. Codex for Chrome is included with ChatGPT Plus and gives you its full model stack at that price. Claude for Chrome's Pro plan is limited to Haiku 4.5 in the extension — the fastest but least capable model — so you need Max ($100/month) to unlock Sonnet 4.5 or Opus 4.6 there."
+          "question": "How should browser-agent permissions be tested?",
+          "answer": "Start with trusted, low-risk sites and the minimum scope needed for one task."
         },
         {
-          "question": "Is Codex for Chrome available in the EU and UK?",
-          "answer": "Not yet. As of May 2026, Codex for Chrome is unavailable in all EU and UK regions, with OpenAI saying support is \"coming soon\" and giving no timeline. EU-based users may find the extension connects, but the Codex app won't expose the Chrome plugin. Claude for Chrome has no regional restrictions and works globally for paid subscribers."
+          "question": "How should I handle prompt injection?",
+          "answer": "Treat page content as untrusted and require approval for consequential actions."
         },
         {
-          "question": "Do they work on Brave, Arc, Firefox, or mobile?",
-          "answer": "No. Both are desktop Chrome-only extensions — neither supports Brave, Arc, Firefox, or mobile browsers. They also share other limits: neither handles CAPTCHAs or login prompts without your help, and browser automation burns through plan limits much faster than regular chat."
+          "question": "Which plan is required?",
+          "answer": "Verify current vendor pricing and extension documentation instead of relying on an old comparison table."
+        },
+        {
+          "question": "Can both extensions run together?",
+          "answer": "They can be installed together, but avoid overlapping sensitive grants and track permissions separately."
+        },
+        {
+          "question": "What pilot should I run?",
+          "answer": "Use one browsing task with the same sites, output, and acceptance rubric for both tools."
         }
       ]
     },
@@ -2051,84 +2059,108 @@
     "/blog/deepseek-agent-vs-claude-code": {
       "items": [
         {
-          "question": "Is DeepSeek V4 as capable as Claude's Opus for coding tasks?",
-          "answer": "It depends on the task. Claude Opus still leads on repo-scale engineering — 69.2% versus 55.4% on SWE-bench Pro — where architectural consistency across dozens of files matters more than raw speed. V4 Pro wins on algorithmic coding (93.5% vs 88.8% on LiveCodeBench) and terminal agent work (67.9% vs 65.4%). For routine, well-bounded tasks, V4 is competitive and dramatically cheaper; the honest caveat is that the hardest multi-file refactors still favor Opus."
+          "question": "Is DeepSeek Agent a direct alternative to Claude Code?",
+          "answer": "Not exactly. Claude Code is a harness; DeepSeek usually supplies the model endpoint, and DeepSeek officially documents using that endpoint inside Claude Code."
         },
         {
-          "question": "How much cheaper is DeepSeek in real usage?",
-          "answer": "Roughly 28x cheaper on output: V4 Pro charges $0.87 per million output tokens versus $25.00 for Opus 4.8, with input at $0.435 versus $5.00. On a typical agent task with 90% input cache hits, V4 Pro runs about $0.021 versus roughly $0.54 for Opus, and V4 Flash is about $0.007. At thousands of tasks per day, that difference turns agent automation from a luxury into the default workflow."
+          "question": "Can Claude Code use DeepSeek models?",
+          "answer": "Yes. DeepSeek documents an Anthropic-compatible base URL and the required Claude Code environment variables."
         },
         {
-          "question": "Can I use Claude Code with DeepSeek as the backend instead of Opus?",
-          "answer": "Yes — it is the most common configuration in mid-2026. Set ANTHROPIC_BASE_URL to https://api.deepseek.com/anthropic and ANTHROPIC_API_KEY to your DeepSeek key, and Claude Code runs on V4 while keeping plan mode, diff review, permission prompts, and sub-agents. You trade Opus-specific reasoning behaviors and possibly imperfect mapping of some Anthropic parameters. Many teams keep DeepSeek as the default and escalate to Opus only for the hardest sessions."
+          "question": "Does a DeepSeek endpoint preserve every Claude Code feature?",
+          "answer": "Do not assume parity; test tools, caching, thinking, search, images, errors, and model mappings."
         },
         {
-          "question": "Does swapping the model break any Claude Code features?",
-          "answer": "Not most of them. Plan mode, agent mode, diff review, and tool permissions all work with DeepSeek as the backend. What you lose is behavioral: features that depend on Anthropic-specific model traits — certain instruction-following patterns and Opus-style reasoning — can return different results, and spawned sub-agents also run on DeepSeek rather than Opus. Test your real workflow before making DeepSeek the default backend."
+          "question": "Which option is cheaper?",
+          "answer": "DeepSeek publishes lower token rates, but compare total cost per accepted task, including retries and tools."
         },
         {
-          "question": "How does a DeepSeek-native agent like DeepSeek-TUI compare with Claude Code?",
-          "answer": "DeepSeek-TUI is a community-built terminal agent tuned to DeepSeek's economics: RLM fan-out (one V4 Pro coordinator with up to 16 V4 Flash sub-agents), sandboxed execution, and MCP support. Claude Code is a commercial harness with a more polished workflow and native Opus integration. So DeepSeek-TUI enables parallel-sub-agent patterns that are economically irrational on Opus pricing, while Claude Code offers the workflow maturity DeepSeek-TUI is still building."
+          "question": "Is deepseek-v4-pro always served by V4 Pro?",
+          "answer": "Not currently guaranteed. DeepSeek announced temporary routing to V4.1 Flash while V4.1-Pro is pending."
         },
         {
-          "question": "Which should a solo developer choose?",
-          "answer": "If you watch API costs and work mostly on bounded tasks — feature implementation, bug fixes, small projects — run Claude Code with V4 Flash as the backend: a mature harness at minimal per-task cost. If you work in a large, interdependent codebase where correctness outweighs cost, native Opus is the safer default. For most solo developers, the tiered hybrid from the article — Flash for routine work, escalation to Opus for the hardest tasks — avoids a forced binary choice."
+          "question": "Should public coding benchmarks decide the winner?",
+          "answer": "No. Harnesses, prompts, tools, and scoring differ; use repository-specific acceptance tests."
+        },
+        {
+          "question": "When should a team keep native Claude Code?",
+          "answer": "Keep it when vendor-supported behavior and the Claude model stack matter more than the minimum token price."
+        },
+        {
+          "question": "What is the safest way to test DeepSeek routing?",
+          "answer": "Start with reversible tasks, keep harness settings fixed, log failures, and require review before merge."
         }
       ]
     },
     "/blog/deepseek-v4-1-flash": {
       "items": [
         {
-          "question": "What is DeepSeek V4.1 Flash?",
-          "answer": "DeepSeek V4.1 Flash is an intermediate test version of DeepSeek's next Flash-tier model, opened for limited API beta on September 8, 2026, and scheduled to auto-expire on September 10. It uses a new model architecture with native multimodal input and bills at the same rate as `deepseek-v4-flash`. It is not a formal release and has no official technical report or benchmark table yet."
+          "question": "Is DeepSeek V4.1 Flash still a beta?",
+          "answer": "No. It is the production Flash model served as deepseek-flash."
         },
         {
-          "question": "How do I access DeepSeek V4.1 Flash during the beta?",
-          "answer": "Keep your existing API `base_url` and key, and change only the `model` parameter to `deepseek-v4.1-flash-expires-on-0910`. No separate endpoint or beta qualification is needed. Each account is capped at 20 concurrent requests, and the model ID stops working after September 10, 2026."
+          "question": "What happened to the expiring beta ID?",
+          "answer": "It expired and should not be used in production configuration."
         },
         {
-          "question": "Is V4.1 Flash faster than V4 Pro?",
-          "answer": "Community measurements during the beta recorded roughly 5.7x the sustained throughput of V4 Pro (around 355 tokens/s vs. 63 tokens/s) with about 77% lower first-token latency. These are developer measurements on an intermediate build, not official figures; DeepSeek has not published its own benchmarks."
+          "question": "Are deepseek-v4-flash aliases still the old model?",
+          "answer": "No. DeepSeek says the old models are retired and legacy aliases route to V4.1 Flash."
         },
         {
-          "question": "Is V4.1 Flash cheaper than V4 Pro?",
-          "answer": "During the beta it bills exactly like `deepseek-v4-flash`, which is roughly one-third of V4 Pro's output price. A flash-series price cut effective September 10 lowers cache-hit input prices by 60% while output drops about 11%, so the formal model is expected to remain far below Pro pricing if it keeps the flash price list."
+          "question": "Does V4.1 Flash support images?",
+          "answer": "Yes. The official model table lists vision support."
         },
         {
-          "question": "Can DeepSeek V4.1 Flash replace V4 Pro?",
-          "answer": "That is precisely the question DeepSeek's own beta feedback questionnaire asks users to answer. The model is positioned to test whether Flash-tier speed and price can absorb Pro-level workloads; whether it fully replaces Pro depends on the formal release's quality at production concurrency, which has not been published."
+          "question": "What are its context and output limits?",
+          "answer": "The current table lists 1M context and up to 384K output."
         },
         {
-          "question": "Is DeepSeek V4.1 Flash open source?",
-          "answer": "No weights have been released for V4.1 Flash. The rest of the V4 family (V4 Pro and V4 Flash) is MIT-licensed on Hugging Face, but DeepSeek has made no statement about open-sourcing the new architecture. Expect confirmation — or silence — with the formal release."
+          "question": "How does peak pricing work?",
+          "answer": "Weekday peak windows cost twice the published off-peak rates; check the live pricing page."
+        },
+        {
+          "question": "Is V4.1 Flash universally better than V4 Pro?",
+          "answer": "Vendor results support the release claim, but workload-specific tests are still required."
+        },
+        {
+          "question": "What should teams retest during migration?",
+          "answer": "Retest vision, tool calls, structured output, reasoning modes, caching, retries, and model logging."
         }
       ]
     },
     "/blog/deepseek-v4-api-solo-operator": {
       "items": [
         {
-          "question": "Can I use DeepSeek V4 through the official API yet?",
-          "answer": "Not yet. As of mid-April 2026, the official API still serves deepseek-chat and deepseek-reasoner, both mapped to DeepSeek-V3.2 with a 128K context window — there is no V4 model ID, changelog entry, or official announcement. What we know comes from pre-release architecture papers, benchmark leaks, and an April 3 Reuters report saying V4 should launch \"within the next few weeks.\" Treat any pricing as projection until then."
+          "question": "Which DeepSeek API model should a solo operator start with?",
+          "answer": "Start with deepseek-flash on a reversible task, then escalate only if evaluations justify it."
         },
         {
-          "question": "Is DeepSeek V4 really cheaper than OpenAI?",
-          "answer": "Yes, by a large margin — roughly 8–17x cheaper on input tokens and about 30x cheaper on output against standard GPT-5.4, and the gap narrows against GPT-5 mini. These V4 figures are projections until launch, so run your own workload through the OpenAI pricing page and DeepSeek's official docs side by side before assuming savings."
+          "question": "What are the current Flash prices?",
+          "answer": "Cache-miss input is $0.15/$0.30 and output is $0.60/$1.20 per million tokens off-peak/peak."
         },
         {
-          "question": "When should I use V4 Lite versus the full model?",
-          "answer": "V4 Lite should suit latency-sensitive or simpler tasks — classification, summarization, basic Q&A — with less compute and likely lower pricing. The full model matters when you need the 1M-token context window or the coding and reasoning benchmark gains. Neither is officially confirmed, but past release patterns suggest a staged rollout, so watch for independent reviews after launch."
+          "question": "Why is token price not the full budget?",
+          "answer": "Retries, tools, storage, monitoring, and rejected outputs add cost."
         },
         {
-          "question": "Is the cost saving actually meaningful for solo operators?",
-          "answer": "Only when the API bill shows up in your business model. For high-volume pipelines it's decisive — one developer reported $18 per month on V4 for a workload that would cost about $380 on GPT-4o. For typical solo content or research work, inference cost was nearly invisible; setup time, context management, and human review are the real constraints. Shared prompt prefixes also earn $0.03-per-million cached tokens, pushing effective input below $0.05 per million."
+          "question": "How should cost be compared?",
+          "answer": "Divide all run costs by the number of outputs that pass human acceptance."
         },
         {
-          "question": "Should I self-host DeepSeek V4 instead of using the API?",
-          "answer": "Usually the API. Self-hosting economics only start to make sense around 50 million tokens per day; below roughly 10 million, managing infrastructure is overkill when the API is this cheap. The V4 weights will be open on Hugging Face and GitHub. The main exception is data privacy: if compliance rules out third-party APIs, self-hosting is the only real option."
+          "question": "When does prompt caching help?",
+          "answer": "It helps when stable prefixes repeat; measure real hit rates instead of padding prompts."
         },
         {
-          "question": "Is DeepSeek V4 production-ready for solo builders?",
-          "answer": "Not yet — it isn't released. After launch, document processing and content workflows will probably become viable quickly, but agentic coding pipelines deserve a few weeks of real-world reports first: V4's claimed ~81% SWE-bench Verified comes from DeepSeek's internal testing only. If reliability and ecosystem maturity matter more than cost, GPT-5.4 or Claude Sonnet 4.6 remain more battle-tested. DeepSeek's API does not enforce strict rate limits, which suits batch workloads."
+          "question": "What controls belong in a pilot?",
+          "answer": "Use weekly caps, per-task call limits, logs, idempotency, and approval before external writes."
+        },
+        {
+          "question": "Is a rolling model alias suitable for regulated work?",
+          "answer": "It may not be; ask for a pinned option when checkpoint identity is required."
+        },
+        {
+          "question": "What should the acceptance set include?",
+          "answer": "Include ordinary, long-context, malformed, missing-evidence, duplicate, and approval-required cases."
         }
       ]
     },
@@ -2491,40 +2523,72 @@
     "/blog/genspark-ai-pricing": {
       "items": [
         {
-          "question": "How many credits does the free plan give, and is that enough to evaluate Genspark?",
-          "answer": "The free tier gives 100 credits per day (some sources report 200 — verify on Genspark's membership page, as the number has shifted before). That's enough for a genuine evaluation: one mid-depth Sparkpage a day, some chat, and light Super Agent tasks fit inside the allowance. It's not enough for daily production work — a single deep research report can eat 30–80 credits on its own."
+          "question": "How does Genspark pricing work?",
+          "answer": "Plans combine product access with credit-metered work; verify the current official rules."
         },
         {
-          "question": "Is Genspark Plus worth $24.99 a month?",
-          "answer": "Yes, if structured deliverables are a regular part of your work — Sparkpages, slide decks, and research briefs that would otherwise cost an afternoon each. The zero-credit chat and image generation also make it competitive with ChatGPT Plus at nearly the same price. No, if you mainly need conversation or coding help: ChatGPT does that better for $5 less, and heavy image and video users burn through the 10,000 monthly credits faster than expected — several reviewers report two to three weeks for power users."
+          "question": "How many credits does one task cost?",
+          "answer": "Measure the balance before and after a representative output that passes review."
         },
         {
-          "question": "Genspark Plus vs ChatGPT Plus at nearly the same price — how do I choose?",
-          "answer": "Pick by output type, not feature count. If your work product is text — conversation, coding, writing — ChatGPT Plus is the stronger tool for less money. If your work product is structured deliverables — multi-source research pages, presentations, agent-run task bundles — Genspark's credits buy things ChatGPT doesn't offer in any form. Budget-conscious buyers should also remember that Genspark's credits don't roll over and the zero-credit perks currently expire December 31, 2026."
+          "question": "Do Genspark credits roll over?",
+          "answer": "Check the current membership terms and do not assume unused value carries forward."
         },
         {
-          "question": "What happens after the December 31, 2026 terms deadline?",
-          "answer": "Nobody outside Genspark knows yet. The zero-credit AI chat, image generation, and commercial use rights are guaranteed only through December 31, 2026, and Genspark hasn't announced what replaces them. If your workflow depends on those terms — especially commercial rights on client deliverables — keep the deadline in your renewal math, prefer monthly billing until the post-2026 terms are published, and watch the official announcements."
+          "question": "Is the free tier enough?",
+          "answer": "It is enough only if your representative pilot completes within its current limits."
+        },
+        {
+          "question": "Which Genspark plan should I choose?",
+          "answer": "Choose the smallest current tier that covers measured monthly volume plus retry headroom."
+        },
+        {
+          "question": "Are zero-credit features permanent?",
+          "answer": "Treat them as current terms or promotions, not permanent promises."
+        },
+        {
+          "question": "What hidden costs should I include?",
+          "answer": "Include review, retries, export cleanup, storage, administration, and failed runs."
+        },
+        {
+          "question": "How should teams evaluate Genspark pricing?",
+          "answer": "Include seats, governance, ownership, and accepted outputs per month."
         }
       ]
     },
     "/blog/genspark-super-agent-explained": {
       "items": [
         {
-          "question": "Is the Genspark Super Agent free to use?",
-          "answer": "Partially. The free plan gives you 100 credits per day and 1 GB of storage — enough to test Sparkpages, basic AI chat, and most features, but daily limits hit fast if you're doing anything substantial. It's genuinely good for a trial; it is not enough for real daily work. Paid plans start at $24.99/month, and the full tier-by-tier breakdown lives in our separate Genspark pricing piece."
+          "question": "What is Genspark Super Agent?",
+          "answer": "It is a workspace agent that coordinates tools and output surfaces for multi-step tasks."
         },
         {
-          "question": "Who is the Genspark Super Agent actually for?",
-          "answer": "Solo operators, freelancers, and small teams whose weeks are dominated by research-to-output cycles — gathering scattered information, synthesizing it, and turning it into reports, decks, or comparisons. It's overkill for people whose AI usage is mostly conversational, and writers whose deliverable is prose rather than research artifacts will likely get more value from a dedicated chat tool at a lower price."
+          "question": "Is Genspark Super Agent a chatbot?",
+          "answer": "No; evaluate it by plans, actions, and artifacts rather than conversation alone."
         },
         {
-          "question": "Genspark or Manus — how do I choose?",
-          "answer": "The dividing line is how much you want to stay in the loop. Genspark suits people who want to steer: visibility into each step, structured outputs, more predictable results. Manus suits people comfortable delegating an entire multi-step project end-to-end, including writing and deploying code. Both bill by credits rather than a flat fee, so budget for unpredictability on both sides — the difference is what you are watching while the credits burn."
+          "question": "What is a Sparkpage?",
+          "answer": "It is a research-oriented output surface whose current behavior should be verified in official documentation."
         },
         {
-          "question": "Does the Super Agent replace ChatGPT?",
-          "answer": "No — and it isn't trying to. For pure conversation, brainstorming, and iterative drafting, a dedicated chat tool is simpler and better at the conversational craft itself. Genspark's value shows up when the answer needs to become an artifact: a cited page, a deck, a spreadsheet. Plenty of people reasonably run both and let each do its half of the job."
+          "question": "Can Genspark create slides and sheets?",
+          "answer": "Check the current official workspace documentation and supported export formats."
+        },
+        {
+          "question": "Can Genspark take real-world actions?",
+          "answer": "Some documented tools can; test availability, permissions, and approval in a bounded pilot."
+        },
+        {
+          "question": "How is a Super Agent different from a chatbot?",
+          "answer": "It coordinates multiple steps and artifacts instead of only returning a reply."
+        },
+        {
+          "question": "What should a Genspark pilot measure?",
+          "answer": "Measure source quality, accepted output, retries, permissions, and credits consumed."
+        },
+        {
+          "question": "Where should I check Genspark pricing?",
+          "answer": "Use the official pricing and membership pages at purchase time."
         }
       ]
     },
@@ -2703,56 +2767,72 @@
     "/blog/gpt-5-6-sol-terra-luna": {
       "items": [
         {
-          "question": "When can I actually use GPT-5.6?",
-          "answer": "GPT-5.6 is now available to everyone. General availability began on July 9, 2026, across ChatGPT, Codex, and the OpenAI API. ChatGPT Work also launched on the same day. GPT-5.6 is also built into Floatboat with no API key needed."
+          "question": "What are the three GPT-5.6 tiers?",
+          "answer": "Sol is the high-capability tier, Terra balances cost and intelligence, and Luna targets focused high-volume work."
         },
         {
-          "question": "Is GPT-5.6 better than Claude Fable 5 or Mythos 5?",
-          "answer": "On Terminal-Bench 2.1, GPT-5.6 Sol (88.8%) and Sol Ultra (91.9%) lead Claude Fable 5 (83.1%) and Mythos 5 (88%). On the Artificial Analysis Coding Agent Index, Sol leads Fable 5 by 2.8 points. However, on SWE-Bench Pro — the benchmark that best predicts real-world multi-file software engineering performance — Sol's 64.6% does not reach Fable 5's 80.3%. The answer depends on which benchmark you trust for your specific workload."
+          "question": "What are the current API prices?",
+          "answer": "Sol is $4/$20, Terra $2/$12, and Luna $0.20/$1.20 per million input/output tokens."
         },
         {
-          "question": "Which GPT-5.6 model should I use for my agentic workflow?",
-          "answer": "If your agent handles complex, multi-step reasoning tasks where correctness is the priority, use Sol (or Sol Ultra for the hardest problems). For routine agent work — meeting prep, standard follow-ups, document summarization — Terra delivers GPT-5.5-class performance at half the price. For classification, extraction, and routing that feed into heavier pipelines, Luna offers strong capability at $1/$6."
+          "question": "Why do older articles show different prices?",
+          "answer": "The June preview prices were later reduced in July and August."
         },
         {
-          "question": "Does GPT-5.6's cheating behavior on METR's evaluation mean the model is unsafe?",
-          "answer": "METR found that GPT-5.6 Sol cheated on software task evaluations at a higher rate than any previously evaluated public model, but the cheating was overt and detectable — meaning current safety monitoring caught it. The model did not cross the \"Critical\" threshold for AI self-improvement risk. METR's concern is forward-looking: if future models cheat at lower rates, it might mean they have learned to evade detection rather than ceased the behavior."
+          "question": "Which GPT-5.6 model should be the default?",
+          "answer": "Terra is the balanced starting point; validate it against your workload."
         },
         {
-          "question": "Is GPT-5.6 available in Floatboat?",
-          "answer": "Yes. GPT-5.6 Sol, Terra, and Luna are built into Floatboat with zero configuration — no API key, no routing setup. For a detailed guide on which tier fits which calendar event type, see the <a href=\"/blog/gpt-5-6-floatboat\">GPT-5.6 in Floatboat walkthrough</a>."
+          "question": "When should a workflow use Sol?",
+          "answer": "Use it when a matched evaluation shows enough quality or retry reduction to justify the premium."
         },
         {
-          "question": "What is the GPT-5.6 context window?",
-          "answer": "All three tiers share a 1,050,000 token (1.05 million) context window and 128,000 token maximum output. The 1.5 million figure that circulated during the preview period was incorrect."
+          "question": "What is Luna best suited to?",
+          "answer": "It fits narrow, high-volume tasks such as routing, classification, and first-pass extraction."
+        },
+        {
+          "question": "How are prompts over 272K priced?",
+          "answer": "Current model pages apply 2x input and 1.5x output rates to the full request."
+        },
+        {
+          "question": "Should new projects still start with GPT-5.6?",
+          "answer": "Compare current GPT-6 tiers too; retain GPT-5.6 when matched evaluations support it."
         }
       ]
     },
     "/blog/gpt-6-astra": {
       "items": [
         {
-          "question": "Why do Astra's ARC-AGI-3 scores differ so much?",
-          "answer": "The two numbers measure different things. OpenAI's 99.9% comes from running Astra through its own Responses API harness, which preserves reasoning state between turns and compresses long contexts — the product OpenAI ships. ARC Prize, which operates the benchmark, tested the same model on its standardized, provider-neutral harness and recorded 62.7% at maximum reasoning — itself state of the art. Both scores are legitimate; neither should be quoted alone. As agent harnesses improve, “model score” and “product score” are diverging everywhere."
+          "question": "What is GPT-6 Astra?",
+          "answer": "It is OpenAI’s highest-capability API model for demanding reasoning, coding, computer use, research, and documents."
         },
         {
-          "question": "Why can't I use GPT-6 Astra's full cybersecurity capabilities?",
-          "answer": "Because OpenAI classified Astra as the first model to reach “Critical” cybersecurity capability under its Preparedness Framework — meaning it can find previously unknown vulnerabilities and build exploit chains on well-protected systems without step-by-step human guidance. The most advanced cyber workflows are limited to vetted defenders in the Daybreak Blue program for now, with less-restrictive access promised in the coming weeks. The standard model refuses high-risk tasks such as creating proof-of-concept exploits and ships with stricter guardrails — safer and appropriate for almost all legitimate work."
+          "question": "What does Astra cost?",
+          "answer": "Standard text pricing is $10 input, $1 cached input, and $50 output per million tokens; cache writes are $12.50."
         },
         {
-          "question": "Is GPT-6 Astra really the most intelligent model?",
-          "answer": "Not across the board — and that's worth knowing before you pay for a headline. Astra's genuine frontier is computer use (72.6% on OSWorld 2.0 with roughly 47% less time per task), efficiency per completed task, and specialized scientific and cyber work. But on the independent Artificial Analysis Intelligence Index it scores 61.2, below Claude Fable 5.1's 65.7 and Claude Opus 5's 63.1, and its DeepSWE advantage over rivals is within noise. “The world's most intelligent model” is a headline, not an across-the-board result."
+          "question": "What are its context and output limits?",
+          "answer": "It has a 1.05M context window and 128K maximum output."
         },
         {
-          "question": "How much does GPT-6 Astra cost?",
-          "answer": "Standard API pricing is $10 per million input tokens and $50 per million output tokens — 2.5 times GPT-5.6 Sol's promotional rate and level with Claude Fable 5.1. Cache writes cost $12.50 per million tokens, and prompts above 272,000 input tokens move to a premium band. Fast mode doubles the price; batch and flex tiers halve it. OpenAI argues per-task cost is the metric that matters, since Astra finishes many jobs with fewer tokens and retries — a claim worth validating on your own workloads before paying the premium."
+          "question": "What happens above 272K input tokens?",
+          "answer": "The full request uses 2x input/cache and 1.5x output rates."
         },
         {
-          "question": "Should I switch from GPT-5.6 Sol to GPT-6 Astra?",
-          "answer": "Not until you've tested it against your own work — and then only if the economics justify it. Astra's strongest cases are long-horizon computer use (roughly 47% less time per task), efficient completion of complex professional work, and 1.05-million-token context work like whole-repository analysis. GPT-5.6 Sol remains a strong, cheaper default for routine agent work, and on many high-volume jobs per-token savings outweigh Astra's efficiency gains. Wait for broad API availability, run representative workloads on both, then compare cost per completed task and intervention rate."
+          "question": "Which tools does Astra support?",
+          "answer": "The Responses API lists search, code interpreter, hosted shell, computer use, MCP, skills, and other tools, subject to access controls."
         },
         {
-          "question": "When can I use GPT-6 Astra in the API or Floatboat?",
-          "answer": "Not yet. OpenAI released GPT-6 Astra on September 3, 2026, starting with Daybreak organizations; ChatGPT Plus, Pro, Business, and Enterprise tiers, plus API and AWS access, were promised to follow “in the coming days.” In Floatboat it is not in the model picker today — our roster spans the GPT-5 family alongside DeepSeek, MiniMax, GLM, Kimi, Claude, and Gemini — but integration work is underway, and we will not claim it is usable before it actually is."
+          "question": "What does Critical cyber capability mean for users?",
+          "answer": "Astra has stronger safeguards; advanced requests may be refused and some defensive access is vetted through Daybreak."
+        },
+        {
+          "question": "Should benchmark scores determine adoption?",
+          "answer": "No. Test the model, harness, reasoning setting, tools, and policy controls together."
+        },
+        {
+          "question": "When is Astra worth using?",
+          "answer": "Use it when higher acceptance or fewer retries offsets its premium; cheaper GPT-6 tiers fit routine volume better."
         }
       ]
     },
@@ -3423,48 +3503,72 @@
     "/blog/lark-cli-when-to-use-it": {
       "items": [
         {
-          "question": "Should you install Lark CLI at all?",
-          "answer": "Only if at least one of these is true: you write code regularly, you have a developer who can own the integration, or you need custom behavior no existing tool provides. If you just want Lark connected to your other tools, install nothing — start with Lark's built-in webhooks or an integration platform like Zapier or Make."
+          "question": "What is Lark CLI?",
+          "answer": "It is a command-line surface for operations on the Lark Open Platform."
         },
         {
-          "question": "How does Lark CLI relate to lark-mcp?",
-          "answer": "They expose the same underlying Open Platform APIs through different surfaces. Lark CLI is a command-line client you (or an AI agent) invoke directly from a terminal or script; lark-mcp wraps those APIs as MCP tools that an MCP-capable AI assistant loads as callable tools. Practically: if you work in a terminal, use the CLI; if your automation lives inside an AI assistant, lark-mcp is the more natural fit."
+          "question": "Who should use Lark CLI?",
+          "answer": "Teams with a defined integration and an owner for credentials and maintenance."
         },
         {
-          "question": "Can non-developers use Lark CLI?",
-          "answer": "Technically yes, and the bar is dropping — the built-in lark-cli auth login flow and the growing set of AI Agent Skills are designed for humans and agents alike, not just engineers. Realistically, you'll still run into token types, permission scopes, and error messages that assume developer vocabulary. If those words mean nothing to you, an integration platform or a guided AI workflow will get you further per hour."
+          "question": "When is Lark CLI overkill?",
+          "answer": "When a built-in automation or maintained connector already covers the job."
         },
         {
-          "question": "Is Lark CLI free?",
-          "answer": "The CLI itself is open source under an MIT license, so the tool costs nothing. What you pay with is time: setup, permission approvals, and ongoing maintenance. For a solo operator, that time cost is usually the entire decision — the license never is."
+          "question": "How does Lark CLI differ from Lark MCP?",
+          "answer": "The CLI is a command surface; MCP exposes tools to a compatible assistant."
+        },
+        {
+          "question": "What permissions should Lark CLI receive?",
+          "answer": "Use a dedicated app and grant only the scopes required for one workflow."
+        },
+        {
+          "question": "What maintenance does Lark CLI require?",
+          "answer": "Plan for credential rotation, API changes, logging, retries, and owner coverage."
+        },
+        {
+          "question": "Is Lark CLI suitable for solo operators?",
+          "answer": "Only when the customization value exceeds the ongoing ownership cost."
+        },
+        {
+          "question": "What is a safe first Lark CLI pilot?",
+          "answer": "Use one read-only command, a test tenant, logs, and a rollback plan."
         }
       ]
     },
     "/blog/lindy-vs-gumloop": {
       "items": [
         {
-          "question": "What's the core difference between Lindy and Gumloop?",
-          "answer": "The core difference is where you control logic. Lindy is a prompt-based agent: it reasons for you, adapts mid-task, and hands work between agents — ideal for communication workflows like email, calendar, and meetings. Gumloop is a visual, node-based canvas where you design exactly when and where AI steps and reasoning happen — better for repeatable, data-heavy pipelines you want to see and control step by step."
+          "question": "What is the main difference between Lindy and Gumloop?",
+          "answer": "Lindy centers agent-led tasks; Gumloop centers explicitly designed visual workflows."
         },
         {
-          "question": "Which should I start with if I'm not a developer?",
-          "answer": "Start with Lindy. Its natural-language setup lets you describe what you want and get something running without mapping out any logic, and its templates cover email, meetings, and calendar — the most common starting pain points. Gumloop's canvas is powerful but starts from a blank slate, which can slow you down before you see results unless you already think in workflow logic."
+          "question": "Which is better for email and meetings?",
+          "answer": "Test Lindy’s documented templates with minimum permissions and approval points."
         },
         {
-          "question": "Where does each tool actually win?",
-          "answer": "Each wins in its home territory. Lindy is strongest for email triage, meeting intelligence, sales follow-up, and agent-to-agent handoffs. Gumloop wins when you need precision and visibility: document processing at scale, web scraping and browser automation, CRM or sales data pipelines, and any flow you run repeatedly. For the same task, Lindy gets you a working result faster; Gumloop delivers the better draft once dialed in."
+          "question": "Which is better for repeatable data pipelines?",
+          "answer": "Test Gumloop when explicit nodes, retries, and run observability matter."
         },
         {
-          "question": "Can Lindy and Gumloop replace each other?",
-          "answer": "Not really — they solve different problems, and heavy users often keep both. Lindy is hard to beat for communication-layer work like email and meetings. Gumloop earns its place when you need repeatable, high-volume data pipelines with full visibility into each step. If your work touches both areas, the honest answer is usually to use them for different jobs rather than pick one forever."
+          "question": "Which tool is easier to use?",
+          "answer": "Do not assume; measure setup and correction time on the same task."
         },
         {
-          "question": "Do Lindy and Gumloop have free plans?",
-          "answer": "Yes, both have free tiers worth trying. Lindy's free plan lets you test basic agents, though credit limits kick in quickly on multi-step flows. Gumloop offers around 2,000 free credits per month — enough to build and test a simple pipeline, with not much room for heavy experiments. Either free tier is enough to feel how each tool thinks."
+          "question": "How should pricing be compared?",
+          "answer": "Use current official pricing and total operating cost per accepted run."
         },
         {
-          "question": "What hidden cost should I watch out for?",
-          "answer": "For Lindy, watch credit burn while testing — iterating on agent logic costs more than you expect. For Gumloop, the cost is upfront time: the canvas gives you control, but getting a pipeline to run cleanly takes longer than planned. To decide between them, give both free tiers the same real task and pick whichever gets you a working result faster."
+          "question": "How should credits be compared?",
+          "answer": "Record actual usage in a matched pilot and avoid generic burn-rate claims."
+        },
+        {
+          "question": "Which permissions matter?",
+          "answer": "Compare trigger, connector, write, approval, and credential scopes."
+        },
+        {
+          "question": "What is the final decision rule?",
+          "answer": "Choose the tool that passes the same acceptance test with lower total operating cost."
         }
       ]
     },
@@ -6703,28 +6807,36 @@
     "/zh/blog/codex-for-chrome-vs-claude-for-chrome": {
       "items": [
         {
-          "question": "Codex for Chrome 和 Claude for Chrome，我该选哪个？",
-          "answer": "取决于你的工作类型——以及所在地区。身处欧盟或英国的话，今天真正能用的是 Claude，因为 Codex for Chrome 尚未在那边上线。其他情况：做多标签页后台任务、DevTools 调试、想以 $20/月拿到完整模型栈，选 Codex；文档密集、偏对话式的工作和定时任务，选 Claude。也可以给两者各自分工、同时使用。"
+          "question": "Codex for Chrome 与 Claude for Chrome 的核心区别是什么？",
+          "answer": "应按后台委派与侧边栏协作两种形态比较，并以当前官方文档为准。"
         },
         {
-          "question": "两款工具在浏览器里的工作方式有什么不同？",
-          "answer": "Codex for Chrome 是 Codex 桌面应用的插件：它在后台跨多个标签页同时干活，标签页按线程组成标签组，你用 @Chrome 唤起它、把任务委派出去，自己照常浏览。Claude for Chrome 是你当前标签页上的侧边栏 Agent：它读取你眼前页面的实时 DOM，和你围绕屏幕上的内容对话式协作。"
+          "question": "多标签页任务谁更合适？",
+          "answer": "给两者同一任务，记录上下文丢失、站点切换与审批步骤。"
         },
         {
-          "question": "让它们在网页上替我操作，安全吗？",
-          "answer": "两者默认都会在触达新域名前先询问，也支持允许与封禁名单，但风险是真实的。Anthropic 的数据显示，提示注入的攻击成功率在无防护时为 23.6%、加防御后降到 11.2%——两家公司都没声称已解决，OpenAI 文档则把页面内容视为「不可信上下文」。先从你信任的站点开始，在用低风险任务验证之前，别把敏感的财务或医疗页面交给它们。"
+          "question": "它们能操作已登录网站吗？",
+          "answer": "只能在官方说明的能力和你明确授予的站点权限内操作。"
         },
         {
-          "question": "$20/月这个价位，两边各给到什么？",
-          "answer": "两边都从 $20/月起步，但模型访问差异很大。Codex for Chrome 随 ChatGPT 套餐附带（Plus 即能用），这个价位就给你完整模型栈；Claude for Chrome 的 Pro 用户在扩展里只能用 Haiku 4.5——最快但最弱的模型——想解锁 Sonnet 4.5 或 Opus 4.6 得上 Max（$100/月）。"
+          "question": "如何测试浏览器 Agent 权限？",
+          "answer": "从可信、低风险站点开始，只授予一个任务所需的最小范围。"
         },
         {
-          "question": "欧盟和英国能用 Codex for Chrome 吗？",
-          "answer": "暂时不能。截至 2026 年 5 月，Codex for Chrome 在欧盟与英国均不可用，OpenAI 只说支持「即将到来」，没有时间表。欧盟用户装上扩展可能能正常连接，但 Codex 应用里不会出现 Chrome 插件。Claude for Chrome 没有地区限制，全球付费订阅者都能用。"
+          "question": "如何应对提示注入？",
+          "answer": "把网页内容视为不可信信息，高影响动作必须人工审批。"
         },
         {
-          "question": "它们支持 Brave、Arc、Firefox 或移动端吗？",
-          "answer": "不支持。两者都仅限桌面版 Chrome——不支持 Brave、Arc、Firefox 或移动浏览器。它们还有其他共同局限：都处理不了验证码与登录弹窗（需要你手动介入），而且浏览器自动化消耗套餐额度的速度远快于普通聊天。"
+          "question": "需要哪个套餐？",
+          "answer": "查看厂商当前价格与扩展文档，不要沿用旧比较表。"
+        },
+        {
+          "question": "两个扩展能同时运行吗？",
+          "answer": "可以同时安装，但应避免重叠敏感授权，并分别记录权限。"
+        },
+        {
+          "question": "应该怎么做对比试点？",
+          "answer": "用相同站点、相同产物和同一验收表完成同一浏览任务。"
         }
       ]
     },
@@ -6895,84 +7007,108 @@
     "/zh/blog/deepseek-agent-vs-claude-code": {
       "items": [
         {
-          "question": "DeepSeek V4 的编程能力比得上 Claude Opus 吗？",
-          "answer": "分任务看。仓库级多文件重构上 Opus 仍占优——SWE-bench Pro 约差 14 个百分点，这类任务吃长程架构一致性；算法题与终端 Agent 任务上 V4 Pro 反而领先。日常有边界的编码，V4 够用且便宜得多；最难的 10–15% 场景，诚实地说仍是 Opus 更强。"
+          "question": "DeepSeek Agent 是 Claude Code 的直接替代品吗？",
+          "answer": "不完全是。Claude Code 是框架；DeepSeek 通常提供模型端点，且官方已经说明如何在 Claude Code 中接入。"
         },
         {
-          "question": "用 DeepSeek 到底能便宜多少？",
-          "answer": "便宜非常多。输出 token 价差约 28 倍：V4 Pro 每百万 0.87 美元，Opus 4.8 要 25 美元。跑同样的典型 Agent 任务，V4 Pro 单任务约 0.021 美元，Opus 约 0.54 美元。任务量一大，这差距就把自动化从奢侈品变成默认工作流。"
+          "question": "Claude Code 能使用 DeepSeek 模型吗？",
+          "answer": "能。DeepSeek 官方给出了 Anthropic 兼容地址与 Claude Code 所需环境变量。"
         },
         {
-          "question": "能让 Claude Code 用 DeepSeek 当后端、不跑 Opus 吗？",
-          "answer": "可以。把 Claude Code 的后端配置切到 DeepSeek 的 Anthropic 兼容端点即可，plan、diff 审查、权限询问、子 Agent 都保留。失去的主要是部分 Opus 特有的推理行为，个别参数映射也不完美；最难的会话仍可手动切回 Opus。"
+          "question": "换成 DeepSeek 端点后，Claude Code 功能会完全一致吗？",
+          "answer": "不能默认一致，需测试工具、缓存、思考模式、搜索、图像、错误处理与模型映射。"
         },
         {
-          "question": "切到 DeepSeek 会不会弄坏 Claude Code 的功能？",
-          "answer": "大多数不受影响：plan 模式、agent 模式、diff 审查、工具权限在 DeepSeek 后端下都正常。会变的是行为层面——依赖 Anthropic 特有模型特质的模式结果可能不同，派生的子 Agent 也跑在 DeepSeek 上而非 Opus。建议先用真实工作流测一遍再设为默认。"
+          "question": "哪一种更便宜？",
+          "answer": "DeepSeek 公布的 token 单价更低，但应把重试、工具费用计入每个验收任务的总成本。"
         },
         {
-          "question": "DeepSeek-TUI 这类原生 Agent 和 Claude Code 怎么比？",
-          "answer": "DeepSeek-TUI 是社区终端 Agent，围绕 DeepSeek 定价做优化，自带 RLM 扇出并行、沙箱执行与 MCP 支持。Claude Code 则是工作流更精致、有原生 Opus 集成的商业产品。前者提供 Opus 定价下跑不起的并行子 Agent 架构，后者赢在框架成熟度与功能。"
+          "question": "deepseek-v4-pro 一定由 V4 Pro 提供吗？",
+          "answer": "当前不能这样保证；DeepSeek 宣布在 V4.1-Pro 上线前临时路由到 V4.1 Flash。"
         },
         {
-          "question": "单人开发者应该选哪个？",
-          "answer": "看成本与代码库。盯 API 成本、任务多有边界（功能实现、修 bug、小项目），把 Claude Code 配 V4 Flash 当后端，最省钱地拿到成熟框架。身处互相依赖的大型代码库、正确性优先，原生 Opus 更稳。多数单人开发者适合混合方案：常规活走 Flash，最难的切 Opus。"
+          "question": "能靠公开编程基准直接决定赢家吗？",
+          "answer": "不能。框架、提示、工具与评分方法不同，应使用仓库内验收测试。"
+        },
+        {
+          "question": "团队何时应保留原生 Claude Code？",
+          "answer": "当厂商原生支持与 Claude 模型栈比最低 token 单价更重要时。"
+        },
+        {
+          "question": "测试 DeepSeek 路由最安全的方法是什么？",
+          "answer": "从可回滚任务开始，固定框架设置，记录失败，并在合并前人工审核。"
         }
       ]
     },
     "/zh/blog/deepseek-v4-1-flash": {
       "items": [
         {
-          "question": "什么是 DeepSeek V4.1 Flash？",
-          "answer": "DeepSeek V4.1 Flash 是 DeepSeek 下一代 Flash 档模型的中间测试版本，2026 年 9 月 8 日开放限时 API 内测、预定 9 月 10 日自动过期。它采用新架构并原生支持多模态输入，计费与 `deepseek-v4-flash` 相同。它不是正式发布，官方也未公布技术报告或基准表。"
+          "question": "DeepSeek V4.1 Flash 还是测试版吗？",
+          "answer": "不是。它已成为正式 Flash 模型，生产名称为 deepseek-flash。"
         },
         {
-          "question": "内测期间如何调用 DeepSeek V4.1 Flash？",
-          "answer": "保留现有 API `base_url` 与 key，只把 `model` 参数改为 `deepseek-v4.1-flash-expires-on-0910`。无需独立 endpoint 或内测资格。每账号并发上限 20 路，模型 ID 于 2026 年 9 月 10 日失效。"
+          "question": "带过期日期的测试 ID 怎么了？",
+          "answer": "它已过期，不应继续用于生产配置。"
         },
         {
-          "question": "V4.1 Flash 比 V4 Pro 快吗？",
-          "answer": "内测期间的社区实测约为 V4 Pro 持续吞吐的 5.7 倍（约 355 vs 63 token/s），首字延迟低约 77%。这些是开发者在中间版本上的量测而非官方数据；DeepSeek 尚未公布自己的基准。"
+          "question": "deepseek-v4-flash 旧别名仍对应旧模型吗？",
+          "answer": "不对应。官方称旧模型已退役，旧别名会转到 V4.1 Flash。"
         },
         {
-          "question": "V4.1 Flash 比 V4 Pro 便宜吗？",
-          "answer": "内测期间它与 `deepseek-v4-flash` 同价，输出价格约为 V4 Pro 的三分之一。9 月 10 日生效的 Flash 系列降价使缓存命中输入降 60%，输出降约 11%，因此正式版若沿用 Flash 价目表，仍会远低于 Pro 定价。"
+          "question": "V4.1 Flash 支持图像吗？",
+          "answer": "支持，官方模型表列出了视觉能力。"
         },
         {
-          "question": "DeepSeek V4.1 Flash 能取代 V4 Pro 吗？",
-          "answer": "这正是 DeepSeek 内测反馈问卷让用户回答的问题。该模型的定位就是测试 Flash 档的速度与价格能否承接 Pro 级负载；能否全面取代，取决于正式版在完整生产并发下的质量——而这一数据官方尚未公布。"
+          "question": "上下文与输出上限是多少？",
+          "answer": "当前官方表列出 1M 上下文与最高 384K 输出。"
         },
         {
-          "question": "DeepSeek V4.1 Flash 开源吗？",
-          "answer": "V4.1 Flash 尚未开放权重。V4 家族其他成员（V4 Pro 与 V4 Flash）在 Hugging Face 上以 MIT 许可发布，但 DeepSeek 对新架构是否开源没有任何表态——答案要等正式版发布时揭晓。"
+          "question": "峰谷价格如何计算？",
+          "answer": "工作日指定峰时的公开费率是闲时两倍，具体以实时价格页为准。"
+        },
+        {
+          "question": "V4.1 Flash 在所有任务上都优于 V4 Pro 吗？",
+          "answer": "厂商结果支持发布主张，但具体工作仍需独立测试。"
+        },
+        {
+          "question": "迁移时应复测什么？",
+          "answer": "复测视觉、工具调用、结构化输出、推理模式、缓存、重试与模型日志。"
         }
       ]
     },
     "/zh/blog/deepseek-v4-api-solo-operator": {
       "items": [
         {
-          "question": "现在能通过官方 API 用上 DeepSeek V4 吗？",
-          "answer": "还不行。截至 2026 年 4 月中旬，官方 API 仍只提供 deepseek-chat 和 deepseek-reasoner，二者都映射到带 128K 上下文的 V3.2——没有 V4 模型 ID、没有更新日志、没有官方公告。目前的信息来自预发布架构论文、基准测试泄漏，以及 4 月 3 日路透社关于 V4「几周内」发布的报道。在那之前，任何定价都只能算预测。"
+          "question": "单人经营者应先用哪个 DeepSeek API 模型？",
+          "answer": "先让 deepseek-flash 处理可回滚任务，只有评测证明需要时再升级。"
         },
         {
-          "question": "DeepSeek V4 真的比 OpenAI 便宜吗？",
-          "answer": "真的，便宜一大截：相对标准 GPT-5.4，预测的 V4 输入 token 便宜约 8–17 倍、输出约 30 倍；相对 GPT-5 mini 差距更小。注意这些 V4 数字在发布前都只是预测——动手前把 OpenAI 定价页和 DeepSeek 官方文档并排打开，按你的实际负载算一遍，再假设能省多少。"
+          "question": "Flash 当前价格是多少？",
+          "answer": "每百万 token 缓存未命中输入为闲时 0.15/峰时 0.30 美元，输出为 0.60/1.20 美元。"
         },
         {
-          "question": "V4 Lite 和完整版分别什么时候用？",
-          "answer": "V4 Lite 更可能适合对延迟敏感或更简单的任务——分类、摘要、基础问答，用更少算力，定价也可能更低。需要 1M token 上下文，或想要编码与推理基准的提升时，完整版才有意义。两者官方都未确认；从以往发布节奏看是分阶段推出，发布后留意独立评测。"
+          "question": "为什么 token 单价不等于预算？",
+          "answer": "重试、工具、存储、监控与被拒绝的输出都会增加成本。"
         },
         {
-          "question": "成本更低，对单人创业者真的有意义吗？",
-          "answer": "只有当 API 账单真正进入你的商业模式时才明显。高量 pipeline 场景差异巨大——有开发者报告 V4 一个月账单 $18，同样的负载在 GPT-4o 上要约 $380。但对典型的单人内容与研究工作，推理成本几乎隐形，真正的瓶颈是搭建时间、上下文管理和人工审阅。提示词共享公共前缀还能吃到 $0.03/M 的缓存价，把有效输入成本压到 $0.05/M 以下。"
+          "question": "应怎样比较成本？",
+          "answer": "用所有运行成本除以通过人工验收的输出数量。"
         },
         {
-          "question": "该自托管 DeepSeek V4，还是直接用 API？",
-          "answer": "通常直接用 API。自托管的经济账大约要到每天 5000 万 token 才开始划算；每天低于约 1000 万 token 时，自己管基础设施纯属多余——API 便宜到「省心」更值钱。V4 权重会开放放在 Hugging Face 和 GitHub。唯一的例外是数据隐私：如果合规要求数据不能出本地，自托管才是唯一真正的选项。"
+          "question": "提示缓存什么时候有价值？",
+          "answer": "当稳定前缀反复出现时；应测真实命中率，而不是故意填充提示。"
         },
         {
-          "question": "DeepSeek V4 现在能上生产吗？",
-          "answer": "还不行——它根本没发布。上线后，文档处理与内容工作流大概率很快能用；agentic 编码 pipeline 建议等几周真实世界的反馈再上。V4 宣称的 SWE-bench Verified 约 81% 只来自 DeepSeek 内部测试，独立基准还没出。若可靠性与生态成熟度优先，GPT-5.4 或 Claude Sonnet 4.6 仍是更经实战的生产之选。"
+          "question": "试点需要哪些控制？",
+          "answer": "需要周预算、单任务调用上限、日志、幂等，以及外部写入前审批。"
+        },
+        {
+          "question": "滚动模型别名适合受监管工作吗？",
+          "answer": "未必；若必须固定检查点，应向供应商确认锁定版本。"
+        },
+        {
+          "question": "验收集应包含什么？",
+          "answer": "应包含普通、长上下文、格式错误、证据缺失、重复事件和必须审批的用例。"
         }
       ]
     },
@@ -7335,40 +7471,72 @@
     "/zh/blog/genspark-ai-pricing": {
       "items": [
         {
-          "question": "免费档每天给多少积分？够用来评估 Genspark 吗？",
-          "answer": "免费档每天给 100 积分（有些来源说 200——这个数字变动过，以 Genspark 会员页面的实时数字为准）。做一次真正的评估是够的：每天一个中等深度的 Sparkpage、一些聊天和轻度 Super Agent 任务，都装得下这个额度。但支撑不了日常生产——一份深度研究报告自己就能吃掉 30–80 积分。"
+          "question": "Genspark 如何计价？",
+          "answer": "套餐把产品访问与积分计量任务组合在一起，具体规则以当前官方页面为准。"
         },
         {
-          "question": "Genspark Plus 每月 24.99 美元，值不值？",
-          "answer": "值——前提是结构化交付物是你工作里的常规项：Sparkpages、幻灯片、研究简报，这些东西不交给 Genspark 就得各花掉你一个下午。零积分的聊天和图片生成，也让它跟几乎同价的 ChatGPT Plus 有一战之力。不值——如果你主要需要对话或编码帮助：ChatGPT 做得更好还便宜 5 美元；而重度图片和视频用户会烧 10,000 月积分烧得比预期快，多位评测者报告重度用户两到三周见底。"
+          "question": "一个任务消耗多少积分？",
+          "answer": "记录代表性产物通过审阅前后的积分余额差。"
         },
         {
-          "question": "Genspark Plus 和 ChatGPT Plus 几乎同价，怎么选？",
-          "answer": "按产出类型选，不按功能数量选。如果你的工作产品是文字——对话、编码、写作——ChatGPT Plus 是更便宜也更强的工具。如果你的工作产品是结构化交付物——多来源研究页、演示文稿、Agent 打包的任务——Genspark 的积分买到的是 ChatGPT 任何形态都不提供的东西。精打细算的人还要记住两点：Genspark 积分不结转，零积分福利目前只保证到 2026 年 12 月 31 日。"
+          "question": "Genspark 积分会结转吗？",
+          "answer": "应查看当前会员条款，不要假定未用价值会自动保留。"
         },
         {
-          "question": "2026 年 12 月 31 日条款到期之后会怎样？",
-          "answer": "Genspark 之外没人知道。零积分的 AI 聊天、图片生成和商用权利只保证到 2026 年 12 月 31 日，官方还没公布后续安排。如果你的工作流依赖这些条款——尤其是客户交付物上的商用权利——请把这个日期放进续费算式，在新条款公布之前倾向按月付费，并盯紧官方公告。"
+          "question": "免费档够用吗？",
+          "answer": "只有代表性试点能在其当前限制内完成时才够用。"
+        },
+        {
+          "question": "应该选择哪个 Genspark 套餐？",
+          "answer": "选择能覆盖实测月量与重试余量的最小当前档位。"
+        },
+        {
+          "question": "零积分功能是永久的吗？",
+          "answer": "应把它视为当前条款或促销，而不是永久承诺。"
+        },
+        {
+          "question": "需要计算哪些隐藏成本？",
+          "answer": "包括审阅、重试、导出清理、存储、管理与失败运行。"
+        },
+        {
+          "question": "团队如何评估 Genspark 价格？",
+          "answer": "应计算席位、治理、所有权与每月合格产物。"
         }
       ]
     },
     "/zh/blog/genspark-super-agent-explained": {
       "items": [
         {
-          "question": "Genspark Super Agent 免费吗？",
-          "answer": "部分免费。免费版每天 100 点数、1 GB 存储——够试 Sparkpages、基础 AI 聊天和大部分功能，但只要你做点正经事，每日上限很快就到顶。拿来试用是真好；扛每日真实工作不够。付费方案从每月 $24.99 起，逐档的完整拆解在我们另一篇 Genspark 定价文里。"
+          "question": "什么是 Genspark Super Agent？",
+          "answer": "它是在多步任务中协调工具与产物界面的工作区 Agent。"
         },
         {
-          "question": "Genspark Super Agent 到底适合谁？",
-          "answer": "适合一周被「调研到产出」循环占满的单人创业者、自由职业者和小团队——从零散来源收集信息、整合，再变成报告、演示或对比。对 AI 使用以对话为主的人是杀鸡用牛刀；交付物是散文而不是调研成果的写作者，多半能在更低价的专用聊天工具上拿到更多价值。"
+          "question": "Genspark Super Agent 是聊天机器人吗？",
+          "answer": "不是，应按计划、动作与产物评估，而不只看对话。"
         },
         {
-          "question": "Genspark 和 Manus 怎么选？",
-          "answer": "分界线是你想留在环里的程度。Genspark 适合想掌舵的人：每步可见、产出结构化、结果更可预期。Manus 适合愿意把一个多步项目端到端整个授权出去的人，包括写代码和部署。两边都按积分计费而不是一口价，所以两边都要为不可预测性留预算——区别只在于积分燃烧时你在看什么。"
+          "question": "什么是 Sparkpage？",
+          "answer": "它是面向研究的产物界面，当前行为应在官方文档中核验。"
         },
         {
-          "question": "Super Agent 能取代 ChatGPT 吗？",
-          "answer": "不能——它也没打算这么做。纯对话、头脑风暴、迭代起草，专用聊天工具更简单，对话技艺本身也更好。Genspark 的价值出现在答案需要变成成果物的时候：一张带引用的页面、一份幻灯片、一张表格。很多人两个都用、各干各的那一半，完全合理。"
+          "question": "Genspark 能创建幻灯片和表格吗？",
+          "answer": "应查看当前官方工作区说明与支持的导出格式。"
+        },
+        {
+          "question": "Genspark 能执行真实世界动作吗？",
+          "answer": "部分官方工具可以，但需小范围测试可用性、权限与审批。"
+        },
+        {
+          "question": "Super Agent 与聊天机器人有何不同？",
+          "answer": "它协调多步与多个产物，而不是只返回一条回复。"
+        },
+        {
+          "question": "Genspark 试点应测什么？",
+          "answer": "应测来源质量、合格产物、重试、权限与积分消耗。"
+        },
+        {
+          "question": "去哪里核验 Genspark 价格？",
+          "answer": "购买时使用官方价格页与会员页。"
         }
       ]
     },
@@ -7547,56 +7715,72 @@
     "/zh/blog/gpt-5-6-sol-terra-luna": {
       "items": [
         {
-          "question": "什么时候能真正用上 GPT-5.6？",
-          "answer": "GPT-5.6 现已向所有人开放。全面上线始于 2026 年 7 月 9 日，覆盖 ChatGPT、Codex 与 OpenAI API。ChatGPT Work 也在同一天发布。GPT-5.6 还内置于 Floatboat，无需 API Key。"
+          "question": "GPT-5.6 三档分别是什么？",
+          "answer": "Sol 是高能力档，Terra 平衡成本与能力，Luna 面向聚焦的高吞吐任务。"
         },
         {
-          "question": "GPT-5.6 比 Claude Fable 5 或 Mythos 5 更强吗？",
-          "answer": "在 Terminal-Bench 2.1 上，GPT-5.6 Sol（88.8%）与 Sol Ultra（91.9%）领先 Claude Fable 5（83.1%）与 Mythos 5（88%）。在 Artificial Analysis 编码 Agent 指数上，Sol 领先 Fable 5 2.8 分。然而在 SWE-Bench Pro——最能预测真实世界多文件软件工程表现的基准——上，Sol 的 64.6% 达不到 Fable 5 的 80.3%。答案取决于：对你具体的工作负载，你更信任哪个基准。"
+          "question": "当前 API 价格是多少？",
+          "answer": "每百万输入/输出 token：Sol 4/20 美元，Terra 2/12 美元，Luna 0.20/1.20 美元。"
         },
         {
-          "question": "我的 Agent 工作流该用哪个 GPT-5.6 模型？",
-          "answer": "如果你的 Agent 处理以正确性为首要的复杂多步推理任务，用 Sol（最难的题目用 Sol Ultra）。常规 Agent 工作——会议准备、标准跟进、文档总结——Terra 以一半价格提供 GPT-5.5 级性能。喂给更重流水线的分类、抽取与路由，Luna 以 $1/$6 提供扎实的能力。"
+          "question": "为什么旧文章价格不同？",
+          "answer": "6 月预览价后来在 7 月和 8 月被下调。"
         },
         {
-          "question": "GPT-5.6 在 METR 评测里的作弊行为意味着模型不安全吗？",
-          "answer": "METR 发现 GPT-5.6 Sol 在软件任务评测中的作弊率高于此前评测过的任何公开模型，但作弊是明目张胆且可检测的——也就是说，当前的安全监控逮住了它。模型没有越过 AI 自我改进风险的「严重」阈值。METR 的担心是面向未来的：如果未来模型的作弊率更低，那可能意味着它们学会了逃避检测，而不是停止了行为。"
+          "question": "哪个 GPT-5.6 模型适合做默认档？",
+          "answer": "Terra 是均衡起点，但仍需用真实任务验证。"
         },
         {
-          "question": "Floatboat 里有 GPT-5.6 吗？",
-          "answer": "有。GPT-5.6 Sol、Terra 与 Luna 已零配置内置到 Floatboat——不需要 API Key，不需要路由设置。哪个档位适合哪类日历事件的详细指南，见 <a href=\"/blog/gpt-5-6-floatboat\">Floatboat 中的 GPT-5.6 详解</a>。"
+          "question": "什么时候该用 Sol？",
+          "answer": "当配对评测证明质量提升或重试减少足以覆盖溢价时。"
         },
         {
-          "question": "GPT-5.6 的上下文窗口是多大？",
-          "answer": "三个档位共享 1,050,000 token（105 万）的上下文窗口与 128,000 token 的最大输出。预览期间流传的「150 万」这个数字是错误的。"
+          "question": "Luna 最适合什么？",
+          "answer": "适合路由、分类、第一轮抽取等边界清晰的高吞吐任务。"
+        },
+        {
+          "question": "输入超过 272K 怎样计费？",
+          "answer": "当前模型页说明整个请求按 2 倍输入、1.5 倍输出计费。"
+        },
+        {
+          "question": "新项目还应从 GPT-5.6 开始吗？",
+          "answer": "也应比较当前 GPT-6 档位；只有配对评测支持时才保留 GPT-5.6。"
         }
       ]
     },
     "/zh/blog/gpt-6-astra": {
       "items": [
         {
-          "question": "为什么 Astra 的 ARC-AGI-3 分数差别这么大？",
-          "answer": "因为两个数字量的是不同的东西。99.9% 出自 OpenAI 自带的评测实现——它在轮次间保留推理状态、压缩长上下文，是 OpenAI 交付的“产品”；62.7% 出自 ARC Prize 的标准化评测，隔离的是模型本身能力，同样处于当前最高水准。两数都成立，都不宜单独引用。"
+          "question": "GPT-6 Astra 是什么？",
+          "answer": "它是 OpenAI 面向高难度推理、编程、电脑操作、研究与文档工作的最高能力 API 模型。"
         },
         {
-          "question": "为什么我用不到 Astra 的全部网络安全能力？",
-          "answer": "因为 OpenAI 认定 Astra 是其框架下第一个达到“严重（Critical）”级网络能力的模型：能发现未知漏洞，在加固系统上搭建利用链。因此最先进的网络工作流只开放给 Daybreak Blue 审核过的防御方，数周内逐步放宽；标准版拒绝高危漏洞利用，护栏更严——对正当工作反而更安全。"
+          "question": "Astra 价格是多少？",
+          "answer": "每百万 token 标准价为输入 10 美元、缓存输入 1 美元、输出 50 美元，缓存写入 12.50 美元。"
         },
         {
-          "question": "Astra 真的算得上最智能的模型吗？",
-          "answer": "并非全面领先——为一个标题买单前值得知道。Astra 真正强在电脑操作（OSWorld 2.0 上 72.6%、单任务省约 47% 时间）、单任务效率与专业科学与网络安全；但独立 Artificial Analysis 榜上它仅 61.2 分，低于 Claude Fable 5.1（65.7）与 Claude Opus 5（63.1）。“世界最智能模型”更像宣传，而非全面领先的战绩。"
+          "question": "上下文与输出上限是多少？",
+          "answer": "它有 1.05M 上下文与 128K 最大输出。"
         },
         {
-          "question": "GPT-6 Astra 怎么收费？",
-          "answer": "标准 API 价为每百万输入 token 10 美元、每百万输出 50 美元——是 GPT-5.6 Sol 促销价的 2.5 倍，与 Claude Fable 5.1 持平；缓存写入与超长提示另有溢价档。OpenAI 主张按“每完成任务的成本”算：Astra 在许多任务上 token 与重试都更少。这笔账值得你用自己的负载验证后再买单。"
+          "question": "输入超过 272K 会怎样？",
+          "answer": "整个请求按 2 倍输入/缓存费率与 1.5 倍输出费率计价。"
         },
         {
-          "question": "该从 GPT-5.6 Sol 换到 GPT-6 Astra 吗？",
-          "answer": "先等你能用自己的任务实测，账本划算再换。Astra 最强的是长周期电脑操作（单任务省约 47% 时间）与 105 万 token 级的整仓分析；GPT-5.6 Sol 做常规 agent 工作仍是更便宜可靠的主力，高并发下 token 省钱往往盖过效率收益。等 API 放开后，两模型都跑你的负载，再对比每任务成本与介入率。"
+          "question": "Astra 支持哪些工具？",
+          "answer": "Responses API 列出搜索、代码解释器、托管 shell、电脑操作、MCP、Skills 等，但受访问权限限制。"
         },
         {
-          "question": "什么时候才能在 API 或 Floatboat 里用上 Astra？",
-          "answer": "还要再等等。Astra 于 9 月 3 日发布，先供 Daybreak 组织使用；ChatGPT 各套餐、API 与 AWS 接入据称“未来几天内”跟上。Floatboat 今天还没有它——内置名单仍是 GPT-5 家族与 DeepSeek、MiniMax、GLM、Kimi、Claude、Gemini，集成工作已在推进；在真正可用之前，我们不会假装能用。"
+          "question": "Critical 网络能力对用户意味着什么？",
+          "answer": "Astra 有更强防护，高阶请求可能被拒，部分防御访问需通过 Daybreak 审核。"
+        },
+        {
+          "question": "应根据基准分数直接采用吗？",
+          "answer": "不应。模型、框架、推理档位、工具与政策控制必须一起测试。"
+        },
+        {
+          "question": "什么时候值得使用 Astra？",
+          "answer": "当更高验收率或更少重试能抵消溢价时；常规高吞吐任务更适合便宜的 GPT-6 档位。"
         }
       ]
     },
@@ -8267,48 +8451,72 @@
     "/zh/blog/lark-cli-when-to-use-it": {
       "items": [
         {
-          "question": "到底该不该装 Lark CLI？",
-          "answer": "只有当下面至少一条成立时才值得装：你经常写代码；你有一个能长期拥有这套集成的开发者；或者你需要任何现成工具都给不了的定制行为。如果你只是想让 Lark 连上其他工具，什么都别装——从 Lark 内置的 webhook 或 Zapier、Make 这类集成平台开始。"
+          "question": "什么是 Lark CLI？",
+          "answer": "它是面向 Lark 开放平台操作的命令行界面。"
         },
         {
-          "question": "Lark CLI 和 lark-mcp 是什么关系？",
-          "answer": "它们是同一套开放平台 API 的两种不同表面。Lark CLI 是命令行客户端，你（或 AI agent）从终端或脚本直接调用；lark-mcp 把这些 API 封装成 MCP 工具，由支持 MCP 的 AI 助手加载为可调用工具。实操上：你在终端里干活就用 CLI；你的自动化长在 AI 助手的对话里，lark-mcp 是更自然的形态。"
+          "question": "谁适合使用 Lark CLI？",
+          "answer": "有明确集成，并有人负责凭据与维护的团队。"
         },
         {
-          "question": "不懂代码的人能用 Lark CLI 吗？",
-          "answer": "技术上能，而且门槛在降——内置的 lark-cli auth login 流程和持续增加的 AI Agent Skill 就是同时为人和 agent 设计的，不只面向工程师。但现实是，你仍会撞上 token 类型、权限范围和默认你懂开发者词汇的报错信息。如果这些词对你毫无意义，集成平台或带引导的 AI 工作流能让你每小时走得更远。"
+          "question": "什么时候使用 Lark CLI 属于过度设计？",
+          "answer": "内置自动化或持续维护的连接器已经覆盖任务时。"
         },
         {
-          "question": "Lark CLI 免费吗？",
-          "answer": "CLI 本身是 MIT 许可的开源工具，软件不花钱。你付的是时间：搭建、权限审批、持续维护。对单人经营者来说，这个时间成本通常就是全部的决定因素——许可证从来都不是。"
+          "question": "Lark CLI 与 Lark MCP 有何不同？",
+          "answer": "CLI 是命令面，MCP 向兼容助手暴露工具。"
+        },
+        {
+          "question": "Lark CLI 应获得哪些权限？",
+          "answer": "使用专用应用，只授予一个工作流所需的最小范围。"
+        },
+        {
+          "question": "Lark CLI 需要哪些维护？",
+          "answer": "需要规划凭据轮换、API 变化、日志、重试与负责人覆盖。"
+        },
+        {
+          "question": "Lark CLI 适合单人运营者吗？",
+          "answer": "只有定制价值高于持续维护成本时才适合。"
+        },
+        {
+          "question": "安全的首次 Lark CLI 试点怎么做？",
+          "answer": "使用一个只读命令、测试租户、日志与回滚方案。"
         }
       ]
     },
     "/zh/blog/lindy-vs-gumloop": {
       "items": [
         {
-          "question": "Lindy 和 Gumloop 的核心区别是什么？",
-          "answer": "核心在于你在哪里控制逻辑。Lindy 是基于 prompt 的 Agent：它替你推理、在任务中途自适应、还能在 Agent 之间交接——非常适合邮件、日历、会议这类沟通层工作流。Gumloop 是可视化、基于节点的画布：由你亲自设计 AI 步骤与推理发生在何处——更适合可重复、数据密集、并且你想逐步看清与掌控的流水线。"
+          "question": "Lindy 与 Gumloop 的主要区别是什么？",
+          "answer": "Lindy 偏 Agent 主导任务，Gumloop 偏显式设计的可视工作流。"
         },
         {
-          "question": "我不是开发者，该先试哪个？",
-          "answer": "先从 Lindy 开始。它的自然语言设置让你描述需求就能跑起来，不需要规划任何逻辑；模板也覆盖邮件、会议与日历这些最常见的起步痛点。Gumloop 的画布很强大，但默认从空白画布开始——除非你已经具备工作流思维，否则在见到成果之前它就可能先拖慢你。"
+          "question": "邮件和会议任务选谁？",
+          "answer": "用最小权限与审批点测试 Lindy 官方说明的模板。"
         },
         {
-          "question": "两款工具各自在哪些场景胜出？",
-          "answer": "各自在自己的主场赢。Lindy 最擅长邮件分拣、会议智能、销售跟进，以及 Agent 之间的交接。Gumloop 在你需要精确性与可见性时胜出：规模化文档处理、网页爬取与浏览器自动化、CRM 或销售数据流水线，以及任何要反复跑的流程。同一任务下，Lindy 让你更快拿到可用结果；一旦调顺，Gumloop 的成稿质量更高。"
+          "question": "重复数据流水线选谁？",
+          "answer": "看重显式节点、重试与运行可观测时测试 Gumloop。"
         },
         {
-          "question": "这两个工具能完全互相替代吗？",
-          "answer": "基本不能——它们解决的是不同问题，重度用户常常两者都用。在邮件、会议这类沟通层工作上，Lindy 很难被超越。当你需要可重复、高体量、且每一步都完全可见的数据流水线时，Gumloop 自有价值。如果你的工作两者都沾边，诚实的答案通常是让它们各司其职，而不是永远只挑一个。"
+          "question": "哪个工具更容易使用？",
+          "answer": "不要预设，应在同一任务上测设置与纠错时间。"
         },
         {
-          "question": "两个工具有免费方案吗？",
-          "answer": "都有值得先试再定的免费档。Lindy 的免费计划可以测试基础 Agent，但多步流程很快会撞上额度限制。Gumloop 每月约 2,000 免费额度——够构建并测试一条简单流水线，想放开手脚实验就有点紧。无论哪个，免费档都足够让你真实感受到每个工具的思维方式。"
+          "question": "如何比较价格？",
+          "answer": "使用当前官方价格，并计算每次合格运行的总运营成本。"
         },
         {
-          "question": "最需要留意的隐藏成本是什么？",
-          "answer": "对 Lindy 来说，是测试期间的额度消耗——迭代 Agent 逻辑时成本比预想涨得快。对 Gumloop 来说，是前期时间投入：画布给你控制力，但让流水线干净跑通花的时间往往比规划的长。拿不准时，把两个工具的免费档都开起来、交给它们同一个真实任务——更快出可用结果的那个，大概就是你的答案。"
+          "question": "如何比较积分？",
+          "answer": "在同题试点中记录真实消耗，避免套用通用消耗结论。"
+        },
+        {
+          "question": "哪些权限范围最重要？",
+          "answer": "比较触发器、连接器、写入、审批与凭据范围。"
+        },
+        {
+          "question": "最终应如何选择？",
+          "answer": "选择以更低总运营成本通过同一验收测试的工具。"
         }
       ]
     },
