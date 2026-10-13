@@ -14,6 +14,8 @@ Search for **AI automation agency pricing** and you will find confident project 
 
 The useful question is not “What is the average agency price?” It is “What work, risk, usage, and ownership does this quote include?” This guide gives you a cost model, an inquiry template, and a quote-comparison method without presenting anonymous estimates as market facts.
 
+> **Verified October 13, 2026:** This guide intentionally avoids volatile market averages. Recheck every platform, model, hosting, and support price named in a proposal before signing.
+
 ## What you are actually buying
 
 An automation engagement can contain several distinct services:

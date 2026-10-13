@@ -16,6 +16,8 @@ A chatbot is primarily a conversational interface: the user sends a message and 
 
 That boundary matters because an answer can be wrong; an action can also change files, accounts, schedules, records, or money.
 
+> **Verified October 13, 2026:** Product labels continue to blur, so this comparison classifies systems by who selects and executes the next step—not by what a vendor calls the feature.
+
 ## Five terms people often collapse into “AI agent”
 
 | Term | What it controls | Typical output |

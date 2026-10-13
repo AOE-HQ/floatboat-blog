@@ -72,12 +72,12 @@
     },
     "ai-agent-vs-chatbot": {
       "en": {
-        "title": "When the answer is only the start of the work",
-        "body": "Floatboat gives agents a workspace for files, tools, execution, and human review—not only another chat response."
+        "title": "Choose by who controls the next step",
+        "body": "Use a chatbot when work ends with a response, a workflow when the path is known, and a bounded agent only when tool-based iteration adds measurable value."
       },
       "zh": {
-        "title": "当回答只是工作的起点",
-        "body": "Floatboat 为 Agent 提供文件、工具、执行与人工复核共同所在的工作站，而不只是多一个聊天回答。"
+        "title": "按谁控制下一步来选择",
+        "body": "工作止于回答时用 Chatbot，路径已知时用 Workflow；只有工具迭代有可衡量价值时，才测试受限 Agent。"
       }
     },
     "ai-agent-workflow-vibe-coding": {
@@ -882,12 +882,12 @@
     },
     "manus-ai-alternatives-2026": {
       "en": {
-        "title": "Manus alternatives beyond the waitlist",
-        "body": "Compared by use case — pick one, then let your calendar feed it tasks."
+        "title": "Choose a Manus alternative by the job",
+        "body": "Compare research, browser action, recurring automation, coding, and workspaces on the same real tasks—including review, recovery, and migration cost."
       },
       "zh": {
-        "title": "按场景挑 Manus 替代品",
-        "body": "选定一个之后，让日历负责给它派活。"
+        "title": "按任务选择 Manus 替代品",
+        "body": "用同一批真实任务比较调研、浏览器执行、重复自动化、编码与工作站，并计入复核、恢复和迁移成本。"
       }
     },
     "meta-muse-spark-one-person-company": {
@@ -932,12 +932,12 @@
     },
     "openai-4-day-work-week-one-person-company": {
       "en": {
-        "title": "The 4-day week solos already run",
-        "body": "OpenAI's pitch meets the AI-powered version you could set up this week."
+        "title": "Test whether AI gives time back",
+        "body": "Baseline delivery and service, automate bounded work, and protect a smaller block first—the four-day week is a measurable experiment, not a guaranteed outcome."
       },
       "zh": {
-        "title": "单人公司早就在过的四天工作制",
-        "body": "OpenAI 的畅想，你本周就能用 AI 搭出试用版。"
+        "title": "检验 AI 是否真的把时间还回来",
+        "body": "先记录交付与服务基线，再自动化边界明确的工作并从半天试起；四天工作制是可测量实验，不是必然结果。"
       }
     },
     "openai-gpt-6-one-person-company": {
@@ -992,12 +992,12 @@
     },
     "stop-context-switching-workspace-agent": {
       "en": {
-        "title": "Context switching, engineered out",
-        "body": "Workspace agents hold the threads between tasks so you don't have to."
+        "title": "Recover interrupted work with less rebuilding",
+        "body": "Test whether a workspace agent restores evidence, state, and next actions better than a maintained project note."
       },
       "zh": {
-        "title": "把上下文切换工程化地消掉",
-        "body": "任务之间的线头由工作区 Agent 替你捏着，不用你自己记。"
+        "title": "减少中断后的状态重建",
+        "body": "用对照测试判断工作区 Agent 是否比项目笔记更好地恢复证据、状态与下一步。"
       }
     },
     "what-are-claude-managed-agents": {
@@ -1182,12 +1182,12 @@
     },
     "workspace-agents-for-solo-operators": {
       "en": {
-        "title": "Doing the work of five, alone",
-        "body": "Why workspace agents, not chat tools, close the gap for one-person companies."
+        "title": "Is a workspace agent right for solo work?",
+        "body": "Start with one reviewable, reversible workflow and expand only if evidence, permissions, and recovery remain clear."
       },
       "zh": {
-        "title": "一个人干五份活",
-        "body": "一人公司的缺口，靠工作区 Agent 补，不是聊天工具。"
+        "title": "工作区 Agent 是否适合单人经营？",
+        "body": "先测试一条可复核、可撤销的流程；只有证据、权限和恢复都清楚时再扩大范围。"
       }
     },
     "workspace-agents-vs-chat-assistants": {
@@ -1202,12 +1202,12 @@
     },
     "workspace-agents-vs-workflow-builders": {
       "en": {
-        "title": "Alongside you vs running pipelines",
-        "body": "Which one fits depends on whether your work repeats exactly."
+        "title": "Choose by how the execution path is decided",
+        "body": "Use workflows for stable rules, bounded agents for variable interpretation, and human approval for consequential actions."
       },
       "zh": {
-        "title": "并肩干活还是跑流水线",
-        "body": "你的工作是否每次都一模一样，决定了答案。"
+        "title": "按执行路径如何决定来选工具",
+        "body": "稳定规则用工作流，变化解释用边界明确的 Agent，重要后果保留人工审批。"
       }
     },
     "world-cup-2026-bracket": {

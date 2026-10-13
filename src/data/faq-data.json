@@ -499,36 +499,36 @@
     "/blog/ai-agent-vs-chatbot": {
       "items": [
         {
-          "question": "What's the real difference between a chatbot and an AI agent?",
-          "answer": "A chatbot primarily manages conversational turns and returns a response. An agent lets a model control enough of a tool-using execution loop to pursue a goal, observe results, adjust, and stop or escalate. The distinction is control of the workflow, not whether a chat interface or one tool call exists."
+          "question": "What is the main difference between an AI agent and a chatbot?",
+          "answer": "A chatbot primarily returns conversational responses; an agent controls enough of a tool-using loop to pursue an outcome."
         },
         {
-          "question": "Is ChatGPT an AI agent?",
-          "answer": "The product can support chatbot, assistant, workflow, and agent-like modes. Judge a specific task by whether the model dynamically controls multiple steps and tools within permissions and exit conditions. A single search or code call does not make every ChatGPT interaction an agent run."
+          "question": "Is every chatbot with tools an agent?",
+          "answer": "No. A single tool call can still be controlled by application code rather than model-directed execution."
         },
         {
-          "question": "How do I decide whether to use a chatbot or an agent?",
-          "answer": "Use a chatbot when an answer, explanation, classification, or draft is the deliverable. Use a deterministic workflow when the steps are known. Test an agent only when the goal is clear but the required steps vary and model-directed tool use measurably improves the result."
+          "question": "How is an agent different from a workflow?",
+          "answer": "A workflow follows predetermined steps, while an agent chooses steps based on observations and a goal."
         },
         {
-          "question": "Can a chatbot be upgraded into an agent?",
-          "answer": "A chat interface can become the front end for an agent, but tools alone are insufficient. The system also needs run state, a loop with exit conditions, error handling, permission enforcement, evaluation, and human handoff for blocked or consequential actions."
+          "question": "When should I use a chatbot?",
+          "answer": "Use a chatbot when the work ends with an answer, clarification, draft, or other response a person will use."
         },
         {
-          "question": "Are agents more expensive to run?",
-          "answer": "Usually, because a run may require several model and tool calls, retries, state storage, monitoring, and human review. There is no universal multiplier. Measure cost per accepted result and compare it with a chatbot and deterministic workflow on the same cases."
+          "question": "When should I use an AI agent?",
+          "answer": "Use an agent when paths vary, tool iteration creates measurable value, and actions can be bounded, observed, and recovered."
         },
         {
-          "question": "Are agents always better than chatbots?",
-          "answer": "No. Agents add latency, cost, operational complexity, and the possibility of harmful external actions. If the task ends at a response or follows stable rules, a chatbot or workflow is usually easier to test, secure, and operate."
+          "question": "Are agents always more capable than chatbots?",
+          "answer": "No. Added autonomy increases flexibility but also cost, latency, and the failure surface."
         },
         {
-          "question": "Do AI agents need long-term memory?",
-          "answer": "No. They need enough run state to track steps, tool results, budgets, and approvals. Durable memory is optional and creates privacy, deletion, staleness, and poisoning risks; authoritative business facts should usually remain in source systems and be retrieved when needed."
+          "question": "What permissions should an agent receive?",
+          "answer": "Begin read-only, separate reads from writes, require approval for consequential actions, and expand only with evidence."
         },
         {
-          "question": "How can I test an AI agent safely?",
-          "answer": "Use 20–30 representative cases, start with read-only tools in an isolated environment, set turn and cost limits, inject tool failures and prompt injection, verify permission boundaries, and require approval for consequential actions. Compare accepted outcomes and review time with simpler baselines."
+          "question": "How can I test whether a product is really agentic?",
+          "answer": "Give it a bounded task requiring observation, tool choice, recovery, and a stop condition, then inspect the trajectory."
         }
       ]
     },
@@ -679,36 +679,36 @@
     "/blog/ai-automation-agency-pricing": {
       "items": [
         {
-          "question": "How much does an AI automation agency actually cost?",
-          "answer": "There is no defensible universal price. Rebuild each quote from discovery, build, integrations, testing and security, deployment and handover, platform and model usage, support, and expected changes. The systems, permissions, data quality, exceptions, volume, and ownership terms explain more than an anonymous market average."
+          "question": "How much does an AI automation agency cost?",
+          "answer": "There is no defensible universal average; price depends on scope, integrations, risk, usage, and support."
         },
         {
-          "question": "What pricing models do agencies use?",
-          "answer": "Common structures are fixed-price projects, time and materials, milestone payments, and retainers or managed services. Some providers add per-run or outcome fees. Match the model to uncertainty, and define billable events, retries, included changes, service levels, overages, caps, and exit terms."
+          "question": "What am I actually buying from an automation agency?",
+          "answer": "Discovery, process design, data work, implementation, testing, deployment, training, monitoring, and support may be separate services."
         },
         {
-          "question": "What should be included in an AI automation agency quote?",
-          "answer": "Require itemized discovery, build, integrations, data work, evaluation, security, infrastructure, third-party usage, deployment, documentation, training, support, and change rates. The quote should also state assumptions, exclusions, acceptance criteria, who controls accounts and credentials, what you receive at handover, and how termination works."
+          "question": "How should AI automation quotes be compared?",
+          "answer": "Normalize quotes against the same workflow, acceptance test, assumptions, deliverables, and ownership terms."
         },
         {
-          "question": "What drives the price up or down?",
-          "answer": "Major drivers are process ambiguity, data readiness, the number and quality of integrations, AI versus deterministic logic, exception paths, write permissions, sensitive data, evaluation depth, deployment environments, usage volume, support targets, and portability requirements. Ask the provider to connect every cost driver to a deliverable or measurable assumption."
+          "question": "What belongs in first-year automation cost?",
+          "answer": "Include build fees, software and model usage, hosting, support, change requests, internal review, and migration or exit work."
         },
         {
-          "question": "How do I compare two automation agency quotes?",
-          "answer": "Give providers the same scope worksheet, then normalize scope, deliverables, assumptions, usage, acceptance, support, ownership, and exit in one sheet. Compare first-year total cost and cost per successful run at low, expected, and peak volume. A lower build fee is not cheaper if it excludes monitoring, failure recovery, documentation, or handover."
+          "question": "Which scope factors raise the price?",
+          "answer": "Custom authentication, unstable data, high-consequence writes, many systems, complex exceptions, and strict compliance raise cost."
         },
         {
-          "question": "How should I estimate ongoing automation costs?",
-          "answer": "Model monthly runs multiplied by steps per run, retry factor, and platform unit price, then add model usage, storage, premium connectors, environments, monitoring, support, and expected changes. Use current official vendor pricing and calculate low, expected, and peak scenarios rather than relying on a plan's headline price."
+          "question": "Should pricing be a fixed fee or a retainer?",
+          "answer": "Fixed fees fit bounded deliverables; retainers fit ongoing operations, but both need clear inclusions and limits."
         },
         {
-          "question": "What should the contract say about ownership and vendor lock-in?",
-          "answer": "Specify rights to workflows, source, prompts, tests, and documentation; keep production accounts and primary credentials under client control; require portable exports and a handover package; identify proprietary dependencies; and define termination assistance, credential rotation, deletion confirmation, and the cost of transition."
+          "question": "Which contract terms matter most?",
+          "answer": "Check intellectual property, credential ownership, documentation, data handling, service levels, termination, export, and handover."
         },
         {
-          "question": "When should I hire an AI automation agency?",
-          "answer": "Hire when the workflow is stable and valuable, integrations or controls exceed internal capacity, and a named owner can make decisions and operate the result. Start with a manual or low-code pilot when requirements change frequently, no baseline exists, nobody owns the process, or a standard product already solves the task."
+          "question": "How can a buyer reduce quote risk?",
+          "answer": "Start with paid discovery or one bounded pilot with measurable acceptance criteria and recovery tests."
         }
       ]
     },
@@ -967,36 +967,36 @@
     "/blog/ai-tools-for-business-automation-2026": {
       "items": [
         {
-          "question": "What is the best AI tool for business automation in 2026?",
-          "answer": "There is no universal winner. The best tool is the smallest system that completes your defined workflow with acceptable accuracy, permissions, cost, and recovery. Compare candidates on the same inputs and failure cases rather than relying on an integration count or broad product ranking."
+          "question": "What is the best AI tool for business automation?",
+          "answer": "It is the smallest system that completes one defined workflow with acceptable accuracy, permissions, cost, and recovery."
         },
         {
-          "question": "How should I choose the first workflow to automate?",
-          "answer": "Choose frequent work with stable inputs, a clear accepted outcome, inexpensive verification, and reversible actions. Document its trigger, data, decisions, output, approvals, retry rule, and owner. If the process changes every run, stabilize it before adding a tool."
+          "question": "Which automation tool family should I start with?",
+          "answer": "Match a business-suite feature, workflow builder, agent builder, AI workspace, or custom integration to the shape of the task."
         },
         {
-          "question": "How do automation pricing units differ?",
-          "answer": "Vendors may meter tasks, Agent activities, operations, workflow executions, credits, tokens, capacity, users, or combinations of them. A ten-step process can therefore cost ten actions on one platform, one execution on another, and a variable mix of credits and tokens on a third. Model the real workflow instead of comparing list prices."
+          "question": "How can I compare tools with different billing units?",
+          "answer": "Calculate total cost per accepted outcome, including retries, premium operations, review, and exception handling."
         },
         {
-          "question": "What is the right way to calculate automation cost?",
-          "answer": "Calculate cost per accepted business outcome. Include subscription and seat fees, metered runs, model and embedding usage, connected services, infrastructure, human review, exceptions, maintenance, and incidents. Run the calculation at expected and burst volume, including tests, retries, loops, and duplicate events."
+          "question": "What business process should I automate first?",
+          "answer": "Choose a frequent, bounded, reviewable process with a clear owner, trigger, and finish state."
         },
         {
-          "question": "Which security controls should an automation platform provide?",
-          "answer": "Look for separate read and write credentials, narrow scopes, action-level restrictions, environment isolation, secret management, approval before consequential writes, retention and deletion controls, and auditable access. A connector catalog is not a security policy; verify how each connection is authenticated and governed."
+          "question": "How should I test automation permissions?",
+          "answer": "Verify that read, write, send, and delete access are separate, then test revoked or expired credentials."
         },
         {
-          "question": "What observability is needed for business automation?",
-          "answer": "A failed run should reveal the workflow and model version, input, retrieved data, transformations, tool arguments and responses, retries, duration, usage, approvals, final status, and safe replay point. Also test whether a timeout after an external action can resume without creating a duplicate."
+          "question": "How should I test failure recovery?",
+          "answer": "Simulate duplicate events, missing fields, timeouts, disconnected apps, and partial writes."
         },
         {
-          "question": "How do I test an AI automation tool fairly?",
-          "answer": "Use one real workflow and the same 20–30 normal and failure cases, accounts, permissions, model where possible, and output contract. Start in shadow mode, then allow reversible staging writes, and only then permit bounded production actions. Measure accepted outputs, corrections, recovery, cost, review, and maintenance."
+          "question": "Do I need an AI agent for business automation?",
+          "answer": "Only when the task needs model-directed decisions; a stable rule-based process is usually better served by a workflow."
         },
         {
-          "question": "Can I migrate my automations later?",
-          "answer": "Only if the logic and data are usable outside the original service. During the trial, export workflows, prompts, schemas, secret references, run history, and source data. Check whether formats are documented and versionable; a proprietary export that only the vendor can interpret is a backup, not a migration path."
+          "question": "How often should I audit business automations?",
+          "answer": "Review them quarterly and after major changes to apps, models, permissions, pricing, or business rules."
         }
       ]
     },
@@ -1319,36 +1319,36 @@
     "/blog/best-calendar-app-solo-operators": {
       "items": [
         {
-          "question": "Which calendar app is actually best for solo operators?",
-          "answer": "Start with the system that already owns your business identity: Google Calendar for Google-centered work, Apple Calendar for a simple Apple setup, or Outlook for Microsoft mail, Teams, and To Do. Add Fantastical or a planning layer only when multi-account viewing, capture, tasks, or scheduling is the demonstrated gap."
+          "question": "What is the best calendar app for a solo operator?",
+          "answer": "It is the app that keeps every required account and device trustworthy with the least ongoing maintenance."
         },
         {
-          "question": "What is the difference between a calendar provider, client, planner, and scheduler?",
-          "answer": "The provider is the event system of record. A client displays and edits one or more providers. A planner places tasks beside events. An automatic scheduler creates or moves flexible time blocks by rule. Decide where events and tasks remain authoritative before connecting the other layers."
+          "question": "Should I choose Google Calendar, Apple Calendar, or Outlook?",
+          "answer": "Start with the ecosystem where your invitations, email, meetings, accounts, and collaborators already live."
         },
         {
-          "question": "How should I test a calendar app before switching?",
-          "answer": "Use a separate test calendar for seven days. Include recurrence, daylight-saving time, an external invitation, a private event, task cases, free/busy sharing, a booking page, offline use, and an export-and-revoke drill. Edit from multiple devices and verify what attendees and shared users see."
+          "question": "When should I consider Fantastical or Morgen?",
+          "answer": "Test them when a multi-account client or planning layer solves a specific gap in your base calendar."
         },
         {
-          "question": "When is an automatic calendar scheduler worth testing?",
-          "answer": "Test one when flexible tasks repeatedly lose space to fixed meetings and you can maintain priorities, deadlines, durations, and working rules. Use the same conflict week for every candidate and measure unexpected moves, duplicates, stale blocks, undo behavior, and what happens when access is revoked."
+          "question": "How long should I test a calendar app?",
+          "answer": "Use it for a representative seven-day workweek rather than relying on a short demo."
         },
         {
-          "question": "How do calendar apps handle tasks differently?",
-          "answer": "A due date, scheduled time, duration, recurrence, subtasks, and completion are separate fields, and integrations do not always preserve all of them. Test five representative tasks and identify which system owns each field. Watch for duplicates when two tools both write back to the same task source."
+          "question": "What should a calendar test include?",
+          "answer": "Test accounts, invitations, tasks, booking, sharing, privacy, automation, offline behavior, notifications, and export."
         },
         {
-          "question": "What privacy checks matter for a calendar app?",
-          "answer": "Inventory every calendar, task list, contact source, email source, and conference service it can access. Check where processing occurs, what booking or AI features upload, retention and deletion controls, administrator visibility, analytics, and revocation. Prefer free/busy access when event details are unnecessary."
+          "question": "Is an automatic scheduler a replacement for a calendar?",
+          "answer": "Usually not. It is generally a planning layer that relies on a base calendar for events and availability."
         },
         {
-          "question": "Can I use several calendar providers without moving my events?",
-          "answer": "Often yes. A multi-provider client can display and edit Google, iCloud, Microsoft, or CalDAV data while those services remain the systems of record. Test recurrence, invitations, tasks, and permissions for each provider because API support can differ inside the same client."
+          "question": "Can a calendar app complete scheduled work?",
+          "answer": "A calendar can reserve time and send notifications, but completion still requires a person or a separate workflow."
         },
         {
-          "question": "How do I avoid calendar app lock-in?",
-          "answer": "Keep the authoritative events in a provider with an acceptable export path, then test export, integration removal, and OAuth revocation before committing. Document features that do not travel, such as booking links, automation rules, task durations, calendar sets, templates, and activity history."
+          "question": "How can I avoid calendar lock-in?",
+          "answer": "Verify standards support, export, cancellation, and migration before moving your real schedule."
         }
       ]
     },
@@ -2987,36 +2987,36 @@
     "/blog/how-to-build-an-ai-agent": {
       "items": [
         {
-          "question": "What is the first step in building an AI agent?",
-          "answer": "Write a task contract before choosing a model or framework. Define the trigger, required inputs, accepted outcome, allowed sources and actions, evidence, approvals, stop conditions, and non-goals. That contract becomes the basis for tool design, evaluations, permissions, and operations."
+          "question": "What is an AI agent?",
+          "answer": "An AI agent is a model-controlled loop that selects tools, observes results, updates its plan, and stops at an outcome or control boundary."
         },
         {
-          "question": "When should I use an agent instead of a workflow?",
-          "answer": "Use a workflow when the steps and branches are known in advance. Use an agent when the path cannot be predetermined and model-directed tool selection measurably improves the outcome. Test a simpler single call or workflow first because autonomy adds latency, cost, and more ways to fail."
+          "question": "How is an agent different from a workflow?",
+          "answer": "An agent selects the next step, while a workflow follows a path predetermined by code or rules."
         },
         {
-          "question": "How do I choose a model for an AI agent?",
-          "answer": "Run candidate models on the same task-specific evaluation set. Compare tool selection, argument accuracy, instruction following, evidence use, error recovery, structured output, latency, and cost per accepted result. Record model versions and rerun regression cases before upgrading or adding routing."
+          "question": "What should I define before building an agent?",
+          "answer": "Write a task contract covering the trigger, inputs, accepted result, forbidden actions, limits, and owner."
         },
         {
-          "question": "What makes an agent tool safe to expose?",
-          "answer": "A safe tool has a narrow purpose and schema, least-privilege credentials, validated inputs, predictable errors, clear side effects, and an idempotency strategy. High-impact calls should produce an inspectable proposal and require informed approval instead of relying on the model to authorize itself."
+          "question": "How should agent tools be designed?",
+          "answer": "Keep tools narrow, typed, idempotent where possible, and separate reads from consequential writes."
         },
         {
-          "question": "What is the difference between context, state, and memory?",
-          "answer": "Context is what the model sees for the current decision. State is the durable machine record of progress, approvals, retries, and external IDs. Memory is selected information intended to influence future runs. Keeping them separate makes retrieval, deletion, auditing, and recovery much more reliable."
+          "question": "What state does an agent need?",
+          "answer": "Keep only the task state needed for the current decision and store authoritative data outside model memory."
         },
         {
-          "question": "How should I evaluate an AI agent?",
-          "answer": "Evaluate the full trajectory, not only the final answer. Include normal, edge, adversarial, and recovery cases, then score outcome quality, evidence, tool calls, forbidden actions, escalation, latency, cost, and recovery without duplicate side effects. Prefer deterministic assertions wherever possible."
+          "question": "How do I evaluate an AI agent?",
+          "answer": "Score complete trajectories on outcome, tool correctness, constraint compliance, cost, and recovery."
         },
         {
-          "question": "What should I log for an AI agent?",
-          "answer": "Connect task identity, model and prompt versions, source versions, model responses, tool requests, sanitized tool results, state transitions, approvals, retries, cost, latency, terminal status, and external side-effect IDs. Do not log secrets or unnecessary personal data."
+          "question": "What observability does an agent need?",
+          "answer": "Trace goals, prompts, tool arguments and results, approvals, state changes, errors, cost, and final artifacts."
         },
         {
-          "question": "How do I recover an AI agent after a failure?",
-          "answer": "Resume from durable checkpoints, use idempotency keys for writes, reconcile with external systems before retrying, and route unresolved runs to a manual queue. Test interruption immediately before and after each side effect; if the system cannot tell whether an action happened, it is not ready for unattended operation."
+          "question": "How should an AI agent be deployed?",
+          "answer": "Move from offline cases to shadow mode, read-only work, reversible writes, approvals, and gradual expansion."
         }
       ]
     },
@@ -3399,28 +3399,36 @@
     "/blog/manus-ai-alternatives-2026": {
       "items": [
         {
-          "question": "What's the best Manus AI alternative in 2026?",
-          "answer": "None wins outright — it depends on the job. For an all-in-one agent workspace that executes research-to-output work for solo operators, Floatboat is the strongest match. For the most accessible general agent today, ChatGPT Agent is the low-friction pick. For business-process automation, Lindy fits better; for research-first needs, Perplexity or Claude. Read the article's category breakdown and match the tool to the workflow you are actually running."
+          "question": "What is the best Manus AI alternative?",
+          "answer": "There is no universal winner; choose the product category that replaces your actual Manus workload."
         },
         {
-          "question": "Why look for a Manus alternative at all?",
-          "answer": "Because Manus, for all its power, is hard to rely on day-to-day. When this article was written it was still invite-only, and beyond the waitlist sits a credit-based system whose cost and access restrictions make it fragile for solo users who need consistent output. That gap — a genuinely capable tool that is hard to get into and expensive to run — is exactly where more accessible alternatives earn their place."
+          "question": "Which Manus alternative is best for research?",
+          "answer": "Compare research assistants such as Perplexity or ChatGPT deep research on citation accuracy and accepted briefs."
         },
         {
-          "question": "Are there free or open-source Manus alternatives?",
-          "answer": "Yes. AutoGPT is open-source and free to run with your own API keys (you pay only usage costs), and n8n offers open-source workflow automation that can host AI steps. Perplexity has a genuinely useful free research tier. The trade-offs: open-source options require technical setup and can be inconsistent without careful prompting, while the most accessible hosted agent, ChatGPT Agent, starts at $20 per month."
+          "question": "Which alternatives can handle browser tasks?",
+          "answer": "Hosted agents such as ChatGPT agent or Claude can be candidates, subject to site access and approval controls."
         },
         {
-          "question": "Which alternative is best if I'm not technical?",
-          "answer": "ChatGPT Agent or Lindy. Both are no-code with clean interfaces, so no configuration skill is needed. Lindy is purpose-built for business automation — email triage, CRM updates, follow-ups — with templates ready to go; ChatGPT Agent is more general-purpose for everyday research and task chaining. If you are a solo founder offloading recurring operations without coding, Lindy is the cleaner fit; for everything else, start with ChatGPT Agent."
+          "question": "What is better for recurring automation?",
+          "answer": "Workflow and agent builders such as n8n, Gumloop, or Lindy are better shaped for repeatable triggered processes."
         },
         {
-          "question": "When is Manus still the better choice?",
-          "answer": "When your workflow genuinely needs parallel deep research. Manus deploys multiple agents at once to crawl sources and synthesize findings in a way the tools above do not quite match, and it turns a high-level goal into executable subtasks without much hand-holding. If you have access and budget, and your work is end-to-end complex multi-step research and production, it earns its place; this list is aimed at everyone who cannot rely on it daily."
+          "question": "What is better for coding than a general agent?",
+          "answer": "Repository-native coding agents such as Codex or Claude Code better match code changes, tests, and review."
         },
         {
-          "question": "How do I actually choose between these tools?",
-          "answer": "Ask three questions first. Do you need autonomous execution or smart assistance — an agent that does things, or a tool that helps you think? How much does the free or low-cost tier matter to you? Are you a solo creator, or are you building a repeatable team process? Solo → ChatGPT Agent or Claude; repeatable operations → Lindy or n8n. Match the answer, not the marketing."
+          "question": "Is self-hosted n8n automatically cheaper or safer?",
+          "answer": "No. Include patching, backups, secrets, monitoring, availability, and incident response in the comparison."
+        },
+        {
+          "question": "How should I compare Manus alternatives?",
+          "answer": "Run 10–20 completed tasks with the same sources, permissions, output contract, time limit, and scoring."
+        },
+        {
+          "question": "When should I keep Manus?",
+          "answer": "Keep it when its current feature bundle fits the work and accepted-task cost is predictable enough to outweigh migration."
         }
       ]
     },
@@ -3555,28 +3563,36 @@
     "/blog/openai-4-day-work-week-one-person-company": {
       "items": [
         {
-          "question": "Is a four-day work week realistic for solo founders?",
-          "answer": "Maybe, but probably not the way OpenAI describes. The proposal covers government-subsidized employer pilots, a framework that doesn't directly apply to solo operators. What does apply is the underlying premise: AI productivity gains can translate into fewer hours for the same output, and that is testable at the individual level. It depends heavily on your work type and how well your workflows are built — research- and writing-heavy work benefits most; client-facing, relationship-driven work less so."
+          "question": "What did OpenAI propose about a four-day work week?",
+          "answer": "OpenAI proposed time-bound paid 32-hour pilots that hold output and service levels constant, not a new schedule for OpenAI employees."
         },
         {
-          "question": "What exactly is OpenAI proposing with the four-day work week?",
-          "answer": "On April 6, 2026, OpenAI published \"Industrial Policy for the Intelligence Age,\" calling for government-backed experiments with 32-hour work weeks that keep current pay. It frames reduced hours as an efficiency dividend — letting AI-driven productivity gains come back to workers as time rather than flowing only into corporate margins. The four-day proposal is part of a wider package that also includes a robot tax, a public wealth fund, and automatic safety-net triggers."
+          "question": "When did OpenAI publish the four-day-week policy idea?",
+          "answer": "The official Industrial Policy for the Intelligence Age page is dated June 9, 2026."
         },
         {
-          "question": "What does the four-day week debate have to do with one-person companies?",
-          "answer": "As labor policy it doesn't apply to solo operators — there's no employer to negotiate with. It matters as a signal: the wider economy is starting to ask a question solo operators already experiment with daily — what happens when one person's work capacity expands sharply? AI handles research synthesis, first drafts, and scheduling; what remains is the judgment layer, deciding what matters and evaluating what AI produced."
+          "question": "Why does OpenAI call a shorter week an efficiency dividend?",
+          "answer": "The proposal asks whether AI productivity gains can become time or benefits instead of only increasing margins."
         },
         {
-          "question": "Does AI actually reduce work hours?",
-          "answer": "Yes, with a catch. AI reduces time on specific tasks, and four-day-week studies found the gains came from reorganizing how work happens rather than working harder in fewer hours. Whether fewer task-hours become fewer total hours depends on whether you consciously reclaim them. Most people fill freed time with more work — including, at first, me."
+          "question": "Does AI prove a four-day week will work?",
+          "answer": "No. The proposal explicitly calls for pilots and measurement rather than assuming the result."
         },
         {
-          "question": "Why can AI leave solo founders more tired instead of less?",
-          "answer": "Because AI can expand your capacity but it can't create boundaries for you. When you're the only person in a business, there's no organizational slack to absorb overload, so AI-freed time often gets filled with more projects — leaving you more tired, not less. The tool doesn't create sustainability; the system does: clear stopping criteria, and not treating saved time as a license to take on more."
+          "question": "What should a solo operator measure?",
+          "answer": "Measure delivery, response time, quality, revenue, recovery work, and the hours genuinely reclaimed."
         },
         {
-          "question": "What tools actually enable this shift?",
-          "answer": "The tools that help most aren't the flashiest — they fit existing workflows without a rebuild. For workflow-level AI, Floatboat's Combo Skills chains reading, analysis, and structured output into repeatable workflows instead of one-off prompts, so you don't redo the setup each time. Research and writing tools help most when they cut switching costs between reading, organizing, and drafting. No tool removes your judgment layer."
+          "question": "Which tasks should be automated first?",
+          "answer": "Start with frequent, rules-based, reversible tasks that have clear acceptance checks."
+        },
+        {
+          "question": "How should a solo business pilot a four-day week?",
+          "answer": "Record a four-week baseline, remove one half-day, and protect a full day only if outcomes remain stable."
+        },
+        {
+          "question": "When should a four-day-week experiment wait?",
+          "answer": "Wait when demand is unstable, live coverage is essential, support is backlogged, or core processes lack baselines."
         }
       ]
     },
@@ -3771,28 +3787,36 @@
     "/blog/stop-context-switching-workspace-agent": {
       "items": [
         {
-          "question": "How much does context switching really cost you?",
-          "answer": "More than most people realize. The Harvard Business Review study the article cites tracked 137 workers toggling between apps about 1,200 times a day — roughly four hours a week, or about 9 percent of the working year, spent purely on reorienting. Gloria Mark's research adds that it takes about 23 minutes and 15 seconds to fully refocus after an interruption, and that people compensate by working faster while the cost shows up as stress."
+          "question": "What causes context switching at work?",
+          "answer": "Common causes include switching applications, searching for information, changing roles, and reconstructing task state."
         },
         {
-          "question": "Why is context switching worse when you work alone?",
-          "answer": "Because you are the whole thread. In a team, someone else can catch the thread you drop when you switch from writing to answering a question; solo, nothing waits for you and nothing reminds you. The mental model you built — what this client needs, what step three was — lives in your head while your head also handles the next four things. With no handoffs, every switch is a full reload, which is why most workplace research understates the cost."
+          "question": "Can a workspace agent eliminate context switching?",
+          "answer": "No. It may reduce searching and restating, but it cannot fix unclear priorities, interruptions, or excessive meetings."
         },
         {
-          "question": "Why do more tools and AI often make it worse?",
-          "answer": "Because every new tool adds cognitive overhead. The APA research cited in the article points to goal-shifting plus rule-activation: each time the brain reorients to another tool, you pay both. Chat AI makes you the integration layer — you still carry context between the chat tab and your document by pasting. Workflow builders ask you to define a workflow before you know what it is. Adding tools when you hit friction can mean getting less done with a more beautiful stack."
+          "question": "What is a task recovery packet?",
+          "answer": "It records the intended outcome, current state, evidence, constraints, next action, and blockers."
         },
         {
-          "question": "What is a workspace agent, and how does it help?",
-          "answer": "A workspace agent is an AI that doesn't sit in its own tab but lives where your work already is. It changes three things: one environment instead of five tabs, so you stop being the courier between them; it sees the file you're editing and the page you're reading, so there's no paste step where context decays; and it saves whole patterns — research doc into draft outline — as reusable workflows instead of re-explained every time."
+          "question": "What metric shows whether recovery improved?",
+          "answer": "Measure the time from reopening an interrupted task to resuming useful work."
         },
         {
-          "question": "What won't a workspace agent fix?",
-          "answer": "It won't fix confusion about what to work on — if you're switching because your priorities are unclear, you'll just switch inside the workspace instead of between tabs. It also won't replace deep-focus blocks: long writing, hard thinking, and learning still need an uninterrupted 90-minute block, and the tool only shaves friction off the easier parts of your day. On readiness: agents handle research, drafting, and reviewing well today, but not every kind of task yet."
+          "question": "How should I test a workspace agent for context switching?",
+          "answer": "Compare agent-assisted recovery with the same recovery packet in a simple project note for one week."
         },
         {
-          "question": "How do I know if context switching is really my problem?",
-          "answer": "Track it for a day: write down every switch between tasks, tools, or tabs, then ask how many were forced by the tools and how many you allowed. If the list horrifies you by mid-afternoon, it's worth fixing. Then run the free experiment: pick one repeating task that spans at least three tools, gather its context in one place, and save the steps as a list. Two weeks of that will tell you whether a workspace agent deserves a look."
+          "question": "What permissions does a recovery workflow need?",
+          "answer": "Grant only the minimum source and action permissions required for the chosen workflow."
+        },
+        {
+          "question": "What should not be centralized by default?",
+          "answer": "Keep sensitive records, recovery credentials, financial approvals, and irreversible actions outside the default scope."
+        },
+        {
+          "question": "Do I need an agent or better documentation?",
+          "answer": "Use an agent only if it improves recovery reliably beyond a maintained note or checklist."
         }
       ]
     },
@@ -4567,28 +4591,36 @@
     "/blog/workspace-agents-for-solo-operators": {
       "items": [
         {
-          "question": "Why aren't chat tools enough for a one-person company?",
-          "answer": "Because your context resets with every new chat. You train a session on how you write and who your customer is, the output sharpens, you close the tab — and tomorrow it's all gone. A bigger context window delays the pain but doesn't remove it, and a one-person company has no team or shared docs to carry that context for you. With no persistent memory of your standards, style, or past decisions, the re-establishing tax falls entirely on you."
+          "question": "What is a workspace agent?",
+          "answer": "It is an agent that works with bounded files and tools inside a working environment while a person remains accountable."
         },
         {
-          "question": "Are workspace agents replacing chat tools?",
-          "answer": "No. I still use chat tools daily; the two are complements. Chat is for thinking out loud, exploring an idea, quick drafting. Workspace agents are for execution that needs context and continuity — work spanning your files, your ongoing projects, and multi-step tasks. The useful framing isn't either/or but which layer each tool handles best."
+          "question": "How is a workspace agent different from chat?",
+          "answer": "Chat centers the conversation; a workspace agent uses working context and may take controlled actions through connected tools."
         },
         {
-          "question": "How is a workspace agent different from a notes app or a workflow builder?",
-          "answer": "A notes app stores information; a workspace agent acts on it — drafting, summarizing, executing, pulling across files — though the line is getting fuzzier. The contrast with workflow builders is sharper: builders are a hammer for nails, ideal for well-defined, repeated tasks, while a solo operator's day is mostly mixed, judgment-heavy, one-off work that doesn't fit nodes. Workspace agents target that middle ground."
+          "question": "How is it different from a workflow builder?",
+          "answer": "A workflow follows a predefined path, while an agent may select steps when inputs and evidence vary."
         },
         {
-          "question": "Can a workspace agent make my decisions or run my business for me?",
-          "answer": "No — and anyone selling you \"an AI that runs your business\" is selling something that doesn't exist yet. The genuinely hard parts — who your customer is, what to charge, when to say no, being present in client conversations — aren't delegable. Workspace agents help you execute faster on decisions you've already made, and they amplify a clear operation; they don't create one. Handing over the judgment layer is the failure mode I see most often."
+          "question": "What is a good first workspace-agent use case?",
+          "answer": "Start with frequent, reviewable, reversible research, drafting, comparison, or project-status work."
         },
         {
-          "question": "Are these tools mature enough to bet on right now?",
-          "answer": "Mixed. The category is real — context that carries across your work, reusable execution, working inside your existing files and tools — but individual products vary widely. I'd treat 2026 as the experimentation year for solo operators, not the standardization year. Worth trying on one real workflow; don't assume any single tool is the final answer."
+          "question": "What is a bad first use case?",
+          "answer": "Avoid payments, tax filing, account recovery, unsupervised customer messages, and deletion as a first workflow."
         },
         {
-          "question": "Do I need to be technical to use one?",
-          "answer": "No, you don't need to code, but you do need to articulate your work clearly — your offer, your voice, your customer. The ceiling on these tools is usually the user's ability to describe what they actually want, not the model's capability. Start with one workflow you can already explain well, and expect the first month to feel slow."
+          "question": "Which permissions should I inspect?",
+          "answer": "Check whether read, write, send, and delete are separate and can be limited by app, account, or folder."
+        },
+        {
+          "question": "How should a solo operator test a workspace agent?",
+          "answer": "Run a single-workflow 14-day pilot and compare it with a template or checklist control."
+        },
+        {
+          "question": "What proves that a workspace agent is useful?",
+          "answer": "It should reduce total effort without weakening evidence quality, review, permission control, or failure recovery."
         }
       ]
     },
@@ -4631,28 +4663,36 @@
     "/blog/workspace-agents-vs-workflow-builders": {
       "items": [
         {
-          "question": "What's the actual difference between a workspace agent and a workflow builder?",
-          "answer": "Where the AI sits relative to your work — and who chooses the path. A workflow builder is a pipeline you design in advance: a trigger fires, nodes run the same sequence with the same logic, and intelligence sits inside one or two steps. A workspace agent lives inside an AI-aware environment where you work — files, tabs, drafts — and decides the steps as the work happens. One runs the path you drew; the other picks the path on the fly."
+          "question": "What is the main difference between workspace agents and workflow builders?",
+          "answer": "Workflow builders run predefined paths, while workspace agents select parts of a path using available context."
         },
         {
-          "question": "How do I decide which one fits a given task?",
-          "answer": "Use the article's rule of thumb: if the work happens the same way more than twenty times a month — invoice processing, lead routing, ticket triage, scheduled reports — build it in a workflow tool. If it happens once or twice and the shape changes every time — a comparison draft, an unusual client request — that's agent territory. When it's both, which is common for solo operators, you'll end up with one of each, and that's fine."
+          "question": "When should I choose a workflow builder?",
+          "answer": "Choose it for a stable trigger, structured fields, a repeatable sequence, and a testable finish state."
         },
         {
-          "question": "Are workspace agents going to replace workflow builders?",
-          "answer": "No. They solve different problems. The high-volume integration work that Zapier and Make do — connecting tools that should talk to each other and running the same pipe thousands of times — is genuinely not where agents are strong, and probably won't be soon. The categories are diverging, not converging: workflow builders own repetition, while workspace agents own novel, judgment-heavy work."
+          "question": "When should I choose a workspace agent?",
+          "answer": "Test one when variable evidence requires supervised interpretation, comparison, or drafting."
         },
         {
-          "question": "Can I use a workflow builder and a workspace agent together?",
-          "answer": "Yes, and most people who do serious work with AI eventually do. Use workflow tools for the recurring pipes — trigger-based processes that need determinism and an audit trail. Use an agent for the daily judgment work that changes shape every time. For solo operators, the honest answer is usually one of each."
+          "question": "Can workspace agents and workflow builders work together?",
+          "answer": "Yes. A workflow can validate and record, an agent can handle one bounded judgment step, and a person can approve consequences."
         },
         {
-          "question": "Are workspace agent tools production-ready?",
-          "answer": "Mixed. Some categories — coding agents, research agents — have matured quickly and are genuinely useful today. General workspace agents are still uneven: context retention across sessions varies a lot between products, judgment calls can be inconsistent, and the gap between demo and daily use is real. Plan for some friction in early use, and test the specific product against your actual work."
+          "question": "Which option is more predictable?",
+          "answer": "Workflow builders are generally more predictable, although integrations, credentials, and data can still fail."
         },
         {
-          "question": "How does the cost compare between the two?",
-          "answer": "Workflow builder pricing is task-based or operation-based and predictable at scale — you know what a run costs. Agent pricing varies widely and tends to be tied to AI usage, which makes the cost of a \"session\" harder to forecast. The article's advice: model the cost against your actual volume rather than comparing sticker prices."
+          "question": "Which option is cheaper?",
+          "answer": "Compare cost per accepted outcome, including retries, review, and exception handling, rather than subscriptions alone."
+        },
+        {
+          "question": "Which actions should remain human-controlled?",
+          "answer": "Keep high-consequence, hard-to-reverse actions under explicit human approval."
+        },
+        {
+          "question": "What if I cannot specify the path or the expected result?",
+          "answer": "The process is not ready to automate; clarify ownership, evidence, and completion before choosing a tool."
         }
       ]
     },
@@ -5107,36 +5147,36 @@
     "/zh/blog/ai-agent-vs-chatbot": {
       "items": [
         {
-          "question": "Chatbot 和 AI Agent 的根本区别是什么？",
-          "answer": "Chatbot 主要管理对话轮次并返回回答；Agent 则让模型控制足够多的工具执行循环，围绕目标观察结果、调整步骤，最后停止或升级给人。真正边界是 Workflow 控制权，而不是有没有聊天框或一次 Tool Call。"
+          "question": "AI Agent 与 Chatbot 最核心的区别是什么？",
+          "answer": "Chatbot 主要返回对话答案；Agent 控制了足够多的工具执行循环来追求结果。"
         },
         {
-          "question": "ChatGPT 算是 AI Agent 吗？",
-          "answer": "同一产品可以提供 Chatbot、Assistant、Workflow 和 Agent 式模式。应判断具体任务中，模型是否在权限与退出条件内动态控制多步工具执行。一次搜索或代码调用，不代表所有 ChatGPT 交互都是 Agent Run。"
+          "question": "带工具的 Chatbot 都是 Agent 吗？",
+          "answer": "不是，单次工具调用仍可能完全由应用代码控制，而不是由模型选择执行路径。"
         },
         {
-          "question": "我该怎么判断用聊天机器人还是 Agent？",
-          "answer": "回答、解释、分类或草稿就是交付物时用 Chatbot；步骤已知时用确定性 Workflow；只有目标清楚但实际步骤会变化，且模型指挥工具能带来可衡量提升时，才测试 Agent。"
+          "question": "Agent 与 Workflow 有什么区别？",
+          "answer": "Workflow 走预定步骤；Agent 会根据观察和目标选择下一步。"
         },
         {
-          "question": "聊天机器人能升级成 Agent 吗？",
-          "answer": "聊天界面可以成为 Agent 前端，但只加工具不够。系统还需要 Run State、带退出条件的循环、错误处理、权限执行、Evaluation，以及遇到阻塞或高后果动作时的人工接管。"
+          "question": "什么时候应该使用 Chatbot？",
+          "answer": "工作以回答、澄清、草稿等供人使用的响应结束时，应使用 Chatbot。"
         },
         {
-          "question": "Agent 跑起来更贵吗？",
-          "answer": "通常更贵，因为一次 Run 可能包含多次模型与工具调用、重试、State Storage、监控和人工复核，但不存在通用倍数。应在同一批案例上比较 Chatbot、Workflow 与 Agent 的每个合格结果成本。"
+          "question": "什么时候应该使用 AI Agent？",
+          "answer": "路径会变化、工具迭代有可衡量价值，且动作可约束、可观察、可恢复时。"
         },
         {
-          "question": "Agent 一定比聊天机器人更好吗？",
-          "answer": "不一定。Agent 增加延迟、费用、运维复杂度和错误外部动作的可能。任务止于回答或遵循稳定规则时，Chatbot 或 Workflow 通常更容易测试、保护和运营。"
+          "question": "Agent 总是比 Chatbot 更强吗？",
+          "answer": "不是，自治增加灵活性，也会增加成本、延迟和失败面。"
         },
         {
-          "question": "AI Agent 必须有长期记忆吗？",
-          "answer": "不需要。Agent 需要足够的 Run State 来记录步骤、工具结果、预算和审批；Durable Memory 是可选项，并会带来隐私、删除、过期和污染风险。权威业务事实通常应留在源系统，需要时检索。"
+          "question": "Agent 应获得哪些权限？",
+          "answer": "从只读开始，读写分离，高后果动作要求审批，并只随证据逐步扩权。"
         },
         {
-          "question": "怎样安全测试 AI Agent？",
-          "answer": "准备 20–30 个代表案例，在隔离环境中先给只读工具，设置轮数与成本上限，注入工具故障和 Prompt Injection，验证权限边界，并让重要动作必须人工批准；再与更简单的基线比较合格结果和复核时间。"
+          "question": "如何测试产品是否真的具备 Agent 能力？",
+          "answer": "给它一项需要观察、选择工具、恢复和停止条件的受限任务，再检查完整轨迹。"
         }
       ]
     },
@@ -5287,36 +5327,36 @@
     "/zh/blog/ai-automation-agency-pricing": {
       "items": [
         {
-          "question": "AI 自动化机构到底要花多少钱？",
-          "answer": "不存在可信的统一价格。应把每份报价拆成需求梳理、构建、集成、测试与安全、部署与交接、平台和模型用量、支持及预计变更。系统数量、权限、数据质量、异常、用量和所有权条款，比匿名市场均价更能解释成本。"
+          "question": "AI 自动化机构一般多少钱？",
+          "answer": "没有可靠的通用均价，价格取决于范围、集成、风险、用量与支持。"
         },
         {
-          "question": "机构常用的计费模式有哪几种？",
-          "answer": "常见结构包括固定项目价、按工时、里程碑付款和月费或托管服务，有些还增加按运行或结果计费。计费形式应匹配不确定性，并写清计费事件、失败重试、所含变更、服务等级、超额费率、支出上限和退出条款。"
+          "question": "向自动化机构实际购买了什么？",
+          "answer": "调研、流程设计、数据处理、实现、测试、部署、培训、监控和支持可能分别计价。"
         },
         {
-          "question": "AI 自动化机构报价应该包含哪些内容？",
-          "answer": "要求分别列出需求、构建、集成、数据工作、评估、安全、基础设施、第三方用量、部署、文档、培训、支持和变更费率。报价还要写明假设、排除项、验收条件、账号和凭证由谁控制、交接时拿到什么，以及终止合作如何处理。"
+          "question": "如何比较 AI 自动化报价？",
+          "answer": "让各家针对同一流程、验收标准、假设、交付物和所有权条款报价。"
         },
         {
-          "question": "什么因素会让报价变高或变低？",
-          "answer": "主要因素包括流程不确定性、数据准备程度、集成数量与质量、AI 判断还是固定规则、异常路径、写入权限、敏感数据、评估深度、部署环境、用量、支持目标和可迁移要求。要求服务商把每个成本因素对应到具体交付物或可测量假设。"
+          "question": "首年总成本包括什么？",
+          "answer": "包括建设费、软件和模型用量、托管、支持、变更、内部复核和迁移退出。"
         },
         {
-          "question": "怎样比较两家自动化机构的报价？",
-          "answer": "给所有候选方同一份范围清单，再把范围、交付物、假设、用量、验收、支持、所有权和退出统一到一张表。比较低位、预期和峰值场景下的首年总成本与每次成功运行成本。省略监控、故障恢复、文档或交接的低开发费，并不一定更便宜。"
+          "question": "哪些范围因素会抬高价格？",
+          "answer": "定制鉴权、数据不稳定、高后果写入、多系统、复杂异常和严格合规都会增加成本。"
         },
         {
-          "question": "怎样估算自动化上线后的持续成本？",
-          "answer": "用月运行次数乘以单次步骤数、重试系数和平台单位价，再加模型用量、存储、高级 Connector、不同环境、监控、支持和预计变更。使用厂商当前官方价格，分别计算低位、预期和峰值，不要只看套餐首页的起价。"
+          "question": "应该选择固定价还是 Retainer？",
+          "answer": "边界明确的交付适合固定价，持续运营适合 Retainer，但都要写清包含项和上限。"
         },
         {
-          "question": "合同怎样约定所有权并避免供应商锁定？",
-          "answer": "写清工作流、源码、提示词、测试和文档的权利；生产账号和主凭证由客户控制；要求可迁移导出与交接包；标明专有依赖；并定义终止协助、凭证轮换、删除确认和迁移费用。"
+          "question": "合同中哪些条款最重要？",
+          "answer": "核对知识产权、凭据归属、文档、数据处理、SLA、终止、导出和交接。"
         },
         {
-          "question": "什么时候适合聘请 AI 自动化机构？",
-          "answer": "工作流稳定且有价值，集成或控制超过内部能力，并有明确负责人能决策和接手时，适合聘请。需求频繁变化、没有现状基线、无人负责流程，或标准产品已经能解决任务时，先做人工或低代码试点。"
+          "question": "如何降低报价风险？",
+          "answer": "先做付费 Discovery，或选择一条有明确验收标准和恢复测试的窄试点。"
         }
       ]
     },
@@ -5575,36 +5615,36 @@
     "/zh/blog/ai-tools-for-business-automation-2026": {
       "items": [
         {
-          "question": "2026 年最好的 AI 商业自动化工具是什么？",
-          "answer": "没有通用冠军。最合适的工具，是能以最小系统完成一条明确工作流，并在准确性、权限、成本与恢复上达到要求的方案。应让候选处理相同输入和失败案例，而不是依赖连接器数量或笼统榜单。"
+          "question": "最好的 AI 商业自动化工具是什么？",
+          "answer": "它是能以可接受的准确度、权限、成本和恢复能力完成一条明确流程的最小系统。"
         },
         {
-          "question": "怎样选择第一条要自动化的工作流？",
-          "answer": "选择高频、输入稳定、验收结果清楚、验证便宜且动作可逆的工作。写明触发、数据、判断、输出、审批、重试规则和负责人。如果流程每次运行都变化，应先稳定流程，再引入工具。"
+          "question": "应该从哪类自动化工具开始？",
+          "answer": "应按照任务形态，在办公套件功能、工作流构建器、Agent Builder、AI 工作区或定制集成中选择。"
         },
         {
-          "question": "自动化平台的计费单位有哪些差异？",
-          "answer": "厂商可能按 task、Agent activity、operation、workflow execution、credit、Token、容量、用户或它们的组合计量。同一条十步流程，在一个平台可能算十次动作，在另一个算一次 execution，在第三个平台则是 credit 与 Token 的可变组合。必须用真实流程计算。"
+          "question": "不同计费单位的工具如何比较？",
+          "answer": "计算每次验收通过结果的总成本，并计入重试、高级操作、复核与异常处理。"
         },
         {
-          "question": "怎样计算商业自动化的真实成本？",
-          "answer": "按每个验收通过的业务结果计算。包含订阅与席位、用量、模型和 embedding、外部服务、基础设施、人工复核、异常、维护与事故；按预计和峰值用量分别测算，并包含测试、重试、循环和重复事件。"
+          "question": "最先应该自动化哪项业务流程？",
+          "answer": "选择高频、边界明确、可复核，并有清晰负责人、触发条件和完成状态的流程。"
         },
         {
-          "question": "自动化平台应具备哪些安全控制？",
-          "answer": "检查能否分开读写凭证、缩小授权范围、限制具体动作、隔离环境、管理密钥、在有后果的写入前审批，并支持保留、删除与访问审计。连接器目录不是安全策略，必须核对每个连接如何认证和治理。"
+          "question": "如何测试自动化工具的权限？",
+          "answer": "确认读、写、发送和删除权限彼此分开，并测试凭据撤销或过期后的行为。"
         },
         {
-          "question": "商业自动化需要怎样的可观测性？",
-          "answer": "失败运行应能查看工作流与模型版本、输入、检索数据、转换、工具参数和返回、重试、耗时、用量、审批、最终状态与安全重放点。还要测试外部动作完成后发生超时，是否能恢复而不产生重复操作。"
+          "question": "如何测试故障恢复？",
+          "answer": "模拟重复事件、字段缺失、超时、应用断连和部分写入。"
         },
         {
-          "question": "怎样公平测试 AI 自动化工具？",
-          "answer": "选择一条真实流程，让所有候选使用相同的 20～30 个正常与失败案例、账户、权限、尽可能相同的模型和输出合同。先影子运行，再开放可逆的暂存写入，最后才允许有限生产动作，并衡量通过率、修正、恢复、成本、复核与维护。"
+          "question": "商业自动化必须使用 AI Agent 吗？",
+          "answer": "只有任务需要模型动态判断时才需要；稳定的规则流程通常更适合工作流。"
         },
         {
-          "question": "以后能把自动化迁移到其他平台吗？",
-          "answer": "只有逻辑和数据能在原服务之外使用才算可迁移。试用期间就导出流程、提示词、Schema、密钥引用、运行历史与来源数据；检查格式是否有文档并适合版本控制。只有原厂能解释的专有导出只是备份。"
+          "question": "多久应该审计一次自动化？",
+          "answer": "每季度审计一次，并在应用、模型、权限、价格或业务规则重大变化后复查。"
         }
       ]
     },
@@ -5927,36 +5967,36 @@
     "/zh/blog/best-calendar-app-solo-operators": {
       "items": [
         {
-          "question": "到底哪款日历最适合单人创业者？",
-          "answer": "先测试已经承载业务身份的系统：以 Google 为主就从 Google Calendar 开始；日程简单且设备都在 Apple 生态就先用 Apple Calendar；邮件、Teams 和 To Do 都在 Microsoft 就优先 Outlook。只有多账户查看、快速输入、任务或排程被证明是缺口时，再增加 Fantastical 或规划层。"
+          "question": "单人经营者最好的日历应用是什么？",
+          "answer": "它应以最低持续维护成本，在所有必需账号与设备之间保持一份可信日程。"
         },
         {
-          "question": "日历服务商、客户端、规划工具和调度器有什么区别？",
-          "answer": "服务商是事件事实源；客户端显示和编辑一个或多个服务商；规划工具把任务放在事件旁；自动调度器根据规则创建或移动弹性时间块。连接其他层之前，先确定事件和任务分别由哪个系统负责。"
+          "question": "应该选择 Google Calendar、Apple Calendar 还是 Outlook？",
+          "answer": "先从邀请、邮件、会议、账号和协作者已经所在的生态开始。"
         },
         {
-          "question": "切换日历应用前应该怎样测试？",
-          "answer": "使用独立测试日历运行七天，覆盖重复事件、夏令时、外部邀请、私密事件、任务、空闲分享、预约页、离线使用和导出撤权。从多个设备编辑，再核对参与者与共享用户实际看到的内容。"
+          "question": "什么时候应该考虑 Fantastical 或 Morgen？",
+          "answer": "当多账号客户端或规划层能解决基础日历中一个明确缺口时再测试。"
         },
         {
-          "question": "什么时候值得测试自动日历调度器？",
-          "answer": "当弹性任务总被固定会议挤掉，而且你愿意持续维护优先级、截止、时长和工作规则时，可以测试。让每个候选工具处理同一冲突周，记录意外移动、重复、陈旧时间块、撤销行为，以及权限被撤销后的表现。"
+          "question": "日历应用应该测试多久？",
+          "answer": "应覆盖一个有代表性的七天工作周，而不是只看短暂演示。"
         },
         {
-          "question": "不同日历应用如何处理任务？",
-          "answer": "截止日期、安排时间、时长、重复、子任务和完成状态是不同字段，集成未必全部保留。用五个代表性任务测试，并确认每个字段由哪个系统负责；如果两个工具都会写回同一任务源，还要检查是否产生重复。"
+          "question": "日历测试应该包含什么？",
+          "answer": "测试账号、邀请、任务、预约、共享、隐私、自动化、离线、通知和导出。"
         },
         {
-          "question": "日历应用需要检查哪些隐私问题？",
-          "answer": "列出它能访问的所有日历、任务列表、联系人、邮件来源和会议服务；检查处理位置、预约或 AI 功能上传的数据、保留删除、管理员可见性、分析数据和撤权方式。只需冲突检查时优先使用空闲/忙碌，不要开放事件详情。"
+          "question": "自动排程器能替代日历吗？",
+          "answer": "通常不能。它一般是依赖基础日历事件与空闲信息的规划层。"
         },
         {
-          "question": "可以同时使用多个日历服务商而不迁移事件吗？",
-          "answer": "通常可以。多服务商客户端能够显示和编辑 Google、iCloud、Microsoft 或 CalDAV 数据，而原服务继续充当事实源。但每个服务商的 API 支持可能不同，应分别测试重复规则、邀请、任务和权限。"
+          "question": "日历应用能完成排期中的工作吗？",
+          "answer": "日历可以预留时间并通知，但完成工作仍需要人或独立流程。"
         },
         {
-          "question": "怎样避免被日历应用锁定？",
-          "answer": "把权威事件保存在具备可接受导出路径的服务商中，并在正式采用前测试导出、移除集成和撤销 OAuth。记录不能迁移的功能，例如预约链接、自动化规则、任务时长、Calendar Sets、会议模板和活动历史。"
+          "question": "如何避免日历锁定？",
+          "answer": "在迁移真实日程前，先验证标准支持、导出、取消订阅和搬迁方式。"
         }
       ]
     },
@@ -7595,36 +7635,36 @@
     "/zh/blog/how-to-build-an-ai-agent": {
       "items": [
         {
-          "question": "构建 AI Agent 的第一步是什么？",
-          "answer": "先写任务契约，不要先选模型或框架。明确触发方式、必需输入、可接受结果、允许读取和执行的范围、证据、审批、停止条件与非目标。后续工具设计、评估、权限和运维都应从这份契约展开。"
+          "question": "什么是 AI Agent？",
+          "answer": "AI Agent 是由模型控制的循环，会选择工具、观察结果、调整计划，并在完成或碰到控制边界时停止。"
         },
         {
-          "question": "什么时候该用 Agent，而不是工作流？",
-          "answer": "步骤和分支能够提前确定时用工作流；执行路径无法预先写死，而且由模型选择工具能被评估证明提高结果时，再使用 Agent。应先测试单次调用或简单工作流，因为自治能力也会增加延迟、成本和故障面。"
+          "question": "Agent 与 Workflow 有什么区别？",
+          "answer": "Agent 选择下一步，Workflow 则由代码或规则预先规定执行路径。"
         },
         {
-          "question": "怎样为 AI Agent 选择模型？",
-          "answer": "让候选模型运行同一套任务评估，比较工具选择、参数准确性、指令遵循、证据使用、错误恢复、结构化输出、延迟和每个可接受结果的成本。记录实际模型版本，升级或增加路由前重跑回归案例。"
+          "question": "构建 Agent 前应先定义什么？",
+          "answer": "写清任务契约，包括触发、输入、合格结果、禁止动作、限制和负责人。"
         },
         {
-          "question": "什么样的工具才适合开放给 Agent？",
-          "answer": "工具应有单一用途、收窄的数据结构、最小权限凭证、输入校验、可预测错误、明确副作用与幂等方案。高影响操作应先生成可检查的提案并要求知情审批，不能让模型自行判断自己是否有权执行。"
+          "question": "Agent 工具应如何设计？",
+          "answer": "工具权限应窄、参数有类型、尽量幂等，并把读取与高后果写入分开。"
         },
         {
-          "question": "上下文、状态和记忆有什么区别？",
-          "answer": "上下文是模型当前决策能看到的内容；状态是进度、审批、重试和外部 ID 的持久化机器记录；记忆是有意保留、准备影响未来运行的信息。把三者分开，才能可靠地检索、删除、审计和恢复。"
+          "question": "Agent 需要保存什么状态？",
+          "answer": "只保留当前决策必需的任务状态，并把权威数据留在模型记忆之外。"
         },
         {
-          "question": "AI Agent 应该怎样评估？",
-          "answer": "不仅看最终答案，还要检查完整轨迹。评估集应包含正常、边界、对抗和恢复案例，并衡量结果、证据、工具调用、禁止动作、升级行为、延迟、成本，以及恢复时是否产生重复副作用。能写成确定性断言的部分应优先自动检查。"
+          "question": "如何评估 AI Agent？",
+          "answer": "按完整轨迹评分结果、工具正确性、约束遵守、成本与恢复。"
         },
         {
-          "question": "AI Agent 运行时应该记录什么？",
-          "answer": "应串起任务身份、模型和提示词版本、来源版本、模型回复、工具请求、脱敏后的工具结果、状态变化、审批、重试、成本、延迟、最终状态和外部副作用 ID。不要把密钥或无必要的个人信息写入日志。"
+          "question": "Agent 需要哪些可观测性？",
+          "answer": "记录目标、提示、工具参数和结果、审批、状态变化、错误、成本和最终产物。"
         },
         {
-          "question": "AI Agent 失败后应该怎样恢复？",
-          "answer": "从持久检查点恢复；写操作使用幂等键；重试前先与外部系统对账；无法自动判断的任务进入人工队列。还应在每次副作用前后主动中断测试；如果系统无法确认操作是否发生，就不适合无人值守。"
+          "question": "AI Agent 应如何上线？",
+          "answer": "从离线案例逐步进入影子模式、只读任务、可逆写入、人工审批，再逐步扩权。"
         }
       ]
     },
@@ -8007,28 +8047,36 @@
     "/zh/blog/manus-ai-alternatives-2026": {
       "items": [
         {
-          "question": "2026 年最好的 Manus AI 替代品是什么？",
-          "answer": "没有谁全面胜出——要看活。要替单人经营者执行「研究到产出」的一站式 Agent 工作区，Floatboat 最贴合；想要最易上手的通用 Agent，ChatGPT Agent 摩擦最小；做业务流程自动化，Lindy 更合适；研究优先，选 Perplexity 或 Claude。照文中分类选。"
+          "question": "最好的 Manus AI 替代品是什么？",
+          "answer": "没有通用第一名，应选择真正替代当前 Manus 工作负载的产品类别。"
         },
         {
-          "question": "为什么放着 Manus 不用、要找替代品？",
-          "answer": "因为 Manus 再强，也难以天天依赖。成文时它仍只邀请制；过了排队这一关，还有积分制——对需要稳定产出的单人用户，它的成本与访问限制都太脆弱。正是「能力很强、却难进去、又贵」这个缺口，给了更容易用到的替代品生存空间。"
+          "question": "调研适合用什么替代 Manus？",
+          "answer": "用引用准确度和合格简报率比较 Perplexity、ChatGPT Deep Research 等调研助手。"
         },
         {
-          "question": "有没有免费或开源的 Manus 替代品？",
-          "answer": "有。AutoGPT 开源，用自己的 API key 即可免费运行（只付用量费）；n8n 是开源工作流自动化，也能承载 AI 步骤；Perplexity 有确实好用的免费研究档。代价：开源选项需技术配置、提示词不用心则结果不稳；最易上手的托管版 ChatGPT Agent 从每月 $20 起步。"
+          "question": "哪些替代品能处理浏览器任务？",
+          "answer": "ChatGPT Agent、Claude 等托管 Agent 可作为候选，但要核对站点权限和审批。"
         },
         {
-          "question": "非技术用户该选哪个替代品？",
-          "answer": "ChatGPT Agent 或 Lindy。两者都无代码、界面干净。Lindy 专为业务自动化而生——邮件分类、CRM 更新、跟进——模板即开即用；ChatGPT Agent 更通用，适合日常研究与串联任务。想免代码外包重复运营，Lindy 更干净；其余从 ChatGPT Agent 起步。"
+          "question": "重复自动化适合用什么？",
+          "answer": "n8n、Gumloop、Lindy 等工作流或 Agent Builder 更适合有触发器、可重复的流程。"
         },
         {
-          "question": "什么时候 Manus 仍是更好的选择？",
-          "answer": "当你的工作流真的需要并行深度研究时。Manus 能同时部署多个 Agent 爬取来源、综合结论，上面这些工具都难以企及；它还能把高层目标拆成可执行子任务，几乎不用你手把手。如果你有访问权、有预算，且工作是端到端的复杂多步研究与生产，它站得住脚；这份清单是写给无法天天依赖它的人。"
+          "question": "编码任务适合用什么？",
+          "answer": "Codex、Claude Code 等仓库原生编码 Agent 更匹配代码修改、测试和 Review。"
         },
         {
-          "question": "具体该怎么在这些工具里做选择？",
-          "answer": "选之前先问三个问题：你要自主执行还是聪明辅助——是要替你「做事」的 Agent，还是帮你思考的工具？免费或低成本档对你有多重要？你是单人创作者，还是在沉淀可复制的团队流程？单干→ChatGPT Agent 或 Claude；重复性运营→Lindy 或 n8n。按答案选，别按宣传选。"
+          "question": "自托管 n8n 一定更便宜或安全吗？",
+          "answer": "不一定，还要计算补丁、备份、Secrets、监控、可用性和事故响应。"
+        },
+        {
+          "question": "如何比较 Manus 替代品？",
+          "answer": "用相同来源、权限、输出契约、时限和评分跑 10—20 个已完成任务。"
+        },
+        {
+          "question": "什么时候应保留 Manus？",
+          "answer": "当前能力组合匹配任务，且每个合格任务成本足够可预测并优于迁移时，应保留 Manus。"
         }
       ]
     },
@@ -8163,28 +8211,36 @@
     "/zh/blog/openai-4-day-work-week-one-person-company": {
       "items": [
         {
-          "question": "对单人创始人来说，四天工作制现实吗？",
-          "answer": "也许，但大概不是 OpenAI 描述的那种方式。这个提案谈的是政府补贴的雇主试点，那个框架并不直接适用于单人创业者。真正适用的是底层前提：AI 的生产率增益能转化为「同样产出、更少工时」，而这在个体层面可检验。它高度取决于你的工作类型和工作流搭得有多好——研究、写作密集型工作受益最大；面向客户、关系驱动型工作帮助较小。"
+          "question": "OpenAI 提议了什么四天工作制？",
+          "answer": "OpenAI 提议试行带薪 32 小时、产出和服务不下降的限时项目，并不是 OpenAI 员工排班公告。"
         },
         {
-          "question": "OpenAI 的四天工作制提案具体是什么？",
-          "answer": "2026 年 4 月 6 日，OpenAI 发布《智能时代的产业政策》，呼吁政府支持维持现有薪资的 32 小时工作周试点。它把减少工时框定为「效率红利」——让 AI 驱动的生产率提升以时间的形式回到工人手里，而不是只流入企业利润。四天工作制只是更大政策包的一部分，其中还有机器人税、公共财富基金与自动安全网触发机制。"
+          "question": "OpenAI 何时发布这项政策设想？",
+          "answer": "《智能时代的产业政策》官方页面日期为 2026 年 6 月 9 日。"
         },
         {
-          "question": "四天工作制之争和一人公司有什么关系？",
-          "answer": "作为劳动政策，它并不适用于单人经营者——你身边没有雇主可以谈判。它重要在信号层面：更广阔的经济开始正视一个问题，而单人创业者每天都在拿它做实验——当一个人的工作产能显著扩张时会发生什么？AI 接管研究综合、初稿与日程逻辑，留给你的仍是判断层：决定什么重要、评估 AI 产出了什么。"
+          "question": "为什么称为效率红利？",
+          "answer": "该提案希望检验 AI 生产率收益能否转化为时间或福利，而不只成为利润。"
         },
         {
-          "question": "AI 真的能减少工时吗？",
-          "answer": "能减，但有前提。AI 减少的是具体任务上的时间，四天工作制研究也发现，增益来自重新组织工作发生的方式、而不是在更少时间里更拼命。任务时间能否变成总工时减少，取决于你是否自觉地把时间收回来。大多数人会用更多工作填满空出的时间——包括一开始的我。"
+          "question": "AI 是否证明四天工作制可行？",
+          "answer": "没有。文件本身要求通过试点和测量验证，而不是预设结果。"
         },
         {
-          "question": "为什么 AI 反而让单人创业者更累、而不是更轻松？",
-          "answer": "因为 AI 能扩张你的产能，却不能替你划边界。当你是公司里唯一的人，没有组织冗余去吸收过载，于是 AI 腾出的时间常常被更多项目填满——结果更累，而不是更轻松。工具不创造可持续性，系统才创造：要有明确的收工标准，也别把省下的时间当作接更多项目的许可。"
+          "question": "一人公司应衡量什么？",
+          "answer": "衡量交付、响应、质量、收入、恢复工作和真正拿回的时间。"
         },
         {
-          "question": "是什么工具真正促成了这种转变？",
-          "answer": "最有帮助的往往不是最花哨的工具，而是能嵌进现有工作流、又不用推倒重来的那些。在工作流级 AI 上，Floatboat 的 Combo Skills 把读文件、分析内容、生成结构化输出串成可复用工作流，而不是一次性 prompt——建好之后你不需要每次重做搭建。研究与写作工具在降低读、整理、起草之间的切换成本时帮助最大。任何工具都免不掉你的判断层。"
+          "question": "应该先自动化哪些任务？",
+          "answer": "从高频、有规则、可回滚且有清楚验收方式的任务开始。"
+        },
+        {
+          "question": "一人公司应如何试点？",
+          "answer": "先记录四周基线，再拿回半天，只有结果稳定后才保护完整一天。"
+        },
+        {
+          "question": "什么时候应暂缓四天工作实验？",
+          "answer": "需求不稳定、必须实时覆盖、支持积压或核心流程没有基线时应暂缓。"
         }
       ]
     },
@@ -8379,28 +8435,36 @@
     "/zh/blog/stop-context-switching-workspace-agent": {
       "items": [
         {
-          "question": "上下文切换到底要付出多大代价？",
-          "answer": "比多数人以为的大得多。文中引用的《哈佛商业评论》研究跟踪 137 名员工：每天切换应用约 1,200 次，每周约四小时、近全年工作时间 9% 耗在“重新进入状态”上。Gloria Mark 的研究则指出，被打断后需约 23 分 15 秒才能完全聚焦；人们靠加速补偿，代价化为压力与时间紧迫感。"
+          "question": "工作中的上下文切换来自哪里？",
+          "answer": "常见来源包括切换应用、搜索信息、改变工作角色，以及重新想起任务状态。"
         },
         {
-          "question": "为什么单干时上下文切换更致命？",
-          "answer": "因为你就是那根完整的线。在团队里，别人可能接住你丢下的线；单干时没人等你、没人提醒你，心智模型（客户要什么、第三步做什么）只能装在脑子里，而脑子还要管接下来的四件事。没有交接，每次切换都是完整重载，这正是多数职场研究低估它的原因。"
+          "question": "工作区 Agent 能彻底消除上下文切换吗？",
+          "answer": "不能。它可能减少搜索和重述，却无法解决优先级不清、临时打断或会议过多。"
         },
         {
-          "question": "为什么工具和 AI 加得越多，往往越糟？",
-          "answer": "因为每加一个工具就多一份认知开销。APA 研究指向“目标切换 + 规则激活”：大脑每次重新定向，都要付出这两笔成本。聊天 AI 让你自己当集成层——上下文仍靠粘贴搬运；工作流搭建器逼你在弄清工作流前先定义它。一遇摩擦就加工具，往往换来漂亮的工具栈和更少的产出。"
+          "question": "什么是任务恢复包？",
+          "answer": "它记录预期结果、当前状态、证据、约束、下一步和阻塞项。"
         },
         {
-          "question": "工作区 Agent 是什么？怎么减少切换？",
-          "answer": "工作区 Agent 是不待在自己标签页里、而是活在你工作现场的 AI。它带来三个转变：用单一环境取代五个标签页，你不再当搬运工；它看得见你正在编辑的文件、正在阅读的页面，省掉“粘贴——上下文在此衰减”这一步；它还能把“把调研文档变成初稿”这类整套模式存成可复用流程，不用每次都重新解释。"
+          "question": "哪个指标能说明恢复效率提高？",
+          "answer": "测量重新打开被中断任务到恢复有效工作所需的时间。"
         },
         {
-          "question": "工作区 Agent 修不了什么？",
-          "answer": "修不了“不知道该做什么”的困惑——优先级没理顺，你只会从在标签页间切换，变成在工作区内切换。它也替代不了深度专注块：长写作、硬思考、学新东西仍需 90 分钟不被打断的时间，它只能刮掉轻松部分的摩擦。调研、起草、审阅它今天能胜任，但包办一切还早。"
+          "question": "如何测试工作区 Agent 是否减少上下文切换？",
+          "answer": "用同一份恢复包，对比 Agent 辅助与普通项目笔记连续一周的表现。"
         },
         {
-          "question": "怎么判断上下文切换是不是我最大的问题？",
-          "answer": "花一天记录：每次在任务、工具或标签页之间切换都写下来，再问自己——多少是工具逼的，多少是我放任的。若清单下午过半就把你吓到，就值得动手解决。然后做免费实验：挑一件横跨至少三个工具的重复任务，把上下文收进一个地方，把步骤存成清单。试两周，就能判断工作区 Agent 值不值得认真研究。"
+          "question": "任务恢复流程需要哪些权限？",
+          "answer": "只授予所选工作流最低必需的资料来源和操作权限。"
+        },
+        {
+          "question": "哪些内容默认不应集中管理？",
+          "answer": "敏感记录、账号恢复凭据、财务审批和不可逆操作应留在默认范围之外。"
+        },
+        {
+          "question": "我需要 Agent，还是只需要更好的文档？",
+          "answer": "只有 Agent 能稳定优于维护良好的笔记或清单时，才值得采用。"
         }
       ]
     },
@@ -9175,28 +9239,36 @@
     "/zh/blog/workspace-agents-for-solo-operators": {
       "items": [
         {
-          "question": "为什么光靠聊天工具，对一人公司不够？",
-          "answer": "因为每次新开聊天，上下文就重置。你花一下午教会它你的写法与客户是谁，产出变准，一关页面第二天全归零。更大的上下文窗口只是推迟痛苦，不消除根源；一人公司没有团队或共享文档替你背着这些——对标准、风格与过往决策的持久记忆缺失，重建成本全落在你一个人头上。"
+          "question": "什么是工作区 Agent？",
+          "answer": "它是在工作环境内使用边界明确的文件与工具协助执行，同时仍由人承担最终责任的 Agent。"
         },
         {
-          "question": "工作区 Agent 会取代聊天工具吗？",
-          "answer": "不会。我每天仍用聊天工具，两者是互补的：聊天用于出声思考、快速起草；工作区 Agent 用于需要上下文与连续性的执行——跨你的文件、进行中的项目与多步任务。别问二选一，要问每个工具各自管好哪一层。"
+          "question": "工作区 Agent 与聊天助手有什么区别？",
+          "answer": "聊天以对话为中心；工作区 Agent 使用工作上下文，并可能通过连接工具执行受控操作。"
         },
         {
-          "question": "工作区 Agent 和笔记应用或工作流搭建器有什么不同？",
-          "answer": "笔记应用存信息，工作区 Agent 作用于信息——起草、总结、执行、跨文件取用——界线正越来越模糊。与工作流搭建器的区别更清楚：搭建器是「钉子的锤子」，适合边界清晰、重复发生的任务；而单人经营者的日常大多是混杂、重判断的一次性活，装不进节点。Agent 补的正是这块中间地带。"
+          "question": "工作区 Agent 与工作流构建器有什么区别？",
+          "answer": "工作流遵循预定义路径，Agent 则可能在输入与证据变化时选择步骤。"
         },
         {
-          "question": "工作区 Agent 能替我决策、甚至替我运营业务吗？",
-          "answer": "不能——任何向你兜售「AI 替你运营业务」的人，卖的都是还不存在的东西。判断谁是你的客户、该收多少钱、何时说不、在客户对话里在场——这些真正难的层都不可外包。工作区 Agent 让你已经做出的决定执行得更快；它能放大清晰的业务，但不能无中生有。把判断层交出去，是我见到最多的失败模式。"
+          "question": "什么适合作为工作区 Agent 的第一个场景？",
+          "answer": "从高频、可复核、可撤销的研究、起草、比较或项目状态整理开始。"
         },
         {
-          "question": "这些工具成熟到可以押注了吗？",
-          "answer": "参差不齐。品类是真的——上下文跨工作携带、可复用执行、在你已有的文件与工具里干活——但单个产品差异很大。我会把 2026 年当作单人经营者的实验年，而非标准化之年。值得挑一条真实工作流试试，但别假设任何单个工具就是最终答案。"
+          "question": "哪些任务不适合作为第一个场景？",
+          "answer": "不要从付款、报税、账号恢复、无人监督的客户消息或删除开始。"
         },
         {
-          "question": "使用它需要技术背景吗？",
-          "answer": "不需要会写代码，但你要能把自己的工作讲清楚——产品、语气、客户。这些工具的天花板，通常是用户描述「自己到底想要什么」的能力，而不是模型的能力。挑一条你已能讲明白的工作流起步，并预期第一个月会感觉慢。"
+          "question": "应该检查哪些权限？",
+          "answer": "检查读、写、发送和删除能否拆分，并按应用、账号或文件夹限制。"
+        },
+        {
+          "question": "单人经营者应该如何测试工作区 Agent？",
+          "answer": "运行一个只含单条流程的 14 天试点，并与模板或清单对照。"
+        },
+        {
+          "question": "什么能证明工作区 Agent 有价值？",
+          "answer": "它应降低总投入，同时不削弱证据质量、复核、权限控制或失败恢复。"
         }
       ]
     },
@@ -9239,28 +9311,36 @@
     "/zh/blog/workspace-agents-vs-workflow-builders": {
       "items": [
         {
-          "question": "工作区 Agent 和工作流搭建器的本质区别是什么？",
-          "answer": "核心区别在于 AI 坐在你工作的哪一侧、由谁选路径。工作流搭建器是你事先设计好的管线：触发器一响，节点按同一套顺序与逻辑跑同一件事，智能只嵌在某一两步里。工作区 Agent 则待在一个 AI 感知的环境里——文件、标签页、草稿都在手边——在工作发生的过程中动态决定步骤。一个跑你画好的路径，另一个边做边选路。"
+          "question": "工作区 Agent 与工作流构建器的核心差别是什么？",
+          "answer": "工作流构建器运行预定义路径，工作区 Agent 则根据可用上下文选择部分路径。"
         },
         {
-          "question": "怎么判断某个任务该用哪一种？",
-          "answer": "用文中的经验法则：如果一件事每个月以同样方式发生超过 20 次——发票处理、线索路由、工单分流、定时报表——就在工作流工具里建。如果它只发生一两次、而且每次形态都变——比如一份对比草案、一次不寻常的客户请求——那是 Agent 的地盘。两者兼具（单人经营者常如此）就各留一个，这没问题。"
+          "question": "什么时候应该选择工作流构建器？",
+          "answer": "触发条件稳定、字段结构化、顺序可重复且完成状态可测试时选择它。"
         },
         {
-          "question": "工作区 Agent 会取代工作流搭建器吗？",
-          "answer": "不会。它们解决的是不同的问题。Zapier、Make 做的高量集成活——把本应互通却不互通的应用连起来、同一条管道跑成千上万次——恰恰不是 Agent 的强项，短期内大概也不会是。两个品类正在分化而非趋同：工作流搭建器拥有\"重复\"，工作区 Agent 拥有\"新颖、判断密集型的工作\"。"
+          "question": "什么时候应该选择工作区 Agent？",
+          "answer": "当变化证据需要有人监督的解释、比较或起草时，可以测试工作区 Agent。"
         },
         {
-          "question": "工作流搭建器和工作区 Agent 能一起用吗？",
-          "answer": "能，而且多数认真用 AI 干活的人最终都会两者都用。重复管道交给工作流工具——那些需要确定性、需要审计轨迹的触发器流程；每天变化形状的判断工作交给 Agent。对单人经营者来说，诚实的答案通常就是各来一个。"
+          "question": "工作区 Agent 与工作流构建器能一起使用吗？",
+          "answer": "可以。工作流负责验证和记录，Agent 处理一个边界明确的判断步骤，再由人批准重要后果。"
         },
         {
-          "question": "工作区 Agent 工具成熟到能生产用了吗？",
-          "answer": "参差不齐。有些品类——编码 Agent、调研 Agent——成熟得很快，今天已经真能用；通用工作区 Agent 仍不稳定：跨会话保留上下文的能力各产品差异很大，判断类工作会不稳定，\"演示与日常\"之间的差距依然真实。早期使用请预期一些摩擦，并用你自己的真实工作去试具体产品。"
+          "question": "哪一种方案更可预测？",
+          "answer": "工作流构建器通常更可预测，但集成、凭据和数据仍可能失败。"
         },
         {
-          "question": "两者的成本怎么比？",
-          "answer": "工作流搭建器按任务或按操作计费，规模化后可预测——一次运行花多少你心里有数。Agent 定价差异很大，通常跟 AI 用量挂钩，\"一次会话\"的成本更难预估。文中建议：别只看标价，按你的实际用量把成本建个模再比。"
+          "question": "哪一种方案更便宜？",
+          "answer": "应比较包含重试、复核和异常处理的每次验收结果成本，而不只是订阅费。"
+        },
+        {
+          "question": "哪些操作应该由人控制？",
+          "answer": "后果重大且难以撤销的操作，应保留明确人工审批。"
+        },
+        {
+          "question": "如果无法说明路径或预期结果怎么办？",
+          "answer": "说明流程尚未准备好自动化，应先明确负责人、证据和完成标准。"
         }
       ]
     },
