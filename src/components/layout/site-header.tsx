@@ -124,6 +124,13 @@ const NAV_MENUS: NavMenuGroup[] = [
         path: "/blog",
       },
       {
+        en: "Docs",
+        zh: "文档",
+        descEn: "Step-by-step guides to using Floatboat",
+        descZh: "从安装到上手，一步一步的使用指南",
+        path: "/docs",
+      },
+      {
         en: "News",
         zh: "新闻",
         descEn: "The latest from Floatboat",
