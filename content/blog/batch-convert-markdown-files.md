@@ -10,11 +10,13 @@ locale: "en"
 draft: false
 ---
 
+**Information checked October 13, 2026.** Converter behavior, export formats, and operating-system limits change; verify the linked tool documentation and test on copies.
+
 ## TL;DR
 
 - **Batch converting Markdown means turning a folder of `.md` files into PDF, Word, or HTML in one pass — and the right route depends on volume, frequency, and whether the conversions need to understand what each file says.** Three routes cover the space: shell loops with Pandoc, GUI batch converters, and AI-powered desktop processing.
 - The recurring real-world trigger is an export from another system: Notion or Obsidian vaults, CMS archives, or AI chat logs — dozens or hundreds of `.md` files that need to become documents people can open.
-- Scripting is the free and precise route: a shell loop or Python script around Pandoc converts hundreds of files in seconds, as long as every file needs the same treatment.
+- Scripting is the reproducible route: a shell loop or Python script around Pandoc can apply the same conversion to a folder, but throughput depends on file size, assets, output format, and the PDF engine.
 - The route that emerged in 2026 adds AI to the batch: not just converting syntax but summarizing, renaming, or restructuring each file based on its content — which is where a desktop agent replaces scripts.
 - Start by checking what your files actually need: if the answer is "identical conversion, one format," script it; if it is "treat each file according to what it is," that is the [folder-sized problem](#6-when-folder-scale-work-needs-an-agent) desktop tools exist for.
 
@@ -54,7 +56,7 @@ One practice applies to every route: convert a copied folder first, spot-check t
 
 ## 6. When Folder-Scale Work Needs an Agent
 
-The scope lines are worth drawing once, clearly. A single file with a quick edit: browser tools, free, instant. A folder of identical conversions: scripts, free, deterministic. A folder where each file needs to be understood — summarized, titled, triaged, restructured — that is agentic work, and it belongs in a desktop environment where the agent can read files locally and act across the whole set.
+The scope lines are worth drawing once. A single file with a quick edit can use a browser or editor tool. A folder of identical conversions is a scriptable job. A folder where each file needs to be summarized, titled, triaged, or restructured requires judgment; an agent may help, but its file access, data path, and review controls must be verified rather than inferred from “desktop” branding.
 
 That progression — one file free on the web, folders on the desktop, judgment by AI — is the same product ladder showing up at the batch scale. The files were always plain text; what changes with scale is how much judgment the conversion requires.
 
@@ -99,14 +101,14 @@ The symptom is text that converts beautifully while every image is a blank box, 
 
 ## 10. The Verification Pass
 
-A run is not finished when the progress bar empties; it is finished when the output has been checked against the input. Four checks take minutes on a few hundred files and catch essentially everything in the gallery above. Converting a copy and verifying it should be one motion, not two.
+A run is not finished when the progress bar empties; it is finished when the output has been checked against the input. The time required depends on batch size and document complexity, and the checks below are a baseline rather than a guarantee of catching every defect.
 
 1. **Counts align.** Source `.md` files, including subfolders, equal outputs — compared directly against the manifest.
 2. **First and last lines read.** Sampled files open with the expected heading and end where their sources end, exposing truncation counts cannot see.
 3. **Image references resolve.** Counting `![` occurrences and confirming each target exists on disk is one script, and it catches orphaned assets instantly.
-4. **Five random files, read in full.** Five random outputs are opened beside their sources and actually read.
+4. **A risk-based sample, read in full.** Include simple files plus the longest document, the widest table, non-Latin text, nested lists, code, and image-heavy pages.
 
-The last check is the one people skip, and it is the only one that catches semantic damage: reordered sections, a table that became paragraphs, a code block that absorbed the paragraph after it. Counts validate the envelope; only reading validates the content. For a recurring pipeline, script all four; for a one-off, do them by hand — fifteen minutes of reading is the cheapest insurance in the workflow.
+Counts validate the envelope; reading representative outputs is needed to detect semantic damage such as reordered sections, collapsed tables, or broken code fences. Recurring pipelines should automate structural checks and retain a human sample review; one-off migrations should size the review to the impact of a missed defect.
 
 ## 11. Source Check: Notion and Obsidian Exports
 

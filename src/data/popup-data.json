@@ -802,22 +802,22 @@
     },
     "html-is-the-new-markdown": {
       "en": {
-        "title": "HTML is the new Markdown?",
-        "body": "The agent-output debate settles by job: artifacts for humans, formats for agents."
+        "title": "What “HTML is the new Markdown” actually claims",
+        "body": "Read the sourced argument as a case for some human-facing artifacts—not proof that HTML replaced Markdown."
       },
       "zh": {
-        "title": "HTML 是新的 Markdown？",
-        "body": "这场争论按活儿分就清楚了：给人看的产物，给 Agent 用的格式。"
+        "title": "“HTML 是新的 Markdown”真正主张什么",
+        "body": "把它读作部分面向人成果的格式提案，而不是 HTML 已取代 Markdown 的证据。"
       }
     },
     "html-vs-markdown-ai-output": {
       "en": {
-        "title": "HTML or Markdown for AI output",
-        "body": "Pick by audience — either way, delivery can run on a schedule."
+        "title": "Choose AI output format by lifecycle",
+        "body": "Compare audience, editing, visual structure, validation, security, and reuse; a hybrid Markdown-to-HTML path often fits."
       },
       "zh": {
-        "title": "AI 输出选 HTML 还是 Markdown",
-        "body": "按受众二选一，至于按点交付，两种都能排进日程。"
+        "title": "按生命周期选择 AI 输出格式",
+        "body": "比较受众、编辑、视觉结构、校验、安全与复用；Markdown 到 HTML 的混合路线常常更合适。"
       }
     },
     "introducing-floatim": {
@@ -1312,12 +1312,12 @@
     },
     "batch-convert-markdown-files": {
       "en": {
-        "title": "Batch convert Markdown files — when one file becomes a folder",
-        "body": "Thirty files or three thousand: the route that fits changes with scale. Scripts, converters, and agents compared."
+        "title": "Plan a verifiable Markdown batch",
+        "body": "Choose scripts, GUI tools, or reviewed agents by treatment—not file count—and verify metadata, links, encodings, and outputs."
       },
       "zh": {
-        "title": "一个文件夹的 Markdown 怎么批量转",
-        "body": "三十篇、三百篇、三千篇，路线完全不同——先选对路线再动手。"
+        "title": "规划可验证的 Markdown 批处理",
+        "body": "按处理是否同质选择脚本、GUI 或受审 Agent，并核对元数据、链接、编码与输出。"
       }
     },
     "best-ai-file-organizer": {
@@ -1342,12 +1342,12 @@
     },
     "best-markdown-editors": {
       "en": {
-        "title": "The best Markdown editors in 2026, ranked by workflow",
-        "body": "Six editors across four workflows — pick by the job your files do, not the feature list."
+        "title": "Choose by workflow, then verify price",
+        "body": "Match the editor to linked notes, prose, code, or research, and check the vendor’s current price before buying."
       },
       "zh": {
-        "title": "2026 年最好用的 Markdown 编辑器",
-        "body": "六个编辑器按工作流排名——选编辑器是在选你文件的工作方式。"
+        "title": "先按工作流选择，再核验价格",
+        "body": "按互联笔记、写作、代码或研究需求选工具，购买前查看厂商当前价格。"
       }
     },
     "best-voice-dictation-for-ai-agents": {
@@ -1382,12 +1382,12 @@
     },
     "convert-html-to-markdown": {
       "en": {
-        "title": "Convert HTML back to clean Markdown",
-        "body": "Web pages and AI chats carry clean text under the markup — a reliable way to strip it out."
+        "title": "Convert HTML without hiding the losses",
+        "body": "Remove boilerplate, choose a target dialect, preserve source evidence, and review tables, links, images, and privacy."
       },
       "zh": {
-        "title": "把 HTML 转回干净的 Markdown",
-        "body": "网页与 AI 聊天记录里都有干净的文本——一条可靠的剥离路径。"
+        "title": "转换 HTML，也记录损失",
+        "body": "先去页面样板、选目标方言、保留来源，再检查表格、链接、图片和隐私。"
       }
     },
     "do-ai-file-organizers-upload-your-files": {
@@ -1412,12 +1412,12 @@
     },
     "how-to-convert-markdown-to-pdf": {
       "en": {
-        "title": "Markdown to PDF, three ways ranked by friction",
-        "body": "Browser, Pandoc, or built-in export — pick the route that matches how often you convert."
+        "title": "Verify the PDF, not just the preview",
+        "body": "Choose a renderer, Pandoc engine, or editor export by frequency and control, then inspect fonts, links, tables, code, and pages."
       },
       "zh": {
-        "title": "Markdown 转 PDF 的三条路",
-        "body": "浏览器、Pandoc、编辑器导出——按你的转换频率选路线。"
+        "title": "别只看预览，要验最终 PDF",
+        "body": "按频率和控制需求选择渲染器、Pandoc 引擎或编辑器导出，并检查字体、链接、表格、代码和分页。"
       }
     },
     "kimi-k3-open-frontier-model": {
@@ -1462,12 +1462,12 @@
     },
     "markdown-for-note-taking": {
       "en": {
-        "title": "A Markdown note-taking workflow that outlives any app",
-        "body": "Files, naming, headings, links — the habits that keep a note library readable for decades."
+        "title": "Start with the smallest note system",
+        "body": "Use one folder, one naming rule, one attachments location, and a short index before adding plugins or AI."
       },
       "zh": {
-        "title": "比任何应用都长寿的 Markdown 笔记流",
-        "body": "文件、命名、标题、互链——让笔记库十年后依然可读的四个习惯。"
+        "title": "从最小笔记结构开始",
+        "body": "先用一个目录、一套命名规则、一个附件位置和一份索引，再考虑插件或 AI。"
       }
     },
     "markdown-math-latex": {
@@ -1512,12 +1512,12 @@
     },
     "markdown-viewer-online": {
       "en": {
-        "title": "Read any .md file online — no install",
-        "body": "A browser viewer for READMEs, agent output, and attachments — with the privacy line drawn clearly."
+        "title": "Test with a non-sensitive file first",
+        "body": "Check rendering, the current privacy statement, and browser network requests before opening private Markdown."
       },
       "zh": {
-        "title": "在线查看任何 .md 文件",
-        "body": "README、agent 产物、邮件附件——浏览器里直接读，隐私边界画清楚。"
+        "title": "先用非敏感文件测试",
+        "body": "打开私密 Markdown 前，检查渲染、当前隐私说明和浏览器网络请求。"
       }
     },
     "mermaid-diagrams-in-markdown": {
