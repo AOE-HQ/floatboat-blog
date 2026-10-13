@@ -1,4 +1,5 @@
 import type { PersonaPageData } from "@/lib/use-cases/persona-page-schema";
+import { titleCase } from "@/lib/title-case";
 
 const burdenOrder: Record<PersonaPageData["slug"], number[]> = {
   lawyers: [0, 1, 2],
@@ -19,7 +20,7 @@ export function PersonaWorkScenes({ page, roleLabel }: { page: PersonaPageData; 
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.2em]">{isZh ? "常见任务与代表场景" : "Common tasks and representative workflows"}</p>
-        <h2 className="mt-3 font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{isZh ? `${roleLabel}可以交给 Agent 的工作` : `What ${roleLabel} can delegate`}</h2>
+        <h2 className="mt-3 font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(isZh ? `${roleLabel}可以交给 Agent 的工作` : `What ${roleLabel} can delegate`)}</h2>
         <p className="mt-5 text-lg leading-7 text-[var(--ob-color-text-subtle)]">{page.burdens.description}</p>
       </div>
 
@@ -35,7 +36,7 @@ export function PersonaWorkScenes({ page, roleLabel }: { page: PersonaPageData; 
         return <article key={workflow.number} className="grid gap-7 border-t border-black/[0.1] py-12 first:border-t-0 first:pt-4 lg:grid-cols-[0.62fr_1.38fr] lg:gap-16">
           <div>
             <p className="text-xs font-semibold tracking-[0.18em] text-[var(--ob-color-muted)]">0{index + 1}</p>
-            <h3 className="mt-3 max-w-md font-serif text-3xl leading-tight tracking-tight sm:text-4xl">{workflow.title}</h3>
+            <h3 className="mt-3 max-w-md font-serif text-3xl leading-tight tracking-tight sm:text-4xl">{titleCase(workflow.title)}</h3>
           </div>
           <div>
             <div className="grid gap-7 md:grid-cols-2">
