@@ -6,6 +6,7 @@ import type { PersonaPageData } from "@/lib/use-cases/persona-page-schema";
 export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData; roleLabel: string }) {
   const isZh = page.locale === "zh";
   const items = capabilities[page.slug][page.locale];
+  const lowerFirst = (value: string) => value.charAt(0).toLowerCase() + value.slice(1);
 
   return <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -18,9 +19,8 @@ export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData
       <div className="space-y-16 sm:space-y-24">{items.map(([title, href, description], index) => <article key={title} className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
         <div className={index % 2 ? "lg:order-2" : ""}>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-muted)]">0{index + 1}</p>
-          <h3 className="mt-3 font-serif text-3xl sm:text-4xl"><Link href={href} className="underline decoration-black/15 underline-offset-8 transition hover:decoration-black">{title}</Link></h3>
-          <p className="mt-5 max-w-xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{description}</p>
-          <Link href={href} className="mt-6 inline-flex text-sm font-semibold hover:underline">{isZh ? `了解${title} →` : `Explore ${title} →`}</Link>
+          <h3 className="mt-3 font-serif text-3xl sm:text-4xl">{title}</h3>
+          <p className="mt-5 max-w-xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{isZh ? <>使用 <Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{title}</Link>，{description}</> : <>Use <Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{title}</Link> to {lowerFirst(description)}</>}</p>
         </div>
         <div className={`${index % 2 ? "lg:order-1" : ""} rounded-[28px] border border-black/[0.08] bg-[var(--ob-color-surface)] p-5 shadow-[var(--ob-shadow-raised)]`}>
           <div className="rounded-2xl bg-[#24221f] p-5 text-white">

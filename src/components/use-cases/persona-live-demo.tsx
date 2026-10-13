@@ -75,7 +75,7 @@ export function PersonaLiveDemo({ page }: { page: PersonaPageData }) {
           <p className="flex-1 text-sm text-[var(--ob-color-muted)]">{isZh ? "继续追问，添加文件，或让 Agent 修改交付物……" : "Ask a follow-up, add files, or ask the agent to revise the deliverable…"}</p>
           <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-[#1b1a18] text-base text-white">↑</span>
         </Link>
-        <div className="mx-auto mt-2 flex max-w-4xl items-center justify-between gap-4 text-[10px] text-[var(--ob-color-muted)]"><span>{isZh ? "流式界面预览 · 不会处理真实数据" : "Streaming interface preview · No real data is processed"}</span><Link href={downloadHref} className="font-semibold text-[#1b1a18] hover:underline">{isZh ? "在 Floatboat 中运行 →" : "Run in Floatboat →"}</Link></div>
+        <p className="mx-auto mt-2 max-w-4xl text-[10px] text-[var(--ob-color-muted)]">{isZh ? "流式界面预览 · 点击输入框可下载 Floatboat，不会处理真实数据" : "Streaming interface preview · Click the composer to download Floatboat. No real data is processed."}</p>
       </div>
     </div>
   </section>;
