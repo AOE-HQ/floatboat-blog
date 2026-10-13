@@ -25,25 +25,23 @@ export function FeaturedImage({
 }) {
   const resolved = resolveDisplayImageUrl(src) ?? src;
   const isExternal = resolved.startsWith("http");
-  const imgRef = useRef<HTMLImageElement>(null);
   const holdTimer = useRef<number>(0);
-  const [loaded, setLoaded] = useState(false);
+  const [loadedSrc, setLoadedSrc] = useState<string | null>(null);
+  const loaded = loadedSrc === resolved;
   const markLoaded = useCallback(() => {
     window.clearTimeout(holdTimer.current);
     // next dev only. Production builds inline NODE_ENV=production so this
     // delay is stripped. Lets you watch shimmer for a few seconds locally.
     if (process.env.NODE_ENV === "development") {
-      holdTimer.current = window.setTimeout(() => setLoaded(true), 4000);
+      holdTimer.current = window.setTimeout(() => setLoadedSrc(resolved), 4000);
       return;
     }
-    setLoaded(true);
-  }, []);
+    setLoadedSrc(resolved);
+  }, [resolved]);
 
   useEffect(() => {
-    setLoaded(false);
-    if (imgRef.current?.complete) markLoaded();
     return () => window.clearTimeout(holdTimer.current);
-  }, [resolved, markLoaded]);
+  }, [resolved]);
 
   const imgClassName =
     layout === "hero"
@@ -72,7 +70,6 @@ export function FeaturedImage({
       {isExternal ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          ref={imgRef}
           src={resolved}
           alt={alt}
           className={fadeClassName}
@@ -82,7 +79,6 @@ export function FeaturedImage({
         />
       ) : (
         <Image
-          ref={imgRef}
           src={resolved}
           alt={alt}
           width={1200}

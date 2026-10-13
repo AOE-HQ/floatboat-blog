@@ -120,6 +120,20 @@ Cowork 与 Claude Code 是人直接操作的 harness；Managed Agents 是承载�
 
 托管运行时不会消除提示注入、受污染来源与过度授权。审批和事故响应仍由构建这项业务能力的团队负责。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![什么是 Claude Managed Agents？ 原文视觉资料 1](/blog/images/what-are-claude-managed-agents/1775730586728-6d11b474-4b85-486d-9184-c0ffd522defc.webp)
+
+![什么是 Claude Managed Agents？ 原文视觉资料 2](/blog/images/what-are-claude-managed-agents/1775730604254-8c285a71-a0b0-43dd-ae4f-6b1c6421cb39.webp)
+
+![什么是 Claude Managed Agents？ 原文视觉资料 3](/blog/images/what-are-claude-managed-agents/1775730635313-a66b0135-a330-4f9e-a480-9c056117994e.webp)
+
+![什么是 Claude Managed Agents？ 原文视觉资料 4](/blog/images/what-are-claude-managed-agents/1775730648441-f3377238-255d-470a-9835-f3845068f333.webp)
+
+![什么是 Claude Managed Agents？ 原文视觉资料 5](/blog/images/what-are-claude-managed-agents/1775730661291-ec410158-091c-45c8-9693-7b75e34ea6a7.webp)
+
 ## 最后的选型结论
 
 Claude Managed Agents 可以缩短从 Agent 原型到可运营服务的路径，因为持久会话、harness 执行、sandbox 与追踪不必全部自建。但真正决定服务是否可信的工作仍然存在：收窄任务、设计权限、建立评估集、设置人工门禁与验证恢复。

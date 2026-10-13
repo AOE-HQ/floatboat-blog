@@ -147,6 +147,18 @@ Start with a separate browser profile and a non-production account. Then:
 
 The broader [browser AI agent capability guide](/blog/browser-ai-agent-what-it-can-do) helps define the task boundary. Security evaluation begins where that capability crosses into an authenticated account.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![5 Questions to Ask Before You Give a Browser AI Your Logins original visual reference 1](/blog/images/browser-ai-agent-security-questions/1778563993372-2af75f73-de6c-459d-a71c-43583411ab4a.webp)
+
+![5 Questions to Ask Before You Give a Browser AI Your Logins original visual reference 2](/blog/images/browser-ai-agent-security-questions/1778564003144-a025e36c-d094-471d-b791-a5e822c9825f.webp)
+
+![5 Questions to Ask Before You Give a Browser AI Your Logins original visual reference 3](/blog/images/browser-ai-agent-security-questions/1778564013711-13667a54-e368-4c2a-ae1d-4a903ac5ef1d.webp)
+
+![5 Questions to Ask Before You Give a Browser AI Your Logins original visual reference 4](/blog/images/browser-ai-agent-security-questions/1778564023236-7c40a0a4-2a2b-4615-939d-f43c8a2be20d.webp)
+
 ## The Decision Is About Blast Radius
 
 Browser agents are useful because they can work through interfaces that were designed for people. The same access lets untrusted content meet authenticated sessions. Safe adoption therefore does not depend on one perfect model defense. It depends on limiting sites, data, credentials, and actions; placing fresh approval before consequential steps; and preserving enough evidence to stop and recover.

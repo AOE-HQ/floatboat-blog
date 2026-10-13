@@ -143,6 +143,12 @@ Use real but approved examples. Do not start by uploading the most sensitive doc
 
 Do not use “time saved” alone. An assistant that drafts quickly but requires extensive verification may move work rather than remove it.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![AI Assistant for Personal Use at Work original visual reference 1](/blog/images/browser-ai-agent-security-questions/1778563993372-2af75f73-de6c-459d-a71c-43583411ab4a.webp)
+
 ## Personal Convenience Does Not Override Work Accountability
 
 An AI assistant can be valuable for drafting, research, organization, and reflection. The safe choice is not necessarily the product with the longest feature list. It is the arrangement that fits employer policy, uses the right account, limits data and permissions, preserves human review, and leaves accepted work in the correct system of record.

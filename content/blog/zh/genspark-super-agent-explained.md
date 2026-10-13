@@ -51,6 +51,16 @@ Genspark 将 Super Agent 定位为能研究并创建产物的 Agent 工作区，
 
 任何可选模块都应视为动态能力，在进入评估前直接核验权限、平台支持与套餐访问。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![Genspark Super Agent 详解 — 多模型协作的一体化 AI 工作区 原文视觉资料 1](/blog/images/genspark-super-agent-explained/1779673408611-b6f822e4-0fb4-4ce6-a781-21ab85b8d6db.webp)
+
+![Genspark Super Agent 详解 — 多模型协作的一体化 AI 工作区 原文视觉资料 2](/blog/images/genspark-super-agent-explained/1779673420780-a791d4a8-9eb5-4eb2-a35e-4cd92c3e7d6b.webp)
+
+![Genspark Super Agent 详解 — 多模型协作的一体化 AI 工作区 原文视觉资料 3](/blog/images/genspark-super-agent-explained/1779673431655-693b179e-e7d1-4c95-af7e-f78b5a6c178b.webp)
+
 ## 什么时候可能适合
 
 当工作反复以研究型产物收尾，并且单一工作区能减少交接时，Genspark 值得列入候选。任务主要是短对话、确定性转换，或无法容忍广泛来源检索时，它的适配度较低。

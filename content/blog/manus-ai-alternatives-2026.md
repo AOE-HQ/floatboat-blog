@@ -94,6 +94,14 @@ Do not switch merely because another product has a lower headline price or one a
 
 Migration has a cost: rebuilding instructions, connections, review habits, evaluation cases, and failure recovery. Include that cost in the comparison.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Best Manus AI Alternatives in 2026 original visual reference 1](/blog/images/manus-ai-alternatives-2026/1773994971361-3dc36474-a43d-402e-8db2-98f7b94a8d7e.webp)
+
+![Best Manus AI Alternatives in 2026 original visual reference 2](/blog/images/manus-ai-alternatives-2026/1773994990431-3ff2ee3f-931a-4383-af80-cac4d760957a.webp)
+
 ## Bottom line
 
 There is no single best Manus alternative. Choose the category that matches the work: research assistant for sourced answers, hosted agent for open-ended computer tasks, workflow builder for repeatable operations, coding agent for repositories, or workspace agent for changing projects.

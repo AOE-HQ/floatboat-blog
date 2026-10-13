@@ -57,6 +57,16 @@ The broader claim that AI productivity should shorten the working week is a sepa
 
 For high-consequence work, keep approval with a person and separate read, draft, send, purchase, and delete permissions. If the work is stable and trigger-driven, a workflow builder may be more appropriate than a set of roles; the [workspace-agent and workflow-builder comparison](/blog/workspace-agents-vs-workflow-builders) explains that boundary.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![How One-Person Businesses Work Like a Team With AI original visual reference 1](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916303269-246035ad-155a-4770-8059-197a965d27b5.webp)
+
+![How One-Person Businesses Work Like a Team With AI original visual reference 2](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916326187-76598ab9-f2cf-4186-82df-d42f21ee03f6.webp)
+
+![How One-Person Businesses Work Like a Team With AI original visual reference 3](/blog/images/how-one-person-businesses-work-like-a-team-with-ai/1773916338947-9eb991fe-cd5a-4b08-9035-ee1f830c6505.webp)
+
 ## Start with one handoff
 
 Choose one recurring deliverable that currently requires repeated explanation. Write role contracts for two stages, save the handoff artifact, and compare rework, missed evidence, and review time with the old process. Expand only when the boundary remains clear. Team-like work comes from visible responsibilities and review—not from assigning impressive titles to a model.

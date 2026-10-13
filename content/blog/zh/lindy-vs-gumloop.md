@@ -46,6 +46,18 @@ Lindy 官方材料把 Agent 放在邮件、会议与跟进等业务任务周围�
 
 两者都可能因错误数据、过宽凭据、模糊指令、模型错误或外部系统变化而失败。最小权限、日志、验收测试和负责人仍不可少。当前价格与积分应在试点中实测，不应复制进长期文章。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![Lindy vs Gumloop：哪个 AI Agent 工具适合你？ 原文视觉资料 1](/blog/images/lindy-vs-gumloop/1773918570051-c76b80d3-eb1b-4abb-94c9-cc46fb13ad68.webp)
+
+![Lindy vs Gumloop：哪个 AI Agent 工具适合你？ 原文视觉资料 2](/blog/images/lindy-vs-gumloop/1773918578776-1f6cf3a5-1ccc-4fff-9479-1bf93c23607c.webp)
+
+![Lindy vs Gumloop：哪个 AI Agent 工具适合你？ 原文视觉资料 3](/blog/images/lindy-vs-gumloop/1773918614594-9dddfba6-5f67-4fbe-93d0-57c9633dab36.webp)
+
+![Lindy vs Gumloop：哪个 AI Agent 工具适合你？ 原文视觉资料 4](/blog/images/lindy-vs-gumloop/1773918631558-16a3526e-926d-4207-9b58-21b4c51849e5.webp)
+
 ## 决策规则
 
 选择在同一验收下，设置、权限、纠错、恢复与持续维护总负担更小的工具。如果两者都不通过，先简化流程，再增加自动化。

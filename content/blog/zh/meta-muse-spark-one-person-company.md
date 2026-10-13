@@ -82,6 +82,18 @@ Llama 让 Meta 以开放权重模型闻名，但 Muse Spark 最初是托管产�
 - 工具调用部分成功时如何恢复；
 - 哪些任务仍要留在现有模型。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![Meta Muse Spark 适合一人公司吗：模型切换指南 原文视觉资料 1](/blog/images/meta-muse-spark-one-person-company/1777599405250-c43737fd-78b5-4c59-953b-504703a01a0f.webp)
+
+![Meta Muse Spark 适合一人公司吗：模型切换指南 原文视觉资料 2](/blog/images/meta-muse-spark-one-person-company/1777599417375-60d50ce0-b5fb-42ee-baf9-75bf6e9d5fa9.webp)
+
+![Meta Muse Spark 适合一人公司吗：模型切换指南 原文视觉资料 3](/blog/images/meta-muse-spark-one-person-company/1777599434797-610547ea-0fa7-49c9-b15f-2f7108c480fe.webp)
+
+![Meta Muse Spark 适合一人公司吗：模型切换指南 原文视觉资料 4](/blog/images/meta-muse-spark-one-person-company/1777599445535-e3ff5e0b-eacc-442a-95fb-bd9f2f3f9720.webp)
+
 ## 结论
 
 Muse Spark 在 2026 年从消费端与私有预览，发展到公开开发入口和后续 Agent 版本，已经值得严肃评估。但这不等于应当整套迁移。

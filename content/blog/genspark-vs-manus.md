@@ -52,6 +52,16 @@ Measure completion, source accuracy, intervention count, cleanup time, and credi
 
 Credit systems make headline subscription prices incomplete. Estimate the monthly number of research runs, artifact generations, retries, and premium-tool calls, then test a representative week. Do not reuse historical prices from comparison articles. For Genspark, the separate guide to [Genspark pricing and credits](/blog/genspark-ai-pricing) explains the questions to ask; Manus buyers should apply the same method to its current plan page.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Genspark vs Manus: Which Agent Finishes Real Work original visual reference 1](/blog/images/genspark-vs-manus/1774490447280-9b914f3a-6d09-481b-8010-1da20c57960e.webp)
+
+![Genspark vs Manus: Which Agent Finishes Real Work original visual reference 2](/blog/images/genspark-vs-manus/1774490470107-d441d25b-5db9-4e40-942d-73baef56a8b4.webp)
+
+![Genspark vs Manus: Which Agent Finishes Real Work original visual reference 3](/blog/images/genspark-vs-manus/1774490483985-beeef324-09b1-42b5-b9c9-9db4cf561ae4.webp)
+
 ## Which one should you choose?
 
 Genspark is the stronger candidate when source gathering and presentation-ready outputs dominate your work. Manus is the stronger candidate when the central requirement is delegating a longer chain that crosses tools. Choose neither if your work involves sensitive accounts without adequate permission controls, if citations are not inspectable, or if the cost of retries is hard to forecast. The broader list of [Manus alternatives](/blog/manus-ai-alternatives-2026) is useful only after you define this test.

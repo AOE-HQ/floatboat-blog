@@ -58,6 +58,14 @@ Avoid starting with payments, tax filings, account recovery, unsupervised custom
 
 Use a workflow builder when the trigger, sequence, and expected output are stable. Use a workspace agent when inputs vary and judgment is needed inside a supervised task. The detailed [workspace-agent versus workflow-builder comparison](/blog/workspace-agents-vs-workflow-builders) covers hybrid designs and decision criteria.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Workspace Agents for Solo Operators: When They Fit original visual reference 1](/blog/images/workspace-agents-for-solo-operators/1777428186112-2d4d23d5-4206-474e-8316-d55b7b5e4726.webp)
+
+![Workspace Agents for Solo Operators: When They Fit original visual reference 2](/blog/images/workspace-agents-for-solo-operators/1777428202705-5c36983c-9e91-4a06-8312-69ae8ca7113b.webp)
+
 ## A 14-day pilot
 
 Choose one workflow and define acceptance before enabling connections. Run it manually once, then with the agent on representative cases. Track accepted outputs, corrections, evidence quality, recovery time, and permission surprises. Keep a control group: the same job with a template or checklist.

@@ -75,6 +75,16 @@ A four-day experiment is a poor fit when the business lacks a delivery baseline,
 
 It is also a poor fit when “AI productivity” means delegating unreviewed external actions. Faster execution can amplify mistakes as easily as useful work.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![OpenAI 4-Day Work Week: What It Means for One-Person Companies original visual reference 1](/blog/images/openai-4-day-work-week-one-person-company/1776318609188-793b51ae-ec86-442b-9d92-ed646d17a1ec.webp)
+
+![OpenAI 4-Day Work Week: What It Means for One-Person Companies original visual reference 2](/blog/images/openai-4-day-work-week-one-person-company/1776318618663-89d3436c-4532-4f5b-8570-fb8748c29821.webp)
+
+![OpenAI 4-Day Work Week: What It Means for One-Person Companies original visual reference 3](/blog/images/openai-4-day-work-week-one-person-company/1776318627488-fbaa7f4b-123f-43d8-bb6d-169c2ca66d65.webp)
+
 ## Bottom line
 
 OpenAI’s four-day-week idea is best read as a measurement proposal: test whether productivity gains can become time without reducing pay, output, or service. A one-person business can borrow that experimental logic, but not assume the result.

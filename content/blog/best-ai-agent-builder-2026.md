@@ -192,6 +192,18 @@ There is no defensible “best AI agent builder in 2026” without a workflow, r
 
 That answer may be a no-code platform, a visual AI environment, a developer framework, or no agent at all. A reproducible selection is more useful than a universal ranking—and much easier to defend after the demo.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Best AI Agent Builder in 2026 original visual reference 1](/blog/images/best-ai-agent-builder-2026/1779086218018-24593c16-18be-4dc3-a236-f6dd644f3d0d.webp)
+
+![Best AI Agent Builder in 2026 original visual reference 2](/blog/images/best-ai-agent-builder-2026/1779086227748-1bc8284e-63f7-4d0e-879c-09277e31765d.webp)
+
+![Best AI Agent Builder in 2026 original visual reference 3](/blog/images/best-ai-agent-builder-2026/1779086236433-63107e26-53c2-4306-9172-bec42b38126d.webp)
+
+![Best AI Agent Builder in 2026 original visual reference 4](/blog/images/best-ai-agent-builder-2026/1779086246298-e3d061fb-8629-442d-b26b-3c5a9e30f4a5.webp)
+
 ## Official references used for the framework
 
 - [Zapier: how Agents usage is measured](https://help.zapier.com/hc/en-us/articles/26559132765325-How-is-Zapier-Agents-usage-measured)

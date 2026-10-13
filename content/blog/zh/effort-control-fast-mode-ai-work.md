@@ -77,6 +77,22 @@ Fast Mode 是服务速度选择，不是降低质量的快捷键。Anthropic 的
 
 **把流程绑死在单一厂商功能上。** 分流规则应写成“低风险抽取”“高风险综合”“延迟敏感交互”，这样模型更新后仍能迁移。[一人公司 AI 工作流指南](/zh/blog/ai-workflow-for-solo-founders)进一步说明了如何搭建这些可复用阶段。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![Effort Control 与 Fast Mode：AI 工作该多想还是该求快 原文视觉资料 1](/blog/images/effort-control-fast-mode-ai-work/1780055413120-b997b912-360f-4319-8c30-31e16cf4fbf9.webp)
+
+![Effort Control 与 Fast Mode：AI 工作该多想还是该求快 原文视觉资料 2](/blog/images/effort-control-fast-mode-ai-work/1780055422073-16ac34d2-7af1-4378-88a2-6ee1d6dec2ba.webp)
+
+![Effort Control 与 Fast Mode：AI 工作该多想还是该求快 原文视觉资料 3](/blog/images/effort-control-fast-mode-ai-work/1780055430346-e2418515-0a46-4262-b974-3fb73e5923bc.webp)
+
+![Effort Control 与 Fast Mode：AI 工作该多想还是该求快 原文视觉资料 4](/blog/images/effort-control-fast-mode-ai-work/1780055437890-38cfe51f-ff3e-4f45-b474-3ce6843f26ca.webp)
+
+![Effort Control 与 Fast Mode：AI 工作该多想还是该求快 原文视觉资料 5](/blog/images/effort-control-fast-mode-ai-work/1780055446998-c9e1e674-652c-406e-b61f-5317d20a7c32.webp)
+
+![Effort Control 与 Fast Mode：AI 工作该多想还是该求快 原文视觉资料 6](/blog/images/effort-control-fast-mode-ai-work/1780055455950-32fe7317-9c09-4511-aac5-1cfbded53bd5.webp)
+
 ## 可执行的默认值
 
 日常、可回滚任务先用 Medium Effort 与 Standard 速度。若验收稳定，再降低 Effort；若出现明确记录的推理失败，再升级。只有等待会卡住人或后续动作时，才打开 Fast Mode，并用实际节省的时间重新核算溢价。

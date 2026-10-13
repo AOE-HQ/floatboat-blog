@@ -52,6 +52,14 @@ gstack 围绕软件仓库与 Claude Code 设计。浏览器 QA、代码审查和
 
 多个阶段共享上下文，也不等于上下文就可信。指令可能过期，文档可能冲突，外部内容也可能带有提示注入。评估[重复工作 Agent](/zh/blog/how-to-build-ai-agents-for-repeated-work)时，应把权限、失败恢复和证据当作核心设计。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![单人创始人的角色化 AI 工作流：gstack 方法真正说对的地方 原文视觉资料 1](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459030112-6a760160-8f09-465c-9722-d413ac5aad73.webp)
+
+![单人创始人的角色化 AI 工作流：gstack 方法真正说对的地方 原文视觉资料 2](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459050612-f57596fb-c98c-4340-8674-2eefff60f69e.webp)
+
 ## 实际结论
 
 值得借鉴的是 gstack 对发现、规划、执行、审查和发布的分离，而不是它的产出数字。先选择一个重复流程，定义阶段契约，再测量返工和漏出错误。如果流程边界本身还不足以让人审核，增加更多 AI 角色也解决不了问题。

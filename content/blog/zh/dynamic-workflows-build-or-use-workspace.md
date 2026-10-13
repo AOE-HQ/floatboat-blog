@@ -57,6 +57,20 @@ Anthropic 的 [Dynamic Workflows 发布说明](https://claude.com/blog/introduci
 | 谁维护失败与升级？ | 你的团队 | 厂商加你的配置 |
 | 能否验收成功？ | 必须 | 同样必须 |
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![动态工作流：自己构建 Agent，还是直接用工作区？ 原文视觉资料 1](/blog/images/dynamic-workflows-build-or-use-workspace/1780055108452-0336b9fb-4040-4b5e-8fbb-03f3cf3494e0.webp)
+
+![动态工作流：自己构建 Agent，还是直接用工作区？ 原文视觉资料 2](/blog/images/dynamic-workflows-build-or-use-workspace/1780055117692-97ffd373-6502-4340-935c-b6b2070a5e37.webp)
+
+![动态工作流：自己构建 Agent，还是直接用工作区？ 原文视觉资料 3](/blog/images/dynamic-workflows-build-or-use-workspace/1780055132392-1aeffdcd-dfc9-48e7-b3fb-6326ea7cfe77.webp)
+
+![动态工作流：自己构建 Agent，还是直接用工作区？ 原文视觉资料 4](/blog/images/dynamic-workflows-build-or-use-workspace/1780055142758-e721949b-16cb-4ce3-905e-59cd8cfb330b.webp)
+
+![动态工作流：自己构建 Agent，还是直接用工作区？ 原文视觉资料 5](/blog/images/dynamic-workflows-build-or-use-workspace/1780055161760-a57eef1a-e11f-4135-86a0-827584556bd1.webp)
+
 ## 做一次可撤销试点
 
 选择一个任务，记录单 Agent 基线，定义验收表，并限制工具、时间和费用。测试失败路径，而不只跑理想流程。如果定制编排带来的质量或吞吐提升足以覆盖运维成本，就保留；如果价值主要来自共享上下文、产物与复核，就使用工作区，避免多拥有一层基础设施。

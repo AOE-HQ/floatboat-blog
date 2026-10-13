@@ -58,6 +58,16 @@ Ask whether the next step can be written as a stable rule. If yes, start with a 
 
 Run representative cases including duplicates, missing fields, conflicting sources, revoked credentials, timeouts, and partial writes. Measure accepted outcomes, intervention rate, recovery time, and total cost. The broader [workflow builder versus AI workspace guide](/blog/workflow-builder-vs-ai-workspace) addresses where work should live; this page addresses how the path is chosen.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Workspace Agents vs Workflow Builders: A Clear Comparison original visual reference 1](/blog/images/workspace-agents-for-solo-operators/1777428202705-5c36983c-9e91-4a06-8312-69ae8ca7113b.webp)
+
+![Workspace Agents vs Workflow Builders: A Clear Comparison original visual reference 2](/blog/images/ai-workspace-agents/1776938916972-34287d3b-e1da-4167-b3aa-bd7bb9e225ed.webp)
+
+![Workspace Agents vs Workflow Builders: A Clear Comparison original visual reference 3](/blog/images/workspace-agents-vs-workflow-builders/1777341489448-c8adee60-91c1-4eef-bf0d-39c26644a653.webp)
+
 ## Bottom line
 
 Workflow builders are not obsolete, and workspace agents are not universal replacements. Use rules for stable transport and repetition; use bounded agents for variable interpretation; keep approval where consequences are difficult to reverse.

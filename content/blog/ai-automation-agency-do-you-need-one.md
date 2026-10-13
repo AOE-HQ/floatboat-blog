@@ -188,6 +188,16 @@ If the first two answers are no, wait and map the process. If the third is yes, 
 
 Whatever path you choose, someone inside the business must own the workflow. The method in [building AI agents for repeated work](/blog/how-to-build-ai-agents-for-repeated-work) is useful because it starts from repeatability, exceptions, and verification rather than from a vendor category.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![AI Automation Agency: Do You Need One? original visual reference 1](/blog/images/ai-automation-agency-do-you-need-one/1778750096336-63e131c9-44a3-4be6-99e3-8263ca8f1e7f.webp)
+
+![AI Automation Agency: Do You Need One? original visual reference 2](/blog/images/ai-automation-agency-do-you-need-one/1778750118194-ea06217b-c1e6-41d4-bd7d-9a231bc7cd42.webp)
+
+![AI Automation Agency: Do You Need One? original visual reference 3](/blog/images/ai-automation-agency-do-you-need-one/1778750146141-a6995a3a-6e87-4831-bbb8-b93a7b6cbb56.webp)
+
 ## The bottom line
 
 An AI automation agency is a delivery model, not a shortcut around operational responsibility. Hire one when you have a stable, consequential workflow; need concentrated expertise; can support a proper pilot; and have an internal owner ready to accept the system.

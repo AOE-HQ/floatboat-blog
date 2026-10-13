@@ -50,6 +50,16 @@ For a pilot, track accepted panels per generation, edit count, lettering time, r
 
 Do not prompt for a living artist’s signature style or assume output is automatically safe to sell. Verify platform terms, client contracts, font licenses, reference-image rights, local disclosure rules, and the publisher’s AI policy. Keep the script, prompts, source references, selected outputs, edits, and final lettering as a provenance package.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![GPT Image 2 for Manga and Comic Creators: A Solo Workflow original visual reference 1](/blog/images/gpt-image-2-manga-comic-workflow/1777087059972-1d87068a-ebe3-49a8-859d-c99ca611898e.webp)
+
+![GPT Image 2 for Manga and Comic Creators: A Solo Workflow original visual reference 2](/blog/images/gpt-image-2-manga-comic-workflow/1777087069884-ced3ff6c-9b82-4846-bab7-fac77d517f59.webp)
+
+![GPT Image 2 for Manga and Comic Creators: A Solo Workflow original visual reference 3](/blog/images/gpt-image-2-manga-comic-workflow/1777087089441-d5498d93-a404-49d7-9839-cd0dc4614114.webp)
+
 ## A practical acceptance gate
 
 Run a six-panel scene before committing to a chapter: two characters, one recurring prop, one location change, dialogue in the intended language, and one close-up. Publish only if the sequence passes continuity and lettering checks after human correction. If it fails, improve the references or change tools; adding prompt adjectives rarely fixes a weak production system. The [preparation checklist for a future GPT-6 workflow](/blog/openai-gpt-6-one-person-company) makes the same durable point: preserve reusable assets rather than betting on a model name.

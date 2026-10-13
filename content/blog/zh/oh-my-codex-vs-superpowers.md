@@ -48,6 +48,16 @@ oh-my-codex 与 Superpowers 解决的是不同层。**oh-my-codex（OMX）**围�
 
 两者都可能增加自动指令、hooks、文件或命令。团队采用前应审查安装脚本与权限、固定版本、决定哪些状态文件进入 Git、写清禁用与卸载方式，并避免两个系统同时定义规划和完成规则。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![oh-my-codex vs Superpowers：Codex 编排还是技能纪律？ 原文视觉资料 1](/blog/images/oh-my-codex-vs-superpowers/1777514586481-c191387f-010e-435c-b647-9dbe7af2f105.webp)
+
+![oh-my-codex vs Superpowers：Codex 编排还是技能纪律？ 原文视觉资料 2](/blog/images/oh-my-codex-vs-superpowers/1777514599104-30d620af-e89c-478a-b7aa-ca5ddfeb6c93.webp)
+
+![oh-my-codex vs Superpowers：Codex 编排还是技能纪律？ 原文视觉资料 3](/blog/images/oh-my-codex-vs-superpowers/1777514616142-df91b981-531f-4abc-89bc-585e073bbd4b.webp)
+
 ## 选择规则
 
 先用更窄的干预。Codex 运行混乱，就在受支持平台和单个仓库试点 OMX；跨工具的工程纪律不稳定，就用一个重复功能试点 Superpowers。只有独立试点证明互补，而且团队能说明谁负责规划、委派、测试与最终验证时，才组合使用。非开发者还应先看 [Claude Code 的任务边界](/zh/blog/claude-code-non-developers-solo-operators)，再决定是否需要额外编排层。

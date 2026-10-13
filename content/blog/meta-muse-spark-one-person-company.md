@@ -88,6 +88,18 @@ Before adopting the model, confirm:
 - what happens when a tool call partially succeeds;
 - which tasks remain on the incumbent model.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Meta Muse Spark for a One-Person Business: A Switching Guide original visual reference 1](/blog/images/meta-muse-spark-one-person-company/1777599405250-c43737fd-78b5-4c59-953b-504703a01a0f.webp)
+
+![Meta Muse Spark for a One-Person Business: A Switching Guide original visual reference 2](/blog/images/meta-muse-spark-one-person-company/1777599417375-60d50ce0-b5fb-42ee-baf9-75bf6e9d5fa9.webp)
+
+![Meta Muse Spark for a One-Person Business: A Switching Guide original visual reference 3](/blog/images/meta-muse-spark-one-person-company/1777599434797-610547ea-0fa7-49c9-b15f-2f7108c480fe.webp)
+
+![Meta Muse Spark for a One-Person Business: A Switching Guide original visual reference 4](/blog/images/meta-muse-spark-one-person-company/1777599445535-e3ff5e0b-eacc-442a-95fb-bd9f2f3f9720.webp)
+
 ## Bottom line
 
 Muse Spark’s 2026 progression—from consumer access and private preview to a public developer path and later agentic releases—makes it a credible candidate to evaluate. It does not make a full migration self-evident.

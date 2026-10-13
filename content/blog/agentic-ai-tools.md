@@ -146,6 +146,16 @@ Do not begin with “roll out an AI agent.” Begin with one workflow and a base
 
 At the end, choose among expand, redesign, keep as assisted work, or stop. A pilot that proves the task should remain human-led is still useful.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Agentic AI Tools for Real Work original visual reference 1](/blog/images/agentic-ai-tools/1778662287405-e62d17a0-6b9d-4dc1-bc34-6f98c3cafb4e.webp)
+
+![Agentic AI Tools for Real Work original visual reference 2](/blog/images/agentic-ai-tools/1778662297757-f2bc30e1-15b7-414d-9ffd-4f35f6d89069.webp)
+
+![Agentic AI Tools for Real Work original visual reference 3](/blog/images/agentic-ai-tools/1778662308943-6b841e78-e1f0-4419-b17a-b092e3214ed6.webp)
+
 ## The Shortlist Is a Control Decision
 
 There is no universal best agentic AI tool. Assistants optimize interactive judgment. Workflow platforms optimize repeatability. Builders add flexible routing. Coding agents exploit technical feedback. Workspaces coordinate long-running work across artifacts and services.

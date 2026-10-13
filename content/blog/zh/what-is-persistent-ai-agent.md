@@ -173,6 +173,16 @@ Claude 当前的官方帮助文档也说明了历史对话搜索与记忆，并�
 
 边界清楚时，持久化能够减少反复交代，并支持真正的长期任务。边界不清时，它只是让错误活得更久。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![什么是持久化 AI Agent——以及它为什么重要？ 原文视觉资料 1](/blog/images/what-is-persistent-ai-agent/1775615354386-f593b84b-697f-44ce-8fdc-1744691e0b75.webp)
+
+![什么是持久化 AI Agent——以及它为什么重要？ 原文视觉资料 2](/blog/images/what-is-persistent-ai-agent/1775615366121-a2fc8f22-3621-42ab-b5db-25c0df9a70b5.webp)
+
+![什么是持久化 AI Agent——以及它为什么重要？ 原文视觉资料 3](/blog/images/what-is-persistent-ai-agent/1775615386862-1f8e3dfa-b868-4d1c-9452-d11bb8c79341.webp)
+
 ## 官方参考资料
 
 - [OpenAI：ChatGPT 中的 Memory](https://help.openai.com/en/articles/8590148-memory-in-chatgpt)

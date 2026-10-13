@@ -188,6 +188,16 @@ Statement of Work 要写明交付物、不包含的工作、前置依赖、里�
 
 无论走哪条路，业务内部都必须有人负责。可以参考[如何为重复工作构建 AI Agent](/zh/blog/how-to-build-ai-agents-for-repeated-work)的判断方法，从重复性、异常和验证方式出发，而不是先选一种供应商类别。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![AI 自动化公司：你真的需要吗？ 原文视觉资料 1](/blog/images/ai-automation-agency-do-you-need-one/1778750096336-63e131c9-44a3-4be6-99e3-8263ca8f1e7f.webp)
+
+![AI 自动化公司：你真的需要吗？ 原文视觉资料 2](/blog/images/ai-automation-agency-do-you-need-one/1778750118194-ea06217b-c1e6-41d4-bd7d-9a231bc7cd42.webp)
+
+![AI 自动化公司：你真的需要吗？ 原文视觉资料 3](/blog/images/ai-automation-agency-do-you-need-one/1778750146141-a6995a3a-6e87-4831-bbb8-b93a7b6cbb56.webp)
+
 ## 最后的判断
 
 AI 自动化公司是一种交付模式，不是替企业承担运营责任的捷径。流程稳定且出错会产生实际后果、项目需要多种专业能力、公司愿意做严格试点，并且已经有人准备接手时，机构才可能是合适选择。

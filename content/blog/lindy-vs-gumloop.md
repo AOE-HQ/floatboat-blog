@@ -46,6 +46,18 @@ Consider Gumloop when a repeated data or document process benefits from visible 
 
 Both can fail through bad source data, broad credentials, ambiguous instructions, model error, or an unhandled external-system change. Neither removes the need for least privilege, logs, acceptance tests, and an owner. Current pricing and credits should be measured in the pilot, not copied into a timeless article.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Lindy vs Gumloop: Which AI Agent Tool Fits You? original visual reference 1](/blog/images/lindy-vs-gumloop/1773918570051-c76b80d3-eb1b-4abb-94c9-cc46fb13ad68.webp)
+
+![Lindy vs Gumloop: Which AI Agent Tool Fits You? original visual reference 2](/blog/images/lindy-vs-gumloop/1773918578776-1f6cf3a5-1ccc-4fff-9479-1bf93c23607c.webp)
+
+![Lindy vs Gumloop: Which AI Agent Tool Fits You? original visual reference 3](/blog/images/lindy-vs-gumloop/1773918614594-9dddfba6-5f67-4fbe-93d0-57c9633dab36.webp)
+
+![Lindy vs Gumloop: Which AI Agent Tool Fits You? original visual reference 4](/blog/images/lindy-vs-gumloop/1773918631558-16a3526e-926d-4207-9b58-21b4c51849e5.webp)
+
 ## Decision rule
 
 Choose the tool that passes the same acceptance test with the smaller total burden across setup, permissions, correction, recovery, and ongoing ownership. If neither passes, simplify the workflow before adding more automation.

@@ -109,6 +109,18 @@ SOC 2 等报告可以作为材料，但不能证明 Agent 能抵抗 Prompt Injec
 
 [浏览器 AI Agent 的能力边界](/zh/blog/browser-ai-agent-what-it-can-do)可以帮你先定义任务。安全评估则从这项能力跨进已登录账户的那一刻开始。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![把账号密码交给浏览器 AI 之前，先问这 5 个问题 原文视觉资料 1](/blog/images/browser-ai-agent-security-questions/1778563993372-2af75f73-de6c-459d-a71c-43583411ab4a.webp)
+
+![把账号密码交给浏览器 AI 之前，先问这 5 个问题 原文视觉资料 2](/blog/images/browser-ai-agent-security-questions/1778564003144-a025e36c-d094-471d-b791-a5e822c9825f.webp)
+
+![把账号密码交给浏览器 AI 之前，先问这 5 个问题 原文视觉资料 3](/blog/images/browser-ai-agent-security-questions/1778564013711-13667a54-e368-4c2a-ae1d-4a903ac5ef1d.webp)
+
+![把账号密码交给浏览器 AI 之前，先问这 5 个问题 原文视觉资料 4](/blog/images/browser-ai-agent-security-questions/1778564023236-7c40a0a4-2a2b-4615-939d-f43c8a2be20d.webp)
+
 ## 真正要决定的是爆炸半径
 
 浏览器 Agent 的价值，来自它能操作原本为人设计的界面。同样的访问能力，也让不可信内容与已登录会话相遇。安全采用不能依赖一道完美模型防线，而要限制站点、数据、凭据和动作，在高后果步骤前实时批准，并保留足够证据用于停止和恢复。

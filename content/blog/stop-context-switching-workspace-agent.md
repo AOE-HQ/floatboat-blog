@@ -55,6 +55,14 @@ If the note performs almost as well, you do not need a new agent. If the agent r
 
 Do not grant broad mailbox, drive, or browser access merely to avoid a few clicks. Keep financial approvals, account recovery, sensitive HR or medical material, and irreversible actions outside the default scope. Treat external pages and messages as untrusted inputs because they may contain misleading or malicious instructions.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![How to Stop Context Switching with a Workspace Agent original visual reference 1](/blog/images/stop-context-switching-workspace-agent/1777599761438-8149a6b1-3554-48e1-93fc-89d27caee81c.webp)
+
+![How to Stop Context Switching with a Workspace Agent original visual reference 2](/blog/images/stop-context-switching-workspace-agent/1777599775880-5a663725-1b36-4ac6-80d0-6e9ac06ba9de.webp)
+
 ## The durable fix
 
 The durable improvement is a better handoff between versions of yourself: a visible outcome, evidence, state, and next action. A workspace agent can maintain that handoff, but it should earn access one workflow at a time. Fewer tabs are cosmetic; faster, safer recovery is the real result.

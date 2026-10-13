@@ -54,6 +54,12 @@ Then model the proposed change. If a template saves delivery time but adds sales
 
 Hire when demand is durable, the role contains ongoing accountable work, the process is understood, access cannot be safely fragmented, and the business can carry the full cost during slower months. Hiring is not a failure of automation. It is appropriate when judgment, trust, availability, or ownership is the bottleneck.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![How to Scale a One-Person Business Without Hiring original visual reference 1](/blog/images/scale-one-person-business-without-hiring/1776232793191-329039fc-fd60-4f6b-9c28-3f7e6c3dff2a.webp)
+
 ## A 30-day scaling experiment
 
 Choose one constraint and one lever. Define a baseline and a stop condition. Test on a limited cohort, measure contribution, owner time, quality, cycle time, and exceptions, then keep, revise, or reverse. Scaling without hiring should increase sustainable capacity—not merely move invisible work into evenings or software maintenance.

@@ -44,6 +44,16 @@ For a team, do not pool work informally through one account. Check seats, admini
 
 Credit consumption is only part of total cost. Include prompt maintenance, source verification, review, regeneration, export cleanup, and the risk that a promotional inclusion changes at renewal. Do not repeat third-party claims about typical burn rates: usage depends on task, model, media, and retries.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Genspark Pricing: Plans, Limits, and What You Get original visual reference 1](/blog/images/genspark-ai-pricing/1778148126100-e50affb1-8a4b-4296-a8d2-13cfa38970f0.webp)
+
+![Genspark Pricing: Plans, Limits, and What You Get original visual reference 2](/blog/images/genspark-ai-pricing/1778148140351-a1e48d0b-b162-4453-8e1c-4268273b772f.webp)
+
+![Genspark Pricing: Plans, Limits, and What You Get original visual reference 3](/blog/images/genspark-ai-pricing/1778148157727-9f5fe890-7286-4f95-8bf0-982c7eb62b1b.webp)
+
 ## Decision checklist
 
 1. Verify today’s plan and credit rules on official pages.
