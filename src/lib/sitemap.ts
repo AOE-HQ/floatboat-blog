@@ -20,8 +20,14 @@ export function buildCombinedSitemapXml(): string {
     return extractUrlEntries(buildSitemapXml(posts, helpers));
   }).filter(Boolean);
 
+  const personaPages = [
+    "https://floatboat.ai/use-cases/lawyers",
+    "https://floatboat.ai/zh/use-cases/lawyers",
+  ].map((url) => `<url><loc>${url}</loc></url>`).join("\n");
+
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${bodies.join("\n")}
+${personaPages}
 </urlset>`;
 }

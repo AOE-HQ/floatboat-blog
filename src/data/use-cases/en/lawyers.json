@@ -1,0 +1,130 @@
+{
+  "slug": "lawyers",
+  "locale": "en",
+  "seo": {
+    "title": "AI Workspace for Lawyers and Legal Teams | Floatboat",
+    "description": "Use Floatboat to organize matter files, prepare legal research, compare document versions, build timelines, and create reviewable legal work products under human control.",
+    "keywords": ["AI for lawyers", "legal AI", "AI legal assistant", "AI legal research", "AI contract review", "legal document automation", "legal workflow automation"]
+  },
+  "breadcrumb": "Lawyers and legal teams",
+  "hero": {
+    "eyebrow": "A configurable AI workspace for legal work",
+    "title": "Move the work forward. Keep the legal judgment yours.",
+    "description": "Floatboat works around your matters: organizing files, tracing facts, comparing versions, preparing research, and turning source material into reviewable drafts. You provide the playbook, templates, and approval points.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=hero" },
+    "secondaryCta": { "label": "Explore sample workflows", "href": "#workflows" },
+    "proof": ["Works from your approved files", "Outputs stay editable", "Human review before consequential action"],
+    "preview": {
+      "label": "Illustrative workspace",
+      "matter": "Acquisition diligence · Working set",
+      "inputs": ["Document request list", "Uploaded agreements", "Firm issue checklist"],
+      "outputs": ["Document index", "Open-issues table", "Follow-up questions"],
+      "review": "Counsel review"
+    }
+  },
+  "burdens": {
+    "eyebrow": "The work around the advice",
+    "title": "Legal judgment is only one part of the day.",
+    "description": "Before a lawyer can advise, negotiate, or decide, someone has to recover context, organize materials, compare documents, and prepare a usable work product.",
+    "items": [
+      { "label": "Files", "title": "Matter context is scattered", "description": "Important facts sit across folders, email attachments, meeting notes, prior drafts, and naming systems that drift over time." },
+      { "label": "Review", "title": "Every version creates more work", "description": "Teams must locate changes, reconnect them to the issue list, and explain what still needs a decision." },
+      { "label": "Research", "title": "Sources need more than a summary", "description": "Research has to be organized around the actual question, jurisdiction, date, and authority—not merely condensed." },
+      { "label": "Delivery", "title": "Clients need a clear next step", "description": "The internal analysis still has to become a concise update, meeting brief, request list, or editable draft." }
+    ]
+  },
+  "buildingBlocks": {
+    "eyebrow": "General capabilities, legal context",
+    "title": "Compose the workflow from practical building blocks.",
+    "description": "Floatboat does not prescribe one legal method. It applies reusable work operations to the materials and standards you select.",
+    "items": [
+      { "action": "Read", "example": "Work from an approved matter folder, agreements, notes, and prior drafts.", "result": "A grounded working set with less copy-and-paste." },
+      { "action": "Organize", "example": "Classify files, normalize names, and map materials to a request or issue list.", "result": "Document index, missing-items list, structured workspace." },
+      { "action": "Extract", "example": "Pull parties, dates, obligations, defined terms, citations, and open questions.", "result": "Tables and source-linked notes ready for checking." },
+      { "action": "Compare", "example": "Contrast versions, templates, or a document against your own checklist.", "result": "Change summary, deviations, and review queue." },
+      { "action": "Create", "example": "Turn approved material into a timeline, meeting brief, client update, or first draft.", "result": "Editable deliverables rather than a disposable chat answer." },
+      { "action": "Repeat", "example": "Save recurring preparation steps with the right review and approval points.", "result": "A reusable workflow shaped by your team." }
+    ]
+  },
+  "workflows": {
+    "eyebrow": "Three configurable starting points",
+    "title": "Examples that adapt to your practice—not fixed legal playbooks.",
+    "description": "Each workflow begins with materials and rules you control, produces an inspectable work product, and stops where professional judgment begins.",
+    "items": [
+      {
+        "number": "01 · Matter preparation",
+        "title": "Turn a folder into a working matter brief",
+        "job": "Recover the people, events, dates, missing material, and next questions before a meeting or handoff.",
+        "flow": ["Select matter files", "Build chronology", "Map people and documents", "Draft meeting brief"],
+        "output": "Chronology, document index, open questions, and an editable brief.",
+        "boundary": "Floatboat organizes the record. Counsel decides relevance, privilege, strategy, and what may be shared."
+      },
+      {
+        "number": "02 · Document comparison",
+        "title": "Prepare a review queue from your own standards",
+        "job": "Compare versions or check a document against the template, checklist, and issue categories supplied by your team.",
+        "flow": ["Add versions and checklist", "Extract key terms", "Surface changes", "Prepare issue table"],
+        "output": "Version summary, extracted terms, deviations, and unresolved questions.",
+        "boundary": "The workspace surfaces differences and prepares questions; it does not make a final legal-risk determination."
+      },
+      {
+        "number": "03 · Research preparation",
+        "title": "Build a source trail before drafting the answer",
+        "job": "Break a question into research issues, organize supplied or public sources, and prepare a traceable research packet.",
+        "flow": ["Define issue and scope", "Collect authorities", "Create source matrix", "Prepare memo outline"],
+        "output": "Research log, authority matrix, unresolved conflicts, and a memo outline.",
+        "boundary": "Every authority, quotation, jurisdictional assumption, and legal conclusion requires lawyer verification."
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Your method remains the method",
+    "title": "Bring the standards your team already trusts.",
+    "description": "Different firms, clients, matters, and jurisdictions require different workflows. Floatboat should follow your approved materials and return decisions to the right person.",
+    "inputsLabel": "Define the working context",
+    "inputs": ["Matter folder and permitted source files", "Firm templates and clause language", "Issue checklist or review playbook", "Naming rules and delivery format", "Jurisdiction, date, and research scope"],
+    "controlsLabel": "Define the control points",
+    "controls": ["What the agent may read or change", "Which steps require a question", "Who reviews each deliverable", "What must never be sent automatically", "What can be saved and reused"]
+  },
+  "progression": {
+    "eyebrow": "From one task to a repeatable system",
+    "title": "Start with one bounded assignment. Reuse only what proves useful.",
+    "description": "A workflow can mature without turning every legal task into unattended automation.",
+    "items": [
+      { "label": "Ad hoc", "title": "Prepare one deliverable", "description": "Organize a single working set and return a brief, comparison, timeline, or research packet for review." },
+      { "label": "Saved workflow", "title": "Keep the successful method", "description": "Reuse the same inputs, naming rules, checklist, output structure, and approval points on the next matter." },
+      { "label": "Team practice", "title": "Share a controlled starting point", "description": "Let the team use a common workflow while each lawyer retains responsibility for context and judgment." }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "Human-controlled by design",
+    "title": "Automate preparation, not professional responsibility.",
+    "description": "The useful line is not legal versus non-legal work. It is the line between preparing an inspectable work product and making a consequential professional decision.",
+    "assistsTitle": "Floatboat can help prepare",
+    "assists": ["Matter indexes, chronologies, and source maps", "Version comparisons and extracted terms", "Meeting briefs, client-update drafts, and request lists", "Research packets, outlines, and editable first drafts", "Recurring status summaries from approved materials"],
+    "retainsTitle": "Lawyers and legal teams retain",
+    "retains": ["Legal opinions and interpretation", "Privilege and confidentiality decisions", "Risk, strategy, and negotiation judgment", "Citation and authority verification", "Approval for client communication, filing, or submission"],
+    "note": "Floatboat is a general-purpose agent workspace, not a law firm, legal research authority, or substitute for qualified legal counsel. Data handling depends on the models, tools, connectors, permissions, and organizational policies selected for each workspace."
+  },
+  "faq": {
+    "title": "AI workspace questions for lawyers",
+    "description": "The practical questions are about source material, review, confidentiality, and control—not promises of one-click legal work.",
+    "items": [
+      { "question": "Is Floatboat legal AI or a law-practice management system?", "answer": "Floatboat is a general-purpose Agent Workspace. It can help legal professionals work with approved files, research materials, templates, and repeatable preparation steps, but it is not a legal authority, matter-management system, billing platform, or substitute for counsel." },
+      { "question": "Can Floatboat review a contract?", "answer": "It can extract terms, compare versions, apply a checklist or template you provide, and prepare deviations and questions for review. A lawyer still determines legal meaning, risk, negotiation position, and whether any recommendation is appropriate." },
+      { "question": "Can it do legal research without hallucinations?", "answer": "No AI system should be treated as incapable of error. Floatboat can help structure research, organize sources, and create a traceable packet, but every authority, quotation, jurisdictional assumption, and conclusion must be verified against authoritative sources." },
+      { "question": "Does Floatboat come with a built-in law-firm playbook?", "answer": "The page examples are starting points, not prescribed legal methods. You choose the files, templates, checklists, terminology, output format, and approval steps appropriate to your firm, client, matter, and jurisdiction." },
+      { "question": "Can I use my own templates and checklists?", "answer": "Yes. A workspace can be organized around the materials and instructions you approve, so the agent prepares work in the structure your team expects instead of inventing a generic format." },
+      { "question": "How should privileged or confidential material be handled?", "answer": "Follow your firm's policies and client obligations before adding sensitive material. Review the data handling of every model, connector, and tool used in the workflow, scope access narrowly, and do not assume that local file access means every processing step remains on-device." },
+      { "question": "Will Floatboat send client messages or file documents automatically?", "answer": "The recommended workflows keep consequential external actions behind explicit human approval. Whether a connector can perform an action is separate from whether your policy should permit it." },
+      { "question": "Who is this page for?", "answer": "The examples are relevant to lawyers, in-house counsel, paralegals, legal operations teams, and other legal professionals who spend time preparing files, context, drafts, and repeatable work products." }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Build from one real assignment",
+    "title": "Give the work around legal judgment a better workspace.",
+    "description": "Start with a bounded folder, a trusted template, and a deliverable you can review. Keep the useful process; keep the professional decision yours.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=final_cta" },
+    "secondaryCta": { "label": "Explore Agent Workspace", "href": "/agent-workspace" }
+  }
+}
