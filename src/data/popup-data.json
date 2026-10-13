@@ -222,12 +222,12 @@
     },
     "automate-tiktok-shop-research-fastmoss-floatboat": {
       "en": {
-        "title": "Weekly TikTok Shop research, on autopilot",
-        "body": "FastMoss pulls the numbers; a scheduled agent delivers the digest before Monday standup."
+        "title": "Validate the research before scheduling it",
+        "body": "Run one manual cycle, preserve source URLs and dates, and automate only after the brief passes review."
       },
       "zh": {
-        "title": "TikTok Shop 周度调研自动化",
-        "body": "FastMoss 拉数据，定时 Agent 在周一站会前把摘要送到。"
+        "title": "先验证调研，再安排定时",
+        "body": "先人工跑完一轮，保留来源与日期；简报通过复核后再自动调度。"
       }
     },
     "best-ai-agent-builder-2026": {
@@ -502,12 +502,12 @@
     },
     "feishu-cli-solo-work-setup": {
       "en": {
-        "title": "Feishu CLI for a one-person setup",
-        "body": "Real integration boundaries included — and where an agent workspace covers the rest."
+        "title": "Start Feishu CLI read-only",
+        "body": "Use minimum scopes, command logs, an explicit owner, and rollback before enabling writes."
       },
       "zh": {
-        "title": "单人场景接 Feishu CLI",
-        "body": "真实集成边界都写在文中，剩下的缝隙由 Agent 工作区补上。"
+        "title": "从只读飞书 CLI 开始",
+        "body": "先用最小权限、命令日志、明确负责人和回退路径，再开放写操作。"
       }
     },
     "first-100-customers-solo-founder": {
@@ -522,12 +522,12 @@
     },
     "floatcup-world-cup-2026-calendar-subscribe": {
       "en": {
-        "title": "All 104 matches, one subscribe",
-        "body": "FloatCup keeps kickoff times updating themselves in your calendar all tournament."
+        "title": "Keep or remove the 2026 archive",
+        "body": "The tournament is over. Keep the calendar as a 104-match record or remove it if completed events create clutter."
       },
       "zh": {
-        "title": "104 场比赛，一次订阅",
-        "body": "FloatCup 让整届赛程的开球时间在日历里自动更新。"
+        "title": "保留或移除 2026 赛事归档",
+        "body": "赛事已经结束。可把日历作为 104 场历史记录保留，也可在影响日常视图时移除。"
       }
     },
     "gemini-3-5-integration-solo-operators": {
@@ -652,12 +652,12 @@
     },
     "gpt-image-2-manga-comic-workflow": {
       "en": {
-        "title": "A manga pipeline with GPT Image 2",
-        "body": "Readable text and consistent panels — with a release cadence your calendar protects."
+        "title": "Build a reviewable GPT Image 2 comic workflow",
+        "body": "Use reference sheets, panel-level generation, external lettering, continuity QA, and rights checks before scaling to a chapter."
       },
       "zh": {
-        "title": "GPT Image 2 漫画流水线",
-        "body": "文字可读、分镜稳定，更新节奏交给日历来保护。"
+        "title": "搭建可审校的 GPT Image 2 漫画流程",
+        "body": "用设定页、逐格生成、外部排字、连续性审校和权利核对，再决定是否扩展到整章。"
       }
     },
     "gpt-image-2-storyboard-solo": {
@@ -672,12 +672,12 @@
     },
     "gpt-image-2-vs-midjourney-nano-banana-2": {
       "en": {
-        "title": "Three image models, one decision",
-        "body": "The actual decision tree for visual work you ship on a fixed cadence."
+        "title": "Compare image models with one test pack",
+        "body": "Score accepted assets, edit rounds, total cost, privacy, and licensing—and recheck current model generations."
       },
       "zh": {
-        "title": "三个图像模型一道选择题",
-        "body": "按你定更节奏出货的视觉工作来画决策树。"
+        "title": "用同一套任务比较图像模型",
+        "body": "比较验收成品、编辑轮数、总成本、隐私与许可，并重新核对当前模型代际。"
       }
     },
     "grok-3-api-solo-operator": {
@@ -822,22 +822,22 @@
     },
     "introducing-floatim": {
       "en": {
-        "title": "FloatIM: group chat for agents",
-        "body": "Multi-agent collaboration gets a messaging network — see where it slots into your stack."
+        "title": "Pilot one bounded agent group",
+        "body": "Evaluate identities, permissions, handoffs, audit records, and failure recovery before wider adoption."
       },
       "zh": {
-        "title": "FloatIM：Agent 的群聊网络",
-        "body": "多 Agent 协作有了消息网络，看看它在你的工具栈里站哪一格。"
+        "title": "先试点一个有边界的 Agent 群",
+        "body": "扩大使用前，核验身份、权限、交接、审计记录与失败恢复。"
       }
     },
     "introducing-flow-mode": {
       "en": {
-        "title": "Flow Mode: speech into living documents",
-        "body": "Dictate, edit while it listens, and batch voice annotations into tomorrow's agenda."
+        "title": "Test Flow Mode on one document",
+        "body": "Measure recognition, edit conflicts, revision readability, action ownership, and export quality."
       },
       "zh": {
-        "title": "Flow Mode：说话即成稿",
-        "body": "边说边改，语音批注自动进第二天的日程。"
+        "title": "用一份文档测试 Flow Mode",
+        "body": "衡量识别、编辑冲突、修订可读性、行动项归属与导出质量。"
       }
     },
     "kimi-k3-floatboat": {
@@ -922,12 +922,12 @@
     },
     "oh-my-codex-vs-superpowers": {
       "en": {
-        "title": "oh-my-codex vs Superpowers",
-        "body": "Parallel Codex agents with persistent context, compared on real repos."
+        "title": "Choose orchestration or process discipline",
+        "body": "Pilot OMX for Codex operations and Superpowers for portable engineering discipline; combine only after separate tests."
       },
       "zh": {
-        "title": "oh-my-codex 对 Superpowers",
-        "body": "带持久上下文的并行 Codex Agent，拿真实仓库比过了。"
+        "title": "选择编排层还是工程纪律",
+        "body": "分别试点 OMX 的 Codex 运行辅助与 Superpowers 的可移植工程流程，验证互补后再组合。"
       }
     },
     "openai-4-day-work-week-one-person-company": {
@@ -1082,12 +1082,12 @@
     },
     "what-is-doubao-work": {
       "en": {
-        "title": "Inside ByteDance's Doubao Work",
-        "body": "Virtual-desktop control and deep Feishu — how it stacks up for Chinese-language work."
+        "title": "Verify Doubao Work before rollout",
+        "body": "Check where tasks run, what Feishu data is in scope, which actions need approval, and current plan limits."
       },
       "zh": {
-        "title": "字节的 AI 办公平台豆包工作",
-        "body": "虚拟桌面控制加飞书深度，中文办公场景里它到底强在哪。"
+        "title": "部署豆包工作前逐项核验",
+        "body": "确认任务运行位置、飞书数据范围、审批动作与当前套餐限制，再扩大使用。"
       }
     },
     "what-is-llm-wiki": {
@@ -1542,12 +1542,12 @@
     },
     "vibe-coding-one-prompt-html-game": {
       "en": {
-        "title": "Vibe coding a one-prompt HTML game",
-        "body": "One prompt, one playable browser game — what holds and what breaks when an agent builds it all."
+        "title": "Test the one-prompt game after generation",
+        "body": "Define a small contract, inspect the HTML, test controls and failure states, then patch observable defects."
       },
       "zh": {
-        "title": "一条提示词做出 HTML 小游戏",
-        "body": "一条提示词、一个浏览器可玩的游戏——agent 构建时哪里成立、哪里翻车。"
+        "title": "一条提示词生成后仍要测试",
+        "body": "先限定小游戏合同，再检查 HTML、控制与失败路径，并根据可观察缺陷做最小修补。"
       }
     },
     "voice-agent-vs-voice-dictation-for-work": {

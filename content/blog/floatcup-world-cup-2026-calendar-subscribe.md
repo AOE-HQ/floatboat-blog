@@ -1,6 +1,6 @@
 ---
 title: "FloatCup: Subscribe to the World Cup 2026 Calendar in One Click"
-description: "Subscribe to all 104 World Cup 2026 matches with FloatCup. One-click calendar sync, auto-updating match times, and pre-match reminders — free."
+description: "FloatCup’s archived World Cup 2026 calendar: how the 104-match subscription worked, what remains after Spain won, and how to remove or preserve the calendar."
 slug: "floatcup-world-cup-2026-calendar-subscribe"
 date: "2026-07-15"
 author: "Jade"
@@ -10,117 +10,26 @@ locale: "en"
 draft: false
 ---
 
-**TL;DR**
-FloatCup is a free calendar subscription that adds every 2026 World Cup match to your calendar. Subscribe once, and all 104 matches appear with correct kickoff times in your time zone. Match times update automatically if FIFA adjusts the schedule. Pre-match reminders are included. Unsubscribe after the final with one click.
+**Historical status — verified October 13, 2026.** The 2026 World Cup ended on July 19. [FIFA confirmed Spain as champion](https://inside.fifa.com/organisation/news/spain-crowned-world-cup-2026-champions-new-york-new-jersey), after a 104-match tournament across Canada, Mexico, and the United States.
 
-The World Cup schedule is not complicated. 104 matches. 39 days. Three countries. What is complicated is keeping track of it — which match is today, what time in your time zone, whether that 4 PM kickoff in Dallas is 5 PM or 2 PM where you are, and whether the time changed since you last checked.
+FloatCup was a calendar-subscription experiment built for that tournament. This page now documents what the calendar contained and what subscribers can do with the completed archive. It no longer presents pre-match reminders or live updates as a current service.
 
-FloatCup solves all of that with a single click.
+## What the archived calendar contains
 
-## How FloatCup Works: Three Steps
+The subscription represented the tournament's 104 fixtures as calendar events. Dates, venues, and final results should be checked against [FIFA's official fixture and results page](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums); the calendar is a convenience layer, not the sporting authority.
 
-### Step 1: Open FloatCup
+Because the competition is complete, the events now function as a dated record. There are no upcoming kickoff alerts to promise and no live schedule changes left to follow.
 
-Navigate to the FloatCup page at floatboat.ai/floatcup-2026 — no account required for the basic calendar subscription. The page presents a single "Subscribe" button and a brief explanation of what gets added to your calendar. If you already use Floatboat, FloatCup integrates with your existing workspace and pulls in your timezone and calendar preferences automatically.
+## Keep it or remove it
 
-FloatCup is a web-based tool that works in any modern browser. There is no app to install, no extension to add, and no permission to grant beyond the standard calendar subscription dialog your calendar app shows when you add a new feed. The entire process — from landing on the page to seeing matches in your calendar — typically takes under 30 seconds.
+Keep the subscription if the event history is useful for research or personal records. Remove it if 104 completed events make calendar search or navigation noisy. The exact removal control belongs to the calendar client in which the subscription was added.
 
-### Step 2: Click Subscribe
+Removing a subscribed calendar is different from deleting individual events. Use the calendar-level unsubscribe or remove action so the archive disappears as one source.
 
-One button. FloatCup generates a calendar subscription that adds every 2026 World Cup match to Google Calendar, Apple Calendar, Outlook, or any calendar app that supports ICS subscriptions.
+## Where to check the finished tournament
 
-The subscription includes:
+Use FIFA for authoritative results. For editorial navigation, the [World Cup 2026 guide](/blog/world-cup-2026-guide) summarizes the tournament and the [completed bracket](/blog/world-cup-2026-bracket) follows the knockout path.
 
-  * All 104 matches: 72 group-stage, 32 knockout
+## FloatCup after the final
 
-  * Teams, venues, and kickoff times for every match
-
-  * Automatic timezone conversion to your local time
-
-### Step 3: Your Calendar Is Ready
-
-The matches appear in your calendar within seconds. You do not need to download a file, unzip anything, or manually import. The subscription stays live through the tournament and updates automatically when match times change.
-
-Behind the scenes, FloatCup uses the ICS subscription protocol — the same standard that powers calendar sharing across Google Calendar, Apple Calendar, and Outlook. When FIFA publishes an official schedule update, FloatCup's backend refreshes the feed, and every subscriber's calendar reflects the change automatically. The subscription is read-only: FloatCup adds events, but it never reads, modifies, or accesses your existing calendar data.
-
-What you see after subscribing:
-
-  * **Every match as a discrete event** : 72 group-stage, 32 knockout, each with teams, venue, and kickoff time
-
-  * **Color-coded by stage** : group matches, Round of 32, quarterfinals, and the final each appear in a distinct color if your calendar app supports event coloring from subscriptions
-
-  * **Searchable** : type "Brazil," "Semifinal," or "July 14" in your calendar search and the relevant events appear
-
-  * **Cross-device sync** : subscribe once, and the events appear on every device signed into the same calendar account — phone, tablet, laptop, desktop
-
-## What Makes FloatCup Different From a Downloaded ICS File
-
-A downloaded ICS file works — free, and most calendar apps import it in under two minutes. The catch is maintenance: FIFA occasionally shifts kickoff times during the group stage, and a static import does not reflect those changes unless you delete and re-import. FloatCup uses a live subscription feed instead, so match times update automatically, timezone conversion follows your device, and reminders are pre-configured. For a full comparison of ICS import vs. subscription methods on every platform, see the ICS import guide.
-
-## Pre-Match Reminders
-
-Every FloatCup event includes a reminder. You choose when:
-
-
-
-<table><colgroup><col/><col/></colgroup><tr><td colspan="1" rowspan="1"><p>Reminder</p></td><td colspan="1" rowspan="1"><p>Best For</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>30 minutes before</strong></p></td><td colspan="1" rowspan="1"><p>You are already near a screen and just need a nudge</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>1 hour before</strong></p></td><td colspan="1" rowspan="1"><p>You want time to wrap up what you are doing and settle in</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>3 hours before</strong></p></td><td colspan="1" rowspan="1"><p>You plan your day around matches and want an early heads-up</p></td></tr></table>
-
-
-
-The reminders use your calendar's native notification system — no extra app, no push notification spam. They fire whether you have Floatboat open or not.
-
-### What Match Day Looks Like
-
-Here is the FloatCup experience from the user's perspective, from the morning of a match to the final whistle.
-
-  * **Morning of match day** : Open your calendar to check the day's schedule. The match is already there — teams, venue, kickoff time in your local timezone. No action needed.
-
-  * **1 hour before kickoff** (or your chosen reminder interval): Your calendar notification fires. On your phone, it is a standard calendar alert. On your laptop, a notification banner. Tap or click to open the event and see the full match details.
-
-  * **During the match** : Watch however you prefer — broadcast, streaming, at a bar or stadium. FloatCup does not interrupt. The calendar event sits quietly in your schedule.
-
-  * **After the final whistle** (Floatboat users only): If you have a Floatboat account and installed the Match Recap Combo Skill, a match recap lands in your workspace — a Markdown file with the score, key events, and a summary. The recap is saved to your AI File Manager for later reference.
-
-The entire loop — subscribe once, get reminded automatically, optionally receive recaps — is designed to require zero ongoing maintenance. You do not configure per-match settings. You do not update times. The calendar handles it.
-
-## Post-Match Recaps (Floatboat Users)
-
-If you use Floatboat, FloatCup adds one more layer: after each match you have marked as "watching," a match recap lands in your Floatboat workspace. The recap includes the score, key moments, and — for matches involving teams in your followed list — a short summary written by Floatboat's AI Match Recap Skill.
-
-The recap is generated from official match data and delivered as a Markdown file in your workspace. It includes:
-
-  * **Scoreline and key events** : goals, cards, substitutions, with timestamps
-
-  * **A 200-word summary** : structured as what happened, why it mattered, and what it means for the bracket
-
-  * **Bilingual option** : English and Chinese summaries available for teams in your followed list
-
-  * **Auto-archiving** : each recap is saved to your AI File Manager, searchable by team, date, or match stage
-
-This is entirely optional. If you only want the calendar subscription and reminders, that is all FloatCup does. The recap feature requires a Floatboat account and the Match Recap Combo Skill installed. Both are available on Floatboat's free tier.
-
-For readers who do not use Floatboat, the calendar subscription itself does not require any account or installation — it works independently with your existing calendar app.
-
-## What Happens After the World Cup
-
-FloatCup is designed for the tournament, not forever. After the final on July 19, you can:
-
-  * **Unsubscribe with one click** — the events are removed from your calendar, and the subscription ends
-
-  * **Keep the subscription** — the events remain as a record, though no further updates come after the tournament
-
-  * **Explore Floatboat** — the skills and calendar-driven features you used during the World Cup (reminders, recaps, timezone handling) work for everyday meetings, deadlines, and projects too
-
-FloatCup was built as a focused World Cup tool, but the underlying Calendar-Driven AI is the same engine that powers Floatboat's core product. If you found the experience useful — a calendar that does work instead of just showing time slots — Floatboat extends that to every calendar event you have.
-
-Beyond the World Cup, Floatboat's calendar-driven model means the same automatic preparation and follow-through you experienced for match reminders works for meetings, deadlines, and recurring tasks. The Match Reminder Combo Skill you may have installed for FloatCup is built on the same skill architecture as Floatboat's professional Combo Skills — voice notes to decks, call transcripts to follow-up emails, ticket triage to PR drafts. After the tournament ends, the workflow habits persist. Those habits extend past the desktop, too: the same shift that put a match reminder inside your calendar puts agents inside your conversations, and [FloatIM's agent-native group chat](/blog/introducing-floatim) is built on exactly that premise — agents as first-class participants in a thread rather than bots bolted onto a human-first app.
-
-## FloatCup vs. Other Calendar Services
-
-Several services distribute World Cup ICS files — CalendarLabs, Yahoo Sports, FotMob, and various fan sites — and all work for a one-time import. FloatCup solves what comes after: live kickoff updates, automatic timezone handling, pre-configured reminders, and one-click unsubscribe when the tournament ends. For step-by-step ICS import on Google Calendar, Outlook, and Apple Calendar, see the ICS guide. Official fixture data is published by <a href="<https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums>" rel="nofollow noopener">FIFA</a>; Google Calendar, Apple Calendar, and Outlook all support standard ICS subscriptions per their respective <a href="<https://support.google.com/calendar/answer/37118>" rel="nofollow noopener">Google</a>, <a href="<https://support.apple.com/guide/calendar/subscribe-to-calendars-icl1022/mac>" rel="nofollow noopener">Apple</a>, and platform documentation.
-
-## Conclusion
-
-FloatCup is built for one job: make sure you never miss a kickoff across 39 days and 104 matches. Subscribe once, pick your reminder interval, and every match lands in the calendar you already check — with correct local times and automatic updates if FIFA moves a kickoff. No file downloads, no re-imports, no configuring 104 individual events. That single-mindedness is what current tooling makes rational: when [one prompt can ship a browser-playable HTML game](/blog/vibe-coding-one-prompt-html-game), building a narrow tool that does its one job well is no longer the expensive option — it is the cheap one.
-
-If you prefer a manual approach or want to compare options first, the ICS import guide walks through every platform step by step. Either path gets the full schedule into your calendar; FloatCup is the zero-maintenance option for readers who want the tournament to run in the background until July 19.
+FloatCup should now be evaluated as a finite-event archive, not as an active notification product. Its remaining value is simple: a calendar-shaped record that a subscriber may retain or remove.

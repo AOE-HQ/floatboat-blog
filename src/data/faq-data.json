@@ -1133,6 +1133,14 @@
         {
           "question": "What still requires human approval?",
           "answer": "Teams can keep explicit approval gates for external or consequential actions such as creator outreach, public publishing, sourcing and inventory commitments, contracts, pricing, advertising spend, and legal or regulated claims."
+        },
+        {
+          "question": "Does FastMoss data equal official TikTok data?",
+          "answer": "No. Treat it as third-party market intelligence and cross-check material decisions against primary evidence."
+        },
+        {
+          "question": "What should a pilot measure?",
+          "answer": "Measure brief completion time, evidence coverage, correction effort, and the share of findings that remain valid after review."
         }
       ]
     },
@@ -2341,6 +2349,14 @@
         {
           "question": "When does Feishu CLI automation actually pay off for a solo operator?",
           "answer": "It pays off when the workflow runs frequently, the manual version is genuinely tedious, and the failure mode is low-stakes — read-only pipelines that pull context for your own reference are the best starting point. Action-execution workflows that send messages or modify shared records carry more risk, so graduate to them later. You should also enjoy the meta-work of maintaining it."
+        },
+        {
+          "question": "Is Lark CLI an official tool?",
+          "answer": "Yes. The larksuite team maintains the official Lark/Feishu CLI repository."
+        },
+        {
+          "question": "What is the safest first automation?",
+          "answer": "Start with a read-only retrieval task, log every command, and add write scopes only with an owner and rollback."
         }
       ]
     },
@@ -2419,28 +2435,36 @@
     "/blog/floatcup-world-cup-2026-calendar-subscribe": {
       "items": [
         {
-          "question": "Is FloatCup free?",
-          "answer": "Yes. The calendar subscription, all 104 matches, pre-match reminders, and automatic timezone conversion are free, and no account is required to subscribe. The optional post-match recap layer needs a Floatboat account with the Match Recap Combo Skill installed, and both sit on Floatboat's free tier. In practice you can run the entire World Cup experience without paying anything; recaps are the only add-on that requires a Floatboat login."
+          "question": "Is FloatCup still a live World Cup calendar?",
+          "answer": "No. The tournament ended July 19, 2026, and this page now treats FloatCup as a historical archive."
         },
         {
-          "question": "Do I need to install Floatboat to use FloatCup?",
-          "answer": "No. The calendar subscription works independently with Google Calendar, Apple Calendar, Outlook, or any app that supports ICS subscriptions — no Floatboat account or installation involved. You only need Floatboat if you want post-match recaps delivered into your workspace. If you already use Floatboat, FloatCup also picks up your timezone and calendar preferences automatically."
+          "question": "Who won the 2026 World Cup?",
+          "answer": "Spain, according to FIFA’s official post-tournament announcement."
         },
         {
-          "question": "What happens if a match time changes?",
-          "answer": "Nothing is required from you. FloatCup is a live ICS subscription, not a static import: when FIFA publishes an official schedule update, Floatboat's backend refreshes the feed and every subscriber's calendar shows the new kickoff time automatically. This is exactly the maintenance advantage over a downloaded ICS file, which would only change if you deleted and re-imported it."
+          "question": "How many matches were in the calendar?",
+          "answer": "The completed tournament contained 104 matches."
         },
         {
-          "question": "Can I subscribe only to certain teams' matches?",
-          "answer": "The base FloatCup subscription includes all 104 matches — 72 group-stage and 32 knockout — and cannot be narrowed from the calendar side. Team-specific filtering is available for Floatboat users through Combo Skills like Team Tracker, which share the same skill architecture as Floatboat's professional skills. If you only want the calendar, one subscription covers the whole tournament, and every event is searchable by team name."
+          "question": "Are FloatCup results authoritative?",
+          "answer": "No. Use FIFA’s official fixtures and results page as the sporting source of truth."
         },
         {
-          "question": "How do I unsubscribe after the tournament?",
-          "answer": "One click from the FloatCup page ends the subscription and removes the events, or you can delete the calendar in your calendar app's settings — either method cleans out all FloatCup events. You may also keep the subscription as a record, though no further updates arrive after the final on July 19. Nothing requires ongoing management during the tournament itself."
+          "question": "Why keep the calendar?",
+          "answer": "Keep it only if a dated tournament record is useful for research or personal history."
         },
         {
-          "question": "Does FloatCup work on mobile?",
-          "answer": "Yes. FloatCup uses your calendar app's native subscription mechanism rather than a separate app, so events appear in Google Calendar, Apple Calendar, or Outlook on your phone and sync across every device signed into the same calendar account. Because they are native calendar entries, you also get standard pre-match notifications, stage-based coloring where supported, and normal calendar search — without opening any other service."
+          "question": "Why remove the calendar?",
+          "answer": "Remove it if 104 completed events make calendar search or navigation noisy."
+        },
+        {
+          "question": "How should I remove it?",
+          "answer": "Use the calendar-level unsubscribe or remove action in the client where it was added."
+        },
+        {
+          "question": "Will the archive receive live reminders?",
+          "answer": "No current reminders or live schedule updates are promised after the completed tournament."
         }
       ]
     },
@@ -2879,28 +2903,36 @@
     "/blog/gpt-image-2-manga-comic-workflow": {
       "items": [
         {
-          "question": "Does GPT Image 2 really render readable text in speech bubbles?",
-          "answer": "For headline-length text, yes — it renders CJK and Latin text at roughly 99% character accuracy, and Japanese speech bubbles specifically have looked seamless in independent hands-on tests. But it's not magic: dense paragraphs at small sizes still slip, so I keep in-bubble text under about 15 characters per line. And any text you want rendered literally goes in double quotes — unquoted text drifts into plausible-looking gibberish."
+          "question": "What can GPT Image 2 do in a comic workflow?",
+          "answer": "It can generate and edit panel candidates from prompts and reference images; continuity, lettering, anatomy, and rights still require review."
         },
         {
-          "question": "Can it keep the same character consistent across a chapter?",
-          "answer": "Partially, so manage expectations. With Thinking mode on and an 8-panel batch from one prompt, about 5–6 panels keep recognizable continuity; the rest need a face re-roll. Beyond 6–8 panels, faces drift subtly even with strong prompting, and hands in dynamic poses come out wrong roughly one panel in four. A reference sheet — three good panels fed back as image inputs — is the closest thing to a real character lock right now."
+          "question": "Should I generate a whole comic page at once?",
+          "answer": "Generate one panel at a time so failures can be isolated and accepted panels preserved."
         },
         {
-          "question": "Does it work for manhwa or vertical webtoons?",
-          "answer": "The aspect ratio support goes up to 1:3 tall, which fits webtoon panels, and Korean-style webtoons render reasonably well. The honest caveat: the same character-consistency and background-continuity limits apply across a full episode, so plan for reference sheets, manual hand retouching, and reusable background plates if you push a long vertical story through it."
+          "question": "How do I keep a character consistent?",
+          "answer": "Reuse approved character, location, and prop sheets as reference inputs and check every adjacent panel."
         },
         {
-          "question": "Can I use it for commercial work?",
-          "answer": "Check the current OpenAI usage policy — outputs are generally usable commercially, but the rules around generating recognizable IP are strict. That's not legal advice; verify the policy directly before shipping, since terms change. For production work you can also go token-based through the API instead of the ChatGPT subscription."
+          "question": "Should speech bubbles be generated in the image?",
+          "answer": "Treat generated lettering as a draft and place final dialogue in a layout tool with editable text."
         },
         {
-          "question": "Does it replace a real artist?",
-          "answer": "No. It compresses the grunt-work parts of comic-making — backgrounds, lettering, basic scene blocking — the parts solo creators least enjoy. Taste, story, panel rhythm, and the final editorial eye are still yours. The model gives you a manga look, not your manga look; if you have a strong personal style, the drift will frustrate you. Treat it as a time-saver, not a replacement for skill."
+          "question": "How is GPT Image 2 API cost calculated?",
+          "answer": "Total cost includes text input, reference-image input, and image output tokens; use OpenAI’s current calculator."
         },
         {
-          "question": "How much faster is a page now, and what does it cost?",
-          "answer": "For a polished black-and-white page, my time dropped from about 6–8 hours to roughly 2 hours including manual hand retouching — and the number keeps shrinking as my prompting improves. Cost is modest: GPT Image 2 is included in ChatGPT Plus, or available token-based via the API at roughly $30 per million image-output tokens, which works out to a few cents per panel at typical resolutions."
+          "question": "What should a panel QA checklist cover?",
+          "answer": "Identity, hands, costume, props, geography, reading order, dialogue, and print-safe margins."
+        },
+        {
+          "question": "Can I sell an AI-assisted comic?",
+          "answer": "Check platform terms, reference and font rights, client or publisher rules, disclosure duties, and local law."
+        },
+        {
+          "question": "What is a good pilot before a full chapter?",
+          "answer": "Use a six-panel scene with two characters, a recurring prop, a location change, target-language dialogue, and a close-up."
         }
       ]
     },
@@ -2935,28 +2967,36 @@
     "/blog/gpt-image-2-vs-midjourney-nano-banana-2": {
       "items": [
         {
-          "question": "Which AI image tool should a solo creator pick as their main one?",
-          "answer": "There's no universal answer — it depends on what you make. If in-image text, multi-frame consistency, or surgical editing matters, GPT Image 2 is your daily driver. On a tight budget, run the free Nano Banana 2 tier for drafting and add ChatGPT Plus when you need polished output. Choose Midjourney only when a specific aesthetic look is the product itself — and don't switch just because a leaderboard moved."
+          "question": "Is there one best image model?",
+          "answer": "No; compare cost per accepted asset on your recurring briefs."
         },
         {
-          "question": "Is the Image Arena leaderboard reliable?",
-          "answer": "Useful, but not decisive. Image Arena measures human preference across diverse prompts, so a 242-point lead means GPT Image 2 wins on average — not that it wins for your particular workflow. Benchmark gaps don't always translate into workflow gaps. If your output is shipping and clients are happy, an upgrade can wait until your next billing cycle."
+          "question": "Is GPT Image 2 still current?",
+          "answer": "It remains listed, while OpenAI’s current guide points new API integrations to GPT Image 2.5 variants."
         },
         {
-          "question": "Which tool renders in-image text best?",
-          "answer": "GPT Image 2, by a wide margin. Independent reviews put its character-level accuracy near 99% across Latin, CJK, Hindi, and Bengali scripts, and it's the only one the author trusts for typography-heavy work like posters, infographics, or multilingual marketing assets. Midjourney V8 improved mainly on Latin scripts, while Nano Banana 2 handles CJK adequately but still trips on dense text at small sizes."
+          "question": "Is Nano Banana 2 the newest Google image model?",
+          "answer": "No; Google calls it the previous-generation workhorse and recommends Nano Banana 2.1 for new projects."
         },
         {
-          "question": "Does Midjourney V8 have an API?",
-          "answer": "Not officially. Midjourney V8 has no public API, and the opaque GPU-hour billing plus the lack of programmatic access still hurt solo operators who want generation inside their pipeline. Third-party wrappers exist through aggregators like fal.ai, but for reliable programmatic work it remains a gap."
+          "question": "How should I compare the three tools?",
+          "answer": "Use identical prompts, references, dimensions, and acceptance criteria, then score correction time and total cost."
         },
         {
-          "question": "Can I use outputs from all three commercially?",
-          "answer": "All three permit commercial use on paid tiers, but the fine print differs. Midjourney requires Pro ($60/mo) or Mega once company revenue passes $1 million, with Stealth mode on Pro+ only. GPT Image 2 outputs carry SynthID metadata and are generally usable commercially under current policy. Nano Banana 2's free tier adds a visible watermark that paid removes. This isn't legal advice — verify current terms before shipping client work."
+          "question": "Which costs should be counted?",
+          "answer": "Count inputs, outputs, edits, retries, grounding, subscription capacity, privacy needs, and human correction."
         },
         {
-          "question": "What should I do if I'm still on DALL-E 3?",
-          "answer": "Migrate before May 12, 2026 — the retirement date is firm. If your output is text-heavy, multi-frame, or CJK content, GPT Image 2 is the natural replacement: it already tops the Image Arena leaderboard and handles exactly those workloads. Don't wait until the shutdown to test your workflow on the new tool."
+          "question": "Does a leaderboard decide the best tool?",
+          "answer": "No; a leaderboard task may not match your text, editing, brand, or production workflow."
+        },
+        {
+          "question": "What should I verify for commercial use?",
+          "answer": "Verify tier, output rights, privacy, data use, reference rights, trademarks, disclosure, and local law."
+        },
+        {
+          "question": "When is a second image tool justified?",
+          "answer": "Add one only when it covers a measured failure class the primary tool cannot."
         }
       ]
     },
@@ -3431,56 +3471,72 @@
     "/blog/introducing-floatim": {
       "items": [
         {
-          "question": "What is FloatIM?",
-          "answer": "FloatIM is an agent-native messaging network where AI agents and humans collaborate in the same group chats. Agents are first-class participants: they read group rules, take on roles, and coordinate in multi-party threads, while people stay in the loop. It pairs with Floatboat, your desktop agentic workspace, but is itself the network and collaboration layer."
+          "question": "What is FloatIM today?",
+          "answer": "FloatIM has a live app and product overview for agent-oriented messaging; verify every specific behavior in the current product."
         },
         {
-          "question": "How is FloatIM different from putting an AI assistant in a team chat app?",
-          "answer": "In a human-first chat product, the agent is a feature bolted onto a people channel. FloatIM is designed the other way around: the agent and the group are the system. Group rules, roles, permissions, and multi-agent behavior are part of the network semantics from the start, so several agents and people can share one governable thread."
+          "question": "Does it support group rules?",
+          "answer": "Rule interpretation is a design goal unless the current app visibly exposes and enforces it."
         },
         {
-          "question": "Who is FloatIM for — creators or consumers?",
-          "answer": "Both, at different depths. If you mostly use agents that others invited into a thread, you are closer to a consumer. If you run agents from your own environment and want to connect or distribute them in groups, you are closer to a creator — a path that more often includes Floatboat. Product details and policies always live in the live product, not in this post."
+          "question": "Can agents take roles and coordinate?",
+          "answer": "Multi-agent roles and coordination are concept scenarios that require a live-product pilot."
         },
         {
-          "question": "Do I need Floatboat to use FloatIM?",
-          "answer": "It depends on what you are doing. Many workflows pair the two: creators typically run agents from Floatboat and use FloatIM to publish and coordinate in groups, while participants can join multi-agent conversations and use invited agents. The authoritative answer always sits in the current product and its terms, not in a blog post."
+          "question": "Does FloatIM pair with Floatboat?",
+          "answer": "Desktop pairing is product direction unless current documentation shows the exact connection and permissions."
         },
         {
-          "question": "How does FloatIM relate to MCP and A2A?",
-          "answer": "It is complementary, not a replacement. MCP provides the tool and context layer for an agent's integrations, while A2A-style protocols handle agent-to-agent task plumbing across services. FloatIM focuses on the in-group experience — who is in the room, what is visible, and how human and agent messages interact. The IACT and Selfware work covers the richer, actionable text and user-owned context layers."
+          "question": "Is FloatIM local-first?",
+          "answer": "Do not infer local data access from positioning; verify where data is processed and stored."
         },
         {
-          "question": "Where can I try FloatIM or read more?",
-          "answer": "Start with the app if you want to feel it first: open FloatIM at im.floatboat.ai. For a short, visual pass, the product overview on the main site takes only a few minutes to read. The FloatIM-vs-Floatboat comparison and the IACT/Selfware protocol write-up are linked from the \"one network\" sections above."
+          "question": "Does it replace team chat?",
+          "answer": "Not automatically; compare identity, permissions, auditability, and recovery on one bounded task."
+        },
+        {
+          "question": "Where is the current source of truth?",
+          "answer": "Use the live FloatIM app and the `/floatim` product overview."
+        },
+        {
+          "question": "How should a team pilot it?",
+          "answer": "Test one group with known participants and review identities, allowed actions, logs, handoffs, and failure recovery."
         }
       ]
     },
     "/blog/introducing-flow-mode": {
       "items": [
         {
-          "question": "Is Floatboat Flow Mode the same as speech-to-text or a meeting bot?",
-          "answer": "Not exactly. **Speech-to-text** tools focus on converting audio to text—valuable, and Flow Mode includes real-time capture—but Flow Mode also supports in-document editing, Agent collaboration on selections, batched voice annotations, live meeting plans, and version diff. Dedicated **AI note takers** optimize the recording lifecycle; Flow Mode optimizes the **document** that must exist when the conversation ends."
+          "question": "What is Flow Mode?",
+          "answer": "It is presented as a voice-first document experience inside Floatboat; the current build defines availability."
         },
         {
-          "question": "How is Flow Mode different from system-wide dictation apps like Wispr Flow?",
-          "answer": "Products like **Wispr Flow** are strong at polished dictation across any app on your machine—a different and legitimate job shape. **Floatboat Flow Mode** is document-centric inside the Floatboat workspace: Agent rewrites, annotation bundles, meeting-to-plan output, and calendar-linked Agent context in one place. Many users may still use system dictation elsewhere; Flow Mode is for drafts and plans that live in your Agent workspace."
+          "question": "Is it system-wide dictation?",
+          "answer": "No such claim is made here; its product concept centers voice and Agent-assisted edits in one document."
         },
         {
-          "question": "Can I edit while dictation is still running?",
-          "answer": "Yes—that is the namesake behavior. Flow Mode is built so **voice input does not force a full stop** before you touch the text or invoke the Agent on a selection. You choose when to pause talking; the doc remains editable throughout."
+          "question": "Can I edit while speaking?",
+          "answer": "Verify the exact concurrent editing behavior in the current build before relying on it."
         },
         {
-          "question": "Does Flow Mode replace Floatboat's calendar-driven meeting prep and follow-up?",
-          "answer": "No. Flow Mode adds a **during-meeting / during-draft** layer. AI meeting preparation still handles pre-call context; AI follow-up automation still structures what happens after. Flow Mode reduces the manual gap between speaking and a shippable artifact in the middle."
+          "question": "Are batch voice annotations shipped?",
+          "answer": "They are a concept workflow unless the current build visibly supports selection anchoring and batch submission."
         },
         {
-          "question": "What if an Agent edit goes wrong?",
-          "answer": "Use **version history** : open a prior revision, review the diff, and roll back to a known-good state. Flow Mode is designed so experimentation does not require copying files or losing chat-side alternatives."
+          "question": "Can it create meeting checklists with owners?",
+          "answer": "That is a direction scenario, not a guaranteed current capability."
         },
         {
-          "question": "Where does Flow Mode run, and is it available everywhere?",
-          "answer": "Flow Mode is desktop workspace functionality inside Floatboat on Mac and Windows — the same environment where Combo Skills, multi-model routing, and event-scoped Agent workspaces already live. Exact availability may vary by release, so treat the live app and release notes as the source of truth for your platform and version."
+          "question": "Does it provide diff and one-click rollback?",
+          "answer": "Verify history, labels, timestamps, diff, and restore controls in the current build."
+        },
+        {
+          "question": "Does it run on Mac and Windows?",
+          "answer": "Platform coverage must be checked in the current release; this page does not guarantee it."
+        },
+        {
+          "question": "What should a pilot measure?",
+          "answer": "Measure recognition errors, correction time, unintended edits, permission handling, recovery, and export quality."
         }
       ]
     },
@@ -3811,28 +3867,36 @@
     "/blog/oh-my-codex-vs-superpowers": {
       "items": [
         {
-          "question": "Can I use oh-my-codex and Superpowers at the same time?",
-          "answer": "Yes, and many developers do. Superpowers installs into your coding agent and shapes how each session plans, tests, and reviews; oh-my-codex orchestrates parallel Codex workers and keeps state across sessions. The two govern different layers of the same stack, and the main cost is context overhead from both injecting instructions — so trim Superpowers to the stages you need before running large team missions."
+          "question": "What is the main difference between OMX and Superpowers?",
+          "answer": "OMX operates Codex workflows and runtime helpers; Superpowers expresses a portable engineering methodology as skills."
         },
         {
-          "question": "Which tool should a Claude Code user install first?",
-          "answer": "Start with Superpowers: oh-my-codex is built around the Codex CLI and offers little until you add Codex to your workflow, while Superpowers installs cleanly into Claude Code and imposes its planning-and-TDD loop on your existing sessions. It keeps working whether you stay on Claude or later add Codex."
+          "question": "Is oh-my-codex an official OpenAI project?",
+          "answer": "No; use the canonical community repository and package identified by its maintainers."
         },
         {
-          "question": "Does oh-my-codex require OpenAI Codex, or can I use Claude Code as the engine?",
-          "answer": "oh-my-codex is designed around the Codex CLI as its primary execution engine, so you need a working Codex setup to get its orchestration and team features. Claude or Gemini can fill worker roles in team mode while Codex coordinates, but OMX is not a general orchestrator for Claude Code the way Superpowers is."
+          "question": "What platform does OMX recommend?",
+          "answer": "Its repository recommends macOS or Linux with Codex CLI and warns that native Windows and Codex App are not the default path."
         },
         {
-          "question": "Is Superpowers just a collection of prompts?",
-          "answer": "No — it is a methodology enforced through structured, automatically triggered skills. Each skill is a SKILL.md file with instructions and shell helpers that the agent checks before tasks, so brainstorming, TDD, and review run as part of the agent's process rather than as advice the model may ignore. And because the files are plain text, you can read, edit, and version them like code — something a \"prompt pack\" does not give you."
+          "question": "What does Superpowers emphasize?",
+          "answer": "Planning, test-driven development, systematic debugging, review, and verification through composable skills."
         },
         {
-          "question": "How mature are the two projects, and how much maintenance risk do they carry?",
-          "answer": "Both are MIT-licensed and actively maintained as of this writing, but at very different scales. Superpowers has the far larger community and contributor base, while oh-my-codex is smaller and faster-moving, closely tied to its core creator. The trade-off is that OMX features can change quickly across releases, so pinning versions and reading changelogs matters more than it does with Superpowers."
+          "question": "Can the two be combined?",
+          "answer": "Yes, but only after separate pilots show complementary value and ownership of each workflow stage is clear."
         },
         {
-          "question": "Which one is better for a solo developer who wants to ship faster?",
-          "answer": "It depends on why shipping is slow. If sloppy, undertested code forces rework, Superpowers saves you more time per session; if you cannot get enough independent work done in a day, oh-my-codex lets one person run several Codex tasks in parallel. Most solo operators eventually meet both bottlenecks, which is why the complementary setup tends to win over picking one tool."
+          "question": "How should I compare them?",
+          "answer": "Run the same bug fix and multi-file feature with identical tests, permissions, and time budgets."
+        },
+        {
+          "question": "What risks should teams review?",
+          "answer": "Installation scripts, permissions, hooks, state files, version pinning, removal, and conflicting instructions."
+        },
+        {
+          "question": "Which should I try first?",
+          "answer": "Pilot the narrower layer that addresses your measured bottleneck: Codex operation or engineering discipline."
         }
       ]
     },
@@ -4127,28 +4191,36 @@
     "/blog/vibe-coding-one-prompt-html-game": {
       "items": [
         {
-          "question": "What is vibe coding a game?",
-          "answer": "Vibe coding a game means describing the playable outcome in natural language and letting a coding model generate the implementation, then verifying with a short playtest instead of writing the engine by hand. It is not the same as generating concept art or a design doc — the output must run."
+          "question": "What is a one-prompt HTML game?",
+          "answer": "A constrained prototype delivered as one self-contained browser file from an initial prompt."
         },
         {
-          "question": "Can AI really make a playable HTML game in one prompt?",
-          "answer": "Yes, for scoped demos — especially single-file browser experiences with clear verbs and countable systems. The Floatboat Kimi K3 Art Deco town demo is one public example: walkable isometric streets, day-night cycle, NPCs, volumetric cloud shadows, and collectibles in one HTML file, as shown in [Floatboat's demo](https://www.youtube.com/watch?v=jg2AbjglY0g). Production multiplayer titles still need a real pipeline."
+          "question": "Does one prompt mean the game is finished?",
+          "answer": "No; the first output is a draft that requires browser tests, source review, and iteration."
         },
         {
-          "question": "Why insist on a single HTML file?",
-          "answer": "Distribution and honesty. A single file is easy to share, easy to archive, and hard for a demo to fake with hidden server magic. It also forces the model to keep dependencies honest."
+          "question": "What should the prompt specify?",
+          "answer": "Player verb, controls, world, finish state, restart, file constraints, accessibility, browser, and viewport."
         },
         {
-          "question": "Do I need a Kimi API key to try this in Floatboat?",
-          "answer": "No. Kimi K3 is built into Floatboat alongside the rest of the model roster. You select it in the agent workspace the same way you select any other built-in model."
+          "question": "Why avoid remote assets?",
+          "answer": "A self-contained pilot is easier to open, inspect, archive, and test without dependency failures."
         },
         {
-          "question": "When should I not vibe-code a game this way?",
-          "answer": "Skip this path for networked multiplayer, large asset-driven 3D productions, store-compliance shipping, or anything that needs a dedicated engine team. Use it for prototypes, pitch demos, teaching tools, and interactive microsites where “open the HTML” is a feature."
+          "question": "What should I test?",
+          "answer": "Console errors, focus, controls, restart, resizing, completion, timers, memory, bounds, and promised touch behavior."
         },
         {
-          "question": "How do I write a prompt that produces a playable game, not just a pretty scene?",
-          "answer": "Order the prompt by constraints: name the player verb first (walk, collect, talk), then the world type (isometric, top-down), then the aesthetic (Art Deco, not “nice city”), then countable systems — N NPCs, N collectibles, a named day-night cycle — and finally single-file HTML delivery. The Art Deco town that shipped as one playable file followed exactly this order, so every missing verb or system gets caught before the model writes code."
+          "question": "How should defects be prompted back?",
+          "answer": "Describe one observable failure and request the smallest patch, then rerun the full checklist."
+        },
+        {
+          "question": "Is the Floatboat Kimi K3 demo a benchmark?",
+          "answer": "No; it is one recorded artifact, not a guarantee for every prompt or run."
+        },
+        {
+          "question": "When should the project stop being one file?",
+          "answer": "Split it when you need tests, many levels, licensed assets, accounts, networking, analytics, or team editing."
         }
       ]
     },
@@ -4611,16 +4683,36 @@
     "/blog/what-is-doubao-work": {
       "items": [
         {
-          "question": "Is Doubao Work free?",
-          "answer": "Partly — the personal edition has a free tier with daily work-task quotas, and heavier use sits behind paid subscriptions that raise the quotas and unlock cloud computers and higher model tiers. The exact split shifts as ByteDance tunes the packaging, so treat the official pricing page as the source of truth. The team and enterprise editions are separate per-seat purchases, not an upsell inside the free tier."
+          "question": "What is Doubao Work?",
+          "answer": "It is ByteDance’s office-agent product for multi-step work and artifact delivery rather than ordinary chat."
         },
         {
-          "question": "Is there an international version of Doubao Work?",
-          "answer": "No — as of September 2026 there is no international edition, and the product is aimed at mainland-China users and Feishu (Lark) organizations. ByteDance's international general assistant is Dola, which handles everyday chat, writing, and creation but has no office-agent entry point, no local virtual-desktop control, and no Feishu team integration; international users wanting agent-driven office work have to look elsewhere."
+          "question": "Does every account get the same capabilities?",
+          "answer": "No; tools vary by region, account, client, organization configuration, permissions, and plan."
         },
         {
-          "question": "Doubao Work vs Floatboat: which should I choose?",
-          "answer": "Choose by where your work context lives, because that is what each product inherits. If your team's default home is Feishu — group chats, docs, Feishu-managed permissions — Doubao Work's team edition will feel native, and its Windows virtual-desktop control is unique among the options here. If your work is organized around meetings and deadlines on a calendar and you want preparation and follow-up to happen automatically rather than on request, the calendar-driven model is the better fit. They also differ in market: Doubao Work serves mainland China first; Floatboat is built for international, cross-timezone use."
+          "question": "Does “local” mean no data leaves the device?",
+          "answer": "Do not assume that; verify the client, network behavior, privacy terms, and task mode."
+        },
+        {
+          "question": "What can Feishu integration access?",
+          "answer": "Only data available through the user and organization permissions, but administrators should test practical scope, sharing, revocation, and logs."
+        },
+        {
+          "question": "Are generated documents ready to publish?",
+          "answer": "Not automatically; verify citations, formulas, layout, links, media, editability, and approval requirements."
+        },
+        {
+          "question": "How should a team pilot Doubao Work?",
+          "answer": "Use a reversible task with non-sensitive copies, explicit tools, prohibited actions, output criteria, and a named reviewer."
+        },
+        {
+          "question": "How should pricing be evaluated?",
+          "answer": "Check current quotas, cloud-computer allowance, model access, seats, storage, overages, renewal terms, and cost per accepted result."
+        },
+        {
+          "question": "Who is it a poor fit for?",
+          "answer": "Teams with unsupported systems, policies against agent-operated GUIs, or unmet regional and contractual requirements."
         }
       ]
     },
@@ -6161,6 +6253,14 @@
         {
           "question": "还有哪些需要人工审批？",
           "answer": "团队可以为外部或有重大后果的动作保留显式审批闸门，例如触达创作者、公开发布、采购与库存承诺、合同、定价、广告投放，以及法律或受监管的宣称内容。"
+        },
+        {
+          "question": "FastMoss 数据等于 TikTok 官方数据吗？",
+          "answer": "不等于。它是第三方市场情报，重要决策应再用一手证据交叉核验。"
+        },
+        {
+          "question": "试点应衡量什么？",
+          "answer": "衡量简报耗时、证据覆盖率、纠错工作量，以及复核后仍成立的发现比例。"
         }
       ]
     },
@@ -7369,6 +7469,14 @@
         {
           "question": "单人做飞书 CLI 自动化，什么时候才划算？",
           "answer": "当流程跑得够频繁、手动版本确实繁琐、而且失败代价很低时——把上下文拉回给自己参考的只读管线是最好的起点；发消息、改共享记录这类执行型流程风险更高，晚点再上。还有一条很实在：你得真的享受这类搭建与维护，否则元工作就变成了对正业的干扰。"
+        },
+        {
+          "question": "Lark CLI 是官方工具吗？",
+          "answer": "是，由 larksuite 团队维护官方飞书/Lark CLI 仓库。"
+        },
+        {
+          "question": "最安全的首个自动化是什么？",
+          "answer": "从只读检索开始，记录每条命令；明确负责人和回退路径后再增加写权限。"
         }
       ]
     },
@@ -7447,28 +7555,36 @@
     "/zh/blog/floatcup-world-cup-2026-calendar-subscribe": {
       "items": [
         {
-          "question": "FloatCup 免费吗？",
-          "answer": "免费。日历订阅、全部 104 场比赛、赛前提醒与自动时区换算都不收费，订阅也无需账号。可选的赛后战报需要 Floatboat 账号并安装 Match Recap Combo Skill，两者都在 Floatboat 免费档里。整届世界杯可零花费跑完；战报是唯一需要登录 Floatboat 的附加项。"
+          "question": "FloatCup 还是实时世界杯日历吗？",
+          "answer": "不是。赛事已于2026年7月19日结束，本页现将FloatCup作为历史归档。"
         },
         {
-          "question": "用 FloatCup 需要先安装 Floatboat 吗？",
-          "answer": "不需要。日历订阅独立可用，配合 Google Calendar、Apple Calendar、Outlook 等支持 ICS 订阅的应用即可，无需 Floatboat 账号或安装。只有想要赛后战报时才需要 Floatboat；战报送进你的 workspace，账号本身也在免费档。"
+          "question": "谁获得了2026世界杯冠军？",
+          "answer": "FIFA官方赛后公告确认西班牙夺冠。"
         },
         {
-          "question": "如果比赛时间变了会怎样？",
-          "answer": "你什么都不用做。FloatCup 是实时 ICS 订阅，不是静态导入：FIFA 发布官方赛程更新后，Floatboat 后端刷新数据源，每位订阅者的日历都会自动显示新的开球时间。这正是它相对下载 ICS 文件的维护优势——静态文件只有删掉重新导入才会更新。"
+          "question": "日历包含多少场比赛？",
+          "answer": "已经结束的赛事共包含104场比赛。"
         },
         {
-          "question": "可以只订阅某几支球队的比赛吗？",
-          "answer": "基础版订阅包含全部 104 场——72 场小组赛与 32 场淘汰赛——日历端无法再筛选。按球队筛选经 Team Tracker 这类 Combo Skills 提供给 Floatboat 用户，它们与 Floatboat 专业技能同属一套架构。只要日历的话，订阅一次即覆盖整届赛事，之后按队名即可搜索每场。"
+          "question": "FloatCup赛果是权威来源吗？",
+          "answer": "不是。最终赛果应以FIFA官方赛程与结果页为准。"
         },
         {
-          "question": "赛事结束后怎么退订？",
-          "answer": "从 FloatCup 页面一键退订，订阅终止、事件移除；或在日历应用设置里删除该日历——两种方式都会干净清掉全部 FloatCup 事件。也可以保留订阅作为记录，只是 7 月 19 日决赛后不再有更新。赛事期间，你不需要做任何持续维护。"
+          "question": "为什么保留日历？",
+          "answer": "仅在赛事时间记录对研究或个人历史有用时保留。"
         },
         {
-          "question": "FloatCup 在手机上能用吗？",
-          "answer": "能用。FloatCup 走日历应用的原生订阅机制，而非独立应用：比赛会出现在你手机上的 Google Calendar、Apple Calendar 或 Outlook 中，并在登录同一账号的所有设备间同步。因为是原生条目，你照常有赛前通知、分阶段着色（如支持）与常规搜索，无需打开其他服务。"
+          "question": "为什么移除日历？",
+          "answer": "若104个已完成事件影响搜索或浏览，就应移除。"
+        },
+        {
+          "question": "怎样移除？",
+          "answer": "在当初添加订阅的日历客户端使用日历级取消订阅或移除操作。"
+        },
+        {
+          "question": "归档还会发送实时提醒吗？",
+          "answer": "不会承诺已结束赛事仍有提醒或实时赛程更新。"
         }
       ]
     },
@@ -7907,28 +8023,36 @@
     "/zh/blog/gpt-image-2-manga-comic-workflow": {
       "items": [
         {
-          "question": "它真能把气泡里的文字渲染清楚吗？",
-          "answer": "正文长度的文字可以——GPT Image 2 的 CJK 与拉丁文字符级准确率约 99%，日文对白气泡在独立实测里也「看起来无缝」。但不是魔法：小字号的大段文字仍会出错，所以我把气泡内文字控制在每行 15 字以内。想让哪段字按原样渲染，就用双引号包起来——不包就会飘成看似合理的乱码。"
+          "question": "GPT Image 2 在漫画流程里能做什么？",
+          "answer": "它能根据提示词和参考图生成、编辑分镜候选；连续性、排字、人体与权利仍需人工审核。"
         },
         {
-          "question": "它能保证同一角色跨整章一致吗？",
-          "answer": "部分可以，要管理预期。开 Thinking 模式、单 prompt 一次出 8 格，约 5–6 格能保持可辨识的一致，其余要重抽脸部；超过 6–8 格，即使 prompt 写得很强，脸也会悄悄漂移，动态手势约四格错一格。目前最接近「锁角色」的办法是角色参考表——把三张效果好的不同角度分镜当图参考喂回去。"
+          "question": "应该一次生成整页漫画吗？",
+          "answer": "建议逐格生成，便于定位失败原因并保留已经验收的画面。"
         },
         {
-          "question": "它适合韩漫（manhwa）或竖屏 webtoon 吗？",
-          "answer": "长宽比最高支持 1:3 竖幅，适配 webtoon 分格，韩式风格渲染得也相当好。诚实提醒：完整推一话时，角色一致性与背景连贯性的限制同样存在——参考表、手动修手、按场景复用背景底板，都得提前规划。"
+          "question": "怎样保持角色一致？",
+          "answer": "反复使用已验收的角色、场景与道具设定图，并逐格对照相邻画面。"
         },
         {
-          "question": "能用于商业作品吗？",
-          "answer": "去查当前 OpenAI 使用政策——产出通常可商用，但对「生成可辨识 IP」的限制很严格。这不是法律建议，出货前请直接核对政策原文，因为条款会变。生产用途也可以不走 ChatGPT 订阅，改用 API 按 token 计费。"
+          "question": "对白气泡应直接生成在画面里吗？",
+          "answer": "生成文字只当草稿，最终对白应在排版工具中以可编辑文字层完成。"
         },
         {
-          "question": "它会取代真正的画师吗？",
-          "answer": "不会。它压缩的是漫画制作里苦力活的部分——背景、文字、基础分镜——恰是单人创作者最不爱干的活。品味、故事、分格节奏与最终把关仍在你手里。它给你的是「一种漫画风」，不是「你的漫画风」；个人风格很强的话，风格漂移会让你难受。它是省时工具，不是技能替代品。"
+          "question": "GPT Image 2 API 成本怎么计算？",
+          "answer": "总成本包含文字输入、参考图输入与图像输出 token，应使用 OpenAI 当前计算器。"
         },
         {
-          "question": "现在完成一页比以前快多少？要花多少钱？",
-          "answer": "精修黑白页从 6–8 小时降到约 2 小时（含手动修手），随着 prompt 熟练还会更快。成本不高：ChatGPT Plus 已包含 GPT Image 2，也可以走 API 按 token 计费——图像输出 token 约每百万 30 美元，按我常用的分辨率算，一格只要几美分。"
+          "question": "分镜审校清单应检查什么？",
+          "answer": "检查身份、手部、服装、道具、空间、阅读顺序、对白与印刷安全区。"
+        },
+        {
+          "question": "AI 辅助漫画可以商用吗？",
+          "answer": "需核对平台条款、参考图与字体权利、客户或出版社规则、披露义务和当地法律。"
+        },
+        {
+          "question": "整章制作前怎样试点？",
+          "answer": "先做六格场景，包含两名角色、连续道具、场景切换、目标语言对白和特写。"
         }
       ]
     },
@@ -7963,28 +8087,36 @@
     "/zh/blog/gpt-image-2-vs-midjourney-nano-banana-2": {
       "items": [
         {
-          "question": "单人创作者该把哪个绘图工具当主力？",
-          "answer": "没有放之四海皆准的答案，取决于你做什么。图内文字、多帧一致性或精细编辑是刚需，GPT Image 2 就当主力；预算紧张就先免费跑 Nano Banana 2 出草稿，需要精修成品时再加每月 20 美元的 ChatGPT Plus；只有当\"某种特定视觉调性\"本身就是产品时才选 Midjourney——别因为排行榜移动就换。"
+          "question": "存在唯一最好的图像模型吗？",
+          "answer": "不存在，应按真实简报比较每个验收成品的总成本。"
         },
         {
-          "question": "Image Arena 排行榜可靠吗？",
-          "answer": "有参考价值，但别当最终裁决。Image Arena 衡量的是人类对多样化提示词的偏好：领先 242 分说明 GPT Image 2 平均胜出，不代表它对你的工作流也胜出。基准差距并不总能转化为工作流差距——如果产出正常交付、客户也满意，升级可以等到下一个计费周期再说。"
+          "question": "GPT Image 2 还是当前模型吗？",
+          "answer": "它仍在列表中，但 OpenAI 当前文档已把新 API 集成引向 GPT Image 2.5 系列。"
         },
         {
-          "question": "哪种工具的文字渲染最强？",
-          "answer": "GPT Image 2，而且优势不小。独立评测认为它在拉丁、中日韩、印地语和孟加拉语上的字符级准确率接近 99%，是作者唯一敢托付排版密集型工作（海报、信息图、多语言营销素材）的工具。Midjourney V8 主要只在拉丁文字上有进步；Nano Banana 2 处理中日韩够用，但小尺寸的密集文本仍会翻车。"
+          "question": "Nano Banana 2 是 Google 最新图像模型吗？",
+          "answer": "不是，Google 称其为上一代主力，并建议新项目使用 Nano Banana 2.1。"
         },
         {
-          "question": "Midjourney V8 有 API 了吗？",
-          "answer": "还没有。Midjourney V8 官方没有公开 API，GPU 时长计费不透明、又无法程序化调用，对想在生产管线里集成出图的单人创作者仍然很伤。第三方包装器存在，例如通过 fal.ai 这类聚合商调用，但可靠的程序化集成仍是缺口。"
+          "question": "三款工具应该怎样比较？",
+          "answer": "使用相同提示词、参考图、尺寸和验收条件，再记录修正时间与总成本。"
         },
         {
-          "question": "三家的产出都能商用吗？",
-          "answer": "三家在付费档都允许商用，但细节不同：Midjourney 在营收超过 100 万美元后必须上 Pro 或 Mega 档，Stealth 私密模式仅 Pro+ 提供；GPT Image 2 输出带 SynthID 元数据，按现行政策一般可商用；Nano Banana 2 免费档图像带可见水印，付费去除。这不是法律意见，交付客户作品前请核对最新条款。"
+          "question": "成本应包含哪些部分？",
+          "answer": "包含输入、输出、编辑、重试、grounding、订阅额度、隐私需求与人工修正。"
         },
         {
-          "question": "我还在用 DALL-E 3，该怎么办？",
-          "answer": "在 2026 年 5 月 12 日前完成迁移——这个退役日期是板上钉钉的。如果你的产出是文字密集、多帧或中日韩内容，GPT Image 2 是自然的接替者：它已排在 Image Arena 榜首，恰好擅长这些活。别等到下线才把工作流搬去新工具上测试。"
+          "question": "榜单能决定最佳工具吗？",
+          "answer": "不能，榜单任务未必对应你的文字、编辑、品牌或生产流程。"
+        },
+        {
+          "question": "商用前要核对什么？",
+          "answer": "核对套餐、输出权利、隐私、数据使用、参考素材、商标、披露和当地法律。"
+        },
+        {
+          "question": "什么时候值得增加第二款工具？",
+          "answer": "只有它能解决主工具经测试确认的失败类型时才值得。"
         }
       ]
     },
@@ -8459,56 +8591,72 @@
     "/zh/blog/introducing-floatim": {
       "items": [
         {
-          "question": "FloatIM 是什么？",
-          "answer": "FloatIM 是一个 Agent 原生的消息网络：AI Agent 与人在同一个群聊里协作。Agent 是一等参与者——它们读得懂群规则、承担角色、在多方会话里协调，而人全程在环。它可以与你的桌面 Agentic Workspace Floatboat 配对使用，但它本身是网络与协作层。"
+          "question": "FloatIM 当前是什么？",
+          "answer": "FloatIM 已有在线应用和 Agent 消息产品页；每项具体行为仍需在当前产品中验证。"
         },
         {
-          "question": "它和\"在团队聊天应用里加个 AI 助手\"有什么不同？",
-          "answer": "在以人为先的聊天产品里，Agent 只是挂到人类频道上的一个功能。FloatIM 反其道而行：Agent 与群组才是系统的中心。群规则、角色、权限与多 Agent 行为从一开始就是网络语义的一部分，因此多个 Agent 和人能共享同一条可治理的会话线程。"
+          "question": "它已支持群规则吗？",
+          "answer": "规则理解属于设计目标，除非当前应用明确显示并执行相关控制。"
         },
         {
-          "question": "FloatIM 给谁用——创作者还是消费者？",
-          "answer": "两类人都在用，只是深度不同。如果你主要是使用别人请进会话的 Agent，你更接近消费者；如果你在自己环境里运行 Agent、想把它们接入群组或分发出去，你更接近创作者——这条路更常包含 Floatboat。产品细节与策略永远以线上产品为准。"
+          "question": "Agent 能承担角色并自主协调吗？",
+          "answer": "多 Agent 角色和协调属于概念场景，需要通过在线产品试点验证。"
         },
         {
-          "question": "用 FloatIM 需要装 Floatboat 吗？",
-          "answer": "取决于你在做什么。许多工作流会把两者配对：创作者通常用 Floatboat 运行自己的 Agent、再用 FloatIM 在群里发布与协调；参与者则可以加入多 Agent 对话、使用受邀的 Agent。权威答案永远在当前产品与条款里，而不是博客文章。"
+          "question": "FloatIM 已与 Floatboat 配对吗？",
+          "answer": "桌面配对属于产品方向，除非当前文档说明准确连接方式与权限。"
         },
         {
-          "question": "FloatIM 和 MCP、A2A 是什么关系？",
-          "answer": "互补关系，不是替代。MCP 提供 Agent 及其集成的工具与上下文层；A2A 类协议负责跨服务的 Agent 间任务管道。FloatIM 聚焦群内体验——房间里有哪些成员、什么可见、人与 Agent 的消息如何互动。更丰富的可执行文本与归用户所有的上下文，则分别由 IACT 与 Selfware 承载。"
+          "question": "FloatIM 是 local-first 吗？",
+          "answer": "不能从定位推断本地数据访问，应核验数据处理与存储位置。"
         },
         {
-          "question": "我该去哪里试用 FloatIM 或了解更多？",
-          "answer": "想先上手，就从应用开始：在 im.floatboat.ai 打开 FloatIM。想看短而视觉化的版本，官网的产品概览几分钟就能读完。FloatIM 与 Floatboat 的对比、以及 IACT/Selfware 的协议专文，都可以从上文\"一个网络\"各节的链接进入。"
+          "question": "它会取代团队聊天吗？",
+          "answer": "不会自动取代；应在有边界任务中比较身份、权限、审计与恢复。"
+        },
+        {
+          "question": "当前事实源在哪里？",
+          "answer": "以 FloatIM 在线应用和 `/floatim` 产品页为准。"
+        },
+        {
+          "question": "团队如何试点？",
+          "answer": "用参与者已知的单个群，检查身份、允许动作、日志、交接和失败恢复。"
         }
       ]
     },
     "/zh/blog/introducing-flow-mode": {
       "items": [
         {
-          "question": "Floatboat Flow Mode 和语音转文字或会议机器人是一回事吗？",
-          "answer": "不完全是。**语音转文字**工具专注于把音频变成文字——很有用，Flow Mode 也包含实时捕捉——但 Flow Mode 还支持文档内编辑、对选中片段的 Agent 协作、批量语音批注、会议实时计划，以及带 diff 的版本历史。专门的**AI 会议记录工具**优化的是录音生命周期；Flow Mode 优化的是对话结束时必须存在的那份**文档**。"
+          "question": "Flow Mode 是什么？",
+          "answer": "它被定位为 Floatboat 内的语音优先文档体验，准确可用性以当前版本为准。"
         },
         {
-          "question": "Flow Mode 和 Wispr Flow 这类系统级听写应用有什么不同？",
-          "answer": "**Wispr Flow**这类产品强在把听写打磨到可跨你机器上任何应用使用——这是另一种正当的岗位形态。**Floatboat Flow Mode**则是 Floatboat workspace 内部以文档为中心：Agent 改写、批注捆、会议到计划的产出、以及与日历关联的 Agent 上下文，全在一个地方。很多用户可能仍会在别处用系统级听写；Flow Mode 是给那些活在你的 Agent workspace 里的草稿和计划用的。"
+          "question": "它是全局听写工具吗？",
+          "answer": "本文不作此承诺；产品概念以同一文档中的语音和 Agent 辅助编辑为中心。"
         },
         {
-          "question": "听写还在进行时，我能编辑吗？",
-          "answer": "能——这正是它名字的由来。Flow Mode 的设计保证了**语音输入不会强迫你完全停下**才能动文字或对选中内容调用 Agent。何时停下说话由你决定；文档全程保持可编辑。"
+          "question": "可以边说边编辑吗？",
+          "answer": "依赖前应在当前版本中核验准确并发编辑行为。"
         },
         {
-          "question": "Flow Mode 会取代 Floatboat 日历驱动的会议准备和跟进吗？",
-          "answer": "不会。Flow Mode 加的是**会中/稿中**这一层。AI 会议准备仍然处理会前上下文；AI 跟进自动化仍然结构化成会后的下一步。Flow Mode 缩小的是中间那段「从说到可交付工件」之间的手动空档。"
+          "question": "批量语音批注已经上线吗？",
+          "answer": "除非当前版本明确支持选区锚定与批量提交，否则它是概念流程。"
         },
         {
-          "question": "Agent 改坏了怎么办？",
-          "answer": "用**版本历史**：打开更早的修订、检查 diff、回滚到一个已知良好的状态。Flow Mode 的设计就是让实验不需要复制文件，也不会丢掉聊天侧的其他备选。"
+          "question": "能在会中生成带负责人的清单吗？",
+          "answer": "这是方向性场景，不是保证存在的当前能力。"
         },
         {
-          "question": "Flow Mode 在哪些平台可用？",
-          "answer": "Flow Mode 是 Floatboat 桌面 workspace 的一部分，运行在 Mac 和 Windows 上——和 Combo Skills、多模型路由、事件级 Agent workspace 同处一个环境。具体可用范围随版本而变，请以线上应用与发布说明为准。"
+          "question": "提供 diff 和一键回退吗？",
+          "answer": "应在当前版本核验历史、标签、时间戳、diff 与恢复控制。"
+        },
+        {
+          "question": "支持 Mac 和 Windows 吗？",
+          "answer": "平台覆盖必须查当前版本，本文不作保证。"
+        },
+        {
+          "question": "试点应测什么？",
+          "answer": "衡量识别错误、修正时间、意外修改、权限处理、恢复与导出质量。"
         }
       ]
     },
@@ -8839,28 +8987,36 @@
     "/zh/blog/oh-my-codex-vs-superpowers": {
       "items": [
         {
-          "question": "能同时用 oh-my-codex 和 Superpowers 吗？",
-          "answer": "可以，而且很多开发者就是这么干的。Superpowers 装进你的编码 Agent，塑造每个会话怎么规划、测试、审查；oh-my-codex 编排并行的 Codex Worker，并跨会话保存状态。两者管的是同一个技术栈的不同层，主要代价是两边都注入指令带来的上下文开销——所以跑大型团队任务之前，先把 Superpowers 裁到你需要的环节。"
+          "question": "OMX 与 Superpowers 的主要区别是什么？",
+          "answer": "OMX 负责 Codex 工作流与运行辅助，Superpowers 用技能表达可移植的工程方法。"
         },
         {
-          "question": "用 Claude Code 的用户应该先装哪个？",
-          "answer": "先装 Superpowers：oh-my-codex 是围着 Codex CLI 建的，在你把 Codex 加进工作流之前，它几乎提供不了什么；Superpowers 则能干净地装进 Claude Code，给你现有的会话套上「规划 + TDD」的循环。无论你留在 Claude，还是之后再加 Codex，它都持续有效。"
+          "question": "oh-my-codex 是 OpenAI 官方项目吗？",
+          "answer": "不是，应使用维护者明确的社区官方仓库与包。"
         },
         {
-          "question": "oh-my-codex 必须用 OpenAI Codex 吗，还是可以让 Claude Code 当引擎？",
-          "answer": "oh-my-codex 是围绕 Codex CLI 作为主执行引擎来设计的，所以你需要一套能用的 Codex 环境，才能拿到它的编排与团队功能。团队模式下，Claude 或 Gemini 可以出任 Worker，由 Codex 协调；但 OMX 并不是 Superpowers 那种面向 Claude Code 的通用编排器。"
+          "question": "OMX 推荐什么平台？",
+          "answer": "仓库建议 macOS 或 Linux + Codex CLI，并说明原生 Windows 与 Codex App 不是默认路径。"
         },
         {
-          "question": "Superpowers 只是一堆提示词吗？",
-          "answer": "不是——它是一套靠结构化、自动触发的技能来落实的方法论。每个技能都是一个 SKILL.md 文件，内含指令与 shell 辅助脚本，Agent 在执行任务之前会先检查它们，所以头脑风暴、TDD 与审查是 Agent 流程的一部分，而不是模型可以无视的建议。而且这些文件是纯文本，你可以像读代码一样读它、编辑它、给它做版本管理——这是「提示词包」给不了你的。"
+          "question": "Superpowers 强调什么？",
+          "answer": "通过组合式技能强调规划、TDD、系统调试、评审与验证。"
         },
         {
-          "question": "两个项目成熟度如何，维护风险有多大？",
-          "answer": "写这篇文章时，两者都是 MIT 许可、活跃维护，但规模差得很远。Superpowers 的社区与贡献者基础大得多；oh-my-codex 更小、动得更快，与核心创作者绑定很深。代价是：OMX 的功能在版本之间可能变化很快，所以固定版本、阅读 changelog，比在 Superpowers 上更值得在意。"
+          "question": "两者可以组合吗？",
+          "answer": "可以，但应先独立试点，并明确每个流程阶段由哪一层负责。"
         },
         {
-          "question": "对想更快交付产品的单人开发者，哪个更好？",
-          "answer": "取决于交付慢的原因。如果粗糙、测试不足的代码逼着你返工，Superpowers 每个会话省下的时间更多；如果你一天之内就是干不完足够的独立工作，oh-my-codex 能让一个人并行跑多个 Codex 任务。多数单人创业者迟早会同时撞上这两个瓶颈——这正是「互补配置」通常胜过「二选一」的原因。"
+          "question": "怎样公平比较？",
+          "answer": "用相同测试、权限和时间预算运行同一个 bug 与跨文件功能任务。"
+        },
+        {
+          "question": "团队应审查哪些风险？",
+          "answer": "安装脚本、权限、hooks、状态文件、版本固定、卸载方式和指令冲突。"
+        },
+        {
+          "question": "应先试哪一个？",
+          "answer": "先试能解决已测瓶颈的更窄层：Codex 运行或工程纪律。"
         }
       ]
     },
@@ -9155,28 +9311,36 @@
     "/zh/blog/vibe-coding-one-prompt-html-game": {
       "items": [
         {
-          "question": "什么是以游戏为目标的 vibe coding？",
-          "answer": "以游戏为目标的 vibe coding，是指用自然语言描述可玩的结果、让编码模型生成实现，然后用一次简短的试玩来验证，而不是亲手写引擎。它不同于生成概念图或设计文档——产出必须能跑。"
+          "question": "什么是一条提示词 HTML 游戏？",
+          "answer": "它是由首条提示词生成、以一个自包含浏览器文件交付的有边界原型。"
         },
         {
-          "question": "AI 真的能一条提示词做出可玩的 HTML 游戏吗？",
-          "answer": "能，前提是有边界的演示——尤其是动词明确、系统可数的单文件浏览器体验。Floatboat 的 Kimi K3 装饰艺术小镇就是一个公开例子：可漫步的等距街道、昼夜循环、NPC、体积云阴影与可收集物，全在一个 HTML 文件里，见 [Floatboat 演示视频](https://www.youtube.com/watch?v=jg2AbjglY0g)。生产级多人游戏仍然需要真正的管线。"
+          "question": "一条提示词是否意味着游戏已完成？",
+          "answer": "不是，首轮输出只是草稿，仍需浏览器测试、源码审查与迭代。"
         },
         {
-          "question": "为什么坚持单个 HTML 文件？",
-          "answer": "为了分发，也为了诚实。单文件容易分享、容易归档，演示很难靠隐藏的服务器魔法作假。它也逼着模型保持依赖诚实。"
+          "question": "提示词应写哪些内容？",
+          "answer": "写清玩家动作、控制、世界、完成与重启、文件限制、可访问性、浏览器和视口。"
         },
         {
-          "question": "在 Floatboat 里尝试需要 Kimi API key 吗？",
-          "answer": "不需要。Kimi K3 与其他模型一同内置于 Floatboat。在 agent 工作区选中它即可，与选择其他内置模型的方式完全一样。"
+          "question": "为什么避免远程素材？",
+          "answer": "自包含试点更容易打开、检查、归档和测试，也减少依赖失败。"
         },
         {
-          "question": "什么时候不该用这种方式 vibe code 游戏？",
-          "answer": "联网多人游戏、大体量资产驱动的 3D 项目、需要过商店合规的发行，或任何需要专职引擎团队的场景，都请跳过这条路。它适合原型、演示给投资人的 demo、教学工具，以及「打开 HTML 即玩」本身就是卖点的交互式微型网站。"
+          "question": "应测试什么？",
+          "answer": "检查控制台、焦点、控制、重启、缩放、完成状态、定时器、内存、边界和承诺的触控行为。"
         },
         {
-          "question": "怎么写提示词才能产出可玩的游戏，而不只是漂亮的场景？",
-          "answer": "按约束排序：先写玩家动词（走、收集、对话），再写世界类型（等距、俯视），然后是美学（装饰艺术，而不是「漂亮的城市」），接着是可数系统——N 个 NPC、N 个可收集物、具名的昼夜循环——最后是单文件 HTML 交付。最终以单个可玩文件交付的装饰艺术小镇，正是严格按照这个顺序生成的，因此每个缺失的动词或系统都会在模型写代码之前被暴露出来。"
+          "question": "如何让模型修复缺陷？",
+          "answer": "描述一个可观察失败，要求最小补丁，再重新运行完整清单。"
+        },
+        {
+          "question": "Floatboat 的 Kimi K3 演示是基准吗？",
+          "answer": "不是，它只是一个有记录的成品，不保证每条提示词或每次运行。"
+        },
+        {
+          "question": "什么时候不应继续单文件？",
+          "answer": "需要测试、多关卡、授权素材、账户、联网、分析或多人协作时应拆分。"
         }
       ]
     },
@@ -9639,16 +9803,36 @@
     "/zh/blog/what-is-doubao-work": {
       "items": [
         {
-          "question": "豆包工作免费吗？",
-          "answer": "部分免费。个人版有带每日工作任务额度的免费档，更重的使用需要付费订阅——提高额度，并解锁云电脑与更高模型档位。免费与付费的边界随字节调整包装而变动，以官方定价页为准。团队版与企业版是按席位单独采购的，不是免费档里的加购。"
+          "question": "豆包工作是什么？",
+          "answer": "它是字节跳动面向多步骤办公与成品交付的 Agent 产品，不只是普通聊天。"
         },
         {
-          "question": "豆包工作有海外版吗？",
-          "answer": "没有——截至 2026 年 9 月没有国际版，产品面向中国大陆用户与飞书（Lark）组织。字节在海外的通用助手是 Dola，覆盖日常对话、写作与创作，但没有办公 Agent 入口、没有本地虚拟桌面操控、也没有飞书团队集成；想要 Agent 办公能力的海外用户只能看别家。"
+          "question": "所有账户的能力都一样吗？",
+          "answer": "不一样，工具受地区、账户、客户端、组织配置、权限和套餐影响。"
         },
         {
-          "question": "豆包工作和 Floatboat 怎么选？",
-          "answer": "看你的工作上下文住在哪里，因为两家继承的正是这个东西。团队的默认主场是飞书——群聊、文档、飞书管理的权限——豆包工作团队版会更原生，其 Windows 虚拟桌面操控也是本文各家中的独一份。工作围绕日历上的会议与 deadline 展开、希望准备和跟进「自动发生」而不是「按需请求」，Calendar-Driven 模式更合适。两者市场也不同：豆包工作先服务中国大陆，Floatboat 为跨国、跨时区使用而生。"
+          "question": "“本地”是否意味着数据绝不离开设备？",
+          "answer": "不能这样假设，应核对客户端、网络行为、隐私条款和任务模式。"
+        },
+        {
+          "question": "飞书集成能访问什么？",
+          "answer": "只能访问用户与组织权限允许的数据，但管理员仍应测试实际范围、分享、撤销和日志。"
+        },
+        {
+          "question": "生成的文档可以直接发布吗？",
+          "answer": "不可以自动视为合格，仍要核对引用、公式、版式、链接、媒体、可编辑性与审批。"
+        },
+        {
+          "question": "团队应怎样试点？",
+          "answer": "用非敏感副本运行可逆任务，写清工具、禁止动作、输出标准和审核人。"
+        },
+        {
+          "question": "应怎样评估价格？",
+          "answer": "核对当前额度、云电脑、模型、席位、存储、超额与续费，并计算每个验收成果成本。"
+        },
+        {
+          "question": "哪些团队不适合？",
+          "answer": "关键系统不受支持、政策禁止 Agent 操作 GUI，或地区与合同要求无法满足的团队。"
         }
       ]
     },

@@ -67,6 +67,8 @@ The browser is not a viewing window on the side of the workflow. It is one of Fl
 
 In the US Beauty & Personal Care Week 31 ranking, **DR.DENT Purple Mouthwash — Sachets 20 Pack** appeared in second place.
 
+**Data disclosure:** these FastMoss estimates were captured August 4–5, 2026 from the US Beauty & Personal Care Week 31 ranking. They are historical third-party estimates, not current TikTok figures or a product recommendation.
+
 FastMoss estimated:
 
   * **20.4K weekly units** ;

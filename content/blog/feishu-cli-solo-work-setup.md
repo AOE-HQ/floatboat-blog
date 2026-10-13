@@ -1,6 +1,6 @@
 ---
 title: "Feishu CLI in a Solo Work Setup: What It Actually Takes"
-description: "Want to connect Feishu CLI to your personal workflow? Here's what real solo integration looks like—and where it gets harder than expected."
+description: "A practical Feishu CLI guide for solo operators: official commands, authentication, least-privilege scopes, useful workflows, maintenance risks, and a safe pilot plan."
 slug: "feishu-cli-solo-work-setup"
 date: "2026-03-31"
 author: "Nova"
@@ -10,13 +10,13 @@ locale: "en"
 draft: false
 ---
 
-Hi, Nova is coming. Recently, [Feishu officially open-sourced Lark CLI](https://github.com/riba2534/feishu-cli), and it instantly took the developer and AI agent communities by storm. Many people are discussing how this finally allows AI assistants like Claude, Cursor, or others to directly control Feishu’s messages, calendars, documents, and multi-dimensional tables with a single command…
+[Lark CLI](https://github.com/larksuite/cli) is the official Feishu/Lark command-line tool maintained by the larksuite team. Its repository covers Messenger, Docs, Base, Calendar, Tasks, Meetings, and other domains, plus Agent-oriented skills. That breadth is useful, but it does not make every Feishu action a safe one-command automation.
 
 **Sounds cool, right?**
 
 But when you move from “occasionally letting AI send messages for me” to running automated workflows on your own long-term, the reality isn’t so simple.No one is there to handle tokens that suddenly stop working, and no one is there to help you debug broken scripts in the middle of the night. You have to shoulder all the maintenance and all the pitfalls yourself.
 
-That’s what I want to talk about—not a setup guide, nor API documentation, but what a solo operator actually faces after diving deep into the Feishu CLI.
+This is not an API reference. It is a decision guide for choosing what to automate, which scopes to grant, and how much maintenance the workflow deserves.
 
 ## What "Deep Integration" With Feishu CLI Actually Means
 
@@ -44,7 +44,7 @@ This is the most common starting point, and it's also the one that actually work
 
 The CLI makes this possible. You can search messages by keyword, filter by chat ID, and export wiki nodes as Markdown. **Where it gets interesting is the User Access Token requirement.** To read messages from chats the bot isn't directly part of — which is most of your real working chats — you need a User token, not just a bot/tenant token. That means going through the OAuth flow, which is a one-time browser authentication that generates a token you then need to store and refresh.
 
-The refresh window matters here. User access tokens have a validity period and need to be renewed periodically. If you set up a workflow and then don't touch it for a few weeks, you may come back to find everything quietly failing because the token expired and nothing told you. According to developer notes on related tools, **user_access_token typically has a validity of around 2 hours and requires a refresh mechanism** to stay active in automated contexts.
+Authentication can expire or be revoked, so unattended work needs error handling and a tested reauthorization path. Use Feishu's [current access-token documentation](https://open.feishu.cn/document/server-docs/api-call-guide/calling-process/get-access-token) for the applicable token type and renewal rules; do not copy a lifetime from an unrelated tool.
 
 ![3.png](/blog/images/feishu-cli-solo-work-setup/1774921818806-6cba93e2-cf70-472e-9b18-7de68f0ebea2.webp)
 
@@ -60,7 +60,7 @@ For a solo operator, that often means a small script living on your machine or a
 
 The most ambitious version of this: Feishu as a data hub, where information flows between it and your other tools — project trackers, note systems, writing environments, external databases. This is conceptually sound. Feishu's API covers enough surface area, and the [Feishu/Lark official MCP integration](https://github.com/larksuite/lark-openapi-mcp) has expanded the connective tissue between Feishu and AI-adjacent tools significantly.
 
-But in practice, every new connection you add is another thing that can silently stop working. Each integration has its own auth model, its own rate limits, its own API versioning schedule. **The complexity doesn't add linearly — it compounds.** Two integrations might be manageable; five becomes a part-time maintenance job.
+Every connection adds another authentication model, rate limit, schema, and failure path. Time the pilot and count recovery work instead of assuming a fixed number of integrations becomes unmanageable.
 
 ![4.png](/blog/images/feishu-cli-solo-work-setup/1774921833188-b6668ae3-34ac-4d8a-953f-84b02c18633d.webp)
 
@@ -70,7 +70,7 @@ But in practice, every new connection you add is another thing that can silently
 
 Let's be clear about what you actually need before any of this starts working:
 
-**You need a Feishu enterprise account, or access to one.** The open platform functionality isn't fully available to personal accounts. If you're on a team account, you need permission to create custom apps in the developer console. If you're truly solo and running your own Feishu workspace, this is possible, but it's not the default path most tutorials assume.
+**Verify app creation and administrator permissions in the current workspace.** Availability depends on tenant policy, app type, and the role assigned to the account.
 
 **You need to create and configure an app in the developer console.** This means setting a redirect URL, requesting the specific permission scopes you need, and getting those permissions approved. Some scopes are auto-approved; others require admin review, which for a solo workspace means reviewing your own request, which is fine but adds a step.
 
@@ -78,7 +78,7 @@ Let's be clear about what you actually need before any of this starts working:
 
 ### Where solo setups typically break down
 
-I've thought through the common failure points, and they cluster around a few predictable places:
+The common failure points cluster around a few predictable places:
 
 **Token expiry without silent retry.** This is the most common quiet failure. A workflow that ran fine for three weeks stops working, and the only signal is... nothing. No error alert, no Slack notification, because you didn't build that alerting layer. You notice when you check the output and it's stale.
 
@@ -94,7 +94,7 @@ Here's a framing shift that helped me think about this more clearly: **"it's wor
 
 A live integration has a heartbeat. Tokens need refreshing. APIs occasionally change their response format. The Feishu platform will deprecate endpoints — they already have a documented deprecated API path for older auth flows — and give you a migration window. If you're not periodically checking that your setup still works, you're accumulating invisible debt.
 
-For a solo operator, the realistic maintenance rhythm is: one check-in per month to confirm things are still running, plus an hour or two every few months to handle API updates or token rotation. That's not a lot, but it's not zero either.
+Set the maintenance interval from failure cost and observed change rate. Record authentication, API-change, retry, and recovery time during the pilot, then decide whether the automation remains worth owning.
 
 ## The Hidden Ongoing Work
 
@@ -140,7 +140,7 @@ Let me be honest about when this actually makes sense to invest in.
 
 A few questions worth sitting with before going deep on Feishu CLI integration as a solo operator:
 
-**Do you have a Feishu enterprise account with app creation permissions?** This is table stakes. Without it, you're limited in what you can actually build.
+**Can the current workspace create and authorize the required app?** Check the administrator policy before designing the workflow.
 
 **What's the failure cost of this workflow?** If it stops running silently for a week, what's the actual impact? If the answer is "I wouldn't notice," that's useful information about how much engineering it deserves.
 
@@ -152,4 +152,4 @@ The bottom line is that Feishu CLI is genuinely capable for solo operator use ca
 
 ![8.png](/blog/images/feishu-cli-solo-work-setup/1774921937517-a7d45c45-2b64-45fa-92d0-426eab1032a6.webp)
 
-_Anyway, that's what I've been figuring out. Still experimenting, still learning — but hopefully this gives you a clearer picture of what you're actually building before you're in the middle of it._
+Start with one read-only workflow, log every command, and add write scopes only after the output has a clear owner and rollback path. Compare the approach with [workflow builders versus AI workspaces](/blog/workflow-builder-vs-ai-workspace) and [agents for repeated work](/blog/how-to-build-ai-agents-for-repeated-work).
