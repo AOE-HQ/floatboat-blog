@@ -2,8 +2,8 @@
   "slug": "consultants",
   "locale": "zh",
   "seo": {
-    "title": "咨询顾问 AI 工作空间：研究、分析与客户交付 | Floatboat",
-    "description": "把客户背景、行业研究、分析过程、工作坊准备和可编辑交付物放进一个可控的咨询顾问 AI 工作空间，让证据、建议与最终汇报保持一致。",
+    "title": "咨询顾问 Agent Workspace：研究、分析与交付 | Floatboat",
+    "description": "面向咨询顾问与咨询团队的 AI Agent Workspace，用于整理客户背景、开展行业研究、比较方案、准备工作坊，并生成可编辑的客户交付物。",
     "keywords": [
       "咨询顾问 AI",
       "咨询行业工具",
@@ -16,7 +16,7 @@
   "breadcrumb": "顾问与咨询团队",
   "hero": {
     "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "从零散客户信息更快走到可核查的建议与交付。",
+    "title": "面向咨询顾问与咨询团队的 AI Agent Workspace",
     "description": "把客户背景、行业研究、分析过程、工作坊准备和可编辑交付物放进一个可控的咨询顾问 AI 工作空间。",
     "primaryCta": {
       "label": "下载 Floatboat",

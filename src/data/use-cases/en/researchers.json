@@ -2,8 +2,8 @@
   "slug": "researchers",
   "locale": "en",
   "seo": {
-    "title": "AI Workspace for Researchers: Literature Reviews and Evidence Synthesis | Floatboat",
-    "description": "Collect sources, build evidence matrices, compare findings, and maintain recurring research briefs while preserving human verification and methodology.",
+    "title": "Agent Workspace for Researchers | Floatboat",
+    "description": "An AI agent workspace for researchers to collect sources, build evidence matrices, compare findings, draft literature reviews, and maintain research briefs.",
     "keywords": [
       "AI for researchers",
       "AI research assistant",
@@ -16,7 +16,7 @@
   "breadcrumb": "researchers and insight teams",
   "hero": {
     "eyebrow": "A configurable AI workspace for real work",
-    "title": "Keep the source trail intact from first question to final synthesis.",
+    "title": "An AI agent workspace for researchers and insight teams",
     "description": "Collect sources, build evidence matrices, compare findings, and maintain recurring research briefs while preserving human verification and methodology.",
     "primaryCta": {
       "label": "Download Floatboat",

@@ -2,8 +2,8 @@
   "slug": "marketers",
   "locale": "en",
   "seo": {
-    "title": "AI Workspace for Marketers: Campaign Research, Content and Reporting | Floatboat",
-    "description": "Connect audience research, campaign briefs, content adaptation, and performance reporting in a reviewable AI workspace for marketing teams.",
+    "title": "Agent Workspace for Marketers and Campaign Work | Floatboat",
+    "description": "An AI agent workspace for marketers to connect audience research, campaign briefs, content production, channel adaptation, and performance reporting.",
     "keywords": [
       "AI for marketers",
       "AI marketing tools",
@@ -16,7 +16,7 @@
   "breadcrumb": "marketers and growth teams",
   "hero": {
     "eyebrow": "A configurable AI workspace for real work",
-    "title": "Connect the campaign from audience evidence to approved assets and results.",
+    "title": "An AI agent workspace for marketers and growth teams",
     "description": "Connect audience research, campaign briefs, content adaptation, and performance reporting in a reviewable AI workspace for marketing teams.",
     "primaryCta": {
       "label": "Download Floatboat",

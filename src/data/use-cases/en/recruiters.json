@@ -2,8 +2,8 @@
   "slug": "recruiters",
   "locale": "en",
   "seo": {
-    "title": "AI Workspace for Recruiters: Intake, Interviews and Candidate Coordination | Floatboat",
-    "description": "Structure hiring intake, candidate evidence, interview preparation, and status communication in a human-controlled AI workspace for recruiting teams.",
+    "title": "Agent Workspace for Recruiters and Hiring Teams | Floatboat",
+    "description": "An AI agent workspace for recruiters to clarify hiring needs, organize candidate evidence, prepare interviews, coordinate feedback, and draft status updates.",
     "keywords": [
       "AI for recruiters",
       "AI recruiting tools",
@@ -16,7 +16,7 @@
   "breadcrumb": "recruiters and talent teams",
   "hero": {
     "eyebrow": "A configurable AI workspace for real work",
-    "title": "Make the hiring process clearer without outsourcing the hiring decision.",
+    "title": "An AI agent workspace for recruiters and talent teams",
     "description": "Structure hiring intake, candidate evidence, interview preparation, and status communication in a human-controlled AI workspace for recruiting teams.",
     "primaryCta": {
       "label": "Download Floatboat",

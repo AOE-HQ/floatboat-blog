@@ -2,8 +2,8 @@
   "slug": "executive-assistants",
   "locale": "en",
   "seo": {
-    "title": "AI Workspace for Executive Assistants: Meetings, Follow-ups and Briefings | Floatboat",
-    "description": "Prepare meetings, recover decisions, coordinate follow-ups, and assemble weekly executive briefs in a controlled AI workspace.",
+    "title": "Agent Workspace for Executive Assistants | Floatboat",
+    "description": "An AI agent workspace for executive assistants to prepare meetings, recover decisions, coordinate follow-ups, track actions, and assemble executive briefs.",
     "keywords": [
       "AI for executive assistants",
       "executive assistant AI tools",
@@ -16,7 +16,7 @@
   "breadcrumb": "executive assistants and operations partners",
   "hero": {
     "eyebrow": "A configurable AI workspace for real work",
-    "title": "Keep leaders prepared and commitments visible without losing human discretion.",
+    "title": "An AI agent workspace for executive assistants",
     "description": "Prepare meetings, recover decisions, coordinate follow-ups, and assemble weekly executive briefs in a controlled AI workspace.",
     "primaryCta": {
       "label": "Download Floatboat",

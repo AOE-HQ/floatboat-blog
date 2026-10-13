@@ -2,8 +2,8 @@
   "slug": "researchers",
   "locale": "zh",
   "seo": {
-    "title": "研究人员 AI 工作空间：文献综述与证据综合 | Floatboat",
-    "description": "集中收集资料、构建证据矩阵、比较研究结论并持续维护研究简报，让每项发现都能回到来源，同时保留人工核验与方法判断。",
+    "title": "研究人员 Agent Workspace：文献综述与证据综合 | Floatboat",
+    "description": "面向研究人员与洞察团队的 AI Agent Workspace，用于收集来源、构建证据矩阵、比较研究结论、准备文献综述并持续维护研究简报。",
     "keywords": [
       "研究人员 AI",
       "AI 研究助手",
@@ -16,7 +16,7 @@
   "breadcrumb": "研究人员与洞察团队",
   "hero": {
     "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "从研究问题到最终综合，始终保留完整证据链。",
+    "title": "面向研究人员与洞察团队的 AI Agent Workspace",
     "description": "集中收集资料、构建证据矩阵、比较研究结论并持续维护研究简报，同时保留人工核验与方法判断。",
     "primaryCta": {
       "label": "下载 Floatboat",

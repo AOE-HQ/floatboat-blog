@@ -2,14 +2,14 @@
   "slug": "lawyers",
   "locale": "zh",
   "seo": {
-    "title": "律师 AI 工作空间：文件、研究与法律工作准备 | Floatboat",
-    "description": "使用 Floatboat 整理案件材料、准备法律检索、比较文档版本、建立时间线并生成可审阅的法律工作成果，专业判断始终由律师掌握。",
+    "title": "律师 Agent Workspace：案件、研究与文书准备 | Floatboat",
+    "description": "面向律师与法律团队的 AI Agent Workspace，用于整理案件文件、准备法律研究、比较文档版本、建立时间线并生成可审阅的法律文书初稿。",
     "keywords": ["律师 AI", "法律 AI", "AI 法律助手", "AI 法律检索", "AI 合同审阅", "法律文档自动化", "律师工作流"]
   },
   "breadcrumb": "律师与法律团队",
   "hero": {
     "eyebrow": "为法律工作配置的 AI 工作空间",
-    "title": "推进繁重工作，把法律判断留在自己手中。",
+    "title": "面向律师与法律团队的 AI Agent Workspace",
     "description": "Floatboat 围绕案件与项目处理工作：整理文件、还原事实、比较版本、准备研究材料，把来源转成可审阅的初稿。模板、清单和审批点仍由你定义。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-lawyers&download_placement=hero" },
     "secondaryCta": { "label": "查看示例流程", "href": "#workflows" },

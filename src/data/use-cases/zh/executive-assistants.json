@@ -2,8 +2,8 @@
   "slug": "executive-assistants",
   "locale": "zh",
   "seo": {
-    "title": "行政助理 AI 工作空间：会议、跟进与管理简报 | Floatboat",
-    "description": "在可控的 AI 工作空间中准备会议、还原决策、协调跟进，并汇总每周管理简报，让日程背景、行动事项与重要承诺始终清晰可查。",
+    "title": "行政助理 Agent Workspace：会议、跟进与管理简报 | Floatboat",
+    "description": "面向行政助理与管理支持团队的 AI Agent Workspace，用于准备会议、整理决策、协调跟进、追踪行动事项并汇总每周管理简报。",
     "keywords": [
       "行政助理 AI",
       "高管助理工具",
@@ -16,7 +16,7 @@
   "breadcrumb": "行政助理与管理支持团队",
   "hero": {
     "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "让管理者随时掌握背景与承诺，同时保留必要的人为判断。",
+    "title": "面向行政助理与管理支持团队的 AI Agent Workspace",
     "description": "在可控的 AI 工作空间中准备会议、还原决策、协调跟进，并汇总每周管理简报。",
     "primaryCta": {
       "label": "下载 Floatboat",

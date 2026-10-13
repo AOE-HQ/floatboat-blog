@@ -2,8 +2,8 @@
   "slug": "teachers",
   "locale": "en",
   "seo": {
-    "title": "AI Workspace for Teachers: Lessons, Classes and Career Materials | Floatboat",
-    "description": "Organize teaching materials, prepare lesson packs, draft class communications, and maintain a reviewable teaching portfolio in one AI workspace.",
+    "title": "Agent Workspace for Teachers and Lesson Planning | Floatboat",
+    "description": "An AI agent workspace for teachers to organize course materials, plan lessons, prepare presentations, draft class communications, and maintain career evidence.",
     "keywords": [
       "AI for teachers",
       "teacher AI tools",
@@ -16,7 +16,7 @@
   "breadcrumb": "teachers and education teams",
   "hero": {
     "eyebrow": "A configurable AI workspace for real work",
-    "title": "Spend less time rebuilding teaching materials. Keep every educational decision yours.",
+    "title": "An AI agent workspace for teachers and education teams",
     "description": "Organize teaching materials, prepare lesson packs, draft class communications, and maintain a reviewable teaching portfolio in one AI workspace.",
     "primaryCta": {
       "label": "Download Floatboat",

@@ -2,8 +2,8 @@
   "slug": "financial-analysts",
   "locale": "en",
   "seo": {
-    "title": "AI Workspace for Financial Analysts: Research, Reporting and Monitoring | Floatboat",
-    "description": "Organize financial sources, prepare variance commentary, build research packets, and maintain recurring monitoring with reviewable assumptions.",
+    "title": "Agent Workspace for Financial Analysts | Floatboat",
+    "description": "An AI agent workspace for financial analysts to organize source data, prepare variance commentary, build research packets, and maintain recurring monitoring.",
     "keywords": [
       "AI for financial analysts",
       "financial analysis AI",
@@ -16,7 +16,7 @@
   "breadcrumb": "financial analysts and finance teams",
   "hero": {
     "eyebrow": "A configurable AI workspace for real work",
-    "title": "Spend less time assembling the packet and more time testing the assumptions.",
+    "title": "An AI agent workspace for financial analysts and finance teams",
     "description": "Organize financial sources, prepare variance commentary, build research packets, and maintain recurring monitoring with reviewable assumptions.",
     "primaryCta": {
       "label": "Download Floatboat",

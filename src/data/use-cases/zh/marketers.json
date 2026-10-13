@@ -2,8 +2,8 @@
   "slug": "marketers",
   "locale": "zh",
   "seo": {
-    "title": "市场营销 AI 工作空间：活动研究、内容与复盘 | Floatboat",
-    "description": "在可核查的市场营销 AI 工作空间中，连接受众研究、活动简报、内容适配与效果复盘，让团队从证据、创意到数据形成完整闭环。",
+    "title": "市场营销 Agent Workspace：活动、内容与复盘 | Floatboat",
+    "description": "面向市场与增长团队的 AI Agent Workspace，用于连接受众研究、营销活动简报、内容制作、多渠道适配与营销效果复盘。",
     "keywords": [
       "市场营销 AI",
       "AI 营销工具",
@@ -16,7 +16,7 @@
   "breadcrumb": "市场与增长团队",
   "hero": {
     "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "把受众证据、已审批素材与活动结果连接成完整工作流。",
+    "title": "面向市场与增长团队的 AI Agent Workspace",
     "description": "在可核查的市场营销 AI 工作空间中，连接受众研究、活动简报、内容适配与效果复盘。",
     "primaryCta": {
       "label": "下载 Floatboat",

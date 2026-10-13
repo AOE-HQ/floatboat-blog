@@ -2,14 +2,14 @@
   "slug": "lawyers",
   "locale": "en",
   "seo": {
-    "title": "AI Workspace for Lawyers and Legal Teams | Floatboat",
-    "description": "Use Floatboat to organize matter files, prepare legal research, compare document versions, build timelines, and create reviewable legal work products under human control.",
+    "title": "Agent Workspace for Lawyers: Legal Workflows | Floatboat",
+    "description": "An AI agent workspace for lawyers to organize matter files, prepare legal research, compare documents, build timelines, and create reviewable legal drafts.",
     "keywords": ["AI for lawyers", "legal AI", "AI legal assistant", "AI legal research", "AI contract review", "legal document automation", "legal workflow automation"]
   },
   "breadcrumb": "Lawyers and legal teams",
   "hero": {
     "eyebrow": "A configurable AI workspace for legal work",
-    "title": "Move the work forward. Keep the legal judgment yours.",
+    "title": "An AI agent workspace for lawyers and legal teams",
     "description": "Floatboat works around your matters: organizing files, tracing facts, comparing versions, preparing research, and turning source material into reviewable drafts. You provide the playbook, templates, and approval points.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=hero" },
     "secondaryCta": { "label": "Explore sample workflows", "href": "#workflows" },

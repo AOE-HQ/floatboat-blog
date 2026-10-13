@@ -2,8 +2,8 @@
   "slug": "financial-analysts",
   "locale": "zh",
   "seo": {
-    "title": "财务分析师 AI 工作空间：研究、报告与持续监控 | Floatboat",
-    "description": "整理财务资料、准备差异说明、构建研究资料包并持续监控，把数字、业务背景和来源连接起来，同时让关键假设始终可核查。",
+    "title": "财务分析师 Agent Workspace：研究、报告与监控 | Floatboat",
+    "description": "面向财务分析师与企业财务团队的 AI Agent Workspace，用于整理财务数据、准备差异分析、构建研究资料包并持续监控关键指标。",
     "keywords": [
       "财务分析 AI",
       "财务分析师工具",
@@ -16,7 +16,7 @@
   "breadcrumb": "财务分析师与企业财务团队",
   "hero": {
     "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "少花时间拼资料，把精力用于检验关键假设。",
+    "title": "面向财务分析师与企业财务团队的 AI Agent Workspace",
     "description": "整理财务资料、准备差异说明、构建研究资料包并持续监控，同时让关键假设始终可核查。",
     "primaryCta": {
       "label": "下载 Floatboat",

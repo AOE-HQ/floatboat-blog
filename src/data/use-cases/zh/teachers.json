@@ -2,8 +2,8 @@
   "slug": "teachers",
   "locale": "zh",
   "seo": {
-    "title": "教师 AI 工作空间：课件、班级事务与职业材料 | Floatboat",
-    "description": "在一个 AI 工作空间中整理教学材料、制作课件包、准备班级沟通内容，并持续维护可核查的教师职业材料。",
+    "title": "教师 Agent Workspace：备课、课件与班级事务 | Floatboat",
+    "description": "面向教师与教研团队的 AI Agent Workspace，用于整理课程资料、准备教案和课件、起草班级沟通内容，并持续维护教师职业发展材料。",
     "keywords": [
       "教师 AI",
       "AI 备课",
@@ -16,7 +16,7 @@
   "breadcrumb": "教师与教研团队",
   "hero": {
     "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "少做重复整理，把时间留给真正的教学判断。",
+    "title": "面向教师与教研团队的 AI Agent Workspace",
     "description": "在一个 AI 工作空间中整理教学材料、制作课件包、准备班级沟通内容，并持续维护可核查的教师职业材料。",
     "primaryCta": {
       "label": "下载 Floatboat",

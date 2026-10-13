@@ -2,8 +2,8 @@
   "slug": "consultants",
   "locale": "en",
   "seo": {
-    "title": "AI Workspace for Consultants: Research, Analysis and Client Delivery | Floatboat",
-    "description": "Bring client context, research, analysis, workshop preparation, and editable deliverables into a controlled AI workspace for consultants.",
+    "title": "Agent Workspace for Consultants and Client Work | Floatboat",
+    "description": "An AI agent workspace for consultants to organize client context, conduct research, compare options, prepare workshops, and create editable deliverables.",
     "keywords": [
       "AI for consultants",
       "consulting AI tools",
@@ -16,7 +16,7 @@
   "breadcrumb": "consultants and advisory teams",
   "hero": {
     "eyebrow": "A configurable AI workspace for real work",
-    "title": "Move from scattered client context to a reviewable recommendation faster.",
+    "title": "An AI agent workspace for consultants and advisory teams",
     "description": "Bring client context, research, analysis, workshop preparation, and editable deliverables into a controlled AI workspace for consultants.",
     "primaryCta": {
       "label": "Download Floatboat",

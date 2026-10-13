@@ -2,8 +2,8 @@
   "slug": "recruiters",
   "locale": "zh",
   "seo": {
-    "title": "招聘 AI 工作空间：需求澄清、面试与候选人协同 | Floatboat",
-    "description": "在人工控制的招聘 AI 工作空间中，整理用人需求、候选人证据、面试准备与进度沟通，让招聘团队更快恢复背景并保持评价标准一致。",
+    "title": "招聘 Agent Workspace：需求、面试与候选人协同 | Floatboat",
+    "description": "面向招聘与人才团队的 AI Agent Workspace，用于澄清用人需求、整理候选人证据、准备面试、汇总反馈并起草招聘进度沟通。",
     "keywords": [
       "招聘 AI",
       "AI 招聘工具",
@@ -16,7 +16,7 @@
   "breadcrumb": "招聘与人才团队",
   "hero": {
     "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "让招聘流程更清晰，但不把用人决定交给 AI。",
+    "title": "面向招聘与人才团队的 AI Agent Workspace",
     "description": "在人工控制的招聘 AI 工作空间中，整理用人需求、候选人证据、面试准备与进度沟通。",
     "primaryCta": {
       "label": "下载 Floatboat",

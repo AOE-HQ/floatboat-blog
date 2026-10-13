@@ -29,7 +29,7 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
       description: page.seo.description,
       url: `${SITE_ORIGIN}${path}`,
       inLanguage: isZh ? "zh-CN" : "en-US",
-      about: { "@type": "Thing", name: isZh ? "律师 AI 工作空间" : "AI workspace for lawyers" },
+      about: { "@type": "Thing", name: page.hero.title },
     },
     {
       "@context": "https://schema.org",
