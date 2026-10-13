@@ -46,6 +46,18 @@ For API tools, record input images, output size, quality, edits, retries, ground
 
 Commercial use is not one checkbox. Confirm account tier, ownership language, privacy mode, training/data terms, reference-image rights, trademark use, client disclosure, and local law. Generated files may carry provenance signals such as SynthID; a watermark or metadata marker does not itself settle copyright ownership.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![GPT Image 2 vs Midjourney vs Nano Banana 2 for Creators original visual reference 1](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258121575-7df5df29-3319-44f5-b0d7-47b5487aebef.webp)
+
+![GPT Image 2 vs Midjourney vs Nano Banana 2 for Creators original visual reference 2](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258131708-4d5133f4-13e6-440f-a47e-ab8388c35a16.webp)
+
+![GPT Image 2 vs Midjourney vs Nano Banana 2 for Creators original visual reference 3](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258142374-e9744eed-c845-45ea-836c-627ec578ae78.webp)
+
+![GPT Image 2 vs Midjourney vs Nano Banana 2 for Creators original visual reference 4](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258152422-cb2fa446-1ab8-4602-9449-557bf9c1db2b.webp)
+
 ## A conditional selection rule
 
 Choose the tool with the lowest cost per accepted asset in your test pack. Keep a second tool only when it covers a measured failure class—such as text layout, iterative editing, or concept breadth—that the first cannot. If you are building an automated pipeline, also compare API availability and review controls; the broader [agentic AI tools guide](/blog/agentic-ai-tools) explains why a strong standalone generator may still be a poor automation component.

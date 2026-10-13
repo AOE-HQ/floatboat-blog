@@ -52,6 +52,16 @@ Genspark 将自己描述为具备 Super Agent 能力的 [AI 工作区](https://w
 
 积分制会让订阅标价失去完整含义。先估算每月研究次数、交付物生成、重试与高级工具调用，再用有代表性的一周进行测试。不要照抄历史对比文章的价格。Genspark 可参考[Genspark 定价与积分](/zh/blog/genspark-ai-pricing)中的核算问题；Manus 也应使用同样方法检查其当前套餐页。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![Genspark 对比 Manus：研究创作工具还是执行系统 原文视觉资料 1](/blog/images/genspark-vs-manus/1774490447280-9b914f3a-6d09-481b-8010-1da20c57960e.webp)
+
+![Genspark 对比 Manus：研究创作工具还是执行系统 原文视觉资料 2](/blog/images/genspark-vs-manus/1774490470107-d441d25b-5db9-4e40-942d-73baef56a8b4.webp)
+
+![Genspark 对比 Manus：研究创作工具还是执行系统 原文视觉资料 3](/blog/images/genspark-vs-manus/1774490483985-beeef324-09b1-42b5-b9c9-9db4cf561ae4.webp)
+
 ## 到底选谁
 
 若你的主要工作是搜集来源并形成可展示的结果，Genspark 更值得优先试；若核心需求是把跨工具的长任务链整体委派出去，Manus 更值得优先试。若敏感账号缺少足够权限控制、引用无法检查，或重试成本无法预测，两者都不应直接进入生产流程。只有先定义测试标准，[Manus 替代品](/zh/blog/manus-ai-alternatives-2026)清单才有意义。

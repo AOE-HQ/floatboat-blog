@@ -192,6 +192,18 @@ draft: false
 
 答案可能是无代码平台、可视化 AI 环境、开发框架，也可能根本不需要 Agent。一个可复现的选型过程，比一张通用排行榜更有用，也更能在演示结束后经得住追问。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![2026 年最好的 AI Agent 构建工具 原文视觉资料 1](/blog/images/best-ai-agent-builder-2026/1779086218018-24593c16-18be-4dc3-a236-f6dd644f3d0d.webp)
+
+![2026 年最好的 AI Agent 构建工具 原文视觉资料 2](/blog/images/best-ai-agent-builder-2026/1779086227748-1bc8284e-63f7-4d0e-879c-09277e31765d.webp)
+
+![2026 年最好的 AI Agent 构建工具 原文视觉资料 3](/blog/images/best-ai-agent-builder-2026/1779086236433-63107e26-53c2-4306-9172-bec42b38126d.webp)
+
+![2026 年最好的 AI Agent 构建工具 原文视觉资料 4](/blog/images/best-ai-agent-builder-2026/1779086246298-e3d061fb-8629-442d-b26b-3c5a9e30f4a5.webp)
+
 ## 本文框架使用的官方资料
 
 - [Zapier：Agents 的用量如何计量](https://help.zapier.com/hc/en-us/articles/26559132765325-How-is-Zapier-Agents-usage-measured)

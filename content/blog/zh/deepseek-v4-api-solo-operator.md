@@ -59,6 +59,18 @@ DeepSeek 的[模型与价格文档](https://api-docs.deepseek.com/zh-cn/quick_st
 
 编程场景可使用 DeepSeek 官方提供的 Claude Code 与 Codex 接入方式，但切换端点不会消除框架的安全责任，详见 [DeepSeek Agent 与 Claude Code 对比](/zh/blog/deepseek-agent-vs-claude-code)。当前 Flash 检查点与旧别名状态见 [DeepSeek V4.1 Flash](/zh/blog/deepseek-v4-1-flash)。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![单人经营者使用 DeepSeek V4 API：价格、模型与成本控制 原文视觉资料 1](/blog/images/deepseek-v4-api-solo-operator/1776413461448-d1c3274b-41e7-4d31-a4be-9a59ffc43c71.webp)
+
+![单人经营者使用 DeepSeek V4 API：价格、模型与成本控制 原文视觉资料 2](/blog/images/deepseek-v4-api-solo-operator/1776413632447-73e65788-435c-462e-9a96-cc8e9b3a43af.webp)
+
+![单人经营者使用 DeepSeek V4 API：价格、模型与成本控制 原文视觉资料 3](/blog/images/deepseek-v4-api-solo-operator/1776413656912-e0bed04f-03ea-492e-af8a-df448e2a6106.webp)
+
+![单人经营者使用 DeepSeek V4 API：价格、模型与成本控制 原文视觉资料 4](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
+
 ## 什么情况下值得用
 
 如果工作量大、结果可审核，并能接受供应商路由变化，它值得进入试点。如果监管要求固定检查点、跨时区延迟必须恒定，或核心集成未受支持，就应谨慎。“便宜”足以换来一次受控测试，但不足以直接批准生产上线。

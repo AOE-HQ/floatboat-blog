@@ -58,6 +58,16 @@ Anthropic 的[有效 Agent 构建指南](https://www.anthropic.com/engineering/b
 
 测试案例应包含重复事件、缺失字段、来源冲突、凭据撤销、超时与部分写入，并记录验收结果、人工介入率、恢复时间和总成本。更宽泛的[工作流构建器与 AI 工作区指南](/zh/blog/workflow-builder-vs-ai-workspace)回答工作放在哪里，本页只回答执行路径如何选择。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![工作区 Agent vs 工作流搭建器：一次讲清楚的对比 原文视觉资料 1](/blog/images/workspace-agents-for-solo-operators/1777428202705-5c36983c-9e91-4a06-8312-69ae8ca7113b.webp)
+
+![工作区 Agent vs 工作流搭建器：一次讲清楚的对比 原文视觉资料 2](/blog/images/ai-workspace-agents/1776938916972-34287d3b-e1da-4167-b3aa-bd7bb9e225ed.webp)
+
+![工作区 Agent vs 工作流搭建器：一次讲清楚的对比 原文视觉资料 3](/blog/images/workspace-agents-vs-workflow-builders/1777341489448-c8adee60-91c1-4eef-bf0d-39c26644a653.webp)
+
 ## 结论
 
 工作流构建器没有过时，工作区 Agent 也不是通用替代品。稳定传输和重复使用规则，变化解释使用边界明确的 Agent，难以撤销的后果保留人工审批。

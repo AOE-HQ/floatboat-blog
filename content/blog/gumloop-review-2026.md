@@ -96,6 +96,16 @@ Look elsewhere when a native rule already solves the task; every case has a diff
 
 Use the same pilot cases when comparing platforms. Our guides to [Gumloop alternatives](/blog/gumloop-alternatives-2026), [Lindy versus Gumloop](/blog/lindy-vs-gumloop), and [Relevance AI versus n8n](/blog/relevance-ai-vs-n8n) can form a shortlist, but the winning tool is the one that passes your permissions, recovery, and accepted-output tests.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Gumloop Review 2026: Powerful, But Is It Right for You? original visual reference 1](/blog/images/gumloop-review-2026/1774256617943-2315a1e0-c658-4252-8f4d-851d922ff4d5.webp)
+
+![Gumloop Review 2026: Powerful, But Is It Right for You? original visual reference 2](/blog/images/gumloop-review-2026/1774256629584-868f68d2-9e14-410d-9be8-7c7bb7a2667f.webp)
+
+![Gumloop Review 2026: Powerful, But Is It Right for You? original visual reference 3](/blog/images/gumloop-review-2026/1774256641947-3e99ec7c-014a-4cb9-b5a1-03534423a3ee.webp)
+
 ## Final verdict
 
 Gumloop's appeal is not simply “no-code AI.” It is the combination of explicit workflow logic with AI or agentic steps, delivered through triggers and interfaces. That is valuable for teams willing to operate automations as systems rather than demos.

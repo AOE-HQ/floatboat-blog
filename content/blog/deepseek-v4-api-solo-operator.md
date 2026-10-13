@@ -59,6 +59,18 @@ Run a small acceptance set before increasing volume:
 
 For coding, DeepSeek publishes official integrations for Claude Code and Codex. Switching the endpoint does not remove the harness’s security responsibilities; compare the trade-offs in [DeepSeek Agent versus Claude Code](/blog/deepseek-agent-vs-claude-code). For the current Flash checkpoint and retired aliases, see [DeepSeek V4.1 Flash](/blog/deepseek-v4-1-flash).
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![DeepSeek V4 API for Solo Operators: Pricing, Models, and Cost Controls original visual reference 1](/blog/images/deepseek-v4-api-solo-operator/1776413461448-d1c3274b-41e7-4d31-a4be-9a59ffc43c71.webp)
+
+![DeepSeek V4 API for Solo Operators: Pricing, Models, and Cost Controls original visual reference 2](/blog/images/deepseek-v4-api-solo-operator/1776413632447-73e65788-435c-462e-9a96-cc8e9b3a43af.webp)
+
+![DeepSeek V4 API for Solo Operators: Pricing, Models, and Cost Controls original visual reference 3](/blog/images/deepseek-v4-api-solo-operator/1776413656912-e0bed04f-03ea-492e-af8a-df448e2a6106.webp)
+
+![DeepSeek V4 API for Solo Operators: Pricing, Models, and Cost Controls original visual reference 4](/blog/images/deepseek-v4-api-solo-operator/1776413688715-c7d724ee-1839-4880-922f-cd39d3828586.webp)
+
 ## When the API is a good fit
 
 It is a reasonable candidate when workloads are high-volume, reviewable, and tolerant of provider routing changes. It is a weaker fit when regulation requires a pinned checkpoint, when latency must be uniform across time zones, or when an unsupported integration is central to the workflow. “Low price” should earn a controlled pilot, not automatic production approval.

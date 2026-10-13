@@ -59,6 +59,14 @@ Raise the price when qualified demand exceeds capacity, outcomes are consistent,
 
 Pricing evidence becomes especially valuable while finding the [first 100 customers](/blog/first-100-customers-solo-founder). Later, use the unit-economics approach in [scaling without hiring](/blog/scale-one-person-business-without-hiring) to test whether price supports sustainable capacity.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Solopreneur Pricing: Why You Should Charge from Day One original visual reference 1](/blog/images/solopreneur-pricing-day-one/1776075047063-f8752e8e-137d-4450-95a3-65cb02f510c2.webp)
+
+![Solopreneur Pricing: Why You Should Charge from Day One original visual reference 2](/blog/images/solopreneur-pricing-day-one/1776075060801-9e0470a1-3267-4196-932f-fd5351b85f73.webp)
+
 ## Review every quarter
 
 Review conversion by buyer segment, common objections, actual delivery and support time, rework, direct cost, margin contribution, refunds, and which outcomes customers reference. The goal is not endless price increases. It is a price and package that the right customer understands and the business can deliver responsibly.

@@ -128,6 +128,16 @@ Migration is not automatically progress. Stay on Gumloop when current flows meet
 
 First remove unnecessary AI calls, modularize repeated logic, tighten inputs, and measure real task breakdowns. Switch when the gap is structural—hosting, identity, approval, audit, connector action, or portability—not because another product has a more attractive demo.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Gumloop Alternatives in 2026: What Else Is Worth Considering original visual reference 1](/blog/images/gumloop-alternatives-2026/1774343510434-c82b392f-9bd4-46be-a413-f7571234445d.webp)
+
+![Gumloop Alternatives in 2026: What Else Is Worth Considering original visual reference 2](/blog/images/gumloop-alternatives-2026/1774343522861-d0c6b853-e264-4aa0-8d06-cc7c9096b1fb.webp)
+
+![Gumloop Alternatives in 2026: What Else Is Worth Considering original visual reference 3](/blog/images/gumloop-alternatives-2026/1774343538289-476a6d1b-9fa8-4a9a-96fc-3965b592b97f.webp)
+
 ## Final recommendation
 
 - Test **n8n** for self-hosting, custom logic, and infrastructure control.

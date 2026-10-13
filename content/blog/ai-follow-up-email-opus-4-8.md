@@ -34,6 +34,14 @@ Anthropic's [Opus 4.8 announcement](https://www.anthropic.com/news/claude-opus-4
 
 Neither source establishes accuracy for meeting decision extraction or email drafting. Coding benchmarks cannot be used as evidence for this different task. A team should evaluate Opus 4.8 and any alternative model against its own labeled transcripts: measure missed decisions, invented commitments, wrong owners, wrong dates, and the edits reviewers make.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![AI Follow-Up Emails After Meetings original visual reference 1](/blog/images/ai-follow-up-email-opus-4-8/1780822556549-28ae8788-b551-4230-adc8-6f49efc43c9a.webp)
+
+![AI Follow-Up Emails After Meetings original visual reference 2](/blog/images/effort-control-fast-mode-ai-work/1780055413120-b997b912-360f-4319-8c30-31e16cf4fbf9.webp)
+
 ## A review checklist
 
 - Are recipients and confidentiality appropriate?

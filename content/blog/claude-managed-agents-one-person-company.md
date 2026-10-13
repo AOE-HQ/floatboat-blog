@@ -46,6 +46,14 @@ Use a workspace workflow when a person remains present, inputs vary, and judgmen
 
 The boundary also affects cost. Evaluate model usage, runtime, retries, storage, monitoring, and the time spent investigating failures. Do not decide from a single per-token or per-session number; current prices and beta terms should be checked in Anthropic’s live documentation.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Claude Managed Agents: What They Mean for Solo Companies original visual reference 1](/blog/images/claude-managed-agents-one-person-company/1776822533985-4bddac22-d618-4b19-9906-2db1cc5a6cd8.webp)
+
+![Claude Managed Agents: What They Mean for Solo Companies original visual reference 2](/blog/images/claude-managed-agents-one-person-company/1776822548756-887df77a-e298-485b-ae80-3f2567e1bac1.webp)
+
 ## A safe pilot for a one-person company
 
 Start with one reversible workflow and synthetic or low-sensitivity data. Limit tools to the minimum needed. Require approval before messages, purchases, deletions, or production changes. Log source inputs, tool calls, outputs, and reviewer decisions. Test missing data, malicious instructions inside documents, duplicate triggers, and recovery after interruption.

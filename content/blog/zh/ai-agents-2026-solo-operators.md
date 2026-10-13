@@ -172,6 +172,16 @@ Agent 成本包括模型、搜索、工具动作、重试、订阅和人工复�
 
 [单人创业者 AI 工作流指南](/zh/blog/ai-workflow-for-solo-founders)可以帮助你在自动化前写清流程。任务若需要长期项目知识，可继续看 [LLM 知识库指南](/zh/blog/llm-knowledge-base-solo-operators)。要区分真实杠杆与演示效果，则可参考[经得起实际工作的 AI Agent 用例](/zh/blog/ai-agent-use-cases-real-examples)。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![2026 年 AI Agent：单人创业者真正需要知道的事 原文视觉资料 1](/blog/images/ai-agents-2026-solo-operators/1775544775539-e804c584-d9f1-49fb-892a-d37f2d3a708a.webp)
+
+![2026 年 AI Agent：单人创业者真正需要知道的事 原文视觉资料 2](/blog/images/ai-agents-2026-solo-operators/1775544784583-b2c02934-2d06-4cb0-825b-ecdab09ba8b2.webp)
+
+![2026 年 AI Agent：单人创业者真正需要知道的事 原文视觉资料 3](/blog/images/ai-agents-2026-solo-operators/1775544805101-b21360a4-d95d-4dda-8c61-bae9406d801c.webp)
+
 ## 结论
 
 2026 年的一手证据支持一个比标题更窄的结论：模型获得了更多使用工具的方式；开放标准得到机构支持；工作中的 AI 使用继续增长；安全机构开始把 Agent 身份、授权和工具接入视为独立治理问题。

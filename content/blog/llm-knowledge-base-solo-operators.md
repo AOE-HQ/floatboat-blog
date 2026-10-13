@@ -46,6 +46,12 @@ Build a custom system only when you need unusual source handling, strict deploym
 
 Before choosing, run a small corpus through five real questions. Require source links, record misses, and compare the time saved with the time spent preparing material. If the pilot cannot reliably point back to the right evidence, adding more documents will usually magnify the problem.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![LLM Knowledge Base: Do Solo Operators Actually Need One? original visual reference 1](/blog/images/llm-knowledge-base-solo-operators/1775455769712-5be6439d-de06-42cb-9a29-2d508868522c.webp)
+
 ## A minimum governance checklist
 
 1. Name the source owner and update cadence.

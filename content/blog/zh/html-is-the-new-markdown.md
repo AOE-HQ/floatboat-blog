@@ -44,6 +44,18 @@ Shihipar 在 [X 发布原文](https://x.com/trq212/status/2052809885763747935)�
 
 不同任务会得到不同结果。视觉评审可能受益于 HTML；每天变化的规格可能仍适合 Markdown。混合路线也很常见：用 Markdown 起草和版本管理，在评审节点生成 HTML。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![HTML 就是新的 Markdown：这场争论真正说了什么 原文视觉资料 1](/blog/images/html-is-the-new-markdown/1779256961857-78b2726d-6fb5-44ca-92fe-3339ba9a712a.webp)
+
+![HTML 就是新的 Markdown：这场争论真正说了什么 原文视觉资料 2](/blog/images/html-is-the-new-markdown/1779256991459-69f12edf-2595-47cd-a828-9fa43b9d1fb6.webp)
+
+![HTML 就是新的 Markdown：这场争论真正说了什么 原文视觉资料 3](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
+
+![HTML 就是新的 Markdown：这场争论真正说了什么 原文视觉资料 4](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.webp)
+
 ## 这场趋势能证明什么
 
 公开示例说明编码 Agent 可以产出无需应用构建、可由浏览器打开的实用成果，也让一种既有做法获得了醒目的名字。它们不能证明所有报告都需要 HTML、token 成本不再重要，或丰富布局必然改善每个组织的决策。

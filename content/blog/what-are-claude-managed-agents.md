@@ -122,6 +122,20 @@ Treat every connected system as an expansion of the blast radius. Ask:
 
 Prompt injection, compromised source material, and excessive permissions remain application risks even when the runtime is managed. The production owner—not the hosting layer—must define the approval and incident-response model.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![What Are Claude Managed Agents? original visual reference 1](/blog/images/what-are-claude-managed-agents/1775730586728-6d11b474-4b85-486d-9184-c0ffd522defc.webp)
+
+![What Are Claude Managed Agents? original visual reference 2](/blog/images/what-are-claude-managed-agents/1775730604254-8c285a71-a0b0-43dd-ae4f-6b1c6421cb39.webp)
+
+![What Are Claude Managed Agents? original visual reference 3](/blog/images/what-are-claude-managed-agents/1775730635313-a66b0135-a330-4f9e-a480-9c056117994e.webp)
+
+![What Are Claude Managed Agents? original visual reference 4](/blog/images/what-are-claude-managed-agents/1775730648441-f3377238-255d-470a-9835-f3845068f333.webp)
+
+![What Are Claude Managed Agents? original visual reference 5](/blog/images/what-are-claude-managed-agents/1775730661291-ec410158-091c-45c8-9693-7b75e34ea6a7.webp)
+
 ## The practical conclusion
 
 Claude Managed Agents can shorten the path from a prototype agent to an operated service because sessions, harness execution, sandboxing, and traces no longer all need to be built from scratch. The remaining work is the work that determines whether the product is trustworthy: narrow task design, permissions, evaluations, human gates, and recovery.

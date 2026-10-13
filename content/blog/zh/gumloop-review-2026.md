@@ -96,6 +96,16 @@ Gumloop 更适合这些情况：流程重复频率足够高；输入与输出能
 
 比较平台时，应把同一批试点样本交给每个候选者。可以继续阅读 [Gumloop 替代方案](/zh/blog/gumloop-alternatives-2026)、[Lindy 与 Gumloop 对比](/zh/blog/lindy-vs-gumloop)和 [Relevance AI 与 n8n 对比](/zh/blog/relevance-ai-vs-n8n)来形成短名单，但最终选择应由权限、恢复和合格输出测试决定。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![Gumloop 评测 2026：功能很强，但适合你吗？ 原文视觉资料 1](/blog/images/gumloop-review-2026/1774256617943-2315a1e0-c658-4252-8f4d-851d922ff4d5.webp)
+
+![Gumloop 评测 2026：功能很强，但适合你吗？ 原文视觉资料 2](/blog/images/gumloop-review-2026/1774256629584-868f68d2-9e14-410d-9be8-7c7bb7a2667f.webp)
+
+![Gumloop 评测 2026：功能很强，但适合你吗？ 原文视觉资料 3](/blog/images/gumloop-review-2026/1774256641947-3e99ec7c-014a-4cb9-b5a1-03534423a3ee.webp)
+
 ## 最终结论
 
 Gumloop 的价值不只是「无代码 AI」，而是把明确的流程逻辑与 AI 或 Agent 步骤组合起来，再通过触发器和界面交给团队使用。对于愿意把自动化当系统运营、而不是当演示项目的团队，这种组合很有吸引力。

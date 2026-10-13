@@ -128,6 +128,12 @@ But the practical friction is real: **context switching between two agent paradi
 
 If you want to try both, give each one a specific domain. Codex for multi-tab operations. Claude for document analysis and page-level research. Don't make them share the same task.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Codex for Chrome vs Claude for Chrome: How to Choose original visual reference 1](/blog/images/codex-for-chrome-vs-claude-for-chrome/1778481733192-0b37e66a-6bf2-4188-92bd-e4b54825f4ea.webp)
+
 ## Limitations Both Still Share
 
   * **Neither handles CAPTCHAs or login prompts.** Both stop and ask you to intervene manually.

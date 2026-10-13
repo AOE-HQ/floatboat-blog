@@ -44,6 +44,18 @@ Take a real plan or review and produce two versions from the same approved conte
 
 The result may differ by job. A visual review may benefit from HTML; a specification that changes daily may remain easier in Markdown. Hybrid workflows are common: draft and version the source in Markdown, then generate HTML for a review milestone.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![HTML Is the New Markdown: What the Argument Actually Means original visual reference 1](/blog/images/html-is-the-new-markdown/1779256961857-78b2726d-6fb5-44ca-92fe-3339ba9a712a.webp)
+
+![HTML Is the New Markdown: What the Argument Actually Means original visual reference 2](/blog/images/html-is-the-new-markdown/1779256991459-69f12edf-2595-47cd-a828-9fa43b9d1fb6.webp)
+
+![HTML Is the New Markdown: What the Argument Actually Means original visual reference 3](/blog/images/html-is-the-new-markdown/1779257002708-0614099d-ad09-4d53-922b-7e19ccabc53f.webp)
+
+![HTML Is the New Markdown: What the Argument Actually Means original visual reference 4](/blog/images/html-is-the-new-markdown/1779257013669-f3023091-21a7-4361-85e4-5633e998c37b.webp)
+
 ## What the trend does and does not establish
 
 The public examples show that coding agents can emit useful, browser-readable artifacts with no application build. They also helped give a memorable name to an existing practice. They do not establish that every report needs HTML, that token cost no longer matters, or that richer layout causes better decisions in every organization.

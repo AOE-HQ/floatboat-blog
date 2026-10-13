@@ -25,6 +25,14 @@ OpenAI's [workspace agents announcement](https://openai.com/index/introducing-wo
 
 These categories overlap. A specialized deterministic tool is preferable when the task and rules are stable; an agent is useful when inputs vary and judgment is required. Neither “always wins.”
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![What Are AI Workspace Agents? A Plain-Language Guide original visual reference 1](/blog/images/ai-workspace-agents/1776938892459-d9a96757-2002-4768-865d-caa869b18d59.webp)
+
+![What Are AI Workspace Agents? A Plain-Language Guide original visual reference 2](/blog/images/ai-workspace-agents/1776938916972-34287d3b-e1da-4167-b3aa-bd7bb9e225ed.webp)
+
 ## What to verify before adoption
 
 1. Where execution and stored state live.

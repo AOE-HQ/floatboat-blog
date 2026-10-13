@@ -52,6 +52,14 @@ gstack is designed around software repositories and Claude Code. Its browser QA,
 
 Context also does not become trustworthy merely because stages share it. Instructions can be stale, documents can conflict, and external content can contain prompt injection. When evaluating [repeated-work agents](/blog/how-to-build-ai-agents-for-repeated-work), treat permissions, failure recovery, and evidence as first-class design choices.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Role-Based AI Workflows for Solo Founders: The gstack Method original visual reference 1](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459030112-6a760160-8f09-465c-9722-d413ac5aad73.webp)
+
+![Role-Based AI Workflows for Solo Founders: The gstack Method original visual reference 2](/blog/images/what-gstack-gets-right-about-one-person-businesses/1775459050612-f57596fb-c98c-4340-8674-2eefff60f69e.webp)
+
 ## The practical takeaway
 
 Borrow gstack’s separation of discovery, planning, execution, review, and release—not its productivity claims. Start with one recurring workflow, define stage contracts, and measure rework and escaped errors. If the stages are not clear enough for a person to review, adding more AI roles will not fix the process.

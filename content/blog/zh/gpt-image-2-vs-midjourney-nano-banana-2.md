@@ -46,6 +46,18 @@ API 工具要记录参考图、输出尺寸、质量、编辑、重试、groundi
 
 商用许可也不是一个勾选框。应核对账户档位、输出权利、隐私模式、数据使用条款、参考图权利、商标、客户披露与当地法律。SynthID 等来源标记并不能单独解决版权归属。
 
+## 原文视觉资料
+
+以下图片恢复自文章最初发布版本，用于补充界面、流程或对比语境。涉及产品界面、价格、基准结果和模型可用性的画面属于历史记录；做当前决策前，请以厂商最新官方信息为准。
+
+![给创作者的 GPT Image 2 vs Midjourney vs Nano Banana 2：真实的选型框架 原文视觉资料 1](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258121575-7df5df29-3319-44f5-b0d7-47b5487aebef.webp)
+
+![给创作者的 GPT Image 2 vs Midjourney vs Nano Banana 2：真实的选型框架 原文视觉资料 2](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258131708-4d5133f4-13e6-440f-a47e-ab8388c35a16.webp)
+
+![给创作者的 GPT Image 2 vs Midjourney vs Nano Banana 2：真实的选型框架 原文视觉资料 3](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258142374-e9744eed-c845-45ea-836c-627ec578ae78.webp)
+
+![给创作者的 GPT Image 2 vs Midjourney vs Nano Banana 2：真实的选型框架 原文视觉资料 4](/blog/images/gpt-image-2-vs-midjourney-nano-banana-2/1777258152422-cb2fa446-1ab8-4602-9449-557bf9c1db2b.webp)
+
 ## 条件式选择规则
 
 选择测试集中“每个验收成品总成本”最低的工具。只有第二款能覆盖已测出的失败类型，例如文字版式、连续编辑或概念发散，才值得并用。若要接入自动化，还要比较 API 和审核控制；[Agentic AI 工具指南](/zh/blog/agentic-ai-tools)解释了为何独立出图很强的产品未必适合作为流水线组件。

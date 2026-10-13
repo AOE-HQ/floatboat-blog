@@ -175,6 +175,16 @@ The most important design choice is not how much the agent can remember. It is w
 
 When those boundaries are explicit, persistence can reduce repeated explanations and support genuinely long-running work. When they are not, persistence simply makes errors last longer.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![What Is a Persistent AI Agent — and Why Does It Matter? original visual reference 1](/blog/images/what-is-persistent-ai-agent/1775615354386-f593b84b-697f-44ce-8fdc-1744691e0b75.webp)
+
+![What Is a Persistent AI Agent — and Why Does It Matter? original visual reference 2](/blog/images/what-is-persistent-ai-agent/1775615366121-a2fc8f22-3621-42ab-b5db-25c0df9a70b5.webp)
+
+![What Is a Persistent AI Agent — and Why Does It Matter? original visual reference 3](/blog/images/what-is-persistent-ai-agent/1775615386862-1f8e3dfa-b868-4d1c-9452-d11bb8c79341.webp)
+
 ## Official references
 
 - [OpenAI: Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt)

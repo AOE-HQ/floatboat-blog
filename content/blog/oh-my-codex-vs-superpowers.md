@@ -48,6 +48,16 @@ For the broader distinction between an execution runtime and instructions layere
 
 Both projects can add automatic instructions, hooks, files, or commands. Review install scripts and requested permissions; pin versions for team use; keep generated state out of commits unless intended; document how to disable or remove the layer; and avoid two systems issuing conflicting planning or completion rules.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![oh-my-codex vs Superpowers: Codex Orchestration or Skill-Based Discipline? original visual reference 1](/blog/images/oh-my-codex-vs-superpowers/1777514586481-c191387f-010e-435c-b647-9dbe7af2f105.webp)
+
+![oh-my-codex vs Superpowers: Codex Orchestration or Skill-Based Discipline? original visual reference 2](/blog/images/oh-my-codex-vs-superpowers/1777514599104-30d620af-e89c-478a-b7aa-ca5ddfeb6c93.webp)
+
+![oh-my-codex vs Superpowers: Codex Orchestration or Skill-Based Discipline? original visual reference 3](/blog/images/oh-my-codex-vs-superpowers/1777514616142-df91b981-531f-4abc-89bc-585e073bbd4b.webp)
+
 ## Decision rule
 
 Start with the narrower intervention. If Codex operation is chaotic, pilot OMX on one repository and supported platform. If engineering discipline is inconsistent across tools, pilot Superpowers on one repeatable feature. Combine them only after separate pilots show complementary gains and your team can explain which layer owns planning, delegation, tests, and final verification. Non-developers should first review [Claude Code's task boundaries](/blog/claude-code-non-developers-solo-operators) before adding another orchestration layer.

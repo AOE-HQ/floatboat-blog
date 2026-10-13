@@ -59,6 +59,20 @@ Choose a workspace first when:
 | Who maintains failures and upgrades? | Your team | Vendor plus your configuration |
 | Can success be evaluated? | Required | Still required |
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Dynamic Workflows: Build Agents or Use a Workspace? original visual reference 1](/blog/images/dynamic-workflows-build-or-use-workspace/1780055108452-0336b9fb-4040-4b5e-8fbb-03f3cf3494e0.webp)
+
+![Dynamic Workflows: Build Agents or Use a Workspace? original visual reference 2](/blog/images/dynamic-workflows-build-or-use-workspace/1780055117692-97ffd373-6502-4340-935c-b6b2070a5e37.webp)
+
+![Dynamic Workflows: Build Agents or Use a Workspace? original visual reference 3](/blog/images/dynamic-workflows-build-or-use-workspace/1780055132392-1aeffdcd-dfc9-48e7-b3fb-6326ea7cfe77.webp)
+
+![Dynamic Workflows: Build Agents or Use a Workspace? original visual reference 4](/blog/images/dynamic-workflows-build-or-use-workspace/1780055142758-e721949b-16cb-4ce3-905e-59cd8cfb330b.webp)
+
+![Dynamic Workflows: Build Agents or Use a Workspace? original visual reference 5](/blog/images/dynamic-workflows-build-or-use-workspace/1780055161760-a57eef1a-e11f-4135-86a0-827584556bd1.webp)
+
 ## Run a reversible pilot
 
 Select one task, record a single-agent baseline, define an acceptance rubric, and cap tools, time, and spend. Test failure paths, not only the happy path. If custom orchestration improves quality or throughput enough to cover its operational cost, keep it. If the value comes mainly from shared context, artifacts, and review, use a workspace and avoid owning extra infrastructure.

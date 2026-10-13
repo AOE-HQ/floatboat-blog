@@ -77,6 +77,22 @@ Change one variable at a time. First compare effort levels at standard speed. Th
 
 **Hard-coding one vendor feature.** Keep routing rules in task language—low-risk extraction, high-risk synthesis, latency-critical interaction—so the workflow remains portable. The [solo-founder AI workflow guide](/blog/ai-workflow-for-solo-founders) explains how to design those reusable stages.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Effort Control and Fast Mode for AI Work original visual reference 1](/blog/images/effort-control-fast-mode-ai-work/1780055413120-b997b912-360f-4319-8c30-31e16cf4fbf9.webp)
+
+![Effort Control and Fast Mode for AI Work original visual reference 2](/blog/images/effort-control-fast-mode-ai-work/1780055422073-16ac34d2-7af1-4378-88a2-6ee1d6dec2ba.webp)
+
+![Effort Control and Fast Mode for AI Work original visual reference 3](/blog/images/effort-control-fast-mode-ai-work/1780055430346-e2418515-0a46-4262-b974-3fb73e5923bc.webp)
+
+![Effort Control and Fast Mode for AI Work original visual reference 4](/blog/images/effort-control-fast-mode-ai-work/1780055437890-38cfe51f-ff3e-4f45-b474-3ce6843f26ca.webp)
+
+![Effort Control and Fast Mode for AI Work original visual reference 5](/blog/images/effort-control-fast-mode-ai-work/1780055446998-c9e1e674-652c-406e-b61f-5317d20a7c32.webp)
+
+![Effort Control and Fast Mode for AI Work original visual reference 6](/blog/images/effort-control-fast-mode-ai-work/1780055455950-32fe7317-9c09-4511-aac5-1cfbded53bd5.webp)
+
 ## A practical default
 
 Start routine, reversible work at medium effort and standard speed. Move effort down when acceptance remains stable; move it up when a documented failure requires deeper reasoning. Enable Fast Mode only where waiting blocks a person or dependent action, then compare its premium with the time actually saved.

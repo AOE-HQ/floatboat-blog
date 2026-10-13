@@ -43,6 +43,16 @@ Use Lark CLI when the integration is unique, recurring, testable, and owned by s
 
 Prefer a built-in integration, webhook, maintained workflow connector, or MCP tool when it already satisfies the task and permission boundary. The deciding question is not “can this be scripted?” but “who owns it when authentication, permissions, or APIs change?” That distinction also appears in [workflow builders versus AI workspaces](/blog/workflow-builder-vs-ai-workspace).
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![Lark CLI: When to Use It — and When to Keep the Web App original visual reference 1](/blog/images/lark-cli-when-to-use-it/1774843317226-3917604d-1067-441e-9e5c-912f9cc48070.webp)
+
+![Lark CLI: When to Use It — and When to Keep the Web App original visual reference 2](/blog/images/lark-cli-when-to-use-it/1774843329012-37f7a2b1-5de5-4ddc-8b22-ae1403fa1f58.webp)
+
+![Lark CLI: When to Use It — and When to Keep the Web App original visual reference 3](/blog/images/lark-cli-when-to-use-it/1774843340728-2cfa780f-2b70-4853-98f5-cc9d08c50936.webp)
+
 ## Decision rule
 
 Proceed only if the pilot’s customization value exceeds measured setup, review, and maintenance cost, and the owner can explain permissions and recovery. Otherwise choose the simplest maintained path that meets the same acceptance test.

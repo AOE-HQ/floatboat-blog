@@ -44,6 +44,16 @@ If delivery becomes the constraint, use the capacity framework in [scaling a one
 
 Track new qualified conversations, offers made, paid conversions, time to first value, activation or delivery completion, retention at a relevant interval, support time, refunds, and loss reasons. Segment by buyer and channel. Small cohorts are noisy, so record observations without declaring universal rules.
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![How to Get Your First 100 Customers as a Solo Founder original visual reference 1](/blog/images/first-100-customers-solo-founder/1775616241728-144b6973-1d05-421e-b168-46efd92cd126.webp)
+
+![How to Get Your First 100 Customers as a Solo Founder original visual reference 2](/blog/images/first-100-customers-solo-founder/1775616253924-4d37ade0-9e32-4d46-843e-4e8e03a8b472.webp)
+
+![How to Get Your First 100 Customers as a Solo Founder original visual reference 3](/blog/images/first-100-customers-solo-founder/1775616268699-0fa95876-afc3-455e-93fc-afb0cb4c4b9f.webp)
+
 ## What 100 customers should leave behind
 
 The milestone is useful only if it produces a clearer ideal customer, repeatable promise, defensible price, workable onboarding, evidence-backed channel, and known support load. If those remain unclear, the number is vanity. The first 100 should reduce uncertainty enough to decide what to standardize, what to keep manual, and what not to sell.

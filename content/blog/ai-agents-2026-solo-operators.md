@@ -172,6 +172,16 @@ For most solo operators, the winning strategy is deliberately small:
 
 The companion guide on [AI workflows for solo founders](/blog/ai-workflow-for-solo-founders) helps document the process before automation. If the task needs durable project knowledge, read the [LLM knowledge-base guide](/blog/llm-knowledge-base-solo-operators). For examples that separate genuine leverage from demos, see [real AI agent use cases](/blog/ai-agent-use-cases-real-examples).
 
+## Original visual references
+
+These images are restored from the article's original publication to preserve interface, workflow, and comparison context. Any product UI, pricing, benchmark result, or model availability shown is a historical capture; verify current official information before making a decision.
+
+![AI Agents in 2026: What Solo Operators Actually Need to Know original visual reference 1](/blog/images/ai-agents-2026-solo-operators/1775544775539-e804c584-d9f1-49fb-892a-d37f2d3a708a.webp)
+
+![AI Agents in 2026: What Solo Operators Actually Need to Know original visual reference 2](/blog/images/ai-agents-2026-solo-operators/1775544784583-b2c02934-2d06-4cb0-825b-ecdab09ba8b2.webp)
+
+![AI Agents in 2026: What Solo Operators Actually Need to Know original visual reference 3](/blog/images/ai-agents-2026-solo-operators/1775544805101-b21360a4-d95d-4dda-8c61-bae9406d801c.webp)
+
 ## Bottom line
 
 The 2026 evidence supports a narrower conclusion than the headlines: models gained more ways to use tools; open standards gained institutional backing; AI use at work increased; and security bodies began treating agent identity, authorization, and tool access as a distinct governance problem.
