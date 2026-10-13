@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { PersonaPageData } from "@/lib/use-cases/persona-page-schema";
 import { personaPath } from "@/lib/use-cases/persona-pages";
 
+import { PersonaCapabilities } from "./persona-capabilities";
 import { PersonaLiveDemo } from "./persona-live-demo";
 
 const SITE_ORIGIN = "https://floatboat.ai";
@@ -74,13 +75,6 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">{page.burdens.items.map((item, index) => <article key={item.title} className="rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-6 shadow-[var(--ob-shadow-raised)]"><span className="text-xs font-semibold text-[var(--ob-color-accent)]">0{index + 1} · {item.label}</span><h3 className="mt-8 font-serif text-2xl tracking-tight">{item.title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></article>)}</div>
     </div></section>
 
-    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28"><Heading {...page.buildingBlocks} />
-      <div className="overflow-hidden rounded-[28px] border border-black/[0.08] bg-[var(--ob-color-surface)]">
-        <div className="hidden grid-cols-[0.55fr_1.15fr_1.15fr] bg-[#24221f] px-6 py-4 text-xs font-semibold uppercase tracking-[0.13em] text-white/65 md:grid"><span>{isZh ? "工作积木" : "Building block"}</span><span>{isZh ? "工作语境" : "Work context"}</span><span>{isZh ? "可审阅结果" : "Reviewable result"}</span></div>
-        {page.buildingBlocks.items.map((item) => <div key={item.action} className="grid gap-3 border-t border-black/[0.07] px-6 py-5 first:border-0 md:grid-cols-[0.55fr_1.15fr_1.15fr]"><strong>{item.action}</strong><span className="text-[var(--ob-color-text-subtle)]">{item.example}</span><span className="text-[var(--ob-color-muted)]">{item.result}</span></div>)}
-      </div>
-    </section>
-
     <section id="workflows" className="bg-[#24221f] py-20 text-white sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><Heading {...page.workflows} inverted />
       <div className="space-y-5">{page.workflows.items.map((workflow) => <article key={workflow.number} className="grid gap-7 rounded-[28px] border border-white/10 bg-white/[0.04] p-6 lg:grid-cols-[0.72fr_1.28fr] lg:p-8">
         <div><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f7d68b]">{workflow.number}</p><h3 className="mt-4 font-serif text-3xl tracking-tight">{workflow.title}</h3><p className="mt-4 leading-7 text-white/65">{workflow.job}</p></div>
@@ -88,13 +82,7 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
       </article>)}</div>
     </div></section>
 
-    <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[0.8fr_1.2fr]"><Heading {...page.customization} align="left" />
-      <div className="grid gap-5 sm:grid-cols-2"><div className="rounded-3xl border border-black/[0.07] bg-white/55 p-7"><h3 className="font-serif text-2xl">{page.customization.inputsLabel}</h3><ul className="mt-6 space-y-3">{page.customization.inputs.map((item) => <li key={item} className="flex gap-3 leading-6"><span className="text-[#1b1a18]">◆</span>{item}</li>)}</ul></div><div className="rounded-3xl border border-black/[0.07] bg-white/55 p-7"><h3 className="font-serif text-2xl">{page.customization.controlsLabel}</h3><ul className="mt-6 space-y-3">{page.customization.controls.map((item) => <li key={item} className="flex gap-3 leading-6"><span className="text-[#1b1a18]">✓</span>{item}</li>)}</ul></div></div>
-    </section>
-
-    <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><Heading {...page.progression} /><div className="grid gap-5 md:grid-cols-3">{page.progression.items.map((item, index) => <article key={item.title} className="relative rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-7"><span className="grid size-10 place-items-center rounded-full bg-[#24221f] text-sm text-white">{index + 1}</span><p className="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{item.label}</p><h3 className="mt-3 font-serif text-2xl">{item.title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></article>)}</div></div></section>
-
-    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28"><Heading {...page.boundaries} /><div className="grid overflow-hidden rounded-[32px] border border-black/[0.08] lg:grid-cols-2"><div className="bg-[#fff5d7] p-7 sm:p-10"><h3 className="font-serif text-3xl text-[#1b1a18]">{page.boundaries.assistsTitle}</h3><ul className="mt-7 space-y-4">{page.boundaries.assists.map((item) => <li key={item} className="flex gap-3 leading-7"><span className="text-[#1b1a18]">✓</span>{item}</li>)}</ul></div><div className="bg-[#f0eeeb] p-7 sm:p-10"><h3 className="font-serif text-3xl text-[#1b1a18]">{page.boundaries.retainsTitle}</h3><ul className="mt-7 space-y-4">{page.boundaries.retains.map((item) => <li key={item} className="flex gap-3 leading-7"><span className="text-[#1b1a18]">—</span>{item}</li>)}</ul></div></div><p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-6 text-[var(--ob-color-muted)]">{page.boundaries.note}</p></section>
+    <PersonaCapabilities page={page} />
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28"><div className="mx-auto max-w-4xl px-5 sm:px-8"><Heading eyebrow={isZh ? "常见问题" : "Questions before you start"} title={page.faq.title} description={page.faq.description} /><div className="space-y-3">{page.faq.items.map((item) => <details key={item.question} className="group rounded-2xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-5"><summary className="cursor-pointer list-none pr-8 font-semibold">{item.question}<span className="float-right text-xl transition group-open:rotate-45">+</span></summary><p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{item.answer}</p></details>)}</div></div></section>
 

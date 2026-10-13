@@ -1,0 +1,114 @@
+{
+  "lawyers": {
+    "en": [
+      ["Agent Workspace", "/agent-workspace", "Keep matter files, research sources, instructions, review notes, and editable legal work products in one persistent workspace."],
+      ["AI File Organizer", "/ai-file-organizer", "Sort and rename approved matter folders locally before document comparison, chronology building, or handoff."],
+      ["Multiple AI Models", "/models", "Choose a model for long-context review, careful drafting, or faster preparation without rebuilding the matter context."],
+      ["FloatIM", "/floatim", "Bring a colleague or specialist into the same work thread while keeping questions, revisions, and deliverables connected."]
+    ],
+    "zh": [
+      ["Agent 工作站", "/zh/agent-workspace", "把案件文件、研究来源、工作要求、审阅意见和可编辑法律成果保留在一个持续工作空间中。"],
+      ["AI 文件整理器", "/zh/ai-file-organizer", "在本机整理并重命名核准的案件文件夹，再进入文档比较、时间线整理或团队交接。"],
+      ["多模型", "/zh/models", "按长上下文审阅、严谨起草或快速准备选择模型，无需重新搭建案件背景。"],
+      ["FloatIM", "/zh/floatim", "让同事或专业人员进入同一工作线程，使问题、修改意见和交付物始终保持关联。"]
+    ]
+  },
+  "teachers": {
+    "en": [
+      ["Agent Workspace", "/agent-workspace", "Keep curriculum goals, readings, school templates, lesson drafts, and revisions together across a teaching unit."],
+      ["Flow Mode", "https://floatboat.ai/flow-mode", "Talk through a lesson idea while the agent reshapes the outline, slides, activity sheet, and teacher notes in real time."],
+      ["AI File Organizer", "/ai-file-organizer", "Organize course folders, handouts, reference files, and teaching evidence locally with consistent names."],
+      ["AI Scheduling Assistant", "/ai-scheduling-assistant", "Turn lesson milestones, parent meetings, grading windows, and portfolio deadlines into prepared work blocks."]
+    ],
+    "zh": [
+      ["Agent 工作站", "/zh/agent-workspace", "把课程目标、参考资料、学校模板、教案初稿和修改记录放在同一个单元工作空间中。"],
+      ["心流模式", "https://floatboat.ai/zh/flow-mode", "边说边调整教学想法，让 Agent 实时修改教案提纲、课件、活动单和教师备注。"],
+      ["AI 文件整理器", "/zh/ai-file-organizer", "在本机统一整理课程文件夹、讲义、参考资料和教学成果，并保持清晰命名。"],
+      ["AI 日程助理", "/zh/ai-scheduling-assistant", "把备课节点、家长会、批改周期和职业材料截止时间转成已经准备好的工作块。"]
+    ]
+  },
+  "consultants": {
+    "en": [
+      ["Agent Workspace", "/agent-workspace", "Keep client context, interview notes, evidence, hypotheses, exhibits, and deliverables connected throughout an engagement."],
+      ["Flow Mode", "https://floatboat.ai/flow-mode", "Think through a recommendation aloud while the brief, option set, workshop plan, and deck structure change with you."],
+      ["Multiple AI Models", "/models", "Use different models for long-document synthesis, analytical challenge, drafting, and fast iteration inside the same engagement."],
+      ["FloatIM", "/floatim", "Coordinate consultants and agents around one client thread, with decisions and revised deliverables returned to the group."]
+    ],
+    "zh": [
+      ["Agent 工作站", "/zh/agent-workspace", "让客户背景、访谈记录、证据、假设、图表和交付物在整个项目周期中保持关联。"],
+      ["心流模式", "https://floatboat.ai/zh/flow-mode", "边讨论建议边修改项目简报、备选方案、工作坊计划和汇报结构。"],
+      ["多模型", "/zh/models", "在同一项目中分别使用适合长文档综合、分析质疑、内容起草和快速迭代的模型。"],
+      ["FloatIM", "/zh/floatim", "围绕同一客户线程协调顾问与 Agent，让决策和修订后的交付物回到团队。"]
+    ]
+  },
+  "researchers": {
+    "en": [
+      ["Agent Workspace", "/agent-workspace", "Keep the research question, selected sources, coding framework, evidence matrix, and synthesis in one traceable project."],
+      ["Multiple AI Models", "/models", "Match models to long-context reading, comparison, structured extraction, or critical review without losing the source set."],
+      ["AI File Organizer", "/ai-file-organizer", "Normalize papers, reports, datasets, and notes locally so the evidence trail remains navigable."],
+      ["Skills Marketplace", "https://floatboat.ai/skills-marketplace", "Add reusable research procedures for source collection, evidence extraction, monitoring, or document production."]
+    ],
+    "zh": [
+      ["Agent 工作站", "/zh/agent-workspace", "把研究问题、选定来源、编码框架、证据矩阵和综合结论保留在一个可追溯项目中。"],
+      ["多模型", "/zh/models", "为长上下文阅读、材料比较、结构化提取或批判性复核选择模型，同时保留同一来源集。"],
+      ["AI 文件整理器", "/zh/ai-file-organizer", "在本机统一论文、报告、数据集与笔记的命名，让证据路径持续可导航。"],
+      ["Skills Marketplace", "https://floatboat.ai/zh/skills-marketplace", "加入可复用的资料收集、证据提取、持续监测或文档生成流程。"]
+    ]
+  },
+  "recruiters": {
+    "en": [
+      ["Agent Workspace", "/agent-workspace", "Keep the approved role brief, candidate-provided material, interview rubric, notes, and communications in one hiring workspace."],
+      ["AI Scheduling Assistant", "/ai-scheduling-assistant", "Coordinate intake meetings, interview panels, follow-ups, and candidate updates as prepared calendar work."],
+      ["FloatIM", "/floatim", "Bring recruiters, hiring managers, interviewers, and agents into a shared thread without separating feedback from evidence."],
+      ["AI File Organizer", "/ai-file-organizer", "Organize approved candidate packets and role documents locally while preserving clear separation and naming."]
+    ],
+    "zh": [
+      ["Agent 工作站", "/zh/agent-workspace", "把核准的岗位简报、候选人材料、面试标准、记录和沟通内容放在一个招聘工作空间中。"],
+      ["AI 日程助理", "/zh/ai-scheduling-assistant", "把需求会议、面试安排、后续跟进和候选人更新组织成准备充分的日历工作。"],
+      ["FloatIM", "/zh/floatim", "让招聘人员、用人经理、面试官和 Agent 进入共享线程，不让反馈脱离候选人证据。"],
+      ["AI 文件整理器", "/zh/ai-file-organizer", "在本机整理核准的候选人资料包与岗位文件，并保持清晰的隔离和命名。"]
+    ]
+  },
+  "financial-analysts": {
+    "en": [
+      ["Agent Workspace", "/agent-workspace", "Keep approved financial sources, calculations, assumptions, commentary, and review notes connected across reporting cycles."],
+      ["Multiple AI Models", "/models", "Select models for long filings, structured extraction, analytical challenge, or fast drafting while preserving the working context."],
+      ["AI File Organizer", "/ai-file-organizer", "Organize statements, exports, reports, and supporting documents locally before recurring analysis and review."],
+      ["AI Scheduling Assistant", "/ai-scheduling-assistant", "Prepare recurring close, reporting, monitoring, and management-review work around real deadlines."]
+    ],
+    "zh": [
+      ["Agent 工作站", "/zh/agent-workspace", "让核准的财务来源、计算过程、关键假设、分析说明和审阅意见跨报告周期保持关联。"],
+      ["多模型", "/zh/models", "针对长篇公告、结构化提取、分析质疑或快速起草选择模型，同时保留工作上下文。"],
+      ["AI 文件整理器", "/zh/ai-file-organizer", "在本机整理报表、数据导出、分析报告与支持文件，再进入周期分析和复核。"],
+      ["AI 日程助理", "/zh/ai-scheduling-assistant", "围绕真实截止时间准备周期结账、报告、监控和管理复盘工作。"]
+    ]
+  },
+  "executive-assistants": {
+    "en": [
+      ["Agent Workspace", "/agent-workspace", "Keep calendar context, prior decisions, meeting material, action registers, and executive briefs in one continuous workspace."],
+      ["AI Scheduling Assistant", "/ai-scheduling-assistant", "Connect meetings to preparation, follow-up, and protected work blocks instead of treating the calendar as a passive list."],
+      ["FloatIM", "/floatim", "Let leaders, assistants, teams, and agents coordinate in a shared thread while keeping decisions and deliverables visible."],
+      ["AI File Organizer", "/ai-file-organizer", "Organize recurring meeting packs, leadership updates, and working documents locally with predictable naming."]
+    ],
+    "zh": [
+      ["Agent 工作站", "/zh/agent-workspace", "把日程背景、历史决策、会议材料、行动清单和管理简报保留在一个持续工作空间中。"],
+      ["AI 日程助理", "/zh/ai-scheduling-assistant", "把会议连接到会前准备、会后跟进和受保护的工作块，而不是让日历只做被动清单。"],
+      ["FloatIM", "/zh/floatim", "让管理者、助理、团队与 Agent 在共享线程中协作，同时保持决策和交付物可见。"],
+      ["AI 文件整理器", "/zh/ai-file-organizer", "在本机整理周期会议包、管理层更新和工作文档，并保持可预测的命名。"]
+    ]
+  },
+  "marketers": {
+    "en": [
+      ["Agent Workspace", "/agent-workspace", "Keep audience evidence, brand guidance, campaign briefs, channel drafts, approvals, and results in one campaign workspace."],
+      ["Flow Mode", "https://floatboat.ai/flow-mode", "Talk through positioning and creative direction while briefs, messages, and channel variants change in real time."],
+      ["Multiple AI Models", "/models", "Choose models for research, reasoning, rapid copy variation, image work, or long-context campaign review."],
+      ["FloatIM", "/floatim", "Coordinate marketers, creators, reviewers, and agents around one campaign thread from brief to approved asset."]
+    ],
+    "zh": [
+      ["Agent 工作站", "/zh/agent-workspace", "把受众证据、品牌规范、活动简报、渠道初稿、审批记录和效果数据放在同一营销工作空间中。"],
+      ["心流模式", "https://floatboat.ai/zh/flow-mode", "边讨论定位和创意方向，边实时修改活动简报、核心信息和渠道版本。"],
+      ["多模型", "/zh/models", "按研究、推理、快速文案变体、图像工作或长上下文活动复盘选择合适模型。"],
+      ["FloatIM", "/zh/floatim", "让市场人员、创作者、审阅者与 Agent 围绕同一活动线程从 Brief 协作到获批素材。"]
+    ]
+  }
+}
