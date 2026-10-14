@@ -2,10 +2,10 @@
   "slug": "recruiters",
   "locale": "zh",
   "seo": {
-    "title": "招聘 Agent Workspace：需求、面试与候选人协同 | Floatboat",
-    "description": "面向招聘与人才团队的 AI Agent Workspace，用于澄清用人需求、整理候选人证据、准备面试、汇总反馈并起草招聘进度沟通。",
+    "title": "招聘与人才团队 Work Agent：需求、面试与候选人准备 | Floatboat",
+    "description": "面向招聘团队的 Work Agent，把核准的岗位与候选人资料整理成职位简报、证据包、面试计划和待审沟通稿。",
     "keywords": [
-      "招聘 AI",
+      "招聘 Work Agent",
       "AI 招聘工具",
       "招聘工作流",
       "候选人筛选",
@@ -15,9 +15,9 @@
   },
   "breadcrumb": "招聘与人才团队",
   "hero": {
-    "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "面向招聘与人才团队的 AI Agent Workspace",
-    "description": "在人工控制的招聘 AI 工作空间中，整理用人需求、候选人证据、面试准备与进度沟通。",
+    "eyebrow": "负责招聘准备工作的 Work Agent",
+    "title": "面向招聘与人才团队的 Work Agent",
+    "description": "交给 Floatboat 已核准的岗位需求、候选人材料与面试标准，由它准备证据包、面试计划、反馈摘要和沟通初稿，再由招聘人员审阅。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-recruiters&download_placement=hero"
@@ -32,8 +32,8 @@
       "重要行动前保留人工审批"
     ],
     "preview": {
-      "label": "示意工作区",
-      "matter": "产品负责人招聘 · 招聘工作区",
+      "label": "Work Agent 任务示例",
+      "matter": "产品负责人招聘 · 候选人准备",
       "inputs": [
         "用人需求",
         "候选人材料",
@@ -48,8 +48,8 @@
     }
   },
   "burdens": {
-    "eyebrow": "专业工作周围的重复劳动",
-    "title": "招聘与人才团队的时间，不该耗在反复整理上。",
+    "eyebrow": "招聘 Work Agent 最能发挥价值的地方",
+    "title": "招聘判断留给人，把准备工作交给 Agent。",
     "description": "当岗位、证据、面试标准和候选人沟通在每个阶段都由不同的人重新整理，招聘就会变慢并失去一致性。",
     "items": [
       {
@@ -75,46 +75,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "通用能力，职业语境",
-    "title": "用可组合的工作能力搭出自己的流程。",
-    "description": "Floatboat 不规定唯一方法。它按照你选择的材料、标准和审批点执行。",
+    "eyebrow": "招聘 Work Agent 可以准备什么",
+    "title": "从核准的招聘输入推进到可审阅材料。",
+    "description": "Work Agent 在工作空间中连接岗位标准、候选人证据、面试记录与交付物；所有重要判断仍由团队掌握。",
     "items": [
       {
         "action": "阅读",
-        "example": "从核准文件、记录和资料开始，而不是凭空回答。",
-        "result": "得到有依据的工作集。"
+        "example": "读取核准的岗位简报、候选人提交材料、往来记录与面试标准。",
+        "result": "得到与岗位相关的资料集。"
       },
       {
         "action": "整理",
-        "example": "归类资料、统一名称并找出缺失项。",
-        "result": "形成可导航的项目结构。"
+        "example": "按岗位标准、面试阶段与来源整理证据。",
+        "result": "形成一致的候选人材料包。"
       },
       {
         "action": "提取",
-        "example": "提取事实、日期、数据、主张与待确认问题。",
-        "result": "得到便于核查的结构化内容。"
+        "example": "提取候选人提供的证据，并标出尚未回答的岗位问题。",
+        "result": "形成待招聘人员核验的主张。"
       },
       {
         "action": "比较",
-        "example": "对比版本、标准、时间段或备选方案。",
-        "result": "形成变化与差异清单。"
+        "example": "按相同且已核准的岗位标准映射材料，但不对候选人排序。",
+        "result": "提供便于人工审阅的可比证据。"
       },
       {
         "action": "创建",
-        "example": "把核准材料转成简报、提纲、表格或初稿。",
-        "result": "得到可编辑的交付物。"
+        "example": "起草面试官简报、复盘摘要与候选人更新。",
+        "result": "得到可编辑的招聘交付物。"
       },
       {
         "action": "复用",
-        "example": "保存已验证的步骤、格式与审批点。",
-        "result": "形成可重复使用的流程。"
+        "example": "为下一次招聘复用已验证的材料格式与审批节点。",
+        "result": "形成受控的招聘准备流程。"
       }
     ]
   },
   "workflows": {
-    "eyebrow": "三个可配置起点",
-    "title": "从真实任务出发，而不是套用固定职业剧本。",
-    "description": "每条流程都从你控制的材料和规则开始，交付可检查的成果，并在专业判断前停下。",
+    "eyebrow": "可以交给招聘 Work Agent 的三项任务",
+    "title": "委派招聘决策周围的准备工作，而不是决策本身。",
+    "description": "每项任务都从已核准且与岗位相关的材料开始，返回可检查成果，并在候选人评价或对外沟通前停下。",
     "items": [
       {
         "number": "01",
@@ -159,8 +159,8 @@
   },
   "customization": {
     "eyebrow": "你的方法仍然是方法",
-    "title": "带上团队已经信任的标准。",
-    "description": "不同组织与任务需要不同输入、输出和控制点。页面示例只是起点。",
+    "title": "让 Work Agent 按团队的招聘方法准备。",
+    "description": "提供合法标准、面试评分表、材料格式、术语和审批路径；候选人判断始终由负责任的人完成。",
     "inputsLabel": "定义工作背景",
     "inputs": [
       "核准的文件与数据来源",
@@ -179,51 +179,51 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次任务到可复用系统",
-    "title": "先完成一个边界清晰的任务，再保留真正有用的方法。",
-    "description": "流程可以逐步成熟，不必把专业工作变成无人值守的自动化。",
+    "eyebrow": "从一次任务到可复用的 Work Agent",
+    "title": "先用一项招聘交付验证 Work Agent，再扩大它的职责。",
+    "description": "只有当招聘人员确认材料准确、与岗位相关且对面试官有用后，才应扩大这套招聘流程。",
     "items": [
       {
         "label": "临时执行",
-        "title": "完成一项交付",
-        "description": "针对当前资料生成一份可审阅的简报、清单、比较或初稿。"
+        "title": "准备一份面试官材料包",
+        "description": "使用一份已批准岗位简报和一名候选人提交的材料，生成带来源的材料包供招聘人员审阅。"
       },
       {
         "label": "保存流程",
-        "title": "复用有效方法",
-        "description": "保留输入、规则、格式和审批点，用于下一次相似任务。"
+        "title": "在本次招聘中复用材料方法",
+        "description": "为后续候选人沿用相同的岗位标准、证据标签、缺失信息规则与招聘审批节点。"
       },
       {
         "label": "团队共享",
-        "title": "建立受控起点",
-        "description": "团队从同一流程开始，但每个人仍对背景与判断负责。"
+        "title": "统一招聘团队的准备方式",
+        "description": "为招聘人员和面试官提供一致的简报格式，但每位评价者仍需记录自己的证据并对判断负责。"
       }
     ]
   },
   "boundaries": {
     "eyebrow": "人工控制",
-    "title": "自动化准备工作，不外包专业责任。",
-    "description": "合理边界不是专业与非专业，而是准备可核查成果与做出后果重大决定之间的界线。",
-    "assistsTitle": "Floatboat 可以协助准备",
+    "title": "让 Work Agent 准备证据，让人保留用人决定。",
+    "description": "Work Agent 可以整理与岗位相关的证据并起草材料，但不能推断受保护属性、给候选人排序、淘汰申请人或作出录用决定。",
+    "assistsTitle": "Work Agent 可以协助准备",
     "assists": [
-      "资料索引、背景简报与来源地图",
-      "比较表、提取结果与开放问题",
-      "会议材料、状态摘要与沟通初稿",
-      "带依据的提纲、报告和可编辑初稿",
-      "基于核准资料的周期更新"
+      "区分必要成果与待确认需求的岗位简报",
+      "按核准岗位标准整理且带来源的候选人证据",
+      "包含重点问题并明确标出信息缺口的面试官材料包",
+      "保留每条观察来源人员的复盘摘要",
+      "等待招聘人员批准后才能发送的候选人状态消息"
     ],
     "retainsTitle": "招聘与人才团队仍然负责",
     "retains": [
-      "专业解释与最终判断",
-      "事实、数据和来源核验",
-      "隐私、权限与敏感信息处理",
-      "策略、优先级与资源决策",
-      "所有对外发布、提交或重要行动的审批"
+      "设定合法岗位标准并判断哪些证据与岗位相关",
+      "评价候选人、追问信息缺口并作出雇佣决定",
+      "防止受保护属性或非必要敏感信息进入流程",
+      "决定面试组、招聘阶段、薪酬范围与用人优先级",
+      "审批每条候选人沟通、流程终止、Offer 或拒绝决定"
     ],
-    "note": "Floatboat 是通用 Agent Workspace，不替代专业资质、法定责任或组织治理。实际数据处理取决于工作区选用的模型、工具、连接器、权限与政策。"
+    "note": "Floatboat 是通用 Work Agent，不是 ATS，也不会成为招聘决策者。它的工作空间用于连接核准文件、工具、指令与交付物；实际数据处理取决于你选择的模型、连接器、权限与政策。"
   },
   "faq": {
-    "title": "招聘与人才团队使用 AI 工作空间的常见问题",
+    "title": "招聘与人才团队使用 Work Agent 的常见问题",
     "description": "招聘自动化必须改善准备工作，同时避免把不完整证据直接变成录用判断，也不能牺牲候选人隐私。",
     "items": [
       {
@@ -258,14 +258,14 @@
   },
   "finalCta": {
     "eyebrow": "从一项真实任务开始",
-    "title": "给招聘与人才团队的重复准备工作一个更好的工作空间。",
-    "description": "从一个已批准的岗位 Brief 和一套结构化面试材料开始，减少准备时间，但不把候选人判断交给系统。",
+    "title": "把第一项招聘准备任务交给 Work Agent。",
+    "description": "从一份已批准的岗位 Brief 和一套结构化面试材料开始，让 Floatboat 减少准备时间，但不接管候选人判断。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-recruiters&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "了解 Agent Workspace",
+      "label": "了解 Work Agent 如何工作",
       "href": "/zh/agent-workspace"
     }
   }

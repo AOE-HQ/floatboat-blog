@@ -1,27 +1,266 @@
 {
-  "slug": "for-solopreneur", "locale": "en",
-  "seo": {"title": "AI Agent Workspace for Solopreneurs | Floatboat", "description": "An AI agent workspace for solopreneurs to prepare client work, proposals, content, follow-ups, and recurring business operations without rebuilding context.", "keywords": ["AI for solopreneurs", "AI agent for solopreneurs", "solopreneur tools", "one person business AI", "AI business workspace"]},
+  "slug": "for-solopreneur",
+  "locale": "en",
+  "seo": {
+    "title": "Work Agent for Solopreneurs and One-Person Businesses | Floatboat",
+    "description": "A Work Agent for solopreneurs that prepares proposals, client deliverables, follow-ups, and weekly operating reviews from approved business files.",
+    "keywords": [
+      "Work Agent for solopreneurs",
+      "AI agent for one person business",
+      "AI client proposal agent",
+      "solopreneur operations AI",
+      "AI agent for client delivery"
+    ]
+  },
   "breadcrumb": "Solopreneurs and one-person businesses",
-  "hero": {"eyebrow": "One workspace for the roles behind a one-person business", "title": "AI Agent Workspace for Solopreneurs", "description": "Move from a client request or rough voice note to a proposal, working deliverable, follow-up, and reusable process while keeping every important decision under your control.", "primaryCta": {"label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-solopreneur&download_placement=hero"}, "secondaryCta": {"label": "Explore workflows", "href": "#workflows"}, "proof": ["One context across business roles", "Editable client-ready outputs", "Human approval before sending"], "preview": {"label": "Live business workspace", "matter": "New client · Proposal and kickoff", "inputs": ["Call voice memo", "Service template", "Client background"], "outputs": ["Proposal draft", "Cover email", "Kickoff checklist"], "review": "Owner approval"}},
-  "burdens": {"eyebrow": "The work between selling and delivering", "title": "Every role returns to the same person", "description": "A solopreneur switches between sales, delivery, operations, finance, and publishing without a colleague available to preserve context between those roles.", "items": [
-    {"label": "Context", "title": "Every role starts from your memory", "description": "Client promises, pricing logic, project history, and next steps often live in notes that only the owner can interpret."},
-    {"label": "Delivery", "title": "Polished work competes with billable work", "description": "Proposals, decks, updates, and follow-ups must look complete even when there is no production team behind them."},
-    {"label": "Follow-up", "title": "Small commitments create a large queue", "description": "A call can produce a proposal, invoice note, research task, calendar hold, and several messages that all depend on one another."},
-    {"label": "Reuse", "title": "Good methods stay trapped in old projects", "description": "A successful intake or delivery process is often reconstructed from memory instead of saved as a reusable starting point."}
-  ]},
-  "workflows": {"eyebrow": "Three places to start", "title": "Connect selling, producing, and following through", "description": "Each workflow begins with business material you already use and returns an editable result for owner review.", "items": [
-    {"number": "01", "title": "Turn a client call into a proposal", "job": "Combine a voice memo, client context, offer template, and open questions into a proposal package.", "flow": ["Capture the call", "Recover client context", "Draft the proposal", "Review and send"], "output": "An editable proposal, cover email, assumptions, and next-step checklist.", "boundary": "The owner approves scope, price, claims, commitments, recipients, and timing."},
-    {"number": "02", "title": "Prepare a client delivery pack", "job": "Organize source files, decisions, progress, and the current deliverable before a review or handoff.", "flow": ["Select project files", "Recover decisions", "Prepare deliverable", "Package the update"], "output": "A client-ready artifact, progress note, decision list, and follow-up items.", "boundary": "The owner verifies quality and decides what is appropriate to share."},
-    {"number": "03", "title": "Run a weekly business review", "job": "Bring active work, follow-ups, upcoming deadlines, and unresolved decisions into one operating brief.", "flow": ["Collect open work", "Group by business role", "Set priorities", "Prepare the week"], "output": "A weekly brief with priorities, prepared actions, and deferred decisions.", "boundary": "Floatboat prepares the view; the owner chooses priorities and makes commitments."}
-  ]},
-  "faq": {"title": "Solopreneur AI workspace questions", "description": "The useful questions concern continuity, client quality, business control, and which recurring work is worth saving.", "items": [
-    {"question": "Is Floatboat a CRM or business-management suite?", "answer": "No. Existing systems remain the records for customers, accounting, and projects. Floatboat is the working environment that connects files, instructions, agents, and deliverables around a specific assignment."},
-    {"question": "Can it run my business without me?", "answer": "No. It can prepare work, expose decisions, and repeat approved steps, but the owner remains responsible for priorities, promises, pricing, customer relationships, and external actions."},
-    {"question": "Can it use my proposal and delivery templates?", "answer": "Yes. Add the offer language, structure, pricing assumptions, brand voice, and review checklist that apply to the current client."},
-    {"question": "How do I keep one client's context separate from another?", "answer": "Use separate project workspaces and folders, narrow file access, apply clear naming, and review connector permissions before reusing any workflow."},
-    {"question": "Will it send proposals or invoices automatically?", "answer": "Keep external sending and financial commitments behind explicit owner approval. A prepared action is not the same as an approved action."},
-    {"question": "Which task should I automate first?", "answer": "Choose a frequent task with stable inputs and an output you already know how to judge, such as proposal preparation or a weekly client update."},
-    {"question": "Can a workflow change as the business changes?", "answer": "Yes. Saved methods should remain editable so new offers, tools, clients, and approval points can be reflected without starting from zero."}
-  ]},
-  "finalCta": {"eyebrow": "Start with one real client task", "title": "Give every role one working context", "description": "Bring one client request, the template you trust, and the next deliverable. Keep the useful process without giving up owner judgment.", "primaryCta": {"label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-solopreneur&download_placement=final_cta"}, "secondaryCta": {"label": "Explore Agent Workspace", "href": "/agent-workspace"}}
+  "hero": {
+    "eyebrow": "A Work Agent for the many roles behind a one-person business",
+    "title": "A Work Agent for Solopreneurs",
+    "description": "Give Floatboat a client request, a voice note, or a weekly operating goal. Your Work Agent uses approved files and methods in its workspace to prepare proposals, deliverables, follow-ups, and review-ready next steps while you keep control of every commitment.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-solopreneur&download_placement=hero"
+    },
+    "secondaryCta": {
+      "label": "Explore workflows",
+      "href": "#workflows"
+    },
+    "proof": [
+      "One context across business roles",
+      "Editable client-ready outputs",
+      "Human approval before sending"
+    ],
+    "preview": {
+      "label": "Illustrative Work Agent assignment",
+      "matter": "New client · Proposal and kickoff",
+      "inputs": [
+        "Call voice memo",
+        "Service template",
+        "Client background"
+      ],
+      "outputs": [
+        "Proposal draft",
+        "Cover email",
+        "Kickoff checklist"
+      ],
+      "review": "Owner approval"
+    }
+  },
+  "burdens": {
+    "eyebrow": "The work between selling and delivering",
+    "title": "Every role returns to the same person",
+    "description": "A solopreneur switches between sales, delivery, operations, finance, and publishing without a colleague available to preserve context between those roles.",
+    "items": [
+      {
+        "label": "Context",
+        "title": "Every role starts from your memory",
+        "description": "Client promises, pricing logic, project history, and next steps often live in notes that only the owner can interpret."
+      },
+      {
+        "label": "Delivery",
+        "title": "Polished work competes with billable work",
+        "description": "Proposals, decks, updates, and follow-ups must look complete even when there is no production team behind them."
+      },
+      {
+        "label": "Follow-up",
+        "title": "Small commitments create a large queue",
+        "description": "A call can produce a proposal, invoice note, research task, calendar hold, and several messages that all depend on one another."
+      },
+      {
+        "label": "Reuse",
+        "title": "Good methods stay trapped in old projects",
+        "description": "A successful intake or delivery process is often reconstructed from memory instead of saved as a reusable starting point."
+      }
+    ]
+  },
+  "buildingBlocks": {
+    "eyebrow": "One agent across changing business roles",
+    "title": "What your solopreneur Work Agent can prepare",
+    "description": "The agent works inside a persistent workspace, using only the business context and instructions you provide.",
+    "items": [
+      {
+        "action": "Read",
+        "example": "Use approved call notes, client files, offers, and templates.",
+        "result": "A grounded assignment without rebuilding context."
+      },
+      {
+        "action": "Organize",
+        "example": "Connect promises, deadlines, source files, and open questions.",
+        "result": "A usable project record and action queue."
+      },
+      {
+        "action": "Draft",
+        "example": "Prepare proposals, updates, delivery notes, and follow-ups.",
+        "result": "Editable work products instead of isolated answers."
+      },
+      {
+        "action": "Review",
+        "example": "Surface assumptions, missing inputs, and decisions requiring owner judgment.",
+        "result": "Clear approval points before commitments."
+      },
+      {
+        "action": "Reuse",
+        "example": "Keep methods that proved useful on a completed assignment.",
+        "result": "A repeatable process that remains editable."
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Your business method remains the method",
+    "title": "Teach the Work Agent how you sell and deliver",
+    "description": "Give the agent the offer language, templates, naming rules, and review criteria that fit your business.",
+    "inputsLabel": "Define the working context",
+    "inputs": [
+      "Client files and call notes",
+      "Offer and proposal templates",
+      "Brand voice and delivery standards",
+      "Pricing assumptions and exclusions",
+      "Required output formats"
+    ],
+    "controlsLabel": "Define the control points",
+    "controls": [
+      "What the agent may read",
+      "When it must ask a question",
+      "Which claims require verification",
+      "Who approves price and scope",
+      "What must never be sent automatically"
+    ]
+  },
+  "progression": {
+    "eyebrow": "From one assignment to a reliable routine",
+    "title": "Start bounded; reuse only what earns your trust",
+    "description": "A Work Agent becomes useful through reviewed assignments, not by taking over the business unattended.",
+    "items": [
+      {
+        "label": "First assignment",
+        "title": "Prepare one client deliverable",
+        "description": "Use a known input and an output you can judge."
+      },
+      {
+        "label": "Saved method",
+        "title": "Keep the proven steps",
+        "description": "Reuse templates, checks, and approval points on the next similar job."
+      },
+      {
+        "label": "Business routine",
+        "title": "Run a recurring review",
+        "description": "Let the agent prepare the operating view while you set priorities and commitments."
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "Owner-controlled by design",
+    "title": "Delegate preparation, not ownership",
+    "description": "The Work Agent can assemble and draft work; business judgment and external commitments stay with the owner.",
+    "assistsTitle": "The Work Agent can prepare",
+    "assists": [
+      "Proposal and scope drafts",
+      "Client delivery packs",
+      "Follow-up messages",
+      "Weekly operating briefs",
+      "Open-question and decision lists"
+    ],
+    "retainsTitle": "People retain",
+    "retains": [
+      "Pricing and scope commitments",
+      "Contract and financial decisions",
+      "Client relationship judgment",
+      "Factual and quality verification",
+      "Approval for every external action"
+    ],
+    "note": "Floatboat is a Work Agent operating in a user-controlled workspace. It does not independently run a business or replace professional, financial, or legal judgment."
+  },
+  "workflows": {
+    "eyebrow": "Three assignments for your Work Agent",
+    "title": "Move client work from request to reviewed deliverable",
+    "description": "Each assignment begins with business material you approve and returns an editable result for owner review.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Turn a client call into a proposal",
+        "job": "Combine a voice memo, client context, offer template, and open questions into a proposal package.",
+        "flow": [
+          "Capture the call",
+          "Recover client context",
+          "Draft the proposal",
+          "Review and send"
+        ],
+        "output": "An editable proposal, cover email, assumptions, and next-step checklist.",
+        "boundary": "The owner approves scope, price, claims, commitments, recipients, and timing."
+      },
+      {
+        "number": "02",
+        "title": "Prepare a client delivery pack",
+        "job": "Organize source files, decisions, progress, and the current deliverable before a review or handoff.",
+        "flow": [
+          "Select project files",
+          "Recover decisions",
+          "Prepare deliverable",
+          "Package the update"
+        ],
+        "output": "A client-ready artifact, progress note, decision list, and follow-up items.",
+        "boundary": "The owner verifies quality and decides what is appropriate to share."
+      },
+      {
+        "number": "03",
+        "title": "Run a weekly business review",
+        "job": "Bring active work, follow-ups, upcoming deadlines, and unresolved decisions into one operating brief.",
+        "flow": [
+          "Collect open work",
+          "Group by business role",
+          "Set priorities",
+          "Prepare the week"
+        ],
+        "output": "A weekly brief with priorities, prepared actions, and deferred decisions.",
+        "boundary": "Floatboat prepares the view; the owner chooses priorities and makes commitments."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Work Agent questions for solopreneurs",
+    "description": "Practical answers about continuity, client quality, owner control, and the recurring assignments worth teaching a Work Agent.",
+    "items": [
+      {
+        "question": "Is Floatboat a CRM or business-management suite?",
+        "answer": "No. Existing systems remain the records for customers, accounting, and projects. Floatboat is a Work Agent that uses an approved workspace to prepare specific assignments and return editable deliverables."
+      },
+      {
+        "question": "Can it run my business without me?",
+        "answer": "No. It can prepare work, expose decisions, and repeat approved steps, but the owner remains responsible for priorities, promises, pricing, customer relationships, and external actions."
+      },
+      {
+        "question": "Can it use my proposal and delivery templates?",
+        "answer": "Yes. Add the offer language, structure, pricing assumptions, brand voice, and review checklist that apply to the current client."
+      },
+      {
+        "question": "How do I keep one client's context separate from another?",
+        "answer": "Use separate project workspaces and folders, narrow file access, apply clear naming, and review connector permissions before reusing any workflow."
+      },
+      {
+        "question": "Will it send proposals or invoices automatically?",
+        "answer": "Keep external sending and financial commitments behind explicit owner approval. A prepared action is not the same as an approved action."
+      },
+      {
+        "question": "Which task should I automate first?",
+        "answer": "Choose a frequent task with stable inputs and an output you already know how to judge, such as proposal preparation or a weekly client update."
+      },
+      {
+        "question": "Can a workflow change as the business changes?",
+        "answer": "Yes. Saved methods should remain editable so new offers, tools, clients, and approval points can be reflected without starting from zero."
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Start with one real client task",
+    "title": "Give your first client task to a Work Agent",
+    "description": "Bring one client request, the template you trust, and the next deliverable. Let the Work Agent prepare the work while you keep every business decision.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-solopreneur&download_placement=final_cta"
+    },
+    "secondaryCta": {
+      "label": "See how the workspace supports the agent",
+      "href": "/agent-workspace"
+    }
+  }
 }

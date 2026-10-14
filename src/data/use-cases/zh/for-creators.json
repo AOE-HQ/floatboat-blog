@@ -1,27 +1,266 @@
 {
-  "slug": "for-creators", "locale": "zh",
-  "seo": {"title": "创作者与写作者 AI Agent Workspace | Floatboat", "description": "面向创作者和写作者的 AI Agent Workspace，用于整理源素材、研究选题、起草长内容、适配渠道，并管理发布所需的文件与审阅。", "keywords": ["创作者 AI", "写作 AI", "内容创作工作流", "内容多渠道分发", "AI Agent Workspace"]},
+  "slug": "for-creators",
+  "locale": "zh",
+  "seo": {
+    "title": "创作者与写作者 Work Agent | Floatboat",
+    "description": "面向创作者与内容团队的 Work Agent，把获准研究、录音与初稿推进为长内容、渠道版本和待审发布材料包。",
+    "keywords": [
+      "创作者 Work Agent",
+      "写作者 AI Agent",
+      "AI 内容工作流",
+      "内容改编 Agent",
+      "AI 发布助手"
+    ]
+  },
   "breadcrumb": "创作者与独立出版者",
-  "hero": {"eyebrow": "从源素材到完整作品", "title": "创作者的 AI Agent Workspace", "description": "把研究、录音、初稿、修改记录、视觉素材和渠道版本放在同一创作项目中，不再让作品背景散落在一次性对话里。", "primaryCta": {"label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-creators&download_placement=hero"}, "secondaryCta": {"label": "查看工作流", "href": "#workflows"}, "proof": ["源素材与成稿保持关联", "所有初稿都能继续修改", "最终发布由创作者确认"], "preview": {"label": "内容创作工作空间", "matter": "长文 · 发布材料包", "inputs": ["研究笔记", "语音记录", "风格说明"], "outputs": ["文章初稿", "邮件通讯导语", "渠道素材"], "review": "创作者审阅"}},
-  "burdens": {"eyebrow": "创意周围的制作工作", "title": "创作不只是生成一份初稿", "description": "创作者既要保护最初的想法，也要完成研究、成文、修改、包装和渠道适配。", "items": [
-    {"label": "素材", "title": "想法出现时还没有固定位置", "description": "语音、链接、截图、访谈与零散片段会不断累积，但离可发布结构仍有很长距离。"},
-    {"label": "成文", "title": "初稿背后还有许多未决选择", "description": "观点、语气、案例、证据、节奏与读者定位，都需要在文字出现之后继续编辑。"},
-    {"label": "适配", "title": "每个渠道都会改变表达方式", "description": "邮件通讯、视频脚本、长帖、轮播图和短文案需要不同结构，不能只把同一篇内容截短。"},
-    {"label": "归档", "title": "作品发布后反而难以复用", "description": "来源、成稿、封面、摘录与效果记录经常在发布完成后各自散开。"}
-  ]},
-  "workflows": {"eyebrow": "三条创作流程", "title": "先把想法做完整，再扩展格式", "description": "工作空间会保留来源和编辑决定，每项产出仍然交给创作者修改。", "items": [
-    {"number": "01", "title": "把零散素材写成长内容", "job": "将录音、笔记、链接与工作论点整理成带来源的提纲和初稿。", "flow": ["汇集碎片", "整理主题", "建立提纲", "结合来源起草"], "output": "包含来源笔记、待确认问题和编辑选择的结构化初稿。", "boundary": "观点、事实核验、个人语气和最终编辑仍由创作者负责。"},
-    {"number": "02", "title": "按渠道改编已确认内容", "job": "从最终源内容出发，分别制作适合不同渠道的版本，同时保留核心主张。", "flow": ["锁定源版本", "选择渠道", "调整结构", "逐项审阅"], "output": "与源内容关联的邮件通讯、社媒、脚本和视觉文案初稿。", "boundary": "创作者检查语境、授权、语气，并决定每个渠道是否发布。"},
-    {"number": "03", "title": "准备完整发布材料包", "job": "把正文、视觉要求、元数据、链接和发布清单放入同一审阅队列。", "flow": ["汇集最终素材", "检查依赖", "准备元数据", "批准发布"], "output": "发布文件夹、元数据表、素材清单和推广简报。", "boundary": "Floatboat 准备材料；账号、版权、发布时间和发布操作由创作者控制。"}
-  ]},
-  "faq": {"title": "创作者使用 AI 工作空间的常见问题", "description": "创作者更关心个人语气、素材来源、内容权利、渠道差异和最终发布权。", "items": [
-    {"question": "Floatboat 是写作软件或社媒排程工具吗？", "answer": "它是承载创作过程的 Agent Workspace。你可以继续使用习惯的编辑器和发布工具，由 Floatboat 整理输入、初稿、渠道适配与审阅步骤。"},
-    {"question": "不同渠道会不会都写成同一种语气？", "answer": "不应该。需要分别定义每个渠道的受众、格式、篇幅、语气和目的，再对照核准的源内容逐项检查。"},
-    {"question": "它能参考我过去的作品吗？", "answer": "可以提供经过选择的范例和风格说明，但是否符合预期语气仍由创作者判断，不能把模仿效果当作保证。"},
-    {"question": "怎样避免编造事实或引文？", "answer": "让研究内容保留可检查来源，区分来源笔记与个人评论，并在发布前核验所有事实主张。"},
-    {"question": "受版权或许可限制的素材怎么办？", "answer": "只处理自己有权使用和改编的材料。授权、署名、许可与合理使用判断仍由创作者负责。"},
-    {"question": "Floatboat 会自动发布内容吗？", "answer": "推荐流程以待审发布材料包结束。账号访问、发布操作与不可逆渠道动作都应经过明确确认。"},
-    {"question": "创作者最适合从哪条流程开始？", "answer": "选择一篇已经完成的长内容，分别改编成两个差异明显的渠道版本，确认忠实度与实用性后再保存流程。"}
-  ]},
-  "finalCta": {"eyebrow": "从一份源内容开始", "title": "让一个想法贯穿每种内容格式", "description": "带上一份已完成或接近完成的作品及其背景素材。在保留来源和编辑权的前提下，继续完成下一版初稿与发布材料。", "primaryCta": {"label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-creators&download_placement=final_cta"}, "secondaryCta": {"label": "了解 Agent Workspace", "href": "/zh/agent-workspace"}}
+  "hero": {
+    "eyebrow": "从源素材推进到发布的 Work Agent",
+    "title": "创作者与写作者的 Work Agent",
+    "description": "把获准研究、录音、初稿和编辑方向交给 Floatboat。Work Agent 会在持续工作空间中推进内容任务，返回可编辑成稿、渠道版本与发布材料供你审阅。",
+    "primaryCta": {
+      "label": "下载 Floatboat",
+      "href": "https://floatboat.ai/zh/download/success?from=use-cases-creators&download_placement=hero"
+    },
+    "secondaryCta": {
+      "label": "查看工作流",
+      "href": "#workflows"
+    },
+    "proof": [
+      "源素材与成稿保持关联",
+      "所有初稿都能继续修改",
+      "最终发布由创作者确认"
+    ],
+    "preview": {
+      "label": "Work Agent 任务示例",
+      "matter": "长文 · 发布材料包",
+      "inputs": [
+        "研究笔记",
+        "语音记录",
+        "风格说明"
+      ],
+      "outputs": [
+        "文章初稿",
+        "邮件通讯导语",
+        "渠道素材"
+      ],
+      "review": "创作者审阅"
+    }
+  },
+  "burdens": {
+    "eyebrow": "创意周围的制作工作",
+    "title": "创作不只是生成一份初稿",
+    "description": "创作者既要保护最初的想法，也要完成研究、成文、修改、包装和渠道适配。",
+    "items": [
+      {
+        "label": "素材",
+        "title": "想法出现时还没有固定位置",
+        "description": "语音、链接、截图、访谈与零散片段会不断累积，但离可发布结构仍有很长距离。"
+      },
+      {
+        "label": "成文",
+        "title": "初稿背后还有许多未决选择",
+        "description": "观点、语气、案例、证据、节奏与读者定位，都需要在文字出现之后继续编辑。"
+      },
+      {
+        "label": "适配",
+        "title": "每个渠道都会改变表达方式",
+        "description": "邮件通讯、视频脚本、长帖、轮播图和短文案需要不同结构，不能只把同一篇内容截短。"
+      },
+      {
+        "label": "归档",
+        "title": "作品发布后反而难以复用",
+        "description": "来源、成稿、封面、摘录与效果记录经常在发布完成后各自散开。"
+      }
+    ]
+  },
+  "buildingBlocks": {
+    "eyebrow": "贯穿整个任务的编辑工作",
+    "title": "创作者 Work Agent 可以准备什么",
+    "description": "Agent 在持续工作空间中保持来源、编辑选择、初稿与发布素材之间的关联。",
+    "items": [
+      {
+        "action": "读取",
+        "example": "使用获准资料与当前要求。",
+        "result": "形成有依据的任务背景。"
+      },
+      {
+        "action": "整理",
+        "example": "连接文件、决定、依赖和开放问题。",
+        "result": "得到可执行的工作记录。"
+      },
+      {
+        "action": "准备",
+        "example": "按照指定格式起草和组合成果。",
+        "result": "返回可编辑交付物。"
+      },
+      {
+        "action": "检查",
+        "example": "呈现假设、缺口与待审批事项。",
+        "result": "在关键动作前保留人工节点。"
+      },
+      {
+        "action": "复用",
+        "example": "保存已验证的方法与审批点。",
+        "result": "形成仍可调整的重复流程。"
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "你的方法仍是标准",
+    "title": "让 Work Agent 学会你的编辑方法",
+    "description": "提供适用于当前任务的资料、标准、格式和审批要求。",
+    "inputsLabel": "定义工作背景",
+    "inputs": [
+      "获准源素材",
+      "受众与编辑目的",
+      "风格说明与精选范例",
+      "渠道格式与篇幅限制",
+      "版权与署名要求"
+    ],
+    "controlsLabel": "定义控制点",
+    "controls": [
+      "允许使用哪些来源",
+      "哪些内容必须核实",
+      "如何标记不确定性",
+      "谁批准渠道版本",
+      "哪些内容绝不能自动发布"
+    ]
+  },
+  "progression": {
+    "eyebrow": "从一份作品到可复用的发布方法",
+    "title": "从一份作品到可复用发布方法",
+    "description": "先用一份源内容验证结构、来源与语气是否可靠，再复用那些能够保持原意和创作者声音的步骤。",
+    "items": [
+      {
+        "label": "源内容",
+        "title": "准备一份可审阅初稿",
+        "description": "用熟悉的素材检查结构、来源标注和编辑价值。"
+      },
+      {
+        "label": "渠道组合",
+        "title": "改编一份已经确认的作品",
+        "description": "为不同受众制作真正有区别的渠道版本，而不是简单截短原文。"
+      },
+      {
+        "label": "发布惯例",
+        "title": "保存经过验证的发布方法",
+        "description": "复用核验与打包步骤，但不自动化编辑批准和发布决定。"
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "默认由人控制",
+    "title": "把制作工作交出去，不交出作者和发布判断",
+    "description": "Work Agent 可以整理来源、起草内容、适配渠道并准备发布材料；事实、原创性、版权和是否发布仍由创作者负责。",
+    "assistsTitle": "Work Agent 可以准备",
+    "assists": [
+      "带来源的提纲与初稿",
+      "渠道差异化版本",
+      "元数据与推广文案",
+      "素材与发布清单",
+      "待核实问题"
+    ],
+    "retainsTitle": "人仍然负责",
+    "retains": [
+      "观点与最终语气",
+      "事实和引文核验",
+      "版权与授权决定",
+      "编辑质量判断",
+      "账号访问与发布审批"
+    ],
+    "note": "Floatboat 是帮助准备内容工作的 Work Agent，不是自主发布工具，也不能替代编辑审核、法律判断或版权审查。"
+  },
+  "workflows": {
+    "eyebrow": "可以交给创作者 Work Agent 的三项任务",
+    "title": "先把想法做完整，再扩展格式",
+    "description": "Work Agent 保留来源和编辑决定，每项产出仍由创作者修改和批准。",
+    "items": [
+      {
+        "number": "01",
+        "title": "把零散素材写成长内容",
+        "job": "将录音、笔记、链接与工作论点整理成带来源的提纲和初稿。",
+        "flow": [
+          "汇集碎片",
+          "整理主题",
+          "建立提纲",
+          "结合来源起草"
+        ],
+        "output": "包含来源笔记、待确认问题和编辑选择的结构化初稿。",
+        "boundary": "观点、事实核验、个人语气和最终编辑仍由创作者负责。"
+      },
+      {
+        "number": "02",
+        "title": "按渠道改编已确认内容",
+        "job": "从最终源内容出发，分别制作适合不同渠道的版本，同时保留核心主张。",
+        "flow": [
+          "锁定源版本",
+          "选择渠道",
+          "调整结构",
+          "逐项审阅"
+        ],
+        "output": "与源内容关联的邮件通讯、社媒、脚本和视觉文案初稿。",
+        "boundary": "创作者检查语境、授权、语气，并决定每个渠道是否发布。"
+      },
+      {
+        "number": "03",
+        "title": "准备完整发布材料包",
+        "job": "把正文、视觉要求、元数据、链接和发布清单放入同一审阅队列。",
+        "flow": [
+          "汇集最终素材",
+          "检查依赖",
+          "准备元数据",
+          "批准发布"
+        ],
+        "output": "发布文件夹、元数据表、素材清单和推广简报。",
+        "boundary": "Floatboat 准备材料；账号、版权、发布时间和发布操作由创作者控制。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "创作者使用 Work Agent 的常见问题",
+    "description": "重点回答个人语气、来源、版权、渠道差异与最终发布权。",
+    "items": [
+      {
+        "question": "Floatboat 是写作软件或社媒排程工具吗？",
+        "answer": "Floatboat 是在持续工作空间中执行内容任务的 Work Agent。你可以继续使用习惯的编辑器和发布工具，由 Floatboat 整理输入、初稿、渠道适配与审阅步骤。"
+      },
+      {
+        "question": "不同渠道会不会都写成同一种语气？",
+        "answer": "不应该。需要分别定义每个渠道的受众、格式、篇幅、语气和目的，再对照核准的源内容逐项检查。"
+      },
+      {
+        "question": "它能参考我过去的作品吗？",
+        "answer": "可以提供经过选择的范例和风格说明，但是否符合预期语气仍由创作者判断，不能把模仿效果当作保证。"
+      },
+      {
+        "question": "怎样避免编造事实或引文？",
+        "answer": "让研究内容保留可检查来源，区分来源笔记与个人评论，并在发布前核验所有事实主张。"
+      },
+      {
+        "question": "受版权或许可限制的素材怎么办？",
+        "answer": "只处理自己有权使用和改编的材料。授权、署名、许可与合理使用判断仍由创作者负责。"
+      },
+      {
+        "question": "Floatboat 会自动发布内容吗？",
+        "answer": "推荐流程以待审发布材料包结束。账号访问、发布操作与不可逆渠道动作都应经过明确确认。"
+      },
+      {
+        "question": "创作者最适合从哪条流程开始？",
+        "answer": "选择一篇已经完成的长内容，分别改编成两个差异明显的渠道版本，确认忠实度与实用性后再保存流程。"
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "从一份源内容开始",
+    "title": "把下一次发布交给创作者 Work Agent",
+    "description": "带上一份已完成或接近完成的作品及其背景素材。让 Work Agent 准备下一版内容与发布材料，同时保留你的来源和编辑权。",
+    "primaryCta": {
+      "label": "下载 Floatboat",
+      "href": "https://floatboat.ai/zh/download/success?from=use-cases-creators&download_placement=final_cta"
+    },
+    "secondaryCta": {
+      "label": "查看工作空间如何支持 Agent",
+      "href": "/zh/agent-workspace"
+    }
+  }
 }

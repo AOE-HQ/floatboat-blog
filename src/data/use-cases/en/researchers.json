@@ -2,10 +2,11 @@
   "slug": "researchers",
   "locale": "en",
   "seo": {
-    "title": "Agent Workspace for Researchers | Floatboat",
-    "description": "An AI agent workspace for researchers to collect sources, build evidence matrices, compare findings, draft literature reviews, and maintain research briefs.",
+    "title": "Work Agent for Researchers: Evidence Review | Floatboat",
+    "description": "A Work Agent that organizes research sources, builds evidence matrices, compares findings, drafts reviews, and maintains research briefs.",
     "keywords": [
-      "AI for researchers",
+      "Work Agent for researchers",
+      "AI agent for researchers",
       "AI research assistant",
       "literature review AI",
       "evidence synthesis",
@@ -15,9 +16,9 @@
   },
   "breadcrumb": "researchers and insight teams",
   "hero": {
-    "eyebrow": "A configurable AI workspace for real work",
-    "title": "An AI agent workspace for researchers and insight teams",
-    "description": "Collect sources, build evidence matrices, compare findings, and maintain recurring research briefs while preserving human verification and methodology.",
+    "eyebrow": "A Work Agent for evidence preparation",
+    "title": "A Work Agent for researchers and insight teams",
+    "description": "Assign Floatboat a defined research task. It can organize selected sources, build evidence matrices, compare findings, and maintain a dated research brief while researchers retain verification and methodological judgment.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-researchers&download_placement=hero"
@@ -32,8 +33,8 @@
       "Human approval before consequential action"
     ],
     "preview": {
-      "label": "Illustrative workspace",
-      "matter": "Market transition · Evidence workspace",
+      "label": "Illustrative Work Agent assignment",
+      "matter": "Market transition · Evidence assignment",
       "inputs": [
         "Research question",
         "Approved sources",
@@ -75,46 +76,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "General capabilities, professional context",
-    "title": "Compose the workflow from practical building blocks.",
-    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "eyebrow": "What a research Work Agent can prepare",
+    "title": "Assign the source work around research judgment.",
+    "description": "The Work Agent follows your corpus, extraction schema, inclusion rules, and checks; it does not decide evidentiary weight or interpretation.",
     "items": [
       {
         "action": "Read",
-        "example": "Start from approved files, records, and sources rather than an empty prompt.",
-        "result": "A grounded working set."
+        "example": "Work from the selected corpus, protocol, search log, and coding guide rather than an open-ended prompt.",
+        "result": "A bounded source set with explicit research rules."
       },
       {
         "action": "Organize",
-        "example": "Classify material, normalize names, and identify missing inputs.",
-        "result": "A navigable project structure."
+        "example": "Index sources by publication, date, method, population, topic, and inclusion status.",
+        "result": "A searchable corpus with provenance intact."
       },
       {
         "action": "Extract",
-        "example": "Pull facts, dates, data, claims, and open questions.",
-        "result": "Structured content ready to verify."
+        "example": "Capture claims, samples, measures, findings, limitations, and source locations in the defined schema.",
+        "result": "Evidence rows that can be checked against the originals."
       },
       {
         "action": "Compare",
-        "example": "Contrast versions, standards, periods, or alternatives.",
-        "result": "A focused list of changes and differences."
+        "example": "Contrast findings by method, population, time period, and stated limitation.",
+        "result": "A visible account of convergence, conflict, and missing evidence."
       },
       {
         "action": "Create",
-        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
-        "result": "Editable work products."
+        "example": "Prepare an evidence matrix, source memo, thematic outline, or dated change brief.",
+        "result": "Editable research artifacts with a traceable source trail."
       },
       {
         "action": "Repeat",
-        "example": "Save proven steps, formats, and approval points.",
-        "result": "A reusable workflow shaped by the team."
+        "example": "Apply the validated search, screening, extraction, and review sequence to the next update.",
+        "result": "Consistent monitoring without silently changing the protocol."
       }
     ]
   },
   "workflows": {
-    "eyebrow": "Three configurable starting points",
-    "title": "Start from real assignments, not a fixed professional playbook.",
-    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "eyebrow": "Three assignments for a research Work Agent",
+    "title": "Build a traceable evidence trail before drawing conclusions.",
+    "description": "Each assignment begins with a defined question, source set, and protocol, returns an inspectable result, and stops before interpretation.",
     "items": [
       {
         "number": "01",
@@ -159,8 +160,8 @@
   },
   "customization": {
     "eyebrow": "Your method remains the method",
-    "title": "Bring the standards your team already trusts.",
-    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "title": "Teach the Work Agent your research protocol.",
+    "description": "Configure the question, source set, inclusion rules, extraction fields, citation requirements, and review gates for each study.",
     "inputsLabel": "Define the working context",
     "inputs": [
       "Approved files and data sources",
@@ -180,50 +181,50 @@
   },
   "progression": {
     "eyebrow": "From one task to a reusable system",
-    "title": "Start with one bounded assignment. Keep only what proves useful.",
-    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "title": "Start with one bounded corpus. Teach the Work Agent only what proves reliable.",
+    "description": "A Work Agent can reuse a validated protocol without turning research into unattended synthesis.",
     "items": [
       {
         "label": "Ad hoc",
         "title": "Complete one deliverable",
-        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+        "description": "Build one evidence matrix from a small known corpus and audit every extracted field against the original sources."
       },
       {
         "label": "Saved workflow",
         "title": "Reuse the successful method",
-        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+        "description": "Reuse the validated search, screening, extraction, and citation checks for the next review update."
       },
       {
         "label": "Team practice",
         "title": "Share a controlled starting point",
-        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+        "description": "Share one explicit protocol and coding schema while named researchers resolve ambiguity and own interpretation."
       }
     ]
   },
   "boundaries": {
     "eyebrow": "Human-controlled by design",
-    "title": "Automate preparation, not professional responsibility.",
-    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
+    "title": "Let the Work Agent prepare the evidence—not interpret it for you.",
+    "description": "The Work Agent can structure a selected corpus and expose patterns; researchers define the protocol, verify the record, weigh evidence, and interpret findings.",
     "assistsTitle": "Floatboat can help prepare",
     "assists": [
-      "Source indexes, context briefs, and evidence maps",
-      "Comparisons, extracted fields, and open questions",
-      "Meeting packs, status summaries, and communication drafts",
-      "Grounded outlines, reports, and editable first drafts",
-      "Recurring updates from approved materials"
+      "Source inventories with publication and access details",
+      "Evidence matrices using a defined extraction schema",
+      "Comparisons of methods, samples, findings, and limitations",
+      "Literature-review outlines and dated change briefs",
+      "Monitoring updates from an approved source watchlist"
     ],
     "retainsTitle": "researchers and insight teams retain",
     "retains": [
-      "Professional interpretation and final judgment",
-      "Verification of facts, data, and sources",
-      "Privacy, access, and sensitive-information decisions",
-      "Strategy, priority, and resource decisions",
-      "Approval for every external publication, submission, or consequential action"
+      "Research question, protocol, and inclusion criteria",
+      "Verification of citations, quotations, and extracted data",
+      "Resolution of ambiguous or conflicting evidence",
+      "Assessment of evidence quality and methodological limits",
+      "Interpretation, authorship, publication, and submission decisions"
     ],
-    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+    "note": "Floatboat is a general-purpose Work Agent, not an academic database or substitute for a researcher's methodology. It works inside a persistent workspace; data handling depends on the models, tools, connectors, permissions, and research policies selected for that environment."
   },
   "faq": {
-    "title": "AI workspace questions for researchers and insight teams",
+    "title": "Work Agent questions for researchers and insight teams",
     "description": "Researchers need provenance, explicit inclusion rules, and a clear separation between source extraction and interpretation.",
     "items": [
       {
@@ -258,14 +259,14 @@
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
-    "title": "Give the repetitive preparation around researchers and insight teams a better workspace.",
+    "title": "Give your first evidence-preparation assignment to a Work Agent.",
     "description": "Start with one bounded corpus and an explicit extraction schema. Build a source trail that survives beyond the first summary.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-researchers&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "Explore Agent Workspace",
+      "label": "See how the workspace supports the agent",
       "href": "/agent-workspace"
     }
   }

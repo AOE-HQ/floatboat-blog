@@ -27,13 +27,13 @@ export function PersonaRelatedPages({ page }: { page: PersonaPageData }) {
     <div className="mx-auto max-w-7xl">
       <div className="max-w-3xl">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-          {isZh ? "更多职业工作空间" : "More professional workspaces"}
+          {isZh ? "更多职业 Work Agent" : "More Work Agents by profession"}
         </p>
         <h2 id="related-use-cases-heading" className="mt-3 font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">
-          {titleCase(isZh ? "探索其他职业的 AI Agent Workspace" : "Explore More AI Agent Workspaces")}
+          {titleCase(isZh ? "探索面向其他职业的 Work Agent" : "Explore More Work Agents")}
         </h2>
         <p className="mt-5 max-w-2xl text-lg leading-7 text-[var(--ob-color-text-subtle)]">
-          {isZh ? "查看相邻角色如何围绕自己的文件、任务与审阅边界组织 Agent 工作。" : "See how adjacent roles organize agent work around their own files, assignments, and review boundaries."}
+          {isZh ? "查看 Floatboat Work Agent 如何使用不同职业的文件、方法与审阅边界完成真实任务。" : "See how a Floatboat Work Agent completes real assignments using each profession's files, methods, and review boundaries."}
         </p>
       </div>
 

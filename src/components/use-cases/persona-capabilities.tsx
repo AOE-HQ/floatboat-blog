@@ -83,7 +83,7 @@ export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData
       <div className="mx-auto mb-16 max-w-3xl text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.2em]">{isZh ? "完成工作的能力组合" : "A capability stack for the work"}</p>
         <h2 className="mt-3 font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(isZh ? `适合${roleLabel}的 Floatboat 能力` : `Floatboat capabilities for ${roleLabel}`)}</h2>
-        <p className="mt-5 text-lg leading-7 text-[var(--ob-color-text-subtle)]">{isZh ? "工作站保存上下文，其他能力负责输入、执行、协作与交付。最终判断和重要行动仍由人控制。" : "The workspace holds context while supporting capabilities handle input, execution, collaboration, and delivery. People retain consequential decisions."}</p>
+        <p className="mt-5 text-lg leading-7 text-[var(--ob-color-text-subtle)]">{isZh ? "Work Agent 在持续工作空间中使用这些能力读取资料、执行步骤并交付成果；最终判断和重要行动仍由人控制。" : "The Work Agent uses these capabilities inside a persistent workspace to read context, execute steps, and deliver results. People retain consequential decisions."}</p>
       </div>
 
       <div className="space-y-16 sm:space-y-24">{items.map(([title, href, description], index) => <article key={title} className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">

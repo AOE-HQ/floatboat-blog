@@ -2,10 +2,11 @@
   "slug": "consultants",
   "locale": "en",
   "seo": {
-    "title": "Agent Workspace for Consultants and Client Work | Floatboat",
-    "description": "An AI agent workspace for consultants to organize client context, conduct research, compare options, prepare workshops, and create editable deliverables.",
+    "title": "Work Agent for Consultants: Client Delivery | Floatboat",
+    "description": "A Work Agent for consultants that organizes client evidence, conducts scoped research, compares options, prepares workshops, and drafts editable deliverables.",
     "keywords": [
-      "AI for consultants",
+      "Work Agent for consultants",
+      "AI agent for consultants",
       "consulting AI tools",
       "consulting research",
       "AI presentation for consultants",
@@ -15,9 +16,9 @@
   },
   "breadcrumb": "consultants and advisory teams",
   "hero": {
-    "eyebrow": "A configurable AI workspace for real work",
-    "title": "An AI agent workspace for consultants and advisory teams",
-    "description": "Bring client context, research, analysis, workshop preparation, and editable deliverables into a controlled AI workspace for consultants.",
+    "eyebrow": "A Work Agent for client engagements",
+    "title": "A Work Agent for consultants and advisory teams",
+    "description": "Give Floatboat a defined engagement task. It can organize client evidence, research a market, compare options, prepare workshop materials, and draft editable deliverables while the team owns the recommendation.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-consultants&download_placement=hero"
@@ -32,8 +33,8 @@
       "Human approval before consequential action"
     ],
     "preview": {
-      "label": "Illustrative workspace",
-      "matter": "Growth strategy · Client workspace",
+      "label": "Illustrative Work Agent assignment",
+      "matter": "Growth strategy · Client assignment",
       "inputs": [
         "Client brief",
         "Interview notes",
@@ -75,46 +76,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "General capabilities, professional context",
-    "title": "Compose the workflow from practical building blocks.",
-    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "eyebrow": "What a consulting Work Agent can prepare",
+    "title": "Assign the evidence work around client judgment.",
+    "description": "The Work Agent follows the engagement brief, approved evidence, exhibit standards, and review cadence; it does not choose the methodology or recommendation.",
     "items": [
       {
         "action": "Read",
-        "example": "Start from approved files, records, and sources rather than an empty prompt.",
-        "result": "A grounded working set."
+        "example": "Use the client brief, interview notes, prior analyses, approved datasets, and engagement documents.",
+        "result": "A working brief tied to the engagement rather than a generic prompt."
       },
       {
         "action": "Organize",
-        "example": "Classify material, normalize names, and identify missing inputs.",
-        "result": "A navigable project structure."
+        "example": "Map evidence to the issue tree, workstreams, hypotheses, and unanswered client questions.",
+        "result": "A traceable evidence base and visible gaps."
       },
       {
         "action": "Extract",
-        "example": "Pull facts, dates, data, claims, and open questions.",
-        "result": "Structured content ready to verify."
+        "example": "Pull interview themes, market figures, constraints, assumptions, and decisions from the project record.",
+        "result": "Structured findings ready for consultant validation."
       },
       {
         "action": "Compare",
-        "example": "Contrast versions, standards, periods, or alternatives.",
-        "result": "A focused list of changes and differences."
+        "example": "Evaluate options against the criteria, scenarios, and evidence selected for the engagement.",
+        "result": "A transparent option table with unresolved trade-offs."
       },
       {
         "action": "Create",
-        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
-        "result": "Editable work products."
+        "example": "Prepare workshop agendas, exhibit drafts, decision briefs, and client-ready document structures.",
+        "result": "Editable deliverables aligned with the firm's conventions."
       },
       {
         "action": "Repeat",
-        "example": "Save proven steps, formats, and approval points.",
-        "result": "A reusable workflow shaped by the team."
+        "example": "Reuse the approved research, synthesis, and review sequence on the next workstream.",
+        "result": "A consistent delivery method without reusing client-specific conclusions."
       }
     ]
   },
   "workflows": {
-    "eyebrow": "Three configurable starting points",
-    "title": "Start from real assignments, not a fixed professional playbook.",
-    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "eyebrow": "Three assignments for a consulting Work Agent",
+    "title": "Move an engagement forward without outsourcing the advice.",
+    "description": "Each assignment begins with a client brief and rules you control, returns an inspectable deliverable, and stops before the professional recommendation.",
     "items": [
       {
         "number": "01",
@@ -159,8 +160,8 @@
   },
   "customization": {
     "eyebrow": "Your method remains the method",
-    "title": "Bring the standards your team already trusts.",
-    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "title": "Teach the Work Agent how your firm delivers client work.",
+    "description": "Configure the engagement brief, issue tree, evidence rules, exhibit conventions, and review cadence rather than accepting a generic consulting method.",
     "inputsLabel": "Define the working context",
     "inputs": [
       "Approved files and data sources",
@@ -180,55 +181,55 @@
   },
   "progression": {
     "eyebrow": "From one task to a reusable system",
-    "title": "Start with one bounded assignment. Keep only what proves useful.",
-    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "title": "Start with one bounded assignment. Teach the Work Agent only what proves useful.",
+    "description": "A Work Agent can reuse a proven engagement method without turning advisory work into unattended automation.",
     "items": [
       {
         "label": "Ad hoc",
         "title": "Complete one deliverable",
-        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+        "description": "Turn one client brief and evidence set into a reviewable issue map, workshop pack, or decision brief."
       },
       {
         "label": "Saved workflow",
         "title": "Reuse the successful method",
-        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+        "description": "Reuse the exhibit conventions, evidence checks, and review cadence on the next workstream—not the prior client's conclusions."
       },
       {
         "label": "Team practice",
         "title": "Share a controlled starting point",
-        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+        "description": "Give the project team a shared preparation routine while the engagement lead owns scope, synthesis, and client recommendations."
       }
     ]
   },
   "boundaries": {
     "eyebrow": "Human-controlled by design",
-    "title": "Automate preparation, not professional responsibility.",
-    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
+    "title": "Let the Work Agent prepare the evidence—not own the recommendation.",
+    "description": "The Work Agent can organize evidence and prepare engagement materials; consultants remain responsible for methodology, interpretation, recommendations, and client commitments.",
     "assistsTitle": "Floatboat can help prepare",
     "assists": [
-      "Source indexes, context briefs, and evidence maps",
-      "Comparisons, extracted fields, and open questions",
-      "Meeting packs, status summaries, and communication drafts",
-      "Grounded outlines, reports, and editable first drafts",
-      "Recurring updates from approved materials"
+      "Client-context briefs, issue maps, and evidence registers",
+      "Interview syntheses and hypothesis-linked findings",
+      "Option comparisons with assumptions and open questions",
+      "Workshop packs, exhibit drafts, and decision-brief structures",
+      "Workstream updates assembled from approved project material"
     ],
     "retainsTitle": "consultants and advisory teams retain",
     "retains": [
-      "Professional interpretation and final judgment",
-      "Verification of facts, data, and sources",
-      "Privacy, access, and sensitive-information decisions",
-      "Strategy, priority, and resource decisions",
-      "Approval for every external publication, submission, or consequential action"
+      "Choice of methodology and analytical frame",
+      "Validation of evidence, calculations, and assumptions",
+      "Interpretation of findings and final recommendations",
+      "Client confidentiality, scope, and commercial commitments",
+      "Approval before any client-facing delivery or communication"
     ],
-    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+    "note": "Floatboat is a general-purpose Work Agent, not a consulting methodology or substitute for accountable advisers. It works inside a persistent workspace; data handling depends on the models, tools, connectors, permissions, and engagement policies selected for that environment."
   },
   "faq": {
-    "title": "AI workspace questions for consultants and advisory teams",
+    "title": "Work Agent questions for consultants and advisory teams",
     "description": "Consulting teams need to preserve source trails, adapt to changing client context, and keep recommendations accountable to the people presenting them.",
     "items": [
       {
         "question": "Is Floatboat a consulting methodology or project-management system?",
-        "answer": "No. It is a workspace for executing the research, synthesis, drafting, and coordination steps around an engagement. Your team still chooses the methodology, workplan, governance, and system of record."
+        "answer": "No. Floatboat is a Work Agent for the research, synthesis, drafting, and coordination steps around an engagement. Your team still chooses the methodology, workplan, governance, and system of record."
       },
       {
         "question": "Can it produce a client recommendation on its own?",
@@ -258,14 +259,14 @@
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
-    "title": "Give the repetitive preparation around consultants and advisory teams a better workspace.",
+    "title": "Give your first client-work assignment to a Work Agent.",
     "description": "Start with one engagement question, its approved evidence, and the next client deliverable. Keep the source trail visible while the recommendation takes shape.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-consultants&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "Explore Agent Workspace",
+      "label": "See how the workspace supports the agent",
       "href": "/agent-workspace"
     }
   }

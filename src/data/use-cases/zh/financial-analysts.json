@@ -2,10 +2,10 @@
   "slug": "financial-analysts",
   "locale": "zh",
   "seo": {
-    "title": "财务分析师 Agent Workspace：研究、报告与监控 | Floatboat",
-    "description": "面向财务分析师与企业财务团队的 AI Agent Workspace，用于整理财务数据、准备差异分析、构建研究资料包并持续监控关键指标。",
+    "title": "财务分析师 Work Agent：研究、差异分析与监控 | Floatboat",
+    "description": "面向财务分析师与企业财务团队的 Work Agent，准备带来源的研究资料包、差异复盘、假设变化与周期监测简报。",
     "keywords": [
-      "财务分析 AI",
+      "财务分析师 Work Agent",
       "财务分析师工具",
       "AI 财务研究",
       "差异分析",
@@ -15,9 +15,9 @@
   },
   "breadcrumb": "财务分析师与企业财务团队",
   "hero": {
-    "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "面向财务分析师与企业财务团队的 AI Agent Workspace",
-    "description": "整理财务资料、准备差异说明、构建研究资料包并持续监控，同时让关键假设始终可核查。",
+    "eyebrow": "负责财务准备工作的 Work Agent",
+    "title": "面向财务分析师与企业财务团队的 Work Agent",
+    "description": "交给 Floatboat 核准的财务来源、指标定义与报告规则，由它准备研究资料包、差异说明和监测简报，并保留可审阅的关键假设。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-financial-analysts&download_placement=hero"
@@ -32,8 +32,8 @@
       "重要行动前保留人工审批"
     ],
     "preview": {
-      "label": "示意工作区",
-      "matter": "季度复盘 · 分析工作区",
+      "label": "Work Agent 任务示例",
+      "matter": "季度复盘 · 差异分析准备",
       "inputs": [
         "财务报表",
         "经营指标",
@@ -48,8 +48,8 @@
     }
   },
   "burdens": {
-    "eyebrow": "专业工作周围的重复劳动",
-    "title": "财务分析师与企业财务团队的时间，不该耗在反复整理上。",
+    "eyebrow": "财务 Work Agent 最能发挥价值的地方",
+    "title": "把分析师时间用于解释，而不是反复重建证据链。",
     "description": "当更新后的数字、经营解释、模型假设和管理层评论无法对应到同一期间与来源时，财务分析就会失去可靠性。",
     "items": [
       {
@@ -75,46 +75,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "通用能力，职业语境",
-    "title": "用可组合的工作能力搭出自己的流程。",
-    "description": "Floatboat 不规定唯一方法。它按照你选择的材料、标准和审批点执行。",
+    "eyebrow": "财务 Work Agent 可以准备什么",
+    "title": "把核准数字与经营背景整理成可审阅分析材料。",
+    "description": "Work Agent 在工作空间中连接来源、期间、单位、假设与初稿；所有财务结论仍由分析师负责。",
     "items": [
       {
         "action": "阅读",
-        "example": "从核准文件、记录和资料开始，而不是凭空回答。",
-        "result": "得到有依据的工作集。"
+        "example": "读取同一期间的核准报表、公告、电话会记录、经营说明与指标定义。",
+        "result": "得到期间一致的来源集。"
       },
       {
         "action": "整理",
-        "example": "归类资料、统一名称并找出缺失项。",
-        "result": "形成可导航的项目结构。"
+        "example": "为每个数字标记来源、期间、币种、单位与计算状态。",
+        "result": "形成可追溯的财务记录。"
       },
       {
         "action": "提取",
-        "example": "提取事实、日期、数据、主张与待确认问题。",
-        "result": "得到便于核查的结构化内容。"
+        "example": "提取披露指标、管理层解释、假设变化与未解决问题。",
+        "result": "形成待分析师勾稽的输入。"
       },
       {
         "action": "比较",
-        "example": "对比版本、标准、时间段或备选方案。",
-        "result": "形成变化与差异清单。"
+        "example": "比较实际、预算和历史期间，不静默混用单位或定义。",
+        "result": "形成可审阅的差异表。"
       },
       {
         "action": "创建",
-        "example": "把核准材料转成简报、提纲、表格或初稿。",
-        "result": "得到可编辑的交付物。"
+        "example": "起草带来源数字的公司简报、驱动因素说明与待解问题。",
+        "result": "形成可编辑分析材料，而非投资建议。"
       },
       {
         "action": "复用",
-        "example": "保存已验证的步骤、格式与审批点。",
-        "result": "形成可重复使用的流程。"
+        "example": "在下一次关账中复用核准指标映射、勾稽检查与签批节点。",
+        "result": "形成受控的报告流程。"
       }
     ]
   },
   "workflows": {
-    "eyebrow": "三个可配置起点",
-    "title": "从真实任务出发，而不是套用固定职业剧本。",
-    "description": "每条流程都从你控制的材料和规则开始，交付可检查的成果，并在专业判断前停下。",
+    "eyebrow": "可以交给财务 Work Agent 的三项任务",
+    "title": "委派证据准备，不委派财务判断。",
+    "description": "每项任务都从核准来源与定义开始，返回可追溯成果，并在重要性、估值、预测或投资决策前停下。",
     "items": [
       {
         "number": "01",
@@ -159,8 +159,8 @@
   },
   "customization": {
     "eyebrow": "你的方法仍然是方法",
-    "title": "带上团队已经信任的标准。",
-    "description": "不同组织与任务需要不同输入、输出和控制点。页面示例只是起点。",
+    "title": "让 Work Agent 遵循团队的财务定义与复核规则。",
+    "description": "在执行前提供期间、币种、单位、指标定义、假设登记表、报告模板与审批节点。",
     "inputsLabel": "定义工作背景",
     "inputs": [
       "核准的文件与数据来源",
@@ -179,51 +179,51 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次任务到可复用系统",
-    "title": "先完成一个边界清晰的任务，再保留真正有用的方法。",
-    "description": "流程可以逐步成熟，不必把专业工作变成无人值守的自动化。",
+    "eyebrow": "从一次任务到可复用的 Work Agent",
+    "title": "先用一个已关账期间验证 Work Agent，再复用流程。",
+    "description": "流程必须在完成勾稽后才能复用；每个新期间仍需重新检查来源、单位与假设。",
     "items": [
       {
         "label": "临时执行",
-        "title": "完成一项交付",
-        "description": "针对当前资料生成一份可审阅的简报、清单、比较或初稿。"
+        "title": "复现一份已签批的差异复盘",
+        "description": "使用核准的实际、预算、指标定义与经营说明，复现一个历史期间的差异表和说明以供对照。"
       },
       {
         "label": "保存流程",
-        "title": "复用有效方法",
-        "description": "保留输入、规则、格式和审批点，用于下一次相似任务。"
+        "title": "把控制规则带入下一期间",
+        "description": "复用期间映射、单位检查、假设登记表、说明格式与分析师签批节点，而不是复用旧结论。"
       },
       {
         "label": "团队共享",
-        "title": "建立受控起点",
-        "description": "团队从同一流程开始，但每个人仍对背景与判断负责。"
+        "title": "统一财务复盘材料",
+        "description": "让各财务负责人从相同的带来源表格与复核问题开始，同时分别验证自己负责的数字和解释。"
       }
     ]
   },
   "boundaries": {
     "eyebrow": "人工控制",
-    "title": "自动化准备工作，不外包专业责任。",
-    "description": "合理边界不是专业与非专业，而是准备可核查成果与做出后果重大决定之间的界线。",
-    "assistsTitle": "Floatboat 可以协助准备",
+    "title": "让 Work Agent 准备记录，让每项财务结论责任清晰。",
+    "description": "Work Agent 可以汇集和比较核准的财务证据，但不能认证计算、判断重要性、设定预测或提出投资建议。",
+    "assistsTitle": "Work Agent 可以协助准备",
     "assists": [
-      "资料索引、背景简报与来源地图",
-      "比较表、提取结果与开放问题",
-      "会议材料、状态摘要与沟通初稿",
-      "带依据的提纲、报告和可编辑初稿",
-      "基于核准资料的周期更新"
+      "保留期间、币种、单位与文档位置的来源登记表",
+      "用于勾稽的实际对预算与跨期比较表",
+      "记录负责人、日期与受影响结果的假设变更日志",
+      "把指标链接到公告和电话会记录的公司研究资料包",
+      "等待分析师验证的差异说明和观察清单简报"
     ],
     "retainsTitle": "财务分析师与企业财务团队仍然负责",
     "retains": [
-      "专业解释与最终判断",
-      "事实、数据和来源核验",
-      "隐私、权限与敏感信息处理",
-      "策略、优先级与资源决策",
-      "所有对外发布、提交或重要行动的审批"
+      "将每个数字勾稽到来源系统或核准模型",
+      "判断重要性、驱动因素、估值、预测与建议",
+      "控制机密公司、客户或市场敏感数据的访问",
+      "负责会计政策、KPI 定义、情景选择与模型变更",
+      "签批报告、投资者材料、管理层说明与模型更新"
     ],
-    "note": "Floatboat 是通用 Agent Workspace，不替代专业资质、法定责任或组织治理。实际数据处理取决于工作区选用的模型、工具、连接器、权限与政策。"
+    "note": "Floatboat 是通用 Work Agent，不是财务模型、ERP、行情终端或投资顾问。它的工作空间用于连接核准来源、指令、工具与交付物；计算与结论仍由分析师负责。"
   },
   "faq": {
-    "title": "财务分析师与企业财务团队使用 AI 工作空间的常见问题",
+    "title": "财务分析师与企业财务团队使用 Work Agent 的常见问题",
     "description": "财务团队需要数字级来源、可见假设、一致期间口径，以及每项财务结论的明确责任人。",
     "items": [
       {
@@ -258,14 +258,14 @@
   },
   "finalCta": {
     "eyebrow": "从一项真实任务开始",
-    "title": "给财务分析师与企业财务团队的重复准备工作一个更好的工作空间。",
+    "title": "把第一项财务准备任务交给 Work Agent。",
     "description": "从一个已关账期间或一家研究公司开始，在复用流程前让每个数字都保留来源、单位、日期与假设。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-financial-analysts&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "了解 Agent Workspace",
+      "label": "了解 Work Agent 如何工作",
       "href": "/zh/agent-workspace"
     }
   }

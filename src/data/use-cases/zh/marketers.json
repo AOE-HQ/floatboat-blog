@@ -2,10 +2,10 @@
   "slug": "marketers",
   "locale": "zh",
   "seo": {
-    "title": "市场营销 Agent Workspace：活动、内容与复盘 | Floatboat",
-    "description": "面向市场与增长团队的 AI Agent Workspace，用于连接受众研究、营销活动简报、内容制作、多渠道适配与营销效果复盘。",
+    "title": "市场营销 Work Agent：活动、内容与效果复盘 | Floatboat",
+    "description": "面向市场与增长团队的 Work Agent，把核准的受众证据转为活动简报、渠道初稿与可审阅的效果总结。",
     "keywords": [
-      "市场营销 AI",
+      "市场营销 Work Agent",
       "AI 营销工具",
       "AI 活动策划",
       "内容复用",
@@ -15,9 +15,9 @@
   },
   "breadcrumb": "市场与增长团队",
   "hero": {
-    "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "面向市场与增长团队的 AI Agent Workspace",
-    "description": "在可核查的市场营销 AI 工作空间中，连接受众研究、活动简报、内容适配与效果复盘。",
+    "eyebrow": "负责活动准备与内容适配的 Work Agent",
+    "title": "面向市场与增长团队的 Work Agent",
+    "description": "交给 Floatboat 核准的受众研究、产品证据、品牌规则与活动数据，由它准备 Brief、渠道版本和效果复盘，再由营销负责人审批。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-marketers&download_placement=hero"
@@ -32,8 +32,8 @@
       "重要行动前保留人工审批"
     ],
     "preview": {
-      "label": "示意工作区",
-      "matter": "产品发布 · 营销活动工作区",
+      "label": "Work Agent 任务示例",
+      "matter": "产品发布 · 活动准备",
       "inputs": [
         "受众研究",
         "品牌规范",
@@ -48,8 +48,8 @@
     }
   },
   "burdens": {
-    "eyebrow": "专业工作周围的重复劳动",
-    "title": "市场与增长团队的时间，不该耗在反复整理上。",
+    "eyebrow": "营销 Work Agent 最能发挥价值的地方",
+    "title": "定位与创意判断留给人，把生产链路交给 Agent。",
     "description": "当受众证据、核准主张、渠道初稿、审阅反馈与效果数据分别进入不同生产循环，营销工作就会变得割裂。",
     "items": [
       {
@@ -75,46 +75,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "通用能力，职业语境",
-    "title": "用可组合的工作能力搭出自己的流程。",
-    "description": "Floatboat 不规定唯一方法。它按照你选择的材料、标准和审批点执行。",
+    "eyebrow": "营销 Work Agent 可以准备什么",
+    "title": "从核准证据推进到适配渠道、可审阅的营销资产。",
+    "description": "Work Agent 在工作空间中连接受众证据、核准主张、品牌规则、初稿、反馈与结果；营销负责人仍控制策略和发布。",
     "items": [
       {
         "action": "阅读",
-        "example": "从核准文件、记录和资料开始，而不是凭空回答。",
-        "result": "得到有依据的工作集。"
+        "example": "读取核准的受众研究、产品证据、信息指南、品牌规则与活动目标。",
+        "result": "得到针对本次活动的证据集。"
       },
       {
         "action": "整理",
-        "example": "归类资料、统一名称并找出缺失项。",
-        "result": "形成可导航的项目结构。"
+        "example": "区分已批准主张、支撑证据、受众洞察、渠道约束与待解问题。",
+        "result": "形成可审阅的活动基础。"
       },
       {
         "action": "提取",
-        "example": "提取事实、日期、数据、主张与待确认问题。",
-        "result": "得到便于核查的结构化内容。"
+        "example": "提取有依据的产品主张、受众原话、Offer 细节、日期与衡量要求。",
+        "result": "形成待负责人核验的主张集。"
       },
       {
         "action": "比较",
-        "example": "对比版本、标准、时间段或备选方案。",
-        "result": "形成变化与差异清单。"
+        "example": "对照核准信息、品牌规则与源素材检查各渠道初稿。",
+        "result": "形成聚焦的信息一致性与合规检查。"
       },
       {
         "action": "创建",
-        "example": "把核准材料转成简报、提纲、表格或初稿。",
-        "result": "得到可编辑的交付物。"
+        "example": "起草活动 Brief、邮件、社媒内容、落地页模块或效果摘要。",
+        "result": "形成等待审批的可编辑营销素材。"
       },
       {
         "action": "复用",
-        "example": "保存已验证的步骤、格式与审批点。",
-        "result": "形成可重复使用的流程。"
+        "example": "复用核准的主张检查、渠道规格、命名规则与审阅节点。",
+        "result": "形成受控的活动生产流程。"
       }
     ]
   },
   "workflows": {
-    "eyebrow": "三个可配置起点",
-    "title": "从真实任务出发，而不是套用固定职业剧本。",
-    "description": "每条流程都从你控制的材料和规则开始，交付可检查的成果，并在专业判断前停下。",
+    "eyebrow": "可以交给营销 Work Agent 的三项任务",
+    "title": "委派活动准备，不委派定位与发布。",
+    "description": "每项任务都从核准研究、主张与数据开始，返回可编辑资产，并在预算、定向、归因或发布决定前停下。",
     "items": [
       {
         "number": "01",
@@ -159,8 +159,8 @@
   },
   "customization": {
     "eyebrow": "你的方法仍然是方法",
-    "title": "带上团队已经信任的标准。",
-    "description": "不同组织与任务需要不同输入、输出和控制点。页面示例只是起点。",
+    "title": "让 Work Agent 遵循品牌、主张、渠道与审阅路径。",
+    "description": "提供信息框架、证据库、禁用表达、渠道规格、活动假设与明确审批人。",
     "inputsLabel": "定义工作背景",
     "inputs": [
       "核准的文件与数据来源",
@@ -179,51 +179,51 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次任务到可复用系统",
-    "title": "先完成一个边界清晰的任务，再保留真正有用的方法。",
-    "description": "流程可以逐步成熟，不必把专业工作变成无人值守的自动化。",
+    "eyebrow": "从一次任务到可复用的 Work Agent",
+    "title": "先用一项已核准活动素材验证 Work Agent，再扩大流程。",
+    "description": "只扩大能够保持信息一致、主张有据、渠道适配且发布前明确审批的环节。",
     "items": [
       {
         "label": "临时执行",
-        "title": "完成一项交付",
-        "description": "针对当前资料生成一份可审阅的简报、清单、比较或初稿。"
+        "title": "把一项核准素材适配到一个渠道",
+        "description": "使用源素材、主张证据、品牌规则与渠道规格准备初稿，交由营销负责人审阅。"
       },
       {
         "label": "保存流程",
-        "title": "复用有效方法",
-        "description": "保留输入、规则、格式和审批点，用于下一次相似任务。"
+        "title": "在活动中复用检查规则",
+        "description": "为下一个渠道版本沿用唯一源素材、核准主张、渠道约束、文件命名与审批人。"
       },
       {
         "label": "团队共享",
-        "title": "建立受控起点",
-        "description": "团队从同一流程开始，但每个人仍对背景与判断负责。"
+        "title": "协调多渠道内容生产",
+        "description": "让各渠道负责人共享同一活动 Brief 与证据链，同时分别对受众适配和发布负责。"
       }
     ]
   },
   "boundaries": {
     "eyebrow": "人工控制",
-    "title": "自动化准备工作，不外包专业责任。",
-    "description": "合理边界不是专业与非专业，而是准备可核查成果与做出后果重大决定之间的界线。",
-    "assistsTitle": "Floatboat 可以协助准备",
+    "title": "让 Work Agent 准备素材，让主张、策略与发布仍由人掌握。",
+    "description": "Work Agent 可以准备有证据的 Brief、渠道版本与复盘，但不能编造主张、选择受众或预算、确认归因，也不能代表团队发布。",
+    "assistsTitle": "Work Agent 可以协助准备",
     "assists": [
-      "资料索引、背景简报与来源地图",
-      "比较表、提取结果与开放问题",
-      "会议材料、状态摘要与沟通初稿",
-      "带依据的提纲、报告和可编辑初稿",
-      "基于核准资料的周期更新"
+      "连接受众证据、目标、核准主张与待解问题的活动 Brief",
+      "从同一核准源素材派生的渠道专属初稿",
+      "把审阅者指回支撑证据的主张与信息检查",
+      "保留审阅人、版本和未解决冲突的反馈摘要",
+      "将核准指标与原始假设对照的效果复盘初稿"
     ],
     "retainsTitle": "市场与增长团队仍然负责",
     "retains": [
-      "专业解释与最终判断",
-      "事实、数据和来源核验",
-      "隐私、权限与敏感信息处理",
-      "策略、优先级与资源决策",
-      "所有对外发布、提交或重要行动的审批"
+      "选择受众、定位、Offer、创意方向与渠道组合",
+      "核验产品主张、授权、客户证据与必要法务审阅",
+      "决定研究和活动数据是否可以处理或共享",
+      "设定预算、定向、实验设计、成功标准与归因结论",
+      "审批每项素材、受众、目标位置、排期与发布动作"
     ],
-    "note": "Floatboat 是通用 Agent Workspace，不替代专业资质、法定责任或组织治理。实际数据处理取决于工作区选用的模型、工具、连接器、权限与政策。"
+    "note": "Floatboat 是通用 Work Agent，不是营销自动化或发布平台。它的工作空间用于连接核准证据、工具、指令、反馈与初稿；主张、预算、定向和发布决定仍由营销负责人掌握。"
   },
   "faq": {
-    "title": "市场与增长团队使用 AI 工作空间的常见问题",
+    "title": "市场与增长团队使用 Work Agent 的常见问题",
     "description": "营销团队需要扩大内容适配规模，同时避免编造主张、丢失审批、混淆归因，或把所有渠道写成同一种文案。",
     "items": [
       {
@@ -258,14 +258,14 @@
   },
   "finalCta": {
     "eyebrow": "从一项真实任务开始",
-    "title": "给市场与增长团队的重复准备工作一个更好的工作空间。",
+    "title": "把第一项活动准备任务交给 Work Agent。",
     "description": "从一个已批准 Brief 和一份源素材开始，适配真正重要的渠道，同时保留主张、反馈与效果问题的来源。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-marketers&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "了解 Agent Workspace",
+      "label": "了解 Work Agent 如何工作",
       "href": "/zh/agent-workspace"
     }
   }
