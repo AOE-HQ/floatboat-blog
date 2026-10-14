@@ -2,10 +2,10 @@
   "slug": "executive-assistants",
   "locale": "en",
   "seo": {
-    "title": "Agent Workspace for Executive Assistants | Floatboat",
-    "description": "An AI agent workspace for executive assistants to prepare meetings, recover decisions, coordinate follow-ups, track actions, and assemble executive briefs.",
+    "title": "Work Agent for Executive Assistants | Floatboat",
+    "description": "A Work Agent for executive assistants that prepares meeting briefs, decision records, accountable follow-ups, and weekly executive digests.",
     "keywords": [
-      "AI for executive assistants",
+      "Work Agent for executive assistants",
       "executive assistant AI tools",
       "AI meeting preparation",
       "executive briefing",
@@ -15,9 +15,9 @@
   },
   "breadcrumb": "executive assistants and operations partners",
   "hero": {
-    "eyebrow": "A configurable AI workspace for real work",
-    "title": "An AI agent workspace for executive assistants",
-    "description": "Prepare meetings, recover decisions, coordinate follow-ups, and assemble weekly executive briefs in a controlled AI workspace.",
+    "eyebrow": "A Work Agent for executive operations",
+    "title": "A Work Agent for executive assistants",
+    "description": "Give Floatboat approved calendars, meeting material, prior decisions, and reporting formats. It prepares briefings, decision records, follow-up drafts, and weekly digests for your review.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-executive-assistants&download_placement=hero"
@@ -32,8 +32,8 @@
       "Human approval before consequential action"
     ],
     "preview": {
-      "label": "Illustrative workspace",
-      "matter": "Leadership week · Executive workspace",
+      "label": "Illustrative Work Agent assignment",
+      "matter": "Leadership week · Executive briefing",
       "inputs": [
         "Calendar context",
         "Prior decisions",
@@ -48,8 +48,8 @@
     }
   },
   "burdens": {
-    "eyebrow": "The repetitive work around the profession",
-    "title": "executive assistants and operations partners should not spend their best hours rebuilding context.",
+    "eyebrow": "Where an executive Work Agent earns its place",
+    "title": "Keep discretion and relationships human. Delegate the context assembly.",
     "description": "Executive support depends on recovering the right context at the right moment—without turning every meeting, decision, and follow-up into another manual chase.",
     "items": [
       {
@@ -75,46 +75,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "General capabilities, professional context",
-    "title": "Compose the workflow from practical building blocks.",
-    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "eyebrow": "What your executive-support Work Agent can prepare",
+    "title": "Turn scattered leadership context into timely, review-ready support.",
+    "description": "The Work Agent uses its workspace to connect approved calendars, files, decisions, and actions while the assistant controls access, recipients, commitments, and final wording.",
     "items": [
       {
         "action": "Read",
-        "example": "Start from approved files, records, and sources rather than an empty prompt.",
-        "result": "A grounded working set."
+        "example": "Read the approved agenda, attendee context, prior decisions, related files, and current calendar changes.",
+        "result": "A meeting-specific context set."
       },
       {
         "action": "Organize",
-        "example": "Classify material, normalize names, and identify missing inputs.",
-        "result": "A navigable project structure."
+        "example": "Arrange material by agenda item, decision history, stakeholder, and confidentiality level.",
+        "result": "A briefing structure the assistant can scan."
       },
       {
         "action": "Extract",
-        "example": "Pull facts, dates, data, claims, and open questions.",
-        "result": "Structured content ready to verify."
+        "example": "Extract confirmed decisions, named owners, deadlines, dependencies, and unanswered questions.",
+        "result": "A draft decision and action record."
       },
       {
         "action": "Compare",
-        "example": "Contrast versions, standards, periods, or alternatives.",
-        "result": "A focused list of changes and differences."
+        "example": "Compare the latest agenda and materials with earlier decisions and pending commitments.",
+        "result": "A concise change and conflict list."
       },
       {
         "action": "Create",
-        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
-        "result": "Editable work products."
+        "example": "Draft a pre-read, follow-up note, action tracker, or weekly executive digest.",
+        "result": "Editable support materials for assistant review."
       },
       {
         "action": "Repeat",
-        "example": "Save proven steps, formats, and approval points.",
-        "result": "A reusable workflow shaped by the team."
+        "example": "Reuse the approved briefing depth, decision format, recipient rules, and review gate.",
+        "result": "A consistent routine for recurring meetings."
       }
     ]
   },
   "workflows": {
-    "eyebrow": "Three configurable starting points",
-    "title": "Start from real assignments, not a fixed professional playbook.",
-    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "eyebrow": "Three assignments for an executive-support Work Agent",
+    "title": "Delegate meeting preparation and follow-through without delegating authority.",
+    "description": "Each assignment starts from approved context, produces an inspectable brief or draft, and stops before commitments, sensitive distribution, or executive decisions.",
     "items": [
       {
         "number": "01",
@@ -159,8 +159,8 @@
   },
   "customization": {
     "eyebrow": "Your method remains the method",
-    "title": "Bring the standards your team already trusts.",
-    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "title": "Teach the Work Agent the executive's briefing and follow-up method.",
+    "description": "Provide preferred summary depth, decision-record format, stakeholder names, confidentiality rules, and explicit approval points.",
     "inputsLabel": "Define the working context",
     "inputs": [
       "Approved files and data sources",
@@ -179,51 +179,51 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one task to a reusable system",
-    "title": "Start with one bounded assignment. Keep only what proves useful.",
-    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "eyebrow": "From one assignment to a reusable Work Agent",
+    "title": "Start with one recurring meeting and earn the right to reuse the routine.",
+    "description": "A recurring support routine becomes useful only when it preserves discretion, current context, and explicit approval for every commitment or recipient.",
     "items": [
       {
         "label": "Ad hoc",
-        "title": "Complete one deliverable",
-        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+        "title": "Prepare one executive meeting brief",
+        "description": "Combine the approved agenda, attendee context, prior decisions, and late documents into a brief the assistant verifies before circulation."
       },
       {
         "label": "Saved workflow",
-        "title": "Reuse the successful method",
-        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+        "title": "Reuse the meeting-specific method",
+        "description": "Keep the briefing format, source checklist, confidentiality labels, and recipient approval while refreshing every fact and decision."
       },
       {
         "label": "Team practice",
-        "title": "Share a controlled starting point",
-        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+        "title": "Coordinate a leadership operating rhythm",
+        "description": "Use a common decision and action format across recurring meetings while assistants and leaders remain responsible for ownership and follow-through."
       }
     ]
   },
   "boundaries": {
     "eyebrow": "Human-controlled by design",
-    "title": "Automate preparation, not professional responsibility.",
-    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
-    "assistsTitle": "Floatboat can help prepare",
+    "title": "Let the Work Agent prepare. Keep discretion, commitments, and communication human-owned.",
+    "description": "The Work Agent may assemble approved context and draft follow-up; it cannot speak for an executive, commit resources, choose recipients, or disclose sensitive information.",
+    "assistsTitle": "The Work Agent can help prepare",
     "assists": [
-      "Source indexes, context briefs, and evidence maps",
-      "Comparisons, extracted fields, and open questions",
-      "Meeting packs, status summaries, and communication drafts",
-      "Grounded outlines, reports, and editable first drafts",
-      "Recurring updates from approved materials"
+      "Meeting briefs that connect agenda items to prior decisions and current files",
+      "Draft decision logs that distinguish confirmed outcomes from open interpretations",
+      "Action trackers with proposed owners, dates, dependencies, and source notes",
+      "Follow-up messages and scheduling options held for assistant approval",
+      "Weekly executive digests at the depth and format the leader requests"
     ],
     "retainsTitle": "executive assistants and operations partners retain",
     "retains": [
-      "Professional interpretation and final judgment",
-      "Verification of facts, data, and sources",
-      "Privacy, access, and sensitive-information decisions",
-      "Strategy, priority, and resource decisions",
-      "Approval for every external publication, submission, or consequential action"
+      "Confirming what was actually decided and who owns each commitment",
+      "Applying discretion to sensitive context, relationships, and organizational dynamics",
+      "Selecting recipients and controlling access to confidential leadership material",
+      "Making calendar trade-offs, priority calls, and resource commitments",
+      "Approving every message, meeting change, escalation, or statement made on a leader's behalf"
     ],
-    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+    "note": "Floatboat is a general-purpose Work Agent, not an executive proxy. Its workspace keeps approved context, tools, instructions, and drafts together; assistants and leaders retain control of confidential access, commitments, recipients, and final decisions."
   },
   "faq": {
-    "title": "AI workspace questions for executive assistants and operations partners",
+    "title": "Work Agent questions for executive assistants and operations partners",
     "description": "Executive assistants need speed without losing discretion, recipient awareness, decision ownership, or control over sensitive organizational context.",
     "items": [
       {
@@ -258,14 +258,14 @@
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
-    "title": "Give the repetitive preparation around executive assistants and operations partners a better workspace.",
+    "title": "Give your first executive-support assignment to a Work Agent.",
     "description": "Start with one recurring meeting and its real source material. Produce a brief that saves preparation time without making commitments on anyone's behalf.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-executive-assistants&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "Explore Agent Workspace",
+      "label": "Explore how the Work Agent works",
       "href": "/agent-workspace"
     }
   }

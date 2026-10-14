@@ -2,10 +2,11 @@
   "slug": "consultants",
   "locale": "zh",
   "seo": {
-    "title": "咨询顾问 Agent Workspace：研究、分析与交付 | Floatboat",
-    "description": "面向咨询顾问与咨询团队的 AI Agent Workspace，用于整理客户背景、开展行业研究、比较方案、准备工作坊，并生成可编辑的客户交付物。",
+    "title": "咨询顾问 Work Agent：研究、分析与客户交付 | Floatboat",
+    "description": "面向咨询顾问的 Work Agent，用于整理客户证据、开展限定范围的研究、比较方案、准备工作坊并起草可编辑交付物。",
     "keywords": [
-      "咨询顾问 AI",
+      "咨询顾问 Work Agent",
+      "咨询顾问 AI Agent",
       "咨询行业工具",
       "AI 行业研究",
       "咨询报告制作",
@@ -15,9 +16,9 @@
   },
   "breadcrumb": "顾问与咨询团队",
   "hero": {
-    "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "面向咨询顾问与咨询团队的 AI Agent Workspace",
-    "description": "把客户背景、行业研究、分析过程、工作坊准备和可编辑交付物放进一个可控的咨询顾问 AI 工作空间。",
+    "eyebrow": "推进客户项目的 Work Agent",
+    "title": "面向咨询顾问与咨询团队的 Work Agent",
+    "description": "把明确的项目任务交给 Floatboat：整理客户证据、研究市场、比较方案、准备工作坊材料并起草交付物；最终建议仍由顾问团队负责。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-consultants&download_placement=hero"
@@ -32,8 +33,8 @@
       "重要行动前保留人工审批"
     ],
     "preview": {
-      "label": "示意工作区",
-      "matter": "增长战略 · 客户项目工作区",
+      "label": "Work Agent 任务示例",
+      "matter": "增长战略 · 客户项目任务",
       "inputs": [
         "客户简报",
         "访谈纪要",
@@ -75,46 +76,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "通用能力，职业语境",
-    "title": "用可组合的工作能力搭出自己的流程。",
-    "description": "Floatboat 不规定唯一方法。它按照你选择的材料、标准和审批点执行。",
+    "eyebrow": "咨询 Work Agent 可以准备什么",
+    "title": "把客户判断周围的证据工作交给 Work Agent。",
+    "description": "Work Agent 遵循项目 Brief、核准证据、图表规范和审阅节奏，不替团队选择方法论或最终建议。",
     "items": [
       {
         "action": "阅读",
-        "example": "从核准文件、记录和资料开始，而不是凭空回答。",
-        "result": "得到有依据的工作集。"
+        "example": "读取客户 Brief、访谈记录、历史分析、核准数据集和项目文件。",
+        "result": "形成与当前项目绑定的工作简报，而不是通用提示词。"
       },
       {
         "action": "整理",
-        "example": "归类资料、统一名称并找出缺失项。",
-        "result": "形成可导航的项目结构。"
+        "example": "把证据映射到 Issue Tree、工作流、假设和尚未回答的客户问题。",
+        "result": "得到可追溯的证据基础和清晰缺口。"
       },
       {
         "action": "提取",
-        "example": "提取事实、日期、数据、主张与待确认问题。",
-        "result": "得到便于核查的结构化内容。"
+        "example": "从项目记录中提取访谈主题、市场数字、约束、假设与已作决定。",
+        "result": "形成供顾问核验的结构化发现。"
       },
       {
         "action": "比较",
-        "example": "对比版本、标准、时间段或备选方案。",
-        "result": "形成变化与差异清单。"
+        "example": "按照本项目选定的标准、情景和证据比较备选方案。",
+        "result": "得到呈现未决权衡的透明方案表。"
       },
       {
         "action": "创建",
-        "example": "把核准材料转成简报、提纲、表格或初稿。",
-        "result": "得到可编辑的交付物。"
+        "example": "准备工作坊议程、图表初稿、决策 Brief 和客户交付结构。",
+        "result": "得到符合公司规范的可编辑交付物。"
       },
       {
         "action": "复用",
-        "example": "保存已验证的步骤、格式与审批点。",
-        "result": "形成可重复使用的流程。"
+        "example": "在下一工作流中复用获批的研究、综合和审阅顺序。",
+        "result": "保持交付方法一致，但不复用上一客户的结论。"
       }
     ]
   },
   "workflows": {
-    "eyebrow": "三个可配置起点",
-    "title": "从真实任务出发，而不是套用固定职业剧本。",
-    "description": "每条流程都从你控制的材料和规则开始，交付可检查的成果，并在专业判断前停下。",
+    "eyebrow": "可以交给咨询 Work Agent 的三项任务",
+    "title": "让项目向前推进，不把咨询判断外包。",
+    "description": "每项任务都从你控制的客户 Brief 和规则开始，返回可检查的交付物，并在专业建议前停下。",
     "items": [
       {
         "number": "01",
@@ -159,8 +160,8 @@
   },
   "customization": {
     "eyebrow": "你的方法仍然是方法",
-    "title": "带上团队已经信任的标准。",
-    "description": "不同组织与任务需要不同输入、输出和控制点。页面示例只是起点。",
+    "title": "教会 Work Agent 按照公司的交付方法工作。",
+    "description": "配置项目 Brief、Issue Tree、证据规则、图表规范和审阅节奏，而不是接受通用咨询方法。",
     "inputsLabel": "定义工作背景",
     "inputs": [
       "核准的文件与数据来源",
@@ -180,50 +181,50 @@
   },
   "progression": {
     "eyebrow": "从一次任务到可复用系统",
-    "title": "先完成一个边界清晰的任务，再保留真正有用的方法。",
-    "description": "流程可以逐步成熟，不必把专业工作变成无人值守的自动化。",
+    "title": "先完成一个边界清晰的任务，只教 Work Agent 复用真正有用的方法。",
+    "description": "Work Agent 可以复用经过验证的项目方法，但不会把咨询工作变成无人值守的自动化。",
     "items": [
       {
         "label": "临时执行",
         "title": "完成一项交付",
-        "description": "针对当前资料生成一份可审阅的简报、清单、比较或初稿。"
+        "description": "把一份客户 Brief 和证据集转成可审阅的议题图、工作坊材料或决策简报。"
       },
       {
         "label": "保存流程",
         "title": "复用有效方法",
-        "description": "保留输入、规则、格式和审批点，用于下一次相似任务。"
+        "description": "下一工作流复用图表规范、证据检查和审阅节奏，而不是复用上一客户的结论。"
       },
       {
         "label": "团队共享",
         "title": "建立受控起点",
-        "description": "团队从同一流程开始，但每个人仍对背景与判断负责。"
+        "description": "项目团队共享准备惯例，项目负责人继续对范围、综合分析和客户建议负责。"
       }
     ]
   },
   "boundaries": {
     "eyebrow": "人工控制",
-    "title": "自动化准备工作，不外包专业责任。",
-    "description": "合理边界不是专业与非专业，而是准备可核查成果与做出后果重大决定之间的界线。",
+    "title": "让 Work Agent 准备证据，不替团队作出建议。",
+    "description": "Work Agent 可以组织证据并准备项目材料；方法论、分析解释、最终建议与客户承诺仍由顾问负责。",
     "assistsTitle": "Floatboat 可以协助准备",
     "assists": [
-      "资料索引、背景简报与来源地图",
-      "比较表、提取结果与开放问题",
-      "会议材料、状态摘要与沟通初稿",
-      "带依据的提纲、报告和可编辑初稿",
-      "基于核准资料的周期更新"
+      "客户背景 Brief、议题图与证据登记表",
+      "访谈综合与假设对应的研究发现",
+      "标注假设和开放问题的方案比较",
+      "工作坊材料、图表初稿与决策简报结构",
+      "依据核准项目资料整理的工作流更新"
     ],
     "retainsTitle": "顾问与咨询团队仍然负责",
     "retains": [
-      "专业解释与最终判断",
-      "事实、数据和来源核验",
-      "隐私、权限与敏感信息处理",
-      "策略、优先级与资源决策",
-      "所有对外发布、提交或重要行动的审批"
+      "方法论与分析框架选择",
+      "证据、计算与假设核验",
+      "研究发现解释与最终建议",
+      "客户保密、项目范围与商务承诺",
+      "所有面向客户的交付与沟通批准"
     ],
-    "note": "Floatboat 是通用 Agent Workspace，不替代专业资质、法定责任或组织治理。实际数据处理取决于工作区选用的模型、工具、连接器、权限与政策。"
+    "note": "Floatboat 是通用 Work Agent，不是咨询方法论，也不替代对建议负责的顾问。它在持续工作空间中执行任务；实际数据处理取决于该环境选用的模型、工具、连接器、权限与项目政策。"
   },
   "faq": {
-    "title": "顾问与咨询团队使用 AI 工作空间的常见问题",
+    "title": "顾问与咨询团队使用 Work Agent 的常见问题",
     "description": "咨询团队更关心来源能否追溯、客户背景变化后能否及时更新，以及最终建议是否仍由交付它的人负责。",
     "items": [
       {
@@ -258,14 +259,14 @@
   },
   "finalCta": {
     "eyebrow": "从一项真实任务开始",
-    "title": "给顾问与咨询团队的重复准备工作一个更好的工作空间。",
+    "title": "把第一项客户项目任务交给 Work Agent。",
     "description": "从一个项目问题、对应的核准证据和下一项客户交付物开始，让建议成形时始终保留来源路径。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-consultants&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "了解 Agent Workspace",
+      "label": "了解工作空间如何支持 Agent",
       "href": "/zh/agent-workspace"
     }
   }

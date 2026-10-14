@@ -1,27 +1,266 @@
 {
-  "slug": "for-creators", "locale": "en",
-  "seo": {"title": "AI Agent Workspace for Creators and Writers | Floatboat", "description": "An AI agent workspace for creators to organize source material, research ideas, draft long-form work, repurpose approved content, and manage publishing assets.", "keywords": ["AI for creators", "AI agent for creators", "AI workspace for writers", "content repurposing AI", "creator workflow"]},
+  "slug": "for-creators",
+  "locale": "en",
+  "seo": {
+    "title": "Work Agent for Creators and Writers | Floatboat",
+    "description": "A Work Agent for creators that turns approved research, recordings, and drafts into long-form content, channel adaptations, and review-ready release packages.",
+    "keywords": [
+      "Work Agent for creators",
+      "AI agent for writers",
+      "AI content workflow",
+      "content repurposing agent",
+      "AI publishing assistant"
+    ]
+  },
   "breadcrumb": "Creators and independent publishers",
-  "hero": {"eyebrow": "From source material to a body of work", "title": "AI Agent Workspace for Creators", "description": "Keep research, recordings, drafts, revisions, visual assets, and channel adaptations in one creative project instead of scattering the work across disposable chats.", "primaryCta": {"label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-creators&download_placement=hero"}, "secondaryCta": {"label": "Explore workflows", "href": "#workflows"}, "proof": ["Source material stays connected", "Drafts remain editable", "Creator approves publication"], "preview": {"label": "Live publishing workspace", "matter": "Long-form essay · Release package", "inputs": ["Research notes", "Voice recordings", "Style guide"], "outputs": ["Essay draft", "Newsletter teaser", "Channel assets"], "review": "Creator review"}},
-  "burdens": {"eyebrow": "The production work around the idea", "title": "Creating is more than generating a draft", "description": "A creator must protect the original idea while researching, shaping, revising, packaging, and adapting it for different audiences.", "items": [
-    {"label": "Sources", "title": "Ideas arrive before they have a home", "description": "Voice notes, links, screenshots, interviews, and fragments accumulate long before a publishable structure becomes clear."},
-    {"label": "Drafting", "title": "A first draft hides unresolved choices", "description": "Argument, voice, examples, evidence, pacing, and audience still need deliberate revision after words appear on the page."},
-    {"label": "Adaptation", "title": "Each channel changes the work", "description": "A newsletter, video script, LinkedIn post, carousel, and short caption require different framing rather than simple truncation."},
-    {"label": "Archive", "title": "Published work becomes hard to reuse", "description": "Sources, final copy, thumbnails, excerpts, and performance notes drift apart once the release is complete."}
-  ]},
-  "workflows": {"eyebrow": "Three creative workflows", "title": "Develop the idea before multiplying the formats", "description": "The workspace keeps the source and editorial decisions visible while each output remains open to creator revision.", "items": [
-    {"number": "01", "title": "Shape raw material into a long-form draft", "job": "Organize recordings, notes, links, and a working thesis into a source-aware outline and first draft.", "flow": ["Gather fragments", "Map themes", "Build the outline", "Draft with sources"], "output": "A structured draft with source notes, open questions, and editorial choices.", "boundary": "The creator owns the point of view, factual verification, voice, and final edit."},
-    {"number": "02", "title": "Repurpose approved work by channel", "job": "Start from the final source piece and create channel-specific variations without changing its central claim.", "flow": ["Lock source version", "Select channels", "Adapt structure", "Review each asset"], "output": "Editable newsletter, social, script, and visual-copy drafts tied to the source piece.", "boundary": "The creator checks context, permissions, tone, and the publishing decision for every channel."},
-    {"number": "03", "title": "Prepare a release package", "job": "Bring copy, visual requirements, metadata, links, and a publishing checklist into one review queue.", "flow": ["Collect final assets", "Check dependencies", "Prepare metadata", "Approve release"], "output": "A release-ready folder, metadata sheet, asset checklist, and promotion brief.", "boundary": "Floatboat prepares the package; the creator controls accounts, rights, timing, and publication."}
-  ]},
-  "faq": {"title": "Creator AI workspace questions", "description": "Creators need control over voice, sources, rights, channel fit, and what actually gets published.", "items": [
-    {"question": "Is Floatboat a writing app or social scheduler?", "answer": "It is an Agent Workspace for the work around creation. You can continue using your preferred editor and publishing tools while Floatboat organizes inputs, drafts, adaptations, and review steps."},
-    {"question": "Will every channel version sound the same?", "answer": "It should not. Define the audience, format, length, voice, and purpose for each channel, then review each result against the approved source rather than requesting generic repurposing."},
-    {"question": "Can it learn from my existing work?", "answer": "You can provide selected examples and a style guide, but the creator should still review whether a draft reflects the intended voice instead of treating imitation as guaranteed."},
-    {"question": "How do I prevent invented facts or citations?", "answer": "Keep research tied to inspectable sources, distinguish source notes from original commentary, and verify every factual claim before publication."},
-    {"question": "What about copyrighted or licensed source material?", "answer": "Use only material you are allowed to process and adapt. Permissions, attribution, licensing, and fair-use decisions remain with the creator."},
-    {"question": "Will Floatboat publish automatically?", "answer": "The recommended workflow ends with a release package for review. Account access, publication, and irreversible channel actions should remain explicitly approved."},
-    {"question": "What is a good first creator workflow?", "answer": "Choose one finished long-form piece and adapt it into two clearly different channels. Judge fidelity and usefulness before saving the process."}
-  ]},
-  "finalCta": {"eyebrow": "Start with one source piece", "title": "Keep the idea connected to every format", "description": "Bring the material behind one finished or nearly finished work. Build the next draft and release package without losing the source or your editorial control.", "primaryCta": {"label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-creators&download_placement=final_cta"}, "secondaryCta": {"label": "Explore Agent Workspace", "href": "/agent-workspace"}}
+  "hero": {
+    "eyebrow": "A Work Agent from source material to release",
+    "title": "A Work Agent for Creators and Writers",
+    "description": "Give Floatboat your approved research, recordings, drafts, and editorial direction. Your Work Agent develops the assignment in a persistent workspace and returns editable content, channel adaptations, and release materials for review.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-creators&download_placement=hero"
+    },
+    "secondaryCta": {
+      "label": "Explore workflows",
+      "href": "#workflows"
+    },
+    "proof": [
+      "Source material stays connected",
+      "Drafts remain editable",
+      "Creator approves publication"
+    ],
+    "preview": {
+      "label": "Illustrative Work Agent assignment",
+      "matter": "Long-form essay · Release package",
+      "inputs": [
+        "Research notes",
+        "Voice recordings",
+        "Style guide"
+      ],
+      "outputs": [
+        "Essay draft",
+        "Newsletter teaser",
+        "Channel assets"
+      ],
+      "review": "Creator review"
+    }
+  },
+  "burdens": {
+    "eyebrow": "The production work around the idea",
+    "title": "Creating is more than generating a draft",
+    "description": "A creator must protect the original idea while researching, shaping, revising, packaging, and adapting it for different audiences.",
+    "items": [
+      {
+        "label": "Sources",
+        "title": "Ideas arrive before they have a home",
+        "description": "Voice notes, links, screenshots, interviews, and fragments accumulate long before a publishable structure becomes clear."
+      },
+      {
+        "label": "Drafting",
+        "title": "A first draft hides unresolved choices",
+        "description": "Argument, voice, examples, evidence, pacing, and audience still need deliberate revision after words appear on the page."
+      },
+      {
+        "label": "Adaptation",
+        "title": "Each channel changes the work",
+        "description": "A newsletter, video script, LinkedIn post, carousel, and short caption require different framing rather than simple truncation."
+      },
+      {
+        "label": "Archive",
+        "title": "Published work becomes hard to reuse",
+        "description": "Sources, final copy, thumbnails, excerpts, and performance notes drift apart once the release is complete."
+      }
+    ]
+  },
+  "buildingBlocks": {
+    "eyebrow": "Editorial work carried across the assignment",
+    "title": "What your creator Work Agent can prepare",
+    "description": "The agent uses a persistent workspace to keep sources, editorial choices, drafts, and release assets connected.",
+    "items": [
+      {
+        "action": "Read",
+        "example": "Work from approved notes, recordings, interviews, and references.",
+        "result": "A source-aware creative brief."
+      },
+      {
+        "action": "Shape",
+        "example": "Group themes, test structure, and expose missing evidence.",
+        "result": "An outline with open editorial decisions."
+      },
+      {
+        "action": "Draft",
+        "example": "Prepare long-form copy in the requested format and voice.",
+        "result": "An editable draft, not a finished claim of authorship."
+      },
+      {
+        "action": "Adapt",
+        "example": "Reframe approved source content for distinct channels.",
+        "result": "Channel-specific versions tied to the original."
+      },
+      {
+        "action": "Package",
+        "example": "Assemble metadata, visual requirements, and release checks.",
+        "result": "A review-ready publishing package."
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Your point of view remains yours",
+    "title": "Teach the Work Agent your editorial method",
+    "description": "Provide examples, audience definitions, source rules, channel constraints, and review criteria without treating style imitation as guaranteed.",
+    "inputsLabel": "Define the working context",
+    "inputs": [
+      "Approved source material",
+      "Audience and editorial purpose",
+      "Style guide and selected examples",
+      "Channel formats and length limits",
+      "Rights and attribution requirements"
+    ],
+    "controlsLabel": "Define the control points",
+    "controls": [
+      "Which sources may be used",
+      "What requires fact-checking",
+      "How uncertainty is marked",
+      "Who approves each channel version",
+      "What must never be published automatically"
+    ]
+  },
+  "progression": {
+    "eyebrow": "From one piece to a repeatable publishing method",
+    "title": "Prove the editorial fit before scaling output",
+    "description": "Start with one source piece and reuse only the steps that preserve meaning and voice.",
+    "items": [
+      {
+        "label": "Source piece",
+        "title": "Prepare one reviewable draft",
+        "description": "Test structure, sourcing, and editorial usefulness."
+      },
+      {
+        "label": "Channel set",
+        "title": "Adapt an approved work",
+        "description": "Create genuinely different versions for selected audiences."
+      },
+      {
+        "label": "Publishing routine",
+        "title": "Save the proven release method",
+        "description": "Reuse checks and packaging without automating editorial approval."
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "Creator-controlled by design",
+    "title": "Delegate production work, not authorship or publication judgment",
+    "description": "The Work Agent can organize, draft, adapt, and package; the creator remains responsible for truth, originality, rights, and release.",
+    "assistsTitle": "The Work Agent can prepare",
+    "assists": [
+      "Source-aware outlines and drafts",
+      "Channel-specific adaptations",
+      "Metadata and promotion copy",
+      "Asset and release checklists",
+      "Open questions and fact-check queues"
+    ],
+    "retainsTitle": "People retain",
+    "retains": [
+      "Point of view and final voice",
+      "Fact and citation verification",
+      "Copyright and permission decisions",
+      "Editorial quality judgment",
+      "Account access and publication approval"
+    ],
+    "note": "Floatboat is a Work Agent for content preparation, not an autonomous publisher or substitute for editorial, legal, or rights review."
+  },
+  "workflows": {
+    "eyebrow": "Three assignments for your creator Work Agent",
+    "title": "Develop the idea before multiplying the formats",
+    "description": "The Work Agent keeps sources and editorial decisions visible while every output remains open to creator revision.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Shape raw material into a long-form draft",
+        "job": "Organize recordings, notes, links, and a working thesis into a source-aware outline and first draft.",
+        "flow": [
+          "Gather fragments",
+          "Map themes",
+          "Build the outline",
+          "Draft with sources"
+        ],
+        "output": "A structured draft with source notes, open questions, and editorial choices.",
+        "boundary": "The creator owns the point of view, factual verification, voice, and final edit."
+      },
+      {
+        "number": "02",
+        "title": "Repurpose approved work by channel",
+        "job": "Start from the final source piece and create channel-specific variations without changing its central claim.",
+        "flow": [
+          "Lock source version",
+          "Select channels",
+          "Adapt structure",
+          "Review each asset"
+        ],
+        "output": "Editable newsletter, social, script, and visual-copy drafts tied to the source piece.",
+        "boundary": "The creator checks context, permissions, tone, and the publishing decision for every channel."
+      },
+      {
+        "number": "03",
+        "title": "Prepare a release package",
+        "job": "Bring copy, visual requirements, metadata, links, and a publishing checklist into one review queue.",
+        "flow": [
+          "Collect final assets",
+          "Check dependencies",
+          "Prepare metadata",
+          "Approve release"
+        ],
+        "output": "A release-ready folder, metadata sheet, asset checklist, and promotion brief.",
+        "boundary": "Floatboat prepares the package; the creator controls accounts, rights, timing, and publication."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Work Agent questions for creators",
+    "description": "Practical answers about voice, sources, rights, channel fit, and what the creator must approve.",
+    "items": [
+      {
+        "question": "Is Floatboat a writing app or social scheduler?",
+        "answer": "Floatboat is a Work Agent for content assignments, not a writing app or scheduler. It uses a persistent workspace to organize approved inputs, drafts, adaptations, and review steps while you continue using your preferred editor and publishing tools."
+      },
+      {
+        "question": "Will every channel version sound the same?",
+        "answer": "It should not. Define the audience, format, length, voice, and purpose for each channel, then review each result against the approved source rather than requesting generic repurposing."
+      },
+      {
+        "question": "Can it learn from my existing work?",
+        "answer": "You can provide selected examples and a style guide, but the creator should still review whether a draft reflects the intended voice instead of treating imitation as guaranteed."
+      },
+      {
+        "question": "How do I prevent invented facts or citations?",
+        "answer": "Keep research tied to inspectable sources, distinguish source notes from original commentary, and verify every factual claim before publication."
+      },
+      {
+        "question": "What about copyrighted or licensed source material?",
+        "answer": "Use only material you are allowed to process and adapt. Permissions, attribution, licensing, and fair-use decisions remain with the creator."
+      },
+      {
+        "question": "Will Floatboat publish automatically?",
+        "answer": "The recommended workflow ends with a release package for review. Account access, publication, and irreversible channel actions should remain explicitly approved."
+      },
+      {
+        "question": "What is a good first creator workflow?",
+        "answer": "Choose one finished long-form piece and adapt it into two clearly different channels. Judge fidelity and usefulness before saving the process."
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Start with one source piece",
+    "title": "Give the next release to a creator Work Agent",
+    "description": "Bring the material behind one finished or nearly finished work. Let the Work Agent prepare the next draft and release package without losing the source or your editorial control.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-creators&download_placement=final_cta"
+    },
+    "secondaryCta": {
+      "label": "See how the workspace supports the agent",
+      "href": "/agent-workspace"
+    }
+  }
 }

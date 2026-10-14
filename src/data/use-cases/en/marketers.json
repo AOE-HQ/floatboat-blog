@@ -2,10 +2,10 @@
   "slug": "marketers",
   "locale": "en",
   "seo": {
-    "title": "Agent Workspace for Marketers and Campaign Work | Floatboat",
-    "description": "An AI agent workspace for marketers to connect audience research, campaign briefs, content production, channel adaptation, and performance reporting.",
+    "title": "Work Agent for Marketers and Growth Teams | Floatboat",
+    "description": "A Work Agent for marketers that turns approved audience evidence into campaign briefs, channel-ready drafts, and reviewable performance summaries.",
     "keywords": [
-      "AI for marketers",
+      "Work Agent for marketers",
       "AI marketing tools",
       "AI campaign planning",
       "content repurposing",
@@ -15,9 +15,9 @@
   },
   "breadcrumb": "marketers and growth teams",
   "hero": {
-    "eyebrow": "A configurable AI workspace for real work",
-    "title": "An AI agent workspace for marketers and growth teams",
-    "description": "Connect audience research, campaign briefs, content adaptation, and performance reporting in a reviewable AI workspace for marketing teams.",
+    "eyebrow": "A Work Agent for campaign preparation and adaptation",
+    "title": "A Work Agent for marketers and growth teams",
+    "description": "Give Floatboat approved audience research, product evidence, brand rules, and campaign data. It prepares briefs, channel variants, and performance reviews for marketing owners to approve.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-marketers&download_placement=hero"
@@ -32,8 +32,8 @@
       "Human approval before consequential action"
     ],
     "preview": {
-      "label": "Illustrative workspace",
-      "matter": "Product launch · Campaign workspace",
+      "label": "Illustrative Work Agent assignment",
+      "matter": "Product launch · Campaign preparation",
       "inputs": [
         "Audience research",
         "Brand guidance",
@@ -48,8 +48,8 @@
     }
   },
   "burdens": {
-    "eyebrow": "The repetitive work around the profession",
-    "title": "marketers and growth teams should not spend their best hours rebuilding context.",
+    "eyebrow": "Where a marketing Work Agent earns its place",
+    "title": "Keep positioning and creative judgment human. Delegate the production trail.",
     "description": "Marketing work fragments when audience evidence, approved claims, channel drafts, review feedback, and performance data live in separate production loops.",
     "items": [
       {
@@ -75,46 +75,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "General capabilities, professional context",
-    "title": "Compose the workflow from practical building blocks.",
-    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "eyebrow": "What your marketing Work Agent can prepare",
+    "title": "Move from approved evidence to channel-ready, reviewable assets.",
+    "description": "The Work Agent uses its workspace to connect audience evidence, approved claims, brand rules, drafts, feedback, and results while owners control strategy and publication.",
     "items": [
       {
         "action": "Read",
-        "example": "Start from approved files, records, and sources rather than an empty prompt.",
-        "result": "A grounded working set."
+        "example": "Read approved audience research, product evidence, message guidance, brand rules, and campaign goals.",
+        "result": "A campaign-specific evidence set."
       },
       {
         "action": "Organize",
-        "example": "Classify material, normalize names, and identify missing inputs.",
-        "result": "A navigable project structure."
+        "example": "Separate approved claims, supporting proof, audience insights, channel constraints, and unresolved questions.",
+        "result": "A reviewable campaign foundation."
       },
       {
         "action": "Extract",
-        "example": "Pull facts, dates, data, claims, and open questions.",
-        "result": "Structured content ready to verify."
+        "example": "Extract substantiated product claims, audience language, offer details, dates, and measurement requirements.",
+        "result": "A claim set ready for owner verification."
       },
       {
         "action": "Compare",
-        "example": "Contrast versions, standards, periods, or alternatives.",
-        "result": "A focused list of changes and differences."
+        "example": "Compare channel drafts against the approved message, brand rules, and source asset.",
+        "result": "A focused fidelity and compliance review."
       },
       {
         "action": "Create",
-        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
-        "result": "Editable work products."
+        "example": "Draft a campaign brief, email, social post, landing-page section, or performance summary.",
+        "result": "Editable marketing assets awaiting approval."
       },
       {
         "action": "Repeat",
-        "example": "Save proven steps, formats, and approval points.",
-        "result": "A reusable workflow shaped by the team."
+        "example": "Reuse approved claim checks, channel specifications, naming rules, and review gates.",
+        "result": "A controlled campaign-production routine."
       }
     ]
   },
   "workflows": {
-    "eyebrow": "Three configurable starting points",
-    "title": "Start from real assignments, not a fixed professional playbook.",
-    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "eyebrow": "Three assignments for a marketing Work Agent",
+    "title": "Delegate campaign preparation without delegating positioning or publication.",
+    "description": "Each assignment starts from approved research, claims, and data, returns editable assets, and stops before budget, targeting, attribution, or publishing decisions.",
     "items": [
       {
         "number": "01",
@@ -159,8 +159,8 @@
   },
   "customization": {
     "eyebrow": "Your method remains the method",
-    "title": "Bring the standards your team already trusts.",
-    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "title": "Teach the Work Agent your brand, claims, channels, and review path.",
+    "description": "Provide the message house, evidence library, prohibited language, channel specifications, campaign hypothesis, and named approvers.",
     "inputsLabel": "Define the working context",
     "inputs": [
       "Approved files and data sources",
@@ -179,51 +179,51 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one task to a reusable system",
-    "title": "Start with one bounded assignment. Keep only what proves useful.",
-    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "eyebrow": "From one assignment to a reusable Work Agent",
+    "title": "Validate one approved campaign asset before scaling the routine.",
+    "description": "Scale only the parts that preserve message fidelity, claim evidence, channel fit, and explicit approval before publication.",
     "items": [
       {
         "label": "Ad hoc",
-        "title": "Complete one deliverable",
-        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+        "title": "Adapt one approved asset to one channel",
+        "description": "Use the source asset, claim evidence, brand rules, and channel specification to prepare a draft for marketing-owner review."
       },
       {
         "label": "Saved workflow",
-        "title": "Reuse the successful method",
-        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+        "title": "Reuse the checks across the campaign",
+        "description": "Keep the source-of-truth asset, approved claims, channel constraints, file naming, and approvers for the next variant."
       },
       {
         "label": "Team practice",
-        "title": "Share a controlled starting point",
-        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+        "title": "Coordinate multi-channel production",
+        "description": "Give channel owners a common campaign brief and evidence trail while each owner remains responsible for audience fit and publication."
       }
     ]
   },
   "boundaries": {
     "eyebrow": "Human-controlled by design",
-    "title": "Automate preparation, not professional responsibility.",
-    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
-    "assistsTitle": "Floatboat can help prepare",
+    "title": "Let the Work Agent prepare assets. Keep claims, strategy, and publication human-owned.",
+    "description": "The Work Agent may prepare evidence-backed briefs, variants, and reviews; it cannot invent claims, select audiences or budgets, confirm attribution, or publish on the team's behalf.",
+    "assistsTitle": "The Work Agent can help prepare",
     "assists": [
-      "Source indexes, context briefs, and evidence maps",
-      "Comparisons, extracted fields, and open questions",
-      "Meeting packs, status summaries, and communication drafts",
-      "Grounded outlines, reports, and editable first drafts",
-      "Recurring updates from approved materials"
+      "Campaign briefs linking audience evidence, objectives, approved claims, and open questions",
+      "Channel-specific drafts derived from one approved source asset",
+      "Claim and message checks that point reviewers back to supporting evidence",
+      "Feedback summaries that preserve reviewer, version, and unresolved conflicts",
+      "Performance-review drafts comparing approved metrics with the original hypothesis"
     ],
     "retainsTitle": "marketers and growth teams retain",
     "retains": [
-      "Professional interpretation and final judgment",
-      "Verification of facts, data, and sources",
-      "Privacy, access, and sensitive-information decisions",
-      "Strategy, priority, and resource decisions",
-      "Approval for every external publication, submission, or consequential action"
+      "Choosing the audience, positioning, offer, creative direction, and channel mix",
+      "Verifying product claims, permissions, customer evidence, and required legal review",
+      "Deciding whether research and campaign data may be processed or shared",
+      "Setting budget, targeting, experiment design, success criteria, and attribution conclusions",
+      "Approving every asset, audience, destination, schedule, and publication action"
     ],
-    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+    "note": "Floatboat is a general-purpose Work Agent, not a marketing automation or publishing platform. Its workspace connects approved evidence, tools, instructions, feedback, and drafts; marketing owners retain claims, budget, targeting, and publication decisions."
   },
   "faq": {
-    "title": "AI workspace questions for marketers and growth teams",
+    "title": "Work Agent questions for marketers and growth teams",
     "description": "Marketing teams need to scale adaptation without inventing claims, losing approvals, confusing attribution, or flattening every channel into the same copy.",
     "items": [
       {
@@ -258,14 +258,14 @@
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
-    "title": "Give the repetitive preparation around marketers and growth teams a better workspace.",
+    "title": "Give your first campaign-preparation assignment to a Work Agent.",
     "description": "Start with one approved brief and one source asset. Adapt it to the channels that matter while keeping claims, feedback, and performance questions traceable.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-marketers&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "Explore Agent Workspace",
+      "label": "Explore how the Work Agent works",
       "href": "/agent-workspace"
     }
   }

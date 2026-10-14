@@ -2,10 +2,10 @@
   "slug": "executive-assistants",
   "locale": "zh",
   "seo": {
-    "title": "行政助理 Agent Workspace：会议、跟进与管理简报 | Floatboat",
-    "description": "面向行政助理与管理支持团队的 AI Agent Workspace，用于准备会议、整理决策、协调跟进、追踪行动事项并汇总每周管理简报。",
+    "title": "行政助理 Work Agent：会议、跟进与管理简报 | Floatboat",
+    "description": "面向行政助理与管理支持团队的 Work Agent，准备会议简报、决策记录、责任明确的跟进事项与每周管理摘要。",
     "keywords": [
-      "行政助理 AI",
+      "行政助理 Work Agent",
       "高管助理工具",
       "AI 会议准备",
       "管理简报",
@@ -15,9 +15,9 @@
   },
   "breadcrumb": "行政助理与管理支持团队",
   "hero": {
-    "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "面向行政助理与管理支持团队的 AI Agent Workspace",
-    "description": "在可控的 AI 工作空间中准备会议、还原决策、协调跟进，并汇总每周管理简报。",
+    "eyebrow": "负责管理支持工作的 Work Agent",
+    "title": "面向行政助理与管理支持团队的 Work Agent",
+    "description": "交给 Floatboat 核准的日程、会议资料、历史决定与汇报格式，由它准备简报、决策记录、跟进初稿和周度摘要，再由你审阅。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-executive-assistants&download_placement=hero"
@@ -32,8 +32,8 @@
       "重要行动前保留人工审批"
     ],
     "preview": {
-      "label": "示意工作区",
-      "matter": "管理层周程 · 高管工作区",
+      "label": "Work Agent 任务示例",
+      "matter": "管理层周程 · 高管简报准备",
       "inputs": [
         "日程背景",
         "历史决策",
@@ -48,8 +48,8 @@
     }
   },
   "burdens": {
-    "eyebrow": "专业工作周围的重复劳动",
-    "title": "行政助理与管理支持团队的时间，不该耗在反复整理上。",
+    "eyebrow": "管理支持 Work Agent 最能发挥价值的地方",
+    "title": "分寸与关系留给人，把上下文整理交给 Agent。",
     "description": "高管支持的关键，是在正确时点找回正确上下文，同时避免把每场会议、每项决定与每次跟进都变成人工追赶。",
     "items": [
       {
@@ -75,46 +75,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "通用能力，职业语境",
-    "title": "用可组合的工作能力搭出自己的流程。",
-    "description": "Floatboat 不规定唯一方法。它按照你选择的材料、标准和审批点执行。",
+    "eyebrow": "管理支持 Work Agent 可以准备什么",
+    "title": "把分散的管理背景整理成及时、可审阅的支持材料。",
+    "description": "Work Agent 在工作空间中连接核准的日程、文件、决定与行动项；助理仍掌握访问权限、收件人、承诺与最终措辞。",
     "items": [
       {
         "action": "阅读",
-        "example": "从核准文件、记录和资料开始，而不是凭空回答。",
-        "result": "得到有依据的工作集。"
+        "example": "读取核准议程、参会者背景、历史决定、相关文件与当前日程变化。",
+        "result": "得到针对本场会议的背景集。"
       },
       {
         "action": "整理",
-        "example": "归类资料、统一名称并找出缺失项。",
-        "result": "形成可导航的项目结构。"
+        "example": "按议题、决策历史、相关人员与保密等级整理材料。",
+        "result": "形成助理便于浏览的简报结构。"
       },
       {
         "action": "提取",
-        "example": "提取事实、日期、数据、主张与待确认问题。",
-        "result": "得到便于核查的结构化内容。"
+        "example": "提取已确认决定、责任人、截止时间、依赖项与待解问题。",
+        "result": "形成决策和行动记录初稿。"
       },
       {
         "action": "比较",
-        "example": "对比版本、标准、时间段或备选方案。",
-        "result": "形成变化与差异清单。"
+        "example": "把最新议程和材料与历史决定及未完成承诺进行对照。",
+        "result": "形成简洁的变化与冲突清单。"
       },
       {
         "action": "创建",
-        "example": "把核准材料转成简报、提纲、表格或初稿。",
-        "result": "得到可编辑的交付物。"
+        "example": "起草会前简报、跟进说明、行动表或每周管理摘要。",
+        "result": "形成供助理审阅的可编辑支持材料。"
       },
       {
         "action": "复用",
-        "example": "保存已验证的步骤、格式与审批点。",
-        "result": "形成可重复使用的流程。"
+        "example": "复用核准的简报深度、决策格式、收件人规则与审阅节点。",
+        "result": "形成固定会议的一致准备流程。"
       }
     ]
   },
   "workflows": {
-    "eyebrow": "三个可配置起点",
-    "title": "从真实任务出发，而不是套用固定职业剧本。",
-    "description": "每条流程都从你控制的材料和规则开始，交付可检查的成果，并在专业判断前停下。",
+    "eyebrow": "可以交给管理支持 Work Agent 的三项任务",
+    "title": "委派会议准备与跟进，不委派管理权限。",
+    "description": "每项任务都从核准背景开始，交付可检查的简报或初稿，并在作出承诺、分发敏感内容或管理决策前停下。",
     "items": [
       {
         "number": "01",
@@ -159,8 +159,8 @@
   },
   "customization": {
     "eyebrow": "你的方法仍然是方法",
-    "title": "带上团队已经信任的标准。",
-    "description": "不同组织与任务需要不同输入、输出和控制点。页面示例只是起点。",
+    "title": "让 Work Agent 遵循管理者的简报与跟进方法。",
+    "description": "提供摘要深度、决策记录格式、相关人员、保密规则和明确审批节点。",
     "inputsLabel": "定义工作背景",
     "inputs": [
       "核准的文件与数据来源",
@@ -179,51 +179,51 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次任务到可复用系统",
-    "title": "先完成一个边界清晰的任务，再保留真正有用的方法。",
-    "description": "流程可以逐步成熟，不必把专业工作变成无人值守的自动化。",
+    "eyebrow": "从一次任务到可复用的 Work Agent",
+    "title": "从一场固定会议开始，验证后再复用 Work Agent 流程。",
+    "description": "只有在保留分寸、最新背景，以及每项承诺和收件人的明确审批时，周期管理支持流程才真正有用。",
     "items": [
       {
         "label": "临时执行",
-        "title": "完成一项交付",
-        "description": "针对当前资料生成一份可审阅的简报、清单、比较或初稿。"
+        "title": "准备一份高管会议简报",
+        "description": "把核准议程、参会背景、历史决定与迟到文件整理成简报，并由助理核验后再分发。"
       },
       {
         "label": "保存流程",
-        "title": "复用有效方法",
-        "description": "保留输入、规则、格式和审批点，用于下一次相似任务。"
+        "title": "复用会议专属方法",
+        "description": "保留简报格式、来源清单、保密标签与收件人审批，同时刷新每项事实和决定。"
       },
       {
         "label": "团队共享",
-        "title": "建立受控起点",
-        "description": "团队从同一流程开始，但每个人仍对背景与判断负责。"
+        "title": "协调管理层工作节奏",
+        "description": "在固定会议之间沿用统一的决策和行动格式，同时由助理与管理者继续负责归属和跟进。"
       }
     ]
   },
   "boundaries": {
     "eyebrow": "人工控制",
-    "title": "自动化准备工作，不外包专业责任。",
-    "description": "合理边界不是专业与非专业，而是准备可核查成果与做出后果重大决定之间的界线。",
-    "assistsTitle": "Floatboat 可以协助准备",
+    "title": "让 Work Agent 负责准备，让分寸、承诺与沟通仍由人掌握。",
+    "description": "Work Agent 可以汇集核准背景并起草跟进，但不能代表管理者表态、承诺资源、选择收件人或披露敏感信息。",
+    "assistsTitle": "Work Agent 可以协助准备",
     "assists": [
-      "资料索引、背景简报与来源地图",
-      "比较表、提取结果与开放问题",
-      "会议材料、状态摘要与沟通初稿",
-      "带依据的提纲、报告和可编辑初稿",
-      "基于核准资料的周期更新"
+      "把议题连接到历史决定与当前文件的会议简报",
+      "区分已确认结果与待核实理解的决策记录初稿",
+      "包含建议责任人、日期、依赖项与来源备注的行动表",
+      "等待助理批准的跟进消息与日程选项",
+      "按照管理者要求的深度和格式制作每周摘要"
     ],
     "retainsTitle": "行政助理与管理支持团队仍然负责",
     "retains": [
-      "专业解释与最终判断",
-      "事实、数据和来源核验",
-      "隐私、权限与敏感信息处理",
-      "策略、优先级与资源决策",
-      "所有对外发布、提交或重要行动的审批"
+      "确认会议实际作出的决定及每项承诺的责任人",
+      "对敏感背景、人际关系与组织动态运用判断分寸",
+      "选择收件人并控制机密管理材料的访问权限",
+      "决定日程取舍、优先级与资源承诺",
+      "审批每条消息、会议变更、升级事项或代表管理者作出的表述"
     ],
-    "note": "Floatboat 是通用 Agent Workspace，不替代专业资质、法定责任或组织治理。实际数据处理取决于工作区选用的模型、工具、连接器、权限与政策。"
+    "note": "Floatboat 是通用 Work Agent，不是高管代理人。它的工作空间用于连接核准背景、工具、指令与初稿；助理和管理者仍控制保密访问、承诺、收件人与最终决定。"
   },
   "faq": {
-    "title": "行政助理与管理支持团队使用 AI 工作空间的常见问题",
+    "title": "行政助理与管理支持团队使用 Work Agent 的常见问题",
     "description": "行政助理需要速度，也必须保留判断分寸、收件人意识、决定归属和敏感组织信息的控制权。",
     "items": [
       {
@@ -258,14 +258,14 @@
   },
   "finalCta": {
     "eyebrow": "从一项真实任务开始",
-    "title": "给行政助理与管理支持团队的重复准备工作一个更好的工作空间。",
+    "title": "把第一项管理支持任务交给 Work Agent。",
     "description": "从一场固定会议和真实来源材料开始，准备能节省时间、但不会替任何人作出承诺的 Brief。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-executive-assistants&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "了解 Agent Workspace",
+      "label": "了解 Work Agent 如何工作",
       "href": "/zh/agent-workspace"
     }
   }

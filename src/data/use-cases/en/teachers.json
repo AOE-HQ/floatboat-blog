@@ -2,10 +2,11 @@
   "slug": "teachers",
   "locale": "en",
   "seo": {
-    "title": "Agent Workspace for Teachers and Lesson Planning | Floatboat",
-    "description": "An AI agent workspace for teachers to organize course materials, plan lessons, prepare presentations, draft class communications, and maintain career evidence.",
+    "title": "Work Agent for Teachers: Lesson Planning | Floatboat",
+    "description": "A Work Agent for teachers that turns approved curriculum sources into lesson packs, class communications, and reviewable professional evidence.",
     "keywords": [
-      "AI for teachers",
+      "Work Agent for teachers",
+      "AI agent for teachers",
       "teacher AI tools",
       "AI lesson planning",
       "AI presentation maker for teachers",
@@ -15,9 +16,9 @@
   },
   "breadcrumb": "teachers and education teams",
   "hero": {
-    "eyebrow": "A configurable AI workspace for real work",
-    "title": "An AI agent workspace for teachers and education teams",
-    "description": "Organize teaching materials, prepare lesson packs, draft class communications, and maintain a reviewable teaching portfolio in one AI workspace.",
+    "eyebrow": "A Work Agent for teaching preparation",
+    "title": "A Work Agent for teachers and education teams",
+    "description": "Assign Floatboat a teaching preparation task: it can organize approved materials, build coordinated lesson packs, draft class communications, and maintain a reviewable evidence record while educators retain every classroom decision.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-teachers&download_placement=hero"
@@ -32,8 +33,8 @@
       "Human approval before consequential action"
     ],
     "preview": {
-      "label": "Illustrative workspace",
-      "matter": "Year 8 history · Unit workspace",
+      "label": "Illustrative Work Agent assignment",
+      "matter": "Year 8 history · Lesson-pack assignment",
       "inputs": [
         "Curriculum goals",
         "Source readings",
@@ -75,46 +76,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "General capabilities, professional context",
-    "title": "Compose the workflow from practical building blocks.",
-    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "eyebrow": "What a teaching Work Agent can prepare",
+    "title": "Assign the production work around teaching.",
+    "description": "The Work Agent follows your curriculum, approved sources, school formats, and review points; it does not decide pedagogy or student support.",
     "items": [
       {
         "action": "Read",
-        "example": "Start from approved files, records, and sources rather than an empty prompt.",
-        "result": "A grounded working set."
+        "example": "Use curriculum goals, source readings, prior lesson plans, and school templates approved for the unit.",
+        "result": "A teaching brief grounded in the actual class context."
       },
       {
         "action": "Organize",
-        "example": "Classify material, normalize names, and identify missing inputs.",
-        "result": "A navigable project structure."
+        "example": "Group readings, activities, slides, and assessments by lesson objective and teaching sequence.",
+        "result": "A coherent unit pack instead of scattered resources."
       },
       {
         "action": "Extract",
-        "example": "Pull facts, dates, data, claims, and open questions.",
-        "result": "Structured content ready to verify."
+        "example": "Identify learning objectives, key concepts, vocabulary, dates, and differentiation constraints.",
+        "result": "A checklist the teacher can verify before drafting."
       },
       {
         "action": "Compare",
-        "example": "Contrast versions, standards, periods, or alternatives.",
-        "result": "A focused list of changes and differences."
+        "example": "Check a lesson draft against the curriculum, rubric, school format, and prior materials.",
+        "result": "Visible gaps, duplicated content, and alignment questions."
       },
       {
         "action": "Create",
-        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
-        "result": "Editable work products."
+        "example": "Prepare a coordinated lesson outline, slide draft, activity sheet, handout, and teacher notes.",
+        "result": "Editable classroom materials ready for educator review."
       },
       {
         "action": "Repeat",
-        "example": "Save proven steps, formats, and approval points.",
-        "result": "A reusable workflow shaped by the team."
+        "example": "Reuse the approved lesson-pack structure while changing the unit sources and class requirements.",
+        "result": "Consistent preparation without flattening each class into the same lesson."
       }
     ]
   },
   "workflows": {
-    "eyebrow": "Three configurable starting points",
-    "title": "Start from real assignments, not a fixed professional playbook.",
-    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "eyebrow": "Three assignments for a teaching Work Agent",
+    "title": "Give it preparation work with a clear classroom owner.",
+    "description": "Each assignment begins with materials and rules you control, returns an inspectable teaching asset, and stops before educational judgment.",
     "items": [
       {
         "number": "01",
@@ -159,8 +160,8 @@
   },
   "customization": {
     "eyebrow": "Your method remains the method",
-    "title": "Bring the standards your team already trusts.",
-    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "title": "Teach the Work Agent your curriculum and school standards.",
+    "description": "Configure the inputs, formats, terminology, and approval points for a class or school; the examples are starting points, not a prescribed method.",
     "inputsLabel": "Define the working context",
     "inputs": [
       "Approved files and data sources",
@@ -180,55 +181,55 @@
   },
   "progression": {
     "eyebrow": "From one task to a reusable system",
-    "title": "Start with one bounded assignment. Keep only what proves useful.",
-    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "title": "Start with one bounded assignment. Teach the Work Agent only what proves useful.",
+    "description": "A Work Agent can reuse a proven preparation method without turning teaching into unattended automation.",
     "items": [
       {
         "label": "Ad hoc",
         "title": "Complete one deliverable",
-        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+        "description": "Prepare one lesson pack from a known unit, then check every objective, source, activity, and student-facing instruction."
       },
       {
         "label": "Saved workflow",
         "title": "Reuse the successful method",
-        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+        "description": "Reuse the school format, curriculum checks, and review sequence for the next unit while replacing the teaching content."
       },
       {
         "label": "Team practice",
         "title": "Share a controlled starting point",
-        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+        "description": "Share an approved preparation routine across a department while each teacher adapts materials to the class and remains accountable for use."
       }
     ]
   },
   "boundaries": {
     "eyebrow": "Human-controlled by design",
-    "title": "Automate preparation, not professional responsibility.",
-    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
+    "title": "Let the Work Agent prepare materials—not make teaching decisions.",
+    "description": "The Work Agent can assemble and adapt teaching materials, but educators decide accuracy, pedagogy, differentiation, safeguarding, and what students receive.",
     "assistsTitle": "Floatboat can help prepare",
     "assists": [
-      "Source indexes, context briefs, and evidence maps",
-      "Comparisons, extracted fields, and open questions",
-      "Meeting packs, status summaries, and communication drafts",
-      "Grounded outlines, reports, and editable first drafts",
-      "Recurring updates from approved materials"
+      "Lesson outlines linked to curriculum goals",
+      "Slide drafts, handouts, activities, and teacher notes",
+      "Class notices, family updates, and meeting-note drafts",
+      "Teaching-portfolio evidence indexes and narrative drafts",
+      "Reusable unit-pack structures based on approved materials"
     ],
     "retainsTitle": "teachers and education teams retain",
     "retains": [
-      "Professional interpretation and final judgment",
-      "Verification of facts, data, and sources",
-      "Privacy, access, and sensitive-information decisions",
-      "Strategy, priority, and resource decisions",
-      "Approval for every external publication, submission, or consequential action"
+      "Curriculum accuracy and pedagogical choices",
+      "Differentiation and support for individual students",
+      "Safeguarding, privacy, and student-data decisions",
+      "Assessment, grading, and professional claims",
+      "Approval before materials or messages reach students and families"
     ],
-    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+    "note": "Floatboat is a general-purpose Work Agent, not an LMS or substitute for an educator. It works inside a persistent workspace; data handling depends on the models, tools, connectors, permissions, and school policies selected for that environment."
   },
   "faq": {
-    "title": "AI workspace questions for teachers and education teams",
-    "description": "Teachers need to know whether an AI workspace fits lesson preparation, protects student context, and keeps classroom decisions with educators.",
+    "title": "Work Agent questions for teachers and education teams",
+    "description": "Teachers need to know what a Work Agent can prepare, how student context is protected, and which classroom decisions remain with educators.",
     "items": [
       {
         "question": "Is Floatboat a learning management system or an AI lesson planner?",
-        "answer": "Neither. It is an Agent Workspace for assembling files, instructions, models, and tools around a teaching task. Your LMS remains the system for classes and records; Floatboat helps prepare the editable work that goes into it."
+        "answer": "Neither. Floatboat is a Work Agent that prepares editable teaching materials from the files, instructions, models, and tools approved for an assignment. Your LMS remains the system for classes and records."
       },
       {
         "question": "Can it decide what or how I should teach?",
@@ -258,14 +259,14 @@
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
-    "title": "Give the repetitive preparation around teachers and education teams a better workspace.",
+    "title": "Give your first teaching preparation assignment to a Work Agent.",
     "description": "Bring one upcoming unit, the sources you trust, and the format your school expects. Turn them into a lesson pack you can still teach in your own way.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-teachers&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "Explore Agent Workspace",
+      "label": "See how the workspace supports the agent",
       "href": "/agent-workspace"
     }
   }

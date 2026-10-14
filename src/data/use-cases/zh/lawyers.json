@@ -2,20 +2,20 @@
   "slug": "lawyers",
   "locale": "zh",
   "seo": {
-    "title": "律师 Agent Workspace：案件、研究与文书准备 | Floatboat",
-    "description": "面向律师与法律团队的 AI Agent Workspace，用于整理案件文件、准备法律研究、比较文档版本、建立时间线并生成可审阅的法律文书初稿。",
-    "keywords": ["律师 AI", "法律 AI", "AI 法律助手", "AI 法律检索", "AI 合同审阅", "法律文档自动化", "律师工作流"]
+    "title": "律师 Work Agent：法律研究、审阅与文书准备 | Floatboat",
+    "description": "面向律师的 Work Agent，基于授权来源准备案件材料、法律研究、文档对比、时间线和可审阅文书初稿。",
+    "keywords": ["律师 Work Agent", "律师 AI Agent", "AI 法律助手", "AI 法律检索", "AI 合同审阅", "法律文书准备", "法律工作 Agent"]
   },
   "breadcrumb": "律师与法律团队",
   "hero": {
-    "eyebrow": "为法律工作配置的 AI 工作空间",
-    "title": "面向律师与法律团队的 AI Agent Workspace",
-    "description": "Floatboat 围绕案件与项目处理工作：整理文件、还原事实、比较版本、准备研究材料，把来源转成可审阅的初稿。模板、清单和审批点仍由你定义。",
+    "eyebrow": "处理法律准备工作的 Work Agent",
+    "title": "面向律师与法律团队的 Work Agent",
+    "description": "把一项边界明确的法律准备任务交给 Floatboat。它可以整理案件文件、还原事实、比较版本、准备研究材料，并把授权来源转成可审阅初稿；模板、清单与审批点始终由团队定义。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-lawyers&download_placement=hero" },
     "secondaryCta": { "label": "查看示例流程", "href": "#workflows" },
     "proof": ["基于你授权的文件工作", "交付物可编辑、可复核", "重要行动前由人确认"],
     "preview": {
-      "label": "示意工作空间",
+      "label": "Work Agent 任务示例",
       "matter": "并购尽调 · 工作材料集",
       "inputs": ["文件需求清单", "已上传的协议", "团队问题 Checklist"],
       "outputs": ["文件索引", "待解决问题表", "补充材料问题"],
@@ -34,12 +34,12 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "通用能力，法律语境",
-    "title": "用实用的工作积木组装自己的流程。",
-    "description": "Floatboat 不规定唯一的法律工作方法，而是把可复用的工作动作应用到你选择的材料和标准上。",
+    "eyebrow": "法律 Work Agent 可以准备什么",
+    "title": "把专业判断周围的准备步骤交给 Work Agent。",
+    "description": "Work Agent 遵循你选择的来源、标准和检查点，不替团队规定法律方法，也不代替专业决定。",
     "items": [
       { "action": "读取", "example": "在授权范围内读取案件文件夹、协议、记录和历史文书。", "result": "减少反复上传和复制，形成有依据的工作材料集。" },
-      { "action": "整理", "example": "分类文件、统一命名，并把材料映射到需求清单或问题列表。", "result": "文件索引、缺失材料清单和结构化工作空间。" },
+      { "action": "整理", "example": "分类文件、统一命名，并把材料映射到需求清单或问题列表。", "result": "文件索引、缺失材料清单和结构化案件记录。" },
       { "action": "提取", "example": "提取当事人、日期、义务、定义、引文和待确认问题。", "result": "供律师检查的表格和来源笔记。" },
       { "action": "比较", "example": "比较不同版本、模板，或按照团队自己的 Checklist 检查文件。", "result": "修改摘要、偏差项和审阅队列。" },
       { "action": "创建", "example": "把已批准的材料转成时间线、会议 Brief、客户更新或初稿。", "result": "可编辑的交付物，而不是用完即弃的聊天回答。" },
@@ -47,9 +47,9 @@
     ]
   },
   "workflows": {
-    "eyebrow": "三个可配置起点",
-    "title": "示例适应你的业务，而不是替你规定法律流程。",
-    "description": "每个流程都从你控制的材料和规则开始，产出可检查的工作成果，并在需要专业判断的位置停下来。",
+    "eyebrow": "可以交给法律 Work Agent 的三项任务",
+    "title": "交付边界清楚的准备工作，而不是授予法律判断权。",
+    "description": "每项任务都从你控制的材料和规则开始，返回可检查的工作成果，并在需要专业判断的位置停下来。",
     "items": [
       {
         "number": "01 · 案件准备",
@@ -65,7 +65,7 @@
         "job": "比较不同版本，或按照团队提供的模板、清单和问题分类检查文档。",
         "flow": ["加入版本与清单", "提取关键条款", "标示变化", "准备问题表"],
         "output": "版本摘要、条款提取、偏差项和未解决问题。",
-        "boundary": "工作空间负责呈现差异和准备问题，不替律师作出最终法律风险判断。"
+        "boundary": "Work Agent 负责呈现差异和准备问题，不替律师作出最终法律风险判断。"
       },
       {
         "number": "03 · 研究准备",
@@ -79,17 +79,17 @@
   },
   "customization": {
     "eyebrow": "继续使用你信任的方法",
-    "title": "把团队已有的标准带进工作空间。",
-    "description": "不同律所、客户、案件和法域需要不同流程。Floatboat 应遵循你批准的材料，并把判断交回正确的人。",
+    "title": "教会 Work Agent 遵循团队已经信任的标准。",
+    "description": "不同律所、客户、案件和法域需要不同方法。让 Floatboat 遵循已批准的材料，并把每项重要判断交回正确的人。",
     "inputsLabel": "定义工作上下文",
     "inputs": ["案件文件夹与允许使用的来源", "律所模板与认可的条款语言", "问题清单或审阅 Playbook", "命名规则与交付格式", "法域、日期与研究范围"],
     "controlsLabel": "定义控制点",
     "controls": ["Agent 可以读取或修改什么", "哪些步骤必须先提问", "谁负责审阅每项交付物", "哪些内容绝不能自动发送", "哪些做法可以保存和复用"]
   },
   "progression": {
-    "eyebrow": "从单次任务到可复用系统",
-    "title": "先从边界清楚的任务开始，只复用被证明有价值的部分。",
-    "description": "流程可以逐步成熟，但不需要把所有法律工作都变成无人监督的自动化。",
+    "eyebrow": "从一次任务到可靠的工作惯例",
+    "title": "先从边界清楚的任务开始，只教 Work Agent 复用被证明有价值的方法。",
+    "description": "Work Agent 可以复用已经验证的做法，但不需要把法律工作变成无人监督的自动化。",
     "items": [
       { "label": "临时执行", "title": "先准备一项交付物", "description": "整理一个材料集，并返回 Brief、对比表、时间线或研究材料，交给律师审阅。" },
       { "label": "保存流程", "title": "保留已经有效的方法", "description": "下一次项目复用相同的输入规则、命名、Checklist、输出结构和审批点。" },
@@ -98,23 +98,23 @@
   },
   "boundaries": {
     "eyebrow": "以人工控制为前提",
-    "title": "自动化准备工作，不自动化专业责任。",
+    "title": "让 Work Agent 准备工作记录，不承担专业责任。",
     "description": "真正有用的边界不是“法律工作”与“非法律工作”，而是准备可检查的工作成果与作出有后果的专业决定之间的边界。",
     "assistsTitle": "Floatboat 可以协助准备",
     "assists": ["案件索引、事件时间线与来源映射", "版本比较与条款提取", "会议 Brief、客户更新初稿和材料需求清单", "研究材料包、大纲和可编辑初稿", "基于已批准材料生成周期性状态摘要"],
     "retainsTitle": "律师与法律团队继续负责",
     "retains": ["法律意见与法律解释", "保密特权和信息披露决定", "风险、策略与谈判判断", "引文与权威来源核验", "客户沟通、申报或提交的最终批准"],
-    "note": "Floatboat 是通用 Agent Workspace，不是律师事务所、法律检索权威或合格法律顾问的替代品。数据处理方式取决于每个工作空间选择的模型、工具、连接器、权限和组织政策。"
+    "note": "Floatboat 是通用 Work Agent，不是律师事务所、法律检索权威或合格法律顾问的替代品。它在持续工作空间中执行任务；数据处理方式取决于该环境选择的模型、工具、连接器、权限和组织政策。"
   },
   "faq": {
-    "title": "律师使用 AI 工作空间的常见问题",
+    "title": "律师使用 Work Agent 的常见问题",
     "description": "真正需要确认的是来源、审阅、保密与控制，而不是“一键完成法律工作”的承诺。",
     "items": [
-      { "question": "Floatboat 是法律 AI 或律所管理系统吗？", "answer": "Floatboat 是通用 Agent Workspace。它可以帮助法律专业人士处理授权文件、研究材料、模板和可复用的准备步骤，但不是法律权威、案件管理系统、计费平台或律师替代品。" },
+      { "question": "Floatboat 是法律 AI 或律所管理系统吗？", "answer": "Floatboat 是通用 Work Agent。它可以根据授权文件、研究材料、模板和可复用指令准备工作，但不是法律权威、案件管理系统、计费平台或律师替代品。" },
       { "question": "Floatboat 可以审阅合同吗？", "answer": "它可以提取条款、比较版本、应用你提供的 Checklist 或模板，并准备偏差项和待确认问题。合同的法律含义、风险、谈判立场和最终建议仍由律师判断。" },
       { "question": "它能做到不产生幻觉的法律检索吗？", "answer": "不能把任何 AI 系统视为绝不会出错。Floatboat 可以帮助组织研究、整理来源和建立可追溯材料包，但每项权威来源、引文、法域假设和结论都必须对照权威材料核验。" },
       { "question": "Floatboat 内置标准律所 Playbook 吗？", "answer": "页面中的流程是起点，不是统一规定的法律方法。你需要根据律所、客户、案件和法域选择文件、模板、Checklist、术语、输出格式和审批步骤。" },
-      { "question": "可以使用自己的模板和清单吗？", "answer": "可以。工作空间可以围绕你批准的材料和指令组织，让 Agent 按团队需要的结构准备成果，而不是自行发明一套通用格式。" },
+      { "question": "可以使用自己的模板和清单吗？", "answer": "可以。把已批准的材料、指令和输出结构交给 Work Agent；持续工作空间会让这些输入与任务保持关联，而不是套用通用法律格式。" },
       { "question": "涉及保密或特权材料时应该怎么处理？", "answer": "添加敏感材料前应遵守律所政策和客户义务，逐一评估流程使用的模型、连接器和工具如何处理数据，并把访问范围限制在必要内容。能够读取本地文件并不代表所有处理步骤都留在本机。" },
       { "question": "Floatboat 会自动发送客户消息或提交文件吗？", "answer": "推荐的法律工作流会把有后果的外部操作放在明确的人工批准之后。连接器技术上能够执行某项操作，不等于组织政策应当允许自动执行。" },
       { "question": "这个页面适合哪些人？", "answer": "页面示例适合律师、公司法务、律师助理、Legal Operations 团队，以及需要花大量时间准备文件、上下文、初稿和可复用工作成果的其他法律专业人士。" }
@@ -122,9 +122,9 @@
   },
   "finalCta": {
     "eyebrow": "从一个真实任务开始",
-    "title": "给专业判断周围的工作一个更好的工作空间。",
-    "description": "选择一个边界清楚的文件夹、一份可信模板和一项可以审阅的交付物。保留有效流程，也保留自己的专业判断。",
+    "title": "把第一项法律准备任务交给 Work Agent。",
+    "description": "选择一个边界清楚的案件文件夹、一份可信模板和一项可以审阅的交付物。保留有效方法，也保留自己的专业判断。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-lawyers&download_placement=final_cta" },
-    "secondaryCta": { "label": "了解 Agent Workspace", "href": "/zh/agent-workspace" }
+    "secondaryCta": { "label": "了解工作空间如何支持 Agent", "href": "/zh/agent-workspace" }
   }
 }

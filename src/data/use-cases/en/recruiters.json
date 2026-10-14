@@ -2,10 +2,10 @@
   "slug": "recruiters",
   "locale": "en",
   "seo": {
-    "title": "Agent Workspace for Recruiters and Hiring Teams | Floatboat",
-    "description": "An AI agent workspace for recruiters to clarify hiring needs, organize candidate evidence, prepare interviews, coordinate feedback, and draft status updates.",
+    "title": "Work Agent for Recruiters and Hiring Teams | Floatboat",
+    "description": "A Work Agent for recruiters that turns approved hiring inputs into role briefs, candidate evidence packets, interview plans, and review-ready communications.",
     "keywords": [
-      "AI for recruiters",
+      "Work Agent for recruiters",
       "AI recruiting tools",
       "recruitment workflow",
       "candidate screening workflow",
@@ -15,9 +15,9 @@
   },
   "breadcrumb": "recruiters and talent teams",
   "hero": {
-    "eyebrow": "A configurable AI workspace for real work",
-    "title": "An AI agent workspace for recruiters and talent teams",
-    "description": "Structure hiring intake, candidate evidence, interview preparation, and status communication in a human-controlled AI workspace for recruiting teams.",
+    "eyebrow": "A Work Agent for responsible hiring preparation",
+    "title": "A Work Agent for recruiters and talent teams",
+    "description": "Give Floatboat an approved role brief, candidate materials, and interview standards. It prepares evidence packets, interview plans, feedback summaries, and communication drafts for recruiter review.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-recruiters&download_placement=hero"
@@ -32,8 +32,8 @@
       "Human approval before consequential action"
     ],
     "preview": {
-      "label": "Illustrative workspace",
-      "matter": "Product lead search · Hiring workspace",
+      "label": "Illustrative Work Agent assignment",
+      "matter": "Product lead search · Candidate preparation",
       "inputs": [
         "Hiring brief",
         "Candidate materials",
@@ -48,8 +48,8 @@
     }
   },
   "burdens": {
-    "eyebrow": "The repetitive work around the profession",
-    "title": "recruiters and talent teams should not spend their best hours rebuilding context.",
+    "eyebrow": "Where a recruiting Work Agent earns its place",
+    "title": "Keep hiring judgment with people. Give the preparation work to an agent.",
     "description": "Hiring slows down when the role, evidence, interview criteria, and candidate communication are rebuilt by different people at every stage.",
     "items": [
       {
@@ -75,46 +75,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "General capabilities, professional context",
-    "title": "Compose the workflow from practical building blocks.",
-    "description": "Floatboat does not prescribe one professional method. It follows the materials, standards, and approval points you select.",
+    "eyebrow": "What your recruiting Work Agent can prepare",
+    "title": "Move from approved hiring inputs to review-ready materials.",
+    "description": "The Work Agent uses the workspace to keep role criteria, candidate evidence, interview notes, and deliverables connected while your team controls every consequential decision.",
     "items": [
       {
         "action": "Read",
-        "example": "Start from approved files, records, and sources rather than an empty prompt.",
-        "result": "A grounded working set."
+        "example": "Read the approved role brief, candidate submissions, correspondence, and interview rubric.",
+        "result": "A job-relevant source set."
       },
       {
         "action": "Organize",
-        "example": "Classify material, normalize names, and identify missing inputs.",
-        "result": "A navigable project structure."
+        "example": "Arrange evidence by role criterion, interview stage, and source.",
+        "result": "A consistent candidate packet."
       },
       {
         "action": "Extract",
-        "example": "Pull facts, dates, data, claims, and open questions.",
-        "result": "Structured content ready to verify."
+        "example": "Pull candidate-provided evidence and mark unanswered role questions.",
+        "result": "Claims ready for recruiter verification."
       },
       {
         "action": "Compare",
-        "example": "Contrast versions, standards, periods, or alternatives.",
-        "result": "A focused list of changes and differences."
+        "example": "Map each packet against the same approved, job-related criteria without ranking people.",
+        "result": "Comparable evidence for human review."
       },
       {
         "action": "Create",
-        "example": "Turn approved material into briefs, outlines, tables, and drafts.",
-        "result": "Editable work products."
+        "example": "Draft interviewer briefs, debrief summaries, and candidate updates.",
+        "result": "Editable recruiting deliverables."
       },
       {
         "action": "Repeat",
-        "example": "Save proven steps, formats, and approval points.",
-        "result": "A reusable workflow shaped by the team."
+        "example": "Reuse proven packet formats and approval gates for the next search.",
+        "result": "A controlled recruiting routine."
       }
     ]
   },
   "workflows": {
-    "eyebrow": "Three configurable starting points",
-    "title": "Start from real assignments, not a fixed professional playbook.",
-    "description": "Each workflow begins with material and rules you control, returns an inspectable result, and stops before professional judgment.",
+    "eyebrow": "Three assignments for a recruiting Work Agent",
+    "title": "Delegate the preparation around a hiring decision—not the decision itself.",
+    "description": "Each assignment starts from approved, job-related material, returns an inspectable deliverable, and stops before candidate evaluation or outreach.",
     "items": [
       {
         "number": "01",
@@ -159,8 +159,8 @@
   },
   "customization": {
     "eyebrow": "Your method remains the method",
-    "title": "Bring the standards your team already trusts.",
-    "description": "Different organizations and assignments require different inputs, outputs, and controls. These examples are starting points.",
+    "title": "Teach the Work Agent how your hiring team prepares.",
+    "description": "Give it your lawful criteria, interview rubric, packet format, terminology, and approval path; keep candidate judgment with accountable people.",
     "inputsLabel": "Define the working context",
     "inputs": [
       "Approved files and data sources",
@@ -179,51 +179,51 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one task to a reusable system",
-    "title": "Start with one bounded assignment. Keep only what proves useful.",
-    "description": "A workflow can mature without turning professional work into unattended automation.",
+    "eyebrow": "From one assignment to a reusable Work Agent",
+    "title": "Prove the Work Agent on one hiring deliverable before expanding its role.",
+    "description": "A recruiting routine should expand only after recruiters confirm that its packets are accurate, job-related, and useful to interviewers.",
     "items": [
       {
         "label": "Ad hoc",
-        "title": "Complete one deliverable",
-        "description": "Use the current working set to prepare one reviewable brief, comparison, checklist, or draft."
+        "title": "Prepare one interviewer packet",
+        "description": "Use one approved role brief and one candidate's submitted materials to prepare a source-linked packet for recruiter review."
       },
       {
         "label": "Saved workflow",
-        "title": "Reuse the successful method",
-        "description": "Keep the inputs, rules, format, and approval points for the next similar assignment."
+        "title": "Reuse the packet method for the search",
+        "description": "Keep the same job-related criteria, evidence labels, missing-information rules, and recruiter approval gate for later candidates."
       },
       {
         "label": "Team practice",
-        "title": "Share a controlled starting point",
-        "description": "Let the team begin from a common workflow while each person remains responsible for context and judgment."
+        "title": "Standardize preparation across the hiring team",
+        "description": "Give recruiters and interviewers a consistent briefing format while each evaluator records their own evidence and remains accountable for judgment."
       }
     ]
   },
   "boundaries": {
     "eyebrow": "Human-controlled by design",
-    "title": "Automate preparation, not professional responsibility.",
-    "description": "The useful boundary is between preparing an inspectable work product and making a consequential professional decision.",
-    "assistsTitle": "Floatboat can help prepare",
+    "title": "Let the Work Agent prepare evidence. Keep employment decisions human.",
+    "description": "The Work Agent may organize job-related evidence and draft materials; it must not infer protected traits, rank people, reject applicants, or make employment decisions.",
+    "assistsTitle": "The Work Agent can help prepare",
     "assists": [
-      "Source indexes, context briefs, and evidence maps",
-      "Comparisons, extracted fields, and open questions",
-      "Meeting packs, status summaries, and communication drafts",
-      "Grounded outlines, reports, and editable first drafts",
-      "Recurring updates from approved materials"
+      "Role briefs that separate required outcomes from unresolved hiring-manager requests",
+      "Source-linked candidate evidence mapped to approved, job-related criteria",
+      "Interviewer packets with focused questions and clearly marked information gaps",
+      "Debrief summaries that preserve who supplied each observation",
+      "Candidate-status messages held as drafts until a recruiter approves them"
     ],
     "retainsTitle": "recruiters and talent teams retain",
     "retains": [
-      "Professional interpretation and final judgment",
-      "Verification of facts, data, and sources",
-      "Privacy, access, and sensitive-information decisions",
-      "Strategy, priority, and resource decisions",
-      "Approval for every external publication, submission, or consequential action"
+      "Defining lawful role criteria and deciding which evidence is relevant",
+      "Evaluating candidates, investigating gaps, and making employment decisions",
+      "Preventing protected or unnecessary sensitive attributes from entering the process",
+      "Choosing interview panels, stages, compensation ranges, and hiring priorities",
+      "Approving every candidate-facing message, disposition, offer, or rejection"
     ],
-    "note": "Floatboat is a general-purpose Agent Workspace. It does not replace professional qualification, legal responsibility, or organizational governance. Data handling depends on the models, tools, connectors, permissions, and policies selected for the workspace."
+    "note": "Floatboat is a general-purpose Work Agent, not an ATS or hiring authority. Its workspace keeps approved files, tools, instructions, and deliverables together; data handling depends on the models, connectors, permissions, and policies you select."
   },
   "faq": {
-    "title": "AI workspace questions for recruiters and talent teams",
+    "title": "Work Agent questions for recruiters and talent teams",
     "description": "Recruiting automation must improve preparation without turning incomplete evidence into a hiring decision or weakening candidate privacy.",
     "items": [
       {
@@ -244,7 +244,7 @@
       },
       {
         "question": "What candidate information belongs in the workspace?",
-        "answer": "Only job-relevant information that policy and applicable law permit the team to process. Avoid unnecessary sensitive attributes, keep access narrow, and review the data practices of each model and connector."
+        "answer": "Only job-relevant information that policy and applicable law permit the team to process. Keep the Work Agent workspace limited to necessary files, avoid unnecessary sensitive attributes, and review each model and connector's data practices."
       },
       {
         "question": "Can it contact candidates or schedule interviews without review?",
@@ -258,14 +258,14 @@
   },
   "finalCta": {
     "eyebrow": "Start from one real assignment",
-    "title": "Give the repetitive preparation around recruiters and talent teams a better workspace.",
-    "description": "Begin with one approved role brief and a structured interview packet. Reduce preparation time without handing candidate judgment to the system.",
+    "title": "Give your first hiring-preparation assignment to a Work Agent.",
+    "description": "Begin with one approved role brief and one structured interview packet. Let Floatboat prepare the materials without handing candidate judgment to the system.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-recruiters&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "Explore Agent Workspace",
+      "label": "Explore how the Work Agent works",
       "href": "/agent-workspace"
     }
   }

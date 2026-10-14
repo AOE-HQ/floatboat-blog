@@ -1,27 +1,266 @@
 {
-  "slug": "for-small-business", "locale": "en",
-  "seo": {"title": "AI Agent Workspace for Small Business Teams | Floatboat", "description": "An AI agent workspace for small businesses to prepare customer work, coordinate operations, organize recurring files, and keep important actions under human control.", "keywords": ["AI for small business", "AI agent for small business", "small business automation", "AI business workspace", "small business productivity"]},
+  "slug": "for-small-business",
+  "locale": "en",
+  "seo": {
+    "title": "Work Agent for Small Business Teams | Floatboat",
+    "description": "A Work Agent for small businesses that prepares customer work packets, operational handoffs, and owner reviews from approved business information.",
+    "keywords": [
+      "Work Agent for small business",
+      "AI agent for small business",
+      "small business operations AI",
+      "AI customer intake agent",
+      "small business workflow automation"
+    ]
+  },
   "breadcrumb": "Small business owners and teams",
-  "hero": {"eyebrow": "Operational continuity without another silo", "title": "AI Agent Workspace for Small Business", "description": "Connect customer requests, operating files, staff handoffs, recurring reviews, and owner decisions in a workspace that produces editable work instead of another queue to manage.", "primaryCta": {"label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-small-business&download_placement=hero"}, "secondaryCta": {"label": "Explore workflows", "href": "#workflows"}, "proof": ["Works across existing business files", "Staff can review every output", "External actions require approval"], "preview": {"label": "Live operations workspace", "matter": "Customer request · Quote and delivery", "inputs": ["Customer message", "Service and price list", "Delivery records"], "outputs": ["Response draft", "Quote worksheet", "Delivery checklist"], "review": "Team approval"}},
-  "burdens": {"eyebrow": "The gaps between business systems", "title": "Small teams lose time at every handoff", "description": "Customer, operations, finance, and scheduling systems each hold part of the truth, while staff still reconstruct the complete job by hand.", "items": [
-    {"label": "Intake", "title": "A customer request arrives incomplete", "description": "Important scope, timing, price, inventory, or service details must be recovered before anyone can respond accurately."},
-    {"label": "Handoff", "title": "The next person cannot see the whole job", "description": "Messages, files, promises, and changes travel through separate tools, leaving staff to ask the same questions again."},
-    {"label": "Routine", "title": "Recurring administration still starts manually", "description": "Weekly updates, vendor checks, customer follow-ups, and reporting depend on someone remembering the next step."},
-    {"label": "Control", "title": "Automation can move faster than policy", "description": "A drafted quote or message is useful, but sending it without the right price, permission, or owner review creates risk."}
-  ]},
-  "workflows": {"eyebrow": "Three operating workflows", "title": "Prepare the work that crosses roles and tools", "description": "These examples organize existing business information and stop before customer, financial, or policy commitments are made.", "items": [
-    {"number": "01", "title": "Turn a customer request into a work packet", "job": "Combine the incoming request with approved service details, customer history, and missing questions.", "flow": ["Capture the request", "Check business files", "Identify gaps", "Prepare response and work packet"], "output": "A response draft, quote worksheet, assumptions, and delivery checklist.", "boundary": "Staff approve price, availability, terms, recipient, and any customer commitment."},
-    {"number": "02", "title": "Coordinate an operational handoff", "job": "Bring files, decisions, responsibilities, deadlines, and unresolved issues into one handoff brief.", "flow": ["Select job context", "Recover decisions", "Assign proposed owners", "Review the handoff"], "output": "A handoff brief, file index, action register, and open-issue list.", "boundary": "Managers confirm responsibilities, access, deadlines, and changes to the operating plan."},
-    {"number": "03", "title": "Prepare a weekly owner review", "job": "Summarize approved customer, operational, cash, staffing, and vendor updates around decisions that need attention.", "flow": ["Collect approved updates", "Group changes", "Surface exceptions", "Draft the review"], "output": "A concise operating brief with source links, exceptions, and decision prompts.", "boundary": "The business owner validates figures and decides priorities, spending, staffing, and external action."}
-  ]},
-  "faq": {"title": "Small business AI workspace questions", "description": "A small business needs useful automation that respects its systems of record, staff permissions, customer promises, and owner approval.", "items": [
-    {"question": "Does Floatboat replace our CRM, accounting, or project system?", "answer": "No. Those systems remain authoritative. Floatboat helps prepare cross-system work from the files and information your team is permitted to use."},
-    {"question": "Can it quote a customer automatically?", "answer": "It can prepare a quote worksheet from approved pricing and scope information, but an authorized person should confirm price, availability, terms, and recipient before sending."},
-    {"question": "Can different staff members use the same workflow?", "answer": "A proven method can be shared when the team has appropriate access, ownership, and approval rules. Shared does not mean every person should see every file."},
-    {"question": "How do we handle customer and employee information?", "answer": "Follow applicable policy and obligations, minimize the data used, scope access by role, and review how each selected model and connector processes it."},
-    {"question": "Can it update external business systems?", "answer": "That depends on the available integration and permissions. Treat writes, sends, financial changes, and irreversible actions as separate approval points."},
-    {"question": "What should a small business automate first?", "answer": "Start with a repeated preparation task such as an intake packet or weekly owner brief, not a high-risk decision or unattended external action."},
-    {"question": "How is this different from a solopreneur workflow?", "answer": "A small business page emphasizes handoffs, role-based access, shared review, and continuity between people; the solopreneur page emphasizes one person switching roles."}
-  ]},
-  "finalCta": {"eyebrow": "Start with one repeated handoff", "title": "Connect the work between your business systems", "description": "Choose one customer or operating process with known inputs and a responsible reviewer. Improve the handoff before expanding the automation.", "primaryCta": {"label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-small-business&download_placement=final_cta"}, "secondaryCta": {"label": "Explore Agent Workspace", "href": "/agent-workspace"}}
+  "hero": {
+    "eyebrow": "A Work Agent for the work between business systems",
+    "title": "A Work Agent for Small Business",
+    "description": "Assign Floatboat a customer request, operational handoff, or weekly review. Your Work Agent gathers approved context in its workspace and returns an editable work packet while staff retain authority over prices, policies, and external actions.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-small-business&download_placement=hero"
+    },
+    "secondaryCta": {
+      "label": "Explore workflows",
+      "href": "#workflows"
+    },
+    "proof": [
+      "Works across existing business files",
+      "Staff can review every output",
+      "External actions require approval"
+    ],
+    "preview": {
+      "label": "Illustrative Work Agent assignment",
+      "matter": "Customer request · Quote and delivery",
+      "inputs": [
+        "Customer message",
+        "Service and price list",
+        "Delivery records"
+      ],
+      "outputs": [
+        "Response draft",
+        "Quote worksheet",
+        "Delivery checklist"
+      ],
+      "review": "Team approval"
+    }
+  },
+  "burdens": {
+    "eyebrow": "The gaps between business systems",
+    "title": "Small teams lose time at every handoff",
+    "description": "Customer, operations, finance, and scheduling systems each hold part of the truth, while staff still reconstruct the complete job by hand.",
+    "items": [
+      {
+        "label": "Intake",
+        "title": "A customer request arrives incomplete",
+        "description": "Important scope, timing, price, inventory, or service details must be recovered before anyone can respond accurately."
+      },
+      {
+        "label": "Handoff",
+        "title": "The next person cannot see the whole job",
+        "description": "Messages, files, promises, and changes travel through separate tools, leaving staff to ask the same questions again."
+      },
+      {
+        "label": "Routine",
+        "title": "Recurring administration still starts manually",
+        "description": "Weekly updates, vendor checks, customer follow-ups, and reporting depend on someone remembering the next step."
+      },
+      {
+        "label": "Control",
+        "title": "Automation can move faster than policy",
+        "description": "A drafted quote or message is useful, but sending it without the right price, permission, or owner review creates risk."
+      }
+    ]
+  },
+  "buildingBlocks": {
+    "eyebrow": "Operational preparation across a small team",
+    "title": "What your small-business Work Agent can prepare",
+    "description": "The agent works across approved files in its workspace without replacing your systems of record.",
+    "items": [
+      {
+        "action": "Read",
+        "example": "Use approved requests, service details, schedules, and records.",
+        "result": "A grounded view of the current job."
+      },
+      {
+        "action": "Check",
+        "example": "Compare the request with prices, availability, policy, and history.",
+        "result": "Missing information and exceptions for staff review."
+      },
+      {
+        "action": "Prepare",
+        "example": "Draft responses, work packets, and handoff briefs.",
+        "result": "Editable materials for the responsible employee."
+      },
+      {
+        "action": "Summarize",
+        "example": "Group operational changes and unresolved decisions.",
+        "result": "A concise owner review with source links."
+      },
+      {
+        "action": "Repeat",
+        "example": "Save stable preparation steps and approval gates.",
+        "result": "A reusable routine that respects roles."
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Your operating rules remain authoritative",
+    "title": "Teach the Work Agent how your team handles a job",
+    "description": "Provide current service data, templates, roles, policies, and escalation rules for each assignment.",
+    "inputsLabel": "Define the working context",
+    "inputs": [
+      "Customer request and permitted history",
+      "Approved service and price information",
+      "Operating checklists and templates",
+      "Role and access definitions",
+      "Required handoff or report format"
+    ],
+    "controlsLabel": "Define the control points",
+    "controls": [
+      "What each role may access",
+      "Which exceptions require escalation",
+      "Who validates figures and availability",
+      "Who approves customer commitments",
+      "Which system writes require separate approval"
+    ]
+  },
+  "progression": {
+    "eyebrow": "From one handoff to a shared operating routine",
+    "title": "Start with a visible preparation task",
+    "description": "Expand only after the team can review the inputs, outputs, and approval path.",
+    "items": [
+      {
+        "label": "Single request",
+        "title": "Prepare one work packet",
+        "description": "Test accuracy against a familiar customer request."
+      },
+      {
+        "label": "Team handoff",
+        "title": "Reuse a reviewed method",
+        "description": "Share a controlled process with named reviewers."
+      },
+      {
+        "label": "Operating review",
+        "title": "Prepare a recurring brief",
+        "description": "Surface exceptions while owners retain decisions."
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "Team-controlled by design",
+    "title": "Automate preparation, not business authority",
+    "description": "The Work Agent can assemble cross-system context and draft next steps; authorized people make commitments and changes.",
+    "assistsTitle": "The Work Agent can prepare",
+    "assists": [
+      "Customer response drafts",
+      "Quote worksheets and assumptions",
+      "Operational handoff briefs",
+      "Weekly owner reviews",
+      "Exception and open-issue lists"
+    ],
+    "retainsTitle": "People retain",
+    "retains": [
+      "Prices, terms, and availability",
+      "Staffing and spending decisions",
+      "Policy exceptions",
+      "Customer and employee data obligations",
+      "Approval for sends, writes, and irreversible actions"
+    ],
+    "note": "Floatboat is a Work Agent working from permissions you configure. It does not replace business systems, authorized staff, or accountable owner judgment."
+  },
+  "workflows": {
+    "eyebrow": "Three assignments for a small-business Work Agent",
+    "title": "Prepare the work that crosses roles and systems",
+    "description": "The Work Agent organizes approved business information and stops before customer, financial, or policy commitments are made.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Turn a customer request into a work packet",
+        "job": "Combine the incoming request with approved service details, customer history, and missing questions.",
+        "flow": [
+          "Capture the request",
+          "Check business files",
+          "Identify gaps",
+          "Prepare response and work packet"
+        ],
+        "output": "A response draft, quote worksheet, assumptions, and delivery checklist.",
+        "boundary": "Staff approve price, availability, terms, recipient, and any customer commitment."
+      },
+      {
+        "number": "02",
+        "title": "Coordinate an operational handoff",
+        "job": "Bring files, decisions, responsibilities, deadlines, and unresolved issues into one handoff brief.",
+        "flow": [
+          "Select job context",
+          "Recover decisions",
+          "Assign proposed owners",
+          "Review the handoff"
+        ],
+        "output": "A handoff brief, file index, action register, and open-issue list.",
+        "boundary": "Managers confirm responsibilities, access, deadlines, and changes to the operating plan."
+      },
+      {
+        "number": "03",
+        "title": "Prepare a weekly owner review",
+        "job": "Summarize approved customer, operational, cash, staffing, and vendor updates around decisions that need attention.",
+        "flow": [
+          "Collect approved updates",
+          "Group changes",
+          "Surface exceptions",
+          "Draft the review"
+        ],
+        "output": "A concise operating brief with source links, exceptions, and decision prompts.",
+        "boundary": "The business owner validates figures and decides priorities, spending, staffing, and external action."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Work Agent questions for small businesses",
+    "description": "Practical answers about systems of record, staff permissions, customer promises, and owner approval.",
+    "items": [
+      {
+        "question": "Does Floatboat replace our CRM, accounting, or project system?",
+        "answer": "No. Those systems remain authoritative. Floatboat is a Work Agent that prepares cross-system assignments from the files and information your team is permitted to use."
+      },
+      {
+        "question": "Can it quote a customer automatically?",
+        "answer": "It can prepare a quote worksheet from approved pricing and scope information, but an authorized person should confirm price, availability, terms, and recipient before sending."
+      },
+      {
+        "question": "Can different staff members use the same workflow?",
+        "answer": "A proven method can be shared when the team has appropriate access, ownership, and approval rules. Shared does not mean every person should see every file."
+      },
+      {
+        "question": "How do we handle customer and employee information?",
+        "answer": "Follow applicable policy and obligations, minimize the data used, scope access by role, and review how each selected model and connector processes it."
+      },
+      {
+        "question": "Can it update external business systems?",
+        "answer": "That depends on the available integration and permissions. Treat writes, sends, financial changes, and irreversible actions as separate approval points."
+      },
+      {
+        "question": "What should a small business automate first?",
+        "answer": "Start with a repeated preparation task such as an intake packet or weekly owner brief, not a high-risk decision or unattended external action."
+      },
+      {
+        "question": "How is this different from a solopreneur workflow?",
+        "answer": "A small business page emphasizes handoffs, role-based access, shared review, and continuity between people; the solopreneur page emphasizes one person switching roles."
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Start with one repeated handoff",
+    "title": "Give one repeated handoff to a Work Agent",
+    "description": "Choose a customer or operating assignment with known inputs and a responsible reviewer. Let the Work Agent improve the handoff before you expand its role.",
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=use-cases-small-business&download_placement=final_cta"
+    },
+    "secondaryCta": {
+      "label": "See how the workspace supports the agent",
+      "href": "/agent-workspace"
+    }
+  }
 }

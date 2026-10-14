@@ -2,20 +2,20 @@
   "slug": "lawyers",
   "locale": "en",
   "seo": {
-    "title": "Agent Workspace for Lawyers: Legal Workflows | Floatboat",
-    "description": "An AI agent workspace for lawyers to organize matter files, prepare legal research, compare documents, build timelines, and create reviewable legal drafts.",
-    "keywords": ["AI for lawyers", "legal AI", "AI legal assistant", "AI legal research", "AI contract review", "legal document automation", "legal workflow automation"]
+    "title": "Work Agent for Lawyers: Research, Review and Drafting | Floatboat",
+    "description": "A Work Agent for lawyers that prepares matter files, legal research, document comparisons, timelines, and reviewable drafts from approved sources.",
+    "keywords": ["Work Agent for lawyers", "AI agent for lawyers", "legal AI assistant", "AI legal research", "AI contract review", "legal document preparation", "legal workflow agent"]
   },
   "breadcrumb": "Lawyers and legal teams",
   "hero": {
-    "eyebrow": "A configurable AI workspace for legal work",
-    "title": "An AI agent workspace for lawyers and legal teams",
-    "description": "Floatboat works around your matters: organizing files, tracing facts, comparing versions, preparing research, and turning source material into reviewable drafts. You provide the playbook, templates, and approval points.",
+    "eyebrow": "A Work Agent for legal preparation",
+    "title": "A Work Agent for lawyers and legal teams",
+    "description": "Give Floatboat a bounded legal assignment. It can organize matter files, trace facts, compare versions, prepare research, and turn approved sources into a reviewable draft while your team controls the playbook, templates, and approval points.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=hero" },
     "secondaryCta": { "label": "Explore sample workflows", "href": "#workflows" },
     "proof": ["Works from your approved files", "Outputs stay editable", "Human review before consequential action"],
     "preview": {
-      "label": "Illustrative workspace",
+      "label": "Illustrative Work Agent assignment",
       "matter": "Acquisition diligence · Working set",
       "inputs": ["Document request list", "Uploaded agreements", "Firm issue checklist"],
       "outputs": ["Document index", "Open-issues table", "Follow-up questions"],
@@ -34,12 +34,12 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "General capabilities, legal context",
-    "title": "Compose the workflow from practical building blocks.",
-    "description": "Floatboat does not prescribe one legal method. It applies reusable work operations to the materials and standards you select.",
+    "eyebrow": "What a legal Work Agent can prepare",
+    "title": "Assign the preparation steps around legal judgment.",
+    "description": "The Work Agent follows the sources, standards, and checkpoints you select; it does not prescribe a legal method or make the professional decision.",
     "items": [
       { "action": "Read", "example": "Work from an approved matter folder, agreements, notes, and prior drafts.", "result": "A grounded working set with less copy-and-paste." },
-      { "action": "Organize", "example": "Classify files, normalize names, and map materials to a request or issue list.", "result": "Document index, missing-items list, structured workspace." },
+      { "action": "Organize", "example": "Classify files, normalize names, and map materials to a request or issue list.", "result": "Document index, missing-items list, and a structured matter record." },
       { "action": "Extract", "example": "Pull parties, dates, obligations, defined terms, citations, and open questions.", "result": "Tables and source-linked notes ready for checking." },
       { "action": "Compare", "example": "Contrast versions, templates, or a document against your own checklist.", "result": "Change summary, deviations, and review queue." },
       { "action": "Create", "example": "Turn approved material into a timeline, meeting brief, client update, or first draft.", "result": "Editable deliverables rather than a disposable chat answer." },
@@ -47,9 +47,9 @@
     ]
   },
   "workflows": {
-    "eyebrow": "Three configurable starting points",
-    "title": "Examples that adapt to your practice—not fixed legal playbooks.",
-    "description": "Each workflow begins with materials and rules you control, produces an inspectable work product, and stops where professional judgment begins.",
+    "eyebrow": "Three assignments for a legal Work Agent",
+    "title": "Give it bounded preparation work, not legal authority.",
+    "description": "Each assignment begins with materials and rules you control, returns an inspectable work product, and stops where professional judgment begins.",
     "items": [
       {
         "number": "01 · Matter preparation",
@@ -65,7 +65,7 @@
         "job": "Compare versions or check a document against the template, checklist, and issue categories supplied by your team.",
         "flow": ["Add versions and checklist", "Extract key terms", "Surface changes", "Prepare issue table"],
         "output": "Version summary, extracted terms, deviations, and unresolved questions.",
-        "boundary": "The workspace surfaces differences and prepares questions; it does not make a final legal-risk determination."
+        "boundary": "The Work Agent surfaces differences and prepares questions; it does not make a final legal-risk determination."
       },
       {
         "number": "03 · Research preparation",
@@ -79,17 +79,17 @@
   },
   "customization": {
     "eyebrow": "Your method remains the method",
-    "title": "Bring the standards your team already trusts.",
-    "description": "Different firms, clients, matters, and jurisdictions require different workflows. Floatboat should follow your approved materials and return decisions to the right person.",
+    "title": "Teach the Work Agent the standards your team already trusts.",
+    "description": "Different firms, clients, matters, and jurisdictions require different methods. Configure Floatboat around approved materials and return every consequential decision to the right person.",
     "inputsLabel": "Define the working context",
     "inputs": ["Matter folder and permitted source files", "Firm templates and clause language", "Issue checklist or review playbook", "Naming rules and delivery format", "Jurisdiction, date, and research scope"],
     "controlsLabel": "Define the control points",
     "controls": ["What the agent may read or change", "Which steps require a question", "Who reviews each deliverable", "What must never be sent automatically", "What can be saved and reused"]
   },
   "progression": {
-    "eyebrow": "From one task to a repeatable system",
-    "title": "Start with one bounded assignment. Reuse only what proves useful.",
-    "description": "A workflow can mature without turning every legal task into unattended automation.",
+    "eyebrow": "From one assignment to a dependable routine",
+    "title": "Start with one bounded assignment. Teach the Work Agent only what proves useful.",
+    "description": "A Work Agent can reuse a proven method without turning legal work into unattended automation.",
     "items": [
       { "label": "Ad hoc", "title": "Prepare one deliverable", "description": "Organize a single working set and return a brief, comparison, timeline, or research packet for review." },
       { "label": "Saved workflow", "title": "Keep the successful method", "description": "Reuse the same inputs, naming rules, checklist, output structure, and approval points on the next matter." },
@@ -98,23 +98,23 @@
   },
   "boundaries": {
     "eyebrow": "Human-controlled by design",
-    "title": "Automate preparation, not professional responsibility.",
+    "title": "Let the Work Agent prepare the record—not assume professional responsibility.",
     "description": "The useful line is not legal versus non-legal work. It is the line between preparing an inspectable work product and making a consequential professional decision.",
     "assistsTitle": "Floatboat can help prepare",
     "assists": ["Matter indexes, chronologies, and source maps", "Version comparisons and extracted terms", "Meeting briefs, client-update drafts, and request lists", "Research packets, outlines, and editable first drafts", "Recurring status summaries from approved materials"],
     "retainsTitle": "Lawyers and legal teams retain",
     "retains": ["Legal opinions and interpretation", "Privilege and confidentiality decisions", "Risk, strategy, and negotiation judgment", "Citation and authority verification", "Approval for client communication, filing, or submission"],
-    "note": "Floatboat is a general-purpose agent workspace, not a law firm, legal research authority, or substitute for qualified legal counsel. Data handling depends on the models, tools, connectors, permissions, and organizational policies selected for each workspace."
+    "note": "Floatboat is a general-purpose Work Agent, not a law firm, legal research authority, or substitute for qualified legal counsel. It works inside a persistent workspace; data handling depends on the models, tools, connectors, permissions, and policies selected for that environment."
   },
   "faq": {
-    "title": "AI workspace questions for lawyers",
+    "title": "Work Agent questions for lawyers",
     "description": "The practical questions are about source material, review, confidentiality, and control—not promises of one-click legal work.",
     "items": [
-      { "question": "Is Floatboat legal AI or a law-practice management system?", "answer": "Floatboat is a general-purpose Agent Workspace. It can help legal professionals work with approved files, research materials, templates, and repeatable preparation steps, but it is not a legal authority, matter-management system, billing platform, or substitute for counsel." },
+      { "question": "Is Floatboat legal AI or a law-practice management system?", "answer": "Floatboat is a general-purpose Work Agent. It can prepare work from approved files, research materials, templates, and repeatable instructions, but it is not a legal authority, matter-management system, billing platform, or substitute for counsel." },
       { "question": "Can Floatboat review a contract?", "answer": "It can extract terms, compare versions, apply a checklist or template you provide, and prepare deviations and questions for review. A lawyer still determines legal meaning, risk, negotiation position, and whether any recommendation is appropriate." },
       { "question": "Can it do legal research without hallucinations?", "answer": "No AI system should be treated as incapable of error. Floatboat can help structure research, organize sources, and create a traceable packet, but every authority, quotation, jurisdictional assumption, and conclusion must be verified against authoritative sources." },
       { "question": "Does Floatboat come with a built-in law-firm playbook?", "answer": "The page examples are starting points, not prescribed legal methods. You choose the files, templates, checklists, terminology, output format, and approval steps appropriate to your firm, client, matter, and jurisdiction." },
-      { "question": "Can I use my own templates and checklists?", "answer": "Yes. A workspace can be organized around the materials and instructions you approve, so the agent prepares work in the structure your team expects instead of inventing a generic format." },
+      { "question": "Can I use my own templates and checklists?", "answer": "Yes. Give the Work Agent the materials, instructions, and output structure you approve. Its persistent workspace keeps those inputs connected to the assignment instead of forcing a generic legal format." },
       { "question": "How should privileged or confidential material be handled?", "answer": "Follow your firm's policies and client obligations before adding sensitive material. Review the data handling of every model, connector, and tool used in the workflow, scope access narrowly, and do not assume that local file access means every processing step remains on-device." },
       { "question": "Will Floatboat send client messages or file documents automatically?", "answer": "The recommended workflows keep consequential external actions behind explicit human approval. Whether a connector can perform an action is separate from whether your policy should permit it." },
       { "question": "Who is this page for?", "answer": "The examples are relevant to lawyers, in-house counsel, paralegals, legal operations teams, and other legal professionals who spend time preparing files, context, drafts, and repeatable work products." }
@@ -122,9 +122,9 @@
   },
   "finalCta": {
     "eyebrow": "Build from one real assignment",
-    "title": "Give the work around legal judgment a better workspace.",
-    "description": "Start with a bounded folder, a trusted template, and a deliverable you can review. Keep the useful process; keep the professional decision yours.",
+    "title": "Give your first legal preparation assignment to a Work Agent.",
+    "description": "Start with a bounded matter folder, a trusted template, and one deliverable you can review. Keep the useful method; keep the professional decision yours.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=final_cta" },
-    "secondaryCta": { "label": "Explore Agent Workspace", "href": "/agent-workspace" }
+    "secondaryCta": { "label": "See how the workspace supports the agent", "href": "/agent-workspace" }
   }
 }

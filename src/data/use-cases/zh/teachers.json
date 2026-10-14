@@ -2,10 +2,11 @@
   "slug": "teachers",
   "locale": "zh",
   "seo": {
-    "title": "教师 Agent Workspace：备课、课件与班级事务 | Floatboat",
-    "description": "面向教师与教研团队的 AI Agent Workspace，用于整理课程资料、准备教案和课件、起草班级沟通内容，并持续维护教师职业发展材料。",
+    "title": "教师 Work Agent：备课、课件与班级沟通 | Floatboat",
+    "description": "面向教师的 Work Agent，依据核准课程资料准备教案、课件、班级沟通内容和可核查的职业发展材料。",
     "keywords": [
-      "教师 AI",
+      "教师 Work Agent",
+      "教师 AI Agent",
       "AI 备课",
       "AI 课件制作",
       "教师工作效率",
@@ -15,9 +16,9 @@
   },
   "breadcrumb": "教师与教研团队",
   "hero": {
-    "eyebrow": "面向真实工作的可配置 AI 工作空间",
-    "title": "面向教师与教研团队的 AI Agent Workspace",
-    "description": "在一个 AI 工作空间中整理教学材料、制作课件包、准备班级沟通内容，并持续维护可核查的教师职业材料。",
+    "eyebrow": "处理教学准备工作的 Work Agent",
+    "title": "面向教师与教研团队的 Work Agent",
+    "description": "把一项教学准备任务交给 Floatboat：整理核准资料、制作配套教案与课件、起草班级沟通内容并维护证据记录；所有教学决定仍由教育者作出。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-teachers&download_placement=hero"
@@ -32,8 +33,8 @@
       "重要行动前保留人工审批"
     ],
     "preview": {
-      "label": "示意工作区",
-      "matter": "八年级历史 · 单元工作区",
+      "label": "Work Agent 任务示例",
+      "matter": "八年级历史 · 课件包任务",
       "inputs": [
         "课程目标",
         "参考资料",
@@ -75,46 +76,46 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "通用能力，职业语境",
-    "title": "用可组合的工作能力搭出自己的流程。",
-    "description": "Floatboat 不规定唯一方法。它按照你选择的材料、标准和审批点执行。",
+    "eyebrow": "教学 Work Agent 可以准备什么",
+    "title": "把教学周围的制作工作交给 Work Agent。",
+    "description": "Work Agent 遵循课程标准、核准资料、学校格式与审核点，不替教师决定教学法或学生支持方案。",
     "items": [
       {
         "action": "阅读",
-        "example": "从核准文件、记录和资料开始，而不是凭空回答。",
-        "result": "得到有依据的工作集。"
+        "example": "读取本单元核准的课程目标、来源材料、历史教案和学校模板。",
+        "result": "形成贴合真实班级情境的教学任务简报。"
       },
       {
         "action": "整理",
-        "example": "归类资料、统一名称并找出缺失项。",
-        "result": "形成可导航的项目结构。"
+        "example": "按照教学目标和授课顺序组织阅读材料、活动、课件与评价内容。",
+        "result": "把散落资源整理成连贯的单元材料包。"
       },
       {
         "action": "提取",
-        "example": "提取事实、日期、数据、主张与待确认问题。",
-        "result": "得到便于核查的结构化内容。"
+        "example": "识别学习目标、核心概念、词汇、日期和差异化教学约束。",
+        "result": "得到教师可逐项核验的备课清单。"
       },
       {
         "action": "比较",
-        "example": "对比版本、标准、时间段或备选方案。",
-        "result": "形成变化与差异清单。"
+        "example": "对照课程标准、评价量规、学校格式和历史材料检查教案初稿。",
+        "result": "呈现缺口、重复内容与需要确认的对齐问题。"
       },
       {
         "action": "创建",
-        "example": "把核准材料转成简报、提纲、表格或初稿。",
-        "result": "得到可编辑的交付物。"
+        "example": "配套准备教案、课件、活动单、学生讲义与教师备注。",
+        "result": "得到可由教师继续审阅和修改的课堂材料。"
       },
       {
         "action": "复用",
-        "example": "保存已验证的步骤、格式与审批点。",
-        "result": "形成可重复使用的流程。"
+        "example": "在更换单元来源和班级要求后，复用已批准的课件包结构。",
+        "result": "保持备课一致性，又不把不同班级做成同一套教案。"
       }
     ]
   },
   "workflows": {
-    "eyebrow": "三个可配置起点",
-    "title": "从真实任务出发，而不是套用固定职业剧本。",
-    "description": "每条流程都从你控制的材料和规则开始，交付可检查的成果，并在专业判断前停下。",
+    "eyebrow": "可以交给教学 Work Agent 的三项任务",
+    "title": "把准备工作交给 Agent，把课堂决定留给教师。",
+    "description": "每项任务都从你控制的材料和规则开始，返回可检查的教学资产，并在教育判断前停下。",
     "items": [
       {
         "number": "01",
@@ -159,8 +160,8 @@
   },
   "customization": {
     "eyebrow": "你的方法仍然是方法",
-    "title": "带上团队已经信任的标准。",
-    "description": "不同组织与任务需要不同输入、输出和控制点。页面示例只是起点。",
+    "title": "教会 Work Agent 遵循课程与学校标准。",
+    "description": "为具体班级或学校配置输入、格式、术语与审批点；页面示例不是规定的教学方法。",
     "inputsLabel": "定义工作背景",
     "inputs": [
       "核准的文件与数据来源",
@@ -180,55 +181,55 @@
   },
   "progression": {
     "eyebrow": "从一次任务到可复用系统",
-    "title": "先完成一个边界清晰的任务，再保留真正有用的方法。",
-    "description": "流程可以逐步成熟，不必把专业工作变成无人值守的自动化。",
+    "title": "先完成一个边界清晰的任务，只教 Work Agent 复用真正有用的方法。",
+    "description": "Work Agent 可以复用经过验证的准备方法，但不会把教学变成无人值守的自动化。",
     "items": [
       {
         "label": "临时执行",
         "title": "完成一项交付",
-        "description": "针对当前资料生成一份可审阅的简报、清单、比较或初稿。"
+        "description": "先用熟悉的单元制作一套课件包，再逐项核查目标、来源、活动和面向学生的说明。"
       },
       {
         "label": "保存流程",
         "title": "复用有效方法",
-        "description": "保留输入、规则、格式和审批点，用于下一次相似任务。"
+        "description": "下一单元复用学校格式、课程检查与审阅顺序，同时替换具体教学内容。"
       },
       {
         "label": "团队共享",
         "title": "建立受控起点",
-        "description": "团队从同一流程开始，但每个人仍对背景与判断负责。"
+        "description": "教研组共享经过批准的备课惯例，每位教师仍按班级情况调整材料并对使用结果负责。"
       }
     ]
   },
   "boundaries": {
     "eyebrow": "人工控制",
-    "title": "自动化准备工作，不外包专业责任。",
-    "description": "合理边界不是专业与非专业，而是准备可核查成果与做出后果重大决定之间的界线。",
+    "title": "让 Work Agent 准备材料，不替教师作出教学决定。",
+    "description": "Work Agent 可以组织和改编教学材料，但内容准确性、教学法、差异化支持、学生安全以及最终发放内容均由教育者决定。",
     "assistsTitle": "Floatboat 可以协助准备",
     "assists": [
-      "资料索引、背景简报与来源地图",
-      "比较表、提取结果与开放问题",
-      "会议材料、状态摘要与沟通初稿",
-      "带依据的提纲、报告和可编辑初稿",
-      "基于核准资料的周期更新"
+      "与课程目标对应的教案提纲",
+      "课件、讲义、活动单与教师备注初稿",
+      "班级通知、家长沟通与会议记录草稿",
+      "教师职业材料的证据索引与叙述初稿",
+      "基于核准资料复用的单元材料包结构"
     ],
     "retainsTitle": "教师与教研团队仍然负责",
     "retains": [
-      "专业解释与最终判断",
-      "事实、数据和来源核验",
-      "隐私、权限与敏感信息处理",
-      "策略、优先级与资源决策",
-      "所有对外发布、提交或重要行动的审批"
+      "课程准确性与教学法选择",
+      "针对个别学生的差异化与支持安排",
+      "学生数据、隐私与安全决定",
+      "评价、评分与职业材料中的专业主张",
+      "材料或消息送达学生和家长前的批准"
     ],
-    "note": "Floatboat 是通用 Agent Workspace，不替代专业资质、法定责任或组织治理。实际数据处理取决于工作区选用的模型、工具、连接器、权限与政策。"
+    "note": "Floatboat 是通用 Work Agent，不是教务系统，也不替代教育者。它在持续工作空间中执行任务；实际数据处理取决于该环境选用的模型、工具、连接器、权限与学校政策。"
   },
   "faq": {
-    "title": "教师与教研团队使用 AI 工作空间的常见问题",
+    "title": "教师与教研团队使用 Work Agent 的常见问题",
     "description": "教师更需要确认它是否适合真实备课、如何保护学生信息，以及课堂决定是否始终留在教育者手中。",
     "items": [
       {
         "question": "Floatboat 是教务系统，还是 AI 备课工具？",
-        "answer": "都不是。它是把文件、指令、模型与工具放在同一任务中的 Agent Workspace。教务与班级记录仍由原系统管理，Floatboat 负责准备可以继续编辑的教学成果。"
+        "answer": "都不是。Floatboat 是 Work Agent，会使用任务获准的文件、指令、模型与工具准备可编辑教学成果；教务与班级记录仍由原系统管理。"
       },
       {
         "question": "它可以决定教什么、怎么教吗？",
@@ -258,14 +259,14 @@
   },
   "finalCta": {
     "eyebrow": "从一项真实任务开始",
-    "title": "给教师与教研团队的重复准备工作一个更好的工作空间。",
+    "title": "把第一项教学准备任务交给 Work Agent。",
     "description": "带上一个即将开始的单元、你信任的资料和学校要求的格式，先完成一套仍然保留个人教学方法的材料。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-teachers&download_placement=final_cta"
     },
     "secondaryCta": {
-      "label": "了解 Agent Workspace",
+      "label": "了解工作空间如何支持 Agent",
       "href": "/zh/agent-workspace"
     }
   }
