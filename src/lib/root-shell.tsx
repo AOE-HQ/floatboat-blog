@@ -6,6 +6,7 @@ import { OpenBlogProvider } from "@openblog/components";
 import { absoluteUrl, site } from "@/config/site";
 import type { BlogLocale } from "@/config/i18n";
 import { AttributionWebCollector } from "@/components/analytics/attribution-web-collector";
+import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { config, getThemeColorModeClass } from "@/lib/openblog-config";
 
 import "@/app/globals.css";
@@ -46,6 +47,7 @@ export function RootShell({
       className={`${inter.variable} ${getThemeColorModeClass()} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
+        <GoogleAnalytics />
         <OpenBlogProvider config={config} localePrefix={localePrefix}>
           <AttributionWebCollector />
           {children}
