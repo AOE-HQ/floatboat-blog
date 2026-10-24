@@ -164,14 +164,15 @@ export function SkillPublisherPage({ locale }: { locale: SkillLocale }) {
         <span aria-current="page">{t.publisher}</span>
       </nav>
 
-      <MarketingHero eyebrow={t.eyebrow} title={t.title} description={t.description} />
-      <div className="mx-auto max-w-7xl px-5 pb-16 text-center sm:px-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{publisherSkills.length} {t.count}</p>
-        <p className="mt-8 text-sm font-semibold text-[var(--ob-color-muted)]">{t.jump}</p>
-        <div className="mt-3 flex flex-wrap justify-center gap-2">
-          {groups.map((group) => <a key={group.id} href={`#${group.id}`} className="rounded-full border border-black/10 bg-white/60 px-4 py-2 text-sm transition hover:bg-white">{t[group.id].title}</a>)}
+      <MarketingHero eyebrow={t.eyebrow} title={t.title} description={t.description}>
+        <div className="text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{publisherSkills.length} {t.count}</p>
+          <p className="mt-8 text-sm font-semibold text-[var(--ob-color-muted)]">{t.jump}</p>
+          <div className="mt-3 flex flex-wrap justify-center gap-2">
+            {groups.map((group) => <a key={group.id} href={`#${group.id}`} className="rounded-full border border-black/10 bg-white/60 px-4 py-2 text-sm transition hover:bg-white">{t[group.id].title}</a>)}
+          </div>
         </div>
-      </div>
+      </MarketingHero>
 
       <section className="border-y border-black/[0.07] bg-white/35 px-5 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-7xl">
