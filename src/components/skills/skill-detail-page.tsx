@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
+import { HowSection } from "@/components/marketing/how-section";
+import { UseCasesSection } from "@/components/marketing/use-cases-section";
 import { skillPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
 
 const labels = {
@@ -18,12 +20,9 @@ const labels = {
     kindValue: "Independent meta-skill",
     install: "Upstream installation",
     installNote: "Skills CLI command from the publisher. This is not a Floatboat installation command.",
-    when: "When to use it",
-    notWhen: "When to skip it",
     example: "A realistic request",
     request: "Ask the agent",
     expected: "A useful result",
-    workflow: "How discovery works",
     commands: "Upstream commands",
     commandsNote: "These examples describe the open Skills CLI, not features promised by Floatboat.",
     guideTitle: "Find the right skill, then decide whether to use it",
@@ -48,12 +47,9 @@ const labels = {
     kindValue: "独立发布的元 Skill",
     install: "上游安装方式",
     installNote: "这是发布方使用的 Skills CLI 命令，并非 Floatboat 的安装命令。",
-    when: "什么时候适合用",
-    notWhen: "什么时候不必用",
     example: "一个具体请求",
     request: "向 Agent 提问",
     expected: "应该得到什么",
-    workflow: "它如何完成发现",
     commands: "上游命令",
     commandsNote: "以下示例说明开放的 Skills CLI，不代表 Floatboat 已提供这些命令。",
     guideTitle: "找到 Skill，再判断是否值得使用",
@@ -130,10 +126,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
             </div>
           </aside>
         </div>
-        <div className="mt-16 grid gap-8 border-t border-black/10 pt-10 md:grid-cols-2">
-          <div><h2 className="font-serif text-2xl">{t.when}</h2><ul className="mt-5 space-y-4">{skill.scenarios.map((item) => <li key={item.title.en} className="border-l-2 border-[var(--ob-color-accent)] pl-4"><strong className="block">{item.title[locale]}</strong><span className="mt-1 block text-sm leading-6 text-[var(--ob-color-text-subtle)]">{item.body[locale]}</span></li>)}</ul></div>
-          <div><h2 className="font-serif text-2xl">{t.notWhen}</h2><ul className="mt-5 space-y-4">{skill.notFor.map((item) => <li key={item.en} className="border-l-2 border-black/20 pl-4 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{item[locale]}</li>)}</ul></div>
-        </div>
+        <UseCasesSection title={skill.sectionTitles.useCases[locale]} exclusionsTitle={skill.sectionTitles.exclusions[locale]} cases={skill.scenarios.map((item) => ({ title: item.title[locale], body: item.body[locale] }))} exclusions={skill.notFor.map((item) => item[locale])} />
         <div className="mt-16 grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
           <div><h2 className="font-serif text-2xl">{t.example}</h2><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{skill.summary[locale]}</p></div>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -141,10 +134,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
             <div className="rounded-2xl border border-black/10 bg-white/70 p-6"><p className="text-xs font-semibold uppercase tracking-wider text-[var(--ob-color-muted)]">{t.expected}</p><p className="mt-4 leading-7">{skill.example.result[locale]}</p></div>
           </div>
         </div>
-        <div className="mt-16">
-          <SectionTitle number={t.skill} title={t.workflow} />
-          <ol className="grid gap-5 md:grid-cols-3">{skill.steps.map((step, index) => <li key={step.title.en} className="rounded-2xl border border-black/10 bg-white/50 p-6"><span className="text-xs font-semibold text-[var(--ob-color-accent)]">0{index + 1}</span><h3 className="mt-4 font-serif text-xl">{step.title[locale]}</h3><p className="mt-3 text-sm leading-6 text-[var(--ob-color-text-subtle)]">{step.body[locale]}</p></li>)}</ol>
-        </div>
+        <HowSection eyebrow={t.skill} title={skill.sectionTitles.how[locale]} steps={skill.steps.map((step) => ({ title: step.title[locale], body: step.body[locale] }))} />
       </section>
 
       <section id="guide" className="border-y border-black/[0.07] bg-white/35 py-16 sm:py-20">

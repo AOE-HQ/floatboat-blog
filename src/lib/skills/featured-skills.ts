@@ -24,6 +24,11 @@ export type FeaturedSkill = {
   };
   summary: LocalizedText;
   upstreamInstall: string;
+  sectionTitles: {
+    useCases: LocalizedText;
+    exclusions: LocalizedText;
+    how: LocalizedText;
+  };
   scenarios: Array<{ title: LocalizedText; body: LocalizedText }>;
   notFor: LocalizedText[];
   seoSections: Array<{ title: LocalizedText; body: LocalizedText }>;

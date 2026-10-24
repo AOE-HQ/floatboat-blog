@@ -23,6 +23,11 @@
       "zh": "当你知道要完成什么工作，却不知道该找哪一个 Skill 时，可以使用 Vercel Labs 的 Find Skills。它先识别任务和领域，再查看 skills.sh 榜单或进一步搜索，最后把候选项交给你选择。"
     },
     "upstreamInstall": "npx skills add vercel-labs/skills --skill find-skills",
+    "sectionTitles": {
+      "useCases": { "en": "When Find Skills is useful", "zh": "Find Skills 适合哪些任务" },
+      "exclusions": { "en": "What Find Skills cannot replace", "zh": "Find Skills 不能替代什么" },
+      "how": { "en": "How Find Skills narrows the search", "zh": "Find Skills 如何缩小候选范围" }
+    },
     "scenarios": [
       {
         "title": { "en": "A task outside your usual toolkit", "zh": "遇到陌生领域的任务" },
