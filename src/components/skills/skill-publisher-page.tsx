@@ -59,6 +59,7 @@ const copy = {
     ctaTitle: "Keep the task and its review in one place",
     ctaDescription: "Use this directory to find the right upstream Skill. Bring the actual assignment, source files, and decisions into Floatboat when you are ready to work.",
     download: "Download Floatboat",
+    otherPublisher: "Explore morluto Skills",
   },
   zh: {
     home: "首页",
@@ -103,6 +104,7 @@ const copy = {
     ctaTitle: "把任务与审阅放在一起推进",
     ctaDescription: "先通过目录找到合适的上游 Skill。准备执行时，再把具体任务、源文件和关键决定放进 Floatboat。",
     download: "下载 Floatboat",
+    otherPublisher: "查看 morluto 的 Skills",
   },
 } as const;
 
@@ -216,6 +218,7 @@ export function SkillPublisherPage({ locale }: { locale: SkillLocale }) {
           <div className="mt-8 flex flex-wrap gap-3">
             {t.repositories.map((repository) => <a key={repository.href} href={repository.href} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full border border-black/10 bg-white/70 px-5 text-sm font-semibold hover:bg-white">{repository.label} ↗</a>)}
           </div>
+          <Link href={skillPublisherPath(locale, "morluto")} className="mt-8 inline-flex text-sm font-semibold underline underline-offset-4">{t.otherPublisher} →</Link>
         </div>
       </section>
 

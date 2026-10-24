@@ -60,6 +60,20 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /combostore/morluto
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/morluto
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /use-cases
             pathType: Prefix
             backend:
@@ -183,6 +197,20 @@ spec:
                 port:
                   number: 80
           - path: /zh/combostore/vercel-labs
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/morluto
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/morluto
             pathType: Prefix
             backend:
               service:

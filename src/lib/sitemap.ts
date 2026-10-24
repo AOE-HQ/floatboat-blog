@@ -30,6 +30,8 @@ export function buildCombinedSitemapXml(): string {
   const skillPages = [
     `https://floatboat.ai${skillPublisherPath("en", "vercel-labs")}`,
     `https://floatboat.ai${skillPublisherPath("zh", "vercel-labs")}`,
+      `https://floatboat.ai${skillPublisherPath("en", "morluto")}`,
+      `https://floatboat.ai${skillPublisherPath("zh", "morluto")}`,
     ...FEATURED_SKILLS.flatMap(({ authorHandle, slug }) => [
       `https://floatboat.ai${skillPath("en", authorHandle, slug)}`,
       `https://floatboat.ai${skillPath("zh", authorHandle, slug)}`,
