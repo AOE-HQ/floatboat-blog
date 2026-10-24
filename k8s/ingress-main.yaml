@@ -53,21 +53,7 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /combostore/kkkkhazix/human-writing
-            pathType: Exact
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /zh/combostore/vercel-labs/find-skills
-            pathType: Exact
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
-          - path: /zh/combostore/kkkkhazix/human-writing
             pathType: Exact
             backend:
               service:
@@ -196,21 +182,7 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /combostore/kkkkhazix/human-writing
-            pathType: Exact
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /zh/combostore/vercel-labs/find-skills
-            pathType: Exact
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
-          - path: /zh/combostore/kkkkhazix/human-writing
             pathType: Exact
             backend:
               service:

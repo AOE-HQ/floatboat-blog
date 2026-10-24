@@ -59,52 +59,5 @@
       { "question": { "en": "Where is the original skill?", "zh": "原始 Skill 在哪里？" }, "answer": { "en": "The source is the find-skills SKILL.md in Vercel Labs' public skills repository, linked on this page.", "zh": "原始文件位于 Vercel Labs 公开 skills 仓库的 find-skills/SKILL.md，本页提供来源链接。" } },
       { "question": { "en": "Does this page mean Vercel Labs endorses Floatboat?", "zh": "这个页面意味着 Vercel Labs 为 Floatboat 背书吗？" }, "answer": { "en": "No. Find Skills is attributed to its original publisher. This is an independent guide to the community skill.", "zh": "不意味着。本页注明了原发布者，是对社区 Skill 的独立介绍。" } }
     ]
-  },
-  {
-    "slug": "human-writing",
-    "authorHandle": "kkkkhazix",
-    "name": "Human Writing",
-    "publisher": "KKKKhazix",
-    "publisherType": "Person",
-    "sourceUrl": "https://github.com/KKKKhazix/human-writing/blob/main/human-writing/SKILL.md",
-    "repositoryUrl": "https://github.com/KKKKhazix/human-writing",
-    "category": { "en": "Chinese writing", "zh": "中文写作" },
-    "seo": {
-      "title": { "en": "Human Writing Skill: Natural Chinese Drafting and Revision", "zh": "Human Writing Skill：自然中文写作与改稿指南" },
-      "description": { "en": "Explore the Human Writing skill for Chinese articles and revisions: source checks, natural prose, workflow, limitations, and original project links.", "zh": "了解 Human Writing 中文写作 Skill 的适用场景、材料核验、写作与改稿流程、使用限制和原始项目。" },
-      "keywords": { "en": ["human-writing skill", "Chinese writing agent skill", "natural Chinese AI writing"], "zh": ["Human Writing Skill", "活人感写作 Skill", "中文写作 Skill"] }
-    },
-    "hero": {
-      "eyebrow": { "en": "Community Skill · Chinese writing", "zh": "社区 Skill · 中文写作" },
-      "title": { "en": "Make Chinese writing sound like someone who knows the subject.", "zh": "让中文稿件像一个真正了解事情的人写的。" },
-      "description": { "en": "Human Writing is a Chinese-language writing and revision skill. It asks for concrete material before expanding a factual article, then edits away empty rhetoric and formulaic AI phrasing.", "zh": "Human Writing 面向中文创作与改稿。它要求事实稿先有具体材料，再决定篇幅；成稿时清理空话、机构腔和常见的模型套话。" }
-    },
-    "summary": {
-      "en": "The original skill covers long-form Chinese posts, articles, commentary, explainers, scripts, and fiction. Its distinctive rule is not merely ‘write more naturally’: it separates factual and fictional work, asks whether the available material supports the requested length, and routes different formats to specific references before revision.",
-      "zh": "原始 Skill 覆盖中文长帖、文章、评论、科普、口播与虚构写作。它的重点不只是“写得自然”：先区分现实与虚构任务，判断材料是否撑得起目标篇幅，再按文体读取对应参考规则，最后进行改稿。"
-    },
-    "scenarios": [
-      { "title": { "en": "A draft full of generic claims", "zh": "初稿都是抽象判断" }, "body": { "en": "Give the skill the source notes and ask it to anchor every major section in an actual event, observation, or verifiable source.", "zh": "提供原始笔记，让主要段落有实际事件、观察或可核验资料支撑。" } },
-      { "title": { "en": "A long article with too little evidence", "zh": "篇幅要求超过材料承载力" }, "body": { "en": "Ask it to flag missing factual material and narrow the assignment rather than fill space with repeated explanations.", "zh": "让它指出事实材料缺口，必要时缩小题目，而不是反复解释同一个观点来凑字数。" } },
-      { "title": { "en": "Chinese prose that feels templated", "zh": "中文表达像统一模板" }, "body": { "en": "Use its revision pass to inspect pacing, phrasing, and the speaker's point of view without fabricating a personal experience.", "zh": "通过改稿检查节奏、句式和说话位置，但不能虚构作者的亲历。" } }
-    ],
-    "example": {
-      "prompt": { "en": "Revise this Chinese commentary using only the interview notes and links below. Mark claims that need checking, keep the speaker's perspective, and shorten the piece if the material cannot support 1,500 Chinese characters.", "zh": "请只依据下面的访谈笔记和链接修改这篇评论。标出待核实的事实，保留作者的判断；如果材料撑不起 1500 字，就缩短，不要补编案例。" },
-      "result": { "en": "The useful outcome is a more specific Chinese draft plus a visible list of missing or unverified material—not a longer article produced by repeating the same point.", "zh": "有价值的结果是更具体的中文稿和明确的材料缺口，而不是把同一观点换几种说法扩写成长文。" }
-    },
-    "steps": [
-      { "title": { "en": "Set the factual boundary", "zh": "划清事实边界" }, "body": { "en": "Separate verified facts and first-hand notes from fictional material the task explicitly allows.", "zh": "分清已核实事实、用户亲历材料，以及任务明确允许虚构的内容。" } },
-      { "title": { "en": "Choose the right form", "zh": "按文体处理" }, "body": { "en": "Use the skill's format-specific references for a post, article, tutorial, script, or story before drafting.", "zh": "根据长帖、文章、教程、口播或故事等不同形式读取对应参考规则。" } },
-      { "title": { "en": "Draft, check, revise", "zh": "写作、核查、改稿" }, "body": { "en": "Build around concrete material, check claims and quotations, then remove filler and repetitive AI-style phrasing.", "zh": "围绕具体材料成稿，核对事实与引语，最后删除空话和重复的模型化表达。" } }
-    ],
-    "outputs": { "en": ["A Chinese draft or revised manuscript", "Explicit gaps in facts or source material", "A shorter scope when the evidence cannot support the requested length"], "zh": ["中文初稿或修订稿", "明确标出的事实与材料缺口", "材料不足时缩小后的写作范围"] },
-    "checks": { "en": ["This skill is designed for Chinese writing; the English page explains it but does not imply English-language output quality.", "For nonfiction, provide real notes or verifiable sources and review the final claims.", "Its stylistic rules may be too restrictive for a branded or technical house style."], "zh": ["这是一款中文写作 Skill，英文介绍页不代表它擅长英文创作。", "非虚构写作要提供真实笔记或可核验来源，并复核成稿事实。", "它的句式限制可能不适合某些品牌或技术文体，应按任务取舍。"] },
-    "faq": [
-      { "question": { "en": "What is Human Writing?", "zh": "Human Writing 是什么？" }, "answer": { "en": "It is an independently published skill for drafting and revising natural Chinese writing across several formats.", "zh": "它是独立发布的中文创作与改稿 Skill，覆盖多种文体。" } },
-      { "question": { "en": "Does it work for English articles?", "zh": "它适合写英文文章吗？" }, "answer": { "en": "Its source instructions focus on Chinese-language writing. This page does not claim it has been designed or evaluated for English prose.", "zh": "原始说明聚焦中文写作，本页不宣称它专门针对英文文章设计或验证。" } },
-      { "question": { "en": "Will it invent examples to make a draft longer?", "zh": "材料不够时会编例子凑篇幅吗？" }, "answer": { "en": "The source explicitly rejects invented factual examples and repetition as substitutes for evidence in nonfiction. You should still review the output.", "zh": "原始 Skill 明确反对在非虚构稿中用编造案例或重复解释代替材料，但成稿仍需人工复核。" } },
-      { "question": { "en": "Can I use it to revise an existing draft?", "zh": "可以用它修改已有稿件吗？" }, "answer": { "en": "Yes. The skill covers revision as well as drafting; provide the draft, source material, intended audience, and any style constraints.", "zh": "可以。它同时覆盖创作和改稿；提供原稿、来源材料、目标读者与文风约束会更有帮助。" } },
-      { "question": { "en": "Is this a Floatboat-created skill?", "zh": "这是 Floatboat 创作的 Skill 吗？" }, "answer": { "en": "No. It is credited to its original publisher, KKKKhazix. This page is an independent guide, with a link to the original project.", "zh": "不是。原作者是 KKKKhazix。本页为独立介绍，并链接至原始项目。" } }
-    ]
   }
 ]

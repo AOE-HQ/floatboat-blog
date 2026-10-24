@@ -40,7 +40,6 @@ const FOOTER_GROUPS: Array<{ en: string; zh: string; links: FooterLink[] }> = [
       { en: "Models", zh: "模型", path: "/models" },
       { en: "Combo Store", zh: "Combo 商店", href: `${FB_SITE}/combostore`, zhHref: `${FB_SITE}/zh/combostore` },
       { en: "Find Skills", zh: "查找 Skills", path: "/combostore/vercel-labs/find-skills" },
-      { en: "Human Writing Skill", zh: "活人感写作 Skill", path: "/combostore/kkkkhazix/human-writing" },
       { en: "Connectors", zh: "连接器", href: `${FB_SITE}/connectors`, zhHref: `${FB_SITE}/zh/connectors` },
       { en: "Skills Marketplace", zh: "Skills Marketplace", href: `${FB_SITE}/skills-marketplace`, zhHref: `${FB_SITE}/zh/skills-marketplace` },
     ],
