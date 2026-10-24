@@ -59,5 +59,9 @@ export function getFeaturedSkill(author: string, slug: string): FeaturedSkill | 
 }
 
 export function skillPath(locale: SkillLocale, author: string, slug: string): string {
-  return `${locale === "zh" ? "/zh" : ""}/combostore/${author}/${slug}`;
+  return `${skillPublisherPath(locale, author)}/${slug}`;
+}
+
+export function skillPublisherPath(locale: SkillLocale, author: string): string {
+  return `${locale === "zh" ? "/zh" : ""}/combostore/${author}`;
 }

@@ -5,7 +5,7 @@ import { FinalCta } from "@/components/final-cta";
 import { HowSection } from "@/components/marketing/how-section";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { UseCasesSection } from "@/components/marketing/use-cases-section";
-import { skillPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
+import { skillPath, skillPublisherPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
 
 const labels = {
   en: {
@@ -69,6 +69,13 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
   const isZh = locale === "zh";
   const download = `https://floatboat.ai${isZh ? "/zh" : ""}/download/success?from=skill-${skill.slug}&download_placement=skill_detail`;
   const canonical = `https://floatboat.ai${skillPath(locale, skill.authorHandle, skill.slug)}`;
+  const publisherPath = skillPublisherPath(locale, skill.authorHandle);
+  const breadcrumbs = [
+    { name: t.home, url: `https://floatboat.ai${isZh ? "/zh" : "/"}` },
+    { name: t.store, url: `https://floatboat.ai${isZh ? "/zh" : ""}/combostore` },
+    { name: skill.publisher, url: `https://floatboat.ai${publisherPath}` },
+    { name: skill.name, url: canonical },
+  ];
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -81,6 +88,15 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       url: skill.sourceUrl,
       creator: { "@type": skill.publisherType, name: skill.publisher },
     },
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: breadcrumbs.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        item: item.url,
+      })),
+    },
   };
 
   return (
@@ -89,6 +105,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
         <Link href={isZh ? "/zh" : "/"}>{t.home}</Link><span className="mx-2">/</span>
         <a href={`https://floatboat.ai${isZh ? "/zh" : ""}/combostore`}>{t.store}</a><span className="mx-2">/</span>
+        <Link href={publisherPath}>{skill.publisher}</Link><span className="mx-2">/</span>
         <span aria-current="page">{skill.name}</span>
       </nav>
 
