@@ -257,9 +257,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项财务准备任务交给 Work Agent。",
-    "description": "从一个已关账期间或一家研究公司开始，在复用流程前让每个数字都保留来源、单位、日期与假设。",
+    "eyebrow": "保留数字的来路",
+    "title": "让每个数字都带着来源和假设。",
+    "description": "先选一个已关账期间或一家研究公司；复用分析前，核对日期、单位、来源与假设。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-financial-analysts&download_placement=final_cta"

@@ -121,9 +121,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Build from one real assignment",
-    "title": "Give your first legal preparation assignment to a Work Agent.",
-    "description": "Start with a bounded matter folder, a trusted template, and one deliverable you can review. Keep the useful method; keep the professional decision yours.",
+    "eyebrow": "Preparation, not legal judgment",
+    "title": "Prepare the matter; keep the legal call yours.",
+    "description": "Use a bounded matter folder and a trusted template to prepare one reviewable document. A qualified professional remains responsible for the legal conclusions.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=final_cta" },
     "secondaryCta": { "label": "See how the workspace supports the agent", "href": "/agent-workspace" }
   }

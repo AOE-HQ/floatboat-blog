@@ -251,9 +251,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一份源内容开始",
-    "title": "把下一次发布交给创作者 Work Agent",
-    "description": "带上一份已完成或接近完成的作品及其背景素材。让 Work Agent 准备下一版内容与发布材料，同时保留你的来源和编辑权。",
+    "eyebrow": "从原作走向发布",
+    "title": "把一份作品整理成下一次发布所需的材料。",
+    "description": "带上原作和背景素材，检查新稿、说明文字与发布材料，同时保留自己的编辑判断。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-creators&download_placement=final_cta"

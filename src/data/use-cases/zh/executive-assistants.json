@@ -257,9 +257,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项管理支持任务交给 Work Agent。",
-    "description": "从一场固定会议和真实来源材料开始，准备能节省时间、但不会替任何人作出承诺的 Brief。",
+    "eyebrow": "下一场会议之前",
+    "title": "先把会议简报准备到可以审阅的状态。",
+    "description": "用议程与真实资料准备 Brief；对外承诺和发送决定仍由人作出。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-executive-assistants&download_placement=final_cta"

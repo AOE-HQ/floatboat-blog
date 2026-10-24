@@ -257,9 +257,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项活动准备任务交给 Work Agent。",
-    "description": "从一个已批准 Brief 和一份源素材开始，适配真正重要的渠道，同时保留主张、反馈与效果问题的来源。",
+    "eyebrow": "从核准 Brief 到活动素材",
+    "title": "用已批准的资料准备下一轮活动素材。",
+    "description": "从一份核准 Brief 和源素材出发，准备不同渠道的版本；逐条核对主张，并保留反馈来源。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-marketers&download_placement=final_cta"

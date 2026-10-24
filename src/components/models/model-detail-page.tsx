@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { FinalCta } from "@/components/final-cta";
 
 import { ModelPickerDemo } from "./model-picker-demo";
 import {
@@ -423,21 +424,13 @@ export function ModelDetailPage({
         </div>
       </section>
 
-      <section className="px-5 pb-20 sm:px-8">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-[#24221f] px-6 py-14 text-center text-white sm:px-12 sm:py-20">
-          <h2 className="font-serif text-4xl tracking-tight sm:text-6xl">
-            {localize(model.finalCta.title, locale)}
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/65">
-            {localize(model.finalCta.description, locale)}
-          </p>
-          <div className="mt-8">
-            <Cta href={download} primary>
-              {isZh ? "下载 Floatboat" : "Download Floatboat"}
-            </Cta>
-          </div>
-        </div>
-      </section>
+      <FinalCta
+        title={localize(model.finalCta.title, locale)}
+        description={localize(model.finalCta.description, locale)}
+        primary={model.access === "capacity"
+          ? { label: isZh ? "查看已上线模型" : "Explore available models", href: modelPath(locale) }
+          : { label: isZh ? "下载 Floatboat" : "Download Floatboat", href: download }}
+      />
       {jsonLd.map((item, index) => (
         <script
           key={index}

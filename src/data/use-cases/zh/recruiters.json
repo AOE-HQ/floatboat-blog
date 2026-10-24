@@ -257,9 +257,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项招聘准备任务交给 Work Agent。",
-    "description": "从一份已批准的岗位 Brief 和一套结构化面试材料开始，让 Floatboat 减少准备时间，但不接管候选人判断。",
+    "eyebrow": "面试开始之前",
+    "title": "把面试材料准备好，录用判断仍由人负责。",
+    "description": "依据核准岗位要求准备结构化面试材料；问题由人审阅，候选人决定也由人作出。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-recruiters&download_placement=final_cta"

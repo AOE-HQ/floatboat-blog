@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FinalCta } from "@/components/final-cta";
 
 import { MODEL_FAMILIES, localize, modelPath, type ModelLocale } from "@/lib/models/model-pages";
 
@@ -80,7 +81,11 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28"><div className="rounded-[36px] bg-[#24221f] px-6 py-14 text-center text-white sm:px-12 sm:py-20"><h2 className="font-serif text-4xl tracking-tight sm:text-6xl">{isZh ? "一个工作空间，多种模型能力。" : "One workspace. Multiple model capabilities."}</h2><p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/65">{isZh ? "让模型选择服务于工作，而不是让工作被模型选择器拆散。" : "Make model choice serve the work instead of fragmenting the work across model pickers."}</p><a href={isZh ? DOWNLOAD.replace("/download/", "/zh/download/") : DOWNLOAD} className="mt-8 inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold text-[var(--ob-color-text)]">{isZh ? "下载 Floatboat" : "Download Floatboat"}</a></div></section>
+      <FinalCta
+        title={isZh ? "先选一项任务，再决定交给哪个模型。" : "Start with the task, then choose the model."}
+        description={isZh ? "需要深度推理、长文档分析还是快速日常处理？查看各模型当前的接入位置，再到 Floatboat 中开始实际工作。" : "Deep reasoning, long-document analysis, or fast everyday work? Check where each model is available, then bring the task into Floatboat."}
+        primary={{ label: isZh ? "下载 Floatboat" : "Download Floatboat", href: isZh ? DOWNLOAD.replace("/download/", "/zh/download/") : DOWNLOAD }}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </main>
   );

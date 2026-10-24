@@ -251,9 +251,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一个在办项目开始",
-    "title": "把下一次制作交接交给 Work Agent",
-    "description": "带上一份核准简报、对应源文件和下一次专业交接。让 Work Agent 准备清晰制作线程，专业质量仍由团队掌控。",
+    "eyebrow": "下一次专业交接",
+    "title": "让下一位制作成员拿到更清楚的材料包。",
+    "description": "汇集核准简报、源文件与当前反馈；在进入制作前，由团队审阅交接内容与专业判断。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-studio&download_placement=final_cta"

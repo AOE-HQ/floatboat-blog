@@ -251,9 +251,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start with one repeated handoff",
-    "title": "Give one repeated handoff to a Work Agent",
-    "description": "Choose a customer or operating assignment with known inputs and a responsible reviewer. Let the Work Agent improve the handoff before you expand its role.",
+    "eyebrow": "Improve a handoff",
+    "title": "Make the next customer handoff easier to repeat.",
+    "description": "Choose one operating task with known inputs and a named reviewer. Improve that handoff before asking the Work Agent to take on more.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-small-business&download_placement=final_cta"

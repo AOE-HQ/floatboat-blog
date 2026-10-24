@@ -258,9 +258,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项证据准备任务交给 Work Agent。",
-    "description": "从一个边界明确的资料集和一套清楚的提取结构开始，让来源路径在第一版摘要之后仍然可用。",
+    "eyebrow": "先保留来源，再做综合",
+    "title": "让下一版研究摘要仍能追溯原始资料。",
+    "description": "先界定资料集与提取字段，再生成摘要；进入下一稿时，每个关键判断仍应能找到出处。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-researchers&download_placement=final_cta"

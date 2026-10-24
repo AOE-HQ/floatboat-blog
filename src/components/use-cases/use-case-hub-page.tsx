@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FinalCta } from "@/components/final-cta";
 
 import catalog from "@/data/use-cases/catalog.json";
 import { getPersonaPage, personaPath, type PersonaLocale, type PersonaSlug } from "@/lib/use-cases/persona-pages";
@@ -125,7 +126,7 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
 
     <section className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr]"><div><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{copy.pathwayEyebrow}</p><h2 className="mt-3 font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.pathwayTitle)}</h2><p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.pathwayDescription}</p></div><div className="divide-y divide-black/[0.08] border-y border-black/[0.08]">{copy.pathway.map(([title, description], index) => <div key={title} className="grid gap-3 py-7 sm:grid-cols-[3rem_0.55fr_1fr]"><span className="text-sm text-[var(--ob-color-muted)]">0{index + 1}</span><h3 className="font-serif text-2xl">{titleCase(title)}</h3><p className="leading-7 text-[var(--ob-color-text-subtle)]">{description}</p></div>)}</div></div></section>
 
-    <section className="px-5 py-20 sm:px-8"><div className="mx-auto max-w-6xl rounded-[36px] bg-[#24221f] px-6 py-14 text-center text-white sm:px-12 sm:py-20"><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f7d68b]">{copy.finalEyebrow}</p><h2 className="mx-auto mt-4 max-w-4xl font-serif text-4xl tracking-[-0.04em] sm:text-6xl">{titleCase(copy.finalTitle)}</h2><p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/65">{copy.finalDescription}</p><a href={isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=final_cta" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=final_cta"} className="mt-8 inline-flex rounded-full bg-[var(--ob-color-primary)] px-6 py-3 text-sm font-semibold text-[var(--ob-color-primary-fg)]">{copy.primary}</a></div></section>
+    <FinalCta eyebrow={copy.finalEyebrow} title={copy.finalTitle} description={copy.finalDescription} primary={{ label: copy.primary, href: isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=final_cta" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=final_cta" }} />
 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
   </div>;

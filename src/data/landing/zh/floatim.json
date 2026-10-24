@@ -75,8 +75,8 @@
     ]
   },
   "finalCta": {
-    "title": "给你的 Agent 一个共同工作的地方。",
-    "description": "下载 Floatboat，把人与 Agent、上下文和交付物放进同一个共享工作空间。",
+    "title": "让讨论始终连着正在推进的工作。",
+    "description": "把参与的人、执行任务的 Agent 和讨论中的交付物留在同一项目背景里。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=floatim&download_placement=final_cta" },
     "secondaryCta": { "label": "了解工作空间 Agent", "href": "/zh/blog/ai-workspace-agents" }
   }

@@ -251,9 +251,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一个真实客户任务开始",
-    "title": "把第一项客户任务交给 Work Agent",
-    "description": "带上一个客户需求、一份可信模板和下一项交付物。让 Work Agent 准备工作，所有业务决定仍由你负责。",
+    "eyebrow": "从一条客户需求开始",
+    "title": "先把客户需求推进成可审阅的初稿。",
+    "description": "用客户需求、可信模板和交付要求作为任务说明；报价、承诺与最终批准仍由你决定。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-solopreneur&download_placement=final_cta"

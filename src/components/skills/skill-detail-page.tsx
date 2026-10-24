@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { FaqBand } from "@/components/faq-band";
+import { FinalCta } from "@/components/final-cta";
 import { skillPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
 
 const labels = {
@@ -160,18 +161,9 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       </section>
       <FaqBand locale={locale} items={skill.faq.map((item) => ({ question: item.question[locale], answer: item.answer[locale] }))} />
 
-      <section id="floatboat" className="px-5 pb-20 pt-6 sm:px-8">
-        <div className="mx-auto max-w-7xl rounded-[28px] bg-[var(--ob-color-text)] px-6 py-12 text-white sm:px-12 sm:py-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{t.product}</p>
-          <h2 className="mt-4 max-w-3xl font-serif text-3xl tracking-tight sm:text-5xl">{t.productTitle}</h2>
-          <p className="mt-5 max-w-3xl leading-8 text-white/70">{t.productBody}</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href={download} className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold text-[var(--ob-color-text)]">{t.download}</a>
-            <a href={skill.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full border border-white/35 px-6 text-sm font-semibold">{t.source} ↗</a>
-          </div>
-          <p className="mt-6 text-xs text-white/50">{t.independence}</p>
-        </div>
-      </section>
+      <div id="floatboat">
+        <FinalCta eyebrow={t.product} title={t.productTitle} description={t.productBody} primary={{ label: t.download, href: download }} secondary={{ label: t.source, href: skill.sourceUrl }} note={t.independence} />
+      </div>
     </main>
   );
 }

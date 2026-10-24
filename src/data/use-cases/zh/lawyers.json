@@ -121,9 +121,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一个真实任务开始",
-    "title": "把第一项法律准备任务交给 Work Agent。",
-    "description": "选择一个边界清楚的案件文件夹、一份可信模板和一项可以审阅的交付物。保留有效方法，也保留自己的专业判断。",
+    "eyebrow": "准备材料，不代替法律判断",
+    "title": "先整理案件材料，法律判断仍由你负责。",
+    "description": "围绕边界明确的案件文件夹和可信模板，准备一份可审阅的文档；法律结论仍由专业人士负责。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-lawyers&download_placement=final_cta" },
     "secondaryCta": { "label": "了解工作空间如何支持 Agent", "href": "/zh/agent-workspace" }
   }

@@ -257,9 +257,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start from one real assignment",
-    "title": "Give your first financial-preparation assignment to a Work Agent.",
-    "description": "Start with one closed period or one researched company. Keep every figure tied to its source, unit, date, and assumption before reusing the workflow.",
+    "eyebrow": "Keep the audit trail",
+    "title": "Keep every figure attached to its assumptions.",
+    "description": "Use one closed period or company as the starting scope. Check dates, units, sources, and assumptions before the analysis is reused.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-financial-analysts&download_placement=final_cta"

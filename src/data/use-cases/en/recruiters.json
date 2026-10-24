@@ -257,9 +257,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start from one real assignment",
-    "title": "Give your first hiring-preparation assignment to a Work Agent.",
-    "description": "Begin with one approved role brief and one structured interview packet. Let Floatboat prepare the materials without handing candidate judgment to the system.",
+    "eyebrow": "Before the interview",
+    "title": "Prepare the interview; keep hiring judgment human.",
+    "description": "Use an approved role brief to draft a consistent interview packet. People review the questions and make every candidate decision.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-recruiters&download_placement=final_cta"

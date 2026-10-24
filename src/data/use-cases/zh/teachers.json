@@ -258,9 +258,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项教学准备任务交给 Work Agent。",
-    "description": "带上一个即将开始的单元、你信任的资料和学校要求的格式，先完成一套仍然保留个人教学方法的材料。",
+    "eyebrow": "下一单元备课",
+    "title": "用你信任的资料准备下一单元的教学材料。",
+    "description": "带上即将讲授的单元、可信资料和学校要求的格式；先审阅材料，再按自己班级的情况调整。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-teachers&download_placement=final_cta"
