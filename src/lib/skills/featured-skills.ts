@@ -1,4 +1,5 @@
 import featuredSkills from "@/data/skills/featured-skills.json";
+import vercelLabsSkills from "@/data/skills/vercel-labs-skills.json";
 
 export type SkillLocale = "en" | "zh";
 export type LocalizedText = Record<SkillLocale, string>;
@@ -24,6 +25,15 @@ export type FeaturedSkill = {
   };
   summary: LocalizedText;
   upstreamInstall: string;
+  pageCopy: {
+    kind: LocalizedText;
+    installNote: LocalizedText;
+    guideTitle: LocalizedText;
+    guideIntro: LocalizedText;
+    ctaEyebrow: LocalizedText;
+    ctaTitle: LocalizedText;
+    ctaDescription: LocalizedText;
+  };
   sectionTitles: {
     useCases: LocalizedText;
     useCasesDescription: LocalizedText;
@@ -42,7 +52,7 @@ export type FeaturedSkill = {
   faq: Array<{ question: LocalizedText; answer: LocalizedText }>;
 };
 
-export const FEATURED_SKILLS = featuredSkills as FeaturedSkill[];
+export const FEATURED_SKILLS = [...featuredSkills, ...vercelLabsSkills] as FeaturedSkill[];
 
 export function getFeaturedSkill(author: string, slug: string): FeaturedSkill | undefined {
   return FEATURED_SKILLS.find((skill) => skill.authorHandle === author && skill.slug === slug);

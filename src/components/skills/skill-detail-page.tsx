@@ -13,26 +13,20 @@ const labels = {
     store: "Combo Store",
     skill: "01 / The skill",
     guide: "02 / Practical guide",
-    product: "03 / After the skill search",
+    product: "03 / Put it to work",
     viewSource: "View original SKILL.md",
     viewRepo: "View repository",
     publisher: "Published by",
     kind: "Type",
-    kindValue: "Independent meta-skill",
     install: "Upstream installation",
-    installNote: "Skills CLI command from the publisher. This is not a Floatboat installation command.",
     sourceTitle: "Publisher, source, and installation",
     example: "A realistic request",
     request: "Ask the agent",
     expected: "A useful result",
     commands: "Upstream commands",
-    commandsNote: "These examples describe the open Skills CLI, not features promised by Floatboat.",
-    guideTitle: "Find the right skill, then decide whether to use it",
-    guideIntro: "Discovery is only the first decision. These answers explain how to search, compare, and review a candidate before it changes your agent environment.",
+    commandsNote: "These are upstream commands, not Floatboat features.",
     outcome: "What you can take away",
     checks: "What to check first",
-    productTitle: "Bring the task behind your skill search into Floatboat",
-    productBody: "Found a candidate with Find Skills? Check its SKILL.md, then keep the task, files, and review together in Floatboat.",
     download: "Download Floatboat",
     independence: "Independent guide. Vercel Labs has not endorsed Floatboat.",
   },
@@ -41,26 +35,20 @@ const labels = {
     store: "Combo 商店",
     skill: "01 / Skill 档案",
     guide: "02 / 使用指南",
-    product: "03 / 找到候选 Skill 后",
+    product: "03 / 下一步",
     viewSource: "查看原始 SKILL.md",
     viewRepo: "查看发布方仓库",
     publisher: "原发布方",
     kind: "类型",
-    kindValue: "独立发布的元 Skill",
     install: "上游安装方式",
-    installNote: "这是发布方使用的 Skills CLI 命令，并非 Floatboat 的安装命令。",
     sourceTitle: "发布方、原始来源与安装方式",
     example: "一个具体请求",
     request: "向 Agent 提问",
     expected: "应该得到什么",
     commands: "上游命令",
-    commandsNote: "以下示例说明开放的 Skills CLI，不代表 Floatboat 已提供这些命令。",
-    guideTitle: "找到 Skill，再判断是否值得使用",
-    guideIntro: "搜索只是第一步。下面说明如何缩小搜索范围、比较候选项，以及在改变 Agent 环境之前检查来源与权限。",
+    commandsNote: "以下为上游命令，不代表 Floatboat 已提供这些功能。",
     outcome: "你能拿到什么",
     checks: "使用前先核对",
-    productTitle: "找到 Skill 后，把真正的任务带进 Floatboat",
-    productBody: "用 Find Skills 找到候选项后，先核对原始 SKILL.md；真实任务、文件与审阅环节可以留在 Floatboat 中。",
     download: "下载 Floatboat",
     independence: "本页为独立介绍；Vercel Labs 未对 Floatboat 作出背书。",
   },
@@ -109,7 +97,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       <section id="skill" className="mx-auto max-w-7xl px-5 pb-16 sm:px-8 lg:pb-24">
         <div className="mx-auto max-w-4xl border-t border-black/10 pt-10 text-center">
           <h2 className="font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{t.sourceTitle}</h2>
-          <p className="mt-4 text-sm text-[var(--ob-color-muted)]">{t.publisher} <strong className="font-semibold text-[var(--ob-color-text)]">{skill.publisher}</strong> · {t.kind}: {t.kindValue}</p>
+          <p className="mt-4 text-sm text-[var(--ob-color-muted)]">{t.publisher} <strong className="font-semibold text-[var(--ob-color-text)]">{skill.publisher}</strong> · {t.kind}: {skill.pageCopy.kind[locale]}</p>
           <p className="mt-2 text-xs text-[var(--ob-color-muted)]">{t.independence}</p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a href={skill.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{t.viewSource} ↗</a>
@@ -118,7 +106,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-black/10 bg-white/70 p-6 text-left shadow-sm">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{t.install}</p>
             <code className="mt-3 block overflow-x-auto rounded-xl bg-[var(--ob-color-text)] p-4 text-xs leading-6 text-white">{skill.upstreamInstall}</code>
-            <p className="mt-3 text-xs leading-5 text-[var(--ob-color-text-subtle)]">{t.installNote}</p>
+            <p className="mt-3 text-xs leading-5 text-[var(--ob-color-text-subtle)]">{skill.pageCopy.installNote[locale]}</p>
           </div>
         </div>
         <div className="mt-16 grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
@@ -144,7 +132,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
 
       <section id="guide" className="border-y border-black/[0.07] bg-white/35 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <SectionTitle number={t.guide} title={t.guideTitle} intro={t.guideIntro} />
+          <SectionTitle number={t.guide} title={skill.pageCopy.guideTitle[locale]} intro={skill.pageCopy.guideIntro[locale]} />
           <div className="grid gap-5 lg:grid-cols-3">{skill.seoSections.map((item) => <article key={item.title.en} className="rounded-2xl border border-black/[0.08] bg-white/70 p-6"><h3 className="font-serif text-xl leading-snug">{item.title[locale]}</h3><p className="mt-4 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{item.body[locale]}</p></article>)}</div>
           <div className="mt-12 grid gap-10 border-t border-black/10 pt-10 md:grid-cols-2">
             <div><h3 className="font-serif text-2xl">{t.outcome}</h3><ul className="mt-5 space-y-3">{skill.outputs[locale].map((item) => <li key={item} className="border-l-2 border-[var(--ob-color-accent)] pl-4 leading-6">{item}</li>)}</ul></div>
@@ -156,7 +144,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       <FaqBand locale={locale} items={skill.faq.map((item) => ({ question: item.question[locale], answer: item.answer[locale] }))} />
 
       <div id="floatboat">
-        <FinalCta eyebrow={t.product} title={t.productTitle} description={t.productBody} primary={{ label: t.download, href: download }} />
+        <FinalCta eyebrow={`${t.product} · ${skill.pageCopy.ctaEyebrow[locale]}`} title={skill.pageCopy.ctaTitle[locale]} description={skill.pageCopy.ctaDescription[locale]} primary={{ label: t.download, href: download }} />
       </div>
     </main>
   );

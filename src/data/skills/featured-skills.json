@@ -23,6 +23,15 @@
       "zh": "当你知道要完成什么工作，却不知道该找哪一个 Skill 时，可以使用 Vercel Labs 的 Find Skills。它先识别任务和领域，再查看 skills.sh 榜单或进一步搜索，最后把候选项交给你选择。"
     },
     "upstreamInstall": "npx skills add vercel-labs/skills --skill find-skills",
+    "pageCopy": {
+      "kind": { "en": "Meta-skill for discovering other skills", "zh": "用于发现其他 Skill 的元 Skill" },
+      "installNote": { "en": "This installs the publisher's skill through the open Skills CLI; it is not a Floatboat installation command.", "zh": "这条命令通过开放的 Skills CLI 安装原发布方的 Skill，不是 Floatboat 的安装命令。" },
+      "guideTitle": { "en": "Find the right skill, then decide whether to use it", "zh": "找到 Skill，再判断是否值得使用" },
+      "guideIntro": { "en": "Discovery is only the first decision. Search, compare, and review a candidate before it changes your agent environment.", "zh": "搜索只是第一步。安装前还要比较候选项、核对来源和检查所需权限。" },
+      "ctaEyebrow": { "en": "From discovery to work", "zh": "从发现到执行" },
+      "ctaTitle": { "en": "Bring the task behind your skill search into Floatboat", "zh": "找到 Skill 后，把真正的任务带进 Floatboat" },
+      "ctaDescription": { "en": "Review the candidate's original instructions first. Then keep the task, files, and review together in Floatboat.", "zh": "先核对候选 Skill 的原始说明，再把实际任务、文件和审阅环节放在 Floatboat 中。" }
+    },
     "sectionTitles": {
       "useCases": { "en": "When Find Skills is useful", "zh": "Find Skills 适合哪些任务" },
       "useCasesDescription": { "en": "Use it when the task is clear but the right Skill is not. It helps narrow candidates before you inspect their source or install anything.", "zh": "任务已经明确，却不知道该选哪个 Skill 时，先缩小候选范围，再检查来源并决定是否安装。" },
