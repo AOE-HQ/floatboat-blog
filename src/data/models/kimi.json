@@ -281,12 +281,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Kimi K3 capacity is ready below the picker",
-      "zh": "Kimi K3 已完成底层容量配置"
+      "en": "Need long-context work before Kimi K3 is selectable",
+      "zh": "Kimi K3 尚未开放选择，先处理长文档任务"
     },
     "description": {
-      "en": "Kimi K3 has a configured long-context capacity profile, but no default picker entry. Explore the models available today.",
-      "zh": "Kimi K3 已登记长上下文容量，但当前没有默认选择器入口；可先查看现在能直接使用的模型。"
+      "en": "Kimi K3 has a configured 1M context budget, but no default picker entry. Compare live models for your next long-document task.",
+      "zh": "Kimi K3 已配置 1M 上下文预算，但还不是客户端可选项；现在需要处理长文档，可先比较已上线的模型。"
     }
   }
 }

@@ -284,12 +284,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "GLM protocol support is ready below the picker",
-      "zh": "GLM 协议支持已在选择器下层就绪"
+      "en": "Need reasoning support while GLM stays below the picker",
+      "zh": "GLM 尚未进入选择器，先比较已上线推理模型"
     },
     "description": {
-      "en": "GLM-5 and GLM-4 protocol handling is prepared below the picker. For work today, compare the models you can select.",
-      "zh": "GLM-5 与 GLM-4 的协议适配已完成，但当前不在主选择器中；现在可先比较已经开放的模型。"
+      "en": "GLM-5 and GLM-4 have thinking-mode protocol support, but no default picker entry. Compare live models for reasoning work today.",
+      "zh": "GLM-5 与 GLM-4 已适配 thinking-mode 协议，但还不能在主选择器中选用；当前可先比较已上线的推理模型。"
     }
   }
 }

@@ -309,12 +309,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Qwen 3.7 Max is configured below the picker",
-      "zh": "Qwen 3.7 Max 已完成底层配置"
+      "en": "Compare long-text routes while Qwen stays below the picker",
+      "zh": "Qwen 尚未进入选择器，先比较长文本模型"
     },
     "description": {
-      "en": "Qwen 3.7 Max has a configured capacity profile, not a default picker entry. Explore the models available in the client today.",
-      "zh": "Qwen 3.7 Max 已登记容量画像，但当前不在默认选择器；可先查看客户端现有选项。"
+      "en": "Qwen 3.7 Max has a registered 1M capacity profile, not a picker entry. See which live model fits your next long-text task.",
+      "zh": "Qwen 3.7 Max 已登记 1M 容量画像，但还不能在主选择器中选用；现在可先比较适合长文本任务的已上线模型。"
     }
   }
 }

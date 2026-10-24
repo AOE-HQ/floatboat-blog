@@ -35,9 +35,9 @@ const pageCopy = {
       ["Ongoing Project", "Let the Work Agent continue from the same approved files, decisions, revisions, and open questions."],
       ["Recurring Responsibility", "Reuse the proven method for periodic preparation or monitoring while keeping human review in place."],
     ],
-    finalEyebrow: "Bring One Real Task",
-    finalTitle: "Give a Work Agent One Real Assignment",
-    finalDescription: "Start with familiar files, clear standards, and one deliverable. Let the Work Agent prepare it while you keep the decisions.",
+    finalEyebrow: "From use case to assignment",
+    finalTitle: "Choose one use case to put to work",
+    finalDescription: "Take a role-specific assignment from this directory, gather its source files, and set a review point before delegating it.",
   },
   zh: {
     eyebrow: "Floatboat 使用场景",
@@ -64,9 +64,9 @@ const pageCopy = {
       ["持续项目", "让 Work Agent 沿用同一组核准文件、历史决定、修改记录和待确认问题继续推进。"],
       ["周期职责", "复用已验证的方法完成周期准备或持续监测，同时保留人工审阅。"],
     ],
-    finalEyebrow: "带上一项真实任务",
-    finalTitle: "把第一项真实工作交给 Work Agent",
-    finalDescription: "从自己熟悉的文件、标准和下一项交付开始，让 Work Agent 准备成果，同时保留重要决定的控制权。",
+    finalEyebrow: "从使用场景到具体委派",
+    finalTitle: "从目录中选一项任务开始",
+    finalDescription: "从对应岗位的页面选一项具体任务，备好源文件并设定审阅点，再交给 Work Agent 执行。",
   },
 } as const;
 
