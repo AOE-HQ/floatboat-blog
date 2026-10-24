@@ -1,0 +1,103 @@
+[
+  {
+    "slug": "find-skills",
+    "name": "Find Skills",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/skills",
+    "category": { "en": "Skill discovery", "zh": "Skill 发现" },
+    "seo": {
+      "title": { "en": "Find Skills by Vercel Labs: Discover Agent Skills", "zh": "Find Skills 使用指南：发现适合任务的 Agent Skills" },
+      "description": { "en": "Learn when to use Vercel Labs' Find Skills, how it searches the open skills ecosystem, and what to check before installing a result.", "zh": "了解 Vercel Labs 的 Find Skills 如何搜索开放 Agent Skills 生态，以及选择和安装前需要核对什么。" },
+      "keywords": { "en": ["find skills", "Vercel find-skills", "agent skill discovery"], "zh": ["Find Skills", "查找 Agent Skills", "Vercel Skills"] }
+    },
+    "hero": {
+      "eyebrow": { "en": "Community Skill · Discovery", "zh": "社区 Skill · 发现工具" },
+      "title": { "en": "Find the skill before you write another prompt.", "zh": "先找到合适的 Skill，再决定要不要从零写提示词。" },
+      "description": { "en": "Find Skills helps an agent turn a task into a focused skills search, compare candidates, and present an install path. It is a discovery workflow, not a guarantee that every result is safe or suitable.", "zh": "Find Skills 把具体任务转成 Skill 搜索，整理候选项并给出安装路径。它负责发现，不替你保证每个结果都安全或适用。" }
+    },
+    "summary": {
+      "en": "This Vercel Labs skill is useful when you know the job but not the name of the agent capability you need. Its instructions call for identifying the domain and task, checking the skills.sh leaderboard, then searching more narrowly and presenting a shortlist for the user to choose from.",
+      "zh": "当你知道要完成什么工作，却不知道该找哪一个 Skill 时，可以使用 Vercel Labs 的 Find Skills。它先识别任务和领域，再查看 skills.sh 榜单或进一步搜索，最后把候选项交给你选择。"
+    },
+    "scenarios": [
+      {
+        "title": { "en": "A task outside your usual toolkit", "zh": "遇到陌生领域的任务" },
+        "body": { "en": "You need help with a deployment, design audit, or document format you rarely handle. Search by the actual task instead of guessing a repository name.", "zh": "临时要处理部署、设计检查或少见的文档格式。先描述真实任务，而不是猜测仓库名称。" }
+      },
+      {
+        "title": { "en": "Several similar candidates", "zh": "同类 Skill 太多" },
+        "body": { "en": "Use a shortlist to compare source, scope, and adoption before opening the original SKILL.md and deciding whether to install.", "zh": "先比较来源、作用范围和采用情况，再打开原始 SKILL.md，决定是否安装。" }
+      },
+      {
+        "title": { "en": "Repeatable skill discovery", "zh": "反复需要扩充能力" },
+        "body": { "en": "Keep the discovery step consistent across projects, while making the final installation decision for each workspace separately.", "zh": "把发现过程固定下来，但每个项目是否安装仍单独判断。" }
+      }
+    ],
+    "example": {
+      "prompt": { "en": "Find a skill for reviewing a Next.js application's accessibility. Show me the source, what it covers, and the install command; do not install it yet.", "zh": "帮我找能检查 Next.js 应用无障碍问题的 Skill。列出来源、检查范围和安装方式，先不要安装。" },
+      "result": { "en": "A useful response is a small set of candidates with source links and trade-offs—not an automatic installation or a claim that the top-ranked result is always best.", "zh": "合格的结果应是少量候选项、来源链接和取舍，而不是自动安装，更不能把榜首当成必然最优。" }
+    },
+    "steps": [
+      { "title": { "en": "Name the job", "zh": "说清任务" }, "body": { "en": "Identify the domain and a specific action, such as reviewing accessibility rather than simply ‘web development’.", "zh": "确定领域和具体动作，比如“检查无障碍问题”，而不是只搜“网页开发”。" } },
+      { "title": { "en": "Search and compare", "zh": "搜索并比较" }, "body": { "en": "Check known skills and narrow the query; compare the publisher, described scope, and original instructions.", "zh": "查看已有 Skill，缩小查询范围，并比较发布者、描述的能力边界和原始说明。" } },
+      { "title": { "en": "Review before installing", "zh": "安装前复核" }, "body": { "en": "Open the candidate's repository and SKILL.md, check any scripts or permissions, and install only after choosing a trusted fit.", "zh": "打开候选仓库和 SKILL.md，检查脚本与权限，只在确认适合且可信后安装。" } }
+    ],
+    "outputs": { "en": ["A focused shortlist of relevant skills", "Links to the original sources", "Installation instructions for the chosen candidate"], "zh": ["与任务相关的精简候选清单", "原始来源链接", "选定候选项的安装说明"] },
+    "checks": { "en": ["Search ranking is a discovery signal, not a security review.", "Read the original SKILL.md and any bundled scripts before running them.", "A skill may require tools or permissions your current environment does not provide."], "zh": ["搜索排名只是发现信号，不等于安全审核。", "运行前阅读原始 SKILL.md 和附带脚本。", "Skill 可能依赖当前环境尚未提供的工具或权限。"] },
+    "faq": [
+      { "question": { "en": "What does Find Skills do?", "zh": "Find Skills 是做什么的？" }, "answer": { "en": "It guides an agent to discover installable skills for a stated task, compare likely matches, and show the user how to install a selected one.", "zh": "它指导 Agent 按任务寻找可安装的 Skill、比较候选项，并说明如何安装用户选中的结果。" } },
+      { "question": { "en": "Does it install a skill automatically?", "zh": "它会自动安装 Skill 吗？" }, "answer": { "en": "Discovery and installation are separate decisions. Ask for a shortlist first and review the source before authorizing an install.", "zh": "发现与安装是两个决定。可以先要求候选清单，查看来源后再决定是否安装。" } },
+      { "question": { "en": "Is the most-installed result always the right one?", "zh": "安装量最高的就是最合适的吗？" }, "answer": { "en": "No. Popularity can help with discovery, but the task fit, maintenance, instructions, and permissions still matter.", "zh": "不是。热度有助于发现候选项，但仍要看任务匹配、维护状态、具体说明和所需权限。" } },
+      { "question": { "en": "Where is the original skill?", "zh": "原始 Skill 在哪里？" }, "answer": { "en": "The source is the find-skills SKILL.md in Vercel Labs' public skills repository, linked on this page.", "zh": "原始文件位于 Vercel Labs 公开 skills 仓库的 find-skills/SKILL.md，本页提供来源链接。" } },
+      { "question": { "en": "Does this page mean Vercel Labs endorses Floatboat?", "zh": "这个页面意味着 Vercel Labs 为 Floatboat 背书吗？" }, "answer": { "en": "No. Find Skills is attributed to its original publisher. This is an independent guide to the community skill.", "zh": "不意味着。本页注明了原发布者，是对社区 Skill 的独立介绍。" } }
+    ]
+  },
+  {
+    "slug": "human-writing",
+    "name": "Human Writing",
+    "publisher": "KKKKhazix",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/KKKKhazix/human-writing/blob/main/human-writing/SKILL.md",
+    "repositoryUrl": "https://github.com/KKKKhazix/human-writing",
+    "category": { "en": "Chinese writing", "zh": "中文写作" },
+    "seo": {
+      "title": { "en": "Human Writing Skill: Natural Chinese Drafting and Revision", "zh": "Human Writing Skill：自然中文写作与改稿指南" },
+      "description": { "en": "Explore the Human Writing skill for Chinese articles and revisions: source checks, natural prose, workflow, limitations, and original project links.", "zh": "了解 Human Writing 中文写作 Skill 的适用场景、材料核验、写作与改稿流程、使用限制和原始项目。" },
+      "keywords": { "en": ["human-writing skill", "Chinese writing agent skill", "natural Chinese AI writing"], "zh": ["Human Writing Skill", "活人感写作 Skill", "中文写作 Skill"] }
+    },
+    "hero": {
+      "eyebrow": { "en": "Community Skill · Chinese writing", "zh": "社区 Skill · 中文写作" },
+      "title": { "en": "Make Chinese writing sound like someone who knows the subject.", "zh": "让中文稿件像一个真正了解事情的人写的。" },
+      "description": { "en": "Human Writing is a Chinese-language writing and revision skill. It asks for concrete material before expanding a factual article, then edits away empty rhetoric and formulaic AI phrasing.", "zh": "Human Writing 面向中文创作与改稿。它要求事实稿先有具体材料，再决定篇幅；成稿时清理空话、机构腔和常见的模型套话。" }
+    },
+    "summary": {
+      "en": "The original skill covers long-form Chinese posts, articles, commentary, explainers, scripts, and fiction. Its distinctive rule is not merely ‘write more naturally’: it separates factual and fictional work, asks whether the available material supports the requested length, and routes different formats to specific references before revision.",
+      "zh": "原始 Skill 覆盖中文长帖、文章、评论、科普、口播与虚构写作。它的重点不只是“写得自然”：先区分现实与虚构任务，判断材料是否撑得起目标篇幅，再按文体读取对应参考规则，最后进行改稿。"
+    },
+    "scenarios": [
+      { "title": { "en": "A draft full of generic claims", "zh": "初稿都是抽象判断" }, "body": { "en": "Give the skill the source notes and ask it to anchor every major section in an actual event, observation, or verifiable source.", "zh": "提供原始笔记，让主要段落有实际事件、观察或可核验资料支撑。" } },
+      { "title": { "en": "A long article with too little evidence", "zh": "篇幅要求超过材料承载力" }, "body": { "en": "Ask it to flag missing factual material and narrow the assignment rather than fill space with repeated explanations.", "zh": "让它指出事实材料缺口，必要时缩小题目，而不是反复解释同一个观点来凑字数。" } },
+      { "title": { "en": "Chinese prose that feels templated", "zh": "中文表达像统一模板" }, "body": { "en": "Use its revision pass to inspect pacing, phrasing, and the speaker's point of view without fabricating a personal experience.", "zh": "通过改稿检查节奏、句式和说话位置，但不能虚构作者的亲历。" } }
+    ],
+    "example": {
+      "prompt": { "en": "Revise this Chinese commentary using only the interview notes and links below. Mark claims that need checking, keep the speaker's perspective, and shorten the piece if the material cannot support 1,500 Chinese characters.", "zh": "请只依据下面的访谈笔记和链接修改这篇评论。标出待核实的事实，保留作者的判断；如果材料撑不起 1500 字，就缩短，不要补编案例。" },
+      "result": { "en": "The useful outcome is a more specific Chinese draft plus a visible list of missing or unverified material—not a longer article produced by repeating the same point.", "zh": "有价值的结果是更具体的中文稿和明确的材料缺口，而不是把同一观点换几种说法扩写成长文。" }
+    },
+    "steps": [
+      { "title": { "en": "Set the factual boundary", "zh": "划清事实边界" }, "body": { "en": "Separate verified facts and first-hand notes from fictional material the task explicitly allows.", "zh": "分清已核实事实、用户亲历材料，以及任务明确允许虚构的内容。" } },
+      { "title": { "en": "Choose the right form", "zh": "按文体处理" }, "body": { "en": "Use the skill's format-specific references for a post, article, tutorial, script, or story before drafting.", "zh": "根据长帖、文章、教程、口播或故事等不同形式读取对应参考规则。" } },
+      { "title": { "en": "Draft, check, revise", "zh": "写作、核查、改稿" }, "body": { "en": "Build around concrete material, check claims and quotations, then remove filler and repetitive AI-style phrasing.", "zh": "围绕具体材料成稿，核对事实与引语，最后删除空话和重复的模型化表达。" } }
+    ],
+    "outputs": { "en": ["A Chinese draft or revised manuscript", "Explicit gaps in facts or source material", "A shorter scope when the evidence cannot support the requested length"], "zh": ["中文初稿或修订稿", "明确标出的事实与材料缺口", "材料不足时缩小后的写作范围"] },
+    "checks": { "en": ["This skill is designed for Chinese writing; the English page explains it but does not imply English-language output quality.", "For nonfiction, provide real notes or verifiable sources and review the final claims.", "Its stylistic rules may be too restrictive for a branded or technical house style."], "zh": ["这是一款中文写作 Skill，英文介绍页不代表它擅长英文创作。", "非虚构写作要提供真实笔记或可核验来源，并复核成稿事实。", "它的句式限制可能不适合某些品牌或技术文体，应按任务取舍。"] },
+    "faq": [
+      { "question": { "en": "What is Human Writing?", "zh": "Human Writing 是什么？" }, "answer": { "en": "It is an independently published skill for drafting and revising natural Chinese writing across several formats.", "zh": "它是独立发布的中文创作与改稿 Skill，覆盖多种文体。" } },
+      { "question": { "en": "Does it work for English articles?", "zh": "它适合写英文文章吗？" }, "answer": { "en": "Its source instructions focus on Chinese-language writing. This page does not claim it has been designed or evaluated for English prose.", "zh": "原始说明聚焦中文写作，本页不宣称它专门针对英文文章设计或验证。" } },
+      { "question": { "en": "Will it invent examples to make a draft longer?", "zh": "材料不够时会编例子凑篇幅吗？" }, "answer": { "en": "The source explicitly rejects invented factual examples and repetition as substitutes for evidence in nonfiction. You should still review the output.", "zh": "原始 Skill 明确反对在非虚构稿中用编造案例或重复解释代替材料，但成稿仍需人工复核。" } },
+      { "question": { "en": "Can I use it to revise an existing draft?", "zh": "可以用它修改已有稿件吗？" }, "answer": { "en": "Yes. The skill covers revision as well as drafting; provide the draft, source material, intended audience, and any style constraints.", "zh": "可以。它同时覆盖创作和改稿；提供原稿、来源材料、目标读者与文风约束会更有帮助。" } },
+      { "question": { "en": "Is this a Floatboat-created skill?", "zh": "这是 Floatboat 创作的 Skill 吗？" }, "answer": { "en": "No. It is credited to its original publisher, KKKKhazix. This page is an independent guide, with a link to the original project.", "zh": "不是。原作者是 KKKKhazix。本页为独立介绍，并链接至原始项目。" } }
+    ]
+  }
+]

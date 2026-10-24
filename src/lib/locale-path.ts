@@ -34,7 +34,7 @@ export function pathForLocale(pathname: string, targetLocale: BlogLocale): strin
   }
 
   const landingMatch = pathname.match(
-    /^\/(?:zh\/)?(agent-workspace|floatim|coworker|ai-scheduling-assistant|ai-file-organizer|use-cases(?:\/(?:lawyers|teachers|consultants|researchers|recruiters|financial-analysts|executive-assistants|marketers|for-solopreneur|for-creators|for-small-business|for-studio))?|models(?:\/(?:auto-mode|claude|openai|gemini|deepseek|seedance|kimi|qwen|glm|minimax))?)\/?$/,
+    /^\/(?:zh\/)?(agent-workspace|floatim|coworker|ai-scheduling-assistant|ai-file-organizer|use-cases(?:\/(?:lawyers|teachers|consultants|researchers|recruiters|financial-analysts|executive-assistants|marketers|for-solopreneur|for-creators|for-small-business|for-studio))?|models(?:\/(?:auto-mode|claude|openai|gemini|deepseek|seedance|kimi|qwen|glm|minimax))?|combostore\/(?:find-skills|human-writing))\/?$/,
   );
   if (landingMatch) {
     return `${targetLocale === "zh" ? "/zh" : ""}/${landingMatch[1]}`;

@@ -46,6 +46,34 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /combostore/find-skills
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/human-writing
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/find-skills
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/human-writing
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /use-cases
             pathType: Prefix
             backend:
@@ -156,6 +184,34 @@ spec:
                   number: 80
           - path: /zh/models
             pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/find-skills
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/human-writing
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/find-skills
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/human-writing
+            pathType: Exact
             backend:
               service:
                 name: floatboat-blog
