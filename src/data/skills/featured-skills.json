@@ -25,19 +25,24 @@
     "upstreamInstall": "npx skills add vercel-labs/skills --skill find-skills",
     "sectionTitles": {
       "useCases": { "en": "When Find Skills is useful", "zh": "Find Skills 适合哪些任务" },
+      "useCasesDescription": { "en": "Use it when the task is clear but the right Skill is not. It helps narrow candidates before you inspect their source or install anything.", "zh": "任务已经明确，却不知道该选哪个 Skill 时，先缩小候选范围，再检查来源并决定是否安装。" },
       "exclusions": { "en": "What Find Skills cannot replace", "zh": "Find Skills 不能替代什么" },
-      "how": { "en": "How Find Skills narrows the search", "zh": "Find Skills 如何缩小候选范围" }
+      "how": { "en": "How Find Skills narrows the search", "zh": "Find Skills 如何缩小候选范围" },
+      "howDescription": { "en": "The skill guides an agent from a specific task to a shortlist for your review; it does not make the installation decision for you.", "zh": "它指导 Agent 从具体任务走到待复核的候选清单，不替你决定安装哪个 Skill。" }
     },
     "scenarios": [
       {
+        "label": { "en": "Explore", "zh": "探索" },
         "title": { "en": "A task outside your usual toolkit", "zh": "遇到陌生领域的任务" },
         "body": { "en": "You need help with a deployment, design audit, or document format you rarely handle. Search by the actual task instead of guessing a repository name.", "zh": "临时要处理部署、设计检查或少见的文档格式。先描述真实任务，而不是猜测仓库名称。" }
       },
       {
+        "label": { "en": "Compare", "zh": "比较" },
         "title": { "en": "Several similar candidates", "zh": "同类 Skill 太多" },
         "body": { "en": "Use a shortlist to compare source, scope, and adoption before opening the original SKILL.md and deciding whether to install.", "zh": "先比较来源、作用范围和采用情况，再打开原始 SKILL.md，决定是否安装。" }
       },
       {
+        "label": { "en": "Repeat", "zh": "复用" },
         "title": { "en": "Repeatable skill discovery", "zh": "反复需要扩充能力" },
         "body": { "en": "Keep the discovery step consistent across projects, while making the final installation decision for each workspace separately.", "zh": "把发现过程固定下来，但每个项目是否安装仍单独判断。" }
       }

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
+import { HowSection } from "@/components/marketing/how-section";
+import { UseCasesSection } from "@/components/marketing/use-cases-section";
 
 import { FeatureDemo } from "./feature-demo";
 import type { CoreFeaturePageData } from "@/lib/landing/core-feature-schema";
@@ -97,9 +99,9 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       </div>
     </section>
 
-    <section className="border-y border-black/[0.06] py-20 sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><SectionHeading title={page.audiences.title} description={page.audiences.description} /><div className="grid gap-5 md:grid-cols-3">{page.audiences.items.map(item => <article key={item.title} className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-muted)]">{item.label}</p><h3 className="mt-8 font-serif text-2xl">{item.title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></article>)}</div></div></section>
+    <UseCasesSection {...page.audiences} />
 
-    <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28"><SectionHeading title={page.howItWorks.title} description={page.howItWorks.description} /><ol className="grid gap-8 md:grid-cols-3">{page.howItWorks.items.map((item, index) => <li key={item.title}><span className="font-serif text-5xl text-black/15">0{index + 1}</span><h3 className="mt-4 text-xl font-semibold">{item.title}</h3><p className="mt-2 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></li>)}</ol></section>
+    <HowSection {...page.howItWorks} />
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28"><div className="mx-auto max-w-5xl px-5 sm:px-8"><SectionHeading title={page.comparison.title} description={page.comparison.description} /><div className="overflow-hidden rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)]"><div className="grid grid-cols-[1.1fr_1fr_1fr] bg-[#24221f] px-5 py-4 text-sm font-semibold text-white"><span /><span>{page.comparison.columns[0]}</span><span>{page.comparison.columns[1]}</span></div>{page.comparison.rows.map(row => <div key={row.label} className="grid grid-cols-[1.1fr_1fr_1fr] gap-3 border-t border-black/[0.07] px-5 py-4 text-sm"><strong>{row.label}</strong><span>{row.values[0]}</span><span className="text-[var(--ob-color-muted)]">{row.values[1]}</span></div>)}</div></div></section>
 

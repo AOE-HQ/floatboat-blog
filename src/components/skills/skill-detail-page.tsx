@@ -126,7 +126,6 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
             </div>
           </aside>
         </div>
-        <UseCasesSection title={skill.sectionTitles.useCases[locale]} exclusionsTitle={skill.sectionTitles.exclusions[locale]} cases={skill.scenarios.map((item) => ({ title: item.title[locale], body: item.body[locale] }))} exclusions={skill.notFor.map((item) => item[locale])} />
         <div className="mt-16 grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
           <div><h2 className="font-serif text-2xl">{t.example}</h2><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{skill.summary[locale]}</p></div>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -134,8 +133,19 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
             <div className="rounded-2xl border border-black/10 bg-white/70 p-6"><p className="text-xs font-semibold uppercase tracking-wider text-[var(--ob-color-muted)]">{t.expected}</p><p className="mt-4 leading-7">{skill.example.result[locale]}</p></div>
           </div>
         </div>
-        <HowSection eyebrow={t.skill} title={skill.sectionTitles.how[locale]} steps={skill.steps.map((step) => ({ title: step.title[locale], body: step.body[locale] }))} />
       </section>
+
+      <UseCasesSection
+        title={skill.sectionTitles.useCases[locale]}
+        description={skill.sectionTitles.useCasesDescription[locale]}
+        items={skill.scenarios.map((item) => ({ label: item.label[locale], title: item.title[locale], description: item.body[locale] }))}
+        exclusions={{ title: skill.sectionTitles.exclusions[locale], items: skill.notFor.map((item) => item[locale]) }}
+      />
+      <HowSection
+        title={skill.sectionTitles.how[locale]}
+        description={skill.sectionTitles.howDescription[locale]}
+        items={skill.steps.map((step) => ({ title: step.title[locale], description: step.body[locale] }))}
+      />
 
       <section id="guide" className="border-y border-black/[0.07] bg-white/35 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
