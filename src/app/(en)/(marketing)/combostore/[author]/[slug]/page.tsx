@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { SkillDetailPage } from "@/components/skills/skill-detail-page";
 import {
-  FEATURED_SKILL_SLUGS,
+  FEATURED_SKILLS,
   getFeaturedSkill,
   skillPath,
 } from "@/lib/skills/featured-skills";
@@ -11,18 +11,18 @@ import {
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return FEATURED_SKILL_SLUGS.map((slug) => ({ slug }));
+  return FEATURED_SKILLS.map(({ authorHandle, slug }) => ({ author: authorHandle, slug }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ author: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const skill = getFeaturedSkill(slug);
+  const { author, slug } = await params;
+  const skill = getFeaturedSkill(author, slug);
   if (!skill) return {};
-  const canonical = `https://floatboat.ai${skillPath("en", slug)}`;
+  const canonical = `https://floatboat.ai${skillPath("en", author, slug)}`;
   return {
     title: skill.seo.title.en,
     description: skill.seo.description.en,
@@ -31,7 +31,7 @@ export async function generateMetadata({
       canonical,
       languages: {
         en: canonical,
-        zh: `https://floatboat.ai${skillPath("zh", slug)}`,
+        zh: `https://floatboat.ai${skillPath("zh", author, slug)}`,
       },
     },
   };
@@ -40,10 +40,10 @@ export async function generateMetadata({
 export default async function SkillPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ author: string; slug: string }>;
 }) {
-  const { slug } = await params;
-  const skill = getFeaturedSkill(slug);
+  const { author, slug } = await params;
+  const skill = getFeaturedSkill(author, slug);
   if (!skill) notFound();
   return <SkillDetailPage skill={skill} locale="en" />;
 }

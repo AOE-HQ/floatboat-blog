@@ -5,6 +5,7 @@ export type LocalizedText = Record<SkillLocale, string>;
 
 export type FeaturedSkill = {
   slug: string;
+  authorHandle: string;
   name: string;
   publisher: string;
   publisherType: "Organization" | "Person";
@@ -24,6 +25,7 @@ export type FeaturedSkill = {
   summary: LocalizedText;
   scenarios: Array<{ title: LocalizedText; body: LocalizedText }>;
   example: { prompt: LocalizedText; result: LocalizedText };
+  commands?: Array<{ label: LocalizedText; command: string; note: LocalizedText }>;
   steps: Array<{ title: LocalizedText; body: LocalizedText }>;
   outputs: Record<SkillLocale, string[]>;
   checks: Record<SkillLocale, string[]>;
@@ -31,12 +33,11 @@ export type FeaturedSkill = {
 };
 
 export const FEATURED_SKILLS = featuredSkills as FeaturedSkill[];
-export const FEATURED_SKILL_SLUGS = FEATURED_SKILLS.map((skill) => skill.slug);
 
-export function getFeaturedSkill(slug: string): FeaturedSkill | undefined {
-  return FEATURED_SKILLS.find((skill) => skill.slug === slug);
+export function getFeaturedSkill(author: string, slug: string): FeaturedSkill | undefined {
+  return FEATURED_SKILLS.find((skill) => skill.authorHandle === author && skill.slug === slug);
 }
 
-export function skillPath(locale: SkillLocale, slug: string): string {
-  return `${locale === "zh" ? "/zh" : ""}/combostore/${slug}`;
+export function skillPath(locale: SkillLocale, author: string, slug: string): string {
+  return `${locale === "zh" ? "/zh" : ""}/combostore/${author}/${slug}`;
 }

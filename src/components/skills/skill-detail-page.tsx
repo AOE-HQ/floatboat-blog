@@ -48,6 +48,9 @@ const copy = {
     exampleTitle: "A better way to ask for it",
     prompt: "Illustrative request",
     result: "What to look for",
+    commandsLabel: "From the original skill",
+    commandsTitle: "The commands behind discovery",
+    commandsNote: "These are upstream skills CLI examples, not a claim about Floatboat's current install command.",
     stepsLabel: "Workflow",
     stepsTitle: "How the skill approaches the job",
     outputsLabel: "Practical result",
@@ -81,6 +84,9 @@ const copy = {
     exampleTitle: "怎样提出更具体的任务",
     prompt: "示意请求",
     result: "理想的交付",
+    commandsLabel: "来自原始 Skill",
+    commandsTitle: "发现过程背后的命令",
+    commandsNote: "以下是上游 skills CLI 示例，不代表 Floatboat 当前客户端的安装命令。",
     stepsLabel: "工作流程",
     stepsTitle: "这个 Skill 如何处理任务",
     outputsLabel: "实际产出",
@@ -109,7 +115,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
     "@type": "WebPage",
     name: skill.seo.title[locale],
     description: skill.seo.description[locale],
-    url: `https://floatboat.ai${skillPath(locale, skill.slug)}`,
+    url: `https://floatboat.ai${skillPath(locale, skill.authorHandle, skill.slug)}`,
     about: {
       "@type": "CreativeWork",
       name: skill.name,
@@ -157,13 +163,15 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
 
       <section className="border-y border-black/[0.07] bg-white/40 py-20 sm:py-24"><div className="mx-auto max-w-7xl px-5 sm:px-8"><SectionHeading eyebrow={t.exampleLabel} title={t.exampleTitle} /><div className="mt-9 grid gap-5 lg:grid-cols-2"><div className="rounded-3xl border border-black/10 bg-[var(--ob-color-text)] p-7 text-white"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">{t.prompt}</p><p className="mt-5 text-lg leading-8">“{skill.example.prompt[locale]}”</p></div><div className="rounded-3xl border border-black/10 bg-white p-7"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-muted)]">{t.result}</p><p className="mt-5 text-lg leading-8">{skill.example.result[locale]}</p></div></div></div></section>
 
+      {skill.commands && <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24"><SectionHeading eyebrow={t.commandsLabel} title={t.commandsTitle} description={t.commandsNote} /><div className="mt-8 overflow-hidden rounded-3xl border border-black/10 bg-white/60">{skill.commands.map((item) => <div key={item.command} className="grid gap-4 border-b border-black/10 p-6 last:border-b-0 lg:grid-cols-[0.8fr_1.2fr_1.5fr] lg:items-center"><h3 className="font-semibold">{item.label[locale]}</h3><code className="overflow-x-auto rounded-xl bg-[var(--ob-color-text)] px-4 py-3 text-sm text-white">{item.command}</code><p className="text-sm leading-6 text-[var(--ob-color-text-subtle)]">{item.note[locale]}</p></div>)}</div></section>}
+
       <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24"><SectionHeading eyebrow={t.stepsLabel} title={t.stepsTitle} /><ol className="mt-10 grid gap-8 lg:grid-cols-3">{skill.steps.map((step, index) => <li key={index} className="border-t-2 border-[var(--ob-color-text)] pt-6"><span className="font-serif text-4xl text-[var(--ob-color-accent)]">0{index + 1}</span><h3 className="mt-5 font-serif text-2xl">{step.title[locale]}</h3><p className="mt-4 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{step.body[locale]}</p></li>)}</ol></section>
 
       <section className="border-y border-black/[0.07] bg-white/30 py-20 sm:py-24"><div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-2"><div><SectionHeading eyebrow={t.outputsLabel} title={t.outputsTitle} /><ul className="mt-8 space-y-4">{skill.outputs[locale].map((item) => <li key={item} className="border-l-2 border-[var(--ob-color-accent)] pl-4 leading-7">{item}</li>)}</ul></div><div><SectionHeading eyebrow={t.checksLabel} title={t.checksTitle} /><ul className="mt-8 space-y-4">{skill.checks[locale].map((item) => <li key={item} className="border-l-2 border-black/25 pl-4 leading-7">{item}</li>)}</ul></div></div></section>
 
       <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24"><SectionHeading eyebrow={t.faqLabel} title={t.faqTitle} /><div className="mt-9 max-w-4xl divide-y divide-black/10 border-t border-b border-black/10">{skill.faq.map((item) => <details key={item.question.en} className="group py-5"><summary className="flex cursor-pointer list-none items-start justify-between gap-5 font-semibold"><span>{item.question[locale]}</span><span aria-hidden className="text-xl group-open:rotate-45">+</span></summary><p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{item.answer[locale]}</p></details>)}</div></section>
 
-      {related.length > 0 && <section className="border-t border-black/[0.07] py-16"><div className="mx-auto max-w-7xl px-5 sm:px-8"><SectionHeading eyebrow={t.relatedLabel} title={t.relatedTitle} /><div className="mt-7 grid gap-4 sm:grid-cols-2">{related.map((item) => <Link key={item.slug} href={skillPath(locale, item.slug)} className="rounded-2xl border border-black/10 bg-white/60 p-6 transition hover:bg-white"><p className="text-xs uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{item.category[locale]}</p><h3 className="mt-2 font-serif text-2xl">{item.name} →</h3><p className="mt-3 text-sm leading-6 text-[var(--ob-color-text-subtle)]">{item.hero.description[locale]}</p></Link>)}</div></div></section>}
+      {related.length > 0 && <section className="border-t border-black/[0.07] py-16"><div className="mx-auto max-w-7xl px-5 sm:px-8"><SectionHeading eyebrow={t.relatedLabel} title={t.relatedTitle} /><div className="mt-7 grid gap-4 sm:grid-cols-2">{related.map((item) => <Link key={item.slug} href={skillPath(locale, item.authorHandle, item.slug)} className="rounded-2xl border border-black/10 bg-white/60 p-6 transition hover:bg-white"><p className="text-xs uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{item.category[locale]}</p><h3 className="mt-2 font-serif text-2xl">{item.name} →</h3><p className="mt-3 text-sm leading-6 text-[var(--ob-color-text-subtle)]">{item.hero.description[locale]}</p></Link>)}</div></div></section>}
 
       <section className="bg-[var(--ob-color-text)] py-20 text-white"><div className="mx-auto flex max-w-7xl flex-col gap-8 px-5 sm:px-8 lg:flex-row lg:items-center lg:justify-between"><div><h2 className="font-serif text-4xl tracking-tight sm:text-5xl">{t.ctaTitle}</h2><p className="mt-4 max-w-2xl leading-7 text-white/70">{t.ctaBody}</p><p className="mt-3 text-xs text-white/50">{t.noEndorsement}</p></div><div className="flex shrink-0 flex-wrap gap-3"><a href={download} className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold text-[var(--ob-color-text)]">{t.ctaPrimary}</a><a href={skill.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full border border-white/40 px-6 text-sm font-semibold">{t.ctaSecondary} ↗</a></div></div></section>
     </main>

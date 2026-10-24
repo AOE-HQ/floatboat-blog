@@ -6,7 +6,7 @@ import { getAllPosts } from "@/lib/posts";
 import { createLocaleSiteHelpers } from "@/lib/locale-site";
 import { siteHelpers } from "@/lib/openblog-config";
 import { PERSONA_SLUGS } from "@/lib/use-cases/persona-pages";
-import { FEATURED_SKILL_SLUGS, skillPath } from "@/lib/skills/featured-skills";
+import { FEATURED_SKILLS, skillPath } from "@/lib/skills/featured-skills";
 
 function extractUrlEntries(xml: string): string {
   const match = xml.match(/<urlset[^>]*>([\s\S]*)<\/urlset>/);
@@ -27,9 +27,9 @@ export function buildCombinedSitemapXml(): string {
     `https://floatboat.ai/zh/use-cases/${slug}`,
   ]).concat(["https://floatboat.ai/use-cases", "https://floatboat.ai/zh/use-cases"]).map((url) => `<url><loc>${url}</loc></url>`).join("\n");
 
-  const skillPages = FEATURED_SKILL_SLUGS.flatMap((slug) => [
-    `https://floatboat.ai${skillPath("en", slug)}`,
-    `https://floatboat.ai${skillPath("zh", slug)}`,
+  const skillPages = FEATURED_SKILLS.flatMap(({ authorHandle, slug }) => [
+    `https://floatboat.ai${skillPath("en", authorHandle, slug)}`,
+    `https://floatboat.ai${skillPath("zh", authorHandle, slug)}`,
   ]).map((url) => `<url><loc>${url}</loc></url>`).join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>

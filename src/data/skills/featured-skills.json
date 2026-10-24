@@ -1,20 +1,21 @@
 [
   {
     "slug": "find-skills",
+    "authorHandle": "vercel-labs",
     "name": "Find Skills",
     "publisher": "Vercel Labs",
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/skills",
-    "category": { "en": "Skill discovery", "zh": "Skill 发现" },
+    "category": { "en": "Meta-skill · Skill discovery", "zh": "元 Skill · Skill 发现" },
     "seo": {
-      "title": { "en": "Find Skills by Vercel Labs: Discover Agent Skills", "zh": "Find Skills 使用指南：发现适合任务的 Agent Skills" },
+      "title": { "en": "Find Skills Meta-Skill by Vercel Labs | Agent Skill Discovery", "zh": "Find Skills 元 Skill：发现适合任务的 Agent Skills" },
       "description": { "en": "Learn when to use Vercel Labs' Find Skills, how it searches the open skills ecosystem, and what to check before installing a result.", "zh": "了解 Vercel Labs 的 Find Skills 如何搜索开放 Agent Skills 生态，以及选择和安装前需要核对什么。" },
       "keywords": { "en": ["find skills", "Vercel find-skills", "agent skill discovery"], "zh": ["Find Skills", "查找 Agent Skills", "Vercel Skills"] }
     },
     "hero": {
-      "eyebrow": { "en": "Community Skill · Discovery", "zh": "社区 Skill · 发现工具" },
-      "title": { "en": "Find the skill before you write another prompt.", "zh": "先找到合适的 Skill，再决定要不要从零写提示词。" },
+      "eyebrow": { "en": "Vercel Labs · Meta-skill", "zh": "Vercel Labs · 元 Skill" },
+      "title": { "en": "Find Skills: the meta-skill for discovering skills.", "zh": "Find Skills：帮 Agent 寻找其他 Skills 的元 Skill。" },
       "description": { "en": "Find Skills helps an agent turn a task into a focused skills search, compare candidates, and present an install path. It is a discovery workflow, not a guarantee that every result is safe or suitable.", "zh": "Find Skills 把具体任务转成 Skill 搜索，整理候选项并给出安装路径。它负责发现，不替你保证每个结果都安全或适用。" }
     },
     "summary": {
@@ -39,6 +40,11 @@
       "prompt": { "en": "Find a skill for reviewing a Next.js application's accessibility. Show me the source, what it covers, and the install command; do not install it yet.", "zh": "帮我找能检查 Next.js 应用无障碍问题的 Skill。列出来源、检查范围和安装方式，先不要安装。" },
       "result": { "en": "A useful response is a small set of candidates with source links and trade-offs—not an automatic installation or a claim that the top-ranked result is always best.", "zh": "合格的结果应是少量候选项、来源链接和取舍，而不是自动安装，更不能把榜首当成必然最优。" }
     },
+    "commands": [
+      { "label": { "en": "Find a skill", "zh": "搜索 Skill" }, "command": "npx skills find [query]", "note": { "en": "Search by the specific task, not a broad category.", "zh": "按具体任务搜索，不只输入宽泛分类。" } },
+      { "label": { "en": "Install a selected skill", "zh": "安装已选 Skill" }, "command": "npx skills add <package>", "note": { "en": "Use the original package path after reviewing its source.", "zh": "核对来源后，再使用原始包路径安装。" } },
+      { "label": { "en": "Update installed skills", "zh": "更新已安装 Skill" }, "command": "npx skills update", "note": { "en": "Review upstream changes before applying updates.", "zh": "更新前检查上游变更。" } }
+    ],
     "steps": [
       { "title": { "en": "Name the job", "zh": "说清任务" }, "body": { "en": "Identify the domain and a specific action, such as reviewing accessibility rather than simply ‘web development’.", "zh": "确定领域和具体动作，比如“检查无障碍问题”，而不是只搜“网页开发”。" } },
       { "title": { "en": "Search and compare", "zh": "搜索并比较" }, "body": { "en": "Check known skills and narrow the query; compare the publisher, described scope, and original instructions.", "zh": "查看已有 Skill，缩小查询范围，并比较发布者、描述的能力边界和原始说明。" } },
@@ -56,6 +62,7 @@
   },
   {
     "slug": "human-writing",
+    "authorHandle": "kkkkhazix",
     "name": "Human Writing",
     "publisher": "KKKKhazix",
     "publisherType": "Person",

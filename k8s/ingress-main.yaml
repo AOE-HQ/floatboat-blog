@@ -46,28 +46,28 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /combostore/find-skills
+          - path: /combostore/vercel-labs/find-skills
             pathType: Exact
             backend:
               service:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /combostore/human-writing
+          - path: /combostore/kkkkhazix/human-writing
             pathType: Exact
             backend:
               service:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/find-skills
+          - path: /zh/combostore/vercel-labs/find-skills
             pathType: Exact
             backend:
               service:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/human-writing
+          - path: /zh/combostore/kkkkhazix/human-writing
             pathType: Exact
             backend:
               service:
@@ -189,28 +189,28 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /combostore/find-skills
+          - path: /combostore/vercel-labs/find-skills
             pathType: Exact
             backend:
               service:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /combostore/human-writing
+          - path: /combostore/kkkkhazix/human-writing
             pathType: Exact
             backend:
               service:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/find-skills
+          - path: /zh/combostore/vercel-labs/find-skills
             pathType: Exact
             backend:
               service:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/human-writing
+          - path: /zh/combostore/kkkkhazix/human-writing
             pathType: Exact
             backend:
               service:
