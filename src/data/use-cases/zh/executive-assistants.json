@@ -258,15 +258,11 @@
   },
   "finalCta": {
     "eyebrow": "下一场会议之前",
-    "title": "先把会议简报准备到可以审阅的状态。",
+    "title": "先把会议简报准备到可以审阅的状态",
     "description": "用议程与真实资料准备 Brief；对外承诺和发送决定仍由人作出。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-executive-assistants&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "了解 Work Agent 如何工作",
-      "href": "/zh/agent-workspace"
     }
   }
 }

@@ -377,8 +377,8 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Let the task choose the route.",
-      "zh": "让任务决定模型路径。"
+      "en": "Let the task choose the route",
+      "zh": "让任务决定模型路径"
     },
     "description": {
       "en": "Use Auto Mode to route everyday and complex tasks without choosing a model for each step. Stay focused on the work.",

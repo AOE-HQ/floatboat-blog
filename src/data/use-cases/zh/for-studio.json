@@ -252,15 +252,11 @@
   },
   "finalCta": {
     "eyebrow": "下一次专业交接",
-    "title": "让下一位制作成员拿到更清楚的材料包。",
+    "title": "让下一位制作成员拿到更清楚的材料包",
     "description": "汇集核准简报、源文件与当前反馈；在进入制作前，由团队审阅交接内容与专业判断。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-studio&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "查看工作空间如何支持 Agent",
-      "href": "/zh/agent-workspace"
     }
   }
 }

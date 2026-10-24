@@ -258,15 +258,11 @@
   },
   "finalCta": {
     "eyebrow": "面试开始之前",
-    "title": "把面试材料准备好，录用判断仍由人负责。",
+    "title": "把面试材料准备好，录用判断仍由人负责",
     "description": "依据核准岗位要求准备结构化面试材料；问题由人审阅，候选人决定也由人作出。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-recruiters&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "了解 Work Agent 如何工作",
-      "href": "/zh/agent-workspace"
     }
   }
 }

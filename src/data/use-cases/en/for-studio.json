@@ -252,15 +252,11 @@
   },
   "finalCta": {
     "eyebrow": "The next specialist handoff",
-    "title": "Give the next specialist a clearer production packet.",
+    "title": "Give the next specialist a clearer production packet",
     "description": "Connect the approved brief, source files, and feedback. Review the handoff before production work begins.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-studio&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "See how the workspace supports the agent",
-      "href": "/agent-workspace"
     }
   }
 }

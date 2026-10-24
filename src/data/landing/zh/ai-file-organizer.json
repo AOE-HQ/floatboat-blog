@@ -76,9 +76,8 @@
   },
   "finalCta": {
     "eyebrow": "先审阅，再整理",
-    "title": "整理文件夹，同时保留控制权。",
+    "title": "整理文件夹，同时保留控制权",
     "description": "让 Floatboat 提出结构、审查重要变更，并在本地整理已经批准的文件。",
-    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=file-organizer&download_placement=final_cta" },
-    "secondaryCta": { "label": "对比文件整理工具", "href": "/zh/blog/best-ai-file-organizer" }
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=file-organizer&download_placement=final_cta" }
   }
 }

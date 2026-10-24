@@ -258,15 +258,11 @@
   },
   "finalCta": {
     "eyebrow": "Keep the audit trail",
-    "title": "Keep every figure attached to its assumptions.",
+    "title": "Keep every figure attached to its assumptions",
     "description": "Start with one closed period or company. Check dates, units, sources, and assumptions before reusing the analysis.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-financial-analysts&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "Explore how the Work Agent works",
-      "href": "/agent-workspace"
     }
   }
 }

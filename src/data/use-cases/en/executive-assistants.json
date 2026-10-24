@@ -258,15 +258,11 @@
   },
   "finalCta": {
     "eyebrow": "Before the next meeting",
-    "title": "Walk into the meeting with the brief prepared.",
+    "title": "Walk into the meeting with the brief prepared",
     "description": "Use the agenda and real source material to prepare a reviewable brief. People still decide what to promise and what to send.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-executive-assistants&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "Explore how the Work Agent works",
-      "href": "/agent-workspace"
     }
   }
 }

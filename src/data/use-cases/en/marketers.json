@@ -258,15 +258,11 @@
   },
   "finalCta": {
     "eyebrow": "From approved brief to campaign",
-    "title": "Build the campaign packet from approved material.",
+    "title": "Build the campaign packet from approved material",
     "description": "Prepare channel variants from an approved brief and source asset. Review every claim against the original decision.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-marketers&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "Explore how the Work Agent works",
-      "href": "/agent-workspace"
     }
   }
 }

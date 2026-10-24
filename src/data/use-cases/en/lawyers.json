@@ -122,9 +122,8 @@
   },
   "finalCta": {
     "eyebrow": "Preparation, not legal judgment",
-    "title": "Prepare the matter; keep the legal call yours.",
+    "title": "Prepare the matter; keep the legal call yours",
     "description": "Use a bounded matter folder and trusted template to draft a document. A qualified professional makes the legal call.",
-    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=final_cta" },
-    "secondaryCta": { "label": "See how the workspace supports the agent", "href": "/agent-workspace" }
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=final_cta" }
   }
 }

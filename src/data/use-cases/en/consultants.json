@@ -259,15 +259,11 @@
   },
   "finalCta": {
     "eyebrow": "From evidence to recommendation",
-    "title": "Bring the next client recommendation into focus.",
+    "title": "Bring the next client recommendation into focus",
     "description": "Give the Work Agent the client question and approved evidence. Check the source trail before sharing its recommendation.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-consultants&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "See how the workspace supports the agent",
-      "href": "/agent-workspace"
     }
   }
 }

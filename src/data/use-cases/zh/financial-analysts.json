@@ -258,15 +258,11 @@
   },
   "finalCta": {
     "eyebrow": "保留数字的来路",
-    "title": "让每个数字都带着来源和假设。",
+    "title": "让每个数字都带着来源和假设",
     "description": "先选一个已关账期间或一家研究公司；复用分析前，核对日期、单位、来源与假设。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-financial-analysts&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "了解 Work Agent 如何工作",
-      "href": "/zh/agent-workspace"
     }
   }
 }

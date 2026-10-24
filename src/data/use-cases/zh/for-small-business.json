@@ -252,15 +252,11 @@
   },
   "finalCta": {
     "eyebrow": "先改善一次交接",
-    "title": "让下一次客户交接更清楚，也更容易复用。",
+    "title": "让下一次客户交接更清楚，也更容易复用",
     "description": "选一项输入明确、负责人清楚的运营任务。先验证这次交接，再考虑扩大 Work Agent 的职责。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-small-business&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "查看工作空间如何支持 Agent",
-      "href": "/zh/agent-workspace"
     }
   }
 }

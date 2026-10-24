@@ -115,7 +115,6 @@ export const personaPageSchema = z.object({
     title: z.string().min(1),
     description: z.string().min(1),
     primaryCta: linkSchema,
-    secondaryCta: linkSchema,
   }),
 });
 

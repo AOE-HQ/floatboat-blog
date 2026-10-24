@@ -76,9 +76,8 @@
   },
   "finalCta": {
     "eyebrow": "从日程走向执行",
-    "title": "让已经预留的时间真正带来执行结果。",
+    "title": "让已经预留的时间真正带来执行结果",
     "description": "使用 Floatboat 准备日程工作、运行重复步骤，并将后续行动留在项目上下文中。",
-    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=scheduling&download_placement=final_cta" },
-    "secondaryCta": { "label": "什么是 Agentic Calendar？", "href": "/zh/blog/what-is-agentic-calendar" }
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=scheduling&download_placement=final_cta" }
   }
 }

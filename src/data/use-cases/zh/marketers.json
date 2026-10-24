@@ -258,15 +258,11 @@
   },
   "finalCta": {
     "eyebrow": "从核准 Brief 到活动素材",
-    "title": "用已批准的资料准备下一轮活动素材。",
+    "title": "用已批准的资料准备下一轮活动素材",
     "description": "从一份核准 Brief 和源素材出发，准备不同渠道的版本；逐条核对主张，并保留反馈来源。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-marketers&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "了解 Work Agent 如何工作",
-      "href": "/zh/agent-workspace"
     }
   }
 }

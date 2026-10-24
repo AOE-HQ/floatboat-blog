@@ -383,8 +383,8 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Match the GPT lane to the deliverable.",
-      "zh": "让 GPT 能力路径匹配最终交付物。"
+      "en": "Match the GPT lane to the deliverable",
+      "zh": "让 GPT 能力路径匹配最终交付物"
     },
     "description": {
       "en": "Choose Astra for reasoning now, and use the wider OpenAI matrix as each capability becomes available in its product surface.",

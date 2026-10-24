@@ -259,15 +259,11 @@
   },
   "finalCta": {
     "eyebrow": "The next teaching unit",
-    "title": "Build the next lesson pack from sources you trust.",
+    "title": "Build the next lesson pack from sources you trust",
     "description": "Bring the upcoming unit and trusted material. Review the lesson pack before adapting it to your class.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-teachers&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "See how the workspace supports the agent",
-      "href": "/agent-workspace"
     }
   }
 }

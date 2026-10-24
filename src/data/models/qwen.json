@@ -309,8 +309,8 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Qwen 3.7 Max is configured below the picker.",
-      "zh": "Qwen 3.7 Max 已完成底层配置。"
+      "en": "Qwen 3.7 Max is configured below the picker",
+      "zh": "Qwen 3.7 Max 已完成底层配置"
     },
     "description": {
       "en": "Qwen 3.7 Max has a configured capacity profile, not a default picker entry. Explore the models available in the client today.",

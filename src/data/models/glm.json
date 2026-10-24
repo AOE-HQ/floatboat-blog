@@ -284,8 +284,8 @@
   ],
   "finalCta": {
     "title": {
-      "en": "GLM protocol support is ready below the picker.",
-      "zh": "GLM 协议支持已在选择器下层就绪。"
+      "en": "GLM protocol support is ready below the picker",
+      "zh": "GLM 协议支持已在选择器下层就绪"
     },
     "description": {
       "en": "GLM-5 and GLM-4 protocol handling is prepared below the picker. For work today, compare the models you can select.",

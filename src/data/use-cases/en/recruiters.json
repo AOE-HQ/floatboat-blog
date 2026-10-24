@@ -258,15 +258,11 @@
   },
   "finalCta": {
     "eyebrow": "Before the interview",
-    "title": "Prepare the interview; keep hiring judgment human.",
+    "title": "Prepare the interview; keep hiring judgment human",
     "description": "Draft an interview packet from the approved role brief. People review each question and make the hiring decision.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-recruiters&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "Explore how the Work Agent works",
-      "href": "/agent-workspace"
     }
   }
 }

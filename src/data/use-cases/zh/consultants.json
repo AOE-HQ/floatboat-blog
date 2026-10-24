@@ -259,15 +259,11 @@
   },
   "finalCta": {
     "eyebrow": "从证据走向建议",
-    "title": "把下一份客户建议建立在可追溯的资料上。",
+    "title": "把下一份客户建议建立在可追溯的资料上",
     "description": "交给 Work Agent 项目问题、核准证据和交付要求；建议发给客户之前，先检查每条关键依据。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-consultants&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "了解工作空间如何支持 Agent",
-      "href": "/zh/agent-workspace"
     }
   }
 }

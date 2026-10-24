@@ -33,7 +33,6 @@ const labels = {
     productTitle: "Give your agent a place to do the work",
     productBody: "Review the Skill's source and requirements, then bring the real task into Floatboat's work agent and desktop workspace.",
     download: "Download Floatboat",
-    source: "Read the original skill",
     independence: "Independent guide. Vercel Labs has not endorsed Floatboat.",
   },
   zh: {
@@ -64,7 +63,6 @@ const labels = {
     productTitle: "让 Agent 有地方把工作做完",
     productBody: "先核对 Skill 的来源和环境要求，再把真实任务带进 Floatboat 的工作 Agent 与桌面工作空间。",
     download: "下载 Floatboat",
-    source: "阅读原始 Skill",
     independence: "本页为独立介绍；Vercel Labs 未对 Floatboat 作出背书。",
   },
 } as const;
@@ -163,7 +161,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       <FaqBand locale={locale} items={skill.faq.map((item) => ({ question: item.question[locale], answer: item.answer[locale] }))} />
 
       <div id="floatboat">
-        <FinalCta eyebrow={t.product} title={t.productTitle} description={t.productBody} primary={{ label: t.download, href: download }} secondary={{ label: t.source, href: skill.sourceUrl }} />
+        <FinalCta eyebrow={t.product} title={t.productTitle} description={t.productBody} primary={{ label: t.download, href: download }} />
       </div>
     </main>
   );

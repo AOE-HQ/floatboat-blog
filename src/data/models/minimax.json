@@ -272,8 +272,8 @@
   ],
   "finalCta": {
     "title": {
-      "en": "MiniMax M2 is configured below the picker.",
-      "zh": "MiniMax M2 已完成底层配置。"
+      "en": "MiniMax M2 is configured below the picker",
+      "zh": "MiniMax M2 已完成底层配置"
     },
     "description": {
       "en": "MiniMax M2 has a configured protocol and economic profile, not a default picker entry. Compare currently available options.",

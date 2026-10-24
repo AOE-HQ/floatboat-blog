@@ -122,9 +122,8 @@
   },
   "finalCta": {
     "eyebrow": "准备材料，不代替法律判断",
-    "title": "先整理案件材料，法律判断仍由你负责。",
+    "title": "先整理案件材料，法律判断仍由你负责",
     "description": "围绕边界明确的案件文件夹和可信模板，准备一份可审阅的文档；法律结论仍由专业人士负责。",
-    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-lawyers&download_placement=final_cta" },
-    "secondaryCta": { "label": "了解工作空间如何支持 Agent", "href": "/zh/agent-workspace" }
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-lawyers&download_placement=final_cta" }
   }
 }
