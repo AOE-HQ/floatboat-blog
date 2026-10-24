@@ -22,6 +22,7 @@
       "en": "This Vercel Labs skill is useful when you know the job but not the name of the agent capability you need. Its instructions call for identifying the domain and task, checking the skills.sh leaderboard, then searching more narrowly and presenting a shortlist for the user to choose from.",
       "zh": "当你知道要完成什么工作，却不知道该找哪一个 Skill 时，可以使用 Vercel Labs 的 Find Skills。它先识别任务和领域，再查看 skills.sh 榜单或进一步搜索，最后把候选项交给你选择。"
     },
+    "upstreamInstall": "npx skills add vercel-labs/skills --skill find-skills",
     "scenarios": [
       {
         "title": { "en": "A task outside your usual toolkit", "zh": "遇到陌生领域的任务" },
@@ -35,6 +36,16 @@
         "title": { "en": "Repeatable skill discovery", "zh": "反复需要扩充能力" },
         "body": { "en": "Keep the discovery step consistent across projects, while making the final installation decision for each workspace separately.", "zh": "把发现过程固定下来，但每个项目是否安装仍单独判断。" }
       }
+    ],
+    "notFor": [
+      { "en": "You already know the exact skill and its source; open that project's instructions directly.", "zh": "已经知道目标 Skill 及其来源时，直接阅读该项目的原始说明更快。" },
+      { "en": "You need a security or maintenance audit; a search result and popularity signals cannot provide one.", "zh": "需要安全或维护状态审核时，搜索排名和热度都不能替代审查。" },
+      { "en": "Your environment cannot run the upstream Skills CLI; use the source repository to assess other supported options.", "zh": "当前环境不能运行上游 Skills CLI 时，应到原始仓库核对其他可用方式。" }
+    ],
+    "seoSections": [
+      { "title": { "en": "How does Find Skills discover agent skills?", "zh": "Find Skills 如何发现 Agent Skills？" }, "body": { "en": "It turns a task into a narrower search: identify the domain, name the action, check established options, then use the Skills CLI to look for candidates. The result is a shortlist to inspect, not an automatic choice of the first hit.", "zh": "它先把任务拆成领域和具体动作，查看已有的成熟选项，再用 Skills CLI 搜索候选项。结果应是一份待核对的短名单，而不是自动采用第一条搜索结果。" } },
+      { "title": { "en": "How should you compare the results?", "zh": "找到多个 Skill 后该如何比较？" }, "body": { "en": "Start with task fit and the original publisher. Open each candidate's SKILL.md and any bundled scripts, then check required tools, permissions, maintenance, and installation scope. Install counts or repository stars can inform discovery, but do not prove quality or safety.", "zh": "先看任务是否匹配、原发布方是谁，再阅读每个候选的 SKILL.md 和附带脚本，核对所需工具、权限、维护情况及安装范围。安装量与仓库星标可作发现线索，但不能证明质量或安全。" } },
+      { "title": { "en": "Does Find Skills install or verify a skill for you?", "zh": "Find Skills 会替你安装或验证 Skill 吗？" }, "body": { "en": "Finding, reviewing, and installing are separate steps. The skill can surface commands and recommend candidates, but you should choose the source and authorize installation only after reviewing what the package will add to your agent environment.", "zh": "发现、审查和安装是三个独立步骤。它可以提供候选项与安装命令，但仍应先检查包会给 Agent 环境添加什么，再自行决定是否安装。" } }
     ],
     "example": {
       "prompt": { "en": "Find a skill for reviewing a Next.js application's accessibility. Show me the source, what it covers, and the install command; do not install it yet.", "zh": "帮我找能检查 Next.js 应用无障碍问题的 Skill。列出来源、检查范围和安装方式，先不要安装。" },
