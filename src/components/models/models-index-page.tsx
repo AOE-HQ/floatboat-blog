@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
+import { MarketingHero } from "@/components/marketing/marketing-hero";
 
 import { MODEL_FAMILIES, localize, modelPath, type ModelLocale } from "@/lib/models/model-pages";
 
@@ -23,19 +24,15 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
       <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
         <Link href={isZh ? "/zh" : "/"}>{isZh ? "首页" : "Home"}</Link><span className="mx-2">/</span><span>{isZh ? "模型" : "Models"}</span>
       </nav>
-      <section className="mx-auto max-w-7xl px-5 pb-16 pt-16 text-center sm:px-8 sm:pb-24 sm:pt-24">
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--ob-color-accent)]">{isZh ? "多模型 Agent Workspace" : "A multi-model Agent Workspace"}</p>
-        <h1 className="mx-auto mt-5 max-w-5xl font-serif text-5xl leading-[0.98] tracking-[-0.055em] sm:text-7xl">
-          {isZh ? "模型可以变化，工作空间不必重来。" : "Change the model without rebuilding the workspace."}
-        </h1>
-        <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">
-          {isZh ? "开箱即用，无需自备 API Key。在同一个桌面工作空间中使用全员可用的 Auto Mode，或从订阅配置开放的模型中直接选择。" : "Ready out of the box with no API key required. Use Auto Mode, available to everyone, or directly select models enabled by your subscription configuration."}
-        </p>
-        <div className="mt-9 flex flex-wrap justify-center gap-3">
-          <a href={isZh ? DOWNLOAD.replace("/download/", "/zh/download/") : DOWNLOAD} className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{isZh ? "下载 Floatboat" : "Download Floatboat"}</a>
-          <Link href={isZh ? "/zh/agent-workspace" : "/agent-workspace"} className="inline-flex min-h-12 items-center rounded-full border border-black/10 bg-white/55 px-6 text-sm font-semibold hover:bg-white">{isZh ? "了解 Agent Workspace" : "Explore Agent Workspace"}</Link>
-        </div>
-      </section>
+      <MarketingHero
+        eyebrow={isZh ? "多模型 Agent Workspace" : "A multi-model Agent Workspace"}
+        title={isZh ? "模型可以变化，工作空间不必重来。" : "Change the model without rebuilding the workspace."}
+        description={isZh ? "开箱即用，无需自备 API Key。在同一个桌面工作空间中使用全员可用的 Auto Mode，或从订阅配置开放的模型中直接选择。" : "Ready out of the box with no API key required. Use Auto Mode, available to everyone, or directly select models enabled by your subscription configuration."}
+      />
+      <div className="mx-auto flex max-w-7xl flex-wrap justify-center gap-3 px-5 pb-12 sm:px-8">
+        <a href={isZh ? DOWNLOAD.replace("/download/", "/zh/download/") : DOWNLOAD} className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{isZh ? "下载 Floatboat" : "Download Floatboat"}</a>
+        <Link href={isZh ? "/zh/agent-workspace" : "/agent-workspace"} className="inline-flex min-h-12 items-center rounded-full border border-black/10 bg-white/55 px-6 text-sm font-semibold hover:bg-white">{isZh ? "了解 Agent Workspace" : "Explore Agent Workspace"}</Link>
+      </div>
 
       <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">

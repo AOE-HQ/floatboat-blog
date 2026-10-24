@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
+import { MarketingHero } from "@/components/marketing/marketing-hero";
 
 import type { PersonaPageData } from "@/lib/use-cases/persona-page-schema";
 import { personaPath } from "@/lib/use-cases/persona-pages";
@@ -61,13 +62,7 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
       <span className="mx-2">/</span><span>{page.breadcrumb}</span>
     </nav>
 
-    <section className="mx-auto max-w-5xl px-5 py-12 text-center sm:px-8 sm:py-16 lg:pb-12 lg:pt-14">
-      <div className="mx-auto max-w-4xl">
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--ob-color-accent)]">{page.hero.eyebrow}</p>
-        <h1 className="mt-4 font-serif text-5xl leading-[0.98] tracking-[-0.055em] sm:text-6xl lg:text-7xl">{titleCase(pageHeading)}</h1>
-        <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-[var(--ob-color-text-subtle)] sm:text-lg">{page.hero.description}</p>
-      </div>
-    </section>
+    <MarketingHero eyebrow={page.hero.eyebrow} title={titleCase(pageHeading)} description={page.hero.description} />
 
     <PersonaLiveDemo page={page} />
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
 import { HowSection } from "@/components/marketing/how-section";
+import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { UseCasesSection } from "@/components/marketing/use-cases-section";
 import { skillPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
 
@@ -20,6 +21,7 @@ const labels = {
     kindValue: "Independent meta-skill",
     install: "Upstream installation",
     installNote: "Skills CLI command from the publisher. This is not a Floatboat installation command.",
+    sourceTitle: "Publisher, source, and installation",
     example: "A realistic request",
     request: "Ask the agent",
     expected: "A useful result",
@@ -47,6 +49,7 @@ const labels = {
     kindValue: "独立发布的元 Skill",
     install: "上游安装方式",
     installNote: "这是发布方使用的 Skills CLI 命令，并非 Floatboat 的安装命令。",
+    sourceTitle: "发布方、原始来源与安装方式",
     example: "一个具体请求",
     request: "向 Agent 提问",
     expected: "应该得到什么",
@@ -101,30 +104,22 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
         <span aria-current="page">{skill.name}</span>
       </nav>
 
-      <section id="skill" className="mx-auto max-w-7xl px-5 pb-16 pt-14 sm:px-8 lg:pb-24">
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_0.7fr] lg:items-start">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{t.skill} · {skill.category[locale]}</p>
-            <h1 className="mt-5 font-serif text-5xl tracking-[-0.055em] sm:text-7xl">{skill.name}</h1>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{skill.hero.description[locale]}</p>
-            <p className="mt-4 text-sm text-[var(--ob-color-muted)]">{t.publisher} <strong className="font-semibold text-[var(--ob-color-text)]">{skill.publisher}</strong></p>
-            <p className="mt-2 text-xs text-[var(--ob-color-muted)]">{t.independence}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href={skill.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{t.viewSource} ↗</a>
-              <a href={skill.repositoryUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full border border-black/10 bg-white/60 px-6 text-sm font-semibold hover:bg-white">{t.viewRepo} ↗</a>
-            </div>
+      <MarketingHero eyebrow={`${t.skill} · ${skill.category[locale]}`} title={skill.hero.title[locale]} description={skill.hero.description[locale]} />
+
+      <section id="skill" className="mx-auto max-w-7xl px-5 pb-16 sm:px-8 lg:pb-24">
+        <div className="mx-auto max-w-4xl border-t border-black/10 pt-10 text-center">
+          <h2 className="font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{t.sourceTitle}</h2>
+          <p className="mt-4 text-sm text-[var(--ob-color-muted)]">{t.publisher} <strong className="font-semibold text-[var(--ob-color-text)]">{skill.publisher}</strong> · {t.kind}: {t.kindValue}</p>
+          <p className="mt-2 text-xs text-[var(--ob-color-muted)]">{t.independence}</p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <a href={skill.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{t.viewSource} ↗</a>
+            <a href={skill.repositoryUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full border border-black/10 bg-white/60 px-6 text-sm font-semibold hover:bg-white">{t.viewRepo} ↗</a>
           </div>
-          <aside className="rounded-2xl border border-black/10 bg-white/70 p-6 shadow-sm">
-            <dl className="divide-y divide-black/10 text-sm">
-              <div className="flex justify-between gap-4 pb-4"><dt className="text-[var(--ob-color-muted)]">{t.publisher}</dt><dd className="font-semibold">{skill.publisher}</dd></div>
-              <div className="flex justify-between gap-4 py-4"><dt className="text-[var(--ob-color-muted)]">{t.kind}</dt><dd className="text-right font-semibold">{t.kindValue}</dd></div>
-            </dl>
-            <div className="border-t border-black/10 pt-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{t.install}</p>
-              <code className="mt-3 block overflow-x-auto rounded-xl bg-[var(--ob-color-text)] p-4 text-xs leading-6 text-white">{skill.upstreamInstall}</code>
-              <p className="mt-3 text-xs leading-5 text-[var(--ob-color-text-subtle)]">{t.installNote}</p>
-            </div>
-          </aside>
+          <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-black/10 bg-white/70 p-6 text-left shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{t.install}</p>
+            <code className="mt-3 block overflow-x-auto rounded-xl bg-[var(--ob-color-text)] p-4 text-xs leading-6 text-white">{skill.upstreamInstall}</code>
+            <p className="mt-3 text-xs leading-5 text-[var(--ob-color-text-subtle)]">{t.installNote}</p>
+          </div>
         </div>
         <div className="mt-16 grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
           <div><h2 className="font-serif text-2xl">{t.example}</h2><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{skill.summary[locale]}</p></div>

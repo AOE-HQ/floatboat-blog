@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
 import { HowSection } from "@/components/marketing/how-section";
+import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { UseCasesSection } from "@/components/marketing/use-cases-section";
 
 import { FeatureDemo } from "./feature-demo";
@@ -60,24 +61,19 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       <span className="mx-2">/</span><span>{page.breadcrumb}</span>
     </nav>
 
-    <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.86fr_1.14fr] lg:py-24">
-      <div>
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--ob-color-accent)]">{page.hero.eyebrow}</p>
-        <h1 className="font-serif text-5xl leading-[0.98] tracking-[-0.055em] sm:text-7xl">{page.hero.title}</h1>
-        <p className="mt-6 max-w-xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{page.hero.description}</p>
-        <div className="mt-8 flex flex-wrap gap-3"><Cta {...page.hero.primaryCta} primary /><Cta {...page.hero.secondaryCta} /></div>
-        <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--ob-color-muted)]">
-          {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-[var(--ob-color-text)]">✓</span>{item}</li>)}
-        </ul>
+    <MarketingHero eyebrow={page.hero.eyebrow} title={page.hero.title} description={page.hero.description} />
+
+    <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 lg:pb-24">
+      <FeatureDemo items={page.scenario.steps.map((step) => step.title)} locale={page.locale} />
+      <div className="mx-auto mt-8 max-w-3xl text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{page.demo.eyebrow}</p>
+        <h2 className="mt-2 font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{page.demo.title}</h2>
+        <p className="mt-2 text-sm leading-6 text-[var(--ob-color-text-subtle)]">{page.demo.description}</p>
       </div>
-      <div>
-        <div className="mb-5 px-1">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{page.demo.eyebrow}</p>
-          <h2 className="mt-2 font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{page.demo.title}</h2>
-          <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--ob-color-text-subtle)]">{page.demo.description}</p>
-        </div>
-        <FeatureDemo items={page.scenario.steps.map((step) => step.title)} locale={page.locale} />
-      </div>
+      <div className="mt-6 flex flex-wrap justify-center gap-3"><Cta {...page.hero.primaryCta} primary /><Cta {...page.hero.secondaryCta} /></div>
+      <ul className="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-[var(--ob-color-muted)]">
+        {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-[var(--ob-color-text)]">✓</span>{item}</li>)}
+      </ul>
     </section>
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">

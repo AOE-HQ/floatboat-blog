@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { FinalCta } from "@/components/final-cta";
+import { MarketingHero } from "@/components/marketing/marketing-hero";
 
 import { ModelPickerDemo } from "./model-picker-demo";
 import {
@@ -74,18 +75,10 @@ export function ModelDetailPage({
         <span className="mx-2">/</span>
         <span>{model.name}</span>
       </nav>
-      <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.86fr_1.14fr] lg:py-24">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--ob-color-accent)]">
-            {localize(model.badge, locale)} · Floatboat
-          </p>
-          <h1 className="mt-4 font-serif text-5xl leading-[0.98] tracking-[-0.055em] sm:text-7xl">
-            {localize(model.hero.title, locale)}
-          </h1>
-          <p className="mt-6 max-w-xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">
-            {localize(model.hero.description, locale)}
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+      <MarketingHero eyebrow={`${localize(model.badge, locale)} · Floatboat`} title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)} />
+      <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 lg:pb-24" aria-label={isZh ? "模型预览与入口" : "Model preview and access"}>
+        <ModelPickerDemo model={model} locale={locale} />
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Cta href={download} primary>
               {model.access === "capacity"
                 ? isZh
@@ -101,9 +94,7 @@ export function ModelDetailPage({
             >
               {isZh ? "查看全部模型" : "View all models"}
             </Link>
-          </div>
         </div>
-        <ModelPickerDemo model={model} locale={locale} />
       </section>
 
       <section className="mx-auto max-w-7xl px-5 pb-16 sm:px-8 lg:pb-24">

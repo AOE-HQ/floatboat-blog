@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
+import { MarketingHero } from "@/components/marketing/marketing-hero";
 
 import catalog from "@/data/use-cases/catalog.json";
 import { getPersonaPage, personaPath, type PersonaLocale, type PersonaSlug } from "@/lib/use-cases/persona-pages";
@@ -104,16 +105,11 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
       <Link href={isZh ? "/zh" : "/"} className="hover:text-[var(--ob-color-text)]">{isZh ? "首页" : "Home"}</Link><span className="mx-2">/</span><span>{isZh ? "使用场景" : "Use Cases"}</span>
     </nav>
 
-    <section className="mx-auto grid max-w-7xl items-end gap-10 px-5 pb-20 pt-14 sm:px-8 sm:pb-24 lg:grid-cols-[1.25fr_0.75fr] lg:pt-20">
-      <div>
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--ob-color-accent)]">{copy.eyebrow}</p>
-        <h1 className="mt-5 max-w-5xl font-serif text-5xl leading-[0.96] tracking-[-0.055em] sm:text-6xl lg:text-7xl">{titleCase(copy.title)}</h1>
-      </div>
-      <div className="border-l-2 border-[#1b1a18] pl-6">
-        <p className="text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.description}</p>
-        <div className="mt-7 flex flex-wrap gap-3"><a href={isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=hero" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=hero"} className="rounded-full bg-[var(--ob-color-primary)] px-5 py-3 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{copy.primary}</a><a href="#catalog" className="rounded-full border border-black/10 bg-white/60 px-5 py-3 text-sm font-semibold hover:bg-white">{copy.secondary}</a></div>
-      </div>
-    </section>
+    <MarketingHero eyebrow={copy.eyebrow} title={titleCase(copy.title)} description={copy.description} />
+    <div className="mx-auto flex max-w-7xl flex-wrap justify-center gap-3 px-5 pb-12 sm:px-8">
+      <a href={isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=hero" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=hero"} className="rounded-full bg-[var(--ob-color-primary)] px-5 py-3 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{copy.primary}</a>
+      <a href="#catalog" className="rounded-full border border-black/10 bg-white/60 px-5 py-3 text-sm font-semibold hover:bg-white">{copy.secondary}</a>
+    </div>
 
     <section id="catalog" className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-7xl">
