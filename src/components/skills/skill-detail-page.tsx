@@ -31,7 +31,7 @@ const labels = {
     outcome: "What you can take away",
     checks: "What to check first",
     productTitle: "Give your agent a place to do the work",
-    productBody: "Finding a skill is useful when it helps move a real task forward. Floatboat brings your work agent, files, and ongoing work together on desktop. Review the original skill and its requirements before deciding how to use it in your environment.",
+    productBody: "Review the Skill's source and requirements, then bring the real task into Floatboat's work agent and desktop workspace.",
     download: "Download Floatboat",
     source: "Read the original skill",
     independence: "Independent guide. Vercel Labs has not endorsed Floatboat.",
@@ -62,7 +62,7 @@ const labels = {
     outcome: "你能拿到什么",
     checks: "使用前先核对",
     productTitle: "让 Agent 有地方把工作做完",
-    productBody: "找到 Skill 的价值，在于让真实任务继续推进。Floatboat 把工作 Agent、文件和持续进行的工作放在桌面端同一处。使用前仍需阅读原始 Skill 和环境要求，决定适合自己的接入方式。",
+    productBody: "先核对 Skill 的来源和环境要求，再把真实任务带进 Floatboat 的工作 Agent 与桌面工作空间。",
     download: "下载 Floatboat",
     source: "阅读原始 Skill",
     independence: "本页为独立介绍；Vercel Labs 未对 Floatboat 作出背书。",
@@ -114,6 +114,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
             <h1 className="mt-5 font-serif text-5xl tracking-[-0.055em] sm:text-7xl">{skill.name}</h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{skill.hero.description[locale]}</p>
             <p className="mt-4 text-sm text-[var(--ob-color-muted)]">{t.publisher} <strong className="font-semibold text-[var(--ob-color-text)]">{skill.publisher}</strong></p>
+            <p className="mt-2 text-xs text-[var(--ob-color-muted)]">{t.independence}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={skill.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{t.viewSource} ↗</a>
               <a href={skill.repositoryUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full border border-black/10 bg-white/60 px-6 text-sm font-semibold hover:bg-white">{t.viewRepo} ↗</a>
@@ -162,7 +163,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       <FaqBand locale={locale} items={skill.faq.map((item) => ({ question: item.question[locale], answer: item.answer[locale] }))} />
 
       <div id="floatboat">
-        <FinalCta eyebrow={t.product} title={t.productTitle} description={t.productBody} primary={{ label: t.download, href: download }} secondary={{ label: t.source, href: skill.sourceUrl }} note={t.independence} />
+        <FinalCta eyebrow={t.product} title={t.productTitle} description={t.productBody} primary={{ label: t.download, href: download }} secondary={{ label: t.source, href: skill.sourceUrl }} />
       </div>
     </main>
   );

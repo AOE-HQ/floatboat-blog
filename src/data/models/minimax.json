@@ -276,8 +276,8 @@
       "zh": "MiniMax M2 已完成底层配置。"
     },
     "description": {
-      "en": "Its protocol and economic profile are ready without claiming a public client entry.",
-      "zh": "其协议与经济画像已就绪，但当前没有客户端公开入口。"
+      "en": "MiniMax M2 has a configured protocol and economic profile, not a default picker entry. Compare currently available options.",
+      "zh": "MiniMax M2 的协议与经济画像已就绪，但当前不在默认选择器；可先比较已经上线的模型。"
     }
   }
 }

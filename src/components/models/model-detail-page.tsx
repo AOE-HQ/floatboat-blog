@@ -425,11 +425,15 @@ export function ModelDetailPage({
       </section>
 
       <FinalCta
+        eyebrow={localize(model.badge, locale)}
         title={localize(model.finalCta.title, locale)}
         description={localize(model.finalCta.description, locale)}
         primary={model.access === "capacity"
           ? { label: isZh ? "查看已上线模型" : "Explore available models", href: modelPath(locale) }
           : { label: isZh ? "下载 Floatboat" : "Download Floatboat", href: download }}
+        secondary={model.access === "capacity"
+          ? { label: isZh ? "了解畅用模式" : "Explore Auto Mode", href: modelPath(locale, "auto-mode") }
+          : { label: isZh ? "比较其他模型" : "Compare other models", href: modelPath(locale) }}
       />
       {jsonLd.map((item, index) => (
         <script

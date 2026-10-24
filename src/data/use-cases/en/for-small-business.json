@@ -253,7 +253,7 @@
   "finalCta": {
     "eyebrow": "Improve a handoff",
     "title": "Make the next customer handoff easier to repeat.",
-    "description": "Choose one operating task with known inputs and a named reviewer. Improve that handoff before asking the Work Agent to take on more.",
+    "description": "Choose one recurring task with known inputs and a reviewer. Improve that handoff before delegating more work.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-small-business&download_placement=final_cta"

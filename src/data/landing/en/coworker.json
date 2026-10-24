@@ -79,6 +79,7 @@
     ]
   },
   "finalCta": {
+    "eyebrow": "Delegate a bounded task",
     "title": "Hand off the task, not your judgment.",
     "description": "Give the Floatboat Coworker a clear assignment and receive work you can inspect, revise, and approve.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=final_cta" },

@@ -259,7 +259,7 @@
   "finalCta": {
     "eyebrow": "Keep the audit trail",
     "title": "Keep every figure attached to its assumptions.",
-    "description": "Use one closed period or company as the starting scope. Check dates, units, sources, and assumptions before the analysis is reused.",
+    "description": "Start with one closed period or company. Check dates, units, sources, and assumptions before reusing the analysis.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-financial-analysts&download_placement=final_cta"

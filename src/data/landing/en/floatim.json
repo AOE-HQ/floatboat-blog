@@ -75,6 +75,7 @@
     ]
   },
   "finalCta": {
+    "eyebrow": "Keep work in the thread",
     "title": "Keep the conversation attached to the work.",
     "description": "Bring the people involved, the agents doing the work, and the deliverables they discuss into the same project context.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=floatim&download_placement=final_cta" },

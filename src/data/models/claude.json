@@ -371,7 +371,7 @@
       "zh": "给复杂工作足够空间，保持前后一致。"
     },
     "description": {
-      "en": "Select Claude when architecture, code, and long-running decisions need to remain aligned.",
+      "en": "Choose Claude for architecture, coding, and documentation work that needs a consistent project context over time.",
       "zh": "当架构、代码和长程决策需要持续对齐时，选择 Claude。"
     }
   }

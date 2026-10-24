@@ -75,6 +75,7 @@
     ]
   },
   "finalCta": {
+    "eyebrow": "From calendar to execution",
     "title": "Put execution behind the time you already reserved.",
     "description": "Use Floatboat to prepare scheduled work, run repeatable steps, and keep the follow-up attached to the project.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=scheduling&download_placement=final_cta" },

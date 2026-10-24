@@ -79,6 +79,7 @@
     ]
   },
   "finalCta": {
+    "eyebrow": "委派边界清楚的任务",
     "title": "交出任务，但不交出你的判断。",
     "description": "给 Floatboat Coworker 一项清晰委派，收回你可以检查、修订和批准的工作。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=final_cta" },

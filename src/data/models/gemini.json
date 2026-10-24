@@ -382,7 +382,7 @@
       "zh": "需要广度选 Pro，需要速度选 Flash。"
     },
     "description": {
-      "en": "Both Gemini routes stay connected to the same files and project workflow.",
+      "en": "Use Gemini Pro for cross-file analysis and Flash for quick passes, with both routes working from the same project.",
       "zh": "两条 Gemini 路径都与同一套文件和项目工作流保持连接。"
     }
   }

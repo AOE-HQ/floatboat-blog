@@ -75,6 +75,7 @@
     ]
   },
   "finalCta": {
+    "eyebrow": "让工作留在讨论中",
     "title": "让讨论始终连着正在推进的工作。",
     "description": "把参与的人、执行任务的 Agent 和讨论中的交付物留在同一项目背景里。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=floatim&download_placement=final_cta" },

@@ -352,8 +352,8 @@
       "zh": "把 Pro 留给真正需要 Pro 的问题。"
     },
     "description": {
-      "en": "Switch between depth and efficiency without moving the project or rebuilding its context.",
-      "zh": "在不迁移项目、不重建上下文的前提下切换深度与效率。"
+      "en": "Switch between V4 Pro depth and V4.1 Flash speed while your files and project context stay in the same place.",
+      "zh": "需要深度推理时选 V4 Pro，需要快速问答时选 V4.1 Flash；项目文件与上下文无需搬迁。"
     }
   }
 }

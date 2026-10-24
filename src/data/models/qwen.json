@@ -313,8 +313,8 @@
       "zh": "Qwen 3.7 Max 已完成底层配置。"
     },
     "description": {
-      "en": "The page records its exact readiness state without claiming a public client entry.",
-      "zh": "本页准确记录其就绪状态，不声称已经提供客户端公开入口。"
+      "en": "Qwen 3.7 Max has a configured capacity profile, not a default picker entry. Explore the models available in the client today.",
+      "zh": "Qwen 3.7 Max 已登记容量画像，但当前不在默认选择器；可先查看客户端现有选项。"
     }
   }
 }

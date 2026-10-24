@@ -373,8 +373,8 @@
       "zh": "通过视频 Combo 使用 Seedance。"
     },
     "description": {
-      "en": "Choose the full engine for finished work or Fast for rapid iteration.",
-      "zh": "成片选择完整引擎，快速迭代选择 Fast。"
+      "en": "Use Seedance 2.0 for video generation through its Combo, or Fast when you need draft clips and rapid iteration.",
+      "zh": "通过视频 Combo 调用 Seedance 2.0 制作视频；需要快速试镜头时，可以切换到 Fast 引擎。"
     }
   }
 }

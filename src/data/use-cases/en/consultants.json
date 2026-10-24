@@ -260,7 +260,7 @@
   "finalCta": {
     "eyebrow": "From evidence to recommendation",
     "title": "Bring the next client recommendation into focus.",
-    "description": "Give the Work Agent the engagement question, approved evidence, and required deliverable. Review the source trail before the recommendation reaches the client.",
+    "description": "Give the Work Agent the client question and approved evidence. Check the source trail before sharing its recommendation.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-consultants&download_placement=final_cta"

@@ -260,7 +260,7 @@
   "finalCta": {
     "eyebrow": "Sources before synthesis",
     "title": "Carry the source trail into the next synthesis.",
-    "description": "Define the corpus and extraction fields before asking for a summary. Keep each claim traceable when the work moves into the next draft.",
+    "description": "Define the corpus and extraction fields first. Keep each claim traceable when moving the synthesis into a draft.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-researchers&download_placement=final_cta"

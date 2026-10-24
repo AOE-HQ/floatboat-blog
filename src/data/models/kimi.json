@@ -285,8 +285,8 @@
       "zh": "Kimi K3 已完成底层容量配置。"
     },
     "description": {
-      "en": "The page records readiness without claiming a public client entry.",
-      "zh": "本页记录其就绪状态，不声称已经提供客户端公开入口。"
+      "en": "Kimi K3 has a configured long-context capacity profile, but no default picker entry. Explore the models available today.",
+      "zh": "Kimi K3 已登记长上下文容量，但当前没有默认选择器入口；可先查看现在能直接使用的模型。"
     }
   }
 }
