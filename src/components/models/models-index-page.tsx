@@ -82,9 +82,9 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
       </section>
 
       <FinalCta
-        eyebrow={isZh ? "模型目录" : "Model directory"}
-        title={isZh ? "先选一项任务，再决定交给哪个模型" : "Start with the task, then choose the model"}
-        description={isZh ? "需要深度推理、长文档分析还是快速日常处理？查看各模型当前的接入位置，再到 Floatboat 中开始实际工作。" : "Deep reasoning, long-document analysis, or fast everyday work? Check where each model is available, then bring the task into Floatboat."}
+        eyebrow={isZh ? "先确认接入状态" : "Choose by availability"}
+        title={isZh ? "按任务与接入入口比较模型" : "Compare models by task and access path"}
+        description={isZh ? "先确认哪些模型可在对话中选择、哪些通过生图或视频 Combo 使用，以及哪些仅完成底层配置，再决定下一项任务怎么做。" : "See which models are selectable in chat, available through image or video Combos, or only configured below the picker before starting work."}
         primary={{ label: isZh ? "下载 Floatboat" : "Download Floatboat", href: isZh ? DOWNLOAD.replace("/download/", "/zh/download/") : DOWNLOAD }}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />

@@ -367,12 +367,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Give complex work enough room to stay coherent",
-      "zh": "给复杂工作足够空间，保持前后一致"
+      "en": "Choose Opus depth or Sonnet pace for this project",
+      "zh": "复杂架构选 Opus，日常编程选 Sonnet"
     },
     "description": {
-      "en": "Choose Claude for architecture, coding, and documentation work that needs a consistent project context over time.",
-      "zh": "当架构、代码和长程决策需要持续对齐时，选择 Claude。"
+      "en": "Use Opus 4.6 for difficult architecture and Sonnet 4.6 for everyday coding or agent work, with the same project files in view.",
+      "zh": "复杂架构任务可选 Opus 4.6，日常编程与 Agent 工作可选 Sonnet 4.6；两者都从当前项目文件出发。"
     }
   }
 }

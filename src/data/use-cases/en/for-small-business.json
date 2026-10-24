@@ -251,9 +251,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Improve a handoff",
-    "title": "Make the next customer handoff easier to repeat",
-    "description": "Choose one recurring task with known inputs and a reviewer. Improve that handoff before delegating more work.",
+    "eyebrow": "The next customer handoff",
+    "title": "Turn one customer request into a clean work packet",
+    "description": "Add the request, current policy, and responsible owner. Review the handoff without letting the agent set prices or contact customers.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-small-business&download_placement=final_cta"

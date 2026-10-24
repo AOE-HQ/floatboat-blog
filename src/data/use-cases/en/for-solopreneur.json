@@ -251,9 +251,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "One client request",
-    "title": "Move the client request toward a reviewable draft",
-    "description": "Bring the client request and your trusted template. Keep pricing, promises, and final approval in your hands.",
+    "eyebrow": "The next client proposal",
+    "title": "Draft the proposal without outsourcing the promise",
+    "description": "Give the Work Agent the client brief and your template. You approve scope, pricing, and every reply before it goes out.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-solopreneur&download_placement=final_cta"

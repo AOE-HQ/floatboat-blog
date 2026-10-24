@@ -257,9 +257,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "From approved brief to campaign",
-    "title": "Build the campaign packet from approved material",
-    "description": "Prepare channel variants from an approved brief and source asset. Review every claim against the original decision.",
+    "eyebrow": "From signed-off brief to channels",
+    "title": "Carry approved claims into every campaign draft",
+    "description": "Start from the signed-off brief, product proof, and brand rules. Review each channel variant before any claim goes live.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-marketers&download_placement=final_cta"

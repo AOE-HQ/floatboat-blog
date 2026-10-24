@@ -251,9 +251,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "先改善一次交接",
-    "title": "让下一次客户交接更清楚，也更容易复用",
-    "description": "选一项输入明确、负责人清楚的运营任务。先验证这次交接，再考虑扩大 Work Agent 的职责。",
+    "eyebrow": "下一次客户交接",
+    "title": "把一条客户需求整理成清楚的工作包",
+    "description": "提供客户需求、现行政策和负责人员；先审阅交接材料，不把定价或对客沟通交给 Agent。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-small-business&download_placement=final_cta"

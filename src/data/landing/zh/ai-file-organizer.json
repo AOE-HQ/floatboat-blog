@@ -75,9 +75,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "先审阅，再整理",
-    "title": "整理文件夹，同时保留控制权",
-    "description": "让 Floatboat 提出结构、审查重要变更，并在本地整理已经批准的文件。",
+    "eyebrow": "移动文件之前",
+    "title": "先看整理方案，再决定移动哪些文件",
+    "description": "选一个杂乱文件夹，先核对分组与重命名建议，再只执行你批准的本地移动。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=file-organizer&download_placement=final_cta" }
   }
 }

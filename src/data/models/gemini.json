@@ -378,12 +378,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Use Pro for breadth, Flash for pace",
-      "zh": "需要广度选 Pro，需要速度选 Flash"
+      "en": "Read across files with Pro, move quickly with Flash",
+      "zh": "跨文件分析选 Pro，快速处理选 Flash"
     },
     "description": {
-      "en": "Use Gemini Pro for cross-file analysis and Flash for quick passes, with both routes working from the same project.",
-      "zh": "两条 Gemini 路径都与同一套文件和项目工作流保持连接。"
+      "en": "Choose Gemini 3.1 Pro for multimodal, long-context analysis and 3.8 Flash for fast passes over the same material.",
+      "zh": "用 Gemini 3.1 Pro 分析长上下文与多模态资料，用 3.8 Flash 快速处理同一项目中的日常任务。"
     }
   }
 }

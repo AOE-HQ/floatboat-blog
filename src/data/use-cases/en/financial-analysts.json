@@ -257,9 +257,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Keep the audit trail",
-    "title": "Keep every figure attached to its assumptions",
-    "description": "Start with one closed period or company. Check dates, units, sources, and assumptions before reusing the analysis.",
+    "eyebrow": "Before the variance note travels",
+    "title": "Make the variance commentary traceable to the figures",
+    "description": "Use a closed period, approved metrics, and source tables to prepare commentary an analyst can verify line by line.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-financial-analysts&download_placement=final_cta"

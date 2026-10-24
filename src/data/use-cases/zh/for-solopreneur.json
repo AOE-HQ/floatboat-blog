@@ -251,9 +251,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一条客户需求开始",
-    "title": "先把客户需求推进成可审阅的初稿",
-    "description": "用客户需求、可信模板和交付要求作为任务说明；报价、承诺与最终批准仍由你决定。",
+    "eyebrow": "下一份客户提案",
+    "title": "先完成提案初稿，承诺仍由你决定",
+    "description": "交给 Work Agent 客户需求和你的模板；范围、报价与对外回复仍由你亲自批准。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-solopreneur&download_placement=final_cta"

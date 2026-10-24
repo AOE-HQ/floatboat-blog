@@ -377,12 +377,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Let the task choose the route",
-      "zh": "让任务决定模型路径"
+      "en": "Route the next task without picking a model",
+      "zh": "下一项任务交给畅用模式自动选路"
     },
     "description": {
-      "en": "Use Auto Mode to route everyday and complex tasks without choosing a model for each step. Stay focused on the work.",
-      "zh": "当完成工作比管理模型名单更重要时，使用 Auto Mode。"
+      "en": "Start with the real brief and files. Auto Mode chooses among available models and falls back when needed, so you can review the result.",
+      "zh": "带上真实任务和文件开始，畅用模式会在可用模型之间调度，并在需要时自动降级；交付结果仍由你检查。"
     }
   }
 }

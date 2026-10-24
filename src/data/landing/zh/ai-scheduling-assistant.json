@@ -75,9 +75,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从日程走向执行",
-    "title": "让已经预留的时间真正带来执行结果",
-    "description": "使用 Floatboat 准备日程工作、运行重复步骤，并将后续行动留在项目上下文中。",
+    "eyebrow": "日程到来之前",
+    "title": "让下一条日程带着准备工作一起到来",
+    "description": "把简报、资料和重复步骤连接到日程事件，让 Agent 在会议或截止时间前准备好可审阅的材料。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=scheduling&download_placement=final_cta" }
   }
 }

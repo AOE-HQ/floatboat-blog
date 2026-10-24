@@ -257,9 +257,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "保留数字的来路",
-    "title": "让每个数字都带着来源和假设",
-    "description": "先选一个已关账期间或一家研究公司；复用分析前，核对日期、单位、来源与假设。",
+    "eyebrow": "差异说明发出之前",
+    "title": "让财务差异说明能追溯到每个数字",
+    "description": "从已关账期间、核准指标和原始表格出发，准备能逐项核对的分析说明。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-financial-analysts&download_placement=final_cta"

@@ -121,9 +121,9 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Preparation, not legal judgment",
-    "title": "Prepare the matter; keep the legal call yours",
-    "description": "Use a bounded matter folder and trusted template to draft a document. A qualified professional makes the legal call.",
+    "eyebrow": "Before legal review",
+    "title": "Prepare the matter record without delegating judgment",
+    "description": "Use approved matter files and templates to organize facts, compare versions, and draft a review copy; counsel makes the legal call.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=final_cta" }
   }
 }
