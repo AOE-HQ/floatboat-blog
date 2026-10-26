@@ -6,6 +6,7 @@ import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { RelatedPageLinks } from "@/components/related-page-links";
 import { FEATURED_SKILLS, skillPath, type SkillLocale } from "@/lib/skills/featured-skills";
 import { getPublisherDirectory } from "@/lib/skills/publisher-directories";
+import { skillCategoryPath } from "@/lib/skills/skill-categories";
 import { getPublisherProfile, publisherProfilePath } from "@/lib/skills/publisher-profiles";
 import { publisherHeading } from "@/lib/skills/title-case-heading";
 
@@ -77,6 +78,7 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
           </li>)}
         </ul>
         <p className="mt-4 text-xs leading-5 text-[var(--ob-color-muted)]">{labels.independent}</p>
+        <Link href={skillCategoryPath(locale)} className="mt-5 inline-block text-sm font-semibold underline underline-offset-4">{isZh ? "按任务浏览 Skill 分类" : "Browse Skills by Task"} →</Link>
       </section>
 
       <FaqBand locale={locale} items={t.faq} />

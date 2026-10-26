@@ -7,6 +7,7 @@ import { HowSection } from "@/components/marketing/how-section";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { UseCasesSection } from "@/components/marketing/use-cases-section";
 import { skillPath, skillPublisherPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
+import { skillCategoryPath } from "@/lib/skills/skill-categories";
 
 const labels = {
   en: {
@@ -162,6 +163,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       <FaqBand locale={locale} items={skill.faq.map((item) => ({ question: item.question[locale], answer: item.answer[locale] }))} />
 
       <RelatedPageLinks family="skills" currentId={`${skill.authorHandle}/${skill.slug}`} locale={locale} />
+      <div className="mx-auto max-w-7xl px-5 pb-4 text-right sm:px-8"><Link href={skillCategoryPath(locale)} className="text-sm font-semibold underline underline-offset-4">{isZh ? "按任务浏览全部 Skill 分类" : "Browse All Skill Categories"} →</Link></div>
 
       <div id="floatboat">
         <FinalCta eyebrow={`${t.product} · ${skill.pageCopy.ctaEyebrow[locale]}`} title={skill.pageCopy.ctaTitle[locale]} description={skill.pageCopy.ctaDescription[locale]} primary={{ label: t.download, href: download }} />

@@ -13,7 +13,7 @@ export type PublisherProfile = {
   type: "Person" | "Organization";
   profileUrl: string;
   projects: Array<{ name: string; url: string; en: { kind: string; description: string }; zh: { kind: string; description: string } }>;
-  skills?: Array<{ name: string; url: string }>;
+  skills?: Array<{ name: string; url: string; description: { en: string; zh: string } }>;
   en: ProfileCopy;
   zh: ProfileCopy;
 };

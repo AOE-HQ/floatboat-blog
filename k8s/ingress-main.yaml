@@ -46,6 +46,20 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /combostore/categories
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/categories
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /combostore/vercel-labs
             pathType: Prefix
             backend:
@@ -267,6 +281,20 @@ spec:
                 port:
                   number: 80
           - path: /zh/models
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/categories
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/categories
             pathType: Prefix
             backend:
               service:

@@ -90,6 +90,13 @@ const NAV_MENUS: NavMenuGroup[] = [
         path: "/combostore",
       },
       {
+        en: "Skill Categories",
+        zh: "Skill 分类",
+        descEn: "Browse third-party Agent Skills by task",
+        descZh: "按任务浏览第三方 Agent Skills",
+        path: "/combostore/categories",
+      },
+      {
         en: "Timeshop",
         zh: "Timeshop",
         descEn: "Browse subscribable automation calendars",

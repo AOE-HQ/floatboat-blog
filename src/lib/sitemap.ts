@@ -7,6 +7,7 @@ import { createLocaleSiteHelpers } from "@/lib/locale-site";
 import { siteHelpers } from "@/lib/openblog-config";
 import { PERSONA_SLUGS } from "@/lib/use-cases/persona-pages";
 import { FEATURED_SKILLS, skillPath, skillPublisherPath } from "@/lib/skills/featured-skills";
+import { skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
 import { PUBLISHER_HANDLES, publisherDirectoryPath } from "@/lib/skills/publisher-directories";
 
 function extractUrlEntries(xml: string): string {
@@ -29,6 +30,12 @@ export function buildCombinedSitemapXml(): string {
   ]).concat(["https://floatboat.ai/use-cases", "https://floatboat.ai/zh/use-cases"]).map((url) => `<url><loc>${url}</loc></url>`).join("\n");
 
   const skillPages = [
+    `https://floatboat.ai${skillCategoryPath("en")}`,
+    `https://floatboat.ai${skillCategoryPath("zh")}`,
+    ...SKILL_CATEGORY_SLUGS.flatMap((slug) => [
+      `https://floatboat.ai${skillCategoryPath("en", slug)}`,
+      `https://floatboat.ai${skillCategoryPath("zh", slug)}`,
+    ]),
     `https://floatboat.ai${skillPublisherPath("en", "vercel-labs")}`,
     `https://floatboat.ai${skillPublisherPath("zh", "vercel-labs")}`,
       `https://floatboat.ai${skillPublisherPath("en", "morluto")}`,

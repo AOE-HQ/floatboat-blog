@@ -1,6 +1,7 @@
 import relatedPages from "@/data/related-pages.json";
 import publisherProfiles from "@/data/skills/publisher-profiles.json";
 import { FEATURED_SKILLS, skillPath } from "@/lib/skills/featured-skills";
+import { getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
 import { getPublisherProfile, publisherProfilePath } from "@/lib/skills/publisher-profiles";
 import { CORE_FEATURE_SLUGS, featurePath, getCoreFeaturePage, type CoreFeatureSlug } from "@/lib/landing/core-feature-pages";
 import { MODEL_FAMILIES, modelPath, type ModelSlug } from "@/lib/models/model-pages";
@@ -21,6 +22,7 @@ const knownIds: Record<RelatedFamily, string[]> = {
   models: MODEL_FAMILIES.map((model) => model.slug),
   skills: FEATURED_SKILLS.map((skill) => `${skill.authorHandle}/${skill.slug}`),
   features: CORE_FEATURE_SLUGS,
+  "skill-categories": SKILL_CATEGORY_SLUGS,
 };
 
 function validateRelatedPages() {
@@ -77,6 +79,10 @@ function resolveItem(family: RelatedFamily, id: string, locale: RelatedLocale) {
     case "features": {
       const page = getCoreFeaturePage(locale, id as CoreFeatureSlug);
       return { label: page.breadcrumb, href: featurePath(locale, id as CoreFeatureSlug) };
+    }
+    case "skill-categories": {
+      const category = getSkillCategory(id)!;
+      return { label: category.label[locale], href: skillCategoryPath(locale, id) };
     }
   }
 }
