@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
-import { SkillPublisherPage } from "@/components/skills/skill-publisher-page";
+import { PublisherDirectoryPage } from "@/components/skills/publisher-directory-page";
+import { getPublisherProfile } from "@/lib/skills/publisher-profiles";
 
-const title = "Vercel Labs Skills Directory: React, Design, Deployment & Browser";
-const description = "Browse Floatboat's guides to selected Vercel Labs agent skills. Compare React, design, writing, deployment, optimization, and browser workflows, then check each original SKILL.md.";
+const { seoTitle: title, seoDescription: description } = getPublisherProfile("vercel-labs")!.en;
 
 export const metadata: Metadata = {
   title,
@@ -19,5 +19,5 @@ export const metadata: Metadata = {
 };
 
 export default function VercelLabsPage() {
-  return <SkillPublisherPage locale="en" />;
+  return <PublisherDirectoryPage locale="en" handle="vercel-labs" />;
 }

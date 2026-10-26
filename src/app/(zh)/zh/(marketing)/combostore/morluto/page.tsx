@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
-import { MorlutoPublisherPage } from "@/components/skills/morluto-publisher-page";
+import { PublisherDirectoryPage } from "@/components/skills/publisher-directory-page";
+import { getPublisherProfile } from "@/lib/skills/publisher-profiles";
 
-const title = "morluto Agent Skills：REA 逆向工程与项目预览图";
-const description = "查看 morluto 发布的两项 Agent Skill：REA 配套逆向工程指引与 Generate Social Preview，了解适用任务、工具前提及原始 SKILL.md。";
+const { seoTitle: title, seoDescription: description } = getPublisherProfile("morluto")!.zh;
 
 export const metadata: Metadata = {
   title,
@@ -16,5 +16,5 @@ export const metadata: Metadata = {
 };
 
 export default function MorlutoPage() {
-  return <MorlutoPublisherPage locale="zh" />;
+  return <PublisherDirectoryPage locale="zh" handle="morluto" />;
 }

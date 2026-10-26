@@ -4,69 +4,84 @@ import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { PublisherDirectoryNav } from "@/components/skills/publisher-directory-nav";
-import type { SkillLocale } from "@/lib/skills/featured-skills";
-import { type PublisherDirectory, publisherDirectoryPath } from "@/lib/skills/publisher-directories";
+import { FEATURED_SKILLS, skillPath, type SkillLocale } from "@/lib/skills/featured-skills";
+import { getPublisherDirectory } from "@/lib/skills/publisher-directories";
+import { getPublisherProfile, publisherProfilePath } from "@/lib/skills/publisher-profiles";
 import { publisherHeading } from "@/lib/skills/title-case-heading";
 
 const origin = "https://floatboat.ai";
 
-export function PublisherDirectoryPage({ locale, handle, directory }: { locale: SkillLocale; handle: string; directory: PublisherDirectory }) {
-  const t = directory[locale];
+function getSkillLinks(handle: string, locale: SkillLocale) {
+  if (handle === "vercel-labs") {
+    return FEATURED_SKILLS.filter((skill) => skill.authorHandle === handle).map((skill) => ({ name: skill.name, href: skillPath(locale, handle, skill.slug), internal: true }));
+  }
+  const profile = getPublisherProfile(handle);
+  if (profile?.skills) return profile.skills.map((skill) => ({ name: skill.name, href: skill.url, internal: false }));
+  const directory = getPublisherDirectory(handle);
+  return directory?.skills.map((skill) => ({ name: skill.name, href: `${directory.repositoryUrl}/blob/main/${skill.path}`, internal: false })) ?? [];
+}
+
+export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale; handle: string }) {
+  const profile = getPublisherProfile(handle);
+  if (!profile) return null;
+  const t = profile[locale];
   const isZh = locale === "zh";
-  const path = publisherDirectoryPath(locale, handle);
-  const canonical = `${origin}${path}`;
-  const labels = isZh ? { home: "首页", store: "Combo 商店", eyebrow: "发布者目录", count: "项精选 Skill", source: "阅读原始 SKILL.md", repository: "查看仓库", sourceEyebrow: "来源与范围", original: "访问发布者仓库", download: "下载 Floatboat" } : { home: "Home", store: "Combo Store", eyebrow: "Publisher directory", count: "selected Skills", source: "Read original SKILL.md", repository: "View repository", sourceEyebrow: "Source and scope", original: "Visit publisher repository", download: "Download Floatboat" };
+  const skillLinks = getSkillLinks(handle, locale);
+  const canonical = `${origin}${publisherProfilePath(locale, handle)}`;
+  const labels = isZh
+    ? { home: "首页", store: "Combo 商店", publisher: "发布者", profile: "查看发布者主页", project: "查看项目", independent: "Floatboat 根据公开来源独立整理本页，不代表发布者为 Floatboat 背书。", download: "下载 Floatboat" }
+    : { home: "Home", store: "Combo Store", publisher: "Publisher", profile: "Visit Publisher Profile", project: "View Project", independent: "Floatboat independently curates these public sources; this page does not imply publisher endorsement.", download: "Download Floatboat" };
   const jsonLd = {
     "@context": "https://schema.org", "@type": "CollectionPage", name: t.heroTitle, description: t.heroDescription, url: canonical,
-    inLanguage: isZh ? "zh-CN" : "en-US", about: { "@type": directory.publisherType, name: directory.name, url: directory.profileUrl },
-    mainEntity: { "@type": "ItemList", itemListElement: directory.skills.map((skill, index) => ({ "@type": "ListItem", position: index + 1, name: skill.name, url: `${directory.repositoryUrl}/blob/main/${skill.path}` })) },
+    inLanguage: isZh ? "zh-CN" : "en-US", about: { "@type": profile.type, name: profile.name, url: profile.profileUrl },
+    mainEntity: { "@type": "ItemList", itemListElement: profile.projects.map((project, index) => ({ "@type": "ListItem", position: index + 1, name: project.name, url: project.url })) },
     breadcrumb: { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: labels.home, item: `${origin}${isZh ? "/zh" : "/"}` },
       { "@type": "ListItem", position: 2, name: labels.store, item: `${origin}${isZh ? "/zh" : ""}/combostore` },
-      { "@type": "ListItem", position: 3, name: directory.name, item: canonical },
+      { "@type": "ListItem", position: 3, name: profile.name, item: canonical },
     ] },
   };
 
   return (
     <main className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
       <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
-        <Link href={isZh ? "/zh" : "/"}>{labels.home}</Link><span className="mx-2">/</span><a href={`${origin}${isZh ? "/zh" : ""}/combostore`}>{labels.store}</a><span className="mx-2">/</span><span aria-current="page">{directory.name}</span>
+        <Link href={isZh ? "/zh" : "/"}>{labels.home}</Link><span className="mx-2">/</span><Link href={`${isZh ? "/zh" : ""}/combostore`}>{labels.store}</Link><span className="mx-2">/</span><span aria-current="page">{profile.name}</span>
       </nav>
-      <MarketingHero eyebrow={`${labels.eyebrow} · ${directory.name}`} title={publisherHeading(locale, t.heroTitle)} description={t.heroDescription}>
-        <p className="text-center text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{directory.skills.length} {labels.count}</p>
-      </MarketingHero>
 
-      <section className="border-y border-black/[0.07] bg-white/35 px-5 py-16 sm:px-8 sm:py-20">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-4xl font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.listTitle)}</h2>
-          <p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{t.listDescription}</p>
-          <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {directory.skills.map((skill) => <article key={skill.path} className="flex flex-col rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7 shadow-[var(--ob-shadow-raised)]">
-              <span className="w-fit rounded-full bg-black/[0.05] px-3 py-1 text-xs font-semibold text-[var(--ob-color-muted)]">{skill[locale].category}</span>
-              <h3 className="mt-8 font-serif text-2xl tracking-tight">{publisherHeading(locale, skill.name)}</h3>
-              <p className="mt-3 flex-1 leading-7 text-[var(--ob-color-text-subtle)]">{skill[locale].description}</p>
-              <a href={`${directory.repositoryUrl}/blob/main/${skill.path}`} target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex w-fit text-sm font-semibold underline underline-offset-4">{labels.source} ↗</a>
-            </article>)}
-          </div>
+      <MarketingHero eyebrow={`${labels.publisher} · ${profile.name}`} title={publisherHeading(locale, t.heroTitle)} description={t.heroDescription} />
+
+      <section className="mx-auto max-w-7xl px-5 pb-14 sm:px-8 sm:pb-16">
+        <div className="flex flex-col gap-5 border-t border-black/[0.08] pt-8 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-3xl"><h2 className="font-serif text-2xl tracking-tight sm:text-3xl">{publisherHeading(locale, t.aboutTitle)}</h2><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{t.about}</p></div>
+          <a href={profile.profileUrl} target="_blank" rel="noopener noreferrer" className="shrink-0 text-sm font-semibold underline underline-offset-4">{labels.profile} ↗</a>
         </div>
       </section>
 
-      <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl">
-        <h2 className="max-w-4xl font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.checksTitle)}</h2>
-        <p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{t.checksIntro}</p>
-        <div className="mt-9 grid gap-5 md:grid-cols-3">{t.checks.map((check) => <article key={check.title} className="rounded-2xl border border-black/[0.08] bg-white/70 p-6"><h3 className="font-serif text-xl">{publisherHeading(locale, check.title)}</h3><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{check.body}</p></article>)}</div>
+      <section className="border-y border-black/[0.07] bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
+        <h2 className="font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.projectsTitle)}</h2>
+        <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {profile.projects.map((project) => <article key={project.url} className="flex flex-col rounded-2xl border border-black/[0.08] bg-white/70 p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--ob-color-muted)]">{project[locale].kind}</p>
+            <h3 className="mt-4 font-serif text-2xl tracking-tight">{publisherHeading(locale, project.name)}</h3>
+            <p className="mt-3 flex-1 leading-7 text-[var(--ob-color-text-subtle)]">{project[locale].description}</p>
+            <a href={project.url} target="_blank" rel="noopener noreferrer" className="mt-5 w-fit text-sm font-semibold underline underline-offset-4">{labels.project} ↗</a>
+          </article>)}
+        </div>
       </div></section>
 
-      <section className="border-y border-black/[0.07] bg-white/35 px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{labels.sourceEyebrow}</p>
-        <h2 className="mt-3 font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.boundaryTitle)}</h2>
-        <p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{t.boundaryDescription}</p>
-        <a href={directory.repositoryUrl} target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex min-h-12 items-center rounded-full border border-black/10 bg-white/70 px-5 text-sm font-semibold hover:bg-white">{labels.original} ↗</a>
-      </div></section>
+      <section className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16">
+        <div className="flex flex-col gap-3 md:flex-row md:items-baseline md:justify-between"><h2 className="font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.skillsTitle)}</h2><p className="max-w-2xl text-sm leading-6 text-[var(--ob-color-text-subtle)]">{t.skillsIntro}</p></div>
+        <ul className="mt-7 grid gap-x-10 md:grid-cols-2">
+          {skillLinks.map((skill) => <li key={skill.href} className="border-t border-black/[0.08] py-4">
+            {skill.internal ? <Link href={skill.href} className="flex items-center justify-between gap-4 font-semibold hover:underline"><span>{skill.name}</span><span aria-hidden>→</span></Link> : <a href={skill.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between gap-4 font-semibold hover:underline"><span>{skill.name}</span><span aria-hidden>↗</span></a>}
+          </li>)}
+        </ul>
+        <p className="mt-4 text-xs leading-5 text-[var(--ob-color-muted)]">{labels.independent}</p>
+      </section>
 
       <FaqBand locale={locale} items={t.faq} />
       <PublisherDirectoryNav locale={locale} current={handle} />
-      <FinalCta eyebrow={t.ctaEyebrow} title={publisherHeading(locale, t.ctaTitle)} description={t.ctaDescription} primary={{ label: labels.download, href: `${origin}${isZh ? "/zh" : ""}/download/success?from=${handle}-skills&download_placement=final_cta` }} />
+      <FinalCta eyebrow={t.ctaEyebrow} title={publisherHeading(locale, t.ctaTitle)} description={t.ctaDescription} primary={{ label: labels.download, href: `${isZh ? "/zh" : ""}/download/success?from=${handle}-publisher&download_placement=final_cta` }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
     </main>
   );

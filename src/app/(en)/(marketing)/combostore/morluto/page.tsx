@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
-import { MorlutoPublisherPage } from "@/components/skills/morluto-publisher-page";
+import { PublisherDirectoryPage } from "@/components/skills/publisher-directory-page";
+import { getPublisherProfile } from "@/lib/skills/publisher-profiles";
 
-const title = "morluto Agent Skills: REA & Generate Social Preview";
-const description = "Explore morluto's verified Agent Skills for reverse engineering with REA and creating repository social previews. Compare use cases and read the original SKILL.md files.";
+const { seoTitle: title, seoDescription: description } = getPublisherProfile("morluto")!.en;
 
 export const metadata: Metadata = {
   title,
@@ -16,5 +16,5 @@ export const metadata: Metadata = {
 };
 
 export default function MorlutoPage() {
-  return <MorlutoPublisherPage locale="en" />;
+  return <PublisherDirectoryPage locale="en" handle="morluto" />;
 }
