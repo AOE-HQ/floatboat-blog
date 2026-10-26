@@ -257,16 +257,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项活动准备任务交给 Work Agent。",
-    "description": "从一个已批准 Brief 和一份源素材开始，适配真正重要的渠道，同时保留主张、反馈与效果问题的来源。",
+    "eyebrow": "从核准简报到渠道素材",
+    "title": "让每个渠道版本都有可核对的依据",
+    "description": "从核准简报、产品证据和品牌规则出发准备素材；发布前逐一审阅各渠道的主张。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-marketers&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "了解 Work Agent 如何工作",
-      "href": "/zh/agent-workspace"
     }
   }
 }

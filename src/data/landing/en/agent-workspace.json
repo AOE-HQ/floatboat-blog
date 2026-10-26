@@ -79,9 +79,9 @@
     ]
   },
   "finalCta": {
-    "title": "Give agent work a place to continue.",
-    "description": "Bring agents, files, tools, rules, and editable deliverables into one desktop workspace for Mac and Windows.",
-    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=final_cta" },
-    "secondaryCta": { "label": "Delegate to a Work Agent", "href": "/coworker" }
+    "eyebrow": "Keep the project intact",
+    "title": "Continue the same agent project tomorrow",
+    "description": "Reopen the same files, rules, agent decisions, and draft deliverable instead of rebuilding context in a new chat.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=final_cta" }
   }
 }

@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "find-skills",
+    "authorHandle": "vercel-labs",
+    "name": "Find Skills",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/skills",
+    "category": { "en": "Meta-skill · Skill discovery", "zh": "元 Skill · Skill 发现" },
+    "seo": {
+      "title": { "en": "Find Skills Meta-Skill by Vercel Labs | Agent Skill Discovery", "zh": "Find Skills 元 Skill：发现适合任务的 Agent Skills" },
+      "description": { "en": "Learn when to use Vercel Labs' Find Skills, how it searches the open skills ecosystem, and what to check before installing a result.", "zh": "了解 Vercel Labs 的 Find Skills 如何搜索开放 Agent Skills 生态，以及选择和安装前需要核对什么。" },
+      "keywords": { "en": ["find skills", "Vercel find-skills", "agent skill discovery"], "zh": ["Find Skills", "查找 Agent Skills", "Vercel Skills"] }
+    },
+    "hero": {
+      "eyebrow": { "en": "Vercel Labs · Meta-skill", "zh": "Vercel Labs · 元 Skill" },
+      "title": { "en": "Find Skills: the meta-skill for discovering skills", "zh": "Find Skills：帮 Agent 寻找其他 Skills 的元 Skill" },
+      "description": { "en": "Find Skills helps an agent turn a task into a focused skills search, compare candidates, and present an install path. It is a discovery workflow, not a guarantee that every result is safe or suitable.", "zh": "Find Skills 把具体任务转成 Skill 搜索，整理候选项并给出安装路径。它负责发现，不替你保证每个结果都安全或适用。" }
+    },
+    "summary": {
+      "en": "This Vercel Labs skill is useful when you know the job but not the name of the agent capability you need. Its instructions call for identifying the domain and task, checking the skills.sh leaderboard, then searching more narrowly and presenting a shortlist for the user to choose from.",
+      "zh": "当你知道要完成什么工作，却不知道该找哪一个 Skill 时，可以使用 Vercel Labs 的 Find Skills。它先识别任务和领域，再查看 skills.sh 榜单或进一步搜索，最后把候选项交给你选择。"
+    },
+    "upstreamInstall": "npx skills add vercel-labs/skills --skill find-skills",
+    "pageCopy": {
+      "kind": { "en": "Meta-skill for discovering other skills", "zh": "用于发现其他 Skill 的元 Skill" },
+      "installNote": { "en": "This installs the publisher's skill through the open Skills CLI; it is not a Floatboat installation command.", "zh": "这条命令通过开放的 Skills CLI 安装原发布方的 Skill，不是 Floatboat 的安装命令。" },
+      "guideTitle": { "en": "Find the right skill, then decide whether to use it", "zh": "找到 Skill，再判断是否值得使用" },
+      "guideIntro": { "en": "Discovery is only the first decision. Search, compare, and review a candidate before it changes your agent environment.", "zh": "搜索只是第一步。安装前还要比较候选项、核对来源和检查所需权限。" },
+      "ctaEyebrow": { "en": "From discovery to work", "zh": "从发现到执行" },
+      "ctaTitle": { "en": "Bring the task behind your skill search into Floatboat", "zh": "找到 Skill 后，把真正的任务带进 Floatboat" },
+      "ctaDescription": { "en": "Review the candidate's original instructions first. Then keep the task, files, and review together in Floatboat.", "zh": "先核对候选 Skill 的原始说明，再把实际任务、文件和审阅环节放在 Floatboat 中。" }
+    },
+    "sectionTitles": {
+      "useCases": { "en": "When Find Skills is useful", "zh": "Find Skills 适合哪些任务" },
+      "useCasesDescription": { "en": "Use it when the task is clear but the right Skill is not. It helps narrow candidates before you inspect their source or install anything.", "zh": "任务已经明确，却不知道该选哪个 Skill 时，先缩小候选范围，再检查来源并决定是否安装。" },
+      "exclusions": { "en": "What Find Skills cannot replace", "zh": "Find Skills 不能替代什么" },
+      "how": { "en": "How Find Skills narrows the search", "zh": "Find Skills 如何缩小候选范围" },
+      "howDescription": { "en": "The skill guides an agent from a specific task to a shortlist for your review; it does not make the installation decision for you.", "zh": "它指导 Agent 从具体任务走到待复核的候选清单，不替你决定安装哪个 Skill。" }
+    },
+    "scenarios": [
+      {
+        "label": { "en": "Explore", "zh": "探索" },
+        "title": { "en": "A task outside your usual toolkit", "zh": "遇到陌生领域的任务" },
+        "body": { "en": "You need help with a deployment, design audit, or document format you rarely handle. Search by the actual task instead of guessing a repository name.", "zh": "临时要处理部署、设计检查或少见的文档格式。先描述真实任务，而不是猜测仓库名称。" }
+      },
+      {
+        "label": { "en": "Compare", "zh": "比较" },
+        "title": { "en": "Several similar candidates", "zh": "同类 Skill 太多" },
+        "body": { "en": "Use a shortlist to compare source, scope, and adoption before opening the original SKILL.md and deciding whether to install.", "zh": "先比较来源、作用范围和采用情况，再打开原始 SKILL.md，决定是否安装。" }
+      },
+      {
+        "label": { "en": "Repeat", "zh": "复用" },
+        "title": { "en": "Repeatable skill discovery", "zh": "反复需要扩充能力" },
+        "body": { "en": "Keep the discovery step consistent across projects, while making the final installation decision for each workspace separately.", "zh": "把发现过程固定下来，但每个项目是否安装仍单独判断。" }
+      }
+    ],
+    "notFor": [
+      { "en": "You already know the exact skill and its source; open that project's instructions directly.", "zh": "已经知道目标 Skill 及其来源时，直接阅读该项目的原始说明更快。" },
+      { "en": "You need a security or maintenance audit; a search result and popularity signals cannot provide one.", "zh": "需要安全或维护状态审核时，搜索排名和热度都不能替代审查。" },
+      { "en": "Your environment cannot run the upstream Skills CLI; use the source repository to assess other supported options.", "zh": "当前环境不能运行上游 Skills CLI 时，应到原始仓库核对其他可用方式。" }
+    ],
+    "seoSections": [
+      { "title": { "en": "How does Find Skills discover agent skills?", "zh": "Find Skills 如何发现 Agent Skills？" }, "body": { "en": "It turns a task into a narrower search: identify the domain, name the action, check established options, then use the Skills CLI to look for candidates. The result is a shortlist to inspect, not an automatic choice of the first hit.", "zh": "它先把任务拆成领域和具体动作，查看已有的成熟选项，再用 Skills CLI 搜索候选项。结果应是一份待核对的短名单，而不是自动采用第一条搜索结果。" } },
+      { "title": { "en": "How should you compare the results?", "zh": "找到多个 Skill 后该如何比较？" }, "body": { "en": "Start with task fit and the original publisher. Open each candidate's SKILL.md and any bundled scripts, then check required tools, permissions, maintenance, and installation scope. Install counts or repository stars can inform discovery, but do not prove quality or safety.", "zh": "先看任务是否匹配、原发布方是谁，再阅读每个候选的 SKILL.md 和附带脚本，核对所需工具、权限、维护情况及安装范围。安装量与仓库星标可作发现线索，但不能证明质量或安全。" } },
+      { "title": { "en": "Does Find Skills install or verify a skill for you?", "zh": "Find Skills 会替你安装或验证 Skill 吗？" }, "body": { "en": "Finding, reviewing, and installing are separate steps. The skill can surface commands and recommend candidates, but you should choose the source and authorize installation only after reviewing what the package will add to your agent environment.", "zh": "发现、审查和安装是三个独立步骤。它可以提供候选项与安装命令，但仍应先检查包会给 Agent 环境添加什么，再自行决定是否安装。" } }
+    ],
+    "example": {
+      "prompt": { "en": "Find a skill for reviewing a Next.js application's accessibility. Show me the source, what it covers, and the install command; do not install it yet.", "zh": "帮我找能检查 Next.js 应用无障碍问题的 Skill。列出来源、检查范围和安装方式，先不要安装。" },
+      "result": { "en": "A useful response is a small set of candidates with source links and trade-offs—not an automatic installation or a claim that the top-ranked result is always best.", "zh": "合格的结果应是少量候选项、来源链接和取舍，而不是自动安装，更不能把榜首当成必然最优。" }
+    },
+    "commands": [
+      { "label": { "en": "Find a skill", "zh": "搜索 Skill" }, "command": "npx skills find [query]", "note": { "en": "Search by the specific task, not a broad category.", "zh": "按具体任务搜索，不只输入宽泛分类。" } },
+      { "label": { "en": "Install a selected skill", "zh": "安装已选 Skill" }, "command": "npx skills add <package>", "note": { "en": "Use the original package path after reviewing its source.", "zh": "核对来源后，再使用原始包路径安装。" } },
+      { "label": { "en": "Update installed skills", "zh": "更新已安装 Skill" }, "command": "npx skills update", "note": { "en": "Review upstream changes before applying updates.", "zh": "更新前检查上游变更。" } }
+    ],
+    "steps": [
+      { "title": { "en": "Name the job", "zh": "说清任务" }, "body": { "en": "Identify the domain and a specific action, such as reviewing accessibility rather than simply ‘web development’.", "zh": "确定领域和具体动作，比如“检查无障碍问题”，而不是只搜“网页开发”。" } },
+      { "title": { "en": "Search and compare", "zh": "搜索并比较" }, "body": { "en": "Check known skills and narrow the query; compare the publisher, described scope, and original instructions.", "zh": "查看已有 Skill，缩小查询范围，并比较发布者、描述的能力边界和原始说明。" } },
+      { "title": { "en": "Review before installing", "zh": "安装前复核" }, "body": { "en": "Open the candidate's repository and SKILL.md, check any scripts or permissions, and install only after choosing a trusted fit.", "zh": "打开候选仓库和 SKILL.md，检查脚本与权限，只在确认适合且可信后安装。" } }
+    ],
+    "outputs": { "en": ["A focused shortlist of relevant skills", "Links to the original sources", "Installation instructions for the chosen candidate"], "zh": ["与任务相关的精简候选清单", "原始来源链接", "选定候选项的安装说明"] },
+    "checks": { "en": ["Search ranking is a discovery signal, not a security review.", "Read the original SKILL.md and any bundled scripts before running them.", "A skill may require tools or permissions your current environment does not provide."], "zh": ["搜索排名只是发现信号，不等于安全审核。", "运行前阅读原始 SKILL.md 和附带脚本。", "Skill 可能依赖当前环境尚未提供的工具或权限。"] },
+    "faq": [
+      { "question": { "en": "What does Find Skills do?", "zh": "Find Skills 是做什么的？" }, "answer": { "en": "It guides an agent to discover installable skills for a stated task, compare likely matches, and show the user how to install a selected one.", "zh": "它指导 Agent 按任务寻找可安装的 Skill、比较候选项，并说明如何安装用户选中的结果。" } },
+      { "question": { "en": "Does it install a skill automatically?", "zh": "它会自动安装 Skill 吗？" }, "answer": { "en": "Discovery and installation are separate decisions. Ask for a shortlist first and review the source before authorizing an install.", "zh": "发现与安装是两个决定。可以先要求候选清单，查看来源后再决定是否安装。" } },
+      { "question": { "en": "Is the most-installed result always the right one?", "zh": "安装量最高的就是最合适的吗？" }, "answer": { "en": "No. Popularity can help with discovery, but the task fit, maintenance, instructions, and permissions still matter.", "zh": "不是。热度有助于发现候选项，但仍要看任务匹配、维护状态、具体说明和所需权限。" } },
+      { "question": { "en": "Where is the original skill?", "zh": "原始 Skill 在哪里？" }, "answer": { "en": "The source is the find-skills SKILL.md in Vercel Labs' public skills repository, linked on this page.", "zh": "原始文件位于 Vercel Labs 公开 skills 仓库的 find-skills/SKILL.md，本页提供来源链接。" } },
+      { "question": { "en": "Does this page mean Vercel Labs endorses Floatboat?", "zh": "这个页面意味着 Vercel Labs 为 Floatboat 背书吗？" }, "answer": { "en": "No. Find Skills is attributed to its original publisher. This is an independent guide to the community skill.", "zh": "不意味着。本页注明了原发布者，是对社区 Skill 的独立介绍。" } }
+    ]
+  }
+]

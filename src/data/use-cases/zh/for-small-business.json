@@ -251,16 +251,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一次重复交接开始",
-    "title": "把一次重复交接交给 Work Agent",
-    "description": "选择一项输入明确、负责人清楚的客户或运营任务。先让 Work Agent 改善交接，再扩大使用范围。",
+    "eyebrow": "下一次客户交接",
+    "title": "把一条客户需求整理成清楚的工作包",
+    "description": "提供客户需求、现行政策和负责人员；先审阅交接材料，不把定价或对客沟通交给 Agent。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-small-business&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "查看工作空间如何支持 Agent",
-      "href": "/zh/agent-workspace"
     }
   }
 }

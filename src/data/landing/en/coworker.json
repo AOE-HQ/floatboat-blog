@@ -79,9 +79,9 @@
     ]
   },
   "finalCta": {
-    "title": "Hand off the task, not your judgment.",
-    "description": "Give the Floatboat Coworker a clear assignment and receive work you can inspect, revise, and approve.",
-    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=final_cta" },
-    "secondaryCta": { "label": "See the Agent Workspace", "href": "/agent-workspace" }
+    "eyebrow": "A brief with a finish line",
+    "title": "Hand the Work Agent a deliverable, not a prompt",
+    "description": "Provide the source files, expected output, and approval boundary; review the returned draft before it becomes final work.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=final_cta" }
   }
 }

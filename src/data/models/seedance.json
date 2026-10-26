@@ -369,12 +369,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Run Seedance through the video Combo.",
-      "zh": "通过视频 Combo 使用 Seedance。"
+      "en": "Turn a brief and frames into a Seedance video",
+      "zh": "把文字与画面素材交给 Seedance 视频 Combo"
     },
     "description": {
-      "en": "Choose the full engine for finished work or Fast for rapid iteration.",
-      "zh": "成片选择完整引擎，快速迭代选择 Fast。"
+      "en": "Use the video Combo for text-to-video or image-to-video, guide opening and ending frames, then choose Fast for draft iterations.",
+      "zh": "通过视频 Combo 做文生视频或图生视频，控制首尾帧；需要快速试镜头时，再选择 Fast 版本。"
     }
   }
 }

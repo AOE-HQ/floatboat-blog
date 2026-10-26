@@ -251,16 +251,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一个真实客户任务开始",
-    "title": "把第一项客户任务交给 Work Agent",
-    "description": "带上一个客户需求、一份可信模板和下一项交付物。让 Work Agent 准备工作，所有业务决定仍由你负责。",
+    "eyebrow": "下一份客户提案",
+    "title": "先完成提案初稿，承诺仍由你决定",
+    "description": "交给 Work Agent 客户需求和你的模板；范围、报价与对外回复仍由你亲自批准。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-solopreneur&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "查看工作空间如何支持 Agent",
-      "href": "/zh/agent-workspace"
     }
   }
 }

@@ -257,16 +257,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start from one real assignment",
-    "title": "Give your first financial-preparation assignment to a Work Agent.",
-    "description": "Start with one closed period or one researched company. Keep every figure tied to its source, unit, date, and assumption before reusing the workflow.",
+    "eyebrow": "Before the variance note travels",
+    "title": "Make the variance commentary traceable to the figures",
+    "description": "Use a closed period, approved metrics, and source tables to prepare commentary an analyst can verify line by line.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-financial-analysts&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "Explore how the Work Agent works",
-      "href": "/agent-workspace"
     }
   }
 }

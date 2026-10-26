@@ -251,16 +251,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一个在办项目开始",
-    "title": "把下一次制作交接交给 Work Agent",
-    "description": "带上一份核准简报、对应源文件和下一次专业交接。让 Work Agent 准备清晰制作线程，专业质量仍由团队掌控。",
+    "eyebrow": "交给下一位制作成员",
+    "title": "让核准简报连同修改意见一起交接",
+    "description": "把源素材、修订记录和待处理反馈交给下一位专业成员，制作负责人再审阅交接包。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-studio&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "查看工作空间如何支持 Agent",
-      "href": "/zh/agent-workspace"
     }
   }
 }

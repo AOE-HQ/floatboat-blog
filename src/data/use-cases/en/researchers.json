@@ -258,16 +258,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start from one real assignment",
-    "title": "Give your first evidence-preparation assignment to a Work Agent.",
-    "description": "Start with one bounded corpus and an explicit extraction schema. Build a source trail that survives beyond the first summary.",
+    "eyebrow": "Before the synthesis draft",
+    "title": "Build the source matrix before drawing conclusions",
+    "description": "Define the corpus and extraction fields first. Keep each finding linked to its source when the synthesis moves to review.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-researchers&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "See how the workspace supports the agent",
-      "href": "/agent-workspace"
     }
   }
 }

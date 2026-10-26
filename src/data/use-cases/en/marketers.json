@@ -257,16 +257,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start from one real assignment",
-    "title": "Give your first campaign-preparation assignment to a Work Agent.",
-    "description": "Start with one approved brief and one source asset. Adapt it to the channels that matter while keeping claims, feedback, and performance questions traceable.",
+    "eyebrow": "From signed-off brief to channels",
+    "title": "Carry approved claims into every campaign draft",
+    "description": "Start from the signed-off brief, product proof, and brand rules. Review each channel variant before any claim goes live.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-marketers&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "Explore how the Work Agent works",
-      "href": "/agent-workspace"
     }
   }
 }

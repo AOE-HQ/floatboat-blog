@@ -258,16 +258,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start from one real assignment",
-    "title": "Give your first client-work assignment to a Work Agent.",
-    "description": "Start with one engagement question, its approved evidence, and the next client deliverable. Keep the source trail visible while the recommendation takes shape.",
+    "eyebrow": "Before the client recommendation",
+    "title": "Turn client evidence into a reviewable recommendation",
+    "description": "Start with the engagement question and approved sources. Review the options and source trail before your team advises the client.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-consultants&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "See how the workspace supports the agent",
-      "href": "/agent-workspace"
     }
   }
 }

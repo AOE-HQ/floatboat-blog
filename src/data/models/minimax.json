@@ -272,12 +272,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "MiniMax M2 is configured below the picker.",
-      "zh": "MiniMax M2 已完成底层配置。"
+      "en": "Need an efficient route while MiniMax M2 stays configured",
+      "zh": "MiniMax M2 尚未开放，先比较高用量任务的选择"
     },
     "description": {
-      "en": "Its protocol and economic profile are ready without claiming a public client entry.",
-      "zh": "其协议与经济画像已就绪，但当前没有客户端公开入口。"
+      "en": "MiniMax M2 has a cost-oriented profile below the picker, not a public selection. Compare live models for high-volume text work.",
+      "zh": "MiniMax M2 已配置低成本经济画像，但还未进入主选择器；高用量文本任务可先比较已上线的模型。"
     }
   }
 }

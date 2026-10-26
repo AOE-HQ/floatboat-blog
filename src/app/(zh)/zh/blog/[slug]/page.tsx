@@ -26,7 +26,7 @@ import {
   buildBreadcrumbJsonLd,
   getArticleBreadcrumbItems,
 } from "@/lib/schema";
-import { getAdjacentPosts, getPostBySlug } from "@/lib/posts";
+import { getAdjacentPosts, getPostBySlug, getRelatedPostMeta } from "@/lib/posts";
 
 const features = resolveFeatures(config);
 const locale = "zh" as const;
@@ -107,10 +107,9 @@ export default async function ZhBlogPostPage({ params }: PageProps) {
         post={post}
         pageUrl={pageUrl}
         adjacentPosts={adjacentPosts}
+        relatedPosts={getRelatedPostMeta(post, locale)}
+        afterRelated={post.faq && post.faq.length > 0 ? <FaqBand items={post.faq} locale={locale} /> : null}
       />
-      {post.faq && post.faq.length > 0 ? (
-        <FaqBand items={post.faq} locale={locale} />
-      ) : null}
       <BlogCtaPopup copy={popup} locale="zh" />
     </>
   );

@@ -251,16 +251,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start with one active project",
-    "title": "Give the next production handoff to a Work Agent",
-    "description": "Bring one approved brief, its source files, and the next specialist handoff. Let the Work Agent prepare a clearer production thread while your team controls the craft.",
+    "eyebrow": "The next specialist handoff",
+    "title": "Pass the approved brief without losing client intent",
+    "description": "Bundle source assets, revisions, and open feedback for the next specialist. The creative lead reviews the production handoff.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-studio&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "See how the workspace supports the agent",
-      "href": "/agent-workspace"
     }
   }
 }

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FinalCta } from "@/components/final-cta";
+import { MarketingHero } from "@/components/marketing/marketing-hero";
 
 import catalog from "@/data/use-cases/catalog.json";
 import { getPersonaPage, personaPath, type PersonaLocale, type PersonaSlug } from "@/lib/use-cases/persona-pages";
@@ -34,9 +36,9 @@ const pageCopy = {
       ["Ongoing Project", "Let the Work Agent continue from the same approved files, decisions, revisions, and open questions."],
       ["Recurring Responsibility", "Reuse the proven method for periodic preparation or monitoring while keeping human review in place."],
     ],
-    finalEyebrow: "Bring One Real Task",
-    finalTitle: "Give a Work Agent One Real Assignment",
-    finalDescription: "Start with the files, standards, and next deliverable you already understand. Let the Work Agent prepare the result while you retain the decisions that matter.",
+    finalEyebrow: "From use case to assignment",
+    finalTitle: "Choose one use case to put to work",
+    finalDescription: "Take a role-specific assignment from this directory, gather its source files, and set a review point before delegating it.",
   },
   zh: {
     eyebrow: "Floatboat 使用场景",
@@ -63,9 +65,9 @@ const pageCopy = {
       ["持续项目", "让 Work Agent 沿用同一组核准文件、历史决定、修改记录和待确认问题继续推进。"],
       ["周期职责", "复用已验证的方法完成周期准备或持续监测，同时保留人工审阅。"],
     ],
-    finalEyebrow: "带上一项真实任务",
-    finalTitle: "把第一项真实工作交给 Work Agent",
-    finalDescription: "从自己熟悉的文件、标准和下一项交付开始，让 Work Agent 准备成果，同时保留重要决定的控制权。",
+    finalEyebrow: "从使用场景到具体委派",
+    finalTitle: "从目录中选一项任务开始",
+    finalDescription: "从对应岗位的页面选一项具体任务，备好源文件并设定审阅点，再交给 Work Agent 执行。",
   },
 } as const;
 
@@ -103,16 +105,11 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
       <Link href={isZh ? "/zh" : "/"} className="hover:text-[var(--ob-color-text)]">{isZh ? "首页" : "Home"}</Link><span className="mx-2">/</span><span>{isZh ? "使用场景" : "Use Cases"}</span>
     </nav>
 
-    <section className="mx-auto grid max-w-7xl items-end gap-10 px-5 pb-20 pt-14 sm:px-8 sm:pb-24 lg:grid-cols-[1.25fr_0.75fr] lg:pt-20">
-      <div>
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--ob-color-accent)]">{copy.eyebrow}</p>
-        <h1 className="mt-5 max-w-5xl font-serif text-5xl leading-[0.96] tracking-[-0.055em] sm:text-6xl lg:text-7xl">{titleCase(copy.title)}</h1>
-      </div>
-      <div className="border-l-2 border-[#1b1a18] pl-6">
-        <p className="text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.description}</p>
-        <div className="mt-7 flex flex-wrap gap-3"><a href={isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=hero" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=hero"} className="rounded-full bg-[var(--ob-color-primary)] px-5 py-3 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{copy.primary}</a><a href="#catalog" className="rounded-full border border-black/10 bg-white/60 px-5 py-3 text-sm font-semibold hover:bg-white">{copy.secondary}</a></div>
-      </div>
-    </section>
+    <MarketingHero eyebrow={copy.eyebrow} title={titleCase(copy.title)} description={copy.description} />
+    <div className="mx-auto flex max-w-7xl flex-wrap justify-center gap-3 px-5 pb-12 sm:px-8">
+      <a href={isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=hero" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=hero"} className="rounded-full bg-[var(--ob-color-primary)] px-5 py-3 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{copy.primary}</a>
+      <a href="#catalog" className="rounded-full border border-black/10 bg-white/60 px-5 py-3 text-sm font-semibold hover:bg-white">{copy.secondary}</a>
+    </div>
 
     <section id="catalog" className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-7xl">
@@ -125,7 +122,7 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
 
     <section className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr]"><div><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{copy.pathwayEyebrow}</p><h2 className="mt-3 font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.pathwayTitle)}</h2><p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.pathwayDescription}</p></div><div className="divide-y divide-black/[0.08] border-y border-black/[0.08]">{copy.pathway.map(([title, description], index) => <div key={title} className="grid gap-3 py-7 sm:grid-cols-[3rem_0.55fr_1fr]"><span className="text-sm text-[var(--ob-color-muted)]">0{index + 1}</span><h3 className="font-serif text-2xl">{titleCase(title)}</h3><p className="leading-7 text-[var(--ob-color-text-subtle)]">{description}</p></div>)}</div></div></section>
 
-    <section className="px-5 py-20 sm:px-8"><div className="mx-auto max-w-6xl rounded-[36px] bg-[#24221f] px-6 py-14 text-center text-white sm:px-12 sm:py-20"><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f7d68b]">{copy.finalEyebrow}</p><h2 className="mx-auto mt-4 max-w-4xl font-serif text-4xl tracking-[-0.04em] sm:text-6xl">{titleCase(copy.finalTitle)}</h2><p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/65">{copy.finalDescription}</p><a href={isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=final_cta" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=final_cta"} className="mt-8 inline-flex rounded-full bg-[var(--ob-color-primary)] px-6 py-3 text-sm font-semibold text-[var(--ob-color-primary-fg)]">{copy.primary}</a></div></section>
+    <FinalCta eyebrow={copy.finalEyebrow} title={copy.finalTitle} description={copy.finalDescription} primary={{ label: copy.primary, href: isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=final_cta" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=final_cta" }} />
 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
   </div>;

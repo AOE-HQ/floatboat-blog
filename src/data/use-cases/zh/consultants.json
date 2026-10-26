@@ -258,16 +258,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项客户项目任务交给 Work Agent。",
-    "description": "从一个项目问题、对应的核准证据和下一项客户交付物开始，让建议成形时始终保留来源路径。",
+    "eyebrow": "发出客户建议之前",
+    "title": "让客户建议建立在可审阅的证据之上",
+    "description": "从项目问题和核准资料出发，先核对方案与来源，再由团队形成发给客户的建议。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-consultants&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "了解工作空间如何支持 Agent",
-      "href": "/zh/agent-workspace"
     }
   }
 }

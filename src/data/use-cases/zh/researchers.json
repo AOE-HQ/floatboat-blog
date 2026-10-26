@@ -258,16 +258,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项证据准备任务交给 Work Agent。",
-    "description": "从一个边界明确的资料集和一套清楚的提取结构开始，让来源路径在第一版摘要之后仍然可用。",
+    "eyebrow": "形成研究结论之前",
+    "title": "先建证据矩阵，再写综合结论",
+    "description": "先确定资料集与提取字段；研究摘要进入审阅时，每个关键发现都能找到来源。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-researchers&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "了解工作空间如何支持 Agent",
-      "href": "/zh/agent-workspace"
     }
   }
 }

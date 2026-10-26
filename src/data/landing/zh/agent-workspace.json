@@ -79,9 +79,9 @@
     ]
   },
   "finalCta": {
-    "title": "给 Agent 工作一个可以继续的地方。",
-    "description": "把 Agent、文件、工具、规则和可编辑交付物放进 macOS 和 Windows 上的同一个桌面工作空间。",
-    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=agent-workspace&download_placement=final_cta" },
-    "secondaryCta": { "label": "把任务交给 Work Agent", "href": "/zh/coworker" }
+    "eyebrow": "让项目继续",
+    "title": "下次打开，继续同一个 Agent 项目",
+    "description": "文件、项目规则、Agent 的工作记录和未完成交付物仍在同一工作空间，不必每次从聊天记录重建上下文。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=agent-workspace&download_placement=final_cta" }
   }
 }

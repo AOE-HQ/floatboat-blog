@@ -258,16 +258,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start from one real assignment",
-    "title": "Give your first teaching preparation assignment to a Work Agent.",
-    "description": "Bring one upcoming unit, the sources you trust, and the format your school expects. Turn them into a lesson pack you can still teach in your own way.",
+    "eyebrow": "The next teaching unit",
+    "title": "Assemble the lesson pack from trusted material",
+    "description": "Bring curriculum standards, approved sources, and the class format. Review each worksheet and message before students see it.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-teachers&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "See how the workspace supports the agent",
-      "href": "/agent-workspace"
     }
   }
 }

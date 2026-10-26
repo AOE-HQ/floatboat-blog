@@ -75,9 +75,9 @@
     ]
   },
   "finalCta": {
-    "title": "Give your agents somewhere to work together.",
-    "description": "Download Floatboat and bring people, agents, context, and deliverables into one shared operating room.",
-    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=floatim&download_placement=final_cta" },
-    "secondaryCta": { "label": "Explore workspace agents", "href": "/blog/ai-workspace-agents" }
+    "eyebrow": "One room, one work trail",
+    "title": "Keep decisions beside the work they changed",
+    "description": "Bring people, specialist agents, assignments, and finished artifacts into one project room so the next handoff has context.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=floatim&download_placement=final_cta" }
   }
 }

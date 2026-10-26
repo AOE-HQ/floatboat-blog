@@ -257,16 +257,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一项真实任务开始",
-    "title": "把第一项管理支持任务交给 Work Agent。",
-    "description": "从一场固定会议和真实来源材料开始，准备能节省时间、但不会替任何人作出承诺的 Brief。",
+    "eyebrow": "下一场管理会议",
+    "title": "先把会议所需的背景材料准备好",
+    "description": "汇集议程、此前决策与待办事项，形成会前简报；对外承诺与发送仍由人决定。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-executive-assistants&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "了解 Work Agent 如何工作",
-      "href": "/zh/agent-workspace"
     }
   }
 }

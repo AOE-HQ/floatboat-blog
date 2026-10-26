@@ -251,16 +251,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "从一份源内容开始",
-    "title": "把下一次发布交给创作者 Work Agent",
-    "description": "带上一份已完成或接近完成的作品及其背景素材。让 Work Agent 准备下一版内容与发布材料，同时保留你的来源和编辑权。",
+    "eyebrow": "一份原作，多种发布材料",
+    "title": "让发布材料延续原作的表达",
+    "description": "从已确认的稿件或录音出发，准备说明文字与渠道版本；发布前再核对语气和事实。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-creators&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "查看工作空间如何支持 Agent",
-      "href": "/zh/agent-workspace"
     }
   }
 }

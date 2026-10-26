@@ -1,5 +1,7 @@
 "use client";
 
+import type { ReactNode } from "react";
+
 import {
   extractToc,
   normalizeFinalCta,
@@ -34,6 +36,7 @@ type ArticleLayoutProps = {
   pageUrl: string;
   relatedPosts?: PostMeta[];
   adjacentPosts?: AdjacentPosts;
+  afterRelated?: ReactNode;
 };
 
 function resolveFinalCta(
@@ -59,6 +62,7 @@ export function ArticleLayout({
   pageUrl,
   relatedPosts = [],
   adjacentPosts = { prev: null, next: null },
+  afterRelated,
 }: ArticleLayoutProps) {
   const { config, optional, required, features, localePrefix } = useOpenBlog();
   const site = useSiteHelpers();
@@ -94,6 +98,7 @@ export function ArticleLayout({
   ];
 
   return (
+    <>
     <BlogShell className="py-10 lg:py-14">
       <article>
         {required.breadcrumbs ? <Breadcrumbs items={breadcrumbItems} /> : null}
@@ -187,10 +192,11 @@ export function ArticleLayout({
           <ArticleRelatedPosts posts={relatedPosts} locale={locale} />
         ) : null}
 
-        {finalCta ? <ArticleFinalCta {...finalCta} /> : null}
-
         <p className="sr-only">{pageUrl}</p>
       </article>
     </BlogShell>
+    {afterRelated}
+    {finalCta ? <BlogShell className="pb-10 lg:pb-14"><ArticleFinalCta {...finalCta} /></BlogShell> : null}
+    </>
   );
 }

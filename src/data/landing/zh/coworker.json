@@ -79,9 +79,9 @@
     ]
   },
   "finalCta": {
-    "title": "交出任务，但不交出你的判断。",
-    "description": "给 Floatboat Coworker 一项清晰委派，收回你可以检查、修订和批准的工作。",
-    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=final_cta" },
-    "secondaryCta": { "label": "查看 Agent 工作站", "href": "/zh/agent-workspace" }
+    "eyebrow": "交付目标先讲清楚",
+    "title": "把交付任务交给 Work Agent，而不是反复写提示",
+    "description": "提供源文件、预期成果和批准边界；收到交付稿后先检查修订，再决定是否采纳。",
+    "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=final_cta" }
   }
 }

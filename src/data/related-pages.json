@@ -1,0 +1,89 @@
+{
+  "publishers": {
+    "heading": { "en": "Explore Other Publishers", "zh": "探索其他发布者" },
+    "description": { "en": "Meet other people and teams publishing open tools, projects, and Agent Skills.", "zh": "了解其他发布开放工具、项目与 Agent Skills 的个人和团队。" },
+    "links": {
+      "vercel-labs": ["anthropics", "heygen-com", "mattpocock", "morluto"],
+      "morluto": ["juliusbrussee", "vercel-labs", "mattpocock", "anthropics"],
+      "anthropics": ["vercel-labs", "mattpocock", "morluto", "heygen-com"],
+      "heygen-com": ["vercel-labs", "emilkowalski", "coreyhaines31", "anthropics"],
+      "mattpocock": ["anthropics", "vercel-labs", "morluto", "emilkowalski"],
+      "emilkowalski": ["mattpocock", "vercel-labs", "heygen-com", "coreyhaines31"],
+      "coreyhaines31": ["heygen-com", "emilkowalski", "vercel-labs", "mattpocock"],
+      "juliusbrussee": ["morluto", "anthropics", "mattpocock", "vercel-labs"]
+    }
+  },
+  "use-cases": {
+    "heading": { "en": "Explore More Work Agents", "zh": "探索更多 Work Agent 场景" },
+    "description": { "en": "Compare how a Work Agent handles real assignments across different professions.", "zh": "了解 Work Agent 如何在不同职业场景中完成真实任务。" },
+    "links": {
+      "lawyers": ["consultants", "researchers", "executive-assistants", "financial-analysts"],
+      "teachers": ["researchers", "marketers", "executive-assistants", "for-creators"],
+      "consultants": ["researchers", "financial-analysts", "for-studio", "lawyers"],
+      "researchers": ["consultants", "financial-analysts", "teachers", "lawyers"],
+      "recruiters": ["executive-assistants", "for-small-business", "consultants", "researchers"],
+      "financial-analysts": ["researchers", "consultants", "for-small-business", "lawyers"],
+      "executive-assistants": ["for-small-business", "for-solopreneur", "recruiters", "lawyers"],
+      "marketers": ["for-creators", "for-studio", "consultants", "teachers"],
+      "for-solopreneur": ["for-small-business", "for-creators", "consultants", "executive-assistants"],
+      "for-creators": ["marketers", "for-solopreneur", "for-studio", "teachers"],
+      "for-small-business": ["for-solopreneur", "executive-assistants", "marketers", "financial-analysts"],
+      "for-studio": ["for-creators", "marketers", "consultants", "researchers"]
+    }
+  },
+  "models": {
+    "heading": { "en": "Explore Other Model Families", "zh": "探索其他模型系列" },
+    "description": { "en": "Compare model families by the kind of work they support. Availability differs by model and entry point.", "zh": "按任务比较不同模型系列；具体可用状态和使用入口因模型而异。" },
+    "links": {
+      "auto-mode": ["claude", "openai", "gemini", "deepseek"],
+      "claude": ["openai", "gemini", "deepseek", "auto-mode"],
+      "openai": ["claude", "gemini", "deepseek", "auto-mode"],
+      "gemini": ["claude", "openai", "deepseek", "auto-mode"],
+      "deepseek": ["claude", "openai", "gemini", "auto-mode"],
+      "seedance": ["openai", "gemini", "minimax", "auto-mode"],
+      "kimi": ["qwen", "glm", "minimax", "deepseek"],
+      "qwen": ["kimi", "glm", "minimax", "deepseek"],
+      "glm": ["kimi", "qwen", "minimax", "deepseek"],
+      "minimax": ["kimi", "qwen", "glm", "seedance"]
+    }
+  },
+  "skills": {
+    "heading": { "en": "Explore More Agent Skills", "zh": "探索更多 Agent Skills" },
+    "description": { "en": "Read another Skill guide and check its original source before using it.", "zh": "查看其他 Skill 指南，并在使用前核对原始来源。" },
+    "links": {
+      "vercel-labs/find-skills": ["vercel-labs/agent-browser", "vercel-labs/vercel-react-best-practices", "vercel-labs/web-design-guidelines", "vercel-labs/writing-guidelines"],
+      "vercel-labs/vercel-react-best-practices": ["vercel-labs/vercel-composition-patterns", "vercel-labs/vercel-react-view-transitions", "vercel-labs/vercel-react-native-skills", "vercel-labs/web-design-guidelines"],
+      "vercel-labs/vercel-composition-patterns": ["vercel-labs/vercel-react-best-practices", "vercel-labs/vercel-react-view-transitions", "vercel-labs/web-design-guidelines", "vercel-labs/vercel-react-native-skills"],
+      "vercel-labs/vercel-react-native-skills": ["vercel-labs/vercel-react-best-practices", "vercel-labs/vercel-composition-patterns", "vercel-labs/vercel-react-view-transitions", "vercel-labs/web-design-guidelines"],
+      "vercel-labs/vercel-react-view-transitions": ["vercel-labs/vercel-react-best-practices", "vercel-labs/vercel-composition-patterns", "vercel-labs/web-design-guidelines", "vercel-labs/vercel-react-native-skills"],
+      "vercel-labs/web-design-guidelines": ["vercel-labs/writing-guidelines", "vercel-labs/vercel-react-best-practices", "vercel-labs/vercel-react-view-transitions", "vercel-labs/vercel-composition-patterns"],
+      "vercel-labs/writing-guidelines": ["vercel-labs/web-design-guidelines", "vercel-labs/find-skills", "vercel-labs/vercel-react-best-practices", "vercel-labs/vercel-optimize"],
+      "vercel-labs/deploy-to-vercel": ["vercel-labs/vercel-cli-with-tokens", "vercel-labs/vercel-optimize", "vercel-labs/vercel-react-best-practices", "vercel-labs/agent-browser"],
+      "vercel-labs/vercel-cli-with-tokens": ["vercel-labs/deploy-to-vercel", "vercel-labs/vercel-optimize", "vercel-labs/agent-browser", "vercel-labs/find-skills"],
+      "vercel-labs/vercel-optimize": ["vercel-labs/deploy-to-vercel", "vercel-labs/vercel-react-best-practices", "vercel-labs/vercel-cli-with-tokens", "vercel-labs/web-design-guidelines"],
+      "vercel-labs/agent-browser": ["vercel-labs/find-skills", "vercel-labs/deploy-to-vercel", "vercel-labs/vercel-cli-with-tokens", "vercel-labs/web-design-guidelines"]
+    }
+  },
+  "features": {
+    "heading": { "en": "Explore More Floatboat Features", "zh": "探索更多 Floatboat 功能" },
+    "description": { "en": "See how related capabilities fit into a complete Work Agent workflow.", "zh": "了解相关能力如何组成完整的 Work Agent 工作流程。" },
+    "links": {
+      "agent-workspace": ["coworker", "floatim", "ai-file-organizer", "ai-scheduling-assistant"],
+      "coworker": ["agent-workspace", "floatim", "ai-file-organizer", "ai-scheduling-assistant"],
+      "floatim": ["coworker", "agent-workspace", "ai-scheduling-assistant", "ai-file-organizer"],
+      "ai-scheduling-assistant": ["coworker", "agent-workspace", "floatim", "ai-file-organizer"],
+      "ai-file-organizer": ["coworker", "agent-workspace", "floatim", "ai-scheduling-assistant"]
+    }
+  },
+  "skill-categories": {
+    "heading": { "en": "Explore Other Skill Categories", "zh": "探索其他 Skill 分类" },
+    "description": { "en": "Choose the next task, not just the next publisher.", "zh": "按下一项任务选择指引，而不只按发布者浏览。" },
+    "links": {
+      "coding": ["development", "design-interfaces", "deployment-browser", "writing-marketing"],
+      "development": ["coding", "design-interfaces", "deployment-browser", "writing-marketing"],
+      "design-interfaces": ["coding", "development", "writing-marketing", "deployment-browser"],
+      "writing-marketing": ["design-interfaces", "development", "coding", "deployment-browser"],
+      "deployment-browser": ["development", "coding", "design-interfaces", "writing-marketing"]
+    }
+  }
+}

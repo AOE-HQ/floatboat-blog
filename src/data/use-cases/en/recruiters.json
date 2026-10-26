@@ -257,16 +257,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start from one real assignment",
-    "title": "Give your first hiring-preparation assignment to a Work Agent.",
-    "description": "Begin with one approved role brief and one structured interview packet. Let Floatboat prepare the materials without handing candidate judgment to the system.",
+    "eyebrow": "Before the next interview",
+    "title": "Make the interview packet evidence-led",
+    "description": "Bring the approved role brief and candidate materials. Prepare structured questions and evidence notes; people make the hiring call.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-recruiters&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "Explore how the Work Agent works",
-      "href": "/agent-workspace"
     }
   }
 }

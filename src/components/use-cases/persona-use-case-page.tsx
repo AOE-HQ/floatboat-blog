@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FinalCta } from "@/components/final-cta";
+import { MarketingHero } from "@/components/marketing/marketing-hero";
 
 import type { PersonaPageData } from "@/lib/use-cases/persona-page-schema";
 import { personaPath } from "@/lib/use-cases/persona-pages";
@@ -6,15 +8,10 @@ import { titleCase } from "@/lib/title-case";
 
 import { PersonaCapabilities } from "./persona-capabilities";
 import { PersonaLiveDemo } from "./persona-live-demo";
-import { PersonaRelatedPages } from "./persona-related-pages";
+import { RelatedPageLinks } from "@/components/related-page-links";
 import { PersonaWorkScenes } from "./persona-work-scenes";
 
 const SITE_ORIGIN = "https://floatboat.ai";
-
-function Cta({ href, label, primary = false }: { href: string; label: string; primary?: boolean }) {
-  const classes = `inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition ${primary ? "bg-[var(--ob-color-primary)] text-[var(--ob-color-text)] hover:bg-[var(--ob-color-primary-hover)]" : "border border-black/10 bg-white/65 text-[var(--ob-color-text)] hover:bg-white"}`;
-  return href.startsWith("/") ? <Link href={href} className={classes}>{label}</Link> : <a href={href} className={classes}>{label}</a>;
-}
 
 function Heading({ eyebrow, title, description, align = "center", inverted = false }: { eyebrow: string; title: string; description: string; align?: "center" | "left"; inverted?: boolean }) {
   return <div className={align === "center" ? "mx-auto mb-12 max-w-3xl text-center" : "max-w-2xl"}>
@@ -65,13 +62,7 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
       <span className="mx-2">/</span><span>{page.breadcrumb}</span>
     </nav>
 
-    <section className="mx-auto max-w-5xl px-5 py-12 text-center sm:px-8 sm:py-16 lg:pb-12 lg:pt-14">
-      <div className="mx-auto max-w-4xl">
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--ob-color-accent)]">{page.hero.eyebrow}</p>
-        <h1 className="mt-4 font-serif text-5xl leading-[0.98] tracking-[-0.055em] sm:text-6xl lg:text-7xl">{titleCase(pageHeading)}</h1>
-        <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-[var(--ob-color-text-subtle)] sm:text-lg">{page.hero.description}</p>
-      </div>
-    </section>
+    <MarketingHero eyebrow={page.hero.eyebrow} title={titleCase(pageHeading)} description={page.hero.description} />
 
     <PersonaLiveDemo page={page} />
 
@@ -79,11 +70,11 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
 
     <PersonaCapabilities page={page} roleLabel={roleLabel} />
 
-    <PersonaRelatedPages page={page} />
+    <RelatedPageLinks family="use-cases" currentId={page.slug} locale={page.locale} />
 
     <section className="border-y border-black/[0.06] py-20 sm:py-28"><div className="mx-auto max-w-4xl px-5 sm:px-8"><Heading eyebrow={isZh ? "常见问题" : "Questions before you start"} title={page.faq.title} description={page.faq.description} /><div className="space-y-3">{page.faq.items.map((item) => <details key={item.question} className="group rounded-2xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-5"><summary className="cursor-pointer list-none pr-8 font-semibold">{item.question}<span className="float-right text-xl transition group-open:rotate-45">+</span></summary><p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{item.answer}</p></details>)}</div></div></section>
 
-    <section className="px-5 py-20 sm:px-8"><div className="mx-auto max-w-6xl rounded-[36px] bg-[#24221f] px-6 py-14 text-center text-white sm:px-12 sm:py-20"><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f7d68b]">{page.finalCta.eyebrow}</p><h2 className="mx-auto mt-4 max-w-4xl font-serif text-4xl tracking-[-0.04em] sm:text-6xl">{titleCase(page.finalCta.title)}</h2><p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/65">{page.finalCta.description}</p><div className="mt-8 flex flex-wrap justify-center gap-3"><Cta {...page.finalCta.primaryCta} primary /><Cta {...page.finalCta.secondaryCta} /></div></div></section>
+    <FinalCta eyebrow={page.finalCta.eyebrow} title={page.finalCta.title} description={page.finalCta.description} primary={page.finalCta.primaryCta} />
 
     {jsonLd.map((item, index) => <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }} />)}
   </div>;

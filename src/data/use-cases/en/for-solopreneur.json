@@ -251,16 +251,12 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Start with one real client task",
-    "title": "Give your first client task to a Work Agent",
-    "description": "Bring one client request, the template you trust, and the next deliverable. Let the Work Agent prepare the work while you keep every business decision.",
+    "eyebrow": "The next client proposal",
+    "title": "Draft the proposal without outsourcing the promise",
+    "description": "Give the Work Agent the client brief and your template. You approve scope, pricing, and every reply before it goes out.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-solopreneur&download_placement=final_cta"
-    },
-    "secondaryCta": {
-      "label": "See how the workspace supports the agent",
-      "href": "/agent-workspace"
     }
   }
 }

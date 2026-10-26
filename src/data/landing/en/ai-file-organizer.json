@@ -75,9 +75,9 @@
     ]
   },
   "finalCta": {
-    "title": "Clean the folder without surrendering control.",
-    "description": "Let Floatboat propose the structure, review every important change, and organize the approved files locally.",
-    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=final_cta" },
-    "secondaryCta": { "label": "Compare file organizers", "href": "/blog/best-ai-file-organizer" }
+    "eyebrow": "Before files move",
+    "title": "Approve the folder plan before it changes files",
+    "description": "Point Floatboat at a messy folder, inspect proposed groups and renames, then apply only the moves you approve locally.",
+    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=final_cta" }
   }
 }

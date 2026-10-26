@@ -348,12 +348,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Reserve Pro for the problems that need Pro.",
-      "zh": "把 Pro 留给真正需要 Pro 的问题。"
+      "en": "Switch between V4 Pro depth and Flash speed",
+      "zh": "深度推理选 V4 Pro，快速任务选 Flash"
     },
     "description": {
-      "en": "Switch between depth and efficiency without moving the project or rebuilding its context.",
-      "zh": "在不迁移项目、不重建上下文的前提下切换深度与效率。"
+      "en": "Use V4 Pro for complex code or mathematics, then move lighter questions to Flash without starting a new project.",
+      "zh": "复杂代码与数学问题交给 V4 Pro，轻量问答切到 Flash；无需为切换模型重新建立项目。"
     }
   }
 }

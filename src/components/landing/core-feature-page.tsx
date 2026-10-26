@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { FinalCta } from "@/components/final-cta";
+import { RelatedPageLinks } from "@/components/related-page-links";
+import { HowSection } from "@/components/marketing/how-section";
+import { MarketingHero } from "@/components/marketing/marketing-hero";
+import { UseCasesSection } from "@/components/marketing/use-cases-section";
 
 import { FeatureDemo } from "./feature-demo";
 import type { CoreFeaturePageData } from "@/lib/landing/core-feature-schema";
@@ -57,24 +62,19 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       <span className="mx-2">/</span><span>{page.breadcrumb}</span>
     </nav>
 
-    <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.86fr_1.14fr] lg:py-24">
-      <div>
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--ob-color-accent)]">{page.hero.eyebrow}</p>
-        <h1 className="font-serif text-5xl leading-[0.98] tracking-[-0.055em] sm:text-7xl">{page.hero.title}</h1>
-        <p className="mt-6 max-w-xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{page.hero.description}</p>
-        <div className="mt-8 flex flex-wrap gap-3"><Cta {...page.hero.primaryCta} primary /><Cta {...page.hero.secondaryCta} /></div>
-        <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--ob-color-muted)]">
-          {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-[var(--ob-color-text)]">✓</span>{item}</li>)}
-        </ul>
+    <MarketingHero eyebrow={page.hero.eyebrow} title={page.hero.title} description={page.hero.description} />
+
+    <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 lg:pb-24">
+      <FeatureDemo items={page.scenario.steps.map((step) => step.title)} locale={page.locale} />
+      <div className="mx-auto mt-8 max-w-3xl text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{page.demo.eyebrow}</p>
+        <h2 className="mt-2 font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{page.demo.title}</h2>
+        <p className="mt-2 text-sm leading-6 text-[var(--ob-color-text-subtle)]">{page.demo.description}</p>
       </div>
-      <div>
-        <div className="mb-5 px-1">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{page.demo.eyebrow}</p>
-          <h2 className="mt-2 font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{page.demo.title}</h2>
-          <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--ob-color-text-subtle)]">{page.demo.description}</p>
-        </div>
-        <FeatureDemo items={page.scenario.steps.map((step) => step.title)} locale={page.locale} />
-      </div>
+      <div className="mt-6 flex flex-wrap justify-center gap-3"><Cta {...page.hero.primaryCta} primary /><Cta {...page.hero.secondaryCta} /></div>
+      <ul className="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-[var(--ob-color-muted)]">
+        {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-[var(--ob-color-text)]">✓</span>{item}</li>)}
+      </ul>
     </section>
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
@@ -96,15 +96,17 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       </div>
     </section>
 
-    <section className="border-y border-black/[0.06] py-20 sm:py-28"><div className="mx-auto max-w-7xl px-5 sm:px-8"><SectionHeading title={page.audiences.title} description={page.audiences.description} /><div className="grid gap-5 md:grid-cols-3">{page.audiences.items.map(item => <article key={item.title} className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--ob-color-muted)]">{item.label}</p><h3 className="mt-8 font-serif text-2xl">{item.title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></article>)}</div></div></section>
+    <UseCasesSection {...page.audiences} />
 
-    <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28"><SectionHeading title={page.howItWorks.title} description={page.howItWorks.description} /><ol className="grid gap-8 md:grid-cols-3">{page.howItWorks.items.map((item, index) => <li key={item.title}><span className="font-serif text-5xl text-black/15">0{index + 1}</span><h3 className="mt-4 text-xl font-semibold">{item.title}</h3><p className="mt-2 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p></li>)}</ol></section>
+    <HowSection {...page.howItWorks} />
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28"><div className="mx-auto max-w-5xl px-5 sm:px-8"><SectionHeading title={page.comparison.title} description={page.comparison.description} /><div className="overflow-hidden rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)]"><div className="grid grid-cols-[1.1fr_1fr_1fr] bg-[#24221f] px-5 py-4 text-sm font-semibold text-white"><span /><span>{page.comparison.columns[0]}</span><span>{page.comparison.columns[1]}</span></div>{page.comparison.rows.map(row => <div key={row.label} className="grid grid-cols-[1.1fr_1fr_1fr] gap-3 border-t border-black/[0.07] px-5 py-4 text-sm"><strong>{row.label}</strong><span>{row.values[0]}</span><span className="text-[var(--ob-color-muted)]">{row.values[1]}</span></div>)}</div></div></section>
 
+    <RelatedPageLinks family="features" currentId={page.slug} locale={page.locale} />
+
     <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8 sm:py-28"><h2 className="mb-8 text-center font-serif text-4xl tracking-tight sm:text-5xl">{page.faq.title}</h2><div className="space-y-3">{page.faq.items.map(item => <details key={item.question} className="group rounded-2xl border border-black/[0.07] bg-white/45 p-5"><summary className="cursor-pointer list-none pr-8 font-semibold">{item.question}<span className="float-right text-xl group-open:rotate-45">+</span></summary><p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{item.answer}</p></details>)}</div></section>
 
-    <section className="px-5 pb-20 sm:px-8"><div className="mx-auto max-w-6xl rounded-[36px] bg-[#24221f] px-6 py-14 text-center text-white sm:px-12 sm:py-20"><h2 className="font-serif text-4xl tracking-tight sm:text-6xl">{page.finalCta.title}</h2><p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/65">{page.finalCta.description}</p><div className="mt-8 flex flex-wrap justify-center gap-3"><Cta {...page.finalCta.primaryCta} primary /><Cta {...page.finalCta.secondaryCta} /></div></div></section>
+    <FinalCta eyebrow={page.finalCta.eyebrow} title={page.finalCta.title} description={page.finalCta.description} primary={page.finalCta.primaryCta} />
 
     {jsonLd.map((item, index) => <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }} />)}
   </div>;

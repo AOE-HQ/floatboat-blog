@@ -383,12 +383,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Match the GPT lane to the deliverable.",
-      "zh": "让 GPT 能力路径匹配最终交付物。"
+      "en": "Pick Astra for reasoning or GPT-Image-2 for visuals",
+      "zh": "推理选 Astra，画图用 GPT-Image-2"
     },
     "description": {
-      "en": "Choose Astra for reasoning now, and use the wider OpenAI matrix as each capability becomes available in its product surface.",
-      "zh": "当前用 Astra 处理推理任务，并在相应产品界面开放时使用更广泛的 OpenAI 能力矩阵。"
+      "en": "Use GPT-6 Astra in chat for reasoning and GPT-Image-2 through the image Combo for visuals; other variants are not default picker choices.",
+      "zh": "对话选择器可用 GPT-6 Astra；画图 Combo 可用 GPT-Image-2。其他已登记型号并非默认可选。"
     }
   }
 }
