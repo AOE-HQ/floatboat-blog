@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { FinalCta } from "@/components/final-cta";
+import { RelatedPageLinks } from "@/components/related-page-links";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 
 import { ModelPickerDemo } from "./model-picker-demo";
@@ -414,6 +415,8 @@ export function ModelDetailPage({
           ))}
         </div>
       </section>
+
+      <RelatedPageLinks family="models" currentId={model.slug} locale={locale} />
 
       <FinalCta
         eyebrow={localize(model.badge, locale)}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
+import { RelatedPageLinks } from "@/components/related-page-links";
 import { HowSection } from "@/components/marketing/how-section";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { UseCasesSection } from "@/components/marketing/use-cases-section";
@@ -102,6 +103,8 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28"><div className="mx-auto max-w-5xl px-5 sm:px-8"><SectionHeading title={page.comparison.title} description={page.comparison.description} /><div className="overflow-hidden rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)]"><div className="grid grid-cols-[1.1fr_1fr_1fr] bg-[#24221f] px-5 py-4 text-sm font-semibold text-white"><span /><span>{page.comparison.columns[0]}</span><span>{page.comparison.columns[1]}</span></div>{page.comparison.rows.map(row => <div key={row.label} className="grid grid-cols-[1.1fr_1fr_1fr] gap-3 border-t border-black/[0.07] px-5 py-4 text-sm"><strong>{row.label}</strong><span>{row.values[0]}</span><span className="text-[var(--ob-color-muted)]">{row.values[1]}</span></div>)}</div></div></section>
 
     <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8 sm:py-28"><h2 className="mb-8 text-center font-serif text-4xl tracking-tight sm:text-5xl">{page.faq.title}</h2><div className="space-y-3">{page.faq.items.map(item => <details key={item.question} className="group rounded-2xl border border-black/[0.07] bg-white/45 p-5"><summary className="cursor-pointer list-none pr-8 font-semibold">{item.question}<span className="float-right text-xl group-open:rotate-45">+</span></summary><p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{item.answer}</p></details>)}</div></section>
+
+    <RelatedPageLinks family="features" currentId={page.slug} locale={page.locale} />
 
     <FinalCta eyebrow={page.finalCta.eyebrow} title={page.finalCta.title} description={page.finalCta.description} primary={page.finalCta.primaryCta} />
 

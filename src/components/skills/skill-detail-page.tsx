@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { FaqBand } from "@/components/faq-band";
+import { RelatedPageLinks } from "@/components/related-page-links";
 import { FinalCta } from "@/components/final-cta";
 import { HowSection } from "@/components/marketing/how-section";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
@@ -159,6 +160,8 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
         </div>
       </section>
       <FaqBand locale={locale} items={skill.faq.map((item) => ({ question: item.question[locale], answer: item.answer[locale] }))} />
+
+      <RelatedPageLinks family="skills" currentId={`${skill.authorHandle}/${skill.slug}`} locale={locale} />
 
       <div id="floatboat">
         <FinalCta eyebrow={`${t.product} · ${skill.pageCopy.ctaEyebrow[locale]}`} title={skill.pageCopy.ctaTitle[locale]} description={skill.pageCopy.ctaDescription[locale]} primary={{ label: t.download, href: download }} />

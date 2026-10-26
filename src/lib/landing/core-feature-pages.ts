@@ -36,6 +36,8 @@ const rawPages = {
   },
 } as const;
 
+export const CORE_FEATURE_SLUGS = Object.keys(rawPages.en) as CoreFeatureSlug[];
+
 export function getCoreFeaturePage(
   locale: LandingLocale,
   slug: CoreFeatureSlug,

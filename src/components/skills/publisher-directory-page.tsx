@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
-import { PublisherDirectoryNav } from "@/components/skills/publisher-directory-nav";
+import { RelatedPageLinks } from "@/components/related-page-links";
 import { FEATURED_SKILLS, skillPath, type SkillLocale } from "@/lib/skills/featured-skills";
 import { getPublisherDirectory } from "@/lib/skills/publisher-directories";
 import { getPublisherProfile, publisherProfilePath } from "@/lib/skills/publisher-profiles";
@@ -80,7 +80,7 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
       </section>
 
       <FaqBand locale={locale} items={t.faq} />
-      <PublisherDirectoryNav locale={locale} current={handle} />
+      <RelatedPageLinks family="publishers" currentId={handle} locale={locale} />
       <FinalCta eyebrow={t.ctaEyebrow} title={publisherHeading(locale, t.ctaTitle)} description={t.ctaDescription} primary={{ label: labels.download, href: `${isZh ? "/zh" : ""}/download/success?from=${handle}-publisher&download_placement=final_cta` }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
     </main>
