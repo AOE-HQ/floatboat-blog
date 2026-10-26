@@ -81,8 +81,8 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
         <Link href={skillCategoryPath(locale)} className="mt-5 inline-block text-sm font-semibold underline underline-offset-4">{isZh ? "按任务浏览 Skill 分类" : "Browse Skills by Task"} →</Link>
       </section>
 
-      <FaqBand locale={locale} items={t.faq} />
       <RelatedPageLinks family="publishers" currentId={handle} locale={locale} />
+      <FaqBand locale={locale} items={t.faq} />
       <FinalCta eyebrow={t.ctaEyebrow} title={publisherHeading(locale, t.ctaTitle)} description={t.ctaDescription} primary={{ label: labels.download, href: `${isZh ? "/zh" : ""}/download/success?from=${handle}-publisher&download_placement=final_cta` }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
     </main>

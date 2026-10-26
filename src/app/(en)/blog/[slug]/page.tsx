@@ -23,7 +23,7 @@ import {
   buildBreadcrumbJsonLd,
   getArticleBreadcrumbItems,
 } from "@/lib/schema";
-import { getAdjacentPosts, getPostBySlug } from "@/lib/posts";
+import { getAdjacentPosts, getPostBySlug, getRelatedPostMeta } from "@/lib/posts";
 
 const features = resolveFeatures(config);
 
@@ -97,10 +97,9 @@ export default async function BlogPostPage({ params }: PageProps) {
         post={post}
         pageUrl={pageUrl}
         adjacentPosts={adjacentPosts}
+        relatedPosts={getRelatedPostMeta(post)}
+        afterRelated={post.faq && post.faq.length > 0 ? <FaqBand items={post.faq} locale="en" /> : null}
       />
-      {post.faq && post.faq.length > 0 ? (
-        <FaqBand items={post.faq} locale="en" />
-      ) : null}
       <BlogCtaPopup copy={popup} locale="en" />
     </>
   );

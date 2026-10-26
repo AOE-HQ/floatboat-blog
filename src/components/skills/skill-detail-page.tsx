@@ -160,10 +160,10 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
           {skill.commands && <details className="mt-12 rounded-2xl border border-black/10 bg-white/70 p-6"><summary className="cursor-pointer font-semibold">{t.commands}</summary><p className="mt-3 text-sm text-[var(--ob-color-text-subtle)]">{t.commandsNote}</p><div className="mt-6 grid gap-4 md:grid-cols-3">{skill.commands.map((item) => <div key={item.command}><strong className="text-sm">{item.label[locale]}</strong><code className="mt-2 block overflow-x-auto rounded-lg bg-[var(--ob-color-text)] px-3 py-2 text-xs text-white">{item.command}</code><p className="mt-2 text-xs leading-5 text-[var(--ob-color-text-subtle)]">{item.note[locale]}</p></div>)}</div></details>}
         </div>
       </section>
-      <FaqBand locale={locale} items={skill.faq.map((item) => ({ question: item.question[locale], answer: item.answer[locale] }))} />
-
-      <RelatedPageLinks family="skills" currentId={`${skill.authorHandle}/${skill.slug}`} locale={locale} />
       <div className="mx-auto max-w-7xl px-5 pb-4 text-right sm:px-8"><Link href={skillCategoryPath(locale)} className="text-sm font-semibold underline underline-offset-4">{isZh ? "按任务浏览全部 Skill 分类" : "Browse All Skill Categories"} →</Link></div>
+      <RelatedPageLinks family="skills" currentId={`${skill.authorHandle}/${skill.slug}`} locale={locale} />
+
+      <FaqBand locale={locale} items={skill.faq.map((item) => ({ question: item.question[locale], answer: item.answer[locale] }))} />
 
       <div id="floatboat">
         <FinalCta eyebrow={`${t.product} · ${skill.pageCopy.ctaEyebrow[locale]}`} title={skill.pageCopy.ctaTitle[locale]} description={skill.pageCopy.ctaDescription[locale]} primary={{ label: t.download, href: download }} />

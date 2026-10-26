@@ -3,6 +3,7 @@ import {
   getPostExcerpt,
   extractLeadParagraph,
   extractToc,
+  tagToSlug,
   type Post,
   type PostMeta,
 } from "@openblog/core";
@@ -69,6 +70,30 @@ export function getAllPostMeta(locale: BlogLocale = "en"): PostMeta[] {
     void content;
     return post;
   });
+}
+
+const relatedPostMetaCache = new Map<BlogLocale, PostMeta[]>();
+
+/** Related articles in the same locale, ranked by category and shared tags. */
+export function getRelatedPostMeta(post: PostMeta, locale: BlogLocale = "en", limit = 3): PostMeta[] {
+  let candidates = relatedPostMetaCache.get(locale);
+  if (!candidates) {
+    candidates = getAllPostMeta(locale);
+    relatedPostMetaCache.set(locale, candidates);
+  }
+
+  const tags = new Set(post.tags.map(tagToSlug));
+  return candidates
+    .filter((candidate) => candidate.slug !== post.slug)
+    .map((candidate) => ({
+      candidate,
+      score: (post.categorySlug && candidate.categorySlug === post.categorySlug ? 10 : 0)
+        + candidate.tags.filter((tag) => tags.has(tagToSlug(tag))).length,
+    }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || b.candidate.date.localeCompare(a.candidate.date))
+    .slice(0, limit)
+    .map(({ candidate }) => candidate);
 }
 
 export function getPostsByCategory(categorySlug: string, locale: BlogLocale = "en") {

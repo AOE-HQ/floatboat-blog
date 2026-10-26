@@ -392,6 +392,8 @@ export function ModelDetailPage({
         </section>
       )}
 
+      <RelatedPageLinks family="models" currentId={model.slug} locale={locale} />
+
       <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8 sm:py-28">
         <h2 className="mb-8 text-center font-serif text-4xl tracking-tight sm:text-5xl">
           {model.name} · FAQ
@@ -415,8 +417,6 @@ export function ModelDetailPage({
           ))}
         </div>
       </section>
-
-      <RelatedPageLinks family="models" currentId={model.slug} locale={locale} />
 
       <FinalCta
         eyebrow={localize(model.badge, locale)}

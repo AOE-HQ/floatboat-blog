@@ -88,8 +88,8 @@ export function SkillCategoryDetail({ locale, slug }: { locale: SkillLocale; slu
     </div></section>
 
     <section className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16"><h2 className="font-serif text-3xl tracking-tight sm:text-4xl">{labels.choice}</h2><div className="mt-7 grid gap-4 md:grid-cols-3">{category.decisions.map((decision) => <article key={decision.en.title} className="rounded-2xl border border-black/[0.08] bg-white/60 p-6"><h3 className="font-serif text-2xl tracking-tight">{decision[locale].title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{decision[locale].description}</p></article>)}</div></section>
-    <FaqBand locale={locale} items={category.faq[locale]} />
     <RelatedPageLinks family="skill-categories" currentId={slug} locale={locale} />
+    <FaqBand locale={locale} items={category.faq[locale]} />
     <FinalCta eyebrow={category.cta[locale].eyebrow} title={category.cta[locale].title} description={category.cta[locale].description} primary={{ label: labels.download, href: `${isZh ? "/zh" : ""}/download/success?from=skill-category-${slug}&download_placement=final_cta` }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
   </main>;
