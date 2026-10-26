@@ -3,7 +3,9 @@ import Link from "next/link";
 import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
+import { PublisherDirectoryNav } from "@/components/skills/publisher-directory-nav";
 import type { SkillLocale } from "@/lib/skills/featured-skills";
+import { publisherHeading } from "@/lib/skills/title-case-heading";
 
 const origin = "https://floatboat.ai";
 const skills = [
@@ -30,7 +32,7 @@ const copy = {
     description: "Explore two different agent workflows published by morluto: REA's reverse-engineering companion Skill and Generate Social Preview. Check the original instructions before installing either one.",
     count: "Skills with verified upstream instructions", intro: "Two Skills, two very different jobs",
     introDescription: "REA is a larger reverse-engineering project with its own tools. The listed REA entry is its companion Skill, not the whole product recast as a Skill. Generate Social Preview is a standalone creative Skill.",
-    source: "Read original SKILL.md", repository: "View repository", otherPublisher: "Explore Vercel Labs Skills",
+    source: "Read original SKILL.md", repository: "View repository",
     chooseEyebrow: "Before you install", chooseTitle: "Match the Skill to the work and the tools you have",
     chooseDescription: "These pages distinguish agent instructions from software capabilities. An installed Skill does not automatically connect a server, install an analysis engine, or provide an image generator.",
     checks: [
@@ -53,7 +55,7 @@ const copy = {
     description: "了解 morluto 发布的两种不同工作流：REA 的逆向工程配套 Skill，以及 Generate Social Preview。安装前请先核对原始指令与所需工具。",
     count: "已核实上游指令的 Skills", intro: "两项 Skill，解决两类不同任务",
     introDescription: "REA 是包含工具链的逆向工程项目；这里列出的是其中的配套 Skill，不把整个项目误写成 Skill。Generate Social Preview 则是独立的视觉创作 Skill。",
-    source: "阅读原始 SKILL.md", repository: "查看仓库", otherPublisher: "查看 Vercel Labs 的 Skills",
+    source: "阅读原始 SKILL.md", repository: "查看仓库",
     chooseEyebrow: "安装之前", chooseTitle: "先看任务，再看当前环境有哪些工具",
     chooseDescription: "Agent 指令与软件能力不是一回事。安装 Skill 不会自动连接服务器、安装分析引擎，或提供图像生成器。",
     checks: [
@@ -92,32 +94,32 @@ export function MorlutoPublisherPage({ locale }: { locale: SkillLocale }) {
       <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
         <Link href={isZh ? "/zh" : "/"}>{t.home}</Link><span className="mx-2">/</span><a href={`${origin}${isZh ? "/zh" : ""}/combostore`}>{t.store}</a><span className="mx-2">/</span><span aria-current="page">{t.publisher}</span>
       </nav>
-      <MarketingHero eyebrow={t.eyebrow} title={t.title} description={t.description}>
+      <MarketingHero eyebrow={t.eyebrow} title={publisherHeading(locale, t.title)} description={t.description}>
         <p className="text-center text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{skills.length} {t.count}</p>
       </MarketingHero>
       <section className="border-y border-black/[0.07] bg-white/35 px-5 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{t.intro}</h2>
+          <h2 className="max-w-3xl font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.intro)}</h2>
           <p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{t.introDescription}</p>
           <div className="mt-9 grid gap-5 md:grid-cols-2">
             {skills.map((skill) => <article key={skill.name} className="flex flex-col rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7 shadow-[var(--ob-shadow-raised)]">
               <span className="w-fit rounded-full bg-black/[0.05] px-3 py-1 text-xs font-semibold text-[var(--ob-color-muted)]">{skill[locale].category}</span>
-              <h3 className="mt-8 font-serif text-2xl tracking-tight">{skill.name}</h3>
+              <h3 className="mt-8 font-serif text-2xl tracking-tight">{publisherHeading(locale, skill.name)}</h3>
               <p className="mt-3 flex-1 leading-7 text-[var(--ob-color-text-subtle)]">{skill[locale].description}</p>
               <div className="mt-7 flex flex-wrap gap-3 text-sm font-semibold"><a href={skill.source} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[var(--ob-color-primary)] px-5 py-3 hover:bg-[var(--ob-color-primary-hover)]">{t.source} ↗</a><a href={skill.repository} target="_blank" rel="noopener noreferrer" className="rounded-full border border-black/10 px-5 py-3 hover:bg-white">{t.repository} ↗</a></div>
             </article>)}
           </div>
-          <Link href={`${isZh ? "/zh" : ""}/combostore/vercel-labs`} className="mt-8 inline-flex text-sm font-semibold underline underline-offset-4">{t.otherPublisher} →</Link>
         </div>
       </section>
       <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{t.chooseEyebrow}</p>
-        <h2 className="mt-3 max-w-4xl font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{t.chooseTitle}</h2>
+        <h2 className="mt-3 max-w-4xl font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.chooseTitle)}</h2>
         <p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{t.chooseDescription}</p>
-        <div className="mt-9 grid gap-5 md:grid-cols-3">{t.checks.map((check, index) => <article key={check.title} className="rounded-2xl border border-black/[0.08] bg-white/70 p-6"><span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-accent)]">0{index + 1}</span><h3 className="mt-5 font-serif text-xl">{check.title}</h3><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{check.body}</p></article>)}</div>
+        <div className="mt-9 grid gap-5 md:grid-cols-3">{t.checks.map((check, index) => <article key={check.title} className="rounded-2xl border border-black/[0.08] bg-white/70 p-6"><span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-accent)]">0{index + 1}</span><h3 className="mt-5 font-serif text-xl">{publisherHeading(locale, check.title)}</h3><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{check.body}</p></article>)}</div>
       </div></section>
       <FaqBand locale={locale} items={t.faq.map((item) => ({ question: item.question, answer: item.answer }))} />
-      <FinalCta eyebrow={t.ctaEyebrow} title={t.ctaTitle} description={t.ctaDescription} primary={{ label: t.download, href: `${origin}${isZh ? "/zh" : ""}/download/success?from=morluto-skills&download_placement=final_cta` }} />
+      <PublisherDirectoryNav locale={locale} current="morluto" />
+      <FinalCta eyebrow={t.ctaEyebrow} title={publisherHeading(locale, t.ctaTitle)} description={t.ctaDescription} primary={{ label: t.download, href: `${origin}${isZh ? "/zh" : ""}/download/success?from=morluto-skills&download_placement=final_cta` }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
     </main>
   );

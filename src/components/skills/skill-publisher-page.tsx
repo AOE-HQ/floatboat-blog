@@ -3,7 +3,9 @@ import Link from "next/link";
 import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
+import { PublisherDirectoryNav } from "@/components/skills/publisher-directory-nav";
 import { FEATURED_SKILLS, skillPath, skillPublisherPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
+import { publisherHeading } from "@/lib/skills/title-case-heading";
 
 const PUBLISHER = "vercel-labs";
 const ORIGIN = "https://floatboat.ai";
@@ -59,7 +61,6 @@ const copy = {
     ctaTitle: "Keep the task and its review in one place",
     ctaDescription: "Use this directory to find the right upstream Skill. Bring the actual assignment, source files, and decisions into Floatboat when you are ready to work.",
     download: "Download Floatboat",
-    otherPublisher: "Explore morluto Skills",
   },
   zh: {
     home: "首页",
@@ -104,7 +105,6 @@ const copy = {
     ctaTitle: "把任务与审阅放在一起推进",
     ctaDescription: "先通过目录找到合适的上游 Skill。准备执行时，再把具体任务、源文件和关键决定放进 Floatboat。",
     download: "下载 Floatboat",
-    otherPublisher: "查看 morluto 的 Skills",
   },
 } as const;
 
@@ -118,7 +118,7 @@ function SkillCard({ skill, locale, read }: { skill: FeaturedSkill; locale: Skil
         <span aria-hidden className="text-lg transition group-hover:translate-x-1">→</span>
       </div>
       <div className="mt-9 flex-1">
-        <h3 className="font-serif text-2xl tracking-tight">{skill.name}</h3>
+        <h3 className="font-serif text-2xl tracking-tight">{publisherHeading(locale, skill.name)}</h3>
         <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{skill.hero.description[locale]}</p>
       </div>
       <span className="mt-7 text-sm font-semibold text-[var(--ob-color-text)]">{read} →</span>
@@ -166,7 +166,7 @@ export function SkillPublisherPage({ locale }: { locale: SkillLocale }) {
         <span aria-current="page">{t.publisher}</span>
       </nav>
 
-      <MarketingHero eyebrow={t.eyebrow} title={t.title} description={t.description}>
+      <MarketingHero eyebrow={t.eyebrow} title={publisherHeading(locale, t.title)} description={t.description}>
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">{publisherSkills.length} {t.count}</p>
           <p className="mt-8 text-sm font-semibold text-[var(--ob-color-muted)]">{t.jump}</p>
@@ -179,7 +179,7 @@ export function SkillPublisherPage({ locale }: { locale: SkillLocale }) {
       <section className="border-y border-black/[0.07] bg-white/35 px-5 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <h2 className="font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{t.groupIntro}</h2>
+            <h2 className="font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.groupIntro)}</h2>
             <p className="mt-4 text-base leading-7 text-[var(--ob-color-text-subtle)]">{t.groupDescription}</p>
           </div>
           {groups.map((group) => {
@@ -187,7 +187,7 @@ export function SkillPublisherPage({ locale }: { locale: SkillLocale }) {
             return (
               <div key={group.id} id={group.id} className="scroll-mt-24 border-b border-black/[0.08] py-14 last:border-b-0 last:pb-0">
                 <div className="mb-7 max-w-3xl">
-                  <h3 className="font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{t[group.id].title}</h3>
+                  <h3 className="font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{publisherHeading(locale, t[group.id].title)}</h3>
                   <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{t[group.id].description}</p>
                 </div>
                 <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -202,10 +202,10 @@ export function SkillPublisherPage({ locale }: { locale: SkillLocale }) {
       <section className="px-5 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{t.chooseEyebrow}</p>
-          <h2 className="mt-3 max-w-4xl font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{t.chooseTitle}</h2>
+          <h2 className="mt-3 max-w-4xl font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.chooseTitle)}</h2>
           <p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{t.chooseDescription}</p>
           <div className="mt-9 grid gap-5 md:grid-cols-3">
-            {t.checks.map((check, index) => <article key={check.title} className="rounded-2xl border border-black/[0.08] bg-white/70 p-6"><span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-accent)]">0{index + 1}</span><h3 className="mt-5 font-serif text-xl">{check.title}</h3><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{check.body}</p></article>)}
+            {t.checks.map((check, index) => <article key={check.title} className="rounded-2xl border border-black/[0.08] bg-white/70 p-6"><span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-accent)]">0{index + 1}</span><h3 className="mt-5 font-serif text-xl">{publisherHeading(locale, check.title)}</h3><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{check.body}</p></article>)}
           </div>
         </div>
       </section>
@@ -213,17 +213,17 @@ export function SkillPublisherPage({ locale }: { locale: SkillLocale }) {
       <section className="border-y border-black/[0.07] bg-white/35 px-5 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{t.sourceEyebrow}</p>
-          <h2 className="mt-3 font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{t.sourceTitle}</h2>
+          <h2 className="mt-3 font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.sourceTitle)}</h2>
           <p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{t.sourceDescription}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             {t.repositories.map((repository) => <a key={repository.href} href={repository.href} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center rounded-full border border-black/10 bg-white/70 px-5 text-sm font-semibold hover:bg-white">{repository.label} ↗</a>)}
           </div>
-          <Link href={skillPublisherPath(locale, "morluto")} className="mt-8 inline-flex text-sm font-semibold underline underline-offset-4">{t.otherPublisher} →</Link>
         </div>
       </section>
 
       <FaqBand locale={locale} items={t.faq.map((item) => ({ question: item.question, answer: item.answer }))} />
-      <FinalCta eyebrow={t.ctaEyebrow} title={t.ctaTitle} description={t.ctaDescription} primary={{ label: t.download, href: `${ORIGIN}${isZh ? "/zh" : ""}/download/success?from=vercel-labs-skills&download_placement=final_cta` }} />
+      <PublisherDirectoryNav locale={locale} current={PUBLISHER} />
+      <FinalCta eyebrow={t.ctaEyebrow} title={publisherHeading(locale, t.ctaTitle)} description={t.ctaDescription} primary={{ label: t.download, href: `${ORIGIN}${isZh ? "/zh" : ""}/download/success?from=vercel-labs-skills&download_placement=final_cta` }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
     </main>
   );

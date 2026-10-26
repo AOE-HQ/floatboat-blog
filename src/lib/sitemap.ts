@@ -7,6 +7,7 @@ import { createLocaleSiteHelpers } from "@/lib/locale-site";
 import { siteHelpers } from "@/lib/openblog-config";
 import { PERSONA_SLUGS } from "@/lib/use-cases/persona-pages";
 import { FEATURED_SKILLS, skillPath, skillPublisherPath } from "@/lib/skills/featured-skills";
+import { PUBLISHER_HANDLES, publisherDirectoryPath } from "@/lib/skills/publisher-directories";
 
 function extractUrlEntries(xml: string): string {
   const match = xml.match(/<urlset[^>]*>([\s\S]*)<\/urlset>/);
@@ -32,6 +33,10 @@ export function buildCombinedSitemapXml(): string {
     `https://floatboat.ai${skillPublisherPath("zh", "vercel-labs")}`,
       `https://floatboat.ai${skillPublisherPath("en", "morluto")}`,
       `https://floatboat.ai${skillPublisherPath("zh", "morluto")}`,
+      ...PUBLISHER_HANDLES.flatMap((handle) => [
+        `https://floatboat.ai${publisherDirectoryPath("en", handle)}`,
+        `https://floatboat.ai${publisherDirectoryPath("zh", handle)}`,
+      ]),
     ...FEATURED_SKILLS.flatMap(({ authorHandle, slug }) => [
       `https://floatboat.ai${skillPath("en", authorHandle, slug)}`,
       `https://floatboat.ai${skillPath("zh", authorHandle, slug)}`,
