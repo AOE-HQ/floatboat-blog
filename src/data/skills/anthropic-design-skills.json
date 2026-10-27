@@ -85,7 +85,7 @@
       },
       "how": {
         "en": "How to Use Frontend Design",
-        "zh": "How to 使用 Frontend Design"
+        "zh": "如何使用 Frontend Design"
       },
       "howDescription": {
         "en": "Start with the page’s audience, primary task, content, and any pinned visual requirements. Ask the agent to propose a concise design direction before building, then inspect the rendered interface and refine hierarchy, readability, interaction, and behavior at the sizes the page will support.",
@@ -335,7 +335,7 @@
       },
       "how": {
         "en": "How to Use Skill Creator",
-        "zh": "How to 使用 Skill Creator"
+        "zh": "如何使用 Skill Creator"
       },
       "howDescription": {
         "en": "Explain the recurring task and supply examples of successful work before drafting. Define the trigger and expected output, test the draft with representative requests in the supported environment, and revise the instructions using both user feedback and the results of those runs.",
@@ -581,11 +581,11 @@
       },
       "useCasesDescription": {
         "en": "Explore PDF tasks where the input format determines the method. Extract a report’s text or tables, organize several files into a correctly ordered document, or prepare a form workflow after checking whether the source contains selectable text, scanned pages, or interactive fields.",
-        "zh": "探索需要按输入类型选择方法的 PDF 任务：提取报告文字或表格，将多个文件整理成顺序正确的文档，或在确认表单字段后准备填写流程。先区分可选择文字、扫描页面与交互字段，再确定合适的处理与核对方式。"
+        "zh": "探索需要按输入类型选择方法的 PDF 任务：提取报告文字或表格，将多个文件整理成顺序正确的文档，或在确认表单字段后准备填写流程。先区分可选中的文本、扫描页面与交互字段，再确定合适的处理与核对方式。"
       },
       "how": {
         "en": "How to Use PDF",
-        "zh": "How to 使用 PDF"
+        "zh": "如何使用 PDF"
       },
       "howDescription": {
         "en": "Provide the PDFs and specify the pages, fields, or content you need. Have the agent inspect the file type and follow the relevant extraction, editing, or form instructions, then compare the output with the source and inspect rendered pages where layout matters.",
@@ -604,7 +604,7 @@
         },
         "body": {
           "en": "Read selectable text and tables, or use OCR for scanned pages when needed. Compare extracted values and headings with the original pages.",
-          "zh": "读取可选择文字和表格，扫描页面按需使用 OCR，并与原页核对数值和标题。"
+          "zh": "读取可选中的文本和表格，扫描页面按需使用 OCR，并与原页核对数值和标题。"
         }
       },
       {
@@ -644,7 +644,7 @@
         },
         "body": {
           "en": "Identify selectable text, scanned pages, and form fields. Specify the pages and output format that the task requires.",
-          "zh": "识别可选择文字、扫描页与表单字段，说明任务涉及的页码和输出格式。"
+          "zh": "识别可选中的文本、扫描页与表单字段，说明任务涉及的页码和输出格式。"
         }
       },
       {
@@ -835,7 +835,7 @@
       },
       "how": {
         "en": "How to Use DOCX",
-        "zh": "How to 使用 DOCX"
+        "zh": "如何使用 DOCX"
       },
       "howDescription": {
         "en": "Provide the outline or source document and explain what must change and what must remain. Choose the source’s creation or editing path with the agent, then validate the saved package, render the document, and review representative pages before delivering the editable file.",
@@ -1085,7 +1085,7 @@
       },
       "how": {
         "en": "How to Use PPTX",
-        "zh": "How to 使用 PPTX"
+        "zh": "如何使用 PPTX"
       },
       "howDescription": {
         "en": "Provide the presentation brief, source material, and any deck or template to reuse. Agree on the slide structure, create or edit using the matching source workflow, then inspect a thumbnail overview and the rendered slides before validating and delivering the editable presentation file.",
@@ -1335,7 +1335,7 @@
       },
       "how": {
         "en": "How to Use XLSX",
-        "zh": "How to 使用 XLSX"
+        "zh": "如何使用 XLSX"
       },
       "howDescription": {
         "en": "Provide the source workbook or table, explain the column meanings, and define the required calculations. Ask the agent to edit the intended cells or build the requested output, then recalculate formulas, inspect reported errors, and compare representative results with the source before delivery.",
@@ -1570,7 +1570,7 @@
       "zh": {
         "title": "关于 Impeccable",
         "paragraphs": [
-          "Impeccable 是 pbakaus 发布的设计 Skill 与配套工具流程。它通过单个 Skill 调度 audit、critique、polish、harden 等命令，不应把每条命令视为独立能力包。当前发行包含启动器与独立引擎，并按宿主提供不同安装方式和可选原生 Hook。它读取项目上下文，区分保留既有方向的优化与重新设计，再根据界面类型选择方法。使用时应提供具体页面、用户任务，以及必须保留的身份或行为。不同宿主的安装细节需要分别核对，设计过程也仍需检查真实渲染结果。"
+          "Impeccable 是 pbakaus 发布的设计 Skill 与配套工具流程。它通过单个 Skill 调度 audit、critique、polish、harden 等命令，不应把每条命令视为独立能力包。当前发行包含启动器与独立引擎，并按宿主提供不同安装方式和可选原生 Hook。它读取项目上下文，区分保留既有方向的优化与重新设计，再根据界面类型选择方法。使用时应提供具体页面、用户任务，以及必须保留的品牌特征或交互行为。不同宿主的安装细节需要分别核对，设计过程也仍需检查真实渲染结果。"
         ]
       }
     },
@@ -1585,7 +1585,7 @@
       },
       "how": {
         "en": "How to Use Impeccable",
-        "zh": "How to 使用 Impeccable"
+        "zh": "如何使用 Impeccable"
       },
       "howDescription": {
         "en": "Install Impeccable for your host, then initialize a new project with /impeccable init or check its existing product context. Give the agent a specific interface task, distinguish refinement from redesign, and inspect the rendered result at representative sizes before accepting changes.",
@@ -1664,7 +1664,7 @@
         },
         "body": {
           "en": "Inspect the updated interface at the sizes it supports. Verify interaction and content, then refine the issues that the rendered result reveals.",
-          "zh": "在目标尺寸检查更新界面，核对交互与内容，再修正渲染结果暴露的具体问题。"
+          "zh": "在目标尺寸检查更新后的界面，核对交互与内容，再修正渲染结果暴露的具体问题。"
         }
       }
     ],
@@ -1692,7 +1692,7 @@
         },
         "answer": {
           "en": "No. The current workflow includes references, a launcher, an engine, and provider-specific packaging. Use the documented installer or complete distribution for your host rather than copying only the entry file.",
-          "zh": "不能。当前流程还包含参考文件、启动器、引擎及宿主包装，应使用对应宿主的官方安装器或完整发行，而不是只复制入口文件。"
+          "zh": "不能。当前流程还包含参考文件、启动器、引擎及宿主适配配置，应使用对应宿主的官方安装器或完整发行，而不是只复制入口文件。"
         }
       },
       {

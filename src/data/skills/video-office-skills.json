@@ -93,7 +93,7 @@
       },
       "how": {
         "en": "How to Use HyperFrames Skill",
-        "zh": "How to 使用 HyperFrames Skill"
+        "zh": "如何使用 HyperFrames Skill"
       },
       "howDescription": {
         "en": "Install the four core Skills and prepare the project’s tool environment before creating or editing a video. Give the agent a concrete brief, use the appropriate CLI checks and frame snapshots while iterating, and render a file when the requested delivery calls for it.",

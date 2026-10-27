@@ -38,7 +38,7 @@ const skill = z.object({
   sectionTitles: z.object({
     useCases: localized,
     useCasesDescription: localized,
-    how: z.object({ en: text.startsWith("How to"), zh: text.startsWith("How to") }),
+    how: z.object({ en: text.startsWith("How to"), zh: text.startsWith("如何") }),
     howDescription: localized,
   }),
   scenarios: z.array(z.object({ label: localized, title: localized, body: localized })).length(3),

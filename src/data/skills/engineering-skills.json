@@ -95,7 +95,7 @@
       },
       "how": {
         "en": "How to Clarify Plans with Grill Me",
-        "zh": "How to 澄清计划与记录决策"
+        "zh": "如何澄清计划与记录决策"
       },
       "howDescription": {
         "en": "Install Matt Pocock’s collection with the required companions, then choose Grill Me for an interview or Grill with Docs for project-aware terminology and records. Provide the plan and current evidence, resolve questions in rounds, and confirm the resulting decisions and warranted document changes before starting implementation.",
@@ -206,7 +206,7 @@
         },
         "answer": {
           "en": "The publisher places Grill Me in productivity and describes it for plans, designs, and non-code uses. Give enough context for the actual decision, whether or not it involves code.",
-          "zh": "发布者将它放在 productivity 类别，可用于计划、设计和非代码任务。无论是否涉及代码，都应提供足够的决策背景。"
+          "zh": "发布者将它放在效率工具（productivity）类别，可用于计划、设计和非代码任务。无论是否涉及代码，都应提供足够的决策背景。"
         }
       },
       {
@@ -398,7 +398,7 @@
       },
       "description": {
         "en": "Use TDD by Matt Pocock to implement a feature or fix through small, observable steps. Agree which public interfaces to test, write one failing behavior test, and add the minimum implementation needed to pass before choosing the next slice of work.",
-        "zh": "使用 Matt Pocock 的 TDD，以可观察的小步完成特性或修复。先约定需要测试的公开接口，再编写一条会失败的行为测试，补足使其通过的最小实现，然后根据反馈选择下一步工作。"
+        "zh": "使用 Matt Pocock 的 TDD，分步实现并验证新功能或缺陷修复。先约定需要测试的公开接口，再编写一条会失败的行为测试，补足使其通过的最小实现，然后根据反馈选择下一步工作。"
       }
     },
     "overview": {
@@ -411,7 +411,7 @@
       "zh": {
         "title": "关于 TDD",
         "paragraphs": [
-          "TDD 是 Matt Pocock 面向测试先行实现发布的参考 Skill，强调通过公开接口验证行为。它要求用户与 Agent 在写测试前先约定测试边界，使工作聚焦于有意义的能力，而不是私有实现细节。每轮先写一条失败测试，再完成使其通过的最小实现，并依据反馈选择下一片工作。当前原文明确把重构放在审查阶段，而非混入红灯到绿灯的实现循环。集合提供测试与模拟参考资料；接口本身尚未确定时，还需参考 codebase-design 的共同术语。使用仍依赖项目已有测试环境，以及可独立判断的预期行为。"
+          "TDD 是 Matt Pocock 面向测试先行实现发布的参考 Skill，强调通过公开接口验证行为。它要求用户与 Agent 在写测试前先约定测试边界，使工作聚焦于有意义的能力，而不是私有实现细节。每轮先写一条失败测试，再完成使其通过的最小实现，并依据反馈选择下一项小任务。当前原文明确把重构放在审查阶段，而非混入红灯到绿灯的实现循环。集合提供测试与模拟参考资料；接口本身尚未确定时，还需参考 codebase-design 的共同术语。使用仍依赖项目已有测试环境，以及可独立判断的预期行为。"
         ]
       }
     },
@@ -441,7 +441,7 @@
       },
       "how": {
         "en": "How to Implement Behavior with TDD",
-        "zh": "How to 用 TDD 实现行为"
+        "zh": "如何用 TDD 实现行为"
       },
       "howDescription": {
         "en": "Prepare the behavior specification and a runnable test command, then agree the public seams with your agent. Work through one failing test and one minimal implementation at a time, and keep broader cleanup for a separate review after the behavior is established.",
@@ -520,7 +520,7 @@
         },
         "body": {
           "en": "Use the last cycle’s evidence to choose the next slice. Review refactoring separately once the selected behavior works.",
-          "zh": "依据上一轮证据选择下一片工作，在目标行为可用后另行审查重构。"
+          "zh": "依据上一轮证据选择下一项小任务，在目标行为可用后另行审查重构。"
         }
       }
     ],
@@ -724,7 +724,7 @@
       },
       "how": {
         "en": "How to Explore Architecture Improvements",
-        "zh": "How to 评审架构改进"
+        "zh": "如何评审架构改进"
       },
       "howDescription": {
         "en": "Install the related collection skills and provide a subsystem or concrete pain point. Let the agent survey the relevant code and existing decisions, review its visual candidate report, and choose one opportunity for a design interview before planning implementation and validation.",
@@ -861,7 +861,7 @@
       {
         "question": {
           "en": "Does the workflow need subagents?",
-          "zh": "流程需要 subagent 吗？"
+          "zh": "流程需要子代理吗？"
         },
         "answer": {
           "en": "The documented exploration uses a subagent, and interface alternatives can also use parallel agents. A host without those capabilities cannot reproduce every step unchanged.",
@@ -997,7 +997,7 @@
       },
       "how": {
         "en": "How to Diagnose Bugs with a Feedback Loop",
-        "zh": "How to 调查复杂缺陷"
+        "zh": "如何调查复杂缺陷"
       },
       "howDescription": {
         "en": "Give the agent the observed and expected behavior, environment, and reproduction inputs. Establish a reliable failing signal, minimize it, and test ranked explanations with targeted instrumentation. Apply a focused correction, rerun the original flow, and remove temporary probes before closing the task.",
@@ -1227,7 +1227,7 @@
       },
       "description": {
         "en": "Use Code Review by Matt Pocock to examine a branch against a fixed Git reference. Review repository standards and the originating specification independently, then compare located findings side by side so code quality and requirement coverage remain separate questions in the review.",
-        "zh": "使用 Matt Pocock 的 Code Review，对照固定 Git 参考检查分支。分别审查仓库规范和原始需求，再并列查看可定位结果，让代码质量与需求覆盖保持为两个清楚的问题，避免某一方面通过掩盖另一方不足。"
+        "zh": "使用 Matt Pocock 的 Code Review，对照指定 Git 基准审查分支。分别检查仓库规范与原始需求，并列查看带有代码位置的问题，避免将符合规范误当作需求已经完整实现。"
       }
     },
     "overview": {
@@ -1270,7 +1270,7 @@
       },
       "how": {
         "en": "How to Review a Branch with Code Review",
-        "zh": "How to 审查分支变更"
+        "zh": "如何审查分支变更"
       },
       "howDescription": {
         "en": "Provide a resolvable Git comparison point and the originating issue or specification. Let the agent collect standards and establish the diff, run the two review axes independently, and inspect their separate findings before deciding which edits or follow-up checks are needed.",
@@ -1421,7 +1421,7 @@
         },
         "answer": {
           "en": "The collection’s setup Skill records the repository’s issue-tracker workflow. Configure it before engineering use so the reviewer can locate the right sources.",
-          "zh": "集合的 setup Skill 会记录仓库需求跟踪方式。工程使用前应先配置，以便审查找到正确来源。"
+          "zh": "集合中的 setup-matt-pocock-skills 配置 Skill 会记录仓库需求跟踪方式。工程使用前应先配置，以便审查找到正确来源。"
         }
       }
     ],
@@ -1553,7 +1553,7 @@
       },
       "how": {
         "en": "How to Prepare an Agent Handoff",
-        "zh": "How to 交接 Agent 会话"
+        "zh": "如何交接 Agent 会话"
       },
       "howDescription": {
         "en": "State what the next session will do and invoke Handoff near the end of the current work. Review the generated temporary document, check artifact paths and omissions, and provide it to the next agent together with access to the referenced repository and files.",
@@ -1798,7 +1798,7 @@
       "zh": {
         "title": "关于 Brainstorming",
         "paragraphs": [
-          "Brainstorming 是 Superpowers 中用于理解目标与设计的 Skill，由 Jesse Vincent 及项目贡献者维护。它帮助 Agent 在决定如何建设前弄清用户期待的结果及原因。流程先读取已有项目背景，再讨论未决目标、约束和备选方案；较大的工作会形成选定方案与书面设计，然后交给配套 writing-plans 继续规划。当前原文也区分已经明确的小任务，以及选择不再接受追问、直接推进的用户。安装完整 Superpowers 集成可以保留启动与配套指令；只复制这一文件，并不等于复现整个工作体系。"
+          "Brainstorming 是 Superpowers 中用于理解目标与设计的 Skill，由 Jesse Vincent 及项目贡献者维护。它帮助 Agent 在确定实现方案前弄清用户期待的结果及原因。流程先读取已有项目背景，再讨论未决目标、约束和备选方案；较大的工作会形成选定方案与书面设计，然后交给配套 writing-plans 继续规划。当前原文也区分已经明确的小任务，以及选择不再接受追问、直接推进的用户。安装完整 Superpowers 集成可以保留启动与配套指令；只复制这一文件，并不等于复现整个工作体系。"
         ]
       }
     },
@@ -1828,7 +1828,7 @@
       },
       "how": {
         "en": "How to Explore a Design with Brainstorming",
-        "zh": "How to 确认需求与设计"
+        "zh": "如何确认需求与设计"
       },
       "howDescription": {
         "en": "Install the Superpowers integration for your agent, provide the request and relevant existing material, and let the discussion focus on missing decisions. Compare the proposed approaches, review the appropriately sized design, and confirm the handoff to planning when the remaining choices are sufficiently clear.",
@@ -1978,8 +1978,8 @@
           "zh": "必须使用可视化辅助界面吗？"
         },
         "answer": {
-          "en": "No. The project describes it as optional and documents an environment setting to disable its default logo telemetry. The core planning conversation does not require opening it.",
-          "zh": "不必须。项目将其列为可选项，并提供关闭默认标志遥测的环境设置；核心规划对话不依赖打开该界面。"
+          "en": "No. The visual companion is optional, and the core planning conversation does not require it. Decide whether to open it according to the task and the environment you use.",
+          "zh": "不必须。可视化辅助界面是可选工具，核心规划对话不依赖它。是否打开该界面，应按任务需要和所用环境决定。"
         }
       },
       {
@@ -2120,7 +2120,7 @@
       },
       "how": {
         "en": "How to Investigate a Failure Systematically",
-        "zh": "How to 按根因调查故障"
+        "zh": "如何按根因调查故障"
       },
       "howDescription": {
         "en": "Provide the exact error, expected behavior, and reproduction environment, then work through evidence gathering and pattern comparison. Test one hypothesis with a minimal change, implement the supported correction, and use the companion verification discipline to confirm the symptom and relevant tests are resolved.",

@@ -71,7 +71,7 @@
       },
       "how": {
         "en": "How to Improve React Performance",
-        "zh": "How to 优化 React 性能"
+        "zh": "如何优化 React 性能"
       },
       "howDescription": {
         "en": "Start with one route, component, or interaction and explain the performance symptom to your agent. Use the Skill’s impact-ranked rules to inspect relevant code, make a focused change, and compare the same user path before and after implementation.",
@@ -323,7 +323,7 @@
       },
       "how": {
         "en": "How to Design React Component APIs",
-        "zh": "How to 设计 React 组件 API"
+        "zh": "如何设计 React 组件 API"
       },
       "howDescription": {
         "en": "Review the component together with representative call sites, then ask the agent to identify confusing prop combinations and state ownership. Choose an appropriate composition pattern, migrate a small set of uses, and verify behavior before expanding the new API.",
@@ -575,7 +575,7 @@
       },
       "how": {
         "en": "How to Review React Native Screens",
-        "zh": "How to 审查 React Native 界面"
+        "zh": "如何审查 React Native 界面"
       },
       "howDescription": {
         "en": "Describe the screen, target platform, and gesture or interaction you want to improve. Ask the agent to apply the relevant mobile rules, implement a focused change, and compare the same flow on representative devices, including any platform-specific behavior.",
@@ -827,7 +827,7 @@
       },
       "how": {
         "en": "How to Implement React View Transitions",
-        "zh": "How to 实现 React 视图过渡"
+        "zh": "如何实现 React 视图过渡"
       },
       "howDescription": {
         "en": "Identify the relationship between the old and new interface states before selecting an animation. Check React and framework support, ask the agent to implement the matching transition pattern, and test navigation, reduced motion, and behavior without animation.",
@@ -1079,7 +1079,7 @@
       },
       "how": {
         "en": "How to Review UI with Web Design Guidelines",
-        "zh": "How to 使用 Web Design Guidelines"
+        "zh": "如何使用 Web Design Guidelines"
       },
       "howDescription": {
         "en": "Provide the page or component files you want reviewed and describe the user flow. Ask the agent to retrieve the current guidelines, inspect the selected scope, and report located issues. Verify findings against the rendered interface before deciding which changes to make.",
@@ -1331,7 +1331,7 @@
       },
       "how": {
         "en": "How to Review Docs with Writing Guidelines",
-        "zh": "How to 使用 Writing Guidelines"
+        "zh": "如何使用 Writing Guidelines"
       },
       "howDescription": {
         "en": "Select the existing files and explain their audience, purpose, and required terminology. Ask the agent to fetch the current writing handbook and return located findings, then review the suggestions and apply only the edits that match your documentation requirements.",
@@ -1583,7 +1583,7 @@
       },
       "how": {
         "en": "How to Deploy a Project to Vercel",
-        "zh": "How to 部署项目到 Vercel"
+        "zh": "如何部署项目到 Vercel"
       },
       "howDescription": {
         "en": "Tell the agent which project to deploy and whether you need a preview or an explicitly requested production release. Review the repository, project, and team checks, follow the selected deployment path, and verify the returned URL against the intended version and environment.",
@@ -1835,7 +1835,7 @@
       },
       "how": {
         "en": "How to Use Vercel CLI with Tokens",
-        "zh": "How to 使用令牌操作 Vercel CLI"
+        "zh": "如何使用令牌操作 Vercel CLI"
       },
       "howDescription": {
         "en": "Identify the approved token source without exposing its value, then verify the target project and organization. Ask the agent to perform only the requested CLI operation in that scope, and check the resulting deployment or configuration while keeping credentials out of the report.",
@@ -2087,7 +2087,7 @@
       },
       "how": {
         "en": "How to Audit a Project with Vercel Optimize",
-        "zh": "How to 使用 Vercel Optimize"
+        "zh": "如何使用 Vercel Optimize"
       },
       "howDescription": {
         "en": "Confirm the linked project, account scope, and observability prerequisites before collecting data. Let the bundled workflow select evidence-backed candidates, inspect only the relevant files, and review ranked recommendations with their supporting signals and any gaps in the available data.",
@@ -2331,7 +2331,7 @@
     "sectionTitles": {
       "useCases": {
         "en": "Use Cases for the agent-browser Skill",
-        "zh": "agent-browser Skill的使用场景"
+        "zh": "agent-browser Skill 的使用场景"
       },
       "useCasesDescription": {
         "en": "Explore browser tasks where an agent needs the CLI’s matching operating instructions. Inspect website interactions, reproduce an issue through exploratory testing, or load specialized Electron guidance, with the required tool installed and the task scoped to the pages or application you intend to use.",
@@ -2339,7 +2339,7 @@
       },
       "how": {
         "en": "How to Use the agent-browser Skill",
-        "zh": "How to 使用 agent-browser Skill"
+        "zh": "如何使用 agent-browser Skill"
       },
       "howDescription": {
         "en": "Add the companion Skill to your agent and prepare the agent-browser CLI with its browser dependencies. Load the CLI’s core instructions or the relevant specialized workflow, inspect the current target, and verify that the resulting page or application state matches the requested task.",
