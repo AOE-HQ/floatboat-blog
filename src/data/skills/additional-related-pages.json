@@ -109,6 +109,48 @@
       "vercel-labs",
       "pbakaus",
       "anthropics"
+    ],
+    "openai": [
+      "deepseek-ai",
+      "earendil-works",
+      "anomalyco",
+      "nousresearch"
+    ],
+    "deepseek-ai": [
+      "earendil-works",
+      "anomalyco",
+      "nousresearch",
+      "moonshotai"
+    ],
+    "earendil-works": [
+      "anomalyco",
+      "nousresearch",
+      "moonshotai",
+      "zai-org"
+    ],
+    "anomalyco": [
+      "nousresearch",
+      "moonshotai",
+      "zai-org",
+      "openai"
+    ],
+    "nousresearch": [
+      "moonshotai",
+      "zai-org",
+      "openai",
+      "deepseek-ai"
+    ],
+    "moonshotai": [
+      "zai-org",
+      "openai",
+      "deepseek-ai",
+      "earendil-works"
+    ],
+    "zai-org": [
+      "openai",
+      "deepseek-ai",
+      "earendil-works",
+      "anomalyco"
     ]
   },
   "skill-categories": {

@@ -85,8 +85,8 @@ const NAV_MENUS: NavMenuGroup[] = [
       {
         en: "Combo Store",
         zh: "Combo 商店",
-        descEn: "Discover and install reusable Combo Skills",
-        descZh: "发现并安装可复用的 Combo Skills",
+        descEn: "Explore independent projects and Agent Skills",
+        descZh: "探索独立项目与 Agent Skills",
         path: "/combostore",
       },
       {
@@ -201,7 +201,7 @@ export function SiteHeader() {
             aria-label="Primary"
             className="relative hidden max-w-max flex-1 shrink-0 items-center justify-center md:flex"
           >
-            <ul className="flex flex-1 list-none items-center justify-center gap-6">
+            <ul className="flex flex-1 list-none items-center justify-center gap-6 whitespace-nowrap">
               {NAV_MENUS.map((group) => (
                 <li key={group.en} className="group relative">
                   <button

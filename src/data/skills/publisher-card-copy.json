@@ -78,5 +78,33 @@
   "trailofbits": {
     "en": "Trail of Bits publishes security research tools and Agent Skills for code analysis, vulnerability investigation, testing, and evidence-based audit workflows across software projects.",
     "zh": "发布安全研究工具与 Agent Skills，涵盖代码分析、漏洞调查和测试方法，通过证据组织软件审查与审计流程。"
+  },
+  "openai": {
+    "en": "OpenAI develops AI systems and developer tools. Explore Codex, its open agent harness for coding tasks, tool use, and application integration.",
+    "zh": "OpenAI 开发 AI 系统与开发工具。通过 Codex 了解开放 Agent 运行层、代码任务、工具使用和应用集成。"
+  },
+  "deepseek-ai": {
+    "en": "DeepSeek publishes AI research and agent infrastructure. Explore DeepSeek Harness, its plugin-based runtime for composing tools, sessions, and model-driven workflows.",
+    "zh": "DeepSeek 发布 AI 研究与 Agent 基础设施。通过官方 Harness 了解插件化运行层、工具组合与任务协作。"
+  },
+  "earendil-works": {
+    "en": "Earendil Works hosts Pi’s current upstream. Explore its extensible agent harness, coding CLI, and reusable libraries for model access and agent execution.",
+    "zh": "Earendil Works 维护 Pi 的当前上游。通过 Pi 了解可扩展 Agent 运行层、编程 CLI 与基础库。"
+  },
+  "anomalyco": {
+    "en": "Anomaly publishes OpenCode, an open-source coding agent. Explore its interactive developer workflow, official source, and the boundary between application tools and model services.",
+    "zh": "Anomaly 发布开源编程 Agent OpenCode。通过代表项目了解交互式开发、官方源码与模型服务之间的边界。"
+  },
+  "nousresearch": {
+    "en": "Nous Research publishes Hermes Agent. Explore a system combining persistent memory, reusable Skills, connected tools, and scheduling for work that continues across sessions.",
+    "zh": "Nous Research 发布 Hermes Agent。通过代表项目了解持久记忆、Skills、工具连接与持续工作。"
+  },
+  "moonshotai": {
+    "en": "Moonshot AI develops Kimi and publishes Kimi Code CLI. Explore its terminal coding agent, plugin ecosystem, editor integration, and the transition from the legacy CLI.",
+    "zh": "月之暗面开发 Kimi 并发布编程 Agent。通过 Kimi Code CLI 了解终端协作、插件生态与编辑器集成。"
+  },
+  "zai-org": {
+    "en": "Z.ai publishes ZCode, a coding workbench and agent harness. Explore its desktop, Web, and terminal experiences, public runtime source, and GLM ecosystem context.",
+    "zh": "Z.ai 发布编程工作台与 Agent Harness ZCode。通过代表项目了解桌面、Web、终端入口及公开运行时。"
   }
 }

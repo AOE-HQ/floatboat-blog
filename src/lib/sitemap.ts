@@ -9,6 +9,7 @@ import { PERSONA_SLUGS } from "@/lib/use-cases/persona-pages";
 import { FEATURED_SKILLS, skillPath } from "@/lib/skills/featured-skills";
 import { skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
 import { PUBLISHER_PROFILE_HANDLES, publisherProfilePath } from "@/lib/skills/publisher-profiles";
+import { PROJECTS, projectPath } from "@/lib/projects/project-pages";
 
 function extractUrlEntries(xml: string): string {
   const match = xml.match(/<urlset[^>]*>([\s\S]*)<\/urlset>/);
@@ -45,6 +46,10 @@ export function buildCombinedSitemapXml(): string {
     ...FEATURED_SKILLS.flatMap(({ authorHandle, slug }) => [
       `https://floatboat.ai${skillPath("en", authorHandle, slug)}`,
       `https://floatboat.ai${skillPath("zh", authorHandle, slug)}`,
+    ]),
+    ...PROJECTS.flatMap(({ author, slug }) => [
+      `https://floatboat.ai${projectPath("en", author, slug)}`,
+      `https://floatboat.ai${projectPath("zh", author, slug)}`,
     ]),
   ].map((url) => `<url><loc>${url}</loc></url>`).join("\n");
 

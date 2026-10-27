@@ -2,6 +2,7 @@ import categories from "@/data/skills/categories.json";
 import mergedSkills from "@/data/skills/merged-skills.json";
 import { FEATURED_SKILLS, skillPath, type SkillLocale } from "@/lib/skills/featured-skills";
 import { PUBLISHER_HANDLES, getPublisherDirectory } from "@/lib/skills/publisher-directories";
+import { getProjectForSource, projectPath } from "@/lib/projects/project-pages";
 import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES, KNOWN_PUBLISHER_HANDLES, isPublisherApproved } from "@/lib/skills/publisher-profiles";
 
 type Localized = Record<SkillLocale, string>;
@@ -144,20 +145,24 @@ export function getStoreCatalog(locale: SkillLocale) {
   const skills = getSkillCatalog(locale).map((entry) => ({ ...entry, entryType: "skill" as const, kind: "Skill" }));
   const projects = PUBLISHER_PROFILE_HANDLES.flatMap((handle) => {
     const profile = getPublisherProfile(handle)!;
-    return profile.projects.map((project) => ({
-      id: `project:${handle}/${project.name}`,
-      name: project.name,
-      publisher: profile.name,
-      authorHandle: handle,
-      publisherHref: publisherProfilePath(locale, handle),
-      sourceUrl: project.url,
-      description: project[locale].description,
-      href: project.url,
-      hasLocalGuide: false,
-      categories: [] as string[],
-      entryType: "project" as const,
-      kind: project[locale].kind,
-    }));
+    return profile.projects.map((project) => {
+      const detail = getProjectForSource(handle, project.url);
+      return {
+        id: `project:${handle}/${project.name}`,
+        name: project.name,
+        publisher: profile.name,
+        authorHandle: handle,
+        publisherHref: publisherProfilePath(locale, handle),
+        sourceUrl: project.url,
+        description: project[locale].description,
+        href: detail ? projectPath(locale, handle, detail.slug) : project.url,
+        hasLocalGuide: false,
+        categories: [] as string[],
+        entryType: "project" as const,
+        kind: project[locale].kind,
+      };
+    });
   });
+  projects.sort((a, b) => Number(b.href.startsWith("/")) - Number(a.href.startsWith("/")));
   return [...projects, ...skills];
 }
