@@ -376,6 +376,97 @@
         "supabase/supabase",
         "supabase/cli"
       ]
+    },
+    "openai": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "openai/codex",
+      "stars": 131178,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T15:01:55Z",
+      "reason": "Official upstream and organization verified through repository metadata, README, and license; source is not a fork and is not archived. Independently selected project, not a new popular Skill guide.",
+      "repositories": [
+        "openai/codex"
+      ]
+    },
+    "deepseek-ai": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "deepseek-ai/deepseek-harness",
+      "stars": 263472,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-23T15:25:40Z",
+      "reason": "Official upstream and organization verified through repository metadata, README, and license; source is not a fork and is not archived. Independently selected project, not a new popular Skill guide.",
+      "repositories": [
+        "deepseek-ai/deepseek-harness"
+      ]
+    },
+    "earendil-works": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "earendil-works/pi",
+      "stars": 118225,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T15:16:49Z",
+      "reason": "Official upstream and organization verified through repository metadata, README, and license; source is not a fork and is not archived. Independently selected project, not a new popular Skill guide.",
+      "repositories": [
+        "earendil-works/pi"
+      ]
+    },
+    "anomalyco": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "anomalyco/opencode",
+      "stars": 222248,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T15:09:45Z",
+      "reason": "Official upstream and organization verified through repository metadata, README, and license; source is not a fork and is not archived. Independently selected project, not a new popular Skill guide.",
+      "repositories": [
+        "anomalyco/opencode"
+      ]
+    },
+    "nousresearch": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "NousResearch/hermes-agent",
+      "stars": 257638,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T15:13:27Z",
+      "reason": "Official upstream and organization verified through repository metadata, README, and license; source is not a fork and is not archived. Independently selected project, not a new popular Skill guide.",
+      "repositories": [
+        "NousResearch/hermes-agent"
+      ]
+    },
+    "moonshotai": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "MoonshotAI/kimi-code",
+      "stars": 8038,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T14:20:25Z",
+      "reason": "Official upstream and organization verified through repository metadata, README, and license; source is not a fork and is not archived. Independently selected project, not a new popular Skill guide.",
+      "repositories": [
+        "MoonshotAI/kimi-code"
+      ]
+    },
+    "zai-org": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "zai-org/ZCode",
+      "stars": 8305,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-20T06:23:09Z",
+      "reason": "Official upstream and organization verified through repository metadata, README, and license; source is not a fork and is not archived. Independently selected project, not a new popular Skill guide.",
+      "repositories": [
+        "zai-org/ZCode"
+      ]
     }
   }
 }

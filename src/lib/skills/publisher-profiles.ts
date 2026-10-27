@@ -1,13 +1,14 @@
 import { z } from "zod";
 import profiles from "@/data/skills/publisher-profiles.json";
 import additionalProfiles from "@/data/skills/additional-publisher-profiles.json";
+import agentPublishers from "@/data/projects/agent-publishers.json";
 import review from "@/data/skills/publisher-review.json";
 import type { SkillLocale } from "@/lib/skills/featured-skills";
 import { publisherProfileSchema } from "./publisher-profile-schema";
 
 export type { PublisherProfile } from "./publisher-profile-schema";
 
-const PUBLISHER_PROFILES = z.record(publisherProfileSchema).parse({ ...additionalProfiles, ...profiles });
+const PUBLISHER_PROFILES = z.record(publisherProfileSchema).parse({ ...additionalProfiles, ...profiles, ...agentPublishers });
 const reviews = z.record(z.object({
   status: z.enum(["approved", "held"]),
   checkedAt: z.string().min(1),

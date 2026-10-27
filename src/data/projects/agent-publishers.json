@@ -1,0 +1,1108 @@
+{
+  "openai": {
+    "name": "OpenAI",
+    "type": "Organization",
+    "profileUrl": "https://github.com/openai",
+    "logo": "/blog/brand/publishers/openai.webp",
+    "tags": {
+      "en": [
+        "AI research",
+        "Agent software",
+        "Developer tools"
+      ],
+      "zh": [
+        "AI 研究",
+        "Agent 软件",
+        "开发工具"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://openai.com/",
+        "label": {
+          "en": "Organization website",
+          "zh": "组织官网"
+        }
+      },
+      {
+        "href": "https://github.com/openai",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Codex",
+        "url": "https://github.com/openai/codex",
+        "en": {
+          "kind": "Agent Harness",
+          "description": "Study Codex’s context, tool loop, and approval model to improve your own agent workflows, with CLI, SDK, and app-server options when runtime integration is needed."
+        },
+        "zh": {
+          "kind": "Agent Harness",
+          "description": "参考 Codex 的上下文、工具循环与审批机制，优化自己的 Agent 工作流，并按需要评估 CLI、SDK 或运行层集成。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "OpenAI: AI Research and Agent Tools | Floatboat",
+      "seoDescription": "Explore OpenAI’s public work on agent software and developer tools, with Codex as a representative project. Understand the organization, its open harness, and the distinction between public source, model access, and managed services.",
+      "heroTitle": "OpenAI: AI Research and Agent Tools",
+      "heroDescription": "Explore OpenAI’s public work on agent software and developer tools, with Codex as a representative project. Understand the organization, its open harness, and the distinction between public source, model access, and managed services.",
+      "overview": {
+        "title": "About OpenAI",
+        "paragraphs": [
+          "OpenAI develops AI systems and the tools used to build applications around them. Its public engineering work includes software for model access and agent workflows. These projects have distinct responsibilities, so understanding the organization starts with separating research, developer tooling, and managed products.",
+          "Codex is a representative agent project in that public ecosystem. It provides a harness around model calls and exposes CLI, app-server, and SDK entry points. Its relevance goes beyond a terminal interface: applications can use the runtime while providing their own business context and user experience.",
+          "An open-source tool and a hosted AI service are different offerings. Read each repository’s license and product documentation to understand what can be reused, which model access is required, and which operations remain the responsibility of the surrounding application."
+        ]
+      },
+      "aboutTitle": "About OpenAI",
+      "about": "OpenAI develops AI systems and the tools used to build applications around them. Its public engineering work includes software for model access and agent workflows. These projects have distinct responsibilities, so understanding the organization starts with separating research, developer tooling, and managed products.",
+      "projectsTitle": "OpenAI Projects",
+      "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
+      "skillsTitle": "OpenAI Skills",
+      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "relatedTitle": "Related Agent Publishers",
+      "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
+      "faqTitle": "OpenAI FAQ",
+      "faq": [
+        {
+          "question": "Why is OpenAI included as a project publisher?",
+          "answer": "OpenAI publishes the Codex source and documents its use as an open agent harness. That makes it relevant as a software publisher, rather than only as a model-service brand."
+        },
+        {
+          "question": "Is this an overview of every OpenAI product?",
+          "answer": "No. The profile focuses on public agent tooling represented by Codex. Model catalogs, prices, consumer applications, and account features require their own current official documentation."
+        },
+        {
+          "question": "What is the organization’s relationship to Codex?",
+          "answer": "Codex is published in the OpenAI GitHub organization. Its public harness, CLI, app-server, and SDK are documented as components of the agent ecosystem."
+        },
+        {
+          "question": "Does public source mean open model weights?",
+          "answer": "No. A runtime repository, model weights, and a hosted inference service are separate artifacts. The Codex source license does not grant access to every OpenAI model or product."
+        },
+        {
+          "question": "Where should an application integration begin?",
+          "answer": "Read the official Codex integration documentation and choose the interface that matches the task. A background workflow and an interactive application can need different lifecycle and approval handling."
+        },
+        {
+          "question": "Can repository stars be applied to all OpenAI projects?",
+          "answer": "No. Popularity metrics belong to a particular repository and collection date. Evaluate the actual project, its license, and its maintained source instead of transferring organization-wide reputation to every item."
+        }
+      ],
+      "ctaTitle": "Study Codex Workflow Design",
+      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaPrimary": {
+        "label": "View Codex",
+        "href": "/combostore/openai/codex"
+      }
+    },
+    "zh": {
+      "seoTitle": "OpenAI：AI 研究与 Agent 工具 | Floatboat",
+      "seoDescription": "了解 OpenAI 在 Agent 软件与开发工具上的公开工作，以 Codex 为代表，认识组织方向、开放运行层，以及公开源码、模型访问和托管服务之间的区别。",
+      "heroTitle": "OpenAI：AI 研究与 Agent 工具",
+      "heroDescription": "了解 OpenAI 在 Agent 软件与开发工具上的公开工作，以 Codex 为代表，认识组织方向、开放运行层，以及公开源码、模型访问和托管服务之间的区别。",
+      "overview": {
+        "title": "关于 OpenAI",
+        "paragraphs": [
+          "OpenAI 开发 AI 系统，以及围绕这些系统构建应用的工具。其公开工程工作包含模型访问与 Agent 工作流软件。不同项目承担不同职责，了解组织时应区分研究、开发工具与托管产品。",
+          "Codex 是这一公开生态中的代表性 Agent 项目，为模型调用提供 harness，并开放 CLI、app-server 和 SDK 入口。它的价值不止终端界面；应用可以复用运行层，同时提供自己的业务上下文与交互体验。",
+          "开源工具与托管 AI 服务属于不同提供方式。应分别阅读仓库许可和产品文档，确认可复用的范围、所需模型访问，以及哪些操作仍由外围应用负责。"
+        ]
+      },
+      "aboutTitle": "关于 OpenAI",
+      "about": "OpenAI 开发 AI 系统，以及围绕这些系统构建应用的工具。其公开工程工作包含模型访问与 Agent 工作流软件。不同项目承担不同职责，了解组织时应区分研究、开发工具与托管产品。",
+      "projectsTitle": "OpenAI 的代表项目",
+      "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
+      "skillsTitle": "OpenAI Skills",
+      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "relatedTitle": "相关 Agent 项目发布者",
+      "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
+      "faqTitle": "OpenAI 常见问题",
+      "faq": [
+        {
+          "question": "为什么将 OpenAI 作为项目发布者介绍？",
+          "answer": "OpenAI 发布 Codex 源码，并说明其开放 Agent Harness 的用途。因此它既是模型服务品牌，也是值得单独介绍的软件项目发布者。"
+        },
+        {
+          "question": "这里是否覆盖 OpenAI 的所有产品？",
+          "answer": "本页以 Codex 所代表的公开 Agent 工具为重点。模型目录、价格、消费应用和账户功能需要查看各自的当前官方说明。"
+        },
+        {
+          "question": "OpenAI 与 Codex 是什么关系？",
+          "answer": "Codex 发布于 OpenAI GitHub 组织，公开 harness、CLI、app-server 和 SDK 是其 Agent 生态中的组成部分。"
+        },
+        {
+          "question": "公开源码是否意味着模型权重也开放？",
+          "answer": "不意味着。运行层仓库、模型权重与托管推理服务是不同对象，Codex 源码许可并不授予全部 OpenAI 模型或产品的使用权。"
+        },
+        {
+          "question": "研究应用集成应从哪里开始？",
+          "answer": "应阅读官方 Codex 集成文档，再根据任务选择入口。后台工作流与交互式应用可能需要不同的生命周期和审批处理方式。"
+        },
+        {
+          "question": "能把一个仓库的 stars 写到全部 OpenAI 项目上吗？",
+          "answer": "不能。热度指标属于具体仓库和采集时刻，应检查实际项目、许可与维护来源，不能将组织声誉直接转给每个条目。"
+        }
+      ],
+      "ctaTitle": "借鉴 Codex 的工作流设计",
+      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaPrimary": {
+        "label": "查看 Codex",
+        "href": "/zh/combostore/openai/codex"
+      }
+    }
+  },
+  "deepseek-ai": {
+    "name": "DeepSeek",
+    "type": "Organization",
+    "profileUrl": "https://github.com/deepseek-ai",
+    "logo": "/blog/brand/publishers/deepseek-ai.webp",
+    "tags": {
+      "en": [
+        "AI models",
+        "Agent infrastructure",
+        "Plugin architecture"
+      ],
+      "zh": [
+        "AI 模型",
+        "Agent 基础设施",
+        "插件架构"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://www.deepseek.com/",
+        "label": {
+          "en": "Organization website",
+          "zh": "组织官网"
+        }
+      },
+      {
+        "href": "https://github.com/deepseek-ai",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "DeepSeek Harness",
+        "url": "https://github.com/deepseek-ai/deepseek-harness",
+        "en": {
+          "kind": "Agent Harness",
+          "description": "Study DeepSeek Harness’s plugin architecture to compose task capabilities, connect tools, and define clear handoffs when designing or extending your own agent workflows."
+        },
+        "zh": {
+          "kind": "Agent Harness",
+          "description": "参考 DeepSeek Harness 的插件架构，设计任务能力组合、工具连接和清晰交接，并评估适合自己工作流的扩展方式。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "DeepSeek: Models and Agent Infrastructure | Floatboat",
+      "seoDescription": "Explore DeepSeek’s public agent infrastructure through DeepSeek Harness. Understand the team’s role, its plugin-based runtime, and how model projects, tools, and preview-stage software should be evaluated separately.",
+      "heroTitle": "DeepSeek: Models and Agent Infrastructure",
+      "heroDescription": "Explore DeepSeek’s public agent infrastructure through DeepSeek Harness. Understand the team’s role, its plugin-based runtime, and how model projects, tools, and preview-stage software should be evaluated separately.",
+      "overview": {
+        "title": "About DeepSeek",
+        "paragraphs": [
+          "DeepSeek’s public work spans AI models and software used around model-driven tasks. A model project describes inference capabilities, while an agent runtime organizes the tools and interaction needed to perform work. Keeping those layers distinct makes the ecosystem easier to evaluate.",
+          "DeepSeek Harness is a representative infrastructure project published by the organization. It uses a Cordis-based, plugin-oriented architecture and provides an interactive entry point for agent work. Its design puts composition and extensions at the center of the running system.",
+          "The harness is identified as a developer preview. Its source license, model-service terms, and extension compatibility should be reviewed independently. The organization’s model reputation does not replace checking the stability and requirements of a specific tool release."
+        ]
+      },
+      "aboutTitle": "About DeepSeek",
+      "about": "DeepSeek’s public work spans AI models and software used around model-driven tasks. A model project describes inference capabilities, while an agent runtime organizes the tools and interaction needed to perform work. Keeping those layers distinct makes the ecosystem easier to evaluate.",
+      "projectsTitle": "DeepSeek Projects",
+      "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
+      "skillsTitle": "DeepSeek Skills",
+      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "relatedTitle": "Related Agent Publishers",
+      "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
+      "faqTitle": "DeepSeek FAQ",
+      "faq": [
+        {
+          "question": "What does this DeepSeek profile focus on?",
+          "answer": "It focuses on public agent infrastructure represented by DeepSeek Harness. Model capabilities and commercial API plans are separate topics that need their own documentation."
+        },
+        {
+          "question": "Is DeepSeek Harness published by the official organization?",
+          "answer": "Yes. The project is in deepseek-ai, and its README identifies DeepSeek AI as the developer. Similar community names do not establish the same ownership."
+        },
+        {
+          "question": "Does the harness replace the model?",
+          "answer": "No. It supplies the execution system around model interaction. The configured model still performs inference, while tools, context, and session behavior are organized by the runtime."
+        },
+        {
+          "question": "What does preview status mean for selection?",
+          "answer": "It means compatibility changes are expected. Evaluate a specific release and its plugin documentation rather than treating a public repository as a promise of a stable platform contract."
+        },
+        {
+          "question": "Do all DeepSeek projects have the same license?",
+          "answer": "Do not assume so. Check the individual model or software repository. The MIT license of DeepSeek Harness does not determine the terms of every model, API, or third-party component."
+        },
+        {
+          "question": "What should be checked before choosing a plugin?",
+          "answer": "Check its maintainer, supported harness version, tools, and external service requirements. A plugin-based architecture makes composition possible but does not certify every extension."
+        }
+      ],
+      "ctaTitle": "Study DeepSeek Harness Workflow Design",
+      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaPrimary": {
+        "label": "View DeepSeek Harness",
+        "href": "/combostore/deepseek-ai/deepseek-harness"
+      }
+    },
+    "zh": {
+      "seoTitle": "DeepSeek：模型与 Agent 基础设施 | Floatboat",
+      "seoDescription": "通过 DeepSeek Harness 了解 DeepSeek 的公开 Agent 基础设施，认识组织角色、插件化运行层，以及模型项目、工具和预览阶段软件各自的评估边界。",
+      "heroTitle": "DeepSeek：模型与 Agent 基础设施",
+      "heroDescription": "通过 DeepSeek Harness 了解 DeepSeek 的公开 Agent 基础设施，认识组织角色、插件化运行层，以及模型项目、工具和预览阶段软件各自的评估边界。",
+      "overview": {
+        "title": "关于 DeepSeek",
+        "paragraphs": [
+          "DeepSeek 的公开工作涉及 AI 模型，以及围绕模型任务运行的软件。模型项目关注推理能力，Agent 运行层则组织完成工作所需的工具与交互。区分这些层次，有助于准确理解其生态。",
+          "DeepSeek Harness 是组织发布的代表性基础设施项目，采用基于 Cordis 的插件架构，并为 Agent 工作提供交互入口。组合方式与扩展机制，是理解其运行系统的重要切入点。",
+          "该 harness 标为开发者预览。源码许可、模型服务条款与扩展兼容性需要分别核对；组织的模型声誉不能代替对具体工具版本稳定性和使用要求的检查。"
+        ]
+      },
+      "aboutTitle": "关于 DeepSeek",
+      "about": "DeepSeek 的公开工作涉及 AI 模型，以及围绕模型任务运行的软件。模型项目关注推理能力，Agent 运行层则组织完成工作所需的工具与交互。区分这些层次，有助于准确理解其生态。",
+      "projectsTitle": "DeepSeek 的代表项目",
+      "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
+      "skillsTitle": "DeepSeek Skills",
+      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "relatedTitle": "相关 Agent 项目发布者",
+      "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
+      "faqTitle": "DeepSeek 常见问题",
+      "faq": [
+        {
+          "question": "本页重点介绍 DeepSeek 的哪部分工作？",
+          "answer": "本页聚焦 DeepSeek Harness 所代表的公开 Agent 基础设施；模型能力和商业 API 方案属于需要分别查阅的主题。"
+        },
+        {
+          "question": "DeepSeek Harness 属于官方组织吗？",
+          "answer": "是。项目位于 deepseek-ai，README 明确说明由 DeepSeek AI 开发；名称相似的社区项目不能据此认定为相同归属。"
+        },
+        {
+          "question": "Harness 是否取代模型本身？",
+          "answer": "不会。它提供模型交互周围的执行系统，模型负责推理，运行层组织工具、上下文与会话行为。"
+        },
+        {
+          "question": "预览状态会怎样影响选用？",
+          "answer": "这意味着可能出现兼容性变化。应评估具体版本及其插件文档，不能把公开仓库理解为稳定平台接口的承诺。"
+        },
+        {
+          "question": "DeepSeek 的所有项目使用相同许可吗？",
+          "answer": "不能这样假定。应逐个检查模型或软件仓库，DeepSeek Harness 的 MIT 许可不能决定全部模型、API 或第三方组件的条款。"
+        },
+        {
+          "question": "选择插件前应确认什么？",
+          "answer": "应确认维护者、支持的 harness 版本、工具与外部服务要求。插件架构提供组合能力，但不等于为每个扩展背书。"
+        }
+      ],
+      "ctaTitle": "借鉴 DeepSeek Harness 的工作流设计",
+      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaPrimary": {
+        "label": "查看 DeepSeek Harness",
+        "href": "/zh/combostore/deepseek-ai/deepseek-harness"
+      }
+    }
+  },
+  "earendil-works": {
+    "name": "Earendil Works",
+    "type": "Organization",
+    "profileUrl": "https://github.com/earendil-works",
+    "logo": "/blog/brand/publishers/earendil-works.webp",
+    "tags": {
+      "en": [
+        "Agent harness",
+        "Runtime libraries",
+        "Extensible tools"
+      ],
+      "zh": [
+        "Agent Harness",
+        "运行基础库",
+        "可扩展工具"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://earendil.com/",
+        "label": {
+          "en": "Organization website",
+          "zh": "组织官网"
+        }
+      },
+      {
+        "href": "https://github.com/earendil-works",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Pi",
+        "url": "https://github.com/earendil-works/pi",
+        "en": {
+          "kind": "Agent Harness and Toolkit",
+          "description": "Use Pi’s minimal core, Skills, extensions, and runtime libraries as references for choosing the right level of customization in your own agent workflows."
+        },
+        "zh": {
+          "kind": "Agent Harness 与工具集",
+          "description": "参考 Pi 的精简核心、Skills、扩展和运行基础库，判断自己的 Agent 工作流需要哪一层定制，并控制新增能力的范围。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Earendil Works: Pi and Agent Tooling | Floatboat",
+      "seoDescription": "Explore Earendil Works through Pi, an extensible agent harness and toolkit. Understand the current upstream, reusable runtime libraries, package-based customization, and the responsibilities that remain with the host environment.",
+      "heroTitle": "Earendil Works: Pi and Agent Tooling",
+      "heroDescription": "Explore Earendil Works through Pi, an extensible agent harness and toolkit. Understand the current upstream, reusable runtime libraries, package-based customization, and the responsibilities that remain with the host environment.",
+      "overview": {
+        "title": "About Earendil Works",
+        "paragraphs": [
+          "Earendil Works is the current organization hosting the Pi project. Its public repository brings together a coding agent and the libraries that support it. The useful perspective is the relationship between a finished interactive tool and the smaller runtime components developers can study or reuse.",
+          "Pi’s approach emphasizes a small extensible core and workflow-specific customization. Extensions, Skills, templates, and themes can be assembled into packages. This makes the publisher relevant to both people configuring their own coding environment and developers investigating agent infrastructure.",
+          "Earlier references use badlogic/pi-mono; the current upstream is earendil-works/pi. That migration should not be counted as a new independent project. Evaluate each runtime library and extension by its own responsibilities, especially where the host environment must supply execution restrictions."
+        ]
+      },
+      "aboutTitle": "About Earendil Works",
+      "about": "Earendil Works is the current organization hosting the Pi project. Its public repository brings together a coding agent and the libraries that support it. The useful perspective is the relationship between a finished interactive tool and the smaller runtime components developers can study or reuse.",
+      "projectsTitle": "Earendil Works Projects",
+      "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
+      "skillsTitle": "Earendil Works Skills",
+      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "relatedTitle": "Related Agent Publishers",
+      "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
+      "faqTitle": "Earendil Works FAQ",
+      "faq": [
+        {
+          "question": "Why is Pi attributed to Earendil Works?",
+          "answer": "The current canonical repository is earendil-works/pi. Older badlogic/pi-mono links redirect there, so the profile records the current upstream while preserving the historical relationship."
+        },
+        {
+          "question": "Is the old Pi repository a different product?",
+          "answer": "The repository move itself does not establish a separate product. Use the current project documentation and avoid counting the old and new addresses as two independent tools."
+        },
+        {
+          "question": "Who benefits from the reusable libraries?",
+          "answer": "Developers who need model-provider interfaces, an agent core, conversation runtime, or terminal UI can inspect the relevant component instead of adopting every part of the CLI."
+        },
+        {
+          "question": "Are all workflow features part of Pi’s core?",
+          "answer": "No. The project explicitly favors extension and package composition. A feature supplied by a community package should not be presented as a core capability maintained by this publisher."
+        },
+        {
+          "question": "Does an open runtime imply built-in isolation?",
+          "answer": "No. Pi explicitly documents that access restrictions are not a built-in permission system. Check how the chosen host environment provides the boundaries required by the work."
+        },
+        {
+          "question": "What does MIT mean for third-party extensions?",
+          "answer": "Pi’s MIT source license does not establish the license or trustworthiness of every extension. Check the source, maintainer, and authorization of each package separately."
+        }
+      ],
+      "ctaTitle": "Study Pi Workflow Design",
+      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaPrimary": {
+        "label": "View Pi",
+        "href": "/combostore/earendil-works/pi"
+      }
+    },
+    "zh": {
+      "seoTitle": "Earendil Works：Pi 与 Agent 工具 | Floatboat",
+      "seoDescription": "通过 Pi 了解 Earendil Works 的 Agent 工具方向，认识当前上游、可复用运行库与基于扩展包的定制方式，以及运行环境仍需承担的职责。",
+      "heroTitle": "Earendil Works：Pi 与 Agent 工具",
+      "heroDescription": "通过 Pi 了解 Earendil Works 的 Agent 工具方向，认识当前上游、可复用运行库与基于扩展包的定制方式，以及运行环境仍需承担的职责。",
+      "overview": {
+        "title": "关于 Earendil Works",
+        "paragraphs": [
+          "Earendil Works 是当前承载 Pi 项目的组织。公开仓库将编程 Agent 与配套基础库放在一起，可以同时从交互工具和可研究复用的运行组件两个角度理解其工作。",
+          "Pi 的方式强调精简核心与面向任务的定制，可将扩展、Skills、模板和主题组合为包。因此这一发布者既与定制编程环境有关，也适合希望研究 Agent 基础设施的开发者。",
+          "旧资料使用 badlogic/pi-mono，当前上游为 earendil-works/pi。这种迁移不应算成新的独立项目；应按各运行库与扩展的职责分别评估，尤其关注由宿主环境提供的执行限制。"
+        ]
+      },
+      "aboutTitle": "关于 Earendil Works",
+      "about": "Earendil Works 是当前承载 Pi 项目的组织。公开仓库将编程 Agent 与配套基础库放在一起，可以同时从交互工具和可研究复用的运行组件两个角度理解其工作。",
+      "projectsTitle": "Earendil Works 的代表项目",
+      "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
+      "skillsTitle": "Earendil Works Skills",
+      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "relatedTitle": "相关 Agent 项目发布者",
+      "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
+      "faqTitle": "Earendil Works 常见问题",
+      "faq": [
+        {
+          "question": "为什么将 Pi 归到 Earendil Works？",
+          "answer": "当前规范仓库为 earendil-works/pi，旧 badlogic/pi-mono 链接会跳转到这里。本页记录当前上游，同时保留历史关系。"
+        },
+        {
+          "question": "旧 Pi 仓库是另一个产品吗？",
+          "answer": "仓库迁移本身不代表新产品。应使用当前文档，避免将新旧地址计算为两个独立工具。"
+        },
+        {
+          "question": "可复用基础库适合谁研究？",
+          "answer": "需要模型接口、Agent 核心、对话运行库或终端 UI 的开发者，可以按组件研究，不必同时采用整个 CLI。"
+        },
+        {
+          "question": "所有工作流功能都属于 Pi 核心吗？",
+          "answer": "不是。项目强调通过扩展与包组合能力，社区包提供的功能不能直接写成由该发布者维护的核心能力。"
+        },
+        {
+          "question": "开放运行层是否意味着自带隔离？",
+          "answer": "不意味着。Pi 明确说明自身没有内置访问权限限制系统，需要根据任务检查宿主环境如何提供隔离边界。"
+        },
+        {
+          "question": "MIT 对第三方扩展意味着什么？",
+          "answer": "Pi 的 MIT 源码许可不能决定每个扩展的许可或可信度，应分别检查包的来源、维护者和授权。"
+        }
+      ],
+      "ctaTitle": "借鉴 Pi 的工作流设计",
+      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaPrimary": {
+        "label": "查看 Pi",
+        "href": "/zh/combostore/earendil-works/pi"
+      }
+    }
+  },
+  "anomalyco": {
+    "name": "Anomaly",
+    "type": "Organization",
+    "profileUrl": "https://github.com/anomalyco",
+    "logo": "/blog/brand/publishers/anomalyco.webp",
+    "tags": {
+      "en": [
+        "Coding agents",
+        "Developer workflow",
+        "Open-source applications"
+      ],
+      "zh": [
+        "编程 Agent",
+        "开发工作流",
+        "开源应用"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://anoma.ly",
+        "label": {
+          "en": "Organization website",
+          "zh": "组织官网"
+        }
+      },
+      {
+        "href": "https://github.com/anomalyco",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "OpenCode",
+        "url": "https://github.com/anomalyco/opencode",
+        "en": {
+          "kind": "Open-source Coding Agent",
+          "description": "Study OpenCode’s task modes, tool feedback, and review flow to improve repository investigation, implementation, and validation stages in your own development workflows."
+        },
+        "zh": {
+          "kind": "开源编程 Agent",
+          "description": "参考 OpenCode 的任务模式、工具反馈与审阅流程，优化自己开发工作中的代码调查、修改实施和结果验证。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Anomaly: OpenCode and Coding Tools | Floatboat",
+      "seoDescription": "Explore Anomaly as the publisher of OpenCode. Learn the organization’s coding-agent project, its interactive workflow, and how official software, community integrations, and connected model services differ.",
+      "heroTitle": "Anomaly: OpenCode and Coding Tools",
+      "heroDescription": "Explore Anomaly as the publisher of OpenCode. Learn the organization’s coding-agent project, its interactive workflow, and how official software, community integrations, and connected model services differ.",
+      "overview": {
+        "title": "About Anomaly",
+        "paragraphs": [
+          "Anomaly is the organization behind the official OpenCode repository. Its representative project is an open-source coding-agent application, built around the interaction between a developer, a workspace, and model-driven tools. That application layer is a distinct subject from the model provider.",
+          "OpenCode offers multiple ways to engage with coding tasks and documents different agent modes. When evaluating Anomaly’s work, focus on how the tool organizes tasks, feedback, and review, rather than reducing the project to a model name or a list of prompts.",
+          "The official application source uses MIT. Community integrations and services associated with an installation can have different maintainers or terms. This profile highlights the verified publisher and representative software without attributing every addition in the wider ecosystem to the organization."
+        ]
+      },
+      "aboutTitle": "About Anomaly",
+      "about": "Anomaly is the organization behind the official OpenCode repository. Its representative project is an open-source coding-agent application, built around the interaction between a developer, a workspace, and model-driven tools. That application layer is a distinct subject from the model provider.",
+      "projectsTitle": "Anomaly Projects",
+      "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
+      "skillsTitle": "Anomaly Skills",
+      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "relatedTitle": "Related Agent Publishers",
+      "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
+      "faqTitle": "Anomaly FAQ",
+      "faq": [
+        {
+          "question": "What is Anomaly’s verified project here?",
+          "answer": "It is OpenCode, published at anomalyco/opencode. The profile concentrates on that public software rather than assuming every related integration is part of the same organization."
+        },
+        {
+          "question": "Is Anomaly the model behind every OpenCode session?",
+          "answer": "The application publisher and the model provider are different roles. Check the provider configured for the particular session instead of inferring model ownership from the tool’s branding."
+        },
+        {
+          "question": "How should community OpenCode tools be attributed?",
+          "answer": "Use their actual repository maintainers and document the relationship to OpenCode. An integration can build on a public interface without being officially maintained or endorsed by Anomaly."
+        },
+        {
+          "question": "What makes a coding agent different from a prompt library?",
+          "answer": "A coding agent supplies an application and execution workflow around model calls. Prompt instructions can guide that workflow, but do not by themselves supply the interface, state, and tool execution."
+        },
+        {
+          "question": "Does the organization’s project license include services?",
+          "answer": "The OpenCode source is MIT licensed. Accounts, hosted features, model usage, and third-party integrations must be evaluated under their own terms."
+        },
+        {
+          "question": "How should a team evaluate OpenCode?",
+          "answer": "Compare it against a specific repository task, the desired review process, provider access, and the integration requirements. A broad reputation is not a substitute for that workflow fit."
+        }
+      ],
+      "ctaTitle": "Study OpenCode Workflow Design",
+      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaPrimary": {
+        "label": "View OpenCode",
+        "href": "/combostore/anomalyco/opencode"
+      }
+    },
+    "zh": {
+      "seoTitle": "Anomaly：OpenCode 与编程工具 | Floatboat",
+      "seoDescription": "了解 OpenCode 的发布者 Anomaly，认识其编程 Agent 项目与交互工作流，并区分官方软件、社区集成和接入模型服务各自的角色。",
+      "heroTitle": "Anomaly：OpenCode 与编程工具",
+      "heroDescription": "了解 OpenCode 的发布者 Anomaly，认识其编程 Agent 项目与交互工作流，并区分官方软件、社区集成和接入模型服务各自的角色。",
+      "overview": {
+        "title": "关于 Anomaly",
+        "paragraphs": [
+          "Anomaly 是 OpenCode 官方仓库所属组织。代表项目围绕开发者、工作区和模型驱动工具之间的交互构建开源编程 Agent 应用；这一应用层与模型提供方是不同的研究对象。",
+          "OpenCode 提供多种代码任务交互方式，并介绍不同 Agent 模式。评估 Anomaly 的工作时，可以重点关注任务、反馈与审阅如何被组织，而不是仅用模型名称或提示列表概括项目。",
+          "官方应用源码采用 MIT。安装时使用的社区集成和服务可能由其他主体维护，也可能适用不同条款。应分别识别发布者与代表软件，不将生态中的全部新增内容归给同一组织。"
+        ]
+      },
+      "aboutTitle": "关于 Anomaly",
+      "about": "Anomaly 是 OpenCode 官方仓库所属组织。代表项目围绕开发者、工作区和模型驱动工具之间的交互构建开源编程 Agent 应用；这一应用层与模型提供方是不同的研究对象。",
+      "projectsTitle": "Anomaly 的代表项目",
+      "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
+      "skillsTitle": "Anomaly Skills",
+      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "relatedTitle": "相关 Agent 项目发布者",
+      "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
+      "faqTitle": "Anomaly 常见问题",
+      "faq": [
+        {
+          "question": "这里核对的 Anomaly 代表项目是什么？",
+          "answer": "本页核对的是 anomalyco/opencode。本页聚焦这项公开软件，不假定所有相关集成都属于同一组织。"
+        },
+        {
+          "question": "OpenCode 会话中的模型都来自 Anomaly 吗？",
+          "answer": "应用发布者与模型提供方属于不同角色，应检查具体会话的服务配置，不能由工具品牌推断模型归属。"
+        },
+        {
+          "question": "社区 OpenCode 工具应怎样标注归属？",
+          "answer": "应标注实际仓库维护者及其与 OpenCode 的关系。利用公开接口开发，不等于由 Anomaly 官方维护或背书。"
+        },
+        {
+          "question": "编程 Agent 与提示库有什么区别？",
+          "answer": "编程 Agent 为模型调用提供应用与执行工作流。提示可以指导流程，但本身不会提供界面、状态与工具执行能力。"
+        },
+        {
+          "question": "项目许可包含相关服务吗？",
+          "answer": "OpenCode 源码采用 MIT，账号、托管功能、模型调用和第三方集成需要分别按自身条款评估。"
+        },
+        {
+          "question": "团队应如何评估 OpenCode？",
+          "answer": "应结合具体仓库任务、审阅方式、模型访问与集成要求比较，不能用笼统声誉代替对工作流匹配度的判断。"
+        }
+      ],
+      "ctaTitle": "借鉴 OpenCode 的工作流设计",
+      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaPrimary": {
+        "label": "查看 OpenCode",
+        "href": "/zh/combostore/anomalyco/opencode"
+      }
+    }
+  },
+  "nousresearch": {
+    "name": "Nous Research",
+    "type": "Organization",
+    "profileUrl": "https://github.com/NousResearch",
+    "logo": "/blog/brand/publishers/nousresearch.webp",
+    "tags": {
+      "en": [
+        "Agent systems",
+        "Persistent memory",
+        "Reusable Skills"
+      ],
+      "zh": [
+        "Agent 系统",
+        "持久记忆",
+        "可复用 Skills"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://nousresearch.com",
+        "label": {
+          "en": "Organization website",
+          "zh": "组织官网"
+        }
+      },
+      {
+        "href": "https://github.com/NousResearch",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Hermes Agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "en": {
+          "kind": "Persistent Agent System",
+          "description": "Study Hermes Agent’s memory, Skills, tools, and scheduling to improve context continuity, reusable procedures, and recurring tasks in your own workflows."
+        },
+        "zh": {
+          "kind": "持续工作 Agent 系统",
+          "description": "参考 Hermes Agent 的记忆、Skills、工具与调度，优化自己工作流的背景衔接、方法复用和重复任务组织。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Nous Research: Hermes and Agent Systems | Floatboat",
+      "seoDescription": "Explore Nous Research through Hermes Agent, its public system for persistent context, reusable Skills, tools, and scheduled work. Understand the publisher, representative software, and the limits of stored procedural knowledge.",
+      "heroTitle": "Nous Research: Hermes and Agent Systems",
+      "heroDescription": "Explore Nous Research through Hermes Agent, its public system for persistent context, reusable Skills, tools, and scheduled work. Understand the publisher, representative software, and the limits of stored procedural knowledge.",
+      "overview": {
+        "title": "About Nous Research",
+        "paragraphs": [
+          "Nous Research publishes the Hermes Agent project under its official GitHub organization. The project provides a useful window into the team’s agent-system work: it combines an interactive agent with mechanisms for carrying context and task knowledge between sessions.",
+          "Hermes documents memory, Skills, tool integrations, and scheduling as related but distinct capabilities. That distinction matters when studying ongoing work: remembering a preference, keeping a conversation, and saving a reusable procedure do not solve the same problem.",
+          "The representative repository uses MIT, while model access and connected services have their own conditions. A system that stores procedural knowledge also needs review and correction over time; the organization’s authorship does not make every saved task method universally reliable."
+        ]
+      },
+      "aboutTitle": "About Nous Research",
+      "about": "Nous Research publishes the Hermes Agent project under its official GitHub organization. The project provides a useful window into the team’s agent-system work: it combines an interactive agent with mechanisms for carrying context and task knowledge between sessions.",
+      "projectsTitle": "Nous Research Projects",
+      "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
+      "skillsTitle": "Nous Research Skills",
+      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "relatedTitle": "Related Agent Publishers",
+      "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
+      "faqTitle": "Nous Research FAQ",
+      "faq": [
+        {
+          "question": "Which project represents Nous Research here?",
+          "answer": "Hermes Agent is the selected public project. Its source and documentation connect the publisher to a system combining memory, procedural Skills, tools, and scheduled tasks."
+        },
+        {
+          "question": "Is Hermes only a set of reusable instructions?",
+          "answer": "No. Instructions are part of a larger running agent application. The surrounding system manages interaction, context, tool connections, and continuing work."
+        },
+        {
+          "question": "Why separate memory from procedural Skills?",
+          "answer": "Memory can preserve useful facts or preferences, while a Skill describes how to approach a task. They require different review questions and should not be treated as interchangeable storage."
+        },
+        {
+          "question": "Does the project provide universal service access?",
+          "answer": "No. Tool connections and model providers require their own setup and authorization. The existence of an integration does not establish account entitlement or permission to use every connected system."
+        },
+        {
+          "question": "Who is responsible for reviewing learned routines?",
+          "answer": "The person or team operating the system should review procedures against their task, source, and current environment. Saved instructions can become stale even when the application remains maintained."
+        },
+        {
+          "question": "Does Hermes use the same terms as Nous model projects?",
+          "answer": "Do not assume so. Hermes Agent’s source is MIT licensed; each model artifact or hosted service needs its own license and access review."
+        }
+      ],
+      "ctaTitle": "Study Hermes Agent Workflow Design",
+      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaPrimary": {
+        "label": "View Hermes Agent",
+        "href": "/combostore/nousresearch/hermes-agent"
+      }
+    },
+    "zh": {
+      "seoTitle": "Nous Research：Hermes 与 Agent 系统 | Floatboat",
+      "seoDescription": "通过 Hermes Agent 了解 Nous Research 的公开 Agent 系统，认识持久上下文、可复用 Skills、工具与定时工作，以及长期保存任务方法时需要考虑的边界。",
+      "heroTitle": "Nous Research：Hermes 与 Agent 系统",
+      "heroDescription": "通过 Hermes Agent 了解 Nous Research 的公开 Agent 系统，认识持久上下文、可复用 Skills、工具与定时工作，以及长期保存任务方法时需要考虑的边界。",
+      "overview": {
+        "title": "关于 Nous Research",
+        "paragraphs": [
+          "Nous Research 在官方 GitHub 组织发布 Hermes Agent。该项目展示了团队在 Agent 系统上的工程工作，将交互式 Agent 与跨会话保留上下文、任务知识的机制结合起来。",
+          "Hermes 将记忆、Skills、工具集成与调度作为相关但不同的能力分别说明。研究持续性工作时，记住偏好、保留对话和保存可复用流程解决的是不同问题，不应混为一谈。",
+          "代表仓库采用 MIT，但模型访问和接入服务有各自条件。保存程序性知识的系统还需要持续审阅与纠正，不能因项目归属清楚就认为其中每项任务方法都普遍可靠。"
+        ]
+      },
+      "aboutTitle": "关于 Nous Research",
+      "about": "Nous Research 在官方 GitHub 组织发布 Hermes Agent。该项目展示了团队在 Agent 系统上的工程工作，将交互式 Agent 与跨会话保留上下文、任务知识的机制结合起来。",
+      "projectsTitle": "Nous Research 的代表项目",
+      "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
+      "skillsTitle": "Nous Research Skills",
+      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "relatedTitle": "相关 Agent 项目发布者",
+      "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
+      "faqTitle": "Nous Research 常见问题",
+      "faq": [
+        {
+          "question": "本页介绍 Nous Research 的哪个代表项目？",
+          "answer": "本页选取 Hermes Agent，来源与文档将发布者和包含记忆、任务 Skills、工具及定时任务的系统关联起来。"
+        },
+        {
+          "question": "Hermes 只是可复用指令集合吗？",
+          "answer": "不是。指令属于更大的运行中 Agent 应用，外围系统负责交互、上下文、工具连接和持续工作。"
+        },
+        {
+          "question": "为什么区分记忆与程序性 Skills？",
+          "answer": "记忆可以保留事实或偏好，Skill 则描述完成任务的方法。两者需要不同的审阅问题，不应当作可以互换的存储形式。"
+        },
+        {
+          "question": "项目是否自动提供全部服务访问？",
+          "answer": "不会。工具连接与模型服务需要各自配置和授权，存在集成不代表已获得账号权益或全部系统使用权限。"
+        },
+        {
+          "question": "谁需要审阅沉淀下来的任务方法？",
+          "answer": "运行系统的个人或团队应结合任务、来源和当前环境审阅流程。即使应用持续维护，保存的说明也可能过时。"
+        },
+        {
+          "question": "Hermes 与 Nous 的模型项目使用相同条款吗？",
+          "answer": "不能假定相同。Hermes Agent 源码采用 MIT，每个模型制品或托管服务仍需单独核对许可与访问条件。"
+        }
+      ],
+      "ctaTitle": "借鉴 Hermes Agent 的工作流设计",
+      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaPrimary": {
+        "label": "查看 Hermes Agent",
+        "href": "/zh/combostore/nousresearch/hermes-agent"
+      }
+    }
+  },
+  "moonshotai": {
+    "name": "Moonshot AI",
+    "type": "Organization",
+    "profileUrl": "https://github.com/MoonshotAI",
+    "logo": "/blog/brand/publishers/moonshotai.webp",
+    "tags": {
+      "en": [
+        "Kimi",
+        "Coding agents",
+        "Developer tools"
+      ],
+      "zh": [
+        "Kimi",
+        "编程 Agent",
+        "开发工具"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://moonshot.ai",
+        "label": {
+          "en": "Organization website",
+          "zh": "组织官网"
+        }
+      },
+      {
+        "href": "https://github.com/MoonshotAI",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Kimi Code CLI",
+        "url": "https://github.com/MoonshotAI/kimi-code",
+        "en": {
+          "kind": "Terminal Coding Agent",
+          "description": "Study Kimi Code CLI’s subagents, hooks, and tool-feedback loop to design clearer task roles, execution checks, and context handoffs in your own workflows."
+        },
+        "zh": {
+          "kind": "终端编程 Agent",
+          "description": "参考 Kimi Code CLI 的子 Agent、hooks 与工具反馈循环，为自己的工作流设计职责划分、执行检查和上下文交接。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Moonshot AI: Kimi and Agent Tools | Floatboat",
+      "seoDescription": "Explore Moonshot AI’s public coding-agent work through Kimi Code CLI. Understand the current project, the retired Python CLI, and how model services, editor interfaces, and reusable extensions fit together.",
+      "heroTitle": "Moonshot AI: Kimi and Agent Tools",
+      "heroDescription": "Explore Moonshot AI’s public coding-agent work through Kimi Code CLI. Understand the current project, the retired Python CLI, and how model services, editor interfaces, and reusable extensions fit together.",
+      "overview": {
+        "title": "About Moonshot AI",
+        "paragraphs": [
+          "Moonshot AI, also known as 月之暗面, develops the Kimi ecosystem and publishes tools for model-driven work. Kimi Code CLI is a representative public coding-agent project, giving the organization a software-tooling role beyond providing a model endpoint.",
+          "The maintained Kimi Code CLI combines a terminal application, development tools, plugins, subagents, and ACP editor integration. These are complementary parts of a coding workflow, with the editor, runtime, and model each retaining their own responsibilities.",
+          "The legacy Python kimi-cli repository is archived and points to kimi-code. Current materials should identify that transition rather than presenting both addresses as equally maintained projects. MIT licensing for the current source is also separate from Kimi Code subscriptions and Moonshot API access."
+        ]
+      },
+      "aboutTitle": "About Moonshot AI",
+      "about": "Moonshot AI, also known as 月之暗面, develops the Kimi ecosystem and publishes tools for model-driven work. Kimi Code CLI is a representative public coding-agent project, giving the organization a software-tooling role beyond providing a model endpoint.",
+      "projectsTitle": "Moonshot AI Projects",
+      "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
+      "skillsTitle": "Moonshot AI Skills",
+      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "relatedTitle": "Related Agent Publishers",
+      "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
+      "faqTitle": "Moonshot AI FAQ",
+      "faq": [
+        {
+          "question": "Is Moonshot AI the same organization as 月之暗面?",
+          "answer": "Moonshot AI is the organization’s English name used for its public developer presence. The Kimi Code CLI repository is published under the official MoonshotAI GitHub organization."
+        },
+        {
+          "question": "Which coding project should this profile highlight?",
+          "answer": "Highlight MoonshotAI/kimi-code, the maintained Kimi Code CLI. The Python kimi-cli repository is historical and explicitly directs readers to its successor."
+        },
+        {
+          "question": "Why not count both Kimi CLI repositories as current projects?",
+          "answer": "The old repository is archived and no longer maintained. Treating both as active recommendations would hide the migration and lead readers toward obsolete instructions."
+        },
+        {
+          "question": "Does the coding application require every model to be from Moonshot?",
+          "answer": "The current CLI documentation allows compatible providers. Compatibility and access are still specific to the selected service; the publisher identity does not settle every provider feature."
+        },
+        {
+          "question": "Are editor support and the coding runtime the same product layer?",
+          "answer": "No. ACP-compatible editors provide an interface to a CLI session. The runtime, editor integration, and model service should be assessed separately when planning a workflow."
+        },
+        {
+          "question": "Does the CLI license grant a Kimi account entitlement?",
+          "answer": "No. The MIT source license does not determine subscription access, API usage, quotas, or provider billing. Those belong to the account and service terms."
+        }
+      ],
+      "ctaTitle": "Study Kimi Code CLI Workflow Design",
+      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaPrimary": {
+        "label": "View Kimi Code CLI",
+        "href": "/combostore/moonshotai/kimi-code"
+      }
+    },
+    "zh": {
+      "seoTitle": "Moonshot AI：Kimi 与 Agent 工具 | Floatboat",
+      "seoDescription": "通过 Kimi Code CLI 了解月之暗面的公开编程 Agent 工作，区分当前项目与已停止维护的 Python CLI，认识模型服务、编辑器界面与可复用扩展的关系。",
+      "heroTitle": "Moonshot AI：Kimi 与 Agent 工具",
+      "heroDescription": "通过 Kimi Code CLI 了解月之暗面的公开编程 Agent 工作，区分当前项目与已停止维护的 Python CLI，认识模型服务、编辑器界面与可复用扩展的关系。",
+      "overview": {
+        "title": "关于 Moonshot AI",
+        "paragraphs": [
+          "Moonshot AI 即月之暗面，开发 Kimi 生态及围绕模型工作的工具。Kimi Code CLI 是其公开编程 Agent 代表项目，体现了模型接口之外的软件工具方向。",
+          "当前维护的 Kimi Code CLI 将终端应用、开发工具、插件、子 Agent 与 ACP 编辑器集成组合起来。它们构成互补的开发流程，编辑器、运行层和模型仍分别承担自己的职责。",
+          "旧 Python kimi-cli 仓库已归档，并引导用户使用 kimi-code。资料应说明这一变化，而非将两个地址写成同等维护的项目。当前源码的 MIT 许可也与 Kimi Code 订阅和 Moonshot API 访问分开。"
+        ]
+      },
+      "aboutTitle": "关于 Moonshot AI",
+      "about": "Moonshot AI 即月之暗面，开发 Kimi 生态及围绕模型工作的工具。Kimi Code CLI 是其公开编程 Agent 代表项目，体现了模型接口之外的软件工具方向。",
+      "projectsTitle": "Moonshot AI 的代表项目",
+      "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
+      "skillsTitle": "Moonshot AI Skills",
+      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "relatedTitle": "相关 Agent 项目发布者",
+      "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
+      "faqTitle": "Moonshot AI 常见问题",
+      "faq": [
+        {
+          "question": "Moonshot AI 与月之暗面是什么关系？",
+          "answer": "Moonshot AI 是该组织对外使用的英文名称，Kimi Code CLI 发布于官方 MoonshotAI GitHub 组织。"
+        },
+        {
+          "question": "当前应重点介绍哪个编程项目？",
+          "answer": "应重点介绍当前维护的 MoonshotAI/kimi-code。Python 版 kimi-cli 属于历史项目，其说明明确引导读者迁移。"
+        },
+        {
+          "question": "为什么不把两个 Kimi CLI 仓库都算成当前项目？",
+          "answer": "旧仓库已归档并停止维护，将两者都列为当前推荐会掩盖迁移关系，并可能把读者引向过时说明。"
+        },
+        {
+          "question": "编程应用是否要求所有模型都来自 Moonshot？",
+          "answer": "当前 CLI 文档允许兼容提供方。具体兼容性与访问条件仍取决于所选服务，不能单靠发布者身份判断全部功能。"
+        },
+        {
+          "question": "编辑器支持与编程运行层属于同一层吗？",
+          "answer": "不是。支持 ACP 的编辑器为 CLI 会话提供界面，规划工作流时应分别评估运行层、编辑器集成和模型服务。"
+        },
+        {
+          "question": "CLI 源码许可授予 Kimi 账号权益吗？",
+          "answer": "不授予。MIT 源码许可不能决定订阅访问、API 调用、额度或计费，这些属于账号与服务条款。"
+        }
+      ],
+      "ctaTitle": "借鉴 Kimi Code CLI 的工作流设计",
+      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaPrimary": {
+        "label": "查看 Kimi Code CLI",
+        "href": "/zh/combostore/moonshotai/kimi-code"
+      }
+    }
+  },
+  "zai-org": {
+    "name": "Z.ai",
+    "type": "Organization",
+    "profileUrl": "https://github.com/zai-org",
+    "logo": "/blog/brand/publishers/zai-org.webp",
+    "tags": {
+      "en": [
+        "GLM ecosystem",
+        "Coding workbench",
+        "Agent harness"
+      ],
+      "zh": [
+        "GLM 生态",
+        "编程工作台",
+        "Agent Harness"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://www.zhipuai.cn/en",
+        "label": {
+          "en": "Organization website",
+          "zh": "组织官网"
+        }
+      },
+      {
+        "href": "https://github.com/zai-org",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "ZCode",
+        "url": "https://github.com/zai-org/ZCode",
+        "en": {
+          "kind": "Coding Workbench and Harness",
+          "description": "Study ZCode’s workbench and runtime layers to connect task context, execution feedback, and human review when designing your own multi-step agent workflows."
+        },
+        "zh": {
+          "kind": "编程工作台与 Harness",
+          "description": "参考 ZCode 的工作台与运行层组织方式，为自己的多步骤 Agent 工作流连接任务背景、执行反馈与人工审阅。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Z.ai: GLM Ecosystem and ZCode | Floatboat",
+      "seoDescription": "Explore Z.ai’s public coding-tool ecosystem through ZCode. Understand the organization behind the project, its agent workbench and runtime, and the boundaries between open-source applications and model services.",
+      "heroTitle": "Z.ai: GLM Ecosystem and ZCode",
+      "heroDescription": "Explore Z.ai’s public coding-tool ecosystem through ZCode. Understand the organization behind the project, its agent workbench and runtime, and the boundaries between open-source applications and model services.",
+      "overview": {
+        "title": "About Z.ai",
+        "paragraphs": [
+          "Z.ai is the international brand associated with 智谱 and its GLM ecosystem. Its official zai-org organization publishes ZCode, a coding workbench with an agent harness. That gives readers a concrete software project to examine alongside the broader model ecosystem.",
+          "ZCode includes desktop, browser, and terminal experiences as well as public agent CLI and runtime source. These layers serve different ways of carrying out and reviewing coding work. The project should be evaluated as a workbench and execution system, not only as a model-branded interface.",
+          "The repository uses Apache-2.0 and includes a project notice for operational and third-party conditions. Model access, account entitlements, and data-handling choices remain separate questions. Review those details in the official project and service documents for the actual use case."
+        ]
+      },
+      "aboutTitle": "About Z.ai",
+      "about": "Z.ai is the international brand associated with 智谱 and its GLM ecosystem. Its official zai-org organization publishes ZCode, a coding workbench with an agent harness. That gives readers a concrete software project to examine alongside the broader model ecosystem.",
+      "projectsTitle": "Z.ai Projects",
+      "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
+      "skillsTitle": "Z.ai Skills",
+      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "relatedTitle": "Related Agent Publishers",
+      "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
+      "faqTitle": "Z.ai FAQ",
+      "faq": [
+        {
+          "question": "How is Z.ai related to ZCode?",
+          "answer": "ZCode is published in the official zai-org GitHub organization and identifies itself as Z.ai’s coding-agent harness. This profile connects the software to that verified publisher."
+        },
+        {
+          "question": "Is Z.ai the same name as 智谱?",
+          "answer": "Z.ai is the international brand associated with 智谱. For software attribution, the specific upstream organization and repository remain the clearest references."
+        },
+        {
+          "question": "Is this profile only about GLM model capabilities?",
+          "answer": "No. It focuses on the publisher’s coding software represented by ZCode. Model benchmarks, pricing, and platform limits are separate subjects and are not inferred from the application repository."
+        },
+        {
+          "question": "Are community ZCode forks official releases?",
+          "answer": "Not automatically. A fork has its own maintainer and changes. Attribute it separately even when it retains the original source license or uses the same interface."
+        },
+        {
+          "question": "What does the organization’s source license establish?",
+          "answer": "ZCode’s Apache-2.0 license covers that project source. It does not determine access to all GLM services, account benefits, or the behavior of third-party components."
+        },
+        {
+          "question": "What should a team inspect before adopting the workbench?",
+          "answer": "Review its workflow fit, model-provider settings, execution environment, data-handling documentation, and project notice. Public source is useful evidence but does not replace an assessment of the chosen configuration."
+        }
+      ],
+      "ctaTitle": "Study ZCode Workflow Design",
+      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaPrimary": {
+        "label": "View ZCode",
+        "href": "/combostore/zai-org/zcode"
+      }
+    },
+    "zh": {
+      "seoTitle": "Z.ai：GLM 生态与 ZCode | Floatboat",
+      "seoDescription": "通过 ZCode 了解 Z.ai 的公开编程工具生态，认识项目所属组织、Agent 工作台与运行时，以及开源应用和模型服务之间的边界。",
+      "heroTitle": "Z.ai：GLM 生态与 ZCode",
+      "heroDescription": "通过 ZCode 了解 Z.ai 的公开编程工具生态，认识项目所属组织、Agent 工作台与运行时，以及开源应用和模型服务之间的边界。",
+      "overview": {
+        "title": "关于 Z.ai",
+        "paragraphs": [
+          "Z.ai 是智谱面向国际市场使用的品牌，与 GLM 生态相关。官方 zai-org 组织发布了包含 Agent Harness 的编程工作台 ZCode，为理解模型生态之外的软件工具提供了具体对象。",
+          "ZCode 包含桌面、浏览器和终端体验，也公开 Agent CLI 与运行时源码。不同层次服务于开发工作的执行和审阅，应将其作为工作台与执行系统评估，而非只按模型品牌理解界面。",
+          "仓库采用 Apache-2.0，并通过项目声明说明运行与第三方条件。模型访问、账号权益和数据处理选择仍是独立问题，需要根据实际场景查阅官方项目与服务文档。"
+        ]
+      },
+      "aboutTitle": "关于 Z.ai",
+      "about": "Z.ai 是智谱面向国际市场使用的品牌，与 GLM 生态相关。官方 zai-org 组织发布了包含 Agent Harness 的编程工作台 ZCode，为理解模型生态之外的软件工具提供了具体对象。",
+      "projectsTitle": "Z.ai 的代表项目",
+      "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
+      "skillsTitle": "Z.ai Skills",
+      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "relatedTitle": "相关 Agent 项目发布者",
+      "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
+      "faqTitle": "Z.ai 常见问题",
+      "faq": [
+        {
+          "question": "Z.ai 与 ZCode 是什么关系？",
+          "answer": "ZCode 发布于官方 zai-org GitHub 组织，并将自身定位为 Z.ai 的编程 Agent Harness。本页按这一来源关系介绍发布者。"
+        },
+        {
+          "question": "Z.ai 与智谱是什么关系？",
+          "answer": "Z.ai 是智谱面向国际市场使用的品牌。标注具体软件归属时，应继续以实际官方组织和上游仓库为依据。"
+        },
+        {
+          "question": "本页是否只介绍 GLM 模型能力？",
+          "answer": "不是。本页以 ZCode 所代表的编程软件为重点，不由应用仓库推导模型基准、价格或平台限制。"
+        },
+        {
+          "question": "社区 ZCode 分支是官方发行版吗？",
+          "answer": "不能自动认定。分支有自己的维护者与改动，即使保留原许可或相似界面，也应分别标注归属。"
+        },
+        {
+          "question": "组织的源码许可能够证明什么？",
+          "answer": "ZCode 的 Apache-2.0 适用于该项目源码，不能决定全部 GLM 服务的访问、账户权益或第三方组件行为。"
+        },
+        {
+          "question": "团队采用工作台前应重点检查什么？",
+          "answer": "应检查工作流匹配度、模型服务配置、执行环境、数据处理文档与项目声明。公开源码有助于研究，但不能代替对所选配置的具体评估。"
+        }
+      ],
+      "ctaTitle": "借鉴 ZCode 的工作流设计",
+      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaPrimary": {
+        "label": "查看 ZCode",
+        "href": "/zh/combostore/zai-org/zcode"
+      }
+    }
+  }
+}

@@ -1,0 +1,1390 @@
+[
+  {
+    "author": "openai",
+    "slug": "codex",
+    "name": "Codex",
+    "repository": "https://github.com/openai/codex",
+    "website": "https://developers.openai.com/codex/",
+    "documentation": "https://developers.openai.com/blog/codex-as-a-platform",
+    "license": "Apache-2.0",
+    "classification": "official-harness",
+    "reviewedAt": "2026-10-27",
+    "related": [
+      "deepseek-ai/deepseek-harness",
+      "earendil-works/pi",
+      "anomalyco/opencode",
+      "nousresearch/hermes-agent"
+    ],
+    "logo": "/blog/brand/agents/codex.svg",
+    "en": {
+      "seoTitle": "Codex — Agent Workflow Design Guide | Floatboat",
+      "description": "Study Codex’s open agent harness to improve your own workflows: connect tools to task context, carry state across steps, and define review boundaries. Use its runtime and integration design as a reference for work in Floatboat.",
+      "kind": "Agent Harness",
+      "tags": [
+        "Coding",
+        "App integration",
+        "Tool execution"
+      ],
+      "overviewTitle": "About Codex",
+      "overview": [
+        "Codex is OpenAI’s coding agent and open agent harness. The public project provides the surrounding execution system: it helps an agent inspect a workspace, maintain a conversation, use tools, and carry a task through successive steps. The harness is the software around a model, rather than the model weights.",
+        "For a Floatboat user, the useful question is which part of a workflow needs a stronger execution loop. Codex offers a concrete reference for connecting task context, tools, feedback, and human approval. Reusing its software is one option; applying these design principles to an existing workflow is another.",
+        "The repository uses Apache-2.0. OpenAI’s models, subscriptions, and managed services have their own access and commercial terms. Publishing the harness makes its implementation inspectable; it does not promise that every hosted Codex feature is included in a local checkout."
+      ],
+      "capabilitiesTitle": "Workflow Mechanisms to Learn From",
+      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilities": [
+        {
+          "title": "Context that follows the task",
+          "description": "Use its context and conversation model as a reference for preserving inputs, decisions, and tool feedback across a multi-step workflow."
+        },
+        {
+          "title": "A controlled tool loop",
+          "description": "Study how tool results influence the next action, then define where your workflow should continue automatically and where a person must review."
+        },
+        {
+          "title": "Runtime integration choices",
+          "description": "Compare CLI, SDK, and app-server responsibilities when deciding whether an existing workflow needs a bounded task or an ongoing agent session."
+        }
+      ],
+      "scenariosTitle": "Apply the Ideas to Your Workflow",
+      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
+      "scenarios": [
+        {
+          "title": "A research-to-deliverable workflow",
+          "description": "Borrow the context–tool–review pattern to define how source material becomes a checked draft, with explicit evidence and a final acceptance step."
+        },
+        {
+          "title": "A repeatable coding task",
+          "description": "Separate investigation, implementation, verification, and approval so recurring repository work has an inspectable result at each stage."
+        },
+        {
+          "title": "An agent in your own workspace",
+          "description": "Evaluate the documented integration surfaces when you need your application or workflow to own the business context and available actions."
+        }
+      ],
+      "requirementsTitle": "From Reference to a Workflow Experiment",
+      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
+      "requirements": [
+        {
+          "title": "Map one workflow bottleneck",
+          "description": "Identify the missing context, tool, state transition, or approval point before choosing a runtime component."
+        },
+        {
+          "title": "Define the contract and boundaries",
+          "description": "Write down the task input, permitted tools, expected output, and human decisions for that step."
+        },
+        {
+          "title": "Validate a small complete loop",
+          "description": "Test representative inputs and review the resulting evidence, changes, and failure behavior before expanding the workflow."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Codex a model or an agent harness?",
+          "answer": "The open-source Codex project is an agent and harness implementation. It organizes context, tools, and task execution around model calls. The models it can access are a separate part of the system."
+        },
+        {
+          "question": "How do the CLI, SDK, and app-server differ?",
+          "answer": "The CLI is a direct interactive interface. The SDK supports programmatic agent workflows, while app-server exposes a session protocol for applications that need ongoing conversations, events, and approval handling."
+        },
+        {
+          "question": "Does the source include free model access?",
+          "answer": "No. Apache-2.0 covers the project source. Model access, subscription entitlements, API usage, and managed services follow their own terms and can have separate charges or limits."
+        },
+        {
+          "question": "Can Codex be built into a different interface?",
+          "answer": "OpenAI documents app-server and SDK integration for that purpose. The application supplies its own interface and relevant context, and should define what tools the agent can use and which actions need review."
+        },
+        {
+          "question": "Does an open harness include every hosted feature?",
+          "answer": "Not necessarily. The public runtime and integration surfaces are distinct from hosted infrastructure, account features, and model services. Verify the particular feature in its official documentation."
+        },
+        {
+          "question": "Must I switch products to use these workflow ideas?",
+          "answer": "No. You can first use Codex as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Codex — Agent 工作流构建与优化 | Floatboat",
+      "description": "参考 Codex 的开放 Agent Harness，为自己的工作流设计工具连接、任务状态与审阅边界。围绕 Floatboat 中的资料处理、任务执行和结果交付，判断哪些运行机制与集成方式值得复用。",
+      "kind": "Agent Harness",
+      "tags": [
+        "代码开发",
+        "应用集成",
+        "工具执行"
+      ],
+      "overviewTitle": "关于 Codex",
+      "overview": [
+        "Codex 是 OpenAI 的编程 Agent 与开放 Agent Harness。公开项目提供模型周围的执行系统，让 Agent 理解工作区、维持对话、调用工具并逐步推进任务。这里的 harness 指运行与协作软件，不等同于模型权重。",
+        "对 Floatboat 用户而言，重点是判断自己的工作流在哪个环节需要更清晰的执行循环。Codex 为连接任务上下文、工具、反馈与人工审批提供了具体参考；可以评估软件组件的复用，也可以先将这些设计原则用于现有流程。",
+        "仓库采用 Apache-2.0 许可。OpenAI 模型、订阅和托管服务有独立的访问与商业条款。开放 harness 让实现可被查看和扩展，但不能据此承诺本地源码包含所有托管 Codex 功能。"
+      ],
+      "capabilitiesTitle": "值得借鉴的工作流机制",
+      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilities": [
+        {
+          "title": "随任务延续的上下文",
+          "description": "参考其上下文与会话组织方式，为多步骤工作流保留输入、决策和工具反馈，减少每一步重新解释任务的成本。"
+        },
+        {
+          "title": "有边界的工具循环",
+          "description": "研究工具结果如何影响下一步，再明确自己的流程哪些步骤可以继续执行、哪些节点需要人工审阅。"
+        },
+        {
+          "title": "运行层集成选择",
+          "description": "比较 CLI、SDK 与 app-server 的职责，判断现有工作流需要一次性任务，还是能够持续推进的 Agent 会话。"
+        }
+      ],
+      "scenariosTitle": "如何用于自己的工作流",
+      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
+      "scenarios": [
+        {
+          "title": "从研究资料到交付成果",
+          "description": "借鉴上下文、工具与审阅的协作方式，设计从原始资料到已核对草稿的过程，明确证据和最终验收节点。"
+        },
+        {
+          "title": "可重复的代码任务",
+          "description": "将代码调查、实施、验证与审批分开，使重复性仓库任务在各阶段都有可审阅的结果。"
+        },
+        {
+          "title": "自己的工作空间中的 Agent",
+          "description": "当自己的应用或流程需要掌握业务上下文与可用操作时，评估官方集成入口是否适合。"
+        }
+      ],
+      "requirementsTitle": "从项目参考到工作流验证",
+      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
+      "requirements": [
+        {
+          "title": "定位一个流程瓶颈",
+          "description": "先确定缺少的是上下文、工具、状态衔接还是审批节点，再判断是否需要运行层组件。"
+        },
+        {
+          "title": "明确输入输出与边界",
+          "description": "为该环节写明输入、允许使用的工具、预期输出，以及必须由人作出的决定。"
+        },
+        {
+          "title": "验证一个小型完整循环",
+          "description": "使用代表性输入测试完整过程，检查证据、修改与失败行为，再扩大工作流范围。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Codex 是模型还是 Agent Harness？",
+          "answer": "本页介绍的是 Codex 的开源 Agent 与 harness 实现，负责组织上下文、工具和任务执行。它使用的模型属于系统的另一部分，不能把运行层开源理解为模型权重也在此仓库中。"
+        },
+        {
+          "question": "CLI、SDK 和 app-server 有什么区别？",
+          "answer": "CLI 面向直接交互，SDK 用于程序化 Agent 工作流，app-server 则为需要持续对话、事件流和审批处理的应用提供会话协议。选择取决于使用场景，不必同时使用全部入口。"
+        },
+        {
+          "question": "源码许可是否包含免费模型调用？",
+          "answer": "不包含。Apache-2.0 适用于项目源码；模型访问、订阅权益、API 调用和托管服务各自有独立条款，可能存在费用和使用限制。"
+        },
+        {
+          "question": "Codex 能嵌入自己的应用界面吗？",
+          "answer": "可以。OpenAI 提供 app-server 与 SDK 集成说明，由应用提供界面和相关上下文，并明确 Agent 可使用哪些工具、哪些操作需要人工审阅。"
+        },
+        {
+          "question": "开放 harness 是否包含全部托管功能？",
+          "answer": "不一定。公开运行层与集成入口不同于托管基础设施、账户功能和模型服务，具体功能是否属于源码范围，应查阅对应官方文档。"
+        },
+        {
+          "question": "借鉴这些机制是否需要更换工作工具？",
+          "answer": "不需要。可以先将 Codex 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+        }
+      ]
+    },
+    "licenseUrl": "https://github.com/openai/codex/blob/main/LICENSE"
+  },
+  {
+    "author": "deepseek-ai",
+    "slug": "deepseek-harness",
+    "name": "DeepSeek Harness",
+    "repository": "https://github.com/deepseek-ai/deepseek-harness",
+    "website": "https://deepseek.com/harness",
+    "documentation": "https://deepseek-harness.github.io/deepseek-harness/",
+    "license": "MIT",
+    "classification": "official-harness",
+    "reviewedAt": "2026-10-27",
+    "related": [
+      "earendil-works/pi",
+      "anomalyco/opencode",
+      "nousresearch/hermes-agent",
+      "moonshotai/kimi-code"
+    ],
+    "en": {
+      "seoTitle": "DeepSeek Harness — Agent Workflow Design Guide | Floatboat",
+      "description": "Use DeepSeek Harness as a reference for composing your own agent workflows. Study its plugin architecture to separate model access, tools, and task capabilities, then evaluate focused extensions for work organized in Floatboat.",
+      "kind": "Agent Harness",
+      "tags": [
+        "Plugins",
+        "Cordis",
+        "Developer preview"
+      ],
+      "overviewTitle": "About DeepSeek Harness",
+      "overview": [
+        "DeepSeek Harness, also called dsh, is an open-source agent harness developed by DeepSeek. It provides a runtime around model interaction rather than a new model in itself. The project’s central design is to express the system through composable plugins.",
+        "Its value for workflow design is the separation of capabilities into composable parts. A Floatboat user can use that idea to identify the tools, context, and responsibilities a task requires before considering a specific plugin or runtime integration. The reference architecture does not establish a ready-made connection to Floatboat.",
+        "DeepSeek describes the project as a developer preview with compatibility-breaking changes expected. Its MIT source license is separate from model-provider access and third-party dependencies. Evaluate it as an evolving platform, with version-specific documentation and deliberate workspace boundaries."
+      ],
+      "capabilitiesTitle": "Workflow Mechanisms to Learn From",
+      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilities": [
+        {
+          "title": "Separate capabilities clearly",
+          "description": "Use the plugin-first architecture to reason about model access, tools, and workflow responsibilities as separate parts."
+        },
+        {
+          "title": "Compose a focused workflow",
+          "description": "Evaluate only the capabilities needed by the task, rather than treating a large plugin catalog as a complete working solution."
+        },
+        {
+          "title": "Plan for extension changes",
+          "description": "Treat version compatibility as part of workflow design so a runtime update does not silently change the expected behavior."
+        }
+      ],
+      "scenariosTitle": "Apply the Ideas to Your Workflow",
+      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
+      "scenarios": [
+        {
+          "title": "A modular information workflow",
+          "description": "Break collection, transformation, and review into explicit capabilities with clear inputs and outputs."
+        },
+        {
+          "title": "A custom tool connection",
+          "description": "Study plugin contracts when an existing workflow needs a specific external tool or a task capability unavailable in the current setup."
+        },
+        {
+          "title": "A controlled workflow experiment",
+          "description": "Evaluate a small composition and record its behavior before relying on a preview-stage runtime for recurring work."
+        }
+      ],
+      "requirementsTitle": "From Reference to a Workflow Experiment",
+      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
+      "requirements": [
+        {
+          "title": "List the task capabilities",
+          "description": "Define which information, tools, and intermediate results each stage needs, independently of a particular plugin name."
+        },
+        {
+          "title": "Check a candidate composition",
+          "description": "Review capability boundaries, credentials, and version compatibility for the extensions you actually need."
+        },
+        {
+          "title": "Test the handoffs and failure path",
+          "description": "Verify that a failed tool or changed plugin produces a visible result and a clear decision about the next step."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is DeepSeek Harness an official DeepSeek project?",
+          "answer": "Yes. It is published in the deepseek-ai organization, and its README explicitly identifies DeepSeek AI as the developer. Use that repository rather than assuming a similarly named community fork is official."
+        },
+        {
+          "question": "What does everything-is-a-plugin mean here?",
+          "answer": "It describes the project’s Cordis-based composition model. The runtime’s capabilities are assembled through plugins; the actual tools and behavior still depend on the plugins and configuration selected for a session."
+        },
+        {
+          "question": "Is dsh a separate AI model?",
+          "answer": "No. dsh is the runtime and application entry point. Model inference comes from the provider configured for the session, with that provider’s own credentials, availability, and commercial terms."
+        },
+        {
+          "question": "How stable is the project interface?",
+          "answer": "The official README marks it as a developer preview and explicitly expects compatibility-breaking changes. Pin and evaluate the version you use instead of assuming an extension will work unchanged across releases."
+        },
+        {
+          "question": "Does MIT cover connected models and services?",
+          "answer": "MIT applies to the project source. Model APIs, external services, and third-party components retain their own terms, costs, and operational requirements."
+        },
+        {
+          "question": "Must I switch products to use these workflow ideas?",
+          "answer": "No. You can first use DeepSeek Harness as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "DeepSeek Harness — Agent 工作流构建与优化 | Floatboat",
+      "description": "将 DeepSeek Harness 作为构建 Agent 工作流的参考，研究插件架构如何区分模型访问、工具与任务能力，再结合 Floatboat 中的工作需求评估可复用的扩展和组合方式。",
+      "kind": "Agent Harness",
+      "tags": [
+        "插件组合",
+        "Cordis",
+        "开发者预览"
+      ],
+      "overviewTitle": "关于 DeepSeek Harness",
+      "overview": [
+        "DeepSeek Harness 也称 dsh，是 DeepSeek 开发的开源 Agent Harness。它提供模型交互周围的运行系统，本身不是一个新模型。项目的核心设计是通过可组合的插件组织系统能力。",
+        "它对工作流设计的价值，在于把不同能力分成可组合的部分。Floatboat 用户可以先据此明确任务需要哪些工具、上下文和职责，再评估具体插件或运行层集成；参考架构本身不代表已经具备现成的 Floatboat 连接。",
+        "DeepSeek 将该项目标为开发者预览，并说明可能出现不兼容变更。MIT 源码许可与模型服务访问、第三方依赖条款分开。选用时应按持续演进的平台理解，结合具体版本文档与工作区边界进行评估。"
+      ],
+      "capabilitiesTitle": "值得借鉴的工作流机制",
+      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilities": [
+        {
+          "title": "清晰划分任务能力",
+          "description": "参考插件优先的架构，将模型访问、工具和工作流职责作为不同部分设计。"
+        },
+        {
+          "title": "组合范围明确的流程",
+          "description": "只评估任务真正需要的能力，不将庞大的插件目录直接视为已经可用的完整方案。"
+        },
+        {
+          "title": "为扩展变化留出边界",
+          "description": "把版本兼容性纳入工作流设计，避免运行层更新后任务行为在未经检查的情况下变化。"
+        }
+      ],
+      "scenariosTitle": "如何用于自己的工作流",
+      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
+      "scenarios": [
+        {
+          "title": "模块化的信息处理流程",
+          "description": "将资料收集、转换和审阅拆成明确能力，分别规定输入、输出和交接方式。"
+        },
+        {
+          "title": "面向业务的工具连接",
+          "description": "当现有流程缺少某种外部工具或任务能力时，研究插件约定是否适合该连接。"
+        },
+        {
+          "title": "可控的工作流实验",
+          "description": "先评估小型能力组合并记录行为，再判断预览阶段运行层是否适合重复工作。"
+        }
+      ],
+      "requirementsTitle": "从项目参考到工作流验证",
+      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
+      "requirements": [
+        {
+          "title": "列出任务所需能力",
+          "description": "先明确各阶段需要的信息、工具和中间结果，不从插件名称倒推任务。"
+        },
+        {
+          "title": "核对候选组合",
+          "description": "针对真正需要的扩展检查能力边界、凭证要求与版本兼容性。"
+        },
+        {
+          "title": "测试交接与失败路径",
+          "description": "确认工具失败或插件变化时能够暴露问题，并明确后续如何处理。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "DeepSeek Harness 是 DeepSeek 官方项目吗？",
+          "answer": "是。项目位于 deepseek-ai 组织，README 明确说明由 DeepSeek AI 开发。应以该仓库为准，不能把名称相似的社区分支自动视为官方项目。"
+        },
+        {
+          "question": "“一切皆插件”在这里是什么意思？",
+          "answer": "这是项目基于 Cordis 的组合方式。运行层通过插件组织能力，实际工具与行为仍取决于会话启用了哪些插件及其配置，而不是默认拥有一切功能。"
+        },
+        {
+          "question": "dsh 是一个独立 AI 模型吗？",
+          "answer": "不是。dsh 是运行层及其应用入口；模型推理由会话配置的服务提供，其凭证、可用性和商业条款应单独确认。"
+        },
+        {
+          "question": "当前项目接口是否稳定？",
+          "answer": "官方 README 将其标为开发者预览，并明确预期不兼容变更。应固定并评估实际使用的版本，不能假设扩展跨版本无需调整。"
+        },
+        {
+          "question": "MIT 许可是否覆盖接入的模型和服务？",
+          "answer": "MIT 适用于项目源码。模型 API、外部服务和第三方组件仍适用各自条款、费用和运行要求。"
+        },
+        {
+          "question": "借鉴这些机制是否需要更换工作工具？",
+          "answer": "不需要。可以先将 DeepSeek Harness 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+        }
+      ]
+    },
+    "licenseUrl": "https://github.com/deepseek-ai/deepseek-harness/blob/master/LICENSE"
+  },
+  {
+    "author": "earendil-works",
+    "slug": "pi",
+    "name": "Pi",
+    "repository": "https://github.com/earendil-works/pi",
+    "website": "https://pi.dev",
+    "documentation": "https://github.com/earendil-works/pi/blob/main/README.md",
+    "license": "MIT",
+    "classification": "official-harness",
+    "reviewedAt": "2026-10-27",
+    "related": [
+      "anomalyco/opencode",
+      "nousresearch/hermes-agent",
+      "moonshotai/kimi-code",
+      "zai-org/zcode"
+    ],
+    "en": {
+      "seoTitle": "Pi — Agent Workflow Design Guide | Floatboat",
+      "description": "Study Pi’s minimal agent core, extension packages, and reusable libraries to shape your own workflows. Compare where task instructions are enough, where runtime customization helps, and which execution boundaries your environment must provide.",
+      "kind": "Agent Harness and Toolkit",
+      "tags": [
+        "Extensibility",
+        "Coding CLI",
+        "Runtime libraries"
+      ],
+      "overviewTitle": "About Pi",
+      "overview": [
+        "Pi explicitly describes itself as a minimal, extensible agent harness. The project combines an interactive coding agent with supporting libraries for model access, agent execution, conversation state, and terminal interfaces. It is both a usable tool and a collection of building blocks.",
+        "Pi is useful when designing a workflow that needs a small core with selective additions. In Floatboat-related work, use it to distinguish a reusable task instruction from a new tool or runtime behavior. Some improvements only need better Skills; others justify evaluating an extension or library.",
+        "The current repository is earendil-works/pi, following the earlier badlogic/pi-mono location, and uses MIT. Pi also explicitly says it has no built-in permission system restricting filesystem, process, network, or credential access. Hosting it safely requires the surrounding environment to provide the boundaries you need."
+      ],
+      "capabilitiesTitle": "Workflow Mechanisms to Learn From",
+      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilities": [
+        {
+          "title": "A small execution core",
+          "description": "Study the minimal harness to identify the state and tool feedback your workflow really needs before adding higher-level features."
+        },
+        {
+          "title": "Distinct extension layers",
+          "description": "Separate instructions, prompts, themes, and executable extensions so each workflow change is made at the right layer."
+        },
+        {
+          "title": "Reusable runtime components",
+          "description": "Evaluate the provider API, agent core, and conversation libraries independently when building a custom workflow component."
+        }
+      ],
+      "scenariosTitle": "Apply the Ideas to Your Workflow",
+      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
+      "scenarios": [
+        {
+          "title": "A lightweight task loop",
+          "description": "Model a focused sequence of context, tool use, and result review without starting with a large feature set."
+        },
+        {
+          "title": "Improving a reusable Skill",
+          "description": "Decide whether a task needs clearer instructions and resources before introducing another executable extension."
+        },
+        {
+          "title": "A custom agent component",
+          "description": "Use the library structure as a reference when a business workflow needs its own model interface or execution behavior."
+        }
+      ],
+      "requirementsTitle": "From Reference to a Workflow Experiment",
+      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
+      "requirements": [
+        {
+          "title": "Choose the extension layer",
+          "description": "Identify whether the gap is in instructions, available tools, conversation state, or the surrounding interface."
+        },
+        {
+          "title": "Set the execution boundary",
+          "description": "Plan file, process, network, and credential access in the host environment; Pi does not supply a built-in permission system."
+        },
+        {
+          "title": "Evaluate the smallest addition",
+          "description": "Validate one package or component against a representative task before combining several additions."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Pi officially described as a harness?",
+          "answer": "Yes. The README explicitly calls Pi a minimal, extensible agent harness. It also contains a coding CLI and reusable libraries, so the repository covers more than one user-facing interface."
+        },
+        {
+          "question": "Why do old links use badlogic/pi-mono?",
+          "answer": "That was the earlier repository address. It currently redirects to earendil-works/pi. Use the current upstream for ownership and documentation, and check older package references before reusing them."
+        },
+        {
+          "question": "Does Pi include a built-in permission sandbox?",
+          "answer": "The README says Pi has no built-in permission system for restricting filesystem, process, network, or credential access. Required containment must come from the environment, not from an assumption that every harness provides it."
+        },
+        {
+          "question": "Are subagents and plan mode enabled by default?",
+          "answer": "The project deliberately leaves those features out of its core defaults. Extensions or packages may supply them, but their presence and behavior must be checked for the particular setup."
+        },
+        {
+          "question": "What is the difference between a Skill and an extension?",
+          "answer": "A Skill supplies reusable task instructions and resources. An extension changes or extends the running tool through the extension mechanism. They can work together, but their execution and trust boundaries differ."
+        },
+        {
+          "question": "Must I switch products to use these workflow ideas?",
+          "answer": "No. You can first use Pi as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Pi — Agent 工作流构建与优化 | Floatboat",
+      "description": "参考 Pi 的精简 Agent 核心、扩展包与基础库，设计适合自己的工作流。区分哪些问题可以通过任务说明解决，哪些需要运行层定制，以及执行环境应提供哪些边界。",
+      "kind": "Agent Harness 与工具集",
+      "tags": [
+        "扩展机制",
+        "编程 CLI",
+        "运行基础库"
+      ],
+      "overviewTitle": "关于 Pi",
+      "overview": [
+        "Pi 明确将自己定位为精简、可扩展的 Agent Harness。项目把交互式编程 Agent 与模型访问、Agent 执行、对话状态和终端界面等基础库放在一起，既能作为工具使用，也能为其他应用提供构建模块。",
+        "Pi 适合作为“精简核心、按需增加能力”的设计参考。围绕 Floatboat 的工作，可以用它区分可复用任务说明、新工具和运行层行为：部分优化只需更好的 Skills，另一些才值得评估扩展或基础库。",
+        "当前仓库为 earendil-works/pi，原地址为 badlogic/pi-mono，采用 MIT 许可。项目也明确说明自身没有限制文件、进程、网络和凭证访问的内置权限系统；所需隔离边界应由实际运行环境提供。"
+      ],
+      "capabilitiesTitle": "值得借鉴的工作流机制",
+      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilities": [
+        {
+          "title": "精简执行核心",
+          "description": "参考精简 harness，先确定流程真正需要的状态和工具反馈，再增加上层功能。"
+        },
+        {
+          "title": "不同层次的扩展",
+          "description": "区分指令、提示、主题和可执行扩展，让每种工作流调整发生在合适的层次。"
+        },
+        {
+          "title": "可复用运行组件",
+          "description": "构建特定流程组件时，可以分别评估模型接口、Agent 核心和对话基础库。"
+        }
+      ],
+      "scenariosTitle": "如何用于自己的工作流",
+      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
+      "scenarios": [
+        {
+          "title": "轻量任务循环",
+          "description": "围绕上下文、工具执行和结果审阅设计集中流程，不从庞大功能集合开始。"
+        },
+        {
+          "title": "优化可复用 Skill",
+          "description": "在引入新的可执行扩展前，先判断任务是否只需要更清晰的说明与参考资料。"
+        },
+        {
+          "title": "定制 Agent 组件",
+          "description": "当业务流程需要自己的模型接口或执行方式时，以基础库结构作为研究参考。"
+        }
+      ],
+      "requirementsTitle": "从项目参考到工作流验证",
+      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
+      "requirements": [
+        {
+          "title": "选择改动层次",
+          "description": "确认不足来自任务说明、可用工具、对话状态还是交互界面。"
+        },
+        {
+          "title": "设置执行边界",
+          "description": "在宿主环境中规划文件、进程、网络与凭证访问；Pi 没有内置权限限制系统。"
+        },
+        {
+          "title": "评估最小必要扩展",
+          "description": "先针对代表任务验证一个包或组件，再组合更多能力。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Pi 官方是否将自己称为 harness？",
+          "answer": "是。README 明确将 Pi 称为精简、可扩展的 Agent Harness，同时提供编程 CLI 和可复用基础库，范围不止一个终端界面。"
+        },
+        {
+          "question": "为什么旧资料使用 badlogic/pi-mono？",
+          "answer": "那是旧仓库地址，目前会转向 earendil-works/pi。归属与文档应以当前上游为准，复用旧资料前也要确认包名和接口是否变化。"
+        },
+        {
+          "question": "Pi 是否自带权限沙箱？",
+          "answer": "README 说明 Pi 没有用于限制文件、进程、网络和凭证访问的内置权限系统。需要的隔离应由环境提供，不能假定所有 harness 都自带沙箱。"
+        },
+        {
+          "question": "子 Agent 和规划模式默认就有吗？",
+          "answer": "项目有意不将这类能力作为核心默认功能。扩展或包可以补充，但需要根据实际配置核对，不能统一宣称开箱即用。"
+        },
+        {
+          "question": "Skill 与扩展在 Pi 中有什么区别？",
+          "answer": "Skill 提供可复用的任务说明与资料，扩展则通过扩展机制改变或增加工具行为。两者可以配合，但执行方式与信任边界不同。"
+        },
+        {
+          "question": "借鉴这些机制是否需要更换工作工具？",
+          "answer": "不需要。可以先将 Pi 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+        }
+      ]
+    },
+    "licenseUrl": "https://github.com/earendil-works/pi/blob/main/LICENSE"
+  },
+  {
+    "author": "anomalyco",
+    "slug": "opencode",
+    "name": "OpenCode",
+    "repository": "https://github.com/anomalyco/opencode",
+    "website": "https://opencode.ai",
+    "documentation": "https://opencode.ai/docs/",
+    "license": "MIT",
+    "classification": "agent-system",
+    "reviewedAt": "2026-10-27",
+    "related": [
+      "nousresearch/hermes-agent",
+      "moonshotai/kimi-code",
+      "zai-org/zcode",
+      "openai/codex"
+    ],
+    "logo": "/blog/brand/agents/opencode.svg",
+    "en": {
+      "seoTitle": "OpenCode — Agent Workflow Design Guide | Floatboat",
+      "description": "Study OpenCode’s coding-agent workflow to improve how your own tasks move from investigation to changes and review. Use its interaction and extension design as references for development work organized in Floatboat.",
+      "kind": "Open-source Coding Agent",
+      "tags": [
+        "Coding agent",
+        "Interactive development",
+        "Open source"
+      ],
+      "overviewTitle": "About OpenCode",
+      "overview": [
+        "OpenCode is an open-source AI coding agent published by Anomaly. It provides an application around coding tasks rather than simply a model endpoint. The public project is best introduced by its own coding-agent positioning, with the model and execution environment explained separately.",
+        "For workflow design, OpenCode is a concrete implementation to study rather than a requirement to switch products. Its agent modes and interactive feedback can inform how you separate investigation from implementation, expose a change for review, and add task-specific integrations to your own environment.",
+        "The project source is MIT licensed. Model-provider accounts, subscription access, remote services, and community additions have separate requirements. The source can be inspected and adapted without implying that all associated hosted services are free or included."
+      ],
+      "capabilitiesTitle": "Workflow Mechanisms to Learn From",
+      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilities": [
+        {
+          "title": "Separate task modes",
+          "description": "Study the division of agent responsibilities when deciding which workflow stages should inspect, plan, or change a repository."
+        },
+        {
+          "title": "Expose useful feedback",
+          "description": "Use the interactive workflow as a reference for showing progress and tool results where a person can make an informed decision."
+        },
+        {
+          "title": "Evaluate integrations by task",
+          "description": "Inspect an integration’s tools and maintainer before adapting the pattern to the development workflow you actually need."
+        }
+      ],
+      "scenariosTitle": "Apply the Ideas to Your Workflow",
+      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
+      "scenarios": [
+        {
+          "title": "A repository investigation stage",
+          "description": "Define what an agent must learn before implementation begins, including relevant files, constraints, and unresolved decisions."
+        },
+        {
+          "title": "A reviewable change pipeline",
+          "description": "Separate the proposed change from acceptance so generated code is paired with an inspectable diff and relevant checks."
+        },
+        {
+          "title": "A task-specific development tool",
+          "description": "Study the extension interfaces when considering a connection to a project’s existing checks or external development systems."
+        }
+      ],
+      "requirementsTitle": "From Reference to a Workflow Experiment",
+      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
+      "requirements": [
+        {
+          "title": "Describe the desired handoff",
+          "description": "Write down what investigation must deliver before planning or implementation can safely continue."
+        },
+        {
+          "title": "Limit available actions",
+          "description": "Match tool access and the active mode to each stage rather than giving every step the same ability to change files."
+        },
+        {
+          "title": "Check the result and feedback",
+          "description": "Evaluate whether the workflow makes errors visible and gives the user enough evidence to accept or revise the change."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is OpenCode a model provider?",
+          "answer": "The project on this page is a coding-agent application. Its interface and execution workflow are separate from whichever model service is configured for a particular session."
+        },
+        {
+          "question": "Should OpenCode be called a Skill?",
+          "answer": "No. It is an independent coding-agent project. Skills or other instructions can form part of an agent workflow, but they do not replace the application that runs the workflow."
+        },
+        {
+          "question": "Who publishes the official repository?",
+          "answer": "The repository is anomalyco/opencode, under Anomaly’s GitHub organization. Community integrations and similarly named projects should be checked separately rather than attributed to Anomaly automatically."
+        },
+        {
+          "question": "Are planning and building the same mode?",
+          "answer": "The official project documents different agent modes for different responsibilities. Read the selected mode’s behavior and permissions before assuming a planning session can or should make changes."
+        },
+        {
+          "question": "Does MIT include a free model subscription?",
+          "answer": "No. It covers the application source. Provider accounts, model usage, commercial subscriptions, and external integrations have their own conditions and costs."
+        },
+        {
+          "question": "Must I switch products to use these workflow ideas?",
+          "answer": "No. You can first use OpenCode as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "OpenCode — Agent 工作流构建与优化 | Floatboat",
+      "description": "参考 OpenCode 的编程 Agent 工作方式，优化自己的任务如何从代码理解进入修改与审阅。围绕 Floatboat 中的开发工作，研究交互、任务模式和扩展机制可以带来的流程改进。",
+      "kind": "开源编程 Agent",
+      "tags": [
+        "编程 Agent",
+        "交互开发",
+        "开源应用"
+      ],
+      "overviewTitle": "关于 OpenCode",
+      "overview": [
+        "OpenCode 是 Anomaly 发布的开源 AI 编程 Agent，为代码任务提供完整的交互与执行应用，而非一个单纯的模型接口。介绍时应保留其编程 Agent 定位，并分别解释模型和执行环境。",
+        "在工作流设计中，OpenCode 提供了可以研究的具体实现，而不是要求用户更换产品。可以借鉴其 Agent 模式与交互反馈，区分理解与实施、呈现待审阅修改，并评估如何为自己的环境增加任务集成。",
+        "项目源码采用 MIT 许可。模型服务账号、订阅访问、远程服务和社区扩展各有独立要求。可以研究和修改源码，但不能据此认为全部相关托管服务均免费或包含在内。"
+      ],
+      "capabilitiesTitle": "值得借鉴的工作流机制",
+      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilities": [
+        {
+          "title": "区分任务模式",
+          "description": "研究 Agent 职责划分，确定流程中哪些阶段负责检查、规划或修改仓库。"
+        },
+        {
+          "title": "呈现有用反馈",
+          "description": "参考交互流程，在用户能够作出判断的位置呈现进度与工具结果。"
+        },
+        {
+          "title": "按任务评估集成",
+          "description": "在借鉴集成方式之前，检查工具范围与维护者，并对应到实际开发需求。"
+        }
+      ],
+      "scenariosTitle": "如何用于自己的工作流",
+      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
+      "scenarios": [
+        {
+          "title": "代码调查阶段",
+          "description": "明确实施之前 Agent 必须掌握哪些文件、约束与待定问题。"
+        },
+        {
+          "title": "可审阅的修改流程",
+          "description": "将提出修改与接受修改分开，为生成代码配套差异展示与相关检查。"
+        },
+        {
+          "title": "面向任务的开发工具",
+          "description": "需要连接项目已有检查或外部开发系统时，研究扩展接口是否适合。"
+        }
+      ],
+      "requirementsTitle": "从项目参考到工作流验证",
+      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
+      "requirements": [
+        {
+          "title": "描述阶段交接",
+          "description": "明确调查阶段必须交付什么，后续规划或实施才有足够依据。"
+        },
+        {
+          "title": "限定可用操作",
+          "description": "按阶段匹配工具访问和工作模式，而非让每一步都拥有同样的修改能力。"
+        },
+        {
+          "title": "检查结果与反馈",
+          "description": "评估流程能否暴露错误，并为用户接受或修订修改提供足够证据。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "OpenCode 是模型提供商吗？",
+          "answer": "本页介绍的是编程 Agent 应用，它提供交互与执行工作流，和具体会话配置的模型服务是不同层次。"
+        },
+        {
+          "question": "OpenCode 应归为 Skill 吗？",
+          "answer": "不应。它是独立编程 Agent 项目；Skills 等任务说明可以参与工作流，但不能代替运行工作流的应用本身。"
+        },
+        {
+          "question": "官方仓库由谁发布？",
+          "answer": "官方仓库为 Anomaly GitHub 组织下的 anomalyco/opencode。社区集成和同名项目需要另行核实，不能自动归属于 Anomaly。"
+        },
+        {
+          "question": "规划和实施是否属于同一种模式？",
+          "answer": "官方项目为不同职责介绍了不同 Agent 模式。应先了解所选模式的行为和权限，再判断会话是否应该修改内容。"
+        },
+        {
+          "question": "MIT 许可包含免费模型订阅吗？",
+          "answer": "不包含。MIT 许可覆盖应用源码，模型账号、调用、商业订阅和外部集成分别适用自身条件与费用。"
+        },
+        {
+          "question": "借鉴这些机制是否需要更换工作工具？",
+          "answer": "不需要。可以先将 OpenCode 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+        }
+      ]
+    },
+    "licenseUrl": "https://github.com/anomalyco/opencode/blob/dev/LICENSE"
+  },
+  {
+    "author": "nousresearch",
+    "slug": "hermes-agent",
+    "name": "Hermes Agent",
+    "repository": "https://github.com/NousResearch/hermes-agent",
+    "website": "https://hermes-agent.nousresearch.com/",
+    "documentation": "https://hermes-agent.nousresearch.com/docs/",
+    "license": "MIT",
+    "classification": "agent-system",
+    "reviewedAt": "2026-10-27",
+    "related": [
+      "moonshotai/kimi-code",
+      "zai-org/zcode",
+      "openai/codex",
+      "deepseek-ai/deepseek-harness"
+    ],
+    "en": {
+      "seoTitle": "Hermes Agent — Agent Workflow Design Guide | Floatboat",
+      "description": "Use Hermes Agent as a reference for workflows that continue across sessions. Study how memory, procedural Skills, tool connections, and scheduling can help organize reusable task knowledge and recurring work in your own environment.",
+      "kind": "Persistent Agent System",
+      "tags": [
+        "Memory",
+        "Skills",
+        "Scheduled work"
+      ],
+      "overviewTitle": "About Hermes Agent",
+      "overview": [
+        "Hermes Agent is an open-source agent system from Nous Research. Its official documentation brings together persistent memory, reusable Skills, tools, context files, and scheduling. These capabilities place it in the category of an independent agent application rather than a single prompt or Skill.",
+        "The value for a Floatboat user is in deciding what a continuing workflow needs to retain: facts, preferences, decisions, or a procedure. Hermes provides a reference for separating those concerns and combining them with tools and schedules. The design still needs task-specific review and an independently verified integration path.",
+        "Hermes also documents MCP integrations, execution controls, and scheduled tasks. Each connected tool or delivery channel adds its own setup and permissions. The MIT license covers the source, while models, remote systems, and hosted services remain separate choices."
+      ],
+      "capabilitiesTitle": "Workflow Mechanisms to Learn From",
+      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilities": [
+        {
+          "title": "Retain the right context",
+          "description": "Study persistent memory when a workflow needs information from earlier sessions, with a way to correct or retire it."
+        },
+        {
+          "title": "Keep procedures separate",
+          "description": "Use procedural Skills as a reference for storing how a task should be done separately from facts about a particular user or project."
+        },
+        {
+          "title": "Connect continuity and timing",
+          "description": "Evaluate how recurring work should receive context, use tools, and deliver a result at a planned time."
+        }
+      ],
+      "scenariosTitle": "Apply the Ideas to Your Workflow",
+      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
+      "scenarios": [
+        {
+          "title": "A recurring research brief",
+          "description": "Design how a repeated research task obtains fresh inputs while retaining its scope, sources, and output requirements."
+        },
+        {
+          "title": "A reusable working method",
+          "description": "Turn an established procedure into reviewed task knowledge, with an owner and a way to update outdated assumptions."
+        },
+        {
+          "title": "A task resumed later",
+          "description": "Identify the minimal decisions and evidence a later session needs instead of preserving an entire conversation without structure."
+        }
+      ],
+      "requirementsTitle": "From Reference to a Workflow Experiment",
+      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
+      "requirements": [
+        {
+          "title": "Classify what should persist",
+          "description": "Separate temporary context, durable facts, decisions, and procedures before adding a memory mechanism."
+        },
+        {
+          "title": "Define correction and delivery",
+          "description": "Give stored knowledge an update process and recurring tasks an explicit schedule, output destination, and failure path."
+        },
+        {
+          "title": "Evaluate repeated runs",
+          "description": "Check whether the workflow stays accurate as inputs change, rather than judging it from one successful run."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is Hermes Agent different from a Skill collection?",
+          "answer": "Hermes is the running agent system. Skills are one way it represents reusable task knowledge alongside memory, tools, and scheduling. A collection of instructions alone does not supply that surrounding application."
+        },
+        {
+          "question": "Is persistent memory the same as chat history?",
+          "answer": "No. The project documents persistent memory and conversation context as distinct concerns. When evaluating it, inspect what is stored, how it is reused, and how you can correct or remove information."
+        },
+        {
+          "question": "Does saving a Skill make it trustworthy?",
+          "answer": "No. Reusable procedures can contain outdated assumptions or task-specific mistakes. Review their source, dependencies, and results before treating them as a reliable routine."
+        },
+        {
+          "question": "Can Hermes connect to MCP tools?",
+          "answer": "The official documentation includes MCP integration. The actual services available depend on configured servers, credentials, and access policies; a supported protocol does not grant access to every service."
+        },
+        {
+          "question": "Must I switch products to use these workflow ideas?",
+          "answer": "No. You can first use Hermes Agent as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+        },
+        {
+          "question": "Who maintains Hermes Agent and its source license?",
+          "answer": "The official repository is published by Nous Research and identifies the source license as MIT. Connected model services and external systems have their own access and commercial conditions."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Hermes Agent — Agent 工作流构建与优化 | Floatboat",
+      "description": "参考 Hermes Agent 的记忆、程序性 Skills、工具连接与调度方式，设计能够跨会话继续推进的工作流，为自己的任务保留必要背景、沉淀方法并组织重复工作。",
+      "kind": "持续工作 Agent 系统",
+      "tags": [
+        "持久记忆",
+        "Skills",
+        "定时工作"
+      ],
+      "overviewTitle": "关于 Hermes Agent",
+      "overview": [
+        "Hermes Agent 是 Nous Research 的开源 Agent 系统。官方文档将持久记忆、可复用 Skills、工具、上下文文件和调度能力组织在一起，因此它属于独立 Agent 应用，而非单个提示或 Skill。",
+        "对 Floatboat 用户而言，重点是决定持续工作流需要保留哪些事实、偏好、决策或流程。Hermes 为区分这些信息、再结合工具与调度提供了参考；实际设计仍需要任务审阅，并单独验证接入方式。",
+        "Hermes 还维护 MCP 集成、执行控制与定时任务说明。每种工具和交付渠道都有自己的配置与权限。MIT 许可适用于源码，模型、远程系统和托管服务仍是独立选择。"
+      ],
+      "capabilitiesTitle": "值得借鉴的工作流机制",
+      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilities": [
+        {
+          "title": "保留必要背景",
+          "description": "流程需要引用此前会话的信息时，可以参考持久记忆，并设计纠正与失效处理。"
+        },
+        {
+          "title": "单独维护任务方法",
+          "description": "参考程序性 Skills，将任务应如何开展与具体用户、项目事实分开维护。"
+        },
+        {
+          "title": "连接持续性与时间安排",
+          "description": "研究重复工作如何获得背景资料、使用工具，并在约定时间交付结果。"
+        }
+      ],
+      "scenariosTitle": "如何用于自己的工作流",
+      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
+      "scenarios": [
+        {
+          "title": "重复性研究简报",
+          "description": "为重复研究设计新资料入口，同时保留范围、来源要求和交付标准。"
+        },
+        {
+          "title": "可复用工作方法",
+          "description": "将已形成的方法整理为可审阅知识，并明确维护者与过时假设的更新方式。"
+        },
+        {
+          "title": "稍后继续的任务",
+          "description": "明确后续会话真正需要的决策与证据，而非无结构地保留全部对话。"
+        }
+      ],
+      "requirementsTitle": "从项目参考到工作流验证",
+      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
+      "requirements": [
+        {
+          "title": "分类需要保留的信息",
+          "description": "引入记忆机制前，先区分临时背景、长期事实、决策与流程。"
+        },
+        {
+          "title": "约定纠正与交付方式",
+          "description": "为知识设置更新方式，为重复任务明确时间、输出位置和失败路径。"
+        },
+        {
+          "title": "评估多次运行结果",
+          "description": "检查输入变化后流程是否仍准确，而非只凭一次成功判断效果。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Hermes Agent 与 Skill 集合有什么区别？",
+          "answer": "Hermes 是运行中的 Agent 系统。Skills 只是它保存可复用任务知识的一种方式，系统还包含记忆、工具和调度等部分；单纯的指令集合不能代替这些运行能力。"
+        },
+        {
+          "question": "持久记忆就是聊天记录吗？",
+          "answer": "不是。项目将持久记忆与对话上下文分别说明。评估时应了解存储了什么、如何复用，以及怎样纠正或移除信息。"
+        },
+        {
+          "question": "保存成 Skill 就代表方法可靠吗？",
+          "answer": "不代表。可复用方法仍可能包含过时假设或特定任务中的错误，应检查来源、依赖和实际结果，再决定是否作为稳定流程使用。"
+        },
+        {
+          "question": "Hermes 能连接 MCP 工具吗？",
+          "answer": "官方文档包含 MCP 集成。实际可用服务取决于服务器配置、凭证和访问规则，支持协议不等于自动获得所有服务权限。"
+        },
+        {
+          "question": "借鉴这些机制是否需要更换工作工具？",
+          "answer": "不需要。可以先将 Hermes Agent 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+        },
+        {
+          "question": "Hermes Agent 由谁维护，源码采用什么许可？",
+          "answer": "官方仓库由 Nous Research 发布，源码采用 MIT 许可。接入的模型服务与外部系统有各自的访问条件和商业条款。"
+        }
+      ]
+    },
+    "licenseUrl": "https://github.com/NousResearch/hermes-agent/blob/main/LICENSE"
+  },
+  {
+    "author": "moonshotai",
+    "slug": "kimi-code",
+    "name": "Kimi Code CLI",
+    "repository": "https://github.com/MoonshotAI/kimi-code",
+    "website": "https://www.kimi.com/code/docs/",
+    "documentation": "https://moonshotai.github.io/kimi-code/en/",
+    "license": "MIT",
+    "classification": "agent-system",
+    "reviewedAt": "2026-10-27",
+    "related": [
+      "zai-org/zcode",
+      "openai/codex",
+      "deepseek-ai/deepseek-harness",
+      "earendil-works/pi"
+    ],
+    "en": {
+      "seoTitle": "Kimi Code CLI — Agent Workflow Design Guide | Floatboat",
+      "description": "Study Kimi Code CLI’s tool loop, focused subagents, lifecycle hooks, and editor protocol as references for your own workflows. Use them to clarify task roles, execution checks, and context handoffs around work in Floatboat.",
+      "kind": "Terminal Coding Agent",
+      "tags": [
+        "Coding CLI",
+        "Plugins",
+        "Editor integration"
+      ],
+      "overviewTitle": "About Kimi Code CLI",
+      "overview": [
+        "Kimi Code CLI is Moonshot AI’s current open-source coding agent for the terminal. Its official description includes reading and editing code, running commands, searching files, and fetching web pages, with the agent choosing subsequent steps from tool feedback. It is an application around the model, not a Skill package.",
+        "For a Floatboat user improving a workflow, the useful ideas are role separation, explicit tool feedback, and well-defined points for checks. Kimi Code CLI provides a concrete reference for those mechanisms. ACP also illustrates how an interface can remain separate from the process that executes an agent task.",
+        "The maintained repository is MoonshotAI/kimi-code and uses MIT. The earlier Python project, MoonshotAI/kimi-cli, was archived and directs users to the newer CLI. Keep that distinction in mind when reading tutorials: the old project’s architecture, package names, and instructions are not interchangeable with the current release."
+      ],
+      "capabilitiesTitle": "Workflow Mechanisms to Learn From",
+      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilities": [
+        {
+          "title": "An explicit tool-feedback loop",
+          "description": "Study how a task continues from command and file results, then define the evidence your own workflow needs at each step."
+        },
+        {
+          "title": "Focused task responsibilities",
+          "description": "Use subagent contexts as a reference for dividing exploration, planning, and implementation without losing the parent task’s goal."
+        },
+        {
+          "title": "Checks at lifecycle boundaries",
+          "description": "Study hooks and interface protocols when deciding where to validate an action and how context should pass between tools."
+        }
+      ],
+      "scenariosTitle": "Apply the Ideas to Your Workflow",
+      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
+      "scenarios": [
+        {
+          "title": "A multi-role coding workflow",
+          "description": "Separate research, planning, and implementation outputs so each role contributes a result the next stage can inspect."
+        },
+        {
+          "title": "Checks before consequential steps",
+          "description": "Design a validation or review point before a command, file change, or external action proceeds."
+        },
+        {
+          "title": "A consistent context handoff",
+          "description": "Use the interface–runtime separation as a reference when a workflow spans an editor, a workspace, and an execution process."
+        }
+      ],
+      "requirementsTitle": "From Reference to a Workflow Experiment",
+      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
+      "requirements": [
+        {
+          "title": "Use the maintained reference",
+          "description": "Use kimi-code documentation when studying the mechanisms; legacy Python CLI examples can describe a different architecture."
+        },
+        {
+          "title": "Define each role and checkpoint",
+          "description": "Specify what each delegated task receives, what it returns, and which operation must wait for review."
+        },
+        {
+          "title": "Test the context transfer",
+          "description": "Check whether each stage gets enough relevant information without carrying unrelated conversation history into every step."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which Kimi repository is current?",
+          "answer": "Use MoonshotAI/kimi-code for Kimi Code CLI. MoonshotAI/kimi-cli is the archived Python implementation and explicitly directs users to the current project."
+        },
+        {
+          "question": "Is Kimi Code CLI an independent agent project?",
+          "answer": "Yes. It includes an interactive application, tools, sessions, and agent execution. It is not just a prompt, a model, or a collection of Skills, even though Skills can extend its workflows."
+        },
+        {
+          "question": "Can it use a provider other than Kimi?",
+          "answer": "The README says other compatible providers can be configured. Verify the provider’s protocol and feature support rather than assuming that every model endpoint behaves identically."
+        },
+        {
+          "question": "What does ACP integration provide?",
+          "answer": "It allows compatible editors to drive a Kimi Code CLI session over the Agent Client Protocol. The editor supplies its interface while the CLI handles the agent session; the editor must support the integration."
+        },
+        {
+          "question": "Must I switch products to use these workflow ideas?",
+          "answer": "No. You can first use Kimi Code CLI as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+        },
+        {
+          "question": "Does MIT cover a Kimi subscription?",
+          "answer": "No. MIT applies to the project source. Kimi Code account access, Moonshot API use, and any other provider’s service are governed by their own entitlements, limits, and terms."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Kimi Code CLI — Agent 工作流构建与优化 | Floatboat",
+      "description": "参考 Kimi Code CLI 的工具循环、子 Agent、生命周期 hooks 与编辑器协议，为自己的工作流划分任务职责、设置执行检查，并改善 Floatboat 中各环节的上下文交接。",
+      "kind": "终端编程 Agent",
+      "tags": [
+        "编程 CLI",
+        "插件扩展",
+        "编辑器集成"
+      ],
+      "overviewTitle": "关于 Kimi Code CLI",
+      "overview": [
+        "Kimi Code CLI 是月之暗面当前的开源终端编程 Agent。官方说明涵盖读取和编辑代码、执行命令、搜索文件与获取网页，再根据工具反馈选择后续步骤。它是模型周围的应用系统，不是一个 Skill 包。",
+        "对希望优化工作流的 Floatboat 用户，有价值的是职责划分、明确的工具反馈和适当的检查节点。Kimi Code CLI 为这些机制提供了具体参考；ACP 也展示了界面与 Agent 执行进程分离的组织方式。",
+        "当前维护的仓库是 MoonshotAI/kimi-code，采用 MIT 许可。旧 Python 项目 MoonshotAI/kimi-cli 已归档并引导迁移到新版。阅读教程时要区分版本，旧架构、包名和命令不能直接当作当前发行版说明。"
+      ],
+      "capabilitiesTitle": "值得借鉴的工作流机制",
+      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilities": [
+        {
+          "title": "明确工具反馈循环",
+          "description": "研究任务如何依据命令和文件结果继续，明确自己的流程各步骤需要什么证据。"
+        },
+        {
+          "title": "专注的任务职责",
+          "description": "参考子 Agent 上下文划分探索、规划与实施职责，同时保留主任务目标。"
+        },
+        {
+          "title": "生命周期边界上的检查",
+          "description": "需要确定操作检查节点和工具间上下文传递方式时，研究 hooks 与接口协议。"
+        }
+      ],
+      "scenariosTitle": "如何用于自己的工作流",
+      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
+      "scenarios": [
+        {
+          "title": "多角色开发流程",
+          "description": "分别规定研究、规划与实施输出，使下一个阶段能检查上一阶段的成果。"
+        },
+        {
+          "title": "重要步骤之前的检查",
+          "description": "在命令、文件变更或外部操作继续之前，设计验证或审阅节点。"
+        },
+        {
+          "title": "一致的上下文交接",
+          "description": "流程涉及编辑器、工作空间与执行进程时，参考界面与运行层分离的方式组织交接。"
+        }
+      ],
+      "requirementsTitle": "从项目参考到工作流验证",
+      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
+      "requirements": [
+        {
+          "title": "选择当前维护的参考",
+          "description": "研究机制时使用 kimi-code 文档，旧 Python CLI 示例可能属于不同架构。"
+        },
+        {
+          "title": "定义职责与检查点",
+          "description": "明确每个委派任务接收什么、返回什么，以及哪些操作必须等待审阅。"
+        },
+        {
+          "title": "验证上下文传递",
+          "description": "检查各阶段是否获得足够相关信息，同时避免每一步都携带无关对话历史。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "现在应选择哪个 Kimi 仓库？",
+          "answer": "当前应使用 MoonshotAI/kimi-code。MoonshotAI/kimi-cli 是已归档的 Python 实现，其官方说明明确引导用户迁移到新项目。"
+        },
+        {
+          "question": "Kimi Code CLI 属于独立 Agent 项目吗？",
+          "answer": "是。它包含交互应用、工具、会话和 Agent 执行能力，不能只理解为提示、模型或 Skill 集合；Skills 可以参与其中，但不是整个项目。"
+        },
+        {
+          "question": "是否只能使用 Kimi 模型？",
+          "answer": "README 说明可配置其他兼容提供方。实际使用前仍要核对协议与功能支持，不能假设所有模型接口行为一致。"
+        },
+        {
+          "question": "ACP 集成提供什么？",
+          "answer": "它让兼容编辑器通过 Agent Client Protocol 驱动 Kimi Code CLI 会话。编辑器提供界面，CLI 承担 Agent 会话，前提是编辑器支持相关集成。"
+        },
+        {
+          "question": "借鉴这些机制是否需要更换工作工具？",
+          "answer": "不需要。可以先将 Kimi Code CLI 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+        },
+        {
+          "question": "MIT 许可是否覆盖 Kimi 订阅？",
+          "answer": "不覆盖。MIT 适用于项目源码；Kimi Code 账号访问、Moonshot API 调用和其他模型服务分别适用各自权益、额度与条款。"
+        }
+      ]
+    },
+    "licenseUrl": "https://github.com/MoonshotAI/kimi-code/blob/main/LICENSE"
+  },
+  {
+    "author": "zai-org",
+    "slug": "zcode",
+    "name": "ZCode",
+    "repository": "https://github.com/zai-org/ZCode",
+    "website": "https://zcode.z.ai/",
+    "documentation": "https://github.com/zai-org/ZCode/blob/main/README.en.md",
+    "license": "Apache-2.0",
+    "classification": "official-harness",
+    "reviewedAt": "2026-10-27",
+    "related": [
+      "openai/codex",
+      "deepseek-ai/deepseek-harness",
+      "earendil-works/pi",
+      "anomalyco/opencode"
+    ],
+    "en": {
+      "seoTitle": "ZCode — Agent Workflow Design Guide | Floatboat",
+      "description": "Study ZCode’s workbench and agent-runtime design to improve your own workflows. Use its interface separation and public source as references for organizing task context, execution feedback, and human review around work in Floatboat.",
+      "kind": "Coding Workbench and Harness",
+      "tags": [
+        "Coding workbench",
+        "Multiple interfaces",
+        "Open runtime"
+      ],
+      "overviewTitle": "About ZCode",
+      "overview": [
+        "ZCode is Z.ai’s coding-agent harness and development workbench. The official repository describes desktop, browser, and terminal experiences, and includes client code, backend services, shared UI, and the agent CLI and runtime. It is broader than an editor plugin or a single task instruction.",
+        "Its value as a workflow reference is the relationship between the interface, backend services, and agent execution. A Floatboat user can study those boundaries to decide where context should enter, how a task’s progress should be presented, and when the user should review a proposed action. Actual reuse requires a separately verified integration.",
+        "The public source uses Apache-2.0 and the repository also provides a project notice covering additional operational and third-party matters. Source availability does not settle model access, hosted service terms, or every application behavior. Review the official notice and release documentation for the version you choose."
+      ],
+      "capabilitiesTitle": "Workflow Mechanisms to Learn From",
+      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilities": [
+        {
+          "title": "Separate interface and execution",
+          "description": "Study the workbench’s layers when deciding which part of a workflow should collect context and which part should execute the task."
+        },
+        {
+          "title": "Make task progress reviewable",
+          "description": "Use the application structure as a reference for presenting agent activity alongside the context a person needs to judge it."
+        },
+        {
+          "title": "Inspect the complete system",
+          "description": "Read client, backend, CLI, and runtime source together when evaluating a workflow pattern rather than copying an isolated interface."
+        }
+      ],
+      "scenariosTitle": "Apply the Ideas to Your Workflow",
+      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
+      "scenarios": [
+        {
+          "title": "A task-centered workspace",
+          "description": "Define how source material, current activity, and expected deliverables should stay connected during a longer task."
+        },
+        {
+          "title": "A human review point",
+          "description": "Plan what evidence and context a user needs before accepting an agent’s proposed change or external action."
+        },
+        {
+          "title": "A workflow across interfaces",
+          "description": "Study where state and execution belong when the same work can be viewed through different interfaces."
+        }
+      ],
+      "requirementsTitle": "From Reference to a Workflow Experiment",
+      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
+      "requirements": [
+        {
+          "title": "Map the layers of the task",
+          "description": "Separate business context, user interaction, execution tools, and the result that must be reviewed."
+        },
+        {
+          "title": "Check data and execution boundaries",
+          "description": "Use the project notice and source to assess what is local, what is remote, and which service receives task information."
+        },
+        {
+          "title": "Prototype the review loop",
+          "description": "Test one task from input to a reviewable result before expanding the workflow across more tools or interfaces."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does ZCode include a real agent harness?",
+          "answer": "Yes. The official project identifies ZCode as a coding-agent harness, and the repository includes the agent CLI and runtime alongside its application code. It is not merely a third-party skin around a model API."
+        },
+        {
+          "question": "Is ZCode only a desktop application?",
+          "answer": "No. The repository documents desktop, browser, and terminal interfaces. Check the selected interface’s requirements rather than assuming a configuration for one entry point works unchanged in another."
+        },
+        {
+          "question": "Who publishes the official ZCode repository?",
+          "answer": "The official repository is zai-org/ZCode under Z.ai. Community forks, including similarly named workbenches, should be identified by their own maintainers and changes rather than treated as the same official release."
+        },
+        {
+          "question": "What does the source license cover?",
+          "answer": "The repository is Apache-2.0 licensed. Third-party notices, model APIs, hosted services, and distribution-specific conditions still need separate review; the repository includes NOTICE.md for relevant project declarations."
+        },
+        {
+          "question": "Can model quality alone explain ZCode results?",
+          "answer": "No. Tool configuration, context assembly, the execution environment, and how changes are reviewed also affect the outcome. Compare the complete workflow for the task rather than treating the model name as the result."
+        },
+        {
+          "question": "Must I switch products to use these workflow ideas?",
+          "answer": "No. You can first use ZCode as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "ZCode — Agent 工作流构建与优化 | Floatboat",
+      "description": "参考 ZCode 的工作台与 Agent 运行时设计，优化自己工作流中的任务背景、执行反馈和人工审阅。结合公开源码与不同交互入口，评估适合 Floatboat 工作方式的组织机制。",
+      "kind": "编程工作台与 Harness",
+      "tags": [
+        "编程工作台",
+        "多种入口",
+        "开放运行时"
+      ],
+      "overviewTitle": "关于 ZCode",
+      "overview": [
+        "ZCode 是 Z.ai 的编程 Agent Harness 与开发工作台。官方仓库介绍桌面、浏览器和终端体验，包含客户端、后端服务、共享 UI、Agent CLI 与运行时源码，范围大于单个编辑器插件或任务指令。",
+        "它作为工作流参考的价值，在于界面、后端服务与 Agent 执行之间的关系。Floatboat 用户可以据此思考上下文从哪里进入、任务过程如何呈现，以及何时需要人工审阅操作；实际复用仍需单独验证集成方式。",
+        "公开源码采用 Apache-2.0，仓库另有项目声明说明运行和第三方事项。源码公开不能代替模型访问、托管服务条款或应用行为的具体判断，应结合所选版本阅读官方声明和发行说明。"
+      ],
+      "capabilitiesTitle": "值得借鉴的工作流机制",
+      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilities": [
+        {
+          "title": "区分界面与执行",
+          "description": "研究工作台的层次，明确流程中哪些部分负责收集背景，哪些负责执行任务。"
+        },
+        {
+          "title": "让任务过程可审阅",
+          "description": "参考应用组织方式，将 Agent 活动与用户作出判断所需的上下文一起呈现。"
+        },
+        {
+          "title": "研究完整系统关系",
+          "description": "评估流程模式时结合客户端、后端、CLI 与运行层理解，避免只复制孤立界面。"
+        }
+      ],
+      "scenariosTitle": "如何用于自己的工作流",
+      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
+      "scenarios": [
+        {
+          "title": "以任务为中心的工作区",
+          "description": "明确较长任务中原始资料、当前活动和预期交付物如何保持关联。"
+        },
+        {
+          "title": "人工审阅节点",
+          "description": "规划用户接受 Agent 修改或外部操作前，需要看到哪些证据和背景。"
+        },
+        {
+          "title": "跨入口的工作流",
+          "description": "同一工作可能通过不同界面查看时，研究状态与执行应分别由哪里承担。"
+        }
+      ],
+      "requirementsTitle": "从项目参考到工作流验证",
+      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
+      "requirements": [
+        {
+          "title": "梳理任务层次",
+          "description": "区分业务背景、用户交互、执行工具和需要审阅的结果。"
+        },
+        {
+          "title": "检查数据与执行边界",
+          "description": "结合项目声明与源码评估本地、远程以及接收任务资料的服务边界。"
+        },
+        {
+          "title": "验证审阅循环",
+          "description": "先验证一个任务从输入到可审阅结果的完整过程，再扩展工具与交互入口。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ZCode 是否包含 Agent Harness？",
+          "answer": "包含。官方将 ZCode 定位为编程 Agent Harness，仓库除应用代码外也包含 Agent CLI 与运行时，并非仅用于展示模型接口的界面。"
+        },
+        {
+          "question": "ZCode 只有桌面应用吗？",
+          "answer": "不是。仓库介绍桌面、浏览器和终端入口。应分别核对所选入口的要求，不能假设一种入口的配置可以原样应用到另一种。"
+        },
+        {
+          "question": "ZCode 官方仓库属于谁？",
+          "answer": "官方仓库为 Z.ai 组织下的 zai-org/ZCode。同名工作台或社区分支应注明各自维护者与改动，不能当作同一官方发行版。"
+        },
+        {
+          "question": "源码许可覆盖哪些内容？",
+          "answer": "仓库采用 Apache-2.0。第三方声明、模型 API、托管服务和发行版相关条件仍需单独核对，仓库的 NOTICE.md 提供了相关项目声明。"
+        },
+        {
+          "question": "只看模型能力就能判断 ZCode 效果吗？",
+          "answer": "不能。工具配置、上下文组织、执行环境和修改审阅方式都会影响结果，应结合完整任务流程比较，不能以模型名称代替实际效果。"
+        },
+        {
+          "question": "借鉴这些机制是否需要更换工作工具？",
+          "answer": "不需要。可以先将 ZCode 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+        }
+      ]
+    },
+    "licenseUrl": "https://github.com/zai-org/ZCode/blob/main/LICENSE"
+  }
+]

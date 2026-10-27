@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { PublisherDirectoryPage } from "@/components/skills/publisher-directory-page";
-import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
+import { getPublisherProfile, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
+
+import { buildPublisherMetadata } from "@/lib/skills/publisher-metadata";
 
 export const dynamicParams = false;
 
@@ -12,12 +14,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ author: string }> }): Promise<Metadata> {
   const { author } = await params;
-  const profile = getPublisherProfile(author);
-  if (!profile) return {};
-  const canonical = `https://floatboat.ai${publisherProfilePath("zh", author)}`;
-  const title = profile.zh.seoTitle;
-  const description = profile.zh.seoDescription;
-  return { title, description, alternates: { canonical, languages: { en: `https://floatboat.ai${publisherProfilePath("en", author)}`, zh: canonical } }, openGraph: { type: "website", title, description, url: canonical } };
+  return buildPublisherMetadata(author, "zh");
 }
 
 export default async function PublisherPage({ params }: { params: Promise<{ author: string }> }) {

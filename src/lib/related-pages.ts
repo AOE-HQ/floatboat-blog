@@ -4,15 +4,21 @@ import { ALL_FEATURED_SKILLS, FEATURED_SKILLS, skillPath } from "@/lib/skills/fe
 import { getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
 import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES, KNOWN_PUBLISHER_HANDLES } from "@/lib/skills/publisher-profiles";
 import { reviewedRelatedLinks } from "@/lib/reviewed-related-links";
+import { ALL_PROJECTS, PROJECTS, getProject, projectPath } from "@/lib/projects/project-pages";
 import { CORE_FEATURE_SLUGS, featurePath, getCoreFeaturePage, type CoreFeatureSlug } from "@/lib/landing/core-feature-pages";
 import { MODEL_FAMILIES, modelPath, type ModelSlug } from "@/lib/models/model-pages";
 import { getPersonaPage, personaPath, PERSONA_SLUGS, type PersonaSlug } from "@/lib/use-cases/persona-pages";
 
-export type RelatedFamily = keyof typeof relatedPages;
+export type RelatedFamily = keyof typeof relatedPages | "projects";
 export type RelatedLocale = "en" | "zh";
 
 const related = {
   ...relatedPages,
+  projects: {
+    heading: { en: "Related Agent Projects", zh: "相关 Agent 项目" },
+    description: { en: "Compare independent agents by their workflows, interfaces, and extension mechanisms.", zh: "从工作流、交互入口和扩展方式出发，继续了解其他独立 Agent 项目。" },
+    links: Object.fromEntries(ALL_PROJECTS.map((project) => [`${project.author}/${project.slug}`, project.related])),
+  },
   skills: { ...relatedPages.skills, links: { ...relatedPages.skills.links, ...additionalRelatedPages.skills } },
   publishers: { ...relatedPages.publishers, links: { ...relatedPages.publishers.links, ...additionalRelatedPages.publishers } },
   "skill-categories": { ...relatedPages["skill-categories"], links: { ...relatedPages["skill-categories"].links, ...additionalRelatedPages["skill-categories"] } },
@@ -23,6 +29,7 @@ const related = {
 }>;
 
 const knownIds: Record<RelatedFamily, string[]> = {
+  projects: PROJECTS.map((project) => `${project.author}/${project.slug}`),
   publishers: PUBLISHER_PROFILE_HANDLES,
   "use-cases": PERSONA_SLUGS,
   models: MODEL_FAMILIES.map((model) => model.slug),
@@ -33,6 +40,7 @@ const knownIds: Record<RelatedFamily, string[]> = {
 
 related.publishers.links = reviewedRelatedLinks(related.publishers.links, knownIds.publishers, KNOWN_PUBLISHER_HANDLES);
 related.skills.links = reviewedRelatedLinks(related.skills.links, knownIds.skills, ALL_FEATURED_SKILLS.map((skill) => `${skill.authorHandle}/${skill.slug}`));
+related.projects.links = reviewedRelatedLinks(related.projects.links, knownIds.projects, ALL_PROJECTS.map((project) => `${project.author}/${project.slug}`));
 
 function validateRelatedPages() {
   for (const family of Object.keys(related) as RelatedFamily[]) {
@@ -44,7 +52,7 @@ function validateRelatedPages() {
     }
     const incoming = new Map(ids.map((id) => [id, 0]));
     for (const [source, targets] of Object.entries(related[family].links)) {
-      const targetCount = family === "publishers" || family === "skills" ? Math.min(4, Math.max(0, ids.length - 1)) : 4;
+      const targetCount = family === "publishers" || family === "skills" || family === "projects" ? Math.min(4, Math.max(0, ids.length - 1)) : 4;
       if (targets.length !== targetCount || new Set(targets).size !== targetCount) {
         throw new Error(`Related ${family}/${source} must have four distinct targets`);
       }
@@ -70,6 +78,11 @@ validateRelatedPages();
 
 function resolveItem(family: RelatedFamily, id: string, locale: RelatedLocale) {
   switch (family) {
+    case "projects": {
+      const [author, slug] = id.split("/");
+      const project = getProject(author, slug)!;
+      return { label: project.name, href: projectPath(locale, author, slug) };
+    }
     case "publishers": {
       const profile = getPublisherProfile(id)!;
       return { label: profile.name, href: publisherProfilePath(locale, id) };
