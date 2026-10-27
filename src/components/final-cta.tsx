@@ -3,12 +3,11 @@ import Link from "next/link";
 type Action = { label: string; href: string };
 
 export function FinalCta({
-  eyebrow,
   title,
   description,
   primary,
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   description: string;
   primary: Action;
@@ -23,7 +22,7 @@ export function FinalCta({
   return (
     <section id="final-cta" className="px-5 pb-20 pt-10 sm:px-8 sm:pt-16">
       <div className="mx-auto max-w-6xl rounded-[36px] bg-[var(--ob-color-text)] px-6 py-14 text-center text-white sm:px-12 sm:py-20">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{eyebrow}</p>
+
         <h2 className="mx-auto mt-4 max-w-full text-balance font-serif text-3xl tracking-[-0.04em] sm:text-4xl lg:whitespace-nowrap lg:text-[2rem] xl:text-[2.375rem]">{title}</h2>
         <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/70">{description}</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">

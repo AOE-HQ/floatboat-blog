@@ -1,197 +1,2522 @@
 [
   {
-    "slug": "vercel-react-best-practices", "authorHandle": "vercel-labs", "name": "Vercel React Best Practices", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": { "en": "React · Performance guidance", "zh": "React · 性能实践" },
-    "seo": { "title": { "en": "Vercel React Best Practices Skill for React and Next.js", "zh": "Vercel React Best Practices：React 与 Next.js 性能 Skill" }, "description": { "en": "Explore the Vercel React Best Practices skill: when to use its prioritized performance rules, what it covers, and what still needs measurement.", "zh": "了解 Vercel React Best Practices Skill 如何按优先级检查 React、Next.js 性能，以及哪些结论仍需测量验证。" }, "keywords": { "en": ["vercel react best practices skill", "react performance skill", "next.js performance guidelines"], "zh": ["Vercel React Best Practices", "React 性能 Skill", "Next.js 性能优化 Skill"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · React performance", "zh": "Vercel Labs · React 性能" }, "title": { "en": "Vercel React Best Practices: fix the costly patterns first", "zh": "Vercel React Best Practices：先处理代价最高的性能问题" }, "description": { "en": "A rule-based Skill for writing and reviewing React or Next.js code. It prioritizes data waterfalls and bundle size before lower-impact micro-optimizations.", "zh": "用于编写和审查 React、Next.js 代码的规则型 Skill。它先关注数据请求瀑布和包体积，再处理影响较小的细节优化。" } },
-    "summary": { "en": "The source organizes React and Next.js performance rules into eight impact-ranked categories. That makes it useful for a focused review of fetching, bundles, server rendering, client state, and re-renders—not a substitute for profiling a real page.", "zh": "原始规则按影响程度分成八类，覆盖请求、包体积、服务端渲染、客户端数据和重渲染。适合做有重点的代码审查，但不能替代真实页面的性能测量。" },
+    "slug": "vercel-react-best-practices",
+    "authorHandle": "vercel-labs",
+    "name": "Vercel React Best Practices",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": {
+      "en": "React · Performance guidance",
+      "zh": "React · 性能实践"
+    },
+    "seo": {
+      "title": {
+        "en": "Vercel React Best Practices by Vercel Labs | Installation & Guide",
+        "zh": "Vercel React Best Practices by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use Vercel React Best Practices by Vercel Labs to write, review, and refactor React and Next.js code. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 Vercel React Best Practices，辅助编写、审查和重构 React 与 Next.js 代码。围绕数据请求、包体积、渲染和状态更新寻找改进方向，结合具体页面与交互，优先处理有实际影响的性能问题。"
+      },
+      "keywords": {
+        "en": [
+          "Vercel React Best Practices by Vercel Labs",
+          "vercel react best practices skill",
+          "react performance skill",
+          "next.js performance guidelines"
+        ],
+        "zh": [
+          "Vercel React Best Practices by Vercel Labs",
+          "Vercel React Best Practices",
+          "React 性能 Skill",
+          "Next.js 性能优化 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · React performance",
+        "zh": "Vercel Labs · React 性能"
+      },
+      "title": {
+        "en": "Vercel React Best Practices by Vercel Labs",
+        "zh": "Vercel React Best Practices by Vercel Labs"
+      },
+      "description": {
+        "en": "Use Vercel React Best Practices by Vercel Labs to write, review, and refactor React and Next.js code. Explore guidance for data fetching, bundle loading, rendering, and state updates, then focus your agent on the changes most relevant to the page or interaction you want to improve.",
+        "zh": "使用 Vercel Labs 的 Vercel React Best Practices，辅助编写、审查和重构 React 与 Next.js 代码。围绕数据请求、包体积、渲染和状态更新寻找改进方向，结合具体页面与交互，优先处理有实际影响的性能问题。"
+      }
+    },
+    "summary": {
+      "en": "The source organizes React and Next.js performance rules into eight impact-ranked categories. That makes it useful for a focused review of fetching, bundles, server rendering, client state, and re-renders—not a substitute for profiling a real page.",
+      "zh": "原始规则按影响程度分成八类，覆盖请求、包体积、服务端渲染、客户端数据和重渲染。适合做有重点的代码审查，但不能替代真实页面的性能测量。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-react-best-practices",
-    "pageCopy": { "kind": { "en": "Code-review and implementation Skill", "zh": "代码审查与实现 Skill" }, "installNote": { "en": "Installs the upstream Skill with the open Skills CLI; no Floatboat capability is implied.", "zh": "通过开放的 Skills CLI 安装上游 Skill，不代表 Floatboat 内置该能力。" }, "guideTitle": { "en": "Choose a performance rule by impact, not fashion", "zh": "按影响程度选择性能规则，而不是追逐技巧" }, "guideIntro": { "en": "The source ranks waterfalls and bundles above micro-optimizations. Tie each proposed edit to the page's actual fetch and render path.", "zh": "原始规则把请求瀑布和包体积放在小幅优化之前。每项修改都应对应具体页面的请求与渲染链路。" }, "ctaEyebrow": { "en": "Review the change", "zh": "复核改动" }, "ctaTitle": { "en": "Keep the performance question next to the code", "zh": "把性能问题和代码改动放在一起看" }, "ctaDescription": { "en": "Bring your React files and review notes into Floatboat, then verify the important claims with your own measurements.", "zh": "把 React 文件和审查意见放进 Floatboat，重要的性能结论仍需用项目数据验证。" } },
-    "sectionTitles": { "useCases": { "en": "When to use React Best Practices", "zh": "何时使用 React Best Practices" }, "useCasesDescription": { "en": "Use it when React code is being written, reviewed, or refactored and you need a prioritized checklist.", "zh": "编写、审查或重构 React 代码时，用它建立有优先级的检查清单。" }, "exclusions": { "en": "Where the Skill stops", "zh": "它无法直接解决什么" }, "how": { "en": "How the review moves from symptom to edit", "zh": "如何从性能症状走到代码修改" }, "howDescription": { "en": "The Skill directs attention to high-impact categories, then the agent inspects the relevant code path.", "zh": "先按高影响类别定位问题，再检查相关代码路径。" } },
+    "pageCopy": {
+      "kind": {
+        "en": "Code-review and implementation Skill",
+        "zh": "代码审查与实现 Skill"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for React Best Practices",
+        "zh": "React 性能优化的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore React and Next.js performance tasks where a prioritized review can guide the next change. Investigate chained requests, oversized client bundles, or repeated component work, and use the relevant rules to connect a visible symptom to code you can inspect and measure.",
+        "zh": "探索 React 与 Next.js 中适合开展性能审查的任务：页面请求串行、客户端加载过多代码，或组件反复执行计算。结合用户能感知的现象和已有测量，选择相关规则，明确下一步值得检查与验证的代码范围。"
+      },
+      "how": {
+        "en": "How to Improve React Performance",
+        "zh": "How to 优化 React 性能"
+      },
+      "howDescription": {
+        "en": "Start with one route, component, or interaction and explain the performance symptom to your agent. Use the Skill’s impact-ranked rules to inspect relevant code, make a focused change, and compare the same user path before and after implementation.",
+        "zh": "从一个路由、组件或具体交互开始，向 Agent 说明性能现象与已有测量。参考规则的影响排序检查相关代码，实施范围明确的修改，再沿相同用户路径核对行为与指标，判断改动是否有效。"
+      }
+    },
     "scenarios": [
-      { "label": { "en": "Fetch", "zh": "请求" }, "title": { "en": "A page loads data in a chain", "zh": "页面请求一个接一个" }, "body": { "en": "Review whether independent requests can run in parallel, or whether an await can move into the branch that actually needs it.", "zh": "检查独立请求是否能并行，以及 await 是否可以移到真正需要它的分支。" } },
-      { "label": { "en": "Bundle", "zh": "包体积" }, "title": { "en": "A client component ships too much code", "zh": "客户端组件加载过多代码" }, "body": { "en": "Trace broad imports, heavy modules, and third-party scripts before adding another loading indicator.", "zh": "先检查聚合导入、重型模块和第三方脚本，再决定是否需要加载提示。" } },
-      { "label": { "en": "Render", "zh": "渲染" }, "title": { "en": "A component repeats expensive work", "zh": "组件反复做昂贵计算" }, "body": { "en": "Inspect state placement, derived values, and re-render triggers before applying memoization everywhere.", "zh": "先找状态放置、派生值和重渲染触发点，不要在所有组件上盲目加 memo。" } }
+      {
+        "label": {
+          "en": "Fetch",
+          "zh": "请求"
+        },
+        "title": {
+          "en": "A page loads data in a chain",
+          "zh": "页面请求一个接一个"
+        },
+        "body": {
+          "en": "Review whether independent requests can run in parallel, or whether an await can move into the branch that actually needs it.",
+          "zh": "检查独立请求是否能并行，以及 await 是否可以移到真正需要它的分支。"
+        }
+      },
+      {
+        "label": {
+          "en": "Bundle",
+          "zh": "包体积"
+        },
+        "title": {
+          "en": "A client component ships too much code",
+          "zh": "客户端组件加载过多代码"
+        },
+        "body": {
+          "en": "Trace broad imports, heavy modules, and third-party scripts before adding another loading indicator.",
+          "zh": "先检查聚合导入、重型模块和第三方脚本，再决定是否需要加载提示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Render",
+          "zh": "渲染"
+        },
+        "title": {
+          "en": "A component repeats expensive work",
+          "zh": "组件反复做昂贵计算"
+        },
+        "body": {
+          "en": "Inspect state placement, derived values, and re-render triggers before applying memoization everywhere.",
+          "zh": "先找状态放置、派生值和重渲染触发点，不要在所有组件上盲目加 memo。"
+        }
+      }
     ],
-    "notFor": [ { "en": "A guaranteed Lighthouse score; rules need measurement on the target app.", "zh": "保证某个 Lighthouse 分数；规则必须在目标应用上测量验证。" }, { "en": "Non-React projects without a relevant React or Next.js code path.", "zh": "没有相关 React 或 Next.js 代码路径的项目。" } ],
-    "seoSections": [ { "title": { "en": "What does the React performance Skill cover?", "zh": "这个 React 性能 Skill 覆盖哪些问题？" }, "body": { "en": "Its eight groups span asynchronous waterfalls, bundle loading, server work, client fetching, re-renders, rendering, JavaScript cost, and advanced patterns. The categories are ordered so reviews start with likely larger wins.", "zh": "八组规则涵盖异步瀑布、包体积、服务端工作、客户端请求、重渲染、渲染过程、JavaScript 开销和进阶模式。排序的目的，是让审查先处理可能影响更大的问题。" } }, { "title": { "en": "Is it a profiler or an automatic speed fix?", "zh": "它是性能分析器或自动提速工具吗？" }, "body": { "en": "No. The SKILL.md provides instructions and references for an agent. It can suggest code changes, while before/after traces, network timings, and user-facing metrics must be checked in the project.", "zh": "不是。SKILL.md 向 Agent 提供规则与参考资料；它能提出修改建议，但前后对比、网络时序和用户指标仍要在项目中检验。" } } ],
-    "example": { "prompt": { "en": "Review this Next.js product page for request waterfalls and unnecessary client-side JavaScript. Rank the fixes and show the exact files.", "zh": "检查这个 Next.js 产品页有没有请求瀑布和不必要的客户端 JavaScript，按影响排序并指出具体文件。" }, "result": { "en": "A useful review identifies the request chain or import responsible, proposes bounded edits, and separates measured findings from hypotheses.", "zh": "合格的审查应指出具体请求链或导入，提出有限范围的修改，并区分已测量的问题与推测。" } },
-    "steps": [ { "title": { "en": "Identify the slow path", "zh": "找出慢路径" }, "body": { "en": "Name the page or interaction and gather a trace or reproducible symptom.", "zh": "锁定页面或交互，收集追踪结果或可复现的症状。" } }, { "title": { "en": "Apply the highest-impact rule", "zh": "先用高影响规则" }, "body": { "en": "Read the relevant rule and inspect only the code that contributes to that path.", "zh": "阅读相关规则，只检查影响该路径的代码。" } }, { "title": { "en": "Verify the result", "zh": "验证结果" }, "body": { "en": "Compare behavior and measurements after the change; do not call a stylistic rewrite a performance win.", "zh": "修改后比较行为和指标，不把风格改写当作性能收益。" } } ],
-    "outputs": { "en": ["A prioritized list of candidate fixes", "Code locations and rule references", "A measurement plan for the main changes"], "zh": ["按影响排序的候选修复", "对应代码位置与规则", "主要修改的测量计划"] },
-    "checks": { "en": ["Confirm React/Next.js version before using version-specific advice.", "Profile the affected route before and after edits.", "Keep behavior and accessibility intact."], "zh": ["使用版本相关建议前确认 React、Next.js 版本。", "修改前后测量受影响路由。", "保留原有行为与无障碍支持。"] },
-    "faq": [ { "question": { "en": "Is Vercel React Best Practices only for Next.js?", "zh": "Vercel React Best Practices 只能用于 Next.js 吗？" }, "answer": { "en": "No. Many rules concern React generally, while some sections address Next.js server rendering and routing. Apply only the rules that match your stack.", "zh": "不是。许多规则适用于 React 通用代码，部分章节针对 Next.js 服务端渲染和路由；只应用与当前技术栈匹配的规则。" } }, { "question": { "en": "Does it rewrite the whole app?", "zh": "它会重写整个应用吗？" }, "answer": { "en": "It is a set of instructions for an agent, not an autonomous refactoring service. Scope the request to the route or component you want reviewed.", "zh": "它是给 Agent 的指令集，不是自动重构服务。应明确要审查的路由或组件。" } }, { "question": { "en": "How do I know a recommendation helped?", "zh": "如何知道建议真的有效？" }, "answer": { "en": "Measure the same user path before and after. A rule match is a reason to investigate, not proof of a faster page.", "zh": "对同一用户路径做前后测量。命中规则代表值得调查，不等于页面已经变快。" } }, { "question": { "en": "Where are the original rules?", "zh": "原始规则在哪里？" }, "answer": { "en": "The source SKILL.md links individual rule files in Vercel Labs' agent-skills repository; this page links the original source.", "zh": "原始 SKILL.md 位于 Vercel Labs 的 agent-skills 仓库，并指向各条规则文件；本页可直接打开来源。" } } ]
+    "example": {
+      "prompt": {
+        "en": "Review this Next.js product page for request waterfalls and unnecessary client-side JavaScript. Rank the fixes and show the exact files.",
+        "zh": "检查这个 Next.js 产品页有没有请求瀑布和不必要的客户端 JavaScript，按影响排序并指出具体文件。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Define the performance issue",
+          "zh": "明确性能问题"
+        },
+        "body": {
+          "en": "Identify the route or interaction and provide a reproducible symptom. Include a trace, network timing, or bundle report when available.",
+          "zh": "指定路由或交互，说明可复现的性能现象。有追踪、网络时序或包体积报告时，一并交给 Agent。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review the relevant rules",
+          "zh": "检查相关规则"
+        },
+        "body": {
+          "en": "Ask the agent to inspect the code using the matching impact-ranked categories. Read the proposed changes before applying them to the selected path.",
+          "zh": "让 Agent 按匹配的规则类别检查代码，并参考影响排序确定重点。核对建议后，再修改选定路径。"
+        }
+      },
+      {
+        "title": {
+          "en": "Compare behavior and metrics",
+          "zh": "比较行为与指标"
+        },
+        "body": {
+          "en": "Repeat the same user path after the change. Check correctness alongside loading, interaction, or bundle measurements.",
+          "zh": "修改后重复同一条用户路径。同时检查功能正确性，以及加载、交互或包体积指标。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Is Vercel React Best Practices only for Next.js?",
+          "zh": "Vercel React Best Practices 只能用于 Next.js 吗？"
+        },
+        "answer": {
+          "en": "No. Many rules concern React generally, while some sections address Next.js server rendering and routing. Apply only the rules that match your stack.",
+          "zh": "不是。许多规则适用于 React 通用代码，部分章节针对 Next.js 服务端渲染和路由；只应用与当前技术栈匹配的规则。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it rewrite the whole app?",
+          "zh": "它会重写整个应用吗？"
+        },
+        "answer": {
+          "en": "It is a set of instructions for an agent, not an autonomous refactoring service. Scope the request to the route or component you want reviewed.",
+          "zh": "它是给 Agent 的指令集，不是自动重构服务。应明确要审查的路由或组件。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I know a recommendation helped?",
+          "zh": "如何知道建议真的有效？"
+        },
+        "answer": {
+          "en": "Measure the same user path before and after. A rule match is a reason to investigate, not proof of a faster page.",
+          "zh": "对同一用户路径做前后测量。命中规则代表值得调查，不等于页面已经变快。"
+        }
+      },
+      {
+        "question": {
+          "en": "Where are the original rules?",
+          "zh": "原始规则在哪里？"
+        },
+        "answer": {
+          "en": "The source SKILL.md links individual rule files in Vercel Labs' agent-skills repository; this page links the original source.",
+          "zh": "原始 SKILL.md 位于 Vercel Labs 的 agent-skills 仓库，并指向各条规则文件；本页可直接打开来源。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which performance issue should I investigate first?",
+          "zh": "应该先排查哪一种性能问题？"
+        },
+        "answer": {
+          "en": "Start with a measured user-visible bottleneck, such as a request waterfall or slow interaction. Use the impact ranking to choose an investigation, then compare the same scenario before and after the change.",
+          "zh": "先选一个有测量依据、用户能感知的问题，例如请求瀑布或交互延迟，再参考规则的影响排序定位原因，并在相同场景下比较修改前后。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can a rule be applied on either side of a server/client boundary?",
+          "zh": "服务端与客户端可以套用相同规则吗？"
+        },
+        "answer": {
+          "en": "Check where the code executes before changing data fetching or state. A server-rendering recommendation and a client interaction recommendation solve different problems, even when both involve the same component.",
+          "zh": "修改请求或状态逻辑前先确认代码在哪里执行。服务端渲染与客户端交互的优化目标不同，涉及同一个组件也不能直接互换做法。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I provide for a useful performance review?",
+          "zh": "开始性能审查前需要提供什么？"
+        },
+        "answer": {
+          "en": "Provide the route or component files, your React and Next.js versions, a reproducible symptom, and any available traces or bundle reports. Those inputs help the agent choose relevant rules and give you a baseline for checking the change.",
+          "zh": "提供路由或组件文件、React 与 Next.js 版本、可复现的现象，以及已有追踪或包体积报告。这些信息能帮助 Agent 选择适用规则，并为修改后的对比提供基线。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Review React and Next.js code against prioritized rules for data fetching, bundle size, rendering, and runtime performance.",
+      "zh": "按优先级审查 React 与 Next.js 代码，检查数据请求、包体积、渲染与运行性能。"
+    },
+    "overview": {
+      "en": {
+        "title": "About Vercel React Best Practices",
+        "paragraphs": [
+          "Vercel React Best Practices is an Agent Skill published in Vercel Labs’ agent-skills repository for reviewing React and Next.js performance patterns. Its rules cover request waterfalls, bundle loading, server work, client fetching, re-renders, rendering, JavaScript cost, and advanced patterns. The impact ranking helps an agent decide which code paths deserve attention first. Individual rule files provide explanations and implementation examples for a focused change. Give the agent the relevant route or component and the behavior you want to improve; use measurements from your project to judge the result. Installing the Skill adds guidance to the agent, while code changes and performance checks take place in your application."
+        ]
+      },
+      "zh": {
+        "title": "关于 Vercel React Best Practices",
+        "paragraphs": [
+          "Vercel React Best Practices 是 Vercel Labs 在 agent-skills 仓库中发布的 Agent Skill，为 React 与 Next.js 代码提供按影响程度排序的性能规则。内容涵盖请求瀑布、包体积、服务端工作、客户端数据获取、重渲染、渲染过程与 JavaScript 开销，帮助 Agent 决定先检查哪些路径。各条规则附有解释与实现示例，适合围绕具体路由或组件开展审查和重构。使用时应说明待改进的页面、交互与现有表现，再把建议对应到代码。安装 Skill 获得的是操作指引；修改是否有效，需要通过项目中的行为验证和前后测量来判断。"
+        ]
+      }
+    }
   },
   {
-    "slug": "vercel-composition-patterns", "authorHandle": "vercel-labs", "name": "Vercel Composition Patterns", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/composition-patterns/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": { "en": "React · Component architecture", "zh": "React · 组件架构" },
-    "seo": { "title": { "en": "Vercel Composition Patterns Skill for React Components", "zh": "Vercel Composition Patterns：React 组件组合模式 Skill" }, "description": { "en": "Learn how Vercel Composition Patterns guides React component API design, compound components, and state placement without boolean-prop overload.", "zh": "了解 Vercel Composition Patterns 如何指导 React 组件 API、复合组件与状态放置，避免布尔属性不断膨胀。" }, "keywords": { "en": ["vercel composition patterns skill", "react compound components skill", "react component architecture"], "zh": ["Vercel Composition Patterns", "React 复合组件 Skill", "React 组件架构"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · Component design", "zh": "Vercel Labs · 组件设计" }, "title": { "en": "Vercel Composition Patterns: fewer switches, clearer components", "zh": "Vercel Composition Patterns：少一点开关，多一点清晰组合" }, "description": { "en": "This Skill helps redesign React components whose behavior is controlled by a growing list of boolean props. Its focus is composition, shared context, and explicit variants.", "zh": "当 React 组件越来越依赖布尔属性控制行为时，这个 Skill 引导你改用组合、共享上下文与明确的变体。" } },
-    "summary": { "en": "The source favors compound components and provider-owned state over prop combinations that multiply. It is most useful while designing a component library or untangling a component whose API is hard to reason about.", "zh": "原始规则主张用复合组件和 Provider 管理状态，而非让属性组合无限增加。它适合设计组件库，或梳理 API 已经难以理解的组件。" },
+    "slug": "vercel-composition-patterns",
+    "authorHandle": "vercel-labs",
+    "name": "Vercel Composition Patterns",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/composition-patterns/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": {
+      "en": "React · Component architecture",
+      "zh": "React · 组件架构"
+    },
+    "seo": {
+      "title": {
+        "en": "Vercel Composition Patterns by Vercel Labs | Installation & Guide",
+        "zh": "Vercel Composition Patterns by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use Vercel Composition Patterns by Vercel Labs to design clearer React component APIs. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 Vercel Composition Patterns，梳理 React 组件 API 与共享状态。针对不断增加的布尔属性、复杂变体和组件库扩展需求，探索复合组件、Provider 与明确变体，让组件结构更贴近实际调用方式。"
+      },
+      "keywords": {
+        "en": [
+          "Vercel Composition Patterns by Vercel Labs",
+          "vercel composition patterns skill",
+          "react compound components skill",
+          "react component architecture"
+        ],
+        "zh": [
+          "Vercel Composition Patterns by Vercel Labs",
+          "Vercel Composition Patterns",
+          "React 复合组件 Skill",
+          "React 组件架构"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · Component design",
+        "zh": "Vercel Labs · 组件设计"
+      },
+      "title": {
+        "en": "Vercel Composition Patterns by Vercel Labs",
+        "zh": "Vercel Composition Patterns by Vercel Labs"
+      },
+      "description": {
+        "en": "Use Vercel Composition Patterns by Vercel Labs to design clearer React component APIs. Review components with growing boolean props, coordinate shared state through providers, and introduce compound components or explicit variants that fit the way your application and component library are actually used.",
+        "zh": "使用 Vercel Labs 的 Vercel Composition Patterns，梳理 React 组件 API 与共享状态。针对不断增加的布尔属性、复杂变体和组件库扩展需求，探索复合组件、Provider 与明确变体，让组件结构更贴近实际调用方式。"
+      }
+    },
+    "summary": {
+      "en": "The source favors compound components and provider-owned state over prop combinations that multiply. It is most useful while designing a component library or untangling a component whose API is hard to reason about.",
+      "zh": "原始规则主张用复合组件和 Provider 管理状态，而非让属性组合无限增加。它适合设计组件库，或梳理 API 已经难以理解的组件。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-composition-patterns",
-    "pageCopy": { "kind": { "en": "React architecture Skill", "zh": "React 架构 Skill" }, "installNote": { "en": "This is the upstream Skill installation command, not a Floatboat installer.", "zh": "这是上游 Skill 的安装命令，不是 Floatboat 安装器。" }, "guideTitle": { "en": "Decide what callers should compose", "zh": "先确定调用方需要组合什么" }, "guideIntro": { "en": "A better API exposes meaningful parts. The pattern choice should follow how the component is used, not a blanket ban on booleans.", "zh": "更好的 API 应暴露有意义的部件。模式选择要看组件如何被使用，而不是机械禁止所有布尔属性。" }, "ctaEyebrow": { "en": "Work through the refactor", "zh": "推进重构" }, "ctaTitle": { "en": "Keep the component contract visible during refactoring", "zh": "重构时让组件契约始终可见" }, "ctaDescription": { "en": "Bring the component, its call sites, and design constraints into one Floatboat task before changing the public API.", "zh": "修改公共 API 前，把组件、调用位置和设计约束放进同一个 Floatboat 任务。" } },
-    "sectionTitles": { "useCases": { "en": "Where composition patterns help", "zh": "哪些组件值得重新设计" }, "useCasesDescription": { "en": "Use this Skill when the component API has become difficult to use or extend.", "zh": "当组件 API 难用、难扩展时再用它，而不是为每个简单组件增加抽象。" }, "exclusions": { "en": "Cases that do not need this refactor", "zh": "不必为此重构的情况" }, "how": { "en": "How to reshape a component API", "zh": "如何重新组织组件 API" }, "howDescription": { "en": "Start from real call sites, identify stable parts, then move shared behavior behind an explicit interface.", "zh": "从真实调用位置出发，找出稳定部件，再把共享行为放进明确的接口。" } },
-    "scenarios": [ { "label": { "en": "Variants", "zh": "变体" }, "title": { "en": "A dialog has too many boolean modes", "zh": "弹窗有太多布尔模式" }, "body": { "en": "Replace combinations like compact, confirm, destructive, and showFooter with named compositions where behavior is visible at the call site.", "zh": "把 compact、confirm、destructive、showFooter 等属性组合改成有名称的组件组合，让调用方看得出行为。" } }, { "label": { "en": "State", "zh": "状态" }, "title": { "en": "Sibling controls need the same state", "zh": "兄弟控件需要共享状态" }, "body": { "en": "Place the state and actions in a provider rather than threading them through every intermediate component.", "zh": "把状态与操作集中到 Provider，而不是逐层传给所有中间组件。" } }, { "label": { "en": "Library", "zh": "组件库" }, "title": { "en": "Consumers need controlled flexibility", "zh": "组件库使用者需要可控的灵活性" }, "body": { "en": "Expose compound parts or explicit variants so consumers can assemble layouts without reimplementing internals.", "zh": "提供复合部件或明确变体，让使用者能组合布局，同时不必重新实现内部逻辑。" } } ],
-    "notFor": [ { "en": "A small component with one clear behavior and no API pressure.", "zh": "行为单一、接口清楚且没有扩展压力的小组件。" }, { "en": "A performance audit; composition can clarify APIs without making rendering faster.", "zh": "性能审查；组合模式能让 API 更清晰，但不保证渲染更快。" } ],
-    "seoSections": [ { "title": { "en": "What is the boolean-prop problem?", "zh": "布尔属性过多会带来什么问题？" }, "body": { "en": "Each new switch can interact with existing switches, creating undocumented combinations. The Skill recommends making meaningful variants explicit or letting callers assemble compound parts.", "zh": "每增加一个开关，都可能与已有开关产生新的组合。这个 Skill 建议把有意义的变体写明，或让调用方组合复合部件。" } }, { "title": { "en": "Does it require React 19?", "zh": "必须使用 React 19 吗？" }, "body": { "en": "Most composition guidance is general React architecture. The source marks React 19-specific API advice separately; skip that section for React 18 or earlier.", "zh": "大部分组合建议属于通用 React 架构。原文单独标记了 React 19 API 建议；React 18 及更早版本应跳过那部分。" } } ],
-    "example": { "prompt": { "en": "Refactor this Modal with six boolean props into an API that supports confirm and edit flows without surprising combinations.", "zh": "把这个带六个布尔属性的 Modal 重构成能支持确认和编辑流程、又不会出现意外组合的 API。" }, "result": { "en": "A useful proposal shows the new public API, one migrated call site, state ownership, and what happens to existing uses.", "zh": "合格方案应展示新公共 API、一个迁移后的调用示例、状态归属，以及旧用法如何处理。" } },
-    "steps": [ { "title": { "en": "Inspect actual callers", "zh": "检查真实调用方" }, "body": { "en": "List the combinations that exist today and those that should not be possible.", "zh": "列出现有属性组合，以及本不应该存在的组合。" } }, { "title": { "en": "Choose parts and state owner", "zh": "确定部件与状态归属" }, "body": { "en": "Use compound components or explicit variants; keep the provider responsible for shared state.", "zh": "使用复合组件或明确变体，让 Provider 负责共享状态。" } }, { "title": { "en": "Migrate representative uses", "zh": "迁移代表性用法" }, "body": { "en": "Convert common and edge call sites before removing the old API.", "zh": "先迁移常见和边缘调用，再移除旧接口。" } } ],
-    "outputs": { "en": ["A smaller, legible component API", "Explicit state ownership", "Representative migration examples"], "zh": ["更小、更清晰的组件 API", "明确的状态归属", "有代表性的迁移示例"] },
-    "checks": { "en": ["Do existing callers depend on undocumented combinations?", "Are the new parts understandable without reading implementation?", "Is React 19-only advice applicable?"], "zh": ["现有调用是否依赖未文档化的属性组合？", "不读实现代码也能看懂新部件吗？", "React 19 专属建议适用于当前项目吗？"] },
-    "faq": [ { "question": { "en": "What are compound components?", "zh": "什么是复合组件？" }, "answer": { "en": "They expose related parts under a shared component API, often with context to coordinate state, so callers can assemble the structure they need.", "zh": "它把相关部件放在同一套组件 API 下，通常通过上下文协调状态，让调用方按需要组合结构。" } }, { "question": { "en": "Should every boolean prop be removed?", "zh": "所有布尔属性都要删除吗？" }, "answer": { "en": "No. The concern is proliferating behavior modes and unclear combinations. A simple flag can remain if it keeps the API clear.", "zh": "不用。问题在于行为模式膨胀和组合含义不清；如果一个简单开关依然清楚，就无需强行移除。" } }, { "question": { "en": "Will this Skill improve runtime performance?", "zh": "这个 Skill 会提升运行性能吗？" }, "answer": { "en": "Its main goal is maintainable component architecture. Measure separately if performance is the reason for the refactor.", "zh": "它主要解决组件架构的可维护性。如果重构目的是性能提升，仍需单独测量。" } }, { "question": { "en": "Can React 18 projects use it?", "zh": "React 18 项目可以用吗？" }, "answer": { "en": "Yes for the general patterns; the source explicitly separates React 19-only guidance, which should not be applied to older versions.", "zh": "通用模式可以使用；原文单独标记了 React 19 专属建议，旧版本不应套用。" } } ]
+    "pageCopy": {
+      "kind": {
+        "en": "React architecture Skill",
+        "zh": "React 架构 Skill"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for React Composition Patterns",
+        "zh": "React 组件组合的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore component design tasks where existing props and state relationships make changes difficult. Use the Skill to review complex dialogs, related controls sharing state, or a reusable library whose consumers need flexible layouts without depending on internal implementation details.",
+        "zh": "探索组件属性与状态关系已经影响扩展的设计任务，例如模式过多的弹窗、共享状态的多个控件，或需要开放布局能力的组件库。围绕实际调用需求，判断复合组件、Provider 和明确变体分别适合解决哪些问题。"
+      },
+      "how": {
+        "en": "How to Design React Component APIs",
+        "zh": "How to 设计 React 组件 API"
+      },
+      "howDescription": {
+        "en": "Review the component together with representative call sites, then ask the agent to identify confusing prop combinations and state ownership. Choose an appropriate composition pattern, migrate a small set of uses, and verify behavior before expanding the new API.",
+        "zh": "把组件和代表性调用一起交给 Agent，找出含义不清的属性组合与状态归属。根据实际需求选择组合模式，先迁移少量常见和边缘用法，验证交互与接口后再扩大范围。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Variants",
+          "zh": "变体"
+        },
+        "title": {
+          "en": "A dialog has too many boolean modes",
+          "zh": "弹窗有太多布尔模式"
+        },
+        "body": {
+          "en": "Replace combinations like compact, confirm, destructive, and showFooter with named compositions where behavior is visible at the call site.",
+          "zh": "把 compact、confirm、destructive、showFooter 等属性组合改成有名称的组件组合，让调用方看得出行为。"
+        }
+      },
+      {
+        "label": {
+          "en": "State",
+          "zh": "状态"
+        },
+        "title": {
+          "en": "Sibling controls need the same state",
+          "zh": "兄弟控件需要共享状态"
+        },
+        "body": {
+          "en": "Place the state and actions in a provider rather than threading them through every intermediate component.",
+          "zh": "把状态与操作集中到 Provider，而不是逐层传给所有中间组件。"
+        }
+      },
+      {
+        "label": {
+          "en": "Library",
+          "zh": "组件库"
+        },
+        "title": {
+          "en": "Consumers need controlled flexibility",
+          "zh": "组件库使用者需要可控的灵活性"
+        },
+        "body": {
+          "en": "Expose compound parts or explicit variants so consumers can assemble layouts without reimplementing internals.",
+          "zh": "提供复合部件或明确变体，让使用者能组合布局，同时不必重新实现内部逻辑。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Refactor this Modal with six boolean props into an API that supports confirm and edit flows without surprising combinations.",
+        "zh": "把这个带六个布尔属性的 Modal 重构成能支持确认和编辑流程、又不会出现意外组合的 API。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Inspect components and callers",
+          "zh": "检查组件与调用方"
+        },
+        "body": {
+          "en": "Share the component and representative uses. Identify unclear combinations and the variations your callers actually need.",
+          "zh": "提供组件与代表性调用。找出含义不清的属性组合，并列出调用方真正需要的变化。"
+        }
+      },
+      {
+        "title": {
+          "en": "Design the composition",
+          "zh": "设计组合方式"
+        },
+        "body": {
+          "en": "Ask the agent to propose compound parts, explicit variants, or a provider for shared state. Check React-version requirements before choosing APIs.",
+          "zh": "让 Agent 提议复合部件、明确变体或共享状态 Provider。选择具体 API 前先核对 React 版本要求。"
+        }
+      },
+      {
+        "title": {
+          "en": "Migrate and verify callers",
+          "zh": "迁移并验证调用"
+        },
+        "body": {
+          "en": "Move common and edge cases to the proposed interface. Verify interactions and keep remaining callers working during migration.",
+          "zh": "将常见和边缘用法迁移到新接口。验证交互，并在迁移期间保持其余调用正常工作。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What are compound components?",
+          "zh": "什么是复合组件？"
+        },
+        "answer": {
+          "en": "They expose related parts under a shared component API, often with context to coordinate state, so callers can assemble the structure they need.",
+          "zh": "它把相关部件放在同一套组件 API 下，通常通过上下文协调状态，让调用方按需要组合结构。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should every boolean prop be removed?",
+          "zh": "所有布尔属性都要删除吗？"
+        },
+        "answer": {
+          "en": "No. The concern is proliferating behavior modes and unclear combinations. A simple flag can remain if it keeps the API clear.",
+          "zh": "不用。问题在于行为模式膨胀和组合含义不清；如果一个简单开关依然清楚，就无需强行移除。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will this Skill improve runtime performance?",
+          "zh": "这个 Skill 会提升运行性能吗？"
+        },
+        "answer": {
+          "en": "Its main goal is maintainable component architecture. Measure separately if performance is the reason for the refactor.",
+          "zh": "它主要解决组件架构的可维护性。如果重构目的是性能提升，仍需单独测量。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can React 18 projects use it?",
+          "zh": "React 18 项目可以用吗？"
+        },
+        "answer": {
+          "en": "Yes for the general patterns; the source explicitly separates React 19-only guidance, which should not be applied to older versions.",
+          "zh": "通用模式可以使用；原文单独标记了 React 19 专属建议，旧版本不应套用。"
+        }
+      },
+      {
+        "question": {
+          "en": "How can an existing component be migrated gradually?",
+          "zh": "已有组件如何逐步迁移？"
+        },
+        "answer": {
+          "en": "Choose one confusing combination of props and give it a clear composed alternative. Keep existing callers working while you validate the new API, rather than redesigning the whole component library at once.",
+          "zh": "先挑一个难以理解的属性组合，提供语义清楚的组合方式，并保持旧调用仍可工作。验证新接口后再扩大范围，不必一次重写整个组件库。"
+        }
+      },
+      {
+        "question": {
+          "en": "When is shared context unnecessary?",
+          "zh": "什么时候不需要引入共享 Context？"
+        },
+        "answer": {
+          "en": "If a value is used by only one direct child, an ordinary prop may be clearer. Provider-owned state helps when several related components genuinely need a shared contract, not simply because composition is available.",
+          "zh": "如果某个值只传给一个直接子组件，普通属性通常更清晰。只有多个相关组件确实需要共享状态契约时，才有必要引入 Provider。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which files should I include in a component API review?",
+          "zh": "组件 API 审查应提供哪些文件？"
+        },
+        "answer": {
+          "en": "Include the component, its state provider if present, and several real callers. Add the React version and the combinations that are difficult to maintain, so the agent can propose an API that supports actual use.",
+          "zh": "提供组件、已有状态 Provider 和几个真实调用方，并注明 React 版本及难以维护的属性组合，让 Agent 围绕实际用途设计接口。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Design clearer React component APIs using compound components, composition, and provider-managed state instead of growing prop combinations.",
+      "zh": "通过复合组件、组合模式与 Provider 状态管理，简化 React 组件接口和复杂属性组合。"
+    },
+    "overview": {
+      "en": {
+        "title": "About Vercel Composition Patterns",
+        "paragraphs": [
+          "Vercel Composition Patterns is an Agent Skill for designing and refactoring reusable React components. It focuses on component APIs whose behavior has become difficult to understand as props and modes accumulate. The guidance covers compound components, provider-owned state, explicit variants, and composition through children. An agent can use these patterns to inspect existing callers, separate shared behavior from presentation, and propose a clearer interface. The source also includes React 19-specific API guidance, which needs to be checked against the project’s version. Use the Skill around a component with real call sites, and validate those uses as the API changes."
+        ]
+      },
+      "zh": {
+        "title": "关于 Vercel Composition Patterns",
+        "paragraphs": [
+          "Vercel Composition Patterns 是 Vercel Labs 发布的 React 组件设计与重构 Skill，重点处理属性和行为模式不断增加后难以理解的组件 API。它介绍复合组件、由 Provider 管理的共享状态、明确变体，以及通过 children 组织结构的方式，帮助 Agent 从真实调用出发，区分共享行为与界面表现，提出更清晰的接口。原始规则还包含 React 19 专属 API 建议，使用时需要对应项目版本。它适合组件库设计和已有复杂组件的整理；实施时应检查代表性调用，逐步迁移并验证交互，避免只为采用某种模式而增加抽象。"
+        ]
+      }
+    }
   },
   {
-    "slug": "vercel-react-native-skills", "authorHandle": "vercel-labs", "name": "Vercel React Native Skills", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-native-skills/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": { "en": "React Native · Mobile performance", "zh": "React Native · 移动端性能" },
-    "seo": { "title": { "en": "Vercel React Native Skills for Expo and Mobile Apps", "zh": "Vercel React Native Skills：Expo 与移动应用实践" }, "description": { "en": "See how Vercel's React Native Skill prioritizes list performance, animations, navigation, images, and native-platform patterns.", "zh": "了解 Vercel React Native Skill 如何检查列表性能、动画、导航、图片和原生平台模式。" }, "keywords": { "en": ["vercel react native skills", "expo performance skill", "react native agent skill"], "zh": ["Vercel React Native Skills", "Expo 性能 Skill", "React Native Agent Skill"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · Mobile UI", "zh": "Vercel Labs · 移动端 UI" }, "title": { "en": "React Native Skills: review the mobile bottlenecks", "zh": "React Native Skills：检查真正影响移动端体验的瓶颈" }, "description": { "en": "A React Native and Expo guidance Skill with priority on large lists, animation, navigation, media, and platform-specific choices.", "zh": "面向 React Native 与 Expo 的指导型 Skill，优先关注大列表、动画、导航、媒体和平台差异。" } },
-    "summary": { "en": "The source is a prioritized collection of mobile rules. It is particularly helpful where web-oriented React advice misses native list virtualization, gesture performance, safe areas, or image handling.", "zh": "原始文件按优先级整理移动端规则。面对列表虚拟化、手势性能、安全区域或图片处理时，普通 Web React 建议往往不够，这个 Skill 更对题。" },
+    "slug": "vercel-react-native-skills",
+    "authorHandle": "vercel-labs",
+    "name": "Vercel React Native Skills",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-native-skills/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": {
+      "en": "React Native · Mobile performance",
+      "zh": "React Native · 移动端性能"
+    },
+    "seo": {
+      "title": {
+        "en": "Vercel React Native Skills by Vercel Labs | Installation & Guide",
+        "zh": "Vercel React Native Skills by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use Vercel React Native Skills by Vercel Labs to build and review React Native and Expo interfaces. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 Vercel React Native Skills，辅助构建与审查 React Native 和 Expo 界面。围绕长列表、动画、导航、图片和原生依赖选择适用规则，结合具体页面与目标设备，检查影响移动端体验的实现。"
+      },
+      "keywords": {
+        "en": [
+          "Vercel React Native Skills by Vercel Labs",
+          "vercel react native skills",
+          "expo performance skill",
+          "react native agent skill"
+        ],
+        "zh": [
+          "Vercel React Native Skills by Vercel Labs",
+          "Vercel React Native Skills",
+          "Expo 性能 Skill",
+          "React Native Agent Skill"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · Mobile UI",
+        "zh": "Vercel Labs · 移动端 UI"
+      },
+      "title": {
+        "en": "Vercel React Native Skills by Vercel Labs",
+        "zh": "Vercel React Native Skills by Vercel Labs"
+      },
+      "description": {
+        "en": "Use Vercel React Native Skills by Vercel Labs to build and review React Native and Expo interfaces. Explore guidance for long lists, animations, navigation, images, and native dependencies, then apply the relevant patterns to a screen and verify its behavior on your target devices.",
+        "zh": "使用 Vercel Labs 的 Vercel React Native Skills，辅助构建与审查 React Native 和 Expo 界面。围绕长列表、动画、导航、图片和原生依赖选择适用规则，结合具体页面与目标设备，检查影响移动端体验的实现。"
+      }
+    },
+    "summary": {
+      "en": "The source is a prioritized collection of mobile rules. It is particularly helpful where web-oriented React advice misses native list virtualization, gesture performance, safe areas, or image handling.",
+      "zh": "原始文件按优先级整理移动端规则。面对列表虚拟化、手势性能、安全区域或图片处理时，普通 Web React 建议往往不够，这个 Skill 更对题。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-react-native-skills",
-    "pageCopy": { "kind": { "en": "Mobile implementation and review Skill", "zh": "移动端实现与审查 Skill" }, "installNote": { "en": "Install through the upstream Skills CLI; this page does not install a mobile runtime.", "zh": "通过上游 Skills CLI 安装指令；本页不会安装移动端运行环境。" }, "guideTitle": { "en": "Mobile rules should follow the bottleneck", "zh": "按移动端瓶颈选择规则" }, "guideIntro": { "en": "The source ranks list work above cosmetic tweaks. Check the device and interaction before choosing a pattern.", "zh": "原文把列表性能放在细节美化之前。先明确设备与交互，再选择合适模式。" }, "ctaEyebrow": { "en": "Review mobile work", "zh": "复核移动端工作" }, "ctaTitle": { "en": "Keep device constraints beside your code review", "zh": "让设备约束和代码审查保持在一起" }, "ctaDescription": { "en": "Use Floatboat to work through the screen, device symptoms, and proposed changes; validate the result on real target devices.", "zh": "在 Floatboat 中整理页面、设备症状和修改建议，再到目标设备上验证结果。" } },
-    "sectionTitles": { "useCases": { "en": "When the React Native Skill helps", "zh": "React Native Skill 适用场景" }, "useCasesDescription": { "en": "Use mobile-specific rules when a screen's behavior depends on device rendering or native APIs.", "zh": "当界面表现依赖设备渲染或原生 API 时，应使用移动端专属规则。" }, "exclusions": { "en": "What it does not replace", "zh": "它不能替代什么" }, "how": { "en": "How to investigate a mobile screen", "zh": "如何调查移动端界面" }, "howDescription": { "en": "Move from a reproduced device symptom to a relevant rule and a bounded change.", "zh": "从设备上复现的症状出发，选择相关规则并做有限修改。" } },
-    "scenarios": [ { "label": { "en": "Lists", "zh": "列表" }, "title": { "en": "Scrolling drops frames", "zh": "滚动时掉帧" }, "body": { "en": "Inspect virtualization, item rendering, callback stability, and images before rewriting the whole screen.", "zh": "先检查虚拟列表、条目渲染、回调稳定性与图片，不急着重写整个页面。" } }, { "label": { "en": "Motion", "zh": "动效" }, "title": { "en": "Gestures feel delayed", "zh": "手势响应迟缓" }, "body": { "en": "Review whether an animation uses compositor-friendly properties and appropriate gesture primitives.", "zh": "核对动画是否使用适合 GPU 的属性，以及手势是否采用合适的原语。" } }, { "label": { "en": "Platform", "zh": "平台" }, "title": { "en": "A screen behaves differently on iOS and Android", "zh": "同一页面在 iOS 与 Android 表现不同" }, "body": { "en": "Check safe areas, native navigation, images, fonts, and platform APIs instead of assuming web layout behavior.", "zh": "检查安全区域、原生导航、图片、字体和平台 API，不把网页布局经验直接套过去。" } } ],
-    "notFor": [ { "en": "A browser-only React application; use React web guidance instead.", "zh": "纯浏览器 React 应用；应优先使用 Web React 指南。" }, { "en": "Proof that a screen performs well on every device; device testing is still required.", "zh": "证明页面在所有设备上都流畅；仍需要设备测试。" } ],
-    "seoSections": [ { "title": { "en": "How is this different from React Best Practices?", "zh": "它和 React Best Practices 有什么不同？" }, "body": { "en": "This Skill addresses native and Expo decisions: virtualized lists, gestures, safe areas, native navigation, image handling, and native module structure. The web-focused React Skill emphasizes data waterfalls and browser bundles.", "zh": "这个 Skill 处理原生与 Expo 特有问题：虚拟列表、手势、安全区域、原生导航、图片和原生模块结构。Web 版 React Skill 则更关注请求瀑布与浏览器包体积。" } }, { "title": { "en": "Does it include Expo-specific advice?", "zh": "是否包含 Expo 的具体建议？" }, "body": { "en": "Yes. The source references Expo image handling and mobile configuration alongside general React Native patterns. Verify package and SDK versions before adopting a recommendation.", "zh": "包含。原文除了 React Native 通用模式，也涉及 Expo 图片处理与移动端配置。采用建议前需要核对依赖包和 SDK 版本。" } } ],
-    "example": { "prompt": { "en": "Review this Expo feed screen. Scrolling stutters on mid-range Android devices; identify the likely list and image bottlenecks.", "zh": "检查这个 Expo 信息流页面。中端 Android 设备滚动卡顿，请定位列表和图片方面的可能瓶颈。" }, "result": { "en": "A useful answer identifies item-rendering and image paths, proposes scoped changes, and asks for device measurements before declaring a fix.", "zh": "合格回答应指出条目渲染与图片路径，提出有边界的改动，并在声称修复前要求设备测量。" } },
-    "steps": [ { "title": { "en": "Reproduce on target hardware", "zh": "在目标设备复现" }, "body": { "en": "Record the screen, platform, and gesture that shows the problem.", "zh": "记录出问题的页面、平台与具体手势。" } }, { "title": { "en": "Read the matching mobile rules", "zh": "查找对应的移动端规则" }, "body": { "en": "Prioritize list and animation categories when frame drops are the symptom.", "zh": "如果症状是掉帧，先看列表与动画类规则。" } }, { "title": { "en": "Retest both platforms", "zh": "重新测试两个平台" }, "body": { "en": "Check behavior and performance on the intended iOS and Android device range.", "zh": "在目标 iOS、Android 设备范围内复核行为和性能。" } } ],
-    "outputs": { "en": ["A mobile-specific bottleneck shortlist", "Scoped component or configuration changes", "A device-validation checklist"], "zh": ["移动端瓶颈短名单", "限定范围的组件或配置改动", "设备验证清单"] },
-    "checks": { "en": ["Confirm Expo and library versions.", "Test the target device class, not only a simulator.", "Check accessibility and reduced-motion behavior."], "zh": ["确认 Expo 与依赖版本。", "测试目标设备档位，不只看模拟器。", "检查无障碍与减少动态效果设置。"] },
-    "faq": [ { "question": { "en": "Is this for React Native or web React?", "zh": "这是给 React Native 还是网页 React 用的？" }, "answer": { "en": "It targets React Native and Expo. For browser rendering, the separate Vercel React Best Practices Skill is a closer match.", "zh": "它面向 React Native 和 Expo；浏览器端渲染更适合使用单独的 Vercel React Best Practices Skill。" } }, { "question": { "en": "Will installing the Skill add Expo packages?", "zh": "安装这个 Skill 会添加 Expo 依赖吗？" }, "answer": { "en": "No. It installs agent instructions. Code or dependency changes require a separate, explicit implementation task.", "zh": "不会。安装的是 Agent 指令；修改代码或依赖需要另行执行明确的实现任务。" } }, { "question": { "en": "Which issue should be checked first?", "zh": "应该先检查哪类问题？" }, "answer": { "en": "The source puts list performance first. Start there when the symptom is scrolling jank, but follow the actual screen and device evidence.", "zh": "原文把列表性能列为最高优先级；滚动卡顿时可先从这里查，但仍以页面和设备证据为准。" } }, { "question": { "en": "Does it replace device testing?", "zh": "它能代替真机测试吗？" }, "answer": { "en": "No. Rules help select changes; real iOS and Android testing determines whether the change improves the intended experience.", "zh": "不能。规则帮助选择改动；真实 iOS、Android 测试才能判断体验是否改善。" } } ]
+    "pageCopy": {
+      "kind": {
+        "en": "Mobile implementation and review Skill",
+        "zh": "移动端实现与审查 Skill"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for React Native Skills",
+        "zh": "React Native 开发的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore mobile tasks where device behavior shapes the implementation. Review long scrolling lists, gesture-driven animations, or platform-specific screen details, using React Native and Expo guidance to identify changes that can be checked on the devices your users actually use.",
+        "zh": "探索需要结合设备表现处理的移动端任务，例如长列表滚动、手势驱动动画，以及图片、安全区域或键盘等平台细节。参考 React Native 与 Expo 专属规则，选择能够在目标设备上复现和验证的改进。"
+      },
+      "how": {
+        "en": "How to Review React Native Screens",
+        "zh": "How to 审查 React Native 界面"
+      },
+      "howDescription": {
+        "en": "Describe the screen, target platform, and gesture or interaction you want to improve. Ask the agent to apply the relevant mobile rules, implement a focused change, and compare the same flow on representative devices, including any platform-specific behavior.",
+        "zh": "说明页面、目标平台，以及需要改进的手势或交互。让 Agent 选择相关移动端规则，完成范围明确的修改，再在代表性设备上复查同一流程，并分别核对 iOS 与 Android 的平台差异。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Lists",
+          "zh": "列表"
+        },
+        "title": {
+          "en": "Scrolling drops frames",
+          "zh": "滚动时掉帧"
+        },
+        "body": {
+          "en": "Inspect virtualization, item rendering, callback stability, and images before rewriting the whole screen.",
+          "zh": "先检查虚拟列表、条目渲染、回调稳定性与图片，不急着重写整个页面。"
+        }
+      },
+      {
+        "label": {
+          "en": "Motion",
+          "zh": "动效"
+        },
+        "title": {
+          "en": "Gestures feel delayed",
+          "zh": "手势响应迟缓"
+        },
+        "body": {
+          "en": "Review whether an animation uses compositor-friendly properties and appropriate gesture primitives.",
+          "zh": "核对动画是否使用适合 GPU 的属性，以及手势是否采用合适的原语。"
+        }
+      },
+      {
+        "label": {
+          "en": "Platform",
+          "zh": "平台"
+        },
+        "title": {
+          "en": "A screen behaves differently on iOS and Android",
+          "zh": "同一页面在 iOS 与 Android 表现不同"
+        },
+        "body": {
+          "en": "Check safe areas, native navigation, images, fonts, and platform APIs instead of assuming web layout behavior.",
+          "zh": "检查安全区域、原生导航、图片、字体和平台 API，不把网页布局经验直接套过去。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Review this Expo feed screen. Scrolling stutters on mid-range Android devices; identify the likely list and image bottlenecks.",
+        "zh": "检查这个 Expo 信息流页面。中端 Android 设备滚动卡顿，请定位列表和图片方面的可能瓶颈。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Reproduce the screen behavior",
+          "zh": "复现页面表现"
+        },
+        "body": {
+          "en": "Identify the screen, platform, and interaction that shows the issue. Record your React Native or Expo version and test device.",
+          "zh": "明确出问题的页面、平台和交互。记录 React Native 或 Expo 版本，以及所用测试设备。"
+        }
+      },
+      {
+        "title": {
+          "en": "Apply the mobile rules",
+          "zh": "应用移动端规则"
+        },
+        "body": {
+          "en": "Ask the agent to inspect the matching list, animation, navigation, or media code. Keep the implementation focused on the reproduced issue.",
+          "zh": "让 Agent 检查对应的列表、动画、导航或媒体代码。围绕已复现的问题实施修改。"
+        }
+      },
+      {
+        "title": {
+          "en": "Verify on target devices",
+          "zh": "在目标设备验证"
+        },
+        "body": {
+          "en": "Repeat the flow on representative iOS and Android devices. Compare responsiveness and confirm gestures, layout, and content remain correct.",
+          "zh": "在代表性 iOS 与 Android 设备上重复流程。比较响应表现，并确认手势、布局与内容仍然正确。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Is this for React Native or web React?",
+          "zh": "这是给 React Native 还是网页 React 用的？"
+        },
+        "answer": {
+          "en": "It targets React Native and Expo. For browser rendering, the separate Vercel React Best Practices Skill is a closer match.",
+          "zh": "它面向 React Native 和 Expo；浏览器端渲染更适合使用单独的 Vercel React Best Practices Skill。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will installing the Skill add Expo packages?",
+          "zh": "安装这个 Skill 会添加 Expo 依赖吗？"
+        },
+        "answer": {
+          "en": "No. It installs agent instructions. Code or dependency changes require a separate, explicit implementation task.",
+          "zh": "不会。安装的是 Agent 指令；修改代码或依赖需要另行执行明确的实现任务。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which issue should be checked first?",
+          "zh": "应该先检查哪类问题？"
+        },
+        "answer": {
+          "en": "The source puts list performance first. Start there when the symptom is scrolling jank, but follow the actual screen and device evidence.",
+          "zh": "原文把列表性能列为最高优先级；滚动卡顿时可先从这里查，但仍以页面和设备证据为准。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it replace device testing?",
+          "zh": "它能代替真机测试吗？"
+        },
+        "answer": {
+          "en": "No. Rules help select changes; real iOS and Android testing determines whether the change improves the intended experience.",
+          "zh": "不能。规则帮助选择改动；真实 iOS、Android 测试才能判断体验是否改善。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why can a list still feel slow after a code review?",
+          "zh": "代码审查后列表为什么仍然卡顿？"
+        },
+        "answer": {
+          "en": "Scrolling depends on actual item complexity, image work, and device behavior. Profile a representative long list on target devices; passing a source-code review alone cannot establish smooth interaction.",
+          "zh": "滚动还受列表项复杂度、图片处理和实际设备影响。应在目标设备上测试有代表性的长列表，不能仅凭源码审查通过就认为交互流畅。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should Android and iOS share every interface decision?",
+          "zh": "Android 与 iOS 的界面决定必须完全相同吗？"
+        },
+        "answer": {
+          "en": "Share the task and component structure where appropriate, but verify gestures, safe areas, keyboard behavior, and images on both platforms. Native behavior may need platform-specific handling.",
+          "zh": "可以复用任务逻辑和组件结构，但手势、安全区域、键盘和图片表现都要在两端验证。必要时应保留符合平台行为的独立处理。"
+        }
+      },
+      {
+        "question": {
+          "en": "What project details help the agent choose mobile rules?",
+          "zh": "哪些项目信息有助于选择移动端规则？"
+        },
+        "answer": {
+          "en": "Provide React Native and Expo versions, the affected screen, target platforms, and reproduction steps. Note relevant libraries and device measurements, especially for scrolling or animation problems.",
+          "zh": "提供 React Native 与 Expo 版本、受影响页面、目标平台和复现步骤。涉及滚动或动画时，也应说明相关库及设备上的测量结果。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Apply React Native guidance for mobile lists, gestures, images, and safe areas when building or reviewing native interfaces.",
+      "zh": "为 React Native 界面提供移动端指引，覆盖列表、手势、图片处理与安全区域。"
+    },
+    "overview": {
+      "en": {
+        "title": "About Vercel React Native Skills",
+        "paragraphs": [
+          "Vercel React Native Skills is an Agent Skill for React Native and Expo development. Its mobile-specific rules address list performance, animation, navigation, interface patterns, state, rendering, monorepos, and configuration. This gives an agent a reference for issues that depend on device rendering or native platform behavior, such as scrolling, gestures, safe areas, and media. Start with a screen and a reproducible symptom so the agent can select the relevant rules and propose a focused implementation. Installing the Skill provides instructions rather than Expo packages or native dependencies. The resulting code still needs to be tested on the iOS and Android environments your application supports."
+        ]
+      },
+      "zh": {
+        "title": "关于 Vercel React Native Skills",
+        "paragraphs": [
+          "Vercel React Native Skills 是 Vercel Labs 面向 React Native 与 Expo 开发发布的 Agent Skill，整理了列表性能、动画、导航、界面模式、状态、渲染、Monorepo 和配置等移动端规则。对于滚动、手势、安全区域和媒体处理等依赖设备或原生平台的问题，它为 Agent 提供更贴近环境的参考。使用时可以从一个具体页面和可复现现象入手，选择相关规则并提出范围明确的实现建议。安装 Skill 添加的是指令，不会同时安装 Expo 包或原生依赖；最终代码仍需在应用支持的 iOS 与 Android 环境中验证。"
+        ]
+      }
+    }
   },
   {
-    "slug": "vercel-react-view-transitions", "authorHandle": "vercel-labs", "name": "Vercel React View Transitions", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-view-transitions/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": { "en": "React · View transitions", "zh": "React · 视图过渡" },
-    "seo": { "title": { "en": "Vercel React View Transitions Skill for UI Animation", "zh": "Vercel React View Transitions：界面过渡动画 Skill" }, "description": { "en": "Understand the Vercel React View Transitions Skill for shared elements, route changes, list reordering, and reduced-motion decisions.", "zh": "了解 Vercel React View Transitions Skill 如何处理共享元素、路由切换、列表重排与减少动态效果。" }, "keywords": { "en": ["vercel react view transitions skill", "react view transition animation", "next.js view transitions skill"], "zh": ["Vercel React View Transitions", "React 视图过渡 Skill", "Next.js 页面过渡"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · Interface motion", "zh": "Vercel Labs · 界面动效" }, "title": { "en": "React View Transitions: animate the relationship, not every click", "zh": "React View Transitions：动画应解释界面关系，而非装饰每次点击" }, "description": { "en": "A Skill for transitions between React UI states: shared elements, page changes, list identity, and content reveals—with guidance on when motion should stay silent.", "zh": "用于 React 界面状态切换的 Skill，覆盖共享元素、页面变化、列表身份与内容出现，也说明什么时候应保持静默。" } },
-    "summary": { "en": "The source ties animation patterns to spatial meaning. A list-to-detail movement may need a shared element; a background refresh often should not animate at all. Implementation advice is version-sensitive.", "zh": "原始指南把动画与空间含义对应起来：列表到详情可能需要共享元素，后台刷新却通常不应动。具体实现还受 React 与框架版本约束。" },
+    "slug": "vercel-react-view-transitions",
+    "authorHandle": "vercel-labs",
+    "name": "Vercel React View Transitions",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-view-transitions/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": {
+      "en": "React · View transitions",
+      "zh": "React · 视图过渡"
+    },
+    "seo": {
+      "title": {
+        "en": "Vercel React View Transitions by Vercel Labs | Installation & Guide",
+        "zh": "Vercel React View Transitions by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use React View Transitions by Vercel Labs to plan and implement transitions between React interface states. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 React View Transitions，为 React 界面状态变化设计合适的过渡。围绕卡片进入详情、列表重排和内容加载选择实现方式，让动效表达界面关系，并结合框架配置、浏览器支持与减少动态效果偏好验证体验。"
+      },
+      "keywords": {
+        "en": [
+          "Vercel React View Transitions by Vercel Labs",
+          "vercel react view transitions skill",
+          "react view transition animation",
+          "next.js view transitions skill"
+        ],
+        "zh": [
+          "Vercel React View Transitions by Vercel Labs",
+          "Vercel React View Transitions",
+          "React 视图过渡 Skill",
+          "Next.js 页面过渡"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · Interface motion",
+        "zh": "Vercel Labs · 界面动效"
+      },
+      "title": {
+        "en": "Vercel React View Transitions by Vercel Labs",
+        "zh": "Vercel React View Transitions by Vercel Labs"
+      },
+      "description": {
+        "en": "Use React View Transitions by Vercel Labs to plan and implement transitions between React interface states. Connect cards to detail views, preserve identity during list changes, and reveal loaded content with motion that fits the relationship, your framework setup, and users’ reduced-motion preferences.",
+        "zh": "使用 Vercel Labs 的 React View Transitions，为 React 界面状态变化设计合适的过渡。围绕卡片进入详情、列表重排和内容加载选择实现方式，让动效表达界面关系，并结合框架配置、浏览器支持与减少动态效果偏好验证体验。"
+      }
+    },
+    "summary": {
+      "en": "The source ties animation patterns to spatial meaning. A list-to-detail movement may need a shared element; a background refresh often should not animate at all. Implementation advice is version-sensitive.",
+      "zh": "原始指南把动画与空间含义对应起来：列表到详情可能需要共享元素，后台刷新却通常不应动。具体实现还受 React 与框架版本约束。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-react-view-transitions",
-    "pageCopy": { "kind": { "en": "React animation implementation Skill", "zh": "React 动画实现 Skill" }, "installNote": { "en": "Installs upstream instructions, not an animation library or Floatboat feature.", "zh": "安装的是上游指令，不是动画库或 Floatboat 功能。" }, "guideTitle": { "en": "Choose motion that explains navigation", "zh": "选择能解释导航关系的动画" }, "guideIntro": { "en": "Shared identity, direction, and reveal each tell a different story. Check framework and browser support before implementation.", "zh": "共享身份、方向和内容出现分别表达不同关系；实现前还要核对框架与浏览器支持。" }, "ctaEyebrow": { "en": "Shape the interaction", "zh": "设计交互" }, "ctaTitle": { "en": "Discuss the transition with the actual screen in view", "zh": "对着真实界面讨论过渡动画" }, "ctaDescription": { "en": "Keep route structure, UI states, and accessibility checks together in Floatboat while you refine the interaction.", "zh": "在 Floatboat 中集中梳理路由结构、界面状态和无障碍检查，再打磨交互。" } },
-    "sectionTitles": { "useCases": { "en": "When view transitions earn their place", "zh": "哪些地方值得加入视图过渡" }, "useCasesDescription": { "en": "Add motion where it helps people understand continuity or arrival.", "zh": "只有在动画有助于理解连续性或内容到达时才加入。" }, "exclusions": { "en": "Where motion can mislead", "zh": "哪些动画反而会误导" }, "how": { "en": "How to choose a transition pattern", "zh": "如何选择过渡模式" }, "howDescription": { "en": "Audit the relationship between states before touching CSS or transition APIs.", "zh": "先检查两个状态的关系，再处理 CSS 或过渡 API。" } },
-    "scenarios": [ { "label": { "en": "Detail", "zh": "详情" }, "title": { "en": "Open an item from a list", "zh": "从列表打开详情" }, "body": { "en": "A named shared element can show that the detail view belongs to the card the user selected.", "zh": "命名共享元素可以说明详情页来自用户刚刚点开的卡片。" } }, { "label": { "en": "Order", "zh": "排序" }, "title": { "en": "Reorder persistent items", "zh": "重排仍然存在的条目" }, "body": { "en": "Use stable item identity so motion communicates rearrangement rather than disappearance and reappearance.", "zh": "保持条目身份稳定，让动画表达位置变化，而不是条目消失再出现。" } }, { "label": { "en": "Reveal", "zh": "加载" }, "title": { "en": "Reveal content after Suspense", "zh": "Suspense 后显示内容" }, "body": { "en": "A restrained entrance can mark newly arrived content without animating every data refresh.", "zh": "克制的进入动画可以提示新内容到达，而不必让每次数据刷新都产生动效。" } } ],
-    "notFor": [ { "en": "Background revalidation that should not interrupt the user's focus.", "zh": "不应打断用户注意力的后台重新验证。" }, { "en": "Directional slides between unrelated tabs; they suggest a false hierarchy.", "zh": "无层级关系的标签页之间使用定向滑动；这会暗示不存在的层级。" } ],
-    "seoSections": [ { "title": { "en": "When is a shared-element transition appropriate?", "zh": "何时适合使用共享元素过渡？" }, "body": { "en": "When the same conceptual item persists across views, such as a card opening its detail page. The source recommends using identity and direction to make that relationship legible, not adding movement for its own sake.", "zh": "当同一个事物跨视图延续时，例如卡片打开详情页，共享元素能说明两者关系。原文强调身份和方向要有意义，而不是为了有动画而动画。" } }, { "title": { "en": "What should be checked before using React ViewTransition?", "zh": "使用 React ViewTransition 前要检查什么？" }, "body": { "en": "Check the React and Next.js setup, browser behavior, transition triggers, and reduced-motion support. The source distinguishes Next.js's bundled React behavior from non-Next.js setups.", "zh": "核对 React、Next.js 配置、浏览器表现、触发方式与减少动态效果支持。原文也区分了 Next.js 自带的 React 行为和其他 React 项目。" } } ],
-    "example": { "prompt": { "en": "Make this gallery's card-to-detail navigation feel continuous, but leave tab switching and background refresh unobtrusive.", "zh": "让画廊卡片到详情页的切换更连续，但不要让标签切换和后台刷新变得显眼。" }, "result": { "en": "A useful plan identifies the shared item, names its transition boundary, and states which changes intentionally have no animation.", "zh": "合格方案会找出共享条目、明确过渡边界，并说明哪些状态变化刻意不加动画。" } },
-    "steps": [ { "title": { "en": "Map UI relationships", "zh": "画出界面关系" }, "body": { "en": "Separate hierarchy, lateral navigation, reordering, and data reveal.", "zh": "区分层级导航、横向切换、条目重排和数据到达。" } }, { "title": { "en": "Choose the matching trigger", "zh": "选择对应触发方式" }, "body": { "en": "Use the source's React transition pattern for that relationship and version.", "zh": "根据关系和版本，选择原文对应的 React 过渡模式。" } }, { "title": { "en": "Test motion and fallback", "zh": "测试动效与降级" }, "body": { "en": "Check browser support, reduced motion, and behavior without animation.", "zh": "检查浏览器支持、减少动态效果设置及无动画时的行为。" } } ],
-    "outputs": { "en": ["A transition map for UI states", "A bounded React/CSS implementation", "A fallback and reduced-motion checklist"], "zh": ["界面状态的过渡关系图", "有限范围的 React/CSS 实现", "降级与减少动态效果检查项"] },
-    "checks": { "en": ["Does motion communicate a real relationship?", "Does the project's React version support the approach?", "Is the screen usable when animation is skipped?"], "zh": ["动画是否表达真实关系？", "项目 React 版本是否支持该做法？", "跳过动画后界面是否仍可用？"] },
-    "faq": [ { "question": { "en": "Does every route change need a transition?", "zh": "每次路由变化都需要动画吗？" }, "answer": { "en": "No. The source says transitions should communicate spatial continuity. Unrelated or background changes may be clearer without motion.", "zh": "不用。原文强调过渡要说明空间连续性；无关切换或后台变化可能保持静态更清楚。" } }, { "question": { "en": "Is a third-party animation library required?", "zh": "必须安装第三方动画库吗？" }, "answer": { "en": "The Skill focuses on React's ViewTransition API and CSS. Whether that API is available depends on your React and framework setup.", "zh": "这个 Skill 聚焦 React 的 ViewTransition API 与 CSS；能否使用仍取决于 React 和框架配置。" } }, { "question": { "en": "What about reduced-motion preferences?", "zh": "如何处理减少动态效果偏好？" }, "answer": { "en": "Provide a usable no-motion path and test the user's reduced-motion setting; animation must not carry essential information alone.", "zh": "需要提供无动画也可用的路径，并测试用户的减少动态效果设置；关键内容不能只靠动画传达。" } }, { "question": { "en": "Can I use the same recipe in any React app?", "zh": "所有 React 应用都能用同一套写法吗？" }, "answer": { "en": "No. The source distinguishes Next.js from non-Next.js availability and recommends following its version-specific implementation references.", "zh": "不能。原文区分 Next.js 与非 Next.js 的可用条件，应按版本阅读对应实现参考。" } } ]
+    "pageCopy": {
+      "kind": {
+        "en": "React animation implementation Skill",
+        "zh": "React 动画实现 Skill"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for React View Transitions",
+        "zh": "React 视图过渡的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore transitions that help users follow a meaningful interface change. Connect a selected card to its detail view, keep list items recognizable after reordering, or introduce newly loaded content while preserving a clear and usable experience when motion is reduced or unavailable.",
+        "zh": "探索有助于理解界面变化的过渡场景：将选中的卡片连接到详情，在列表重排后保持条目可识别，或提示刚加载完成的内容。结合前后状态的关系选择动效，同时保证减少或关闭动画时仍然清晰可用。"
+      },
+      "how": {
+        "en": "How to Implement React View Transitions",
+        "zh": "How to 实现 React 视图过渡"
+      },
+      "howDescription": {
+        "en": "Identify the relationship between the old and new interface states before selecting an animation. Check React and framework support, ask the agent to implement the matching transition pattern, and test navigation, reduced motion, and behavior without animation.",
+        "zh": "先说明界面前后状态的关系，再选择动画方式。核对 React 与框架支持条件，让 Agent 按适用模式实现过渡，最后检查导航、减少动态效果设置，以及完全没有动画时的页面行为。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Detail",
+          "zh": "详情"
+        },
+        "title": {
+          "en": "Open an item from a list",
+          "zh": "从列表打开详情"
+        },
+        "body": {
+          "en": "A named shared element can show that the detail view belongs to the card the user selected.",
+          "zh": "命名共享元素可以说明详情页来自用户刚刚点开的卡片。"
+        }
+      },
+      {
+        "label": {
+          "en": "Order",
+          "zh": "排序"
+        },
+        "title": {
+          "en": "Reorder persistent items",
+          "zh": "重排仍然存在的条目"
+        },
+        "body": {
+          "en": "Use stable item identity so motion communicates rearrangement rather than disappearance and reappearance.",
+          "zh": "保持条目身份稳定，让动画表达位置变化，而不是条目消失再出现。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reveal",
+          "zh": "加载"
+        },
+        "title": {
+          "en": "Reveal content after Suspense",
+          "zh": "Suspense 后显示内容"
+        },
+        "body": {
+          "en": "A restrained entrance can mark newly arrived content without animating every data refresh.",
+          "zh": "克制的进入动画可以提示新内容到达，而不必让每次数据刷新都产生动效。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Make this gallery's card-to-detail navigation feel continuous, but leave tab switching and background refresh unobtrusive.",
+        "zh": "让画廊卡片到详情页的切换更连续，但不要让标签切换和后台刷新变得显眼。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Describe the state relationship",
+          "zh": "说明状态关系"
+        },
+        "body": {
+          "en": "Show the starting and ending views. Identify whether the change is a shared element, list reorder, content reveal, or navigation.",
+          "zh": "提供起始与结束视图。明确变化属于共享元素、列表重排、内容出现还是导航。"
+        }
+      },
+      {
+        "title": {
+          "en": "Implement the matching pattern",
+          "zh": "实现匹配模式"
+        },
+        "body": {
+          "en": "Check the React and framework prerequisites with the agent. Apply the appropriate transition trigger, element identity, and CSS.",
+          "zh": "与 Agent 核对 React 和框架前提。应用匹配的触发方式、元素身份与 CSS。"
+        }
+      },
+      {
+        "title": {
+          "en": "Test motion and fallback",
+          "zh": "测试动效与降级"
+        },
+        "body": {
+          "en": "Check the flow in supported browsers and with reduced motion enabled. Confirm the same action still works without animation.",
+          "zh": "在支持的浏览器及开启减少动态效果时检查流程。确认关闭动画后，相同操作仍能正常完成。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does every route change need a transition?",
+          "zh": "每次路由变化都需要动画吗？"
+        },
+        "answer": {
+          "en": "No. The source says transitions should communicate spatial continuity. Unrelated or background changes may be clearer without motion.",
+          "zh": "不用。原文强调过渡要说明空间连续性；无关切换或后台变化可能保持静态更清楚。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is a third-party animation library required?",
+          "zh": "必须安装第三方动画库吗？"
+        },
+        "answer": {
+          "en": "The Skill focuses on React's ViewTransition API and CSS. Whether that API is available depends on your React and framework setup.",
+          "zh": "这个 Skill 聚焦 React 的 ViewTransition API 与 CSS；能否使用仍取决于 React 和框架配置。"
+        }
+      },
+      {
+        "question": {
+          "en": "What about reduced-motion preferences?",
+          "zh": "如何处理减少动态效果偏好？"
+        },
+        "answer": {
+          "en": "Provide a usable no-motion path and test the user's reduced-motion setting; animation must not carry essential information alone.",
+          "zh": "需要提供无动画也可用的路径，并测试用户的减少动态效果设置；关键内容不能只靠动画传达。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use the same recipe in any React app?",
+          "zh": "所有 React 应用都能用同一套写法吗？"
+        },
+        "answer": {
+          "en": "No. The source distinguishes Next.js from non-Next.js availability and recommends following its version-specific implementation references.",
+          "zh": "不能。原文区分 Next.js 与非 Next.js 的可用条件，应按版本阅读对应实现参考。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should happen when a transition cannot run?",
+          "zh": "视图过渡无法运行时应该怎样降级？"
+        },
+        "answer": {
+          "en": "The navigation or state change must still work normally. Treat motion as an enhancement and verify that disabling it does not hide content, delay an action, or prevent a user from reaching the next view.",
+          "zh": "导航和状态变化仍应正常完成。把动画当作增强效果，关闭动画后也不能隐藏内容、拖延操作或阻止用户进入下一个视图。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I choose a meaningful shared-element transition?",
+          "zh": "如何判断共享元素过渡是否有意义？"
+        },
+        "answer": {
+          "en": "Use a visible relationship, such as a selected card becoming its detail view. If the old and new elements are unrelated, a simpler transition or no motion is often easier to understand.",
+          "zh": "应有明确的视觉关系，例如选中的卡片进入对应详情。如果前后元素并不相关，简单过渡或不加动画通常更容易理解。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I check before implementing ViewTransition?",
+          "zh": "实现 ViewTransition 前应检查什么？"
+        },
+        "answer": {
+          "en": "Confirm the React version, framework configuration, and browser support against the linked source references. Provide the existing route or component and a clear description of the two states you want to connect.",
+          "zh": "结合来源中的实现参考核对 React 版本、框架配置和浏览器支持，并提供现有路由或组件，说明需要连接的前后两个状态。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Choose React view-transition patterns that connect animation to navigation, shared elements, and meaningful changes in interface state.",
+      "zh": "根据导航、共享元素与界面状态变化，选择具有明确空间含义的 React 视图过渡。"
+    },
+    "overview": {
+      "en": {
+        "title": "About Vercel React View Transitions",
+        "paragraphs": [
+          "React View Transitions is an Agent Skill published by Vercel Labs for implementing interface transitions with React’s ViewTransition APIs and CSS. It organizes motion around relationships between states: shared elements, arriving content, persistent list items, and navigation. The guidance helps an agent choose what should remain visually connected, when to trigger a transition, and which styles communicate that change. API availability depends on the React and framework setup, so version checks belong before implementation. Use the Skill with a specific transition rather than an open-ended request to animate everything, and verify navigation, reduced-motion behavior, and the fallback when animation cannot run."
+        ]
+      },
+      "zh": {
+        "title": "关于 Vercel React View Transitions",
+        "paragraphs": [
+          "React View Transitions 是 Vercel Labs 发布的界面过渡 Skill，指导 Agent 使用 React 的 ViewTransition 相关 API 与 CSS 实现状态之间的动效。它围绕共享元素、内容到达、列表条目身份和导航关系组织方案，帮助确定哪些元素应保持视觉连续、何时触发过渡，以及如何表达变化。具体 API 是否可用取决于 React 与框架配置，需要在实现前核对版本。使用时应明确一段具体的界面变化与它要表达的关系，并验证导航、减少动态效果设置，以及无法运行动画时的正常使用路径。"
+        ]
+      }
+    }
   },
   {
-    "slug": "web-design-guidelines", "authorHandle": "vercel-labs", "name": "Web Design Guidelines", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": { "en": "Web UI · Design review", "zh": "网页 UI · 设计审查" },
-    "seo": { "title": { "en": "Vercel Web Design Guidelines Skill for UI Reviews", "zh": "Vercel Web Design Guidelines：网页 UI 审查 Skill" }, "description": { "en": "See how the Web Design Guidelines Skill reviews UI code for interface, accessibility, and UX issues against a freshly fetched source.", "zh": "了解 Web Design Guidelines Skill 如何获取最新规范，并检查网页 UI、无障碍和交互问题。" }, "keywords": { "en": ["web design guidelines skill", "vercel UI review skill", "web interface guidelines audit"], "zh": ["Web Design Guidelines Skill", "网页 UI 审查 Skill", "Vercel 界面规范"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · UI review", "zh": "Vercel Labs · UI 审查" }, "title": { "en": "Web Design Guidelines: inspect the interface code", "zh": "Web Design Guidelines：从界面代码找出具体问题" }, "description": { "en": "A review Skill that fetches current Web Interface Guidelines, reads the files you name, and reports findings at file-and-line level.", "zh": "一个审查型 Skill：先获取最新网页界面规范，再阅读指定文件，并按文件和行号报告问题。" } },
-    "summary": { "en": "The installed SKILL.md is a short review workflow rather than a frozen rulebook. Its agent fetches the current guideline source for each review, checks the requested files, and returns terse findings.", "zh": "安装的 SKILL.md 是简短审查流程，不是固定不变的规则全集。Agent 每次先获取最新规范，再检查指定文件，并输出简洁的问题定位。" },
+    "slug": "web-design-guidelines",
+    "authorHandle": "vercel-labs",
+    "name": "Web Design Guidelines",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": {
+      "en": "Web UI · Design review",
+      "zh": "网页 UI · 设计审查"
+    },
+    "seo": {
+      "title": {
+        "en": "Web Design Guidelines by Vercel Labs | Installation & Guide",
+        "zh": "Web Design Guidelines by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use Web Design Guidelines by Vercel Labs to review interface source files against its current Web Interface Guidelines. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 Web Design Guidelines，按当前 Web Interface Guidelines 检查界面源码。向 Agent 指定页面或组件，审查交互与无障碍相关实现，获得带文件和行号的问题列表，便于定位、核对与后续修改。"
+      },
+      "keywords": {
+        "en": [
+          "Web Design Guidelines by Vercel Labs",
+          "web design guidelines skill",
+          "vercel UI review skill",
+          "web interface guidelines audit"
+        ],
+        "zh": [
+          "Web Design Guidelines by Vercel Labs",
+          "Web Design Guidelines Skill",
+          "网页 UI 审查 Skill",
+          "Vercel 界面规范"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · UI review",
+        "zh": "Vercel Labs · UI 审查"
+      },
+      "title": {
+        "en": "Web Design Guidelines by Vercel Labs",
+        "zh": "Web Design Guidelines by Vercel Labs"
+      },
+      "description": {
+        "en": "Use Web Design Guidelines by Vercel Labs to review interface source files against its current Web Interface Guidelines. Give your agent a page or component to inspect, identify issues in interaction and accessibility, and receive findings tied to file and line locations for focused follow-up.",
+        "zh": "使用 Vercel Labs 的 Web Design Guidelines，按当前 Web Interface Guidelines 检查界面源码。向 Agent 指定页面或组件，审查交互与无障碍相关实现，获得带文件和行号的问题列表，便于定位、核对与后续修改。"
+      }
+    },
+    "summary": {
+      "en": "The installed SKILL.md is a short review workflow rather than a frozen rulebook. Its agent fetches the current guideline source for each review, checks the requested files, and returns terse findings.",
+      "zh": "安装的 SKILL.md 是简短审查流程，不是固定不变的规则全集。Agent 每次先获取最新规范，再检查指定文件，并输出简洁的问题定位。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill web-design-guidelines",
-    "pageCopy": { "kind": { "en": "UI code-review Skill", "zh": "UI 代码审查 Skill" }, "installNote": { "en": "Upstream Skills CLI command. The Skill also fetches a separate live guideline source during review.", "zh": "上游 Skills CLI 命令。实际审查时，该 Skill 还会从另一个来源获取最新规范。" }, "guideTitle": { "en": "Turn guidelines into located findings", "zh": "把规范转成可定位的问题" }, "guideIntro": { "en": "The useful output is a file-and-line finding you can verify, not a generic redesign brief.", "zh": "有价值的产出是能在文件和行号上核对的问题，不是泛泛的重新设计建议。" }, "ctaEyebrow": { "en": "Review UI work", "zh": "复核 UI 工作" }, "ctaTitle": { "en": "Bring interface findings back to the task", "zh": "把界面问题带回当前任务" }, "ctaDescription": { "en": "Use Floatboat to keep the affected screen, source files, and proposed fixes together while you decide what to change.", "zh": "在 Floatboat 中放好受影响页面、源码和修复建议，再决定具体改动。" } },
-    "sectionTitles": { "useCases": { "en": "What to review with Web Design Guidelines", "zh": "Web Design Guidelines 适合审查什么" }, "useCasesDescription": { "en": "Point it at a concrete file set and an interface question.", "zh": "给它具体文件范围和界面问题，结论才容易核实。" }, "exclusions": { "en": "What a code review cannot prove", "zh": "代码审查不能证明什么" }, "how": { "en": "How the guideline review runs", "zh": "界面规范审查如何进行" }, "howDescription": { "en": "The original workflow fetches current rules, inspects named files, then reports located findings.", "zh": "原始流程先获取当前规则，再检查指定文件，最后报告可定位的问题。" } },
-    "scenarios": [ { "label": { "en": "Access", "zh": "无障碍" }, "title": { "en": "A form is hard to navigate by keyboard", "zh": "表单难以使用键盘操作" }, "body": { "en": "Review labels, focus states, error messaging, and keyboard handlers in the relevant form files.", "zh": "检查相关表单文件中的标签、焦点状态、错误信息和键盘处理。" } }, { "label": { "en": "Interaction", "zh": "交互" }, "title": { "en": "A control behaves inconsistently", "zh": "控件行为不一致" }, "body": { "en": "Inspect navigation state, touch targets, feedback, and interaction semantics rather than discussing visual taste alone.", "zh": "检查导航状态、点击区域、反馈和交互语义，而不只讨论视觉喜好。" } }, { "label": { "en": "Review", "zh": "审查" }, "title": { "en": "A new page needs a pre-release UI pass", "zh": "新页面上线前需要 UI 复核" }, "body": { "en": "Scope the review to the new page and its shared components so findings map back to code owners.", "zh": "把范围限定在新页面及其共享组件，让问题能够对应到负责的代码。" } } ],
-    "notFor": [ { "en": "Visual proof that the rendered page looks right at every viewport.", "zh": "证明渲染后的页面在所有视口都正确；仍需实际看页面。" }, { "en": "An open-ended design concept without source files to inspect.", "zh": "没有可检查源码的开放式视觉概念设计。" } ],
-    "seoSections": [ { "title": { "en": "Where do the design rules come from?", "zh": "设计检查规则来自哪里？" }, "body": { "en": "The SKILL.md instructs the agent to fetch the latest Web Interface Guidelines from Vercel Labs' separate guideline source before every review. The installed Skill is the workflow; the current rules are fetched at review time.", "zh": "SKILL.md 要求 Agent 每次审查前，从 Vercel Labs 独立的网页界面规范来源获取最新规则。安装的 Skill 是工作流程，具体规则在审查时读取。" } }, { "title": { "en": "Is this an accessibility certification?", "zh": "它能提供无障碍合规认证吗？" }, "body": { "en": "No. File-level findings can uncover implementation problems, but rendered behavior, assistive technology, device interactions, and applicable standards need separate testing.", "zh": "不能。文件级检查能发现实现问题，但渲染行为、辅助技术、设备交互及适用标准仍需另行测试。" } } ],
-    "example": { "prompt": { "en": "Review the checkout form components against current web interface guidelines. Report only actionable file:line findings.", "zh": "按最新网页界面规范审查结账表单组件，只报告可执行的 file:line 问题。" }, "result": { "en": "A useful response points to the exact control and line, explains the interaction problem, and avoids unlocated aesthetic opinions.", "zh": "合格结果应指出具体控件与行号，解释交互问题，避免无法定位的审美评论。" } },
-    "steps": [ { "title": { "en": "Select files", "zh": "确定文件" }, "body": { "en": "Name the page or component files; the original workflow asks for a path if none is provided.", "zh": "指定页面或组件文件；原始流程在没有路径时会先询问。" } }, { "title": { "en": "Fetch current rules", "zh": "获取当前规则" }, "body": { "en": "Read the live guideline source rather than relying on a cached checklist.", "zh": "读取实时规范来源，而不是依赖旧检查清单。" } }, { "title": { "en": "Verify located findings", "zh": "核对定位结果" }, "body": { "en": "Check reported file:line issues against the rendered interface before editing.", "zh": "修改前，把报告中的 file:line 问题与实际界面对应起来。" } } ],
-    "outputs": { "en": ["File-and-line UI findings", "A review scoped to named source files", "Issues to verify in the rendered page"], "zh": ["按文件和行号定位的 UI 问题", "针对指定源码的审查", "待在实际页面验证的问题"] },
-    "checks": { "en": ["Was the latest guideline source fetched?", "Are the findings tied to the requested files?", "Does the live UI reproduce the issue?"], "zh": ["是否获取了最新规范来源？", "问题是否对应指定文件？", "实际页面能否复现问题？"] },
-    "faq": [ { "question": { "en": "Does the Skill contain all web design rules?", "zh": "这个 Skill 内置了全部网页设计规则吗？" }, "answer": { "en": "No. Its SKILL.md points to a separate, freshly fetched Web Interface Guidelines source.", "zh": "没有。SKILL.md 指向另一个网页界面规范来源，并要求每次审查时重新获取。" } }, { "question": { "en": "Can it review a website URL alone?", "zh": "只给网址就能审查吗？" }, "answer": { "en": "Its documented workflow reads specified source files. For visual or browser behavior, add a separate rendered-page review.", "zh": "原始流程针对指定源码文件。要检查视觉或浏览器行为，还需要另做页面渲染审查。" } }, { "question": { "en": "What does the result look like?", "zh": "结果是什么形式？" }, "answer": { "en": "The source asks for terse findings tied to file and line locations, making them easier to verify and fix.", "zh": "原文要求用简洁的文件与行号定位问题，便于核对和修复。" } }, { "question": { "en": "Does a clean review guarantee accessibility?", "zh": "没有报错就代表无障碍合格吗？" }, "answer": { "en": "No. Assistive-technology and real interaction tests are still needed; file review is one layer.", "zh": "不代表。仍需辅助技术和真实交互测试；文件审查只是其中一层。" } } ]
+    "pageCopy": {
+      "kind": {
+        "en": "UI code-review Skill",
+        "zh": "UI 代码审查 Skill"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Web Design Guidelines",
+        "zh": "网页界面审查的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore source-based interface reviews for forms, controls, and pages approaching release. Use the current guidelines to inspect labels, focus behavior, interaction feedback, and shared components, then connect each finding to a file location and the user behavior you need to verify.",
+        "zh": "探索表单、控件与待发布页面的源码审查场景。依据当前规范检查标签、焦点处理、交互反馈和共享组件，将发现对应到文件位置，再结合用户实际操作核对问题，形成可以继续处理的修改清单。"
+      },
+      "how": {
+        "en": "How to Review UI with Web Design Guidelines",
+        "zh": "How to 使用 Web Design Guidelines"
+      },
+      "howDescription": {
+        "en": "Provide the page or component files you want reviewed and describe the user flow. Ask the agent to retrieve the current guidelines, inspect the selected scope, and report located issues. Verify findings against the rendered interface before deciding which changes to make.",
+        "zh": "提供待检查的页面或组件文件，并说明用户流程。让 Agent 获取当前规范，在指定范围内审查并报告问题位置；随后对照渲染界面核对结果，再决定需要实施的修改及交互验证。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Access",
+          "zh": "无障碍"
+        },
+        "title": {
+          "en": "A form is hard to navigate by keyboard",
+          "zh": "表单难以使用键盘操作"
+        },
+        "body": {
+          "en": "Review labels, focus states, error messaging, and keyboard handlers in the relevant form files.",
+          "zh": "检查相关表单文件中的标签、焦点状态、错误信息和键盘处理。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction",
+          "zh": "交互"
+        },
+        "title": {
+          "en": "A control behaves inconsistently",
+          "zh": "控件行为不一致"
+        },
+        "body": {
+          "en": "Inspect navigation state, touch targets, feedback, and interaction semantics rather than discussing visual taste alone.",
+          "zh": "检查导航状态、点击区域、反馈和交互语义，而不只讨论视觉喜好。"
+        }
+      },
+      {
+        "label": {
+          "en": "Review",
+          "zh": "审查"
+        },
+        "title": {
+          "en": "A new page needs a pre-release UI pass",
+          "zh": "新页面上线前需要 UI 复核"
+        },
+        "body": {
+          "en": "Scope the review to the new page and its shared components so findings map back to code owners.",
+          "zh": "把范围限定在新页面及其共享组件，让问题能够对应到负责的代码。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Review the checkout form components against current web interface guidelines. Report only actionable file:line findings.",
+        "zh": "按最新网页界面规范审查结账表单组件，只报告可执行的 file:line 问题。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Choose files and user flow",
+          "zh": "指定文件与用户流程"
+        },
+        "body": {
+          "en": "Provide page or component paths and describe the interaction to review. Include shared components that affect the selected flow.",
+          "zh": "提供页面或组件路径，并说明要审查的交互。包含会影响该流程的共享组件。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review against current guidelines",
+          "zh": "按当前规范检查"
+        },
+        "body": {
+          "en": "Ask the agent to fetch the latest Web Interface Guidelines and inspect the named files. Request findings with file and line locations.",
+          "zh": "让 Agent 获取最新 Web Interface Guidelines 并检查指定文件。要求问题附带文件与行号。"
+        }
+      },
+      {
+        "title": {
+          "en": "Verify and resolve findings",
+          "zh": "核对并处理问题"
+        },
+        "body": {
+          "en": "Match findings to the rendered UI before editing. Test relevant keyboard, focus, and form behavior after changes.",
+          "zh": "修改前将发现与实际界面对应。改动后验证相关的键盘、焦点和表单行为。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does the Skill contain all web design rules?",
+          "zh": "这个 Skill 内置了全部网页设计规则吗？"
+        },
+        "answer": {
+          "en": "No. Its SKILL.md points to a separate, freshly fetched Web Interface Guidelines source.",
+          "zh": "没有。SKILL.md 指向另一个网页界面规范来源，并要求每次审查时重新获取。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it review a website URL alone?",
+          "zh": "只给网址就能审查吗？"
+        },
+        "answer": {
+          "en": "Its documented workflow reads specified source files. For visual or browser behavior, add a separate rendered-page review.",
+          "zh": "原始流程针对指定源码文件。要检查视觉或浏览器行为，还需要另做页面渲染审查。"
+        }
+      },
+      {
+        "question": {
+          "en": "What does the result look like?",
+          "zh": "结果是什么形式？"
+        },
+        "answer": {
+          "en": "The source asks for terse findings tied to file and line locations, making them easier to verify and fix.",
+          "zh": "原文要求用简洁的文件与行号定位问题，便于核对和修复。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does a clean review guarantee accessibility?",
+          "zh": "没有报错就代表无障碍合格吗？"
+        },
+        "answer": {
+          "en": "No. Assistive-technology and real interaction tests are still needed; file review is one layer.",
+          "zh": "不代表。仍需辅助技术和真实交互测试；文件审查只是其中一层。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which checks still need hands-on interaction?",
+          "zh": "哪些检查仍需实际操作？"
+        },
+        "answer": {
+          "en": "Try keyboard navigation, focus movement, form errors, and layout at narrow widths. Source inspection can identify likely issues, but these interaction checks establish how the interface behaves for a person.",
+          "zh": "应亲自验证键盘导航、焦点移动、表单错误和窄屏布局。源码能指出潜在问题，但实际交互才说明用户会遇到什么。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should I rerun a review after changing shared components?",
+          "zh": "改动通用组件后需要重新检查哪些页面？"
+        },
+        "answer": {
+          "en": "Yes, include representative pages that consume the changed component. A button, dialog, or navigation fix can change behavior across several routes even when only one source file was edited.",
+          "zh": "检查使用该组件的代表页面。按钮、对话框或导航只改一个文件，也可能影响多条路由，不能只验证最初发现问题的页面。"
+        }
+      },
+      {
+        "question": {
+          "en": "What happens if the agent cannot fetch the guidelines?",
+          "zh": "Agent 无法获取规范时怎么办？"
+        },
+        "answer": {
+          "en": "The documented review depends on a fresh guideline source. Restore access or provide an explicitly dated copy and state that limitation; do not describe a review against unknown or missing rules as current compliance.",
+          "zh": "原始流程依赖最新规范。应恢复访问，或提供注明日期的副本并说明局限；缺少规则时，不能把检查描述为符合当前规范。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Review interface files against current web design guidelines and return focused findings tied to the relevant code.",
+      "zh": "根据最新网页设计规范审查界面文件，将问题定位到相关代码并给出精简检查结果。"
+    },
+    "overview": {
+      "en": {
+        "title": "About Web Design Guidelines",
+        "paragraphs": [
+          "Web Design Guidelines is a review Skill published by Vercel Labs for checking UI source files against Web Interface Guidelines. Its workflow first retrieves the current rules, then reads the files or patterns named by the user and reports located findings. This makes it useful for reviewing a page or shared component before release, especially when you need issues that can be traced back to implementation. The Skill is a review entry point; the guideline document is maintained separately and should be fetched for each review. Source findings should be checked against the rendered interface, with keyboard and assistive-technology testing added where the task requires it."
+        ]
+      },
+      "zh": {
+        "title": "关于 Web Design Guidelines",
+        "paragraphs": [
+          "Web Design Guidelines 是 Vercel Labs 发布的界面源码审查 Skill，依据 Web Interface Guidelines 检查指定文件。其流程先获取当前规范，再读取用户提供的文件或路径模式，并用文件与行号报告问题，便于将审查结果对应到实际实现。它适合页面上线前复核和共享组件检查，尤其适用于需要明确定位的交互与无障碍问题。Skill 本身是审查入口，规则文档在独立来源维护，每次检查时都应重新获取。源码发现还需要与渲染后的界面核对；涉及键盘或辅助技术体验时，应补充实际操作验证。"
+        ]
+      }
+    }
   },
   {
-    "slug": "writing-guidelines", "authorHandle": "vercel-labs", "name": "Writing Guidelines", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/writing-guidelines/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": { "en": "Documentation · Editorial review", "zh": "文档 · 编辑审查" },
-    "seo": { "title": { "en": "Vercel Writing Guidelines Skill for Docs Reviews", "zh": "Vercel Writing Guidelines：文档与技术写作审查 Skill" }, "description": { "en": "Learn how the Writing Guidelines Skill checks docs and prose against Vercel's current writing handbook, with located findings.", "zh": "了解 Writing Guidelines Skill 如何依据 Vercel 最新写作手册检查文档与文案，并输出可定位的问题。" }, "keywords": { "en": ["vercel writing guidelines skill", "docs review skill", "technical writing agent skill"], "zh": ["Vercel Writing Guidelines", "文档审查 Skill", "技术写作规范 Skill"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · Docs review", "zh": "Vercel Labs · 文档审查" }, "title": { "en": "Writing Guidelines: review the docs you actually ship", "zh": "Writing Guidelines：审查真正要发布的文档" }, "description": { "en": "A writing-review Skill that fetches Vercel's current handbook, reads the files you specify, and reports concrete prose or structure issues.", "zh": "这个写作审查 Skill 会获取 Vercel 当前的写作手册，阅读指定文件，并指出具体的语言和结构问题。" } },
-    "summary": { "en": "The Skill is not a general-purpose copy generator. Its documented workflow retrieves the latest writing guidelines and checks named docs or prose files, with terse file-and-line findings.", "zh": "它不是通用文案生成器。原始流程要求获取最新写作规范，检查指定文档或文案文件，并用简洁的文件与行号呈现发现。" },
+    "slug": "writing-guidelines",
+    "authorHandle": "vercel-labs",
+    "name": "Writing Guidelines",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/writing-guidelines/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": {
+      "en": "Documentation · Editorial review",
+      "zh": "文档 · 编辑审查"
+    },
+    "seo": {
+      "title": {
+        "en": "Writing Guidelines by Vercel Labs | Installation & Guide",
+        "zh": "Writing Guidelines by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use Writing Guidelines by Vercel Labs to review existing documentation and prose against Vercel’s writing handbook. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 Writing Guidelines，依据 Vercel 写作手册审查已有文档与文案。指定文件、读者和用途，获取可定位的语言与结构反馈，再结合自己的术语、品牌语气和文档要求，选择适合采纳的修改。"
+      },
+      "keywords": {
+        "en": [
+          "Writing Guidelines by Vercel Labs",
+          "vercel writing guidelines skill",
+          "docs review skill",
+          "technical writing agent skill"
+        ],
+        "zh": [
+          "Writing Guidelines by Vercel Labs",
+          "Vercel Writing Guidelines",
+          "文档审查 Skill",
+          "技术写作规范 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · Docs review",
+        "zh": "Vercel Labs · 文档审查"
+      },
+      "title": {
+        "en": "Writing Guidelines by Vercel Labs",
+        "zh": "Writing Guidelines by Vercel Labs"
+      },
+      "description": {
+        "en": "Use Writing Guidelines by Vercel Labs to review existing documentation and prose against Vercel’s writing handbook. Specify the files, audience, and purpose, then inspect located feedback on language and structure while deciding which suggestions fit your own terminology, brand voice, and documentation requirements.",
+        "zh": "使用 Vercel Labs 的 Writing Guidelines，依据 Vercel 写作手册审查已有文档与文案。指定文件、读者和用途，获取可定位的语言与结构反馈，再结合自己的术语、品牌语气和文档要求，选择适合采纳的修改。"
+      }
+    },
+    "summary": {
+      "en": "The Skill is not a general-purpose copy generator. Its documented workflow retrieves the latest writing guidelines and checks named docs or prose files, with terse file-and-line findings.",
+      "zh": "它不是通用文案生成器。原始流程要求获取最新写作规范，检查指定文档或文案文件，并用简洁的文件与行号呈现发现。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill writing-guidelines",
-    "pageCopy": { "kind": { "en": "Documentation review Skill", "zh": "文档审查 Skill" }, "installNote": { "en": "Installs upstream instructions. Reviews also require fetching the publisher's current writing handbook.", "zh": "安装的是上游指令；审查时还需要获取发布方当前的写作手册。" }, "guideTitle": { "en": "Review words in their document context", "zh": "结合文档类型审查文字" }, "guideIntro": { "en": "A tutorial, reference page, and troubleshooting guide make different promises. Identify the content type before applying a rule.", "zh": "教程、参考页和故障排查文档承担不同任务；应用规则前先确定内容类型。" }, "ctaEyebrow": { "en": "Refine the draft", "zh": "打磨草稿" }, "ctaTitle": { "en": "Work through the draft and review notes together", "zh": "让草稿与审查意见在同一处推进" }, "ctaDescription": { "en": "Bring the target document and revision decisions into Floatboat, while keeping Vercel's handbook as the attributed source.", "zh": "把目标文档和修改决定放在 Floatboat 中推进，同时保留 Vercel 写作手册的来源归属。" } },
-    "sectionTitles": { "useCases": { "en": "What the writing review is for", "zh": "这个写作审查适合什么" }, "useCasesDescription": { "en": "Use it for concrete docs or prose files that need a standards-based pass.", "zh": "用它检查需要按规范复核的具体文档或文案文件。" }, "exclusions": { "en": "What it cannot decide alone", "zh": "它不能独自决定什么" }, "how": { "en": "How the docs review works", "zh": "文档审查的工作流程" }, "howDescription": { "en": "The Skill reads current guidelines and named files, then returns specific findings rather than rewriting without context.", "zh": "先读当前规范和指定文件，再反馈具体问题，而不是脱离上下文地重写。" } },
-    "scenarios": [ { "label": { "en": "Docs", "zh": "文档" }, "title": { "en": "A tutorial is hard to follow", "zh": "教程读起来不顺" }, "body": { "en": "Check whether headings, steps, examples, and prerequisites follow the user's task rather than the author's implementation notes.", "zh": "检查标题、步骤、示例和前提条件是否围绕读者任务，而不是作者的实现笔记。" } }, { "label": { "en": "Reference", "zh": "参考" }, "title": { "en": "An API reference hides key conditions", "zh": "API 参考页埋没了使用条件" }, "body": { "en": "Review names, parameter descriptions, code formatting, and the placement of limits or caveats.", "zh": "检查名称、参数说明、代码格式，以及限制和注意事项的位置。" } }, { "label": { "en": "Copy", "zh": "文案" }, "title": { "en": "A release note sounds vague", "zh": "更新说明过于空泛" }, "body": { "en": "Look for unsupported adjectives, missing user impact, and phrases that obscure the actual change.", "zh": "找出缺乏依据的形容词、缺失的用户影响，以及掩盖实际变更的表述。" } } ],
-    "notFor": [ { "en": "Fact-checking product behavior that is absent from the provided source.", "zh": "核查未提供来源的产品行为事实。" }, { "en": "Replacing a company's own editorial policy with Vercel's house style without approval.", "zh": "未经确认就用 Vercel 的品牌文风替代团队自身的编辑规范。" } ],
-    "seoSections": [ { "title": { "en": "Does the Skill write new documentation?", "zh": "这个 Skill 会写新文档吗？" }, "body": { "en": "Its documented purpose is review: fetch the latest handbook, inspect named files, and report located issues. An agent may help revise a draft afterward, but that is a separate instruction and editorial decision.", "zh": "原始用途是审查：获取最新手册、检查指定文件、报告定位问题。之后可让 Agent 协助修改，但那属于另一个指令和编辑决定。" } }, { "title": { "en": "Should another team adopt Vercel's style rules unchanged?", "zh": "其他团队要原样采用 Vercel 文风吗？" }, "body": { "en": "Not necessarily. The rules are Vercel's publisher-specific writing handbook. Compare findings with your own voice, localization needs, and documentation contract before accepting an edit.", "zh": "不一定。这些是 Vercel 的发布方专属写作规则。接受修改前，应与自己的品牌语气、本地化需求及文档契约比较。" } } ],
-    "example": { "prompt": { "en": "Review these onboarding docs against the current Vercel writing guidelines. Give file:line findings; do not rewrite factual claims.", "zh": "按当前 Vercel 写作规范审查这些入门文档，给出 file:line 问题，不要改写事实陈述。" }, "result": { "en": "A useful review distinguishes unclear instructions from house-style preferences and points to each affected line.", "zh": "合格审查会区分不清楚的操作说明与品牌文风偏好，并标出受影响行。" } },
-    "steps": [ { "title": { "en": "Name the documents", "zh": "指定文档" }, "body": { "en": "Provide files or a pattern and state whether they are tutorials, references, or another content type.", "zh": "提供文件或路径模式，并说明内容属于教程、参考文档或其他类型。" } }, { "title": { "en": "Fetch the current handbook", "zh": "获取最新手册" }, "body": { "en": "The source instructs a fresh fetch before every review.", "zh": "原始指令要求每次审查前重新获取写作手册。" } }, { "title": { "en": "Accept edits deliberately", "zh": "有选择地接受修改" }, "body": { "en": "Review located findings against factual accuracy and your own editorial voice.", "zh": "将定位问题与事实准确性、团队文风逐一对照。" } } ],
-    "outputs": { "en": ["File-and-line prose findings", "Structure and clarity issues tied to the document", "A shortlist of edits to accept or reject"], "zh": ["按文件和行号定位的文字问题", "与目标文档相关的结构和清晰度问题", "待接受或驳回的修改短名单"] },
-    "checks": { "en": ["Were current guidelines fetched?", "Does the finding preserve the document's facts?", "Is Vercel's house style appropriate for this publisher?"], "zh": ["是否获取了当前规范？", "修改是否保留文档事实？", "Vercel 的品牌文风是否适合当前发布者？"] },
-    "faq": [ { "question": { "en": "Is Writing Guidelines a writing generator?", "zh": "Writing Guidelines 是写作生成器吗？" }, "answer": { "en": "No. The documented workflow reviews existing docs or prose and reports issues. Generating new content would need a separate task.", "zh": "不是。原始流程审查已有文档或文案并反馈问题；生成新内容需要另行提出任务。" } }, { "question": { "en": "Where are the rules stored?", "zh": "规则保存在哪里？" }, "answer": { "en": "The installed SKILL.md points to the separate Vercel writing-handbook source and asks the agent to fetch it fresh for each review.", "zh": "安装的 SKILL.md 指向独立的 Vercel 写作手册来源，并要求 Agent 每次审查时重新获取。" } }, { "question": { "en": "Can I apply it to non-Vercel docs?", "zh": "非 Vercel 文档可以用吗？" }, "answer": { "en": "You can use it as a review lens, but its style preferences belong to Vercel. Keep your own brand and documentation requirements authoritative.", "zh": "可以作为审查视角，但其文风偏好属于 Vercel。你的品牌和文档要求仍应优先。" } }, { "question": { "en": "What input does it need?", "zh": "使用时需要提供什么？" }, "answer": { "en": "Provide a file or pattern to review. The original workflow asks for target files if none are specified.", "zh": "需要提供待审查文件或路径模式；如果没有指定，原始流程会先询问。" } } ]
+    "pageCopy": {
+      "kind": {
+        "en": "Documentation review Skill",
+        "zh": "文档审查 Skill"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Writing Guidelines",
+        "zh": "文档写作审查的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore reviews for tutorials, API references, and release notes that need clearer language or structure. Provide the intended reader and document purpose so the agent can assess the text against the handbook while keeping your approved terminology and editorial requirements in view.",
+        "zh": "探索教程、API 参考和更新说明中的语言与结构审查任务。提供目标读者与文档用途，让 Agent 对照写作手册检查文本，同时结合已批准的术语、品牌语气和编辑要求，判断哪些建议值得采纳。"
+      },
+      "how": {
+        "en": "How to Review Docs with Writing Guidelines",
+        "zh": "How to 使用 Writing Guidelines"
+      },
+      "howDescription": {
+        "en": "Select the existing files and explain their audience, purpose, and required terminology. Ask the agent to fetch the current writing handbook and return located findings, then review the suggestions and apply only the edits that match your documentation requirements.",
+        "zh": "选择已有文件，说明读者、用途与需要遵循的术语。让 Agent 获取当前写作手册，返回带位置的审查意见；再逐项核对建议，只应用符合自身文档要求的修改，并检查是否保留原意。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Docs",
+          "zh": "文档"
+        },
+        "title": {
+          "en": "A tutorial is hard to follow",
+          "zh": "教程读起来不顺"
+        },
+        "body": {
+          "en": "Check whether headings, steps, examples, and prerequisites follow the user's task rather than the author's implementation notes.",
+          "zh": "检查标题、步骤、示例和前提条件是否围绕读者任务，而不是作者的实现笔记。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reference",
+          "zh": "参考"
+        },
+        "title": {
+          "en": "An API reference hides key conditions",
+          "zh": "API 参考页埋没了使用条件"
+        },
+        "body": {
+          "en": "Review names, parameter descriptions, code formatting, and the placement of limits or caveats.",
+          "zh": "检查名称、参数说明、代码格式，以及限制和注意事项的位置。"
+        }
+      },
+      {
+        "label": {
+          "en": "Copy",
+          "zh": "文案"
+        },
+        "title": {
+          "en": "A release note sounds vague",
+          "zh": "更新说明过于空泛"
+        },
+        "body": {
+          "en": "Look for unsupported adjectives, missing user impact, and phrases that obscure the actual change.",
+          "zh": "找出缺乏依据的形容词、缺失的用户影响，以及掩盖实际变更的表述。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Review these onboarding docs against the current Vercel writing guidelines. Give file:line findings; do not rewrite factual claims.",
+        "zh": "按当前 Vercel 写作规范审查这些入门文档，给出 file:line 问题，不要改写事实陈述。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Specify files and audience",
+          "zh": "说明文件与读者"
+        },
+        "body": {
+          "en": "Provide the documents or file pattern to review. Include the intended reader, document purpose, and terminology that must be preserved.",
+          "zh": "提供文档或文件路径模式。说明目标读者、文档用途，以及需要保留的术语。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review with the current handbook",
+          "zh": "按当前手册审查"
+        },
+        "body": {
+          "en": "Ask the agent to fetch Vercel’s writing handbook and inspect the selected text. Request concise findings with file and line locations.",
+          "zh": "让 Agent 获取 Vercel 当前写作手册并检查所选文本。要求反馈简洁，并附文件与行号。"
+        }
+      },
+      {
+        "title": {
+          "en": "Select and verify edits",
+          "zh": "选择并核对修改"
+        },
+        "body": {
+          "en": "Compare suggestions with your own style requirements before editing. Reread the changed passages for meaning, accuracy, and consistency.",
+          "zh": "修改前先与自己的文风要求比较。完成后重读相关段落，核对含义、准确性与一致性。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Is Writing Guidelines a writing generator?",
+          "zh": "Writing Guidelines 是写作生成器吗？"
+        },
+        "answer": {
+          "en": "No. The documented workflow reviews existing docs or prose and reports issues. Generating new content would need a separate task.",
+          "zh": "不是。原始流程审查已有文档或文案并反馈问题；生成新内容需要另行提出任务。"
+        }
+      },
+      {
+        "question": {
+          "en": "Where are the rules stored?",
+          "zh": "规则保存在哪里？"
+        },
+        "answer": {
+          "en": "The installed SKILL.md points to the separate Vercel writing-handbook source and asks the agent to fetch it fresh for each review.",
+          "zh": "安装的 SKILL.md 指向独立的 Vercel 写作手册来源，并要求 Agent 每次审查时重新获取。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I apply it to non-Vercel docs?",
+          "zh": "非 Vercel 文档可以用吗？"
+        },
+        "answer": {
+          "en": "You can use it as a review lens, but its style preferences belong to Vercel. Keep your own brand and documentation requirements authoritative.",
+          "zh": "可以作为审查视角，但其文风偏好属于 Vercel。你的品牌和文档要求仍应优先。"
+        }
+      },
+      {
+        "question": {
+          "en": "What input does it need?",
+          "zh": "使用时需要提供什么？"
+        },
+        "answer": {
+          "en": "Provide a file or pattern to review. The original workflow asks for target files if none are specified.",
+          "zh": "需要提供待审查文件或路径模式；如果没有指定，原始流程会先询问。"
+        }
+      },
+      {
+        "question": {
+          "en": "How should a review preserve an established brand voice?",
+          "zh": "审查时如何保留已有品牌语气？"
+        },
+        "answer": {
+          "en": "Provide the intended audience and approved terminology alongside the files. Separate a concrete clarity problem from a stylistic preference, and keep terminology consistent instead of replacing distinctive language mechanically.",
+          "zh": "同时提供目标读者和已确认术语，把具体表达问题与风格偏好分开。应保持术语一致，而不是机械替换所有有辨识度的表达。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if the current guideline source cannot be retrieved?",
+          "zh": "无法获取最新规范时还能检查吗？"
+        },
+        "answer": {
+          "en": "State that the source could not be checked. You can still review obvious spelling or clarity issues, but should not claim that the text passed the latest source-specific rules.",
+          "zh": "可以检查明显的拼写或表达问题，但要说明规范未能获取，不能声称文本已经通过最新的一整套规则。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I do when Vercel’s handbook conflicts with our style guide?",
+          "zh": "Vercel 手册与自己的文风规范冲突时怎么办？"
+        },
+        "answer": {
+          "en": "State which local editorial requirements govern the document and ask the agent to identify conflicts. Use handbook findings as review input, then retain the wording and conventions required by your own documentation.",
+          "zh": "先说明这份文档必须遵循的内部编辑要求，让 Agent 标明冲突。将手册意见作为审查参考，再按自己的文档规范决定措辞和格式。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Check documentation and interface copy against current writing guidelines, with concise findings linked to files and lines.",
+      "zh": "根据最新写作规范检查文档与界面文案，以文件和行号呈现清晰、精简的修改建议。"
+    },
+    "overview": {
+      "en": {
+        "title": "About Writing Guidelines",
+        "paragraphs": [
+          "Writing Guidelines is a Vercel Labs Skill for reviewing existing documentation and prose. It retrieves the current Vercel writing handbook, reads specified files, and reports concise findings at file and line locations. The workflow helps an agent connect editorial feedback to the exact text that needs attention, rather than returning a general impression of the document. It suits tutorials, reference pages, and release copy with a defined audience and purpose. The handbook reflects Vercel’s writing preferences, so another team should assess recommendations against its own voice and terminology. Drafting new content or applying edits is a separate task from the documented review."
+        ]
+      },
+      "zh": {
+        "title": "关于 Writing Guidelines",
+        "paragraphs": [
+          "Writing Guidelines 是 Vercel Labs 面向已有文档与文案发布的审查 Skill。它先获取当前 Vercel 写作手册，再读取指定文件，并以文件和行号给出简洁反馈，让 Agent 将编辑意见对应到具体文本。它适合有明确读者与用途的教程、参考文档和更新说明，帮助检查语言与结构是否服务于阅读任务。写作手册体现的是 Vercel 的表达偏好，其他团队应结合自身品牌语气、术语和文档规范判断建议。原始流程的重点是审查；生成新内容或直接修改文件，需要另外明确任务范围。"
+        ]
+      }
+    }
   },
   {
-    "slug": "deploy-to-vercel", "authorHandle": "vercel-labs", "name": "Deploy to Vercel", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/deploy-to-vercel/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": { "en": "Deployment · Preview workflow", "zh": "部署 · 预览工作流" },
-    "seo": { "title": { "en": "Deploy to Vercel Skill: Preview Deployment Workflow", "zh": "Deploy to Vercel Skill：预览部署工作流程" }, "description": { "en": "Understand how the Deploy to Vercel Skill checks project linkage, team scope, and deployment path before creating a preview.", "zh": "了解 Deploy to Vercel Skill 如何检查项目关联、团队范围与部署路径，再创建预览部署。" }, "keywords": { "en": ["deploy to vercel skill", "vercel preview deployment agent skill", "vercel deployment workflow"], "zh": ["Deploy to Vercel Skill", "Vercel 预览部署 Skill", "Vercel 部署工作流"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · Deployment", "zh": "Vercel Labs · 部署" }, "title": { "en": "Deploy to Vercel: know what will go live, and where", "zh": "Deploy to Vercel：先弄清部署到哪里、影响什么" }, "description": { "en": "A deployment Skill that checks repository and Vercel project state, chooses an appropriate path, and defaults to a preview unless production is explicitly requested.", "zh": "部署型 Skill：先检查仓库与 Vercel 项目状态，再选择部署方式；除非明确要求生产环境，否则以预览部署为默认。" } },
-    "summary": { "en": "The original workflow starts with read-only checks for Git remote, project linkage, CLI authentication, and teams. It then selects a deployment route. A linked Git project may use a push, but the source requires asking before pushing.", "zh": "原始流程先只读检查 Git 远端、项目关联、CLI 登录和团队，再决定部署路径。已关联 Git 的项目可能通过推送部署，但原文要求推送前征得用户同意。" },
+    "slug": "deploy-to-vercel",
+    "authorHandle": "vercel-labs",
+    "name": "Deploy to Vercel",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/deploy-to-vercel/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": {
+      "en": "Deployment · Preview workflow",
+      "zh": "部署 · 预览工作流"
+    },
+    "seo": {
+      "title": {
+        "en": "Deploy to Vercel by Vercel Labs | Installation & Guide",
+        "zh": "Deploy to Vercel by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use Deploy to Vercel by Vercel Labs to guide an agent through publishing a project to Vercel. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 Deploy to Vercel，指导 Agent 将项目部署到 Vercel。先检查仓库关联、账户访问和目标团队，再根据项目状态选择部署方式，默认创建可审阅的预览版本，并在明确需要时处理生产发布。"
+      },
+      "keywords": {
+        "en": [
+          "Deploy to Vercel by Vercel Labs",
+          "deploy to vercel skill",
+          "vercel preview deployment agent skill",
+          "vercel deployment workflow"
+        ],
+        "zh": [
+          "Deploy to Vercel by Vercel Labs",
+          "Deploy to Vercel Skill",
+          "Vercel 预览部署 Skill",
+          "Vercel 部署工作流"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · Deployment",
+        "zh": "Vercel Labs · 部署"
+      },
+      "title": {
+        "en": "Deploy to Vercel by Vercel Labs",
+        "zh": "Deploy to Vercel by Vercel Labs"
+      },
+      "description": {
+        "en": "Use Deploy to Vercel by Vercel Labs to guide an agent through publishing a project to Vercel. Check repository linkage, account access, and the intended team, choose a deployment path that fits the project, and create a preview for review before requesting a production release.",
+        "zh": "使用 Vercel Labs 的 Deploy to Vercel，指导 Agent 将项目部署到 Vercel。先检查仓库关联、账户访问和目标团队，再根据项目状态选择部署方式，默认创建可审阅的预览版本，并在明确需要时处理生产发布。"
+      }
+    },
+    "summary": {
+      "en": "The original workflow starts with read-only checks for Git remote, project linkage, CLI authentication, and teams. It then selects a deployment route. A linked Git project may use a push, but the source requires asking before pushing.",
+      "zh": "原始流程先只读检查 Git 远端、项目关联、CLI 登录和团队，再决定部署路径。已关联 Git 的项目可能通过推送部署，但原文要求推送前征得用户同意。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill deploy-to-vercel",
-    "pageCopy": { "kind": { "en": "Deployment workflow Skill", "zh": "部署工作流 Skill" }, "installNote": { "en": "This installs agent instructions, not a Vercel account or a Floatboat deployment integration.", "zh": "这只安装 Agent 指令，不会创建 Vercel 账户或 Floatboat 部署集成。" }, "guideTitle": { "en": "Preview first, with the right project and team", "zh": "先预览，并确认项目和团队" }, "guideIntro": { "en": "Deployment can change external state. The workflow checks linkage and scope before using Git or CLI, and distinguishes preview from production.", "zh": "部署会改变外部状态。该流程先核对项目关联与团队范围，再使用 Git 或 CLI，并区分预览与生产环境。" }, "ctaEyebrow": { "en": "Plan the release", "zh": "规划发布" }, "ctaTitle": { "en": "Keep release decisions beside the work", "zh": "让发布决定与实际工作保持同步" }, "ctaDescription": { "en": "Use Floatboat to review the change, intended environment, and approval trail before invoking an external deployment workflow.", "zh": "在启动外部部署流程前，用 Floatboat 复核改动、目标环境和批准记录。" } },
-    "sectionTitles": { "useCases": { "en": "When this deployment Skill is useful", "zh": "什么时候使用这个部署 Skill" }, "useCasesDescription": { "en": "Use it when the requested result is a Vercel preview or release, not merely a build check.", "zh": "当目标是 Vercel 预览或正式发布，而不只是检查构建时使用。" }, "exclusions": { "en": "Deployment decisions that still need you", "zh": "仍须由你决定的部署问题" }, "how": { "en": "How it chooses a deployment path", "zh": "如何选择部署路径" }, "howDescription": { "en": "The source begins with project-state checks, then uses the available linked Git or CLI path.", "zh": "原文先检查项目状态，再按已关联的 Git 或可用的 CLI 路径执行。" } },
-    "scenarios": [ { "label": { "en": "Preview", "zh": "预览" }, "title": { "en": "Share a reviewable build", "zh": "生成可供审阅的版本" }, "body": { "en": "Ask for a preview URL so a teammate can inspect the change without targeting production.", "zh": "请求预览地址，让同事检查改动，不直接触碰生产环境。" } }, { "label": { "en": "Linkage", "zh": "关联" }, "title": { "en": "The local folder may point to the wrong project", "zh": "本地目录可能关联错项目" }, "body": { "en": "Check existing Vercel link files and Git remote before running any command that might silently connect a project.", "zh": "在运行可能悄悄关联项目的命令前，先核对 Vercel 关联文件与 Git 远端。" } }, { "label": { "en": "Team", "zh": "团队" }, "title": { "en": "Several Vercel teams are available", "zh": "存在多个 Vercel 团队" }, "body": { "en": "Confirm the intended team or use the linked project's org ID instead of guessing an account scope.", "zh": "确认目标团队，或使用已关联项目的组织 ID，不靠猜测选择账户。" } } ],
-    "notFor": [ { "en": "Implicit permission to push commits or deploy production; approval and environment choice still matter.", "zh": "默认获得推送提交或部署生产环境的权限；批准和环境选择仍然重要。" }, { "en": "A generic CI/CD guide for providers other than Vercel.", "zh": "面向其他云厂商的通用 CI/CD 指南。" } ],
-    "seoSections": [ { "title": { "en": "Does Deploy to Vercel publish to production by default?", "zh": "Deploy to Vercel 默认会发布到生产环境吗？" }, "body": { "en": "No. The source says to deploy a preview unless the user explicitly asks for production. It also requires checking the current project and team before choosing a method.", "zh": "不会。原文要求除非用户明确提出生产部署，否则默认创建预览。同时要先核对当前项目与团队，再选择部署方式。" } }, { "title": { "en": "Will it push code without asking?", "zh": "它会不询问就推送代码吗？" }, "body": { "en": "The documented Git-push path requires the agent to ask before pushing. A Skill is guidance to the host agent, not a separate source of permission to change your repository.", "zh": "原文规定，走 Git 推送路径时 Agent 必须先询问。Skill 是给宿主 Agent 的指导，不会单独赋予修改仓库的权限。" } } ],
-    "example": { "prompt": { "en": "Create a Vercel preview for this branch, confirm the linked project and team first, and do not push or deploy production without asking me.", "zh": "为这个分支创建 Vercel 预览，先确认关联的项目和团队；未询问前不要推送或部署生产环境。" }, "result": { "en": "A useful response reports the detected project state, selected preview path, any required approval, and the resulting URL when deployment succeeds.", "zh": "合格结果应说明检测到的项目状态、选择的预览路径、所需批准，以及部署成功后的地址。" } },
-    "steps": [ { "title": { "en": "Check local state", "zh": "检查本地状态" }, "body": { "en": "Read the Git remote, Vercel link files, CLI authentication, and team list.", "zh": "读取 Git 远端、Vercel 关联文件、CLI 登录状态及团队列表。" } }, { "title": { "en": "Select preview route", "zh": "确定预览路径" }, "body": { "en": "Use the linked workflow that matches the project; ask before any Git push.", "zh": "选用与项目关联状态匹配的流程；任何 Git 推送前先询问。" } }, { "title": { "en": "Return and inspect URL", "zh": "返回并检查地址" }, "body": { "en": "Confirm that the preview belongs to the intended project and actually loads.", "zh": "确认预览属于目标项目，并且页面确实可访问。" } } ],
-    "outputs": { "en": ["Confirmed project and team scope", "A preview deployment path", "A reviewable deployment URL when successful"], "zh": ["确认过的项目与团队范围", "预览部署路径", "成功时可供审阅的部署地址"] },
-    "checks": { "en": ["Is the target preview or production?", "Was the Git push explicitly approved?", "Does the deployment belong to the correct project?"], "zh": ["目标是预览还是生产？", "Git 推送是否获得明确批准？", "部署是否属于正确项目？"] },
-    "faq": [ { "question": { "en": "What does this Skill install?", "zh": "安装这个 Skill 会安装什么？" }, "answer": { "en": "It adds agent instructions. You still need appropriate Vercel access and a project that can be built and deployed.", "zh": "它添加 Agent 指令。执行部署仍需适当的 Vercel 权限与可构建的项目。" } }, { "question": { "en": "Is preview deployment the default?", "zh": "默认是预览部署吗？" }, "answer": { "en": "Yes. The source reserves production for an explicit user request.", "zh": "是。原文只在用户明确提出时才走生产部署。" } }, { "question": { "en": "Does it choose a Vercel team automatically?", "zh": "它会自动选择 Vercel 团队吗？" }, "answer": { "en": "A linked project can establish the team. If multiple unlinked teams are possible, the workflow asks which one is intended.", "zh": "已关联项目可以确定团队；若未关联且有多个可用团队，流程会询问目标团队。" } }, { "question": { "en": "How is this different from Vercel CLI with Tokens?", "zh": "它与 Vercel CLI with Tokens 有何不同？" }, "answer": { "en": "Deploy to Vercel is the general deployment-decision workflow. Vercel CLI with Tokens focuses on authenticated CLI operations using an existing access token.", "zh": "Deploy to Vercel 处理一般的部署决策；Vercel CLI with Tokens 聚焦使用已有访问令牌执行 CLI 操作。" } } ]
+    "pageCopy": {
+      "kind": {
+        "en": "Deployment workflow Skill",
+        "zh": "部署工作流 Skill"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Deploy to Vercel",
+        "zh": "Vercel 部署的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore deployment tasks where the project destination and review environment need to be clear. Create a preview for feedback, check an existing local project link, or choose the intended Vercel team before taking the deployment path supported by the current repository and account.",
+        "zh": "探索需要明确目标项目和审阅环境的部署任务，例如生成预览供同事检查、核对本地目录的 Vercel 关联，或在多个团队中选择目标。结合仓库与账户状态，确认适用的部署路径和最终访问地址。"
+      },
+      "how": {
+        "en": "How to Deploy a Project to Vercel",
+        "zh": "How to 部署项目到 Vercel"
+      },
+      "howDescription": {
+        "en": "Tell the agent which project to deploy and whether you need a preview or an explicitly requested production release. Review the repository, project, and team checks, follow the selected deployment path, and verify the returned URL against the intended version and environment.",
+        "zh": "说明待部署项目，以及需要预览还是明确要求的生产发布。核对仓库、项目与团队检查结果，按选定路径完成部署，再通过返回地址检查预期版本和环境；涉及 Git 推送时，先确认具体操作。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Preview",
+          "zh": "预览"
+        },
+        "title": {
+          "en": "Share a reviewable build",
+          "zh": "生成可供审阅的版本"
+        },
+        "body": {
+          "en": "Ask for a preview URL so a teammate can inspect the change without targeting production.",
+          "zh": "请求预览地址，让同事检查改动，不直接触碰生产环境。"
+        }
+      },
+      {
+        "label": {
+          "en": "Linkage",
+          "zh": "关联"
+        },
+        "title": {
+          "en": "The local folder may point to the wrong project",
+          "zh": "本地目录可能关联错项目"
+        },
+        "body": {
+          "en": "Check existing Vercel link files and Git remote before running any command that might silently connect a project.",
+          "zh": "在运行可能悄悄关联项目的命令前，先核对 Vercel 关联文件与 Git 远端。"
+        }
+      },
+      {
+        "label": {
+          "en": "Team",
+          "zh": "团队"
+        },
+        "title": {
+          "en": "Several Vercel teams are available",
+          "zh": "存在多个 Vercel 团队"
+        },
+        "body": {
+          "en": "Confirm the intended team or use the linked project's org ID instead of guessing an account scope.",
+          "zh": "确认目标团队，或使用已关联项目的组织 ID，不靠猜测选择账户。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Create a Vercel preview for this branch, confirm the linked project and team first, and do not push or deploy production without asking me.",
+        "zh": "为这个分支创建 Vercel 预览，先确认关联的项目和团队；未询问前不要推送或部署生产环境。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Check project and team",
+          "zh": "检查项目与团队"
+        },
+        "body": {
+          "en": "Ask the agent to read the Git remote, local Vercel link, authentication, and team context. Confirm the intended project and environment.",
+          "zh": "让 Agent 检查 Git 远端、本地 Vercel 关联、认证和团队信息。确认目标项目与环境。"
+        }
+      },
+      {
+        "title": {
+          "en": "Choose the deployment path",
+          "zh": "选择部署路径"
+        },
+        "body": {
+          "en": "Use the method that matches the linked repository and available access. Review any proposed Git push before authorizing it.",
+          "zh": "采用与仓库关联状态及可用访问权限匹配的方法。涉及 Git 推送时，先审阅具体操作再授权。"
+        }
+      },
+      {
+        "title": {
+          "en": "Verify the deployment URL",
+          "zh": "验证部署地址"
+        },
+        "body": {
+          "en": "Open the returned URL and inspect representative pages. Confirm the project, version, and preview or production destination.",
+          "zh": "打开返回地址并检查代表页面。核对项目、版本，以及预览或生产环境是否正确。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What does this Skill install?",
+          "zh": "安装这个 Skill 会安装什么？"
+        },
+        "answer": {
+          "en": "It adds agent instructions. You still need appropriate Vercel access and a project that can be built and deployed.",
+          "zh": "它添加 Agent 指令。执行部署仍需适当的 Vercel 权限与可构建的项目。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is preview deployment the default?",
+          "zh": "默认是预览部署吗？"
+        },
+        "answer": {
+          "en": "Yes. The source reserves production for an explicit user request.",
+          "zh": "是。原文只在用户明确提出时才走生产部署。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it choose a Vercel team automatically?",
+          "zh": "它会自动选择 Vercel 团队吗？"
+        },
+        "answer": {
+          "en": "A linked project can establish the team. If multiple unlinked teams are possible, the workflow asks which one is intended.",
+          "zh": "已关联项目可以确定团队；若未关联且有多个可用团队，流程会询问目标团队。"
+        }
+      },
+      {
+        "question": {
+          "en": "How is this different from Vercel CLI with Tokens?",
+          "zh": "它与 Vercel CLI with Tokens 有何不同？"
+        },
+        "answer": {
+          "en": "Deploy to Vercel is the general deployment-decision workflow. Vercel CLI with Tokens focuses on authenticated CLI operations using an existing access token.",
+          "zh": "Deploy to Vercel 处理一般的部署决策；Vercel CLI with Tokens 聚焦使用已有访问令牌执行 CLI 操作。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I verify before a deployment can affect production?",
+          "zh": "可能影响生产环境前需要核对什么？"
+        },
+        "answer": {
+          "en": "Confirm the intended project, team, branch, and deployment target. Review environment settings and the proposed action, and obtain authorization for a production-changing step before executing it.",
+          "zh": "核对项目、团队、分支和部署目标，检查环境配置与准备执行的动作。会改变生产状态的步骤，应在执行前明确获得授权。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I confirm that the intended version is actually live?",
+          "zh": "怎样确认上线的是预期版本？"
+        },
+        "answer": {
+          "en": "Check the deployment result and the URL that serves the intended environment. Compare the revision and representative page behavior; a completed upload alone does not prove that production traffic uses it.",
+          "zh": "检查部署结果及对应环境的访问地址，核对版本和代表页面行为。文件上传成功本身不能证明生产流量已切换到这次版本。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will the Skill push code without asking?",
+          "zh": "这个 Skill 会不询问就推送代码吗？"
+        },
+        "answer": {
+          "en": "The source’s linked-Git deployment path explicitly requires approval before pushing. Review the target branch and project first, since a push may trigger the repository’s configured deployment workflow.",
+          "zh": "原始说明中的已关联 Git 部署路径要求推送前获得授权。应先核对目标分支和项目，因为推送可能触发仓库已配置的部署流程。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Prepare a Vercel deployment by checking project linkage, CLI access, and team context before choosing an authorized deployment route.",
+      "zh": "检查 Vercel 项目关联、CLI 登录和团队信息，在获得授权后选择合适的部署方式。"
+    },
+    "overview": {
+      "en": {
+        "title": "About Deploy to Vercel",
+        "paragraphs": [
+          "Deploy to Vercel is a Vercel Labs Skill that guides an agent through selecting and carrying out a deployment workflow. It starts by checking the Git remote, local Vercel project linkage, CLI authentication, and available teams. Those checks establish the intended destination before the agent chooses a linked Git or another supported deployment route. The source defaults to preview deployments unless production is explicitly requested and requires approval before pushing code through its Git path. Installing the Skill supplies workflow instructions; a deployable project and the required account access are still needed. After deployment, verify the returned URL and project rather than treating an upload as proof of the intended result."
+        ]
+      },
+      "zh": {
+        "title": "关于 Deploy to Vercel",
+        "paragraphs": [
+          "Deploy to Vercel 是 Vercel Labs 发布的部署流程 Skill，指导 Agent 根据项目当前状态选择并执行 Vercel 部署。流程先检查 Git 远端、本地 Vercel 关联、CLI 认证和可用团队，确认目标后再选择已关联 Git 或其他受支持的部署路径。原始说明默认创建预览，只有用户明确要求时才进行生产部署；走 Git 推送路径时，也需要先获得授权。安装 Skill 提供的是流程指引，实际部署仍需可构建项目及相应账户访问。完成后应核对返回地址、所属项目和页面表现，确认得到的是预期环境与版本。"
+        ]
+      }
+    }
   },
   {
-    "slug": "vercel-cli-with-tokens", "authorHandle": "vercel-labs", "name": "Vercel CLI with Tokens", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/vercel-cli-with-tokens/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": { "en": "Deployment · Token authentication", "zh": "部署 · 令牌认证" },
-    "seo": { "title": { "en": "Vercel CLI with Tokens Skill: Authenticated Agent Workflow", "zh": "Vercel CLI with Tokens Skill：令牌认证工作流" }, "description": { "en": "See when the Vercel CLI with Tokens Skill applies, how it identifies project scope, and how to avoid exposing access tokens.", "zh": "了解 Vercel CLI with Tokens Skill 适用场景、项目范围确认方式与令牌保密要求。" }, "keywords": { "en": ["vercel cli with tokens skill", "vercel token deployment skill", "vercel cli agent authentication"], "zh": ["Vercel CLI with Tokens", "Vercel 令牌部署 Skill", "Vercel CLI 认证"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · CLI authentication", "zh": "Vercel Labs · CLI 认证" }, "title": { "en": "Vercel CLI with Tokens: scope the account before the command", "zh": "Vercel CLI with Tokens：运行命令前先确认账户范围" }, "description": { "en": "A Skill for Vercel CLI work when an access token, rather than interactive login, is the authentication path. It emphasizes token handling and project/team targeting.", "zh": "当 Vercel CLI 使用访问令牌而不是交互登录时，这个 Skill 指导令牌处理，以及项目与团队的准确定位。" } },
-    "summary": { "en": "The source first checks where the token and project identifiers come from. It warns against placing tokens in command-line arguments and distinguishes authentication from knowing which project and organization a command will affect.", "zh": "原始流程先确认令牌和项目标识的来源，明确警告不要把令牌写在命令行参数中，并区分“已认证”和“知道命令会影响哪个项目及组织”。" },
+    "slug": "vercel-cli-with-tokens",
+    "authorHandle": "vercel-labs",
+    "name": "Vercel CLI with Tokens",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/vercel-cli-with-tokens/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": {
+      "en": "Deployment · Token authentication",
+      "zh": "部署 · 令牌认证"
+    },
+    "seo": {
+      "title": {
+        "en": "Vercel CLI with Tokens by Vercel Labs | Installation & Guide",
+        "zh": "Vercel CLI with Tokens by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use Vercel CLI with Tokens by Vercel Labs to guide deployment and project management with token-based authentication. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 Vercel CLI with Tokens，通过令牌认证指导部署与项目管理。先确认已授权的凭据来源和目标项目、团队，再执行对应 CLI 任务，适用于不依赖交互登录的工作环境，并避免在报告中暴露令牌值。"
+      },
+      "keywords": {
+        "en": [
+          "Vercel CLI with Tokens by Vercel Labs",
+          "vercel cli with tokens skill",
+          "vercel token deployment skill",
+          "vercel cli agent authentication"
+        ],
+        "zh": [
+          "Vercel CLI with Tokens by Vercel Labs",
+          "Vercel CLI with Tokens",
+          "Vercel 令牌部署 Skill",
+          "Vercel CLI 认证"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · CLI authentication",
+        "zh": "Vercel Labs · CLI 认证"
+      },
+      "title": {
+        "en": "Vercel CLI with Tokens by Vercel Labs",
+        "zh": "Vercel CLI with Tokens by Vercel Labs"
+      },
+      "description": {
+        "en": "Use Vercel CLI with Tokens by Vercel Labs to guide deployment and project management with token-based authentication. Identify the approved credential source, confirm the project and team, and carry out the requested CLI task without depending on an interactive login or exposing token values in reports.",
+        "zh": "使用 Vercel Labs 的 Vercel CLI with Tokens，通过令牌认证指导部署与项目管理。先确认已授权的凭据来源和目标项目、团队，再执行对应 CLI 任务，适用于不依赖交互登录的工作环境，并避免在报告中暴露令牌值。"
+      }
+    },
+    "summary": {
+      "en": "The source first checks where the token and project identifiers come from. It warns against placing tokens in command-line arguments and distinguishes authentication from knowing which project and organization a command will affect.",
+      "zh": "原始流程先确认令牌和项目标识的来源，明确警告不要把令牌写在命令行参数中，并区分“已认证”和“知道命令会影响哪个项目及组织”。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-cli-with-tokens",
-    "pageCopy": { "kind": { "en": "Authenticated CLI workflow Skill", "zh": "已认证 CLI 工作流 Skill" }, "installNote": { "en": "Installs instructions only. A Vercel token and correctly scoped project access are separate prerequisites.", "zh": "只安装指令；Vercel 令牌与准确的项目权限是另外的前提。" }, "guideTitle": { "en": "Authentication is not project selection", "zh": "认证成功不等于项目选择正确" }, "guideIntro": { "en": "A valid token can access several projects or teams. Confirm the target before any command that changes Vercel state.", "zh": "一个有效令牌可能访问多个项目或团队；执行任何会改变 Vercel 状态的命令前，都要确认目标。" }, "ctaEyebrow": { "en": "Keep control", "zh": "保留控制权" }, "ctaTitle": { "en": "Review the target before running deployment commands", "zh": "运行部署命令前，先复核目标" }, "ctaDescription": { "en": "Use Floatboat to keep the task and target-project decision explicit. Handle secret tokens only through your approved environment.", "zh": "用 Floatboat 明确记录任务与目标项目决定；敏感令牌只应通过已批准的环境管理。" } },
-    "sectionTitles": { "useCases": { "en": "When token-based CLI guidance helps", "zh": "何时需要令牌式 CLI 指导" }, "useCasesDescription": { "en": "Use it when a Vercel access token is the approved authentication mechanism for deployment or management.", "zh": "当团队批准使用 Vercel 访问令牌进行部署或管理时使用。" }, "exclusions": { "en": "What the Skill will not provide", "zh": "这个 Skill 不会提供什么" }, "how": { "en": "How it scopes a token-based operation", "zh": "如何定位令牌操作的范围" }, "howDescription": { "en": "Locate auth, identify project and organization, then execute a bounded Vercel CLI task.", "zh": "先定位认证信息，再识别项目和组织，最后执行有边界的 CLI 任务。" } },
-    "scenarios": [ { "label": { "en": "CI", "zh": "自动化" }, "title": { "en": "A non-interactive environment needs Vercel access", "zh": "非交互环境需要 Vercel 权限" }, "body": { "en": "Use an existing secret-managed token without relying on an interactive vercel login session.", "zh": "使用由密钥管理系统保存的既有令牌，不依赖交互式 vercel login。" } }, { "label": { "en": "Scope", "zh": "范围" }, "title": { "en": "One token can reach multiple projects", "zh": "一个令牌可访问多个项目" }, "body": { "en": "Confirm project and organization identifiers before changing environment variables or deploying.", "zh": "修改环境变量或部署前，确认项目与组织标识。" } }, { "label": { "en": "Security", "zh": "保密" }, "title": { "en": "A command could expose a secret", "zh": "命令可能泄露密钥" }, "body": { "en": "Keep tokens out of pasted commands, logs, and review comments; use the approved environment mechanism.", "zh": "不要把令牌粘进命令、日志或审查评论；使用已批准的环境管理方式。" } } ],
-    "notFor": [ { "en": "Obtaining a token or permission you do not already have.", "zh": "获取尚未拥有的令牌或权限。" }, { "en": "Treating any authenticated account as the correct deployment target.", "zh": "把任意已登录账户当成正确的部署目标。" } ],
-    "seoSections": [ { "title": { "en": "Why avoid passing a Vercel token on the command line?", "zh": "为什么不要在命令行中传 Vercel 令牌？" }, "body": { "en": "The source warns that command arguments can appear in shell history and process listings. Its workflow uses the CLI's environment-based token handling and requires care with outputs and logs.", "zh": "原文提醒命令参数可能出现在 Shell 历史和进程列表中，因此流程使用 CLI 的环境变量认证，同时要谨慎处理输出与日志。" } }, { "title": { "en": "How does this differ from Deploy to Vercel?", "zh": "它与 Deploy to Vercel 的侧重点有何不同？" }, "body": { "en": "Deploy to Vercel begins with selecting an overall deployment path and preview environment. This Skill is narrower: operating Vercel CLI securely when token-based authentication is already the chosen path.", "zh": "Deploy to Vercel 先决定整体部署方式与预览环境；这个 Skill 更窄，专门处理已选择令牌认证时如何安全操作 Vercel CLI。" } } ],
-    "example": { "prompt": { "en": "Use the approved Vercel token to inspect this project's environment settings. Confirm project and team IDs first; never print the token.", "zh": "使用已批准的 Vercel 令牌检查这个项目的环境设置，先核对项目和团队 ID，绝不要输出令牌。" }, "result": { "en": "A useful answer reports the confirmed target and requested settings while redacting secrets and avoiding unrelated account changes.", "zh": "合格结果应确认目标、反馈所请求的设置，并隐藏密钥、不改动无关账户。" } },
-    "steps": [ { "title": { "en": "Identify the approved token source", "zh": "确认已批准的令牌来源" }, "body": { "en": "Use the environment or secret store without revealing the token value in chat or commands.", "zh": "通过环境或密钥管理系统使用令牌，不在聊天或命令中暴露其值。" } }, { "title": { "en": "Resolve project and team", "zh": "确定项目与团队" }, "body": { "en": "Verify IDs or linked configuration instead of assuming the current CLI context.", "zh": "核对标识或已关联配置，不想当然地使用当前 CLI 上下文。" } }, { "title": { "en": "Run the authorized operation", "zh": "执行已授权操作" }, "body": { "en": "Limit commands to the requested project and keep secret-bearing output out of reports.", "zh": "把命令限制在目标项目，报告中不包含敏感输出。" } } ],
-    "outputs": { "en": ["A confirmed Vercel project and organization", "A bounded CLI action", "A report with secrets omitted"], "zh": ["确认过的 Vercel 项目与组织", "范围明确的 CLI 操作", "不包含密钥的执行报告"] },
-    "checks": { "en": ["Is the token source approved?", "Do project and team identifiers match the request?", "Could command or log output reveal a secret?"], "zh": ["令牌来源是否已获批准？", "项目与团队标识是否符合请求？", "命令或日志输出是否可能泄露密钥？"] },
-    "faq": [ { "question": { "en": "Does the Skill give me a Vercel token?", "zh": "这个 Skill 会提供 Vercel 令牌吗？" }, "answer": { "en": "No. It guides use of an existing, authorized token. Creating or granting access is separate account work.", "zh": "不会。它指导使用已有且获授权的令牌；创建令牌或授予权限属于另一个账户操作。" } }, { "question": { "en": "Can I paste a token into the prompt?", "zh": "可以把令牌粘贴到提示词里吗？" }, "answer": { "en": "Avoid it. Use your approved secret-management environment and keep token values out of chat, commands, and reports.", "zh": "应避免。通过获批准的密钥管理环境使用，并让令牌值远离聊天、命令和报告。" } }, { "question": { "en": "Why check both project and organization?", "zh": "为什么项目与组织都要确认？" }, "answer": { "en": "A valid token may cover multiple scopes. Authentication alone does not prove that a CLI command points to the intended project.", "zh": "有效令牌可能覆盖多个范围；认证成功不能证明命令指向了目标项目。" } }, { "question": { "en": "Is interactive login required?", "zh": "必须交互登录吗？" }, "answer": { "en": "No. The Skill is specifically for token-based CLI work instead of depending on an interactive vercel login session.", "zh": "不必。这个 Skill 专门用于令牌式 CLI 操作，不依赖交互式 vercel login。" } } ]
+    "pageCopy": {
+      "kind": {
+        "en": "Authenticated CLI workflow Skill",
+        "zh": "已认证 CLI 工作流 Skill"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Vercel CLI with Tokens",
+        "zh": "Vercel 令牌认证的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore CLI tasks in environments that already use an authorized Vercel token. Connect a CI job, target the right project when one credential reaches several scopes, or review credential handling before deployment and environment-variable management in a non-interactive workflow.",
+        "zh": "探索已采用授权 Vercel 令牌的 CLI 工作场景，例如为 CI 任务提供访问、在多个项目中定位操作对象，或在部署与环境变量管理前检查凭据使用方式。将认证来源与目标范围分开核对，减少环境判断错误。"
+      },
+      "how": {
+        "en": "How to Use Vercel CLI with Tokens",
+        "zh": "How to 使用令牌操作 Vercel CLI"
+      },
+      "howDescription": {
+        "en": "Identify the approved token source without exposing its value, then verify the target project and organization. Ask the agent to perform only the requested CLI operation in that scope, and check the resulting deployment or configuration while keeping credentials out of the report.",
+        "zh": "在不暴露值的前提下确认已授权令牌来源，再核对项目与组织。让 Agent 在该范围内执行明确请求的 CLI 操作，随后检查部署或配置结果，并确保报告不包含凭据值和敏感日志。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "CI",
+          "zh": "自动化"
+        },
+        "title": {
+          "en": "A non-interactive environment needs Vercel access",
+          "zh": "非交互环境需要 Vercel 权限"
+        },
+        "body": {
+          "en": "Use an existing secret-managed token without relying on an interactive vercel login session.",
+          "zh": "使用由密钥管理系统保存的既有令牌，不依赖交互式 vercel login。"
+        }
+      },
+      {
+        "label": {
+          "en": "Scope",
+          "zh": "范围"
+        },
+        "title": {
+          "en": "One token can reach multiple projects",
+          "zh": "一个令牌可访问多个项目"
+        },
+        "body": {
+          "en": "Confirm project and organization identifiers before changing environment variables or deploying.",
+          "zh": "修改环境变量或部署前，确认项目与组织标识。"
+        }
+      },
+      {
+        "label": {
+          "en": "Security",
+          "zh": "保密"
+        },
+        "title": {
+          "en": "A command could expose a secret",
+          "zh": "命令可能泄露密钥"
+        },
+        "body": {
+          "en": "Keep tokens out of pasted commands, logs, and review comments; use the approved environment mechanism.",
+          "zh": "不要把令牌粘进命令、日志或审查评论；使用已批准的环境管理方式。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use the approved Vercel token to inspect this project's environment settings. Confirm project and team IDs first; never print the token.",
+        "zh": "使用已批准的 Vercel 令牌检查这个项目的环境设置，先核对项目和团队 ID，绝不要输出令牌。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Confirm the credential source",
+          "zh": "确认凭据来源"
+        },
+        "body": {
+          "en": "Identify the approved environment or secret store used for authentication. Keep the token value out of prompts, copied commands, and reports.",
+          "zh": "确认认证使用的已授权环境或密钥存储。不要把令牌值写入提示词、复制的命令或报告。"
+        }
+      },
+      {
+        "title": {
+          "en": "Resolve project and organization",
+          "zh": "确定项目与组织"
+        },
+        "body": {
+          "en": "Check project identifiers and team scope before any change. Compare them with the Vercel project the user intends to manage.",
+          "zh": "任何变更前先核对项目标识与团队范围。将其与用户希望管理的 Vercel 项目对应。"
+        }
+      },
+      {
+        "title": {
+          "en": "Run and verify the operation",
+          "zh": "执行并核对操作"
+        },
+        "body": {
+          "en": "Ask the agent to carry out the requested CLI task in the confirmed scope. Verify the result without including secrets in logs or summaries.",
+          "zh": "让 Agent 在已确认范围内完成请求的 CLI 任务。核对结果，避免日志或总结包含密钥。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does the Skill give me a Vercel token?",
+          "zh": "这个 Skill 会提供 Vercel 令牌吗？"
+        },
+        "answer": {
+          "en": "No. It guides use of an existing, authorized token. Creating or granting access is separate account work.",
+          "zh": "不会。它指导使用已有且获授权的令牌；创建令牌或授予权限属于另一个账户操作。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I paste a token into the prompt?",
+          "zh": "可以把令牌粘贴到提示词里吗？"
+        },
+        "answer": {
+          "en": "Avoid it. Use your approved secret-management environment and keep token values out of chat, commands, and reports.",
+          "zh": "应避免。通过获批准的密钥管理环境使用，并让令牌值远离聊天、命令和报告。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why check both project and organization?",
+          "zh": "为什么项目与组织都要确认？"
+        },
+        "answer": {
+          "en": "A valid token may cover multiple scopes. Authentication alone does not prove that a CLI command points to the intended project.",
+          "zh": "有效令牌可能覆盖多个范围；认证成功不能证明命令指向了目标项目。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is interactive login required?",
+          "zh": "必须交互登录吗？"
+        },
+        "answer": {
+          "en": "No. The Skill is specifically for token-based CLI work instead of depending on an interactive vercel login session.",
+          "zh": "不必。这个 Skill 专门用于令牌式 CLI 操作，不依赖交互式 vercel login。"
+        }
+      },
+      {
+        "question": {
+          "en": "Where should a CI job obtain its token?",
+          "zh": "CI 任务应从哪里获取令牌？"
+        },
+        "answer": {
+          "en": "Use the CI platform’s secret storage and expose the credential only to the authorized job. Keep it out of source files, printed commands, generated artifacts, and copied troubleshooting logs.",
+          "zh": "通过 CI 平台的密钥存储提供给获授权的任务，不把令牌写进源码、打印的命令、构建产物或复制出的排错日志。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I do if a token may have leaked?",
+          "zh": "怀疑令牌泄露后应该怎么办？"
+        },
+        "answer": {
+          "en": "Revoke the exposed credential and replace it through the account’s normal credential controls. Update the affected secret store and check which project actions may have used the old token.",
+          "zh": "通过账号的凭据管理撤销旧令牌并替换，更新相关密钥存储，同时检查旧令牌可能执行过哪些项目操作。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I check that the CLI operation used the intended project?",
+          "zh": "如何检查 CLI 操作是否作用于预期项目？"
+        },
+        "answer": {
+          "en": "Compare the resolved project and organization identifiers with your known Vercel project before the operation. Afterward, verify the deployment or configuration in that same project rather than relying on authentication success alone.",
+          "zh": "操作前将解析出的项目和组织标识与已知 Vercel 项目对应，完成后在同一项目核对部署或配置。不能仅凭认证成功判断目标正确。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Use Vercel CLI token workflows with explicit project context and careful handling of credentials and organization identifiers.",
+      "zh": "为 Vercel CLI 令牌流程明确项目与组织上下文，规范凭据来源及敏感信息处理。"
+    },
+    "overview": {
+      "en": {
+        "title": "About Vercel CLI with Tokens",
+        "paragraphs": [
+          "Vercel CLI with Tokens is an Agent Skill for Vercel CLI work where an access token is the chosen authentication method. It guides the agent to locate the existing credential source, resolve project and organization identifiers, and perform the requested deployment or management task in the intended scope. This is useful in non-interactive environments or when project access is supplied through managed secrets. Authentication alone does not identify which project an action should affect. The source also warns against putting tokens in command-line arguments. Installing the Skill does not create a token or grant access; those remain account and environment prerequisites."
+        ]
+      },
+      "zh": {
+        "title": "关于 Vercel CLI with Tokens",
+        "paragraphs": [
+          "Vercel CLI with Tokens 是 Vercel Labs 面向令牌式 Vercel CLI 操作发布的 Agent Skill。它指导 Agent 确认已有凭据来源，解析项目与组织标识，再在目标范围内完成部署或管理任务，适用于非交互环境或通过密钥管理系统提供访问的工作流程。认证成功并不能单独确定操作对象，因此项目与团队需要分别核对。原始说明也提醒不要将令牌放进命令行参数。安装 Skill 不会生成令牌或授予账户访问；这些仍是账户与环境的前提，具体使用应避免在聊天、日志和报告中暴露凭据值。"
+        ]
+      }
+    }
   },
   {
-    "slug": "vercel-optimize", "authorHandle": "vercel-labs", "name": "Vercel Optimize", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/vercel-optimize/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": { "en": "Vercel · Cost and performance audit", "zh": "Vercel · 成本与性能审查" },
-    "seo": { "title": { "en": "Vercel Optimize Skill for Cost and Performance Audits", "zh": "Vercel Optimize Skill：成本与性能审查" }, "description": { "en": "Explore Vercel Optimize's metrics-first workflow for investigating costly routes, function usage, caching, and performance with verified evidence.", "zh": "了解 Vercel Optimize 如何先看指标，再调查高成本路由、函数使用、缓存和性能问题。" }, "keywords": { "en": ["vercel optimize skill", "vercel cost optimization agent skill", "vercel performance audit skill"], "zh": ["Vercel Optimize Skill", "Vercel 成本优化", "Vercel 性能审查"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · Metrics-first audit", "zh": "Vercel Labs · 指标优先审查" }, "title": { "en": "Vercel Optimize: investigate what the metrics point to", "zh": "Vercel Optimize：让指标决定先查哪里" }, "description": { "en": "A Vercel cost and performance Skill that collects production signals before reading code, then narrows investigation to routes and files backed by evidence.", "zh": "面向 Vercel 成本与性能的 Skill：先收集生产指标，再把代码调查范围缩到有证据指向的路由与文件。" } },
-    "summary": { "en": "The source prescribes an observability-first audit, not a repository-wide optimization sweep. Its scripts collect and merge Vercel signals, gate investigations, and produce ranked recommendations; route-level advice depends on access and observability prerequisites.", "zh": "原始流程强调可观测性优先，而非全仓库随意扫一遍。它用脚本汇总 Vercel 信号、筛选调查对象并排序建议；路由级结论依赖相应权限和可观测性前提。" },
+    "slug": "vercel-optimize",
+    "authorHandle": "vercel-labs",
+    "name": "Vercel Optimize",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/vercel-optimize/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": {
+      "en": "Vercel · Cost and performance audit",
+      "zh": "Vercel · 成本与性能审查"
+    },
+    "seo": {
+      "title": {
+        "en": "Vercel Optimize by Vercel Labs | Installation & Guide",
+        "zh": "Vercel Optimize by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use Vercel Optimize by Vercel Labs to investigate cost and performance in a deployed Vercel project. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 Vercel Optimize，调查已部署 Vercel 项目的成本与性能。先收集用量与生产信号，再确定有证据支持的路由和设置，结合框架版本、相关源码与可观测性权限，形成有优先级的改进建议。"
+      },
+      "keywords": {
+        "en": [
+          "Vercel Optimize by Vercel Labs",
+          "vercel optimize skill",
+          "vercel cost optimization agent skill",
+          "vercel performance audit skill"
+        ],
+        "zh": [
+          "Vercel Optimize by Vercel Labs",
+          "Vercel Optimize Skill",
+          "Vercel 成本优化",
+          "Vercel 性能审查"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · Metrics-first audit",
+        "zh": "Vercel Labs · 指标优先审查"
+      },
+      "title": {
+        "en": "Vercel Optimize by Vercel Labs",
+        "zh": "Vercel Optimize by Vercel Labs"
+      },
+      "description": {
+        "en": "Use Vercel Optimize by Vercel Labs to investigate cost and performance in a deployed Vercel project. Start with usage and production signals, identify routes or settings supported by evidence, and review prioritized recommendations tied to the project’s framework, source files, and available observability access.",
+        "zh": "使用 Vercel Labs 的 Vercel Optimize，调查已部署 Vercel 项目的成本与性能。先收集用量与生产信号，再确定有证据支持的路由和设置，结合框架版本、相关源码与可观测性权限，形成有优先级的改进建议。"
+      }
+    },
+    "summary": {
+      "en": "The source prescribes an observability-first audit, not a repository-wide optimization sweep. Its scripts collect and merge Vercel signals, gate investigations, and produce ranked recommendations; route-level advice depends on access and observability prerequisites.",
+      "zh": "原始流程强调可观测性优先，而非全仓库随意扫一遍。它用脚本汇总 Vercel 信号、筛选调查对象并排序建议；路由级结论依赖相应权限和可观测性前提。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-optimize",
-    "pageCopy": { "kind": { "en": "Metrics-led audit Skill with scripts", "zh": "带脚本的指标驱动审查 Skill" }, "installNote": { "en": "Installs upstream instructions and bundled resources; Vercel CLI access and Observability Plus may still be required.", "zh": "安装上游指令及附带资源；仍可能需要 Vercel CLI 权限和 Observability Plus。" }, "guideTitle": { "en": "Evidence before optimization advice", "zh": "优化建议要先有证据" }, "guideIntro": { "en": "Its gate narrows work to measurable candidates. A missing metric or ambiguous project scope is a limitation to report, not a cue to invent savings.", "zh": "筛选流程只处理有数据支持的候选项。缺少指标或项目范围不明确时，应报告限制，不能凭空估算收益。" }, "ctaEyebrow": { "en": "Prioritize the work", "zh": "确定优先级" }, "ctaTitle": { "en": "Turn verified bottlenecks into bounded tasks", "zh": "把已验证的瓶颈拆成有边界的任务" }, "ctaDescription": { "en": "Bring the metric, affected route, and proposed change into Floatboat; keep the original Vercel audit source and access requirements visible.", "zh": "在 Floatboat 中并排整理指标、受影响路由与修改建议，同时保留原始审查来源和访问要求。" } },
-    "sectionTitles": { "useCases": { "en": "When Vercel Optimize fits", "zh": "何时适合使用 Vercel Optimize" }, "useCasesDescription": { "en": "Use it for a deployed Vercel project with a specific cost or performance question and accessible production signals.", "zh": "当 Vercel 已部署项目有明确的成本或性能问题，而且能访问生产指标时使用。" }, "exclusions": { "en": "Where evidence may be missing", "zh": "哪些情况缺少必要证据" }, "how": { "en": "How a metrics-first audit proceeds", "zh": "指标优先审查如何进行" }, "howDescription": { "en": "Project scope and signals come first; code reading follows only candidates selected by the gate.", "zh": "先确认项目范围并收集信号，只有筛选出的候选项才进入代码调查。" } },
-    "scenarios": [ { "label": { "en": "Cost", "zh": "成本" }, "title": { "en": "Function usage rose unexpectedly", "zh": "函数使用量突然上升" }, "body": { "en": "Check usage and route metrics before attributing the bill change to a particular endpoint or cache setting.", "zh": "先看使用量和路由指标，再判断账单变化是否与某个端点或缓存设置有关。" } }, { "label": { "en": "Routes", "zh": "路由" }, "title": { "en": "One page seems expensive or slow", "zh": "某个页面似乎既慢又贵" }, "body": { "en": "Let measured route signals identify which source files and settings deserve investigation.", "zh": "由可测量的路由信号决定哪些源码文件和设置值得调查。" } }, { "label": { "en": "Cache", "zh": "缓存" }, "title": { "en": "A cache change is being proposed", "zh": "有人建议修改缓存" }, "body": { "en": "Confirm the current hit pattern and framework behavior before recommending ISR, middleware, or response-cache changes.", "zh": "在建议 ISR、中间件或响应缓存改动前，先确认当前命中模式和框架行为。" } } ],
-    "notFor": [ { "en": "A precise savings claim when metrics, usage, or project scope cannot be verified.", "zh": "在指标、使用量或项目范围无法核实时给出精确节省金额。" }, { "en": "An unrestricted code sweep of an unlinked or unsupported project.", "zh": "对未关联或不支持的项目做无边界全仓代码扫描。" } ],
-    "seoSections": [ { "title": { "en": "Why does Vercel Optimize start with metrics?", "zh": "Vercel Optimize 为什么先看指标？" }, "body": { "en": "The source explicitly delays source-code inspection until collected signals and a deterministic gate point to a candidate. That helps distinguish high-cost routes from merely suspicious code patterns.", "zh": "原文明确要求先收集信号并通过确定性筛选，再阅读被指标指向的源码。这样可以区分真正高成本的路由和只是看起来可疑的代码。" } }, { "title": { "en": "What access is needed for route-level recommendations?", "zh": "获得路由级建议需要什么权限？" }, "body": { "en": "The source lists a linked Vercel project, supported CLI and Node versions, correct account scope, and Observability Plus for route-level metric-backed advice. Without those, the audit must state the limitation.", "zh": "原文列出项目关联、受支持的 CLI 与 Node 版本、正确账户范围；路由级指标建议还需要 Observability Plus。缺少这些条件时，审查必须说明限制。" } } ],
-    "example": { "prompt": { "en": "Investigate last month's Vercel function-cost increase. Confirm the project scope, use available metrics, and rank only evidence-backed opportunities.", "zh": "调查上个月 Vercel 函数成本上涨。先确认项目范围，读取可用指标，只排序有证据支持的优化机会。" }, "result": { "en": "A useful audit names measured routes, supporting signals, bounded code locations, prerequisites, and uncertainty; it does not invent a savings figure.", "zh": "合格审查应指出测量过的路由、支撑指标、有限的代码位置、前提和不确定性，不编造节省金额。" } },
-    "steps": [ { "title": { "en": "Resolve project scope", "zh": "确认项目范围" }, "body": { "en": "Identify the linked project and owner before collecting metrics or usage.", "zh": "读取指标或用量前，先确认关联项目和所属账户。" } }, { "title": { "en": "Collect and gate signals", "zh": "收集并筛选信号" }, "body": { "en": "Use the bundled collection and gate workflow to select measurable candidates.", "zh": "用附带的收集和筛选流程挑选有指标支撑的候选项。" } }, { "title": { "en": "Inspect and rank", "zh": "调查并排序" }, "body": { "en": "Read only the candidate's route-local files, then present verified, version-aware recommendations.", "zh": "只阅读候选路由相关文件，再给出经过核实且匹配版本的建议。" } } ],
-    "outputs": { "en": ["A signal-backed candidate list", "Ranked cost or performance recommendations", "Explicit blockers and data limitations"], "zh": ["有指标支撑的候选列表", "按优先级排序的成本或性能建议", "明确的阻碍与数据限制"] },
-    "checks": { "en": ["Is the Vercel project and owner unambiguous?", "Are route metrics available for the desired claim?", "Does the framework fall within supported scope?"], "zh": ["Vercel 项目与所属账户是否明确？", "所需结论有路由指标支持吗？", "框架是否在支持范围内？"] },
-    "faq": [ { "question": { "en": "Does Vercel Optimize scan the entire repository first?", "zh": "Vercel Optimize 会先扫描整个仓库吗？" }, "answer": { "en": "No. Its documented doctrine collects production signals first and gates code investigation to metric-backed candidates.", "zh": "不会。原始原则先收集生产信号，再把代码调查限定在有指标支持的候选项。" } }, { "question": { "en": "Can it estimate savings without Observability Plus?", "zh": "没有 Observability Plus 能估算节省金额吗？" }, "answer": { "en": "Route-level metric-backed recommendations require the stated observability access. Missing data should be reported as a limitation, not replaced with invented precision.", "zh": "路由级指标建议依赖原文要求的可观测性权限。缺少数据应明确说明，不能用虚构的精确数字代替。" } }, { "question": { "en": "Which frameworks does it address?", "zh": "它适用于哪些框架？" }, "answer": { "en": "The source lists strong support for Next.js, support for SvelteKit and Nuxt, limited Astro support, and a restricted path for others. Check the current source before running an audit.", "zh": "原文对 Next.js 支持最完整，也支持 SvelteKit、Nuxt；Astro 有限，其他框架需要受限流程。运行前应核对当前来源。" } }, { "question": { "en": "Is it only a prose checklist?", "zh": "它只是文字检查清单吗？" }, "answer": { "en": "No. The Skill bundles scripts and references for signal collection, gating, and report generation. Those still depend on authorized Vercel access.", "zh": "不是。它带有信号收集、筛选和报告所需的脚本及参考资料，但仍依赖已授权的 Vercel 访问。" } } ]
+    "pageCopy": {
+      "kind": {
+        "en": "Metrics-led audit Skill with scripts",
+        "zh": "带脚本的指标驱动审查 Skill"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Vercel Optimize",
+        "zh": "Vercel 成本与性能优化的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore optimization questions backed by a deployed project’s usage and route signals. Investigate unexpected function consumption, a slow or expensive route, or a proposed cache change, and use the available evidence to decide which source files and settings deserve closer inspection.",
+        "zh": "探索能够结合部署项目用量与路由信号调查的优化问题：函数消耗异常、某个页面成本或延迟偏高，或准备调整缓存策略。先用可获得的证据确定调查重点，再检查相关文件与设置，减少无依据的全局修改。"
+      },
+      "how": {
+        "en": "How to Audit a Project with Vercel Optimize",
+        "zh": "How to 使用 Vercel Optimize"
+      },
+      "howDescription": {
+        "en": "Confirm the linked project, account scope, and observability prerequisites before collecting data. Let the bundled workflow select evidence-backed candidates, inspect only the relevant files, and review ranked recommendations with their supporting signals and any gaps in the available data.",
+        "zh": "先确认已关联项目、账户范围和可观测性条件，再开始采集数据。通过附带流程筛选有证据支持的候选项，只调查相关文件，最后审阅按优先级整理的建议、支撑信号及数据不足带来的限制。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Cost",
+          "zh": "成本"
+        },
+        "title": {
+          "en": "Function usage rose unexpectedly",
+          "zh": "函数使用量突然上升"
+        },
+        "body": {
+          "en": "Check usage and route metrics before attributing the bill change to a particular endpoint or cache setting.",
+          "zh": "先看使用量和路由指标，再判断账单变化是否与某个端点或缓存设置有关。"
+        }
+      },
+      {
+        "label": {
+          "en": "Routes",
+          "zh": "路由"
+        },
+        "title": {
+          "en": "One page seems expensive or slow",
+          "zh": "某个页面似乎既慢又贵"
+        },
+        "body": {
+          "en": "Let measured route signals identify which source files and settings deserve investigation.",
+          "zh": "由可测量的路由信号决定哪些源码文件和设置值得调查。"
+        }
+      },
+      {
+        "label": {
+          "en": "Cache",
+          "zh": "缓存"
+        },
+        "title": {
+          "en": "A cache change is being proposed",
+          "zh": "有人建议修改缓存"
+        },
+        "body": {
+          "en": "Confirm the current hit pattern and framework behavior before recommending ISR, middleware, or response-cache changes.",
+          "zh": "在建议 ISR、中间件或响应缓存改动前，先确认当前命中模式和框架行为。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Investigate last month's Vercel function-cost increase. Confirm the project scope, use available metrics, and rank only evidence-backed opportunities.",
+        "zh": "调查上个月 Vercel 函数成本上涨。先确认项目范围，读取可用指标，只排序有证据支持的优化机会。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Check scope and prerequisites",
+          "zh": "核对范围与前提"
+        },
+        "body": {
+          "en": "Confirm the linked Vercel project, account, and framework. Check the source’s CLI, Node, and observability requirements before collecting signals.",
+          "zh": "确认关联的 Vercel 项目、账户和框架。采集信号前核对原始说明中的 CLI、Node 与可观测性要求。"
+        }
+      },
+      {
+        "title": {
+          "en": "Collect and select evidence",
+          "zh": "收集并筛选证据"
+        },
+        "body": {
+          "en": "Use the bundled collection workflow to gather production signals. Let its gate identify candidates before investigating source files.",
+          "zh": "使用附带流程收集生产信号。先通过筛选确定候选项，再调查源码文件。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review ranked recommendations",
+          "zh": "审阅排序后的建议"
+        },
+        "body": {
+          "en": "Inspect only the selected routes or settings with the agent. Review evidence, framework-version fit, and a validation plan for each proposed change.",
+          "zh": "与 Agent 仅检查选定路由或设置。逐项核对证据、框架版本适配和改动后的验证方式。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does Vercel Optimize scan the entire repository first?",
+          "zh": "Vercel Optimize 会先扫描整个仓库吗？"
+        },
+        "answer": {
+          "en": "No. Its documented doctrine collects production signals first and gates code investigation to metric-backed candidates.",
+          "zh": "不会。原始原则先收集生产信号，再把代码调查限定在有指标支持的候选项。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it estimate savings without Observability Plus?",
+          "zh": "没有 Observability Plus 能估算节省金额吗？"
+        },
+        "answer": {
+          "en": "Route-level metric-backed recommendations require the stated observability access. Missing data should be reported as a limitation, not replaced with invented precision.",
+          "zh": "路由级指标建议依赖原文要求的可观测性权限。缺少数据应明确说明，不能用虚构的精确数字代替。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which frameworks does it address?",
+          "zh": "它适用于哪些框架？"
+        },
+        "answer": {
+          "en": "The source lists strong support for Next.js, support for SvelteKit and Nuxt, limited Astro support, and a restricted path for others. Check the current source before running an audit.",
+          "zh": "原文对 Next.js 支持最完整，也支持 SvelteKit、Nuxt；Astro 有限，其他框架需要受限流程。运行前应核对当前来源。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is it only a prose checklist?",
+          "zh": "它只是文字检查清单吗？"
+        },
+        "answer": {
+          "en": "No. The Skill bundles scripts and references for signal collection, gating, and report generation. Those still depend on authorized Vercel access.",
+          "zh": "不是。它带有信号收集、筛选和报告所需的脚本及参考资料，但仍依赖已授权的 Vercel 访问。"
+        }
+      },
+      {
+        "question": {
+          "en": "What evidence is useful before starting an optimization review?",
+          "zh": "开始优化前准备哪些证据最有帮助？"
+        },
+        "answer": {
+          "en": "Provide the affected routes, a representative time window, and available latency, error, or resource signals. A concrete baseline makes recommendations more useful than a broad request to reduce every possible cost.",
+          "zh": "提供受影响路由、有代表性的时间窗口，以及可用的延迟、错误或资源信号。具体基线比笼统要求降低所有成本更有助于形成有效建议。"
+        }
+      },
+      {
+        "question": {
+          "en": "How should I validate a proposed optimization?",
+          "zh": "怎样验证优化建议是否有效？"
+        },
+        "answer": {
+          "en": "Compare the same workload before and after the change and check correctness as well as performance. A lower resource figure is not an improvement if errors increase or the user’s task stops working.",
+          "zh": "在相同负载下比较修改前后，同时检查正确性和性能。如果资源数字下降却增加错误或破坏任务，就不能算有效优化。"
+        }
+      },
+      {
+        "question": {
+          "en": "What prerequisites should I check before running Vercel Optimize?",
+          "zh": "运行 Vercel Optimize 前应核对哪些条件？"
+        },
+        "answer": {
+          "en": "The source lists Vercel CLI v53+, Node.js 20+, an authenticated CLI, and a linked project with the intended account scope. Route-level metric-backed recommendations require Observability Plus. Confirm the current source requirements before running its scripts.",
+          "zh": "原始说明列出 Vercel CLI v53+、Node.js 20+、已认证 CLI，以及具有正确账户范围的已关联项目。路由级指标建议需要 Observability Plus。运行脚本前应再核对当前来源要求。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Investigate Vercel performance using observability signals, scoped checks, and prioritized recommendations grounded in available project data.",
+      "zh": "基于 Vercel 可观测数据开展性能排查，限定检查范围并按优先级整理优化建议。"
+    },
+    "overview": {
+      "en": {
+        "title": "About Vercel Optimize",
+        "paragraphs": [
+          "Vercel Optimize is a Vercel Labs Skill for investigating deployed-project cost and performance using production evidence. Its bundled scripts collect signals and select candidates before the agent reads the related source files. This keeps recommendations tied to observed routes and settings rather than a broad search for suspicious code. The source describes framework-specific support for Next.js, SvelteKit, Nuxt, and limited Astro use. It requires a linked project, suitable CLI and Node versions, and the intended account scope; route-level metric-backed advice also needs Observability Plus. The workflow produces ranked recommendations, whose effects should be checked against the same workload after any implementation."
+        ]
+      },
+      "zh": {
+        "title": "关于 Vercel Optimize",
+        "paragraphs": [
+          "Vercel Optimize 是 Vercel Labs 面向已部署项目成本与性能调查发布的 Skill，强调先看生产证据，再阅读相关源码。它附带收集信号和筛选候选项的脚本，让建议对应到有指标支持的路由或设置，避免仅凭可疑代码推断优化收益。原始说明列出了 Next.js、SvelteKit、Nuxt 与有限的 Astro 支持，并要求项目关联、合适的 CLI 和 Node 版本及正确账户范围；路由级指标建议还需要 Observability Plus。流程最终形成按优先级整理的建议，实施后仍应在相同负载下比较表现与正确性。"
+        ]
+      }
+    }
   },
   {
-    "slug": "agent-browser", "authorHandle": "vercel-labs", "name": "agent-browser Skill", "publisher": "Vercel Labs", "publisherType": "Organization",
-    "sourceUrl": "https://github.com/vercel-labs/agent-browser/blob/main/skills/agent-browser/SKILL.md", "repositoryUrl": "https://github.com/vercel-labs/agent-browser",
-    "category": { "en": "Browser automation · Companion Skill", "zh": "浏览器自动化 · 配套 Skill" },
-    "seo": { "title": { "en": "agent-browser Skill: Companion Instructions for the CLI", "zh": "agent-browser Skill：浏览器 CLI 的配套指令" }, "description": { "en": "Understand what the agent-browser Skill does, why its SKILL.md is a discovery stub, and which browser actions require the separate CLI.", "zh": "了解 agent-browser Skill 的作用、为什么 SKILL.md 只是入口，以及浏览器操作为何需要另装 CLI。" }, "keywords": { "en": ["agent-browser skill", "vercel agent browser skill", "agent-browser CLI skill"], "zh": ["agent-browser Skill", "Vercel 浏览器自动化 Skill", "agent-browser CLI 指令"] } },
-    "hero": { "eyebrow": { "en": "Vercel Labs · Companion Skill", "zh": "Vercel Labs · 配套 Skill" }, "title": { "en": "agent-browser Skill: a doorway to the browser CLI", "zh": "agent-browser Skill：通向浏览器 CLI 的指令入口" }, "description": { "en": "This Skill is a small discovery stub. It tells an agent to load version-matched browser workflows from the installed agent-browser CLI; the CLI performs the actual actions.", "zh": "这个 Skill 是精简的引导入口，告诉 Agent 从已安装的 agent-browser CLI 加载与版本匹配的流程；真正的浏览器操作由 CLI 执行。" } },
-    "summary": { "en": "The repository's primary product is the agent-browser CLI, not this SKILL.md. The Skill points the agent to `agent-browser skills get core` and specialized workflows, keeping detailed instructions aligned with the installed tool version.", "zh": "该仓库的主体是 agent-browser CLI，而不是这份 SKILL.md。Skill 指向 `agent-browser skills get core` 及专门流程，让详细指令与已安装的工具版本保持一致。" },
+    "slug": "agent-browser",
+    "authorHandle": "vercel-labs",
+    "name": "agent-browser Skill",
+    "publisher": "Vercel Labs",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/vercel-labs/agent-browser/blob/main/skills/agent-browser/SKILL.md",
+    "repositoryUrl": "https://github.com/vercel-labs/agent-browser",
+    "category": {
+      "en": "Browser automation · Companion Skill",
+      "zh": "浏览器自动化 · 配套 Skill"
+    },
+    "seo": {
+      "title": {
+        "en": "agent-browser Skill by Vercel Labs | Installation & Guide",
+        "zh": "agent-browser Skill by Vercel Labs：安装与使用指南"
+      },
+      "description": {
+        "en": "Use the agent-browser Skill by Vercel Labs to connect an agent with browser workflows for the agent-browser CLI. Explore use cases, installation options, and a practical usage guide.",
+        "zh": "使用 Vercel Labs 的 agent-browser Skill，为 Agent 接入 agent-browser CLI 的浏览器操作流程。单独准备工具环境后，读取与已安装版本匹配的指令，再根据网页交互、探索式测试或受支持的 Electron 任务选择专项流程。"
+      },
+      "keywords": {
+        "en": [
+          "agent-browser Skill by Vercel Labs",
+          "agent-browser skill",
+          "vercel agent browser skill",
+          "agent-browser CLI skill"
+        ],
+        "zh": [
+          "agent-browser Skill by Vercel Labs",
+          "agent-browser Skill",
+          "Vercel 浏览器自动化 Skill",
+          "agent-browser CLI 指令"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "Vercel Labs · Companion Skill",
+        "zh": "Vercel Labs · 配套 Skill"
+      },
+      "title": {
+        "en": "agent-browser Skill by Vercel Labs",
+        "zh": "agent-browser Skill by Vercel Labs"
+      },
+      "description": {
+        "en": "Use the agent-browser Skill by Vercel Labs to connect an agent with browser workflows for the agent-browser CLI. Prepare the tool separately, load instructions that match its installed version, and choose the guidance for website interaction, exploratory testing, or supported Electron tasks.",
+        "zh": "使用 Vercel Labs 的 agent-browser Skill，为 Agent 接入 agent-browser CLI 的浏览器操作流程。单独准备工具环境后，读取与已安装版本匹配的指令，再根据网页交互、探索式测试或受支持的 Electron 任务选择专项流程。"
+      }
+    },
+    "summary": {
+      "en": "The repository's primary product is the agent-browser CLI, not this SKILL.md. The Skill points the agent to `agent-browser skills get core` and specialized workflows, keeping detailed instructions aligned with the installed tool version.",
+      "zh": "该仓库的主体是 agent-browser CLI，而不是这份 SKILL.md。Skill 指向 `agent-browser skills get core` 及专门流程，让详细指令与已安装的工具版本保持一致。"
+    },
     "upstreamInstall": "npx skills add vercel-labs/agent-browser",
-    "pageCopy": { "kind": { "en": "Companion Skill / discovery stub", "zh": "配套 Skill / 发现入口" }, "installNote": { "en": "This adds the Skill stub only. Browser automation requires a separate agent-browser CLI installation and browser setup.", "zh": "这只添加 Skill 入口；浏览器自动化仍需另外安装 agent-browser CLI 并完成浏览器设置。" }, "guideTitle": { "en": "The Skill routes; the CLI acts", "zh": "Skill 负责指路，CLI 负责操作" }, "guideIntro": { "en": "Treat the short SKILL.md as an entry point. The installed CLI serves current core and specialist workflows before commands are run.", "zh": "简短的 SKILL.md 只是入口。运行命令前，应从已安装 CLI 读取当前核心或专项流程。" }, "ctaEyebrow": { "en": "Plan browser work", "zh": "规划浏览器任务" }, "ctaTitle": { "en": "Keep browser observations tied to the original task", "zh": "让浏览器观察结果回到原任务" }, "ctaDescription": { "en": "Use Floatboat to collect the goal, observations, and review decisions; browser execution still depends on the separate upstream CLI.", "zh": "用 Floatboat 整理目标、观察结果与审阅决定；浏览器执行仍依赖独立的上游 CLI。" } },
-    "sectionTitles": { "useCases": { "en": "When the companion Skill matters", "zh": "什么时候需要这个配套 Skill" }, "useCasesDescription": { "en": "Use it when an agent already has the CLI available and needs the matching workflow for a browser task.", "zh": "当 Agent 已能使用 CLI，又需要与工具版本匹配的浏览器流程时使用。" }, "exclusions": { "en": "What the stub cannot do alone", "zh": "单靠这个入口做不到什么" }, "how": { "en": "How the browser guidance is loaded", "zh": "如何加载浏览器操作指引" }, "howDescription": { "en": "Install the Skill and CLI separately, then load the CLI's current core or specialized instructions.", "zh": "分别安装 Skill 和 CLI，再读取 CLI 当前的核心或专项指令。" } },
-    "scenarios": [ { "label": { "en": "Web", "zh": "网页" }, "title": { "en": "An agent must inspect a live flow", "zh": "Agent 需要检查真实网页流程" }, "body": { "en": "Load the CLI's core workflow before navigating, snapshotting controls, or testing a form.", "zh": "导航、读取控件快照或测试表单前，先加载 CLI 核心流程。" } }, { "label": { "en": "QA", "zh": "测试" }, "title": { "en": "A bug needs exploratory reproduction", "zh": "Bug 需要探索式复现" }, "body": { "en": "The stub points to a specialist dogfood workflow for exploratory testing and quality review.", "zh": "入口文件会指向专门的 dogfood 流程，用于探索式测试和质量检查。" } }, { "label": { "en": "Desktop", "zh": "桌面" }, "title": { "en": "The target is an Electron app", "zh": "目标是 Electron 应用" }, "body": { "en": "Use the CLI's dedicated Electron guidance instead of assuming a normal web-page session.", "zh": "应使用 CLI 的 Electron 专项指引，而不是把它当普通网页会话。" } } ],
-    "notFor": [ { "en": "Browser automation without the separate agent-browser CLI and browser setup.", "zh": "没有独立安装 agent-browser CLI 和浏览器环境就执行自动化。" }, { "en": "Treating this short SKILL.md as the complete command reference.", "zh": "把这份简短 SKILL.md 当作完整命令手册。" } ],
-    "seoSections": [ { "title": { "en": "Is agent-browser a Skill or a tool?", "zh": "agent-browser 是 Skill 还是工具？" }, "body": { "en": "The repository's main deliverable is a browser-automation CLI. It also publishes a companion SKILL.md that tells agents how to discover version-matched workflows. This page describes that Skill entry, not the CLI as a standalone product.", "zh": "仓库的主要交付物是浏览器自动化 CLI，同时发布一份配套 SKILL.md，指导 Agent 找到与版本匹配的流程。本页介绍的是这个 Skill 入口，不是把 CLI 当成单独的 Skill。" } }, { "title": { "en": "Why is the SKILL.md intentionally short?", "zh": "为什么 SKILL.md 特意写得很短？" }, "body": { "en": "The source calls it a discovery stub. Detailed workflows are served by the installed CLI through `skills get core` or a specialist name, so instructions track the tool version instead of becoming stale copies.", "zh": "原文称其为发现入口。详细流程由已安装 CLI 通过 `skills get core` 或专项名称提供，从而随工具版本更新，避免复制品过时。" } } ],
-    "example": { "prompt": { "en": "Use agent-browser to test the sign-in flow. Load the current core instructions first, then report the exact step that fails.", "zh": "用 agent-browser 测试登录流程。先加载当前核心指引，再报告具体在哪一步失败。" }, "result": { "en": "A useful result separates guidance loading from CLI execution and reports observed browser behavior, not an assumed pass.", "zh": "合格结果会区分指引加载与 CLI 执行，并报告观察到的浏览器行为，而不是假定测试通过。" } },
-    "commands": [ { "label": { "en": "Install the CLI separately", "zh": "单独安装 CLI" }, "command": "npm i -g agent-browser", "note": { "en": "The Skill stub alone cannot run browser commands.", "zh": "只有 Skill 入口无法运行浏览器命令。" } }, { "label": { "en": "Set up the browser", "zh": "安装浏览器环境" }, "command": "agent-browser install", "note": { "en": "Follow the CLI's upstream installation instructions.", "zh": "按照上游 CLI 安装说明操作。" } }, { "label": { "en": "Load current guidance", "zh": "读取当前指引" }, "command": "agent-browser skills get core", "note": { "en": "The CLI serves instructions matched to its installed version.", "zh": "CLI 会提供与已安装版本匹配的指令。" } } ],
-    "steps": [ { "title": { "en": "Install the companion Skill", "zh": "安装配套 Skill" }, "body": { "en": "Add the published SKILL.md to a supported agent through the upstream Skills CLI.", "zh": "通过上游 Skills CLI，把发布的 SKILL.md 加入受支持的 Agent。" } }, { "title": { "en": "Prepare the CLI", "zh": "准备 CLI" }, "body": { "en": "Install agent-browser and its browser dependency through the upstream tool instructions.", "zh": "按上游工具说明安装 agent-browser 及其浏览器依赖。" } }, { "title": { "en": "Load the matching workflow", "zh": "加载匹配的流程" }, "body": { "en": "Get core or specialist guidance from the CLI before interacting with the target.", "zh": "与目标交互前，先从 CLI 获取核心或专项指引。" } } ],
-    "outputs": { "en": ["A version-matched browser workflow", "Observed states from CLI-driven interaction", "A clear split between Skill guidance and tool execution"], "zh": ["与版本匹配的浏览器流程", "由 CLI 交互得到的实际观察", "Skill 指引与工具执行的明确边界"] },
-    "checks": { "en": ["Is the CLI actually installed?", "Did the agent load `skills get core`?", "Is the requested interaction authorized?"], "zh": ["CLI 是否确实已安装？", "Agent 是否读取了 `skills get core`？", "请求的交互是否已获授权？"] },
-    "faq": [ { "question": { "en": "Does installing the Skill install the browser CLI?", "zh": "安装 Skill 会同时安装浏览器 CLI 吗？" }, "answer": { "en": "No. The Skill adds a short instruction stub. The agent-browser CLI and browser setup are separate installations.", "zh": "不会。Skill 只添加精简指令入口；agent-browser CLI 和浏览器环境需要单独安装。" } }, { "question": { "en": "Where are the full browser instructions?", "zh": "完整浏览器指令在哪里？" }, "answer": { "en": "The installed CLI serves them through `agent-browser skills get core` and specialist workflows such as `dogfood` or `electron`.", "zh": "已安装 CLI 通过 `agent-browser skills get core` 以及 `dogfood`、`electron` 等专项流程提供。" } }, { "question": { "en": "Why does the repository look like a tool?", "zh": "为什么这个仓库看起来像工具？" }, "answer": { "en": "Because it is primarily a CLI tool. The SKILL.md is a companion component for AI agents; the two should not be classified as the same deliverable.", "zh": "因为它的主体确实是 CLI 工具；SKILL.md 只是供 AI Agent 使用的配套组件，两者不应被当作同一种交付物。" } }, { "question": { "en": "Can the Skill run a browser by itself?", "zh": "单靠这个 Skill 能操作浏览器吗？" }, "answer": { "en": "No. The CLI performs navigation, snapshots, and interactions. The Skill tells the agent which CLI-served workflow to read first.", "zh": "不能。导航、快照和交互由 CLI 执行；Skill 只告诉 Agent 先读取哪一份由 CLI 提供的流程。" } } ]
+    "pageCopy": {
+      "kind": {
+        "en": "Companion Skill / discovery stub",
+        "zh": "配套 Skill / 发现入口"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for the agent-browser Skill",
+        "zh": "agent-browser Skill的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore browser tasks where an agent needs the CLI’s matching operating instructions. Inspect website interactions, reproduce an issue through exploratory testing, or load specialized Electron guidance, with the required tool installed and the task scoped to the pages or application you intend to use.",
+        "zh": "探索 Agent 需要加载工具操作流程的浏览器任务，例如检查网页交互、通过探索式测试复现问题，或读取 Electron 专项指引。先确认 CLI 与浏览器依赖可用，再围绕明确的网站或应用范围执行和验证。"
+      },
+      "how": {
+        "en": "How to Use the agent-browser Skill",
+        "zh": "How to 使用 agent-browser Skill"
+      },
+      "howDescription": {
+        "en": "Add the companion Skill to your agent and prepare the agent-browser CLI with its browser dependencies. Load the CLI’s core instructions or the relevant specialized workflow, inspect the current target, and verify that the resulting page or application state matches the requested task.",
+        "zh": "将配套 Skill 添加到 Agent，并单独准备 agent-browser CLI 与浏览器依赖。读取 CLI 的核心或相关专项指令，检查当前操作目标，再执行任务并核对网页或应用的最终状态是否符合请求。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Web",
+          "zh": "网页"
+        },
+        "title": {
+          "en": "An agent must inspect a live flow",
+          "zh": "Agent 需要检查真实网页流程"
+        },
+        "body": {
+          "en": "Load the CLI's core workflow before navigating, snapshotting controls, or testing a form.",
+          "zh": "导航、读取控件快照或测试表单前，先加载 CLI 核心流程。"
+        }
+      },
+      {
+        "label": {
+          "en": "QA",
+          "zh": "测试"
+        },
+        "title": {
+          "en": "A bug needs exploratory reproduction",
+          "zh": "Bug 需要探索式复现"
+        },
+        "body": {
+          "en": "The stub points to a specialist dogfood workflow for exploratory testing and quality review.",
+          "zh": "入口文件会指向专门的 dogfood 流程，用于探索式测试和质量检查。"
+        }
+      },
+      {
+        "label": {
+          "en": "Desktop",
+          "zh": "桌面"
+        },
+        "title": {
+          "en": "The target is an Electron app",
+          "zh": "目标是 Electron 应用"
+        },
+        "body": {
+          "en": "Use the CLI's dedicated Electron guidance instead of assuming a normal web-page session.",
+          "zh": "应使用 CLI 的 Electron 专项指引，而不是把它当普通网页会话。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use agent-browser to test the sign-in flow. Load the current core instructions first, then report the exact step that fails.",
+        "zh": "用 agent-browser 测试登录流程。先加载当前核心指引，再报告具体在哪一步失败。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Add the companion Skill",
+          "zh": "添加配套 Skill"
+        },
+        "body": {
+          "en": "Use the Skills installation options above to add the instruction to your agent. Keep this separate from setting up the browser tool.",
+          "zh": "使用上方安装方式为 Agent 添加指令。将这一步与浏览器工具环境的安装分开处理。"
+        }
+      },
+      {
+        "title": {
+          "en": "Prepare the CLI and browser",
+          "zh": "准备 CLI 与浏览器"
+        },
+        "body": {
+          "en": "Follow the upstream agent-browser setup for the CLI and its browser dependencies. Confirm the tool is available in the agent’s environment.",
+          "zh": "按上游 agent-browser 说明安装 CLI 与浏览器依赖。确认 Agent 所在环境能够调用该工具。"
+        }
+      },
+      {
+        "title": {
+          "en": "Load a workflow and verify",
+          "zh": "加载流程并验证"
+        },
+        "body": {
+          "en": "Read agent-browser skills get core or the matching specialist workflow. Inspect the current target, carry out the task, and verify the resulting state.",
+          "zh": "读取 agent-browser skills get core 或匹配的专项流程。检查当前目标，执行任务并核对最终状态。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does installing the Skill install the browser CLI?",
+          "zh": "安装 Skill 会同时安装浏览器 CLI 吗？"
+        },
+        "answer": {
+          "en": "No. The Skill adds a short instruction stub. The agent-browser CLI and browser setup are separate installations.",
+          "zh": "不会。Skill 只添加精简指令入口；agent-browser CLI 和浏览器环境需要单独安装。"
+        }
+      },
+      {
+        "question": {
+          "en": "Where are the full browser instructions?",
+          "zh": "完整浏览器指令在哪里？"
+        },
+        "answer": {
+          "en": "The installed CLI serves them through `agent-browser skills get core` and specialist workflows such as `dogfood` or `electron`.",
+          "zh": "已安装 CLI 通过 `agent-browser skills get core` 以及 `dogfood`、`electron` 等专项流程提供。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why does the repository look like a tool?",
+          "zh": "为什么这个仓库看起来像工具？"
+        },
+        "answer": {
+          "en": "Because it is primarily a CLI tool. The SKILL.md is a companion component for AI agents; the two should not be classified as the same deliverable.",
+          "zh": "因为它的主体确实是 CLI 工具；SKILL.md 只是供 AI Agent 使用的配套组件，两者不应被当作同一种交付物。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can the Skill run a browser by itself?",
+          "zh": "单靠这个 Skill 能操作浏览器吗？"
+        },
+        "answer": {
+          "en": "No. The CLI performs navigation, snapshots, and interactions. The Skill tells the agent which CLI-served workflow to read first.",
+          "zh": "不能。导航、快照和交互由 CLI 执行；Skill 只告诉 Agent 先读取哪一份由 CLI 提供的流程。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why can a browser instruction stop matching the page?",
+          "zh": "浏览器指令为什么会突然找不到页面元素？"
+        },
+        "answer": {
+          "en": "Navigation and dynamic updates can replace controls or change page state. Inspect the current page again and retarget the action rather than repeating a stale element reference.",
+          "zh": "导航和动态更新可能替换控件或改变页面状态。应重新检查当前页面再选择目标，不要反复使用已经过时的元素引用。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can an agent submit any form once the browser is connected?",
+          "zh": "连接浏览器后 Agent 就能提交任何表单吗？"
+        },
+        "answer": {
+          "en": "Browser access does not establish permission for every action. Confirm the user’s intended destination and action before sending messages, publishing material, purchasing, or changing account access.",
+          "zh": "能操作浏览器不代表获得了所有动作的授权。发送消息、发布内容、购买或改变账号访问权限前，仍需确认用户授权的目标与操作。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I prepare the CLI separately from the Skill?",
+          "zh": "如何单独准备 CLI，而不是只安装 Skill？"
+        },
+        "answer": {
+          "en": "Follow the repository’s tool setup instructions. Its entry file lists npm i -g agent-browser followed by agent-browser install for the tool and browser setup. Then load agent-browser skills get core before browser tasks; check upstream requirements for your platform.",
+          "zh": "按仓库的工具安装说明准备环境。入口文件列出 npm i -g agent-browser 和 agent-browser install，分别用于工具与浏览器设置。开始任务前读取 agent-browser skills get core，并核对上游的平台要求。"
+        }
+      }
+    ],
+    "cardDescription": {
+      "en": "Guide an agent through the agent-browser CLI, using tool-version-specific instructions for browser automation tasks and specialized workflows.",
+      "zh": "引导 Agent 使用 agent-browser CLI，按工具版本读取浏览器自动化及专项流程指令。"
+    },
+    "overview": {
+      "en": {
+        "title": "About agent-browser Skill",
+        "paragraphs": [
+          "The agent-browser Skill is a companion instruction published by Vercel Labs for the agent-browser browser-automation CLI. Its short entry file directs the agent to load core or specialized workflows from the installed CLI, keeping detailed instructions aligned with the tool version. Core guidance supports website interaction, while specialized entries address tasks such as exploratory testing and Electron applications. The Skill and CLI have separate roles: installing the instruction does not install the tool or its browser dependencies. Prepare those through the upstream setup guide, then load the matching workflow before acting on a page. Review the current page state and verify the result of each task."
+        ]
+      },
+      "zh": {
+        "title": "关于 agent-browser Skill",
+        "paragraphs": [
+          "agent-browser Skill 是 Vercel Labs 为 agent-browser 浏览器自动化 CLI 发布的配套指令。它的入口文件较短，主要引导 Agent 从已安装 CLI 读取核心或专项流程，让详细操作说明与工具版本一致。核心流程面向网页交互，专项入口还覆盖探索式测试、Electron 应用等任务。Skill 与 CLI 的职责不同：安装指令不会同时安装工具和浏览器依赖，需要按上游说明单独准备环境，再在操作页面前加载匹配流程。实际执行时，还应根据当前页面状态选择目标，并核对任务结果。"
+        ]
+      }
+    }
   }
 ]

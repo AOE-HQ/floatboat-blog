@@ -46,6 +46,13 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /combostore
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /combostore/categories
             pathType: Prefix
             backend:
@@ -53,7 +60,14 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/categories
+          - path: /combostore/pbakaus
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/obra
             pathType: Prefix
             backend:
               service:
@@ -67,21 +81,7 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/vercel-labs
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /combostore/morluto
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
-          - path: /zh/combostore/morluto
             pathType: Prefix
             backend:
               service:
@@ -95,21 +95,7 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/anthropics
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /combostore/heygen-com
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
-          - path: /zh/combostore/heygen-com
             pathType: Prefix
             backend:
               service:
@@ -123,21 +109,7 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/mattpocock
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /combostore/emilkowalski
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
-          - path: /zh/combostore/emilkowalski
             pathType: Prefix
             backend:
               service:
@@ -151,13 +123,6 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/coreyhaines31
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /combostore/juliusbrussee
             pathType: Prefix
             backend:
@@ -165,7 +130,224 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /combostore/microsoft
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/open.feishu.cn
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/remotion-dev
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/leonxlnx
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/cloudflare
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/trailofbits
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/github
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/googleworkspace
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/firecrawl
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/supabase
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/categories
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/pbakaus
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/obra
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/vercel-labs
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/morluto
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/anthropics
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/heygen-com
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/mattpocock
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/emilkowalski
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/coreyhaines31
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /zh/combostore/juliusbrussee
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/microsoft
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/open.feishu.cn
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/remotion-dev
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/leonxlnx
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/cloudflare
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/trailofbits
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/github
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/googleworkspace
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/firecrawl
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/supabase
             pathType: Prefix
             backend:
               service:
@@ -287,6 +469,13 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /combostore
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /combostore/categories
             pathType: Prefix
             backend:
@@ -294,7 +483,14 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/categories
+          - path: /combostore/pbakaus
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/obra
             pathType: Prefix
             backend:
               service:
@@ -308,21 +504,7 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/vercel-labs
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /combostore/morluto
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
-          - path: /zh/combostore/morluto
             pathType: Prefix
             backend:
               service:
@@ -336,21 +518,7 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/anthropics
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /combostore/heygen-com
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
-          - path: /zh/combostore/heygen-com
             pathType: Prefix
             backend:
               service:
@@ -364,21 +532,7 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/mattpocock
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /combostore/emilkowalski
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
-          - path: /zh/combostore/emilkowalski
             pathType: Prefix
             backend:
               service:
@@ -392,13 +546,6 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
-          - path: /zh/combostore/coreyhaines31
-            pathType: Prefix
-            backend:
-              service:
-                name: floatboat-blog
-                port:
-                  number: 80
           - path: /combostore/juliusbrussee
             pathType: Prefix
             backend:
@@ -406,7 +553,224 @@ spec:
                 name: floatboat-blog
                 port:
                   number: 80
+          - path: /combostore/microsoft
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/open.feishu.cn
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/remotion-dev
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/leonxlnx
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/cloudflare
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/trailofbits
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/github
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/googleworkspace
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/firecrawl
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /combostore/supabase
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore
+            pathType: Exact
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/categories
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/pbakaus
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/obra
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/vercel-labs
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/morluto
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/anthropics
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/heygen-com
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/mattpocock
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/emilkowalski
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/coreyhaines31
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
           - path: /zh/combostore/juliusbrussee
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/microsoft
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/open.feishu.cn
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/remotion-dev
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/leonxlnx
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/cloudflare
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/trailofbits
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/github
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/googleworkspace
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/firecrawl
+            pathType: Prefix
+            backend:
+              service:
+                name: floatboat-blog
+                port:
+                  number: 80
+          - path: /zh/combostore/supabase
             pathType: Prefix
             backend:
               service:

@@ -1,0 +1,345 @@
+[
+  {
+    "slug": "hyperframes",
+    "authorHandle": "heygen-com",
+    "name": "HyperFrames Skill",
+    "publisher": "HeyGen",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md",
+    "repositoryUrl": "https://github.com/heygen-com/hyperframes",
+    "category": {
+      "en": "Video creation · HTML",
+      "zh": "视频制作 · HTML"
+    },
+    "seo": {
+      "title": {
+        "en": "HyperFrames Skill by HeyGen | Installation & Guide",
+        "zh": "HyperFrames Skill by HeyGen：安装与使用指南"
+      },
+      "description": {
+        "en": "Install the HyperFrames core Skills by HeyGen and use the CLI for HTML video creation, scene checks, preview, and verified export.",
+        "zh": "安装 HeyGen HyperFrames 核心 Skills，配合 CLI 制作和编辑 HTML 视频，了解场景检查、预览与导出验证的完整流程。"
+      },
+      "keywords": {
+        "en": [
+          "HyperFrames Skill by HeyGen",
+          "hyperframes",
+          "Video creation · HTML",
+          "HyperFrames CLI",
+          "hyperframes-cli",
+          "HyperFrames core Skills"
+        ],
+        "zh": [
+          "HyperFrames Skill by HeyGen",
+          "HyperFrames Skill",
+          "视频制作 · HTML",
+          "HyperFrames CLI",
+          "hyperframes-cli",
+          "HyperFrames core Skills"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "HyperFrames Skill by HeyGen",
+        "zh": "HyperFrames Skill by HeyGen"
+      },
+      "description": {
+        "en": "Use the HyperFrames Skill by HeyGen to create and edit HTML-based videos with its companion CLI, registry, and media instructions. Install the core set, organize scenes around a concrete brief, inspect real frames and a preview, then render and verify the requested deliverable.",
+        "zh": "使用 HeyGen 的 HyperFrames Skill，配合 CLI、素材注册表与媒体指引创建和编辑 HTML 视频。先安装核心指令集合，再围绕具体需求组织场景，通过命令检查、真实画面和预览核对结果，最后按交付要求渲染并验证文件。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About HyperFrames Skill",
+        "paragraphs": [
+          "The HyperFrames Skill guides agents through making and editing HTML video projects, while the HyperFrames CLI performs setup, inspection, preview, and rendering. The normal workflow combines four core instructions: hyperframes for composition, hyperframes-cli for tool operations, hyperframes-registry for reusable visual blocks, and media-use for media tasks. Install this set together so cross-Skill calls and relative references remain available. This guide connects those roles in one production workflow; the software and its rendering dependencies still need separate setup. Start with the subject, assets, timing, and output format, review scene frames and a preview, then verify an exported file when delivery is requested."
+        ]
+      },
+      "zh": {
+        "title": "关于 HyperFrames Skill",
+        "paragraphs": [
+          "HyperFrames Skill 指导 Agent 制作和编辑 HTML 视频项目，HyperFrames CLI 则执行初始化、检查、预览与渲染。常规流程结合四项核心指令：hyperframes 负责合成，hyperframes-cli 负责工具操作，hyperframes-registry 负责复用视觉部件，media-use 负责媒体任务。应一并安装这套核心集合，保留跨 Skill 调用与相对参考路径。本指南将这些职责串成一条制作流程；软件及渲染依赖仍需另行准备。使用时明确题材、素材、时长和输出格式，检查真实场景画面与预览，再在需要交付文件时导出，并核对最终结果。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "The HyperFrames Skill guides agents through making and editing HTML video projects, while the HyperFrames CLI performs setup, inspection, preview, and rendering. The normal workflow combines four core instructions: hyperframes for composition, hyperframes-cli for tool operations, hyperframes-registry for reusable visual blocks, and media-use for media tasks. Install this set together so cross-Skill calls and relative references remain available. This guide connects those roles in one production workflow; the software and its rendering dependencies still need separate setup. Start with the subject, assets, timing, and output format, review scene frames and a preview, then verify an exported file when delivery is requested.",
+      "zh": "HyperFrames Skill 指导 Agent 制作和编辑 HTML 视频项目，HyperFrames CLI 则执行初始化、检查、预览与渲染。常规流程结合四项核心指令：hyperframes 负责合成，hyperframes-cli 负责工具操作，hyperframes-registry 负责复用视觉部件，media-use 负责媒体任务。应一并安装这套核心集合，保留跨 Skill 调用与相对参考路径。本指南将这些职责串成一条制作流程；软件及渲染依赖仍需另行准备。使用时明确题材、素材、时长和输出格式，检查真实场景画面与预览，再在需要交付文件时导出，并核对最终结果。"
+    },
+    "cardDescription": {
+      "en": "Create editable HTML videos with the HyperFrames core Skills, CLI checks, preview, and verified export.",
+      "zh": "结合 HyperFrames 核心 Skills 与 CLI，制作可编辑的 HTML 视频，完成检查、预览和导出验证。"
+    },
+    "upstreamInstall": "npx skills add heygen-com/hyperframes --skill hyperframes --skill hyperframes-cli --skill hyperframes-registry --skill media-use",
+    "pageCopy": {
+      "kind": {
+        "en": "Core Skills · video creation and CLI workflow",
+        "zh": "核心 Skills · 视频制作与 CLI 流程"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for HyperFrames Skill",
+        "zh": "HyperFrames Skill 的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore work that benefits from editable HTML scenes and a shared creation-and-tool workflow. Build a product demonstration, adjust an existing sequence, or prepare repeatable variations, using the core Skills to connect composition decisions with CLI checks, preview, and the intended output.",
+        "zh": "探索适合结合可编辑 HTML 场景与工具流程完成的视频任务：制作产品演示、调整已有场景，或准备可重复生成的版本。通过核心 Skills 连接合成决策、CLI 检查、预览与最终交付，明确每一步需要核对的内容。"
+      },
+      "how": {
+        "en": "How to Use HyperFrames Skill",
+        "zh": "How to 使用 HyperFrames Skill"
+      },
+      "howDescription": {
+        "en": "Install the four core Skills and prepare the project’s tool environment before creating or editing a video. Give the agent a concrete brief, use the appropriate CLI checks and frame snapshots while iterating, and render a file when the requested delivery calls for it.",
+        "zh": "先安装四项核心 Skills，并准备项目工具环境，再开始制作或编辑视频。向 Agent 提供具体需求，迭代时结合对应 CLI 检查、画面快照和预览确认结果；需要文件交付时再渲染，并检查导出内容。"
+      }
+    },
+    "scenarios": [
+      {
+        "title": {
+          "en": "Turn product screens into a video",
+          "zh": "将产品界面制作成视频"
+        },
+        "body": {
+          "en": "Use real screenshots and brand assets, reuse appropriate visual blocks, and review the sequence in a preview before requesting an export.",
+          "zh": "使用真实截图与品牌素材，复用合适的视觉部件，在请求导出前通过预览检查场景顺序。"
+        },
+        "label": {
+          "en": "Product",
+          "zh": "产品"
+        }
+      },
+      {
+        "title": {
+          "en": "Edit and check an existing video",
+          "zh": "修改并检查已有视频"
+        },
+        "body": {
+          "en": "Inspect project information and the timeline, make a focused scene change, then combine CLI findings with actual frame snapshots to verify its effect.",
+          "zh": "先检查项目信息与时间轴，再修改指定场景，结合 CLI 发现与真实画面快照核对影响。"
+        },
+        "label": {
+          "en": "Editing",
+          "zh": "编辑"
+        }
+      },
+      {
+        "title": {
+          "en": "Deliver repeatable video variations",
+          "zh": "交付可重复生成的视频版本"
+        },
+        "body": {
+          "en": "Change declared composition variables for titles or content, inspect representative variations, and verify the requested rendered files before delivery.",
+          "zh": "通过合成变量替换标题或内容，检查代表版本，并在交付前核对请求导出的文件。"
+        },
+        "label": {
+          "en": "Variants",
+          "zh": "变体"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Prepare the core set and brief",
+          "zh": "准备核心集合与需求"
+        },
+        "body": {
+          "en": "Install the four core Skills together and prepare the CLI environment. Provide the real subject, source assets, duration, and output format, or identify the existing project.",
+          "zh": "一并安装四项核心 Skills，并准备 CLI 环境。提供真实题材、原始素材、时长与输出格式，或指定已有项目。"
+        }
+      },
+      {
+        "title": {
+          "en": "Create, check, and preview",
+          "zh": "制作、检查与预览"
+        },
+        "body": {
+          "en": "Inspect an existing project with info and timeline --json. Follow the composition, registry, and media guidance; use npx hyperframes check --json, inspect snapshot frames, and review the preview while correcting issues.",
+          "zh": "已有项目先用 info 与 timeline --json 检查。按合成、注册表与媒体指引制作，运行 npx hyperframes check --json，查看 snapshot 画面与 preview 预览，并修正发现的问题。"
+        }
+      },
+      {
+        "title": {
+          "en": "Export and verify the file",
+          "zh": "导出并核对文件"
+        },
+        "body": {
+          "en": "Use npx hyperframes render when the brief requires a file or the user approves export. Confirm the file opens, compare its duration, and inspect frames and audio against the reviewed preview.",
+          "zh": "需求要求文件或用户确认导出后，使用 npx hyperframes render。确认文件可打开、时长正确，并将画面与声音同已审阅预览核对。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use the HyperFrames Skill to turn these product screenshots into a 15-second demo. Keep the existing brand assets, show a preview, and explain any optional media-service requirements before using them.",
+        "zh": "使用 HyperFrames Skill，将这些产品截图制作成 15 秒演示。保留现有品牌素材，先展示预览；采用可选媒体服务前说明所需条件。"
+      }
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is the HyperFrames Skill the same as the HyperFrames app?",
+          "zh": "HyperFrames Skill 和 HyperFrames 应用是同一个东西吗？"
+        },
+        "answer": {
+          "en": "No. The Skill guides the agent; the software provides composition preview, timeline tools, and rendering. Installing one instruction does not prepare every tool dependency.",
+          "zh": "不是。Skill 指导 Agent，软件提供合成预览、时间轴工具与渲染；安装指令不等于准备好全部工具依赖。"
+        }
+      },
+      {
+        "question": {
+          "en": "What kind of project does it work with?",
+          "zh": "它使用什么类型的项目？"
+        },
+        "answer": {
+          "en": "The documented workflow uses an HTML root composition with scenes, assets, variables, and a seekable timeline. Existing project structure should be inspected before editing.",
+          "zh": "原始流程使用 HTML 根合成，配合场景、素材、变量与可定位时间轴；修改前需要检查已有项目结构。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why install the four core Skills together?",
+          "zh": "为什么要一起安装四项核心 Skills？"
+        },
+        "answer": {
+          "en": "The composition, CLI, registry, and media instructions refer to one another. The CLI Skill also reads references from the hyperframes directory, so a lone instruction can leave expected workflows or relative files unavailable.",
+          "zh": "合成、CLI、注册表和媒体指令会互相引用，CLI Skill 还会读取 hyperframes 目录中的参考文件。只安装一项可能缺少预期流程或相对路径文件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does installing this Skill install HyperFrames CLI?",
+          "zh": "安装这个 Skill 会同时安装 HyperFrames CLI 吗？"
+        },
+        "answer": {
+          "en": "It adds operating instructions. The CLI and rendering environment still need to be available through the project’s supported setup.",
+          "zh": "安装的是操作指令；CLI 和渲染环境仍需按项目支持的方式准备。"
+        }
+      },
+      {
+        "question": {
+          "en": "What does local rendering require?",
+          "zh": "本地渲染需要什么环境？"
+        },
+        "answer": {
+          "en": "The CLI source lists Node.js 22+ and FFmpeg, with a suitable browser environment. Hosted rendering is a different path with its own setup and service requirements.",
+          "zh": "CLI 来源列出 Node.js 22+、FFmpeg，以及适合的浏览器环境；托管渲染属于另一条路径，有独立设置与服务要求。"
+        }
+      },
+      {
+        "question": {
+          "en": "Do all videos need avatars or voiceover?",
+          "zh": "每个视频都需要数字人或配音吗？"
+        },
+        "answer": {
+          "en": "No. The brief determines the media. The source distinguishes requested content from optional additions and routes media work through a related workflow.",
+          "zh": "不需要。媒体由需求决定；原始说明区分用户要求与可选添加，并通过关联流程处理媒体。"
+        }
+      },
+      {
+        "question": {
+          "en": "Are optional HeyGen services included in Skill installation?",
+          "zh": "安装 Skill 是否包含可选 HeyGen 服务？"
+        },
+        "answer": {
+          "en": "No. Media generation or hosted features can require accounts, plan usage, or other prerequisites. Check those separately before selecting that path.",
+          "zh": "不包含。媒体生成或托管功能可能需要账户、套餐用量或其他条件，选择相关路径前应分别核对。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should every command run as npx hyperframes?",
+          "zh": "所有命令都必须用 npx hyperframes 吗？"
+        },
+        "answer": {
+          "en": "The source uses npx hyperframes by default, but says to use a project-provided wrapper when one exists. Read the relevant reference before choosing flags.",
+          "zh": "原文默认使用 npx hyperframes；项目提供包装命令时应采用项目方式。选择参数前要读取相关参考。"
+        }
+      },
+      {
+        "question": {
+          "en": "When should the agent render a file?",
+          "zh": "Agent 应在什么时候渲染文件？"
+        },
+        "answer": {
+          "en": "Use preview for review and rendering for a requested export. Passing checks alone does not establish that the user wants a final render.",
+          "zh": "审阅使用预览，用户要求文件交付时再渲染。检查通过本身并不表示用户希望立即导出。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does a passing check replace watching the video?",
+          "zh": "检查通过可以替代观看视频吗？"
+        },
+        "answer": {
+          "en": "No. Review actual scene frames, transitions, and the preview. Open the final output as well, since timing, audio, and content must meet the brief.",
+          "zh": "不能。需要查看真实场景画面、转场与预览，也要打开最终文件核对时间、声音和内容。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it render in the cloud?",
+          "zh": "可以使用云端渲染吗？"
+        },
+        "answer": {
+          "en": "The source describes hosted and self-managed cloud paths in separate references. These require their own setup, account access, and cost review.",
+          "zh": "来源在独立参考中描述托管与自建云端路径，需要分别确认设置、账户访问和费用。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I inspect after an export?",
+          "zh": "导出后应检查什么？"
+        },
+        "answer": {
+          "en": "Confirm the file is present and non-empty, compare its duration with the composition, and inspect decoded frames and audio against the reviewed preview.",
+          "zh": "确认文件存在且非空，对比合成时长，并将解码画面和声音与已审阅预览核对。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini-cli",
+        "opencode",
+        "auto"
+      ],
+      "note": {
+        "en": "Installs all four core instructions: hyperframes, hyperframes-cli, hyperframes-registry, and media-use. Prepare the HyperFrames CLI and rendering environment separately; local rendering needs Node.js 22+, FFmpeg, and a suitable browser. Optional media and hosted services have their own requirements.",
+        "zh": "安装四项核心指令：hyperframes、hyperframes-cli、hyperframes-registry 和 media-use。HyperFrames CLI 与渲染环境需另行准备；本地渲染需要 Node.js 22+、FFmpeg 和浏览器环境。可选媒体与托管服务有独立要求。"
+      }
+    },
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "CLI workflow",
+          "zh": "CLI 操作流程"
+        },
+        "href": "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-cli/SKILL.md"
+      },
+      {
+        "label": {
+          "en": "Registry workflow",
+          "zh": "素材注册表流程"
+        },
+        "href": "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-registry/SKILL.md"
+      },
+      {
+        "label": {
+          "en": "Media workflow",
+          "zh": "媒体处理流程"
+        },
+        "href": "https://github.com/heygen-com/hyperframes/blob/main/skills/media-use/SKILL.md"
+      }
+    ]
+  }
+]

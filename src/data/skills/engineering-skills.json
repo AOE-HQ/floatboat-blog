@@ -1,0 +1,2325 @@
+[
+  {
+    "slug": "grill-me",
+    "authorHandle": "mattpocock",
+    "name": "Grill Me",
+    "publisher": "Matt Pocock",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md",
+    "repositoryUrl": "https://github.com/mattpocock/skills",
+    "category": {
+      "en": "Planning · Decision review",
+      "zh": "规划 · 方案评审"
+    },
+    "seo": {
+      "title": {
+        "en": "Grill Me by Matt Pocock | Installation & Guide",
+        "zh": "Grill Me by Matt Pocock：安装与使用指南"
+      },
+      "description": {
+        "en": "Explore Grill Me by Matt Pocock, its grilling companion, and the Grill with Docs mode. Review installation, interview steps, glossary updates, and architectural decisions.",
+        "zh": "了解 Matt Pocock 的 Grill Me、配套 grilling 与 Grill with Docs 模式，查看完整集合安装、访谈步骤，以及领域术语和架构决策记录的使用方式。"
+      },
+      "keywords": {
+        "en": [
+          "Grill Me by Matt Pocock",
+          "grill-me",
+          "Grill Me agent skill",
+          "Grill with Docs by Matt Pocock",
+          "grill-with-docs",
+          "grilling",
+          "domain-modeling"
+        ],
+        "zh": [
+          "Grill Me by Matt Pocock",
+          "Grill Me",
+          "规划 · 方案评审",
+          "Grill with Docs by Matt Pocock",
+          "grill-with-docs",
+          "grilling",
+          "domain-modeling"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Grill Me by Matt Pocock",
+        "zh": "Grill Me by Matt Pocock"
+      },
+      "description": {
+        "en": "Use Grill Me by Matt Pocock to clarify a plan through a structured interview. Choose the ordinary grilling conversation or the Grill with Docs mode when a software discussion also needs shared terminology and architectural records, then review the decisions before starting implementation.",
+        "zh": "使用 Matt Pocock 的 Grill Me，通过结构化访谈澄清计划。普通讨论使用 grilling 方法；软件方案需要同步术语与架构记录时，选择 Grill with Docs 模式，结合项目资料逐轮核对假设和取舍，再确认实施方向。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Grill Me",
+        "paragraphs": [
+          "Grill Me is Matt Pocock’s user-invoked interview entry, delegating its questioning to the companion grilling Skill. It maps a plan into dependent decisions and asks the choices that can be settled with the information currently available. For software discussions that should also refine project language and durable records, Grill with Docs combines grilling with domain-modeling. That mode checks the glossary, code, and existing architectural decisions, updates resolved terms in GLOSSARY.md, and records an ADR only when a consequential trade-off warrants it. These are two entry points into related methods, so this guide covers them together. Install the collection with its companions, choose the mode that fits the task, and review decisions and any file changes before implementation."
+        ]
+      },
+      "zh": {
+        "title": "关于 Grill Me",
+        "paragraphs": [
+          "Grill Me 是 Matt Pocock 供用户主动调用的访谈入口，实际追问交给配套 grilling Skill。它把计划梳理为相互依赖的决策，先询问当前信息足以讨论的选择，再根据回答展开后续问题。软件方案还需要同步领域语言与持久记录时，可以选择 Grill with Docs；这个模式同时调用 grilling 和 domain-modeling，对照术语表、代码与已有架构记录澄清含义，在术语明确后更新 GLOSSARY.md，并只为必要的重要取舍形成 ADR。两者是相关方法的不同入口，因此在同一指南中介绍。使用时应完整安装集合与配套 Skills，按任务选择模式，并在实施前核对决策及实际文件改动。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Clarify plans with a structured interview, adding glossary and architectural records through the Grill with Docs mode when needed.",
+      "zh": "通过结构化访谈澄清计划，需要时以 Grill with Docs 模式同步术语与架构记录。"
+    },
+    "cardDescription": {
+      "en": "Clarify plans with a structured interview, adding glossary and architectural records through the Grill with Docs mode when needed.",
+      "zh": "通过结构化访谈澄清计划，需要时以 Grill with Docs 模式同步术语与架构记录。"
+    },
+    "upstreamInstall": "npx skills add mattpocock/skills",
+    "pageCopy": {
+      "kind": {
+        "en": "Interview guidance with a project-document mode",
+        "zh": "访谈指引与项目文档模式"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Plan Reviews with Grill Me",
+        "zh": "方案澄清与领域记录的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore plans that need clearer goals, decisions, or shared language before implementation. Use the ordinary interview for a product idea or workflow change, and the document-aware mode when a software discussion must also leave precise terminology and justified architectural decisions for later work.",
+        "zh": "探索实施前需要明确目标、选择或共同语言的方案。产品想法与流程调整可以使用普通访谈；软件讨论需要为后续工作留下精确术语和必要架构决策时，采用结合项目文档的模式，并核对记录是否忠实表达了讨论结果。"
+      },
+      "how": {
+        "en": "How to Clarify Plans with Grill Me",
+        "zh": "How to 澄清计划与记录决策"
+      },
+      "howDescription": {
+        "en": "Install Matt Pocock’s collection with the required companions, then choose Grill Me for an interview or Grill with Docs for project-aware terminology and records. Provide the plan and current evidence, resolve questions in rounds, and confirm the resulting decisions and warranted document changes before starting implementation.",
+        "zh": "安装 Matt Pocock 的集合并保留所需配套 Skills，再按任务选择 Grill Me 访谈或 Grill with Docs 文档模式。提供计划与现有资料，逐轮解决问题，最后核对已定决策及必要的文档改动，再进入实施。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Planning",
+          "zh": "规划"
+        },
+        "title": {
+          "en": "Shape a product idea",
+          "zh": "梳理产品想法"
+        },
+        "body": {
+          "en": "Use the ordinary interview to clarify the audience, useful outcome, and choices that change what should be built.",
+          "zh": "通过普通访谈明确目标用户、需要实现的结果，以及会改变建设方向的关键选择。"
+        }
+      },
+      {
+        "label": {
+          "en": "Workflow",
+          "zh": "流程"
+        },
+        "title": {
+          "en": "Review a workflow change",
+          "zh": "审视流程调整"
+        },
+        "body": {
+          "en": "Identify who is affected, what must remain possible, and which dependent decisions need to be settled before work is allocated.",
+          "zh": "明确受影响的人、必须保留的能力，以及分配工作前需要解决的相互依赖决策。"
+        }
+      },
+      {
+        "label": {
+          "en": "Domain knowledge",
+          "zh": "领域知识"
+        },
+        "title": {
+          "en": "Record a software design discussion",
+          "zh": "记录软件方案讨论"
+        },
+        "body": {
+          "en": "Choose Grill with Docs to check project terms against code and existing records, updating the glossary or an ADR only where the discussion warrants it.",
+          "zh": "选择 Grill with Docs，对照代码与已有记录检查项目术语，只在讨论确有需要时更新术语表或 ADR。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Choose the interview mode",
+          "zh": "选择访谈模式"
+        },
+        "body": {
+          "en": "Provide the plan and known constraints. Invoke /grill-me for the ordinary interview, or /grill-with-docs when project terminology and records should be part of the discussion.",
+          "zh": "提供计划与已知约束。普通访谈调用 /grill-me；需要结合项目术语和记录时，调用 /grill-with-docs。"
+        }
+      },
+      {
+        "title": {
+          "en": "Resolve each question round",
+          "zh": "逐轮核对决策"
+        },
+        "body": {
+          "en": "Answer the current questions and correct misunderstandings. In document-aware mode, compare terms and decisions with the glossary, code, and existing ADRs.",
+          "zh": "回答当前问题并纠正理解偏差。文档模式下，同时将术语与决定对应到词汇表、代码及已有 ADR。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review decisions and records",
+          "zh": "审阅决策与记录"
+        },
+        "body": {
+          "en": "Confirm settled choices and remaining gaps. Review any glossary or ADR changes, then decide whether the next task is further discussion, documentation, or implementation.",
+          "zh": "确认已定选择与剩余缺口，审阅词汇表或 ADR 的实际改动，再决定下一步是继续讨论、记录还是实施。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Is Grill Me the same as grilling?",
+          "zh": "Grill Me 与 grilling 是同一个吗？"
+        },
+        "answer": {
+          "en": "Grill Me is a user-invoked entry that calls grilling, where the questioning logic lives. Grill with Docs additionally calls domain-modeling. Install these companions together rather than copying an entry file alone.",
+          "zh": "Grill Me 是用户调用入口，会调用承载追问逻辑的 grilling；Grill with Docs 还会调用 domain-modeling。应一并安装这些配套 Skills，而不是只复制入口文件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does the agent invoke Grill Me automatically?",
+          "zh": "Agent 会自动调用 Grill Me 吗？"
+        },
+        "answer": {
+          "en": "The current source marks this entry as user-invoked. The companion grilling discipline can also be used by other workflows that explicitly call it.",
+          "zh": "当前源将该入口标记为用户调用。其他流程也可能明确调用配套 grilling 方法。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is it only for programming plans?",
+          "zh": "它只能讨论编程方案吗？"
+        },
+        "answer": {
+          "en": "The publisher places Grill Me in productivity and describes it for plans, designs, and non-code uses. Give enough context for the actual decision, whether or not it involves code.",
+          "zh": "发布者将它放在 productivity 类别，可用于计划、设计和非代码任务。无论是否涉及代码，都应提供足够的决策背景。"
+        }
+      },
+      {
+        "question": {
+          "en": "How are the questions organized?",
+          "zh": "问题如何组织？"
+        },
+        "answer": {
+          "en": "The companion Skill groups decisions by prerequisites. A round covers choices that can be answered now; answers unlock later questions.",
+          "zh": "配套方法按前提依赖组织决策。一轮讨论当前可回答的选择，回答后再展开后续问题。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I prepare?",
+          "zh": "开始前需要准备什么？"
+        },
+        "answer": {
+          "en": "Provide the plan, existing decisions, constraints, and references. Separate decisions you need to make from facts the agent can look up.",
+          "zh": "提供计划、已有决策、约束与参考资料，并区分需要由你选择的事项和 Agent 可查证的事实。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will it start implementing the plan?",
+          "zh": "它会直接实施计划吗？"
+        },
+        "answer": {
+          "en": "The documented interview ends with shared understanding and user confirmation. Turning the result into code or another deliverable is a follow-up task.",
+          "zh": "原始访谈以形成共同理解并获得确认结束。把结论转为代码或其他交付物属于后续任务。"
+        }
+      },
+      {
+        "question": {
+          "en": "When should I choose Grill with Docs instead?",
+          "zh": "什么时候更适合 Grill with Docs？"
+        },
+        "answer": {
+          "en": "Choose /grill-with-docs when the conversation should refine project terms and record warranted architectural decisions. It calls grilling and domain-modeling; /grill-me calls only grilling for the ordinary interview.",
+          "zh": "当讨论需要澄清项目术语并记录必要架构决定时，选择 /grill-with-docs；它同时调用 grilling 与 domain-modeling。普通访谈使用 /grill-me，只调用 grilling。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does every decision create an ADR?",
+          "zh": "每个决定都要写 ADR 吗？"
+        },
+        "answer": {
+          "en": "No. The domain-modeling source limits ADRs to consequential, hard-to-reverse choices with genuine alternatives and context a future reader would need.",
+          "zh": "不需要。domain-modeling 将 ADR 限于重要、难逆转、有真实备选且未来读者需要背景的选择。"
+        }
+      },
+      {
+        "question": {
+          "en": "What belongs in GLOSSARY.md?",
+          "zh": "GLOSSARY.md 应写什么？"
+        },
+        "answer": {
+          "en": "It defines domain terms and relationships. The source explicitly excludes implementation details, specifications, and scratch notes from the glossary.",
+          "zh": "它定义领域术语与关系。原文明确排除实现细节、需求说明和临时笔记。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will it write project files?",
+          "zh": "它会写入项目文件吗？"
+        },
+        "answer": {
+          "en": "The documented companion workflow can update the glossary as terms are resolved and create warranted ADRs. Review those changes within the scope you authorize.",
+          "zh": "原始配套流程可在术语明确后更新词汇表，并创建必要 ADR。应在授权范围内审阅这些改动。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if the code contradicts the agreed description?",
+          "zh": "代码与讨论描述矛盾时怎么办？"
+        },
+        "answer": {
+          "en": "Surface the discrepancy and decide which behavior is intended. Do not silently rewrite the glossary or code to hide the conflict.",
+          "zh": "应指出差异并确认预期行为，不能悄悄改词汇表或代码以掩盖冲突。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use /grill-with-docs to examine partial order cancellation. Check our glossary and current code, clarify the domain rules, and propose only the glossary or ADR changes that are warranted before implementation.",
+        "zh": "用 /grill-with-docs 讨论订单部分取消，对照术语表和当前代码澄清领域规则，实施前只提出必要的词汇表或 ADR 改动。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini-cli",
+        "github-copilot",
+        "opencode",
+        "auto"
+      ],
+      "note": {
+        "en": "These commands install Matt Pocock’s collection. Keep grilling for /grill-me, plus domain-modeling for /grill-with-docs. For engineering work, run /setup-matt-pocock-skills once per repository and include these companions if an installer offers a selection.",
+        "zh": "这些命令安装 Matt Pocock 的集合。/grill-me 需要 grilling，/grill-with-docs 还需要 domain-modeling。工程任务在每个仓库运行一次 /setup-matt-pocock-skills；安装器提供选择时，应保留这些配套 Skills。"
+      },
+      "commands": {
+        "claude-code": "claude plugin install mattpocock-skills@claude-plugins-official",
+        "codex": "codex plugin marketplace add mattpocock/skills\ncodex plugin add mattpocock-skills@mattpocock",
+        "cursor": "npx skills@latest add mattpocock/skills -a cursor",
+        "gemini-cli": "gemini skills install https://github.com/mattpocock/skills.git --path skills/engineering\ngemini skills install https://github.com/mattpocock/skills.git --path skills/productivity",
+        "github-copilot": "copilot plugin marketplace add mattpocock/skills\ncopilot plugin install mattpocock-skills@mattpocock",
+        "opencode": "npx skills@latest add mattpocock/skills -a opencode",
+        "auto": "npx skills@latest add mattpocock/skills"
+      },
+      "contexts": {
+        "claude-code": "terminal",
+        "codex": "terminal",
+        "cursor": "terminal",
+        "gemini-cli": "terminal",
+        "github-copilot": "terminal",
+        "opencode": "terminal",
+        "auto": "terminal"
+      }
+    },
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Interview method: Grilling",
+          "zh": "访谈方法：Grilling"
+        },
+        "href": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md"
+      },
+      {
+        "label": {
+          "en": "Document mode: Grill with Docs",
+          "zh": "文档模式：Grill with Docs"
+        },
+        "href": "https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md"
+      },
+      {
+        "label": {
+          "en": "Domain Modeling",
+          "zh": "领域建模：Domain Modeling"
+        },
+        "href": "https://github.com/mattpocock/skills/blob/main/skills/engineering/domain-modeling/SKILL.md"
+      }
+    ]
+  },
+  {
+    "slug": "tdd",
+    "authorHandle": "mattpocock",
+    "name": "TDD",
+    "publisher": "Matt Pocock",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md",
+    "repositoryUrl": "https://github.com/mattpocock/skills",
+    "category": {
+      "en": "Engineering · Testing",
+      "zh": "工程 · 测试"
+    },
+    "seo": {
+      "title": {
+        "en": "TDD by Matt Pocock | Installation & Guide",
+        "zh": "TDD by Matt Pocock：安装与使用指南"
+      },
+      "description": {
+        "en": "Build features and fixes through agreed public interfaces and small failing-test-to-implementation cycles.",
+        "zh": "围绕约定公开接口，通过失败测试与最小实现逐步完成特性和修复。"
+      },
+      "keywords": {
+        "en": [
+          "TDD by Matt Pocock",
+          "tdd",
+          "TDD agent skill"
+        ],
+        "zh": [
+          "TDD by Matt Pocock",
+          "TDD",
+          "工程 · 测试"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "TDD by Matt Pocock",
+        "zh": "TDD by Matt Pocock"
+      },
+      "description": {
+        "en": "Use TDD by Matt Pocock to implement a feature or fix through small, observable steps. Agree which public interfaces to test, write one failing behavior test, and add the minimum implementation needed to pass before choosing the next slice of work.",
+        "zh": "使用 Matt Pocock 的 TDD，以可观察的小步完成特性或修复。先约定需要测试的公开接口，再编写一条会失败的行为测试，补足使其通过的最小实现，然后根据反馈选择下一步工作。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About TDD",
+        "paragraphs": [
+          "TDD is Matt Pocock’s reference Skill for test-first implementation through public interfaces. It asks the user and agent to agree the testing seams before writing tests, so effort goes toward meaningful behavior rather than private implementation details. Each cycle follows one failing test with one minimal implementation, then uses that feedback to choose the next slice. The current source explicitly separates refactoring into the review stage instead of bundling it into the red-to-green cycle. The collection includes testing and mocking references, while codebase-design supplies shared vocabulary when the interface itself is unsettled. An existing test environment and a clear behavior specification remain necessary."
+        ]
+      },
+      "zh": {
+        "title": "关于 TDD",
+        "paragraphs": [
+          "TDD 是 Matt Pocock 面向测试先行实现发布的参考 Skill，强调通过公开接口验证行为。它要求用户与 Agent 在写测试前先约定测试边界，使工作聚焦于有意义的能力，而不是私有实现细节。每轮先写一条失败测试，再完成使其通过的最小实现，并依据反馈选择下一片工作。当前原文明确把重构放在审查阶段，而非混入红灯到绿灯的实现循环。集合提供测试与模拟参考资料；接口本身尚未确定时，还需参考 codebase-design 的共同术语。使用仍依赖项目已有测试环境，以及可独立判断的预期行为。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Build features and fixes through agreed public interfaces and small failing-test-to-implementation cycles.",
+      "zh": "围绕约定公开接口，通过失败测试与最小实现逐步完成特性和修复。"
+    },
+    "cardDescription": {
+      "en": "Build features and fixes through agreed public interfaces and small failing-test-to-implementation cycles.",
+      "zh": "围绕约定公开接口，通过失败测试与最小实现逐步完成特性和修复。"
+    },
+    "upstreamInstall": "npx skills add mattpocock/skills --skill tdd",
+    "pageCopy": {
+      "kind": {
+        "en": "Behavior-focused development discipline",
+        "zh": "行为导向的开发指引"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for TDD",
+        "zh": "测试先行开发的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore test-first work with a clear observable outcome. Add a feature behind a public interface, lock down a reproducible bug, or strengthen a critical integration path while keeping tests independent from internal structure and checking that each new test can detect the intended failure.",
+        "zh": "探索具有明确可观察结果的测试先行任务。可以为公开接口新增能力、锁定可复现缺陷，或补足关键集成路径，同时保持测试独立于内部结构，并核对每条新增测试确实能够捕获目标失败。"
+      },
+      "how": {
+        "en": "How to Implement Behavior with TDD",
+        "zh": "How to 用 TDD 实现行为"
+      },
+      "howDescription": {
+        "en": "Prepare the behavior specification and a runnable test command, then agree the public seams with your agent. Work through one failing test and one minimal implementation at a time, and keep broader cleanup for a separate review after the behavior is established.",
+        "zh": "准备行为要求与可运行的测试命令，再与 Agent 约定公开测试边界。每次只完成一条失败测试及其最小实现，在行为得到验证后另行审查更广泛的整理与重构，避免同时改变多个问题。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Add an observable feature",
+          "zh": "新增可观察能力"
+        },
+        "body": {
+          "en": "Describe what a caller should be able to do and test the result through the public interface.",
+          "zh": "说明调用方应获得的能力，并通过公开接口验证结果。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Protect a bug fix",
+          "zh": "保护缺陷修复"
+        },
+        "body": {
+          "en": "Choose a test seam that actually reproduces the failure instead of asserting on unrelated internal details.",
+          "zh": "选择能真实复现故障的测试边界，避免断言无关内部细节。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Cover a critical integration",
+          "zh": "覆盖关键集成"
+        },
+        "body": {
+          "en": "Exercise the behavior spanning a meaningful boundary with known expected results.",
+          "zh": "使用已知预期结果，验证跨越关键边界的真实行为。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Agree the test seams",
+          "zh": "约定测试边界"
+        },
+        "body": {
+          "en": "Provide the required behavior and test command. Confirm which public interfaces matter and what each proposed test catches.",
+          "zh": "提供行为要求与测试命令，确认重要公开接口及每条测试能捕获的问题。"
+        }
+      },
+      {
+        "title": {
+          "en": "Run one red-to-green cycle",
+          "zh": "完成一轮红灯到绿灯"
+        },
+        "body": {
+          "en": "Write a test that fails for the intended reason, then implement only enough behavior to pass it.",
+          "zh": "编写因目标问题而失败的测试，再仅实现使其通过的必要行为。"
+        }
+      },
+      {
+        "title": {
+          "en": "Repeat and review separately",
+          "zh": "继续迭代并另行审查"
+        },
+        "body": {
+          "en": "Use the last cycle’s evidence to choose the next slice. Review refactoring separately once the selected behavior works.",
+          "zh": "依据上一轮证据选择下一片工作，在目标行为可用后另行审查重构。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What does this TDD Skill install?",
+          "zh": "安装这个 TDD Skill 会获得什么？"
+        },
+        "answer": {
+          "en": "It adds instructions and reference material to an agent. It does not install a test runner or configure a project’s dependencies.",
+          "zh": "它为 Agent 添加指令与参考资料，不会自动安装测试运行器或配置项目依赖。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why agree seams before writing tests?",
+          "zh": "为什么写测试前先约定边界？"
+        },
+        "answer": {
+          "en": "A seam identifies the public interface through which behavior is observed. Agreement helps prioritize critical paths and avoids tests coupled to private details.",
+          "zh": "边界指通过哪个公开接口观察行为。预先约定有助于聚焦关键路径，避免测试依赖私有细节。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should all tests be written before implementation?",
+          "zh": "是否应该先写完所有测试？"
+        },
+        "answer": {
+          "en": "The source favors vertical slices: one test followed by its implementation, repeated as understanding improves. A batch of imagined tests can lock in the wrong structure.",
+          "zh": "原文主张纵向小步：一条测试跟随一份实现，再随理解深入继续。批量设想测试可能过早固定错误结构。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does the latest source include refactoring in every cycle?",
+          "zh": "最新版要求每轮都重构吗？"
+        },
+        "answer": {
+          "en": "No. The current source says refactoring belongs to the review stage rather than the red-to-green implementation loop. Earlier summaries may describe the familiar three-part phrase more loosely.",
+          "zh": "不要求。当前原文将重构放在审查阶段，而非红灯到绿灯的实现循环。较早摘要可能沿用较宽泛的三段式说法。"
+        }
+      },
+      {
+        "question": {
+          "en": "What makes an expected result trustworthy?",
+          "zh": "什么样的预期结果可信？"
+        },
+        "answer": {
+          "en": "Use a specification, worked example, or known correct literal that is independent of the implementation. Recomputing the same algorithm in the assertion can hide the same bug.",
+          "zh": "依据独立于实现的规范、推导示例或已知正确值。断言中重写同一算法可能掩盖相同缺陷。"
+        }
+      },
+      {
+        "question": {
+          "en": "When is codebase-design needed?",
+          "zh": "什么时候需要 codebase-design？"
+        },
+        "answer": {
+          "en": "Use its reference when the public interface or module depth is itself unresolved. The collection treats it as shared design vocabulary rather than an additional interview session.",
+          "zh": "公开接口或模块深度尚未确定时可参考它。集合将其作为共同设计术语，而非额外访谈流程。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it guarantee complete test coverage?",
+          "zh": "它能保证测试覆盖完整吗？"
+        },
+        "answer": {
+          "en": "No. It guides test selection and implementation; you still choose relevant behaviors and validate the resulting tests against the project’s risks.",
+          "zh": "不能。它指导测试选择与实现，仍需根据项目风险选择行为并验证测试有效性。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use Matt Pocock’s TDD for the checkout discount change. First propose the public testing seams, then implement one behavior at a time with a failing test.",
+        "zh": "使用 Matt Pocock 的 TDD 完成结账折扣修改，先提出公开测试边界，再用失败测试逐项实现行为。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini-cli",
+        "github-copilot",
+        "opencode",
+        "auto"
+      ],
+      "note": {
+        "en": "These commands install Matt Pocock’s collection so companion Skills remain available. Choose one installation method per agent; for engineering work, run /setup-matt-pocock-skills in each repository and include the required dependencies when selecting Skills.",
+        "zh": "这些命令安装 Matt Pocock 的集合，以保留配套 Skills。同一 Agent 选择一种安装方式；工程任务需在每个仓库运行 /setup-matt-pocock-skills，并在选择 Skills 时包含所需依赖。"
+      },
+      "commands": {
+        "claude-code": "claude plugin install mattpocock-skills@claude-plugins-official",
+        "codex": "codex plugin marketplace add mattpocock/skills\ncodex plugin add mattpocock-skills@mattpocock",
+        "cursor": "npx skills@latest add mattpocock/skills -a cursor",
+        "gemini-cli": "gemini skills install https://github.com/mattpocock/skills.git --path skills/engineering\ngemini skills install https://github.com/mattpocock/skills.git --path skills/productivity",
+        "github-copilot": "copilot plugin marketplace add mattpocock/skills\ncopilot plugin install mattpocock-skills@mattpocock",
+        "opencode": "npx skills@latest add mattpocock/skills -a opencode",
+        "auto": "npx skills@latest add mattpocock/skills"
+      },
+      "contexts": {
+        "claude-code": "terminal",
+        "codex": "terminal",
+        "cursor": "terminal",
+        "gemini-cli": "terminal",
+        "github-copilot": "terminal",
+        "opencode": "terminal",
+        "auto": "terminal"
+      }
+    }
+  },
+  {
+    "slug": "improve-codebase-architecture",
+    "authorHandle": "mattpocock",
+    "name": "Improve Codebase Architecture",
+    "publisher": "Matt Pocock",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/improve-codebase-architecture/SKILL.md",
+    "repositoryUrl": "https://github.com/mattpocock/skills",
+    "category": {
+      "en": "Engineering · Architecture",
+      "zh": "工程 · 架构"
+    },
+    "seo": {
+      "title": {
+        "en": "Improve Codebase Architecture by Matt Pocock | Installation & Guide",
+        "zh": "Improve Codebase Architecture by Matt Pocock：安装与使用指南"
+      },
+      "description": {
+        "en": "Survey concrete architecture friction, compare candidate module improvements, and explore one design before refactoring.",
+        "zh": "调查实际架构摩擦，比较模块改进候选，再深入选定设计。"
+      },
+      "keywords": {
+        "en": [
+          "Improve Codebase Architecture by Matt Pocock",
+          "improve-codebase-architecture",
+          "Improve Codebase Architecture agent skill"
+        ],
+        "zh": [
+          "Improve Codebase Architecture by Matt Pocock",
+          "Improve Codebase Architecture",
+          "工程 · 架构"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Improve Codebase Architecture by Matt Pocock",
+        "zh": "Improve Codebase Architecture by Matt Pocock"
+      },
+      "description": {
+        "en": "Use Improve Codebase Architecture by Matt Pocock to survey the parts of a repository that are difficult to change or test. Review a visual report of candidate module improvements, choose one grounded in actual friction, and explore its design before authorizing a refactor.",
+        "zh": "使用 Matt Pocock 的 Improve Codebase Architecture，调查仓库中难以修改或测试的部分。先查看以实际摩擦为依据的模块改进候选与可视化报告，再选定一项深入讨论设计，明确取舍后决定是否实施重构。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Improve Codebase Architecture",
+        "paragraphs": [
+          "Improve Codebase Architecture is a user-invoked survey in Matt Pocock’s collection. It examines a named area or recent change hotspots for shallow modules, leaking seams, and testing friction. The agent presents candidate improvements in an HTML report with affected files, before-and-after views, and recommendation strength. You choose which candidate deserves further discussion; the source does not begin by redesigning every interface. Its later interview uses grilling, codebase-design, and domain-modeling, consulting the project glossary and architectural decisions. This is a way to identify and examine worthwhile changes, not proof that a proposed architecture is better or permission to rewrite the repository."
+        ]
+      },
+      "zh": {
+        "title": "关于 Improve Codebase Architecture",
+        "paragraphs": [
+          "Improve Codebase Architecture 是 Matt Pocock 集合中供用户主动调用的架构调查入口。它围绕指定区域或近期频繁修改的热点，查找浅模块、边界泄漏和测试困难，并生成列明文件、前后结构与推荐强度的 HTML 报告。用户选定候选后才进入进一步讨论，流程不会一开始就重新设计所有接口。后续访谈结合 grilling、codebase-design 与 domain-modeling，并参考项目术语表和已有架构决策。它的作用是识别和讨论值得改进的地方，提出建议本身不证明新架构更优，也不等于获得全仓库重写授权。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Survey concrete architecture friction, compare candidate module improvements, and explore one design before refactoring.",
+      "zh": "调查实际架构摩擦，比较模块改进候选，再深入选定设计。"
+    },
+    "cardDescription": {
+      "en": "Survey concrete architecture friction, compare candidate module improvements, and explore one design before refactoring.",
+      "zh": "调查实际架构摩擦，比较模块改进候选，再深入选定设计。"
+    },
+    "upstreamInstall": "npx skills add mattpocock/skills --skill improve-codebase-architecture",
+    "pageCopy": {
+      "kind": {
+        "en": "User-invoked architecture survey",
+        "zh": "用户调用的架构调查"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Architecture Reviews",
+        "zh": "架构评审的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore architecture questions tied to recurring development friction. Survey a frequently changed module, investigate why useful behavior is difficult to test, or examine scattered responsibilities before selecting a candidate whose interface and implementation can be improved with a specific, reviewable design.",
+        "zh": "探索与持续开发摩擦直接相关的架构问题。可以调查反复修改的模块、分析真实行为为何难以测试，或检查职责分散的代码，再选择一项有明确依据的候选，讨论可审阅的接口与实现改进。"
+      },
+      "how": {
+        "en": "How to Explore Architecture Improvements",
+        "zh": "How to 评审架构改进"
+      },
+      "howDescription": {
+        "en": "Install the related collection skills and provide a subsystem or concrete pain point. Let the agent survey the relevant code and existing decisions, review its visual candidate report, and choose one opportunity for a design interview before planning implementation and validation.",
+        "zh": "安装相关配套 Skills，并提供子系统或具体痛点。让 Agent 调查相关代码和已有决策，审阅可视化候选报告，再选择一项进入设计访谈；讨论明确后，才规划实施范围与验证方式。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "A hotspot keeps changing",
+          "zh": "热点模块反复修改"
+        },
+        "body": {
+          "en": "Start with recent history to investigate the area causing recurring changes.",
+          "zh": "结合近期历史调查反复引发修改的区域。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Behavior is hard to test",
+          "zh": "真实行为难以测试"
+        },
+        "body": {
+          "en": "Look for an interface that exposes too little useful behavior or forces tests into internals.",
+          "zh": "检查接口是否无法暴露有意义行为，导致测试深入内部实现。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Understanding crosses many files",
+          "zh": "理解概念需要跨越多文件"
+        },
+        "body": {
+          "en": "Examine whether scattered modules create real navigation and maintenance costs.",
+          "zh": "检查分散模块是否造成实际导航与维护成本。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Set the survey scope",
+          "zh": "确定调查范围"
+        },
+        "body": {
+          "en": "Name an area or pain point and provide existing domain docs. Let recent change history inform the scope when no area is specified.",
+          "zh": "说明区域或痛点并提供领域资料；未指定时可结合近期变更确定范围。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review the candidate report",
+          "zh": "审阅候选报告"
+        },
+        "body": {
+          "en": "Inspect the affected files, friction, proposed direction, and visual comparisons. Distinguish strong recommendations from speculative ones.",
+          "zh": "核对涉及文件、摩擦、改进方向和结构比较，区分强建议与推测候选。"
+        }
+      },
+      {
+        "title": {
+          "en": "Explore one selected design",
+          "zh": "深入一项设计"
+        },
+        "body": {
+          "en": "Choose a candidate for the dependent-decision interview. Agree the intended interface, preserved behavior, and validation before refactoring.",
+          "zh": "选一项进入决策访谈，重构前明确接口、需保留行为和验证方式。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does this Skill refactor everything it finds?",
+          "zh": "它会重构所有发现的问题吗？"
+        },
+        "answer": {
+          "en": "No. It first presents candidate improvements and asks which one you want to explore. Implementation is a later task with its own scope and checks.",
+          "zh": "不会。它先展示候选并询问要深入哪一项，实施是另一个有独立范围和检查的任务。"
+        }
+      },
+      {
+        "question": {
+          "en": "What is a deepening opportunity?",
+          "zh": "什么是模块深化机会？"
+        },
+        "answer": {
+          "en": "It is a proposal to hide meaningful complexity behind a simpler, useful interface. The value must be explained through actual callers, locality, or testability rather than abstraction alone.",
+          "zh": "指把实际复杂性放到更简单且有用的接口之后。价值应通过调用方、局部性或可测试性说明，而不是只增加抽象。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which companion Skills are required?",
+          "zh": "需要哪些配套 Skills？"
+        },
+        "answer": {
+          "en": "The current source references codebase-design, grilling, and domain-modeling. Install the collection so those references can be resolved by the host agent.",
+          "zh": "当前原文引用 codebase-design、grilling 和 domain-modeling，应安装集合，使宿主 Agent 能找到这些引用。"
+        }
+      },
+      {
+        "question": {
+          "en": "What does the report contain?",
+          "zh": "报告包含什么？"
+        },
+        "answer": {
+          "en": "It describes affected files, architectural friction, possible changes, benefits, visual comparisons, and recommendation strength. The source writes a separate HTML file in the OS temporary directory.",
+          "zh": "包含相关文件、架构摩擦、可能改动、收益、可视化比较与推荐强度。原文将独立 HTML 文件保存到系统临时目录。"
+        }
+      },
+      {
+        "question": {
+          "en": "How are existing ADRs handled?",
+          "zh": "如何处理已有 ADR？"
+        },
+        "answer": {
+          "en": "The survey reads relevant decisions first. A conflicting proposal should identify the conflict and explain why observed friction might justify reopening it.",
+          "zh": "调查先读取相关决策。与之冲突的建议应指出冲突，并说明哪些实际摩擦值得重新讨论。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does the workflow need subagents?",
+          "zh": "流程需要 subagent 吗？"
+        },
+        "answer": {
+          "en": "The documented exploration uses a subagent, and interface alternatives can also use parallel agents. A host without those capabilities cannot reproduce every step unchanged.",
+          "zh": "原始探索流程使用子代理，接口备选也可能使用并行代理。缺少这些能力的宿主不能原样复现全部步骤。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Survey the order-import subsystem for architecture friction. Respect existing ADRs, show candidate improvements first, and do not refactor until I choose one.",
+        "zh": "调查订单导入子系统的架构摩擦，尊重已有 ADR，先展示候选，等我选择后再考虑重构。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini-cli",
+        "github-copilot",
+        "opencode",
+        "auto"
+      ],
+      "note": {
+        "en": "These commands install Matt Pocock’s collection so companion Skills remain available. Choose one installation method per agent; for engineering work, run /setup-matt-pocock-skills in each repository and include the required dependencies when selecting Skills.",
+        "zh": "这些命令安装 Matt Pocock 的集合，以保留配套 Skills。同一 Agent 选择一种安装方式；工程任务需在每个仓库运行 /setup-matt-pocock-skills，并在选择 Skills 时包含所需依赖。"
+      },
+      "commands": {
+        "claude-code": "claude plugin install mattpocock-skills@claude-plugins-official",
+        "codex": "codex plugin marketplace add mattpocock/skills\ncodex plugin add mattpocock-skills@mattpocock",
+        "cursor": "npx skills@latest add mattpocock/skills -a cursor",
+        "gemini-cli": "gemini skills install https://github.com/mattpocock/skills.git --path skills/engineering\ngemini skills install https://github.com/mattpocock/skills.git --path skills/productivity",
+        "github-copilot": "copilot plugin marketplace add mattpocock/skills\ncopilot plugin install mattpocock-skills@mattpocock",
+        "opencode": "npx skills@latest add mattpocock/skills -a opencode",
+        "auto": "npx skills@latest add mattpocock/skills"
+      },
+      "contexts": {
+        "claude-code": "terminal",
+        "codex": "terminal",
+        "cursor": "terminal",
+        "gemini-cli": "terminal",
+        "github-copilot": "terminal",
+        "opencode": "terminal",
+        "auto": "terminal"
+      }
+    }
+  },
+  {
+    "slug": "diagnosing-bugs",
+    "authorHandle": "mattpocock",
+    "name": "Diagnosing Bugs",
+    "publisher": "Matt Pocock",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnosing-bugs/SKILL.md",
+    "repositoryUrl": "https://github.com/mattpocock/skills",
+    "category": {
+      "en": "Engineering · Debugging",
+      "zh": "工程 · 调试"
+    },
+    "seo": {
+      "title": {
+        "en": "Diagnosing Bugs by Matt Pocock | Installation & Guide",
+        "zh": "Diagnosing Bugs by Matt Pocock：安装与使用指南"
+      },
+      "description": {
+        "en": "Diagnose difficult bugs through a reproducible signal, minimized case, and verified correction.",
+        "zh": "通过复现信号、最小案例和修复验证调查复杂缺陷。"
+      },
+      "keywords": {
+        "en": [
+          "Diagnosing Bugs by Matt Pocock",
+          "diagnosing-bugs",
+          "Diagnosing Bugs agent skill"
+        ],
+        "zh": [
+          "Diagnosing Bugs by Matt Pocock",
+          "Diagnosing Bugs",
+          "工程 · 调试"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Diagnosing Bugs by Matt Pocock",
+        "zh": "Diagnosing Bugs by Matt Pocock"
+      },
+      "description": {
+        "en": "Use Diagnosing Bugs by Matt Pocock to investigate failures and performance regressions through a repeatable feedback loop. Reproduce the exact symptom, reduce the scenario, compare testable explanations, and verify a focused fix against both the minimized case and the original user flow.",
+        "zh": "使用 Matt Pocock 的 Diagnosing Bugs，通过可重复的反馈循环调查故障和性能回退。先复现准确症状、缩小场景，再比较可检验解释，并用最小案例与原始用户流程共同验证范围明确的修复。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Diagnosing Bugs",
+        "paragraphs": [
+          "Diagnosing Bugs is a debugging discipline in Matt Pocock’s engineering collection. It puts disproportionate effort into building a fast, repeatable pass-or-fail signal for the actual reported bug before developing theories. That signal may come from a test, HTTP request, CLI fixture, browser script, or another suitable harness. The workflow then minimizes the reproduction, ranks falsifiable hypotheses, adds targeted probes, and verifies a fix. Where a suitable testing seam exists, the reproduction becomes a regression test. The final cleanup removes temporary instrumentation and reruns the original scenario. Access to the failing environment and careful redaction of captured evidence remain important inputs."
+        ]
+      },
+      "zh": {
+        "title": "关于 Diagnosing Bugs",
+        "paragraphs": [
+          "Diagnosing Bugs 是 Matt Pocock 工程集合中的调试方法，首先投入精力建立针对真实故障、快速可重复的通过或失败信号，再形成原因假设。这个信号可以来自测试、HTTP 请求、CLI 样例、浏览器脚本或适当的临时环境。随后流程缩小复现场景，排列可被证伪的解释，添加有针对性的探针，并验证修复。在存在合适测试边界时，复现案例会转为回归测试；最后清理临时诊断代码，并重新运行原始场景。有效使用仍需访问出现问题的环境，展示日志与捕获资料前也应先移除敏感值。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Diagnose difficult bugs through a reproducible signal, minimized case, and verified correction.",
+      "zh": "通过复现信号、最小案例和修复验证调查复杂缺陷。"
+    },
+    "cardDescription": {
+      "en": "Diagnose difficult bugs through a reproducible signal, minimized case, and verified correction.",
+      "zh": "通过复现信号、最小案例和修复验证调查复杂缺陷。"
+    },
+    "upstreamInstall": "npx skills add mattpocock/skills --skill diagnosing-bugs",
+    "pageCopy": {
+      "kind": {
+        "en": "Reproduction-driven diagnosis workflow",
+        "zh": "复现驱动的诊断流程"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Diagnosing Bugs",
+        "zh": "复杂缺陷诊断的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore bugs that keep returning, failures with unclear causes, or a slowdown after a change. Build evidence around the specific symptom and use the same feedback loop to compare hypotheses, so a successful command is not mistaken for a verified fix to the user’s problem.",
+        "zh": "探索反复出现的缺陷、原因不清的失败，或变更后的性能下降。围绕具体症状建立证据，再使用同一反馈循环比较原因假设，避免把一次命令成功误当作用户问题已解决。"
+      },
+      "how": {
+        "en": "How to Diagnose Bugs with a Feedback Loop",
+        "zh": "How to 调查复杂缺陷"
+      },
+      "howDescription": {
+        "en": "Give the agent the observed and expected behavior, environment, and reproduction inputs. Establish a reliable failing signal, minimize it, and test ranked explanations with targeted instrumentation. Apply a focused correction, rerun the original flow, and remove temporary probes before closing the task.",
+        "zh": "提供实际与预期行为、环境和复现输入。先建立可靠失败信号并缩小案例，再通过针对性诊断比较原因假设。实施范围明确的修复后，重跑原始流程并清理临时探针，再确认任务完成。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "A bug survives several fixes",
+          "zh": "多次修改后仍然出错"
+        },
+        "body": {
+          "en": "Replace repeated guesses with a feedback command that catches the exact reported failure.",
+          "zh": "建立能捕获准确故障的反馈命令，替代反复猜测。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "An issue appears intermittently",
+          "zh": "问题间歇出现"
+        },
+        "body": {
+          "en": "Increase the reproduction rate with a controlled loop before choosing an explanation.",
+          "zh": "先通过受控循环提高复现率，再选择原因解释。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "A release became slower",
+          "zh": "发布后性能下降"
+        },
+        "body": {
+          "en": "Build a comparable timing baseline and investigate the change against measured behavior.",
+          "zh": "建立可比较的计时基线，依据测量调查变化。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Build the failure signal",
+          "zh": "建立失败信号"
+        },
+        "body": {
+          "en": "Describe the exact symptom and run a command that can detect it. Capture only the diagnostic evidence needed, with secrets removed.",
+          "zh": "说明准确症状并运行能检测它的命令，仅保留必要且已脱敏的诊断证据。"
+        }
+      },
+      {
+        "title": {
+          "en": "Minimize and test explanations",
+          "zh": "缩小案例并检验解释"
+        },
+        "body": {
+          "en": "Reduce inputs while preserving failure. Compare ranked hypotheses with probes that change one variable at a time.",
+          "zh": "在保留失败的前提下缩减输入，再用每次只改变一个变量的探针比较假设。"
+        }
+      },
+      {
+        "title": {
+          "en": "Fix, verify, and clean up",
+          "zh": "修复、验证并清理"
+        },
+        "body": {
+          "en": "Test the correction at an appropriate seam and rerun the original scenario. Remove debug instrumentation and record the supported cause.",
+          "zh": "在合适边界测试修复并重跑原始场景，清理诊断代码并记录有证据支持的原因。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Why build a loop before reading code for a theory?",
+          "zh": "为什么先建立反馈循环再推测代码原因？"
+        },
+        "answer": {
+          "en": "The loop establishes whether the actual symptom can be detected repeatedly. Without it, plausible code explanations are difficult to disprove or use to verify a fix.",
+          "zh": "循环先确认真实症状可重复检测。没有它，看似合理的代码解释难以证伪，也难验证修复。"
+        }
+      },
+      {
+        "question": {
+          "en": "Must the signal be an automated unit test?",
+          "zh": "反馈信号必须是单元测试吗？"
+        },
+        "answer": {
+          "en": "No. The source also describes HTTP scripts, CLI fixtures, browser checks, trace replay, and other harnesses. Choose a signal that reaches the real failure.",
+          "zh": "不必。原文还列出 HTTP 脚本、CLI 样例、浏览器检查、追踪重放等方式，应选择能触达真实故障的信号。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if the bug is intermittent?",
+          "zh": "间歇故障怎么办？"
+        },
+        "answer": {
+          "en": "Use a controlled repeated trigger to raise the reproduction rate and preserve relevant timing or randomness. State the observed rate instead of presenting a single pass as certainty.",
+          "zh": "通过受控重复触发提高复现率，并控制相关时序或随机性。应说明观察到的概率，不能把单次通过视为确定结论。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if no reproducible signal is possible?",
+          "zh": "无法建立复现信号时怎么办？"
+        },
+        "answer": {
+          "en": "The documented workflow pauses diagnosis and identifies missing access or evidence. It asks for an appropriate environment, redacted artifact, or separately authorized instrumentation.",
+          "zh": "原始流程会暂停诊断并说明缺失的访问或证据，再请求适当环境、脱敏资料或另行授权的诊断设置。"
+        }
+      },
+      {
+        "question": {
+          "en": "When should a regression test be added?",
+          "zh": "什么时候添加回归测试？"
+        },
+        "answer": {
+          "en": "Add one before the fix when a real testing seam can exercise the observed bug pattern. If no suitable seam exists, report that architecture limitation rather than writing a misleading test.",
+          "zh": "能通过真实测试边界触发故障模式时，应在修复前加测试；缺少合适边界时应记录架构限制，不写误导性测试。"
+        }
+      },
+      {
+        "question": {
+          "en": "What belongs in the completion report?",
+          "zh": "完成报告应包含什么？"
+        },
+        "answer": {
+          "en": "Include the supported cause, original reproduction result, regression verification if available, and confirmation that temporary probes were removed. Keep secret values out of evidence.",
+          "zh": "包含有证据支持的原因、原始复现结果、适用的回归验证，以及临时探针清理情况，并避免证据暴露密钥值。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use Diagnosing Bugs on the duplicate webhook issue. First build a repeatable signal for the duplicate charge, then investigate and verify the original scenario after fixing it.",
+        "zh": "用 Diagnosing Bugs 调查重复 webhook 问题，先建立能检测重复扣款的反馈信号，再调查原因并在修复后验证原始场景。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini-cli",
+        "github-copilot",
+        "opencode",
+        "auto"
+      ],
+      "note": {
+        "en": "These commands install Matt Pocock’s collection so companion Skills remain available. Choose one installation method per agent; for engineering work, run /setup-matt-pocock-skills in each repository and include the required dependencies when selecting Skills.",
+        "zh": "这些命令安装 Matt Pocock 的集合，以保留配套 Skills。同一 Agent 选择一种安装方式；工程任务需在每个仓库运行 /setup-matt-pocock-skills，并在选择 Skills 时包含所需依赖。"
+      },
+      "commands": {
+        "claude-code": "claude plugin install mattpocock-skills@claude-plugins-official",
+        "codex": "codex plugin marketplace add mattpocock/skills\ncodex plugin add mattpocock-skills@mattpocock",
+        "cursor": "npx skills@latest add mattpocock/skills -a cursor",
+        "gemini-cli": "gemini skills install https://github.com/mattpocock/skills.git --path skills/engineering\ngemini skills install https://github.com/mattpocock/skills.git --path skills/productivity",
+        "github-copilot": "copilot plugin marketplace add mattpocock/skills\ncopilot plugin install mattpocock-skills@mattpocock",
+        "opencode": "npx skills@latest add mattpocock/skills -a opencode",
+        "auto": "npx skills@latest add mattpocock/skills"
+      },
+      "contexts": {
+        "claude-code": "terminal",
+        "codex": "terminal",
+        "cursor": "terminal",
+        "gemini-cli": "terminal",
+        "github-copilot": "terminal",
+        "opencode": "terminal",
+        "auto": "terminal"
+      }
+    }
+  },
+  {
+    "slug": "code-review",
+    "authorHandle": "mattpocock",
+    "name": "Code Review",
+    "publisher": "Matt Pocock",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/code-review/SKILL.md",
+    "repositoryUrl": "https://github.com/mattpocock/skills",
+    "category": {
+      "en": "Engineering · Code review",
+      "zh": "工程 · 代码审查"
+    },
+    "seo": {
+      "title": {
+        "en": "Code Review by Matt Pocock | Installation & Guide",
+        "zh": "Code Review by Matt Pocock：安装与使用指南"
+      },
+      "description": {
+        "en": "Review a fixed Git diff independently for repository standards and originating requirements.",
+        "zh": "对固定 Git 差异分别检查仓库规范与原始需求。"
+      },
+      "keywords": {
+        "en": [
+          "Code Review by Matt Pocock",
+          "code-review",
+          "Code Review agent skill"
+        ],
+        "zh": [
+          "Code Review by Matt Pocock",
+          "Code Review",
+          "工程 · 代码审查"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Code Review by Matt Pocock",
+        "zh": "Code Review by Matt Pocock"
+      },
+      "description": {
+        "en": "Use Code Review by Matt Pocock to examine a branch against a fixed Git reference. Review repository standards and the originating specification independently, then compare located findings side by side so code quality and requirement coverage remain separate questions in the review.",
+        "zh": "使用 Matt Pocock 的 Code Review，对照固定 Git 参考检查分支。分别审查仓库规范和原始需求，再并列查看可定位结果，让代码质量与需求覆盖保持为两个清楚的问题，避免某一方面通过掩盖另一方不足。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Code Review",
+        "paragraphs": [
+          "Code Review is a two-axis review Skill in Matt Pocock’s engineering collection. It first resolves a comparison reference and checks that the merge-base diff is non-empty, then locates the originating specification and repository standards. Separate subagents review standards and specification coverage, keeping their findings distinct in the final report. The standards axis also uses a labeled code-smell baseline, while documented project conventions take precedence. If no specification exists, that axis is explicitly skipped rather than invented. Use the Skill with an accessible Git history, the intended comparison point, and the collection’s issue-tracker configuration; it is a review workflow, not an automatic approval or correction service."
+        ]
+      },
+      "zh": {
+        "title": "关于 Code Review",
+        "paragraphs": [
+          "Code Review 是 Matt Pocock 工程集合中的双轴审查 Skill。它先解析比较参考，确认基于合并基点的差异非空，再查找原始需求与仓库编码规范。两个独立子代理分别检查规范和需求覆盖，最终报告保留两方面发现。规范轴还使用有明确标识的代码异味基线，但项目文档中的约定具有优先权。没有需求说明时，会明确跳过需求轴，而不是自行编造。使用需要可访问的 Git 历史、预期比较点及集合的需求跟踪配置；它提供审查流程，不会自动批准修改，也不保证完成问题修复。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Review a fixed Git diff independently for repository standards and originating requirements.",
+      "zh": "对固定 Git 差异分别检查仓库规范与原始需求。"
+    },
+    "cardDescription": {
+      "en": "Review a fixed Git diff independently for repository standards and originating requirements.",
+      "zh": "对固定 Git 差异分别检查仓库规范与原始需求。"
+    },
+    "upstreamInstall": "npx skills add mattpocock/skills --skill code-review",
+    "pageCopy": {
+      "kind": {
+        "en": "Standards and specification review",
+        "zh": "规范与需求双轴审查"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Code Review",
+        "zh": "代码审查的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore review tasks where both implementation discipline and requirement fidelity matter. Examine a feature branch, check a completed ticket, or compare work against a release baseline while keeping evidence of standards violations separate from missing, partial, or unintended behavior.",
+        "zh": "探索同时需要检查实现规范和需求符合度的审查任务。可以检查特性分支、核对完成的工单，或与发布基线比较；将规范违背与缺失、部分完成或超出要求的行为分别列出，并保留对应证据。"
+      },
+      "how": {
+        "en": "How to Review a Branch with Code Review",
+        "zh": "How to 审查分支变更"
+      },
+      "howDescription": {
+        "en": "Provide a resolvable Git comparison point and the originating issue or specification. Let the agent collect standards and establish the diff, run the two review axes independently, and inspect their separate findings before deciding which edits or follow-up checks are needed.",
+        "zh": "提供可解析的 Git 比较点和原始工单或需求说明。让 Agent 收集规范、确定差异范围，再独立运行两个审查轴；分别核对发现后，决定需要修改哪些内容，以及补充哪些验证。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Review a feature branch",
+          "zh": "审查特性分支"
+        },
+        "body": {
+          "en": "Compare the changes with the agreed base and review both conventions and intended behavior.",
+          "zh": "与约定基线比较改动，同时检查代码约定与预期行为。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Check a ticket implementation",
+          "zh": "核对工单实现"
+        },
+        "body": {
+          "en": "Locate requirements that are missing, partial, or implemented differently from the specification.",
+          "zh": "找出缺失、部分完成或与需求不同的实现。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Audit a release diff",
+          "zh": "复核发布差异"
+        },
+        "body": {
+          "en": "Use a fixed release reference to keep the review scope reproducible.",
+          "zh": "使用固定发布参考，使审查范围可以复现。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Pin the comparison point",
+          "zh": "固定比较点"
+        },
+        "body": {
+          "en": "Supply a commit, branch, tag, or other valid reference. Confirm the merge-base diff covers the intended work.",
+          "zh": "提供有效提交、分支或标签，并确认合并基点差异覆盖目标工作。"
+        }
+      },
+      {
+        "title": {
+          "en": "Provide standards and specification",
+          "zh": "提供规范与需求"
+        },
+        "body": {
+          "en": "Point to repository conventions and the originating requirement. Make any missing specification explicit.",
+          "zh": "指出仓库约定与原始需求；缺少需求说明时明确记录。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review both result sets",
+          "zh": "分别核对两组结果"
+        },
+        "body": {
+          "en": "Read Standards and Spec findings independently. Decide which changes need correction without treating a pass on one axis as approval of the other.",
+          "zh": "独立阅读规范和需求发现，不把某一轴通过当作另一轴也合格。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Which Git comparison does the workflow use?",
+          "zh": "流程使用哪种 Git 比较？"
+        },
+        "answer": {
+          "en": "It uses a three-dot comparison between the chosen reference and HEAD, so the review is based on their merge base. Confirm that scope matches your intent.",
+          "zh": "它使用所选参考与 HEAD 的三点比较，基于二者合并基点审查。应先确认该范围符合目标。"
+        }
+      },
+      {
+        "question": {
+          "en": "What happens with an invalid reference or empty diff?",
+          "zh": "参考无效或差异为空怎么办？"
+        },
+        "answer": {
+          "en": "The source checks those conditions before dispatching reviewers. Correct the comparison rather than presenting an empty review as a successful assessment.",
+          "zh": "原文在分发审查前检查这些条件。应修正比较范围，而不是把空审查视为成功评估。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it require a specification?",
+          "zh": "必须提供需求说明吗？"
+        },
+        "answer": {
+          "en": "It attempts to locate the originating issue or specification. If none is available, it reports that and skips the Spec axis instead of guessing requirements.",
+          "zh": "它会尝试查找原始工单或说明。没有时应明确报告并跳过需求轴，而不是猜测要求。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which standards take precedence?",
+          "zh": "哪些编码规范优先？"
+        },
+        "answer": {
+          "en": "Documented repository standards override the source’s general smell baseline. Smell observations are judgment calls, not automatically hard violations.",
+          "zh": "仓库文档规范优先于通用代码异味基线。异味属于判断线索，不自动等于硬性违规。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can a host without subagents run the exact workflow?",
+          "zh": "没有子代理的宿主能原样运行吗？"
+        },
+        "answer": {
+          "en": "The documented separation uses parallel subagents. A sequential review may still be useful, but should be described as an adaptation rather than the unchanged process.",
+          "zh": "原始隔离流程使用并行子代理。顺序审查仍可能有用，但应说明这是适配流程，不能称为原样执行。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why keep the two axes separate?",
+          "zh": "为什么不把两个轴的结果合并？"
+        },
+        "answer": {
+          "en": "Conventional code can still miss requirements, and correct behavior can still violate project standards. Separate reporting makes each kind of failure visible.",
+          "zh": "符合规范的代码可能漏需求，行为正确的代码也可能违背项目约定。分开报告可以保留不同问题。"
+        }
+      },
+      {
+        "question": {
+          "en": "How is the issue tracker configured?",
+          "zh": "如何配置需求跟踪方式？"
+        },
+        "answer": {
+          "en": "The collection’s setup Skill records the repository’s issue-tracker workflow. Configure it before engineering use so the reviewer can locate the right sources.",
+          "zh": "集合的 setup Skill 会记录仓库需求跟踪方式。工程使用前应先配置，以便审查找到正确来源。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Review this branch against main using Matt Pocock’s Code Review. The specification is docs/specs/import.md. Keep standards and specification findings separate.",
+        "zh": "使用 Matt Pocock 的 Code Review 对照 main 审查分支，需求文件是 docs/specs/import.md，分别报告规范与需求发现。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini-cli",
+        "github-copilot",
+        "opencode",
+        "auto"
+      ],
+      "note": {
+        "en": "These commands install Matt Pocock’s collection so companion Skills remain available. Choose one installation method per agent; for engineering work, run /setup-matt-pocock-skills in each repository and include the required dependencies when selecting Skills.",
+        "zh": "这些命令安装 Matt Pocock 的集合，以保留配套 Skills。同一 Agent 选择一种安装方式；工程任务需在每个仓库运行 /setup-matt-pocock-skills，并在选择 Skills 时包含所需依赖。"
+      },
+      "commands": {
+        "claude-code": "claude plugin install mattpocock-skills@claude-plugins-official",
+        "codex": "codex plugin marketplace add mattpocock/skills\ncodex plugin add mattpocock-skills@mattpocock",
+        "cursor": "npx skills@latest add mattpocock/skills -a cursor",
+        "gemini-cli": "gemini skills install https://github.com/mattpocock/skills.git --path skills/engineering\ngemini skills install https://github.com/mattpocock/skills.git --path skills/productivity",
+        "github-copilot": "copilot plugin marketplace add mattpocock/skills\ncopilot plugin install mattpocock-skills@mattpocock",
+        "opencode": "npx skills@latest add mattpocock/skills -a opencode",
+        "auto": "npx skills@latest add mattpocock/skills"
+      },
+      "contexts": {
+        "claude-code": "terminal",
+        "codex": "terminal",
+        "cursor": "terminal",
+        "gemini-cli": "terminal",
+        "github-copilot": "terminal",
+        "opencode": "terminal",
+        "auto": "terminal"
+      }
+    }
+  },
+  {
+    "slug": "handoff",
+    "authorHandle": "mattpocock",
+    "name": "Handoff",
+    "publisher": "Matt Pocock",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md",
+    "repositoryUrl": "https://github.com/mattpocock/skills",
+    "category": {
+      "en": "Productivity · Agent continuity",
+      "zh": "效率 · Agent 上下文交接"
+    },
+    "seo": {
+      "title": {
+        "en": "Handoff by Matt Pocock | Installation & Guide",
+        "zh": "Handoff by Matt Pocock：安装与使用指南"
+      },
+      "description": {
+        "en": "Summarize a session into a focused temporary handoff document with references and suggested skills.",
+        "zh": "通过引用与建议 Skills，将会话整理为聚焦的临时交接文档。"
+      },
+      "keywords": {
+        "en": [
+          "Handoff by Matt Pocock",
+          "handoff",
+          "Handoff agent skill"
+        ],
+        "zh": [
+          "Handoff by Matt Pocock",
+          "Handoff",
+          "效率 · Agent 上下文交接"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Handoff by Matt Pocock",
+        "zh": "Handoff by Matt Pocock"
+      },
+      "description": {
+        "en": "Use Handoff by Matt Pocock to prepare a focused transition from one agent session to another. Summarize the current work, reference existing artifacts instead of copying them, and tailor the document to the next session’s purpose while removing sensitive details from the handoff.",
+        "zh": "使用 Matt Pocock 的 Handoff，为不同 Agent 会话之间的工作延续整理交接。概括当前进展，通过路径或链接引用已有交付物，按下一会话目标保留必要背景，并在交接文档中移除敏感信息。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Handoff",
+        "paragraphs": [
+          "Handoff is a user-invoked productivity Skill in Matt Pocock’s collection. It turns the current conversation into a document that a fresh agent can use to continue the work. The source asks for references to existing specifications, plans, decisions, issues, commits, and diffs rather than duplicating those artifacts. It also includes suggested skills for the next session and uses any supplied argument to focus the handoff on the intended next task. The document is saved in the operating system’s temporary directory, not the current workspace. Review its references and sensitive information before passing it on; it does not automatically transfer session state or grant the next agent access."
+        ]
+      },
+      "zh": {
+        "title": "关于 Handoff",
+        "paragraphs": [
+          "Handoff 是 Matt Pocock 集合中供用户主动调用的效率 Skill，将当前对话整理为便于新 Agent 继续工作的文档。原始说明要求对规范、计划、决策、工单、提交和差异使用路径或链接引用，避免重复已有材料；还会列出下一会话建议调用的 Skills，并根据传入目标调整交接重点。文档保存在操作系统临时目录，而不是当前工作区。交付前应核对引用是否可用并移除敏感信息。它生成的是交接资料，不会自动迁移运行中的会话状态，也不会替下一 Agent 获得文件或账户访问。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Summarize a session into a focused temporary handoff document with references and suggested skills.",
+      "zh": "通过引用与建议 Skills，将会话整理为聚焦的临时交接文档。"
+    },
+    "cardDescription": {
+      "en": "Summarize a session into a focused temporary handoff document with references and suggested skills.",
+      "zh": "通过引用与建议 Skills，将会话整理为聚焦的临时交接文档。"
+    },
+    "upstreamInstall": "npx skills add mattpocock/skills --skill handoff",
+    "pageCopy": {
+      "kind": {
+        "en": "User-invoked session handoff",
+        "zh": "用户调用的会话交接"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Handoff",
+        "zh": "Agent 会话交接的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore transitions where a new session needs enough context to resume without rereading the whole conversation. Prepare an implementation continuation, hand a completed investigation to another agent, or focus a new session on review while keeping existing artifacts as the source of detail.",
+        "zh": "探索新会话需要快速接续工作的场景。可以准备后续实现、把已完成调查交给另一个 Agent，或将新会话聚焦到审查；交接只保留必要线索，让已有文档与代码继续承担详细信息来源。"
+      },
+      "how": {
+        "en": "How to Prepare an Agent Handoff",
+        "zh": "How to 交接 Agent 会话"
+      },
+      "howDescription": {
+        "en": "State what the next session will do and invoke Handoff near the end of the current work. Review the generated temporary document, check artifact paths and omissions, and provide it to the next agent together with access to the referenced repository and files.",
+        "zh": "在当前工作结束前说明下一会话目标，并主动调用 Handoff。审阅生成的临时文档，核对资料路径与遗漏，再将其交给下一 Agent，同时保证新环境能够访问被引用的仓库和文件。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Continue implementation elsewhere",
+          "zh": "在另一会话继续实现"
+        },
+        "body": {
+          "en": "Preserve the current objective, decisions, relevant paths, and next task without copying every conversation turn.",
+          "zh": "保留当前目标、决策、相关路径与下一任务，不必复制全部对话。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Pass on investigation findings",
+          "zh": "交接调查发现"
+        },
+        "body": {
+          "en": "Point to captured evidence and remaining questions so the next agent can verify the reasoning.",
+          "zh": "引用已收集证据和未决问题，使下一 Agent 能核对推理。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Start a focused review session",
+          "zh": "启动专门审查会话"
+        },
+        "body": {
+          "en": "Tailor the handoff to the review target, existing diffs, and verification already performed.",
+          "zh": "围绕审查目标、现有差异与已完成验证整理交接。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Name the next session’s goal",
+          "zh": "明确下一会话目标"
+        },
+        "body": {
+          "en": "Describe what the next agent should accomplish and which parts of the current conversation matter.",
+          "zh": "说明下一 Agent 应完成什么，以及当前对话中哪些内容与之相关。"
+        }
+      },
+      {
+        "title": {
+          "en": "Generate and inspect the document",
+          "zh": "生成并审阅文档"
+        },
+        "body": {
+          "en": "Invoke Handoff and locate its file in the OS temporary directory. Check decisions, artifact references, and suggested skills.",
+          "zh": "调用 Handoff，在系统临时目录找到文件，核对决策、资料引用与建议 Skills。"
+        }
+      },
+      {
+        "title": {
+          "en": "Transfer context with access",
+          "zh": "连同访问条件交接"
+        },
+        "body": {
+          "en": "Provide the document and make referenced files available to the next agent. Reconfirm anything that may have changed since it was written.",
+          "zh": "提供文档并让下一 Agent 能访问引用文件，同时重新核对编写后可能变化的信息。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does Handoff move the conversation automatically?",
+          "zh": "Handoff 会自动迁移对话吗？"
+        },
+        "answer": {
+          "en": "No. It writes a summary document. You still need to provide it to the next session or agent.",
+          "zh": "不会。它写入摘要文档，仍需将文档提供给下一会话或 Agent。"
+        }
+      },
+      {
+        "question": {
+          "en": "Where is the handoff saved?",
+          "zh": "交接文档保存在哪里？"
+        },
+        "answer": {
+          "en": "The source specifies the operating system’s temporary directory rather than the current workspace. Check the returned path and retain the file if it must outlive temporary cleanup.",
+          "zh": "原文指定保存在系统临时目录而不是当前工作区。应核对返回路径；需要长期保留时另行保存，避免临时清理。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should it copy every plan and diff?",
+          "zh": "是否应复制所有计划与差异？"
+        },
+        "answer": {
+          "en": "The source explicitly favors referencing existing artifacts by path or URL. This keeps the handoff focused and avoids maintaining competing copies.",
+          "zh": "原文明确优先通过路径或 URL 引用已有材料，使交接聚焦并避免维护多份副本。"
+        }
+      },
+      {
+        "question": {
+          "en": "How can I make the next session more focused?",
+          "zh": "怎样让下一会话更聚焦？"
+        },
+        "answer": {
+          "en": "Pass the intended next task as the Handoff argument, such as reviewing a branch or completing one unresolved component.",
+          "zh": "将下一任务作为 Handoff 参数，例如审查分支或完成一个未解决组件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does the suggested-skills section install anything?",
+          "zh": "建议 Skills 章节会安装东西吗？"
+        },
+        "answer": {
+          "en": "No. It identifies instructions the next agent may need to load. The destination environment must separately have those skills available.",
+          "zh": "不会。它指出下一 Agent 可能需要读取的指令，目标环境仍需单独具备这些 Skills。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I include credentials so the next agent can continue?",
+          "zh": "能把凭据写进去方便下一 Agent 吗？"
+        },
+        "answer": {
+          "en": "The source requires redacting keys, passwords, and personal information. Supply access through the environment’s normal credential mechanism instead.",
+          "zh": "原文要求移除密钥、密码和个人信息。应通过环境正常凭据机制提供访问，而不是写入交接文档。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Create a handoff for a fresh review session. Focus on the import feature, reference the spec and current diff, and identify the remaining verification work.",
+        "zh": "为新的审查会话创建交接，聚焦导入特性，引用需求和当前差异，并说明剩余验证工作。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini-cli",
+        "github-copilot",
+        "opencode",
+        "auto"
+      ],
+      "note": {
+        "en": "These commands install Matt Pocock’s collection so companion Skills remain available. Choose one installation method per agent; for engineering work, run /setup-matt-pocock-skills in each repository and include the required dependencies when selecting Skills.",
+        "zh": "这些命令安装 Matt Pocock 的集合，以保留配套 Skills。同一 Agent 选择一种安装方式；工程任务需在每个仓库运行 /setup-matt-pocock-skills，并在选择 Skills 时包含所需依赖。"
+      },
+      "commands": {
+        "claude-code": "claude plugin install mattpocock-skills@claude-plugins-official",
+        "codex": "codex plugin marketplace add mattpocock/skills\ncodex plugin add mattpocock-skills@mattpocock",
+        "cursor": "npx skills@latest add mattpocock/skills -a cursor",
+        "gemini-cli": "gemini skills install https://github.com/mattpocock/skills.git --path skills/engineering\ngemini skills install https://github.com/mattpocock/skills.git --path skills/productivity",
+        "github-copilot": "copilot plugin marketplace add mattpocock/skills\ncopilot plugin install mattpocock-skills@mattpocock",
+        "opencode": "npx skills@latest add mattpocock/skills -a opencode",
+        "auto": "npx skills@latest add mattpocock/skills"
+      },
+      "contexts": {
+        "claude-code": "terminal",
+        "codex": "terminal",
+        "cursor": "terminal",
+        "gemini-cli": "terminal",
+        "github-copilot": "terminal",
+        "opencode": "terminal",
+        "auto": "terminal"
+      }
+    }
+  },
+  {
+    "slug": "brainstorming",
+    "authorHandle": "obra",
+    "name": "Brainstorming",
+    "publisher": "Jesse Vincent",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md",
+    "repositoryUrl": "https://github.com/obra/superpowers",
+    "category": {
+      "en": "Planning · Design exploration",
+      "zh": "规划 · 设计探索"
+    },
+    "seo": {
+      "title": {
+        "en": "Brainstorming by Jesse Vincent | Installation & Guide",
+        "zh": "Brainstorming by Jesse Vincent：安装与使用指南"
+      },
+      "description": {
+        "en": "Clarify intent, compare approaches, and agree a design before moving into the Superpowers planning workflow.",
+        "zh": "在进入 Superpowers 规划流程前澄清意图、比较方案并确认设计。"
+      },
+      "keywords": {
+        "en": [
+          "Brainstorming by Jesse Vincent",
+          "Brainstorming by obra",
+          "Brainstorming Superpowers",
+          "brainstorming"
+        ],
+        "zh": [
+          "Brainstorming by Jesse Vincent",
+          "Brainstorming by obra",
+          "Brainstorming Superpowers",
+          "brainstorming"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Brainstorming by Jesse Vincent",
+        "zh": "Brainstorming by Jesse Vincent"
+      },
+      "description": {
+        "en": "Use Brainstorming from Superpowers to clarify what a project should accomplish before implementation. Explore the existing context, discuss approaches and trade-offs, and turn the chosen direction into a design document that can guide the next planning step without silently filling important gaps with assumptions.",
+        "zh": "使用 Superpowers 的 Brainstorming，在实施前澄清项目应达成什么。先阅读已有背景，再讨论方案与取舍，把选定方向整理为设计文档，为下一步规划提供依据，减少关键缺口被未确认假设填补的情况。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Brainstorming",
+        "paragraphs": [
+          "Brainstorming is the intent-and-design Skill in Superpowers, maintained by Jesse Vincent and the project’s contributors. It helps an agent understand the desired outcome and its reasons before deciding what to build. Existing project context is read first; the conversation then explores unresolved goals, constraints, and alternatives. Substantial work moves through an agreed approach and a written design before the writing-plans companion takes over. The current source also distinguishes fully specified small tasks and users who choose to proceed without further questions. Installing the Superpowers integration keeps its bootstrap and companion instructions available; copying only this file does not recreate that broader workflow."
+        ]
+      },
+      "zh": {
+        "title": "关于 Brainstorming",
+        "paragraphs": [
+          "Brainstorming 是 Superpowers 中用于理解目标与设计的 Skill，由 Jesse Vincent 及项目贡献者维护。它帮助 Agent 在决定如何建设前弄清用户期待的结果及原因。流程先读取已有项目背景，再讨论未决目标、约束和备选方案；较大的工作会形成选定方案与书面设计，然后交给配套 writing-plans 继续规划。当前原文也区分已经明确的小任务，以及选择不再接受追问、直接推进的用户。安装完整 Superpowers 集成可以保留启动与配套指令；只复制这一文件，并不等于复现整个工作体系。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Clarify intent, compare approaches, and agree a design before moving into the Superpowers planning workflow.",
+      "zh": "在进入 Superpowers 规划流程前澄清意图、比较方案并确认设计。"
+    },
+    "cardDescription": {
+      "en": "Clarify intent, compare approaches, and agree a design before moving into the Superpowers planning workflow.",
+      "zh": "在进入 Superpowers 规划流程前澄清意图、比较方案并确认设计。"
+    },
+    "upstreamInstall": "npx skills add obra/superpowers --skill brainstorming",
+    "pageCopy": {
+      "kind": {
+        "en": "Superpowers intent and design workflow",
+        "zh": "Superpowers 需求与设计流程"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Brainstorming",
+        "zh": "需求与设计探索的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore work where the requested outcome leaves meaningful design choices open. Clarify a new feature, reshape an existing workflow, or define a non-code project by understanding the audience, constraints, and alternatives before committing to a design that another agent can plan from.",
+        "zh": "探索目标已经提出、仍有重要设计选择的任务。可以澄清新特性、重新组织已有流程，或定义非代码项目；先理解读者或用户、约束和备选，再确认能够交给下一 Agent 继续规划的设计方向。"
+      },
+      "how": {
+        "en": "How to Explore a Design with Brainstorming",
+        "zh": "How to 确认需求与设计"
+      },
+      "howDescription": {
+        "en": "Install the Superpowers integration for your agent, provide the request and relevant existing material, and let the discussion focus on missing decisions. Compare the proposed approaches, review the appropriately sized design, and confirm the handoff to planning when the remaining choices are sufficiently clear.",
+        "zh": "为所用 Agent 安装 Superpowers 集成，提供任务和相关已有资料，让讨论聚焦缺失决策。比较备选方案，审阅与任务规模相符的设计，并在关键选择足够明确后确认转入后续规划。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Define a new feature",
+          "zh": "定义新特性"
+        },
+        "body": {
+          "en": "Clarify the intended user outcome before choosing behavior, scope, or implementation details.",
+          "zh": "先明确用户结果，再决定行为、范围和实现细节。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Reshape an existing workflow",
+          "zh": "调整已有流程"
+        },
+        "body": {
+          "en": "Read current materials and identify which parts should change and why.",
+          "zh": "阅读当前资料，明确哪些部分需要改变及其原因。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Plan a non-code project",
+          "zh": "规划非代码项目"
+        },
+        "body": {
+          "en": "Explore goals, constraints, and alternatives for a talk, process, or other creative project.",
+          "zh": "为演讲、流程或其他创意项目讨论目标、约束与备选。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Provide the task and context",
+          "zh": "提供任务与背景"
+        },
+        "body": {
+          "en": "Share the intended outcome and relevant files or earlier decisions. Let existing evidence answer facts before discussing open choices.",
+          "zh": "提供目标结果与相关文件或已有决定，先用现有证据回答事实问题。"
+        }
+      },
+      {
+        "title": {
+          "en": "Choose an approach",
+          "zh": "选择方案"
+        },
+        "body": {
+          "en": "Discuss unresolved needs and compare alternatives. Review the agent’s understanding and correct assumptions before settling the direction.",
+          "zh": "讨论未明确需求并比较备选，核对 Agent 理解并纠正假设，再确定方向。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review the design handoff",
+          "zh": "审阅设计交接"
+        },
+        "body": {
+          "en": "Inspect a design sized to the work and confirm it before planning. Keep the companion writing-plans Skill available for the next stage.",
+          "zh": "审阅与工作规模相符的设计，确认后再规划，并确保下一阶段可用 writing-plans。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Who publishes this Brainstorming Skill?",
+          "zh": "这个 Brainstorming Skill 由谁发布？"
+        },
+        "answer": {
+          "en": "It belongs to obra/superpowers, the project built by Jesse Vincent and contributors. It is distinct from similarly named brainstorming instructions in other collections.",
+          "zh": "它属于 Jesse Vincent 与贡献者建设的 obra/superpowers，不同于其他集合中的同名头脑风暴指令。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is it simply an idea generator?",
+          "zh": "它只是生成点子的工具吗？"
+        },
+        "answer": {
+          "en": "Its focus is understanding the intended outcome, exploring alternatives, and agreeing a design. Generating ideas can help, but is not the whole workflow.",
+          "zh": "它重点在理解目标、探索备选和确认设计。生成点子可能有帮助，但并非全部流程。"
+        }
+      },
+      {
+        "question": {
+          "en": "Must every small change produce a long document?",
+          "zh": "每个小改动都要写长文档吗？"
+        },
+        "answer": {
+          "en": "The current source sizes the process to the work and distinguishes fully specified quick tasks. Larger or unresolved work needs more explicit design agreement.",
+          "zh": "当前原文按规模调整流程，并区分已充分说明的快速任务。更大或仍不明确的工作需要更明确的设计确认。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if I prefer to proceed without questions?",
+          "zh": "我想不再回答问题、直接推进怎么办？"
+        },
+        "answer": {
+          "en": "The current source describes an opt-out path when the user asks to get going. The agent should state significant implementation choices rather than presenting them as decisions you already made.",
+          "zh": "当前原文允许用户选择直接推进。Agent 应说明重要实现选择，不能把自己的判断表述为你已确认的决定。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why install Superpowers instead of one file?",
+          "zh": "为什么安装 Superpowers 而不是一个文件？"
+        },
+        "answer": {
+          "en": "The integration provides bootstrap instructions and companion workflows such as writing-plans. A copied standalone file does not reproduce their automatic loading or handoff behavior.",
+          "zh": "集成提供启动指令及 writing-plans 等配套流程。单独复制文件不等于具备它们的自动加载与阶段交接行为。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it immediately write implementation code?",
+          "zh": "它会立刻编写实现代码吗？"
+        },
+        "answer": {
+          "en": "For unresolved substantial work, the documented process establishes the approach and design before planning and implementation. User-approved exploration or a direct opt-out is treated separately.",
+          "zh": "对于尚未明确的重要工作，原始流程先确定方案与设计，再规划和实施；用户同意的探索或明确选择直接推进另行处理。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is the visual companion required?",
+          "zh": "必须使用可视化辅助界面吗？"
+        },
+        "answer": {
+          "en": "No. The project describes it as optional and documents an environment setting to disable its default logo telemetry. The core planning conversation does not require opening it.",
+          "zh": "不必须。项目将其列为可选项，并提供关闭默认标志遥测的环境设置；核心规划对话不依赖打开该界面。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do Codex App and Codex CLI installation differ?",
+          "zh": "Codex App 与 Codex CLI 如何分别安装？"
+        },
+        "answer": {
+          "en": "Codex App uses the Plugins sidebar: locate Superpowers in Coding, click +, and follow the prompts. Codex CLI uses /plugins to search for Superpowers and select Install Plugin. These are two interfaces for the official plugin marketplace.",
+          "zh": "Codex App 在侧栏 Plugins 中找到 Coding 下的 Superpowers，点击 + 并按提示安装；Codex CLI 运行 /plugins，搜索 Superpowers 并选择 Install Plugin。两者是官方插件市场的不同界面入口。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use Superpowers Brainstorming to plan a receipt-review workflow. Read the current project first, clarify the user outcome, and compare approaches before writing a design.",
+        "zh": "使用 Superpowers Brainstorming 规划收据审阅流程，先阅读当前项目，澄清用户目标并比较方案，再编写设计。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "codex-app",
+        "cursor",
+        "gemini-cli",
+        "github-copilot"
+      ],
+      "note": {
+        "en": "Install the complete Superpowers integration. In Codex App, use Plugins in the sidebar and add Superpowers from Coding. In Codex CLI, /plugins opens search: find Superpowers and select Install Plugin. Other slash commands run in agent chat; terminal commands use the corresponding CLI.",
+        "zh": "安装完整 Superpowers 集成。Codex App 从侧栏 Plugins 的 Coding 中添加 Superpowers；Codex CLI 通过 /plugins 搜索 Superpowers，再选择 Install Plugin。其他斜杠命令在 Agent 对话中执行，终端命令通过对应 CLI 执行。"
+      },
+      "commands": {
+        "claude-code": "/plugin install superpowers@claude-plugins-official",
+        "codex": "/plugins",
+        "cursor": "/add-plugin superpowers",
+        "gemini-cli": "gemini extensions install https://github.com/obra/superpowers",
+        "github-copilot": "copilot plugin marketplace add obra/superpowers-marketplace\ncopilot plugin install superpowers@superpowers-marketplace",
+        "codex-app": "Plugins (sidebar) → Coding → Superpowers → + → Follow the installation prompts"
+      },
+      "contexts": {
+        "claude-code": "agent",
+        "codex": "agent",
+        "codex-app": "app",
+        "cursor": "agent",
+        "gemini-cli": "terminal",
+        "github-copilot": "terminal"
+      }
+    }
+  },
+  {
+    "slug": "systematic-debugging",
+    "authorHandle": "obra",
+    "name": "Systematic Debugging",
+    "publisher": "Jesse Vincent",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
+    "repositoryUrl": "https://github.com/obra/superpowers",
+    "category": {
+      "en": "Engineering · Root-cause analysis",
+      "zh": "工程 · 根因分析"
+    },
+    "seo": {
+      "title": {
+        "en": "Systematic Debugging by Jesse Vincent | Installation & Guide",
+        "zh": "Systematic Debugging by Jesse Vincent：安装与使用指南"
+      },
+      "description": {
+        "en": "Investigate root causes through four evidence-led phases before implementing and verifying a correction.",
+        "zh": "通过四个证据驱动阶段调查根因，再实施并验证修复。"
+      },
+      "keywords": {
+        "en": [
+          "Systematic Debugging by Jesse Vincent",
+          "Systematic Debugging by obra",
+          "Systematic Debugging Superpowers",
+          "systematic-debugging"
+        ],
+        "zh": [
+          "Systematic Debugging by Jesse Vincent",
+          "Systematic Debugging by obra",
+          "Systematic Debugging Superpowers",
+          "systematic-debugging"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Systematic Debugging by Jesse Vincent",
+        "zh": "Systematic Debugging by Jesse Vincent"
+      },
+      "description": {
+        "en": "Use Systematic Debugging from Superpowers to investigate a failure before proposing repairs. Reproduce the behavior, compare working and broken paths, test a specific explanation, and verify a root-cause correction rather than stacking speculative changes on top of an unresolved problem.",
+        "zh": "使用 Superpowers 的 Systematic Debugging，在提出修复前先调查故障。复现行为，比较正常与异常路径，检验具体解释，再验证针对根因的修改，避免在未解决的问题上不断叠加推测性改动。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Systematic Debugging",
+        "paragraphs": [
+          "Systematic Debugging is Superpowers’ root-cause investigation Skill, maintained by Jesse Vincent and the project’s contributors. Its four phases cover evidence gathering, pattern comparison, hypothesis testing, and implementation. It asks the agent to read errors, reproduce the failure, inspect recent changes, and observe data across component boundaries before choosing a fix. A small test checks one explanation at a time; the implementation stage uses a failing reproduction and verification. Repeated failed repairs call for an architectural discussion rather than another blind change. The full workflow references companion testing and completion-verification skills, and it still depends on access to the environment where the problem occurs."
+        ]
+      },
+      "zh": {
+        "title": "关于 Systematic Debugging",
+        "paragraphs": [
+          "Systematic Debugging 是 Superpowers 的根因调查 Skill，由 Jesse Vincent 及项目贡献者维护。它将工作分为证据收集、模式比较、假设检验和实施四个阶段，要求 Agent 先读错误、复现失败、检查近期变化，并观察组件边界上的数据，再选择修复。每次通过小测试检验一个解释；实施阶段需要失败复现与结果验证。连续多次修复无效时，应转向架构讨论，而不是继续盲改。完整流程引用配套测试与完成验证 Skills，实际使用仍依赖访问故障发生环境及必要的诊断工具。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Investigate root causes through four evidence-led phases before implementing and verifying a correction.",
+      "zh": "通过四个证据驱动阶段调查根因，再实施并验证修复。"
+    },
+    "cardDescription": {
+      "en": "Investigate root causes through four evidence-led phases before implementing and verifying a correction.",
+      "zh": "通过四个证据驱动阶段调查根因，再实施并验证修复。"
+    },
+    "upstreamInstall": "npx skills add obra/superpowers --skill systematic-debugging",
+    "pageCopy": {
+      "kind": {
+        "en": "Superpowers root-cause workflow",
+        "zh": "Superpowers 根因调查流程"
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Systematic Debugging",
+        "zh": "系统化调试的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore failures where a visible symptom does not yet explain the cause. Diagnose a failing test, trace a build or integration error through multiple components, or revisit a problem after unsuccessful fixes while using evidence to keep each proposed change tied to one testable explanation.",
+        "zh": "探索可见症状尚不能说明原因的故障。可以诊断失败测试、跨组件追踪构建或集成错误，或重新调查多次修复无效的问题；以证据约束修改，让每个动作对应一个可检验的原因解释。"
+      },
+      "how": {
+        "en": "How to Investigate a Failure Systematically",
+        "zh": "How to 按根因调查故障"
+      },
+      "howDescription": {
+        "en": "Provide the exact error, expected behavior, and reproduction environment, then work through evidence gathering and pattern comparison. Test one hypothesis with a minimal change, implement the supported correction, and use the companion verification discipline to confirm the symptom and relevant tests are resolved.",
+        "zh": "提供准确错误、预期行为与复现环境，先收集证据并比较正常模式。用最小改动检验一个假设，再实施有证据支持的修复，并参考配套验证方法确认原始症状及相关测试均已解决。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "A test fails unexpectedly",
+          "zh": "测试意外失败"
+        },
+        "body": {
+          "en": "Read the complete failure and compare it with a nearby passing case before changing the code.",
+          "zh": "先完整阅读失败信息，与相近正常案例比较，再修改代码。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "A pipeline fails between components",
+          "zh": "流水线在组件之间失败"
+        },
+        "body": {
+          "en": "Inspect what enters and leaves each boundary to identify the layer that actually breaks.",
+          "zh": "核对每个边界的输入和输出，确定实际失败层。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Several attempted fixes failed",
+          "zh": "多次尝试修复无效"
+        },
+        "body": {
+          "en": "Revisit assumptions and discuss architectural causes instead of adding another untested patch.",
+          "zh": "重新检查假设并讨论架构原因，而不是再叠加未检验补丁。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Collect evidence and patterns",
+          "zh": "收集证据与正常模式"
+        },
+        "body": {
+          "en": "Reproduce the error, inspect recent changes, and compare a working path. Add targeted boundary observations when several components are involved.",
+          "zh": "复现错误、检查近期变化并比较正常路径，多组件问题可添加针对性边界观察。"
+        }
+      },
+      {
+        "title": {
+          "en": "Test one explanation",
+          "zh": "检验一个解释"
+        },
+        "body": {
+          "en": "State a specific hypothesis and use the smallest useful test. Change one variable and evaluate the result before choosing another explanation.",
+          "zh": "提出具体假设并进行最小有效测试，每次改变一个变量，评估后再选择其他解释。"
+        }
+      },
+      {
+        "title": {
+          "en": "Implement and verify the cause",
+          "zh": "实施并验证根因修复"
+        },
+        "body": {
+          "en": "Capture a failing reproduction, apply the supported fix, and rerun relevant checks. Escalate repeated failures into a design discussion.",
+          "zh": "保留失败复现、实施有依据的修复并重跑相关检查，连续失败时转入设计讨论。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "How is this different from Diagnosing Bugs by Matt Pocock?",
+          "zh": "它与 Matt Pocock 的 Diagnosing Bugs 有何不同？"
+        },
+        "answer": {
+          "en": "They are separate workflows from different publishers. Superpowers organizes the process into four phases with companion testing and verification; Matt’s current workflow places particular emphasis on a tight red-capable feedback loop and minimized reproduction.",
+          "zh": "它们属于不同发布者的独立流程。Superpowers 使用四阶段及配套测试与验证，Matt 当前流程尤其强调可失败的紧密反馈循环和最小复现。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I apply the obvious fix immediately?",
+          "zh": "可以立刻应用看起来明显的修复吗？"
+        },
+        "answer": {
+          "en": "The Skill asks for root-cause investigation first. A plausible edit is not evidence; establish why it addresses the observed failure and verify that behavior.",
+          "zh": "该 Skill 要求先调查根因。看似合理的改动不等于证据，应说明它为何解决观察到的故障并验证行为。"
+        }
+      },
+      {
+        "question": {
+          "en": "What are the four phases?",
+          "zh": "四个阶段是什么？"
+        },
+        "answer": {
+          "en": "They are root-cause investigation, pattern analysis, hypothesis testing, and implementation. Each stage supplies evidence for the next.",
+          "zh": "分别是根因调查、模式分析、假设检验和实施，各阶段为下一阶段提供证据。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should happen after several failed fixes?",
+          "zh": "连续几次修复失败后应怎样？"
+        },
+        "answer": {
+          "en": "The source calls for stopping and questioning the architecture after three or more unsuccessful fixes, rather than continuing with another speculative patch.",
+          "zh": "原文要求三次及以上修复无效后停下来审视架构，不再继续增加推测补丁。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which companion skills does it reference?",
+          "zh": "引用了哪些配套 Skills？"
+        },
+        "answer": {
+          "en": "The implementation stage points to test-driven-development for failing tests and verification-before-completion for checking the final result. Use the Superpowers integration to keep them available.",
+          "zh": "实施阶段引用 test-driven-development 编写失败测试，以及 verification-before-completion 检查最终结果，应通过 Superpowers 集成保留它们。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does a passing test always prove the issue is fixed?",
+          "zh": "测试通过就一定修复了吗？"
+        },
+        "answer": {
+          "en": "Check that the test reproduces the user’s actual symptom and that the original flow works afterward. A nearby passing condition can miss the root failure.",
+          "zh": "需要确认测试确实复现用户症状，并在修复后重跑原始流程。相近条件通过可能遗漏根本故障。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it debug without access to the failing environment?",
+          "zh": "无法访问故障环境时能诊断吗？"
+        },
+        "answer": {
+          "en": "It can organize the investigation, but missing reproduction evidence limits the conclusion. Provide suitable redacted logs or a representative environment and keep unsupported explanations labeled as hypotheses.",
+          "zh": "它可以组织调查，但缺少复现证据会限制结论。应提供适当脱敏日志或代表环境，并将未证实解释保留为假设。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do Codex App and Codex CLI installation differ?",
+          "zh": "Codex App 与 Codex CLI 如何分别安装？"
+        },
+        "answer": {
+          "en": "Codex App uses the Plugins sidebar: locate Superpowers in Coding, click +, and follow the prompts. Codex CLI uses /plugins to search for Superpowers and select Install Plugin. These are two interfaces for the official plugin marketplace.",
+          "zh": "Codex App 在侧栏 Plugins 中找到 Coding 下的 Superpowers，点击 + 并按提示安装；Codex CLI 运行 /plugins，搜索 Superpowers 并选择 Install Plugin。两者是官方插件市场的不同界面入口。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use Superpowers Systematic Debugging for the CI-only build failure. Compare environment propagation across the pipeline before proposing a fix, then verify the original job.",
+        "zh": "使用 Superpowers Systematic Debugging 调查仅 CI 出现的构建失败，先比较流水线环境传递，再提出修复并验证原始任务。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "codex-app",
+        "cursor",
+        "gemini-cli",
+        "github-copilot"
+      ],
+      "note": {
+        "en": "Install the complete Superpowers integration. In Codex App, use Plugins in the sidebar and add Superpowers from Coding. In Codex CLI, /plugins opens search: find Superpowers and select Install Plugin. Other slash commands run in agent chat; terminal commands use the corresponding CLI.",
+        "zh": "安装完整 Superpowers 集成。Codex App 从侧栏 Plugins 的 Coding 中添加 Superpowers；Codex CLI 通过 /plugins 搜索 Superpowers，再选择 Install Plugin。其他斜杠命令在 Agent 对话中执行，终端命令通过对应 CLI 执行。"
+      },
+      "commands": {
+        "claude-code": "/plugin install superpowers@claude-plugins-official",
+        "codex": "/plugins",
+        "cursor": "/add-plugin superpowers",
+        "gemini-cli": "gemini extensions install https://github.com/obra/superpowers",
+        "github-copilot": "copilot plugin marketplace add obra/superpowers-marketplace\ncopilot plugin install superpowers@superpowers-marketplace",
+        "codex-app": "Plugins (sidebar) → Coding → Superpowers → + → Follow the installation prompts"
+      },
+      "contexts": {
+        "claude-code": "agent",
+        "codex": "agent",
+        "codex-app": "app",
+        "cursor": "agent",
+        "gemini-cli": "terminal",
+        "github-copilot": "terminal"
+      }
+    }
+  }
+]

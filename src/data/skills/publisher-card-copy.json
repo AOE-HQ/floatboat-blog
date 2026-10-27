@@ -1,0 +1,82 @@
+{
+  "vercel-labs": {
+    "en": "Vercel Labs explores developer tools and public experiments, including Agent Skills, browser automation, and generative interfaces for building and testing software.",
+    "zh": "探索开发者工具与公开实验，作品涵盖 Agent Skills、浏览器自动化和生成式界面，服务软件构建与验证。"
+  },
+  "morluto": {
+    "en": "morluto creates REA and other agent tools for investigating software behavior, analyzing performance, and preparing project resources from inspectable source material.",
+    "zh": "REA 作者，围绕软件行为调查、性能分析与 Agent 工具开展开发，并发布逆向工程和项目分享图相关指引。"
+  },
+  "anthropics": {
+    "en": "Anthropic develops Claude and publishes developer resources, including Claude Code, application examples, and Skills for design, documents, authoring, and testing workflows.",
+    "zh": "开发 Claude，并公开编程工具资料、应用示例和任务指引，涵盖界面设计、文档处理、Skill 编写与网页测试。"
+  },
+  "heygen-com": {
+    "en": "HeyGen builds AI video products and publishes tools including HyperFrames and a video API CLI, connecting visual composition, media preparation, and rendering workflows.",
+    "zh": "开发 AI 视频产品，公开作品包括 HyperFrames、视频 API CLI 与配套指引，覆盖画面编排和渲染。"
+  },
+  "mattpocock": {
+    "en": "Matt Pocock teaches TypeScript and builds engineering tools and Skills, covering software planning, testing, debugging, agent orchestration, and practical development workflows.",
+    "zh": "TypeScript 教育者与开发者，作品涵盖工程 Skills、Agent 编排和类型工具，关注规划、测试与调试。"
+  },
+  "emilkowalski": {
+    "en": "Emil Kowalski explores design engineering through React components, animation writing, and Agent Skills focused on interface quality, interaction details, and practical review.",
+    "zh": "专注设计工程，作品包括 React 组件、动效写作与界面 Skills，关注产品交互、视觉细节和实际界面质量。"
+  },
+  "coreyhaines31": {
+    "en": "Corey Haines works across SaaS marketing, design, and publishing, sharing growth methods through Marketing Skills, Conversion Factory, and the SwipeFiles newsletter.",
+    "zh": "从事 SaaS 增长营销与设计，发布营销 Skills，并通过客户服务、通讯和案例分享内容、转化与增长方法。"
+  },
+  "juliusbrussee": {
+    "en": "Julius Brussee builds Caveman tools and Skills for agent efficiency, alongside Revu, a local-first macOS application for structured study and spaced repetition.",
+    "zh": "构建 Caveman 工具与 Skills，探索 Agent 信息处理效率；另有面向间隔复习的 Revu 学习应用。"
+  },
+  "microsoft": {
+    "en": "Microsoft publishes development tools, languages, and cloud resources, including Azure Skills, Visual Studio Code, and TypeScript for application development, deployment, and diagnostics.",
+    "zh": "发布开发工具、语言与云端资源，代表作品包括 Azure Skills、VS Code 和 TypeScript。"
+  },
+  "open.feishu.cn": {
+    "en": "Feishu Open Platform connects workplace services through APIs, its CLI, and Agent Skills for documents, tables, calendars, meetings, and everyday team collaboration.",
+    "zh": "通过 API、CLI 与 Agent Skills 连接办公服务，涵盖文档、表格、日历和会议整理，支持团队协作。"
+  },
+  "remotion-dev": {
+    "en": "Remotion brings video creation into React, with a framework and Agent Skills covering composition, animation, interactive previews, rendering, and integration into applications.",
+    "zh": "将视频制作连接到 React，框架与配套指引覆盖画面合成、动画、预览和渲染，支持可编辑、可复用的视频工作流。"
+  },
+  "leonxlnx": {
+    "en": "Leon Lin develops design Skills and tools for coding agents, with public work including Taste Skill, the TasteCode workspace, and earshot audio tools.",
+    "zh": "发布界面设计指引与 Agent 工具，作品包括 Taste Skill、TasteCode 和 earshot，连接设计与编码。"
+  },
+  "obra": {
+    "en": "Jesse Vincent builds Superpowers and agent tools, organizing software work around planning, tests, debugging, code review, and reusable engineering practices for coding agents.",
+    "zh": "构建 Superpowers 与 Agent 工具，将软件开发组织为规划、测试、调试和代码审查，沉淀可复用的工程方法。"
+  },
+  "pbakaus": {
+    "en": "Paul Bakaus builds design tools for coding agents, including Impeccable, extending interface guidance with focused commands, browser review, and practical design workflows.",
+    "zh": "构建设计工具与指引，代表作品 Impeccable 通过专项命令、浏览器审查和设计流程，改善 Agent 界面质量。"
+  },
+  "cloudflare": {
+    "en": "Cloudflare builds network infrastructure and developer tools, with public projects spanning the Workers runtime, protocol implementations, and Agent instructions for structured code security audits.",
+    "zh": "构建网络基础设施与开发者工具，公开项目涵盖 Workers 运行时、协议实现和 Agent 安全审查指引。"
+  },
+  "googleworkspace": {
+    "en": "Google Workspace CLI connects Drive, Gmail, Calendar, and other services with command-line tools and Agent Skills; its repository explicitly notes the product is not officially supported.",
+    "zh": "通过 CLI 与 Skills 连接云端文档、邮件和日历；仓库明确说明该产品不由 Google 官方提供支持。"
+  },
+  "firecrawl": {
+    "en": "Firecrawl develops web data tools for agents, connecting search, scraping, crawling, and structured extraction through its main platform, CLI, and task-focused instructions.",
+    "zh": "为 Agent 提供网页数据工具，围绕搜索、抓取、站点遍历和结构化提取，连接主项目、CLI 与具体任务指引。"
+  },
+  "supabase": {
+    "en": "Supabase builds a PostgreSQL application platform and publishes Agent Skills for database design, query performance, security, and practical integration with backend services and tools.",
+    "zh": "构建 PostgreSQL 应用平台，并发布数据库设计、查询性能与安全相关 Skills，连接后端服务和开发流程。"
+  },
+  "github": {
+    "en": "GitHub hosts Awesome Copilot, a community-created collection of agents, instructions, Skills, and configurations for adapting coding workflows to different projects and development tasks.",
+    "zh": "托管社区共同构建的 Awesome Copilot，汇集 Agents、Skills 和开发指引，服务编码与协作流程。"
+  },
+  "trailofbits": {
+    "en": "Trail of Bits publishes security research tools and Agent Skills for code analysis, vulnerability investigation, testing, and evidence-based audit workflows across software projects.",
+    "zh": "发布安全研究工具与 Agent Skills，涵盖代码分析、漏洞调查和测试方法，通过证据组织软件审查与审计流程。"
+  }
+}

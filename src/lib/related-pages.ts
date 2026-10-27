@@ -1,8 +1,9 @@
 import relatedPages from "@/data/related-pages.json";
-import publisherProfiles from "@/data/skills/publisher-profiles.json";
-import { FEATURED_SKILLS, skillPath } from "@/lib/skills/featured-skills";
+import additionalRelatedPages from "@/data/skills/additional-related-pages.json";
+import { ALL_FEATURED_SKILLS, FEATURED_SKILLS, skillPath } from "@/lib/skills/featured-skills";
 import { getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
-import { getPublisherProfile, publisherProfilePath } from "@/lib/skills/publisher-profiles";
+import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES, KNOWN_PUBLISHER_HANDLES } from "@/lib/skills/publisher-profiles";
+import { reviewedRelatedLinks } from "@/lib/reviewed-related-links";
 import { CORE_FEATURE_SLUGS, featurePath, getCoreFeaturePage, type CoreFeatureSlug } from "@/lib/landing/core-feature-pages";
 import { MODEL_FAMILIES, modelPath, type ModelSlug } from "@/lib/models/model-pages";
 import { getPersonaPage, personaPath, PERSONA_SLUGS, type PersonaSlug } from "@/lib/use-cases/persona-pages";
@@ -10,20 +11,28 @@ import { getPersonaPage, personaPath, PERSONA_SLUGS, type PersonaSlug } from "@/
 export type RelatedFamily = keyof typeof relatedPages;
 export type RelatedLocale = "en" | "zh";
 
-const related = relatedPages as Record<RelatedFamily, {
+const related = {
+  ...relatedPages,
+  skills: { ...relatedPages.skills, links: { ...relatedPages.skills.links, ...additionalRelatedPages.skills } },
+  publishers: { ...relatedPages.publishers, links: { ...relatedPages.publishers.links, ...additionalRelatedPages.publishers } },
+  "skill-categories": { ...relatedPages["skill-categories"], links: { ...relatedPages["skill-categories"].links, ...additionalRelatedPages["skill-categories"] } },
+} as Record<RelatedFamily, {
   heading: Record<RelatedLocale, string>;
   description: Record<RelatedLocale, string>;
   links: Record<string, string[]>;
 }>;
 
 const knownIds: Record<RelatedFamily, string[]> = {
-  publishers: Object.keys(publisherProfiles),
+  publishers: PUBLISHER_PROFILE_HANDLES,
   "use-cases": PERSONA_SLUGS,
   models: MODEL_FAMILIES.map((model) => model.slug),
   skills: FEATURED_SKILLS.map((skill) => `${skill.authorHandle}/${skill.slug}`),
   features: CORE_FEATURE_SLUGS,
   "skill-categories": SKILL_CATEGORY_SLUGS,
 };
+
+related.publishers.links = reviewedRelatedLinks(related.publishers.links, knownIds.publishers, KNOWN_PUBLISHER_HANDLES);
+related.skills.links = reviewedRelatedLinks(related.skills.links, knownIds.skills, ALL_FEATURED_SKILLS.map((skill) => `${skill.authorHandle}/${skill.slug}`));
 
 function validateRelatedPages() {
   for (const family of Object.keys(related) as RelatedFamily[]) {
@@ -35,7 +44,8 @@ function validateRelatedPages() {
     }
     const incoming = new Map(ids.map((id) => [id, 0]));
     for (const [source, targets] of Object.entries(related[family].links)) {
-      if (targets.length !== 4 || new Set(targets).size !== 4) {
+      const targetCount = family === "publishers" || family === "skills" ? Math.min(4, Math.max(0, ids.length - 1)) : 4;
+      if (targets.length !== targetCount || new Set(targets).size !== targetCount) {
         throw new Error(`Related ${family}/${source} must have four distinct targets`);
       }
       for (const target of targets) {
@@ -46,7 +56,7 @@ function validateRelatedPages() {
       }
     }
     for (const [id, count] of incoming) {
-      if (count === 0) throw new Error(`Related ${family}/${id} has no incoming links`);
+      if (count === 0 && ids.length > 1) throw new Error(`Related ${family}/${id} has no incoming links`);
     }
     for (const locale of ["en", "zh"] as const) {
       if (!related[family].heading[locale] || !related[family].description[locale]) {

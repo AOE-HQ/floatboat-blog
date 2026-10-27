@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 import { PublisherDirectoryPage } from "@/components/skills/publisher-directory-page";
 import { getPublisherProfile } from "@/lib/skills/publisher-profiles";
 
-const { seoTitle: title, seoDescription: description } = getPublisherProfile("vercel-labs")!.zh;
-
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: {
-    canonical: "https://floatboat.ai/zh/combostore/vercel-labs",
-    languages: {
-      en: "https://floatboat.ai/combostore/vercel-labs",
-      zh: "https://floatboat.ai/zh/combostore/vercel-labs",
-    },
-  },
-  openGraph: { type: "website", title, description, url: "https://floatboat.ai/zh/combostore/vercel-labs" },
-};
+export function generateMetadata(): Metadata {
+  const profile = getPublisherProfile("vercel-labs");
+  if (!profile) return {};
+  const { seoTitle: title, seoDescription: description } = profile.zh;
+  const canonical = "https://floatboat.ai/zh/combostore/vercel-labs";
+  return {
+    title,
+    description,
+    alternates: { canonical, languages: { en: "https://floatboat.ai/combostore/vercel-labs", zh: "https://floatboat.ai/zh/combostore/vercel-labs" } },
+    openGraph: { type: "website", title, description, url: canonical },
+  };
+}
 
 export default function VercelLabsPage() {
+  if (!getPublisherProfile("vercel-labs")) notFound();
   return <PublisherDirectoryPage locale="zh" handle="vercel-labs" />;
 }

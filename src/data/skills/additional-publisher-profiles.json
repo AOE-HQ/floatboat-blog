@@ -1,0 +1,301 @@
+{
+  "pbakaus": {
+    "name": "Paul Bakaus",
+    "type": "Person",
+    "profileUrl": "https://github.com/pbakaus",
+    "tags": {
+      "en": [
+        "Design tooling",
+        "Creative technology",
+        "AI agents"
+      ],
+      "zh": [
+        "设计工具",
+        "创意技术",
+        "AI Agent"
+      ]
+    },
+    "projects": [
+      {
+        "name": "Impeccable",
+        "url": "https://github.com/pbakaus/impeccable",
+        "en": {
+          "kind": "Design toolkit",
+          "description": "Design guidance and supporting tools for AI coding agents, with a shared Skill, task commands, and provider-specific installation."
+        },
+        "zh": {
+          "kind": "设计工具集",
+          "description": "为 AI 编程 Agent 提供设计指引与配套工具，包含共享 Skill、任务命令和按宿主配置的安装方式。"
+        }
+      }
+    ],
+    "links": [
+      {
+        "href": "https://paulbakaus.com",
+        "label": {
+          "en": "Paul Bakaus website",
+          "zh": "Paul Bakaus 官网"
+        }
+      },
+      {
+        "href": "https://github.com/pbakaus",
+        "label": {
+          "en": "Paul Bakaus on GitHub",
+          "zh": "Paul Bakaus GitHub"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Paul Bakaus: Projects, Tools & Agent Skills",
+      "seoDescription": "Explore Paul Bakaus’s work on creative tools and design guidance for AI coding agents. Discover Impeccable, its design workflow and supporting tools, then read the Skill guide to understand installation, project context, and practical interface-review tasks.",
+      "heroTitle": "Paul Bakaus",
+      "heroDescription": "Explore Paul Bakaus’s work on creative tools and design guidance for AI coding agents. Discover Impeccable, its design workflow and supporting tools, then read the Skill guide to understand installation, project context, and practical interface-review tasks.",
+      "aboutTitle": "About Paul Bakaus",
+      "about": "Paul Bakaus publishes developer and creative tooling under the GitHub handle pbakaus. His public profile identifies him as a creative technologist and lists work including jQuery UI, Google for Creators, and Spotter Studio. Impeccable is a current project focused on giving AI coding agents more deliberate design guidance. It combines a reusable Skill with commands, supporting tooling, and provider-specific setup. The creator profile, the software project, and the agent instruction serve different purposes; use the linked repository to understand the current installation and supported environment.",
+      "overview": {
+        "title": "About Paul Bakaus",
+        "paragraphs": [
+          "Paul Bakaus publishes developer and creative tooling under the GitHub handle pbakaus. His public profile identifies him as a creative technologist and lists work including jQuery UI, Google for Creators, and Spotter Studio. Impeccable is a current project focused on giving AI coding agents more deliberate design guidance. It combines a reusable Skill with commands, supporting tooling, and provider-specific setup. The creator profile, the software project, and the agent instruction serve different purposes; use the linked repository to understand the current installation and supported environment."
+        ]
+      },
+      "projectsTitle": "Paul Bakaus Projects and Tools",
+      "projectsIntro": "Explore the selected projects and their original documentation. Check each repository for current installation methods and project-specific requirements.",
+      "skillsTitle": "Paul Bakaus Agent Skills",
+      "skillsIntro": "Explore task-focused instructions published by Paul Bakaus. Read each guide for its purpose, practical workflow, installation options, and original source.",
+      "relatedTitle": "Explore Other Publishers",
+      "relatedDescription": "Discover other teams and creators working on developer tools, agent workflows, and reusable Skills.",
+      "faqTitle": "Paul Bakaus FAQ",
+      "faq": [
+        {
+          "question": "Who is pbakaus?",
+          "answer": "pbakaus is the GitHub handle of Paul Bakaus. His profile describes work in creative technology and lists several developer and creator tools."
+        },
+        {
+          "question": "Is Impeccable a single Skill or a collection of pages?",
+          "answer": "The current project routes its design commands through the impeccable Skill and includes supporting software. The commands should be understood as parts of that project rather than unrelated installations."
+        },
+        {
+          "question": "What does project initialization establish?",
+          "answer": "The documented init workflow records durable product context, including audience, purpose, and constraints, so later design work can refer to the same brief."
+        },
+        {
+          "question": "Can the same installation steps be used for every agent?",
+          "answer": "Check the repository’s provider-specific setup. The reusable instruction and any hooks or supporting tools need to match the host; copying a Skill alone may not reproduce the complete setup."
+        },
+        {
+          "question": "Does Impeccable replace an existing design system?",
+          "answer": "Provide your project’s existing design requirements and components as context. Evaluate proposed changes against those requirements instead of treating the toolkit as automatic authority over the product."
+        },
+        {
+          "question": "Where should I check current features and updates?",
+          "answer": "Use the Impeccable repository and official project documentation. Commands and installation details can change, so refer to those sources for the version you use."
+        }
+      ],
+      "ctaTitle": "Explore Paul Bakaus Skills",
+      "ctaDescription": "Choose a task, read the matching guide, and check the original instructions before setting up your agent.",
+      "ctaPrimary": {
+        "label": "Browse Skills",
+        "href": "/combostore/pbakaus#publisher-skills-title"
+      }
+    },
+    "zh": {
+      "seoTitle": "Paul Bakaus：项目、工具与 Agent Skills",
+      "seoDescription": "了解 Paul Bakaus 在创意工具与 AI 编程 Agent 设计指导方面的作品，探索 Impeccable 的设计流程及配套工具，再通过 Skill 指南了解安装、项目上下文和实际界面审查任务。",
+      "heroTitle": "Paul Bakaus",
+      "heroDescription": "了解 Paul Bakaus 在创意工具与 AI 编程 Agent 设计指导方面的作品，探索 Impeccable 的设计流程及配套工具，再通过 Skill 指南了解安装、项目上下文和实际界面审查任务。",
+      "aboutTitle": "关于 Paul Bakaus",
+      "about": "Paul Bakaus 以 pbakaus 为 GitHub 用户名发布开发者与创意工具。其公开主页将自己介绍为创意技术工作者，并列出 jQuery UI、Google for Creators 和 Spotter Studio 等经历。Impeccable 是其面向 AI 编程 Agent 设计指导的项目，将可复用 Skill、任务命令与配套工具连接起来，并按不同宿主提供安装方式。创作者主页、软件项目和 Agent 指令各有用途；采用前应通过来源仓库核对当前组成、安装步骤及环境要求。",
+      "overview": {
+        "title": "关于 Paul Bakaus",
+        "paragraphs": [
+          "Paul Bakaus 以 pbakaus 为 GitHub 用户名发布开发者与创意工具。其公开主页将自己介绍为创意技术工作者，并列出 jQuery UI、Google for Creators 和 Spotter Studio 等经历。Impeccable 是其面向 AI 编程 Agent 设计指导的项目，将可复用 Skill、任务命令与配套工具连接起来，并按不同宿主提供安装方式。创作者主页、软件项目和 Agent 指令各有用途；采用前应通过来源仓库核对当前组成、安装步骤及环境要求。"
+        ]
+      },
+      "projectsTitle": "Paul Bakaus 项目与工具",
+      "projectsIntro": "了解以下代表项目及原始文档，并通过各自仓库核对当前安装方式与使用要求。",
+      "skillsTitle": "Paul Bakaus 的 Agent Skills",
+      "skillsIntro": "了解 Paul Bakaus 发布的任务型指引，通过详情页查看用途、具体流程、安装方式与原始来源。",
+      "relatedTitle": "探索其他发布者",
+      "relatedDescription": "了解其他团队与创作者在开发者工具、Agent 工作流程和可复用 Skills 方面的作品。",
+      "faqTitle": "Paul Bakaus 常见问题",
+      "faq": [
+        {
+          "question": "pbakaus 是谁？",
+          "answer": "pbakaus 是 Paul Bakaus 的 GitHub 用户名，其公开主页介绍了创意技术方向以及多项开发者和创作者工具经历。"
+        },
+        {
+          "question": "Impeccable 是一个 Skill 还是多份独立指令？",
+          "answer": "当前项目通过 impeccable Skill 连接设计命令，并包含配套软件。这些命令属于同一项目的不同任务入口，不应理解为互不相关的安装包。"
+        },
+        {
+          "question": "项目初始化会建立什么？",
+          "answer": "原始 init 流程记录读者、用途和约束等持久产品上下文，便于后续设计任务围绕同一份需求进行。"
+        },
+        {
+          "question": "所有 Agent 都使用相同安装步骤吗？",
+          "answer": "应核对仓库针对宿主的安装说明。指令、Hook 与配套工具需要匹配所在环境，只复制 Skill 不一定能得到完整配置。"
+        },
+        {
+          "question": "Impeccable 会替代已有设计系统吗？",
+          "answer": "应提供项目现有设计要求和组件作为上下文，再据此判断建议，不能把工具集当作自动替代产品规范的依据。"
+        },
+        {
+          "question": "在哪里查看当前功能与更新？",
+          "answer": "通过 Impeccable 仓库与官方项目文档查看。命令和安装细节可能变化，应以所用版本的来源说明为准。"
+        }
+      ],
+      "ctaTitle": "探索 Paul Bakaus 的 Skills",
+      "ctaDescription": "从具体任务出发，阅读对应指南，再核对原始说明与 Agent 配置要求。",
+      "ctaPrimary": {
+        "label": "浏览 Skills",
+        "href": "/zh/combostore/pbakaus#publisher-skills-title"
+      }
+    }
+  },
+  "obra": {
+    "name": "Jesse Vincent",
+    "type": "Person",
+    "profileUrl": "https://github.com/obra",
+    "tags": {
+      "en": [
+        "Agent workflows",
+        "Software development",
+        "Developer tools"
+      ],
+      "zh": [
+        "Agent 工作流",
+        "软件开发",
+        "开发者工具"
+      ]
+    },
+    "projects": [
+      {
+        "name": "Superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "en": {
+          "kind": "Agent workflow toolkit",
+          "description": "A software-development methodology and composable Skills for moving from design to planning, implementation, testing, and review."
+        },
+        "zh": {
+          "kind": "Agent 工作流工具集",
+          "description": "连接设计、规划、实现、测试和审查的软件开发方法与可组合 Skills。"
+        }
+      }
+    ],
+    "links": [
+      {
+        "href": "https://github.com/obra",
+        "label": {
+          "en": "Jesse Vincent on GitHub",
+          "zh": "Jesse Vincent GitHub"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Jesse Vincent: Projects, Tools & Agent Skills",
+      "seoDescription": "Explore Jesse Vincent’s Agent workflow work under the GitHub handle obra, including Superpowers. Learn how planning, debugging, testing, and implementation Skills fit together, then choose a task-specific guide and check the setup for your coding agent.",
+      "heroTitle": "Jesse Vincent",
+      "heroDescription": "Explore Jesse Vincent’s Agent workflow work under the GitHub handle obra, including Superpowers. Learn how planning, debugging, testing, and implementation Skills fit together, then choose a task-specific guide and check the setup for your coding agent.",
+      "aboutTitle": "About Jesse Vincent",
+      "about": "Jesse Vincent publishes software under the GitHub handle obra. Superpowers is one of the projects represented here: a software-development methodology built from composable Skills and instructions for coding agents. Its workflow connects requirements and design discussions to implementation planning, testing, and review. The individual Skills have distinct jobs, so brainstorming and systematic debugging should be introduced through the tasks they support rather than described as interchangeable prompts. Installation varies by host and may include plugin or environment setup beyond copying a single file. This page presents selected work and links to the original repositories for the current scope.",
+      "overview": {
+        "title": "About Jesse Vincent",
+        "paragraphs": [
+          "Jesse Vincent publishes software under the GitHub handle obra. Superpowers is one of the projects represented here: a software-development methodology built from composable Skills and instructions for coding agents. Its workflow connects requirements and design discussions to implementation planning, testing, and review. The individual Skills have distinct jobs, so brainstorming and systematic debugging should be introduced through the tasks they support rather than described as interchangeable prompts. Installation varies by host and may include plugin or environment setup beyond copying a single file. This page presents selected work and links to the original repositories for the current scope."
+        ]
+      },
+      "projectsTitle": "Jesse Vincent Projects and Tools",
+      "projectsIntro": "Explore the selected projects and their original documentation. Check each repository for current installation methods and project-specific requirements.",
+      "skillsTitle": "Jesse Vincent Agent Skills",
+      "skillsIntro": "Explore task-focused instructions published by Jesse Vincent. Read each guide for its purpose, practical workflow, installation options, and original source.",
+      "relatedTitle": "Explore Other Publishers",
+      "relatedDescription": "Discover other teams and creators working on developer tools, agent workflows, and reusable Skills.",
+      "faqTitle": "Jesse Vincent FAQ",
+      "faq": [
+        {
+          "question": "Who publishes the obra repositories?",
+          "answer": "The public GitHub profile for obra identifies Jesse Vincent. Use that profile and the project repositories to trace the selected work on this page."
+        },
+        {
+          "question": "Is Superpowers a model?",
+          "answer": "It is a workflow methodology and toolkit of composable agent instructions. It runs through a compatible coding agent rather than providing a separate language model."
+        },
+        {
+          "question": "How do Brainstorming and Systematic Debugging differ?",
+          "answer": "Brainstorming supports requirements and design before implementation. Systematic Debugging investigates a reproducible problem and its cause. Choose the instruction that matches the immediate task."
+        },
+        {
+          "question": "Does copying one Skill install the complete workflow?",
+          "answer": "Not necessarily. The repository has host-specific installation and initial instructions; a standalone file does not establish that those integration steps are complete."
+        },
+        {
+          "question": "Can the workflow change a project’s existing rules?",
+          "answer": "Provide the repository’s own constraints and task scope. The host agent still needs to follow those requirements and obtain any authorization needed for consequential actions."
+        },
+        {
+          "question": "Where are supported agents and setup methods documented?",
+          "answer": "The Superpowers README lists setup by host and links further instructions. Check the section for your environment rather than applying a different agent’s command."
+        }
+      ],
+      "ctaTitle": "Explore Jesse Vincent Skills",
+      "ctaDescription": "Choose a task, read the matching guide, and check the original instructions before setting up your agent.",
+      "ctaPrimary": {
+        "label": "Browse Skills",
+        "href": "/combostore/obra#publisher-skills-title"
+      }
+    },
+    "zh": {
+      "seoTitle": "Jesse Vincent：项目、工具与 Agent Skills",
+      "seoDescription": "了解 Jesse Vincent 以 obra 为用户名发布的 Agent 工作流程项目，包括 Superpowers。探索规划、调试、测试与实现指引之间的关系，再选择具体任务指南，核对你的编程 Agent 所需配置。",
+      "heroTitle": "Jesse Vincent",
+      "heroDescription": "了解 Jesse Vincent 以 obra 为用户名发布的 Agent 工作流程项目，包括 Superpowers。探索规划、调试、测试与实现指引之间的关系，再选择具体任务指南，核对你的编程 Agent 所需配置。",
+      "aboutTitle": "关于 Jesse Vincent",
+      "about": "Jesse Vincent 以 obra 为 GitHub 用户名发布软件。这里介绍的 Superpowers 是其代表项目之一，将可组合 Skills 与 Agent 指令连接成软件开发方法，覆盖需求与设计讨论、实施规划、测试和审查。各项 Skill 的职责不同，例如 Brainstorming 面向实施前的需求与设计，Systematic Debugging 面向问题诊断，应通过具体任务理解其用途。安装方式随宿主而异，可能包含插件或环境配置，不只是复制单个文件。本页展示部分代表作品，完整范围及当前要求以原始仓库为准。",
+      "overview": {
+        "title": "关于 Jesse Vincent",
+        "paragraphs": [
+          "Jesse Vincent 以 obra 为 GitHub 用户名发布软件。这里介绍的 Superpowers 是其代表项目之一，将可组合 Skills 与 Agent 指令连接成软件开发方法，覆盖需求与设计讨论、实施规划、测试和审查。各项 Skill 的职责不同，例如 Brainstorming 面向实施前的需求与设计，Systematic Debugging 面向问题诊断，应通过具体任务理解其用途。安装方式随宿主而异，可能包含插件或环境配置，不只是复制单个文件。本页展示部分代表作品，完整范围及当前要求以原始仓库为准。"
+        ]
+      },
+      "projectsTitle": "Jesse Vincent 项目与工具",
+      "projectsIntro": "了解以下代表项目及原始文档，并通过各自仓库核对当前安装方式与使用要求。",
+      "skillsTitle": "Jesse Vincent 的 Agent Skills",
+      "skillsIntro": "了解 Jesse Vincent 发布的任务型指引，通过详情页查看用途、具体流程、安装方式与原始来源。",
+      "relatedTitle": "探索其他发布者",
+      "relatedDescription": "了解其他团队与创作者在开发者工具、Agent 工作流程和可复用 Skills 方面的作品。",
+      "faqTitle": "Jesse Vincent 常见问题",
+      "faq": [
+        {
+          "question": "obra 仓库由谁发布？",
+          "answer": "obra 的公开 GitHub 主页标识为 Jesse Vincent，可通过主页与项目仓库追溯本页介绍的作品。"
+        },
+        {
+          "question": "Superpowers 是模型吗？",
+          "answer": "它是工作流程方法与可组合 Agent 指令工具集，通过兼容的编程 Agent 使用，不是另一个语言模型。"
+        },
+        {
+          "question": "Brainstorming 与 Systematic Debugging 有什么区别？",
+          "answer": "Brainstorming 支持实施前的需求和设计；Systematic Debugging 调查可复现问题及原因。应按当前任务选择对应指引。"
+        },
+        {
+          "question": "复制一个 Skill 就安装了完整流程吗？",
+          "answer": "不一定。仓库提供针对宿主的安装方式与初始指令，单个文件无法证明这些集成步骤已经完成。"
+        },
+        {
+          "question": "这个流程可以覆盖项目已有规则吗？",
+          "answer": "应提供仓库自身约束与任务范围。宿主 Agent 仍需遵循这些要求，并为需要授权的操作取得相应许可。"
+        },
+        {
+          "question": "在哪里查看支持的 Agent 与安装方式？",
+          "answer": "Superpowers README 按宿主列出配置并链接进一步说明。应查看自己所用环境的章节，避免套用其他 Agent 的命令。"
+        }
+      ],
+      "ctaTitle": "探索 Jesse Vincent 的 Skills",
+      "ctaDescription": "从具体任务出发，阅读对应指南，再核对原始说明与 Agent 配置要求。",
+      "ctaPrimary": {
+        "label": "浏览 Skills",
+        "href": "/zh/combostore/obra#publisher-skills-title"
+      }
+    }
+  }
+}

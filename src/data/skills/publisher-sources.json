@@ -1,0 +1,311 @@
+{
+  "verifiedAt": "2026-10-27",
+  "publishers": {
+    "microsoft": {
+      "sources": [
+        "https://github.com/microsoft",
+        "https://github.com/microsoft/azure-skills",
+        "https://github.com/microsoft/azure-skills/tree/main/skills/azure-prepare",
+        "https://github.com/microsoft/azure-skills/tree/main/skills/azure-diagnostics",
+        "https://github.com/microsoft/azure-skills/tree/main/skills/microsoft-foundry",
+        "https://github.com/microsoft/vscode",
+        "https://github.com/microsoft/TypeScript"
+      ],
+      "avatar": "https://avatars.githubusercontent.com/u/6154722?s=240&v=4",
+      "notes": [
+        "Organization verified. Selected 6 task Skills, software projects separate. No claims based on star counts."
+      ]
+    },
+    "open.feishu.cn": {
+      "sources": [
+        "https://open.feishu.cn/",
+        "https://www.feishu.cn/content/article/7624059344114699194",
+        "https://www.feishu.cn/content/article/7644418854143315157",
+        "https://www.feishu.cn/content/article/7639216802341375162",
+        "https://github.com/larksuite/cli",
+        "https://github.com/larksuite/cli/blob/main/README.zh.md",
+        "https://github.com/larksuite/cli/tree/main/skills"
+      ],
+      "notes": [
+        "Official Feishu articles confirm official CLI source larksuite/cli and domain Skill distribution. Treat future larksuite publisher as same ecosystem, do not fabricate a separate GitHub org open.feishu.cn. Old meeting names are compatibility entries, deliberately omitted from selected cards. Avatar not independently extracted."
+      ]
+    },
+    "remotion-dev": {
+      "sources": [
+        "https://www.remotion.dev/",
+        "https://github.com/remotion-dev/remotion",
+        "https://github.com/remotion-dev/skills",
+        "https://www.remotion.dev/docs/ai/skills",
+        "https://www.remotion.dev/docs/studio",
+        "https://www.remotion.dev/docs/player",
+        "https://www.remotion.dev/docs/lambda",
+        "https://www.remotion.dev/docs/license"
+      ],
+      "notes": [
+        "Remotion AG/organization, not individual creator. Use video tools label rather than blanket open-source label because custom commercial license. Skills source links point to verified official README sections. Avatar URL should be extracted from org page by parent."
+      ],
+      "avatar": "https://avatars.githubusercontent.com/u/85344006?s=240&v=4"
+    },
+    "flowkit-labs": {
+      "typeEvidence": "GitHub profile is organization; People tab and no-public-members notice.",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/316082748?s=256&v=4",
+      "sources": [
+        "https://github.com/flowkit-labs",
+        "https://github.com/flowkit-labs/skills",
+        "https://raw.githubusercontent.com/flowkit-labs/skills/main/reddit-automation/SKILL.md",
+        "https://github.com/doany-skills/skills",
+        "https://doany.ai"
+      ],
+      "notes": [
+        "Repository README brands collection doany and points current installation at doany-skills/skills. Preserve catalog handle without inventing a corporate identity.",
+        "Skill now explicitly documentation-only and human posts manually; previous blanket external CLI dependency is incorrect for this entry.",
+        "No independent software project verified for this publisher, so projects empty."
+      ]
+    },
+    "designed-by-ai": {
+      "typeEvidence": "GitHub organization profile with People tab.",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/324864681?s=256&v=4",
+      "sources": [
+        "https://github.com/designed-by-ai",
+        "https://github.com/designed-by-ai/skills",
+        "https://raw.githubusercontent.com/designed-by-ai/skills/main/skills/design-mobile-apps/SKILL.md",
+        "https://github.com/sleekdotdesign/agent-skills",
+        "https://sleek.design"
+      ],
+      "notes": [
+        "Repository branded Sleek; README points current installation at sleekdotdesign/agent-skills. Catalog handle retained and relationship described without claiming verified company identity.",
+        "Hosted service needs account/API authentication; no pricing copied to avoid stale figures.",
+        "Sleek external product not asserted as independently authored by this publishing account; projects empty."
+      ]
+    },
+    "magentosh": {
+      "typeEvidence": "GitHub organization profile with People tab.",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/308486040?s=256&v=4",
+      "sources": [
+        "https://github.com/magentosh",
+        "https://github.com/magentosh/superpowers",
+        "https://inference.sh",
+        "https://www.skills.sh/magentosh/superpowers/ai-image-generation",
+        "https://www.skills.sh/magentosh/superpowers/ai-video-generation",
+        "https://www.skills.sh/magentosh/superpowers/ai-avatar-video",
+        "https://www.skills.sh/magentosh/superpowers/twitter-automation"
+      ],
+      "notes": [
+        "Repo is fork of skills-101/superpowers. Do not imply magentosh is inference.sh official or original model developer.",
+        "No independent software verified for this publisher. Skill URLs taken from existing research catalog, repository README independently checked."
+      ]
+    },
+    "101-skills": {
+      "sources": [
+        "https://github.com/101-skills",
+        "https://github.com/101-skills/superpowers",
+        "https://www.skills.sh/101-skills/superpowers/ai-image-generation",
+        "https://www.skills.sh/101-skills/superpowers/ai-video-generation"
+      ],
+      "avatarUrl": "https://avatars.githubusercontent.com/u/301088244?s=256&v=4",
+      "identity": "GitHub Organization confirmed; no public personal/company history inferred. README and directory identify inference-sh upstream. Not labelled service official or original author.",
+      "projects": "None beyond Skill collection verified."
+    },
+    "qu-skills": {
+      "sources": [
+        "https://github.com/qu-skills",
+        "https://github.com/qu-skills/superpowers",
+        "https://www.skills.sh/qu-skills/superpowers/ai-avatar-video",
+        "https://www.skills.sh/qu-skills/superpowers/twitter-automation"
+      ],
+      "avatarUrl": "https://avatars.githubusercontent.com/u/290519678?s=256&v=4",
+      "identity": "GitHub Organization confirmed; no public company history inferred. Upstream inference-sh attribution explicit.",
+      "projects": "None beyond Skill collection verified."
+    },
+    "uizze.sh": {
+      "sources": [
+        "https://uizze.sh",
+        "https://uizze.com",
+        "https://www.skills.sh/site/uizze.sh/ui-taste",
+        "https://www.skills.sh/site/uizze.sh/ios-design"
+      ],
+      "identity": "Product brand / organization, no named creator established. uizze.sh redirects uizze.com. No verified GitHub source; do not fabricate one. Free Skill versus optional paid MCP explicitly differentiated.",
+      "logoUrl": null,
+      "projects": "None verified beyond commercial service and Skills, so no open-source-project claims."
+    },
+    "leonxlnx": {
+      "sources": [
+        "https://github.com/Leonxlnx",
+        "https://github.com/Leonxlnx/taste-skill",
+        "https://www.tasteskill.dev",
+        "https://github.com/Leonxlnx/tastecode",
+        "https://github.com/Leonxlnx/earshot",
+        "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill",
+        "https://github.com/Leonxlnx/taste-skill/tree/main/skills/redesign-skill",
+        "https://github.com/Leonxlnx/taste-skill/tree/main/skills/gpt-tasteskill"
+      ],
+      "avatarUrl": "https://avatars.githubusercontent.com/u/219127460?s=256&v=4",
+      "identity": "Leon Lin display name verified. Taste Skill site credits Leon Lin and blueemi; do not call sole author. Current v2/default alias verified and selected links use current files. TasteCode platform description intentionally generic because README and site differ Windows-first/macOS beta wording."
+    },
+    "morluto": {
+      "sources": [
+        "https://github.com/morluto",
+        "https://github.com/morluto/rea",
+        "https://rea.tools/"
+      ],
+      "notes": [
+        "Existing creator page updated; REA is not a new publisher."
+      ]
+    },
+    "obra": {
+      "name": "Jesse Vincent",
+      "type": "Person",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/45416?s=256&v=4",
+      "sources": [
+        "https://github.com/obra",
+        "https://fsck.com",
+        "https://github.com/obra/superpowers",
+        "https://github.com/obra/Youtube2Webpage",
+        "https://github.com/obra/private-journal-mcp",
+        "https://raw.githubusercontent.com/obra/superpowers/main/skills/brainstorming/SKILL.md",
+        "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-plans/SKILL.md",
+        "https://raw.githubusercontent.com/obra/superpowers/main/skills/test-driven-development/SKILL.md",
+        "https://raw.githubusercontent.com/obra/superpowers/main/skills/systematic-debugging/SKILL.md",
+        "https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md"
+      ],
+      "notes": [
+        "All five selected Skill raw files fetched with actual content. Do not apply those external instructions to our authoring task: they are researched content only.",
+        "Superpowers framework is distinct from its individual instructions and from unrelated inference-sh collections with same repository name.",
+        "Website verified, GitHub account Person identity verified; source claims no fabricated biography."
+      ]
+    },
+    "pbakaus": {
+      "name": "Paul Bakaus",
+      "type": "Person",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/43004?s=256&v=4",
+      "sources": [
+        "https://github.com/pbakaus",
+        "https://www.paulbakaus.com",
+        "https://github.com/pbakaus/impeccable",
+        "https://impeccable.style",
+        "https://raw.githubusercontent.com/pbakaus/impeccable/main/.agents/skills/impeccable/SKILL.md",
+        "https://github.com/pbakaus/radiant",
+        "https://github.com/pbakaus/agent-reviews"
+      ],
+      "notes": [
+        "Explicitly credits Anthropic frontend-design as origin. Current single Skill impeccable includes subcommands; do not fabricate 24 separate SKILL.md cards.",
+        "GitHub organization/job field stale Google contrasted with current personalwebsite Renaissance Geek founder; use current personalwebsite and omit current employer claim.",
+        "Avatar IDs extracted from official GitHub repository owner image links. Skill content fetched to verify scope; no installation performed."
+      ]
+    },
+    "cloudflare": {
+      "avatar": "https://avatars.githubusercontent.com/u/314135?s=240&v=4",
+      "identity": "GitHub Organization cloudflare; official profile links cloudflare.com; avatar link extracted from official org profile.",
+      "sources": [
+        "https://github.com/cloudflare",
+        "https://github.com/cloudflare/skills",
+        "https://github.com/cloudflare/security-audit-skill",
+        "https://github.com/cloudflare/workers-sdk",
+        "https://github.com/cloudflare/agents"
+      ],
+      "skillProvenance": [
+        "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md",
+        "https://github.com/cloudflare/skills/blob/main/skills/agents-sdk/SKILL.md",
+        "https://github.com/cloudflare/skills/blob/main/skills/durable-objects/SKILL.md",
+        "https://github.com/cloudflare/skills/blob/main/skills/wrangler/SKILL.md"
+      ],
+      "notes": [
+        "Security-audit exact path verified via GitHub recursive tree API. Root SKILL.md is 404, actual file skills/security-audit/SKILL.md.",
+        "README and raw SKILL.md content reviewed. No claim of comprehensive safety or guarantee.",
+        "Wrangler guidance is scoped to existing Wrangler projects; current Skill directs new projects to cf CLI."
+      ]
+    },
+    "trailofbits": {
+      "avatar": "https://avatars.githubusercontent.com/u/2314423?v=4",
+      "identity": "GitHub users/trailofbits API type Organization; official website domain verified by org profile.",
+      "sources": [
+        "https://github.com/trailofbits",
+        "https://trailofbits.com/",
+        "https://github.com/trailofbits/skills",
+        "https://github.com/crytic/slither",
+        "https://github.com/crytic/echidna"
+      ],
+      "skillProvenance": [
+        "https://github.com/trailofbits/skills/blob/main/plugins/audit-context-building/skills/audit-context-building/SKILL.md",
+        "https://github.com/trailofbits/skills/blob/main/plugins/differential-review/skills/differential-review/SKILL.md",
+        "https://github.com/trailofbits/skills/blob/main/plugins/property-based-testing/skills/property-based-testing/SKILL.md"
+      ],
+      "notes": [
+        "All three exact raw SKILL.md files read and verified.",
+        "Skills repository CC-BY-SA-4.0. Slither has AGPLv3; do not label all tools as MIT.",
+        "Official Trail of Bits org profile identifies crytic as blockchain security group; old trailofbits/slither and /echidna redirect to current URLs."
+      ]
+    },
+    "github": {
+      "avatar": "https://avatars.githubusercontent.com/u/9919?s=240&v=4",
+      "identity": "GitHub Organization github; avatar extracted from awesome-copilot repository official org image.",
+      "sources": [
+        "https://github.com/github",
+        "https://github.com/github/awesome-copilot",
+        "https://github.com/github/awesome-copilot/blob/main/docs/README.skills.md",
+        "https://github.com/github/github-mcp-server",
+        "https://github.com/cli/cli"
+      ],
+      "skillProvenance": [
+        "https://github.com/github/awesome-copilot/blob/main/skills/git-commit/SKILL.md",
+        "https://github.com/github/awesome-copilot/blob/main/skills/create-readme/SKILL.md",
+        "https://github.com/github/awesome-copilot/blob/main/skills/refactor/SKILL.md"
+      ],
+      "notes": [
+        "Exact raw SKILL.md contents reviewed for git-commit, create-readme, refactor.",
+        "Awesome Copilot explicitly community-contributed; no original-author claim for GitHub.",
+        "GitHub CLI official repository under cli organization, verified README."
+      ]
+    },
+    "googleworkspace": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3708359?s=256&v=4",
+      "avatarEvidence": "GitHub googleworkspace/cli owner image link; web image fetch cache missed, original owner URL verified in source.",
+      "identity": "Google Workspace organization and developer ecosystem. gws README explicitly says not an officially supported Google product; included in overview, project card, and FAQ.",
+      "sources": [
+        "https://workspace.google.com/",
+        "https://developers.google.com/workspace",
+        "https://developers.google.com/workspace/guides/auth-overview",
+        "https://github.com/googleworkspace/cli",
+        "https://github.com/googleworkspace/cli/blob/main/docs/skills.md",
+        "https://github.com/googleworkspace/cli/blob/main/skills/gws-drive/SKILL.md",
+        "https://github.com/googleworkspace/cli/blob/main/skills/gws-gmail/SKILL.md",
+        "https://github.com/googleworkspace/cli/blob/main/skills/gws-calendar/SKILL.md",
+        "https://github.com/googleworkspace/cli/blob/main/skills/gws-sheets/SKILL.md"
+      ],
+      "license": "CLI Apache-2.0; no claim that support guarantees follow from organization ownership.",
+      "selection": "One independently verified CLI, four service-specific instruction files. No numeric popularity claims in evergreen copy."
+    },
+    "firecrawl": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/135057108?s=256&v=4",
+      "avatarEvidence": "Image link from official firecrawl/firecrawl repository owner image; web successfully returned image.",
+      "sources": [
+        "https://www.firecrawl.dev/",
+        "https://docs.firecrawl.dev/introduction",
+        "https://github.com/firecrawl/firecrawl",
+        "https://github.com/firecrawl/cli",
+        "https://github.com/firecrawl/cli/blob/main/skills/firecrawl-search/SKILL.md",
+        "https://github.com/firecrawl/cli/blob/main/skills/firecrawl-scrape/SKILL.md",
+        "https://github.com/firecrawl/cli/blob/main/skills/firecrawl-crawl/SKILL.md",
+        "https://github.com/firecrawl/cli/blob/main/skills/firecrawl-interact/SKILL.md"
+      ],
+      "license": "Main platform AGPL-3.0; hosted service terms/usage distinguished. CLI repository license not inferred.",
+      "selection": "Candidate strength comes from main platform (~195,832 stars in earlier live metadata), not CLI (~672). No inflated Skill/CLI popularity claim in page. Exact four CLI Skill manifests verified."
+    },
+    "supabase": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/54469796?s=256&v=4",
+      "avatarEvidence": "Image link from official supabase/supabase repository owner image; web successfully returned image.",
+      "sources": [
+        "https://supabase.com/",
+        "https://supabase.com/docs/guides/ai-tools/ai-skills",
+        "https://supabase.com/docs/guides/self-hosting",
+        "https://github.com/supabase/supabase",
+        "https://github.com/supabase/cli",
+        "https://github.com/supabase/agent-skills",
+        "https://github.com/supabase/agent-skills/blob/main/skills/supabase/SKILL.md",
+        "https://github.com/supabase/agent-skills/blob/main/skills/supabase-postgres-best-practices/SKILL.md"
+      ],
+      "license": "Official Agent Skills repository MIT. Main platform and component licensing kept separate.",
+      "selection": "Two official Skill manifests, main platform and real development CLI. Exact names reflect current README/docs."
+    }
+  }
+}

@@ -1,72 +1,985 @@
 {
   "coding": {
-    "label": { "en": "Coding", "zh": "编写与修改代码" },
-    "seo": { "en": { "title": "Agent Skills for Coding, Testing and Debugging | Floatboat", "description": "Explore third-party Agent Skills for writing code, test-first development, debugging, React performance, and safe refactoring." }, "zh": { "title": "编程 Agent Skills：测试、调试与安全重构 | Floatboat", "description": "按具体编码任务查找第三方 Agent Skills：React 性能、测试驱动开发、故障诊断与安全重构。" } },
-    "hero": { "en": { "title": "Agent Skills for Coding Work", "description": "Use a focused instruction when the task is to change code: write a test, investigate a failure, improve a React implementation, or refactor without changing behavior." }, "zh": { "title": "面向编码任务的 Agent Skills", "description": "需要修改代码时，按任务选择指引：先写测试、调查故障、优化 React 实现，或在不改变行为的前提下重构。" } },
-    "intro": { "en": "Coding Skills guide decisions inside an existing codebase. They do not supply a runtime, a repository, or permission to edit production systems. Read each source for its assumptions before applying it.", "zh": "编码类 Skill 指导已有代码库中的具体修改，但不会提供运行环境、仓库访问权或生产系统修改权限。使用前应阅读原始指令的适用前提。" },
-    "cta": { "en": { "eyebrow": "From Instruction to Code", "title": "Keep Code Changes and Reviews Together", "description": "Bring the task, repository context, tests, and review decisions into one workspace." }, "zh": { "eyebrow": "从指引到代码", "title": "把代码修改与审查放在一起", "description": "让任务、仓库上下文、测试和审查决定留在同一工作空间。" } },
-    "skills": ["vercel-labs/vercel-react-best-practices", "vercel-labs/vercel-react-native-skills", "mattpocock/tdd", "mattpocock/diagnosing-bugs", "juliusbrussee/investigate-first", "juliusbrussee/safe-refactor"],
-    "decisions": [
-      { "en": { "title": "A Behavior Change Needs Tests", "description": "Start with TDD when the expected behavior can be stated and checked before implementation." }, "zh": { "title": "行为变更需要测试", "description": "当预期行为能先被明确描述并验证时，优先查看 TDD。" } },
-      { "en": { "title": "A Failure Has No Clear Cause", "description": "Use diagnosis or investigation guidance to rank evidence before editing the suspected code." }, "zh": { "title": "故障原因尚不明确", "description": "先用诊断或调查指引整理证据，不要立即修改猜测中的代码。" } },
-      { "en": { "title": "A Codebase Needs Improvement", "description": "Choose React-specific guidance for performance issues, or Safe Refactor when behavior must remain unchanged." }, "zh": { "title": "代码需要改进", "description": "性能问题选择对应的 React 指引；需要保持既有行为时选择 Safe Refactor。" } }
+    "label": {
+      "en": "Coding",
+      "zh": "编写与修改代码"
+    },
+    "seo": {
+      "en": {
+        "title": "Agent Skills for Coding, Testing and Debugging | Floatboat",
+        "description": "Explore third-party Agent Skills for writing code, test-first development, debugging, React performance, and safe refactoring."
+      },
+      "zh": {
+        "title": "编程 Agent Skills：测试、调试与安全重构 | Floatboat",
+        "description": "按具体编码任务查找第三方 Agent Skills：React 性能、测试驱动开发、故障诊断与安全重构。"
+      }
+    },
+    "hero": {
+      "en": {
+        "title": "Agent Skills for Coding Work",
+        "description": "Use a focused instruction when the task is to change code: write a test, investigate a failure, improve a React implementation, or refactor without changing behavior."
+      },
+      "zh": {
+        "title": "面向编码任务的 Agent Skills",
+        "description": "需要修改代码时，按任务选择指引：先写测试、调查故障、优化 React 实现，或在不改变行为的前提下重构。"
+      }
+    },
+    "intro": {
+      "en": "Coding Skills guide decisions inside an existing codebase. They do not supply a runtime, a repository, or permission to edit production systems. Read each source for its assumptions before applying it.",
+      "zh": "编码类 Skill 指导已有代码库中的具体修改，但不会提供运行环境、仓库访问权或生产系统修改权限。使用前应阅读原始指令的适用前提。"
+    },
+    "cta": {
+      "en": {
+        "eyebrow": "From Instruction to Code",
+        "title": "Keep Code Changes and Reviews Together",
+        "description": "Bring the task, repository context, tests, and review decisions into one workspace."
+      },
+      "zh": {
+        "eyebrow": "从指引到代码",
+        "title": "把代码修改与审查放在一起",
+        "description": "让任务、仓库上下文、测试和审查决定留在同一工作空间。"
+      }
+    },
+    "skills": [
+      "vercel-labs/vercel-react-best-practices",
+      "vercel-labs/vercel-react-native-skills",
+      "mattpocock/tdd",
+      "mattpocock/diagnosing-bugs",
+      "juliusbrussee/investigate-first",
+      "juliusbrussee/safe-refactor",
+      "mattpocock/code-review",
+      "obra/systematic-debugging"
     ],
-    "faq": { "en": [ { "question": "Are these Skills coding agents?", "answer": "No. A Skill is an instruction set used by a compatible agent. The agent, repository access, tools, and review process are separate." }, { "question": "Should I use TDD for every coding task?", "answer": "No. It is most useful when expected behavior is testable. An unclear requirement or exploratory design may need investigation first." }, { "question": "Can a Skill guarantee a safe refactor?", "answer": "No. Tests, diffs, and human review still have to confirm that behavior did not change." }, { "question": "Are all listed Skills built into Floatboat?", "answer": "No. This is an independent directory of third-party sources. Cards distinguish Floatboat's local guides from links to an original SKILL.md." } ], "zh": [ { "question": "这些 Skill 本身是编程 Agent 吗？", "answer": "不是。Skill 是供兼容 Agent 使用的指令；Agent、仓库权限、工具与审查流程需要另外具备。" }, { "question": "每个编码任务都适合 TDD 吗？", "answer": "不适合。预期行为可测试时更有价值；需求不清或仍在探索设计时应先调查。" }, { "question": "Skill 能保证重构安全吗？", "answer": "不能。仍需通过测试、差异审查和人工确认验证行为没有改变。" }, { "question": "列表中的 Skill 都内置于 Floatboat 吗？", "answer": "不是。这是第三方来源的独立目录；卡片会区分本站详情指南与原始 SKILL.md 链接。" } ] }
+    "decisions": [
+      {
+        "en": {
+          "title": "A Behavior Change Needs Tests",
+          "description": "Start with TDD when the expected behavior can be stated and checked before implementation."
+        },
+        "zh": {
+          "title": "行为变更需要测试",
+          "description": "当预期行为能先被明确描述并验证时，优先查看 TDD。"
+        }
+      },
+      {
+        "en": {
+          "title": "A Failure Has No Clear Cause",
+          "description": "Use diagnosis or investigation guidance to rank evidence before editing the suspected code."
+        },
+        "zh": {
+          "title": "故障原因尚不明确",
+          "description": "先用诊断或调查指引整理证据，不要立即修改猜测中的代码。"
+        }
+      },
+      {
+        "en": {
+          "title": "A Codebase Needs Improvement",
+          "description": "Choose React-specific guidance for performance issues, or Safe Refactor when behavior must remain unchanged."
+        },
+        "zh": {
+          "title": "代码需要改进",
+          "description": "性能问题选择对应的 React 指引；需要保持既有行为时选择 Safe Refactor。"
+        }
+      }
+    ],
+    "faq": {
+      "en": [
+        {
+          "question": "How should I choose between debugging, TDD, and refactoring guidance?",
+          "answer": "Start with the current uncertainty. Debugging investigates why behavior is wrong; TDD makes an expected behavior executable; refactoring improves structure while preserving behavior. A single task may move through all three, but they answer different questions."
+        },
+        {
+          "question": "What makes a useful bug report for a coding agent?",
+          "answer": "Provide the smallest reproducible example, expected and actual behavior, relevant errors, and the environment where the issue occurs. A failing test or concrete input is more actionable than a general statement that the code is broken."
+        },
+        {
+          "question": "Should every change begin with a new test?",
+          "answer": "A test is valuable when it can detect the behavior or regression at issue. Exploratory work may first need a clearer requirement; cosmetic changes may need visual checks. Avoid tests that merely repeat the implementation without checking a meaningful outcome."
+        },
+        {
+          "question": "How can I verify that a refactor preserved behavior?",
+          "answer": "Record the behavior that must remain stable, run relevant checks, and review the diff for accidental scope changes. Passing tests are useful evidence, but untested interfaces and error paths may still need targeted inspection."
+        },
+        {
+          "question": "When should I use React-specific performance guidance?",
+          "answer": "Use it when the problem involves React or Next.js concerns such as rendering, data fetching, state, or bundle size. Measure the actual application so a plausible optimization does not become an unverified change with no demonstrated benefit."
+        },
+        {
+          "question": "Can several coding Skills be combined in one task?",
+          "answer": "Yes, when their roles are clear. For example, reproduce a failure, isolate the cause, make a small change, and then inspect the diff. Resolve conflicting instructions and keep one acceptance criterion rather than layering unrelated checklists."
+        }
+      ],
+      "zh": [
+        {
+          "question": "调试、TDD 和重构指引应该怎样选？",
+          "answer": "先判断当前不确定什么。调试追查错误原因，TDD 将预期行为变成可执行验证，重构在保持行为的前提下改善结构。同一任务可能依次用到三者，但它们回答的问题不同。"
+        },
+        {
+          "question": "给编程 Agent 的故障描述怎样才有用？",
+          "answer": "提供最小复现、预期与实际行为、相关错误和运行环境。一个失败测试或具体输入，比笼统地说“代码有问题”更有助于定位。"
+        },
+        {
+          "question": "每次修改都必须先写新测试吗？",
+          "answer": "测试应能发现所关注的行为或回归。探索任务可能先要澄清需求，外观修改可能更需要视觉检查；不要为了数量编写只重复实现的测试。"
+        },
+        {
+          "question": "怎样核对重构没有改变行为？",
+          "answer": "先记录必须保持的行为，再运行相关检查，并审阅差异是否意外扩大范围。测试通过是证据，但未覆盖的接口和错误路径仍可能需要专项检查。"
+        },
+        {
+          "question": "什么时候应该用 React 专项性能指引？",
+          "answer": "问题涉及 React 或 Next.js 的渲染、数据请求、状态或包体积时更适合。仍需测量真实应用，避免把看似合理的优化当作已经产生收益。"
+        },
+        {
+          "question": "一个任务可以组合多个编码 Skill 吗？",
+          "answer": "可以，但应明确分工，例如先复现、再定位、实施小改动、最后审阅差异。遇到冲突指令应先解决，并围绕同一验收目标执行，不叠加无关清单。"
+        }
+      ]
+    }
   },
   "development": {
-    "label": { "en": "Development", "zh": "软件开发流程" },
-    "seo": { "en": { "title": "Agent Skills for Software Development Workflows | Floatboat", "description": "Find Agent Skills for planning an implementation, structuring React components, testing web apps, and understanding an existing system." }, "zh": { "title": "软件开发流程 Agent Skills：规划、架构与应用测试 | Floatboat", "description": "查找面向开发流程的 Agent Skills，覆盖方案澄清、组件架构、Web 应用测试和现有系统分析。" } },
-    "hero": { "en": { "title": "Agent Skills for Software Development", "description": "Development is broader than writing the next function. These Skills help clarify a plan, understand a system, organize component boundaries, and test a working application." }, "zh": { "title": "面向软件开发流程的 Agent Skills", "description": "开发不只是写下一段代码。这些 Skill 帮助澄清方案、理解系统、组织组件边界，并测试运行中的应用。" } },
-    "intro": { "en": "Use this collection around the code change itself: before implementation when decisions are still open, and after implementation when the application needs realistic verification. For hands-on debugging and test-first coding, see Coding.", "zh": "这组指引关注代码修改前后的工作：实施前澄清决定，实施后以真实操作验证应用。若任务是具体调试或测试驱动编码，请查看“编写与修改代码”。" },
-    "cta": { "en": { "eyebrow": "From Plan to Delivery", "title": "Keep Development Decisions Visible", "description": "Work with your files, implementation notes, and verification in one place." }, "zh": { "eyebrow": "从方案到交付", "title": "让开发决策始终可追溯", "description": "把文件、实施记录和验证结果放在同一处继续工作。" } },
-    "skills": ["mattpocock/grilling", "vercel-labs/vercel-composition-patterns", "vercel-labs/vercel-react-view-transitions", "anthropics/webapp-testing", "morluto/reverse-engineer-anything", "vercel-labs/find-skills"],
-    "decisions": [
-      { "en": { "title": "The Plan Is Still Ambiguous", "description": "Use Grilling to expose missing choices and constraints before committing to an architecture." }, "zh": { "title": "方案仍有歧义", "description": "用 Grilling 找出尚未决定的选项和约束，再确定架构。" } },
-      { "en": { "title": "Components Are Growing Hard to Change", "description": "Composition guidance helps separate responsibility and avoid multiplying unclear prop combinations." }, "zh": { "title": "组件越来越难改", "description": "组合模式指引帮助划分职责，避免不清楚的属性组合不断膨胀。" } },
-      { "en": { "title": "The App Needs a Real Check", "description": "Webapp Testing focuses on running and inspecting the application, not only reviewing source code." }, "zh": { "title": "应用需要真实验证", "description": "Webapp Testing 聚焦运行和检查应用，而不仅仅是阅读源码。" } }
+    "label": {
+      "en": "Development",
+      "zh": "软件开发流程"
+    },
+    "seo": {
+      "en": {
+        "title": "Agent Skills for Software Development Workflows | Floatboat",
+        "description": "Explore Agent Skills for clarifying plans, reviewing architecture, creating reusable instructions, handing off work, and checking applications."
+      },
+      "zh": {
+        "title": "软件开发流程 Agent Skills：规划、架构与应用测试 | Floatboat",
+        "description": "查找面向开发流程的 Agent Skills，覆盖方案澄清、架构评审、Skill 创建、任务交接与应用检查。"
+      }
+    },
+    "hero": {
+      "en": {
+        "title": "Agent Skills for Software Development",
+        "description": "Clarify a plan, review architecture, preserve context for a handoff, or turn a repeatable task into an Agent Skill. Choose the instruction that supports the current stage of development, then check the decisions and evidence needed to continue."
+      },
+      "zh": {
+        "title": "面向软件开发流程的 Agent Skills",
+        "description": "从澄清方案、评审架构和交接任务，到将重复工作整理成 Agent Skill，按当前开发阶段选择指引，明确继续推进所需的决定与证据，并保留可供后续验证的上下文。"
+      }
+    },
+    "intro": {
+      "en": "Use this collection around the code change itself: before implementation when decisions are still open, and after implementation when the application needs realistic verification. For hands-on debugging and test-first coding, see Coding.",
+      "zh": "这组指引关注代码修改前后的工作：实施前澄清决定，实施后以真实操作验证应用。若任务是具体调试或测试驱动编码，请查看“编写与修改代码”。"
+    },
+    "cta": {
+      "en": {
+        "eyebrow": "From Plan to Delivery",
+        "title": "Keep Development Decisions Visible",
+        "description": "Work with your files, implementation notes, and verification in one place."
+      },
+      "zh": {
+        "eyebrow": "从方案到交付",
+        "title": "让开发决策始终可追溯",
+        "description": "把文件、实施记录和验证结果放在同一处继续工作。"
+      }
+    },
+    "skills": [
+      "mattpocock/grill-me",
+      "vercel-labs/vercel-composition-patterns",
+      "vercel-labs/vercel-react-view-transitions",
+      "anthropics/webapp-testing",
+      "morluto/reverse-engineer-anything",
+      "vercel-labs/find-skills",
+      "anthropics/skill-creator",
+      "mattpocock/improve-codebase-architecture",
+      "mattpocock/handoff",
+      "obra/brainstorming"
     ],
-    "faq": { "en": [ { "question": "How is Development different from Coding?", "answer": "Coding covers concrete code changes, tests, and debugging. Development covers surrounding decisions, architecture, understanding an existing system, and application-level verification." }, { "question": "Does a planning Skill choose the product requirements?", "answer": "No. It can surface tradeoffs and missing decisions, but the product owner must still provide requirements and approve consequential choices." }, { "question": "Is reverse engineering a normal part of every project?", "answer": "No. Use it only when understanding a shipped application or binary is necessary and authorized; its tools require separate setup." }, { "question": "Are the tools included when I read a Skill?", "answer": "No. Read the original repository for prerequisites, permissions, and the difference between instruction files and supporting software." } ], "zh": [ { "question": "Development 和 Coding 有什么区别？", "answer": "Coding 聚焦具体代码修改、测试与调试；Development 聚焦前后的决策、架构、现有系统理解与应用级验证。" }, { "question": "规划 Skill 会替我确定产品需求吗？", "answer": "不会。它能暴露权衡和缺失决定，但产品负责人仍需提供需求并批准重要选择。" }, { "question": "每个项目都需要逆向工程吗？", "answer": "不需要。只在确有必要且获得授权时使用；相关工具也需单独配置。" }, { "question": "阅读 Skill 后就拥有所需工具吗？", "answer": "不会。请阅读原仓库关于前置条件、权限，以及指令文件和配套软件的区别。" } ] }
+    "decisions": [
+      {
+        "en": {
+          "title": "The Plan Is Still Ambiguous",
+          "description": "Use Grill Me or Brainstorming to clarify goals and decisions. The merged Grill Me guide also explains the document-aware mode for domain terminology and architecture records."
+        },
+        "zh": {
+          "title": "方案仍有歧义",
+          "description": "使用 Grill Me 或 Brainstorming 澄清目标与决定；合并后的 Grill Me 指南也介绍结合领域术语和架构记录的文档模式。"
+        }
+      },
+      {
+        "en": {
+          "title": "Components Are Growing Hard to Change",
+          "description": "Composition guidance helps separate responsibility and avoid multiplying unclear prop combinations."
+        },
+        "zh": {
+          "title": "组件越来越难改",
+          "description": "组合模式指引帮助划分职责，避免不清楚的属性组合不断膨胀。"
+        }
+      },
+      {
+        "en": {
+          "title": "The App Needs a Real Check",
+          "description": "Webapp Testing focuses on running and inspecting the application, not only reviewing source code."
+        },
+        "zh": {
+          "title": "应用需要真实验证",
+          "description": "Webapp Testing 聚焦运行和检查应用，而不仅仅是阅读源码。"
+        }
+      }
+    ],
+    "faq": {
+      "en": [
+        {
+          "question": "How is this category different from hands-on Coding Skills?",
+          "answer": "Development covers decisions around the code change: understanding a system, clarifying a plan, designing components, and checking a running application. Coding focuses more narrowly on implementing, testing, or debugging the change itself."
+        },
+        {
+          "question": "What should I resolve before asking an agent to implement a plan?",
+          "answer": "Define the user outcome, constraints, affected interfaces, and how success will be checked. If a consequential decision is still open, surface it explicitly so the implementation does not silently turn an assumption into a requirement."
+        },
+        {
+          "question": "When is reverse engineering the right approach?",
+          "answer": "Use it when understanding a shipped application or binary is necessary and authorized, especially when source code is unavailable. Keep the investigation focused on a specific question and separate observed evidence from hypotheses about internal design."
+        },
+        {
+          "question": "How do component composition instructions help a growing interface?",
+          "answer": "They help separate responsibilities and make component APIs easier to understand when prop combinations are multiplying. Start from the actual states and usage patterns rather than adding abstractions solely to make the code appear more reusable."
+        },
+        {
+          "question": "What does a real application check add to source review?",
+          "answer": "Running the application can reveal broken navigation, missing content, unexpected loading states, and interaction failures that source inspection misses. Confirm the expected user outcome, not just a successful response code or the absence of a compiler error."
+        },
+        {
+          "question": "How can I keep an agent-led development task from expanding indefinitely?",
+          "answer": "Write a concrete completion condition and separate necessary changes from follow-up opportunities. Review the changed surfaces against that condition, then stop when the agreed behavior and checks are satisfied."
+        },
+        {
+          "question": "What belongs in a useful handoff?",
+          "answer": "Record the goal, relevant files, decisions already made, checks completed, and the next unresolved action. A new agent should be able to distinguish verified progress from assumptions without reconstructing the entire conversation."
+        },
+        {
+          "question": "When should a development workflow become a reusable Skill?",
+          "answer": "Consider it when the same task has a stable input, repeatable method, and a result you can evaluate. Start with a small instruction and representative examples, then revise it using observed outcomes instead of packaging every one-off task."
+        }
+      ],
+      "zh": [
+        {
+          "question": "这个分类与具体编码类 Skills 有何区别？",
+          "answer": "软件开发流程关注代码修改周围的决定，包括理解系统、澄清方案、设计组件和检查运行中的应用；编码类更聚焦修改本身的实现、测试和调试。"
+        },
+        {
+          "question": "让 Agent 实施方案前应先确定什么？",
+          "answer": "明确用户结果、约束、受影响接口与验收方式。重要决定尚未确定时应明确提出，避免实施过程悄悄把假设变成需求。"
+        },
+        {
+          "question": "什么情况下适合逆向工程？",
+          "answer": "在确有必要且获得授权时，用它理解已发布应用或二进制文件，尤其是缺少源码的情形。调查应围绕具体问题，并区分观察证据与对内部设计的推测。"
+        },
+        {
+          "question": "组件组合指引怎样帮助越来越复杂的界面？",
+          "answer": "当属性组合不断增加时，它能帮助划分职责、改善组件接口。应从真实状态与调用方式出发，而不是为了显得“可复用”就增加抽象。"
+        },
+        {
+          "question": "运行应用的检查能补充哪些源码审查发现不了的问题？",
+          "answer": "能发现导航故障、内容缺失、异常加载状态及交互失败。应确认用户预期结果确实发生，而不只看响应码成功或编译器没有报错。"
+        },
+        {
+          "question": "如何避免 Agent 开发任务不断扩大？",
+          "answer": "写清完成条件，将必要修改与后续机会分开。围绕完成条件检查受影响范围，约定行为和验证达到要求后就收口。"
+        },
+        {
+          "question": "一份有用的任务交接应包含什么？",
+          "answer": "记录目标、相关文件、已定决策、完成的检查与下一项未解决动作，让接手的 Agent 能分清已验证进展和假设，而不必重建整段对话。"
+        },
+        {
+          "question": "什么情况下适合将开发流程整理成 Skill？",
+          "answer": "当同类任务具有稳定输入、可重复方法和能够评价的结果时，可以考虑。先用简短指令与代表性示例验证，再根据实际结果修订，不必把每次临时任务都包装成 Skill。"
+        }
+      ]
+    }
   },
   "design-interfaces": {
-    "label": { "en": "Design & Interfaces", "zh": "设计与界面" },
-    "seo": { "en": { "title": "Agent Skills for UI Design and Interface Review | Floatboat", "description": "Explore third-party Agent Skills for frontend design, interface critique, motion review, and accessible web interactions." }, "zh": { "title": "UI 设计 Agent Skills：界面评审、动效与交互 | Floatboat", "description": "了解面向前端设计、界面审查、动效评审和网页交互的第三方 Agent Skills。" } },
-    "hero": { "en": { "title": "Agent Skills for Interface Design", "description": "Choose between creating an interface, reviewing one already built, and inspecting its motion or interaction behavior. They are different design jobs." }, "zh": { "title": "面向界面设计的 Agent Skills", "description": "新建界面、审查已有界面，以及检查动效和交互行为，是不同的设计任务；这里按任务区分相应指引。" } },
-    "intro": { "en": "An instruction file can give a design review structure, but it cannot replace seeing the actual interface, checking accessibility, or testing interaction on the intended device.", "zh": "指令文件可以提供设计审查框架，但不能替代查看真实界面、检查无障碍支持，或在目标设备上测试交互。" },
-    "cta": { "en": { "eyebrow": "From Review to Revision", "title": "Keep Interface Feedback in Context", "description": "Bring the page, design references, and review notes together before the next revision." }, "zh": { "eyebrow": "从审查到修改", "title": "让界面反馈保留上下文", "description": "在下一轮修改前，把页面、设计参考和审查记录放在一起。" } },
-    "skills": ["anthropics/frontend-design", "vercel-labs/web-design-guidelines", "emilkowalski/emil-design-eng", "emilkowalski/review-animations", "emilkowalski/apple-design", "vercel-labs/vercel-react-view-transitions"],
-    "decisions": [
-      { "en": { "title": "Starting a New Interface", "description": "Frontend Design and Design Engineering address visual direction and implementation quality from the outset." }, "zh": { "title": "从零开始做界面", "description": "Frontend Design 与 Design Engineering 关注初期的视觉方向和实现质量。" } },
-      { "en": { "title": "Reviewing an Existing Page", "description": "Web Design Guidelines provides a review workflow for concrete UI issues rather than a generic style preference." }, "zh": { "title": "审查现有页面", "description": "Web Design Guidelines 为具体 UI 问题提供审查流程，而不是仅凭个人审美判断。" } },
-      { "en": { "title": "Checking Motion and Feedback", "description": "Use motion-specific guidance when transitions, timing, or reduced-motion behavior needs attention." }, "zh": { "title": "检查动效与反馈", "description": "当过渡、时序或减少动态效果的支持有问题时，选用动效专门指引。" } }
+    "label": {
+      "en": "Design & Interfaces",
+      "zh": "设计与界面"
+    },
+    "seo": {
+      "en": {
+        "title": "Agent Skills for UI Design and Interface Review | Floatboat",
+        "description": "Explore third-party Agent Skills for frontend design, interface critique, motion review, and accessible web interactions."
+      },
+      "zh": {
+        "title": "UI 设计 Agent Skills：界面评审、动效与交互 | Floatboat",
+        "description": "了解面向前端设计、界面审查、动效评审和网页交互的第三方 Agent Skills。"
+      }
+    },
+    "hero": {
+      "en": {
+        "title": "Agent Skills for Interface Design",
+        "description": "Choose between creating an interface, reviewing one already built, and inspecting its motion or interaction behavior. They are different design jobs."
+      },
+      "zh": {
+        "title": "面向界面设计的 Agent Skills",
+        "description": "新建界面、审查已有界面，以及检查动效和交互行为，是不同的设计任务；这里按任务区分相应指引。"
+      }
+    },
+    "intro": {
+      "en": "An instruction file can give a design review structure, but it cannot replace seeing the actual interface, checking accessibility, or testing interaction on the intended device.",
+      "zh": "指令文件可以提供设计审查框架，但不能替代查看真实界面、检查无障碍支持，或在目标设备上测试交互。"
+    },
+    "cta": {
+      "en": {
+        "eyebrow": "From Review to Revision",
+        "title": "Keep Interface Feedback in Context",
+        "description": "Bring the page, design references, and review notes together before the next revision."
+      },
+      "zh": {
+        "eyebrow": "从审查到修改",
+        "title": "让界面反馈保留上下文",
+        "description": "在下一轮修改前，把页面、设计参考和审查记录放在一起。"
+      }
+    },
+    "skills": [
+      "anthropics/frontend-design",
+      "vercel-labs/web-design-guidelines",
+      "emilkowalski/emil-design-eng",
+      "emilkowalski/review-animations",
+      "emilkowalski/apple-design",
+      "vercel-labs/vercel-react-view-transitions",
+      "pbakaus/impeccable"
     ],
-    "faq": { "en": [ { "question": "Can these Skills generate a finished design system?", "answer": "Not by themselves. They provide instructions; a coherent design system still needs product decisions, components, and testing." }, { "question": "Which Skill fits an existing UI review?", "answer": "Start with Web Design Guidelines for a broad review. Use Review Animations when motion is the specific concern." }, { "question": "Are design and frontend coding the same category?", "answer": "They overlap but are not identical. This category focuses on visual, interaction, and review decisions; Coding focuses on implementation changes." }, { "question": "Do these pages reproduce the publishers' full instructions?", "answer": "No. The original SKILL.md remains the source of truth. Floatboat provides independent summaries and links." } ], "zh": [ { "question": "这些 Skill 能直接生成完整设计系统吗？", "answer": "不能。它们提供指引；完整设计系统仍需要产品决策、组件实现与测试。" }, { "question": "审查现有 UI 先看哪个 Skill？", "answer": "广泛审查可先看 Web Design Guidelines；如果问题集中在动效，就看 Review Animations。" }, { "question": "设计和前端编码是同一个分类吗？", "answer": "两者有交集，但不相同。本类聚焦视觉、交互和审查决定；Coding 聚焦实现修改。" }, { "question": "这些页面会复制发布者的全部指令吗？", "answer": "不会。原始 SKILL.md 才是维护源；Floatboat 只提供独立摘要与来源链接。" } ] }
+    "decisions": [
+      {
+        "en": {
+          "title": "Starting a New Interface",
+          "description": "Frontend Design and Design Engineering address visual direction and implementation quality from the outset."
+        },
+        "zh": {
+          "title": "从零开始做界面",
+          "description": "Frontend Design 与 Design Engineering 关注初期的视觉方向和实现质量。"
+        }
+      },
+      {
+        "en": {
+          "title": "Reviewing an Existing Page",
+          "description": "Web Design Guidelines provides a review workflow for concrete UI issues rather than a generic style preference."
+        },
+        "zh": {
+          "title": "审查现有页面",
+          "description": "Web Design Guidelines 为具体 UI 问题提供审查流程，而不是仅凭个人审美判断。"
+        }
+      },
+      {
+        "en": {
+          "title": "Checking Motion and Feedback",
+          "description": "Use motion-specific guidance when transitions, timing, or reduced-motion behavior needs attention."
+        },
+        "zh": {
+          "title": "检查动效与反馈",
+          "description": "当过渡、时序或减少动态效果的支持有问题时，选用动效专门指引。"
+        }
+      }
+    ],
+    "faq": {
+      "en": [
+        {
+          "question": "Which instructions fit a new interface versus a review?",
+          "answer": "A new interface needs a visual direction, content hierarchy, and interaction decisions. An existing interface review starts from observed usability or implementation problems. Select design creation guidance for the former and review-oriented guidance for the latter."
+        },
+        {
+          "question": "Can a design Skill substitute for viewing the actual page?",
+          "answer": "No. Screenshots and a running interface expose spacing, overflow, contrast, and state changes that a code excerpt cannot establish. Inspect the page at relevant sizes and interact with the controls before declaring the design complete."
+        },
+        {
+          "question": "What should an accessibility review include beyond color contrast?",
+          "answer": "Check heading structure, meaningful labels, keyboard navigation, focus visibility, and whether interactions communicate their state. A visually polished screen may still be difficult to operate without a mouse or with assistive technology."
+        },
+        {
+          "question": "How do I decide whether an animation belongs in the interface?",
+          "answer": "Ask what change it explains or what feedback it supplies. Test the timing in context and respect reduced-motion preferences. Motion that slows a routine action or distracts from reading should be simplified or removed."
+        },
+        {
+          "question": "Should I create a new component for every page section?",
+          "answer": "Reuse an existing component when the structure and purpose match. Extract a shared component when several pages need the same pattern, but keep page-specific content configurable instead of forcing unlike sections into one rigid template."
+        },
+        {
+          "question": "How can cards stay consistent without repeating generic copy?",
+          "answer": "Give cards comparable information roles and sentence lengths: what the item does and who or what it helps. Consistent typography and spacing should support that editing; truncation alone cannot turn vague or uneven descriptions into useful content."
+        }
+      ],
+      "zh": [
+        {
+          "question": "新建界面与审查现有界面该选什么指引？",
+          "answer": "新界面需要视觉方向、内容层级和交互决定，现有界面审查则从已观察到的可用性或实现问题出发。前者选择创作类指引，后者选择审查类指引。"
+        },
+        {
+          "question": "设计 Skill 能替代查看真实页面吗？",
+          "answer": "不能。截图和运行中的界面才能确认间距、溢出、对比度与状态变化。应在相关尺寸下查看并操作控件，再判断设计是否完成。"
+        },
+        {
+          "question": "无障碍检查除了颜色对比还应看什么？",
+          "answer": "检查标题结构、有效标签、键盘导航、焦点可见性和交互状态反馈。视觉精致的页面，也可能难以通过键盘或辅助技术操作。"
+        },
+        {
+          "question": "怎样判断界面是否需要某个动画？",
+          "answer": "先问它解释了什么变化、提供了什么反馈，再在真实任务中检查时长，并尊重减少动态效果的偏好。拖慢操作或干扰阅读的动效应简化或移除。"
+        },
+        {
+          "question": "每个页面章节都应该新建组件吗？",
+          "answer": "结构和用途一致时优先复用现有组件，多页需要同一模式时再提取共享组件。页面内容应可配置，不要把不同用途的章节硬套进同一模板。"
+        },
+        {
+          "question": "卡片怎样保持一致，又不写成模板文案？",
+          "answer": "统一信息职责与句子长度，说明项目做什么、帮助谁或处理什么。排版和间距应配合内容编辑；只靠截断文字不能解决描述空泛或长短失衡。"
+        }
+      ]
+    }
   },
   "writing-marketing": {
-    "label": { "en": "Writing & Marketing", "zh": "写作与营销" },
-    "seo": { "en": { "title": "Agent Skills for Writing, SEO and Marketing | Floatboat", "description": "Find Agent Skills for editorial review, SEO diagnosis, copywriting, content strategy, and social previews, with original publisher links." }, "zh": { "title": "写作与营销 Agent Skills：SEO、文案与内容策略 | Floatboat", "description": "按编辑审查、SEO 诊断、营销文案、内容策略和社交预览图任务查找第三方 Agent Skills。" } },
-    "hero": { "en": { "title": "Agent Skills for Writing and Marketing", "description": "An editorial review, an SEO audit, and a new campaign page require different evidence. Pick the instruction that matches the job rather than treating every marketing task as copywriting." }, "zh": { "title": "面向写作与营销的 Agent Skills", "description": "编辑审查、SEO 诊断与新营销页面所需的证据不同。按具体工作选择 Skill，不要把每项营销任务都当作文案撰写。" } },
-    "intro": { "en": "These Skills organize marketing and editorial work; they cannot invent customer proof, verify a claim without sources, or replace measurement after publication.", "zh": "这些 Skill 可组织营销与编辑工作，但不能编造客户证明、在缺少来源时核实主张，或替代发布后的效果衡量。" },
-    "cta": { "en": { "eyebrow": "From Research to Draft", "title": "Keep the Evidence Behind the Copy", "description": "Bring sources, page drafts, and review notes into the same working context." }, "zh": { "eyebrow": "从调研到成稿", "title": "让文案始终有证据支撑", "description": "把来源、页面草稿和审查记录放在同一工作上下文里。" } },
-    "skills": ["vercel-labs/writing-guidelines", "coreyhaines31/seo-audit", "coreyhaines31/copywriting", "coreyhaines31/content-strategy", "morluto/generate-social-preview", "juliusbrussee/caveman"],
-    "decisions": [
-      { "en": { "title": "Traffic Is Weak or Declining", "description": "Start with SEO Audit to investigate discoverability and site issues before rewriting copy." }, "zh": { "title": "流量低或持续下降", "description": "先用 SEO Audit 调查可发现性与站点问题，再决定是否需要改写文案。" } },
-      { "en": { "title": "A Page Needs Clearer Messaging", "description": "Copywriting addresses the page's claim, structure, and reader action; it still needs real product evidence." }, "zh": { "title": "页面表达不够清楚", "description": "Copywriting 关注主张、结构和读者下一步，但仍需真实的产品证据。" } },
-      { "en": { "title": "The Editorial System Needs Direction", "description": "Content Strategy helps choose topics and priorities; Writing Guidelines helps review a particular draft." }, "zh": { "title": "内容体系缺少方向", "description": "Content Strategy 帮助确定主题和优先级；Writing Guidelines 适合审查具体稿件。" } }
+    "label": {
+      "en": "Writing & Marketing",
+      "zh": "写作与营销"
+    },
+    "seo": {
+      "en": {
+        "title": "Agent Skills for Writing, SEO and Marketing | Floatboat",
+        "description": "Find Agent Skills for editorial review, SEO diagnosis, copywriting, content strategy, and social previews, with original publisher links."
+      },
+      "zh": {
+        "title": "写作与营销 Agent Skills：SEO、文案与内容策略 | Floatboat",
+        "description": "按编辑审查、SEO 诊断、营销文案、内容策略和社交预览图任务查找第三方 Agent Skills。"
+      }
+    },
+    "hero": {
+      "en": {
+        "title": "Agent Skills for Writing and Marketing",
+        "description": "An editorial review, an SEO audit, and a new campaign page require different evidence. Pick the instruction that matches the job rather than treating every marketing task as copywriting."
+      },
+      "zh": {
+        "title": "面向写作与营销的 Agent Skills",
+        "description": "编辑审查、SEO 诊断与新营销页面所需的证据不同。按具体工作选择 Skill，不要把每项营销任务都当作文案撰写。"
+      }
+    },
+    "intro": {
+      "en": "These Skills organize marketing and editorial work; they cannot invent customer proof, verify a claim without sources, or replace measurement after publication.",
+      "zh": "这些 Skill 可组织营销与编辑工作，但不能编造客户证明、在缺少来源时核实主张，或替代发布后的效果衡量。"
+    },
+    "cta": {
+      "en": {
+        "eyebrow": "From Research to Draft",
+        "title": "Keep the Evidence Behind the Copy",
+        "description": "Bring sources, page drafts, and review notes into the same working context."
+      },
+      "zh": {
+        "eyebrow": "从调研到成稿",
+        "title": "让文案始终有证据支撑",
+        "description": "把来源、页面草稿和审查记录放在同一工作上下文里。"
+      }
+    },
+    "skills": [
+      "vercel-labs/writing-guidelines",
+      "coreyhaines31/seo-audit",
+      "coreyhaines31/copywriting",
+      "coreyhaines31/content-strategy",
+      "morluto/generate-social-preview",
+      "juliusbrussee/caveman"
     ],
-    "faq": { "en": [ { "question": "Is SEO Audit a writing Skill?", "answer": "No. It investigates search and site problems. Copywriting and Writing Guidelines address different stages of the content work." }, { "question": "Can a Skill provide customer quotes or performance figures?", "answer": "No. Use verified sources and actual measurements; never fabricate proof to fill a page." }, { "question": "Is Content Strategy the same as writing one article?", "answer": "No. It helps select themes and priorities. An individual article still needs research, drafting, fact-checking, and editing." }, { "question": "Do I need a separate tool for social previews?", "answer": "The original Generate Social Preview Skill may depend on image-generation capabilities in the host environment. Read its source before use." } ], "zh": [ { "question": "SEO Audit 是写作 Skill 吗？", "answer": "不是。它调查搜索与站点问题；Copywriting 和 Writing Guidelines 对应内容工作的不同阶段。" }, { "question": "Skill 能提供客户评价或效果数据吗？", "answer": "不能。应使用经过核实的来源与实际数据，不能为了填充页面而编造证明。" }, { "question": "Content Strategy 等于写一篇文章吗？", "answer": "不等于。它帮助选择主题与优先级；单篇文章仍需调研、起草、事实核查和编辑。" }, { "question": "做社交预览图需要额外工具吗？", "answer": "原始 Generate Social Preview Skill 可能依赖宿主环境的生图能力，使用前应阅读来源文件。" } ] }
+    "decisions": [
+      {
+        "en": {
+          "title": "Traffic Is Weak or Declining",
+          "description": "Start with SEO Audit to investigate discoverability and site issues before rewriting copy."
+        },
+        "zh": {
+          "title": "流量低或持续下降",
+          "description": "先用 SEO Audit 调查可发现性与站点问题，再决定是否需要改写文案。"
+        }
+      },
+      {
+        "en": {
+          "title": "A Page Needs Clearer Messaging",
+          "description": "Copywriting addresses the page's claim, structure, and reader action; it still needs real product evidence."
+        },
+        "zh": {
+          "title": "页面表达不够清楚",
+          "description": "Copywriting 关注主张、结构和读者下一步，但仍需真实的产品证据。"
+        }
+      },
+      {
+        "en": {
+          "title": "The Editorial System Needs Direction",
+          "description": "Content Strategy helps choose topics and priorities; Writing Guidelines helps review a particular draft."
+        },
+        "zh": {
+          "title": "内容体系缺少方向",
+          "description": "Content Strategy 帮助确定主题和优先级；Writing Guidelines 适合审查具体稿件。"
+        }
+      }
+    ],
+    "faq": {
+      "en": [
+        {
+          "question": "Should a weak-performing page be rewritten immediately?",
+          "answer": "First identify the failure: discoverability, audience fit, unclear messaging, or a broken path to action. A copy rewrite addresses only some of those causes. Use search and site evidence to decide which intervention is justified."
+        },
+        {
+          "question": "How is content strategy different from drafting an article?",
+          "answer": "Content strategy chooses which audience problems and topics deserve coverage and how pages relate. Drafting turns one defined brief into an article. A clear portfolio decision does not remove the need for research, evidence, and editing on each page."
+        },
+        {
+          "question": "What evidence belongs in a marketing brief?",
+          "answer": "Include the actual offer, audience, customer problem, product limitations, and verified proof behind the claim. Distinguish observations from assumptions so a writing agent does not invent testimonials, performance figures, or support promises."
+        },
+        {
+          "question": "How can I target a keyword without making the page repetitive?",
+          "answer": "Use the query to understand the reader’s task, then answer the distinct questions needed to complete it. Put the main concept in the title and relevant headings naturally; repeating the same phrase does not substitute for useful coverage."
+        },
+        {
+          "question": "What should a writing-guideline review change?",
+          "answer": "It should identify concrete problems in clarity, structure, terminology, or tone, tied to the actual text. Preserve accurate meaning and the author’s intent instead of flattening every page into the same polished but interchangeable voice."
+        },
+        {
+          "question": "How should I evaluate a content change after publication?",
+          "answer": "Define the intended result and a comparison window before editing. Match the measure to the change, such as qualified visits, task completion, or conversion, and account for other changes before attributing an outcome to the new copy."
+        }
+      ],
+      "zh": [
+        {
+          "question": "页面表现不好就应立即重写吗？",
+          "answer": "先区分问题来自可发现性、受众匹配、表达不清，还是行动路径故障。改文案只能解决部分原因，应结合搜索与站点证据决定改什么。"
+        },
+        {
+          "question": "内容策略与写一篇文章有什么不同？",
+          "answer": "内容策略决定覆盖哪些受众问题、主题和页面关系，起草则把一份明确 Brief 变成文章。主题规划清楚，并不代表单篇内容可以省略研究、证据和编辑。"
+        },
+        {
+          "question": "营销 Brief 应提供哪些证据？",
+          "answer": "提供真实提案、受众、客户问题、产品限制与主张依据，并区分观察事实和假设，避免写作 Agent 编造客户评价、效果数据或支持承诺。"
+        },
+        {
+          "question": "怎样围绕关键词写内容，又不堆砌重复？",
+          "answer": "用查询词理解读者任务，再回答完成任务所需的不同问题。把核心概念自然放进标题和相关章节，不能用反复出现同一短语代替信息覆盖。"
+        },
+        {
+          "question": "写作规范审查应该改变什么？",
+          "answer": "应针对真实文本指出清晰度、结构、术语和语气问题，保留准确含义与作者意图，而不是把所有页面改成同一种流畅却可互换的声音。"
+        },
+        {
+          "question": "内容修改发布后怎样评估效果？",
+          "answer": "编辑前先定义期望结果和比较时间范围，再选择匹配指标，例如有效访问、任务完成或转化。归因时还要考虑同期其他变动，不能直接把结果归功于新文案。"
+        }
+      ]
+    }
   },
   "deployment-browser": {
-    "label": { "en": "Deployment & Browser", "zh": "部署与浏览器" },
-    "seo": { "en": { "title": "Agent Skills for Deployment and Browser Work | Floatboat", "description": "Compare Agent Skills for Vercel deployment, token-safe CLI work, optimization audits, browser automation, and webapp testing." }, "zh": { "title": "部署与浏览器 Agent Skills：Vercel、自动化与测试 | Floatboat", "description": "比较第三方 Agent Skills 在 Vercel 部署、令牌安全、优化审查、浏览器自动化与 Web 应用测试中的用途。" } },
-    "hero": { "en": { "title": "Agent Skills for Deployment and Browser Work", "description": "Shipping and checking a web app involves different permissions. Separate preview deployment, token handling, optimization audits, and browser-driven verification before choosing a Skill." }, "zh": { "title": "面向部署与浏览器任务的 Agent Skills", "description": "发布与检查 Web 应用涉及不同权限。先区分预览部署、令牌处理、优化审查和浏览器验证，再选择 Skill。" } },
-    "intro": { "en": "These instructions do not grant Vercel access, supply tokens, or install a browser CLI. Confirm the project, account, and approval boundary before any operation that changes remote state.", "zh": "这些指令不会提供 Vercel 访问权、令牌，也不会安装浏览器 CLI。任何会改变远端状态的操作都应先确认项目、账号和审批边界。" },
-    "cta": { "en": { "eyebrow": "From Preview to Check", "title": "Keep Deployments and Checks Traceable", "description": "Review the target, permissions, browser evidence, and next action in one workspace." }, "zh": { "eyebrow": "从预览到验证", "title": "让部署与检查留有记录", "description": "在同一工作空间核对目标、权限、浏览器证据和下一步操作。" } },
-    "skills": ["vercel-labs/deploy-to-vercel", "vercel-labs/vercel-cli-with-tokens", "vercel-labs/vercel-optimize", "vercel-labs/agent-browser", "anthropics/webapp-testing"],
-    "decisions": [
-      { "en": { "title": "A Preview Needs Deployment", "description": "Deploy to Vercel is about checking project linkage and creating a reviewable deployment." }, "zh": { "title": "需要部署预览版本", "description": "Deploy to Vercel 聚焦项目关联检查与可供审阅的部署版本。" } },
-      { "en": { "title": "A Token Is Involved", "description": "CLI with Tokens focuses on authentication boundaries and avoiding accidental exposure of secrets." }, "zh": { "title": "操作涉及令牌", "description": "CLI with Tokens 聚焦认证边界，并避免意外暴露密钥。" } },
-      { "en": { "title": "The Running Site Needs Checking", "description": "Use browser or webapp testing guidance to inspect actual behavior; use Optimize for an evidence-led performance and cost audit." }, "zh": { "title": "需要检查运行中的网站", "description": "浏览器或 Webapp Testing 指引用于检查实际行为；Optimize 适合基于证据审查性能和成本。" } }
+    "label": {
+      "en": "Deployment & Browser",
+      "zh": "部署与浏览器"
+    },
+    "seo": {
+      "en": {
+        "title": "Agent Skills for Deployment and Browser Work | Floatboat",
+        "description": "Compare Agent Skills for Vercel deployment, token-safe CLI work, optimization audits, browser automation, and webapp testing."
+      },
+      "zh": {
+        "title": "部署与浏览器 Agent Skills：Vercel、自动化与测试 | Floatboat",
+        "description": "比较第三方 Agent Skills 在 Vercel 部署、令牌安全、优化审查、浏览器自动化与 Web 应用测试中的用途。"
+      }
+    },
+    "hero": {
+      "en": {
+        "title": "Agent Skills for Deployment and Browser Work",
+        "description": "Shipping and checking a web app involves different permissions. Separate preview deployment, token handling, optimization audits, and browser-driven verification before choosing a Skill."
+      },
+      "zh": {
+        "title": "面向部署与浏览器任务的 Agent Skills",
+        "description": "发布与检查 Web 应用涉及不同权限。先区分预览部署、令牌处理、优化审查和浏览器验证，再选择 Skill。"
+      }
+    },
+    "intro": {
+      "en": "These instructions do not grant Vercel access, supply tokens, or install a browser CLI. Confirm the project, account, and approval boundary before any operation that changes remote state.",
+      "zh": "这些指令不会提供 Vercel 访问权、令牌，也不会安装浏览器 CLI。任何会改变远端状态的操作都应先确认项目、账号和审批边界。"
+    },
+    "cta": {
+      "en": {
+        "eyebrow": "From Preview to Check",
+        "title": "Keep Deployments and Checks Traceable",
+        "description": "Review the target, permissions, browser evidence, and next action in one workspace."
+      },
+      "zh": {
+        "eyebrow": "从预览到验证",
+        "title": "让部署与检查留有记录",
+        "description": "在同一工作空间核对目标、权限、浏览器证据和下一步操作。"
+      }
+    },
+    "skills": [
+      "vercel-labs/deploy-to-vercel",
+      "vercel-labs/vercel-cli-with-tokens",
+      "vercel-labs/vercel-optimize",
+      "vercel-labs/agent-browser",
+      "anthropics/webapp-testing"
     ],
-    "faq": { "en": [ { "question": "Does a deployment Skill deploy without approval?", "answer": "No. It must operate within the user's account permissions and approval process. Read the original source for its exact workflow." }, { "question": "Is agent-browser only a Skill?", "answer": "No. The repository's primary product is a browser automation CLI; its companion Skill is an instruction entry point." }, { "question": "Do token instructions include a usable API key?", "answer": "No. They describe safer handling of credentials the user has already approved; they do not supply credentials." }, { "question": "What is the difference between browser automation and webapp testing?", "answer": "Browser automation controls a browser for a task. Webapp testing applies it to inspecting and checking an application's behavior." } ], "zh": [ { "question": "部署 Skill 会无需批准就直接部署吗？", "answer": "不会。它必须遵守用户账号权限和审批流程；具体步骤应以原始来源为准。" }, { "question": "agent-browser 只是一个 Skill 吗？", "answer": "不是。该仓库的主要产品是浏览器自动化 CLI；配套 Skill 是使用它的指引入口。" }, { "question": "令牌指引会提供可用 API Key 吗？", "answer": "不会。它说明如何更安全地处理用户已批准使用的凭据，不提供凭据。" }, { "question": "浏览器自动化和 Webapp Testing 有何区别？", "answer": "浏览器自动化负责操控浏览器执行任务；Webapp Testing 将其用于检查应用的实际行为。" } ] }
+    "decisions": [
+      {
+        "en": {
+          "title": "A Preview Needs Deployment",
+          "description": "Deploy to Vercel is about checking project linkage and creating a reviewable deployment."
+        },
+        "zh": {
+          "title": "需要部署预览版本",
+          "description": "Deploy to Vercel 聚焦项目关联检查与可供审阅的部署版本。"
+        }
+      },
+      {
+        "en": {
+          "title": "A Token Is Involved",
+          "description": "CLI with Tokens focuses on authentication boundaries and avoiding accidental exposure of secrets."
+        },
+        "zh": {
+          "title": "操作涉及令牌",
+          "description": "CLI with Tokens 聚焦认证边界，并避免意外暴露密钥。"
+        }
+      },
+      {
+        "en": {
+          "title": "The Running Site Needs Checking",
+          "description": "Use browser or webapp testing guidance to inspect actual behavior; use Optimize for an evidence-led performance and cost audit."
+        },
+        "zh": {
+          "title": "需要检查运行中的网站",
+          "description": "浏览器或 Webapp Testing 指引用于检查实际行为；Optimize 适合基于证据审查性能和成本。"
+        }
+      }
+    ],
+    "faq": {
+      "en": [
+        {
+          "question": "How do deployment instructions differ from browser automation?",
+          "answer": "Deployment changes where or how an application is served. Browser automation operates a browser to inspect or carry out a task. They may be used together, but neither one proves that a deployed application actually works for the user."
+        },
+        {
+          "question": "What should I confirm before deploying to Vercel?",
+          "answer": "Confirm the repository, project, account or team, target environment, and the approval boundary. Review the relevant build and environment settings so a preview operation does not accidentally become a production change."
+        },
+        {
+          "question": "Does a successful HTTP response prove a page is usable?",
+          "answer": "No. A server can return 200 while a client-side request fails and the page shows an error or no content. Inspect the rendered page, expected text, and key interaction rather than treating the response code as a content check."
+        },
+        {
+          "question": "Is agent-browser available just because its Skill is installed?",
+          "answer": "No. The CLI and its runtime prerequisites are separate from the instruction file. Check the tool’s installation and supported commands, then use guidance that matches that version."
+        },
+        {
+          "question": "How should tokens be handled in a CLI workflow?",
+          "answer": "Use the approved credential source and the narrow permissions required for the task. Avoid placing secrets in command arguments, shared logs, screenshots, or published files, and confirm which project or organization a command will affect."
+        },
+        {
+          "question": "What should I check after a deployment finishes?",
+          "answer": "Open the public target and verify representative routes, assets, expected content, and a meaningful user action. Record the actual deployment version; a successful build or preview alone does not establish production state."
+        }
+      ],
+      "zh": [
+        {
+          "question": "部署指引与浏览器自动化有何不同？",
+          "answer": "部署改变应用的服务位置或方式，浏览器自动化则操作浏览器执行检查或任务。两者可以组合，但单独完成任何一个，都不能证明应用已对用户正常工作。"
+        },
+        {
+          "question": "部署到 Vercel 前应确认哪些信息？",
+          "answer": "确认仓库、项目、账号或团队、目标环境与批准范围，并检查构建和环境配置，避免本想预览却意外修改生产环境。"
+        },
+        {
+          "question": "HTTP 请求成功就能证明页面可用吗？",
+          "answer": "不能。服务器可能返回 200，但客户端请求失败，页面仍显示错误或没有内容。应检查实际渲染、预期正文与关键交互，不能把响应码当作内容验收。"
+        },
+        {
+          "question": "装了 agent-browser 的 Skill 就能使用浏览器工具吗？",
+          "answer": "不能。CLI 及其运行依赖与指令文件分开。应检查工具安装和支持命令，再读取匹配该版本的使用指引。"
+        },
+        {
+          "question": "CLI 工作流应怎样处理令牌？",
+          "answer": "使用经过批准的凭据来源与任务所需的权限范围，不把密钥放入命令参数、共享日志、截图或公开文件，并确认命令会影响哪个项目和组织。"
+        },
+        {
+          "question": "部署完成后应该检查什么？",
+          "answer": "打开公开目标，检查代表路由、资源、预期内容及关键用户操作，并记录实际部署版本。构建成功或预览正常，不能单独证明生产状态。"
+        }
+      ]
+    }
+  },
+  "documents": {
+    "label": {
+      "en": "Documents & Spreadsheets",
+      "zh": "文档与电子表格"
+    },
+    "seo": {
+      "en": {
+        "title": "Agent Skills for PDF, Word, PowerPoint and Excel | Floatboat",
+        "description": "Explore Anthropic document Skills for PDF, DOCX, PPTX, and XLSX tasks, with guides to inputs, editing workflows, file checks, and official installation."
+      },
+      "zh": {
+        "title": "文档 Agent Skills：PDF、Word、PowerPoint 与 Excel | Floatboat",
+        "description": "按 PDF、DOCX、PPTX 和 XLSX 文件任务选择 Anthropic 文档 Skills，了解输入资料、编辑流程、文件核对与官方安装方式。"
+      }
+    },
+    "hero": {
+      "en": {
+        "title": "Agent Skills for Document Work",
+        "description": "Choose a guide for the file you need to read, create, or edit. Compare PDF, Word, PowerPoint, and spreadsheet tasks, provide the source material and output requirements, and verify the resulting file in the format your recipient will use."
+      },
+      "zh": {
+        "title": "面向文档工作的 Agent Skills",
+        "description": "按需要读取、创建或编辑的文件选择指南。区分 PDF、Word、PowerPoint 与电子表格任务，提供来源资料和输出要求，再使用接收者实际采用的格式检查内容、版式与计算结果。"
+      }
+    },
+    "intro": {
+      "en": "Document tasks differ in what must remain editable and how a result is checked. A PDF page, a Word document, a slide deck, and a workbook need different workflows. Start from the required deliverable, preserve the original input, and follow the selected Skill’s source and tool requirements.",
+      "zh": "文档任务的差别在于哪些内容需要继续编辑，以及如何检查结果。PDF 页面、Word 文档、幻灯片和工作簿需要不同流程。应从交付物出发，保留原始输入，并核对所选 Skill 的来源与工具要求。"
+    },
+    "cta": {
+      "en": {
+        "eyebrow": "From Source to File",
+        "title": "Keep Sources and Deliverables Together",
+        "description": "Keep the original material, file requirements, revisions, and review notes available while preparing the final document."
+      },
+      "zh": {
+        "eyebrow": "从资料到文件",
+        "title": "让来源与交付物保持关联",
+        "description": "准备最终文档时，让原始资料、文件要求、修改与审阅记录留在同一工作上下文中。"
+      }
+    },
+    "skills": [
+      "anthropics/pdf",
+      "anthropics/docx",
+      "anthropics/pptx",
+      "anthropics/xlsx"
+    ],
+    "decisions": [
+      {
+        "en": {
+          "title": "A Document Needs Reading or Editing",
+          "description": "Use PDF for page-based operations or DOCX for editable Word structure. Identify whether the task changes content, layout, or only the file organization."
+        },
+        "zh": {
+          "title": "需要读取或编辑文档",
+          "description": "分页操作选择 PDF，可编辑 Word 结构选择 DOCX。先明确任务改变的是内容、版式，还是仅整理文件。"
+        }
+      },
+      {
+        "en": {
+          "title": "A Presentation Needs a Clear Story",
+          "description": "Use PPTX guidance when the deliverable is an editable slide deck. Provide the audience, purpose, source material, and any template that must be followed."
+        },
+        "zh": {
+          "title": "演示文稿需要清楚叙事",
+          "description": "交付物是可编辑幻灯片时选择 PPTX，提供读者、用途、资料和必须遵循的模板。"
+        }
+      },
+      {
+        "en": {
+          "title": "A Workbook Needs Reliable Calculations",
+          "description": "Use XLSX guidance for structured data and formulas. Separate inputs from calculations and verify recalculated outputs before sharing the workbook."
+        },
+        "zh": {
+          "title": "工作簿需要可靠计算",
+          "description": "结构化数据与公式任务选择 XLSX。区分输入与计算，分享前核对重新计算后的输出。"
+        }
+      }
+    ],
+    "faq": {
+      "en": [
+        {
+          "question": "How should I choose between PDF and DOCX guidance?",
+          "answer": "Choose PDF for an existing page-based document or a fixed-format deliverable, including extraction, page organization, and PDF forms. Choose DOCX when the result needs editable Word structure such as headings, tables, and tracked revisions."
+        },
+        {
+          "question": "What should I prepare for a PowerPoint task?",
+          "answer": "Provide the audience, presentation purpose, source material, and any required template. State whether the task creates a new deck or edits an existing one, and identify content and layout that must be preserved."
+        },
+        {
+          "question": "How should an agent preserve a spreadsheet’s calculations?",
+          "answer": "Identify source data, editable input cells, formulas, and the outputs that must remain consistent. Review how calculations reference those inputs, recalculate the workbook, and inspect errors before accepting the edited file."
+        },
+        {
+          "question": "Can scanned PDFs be handled like selectable text?",
+          "answer": "Scanned pages may require optical character recognition before text can be extracted. Inspect representative pages first, and compare recognized names, table labels, and numbers with the original instead of assuming extraction is exact."
+        },
+        {
+          "question": "Does installing a document Skill prepare all file tools?",
+          "answer": "A Skill provides instructions and references. The selected workflow still needs its document libraries, converters, or rendering tools in the host environment; check the individual guide before starting a file conversion or edit."
+        },
+        {
+          "question": "Are these Anthropic document Skills open source?",
+          "answer": "Anthropic describes its document Skills as source-available under their individual licenses. Read the original repository’s terms and official setup instructions; public access to a source file does not make every package open source."
+        },
+        {
+          "question": "What should I verify before sharing a generated file?",
+          "answer": "Open the output in an appropriate viewer, compare its content with the sources, and inspect page or slide rendering where layout matters. For spreadsheets, check formulas and recalculated values as well as formatting."
+        }
+      ],
+      "zh": [
+        {
+          "question": "PDF 与 DOCX 指引应该怎样选择？",
+          "answer": "处理已有分页文档或固定版式交付物时，选择 PDF，例如内容提取、页面整理和 PDF 表单；需要可编辑 Word 结构时选择 DOCX，例如标题、表格与修订记录。"
+        },
+        {
+          "question": "处理 PowerPoint 前需要准备什么？",
+          "answer": "提供目标读者、演示用途、来源资料和需要遵循的模板。说明是创建新文稿还是编辑现有文件，并标明必须保留的内容与版式。"
+        },
+        {
+          "question": "Agent 怎样保留电子表格中的计算？",
+          "answer": "明确来源数据、可编辑输入、公式与需要保持一致的输出。检查计算如何引用输入，重新计算工作簿，并在接受改动前核对错误。"
+        },
+        {
+          "question": "扫描 PDF 可以按可选择文字直接处理吗？",
+          "answer": "扫描页可能需要先进行 OCR 才能提取文字。应先检查代表页面，再将识别出的名称、表格标签和数值与原件比较，不能假定提取完全准确。"
+        },
+        {
+          "question": "安装文档 Skill 会自动准备全部文件工具吗？",
+          "answer": "Skill 提供指令与参考资料，所选流程仍需要宿主环境中的文档库、转换器或渲染工具。开始转换或编辑前，应阅读具体指南并核对所需工具。"
+        },
+        {
+          "question": "这些 Anthropic 文档 Skills 是开源的吗？",
+          "answer": "Anthropic 将这些文档 Skills 以源码可用形式提供，并适用各自许可。应阅读原始仓库条款与官方设置方式，不能因文件公开可见就把所有包都称为开源。"
+        },
+        {
+          "question": "分享生成文件前应验证什么？",
+          "answer": "使用合适查看器打开输出，将内容与来源比较；涉及版式时检查页面或幻灯片渲染。电子表格还应核对公式与重新计算后的数值，而不只看格式。"
+        }
+      ]
+    }
+  },
+  "video-production": {
+    "label": {
+      "en": "Video Production",
+      "zh": "视频制作"
+    },
+    "seo": {
+      "en": {
+        "title": "Agent Skills for Editable Video Production | Floatboat",
+        "description": "Explore HyperFrames Skills for editable HTML video, core-set installation, CLI operations, scene review, preview, and verified video export."
+      },
+      "zh": {
+        "title": "视频制作 Agent Skills：HyperFrames 与可编辑视频 | Floatboat",
+        "description": "了解 HyperFrames 的可编辑 HTML 视频工作流，查看核心 Skills 安装、CLI 操作、场景复核、预览与视频导出指南。"
+      }
+    },
+    "hero": {
+      "en": {
+        "title": "Agent Skills for Video Production",
+        "description": "Turn a clear video brief into an editable project. Explore the HyperFrames workflow for HTML scenes, assets, command-line checks, and previews, then review the actual result before producing the requested export. The guide keeps composition and tool operations in one place."
+      },
+      "zh": {
+        "title": "面向视频制作的 Agent Skills",
+        "description": "将明确的视频需求转成可编辑项目。探索 HyperFrames 的 HTML 场景、素材、命令行检查与预览流程，查看实际结果后再生成所需导出文件。指南将合成与工具操作放在一起，便于完整理解。"
+      }
+    },
+    "intro": {
+      "en": "Video work connects creative decisions to a tool environment. Start with the subject and intended output, install the related core instructions together, and keep scene and CLI guidance connected. Review visible frames and the exported file so that the result is checked as a video, not only as source code.",
+      "zh": "视频制作需要将创作决定连接到工具环境。从题材与预期输出出发，一起准备配套核心指令，并保留场景和 CLI 流程的关联。应查看真实画面与导出文件，把结果作为视频检查，而不只审查源码。"
+    },
+    "cta": {
+      "en": {
+        "eyebrow": "From Brief to Video",
+        "title": "Keep the Video Brief and Review Together",
+        "description": "Work with the message, source assets, editable scenes, and review notes while preparing the final video."
+      },
+      "zh": {
+        "eyebrow": "从需求到视频",
+        "title": "让视频需求与复核保持关联",
+        "description": "准备最终视频时，让信息目标、素材、可编辑场景与审阅记录留在同一工作上下文中。"
+      }
+    },
+    "skills": [
+      "heygen-com/hyperframes"
+    ],
+    "decisions": [
+      {
+        "en": {
+          "title": "A New Video Needs Structure",
+          "description": "Use the main HyperFrames guide to connect the brief, editable scenes, assets, and core Skill setup before building the composition."
+        },
+        "zh": {
+          "title": "新视频需要明确结构",
+          "description": "通过 HyperFrames 主指南连接需求、可编辑场景、素材与核心 Skill 配置，再开始搭建合成。"
+        }
+      },
+      {
+        "en": {
+          "title": "An Existing Project Needs Checks",
+          "description": "Use the CLI section of the same guide to inspect the project, run relevant checks, and review snapshots and previews after changes."
+        },
+        "zh": {
+          "title": "已有项目需要检查",
+          "description": "通过同一指南的 CLI 章节查看项目、运行相关检查，并在修改后复核快照和预览。"
+        }
+      },
+      {
+        "en": {
+          "title": "A Reviewed Preview Needs Delivery",
+          "description": "Confirm the requested export, render the file, and inspect duration, frames, and audio while preserving the editable project for later changes."
+        },
+        "zh": {
+          "title": "已复核预览需要交付",
+          "description": "确认所需导出格式，渲染并检查时长、画面和音频，同时保留可编辑项目以便继续修改。"
+        }
+      }
+    ],
+    "faq": {
+      "en": [
+        {
+          "question": "What does the HyperFrames guide cover?",
+          "answer": "It brings the composition Skill and its CLI workflow into one guide: prepare editable HTML scenes, use the relevant media and registry instructions, check frames and a preview, and render when a video file is requested."
+        },
+        {
+          "question": "Which core Skills belong together?",
+          "answer": "The upstream core set contains hyperframes, hyperframes-cli, hyperframes-registry, and media-use. The main entry connects composition decisions to those operating instructions; follow the guide’s complete core-set setup instead of treating a single entry as the whole workflow."
+        },
+        {
+          "question": "Does installing the Skills also install the video tool?",
+          "answer": "The instructions and the executable tool have different roles. Prepare the HyperFrames CLI and local rendering dependencies using the project’s setup guide; a hosted rendering or media service may require a separate account or configuration."
+        },
+        {
+          "question": "What information makes a useful video brief?",
+          "answer": "Provide the subject, audience, required message, available assets, duration, and output format. State any fixed aspect ratio or brand rules, and distinguish a preview for discussion from a request for an exported file."
+        },
+        {
+          "question": "When should the workflow render a final video?",
+          "answer": "Review the actual scenes and preview before rendering unless the request already calls for a file without intermediate stops. Make the intended deliverable explicit, then check the exported file rather than assuming a preview is the final result."
+        },
+        {
+          "question": "How should I check a rendered video?",
+          "answer": "Open the exported file and inspect representative frames, transitions, text, audio, and duration. Compare them with the brief and source assets; a successful process or reachable preview URL does not establish that the content is correct."
+        },
+        {
+          "question": "Does the category include every video-generation service?",
+          "answer": "No. It currently presents the selected HyperFrames workflow with a local guide. Optional media services have their own capabilities and requirements; use the original project documentation to decide whether a particular service fits the brief."
+        }
+      ],
+      "zh": [
+        {
+          "question": "HyperFrames 指南覆盖什么？",
+          "answer": "它将合成 Skill 与 CLI 流程放进同一指南，涵盖可编辑 HTML 场景、相关媒体与注册表指引、画面和预览检查，以及需要视频文件时的渲染。"
+        },
+        {
+          "question": "哪些核心 Skills 需要一起使用？",
+          "answer": "上游核心集合包含 hyperframes、hyperframes-cli、hyperframes-registry 与 media-use。主入口连接合成与操作指引，应按指南安装完整核心集合，不把单个入口当作整个流程。"
+        },
+        {
+          "question": "安装这些 Skills 会同时装好视频工具吗？",
+          "answer": "指令与实际执行的工具职责不同。应按项目设置说明准备 HyperFrames CLI 与本地渲染依赖；托管渲染或媒体服务还可能需要独立账户和配置。"
+        },
+        {
+          "question": "一份有用的视频需求应包含什么？",
+          "answer": "提供题材、读者、需要传达的信息、现有素材、时长和输出格式。注明固定画幅或品牌要求，并区分用于讨论的预览与要求导出的文件。"
+        },
+        {
+          "question": "什么时候应该渲染最终视频？",
+          "answer": "通常应先检查真实场景和预览，再进行渲染；如果需求已经明确要求文件并跳过中间确认，则按该范围执行。应明确交付物，并检查导出文件，不能把预览当作最终结果。"
+        },
+        {
+          "question": "应该怎样检查已渲染的视频？",
+          "answer": "打开导出文件，检查代表画面、过渡、文字、音频和时长，并与需求及来源素材比较。进程成功或预览地址可访问，不代表内容已经正确。"
+        },
+        {
+          "question": "这个分类收录了所有视频生成服务吗？",
+          "answer": "没有。这里当前展示的是已有本站指南的 HyperFrames 工作流。可选媒体服务各有能力与使用要求，应通过原始项目文档判断是否适合具体需求。"
+        }
+      ]
+    }
   }
 }

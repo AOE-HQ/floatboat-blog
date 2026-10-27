@@ -12,6 +12,8 @@
 - `/ai-scheduling-assistant`、`/zh/ai-scheduling-assistant`
 - `/ai-file-organizer`、`/zh/ai-file-organizer`
 - `/floatim`、`/zh/floatim`
+- `/combostore`、`/zh/combostore` 首页（Exact）
+- `/combostore/categories` 与已审核发布者路径及中文对应（Prefix），具体清单见 [Combo Store routing handoff](COMBOSTORE-ROUTING.md)；不将整个 `/combostore/*` 转给本服务
 
 不要把 `/_next/image`、`/brand/*` 或 `/api/analytics/events` 整体转给本服务。博客静态资源应位于 `/blog/...`，例如：
 

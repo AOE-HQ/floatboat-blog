@@ -1,0 +1,1764 @@
+[
+  {
+    "slug": "frontend-design",
+    "authorHandle": "anthropics",
+    "name": "Frontend Design",
+    "publisher": "Anthropic",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+    "repositoryUrl": "https://github.com/anthropics/skills",
+    "category": {
+      "en": "Design · Frontend interfaces",
+      "zh": "设计 · 前端界面"
+    },
+    "seo": {
+      "title": {
+        "en": "Frontend Design by Anthropic | Installation & Guide",
+        "zh": "Frontend Design by Anthropic：安装与使用指南"
+      },
+      "description": {
+        "en": "Create or reshape frontend interfaces with deliberate visual choices tied to the product brief. Explore installation options, use cases, and a practical guide.",
+        "zh": "围绕产品需求确定视觉方向，构建或重做有明确层级与表达的前端界面。了解安装方式、适用场景、操作步骤与使用要求。"
+      },
+      "keywords": {
+        "en": [
+          "Frontend Design by Anthropic",
+          "frontend-design"
+        ],
+        "zh": [
+          "Frontend Design by Anthropic",
+          "frontend-design"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Frontend Design by Anthropic",
+        "zh": "Frontend Design by Anthropic"
+      },
+      "description": {
+        "en": "Use Frontend Design by Anthropic to turn a specific product brief into an intentional interface. Explore visual direction, typography, color, layout, and interaction choices, then review the rendered result against the audience, existing identity, and practical needs of the page you are building.",
+        "zh": "使用 Anthropic 的 Frontend Design，将具体产品需求转成有明确方向的前端界面。结合目标读者、品牌与页面用途，组织字体、配色、布局和交互，再对照真实内容与渲染结果核对设计，减少套用相同视觉方案的情况。"
+      }
+    },
+    "summary": {
+      "en": "Create or reshape frontend interfaces with deliberate visual choices tied to the product brief.",
+      "zh": "围绕产品需求确定视觉方向，构建或重做有明确层级与表达的前端界面。"
+    },
+    "cardDescription": {
+      "en": "Create or reshape frontend interfaces with deliberate visual choices tied to the product brief.",
+      "zh": "围绕产品需求确定视觉方向，构建或重做有明确层级与表达的前端界面。"
+    },
+    "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install example-skills@anthropic-agent-skills",
+    "pageCopy": {
+      "kind": {
+        "en": "Visual design Skill",
+        "zh": "视觉设计 Skill"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Frontend Design",
+        "paragraphs": [
+          "Frontend Design is Anthropic’s Skill for shaping new interfaces or reworking an existing visual direction. It asks an agent to ground design choices in the subject, audience, and purpose of a brief, then make a coherent plan before implementation. The guidance connects typography, color, spacing, motion, and content to that direction, with attention to responsive behavior and accessibility. It is useful for a landing page, dashboard, or product screen that needs an identifiable visual approach. Provide real content and any existing design constraints so the agent can develop the interface and critique its rendered result. The Skill supplies design instructions rather than a separate website builder."
+        ]
+      },
+      "zh": {
+        "title": "关于 Frontend Design",
+        "paragraphs": [
+          "Frontend Design 是 Anthropic 用于构建新界面或重新确定视觉方向的 Skill。它引导 Agent 先理解产品主题、目标读者和页面用途，再组织字体、色彩、空间、动效与内容，形成连贯方案后实施。规则也强调响应式、可访问性以及对实际渲染结果的自查。它适合需要明确视觉表达的落地页、仪表盘和产品界面。使用时应提供真实文案、已有设计要求与需要保留的功能，让 Agent 围绕具体场景设计；Skill 提供的是操作指引，实际页面仍由项目的技术栈实现。"
+        ]
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Frontend Design",
+        "zh": "Frontend Design 的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore interface work where the design needs to reflect a specific subject and audience. Build a product landing page, give a dashboard a clearer hierarchy, or replace an unsuitable visual direction while keeping real content, task requirements, and responsive behavior central to the result.",
+        "zh": "探索需要体现产品主题和用户需求的界面任务，例如构建产品落地页、梳理仪表盘层级，或为已有页面重新确定视觉方向。结合真实内容、功能约束和响应式要求，判断哪些设计选择能够帮助用户理解与操作。"
+      },
+      "how": {
+        "en": "How to Use Frontend Design",
+        "zh": "How to 使用 Frontend Design"
+      },
+      "howDescription": {
+        "en": "Start with the page’s audience, primary task, content, and any pinned visual requirements. Ask the agent to propose a concise design direction before building, then inspect the rendered interface and refine hierarchy, readability, interaction, and behavior at the sizes the page will support.",
+        "zh": "先说明目标读者、主要任务、真实内容和已确定的视觉要求。让 Agent 提出简洁的设计方向，再进入实现；完成后检查渲染页面，在需要支持的尺寸下核对层级、可读性、交互与响应式表现，并修正具体问题。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "A product landing page",
+          "zh": "产品落地页"
+        },
+        "body": {
+          "en": "Use the product’s actual subject and audience to choose a coherent visual direction, then organize copy and interaction around the visitor’s decision.",
+          "zh": "结合产品主题与目标用户确定视觉方向，再围绕访客需要作出的决定组织文案和交互。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "A dashboard needs clearer hierarchy",
+          "zh": "仪表盘层级不清"
+        },
+        "body": {
+          "en": "Prioritize the information and actions people use most, with typography and spacing that make the working screen easier to scan.",
+          "zh": "优先呈现用户最常查看的信息与操作，通过字体和间距让工作界面更容易浏览。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "An existing page needs a redesign",
+          "zh": "已有页面需要重做"
+        },
+        "body": {
+          "en": "Provide the current interface and the requirements it must preserve so the agent can replace the visual direction without losing product content.",
+          "zh": "提供当前界面及必须保留的要求，让 Agent 重新设计视觉表达，同时保留产品内容与功能。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Define the brief",
+          "zh": "明确设计需求"
+        },
+        "body": {
+          "en": "Provide the subject, audience, primary task, and real content. Include existing brand assets and requirements that must remain.",
+          "zh": "提供主题、读者、主要任务与真实内容，补充品牌素材以及必须保留的要求。"
+        }
+      },
+      {
+        "title": {
+          "en": "Plan and implement the direction",
+          "zh": "确定方向并实现"
+        },
+        "body": {
+          "en": "Review a compact plan for typography, color, layout, and interaction. Ask the agent to build the page within the project’s stack.",
+          "zh": "审阅字体、配色、布局与交互的简洁方案，再让 Agent 使用项目已有技术栈实现。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review the rendered interface",
+          "zh": "检查渲染界面"
+        },
+        "body": {
+          "en": "Inspect representative desktop and mobile views. Refine hierarchy, content fit, keyboard access, and motion against the original brief.",
+          "zh": "检查代表性的桌面与移动视图，按原需求核对层级、内容适配、键盘操作与动效。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Design a landing page for this product using the supplied copy and existing brand colors. Propose the visual direction first, then implement it and check desktop and mobile layouts.",
+        "zh": "使用提供的文案和现有品牌色，为这个产品设计落地页。先说明视觉方向，再实现并检查桌面与移动布局。"
+      }
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is this the same as Vercel’s Web Design Guidelines?",
+          "zh": "它与 Vercel 的 Web Design Guidelines 相同吗？"
+        },
+        "answer": {
+          "en": "No. Frontend Design guides the visual direction and implementation of an interface. Vercel’s Skill reviews selected UI source files against a separate set of interface guidelines.",
+          "zh": "不同。Frontend Design 指导界面视觉方向与实现；Vercel 的 Skill 按另一份界面规范审查指定源码文件。"
+        }
+      },
+      {
+        "question": {
+          "en": "What input makes a design request useful?",
+          "zh": "设计请求需要提供什么信息？"
+        },
+        "answer": {
+          "en": "Provide the product or subject, intended audience, main user task, real copy, and constraints. Add existing screens when the work must retain a visual identity or interaction.",
+          "zh": "提供产品主题、目标读者、主要任务、真实文案与约束。需要保留视觉身份或交互时，也应提供现有界面。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it work with an existing design system?",
+          "zh": "可以沿用现有设计系统吗？"
+        },
+        "answer": {
+          "en": "Yes. State which tokens, components, layouts, and brand decisions are fixed. The source gives the user’s brief priority, so a request can explicitly preserve those choices.",
+          "zh": "可以。应说明哪些设计变量、组件、布局与品牌决定必须保留。原始说明优先遵循用户需求，因此可以明确要求沿用这些选择。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does installing the Skill create a running website?",
+          "zh": "安装 Skill 就会生成可运行网站吗？"
+        },
+        "answer": {
+          "en": "No. Installation provides instructions to the host agent. Building a running page still requires the project files, an appropriate runtime, and the development work requested by the user.",
+          "zh": "不会。安装获得的是宿主 Agent 使用的指令。页面运行仍需项目文件、合适的环境，以及用户要求的具体开发工作。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it include accessibility and responsive checks?",
+          "zh": "它是否涉及无障碍与响应式检查？"
+        },
+        "answer": {
+          "en": "The source includes responsive behavior, keyboard focus, reduced motion, and visual accessibility in its quality guidance. Verify them in the rendered interface; reading the Skill alone does not establish compliance.",
+          "zh": "原始说明将响应式、键盘焦点、减少动态效果和视觉可访问性纳入质量要求。仍需在实际界面验证，读取 Skill 不能证明页面已经合格。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Frontend Design implementation does this page describe?",
+          "zh": "本页介绍的是哪个 Frontend Design？"
+        },
+        "answer": {
+          "en": "This page describes the frontend-design folder in anthropics/skills. Skills with the same name from other publishers or repositories may contain different instructions and installation paths.",
+          "zh": "本页介绍 anthropics/skills 仓库中的 frontend-design。同名但来自其他发布者或仓库的 Skill，指令和安装路径可能不同。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code"
+      ],
+      "commands": {
+        "claude-code": "/plugin marketplace add anthropics/skills\n/plugin install example-skills@anthropic-agent-skills"
+      },
+      "note": {
+        "en": "Run these slash commands inside Claude Code. The official example-skills plugin installs this Skill alongside other examples. Other-agent workflows have not been verified here.",
+        "zh": "这些斜杠命令在 Claude Code 内运行。官方 example-skills 插件还会安装其他示例 Skill；本页未验证其他 Agent 的完整工作流程。"
+      }
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "authorHandle": "anthropics",
+    "name": "Skill Creator",
+    "publisher": "Anthropic",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md",
+    "repositoryUrl": "https://github.com/anthropics/skills",
+    "category": {
+      "en": "Meta-skill · Skill authoring",
+      "zh": "元 Skill · 指令创建"
+    },
+    "seo": {
+      "title": {
+        "en": "Skill Creator by Anthropic | Installation & Guide",
+        "zh": "Skill Creator by Anthropic：安装与使用指南"
+      },
+      "description": {
+        "en": "Create and improve Agent Skills through task definition, representative test prompts, and iterative evaluation. Explore installation options, use cases, and a practical guide.",
+        "zh": "通过任务定义、代表性测试请求和结果比较，创建并持续改进 Agent Skills。了解安装方式、适用场景、操作步骤与使用要求。"
+      },
+      "keywords": {
+        "en": [
+          "Skill Creator by Anthropic",
+          "skill-creator"
+        ],
+        "zh": [
+          "Skill Creator by Anthropic",
+          "skill-creator"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Skill Creator by Anthropic",
+        "zh": "Skill Creator by Anthropic"
+      },
+      "description": {
+        "en": "Use Skill Creator by Anthropic to turn a recurring task into a reusable Skill and improve it through examples. Define when the Skill should activate, draft its instructions, compare test runs, and use feedback to refine the workflow and its description.",
+        "zh": "使用 Anthropic 的 Skill Creator，将重复任务整理成可复用的 Skill，并通过示例持续改进。明确触发条件、输入与交付物，编写指令和测试请求，再结合运行结果与反馈修订流程，检查描述是否能帮助 Agent 在合适的任务中调用。"
+      }
+    },
+    "summary": {
+      "en": "Create and improve Agent Skills through task definition, representative test prompts, and iterative evaluation.",
+      "zh": "通过任务定义、代表性测试请求和结果比较，创建并持续改进 Agent Skills。"
+    },
+    "cardDescription": {
+      "en": "Create and improve Agent Skills through task definition, representative test prompts, and iterative evaluation.",
+      "zh": "通过任务定义、代表性测试请求和结果比较，创建并持续改进 Agent Skills。"
+    },
+    "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install example-skills@anthropic-agent-skills",
+    "pageCopy": {
+      "kind": {
+        "en": "Skill creation and evaluation",
+        "zh": "Skill 创建与评估"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Skill Creator",
+        "paragraphs": [
+          "Skill Creator is Anthropic’s workflow for authoring and evaluating Agent Skills. It starts by clarifying the task, activation conditions, inputs, and expected output, then moves through a draft and representative test prompts. The source includes scripts for inspecting evaluation results and comparing runs, with repeated revision as feedback identifies gaps. This makes it useful for capturing a recurring work process or improving a Skill that activates inconsistently. Its evaluation workflow is written for Claude-based execution and needs the referenced tools to be available. This page describes Anthropic’s implementation; OpenAI and other publishers also use the Skill Creator name for different packages."
+        ]
+      },
+      "zh": {
+        "title": "关于 Skill Creator",
+        "paragraphs": [
+          "Skill Creator 是 Anthropic 用于编写与评估 Agent Skills 的流程指引。它先澄清任务、触发条件、输入和预期交付物，再编写草稿与代表性测试请求，并借助附带脚本查看运行结果、比较表现，根据反馈持续修订。它适合沉淀重复工作，也适合改进调用不稳定或执行结果不一致的已有 Skill。原始评估流程面向 Claude 执行环境，相关工具需要单独具备。本页描述的是 Anthropic 的实现；OpenAI 和其他发布者也有同名内容，应按来源区分。"
+        ]
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Skill Creator",
+        "zh": "Skill Creator 的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore Skill authoring tasks with a clear recurring workflow or an existing draft to improve. Capture a repeatable process, evaluate whether instructions produce the intended result, or refine a description that causes the agent to miss relevant requests or activate at the wrong time.",
+        "zh": "探索有明确重复流程或已有草稿的 Skill 创作任务：把常用方法整理成指令，评估输出是否符合要求，或修订容易漏触发、误触发的描述。围绕真实请求和交付物比较效果，让改进有具体反馈依据。"
+      },
+      "how": {
+        "en": "How to Use Skill Creator",
+        "zh": "How to 使用 Skill Creator"
+      },
+      "howDescription": {
+        "en": "Explain the recurring task and supply examples of successful work before drafting. Define the trigger and expected output, test the draft with representative requests in the supported environment, and revise the instructions using both user feedback and the results of those runs.",
+        "zh": "先说明重复任务，并提供成功完成的示例。确定触发条件与交付物后再写草稿，在受支持环境中使用代表性请求测试，结合用户反馈和实际结果修订指令，最后检查描述与工作流程是否保持一致。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Capture a recurring workflow",
+          "zh": "沉淀重复工作流程"
+        },
+        "body": {
+          "en": "Turn an established process with known inputs and deliverables into instructions an agent can follow in future tasks.",
+          "zh": "将已有输入与交付标准的工作方法整理成指令，供 Agent 在后续同类任务中使用。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Improve an inconsistent Skill",
+          "zh": "改进表现不稳定的 Skill"
+        },
+        "body": {
+          "en": "Compare representative runs to identify missing steps, unclear expectations, or examples that do not cover the task.",
+          "zh": "比较代表性运行结果，找出缺失步骤、不清楚的要求或覆盖不足的示例。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Refine activation behavior",
+          "zh": "优化触发描述"
+        },
+        "body": {
+          "en": "Check whether the description matches realistic user requests, separating tasks that should trigger the Skill from nearby tasks that should not.",
+          "zh": "用真实表达检查描述，将应该调用 Skill 的任务与相近但不适用的任务区分开。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Define the task and examples",
+          "zh": "明确任务与示例"
+        },
+        "body": {
+          "en": "Describe the process, inputs, and expected output. Provide successful examples and any requirements the draft must preserve.",
+          "zh": "说明流程、输入与预期交付物，提供成功示例和草稿必须遵守的要求。"
+        }
+      },
+      {
+        "title": {
+          "en": "Draft and evaluate",
+          "zh": "编写并评估草稿"
+        },
+        "body": {
+          "en": "Create the instruction and representative test prompts. Use the source’s supported evaluation tools to inspect how the draft performs.",
+          "zh": "编写指令与代表性测试请求，使用来源支持的评估工具查看草稿的实际表现。"
+        }
+      },
+      {
+        "title": {
+          "en": "Revise from observed results",
+          "zh": "依据结果修订"
+        },
+        "body": {
+          "en": "Compare feedback and test outputs, then change the unclear parts. Rerun relevant cases and check that the description still fits the workflow.",
+          "zh": "比较反馈与测试输出，修订不清楚的部分，重跑相关用例，并核对描述仍然符合流程。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Help me turn our weekly customer-feedback summary into a Skill. Define the inputs and output, draft the instructions, and propose test requests before running an evaluation.",
+        "zh": "帮我把每周客户反馈总结整理成 Skill。先确定输入和输出，编写指令草稿，再提出测试请求，暂时不要开始评估运行。"
+      }
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is this the OpenAI Skill Creator?",
+          "zh": "这是 OpenAI 的 Skill Creator 吗？"
+        },
+        "answer": {
+          "en": "No. It is the skill-creator package from anthropics/skills. OpenAI’s package has a different source and workflow, even though both help users author Skills.",
+          "zh": "不是。这是 anthropics/skills 中的 skill-creator。OpenAI 的同名包具有不同来源与流程，虽然两者都帮助用户创建 Skill。"
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need an existing Skill to start?",
+          "zh": "开始前必须已有 Skill 吗？"
+        },
+        "answer": {
+          "en": "No. You can begin with a recurring task and examples. If a draft already exists, provide it and describe the behavior you want to improve.",
+          "zh": "不需要。可以从重复任务与示例开始；已有草稿时，应提供文件并说明希望改进的表现。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does the workflow run evaluations automatically in every agent?",
+          "zh": "它能在所有 Agent 中自动运行评估吗？"
+        },
+        "answer": {
+          "en": "The source’s evaluation steps use Claude-based runs and bundled scripts. Other hosts may read the instructions, but automatic evaluation requires checking their execution and delegation capabilities separately.",
+          "zh": "原始评估步骤使用 Claude 运行和附带脚本。其他宿主可以阅读指令，但自动评估需要另外核对执行与委派能力。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should a test request include?",
+          "zh": "测试请求应包含什么？"
+        },
+        "answer": {
+          "en": "Use a realistic user request with the required input and an observable expected result. Include ordinary cases and important boundaries rather than only examples that repeat the draft’s wording.",
+          "zh": "使用真实用户表达，提供必要输入与可观察的预期结果。既包含常见情况，也覆盖重要边界，避免只重复草稿措辞。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it improve when a Skill activates?",
+          "zh": "它能改进 Skill 的触发时机吗？"
+        },
+        "answer": {
+          "en": "Yes. The source includes a description-improvement workflow. Evaluate both relevant requests and nearby non-matching requests so better recall does not simply create more false activations.",
+          "zh": "可以。原始说明包含描述优化流程。应同时检查适用请求与相近的不适用请求，避免减少漏触发的同时增加误触发。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if a successful result is subjective?",
+          "zh": "结果好不好具有主观性时怎么办？"
+        },
+        "answer": {
+          "en": "State the audience and quality criteria, then review outputs with the user. Quantitative checks can support the review when they measure something meaningful, but they do not replace the editorial or design judgment.",
+          "zh": "说明目标读者与质量标准，再与用户一起查看输出。只有确实衡量有意义结果时才加入量化检查，不能用分数代替编辑或设计判断。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code"
+      ],
+      "commands": {
+        "claude-code": "/plugin marketplace add anthropics/skills\n/plugin install example-skills@anthropic-agent-skills"
+      },
+      "note": {
+        "en": "Run inside Claude Code. The upstream evaluation workflow uses Claude execution, delegated runs, and bundled scripts; installing the instructions alone does not configure those capabilities. This is Anthropic’s Skill Creator, not the OpenAI package.",
+        "zh": "在 Claude Code 内运行。上游评估流程使用 Claude 执行、委派运行和附带脚本；仅安装指令不会配置这些能力。这是 Anthropic 的 Skill Creator，不是 OpenAI 同名包。"
+      }
+    }
+  },
+  {
+    "slug": "pdf",
+    "authorHandle": "anthropics",
+    "name": "PDF",
+    "publisher": "Anthropic",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/pdf/SKILL.md",
+    "repositoryUrl": "https://github.com/anthropics/skills",
+    "category": {
+      "en": "Documents · PDF processing",
+      "zh": "文档 · PDF 处理"
+    },
+    "seo": {
+      "title": {
+        "en": "PDF by Anthropic | Installation & Guide",
+        "zh": "PDF by Anthropic：安装与使用指南"
+      },
+      "description": {
+        "en": "Read, organize, create, or process PDF files with task-specific extraction and document workflows. Explore installation options, use cases, and a practical guide.",
+        "zh": "按任务读取、整理、创建或处理 PDF 文件，并核对内容与页面结果。了解安装方式、适用场景、操作步骤与使用要求。"
+      },
+      "keywords": {
+        "en": [
+          "PDF by Anthropic",
+          "pdf"
+        ],
+        "zh": [
+          "PDF by Anthropic",
+          "pdf"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "PDF by Anthropic",
+        "zh": "PDF by Anthropic"
+      },
+      "description": {
+        "en": "Use PDF by Anthropic to work with PDF files through an agent: extract text and tables, combine or split pages, prepare forms, or create a document for sharing. Choose the operation from the actual input, then check extracted content and the rendered output before delivery.",
+        "zh": "使用 Anthropic 的 PDF Skill，通过 Agent 提取文字与表格、合并或拆分页面、处理表单，或制作可分享的 PDF 文档。根据实际文件选择操作，核对扫描件识别、页面顺序和内容完整性，再检查渲染结果是否适合交付。"
+      }
+    },
+    "summary": {
+      "en": "Read, organize, create, or process PDF files with task-specific extraction and document workflows.",
+      "zh": "按任务读取、整理、创建或处理 PDF 文件，并核对内容与页面结果。"
+    },
+    "cardDescription": {
+      "en": "Read, organize, create, or process PDF files with task-specific extraction and document workflows.",
+      "zh": "按任务读取、整理、创建或处理 PDF 文件，并核对内容与页面结果。"
+    },
+    "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills",
+    "pageCopy": {
+      "kind": {
+        "en": "Source-available document Skill",
+        "zh": "源码可用文档 Skill"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About PDF",
+        "paragraphs": [
+          "PDF is Anthropic’s document Skill for reading, creating, and modifying PDF files. It routes work to Python libraries and command-line tools according to the operation: extracting content, organizing pages, generating documents, processing scanned pages, or handling forms through separate instructions. A text-based report and a scanned document need different extraction methods, so the input matters as much as the requested output. The Skill provides workflow guidance and references; its required libraries and utilities must be available in the execution environment. Anthropic publishes this document Skill as source-available under its specific license terms. This page introduces its uses and official setup, without redistributing the package."
+        ]
+      },
+      "zh": {
+        "title": "关于 PDF",
+        "paragraphs": [
+          "PDF 是 Anthropic 用于读取、创建与修改 PDF 文件的文档 Skill。它根据任务选择 Python 库和命令行工具，覆盖内容提取、页面整理、新文档生成、扫描件处理，以及由单独说明指导的表单操作。文字型报告与扫描文档需要不同方法，因此应先检查输入文件，再确定提取或编辑路径。Skill 提供流程与参考，实际执行仍需环境中具备所需库和工具。Anthropic 将这一文档 Skill 以源码可用形式提供，受专门许可约束；本页介绍用途及官方设置方式，不重新分发包内容。"
+        ]
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for PDF",
+        "zh": "PDF 的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore PDF tasks where the input format determines the method. Extract a report’s text or tables, organize several files into a correctly ordered document, or prepare a form workflow after checking whether the source contains selectable text, scanned pages, or interactive fields.",
+        "zh": "探索需要按输入类型选择方法的 PDF 任务：提取报告文字或表格，将多个文件整理成顺序正确的文档，或在确认表单字段后准备填写流程。先区分可选择文字、扫描页面与交互字段，再确定合适的处理与核对方式。"
+      },
+      "how": {
+        "en": "How to Use PDF",
+        "zh": "How to 使用 PDF"
+      },
+      "howDescription": {
+        "en": "Provide the PDFs and specify the pages, fields, or content you need. Have the agent inspect the file type and follow the relevant extraction, editing, or form instructions, then compare the output with the source and inspect rendered pages where layout matters.",
+        "zh": "提供 PDF，明确需要处理的页面、字段或内容。让 Agent 先识别文件类型，再按相应提取、编辑或表单说明执行；完成后与来源比较内容，涉及排版时检查渲染页面，确认页面、文字与字段没有遗漏。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Extract a report’s content",
+          "zh": "提取报告内容"
+        },
+        "body": {
+          "en": "Read selectable text and tables, or use OCR for scanned pages when needed. Compare extracted values and headings with the original pages.",
+          "zh": "读取可选择文字和表格，扫描页面按需使用 OCR，并与原页核对数值和标题。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Organize a document package",
+          "zh": "整理文档包"
+        },
+        "body": {
+          "en": "Merge selected PDFs or split a file by page range. Verify the requested order, page count, and orientation before sharing.",
+          "zh": "合并选定文件或按页码拆分，分享前核对顺序、页数与页面方向。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Prepare a PDF form",
+          "zh": "处理 PDF 表单"
+        },
+        "body": {
+          "en": "Inspect the form and follow the dedicated field instructions. Check that entered values align with the intended labels and saved output.",
+          "zh": "先检查表单并阅读专门的字段说明，再核对填写值、标签与保存后的文件。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Inspect the input PDF",
+          "zh": "检查输入文件"
+        },
+        "body": {
+          "en": "Identify selectable text, scanned pages, and form fields. Specify the pages and output format that the task requires.",
+          "zh": "识别可选择文字、扫描页与表单字段，说明任务涉及的页码和输出格式。"
+        }
+      },
+      {
+        "title": {
+          "en": "Run the matching workflow",
+          "zh": "执行匹配流程"
+        },
+        "body": {
+          "en": "Ask the agent to follow the relevant source instructions with the required tools. Preserve the original and write a clearly named output.",
+          "zh": "让 Agent 使用所需工具遵循相关原始说明，保留原件并输出命名清楚的新文件。"
+        }
+      },
+      {
+        "title": {
+          "en": "Verify content and pages",
+          "zh": "核对内容与页面"
+        },
+        "body": {
+          "en": "Compare extracted or edited information with the source. Render layout-sensitive outputs and inspect page order, clipping, and form values.",
+          "zh": "将提取或编辑内容与来源比较，对排版敏感的结果进行渲染，检查顺序、裁切与表单值。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Extract the tables from this PDF report into a structured file. Check whether the pages are scanned, preserve row labels, and flag uncertain values rather than filling them in.",
+        "zh": "把这份 PDF 报告中的表格提取成结构化文件。先检查页面是否为扫描件，保留行标签，并标明不确定数值，不要自行补全。"
+      }
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Can this Skill read scanned PDFs?",
+          "zh": "这个 Skill 能读取扫描 PDF 吗？"
+        },
+        "answer": {
+          "en": "The source includes OCR-related processing for scanned documents. OCR accuracy depends on image quality, language, and page structure, so important text and values should be checked against the scan.",
+          "zh": "原始说明包含扫描文档的 OCR 处理。识别准确性受图像质量、语言和页面结构影响，重要文字与数值仍应对照扫描页核查。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will text extraction preserve the original layout?",
+          "zh": "提取文字会保留原始排版吗？"
+        },
+        "answer": {
+          "en": "Not necessarily. Text extraction and page rendering are different operations. If columns, footnotes, or reading order matter, inspect the pages and choose an extraction method suited to that structure.",
+          "zh": "不一定。文字提取与页面渲染是不同操作。涉及分栏、脚注或阅读顺序时，需要查看页面并选择匹配结构的方法。"
+        }
+      },
+      {
+        "question": {
+          "en": "How are fillable forms handled?",
+          "zh": "可填写表单如何处理？"
+        },
+        "answer": {
+          "en": "The source directs form work to its dedicated FORMS.md instructions. Inspect the actual fields and verify saved values in the resulting PDF instead of assuming labels correspond to field names.",
+          "zh": "原始说明将表单任务交给专门的 FORMS.md。应检查实际字段，并在结果文件中核对保存值，不能假定页面标签就是字段名称。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it require tools beyond an agent?",
+          "zh": "除了 Agent，还需要其他工具吗？"
+        },
+        "answer": {
+          "en": "Yes. Different operations use Python libraries and command-line utilities for extraction, rendering, OCR, or document generation. The host environment must provide the tools needed for the selected operation.",
+          "zh": "需要。不同操作使用用于提取、渲染、OCR 或文档生成的 Python 库和命令行工具，宿主环境应具备当前任务所需的部分。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is this PDF Skill open source?",
+          "zh": "这个 PDF Skill 是开源的吗？"
+        },
+        "answer": {
+          "en": "Anthropic describes its document Skills as source-available, and this folder carries a proprietary LICENSE.txt. Consult that file and the official installation guidance rather than treating public source access as a redistribution permission.",
+          "zh": "Anthropic 将文档 Skills 称为源码可用，本目录带有专有 LICENSE.txt。应核对该文件和官方安装说明，公开可读不等于可以重新分发。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I specify when merging or splitting files?",
+          "zh": "合并或拆分文件时需要说明什么？"
+        },
+        "answer": {
+          "en": "List the source files, required order, page ranges, and output names. Verify the output page count and a few boundary pages where one source or range changes to another.",
+          "zh": "列出来源文件、顺序、页码范围与输出名称。完成后核对页数，并检查来源文件或页码范围交接处的页面。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code"
+      ],
+      "commands": {
+        "claude-code": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills"
+      },
+      "note": {
+        "en": "Run these commands inside Claude Code. The official document-skills plugin includes PDF, DOCX, PPTX, and XLSX. These Skills are source-available; document tools must be configured separately.",
+        "zh": "在 Claude Code 内运行。官方 document-skills 插件包含 PDF、DOCX、PPTX 和 XLSX，以源码可用许可提供；文档工具依赖需另行配置。"
+      }
+    }
+  },
+  {
+    "slug": "docx",
+    "authorHandle": "anthropics",
+    "name": "DOCX",
+    "publisher": "Anthropic",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/docx/SKILL.md",
+    "repositoryUrl": "https://github.com/anthropics/skills",
+    "category": {
+      "en": "Documents · Word files",
+      "zh": "文档 · Word 文件"
+    },
+    "seo": {
+      "title": {
+        "en": "DOCX by Anthropic | Installation & Guide",
+        "zh": "DOCX by Anthropic：安装与使用指南"
+      },
+      "description": {
+        "en": "Create and edit Word documents with structured content, careful preservation, and rendered-page checks. Explore installation options, use cases, and a practical guide.",
+        "zh": "创建和编辑 Word 文档，组织结构化内容，保留必要格式并检查渲染页面。了解安装方式、适用场景、操作步骤与使用要求。"
+      },
+      "keywords": {
+        "en": [
+          "DOCX by Anthropic",
+          "docx"
+        ],
+        "zh": [
+          "DOCX by Anthropic",
+          "docx"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "DOCX by Anthropic",
+        "zh": "DOCX by Anthropic"
+      },
+      "description": {
+        "en": "Use DOCX by Anthropic to create, read, or edit Word documents with an agent. Work from an outline, existing file, or template, organize headings and tables, and review changes in context before checking the rendered document for pagination, formatting, and content accuracy.",
+        "zh": "使用 Anthropic 的 DOCX Skill，通过 Agent 创建、读取或编辑 Word 文档。从提纲、现有文件或模板开始，组织标题、表格与内容，并结合修订要求处理改动；完成后检查渲染页面、分页、格式和内容准确性，确认适合交付。"
+      }
+    },
+    "summary": {
+      "en": "Create and edit Word documents with structured content, careful preservation, and rendered-page checks.",
+      "zh": "创建和编辑 Word 文档，组织结构化内容，保留必要格式并检查渲染页面。"
+    },
+    "cardDescription": {
+      "en": "Create and edit Word documents with structured content, careful preservation, and rendered-page checks.",
+      "zh": "创建和编辑 Word 文档，组织结构化内容，保留必要格式并检查渲染页面。"
+    },
+    "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills",
+    "pageCopy": {
+      "kind": {
+        "en": "Source-available document Skill",
+        "zh": "源码可用文档 Skill"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About DOCX",
+        "paragraphs": [
+          "DOCX is Anthropic’s document Skill for Word files and templates. It separates new-document creation, existing-file editing, and content reading because those tasks require different tools and package handling. Its guidance addresses headings, page geometry, lists, tables, images, and verification of the resulting document. Existing files may also involve tracked changes, comments, and relationships that need to survive an edit. Provide the original file and the exact change request when preservation matters, then render the output and inspect pagination and formatting. The required scripts and office utilities are environment prerequisites. Anthropic makes this Skill source-available under a proprietary license, separate from the repository’s open-source examples."
+        ]
+      },
+      "zh": {
+        "title": "关于 DOCX",
+        "paragraphs": [
+          "DOCX 是 Anthropic 面向 Word 文件与模板的文档 Skill。它将新文档生成、已有文件编辑和内容读取分为不同路径，分别处理所需工具与文档包结构。指引涉及标题、页面尺寸、列表、表格、图片和输出验证；现有文件还可能包含需要保留的修订、批注与关联关系。重视保真时，应提供原文件和明确修改范围，完成后渲染检查分页与格式。相关脚本和办公工具仍是环境前提。此 Skill 采用专有许可、以源码可用形式提供，与仓库中的开源示例需要区分。"
+        ]
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for DOCX",
+        "zh": "DOCX 的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore Word-document work that needs an editable deliverable. Build a structured report from approved content, update selected passages in an existing document, or adapt a template while preserving its conventions and checking that headings, tables, images, and pagination remain usable.",
+        "zh": "探索需要交付可编辑 Word 文件的工作：根据确认内容生成结构化报告，修改已有文档的指定段落，或沿用模板组织新材料。围绕标题、表格、图片和分页检查结果，同时保留现有文件需要遵循的格式与约定。"
+      },
+      "how": {
+        "en": "How to Use DOCX",
+        "zh": "How to 使用 DOCX"
+      },
+      "howDescription": {
+        "en": "Provide the outline or source document and explain what must change and what must remain. Choose the source’s creation or editing path with the agent, then validate the saved package, render the document, and review representative pages before delivering the editable file.",
+        "zh": "提供提纲或原始文档，说明需要修改和必须保留的部分。与 Agent 选择原始说明中的生成或编辑路径，保存后检查文档结构、渲染页面，并复核具有代表性的版面，再交付可编辑文件。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Create a structured report",
+          "zh": "创建结构化报告"
+        },
+        "body": {
+          "en": "Turn approved content into an editable Word file with a clear heading hierarchy, tables, and consistent page settings.",
+          "zh": "把确认内容整理成可编辑 Word 文件，建立清晰标题层级、表格和统一页面设置。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Edit selected document content",
+          "zh": "编辑指定内容"
+        },
+        "body": {
+          "en": "Use an existing document as the source and define bounded changes so unrelated text, comments, and formatting can be checked for preservation.",
+          "zh": "以已有文档为来源限定修改范围，核对无关正文、批注与格式是否保留。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Reuse a Word template",
+          "zh": "复用 Word 模板"
+        },
+        "body": {
+          "en": "Provide the template and new content, then check that its styles, page structure, and repeating elements still work in the output.",
+          "zh": "提供模板与新内容，检查输出中的样式、页面结构和重复元素是否正常。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Supply content and constraints",
+          "zh": "提供内容与约束"
+        },
+        "body": {
+          "en": "Share the outline, original file, or template. Specify edits, required styles, and any comments or tracked changes that must remain.",
+          "zh": "提供提纲、原文件或模板，明确修改、样式要求，以及必须保留的批注或修订。"
+        }
+      },
+      {
+        "title": {
+          "en": "Create or edit the document",
+          "zh": "生成或编辑文档"
+        },
+        "body": {
+          "en": "Ask the agent to use the matching source workflow. Keep the original intact and verify the resulting document package.",
+          "zh": "让 Agent 采用匹配的原始流程，保留原件，并检查输出文档包结构。"
+        }
+      },
+      {
+        "title": {
+          "en": "Render and inspect pages",
+          "zh": "渲染并检查页面"
+        },
+        "body": {
+          "en": "Review page breaks, headings, tables, images, and changed text. Fix layout problems before sharing the editable DOCX.",
+          "zh": "检查分页、标题、表格、图片及改动正文，修复版面问题后再分享可编辑 DOCX。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Update the executive summary in this Word report using the approved notes. Preserve the remaining text, headings, tables, and comments, and show me the rendered pages that changed.",
+        "zh": "根据已确认笔记更新这份 Word 报告的执行摘要。保留其他正文、标题、表格与批注，并展示发生变化的渲染页面。"
+      }
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Can the Skill edit an existing Word document?",
+          "zh": "它能编辑已有 Word 文档吗？"
+        },
+        "answer": {
+          "en": "Yes. The source defines a separate existing-document workflow. Supply the original and the precise edits, then compare unchanged content and verify the output package and rendered pages.",
+          "zh": "可以。原始说明提供已有文档的独立编辑路径。应提供原件和具体改动，再比较未修改内容，检查输出结构与渲染页面。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it preserve tracked changes and comments automatically?",
+          "zh": "修订和批注会自动完整保留吗？"
+        },
+        "answer": {
+          "en": "Do not assume so. State which annotations must remain and inspect them after editing. A valid DOCX package alone does not prove that every review annotation or relationship was preserved.",
+          "zh": "不能直接假定。应说明必须保留的标注，并在编辑后检查；文档包有效不能证明每一条审阅标注或关联均已保留。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I provide a Word template?",
+          "zh": "可以提供 Word 模板吗？"
+        },
+        "answer": {
+          "en": "Yes. The source addresses Word documents and templates. Provide the template plus content and style constraints, then inspect output pages instead of assuming the new text will fit every placeholder.",
+          "zh": "可以。原始说明涉及 Word 文档与模板。应同时提供内容和样式约束，并检查输出页面，不能假定新文字适合所有占位区域。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is this intended for Google Docs?",
+          "zh": "它是用于 Google Docs 的吗？"
+        },
+        "answer": {
+          "en": "Its documented task is working with Word files. Importing a DOCX into Google Docs is a separate conversion path that may change formatting and should be checked in that product.",
+          "zh": "原始任务面向 Word 文件。将 DOCX 导入 Google Docs 属于另一种转换路径，可能改变格式，需要在对应产品中检查。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why render a document that already opens successfully?",
+          "zh": "文档可以打开，为什么还要渲染？"
+        },
+        "answer": {
+          "en": "Opening checks only part of the result. Rendering reveals broken page flow, clipped text, misplaced images, or tables that do not fit the page. Inspect the pages that are affected by the change.",
+          "zh": "能够打开只说明部分结果正常。渲染可以暴露分页异常、文字裁切、图片错位和表格超宽，应检查受改动影响的页面。"
+        }
+      },
+      {
+        "question": {
+          "en": "What license applies to this DOCX Skill?",
+          "zh": "这个 DOCX Skill 使用什么许可？"
+        },
+        "answer": {
+          "en": "It is one of Anthropic’s source-available document Skills, with a proprietary LICENSE.txt in its directory. Use the official access and installation routes and read those terms before copying or reusing package material.",
+          "zh": "它属于 Anthropic 源码可用的文档 Skills，目录中有专有 LICENSE.txt。应使用官方访问与安装路径，复制或复用包内容前核对条款。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code"
+      ],
+      "commands": {
+        "claude-code": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills"
+      },
+      "note": {
+        "en": "Run these commands inside Claude Code. The official document-skills plugin includes PDF, DOCX, PPTX, and XLSX. These Skills are source-available; document tools must be configured separately.",
+        "zh": "在 Claude Code 内运行。官方 document-skills 插件包含 PDF、DOCX、PPTX 和 XLSX，以源码可用许可提供；文档工具依赖需另行配置。"
+      }
+    }
+  },
+  {
+    "slug": "pptx",
+    "authorHandle": "anthropics",
+    "name": "PPTX",
+    "publisher": "Anthropic",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md",
+    "repositoryUrl": "https://github.com/anthropics/skills",
+    "category": {
+      "en": "Documents · Presentations",
+      "zh": "文档 · 演示文稿"
+    },
+    "seo": {
+      "title": {
+        "en": "PPTX by Anthropic | Installation & Guide",
+        "zh": "PPTX by Anthropic：安装与使用指南"
+      },
+      "description": {
+        "en": "Create or update editable presentations, with slide-structure planning and rendered-slide verification. Explore installation options, use cases, and a practical guide.",
+        "zh": "创建或更新可编辑演示文稿，规划幻灯片结构并核对实际渲染效果。了解安装方式、适用场景、操作步骤与使用要求。"
+      },
+      "keywords": {
+        "en": [
+          "PPTX by Anthropic",
+          "pptx"
+        ],
+        "zh": [
+          "PPTX by Anthropic",
+          "pptx"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "PPTX by Anthropic",
+        "zh": "PPTX by Anthropic"
+      },
+      "description": {
+        "en": "Use PPTX by Anthropic to create, read, and edit presentation files with an agent. Work from a brief, an existing deck, or a template, organize slide content and supporting visuals, then inspect thumbnails and rendered slides before handing over an editable presentation.",
+        "zh": "使用 Anthropic 的 PPTX Skill，通过 Agent 创建、读取或编辑演示文稿。从需求、已有幻灯片或模板开始，组织叙事、页面内容与视觉素材，再检查缩略图和实际渲染页面，核对版式、内容与可编辑文件是否符合交付要求。"
+      }
+    },
+    "summary": {
+      "en": "Create or update editable presentations, with slide-structure planning and rendered-slide verification.",
+      "zh": "创建或更新可编辑演示文稿，规划幻灯片结构并核对实际渲染效果。"
+    },
+    "cardDescription": {
+      "en": "Create or update editable presentations, with slide-structure planning and rendered-slide verification.",
+      "zh": "创建或更新可编辑演示文稿，规划幻灯片结构并核对实际渲染效果。"
+    },
+    "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills",
+    "pageCopy": {
+      "kind": {
+        "en": "Source-available document Skill",
+        "zh": "源码可用文档 Skill"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About PPTX",
+        "paragraphs": [
+          "PPTX is Anthropic’s document Skill for creating and modifying presentation files and templates. It distinguishes a new deck from edits to an existing package, and includes tools for extracting text, inspecting slide thumbnails, managing slide content, and validating the saved file. This helps an agent work with the structure of a presentation while checking how its individual slides actually render. Provide the audience, message, source material, and any template that must be preserved. Output review should include both the narrative across slides and issues such as overflow, alignment, image placement, and missing content. The Skill is source-available under Anthropic’s proprietary document-Skill license."
+        ]
+      },
+      "zh": {
+        "title": "关于 PPTX",
+        "paragraphs": [
+          "PPTX 是 Anthropic 用于创建和修改演示文稿及模板的文档 Skill。它区分新建幻灯片与编辑已有文档包，并提供文字提取、缩略图检查、幻灯片内容处理和输出验证等流程，帮助 Agent 同时理解文件结构与实际画面。使用时应说明读者、核心信息、来源素材以及必须保留的模板。结果需要检查整份演示的叙事，也要逐页核对文字溢出、对齐、图片位置和内容缺失。此 Skill 受 Anthropic 文档 Skill 的专有许可约束，以源码可用形式提供。"
+        ]
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for PPTX",
+        "zh": "PPTX 的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore presentation work with an editable deck as the deliverable. Build a briefing from approved research, update an existing presentation with new facts, or adapt a slide template while checking that the story, layouts, speaker notes, and supporting visuals remain appropriate for the audience.",
+        "zh": "探索以可编辑演示文稿为交付物的任务，例如依据确认资料制作汇报、更新已有幻灯片中的信息，或沿用模板组织新内容。围绕读者核对叙事、版式、演讲备注与视觉素材，避免只替换文字而忽略整份演示的表达。"
+      },
+      "how": {
+        "en": "How to Use PPTX",
+        "zh": "How to 使用 PPTX"
+      },
+      "howDescription": {
+        "en": "Provide the presentation brief, source material, and any deck or template to reuse. Agree on the slide structure, create or edit using the matching source workflow, then inspect a thumbnail overview and the rendered slides before validating and delivering the editable presentation file.",
+        "zh": "提供演示需求、来源资料，以及需要复用的文稿或模板。确认幻灯片结构后，按原始说明选择生成或编辑路径；完成后查看缩略图总览与渲染页面，再检查文件结构，交付可编辑的演示文稿。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Build a briefing deck",
+          "zh": "制作汇报演示"
+        },
+        "body": {
+          "en": "Turn approved research into a slide narrative for a defined audience, with evidence and visuals supporting each main point.",
+          "zh": "将确认资料整理成面向特定读者的幻灯片叙事，为主要观点配置证据与视觉素材。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Update an existing presentation",
+          "zh": "更新已有文稿"
+        },
+        "body": {
+          "en": "Change selected facts or slides while preserving the deck’s intended sequence, template choices, and relevant speaker notes.",
+          "zh": "修改指定数据或页面，同时保留演示顺序、模板选择和相关演讲备注。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Adapt a slide template",
+          "zh": "沿用幻灯片模板"
+        },
+        "body": {
+          "en": "Fit new content to the supplied layouts, then inspect crowded slides and media placement rather than assuming placeholder sizes will work.",
+          "zh": "把新内容放入现有版式，检查拥挤页面与媒体位置，避免直接套用占位区域大小。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Define the story and inputs",
+          "zh": "明确叙事与输入"
+        },
+        "body": {
+          "en": "Specify the audience, decision, source material, and target length. Provide the existing deck or template if it must be reused.",
+          "zh": "说明读者、需要支持的决定、来源资料和目标篇幅，提供必须复用的文稿或模板。"
+        }
+      },
+      {
+        "title": {
+          "en": "Create or update the slides",
+          "zh": "制作或更新幻灯片"
+        },
+        "body": {
+          "en": "Review the proposed slide structure with the agent. Follow the appropriate new-deck or existing-file workflow for the requested edits.",
+          "zh": "与 Agent 核对幻灯片结构，再按新建或已有文件的对应流程处理具体改动。"
+        }
+      },
+      {
+        "title": {
+          "en": "Inspect visuals and file structure",
+          "zh": "检查画面与文件结构"
+        },
+        "body": {
+          "en": "Check the thumbnail overview and individual rendered slides. Fix overflow and missing elements, then validate the saved presentation package.",
+          "zh": "查看缩略图总览与单页渲染，修复溢出和缺失元素，再检查保存后的演示文件结构。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Update this quarterly presentation with the supplied results. Reuse its template and charts where appropriate, preserve the slide order, and inspect every changed slide for overflow and missing content.",
+        "zh": "使用提供的结果更新季度汇报，适当复用原模板和图表，保留幻灯片顺序，并检查每张修改页面的溢出与内容缺失。"
+      }
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Can this Skill start from a PowerPoint template?",
+          "zh": "这个 Skill 能从 PowerPoint 模板开始吗？"
+        },
+        "answer": {
+          "en": "Yes. The source includes existing-deck and template-based editing. Supply the template, identify layouts to preserve, and review the result because replacement content may need different sizing or distribution.",
+          "zh": "可以。原始说明包含已有文稿与模板编辑。应提供模板并指出需要保留的版式，同时检查替换内容是否需要重新调整大小与分布。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it extract text without redesigning the deck?",
+          "zh": "可以只提取文字，不重新设计文稿吗？"
+        },
+        "answer": {
+          "en": "Yes. The documented reading workflow can extract content separately from creation or editing. Specify whether you also need slide numbers, notes, or a visual overview.",
+          "zh": "可以。原始读取流程独立于创建和编辑。应说明是否还需要幻灯片编号、备注或视觉总览。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will every element remain editable?",
+          "zh": "所有元素都会保持可编辑吗？"
+        },
+        "answer": {
+          "en": "That depends on how the deck is built. Ask which content should be native text, shapes, charts, or images, and inspect the saved file rather than inferring editability from a screenshot.",
+          "zh": "取决于制作方式。应明确哪些内容需要原生文字、形状、图表或图片，并检查保存文件，不能从截图判断可编辑性。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why check both thumbnails and individual slides?",
+          "zh": "为什么要同时检查缩略图与单页？"
+        },
+        "answer": {
+          "en": "Thumbnails reveal sequence and consistency across the deck. Individual renders expose small text, clipping, overlap, and detail problems that the overview may hide.",
+          "zh": "缩略图便于发现顺序与整份文稿的一致性；单页渲染能够暴露总览里不明显的小字、裁切、重叠和细节问题。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is a PPTX generated file the same as a PDF export?",
+          "zh": "PPTX 文件与导出的 PDF 相同吗？"
+        },
+        "answer": {
+          "en": "No. The editable presentation package and its rendered export have different roles. Deliver the requested format and inspect exports separately when the user also needs a PDF for sharing.",
+          "zh": "不同。可编辑演示文件和渲染导出文件用途不同。应按要求交付格式；同时需要 PDF 分享版时，也要单独检查导出结果。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is the PPTX Skill an open-source package?",
+          "zh": "PPTX Skill 是开源包吗？"
+        },
+        "answer": {
+          "en": "Anthropic identifies its document Skills as source-available. The PPTX directory has a proprietary LICENSE.txt, so use the official installation path and review those terms for any copying or reuse.",
+          "zh": "Anthropic 将文档 Skills 标为源码可用，PPTX 目录有专有 LICENSE.txt。应使用官方安装路径，涉及复制或复用时核对对应条款。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code"
+      ],
+      "commands": {
+        "claude-code": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills"
+      },
+      "note": {
+        "en": "Run these commands inside Claude Code. The official document-skills plugin includes PDF, DOCX, PPTX, and XLSX. These Skills are source-available; document tools must be configured separately.",
+        "zh": "在 Claude Code 内运行。官方 document-skills 插件包含 PDF、DOCX、PPTX 和 XLSX，以源码可用许可提供；文档工具依赖需另行配置。"
+      }
+    }
+  },
+  {
+    "slug": "xlsx",
+    "authorHandle": "anthropics",
+    "name": "XLSX",
+    "publisher": "Anthropic",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
+    "repositoryUrl": "https://github.com/anthropics/skills",
+    "category": {
+      "en": "Documents · Spreadsheets",
+      "zh": "文档 · 电子表格"
+    },
+    "seo": {
+      "title": {
+        "en": "XLSX by Anthropic | Installation & Guide",
+        "zh": "XLSX by Anthropic：安装与使用指南"
+      },
+      "description": {
+        "en": "Create and edit spreadsheet files with traceable formulas, data cleanup, and recalculated-output checks. Explore installation options, use cases, and a practical guide.",
+        "zh": "创建和编辑表格文件，清理数据，使用可追溯公式并核对重新计算的结果。了解安装方式、适用场景、操作步骤与使用要求。"
+      },
+      "keywords": {
+        "en": [
+          "XLSX by Anthropic",
+          "xlsx"
+        ],
+        "zh": [
+          "XLSX by Anthropic",
+          "xlsx"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "XLSX by Anthropic",
+        "zh": "XLSX by Anthropic"
+      },
+      "description": {
+        "en": "Use XLSX by Anthropic to create, read, clean, or edit spreadsheet files with an agent. Organize source data, preserve an existing workbook’s conventions, and build formulas that respond to changing inputs, then recalculate and check the output before delivering the spreadsheet.",
+        "zh": "使用 Anthropic 的 XLSX Skill，通过 Agent 创建、读取、清理或编辑电子表格。整理来源数据，遵循已有工作簿约定，使用会随输入变化的公式计算结果，再重新计算并核对错误、格式与输出，交付可继续使用的表格文件。"
+      }
+    },
+    "summary": {
+      "en": "Create and edit spreadsheet files with traceable formulas, data cleanup, and recalculated-output checks.",
+      "zh": "创建和编辑表格文件，清理数据，使用可追溯公式并核对重新计算的结果。"
+    },
+    "cardDescription": {
+      "en": "Create and edit spreadsheet files with traceable formulas, data cleanup, and recalculated-output checks.",
+      "zh": "创建和编辑表格文件，清理数据，使用可追溯公式并核对重新计算的结果。"
+    },
+    "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills",
+    "pageCopy": {
+      "kind": {
+        "en": "Source-available document Skill",
+        "zh": "源码可用文档 Skill"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About XLSX",
+        "paragraphs": [
+          "XLSX is Anthropic’s document Skill for tasks whose primary input or output is a spreadsheet file. It covers workbook creation and editing, tabular-data cleanup, formulas, formatting, charts, and supported file conversions. The source distinguishes formula text from cached results and requires recalculation when formulas are present, so a file that opens is not the final check. Existing workbook conventions and designated input cells also matter when making changes. Provide the source files, column meanings, calculations, and required output before execution. The environment needs the libraries and recalculation utilities used by the selected workflow. This Skill is source-available under Anthropic’s proprietary document license."
+        ]
+      },
+      "zh": {
+        "title": "关于 XLSX",
+        "paragraphs": [
+          "XLSX 是 Anthropic 面向以电子表格文件为主要输入或输出的文档 Skill，涉及工作簿创建与编辑、表格清理、公式、格式、图表和受支持的文件转换。原始说明区分公式文本与缓存结果，要求含公式的文件重新计算，因此能够打开并不是最终检查。修改已有工作簿时，还需要遵循其约定并识别指定输入区域。使用前应提供来源文件、列含义、计算方式与输出要求；实际执行依赖相应库和重算工具。此 Skill 采用专有文档许可，以源码可用形式提供。"
+        ]
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for XLSX",
+        "zh": "XLSX 的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore tasks where the deliverable needs to remain a usable spreadsheet. Clean a messy table, add formula-driven calculations, or update an established workbook while preserving its input conventions, then verify recalculated values, references, and the structure of the saved file.",
+        "zh": "探索需要交付可继续使用表格的任务：清理混乱数据、添加由公式驱动的计算，或按原有输入约定更新工作簿。完成后核对重算数值、引用关系和文件结构，确保结果能够在输入变化后继续正常工作。"
+      },
+      "how": {
+        "en": "How to Use XLSX",
+        "zh": "How to 使用 XLSX"
+      },
+      "howDescription": {
+        "en": "Provide the source workbook or table, explain the column meanings, and define the required calculations. Ask the agent to edit the intended cells or build the requested output, then recalculate formulas, inspect reported errors, and compare representative results with the source before delivery.",
+        "zh": "提供原工作簿或数据表，说明各列含义与计算要求。让 Agent 修改指定单元格或生成目标输出，再重新计算公式、检查报告中的错误，并将代表性结果与来源核对，确认保存文件符合要求后交付。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Clean an inconsistent table",
+          "zh": "清理不一致的数据表"
+        },
+        "body": {
+          "en": "Normalize misplaced headers, malformed rows, and column types while preserving the meaning of the source data and marking ambiguous values.",
+          "zh": "整理错位表头、异常行和列类型，同时保留来源含义并标出有歧义的值。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Build a formula-driven workbook",
+          "zh": "构建公式工作簿"
+        },
+        "body": {
+          "en": "Express calculations as spreadsheet formulas so the model can respond to new inputs, with assumptions placed where the reader can inspect them.",
+          "zh": "使用表格公式表达计算，让新输入能够更新结果，并在读者可查看的位置注明假设。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Update an established spreadsheet",
+          "zh": "更新已有工作簿"
+        },
+        "body": {
+          "en": "Follow the workbook’s existing styles and input conventions. Change only the intended area and check that remaining formulas and references still work.",
+          "zh": "遵循现有样式与输入约定，只修改目标区域，并检查其他公式和引用是否正常。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Explain data and calculations",
+          "zh": "说明数据与计算"
+        },
+        "body": {
+          "en": "Share files, column definitions, and the required output. Identify designated input cells and calculations that must be preserved.",
+          "zh": "提供文件、列定义和输出要求，指出指定输入单元格以及必须保留的计算。"
+        }
+      },
+      {
+        "title": {
+          "en": "Build or edit the workbook",
+          "zh": "生成或编辑工作簿"
+        },
+        "body": {
+          "en": "Ask the agent to apply the relevant file workflow. Keep source meaning intact and use formulas where the output must update with inputs.",
+          "zh": "让 Agent 采用匹配的文件流程，保留来源含义，并为需要随输入更新的结果使用公式。"
+        }
+      },
+      {
+        "title": {
+          "en": "Recalculate and verify",
+          "zh": "重新计算并核对"
+        },
+        "body": {
+          "en": "Run the source’s recalculation workflow for formulas and fix reported errors. Compare sample values, references, and formatting with the requested result.",
+          "zh": "对公式执行原始说明中的重算流程并处理报告错误，核对样本数值、引用和格式是否符合要求。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Clean this sales CSV and create an XLSX summary by month and product. Preserve the source rows, use formulas for totals, document assumptions, and recalculate before delivering the workbook.",
+        "zh": "清理这份销售 CSV，按月份和产品生成 XLSX 汇总。保留来源行，使用公式计算合计，注明假设，并在交付前重新计算。"
+      }
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Can it process CSV or TSV input?",
+          "zh": "它能处理 CSV 或 TSV 输入吗？"
+        },
+        "answer": {
+          "en": "Yes. The documented scope includes tabular input such as CSV and TSV when the task’s primary deliverable is a spreadsheet. State the encoding, delimiter, headers, and output format if they are not clear.",
+          "zh": "可以。原始范围包含以表格为主要交付物的 CSV、TSV 等输入。格式不明确时，应说明编码、分隔符、表头和输出格式。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why are formulas not enough without recalculation?",
+          "zh": "已经写入公式，为什么还要重新计算？"
+        },
+        "answer": {
+          "en": "The source notes that some editing libraries write formulas without cached results. Recalculation produces values for readers and previewers, and its report helps locate formula errors before delivery.",
+          "zh": "原始说明指出，部分编辑库只写入公式而不生成缓存结果。重算能为读取和预览提供数值，也能通过报告定位交付前的公式错误。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it change an existing financial model?",
+          "zh": "它能修改已有财务模型吗？"
+        },
+        "answer": {
+          "en": "It can assist with the file, but the requested input areas, assumptions, and formulas need to be explicit. Validate calculations against known cases; a technically valid workbook does not establish financial correctness.",
+          "zh": "可以协助处理文件，但需要明确输入区域、假设和公式。应使用已知情况验证计算；工作簿结构有效不代表财务结论正确。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is this a live Google Sheets integration?",
+          "zh": "这是 Google Sheets 实时集成吗？"
+        },
+        "answer": {
+          "en": "No. The source explicitly separates spreadsheet-file deliverables from Google Sheets API integration. A cloud-sheet workflow needs its own access and editing mechanism.",
+          "zh": "不是。原始说明明确区分表格文件交付与 Google Sheets API 集成。云表格需要独立的访问和编辑方式。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should be preserved when editing a workbook?",
+          "zh": "编辑工作簿时应保留什么？"
+        },
+        "answer": {
+          "en": "Identify the established input cells, formulas, sheet names, styles, and references before editing. Ask for bounded changes and inspect both modified cells and representative dependent calculations.",
+          "zh": "编辑前先识别既定输入单元格、公式、工作表名称、样式和引用，限定修改范围，并检查改动区域及有代表性的下游计算。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I freely redistribute the XLSX Skill?",
+          "zh": "可以自由重新分发 XLSX Skill 吗？"
+        },
+        "answer": {
+          "en": "Do not infer that from its public repository. Anthropic provides the document Skill as source-available with a proprietary LICENSE.txt. Follow the official installation guidance and consult the applicable terms for package reuse.",
+          "zh": "不能从公开仓库直接推断。Anthropic 将它以源码可用形式提供，并附专有 LICENSE.txt。应使用官方安装方式，复用包内容前核对适用条款。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code"
+      ],
+      "commands": {
+        "claude-code": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills"
+      },
+      "note": {
+        "en": "Run these commands inside Claude Code. The official document-skills plugin includes PDF, DOCX, PPTX, and XLSX. These Skills are source-available; document tools must be configured separately.",
+        "zh": "在 Claude Code 内运行。官方 document-skills 插件包含 PDF、DOCX、PPTX 和 XLSX，以源码可用许可提供；文档工具依赖需另行配置。"
+      }
+    }
+  },
+  {
+    "slug": "impeccable",
+    "authorHandle": "pbakaus",
+    "name": "Impeccable",
+    "publisher": "pbakaus",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/pbakaus/impeccable/blob/main/.agents/skills/impeccable/SKILL.md",
+    "repositoryUrl": "https://github.com/pbakaus/impeccable",
+    "category": {
+      "en": "Design · Interface craft",
+      "zh": "设计 · 界面优化"
+    },
+    "seo": {
+      "title": {
+        "en": "Impeccable by pbakaus | Installation & Guide",
+        "zh": "Impeccable by pbakaus：安装与使用指南"
+      },
+      "description": {
+        "en": "Design, audit, and refine interfaces through a single Skill with focused commands and rendered verification. Explore installation options, use cases, and a practical guide.",
+        "zh": "通过单个 Skill 与专项命令设计、检查和优化界面，并核对实际渲染结果。了解安装方式、适用场景、操作步骤与使用要求。"
+      },
+      "keywords": {
+        "en": [
+          "Impeccable by pbakaus",
+          "impeccable"
+        ],
+        "zh": [
+          "Impeccable by pbakaus",
+          "impeccable"
+        ]
+      }
+    },
+    "hero": {
+      "eyebrow": {
+        "en": "",
+        "zh": ""
+      },
+      "title": {
+        "en": "Impeccable by pbakaus",
+        "zh": "Impeccable by pbakaus"
+      },
+      "description": {
+        "en": "Use Impeccable by pbakaus to design, critique, and refine frontend interfaces through one Skill and its commands. Review hierarchy, typography, responsive behavior, and edge cases, preserve the project’s intended identity, and inspect rendered results as you improve the surface for its actual users.",
+        "zh": "使用 pbakaus 的 Impeccable，通过一个 Skill 及其命令设计、审查与优化前端界面。围绕层级、字体、响应式和边界状态选择工作方式，结合项目既定身份与用户任务实施修改，再查看渲染结果，确认改进在实际页面中成立。"
+      }
+    },
+    "summary": {
+      "en": "Design, audit, and refine interfaces through a single Skill with focused commands and rendered verification.",
+      "zh": "通过单个 Skill 与专项命令设计、检查和优化界面，并核对实际渲染结果。"
+    },
+    "cardDescription": {
+      "en": "Design, audit, and refine interfaces through a single Skill with focused commands and rendered verification.",
+      "zh": "通过单个 Skill 与专项命令设计、检查和优化界面，并核对实际渲染结果。"
+    },
+    "upstreamInstall": "npx impeccable install",
+    "pageCopy": {
+      "kind": {
+        "en": "Design Skill and command workflow",
+        "zh": "设计 Skill 与命令流程"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Impeccable",
+        "paragraphs": [
+          "Impeccable is a design Skill and supporting tool workflow published by pbakaus. Its single Skill routes interface tasks to commands such as audit, critique, polish, and harden, rather than treating each command as a separate capability package. The current distribution includes a launcher and a self-contained engine, with provider-specific installation and optional native hooks. It reads project context to distinguish refinement from redesign and adjusts the approach to the type of surface. Use it with a concrete interface, a user task, and the identity or behavior that must remain. Installation details differ by host, and rendered verification remains part of the design work."
+        ]
+      },
+      "zh": {
+        "title": "关于 Impeccable",
+        "paragraphs": [
+          "Impeccable 是 pbakaus 发布的设计 Skill 与配套工具流程。它通过单个 Skill 调度 audit、critique、polish、harden 等命令，不应把每条命令视为独立能力包。当前发行包含启动器与独立引擎，并按宿主提供不同安装方式和可选原生 Hook。它读取项目上下文，区分保留既有方向的优化与重新设计，再根据界面类型选择方法。使用时应提供具体页面、用户任务，以及必须保留的身份或行为。不同宿主的安装细节需要分别核对，设计过程也仍需检查真实渲染结果。"
+        ]
+      }
+    },
+    "sectionTitles": {
+      "useCases": {
+        "en": "Use Cases for Impeccable",
+        "zh": "Impeccable 的使用场景"
+      },
+      "useCasesDescription": {
+        "en": "Explore interface work with a specific quality problem or a clear redesign goal. Audit a working screen, polish a nearly finished page, or harden forms and empty states, choosing the command that matches the task while keeping existing product truth and user behavior in view.",
+        "zh": "探索有具体质量问题或明确重做目标的界面任务，例如检查工作页面、打磨接近完成的设计，或补齐表单和空状态。选择与任务匹配的命令，同时核对产品事实、现有交互和需要保留的视觉方向。"
+      },
+      "how": {
+        "en": "How to Use Impeccable",
+        "zh": "How to 使用 Impeccable"
+      },
+      "howDescription": {
+        "en": "Install Impeccable for your host, then initialize a new project with /impeccable init or check its existing product context. Give the agent a specific interface task, distinguish refinement from redesign, and inspect the rendered result at representative sizes before accepting changes.",
+        "zh": "按宿主安装 Impeccable，新项目先运行 /impeccable init，已有项目先核对产品上下文。再向 Agent 指定具体界面任务，区分保留原方向的优化与重新设计，并在代表性尺寸下检查渲染结果。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "1",
+          "zh": "1"
+        },
+        "title": {
+          "en": "Audit an existing interface",
+          "zh": "检查已有界面"
+        },
+        "body": {
+          "en": "Use a targeted audit or critique to identify hierarchy, interaction, accessibility, or responsive issues in a known screen.",
+          "zh": "围绕指定页面开展 audit 或 critique，定位层级、交互、无障碍或响应式问题。"
+        }
+      },
+      {
+        "label": {
+          "en": "2",
+          "zh": "2"
+        },
+        "title": {
+          "en": "Polish a nearly finished page",
+          "zh": "打磨接近完成的页面"
+        },
+        "body": {
+          "en": "Refine typography, alignment, spacing, and consistency while preserving the interface direction and behavior that already work.",
+          "zh": "保留已确定的方向与正常行为，进一步核对字体、对齐、间距和一致性。"
+        }
+      },
+      {
+        "label": {
+          "en": "3",
+          "zh": "3"
+        },
+        "title": {
+          "en": "Harden form and edge states",
+          "zh": "补齐表单与边界状态"
+        },
+        "body": {
+          "en": "Review validation, errors, loading, and empty states so the page continues to guide users when ordinary input or data is missing.",
+          "zh": "检查验证、错误、加载和空状态，让页面在输入或数据不完整时仍能指导用户。"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Install and initialize the project",
+          "zh": "安装并初始化项目"
+        },
+        "body": {
+          "en": "Use the provider-specific installer and reload the host. In a new project, run /impeccable init inside the agent to establish PRODUCT.md; for an existing project, review that context and follow any hook-trust prompts.",
+          "zh": "使用对应宿主安装器并重新加载。新项目先在 Agent 内运行 /impeccable init，建立 PRODUCT.md；已有项目核对该上下文，并处理相关 Hook 信任提示。"
+        }
+      },
+      {
+        "title": {
+          "en": "Scope the interface task",
+          "zh": "限定界面任务"
+        },
+        "body": {
+          "en": "Provide the route or source file and explain what must remain. Choose the relevant command and distinguish refinement from redesign.",
+          "zh": "提供路由或源码文件，说明需要保留的部分，选择相关命令并区分优化与重做。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review rendered changes",
+          "zh": "检查渲染改动"
+        },
+        "body": {
+          "en": "Inspect the updated interface at the sizes it supports. Verify interaction and content, then refine the issues that the rendered result reveals.",
+          "zh": "在目标尺寸检查更新界面，核对交互与内容，再修正渲染结果暴露的具体问题。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use Impeccable to audit this checkout form. Preserve the existing visual identity, focus on hierarchy, keyboard use, validation, and empty or error states, and report findings before editing.",
+        "zh": "使用 Impeccable 检查这个结账表单。保留现有视觉身份，重点检查层级、键盘使用、验证及空白或错误状态，先报告发现再修改。"
+      }
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Are audit and polish separate Skills?",
+          "zh": "audit 和 polish 是独立 Skill 吗？"
+        },
+        "answer": {
+          "en": "In the current distribution, commands route through the single impeccable Skill. Standalone shortcuts can be pinned, but that does not make each command an independent package.",
+          "zh": "当前发行通过单个 impeccable Skill 路由这些命令。可以固定快捷入口，但这不代表每条命令都是独立包。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does a plain SKILL.md copy install the complete setup?",
+          "zh": "只复制 SKILL.md 就能完成全部安装吗？"
+        },
+        "answer": {
+          "en": "No. The current workflow includes references, a launcher, an engine, and provider-specific packaging. Use the documented installer or complete distribution for your host rather than copying only the entry file.",
+          "zh": "不能。当前流程还包含参考文件、启动器、引擎及宿主包装，应使用对应宿主的官方安装器或完整发行，而不是只复制入口文件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why does installation mention hooks?",
+          "zh": "为什么安装时会提到 Hook？"
+        },
+        "answer": {
+          "en": "Some providers receive native hooks in addition to the Skill. Their trust and activation rules differ by host; follow the upstream verification instructions and review any requested project hook approval.",
+          "zh": "部分宿主除 Skill 外还会获得原生 Hook。信任与启用规则因宿主而异，需要按上游说明核对，并审阅相关项目 Hook 授权。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does Impeccable require Node at runtime?",
+          "zh": "Impeccable 运行时必须依赖 Node 吗？"
+        },
+        "answer": {
+          "en": "The README describes a self-contained engine launched by a small script. Node is used by the npx installer path; the manual and Git setup paths have different requirements. The engine may be downloaded on first use.",
+          "zh": "README 描述了由小脚本启动的独立引擎。npx 安装路径会使用 Node，手动和 Git 设置路径要求不同；首次使用可能下载引擎。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will a refinement request replace my whole design?",
+          "zh": "优化请求会替换整个设计吗？"
+        },
+        "answer": {
+          "en": "The source distinguishes refinement from redesign. State which identity, content, behavior, and scope must stay; a refinement should work within those constraints rather than silently choosing a new visual world.",
+          "zh": "原始说明区分优化与重做。应明确必须保留的身份、内容、行为与范围；优化需要遵守这些约束，不应悄悄换成新的视觉方向。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use it when the app cannot run locally?",
+          "zh": "应用无法本地运行时还能使用吗？"
+        },
+        "answer": {
+          "en": "The source allows inspecting existing visual evidence and project context, but freshness and correspondence matter. Mark what cannot be rendered or verified instead of presenting a source-only review as a tested interface.",
+          "zh": "原始说明允许检查已有视觉证据与项目上下文，但需要确认其新旧程度及对应关系。无法渲染或验证的部分应注明，不能把源码审查说成已测试界面。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini-cli",
+        "github-copilot",
+        "opencode",
+        "auto"
+      ],
+      "commands": {
+        "claude-code": "npx impeccable install --providers=claude",
+        "codex": "npx impeccable install --providers=codex",
+        "cursor": "npx impeccable install --providers=cursor",
+        "gemini-cli": "npx impeccable install --providers=gemini",
+        "github-copilot": "npx impeccable install --providers=github",
+        "opencode": "npx impeccable install --providers=opencode",
+        "auto": "npx impeccable install"
+      },
+      "note": {
+        "en": "The installer offers project or global scope and installs the launcher and provider-specific setup. Reload the host; for a new project, run /impeccable init inside the agent to establish PRODUCT.md. For an existing project, check its product context and any hook-trust requirements before continuing.",
+        "zh": "安装器提供当前项目或全局范围，并准备启动器与宿主配置。重新加载宿主；新项目先在 Agent 内运行 /impeccable init，建立 PRODUCT.md。已有项目先核对产品上下文及相关 Hook 信任要求，再继续操作。"
+      }
+    }
+  }
+]

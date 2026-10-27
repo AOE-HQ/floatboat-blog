@@ -71,9 +71,11 @@ function faqAnswerPlainText(text: string): string {
 export function FaqBand({
   items,
   locale,
+  title,
 }: {
   items: FaqItem[];
   locale: "en" | "zh";
+  title?: string;
 }) {
   if (items.length === 0) {
     return null;
@@ -94,7 +96,7 @@ export function FaqBand({
         <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-10">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8 text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] md:text-3xl">
-              {FAQ_TITLES[locale]}
+              {title ?? FAQ_TITLES[locale]}
             </h2>
             <div className="divide-y divide-[var(--ob-color-border)]">
               {items.map((item, index) => (
