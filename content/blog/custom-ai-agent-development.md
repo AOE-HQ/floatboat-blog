@@ -14,7 +14,7 @@ Custom AI agent development is not “add a model to an app.” It is the design
 
 That distinction changes the buying question. Before asking which framework or model to use, determine whether the work needs model-directed action at all. Then turn the business process into a testable requirements contract. A good custom agent is not defined by an impressive demo; it is defined by which work it completes, which actions it cannot take, how failures surface, and what the owner receives at handover.
 
-This article owns the **product and engineering specification**: what to build and how to know it is ready. If you are comparing agencies, freelancers, contract structure, or a paid pilot, use the companion guide to [AI agent development services](/blog/ai-agent-development-services).
+Start with a **product and engineering specification**: define what to build and how to know it is ready. If you are comparing agencies, freelancers, contract structure, or a paid pilot, use the companion guide to [AI agent development services](/blog/ai-agent-development-services).
 
 ## First decide whether the work needs an agent
 

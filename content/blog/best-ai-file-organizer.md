@@ -67,7 +67,7 @@ The [FilesDesk pricing page](https://filesdesk.app/pricing) currently lists 15 t
 
 AI File Sorter is the open-source proof that local-first organizing works without a vendor. The Qt app for Windows, macOS, and Linux runs built-in GGUF models on your hardware — Gemma 3 4B IT as the default visual model, with Mistral 7B available for text — analyzing images by vision, documents by text, and audio/video by embedded metadata. It suggests folders and filenames in the same run, nothing applies until you review and approve in a dry-run preview, and persistent undo, category whitelists, and project-folder protection make large cleanups safe.
 
-Cost and inspectability are the headline: local inference is free, and the repository exposes its supported models and workflow. The trade-offs are setup and support rather than an invented polish score: you must install or download a model, check the current release for your OS, and decide who owns recovery when something goes wrong. Review the [project repository](https://github.com/hyperfield/ai-file-sorter) before installing; repository activity can change faster than an article.
+Cost and inspectability are the headline: local inference is free, and the repository exposes its supported models and workflow. Setup and ongoing support require your attention: you must install or download a model, check the current release for your OS, and decide who owns recovery when something goes wrong. Review the [project repository](https://github.com/hyperfield/ai-file-sorter) before installing; repository activity can change faster than an article.
 
 ### 5. NameQuick — Best Watched Rename and Invoice Pipeline on Mac and Windows
 

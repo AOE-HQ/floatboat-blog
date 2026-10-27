@@ -102,7 +102,7 @@
         },
         {
           "question": "Must I switch products to use these workflow ideas?",
-          "answer": "No. You can first use Codex as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+          "answer": "No. You can first use Codex as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
       ]
     },
@@ -172,7 +172,7 @@
       "faq": [
         {
           "question": "Codex 是模型还是 Agent Harness？",
-          "answer": "本页介绍的是 Codex 的开源 Agent 与 harness 实现，负责组织上下文、工具和任务执行。它使用的模型属于系统的另一部分，不能把运行层开源理解为模型权重也在此仓库中。"
+          "answer": "Codex 的开源项目提供 Agent 与 harness 实现，负责组织上下文、工具和任务执行。它使用的模型属于系统的另一部分，不能把运行层开源理解为模型权重也在此仓库中。"
         },
         {
           "question": "CLI、SDK 和 app-server 有什么区别？",
@@ -192,7 +192,7 @@
         },
         {
           "question": "借鉴这些机制是否需要更换工作工具？",
-          "answer": "不需要。可以先将 Codex 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+          "answer": "不需要。可以先将 Codex 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
       ]
     },
@@ -300,7 +300,7 @@
         },
         {
           "question": "Must I switch products to use these workflow ideas?",
-          "answer": "No. You can first use DeepSeek Harness as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+          "answer": "No. You can first use DeepSeek Harness as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
       ]
     },
@@ -390,7 +390,7 @@
         },
         {
           "question": "借鉴这些机制是否需要更换工作工具？",
-          "answer": "不需要。可以先将 DeepSeek Harness 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+          "answer": "不需要。可以先将 DeepSeek Harness 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
       ]
     },
@@ -498,7 +498,7 @@
         },
         {
           "question": "Must I switch products to use these workflow ideas?",
-          "answer": "No. You can first use Pi as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+          "answer": "No. You can first use Pi as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
       ]
     },
@@ -580,7 +580,7 @@
         },
         {
           "question": "子 Agent 和规划模式默认就有吗？",
-          "answer": "项目有意不将这类能力作为核心默认功能。扩展或包可以补充，但需要根据实际配置核对，不能统一宣称开箱即用。"
+          "answer": "项目有意不将这类能力作为核心默认功能。扩展或包可以补充，是否可用取决于所选扩展、包和会话配置。"
         },
         {
           "question": "Skill 与扩展在 Pi 中有什么区别？",
@@ -588,7 +588,7 @@
         },
         {
           "question": "借鉴这些机制是否需要更换工作工具？",
-          "answer": "不需要。可以先将 Pi 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+          "answer": "不需要。可以先将 Pi 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
       ]
     },
@@ -622,7 +622,7 @@
       ],
       "overviewTitle": "About OpenCode",
       "overview": [
-        "OpenCode is an open-source AI coding agent published by Anomaly. It provides an application around coding tasks rather than simply a model endpoint. The public project is best introduced by its own coding-agent positioning, with the model and execution environment explained separately.",
+        "OpenCode is an open-source AI coding agent published by Anomaly. It connects task conversations with repository tools. The model service supplies reasoning and generation, the execution environment handles files and commands, and the application coordinates the workflow.",
         "For workflow design, OpenCode is a concrete implementation to study rather than a requirement to switch products. Its agent modes and interactive feedback can inform how you separate investigation from implementation, expose a change for review, and add task-specific integrations to your own environment.",
         "The project source is MIT licensed. Model-provider accounts, subscription access, remote services, and community additions have separate requirements. The source can be inspected and adapted without implying that all associated hosted services are free or included."
       ],
@@ -677,7 +677,7 @@
       "faq": [
         {
           "question": "Is OpenCode a model provider?",
-          "answer": "The project on this page is a coding-agent application. Its interface and execution workflow are separate from whichever model service is configured for a particular session."
+          "answer": "OpenCode is a coding-agent application that provides the interface and execution workflow. The model used by a session depends on its provider configuration; the application and model service have different responsibilities."
         },
         {
           "question": "Should OpenCode be called a Skill?",
@@ -697,7 +697,7 @@
         },
         {
           "question": "Must I switch products to use these workflow ideas?",
-          "answer": "No. You can first use OpenCode as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+          "answer": "No. You can first use OpenCode as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
       ]
     },
@@ -712,7 +712,7 @@
       ],
       "overviewTitle": "关于 OpenCode",
       "overview": [
-        "OpenCode 是 Anomaly 发布的开源 AI 编程 Agent，为代码任务提供完整的交互与执行应用，而非一个单纯的模型接口。介绍时应保留其编程 Agent 定位，并分别解释模型和执行环境。",
+        "OpenCode 是 Anomaly 发布的开源 AI 编程 Agent，将任务对话与仓库中的开发工具连接起来。模型服务提供生成与推理能力，执行环境负责文件访问和命令运行，应用则组织这些环节之间的协作。",
         "在工作流设计中，OpenCode 提供了可以研究的具体实现，而不是要求用户更换产品。可以借鉴其 Agent 模式与交互反馈，区分理解与实施、呈现待审阅修改，并评估如何为自己的环境增加任务集成。",
         "项目源码采用 MIT 许可。模型服务账号、订阅访问、远程服务和社区扩展各有独立要求。可以研究和修改源码，但不能据此认为全部相关托管服务均免费或包含在内。"
       ],
@@ -767,7 +767,7 @@
       "faq": [
         {
           "question": "OpenCode 是模型提供商吗？",
-          "answer": "本页介绍的是编程 Agent 应用，它提供交互与执行工作流，和具体会话配置的模型服务是不同层次。"
+          "answer": "OpenCode 是编程 Agent 应用，负责交互与执行工作流。具体模型由会话配置决定，应用与模型服务分别承担不同职责。"
         },
         {
           "question": "OpenCode 应归为 Skill 吗？",
@@ -787,7 +787,7 @@
         },
         {
           "question": "借鉴这些机制是否需要更换工作工具？",
-          "answer": "不需要。可以先将 OpenCode 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+          "answer": "不需要。可以先将 OpenCode 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
       ]
     },
@@ -891,7 +891,7 @@
         },
         {
           "question": "Must I switch products to use these workflow ideas?",
-          "answer": "No. You can first use Hermes Agent as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+          "answer": "No. You can first use Hermes Agent as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         },
         {
           "question": "Who maintains Hermes Agent and its source license?",
@@ -981,7 +981,7 @@
         },
         {
           "question": "借鉴这些机制是否需要更换工作工具？",
-          "answer": "不需要。可以先将 Hermes Agent 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+          "answer": "不需要。可以先将 Hermes Agent 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         },
         {
           "question": "Hermes Agent 由谁维护，源码采用什么许可？",
@@ -1089,7 +1089,7 @@
         },
         {
           "question": "Must I switch products to use these workflow ideas?",
-          "answer": "No. You can first use Kimi Code CLI as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+          "answer": "No. You can first use Kimi Code CLI as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         },
         {
           "question": "Does MIT cover a Kimi subscription?",
@@ -1179,7 +1179,7 @@
         },
         {
           "question": "借鉴这些机制是否需要更换工作工具？",
-          "answer": "不需要。可以先将 Kimi Code CLI 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+          "answer": "不需要。可以先将 Kimi Code CLI 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         },
         {
           "question": "MIT 许可是否覆盖 Kimi 订阅？",
@@ -1291,7 +1291,7 @@
         },
         {
           "question": "Must I switch products to use these workflow ideas?",
-          "answer": "No. You can first use ZCode as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; this guide does not establish a ready-made Floatboat integration."
+          "answer": "No. You can first use ZCode as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
       ]
     },
@@ -1381,7 +1381,7 @@
         },
         {
           "question": "借鉴这些机制是否需要更换工作工具？",
-          "answer": "不需要。可以先将 ZCode 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；本页不代表已有现成的 Floatboat 集成。"
+          "answer": "不需要。可以先将 ZCode 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
       ]
     },

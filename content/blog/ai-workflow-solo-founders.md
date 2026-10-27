@@ -14,7 +14,7 @@ The best **AI workflow for a solo founder** is not the stack with the most tools
 
 This article covers system design—what components the workflow needs and how they fit together. If you already know the target workflow and want a build sequence, use the companion guide: [how to implement an AI workflow for a solo business](/blog/ai-workflow-for-solo-founders).
 
-This page answers **what the operating system should contain**: boundaries, state, review, records, and recovery. It deliberately does not repeat the companion page's audit, pilot, and rollout sequence. Standards and product references were checked on October 13, 2026.
+The operating system needs clear boundaries, state, review, records, and recovery. Standards and product references were checked on October 13, 2026.
 
 ## Start with work, not software
 

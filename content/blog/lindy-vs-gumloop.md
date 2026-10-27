@@ -44,7 +44,7 @@ Consider Gumloop when a repeated data or document process benefits from visible 
 
 ## Shared limitations
 
-Both can fail through bad source data, broad credentials, ambiguous instructions, model error, or an unhandled external-system change. Neither removes the need for least privilege, logs, acceptance tests, and an owner. Current pricing and credits should be measured in the pilot, not copied into a timeless article.
+Both can fail through bad source data, broad credentials, ambiguous instructions, model error, or an unhandled external-system change. Neither removes the need for least privilege, logs, acceptance tests, and an owner. Measure current pricing and credit consumption during the pilot to estimate the cost of your own workload.
 
 ## Original visual references
 

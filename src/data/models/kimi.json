@@ -45,12 +45,12 @@
   "positioning": {
     "eyebrow": { "en": "Kimi K3 model overview", "zh": "Kimi K3 模型概览" },
     "title": {
-      "en": "Prepared for long source sets, without implying a public entry.",
-      "zh": "为大型资料集做好底层准备，但不暗示已有公开入口。"
+      "en": "Configured for long source sets; access is not currently available through the main client picker.",
+      "zh": "已配置大型资料集处理能力，当前默认模型选择器尚未提供入口。"
     },
     "description": {
-      "en": "Kimi K3 has a defined capacity role below the picker. This page explains that role and its current boundary.",
-      "zh": "Kimi K3 在选择器下层已有明确容量定位；本页说明它准备处理什么，以及当前边界。"
+      "en": "Kimi K3 is configured for long-text workloads, but it is not currently selectable in the main client picker.",
+      "zh": "Kimi K3 已配置长文本处理能力，但当前客户端默认模型选择器尚未提供入口。"
     },
     "traits": [
       {
@@ -84,7 +84,7 @@
         "label": { "en": "Boundary", "zh": "当前边界" },
         "value": { "en": "No main-picker access", "zh": "主选择器不可选" },
         "description": {
-          "en": "Configured capacity is not a public launch claim.",
+          "en": "The model has a capacity configuration but no current client selection entry.",
           "zh": "容量已配置不代表已经公开上线。"
         }
       }
@@ -119,8 +119,8 @@
       "zh": "已配置角色重点在于保持长材料的整体性。"
     },
     "description": {
-      "en": "These are readiness scenarios, not claims of current picker availability.",
-      "zh": "以下是容量定位场景，不代表当前可在选择器使用。"
+      "en": "The following tasks match its intended long-text role. They require a supported access path; Kimi K3 is not currently selectable in the main client picker.",
+      "zh": "以下任务对应其长文本定位；实际执行需要受支持的入口，当前客户端默认选择器尚不能选择 Kimi K3。"
     },
     "items": [
       {
@@ -160,8 +160,8 @@
           "zh": "评估未来 Kimi 使用方式，但不假设已经上线。"
         },
         "process": {
-          "en": "Use the exact ID and readiness boundary recorded here.",
-          "zh": "依据本页记录的准确 ID 与就绪边界规划。"
+          "en": "Plan around the exact `kimi-k3` ID, configured context budget, and current access limits.",
+          "zh": "结合 `kimi-k3` 型号、已配置上下文预算与当前访问限制规划任务。"
         },
         "outcome": {
           "en": "A plan that does not confuse capacity with availability.",
@@ -219,13 +219,13 @@
   },
   "selection": {
     "title": {
-      "en": "Treat Kimi K3 as configured capacity, not a selectable promise.",
-      "zh": "把 Kimi K3 视为已配置容量，而不是可选择承诺。"
+      "en": "Plan long-text work around current Kimi K3 access limits.",
+      "zh": "结合当前访问限制规划 Kimi K3 长文本任务。"
     },
     "choose": {
       "title": {
-        "en": "This profile is relevant when",
-        "zh": "这个画像适用于评估"
+        "en": "Useful for evaluating",
+        "zh": "适合评估的需求"
       },
       "items": [
         {

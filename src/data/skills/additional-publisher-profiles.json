@@ -197,11 +197,11 @@
       "heroTitle": "Jesse Vincent",
       "heroDescription": "Explore Jesse Vincent’s Agent workflow work under the GitHub handle obra, including Superpowers. Learn how planning, debugging, testing, and implementation Skills fit together, then choose a task-specific guide and check the setup for your coding agent.",
       "aboutTitle": "About Jesse Vincent",
-      "about": "Jesse Vincent publishes software under the GitHub handle obra. Superpowers is one of the projects represented here: a software-development methodology built from composable Skills and instructions for coding agents. Its workflow connects requirements and design discussions to implementation planning, testing, and review. The individual Skills have distinct jobs, so brainstorming and systematic debugging should be introduced through the tasks they support rather than described as interchangeable prompts. Installation varies by host and may include plugin or environment setup beyond copying a single file. This page presents selected work and links to the original repositories for the current scope.",
+      "about": "Jesse Vincent publishes software under the GitHub handle obra. Superpowers organizes a software-development methodology through composable Skills for coding agents, connecting requirements and design to planning, testing, and review. Brainstorming clarifies a proposal, while systematic debugging investigates a failure; the Skills serve different stages of a task. Setup depends on the host and can require plugins or environment configuration beyond a single instruction file.",
       "overview": {
         "title": "About Jesse Vincent",
         "paragraphs": [
-          "Jesse Vincent publishes software under the GitHub handle obra. Superpowers is one of the projects represented here: a software-development methodology built from composable Skills and instructions for coding agents. Its workflow connects requirements and design discussions to implementation planning, testing, and review. The individual Skills have distinct jobs, so brainstorming and systematic debugging should be introduced through the tasks they support rather than described as interchangeable prompts. Installation varies by host and may include plugin or environment setup beyond copying a single file. This page presents selected work and links to the original repositories for the current scope."
+          "Jesse Vincent publishes software under the GitHub handle obra. Superpowers organizes a software-development methodology through composable Skills for coding agents, connecting requirements and design to planning, testing, and review. Brainstorming clarifies a proposal, while systematic debugging investigates a failure; the Skills serve different stages of a task. Setup depends on the host and can require plugins or environment configuration beyond a single instruction file."
         ]
       },
       "projectsTitle": "Jesse Vincent Projects and Tools",
@@ -267,7 +267,7 @@
       "faq": [
         {
           "question": "obra 仓库由谁发布？",
-          "answer": "obra 的公开 GitHub 主页标识为 Jesse Vincent，可通过主页与项目仓库追溯本页介绍的作品。"
+          "answer": "obra 是 Jesse Vincent 使用的 GitHub 账号，其公开主页和项目仓库提供作品归属与维护信息。"
         },
         {
           "question": "Superpowers 是模型吗？",

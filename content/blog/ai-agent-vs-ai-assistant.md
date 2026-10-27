@@ -12,7 +12,7 @@ draft: false
 
 An AI assistant helps a person perform a task. An AI agent can be delegated an outcome and choose actions toward it within a defined environment. The boundary is not the chat interface, model name, memory feature, or product label. It is **who controls the next step and what authority the system can exercise**.
 
-This article owns the assistant comparison: interaction model, triggers, tools, permissions, state, supervision, risk, and evaluation. The separate [AI agent vs chatbot guide](/blog/ai-agent-vs-chatbot) owns the broader taxonomy of chatbot, workflow, and agent architectures.
+Compare assistants and agents through their interaction model, triggers, tools, permissions, state, supervision, risk, and evaluation. For the broader differences between chatbot, workflow, and agent architectures, see the [AI agent vs chatbot guide](/blog/ai-agent-vs-chatbot).
 
 > **Verified October 13, 2026:** Product labels remain inconsistent. The comparison below classifies systems by control, authority, and supervision rather than vendor naming.
 

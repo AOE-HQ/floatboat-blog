@@ -57,9 +57,9 @@ Once a model is officially exposed, evaluate it on completion quality, review ti
 
 ## What would count as a real Floatboat launch
 
-A model should be described as “available in Floatboat” only when it appears in the confirmed client selector or another documented product entry point. Capacity configuration alone is not enough. A proper launch should identify the exact model ID, visible name, entry point, eligibility rules, and whether users need their own API key.
+To check availability in Floatboat, look for the model in the current client selector or another documented product entry point. Capacity configuration alone does not provide access. Check the exact model ID, visible name, entry point, eligibility rules, and whether your own API key is required.
 
-Until such an announcement exists, the accurate statement is narrow: GPT-5.6 Sol and Terra have underlying Floatboat configuration, while Luna is not in the confirmed matrix. None of the three should be marketed here as a default-picker option.
+The confirmed configuration includes GPT-5.6 Sol and Terra; Luna is absent from that matrix. None of the three is confirmed as an option in the default model picker.
 
 ## Bottom line
 

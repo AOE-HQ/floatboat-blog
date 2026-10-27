@@ -10,7 +10,7 @@ locale: "en"
 draft: false
 ---
 
-**Information checked October 13, 2026.** GPT Image 2 remains available, but OpenAI now documents newer GPT Image 2.5 models for new API work. This page preserves a GPT Image 2 workflow rather than treating an April launch claim as a current model ranking.
+**Information checked October 13, 2026.** GPT Image 2 remains available, but OpenAI now documents newer GPT Image 2.5 models for new API work. The workflow below uses GPT Image 2; an April launch announcement does not establish its ranking against newer models.
 
 GPT Image 2 can help a solo comic creator move from a written beat sheet to editable panel candidates. It does not guarantee character continuity, correct lettering, publishable anatomy, or rights clearance. The reliable unit of work is not “generate a chapter”; it is a panel with a named reference set, acceptance criteria, and a human review step.
 

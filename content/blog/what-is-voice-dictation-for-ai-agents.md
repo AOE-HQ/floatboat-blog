@@ -15,7 +15,7 @@ draft: false
 - **Voice dictation for AI agents** is the practice of using speech to supply text input to an AI agent—prompts, instructions, and context—while the agent responds in text (or through tools), not in spoken conversation. You talk; the agent reads and acts. The output channel is not voice.
 - It differs from **voice mode** (two-way spoken dialogue), **system-wide dictation** (speech-to-text into any app field), and **voice agents** (full speech-in, speech-out runtimes). Confusing these four shapes is the main reason buyers pick the wrong tool.
 - A practical **job-shape taxonomy** sorts the market into five buckets: prompt dictation (A), two-way voice agents (B), document-centric co-authoring (C), meeting voice capture (D), and OS-level dictation layers (E). Most "agentic dictation" marketing collapses A and B; this article keeps them separate.
-- The category is accelerating because coding agents, desktop assistants, and calendar-driven workflows all need faster intent transfer than typing allows—yet most SERP explainers still treat dictation as generic speech-to-text rather than agent-specific input design.
+- The category is accelerating because coding agents, desktop assistants, and calendar-driven workflows all need faster intent transfer than typing allows—agent input also needs to handle task structure, technical terms, and references beyond generic speech-to-text.
 
 ---
 

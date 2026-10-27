@@ -46,4 +46,4 @@ This article no longer recommends a five-product matrix because the cited featur
 
 Microsoft's [Windows Search indexing guidance](https://support.microsoft.com/en-us/windows/experience/performance-optimization/search-indexing-in-windows) can help after moves, but better indexing does not replace a predictable folder structure.
 
-Floatboat-specific Windows support, endpoint processing, upload behavior, pricing, and rollback should be stated here only when backed by current public product documentation. Until then, evaluate it with the same checklist rather than assuming native Windows support, zero upload, no token metering, or one-click batch rollback.
+Before using Floatboat for this workflow, check the current product documentation for Windows support, processing location, upload behavior, pricing, and recovery options. These details determine whether it fits your files and operating environment.

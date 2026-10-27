@@ -30,7 +30,7 @@ Chatbot 主要是对话界面：用户发消息，系统返回回答。Agent 接
 
 产品里的名称会重叠：Chatbot 可以带搜索，Assistant 可以执行工具，Agent 也可以用聊天作为入口。判断时应看架构、权限和实际行为，而不是营销名称。
 
-本文只维护 Chatbot 边界。若要进一步区分“仍由用户驱动的 Assistant”与“接管更多任务的 Agent”，见 [AI Agent 与 AI Assistant](/zh/blog/ai-agent-vs-ai-assistant)。
+若要进一步区分“仍由用户驱动的 Assistant”与“接管更多任务的 Agent”，见 [AI Agent 与 AI Assistant](/zh/blog/ai-agent-vs-ai-assistant)。
 
 ## 差异背后的架构
 

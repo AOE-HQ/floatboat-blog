@@ -50,8 +50,8 @@
       "zh": "为中文与混合资料集准备的长文本路径。"
     },
     "description": {
-      "en": "Qwen 3.7 Max has a registered context role below the picker, with no claim of current direct access.",
-      "zh": "Qwen 3.7 Max 已在选择器下层登记长文本定位，但当前不声称可以直接使用。"
+      "en": "Qwen 3.7 Max is configured for long-text work but is not currently available in the main client picker.",
+      "zh": "Qwen 3.7 Max 已配置长文本处理能力，但当前客户端默认模型选择器尚未提供入口。"
     },
     "traits": [
       {
@@ -66,8 +66,8 @@
         "label": { "en": "Language fit", "zh": "语言场景" },
         "value": { "en": "Chinese long-form work", "zh": "中文长篇工作" },
         "description": {
-          "en": "Its page focuses on the confirmed long-text role, not generic claims.",
-          "zh": "本页聚焦已确认的长文本定位，不扩展泛化能力宣称。"
+          "en": "Its current configuration is intended for long-text tasks.",
+          "zh": "当前配置主要面向长文本任务。"
         }
       },
       {
@@ -95,8 +95,8 @@
       "zh": "一个已登记型号，对应明确的长文本定位。"
     },
     "description": {
-      "en": "This page documents configuration readiness without presenting Qwen as a current picker option.",
-      "zh": "本页记录配置就绪状态，不把 Qwen 表述为当前客户端可选项。"
+      "en": "Qwen 3.7 Max has a capacity configuration but no current entry in the main client picker.",
+      "zh": "Qwen 3.7 Max 已配置容量，但当前默认模型选择器尚无入口。"
     },
     "items": [
       {
@@ -117,8 +117,8 @@
       "zh": "面向不应被拆成孤立片段的长文档。"
     },
     "description": {
-      "en": "These scenarios explain the configured role without presenting a live client feature.",
-      "zh": "这些场景用于说明已配置角色，不把它表述为已上线客户端功能。"
+      "en": "These tasks match the model’s configured long-text role. A supported access path is required before they can run.",
+      "zh": "以下任务对应已配置的长文本用途，实际执行前需要确认受支持的访问方式。"
     },
     "items": [
       {
@@ -152,7 +152,7 @@
         }
       },
       {
-        "title": { "en": "Readiness planning", "zh": "就绪规划" },
+        "title": { "en": "Workflow access planning", "zh": "工作流访问规划" },
         "brief": {
           "en": "Plan a future Qwen route using confirmed runtime facts.",
           "zh": "基于已确认运行时事实规划未来 Qwen 路径。"
@@ -162,8 +162,8 @@
           "zh": "使用准确 ID、预算、通道与当前入口边界。"
         },
         "outcome": {
-          "en": "A plan without premature availability claims.",
-          "zh": "一份不提前声称可用性的计划。"
+          "en": "A workflow plan with an explicit model-access requirement.",
+          "zh": "明确模型访问前提的工作流计划。"
         }
       }
     ]
@@ -171,12 +171,12 @@
   "capabilities": {
     "eyebrow": { "en": "Configured foundation", "zh": "已配置基础" },
     "title": {
-      "en": "A precise record of what is ready.",
-      "zh": "准确记录已经准备好的部分。"
+      "en": "Long-text capacity and current access.",
+      "zh": "长文本容量与当前访问状态。"
     },
     "description": {
-      "en": "The page stays within the confirmed runtime matrix.",
-      "zh": "页面严格遵循已确认的运行时矩阵。"
+      "en": "The `qwen-3.7-max` configuration includes a long-text channel and a 1M capacity budget. The model is not currently in the main client picker.",
+      "zh": "`qwen-3.7-max` 已配置长文本通道与 1M 容量预算，当前尚未出现在客户端默认模型选择器中。"
     },
     "items": [
       {
@@ -211,13 +211,13 @@
   },
   "selection": {
     "title": {
-      "en": "Use this page to understand readiness, not to start a Qwen session.",
-      "zh": "用本页了解就绪状态，而不是开始 Qwen 会话。"
+      "en": "Evaluate Qwen 3.7 Max with its current access limits.",
+      "zh": "结合当前访问限制评估 Qwen 3.7 Max。"
     },
     "choose": {
       "title": {
-        "en": "This profile matters when",
-        "zh": "这个画像适用于评估"
+        "en": "Useful for evaluating",
+        "zh": "适合评估的需求"
       },
       "items": [
         {
@@ -288,12 +288,12 @@
     },
     {
       "question": {
-        "en": "What workload is this profile intended for?",
-        "zh": "这个画像面向什么工作负载？"
+        "en": "Which workloads is Qwen 3.7 Max configured for?",
+        "zh": "Qwen 3.7 Max 已配置哪些工作用途？"
       },
       "answer": {
-        "en": "It is positioned for long textual source sets, including extended Chinese document work, without claiming broader unconfirmed capabilities.",
-        "zh": "它面向长文本资料集，包括长篇中文文档工作；页面不会扩展声称其他未确认能力。"
+        "en": "Its configured role covers long textual source sets, including extended Chinese document work. Suitability for other tasks requires separate evaluation.",
+        "zh": "其已配置角色面向长文本资料集，包括长篇中文文档处理。其他任务的适用性需要另行验证。"
       }
     },
     {

@@ -12,7 +12,7 @@ draft: false
 
 Browser agents, AI browsers, and AI workspaces increasingly borrow each other's features. A browser can add agentic actions; a workspace can include a browser; an agent can operate in either. Product names therefore make a poor buying guide.
 
-The durable distinction is the **system boundary**: where the task runs, which context it can see, which identity it uses, and what happens when execution fails. This article owns that category and selection question. For a deeper look at browser tasks, see [what browser agents can do](/blog/browser-ai-agent-what-it-can-do); for threat controls, use the [browser-agent safety guide](/blog/browser-ai-agent-security-questions).
+The durable distinction is the **system boundary**: where the task runs, which context it can see, which identity it uses, and what happens when execution fails. For a deeper look at browser tasks, see [what browser agents can do](/blog/browser-ai-agent-what-it-can-do); for threat controls, use the [browser-agent safety guide](/blog/browser-ai-agent-security-questions).
 
 **Information checked October 13, 2026.** Browser features are rolling out unevenly by plan, account, region, device, and administrator policy. Treat the linked first-party pages as a current starting point and verify the controls shown in your own account.
 

@@ -46,4 +46,4 @@ Windows AI 文件整理器会依据文件名、元数据，以及产品明确支
 
 移动后可参考微软的 [Windows 搜索索引说明](https://support.microsoft.com/en-us/windows/experience/performance-optimization/search-indexing-in-windows)，但索引不能替代可预测的目录结构。
 
-Floatboat 的 Windows 支持、端侧处理、上传行为、价格与回滚能力，只有在现行公开产品文档支持时才应写成确定事实。在此之前，应按同一清单评估，而不是默认它原生支持 Windows、零上传、无 token 计量或可一键回滚整批。
+使用 Floatboat 处理这类任务前，可先查阅当前产品文档，核对 Windows 支持、处理位置、上传行为、价格与恢复方式，再判断是否适合自己的文件和运行环境。

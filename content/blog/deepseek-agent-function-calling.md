@@ -29,7 +29,7 @@ On DeepSeek V4, function calling is native to both `deepseek-v4-pro` and `deepse
 
 This guide assumes you understand the basic agent loop — send messages, check for tool calls, execute, feed back, repeat. If that pattern is new, read How to Build a DeepSeek Agent first. Here we focus on what happens inside the tool-calling layer: schema design, parallel execution, strict mode, thinking mode interaction, and the production patterns that keep agent loops from breaking on malformed arguments.
 
-The distinction between "function calling" and "an agent" matters for search intent and architecture. Function calling is one API capability. An agent is a system that wraps that capability in a loop with error handling, state management, and tool permissioning. Most DeepSeek Agent failures in production trace back to the tool-calling layer — invalid JSON, wrong parameter types, or parallel calls that race against shared state — not to the model's reasoning quality.
+Understanding the distinction between "function calling" and "an agent" helps define what your system needs to implement. Function calling is one API capability. An agent is a system that wraps that capability in a loop with error handling, state management, and tool permissioning. Most DeepSeek Agent failures in production trace back to the tool-calling layer — invalid JSON, wrong parameter types, or parallel calls that race against shared state — not to the model's reasoning quality.
 
 ## 2\. Designing Tool Schemas That Models Actually Follow
 
