@@ -140,7 +140,7 @@
         "title": "关于 Vercel Labs",
         "paragraphs": [
           "Vercel Labs 是 Vercel 生态中面向开发者的工具与实验项目入口。其工作方式是尽早公开项目，根据实际使用反馈持续迭代，并继续投入已经证明有用的方向。GitHub 上的 vercel-labs 组织已通过 vercel.com 域名验证，开发者可以从中查看源码、文档、问题讨论和贡献方式。",
-          "它的内容并不局限于 Agent Skills。例如，agent-browser 面向浏览器自动化，json-render 处理生成式界面，Skills CLI 则用于发现和安装可复用的 Agent 指引。工具、框架与 Skill 各有职责；介绍 Vercel Labs 时，需要先理解这些项目共同服务的开发者工作，再分别讨论具体作品。",
+          "它的内容并不局限于 Agent Skills。例如，agent-browser 面向浏览器自动化，json-render 处理生成式界面，Skills CLI 则用于发现和安装可复用的 Agent 指引。这些工具、框架与 Skill 各有职责，分别帮助开发者连接浏览器操作、界面构建与 Agent 任务。",
           "官网还按开发阶段区分项目，帮助使用者判断某个项目适合尝鲜，还是适合纳入持续工作的流程。选用前应阅读具体仓库的说明、依赖与当前维护状态。本页展示的是部分代表项目和相关 Skills，不是 Vercel Labs 全部仓库的镜像。"
         ]
       },
@@ -2704,7 +2704,7 @@
       "skillsTitle": "101-skills 精选 Skills",
       "skillsIntro": "探索 101-skills 面向视觉素材与社交任务的精选指引，了解 Agent 如何通过 inference.sh 执行具体操作。打开对应条目，可继续核对任务说明、命令要求、服务依赖与来源信息。",
       "projectsTitle": "101-skills 相关项目",
-      "projectsIntro": "本页精选内容以 Skill 指令为主；独立软件项目仅在有明确资料时单独展示。",
+      "projectsIntro": "了解与 101-skills 任务指引相关的软件工具、服务依赖和开源资源。",
       "relatedTitle": "更多提供者与创作者",
       "relatedDescription": "继续了解相关工具与 Agent Skills 的发布者，比较不同团队和创作者的关注领域、代表作品与使用方式，找到适合当前任务的资源。",
       "faqTitle": "101-skills 常见问题",
@@ -2883,7 +2883,7 @@
       "skillsTitle": "qu-skills 精选 Skills",
       "skillsIntro": "比较 qu-skills 面向数字人制作、媒体素材与社交发布的精选指引，了解每项任务需要的输入和服务连接。打开具体条目，可继续检查指令来源、执行要求与对应的上游资料。",
       "projectsTitle": "qu-skills 相关项目",
-      "projectsIntro": "本页精选内容是任务指令；没有明确项目来源的独立应用不会另行列出。",
+      "projectsIntro": "了解与 qu-skills 媒体和社交任务相关的软件工具、服务依赖和开源资源。",
       "relatedTitle": "更多提供者与创作者",
       "relatedDescription": "继续了解相关工具与 Agent Skills 的发布者，比较不同团队和创作者的关注领域、代表作品与使用方式，找到适合当前任务的资源。",
       "faqTitle": "qu-skills 常见问题",
@@ -3046,7 +3046,7 @@
       "skillsTitle": "Uizze 精选 Skills",
       "skillsIntro": "探索 Uizze 面向界面方向与 iPhone 设计审查的精选 Skills，从需要构建或改善的具体页面出发，保留已有组件体系，并判断产品参考是否有助于解决当前的设计问题。",
       "projectsTitle": "Uizze 相关项目",
-      "projectsIntro": "这里将 Uizze 作为设计服务与 Skill 发布者介绍，不假定其存在公开 GitHub 项目。",
+      "projectsIntro": "了解 Uizze 的设计工具与服务，区分可复用指引、托管素材和软件项目。",
       "relatedTitle": "更多提供者与创作者",
       "relatedDescription": "继续了解相关工具与 Agent Skills 的发布者，比较不同团队和创作者的关注领域、代表作品与使用方式，找到适合当前任务的资源。",
       "faqTitle": "Uizze 常见问题",
@@ -3796,13 +3796,13 @@
       "overview": {
         "title": "About Cloudflare",
         "paragraphs": [
-          "Cloudflare develops an Internet platform spanning application delivery, security, networking, and developer services. Its public repositories include runtime software, deployment tooling, protocol implementations, and application frameworks. This page focuses on the developer and Agent resources that connect coding tasks to concrete platform capabilities.",
+          "Cloudflare develops an Internet platform spanning application delivery, security, networking, and developer services. Its public repositories include runtime software, deployment tooling, protocol implementations, and application frameworks. Its developer tools and Agent resources connect coding tasks to concrete platform capabilities.",
           "Workers SDK supports application development and local testing, while Agents SDK supplies building blocks for stateful AI applications. Companion Skills guide the use of those tools and related services such as Durable Objects. The instructions organize implementation choices; the SDKs, CLI, and hosted platform provide the software and execution environment.",
           "Cloudflare also publishes security-audit, a separate instruction collection for source-based security investigation. It structures evidence gathering and independent checking of candidate findings, rather than certifying that a codebase is safe. The development Skills and security workflow serve different tasks and should be selected according to the work being performed."
         ]
       },
       "aboutTitle": "About Cloudflare",
-      "about": "Cloudflare develops an Internet platform spanning application delivery, security, networking, and developer services. Its public repositories include runtime software, deployment tooling, protocol implementations, and application frameworks. This page focuses on the developer and Agent resources that connect coding tasks to concrete platform capabilities.",
+      "about": "Cloudflare develops an Internet platform spanning application delivery, security, networking, and developer services. Its public repositories include runtime software, deployment tooling, protocol implementations, and application frameworks. Its developer tools and Agent resources connect coding tasks to concrete platform capabilities.",
       "projectsTitle": "Cloudflare Open-Source Projects",
       "projectsIntro": "Explore Cloudflare developer software for building applications and Agent services. Compare the Workers development toolkit with the Agents SDK, including their roles in local testing, deployment, persistent state, and real-time interaction.",
       "skillsTitle": "Selected Cloudflare Skills",
@@ -3851,13 +3851,13 @@
       "overview": {
         "title": "关于 Cloudflare",
         "paragraphs": [
-          "Cloudflare 提供涵盖应用交付、安全、网络和开发者服务的互联网平台，公开仓库中包含运行时软件、部署工具、协议实现与应用框架。本页重点介绍连接编码任务与平台能力的开发者工具和 Agent 资源，帮助理解具体项目在开发流程中的位置。",
+          "Cloudflare 提供涵盖应用交付、安全、网络和开发者服务的互联网平台，公开仓库中包含运行时软件、部署工具、协议实现与应用框架。开发者工具与 Agent 资源将编码任务连接到具体平台能力，服务于开发流程中的不同环节。",
           "Workers SDK 支撑应用开发与本地测试，Agents SDK 提供构建有状态 AI 应用的基础能力。配套 Skills 则指导 Agent 使用这些工具以及 Durable Objects 等服务：指引组织实现思路，SDK、命令行和托管平台提供实际的软件能力与执行环境。",
           "Cloudflare 还单独发布 security-audit，用于基于源码开展安全调查，组织证据收集与候选问题的独立复核。这样的流程帮助审视发现和覆盖情况，并不构成代码安全认证。应用开发 Skills 与安全研究指引各有任务边界，应根据当前工作分别选择。"
         ]
       },
       "aboutTitle": "关于 Cloudflare",
-      "about": "Cloudflare 提供涵盖应用交付、安全、网络和开发者服务的互联网平台，公开仓库中包含运行时软件、部署工具、协议实现与应用框架。本页重点介绍连接编码任务与平台能力的开发者工具和 Agent 资源，帮助理解具体项目在开发流程中的位置。",
+      "about": "Cloudflare 提供涵盖应用交付、安全、网络和开发者服务的互联网平台，公开仓库中包含运行时软件、部署工具、协议实现与应用框架。开发者工具与 Agent 资源将编码任务连接到具体平台能力，服务于开发流程中的不同环节。",
       "projectsTitle": "Cloudflare 开源项目",
       "projectsIntro": "了解 Cloudflare 用于应用和 Agent 服务开发的软件项目，比较 Workers 开发工具链与 Agents SDK 在本地测试、部署、持久化状态和实时交互方面承担的不同职责。",
       "skillsTitle": "Cloudflare 精选 Skills",
@@ -4025,7 +4025,7 @@
         },
         {
           "question": "Why do Slither and Echidna use the crytic organization?",
-          "answer": "Trail of Bits identifies Crytic as its blockchain-security group. These projects live in that related organization, while the Agent Skills repository is under trailofbits. Repository location should be preserved rather than inventing duplicate project URLs."
+          "answer": "Trail of Bits identifies Crytic as its blockchain-security group. These projects live in that related organization, while the Agent Skills repository is under trailofbits. The upstream repository identifies the maintainer and provides the current releases."
         },
         {
           "question": "What license applies to the Trail of Bits Skills collection?",
@@ -4080,7 +4080,7 @@
         },
         {
           "question": "为什么 Slither 与 Echidna 位于 crytic 组织？",
-          "answer": "Trail of Bits 将 Crytic 标为其区块链安全团队。这些软件项目位于关联组织中，而 Agent Skills 仓库位于 trailofbits；展示时应保留真实仓库位置，避免创建重复或错误地址。"
+          "answer": "Trail of Bits 将 Crytic 标为其区块链安全团队。这些软件项目位于关联组织中，而 Agent Skills 仓库位于 trailofbits。具体维护者与当前版本可通过对应上游仓库核对。"
         },
         {
           "question": "Trail of Bits Skills 集合采用什么许可？",

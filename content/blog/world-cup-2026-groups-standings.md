@@ -21,15 +21,15 @@ draft: false
 
   * USA readers should also use the USA World Cup 2026 group guide, while the broader difficulty debate belongs in the World Cup 2026 Group of Death explainer.
 
-The World Cup 2026 groups are no longer just a [draw result](/blog/world-cup-2026-draw). As of July 8, 2026, the group stage is complete, the Round of 32 has finished, and the tournament has moved into the late knockout rounds. This page is the canonical groups and standings hub: it shows all twelve groups, the final group tables, the key matches that shaped qualification, and where each group now connects to the knockout bracket.
+The World Cup 2026 groups are no longer just a [draw result](/blog/world-cup-2026-draw). As of July 8, 2026, the group stage is complete, the Round of 32 has finished, and the tournament has moved into the late knockout rounds. The overview below includes all twelve groups, the final group tables, the key matches that shaped qualification, and where each group now connects to the knockout bracket.
 
-**Source note:** Final group results should be checked against the [official FIFA standings page](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings) before publication. The group tables below were cross-checked against the available 2026 World Cup group-stage match logs from [2026 FIFA World Cup](https://en.wikipedia.org/wiki/2026_FIFA_World_Cup). Because FIFA pages can update dynamically, use the official standings page as the final source of truth before pushing live.
+**Source note:** Final group results should be checked against the [official FIFA standings page](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings). The group tables below were cross-checked against the available 2026 World Cup group-stage match logs from [2026 FIFA World Cup](https://en.wikipedia.org/wiki/2026_FIFA_World_Cup). Because FIFA pages can update dynamically, use the official standings page as the final source of truth when checking the final results.
 
 ## How to Read the World Cup 2026 Group Tables
 
 Each table below shows the final group-stage record: played, wins, draws, losses, goals for, goals against, goal difference, points, and status. “Advanced” means the team reached the Round of 32 either by finishing first or second, or by qualifying as one of the best third-place teams. “Eliminated” means the team did not survive the group stage.
 
-The 2026 format makes third place more important than in older 32-team tournaments. A third-place team could lose the group, still survive, and then become dangerous in a knockout path. That is why a standings page should not stop at points. It should also explain the swing match, the bracket consequence, and whether a group was straightforward or chaotic.
+The 2026 format makes third place more important than in older 32-team tournaments. A third-place team could lose the group, still survive, and then become dangerous in a knockout path. To understand the standings, look beyond points to the decisive match, the knockout consequence, and how closely the group was contested.
 
 ## Group A: Mexico, South Africa, South Korea, Czech Republic
 
@@ -211,10 +211,10 @@ The 2026 format also means third-place comparison is not a footnote. Groups D, E
 
 The best candidate depends on how you define “death.” If the phrase means name recognition, Group D and Group K had obvious claims. If it means path cost, Group F and Group I were more revealing because third-place teams survived but carried harder knockout assignments. If it means how little margin separated survival from exit, Group B and Group H deserve attention.
 
-For a deeper definition and a group-by-group ranking, use the dedicated World Cup 2026 Group of Death explained article. This hub keeps the standings factual; the Group of Death page is where the interpretation belongs.
+For a deeper definition and a group-by-group ranking, use the dedicated World Cup 2026 Group of Death explained article. The group tables show results; the Group of Death analysis compares the difficulty of the groups.
 
 ## How Groups Flow Into the Bracket
 
 The group stage gives every team a label: group winner, runner-up, third-place qualifier, or eliminated. That label determines the first knockout assignment. A first-place finish usually gives a cleaner path, but the expanded Round of 32 makes the relationship less predictable than older formats. Strong third-place teams can still create dangerous matchups early.
 
-Use this page to understand why a team landed where it did. Then use the World Cup 2026 bracket to follow the actual knockout route. This division keeps the content cluster clean: the draw page explains how groups were created, this groups page explains what happened in the groups, and the bracket page explains what those results became.
+Use this page to understand why a team landed where it did. Then use the World Cup 2026 bracket to follow the actual knockout route. The draw explains how the groups were formed, the standings show how teams finished, and the bracket traces their knockout paths.

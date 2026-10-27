@@ -74,7 +74,7 @@
         "value": { "en": "Separate workflows", "zh": "独立工作流" },
         "description": {
           "en": "Image and video integrations are not represented as chat-picker features.",
-          "zh": "图像与视频集成不被表述为聊天选择器功能。"
+          "zh": "图像与视频使用独立工作流，不属于当前聊天模型选择器中的功能。"
         }
       },
       {
@@ -116,7 +116,7 @@
       "zh": "已配置价值在于以较低成本画像承载持续处理。"
     },
     "description": {
-      "en": "These are capacity scenarios, not claims of current direct access.",
+      "en": "These tasks match the configured capacity role. MiniMax M2 is not currently available through the main client picker.",
       "zh": "以下属于容量场景，不代表当前可以直接使用。"
     },
     "items": [
@@ -142,8 +142,8 @@
           "zh": "评估哪些未来工作值得使用经济型长上下文选项。"
         },
         "process": {
-          "en": "Separate confirmed profile data from unconfirmed product availability.",
-          "zh": "把已确认画像数据与尚未确认的产品可用性分开。"
+          "en": "Compare the configured context budget with the task requirements, and confirm a supported model-access path.",
+          "zh": "将已配置上下文预算与任务要求比较，并确认受支持的模型访问方式。"
         },
         "outcome": {
           "en": "A realistic capacity plan.",
@@ -157,8 +157,8 @@
           "zh": "避免把文本容量与图像或视频集成混为一谈。"
         },
         "process": {
-          "en": "Route media work through its dedicated workflow instead of this model page.",
-          "zh": "将媒体任务交给专用工作流，而不是本模型页面。"
+          "en": "Use the dedicated image or video workflow for media deliverables; MiniMax M2’s configured role is text processing.",
+          "zh": "图像或视频交付物使用对应专用工作流；MiniMax M2 的已配置角色是文本处理。"
         },
         "outcome": {
           "en": "A clearer product path for each deliverable.",
@@ -174,8 +174,8 @@
       "zh": "选择器下层的一项明确经济画像。"
     },
     "description": {
-      "en": "The page does not extend beyond confirmed model and protocol facts.",
-      "zh": "页面不超出已经确认的型号与协议事实。"
+      "en": "The configured model ID is `minimax-m2`. Text processing and media workflows have separate access requirements.",
+      "zh": "当前已配置型号为 `minimax-m2`，文本处理与媒体工作流使用不同的访问方式。"
     },
     "items": [
       {
@@ -210,13 +210,13 @@
   },
   "selection": {
     "title": {
-      "en": "Use the MiniMax page as a capacity record today.",
-      "zh": "当前把 MiniMax 页面作为容量记录使用。"
+      "en": "Evaluate MiniMax M2 for long-text work and cost requirements.",
+      "zh": "结合长文本任务与成本要求评估 MiniMax M2。"
     },
     "choose": {
       "title": {
-        "en": "This profile is relevant when",
-        "zh": "这个画像适用于评估"
+        "en": "Useful for evaluating",
+        "zh": "适合评估的需求"
       },
       "items": [
         {

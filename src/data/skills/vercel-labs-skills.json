@@ -1235,8 +1235,8 @@
           "zh": "Agent 无法获取规范时怎么办？"
         },
         "answer": {
-          "en": "The documented review depends on a fresh guideline source. Restore access or provide an explicitly dated copy and state that limitation; do not describe a review against unknown or missing rules as current compliance.",
-          "zh": "原始流程依赖最新规范。应恢复访问，或提供注明日期的副本并说明局限；缺少规则时，不能把检查描述为符合当前规范。"
+          "en": "The review needs the current guideline source. If it cannot be retrieved, restore access or use a dated copy; results based on that copy cannot establish compliance with later rule changes.",
+          "zh": "检查需要当前规范作为依据。无法获取时，可以恢复访问或使用注明日期的副本；副本检查结果不能证明符合之后更新的规则。"
         }
       }
     ],

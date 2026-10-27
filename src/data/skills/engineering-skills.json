@@ -1400,8 +1400,8 @@
           "zh": "没有子代理的宿主能原样运行吗？"
         },
         "answer": {
-          "en": "The documented separation uses parallel subagents. A sequential review may still be useful, but should be described as an adaptation rather than the unchanged process.",
-          "zh": "原始隔离流程使用并行子代理。顺序审查仍可能有用，但应说明这是适配流程，不能称为原样执行。"
+          "en": "The original process uses parallel subagents for separate review contexts. Sequential review is an adapted workflow and does not reproduce that same execution pattern.",
+          "zh": "原始流程使用并行子代理来分离审查上下文。顺序审查属于适配方式，与原流程的执行结构不同。"
         }
       },
       {

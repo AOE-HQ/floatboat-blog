@@ -30,7 +30,7 @@ That boundary matters because an answer can be wrong; an action can also change 
 
 The labels overlap in products. A chatbot can expose search. An assistant can execute tools. An agent can use chat as its interface. Architecture, permissions, and observed behavior are more reliable than marketing names.
 
-This article maintains the chatbot boundary. For the narrower distinction between an assistant that remains user-directed and an agent that owns more of the task, see [AI agent versus AI assistant](/blog/ai-agent-vs-ai-assistant).
+For the narrower distinction between an assistant that remains user-directed and an agent that owns more of the task, see [AI agent versus AI assistant](/blog/ai-agent-vs-ai-assistant).
 
 ## The architecture behind the difference
 

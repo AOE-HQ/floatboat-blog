@@ -28,7 +28,7 @@ Removing a subscribed calendar is different from deleting individual events. Use
 
 ## Where to check the finished tournament
 
-Use FIFA for authoritative results. For editorial navigation, the [World Cup 2026 guide](/blog/world-cup-2026-guide) summarizes the tournament and the [completed bracket](/blog/world-cup-2026-bracket) follows the knockout path.
+Use FIFA for authoritative results. For tournament context, the [World Cup 2026 guide](/blog/world-cup-2026-guide) summarizes the tournament and the [completed bracket](/blog/world-cup-2026-bracket) follows the knockout path.
 
 ## FloatCup after the final
 

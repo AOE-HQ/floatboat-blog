@@ -276,7 +276,7 @@
         },
         {
           "question": "Decisions API 已经正式 GA 了吗？",
-          "answer": "没有。它在 10 月 6 日从 Limited Preview 进入 Public Beta，OpenAI 表示 GA 将在后续提供，目前只支持 GPT-6 Luna。对外承诺时仍应保留 Beta 状态。"
+          "answer": "没有。它在 10 月 6 日从 Limited Preview 进入 Public Beta，OpenAI 表示 GA 将在后续提供，目前只支持 GPT-6 Luna。当前仍为 Beta，GA 尚未公布。"
         },
         {
           "question": "DevDay 2026 对开发者最大的变化是什么？",
@@ -940,7 +940,7 @@
         },
         {
           "question": "Are the four generations an industry standard?",
-          "answer": "No. They are an editorial framework for comparing booking, optimization, contextual assistance, and execution."
+          "answer": "No. The four groups are comparison categories for booking, calendar optimization, contextual assistance, and execution; they are not a formal industry standard."
         },
         {
           "question": "What can Cal.com Agents do?",
@@ -1331,8 +1331,8 @@
           "answer": "There is no universal winner. Calendly or Google fit bookable availability, Outlook Scheduling Poll fits Microsoft group consensus, Motion fits task planning, and Reclaim fits flexible time protection."
         },
         {
-          "question": "How is this roundup different from the singular scheduling-assistant guide?",
-          "answer": "This page is a buyer shortlist with current products and a trial method; the singular page explains product categories."
+          "question": "What should I decide before comparing scheduling products?",
+          "answer": "Identify whether the task is booking, group coordination, task scheduling, or protecting focus time. Then compare products using the same representative calendar and review the results."
         },
         {
           "question": "Is Calendly an AI task planner?",
@@ -3548,7 +3548,7 @@
         },
         {
           "question": "Is it system-wide dictation?",
-          "answer": "No such claim is made here; its product concept centers voice and Agent-assisted edits in one document."
+          "answer": "Flow Mode is centered on voice and Agent-assisted editing within a document. That scope does not establish system-wide dictation across other applications."
         },
         {
           "question": "Can I edit while speaking?",
@@ -3568,7 +3568,7 @@
         },
         {
           "question": "Does it run on Mac and Windows?",
-          "answer": "Platform coverage must be checked in the current release; this page does not guarantee it."
+          "answer": "Check the current release for supported operating systems and feature differences before planning a Mac or Windows workflow."
         },
         {
           "question": "What should a pilot measure?",
@@ -6096,7 +6096,7 @@
         },
         {
           "question": "“四代”是行业标准吗？",
-          "answer": "不是，是本文比较预约、优化、上下文协助与执行能力的编辑框架。"
+          "answer": "不是。“四代”是比较预约、日历优化、上下文协助与执行能力的分类方式，并非正式行业标准。"
         },
         {
           "question": "Cal.com Agents 能做什么？",
@@ -6487,8 +6487,8 @@
           "answer": "没有通用冠军。可预约时间可测试 Calendly 或 Google，Microsoft 多人协商可测试 Outlook Scheduling Poll，任务规划看 Motion，弹性时间保护看 Reclaim。"
         },
         {
-          "question": "这篇盘点和单数的 AI 日程助手指南有什么区别？",
-          "answer": "本页负责当前产品选购与试用；单数页负责解释工具类型。"
+          "question": "比较日程产品前应先确定什么？",
+          "answer": "先明确主要任务是预约、多人协商、任务排程还是保护专注时间，再用同一组代表性日程比较产品和结果。"
         },
         {
           "question": "Calendly 是 AI 任务规划器吗？",
@@ -8704,7 +8704,7 @@
         },
         {
           "question": "它是全局听写工具吗？",
-          "answer": "本文不作此承诺；产品概念以同一文档中的语音和 Agent 辅助编辑为中心。"
+          "answer": "Flow Mode 围绕同一文档内的语音与 Agent 辅助编辑组织工作，不等于在其他应用中提供全局听写。"
         },
         {
           "question": "可以边说边编辑吗？",
@@ -8724,7 +8724,7 @@
         },
         {
           "question": "支持 Mac 和 Windows 吗？",
-          "answer": "平台覆盖必须查当前版本，本文不作保证。"
+          "answer": "规划 Mac 或 Windows 工作流前，需要查看当前发行版支持的系统与对应功能范围。"
         },
         {
           "question": "试点应测什么？",

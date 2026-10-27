@@ -36,8 +36,8 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
     : profile.profileUrl ? [{ href: profile.profileUrl, label: profile.profileUrl.startsWith("https://github.com/") ? (isZh ? "GitHub 主页" : "GitHub profile") : (isZh ? "个人 / 官方主页" : "Website") }] : [];
   const canonical = `${origin}${publisherProfilePath(locale, handle)}`;
   const labels = isZh
-    ? { home: "首页", store: "Combo 商店", publisher: "发布者", profile: "查看发布者主页", project: "查看项目", independent: "Floatboat 根据公开来源独立整理本页，不代表发布者为 Floatboat 背书。", download: "下载 Floatboat" }
-    : { home: "Home", store: "Combo Store", publisher: "Publisher", profile: "Visit Publisher Profile", project: "View Project", independent: "Floatboat independently curates these public sources; this page does not imply publisher endorsement.", download: "Download Floatboat" };
+    ? { home: "首页", store: "Combo 商店", publisher: "发布者", profile: "查看发布者主页", project: "查看项目", download: "下载 Floatboat" }
+    : { home: "Home", store: "Combo Store", publisher: "Publisher", profile: "Visit Publisher Profile", project: "View Project", download: "Download Floatboat" };
   const jsonLd = {
     "@context": "https://schema.org", "@type": "CollectionPage", name: t.heroTitle, description: t.heroDescription, url: canonical,
     inLanguage: isZh ? "zh-CN" : "en-US", about: { "@type": profile.type, name: profile.name, url: profile.profileUrl, sameAs: overviewLinks.map((link) => link.href) },

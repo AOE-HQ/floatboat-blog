@@ -64,7 +64,7 @@
       "projectsTitle": "OpenAI Projects",
       "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
       "skillsTitle": "OpenAI Skills",
-      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "skillsIntro": "Explore task-specific Skill guides and their original sources.",
       "relatedTitle": "Related Agent Publishers",
       "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
       "faqTitle": "OpenAI FAQ",
@@ -75,7 +75,7 @@
         },
         {
           "question": "Is this an overview of every OpenAI product?",
-          "answer": "No. The profile focuses on public agent tooling represented by Codex. Model catalogs, prices, consumer applications, and account features require their own current official documentation."
+          "answer": "Codex is one of OpenAI’s public agent tools. Model services, consumer applications, and account features are separate product layers with their own capabilities, access rules, and pricing."
         },
         {
           "question": "What is the organization’s relationship to Codex?",
@@ -119,7 +119,7 @@
       "projectsTitle": "OpenAI 的代表项目",
       "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
       "skillsTitle": "OpenAI Skills",
-      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "skillsIntro": "浏览面向具体任务的 Skill 指南及其原始来源。",
       "relatedTitle": "相关 Agent 项目发布者",
       "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
       "faqTitle": "OpenAI 常见问题",
@@ -130,7 +130,7 @@
         },
         {
           "question": "这里是否覆盖 OpenAI 的所有产品？",
-          "answer": "本页以 Codex 所代表的公开 Agent 工具为重点。模型目录、价格、消费应用和账户功能需要查看各自的当前官方说明。"
+          "answer": "Codex 是 OpenAI 公开的 Agent 工具之一。模型服务、消费应用和账户功能属于其他产品层次，具体能力与价格以各自的官方说明为准。"
         },
         {
           "question": "OpenAI 与 Codex 是什么关系？",
@@ -222,14 +222,14 @@
       "projectsTitle": "DeepSeek Projects",
       "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
       "skillsTitle": "DeepSeek Skills",
-      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "skillsIntro": "Explore task-specific Skill guides and their original sources.",
       "relatedTitle": "Related Agent Publishers",
       "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
       "faqTitle": "DeepSeek FAQ",
       "faq": [
         {
-          "question": "What does this DeepSeek profile focus on?",
-          "answer": "It focuses on public agent infrastructure represented by DeepSeek Harness. Model capabilities and commercial API plans are separate topics that need their own documentation."
+          "question": "How does DeepSeek Harness relate to DeepSeek models?",
+          "answer": "DeepSeek Harness supplies the agent runtime around model calls, organizing tools, context, and sessions. The model performs inference; API capabilities and commercial plans depend on the particular service."
         },
         {
           "question": "Is DeepSeek Harness published by the official organization?",
@@ -277,14 +277,14 @@
       "projectsTitle": "DeepSeek 的代表项目",
       "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
       "skillsTitle": "DeepSeek Skills",
-      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "skillsIntro": "浏览面向具体任务的 Skill 指南及其原始来源。",
       "relatedTitle": "相关 Agent 项目发布者",
       "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
       "faqTitle": "DeepSeek 常见问题",
       "faq": [
         {
-          "question": "本页重点介绍 DeepSeek 的哪部分工作？",
-          "answer": "本页聚焦 DeepSeek Harness 所代表的公开 Agent 基础设施；模型能力和商业 API 方案属于需要分别查阅的主题。"
+          "question": "DeepSeek Harness 与 DeepSeek 模型有什么关系？",
+          "answer": "DeepSeek Harness 提供模型周围的 Agent 运行层，组织工具、上下文和会话。模型负责推理，API 的能力与商业方案则取决于具体服务。"
         },
         {
           "question": "DeepSeek Harness 属于官方组织吗？",
@@ -372,7 +372,7 @@
         "paragraphs": [
           "Earendil Works is the current organization hosting the Pi project. Its public repository brings together a coding agent and the libraries that support it. The useful perspective is the relationship between a finished interactive tool and the smaller runtime components developers can study or reuse.",
           "Pi’s approach emphasizes a small extensible core and workflow-specific customization. Extensions, Skills, templates, and themes can be assembled into packages. This makes the publisher relevant to both people configuring their own coding environment and developers investigating agent infrastructure.",
-          "Earlier references use badlogic/pi-mono; the current upstream is earendil-works/pi. That migration should not be counted as a new independent project. Evaluate each runtime library and extension by its own responsibilities, especially where the host environment must supply execution restrictions."
+          "Earlier references use badlogic/pi-mono; the current upstream is earendil-works/pi. The new address is an upstream migration of the same project. Evaluate each runtime library and extension by its own responsibilities, especially where the host environment must supply execution restrictions."
         ]
       },
       "aboutTitle": "About Earendil Works",
@@ -380,14 +380,14 @@
       "projectsTitle": "Earendil Works Projects",
       "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
       "skillsTitle": "Earendil Works Skills",
-      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "skillsIntro": "Explore task-specific Skill guides and their original sources.",
       "relatedTitle": "Related Agent Publishers",
       "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
       "faqTitle": "Earendil Works FAQ",
       "faq": [
         {
           "question": "Why is Pi attributed to Earendil Works?",
-          "answer": "The current canonical repository is earendil-works/pi. Older badlogic/pi-mono links redirect there, so the profile records the current upstream while preserving the historical relationship."
+          "answer": "The current repository is earendil-works/pi. Older badlogic/pi-mono links redirect there; use the current upstream to check maintainers, releases, and documentation."
         },
         {
           "question": "Is the old Pi repository a different product?",
@@ -399,7 +399,7 @@
         },
         {
           "question": "Are all workflow features part of Pi’s core?",
-          "answer": "No. The project explicitly favors extension and package composition. A feature supplied by a community package should not be presented as a core capability maintained by this publisher."
+          "answer": "No. Pi adds capabilities through extensions and packages. Community packages have their own maintainers and support scope, separate from the official core."
         },
         {
           "question": "Does an open runtime imply built-in isolation?",
@@ -435,14 +435,14 @@
       "projectsTitle": "Earendil Works 的代表项目",
       "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
       "skillsTitle": "Earendil Works Skills",
-      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "skillsIntro": "浏览面向具体任务的 Skill 指南及其原始来源。",
       "relatedTitle": "相关 Agent 项目发布者",
       "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
       "faqTitle": "Earendil Works 常见问题",
       "faq": [
         {
           "question": "为什么将 Pi 归到 Earendil Works？",
-          "answer": "当前规范仓库为 earendil-works/pi，旧 badlogic/pi-mono 链接会跳转到这里。本页记录当前上游，同时保留历史关系。"
+          "answer": "Pi 的当前仓库是 earendil-works/pi，旧 badlogic/pi-mono 链接会跳转到该地址。查看维护者、版本与文档时，应以当前上游为准。"
         },
         {
           "question": "旧 Pi 仓库是另一个产品吗？",
@@ -454,7 +454,7 @@
         },
         {
           "question": "所有工作流功能都属于 Pi 核心吗？",
-          "answer": "不是。项目强调通过扩展与包组合能力，社区包提供的功能不能直接写成由该发布者维护的核心能力。"
+          "answer": "不是。Pi 通过扩展和包增加能力，社区包有自己的维护者与支持范围，和官方核心功能不同。"
         },
         {
           "question": "开放运行层是否意味着自带隔离？",
@@ -530,7 +530,7 @@
         "paragraphs": [
           "Anomaly is the organization behind the official OpenCode repository. Its representative project is an open-source coding-agent application, built around the interaction between a developer, a workspace, and model-driven tools. That application layer is a distinct subject from the model provider.",
           "OpenCode offers multiple ways to engage with coding tasks and documents different agent modes. When evaluating Anomaly’s work, focus on how the tool organizes tasks, feedback, and review, rather than reducing the project to a model name or a list of prompts.",
-          "The official application source uses MIT. Community integrations and services associated with an installation can have different maintainers or terms. This profile highlights the verified publisher and representative software without attributing every addition in the wider ecosystem to the organization."
+          "The official application source uses MIT. Community integrations and services associated with an installation can have different maintainers or terms. Each integration has its own maintainer and support scope, even when it builds on OpenCode."
         ]
       },
       "aboutTitle": "About Anomaly",
@@ -538,14 +538,14 @@
       "projectsTitle": "Anomaly Projects",
       "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
       "skillsTitle": "Anomaly Skills",
-      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "skillsIntro": "Explore task-specific Skill guides and their original sources.",
       "relatedTitle": "Related Agent Publishers",
       "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
       "faqTitle": "Anomaly FAQ",
       "faq": [
         {
           "question": "What is Anomaly’s verified project here?",
-          "answer": "It is OpenCode, published at anomalyco/opencode. The profile concentrates on that public software rather than assuming every related integration is part of the same organization."
+          "answer": "OpenCode is published at anomalyco/opencode. Community integrations have their own maintainers and should be checked individually for ownership and support."
         },
         {
           "question": "Is Anomaly the model behind every OpenCode session?",
@@ -593,22 +593,22 @@
       "projectsTitle": "Anomaly 的代表项目",
       "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
       "skillsTitle": "Anomaly Skills",
-      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "skillsIntro": "浏览面向具体任务的 Skill 指南及其原始来源。",
       "relatedTitle": "相关 Agent 项目发布者",
       "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
       "faqTitle": "Anomaly 常见问题",
       "faq": [
         {
           "question": "这里核对的 Anomaly 代表项目是什么？",
-          "answer": "本页核对的是 anomalyco/opencode。本页聚焦这项公开软件，不假定所有相关集成都属于同一组织。"
+          "answer": "OpenCode 发布于 Anomaly 的 anomalyco/opencode 仓库。围绕它开发的社区集成由各自维护者负责，需要分别确认归属。"
         },
         {
           "question": "OpenCode 会话中的模型都来自 Anomaly 吗？",
           "answer": "应用发布者与模型提供方属于不同角色，应检查具体会话的服务配置，不能由工具品牌推断模型归属。"
         },
         {
-          "question": "社区 OpenCode 工具应怎样标注归属？",
-          "answer": "应标注实际仓库维护者及其与 OpenCode 的关系。利用公开接口开发，不等于由 Anomaly 官方维护或背书。"
+          "question": "社区 OpenCode 工具由谁维护？",
+          "answer": "社区工具由各自仓库维护者负责。它们可以利用 OpenCode 的公开接口开发，但不一定由 Anomaly 官方维护或支持。"
         },
         {
           "question": "编程 Agent 与提示库有什么区别？",
@@ -696,14 +696,14 @@
       "projectsTitle": "Nous Research Projects",
       "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
       "skillsTitle": "Nous Research Skills",
-      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "skillsIntro": "Explore task-specific Skill guides and their original sources.",
       "relatedTitle": "Related Agent Publishers",
       "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
       "faqTitle": "Nous Research FAQ",
       "faq": [
         {
-          "question": "Which project represents Nous Research here?",
-          "answer": "Hermes Agent is the selected public project. Its source and documentation connect the publisher to a system combining memory, procedural Skills, tools, and scheduled tasks."
+          "question": "How is Hermes Agent related to Nous Research?",
+          "answer": "Nous Research publishes Hermes Agent, a system combining persistent memory, procedural Skills, tools, and scheduled tasks to support work across sessions."
         },
         {
           "question": "Is Hermes only a set of reusable instructions?",
@@ -751,14 +751,14 @@
       "projectsTitle": "Nous Research 的代表项目",
       "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
       "skillsTitle": "Nous Research Skills",
-      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "skillsIntro": "浏览面向具体任务的 Skill 指南及其原始来源。",
       "relatedTitle": "相关 Agent 项目发布者",
       "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
       "faqTitle": "Nous Research 常见问题",
       "faq": [
         {
-          "question": "本页介绍 Nous Research 的哪个代表项目？",
-          "answer": "本页选取 Hermes Agent，来源与文档将发布者和包含记忆、任务 Skills、工具及定时任务的系统关联起来。"
+          "question": "Hermes Agent 与 Nous Research 是什么关系？",
+          "answer": "Hermes Agent 由 Nous Research 发布，将持久记忆、任务 Skills、工具与定时任务组织为一个可持续工作的 Agent 系统。"
         },
         {
           "question": "Hermes 只是可复用指令集合吗？",
@@ -846,7 +846,7 @@
         "paragraphs": [
           "Moonshot AI, also known as 月之暗面, develops the Kimi ecosystem and publishes tools for model-driven work. Kimi Code CLI is a representative public coding-agent project, giving the organization a software-tooling role beyond providing a model endpoint.",
           "The maintained Kimi Code CLI combines a terminal application, development tools, plugins, subagents, and ACP editor integration. These are complementary parts of a coding workflow, with the editor, runtime, and model each retaining their own responsibilities.",
-          "The legacy Python kimi-cli repository is archived and points to kimi-code. Current materials should identify that transition rather than presenting both addresses as equally maintained projects. MIT licensing for the current source is also separate from Kimi Code subscriptions and Moonshot API access."
+          "The legacy Python kimi-cli repository is archived and points to kimi-code. The two addresses represent a legacy version and its maintained successor. MIT licensing for the current source is also separate from Kimi Code subscriptions and Moonshot API access."
         ]
       },
       "aboutTitle": "About Moonshot AI",
@@ -854,7 +854,7 @@
       "projectsTitle": "Moonshot AI Projects",
       "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
       "skillsTitle": "Moonshot AI Skills",
-      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "skillsIntro": "Explore task-specific Skill guides and their original sources.",
       "relatedTitle": "Related Agent Publishers",
       "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
       "faqTitle": "Moonshot AI FAQ",
@@ -864,8 +864,8 @@
           "answer": "Moonshot AI is the organization’s English name used for its public developer presence. The Kimi Code CLI repository is published under the official MoonshotAI GitHub organization."
         },
         {
-          "question": "Which coding project should this profile highlight?",
-          "answer": "Highlight MoonshotAI/kimi-code, the maintained Kimi Code CLI. The Python kimi-cli repository is historical and explicitly directs readers to its successor."
+          "question": "Which Kimi coding project is currently maintained?",
+          "answer": "MoonshotAI/kimi-code is the maintained Kimi Code CLI. The legacy Python kimi-cli repository is archived and directs users to its successor."
         },
         {
           "question": "Why not count both Kimi CLI repositories as current projects?",
@@ -901,7 +901,7 @@
         "paragraphs": [
           "Moonshot AI 即月之暗面，开发 Kimi 生态及围绕模型工作的工具。Kimi Code CLI 是其公开编程 Agent 代表项目，体现了模型接口之外的软件工具方向。",
           "当前维护的 Kimi Code CLI 将终端应用、开发工具、插件、子 Agent 与 ACP 编辑器集成组合起来。它们构成互补的开发流程，编辑器、运行层和模型仍分别承担自己的职责。",
-          "旧 Python kimi-cli 仓库已归档，并引导用户使用 kimi-code。资料应说明这一变化，而非将两个地址写成同等维护的项目。当前源码的 MIT 许可也与 Kimi Code 订阅和 Moonshot API 访问分开。"
+          "旧 Python kimi-cli 仓库已归档，并引导用户使用 kimi-code。两个地址分别对应历史版本与当前维护的后继项目。当前源码的 MIT 许可也与 Kimi Code 订阅和 Moonshot API 访问分开。"
         ]
       },
       "aboutTitle": "关于 Moonshot AI",
@@ -909,7 +909,7 @@
       "projectsTitle": "Moonshot AI 的代表项目",
       "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
       "skillsTitle": "Moonshot AI Skills",
-      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "skillsIntro": "浏览面向具体任务的 Skill 指南及其原始来源。",
       "relatedTitle": "相关 Agent 项目发布者",
       "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
       "faqTitle": "Moonshot AI 常见问题",
@@ -919,8 +919,8 @@
           "answer": "Moonshot AI 是该组织对外使用的英文名称，Kimi Code CLI 发布于官方 MoonshotAI GitHub 组织。"
         },
         {
-          "question": "当前应重点介绍哪个编程项目？",
-          "answer": "应重点介绍当前维护的 MoonshotAI/kimi-code。Python 版 kimi-cli 属于历史项目，其说明明确引导读者迁移。"
+          "question": "当前维护的 Kimi 编程项目是哪个？",
+          "answer": "当前维护的项目是 MoonshotAI/kimi-code。旧 Python 版 kimi-cli 已归档，其官方说明引导用户迁移到新版。"
         },
         {
           "question": "为什么不把两个 Kimi CLI 仓库都算成当前项目？",
@@ -1003,7 +1003,7 @@
         "title": "About Z.ai",
         "paragraphs": [
           "Z.ai is the international brand associated with 智谱 and its GLM ecosystem. Its official zai-org organization publishes ZCode, a coding workbench with an agent harness. That gives readers a concrete software project to examine alongside the broader model ecosystem.",
-          "ZCode includes desktop, browser, and terminal experiences as well as public agent CLI and runtime source. These layers serve different ways of carrying out and reviewing coding work. The project should be evaluated as a workbench and execution system, not only as a model-branded interface.",
+          "ZCode includes desktop, browser, and terminal experiences as well as public agent CLI and runtime source. These layers serve different ways of carrying out and reviewing coding work. The workbench presents tasks and interaction, the runtime carries agent steps forward, and the model service supplies inference.",
           "The repository uses Apache-2.0 and includes a project notice for operational and third-party conditions. Model access, account entitlements, and data-handling choices remain separate questions. Review those details in the official project and service documents for the actual use case."
         ]
       },
@@ -1012,22 +1012,22 @@
       "projectsTitle": "Z.ai Projects",
       "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
       "skillsTitle": "Z.ai Skills",
-      "skillsIntro": "Dedicated Skill resources are shown when reviewed material is available.",
+      "skillsIntro": "Explore task-specific Skill guides and their original sources.",
       "relatedTitle": "Related Agent Publishers",
       "relatedDescription": "Explore other teams developing agent runtimes, coding tools, and reusable working environments.",
       "faqTitle": "Z.ai FAQ",
       "faq": [
         {
           "question": "How is Z.ai related to ZCode?",
-          "answer": "ZCode is published in the official zai-org GitHub organization and identifies itself as Z.ai’s coding-agent harness. This profile connects the software to that verified publisher."
+          "answer": "ZCode is published in the official zai-org GitHub organization and identifies itself as Z.ai’s coding-agent harness. The agent CLI and runtime source are also part of that official repository."
         },
         {
           "question": "Is Z.ai the same name as 智谱?",
           "answer": "Z.ai is the international brand associated with 智谱. For software attribution, the specific upstream organization and repository remain the clearest references."
         },
         {
-          "question": "Is this profile only about GLM model capabilities?",
-          "answer": "No. It focuses on the publisher’s coding software represented by ZCode. Model benchmarks, pricing, and platform limits are separate subjects and are not inferred from the application repository."
+          "question": "How does ZCode differ from GLM models?",
+          "answer": "ZCode is a coding workbench and agent runtime, while GLM belongs to the model layer. Application features, model capabilities, and service pricing or limits are separate considerations."
         },
         {
           "question": "Are community ZCode forks official releases?",
@@ -1058,7 +1058,7 @@
         "title": "关于 Z.ai",
         "paragraphs": [
           "Z.ai 是智谱面向国际市场使用的品牌，与 GLM 生态相关。官方 zai-org 组织发布了包含 Agent Harness 的编程工作台 ZCode，为理解模型生态之外的软件工具提供了具体对象。",
-          "ZCode 包含桌面、浏览器和终端体验，也公开 Agent CLI 与运行时源码。不同层次服务于开发工作的执行和审阅，应将其作为工作台与执行系统评估，而非只按模型品牌理解界面。",
+          "ZCode 包含桌面、浏览器和终端体验，也公开 Agent CLI 与运行时源码。不同层次服务于开发工作的执行和审阅，工作台呈现任务与交互，运行时推进 Agent 步骤，模型服务则提供推理能力。",
           "仓库采用 Apache-2.0，并通过项目声明说明运行与第三方条件。模型访问、账号权益和数据处理选择仍是独立问题，需要根据实际场景查阅官方项目与服务文档。"
         ]
       },
@@ -1067,26 +1067,26 @@
       "projectsTitle": "Z.ai 的代表项目",
       "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
       "skillsTitle": "Z.ai Skills",
-      "skillsIntro": "在取得已核对的内容后，再介绍具体 Skill 资源。",
+      "skillsIntro": "浏览面向具体任务的 Skill 指南及其原始来源。",
       "relatedTitle": "相关 Agent 项目发布者",
       "relatedDescription": "继续了解开发 Agent 运行层、编程工具和可复用工作环境的其他团队。",
       "faqTitle": "Z.ai 常见问题",
       "faq": [
         {
           "question": "Z.ai 与 ZCode 是什么关系？",
-          "answer": "ZCode 发布于官方 zai-org GitHub 组织，并将自身定位为 Z.ai 的编程 Agent Harness。本页按这一来源关系介绍发布者。"
+          "answer": "ZCode 发布于官方 zai-org GitHub 组织，并将自身定位为 Z.ai 的编程 Agent Harness。Agent CLI 与运行时源码也位于该官方仓库中。"
         },
         {
           "question": "Z.ai 与智谱是什么关系？",
           "answer": "Z.ai 是智谱面向国际市场使用的品牌。标注具体软件归属时，应继续以实际官方组织和上游仓库为依据。"
         },
         {
-          "question": "本页是否只介绍 GLM 模型能力？",
-          "answer": "不是。本页以 ZCode 所代表的编程软件为重点，不由应用仓库推导模型基准、价格或平台限制。"
+          "question": "ZCode 与 GLM 模型有什么区别？",
+          "answer": "ZCode 是编程工作台与 Agent 运行软件，GLM 属于模型层。应用的功能、模型的能力与模型服务的价格和限制需要分别了解。"
         },
         {
           "question": "社区 ZCode 分支是官方发行版吗？",
-          "answer": "不能自动认定。分支有自己的维护者与改动，即使保留原许可或相似界面，也应分别标注归属。"
+          "answer": "不是。社区分支有自己的维护者、改动和发行安排；保留原许可或相似界面不意味着它属于官方发行版。"
         },
         {
           "question": "组织的源码许可能够证明什么？",

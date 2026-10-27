@@ -40,7 +40,7 @@ It does not establish three things that a user-facing launch would require:
 - an announced access tier or entitlement;
 - a documented production route through Floatboat's managed gateway.
 
-The distinction mirrors other configured-below-picker models. Infrastructure readiness can precede product release, and the two should not be collapsed in marketing copy.
+The distinction mirrors other configured-below-picker models. Infrastructure readiness can precede product release; a configured model does not by itself provide user access.
 
 ## Where Kimi K3 could be useful
 
@@ -74,4 +74,4 @@ Score the final artifact, evidence quality, tool reliability, latency, and human
 
 Kimi K3 is a substantial Moonshot model: 2.8T parameters, native vision, a 1M-token window, and reasoning controls for long-running work. Floatboat has prepared underlying capacity for `kimi-k3`, but the model is not in the default client picker as of October 13, 2026.
 
-The accurate story is readiness, not release. Kimi K3 belongs on Floatboat's evaluation roadmap; it should not yet be marketed as a model every Floatboat user can select.
+Floatboat has underlying capacity configured for Kimi K3, but the model is not in the confirmed default model picker.

@@ -51,8 +51,8 @@
       "zh": "Astra 是客户端中承担高要求推理的 OpenAI 路径。"
     },
     "description": {
-      "en": "This page separates what users can select now from image generation in a Combo and code-specialized capacity prepared below the picker.",
-      "zh": "本页明确区分当前可直接选择的 Astra、通过 Combo 使用的图像能力，以及选择器下层已准备的代码专用容量。"
+      "en": "GPT-6 Astra is selectable for chat, GPT-Image-2 is available through the drawing Combo, and code-specialized capacity is configured without a main-picker entry.",
+      "zh": "GPT-6 Astra 可用于聊天，GPT-Image-2 通过绘图 Combo 使用；代码专用型号已配置容量，但尚未在默认选择器提供入口。"
     },
     "traits": [
       {
@@ -212,8 +212,8 @@
       "zh": "同一供应商系列，按产品入口准确区分。"
     },
     "description": {
-      "en": "Only live capabilities receive a direct-use claim; configured models retain their exact readiness label.",
-      "zh": "只有已上线能力才声称可直接使用；已配置型号继续保持准确的就绪状态标识。"
+      "en": "Chat and image generation use different entry points. Configured coding models are not currently selectable in the main client picker.",
+      "zh": "聊天与图像生成使用不同入口，已配置的代码型号当前尚不能在默认模型选择器中选择。"
     },
     "items": [
       {
@@ -332,8 +332,8 @@
   "faq": [
     {
       "question": {
-        "en": "Which OpenAI models are covered on this page?",
-        "zh": "本页包含哪些 OpenAI 模型？"
+        "en": "Which OpenAI model paths are available or configured in Floatboat?",
+        "zh": "Floatboat 的 OpenAI 模型有哪些使用入口和配置？"
       },
       "answer": {
         "en": "The matrix covers GPT-6 Astra, GPT-Image-2, GPT-5.6 Sol and Terra, and GPT-5.3 Codex and Codex Spark, with their distinct roles and status.",

@@ -12,7 +12,7 @@ draft: false
 
 When an AI remembers a detail in one chat but loses it in the next, several different systems may be involved. The model did not necessarily “forget” in the human sense. The application may not have supplied the old conversation, a memory feature may have been disabled, retrieval may have missed the relevant source, or a privacy policy may intentionally prevent reuse.
 
-This article is the technical troubleshooting guide: it explains the layers, provides a reproducible test, and maps each failure to a fix. The related article [Why Your AI Forgets You Every Session](/blog/why-ai-forgets-every-session) owns the productivity impact and tool-selection question. Keeping those responsibilities separate avoids treating every continuity problem as the same kind of memory failure.
+Diagnose continuity failures by identifying the affected layer, running a reproducible test, and matching the symptom to a fix. For the effects on everyday work and the choice of tools, see [Why Your AI Forgets You Every Session](/blog/why-ai-forgets-every-session).
 
 ## Five layers that people call “AI memory”
 

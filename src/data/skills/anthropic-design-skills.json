@@ -228,11 +228,11 @@
       {
         "question": {
           "en": "Which Frontend Design implementation does this page describe?",
-          "zh": "本页介绍的是哪个 Frontend Design？"
+          "zh": "这个 Frontend Design Skill 来自哪里？"
         },
         "answer": {
           "en": "This page describes the frontend-design folder in anthropics/skills. Skills with the same name from other publishers or repositories may contain different instructions and installation paths.",
-          "zh": "本页介绍 anthropics/skills 仓库中的 frontend-design。同名但来自其他发布者或仓库的 Skill，指令和安装路径可能不同。"
+          "zh": "它来自 anthropics/skills 仓库中的 frontend-design。同名但来自其他发布者或仓库的 Skill，指令和安装路径可能不同。"
         }
       }
     ],
@@ -564,13 +564,13 @@
       "en": {
         "title": "About PDF",
         "paragraphs": [
-          "PDF is Anthropic’s document Skill for reading, creating, and modifying PDF files. It routes work to Python libraries and command-line tools according to the operation: extracting content, organizing pages, generating documents, processing scanned pages, or handling forms through separate instructions. A text-based report and a scanned document need different extraction methods, so the input matters as much as the requested output. The Skill provides workflow guidance and references; its required libraries and utilities must be available in the execution environment. Anthropic publishes this document Skill as source-available under its specific license terms. This page introduces its uses and official setup, without redistributing the package."
+          "PDF is Anthropic’s document Skill for reading, creating, and modifying PDF files. It routes work to Python libraries and command-line tools according to the operation: extracting content, organizing pages, generating documents, processing scanned pages, or handling forms through separate instructions. A text-based report and a scanned document need different extraction methods, so the input matters as much as the requested output. The Skill provides workflow guidance and references; its required libraries and utilities must be available in the execution environment. Anthropic publishes this document Skill as source-available under its specific license terms. Obtain the Skill package from Anthropic’s official repository and review its license before use."
         ]
       },
       "zh": {
         "title": "关于 PDF",
         "paragraphs": [
-          "PDF 是 Anthropic 用于读取、创建与修改 PDF 文件的文档 Skill。它根据任务选择 Python 库和命令行工具，覆盖内容提取、页面整理、新文档生成、扫描件处理，以及由单独说明指导的表单操作。文字型报告与扫描文档需要不同方法，因此应先检查输入文件，再确定提取或编辑路径。Skill 提供流程与参考，实际执行仍需环境中具备所需库和工具。Anthropic 将这一文档 Skill 以源码可用形式提供，受专门许可约束；本页介绍用途及官方设置方式，不重新分发包内容。"
+          "PDF 是 Anthropic 用于读取、创建与修改 PDF 文件的文档 Skill。它根据任务选择 Python 库和命令行工具，覆盖内容提取、页面整理、新文档生成、扫描件处理，以及由单独说明指导的表单操作。文字型报告与扫描文档需要不同方法，因此应先检查输入文件，再确定提取或编辑路径。Skill 提供流程与参考，实际执行仍需环境中具备所需库和工具。Anthropic 将这一文档 Skill 以源码可用形式提供，受专门许可约束；Skill 包可从 Anthropic 官方仓库获取，使用前需要查看对应许可。"
         ]
       }
     },

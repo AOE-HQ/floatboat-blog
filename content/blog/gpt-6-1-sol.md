@@ -50,7 +50,7 @@ Do not convert API dollars into assumed subscription usage. OpenAI publishes a s
 
 GPT-6.1 Sol does **not** belong to Floatboat’s currently confirmed supported models. It is absent from the current client selector and from the confirmed bottom-layer model registry. Floatboat’s supported OpenAI chat model is GPT-6 Astra; configured OpenAI capacity also includes specific GPT-5.6 and GPT-5.3 Codex models, not GPT-6.1 Sol.
 
-If that matrix changes later, the product directory should be updated from the maintained model source before this article is revised. Until then, use OpenAI’s API, Codex, or ChatGPT Work for GPT-6.1 Sol; do not interpret Floatboat branding on this publication as product availability.
+For GPT-6.1 Sol, use the supported OpenAI API, Codex, or ChatGPT Work entry point. Publication on the Floatboat website does not indicate that this model is available in the Floatboat client.
 
 ## Pricing: short context, long context, and speed tiers
 

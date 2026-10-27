@@ -14,7 +14,7 @@ An **AI workflow for a solo business** should begin with one repeated job, not a
 
 This is the implementation guide: audit, choose, specify, prototype, test, launch, and improve. For architecture and tool-layer decisions, first read [AI workflow system design for solo founders](/blog/ai-workflow-solo-founders).
 
-Search intent matters here: this page answers **how to build and validate one workflow**. It is not a list of workflow ideas or a software ranking. Product and standards references were checked on October 13, 2026.
+Build and validate one workflow before expanding to additional tasks. Product and standards references were checked on October 13, 2026.
 
 ## Step 1: run a one-week workflow audit
 

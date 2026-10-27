@@ -85,9 +85,9 @@ The third-place result, England 6-4 France, was a regulation match score accordi
 
 ## Using the bracket as an archive
 
-Because the tournament is complete, a bracket page should no longer mix predictions with confirmed results. Use FIFA as the source of truth for match numbers and scores, and label fan-made printable assets as unofficial. If a PDF or image conflicts with FIFA's results page, correct the asset rather than the record.
+The tournament is complete, so confirmed results take precedence over earlier predictions. Check match numbers and scores against FIFA; fan-made printable PDFs and images are unofficial references.
 
-A useful archive preserves each round, distinguishes penalties from match scores, and links the champion's route. It should not continue using “current fixtures” or “upcoming quarterfinals” after July 19.
+Trace the champion’s route round by round and distinguish match scores from penalty shootouts. All fixtures were completed by July 19.
 
 ## Bottom line
 

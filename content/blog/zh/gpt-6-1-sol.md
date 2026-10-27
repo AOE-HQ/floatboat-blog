@@ -50,7 +50,7 @@ API 美元价格不能直接换算成订阅额度。OpenAI 对企业 Token 用�
 
 GPT-6.1 Sol **不属于 Floatboat 当前确认的受支持模型**，既没有进入客户端选择器，也没有登记在已确认的底层模型目录。Floatboat 当前支持的 OpenAI 对话模型是 GPT-6 Astra；底层容量还登记了指定的 GPT-5.6 与 GPT-5.3 Codex 型号，但不包含 GPT-6.1 Sol。
 
-以后如果矩阵发生变化，应先更新统一维护的模型数据，再修改本文。在此之前，使用 GPT-6.1 Sol 需要走 OpenAI API、Codex 或 ChatGPT Work；不能因为文章发布在 Floatboat 网站，就推断 Floatboat 客户端可以选择该型号。
+使用 GPT-6.1 Sol 需要通过支持该型号的 OpenAI API、Codex 或 ChatGPT Work 入口；文章发布在 Floatboat 网站，并不表示 Floatboat 客户端已支持该型号。
 
 ## 价格：上下文阈值与不同处理档位
 

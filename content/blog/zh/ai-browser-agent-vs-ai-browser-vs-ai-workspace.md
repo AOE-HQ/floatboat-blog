@@ -12,7 +12,7 @@ draft: false
 
 浏览器 Agent、AI 浏览器和 AI 工作区正在互相借用功能：浏览器可以加入 Agent 动作，工作区可以内置浏览器，Agent 也可以在两者中运行。因此，产品名称不是可靠的购买指南。
 
-真正稳定的区别是**系统边界**：任务在哪里运行、能看到哪些上下文、使用什么身份，以及执行失败后怎样处理。本文只负责三类产品的边界与选型。浏览器任务能力请看[浏览器 Agent 能做什么](/zh/blog/browser-ai-agent-what-it-can-do)，完整威胁控制请看[浏览器 Agent 安全指南](/zh/blog/browser-ai-agent-security-questions)。
+真正稳定的区别是**系统边界**：任务在哪里运行、能看到哪些上下文、使用什么身份，以及执行失败后怎样处理。浏览器任务能力请看[浏览器 Agent 能做什么](/zh/blog/browser-ai-agent-what-it-can-do)，完整威胁控制请看[浏览器 Agent 安全指南](/zh/blog/browser-ai-agent-security-questions)。
 
 **信息核对截至 2026 年 10 月 13 日。**浏览器功能会按套餐、账号、地区、设备和管理员策略分批开放。文中的一手官方页面只能作为当前起点，最终仍要以你自己的账号界面和政策配置为准。
 

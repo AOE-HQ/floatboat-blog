@@ -49,8 +49,8 @@
       "zh": "为保留 thinking-mode 输出准备的推理适配。"
     },
     "description": {
-      "en": "GLM differs from the other capacity pages because the confirmed work is protocol behavior: reasoning playback through the chat gateway.",
-      "zh": "GLM 与其他容量页的差异在于，已确认的工作重点是协议行为：通过聊天网关回放推理内容。"
+      "en": "The GLM adapter supports reasoning playback through the compatible chat gateway.",
+      "zh": "GLM 适配器支持通过兼容聊天网关回放推理内容。"
     },
     "traits": [
       {
@@ -131,8 +131,8 @@
       "zh": "真正有用的区别是推理内容如何通过网关保留下来。"
     },
     "description": {
-      "en": "These scenarios describe integration readiness rather than a public model-picker experience.",
-      "zh": "这些场景描述的是集成就绪度，而不是公开模型选择体验。"
+      "en": "GLM has a configured integration path, but it is not currently available in the main client picker.",
+      "zh": "GLM 已配置集成通道，但当前客户端默认模型选择器尚未提供入口。"
     },
     "items": [
       {
@@ -166,18 +166,18 @@
         }
       },
       {
-        "title": { "en": "Launch-readiness review", "zh": "上线准备审查" },
+        "title": { "en": "Workflow compatibility review", "zh": "工作流兼容性评估" },
         "brief": {
-          "en": "Verify what is configured before exposing a picker entry.",
-          "zh": "在开放选择器入口前核对已配置内容。"
+          "en": "Check the model ID, reasoning support, and available access path for the intended task.",
+          "zh": "结合具体任务，核对型号、推理支持与当前访问入口。"
         },
         "process": {
           "en": "Review IDs, reasoning playback, channel, and availability separately.",
           "zh": "分别检查 ID、推理回放、通道和可用状态。"
         },
         "outcome": {
-          "en": "A launch decision based on exact readiness.",
-          "zh": "基于准确就绪状态的上线决策。"
+          "en": "A workflow plan with clear compatibility and access requirements.",
+          "zh": "明确兼容性与访问要求的工作流方案。"
         }
       }
     ]
@@ -185,12 +185,12 @@
   "capabilities": {
     "eyebrow": { "en": "Configured foundation", "zh": "已配置基础" },
     "title": {
-      "en": "Protocol support, stated without a launch claim.",
-      "zh": "说明协议支持，但不扩展成上线承诺。"
+      "en": "Protocol support and current access.",
+      "zh": "协议支持与当前访问状态。"
     },
     "description": {
-      "en": "Only confirmed adapter behavior appears here.",
-      "zh": "这里只呈现已经确认的适配器行为。"
+      "en": "The configured adapter supports GLM 5 and GLM 4 through the compatible chat gateway.",
+      "zh": "已配置适配器通过兼容聊天网关支持 GLM 5 与 GLM 4。"
     },
     "items": [
       {
@@ -225,11 +225,11 @@
   },
   "selection": {
     "title": {
-      "en": "Evaluate GLM by protocol readiness today.",
-      "zh": "当前应从协议就绪度评估 GLM。"
+      "en": "Check GLM protocol support and available access paths.",
+      "zh": "评估 GLM 的协议支持与访问方式。"
     },
     "choose": {
-      "title": { "en": "This page is useful when", "zh": "本页适用于" },
+      "title": { "en": "Useful for evaluating", "zh": "适合评估的需求" },
       "items": [
         {
           "en": "You need the exact GLM adapter behavior.",
