@@ -1,0 +1,381 @@
+{
+  "policy": {
+    "minimumRepresentativeRepositoryStars": 1000,
+    "requireVerifiedOwnership": true,
+    "excludeUnsubstantiatedRedistributors": true,
+    "requireNotArchived": true,
+    "note": "本轮审核底线；按代表仓库判断提供者，不宣称旗下每个项目都达到门槛。Skill安装量不作为作者影响力证明。未知stars不得写为0。"
+  },
+  "publishers": {
+    "vercel-labs": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "vercel-labs/agent-browser",
+      "stars": 44682,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T05:52:29Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "vercel-labs/agent-browser",
+        "vercel-labs/json-render",
+        "vercel-labs/skills"
+      ]
+    },
+    "morluto": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "morluto/rea",
+      "stars": 394180,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T09:43:37Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "morluto/flameox",
+        "morluto/generate-social-preview",
+        "morluto/rea"
+      ]
+    },
+    "anthropics": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "anthropics/skills",
+      "stars": 184104,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-09T18:45:52Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "anthropics/claude-code",
+        "anthropics/claude-cookbooks",
+        "anthropics/skills"
+      ]
+    },
+    "heygen-com": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "heygen-com/hyperframes",
+      "stars": 73473,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T09:58:09Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "heygen-com/heygen-cli",
+        "heygen-com/hyperframes"
+      ]
+    },
+    "mattpocock": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "mattpocock/skills",
+      "stars": 304419,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T07:44:25Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "mattpocock/sandcastle",
+        "mattpocock/skills",
+        "mattpocock/ts-reset"
+      ]
+    },
+    "emilkowalski": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "emilkowalski/skills",
+      "stars": 50383,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-11T13:58:36Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "emilkowalski/skills",
+        "emilkowalski/sonner",
+        "emilkowalski/vaul"
+      ]
+    },
+    "coreyhaines31": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "coreyhaines31/marketingskills",
+      "stars": 56782,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-26T19:16:55Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "coreyhaines31/marketingskills"
+      ]
+    },
+    "juliusbrussee": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "juliusbrussee/caveman",
+      "stars": 115407,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T07:47:31Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "juliusbrussee/caveman",
+        "juliusbrussee/revu-swift"
+      ]
+    },
+    "microsoft": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "microsoft/azure-skills",
+      "stars": 1599,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-26T16:36:53Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "microsoft/TypeScript",
+        "microsoft/azure-skills",
+        "microsoft/vscode"
+      ]
+    },
+    "open.feishu.cn": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "larksuite/cli",
+      "stars": 17853,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T09:57:23Z",
+      "reason": "飞书开放平台官方入口与 larksuite/cli 关系已核实；按同一官方生态收录，不重复创建 Lark 页面。",
+      "repositories": [
+        "larksuite/cli"
+      ]
+    },
+    "remotion-dev": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "remotion-dev/remotion",
+      "stars": 68040,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T09:47:34Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "remotion-dev/remotion",
+        "remotion-dev/skills"
+      ]
+    },
+    "flowkit-labs": {
+      "status": "held",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "flowkit-labs/skills",
+      "stars": 22,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-08-12T06:31:41Z",
+      "reason": "旧账号仓库22 stars，当前指向的 doany-skills/skills 为9 stars，未满足热度门槛。",
+      "repositories": [
+        "doany-skills/skills",
+        "flowkit-labs/skills"
+      ]
+    },
+    "designed-by-ai": {
+      "status": "held",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "designed-by-ai/skills",
+      "stars": 20,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-06T08:00:25Z",
+      "reason": "旧账号仓库20 stars，当前 Sleek 仓库592 stars，未满足热度门槛。",
+      "repositories": [
+        "designed-by-ai/skills",
+        "sleekdotdesign/agent-skills"
+      ]
+    },
+    "magentosh": {
+      "status": "held",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "magentosh/superpowers",
+      "stars": 4,
+      "fork": true,
+      "archived": false,
+      "pushedAt": "2026-08-03T15:41:46Z",
+      "reason": "仅4 stars，且为 skills-101/superpowers 的fork；不足以作为独立热门提供者。",
+      "repositories": [
+        "inference-sh/skills",
+        "magentosh/superpowers"
+      ]
+    },
+    "101-skills": {
+      "status": "held",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "101-skills/superpowers",
+      "stars": 16,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-08-31T22:58:53Z",
+      "reason": "仅16 stars，内容指向 inference-sh 上游；安装量不等于本账号的原创影响力。",
+      "repositories": [
+        "101-skills/superpowers",
+        "inference-sh/skills"
+      ]
+    },
+    "qu-skills": {
+      "status": "held",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "qu-skills/superpowers",
+      "stars": 3,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-09-02T14:16:12Z",
+      "reason": "仅3 stars，内容指向 inference-sh 上游；安装量不等于本账号的原创影响力。",
+      "repositories": [
+        "inference-sh/skills",
+        "qu-skills/superpowers"
+      ]
+    },
+    "uizze.sh": {
+      "status": "held",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": null,
+      "stars": null,
+      "fork": null,
+      "archived": null,
+      "pushedAt": null,
+      "reason": "未核实可用于本次GitHub热度收录的公开代码仓库；stars未知，不能记作0或以安装量代替。",
+      "repositories": []
+    },
+    "leonxlnx": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "Leonxlnx/taste-skill",
+      "stars": 103258,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-26T12:28:18Z",
+      "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
+      "repositories": [
+        "Leonxlnx/earshot",
+        "Leonxlnx/taste-skill",
+        "Leonxlnx/tastecode"
+      ]
+    },
+    "obra": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "obra/superpowers",
+      "stars": 305834,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-23T03:48:57Z",
+      "reason": "已核对代表仓库热度、实际README、归属、上游关系与许可；页面保留必要署名和项目性质说明。",
+      "repositories": [
+        "obra/superpowers",
+        "obra/Youtube2Webpage",
+        "obra/private-journal-mcp"
+      ]
+    },
+    "pbakaus": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "pbakaus/impeccable",
+      "stars": 89754,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T08:28:52Z",
+      "reason": "Impeccable热度、作者身份和实际扩展内容已核对；页面保留其源于Anthropic frontend-design的署名。",
+      "repositories": [
+        "pbakaus/impeccable",
+        "pbakaus/radiant",
+        "pbakaus/agent-reviews"
+      ]
+    },
+    "cloudflare": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "cloudflare/security-audit-skill",
+      "stars": 49144,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-09-14T19:29:02Z",
+      "reason": "已核对代表仓库热度、实际README、归属、上游关系与许可；页面保留必要署名和项目性质说明。",
+      "repositories": [
+        "cloudflare/security-audit-skill",
+        "cloudflare/workers-sdk",
+        "cloudflare/agents"
+      ]
+    },
+    "trailofbits": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "trailofbits/skills",
+      "stars": 7833,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-24T01:53:03Z",
+      "reason": "已核对代表仓库热度、实际README、归属、上游关系与许可；页面保留必要署名和项目性质说明。",
+      "repositories": [
+        "trailofbits/skills",
+        "crytic/slither",
+        "crytic/echidna"
+      ]
+    },
+    "github": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "github/awesome-copilot",
+      "stars": 40465,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T08:06:53Z",
+      "reason": "GitHub组织托管Awesome Copilot，README明确为社区贡献集合；页面不声称全部资源为GitHub原创。",
+      "repositories": [
+        "github/awesome-copilot",
+        "github/github-mcp-server",
+        "cli/cli"
+      ]
+    },
+    "googleworkspace": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "googleworkspace/cli",
+      "stars": 31935,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-26T18:14:33Z",
+      "reason": "googleworkspace组织下gws项目归属和热度已核对；README明确不是Google官方支持产品，页面明确保留说明。",
+      "repositories": [
+        "googleworkspace/cli"
+      ]
+    },
+    "firecrawl": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "firecrawl/firecrawl",
+      "stars": 195832,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T08:49:38Z",
+      "reason": "已核对代表仓库热度、实际README、归属、上游关系与许可；页面保留必要署名和项目性质说明。",
+      "repositories": [
+        "firecrawl/firecrawl",
+        "firecrawl/cli"
+      ]
+    },
+    "supabase": {
+      "status": "approved",
+      "checkedAt": "2026-10-27",
+      "representativeRepository": "supabase/supabase",
+      "stars": 114102,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-27T10:06:29Z",
+      "reason": "已核对代表仓库热度、实际README、归属、上游关系与许可；页面保留必要署名和项目性质说明。",
+      "repositories": [
+        "supabase/supabase",
+        "supabase/cli"
+      ]
+    }
+  }
+}

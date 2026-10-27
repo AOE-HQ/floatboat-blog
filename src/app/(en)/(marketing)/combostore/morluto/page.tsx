@@ -1,20 +1,23 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 import { PublisherDirectoryPage } from "@/components/skills/publisher-directory-page";
 import { getPublisherProfile } from "@/lib/skills/publisher-profiles";
 
-const { seoTitle: title, seoDescription: description } = getPublisherProfile("morluto")!.en;
-
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: {
-    canonical: "https://floatboat.ai/combostore/morluto",
-    languages: { en: "https://floatboat.ai/combostore/morluto", zh: "https://floatboat.ai/zh/combostore/morluto" },
-  },
-  openGraph: { type: "website", title, description, url: "https://floatboat.ai/combostore/morluto" },
-};
+export function generateMetadata(): Metadata {
+  const profile = getPublisherProfile("morluto");
+  if (!profile) return {};
+  const { seoTitle: title, seoDescription: description } = profile.en;
+  const canonical = "https://floatboat.ai/combostore/morluto";
+  return {
+    title,
+    description,
+    alternates: { canonical, languages: { en: "https://floatboat.ai/combostore/morluto", zh: "https://floatboat.ai/zh/combostore/morluto" } },
+    openGraph: { type: "website", title, description, url: canonical },
+  };
+}
 
 export default function MorlutoPage() {
+  if (!getPublisherProfile("morluto")) notFound();
   return <PublisherDirectoryPage locale="en" handle="morluto" />;
 }

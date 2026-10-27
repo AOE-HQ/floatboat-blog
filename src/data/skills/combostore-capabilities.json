@@ -1,0 +1,98 @@
+{
+  "zh": {
+    "title": "从 Skills 指引到工作成果",
+    "description": "找到合适的 Skill 后，先理解它的方法与使用要求，再结合具体项目推进工作。Floatboat 将任务背景、本地资料、修改过程与交付物放在同一工作空间，让选定的方法有清晰的输入、执行过程和可检查的成果。",
+    "preview": {
+      "matter": "项目实施与成果检查",
+      "inputs": [
+        "项目需求.md",
+        "参考资料/",
+        "任务指引.md"
+      ],
+      "outputs": [
+        "实施方案",
+        "可编辑初稿",
+        "检查记录"
+      ]
+    },
+    "workflows": [],
+    "items": [
+      {
+        "title": "Agent 工作站",
+        "href": "/zh/agent-workspace",
+        "description": "把任务要求、选定的 Skill 指引与项目资料放在同一工作空间，明确输入、执行步骤和预期成果，让调研、实施与复核围绕同一个项目持续推进。",
+        "supporting": "后续修改可以继续使用文件、讨论与已有成果，不必反复补充项目背景。第三方工具的安装、运行依赖和实际可用能力，仍需按对应说明配置与核对。",
+        "linkTitle": true
+      },
+      {
+        "title": "心流模式",
+        "href": "https://floatboat.ai/zh/flow-mode",
+        "description": "边讨论需求边修改方案、页面文案或交付初稿，将抽象的任务指引逐步调整为适合当前项目的做法，让反馈及时进入正在形成的成果。",
+        "supporting": "从选定方法到实际交付，常常需要澄清目标和调整细节。通过持续交流保留修改方向，让每轮反馈都衔接已有内容，再检查结果是否符合任务要求。",
+        "linkTitle": true
+      },
+      {
+        "title": "AI 文件整理器",
+        "href": "/zh/ai-file-organizer",
+        "description": "在本机整理准备使用的参考文档、项目素材与阶段产物，统一目录和文件命名，让 Agent 更容易定位任务输入，也让后续复核和交接有清晰的资料结构。",
+        "supporting": "可以先选定需要整理的文件夹，再检查建议的命名与分类方式。保留可辨认的来源和版本，有助于区分参考材料、工作文件与最终交付物。",
+        "linkTitle": true
+      },
+      {
+        "title": "多模型",
+        "href": "/zh/models",
+        "description": "根据资料阅读、方案比较、内容起草和结果检查等不同阶段选择模型，同时保留同一项目的文件、任务要求与修改记录，让工作在一致的背景下推进。",
+        "supporting": "先确定当前步骤需要理解什么、生成什么，再选择适合的模型。模型切换服务于具体任务，Skill 的工具要求和最终成果的检查仍需要单独确认。",
+        "linkTitle": true
+      }
+    ]
+  },
+  "en": {
+    "title": "From Skill Instructions to Finished Work",
+    "description": "After finding a useful Skill, understand its method and requirements before applying it to a project. Floatboat keeps the brief, local materials, revisions, and deliverables in one workspace, connecting the chosen approach with clear inputs and results you can inspect.",
+    "preview": {
+      "matter": "Project execution and review",
+      "inputs": [
+        "Project brief.md",
+        "References/",
+        "Task instructions.md"
+      ],
+      "outputs": [
+        "Implementation plan",
+        "Editable draft",
+        "Review notes"
+      ]
+    },
+    "workflows": [],
+    "items": [
+      {
+        "title": "Agent Workspace",
+        "href": "/agent-workspace",
+        "description": "Keep the task brief, selected Skill instructions, and project materials together. Define the inputs, steps, and expected result so research, implementation, and review continue within the same project.",
+        "supporting": "Follow-up revisions can use existing files, discussions, and outputs without repeatedly rebuilding the project brief. Third-party tools, runtime dependencies, and available capabilities still need to be configured and checked against their own documentation.",
+        "linkTitle": true
+      },
+      {
+        "title": "Flow Mode",
+        "href": "https://floatboat.ai/flow-mode",
+        "description": "Discuss the brief while revising a plan, page copy, or draft deliverable. Adapt general task instructions to the needs of the project and bring feedback into the work as it develops.",
+        "supporting": "Moving from a method to a finished result often involves clarifying goals and refining details. Ongoing conversation keeps revisions connected to the existing work before you check whether the outcome meets the brief.",
+        "linkTitle": true
+      },
+      {
+        "title": "AI File Organizer",
+        "href": "/ai-file-organizer",
+        "description": "Organize local reference documents, project assets, and intermediate outputs with clear folders and filenames. Make task inputs easier to find and keep materials understandable for later review and handoff.",
+        "supporting": "Choose the folders in scope, then inspect the proposed naming and grouping. Recognizable sources and versions help distinguish reference materials, working files, and final deliverables as the project develops.",
+        "linkTitle": true
+      },
+      {
+        "title": "Multiple AI Models",
+        "href": "/models",
+        "description": "Choose models for reading sources, comparing plans, drafting content, or reviewing results while retaining the same project files, requirements, and revision history throughout the work.",
+        "supporting": "Start with what the current step needs to understand or produce, then choose a model for that task. Model selection, the Skill’s tool requirements, and verification of the final deliverable remain separate decisions.",
+        "linkTitle": true
+      }
+    ]
+  }
+}

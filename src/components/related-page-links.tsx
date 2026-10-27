@@ -3,8 +3,11 @@ import Link from "next/link";
 import { getRelatedPages, type RelatedFamily, type RelatedLocale } from "@/lib/related-pages";
 import { titleCase } from "@/lib/title-case";
 
-export function RelatedPageLinks({ family, currentId, locale }: { family: RelatedFamily; currentId: string; locale: RelatedLocale }) {
-  const { heading, description, items } = getRelatedPages(family, currentId, locale);
+export function RelatedPageLinks({ family, currentId, locale, title, intro }: { family: RelatedFamily; currentId: string; locale: RelatedLocale; title?: string; intro?: string }) {
+  const related = getRelatedPages(family, currentId, locale);
+  const heading = title ?? related.heading;
+  const description = intro ?? related.description;
+  const items = related.items;
 
   return (
     <section aria-label={heading} className="border-t border-black/[0.08] px-5 py-14 sm:px-8 sm:py-16">

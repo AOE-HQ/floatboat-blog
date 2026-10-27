@@ -1,0 +1,3 @@
+Agent logos: @lobehub/icons-static-svg 1.101.0 (MIT), https://github.com/lobehub/lobe-icons
+Brand names and marks belong to their respective owners. No endorsement implied.
+Floatboat logo: existing project brand asset.

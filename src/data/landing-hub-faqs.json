@@ -1,0 +1,164 @@
+{
+  "models": {
+    "en": [
+      {
+        "question": "How should I compare models for a real assignment?",
+        "answer": "Use a representative task with the same source material, expected output, and acceptance criteria. Compare factual accuracy, time, and the amount of revision you need rather than relying only on a benchmark ranking."
+      },
+      {
+        "question": "What is the difference between Auto Mode and choosing a model?",
+        "answer": "Auto Mode delegates routing to the available configuration; choosing a model gives you a known model target for the task. Use an explicit selection when consistent comparisons or a specific supported capability matter."
+      },
+      {
+        "question": "Why is an image or video model missing from the chat picker?",
+        "answer": "Different models use different execution paths. The directory separates chat selection from image and video models accessed through built-in Combos; absence from the chat list alone does not mean the model is unavailable everywhere."
+      },
+      {
+        "question": "Does a configured model mean I can select it now?",
+        "answer": "No. A capacity budget or protocol adapter can exist before a model is exposed in the client. Read the availability label and individual page rather than treating every directory entry as immediately selectable."
+      },
+      {
+        "question": "Is the largest context window always the best choice?",
+        "answer": "Not necessarily. What matters is how well the model uses the relevant evidence and follows the assignment. Keep sources organized, test retrieval of critical details, and check whether larger inputs improve the accepted result."
+      },
+      {
+        "question": "What data boundaries should I check before using a model?",
+        "answer": "Trace which files or extracted content are sent to the selected provider and what connected tools receive. Local files and a desktop interface do not, by themselves, establish that inference stays on the device."
+      }
+    ],
+    "zh": [
+      {
+        "question": "怎样为真实任务比较模型？",
+        "answer": "用相同材料、预期产出和验收标准测试一项有代表性的任务，比较准确性、耗时及返工量，不只依据榜单排名。"
+      },
+      {
+        "question": "自动模式与手动选模型有什么区别？",
+        "answer": "自动模式把路由交给当前配置，手动选择则为任务指定模型。需要可重复对比或明确使用某项已支持能力时，指定模型更容易核对。"
+      },
+      {
+        "question": "为什么图像或视频模型不在对话选择器里？",
+        "answer": "不同模型有不同执行入口。目录把对话模型与通过内置 Combo 调用的图像、视频模型分开；没有出现在对话列表，不等于所有入口都不可用。"
+      },
+      {
+        "question": "完成底层配置就代表现在可以选择吗？",
+        "answer": "不代表。容量预算或协议适配可以先于客户端入口存在。应查看可用状态和具体页面，不能把目录内所有条目都当成已经上架。"
+      },
+      {
+        "question": "上下文窗口越大就越适合吗？",
+        "answer": "不一定。关键是模型能否利用相关证据并遵守任务要求。整理材料后测试关键细节的提取，确认增加输入是否真的改善最终结果。"
+      },
+      {
+        "question": "使用模型前应检查哪些数据边界？",
+        "answer": "确认哪些文件或提取内容会发送给所选提供方，以及连接工具会收到什么数据。文件在本地、界面在桌面，都不能单独证明推理不离开设备。"
+      }
+    ]
+  },
+  "useCases": {
+    "en": [
+      {
+        "question": "Should I choose a workflow by job title or by task?",
+        "answer": "Start with the task and the deliverable you need. Job titles help you find familiar examples, but an evidence synthesis workflow may suit a researcher, consultant, or founder when their inputs and review needs match."
+      },
+      {
+        "question": "What makes a useful first automation project?",
+        "answer": "Choose a repeated assignment with bounded inputs and a result you can inspect, such as a weekly brief from a fixed set of sources. Avoid beginning with an open-ended process whose success cannot be clearly judged."
+      },
+      {
+        "question": "What should I prepare before handing over a task?",
+        "answer": "Provide the purpose, source files, output format, deadline, and points that need approval. An example of an accepted result helps distinguish the desired outcome from a merely plausible draft."
+      },
+      {
+        "question": "How can I tell whether a workflow saves time?",
+        "answer": "Include preparation and review in the comparison. Track how long it takes to reach an accepted result, how often important details need correction, and whether the same method works on later assignments."
+      },
+      {
+        "question": "Can one workflow be reused across different clients?",
+        "answer": "Reuse the method while keeping each client’s source material, permissions, and outputs separate. Check the context before every run so a reusable instruction does not mix unrelated confidential work."
+      },
+      {
+        "question": "Which decisions should remain with a person?",
+        "answer": "Keep responsibility for professional judgment, external commitments, and final approval with the appropriate person. A workflow can organize evidence or prepare a proposal without being authorized to make the consequential decision."
+      }
+    ],
+    "zh": [
+      {
+        "question": "应该按职业还是按任务选择场景？",
+        "answer": "先看任务和交付物。职业分类帮助你找到熟悉例子，但只要输入与审阅要求相近，证据整理流程也可以同时适用于研究者、顾问或创始人。"
+      },
+      {
+        "question": "什么任务适合作为第一次自动化尝试？",
+        "answer": "选择输入范围明确、结果可检查的重复任务，例如依据固定来源生成周报摘要。不要从成败标准不清楚的开放流程开始。"
+      },
+      {
+        "question": "委派任务前需要准备什么？",
+        "answer": "提供目标、来源文件、输出格式、期限和需确认的步骤。再给一个合格成果示例，帮助区分真正需要的交付与看起来合理的初稿。"
+      },
+      {
+        "question": "怎样判断流程是否真正节省时间？",
+        "answer": "比较时把准备和审阅都算进去，记录得到合格成果的总时间、重要细节的纠错频率，以及相同方法能否用于后续任务。"
+      },
+      {
+        "question": "同一流程能复用于不同客户吗？",
+        "answer": "可以复用方法，但要隔离每个客户的材料、权限和产物。每次执行前核对上下文，避免复用指令时把不相关的保密工作混在一起。"
+      },
+      {
+        "question": "哪些决定应由人保留？",
+        "answer": "专业判断、对外承诺和最终批准应由有责任的人承担。流程可以整理证据或准备方案，不等于获得了作出关键决定的授权。"
+      }
+    ]
+  },
+  "skillCategories": {
+    "en": [
+      {
+        "question": "What do the Skill categories describe?",
+        "answer": "They group instructions by the work they help with, such as coding, interface design, writing, or deployment. They describe task fit rather than a guarantee of quality, compatibility, or publisher approval."
+      },
+      {
+        "question": "Can the same Skill belong to more than one category?",
+        "answer": "Yes. A browser workflow may support both development and deployment work. Read its actual instructions and required tools instead of assuming that a category label completely defines its scope."
+      },
+      {
+        "question": "What if my task spans design and implementation?",
+        "answer": "Identify the next concrete step and choose a Skill for that step. A design review and a code change can use different instructions, with a shared brief and an explicit handoff between them."
+      },
+      {
+        "question": "Which Skills in a category have a detail page?",
+        "answer": "Only entries with a guide on this site open a detail page. Other entries display their name, purpose, and publisher without a link. Compare the task scope, then choose an available guide to read further."
+      },
+      {
+        "question": "Is a Skill the same thing as its underlying software?",
+        "answer": "No. A Skill can explain how to use a separately installed CLI, framework, or service. Check the software’s own setup and access requirements as well as the instruction file."
+      },
+      {
+        "question": "How should I evaluate an unfamiliar Skill?",
+        "answer": "Read the source, confirm the maintained version, and inspect the commands, services, and permissions it expects. Try a bounded task with non-sensitive material before relying on it for important work."
+      }
+    ],
+    "zh": [
+      {
+        "question": "Skill 分类描述的是什么？",
+        "answer": "分类按指引帮助完成的工作组织，例如编码、界面设计、写作或部署，表示任务方向，不代表质量、兼容性或发布者认可的保证。"
+      },
+      {
+        "question": "同一个 Skill 可以属于多个分类吗？",
+        "answer": "可以。浏览器流程可能同时用于开发和部署。应阅读实际指引和工具要求，不能用单个分类标签替代完整范围说明。"
+      },
+      {
+        "question": "任务同时涉及设计和实现时怎样选择？",
+        "answer": "先确定下一步具体工作，再为这一步选指引。设计审查和代码修改可以使用不同 Skills，通过共享任务说明和明确交接保持连续。"
+      },
+      {
+        "question": "分类中的哪些 Skill 可以打开详情？",
+        "answer": "只有已提供本站说明的 Skill 才能打开详情指南。其他条目仅展示名称、用途和发布者，不提供跳转；可以先比较任务范围，再选择已有指南继续阅读。"
+      },
+      {
+        "question": "Skill 与背后的软件是同一个东西吗？",
+        "answer": "不是。Skill 可能只是说明如何使用需要单独安装的 CLI、框架或服务。除了指引文件，还要核对软件本身的安装与访问条件。"
+      },
+      {
+        "question": "如何评估不熟悉的 Skill？",
+        "answer": "先读来源，确认维护版本，并检查所需命令、服务和权限。先用非敏感材料试做边界明确的小任务，再判断是否用于重要工作。"
+      }
+    ]
+  }
+}

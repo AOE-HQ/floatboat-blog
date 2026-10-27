@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { SkillDetailPage } from "@/components/skills/skill-detail-page";
+import { buildSkillMetadata } from "@/lib/skills/skill-metadata";
 import {
   FEATURED_SKILLS,
   getFeaturedSkill,
-  skillPath,
 } from "@/lib/skills/featured-skills";
 
 export const dynamicParams = false;
@@ -22,19 +22,7 @@ export async function generateMetadata({
   const { author, slug } = await params;
   const skill = getFeaturedSkill(author, slug);
   if (!skill) return {};
-  const canonical = `https://floatboat.ai${skillPath("zh", author, slug)}`;
-  return {
-    title: skill.seo.title.zh,
-    description: skill.seo.description.zh,
-    keywords: skill.seo.keywords.zh,
-    alternates: {
-      canonical,
-      languages: {
-        en: `https://floatboat.ai${skillPath("en", author, slug)}`,
-        zh: canonical,
-      },
-    },
-  };
+  return buildSkillMetadata(skill, "zh");
 }
 
 export default async function SkillPage({

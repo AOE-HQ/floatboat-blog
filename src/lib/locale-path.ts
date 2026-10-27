@@ -28,6 +28,10 @@ function blogRelativePath(pathname: string): string | null {
 
 /** Same blog page in another locale (Alignify-style path mirroring). */
 export function pathForLocale(pathname: string, targetLocale: BlogLocale): string {
+  const storeMatch = pathname.match(/^\/(?:zh\/)?(combostore(?:\/.*)?)$/);
+  if (storeMatch) {
+    return `${targetLocale === "zh" ? "/zh" : ""}/${storeMatch[1]}`;
+  }
   const relative = blogRelativePath(pathname);
   if (relative !== null) {
     return `${blogPathForLocale(targetLocale)}${relative}`;

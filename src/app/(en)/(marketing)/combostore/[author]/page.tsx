@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { PublisherDirectoryPage } from "@/components/skills/publisher-directory-page";
-import { PUBLISHER_HANDLES } from "@/lib/skills/publisher-directories";
-import { getPublisherProfile, publisherProfilePath } from "@/lib/skills/publisher-profiles";
+import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return PUBLISHER_HANDLES.map((author) => ({ author }));
+  return PUBLISHER_PROFILE_HANDLES.filter((handle) => !["vercel-labs", "morluto"].includes(handle)).map((author) => ({ author }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ author: string }> }): Promise<Metadata> {

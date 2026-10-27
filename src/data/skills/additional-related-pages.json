@@ -1,0 +1,128 @@
+{
+  "skills": {
+    "anthropics/frontend-design": [
+      "pbakaus/impeccable",
+      "vercel-labs/web-design-guidelines",
+      "vercel-labs/vercel-composition-patterns",
+      "anthropics/skill-creator"
+    ],
+    "anthropics/skill-creator": [
+      "vercel-labs/find-skills",
+      "obra/brainstorming",
+      "mattpocock/grill-me",
+      "mattpocock/handoff"
+    ],
+    "anthropics/pdf": [
+      "anthropics/docx",
+      "anthropics/pptx",
+      "anthropics/xlsx",
+      "anthropics/skill-creator"
+    ],
+    "anthropics/docx": [
+      "anthropics/pdf",
+      "anthropics/pptx",
+      "anthropics/xlsx",
+      "vercel-labs/writing-guidelines"
+    ],
+    "anthropics/pptx": [
+      "anthropics/docx",
+      "anthropics/pdf",
+      "anthropics/xlsx",
+      "heygen-com/hyperframes"
+    ],
+    "anthropics/xlsx": [
+      "anthropics/pdf",
+      "anthropics/docx",
+      "anthropics/pptx",
+      "anthropics/skill-creator"
+    ],
+    "pbakaus/impeccable": [
+      "anthropics/frontend-design",
+      "vercel-labs/web-design-guidelines",
+      "vercel-labs/vercel-composition-patterns",
+      "vercel-labs/writing-guidelines"
+    ],
+    "mattpocock/grill-me": [
+      "obra/brainstorming",
+      "anthropics/skill-creator",
+      "vercel-labs/find-skills",
+      "vercel-labs/web-design-guidelines"
+    ],
+    "mattpocock/tdd": [
+      "mattpocock/diagnosing-bugs",
+      "mattpocock/code-review",
+      "obra/systematic-debugging",
+      "vercel-labs/vercel-react-best-practices"
+    ],
+    "mattpocock/improve-codebase-architecture": [
+      "vercel-labs/vercel-composition-patterns",
+      "mattpocock/code-review",
+      "mattpocock/grill-me",
+      "obra/brainstorming"
+    ],
+    "mattpocock/diagnosing-bugs": [
+      "obra/systematic-debugging",
+      "mattpocock/tdd",
+      "mattpocock/improve-codebase-architecture",
+      "vercel-labs/agent-browser"
+    ],
+    "mattpocock/code-review": [
+      "mattpocock/tdd",
+      "mattpocock/improve-codebase-architecture",
+      "vercel-labs/vercel-react-best-practices",
+      "vercel-labs/web-design-guidelines"
+    ],
+    "mattpocock/handoff": [
+      "mattpocock/grill-me",
+      "vercel-labs/writing-guidelines",
+      "anthropics/docx",
+      "anthropics/skill-creator"
+    ],
+    "obra/brainstorming": [
+      "mattpocock/grill-me",
+      "mattpocock/improve-codebase-architecture",
+      "anthropics/skill-creator",
+      "vercel-labs/find-skills"
+    ],
+    "obra/systematic-debugging": [
+      "mattpocock/diagnosing-bugs",
+      "mattpocock/tdd",
+      "mattpocock/code-review",
+      "vercel-labs/agent-browser"
+    ],
+    "heygen-com/hyperframes": [
+      "anthropics/pptx",
+      "anthropics/frontend-design",
+      "pbakaus/impeccable",
+      "vercel-labs/find-skills"
+    ]
+  },
+  "publishers": {
+    "pbakaus": [
+      "anthropics",
+      "emilkowalski",
+      "obra",
+      "vercel-labs"
+    ],
+    "obra": [
+      "mattpocock",
+      "vercel-labs",
+      "pbakaus",
+      "anthropics"
+    ]
+  },
+  "skill-categories": {
+    "documents": [
+      "writing-marketing",
+      "video-production",
+      "development",
+      "coding"
+    ],
+    "video-production": [
+      "documents",
+      "design-interfaces",
+      "writing-marketing",
+      "deployment-browser"
+    ]
+  }
+}
