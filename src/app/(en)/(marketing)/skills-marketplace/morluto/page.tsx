@@ -8,11 +8,11 @@ export function generateMetadata(): Metadata {
   const profile = getPublisherProfile("morluto");
   if (!profile) return {};
   const { seoTitle: title, seoDescription: description } = profile.en;
-  const canonical = "https://floatboat.ai/combostore/morluto";
+  const canonical = "https://floatboat.ai/skills-marketplace/morluto";
   return {
     title,
     description,
-    alternates: { canonical, languages: { en: "https://floatboat.ai/combostore/morluto", zh: "https://floatboat.ai/zh/combostore/morluto" } },
+    alternates: { canonical, languages: { en: "https://floatboat.ai/skills-marketplace/morluto", zh: "https://floatboat.ai/zh/skills-marketplace/morluto" } },
     openGraph: { type: "website", title, description, url: canonical },
   };
 }

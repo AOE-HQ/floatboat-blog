@@ -71,9 +71,9 @@ const NAV_MENUS: NavMenuGroup[] = [
       },
       {
         en: "Skills Marketplace",
-        zh: "Skills Marketplace",
-        descEn: "Run open Agent Skills natively in Floatboat",
-        descZh: "在 Floatboat 中原生运行开放 Agent Skills",
+        zh: "Skills 市场",
+        descEn: "Explore publishers, open-source projects, and Agent Skills",
+        descZh: "探索发布者、开源项目与 Agent Skills",
         path: "/skills-marketplace",
       },
     ],
@@ -85,8 +85,8 @@ const NAV_MENUS: NavMenuGroup[] = [
       {
         en: "Combo Store",
         zh: "Combo 商店",
-        descEn: "Explore independent projects and Agent Skills",
-        descZh: "探索独立项目与 Agent Skills",
+        descEn: "Browse the main-site Combo Store",
+        descZh: "浏览主站 Combo 商店",
         path: "/combostore",
       },
       {
@@ -94,7 +94,7 @@ const NAV_MENUS: NavMenuGroup[] = [
         zh: "Skill 分类",
         descEn: "Browse third-party Agent Skills by task",
         descZh: "按任务浏览第三方 Agent Skills",
-        path: "/combostore/categories",
+        path: "/skills-marketplace/categories",
       },
       {
         en: "Timeshop",

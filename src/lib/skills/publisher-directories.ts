@@ -38,5 +38,5 @@ export function getPublisherDirectory(handle: string): PublisherDirectory | unde
 }
 
 export function publisherDirectoryPath(locale: SkillLocale, handle: string): string {
-  return `${locale === "zh" ? "/zh" : ""}/combostore/${handle}`;
+  return `${locale === "zh" ? "/zh" : ""}/skills-marketplace/${handle}`;
 }

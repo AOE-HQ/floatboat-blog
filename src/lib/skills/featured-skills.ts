@@ -82,5 +82,5 @@ export function skillPath(locale: SkillLocale, author: string, slug: string): st
 }
 
 export function skillPublisherPath(locale: SkillLocale, author: string): string {
-  return `${locale === "zh" ? "/zh" : ""}/combostore/${author}`;
+  return `${locale === "zh" ? "/zh" : ""}/skills-marketplace/${author}`;
 }

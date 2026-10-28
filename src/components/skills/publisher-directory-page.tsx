@@ -36,15 +36,15 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
     : profile.profileUrl ? [{ href: profile.profileUrl, label: profile.profileUrl.startsWith("https://github.com/") ? (isZh ? "GitHub 主页" : "GitHub profile") : (isZh ? "个人 / 官方主页" : "Website") }] : [];
   const canonical = `${origin}${publisherProfilePath(locale, handle)}`;
   const labels = isZh
-    ? { home: "首页", store: "Combo 商店", publisher: "发布者", profile: "查看发布者主页", project: "查看项目", download: "下载 Floatboat" }
-    : { home: "Home", store: "Combo Store", publisher: "Publisher", profile: "Visit Publisher Profile", project: "View Project", download: "Download Floatboat" };
+    ? { home: "首页", store: "Skills 市场", publisher: "发布者", profile: "查看发布者主页", project: "查看项目", download: "下载 Floatboat" }
+    : { home: "Home", store: "Skills Marketplace", publisher: "Publisher", profile: "Visit Publisher Profile", project: "View Project", download: "Download Floatboat" };
   const jsonLd = {
     "@context": "https://schema.org", "@type": "CollectionPage", name: t.heroTitle, description: t.heroDescription, url: canonical,
     inLanguage: isZh ? "zh-CN" : "en-US", about: { "@type": profile.type, name: profile.name, url: profile.profileUrl, sameAs: overviewLinks.map((link) => link.href) },
     mainEntity: { "@type": "ItemList", itemListElement: [...skillLinks.map((skill) => ({ name: skill.name, url: skill.href ? `${origin}${skill.href}` : undefined })), ...projects.map((project) => ({ name: project.name, url: project.href.startsWith("/") ? `${origin}${project.href}` : project.href }))].map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, url: item.url })) },
     breadcrumb: { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: labels.home, item: `${origin}${isZh ? "/zh" : "/"}` },
-      { "@type": "ListItem", position: 2, name: labels.store, item: `${origin}${isZh ? "/zh" : ""}/combostore` },
+      { "@type": "ListItem", position: 2, name: labels.store, item: `${origin}${isZh ? "/zh" : ""}/skills-marketplace` },
       { "@type": "ListItem", position: 3, name: profile.name, item: canonical },
     ] },
   };
@@ -53,7 +53,7 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
     <main className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
       <Breadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={[
         { label: labels.home, href: `${origin}${isZh ? "/zh" : "/"}` },
-        { label: labels.store, href: `${isZh ? "/zh" : ""}/combostore` },
+        { label: labels.store, href: `${isZh ? "/zh" : ""}/skills-marketplace` },
         { label: profile.name, href: publisherProfilePath(locale, handle) },
       ]} />
 

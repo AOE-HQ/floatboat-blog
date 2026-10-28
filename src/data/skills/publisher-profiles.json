@@ -94,7 +94,7 @@
       "faqTitle": "Vercel Labs FAQ",
       "ctaPrimary": {
         "label": "Browse projects and Skills",
-        "href": "/combostore/vercel-labs#publisher-skills-title"
+        "href": "/skills-marketplace/vercel-labs#publisher-skills-title"
       }
     },
     "zh": {
@@ -150,7 +150,7 @@
       "faqTitle": "Vercel Labs 常见问题",
       "ctaPrimary": {
         "label": "浏览项目与 Skills",
-        "href": "/zh/combostore/vercel-labs#publisher-skills-title"
+        "href": "/zh/skills-marketplace/vercel-labs#publisher-skills-title"
       }
     },
     "links": [
@@ -284,7 +284,7 @@
       "faqTitle": "Questions About morluto’s Work",
       "ctaPrimary": {
         "label": "Explore morluto’s Skills",
-        "href": "/combostore/morluto#publisher-skills-title"
+        "href": "/skills-marketplace/morluto#publisher-skills-title"
       }
     },
     "zh": {
@@ -340,7 +340,7 @@
       "faqTitle": "关于 morluto 作品的常见问题",
       "ctaPrimary": {
         "label": "浏览 morluto 的 Skills",
-        "href": "/zh/combostore/morluto#publisher-skills-title"
+        "href": "/zh/skills-marketplace/morluto#publisher-skills-title"
       }
     },
     "links": [
@@ -463,7 +463,7 @@
       "faqTitle": "Questions About Anthropic’s Developer Ecosystem",
       "ctaPrimary": {
         "label": "Explore Anthropic Skills",
-        "href": "/combostore/anthropics#publisher-skills-title"
+        "href": "/skills-marketplace/anthropics#publisher-skills-title"
       }
     },
     "zh": {
@@ -519,7 +519,7 @@
       "faqTitle": "Anthropic 开发者生态常见问题",
       "ctaPrimary": {
         "label": "探索 Anthropic Skills",
-        "href": "/zh/combostore/anthropics#publisher-skills-title"
+        "href": "/zh/skills-marketplace/anthropics#publisher-skills-title"
       }
     },
     "links": [
@@ -635,7 +635,7 @@
       "faqTitle": "Questions About HeyGen’s Video Tools",
       "ctaPrimary": {
         "label": "Explore HeyGen Skills",
-        "href": "/combostore/heygen-com#publisher-skills-title"
+        "href": "/skills-marketplace/heygen-com#publisher-skills-title"
       }
     },
     "zh": {
@@ -691,7 +691,7 @@
       "faqTitle": "HeyGen 视频工具常见问题",
       "ctaPrimary": {
         "label": "探索 HeyGen Skills",
-        "href": "/zh/combostore/heygen-com#publisher-skills-title"
+        "href": "/zh/skills-marketplace/heygen-com#publisher-skills-title"
       }
     },
     "links": [
@@ -807,7 +807,7 @@
       "faqTitle": "Questions About Matt Pocock’s Work",
       "ctaPrimary": {
         "label": "Explore Matt Pocock’s Skills",
-        "href": "/combostore/mattpocock#publisher-skills-title"
+        "href": "/skills-marketplace/mattpocock#publisher-skills-title"
       }
     },
     "zh": {
@@ -863,7 +863,7 @@
       "faqTitle": "关于 Matt Pocock 作品的常见问题",
       "ctaPrimary": {
         "label": "浏览 Matt Pocock 的 Skills",
-        "href": "/zh/combostore/mattpocock#publisher-skills-title"
+        "href": "/zh/skills-marketplace/mattpocock#publisher-skills-title"
       }
     },
     "links": [
@@ -986,7 +986,7 @@
       "faqTitle": "Questions About Emil Kowalski’s Work",
       "ctaPrimary": {
         "label": "Explore Emil Kowalski’s Skills",
-        "href": "/combostore/emilkowalski#publisher-skills-title"
+        "href": "/skills-marketplace/emilkowalski#publisher-skills-title"
       }
     },
     "zh": {
@@ -1042,7 +1042,7 @@
       "faqTitle": "关于 Emil Kowalski 作品的常见问题",
       "ctaPrimary": {
         "label": "浏览 Emil Kowalski 的 Skills",
-        "href": "/zh/combostore/emilkowalski#publisher-skills-title"
+        "href": "/zh/skills-marketplace/emilkowalski#publisher-skills-title"
       }
     },
     "links": [
@@ -1158,7 +1158,7 @@
       "faqTitle": "Questions About Corey Haines’s Work",
       "ctaPrimary": {
         "label": "Explore Corey Haines’s Skills",
-        "href": "/combostore/coreyhaines31#publisher-skills-title"
+        "href": "/skills-marketplace/coreyhaines31#publisher-skills-title"
       }
     },
     "zh": {
@@ -1214,7 +1214,7 @@
       "faqTitle": "关于 Corey Haines 作品的常见问题",
       "ctaPrimary": {
         "label": "浏览 Corey Haines 的 Skills",
-        "href": "/zh/combostore/coreyhaines31#publisher-skills-title"
+        "href": "/zh/skills-marketplace/coreyhaines31#publisher-skills-title"
       }
     },
     "links": [
@@ -1330,7 +1330,7 @@
       "faqTitle": "Questions About Julius Brussee’s Projects",
       "ctaPrimary": {
         "label": "Explore Julius Brussee’s Skills",
-        "href": "/combostore/juliusbrussee#publisher-skills-title"
+        "href": "/skills-marketplace/juliusbrussee#publisher-skills-title"
       }
     },
     "zh": {
@@ -1386,7 +1386,7 @@
       "faqTitle": "关于 Julius Brussee 项目的常见问题",
       "ctaPrimary": {
         "label": "浏览 Julius Brussee 的 Skills",
-        "href": "/zh/combostore/juliusbrussee#publisher-skills-title"
+        "href": "/zh/skills-marketplace/juliusbrussee#publisher-skills-title"
       }
     },
     "links": [
@@ -1579,7 +1579,7 @@
       "ctaDescription": "Start with the task you want to complete, compare the selected Skills and software projects, and open their original documentation to understand the workflow, environment, and integration options before choosing your next step.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/microsoft#publisher-skills-title"
+        "href": "/skills-marketplace/microsoft#publisher-skills-title"
       }
     },
     "zh": {
@@ -1634,7 +1634,7 @@
       "ctaDescription": "从当前要完成的任务出发，比较精选 Skills 与相关软件项目，打开原始资料了解具体操作、运行环境和集成方式，选择适合自己的下一步。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/microsoft#publisher-skills-title"
+        "href": "/zh/skills-marketplace/microsoft#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/microsoft.webp"
@@ -1803,7 +1803,7 @@
       "ctaDescription": "Start with the task you want to complete, compare the selected Skills and software projects, and open their original documentation to understand the workflow, environment, and integration options before choosing your next step.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/open.feishu.cn#publisher-skills-title"
+        "href": "/skills-marketplace/open.feishu.cn#publisher-skills-title"
       }
     },
     "zh": {
@@ -1858,7 +1858,7 @@
       "ctaDescription": "从当前要完成的任务出发，比较精选 Skills 与相关软件项目，打开原始资料了解具体操作、运行环境和集成方式，选择适合自己的下一步。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/open.feishu.cn#publisher-skills-title"
+        "href": "/zh/skills-marketplace/open.feishu.cn#publisher-skills-title"
       }
     }
   },
@@ -1994,7 +1994,7 @@
       "ctaDescription": "Start with the task you want to complete, compare the selected Skills and software projects, and open their original documentation to understand the workflow, environment, and integration options before choosing your next step.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/remotion-dev#publisher-skills-title"
+        "href": "/skills-marketplace/remotion-dev#publisher-skills-title"
       }
     },
     "zh": {
@@ -2049,7 +2049,7 @@
       "ctaDescription": "从当前要完成的任务出发，比较精选 Skills 与相关软件项目，打开原始资料了解具体操作、运行环境和集成方式，选择适合自己的下一步。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/remotion-dev#publisher-skills-title"
+        "href": "/zh/skills-marketplace/remotion-dev#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/remotion-dev.webp"
@@ -2156,7 +2156,7 @@
       "ctaDescription": "Start with a concrete task in reddit community research, explore the selected instructions and their expected outputs, then use the source documentation to plan the workflow that fits your needs.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/flowkit-labs#publisher-skills-title"
+        "href": "/skills-marketplace/flowkit-labs#publisher-skills-title"
       }
     },
     "zh": {
@@ -2211,7 +2211,7 @@
       "ctaDescription": "从Reddit 社区调研的具体任务开始，了解精选 Skill 的适用场景与工作步骤，再前往原始资料查看完整说明，选择适合当前需求的使用方式。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/flowkit-labs#publisher-skills-title"
+        "href": "/zh/skills-marketplace/flowkit-labs#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/flowkit-labs.webp"
@@ -2318,7 +2318,7 @@
       "ctaDescription": "Start with a concrete task in mobile app design, explore the selected instructions and their expected outputs, then use the source documentation to plan the workflow that fits your needs.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/designed-by-ai#publisher-skills-title"
+        "href": "/skills-marketplace/designed-by-ai#publisher-skills-title"
       }
     },
     "zh": {
@@ -2373,7 +2373,7 @@
       "ctaDescription": "从移动应用设计的具体任务开始，了解精选 Skill 的适用场景与工作步骤，再前往原始资料查看完整说明，选择适合当前需求的使用方式。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/designed-by-ai#publisher-skills-title"
+        "href": "/zh/skills-marketplace/designed-by-ai#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/designed-by-ai.webp"
@@ -2504,7 +2504,7 @@
       "ctaDescription": "Start with a concrete task in ai media workflows, explore the selected instructions and their expected outputs, then use the source documentation to plan the workflow that fits your needs.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/magentosh#publisher-skills-title"
+        "href": "/skills-marketplace/magentosh#publisher-skills-title"
       }
     },
     "zh": {
@@ -2559,7 +2559,7 @@
       "ctaDescription": "从AI 媒体工作流的具体任务开始，了解精选 Skill 的适用场景与工作步骤，再前往原始资料查看完整说明，选择适合当前需求的使用方式。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/magentosh#publisher-skills-title"
+        "href": "/zh/skills-marketplace/magentosh#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/magentosh.webp"
@@ -2683,7 +2683,7 @@
       "ctaDescription": "Choose a media or social task, open its published instructions, and compare the service requirements before adding the workflow to your agent.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/101-skills#publisher-skills-title"
+        "href": "/skills-marketplace/101-skills#publisher-skills-title"
       }
     },
     "zh": {
@@ -2738,7 +2738,7 @@
       "ctaDescription": "从所需的媒体素材或社交任务开始，打开对应 Skill 的公开说明，核对命令与服务要求，再决定如何加入 Agent 工作流。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/101-skills#publisher-skills-title"
+        "href": "/zh/skills-marketplace/101-skills#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/101-skills.webp"
@@ -2862,7 +2862,7 @@
       "ctaDescription": "Pick the avatar, media, or social workflow you need. Compare its published instructions and upstream source before connecting the required service to your agent.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/qu-skills#publisher-skills-title"
+        "href": "/skills-marketplace/qu-skills#publisher-skills-title"
       }
     },
     "zh": {
@@ -2917,7 +2917,7 @@
       "ctaDescription": "选择数字人、媒体素材或社交操作任务，比较对应指引与上游来源，再根据实际需求连接服务并加入 Agent 工作流。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/qu-skills#publisher-skills-title"
+        "href": "/zh/skills-marketplace/qu-skills#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/qu-skills.webp"
@@ -3025,7 +3025,7 @@
       "ctaDescription": "Choose UI Taste for broader interface direction or iOS Design for an iPhone workflow, then use the published instructions to scope the next design pass.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/uizze.sh#publisher-skills-title"
+        "href": "/skills-marketplace/uizze.sh#publisher-skills-title"
       }
     },
     "zh": {
@@ -3080,7 +3080,7 @@
       "ctaDescription": "需要通用界面方向时选择 UI Taste，需要 iPhone 原生流程审查时选择 iOS Design，再根据公开指引确定下一轮设计工作的范围。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/uizze.sh#publisher-skills-title"
+        "href": "/zh/skills-marketplace/uizze.sh#publisher-skills-title"
       }
     }
   },
@@ -3220,7 +3220,7 @@
       "ctaDescription": "Start with an interface brief, a redesign, or an audio task. Compare Leon Lin’s selected Skills and projects, then follow the source that fits your workflow.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/leonxlnx#publisher-skills-title"
+        "href": "/skills-marketplace/leonxlnx#publisher-skills-title"
       }
     },
     "zh": {
@@ -3275,7 +3275,7 @@
       "ctaDescription": "从界面需求、现有项目改版或音频任务出发，比较 Leon Lin 的精选 Skills 与软件项目，再前往适合当前工作流的公开源码入口。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/leonxlnx#publisher-skills-title"
+        "href": "/zh/skills-marketplace/leonxlnx#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/leonxlnx.webp"
@@ -3444,7 +3444,7 @@
       "ctaDescription": "Start with a concrete task in agent engineering, compare the selected instructions and software projects, and understand how their different roles can support the way you plan, build, and review your work.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/obra#publisher-skills-title"
+        "href": "/skills-marketplace/obra#publisher-skills-title"
       }
     },
     "zh": {
@@ -3499,7 +3499,7 @@
       "ctaDescription": "从Agent 工程的具体问题出发，比较精选指引与开源项目的不同作用，了解它们如何参与实际工作，再根据项目环境与当前目标选择适合自己的实践方法。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/obra#publisher-skills-title"
+        "href": "/zh/skills-marketplace/obra#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/obra.webp"
@@ -3636,7 +3636,7 @@
       "ctaDescription": "Start with a concrete task in interface design, compare the selected instructions and software projects, and understand how their different roles can support the way you plan, build, and review your work.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/pbakaus#publisher-skills-title"
+        "href": "/skills-marketplace/pbakaus#publisher-skills-title"
       }
     },
     "zh": {
@@ -3691,7 +3691,7 @@
       "ctaDescription": "从界面设计的具体问题出发，比较精选指引与开源项目的不同作用，了解它们如何参与实际工作，再根据项目环境与当前目标选择适合自己的实践方法。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/pbakaus#publisher-skills-title"
+        "href": "/zh/skills-marketplace/pbakaus#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/pbakaus.webp"
@@ -3840,7 +3840,7 @@
       "ctaDescription": "Compare the selected Skills and software projects against the task at hand. Understand the roles of instructions, tools, and runtime environments, then plan the development workflow and next step that fit your needs.",
       "ctaPrimary": {
         "label": "View selected Skills",
-        "href": "/combostore/cloudflare#publisher-skills-title"
+        "href": "/skills-marketplace/cloudflare#publisher-skills-title"
       }
     },
     "zh": {
@@ -3895,7 +3895,7 @@
       "ctaDescription": "根据当前任务比较精选 Skills 与软件项目，了解指引、工具和运行环境分别承担的职责，再结合官方资料规划适合自己的开发流程与下一步工作。",
       "ctaPrimary": {
         "label": "查看精选 Skills",
-        "href": "/zh/combostore/cloudflare#publisher-skills-title"
+        "href": "/zh/skills-marketplace/cloudflare#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/cloudflare.webp"
@@ -4036,7 +4036,7 @@
       "ctaDescription": "Compare the selected Skills and software projects against the task at hand. Understand the roles of instructions, tools, and runtime environments, then plan the development workflow and next step that fit your needs.",
       "ctaPrimary": {
         "label": "View selected Skills",
-        "href": "/combostore/trailofbits#publisher-skills-title"
+        "href": "/skills-marketplace/trailofbits#publisher-skills-title"
       }
     },
     "zh": {
@@ -4091,7 +4091,7 @@
       "ctaDescription": "根据当前任务比较精选 Skills 与软件项目，了解指引、工具和运行环境分别承担的职责，再结合官方资料规划适合自己的开发流程与下一步工作。",
       "ctaPrimary": {
         "label": "查看精选 Skills",
-        "href": "/zh/combostore/trailofbits#publisher-skills-title"
+        "href": "/zh/skills-marketplace/trailofbits#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/trailofbits.webp"
@@ -4232,7 +4232,7 @@
       "ctaDescription": "Compare the selected Skills and software projects against the task at hand. Understand the roles of instructions, tools, and runtime environments, then plan the development workflow and next step that fit your needs.",
       "ctaPrimary": {
         "label": "View selected Skills",
-        "href": "/combostore/github#publisher-skills-title"
+        "href": "/skills-marketplace/github#publisher-skills-title"
       }
     },
     "zh": {
@@ -4287,7 +4287,7 @@
       "ctaDescription": "根据当前任务比较精选 Skills 与软件项目，了解指引、工具和运行环境分别承担的职责，再结合官方资料规划适合自己的开发流程与下一步工作。",
       "ctaPrimary": {
         "label": "查看精选 Skills",
-        "href": "/zh/combostore/github#publisher-skills-title"
+        "href": "/zh/skills-marketplace/github#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/github.webp"
@@ -4424,7 +4424,7 @@
       "ctaDescription": "Start with a file, email, scheduling, or spreadsheet task. Compare the selected instructions and gws project, then prepare the service access needed for that specific workflow.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/googleworkspace#publisher-skills-title"
+        "href": "/skills-marketplace/googleworkspace#publisher-skills-title"
       }
     },
     "zh": {
@@ -4479,7 +4479,7 @@
       "ctaDescription": "从文件、邮件、日程或表格任务出发，比较精选指引与 gws 项目，再为具体工作准备相应服务访问和执行环境。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/googleworkspace#publisher-skills-title"
+        "href": "/zh/skills-marketplace/googleworkspace#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/googleworkspace.webp"
@@ -4628,7 +4628,7 @@
       "ctaDescription": "Start with the web information you need, compare search, extraction, and interaction workflows, and choose the Firecrawl tools that produce useful context for your next step.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/firecrawl#publisher-skills-title"
+        "href": "/skills-marketplace/firecrawl#publisher-skills-title"
       }
     },
     "zh": {
@@ -4683,7 +4683,7 @@
       "ctaDescription": "从需要获取的网页信息出发，比较搜索、内容提取与交互流程，选择能够为下一步研究或应用开发提供有效上下文的 Firecrawl 工具。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/firecrawl#publisher-skills-title"
+        "href": "/zh/skills-marketplace/firecrawl#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/firecrawl.webp"
@@ -4816,7 +4816,7 @@
       "ctaDescription": "Start with the backend feature or database issue you need to address. Compare the selected Skills and development tools, then choose a workflow that includes checking the actual application result.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
-        "href": "/combostore/supabase#publisher-skills-title"
+        "href": "/skills-marketplace/supabase#publisher-skills-title"
       }
     },
     "zh": {
@@ -4871,7 +4871,7 @@
       "ctaDescription": "从要实现的后端功能或要排查的数据库问题出发，比较精选 Skills 与开发工具，选择包含实际应用结果检查的工作流程。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
-        "href": "/zh/combostore/supabase#publisher-skills-title"
+        "href": "/zh/skills-marketplace/supabase#publisher-skills-title"
       }
     },
     "logo": "/blog/brand/publishers/supabase.webp"

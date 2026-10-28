@@ -16,7 +16,7 @@ function Breadcrumb({ locale, current }: { locale: SkillLocale; current?: string
   const prefix = isZh ? "/zh" : "";
   const items = [
     { label: isZh ? "首页" : "Home", href: `${origin}${prefix || "/"}` },
-    { label: isZh ? "Combo 商店" : "Combo Store", href: `${prefix}/combostore` },
+    { label: isZh ? "Skills 市场" : "Skills Marketplace", href: `${prefix}/skills-marketplace` },
     { label: isZh ? "Skill 分类" : "Skill Categories", href: skillCategoryPath(locale) },
     ...(current ? [{ label: current, href: skillCategoryPath(locale, SKILL_CATEGORY_SLUGS.find((slug) => getSkillCategory(slug)!.label[locale] === current)) }] : []),
   ];

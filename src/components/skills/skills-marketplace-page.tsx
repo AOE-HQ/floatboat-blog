@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CapabilitiesSection } from "@/components/marketing/capabilities-section";
-import storeCapabilities from "@/data/skills/combostore-capabilities.json";
+import storeCapabilities from "@/data/skills/skills-marketplace-capabilities.json";
 import { DirectoryTabs } from "@/components/marketing/directory-tabs";
 
 import { getPublisherProfile, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
@@ -12,15 +12,15 @@ import { FaqBand } from "@/components/faq-band";
 import { getStoreCatalog } from "@/lib/skills/skill-categories";
 import type { SkillLocale } from "@/lib/skills/featured-skills";
 
-export function comboStoreMetadata(locale: SkillLocale): Metadata {
+export function skillsMarketplaceMetadata(locale: SkillLocale): Metadata {
   const zh = locale === "zh";
-  const canonical = `https://floatboat.ai${zh ? "/zh" : ""}/combostore`;
-  const title = zh ? "Combo Store — Agent 工具、独立项目与 Skills | Floatboat" : "Combo Store — Agent Tools, Projects, and Skills | Floatboat";
+  const canonical = `https://floatboat.ai${zh ? "/zh" : ""}/skills-marketplace`;
+  const title = zh ? "Skills 市场 — Agent 工具、独立项目与 Skills | Floatboat" : "Skills Marketplace — Agent Tools, Projects, and Skills | Floatboat";
   const description = zh ? "探索编程 Agent、Agent Harness、独立软件与 Agent Skills。认识 OpenAI、DeepSeek、Moonshot AI 等发布者，比较项目用途、使用条件与原始来源。" : "Explore coding agents, agent harnesses, independent software, and Agent Skills. Meet their publishers and compare project capabilities, requirements, guides, and official sources.";
-  return { title: { absolute: title }, description, alternates: { canonical, languages: { en: "https://floatboat.ai/combostore", "zh-Hans": "https://floatboat.ai/zh/combostore", "x-default": "https://floatboat.ai/combostore" } }, openGraph: { type: "website", title, description, url: canonical } };
+  return { title: { absolute: title }, description, alternates: { canonical, languages: { en: "https://floatboat.ai/skills-marketplace", "zh-Hans": "https://floatboat.ai/zh/skills-marketplace", "x-default": "https://floatboat.ai/skills-marketplace" } }, openGraph: { type: "website", title, description, url: canonical } };
 }
 
-export function ComboStorePage({ locale }: { locale: SkillLocale }) {
+export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
   const zh = locale === "zh";
   const capabilityCopy = storeCapabilities[locale];
   const entries = getStoreCatalog(locale);
@@ -82,10 +82,10 @@ export function ComboStorePage({ locale }: { locale: SkillLocale }) {
     "answer": "No. Independent projects with local detail pages appear first to support workflow comparison; that is not a popularity or quality ranking. Repository stars, usage, and installation counts measure different things. Choose by source, maintenance, and task requirements."
   }
 ];
-  const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: "Combo Store", url: `https://floatboat.ai${prefix}/combostore`, inLanguage: zh ? "zh-CN" : "en-US", description: zh ? "探索团队、创作者、软件项目与 Agent Skills" : "Explore teams, creators, software projects, and Agent Skills", mainEntity: { "@type": "ItemList", numberOfItems: entries.length, itemListElement: entries.map((entry, index) => ({ "@type": "ListItem", position: index + 1, name: entry.name, url: entry.entryType === "skill" && !entry.hasLocalGuide ? undefined : entry.href.startsWith("/") ? `https://floatboat.ai${entry.href}` : entry.href })) } };
+  const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: zh ? "Skills 市场" : "Skills Marketplace", url: `https://floatboat.ai${prefix}/skills-marketplace`, inLanguage: zh ? "zh-CN" : "en-US", description: zh ? "探索团队、创作者、软件项目与 Agent Skills" : "Explore teams, creators, software projects, and Agent Skills", mainEntity: { "@type": "ItemList", numberOfItems: entries.length, itemListElement: entries.map((entry, index) => ({ "@type": "ListItem", position: index + 1, name: entry.name, url: entry.entryType === "skill" && !entry.hasLocalGuide ? undefined : entry.href.startsWith("/") ? `https://floatboat.ai${entry.href}` : entry.href })) } };
   return <div className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
-    <Breadcrumb label={zh ? "面包屑导航" : "Breadcrumb"} items={[{ label: zh ? "首页" : "Home", href: `https://floatboat.ai${prefix || "/"}` }, { label: zh ? "Combo 商店" : "Combo Store", href: `${prefix}/combostore` }]} />
-    <MarketingHero  title="Combo Store" description={zh ? "为自己的 Agent 工作流寻找可借鉴的开源项目与 Skills。从任务拆分、工具连接到上下文和结果审阅，了解组织与创作者的代表作品，选择适合在 Floatboat 中研究和验证的工作方法。" : "Find open-source projects and Skills to help design your own agent workflows. Explore task structure, tool connections, context, and result review through representative work from organizations and creators, then plan a focused experiment around your work in Floatboat."}>
+    <Breadcrumb label={zh ? "面包屑导航" : "Breadcrumb"} items={[{ label: zh ? "首页" : "Home", href: `https://floatboat.ai${prefix || "/"}` }, { label: zh ? "Skills 市场" : "Skills Marketplace", href: `${prefix}/skills-marketplace` }]} />
+    <MarketingHero  title={zh ? "Skills 市场" : "Skills Marketplace"} description={zh ? "为自己的 Agent 工作流寻找可借鉴的开源项目与 Skills。从任务拆分、工具连接到上下文和结果审阅，了解组织与创作者的代表作品，选择适合在 Floatboat 中研究和验证的工作方法。" : "Find open-source projects and Skills to help design your own agent workflows. Explore task structure, tool connections, context, and result review through representative work from organizations and creators, then plan a focused experiment around your work in Floatboat."}>
       <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-sm text-[var(--ob-color-muted)]"><span>{entries.filter((entry) => entry.entryType === "project").length} {zh ? "个独立项目" : "Projects"}</span><span>{entries.filter((entry) => entry.entryType === "skill").length} Skills</span><span>{publisherCount} {zh ? "位发布者" : "Publishers"}</span><span>{guideCount} {zh ? "篇指南" : "Guides"}</span></div>
       <p className="mx-auto mt-4 max-w-xl text-xs leading-6 text-[var(--ob-color-muted)]">{zh ? "项目与 Skills 用于工作流研究和设计参考；具体接入、运行与兼容性以实际环境和发布者说明为准。" : "Projects and Skills are references for workflow design. Validate any integration, runtime, and compatibility requirements against your environment and the upstream documentation."}</p>
     </MarketingHero>
@@ -93,7 +93,7 @@ export function ComboStorePage({ locale }: { locale: SkillLocale }) {
       <div className="mb-7"><h2 id="publishers-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{zh ? "项目与 Skills 的发布者" : "Teams and Creators Behind the Work"}</h2><p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--ob-color-text-subtle)]">{zh ? "认识开发编程 Agent、运行框架、创作工具与 Skills 的组织和创作者。了解各自的方向、代表作品和维护来源，再选择适合开发、设计、视频与办公任务的项目。" : "Meet the organizations and creators building coding agents, runtimes, creative tools, and Skills. Explore their focus, representative projects, and maintained sources before choosing resources for development, design, video, or office work."}</p></div>
       <DirectoryTabs label={zh ? "发布者类型" : "Publisher type"} tabs={[{ id: "Organization", label: zh ? "团队与组织" : "Teams and Organizations" }, { id: "Person", label: zh ? "创作者" : "Creators" }]} items={publishers.map(({ handle, profile, projectCount, skillCount }) => ({
         id: handle, title: profile.name, description: getPublisherCardCopy(handle)[locale], group: profile.type,
-        href: `${prefix}/combostore/${handle}`,
+        href: `${prefix}/skills-marketplace/${handle}`,
         label: profile.type === "Organization" ? (zh ? "团队 / 组织" : "Organization") : (zh ? "创作者" : "Creator"),
         footer: `${projectCount} ${zh ? "个项目" : "projects"} · ${skillCount} Skills`,
       }))} />

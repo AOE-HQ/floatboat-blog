@@ -12,6 +12,11 @@
 - `/ai-scheduling-assistant`、`/zh/ai-scheduling-assistant`
 - `/ai-file-organizer`、`/zh/ai-file-organizer`
 - `/floatim`、`/zh/floatim`
+- `/skills-marketplace`、`/zh/skills-marketplace` 及其子路径（聚合页、发布者、Skills、独立项目与分类）
+
+`/combostore`、`/zh/combostore` 及其子路径归主站 `aoe-backend`，本仓库不保留这些本地页面，也不提供整段重定向。主站导航中的 Combo Store 链接仍指向主域旧入口。`/skills-marketplace` 替换主站原有介绍页，全部目录链接与 canonical 使用新路径。
+
+部署脚本先更新镜像，检查中英文市场、分类、发布者、Skill 和独立项目预览页，成功后再应用 `ingress-main.yaml`。如需回退本次路径迁移，须同时恢复应用镜像与迁移前的 Ingress 清单，避免只回退其中一项。
 
 不要把 `/_next/image`、`/brand/*` 或 `/api/analytics/events` 整体转给本服务。博客静态资源应位于 `/blog/...`，例如：
 

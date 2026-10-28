@@ -48,6 +48,9 @@ jobs:
 
       - run: npm run check:images
 
+      - name: Validate marketplace route ownership
+        run: node --import tsx scripts/validate-marketplace-routes.ts
+
       - run: npm run build
 
   image:

@@ -95,7 +95,7 @@
       "ctaDescription": "Choose a task, read the matching guide, and check the original instructions before setting up your agent.",
       "ctaPrimary": {
         "label": "Browse Skills",
-        "href": "/combostore/pbakaus#publisher-skills-title"
+        "href": "/skills-marketplace/pbakaus#publisher-skills-title"
       }
     },
     "zh": {
@@ -148,7 +148,7 @@
       "ctaDescription": "从具体任务出发，阅读对应指南，再核对原始说明与 Agent 配置要求。",
       "ctaPrimary": {
         "label": "浏览 Skills",
-        "href": "/zh/combostore/pbakaus#publisher-skills-title"
+        "href": "/zh/skills-marketplace/pbakaus#publisher-skills-title"
       }
     }
   },
@@ -241,7 +241,7 @@
       "ctaDescription": "Choose a task, read the matching guide, and check the original instructions before setting up your agent.",
       "ctaPrimary": {
         "label": "Browse Skills",
-        "href": "/combostore/obra#publisher-skills-title"
+        "href": "/skills-marketplace/obra#publisher-skills-title"
       }
     },
     "zh": {
@@ -294,7 +294,7 @@
       "ctaDescription": "从具体任务出发，阅读对应指南，再核对原始说明与 Agent 配置要求。",
       "ctaPrimary": {
         "label": "浏览 Skills",
-        "href": "/zh/combostore/obra#publisher-skills-title"
+        "href": "/zh/skills-marketplace/obra#publisher-skills-title"
       }
     }
   }

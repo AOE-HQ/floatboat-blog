@@ -9,8 +9,8 @@ import { UseCasesSection } from "@/components/marketing/use-cases-section";
 import { skillPath, skillPublisherPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
 
 const labels = {
-  en: { home: "Home", store: "Combo Store" },
-  zh: { home: "首页", store: "Combo 商店" },
+  en: { home: "Home", store: "Skills Marketplace" },
+  zh: { home: "首页", store: "Skills 市场" },
 } as const;
 
 export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; locale: SkillLocale }) {
@@ -22,7 +22,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
   const publisherPath = skillPublisherPath(locale, skill.authorHandle);
   const breadcrumbs = [
     { name: t.home, url: `https://floatboat.ai${isZh ? "/zh" : "/"}` },
-    { name: t.store, url: `https://floatboat.ai${isZh ? "/zh" : ""}/combostore` },
+    { name: t.store, url: `https://floatboat.ai${isZh ? "/zh" : ""}/skills-marketplace` },
     { name: skill.publisher, url: `https://floatboat.ai${publisherPath}` },
     { name: skill.name, url: canonical },
   ];
@@ -53,7 +53,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
   return (
     <div className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-      <Breadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={breadcrumbs.map((item) => ({ label: item.name, href: item.url.startsWith("https://floatboat.ai/combostore") || item.url.startsWith("https://floatboat.ai/zh/combostore") ? new URL(item.url).pathname : item.url }))} />
+      <Breadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={breadcrumbs.map((item) => ({ label: item.name, href: item.url.startsWith("https://floatboat.ai/skills-marketplace") || item.url.startsWith("https://floatboat.ai/zh/skills-marketplace") ? new URL(item.url).pathname : item.url }))} />
 
       <MarketingHero title={skill.hero.title[locale]} description={skill.hero.description[locale]} />
 
