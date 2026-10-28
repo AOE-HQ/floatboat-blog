@@ -10,7 +10,7 @@ type Entry = ReturnType<typeof getStoreCatalog>[number];
 type Category = { slug: string; label: string; href: string };
 const PAGE_SIZE = 12;
 
-export function ComboStoreCatalog({ entries, categories, locale }: { entries: Entry[]; categories: Category[]; locale: SkillLocale }) {
+export function SkillsMarketplaceCatalog({ entries, categories, locale }: { entries: Entry[]; categories: Category[]; locale: SkillLocale }) {
   const zh = locale === "zh";
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
@@ -46,7 +46,7 @@ export function ComboStoreCatalog({ entries, categories, locale }: { entries: En
           </select>
           <label className="mt-5 flex min-h-11 cursor-pointer items-center gap-3 text-sm leading-6"><input type="checkbox" checked={guideOnly} onChange={(event) => { setGuideOnly(event.target.checked); setPage(1); }} className="size-4 accent-[#6550a5]" />{zh ? "仅显示本站有指南的 Skill" : "With a Floatboat guide"}</label>
           <button type="button" onClick={clear} className="mt-3 min-h-11 text-sm font-semibold underline underline-offset-4">{zh ? "重置筛选" : "Reset filters"}</button>
-          <div className="mt-5 border-t border-black/10 pt-5"><Link href={`${zh ? "/zh" : ""}/combostore/categories`} className="text-sm font-semibold hover:underline">{zh ? "探索分类指南" : "Explore category guides"} ↗</Link></div>
+          <div className="mt-5 border-t border-black/10 pt-5"><Link href={`${zh ? "/zh" : ""}/skills-marketplace/categories`} className="text-sm font-semibold hover:underline">{zh ? "探索分类指南" : "Explore category guides"} ↗</Link></div>
         </div>
       </aside>
       <div id="store-results" className="min-w-0 scroll-mt-24">
@@ -62,7 +62,7 @@ export function ComboStoreCatalog({ entries, categories, locale }: { entries: En
           <Link href={entry.publisherHref} className="mt-1 w-fit text-xs text-[var(--ob-color-muted)] hover:underline">{entry.publisher}</Link>
           <p className="mt-4 flex-1 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{entry.description}</p>
           <div className="mt-5 flex flex-wrap gap-1.5">{entry.categories.map((slug) => { const item = categories.find((value) => value.slug === slug)!; return <Link key={slug} href={item.href} className="rounded-md bg-black/[0.035] px-2 py-1 text-[10px] leading-5 text-[var(--ob-color-muted)] hover:bg-black/[0.07]">{item.label}</Link>; })}</div>
-          <div className="mt-5 border-t border-black/[0.07] pt-4 text-sm font-semibold">{entry.hasLocalGuide ? <Link href={entry.href} data-placement="combostore_guide">{zh ? "查看使用指南" : "Read skill guide"} →</Link> : <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer" data-placement="combostore_source">{entry.entryType === "project" ? (zh ? "查看项目" : "View project") : (zh ? "查看原始来源" : "View original source")} ↗</a>}</div>
+          <div className="mt-5 border-t border-black/[0.07] pt-4 text-sm font-semibold">{entry.hasLocalGuide ? <Link href={entry.href} data-placement="skills-marketplace_guide">{zh ? "查看使用指南" : "Read skill guide"} →</Link> : <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer" data-placement="skills-marketplace_source">{entry.entryType === "project" ? (zh ? "查看项目" : "View project") : (zh ? "查看原始来源" : "View original source")} ↗</a>}</div>
         </article>)}</div> : <div className="rounded-2xl border border-dashed border-black/20 px-8 py-20 text-center"><h3 className="font-serif text-3xl">{zh ? "没有找到匹配的项目" : "No projects match just yet."}</h3><p className="mt-3 text-sm text-[var(--ob-color-muted)]">{zh ? "试试更短的关键词，或清除筛选条件。" : "Try a shorter search or clear the filters to explore again."}</p><button onClick={clear} className="mt-6 min-h-11 rounded-full bg-[#1b1a18] px-6 text-sm font-semibold text-white">{zh ? "清除筛选" : "Clear filters"}</button></div>}
         {pages > 1 && <nav aria-label={zh ? "目录分页" : "Catalog pagination"} className="mt-8 flex items-center justify-between gap-3 border-t border-black/10 pt-6"><button disabled={currentPage === 1} onClick={() => changePage(currentPage - 1)} className="min-h-11 rounded-full border border-black/15 px-5 text-sm disabled:opacity-30">← {zh ? "上一页" : "Previous"}</button><span className="text-sm text-[var(--ob-color-muted)]">{currentPage} / {pages}</span><button disabled={currentPage === pages} onClick={() => changePage(currentPage + 1)} className="min-h-11 rounded-full border border-black/15 px-5 text-sm disabled:opacity-30">{zh ? "下一页" : "Next"} →</button></nav>}
       </div>

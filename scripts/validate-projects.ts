@@ -47,12 +47,12 @@ for (const project of PROJECTS) {
     assert(!related.items.some((item) => item.href === path));
     for (const item of related.items) assert(sitemap.includes(`<loc>https://floatboat.ai${item.href}</loc>`));
     assert(project[locale].faq.every((faq) => faq.answer.length >= (locale === "en" ? 65 : 24)), `${project.name}: FAQ is too thin`);
-    assert.equal(ingress.split(`          - path: ${publisherProfilePath(locale, project.author)}\n`).length - 1, 2, `${project.name}: both hosts must own the publisher prefix`);
+    assert.equal(ingress.split(`          - path: ${locale === "zh" ? "/zh" : ""}/skills-marketplace\n            pathType: Prefix\n`).length - 1, 2, `${project.name}: both hosts must own the marketplace subtree`);
   }
 }
 assert.equal(paths.size, 14);
 for (const locale of ["en", "zh"] as const) {
   assert(getStoreCatalog(locale).slice(0, PROJECTS.length).every((entry) => entry.entryType === "project" && entry.href.startsWith("/")), "The hub should feature the seven local project introductions first");
 }
-assert(!sitemap.includes("/combostore/moonshotai/kimi-cli</loc>"));
-console.log(`Validated ${PROJECTS.length} independent projects, 14 localized detail paths, publisher links, metadata, related navigation, assets, and scoped ingress.`);
+assert(!sitemap.includes("/skills-marketplace/moonshotai/kimi-cli</loc>"));
+console.log(`Validated ${PROJECTS.length} independent projects, 14 localized detail paths, publisher links, metadata, related navigation, assets, and marketplace ingress.`);

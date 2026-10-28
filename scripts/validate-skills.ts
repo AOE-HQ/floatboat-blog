@@ -40,8 +40,8 @@ for (const skill of FEATURED_SKILLS) {
     }
   }
   for (const prefix of ["", "/zh"]) {
-    const marker = `          - path: ${prefix}/combostore/${skill.authorHandle}\n`;
-    assert.equal(ingress.split(marker).length - 1, 2, `${id}: both host rules must route its publisher prefix`);
+    const marker = `          - path: ${prefix}/skills-marketplace\n            pathType: Prefix\n`;
+    assert.equal(ingress.split(marker).length - 1, 2, `${id}: both host rules must route the marketplace subtree`);
   }
 }
 for (const [source, target] of Object.entries(mergedSkills)) {

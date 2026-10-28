@@ -8,11 +8,11 @@ export function generateMetadata(): Metadata {
   const profile = getPublisherProfile("vercel-labs");
   if (!profile) return {};
   const { seoTitle: title, seoDescription: description } = profile.en;
-  const canonical = "https://floatboat.ai/combostore/vercel-labs";
+  const canonical = "https://floatboat.ai/skills-marketplace/vercel-labs";
   return {
     title,
     description,
-    alternates: { canonical, languages: { en: "https://floatboat.ai/combostore/vercel-labs", zh: "https://floatboat.ai/zh/combostore/vercel-labs" } },
+    alternates: { canonical, languages: { en: "https://floatboat.ai/skills-marketplace/vercel-labs", zh: "https://floatboat.ai/zh/skills-marketplace/vercel-labs" } },
     openGraph: { type: "website", title, description, url: canonical },
   };
 }

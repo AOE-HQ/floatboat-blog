@@ -18,7 +18,7 @@ const catalog = require("./src/lib/skills/skill-categories.ts");
 const { getRelatedPages } = require("./src/lib/related-pages.ts");
 const { buildCombinedSitemapXml } = require("./src/lib/sitemap.ts");
 const { ALL_PROJECTS, PROJECTS, getProject } = require("./src/lib/projects/project-pages.ts");
-const isWithdrawn = (url) => held.some((handle) => url.includes("/combostore/" + handle + "/") || url.endsWith("/combostore/" + handle));
+const isWithdrawn = (url) => held.some((handle) => url.includes("/skills-marketplace/" + handle + "/") || url.endsWith("/skills-marketplace/" + handle));
 for (const handle of held) {
   assert.equal(publishers.getPublisherProfile(handle), undefined);
   assert(!publishers.PUBLISHER_PROFILE_HANDLES.includes(handle));
@@ -45,7 +45,7 @@ for (const locale of ["en", "zh"]) {
   for (const project of PROJECTS) {
     assert(getRelatedPages("projects", project.author + "/" + project.slug, locale).items.every((entry) => !isWithdrawn(entry.href)));
   }
-  const folder = locale === "en" ? "src/app/(en)/(marketing)/combostore" : "src/app/(zh)/zh/(marketing)/combostore";
+  const folder = locale === "en" ? "src/app/(en)/(marketing)/skills-marketplace" : "src/app/(zh)/zh/(marketing)/skills-marketplace";
   const detail = require("./" + folder + "/[author]/[slug]/page.tsx");
   assert(detail.generateStaticParams().every((entry) => !held.includes(entry.author)));
   for (const handle of ["vercel-labs", "morluto"].filter((handle) => held.includes(handle))) {
@@ -56,8 +56,8 @@ for (const locale of ["en", "zh"]) {
 }
 const sitemap = buildCombinedSitemapXml();
 for (const handle of held) {
-  assert(!sitemap.includes("/combostore/" + handle + "</loc>"));
-  assert(!sitemap.includes("/combostore/" + handle + "/"));
+  assert(!sitemap.includes("/skills-marketplace/" + handle + "</loc>"));
+  assert(!sitemap.includes("/skills-marketplace/" + handle + "/"));
 }
 console.log("Passed withdrawal: " + held.join(", "));
 `;

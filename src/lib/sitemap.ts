@@ -31,8 +31,8 @@ export function buildCombinedSitemapXml(): string {
   ]).concat(["https://floatboat.ai/use-cases", "https://floatboat.ai/zh/use-cases"]).map((url) => `<url><loc>${url}</loc></url>`).join("\n");
 
   const skillPages = [
-    "https://floatboat.ai/combostore",
-    "https://floatboat.ai/zh/combostore",
+    "https://floatboat.ai/skills-marketplace",
+    "https://floatboat.ai/zh/skills-marketplace",
     `https://floatboat.ai${skillCategoryPath("en")}`,
     `https://floatboat.ai${skillCategoryPath("zh")}`,
     ...SKILL_CATEGORY_SLUGS.flatMap((slug) => [

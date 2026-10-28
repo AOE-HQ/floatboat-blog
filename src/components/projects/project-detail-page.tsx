@@ -18,7 +18,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
   const canonical = `https://floatboat.ai${projectPath(locale, project.author, project.slug)}`;
   const breadcrumbs = [
     { label: zh ? "首页" : "Home", href: `https://floatboat.ai${zh ? "/zh" : "/"}` },
-    { label: zh ? "Combo 商店" : "Combo Store", href: `${zh ? "/zh" : ""}/combostore` },
+    { label: zh ? "Skills 市场" : "Skills Marketplace", href: `${zh ? "/zh" : ""}/skills-marketplace` },
     { label: publisher.name, href: publisherHref },
     { label: project.name, href: projectPath(locale, project.author, project.slug) },
   ];

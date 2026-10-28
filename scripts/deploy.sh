@@ -36,6 +36,16 @@ if ! kubectl -n "${K8S_NAMESPACE}" rollout status "deployment/${K8S_DEPLOYMENT}"
 fi
 
 feature_paths=(
+  "/skills-marketplace"
+  "/skills-marketplace/categories"
+  "/skills-marketplace/vercel-labs"
+  "/skills-marketplace/vercel-labs/find-skills"
+  "/skills-marketplace/openai/codex"
+  "/zh/skills-marketplace"
+  "/zh/skills-marketplace/categories"
+  "/zh/skills-marketplace/vercel-labs"
+  "/zh/skills-marketplace/vercel-labs/find-skills"
+  "/zh/skills-marketplace/openai/codex"
   "/floatim"
   "/coworker"
   "/ai-scheduling-assistant"

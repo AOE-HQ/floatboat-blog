@@ -28,7 +28,7 @@ function blogRelativePath(pathname: string): string | null {
 
 /** Same blog page in another locale (Alignify-style path mirroring). */
 export function pathForLocale(pathname: string, targetLocale: BlogLocale): string {
-  const storeMatch = pathname.match(/^\/(?:zh\/)?(combostore(?:\/.*)?)$/);
+  const storeMatch = pathname.match(/^\/(?:zh\/)?(skills-marketplace(?:\/.*)?)$/);
   if (storeMatch) {
     return `${targetLocale === "zh" ? "/zh" : ""}/${storeMatch[1]}`;
   }
@@ -38,7 +38,7 @@ export function pathForLocale(pathname: string, targetLocale: BlogLocale): strin
   }
 
   const landingMatch = pathname.match(
-    /^\/(?:zh\/)?(agent-workspace|floatim|coworker|ai-scheduling-assistant|ai-file-organizer|use-cases(?:\/(?:lawyers|teachers|consultants|researchers|recruiters|financial-analysts|executive-assistants|marketers|for-solopreneur|for-creators|for-small-business|for-studio))?|models(?:\/(?:auto-mode|claude|openai|gemini|deepseek|seedance|kimi|qwen|glm|minimax))?|combostore\/categories(?:\/(?:coding|development|design-interfaces|writing-marketing|deployment-browser))?|combostore\/vercel-labs\/find-skills)\/?$/,
+    /^\/(?:zh\/)?(agent-workspace|floatim|coworker|ai-scheduling-assistant|ai-file-organizer|use-cases(?:\/(?:lawyers|teachers|consultants|researchers|recruiters|financial-analysts|executive-assistants|marketers|for-solopreneur|for-creators|for-small-business|for-studio))?|models(?:\/(?:auto-mode|claude|openai|gemini|deepseek|seedance|kimi|qwen|glm|minimax))?|skills-marketplace\/categories(?:\/(?:coding|development|design-interfaces|writing-marketing|deployment-browser))?|skills-marketplace\/vercel-labs\/find-skills)\/?$/,
   );
   if (landingMatch) {
     return `${targetLocale === "zh" ? "/zh" : ""}/${landingMatch[1]}`;

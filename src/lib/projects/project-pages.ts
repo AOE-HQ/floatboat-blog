@@ -70,7 +70,7 @@ for (const project of ALL_PROJECTS) {
 export const PROJECTS = ALL_PROJECTS.filter((project) => isPublisherApproved(project.author));
 
 export function projectPath(locale: SkillLocale, author: string, projectSlug: string) {
-  return `${locale === "zh" ? "/zh" : ""}/combostore/${author}/${projectSlug}`;
+  return `${locale === "zh" ? "/zh" : ""}/skills-marketplace/${author}/${projectSlug}`;
 }
 
 export function getProject(author: string, projectSlug: string) {

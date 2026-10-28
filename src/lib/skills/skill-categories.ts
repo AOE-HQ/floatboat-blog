@@ -104,7 +104,7 @@ export function getSkillCategory(slug: string): Category | undefined {
 }
 
 export function skillCategoryPath(locale: SkillLocale, slug?: string) {
-  return `${locale === "zh" ? "/zh" : ""}/combostore/categories${slug ? `/${slug}` : ""}`;
+  return `${locale === "zh" ? "/zh" : ""}/skills-marketplace/categories${slug ? `/${slug}` : ""}`;
 }
 
 export function getCategorySkills(slug: string, locale: SkillLocale) {

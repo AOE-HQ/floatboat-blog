@@ -5,19 +5,19 @@ import { PublisherDirectoryPage } from "@/components/skills/publisher-directory-
 import { getPublisherProfile } from "@/lib/skills/publisher-profiles";
 
 export function generateMetadata(): Metadata {
-  const profile = getPublisherProfile("morluto");
+  const profile = getPublisherProfile("vercel-labs");
   if (!profile) return {};
   const { seoTitle: title, seoDescription: description } = profile.zh;
-  const canonical = "https://floatboat.ai/zh/combostore/morluto";
+  const canonical = "https://floatboat.ai/zh/skills-marketplace/vercel-labs";
   return {
     title,
     description,
-    alternates: { canonical, languages: { en: "https://floatboat.ai/combostore/morluto", zh: "https://floatboat.ai/zh/combostore/morluto" } },
+    alternates: { canonical, languages: { en: "https://floatboat.ai/skills-marketplace/vercel-labs", zh: "https://floatboat.ai/zh/skills-marketplace/vercel-labs" } },
     openGraph: { type: "website", title, description, url: canonical },
   };
 }
 
-export default function MorlutoPage() {
-  if (!getPublisherProfile("morluto")) notFound();
-  return <PublisherDirectoryPage locale="zh" handle="morluto" />;
+export default function VercelLabsPage() {
+  if (!getPublisherProfile("vercel-labs")) notFound();
+  return <PublisherDirectoryPage locale="zh" handle="vercel-labs" />;
 }
