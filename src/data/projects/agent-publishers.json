@@ -1116,5 +1116,321 @@
         "href": "/zh/skills-marketplace/zai-org/zcode"
       }
     }
+  },
+  "dietrichgebert": {
+    "name": "DietrichGebert",
+    "type": "Person",
+    "profileUrl": "https://github.com/DietrichGebert",
+    "logo": "/blog/brand/publishers/dietrichgebert.webp",
+    "tags": {
+      "en": [
+        "Coding Skills",
+        "Code review",
+        "Developer tools"
+      ],
+      "zh": [
+        "编程 Skills",
+        "代码审查",
+        "开发工具"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/DietrichGebert",
+        "label": {
+          "en": "GitHub creator profile",
+          "zh": "创作者 GitHub 主页"
+        }
+      },
+      {
+        "href": "https://ponytail.dev/",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "en": {
+          "kind": "Coding Skill / Plugin",
+          "description": "Reuse-first coding instructions, change review, and repository audits for existing agents, with host-specific plugins and portable rules."
+        },
+        "zh": {
+          "kind": "编程 Skill / 插件",
+          "description": "为现有编程 Agent 提供优先复用、修改审查与仓库审计规则，通过宿主插件或规则文件加载。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "DietrichGebert: Ponytail and Coding Workflows | Floatboat",
+      "seoDescription": "Creates Ponytail: reuse-first coding rules, change reviews, and repository audits for existing agents.",
+      "heroTitle": "DietrichGebert: Ponytail and Coding Workflows",
+      "heroDescription": "Explore DietrichGebert’s open-source work, its underlying methods, and the conditions for adapting them. Creates Ponytail: reuse-first coding rules, change reviews, and repository audits for existing agents.",
+      "overview": {
+        "title": "About DietrichGebert",
+        "paragraphs": [
+          "DietrichGebert is the public GitHub account maintaining Ponytail, a project focused on how coding agents choose and review implementations. Its work centers on understanding the existing repository and avoiding unnecessary additions while retaining the safeguards a task requires.",
+          "Ponytail combines an instruction set with host adapters, review commands, repository auditing, and tracking for intentional shortcuts. The core rules and the surrounding plugin interfaces serve different purposes, so an adapter’s capabilities should be checked in its own documentation.",
+          "The project is published under MIT. Its examples and benchmark material make its approach inspectable, but the reported results remain tied to the tested conditions. Evaluate the rules on your own repository rather than treating the author’s numbers as a universal outcome."
+        ]
+      },
+      "aboutTitle": "About DietrichGebert",
+      "about": "DietrichGebert is the public GitHub account maintaining Ponytail, a project focused on how coding agents choose and review implementations. Its work centers on understanding the existing repository and avoiding unnecessary additions while retaining the safeguards a task requires.",
+      "projectsTitle": "DietrichGebert Projects",
+      "projectsIntro": "Explore the representative project and evaluate its mechanisms against the requirements of your own work.",
+      "skillsTitle": "DietrichGebert Skills",
+      "skillsIntro": "Explore dedicated task guides and their original sources.",
+      "relatedTitle": "Related Open-Source Publishers",
+      "relatedDescription": "Compare different approaches to coding instructions, tools, and agent systems.",
+      "faqTitle": "DietrichGebert FAQ",
+      "faq": [
+        {
+          "question": "What does DietrichGebert publish?",
+          "answer": "Ponytail is the representative project covered here: coding instructions, host adapters, review and audit workflows, and supporting examples."
+        },
+        {
+          "question": "Is this a person or an organization profile?",
+          "answer": "The GitHub source identifies DietrichGebert as a user account. This directory presents the public creator identity without inferring an employer or legal entity."
+        },
+        {
+          "question": "Which repository is the original Ponytail source?",
+          "answer": "DietrichGebert/ponytail is the repository linked by ponytail.dev and identified by its README as the official source. Other copies should be checked against that upstream."
+        },
+        {
+          "question": "What can be reused under the project license?",
+          "answer": "The repository is MIT licensed. Retain the required notice when reusing licensed material; model services and host applications have separate terms."
+        },
+        {
+          "question": "Does the creator supply a new model?",
+          "answer": "No. Ponytail supplies instructions and adapters for existing coding agents. The model, tools, and execution environment come from the chosen host."
+        },
+        {
+          "question": "How should the published benchmarks be read?",
+          "answer": "Read the stated methodology, task set, and limits, then test representative work of your own. Stars and benchmark percentages do not establish correctness for a different repository."
+        }
+      ],
+      "ctaTitle": "Explore Ponytail Workflow Design",
+      "ctaDescription": "Read the project guide for its mechanisms, workflow examples, and requirements.",
+      "ctaPrimary": {
+        "label": "View project guide",
+        "href": "/skills-marketplace/dietrichgebert/ponytail"
+      }
+    },
+    "zh": {
+      "seoTitle": "DietrichGebert：Ponytail 与编程工作方法 | Floatboat",
+      "seoDescription": "维护 Ponytail，以代码复用、修改审查和仓库审计改进编程 Agent 的工作方式。",
+      "heroTitle": "DietrichGebert：Ponytail 与编程工作方法",
+      "heroDescription": "了解 DietrichGebert 的开源项目、核心方法与适用边界。维护 Ponytail，以代码复用、修改审查和仓库审计改进编程 Agent 的工作方式。",
+      "overview": {
+        "title": "关于 DietrichGebert",
+        "paragraphs": [
+          "DietrichGebert 是维护 Ponytail 的公开 GitHub 账号，项目关注编程 Agent 如何选择实现方案并审查结果。它强调理解现有仓库、避免不必要的新增代码，同时保留任务真正需要的验证和保障。",
+          "Ponytail 将核心指令与不同宿主的适配方式、修改审查、整库审计和延期事项追踪结合起来。规则本身与外围插件界面承担不同职责，因此具体命令和钩子能力应查阅对应宿主说明。",
+          "项目采用 MIT 许可，公开示例和基准材料让方法可以被检查，但结果仍受测试条件限制。评估时应在自己的代码库中验证，不能把作者公布的数字当作普遍效果。"
+        ]
+      },
+      "aboutTitle": "关于 DietrichGebert",
+      "about": "DietrichGebert 是维护 Ponytail 的公开 GitHub 账号，项目关注编程 Agent 如何选择实现方案并审查结果。它强调理解现有仓库、避免不必要的新增代码，同时保留任务真正需要的验证和保障。",
+      "projectsTitle": "DietrichGebert 的开源项目",
+      "projectsIntro": "从代表作品了解具体机制，并在自己的任务中检查适用条件。",
+      "skillsTitle": "DietrichGebert 的 Skills",
+      "skillsIntro": "查看独立任务指南与原始来源。",
+      "relatedTitle": "相关开源发布者",
+      "relatedDescription": "继续比较编程指令、工具与 Agent 系统的不同设计。",
+      "faqTitle": "DietrichGebert 常见问题",
+      "faq": [
+        {
+          "question": "DietrichGebert 发布了什么？",
+          "answer": "这里介绍的代表项目是 Ponytail，包含编程指令、宿主适配、审查与审计工作流，以及相应示例。"
+        },
+        {
+          "question": "这是个人还是组织页面？",
+          "answer": "GitHub 来源将 DietrichGebert 标为用户账号，因此这里以公开创作者身份呈现，不推测其雇主或法人组织。"
+        },
+        {
+          "question": "哪个仓库是 Ponytail 原始来源？",
+          "answer": "ponytail.dev 指向 DietrichGebert/ponytail，README 也将其标为官方来源。其他副本应与这一上游核对。"
+        },
+        {
+          "question": "项目许可允许怎样复用？",
+          "answer": "仓库采用 MIT 许可，复用许可覆盖的材料时需要保留要求的声明；模型服务与宿主应用另有条款。"
+        },
+        {
+          "question": "这位创作者提供了新的模型吗？",
+          "answer": "没有。Ponytail 为已有编程 Agent 提供指令和适配，模型、工具与执行环境由所选宿主提供。"
+        },
+        {
+          "question": "应该怎样理解公布的基准测试？",
+          "answer": "先阅读测试方法、任务集与限制，再验证自己的代表性任务。stars 和测试百分比都不能证明另一个仓库中的正确性。"
+        }
+      ],
+      "ctaTitle": "了解 Ponytail 的工作流设计",
+      "ctaDescription": "进入项目详情，查看机制、适用场景与使用条件。",
+      "ctaPrimary": {
+        "label": "查看项目详情",
+        "href": "/zh/skills-marketplace/dietrichgebert/ponytail"
+      }
+    }
+  },
+  "milind-soni": {
+    "name": "Milind Soni",
+    "type": "Person",
+    "profileUrl": "https://github.com/milind-soni",
+    "logo": "/blog/brand/publishers/milind-soni.webp",
+    "tags": {
+      "en": [
+        "Desktop apps",
+        "Multi-agent workflows",
+        "Open source"
+      ],
+      "zh": [
+        "桌面应用",
+        "多 Agent 工作流",
+        "开源软件"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/milind-soni",
+        "label": {
+          "en": "GitHub creator profile",
+          "zh": "创作者 GitHub 主页"
+        }
+      },
+      {
+        "href": "https://mausbot.com/",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "MausBot",
+        "url": "https://github.com/milind-soni/OpenMausBot",
+        "en": {
+          "kind": "Multi-Agent Desktop App",
+          "description": "A desktop app that organizes local agent engines into role-based bots and shared channels, with execution events and human approval."
+        },
+        "zh": {
+          "kind": "多 Agent 桌面应用",
+          "description": "将本地 Agent 引擎组织为聊天式团队，通过角色频道、统一执行事件和人工审批衔接任务。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Milind Soni: MausBot and Multi-Agent Workflows | Floatboat",
+      "seoDescription": "Maintains MausBot / OpenMausBot, a desktop app for role-based agents, shared channels, and reviewable execution.",
+      "heroTitle": "Milind Soni: MausBot and Multi-Agent Workflows",
+      "heroDescription": "Explore Milind Soni’s open-source work, its underlying methods, and the conditions for adapting them. Maintains MausBot / OpenMausBot, a desktop app for role-based agents, shared channels, and reviewable execution.",
+      "overview": {
+        "title": "About Milind Soni",
+        "paragraphs": [
+          "Milind Soni is the public GitHub identity behind the canonical OpenMausBot repository. The project, also called MausBot, brings local agent engines into a chat-style desktop application with explicit bot roles and shared channels.",
+          "Its public implementation separates the interface from a local harness server and provides reference designs for execution events, permission requests, and portable team setups. Those mechanisms make it relevant to people designing collaboration between agents and human reviewers.",
+          "The source uses Apache-2.0. Local storage, third-party model access, optional cloud computers, and managed services are separate parts of the system. Repository ownership and license establish provenance and reuse terms; they do not certify every possible deployment or service configuration."
+        ]
+      },
+      "aboutTitle": "About Milind Soni",
+      "about": "Milind Soni is the public GitHub identity behind the canonical OpenMausBot repository. The project, also called MausBot, brings local agent engines into a chat-style desktop application with explicit bot roles and shared channels.",
+      "projectsTitle": "Milind Soni Projects",
+      "projectsIntro": "Explore the representative project and evaluate its mechanisms against the requirements of your own work.",
+      "skillsTitle": "Milind Soni Skills",
+      "skillsIntro": "Explore dedicated task guides and their original sources.",
+      "relatedTitle": "Related Open-Source Publishers",
+      "relatedDescription": "Compare different approaches to coding instructions, tools, and agent systems.",
+      "faqTitle": "Milind Soni FAQ",
+      "faq": [
+        {
+          "question": "What is Milind Soni’s representative project here?",
+          "answer": "MausBot, maintained as milind-soni/OpenMausBot, is the project covered by this profile. It organizes supported agent engines in a desktop chat interface."
+        },
+        {
+          "question": "Why does the repository use the OpenMausBot name?",
+          "answer": "The upstream README uses OpenMausBot, identifies MausBot as another name, and records OpenGrokBot as a former name. These names refer to the same upstream project."
+        },
+        {
+          "question": "Is dr-biko/MausBot the original repository?",
+          "answer": "No. GitHub identifies dr-biko/MausBot as a fork of milind-soni/OpenMausBot. This profile attributes the project to the canonical upstream maintainer."
+        },
+        {
+          "question": "Is the project affiliated with the providers it supports?",
+          "answer": "The README describes an independent project inspired by Grok Bot and disclaims affiliation with xAI, Meta, OpenAI, and Manus. Supported engines and inspiration do not establish ownership by those companies."
+        },
+        {
+          "question": "Can its code be reused?",
+          "answer": "The canonical repository is Apache-2.0 licensed. Check the license and third-party dependencies for your use, and treat provider accounts and services as separate agreements."
+        },
+        {
+          "question": "What part is useful when designing a team workflow?",
+          "answer": "Study role definitions, channel context, execution events, approval requests, and portable team instructions. Decide which mechanism solves your handoff problem before adopting application infrastructure."
+        }
+      ],
+      "ctaTitle": "Explore MausBot Workflow Design",
+      "ctaDescription": "Read the project guide for its mechanisms, workflow examples, and requirements.",
+      "ctaPrimary": {
+        "label": "View project guide",
+        "href": "/skills-marketplace/milind-soni/mausbot"
+      }
+    },
+    "zh": {
+      "seoTitle": "Milind Soni：MausBot 与多 Agent 协作 | Floatboat",
+      "seoDescription": "维护 MausBot / OpenMausBot，通过桌面应用组织角色 Agent、共享频道与可审阅执行。",
+      "heroTitle": "Milind Soni：MausBot 与多 Agent 协作",
+      "heroDescription": "了解 Milind Soni 的开源项目、核心方法与适用边界。维护 MausBot / OpenMausBot，通过桌面应用组织角色 Agent、共享频道与可审阅执行。",
+      "overview": {
+        "title": "关于 Milind Soni",
+        "paragraphs": [
+          "Milind Soni 是原始 OpenMausBot 仓库所对应的公开 GitHub 身份。项目也使用 MausBot 名称，将本地 Agent 引擎组织为聊天式桌面应用，并提供明确的 bot 角色和共享频道。",
+          "公开实现将界面与本地 harness 服务分开，为执行事件、权限请求和可移植团队配置提供参考。这些机制适合用于研究 Agent 之间的分工，以及人与 Agent 的审阅交接。",
+          "源码采用 Apache-2.0。本地存储、第三方模型访问、可选云电脑和托管服务是系统中的不同部分。仓库归属与许可说明来源和复用条件，不代表所有部署与服务配置都已通过验证。"
+        ]
+      },
+      "aboutTitle": "关于 Milind Soni",
+      "about": "Milind Soni 是原始 OpenMausBot 仓库所对应的公开 GitHub 身份。项目也使用 MausBot 名称，将本地 Agent 引擎组织为聊天式桌面应用，并提供明确的 bot 角色和共享频道。",
+      "projectsTitle": "Milind Soni 的开源项目",
+      "projectsIntro": "从代表作品了解具体机制，并在自己的任务中检查适用条件。",
+      "skillsTitle": "Milind Soni 的 Skills",
+      "skillsIntro": "查看独立任务指南与原始来源。",
+      "relatedTitle": "相关开源发布者",
+      "relatedDescription": "继续比较编程指令、工具与 Agent 系统的不同设计。",
+      "faqTitle": "Milind Soni 常见问题",
+      "faq": [
+        {
+          "question": "这里介绍 Milind Soni 的哪个代表项目？",
+          "answer": "这里介绍 MausBot，维护仓库为 milind-soni/OpenMausBot。它用桌面聊天界面组织受支持的 Agent 引擎。"
+        },
+        {
+          "question": "为什么仓库使用 OpenMausBot 名称？",
+          "answer": "上游 README 使用 OpenMausBot，将 MausBot 列为另一名称，并记录 OpenGrokBot 为曾用名，指向同一个上游项目。"
+        },
+        {
+          "question": "dr-biko/MausBot 是原始仓库吗？",
+          "answer": "不是。GitHub 将 dr-biko/MausBot 标为 milind-soni/OpenMausBot 的 fork，这里将项目归属于原始上游维护者。"
+        },
+        {
+          "question": "它属于所支持的模型供应商吗？",
+          "answer": "README 将其描述为受 Grok Bot 启发的独立项目，并说明与 xAI、Meta、OpenAI 和 Manus 无关联。支持某个引擎或受其启发，不代表由对应公司拥有。"
+        },
+        {
+          "question": "可以复用它的代码吗？",
+          "answer": "原始仓库采用 Apache-2.0 许可。应按自己的用途检查许可与第三方依赖，供应方账号和服务仍有独立协议。"
+        },
+        {
+          "question": "哪些设计适合研究团队工作流？",
+          "answer": "可以研究角色定义、频道上下文、执行事件、审批请求与可移植团队说明，先判断它解决哪个交接问题，再考虑是否需要应用基础设施。"
+        }
+      ],
+      "ctaTitle": "了解 MausBot 的工作流设计",
+      "ctaDescription": "进入项目详情，查看机制、适用场景与使用条件。",
+      "ctaPrimary": {
+        "label": "查看项目详情",
+        "href": "/zh/skills-marketplace/milind-soni/mausbot"
+      }
+    }
   }
 }

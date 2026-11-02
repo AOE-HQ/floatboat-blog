@@ -1590,5 +1590,599 @@
       ]
     },
     "licenseUrl": "https://github.com/zai-org/ZCode/blob/main/LICENSE"
+  },
+  {
+    "author": "dietrichgebert",
+    "slug": "ponytail",
+    "name": "Ponytail",
+    "repository": "https://github.com/DietrichGebert/ponytail",
+    "website": "https://ponytail.dev/",
+    "documentation": "https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/DietrichGebert/ponytail/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-03",
+    "related": [
+      "milind-soni/mausbot",
+      "vercel-labs/agent-desktop",
+      "openai/codex",
+      "anomalyco/opencode"
+    ],
+    "en": {
+      "seoTitle": "Ponytail — Coding Agent Skills and Review Workflows | Floatboat",
+      "description": "Ponytail adds reuse-first coding instructions, change review, and repository audits to existing agents. Explore how its rules can reduce unnecessary implementation while keeping tests, security, and accessibility in the workflow.",
+      "kind": "Coding Skill / Plugin",
+      "tags": [
+        "Code reuse",
+        "Change review",
+        "Repository audits"
+      ],
+      "overviewTitle": "About Ponytail",
+      "overview": [
+        "Ponytail is DietrichGebert’s open-source instruction set for coding agents. Its main Skill and compact AGENTS.md rules ask an agent to understand the affected code before choosing a solution. Existing repository code, standard libraries, platform features, and installed dependencies are considered before a new implementation.",
+        "The project also provides change review, repository auditing, and a ledger for deferred shortcuts. Native plugins and instruction-file adapters load the same underlying approach into different hosts, but commands and lifecycle hooks depend on the host. Ponytail supplies working instructions; the host still provides the model, tools, and execution loop.",
+        "For work organized in Floatboat, its useful contribution is a concrete method for controlling implementation scope and reviewing consequences beyond a diff. Apply the method to one repository task and compare the result against your acceptance criteria. The project’s own benchmark results are bounded experiments, not guaranteed savings for another model or codebase."
+      ],
+      "capabilitiesTitle": "Reuse, Review, and Track Deliberate Shortcuts",
+      "capabilitiesIntro": "Ponytail connects a small implementation with a clear explanation of what was checked, deferred, and affected.",
+      "capabilities": [
+        {
+          "title": "Inspect before adding code",
+          "description": "Trace the affected flow and look for an existing component, library function, or platform feature before introducing a dependency or abstraction."
+        },
+        {
+          "title": "Review the surrounding behavior",
+          "description": "The review examines the change and code it touches; the audit expands that investigation across a repository and prioritizes findings."
+        },
+        {
+          "title": "Keep deferred work visible",
+          "description": "Deliberate shortcut comments can be collected into a debt ledger, so a temporary compromise retains a reason and a point for reconsideration."
+        }
+      ],
+      "scenariosTitle": "Use Ponytail’s Method in Repository Work",
+      "scenariosIntro": "These examples adapt the project’s approach to task design; they do not require replacing your existing workspace.",
+      "scenarios": [
+        {
+          "title": "Add a form control",
+          "description": "Before building a custom date picker, inspect the project’s input component and native browser support. Validate keyboard interaction and required behavior against the actual form."
+        },
+        {
+          "title": "Review a field rename",
+          "description": "Check the callers, serializers, and consumers of the renamed field as well as the diff. A small edit can break an untouched response handler."
+        },
+        {
+          "title": "Reduce a sprawling implementation",
+          "description": "Ask which requirements the abstraction serves, remove speculative branches, and keep validation and error handling that protect real inputs."
+        }
+      ],
+      "requirementsTitle": "Evaluate the Rules in Your Agent Host",
+      "requirementsIntro": "Instruction portability and plugin feature parity are different questions. Check the documented adapter before expecting commands or hooks.",
+      "requirements": [
+        {
+          "title": "Choose a compatible adapter",
+          "description": "Read INSTALL.md for your host. A rules-file adapter loads instructions; a supported plugin can expose commands and lifecycle behavior."
+        },
+        {
+          "title": "Keep your project contract",
+          "description": "Review the rules alongside repository instructions and define the task’s correctness, security, and accessibility requirements before comparing implementations."
+        },
+        {
+          "title": "Measure a complete result",
+          "description": "Compare accepted behavior, changed code, useful tests, and review findings on the same task. Report unverified behavior rather than treating a shorter diff as success."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Ponytail an autonomous agent or a model?",
+          "answer": "It is a Skill and plugin project that changes how an existing coding agent approaches work. It does not supply model weights or replace the host’s execution runtime."
+        },
+        {
+          "question": "What is the difference between review and audit?",
+          "answer": "Review focuses on a change and the surrounding code it affects. Audit investigates the wider repository and orders findings by importance. Neither is simply a request to delete lines."
+        },
+        {
+          "question": "Does every supported host get the same features?",
+          "answer": "No. Instruction-file adapters can load the rules without plugin commands. Hooks and command syntax depend on the host; check INSTALL.md for that integration."
+        },
+        {
+          "question": "Is the task-cost band available in every agent?",
+          "answer": "No. The current documentation limits the band to supported Claude Code terminal and desktop environments. Other hosts can use the rules without that interface."
+        },
+        {
+          "question": "Does less code mean skipping safeguards?",
+          "answer": "No. The project explicitly retains validation, error handling, security, and accessibility. Judge a smaller implementation by whether it meets the same requirements."
+        },
+        {
+          "question": "Are the published benchmark gains guaranteed?",
+          "answer": "No. They are results from the maintainer’s stated tasks, models, and methodology. Test your own workloads and account for correctness, review effort, and host differences."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Ponytail：编程 Agent Skill、代码复用与审查 | Floatboat",
+      "description": "Ponytail 为现有编程 Agent 提供优先复用、修改审查与仓库审计规则。了解如何减少不必要的实现，同时保留测试、安全和无障碍要求，为自己的代码工作流明确改动范围与验收标准。",
+      "kind": "编程 Skill / 插件",
+      "tags": [
+        "代码复用",
+        "修改审查",
+        "仓库审计"
+      ],
+      "overviewTitle": "关于 Ponytail",
+      "overview": [
+        "Ponytail 是 DietrichGebert 维护的开源编程指令集。核心 Skill 与精简版 AGENTS.md 要求 Agent 先理解受影响的代码，再选择解决方案：依次检查仓库已有实现、标准库、平台原生能力和已安装依赖，确有需要时才增加新代码。",
+        "项目还提供修改审查、整库审计与延期事项台账。不同宿主可通过插件或规则文件加载这套方法，但命令、生命周期钩子和界面能力并不完全相同。Ponytail 负责约束工作方式，模型、工具和执行循环仍由宿主提供。",
+        "对在 Floatboat 中组织代码任务的用户，它提供了控制实现范围、检查修改连带影响的方法。可以先选一项仓库任务，按同一验收标准比较结果。项目公布的基准测试有特定任务与模型条件，不能直接当作其他代码库必然节省成本的承诺。"
+      ],
+      "capabilitiesTitle": "先复用，再审查，留下有依据的取舍",
+      "capabilitiesIntro": "实现可以小，但必须说清楚影响范围、已验证行为和暂缓处理的事项。",
+      "capabilities": [
+        {
+          "title": "写之前读懂现有实现",
+          "description": "沿受影响的数据流查找已有组件、库函数与平台能力，避免为已经解决的问题再次引入依赖或抽象。"
+        },
+        {
+          "title": "把审查扩展到关联代码",
+          "description": "修改审查检查 diff 及其影响的代码，整库审计则扩大调查范围，并按问题的重要程度组织结果。"
+        },
+        {
+          "title": "让延期事项可以追踪",
+          "description": "有意保留的 shortcut 注释可汇总为技术债台账，让暂时的取舍保留原因和重新处理的条件。"
+        }
+      ],
+      "scenariosTitle": "把这套方法用于具体代码任务",
+      "scenariosIntro": "从真实需求出发调整任务说明和审阅方式，把更小的改动与完整的验收放在一起。",
+      "scenarios": [
+        {
+          "title": "为表单增加日期输入",
+          "description": "先查看项目现有 Input 与浏览器日期控件是否满足需求，再决定是否新增日历组件，并核对键盘操作和实际表单行为。"
+        },
+        {
+          "title": "检查一次字段重命名",
+          "description": "除修改位置外，继续检查调用方、序列化和数据消费者。几行字段变化，也可能让没有出现在 diff 中的处理函数失败。"
+        },
+        {
+          "title": "收敛不断膨胀的实现",
+          "description": "逐项核对抽象服务的真实要求，删去推测性的分支，同时保留应对真实输入的验证与错误处理。"
+        }
+      ],
+      "requirementsTitle": "在自己的 Agent 宿主中验证规则",
+      "requirementsIntro": "能读取规则文件，不代表拥有完整插件能力；先核对当前宿主的适配说明。",
+      "requirements": [
+        {
+          "title": "选择对应适配方式",
+          "description": "通过 INSTALL.md 查看宿主入口。规则文件用于加载指令，受支持的插件才可能提供命令与生命周期行为。"
+        },
+        {
+          "title": "保留项目自身的要求",
+          "description": "将规则与仓库说明一起检查，先写明正确性、安全和无障碍要求，再比较不同实现。"
+        },
+        {
+          "title": "比较完整交付结果",
+          "description": "用同一任务检查实际行为、代码变更、有效测试与审查发现。未核实的部分应明确指出，不能只凭 diff 更短判断完成。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ponytail 是独立 Agent 或模型吗？",
+          "answer": "它是改变现有编程 Agent 工作方式的 Skill 与插件项目，不提供模型权重，也不替代宿主的执行运行时。"
+        },
+        {
+          "question": "review 和 audit 有什么区别？",
+          "answer": "review 围绕一次修改及其关联代码展开，audit 检查更广的仓库范围并排列问题优先级。两者都不只是找可以删除的代码。"
+        },
+        {
+          "question": "不同宿主能使用同样的功能吗？",
+          "answer": "不能一概而论。规则文件适配可以加载指令，但不一定带有插件命令；钩子与命令语法也依赖宿主，应查看 INSTALL.md。"
+        },
+        {
+          "question": "任务成本面板可以在所有 Agent 中显示吗？",
+          "answer": "不能。当前文档将 band 面板限定于受支持的 Claude Code 终端和桌面环境，其他宿主可以使用规则，但不包含这一界面。"
+        },
+        {
+          "question": "减少代码是否意味着省略安全措施？",
+          "answer": "不意味着。项目明确保留验证、错误处理、安全和无障碍要求。更小的实现仍须达到相同的功能与质量标准。"
+        },
+        {
+          "question": "基准测试中的收益可以直接套用吗？",
+          "answer": "不可以。那些结果来自维护者公布的任务、模型与测试方法。自己的工作负载仍需核对正确性、审阅成本和宿主差异。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "milind-soni",
+    "slug": "mausbot",
+    "name": "MausBot",
+    "repository": "https://github.com/milind-soni/OpenMausBot",
+    "website": "https://mausbot.com/",
+    "documentation": "https://github.com/milind-soni/OpenMausBot#how-it-works",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/milind-soni/OpenMausBot/blob/main/LICENSE",
+    "classification": "agent-system",
+    "reviewedAt": "2026-11-03",
+    "related": [
+      "dietrichgebert/ponytail",
+      "vercel-labs/agent-desktop",
+      "nousresearch/hermes-agent",
+      "openai/codex"
+    ],
+    "en": {
+      "seoTitle": "MausBot / OpenMausBot — Multi-Agent Workflow Design | Floatboat",
+      "description": "MausBot, published as OpenMausBot, organizes local agent engines as a team of chat contacts. Explore its role-based channels, execution events, and approval flow to design clearer handoffs and reusable team workflows.",
+      "kind": "Multi-Agent Desktop App",
+      "tags": [
+        "Role-based bots",
+        "Shared channels",
+        "Human approval"
+      ],
+      "overviewTitle": "About MausBot and OpenMausBot",
+      "overview": [
+        "MausBot is an open-source desktop application maintained in milind-soni/OpenMausBot. Its README also uses OpenMausBot and records the former OpenGrokBot name. It presents agents as chat contacts, with separate roles, model choices, conversations, and optional computer and application connections.",
+        "The interface talks to a local harness server that manages agent processes and converts provider events into a common stream. The documented engines include Claude, Codex, and Grok CLIs. Local transcripts and workspace data do not make every operation offline: model requests, connected services, and cloud computers have their own data paths and access terms.",
+        "For a Floatboat workflow, the useful design questions are how to divide responsibility, preserve shared context, and ask for approval at the right point. MausBot’s channels and portable team packages provide concrete examples. Studying that design does not establish an installed integration between the two applications."
+      ],
+      "capabilitiesTitle": "Coordinate Roles, Context, and Decisions",
+      "capabilitiesIntro": "The application separates the conversation interface from the engines that carry out work.",
+      "capabilities": [
+        {
+          "title": "Give a channel its own context",
+          "description": "Channels can define a working folder, shared instructions, bot roster, and responder rules, so several roles can work within one explicit context."
+        },
+        {
+          "title": "Normalize engine activity",
+          "description": "A local server owns the agent processes and exposes a common event stream. Tool activity and permission requests can be presented without making every engine’s protocol the user interface."
+        },
+        {
+          "title": "Package a repeatable team",
+          "description": "Team files can describe bots, channels, playbooks, and suggested routines. Import review and paused routines separate reusable instructions from live permissions."
+        }
+      ],
+      "scenariosTitle": "Design Handoffs for a Small Agent Team",
+      "scenariosIntro": "Start with complementary responsibilities and a shared deliverable, rather than adding bots without a division of work.",
+      "scenarios": [
+        {
+          "title": "Separate research from review",
+          "description": "Have one role collect source material and another check claims against those sources. Define the shared folder and the evidence each handoff must contain."
+        },
+        {
+          "title": "Prepare a recurring operations brief",
+          "description": "Specify the schedule, connected information sources, and report format. Keep drafting separate from sending messages or changing external records."
+        },
+        {
+          "title": "Reuse an established team playbook",
+          "description": "Distribute roles and instructions as a reviewed package, then reconnect services and approve execution in the receiving environment."
+        }
+      ],
+      "requirementsTitle": "Define the Execution Environment First",
+      "requirementsIntro": "A bot profile describes the job; engines, service access, and operating-system capabilities determine what can actually run.",
+      "requirements": [
+        {
+          "title": "Confirm a working agent engine",
+          "description": "The desktop setup checks a supported local engine and its account. An open-source application does not include unlimited model access or remove provider limits."
+        },
+        {
+          "title": "Choose the computer and connections",
+          "description": "Local computer use, cloud desktops, and connected applications require different permissions and services. Test the specific path needed by the task."
+        },
+        {
+          "title": "Check approvals and portable data",
+          "description": "Review what the team file contains and which actions require consent. A shared playbook should not be treated as a transfer of credentials or computer access."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Are MausBot and OpenMausBot different projects?",
+          "answer": "The upstream README identifies MausBot as another name for OpenMausBot and records OpenGrokBot as a former name. The canonical source used here is milind-soni/OpenMausBot."
+        },
+        {
+          "question": "Is MausBot a language model?",
+          "answer": "No. It is an application and local harness around supported agent engines. Bot roles and model choices sit above those engines; inference still depends on the selected provider."
+        },
+        {
+          "question": "Does local-first mean all work stays offline?",
+          "answer": "No. Local conversations and workspace data coexist with requests to model providers, connected applications, or cloud computers when those features are used. Evaluate each enabled service separately."
+        },
+        {
+          "question": "What makes a channel different from a single bot thread?",
+          "answer": "A channel can hold shared instructions, a working folder, multiple bots, and responder rules. It defines the context in which those roles collaborate."
+        },
+        {
+          "question": "Can a shared team package carry live credentials?",
+          "answer": "The documented team-sharing flow excludes keys, passwords, chat history, model choices, and computers. Import behavior differs for organization-managed packages, so inspect the relevant sharing documentation."
+        },
+        {
+          "question": "Is the open-source app the same as free model and cloud access?",
+          "answer": "No. Apache-2.0 covers the application source. Agent accounts, API usage, connected services, cloud computers, and managed offerings have separate costs and terms."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "MausBot / OpenMausBot：多 Agent 工作流设计 | Floatboat",
+      "description": "MausBot 以 OpenMausBot 发布，将本地 Agent 引擎组织为聊天式团队。了解角色频道、执行事件与人工审批，借鉴共享上下文和团队包的设计，为自己的工作流明确分工、交接与执行环境。",
+      "kind": "多 Agent 桌面应用",
+      "tags": [
+        "角色分工",
+        "共享频道",
+        "人工审批"
+      ],
+      "overviewTitle": "关于 MausBot 与 OpenMausBot",
+      "overview": [
+        "MausBot 是在 milind-soni/OpenMausBot 仓库维护的开源桌面应用。README 同时使用 OpenMausBot 名称，并记录其曾用名 OpenGrokBot。它把 Agent 呈现为聊天联系人，各自拥有角色、模型选择、对话，以及可选的电脑和应用连接。",
+        "界面通过本地 harness 服务管理 Agent 进程，将不同供应方的事件转换为统一事件流。文档列出的引擎包括 Claude、Codex 和 Grok CLI。本地保存对话与工作区资料，并不代表所有任务都离线完成；模型请求、外部应用和云电脑仍有各自的数据流向与访问条件。",
+        "对 Floatboat 用户，更值得借鉴的是如何划分角色、保留共享上下文，以及在正确的步骤请求审批。MausBot 的频道与可移植团队包提供了具体实现参考；研究这些机制，不代表两个应用之间已经完成安装或集成。"
+      ],
+      "capabilitiesTitle": "把角色、上下文与审批组织在一起",
+      "capabilitiesIntro": "聊天界面负责呈现工作，底层引擎负责执行，两者通过明确的事件与权限机制衔接。",
+      "capabilities": [
+        {
+          "title": "为频道定义共同背景",
+          "description": "频道可以包含工作目录、共享指令、参与的 bot 和响应规则，让多个角色围绕同一任务背景协作。"
+        },
+        {
+          "title": "统一不同引擎的执行事件",
+          "description": "本地服务管理 Agent 进程并输出统一事件流，使工具活动与权限请求能够在同一界面中呈现。"
+        },
+        {
+          "title": "把团队方法打包复用",
+          "description": "团队文件可描述 bot、频道、操作手册和建议例行任务，导入审阅与暂停状态将可复用说明和实际授权分开。"
+        }
+      ],
+      "scenariosTitle": "为小型 Agent 团队设计交接",
+      "scenariosIntro": "先确定互补职责与共同交付物，再决定需要多少角色和怎样共享资料。",
+      "scenarios": [
+        {
+          "title": "将资料收集与事实复核分开",
+          "description": "一个角色收集来源，另一个角色对照来源检查主张；为交接约定共享目录和必须保留的证据。"
+        },
+        {
+          "title": "准备周期性的运营简报",
+          "description": "写明执行时间、允许读取的信息源和报告格式，将起草简报与发送消息、修改外部记录分成不同步骤。"
+        },
+        {
+          "title": "复用已经跑通的团队方法",
+          "description": "把角色与指令作为可审阅的包交付，再由接收环境重新连接服务，并确认实际执行权限。"
+        }
+      ],
+      "requirementsTitle": "先确定任务实际运行在哪里",
+      "requirementsIntro": "bot 资料定义职责，引擎、服务访问和操作系统能力决定任务可以怎样执行。",
+      "requirements": [
+        {
+          "title": "确认可用的 Agent 引擎",
+          "description": "桌面引导会检查受支持的本地引擎和账号。应用开源不包含无限模型额度，也不会取消供应方的使用限制。"
+        },
+        {
+          "title": "选择电脑与应用连接",
+          "description": "本机操作、云桌面与外部应用需要不同权限和服务，应针对任务真正使用的路径验证。"
+        },
+        {
+          "title": "核对审批与团队包内容",
+          "description": "检查共享文件包含什么，以及哪些动作需要确认。操作手册不能被当作凭证或电脑访问权的转移。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "MausBot 和 OpenMausBot 是两个项目吗？",
+          "answer": "上游 README 将 MausBot 列为 OpenMausBot 的另一名称，并记录 OpenGrokBot 为曾用名。这里采用的原始仓库是 milind-soni/OpenMausBot。"
+        },
+        {
+          "question": "MausBot 本身是大语言模型吗？",
+          "answer": "不是。它是围绕受支持 Agent 引擎构建的应用与本地 harness。角色与模型选择位于引擎之上，推理仍取决于选用的供应方。"
+        },
+        {
+          "question": "本地优先代表所有任务都不联网吗？",
+          "answer": "不代表。本地保存的对话和工作区资料，可以与发往模型供应方、外部应用或云电脑的请求同时存在。需要分别检查实际启用的服务。"
+        },
+        {
+          "question": "频道和单个 bot 对话有什么不同？",
+          "answer": "频道可以定义共享指令、工作目录、多个 bot 以及响应规则，为这些角色提供共同的协作背景。"
+        },
+        {
+          "question": "共享团队包会携带真实凭证吗？",
+          "answer": "文档中的团队共享流程排除密钥、密码、聊天历史、模型选择和电脑配置。组织管理的导入流程可能不同，应核对对应的共享说明。"
+        },
+        {
+          "question": "开源应用是否包含免费模型和云电脑？",
+          "answer": "不包含。Apache-2.0 覆盖应用源码；Agent 账号、API 用量、外部服务、云电脑和托管方案有各自的费用与条款。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "vercel-labs",
+    "slug": "agent-desktop",
+    "name": "Agent Desktop",
+    "repository": "https://github.com/vercel-labs/agent-desktop",
+    "website": "https://agent-browser.dev/desktop",
+    "documentation": "https://github.com/vercel-labs/agent-desktop/blob/main/docs/install.md",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/vercel-labs/agent-desktop/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-03",
+    "related": [
+      "milind-soni/mausbot",
+      "dietrichgebert/ponytail",
+      "openai/codex",
+      "anomalyco/opencode"
+    ],
+    "en": {
+      "seoTitle": "Agent Desktop by Vercel Labs — Desktop Automation for Agents | Floatboat",
+      "description": "Agent Desktop exposes desktop apps through operating-system accessibility trees. Explore Vercel Labs’ CLI and C library to design observe–act–verify workflows, handle stale element references, and check platform permissions before automating a task.",
+      "kind": "Desktop Automation Tool",
+      "tags": [
+        "Accessibility trees",
+        "Computer use",
+        "CLI / C library"
+      ],
+      "overviewTitle": "About Vercel Labs’ Agent Desktop",
+      "overview": [
+        "Agent Desktop is an open-source desktop automation tool from Vercel Labs. Its CLI and C library expose app structure through operating-system accessibility APIs, returning JSON snapshots and references to actionable elements. The calling agent chooses the next step; Agent Desktop supplies observation and control rather than its own planning model.",
+        "The core interaction is to inspect a snapshot, act on an element reference, and inspect the result. References belong to their snapshot, so an outdated or ambiguous target calls for renewed observation. Accessibility actions are headless by default; enabling physical input is a separate choice, and exact capabilities differ across operating systems.",
+        "For workflows organized in Floatboat, the project provides a reference for desktop steps that need observable targets and explicit verification. Examples include entering prepared data into an application and checking the resulting state. Reusing the tool requires a compatible integration and the necessary permissions; a directory listing does not connect it to Floatboat."
+      ],
+      "capabilitiesTitle": "Observe, Act, and Verify Desktop State",
+      "capabilitiesIntro": "A structured target and a successful command are different forms of evidence. Check the resulting application state before continuing.",
+      "capabilities": [
+        {
+          "title": "Read app structure as JSON",
+          "description": "Snapshots expose roles, labels, windows, and actionable references through native accessibility APIs. This gives the caller a structured view of supported application controls."
+        },
+        {
+          "title": "Act on scoped element references",
+          "description": "Clicks and value changes target references from an observed snapshot. Stale or ambiguous references require another snapshot instead of silently retargeting an action."
+        },
+        {
+          "title": "Inspect errors before retrying",
+          "description": "Command envelopes describe success or a structured error. The documented retry disposition helps the caller distinguish a safe retry from an action that needs investigation."
+        }
+      ],
+      "scenariosTitle": "Plan a Desktop Step with a Checkable Result",
+      "scenariosIntro": "Use desktop control for a specific application task and define the visible state that will count as completion.",
+      "scenarios": [
+        {
+          "title": "Transfer reviewed information into an app",
+          "description": "Prepare and validate the source data first, locate the actual target controls, and inspect the saved values after entry."
+        },
+        {
+          "title": "Recover after a list changes",
+          "description": "If an item disappears or the target becomes ambiguous, take another snapshot and locate the intended row again before attempting an action."
+        },
+        {
+          "title": "Embed control in an existing runtime",
+          "description": "Compare CLI calls with the C library when your agent already owns task context and planning. Keep approval and verification decisions in that surrounding workflow."
+        }
+      ],
+      "requirementsTitle": "Check the Platform Before Desktop Automation",
+      "requirementsIntro": "Support for an operating system does not guarantee identical controls, permissions, or screenshot behavior in every environment.",
+      "requirements": [
+        {
+          "title": "Confirm permissions and session access",
+          "description": "macOS requires Accessibility permission. Windows control is constrained by process integrity level; Linux needs an accessible graphical session and the documented platform dependencies."
+        },
+        {
+          "title": "Check the exact app and display system",
+          "description": "Validate the target app’s accessibility exposure. Linux X11 and Wayland differ for input, screenshots, and clipboard operations; read the current platform capability table."
+        },
+        {
+          "title": "Limit sensitive observation data",
+          "description": "Snapshots, clipboard contents, screenshots, and traces can contain private material. Keep the collected evidence scoped to the task and check any optional model-backed helper separately."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Agent Desktop an agent harness or a model?",
+          "answer": "It is a tool an agent can invoke, delivered as a CLI and C library. The surrounding agent still owns planning, model calls, approvals, and the decision to continue."
+        },
+        {
+          "question": "How does it differ from Agent Browser?",
+          "answer": "Agent Desktop targets desktop applications through OS accessibility APIs. Agent Browser focuses on browser automation. Choose the tool according to where the task’s controls actually live."
+        },
+        {
+          "question": "What happens when an element reference becomes stale?",
+          "answer": "References are scoped to snapshots. On a stale or ambiguous target, observe again and use a reference from the new snapshot rather than assuming the old reference still identifies the intended element."
+        },
+        {
+          "question": "Does headless mean it runs without a graphical environment?",
+          "answer": "No. Here it means default actions use accessibility APIs without taking focus or moving the pointer. Linux still needs the user’s graphical session, and physical-input capabilities have additional platform conditions."
+        },
+        {
+          "question": "Can all three operating systems perform the same actions?",
+          "answer": "No. The documentation lists platform-specific differences for mouse input, screenshots, clipboard access, notifications, and system surfaces. Check the current table for the actual environment."
+        },
+        {
+          "question": "Does a Skill installation include desktop permissions?",
+          "answer": "No. Instructions explain how an agent should use the tool. The executable, its platform helpers, OS permissions, and any host integration remain separate setup requirements."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Vercel Labs Agent Desktop：Agent 桌面自动化工具 | Floatboat",
+      "description": "Agent Desktop 通过操作系统无障碍树读取并操作桌面应用。了解 Vercel Labs 的 CLI 与 C 库，围绕观察、操作和验证设计桌面工作流，处理失效元素引用，并核对不同平台的权限与能力边界。",
+      "kind": "桌面自动化工具",
+      "tags": [
+        "无障碍树",
+        "电脑操作",
+        "CLI / C 库"
+      ],
+      "overviewTitle": "关于 Vercel Labs Agent Desktop",
+      "overview": [
+        "Agent Desktop 是 Vercel Labs 发布的开源桌面自动化工具，通过 CLI 与 C 库访问操作系统无障碍接口，将应用结构转换为 JSON 快照和可操作元素引用。下一步由调用它的 Agent 决定；工具负责观察与控制，不自带负责规划的模型。",
+        "它的核心循环是读取快照、操作元素引用，再次观察结果。引用属于对应快照，目标失效或存在歧义时需要重新观察。默认操作通过无障碍接口执行，不主动抢占焦点；允许物理输入是另一项选择，具体能力也因操作系统而异。",
+        "对在 Floatboat 中组织的工作流，它为需要明确目标与结果验证的桌面步骤提供参考，例如把已核对的数据录入应用，再检查保存后的状态。实际复用仍需兼容的集成方式与必要权限，目录收录不会自动将这一工具接入 Floatboat。"
+      ],
+      "capabilitiesTitle": "观察桌面状态，操作后再次验证",
+      "capabilitiesIntro": "明确的元素目标与命令执行成功是两种不同证据，继续下一步前还应检查应用实际状态。",
+      "capabilities": [
+        {
+          "title": "把应用结构转为 JSON",
+          "description": "快照通过原生无障碍接口返回角色、标签、窗口与可操作引用，为调用方提供受支持控件的结构化视图。"
+        },
+        {
+          "title": "按快照中的元素引用操作",
+          "description": "点击和赋值指向已观察的元素引用；目标过期或无法唯一确定时，需要重新取快照，而不是悄悄换一个目标继续。"
+        },
+        {
+          "title": "先理解错误再决定重试",
+          "description": "命令返回统一结果与结构化错误；重试标记帮助调用方判断可以安全重复，还是必须先调查当前状态。"
+        }
+      ],
+      "scenariosTitle": "为桌面步骤定义可检查的结果",
+      "scenariosIntro": "围绕一个明确的应用任务使用桌面控制，先约定什么可见状态才算完成。",
+      "scenarios": [
+        {
+          "title": "把已核对资料录入应用",
+          "description": "先准备并验证输入，再定位真实控件，录入后检查保存的值，让数据准备与界面操作各有验收依据。"
+        },
+        {
+          "title": "在列表变化后恢复操作",
+          "description": "条目消失或目标不明确时，重新读取快照并定位预期行，再决定是否执行，避免把动作落到相邻条目。"
+        },
+        {
+          "title": "为既有运行层补充桌面能力",
+          "description": "当自己的 Agent 已掌握任务背景与规划时，比较 CLI 调用和 C 库接入，将审批与结果验证保留在外围工作流中。"
+        }
+      ],
+      "requirementsTitle": "桌面自动化前先核对运行平台",
+      "requirementsIntro": "支持某个操作系统，不代表所有环境都有相同的控件、权限或截图行为。",
+      "requirements": [
+        {
+          "title": "确认权限与会话条件",
+          "description": "macOS 需要无障碍权限；Windows 操作受进程完整性级别限制；Linux 需要可访问的图形会话及文档要求的平台依赖。"
+        },
+        {
+          "title": "核对应用与显示系统",
+          "description": "先验证目标应用是否暴露需要的无障碍控件。Linux 的 X11 与 Wayland 在输入、截图和剪贴板方面存在差异，应查看当前平台能力表。"
+        },
+        {
+          "title": "控制观察资料的范围",
+          "description": "快照、剪贴板、截图与跟踪记录可能包含私人资料，应只采集任务所需证据，并单独检查可选模型辅助功能的数据流向。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Agent Desktop 是 Agent Harness 或模型吗？",
+          "answer": "它是可由 Agent 调用的工具，以 CLI 和 C 库交付。规划、模型请求、审批以及是否继续执行，仍由外围 Agent 与工作流负责。"
+        },
+        {
+          "question": "它和 Agent Browser 有什么区别？",
+          "answer": "Agent Desktop 通过操作系统无障碍接口操作桌面应用；Agent Browser 主要面向浏览器自动化。应根据任务控件实际所在的环境选择。"
+        },
+        {
+          "question": "元素引用失效时应该怎么办？",
+          "answer": "引用受对应快照约束。目标过期或存在歧义时，应重新观察并使用新快照中的引用，不能假定旧引用仍指向原来的元素。"
+        },
+        {
+          "question": "默认 headless 是否代表不需要图形环境？",
+          "answer": "不是。这里指默认通过无障碍接口操作，不抢占焦点或移动鼠标。Linux 仍需要用户图形会话，物理输入还受额外平台条件限制。"
+        },
+        {
+          "question": "三个操作系统的能力完全相同吗？",
+          "answer": "不相同。文档分别说明鼠标输入、截图、剪贴板、通知与系统面板等差异，需要针对实际运行环境核对当前能力表。"
+        },
+        {
+          "question": "安装 Skill 就拥有桌面操作权限了吗？",
+          "answer": "没有。Skill 说明 Agent 应如何使用工具；可执行程序、平台辅助文件、操作系统权限与宿主集成仍是独立的准备条件。"
+        }
+      ]
+    }
   }
 ]

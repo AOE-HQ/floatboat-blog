@@ -4,7 +4,8 @@
     "vercel-labs": [
       "vercel-labs/agent-browser",
       "vercel-labs/json-render",
-      "vercel-labs/skills"
+      "vercel-labs/skills",
+      "vercel-labs/agent-desktop"
     ],
     "morluto": [
       "morluto/flameox",
@@ -74,6 +75,12 @@
       "Leonxlnx/earshot",
       "Leonxlnx/taste-skill",
       "Leonxlnx/tastecode"
+    ],
+    "dietrichgebert": [
+      "DietrichGebert/ponytail"
+    ],
+    "milind-soni": [
+      "milind-soni/OpenMausBot"
     ]
   },
   "repositories": {
@@ -4995,6 +5002,85 @@
           "bio": "ChatGLM, GLM-4.5, CogVLM, CodeGeeX, CogView, CogVideoX | CogDL, AMiner | Zhipu.ai (Z.ai)",
           "company": null
         }
+      }
+    }
+  },
+  "workflowProjectExpansion": {
+    "checkedAt": "2026-11-03",
+    "scope": "Ponytail, MausBot/OpenMausBot, and Vercel Labs Agent Desktop. Official repositories, READMEs, websites, licenses, upstream/fork relationships, and maintenance evidence reviewed. No upstream code installed or executed. Stars are dated repository counts, not quality or outcome guarantees.",
+    "repositories": {
+      "DietrichGebert/ponytail": {
+        "checkedAt": "2026-11-03",
+        "apiUrl": "https://api.github.com/repos/DietrichGebert/ponytail",
+        "fullName": "DietrichGebert/ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "stars": 182688,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-10-29T11:59:31Z",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/DietrichGebert/ponytail/blob/main/LICENSE",
+        "readmeUrl": "https://github.com/DietrichGebert/ponytail/blob/main/README.md",
+        "ownershipEvidence": "README, official project website, and latest commit by the named upstream maintainer.",
+        "sourceNotes": "Instructions, runtime behavior, and optional host-specific features are distinguished in the project guide.",
+        "licenseSha": "715d483338cea4365f0d91a27799cf61226d6bcf",
+        "owner": {
+          "login": "DietrichGebert",
+          "type": "User"
+        },
+        "websiteUrl": "https://ponytail.dev",
+        "maintenanceCommitUrl": "https://github.com/DietrichGebert/ponytail/commit/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+        "maintenanceAuthor": "DietrichGebert"
+      },
+      "milind-soni/OpenMausBot": {
+        "checkedAt": "2026-11-03",
+        "apiUrl": "https://api.github.com/repos/milind-soni/OpenMausBot",
+        "fullName": "milind-soni/OpenMausBot",
+        "url": "https://github.com/milind-soni/OpenMausBot",
+        "stars": 11111,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-02T16:48:28Z",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/milind-soni/OpenMausBot/blob/main/LICENSE",
+        "readmeUrl": "https://github.com/milind-soni/OpenMausBot/blob/main/README.md",
+        "ownershipEvidence": "README, official project website, and latest commit by the named upstream maintainer.",
+        "sourceNotes": "dr-biko/MausBot is a fork whose GitHub parent is milind-soni/OpenMausBot; it is not a second original publisher.",
+        "licenseSha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "owner": {
+          "login": "milind-soni",
+          "type": "User"
+        },
+        "websiteUrl": "https://www.openmausbot.com/",
+        "maintenanceCommitUrl": "https://github.com/milind-soni/OpenMausBot/commit/ddafb4c551ae10d9f1f58ec33190788c3933f1dd",
+        "maintenanceAuthor": "milind-soni",
+        "forkComparison": {
+          "repository": "dr-biko/MausBot",
+          "fork": true,
+          "parent": "milind-soni/OpenMausBot",
+          "apiUrl": "https://api.github.com/repos/dr-biko/MausBot"
+        }
+      },
+      "vercel-labs/agent-desktop": {
+        "checkedAt": "2026-11-03",
+        "apiUrl": "https://api.github.com/repos/vercel-labs/agent-desktop",
+        "fullName": "vercel-labs/agent-desktop",
+        "url": "https://github.com/vercel-labs/agent-desktop",
+        "stars": 8702,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-02T09:39:59Z",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/vercel-labs/agent-desktop/blob/main/LICENSE",
+        "readmeUrl": "https://github.com/vercel-labs/agent-desktop/blob/main/README.md",
+        "ownershipEvidence": "Repository is published under the verified Vercel Labs organization; the README links the Vercel Labs product page.",
+        "sourceNotes": "Instructions, runtime behavior, and optional host-specific features are distinguished in the project guide.",
+        "licenseSha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "owner": {
+          "login": "vercel-labs",
+          "type": "Organization"
+        },
+        "websiteUrl": "https://agent-browser.dev/desktop"
       }
     }
   }

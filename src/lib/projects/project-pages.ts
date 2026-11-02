@@ -38,7 +38,7 @@ const projectSchema = z.object({
   documentation: externalUrl,
   license: text,
   licenseUrl: externalUrl,
-  classification: z.enum(["official-harness", "agent-system"]),
+  classification: z.enum(["official-harness", "agent-system", "agent-tool"]),
   reviewedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   related: z.array(text).length(4),
   articleSlug: slug.optional(),

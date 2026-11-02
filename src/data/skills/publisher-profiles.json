@@ -39,6 +39,18 @@
           "kind": "开源工具",
           "description": "面向开放 Skills 生态的命令行工具，用于发现、安装和管理可复用的 Agent 指引。"
         }
+      },
+      {
+        "name": "Agent Desktop",
+        "url": "https://github.com/vercel-labs/agent-desktop",
+        "en": {
+          "kind": "Desktop Automation Tool",
+          "description": "Read and operate desktop apps through accessibility trees; study scoped element references and observe–act–verify loops for reliable workflow steps."
+        },
+        "zh": {
+          "kind": "桌面自动化工具",
+          "description": "通过无障碍树读取并操作桌面应用，借鉴快照引用与操作后验证，为工作流增加可检查的桌面步骤。"
+        }
       }
     ],
     "en": {
