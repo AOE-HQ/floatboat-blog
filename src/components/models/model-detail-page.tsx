@@ -45,7 +45,7 @@ export function ModelDetailPage({
         <span className="mx-2">/</span>
         <span>{model.name}</span>
       </nav>
-      <MarketingHero layout="split" title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)}
+      <MarketingHero layout="centered" title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)}
         action={model.access === "capacity" ? undefined : { label: isZh ? "下载 Floatboat" : "Download Floatboat", href: download }}
         media={{ kind: "demo", label: isZh ? `${model.name} 模型预览` : `${model.name} model preview`, content: <ModelPickerDemo model={model} locale={locale} /> }}
       />
