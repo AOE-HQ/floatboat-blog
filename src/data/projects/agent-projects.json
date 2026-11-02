@@ -397,6 +397,210 @@
     "licenseUrl": "https://github.com/deepseek-ai/deepseek-harness/blob/master/LICENSE"
   },
   {
+    "author": "deepseek-ai",
+    "slug": "dsh-superagent",
+    "name": "DSH Superagent Prototype",
+    "logo": "/blog/brand/publishers/deepseek-ai.webp",
+    "repository": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "website": "https://github.com/deepseek-ai/dsh-superagent-prototype#readme",
+    "documentation": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/LICENSE",
+    "classification": "agent-system",
+    "reviewedAt": "2026-11-02",
+    "related": [
+      "deepseek-ai/deepseek-harness",
+      "openai/codex",
+      "nousresearch/hermes-agent",
+      "anomalyco/opencode"
+    ],
+    "articleSlug": "deepseek-dsh-superagent",
+    "en": {
+      "seoTitle": "DSH Superagent Prototype — Agent Workflows | Floatboat",
+      "description": "Explore DeepSeek’s research prototype for turning authorized GitHub and Feishu requests into coding tasks. Study task routing, scoped execution, and reviewable delivery for your own agent workflows.",
+      "kind": "Coding Agent Research Prototype",
+      "tags": [
+        "GitHub workflows",
+        "Task routing",
+        "Research prototype"
+      ],
+      "overviewTitle": "About DSH Superagent Prototype",
+      "overview": [
+        "DSH Superagent Prototype is a proactive coding agent published in DeepSeek’s official GitHub organization. It runs as a DeepSeek Harness bundle for one GitHub repository, with optional Feishu input. Authorized requests become tasks that execute in their own sessions and working directories, then return results to the original conversation.",
+        "Its useful workflow patterns include evaluating incoming requests, keeping each task within an assigned scope, and following discussion without treating every message as new authority. The web panel prioritizes work needing a person and also exposes history and operational health.",
+        "The MIT-licensed repository is research code, explicitly described as not an official DeepSeek product or production-ready software. Its published implementation differs from the internal version and the accompanying design article; some ideas discussed there remain unimplemented."
+      ],
+      "capabilitiesTitle": "How Requests Become Agent Work",
+      "capabilitiesIntro": "Follow the mechanisms that connect a team’s request to a bounded task and a result someone can review.",
+      "capabilities": [
+        {
+          "title": "Requests with an accountable source",
+          "description": "GitHub and optional Feishu events enter a policy-controlled routing process. Allowed senders, receiving scope, and team rules determine whether a request can become work."
+        },
+        {
+          "title": "A scope for each task",
+          "description": "Accepted work becomes a Ticket with a Mandate defining its authority. Its executor uses a dedicated session and directory while subscribed conversations provide continuing context."
+        },
+        {
+          "title": "Results where the work started",
+          "description": "The agent can reply in the original conversation and open pull requests. A panel brings review, blocked work, and other items needing human attention into view."
+        }
+      ],
+      "scenariosTitle": "Workflow Ideas to Try",
+      "scenariosIntro": "Use these patterns to improve coordination around your own tasks, then verify any software integration separately.",
+      "scenarios": [
+        {
+          "title": "Repository maintenance requests",
+          "description": "Define a small coding request, its permitted changes, and the evidence needed for acceptance. Use the task-to-pull-request pattern to make the proposed result easy to inspect."
+        },
+        {
+          "title": "Follow-up after a review",
+          "description": "Keep a reviewer’s comments attached to the right task and preserve the original scope. Route requests for unrelated work separately instead of silently expanding an existing assignment."
+        },
+        {
+          "title": "Team messages with a clear outcome",
+          "description": "Specify which channel and people may request work, then define where the result should return. Borrow that handoff pattern for workflows organized in Floatboat without assuming a built-in connection."
+        }
+      ],
+      "requirementsTitle": "Before Running the Prototype",
+      "requirementsIntro": "Check the runtime, account, and machine boundaries before moving from a design reference to a live experiment.",
+      "requirements": [
+        {
+          "title": "Prepare the runtime and agent identity",
+          "description": "Use a supported Harness version, a configured model provider, and the documented command-line dependencies. One deployment serves one github.com repository through a dedicated GitHub user account."
+        },
+        {
+          "title": "Separate machine permissions",
+          "description": "The documented router and worker presets run with full access as the operating-system user. Separate sessions and credential wrappers are not a sandbox; use a dedicated OS account for isolation."
+        },
+        {
+          "title": "Inspect inferred work first",
+          "description": "The default observe mode records inferred tasks it would accept without starting them; explicit requests still execute. Review decisions before enabling automatic acceptance under written rules."
+        }
+      ],
+      "articleTitle": "From GitHub Requests to Agent Workflows",
+      "articleDescription": "Trace a request through authorization, task execution, and delivery, then decide which mechanisms fit your own workflow.",
+      "faq": [
+        {
+          "question": "Is DSH Superagent a DeepSeek model?",
+          "answer": "It is agent application code running on DeepSeek Harness. A separately configured model provider supplies inference; the project itself is not model weights or a model API subscription."
+        },
+        {
+          "question": "How does it differ from DeepSeek Harness?",
+          "answer": "Harness provides the surrounding agent runtime and extension system. Superagent is a bundle built on that runtime to coordinate requests, tasks, sessions, and delivery for a repository."
+        },
+        {
+          "question": "Does it need Feishu or support every GitHub deployment?",
+          "answer": "Feishu is optional. The documented scope is one github.com repository per deployment; GitHub Enterprise Server is unsupported. The agent needs a dedicated GitHub user with write access, rather than a GitHub App."
+        },
+        {
+          "question": "Does observe mode stop every task from running?",
+          "answer": "No. It evaluates inferred candidates and records positive assessments without accepting them. Explicit requests work in every mode; automatic acceptance of inferred work requires auto mode and matching rules."
+        },
+        {
+          "question": "Are workers isolated from the rest of my computer?",
+          "answer": "No security sandbox is provided by the separate task directories or account wrappers. The documented presets run with full OS-user access, so the deployment guide recommends a dedicated OS account containing only the agent credentials."
+        },
+        {
+          "question": "Does MIT make it production-ready or include free inference?",
+          "answer": "MIT covers the source code. Model services and machine operation have separate costs and terms. The README identifies the software as a research prototype, with differences from its internal implementation and some unimplemented design ideas."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "DSH Superagent Prototype：主动编程 Agent 工作流 | Floatboat",
+      "description": "了解 DeepSeek 的主动编程 Agent 研究原型，如何将 GitHub 与飞书中的授权请求转为任务。参考任务路由、范围管理和结果交付机制，构建或优化自己的 Agent 工作流。",
+      "kind": "编程 Agent 研究原型",
+      "tags": [
+        "GitHub 工作流",
+        "任务路由",
+        "研究原型"
+      ],
+      "overviewTitle": "关于 DSH Superagent Prototype",
+      "overview": [
+        "DSH Superagent Prototype 是 DeepSeek 官方 GitHub 组织发布的主动编程 Agent 研究原型。它作为 DeepSeek Harness 的扩展包运行，面向单个 GitHub 仓库，也可接收飞书消息；授权请求会转为任务，在独立会话和工作目录中执行，再把结果送回原讨论。",
+        "值得借鉴的机制包括请求评估、任务范围管理，以及跟进讨论时区分上下文与新增授权。网页面板优先呈现需要人工处理的事项，同时提供历史记录和运行健康信息，帮助团队跟踪任务与结果。",
+        "仓库采用 MIT 许可，README 明确其并非正式 DeepSeek 产品，也不属于生产就绪软件。公开实现与内部版本、配套设计文章并不完全一致，文章中的部分设计尚未实现，采用时应以实际代码和文档为准。"
+      ],
+      "capabilitiesTitle": "从团队请求到 Agent 任务",
+      "capabilitiesIntro": "了解请求如何经过权限判断、形成明确任务，并转为可以审阅的结果。",
+      "capabilities": [
+        {
+          "title": "有来源的任务请求",
+          "description": "GitHub 与可选飞书事件进入受策略约束的路由流程。允许的请求者、消息接收范围与团队规则，共同决定一条请求能否转为工作。"
+        },
+        {
+          "title": "有范围的独立执行",
+          "description": "已接受的工作会建立 Ticket，并通过 Mandate 记录授权范围。执行者使用独立会话和目录，订阅讨论则为后续步骤补充上下文。"
+        },
+        {
+          "title": "回到原讨论的交付",
+          "description": "Agent 可以在原会话中回复结果并创建 Pull Request。面板汇集待审阅、受阻及其他需要人工关注的事项，方便继续推进任务。"
+        }
+      ],
+      "scenariosTitle": "可以借鉴的工作流场景",
+      "scenariosIntro": "围绕自己的任务改进协作与交接，再按实际环境验证软件接入方式。",
+      "scenarios": [
+        {
+          "title": "处理仓库维护请求",
+          "description": "为一个小型编程请求明确可改动范围、验收证据和交付方式。参考从任务到 Pull Request 的组织方式，让提交的修改更容易检查。"
+        },
+        {
+          "title": "跟进评审与后续反馈",
+          "description": "把评审意见接回对应任务，并保留原有授权范围。遇到无关工作时重新路由，避免在持续讨论中悄悄扩大执行目标。"
+        },
+        {
+          "title": "把团队消息变为交付目标",
+          "description": "明确哪些渠道与人员能够发起工作，以及结果应回到哪里。将这种交接方式用于 Floatboat 中组织的工作流，具体软件连接另行验证。"
+        }
+      ],
+      "requirementsTitle": "运行原型前需要准备什么",
+      "requirementsIntro": "从设计参考进入实际试验前，先检查运行环境、账号与机器权限。",
+      "requirements": [
+        {
+          "title": "准备运行环境和 Agent 身份",
+          "description": "需要受支持的 Harness 版本、已配置的模型服务和文档列出的命令行依赖。一次部署面向一个 github.com 仓库，通过专用 GitHub 用户账号执行操作。"
+        },
+        {
+          "title": "划清机器与账号权限",
+          "description": "文档中的路由与工作预设以操作系统用户身份拥有完整执行权限。独立会话和凭据包装并非沙箱；需要隔离时，应使用专用操作系统账号。"
+        },
+        {
+          "title": "先检查推断任务的判断",
+          "description": "默认 observe 模式只记录本来会接受的推断任务，显式请求仍可执行。先检查决策记录，再根据书面规则启用推断任务的自动接受。"
+        }
+      ],
+      "articleTitle": "GitHub 请求如何变成 Agent 工作流",
+      "articleDescription": "跟随一次请求理解授权、任务执行与交付，再判断哪些机制适合自己的工作方式。",
+      "faq": [
+        {
+          "question": "DSH Superagent 是 DeepSeek 模型吗？",
+          "answer": "它是在 DeepSeek Harness 上运行的 Agent 应用代码，推理由另行配置的模型服务提供。项目本身不是模型权重，也不包含模型 API 订阅。"
+        },
+        {
+          "question": "它与 DeepSeek Harness 有什么区别？",
+          "answer": "Harness 提供 Agent 运行环境与扩展机制；Superagent 是基于它构建的扩展包，负责仓库中的请求接收、任务管理、会话执行与结果交付。"
+        },
+        {
+          "question": "必须接入飞书吗，支持所有 GitHub 环境吗？",
+          "answer": "飞书是可选入口。当前文档限定一次部署面向一个 github.com 仓库，不支持 GitHub Enterprise Server。执行身份需要具有仓库写权限的专用 GitHub 用户账号，而非 GitHub App。"
+        },
+        {
+          "question": "observe 模式会阻止全部任务执行吗？",
+          "answer": "不会。它会评估推断任务，并记录本来会接受的结果，但不真正接受这些任务。显式请求在所有模式下仍可执行；推断任务自动接受需要启用 auto 模式并匹配规则。"
+        },
+        {
+          "question": "独立工作目录能隔离我的电脑吗？",
+          "answer": "不能。独立任务目录和账号包装不构成安全沙箱。文档中的预设拥有操作系统用户的完整执行权限，因此部署指南建议使用只放置 Agent 凭据的专用操作系统账号。"
+        },
+        {
+          "question": "MIT 是否意味着已经成熟并且推理免费？",
+          "answer": "MIT 适用于源码，模型服务和机器运行另有费用与条款。README 将其定位为研究原型，公开版与内部实现存在差异，设计文章中的部分方案也尚未实现。"
+        }
+      ]
+    }
+  },
+  {
     "author": "earendil-works",
     "slug": "pi",
     "name": "Pi",

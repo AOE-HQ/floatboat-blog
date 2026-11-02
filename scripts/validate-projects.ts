@@ -14,14 +14,20 @@ import { buildPublisherMetadata } from "../src/lib/skills/publisher-metadata";
 const ingress = readFileSync("k8s/ingress-main.yaml", "utf8");
 const sitemap = buildCombinedSitemapXml();
 const paths = new Set<string>();
-assert.equal(PROJECTS.length, 7);
+assert.equal(PROJECTS.length, 8);
 assert.equal(PROJECTS.filter((project) => project.classification === "official-harness").length, 4);
 
 for (const project of PROJECTS) {
   const publisher = getPublisherProfile(project.author)!;
   const approval = review.publishers[project.author as keyof typeof review.publishers];
   assert.equal(approval.status, "approved");
-  assert.equal(`https://github.com/${approval.representativeRepository}`, project.repository);
+  const reviewedRepositories: readonly string[] = approval.repositories;
+  assert(reviewedRepositories.includes(project.repository.replace("https://github.com/", "")), `${project.name}: repository must have an inclusion review`);
+  if (project.articleSlug) {
+    for (const prefix of ["", "zh/"]) {
+      assert(existsSync(`content/blog/${prefix}${project.articleSlug}.md`), `${project.name}: missing linked article`);
+    }
+  }
   assert(existsSync(`public${publisher.logo}`), `${project.author}: missing publisher avatar`);
   assert(existsSync(`public${projectShareImagePath(project.author, project.slug)}`), `${project.name}: missing share image`);
   getPublisherCardCopy(project.author);
@@ -50,9 +56,9 @@ for (const project of PROJECTS) {
     assert.equal(ingress.split(`          - path: ${locale === "zh" ? "/zh" : ""}/skills-marketplace\n            pathType: Prefix\n`).length - 1, 2, `${project.name}: both hosts must own the marketplace subtree`);
   }
 }
-assert.equal(paths.size, 14);
+assert.equal(paths.size, PROJECTS.length * 2);
 for (const locale of ["en", "zh"] as const) {
-  assert(getStoreCatalog(locale).slice(0, PROJECTS.length).every((entry) => entry.entryType === "project" && entry.href.startsWith("/")), "The hub should feature the seven local project introductions first");
+  assert(getStoreCatalog(locale).slice(0, PROJECTS.length).every((entry) => entry.entryType === "project" && entry.href.startsWith("/")), "The hub should feature local project introductions first");
 }
 assert(!sitemap.includes("/skills-marketplace/moonshotai/kimi-cli</loc>"));
-console.log(`Validated ${PROJECTS.length} independent projects, 14 localized detail paths, publisher links, metadata, related navigation, assets, and marketplace ingress.`);
+console.log(`Validated ${PROJECTS.length} independent projects, ${paths.size} localized detail paths, publisher links, metadata, related navigation, assets, and marketplace ingress.`);

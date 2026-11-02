@@ -11815,6 +11815,62 @@
           "answer": "路径明确的分类、摘要或确定性格式转换，通常用单次模型调用或固定 Workflow 更简单。任务步骤不确定、需要工具、可能中断、具有真实副作用或能够独立验证时，Harness 才更有价值。"
         }
       ]
+    },
+    "/blog/deepseek-dsh-superagent": {
+      "items": [
+        {
+          "question": "Is DSH Superagent an official DeepSeek product?",
+          "answer": "The code is published in DeepSeek’s official GitHub organization, but its README explicitly calls it a research prototype rather than an official product. The public version differs from the internal implementation and some designs remain unimplemented."
+        },
+        {
+          "question": "Can I run it without Feishu or a GitHub App?",
+          "answer": "Feishu is optional. The GitHub workflow requires a dedicated user account with write access to the target repository. A GitHub App cannot replace that account because this implementation reads user notifications."
+        },
+        {
+          "question": "Does observe mode prevent all work?",
+          "answer": "No. It evaluates inferred candidates without accepting them, while explicit requests can still execute. Check the source’s receiving policy as well as the acceptance mode when deciding what may proceed."
+        },
+        {
+          "question": "Does each task run in a security sandbox?",
+          "answer": "No. Separate sessions and directories organize work but do not restrict operating-system access. The official deployment guide describes full OS-user permissions and recommends a dedicated operating-system account."
+        },
+        {
+          "question": "Can I borrow the design without deploying the project?",
+          "answer": "Yes. You can separate input from authorization, preserve task context, and define delivery evidence in your existing workflow. Those changes do not establish a software integration with Floatboat."
+        },
+        {
+          "question": "Does MIT licensing make execution free?",
+          "answer": "No. MIT covers the source code. Model inference, computing resources, maintenance, and human review contribute to operating cost; this article does not report measured task costs."
+        }
+      ]
+    },
+    "/zh/blog/deepseek-dsh-superagent": {
+      "items": [
+        {
+          "question": "DSH Superagent 是 DeepSeek 的正式产品吗？",
+          "answer": "代码由 DeepSeek 官方 GitHub 组织公开，但 README 明确将其定位为研究原型，并非正式产品。公开版与内部实现存在差异，设计文章中的部分方案也尚未实现。"
+        },
+        {
+          "question": "不用飞书或 GitHub App，也可以运行吗？",
+          "answer": "飞书是可选入口。GitHub 工作流需要具有目标仓库写权限的专用用户账号；当前实现读取用户通知，因此 GitHub App 不能替代这个身份。"
+        },
+        {
+          "question": "观察模式会阻止所有任务执行吗？",
+          "answer": "不会。observe 会评估推断候选但不接受这些任务，显式请求仍可执行。决定哪些工作能够启动时，需要同时检查消息来源的接收策略和接受模式。"
+        },
+        {
+          "question": "每个任务都有目录，是否代表执行已被安全隔离？",
+          "answer": "不代表。独立会话和目录帮助组织工作，不会限制操作系统访问权限。官方部署指南说明预设拥有运行者的完整权限，并建议使用专用系统账号。"
+        },
+        {
+          "question": "可以只借鉴设计，不部署整个项目吗？",
+          "answer": "可以。先把输入与授权分开、保留任务上下文、明确交付证据，再判断是否需要接入软件。这些改进不表示项目已与 Floatboat 建立软件连接。"
+        },
+        {
+          "question": "MIT 许可是否意味着运行没有费用？",
+          "answer": "MIT 适用于源码许可。模型调用、运行主机、维护和人工审阅仍有成本；本文没有进行任务成本实测，也不承诺固定费用。"
+        }
+      ]
     }
   }
 }

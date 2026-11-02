@@ -27,6 +27,8 @@ DeepSeek’s current [models and pricing page](https://api-docs.deepseek.com/qui
 3. **Custom tool-calling agent.** Your application defines JSON schemas, executes validated calls, returns results, and stops at an approval or completion condition.
 4. **Business or messaging integration.** A bot or workflow connects DeepSeek to a channel, database, or internal service. The integration’s permissions and retention policy determine its operational risk.
 
+For a repository-focused implementation, [DSH Superagent Prototype](/skills-marketplace/deepseek-ai/dsh-superagent) builds on Harness to coordinate authorized GitHub and optional Feishu requests. It is published research code, with its own setup and execution requirements.
+
 These are categories, not a quality ranking. A terminal client, a custom service, and a messaging bot may use the same model but expose different tools and failure modes.
 
 ## What tool calling contributes

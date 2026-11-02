@@ -19,6 +19,8 @@ draft: false
 
 ---
 
+A concrete application built on this runtime is DSH Superagent Prototype, which coordinates authorized requests and coding tasks for one GitHub repository. Its [request-to-delivery workflow](/blog/deepseek-dsh-superagent) shows how a Harness application can connect team conversations, execution, and review.
+
 ## 1. Why DeepSeek Is Building a Harness
 
 Three months after V4 Preview shipped in April 2026, DeepSeek found itself in an awkward position. Its models were cheap enough to change the economics of agentic work, but every developer using them for coding was doing so through someone else's tool — Claude Code, OpenCode, Cline, or Codex, all reconfigured to route their API calls to `api.deepseek.com`. The model was the engine, but Anthropic and OpenAI owned the car.

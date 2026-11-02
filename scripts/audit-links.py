@@ -37,6 +37,29 @@ MECH = re.compile(r"\[Source:[^\]]*\]\(|来源[：:]\s*\[|(?<![\w>])Source:\s*\[
 ANGLE = re.compile(r"\]\(<")
 INTERNAL = re.compile(r"\[(?:[^\]]*)\]\((/blog/[a-z0-9-]+|/zh/blog/[a-z0-9-]+)\)")
 HTML_INTERNAL = re.compile(r'<a\s+href="(/(?:zh/)?blog/[a-z0-9-]+)"')
+MARKETPLACE = re.compile(r'\[[^\]]*\]\(((?:/zh)?/skills-marketplace(?:/[a-z0-9-]+)*)\)|<a\s+href="((?:/zh)?/skills-marketplace(?:/[a-z0-9-]+)*)"')
+
+
+def marketplace_paths():
+    """Resolve public directory links against the same reviewed JSON as the site."""
+    data = ROOT / "src" / "data"
+    review = json.loads((data / "skills/publisher-review.json").read_text())
+    approved = {key for key, value in review["publishers"].items() if value["status"] == "approved"}
+    profiles = {}
+    for filename in ["skills/additional-publisher-profiles.json", "skills/publisher-profiles.json", "projects/agent-publishers.json"]:
+        profiles.update(json.loads((data / filename).read_text()))
+    paths = {"/skills-marketplace", "/skills-marketplace/categories"}
+    paths.update(f"/skills-marketplace/{author}" for author in approved if author in profiles)
+    categories = json.loads((data / "skills/categories.json").read_text())
+    paths.update(f"/skills-marketplace/categories/{slug}" for slug in categories)
+    for project in json.loads((data / "projects/agent-projects.json").read_text()):
+        if project["author"] in approved:
+            paths.add(f"/skills-marketplace/{project['author']}/{project['slug']}")
+    for filename in ["featured-skills", "vercel-labs-skills", "anthropic-design-skills", "engineering-skills", "video-office-skills"]:
+        for skill in json.loads((data / f"skills/{filename}.json").read_text()):
+            if skill["authorHandle"] in approved:
+                paths.add(f"/skills-marketplace/{skill['authorHandle']}/{skill['slug']}")
+    return paths | {"/zh" + path for path in paths}
 
 
 def strip_front(t):
@@ -44,6 +67,7 @@ def strip_front(t):
 
 
 def audit():
+    public_marketplace_paths = marketplace_paths()
     files = sorted(DEP.glob("*.md")) + sorted((DEP / "zh").glob("*.md"))
     slugs = {p.stem for p in (DEP).glob("*.md")} | {p.stem for p in (DEP / "zh").glob("*.md")}
     results = []
@@ -66,6 +90,14 @@ def audit():
             backlinks[tgt.split("/blog/")[-1]].add(p.stem)
 
         fails, warns = [], []
+        directory_targets = [m.group(1) or m.group(2) for m in MARKETPLACE.finditer(body)]
+        if len(set(directory_targets)) != len(directory_targets):
+            fails.append("duplicate marketplace target")
+        for target in directory_targets:
+            if target not in public_marketplace_paths:
+                fails.append(f"dead marketplace link {target}")
+            if target.startswith("/zh/") != loc.startswith("zh/"):
+                fails.append(f"marketplace locale mismatch {target}")
         if MECH.search(body):
             fails.append("mechanical anchor")
         if ANGLE.search(body):
