@@ -1,3 +1,5 @@
+import { FaqBand } from "@/components/faq-band";
+import { getAuthorFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -91,6 +93,7 @@ export default async function AuthorPage({ params }: PageProps) {
         posts={posts}
         description={`${posts.length} article${posts.length === 1 ? "" : "s"} by ${authorName}.`}
       />
+      <FaqBand locale="en" title={`Questions Explored in ${authorName}’s Articles`} description="Explore questions covered in the articles listed here. Each answer links to its original explanation and publication context." items={getAuthorFaqs(slug, "en", posts)} />
     </>
   );
 }

@@ -369,6 +369,16 @@
         "en": "The standard model ID is `gemini-3.1-pro-preview`; `3.1-pro` and Gemini 3.1 Pro are display aliases for the same model.",
         "zh": "标准 Model ID 是 `gemini-3.1-pro-preview`；`3.1-pro` 与 Gemini 3.1 Pro 是同一模型的展示别名。"
       }
+    },
+    {
+      "question": {
+        "en": "How can I tell whether a large-context Gemini run used the right evidence?",
+        "zh": "怎样判断 Gemini 的长上下文任务是否用对了证据？"
+      },
+      "answer": {
+        "en": "Plant a few verifiable questions across the source set and ask for references to the relevant files or passages. Check contradictory and low-salience details as well as the summary; fitting material into a window does not show that every part influenced the answer.",
+        "zh": "从材料不同位置选择几个可核验的问题，要求标明文件或段落。除摘要外，也检查矛盾和不显眼的细节；资料能放进窗口，不代表每一部分都真正影响了回答。"
+      }
     }
   ],
   "finalCta": {

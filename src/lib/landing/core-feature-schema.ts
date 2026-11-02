@@ -65,7 +65,7 @@ export const coreFeaturePageSchema = z.object({
   }),
   faq: z.object({
     title: z.string().min(1),
-    items: z.array(z.object({ question: z.string(), answer: z.string() })).min(4),
+    items: z.array(z.object({ question: z.string(), answer: z.string() })).min(6),
   }),
   finalCta: z.object({
     title: z.string().min(1),

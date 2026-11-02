@@ -355,6 +355,16 @@
         "en": "They are evaluation and capacity profiles with configured 1M context and 128k output budgets. They are not current main-picker models.",
         "zh": "它们属于评测与容量画像，已配置 1M 上下文与 128k 输出预算，目前不是主选择器型号。"
       }
+    },
+    {
+      "question": {
+        "en": "How should I test Claude on a long document review?",
+        "zh": "怎样用长文档审阅任务测试 Claude？"
+      },
+      "answer": {
+        "en": "Choose a document with known cross-references and important exceptions. Ask for claims tied to passages, then check whether the review preserves those exceptions and distinguishes missing evidence from a negative finding.",
+        "zh": "选一份包含交叉引用和重要例外、且你熟悉内容的文档，要求结论对应具体段落。重点核对是否保留例外，以及能否区分“缺少证据”和“已经证实不存在”。"
+      }
     }
   ],
   "finalCta": {

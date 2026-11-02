@@ -71,7 +71,15 @@
       { "question": "What is an AI Agent Workspace?", "answer": "It is a persistent work environment where agents can use approved files, tools, models, rules, and prior outputs to complete and continue real projects—not just answer isolated prompts." },
       { "question": "How is this different from the Floatboat Coworker?", "answer": "The Agent Workspace is the environment that holds context and resources over time. The Coworker is a Work Agent you can give a bounded task to and receive a deliverable from." },
       { "question": "Does local-first mean nothing ever leaves my computer?", "answer": "No. Local-first means work begins from your real desktop environment and files. Data handling still depends on the cloud models and connectors you choose, so each external path should be evaluated separately." },
-      { "question": "Can more than one agent work in the same workspace?", "answer": "Yes. Floatboat supports multiple agents working from shared project context, with human review, redirection, and approval remaining part of the process." }
+      { "question": "Can more than one agent work in the same workspace?", "answer": "Yes. Floatboat supports multiple agents working from shared project context, with human review, redirection, and approval remaining part of the process." },
+      {
+        "question": "What should stay with a project between agent runs?",
+        "answer": "Keep the brief, source files, project rules, accepted deliverables, and unresolved questions together. A transcript alone may omit why a decision was accepted or which file is authoritative."
+      },
+      {
+        "question": "When should I start a separate workspace?",
+        "answer": "Use a separate project when the client, access permissions, source material, or acceptance criteria change. This makes the intended context boundary explicit; still check which files and tools each task can access."
+      }
     ]
   },
   "finalCta": {

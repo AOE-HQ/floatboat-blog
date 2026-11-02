@@ -336,6 +336,16 @@
         "en": "Yes. Its confirmed positioning includes complex mathematical, algorithmic, and logical reasoning where a wrong assumption can invalidate the solution.",
         "zh": "适合。其已确认定位包括复杂数学、算法与逻辑推理，尤其适用于错误假设可能使方案失效的任务。"
       }
+    },
+    {
+      "question": {
+        "en": "How should I compare DeepSeek Pro and Flash for a repeatable workflow?",
+        "zh": "可重复工作流中，怎样比较 DeepSeek Pro 与 Flash？"
+      },
+      "answer": {
+        "en": "Hold the source set and output contract constant. Use cases that include the difficult reasoning step and the routine work around it, then compare errors and review effort before assigning each stage to a model.",
+        "zh": "固定资料和输出要求，同时测试关键推理步骤及周边常规工作。比较错误与审阅成本，再决定各阶段使用哪种模型，而不只比较一次回答的速度。"
+      }
     }
   ],
   "finalCta": {

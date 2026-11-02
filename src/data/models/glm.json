@@ -276,7 +276,17 @@
     {"question":{"en":"What are the GLM model IDs?","zh":"GLM 的 Model ID 是什么？"},"answer":{"en":"The configured model IDs are `glm-5` and `glm-4`.","zh":"已配置 Model ID 为 `glm-5` 与 `glm-4`。"}},
     {"question":{"en":"What does GLM thinking mode support?","zh":"GLM Thinking Mode 支持什么？"},"answer":{"en":"The adapter supports playback of the `reasoning_content` field so reasoning output can remain available in the response flow.","zh":"适配器支持回放 `reasoning_content` 字段，使推理输出能够保留在响应流程中。"}},
     {"question":{"en":"Which protocol does GLM use?","zh":"GLM 使用什么协议？"},"answer":{"en":"The configured path uses an OpenAI Chat Completions-compatible channel.","zh":"已配置路径使用兼容 OpenAI Chat Completions 的通道。"}},
-    {"question":{"en":"What is the current GLM support status?","zh":"GLM 当前是什么支持状态？"},"answer":{"en":"Protocol support is configured for GLM 5 and GLM 4, but neither model is currently exposed in the main picker.","zh":"GLM 5 与 GLM 4 已完成协议适配，但当前均未在主选择器露出。"}}
+    {"question":{"en":"What is the current GLM support status?","zh":"GLM 当前是什么支持状态？"},"answer":{"en":"Protocol support is configured for GLM 5 and GLM 4, but neither model is currently exposed in the main picker.","zh":"GLM 5 与 GLM 4 已完成协议适配，但当前均未在主选择器露出。"}},
+    {
+      "question": {
+        "en": "Does reasoning output remove the need to test GLM tool calls?",
+        "zh": "有推理过程，就不用检查 GLM 的工具调用了吗？"
+      },
+      "answer": {
+        "en": "No. Evaluate the actual tool arguments, returned evidence, and final state of the task. A plausible explanation does not establish that a tool used the intended file, respected permissions, or completed the requested change.",
+        "zh": "仍然需要。检查实际调用参数、返回证据和任务最终状态。解释听起来合理，不代表工具读取了正确文件、遵守了权限，或完成了要求的改动。"
+      }
+    }
   ],
   "finalCta": {
     "title": {

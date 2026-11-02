@@ -68,7 +68,15 @@
       { "question": "Does Floatboat replace my calendar?", "answer": "No. The goal is to work with the calendars you already use and add preparation, execution, and follow-up around scheduled time." },
       { "question": "Can a calendar event run a recurring workflow?", "answer": "Yes. A recurring event can be connected to a repeatable task such as a weekly report, meeting brief, content review, or follow-up sequence." },
       { "question": "Will the agent act without approval?", "answer": "Approval boundaries depend on the workflow. Routine preparation can run automatically while external messages, file changes, or other consequential actions can wait for review." },
-      { "question": "Is scheduling still the main Floatboat product?", "answer": "Scheduling is one important capability inside the broader Floatboat agent workspace. Files, tools, agents, persistent context, and approvals form the larger operating environment." }
+      { "question": "Is scheduling still the main Floatboat product?", "answer": "Scheduling is one important capability inside the broader Floatboat agent workspace. Files, tools, agents, persistent context, and approvals form the larger operating environment." },
+      {
+        "question": "What context should a meeting-preparation event include?",
+        "answer": "Attach the agenda or project reference, participant context, source documents, and the expected brief. Distinguish information preparation from permission to email attendees or change their calendars."
+      },
+      {
+        "question": "How should I plan work that spans several time zones?",
+        "answer": "Record the event time zone and check the displayed local time before using it as a trigger. For recurring work, account for daylight-saving changes and define what to do if preparation finishes after the meeting moves."
+      }
     ]
   },
   "finalCta": {

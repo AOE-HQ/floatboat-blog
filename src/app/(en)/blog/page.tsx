@@ -1,3 +1,5 @@
+import { FaqBand } from "@/components/faq-band";
+import { resolveFaqForBlogIndex } from "@/lib/faq-data";
 import type { Metadata } from "next";
 
 import { Breadcrumb } from "@/components/marketing/breadcrumb";
@@ -74,6 +76,7 @@ export default function BlogIndexPage() {
 
         <MarketingBand />
       </BlogShell>
+      <FaqBand locale="en" items={resolveFaqForBlogIndex("en")} />
     </>
   );
 }

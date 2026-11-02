@@ -264,7 +264,17 @@
     {"question":{"en":"What is the MiniMax M2 model ID?","zh":"MiniMax M2 的 Model ID 是什么？"},"answer":{"en":"The exact configured model ID is `minimax-m2`.","zh":"准确配置的 Model ID 是 `minimax-m2`。"}},
     {"question":{"en":"How large is the MiniMax M2 context profile?","zh":"MiniMax M2 的上下文有多大？"},"answer":{"en":"The registered economic profile carries a 1M capacity budget.","zh":"已登记的经济画像包含 1M 容量预算。"}},
     {"question":{"en":"What is MiniMax M2 best suited for?","zh":"MiniMax M2 适合什么任务？"},"answer":{"en":"Its confirmed role is long, cost-sensitive textual processing rather than image or video generation.","zh":"其已确认定位是对成本敏感的长文本处理，而不是图像或视频生成。"}},
-    {"question":{"en":"What is the current MiniMax M2 support status?","zh":"MiniMax M2 当前是什么支持状态？"},"answer":{"en":"Its protocol and 1M economic profile are configured, but it is not currently exposed in the main picker.","zh":"其协议与 1M 经济画像已配置，但当前未在主选择器露出。"}}
+    {"question":{"en":"What is the current MiniMax M2 support status?","zh":"MiniMax M2 当前是什么支持状态？"},"answer":{"en":"Its protocol and 1M economic profile are configured, but it is not currently exposed in the main picker.","zh":"其协议与 1M 经济画像已配置，但当前未在主选择器露出。"}},
+    {
+      "question": {
+        "en": "What should I measure in a MiniMax multi-step coding trial?",
+        "zh": "用 MiniMax 测试多步骤编程时，应观察什么？"
+      },
+      "answer": {
+        "en": "Choose a small repository change with a reproducible check. Inspect the diff, tool failures, recovery, and test result, rather than scoring only the final explanation; this separates a convincing narrative from a working change.",
+        "zh": "选择一项有可复现检查的小型代码改动，查看差异、工具失败、恢复过程和测试结果，而不只评价最终说明，区分有说服力的叙述与真正可用的改动。"
+      }
+    }
   ],
   "finalCta": {
     "title": {

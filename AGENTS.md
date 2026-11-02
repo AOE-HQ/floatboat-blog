@@ -68,3 +68,7 @@ CI (`npm run check:images` in `.github/workflows`) fails the PR if any png/jpeg 
 ## Page heading labels
 
 Do not add decorative eyebrow, kicker, or overline text above H1–H6 on any web page, including blog, marketing, directories, cards, and CTA sections. Retired eyebrow fields must stay out of component props and content schemas. Keep meaningful categories in metadata below the title; keep actual operation step numbers, form labels, navigation, and status indicators in their proper roles.
+
+## FAQ coverage
+
+Marketing pages, directory hubs, and published blog archives require at least six relevant questions in each locale. Use the shared `FaqBand` for display and its single matching FAQPage schema; do not add a second inline FAQ renderer or generic fallback. Blog articles keep their own substantive questions without a six-question quota. Author archives may curate explicit published-article FAQ references with attribution, never fabricated author biographies. Apply the Agent Execution content de-templating workflow to new batches.

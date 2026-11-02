@@ -68,7 +68,15 @@
       { "question": "Is FloatIM another Slack replacement?", "answer": "FloatIM is designed around collaboration between people and AI agents. Messaging is the interface, but the core purpose is to coordinate delegated work and keep its context and artifacts together." },
       { "question": "Can humans review work before an agent acts?", "answer": "Yes. Approval points can keep consequential actions under human control while routine research, drafting, and organization continue between reviews." },
       { "question": "Does every project share the same context?", "answer": "No. Rooms separate project context so files, decisions, and agent work do not need to leak between unrelated clients or initiatives." },
-      { "question": "Do I need to build my own agents first?", "answer": "No. You can begin with the agents and skills available in Floatboat, then add specialized workflows as your work becomes more repeatable." }
+      { "question": "Do I need to build my own agents first?", "answer": "No. You can begin with the agents and skills available in Floatboat, then add specialized workflows as your work becomes more repeatable." },
+      {
+        "question": "What belongs in a handoff from a person to an agent?",
+        "answer": "Include the assignment, relevant project files, who will review the result, and any action that must wait for approval. The conversation should make the work understandable to the next participant, rather than relying on a private side chat."
+      },
+      {
+        "question": "How do I distinguish a draft from an approved result in a work thread?",
+        "answer": "State the artifact name or version and the review decision explicitly. Keep requests for changes next to the relevant result, and identify who can approve an external action; agreement in a discussion should not be assumed to authorize every subsequent step."
+      }
     ]
   },
   "finalCta": {

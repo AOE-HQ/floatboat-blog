@@ -1,3 +1,5 @@
+import { FaqBand } from "@/components/faq-band";
+import hubFaqs from "@/data/landing-hub-faqs.json";
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
@@ -112,6 +114,7 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
 
     <section className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr]"><div><h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.pathwayTitle)}</h2><p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.pathwayDescription}</p></div><div className="divide-y divide-black/[0.08] border-y border-black/[0.08]">{copy.pathway.map(([title, description]) => <div key={title} className="grid gap-3 py-7 sm:grid-cols-[0.55fr_1fr]"><h3 className="font-serif text-2xl">{titleCase(title)}</h3><p className="leading-7 text-[var(--ob-color-text-subtle)]">{description}</p></div>)}</div></div></section>
 
+    <FaqBand locale={locale} items={hubFaqs.useCases[locale]} />
     <FinalCta title={copy.finalTitle} description={copy.finalDescription} primary={{ label: copy.primary, href: isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=final_cta" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=final_cta" }} />
 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />

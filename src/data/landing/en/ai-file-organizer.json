@@ -65,10 +65,21 @@
   "faq": {
     "title": "File Organizer questions",
     "items": [
-      { "question": "Does the organizer upload my files?", "answer": "The workflow is designed around local folders on your computer. You choose the scope and can review the plan before approved file operations run." },
+      {
+        "question": "Does organizing local files mean no data leaves my device?",
+        "answer": "No. File operations can take place locally while selected content is sent to a model or connected service. Check the provider, tool permissions, and material involved before using sensitive files; a local folder alone is not a privacy guarantee."
+      },
       { "question": "Can it rename and move files together?", "answer": "Yes. A single approved plan can create folders, rename files, and move them into the proposed structure while reporting the result per file." },
       { "question": "What happens when the agent is unsure?", "answer": "Uncertain matches should be surfaced for review rather than silently forced into a category. You can correct the plan before execution." },
-      { "question": "Can I reuse an organization system?", "answer": "Yes. A successful rule can become a reusable workflow for recurring exports, client onboarding, downloads, or project archives." }
+      { "question": "Can I reuse an organization system?", "answer": "Yes. A successful rule can become a reusable workflow for recurring exports, client onboarding, downloads, or project archives." },
+      {
+        "question": "How should possible duplicate files be handled?",
+        "answer": "Keep deletion out of the first organization pass. Review content, version history, and project references before deciding that two similar names identify the same file; retain uncertain candidates for a separate check."
+      },
+      {
+        "question": "How can I avoid breaking references when renaming a project folder?",
+        "answer": "Start with a small copy or noncritical subset, identify documents and applications that refer to the old paths, and review proposed moves before applying them. A cleaner folder tree is not useful if it breaks links or working project files."
+      }
     ]
   },
   "finalCta": {

@@ -1,3 +1,4 @@
+import { FaqBand } from "@/components/faq-band";
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
 import { RelatedPageLinks } from "@/components/related-page-links";
@@ -35,15 +36,6 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       description: page.seo.description,
       url: `${SITE_ORIGIN}${currentPath}`,
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: page.faq.items.map((item) => ({
-        "@type": "Question",
-        name: item.question,
-        acceptedAnswer: { "@type": "Answer", text: item.answer },
-      })),
     },
     {
       "@context": "https://schema.org",
@@ -101,7 +93,7 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
 
     <RelatedPageLinks family="features" currentId={page.slug} locale={page.locale} />
 
-    <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8 sm:py-28"><h2 className="mb-8 text-center font-serif text-4xl tracking-tight sm:text-5xl">{page.faq.title}</h2><div className="space-y-3">{page.faq.items.map(item => <details key={item.question} className="group rounded-2xl border border-black/[0.07] bg-white/45 p-5"><summary className="cursor-pointer list-none pr-8 font-semibold">{item.question}<span className="float-right text-xl group-open:rotate-45">+</span></summary><p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{item.answer}</p></details>)}</div></section>
+    <FaqBand locale={page.locale} title={page.faq.title} items={page.faq.items} />
 
     <FinalCta title={page.finalCta.title} description={page.finalCta.description} primary={page.finalCta.primaryCta} />
 

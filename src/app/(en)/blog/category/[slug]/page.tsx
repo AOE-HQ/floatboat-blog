@@ -1,3 +1,5 @@
+import { FaqBand } from "@/components/faq-band";
+import { getCategoryFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -76,6 +78,7 @@ export default async function CategoryPage({ params }: PageProps) {
         categorySlug={slug}
         posts={posts}
       />
+      <FaqBand locale="en" title={`${categoryName}: Reading Questions`} items={getCategoryFaqs(slug, "en")} />
     </>
   );
 }

@@ -273,7 +273,17 @@
     {"question":{"en":"What is the Kimi K3 model ID?","zh":"Kimi K3 的 Model ID 是什么？"},"answer":{"en":"The exact registered model ID is `kimi-k3`; `kimi-k2` and `kimi-latest` are recognized compatibility names.","zh":"准确登记的 Model ID 是 `kimi-k3`；`kimi-k2` 与 `kimi-latest` 属于兼容名称。"}},
     {"question":{"en":"How large is the Kimi K3 context profile?","zh":"Kimi K3 的上下文有多大？"},"answer":{"en":"The configured capacity profile carries a 1M budget for context-heavy workloads.","zh":"已配置容量画像包含 1M 预算，面向上下文密集型工作。"}},
     {"question":{"en":"What is Kimi K3 best suited for?","zh":"Kimi K3 适合什么任务？"},"answer":{"en":"Its confirmed positioning is long-text reasoning, large research sets, extended document review, and tasks that need relationships preserved across distant sections.","zh":"其已确认定位是长文本思考、大型研究资料集、长文档审阅，以及需要保留远距离章节关系的任务。"}},
-    {"question":{"en":"What is the current Kimi K3 support status?","zh":"Kimi K3 当前是什么支持状态？"},"answer":{"en":"Its capacity and long-text channel are configured, but it is not currently exposed in the main client picker.","zh":"其容量与长文本通道已配置，但当前未在客户端主选择器露出。"}}
+    {"question":{"en":"What is the current Kimi K3 support status?","zh":"Kimi K3 当前是什么支持状态？"},"answer":{"en":"Its capacity and long-text channel are configured, but it is not currently exposed in the main client picker.","zh":"其容量与长文本通道已配置，但当前未在客户端主选择器露出。"}},
+    {
+      "question": {
+        "en": "What is a useful document-heavy test for Kimi?",
+        "zh": "怎样设计适合 Kimi 的文档密集型测试？"
+      },
+      "answer": {
+        "en": "Use a source pack with an explicit timeline and several similar entities, then request a cited comparison. Verify dates, ownership, and exceptions against the files so a fluent summary cannot hide a mistaken attribution.",
+        "zh": "使用时间线明确、包含多个相似对象的资料包，要求生成带出处的对比。回查日期、归属和例外，避免流畅的摘要掩盖对象混淆。"
+      }
+    }
   ],
   "finalCta": {
     "title": {

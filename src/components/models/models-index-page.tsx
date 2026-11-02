@@ -1,3 +1,5 @@
+import { FaqBand } from "@/components/faq-band";
+import hubFaqs from "@/data/landing-hub-faqs.json";
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
@@ -74,7 +76,8 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
         </div>
       </section>
 
-      <FinalCta
+      <FaqBand locale={locale} items={hubFaqs.models[locale]} />
+    <FinalCta
         title={isZh ? "按任务与接入入口比较模型" : "Compare models by task and access path"}
         description={isZh ? "先确认哪些模型可在对话中选择、哪些通过生图或视频 Combo 使用，以及哪些仅完成底层配置，再决定下一项任务怎么做。" : "See which models are selectable in chat, available through image or video Combos, or only configured below the picker before starting work."}
         primary={{ label: isZh ? "下载 Floatboat" : "Download Floatboat", href: isZh ? DOWNLOAD.replace("/download/", "/zh/download/") : DOWNLOAD }}

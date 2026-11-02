@@ -1,3 +1,5 @@
+import { FaqBand } from "@/components/faq-band";
+import { getCategoryFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -82,6 +84,7 @@ export default async function ZhCategoryPage({ params }: PageProps) {
         categorySlug={slug}
         posts={posts}
       />
+      <FaqBand locale="zh" title={`${categoryName} 阅读常见问题`} items={getCategoryFaqs(slug, "zh")} />
     </>
   );
 }

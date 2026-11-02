@@ -357,6 +357,16 @@
         "en": "The full model ID is `doubao-seedance-2-0-260128`; the faster variant is `doubao-seedance-2-0-fast-260128`.",
         "zh": "完整型号 ID 是 `doubao-seedance-2-0-260128`；快速版是 `doubao-seedance-2-0-fast-260128`。"
       }
+    },
+    {
+      "question": {
+        "en": "What should a video brief specify before generating a clip?",
+        "zh": "生成视频前，简报应写清哪些内容？"
+      },
+      "answer": {
+        "en": "Describe the subject, camera movement, action, reference material, and audio intent separately. Check continuity, unwanted text or objects, and audio alignment in the result before treating the clip as ready for editing or publication.",
+        "zh": "分别描述主体、镜头运动、动作、参考素材和声音意图。得到片段后检查连续性、多余文字或物体，以及音画配合，再判断是否适合剪辑或发布。"
+      }
     }
   ],
   "finalCta": {

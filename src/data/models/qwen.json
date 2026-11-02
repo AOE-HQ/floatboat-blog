@@ -301,6 +301,16 @@
         "en": "No. The model remains below the picker and has no current public client entry.",
         "zh": "不是。该模型仍位于选择器下层，目前没有公开客户端入口。"
       }
+    },
+    {
+      "question": {
+        "en": "How should I evaluate Qwen on Chinese and English business material?",
+        "zh": "怎样评估 Qwen 对中英文业务材料的处理？"
+      },
+      "answer": {
+        "en": "Provide equivalent terminology and the same reporting criteria in both languages. Compare names, units, domain terms, and whether conclusions change across versions; translation fluency alone is not evidence of consistent reasoning.",
+        "zh": "为两种语言提供对应术语和相同报告标准，比较名称、单位、专业用词，以及结论是否发生变化。翻译流畅并不能单独证明推理一致。"
+      }
     }
   ],
   "finalCta": {

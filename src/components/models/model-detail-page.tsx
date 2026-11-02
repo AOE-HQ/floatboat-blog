@@ -1,3 +1,4 @@
+import { FaqBand } from "@/components/faq-band";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { FinalCta } from "@/components/final-cta";
@@ -49,18 +50,6 @@ export function ModelDetailPage({
       operatingSystem: "macOS, Windows",
       description: localize(model.hero.description, locale),
       url: `https://floatboat.ai${modelPath(locale, model.slug)}`,
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: model.faq.map((item) => ({
-        "@type": "Question",
-        name: localize(item.question, locale),
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: localize(item.answer, locale),
-        },
-      })),
     },
   ];
 
@@ -372,29 +361,7 @@ export function ModelDetailPage({
 
       <RelatedPageLinks family="models" currentId={model.slug} locale={locale} />
 
-      <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8 sm:py-28">
-        <h2 className="mb-8 text-center font-serif text-4xl tracking-tight sm:text-5xl">
-          {model.name} · FAQ
-        </h2>
-        <div className="space-y-3">
-          {model.faq.map((item) => (
-            <details
-              key={item.question.en}
-              className="group rounded-2xl border border-black/[0.07] bg-white/45 p-5"
-            >
-              <summary className="cursor-pointer list-none pr-8 font-semibold">
-                {localize(item.question, locale)}
-                <span className="float-right text-xl group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-              <p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">
-                {localize(item.answer, locale)}
-              </p>
-            </details>
-          ))}
-        </div>
-      </section>
+      <FaqBand locale={locale} title={isZh ? `${model.name} 常见问题` : `${model.name} FAQ`} items={model.faq.map((item) => ({ question: localize(item.question, locale), answer: localize(item.answer, locale) }))} />
 
       <FinalCta
         title={localize(model.finalCta.title, locale)}

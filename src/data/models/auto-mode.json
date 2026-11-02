@@ -368,6 +368,16 @@
         "en": "Auto Mode evaluates task complexity, context size, input modality, response speed, and route availability before selecting a model.",
         "zh": "畅用模式会在选择模型前判断任务复杂度、上下文规模、输入模态、响应速度与路径可用性。"
       }
+    },
+    {
+      "question": {
+        "en": "How can I compare Auto Mode with a fixed-model run fairly?",
+        "zh": "怎样公平比较自动模式与固定模型的结果？"
+      },
+      "answer": {
+        "en": "Use the same brief, files, tools, and acceptance checks, and record the routing information available in the client. Compare the accepted deliverables and revisions; two runs can differ even when the visible request is identical.",
+        "zh": "使用同一任务说明、文件、工具和验收标准，并记录客户端可见的路由信息。比较最终可接受的成果和修改量；即使请求文字相同，两次执行也可能不同。"
+      }
     }
   ],
   "finalCta": {

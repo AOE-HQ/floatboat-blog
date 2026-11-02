@@ -374,6 +374,16 @@
         "en": "They are code-specialized evaluation profiles with configured 400K and 128K capacity, respectively.",
         "zh": "它们属于代码专用评测画像，分别配置了 400K 与 128K 容量。"
       }
+    },
+    {
+      "question": {
+        "en": "Should a coding task and an image brief use the same OpenAI entry?",
+        "zh": "编程任务和图片任务应该使用同一个 OpenAI 入口吗？"
+      },
+      "answer": {
+        "en": "Choose by the required output and the entry supported in Floatboat. Repository work needs code execution and review context; image work needs a visual brief and an image-capable path. A shared provider name does not make these interfaces interchangeable.",
+        "zh": "应根据输出类型和 Floatboat 中已支持的入口选择。代码库工作需要执行与审阅背景，图片任务需要视觉要求及图像生成入口；同属一家提供方，并不代表接口可以互换。"
+      }
     }
   ],
   "finalCta": {

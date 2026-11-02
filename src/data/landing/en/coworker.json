@@ -71,7 +71,15 @@
       { "question": "What is a Work Agent?", "answer": "A Work Agent accepts a bounded assignment, uses the approved context and tools needed to complete it, and returns a concrete result. The task can end when the handoff is accepted." },
       { "question": "How is Coworker different from the Agent Workspace?", "answer": "Coworker is the agent role you delegate a task to. The Agent Workspace is the persistent environment that provides files, tools, rules, history, and review controls for that work." },
       { "question": "Can the Coworker act without my approval?", "answer": "Routine steps can run within the scope you provide. Sensitive or consequential actions should remain behind explicit approval boundaries that you can review." },
-      { "question": "What can the Coworker deliver?", "answer": "Depending on the task and enabled tools, it can return documents, research, organized files, drafts, code, or other editable artifacts supported by the workspace." }
+      { "question": "What can the Coworker deliver?", "answer": "Depending on the task and enabled tools, it can return documents, research, organized files, drafts, code, or other editable artifacts supported by the workspace." },
+      {
+        "question": "How do I write a task that an agent can finish?",
+        "answer": "Name the deliverable, point to the source files, specify the required format, and define a stopping point. “Prepare a comparison table from these three proposals for my review” is easier to verify than “handle procurement.”"
+      },
+      {
+        "question": "What should I check before accepting an agent deliverable?",
+        "answer": "Inspect the editable artifact, trace important claims to the supplied sources, and review any changes or unresolved assumptions. A completed run does not establish that a document is accurate or ready to send."
+      }
     ]
   },
   "finalCta": {
