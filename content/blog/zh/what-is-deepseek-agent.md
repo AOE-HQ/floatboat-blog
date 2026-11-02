@@ -29,6 +29,8 @@ DeepSeek 当前[模型与价格页](https://api-docs.deepseek.com/zh-cn/quick_st
 
 这些只是分类，不是质量排名。终端客户端、自建服务和消息机器人即使使用同一模型，也可能拥有完全不同的工具与失败方式。
 
+面向仓库协作的具体实现可以参考 [DSH Superagent Prototype](/zh/skills-marketplace/deepseek-ai/dsh-superagent)。它基于 Harness 协调 GitHub 与可选飞书中的授权请求，属于研究代码，有自己的运行环境与执行条件。
+
 ## 工具调用解决什么
 
 DeepSeek 的[工具调用指南](https://api-docs.deepseek.com/zh-cn/guides/tool_calls)说明了 OpenAI 兼容流程：发送工具定义、接收 `tool_calls`、由应用执行，再回传对应工具结果并让模型继续。模型本身不会替你执行数据库查询或文件操作。参数校验、授权、超时、幂等和错误处理都由应用负责。

@@ -19,6 +19,8 @@ draft: false
 
 ---
 
+DSH Superagent Prototype 是基于这个运行层构建的具体应用，负责单个 GitHub 仓库中的授权请求与编程任务。它的[请求到交付工作流](/zh/blog/deepseek-dsh-superagent)展示了 Harness 应用如何连接团队讨论、任务执行和人工审阅。
+
 ## 1. DeepSeek 为什么要自研 Harness
 
 V4 Preview 于 2026 年 4 月发布后的三个月里，DeepSeek 发现自己处在一个尴尬的位置。它的模型足够便宜，足以改写 agentic 工作的成本结构，但每个用它写代码的开发者都在借道别人的工具——Claude Code、OpenCode、Cline 或 Codex，全部改配置指向 `api.deepseek.com`。模型是引擎，可方向盘握在 Anthropic 和 OpenAI 手里。

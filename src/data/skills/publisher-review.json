@@ -400,7 +400,8 @@
       "pushedAt": "2026-10-23T15:25:40Z",
       "reason": "Official upstream and organization verified through repository metadata, README, and license; source is not a fork and is not archived. Independently selected project, not a new popular Skill guide.",
       "repositories": [
-        "deepseek-ai/deepseek-harness"
+        "deepseek-ai/deepseek-harness",
+        "deepseek-ai/dsh-superagent-prototype"
       ]
     },
     "earendil-works": {

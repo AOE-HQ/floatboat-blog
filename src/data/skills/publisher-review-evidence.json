@@ -4255,9 +4255,39 @@
       "licenseUrl": "https://github.com/vercel-labs/skills/blob/main/LICENSE",
       "licenseText": "MIT License\n\nCopyright (c) 2026 Vercel, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
       "licenseStatus": "read"
+    },
+    "deepseek-ai/dsh-superagent-prototype": {
+      "checkedAt": "2026-11-02",
+      "apiUrl": "https://api.github.com/repos/deepseek-ai/dsh-superagent-prototype",
+      "full_name": "deepseek-ai/dsh-superagent-prototype",
+      "html_url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "description": "Towards a More Autonomous Agent System",
+      "created_at": "2026-10-31T09:32:46Z",
+      "pushed_at": "2026-10-31T12:05:51Z",
+      "stargazers_count": 10105,
+      "forks_count": 1036,
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "sourceUrls": [
+        "https://github.com/deepseek-ai/dsh-superagent-prototype",
+        "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/LICENSE",
+        "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/001-domain.md",
+        "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md",
+        "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md"
+      ],
+      "decision": "approved",
+      "reason": "Official upstream in deepseek-ai; non-fork, non-archived, MIT source and original prototype implementation. Read README and deployment/domain/authorization docs. Research code, not a formal DeepSeek product; software not installed or executed. Distinct from the representative Harness repository."
     }
   },
-  "scope": "37关联仓库：GitHub元数据、默认分支README、根目录结构和许可文件；未安装或运行项目。",
+  "scope": "38关联仓库：GitHub元数据、默认分支README、根目录结构和许可文件；未安装或运行项目。",
   "extraLicenseEvidence": {
     "anthropics/claude-code/contents/LICENSE.md": "© Anthropic PBC. All rights reserved. Use is subject to Anthropic's [Commercial Terms of Service](https://www.anthropic.com/legal/commercial-terms).\n",
     "juliusbrussee/caveman/contents/LICENSING.md": "# Caveman Licensing\n\nEverything in this repository is licensed under the Apache License, Version 2.0,\nstarting with Caveman 3.0.0. That covers the skill, CLI, SDKs, middleware,\nextension, and the whole runtime: Engine, Proxy, Browse, MCP server,\n`shrink`, the cavemem Go core, and the shared Go platform.\n\nCaveman Cloud, the hosted service, is separate commercial software. Its source\nis not in this repository and this license does not cover it.\n\n## Canonical Files\n\n- Root `LICENSE` is the verbatim Apache License 2.0 text.\n- Root `NOTICE` carries the copyright line and third-party attributions.\n- Root `LICENSE-MIT` keeps the MIT License text that covered the MIT parts of\n  the repository before 3.0.0 (see below).\n- Every directory that ships its own `LICENSE` (npm and PyPI packages, the npm\n  launchers, the Go modules) carries a byte-identical copy of the root `LICENSE`.\n\nCopyright 2026 Julius Brussee.\n\n## What changed in 3.0.0\n\nBefore 3.0.0 the repository was split-licensed. The skill and adoption surfaces\n(skill, CLI, SDKs, middleware, contracts, provider catalog, extension shell,\ncavemem clients) were MIT. The Engine-linked runtime (`engine/`, `proxy/`,\n`rewriter/`, `browse/`, `mcp/`, `shrink/`, the `mem/` Go core,\n`shared/platform/`, and the extension's bundled `engine.wasm`) was Business\nSource License 1.1 with an Additional Use Grant.\n\nFrom 3.0.0 on, all of it is Apache-2.0. There is no longer a hosted-service\nrestriction, Change Date, or commercial license requirement for the code in this\nrepository.\n\nReleases published before 3.0.0 keep the terms they shipped with. The Apache\nlicense applies to 3.0.0 and later.\n\nOutside contributors wrote code in the formerly MIT parts under MIT terms.\nThat code stays available under the MIT License, whose notice must travel with\nit, so the pre-3.0.0 MIT text is kept verbatim in `LICENSE-MIT` and referenced\nfrom `NOTICE`.\n\n## Contributions\n\nContributions are inbound=outbound: you license your change under Apache-2.0,\nthe same terms as the rest of the repository. See `CONTRIBUTING.md`.\n\n## Third-party code\n\n`engine/pixel/` is a Go port of pxpipe (MIT, Copyright (c) 2026\nclaude-image-proxy contributors) with embedded glyph atlases derived from the\nSpleen 5x8 (BSD-2-Clause) and GNU Unifont (OFL-1.1 / GPLv2 with font-embedding\nexception) fonts. The upstream MIT and font notices are preserved in\n`engine/pixel/NOTICE` and `engine/pixel/assets/`.\n\n`browse/` links MIT-licensed chromedp modules; see `browse/NOTICE`.\n\nThe runtime binaries and container image link third-party Go modules (MIT,\nBSD-3-Clause, Apache-2.0); every binary release ships their license texts as\n`THIRD_PARTY_GO_LICENSES.tar.gz`, and the image under `/licenses/third_party/`.\nThe release `caveman-proxy` and `caveman-engine` are built with `zig cc` and\nstatically link Zig's compiler runtime (MIT), musl libc on Linux (MIT), and the\nmingw-w64 runtime on Windows (ZPL-2.1); their notices ship as `LICENSE.zig`,\n`COPYRIGHT.musl` and `COPYING.mingw-w64`.\nThe CLI contains a port of part of Qwen Code (Apache-2.0) and bundles\nMIT-licensed `@clack/prompts` and its dependencies; see `packages/cli/NOTICE`.\nThe extension ships the Geist fonts under the SIL Open Font License 1.1\n(`extension/fonts/GEIST_LICENSE.txt`).\n\n## Trademarks\n\n\"Caveman\" and Caveman logos are trademarks of Julius Brussee. The Apache\nLicense grants no trademark rights. Nominative use such as \"Powered by Caveman\"\nor \"Optimized by Caveman\" is allowed when truthful. Naming a product, hosted\nservice, or fork in a way that implies Caveman sponsorship requires written\npermission.\n\nSee `TRADEMARKS.md` for the full trademark policy.\n",

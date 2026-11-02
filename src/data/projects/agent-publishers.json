@@ -202,25 +202,37 @@
           "kind": "Agent Harness",
           "description": "参考 DeepSeek Harness 的插件架构，设计任务能力组合、工具连接和清晰交接，并评估适合自己工作流的扩展方式。"
         }
+      },
+      {
+        "name": "DSH Superagent Prototype",
+        "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+        "en": {
+          "kind": "Coding Agent Prototype",
+          "description": "Explore a Harness-based research prototype that turns authorized GitHub and optional Feishu requests into coding tasks, with scoped execution and results returned to the original conversation."
+        },
+        "zh": {
+          "kind": "编程 Agent 原型",
+          "description": "了解基于 Harness 的编程 Agent 研究原型，参考 GitHub 与飞书请求的任务路由、授权范围和结果交付机制。"
+        }
       }
     ],
     "en": {
       "seoTitle": "DeepSeek: Models and Agent Infrastructure | Floatboat",
-      "seoDescription": "Explore DeepSeek’s public agent infrastructure through DeepSeek Harness. Understand the team’s role, its plugin-based runtime, and how model projects, tools, and preview-stage software should be evaluated separately.",
+      "seoDescription": "Explore DeepSeek Harness and DSH Superagent Prototype: a plugin-based runtime and a repository-focused coding agent. Compare their roles, workflow mechanisms, and current project requirements.",
       "heroTitle": "DeepSeek: Models and Agent Infrastructure",
-      "heroDescription": "Explore DeepSeek’s public agent infrastructure through DeepSeek Harness. Understand the team’s role, its plugin-based runtime, and how model projects, tools, and preview-stage software should be evaluated separately.",
+      "heroDescription": "Explore DeepSeek Harness and DSH Superagent Prototype: a plugin-based runtime and a repository-focused coding agent. Compare their roles, workflow mechanisms, and current project requirements.",
       "overview": {
         "title": "About DeepSeek",
         "paragraphs": [
           "DeepSeek’s public work spans AI models and software used around model-driven tasks. A model project describes inference capabilities, while an agent runtime organizes the tools and interaction needed to perform work. Keeping those layers distinct makes the ecosystem easier to evaluate.",
-          "DeepSeek Harness is a representative infrastructure project published by the organization. It uses a Cordis-based, plugin-oriented architecture and provides an interactive entry point for agent work. Its design puts composition and extensions at the center of the running system.",
+          "DeepSeek Harness provides a Cordis-based, plugin-oriented runtime. DSH Superagent Prototype builds on it to receive authorized GitHub and optional Feishu requests, create scoped coding tasks, and return results to the original conversation. They illustrate different layers of the same workflow.",
           "The harness is identified as a developer preview. Its source license, model-service terms, and extension compatibility should be reviewed independently. The organization’s model reputation does not replace checking the stability and requirements of a specific tool release."
         ]
       },
       "aboutTitle": "About DeepSeek",
       "about": "DeepSeek’s public work spans AI models and software used around model-driven tasks. A model project describes inference capabilities, while an agent runtime organizes the tools and interaction needed to perform work. Keeping those layers distinct makes the ecosystem easier to evaluate.",
       "projectsTitle": "DeepSeek Projects",
-      "projectsIntro": "Explore the project as a reference for designing your own agent workflows, with attention to task structure, extensions, and execution boundaries.",
+      "projectsIntro": "Explore the runtime and its repository-focused research prototype, with attention to task handoffs, extensions, and execution boundaries.",
       "skillsTitle": "DeepSeek Skills",
       "skillsIntro": "Explore task-specific Skill guides and their original sources.",
       "relatedTitle": "Related Agent Publishers",
@@ -236,8 +248,8 @@
           "answer": "Yes. The project is in deepseek-ai, and its README identifies DeepSeek AI as the developer. Similar community names do not establish the same ownership."
         },
         {
-          "question": "Does the harness replace the model?",
-          "answer": "No. It supplies the execution system around model interaction. The configured model still performs inference, while tools, context, and session behavior are organized by the runtime."
+          "question": "How does DSH Superagent relate to Harness?",
+          "answer": "DSH Superagent is a Harness bundle for coding work in one GitHub repository, with optional Feishu requests. It is a research prototype, not an official DeepSeek product or a replacement for the underlying runtime."
         },
         {
           "question": "What does preview status mean for selection?",
@@ -261,21 +273,21 @@
     },
     "zh": {
       "seoTitle": "DeepSeek：模型与 Agent 基础设施 | Floatboat",
-      "seoDescription": "通过 DeepSeek Harness 了解 DeepSeek 的公开 Agent 基础设施，认识组织角色、插件化运行层，以及模型项目、工具和预览阶段软件各自的评估边界。",
+      "seoDescription": "通过 DeepSeek Harness 与 DSH Superagent Prototype 了解插件化运行层和仓库协作 Agent，比较两者的职责、可借鉴的工作流机制与实际使用条件。",
       "heroTitle": "DeepSeek：模型与 Agent 基础设施",
-      "heroDescription": "通过 DeepSeek Harness 了解 DeepSeek 的公开 Agent 基础设施，认识组织角色、插件化运行层，以及模型项目、工具和预览阶段软件各自的评估边界。",
+      "heroDescription": "通过 DeepSeek Harness 与 DSH Superagent Prototype 了解插件化运行层和仓库协作 Agent，比较两者的职责、可借鉴的工作流机制与实际使用条件。",
       "overview": {
         "title": "关于 DeepSeek",
         "paragraphs": [
           "DeepSeek 的公开工作涉及 AI 模型，以及围绕模型任务运行的软件。模型项目关注推理能力，Agent 运行层则组织完成工作所需的工具与交互。区分这些层次，有助于准确理解其生态。",
-          "DeepSeek Harness 是组织发布的代表性基础设施项目，采用基于 Cordis 的插件架构，并为 Agent 工作提供交互入口。组合方式与扩展机制，是理解其运行系统的重要切入点。",
+          "DeepSeek Harness 提供基于 Cordis 的插件化运行层。DSH Superagent Prototype 在此基础上接收 GitHub 与可选飞书中的授权请求，建立有范围的编程任务，再把结果送回原讨论。两者展示了工作流中不同层次的职责。",
           "该 harness 标为开发者预览。源码许可、模型服务条款与扩展兼容性需要分别核对；组织的模型声誉不能代替对具体工具版本稳定性和使用要求的检查。"
         ]
       },
       "aboutTitle": "关于 DeepSeek",
       "about": "DeepSeek 的公开工作涉及 AI 模型，以及围绕模型任务运行的软件。模型项目关注推理能力，Agent 运行层则组织完成工作所需的工具与交互。区分这些层次，有助于准确理解其生态。",
       "projectsTitle": "DeepSeek 的代表项目",
-      "projectsIntro": "将代表项目作为设计自己 Agent 工作流的参考，关注任务结构、扩展方式和执行边界，再判断哪些机制值得借鉴。",
+      "projectsIntro": "了解 Agent 运行层与面向仓库协作的研究原型，比较任务交接、扩展方式和执行边界。",
       "skillsTitle": "DeepSeek Skills",
       "skillsIntro": "浏览面向具体任务的 Skill 指南及其原始来源。",
       "relatedTitle": "相关 Agent 项目发布者",
@@ -291,8 +303,8 @@
           "answer": "是。项目位于 deepseek-ai，README 明确说明由 DeepSeek AI 开发；名称相似的社区项目不能据此认定为相同归属。"
         },
         {
-          "question": "Harness 是否取代模型本身？",
-          "answer": "不会。它提供模型交互周围的执行系统，模型负责推理，运行层组织工具、上下文与会话行为。"
+          "question": "DSH Superagent 与 Harness 有什么关系？",
+          "answer": "DSH Superagent 是运行于 Harness 的扩展包，面向单个 GitHub 仓库的编程工作，也可接收飞书请求。它是研究原型，并非正式 DeepSeek 产品，也不替代底层运行环境。"
         },
         {
           "question": "预览状态会怎样影响选用？",

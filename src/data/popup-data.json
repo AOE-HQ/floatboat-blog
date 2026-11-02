@@ -1699,6 +1699,16 @@
         "title": "什么是面向 AI Agent 的语音听写？",
         "body": "Agent 时代的听写定义——捕获、指令与起草是三种不同的活。"
       }
+    },
+    "deepseek-dsh-superagent": {
+      "en": {
+        "title": "Give each task a clear handoff",
+        "body": "Keep the request, working context, and reviewable result together. Explore Floatboat for organizing the work around your agent."
+      },
+      "zh": {
+        "title": "让请求走到可审阅的结果",
+        "body": "把输入资料、任务范围和验收证据放在一起。在 Floatboat 中组织工作，再判断哪些步骤适合交给 Agent。"
+      }
     }
   }
 }

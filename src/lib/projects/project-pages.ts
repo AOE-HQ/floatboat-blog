@@ -23,6 +23,8 @@ const copy = z.object({
   requirementsTitle: text,
   requirementsIntro: text,
   requirements: z.array(item).length(3),
+  articleTitle: text.optional(),
+  articleDescription: text.optional(),
   faq: z.array(z.object({ question: text, answer: text })).min(6),
 });
 
@@ -39,10 +41,14 @@ const projectSchema = z.object({
   classification: z.enum(["official-harness", "agent-system"]),
   reviewedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   related: z.array(text).length(4),
+  articleSlug: slug.optional(),
   en: copy,
   zh: copy,
 }).strict().superRefine((project, ctx) => {
   for (const locale of ["en", "zh"] as const) {
+    if (project.articleSlug && (!project[locale].articleTitle || !project[locale].articleDescription)) {
+      ctx.addIssue({ code: "custom", path: [locale, "articleTitle"], message: "Article links need localized title and description" });
+    }
     const questions = project[locale].faq.map((faq) => faq.question);
     if (new Set(questions).size !== questions.length) ctx.addIssue({ code: "custom", path: [locale, "faq"], message: "FAQ questions must be distinct" });
   }

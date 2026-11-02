@@ -84,8 +84,8 @@
     "zh": "OpenAI 开发 AI 系统与开发工具。通过 Codex 了解开放 Agent 运行层、代码任务、工具使用和应用集成。"
   },
   "deepseek-ai": {
-    "en": "DeepSeek publishes AI research and agent infrastructure. Explore DeepSeek Harness, its plugin-based runtime for composing tools, sessions, and model-driven workflows.",
-    "zh": "DeepSeek 发布 AI 研究与 Agent 基础设施。通过官方 Harness 了解插件化运行层、工具组合与任务协作。"
+    "en": "DeepSeek publishes agent infrastructure and research prototypes. Explore Harness for runtime composition and DSH Superagent for GitHub-driven coding workflows.",
+    "zh": "DeepSeek 的 Agent 项目：Harness 插件化运行层与 Superagent 仓库任务协作原型。"
   },
   "earendil-works": {
     "en": "Earendil Works hosts Pi’s current upstream. Explore its extensible agent harness, coding CLI, and reusable libraries for model access and agent execution.",
