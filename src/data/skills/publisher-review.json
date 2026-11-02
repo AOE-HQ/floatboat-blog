@@ -19,7 +19,8 @@
       "repositories": [
         "vercel-labs/agent-browser",
         "vercel-labs/json-render",
-        "vercel-labs/skills"
+        "vercel-labs/skills",
+        "vercel-labs/agent-desktop"
       ]
     },
     "morluto": {
@@ -467,6 +468,32 @@
       "reason": "Official upstream and organization verified through repository metadata, README, and license; source is not a fork and is not archived. Independently selected project, not a new popular Skill guide.",
       "repositories": [
         "zai-org/ZCode"
+      ]
+    },
+    "dietrichgebert": {
+      "status": "approved",
+      "checkedAt": "2026-11-03",
+      "representativeRepository": "DietrichGebert/ponytail",
+      "stars": 182688,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-29T11:59:31Z",
+      "reason": "原始仓库超过1000 stars，已核对官网、README、维护者提交与许可证；非 fork，未归档。",
+      "repositories": [
+        "DietrichGebert/ponytail"
+      ]
+    },
+    "milind-soni": {
+      "status": "approved",
+      "checkedAt": "2026-11-03",
+      "representativeRepository": "milind-soni/OpenMausBot",
+      "stars": 11111,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-02T16:48:28Z",
+      "reason": "原始仓库超过1000 stars，已核对官网、README、维护者提交与许可证；非 fork，未归档。",
+      "repositories": [
+        "milind-soni/OpenMausBot"
       ]
     }
   }

@@ -99,7 +99,7 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
       }))} />
     </section>
     <section id="browse" aria-labelledby="projects-title" className="mx-auto max-w-7xl scroll-mt-24 px-5 pb-20 sm:px-8">
-      <div className="mb-7"><h2 id="projects-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{zh ? "项目与 Skills" : "Projects and Skills"}</h2><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{zh ? "从 Codex、DeepSeek Harness、DSH Superagent 等项目了解运行层、任务路由与结果交付，构建或优化自己的工作流；切换 Skills 查看可复用任务指引。" : "Explore runtimes, task routing, and delivery through projects such as Codex, DeepSeek Harness, and DSH Superagent. Build or improve your own workflows, or switch to Skills for reusable task instructions."}</p></div>
+      <div className="mb-7"><h2 id="projects-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{zh ? "项目与 Skills" : "Projects and Skills"}</h2><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{zh ? "从 Ponytail 的代码复用、MausBot 的角色协作，到 Agent Desktop 的桌面操作，比较不同项目如何改善工作流；切换 Skills 查看可复用任务指引。" : "Compare code reuse with Ponytail, role-based collaboration with MausBot, and desktop control with Agent Desktop. Explore mechanisms for your own workflows, or switch to Skills for reusable task instructions."}</p></div>
       <DirectoryTabs label={zh ? "内容类型" : "Content type"} tabs={[{ id: "project", label: zh ? "独立项目" : "Projects" }, { id: "skill", label: "Skills" }]} items={entries.map((entry) => ({
         id: entry.id, title: entry.name, description: entry.description, href: entry.entryType === "skill" && !entry.hasLocalGuide ? undefined : entry.href, group: entry.entryType,
         label: entry.kind, footer: entry.publisher,

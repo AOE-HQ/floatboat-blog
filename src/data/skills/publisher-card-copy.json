@@ -106,5 +106,13 @@
   "zai-org": {
     "en": "Z.ai publishes ZCode, a coding workbench and agent harness. Explore its desktop, Web, and terminal experiences, public runtime source, and GLM ecosystem context.",
     "zh": "Z.ai 发布编程工作台与 Agent Harness ZCode。通过代表项目了解桌面、Web、终端入口及公开运行时。"
+  },
+  "dietrichgebert": {
+    "en": "Creates Ponytail: reuse-first coding rules, change reviews, and repository audits for existing agents.",
+    "zh": "维护 Ponytail，以代码复用、修改审查和仓库审计改进编程 Agent 的工作方式。"
+  },
+  "milind-soni": {
+    "en": "Maintains MausBot / OpenMausBot, a desktop app for role-based agents, shared channels, and reviewable execution.",
+    "zh": "维护 MausBot / OpenMausBot，通过桌面应用组织角色 Agent、共享频道与可审阅执行。"
   }
 }

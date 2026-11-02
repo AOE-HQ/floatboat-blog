@@ -151,6 +151,18 @@
       "deepseek-ai",
       "earendil-works",
       "anomalyco"
+    ],
+    "dietrichgebert": [
+      "milind-soni",
+      "vercel-labs",
+      "openai",
+      "anomalyco"
+    ],
+    "milind-soni": [
+      "dietrichgebert",
+      "vercel-labs",
+      "nousresearch",
+      "openai"
     ]
   },
   "skill-categories": {
