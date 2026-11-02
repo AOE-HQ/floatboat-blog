@@ -8,7 +8,6 @@
   },
   "breadcrumb": "律师与法律团队",
   "hero": {
-    "eyebrow": "处理法律准备工作的 Work Agent",
     "title": "面向律师与法律团队的 Work Agent",
     "description": "把一项边界明确的法律准备任务交给 Floatboat。它可以整理案件文件、还原事实、比较版本、准备研究材料，并把授权来源转成可审阅初稿；模板、清单与审批点始终由团队定义。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-lawyers&download_placement=hero" },
@@ -23,7 +22,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "专业判断周围的工作",
     "title": "律师的一天，不只有给出法律意见。",
     "description": "在提出建议、参与谈判或作出判断之前，总有人要恢复上下文、整理材料、比较文件，并准备真正可用的工作成果。",
     "items": [
@@ -34,7 +32,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "法律 Work Agent 可以准备什么",
     "title": "把专业判断周围的准备步骤交给 Work Agent。",
     "description": "Work Agent 遵循你选择的来源、标准和检查点，不替团队规定法律方法，也不代替专业决定。",
     "items": [
@@ -47,7 +44,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "可以交给法律 Work Agent 的三项任务",
     "title": "交付边界清楚的准备工作，而不是授予法律判断权。",
     "description": "每项任务都从你控制的材料和规则开始，返回可检查的工作成果，并在需要专业判断的位置停下来。",
     "items": [
@@ -78,7 +74,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "继续使用你信任的方法",
     "title": "教会 Work Agent 遵循团队已经信任的标准。",
     "description": "不同律所、客户、案件和法域需要不同方法。让 Floatboat 遵循已批准的材料，并把每项重要判断交回正确的人。",
     "inputsLabel": "定义工作上下文",
@@ -87,7 +82,6 @@
     "controls": ["Agent 可以读取或修改什么", "哪些步骤必须先提问", "谁负责审阅每项交付物", "哪些内容绝不能自动发送", "哪些做法可以保存和复用"]
   },
   "progression": {
-    "eyebrow": "从一次任务到可靠的工作惯例",
     "title": "先从边界清楚的任务开始，只教 Work Agent 复用被证明有价值的方法。",
     "description": "Work Agent 可以复用已经验证的做法，但不需要把法律工作变成无人监督的自动化。",
     "items": [
@@ -97,7 +91,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "以人工控制为前提",
     "title": "让 Work Agent 准备工作记录，不承担专业责任。",
     "description": "真正有用的边界不是“法律工作”与“非法律工作”，而是准备可检查的工作成果与作出有后果的专业决定之间的边界。",
     "assistsTitle": "Floatboat 可以协助准备",
@@ -121,7 +114,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "进入法律审阅之前",
     "title": "先备好案件资料，法律判断仍由律师负责",
     "description": "用核准的案件文件和模板整理事实、比较版本并准备审阅稿；法律结论仍由专业人士作出。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-lawyers&download_placement=final_cta" }

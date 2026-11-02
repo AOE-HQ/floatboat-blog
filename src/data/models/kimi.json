@@ -43,7 +43,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "Kimi K3 model overview", "zh": "Kimi K3 模型概览" },
     "title": {
       "en": "Configured for long source sets; access is not currently available through the main client picker.",
       "zh": "已配置大型资料集处理能力，当前默认模型选择器尚未提供入口。"
@@ -91,7 +90,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Configured capacity", "zh": "已配置容量" },
     "title": {
       "en": "One exact ID with a defined readiness state.",
       "zh": "一个准确 ID，对应明确的就绪状态。"
@@ -113,7 +111,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "Intended workload", "zh": "目标工作负载" },
     "title": {
       "en": "The configured role centers on keeping long material together.",
       "zh": "已配置角色重点在于保持长材料的整体性。"
@@ -171,7 +168,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": { "en": "Configured foundation", "zh": "已配置基础" },
     "title": {
       "en": "What is ready below the picker.",
       "zh": "选择器下层已经准备了什么。"

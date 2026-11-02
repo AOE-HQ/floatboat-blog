@@ -27,7 +27,6 @@ export const coreFeaturePageSchema = z.object({
   }),
   breadcrumb: z.string().min(1),
   hero: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     primaryCta: linkSchema,
@@ -35,18 +34,15 @@ export const coreFeaturePageSchema = z.object({
     proof: z.array(z.string().min(1)).min(3),
   }),
   demo: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
   }),
   features: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     items: z.array(mediaSchema).min(3),
   }),
   scenario: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     steps: z.array(z.object({ title: z.string(), description: z.string() })).min(3),
@@ -72,7 +68,6 @@ export const coreFeaturePageSchema = z.object({
     items: z.array(z.object({ question: z.string(), answer: z.string() })).min(4),
   }),
   finalCta: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     primaryCta: linkSchema,

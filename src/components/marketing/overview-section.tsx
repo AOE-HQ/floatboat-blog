@@ -5,7 +5,6 @@ export type OverviewItem = { title: string; description: string };
 
 /** A shared layout for a substantial introduction; content belongs to the page's subject. */
 export function OverviewSection({ title, paragraphs, items = [], links = [], linksTitle = "Explore", identity, id = "overview" }: {
-  eyebrow?: string;
   title: string;
   paragraphs: string[];
   items?: OverviewItem[];

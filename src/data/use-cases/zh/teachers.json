@@ -16,7 +16,6 @@
   },
   "breadcrumb": "教师与教研团队",
   "hero": {
-    "eyebrow": "处理教学准备工作的 Work Agent",
     "title": "面向教师与教研团队的 Work Agent",
     "description": "把一项教学准备任务交给 Floatboat：整理核准资料、制作配套教案与课件、起草班级沟通内容并维护证据记录；所有教学决定仍由教育者作出。",
     "primaryCta": {
@@ -49,7 +48,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "专业工作周围的重复劳动",
     "title": "教师与教研团队的时间，不该耗在反复整理上。",
     "description": "一节课很少从空白页开始。教师需要先对齐课程目标、旧资料、班级情况、学校格式和真实课时，再进入教学设计。",
     "items": [
@@ -76,7 +74,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "教学 Work Agent 可以准备什么",
     "title": "把教学周围的制作工作交给 Work Agent。",
     "description": "Work Agent 遵循课程标准、核准资料、学校格式与审核点，不替教师决定教学法或学生支持方案。",
     "items": [
@@ -113,7 +110,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "可以交给教学 Work Agent 的三项任务",
     "title": "把准备工作交给 Agent，把课堂决定留给教师。",
     "description": "每项任务都从你控制的材料和规则开始，返回可检查的教学资产，并在教育判断前停下。",
     "items": [
@@ -159,7 +155,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "你的方法仍然是方法",
     "title": "教会 Work Agent 遵循课程与学校标准。",
     "description": "为具体班级或学校配置输入、格式、术语与审批点；页面示例不是规定的教学方法。",
     "inputsLabel": "定义工作背景",
@@ -180,7 +175,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次任务到可复用系统",
     "title": "先完成一个边界清晰的任务，只教 Work Agent 复用真正有用的方法。",
     "description": "Work Agent 可以复用经过验证的准备方法，但不会把教学变成无人值守的自动化。",
     "items": [
@@ -202,7 +196,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "人工控制",
     "title": "让 Work Agent 准备材料，不替教师作出教学决定。",
     "description": "Work Agent 可以组织和改编教学材料，但内容准确性、教学法、差异化支持、学生安全以及最终发放内容均由教育者决定。",
     "assistsTitle": "Floatboat 可以协助准备",
@@ -258,7 +251,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "下一单元备课",
     "title": "用可信资料准备整套教学材料",
     "description": "带上课程标准、核准资料和班级要求的格式；练习单与班级通知交给学生前先审阅。",
     "primaryCta": {

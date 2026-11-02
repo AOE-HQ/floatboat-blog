@@ -30,12 +30,10 @@
     },
     "cta": {
       "en": {
-        "eyebrow": "From Instruction to Code",
         "title": "Keep Code Changes and Reviews Together",
         "description": "Bring the task, repository context, tests, and review decisions into one workspace."
       },
       "zh": {
-        "eyebrow": "从指引到代码",
         "title": "把代码修改与审查放在一起",
         "description": "让任务、仓库上下文、测试和审查决定留在同一工作空间。"
       }
@@ -168,12 +166,10 @@
     },
     "cta": {
       "en": {
-        "eyebrow": "From Plan to Delivery",
         "title": "Keep Development Decisions Visible",
         "description": "Work with your files, implementation notes, and verification in one place."
       },
       "zh": {
-        "eyebrow": "从方案到交付",
         "title": "让开发决策始终可追溯",
         "description": "把文件、实施记录和验证结果放在同一处继续工作。"
       }
@@ -324,12 +320,10 @@
     },
     "cta": {
       "en": {
-        "eyebrow": "From Review to Revision",
         "title": "Keep Interface Feedback in Context",
         "description": "Bring the page, design references, and review notes together before the next revision."
       },
       "zh": {
-        "eyebrow": "从审查到修改",
         "title": "让界面反馈保留上下文",
         "description": "在下一轮修改前，把页面、设计参考和审查记录放在一起。"
       }
@@ -461,12 +455,10 @@
     },
     "cta": {
       "en": {
-        "eyebrow": "From Research to Draft",
         "title": "Keep the Evidence Behind the Copy",
         "description": "Bring sources, page drafts, and review notes into the same working context."
       },
       "zh": {
-        "eyebrow": "从调研到成稿",
         "title": "让文案始终有证据支撑",
         "description": "把来源、页面草稿和审查记录放在同一工作上下文里。"
       }
@@ -597,12 +589,10 @@
     },
     "cta": {
       "en": {
-        "eyebrow": "From Preview to Check",
         "title": "Keep Deployments and Checks Traceable",
         "description": "Review the target, permissions, browser evidence, and next action in one workspace."
       },
       "zh": {
-        "eyebrow": "从预览到验证",
         "title": "让部署与检查留有记录",
         "description": "在同一工作空间核对目标、权限、浏览器证据和下一步操作。"
       }
@@ -732,12 +722,10 @@
     },
     "cta": {
       "en": {
-        "eyebrow": "From Source to File",
         "title": "Keep Sources and Deliverables Together",
         "description": "Keep the original material, file requirements, revisions, and review notes available while preparing the final document."
       },
       "zh": {
-        "eyebrow": "从资料到文件",
         "title": "让来源与交付物保持关联",
         "description": "准备最终文档时，让原始资料、文件要求、修改与审阅记录留在同一工作上下文中。"
       }
@@ -874,12 +862,10 @@
     },
     "cta": {
       "en": {
-        "eyebrow": "From Brief to Video",
         "title": "Keep the Video Brief and Review Together",
         "description": "Work with the message, source assets, editable scenes, and review notes while preparing the final video."
       },
       "zh": {
-        "eyebrow": "从需求到视频",
         "title": "让视频需求与复核保持关联",
         "description": "准备最终视频时，让信息目标、素材、可编辑场景与审阅记录留在同一工作上下文中。"
       }

@@ -15,7 +15,6 @@
   },
   "breadcrumb": "marketers and growth teams",
   "hero": {
-    "eyebrow": "A Work Agent for campaign preparation and adaptation",
     "title": "A Work Agent for marketers and growth teams",
     "description": "Give Floatboat approved audience research, product evidence, brand rules, and campaign data. It prepares briefs, channel variants, and performance reviews for marketing owners to approve.",
     "primaryCta": {
@@ -48,7 +47,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "Where a marketing Work Agent earns its place",
     "title": "Keep positioning and creative judgment human. Delegate the production trail.",
     "description": "Marketing work fragments when audience evidence, approved claims, channel drafts, review feedback, and performance data live in separate production loops.",
     "items": [
@@ -75,7 +73,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "What your marketing Work Agent can prepare",
     "title": "Move from approved evidence to channel-ready, reviewable assets.",
     "description": "The Work Agent uses its workspace to connect audience evidence, approved claims, brand rules, drafts, feedback, and results while owners control strategy and publication.",
     "items": [
@@ -112,7 +109,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "Three assignments for a marketing Work Agent",
     "title": "Delegate campaign preparation without delegating positioning or publication.",
     "description": "Each assignment starts from approved research, claims, and data, returns editable assets, and stops before budget, targeting, attribution, or publishing decisions.",
     "items": [
@@ -158,7 +154,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your method remains the method",
     "title": "Teach the Work Agent your brand, claims, channels, and review path.",
     "description": "Provide the message house, evidence library, prohibited language, channel specifications, campaign hypothesis, and named approvers.",
     "inputsLabel": "Define the working context",
@@ -179,7 +174,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one assignment to a reusable Work Agent",
     "title": "Validate one approved campaign asset before scaling the routine.",
     "description": "Scale only the parts that preserve message fidelity, claim evidence, channel fit, and explicit approval before publication.",
     "items": [
@@ -201,7 +195,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Human-controlled by design",
     "title": "Let the Work Agent prepare assets. Keep claims, strategy, and publication human-owned.",
     "description": "The Work Agent may prepare evidence-backed briefs, variants, and reviews; it cannot invent claims, select audiences or budgets, confirm attribution, or publish on the team's behalf.",
     "assistsTitle": "The Work Agent can help prepare",
@@ -257,7 +250,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "From signed-off brief to channels",
     "title": "Carry approved claims into every campaign draft",
     "description": "Start from the signed-off brief, product proof, and brand rules. Review each channel variant before any claim goes live.",
     "primaryCta": {

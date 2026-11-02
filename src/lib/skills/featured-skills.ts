@@ -28,7 +28,6 @@ export type FeaturedSkill = {
     keywords: Record<SkillLocale, string[]>;
   };
   hero: {
-    eyebrow: LocalizedText;
     title: LocalizedText;
     description: LocalizedText;
   };

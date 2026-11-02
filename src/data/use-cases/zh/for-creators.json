@@ -14,7 +14,6 @@
   },
   "breadcrumb": "创作者与独立出版者",
   "hero": {
-    "eyebrow": "从源素材推进到发布的 Work Agent",
     "title": "创作者与写作者的 Work Agent",
     "description": "把获准研究、录音、初稿和编辑方向交给 Floatboat。Work Agent 会在持续工作空间中推进内容任务，返回可编辑成稿、渠道版本与发布材料供你审阅。",
     "primaryCta": {
@@ -47,7 +46,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "创意周围的制作工作",
     "title": "创作不只是生成一份初稿",
     "description": "创作者既要保护最初的想法，也要完成研究、成文、修改、包装和渠道适配。",
     "items": [
@@ -74,7 +72,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "贯穿整个任务的编辑工作",
     "title": "创作者 Work Agent 可以准备什么",
     "description": "Agent 在持续工作空间中保持来源、编辑选择、初稿与发布素材之间的关联。",
     "items": [
@@ -106,7 +103,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "你的方法仍是标准",
     "title": "让 Work Agent 学会你的编辑方法",
     "description": "提供适用于当前任务的资料、标准、格式和审批要求。",
     "inputsLabel": "定义工作背景",
@@ -127,7 +123,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一份作品到可复用的发布方法",
     "title": "从一份作品到可复用发布方法",
     "description": "先用一份源内容验证结构、来源与语气是否可靠，再复用那些能够保持原意和创作者声音的步骤。",
     "items": [
@@ -149,7 +144,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "默认由人控制",
     "title": "把制作工作交出去，不交出作者和发布判断",
     "description": "Work Agent 可以整理来源、起草内容、适配渠道并准备发布材料；事实、原创性、版权和是否发布仍由创作者负责。",
     "assistsTitle": "Work Agent 可以准备",
@@ -171,7 +165,6 @@
     "note": "Floatboat 是帮助准备内容工作的 Work Agent，不是自主发布工具，也不能替代编辑审核、法律判断或版权审查。"
   },
   "workflows": {
-    "eyebrow": "可以交给创作者 Work Agent 的三项任务",
     "title": "先把想法做完整，再扩展格式",
     "description": "Work Agent 保留来源和编辑决定，每项产出仍由创作者修改和批准。",
     "items": [
@@ -251,7 +244,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "一份原作，多种发布材料",
     "title": "让发布材料延续原作的表达",
     "description": "从已确认的稿件或录音出发，准备说明文字与渠道版本；发布前再核对语气和事实。",
     "primaryCta": {

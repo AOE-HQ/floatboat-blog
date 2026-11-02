@@ -42,11 +42,7 @@ export function FeaturedPost({ post }: { post: PostMeta }) {
             hasCover ? "p-8 sm:p-10 lg:p-12" : "",
           )}
         >
-          <p
-            className={`text-xs font-medium uppercase tracking-[0.24em] text-[var(--ob-color-accent)]`}
-          >
-            {copy.featured}
-          </p>
+
           <div
             className={`mt-4 flex flex-wrap items-center gap-2 text-sm ${obMuted}`}
           >

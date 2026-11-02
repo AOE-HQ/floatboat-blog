@@ -8,16 +8,14 @@
   },
   "breadcrumb": "AI 文件整理器",
   "hero": {
-    "eyebrow": "本地文件整理",
     "title": "描述你想要的秩序，在移动任何文件前先预览。",
     "description": "让 Floatboat 检查杂乱文件夹、提出可用的整理结构，并只在你批准后直接在电脑上执行重命名和移动。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=file-organizer&download_placement=hero" },
     "secondaryCta": { "label": "了解 AI 文件整理器", "href": "/zh/blog/what-is-an-ai-file-organizer" },
     "proof": ["在本地文件夹运行", "执行前完整预览", "逐文件报告结果"]
   },
-  "demo": { "eyebrow": "可检查的整理流程", "title": "应用变更之前先审查建议结构", "description": "整理器把分析与执行分开，让你可以在文件发生变化之前修正分类和命名规则。" },
+  "demo": {  "title": "应用变更之前先审查建议结构", "description": "整理器把分析与执行分开，让你可以在文件发生变化之前修正分类和命名规则。" },
   "features": {
-    "eyebrow": "根据上下文整理",
     "title": "不只是按照文件扩展名移动文件。",
     "description": "Floatboat 可以结合文件名、目录上下文和文档内容，提出符合实际工作的整理结构。",
     "items": [
@@ -27,7 +25,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "拥挤的下载文件夹",
     "title": "把混杂文件变成值得信任的结构。",
     "description": "整理器可以识别哪些文件属于同一类、标记不确定项目，并留下可以审计的结果。",
     "steps": [
@@ -75,7 +72,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "移动文件之前",
     "title": "先看整理方案，再决定移动哪些文件",
     "description": "选一个杂乱文件夹，先核对分组与重命名建议，再只执行你批准的本地移动。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=file-organizer&download_placement=final_cta" }

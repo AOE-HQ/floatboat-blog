@@ -71,13 +71,8 @@ export function BlogIndex({
     <>
     <div className="space-y-14 lg:space-y-20">
       <header className={cn("pb-10 lg:pb-12", obBorderB)}>
-        <p
-          className={`text-xs font-medium uppercase tracking-[0.24em] text-[var(--ob-color-accent)]`}
-        >
-          {config.site.name}
-        </p>
         <h1
-          className={`mt-4 font-serif text-4xl font-normal leading-[1.1] tracking-tight ${obText} sm:text-5xl lg:text-6xl lg:leading-[1.05]`}
+          className={`font-serif text-4xl font-normal leading-[1.1] tracking-tight ${obText} sm:text-5xl lg:text-6xl lg:leading-[1.05]`}
         >
           {copy.title}
         </h1>

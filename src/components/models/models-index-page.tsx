@@ -25,7 +25,6 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
         <Link href={isZh ? "/zh" : "/"}>{isZh ? "首页" : "Home"}</Link><span className="mx-2">/</span><span>{isZh ? "模型" : "Models"}</span>
       </nav>
       <MarketingHero
-        eyebrow={isZh ? "多模型 Agent Workspace" : "A multi-model Agent Workspace"}
         title={isZh ? "模型可以变化，工作空间不必重来。" : "Change the model without rebuilding the workspace."}
         description={isZh ? "开箱即用，无需自备 API Key。在同一个桌面工作空间中使用全员可用的 Auto Mode，或从订阅配置开放的模型中直接选择。" : "Ready out of the box with no API key required. Use Auto Mode, available to everyone, or directly select models enabled by your subscription configuration."}
       />
@@ -37,8 +36,7 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
       <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-10 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{isZh ? "可用路径" : "Available paths"}</p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "客户端当前可选模型" : "Models available in the client"}</h2>
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "客户端当前可选模型" : "Models available in the client"}</h2>
             <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{isZh ? "使用 Auto 自动路由，或直接选择 Anthropic、OpenAI、Google 与 DeepSeek 的前沿模型。" : "Use Auto routing or directly select frontier models from Anthropic, OpenAI, Google, and DeepSeek."}</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -50,8 +48,7 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
             ))}
           </div>
           <div className="mb-10 mt-20 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{isZh ? "多模态 Combo" : "Multimedia Combos"}</p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "已上线的图像与视频执行引擎" : "Live image and video engines"}</h2>
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "已上线的图像与视频执行引擎" : "Live image and video engines"}</h2>
             <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{isZh ? "这些模型通过内置 Combo Skill 调用，不出现在主对话模型下拉菜单中。" : "These models run through built-in Combo Skills rather than the main chat-model dropdown."}</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -63,8 +60,7 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
             ))}
           </div>
           <div className="mb-10 mt-20 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{isZh ? "底层能力" : "Configured capacity"}</p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "配置已完成，尚未在主选择器露出" : "Configured below the client picker"}</h2>
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "配置已完成，尚未在主选择器露出" : "Configured below the client picker"}</h2>
             <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{isZh ? "这些模型已经完成容量预算或协议适配，但当前不在客户端主选择器中。" : "These models have capacity budgets or protocol adapters in place, but are not exposed in the main client picker."}</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -79,7 +75,6 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
       </section>
 
       <FinalCta
-        eyebrow={isZh ? "先确认接入状态" : "Choose by availability"}
         title={isZh ? "按任务与接入入口比较模型" : "Compare models by task and access path"}
         description={isZh ? "先确认哪些模型可在对话中选择、哪些通过生图或视频 Combo 使用，以及哪些仅完成底层配置，再决定下一项任务怎么做。" : "See which models are selectable in chat, available through image or video Combos, or only configured below the picker before starting work."}
         primary={{ label: isZh ? "下载 Floatboat" : "Download Floatboat", href: isZh ? DOWNLOAD.replace("/download/", "/zh/download/") : DOWNLOAD }}

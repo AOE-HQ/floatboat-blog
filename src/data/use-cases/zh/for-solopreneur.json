@@ -14,7 +14,6 @@
   },
   "breadcrumb": "一人公司与独立经营者",
   "hero": {
-    "eyebrow": "覆盖一人公司多种角色的 Work Agent",
     "title": "一人公司的 Work Agent",
     "description": "把客户需求、语音记录或每周经营目标交给 Floatboat。Work Agent 会在持续工作空间中使用获准文件和方法，准备提案、交付物、跟进与待审下一步，所有业务承诺仍由你决定。",
     "primaryCta": {
@@ -47,7 +46,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "销售与交付之间的工作",
     "title": "所有角色最后都回到同一个人",
     "description": "一人公司需要在销售、交付、运营、财务和内容之间不断切换，却没有同事替自己保存这些角色之间的上下文。",
     "items": [
@@ -74,7 +72,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "跨越不同经营角色",
     "title": "一人公司 Work Agent 可以准备什么",
     "description": "Agent 在持续工作空间中使用你提供的业务背景和要求。",
     "items": [
@@ -106,7 +103,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "你的方法仍是标准",
     "title": "让 Work Agent 学会你的销售与交付方法",
     "description": "提供适用于当前任务的资料、标准、格式和审批要求。",
     "inputsLabel": "定义工作背景",
@@ -127,7 +123,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一项客户任务到经营惯例",
     "title": "从一次任务到可靠惯例",
     "description": "从输入、交付物和验收标准都清楚的任务开始；只有经过亲自审阅并证明有用的方法，才值得带到下一个客户项目。",
     "items": [
@@ -149,7 +144,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "默认由人控制",
     "title": "把准备工作交出去，不交出经营责任",
     "description": "Work Agent 可以整理客户背景、准备提案和交付材料；定价、范围、客户关系与所有对外承诺仍属于经营者。",
     "assistsTitle": "Work Agent 可以准备",
@@ -171,7 +165,6 @@
     "note": "Floatboat 是在经营者控制的工作空间中执行任务的 Work Agent，不会独立经营公司，也不能替代法律、财务或专业判断。"
   },
   "workflows": {
-    "eyebrow": "可以交给 Work Agent 的三项任务",
     "title": "从客户需求推进到可审阅交付",
     "description": "每项任务都从你批准的业务材料开始，并返回可编辑成果供经营者审阅。",
     "items": [
@@ -251,7 +244,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "下一份客户提案",
     "title": "先完成提案初稿，承诺仍由你决定",
     "description": "交给 Work Agent 客户需求和你的模板；范围、报价与对外回复仍由你亲自批准。",
     "primaryCta": {

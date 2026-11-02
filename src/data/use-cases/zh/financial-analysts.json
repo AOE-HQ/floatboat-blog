@@ -15,7 +15,6 @@
   },
   "breadcrumb": "财务分析师与企业财务团队",
   "hero": {
-    "eyebrow": "负责财务准备工作的 Work Agent",
     "title": "面向财务分析师与企业财务团队的 Work Agent",
     "description": "交给 Floatboat 核准的财务来源、指标定义与报告规则，由它准备研究资料包、差异说明和监测简报，并保留可审阅的关键假设。",
     "primaryCta": {
@@ -48,7 +47,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "财务 Work Agent 最能发挥价值的地方",
     "title": "把分析师时间用于解释，而不是反复重建证据链。",
     "description": "当更新后的数字、经营解释、模型假设和管理层评论无法对应到同一期间与来源时，财务分析就会失去可靠性。",
     "items": [
@@ -75,7 +73,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "财务 Work Agent 可以准备什么",
     "title": "把核准数字与经营背景整理成可审阅分析材料。",
     "description": "Work Agent 在工作空间中连接来源、期间、单位、假设与初稿；所有财务结论仍由分析师负责。",
     "items": [
@@ -112,7 +109,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "可以交给财务 Work Agent 的三项任务",
     "title": "委派证据准备，不委派财务判断。",
     "description": "每项任务都从核准来源与定义开始，返回可追溯成果，并在重要性、估值、预测或投资决策前停下。",
     "items": [
@@ -158,7 +154,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "你的方法仍然是方法",
     "title": "让 Work Agent 遵循团队的财务定义与复核规则。",
     "description": "在执行前提供期间、币种、单位、指标定义、假设登记表、报告模板与审批节点。",
     "inputsLabel": "定义工作背景",
@@ -179,7 +174,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次任务到可复用的 Work Agent",
     "title": "先用一个已关账期间验证 Work Agent，再复用流程。",
     "description": "流程必须在完成勾稽后才能复用；每个新期间仍需重新检查来源、单位与假设。",
     "items": [
@@ -201,7 +195,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "人工控制",
     "title": "让 Work Agent 准备记录，让每项财务结论责任清晰。",
     "description": "Work Agent 可以汇集和比较核准的财务证据，但不能认证计算、判断重要性、设定预测或提出投资建议。",
     "assistsTitle": "Work Agent 可以协助准备",
@@ -257,7 +250,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "差异说明发出之前",
     "title": "让财务差异说明能追溯到每个数字",
     "description": "从已关账期间、核准指标和原始表格出发，准备能逐项核对的分析说明。",
     "primaryCta": {

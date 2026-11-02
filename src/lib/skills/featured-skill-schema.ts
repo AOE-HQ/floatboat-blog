@@ -25,7 +25,7 @@ const skill = z.object({
   sourceLinks: z.array(z.object({ label: localized, href: url })).optional(),
   category: localized,
   seo: z.object({ title: localized, description: localized, keywords: z.object({ en: z.array(text).min(1), zh: z.array(text).min(1) }) }),
-  hero: z.object({ eyebrow: z.object({ en: z.string(), zh: z.string() }), title: localized, description: localized }),
+  hero: z.object({ title: localized, description: localized }),
   overview: z.object({
     en: z.object({ title: text, paragraphs: z.array(text).length(1) }),
     zh: z.object({ title: text, paragraphs: z.array(text).length(1) }),

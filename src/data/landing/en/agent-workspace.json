@@ -8,7 +8,6 @@
   },
   "breadcrumb": "Agent Workspace",
   "hero": {
-    "eyebrow": "An all-in-one agent workspace",
     "title": "Give agents a workspace, not another chat window.",
     "description": "Floatboat brings agents, local files, models, tools, project rules, and deliverables into one persistent desktop environment—so work can continue from context instead of restarting with every prompt.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=hero" },
@@ -16,12 +15,10 @@
     "proof": ["Local-first project access", "Multi-agent collaboration", "Human-controlled execution"]
   },
   "demo": {
-    "eyebrow": "A persistent place to work",
     "title": "Keep the project, rules, and results together",
     "description": "Agents can work from the same approved files and tools, leave inspectable outputs, and continue from what the project has already learned."
   },
   "features": {
-    "eyebrow": "Workspace, not just chat",
     "title": "The environment around the agent is part of the product.",
     "description": "Floatboat gives work a durable home where context, execution, review, and delivery remain connected.",
     "items": [
@@ -31,7 +28,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "A research-to-delivery project",
     "title": "Move from source material to a finished artifact without losing the thread.",
     "description": "A workspace can hold the brief, references, working rules, agent runs, review notes, and final deliverable as one continuous body of work.",
     "steps": [
@@ -79,7 +75,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Keep the project intact",
     "title": "Continue the same agent project tomorrow",
     "description": "Reopen the same files, rules, agent decisions, and draft deliverable instead of rebuilding context in a new chat.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=final_cta" }

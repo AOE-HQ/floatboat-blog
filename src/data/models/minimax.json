@@ -43,7 +43,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "MiniMax M2 model overview", "zh": "MiniMax M2 模型概览" },
     "title": {
       "en": "Prepared around the economics of long-running text work.",
       "zh": "围绕长时间文本工作的经济性完成准备。"
@@ -88,7 +87,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Configured model", "zh": "已配置型号" },
     "title": {
       "en": "One exact model ID with a 1M profile.",
       "zh": "一个准确 Model ID，对应 1M 画像。"
@@ -110,7 +108,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "Intended workload", "zh": "目标工作负载" },
     "title": {
       "en": "The configured value is sustained processing at a lower cost profile.",
       "zh": "已配置价值在于以较低成本画像承载持续处理。"
@@ -168,7 +165,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": { "en": "Configured foundation", "zh": "已配置基础" },
     "title": {
       "en": "A focused economic profile below the picker.",
       "zh": "选择器下层的一项明确经济画像。"

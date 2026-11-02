@@ -15,7 +15,6 @@
   },
   "breadcrumb": "recruiters and talent teams",
   "hero": {
-    "eyebrow": "A Work Agent for responsible hiring preparation",
     "title": "A Work Agent for recruiters and talent teams",
     "description": "Give Floatboat an approved role brief, candidate materials, and interview standards. It prepares evidence packets, interview plans, feedback summaries, and communication drafts for recruiter review.",
     "primaryCta": {
@@ -48,7 +47,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "Where a recruiting Work Agent earns its place",
     "title": "Keep hiring judgment with people. Give the preparation work to an agent.",
     "description": "Hiring slows down when the role, evidence, interview criteria, and candidate communication are rebuilt by different people at every stage.",
     "items": [
@@ -75,7 +73,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "What your recruiting Work Agent can prepare",
     "title": "Move from approved hiring inputs to review-ready materials.",
     "description": "The Work Agent uses the workspace to keep role criteria, candidate evidence, interview notes, and deliverables connected while your team controls every consequential decision.",
     "items": [
@@ -112,7 +109,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "Three assignments for a recruiting Work Agent",
     "title": "Delegate the preparation around a hiring decision—not the decision itself.",
     "description": "Each assignment starts from approved, job-related material, returns an inspectable deliverable, and stops before candidate evaluation or outreach.",
     "items": [
@@ -158,7 +154,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your method remains the method",
     "title": "Teach the Work Agent how your hiring team prepares.",
     "description": "Give it your lawful criteria, interview rubric, packet format, terminology, and approval path; keep candidate judgment with accountable people.",
     "inputsLabel": "Define the working context",
@@ -179,7 +174,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one assignment to a reusable Work Agent",
     "title": "Prove the Work Agent on one hiring deliverable before expanding its role.",
     "description": "A recruiting routine should expand only after recruiters confirm that its packets are accurate, job-related, and useful to interviewers.",
     "items": [
@@ -201,7 +195,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Human-controlled by design",
     "title": "Let the Work Agent prepare evidence. Keep employment decisions human.",
     "description": "The Work Agent may organize job-related evidence and draft materials; it must not infer protected traits, rank people, reject applicants, or make employment decisions.",
     "assistsTitle": "The Work Agent can help prepare",
@@ -257,7 +250,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Before the next interview",
     "title": "Make the interview packet evidence-led",
     "description": "Bring the approved role brief and candidate materials. Prepare structured questions and evidence notes; people make the hiring call.",
     "primaryCta": {

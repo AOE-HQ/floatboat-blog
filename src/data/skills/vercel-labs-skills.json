@@ -36,10 +36,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · React performance",
-        "zh": "Vercel Labs · React 性能"
-      },
       "title": {
         "en": "Vercel React Best Practices by Vercel Labs",
         "zh": "Vercel React Best Practices by Vercel Labs"
@@ -288,10 +284,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · Component design",
-        "zh": "Vercel Labs · 组件设计"
-      },
       "title": {
         "en": "Vercel Composition Patterns by Vercel Labs",
         "zh": "Vercel Composition Patterns by Vercel Labs"
@@ -540,10 +532,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · Mobile UI",
-        "zh": "Vercel Labs · 移动端 UI"
-      },
       "title": {
         "en": "Vercel React Native Skills by Vercel Labs",
         "zh": "Vercel React Native Skills by Vercel Labs"
@@ -792,10 +780,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · Interface motion",
-        "zh": "Vercel Labs · 界面动效"
-      },
       "title": {
         "en": "Vercel React View Transitions by Vercel Labs",
         "zh": "Vercel React View Transitions by Vercel Labs"
@@ -1044,10 +1028,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · UI review",
-        "zh": "Vercel Labs · UI 审查"
-      },
       "title": {
         "en": "Web Design Guidelines by Vercel Labs",
         "zh": "Web Design Guidelines by Vercel Labs"
@@ -1296,10 +1276,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · Docs review",
-        "zh": "Vercel Labs · 文档审查"
-      },
       "title": {
         "en": "Writing Guidelines by Vercel Labs",
         "zh": "Writing Guidelines by Vercel Labs"
@@ -1548,10 +1524,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · Deployment",
-        "zh": "Vercel Labs · 部署"
-      },
       "title": {
         "en": "Deploy to Vercel by Vercel Labs",
         "zh": "Deploy to Vercel by Vercel Labs"
@@ -1800,10 +1772,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · CLI authentication",
-        "zh": "Vercel Labs · CLI 认证"
-      },
       "title": {
         "en": "Vercel CLI with Tokens by Vercel Labs",
         "zh": "Vercel CLI with Tokens by Vercel Labs"
@@ -2052,10 +2020,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · Metrics-first audit",
-        "zh": "Vercel Labs · 指标优先审查"
-      },
       "title": {
         "en": "Vercel Optimize by Vercel Labs",
         "zh": "Vercel Optimize by Vercel Labs"
@@ -2304,10 +2268,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · Companion Skill",
-        "zh": "Vercel Labs · 配套 Skill"
-      },
       "title": {
         "en": "agent-browser Skill by Vercel Labs",
         "zh": "agent-browser Skill by Vercel Labs"

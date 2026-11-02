@@ -14,7 +14,6 @@ type PublisherCopy = {
   boundaryTitle: string;
   boundaryDescription: string;
   faq: Array<{ question: string; answer: string }>;
-  ctaEyebrow: string;
   ctaTitle: string;
   ctaDescription: string;
 };

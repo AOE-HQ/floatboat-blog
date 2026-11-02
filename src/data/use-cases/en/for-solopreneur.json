@@ -14,7 +14,6 @@
   },
   "breadcrumb": "Solopreneurs and one-person businesses",
   "hero": {
-    "eyebrow": "A Work Agent for the many roles behind a one-person business",
     "title": "A Work Agent for Solopreneurs",
     "description": "Give Floatboat a client request, a voice note, or a weekly operating goal. Your Work Agent uses approved files and methods in its workspace to prepare proposals, deliverables, follow-ups, and review-ready next steps while you keep control of every commitment.",
     "primaryCta": {
@@ -47,7 +46,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "The work between selling and delivering",
     "title": "Every role returns to the same person",
     "description": "A solopreneur switches between sales, delivery, operations, finance, and publishing without a colleague available to preserve context between those roles.",
     "items": [
@@ -74,7 +72,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "One agent across changing business roles",
     "title": "What your solopreneur Work Agent can prepare",
     "description": "The agent works inside a persistent workspace, using only the business context and instructions you provide.",
     "items": [
@@ -106,7 +103,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your business method remains the method",
     "title": "Teach the Work Agent how you sell and deliver",
     "description": "Give the agent the offer language, templates, naming rules, and review criteria that fit your business.",
     "inputsLabel": "Define the working context",
@@ -127,7 +123,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one assignment to a reliable routine",
     "title": "Start bounded; reuse only what earns your trust",
     "description": "A Work Agent becomes useful through reviewed assignments, not by taking over the business unattended.",
     "items": [
@@ -149,7 +144,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Owner-controlled by design",
     "title": "Delegate preparation, not ownership",
     "description": "The Work Agent can assemble and draft work; business judgment and external commitments stay with the owner.",
     "assistsTitle": "The Work Agent can prepare",
@@ -171,7 +165,6 @@
     "note": "Floatboat is a Work Agent operating in a user-controlled workspace. It does not independently run a business or replace professional, financial, or legal judgment."
   },
   "workflows": {
-    "eyebrow": "Three assignments for your Work Agent",
     "title": "Move client work from request to reviewed deliverable",
     "description": "Each assignment begins with business material you approve and returns an editable result for owner review.",
     "items": [
@@ -251,7 +244,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "The next client proposal",
     "title": "Draft the proposal without outsourcing the promise",
     "description": "Give the Work Agent the client brief and your template. You approve scope, pricing, and every reply before it goes out.",
     "primaryCta": {

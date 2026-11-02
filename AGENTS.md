@@ -64,3 +64,7 @@ CI (`npm run check:images` in `.github/workflows`) fails the PR if any png/jpeg 
 4. **Small updates ride the next big PR.** Do not open standalone PRs for small fixes (dead-link swaps, copy tweaks, doc corrections). Commit them to a ready branch and ship them together with the next substantial PR — the owner reviews one batch, not a trickle. (Exception: a production-breaking error may be hotfixed as its own PR — say so in the body.)
 5. **Shared working tree**: if multiple agent sessions use this repo concurrently, create a `git worktree` per session (`git worktree add ../<name> <branch>`) — one branch per worktree. Before committing, review your diff hunk-by-hunk: with a shared tree, another session's half-finished changes can end up inside your files.
 
+
+## Page heading labels
+
+Do not add decorative eyebrow, kicker, or overline text above H1–H6 on any web page, including blog, marketing, directories, cards, and CTA sections. Retired eyebrow fields must stay out of component props and content schemas. Keep meaningful categories in metadata below the title; keep actual operation step numbers, form labels, navigation, and status indicators in their proper roles.

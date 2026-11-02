@@ -53,7 +53,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "Seedance model characteristics", "zh": "Seedance 模型特点" },
     "title": {
       "en": "A video engine organized around shots, motion, and continuity.",
       "zh": "围绕镜头、运动与连续性组织的视频引擎。"
@@ -101,7 +100,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Live video engines", "zh": "已上线视频引擎" },
     "title": {
       "en": "Quality and speed variants inside one Combo.",
       "zh": "同一 Combo 中的质量版与快速版。"
@@ -138,7 +136,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "From brief to moving asset", "zh": "从简报到动态资产" },
     "title": {
       "en": "Build the video around the production decision that matters.",
       "zh": "围绕真正影响成片的制作决策构建视频。"
@@ -196,10 +193,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": {
-      "en": "Seedance in Floatboat",
-      "zh": "Seedance 在 Floatboat 中"
-    },
     "title": {
       "en": "Video controls presented as a production workflow.",
       "zh": "把视频控制组织成一条制作工作流。"
@@ -286,7 +279,6 @@
     }
   },
   "steps": {
-    "eyebrow": { "en": "Video workflow", "zh": "视频工作流" },
     "title": {
       "en": "Brief, generate, then review the moving result.",
       "zh": "明确简报、生成视频，再审阅动态结果。"

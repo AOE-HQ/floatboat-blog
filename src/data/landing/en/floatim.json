@@ -8,16 +8,14 @@
   },
   "breadcrumb": "FloatIM",
   "hero": {
-    "eyebrow": "Agent-native communication",
     "title": "One room for people, agents, and the work between them.",
     "description": "FloatIM gives every project a shared room where people can assign work, agents can coordinate, and completed artifacts stay beside the decisions that produced them.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=floatim&download_placement=hero" },
     "secondaryCta": { "label": "Read the FloatIM introduction", "href": "/blog/introducing-floatim" },
     "proof": ["Human and agent participants", "Shared project context", "Inspectable handoffs"]
   },
-  "demo": { "eyebrow": "A working room, not another inbox", "title": "Watch work move between specialists", "description": "See how a research task becomes a draft and then a reviewed deliverable without copying context between separate chats." },
+  "demo": {  "title": "Watch work move between specialists", "description": "See how a research task becomes a draft and then a reviewed deliverable without copying context between separate chats." },
   "features": {
-    "eyebrow": "Built around work",
     "title": "Conversation becomes an operating surface.",
     "description": "Each room holds the people, agents, context, and artifacts required to move one body of work forward.",
     "items": [
@@ -27,7 +25,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "A launch room",
     "title": "From scattered messages to one visible chain of work.",
     "description": "A launch that normally crosses chat, documents, and task trackers can run inside one shared room.",
     "steps": [
@@ -75,7 +72,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "One room, one work trail",
     "title": "Keep decisions beside the work they changed",
     "description": "Bring people, specialist agents, assignments, and finished artifacts into one project room so the next handoff has context.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=floatim&download_placement=final_cta" }

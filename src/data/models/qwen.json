@@ -44,7 +44,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "Qwen 3.7 Max model overview", "zh": "Qwen 3.7 Max 模型概览" },
     "title": {
       "en": "A long-text route prepared for Chinese and mixed source sets.",
       "zh": "为中文与混合资料集准备的长文本路径。"
@@ -89,7 +88,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Configured capacity", "zh": "已配置容量" },
     "title": {
       "en": "One registered model with a defined long-text role.",
       "zh": "一个已登记型号，对应明确的长文本定位。"
@@ -111,7 +109,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "Intended workload", "zh": "目标工作负载" },
     "title": {
       "en": "Prepared for documents that should not be reduced to isolated excerpts.",
       "zh": "面向不应被拆成孤立片段的长文档。"
@@ -169,7 +166,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": { "en": "Configured foundation", "zh": "已配置基础" },
     "title": {
       "en": "Long-text capacity and current access.",
       "zh": "长文本容量与当前访问状态。"

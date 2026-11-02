@@ -16,7 +16,6 @@
   },
   "breadcrumb": "teachers and education teams",
   "hero": {
-    "eyebrow": "A Work Agent for teaching preparation",
     "title": "A Work Agent for teachers and education teams",
     "description": "Assign Floatboat a teaching preparation task: it can organize approved materials, build coordinated lesson packs, draft class communications, and maintain a reviewable evidence record while educators retain every classroom decision.",
     "primaryCta": {
@@ -49,7 +48,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "The repetitive work around the profession",
     "title": "teachers and education teams should not spend their best hours rebuilding context.",
     "description": "A lesson rarely begins with a blank page. Teachers first reconcile curriculum goals, old materials, class needs, school formats, and the practical limits of the timetable.",
     "items": [
@@ -76,7 +74,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "What a teaching Work Agent can prepare",
     "title": "Assign the production work around teaching.",
     "description": "The Work Agent follows your curriculum, approved sources, school formats, and review points; it does not decide pedagogy or student support.",
     "items": [
@@ -113,7 +110,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "Three assignments for a teaching Work Agent",
     "title": "Give it preparation work with a clear classroom owner.",
     "description": "Each assignment begins with materials and rules you control, returns an inspectable teaching asset, and stops before educational judgment.",
     "items": [
@@ -159,7 +155,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your method remains the method",
     "title": "Teach the Work Agent your curriculum and school standards.",
     "description": "Configure the inputs, formats, terminology, and approval points for a class or school; the examples are starting points, not a prescribed method.",
     "inputsLabel": "Define the working context",
@@ -180,7 +175,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one task to a reusable system",
     "title": "Start with one bounded assignment. Teach the Work Agent only what proves useful.",
     "description": "A Work Agent can reuse a proven preparation method without turning teaching into unattended automation.",
     "items": [
@@ -202,7 +196,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Human-controlled by design",
     "title": "Let the Work Agent prepare materials—not make teaching decisions.",
     "description": "The Work Agent can assemble and adapt teaching materials, but educators decide accuracy, pedagogy, differentiation, safeguarding, and what students receive.",
     "assistsTitle": "Floatboat can help prepare",
@@ -258,7 +251,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "The next teaching unit",
     "title": "Assemble the lesson pack from trusted material",
     "description": "Bring curriculum standards, approved sources, and the class format. Review each worksheet and message before students see it.",
     "primaryCta": {

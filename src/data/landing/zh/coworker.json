@@ -8,7 +8,6 @@
   },
   "breadcrumb": "Coworker",
   "hero": {
-    "eyebrow": "Floatboat 中的 Work Agent",
     "title": "交代任务，收回完成的工作。",
     "description": "给 Floatboat Coworker 一个清晰结果、相关材料和审批边界。它在 Agent 工作站中执行任务，并返回你可以检查、修订或接受的交付物。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=hero" },
@@ -16,12 +15,10 @@
     "proof": ["按结果委派", "限定文件和工具", "可审阅的交付物"]
   },
   "demo": {
-    "eyebrow": "一项任务，一个负责到底的结果",
     "title": "交代工作，而不是逐步遥控",
     "description": "Coworker 把边界明确的委派转化为执行计划，使用获授权的项目资源，并带着指定产物返回。"
   },
   "features": {
-    "eyebrow": "为委派而设计",
     "title": "Work Agent 对从任务交代到交付的过程负责。",
     "description": "Coworker 是 Floatboat 中面向任务的 Agent 角色，不是工作空间本身，也不是无边界的聊天伙伴。",
     "items": [
@@ -31,7 +28,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "一份被委派的客户简报",
     "title": "交出任务，但不交出判断权。",
     "description": "边界明确的任务让 Coworker 有空间执行，同时让目标、资源和审批点保持清晰。",
     "steps": [
@@ -79,7 +75,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "交付目标先讲清楚",
     "title": "把交付任务交给 Work Agent，而不是反复写提示",
     "description": "提供源文件、预期成果和批准边界；收到交付稿后先检查修订，再决定是否采纳。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=final_cta" }

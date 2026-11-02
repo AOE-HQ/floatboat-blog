@@ -40,10 +40,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "",
-        "zh": ""
-      },
       "title": {
         "en": "HyperFrames Skill by HeyGen",
         "zh": "HyperFrames Skill by HeyGen"

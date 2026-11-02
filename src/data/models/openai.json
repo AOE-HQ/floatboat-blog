@@ -45,7 +45,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "OpenAI model characteristics", "zh": "OpenAI 模型特点" },
     "title": {
       "en": "Astra is the OpenAI route for high-stakes reasoning in the client.",
       "zh": "Astra 是客户端中承担高要求推理的 OpenAI 路径。"
@@ -93,7 +92,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Role-based lineup", "zh": "按角色选择" },
     "title": {
       "en": "Do not treat every GPT model as interchangeable.",
       "zh": "不要把所有 GPT 模型视为可以互换。"
@@ -145,7 +143,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "Outcome-based routes", "zh": "按交付结果选择路径" },
     "title": {
       "en": "Use the live OpenAI capability that matches the deliverable.",
       "zh": "根据交付物选择已经上线的 OpenAI 能力。"
@@ -206,7 +203,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": { "en": "OpenAI in Floatboat", "zh": "OpenAI 在 Floatboat 中" },
     "title": {
       "en": "One provider family, accurately separated by product surface.",
       "zh": "同一供应商系列，按产品入口准确区分。"
@@ -293,7 +289,6 @@
     }
   },
   "extensions": {
-    "eyebrow": { "en": "Choose by outcome", "zh": "按结果选择" },
     "title": {
       "en": "Reason, build, respond, or generate.",
       "zh": "推理、构建、快速响应或生成图像。"

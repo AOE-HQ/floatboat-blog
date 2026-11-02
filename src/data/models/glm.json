@@ -43,7 +43,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "GLM model overview", "zh": "GLM 模型概览" },
     "title": {
       "en": "A reasoning adapter prepared to preserve thinking-mode output.",
       "zh": "为保留 thinking-mode 输出准备的推理适配。"
@@ -94,7 +93,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Protocol adapters", "zh": "协议适配" },
     "title": {
       "en": "Two configured GLM model IDs.",
       "zh": "两个已完成适配的 GLM Model ID。"
@@ -125,7 +123,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "Protocol-level scenarios", "zh": "协议层场景" },
     "title": {
       "en": "The useful distinction is how reasoning survives the gateway.",
       "zh": "真正有用的区别是推理内容如何通过网关保留下来。"
@@ -183,7 +180,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": { "en": "Configured foundation", "zh": "已配置基础" },
     "title": {
       "en": "Protocol support and current access.",
       "zh": "协议支持与当前访问状态。"

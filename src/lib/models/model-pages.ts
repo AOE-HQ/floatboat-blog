@@ -44,7 +44,6 @@ export type ModelFamily = {
   hero: { title: Localized; description: Localized; prompts: Localized[] };
   facts: Array<{ label: Localized; value: Localized }>;
   positioning: {
-    eyebrow: Localized;
     title: Localized;
     description: Localized;
     traits: Array<{
@@ -54,13 +53,11 @@ export type ModelFamily = {
     }>;
   };
   lineup: {
-    eyebrow: Localized;
     title: Localized;
     description: Localized;
     items: Card[];
   };
   workflows: {
-    eyebrow: Localized;
     title: Localized;
     description: Localized;
     items: Array<{
@@ -71,7 +68,6 @@ export type ModelFamily = {
     }>;
   };
   capabilities: {
-    eyebrow: Localized;
     title: Localized;
     description: Localized;
     items: ContentItem[];
@@ -82,12 +78,10 @@ export type ModelFamily = {
     alternative: { title: Localized; items: Localized[] };
   };
   steps?: {
-    eyebrow: Localized;
     title: Localized;
     items: Array<{ title: Localized; description: Localized }>;
   };
   extensions?: {
-    eyebrow: Localized;
     title: Localized;
     items: Array<{ title: string; description: Localized }>;
   };

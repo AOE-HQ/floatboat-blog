@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { Breadcrumb } from "@/components/marketing/breadcrumb";
+
 import { BlogShell } from "@openblog/components";
 
 import { absoluteBlogIndexUrl, openGraphLocale } from "@/lib/locale-site";
@@ -47,29 +49,31 @@ export default function BlogIndexPage() {
   );
 
   return (
-    <BlogShell className="py-8 lg:py-12">
-      <BlogHero
-        siteName={site.name}
-        title="AI agents, models, and workflow guides"
-        description="Browse the complete Floatboat library: model analysis, agent architecture, automation workflows, file tools, and practical systems for solo operators."
-        articleCount={data.articleCount}
-        categories={data.categories}
-        locale="en"
-      />
+    <>
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }]} />
+      <BlogShell className="py-8 lg:py-12">
+        <BlogHero
+          title="AI agents, models, and workflow guides"
+          description="Browse the complete Floatboat library: model analysis, agent architecture, automation workflows, file tools, and practical systems for solo operators."
+          articleCount={data.articleCount}
+          categories={data.categories}
+          locale="en"
+        />
 
-      {data.featured ? (
-        <section className="mt-14 lg:mt-20" aria-label="Latest article">
-          <FeaturedBanner post={data.featured} />
-        </section>
-      ) : null}
+        {data.featured ? (
+          <section className="mt-14 lg:mt-20" aria-label="Latest article">
+            <FeaturedBanner post={data.featured} />
+          </section>
+        ) : null}
 
-      {libraryPosts.length > 0 ? (
-        <section className="mt-14 lg:mt-20" aria-label="Browse articles">
-          <TopicBrowser posts={libraryPosts} />
-        </section>
-      ) : null}
+        {libraryPosts.length > 0 ? (
+          <section className="mt-14 lg:mt-20" aria-label="Browse articles">
+            <TopicBrowser posts={libraryPosts} />
+          </section>
+        ) : null}
 
-      <MarketingBand />
-    </BlogShell>
+        <MarketingBand />
+      </BlogShell>
+    </>
   );
 }

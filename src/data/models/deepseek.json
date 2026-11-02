@@ -42,7 +42,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "DeepSeek model characteristics", "zh": "DeepSeek 模型特点" },
     "title": {
       "en": "A practical split between hard reasoning and fast throughput.",
       "zh": "在高难度推理与快速吞吐之间做务实分工。"
@@ -96,7 +95,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Depth versus efficiency", "zh": "深度与效率" },
     "title": {
       "en": "Two DeepSeek lanes for two cost profiles.",
       "zh": "两条 DeepSeek 路径，对应两种成本结构。"
@@ -127,7 +125,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "Two distinct lanes", "zh": "两条明确路径" },
     "title": {
       "en": "Match the reasoning budget to the failure risk.",
       "zh": "让推理投入与失败风险匹配。"
@@ -185,10 +182,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": {
-      "en": "DeepSeek in Floatboat",
-      "zh": "DeepSeek 在 Floatboat 中"
-    },
     "title": {
       "en": "Two selectable models, each with a clear job.",
       "zh": "两个可直接选择的型号，各自承担明确工作。"
@@ -272,7 +265,6 @@
     }
   },
   "extensions": {
-    "eyebrow": { "en": "Practical split", "zh": "实际分工" },
     "title": {
       "en": "Escalate only when the problem earns it.",
       "zh": "只有问题值得时，才升级推理强度。"

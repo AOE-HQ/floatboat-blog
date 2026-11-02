@@ -48,7 +48,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "Gemini model characteristics", "zh": "Gemini 模型特点" },
     "title": {
       "en": "An analyst for material that is too large or varied to inspect piecemeal.",
       "zh": "面对庞大或混合资料时，更像一位整体分析者。"
@@ -99,7 +98,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Two operating modes", "zh": "两种工作模式" },
     "title": {
       "en": "Pro absorbs more; Flash turns work around faster.",
       "zh": "Pro 处理更大输入，Flash 更快完成周转。"
@@ -157,7 +155,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "Context-heavy work", "zh": "上下文密集型工作" },
     "title": {
       "en": "Use Gemini when the source set is part of the problem.",
       "zh": "当资料规模本身就是问题的一部分时，使用 Gemini。"
@@ -215,7 +212,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": { "en": "Gemini in Floatboat", "zh": "Gemini 在 Floatboat 中" },
     "title": {
       "en": "Long context, mixed inputs, and a faster companion model.",
       "zh": "超长上下文、混合输入，以及一个更快的搭档。"
@@ -302,7 +298,6 @@
     }
   },
   "extensions": {
-    "eyebrow": { "en": "Decision rule", "zh": "选择原则" },
     "title": {
       "en": "Choose the bottleneck you need to remove.",
       "zh": "先判断需要消除的是哪种瓶颈。"

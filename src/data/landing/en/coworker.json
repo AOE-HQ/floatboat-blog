@@ -8,7 +8,6 @@
   },
   "breadcrumb": "Coworker",
   "hero": {
-    "eyebrow": "A Work Agent inside Floatboat",
     "title": "Delegate a task. Get back finished work.",
     "description": "Give the Floatboat Coworker a clear outcome, the relevant materials, and approval boundaries. It handles the task inside your Agent Workspace and returns a deliverable you can inspect, revise, or accept.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=hero" },
@@ -16,12 +15,10 @@
     "proof": ["Outcome-based delegation", "Scoped files and tools", "Reviewable deliverables"]
   },
   "demo": {
-    "eyebrow": "One task, one accountable result",
     "title": "Brief the work instead of steering every step",
     "description": "The Coworker turns a bounded assignment into an execution plan, uses approved project resources, and comes back with the requested artifact."
   },
   "features": {
-    "eyebrow": "Built for delegation",
     "title": "A Work Agent owns the task between brief and delivery.",
     "description": "Coworker is the task-facing role inside Floatboat—not the workspace itself and not an open-ended chat companion.",
     "items": [
@@ -31,7 +28,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "A delegated client brief",
     "title": "Hand off the assignment without handing away judgment.",
     "description": "A bounded task gives the Coworker room to execute while keeping the goal, resources, and approval points explicit.",
     "steps": [
@@ -79,7 +75,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "A brief with a finish line",
     "title": "Hand the Work Agent a deliverable, not a prompt",
     "description": "Provide the source files, expected output, and approval boundary; review the returned draft before it becomes final work.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=final_cta" }

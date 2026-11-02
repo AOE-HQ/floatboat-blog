@@ -14,7 +14,6 @@
   },
   "breadcrumb": "Studios and agencies",
   "hero": {
-    "eyebrow": "A Work Agent from client brief to delivery",
     "title": "A Work Agent for Studios and Agencies",
     "description": "Give Floatboat an approved brief, source assets, and the next production goal. Your Work Agent prepares plans, specialist handoffs, review sets, and delivery packages in a persistent project workspace while leads retain creative and client authority.",
     "primaryCta": {
@@ -47,7 +46,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "The coordination around creative work",
     "title": "A brief changes as it passes through the studio",
     "description": "Studios must preserve the client's intent while research, strategy, writing, design, production, and account review happen across different hands.",
     "items": [
@@ -74,7 +72,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "One assignment across specialist handoffs",
     "title": "What your studio Work Agent can prepare",
     "description": "The agent works inside the project workspace so briefs, source assets, dependencies, and review decisions stay connected.",
     "items": [
@@ -106,7 +103,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your studio method remains the method",
     "title": "Teach the Work Agent how each client project runs",
     "description": "Provide client standards, rights, naming rules, review stages, and discipline-specific instructions.",
     "inputsLabel": "Define the working context",
@@ -127,7 +123,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one handoff to a reusable production method",
     "title": "Prove the shared context on an active project",
     "description": "Reuse the method only when it reduces clarification and version errors without flattening specialist craft.",
     "items": [
@@ -149,7 +144,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Lead-controlled by design",
     "title": "Delegate coordination, not creative or client responsibility",
     "description": "The Work Agent can prepare and connect production work; specialists judge craft and leads approve what represents the studio.",
     "assistsTitle": "The Work Agent can prepare",
@@ -171,7 +165,6 @@
     "note": "Floatboat is a Work Agent for project preparation and coordination, not an autonomous agency or replacement for specialist, account, or project-lead judgment."
   },
   "workflows": {
-    "eyebrow": "Three assignments for a studio Work Agent",
     "title": "Preserve client intent through every handoff",
     "description": "The Work Agent connects project evidence and production work while specialists and project leads retain quality and client responsibility.",
     "items": [
@@ -251,7 +244,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "The next specialist handoff",
     "title": "Pass the approved brief without losing client intent",
     "description": "Bundle source assets, revisions, and open feedback for the next specialist. The creative lead reviews the production handoff.",
     "primaryCta": {

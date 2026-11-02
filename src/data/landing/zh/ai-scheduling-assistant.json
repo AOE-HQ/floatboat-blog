@@ -8,16 +8,14 @@
   },
   "breadcrumb": "AI 日程助理",
   "hero": {
-    "eyebrow": "Agent 工作空间中的日程能力",
     "title": "日历不应只提醒你工作，还应该触发工作。",
     "description": "把会议、截止时间和周期性时间块变成 Agent 可以准备、执行并跟进的任务，同时保留在同一个工作空间中。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=scheduling&download_placement=hero" },
     "secondaryCta": { "label": "对比 AI 日程助理", "href": "/zh/blog/best-ai-scheduling-assistants" },
     "proof": ["兼容现有日历", "提前准备任务", "需要时由人审批"]
   },
-  "demo": { "eyebrow": "让时间成为触发器", "title": "查看一个日程时间块如何变成准备好的工作", "description": "Floatboat 可以在事件前收集上下文、执行可重复步骤，并在事件结束后安排后续行动。" },
+  "demo": {  "title": "查看一个日程时间块如何变成准备好的工作", "description": "Floatboat 可以在事件前收集上下文、执行可重复步骤，并在事件结束后安排后续行动。" },
   "features": {
-    "eyebrow": "不止安排时间",
     "title": "让日程把时间与执行连接起来。",
     "description": "日历依旧保持熟悉，工作空间负责围绕它完成准备和后续处理。",
     "items": [
@@ -27,7 +25,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "每周复盘",
     "title": "日程到来时，相关工作已经准备完成。",
     "description": "无需打开日历后重新拼凑这一周，让 Agent 提前组织好复盘材料。",
     "steps": [
@@ -75,7 +72,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "日程到来之前",
     "title": "让下一条日程带着准备工作一起到来",
     "description": "把简报、资料和重复步骤连接到日程事件，让 Agent 在会议或截止时间前准备好可审阅的材料。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=scheduling&download_placement=final_cta" }

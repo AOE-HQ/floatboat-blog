@@ -46,7 +46,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "How AI model routing works", "zh": "AI 模型路由原理" },
     "title": {
       "en": "A dispatcher that removes model management from the job.",
       "zh": "把模型管理从任务中拿走的调度者。"
@@ -97,7 +96,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Routing signals", "zh": "路由依据" },
     "title": {
       "en": "Different work calls for different strengths.",
       "zh": "不同任务，需要不同能力。"
@@ -146,7 +144,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "Typical handoffs", "zh": "典型交接" },
     "title": {
       "en": "Give Auto the task before choosing the engine.",
       "zh": "先交代任务，再让畅用模式选择引擎。"
@@ -210,7 +207,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": { "en": "What Auto manages", "zh": "畅用模式管理什么" },
     "title": {
       "en": "Routing decisions that normally interrupt the work.",
       "zh": "接管那些原本会打断工作的模型决策。"
@@ -294,7 +290,6 @@
     }
   },
   "steps": {
-    "eyebrow": { "en": "How routing works", "zh": "路由方式" },
     "title": {
       "en": "One request, three decisions behind the scenes.",
       "zh": "一次请求，背后完成三步判断。"

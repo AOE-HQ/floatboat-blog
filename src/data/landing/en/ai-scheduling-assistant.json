@@ -8,16 +8,14 @@
   },
   "breadcrumb": "AI Scheduling Assistant",
   "hero": {
-    "eyebrow": "Scheduling inside an agent workspace",
     "title": "Your calendar should trigger work, not just remind you about it.",
     "description": "Turn meetings, deadlines, and recurring blocks into agent-ready tasks that can be prepared, executed, and followed up from the same workspace.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=scheduling&download_placement=hero" },
     "secondaryCta": { "label": "Compare scheduling assistants", "href": "/blog/best-ai-scheduling-assistants" },
     "proof": ["Works with existing calendars", "Prepares scheduled tasks", "Human approval where needed"]
   },
-  "demo": { "eyebrow": "Time becomes a trigger", "title": "See a scheduled block turn into prepared work", "description": "Floatboat can gather context before the event, run repeatable steps, and queue the follow-up after it ends." },
+  "demo": {  "title": "See a scheduled block turn into prepared work", "description": "Floatboat can gather context before the event, run repeatable steps, and queue the follow-up after it ends." },
   "features": {
-    "eyebrow": "Beyond booking",
     "title": "Scheduling connects time to execution.",
     "description": "The calendar remains familiar while the workspace handles the preparation and follow-through around it.",
     "items": [
@@ -27,7 +25,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "A weekly review",
     "title": "The event arrives with the work already prepared.",
     "description": "Instead of opening a calendar block and reconstructing the week, let the agent assemble the review package beforehand.",
     "steps": [
@@ -75,7 +72,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "When the event arrives",
     "title": "Turn the next calendar block into prepared work",
     "description": "Attach the brief, sources, and repeatable steps to the event so the agent can prepare work before the meeting or deadline.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=scheduling&download_placement=final_cta" }

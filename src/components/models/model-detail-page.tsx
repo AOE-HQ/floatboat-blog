@@ -76,7 +76,7 @@ export function ModelDetailPage({
         <span className="mx-2">/</span>
         <span>{model.name}</span>
       </nav>
-      <MarketingHero eyebrow={`${localize(model.badge, locale)} · Floatboat`} title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)} />
+      <MarketingHero title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)} />
       <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 lg:pb-24" aria-label={isZh ? "模型预览与入口" : "Model preview and access"}>
         <ModelPickerDemo model={model} locale={locale} />
         <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -119,10 +119,7 @@ export function ModelDetailPage({
       <section className="border-y border-black/[0.06] py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-              {localize(model.positioning.eyebrow, locale)}
-            </p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
               {localize(model.positioning.title, locale)}
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
@@ -132,12 +129,10 @@ export function ModelDetailPage({
           <div className="grid gap-5 sm:grid-cols-2">
             {model.positioning.traits.map((trait) => (
               <article key={trait.label.en} className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">
-                  {localize(trait.label, locale)}
-                </p>
-                <h3 className="mt-3 text-xl font-semibold">
+                <h3 className="text-xl font-semibold">
                   {localize(trait.value, locale)}
                 </h3>
+                <p className="mt-3 text-sm text-[var(--ob-color-muted)]">{localize(trait.label, locale)}</p>
                 <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">
                   {localize(trait.description, locale)}
                 </p>
@@ -150,10 +145,7 @@ export function ModelDetailPage({
       <section className="bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-              {localize(model.lineup.eyebrow, locale)}
-            </p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
               {localize(model.lineup.title, locale)}
             </h2>
             <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
@@ -163,17 +155,15 @@ export function ModelDetailPage({
           <div
             className={`grid gap-5 ${model.lineup.items.length === 4 ? "md:grid-cols-2 lg:grid-cols-4" : "md:grid-cols-3"}`}
           >
-            {model.lineup.items.map((item, index) => (
+            {model.lineup.items.map((item) => (
               <article
                 key={item.title}
                 className="rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-7 shadow-[var(--ob-shadow-raised)]"
               >
-                <span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-muted)]">
-                  0{index + 1} · {localize(item.label, locale)}
-                </span>
-                <h3 className="mt-8 break-words font-serif text-2xl tracking-tight">
+                <h3 className="break-words font-serif text-2xl tracking-tight">
                   {item.title}
                 </h3>
+                <p className="mt-3 text-sm text-[var(--ob-color-muted)]">{localize(item.label, locale)}</p>
                 <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">
                   {localize(item.description, locale)}
                 </p>
@@ -188,10 +178,7 @@ export function ModelDetailPage({
 
       <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
         <div className="mb-12 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-            {localize(model.workflows.eyebrow, locale)}
-          </p>
-          <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+          <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
             {localize(model.workflows.title, locale)}
           </h2>
           <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
@@ -231,10 +218,7 @@ export function ModelDetailPage({
       <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-              {localize(model.capabilities.eyebrow, locale)}
-            </p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
               {localize(model.capabilities.title, locale)}
             </h2>
             <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
@@ -296,10 +280,7 @@ export function ModelDetailPage({
       {model.steps && (
         <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
           <div className="mb-10 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-              {localize(model.steps.eyebrow, locale)}
-            </p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
               {localize(model.steps.title, locale)}
             </h2>
           </div>
@@ -325,10 +306,7 @@ export function ModelDetailPage({
         <section className="border-y border-black/[0.06] py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <div className="mx-auto mb-10 max-w-3xl text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-                {localize(model.extensions.eyebrow, locale)}
-              </p>
-              <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+              <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
                 {localize(model.extensions.title, locale)}
               </h2>
             </div>
@@ -419,7 +397,6 @@ export function ModelDetailPage({
       </section>
 
       <FinalCta
-        eyebrow={localize(model.badge, locale)}
         title={localize(model.finalCta.title, locale)}
         description={localize(model.finalCta.description, locale)}
         primary={model.access === "capacity"

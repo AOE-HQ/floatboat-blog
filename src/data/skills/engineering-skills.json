@@ -42,10 +42,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "",
-        "zh": ""
-      },
       "title": {
         "en": "Grill Me by Matt Pocock",
         "zh": "Grill Me by Matt Pocock"
@@ -388,10 +384,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "",
-        "zh": ""
-      },
       "title": {
         "en": "TDD by Matt Pocock",
         "zh": "TDD by Matt Pocock"
@@ -671,10 +663,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "",
-        "zh": ""
-      },
       "title": {
         "en": "Improve Codebase Architecture by Matt Pocock",
         "zh": "Improve Codebase Architecture by Matt Pocock"
@@ -944,10 +932,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "",
-        "zh": ""
-      },
       "title": {
         "en": "Diagnosing Bugs by Matt Pocock",
         "zh": "Diagnosing Bugs by Matt Pocock"
@@ -1217,10 +1201,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "",
-        "zh": ""
-      },
       "title": {
         "en": "Code Review by Matt Pocock",
         "zh": "Code Review by Matt Pocock"
@@ -1500,10 +1480,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "",
-        "zh": ""
-      },
       "title": {
         "en": "Handoff by Matt Pocock",
         "zh": "Handoff by Matt Pocock"
@@ -1775,10 +1751,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "",
-        "zh": ""
-      },
       "title": {
         "en": "Brainstorming by Jesse Vincent",
         "zh": "Brainstorming by Jesse Vincent"
@@ -2067,10 +2039,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "",
-        "zh": ""
-      },
       "title": {
         "en": "Systematic Debugging by Jesse Vincent",
         "zh": "Systematic Debugging by Jesse Vincent"

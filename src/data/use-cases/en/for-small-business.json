@@ -14,7 +14,6 @@
   },
   "breadcrumb": "Small business owners and teams",
   "hero": {
-    "eyebrow": "A Work Agent for the work between business systems",
     "title": "A Work Agent for Small Business",
     "description": "Assign Floatboat a customer request, operational handoff, or weekly review. Your Work Agent gathers approved context in its workspace and returns an editable work packet while staff retain authority over prices, policies, and external actions.",
     "primaryCta": {
@@ -47,7 +46,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "The gaps between business systems",
     "title": "Small teams lose time at every handoff",
     "description": "Customer, operations, finance, and scheduling systems each hold part of the truth, while staff still reconstruct the complete job by hand.",
     "items": [
@@ -74,7 +72,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "Operational preparation across a small team",
     "title": "What your small-business Work Agent can prepare",
     "description": "The agent works across approved files in its workspace without replacing your systems of record.",
     "items": [
@@ -106,7 +103,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your operating rules remain authoritative",
     "title": "Teach the Work Agent how your team handles a job",
     "description": "Provide current service data, templates, roles, policies, and escalation rules for each assignment.",
     "inputsLabel": "Define the working context",
@@ -127,7 +123,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one handoff to a shared operating routine",
     "title": "Start with a visible preparation task",
     "description": "Expand only after the team can review the inputs, outputs, and approval path.",
     "items": [
@@ -149,7 +144,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Team-controlled by design",
     "title": "Automate preparation, not business authority",
     "description": "The Work Agent can assemble cross-system context and draft next steps; authorized people make commitments and changes.",
     "assistsTitle": "The Work Agent can prepare",
@@ -171,7 +165,6 @@
     "note": "Floatboat is a Work Agent working from permissions you configure. It does not replace business systems, authorized staff, or accountable owner judgment."
   },
   "workflows": {
-    "eyebrow": "Three assignments for a small-business Work Agent",
     "title": "Prepare the work that crosses roles and systems",
     "description": "The Work Agent organizes approved business information and stops before customer, financial, or policy commitments are made.",
     "items": [
@@ -251,7 +244,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "The next customer handoff",
     "title": "Turn one customer request into a clean work packet",
     "description": "Add the request, current policy, and responsible owner. Review the handoff without letting the agent set prices or contact customers.",
     "primaryCta": {
