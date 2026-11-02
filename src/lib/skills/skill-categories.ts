@@ -13,7 +13,7 @@ type Category = {
   seo: Record<SkillLocale, CategoryCopy>;
   hero: Record<SkillLocale, CategoryCopy>;
   intro: Localized;
-  cta: Record<SkillLocale, { eyebrow: string; title: string; description: string }>;
+  cta: Record<SkillLocale, { title: string; description: string }>;
   skills: string[];
   decisions: Array<Record<SkillLocale, CategoryCopy>>;
   faq: Record<SkillLocale, Array<{ question: string; answer: string }>>;

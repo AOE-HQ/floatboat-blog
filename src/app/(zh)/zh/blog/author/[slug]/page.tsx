@@ -1,3 +1,5 @@
+import { FaqBand } from "@/components/faq-band";
+import { getAuthorFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -97,6 +99,7 @@ export default async function ZhAuthorPage({ params }: PageProps) {
         posts={posts}
         description={`${authorName} 共 ${posts.length} 篇文章。`}
       />
+      <FaqBand locale="zh" title={`${authorName} 文章中的主题问答`} description="从本页收录的文章中选读主题问答，可沿每条出处继续查看完整解释与发布背景。" items={getAuthorFaqs(slug, "zh", posts)} />
     </>
   );
 }

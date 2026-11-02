@@ -8,16 +8,20 @@
   },
   "breadcrumb": "AI File Organizer",
   "hero": {
-    "eyebrow": "Local file organization",
     "title": "Describe the order you want. Preview it before anything moves.",
     "description": "Let Floatboat inspect a messy folder, propose a useful structure, and apply only the renames and moves you approve—directly on your computer.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=hero" },
-    "secondaryCta": { "label": "See how AI organizers work", "href": "/blog/what-is-an-ai-file-organizer" },
     "proof": ["Runs on local folders", "Preview before execution", "Per-file results"]
   },
-  "demo": { "eyebrow": "A reversible workflow", "title": "Inspect the proposed structure before applying it", "description": "The organizer separates analysis from execution so you can correct categories and naming rules before files change." },
+  "demo": {
+    "title": "Inspect the proposed structure before applying it",
+    "description": "The organizer separates analysis from execution so you can correct categories and naming rules before files change.",
+    "relatedLink": {
+      "label": "See how AI organizers work",
+      "href": "/blog/what-is-an-ai-file-organizer"
+    }
+  },
   "features": {
-    "eyebrow": "Organize with context",
     "title": "More than moving files by extension.",
     "description": "Floatboat can use filenames, folder context, and document content to propose a structure that reflects the work itself.",
     "items": [
@@ -27,7 +31,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "A crowded Downloads folder",
     "title": "Turn a mixed folder into a structure you can trust.",
     "description": "The organizer can identify what belongs together, flag uncertain files, and leave you with an auditable result.",
     "steps": [
@@ -68,14 +71,24 @@
   "faq": {
     "title": "File Organizer questions",
     "items": [
-      { "question": "Does the organizer upload my files?", "answer": "The workflow is designed around local folders on your computer. You choose the scope and can review the plan before approved file operations run." },
+      {
+        "question": "Does organizing local files mean no data leaves my device?",
+        "answer": "No. File operations can take place locally while selected content is sent to a model or connected service. Check the provider, tool permissions, and material involved before using sensitive files; a local folder alone is not a privacy guarantee."
+      },
       { "question": "Can it rename and move files together?", "answer": "Yes. A single approved plan can create folders, rename files, and move them into the proposed structure while reporting the result per file." },
       { "question": "What happens when the agent is unsure?", "answer": "Uncertain matches should be surfaced for review rather than silently forced into a category. You can correct the plan before execution." },
-      { "question": "Can I reuse an organization system?", "answer": "Yes. A successful rule can become a reusable workflow for recurring exports, client onboarding, downloads, or project archives." }
+      { "question": "Can I reuse an organization system?", "answer": "Yes. A successful rule can become a reusable workflow for recurring exports, client onboarding, downloads, or project archives." },
+      {
+        "question": "How should possible duplicate files be handled?",
+        "answer": "Keep deletion out of the first organization pass. Review content, version history, and project references before deciding that two similar names identify the same file; retain uncertain candidates for a separate check."
+      },
+      {
+        "question": "How can I avoid breaking references when renaming a project folder?",
+        "answer": "Start with a small copy or noncritical subset, identify documents and applications that refer to the old paths, and review proposed moves before applying them. A cleaner folder tree is not useful if it breaks links or working project files."
+      }
     ]
   },
   "finalCta": {
-    "eyebrow": "Before files move",
     "title": "Approve the folder plan before it changes files",
     "description": "Point Floatboat at a messy folder, inspect proposed groups and renames, then apply only the moves you approve locally.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=final_cta" }

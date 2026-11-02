@@ -39,21 +39,25 @@ function CapabilityVisual({ title, context }: { title: string; context: Capabili
 }
 
 
+/**
+ * Shared capability introduction, distinct from user scenarios and operation guides.
+ * Pages provide their own copy, links, and preview context. Desktop rows alternate
+ * automatically; mobile keeps text before the illustration. No fixed item count.
+ */
 export function CapabilitiesSection({ id, title, description, items, context }: { id?: string; title: string; description: string; items: CapabilityItem[]; context: CapabilityContext }) {
+  if (items.length === 0) return null;
   const isZh = context.locale === "zh";
   const lowerFirst = (value: string) => value.charAt(0).toLowerCase() + value.slice(1);
   return <section id={id} aria-labelledby={id ? `${id}-title` : undefined} className="border-y border-black/[0.06] py-20 sm:py-28">
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
       <div className="mx-auto mb-16 max-w-3xl text-center">
-
-        <h2 id={id ? `${id}-title` : undefined} className="mt-3 font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(title)}</h2>
+        <h2 id={id ? `${id}-title` : undefined} className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(title)}</h2>
         <p className="mt-5 text-lg leading-7 text-[var(--ob-color-text-subtle)]">{description}</p>
       </div>
 
-      <div className="space-y-16 sm:space-y-24">{items.map(({ title, href, description, supporting, anchorText, linkTitle }, index) => <article key={title} className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+      <div className="space-y-16 sm:space-y-24">{items.map(({ title, href, description, supporting, anchorText, linkTitle }, index) => <article key={href} className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
         <div className={index % 2 ? "lg:order-2" : ""}>
-
-          <h3 className="mt-3 font-serif text-3xl sm:text-4xl">{linkTitle ? <Link href={href} className="hover:underline underline-offset-4">{titleCase(title)}</Link> : titleCase(title)}</h3>
+          <h3 className="font-serif text-3xl sm:text-4xl">{linkTitle ? <Link href={href} className="hover:underline underline-offset-4">{titleCase(title)}</Link> : titleCase(title)}</h3>
           <div className="mt-5 max-w-xl space-y-3 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
             <p>{anchorText ? (isZh ? <><Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{anchorText}</Link>，{description}</> : <><Link href={href} className="font-semibold text-[var(--ob-color-text)] underline decoration-black/20 underline-offset-4 transition hover:decoration-black">{anchorText}</Link> can {lowerFirst(description)}</>) : description}</p>
             {supporting && <p>{supporting}</p>}

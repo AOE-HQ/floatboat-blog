@@ -36,10 +36,6 @@
       }
     },
     "hero": {
-      "eyebrow": {
-        "en": "Vercel Labs · Meta-skill",
-        "zh": "Vercel Labs · 元 Skill"
-      },
       "title": {
         "en": "Find Skills by Vercel Labs",
         "zh": "Find Skills by Vercel Labs"

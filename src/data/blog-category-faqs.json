@@ -1,0 +1,380 @@
+{
+  "ai-agents": {
+    "en": [
+      {
+        "question": "Is a model the same thing as an agent?",
+        "answer": "A model generates or interprets content. An agent adds an execution loop, tools, state, and stopping or approval rules around model calls. Start with this distinction before comparing agent products."
+      },
+      {
+        "question": "When should I read about a harness instead of an agent builder?",
+        "answer": "Read harness material when your question concerns context assembly, tool execution, recovery, or permissions. Builder comparisons are more useful when choosing an interface for composing and operating a workflow."
+      },
+      {
+        "question": "What makes an agent workflow testable?",
+        "answer": "Specify the source set, permitted actions, expected artifact, and acceptance checks. A final chat message is weak evidence if the task was to change a file, verify a repository, or prepare a cited report."
+      },
+      {
+        "question": "Do more subagents always improve a result?",
+        "answer": "No. Parallel work helps when tasks can be separated and their results checked. Shared mutable files, duplicated research, and inconsistent assumptions can add coordination cost instead."
+      },
+      {
+        "question": "Why do agent guides discuss approvals as well as tools?",
+        "answer": "Tool access establishes what can be attempted; approval boundaries establish which actions may proceed. Reading a source and sending a message have different consequences even if both use a connector."
+      },
+      {
+        "question": "Which failure should I examine before expanding an agent workflow?",
+        "answer": "Check where the run loses evidence, misinterprets an instruction, or stops recovering from a tool error. Fix the smallest repeatable failure before adding more tools or extending the task."
+      }
+    ],
+    "zh": [
+      {
+        "question": "模型就是 Agent 吗？",
+        "answer": "模型负责生成或理解内容，Agent 则在模型调用外组织执行循环、工具、状态和停止或审批规则。比较 Agent 产品前，应先分清这两个层次。"
+      },
+      {
+        "question": "什么时候应该看 Harness，而不是 Agent Builder？",
+        "answer": "问题涉及上下文组织、工具执行、失败恢复或权限时，优先看 Harness。需要选择搭建和运行工作流的界面时，再看 Agent Builder 对比。"
+      },
+      {
+        "question": "怎样的 Agent 工作流才方便验证？",
+        "answer": "明确资料范围、允许操作、预期文件和验收方法。任务如果是修改文件、检查代码库或制作有出处的报告，最后一条聊天消息不能替代实际成果。"
+      },
+      {
+        "question": "Subagent 越多，结果就越好吗？",
+        "answer": "不一定。任务可拆分、结果可核验时，并行才有帮助；共同修改文件、重复调研或使用不同假设，反而会增加协调成本。"
+      },
+      {
+        "question": "为什么 Agent 指南既讲工具，也讲审批？",
+        "answer": "工具权限决定能够尝试什么，审批边界决定哪些操作可以继续。即使用同一个连接器，读取资料与发送消息也有不同后果。"
+      },
+      {
+        "question": "扩展 Agent 工作流前，应该先查哪类失败？",
+        "answer": "先找执行中丢失证据、误解指令或无法从工具错误恢复的具体位置。修复最小且可复现的问题，再增加工具或扩大任务。"
+      }
+    ]
+  },
+  "calendar-ai": {
+    "en": [
+      {
+        "question": "How is a calendar agent different from an event reminder?",
+        "answer": "A reminder surfaces time and context. An agent workflow may prepare a brief or continue a task around the event, so it also needs files, instructions, an output, and review boundaries."
+      },
+      {
+        "question": "Should I import an ICS file or subscribe to a calendar feed?",
+        "answer": "Importing creates a snapshot. Subscription uses a feed that a calendar client can refresh; how quickly updates appear depends on the client and feed. Choose based on whether the schedule is expected to change."
+      },
+      {
+        "question": "Why can the same event show different dates in different calendars?",
+        "answer": "A time-zone conversion can cross midnight. Check the event time zone, your calendar display setting, and daylight-saving rules before treating a different displayed date as an error."
+      },
+      {
+        "question": "What belongs in a meeting-preparation brief?",
+        "answer": "Include the meeting objective, agenda, participants, relevant source documents, open decisions, and the output expected before the meeting. Keep uncertain notes separate from confirmed decisions."
+      },
+      {
+        "question": "How should follow-up actions be reviewed?",
+        "answer": "Check the agreed owner, deadline, recipient, and wording against meeting evidence. Drafting a follow-up and sending it are separate steps; a summary alone should not authorize a new external commitment."
+      },
+      {
+        "question": "What should happen when a recurring event is moved or cancelled?",
+        "answer": "Define which preparation task remains useful, which output should be discarded, and who resolves stale work. Repeating a trigger without checking the changed event can produce an outdated brief or duplicate follow-up."
+      }
+    ],
+    "zh": [
+      {
+        "question": "日历 Agent 与日程提醒有什么区别？",
+        "answer": "提醒负责提示时间和背景；Agent 工作流还可能在日程前后准备简报或继续任务，因此需要资料、指令、输出要求和审阅边界。"
+      },
+      {
+        "question": "应该导入 ICS 文件，还是订阅日历源？",
+        "answer": "导入得到的是一份快照；订阅使用客户端能够刷新的日历源，更新速度取决于客户端和源。赛程或计划可能变化时，应考虑后续更新需求。"
+      },
+      {
+        "question": "同一个日程，为什么在不同日历里显示不同日期？",
+        "answer": "时区转换可能跨过午夜。先检查事件时区、日历显示设置和夏令时规则，再判断日期差异是否为错误。"
+      },
+      {
+        "question": "会前简报应该包含什么？",
+        "answer": "包括会议目标、议程、参会者、参考文件、待决事项和会前需要完成的成果。尚未确认的笔记，应与已经作出的决定分开。"
+      },
+      {
+        "question": "会后跟进事项应该怎样审阅？",
+        "answer": "根据会议证据核对负责人、期限、收件人和措辞。起草与发送是两个步骤，不能仅凭一份摘要就作出新的对外承诺。"
+      },
+      {
+        "question": "周期日程改期或取消后，应怎样处理相关任务？",
+        "answer": "事先约定哪些准备工作仍有用、哪些产出应作废，以及由谁处理过期任务。只重复触发、不核对日程变化，容易生成旧简报或重复跟进。"
+      }
+    ]
+  },
+  "file-management": {
+    "en": [
+      {
+        "question": "Should I organize files by extension, project, or business meaning?",
+        "answer": "Use the structure that makes retrieval reliable. Extensions work for format cleanup; project or client grouping is better when several formats belong to one assignment. Test the scheme on a small folder before applying it broadly."
+      },
+      {
+        "question": "Can a similar filename establish that a file is a duplicate?",
+        "answer": "No. Compare content, version, and the role the file plays in a project. A signed contract and its draft may share most of a filename while requiring separate retention."
+      },
+      {
+        "question": "Why should I preview a rename plan?",
+        "answer": "A preview lets you inspect original paths, proposed paths, collisions, and uncertain matches before changes happen. It is especially useful when folders are referenced by documents, software, or shared workflows."
+      },
+      {
+        "question": "Does local file organization guarantee local-only AI processing?",
+        "answer": "No. Moving a file can happen on the device while a model request uses a remote provider. Trace the actual content sent, provider settings, and tool permissions before handling confidential material."
+      },
+      {
+        "question": "What makes a file naming rule useful over time?",
+        "answer": "Keep stable project identifiers, dates with a clear meaning, and deliberate version markers. Avoid ambiguous “final” suffixes and do not encode facts that are likely to change into every filename."
+      },
+      {
+        "question": "How should a folder cleanup be verified?",
+        "answer": "Compare the planned and actual paths, inspect skipped or failed operations, and open representative files from their new locations. Preserve a recoverable copy before making a large change."
+      }
+    ],
+    "zh": [
+      {
+        "question": "文件应该按格式、项目，还是业务含义分类？",
+        "answer": "以之后能否找回为标准。按扩展名适合清理格式，多个格式共同服务一项任务时，按项目或客户更合适。先在小文件夹中试用，再扩大范围。"
+      },
+      {
+        "question": "文件名相似，就能认定是重复文件吗？",
+        "answer": "不能。还要比较内容、版本和项目用途。签署合同与草稿即使文件名大部分相同，也可能需要分别保留。"
+      },
+      {
+        "question": "为什么批量重命名前要看预览？",
+        "answer": "预览便于逐项检查原路径、新路径、重名冲突和不确定匹配。文件夹被文档、软件或共享流程引用时，这一步尤其必要。"
+      },
+      {
+        "question": "本地整理文件，就能保证 AI 完全在本地处理吗？",
+        "answer": "不能。移动文件可以在设备上完成，而模型请求仍可能使用远程服务。处理机密资料前，应核对实际发送的内容、提供方设置和工具权限。"
+      },
+      {
+        "question": "怎样的命名规则更适合长期使用？",
+        "answer": "使用稳定的项目标识、含义明确的日期和有意维护的版本号。避免含糊的“最终版”后缀，也不要把经常变化的信息写进每个文件名。"
+      },
+      {
+        "question": "整理结束后，怎样验证文件夹？",
+        "answer": "对比计划路径与实际路径，检查跳过或失败的操作，并从新位置打开有代表性的文件。大规模改动前应保留可恢复的副本。"
+      }
+    ]
+  },
+  "model-benchmarks": {
+    "en": [
+      {
+        "question": "Can a leaderboard replace testing on my own task?",
+        "answer": "A benchmark isolates particular conditions. Your workflow may depend on different documents, tools, languages, and review standards, so use a representative assignment before adopting a ranking as a decision."
+      },
+      {
+        "question": "Which cost belongs in a model comparison?",
+        "answer": "Include failed attempts, repeated context, tool steps, and human revision as well as model usage. A lower unit price can still produce a more expensive accepted deliverable."
+      },
+      {
+        "question": "What does a long context window fail to prove?",
+        "answer": "It does not establish accurate retrieval or reasoning across every supplied source. Test cross-references, contradictory evidence, and details far from the main summary."
+      },
+      {
+        "question": "Why do model IDs and version dates matter?",
+        "answer": "A family name can cover multiple snapshots or endpoints. Record the exact ID and access conditions when reproducing a comparison, especially when a preview is replaced or a provider changes routing."
+      },
+      {
+        "question": "Should text, image, and video models share one evaluation rubric?",
+        "answer": "Only for shared business outcomes. Text accuracy, visual composition, motion continuity, and audio alignment need different checks; combine them only after each output type has its own acceptance criteria."
+      },
+      {
+        "question": "How do I distinguish a vendor claim from a reproduced result?",
+        "answer": "Read who ran the test, which version and settings were used, and whether the task and grading method are disclosed. A reported score and an independently repeated workflow are different kinds of evidence."
+      }
+    ],
+    "zh": [
+      {
+        "question": "榜单能替代自己的任务测试吗？",
+        "answer": "基准测试只覆盖特定条件。你的流程可能使用不同文档、工具、语言和审阅标准，应先测试有代表性的任务，再决定榜单结论是否适用。"
+      },
+      {
+        "question": "比较模型时，应计算哪些成本？",
+        "answer": "除了模型用量，还应考虑失败重试、重复上下文、工具步骤和人工返工。单价更低，不一定意味着得到一份可接受成果的总成本更低。"
+      },
+      {
+        "question": "长上下文窗口不能证明什么？",
+        "answer": "不能证明模型会准确提取并推理所有材料。还需要检查交叉引用、矛盾证据，以及距离摘要主题较远的细节。"
+      },
+      {
+        "question": "为什么要记录模型 ID 和版本日期？",
+        "answer": "同一个系列名可能包含多个快照或端点。复现实验时应记录准确 ID 和接入条件，尤其要留意预览版替换或提供方路由变化。"
+      },
+      {
+        "question": "文本、图片与视频模型能用同一套标准评价吗？",
+        "answer": "业务目标可以共用，但文本准确性、画面构图、动作连续性和音画配合需要不同检查。先为各类产出设定验收标准，再做综合判断。"
+      },
+      {
+        "question": "怎样区分厂商声明与复现结果？",
+        "answer": "查看测试由谁执行、采用什么版本和设置，以及是否公开任务和评分方法。转述的成绩与独立重复执行的工作流，是不同层次的证据。"
+      }
+    ]
+  },
+  "product-updates": {
+    "en": [
+      {
+        "question": "How do I tell whether an announcement describes a product or a model?",
+        "answer": "Look at what is released: a model endpoint, an application, a protocol, or a workflow feature. Similar names can refer to different layers and do not establish interchangeable access."
+      },
+      {
+        "question": "Does an announced feature mean I can use it immediately?",
+        "answer": "Check rollout eligibility, region, plan, platform, and whether the release is a preview. A public announcement can precede general access or appear in one interface before another."
+      },
+      {
+        "question": "What should I verify before replacing an existing workflow after an update?",
+        "answer": "Check input formats, retained context, tool permissions, output compatibility, and recovery behavior using a small representative task. A new feature name does not establish migration equivalence."
+      },
+      {
+        "question": "How should I read an older release article?",
+        "answer": "Use it to understand the change at the time, then follow the official source for current availability and limitations. Do not silently treat a historical launch date as the state of the product today."
+      },
+      {
+        "question": "Are integrations mentioned in an update automatically enabled?",
+        "answer": "No. Installation, account authorization, tool configuration, and product support are separate conditions. Verify the exact entry point and permissions rather than inferring access from a logo or partnership."
+      },
+      {
+        "question": "What evidence is useful when trying a newly released capability?",
+        "answer": "Keep the release source, test date, environment, input, and observed output together. Separate what you personally reproduced from examples shown in a launch demonstration."
+      }
+    ],
+    "zh": [
+      {
+        "question": "怎样判断发布的是产品还是模型？",
+        "answer": "查看实际发布物是模型端点、应用、协议，还是工作流功能。名字相似可能只是命名关系，并不意味着接入方式可以互换。"
+      },
+      {
+        "question": "宣布了新功能，就代表我现在能用吗？",
+        "answer": "还要检查开放资格、地区、套餐、平台，以及是否为预览版。公开发布可能早于全面开放，也可能先在某个界面出现。"
+      },
+      {
+        "question": "更新后准备替换旧流程，应先验证什么？",
+        "answer": "用小型代表任务检查输入格式、上下文保留、工具权限、输出兼容性和失败恢复。新功能名称并不能证明可以等价替换原流程。"
+      },
+      {
+        "question": "怎样阅读较早的发布文章？",
+        "answer": "先理解当时发生的变化，再沿官方来源核对当前开放范围和限制。不能把历史发布时的状态，直接当作产品今天的状态。"
+      },
+      {
+        "question": "更新中提到集成，就代表已经自动启用了吗？",
+        "answer": "不代表。安装、账号授权、工具配置和产品支持是不同条件。应核对具体入口与权限，不能看到标志或合作消息就推断已经接通。"
+      },
+      {
+        "question": "试用刚发布的能力时，应该留下哪些证据？",
+        "answer": "一起保存发布来源、测试日期、环境、输入和实际输出，并区分自己复现的结果与发布演示中的案例。"
+      }
+    ]
+  },
+  "solo-operators": {
+    "en": [
+      {
+        "question": "Which solo-business task is a good first automation candidate?",
+        "answer": "Choose a recurring deliverable with accessible sources and a clear reviewer: for example, a client brief or a weekly operating summary. Avoid starting with an open-ended request to run the entire business."
+      },
+      {
+        "question": "How do I tell whether automation actually saves time?",
+        "answer": "Measure accepted output, correction time, maintenance, and exceptional cases. Count the full loop from preparing inputs to approving the result rather than only the generation step."
+      },
+      {
+        "question": "What should remain a human decision in a one-person workflow?",
+        "answer": "Keep pricing commitments, client promises, sensitive disclosures, and final acceptance under explicit control. Drafting evidence for a decision is different from making the commitment on your behalf."
+      },
+      {
+        "question": "Do I need a new tool for every specialist task?",
+        "answer": "Map the work before adding software. Reusable instructions, a well-maintained source folder, and a consistent output contract may solve a recurring problem without introducing another disconnected system."
+      },
+      {
+        "question": "How can I prevent one client project from contaminating another?",
+        "answer": "Separate approved files, terminology, instructions, and destinations by engagement. Review the source set before delegating work and check the finished artifact for names or details carried over from another client."
+      },
+      {
+        "question": "When should a successful one-off task become a reusable workflow?",
+        "answer": "After you can explain the inputs, steps, acceptance checks, and failure cases. Preserve the method and examples, then test the next real instance before assuming the routine can run unattended."
+      }
+    ],
+    "zh": [
+      {
+        "question": "一人业务应该先自动化哪项任务？",
+        "answer": "选择资料明确、有审阅标准的周期交付，例如客户简报或周经营摘要。不要从“替我经营整个业务”这类没有边界的目标开始。"
+      },
+      {
+        "question": "怎样判断自动化是否真的节省时间？",
+        "answer": "统计可接受成果、修改时间、维护和异常处理，计算从准备输入到批准结果的完整流程，而不只看生成用了多久。"
+      },
+      {
+        "question": "一人工作流中，哪些决定仍应由人负责？",
+        "answer": "报价承诺、客户约定、敏感信息披露和最终验收应保持明确控制。为决定准备依据，与代表你作出承诺是两回事。"
+      },
+      {
+        "question": "每项专业任务都需要新工具吗？",
+        "answer": "先梳理工作，再增加软件。可复用指令、维护良好的资料文件夹和一致的输出要求，可能已经足以解决周期问题，无需再引入一个孤立系统。"
+      },
+      {
+        "question": "怎样避免一个客户项目混入另一个项目？",
+        "answer": "按客户分别管理核准文件、术语、指令和交付位置。委派前核对资料范围，完成后检查是否带入了其他客户的名称或细节。"
+      },
+      {
+        "question": "一次任务成功后，什么时候适合固化成工作流？",
+        "answer": "能说清输入、步骤、验收和失败情况之后。保存方法与示例，再用下一次真实任务验证，不要因为成功过一次就默认可以无人值守。"
+      }
+    ]
+  },
+  "tool-comparisons": {
+    "en": [
+      {
+        "question": "How should I narrow a shortlist before comparing features?",
+        "answer": "Write down the work that must be completed, the environment it runs in, and the output someone must accept. Eliminate tools that cannot meet those conditions before comparing long feature lists."
+      },
+      {
+        "question": "Can two tools be alternatives if they work at different layers?",
+        "answer": "Sometimes they address the same user need through different architectures. A coding terminal, an IDE assistant, and a persistent workspace can overlap in outcomes without offering the same interface or execution model."
+      },
+      {
+        "question": "What belongs in a realistic switching-cost estimate?",
+        "answer": "Include moving source material, rebuilding rules and connectors, retraining habits, and verifying old deliverables. Subscription price alone omits much of the cost of changing a working system."
+      },
+      {
+        "question": "How do I compare privacy claims across AI tools?",
+        "answer": "Trace where inputs go, which model and connector receive them, and what permissions or retention controls are available. Labels such as desktop or local-first are not complete descriptions of the data path."
+      },
+      {
+        "question": "Should I choose the tool with the most integrations?",
+        "answer": "Only if those integrations support the actions you need. Check read versus write access, required authorization, error handling, and whether the workflow can stop for review before an external change."
+      },
+      {
+        "question": "What is a fair trial when comparing two agent products?",
+        "answer": "Give both the same source material, required deliverable, permissions, and review criteria. Keep failed attempts and repair work in the comparison rather than selecting each tool’s best demonstration."
+      }
+    ],
+    "zh": [
+      {
+        "question": "比较功能前，怎样缩小候选范围？",
+        "answer": "先写清必须完成的任务、运行环境和需要验收的成果。先排除无法满足这些条件的工具，再比较功能清单。"
+      },
+      {
+        "question": "不同层次的工具也能互为替代品吗？",
+        "answer": "有时可以，它们可能用不同架构解决同一需求。编程终端、IDE 助手和持续工作空间的结果可能重叠，但界面与执行方式并不相同。"
+      },
+      {
+        "question": "真实的迁移成本应包含什么？",
+        "answer": "包括迁移资料、重建规则与连接器、调整操作习惯，以及检查已有交付物。只比较订阅价格，会漏掉更换工作系统的大量成本。"
+      },
+      {
+        "question": "怎样比较 AI 工具的隐私声明？",
+        "answer": "核对输入会到哪里、由哪些模型和连接器接收，以及有哪些权限和保留设置。桌面端或本地优先等标签，不能完整说明数据流向。"
+      },
+      {
+        "question": "集成最多的工具就最合适吗？",
+        "answer": "要看集成是否支持你需要的操作。核对读写权限、授权要求、错误处理，以及对外改动前能否停下供人审阅。"
+      },
+      {
+        "question": "怎样公平试用两个 Agent 产品？",
+        "answer": "提供相同资料、交付要求、权限和审阅标准，把失败与修复过程也记入比较，而不是只挑各自最好的一次演示。"
+      }
+    ]
+  }
+}

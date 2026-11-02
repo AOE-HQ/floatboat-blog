@@ -72,10 +72,12 @@ export function FaqBand({
   items,
   locale,
   title,
+  description,
 }: {
   items: FaqItem[];
   locale: "en" | "zh";
   title?: string;
+  description?: string;
 }) {
   if (items.length === 0) {
     return null;
@@ -98,6 +100,7 @@ export function FaqBand({
             <h2 className="mb-8 text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] md:text-3xl">
               {title ?? FAQ_TITLES[locale]}
             </h2>
+            {description && <p className="mb-8 max-w-3xl text-base leading-7 text-[var(--ob-color-muted)] md:text-lg">{description}</p>}
             <div className="divide-y divide-[var(--ob-color-border)]">
               {items.map((item, index) => (
                 <details key={index} name="faq" className="group">

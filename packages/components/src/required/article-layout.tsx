@@ -13,7 +13,6 @@ import {
 } from "@openblog/core";
 
 import { useOpenBlog, useSiteHelpers } from "../provider";
-import { obBorderB } from "../tokens";
 import { ArticleFinalCta } from "../optional/article-final-cta";
 import { ArticleRelatedPosts } from "../optional/article-related-posts";
 import { ArticleSidebar } from "../optional/article-sidebar";
@@ -25,11 +24,9 @@ import { BlogShell } from "./blog-shell";
 import { categoryLabel } from "./blog-index-copy";
 import { Breadcrumbs } from "./breadcrumbs";
 import { CategoryBadge } from "./category-badge";
-import { FeaturedImage } from "./featured-image";
+import { Hero } from "./hero";
 import { MarkdownContent } from "./markdown-content";
-import { PostDek } from "./post-dek";
 import { PostMetaRow } from "./post-meta";
-import { PostTitle } from "./post-title";
 
 type ArticleLayoutProps = {
   post: Post;
@@ -99,48 +96,20 @@ export function ArticleLayout({
 
   return (
     <>
-    <BlogShell className="py-10 lg:py-14">
-      <article>
+    <article>
+      <BlogShell className="pt-6 sm:pt-8">
         {required.breadcrumbs ? <Breadcrumbs items={breadcrumbItems} /> : null}
-
-        <header className={`mt-6 pb-8 ${obBorderB}`}>
-          <div
-            className={
-              showCover
-                ? "grid gap-8 lg:grid-cols-2 lg:items-start"
-                : "max-w-[720px]"
-            }
-          >
-            <div className="min-w-0">
-              {features.categories && post.category ? (
-                <CategoryBadge
-                  category={categoryLabel(post.categorySlug, post.category, locale)}
-                />
-              ) : null}
-              {required.postTitle ? <PostTitle>{post.title}</PostTitle> : null}
-              {required.postDek ? <PostDek>{post.description}</PostDek> : null}
-              {required.postMeta ? (
-                <PostMetaRow
-                  author={post.author}
-                  showAuthor={features.authors}
-                  date={post.date}
-                  updated={post.updated}
-                  readingMinutes={post.readingMinutes}
-                />
-              ) : null}
-            </div>
-            {showCover ? (
-              <FeaturedImage
-                src={post.coverImage!}
-                alt={post.title}
-                layout="hero"
-                priority
-                className="lg:sticky lg:top-24"
-              />
-            ) : null}
-          </div>
-        </header>
-
+      </BlogShell>
+      <Hero
+        {...(showCover ? { layout: "split" as const, media: { kind: "image" as const, src: post.coverImage!, alt: post.title } } : { layout: "centered" as const })}
+        title={post.title}
+        description={required.postDek ? post.description : ""}
+        metadata={<>
+          {features.categories && post.category ? <CategoryBadge category={categoryLabel(post.categorySlug, post.category, locale)} categorySlug={post.categorySlug} /> : null}
+          {required.postMeta ? <PostMetaRow author={post.author} showAuthor={features.authors} date={post.date} updated={post.updated} readingMinutes={post.readingMinutes} /> : null}
+        </>}
+      />
+      <BlogShell className="pb-10 lg:pb-14">
         <div
           className={
             showSidebar
@@ -193,8 +162,8 @@ export function ArticleLayout({
         ) : null}
 
         <p className="sr-only">{pageUrl}</p>
-      </article>
-    </BlogShell>
+      </BlogShell>
+    </article>
     {afterRelated}
     {finalCta ? <BlogShell className="pb-10 lg:pb-14"><ArticleFinalCta {...finalCta} /></BlogShell> : null}
     </>

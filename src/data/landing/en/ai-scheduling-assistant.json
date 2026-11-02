@@ -8,16 +8,20 @@
   },
   "breadcrumb": "AI Scheduling Assistant",
   "hero": {
-    "eyebrow": "Scheduling inside an agent workspace",
     "title": "Your calendar should trigger work, not just remind you about it.",
     "description": "Turn meetings, deadlines, and recurring blocks into agent-ready tasks that can be prepared, executed, and followed up from the same workspace.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=scheduling&download_placement=hero" },
-    "secondaryCta": { "label": "Compare scheduling assistants", "href": "/blog/best-ai-scheduling-assistants" },
     "proof": ["Works with existing calendars", "Prepares scheduled tasks", "Human approval where needed"]
   },
-  "demo": { "eyebrow": "Time becomes a trigger", "title": "See a scheduled block turn into prepared work", "description": "Floatboat can gather context before the event, run repeatable steps, and queue the follow-up after it ends." },
+  "demo": {
+    "title": "See a scheduled block turn into prepared work",
+    "description": "Floatboat can gather context before the event, run repeatable steps, and queue the follow-up after it ends.",
+    "relatedLink": {
+      "label": "Compare scheduling assistants",
+      "href": "/blog/best-ai-scheduling-assistants"
+    }
+  },
   "features": {
-    "eyebrow": "Beyond booking",
     "title": "Scheduling connects time to execution.",
     "description": "The calendar remains familiar while the workspace handles the preparation and follow-through around it.",
     "items": [
@@ -27,7 +31,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "A weekly review",
     "title": "The event arrives with the work already prepared.",
     "description": "Instead of opening a calendar block and reconstructing the week, let the agent assemble the review package beforehand.",
     "steps": [
@@ -71,11 +74,18 @@
       { "question": "Does Floatboat replace my calendar?", "answer": "No. The goal is to work with the calendars you already use and add preparation, execution, and follow-up around scheduled time." },
       { "question": "Can a calendar event run a recurring workflow?", "answer": "Yes. A recurring event can be connected to a repeatable task such as a weekly report, meeting brief, content review, or follow-up sequence." },
       { "question": "Will the agent act without approval?", "answer": "Approval boundaries depend on the workflow. Routine preparation can run automatically while external messages, file changes, or other consequential actions can wait for review." },
-      { "question": "Is scheduling still the main Floatboat product?", "answer": "Scheduling is one important capability inside the broader Floatboat agent workspace. Files, tools, agents, persistent context, and approvals form the larger operating environment." }
+      { "question": "Is scheduling still the main Floatboat product?", "answer": "Scheduling is one important capability inside the broader Floatboat agent workspace. Files, tools, agents, persistent context, and approvals form the larger operating environment." },
+      {
+        "question": "What context should a meeting-preparation event include?",
+        "answer": "Attach the agenda or project reference, participant context, source documents, and the expected brief. Distinguish information preparation from permission to email attendees or change their calendars."
+      },
+      {
+        "question": "How should I plan work that spans several time zones?",
+        "answer": "Record the event time zone and check the displayed local time before using it as a trigger. For recurring work, account for daylight-saving changes and define what to do if preparation finishes after the meeting moves."
+      }
     ]
   },
   "finalCta": {
-    "eyebrow": "When the event arrives",
     "title": "Turn the next calendar block into prepared work",
     "description": "Attach the brief, sources, and repeatable steps to the event so the agent can prepare work before the meeting or deadline.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=scheduling&download_placement=final_cta" }

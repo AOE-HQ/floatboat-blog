@@ -77,7 +77,6 @@
           "answer": "Use the official Vercel Labs website for project stages and the vercel-labs GitHub organization for repositories. Follow each project’s README for installation, dependencies, and contribution guidance; this page is a selected introduction rather than a complete mirror."
         }
       ],
-      "ctaEyebrow": "From Discovery to Work",
       "ctaTitle": "Explore Vercel Labs Projects and Skills",
       "ctaDescription": "Start with a development task, a browser workflow, or an Agent capability. Compare the featured projects and Skills, read their guides, and use the official documentation to decide what fits your work.",
       "overview": {
@@ -133,7 +132,6 @@
           "answer": "官网适合查看项目阶段，vercel-labs GitHub 组织适合查找仓库。安装、依赖和贡献方式以各项目 README 为准；这里是精选介绍，不是完整项目镜像。"
         }
       ],
-      "ctaEyebrow": "从发现到执行",
       "ctaTitle": "探索 Vercel Labs 项目与 Skills",
       "ctaDescription": "从开发工具、浏览器自动化或具体 Agent 任务开始，比较 Vercel Labs 代表项目与精选 Skills 的用途，阅读对应指南，再结合官方文档确认适合自己的使用方式。",
       "overview": {
@@ -267,7 +265,6 @@
           "answer": "Start from morluto’s GitHub profile and the linked REA or flameox repository. Read the current README, releases, and issues for setup and known limitations instead of assuming the same prerequisites across all projects."
         }
       ],
-      "ctaEyebrow": "From Source to Task",
       "ctaTitle": "Choose a Skill for Your Next Investigation",
       "ctaDescription": "Start with the task: investigate software behavior or prepare a project’s social preview. Review the matching instructions, gather the required inputs, and verify the supporting tools before running the workflow or relying on its results.",
       "overview": {
@@ -323,7 +320,6 @@
           "answer": "从 morluto 的 GitHub 主页进入 REA 或 flameox 仓库，查看当前 README、发布记录与问题讨论。不同项目的依赖和限制不应直接相互套用。"
         }
       ],
-      "ctaEyebrow": "从来源到任务",
       "ctaTitle": "为下一项调查选择合适的 Skill",
       "ctaDescription": "先明确要调查软件行为，还是制作项目分享预览图，再选择对应指令。准备必要输入并核对配套工具，运行后检查结果；发现、安装和验收是不同步骤，不能以其中一步代替整个工作流程。",
       "overview": {
@@ -446,7 +442,6 @@
           "answer": "Follow the linked Anthropic repository and its documentation, releases, and contribution files. Product behavior and installation requirements can change independently of the explanatory summaries on this page."
         }
       ],
-      "ctaEyebrow": "From Example to Work",
       "ctaTitle": "Find an Anthropic Resource for Your Next Task",
       "ctaDescription": "Start with the result you need: a repository change, an application experiment, or a repeatable agent task. Explore Anthropic’s selected Skills, then follow the relevant project documentation to check the environment, inputs, and review requirements.",
       "overview": {
@@ -502,7 +497,6 @@
           "answer": "进入对应的 Anthropic 仓库，查看文档、发布记录和贡献说明。产品行为、安装要求可能先于本页摘要发生变化，应以原始来源为准。"
         }
       ],
-      "ctaEyebrow": "从示例到执行",
       "ctaTitle": "为下一项任务找到合适的 Anthropic 资源",
       "ctaDescription": "先明确要完成的是代码修改、应用实验，还是可重复的 Agent 任务，再查看对应 Skill 与项目文档。核对工作环境、输入材料和审阅要求后开始尝试，让资源选择服务于具体目标，而不是反过来。",
       "overview": {
@@ -618,7 +612,6 @@
           "answer": "Use the Skill and README associated with the relevant HyperFrames or HeyGen CLI version. Compare required commands and options with the installed tool rather than mixing instructions from unrelated video workflows."
         }
       ],
-      "ctaEyebrow": "From Brief to Video",
       "ctaTitle": "Choose the Right Starting Point for Your Video",
       "ctaDescription": "Turn the brief into a concrete production task, then explore the relevant HeyGen Skill and source project. Check the required assets, installed tools, account access, and output settings before generating a draft you can review and improve.",
       "overview": {
@@ -674,7 +667,6 @@
           "answer": "优先阅读对应 HyperFrames 或 HeyGen CLI 版本的 Skill 与 README，并对照本机命令和参数。不要混用不同视频流程的安装或操作说明。"
         }
       ],
-      "ctaEyebrow": "从需求到视频",
       "ctaTitle": "为下一支视频选对制作起点",
       "ctaDescription": "把创作需求变成具体制作任务，再查看对应 HeyGen Skill 与项目来源。先核对素材、工具安装、账号权限和输出设置，再生成可审阅的草稿，让后续修改有清楚依据，而不是在不同视频流程之间盲目试错。",
       "overview": {
@@ -790,7 +782,6 @@
           "answer": "Use Matt Pocock’s linked project repositories. Read each README and contribution guide separately, because ts-reset, Sandcastle, and the Skills collection have different installation paths and purposes."
         }
       ],
-      "ctaEyebrow": "From Plan to Change",
       "ctaTitle": "Explore Matt Pocock’s Engineering Skills",
       "ctaDescription": "Start with the engineering task you need to clarify: questioning requirements, building through tests, or investigating a bug. Then review the corresponding Skill and its source before adding it to your project’s working instructions.",
       "overview": {
@@ -846,7 +837,6 @@
           "answer": "进入 Matt Pocock 的对应项目仓库，分别阅读 README 和贡献指南。ts-reset、Sandcastle 与 Skills 集合的用途和安装方式并不相同。"
         }
       ],
-      "ctaEyebrow": "从方案到改动",
       "ctaTitle": "探索 Matt Pocock 的工程 Skills",
       "ctaDescription": "从当前需要澄清的工程任务出发：追问需求、通过测试推进实现，或定位一个故障。阅读对应 Skill 及原始说明，确认所需材料和适用范围后，再加入项目的工作指令。",
       "overview": {
@@ -969,7 +959,6 @@
           "answer": "No blanket claim applies. Vaul’s author explicitly marks the repository unmaintained in its README. Check Sonner’s own updates and issue history separately; an unarchived flag is not proof of active maintenance."
         }
       ],
-      "ctaEyebrow": "From Design to Review",
       "ctaTitle": "Explore Emil Kowalski’s Design Skills",
       "ctaDescription": "Choose a design or motion question from the interface you are working on. Read the corresponding Skill, inspect the actual behavior, and use the original guidance to frame a focused review rather than a cosmetic imitation.",
       "overview": {
@@ -1025,7 +1014,6 @@
           "answer": "不能一概而论。Vaul 的作者已在 README 中明确说明停止维护；Sonner 应以自身仓库的当前更新与问题记录为准。未归档标记不能代替维护声明。"
         }
       ],
-      "ctaEyebrow": "从设计到审阅",
       "ctaTitle": "探索 Emil Kowalski 的设计 Skills",
       "ctaDescription": "从真实界面的一个设计或动效问题出发，阅读对应 Skill，并检查实际操作行为。用原始指引组织一次有明确范围的审查，确认变化是否服务用户任务，而不是停留在表面模仿。",
       "overview": {
@@ -1141,7 +1129,6 @@
           "answer": "Choose services when the work needs a team to execute it, a publication when you want examples and analysis, and instructions when an agent already has the inputs needed for a defined task. Check each original site for its current scope."
         }
       ],
-      "ctaEyebrow": "From Strategy to Work",
       "ctaTitle": "Explore Corey Haines’s Marketing Skills",
       "ctaDescription": "Choose the marketing question you need to answer, then review the relevant Skill and source. Bring the audience, offer, and supporting evidence with you so the instruction can guide a concrete assignment rather than generate generic advice.",
       "overview": {
@@ -1197,7 +1184,6 @@
           "answer": "需要团队执行时看服务，希望学习案例与分析时看内容通讯，Agent 已有输入且任务明确时再用指令。具体服务范围与内容以各自原站说明为准。"
         }
       ],
-      "ctaEyebrow": "从策略到行动",
       "ctaTitle": "探索 Corey Haines 的营销 Skills",
       "ctaDescription": "先明确要回答的营销问题，再阅读对应 Skill 和原始说明。带上受众、产品方案与支持证据，让指令服务一项可以判断结果的实际任务，而不是只生成一份放之四海而皆准的建议。",
       "overview": {
@@ -1313,7 +1299,6 @@
           "answer": "Keep the original input, define what information must remain recoverable, and compare output quality as well as size. A smaller result is not useful if it loses facts required for the downstream task."
         }
       ],
-      "ctaEyebrow": "From Idea to Evidence",
       "ctaTitle": "Find the Instruction That Fits the Task",
       "ctaDescription": "Choose concise expression, investigation, or refactoring according to the work in front of you. Read the original Skill before use, keep the input and acceptance criteria clear, and evaluate output quality alongside any reduction in response length.",
       "overview": {
@@ -1369,7 +1354,6 @@
           "answer": "保留原始输入，明确哪些信息必须可恢复，同时比较输出质量与体积。若丢失了下游任务必需的事实，更小的结果也没有实际价值。"
         }
       ],
-      "ctaEyebrow": "从想法到证据",
       "ctaTitle": "为具体任务找到合适的指令",
       "ctaDescription": "根据眼前工作选择精简表达、调查或重构指引，使用前阅读原始 Skill，并明确输入与验收条件。评估时同时检查内容质量和回复长度，不能仅凭文字更短，就认定任务结果完整、准确或更适合后续使用。",
       "overview": {

@@ -8,11 +8,9 @@
   },
   "breadcrumb": "Lawyers and legal teams",
   "hero": {
-    "eyebrow": "A Work Agent for legal preparation",
     "title": "A Work Agent for lawyers and legal teams",
     "description": "Give Floatboat a bounded legal assignment. It can organize matter files, trace facts, compare versions, prepare research, and turn approved sources into a reviewable draft while your team controls the playbook, templates, and approval points.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=hero" },
-    "secondaryCta": { "label": "Explore sample workflows", "href": "#workflows" },
     "proof": ["Works from your approved files", "Outputs stay editable", "Human review before consequential action"],
     "preview": {
       "label": "Illustrative Work Agent assignment",
@@ -23,7 +21,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "The work around the advice",
     "title": "Legal judgment is only one part of the day.",
     "description": "Before a lawyer can advise, negotiate, or decide, someone has to recover context, organize materials, compare documents, and prepare a usable work product.",
     "items": [
@@ -34,7 +31,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "What a legal Work Agent can prepare",
     "title": "Assign the preparation steps around legal judgment.",
     "description": "The Work Agent follows the sources, standards, and checkpoints you select; it does not prescribe a legal method or make the professional decision.",
     "items": [
@@ -47,7 +43,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "Three assignments for a legal Work Agent",
     "title": "Give it bounded preparation work, not legal authority.",
     "description": "Each assignment begins with materials and rules you control, returns an inspectable work product, and stops where professional judgment begins.",
     "items": [
@@ -78,7 +73,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your method remains the method",
     "title": "Teach the Work Agent the standards your team already trusts.",
     "description": "Different firms, clients, matters, and jurisdictions require different methods. Configure Floatboat around approved materials and return every consequential decision to the right person.",
     "inputsLabel": "Define the working context",
@@ -87,7 +81,6 @@
     "controls": ["What the agent may read or change", "Which steps require a question", "Who reviews each deliverable", "What must never be sent automatically", "What can be saved and reused"]
   },
   "progression": {
-    "eyebrow": "From one assignment to a dependable routine",
     "title": "Start with one bounded assignment. Teach the Work Agent only what proves useful.",
     "description": "A Work Agent can reuse a proven method without turning legal work into unattended automation.",
     "items": [
@@ -97,7 +90,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Human-controlled by design",
     "title": "Let the Work Agent prepare the record—not assume professional responsibility.",
     "description": "The useful line is not legal versus non-legal work. It is the line between preparing an inspectable work product and making a consequential professional decision.",
     "assistsTitle": "Floatboat can help prepare",
@@ -121,7 +113,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Before legal review",
     "title": "Prepare the matter record without delegating judgment",
     "description": "Use approved matter files and templates to organize facts, compare versions, and draft a review copy; counsel makes the legal call.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=final_cta" }

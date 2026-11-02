@@ -15,16 +15,11 @@
   },
   "breadcrumb": "executive assistants and operations partners",
   "hero": {
-    "eyebrow": "A Work Agent for executive operations",
     "title": "A Work Agent for executive assistants",
     "description": "Give Floatboat approved calendars, meeting material, prior decisions, and reporting formats. It prepares briefings, decision records, follow-up drafts, and weekly digests for your review.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-executive-assistants&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "Explore sample workflows",
-      "href": "#workflows"
     },
     "proof": [
       "Works from approved materials",
@@ -48,7 +43,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "Where an executive Work Agent earns its place",
     "title": "Keep discretion and relationships human. Delegate the context assembly.",
     "description": "Executive support depends on recovering the right context at the right moment—without turning every meeting, decision, and follow-up into another manual chase.",
     "items": [
@@ -75,7 +69,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "What your executive-support Work Agent can prepare",
     "title": "Turn scattered leadership context into timely, review-ready support.",
     "description": "The Work Agent uses its workspace to connect approved calendars, files, decisions, and actions while the assistant controls access, recipients, commitments, and final wording.",
     "items": [
@@ -112,7 +105,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "Three assignments for an executive-support Work Agent",
     "title": "Delegate meeting preparation and follow-through without delegating authority.",
     "description": "Each assignment starts from approved context, produces an inspectable brief or draft, and stops before commitments, sensitive distribution, or executive decisions.",
     "items": [
@@ -158,7 +150,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your method remains the method",
     "title": "Teach the Work Agent the executive's briefing and follow-up method.",
     "description": "Provide preferred summary depth, decision-record format, stakeholder names, confidentiality rules, and explicit approval points.",
     "inputsLabel": "Define the working context",
@@ -179,7 +170,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one assignment to a reusable Work Agent",
     "title": "Start with one recurring meeting and earn the right to reuse the routine.",
     "description": "A recurring support routine becomes useful only when it preserves discretion, current context, and explicit approval for every commitment or recipient.",
     "items": [
@@ -201,7 +191,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Human-controlled by design",
     "title": "Let the Work Agent prepare. Keep discretion, commitments, and communication human-owned.",
     "description": "The Work Agent may assemble approved context and draft follow-up; it cannot speak for an executive, commit resources, choose recipients, or disclose sensitive information.",
     "assistsTitle": "The Work Agent can help prepare",
@@ -257,7 +246,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "The next leadership meeting",
     "title": "Prepare the briefing before the calendar fills up",
     "description": "Bring the agenda, prior decisions, and open items into one pre-read; keep commitments and outgoing messages under human control.",
     "primaryCta": {

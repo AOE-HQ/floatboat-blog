@@ -15,16 +15,11 @@
   },
   "breadcrumb": "financial analysts and finance teams",
   "hero": {
-    "eyebrow": "A Work Agent for evidence-backed financial preparation",
     "title": "A Work Agent for financial analysts and finance teams",
     "description": "Give Floatboat approved financial sources, metric definitions, and reporting rules. It prepares research packets, variance commentary, and monitoring briefs with visible assumptions for analyst review.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-financial-analysts&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "Explore sample workflows",
-      "href": "#workflows"
     },
     "proof": [
       "Works from approved materials",
@@ -48,7 +43,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "Where a finance Work Agent earns its place",
     "title": "Spend analyst time on interpretation, not rebuilding the evidence trail.",
     "description": "Financial analysis breaks down when updated numbers, operating explanations, model assumptions, and management commentary no longer reconcile to the same period and source.",
     "items": [
@@ -75,7 +69,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "What your finance Work Agent can prepare",
     "title": "Turn approved figures and context into review-ready analysis materials.",
     "description": "The Work Agent uses its workspace to connect source documents, periods, units, assumptions, and drafts while analysts retain every financial conclusion.",
     "items": [
@@ -112,7 +105,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "Three assignments for a finance Work Agent",
     "title": "Delegate evidence preparation without delegating financial judgment.",
     "description": "Each assignment starts from approved sources and definitions, returns traceable work, and stops before materiality, valuation, forecast, or investment decisions.",
     "items": [
@@ -158,7 +150,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your method remains the method",
     "title": "Teach the Work Agent your finance definitions and review rules.",
     "description": "Provide periods, currencies, units, metric definitions, assumption registers, templates, and approval points before it prepares the deliverable.",
     "inputsLabel": "Define the working context",
@@ -179,7 +170,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one assignment to a reusable Work Agent",
     "title": "Validate one closed period before reusing the Work Agent routine.",
     "description": "Reuse should follow a completed reconciliation, not precede it; every new period still requires source, unit, and assumption checks.",
     "items": [
@@ -201,7 +191,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Human-controlled by design",
     "title": "Let the Work Agent prepare the record. Keep every financial conclusion accountable.",
     "description": "The Work Agent can assemble and compare approved financial evidence; it cannot certify calculations, decide materiality, set a forecast, or make an investment recommendation.",
     "assistsTitle": "The Work Agent can help prepare",
@@ -257,7 +246,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Before the variance note travels",
     "title": "Make the variance commentary traceable to the figures",
     "description": "Use a closed period, approved metrics, and source tables to prepare commentary an analyst can verify line by line.",
     "primaryCta": {

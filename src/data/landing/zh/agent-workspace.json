@@ -8,20 +8,17 @@
   },
   "breadcrumb": "Agent 工作站",
   "hero": {
-    "eyebrow": "一体化 Agent 工作站",
     "title": "给 Agent 一个工作空间，而不是又一个聊天框。",
     "description": "Floatboat 把 Agent、本地文件、模型、工具、项目规则和交付物放进同一个持续的桌面环境，让工作从已有上下文继续，而不是每次从 Prompt 重新开始。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=agent-workspace&download_placement=hero" },
-    "secondaryCta": { "label": "认识 Work Agent", "href": "/zh/coworker" },
     "proof": ["本地优先的项目访问", "多 Agent 协作", "人可控的执行过程"]
   },
   "demo": {
-    "eyebrow": "持续的工作场所",
+    "relatedLink": {"label": "认识 Work Agent", "href": "/zh/coworker"},
     "title": "让项目、规则和成果留在一起",
     "description": "Agent 可以使用同一组获授权的文件和工具，留下可检查的产物，并从项目已经积累的经验继续工作。"
   },
   "features": {
-    "eyebrow": "工作空间，不只是聊天",
     "title": "Agent 所处的环境，本身就是产品的一部分。",
     "description": "Floatboat 为工作提供持续的容器，让上下文、执行、审阅和交付保持连接。",
     "items": [
@@ -31,7 +28,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "从研究到交付的项目",
     "title": "从源材料走到最终产物，整个过程不丢失上下文。",
     "description": "工作空间可以把 Brief、参考材料、工作规则、Agent 运行、审阅意见和最终交付物组成同一段连续工作。",
     "steps": [
@@ -75,11 +71,18 @@
       { "question": "什么是 AI Agent 工作站？", "answer": "它是一个持续的工作环境，Agent 可以在其中使用获授权的文件、工具、模型、规则和过往产物完成真实项目，而不只是回答孤立问题。" },
       { "question": "它和 Floatboat Coworker 有什么区别？", "answer": "Agent 工作站是长期保存上下文和工作资源的环境；Coworker 是可以接受边界明确的任务、并向你返回交付物的 Work Agent。" },
       { "question": "本地优先是否意味着数据绝不会离开电脑？", "answer": "不是。本地优先表示工作从真实桌面环境和文件开始。数据如何处理仍取决于你选择的云端模型和连接器，应单独评估每条外部链路。" },
-      { "question": "多个 Agent 可以在同一工作空间中工作吗？", "answer": "可以。Floatboat 支持多个 Agent 使用共享项目上下文工作，同时把人的审阅、改向和批准保留在执行过程中。" }
+      { "question": "多个 Agent 可以在同一工作空间中工作吗？", "answer": "可以。Floatboat 支持多个 Agent 使用共享项目上下文工作，同时把人的审阅、改向和批准保留在执行过程中。" },
+      {
+        "question": "两次 Agent 执行之间，项目里应该留下什么？",
+        "answer": "把任务说明、源文件、项目规则、验收后的成果和未解决问题放在一起。单靠聊天记录，往往难以判断某个决定为何被接受，以及哪个文件才是准本。"
+      },
+      {
+        "question": "什么时候应该另建一个工作空间？",
+        "answer": "客户、访问权限、资料范围或验收标准不同时，适合分成不同项目。项目划分有助于明确上下文边界，但每次任务仍应核对实际可访问的文件和工具。"
+      }
     ]
   },
   "finalCta": {
-    "eyebrow": "让项目继续",
     "title": "下次打开，继续同一个 Agent 项目",
     "description": "文件、项目规则、Agent 的工作记录和未完成交付物仍在同一工作空间，不必每次从聊天记录重建上下文。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=agent-workspace&download_placement=final_cta" }

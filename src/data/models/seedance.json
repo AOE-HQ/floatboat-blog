@@ -4,18 +4,18 @@
   "access": "combo",
   "badge": { "en": "ByteDance · Live Combo", "zh": "字节跳动 · Combo 已上线" },
   "summary": {
-    "en": "Seedance 2.0 and its Fast variant power the built-in video-generation Combo.",
-    "zh": "Seedance 2.0 与 Fast 版本为内置视频生成 Combo 提供执行能力。"
+    "en": "Seedance 2.5 is publicly listed, while 2.0 and 2.0 Fast have documented built-in video Combo routes.",
+    "zh": "Seedance 2.5 已公开列出，2.0 与 2.0 Fast 则保留已记录的内置视频 Combo 入口。"
   },
-  "seo": {"title":{"en":"Seedance 2.0 AI Video Generator: Models, Features and Use Cases","zh":"Seedance 2.0 AI 视频生成模型：功能、参数与使用场景"},"description":{"en":"Learn about Seedance 2.0 and Seedance 2.0 Fast for text-to-video, image-to-video, first and last frame control, synchronized audio, and storyboard drafts.","zh":"了解 Seedance 2.0 与 2.0 Fast 的文生视频、图生视频、首尾帧控制、同步音频与分镜草稿能力。"},"keywords":[{"en":"Seedance 2.0","zh":"Seedance 2.0"},{"en":"AI video generator","zh":"AI 视频生成"},{"en":"text to video","zh":"文生视频"},{"en":"image to video","zh":"图生视频"}]},
+  "seo": {"title":{"en":"Seedance 2.5 and 2.0 video model availability.","zh":"Seedance 2.5 与 2.0 视频模型及使用入口。"},"description":{"en":"Seedance 2.5 is now listed on Floatboat’s pricing page. The recorded video Combo uses 2.0 and 2.0 Fast; verify the engine and inputs before assuming the same route supports the newer version.","zh":"Floatboat 价格页已列出 Seedance 2.5。已有视频 Combo 记录使用 2.0 和 2.0 Fast，选用新版前应核对实际引擎和输入方式。"},"keywords":[{"en":"Seedance 2.0","zh":"Seedance 2.0"},{"en":"AI video generator","zh":"AI 视频生成"},{"en":"text to video","zh":"文生视频"},{"en":"image to video","zh":"图生视频"}]},
   "hero": {
     "title": {
-        "en": "Seedance 2.0 AI video generation models.",
-        "zh": "Seedance 2.0 AI 视频生成模型。"
+        "en": "Seedance 2.5 and 2.0 video model availability.",
+        "zh": "Seedance 2.5 与 2.0 视频模型及使用入口。"
     },
     "description": {
-      "en": "The `seedance-video-generator` Combo uses Seedance 2.0 for text-to-video, image-to-video, first/last-frame control, and synchronized audio. The Fast model accelerates drafts and storyboard clips.",
-      "zh": "`seedance-video-generator` Combo 使用 Seedance 2.0 完成文生视频、图生视频、首尾帧控制与同步音频；Fast 型号用于快速生成草稿与分镜片段。"
+      "en": "Seedance 2.5 is now listed on Floatboat’s pricing page. The recorded video Combo uses 2.0 and 2.0 Fast; verify the engine and inputs before assuming the same route supports the newer version.",
+      "zh": "Floatboat 价格页已列出 Seedance 2.5。已有视频 Combo 记录使用 2.0 和 2.0 Fast，选用新版前应核对实际引擎和输入方式。"
     },
     "prompts": [
       { "en": "Generate video from this brief", "zh": "根据简报生成视频" },
@@ -27,10 +27,10 @@
   },
   "facts": [
     {
-      "label": { "en": "Live engines", "zh": "已上线引擎" },
+      "label": { "en": "Inventory scope", "zh": "型号范围" },
       "value": {
-        "en": "Seedance 2.0 · 2.0 Fast",
-        "zh": "Seedance 2.0 · 2.0 Fast"
+        "en": "Recorded routes + current pricing listings",
+        "zh": "已有接入记录 + 当前价格页型号"
       }
     },
     {
@@ -53,7 +53,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "Seedance model characteristics", "zh": "Seedance 模型特点" },
     "title": {
       "en": "A video engine organized around shots, motion, and continuity.",
       "zh": "围绕镜头、运动与连续性组织的视频引擎。"
@@ -101,18 +100,20 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Live video engines", "zh": "已上线视频引擎" },
     "title": {
-      "en": "Quality and speed variants inside one Combo.",
-      "zh": "同一 Combo 中的质量版与快速版。"
+      "en": "Separate the 2.5 listing from recorded 2.0 engines.",
+      "zh": "区分 2.5 公开型号与已记录的 2.0 引擎。"
     },
     "description": {
-      "en": "Both models are live through the Combo and do not appear in the main chat dropdown.",
-      "zh": "两个型号均已通过 Combo 上线，但不出现在主对话下拉菜单。"
+      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
+      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
     },
     "items": [
       {
-        "label": { "en": "Full", "zh": "完整能力" },
+        "label": {
+          "en": "Full",
+          "zh": "完整能力"
+        },
         "title": "doubao-seedance-2-0-260128",
         "description": {
           "en": "Text-to-video, image-to-video, frame control, and synchronized audio.",
@@ -121,10 +122,14 @@
         "meta": {
           "en": "Live · seedance-video-generator",
           "zh": "已上线 · seedance-video-generator"
-        }
+        },
+        "availability": "combo"
       },
       {
-        "label": { "en": "Fast", "zh": "快速" },
+        "label": {
+          "en": "Fast",
+          "zh": "快速"
+        },
         "title": "doubao-seedance-2-0-fast-260128",
         "description": {
           "en": "Fast drafts and storyboard clips.",
@@ -133,12 +138,32 @@
         "meta": {
           "en": "Live · seedance-video-generator",
           "zh": "已上线 · seedance-video-generator"
+        },
+        "availability": "combo"
+      },
+      {
+        "label": {
+          "en": "Pricing-page listing",
+          "zh": "价格页已展示"
+        },
+        "title": "Seedance 2.5",
+        "description": {
+          "en": "Listed on Floatboat’s pricing page. The documented Seedance 2.0 Combo does not by itself confirm that 2.5 uses the same engine ID, inputs, or invocation path.",
+          "zh": "Floatboat 价格页已列出。已记录的 Seedance 2.0 Combo 不能单独证明 2.5 使用相同引擎 ID、输入方式或调用入口。"
+        },
+        "meta": {
+          "en": "Client access not independently verified",
+          "zh": "客户端开放范围尚未独立核实"
+        },
+        "availability": "announced",
+        "source": {
+          "url": "https://floatboat.ai/pricing",
+          "checkedAt": "2026-11-02"
         }
       }
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "From brief to moving asset", "zh": "从简报到动态资产" },
     "title": {
       "en": "Build the video around the production decision that matters.",
       "zh": "围绕真正影响成片的制作决策构建视频。"
@@ -196,10 +221,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": {
-      "en": "Seedance in Floatboat",
-      "zh": "Seedance 在 Floatboat 中"
-    },
     "title": {
       "en": "Video controls presented as a production workflow.",
       "zh": "把视频控制组织成一条制作工作流。"
@@ -286,7 +307,6 @@
     }
   },
   "steps": {
-    "eyebrow": { "en": "Video workflow", "zh": "视频工作流" },
     "title": {
       "en": "Brief, generate, then review the moving result.",
       "zh": "明确简报、生成视频，再审阅动态结果。"
@@ -364,6 +384,26 @@
       "answer": {
         "en": "The full model ID is `doubao-seedance-2-0-260128`; the faster variant is `doubao-seedance-2-0-fast-260128`.",
         "zh": "完整型号 ID 是 `doubao-seedance-2-0-260128`；快速版是 `doubao-seedance-2-0-fast-260128`。"
+      }
+    },
+    {
+      "question": {
+        "en": "What should a video brief specify before generating a clip?",
+        "zh": "生成视频前，简报应写清哪些内容？"
+      },
+      "answer": {
+        "en": "Describe the subject, camera movement, action, reference material, and audio intent separately. Check continuity, unwanted text or objects, and audio alignment in the result before treating the clip as ready for editing or publication.",
+        "zh": "分别描述主体、镜头运动、动作、参考素材和声音意图。得到片段后检查连续性、多余文字或物体，以及音画配合，再判断是否适合剪辑或发布。"
+      }
+    },
+    {
+      "question": {
+        "en": "Can I use a Seedance 2.0 ID to request Seedance 2.5?",
+        "zh": "可以用 Seedance 2.0 的 ID 调用 Seedance 2.5 吗？"
+      },
+      "answer": {
+        "en": "Do not assume so. Floatboat’s pricing page lists 2.5, while the existing Combo records identify 2.0 and 2.0 Fast. Verify the actual engine and supported inputs before changing a production request.",
+        "zh": "不能直接假定。价格页列出了 2.5，已有 Combo 记录则标明 2.0 和 2.0 Fast。修改正式请求前，应核对实际引擎与支持的输入。"
       }
     }
   ],

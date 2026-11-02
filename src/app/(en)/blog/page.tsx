@@ -1,4 +1,9 @@
+import { BlogTopicNavigation } from "@/components/blog/topic-navigation";
+import { FaqBand } from "@/components/faq-band";
+import { resolveFaqForBlogIndex } from "@/lib/faq-data";
 import type { Metadata } from "next";
+
+import { Breadcrumb } from "@/components/marketing/breadcrumb";
 
 import { BlogShell } from "@openblog/components";
 
@@ -47,29 +52,32 @@ export default function BlogIndexPage() {
   );
 
   return (
-    <BlogShell className="py-8 lg:py-12">
+    <>
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }]} />
       <BlogHero
-        siteName={site.name}
         title="AI agents, models, and workflow guides"
         description="Browse the complete Floatboat library: model analysis, agent architecture, automation workflows, file tools, and practical systems for solo operators."
         articleCount={data.articleCount}
-        categories={data.categories}
         locale="en"
       />
+      <BlogShell className="pb-8 lg:pb-12">
+        <BlogTopicNavigation locale="en" categories={data.categories} />
 
-      {data.featured ? (
-        <section className="mt-14 lg:mt-20" aria-label="Latest article">
-          <FeaturedBanner post={data.featured} />
-        </section>
-      ) : null}
+        {data.featured ? (
+          <section className="mt-14 lg:mt-20" aria-label="Latest article">
+            <FeaturedBanner post={data.featured} />
+          </section>
+        ) : null}
 
-      {libraryPosts.length > 0 ? (
-        <section className="mt-14 lg:mt-20" aria-label="Browse articles">
-          <TopicBrowser posts={libraryPosts} />
-        </section>
-      ) : null}
+        {libraryPosts.length > 0 ? (
+          <section className="mt-14 lg:mt-20" aria-label="Browse articles">
+            <TopicBrowser posts={libraryPosts} />
+          </section>
+        ) : null}
 
-      <MarketingBand />
-    </BlogShell>
+        <MarketingBand />
+      </BlogShell>
+      <FaqBand locale="en" items={resolveFaqForBlogIndex("en")} />
+    </>
   );
 }

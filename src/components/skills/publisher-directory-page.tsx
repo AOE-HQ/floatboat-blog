@@ -57,7 +57,7 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
         { label: profile.name, href: publisherProfilePath(locale, handle) },
       ]} />
 
-      <MarketingHero  title={publisherHeading(locale, t.heroTitle)} description={t.heroDescription} />
+      <MarketingHero layout="centered" title={publisherHeading(locale, t.heroTitle)} description={t.heroDescription} />
 
       <OverviewSection
 

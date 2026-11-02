@@ -15,16 +15,11 @@
   },
   "breadcrumb": "招聘与人才团队",
   "hero": {
-    "eyebrow": "负责招聘准备工作的 Work Agent",
     "title": "面向招聘与人才团队的 Work Agent",
     "description": "交给 Floatboat 已核准的岗位需求、候选人材料与面试标准，由它准备证据包、面试计划、反馈摘要和沟通初稿，再由招聘人员审阅。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-recruiters&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "查看示例流程",
-      "href": "#workflows"
     },
     "proof": [
       "基于你核准的资料工作",
@@ -48,7 +43,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "招聘 Work Agent 最能发挥价值的地方",
     "title": "招聘判断留给人，把准备工作交给 Agent。",
     "description": "当岗位、证据、面试标准和候选人沟通在每个阶段都由不同的人重新整理，招聘就会变慢并失去一致性。",
     "items": [
@@ -75,7 +69,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "招聘 Work Agent 可以准备什么",
     "title": "从核准的招聘输入推进到可审阅材料。",
     "description": "Work Agent 在工作空间中连接岗位标准、候选人证据、面试记录与交付物；所有重要判断仍由团队掌握。",
     "items": [
@@ -112,7 +105,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "可以交给招聘 Work Agent 的三项任务",
     "title": "委派招聘决策周围的准备工作，而不是决策本身。",
     "description": "每项任务都从已核准且与岗位相关的材料开始，返回可检查成果，并在候选人评价或对外沟通前停下。",
     "items": [
@@ -158,7 +150,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "你的方法仍然是方法",
     "title": "让 Work Agent 按团队的招聘方法准备。",
     "description": "提供合法标准、面试评分表、材料格式、术语和审批路径；候选人判断始终由负责任的人完成。",
     "inputsLabel": "定义工作背景",
@@ -179,7 +170,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次任务到可复用的 Work Agent",
     "title": "先用一项招聘交付验证 Work Agent，再扩大它的职责。",
     "description": "只有当招聘人员确认材料准确、与岗位相关且对面试官有用后，才应扩大这套招聘流程。",
     "items": [
@@ -201,7 +191,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "人工控制",
     "title": "让 Work Agent 准备证据，让人保留用人决定。",
     "description": "Work Agent 可以整理与岗位相关的证据并起草材料，但不能推断受保护属性、给候选人排序、淘汰申请人或作出录用决定。",
     "assistsTitle": "Work Agent 可以协助准备",
@@ -257,7 +246,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "下一场面试之前",
     "title": "把岗位要求变成可审阅的面试材料",
     "description": "带上核准的岗位说明和候选人资料，准备结构化问题与证据记录；录用仍由人决定。",
     "primaryCta": {

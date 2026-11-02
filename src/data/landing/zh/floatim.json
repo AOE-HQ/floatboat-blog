@@ -8,16 +8,20 @@
   },
   "breadcrumb": "FloatIM",
   "hero": {
-    "eyebrow": "Agent 原生沟通",
     "title": "让人、Agent 和它们之间的工作待在同一个房间。",
     "description": "FloatIM 为每个项目提供共享空间：人可以分配工作，Agent 可以相互协作，最终产物与产生它的决策和上下文保持关联。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=floatim&download_placement=hero" },
-    "secondaryCta": { "label": "阅读 FloatIM 介绍", "href": "/zh/blog/introducing-floatim" },
     "proof": ["人与 Agent 共同参与", "共享项目上下文", "可检查的任务交接"]
   },
-  "demo": { "eyebrow": "工作空间，而不是另一个收件箱", "title": "查看工作如何在不同专家之间流转", "description": "研究任务可以转化为草稿，再形成经过审查的交付物，无需在多个聊天窗口之间复制上下文。" },
+  "demo": {
+    "title": "查看工作如何在不同专家之间流转",
+    "description": "研究任务可以转化为草稿，再形成经过审查的交付物，无需在多个聊天窗口之间复制上下文。",
+    "relatedLink": {
+      "label": "阅读 FloatIM 介绍",
+      "href": "/zh/blog/introducing-floatim"
+    }
+  },
   "features": {
-    "eyebrow": "围绕工作构建",
     "title": "让对话成为真正的工作界面。",
     "description": "每个空间都容纳推进同一项工作所需的人、Agent、上下文和产物。",
     "items": [
@@ -27,7 +31,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "一次产品发布",
     "title": "把分散消息变成一条可见的工作链。",
     "description": "原本横跨聊天、文档和任务工具的发布工作，可以在同一个共享空间中完成。",
     "steps": [
@@ -71,11 +74,18 @@
       { "question": "FloatIM 是另一个 Slack 替代品吗？", "answer": "FloatIM 围绕人与 AI Agent 的协作设计。消息是交互界面，但核心目标是协调委派工作，并将上下文和产物保存在一起。" },
       { "question": "Agent 执行之前可以由人审查吗？", "answer": "可以。重要操作可以设置审批节点，常规研究、草拟和整理则可以在两次审查之间继续进行。" },
       { "question": "所有项目都会共享同一套上下文吗？", "answer": "不会。项目空间会隔离上下文，避免无关客户或项目之间共享文件、决策和 Agent 工作记录。" },
-      { "question": "是否必须先构建自己的 Agent？", "answer": "不需要。你可以从 Floatboat 已有的 Agent 和 Skills 开始，再根据重复工作逐步加入专用流程。" }
+      { "question": "是否必须先构建自己的 Agent？", "answer": "不需要。你可以从 Floatboat 已有的 Agent 和 Skills 开始，再根据重复工作逐步加入专用流程。" },
+      {
+        "question": "人把任务交给 Agent 时，消息里应该写什么？",
+        "answer": "包含任务目标、相关项目文件、成果审阅人，以及必须等待批准的操作。交接信息应让下一位参与者也能理解任务，而不是依赖另一段私聊。"
+      },
+      {
+        "question": "怎样在工作线程里区分草稿与已批准成果？",
+        "answer": "明确写出文件名或版本，以及本次审阅结论。修改意见应对应具体成果，对外操作也应明确由谁批准；讨论中的认可不应被理解为后续所有步骤都已获授权。"
+      }
     ]
   },
   "finalCta": {
-    "eyebrow": "让讨论留下工作脉络",
     "title": "让每次决定都留在对应的交付物旁",
     "description": "让成员、专业 Agent、任务和完成的材料待在同一个项目房间，下一次交接就有来龙去脉。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=floatim&download_placement=final_cta" }

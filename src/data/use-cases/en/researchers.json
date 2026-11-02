@@ -16,16 +16,11 @@
   },
   "breadcrumb": "researchers and insight teams",
   "hero": {
-    "eyebrow": "A Work Agent for evidence preparation",
     "title": "A Work Agent for researchers and insight teams",
     "description": "Assign Floatboat a defined research task. It can organize selected sources, build evidence matrices, compare findings, and maintain a dated research brief while researchers retain verification and methodological judgment.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-researchers&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "Explore sample workflows",
-      "href": "#workflows"
     },
     "proof": [
       "Works from approved materials",
@@ -49,7 +44,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "The repetitive work around the profession",
     "title": "researchers and insight teams should not spend their best hours rebuilding context.",
     "description": "Research quality erodes when collection outpaces classification, notes lose their sources, and conflicting findings are flattened into a convenient summary.",
     "items": [
@@ -76,7 +70,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "What a research Work Agent can prepare",
     "title": "Assign the source work around research judgment.",
     "description": "The Work Agent follows your corpus, extraction schema, inclusion rules, and checks; it does not decide evidentiary weight or interpretation.",
     "items": [
@@ -113,7 +106,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "Three assignments for a research Work Agent",
     "title": "Build a traceable evidence trail before drawing conclusions.",
     "description": "Each assignment begins with a defined question, source set, and protocol, returns an inspectable result, and stops before interpretation.",
     "items": [
@@ -159,7 +151,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your method remains the method",
     "title": "Teach the Work Agent your research protocol.",
     "description": "Configure the question, source set, inclusion rules, extraction fields, citation requirements, and review gates for each study.",
     "inputsLabel": "Define the working context",
@@ -180,7 +171,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one task to a reusable system",
     "title": "Start with one bounded corpus. Teach the Work Agent only what proves reliable.",
     "description": "A Work Agent can reuse a validated protocol without turning research into unattended synthesis.",
     "items": [
@@ -202,7 +192,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Human-controlled by design",
     "title": "Let the Work Agent prepare the evidence—not interpret it for you.",
     "description": "The Work Agent can structure a selected corpus and expose patterns; researchers define the protocol, verify the record, weigh evidence, and interpret findings.",
     "assistsTitle": "Floatboat can help prepare",
@@ -258,7 +247,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Before the synthesis draft",
     "title": "Build the source matrix before drawing conclusions",
     "description": "Define the corpus and extraction fields first. Keep each finding linked to its source when the synthesis moves to review.",
     "primaryCta": {

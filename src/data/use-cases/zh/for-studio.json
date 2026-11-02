@@ -14,16 +14,11 @@
   },
   "breadcrumb": "工作室与代理机构",
   "hero": {
-    "eyebrow": "从客户简报推进到交付的 Work Agent",
     "title": "工作室与代理机构的 Work Agent",
     "description": "把核准简报、源素材和下一项制作目标交给 Floatboat。Work Agent 会在持续项目空间中准备计划、专业交接、审阅版本和交付包，创意质量与客户责任仍由负责人掌握。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-studio&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "查看工作流",
-      "href": "#workflows"
     },
     "proof": [
       "项目背景不会在交接中丢失",
@@ -47,7 +42,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "创意工作周围的协调成本",
     "title": "项目简报每经过一次交接都会发生变化",
     "description": "研究、策略、文案、设计、制作与客户管理由不同人员完成，工作室仍要保证客户意图不在传递中丢失。",
     "items": [
@@ -74,7 +68,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "贯穿专业交接的一项任务",
     "title": "工作室 Work Agent 可以准备什么",
     "description": "Agent 在项目工作空间中保持简报、源素材、依赖与审阅决定之间的关联。",
     "items": [
@@ -106,7 +99,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "你的方法仍是标准",
     "title": "让 Work Agent 学会每个客户项目的方法",
     "description": "提供适用于当前任务的资料、标准、格式和审批要求。",
     "inputsLabel": "定义工作背景",
@@ -127,7 +119,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次专业交接到制作方法",
     "title": "从一次交接到可复用制作方法",
     "description": "先在一个在办项目中验证共享背景是否减少追问和版本错误；只有不削弱专业质量的方法才进入后续制作。",
     "items": [
@@ -149,7 +140,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "默认由人控制",
     "title": "把协调工作交出去，不转移创意与客户责任",
     "description": "Work Agent 可以准备并连接制作任务；专业人员判断创意质量，项目与客户负责人批准代表工作室对外的成果。",
     "assistsTitle": "Work Agent 可以准备",
@@ -171,7 +161,6 @@
     "note": "Floatboat 是用于项目准备与制作协调的 Work Agent，不是自动运营的代理机构，也不能替代专业人员、客户负责人或项目负责人的判断。"
   },
   "workflows": {
-    "eyebrow": "可以交给工作室 Work Agent 的三项任务",
     "title": "让客户意图贯穿每次专业交接",
     "description": "Work Agent 连接项目证据与制作工作，专业人员和项目负责人仍承担质量与客户责任。",
     "items": [
@@ -251,7 +240,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "交给下一位制作成员",
     "title": "让核准简报连同修改意见一起交接",
     "description": "把源素材、修订记录和待处理反馈交给下一位专业成员，制作负责人再审阅交接包。",
     "primaryCta": {

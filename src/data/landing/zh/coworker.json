@@ -8,20 +8,17 @@
   },
   "breadcrumb": "Coworker",
   "hero": {
-    "eyebrow": "Floatboat 中的 Work Agent",
     "title": "交代任务，收回完成的工作。",
     "description": "给 Floatboat Coworker 一个清晰结果、相关材料和审批边界。它在 Agent 工作站中执行任务，并返回你可以检查、修订或接受的交付物。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=hero" },
-    "secondaryCta": { "label": "了解 Agent 工作站", "href": "/zh/agent-workspace" },
     "proof": ["按结果委派", "限定文件和工具", "可审阅的交付物"]
   },
   "demo": {
-    "eyebrow": "一项任务，一个负责到底的结果",
+    "relatedLink": {"label": "了解 Agent 工作站", "href": "/zh/agent-workspace"},
     "title": "交代工作，而不是逐步遥控",
     "description": "Coworker 把边界明确的委派转化为执行计划，使用获授权的项目资源，并带着指定产物返回。"
   },
   "features": {
-    "eyebrow": "为委派而设计",
     "title": "Work Agent 对从任务交代到交付的过程负责。",
     "description": "Coworker 是 Floatboat 中面向任务的 Agent 角色，不是工作空间本身，也不是无边界的聊天伙伴。",
     "items": [
@@ -31,7 +28,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "一份被委派的客户简报",
     "title": "交出任务，但不交出判断权。",
     "description": "边界明确的任务让 Coworker 有空间执行，同时让目标、资源和审批点保持清晰。",
     "steps": [
@@ -75,11 +71,18 @@
       { "question": "什么是 Work Agent？", "answer": "Work Agent 接受一项边界明确的委派，使用完成它所需的获授权上下文和工具，并返回具体结果。交接被接受后，这项任务就可以结束。" },
       { "question": "Coworker 和 Agent 工作站有什么区别？", "answer": "Coworker 是你委派任务的 Agent 角色。Agent 工作站是为该任务提供文件、工具、规则、历史和审阅控制的持续环境。" },
       { "question": "Coworker 可以不经我批准直接操作吗？", "answer": "常规步骤可以在你提供的范围内执行。敏感或后果重大的操作应保留明确的审批边界，由你检查。" },
-      { "question": "Coworker 可以交付什么？", "answer": "根据任务和已启用工具，它可以返回文档、研究结果、整理后的文件、草稿、代码或工作站支持的其他可编辑产物。" }
+      { "question": "Coworker 可以交付什么？", "answer": "根据任务和已启用工具，它可以返回文档、研究结果、整理后的文件、草稿、代码或工作站支持的其他可编辑产物。" },
+      {
+        "question": "怎样描述一个 Agent 能完成的任务？",
+        "answer": "说清交付物、源文件、输出格式和停止条件。例如“根据这三份提案生成供我审阅的对比表”，比“处理采购”更容易判断是否完成。"
+      },
+      {
+        "question": "接受 Agent 交付物之前，应检查什么？",
+        "answer": "打开可编辑文件，核对重要结论的来源，并检查改动和未确认假设。执行结束不代表文档已经准确，也不代表可以直接发送。"
+      }
     ]
   },
   "finalCta": {
-    "eyebrow": "交付目标先讲清楚",
     "title": "把交付任务交给 Work Agent，而不是反复写提示",
     "description": "提供源文件、预期成果和批准边界；收到交付稿后先检查修订，再决定是否采纳。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=final_cta" }

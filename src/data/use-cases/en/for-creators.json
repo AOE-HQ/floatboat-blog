@@ -14,16 +14,11 @@
   },
   "breadcrumb": "Creators and independent publishers",
   "hero": {
-    "eyebrow": "A Work Agent from source material to release",
     "title": "A Work Agent for Creators and Writers",
     "description": "Give Floatboat your approved research, recordings, drafts, and editorial direction. Your Work Agent develops the assignment in a persistent workspace and returns editable content, channel adaptations, and release materials for review.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-creators&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "Explore workflows",
-      "href": "#workflows"
     },
     "proof": [
       "Source material stays connected",
@@ -47,7 +42,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "The production work around the idea",
     "title": "Creating is more than generating a draft",
     "description": "A creator must protect the original idea while researching, shaping, revising, packaging, and adapting it for different audiences.",
     "items": [
@@ -74,7 +68,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "Editorial work carried across the assignment",
     "title": "What your creator Work Agent can prepare",
     "description": "The agent uses a persistent workspace to keep sources, editorial choices, drafts, and release assets connected.",
     "items": [
@@ -106,7 +99,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your point of view remains yours",
     "title": "Teach the Work Agent your editorial method",
     "description": "Provide examples, audience definitions, source rules, channel constraints, and review criteria without treating style imitation as guaranteed.",
     "inputsLabel": "Define the working context",
@@ -127,7 +119,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one piece to a repeatable publishing method",
     "title": "Prove the editorial fit before scaling output",
     "description": "Start with one source piece and reuse only the steps that preserve meaning and voice.",
     "items": [
@@ -149,7 +140,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Creator-controlled by design",
     "title": "Delegate production work, not authorship or publication judgment",
     "description": "The Work Agent can organize, draft, adapt, and package; the creator remains responsible for truth, originality, rights, and release.",
     "assistsTitle": "The Work Agent can prepare",
@@ -171,7 +161,6 @@
     "note": "Floatboat is a Work Agent for content preparation, not an autonomous publisher or substitute for editorial, legal, or rights review."
   },
   "workflows": {
-    "eyebrow": "Three assignments for your creator Work Agent",
     "title": "Develop the idea before multiplying the formats",
     "description": "The Work Agent keeps sources and editorial decisions visible while every output remains open to creator revision.",
     "items": [
@@ -251,7 +240,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "One story, several release assets",
     "title": "Keep the original voice across the release package",
     "description": "Start from the approved draft or recording. Prepare captions and channel versions, then review tone and claims before publishing.",
     "primaryCta": {

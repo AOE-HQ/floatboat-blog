@@ -16,16 +16,11 @@
   },
   "breadcrumb": "consultants and advisory teams",
   "hero": {
-    "eyebrow": "A Work Agent for client engagements",
     "title": "A Work Agent for consultants and advisory teams",
     "description": "Give Floatboat a defined engagement task. It can organize client evidence, research a market, compare options, prepare workshop materials, and draft editable deliverables while the team owns the recommendation.",
     "primaryCta": {
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-consultants&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "Explore sample workflows",
-      "href": "#workflows"
     },
     "proof": [
       "Works from approved materials",
@@ -49,7 +44,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "The repetitive work around the profession",
     "title": "consultants and advisory teams should not spend their best hours rebuilding context.",
     "description": "An engagement loses momentum when interview notes, source material, hypotheses, and deck edits stop telling the same story.",
     "items": [
@@ -76,7 +70,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "What a consulting Work Agent can prepare",
     "title": "Assign the evidence work around client judgment.",
     "description": "The Work Agent follows the engagement brief, approved evidence, exhibit standards, and review cadence; it does not choose the methodology or recommendation.",
     "items": [
@@ -113,7 +106,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "Three assignments for a consulting Work Agent",
     "title": "Move an engagement forward without outsourcing the advice.",
     "description": "Each assignment begins with a client brief and rules you control, returns an inspectable deliverable, and stops before the professional recommendation.",
     "items": [
@@ -159,7 +151,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "Your method remains the method",
     "title": "Teach the Work Agent how your firm delivers client work.",
     "description": "Configure the engagement brief, issue tree, evidence rules, exhibit conventions, and review cadence rather than accepting a generic consulting method.",
     "inputsLabel": "Define the working context",
@@ -180,7 +171,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "From one task to a reusable system",
     "title": "Start with one bounded assignment. Teach the Work Agent only what proves useful.",
     "description": "A Work Agent can reuse a proven engagement method without turning advisory work into unattended automation.",
     "items": [
@@ -202,7 +192,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "Human-controlled by design",
     "title": "Let the Work Agent prepare the evidence—not own the recommendation.",
     "description": "The Work Agent can organize evidence and prepare engagement materials; consultants remain responsible for methodology, interpretation, recommendations, and client commitments.",
     "assistsTitle": "Floatboat can help prepare",
@@ -258,7 +247,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "Before the client recommendation",
     "title": "Turn client evidence into a reviewable recommendation",
     "description": "Start with the engagement question and approved sources. Review the options and source trail before your team advises the client.",
     "primaryCta": {

@@ -14,16 +14,11 @@
   },
   "breadcrumb": "小企业经营者与团队",
   "hero": {
-    "eyebrow": "处理业务系统之间工作的 Work Agent",
     "title": "小企业的 Work Agent",
     "description": "把客户需求、运营交接或每周复盘交给 Floatboat。Work Agent 会在工作空间中汇集获准背景，返回可编辑工作包；价格、政策与对外行动仍由员工和经营者决定。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-small-business&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "查看工作流",
-      "href": "#workflows"
     },
     "proof": [
       "围绕现有业务文件工作",
@@ -47,7 +42,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "业务系统之间的空隙",
     "title": "小团队在每次交接中消耗时间",
     "description": "客户、运营、财务和排程系统分别保存一部分信息，员工仍要靠人工拼出一项工作的完整背景。",
     "items": [
@@ -74,7 +68,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "跨越小团队的运营准备",
     "title": "小企业 Work Agent 可以准备什么",
     "description": "Agent 在工作空间中处理获准文件，但不会替代正式业务系统。",
     "items": [
@@ -106,7 +99,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "你的方法仍是标准",
     "title": "让 Work Agent 学会团队处理任务的方法",
     "description": "提供适用于当前任务的资料、标准、格式和审批要求。",
     "inputsLabel": "定义工作背景",
@@ -127,7 +119,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次交接到团队运营惯例",
     "title": "从一次交接到共享运营惯例",
     "description": "先选择输入清楚、结果可检查的准备任务；只有当团队能够核验资料、成果和审批路径后，才扩大使用范围。",
     "items": [
@@ -149,7 +140,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "默认由人控制",
     "title": "自动化准备工作，不转移业务权限",
     "description": "Work Agent 可以汇集跨系统背景、检查缺失信息并起草下一步；只有获授权员工才能作出客户承诺或修改业务记录。",
     "assistsTitle": "Work Agent 可以准备",
@@ -171,7 +161,6 @@
     "note": "Floatboat 按团队配置的权限执行准备任务，不会替代 CRM、财务或项目系统，也不会取代员工职责与经营者问责。"
   },
   "workflows": {
-    "eyebrow": "可以交给小企业 Work Agent 的三项任务",
     "title": "准备跨角色、跨系统的工作",
     "description": "Work Agent 整理获准业务信息，并在涉及客户、财务或政策承诺之前停下来等待审批。",
     "items": [
@@ -251,7 +240,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "下一次客户交接",
     "title": "把一条客户需求整理成清楚的工作包",
     "description": "提供客户需求、现行政策和负责人员；先审阅交接材料，不把定价或对客沟通交给 Agent。",
     "primaryCta": {

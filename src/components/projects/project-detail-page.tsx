@@ -36,7 +36,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
   };
   return <div className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
     <Breadcrumb label={zh ? "面包屑导航" : "Breadcrumb"} items={breadcrumbs} />
-    <MarketingHero title={project.name} description={t.description} />
+    <MarketingHero layout="centered" title={project.name} description={t.description} />
     <OverviewSection title={t.overviewTitle} paragraphs={t.overview} identity={{ name: project.name, typeLabel: t.kind, logo: project.logo, tags: [...t.tags, project.license] }} linksTitle={zh ? "发布者与官方入口" : "Publisher and official links"} links={links} />
     <section aria-labelledby="project-capabilities-title" className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16">
       <h2 id="project-capabilities-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{t.capabilitiesTitle}</h2>

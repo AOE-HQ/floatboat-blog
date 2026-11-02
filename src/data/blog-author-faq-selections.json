@@ -1,0 +1,366 @@
+{
+  "kostja": [
+    {
+      "article": "deepseek-dsh-superagent",
+      "questionIndex": 0
+    },
+    {
+      "article": "deepseek-dsh-superagent",
+      "questionIndex": 1
+    },
+    {
+      "article": "what-is-gemini-agent",
+      "questionIndex": 0
+    },
+    {
+      "article": "what-is-gemini-agent",
+      "questionIndex": 1
+    },
+    {
+      "article": "ai-agent-connectors-explained",
+      "questionIndex": 0
+    },
+    {
+      "article": "ai-agent-connectors-explained",
+      "questionIndex": 1
+    }
+  ],
+  "floatboat": [
+    {
+      "article": "gpt-6-1-sol",
+      "questionIndex": 0
+    },
+    {
+      "article": "gpt-6-1-sol",
+      "questionIndex": 1
+    },
+    {
+      "article": "openai-devday-2026-announcements",
+      "questionIndex": 0
+    },
+    {
+      "article": "openai-devday-2026-announcements",
+      "questionIndex": 1
+    },
+    {
+      "article": "chatgpt-voice-mode-vs-dictation",
+      "questionIndex": 0
+    },
+    {
+      "article": "chatgpt-voice-mode-vs-dictation",
+      "questionIndex": 1
+    }
+  ],
+  "tan-shaoqing": [
+    {
+      "article": "what-is-jev-model",
+      "questionIndex": 0
+    },
+    {
+      "article": "what-is-jev-model",
+      "questionIndex": 1
+    },
+    {
+      "article": "minimax-h3-max-infinite-ai-livestream",
+      "questionIndex": 0
+    },
+    {
+      "article": "minimax-h3-max-infinite-ai-livestream",
+      "questionIndex": 1
+    },
+    {
+      "article": "do-ai-file-organizers-upload-your-files",
+      "questionIndex": 0
+    },
+    {
+      "article": "do-ai-file-organizers-upload-your-files",
+      "questionIndex": 1
+    }
+  ],
+  "judy": [
+    {
+      "article": "deepseek-v4-1-flash",
+      "questionIndex": 0
+    },
+    {
+      "article": "deepseek-v4-1-flash",
+      "questionIndex": 1
+    },
+    {
+      "article": "codex-harness-open-source",
+      "questionIndex": 0
+    },
+    {
+      "article": "codex-harness-open-source",
+      "questionIndex": 1
+    },
+    {
+      "article": "how-to-use-obsidian-with-ai-agent",
+      "questionIndex": 0
+    },
+    {
+      "article": "how-to-use-obsidian-with-ai-agent",
+      "questionIndex": 1
+    }
+  ],
+  "floatboat-team": [
+    {
+      "article": "raycast-for-windows-floatboat",
+      "questionIndex": 0
+    },
+    {
+      "article": "raycast-for-windows-floatboat",
+      "questionIndex": 1
+    },
+    {
+      "article": "what-if-your-calendar-could-run-itself",
+      "questionIndex": 0
+    },
+    {
+      "article": "what-if-your-calendar-could-run-itself",
+      "questionIndex": 1
+    },
+    {
+      "article": "introducing-floatim",
+      "questionIndex": 0
+    },
+    {
+      "article": "introducing-floatim",
+      "questionIndex": 1
+    }
+  ],
+  "nova": [
+    {
+      "article": "manus-ai-alternatives-2026",
+      "questionIndex": 0
+    },
+    {
+      "article": "manus-ai-alternatives-2026",
+      "questionIndex": 1
+    },
+    {
+      "article": "ai-follow-up-email-opus-4-8",
+      "questionIndex": 0
+    },
+    {
+      "article": "ai-follow-up-email-opus-4-8",
+      "questionIndex": 1
+    },
+    {
+      "article": "ai-agent-vs-ai-assistant",
+      "questionIndex": 0
+    },
+    {
+      "article": "ai-agent-vs-ai-assistant",
+      "questionIndex": 1
+    }
+  ],
+  "remy": [
+    {
+      "article": "automate-tiktok-shop-research-fastmoss-floatboat",
+      "questionIndex": 0
+    },
+    {
+      "article": "automate-tiktok-shop-research-fastmoss-floatboat",
+      "questionIndex": 1
+    },
+    {
+      "article": "introducing-flow-mode",
+      "questionIndex": 0
+    },
+    {
+      "article": "introducing-flow-mode",
+      "questionIndex": 1
+    },
+    {
+      "article": "claude-code-vs-cowork-vs-tag",
+      "questionIndex": 0
+    },
+    {
+      "article": "claude-code-vs-cowork-vs-tag",
+      "questionIndex": 1
+    }
+  ],
+  "jade": [
+    {
+      "article": "best-claude-code-alternatives",
+      "questionIndex": 0
+    },
+    {
+      "article": "best-claude-code-alternatives",
+      "questionIndex": 1
+    },
+    {
+      "article": "cordis-plugin-framework",
+      "questionIndex": 0
+    },
+    {
+      "article": "cordis-plugin-framework",
+      "questionIndex": 1
+    },
+    {
+      "article": "what-is-deepseek-agent",
+      "questionIndex": 0
+    },
+    {
+      "article": "what-is-deepseek-agent",
+      "questionIndex": 1
+    }
+  ],
+  "ketd": [
+    {
+      "article": "best-claude-tag-alternatives",
+      "questionIndex": 0
+    },
+    {
+      "article": "best-claude-tag-alternatives",
+      "questionIndex": 1
+    },
+    {
+      "article": "glm-5-3",
+      "questionIndex": 0
+    },
+    {
+      "article": "glm-5-3",
+      "questionIndex": 1
+    },
+    {
+      "article": "what-is-claude-code",
+      "questionIndex": 0
+    },
+    {
+      "article": "what-is-claude-code",
+      "questionIndex": 1
+    }
+  ],
+  "vera": [
+    {
+      "article": "deepseek-agent-vs-claude-code",
+      "questionIndex": 0
+    },
+    {
+      "article": "deepseek-agent-vs-claude-code",
+      "questionIndex": 1
+    },
+    {
+      "article": "deepseek-agent-vs-claude-code",
+      "questionIndex": 2
+    },
+    {
+      "article": "world-cup-2026-schedule-usa",
+      "questionIndex": 0
+    },
+    {
+      "article": "world-cup-2026-schedule-usa",
+      "questionIndex": 1
+    },
+    {
+      "article": "world-cup-2026-schedule-usa",
+      "questionIndex": 2
+    }
+  ],
+  "jackson": [
+    {
+      "article": "world-cup-2026-google-calendar-ics",
+      "questionIndex": 0
+    },
+    {
+      "article": "world-cup-2026-google-calendar-ics",
+      "questionIndex": 1
+    },
+    {
+      "article": "world-cup-2026-google-calendar-ics",
+      "questionIndex": 2
+    },
+    {
+      "article": "world-cup-2026-google-calendar-ics",
+      "questionIndex": 3
+    },
+    {
+      "article": "world-cup-2026-google-calendar-ics",
+      "questionIndex": 4
+    },
+    {
+      "article": "world-cup-2026-google-calendar-ics",
+      "questionIndex": 5
+    }
+  ],
+  "lulu-yu": [
+    {
+      "article": "world-cup-2026-guide",
+      "questionIndex": 0
+    },
+    {
+      "article": "world-cup-2026-guide",
+      "questionIndex": 1
+    },
+    {
+      "article": "world-cup-2026-guide",
+      "questionIndex": 2
+    },
+    {
+      "article": "world-cup-2026-guide",
+      "questionIndex": 3
+    },
+    {
+      "article": "world-cup-2026-guide",
+      "questionIndex": 4
+    },
+    {
+      "article": "world-cup-2026-guide",
+      "questionIndex": 5
+    }
+  ],
+  "eathen": [
+    {
+      "article": "world-cup-2026-schedule",
+      "questionIndex": 0
+    },
+    {
+      "article": "world-cup-2026-schedule",
+      "questionIndex": 1
+    },
+    {
+      "article": "world-cup-2026-schedule",
+      "questionIndex": 2
+    },
+    {
+      "article": "world-cup-2026-schedule",
+      "questionIndex": 3
+    },
+    {
+      "article": "world-cup-2026-schedule",
+      "questionIndex": 4
+    },
+    {
+      "article": "world-cup-2026-schedule",
+      "questionIndex": 5
+    }
+  ],
+  "pan-yang": [
+    {
+      "article": "context-engineering-for-ai-agents",
+      "questionIndex": 0
+    },
+    {
+      "article": "context-engineering-for-ai-agents",
+      "questionIndex": 1
+    },
+    {
+      "article": "context-engineering-for-ai-agents",
+      "questionIndex": 2
+    },
+    {
+      "article": "context-engineering-for-ai-agents",
+      "questionIndex": 3
+    },
+    {
+      "article": "context-engineering-for-ai-agents",
+      "questionIndex": 4
+    },
+    {
+      "article": "context-engineering-for-ai-agents",
+      "questionIndex": 5
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "slug": "deepseek",
   "name": "DeepSeek",
   "access": "picker",
-  "badge": { "en": "DeepSeek · Client picker", "zh": "DeepSeek · 客户端可选" },
+  "badge": { "en": "DeepSeek · Recorded chat entry", "zh": "DeepSeek · 已有对话入口记录" },
   "summary": {
     "en": "V4 Pro for complex code and mathematics; Flash for efficient everyday execution.",
     "zh": "V4 Pro 面向复杂代码与数学推理，Flash 面向高性价比日常执行。"
@@ -42,7 +42,6 @@
     }
   ],
   "positioning": {
-    "eyebrow": { "en": "DeepSeek model characteristics", "zh": "DeepSeek 模型特点" },
     "title": {
       "en": "A practical split between hard reasoning and fast throughput.",
       "zh": "在高难度推理与快速吞吐之间做务实分工。"
@@ -96,7 +95,6 @@
     ]
   },
   "lineup": {
-    "eyebrow": { "en": "Depth versus efficiency", "zh": "深度与效率" },
     "title": {
       "en": "Two DeepSeek lanes for two cost profiles.",
       "zh": "两条 DeepSeek 路径，对应两种成本结构。"
@@ -107,27 +105,40 @@
     },
     "items": [
       {
-        "label": { "en": "Hard problems", "zh": "困难问题" },
+        "label": {
+          "en": "Hard problems",
+          "zh": "困难问题"
+        },
         "title": "deepseek-v4-pro",
         "description": {
           "en": "Complex coding, algorithms, and mathematical reasoning.",
           "zh": "复杂编程、算法与数理推理。"
         },
-        "meta": { "en": "Client picker", "zh": "客户端可选" }
+        "meta": {
+          "en": "Recorded chat entry",
+          "zh": "已有对话入口记录"
+        },
+        "availability": "picker"
       },
       {
-        "label": { "en": "Everyday work", "zh": "日常任务" },
+        "label": {
+          "en": "Everyday work",
+          "zh": "日常任务"
+        },
         "title": "deepseek-flash",
         "description": {
           "en": "DeepSeek V4.1 Flash for efficient coding and general requests.",
           "zh": "DeepSeek V4.1 Flash，适合高性价比编程与通用请求。"
         },
-        "meta": { "en": "Client picker", "zh": "客户端可选" }
+        "meta": {
+          "en": "Recorded chat entry",
+          "zh": "已有对话入口记录"
+        },
+        "availability": "picker"
       }
     ]
   },
   "workflows": {
-    "eyebrow": { "en": "Two distinct lanes", "zh": "两条明确路径" },
     "title": {
       "en": "Match the reasoning budget to the failure risk.",
       "zh": "让推理投入与失败风险匹配。"
@@ -185,10 +196,6 @@
     ]
   },
   "capabilities": {
-    "eyebrow": {
-      "en": "DeepSeek in Floatboat",
-      "zh": "DeepSeek 在 Floatboat 中"
-    },
     "title": {
       "en": "Two selectable models, each with a clear job.",
       "zh": "两个可直接选择的型号，各自承担明确工作。"
@@ -272,7 +279,6 @@
     }
   },
   "extensions": {
-    "eyebrow": { "en": "Practical split", "zh": "实际分工" },
     "title": {
       "en": "Escalate only when the problem earns it.",
       "zh": "只有问题值得时，才升级推理强度。"
@@ -343,6 +349,16 @@
       "answer": {
         "en": "Yes. Its confirmed positioning includes complex mathematical, algorithmic, and logical reasoning where a wrong assumption can invalidate the solution.",
         "zh": "适合。其已确认定位包括复杂数学、算法与逻辑推理，尤其适用于错误假设可能使方案失效的任务。"
+      }
+    },
+    {
+      "question": {
+        "en": "How should I compare DeepSeek Pro and Flash for a repeatable workflow?",
+        "zh": "可重复工作流中，怎样比较 DeepSeek Pro 与 Flash？"
+      },
+      "answer": {
+        "en": "Hold the source set and output contract constant. Use cases that include the difficult reasoning step and the routine work around it, then compare errors and review effort before assigning each stage to a model.",
+        "zh": "固定资料和输出要求，同时测试关键推理步骤及周边常规工作。比较错误与审阅成本，再决定各阶段使用哪种模型，而不只比较一次回答的速度。"
       }
     }
   ],

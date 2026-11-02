@@ -1,5 +1,5 @@
+import { FaqBand } from "@/components/faq-band";
 import Link from "next/link";
-import type { ReactNode } from "react";
 import { FinalCta } from "@/components/final-cta";
 import { RelatedPageLinks } from "@/components/related-page-links";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
@@ -8,28 +8,10 @@ import { ModelPickerDemo } from "./model-picker-demo";
 import {
   localize,
   modelPath,
+  modelAvailabilityLabel,
   type ModelFamily,
   type ModelLocale,
 } from "@/lib/models/model-pages";
-
-function Cta({
-  href,
-  children,
-  primary = false,
-}: {
-  href: string;
-  children: ReactNode;
-  primary?: boolean;
-}) {
-  return (
-    <a
-      href={href}
-      className={`inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition ${primary ? "bg-[var(--ob-color-primary)] text-[var(--ob-color-text)] hover:bg-[var(--ob-color-primary-hover)]" : "border border-black/10 bg-white/55 hover:bg-white"}`}
-    >
-      {children}
-    </a>
-  );
-}
 
 export function ModelDetailPage({
   model,
@@ -50,18 +32,6 @@ export function ModelDetailPage({
       description: localize(model.hero.description, locale),
       url: `https://floatboat.ai${modelPath(locale, model.slug)}`,
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: model.faq.map((item) => ({
-        "@type": "Question",
-        name: localize(item.question, locale),
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: localize(item.answer, locale),
-        },
-      })),
-    },
   ];
 
   return (
@@ -76,27 +46,10 @@ export function ModelDetailPage({
         <span className="mx-2">/</span>
         <span>{model.name}</span>
       </nav>
-      <MarketingHero eyebrow={`${localize(model.badge, locale)} · Floatboat`} title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)} />
-      <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 lg:pb-24" aria-label={isZh ? "模型预览与入口" : "Model preview and access"}>
-        <ModelPickerDemo model={model} locale={locale} />
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Cta href={download} primary>
-              {model.access === "capacity"
-                ? isZh
-                  ? "了解 Floatboat"
-                  : "Explore Floatboat"
-                : isZh
-                  ? "下载 Floatboat"
-                  : "Download Floatboat"}
-            </Cta>
-            <Link
-              href={modelPath(locale)}
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-black/10 bg-white/55 px-6 text-sm font-semibold hover:bg-white"
-            >
-              {isZh ? "查看全部模型" : "View all models"}
-            </Link>
-        </div>
-      </section>
+      <MarketingHero layout="centered" title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)}
+        action={model.access === "capacity" ? undefined : { label: isZh ? "下载 Floatboat" : "Download Floatboat", href: download }}
+        media={{ kind: "demo", label: isZh ? `${model.name} 模型预览` : `${model.name} model preview`, content: <ModelPickerDemo model={model} locale={locale} /> }}
+      />
 
       <section className="mx-auto max-w-7xl px-5 pb-16 sm:px-8 lg:pb-24">
         <dl className="grid overflow-hidden rounded-3xl border border-black/[0.07] bg-white/55 sm:grid-cols-2 lg:grid-cols-4">
@@ -119,10 +72,7 @@ export function ModelDetailPage({
       <section className="border-y border-black/[0.06] py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-              {localize(model.positioning.eyebrow, locale)}
-            </p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
               {localize(model.positioning.title, locale)}
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
@@ -132,12 +82,10 @@ export function ModelDetailPage({
           <div className="grid gap-5 sm:grid-cols-2">
             {model.positioning.traits.map((trait) => (
               <article key={trait.label.en} className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">
-                  {localize(trait.label, locale)}
-                </p>
-                <h3 className="mt-3 text-xl font-semibold">
+                <h3 className="text-xl font-semibold">
                   {localize(trait.value, locale)}
                 </h3>
+                <p className="mt-3 text-sm text-[var(--ob-color-muted)]">{localize(trait.label, locale)}</p>
                 <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">
                   {localize(trait.description, locale)}
                 </p>
@@ -150,10 +98,7 @@ export function ModelDetailPage({
       <section className="bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-              {localize(model.lineup.eyebrow, locale)}
-            </p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
               {localize(model.lineup.title, locale)}
             </h2>
             <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
@@ -163,23 +108,23 @@ export function ModelDetailPage({
           <div
             className={`grid gap-5 ${model.lineup.items.length === 4 ? "md:grid-cols-2 lg:grid-cols-4" : "md:grid-cols-3"}`}
           >
-            {model.lineup.items.map((item, index) => (
+            {model.lineup.items.map((item) => (
               <article
                 key={item.title}
                 className="rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-7 shadow-[var(--ob-shadow-raised)]"
               >
-                <span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-muted)]">
-                  0{index + 1} · {localize(item.label, locale)}
-                </span>
-                <h3 className="mt-8 break-words font-serif text-2xl tracking-tight">
+                <h3 className="break-words font-serif text-2xl tracking-tight">
                   {item.title}
                 </h3>
+                <p className="mt-3 text-sm text-[var(--ob-color-muted)]">{localize(item.label, locale)}</p>
                 <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">
                   {localize(item.description, locale)}
                 </p>
                 <p className="mt-6 border-t border-black/[0.07] pt-4 text-xs font-medium text-[var(--ob-color-muted)]">
-                  {localize(item.meta, locale)}
+                  {modelAvailabilityLabel(item.availability, locale)}
+                  {item.availability === "combo" && <span className="block mt-1">{localize(item.meta, locale).split(" · ").slice(1).join(" · ")}</span>}
                 </p>
+                {item.source && <p className="mt-3 text-xs leading-6 text-[var(--ob-color-muted)]"><a href={item.source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{isZh ? "官方价格页" : "Official pricing page"}</a> · {item.source.checkedAt}</p>}
               </article>
             ))}
           </div>
@@ -188,10 +133,7 @@ export function ModelDetailPage({
 
       <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
         <div className="mb-12 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-            {localize(model.workflows.eyebrow, locale)}
-          </p>
-          <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+          <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
             {localize(model.workflows.title, locale)}
           </h2>
           <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
@@ -231,10 +173,7 @@ export function ModelDetailPage({
       <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-              {localize(model.capabilities.eyebrow, locale)}
-            </p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
               {localize(model.capabilities.title, locale)}
             </h2>
             <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
@@ -296,10 +235,7 @@ export function ModelDetailPage({
       {model.steps && (
         <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
           <div className="mb-10 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-              {localize(model.steps.eyebrow, locale)}
-            </p>
-            <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
               {localize(model.steps.title, locale)}
             </h2>
           </div>
@@ -325,10 +261,7 @@ export function ModelDetailPage({
         <section className="border-y border-black/[0.06] py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <div className="mx-auto mb-10 max-w-3xl text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">
-                {localize(model.extensions.eyebrow, locale)}
-              </p>
-              <h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
+              <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
                 {localize(model.extensions.title, locale)}
               </h2>
             </div>
@@ -394,32 +327,9 @@ export function ModelDetailPage({
 
       <RelatedPageLinks family="models" currentId={model.slug} locale={locale} />
 
-      <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8 sm:py-28">
-        <h2 className="mb-8 text-center font-serif text-4xl tracking-tight sm:text-5xl">
-          {model.name} · FAQ
-        </h2>
-        <div className="space-y-3">
-          {model.faq.map((item) => (
-            <details
-              key={item.question.en}
-              className="group rounded-2xl border border-black/[0.07] bg-white/45 p-5"
-            >
-              <summary className="cursor-pointer list-none pr-8 font-semibold">
-                {localize(item.question, locale)}
-                <span className="float-right text-xl group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-              <p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">
-                {localize(item.answer, locale)}
-              </p>
-            </details>
-          ))}
-        </div>
-      </section>
+      <FaqBand locale={locale} title={isZh ? `${model.name} 常见问题` : `${model.name} FAQ`} items={model.faq.map((item) => ({ question: localize(item.question, locale), answer: localize(item.answer, locale) }))} />
 
       <FinalCta
-        eyebrow={localize(model.badge, locale)}
         title={localize(model.finalCta.title, locale)}
         description={localize(model.finalCta.description, locale)}
         primary={model.access === "capacity"

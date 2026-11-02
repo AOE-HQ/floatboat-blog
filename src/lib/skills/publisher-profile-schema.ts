@@ -24,7 +24,6 @@ const copy = z.object({
   relatedDescription: text.optional(),
   faqTitle: text.optional(),
   faq: z.array(faq).min(6),
-  ctaEyebrow: text.optional(),
   ctaTitle: text,
   ctaDescription: text,
   ctaPrimary: z.object({ label: text, href: text }).optional(),

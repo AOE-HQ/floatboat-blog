@@ -16,16 +16,11 @@
   },
   "breadcrumb": "顾问与咨询团队",
   "hero": {
-    "eyebrow": "推进客户项目的 Work Agent",
     "title": "面向咨询顾问与咨询团队的 Work Agent",
     "description": "把明确的项目任务交给 Floatboat：整理客户证据、研究市场、比较方案、准备工作坊材料并起草交付物；最终建议仍由顾问团队负责。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-consultants&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "查看示例流程",
-      "href": "#workflows"
     },
     "proof": [
       "基于你核准的资料工作",
@@ -49,7 +44,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "专业工作周围的重复劳动",
     "title": "顾问与咨询团队的时间，不该耗在反复整理上。",
     "description": "当访谈记录、研究资料、工作假设与 Deck 修改不再讲同一件事，项目就会在反复对齐中失去节奏。",
     "items": [
@@ -76,7 +70,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "咨询 Work Agent 可以准备什么",
     "title": "把客户判断周围的证据工作交给 Work Agent。",
     "description": "Work Agent 遵循项目 Brief、核准证据、图表规范和审阅节奏，不替团队选择方法论或最终建议。",
     "items": [
@@ -113,7 +106,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "可以交给咨询 Work Agent 的三项任务",
     "title": "让项目向前推进，不把咨询判断外包。",
     "description": "每项任务都从你控制的客户 Brief 和规则开始，返回可检查的交付物，并在专业建议前停下。",
     "items": [
@@ -159,7 +151,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "你的方法仍然是方法",
     "title": "教会 Work Agent 按照公司的交付方法工作。",
     "description": "配置项目 Brief、Issue Tree、证据规则、图表规范和审阅节奏，而不是接受通用咨询方法。",
     "inputsLabel": "定义工作背景",
@@ -180,7 +171,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次任务到可复用系统",
     "title": "先完成一个边界清晰的任务，只教 Work Agent 复用真正有用的方法。",
     "description": "Work Agent 可以复用经过验证的项目方法，但不会把咨询工作变成无人值守的自动化。",
     "items": [
@@ -202,7 +192,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "人工控制",
     "title": "让 Work Agent 准备证据，不替团队作出建议。",
     "description": "Work Agent 可以组织证据并准备项目材料；方法论、分析解释、最终建议与客户承诺仍由顾问负责。",
     "assistsTitle": "Floatboat 可以协助准备",
@@ -258,7 +247,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "发出客户建议之前",
     "title": "让客户建议建立在可审阅的证据之上",
     "description": "从项目问题和核准资料出发，先核对方案与来源，再由团队形成发给客户的建议。",
     "primaryCta": {

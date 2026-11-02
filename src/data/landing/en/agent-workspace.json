@@ -8,20 +8,20 @@
   },
   "breadcrumb": "Agent Workspace",
   "hero": {
-    "eyebrow": "An all-in-one agent workspace",
     "title": "Give agents a workspace, not another chat window.",
     "description": "Floatboat brings agents, local files, models, tools, project rules, and deliverables into one persistent desktop environment—so work can continue from context instead of restarting with every prompt.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=hero" },
-    "secondaryCta": { "label": "Meet the Work Agent", "href": "/coworker" },
     "proof": ["Local-first project access", "Multi-agent collaboration", "Human-controlled execution"]
   },
   "demo": {
-    "eyebrow": "A persistent place to work",
     "title": "Keep the project, rules, and results together",
-    "description": "Agents can work from the same approved files and tools, leave inspectable outputs, and continue from what the project has already learned."
+    "description": "Agents can work from the same approved files and tools, leave inspectable outputs, and continue from what the project has already learned.",
+    "relatedLink": {
+      "label": "Meet the Work Agent",
+      "href": "/coworker"
+    }
   },
   "features": {
-    "eyebrow": "Workspace, not just chat",
     "title": "The environment around the agent is part of the product.",
     "description": "Floatboat gives work a durable home where context, execution, review, and delivery remain connected.",
     "items": [
@@ -31,7 +31,6 @@
     ]
   },
   "scenario": {
-    "eyebrow": "A research-to-delivery project",
     "title": "Move from source material to a finished artifact without losing the thread.",
     "description": "A workspace can hold the brief, references, working rules, agent runs, review notes, and final deliverable as one continuous body of work.",
     "steps": [
@@ -75,11 +74,18 @@
       { "question": "What is an AI Agent Workspace?", "answer": "It is a persistent work environment where agents can use approved files, tools, models, rules, and prior outputs to complete and continue real projects—not just answer isolated prompts." },
       { "question": "How is this different from the Floatboat Coworker?", "answer": "The Agent Workspace is the environment that holds context and resources over time. The Coworker is a Work Agent you can give a bounded task to and receive a deliverable from." },
       { "question": "Does local-first mean nothing ever leaves my computer?", "answer": "No. Local-first means work begins from your real desktop environment and files. Data handling still depends on the cloud models and connectors you choose, so each external path should be evaluated separately." },
-      { "question": "Can more than one agent work in the same workspace?", "answer": "Yes. Floatboat supports multiple agents working from shared project context, with human review, redirection, and approval remaining part of the process." }
+      { "question": "Can more than one agent work in the same workspace?", "answer": "Yes. Floatboat supports multiple agents working from shared project context, with human review, redirection, and approval remaining part of the process." },
+      {
+        "question": "What should stay with a project between agent runs?",
+        "answer": "Keep the brief, source files, project rules, accepted deliverables, and unresolved questions together. A transcript alone may omit why a decision was accepted or which file is authoritative."
+      },
+      {
+        "question": "When should I start a separate workspace?",
+        "answer": "Use a separate project when the client, access permissions, source material, or acceptance criteria change. This makes the intended context boundary explicit; still check which files and tools each task can access."
+      }
     ]
   },
   "finalCta": {
-    "eyebrow": "Keep the project intact",
     "title": "Continue the same agent project tomorrow",
     "description": "Reopen the same files, rules, agent decisions, and draft deliverable instead of rebuilding context in a new chat.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=final_cta" }

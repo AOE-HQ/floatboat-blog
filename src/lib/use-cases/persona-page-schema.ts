@@ -34,11 +34,9 @@ export const personaPageSchema = z.object({
   }),
   breadcrumb: z.string().min(1),
   hero: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     primaryCta: linkSchema,
-    secondaryCta: linkSchema,
     proof: z.array(z.string().min(1)).min(3),
     preview: z.object({
       label: z.string().min(1),
@@ -49,13 +47,11 @@ export const personaPageSchema = z.object({
     }),
   }),
   burdens: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     items: z.array(cardSchema).min(4),
   }),
   buildingBlocks: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     items: z.array(z.object({
@@ -65,7 +61,6 @@ export const personaPageSchema = z.object({
     })).min(5),
   }).optional(),
   workflows: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     items: z.array(z.object({
@@ -78,7 +73,6 @@ export const personaPageSchema = z.object({
     })).min(3),
   }),
   customization: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     inputsLabel: z.string().min(1),
@@ -87,13 +81,11 @@ export const personaPageSchema = z.object({
     controls: z.array(z.string().min(1)).min(4),
   }).optional(),
   progression: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     items: z.array(cardSchema).min(3),
   }).optional(),
   boundaries: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     assistsTitle: z.string().min(1),
@@ -111,7 +103,6 @@ export const personaPageSchema = z.object({
     })).min(7),
   }),
   finalCta: z.object({
-    eyebrow: z.string().min(1),
     title: z.string().min(1),
     description: z.string().min(1),
     primaryCta: linkSchema,

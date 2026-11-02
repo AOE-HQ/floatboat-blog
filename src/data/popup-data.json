@@ -1622,12 +1622,12 @@
     },
     "gpt-6-1-sol": {
       "en": {
-        "title": "GPT-6.1 Sol is not currently a Floatboat model",
-        "body": "For Floatboat workflows, choose from the confirmed model directory and compare supported options against the same files and acceptance criteria."
+        "title": "Check the GPT-6.1 Sol entry for your workflow",
+        "body": "Floatboat’s pricing page now lists GPT-6.1 Sol. Compare the model directory, then confirm your current client entry and account eligibility before testing a workflow."
       },
       "zh": {
-        "title": "GPT-6.1 Sol 目前不是 Floatboat 支持模型",
-        "body": "在 Floatboat 中请从已确认的模型目录选择，并用相同文件与验收标准比较现有选项。"
+        "title": "先确认 GPT-6.1 Sol 的实际入口",
+        "body": "Floatboat 价格页已列出 GPT-6.1 Sol。先查看模型目录，再核对当前客户端入口与账号资格，然后测试具体工作流。"
       }
     },
     "openai-devday-2026-announcements": {

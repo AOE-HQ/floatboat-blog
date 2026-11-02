@@ -7,7 +7,6 @@ export function FinalCta({
   description,
   primary,
 }: {
-  eyebrow?: string;
   title: string;
   description: string;
   primary: Action;

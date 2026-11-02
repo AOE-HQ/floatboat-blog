@@ -16,16 +16,11 @@
   },
   "breadcrumb": "研究人员与洞察团队",
   "hero": {
-    "eyebrow": "处理证据准备工作的 Work Agent",
     "title": "面向研究人员与洞察团队的 Work Agent",
     "description": "集中收集资料、构建证据矩阵、比较研究结论并持续维护研究简报，同时保留人工核验与方法判断。",
     "primaryCta": {
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-researchers&download_placement=hero"
-    },
-    "secondaryCta": {
-      "label": "查看示例流程",
-      "href": "#workflows"
     },
     "proof": [
       "基于你核准的资料工作",
@@ -49,7 +44,6 @@
     }
   },
   "burdens": {
-    "eyebrow": "专业工作周围的重复劳动",
     "title": "研究人员与洞察团队的时间，不该耗在反复整理上。",
     "description": "当资料收集快于分类、笔记失去来源、冲突结论被压成方便的摘要时，研究质量就开始下降。",
     "items": [
@@ -76,7 +70,6 @@
     ]
   },
   "buildingBlocks": {
-    "eyebrow": "研究 Work Agent 可以准备什么",
     "title": "把研究判断周围的来源工作交给 Work Agent。",
     "description": "Work Agent 遵循资料集、提取结构、纳入规则与核查点，不替研究者决定证据权重或解释。",
     "items": [
@@ -113,7 +106,6 @@
     ]
   },
   "workflows": {
-    "eyebrow": "可以交给研究 Work Agent 的三项任务",
     "title": "先建立可追溯的证据路径，再形成结论。",
     "description": "每项任务都从明确问题、来源集与协议开始，返回可检查的成果，并在证据解释前停下。",
     "items": [
@@ -159,7 +151,6 @@
     ]
   },
   "customization": {
-    "eyebrow": "你的方法仍然是方法",
     "title": "教会 Work Agent 遵循你的研究协议。",
     "description": "为每项研究配置问题、来源集、纳入规则、提取字段、引文要求和审阅节点。",
     "inputsLabel": "定义工作背景",
@@ -180,7 +171,6 @@
     ]
   },
   "progression": {
-    "eyebrow": "从一次任务到可复用系统",
     "title": "先从边界清晰的资料集开始，只教 Work Agent 复用经过验证的方法。",
     "description": "Work Agent 可以复用已验证的研究协议，但不会把研究变成无人监督的综合。",
     "items": [
@@ -202,7 +192,6 @@
     ]
   },
   "boundaries": {
-    "eyebrow": "人工控制",
     "title": "让 Work Agent 准备证据，不替研究者解释证据。",
     "description": "Work Agent 可以整理选定资料集并呈现模式；研究人员负责定义协议、核验记录、衡量证据并解释发现。",
     "assistsTitle": "Floatboat 可以协助准备",
@@ -258,7 +247,6 @@
     ]
   },
   "finalCta": {
-    "eyebrow": "形成研究结论之前",
     "title": "先建证据矩阵，再写综合结论",
     "description": "先确定资料集与提取字段；研究摘要进入审阅时，每个关键发现都能找到来源。",
     "primaryCta": {

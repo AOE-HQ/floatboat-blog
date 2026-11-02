@@ -7,7 +7,7 @@
       },
       {
         "question": "What is the difference between Auto Mode and choosing a model?",
-        "answer": "Auto Mode delegates routing to the available configuration; choosing a model gives you a known model target for the task. Use an explicit selection when consistent comparisons or a specific supported capability matter."
+        "answer": "Auto is the name used in the model directory; the current user guide calls the automatic routing entry Lite mode. An explicit model choice fixes the requested target, while automatic routing delegates that choice. Confirm the names and entries shown in your client."
       },
       {
         "question": "Why is an image or video model missing from the chat picker?",
@@ -15,7 +15,7 @@
       },
       {
         "question": "Does a configured model mean I can select it now?",
-        "answer": "No. A capacity budget or protocol adapter can exist before a model is exposed in the client. Read the availability label and individual page rather than treating every directory entry as immediately selectable."
+        "answer": "No. A configuration record, a public pricing listing, and a selectable client entry are different kinds of evidence. The directory records them separately, because the online menu and account eligibility can change."
       },
       {
         "question": "Is the largest context window always the best choice?",
@@ -33,7 +33,7 @@
       },
       {
         "question": "自动模式与手动选模型有什么区别？",
-        "answer": "自动模式把路由交给当前配置，手动选择则为任务指定模型。需要可重复对比或明确使用某项已支持能力时，指定模型更容易核对。"
+        "answer": "模型目录使用 Auto 名称，当前用户指南将自动路由入口称为 Lite mode。指定模型会固定请求目标，自动模式则交由路由选择；以客户端实际显示的名称和入口为准。"
       },
       {
         "question": "为什么图像或视频模型不在对话选择器里？",
@@ -41,7 +41,7 @@
       },
       {
         "question": "完成底层配置就代表现在可以选择吗？",
-        "answer": "不代表。容量预算或协议适配可以先于客户端入口存在。应查看可用状态和具体页面，不能把目录内所有条目都当成已经上架。"
+        "answer": "不代表。底层配置、价格页公开展示和客户端实际可选是不同证据。目录分别记录这些状态，因为在线菜单与账号开放范围会变化。"
       },
       {
         "question": "上下文窗口越大就越适合吗？",

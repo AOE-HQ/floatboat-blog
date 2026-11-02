@@ -1,3 +1,4 @@
+import { FaqBand } from "@/components/faq-band";
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
 import { RelatedPageLinks } from "@/components/related-page-links";
@@ -11,14 +12,8 @@ import { featurePath } from "@/lib/landing/core-feature-pages";
 
 const SITE_ORIGIN = "https://floatboat.ai";
 
-function Cta({ href, label, primary = false }: { href: string; label: string; primary?: boolean }) {
-  const classes = `inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition ${primary ? "bg-[var(--ob-color-primary)] text-[var(--ob-color-text)] hover:bg-[var(--ob-color-primary-hover)]" : "border border-black/10 bg-white/55 text-[var(--ob-color-text)] hover:bg-white"}`;
-  return href.startsWith("/") ? <Link href={href} className={classes}>{label}</Link> : <a href={href} className={classes}>{label}</a>;
-}
-
-function SectionHeading({ eyebrow, title, description, inverted = false }: { eyebrow?: string; title: string; description: string; inverted?: boolean }) {
+function SectionHeading({ title, description, inverted = false }: { title: string; description: string; inverted?: boolean }) {
   return <div className="mx-auto mb-10 max-w-3xl text-center">
-    {eyebrow && <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{eyebrow}</p>}
     <h2 className="font-serif text-3xl tracking-[-0.03em] sm:text-5xl">{title}</h2>
     <p className={`mx-auto mt-4 max-w-2xl text-base leading-7 sm:text-lg ${inverted ? "text-white/65" : "text-[var(--ob-color-text-subtle)]"}`}>{description}</p>
   </div>;
@@ -39,15 +34,6 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
     },
     {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: page.faq.items.map((item) => ({
-        "@type": "Question",
-        name: item.question,
-        acceptedAnswer: { "@type": "Answer", text: item.answer },
-      })),
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: isZh ? "首页" : "Home", item: `${SITE_ORIGIN}${isZh ? "/zh" : ""}` },
@@ -62,28 +48,26 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       <span className="mx-2">/</span><span>{page.breadcrumb}</span>
     </nav>
 
-    <MarketingHero eyebrow={page.hero.eyebrow} title={page.hero.title} description={page.hero.description} />
+    <MarketingHero layout="centered" title={page.hero.title} description={page.hero.description}
+      action={page.hero.primaryCta}
+      metadata={<ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">{page.hero.proof.map((item) => <li key={item}>{item}</li>)}</ul>}
+      media={{ kind: "demo", label: page.demo.title, content: <FeatureDemo items={page.scenario.steps.map((step) => step.title)} locale={page.locale} /> }}
+    />
 
     <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 lg:pb-24">
-      <FeatureDemo items={page.scenario.steps.map((step) => step.title)} locale={page.locale} />
       <div className="mx-auto mt-8 max-w-3xl text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{page.demo.eyebrow}</p>
         <h2 className="mt-2 font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{page.demo.title}</h2>
         <p className="mt-2 text-sm leading-6 text-[var(--ob-color-text-subtle)]">{page.demo.description}</p>
+        {page.demo.relatedLink && <p className="mt-4 text-sm"><Link href={page.demo.relatedLink.href} className="underline underline-offset-4">{page.demo.relatedLink.label}</Link></p>}
       </div>
-      <div className="mt-6 flex flex-wrap justify-center gap-3"><Cta {...page.hero.primaryCta} primary /><Cta {...page.hero.secondaryCta} /></div>
-      <ul className="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-[var(--ob-color-muted)]">
-        {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-[var(--ob-color-text)]">✓</span>{item}</li>)}
-      </ul>
     </section>
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading {...page.features} />
         <div className="grid gap-5 md:grid-cols-3">
-          {page.features.items.map((item, index) => <article key={item.title} className="rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-7 shadow-[var(--ob-shadow-raised)]">
-            <span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-muted)]">0{index + 1} · {item.label}</span>
-            <h3 className="mt-8 font-serif text-2xl tracking-tight">{item.title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p>
+          {page.features.items.map((item) => <article key={item.title} className="rounded-3xl border border-black/[0.07] bg-[var(--ob-color-surface)] p-7 shadow-[var(--ob-shadow-raised)]">
+            <h3 className="font-serif text-2xl tracking-tight">{item.title}</h3><p className="mt-3 text-sm text-[var(--ob-color-muted)]">{item.label}</p><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{item.description}</p>
           </article>)}
         </div>
       </div>
@@ -91,7 +75,7 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
 
     <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
       <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-        <div><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--ob-color-accent)]">{page.scenario.eyebrow}</p><h2 className="mt-3 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{page.scenario.title}</h2><p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{page.scenario.description}</p></div>
+        <div><h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{page.scenario.title}</h2><p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{page.scenario.description}</p></div>
         <div className="space-y-3">{page.scenario.steps.map((step, index) => <div key={step.title} className="flex gap-5 rounded-2xl border border-black/[0.07] bg-white/45 p-5"><span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#24221f] text-xs text-white">{index + 1}</span><div><h3 className="font-semibold">{step.title}</h3><p className="mt-1 leading-6 text-[var(--ob-color-text-subtle)]">{step.description}</p></div></div>)}</div>
       </div>
     </section>
@@ -104,9 +88,9 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
 
     <RelatedPageLinks family="features" currentId={page.slug} locale={page.locale} />
 
-    <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8 sm:py-28"><h2 className="mb-8 text-center font-serif text-4xl tracking-tight sm:text-5xl">{page.faq.title}</h2><div className="space-y-3">{page.faq.items.map(item => <details key={item.question} className="group rounded-2xl border border-black/[0.07] bg-white/45 p-5"><summary className="cursor-pointer list-none pr-8 font-semibold">{item.question}<span className="float-right text-xl group-open:rotate-45">+</span></summary><p className="mt-4 max-w-3xl leading-7 text-[var(--ob-color-text-subtle)]">{item.answer}</p></details>)}</div></section>
+    <FaqBand locale={page.locale} title={page.faq.title} items={page.faq.items} />
 
-    <FinalCta eyebrow={page.finalCta.eyebrow} title={page.finalCta.title} description={page.finalCta.description} primary={page.finalCta.primaryCta} />
+    <FinalCta title={page.finalCta.title} description={page.finalCta.description} primary={page.finalCta.primaryCta} />
 
     {jsonLd.map((item, index) => <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }} />)}
   </div>;
