@@ -8,7 +8,7 @@
   },
   "summary": {
     "en": "MiniMax M2 has a configured 1M low-cost profile below the picker.",
-    "zh": "MiniMax M2 已配置 1M 低成本画像，当前未在主选择器露出。"
+    "zh": "MiniMax M2 已配置 1M 低成本画像，旧记录未显示主选择器入口，当前需查看实际菜单。"
   },
   "seo": {"title":{"en":"MiniMax M2 Model: 1M Context Profile, Capabilities and Use Cases","zh":"MiniMax M2 模型：1M 上下文画像、能力与用途"},"description":{"en":"Learn about MiniMax M2, its exact model ID, configured 1M low-cost profile, long-text workload role, media boundaries, and current status.","zh":"了解 MiniMax M2 的准确 Model ID、1M 低成本画像、长文本工作负载定位、媒体能力边界与当前状态。"},"keywords":[{"en":"MiniMax M2","zh":"MiniMax M2"},{"en":"MiniMax model","zh":"MiniMax 模型"},{"en":"MiniMax 1M context","zh":"MiniMax 1M 上下文"},{"en":"minimax-m2","zh":"minimax-m2"}]},
   "hero": {
@@ -39,7 +39,7 @@
     },
     {
       "label": { "en": "Availability", "zh": "可用状态" },
-      "value": { "en": "Not in main picker", "zh": "未在主选择器露出" }
+      "value": { "en": "Historical configuration", "zh": "旧记录未显示选择器入口" }
     }
   ],
   "positioning": {
@@ -97,13 +97,20 @@
     },
     "items": [
       {
-        "label": { "en": "Economic profile", "zh": "经济画像" },
+        "label": {
+          "en": "Economic profile",
+          "zh": "经济画像"
+        },
         "title": "minimax-m2",
         "description": {
           "en": "1M low-cost capacity profile.",
           "zh": "1M 低成本容量画像。"
         },
-        "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" }
+        "meta": {
+          "en": "Not in the main picker",
+          "zh": "旧记录未显示选择器入口"
+        },
+        "availability": "configured"
       }
     ]
   },
@@ -113,7 +120,7 @@
       "zh": "已配置价值在于以较低成本画像承载持续处理。"
     },
     "description": {
-      "en": "These tasks match the configured capacity role. MiniMax M2 is not currently available through the main client picker.",
+      "en": "These tasks match the configured capacity role. MiniMax M2 was absent from the October 9, 2026 main-picker record; check the current client menu.",
       "zh": "以下属于容量场景，不代表当前可以直接使用。"
     },
     "items": [
@@ -264,7 +271,7 @@
     {"question":{"en":"What is the MiniMax M2 model ID?","zh":"MiniMax M2 的 Model ID 是什么？"},"answer":{"en":"The exact configured model ID is `minimax-m2`.","zh":"准确配置的 Model ID 是 `minimax-m2`。"}},
     {"question":{"en":"How large is the MiniMax M2 context profile?","zh":"MiniMax M2 的上下文有多大？"},"answer":{"en":"The registered economic profile carries a 1M capacity budget.","zh":"已登记的经济画像包含 1M 容量预算。"}},
     {"question":{"en":"What is MiniMax M2 best suited for?","zh":"MiniMax M2 适合什么任务？"},"answer":{"en":"Its confirmed role is long, cost-sensitive textual processing rather than image or video generation.","zh":"其已确认定位是对成本敏感的长文本处理，而不是图像或视频生成。"}},
-    {"question":{"en":"What is the current MiniMax M2 support status?","zh":"MiniMax M2 当前是什么支持状态？"},"answer":{"en":"Its protocol and 1M economic profile are configured, but it is not currently exposed in the main picker.","zh":"其协议与 1M 经济画像已配置，但当前未在主选择器露出。"}},
+    {"question":{"en":"What is the current MiniMax M2 support status?","zh":"MiniMax M2 当前是什么支持状态？"},"answer":{"en":"Its protocol and 1M economic profile are configured, but it was absent from the October 9, 2026 main-picker record; current access needs a fresh check.","zh":"其协议与 1M 经济画像已配置，但旧记录未显示主选择器入口，当前需查看实际菜单。"}},
     {
       "question": {
         "en": "What should I measure in a MiniMax multi-step coding trial?",
@@ -278,12 +285,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Need an efficient route while MiniMax M2 stays configured",
-      "zh": "MiniMax M2 尚未开放，先比较高用量任务的选择"
+      "en": "Compare models for high-volume text work",
+      "zh": "比较高用量文本任务的模型入口"
     },
     "description": {
-      "en": "MiniMax M2 has a cost-oriented profile below the picker, not a public selection. Compare live models for high-volume text work.",
-      "zh": "MiniMax M2 已配置低成本经济画像，但还未进入主选择器；高用量文本任务可先比较已上线的模型。"
+      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
+      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
     }
   }
 }

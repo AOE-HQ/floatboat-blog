@@ -1,6 +1,6 @@
 {
   "slug": "auto-mode",
-  "name": "Auto Mode",
+  "name": "Auto / Lite Mode",
   "access": "picker",
   "badge": { "en": "Default", "zh": "默认" },
   "summary": {
@@ -10,12 +10,12 @@
   "seo": {"title":{"en":"AI Model Router and Automatic Model Selection | Floatboat Auto Mode","zh":"AI 模型自动路由与智能选择｜Floatboat 畅用模式"},"description":{"en":"Learn how an AI model router selects models by task complexity, context, modality, speed, and availability, with automatic fallback when a route is unavailable.","zh":"了解 AI 模型自动路由如何根据任务复杂度、上下文、输入模态、速度与可用性选择模型，并在路径不可用时自动降级。"},"keywords":[{"en":"AI model router","zh":"AI 模型路由"},{"en":"automatic model selection","zh":"自动选择模型"},{"en":"LLM routing","zh":"大模型智能路由"},{"en":"Auto Mode","zh":"畅用模式"}]},
   "hero": {
     "title": {
-      "en": "AI model routing that selects the right model for each task.",
-      "zh": "根据任务自动选择模型的 AI 智能路由。"
+      "en": "Auto / Lite Mode: let the workspace route the task.",
+      "zh": "Auto / Lite 模式：让工作空间为任务选择模型。"
     },
     "description": {
-      "en": "Auto Mode weighs reasoning depth, context size, modality, and response speed, then keeps the result in the same workspace.",
-      "zh": "Auto Mode 综合判断推理深度、上下文规模、输入模态与响应速度，再把结果留在同一个工作空间。"
+      "en": "The model directory calls this Auto Mode; the user guide calls the automatic routing entry Lite mode. Choose the automatic option shown in your client, then switch models when the assignment needs it.",
+      "zh": "模型目录使用 Auto Mode 名称，用户指南将自动路由入口称为 Lite mode。以客户端实际显示的自动模式为准，再按任务需要切换模型。"
     },
     "prompts": [
       { "en": "Plan a difficult project", "zh": "规划复杂项目" },
@@ -106,40 +106,68 @@
     },
     "items": [
       {
-        "label": { "en": "Deliberate", "zh": "深度" },
+        "label": {
+          "en": "Deliberate",
+          "zh": "深度"
+        },
         "title": "Reasoning",
         "description": {
           "en": "Planning, proofs, architecture, and difficult debugging.",
           "zh": "规划、证明、架构设计与疑难调试。"
         },
-        "meta": { "en": "Higher deliberation", "zh": "更高推理强度" }
+        "meta": {
+          "en": "Higher deliberation",
+          "zh": "更高推理强度"
+        },
+        "availability": "routing"
       },
       {
-        "label": { "en": "Large input", "zh": "长输入" },
+        "label": {
+          "en": "Large input",
+          "zh": "长输入"
+        },
         "title": "Long context",
         "description": {
           "en": "Repositories, research collections, and long documents.",
           "zh": "代码库、研究资料与长文档。"
         },
-        "meta": { "en": "Context-oriented", "zh": "上下文优先" }
+        "meta": {
+          "en": "Context-oriented",
+          "zh": "上下文优先"
+        },
+        "availability": "routing"
       },
       {
-        "label": { "en": "Multimodal", "zh": "多模态" },
+        "label": {
+          "en": "Multimodal",
+          "zh": "多模态"
+        },
         "title": "Vision & media",
         "description": {
           "en": "Screenshots, diagrams, images, and mixed inputs.",
           "zh": "截图、图表、图像与混合输入。"
         },
-        "meta": { "en": "Image + text", "zh": "图像与文本" }
+        "meta": {
+          "en": "Image + text",
+          "zh": "图像与文本"
+        },
+        "availability": "routing"
       },
       {
-        "label": { "en": "Everyday", "zh": "日常" },
+        "label": {
+          "en": "Everyday",
+          "zh": "日常"
+        },
         "title": "Fast work",
         "description": {
           "en": "Drafting, classification, and lightweight edits.",
           "zh": "起草、分类与轻量修改。"
         },
-        "meta": { "en": "Lower latency", "zh": "更低延迟" }
+        "meta": {
+          "en": "Lower latency",
+          "zh": "更低延迟"
+        },
+        "availability": "routing"
       }
     ]
   },

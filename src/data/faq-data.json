@@ -88,7 +88,7 @@
         },
         {
           "question": "Does Floatboat support GPT-6.1 Sol?",
-          "answer": "No. GPT-6.1 Sol is not in Floatboat's currently confirmed model selector or supported-model matrix. This article analyzes the OpenAI model and should not be read as a Floatboat integration announcement."
+          "answer": "Floatboat’s official pricing page checked on November 2, 2026 lists GPT-6.1 Sol. Earlier claims that it was not listed are outdated. Exact runtime IDs, client access, and plan eligibility have not been independently verified; confirm the current entry before building a workflow around it."
         },
         {
           "question": "Does GPT-6.1 Sol support images and tools?",
@@ -124,7 +124,7 @@
         },
         {
           "question": "Floatboat 支持 GPT-6.1 Sol 吗？",
-          "answer": "不支持。GPT-6.1 Sol 不在 Floatboat 当前确认的客户端选择器或支持模型矩阵中。本文只是分析 OpenAI 模型，不能理解为 Floatboat 集成公告。"
+          "answer": "2026 年 11 月 2 日核对的 Floatboat 官方价格页已展示 GPT-6.1 Sol，此前“尚未列出”的说法已过时。准确运行时 ID、客户端入口与套餐资格尚未独立核实，围绕它构建工作流前应核对当前菜单。"
         },
         {
           "question": "GPT-6.1 Sol 支持图片和哪些工具？",

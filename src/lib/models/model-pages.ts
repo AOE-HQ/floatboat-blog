@@ -26,7 +26,21 @@ export type ModelSlug = (typeof MODEL_SLUGS)[number];
 export type ModelLocale = "en" | "zh";
 
 type Localized = { en: string; zh: string };
+export type ModelAvailability = "picker" | "combo" | "configured" | "announced" | "routing";
+const AVAILABILITY_LABELS: Record<ModelAvailability, Localized> = {
+  picker: { en: "Recorded chat entry", zh: "已有对话接入记录" },
+  combo: { en: "Recorded Combo entry", zh: "已有 Combo 接入记录" },
+  configured: { en: "Configuration record", zh: "底层配置记录" },
+  announced: { en: "Listed on pricing page", zh: "价格页已展示" },
+  routing: { en: "Automatic routing", zh: "自动路由" },
+};
+export function modelAvailabilityLabel(availability: ModelAvailability, locale: ModelLocale) {
+  return AVAILABILITY_LABELS[availability][locale];
+}
+
 type Card = {
+  availability: ModelAvailability;
+  source?: { url: string; checkedAt: string };
   label: Localized;
   title: string;
   description: Localized;

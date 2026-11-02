@@ -2,6 +2,7 @@
 title: "GPT-6.1 Sol: Pricing, Benchmarks, Availability, and How It Compares"
 description: "GPT-6.1 Sol brings near-Astra coding, computer use, and professional-work performance at one-fifth of Astra's token prices. Here is what the numbers do—and do not—mean."
 slug: "gpt-6-1-sol"
+updated: "2026-11-02"
 date: "2026-10-06"
 author: "Floatboat"
 category: "Model & Benchmarks"
@@ -12,7 +13,7 @@ draft: false
 
 GPT-6.1 Sol is OpenAI’s cost-performance model for complex coding, computer use, professional documents, and multi-step agent work. Its standard short-context API rates are one-fifth of GPT-6 Astra’s input and output rates, while OpenAI reports results close to Astra on several agentic evaluations.
 
-That headline needs two qualifications. First, “one-fifth” describes the rate card, not the cost of every completed task. Long context, reasoning tokens, processing tier, tool fees, retries, and acceptance rate all affect the bill. Second, OpenAI availability does not imply Floatboat availability: **GPT-6.1 Sol is not in Floatboat’s current supported-model matrix or client selector.** This page analyzes the OpenAI model; it does not announce a Floatboat integration.
+That headline needs two qualifications. First, “one-fifth” describes the rate card, not the cost of every completed task. Long context, reasoning tokens, processing tier, tool fees, retries, and acceptance rate all affect the bill. Second, provider availability and client access need separate checks. As of November 2, 2026, [Floatboat’s pricing page](https://floatboat.ai/pricing) names GPT-6.1 Sol. That confirms a public listing; the exact runtime ID, client exposure, and account eligibility have not been independently verified here.
 
 ## GPT-6.1 Sol at a glance
 
@@ -48,9 +49,9 @@ Do not convert API dollars into assumed subscription usage. OpenAI publishes a s
 
 ### Floatboat support status
 
-GPT-6.1 Sol does **not** belong to Floatboat’s currently confirmed supported models. It is absent from the current client selector and from the confirmed bottom-layer model registry. Floatboat’s supported OpenAI chat model is GPT-6 Astra; configured OpenAI capacity also includes specific GPT-5.6 and GPT-5.3 Codex models, not GPT-6.1 Sol.
+On November 2, 2026, [Floatboat’s pricing page](https://floatboat.ai/pricing) publicly lists GPT-6.1 Sol alongside GPT-6 Sol, GPT-6 Luna, and Astra. The [OpenAI model directory](/models/openai) distinguishes this public listing from older client and configuration records.
 
-For GPT-6.1 Sol, use the supported OpenAI API, Codex, or ChatGPT Work entry point. Publication on the Floatboat website does not indicate that this model is available in the Floatboat client.
+A pricing-page listing does not establish the exact model ID sent by Floatboat, availability for every plan, or the tools enabled through that route. Check the current client menu and account eligibility before designing a workflow around this model. The API capabilities discussed below describe OpenAI’s interface, not a test of Floatboat’s implementation.
 
 ## Pricing: short context, long context, and speed tiers
 
@@ -149,9 +150,9 @@ Luna is far cheaper and supports `none` reasoning. It is the better first test f
 
 An existing production model may have tuned prompts, known edge cases, and stable latency. The new model’s lower list price does not justify migration until it passes regression tests. The older [GPT-5.6 Sol, Terra, and Luna family](/blog/gpt-5-6-sol-terra-luna) also uses different capability and price assumptions; do not map family names mechanically.
 
-### Choose a supported Floatboat model for Floatboat workflows
+### Verify the Floatboat entry before committing a workflow
 
-GPT-6.1 Sol is not a Floatboat option today. If the task must run inside Floatboat, select from the current supported-model directory rather than designing around this model ID. This is a product-support constraint, not a judgment about the OpenAI model’s quality.
+For work inside Floatboat, first confirm that your client exposes the intended GPT-6.1 Sol entry and that your plan can use it. Then test the actual tool and approval loop with a bounded assignment. The official pricing listing establishes the name; it does not establish that every OpenAI API feature is available through the Floatboat route.
 
 ## A decision-grade evaluation checklist
 
@@ -174,4 +175,4 @@ Use the Responses API when tools are part of the test. Keep the same system inst
 
 GPT-6.1 Sol is a credible OpenAI default candidate for complex work where Astra-level pricing is difficult to sustain. Its 1.05M window, 128K maximum output, image input, broad Responses API tool support, and five reasoning efforts make it flexible. Its short-context Standard rates are $2 input, $0.10 cached input, $2.50 cache writes, and $10 output per million tokens.
 
-But cost changes after 272K input tokens, across processing tiers, and with regional processing. Benchmark results identify promising workloads; they do not replace evaluation. Most importantly for Floatboat readers, GPT-6.1 Sol is **not currently supported by Floatboat**. Test it only through the OpenAI channels that officially expose it, and choose models for Floatboat work from the current confirmed directory.
+But cost changes after 272K input tokens, across processing tiers, and with regional processing. Benchmark results identify promising workloads; they do not replace evaluation. For Floatboat readers, the status has changed: the official pricing page now lists GPT-6.1 Sol. Verify your current client entry and account eligibility, then evaluate the actual workflow rather than treating the public listing as proof of feature parity with the OpenAI API.

@@ -2,20 +2,20 @@
   "slug": "gemini",
   "name": "Gemini",
   "access": "picker",
-  "badge": { "en": "Google · Client picker", "zh": "Google · 客户端可选" },
+  "badge": { "en": "Google · Recorded chat entry", "zh": "Google · 已有对话入口记录" },
   "summary": {
-    "en": "Pro for long-context multimodal analysis; Flash for fast, high-throughput work.",
-    "zh": "Pro 面向长上下文多模态分析，Flash 面向快速高吞吐任务。"
+    "en": "Gemini 4 Argon is publicly listed; existing Pro, Flash, and image entries document different task and access paths.",
+    "zh": "Gemini 4 Argon 已公开列出；已有 Pro、Flash 与生图条目分别记录不同任务和使用入口。"
   },
-  "seo": {"title":{"en":"Gemini 3.1 Pro vs 3.8 Flash: Context, Features and Use Cases","zh":"Gemini 3.1 Pro 与 3.8 Flash：上下文、能力与用途对比"},"description":{"en":"Compare Gemini 3.1 Pro Preview and Gemini 3.8 Flash by 1M+ context, multimodal analysis, speed, image models, and suitable workloads.","zh":"对比 Gemini 3.1 Pro Preview 与 Gemini 3.8 Flash 的 1M+ 上下文、多模态分析、速度、生图型号与适用任务。"},"keywords":[{"en":"Gemini 3.1 Pro","zh":"Gemini 3.1 Pro"},{"en":"Gemini 3.8 Flash","zh":"Gemini 3.8 Flash"},{"en":"Gemini Pro vs Flash","zh":"Gemini Pro 和 Flash 对比"},{"en":"Gemini 1M context","zh":"Gemini 1M 上下文"}]},
+  "seo": {"title":{"en":"Gemini models: 4 Argon, Pro, Flash, and image generation.","zh":"Gemini 模型：4 Argon、Pro、Flash 与图像生成。"},"description":{"en":"Gemini 4 Argon now appears on Floatboat’s pricing page. Compare that public listing with the recorded Pro, Flash, and image routes, keeping aliases and exact model IDs distinct.","zh":"Floatboat 价格页现已展示 Gemini 4 Argon。本页同时整理 Pro、Flash 与生图入口记录，并区分展示别名与准确模型 ID。"},"keywords":[{"en":"Gemini 3.1 Pro","zh":"Gemini 3.1 Pro"},{"en":"Gemini 3.8 Flash","zh":"Gemini 3.8 Flash"},{"en":"Gemini Pro vs Flash","zh":"Gemini Pro 和 Flash 对比"},{"en":"Gemini 1M context","zh":"Gemini 1M 上下文"}]},
   "hero": {
     "title": {
-        "en": "Gemini 3.1 Pro vs 3.8 Flash.",
-        "zh": "Gemini 3.1 Pro 与 3.8 Flash 对比。"
+        "en": "Gemini models: 4 Argon, Pro, Flash, and image generation.",
+        "zh": "Gemini 模型：4 Argon、Pro、Flash 与图像生成。"
     },
     "description": {
-      "en": "Gemini 3.1 Pro Preview is the lane for large, mixed inputs. Gemini 3.8 Flash is the lane for quick turns and repeated lightweight work.",
-      "zh": "Gemini 3.1 Pro Preview 适合大型混合输入；Gemini 3.8 Flash 适合快速响应和重复轻量任务。"
+      "en": "Gemini 4 Argon now appears on Floatboat’s pricing page. Compare that public listing with the recorded Pro, Flash, and image routes, keeping aliases and exact model IDs distinct.",
+      "zh": "Floatboat 价格页现已展示 Gemini 4 Argon。本页同时整理 Pro、Flash 与生图入口记录，并区分展示别名与准确模型 ID。"
     },
     "prompts": [
       { "en": "Analyze this document set", "zh": "分析这组文档" },
@@ -25,10 +25,10 @@
   },
   "facts": [
     {
-      "label": { "en": "Live chat models", "zh": "已上线对话型号" },
+      "label": { "en": "Inventory scope", "zh": "型号范围" },
       "value": {
-        "en": "3.1 Pro Preview · 3.8 Flash",
-        "zh": "3.1 Pro Preview · 3.8 Flash"
+        "en": "Recorded routes + current pricing listings",
+        "zh": "已有接入记录 + 当前价格页型号"
       }
     },
     {
@@ -103,33 +103,47 @@
       "zh": "Pro 处理更大输入，Flash 更快完成周转。"
     },
     "description": {
-      "en": "Both are directly selectable, but they solve different bottlenecks.",
-      "zh": "两者都可直接选择，但解决的是不同瓶颈。"
+      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
+      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
     },
     "items": [
       {
-        "label": { "en": "Large & mixed", "zh": "大型混合输入" },
+        "label": {
+          "en": "Large & mixed",
+          "zh": "大型混合输入"
+        },
         "title": "gemini-3.1-pro-preview",
         "description": {
           "en": "Long-context understanding and multimodal image-text analysis.",
           "zh": "超长上下文理解与图文多模态分析。"
         },
         "meta": {
-          "en": "Client picker · Preview",
-          "zh": "客户端可选 · Preview"
-        }
+          "en": "Recorded chat entry · Preview",
+          "zh": "已有对话入口记录 · Preview"
+        },
+        "availability": "picker"
       },
       {
-        "label": { "en": "Fast & repeated", "zh": "快速重复任务" },
+        "label": {
+          "en": "Fast & repeated",
+          "zh": "快速重复任务"
+        },
         "title": "gemini-3.8-flash",
         "description": {
           "en": "Low-latency, high-throughput processing for frequent tasks.",
           "zh": "面向高频任务的低延迟、高吞吐处理。"
         },
-        "meta": { "en": "Client picker", "zh": "客户端可选" }
+        "meta": {
+          "en": "Recorded chat entry",
+          "zh": "已有对话入口记录"
+        },
+        "availability": "picker"
       },
       {
-        "label": { "en": "Live image Combo", "zh": "生图 Combo 已上线" },
+        "label": {
+          "en": "Nano Banana Pro record",
+          "zh": "Nano Banana Pro 接入记录"
+        },
         "title": "gemini-3-pro-image-preview",
         "description": {
           "en": "Complex generation, precision editing, multi-image redraw, and style fusion.",
@@ -138,18 +152,43 @@
         "meta": {
           "en": "Live · ai-image-drawing",
           "zh": "已上线 · ai-image-drawing"
-        }
+        },
+        "availability": "combo"
       },
       {
-        "label": { "en": "Live image Combo", "zh": "生图 Combo 已上线" },
+        "label": {
+          "en": "Live image Combo",
+          "zh": "生图 Combo 已上线"
+        },
         "title": "gemini-2.5-flash-image / gemini-3.1-flash-image-preview",
         "description": {
-          "en": "Fast image generation and local edits.",
-          "zh": "快速图片生成与局部改图。"
+          "en": "Recorded fast-image routes, including Gemini 3.1 Flash Image, known as Nano Banana 2. Provider version names may change; confirm the current entry.",
+          "zh": "已有快速生图接入记录，其中 Gemini 3.1 Flash Image 也称 Nano Banana 2。供应商版本名称可能变化，使用前核对当前入口。"
         },
         "meta": {
           "en": "Live · ai-image-drawing",
           "zh": "已上线 · ai-image-drawing"
+        },
+        "availability": "combo"
+      },
+      {
+        "label": {
+          "en": "Pricing-page listing",
+          "zh": "价格页已展示"
+        },
+        "title": "Gemini 4 Argon",
+        "description": {
+          "en": "Appears in Floatboat’s current pricing-page lineup. Its client entry and exact runtime model ID have not been independently verified; do not substitute a Gemini 3.x ID.",
+          "zh": "已出现在 Floatboat 当前价格页型号列表中。客户端入口与准确运行时 ID 尚未独立核实，不能用 Gemini 3.x 的 ID 代替。"
+        },
+        "meta": {
+          "en": "Client access not independently verified",
+          "zh": "客户端开放范围尚未独立核实"
+        },
+        "availability": "announced",
+        "source": {
+          "url": "https://floatboat.ai/pricing",
+          "checkedAt": "2026-11-02"
         }
       }
     ]
@@ -326,8 +365,8 @@
         "zh": "Gemini 3.1 Pro 仍是预览版吗？"
       },
       "answer": {
-        "en": "The current client identifier is `gemini-3.1-pro-preview`. Preview identifies a pre-release model version and does not indicate general availability.",
-        "zh": "当前客户端使用的标识为 `gemini-3.1-pro-preview`，其中 Preview 表示预览版本，不等于全面正式发布。"
+        "en": "The recorded Floatboat ID is `gemini-3.1-pro-preview`. This is an integration identifier from the earlier snapshot, not a claim about every current Google release; check the actual client entry.",
+        "zh": "Floatboat 较早接入记录中的 ID 为 `gemini-3.1-pro-preview`。它不能用于判断 Google 当前所有版本的发布状态，使用时应核对客户端实际入口。"
       }
     },
     {
@@ -366,8 +405,8 @@
         "zh": "Gemini 3.1 Pro 的 Model ID 是什么？"
       },
       "answer": {
-        "en": "The standard model ID is `gemini-3.1-pro-preview`; `3.1-pro` and Gemini 3.1 Pro are display aliases for the same model.",
-        "zh": "标准 Model ID 是 `gemini-3.1-pro-preview`；`3.1-pro` 与 Gemini 3.1 Pro 是同一模型的展示别名。"
+        "en": "The earlier Floatboat record uses `gemini-3.1-pro-preview`, with `3.1-pro` as a display alias. Preserve the exact ID shown by the current integration rather than assuming provider naming has not changed.",
+        "zh": "较早的 Floatboat 记录使用 `gemini-3.1-pro-preview`，展示别名为 `3.1-pro`。应保留当前接入实际提供的准确 ID，不要假定供应商命名始终不变。"
       }
     },
     {
@@ -378,6 +417,16 @@
       "answer": {
         "en": "Plant a few verifiable questions across the source set and ask for references to the relevant files or passages. Check contradictory and low-salience details as well as the summary; fitting material into a window does not show that every part influenced the answer.",
         "zh": "从材料不同位置选择几个可核验的问题，要求标明文件或段落。除摘要外，也检查矛盾和不显眼的细节；资料能放进窗口，不代表每一部分都真正影响了回答。"
+      }
+    },
+    {
+      "question": {
+        "en": "Is Gemini 4 Argon the same entry as Gemini 3.1 Pro?",
+        "zh": "Gemini 4 Argon 与 Gemini 3.1 Pro 是同一个入口吗？"
+      },
+      "answer": {
+        "en": "No equivalence has been confirmed. Floatboat’s pricing page names Gemini 4 Argon separately; retain the distinction and use the model name and entry actually exposed in the client.",
+        "zh": "目前没有确认它们等价。Floatboat 价格页单独列出了 Gemini 4 Argon，应保留版本区别，并使用客户端实际提供的名称和入口。"
       }
     }
   ],

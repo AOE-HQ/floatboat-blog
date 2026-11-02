@@ -2,6 +2,7 @@
 title: "GPT-6.1 Sol 详解：价格、性能、开放范围与模型对比"
 description: "GPT-6.1 Sol 以 Astra 五分之一的标准 token 价格，提供接近 Astra 的编程、电脑操作与专业工作能力。本文解释这些数字真正意味着什么。"
 slug: "gpt-6-1-sol"
+updated: "2026-11-02"
 date: "2026-10-06"
 author: "Floatboat"
 category: "Model & Benchmarks"
@@ -12,7 +13,7 @@ draft: false
 
 GPT-6.1 Sol 是 OpenAI 为复杂编程、电脑操作、专业文档和多步骤 Agent 工作提供的性价比型号。在标准短上下文价格中，它的输入和输出单价都是 GPT-6 Astra 的五分之一；OpenAI 公布的多项 Agent 评测结果则接近 Astra。
 
-这句话有两个重要边界。第一，「五分之一」只是价目表单价，并不保证每项任务都便宜 80%。长上下文、推理 Token、处理速度档位、工具费、重试和最终通过率都会改变账单。第二，OpenAI 已上线不等于 Floatboat 已接入：**GPT-6.1 Sol 不在 Floatboat 当前确认的支持矩阵和客户端模型选择器中。**本文分析 OpenAI 模型，不代表 Floatboat 集成公告。
+这句话有两个重要边界。第一，「五分之一」只是价目表单价，并不保证每项任务都便宜 80%。长上下文、推理 Token、处理速度档位、工具费、重试和最终通过率都会改变账单。第二，供应商开放与客户端可用需要分别核对。截至 2026 年 11 月 2 日，[Floatboat 价格页](https://floatboat.ai/pricing)已展示 GPT-6.1 Sol。这能确认公开列出，但本文尚未独立验证准确运行时 ID、客户端入口及具体账号资格。
 
 ## GPT-6.1 Sol 参数总览
 
@@ -46,11 +47,11 @@ OpenAI 于 2026 年 9 月 29 日向 API 发布 `gpt-6.1-sol`。符合条件的 P
 
 API 美元价格不能直接换算成订阅额度。OpenAI 对企业 Token 用量另有 Rate Card，而套餐内限制由具体计划决定。
 
-### Floatboat 当前没有接入
+### Floatboat 已公开列出，具体入口需核对
 
-GPT-6.1 Sol **不属于 Floatboat 当前确认的受支持模型**，既没有进入客户端选择器，也没有登记在已确认的底层模型目录。Floatboat 当前支持的 OpenAI 对话模型是 GPT-6 Astra；底层容量还登记了指定的 GPT-5.6 与 GPT-5.3 Codex 型号，但不包含 GPT-6.1 Sol。
+2026 年 11 月 2 日核对的 [Floatboat 价格页](https://floatboat.ai/pricing)，已将 GPT-6.1 Sol 与 GPT-6 Sol、GPT-6 Luna 和 Astra 一同列出。[OpenAI 模型目录](/zh/models/openai)会区分这类公开型号与更早的客户端、底层配置记录。
 
-使用 GPT-6.1 Sol 需要通过支持该型号的 OpenAI API、Codex 或 ChatGPT Work 入口；文章发布在 Floatboat 网站，并不表示 Floatboat 客户端已支持该型号。
+价格页列出名称，不足以证明 Floatboat 实际发送的模型 ID、所有套餐的开放范围，或该入口支持的工具。围绕这一型号设计工作流前，先查看当前客户端菜单和账号资格。下文的 API 能力介绍属于 OpenAI 接口说明，不是对 Floatboat 实现的实测。
 
 ## 价格：上下文阈值与不同处理档位
 
@@ -149,9 +150,9 @@ Luna 价格明显更低，并支持 `none` 推理。分类、路由、提取和�
 
 已有生产模型可能已经配好 Prompt、边界案例和稳定延迟。新模型价目表更低，不代表迁移一定有价值；只有回归测试通过才应替换。上一代 [GPT-5.6 Sol、Terra 与 Luna](/zh/blog/gpt-5-6-sol-terra-luna)采用不同能力和价格假设，也不能只按名称机械对应。
 
-### 工作必须在 Floatboat 中完成：选择当前已支持模型
+### 工作必须在 Floatboat 中完成：先核对实际入口
 
-GPT-6.1 Sol 目前不是 Floatboat 选项。如果任务必须运行在 Floatboat，应从当前模型目录选择已经确认的型号，而不是围绕这个 ID 设计流程。这是产品接入边界，不是对 OpenAI 模型质量的判断。
+如果任务必须运行在 Floatboat，先确认客户端是否显示预期的 GPT-6.1 Sol 入口，以及当前套餐是否可用，再用一项范围清楚的任务检查工具调用和审批流程。价格页能证明名称已经公开展示，不能证明该入口具备 OpenAI API 的全部功能。
 
 ## 一套能支持决策的评估清单
 
@@ -174,4 +175,4 @@ GPT-6.1 Sol 目前不是 Floatboat 选项。如果任务必须运行在 Floatboa
 
 对于复杂工作，GPT-6.1 Sol 是可信的 OpenAI 默认候选。105 万上下文、12.8 万最大输出、图片输入、丰富的 Responses 工具和五档推理设置，让它有很大的适用范围。短上下文 Standard 单价为每百万 Token 输入 $2、缓存输入 $0.10、Cache Write $2.50、输出 $10。
 
-但超过 272K 后价格会变化，不同处理档位和区域处理也会改变成本。评测只能告诉你值得在哪里测试，不能替代自己的验收。对 Floatboat 用户而言，最重要的边界是：**Floatboat 当前不支持 GPT-6.1 Sol。**只应通过 OpenAI 官方开放的渠道测试它；Floatboat 工作流则从当前确认的模型目录中选择。
+但超过 272K 后价格会变化，不同处理档位和区域处理也会改变成本。评测只能告诉你值得在哪里测试，不能替代自己的验收。对 Floatboat 用户而言，状态已经发生变化：官方价格页现已列出 GPT-6.1 Sol。下一步应核对客户端实际入口和账号资格，再验证工作流；不能把公开列出直接当作与 OpenAI API 功能完全一致的证明。

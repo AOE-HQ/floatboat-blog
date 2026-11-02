@@ -2,7 +2,7 @@
   "slug": "deepseek",
   "name": "DeepSeek",
   "access": "picker",
-  "badge": { "en": "DeepSeek · Client picker", "zh": "DeepSeek · 客户端可选" },
+  "badge": { "en": "DeepSeek · Recorded chat entry", "zh": "DeepSeek · 已有对话入口记录" },
   "summary": {
     "en": "V4 Pro for complex code and mathematics; Flash for efficient everyday execution.",
     "zh": "V4 Pro 面向复杂代码与数学推理，Flash 面向高性价比日常执行。"
@@ -105,22 +105,36 @@
     },
     "items": [
       {
-        "label": { "en": "Hard problems", "zh": "困难问题" },
+        "label": {
+          "en": "Hard problems",
+          "zh": "困难问题"
+        },
         "title": "deepseek-v4-pro",
         "description": {
           "en": "Complex coding, algorithms, and mathematical reasoning.",
           "zh": "复杂编程、算法与数理推理。"
         },
-        "meta": { "en": "Client picker", "zh": "客户端可选" }
+        "meta": {
+          "en": "Recorded chat entry",
+          "zh": "已有对话入口记录"
+        },
+        "availability": "picker"
       },
       {
-        "label": { "en": "Everyday work", "zh": "日常任务" },
+        "label": {
+          "en": "Everyday work",
+          "zh": "日常任务"
+        },
         "title": "deepseek-flash",
         "description": {
           "en": "DeepSeek V4.1 Flash for efficient coding and general requests.",
           "zh": "DeepSeek V4.1 Flash，适合高性价比编程与通用请求。"
         },
-        "meta": { "en": "Client picker", "zh": "客户端可选" }
+        "meta": {
+          "en": "Recorded chat entry",
+          "zh": "已有对话入口记录"
+        },
+        "availability": "picker"
       }
     ]
   },

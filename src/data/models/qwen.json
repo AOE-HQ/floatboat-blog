@@ -8,7 +8,7 @@
   },
   "summary": {
     "en": "Qwen 3.7 Max has a configured 1M long-text capacity profile below the client picker.",
-    "zh": "Qwen 3.7 Max 已配置 1M 长文本容量画像，当前未在客户端主选择器露出。"
+    "zh": "Qwen 3.7 Max 已配置 1M 长文本容量画像，2026 年 10 月 9 日记录未显示主选择器入口，当前以实际菜单为准。"
   },
   "seo": {"title":{"en":"Qwen 3.7 Max Model: 1M Context, Model ID and Use Cases","zh":"Qwen 3.7 Max 模型：1M 上下文、Model ID 与用途"},"description":{"en":"Learn about Qwen 3.7 Max, its exact model ID, configured 1M context profile, long-text role, Chinese document use cases, and current status.","zh":"了解 Qwen 3.7 Max 的准确 Model ID、1M 上下文画像、长文本定位、中文文档用途与当前状态。"},"keywords":[{"en":"Qwen 3.7 Max","zh":"Qwen 3.7 Max"},{"en":"Qwen model","zh":"Qwen 模型"},{"en":"Qwen 1M context","zh":"Qwen 1M 上下文"},{"en":"qwen-3.7-max","zh":"qwen-3.7-max"}]},
   "hero": {
@@ -17,8 +17,8 @@
         "zh": "Qwen 3.7 Max 模型、1M 上下文画像与长文本用途。"
     },
     "description": {
-      "en": "The `qwen-3.7-max` capacity profile carries a 1M budget and a long-text channel adapter. It is not exposed in the main client picker.",
-      "zh": "`qwen-3.7-max` 已配置 1M 预算并适配长文本通道，当前未在客户端主选择器默认露出。"
+      "en": "The `qwen-3.7-max` capacity profile carries a 1M budget and a long-text channel adapter. It was not exposed in the October 9, 2026 client snapshot; check the current menu.",
+      "zh": "`qwen-3.7-max` 已配置 1M 预算并适配长文本通道，2026 年 10 月 9 日记录未显示默认选择器入口，当前需查看实际菜单。"
     },
     "prompts": [
       { "en": "Process a long source set", "zh": "处理大型资料集" },
@@ -40,7 +40,7 @@
     },
     {
       "label": { "en": "Availability", "zh": "可用状态" },
-      "value": { "en": "Not in main picker", "zh": "未在主选择器露出" }
+      "value": { "en": "Historical configuration", "zh": "旧记录未显示选择器入口" }
     }
   ],
   "positioning": {
@@ -49,8 +49,8 @@
       "zh": "为中文与混合资料集准备的长文本路径。"
     },
     "description": {
-      "en": "Qwen 3.7 Max is configured for long-text work but is not currently available in the main client picker.",
-      "zh": "Qwen 3.7 Max 已配置长文本处理能力，但当前客户端默认模型选择器尚未提供入口。"
+      "en": "Qwen 3.7 Max is configured for long-text work but was absent from the October 9, 2026 main-picker record; check the current entry.",
+      "zh": "Qwen 3.7 Max 已配置长文本处理能力，但2026 年 10 月 9 日记录未显示默认选择器入口，当前应核对实际菜单。"
     },
     "traits": [
       {
@@ -98,13 +98,20 @@
     },
     "items": [
       {
-        "label": { "en": "Long text", "zh": "长文本" },
+        "label": {
+          "en": "Long text",
+          "zh": "长文本"
+        },
         "title": "qwen-3.7-max",
         "description": {
           "en": "A 1M capacity budget with a long-text channel adapter.",
           "zh": "1M 容量预算与长文本通道适配。"
         },
-        "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" }
+        "meta": {
+          "en": "Not in the main picker",
+          "zh": "旧记录未显示选择器入口"
+        },
+        "availability": "configured"
       }
     ]
   },
@@ -171,8 +178,8 @@
       "zh": "长文本容量与当前访问状态。"
     },
     "description": {
-      "en": "The `qwen-3.7-max` configuration includes a long-text channel and a 1M capacity budget. The model is not currently in the main client picker.",
-      "zh": "`qwen-3.7-max` 已配置长文本通道与 1M 容量预算，当前尚未出现在客户端默认模型选择器中。"
+      "en": "The `qwen-3.7-max` configuration includes a long-text channel and a 1M capacity budget. The October 9, 2026 record did not include a main-picker entry; check the current client menu.",
+      "zh": "`qwen-3.7-max` 已配置长文本通道与 1M 容量预算，在 2026 年 10 月 9 日记录中未显示默认选择器入口，当前应核对实际菜单。"
     },
     "items": [
       {
@@ -199,8 +206,8 @@
       {
         "title": { "en": "Explicit status", "zh": "明确状态" },
         "description": {
-          "en": "The model is not currently exposed in the client picker.",
-          "zh": "该模型当前未在客户端选择器露出。"
+          "en": "The October 9, 2026 record did not include a picker entry; current access needs a fresh check.",
+          "zh": "2026 年 10 月 9 日记录未显示选择器入口，当前应核对实际菜单。"
         }
       }
     ]
@@ -315,12 +322,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Compare long-text routes while Qwen stays below the picker",
-      "zh": "Qwen 尚未进入选择器，先比较长文本模型"
+      "en": "Compare routes for long-text work",
+      "zh": "比较长文本任务的模型入口"
     },
     "description": {
-      "en": "Qwen 3.7 Max has a registered 1M capacity profile, not a picker entry. See which live model fits your next long-text task.",
-      "zh": "Qwen 3.7 Max 已登记 1M 容量画像，但还不能在主选择器中选用；现在可先比较适合长文本任务的已上线模型。"
+      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
+      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
     }
   }
 }

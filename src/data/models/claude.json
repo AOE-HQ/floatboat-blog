@@ -3,22 +3,22 @@
   "name": "Claude",
   "access": "picker",
   "badge": {
-    "en": "Anthropic · Client picker",
-    "zh": "Anthropic · 客户端可选"
+    "en": "Anthropic · Recorded chat entry",
+    "zh": "Anthropic · 已有对话入口记录"
   },
   "summary": {
-    "en": "Opus for deep architecture and Sonnet for high-performance everyday agent work.",
-    "zh": "Opus 面向深度架构，Sonnet 面向高性能日常 Agent 工作。"
+    "en": "Opus 5.5 and Sonnet 5.5 are listed on the pricing page; earlier 4.6 selector and 5-series capacity records remain separate.",
+    "zh": "价格页已列出 Opus 5.5 和 Sonnet 5.5；旧的 4.6 选择器与 5 系容量记录分别保留。"
   },
-  "seo": {"title":{"en":"Claude Models: Opus 4.6 vs Sonnet 4.6 Features and Use Cases","zh":"Claude 模型对比：Opus 4.6 与 Sonnet 4.6 能力、参数和用途"},"description":{"en":"Compare Claude Opus 4.6 and Claude Sonnet 4.6 by reasoning depth, coding performance, agent behavior, use cases, and model availability.","zh":"对比 Claude Opus 4.6 与 Sonnet 4.6 的推理深度、编程能力、Agent 表现、适用场景与模型状态。"},"keywords":[{"en":"Claude models","zh":"Claude 模型"},{"en":"Claude Opus 4.6 vs Sonnet 4.6","zh":"Claude Opus 4.6 和 Sonnet 4.6 对比"},{"en":"Claude Opus 4.6","zh":"Claude Opus 4.6"},{"en":"Claude Sonnet 4.6","zh":"Claude Sonnet 4.6"}]},
+  "seo": {"title":{"en":"Claude models: Opus 5.5, Sonnet 5.5, and earlier versions.","zh":"Claude 模型：Opus 5.5、Sonnet 5.5 与更早版本。"},"description":{"en":"Explore the Claude 5.5 names shown on Floatboat’s pricing page alongside earlier Opus, Sonnet, and Fable records. Check the client menu before treating a listed version as selectable.","zh":"了解 Floatboat 价格页已展示的 Claude 5.5 型号，以及更早的 Opus、Sonnet 和 Fable 记录。使用前查看客户端菜单，区分公开列出与实际可选。"},"keywords":[{"en":"Claude models","zh":"Claude 模型"},{"en":"Claude Opus 4.6 vs Sonnet 4.6","zh":"Claude Opus 4.6 和 Sonnet 4.6 对比"},{"en":"Claude Opus 4.6","zh":"Claude Opus 4.6"},{"en":"Claude Sonnet 4.6","zh":"Claude Sonnet 4.6"}]},
   "hero": {
     "title": {
-        "en": "Claude models: Opus 4.6 vs Sonnet 4.6.",
-        "zh": "Claude 模型：Opus 4.6 与 Sonnet 4.6 对比。"
+        "en": "Claude models: Opus 5.5, Sonnet 5.5, and earlier versions.",
+        "zh": "Claude 模型：Opus 5.5、Sonnet 5.5 与更早版本。"
     },
     "description": {
-      "en": "Use Claude Opus 4.6 for demanding reasoning and architecture; use Claude Sonnet 4.6 for coding and broad day-to-day agent tasks.",
-      "zh": "Claude Opus 4.6 适合高难度推理与架构设计；Claude Sonnet 4.6 适合编程和广泛的日常 Agent 任务。"
+      "en": "Explore the Claude 5.5 names shown on Floatboat’s pricing page alongside earlier Opus, Sonnet, and Fable records. Check the client menu before treating a listed version as selectable.",
+      "zh": "了解 Floatboat 价格页已展示的 Claude 5.5 型号，以及更早的 Opus、Sonnet 和 Fable 记录。使用前查看客户端菜单，区分公开列出与实际可选。"
     },
     "prompts": [
       { "en": "Review this architecture", "zh": "审查这个架构" },
@@ -28,8 +28,8 @@
   },
   "facts": [
     {
-      "label": { "en": "Live models", "zh": "已上线型号" },
-      "value": { "en": "Opus 4.6 · Sonnet 4.6", "zh": "Opus 4.6 · Sonnet 4.6" }
+      "label": { "en": "Inventory scope", "zh": "型号范围" },
+      "value": { "en": "Recorded routes + current pricing listings", "zh": "已有接入记录 + 当前价格页型号" }
     },
     {
       "label": { "en": "Access", "zh": "使用入口" },
@@ -103,36 +103,97 @@
       "zh": "在同一项目中选择推理深度或执行效率。"
     },
     "description": {
-      "en": "The client exposes the 4.6 generation directly; newer families also appear in the broader Floatboat support matrix.",
-      "zh": "客户端可直接选择 4.6 代模型；更新系列也进入了 Floatboat 的更广泛支持矩阵。"
+      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
+      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
     },
     "items": [
       {
-        "label": { "en": "Deep work", "zh": "深度任务" },
+        "label": {
+          "en": "Deep work",
+          "zh": "深度任务"
+        },
         "title": "claude-opus-4-6",
         "description": {
           "en": "Complex architecture, long-horizon planning, and difficult reasoning.",
           "zh": "复杂架构、长程规划与高难度推理。"
         },
-        "meta": { "en": "Client picker", "zh": "客户端可选" }
+        "meta": {
+          "en": "Recorded chat entry",
+          "zh": "已有对话入口记录"
+        },
+        "availability": "picker"
       },
       {
-        "label": { "en": "Daily workhorse", "zh": "日常主力" },
+        "label": {
+          "en": "Daily workhorse",
+          "zh": "日常主力"
+        },
         "title": "claude-sonnet-4-6",
         "description": {
           "en": "High-performance coding and general agent execution.",
           "zh": "高性能编程与通用 Agent 执行。"
         },
-        "meta": { "en": "Client picker", "zh": "客户端可选" }
+        "meta": {
+          "en": "Recorded chat entry",
+          "zh": "已有对话入口记录"
+        },
+        "availability": "picker"
       },
       {
-        "label": { "en": "Capacity ready", "zh": "容量已就绪" },
+        "label": {
+          "en": "Capacity ready",
+          "zh": "容量已就绪"
+        },
         "title": "claude-opus-5 / claude-sonnet-5 / claude-fable-5",
         "description": {
           "en": "Evaluation profiles with 1M context and 128k output budgets.",
           "zh": "已配置 1M 上下文与 128k 输出预算的评测画像。"
         },
-        "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" }
+        "meta": {
+          "en": "Not in the main picker",
+          "zh": "旧记录未显示选择器入口"
+        },
+        "availability": "configured"
+      },
+      {
+        "label": {
+          "en": "Pricing-page listing",
+          "zh": "价格页已展示"
+        },
+        "title": "Claude Sonnet 5.5",
+        "description": {
+          "en": "Named on the official pricing page. The older Sonnet 4.6 picker record does not establish which 5.5 entry is available to a particular account.",
+          "zh": "官方价格页已列出。旧的 Sonnet 4.6 选择器记录不能证明某个账号已经开放哪一项 5.5 入口。"
+        },
+        "meta": {
+          "en": "Client access not independently verified",
+          "zh": "客户端开放范围尚未独立核实"
+        },
+        "availability": "announced",
+        "source": {
+          "url": "https://floatboat.ai/pricing",
+          "checkedAt": "2026-11-02"
+        }
+      },
+      {
+        "label": {
+          "en": "Pricing-page listing",
+          "zh": "价格页已展示"
+        },
+        "title": "Claude Opus 5.5",
+        "description": {
+          "en": "Listed alongside earlier Claude generations on Floatboat’s pricing page. Confirm the visible entry and plan eligibility before replacing an existing Opus workflow.",
+          "zh": "Floatboat 价格页已与更早的 Claude 代际一同展示。替换已有 Opus 工作流前，应核对可见入口和套餐资格。"
+        },
+        "meta": {
+          "en": "Client access not independently verified",
+          "zh": "客户端开放范围尚未独立核实"
+        },
+        "availability": "announced",
+        "source": {
+          "url": "https://floatboat.ai/pricing",
+          "checkedAt": "2026-11-02"
+        }
       }
     ]
   },
@@ -352,8 +413,8 @@
         "zh": "Claude Opus 5、Sonnet 5 与 Fable 5 是什么？"
       },
       "answer": {
-        "en": "They are evaluation and capacity profiles with configured 1M context and 128k output budgets. They are not current main-picker models.",
-        "zh": "它们属于评测与容量画像，已配置 1M 上下文与 128k 输出预算，目前不是主选择器型号。"
+        "en": "They are evaluation and capacity profiles with configured 1M context and 128k output budgets. That is a configuration snapshot, not a live client inventory; the pricing page now also lists Opus 5 and Fable 5.",
+        "zh": "它们属于评测与容量画像，已配置 1M 上下文与 128k 输出预算，属于旧配置记录，不能据此判断当前菜单；价格页现也已列出 Opus 5 与 Fable 5。"
       }
     },
     {
@@ -364,6 +425,16 @@
       "answer": {
         "en": "Choose a document with known cross-references and important exceptions. Ask for claims tied to passages, then check whether the review preserves those exceptions and distinguishes missing evidence from a negative finding.",
         "zh": "选一份包含交叉引用和重要例外、且你熟悉内容的文档，要求结论对应具体段落。重点核对是否保留例外，以及能否区分“缺少证据”和“已经证实不存在”。"
+      }
+    },
+    {
+      "question": {
+        "en": "Does the Claude 5.5 pricing listing establish client access?",
+        "zh": "价格页列出 Claude 5.5，就代表客户端已经开放了吗？"
+      },
+      "answer": {
+        "en": "The official pricing page names Opus 5.5 and Sonnet 5.5. That listing does not establish account-specific menu access or the exact model IDs; check the client before choosing a version.",
+        "zh": "官方价格页列出了 Opus 5.5 和 Sonnet 5.5，但不能据此确认具体账号的菜单权限或准确 Model ID。选用版本前，应核对客户端实际入口。"
       }
     }
   ],

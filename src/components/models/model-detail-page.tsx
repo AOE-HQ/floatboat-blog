@@ -8,6 +8,7 @@ import { ModelPickerDemo } from "./model-picker-demo";
 import {
   localize,
   modelPath,
+  modelAvailabilityLabel,
   type ModelFamily,
   type ModelLocale,
 } from "@/lib/models/model-pages";
@@ -120,8 +121,10 @@ export function ModelDetailPage({
                   {localize(item.description, locale)}
                 </p>
                 <p className="mt-6 border-t border-black/[0.07] pt-4 text-xs font-medium text-[var(--ob-color-muted)]">
-                  {localize(item.meta, locale)}
+                  {modelAvailabilityLabel(item.availability, locale)}
+                  {item.availability === "combo" && <span className="block mt-1">{localize(item.meta, locale).split(" · ").slice(1).join(" · ")}</span>}
                 </p>
+                {item.source && <p className="mt-3 text-xs leading-6 text-[var(--ob-color-muted)]"><a href={item.source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{isZh ? "官方价格页" : "Official pricing page"}</a> · {item.source.checkedAt}</p>}
               </article>
             ))}
           </div>

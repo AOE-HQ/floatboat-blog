@@ -7,8 +7,8 @@
     "zh": "Moonshot · 容量已登记"
   },
   "summary": {
-    "en": "Kimi K3 has a configured 1M long-text reasoning profile below the picker.",
-    "zh": "Kimi K3 已配置 1M 长文本思考画像，当前未在主选择器露出。"
+    "en": "Kimi K3 is publicly listed and has a recorded long-text capacity profile; current client access should be checked separately.",
+    "zh": "Kimi K3 已公开列出，并有长文本容量画像记录；当前客户端入口需另行核对。"
   },
   "seo": {"title":{"en":"Kimi K3 Model: 1M Context, Model ID and Long-Text Capabilities","zh":"Kimi K3 模型：1M 上下文、Model ID 与长文本能力"},"description":{"en":"Learn about the Kimi K3 model ID, configured 1M context profile, long-text reasoning role, compatibility names, use cases, and current status.","zh":"了解 Kimi K3 的准确 Model ID、1M 上下文画像、长文本思考定位、兼容名称、适用场景与当前状态。"},"keywords":[{"en":"Kimi K3","zh":"Kimi K3"},{"en":"Kimi K3 model","zh":"Kimi K3 模型"},{"en":"Kimi 1M context","zh":"Kimi 1M 上下文"},{"en":"kimi-k3 model ID","zh":"kimi-k3 Model ID"}]},
   "hero": {
@@ -17,8 +17,8 @@
         "zh": "Kimi K3 模型、1M 上下文画像与长文本能力。"
     },
     "description": {
-      "en": "The `kimi-k3` profile carries a 1M budget and long-text reasoning support. It is not exposed in the main client picker.",
-      "zh": "`kimi-k3` 已配置 1M 预算并适配长文本思考通道，当前未在客户端主选择器露出。"
+      "en": "Kimi K3 appears on Floatboat’s current pricing page and has an older long-text capacity record. Check the current client entry and plan before relying on the historical model ID.",
+      "zh": "Floatboat 当前价格页已列出 Kimi K3，另有较早的长文本容量记录。使用前核对当前客户端入口和套餐，不要仅依据历史模型 ID。"
     },
     "prompts": [
       { "en": "Synthesize a long research set", "zh": "综合大型研究资料集" }
@@ -39,17 +39,17 @@
     },
     {
       "label": { "en": "Availability", "zh": "可用状态" },
-      "value": { "en": "Not in main picker", "zh": "未在主选择器露出" }
+      "value": { "en": "Historical configuration", "zh": "旧记录未显示选择器入口" }
     }
   ],
   "positioning": {
     "title": {
-      "en": "Configured for long source sets; access is not currently available through the main client picker.",
-      "zh": "已配置大型资料集处理能力，当前默认模型选择器尚未提供入口。"
+      "en": "Configured for long source sets; the October 9, 2026 snapshot did not include a main-picker entry.",
+      "zh": "已配置大型资料集处理能力，2026 年 10 月 9 日记录未显示默认选择器入口，当前应核对实际菜单。"
     },
     "description": {
-      "en": "Kimi K3 is configured for long-text workloads, but it is not currently selectable in the main client picker.",
-      "zh": "Kimi K3 已配置长文本处理能力，但当前客户端默认模型选择器尚未提供入口。"
+      "en": "Kimi K3 is configured for long-text workloads, but the October 9, 2026 record did not show it in the main picker; current client access needs a fresh check.",
+      "zh": "Kimi K3 已配置长文本处理能力，但2026 年 10 月 9 日记录未显示默认选择器入口，当前应核对实际菜单。"
     },
     "traits": [
       {
@@ -100,13 +100,20 @@
     },
     "items": [
       {
-        "label": { "en": "Long text", "zh": "长文本" },
+        "label": {
+          "en": "Long text",
+          "zh": "长文本"
+        },
         "title": "kimi-k3",
         "description": {
           "en": "1M budget and long-text reasoning channel.",
           "zh": "1M 预算与长文本思考通道。"
         },
-        "meta": { "en": "Not in the main picker", "zh": "未在主选择器露出" }
+        "meta": {
+          "en": "Not in the main picker",
+          "zh": "旧记录未显示选择器入口"
+        },
+        "availability": "configured"
       }
     ]
   },
@@ -116,8 +123,8 @@
       "zh": "已配置角色重点在于保持长材料的整体性。"
     },
     "description": {
-      "en": "The following tasks match its intended long-text role. They require a supported access path; Kimi K3 is not currently selectable in the main client picker.",
-      "zh": "以下任务对应其长文本定位；实际执行需要受支持的入口，当前客户端默认选择器尚不能选择 Kimi K3。"
+      "en": "The following tasks match its intended long-text role. They require a supported access path; the October 9, 2026 record did not show Kimi K3 in the main picker; check the current entry.",
+      "zh": "以下任务对应其长文本定位；实际执行需要受支持的入口，2026 年 10 月 9 日记录未显示 Kimi K3 的默认选择器入口，当前入口需重新核对。"
     },
     "items": [
       {
@@ -207,8 +214,8 @@
           "zh": "明确可用性边界"
         },
         "description": {
-          "en": "Kimi K3 is not exposed in the current main picker.",
-          "zh": "Kimi K3 当前未在主选择器露出。"
+          "en": "Kimi K3 is not shown in the October 9, 2026 main-picker snapshot.",
+          "zh": "Kimi K3 旧记录未显示主选择器入口，当前需查看实际菜单。"
         }
       }
     ]
@@ -273,7 +280,7 @@
     {"question":{"en":"What is the Kimi K3 model ID?","zh":"Kimi K3 的 Model ID 是什么？"},"answer":{"en":"The exact registered model ID is `kimi-k3`; `kimi-k2` and `kimi-latest` are recognized compatibility names.","zh":"准确登记的 Model ID 是 `kimi-k3`；`kimi-k2` 与 `kimi-latest` 属于兼容名称。"}},
     {"question":{"en":"How large is the Kimi K3 context profile?","zh":"Kimi K3 的上下文有多大？"},"answer":{"en":"The configured capacity profile carries a 1M budget for context-heavy workloads.","zh":"已配置容量画像包含 1M 预算，面向上下文密集型工作。"}},
     {"question":{"en":"What is Kimi K3 best suited for?","zh":"Kimi K3 适合什么任务？"},"answer":{"en":"Its confirmed positioning is long-text reasoning, large research sets, extended document review, and tasks that need relationships preserved across distant sections.","zh":"其已确认定位是长文本思考、大型研究资料集、长文档审阅，以及需要保留远距离章节关系的任务。"}},
-    {"question":{"en":"What is the current Kimi K3 support status?","zh":"Kimi K3 当前是什么支持状态？"},"answer":{"en":"Its capacity and long-text channel are configured, but it is not currently exposed in the main client picker.","zh":"其容量与长文本通道已配置，但当前未在客户端主选择器露出。"}},
+    {"question":{"en":"What is the current Kimi K3 support status?","zh":"Kimi K3 当前是什么支持状态？"},"answer":{"en":"Kimi K3 is named on the current pricing page and has an older capacity record. That record does not establish which entry your account can use today; check the current model menu.","zh":"当前价格页已列出 Kimi K3，另有旧容量记录。该记录不能证明你的账号今天可用哪个入口，应查看当前模型菜单。"}},
     {
       "question": {
         "en": "What is a useful document-heavy test for Kimi?",
@@ -287,12 +294,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Need long-context work before Kimi K3 is selectable",
-      "zh": "Kimi K3 尚未开放选择，先处理长文档任务"
+      "en": "Compare long-document workflows",
+      "zh": "比较长文档任务的模型入口"
     },
     "description": {
-      "en": "Kimi K3 has a configured 1M context budget, but no default picker entry. Compare live models for your next long-document task.",
-      "zh": "Kimi K3 已配置 1M 上下文预算，但还不是客户端可选项；现在需要处理长文档，可先比较已上线的模型。"
+      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
+      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
     }
   }
 }
