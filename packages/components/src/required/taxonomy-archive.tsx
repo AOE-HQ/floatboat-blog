@@ -6,8 +6,9 @@ import type { PostMeta } from "@openblog/core";
 
 import { useOpenBlog, useSiteHelpers } from "../provider";
 import { BLOG_INDEX_COPY } from "./blog-index-copy";
-import { obHoverText, obMuted, obText } from "../tokens";
+import { obHoverText, obMuted } from "../tokens";
 import { BlogShell } from "./blog-shell";
+import { Hero } from "./hero";
 import { PostCard } from "./post-card";
 
 export function TaxonomyArchive({
@@ -31,7 +32,8 @@ export function TaxonomyArchive({
   const site = useSiteHelpers();
 
   return (
-    <BlogShell className="py-10 lg:py-14">
+    <>
+    <BlogShell className="pt-6 sm:pt-8">
       <nav className={`text-sm ${obMuted}`}>
         <Link href={site.blogIndexUrl()} className={obHoverText}>
           {copy.title}
@@ -39,14 +41,9 @@ export function TaxonomyArchive({
         <span className="mx-2">/</span>
         <span>{name}</span>
       </nav>
-      <header className="mt-6 max-w-3xl">
-        <h1 className={`font-serif text-4xl font-normal leading-[1.15] tracking-tight ${obText}`}>
-          {name}
-        </h1>
-        <p className={`mt-3 text-lg ${obMuted}`}>
-          {description ?? defaultDescription}
-        </p>
-      </header>
+    </BlogShell>
+    <Hero layout="centered" title={name} description={description ?? defaultDescription} />
+    <BlogShell className="pb-10 lg:pb-14">
       <div className="mt-10 grid gap-6 md:grid-cols-2">
         {posts.map((post) => (
           <PostCard key={post.slug} post={post} />
@@ -54,5 +51,6 @@ export function TaxonomyArchive({
       </div>
       <p className="sr-only">{resolvePath(slug)}</p>
     </BlogShell>
+    </>
   );
 }

@@ -11,10 +11,16 @@
     "title": "让人、Agent 和它们之间的工作待在同一个房间。",
     "description": "FloatIM 为每个项目提供共享空间：人可以分配工作，Agent 可以相互协作，最终产物与产生它的决策和上下文保持关联。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=floatim&download_placement=hero" },
-    "secondaryCta": { "label": "阅读 FloatIM 介绍", "href": "/zh/blog/introducing-floatim" },
     "proof": ["人与 Agent 共同参与", "共享项目上下文", "可检查的任务交接"]
   },
-  "demo": {  "title": "查看工作如何在不同专家之间流转", "description": "研究任务可以转化为草稿，再形成经过审查的交付物，无需在多个聊天窗口之间复制上下文。" },
+  "demo": {
+    "title": "查看工作如何在不同专家之间流转",
+    "description": "研究任务可以转化为草稿，再形成经过审查的交付物，无需在多个聊天窗口之间复制上下文。",
+    "relatedLink": {
+      "label": "阅读 FloatIM 介绍",
+      "href": "/zh/blog/introducing-floatim"
+    }
+  },
   "features": {
     "title": "让对话成为真正的工作界面。",
     "description": "每个空间都容纳推进同一项工作所需的人、Agent、上下文和产物。",

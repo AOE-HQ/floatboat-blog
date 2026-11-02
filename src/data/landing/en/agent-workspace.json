@@ -11,12 +11,15 @@
     "title": "Give agents a workspace, not another chat window.",
     "description": "Floatboat brings agents, local files, models, tools, project rules, and deliverables into one persistent desktop environment—so work can continue from context instead of restarting with every prompt.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=hero" },
-    "secondaryCta": { "label": "Meet the Work Agent", "href": "/coworker" },
     "proof": ["Local-first project access", "Multi-agent collaboration", "Human-controlled execution"]
   },
   "demo": {
     "title": "Keep the project, rules, and results together",
-    "description": "Agents can work from the same approved files and tools, leave inspectable outputs, and continue from what the project has already learned."
+    "description": "Agents can work from the same approved files and tools, leave inspectable outputs, and continue from what the project has already learned.",
+    "relatedLink": {
+      "label": "Meet the Work Agent",
+      "href": "/coworker"
+    }
   },
   "features": {
     "title": "The environment around the agent is part of the product.",

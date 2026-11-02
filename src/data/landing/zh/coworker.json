@@ -11,10 +11,10 @@
     "title": "交代任务，收回完成的工作。",
     "description": "给 Floatboat Coworker 一个清晰结果、相关材料和审批边界。它在 Agent 工作站中执行任务，并返回你可以检查、修订或接受的交付物。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=hero" },
-    "secondaryCta": { "label": "了解 Agent 工作站", "href": "/zh/agent-workspace" },
     "proof": ["按结果委派", "限定文件和工具", "可审阅的交付物"]
   },
   "demo": {
+    "relatedLink": {"label": "了解 Agent 工作站", "href": "/zh/agent-workspace"},
     "title": "交代工作，而不是逐步遥控",
     "description": "Coworker 把边界明确的委派转化为执行计划，使用获授权的项目资源，并带着指定产物返回。"
   },

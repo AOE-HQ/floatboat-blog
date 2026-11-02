@@ -11,12 +11,15 @@
     "title": "Delegate a task. Get back finished work.",
     "description": "Give the Floatboat Coworker a clear outcome, the relevant materials, and approval boundaries. It handles the task inside your Agent Workspace and returns a deliverable you can inspect, revise, or accept.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=coworker&download_placement=hero" },
-    "secondaryCta": { "label": "Explore the Agent Workspace", "href": "/agent-workspace" },
     "proof": ["Outcome-based delegation", "Scoped files and tools", "Reviewable deliverables"]
   },
   "demo": {
     "title": "Brief the work instead of steering every step",
-    "description": "The Coworker turns a bounded assignment into an execution plan, uses approved project resources, and comes back with the requested artifact."
+    "description": "The Coworker turns a bounded assignment into an execution plan, uses approved project resources, and comes back with the requested artifact.",
+    "relatedLink": {
+      "label": "Explore the Agent Workspace",
+      "href": "/agent-workspace"
+    }
   },
   "features": {
     "title": "A Work Agent owns the task between brief and delivery.",

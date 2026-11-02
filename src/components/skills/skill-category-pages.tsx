@@ -40,7 +40,7 @@ export function SkillCategoryHub({ locale }: { locale: SkillLocale }) {
 
   return <main className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
     <Breadcrumb locale={locale} />
-    <MarketingHero  title={labels.title} description={labels.description} />
+    <MarketingHero layout="centered" title={labels.title} description={labels.description} />
     <section className="mx-auto max-w-7xl px-5 pb-16 sm:px-8 sm:pb-20">
       <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">{labels.section}</h2>
       <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -74,7 +74,7 @@ export function SkillCategoryDetail({ locale, slug }: { locale: SkillLocale; slu
 
   return <main className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
     <Breadcrumb locale={locale} current={category.label[locale]} />
-    <MarketingHero  title={category.hero[locale].title} description={category.hero[locale].description} />
+    <MarketingHero layout="centered" title={category.hero[locale].title} description={category.hero[locale].description} />
     <section className="mx-auto max-w-4xl px-5 pb-14 sm:px-8 sm:pb-16"><p className="border-t border-black/[0.08] pt-8 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{category.intro[locale]}</p></section>
 
     <section className="border-y border-black/[0.07] bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">

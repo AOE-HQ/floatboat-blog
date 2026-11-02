@@ -1,6 +1,5 @@
 import { FaqBand } from "@/components/faq-band";
 import Link from "next/link";
-import type { ReactNode } from "react";
 import { FinalCta } from "@/components/final-cta";
 import { RelatedPageLinks } from "@/components/related-page-links";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
@@ -12,25 +11,6 @@ import {
   type ModelFamily,
   type ModelLocale,
 } from "@/lib/models/model-pages";
-
-function Cta({
-  href,
-  children,
-  primary = false,
-}: {
-  href: string;
-  children: ReactNode;
-  primary?: boolean;
-}) {
-  return (
-    <a
-      href={href}
-      className={`inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition ${primary ? "bg-[var(--ob-color-primary)] text-[var(--ob-color-text)] hover:bg-[var(--ob-color-primary-hover)]" : "border border-black/10 bg-white/55 hover:bg-white"}`}
-    >
-      {children}
-    </a>
-  );
-}
 
 export function ModelDetailPage({
   model,
@@ -65,27 +45,10 @@ export function ModelDetailPage({
         <span className="mx-2">/</span>
         <span>{model.name}</span>
       </nav>
-      <MarketingHero title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)} />
-      <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 lg:pb-24" aria-label={isZh ? "模型预览与入口" : "Model preview and access"}>
-        <ModelPickerDemo model={model} locale={locale} />
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Cta href={download} primary>
-              {model.access === "capacity"
-                ? isZh
-                  ? "了解 Floatboat"
-                  : "Explore Floatboat"
-                : isZh
-                  ? "下载 Floatboat"
-                  : "Download Floatboat"}
-            </Cta>
-            <Link
-              href={modelPath(locale)}
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-black/10 bg-white/55 px-6 text-sm font-semibold hover:bg-white"
-            >
-              {isZh ? "查看全部模型" : "View all models"}
-            </Link>
-        </div>
-      </section>
+      <MarketingHero layout="split" title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)}
+        action={model.access === "capacity" ? undefined : { label: isZh ? "下载 Floatboat" : "Download Floatboat", href: download }}
+        media={{ kind: "demo", label: isZh ? `${model.name} 模型预览` : `${model.name} model preview`, content: <ModelPickerDemo model={model} locale={locale} /> }}
+      />
 
       <section className="mx-auto max-w-7xl px-5 pb-16 sm:px-8 lg:pb-24">
         <dl className="grid overflow-hidden rounded-3xl border border-black/[0.07] bg-white/55 sm:grid-cols-2 lg:grid-cols-4">

@@ -7,7 +7,7 @@ import { categoryToSlug } from "@openblog/core";
 import { useOpenBlog, useSiteHelpers } from "../provider";
 import { obBorder, obHoverBorder, obHoverText, obText } from "../tokens";
 
-export function CategoryBadge({ category }: { category: string }) {
+export function CategoryBadge({ category, categorySlug }: { category: string; categorySlug?: string }) {
   const { features } = useOpenBlog();
   const site = useSiteHelpers();
 
@@ -15,7 +15,7 @@ export function CategoryBadge({ category }: { category: string }) {
     return null;
   }
 
-  const slug = categoryToSlug(category);
+  const slug = categorySlug ?? categoryToSlug(category);
 
   return (
     <Link

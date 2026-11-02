@@ -20,10 +20,6 @@
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=use-cases-studio&download_placement=hero"
     },
-    "secondaryCta": {
-      "label": "查看工作流",
-      "href": "#workflows"
-    },
     "proof": [
       "项目背景不会在交接中丢失",
       "所有交付物都能复核",

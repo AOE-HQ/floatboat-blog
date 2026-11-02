@@ -26,14 +26,9 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
       <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
         <Link href={isZh ? "/zh" : "/"}>{isZh ? "首页" : "Home"}</Link><span className="mx-2">/</span><span>{isZh ? "模型" : "Models"}</span>
       </nav>
-      <MarketingHero
-        title={isZh ? "模型可以变化，工作空间不必重来。" : "Change the model without rebuilding the workspace."}
+      <MarketingHero layout="centered" title={isZh ? "模型可以变化，工作空间不必重来。" : "Change the model without rebuilding the workspace."}
         description={isZh ? "开箱即用，无需自备 API Key。在同一个桌面工作空间中使用全员可用的 Auto Mode，或从订阅配置开放的模型中直接选择。" : "Ready out of the box with no API key required. Use Auto Mode, available to everyone, or directly select models enabled by your subscription configuration."}
       />
-      <div className="mx-auto flex max-w-7xl flex-wrap justify-center gap-3 px-5 pb-12 sm:px-8">
-        <a href={isZh ? DOWNLOAD.replace("/download/", "/zh/download/") : DOWNLOAD} className="inline-flex min-h-12 items-center rounded-full bg-[var(--ob-color-primary)] px-6 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{isZh ? "下载 Floatboat" : "Download Floatboat"}</a>
-        <Link href={isZh ? "/zh/agent-workspace" : "/agent-workspace"} className="inline-flex min-h-12 items-center rounded-full border border-black/10 bg-white/55 px-6 text-sm font-semibold hover:bg-white">{isZh ? "了解 Agent Workspace" : "Explore Agent Workspace"}</Link>
-      </div>
 
       <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">

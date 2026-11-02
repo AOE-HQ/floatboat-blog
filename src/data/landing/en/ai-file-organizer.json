@@ -11,10 +11,16 @@
     "title": "Describe the order you want. Preview it before anything moves.",
     "description": "Let Floatboat inspect a messy folder, propose a useful structure, and apply only the renames and moves you approve—directly on your computer.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=hero" },
-    "secondaryCta": { "label": "See how AI organizers work", "href": "/blog/what-is-an-ai-file-organizer" },
     "proof": ["Runs on local folders", "Preview before execution", "Per-file results"]
   },
-  "demo": {  "title": "Inspect the proposed structure before applying it", "description": "The organizer separates analysis from execution so you can correct categories and naming rules before files change." },
+  "demo": {
+    "title": "Inspect the proposed structure before applying it",
+    "description": "The organizer separates analysis from execution so you can correct categories and naming rules before files change.",
+    "relatedLink": {
+      "label": "See how AI organizers work",
+      "href": "/blog/what-is-an-ai-file-organizer"
+    }
+  },
   "features": {
     "title": "More than moving files by extension.",
     "description": "Floatboat can use filenames, folder context, and document content to propose a structure that reflects the work itself.",

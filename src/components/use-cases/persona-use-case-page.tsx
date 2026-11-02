@@ -46,7 +46,7 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
       <span className="mx-2">/</span><span>{page.breadcrumb}</span>
     </nav>
 
-    <MarketingHero title={titleCase(pageHeading)} description={page.hero.description} />
+    <MarketingHero layout="centered" title={titleCase(pageHeading)} description={page.hero.description} action={page.hero.primaryCta} />
 
     <PersonaLiveDemo page={page} />
 

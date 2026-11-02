@@ -22,6 +22,7 @@ import {
 } from "../tokens";
 import { cn } from "../utils";
 import { BLOG_INDEX_COPY, categoryLabel } from "./blog-index-copy";
+import { Hero } from "./hero";
 import { FeaturedPost } from "./featured-post";
 import { PostCard } from "./post-card";
 
@@ -70,18 +71,8 @@ export function BlogIndex({
   return (
     <>
     <div className="space-y-14 lg:space-y-20">
-      <header className={cn("pb-10 lg:pb-12", obBorderB)}>
-        <h1
-          className={`font-serif text-4xl font-normal leading-[1.1] tracking-tight ${obText} sm:text-5xl lg:text-6xl lg:leading-[1.05]`}
-        >
-          {copy.title}
-        </h1>
-        <p
-          className={`mt-5 max-w-2xl text-lg leading-8 sm:text-xl sm:leading-9 ${obMuted}`}
-        >
-          {copy.dek}
-        </p>
-        <p className={`mt-6 text-sm ${obMuted}`}>{copy.articleCount(data.articleCount)}</p>
+      <div className={cn("pb-10 lg:pb-12", obBorderB)}>
+        <Hero layout="centered" title={copy.title} description={copy.dek} metadata={<p>{copy.articleCount(data.articleCount)}</p>} />
 
         {features.categories && data.categories.length > 0 ? (
           <nav aria-label={copy.browseTopics} className="mt-8">
@@ -111,7 +102,7 @@ export function BlogIndex({
             </div>
           </nav>
         ) : null}
-      </header>
+      </div>
 
       {data.featured ? (
         <section aria-labelledby="blog-featured">

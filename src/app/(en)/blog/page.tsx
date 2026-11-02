@@ -1,3 +1,4 @@
+import { BlogTopicNavigation } from "@/components/blog/topic-navigation";
 import { FaqBand } from "@/components/faq-band";
 import { resolveFaqForBlogIndex } from "@/lib/faq-data";
 import type { Metadata } from "next";
@@ -53,14 +54,14 @@ export default function BlogIndexPage() {
   return (
     <>
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }]} />
-      <BlogShell className="py-8 lg:py-12">
-        <BlogHero
-          title="AI agents, models, and workflow guides"
-          description="Browse the complete Floatboat library: model analysis, agent architecture, automation workflows, file tools, and practical systems for solo operators."
-          articleCount={data.articleCount}
-          categories={data.categories}
-          locale="en"
-        />
+      <BlogHero
+        title="AI agents, models, and workflow guides"
+        description="Browse the complete Floatboat library: model analysis, agent architecture, automation workflows, file tools, and practical systems for solo operators."
+        articleCount={data.articleCount}
+        locale="en"
+      />
+      <BlogShell className="pb-8 lg:pb-12">
+        <BlogTopicNavigation locale="en" categories={data.categories} />
 
         {data.featured ? (
           <section className="mt-14 lg:mt-20" aria-label="Latest article">

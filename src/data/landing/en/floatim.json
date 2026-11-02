@@ -11,10 +11,16 @@
     "title": "One room for people, agents, and the work between them.",
     "description": "FloatIM gives every project a shared room where people can assign work, agents can coordinate, and completed artifacts stay beside the decisions that produced them.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=floatim&download_placement=hero" },
-    "secondaryCta": { "label": "Read the FloatIM introduction", "href": "/blog/introducing-floatim" },
     "proof": ["Human and agent participants", "Shared project context", "Inspectable handoffs"]
   },
-  "demo": {  "title": "Watch work move between specialists", "description": "See how a research task becomes a draft and then a reviewed deliverable without copying context between separate chats." },
+  "demo": {
+    "title": "Watch work move between specialists",
+    "description": "See how a research task becomes a draft and then a reviewed deliverable without copying context between separate chats.",
+    "relatedLink": {
+      "label": "Read the FloatIM introduction",
+      "href": "/blog/introducing-floatim"
+    }
+  },
   "features": {
     "title": "Conversation becomes an operating surface.",
     "description": "Each room holds the people, agents, context, and artifacts required to move one body of work forward.",

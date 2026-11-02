@@ -11,10 +11,16 @@
     "title": "日历不应只提醒你工作，还应该触发工作。",
     "description": "把会议、截止时间和周期性时间块变成 Agent 可以准备、执行并跟进的任务，同时保留在同一个工作空间中。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=scheduling&download_placement=hero" },
-    "secondaryCta": { "label": "对比 AI 日程助理", "href": "/zh/blog/best-ai-scheduling-assistants" },
     "proof": ["兼容现有日历", "提前准备任务", "需要时由人审批"]
   },
-  "demo": {  "title": "查看一个日程时间块如何变成准备好的工作", "description": "Floatboat 可以在事件前收集上下文、执行可重复步骤，并在事件结束后安排后续行动。" },
+  "demo": {
+    "title": "查看一个日程时间块如何变成准备好的工作",
+    "description": "Floatboat 可以在事件前收集上下文、执行可重复步骤，并在事件结束后安排后续行动。",
+    "relatedLink": {
+      "label": "对比 AI 日程助理",
+      "href": "/zh/blog/best-ai-scheduling-assistants"
+    }
+  },
   "features": {
     "title": "让日程把时间与执行连接起来。",
     "description": "日历依旧保持熟悉，工作空间负责围绕它完成准备和后续处理。",

@@ -1,3 +1,4 @@
+import { BlogTopicNavigation } from "@/components/blog/topic-navigation";
 import { FaqBand } from "@/components/faq-band";
 import { resolveFaqForBlogIndex } from "@/lib/faq-data";
 import type { Metadata } from "next";
@@ -52,15 +53,14 @@ export default function ZhBlogIndexPage() {
   return (
     <>
       <Breadcrumb label="面包屑导航" items={[{ label: "首页", href: "/zh" }, { label: "博客", href: "/zh/blog" }]} />
-      <BlogShell className="py-8 lg:py-12">
-        <BlogHero
-          title="AI Agent、模型与工作流文章库"
-          description="从模型能力、Agent 架构到自动化工作流与生产力工具，浏览 Floatboat 的完整中文指南、对比和实践文章。"
-          articleCount={data.articleCount}
-          categories={data.categories}
-          locale={locale}
-          localePrefix="/zh"
-        />
+      <BlogHero
+        title="AI Agent、模型与工作流文章库"
+        description="从模型能力、Agent 架构到自动化工作流与生产力工具，浏览 Floatboat 的完整中文指南、对比和实践文章。"
+        articleCount={data.articleCount}
+        locale={locale}
+      />
+      <BlogShell className="pb-8 lg:pb-12">
+        <BlogTopicNavigation locale="zh" categories={data.categories} />
 
         {data.featured ? (
           <section className="mt-14 lg:mt-20" aria-label="最新文章">

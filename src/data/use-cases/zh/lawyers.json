@@ -11,7 +11,6 @@
     "title": "面向律师与法律团队的 Work Agent",
     "description": "把一项边界明确的法律准备任务交给 Floatboat。它可以整理案件文件、还原事实、比较版本、准备研究材料，并把授权来源转成可审阅初稿；模板、清单与审批点始终由团队定义。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=use-cases-lawyers&download_placement=hero" },
-    "secondaryCta": { "label": "查看示例流程", "href": "#workflows" },
     "proof": ["基于你授权的文件工作", "交付物可编辑、可复核", "重要行动前由人确认"],
     "preview": {
       "label": "Work Agent 任务示例",

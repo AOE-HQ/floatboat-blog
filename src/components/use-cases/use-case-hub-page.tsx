@@ -97,11 +97,7 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
       <Link href={isZh ? "/zh" : "/"} className="hover:text-[var(--ob-color-text)]">{isZh ? "首页" : "Home"}</Link><span className="mx-2">/</span><span>{isZh ? "使用场景" : "Use Cases"}</span>
     </nav>
 
-    <MarketingHero title={titleCase(copy.title)} description={copy.description} />
-    <div className="mx-auto flex max-w-7xl flex-wrap justify-center gap-3 px-5 pb-12 sm:px-8">
-      <a href={isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=hero" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=hero"} className="rounded-full bg-[var(--ob-color-primary)] px-5 py-3 text-sm font-semibold hover:bg-[var(--ob-color-primary-hover)]">{copy.primary}</a>
-      <a href="#catalog" className="rounded-full border border-black/10 bg-white/60 px-5 py-3 text-sm font-semibold hover:bg-white">{copy.secondary}</a>
-    </div>
+    <MarketingHero layout="centered" title={titleCase(copy.title)} description={copy.description} />
 
     <section id="catalog" className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-7xl">

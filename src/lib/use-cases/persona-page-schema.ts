@@ -37,7 +37,6 @@ export const personaPageSchema = z.object({
     title: z.string().min(1),
     description: z.string().min(1),
     primaryCta: linkSchema,
-    secondaryCta: linkSchema,
     proof: z.array(z.string().min(1)).min(3),
     preview: z.object({
       label: z.string().min(1),

@@ -72,3 +72,7 @@ Do not add decorative eyebrow, kicker, or overline text above H1–H6 on any web
 ## FAQ coverage
 
 Marketing pages, directory hubs, and published blog archives require at least six relevant questions in each locale. Use the shared `FaqBand` for display and its single matching FAQPage schema; do not add a second inline FAQ renderer or generic fallback. Blog articles keep their own substantive questions without a six-question quota. Author archives may curate explicit published-article FAQ references with attribution, never fabricated author biographies. Apply the Agent Execution content de-templating workflow to new batches.
+
+## Hero contract
+
+Use the shared `Hero` from `@openblog/components`; marketing/blog components are data adapters. Select only `centered` or `split`. Keep one H1 and a page-specific introduction, with metadata below; no eyebrow, local title italics or partial title accent color. Hero media may be an image, video or demonstration, never a navigation panel. Split requires media and stacks text before media on mobile. Permit at most one direct-conversion action, otherwise omit it; secondary reading/navigation links belong outside Hero.

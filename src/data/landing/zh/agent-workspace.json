@@ -11,10 +11,10 @@
     "title": "给 Agent 一个工作空间，而不是又一个聊天框。",
     "description": "Floatboat 把 Agent、本地文件、模型、工具、项目规则和交付物放进同一个持续的桌面环境，让工作从已有上下文继续，而不是每次从 Prompt 重新开始。",
     "primaryCta": { "label": "下载 Floatboat", "href": "https://floatboat.ai/zh/download/success?from=agent-workspace&download_placement=hero" },
-    "secondaryCta": { "label": "认识 Work Agent", "href": "/zh/coworker" },
     "proof": ["本地优先的项目访问", "多 Agent 协作", "人可控的执行过程"]
   },
   "demo": {
+    "relatedLink": {"label": "认识 Work Agent", "href": "/zh/coworker"},
     "title": "让项目、规则和成果留在一起",
     "description": "Agent 可以使用同一组获授权的文件和工具，留下可检查的产物，并从项目已经积累的经验继续工作。"
   },

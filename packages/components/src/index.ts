@@ -36,3 +36,5 @@ export {
 } from "./registry";
 export type { ComponentRegistry } from "./registry";
 export { CATEGORY_LABELS_ZH, categoryLabel } from "./required/blog-index-copy";
+export { Hero, HeroTitle, HeroDescription } from "./required/hero";
+export type { HeroProps, HeroMedia } from "./required/hero";

@@ -12,11 +12,6 @@ import { featurePath } from "@/lib/landing/core-feature-pages";
 
 const SITE_ORIGIN = "https://floatboat.ai";
 
-function Cta({ href, label, primary = false }: { href: string; label: string; primary?: boolean }) {
-  const classes = `inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition ${primary ? "bg-[var(--ob-color-primary)] text-[var(--ob-color-text)] hover:bg-[var(--ob-color-primary-hover)]" : "border border-black/10 bg-white/55 text-[var(--ob-color-text)] hover:bg-white"}`;
-  return href.startsWith("/") ? <Link href={href} className={classes}>{label}</Link> : <a href={href} className={classes}>{label}</a>;
-}
-
 function SectionHeading({ title, description, inverted = false }: { title: string; description: string; inverted?: boolean }) {
   return <div className="mx-auto mb-10 max-w-3xl text-center">
     <h2 className="font-serif text-3xl tracking-[-0.03em] sm:text-5xl">{title}</h2>
@@ -53,18 +48,18 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       <span className="mx-2">/</span><span>{page.breadcrumb}</span>
     </nav>
 
-    <MarketingHero title={page.hero.title} description={page.hero.description} />
+    <MarketingHero layout="centered" title={page.hero.title} description={page.hero.description}
+      action={page.hero.primaryCta}
+      metadata={<ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">{page.hero.proof.map((item) => <li key={item}>{item}</li>)}</ul>}
+      media={{ kind: "demo", label: page.demo.title, content: <FeatureDemo items={page.scenario.steps.map((step) => step.title)} locale={page.locale} /> }}
+    />
 
     <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 lg:pb-24">
-      <FeatureDemo items={page.scenario.steps.map((step) => step.title)} locale={page.locale} />
       <div className="mx-auto mt-8 max-w-3xl text-center">
         <h2 className="mt-2 font-serif text-2xl tracking-[-0.03em] sm:text-3xl">{page.demo.title}</h2>
         <p className="mt-2 text-sm leading-6 text-[var(--ob-color-text-subtle)]">{page.demo.description}</p>
+        {page.demo.relatedLink && <p className="mt-4 text-sm"><Link href={page.demo.relatedLink.href} className="underline underline-offset-4">{page.demo.relatedLink.label}</Link></p>}
       </div>
-      <div className="mt-6 flex flex-wrap justify-center gap-3"><Cta {...page.hero.primaryCta} primary /><Cta {...page.hero.secondaryCta} /></div>
-      <ul className="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-[var(--ob-color-muted)]">
-        {page.hero.proof.map((item) => <li key={item} className="flex items-center gap-2"><span className="text-[var(--ob-color-text)]">✓</span>{item}</li>)}
-      </ul>
     </section>
 
     <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">

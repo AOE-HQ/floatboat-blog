@@ -55,7 +55,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <Breadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={breadcrumbs.map((item) => ({ label: item.name, href: item.url.startsWith("https://floatboat.ai/skills-marketplace") || item.url.startsWith("https://floatboat.ai/zh/skills-marketplace") ? new URL(item.url).pathname : item.url }))} />
 
-      <MarketingHero title={skill.hero.title[locale]} description={skill.hero.description[locale]} />
+      <MarketingHero layout="centered" title={skill.hero.title[locale]} description={skill.hero.description[locale]} />
 
       <SkillInstallPanel
         key={`${skill.authorHandle}/${skill.slug}`}

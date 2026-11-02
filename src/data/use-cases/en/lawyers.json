@@ -11,7 +11,6 @@
     "title": "A Work Agent for lawyers and legal teams",
     "description": "Give Floatboat a bounded legal assignment. It can organize matter files, trace facts, compare versions, prepare research, and turn approved sources into a reviewable draft while your team controls the playbook, templates, and approval points.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=use-cases-lawyers&download_placement=hero" },
-    "secondaryCta": { "label": "Explore sample workflows", "href": "#workflows" },
     "proof": ["Works from your approved files", "Outputs stay editable", "Human review before consequential action"],
     "preview": {
       "label": "Illustrative Work Agent assignment",

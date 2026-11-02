@@ -20,10 +20,6 @@
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=use-cases-small-business&download_placement=hero"
     },
-    "secondaryCta": {
-      "label": "Explore workflows",
-      "href": "#workflows"
-    },
     "proof": [
       "Works across existing business files",
       "Staff can review every output",

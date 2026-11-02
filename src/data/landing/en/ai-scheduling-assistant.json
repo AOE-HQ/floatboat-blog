@@ -11,10 +11,16 @@
     "title": "Your calendar should trigger work, not just remind you about it.",
     "description": "Turn meetings, deadlines, and recurring blocks into agent-ready tasks that can be prepared, executed, and followed up from the same workspace.",
     "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=scheduling&download_placement=hero" },
-    "secondaryCta": { "label": "Compare scheduling assistants", "href": "/blog/best-ai-scheduling-assistants" },
     "proof": ["Works with existing calendars", "Prepares scheduled tasks", "Human approval where needed"]
   },
-  "demo": {  "title": "See a scheduled block turn into prepared work", "description": "Floatboat can gather context before the event, run repeatable steps, and queue the follow-up after it ends." },
+  "demo": {
+    "title": "See a scheduled block turn into prepared work",
+    "description": "Floatboat can gather context before the event, run repeatable steps, and queue the follow-up after it ends.",
+    "relatedLink": {
+      "label": "Compare scheduling assistants",
+      "href": "/blog/best-ai-scheduling-assistants"
+    }
+  },
   "features": {
     "title": "Scheduling connects time to execution.",
     "description": "The calendar remains familiar while the workspace handles the preparation and follow-through around it.",

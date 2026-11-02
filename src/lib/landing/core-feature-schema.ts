@@ -29,11 +29,11 @@ export const coreFeaturePageSchema = z.object({
   hero: z.object({
     title: z.string().min(1),
     description: z.string().min(1),
-    primaryCta: linkSchema,
-    secondaryCta: linkSchema,
+    primaryCta: linkSchema.optional(),
     proof: z.array(z.string().min(1)).min(3),
   }),
   demo: z.object({
+    relatedLink: linkSchema.optional(),
     title: z.string().min(1),
     description: z.string().min(1),
   }),
