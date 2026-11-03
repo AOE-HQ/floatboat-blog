@@ -47,7 +47,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
       <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--ob-color-text-subtle)]">{t.capabilitiesIntro}</p>
       <ul className="mt-7 grid gap-4 md:grid-cols-3">{t.capabilities.map((item) => <li key={item.title}><ResourceCard title={item.title} description={item.description} /></li>)}</ul>
     </section>
-    <UseCasesSection title={t.scenariosTitle} description={t.scenariosIntro} items={t.scenarios.map((item) => ({ ...item, label: item.title }))} />
+    <UseCasesSection {...t.useCases} locale={locale} />
     <HowSection title={t.requirementsTitle} description={t.requirementsIntro} items={t.requirements} />
     {project.articleSlug && <section aria-label={zh ? "工作流解读" : "Workflow analysis"} className="mx-auto max-w-7xl px-5 py-10 sm:px-8">
       <ResourceCard title={t.articleTitle!} description={t.articleDescription!} href={`${zh ? "/zh" : ""}/blog/${project.articleSlug}`} />

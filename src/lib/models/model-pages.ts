@@ -1,3 +1,4 @@
+import { localizedUseCasesSchema, type LocalizedUseCases } from "@/lib/marketing/use-cases";
 import autoMode from "@/data/models/auto-mode.json";
 import claude from "@/data/models/claude.json";
 import deepseek from "@/data/models/deepseek.json";
@@ -71,16 +72,7 @@ export type ModelFamily = {
     description: Localized;
     items: Card[];
   };
-  workflows: {
-    title: Localized;
-    description: Localized;
-    items: Array<{
-      title: Localized;
-      brief: Localized;
-      process: Localized;
-      outcome: Localized;
-    }>;
-  };
+  useCases: LocalizedUseCases;
   capabilities: {
     title: Localized;
     description: Localized;
@@ -94,10 +86,6 @@ export type ModelFamily = {
   steps?: {
     title: Localized;
     items: Array<{ title: Localized; description: Localized }>;
-  };
-  extensions?: {
-    title: Localized;
-    items: Array<{ title: string; description: Localized }>;
   };
   comparison?: {
     title: Localized;
@@ -123,6 +111,8 @@ export const MODEL_FAMILIES = [
   glm,
   minimax,
 ] as ModelFamily[];
+
+for (const model of MODEL_FAMILIES) localizedUseCasesSchema.parse(model.useCases);
 
 export function localize(value: Localized, locale: ModelLocale) {
   return value[locale];

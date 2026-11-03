@@ -47,22 +47,30 @@
           "description": "Compare CLI, SDK, and app-server responsibilities when deciding whether an existing workflow needs a bounded task or an ongoing agent session."
         }
       ],
-      "scenariosTitle": "Apply the Ideas to Your Workflow",
-      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
-      "scenarios": [
-        {
-          "title": "A research-to-deliverable workflow",
-          "description": "Borrow the context–tool–review pattern to define how source material becomes a checked draft, with explicit evidence and a final acceptance step."
-        },
-        {
-          "title": "A repeatable coding task",
-          "description": "Separate investigation, implementation, verification, and approval so recurring repository work has an inspectable result at each stage."
-        },
-        {
-          "title": "An agent in your own workspace",
-          "description": "Evaluate the documented integration surfaces when you need your application or workflow to own the business context and available actions."
-        }
-      ],
+      "useCases": {
+        "title": "Connect research, code, and application actions to a reviewable loop",
+        "description": "Use Codex’s execution and integration boundaries to define evidence, verification, and human acceptance of changes.",
+        "items": [
+          {
+            "title": "A research-to-deliverable workflow",
+            "brief": "Research sources, a delivery format, and conclusions requiring human confirmation.",
+            "process": "Borrow the context–tool–review pattern to define how source material becomes a checked draft, with explicit evidence and a final acceptance step.",
+            "outcome": "An execution design from source reading to draft review, with evidence and acceptance points."
+          },
+          {
+            "title": "A repeatable coding task",
+            "brief": "A repository task, permitted files, and test commands.",
+            "process": "Separate investigation, implementation, verification, and approval so recurring repository work has an inspectable result at each stage.",
+            "outcome": "A reusable coding-task brief separating investigation, edits, tests, and approval."
+          },
+          {
+            "title": "An agent in your own workspace",
+            "brief": "Task entry points, available operations, and context sources in an owned application.",
+            "process": "Evaluate the documented integration surfaces when you need your application or workflow to own the business context and available actions.",
+            "outcome": "A CLI/SDK/app-server integration choice and a minimal compatibility test plan."
+          }
+        ]
+      },
       "requirementsTitle": "From Reference to a Workflow Experiment",
       "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
       "requirements": [
@@ -137,22 +145,30 @@
           "description": "比较 CLI、SDK 与 app-server 的职责，判断现有工作流需要一次性任务，还是能够持续推进的 Agent 会话。"
         }
       ],
-      "scenariosTitle": "如何用于自己的工作流",
-      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
-      "scenarios": [
-        {
-          "title": "从研究资料到交付成果",
-          "description": "借鉴上下文、工具与审阅的协作方式，设计从原始资料到已核对草稿的过程，明确证据和最终验收节点。"
-        },
-        {
-          "title": "可重复的代码任务",
-          "description": "将代码调查、实施、验证与审批分开，使重复性仓库任务在各阶段都有可审阅的结果。"
-        },
-        {
-          "title": "自己的工作空间中的 Agent",
-          "description": "当自己的应用或流程需要掌握业务上下文与可用操作时，评估官方集成入口是否适合。"
-        }
-      ],
+      "useCases": {
+        "title": "把资料、代码与应用操作接入可审阅循环",
+        "description": "借鉴 Codex 的工具执行与集成边界，分别定义证据、验证和人工接受修改的节点。",
+        "items": [
+          {
+            "title": "从研究资料到交付成果",
+            "brief": "研究来源、交付格式与必须由人确认的结论。",
+            "process": "借鉴上下文、工具与审阅的协作方式，设计从原始资料到已核对草稿的过程，明确证据和最终验收节点。",
+            "outcome": "从来源读取到草稿审阅的执行设计，标明证据和验收节点。"
+          },
+          {
+            "title": "可重复的代码任务",
+            "brief": "仓库任务、允许修改的文件与测试命令。",
+            "process": "将代码调查、实施、验证与审批分开，使重复性仓库任务在各阶段都有可审阅的结果。",
+            "outcome": "调查、修改、测试与审批分开的可复用代码任务说明。"
+          },
+          {
+            "title": "自己的工作空间中的 Agent",
+            "brief": "自有应用的任务入口、可用操作与上下文来源。",
+            "process": "当自己的应用或流程需要掌握业务上下文与可用操作时，评估官方集成入口是否适合。",
+            "outcome": "CLI、SDK 或 app-server 的集成选择及最小兼容性验证方案。"
+          }
+        ]
+      },
       "requirementsTitle": "从项目参考到工作流验证",
       "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
       "requirements": [
@@ -245,22 +261,30 @@
           "description": "Treat version compatibility as part of workflow design so a runtime update does not silently change the expected behavior."
         }
       ],
-      "scenariosTitle": "Apply the Ideas to Your Workflow",
-      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
-      "scenarios": [
-        {
-          "title": "A modular information workflow",
-          "description": "Break collection, transformation, and review into explicit capabilities with clear inputs and outputs."
-        },
-        {
-          "title": "A custom tool connection",
-          "description": "Study plugin contracts when an existing workflow needs a specific external tool or a task capability unavailable in the current setup."
-        },
-        {
-          "title": "A controlled workflow experiment",
-          "description": "Evaluate a small composition and record its behavior before relying on a preview-stage runtime for recurring work."
-        }
-      ],
+      "useCases": {
+        "title": "Organize information and tool experiments through plugin boundaries",
+        "description": "Separate processing and connection responsibilities, then validate runtime behavior and dependencies in a small composition.",
+        "items": [
+          {
+            "title": "A modular information workflow",
+            "brief": "Public news sources, deduplication rules, and digest review requirements.",
+            "process": "Break collection, transformation, and review into explicit capabilities with clear inputs and outputs.",
+            "outcome": "Plugin responsibilities and input/output mappings for collection, transformation, and review."
+          },
+          {
+            "title": "A custom tool connection",
+            "brief": "The missing tool’s API docs, credential reference, and permitted operations.",
+            "process": "Study plugin contracts when an existing workflow needs a specific external tool or a task capability unavailable in the current setup.",
+            "outcome": "A connector design based on current plugin contracts, with credential and failure boundaries."
+          },
+          {
+            "title": "A controlled workflow experiment",
+            "brief": "A minimal capability set, representative inputs, and acceptable failure behavior.",
+            "process": "Evaluate a small composition and record its behavior before relying on a preview-stage runtime for recurring work.",
+            "outcome": "A small composition experiment record and evidence for adoption or deferral."
+          }
+        ]
+      },
       "requirementsTitle": "From Reference to a Workflow Experiment",
       "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
       "requirements": [
@@ -335,22 +359,30 @@
           "description": "把版本兼容性纳入工作流设计，避免运行层更新后任务行为在未经检查的情况下变化。"
         }
       ],
-      "scenariosTitle": "如何用于自己的工作流",
-      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
-      "scenarios": [
-        {
-          "title": "模块化的信息处理流程",
-          "description": "将资料收集、转换和审阅拆成明确能力，分别规定输入、输出和交接方式。"
-        },
-        {
-          "title": "面向业务的工具连接",
-          "description": "当现有流程缺少某种外部工具或任务能力时，研究插件约定是否适合该连接。"
-        },
-        {
-          "title": "可控的工作流实验",
-          "description": "先评估小型能力组合并记录行为，再判断预览阶段运行层是否适合重复工作。"
-        }
-      ],
+      "useCases": {
+        "title": "以插件边界组织信息与工具实验",
+        "description": "先分清数据处理与连接职责，再用小范围组合验证运行行为和依赖。",
+        "items": [
+          {
+            "title": "模块化的信息处理流程",
+            "brief": "公开资讯来源、去重规则和简报的审阅要求。",
+            "process": "将资料收集、转换和审阅拆成明确能力，分别规定输入、输出和交接方式。",
+            "outcome": "收集、转换和审阅的插件职责与输入输出映射。"
+          },
+          {
+            "title": "面向业务的工具连接",
+            "brief": "缺失工具的 API 文档、认证引用和允许操作。",
+            "process": "当现有流程缺少某种外部工具或任务能力时，研究插件约定是否适合该连接。",
+            "outcome": "基于当前插件约定的连接草案，列出凭据边界与失败处理。"
+          },
+          {
+            "title": "可控的工作流实验",
+            "brief": "一组最小能力、代表性输入与可接受的失败行为。",
+            "process": "先评估小型能力组合并记录行为，再判断预览阶段运行层是否适合重复工作。",
+            "outcome": "小范围组合实验的记录，以及继续采用或暂缓的依据。"
+          }
+        ]
+      },
       "requirementsTitle": "从项目参考到工作流验证",
       "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
       "requirements": [
@@ -446,22 +478,30 @@
           "description": "The agent can reply in the original conversation and open pull requests. A panel brings review, blocked work, and other items needing human attention into view."
         }
       ],
-      "scenariosTitle": "Workflow Ideas to Try",
-      "scenariosIntro": "Use these patterns to improve coordination around your own tasks, then verify any software integration separately.",
-      "scenarios": [
-        {
-          "title": "Repository maintenance requests",
-          "description": "Define a small coding request, its permitted changes, and the evidence needed for acceptance. Use the task-to-pull-request pattern to make the proposed result easy to inspect."
-        },
-        {
-          "title": "Follow-up after a review",
-          "description": "Keep a reviewer’s comments attached to the right task and preserve the original scope. Route requests for unrelated work separately instead of silently expanding an existing assignment."
-        },
-        {
-          "title": "Team messages with a clear outcome",
-          "description": "Specify which channel and people may request work, then define where the result should return. Borrow that handoff pattern for workflows organized in Floatboat without assuming a built-in connection."
-        }
-      ],
+      "useCases": {
+        "title": "Connect maintenance requests, reviews, and team messages to tasks",
+        "description": "Tie triggers, requester authorization, and follow-up feedback to a traceable task without silently expanding scope.",
+        "items": [
+          {
+            "title": "Repository maintenance requests",
+            "brief": "Permitted repository requests, file scope, and acceptance conditions.",
+            "process": "Define a small coding request, its permitted changes, and the evidence needed for acceptance. Use the task-to-pull-request pattern to make the proposed result easy to inspect.",
+            "outcome": "A traceable request-to-ticket-to-draft-PR flow with verification evidence."
+          },
+          {
+            "title": "Follow-up after a review",
+            "brief": "An existing task, linked review feedback, and original authorization.",
+            "process": "Keep a reviewer’s comments attached to the right task and preserve the original scope. Route requests for unrelated work separately instead of silently expanding an existing assignment.",
+            "outcome": "A feedback-routing and continuation plan that separates unrelated work."
+          },
+          {
+            "title": "Team messages with a clear outcome",
+            "brief": "Approved message channels, requester lists, and delivery destinations.",
+            "process": "Specify which channel and people may request work, then define where the result should return. Borrow that handoff pattern for workflows organized in Floatboat without assuming a built-in connection.",
+            "outcome": "Trigger, authorization, task assignment, and result-return design with connection requirements checked separately."
+          }
+        ]
+      },
       "requirementsTitle": "Before Running the Prototype",
       "requirementsIntro": "Check the runtime, account, and machine boundaries before moving from a design reference to a live experiment.",
       "requirements": [
@@ -538,22 +578,30 @@
           "description": "Agent 可以在原会话中回复结果并创建 Pull Request。面板汇集待审阅、受阻及其他需要人工关注的事项，方便继续推进任务。"
         }
       ],
-      "scenariosTitle": "可以借鉴的工作流场景",
-      "scenariosIntro": "围绕自己的任务改进协作与交接，再按实际环境验证软件接入方式。",
-      "scenarios": [
-        {
-          "title": "处理仓库维护请求",
-          "description": "为一个小型编程请求明确可改动范围、验收证据和交付方式。参考从任务到 Pull Request 的组织方式，让提交的修改更容易检查。"
-        },
-        {
-          "title": "跟进评审与后续反馈",
-          "description": "把评审意见接回对应任务，并保留原有授权范围。遇到无关工作时重新路由，避免在持续讨论中悄悄扩大执行目标。"
-        },
-        {
-          "title": "把团队消息变为交付目标",
-          "description": "明确哪些渠道与人员能够发起工作，以及结果应回到哪里。将这种交接方式用于 Floatboat 中组织的工作流，具体软件连接另行验证。"
-        }
-      ],
+      "useCases": {
+        "title": "把维护请求、评审与团队消息接成任务链",
+        "description": "触发来源、请求者授权和后续反馈必须指向可追踪的同一任务，避免隐性扩张范围。",
+        "items": [
+          {
+            "title": "处理仓库维护请求",
+            "brief": "允许处理的仓库请求、文件范围和验收条件。",
+            "process": "为一个小型编程请求明确可改动范围、验收证据和交付方式。参考从任务到 Pull Request 的组织方式，让提交的修改更容易检查。",
+            "outcome": "可追踪的请求到工单与草稿 PR 流程，附检查证据。"
+          },
+          {
+            "title": "跟进评审与后续反馈",
+            "brief": "已有任务、对应评审意见与原始授权。",
+            "process": "把评审意见接回对应任务，并保留原有授权范围。遇到无关工作时重新路由，避免在持续讨论中悄悄扩大执行目标。",
+            "outcome": "反馈归属与续接方案，无关工作独立路由。"
+          },
+          {
+            "title": "把团队消息变为交付目标",
+            "brief": "获准接入的消息渠道、请求者名单与交付位置。",
+            "process": "明确哪些渠道与人员能够发起工作，以及结果应回到哪里。将这种交接方式用于 Floatboat 中组织的工作流，具体软件连接另行验证。",
+            "outcome": "触发、授权、任务分配与结果回传的设计，连接条件单独核对。"
+          }
+        ]
+      },
       "requirementsTitle": "运行原型前需要准备什么",
       "requirementsIntro": "从设计参考进入实际试验前，先检查运行环境、账号与机器权限。",
       "requirements": [
@@ -647,22 +695,30 @@
           "description": "Evaluate the provider API, agent core, and conversation libraries independently when building a custom workflow component."
         }
       ],
-      "scenariosTitle": "Apply the Ideas to Your Workflow",
-      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
-      "scenarios": [
-        {
-          "title": "A lightweight task loop",
-          "description": "Model a focused sequence of context, tool use, and result review without starting with a large feature set."
-        },
-        {
-          "title": "Improving a reusable Skill",
-          "description": "Decide whether a task needs clearer instructions and resources before introducing another executable extension."
-        },
-        {
-          "title": "A custom agent component",
-          "description": "Use the library structure as a reference when a business workflow needs its own model interface or execution behavior."
-        }
-      ],
+      "useCases": {
+        "title": "Use a minimal loop to separate instructions from runtime needs",
+        "description": "Verify one focused task before deciding between Skill revisions and model/execution adapters.",
+        "items": [
+          {
+            "title": "A lightweight task loop",
+            "brief": "One reporting objective, readable files, and a permitted tool set.",
+            "process": "Model a focused sequence of context, tool use, and result review without starting with a large feature set.",
+            "outcome": "A minimal context/tool loop and a reproducible sample output."
+          },
+          {
+            "title": "Improving a reusable Skill",
+            "brief": "An existing Skill, recurring failures, and expected behavior.",
+            "process": "Decide whether a task needs clearer instructions and resources before introducing another executable extension.",
+            "outcome": "Instruction/reference revisions and a decision on whether runtime extensions are still needed."
+          },
+          {
+            "title": "A custom agent component",
+            "brief": "Business interfaces, provider constraints, and owned execution boundaries.",
+            "process": "Use the library structure as a reference when a business workflow needs its own model interface or execution behavior.",
+            "outcome": "A component design based on Pi library responsibilities, identifying required adapters."
+          }
+        ]
+      },
       "requirementsTitle": "From Reference to a Workflow Experiment",
       "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
       "requirements": [
@@ -737,22 +793,30 @@
           "description": "构建特定流程组件时，可以分别评估模型接口、Agent 核心和对话基础库。"
         }
       ],
-      "scenariosTitle": "如何用于自己的工作流",
-      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
-      "scenarios": [
-        {
-          "title": "轻量任务循环",
-          "description": "围绕上下文、工具执行和结果审阅设计集中流程，不从庞大功能集合开始。"
-        },
-        {
-          "title": "优化可复用 Skill",
-          "description": "在引入新的可执行扩展前，先判断任务是否只需要更清晰的说明与参考资料。"
-        },
-        {
-          "title": "定制 Agent 组件",
-          "description": "当业务流程需要自己的模型接口或执行方式时，以基础库结构作为研究参考。"
-        }
-      ],
+      "useCases": {
+        "title": "从最小循环判断指令与运行层的边界",
+        "description": "先验证一项集中任务，再判断需要修订 Skill，还是研究模型和执行适配层。",
+        "items": [
+          {
+            "title": "轻量任务循环",
+            "brief": "单一报告目标、可读文件和允许的工具集合。",
+            "process": "围绕上下文、工具执行和结果审阅设计集中流程，不从庞大功能集合开始。",
+            "outcome": "精简的上下文与工具循环，以及能复现的样例输出。"
+          },
+          {
+            "title": "优化可复用 Skill",
+            "brief": "现有 Skill、反复失败的例子与预期行为。",
+            "process": "在引入新的可执行扩展前，先判断任务是否只需要更清晰的说明与参考资料。",
+            "outcome": "先以指令和参考资料解决问题的修订，说明是否仍需运行层扩展。"
+          },
+          {
+            "title": "定制 Agent 组件",
+            "brief": "业务接口、模型提供方约束与自有执行边界。",
+            "process": "当业务流程需要自己的模型接口或执行方式时，以基础库结构作为研究参考。",
+            "outcome": "基于 Pi 基础库职责的组件方案，明确需要实现的适配层。"
+          }
+        ]
+      },
       "requirementsTitle": "从项目参考到工作流验证",
       "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
       "requirements": [
@@ -846,22 +910,30 @@
           "description": "Inspect an integration’s tools and maintainer before adapting the pattern to the development workflow you actually need."
         }
       ],
-      "scenariosTitle": "Apply the Ideas to Your Workflow",
-      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
-      "scenarios": [
-        {
-          "title": "A repository investigation stage",
-          "description": "Define what an agent must learn before implementation begins, including relevant files, constraints, and unresolved decisions."
-        },
-        {
-          "title": "A reviewable change pipeline",
-          "description": "Separate the proposed change from acceptance so generated code is paired with an inspectable diff and relevant checks."
-        },
-        {
-          "title": "A task-specific development tool",
-          "description": "Study the extension interfaces when considering a connection to a project’s existing checks or external development systems."
-        }
-      ],
+      "useCases": {
+        "title": "Give exploration, code acceptance, and tool extension distinct checks",
+        "description": "Build context through read-only investigation, then make edits and external tool calls independently checkable.",
+        "items": [
+          {
+            "title": "A repository investigation stage",
+            "brief": "Search requirements, data entry points, and related routes.",
+            "process": "Define what an agent must learn before implementation begins, including relevant files, constraints, and unresolved decisions.",
+            "outcome": "Read-only investigation findings and decisions required before implementation."
+          },
+          {
+            "title": "A reviewable change pipeline",
+            "brief": "A proposed diff, testing requirements, and responsible reviewer.",
+            "process": "Separate the proposed change from acceptance so generated code is paired with an inspectable diff and relevant checks.",
+            "outcome": "An edit workflow separating diff presentation, verification, and acceptance."
+          },
+          {
+            "title": "A task-specific development tool",
+            "brief": "Existing check commands, external development APIs, and permitted access.",
+            "process": "Study the extension interfaces when considering a connection to a project’s existing checks or external development systems.",
+            "outcome": "An extension compatibility assessment and one bounded tool-call test."
+          }
+        ]
+      },
       "requirementsTitle": "From Reference to a Workflow Experiment",
       "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
       "requirements": [
@@ -936,22 +1008,30 @@
           "description": "在借鉴集成方式之前，检查工具范围与维护者，并对应到实际开发需求。"
         }
       ],
-      "scenariosTitle": "如何用于自己的工作流",
-      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
-      "scenarios": [
-        {
-          "title": "代码调查阶段",
-          "description": "明确实施之前 Agent 必须掌握哪些文件、约束与待定问题。"
-        },
-        {
-          "title": "可审阅的修改流程",
-          "description": "将提出修改与接受修改分开，为生成代码配套差异展示与相关检查。"
-        },
-        {
-          "title": "面向任务的开发工具",
-          "description": "需要连接项目已有检查或外部开发系统时，研究扩展接口是否适合。"
-        }
-      ],
+      "useCases": {
+        "title": "让调查、代码接受与工具扩展各有检查点",
+        "description": "以只读调查建立上下文，再让修改与外部工具调用进入可核对的流程。",
+        "items": [
+          {
+            "title": "代码调查阶段",
+            "brief": "搜索特性需求、数据入口和相关路由。",
+            "process": "明确实施之前 Agent 必须掌握哪些文件、约束与待定问题。",
+            "outcome": "只读调查结果与实施前必须确认的选择。"
+          },
+          {
+            "title": "可审阅的修改流程",
+            "brief": "待接受的代码差异、测试要求与审阅责任人。",
+            "process": "将提出修改与接受修改分开，为生成代码配套差异展示与相关检查。",
+            "outcome": "差异展示、验证与接受分开的修改流程。"
+          },
+          {
+            "title": "面向任务的开发工具",
+            "brief": "已有检查命令、外部开发系统 API 与允许权限。",
+            "process": "需要连接项目已有检查或外部开发系统时，研究扩展接口是否适合。",
+            "outcome": "扩展接口的适配判断，以及一个范围明确的工具调用验证。"
+          }
+        ]
+      },
       "requirementsTitle": "从项目参考到工作流验证",
       "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
       "requirements": [
@@ -1044,22 +1124,30 @@
           "description": "Evaluate how recurring work should receive context, use tools, and deliver a result at a planned time."
         }
       ],
-      "scenariosTitle": "Apply the Ideas to Your Workflow",
-      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
-      "scenarios": [
-        {
-          "title": "A recurring research brief",
-          "description": "Design how a repeated research task obtains fresh inputs while retaining its scope, sources, and output requirements."
-        },
-        {
-          "title": "A reusable working method",
-          "description": "Turn an established procedure into reviewed task knowledge, with an owner and a way to update outdated assumptions."
-        },
-        {
-          "title": "A task resumed later",
-          "description": "Identify the minimal decisions and evidence a later session needs instead of preserving an entire conversation without structure."
-        }
-      ],
+      "useCases": {
+        "title": "Retain the right knowledge for recurring research and later sessions",
+        "description": "Source freshness, method maintenance, and continuation need different memory boundaries rather than treating all conversation as reusable knowledge.",
+        "items": [
+          {
+            "title": "A recurring research brief",
+            "brief": "Weekly source additions, the existing research scope, and a digest template.",
+            "process": "Design how a repeated research task obtains fresh inputs while retaining its scope, sources, and output requirements.",
+            "outcome": "A digest workflow retaining sources and freshness markers, with explicit reusable rules."
+          },
+          {
+            "title": "A reusable working method",
+            "brief": "A proven method, counterexamples, and knowledge-maintenance ownership.",
+            "process": "Turn an established procedure into reviewed task knowledge, with an owner and a way to update outdated assumptions.",
+            "outcome": "A reviewable memory/Skill draft with a process for updating obsolete assumptions."
+          },
+          {
+            "title": "A task resumed later",
+            "brief": "A paused task state, agreed decisions, and essential evidence.",
+            "process": "Identify the minimal decisions and evidence a later session needs instead of preserving an entire conversation without structure.",
+            "outcome": "Minimal continuation context for the next session, excluding unrelated history."
+          }
+        ]
+      },
       "requirementsTitle": "From Reference to a Workflow Experiment",
       "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
       "requirements": [
@@ -1134,22 +1222,30 @@
           "description": "研究重复工作如何获得背景资料、使用工具，并在约定时间交付结果。"
         }
       ],
-      "scenariosTitle": "如何用于自己的工作流",
-      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
-      "scenarios": [
-        {
-          "title": "重复性研究简报",
-          "description": "为重复研究设计新资料入口，同时保留范围、来源要求和交付标准。"
-        },
-        {
-          "title": "可复用工作方法",
-          "description": "将已形成的方法整理为可审阅知识，并明确维护者与过时假设的更新方式。"
-        },
-        {
-          "title": "稍后继续的任务",
-          "description": "明确后续会话真正需要的决策与证据，而非无结构地保留全部对话。"
-        }
-      ],
+      "useCases": {
+        "title": "为周期研究与后续会话保留恰当知识",
+        "description": "资料时效、方法维护与任务续接需要不同记忆边界，不把全部对话都当成可复用知识。",
+        "items": [
+          {
+            "title": "重复性研究简报",
+            "brief": "每周新增资料、既有研究范围与简报模板。",
+            "process": "为重复研究设计新资料入口，同时保留范围、来源要求和交付标准。",
+            "outcome": "保留来源与时效标记的研究简报流程，明确重复使用的规则。"
+          },
+          {
+            "title": "可复用工作方法",
+            "brief": "已跑通的工作方法、反例与知识维护责任。",
+            "process": "将已形成的方法整理为可审阅知识，并明确维护者与过时假设的更新方式。",
+            "outcome": "可审阅的记忆或 Skill 草案，说明过时假设怎样更新。"
+          },
+          {
+            "title": "稍后继续的任务",
+            "brief": "待续任务状态、已定选择与关键证据。",
+            "process": "明确后续会话真正需要的决策与证据，而非无结构地保留全部对话。",
+            "outcome": "下一会话所需的最小续接上下文，排除无关历史。"
+          }
+        ]
+      },
       "requirementsTitle": "从项目参考到工作流验证",
       "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
       "requirements": [
@@ -1242,22 +1338,30 @@
           "description": "Study hooks and interface protocols when deciding where to validate an action and how context should pass between tools."
         }
       ],
-      "scenariosTitle": "Apply the Ideas to Your Workflow",
-      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
-      "scenarios": [
-        {
-          "title": "A multi-role coding workflow",
-          "description": "Separate research, planning, and implementation outputs so each role contributes a result the next stage can inspect."
-        },
-        {
-          "title": "Checks before consequential steps",
-          "description": "Design a validation or review point before a command, file change, or external action proceeds."
-        },
-        {
-          "title": "A consistent context handoff",
-          "description": "Use the interface–runtime separation as a reference when a workflow spans an editor, a workspace, and an execution process."
-        }
-      ],
+      "useCases": {
+        "title": "Define multi-role development and cross-interface handoffs",
+        "description": "Specify role outputs, pre-action checks, and editor-context handoffs, verifying interfaces against the actual environment.",
+        "items": [
+          {
+            "title": "A multi-role coding workflow",
+            "brief": "Research, planning, and implementation boundaries for one development task.",
+            "process": "Separate research, planning, and implementation outputs so each role contributes a result the next stage can inspect.",
+            "outcome": "Role inputs/outputs and handoff acceptance, including return-to-main-task conditions."
+          },
+          {
+            "title": "Checks before consequential steps",
+            "brief": "An upcoming command/change and criteria for assessing its impact.",
+            "process": "Design a validation or review point before a command, file change, or external action proceeds.",
+            "outcome": "Pre-action checks and result feedback, continuing or stopping according to authorization."
+          },
+          {
+            "title": "A consistent context handoff",
+            "brief": "Context contracts for the editor, workspace paths, and agent process.",
+            "process": "Use the interface–runtime separation as a reference when a workflow spans an editor, a workspace, and an execution process.",
+            "outcome": "A checked ACP/other-interface handoff plan without assuming native client compatibility."
+          }
+        ]
+      },
       "requirementsTitle": "From Reference to a Workflow Experiment",
       "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
       "requirements": [
@@ -1332,22 +1436,30 @@
           "description": "需要确定操作检查节点和工具间上下文传递方式时，研究 hooks 与接口协议。"
         }
       ],
-      "scenariosTitle": "如何用于自己的工作流",
-      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
-      "scenarios": [
-        {
-          "title": "多角色开发流程",
-          "description": "分别规定研究、规划与实施输出，使下一个阶段能检查上一阶段的成果。"
-        },
-        {
-          "title": "重要步骤之前的检查",
-          "description": "在命令、文件变更或外部操作继续之前，设计验证或审阅节点。"
-        },
-        {
-          "title": "一致的上下文交接",
-          "description": "流程涉及编辑器、工作空间与执行进程时，参考界面与运行层分离的方式组织交接。"
-        }
-      ],
+      "useCases": {
+        "title": "明确多角色开发与跨入口交接",
+        "description": "分别规定角色成果、动作前检查和编辑器上下文的交接，接口适配按实际环境核验。",
+        "items": [
+          {
+            "title": "多角色开发流程",
+            "brief": "同一开发任务的研究、规划与实施边界。",
+            "process": "分别规定研究、规划与实施输出，使下一个阶段能检查上一阶段的成果。",
+            "outcome": "各角色的输入输出与交接验收，明确何时回到主任务。"
+          },
+          {
+            "title": "重要步骤之前的检查",
+            "brief": "即将运行的命令或变更及风险判断条件。",
+            "process": "在命令、文件变更或外部操作继续之前，设计验证或审阅节点。",
+            "outcome": "执行前检查规则与结果反馈方式，按权限决定继续或暂停。"
+          },
+          {
+            "title": "一致的上下文交接",
+            "brief": "编辑器、工作空间路径与 Agent 进程的上下文契约。",
+            "process": "流程涉及编辑器、工作空间与执行进程时，参考界面与运行层分离的方式组织交接。",
+            "outcome": "经核对的 ACP 或其他接口交接方案，不预设客户端原生兼容。"
+          }
+        ]
+      },
       "requirementsTitle": "从项目参考到工作流验证",
       "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
       "requirements": [
@@ -1440,22 +1552,30 @@
           "description": "Read client, backend, CLI, and runtime source together when evaluating a workflow pattern rather than copying an isolated interface."
         }
       ],
-      "scenariosTitle": "Apply the Ideas to Your Workflow",
-      "scenariosIntro": "Use these scenarios as design references for work organized in Floatboat. Any software integration needs its own compatibility and permission checks.",
-      "scenarios": [
-        {
-          "title": "A task-centered workspace",
-          "description": "Define how source material, current activity, and expected deliverables should stay connected during a longer task."
-        },
-        {
-          "title": "A human review point",
-          "description": "Plan what evidence and context a user needs before accepting an agent’s proposed change or external action."
-        },
-        {
-          "title": "A workflow across interfaces",
-          "description": "Study where state and execution belong when the same work can be viewed through different interfaces."
-        }
-      ],
+      "useCases": {
+        "title": "Keep task state across workspace, review, and entry points",
+        "description": "Separate UI and execution responsibilities around materials and activity so users understand which result they are accepting.",
+        "items": [
+          {
+            "title": "A task-centered workspace",
+            "brief": "Source material, working directories, and target deliverables for a long task.",
+            "process": "Define how source material, current activity, and expected deliverables should stay connected during a longer task.",
+            "outcome": "A design linking materials, current activity, and results with traceable state."
+          },
+          {
+            "title": "A human review point",
+            "brief": "Proposed edits, external operations, and context needed for review.",
+            "process": "Plan what evidence and context a user needs before accepting an agent’s proposed change or external action.",
+            "outcome": "Understandable review artifacts and approval points rather than execution logs alone."
+          },
+          {
+            "title": "A workflow across interfaces",
+            "brief": "Task state to share across desktop, web, or terminal entry points.",
+            "process": "Study where state and execution belong when the same work can be viewed through different interfaces.",
+            "outcome": "UI/state/execution responsibilities and consistency checks across entry points."
+          }
+        ]
+      },
       "requirementsTitle": "From Reference to a Workflow Experiment",
       "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
       "requirements": [
@@ -1530,22 +1650,30 @@
           "description": "评估流程模式时结合客户端、后端、CLI 与运行层理解，避免只复制孤立界面。"
         }
       ],
-      "scenariosTitle": "如何用于自己的工作流",
-      "scenariosIntro": "将这些场景作为 Floatboat 中任务设计的参考；具体软件接入仍需单独核对兼容性与权限。",
-      "scenarios": [
-        {
-          "title": "以任务为中心的工作区",
-          "description": "明确较长任务中原始资料、当前活动和预期交付物如何保持关联。"
-        },
-        {
-          "title": "人工审阅节点",
-          "description": "规划用户接受 Agent 修改或外部操作前，需要看到哪些证据和背景。"
-        },
-        {
-          "title": "跨入口的工作流",
-          "description": "同一工作可能通过不同界面查看时，研究状态与执行应分别由哪里承担。"
-        }
-      ],
+      "useCases": {
+        "title": "在工作区、审阅与多入口之间保持任务状态",
+        "description": "围绕原始资料与当前活动划分界面和执行职责，使用户知道正在接受什么结果。",
+        "items": [
+          {
+            "title": "以任务为中心的工作区",
+            "brief": "长任务的原始资料、工作目录与目标交付物。",
+            "process": "明确较长任务中原始资料、当前活动和预期交付物如何保持关联。",
+            "outcome": "资料、当前活动和成果之间的关联设计及可追踪状态。"
+          },
+          {
+            "title": "人工审阅节点",
+            "brief": "准备接受的修改、外部操作及审查所需背景。",
+            "process": "规划用户接受 Agent 修改或外部操作前，需要看到哪些证据和背景。",
+            "outcome": "用户能够理解的审阅材料与审批节点，而非仅显示执行日志。"
+          },
+          {
+            "title": "跨入口的工作流",
+            "brief": "桌面、Web 或终端入口需要共享的任务状态。",
+            "process": "同一工作可能通过不同界面查看时，研究状态与执行应分别由哪里承担。",
+            "outcome": "界面、状态存储和执行职责的划分，附跨入口一致性检查。"
+          }
+        ]
+      },
       "requirementsTitle": "从项目参考到工作流验证",
       "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
       "requirements": [
@@ -1639,22 +1767,30 @@
           "description": "Deliberate shortcut comments can be collected into a debt ledger, so a temporary compromise retains a reason and a point for reconsideration."
         }
       ],
-      "scenariosTitle": "Use Ponytail’s Method in Repository Work",
-      "scenariosIntro": "These examples adapt the project’s approach to task design; they do not require replacing your existing workspace.",
-      "scenarios": [
-        {
-          "title": "Add a form control",
-          "description": "Before building a custom date picker, inspect the project’s input component and native browser support. Validate keyboard interaction and required behavior against the actual form."
-        },
-        {
-          "title": "Review a field rename",
-          "description": "Check the callers, serializers, and consumers of the renamed field as well as the diff. A small edit can break an untouched response handler."
-        },
-        {
-          "title": "Reduce a sprawling implementation",
-          "description": "Ask which requirements the abstraction serves, remove speculative branches, and keep validation and error handling that protect real inputs."
-        }
-      ],
+      "useCases": {
+        "title": "Check real requirements and hidden effects in small changes",
+        "description": "Use date inputs, field renames, and expanding implementations to retain verification while reducing speculative complexity.",
+        "items": [
+          {
+            "title": "Add a form control",
+            "brief": "Form validation rules, the existing Input, and target browsers.",
+            "process": "Before building a custom date picker, inspect the project’s input component and native browser support. Validate keyboard interaction and required behavior against the actual form.",
+            "outcome": "The smallest date-input change with keyboard and submission checks."
+          },
+          {
+            "title": "Review a field rename",
+            "brief": "A field-renaming diff, serialized formats, and known consumers.",
+            "process": "Check the callers, serializers, and consumers of the renamed field as well as the diff. A small edit can break an untouched response handler.",
+            "outcome": "Caller/data-flow impact findings including code outside the diff."
+          },
+          {
+            "title": "Reduce a sprawling implementation",
+            "brief": "An expanding implementation, real requirements, and invalid-input examples.",
+            "process": "Ask which requirements the abstraction serves, remove speculative branches, and keep validation and error handling that protect real inputs.",
+            "outcome": "A leaner design removing speculative abstractions while preserving validation and errors."
+          }
+        ]
+      },
       "requirementsTitle": "Evaluate the Rules in Your Agent Host",
       "requirementsIntro": "Instruction portability and plugin feature parity are different questions. Check the documented adapter before expecting commands or hooks.",
       "requirements": [
@@ -1729,22 +1865,30 @@
           "description": "有意保留的 shortcut 注释可汇总为技术债台账，让暂时的取舍保留原因和重新处理的条件。"
         }
       ],
-      "scenariosTitle": "把这套方法用于具体代码任务",
-      "scenariosIntro": "从真实需求出发调整任务说明和审阅方式，把更小的改动与完整的验收放在一起。",
-      "scenarios": [
-        {
-          "title": "为表单增加日期输入",
-          "description": "先查看项目现有 Input 与浏览器日期控件是否满足需求，再决定是否新增日历组件，并核对键盘操作和实际表单行为。"
-        },
-        {
-          "title": "检查一次字段重命名",
-          "description": "除修改位置外，继续检查调用方、序列化和数据消费者。几行字段变化，也可能让没有出现在 diff 中的处理函数失败。"
-        },
-        {
-          "title": "收敛不断膨胀的实现",
-          "description": "逐项核对抽象服务的真实要求，删去推测性的分支，同时保留应对真实输入的验证与错误处理。"
-        }
-      ],
+      "useCases": {
+        "title": "在小改动中检查真实需求和隐藏影响",
+        "description": "从日期控件、字段重命名和膨胀实现入手，保留验证并减少推测性复杂度。",
+        "items": [
+          {
+            "title": "为表单增加日期输入",
+            "brief": "表单校验规则、现有 Input 和目标浏览器。",
+            "process": "先查看项目现有 Input 与浏览器日期控件是否满足需求，再决定是否新增日历组件，并核对键盘操作和实际表单行为。",
+            "outcome": "满足日期输入的最小改动，以及键盘与提交行为验证。"
+          },
+          {
+            "title": "检查一次字段重命名",
+            "brief": "字段重命名差异、序列化格式与已知消费者。",
+            "process": "除修改位置外，继续检查调用方、序列化和数据消费者。几行字段变化，也可能让没有出现在 diff 中的处理函数失败。",
+            "outcome": "调用方和数据链路的影响清单，覆盖未出现在 diff 的位置。"
+          },
+          {
+            "title": "收敛不断膨胀的实现",
+            "brief": "持续增长的实现、真实需求及异常输入样例。",
+            "process": "逐项核对抽象服务的真实要求，删去推测性的分支，同时保留应对真实输入的验证与错误处理。",
+            "outcome": "移除推测性抽象后的精简方案，保留必要校验与错误处理。"
+          }
+        ]
+      },
       "requirementsTitle": "在自己的 Agent 宿主中验证规则",
       "requirementsIntro": "能读取规则文件，不代表拥有完整插件能力；先核对当前宿主的适配说明。",
       "requirements": [
@@ -1837,22 +1981,30 @@
           "description": "Team files can describe bots, channels, playbooks, and suggested routines. Import review and paused routines separate reusable instructions from live permissions."
         }
       ],
-      "scenariosTitle": "Design Handoffs for a Small Agent Team",
-      "scenariosIntro": "Start with complementary responsibilities and a shared deliverable, rather than adding bots without a division of work.",
-      "scenarios": [
-        {
-          "title": "Separate research from review",
-          "description": "Have one role collect source material and another check claims against those sources. Define the shared folder and the evidence each handoff must contain."
-        },
-        {
-          "title": "Prepare a recurring operations brief",
-          "description": "Specify the schedule, connected information sources, and report format. Keep drafting separate from sending messages or changing external records."
-        },
-        {
-          "title": "Reuse an established team playbook",
-          "description": "Distribute roles and instructions as a reviewed package, then reconnect services and approve execution in the receiving environment."
-        }
-      ],
+      "useCases": {
+        "title": "Arrange research checks, recurring reports, and role-package handoffs",
+        "description": "Divide roles around shared deliverables, distinguishing information sharing, service connections, and external execution access.",
+        "items": [
+          {
+            "title": "Separate research from review",
+            "brief": "Source materials, citable references, and fact-checking standards.",
+            "process": "Have one role collect source material and another check claims against those sources. Define the shared folder and the evidence each handoff must contain.",
+            "outcome": "A research-to-verification handoff package with claims traceable to sources."
+          },
+          {
+            "title": "Prepare a recurring operations brief",
+            "brief": "A schedule, permitted sources, and an operations-report format.",
+            "process": "Specify the schedule, connected information sources, and report format. Keep drafting separate from sending messages or changing external records.",
+            "outcome": "A recurring-task design separating drafting, review, and external sending."
+          },
+          {
+            "title": "Reuse an established team playbook",
+            "brief": "Proven roles/instructions and information about the receiving environment.",
+            "process": "Distribute roles and instructions as a reviewed package, then reconnect services and approve execution in the receiving environment.",
+            "outcome": "A reviewable role package and service-reconnection checklist without existing credentials."
+          }
+        ]
+      },
       "requirementsTitle": "Define the Execution Environment First",
       "requirementsIntro": "A bot profile describes the job; engines, service access, and operating-system capabilities determine what can actually run.",
       "requirements": [
@@ -1927,22 +2079,30 @@
           "description": "团队文件可描述 bot、频道、操作手册和建议例行任务，导入审阅与暂停状态将可复用说明和实际授权分开。"
         }
       ],
-      "scenariosTitle": "为小型 Agent 团队设计交接",
-      "scenariosIntro": "先确定互补职责与共同交付物，再决定需要多少角色和怎样共享资料。",
-      "scenarios": [
-        {
-          "title": "将资料收集与事实复核分开",
-          "description": "一个角色收集来源，另一个角色对照来源检查主张；为交接约定共享目录和必须保留的证据。"
-        },
-        {
-          "title": "准备周期性的运营简报",
-          "description": "写明执行时间、允许读取的信息源和报告格式，将起草简报与发送消息、修改外部记录分成不同步骤。"
-        },
-        {
-          "title": "复用已经跑通的团队方法",
-          "description": "把角色与指令作为可审阅的包交付，再由接收环境重新连接服务，并确认实际执行权限。"
-        }
-      ],
+      "useCases": {
+        "title": "安排研究复核、周期报告和角色包交接",
+        "description": "让角色围绕共同交付物分工，区分信息共享、服务连接与外部执行权限。",
+        "items": [
+          {
+            "title": "将资料收集与事实复核分开",
+            "brief": "待整理的资料、可引用来源和事实核对标准。",
+            "process": "一个角色收集来源，另一个角色对照来源检查主张；为交接约定共享目录和必须保留的证据。",
+            "outcome": "研究与核验角色的交接包，主张可以回到来源检查。"
+          },
+          {
+            "title": "准备周期性的运营简报",
+            "brief": "执行周期、允许的信息源与运营报告格式。",
+            "process": "写明执行时间、允许读取的信息源和报告格式，将起草简报与发送消息、修改外部记录分成不同步骤。",
+            "outcome": "起草、审阅和外部发送分开的周期任务设计。"
+          },
+          {
+            "title": "复用已经跑通的团队方法",
+            "brief": "已验证的团队角色、指令和接收环境信息。",
+            "process": "把角色与指令作为可审阅的包交付，再由接收环境重新连接服务，并确认实际执行权限。",
+            "outcome": "可审阅的角色包与重新连接服务的清单，不携带已有凭据。"
+          }
+        ]
+      },
       "requirementsTitle": "先确定任务实际运行在哪里",
       "requirementsIntro": "bot 资料定义职责，引擎、服务访问和操作系统能力决定任务可以怎样执行。",
       "requirements": [
@@ -2035,22 +2195,30 @@
           "description": "Command envelopes describe success or a structured error. The documented retry disposition helps the caller distinguish a safe retry from an action that needs investigation."
         }
       ],
-      "scenariosTitle": "Plan a Desktop Step with a Checkable Result",
-      "scenariosIntro": "Use desktop control for a specific application task and define the visible state that will count as completion.",
-      "scenarios": [
-        {
-          "title": "Transfer reviewed information into an app",
-          "description": "Prepare and validate the source data first, locate the actual target controls, and inspect the saved values after entry."
-        },
-        {
-          "title": "Recover after a list changes",
-          "description": "If an item disappears or the target becomes ambiguous, take another snapshot and locate the intended row again before attempting an action."
-        },
-        {
-          "title": "Embed control in an existing runtime",
-          "description": "Compare CLI calls with the C library when your agent already owns task context and planning. Keep approval and verification decisions in that surrounding workflow."
-        }
-      ],
+      "useCases": {
+        "title": "Make entry, relocalization, and desktop calls verifiable",
+        "description": "Choose actions from current control state and observe again afterward, retaining separate runtime authorization and acceptance.",
+        "items": [
+          {
+            "title": "Transfer reviewed information into an app",
+            "brief": "Validated data, a target application, and fields permitted for entry.",
+            "process": "Prepare and validate the source data first, locate the actual target controls, and inspect the saved values after entry.",
+            "outcome": "Saved values read back after entry, with stop conditions for mismatches."
+          },
+          {
+            "title": "Recover after a list changes",
+            "brief": "List states before/after changes and criteria identifying the intended row.",
+            "process": "If an item disappears or the target becomes ambiguous, take another snapshot and locate the intended row again before attempting an action.",
+            "outcome": "Action evidence after relocalization, avoiding stale positions or references."
+          },
+          {
+            "title": "Embed control in an existing runtime",
+            "brief": "Owned runtime interfaces, permission rules, and desktop-call needs.",
+            "process": "Compare CLI calls with the C library when your agent already owns task context and planning. Keep approval and verification decisions in that surrounding workflow.",
+            "outcome": "A CLI/C-library adapter plan preserving outer approval and result verification."
+          }
+        ]
+      },
       "requirementsTitle": "Check the Platform Before Desktop Automation",
       "requirementsIntro": "Support for an operating system does not guarantee identical controls, permissions, or screenshot behavior in every environment.",
       "requirements": [
@@ -2125,22 +2293,30 @@
           "description": "命令返回统一结果与结构化错误；重试标记帮助调用方判断可以安全重复，还是必须先调查当前状态。"
         }
       ],
-      "scenariosTitle": "为桌面步骤定义可检查的结果",
-      "scenariosIntro": "围绕一个明确的应用任务使用桌面控制，先约定什么可见状态才算完成。",
-      "scenarios": [
-        {
-          "title": "把已核对资料录入应用",
-          "description": "先准备并验证输入，再定位真实控件，录入后检查保存的值，让数据准备与界面操作各有验收依据。"
-        },
-        {
-          "title": "在列表变化后恢复操作",
-          "description": "条目消失或目标不明确时，重新读取快照并定位预期行，再决定是否执行，避免把动作落到相邻条目。"
-        },
-        {
-          "title": "为既有运行层补充桌面能力",
-          "description": "当自己的 Agent 已掌握任务背景与规划时，比较 CLI 调用和 C 库接入，将审批与结果验证保留在外围工作流中。"
-        }
-      ],
+      "useCases": {
+        "title": "把录入、重新定位与桌面调用变成可验证步骤",
+        "description": "以真实控件状态决定下一步，动作完成后重新观察；运行层的授权和验收仍单独负责。",
+        "items": [
+          {
+            "title": "把已核对资料录入应用",
+            "brief": "已验证的数据、目标应用与允许录入的字段。",
+            "process": "先准备并验证输入，再定位真实控件，录入后检查保存的值，让数据准备与界面操作各有验收依据。",
+            "outcome": "录入后重新读取的保存值，以及不一致时的停止条件。"
+          },
+          {
+            "title": "在列表变化后恢复操作",
+            "brief": "列表发生变化前后的状态与目标条目的识别条件。",
+            "process": "条目消失或目标不明确时，重新读取快照并定位预期行，再决定是否执行，避免把动作落到相邻条目。",
+            "outcome": "重新定位后的操作证据，避免依赖旧位置或失效引用。"
+          },
+          {
+            "title": "为既有运行层补充桌面能力",
+            "brief": "自有运行层的任务接口、权限规则与桌面调用需求。",
+            "process": "当自己的 Agent 已掌握任务背景与规划时，比较 CLI 调用和 C 库接入，将审批与结果验证保留在外围工作流中。",
+            "outcome": "CLI 或 C 库的适配方案，保留外围审批和结果验证。"
+          }
+        ]
+      },
       "requirementsTitle": "桌面自动化前先核对运行平台",
       "requirementsIntro": "支持某个操作系统，不代表所有环境都有相同的控件、权限或截图行为。",
       "requirements": [
@@ -2233,22 +2409,30 @@
           "description": "Use the documented queue and API surfaces when another application prepares inputs or collects results. Define the actual integration separately."
         }
       ],
-      "scenariosTitle": "Apply a Graph to a Media Deliverable",
-      "scenariosIntro": "Start with an output you can review, then choose the smallest graph that produces it.",
-      "scenarios": [
-        {
-          "title": "Prepare a consistent image series",
-          "description": "Keep the workflow and model setup stable while varying the brief or source material, then compare the resulting images against the same acceptance criteria."
-        },
-        {
-          "title": "Separate generation from finishing",
-          "description": "Represent generation, masking, resizing, or compositing as explicit stages, so a weak result can be traced to the step that produced it."
-        },
-        {
-          "title": "Reuse a reviewed production recipe",
-          "description": "Package the workflow with its dependencies and representative inputs before handing it to another machine or collaborator."
-        }
-      ],
+      "useCases": {
+        "title": "Define node workflows for image series, post-processing, and production packages",
+        "description": "Validate models, node dependencies, and representative inputs together, checking both visual results and reproducibility.",
+        "items": [
+          {
+            "title": "Prepare a consistent image series",
+            "brief": "Product originals, style constraints, output sizes, and available models.",
+            "process": "Keep the workflow and model setup stable while varying the brief or source material, then compare the resulting images against the same acceptance criteria.",
+            "outcome": "A traceable image series checked against consistent subject/background criteria."
+          },
+          {
+            "title": "Separate generation from finishing",
+            "brief": "Generated media, masking/upscaling requirements, and the current graph.",
+            "process": "Represent generation, masking, resizing, or compositing as explicit stages, so a weak result can be traced to the step that produced it.",
+            "outcome": "A staged graph whose failed frames can be traced to a specific operation."
+          },
+          {
+            "title": "Reuse a reviewed production recipe",
+            "brief": "A tested workflow JSON, custom nodes, and model dependencies.",
+            "process": "Package the workflow with its dependencies and representative inputs before handing it to another machine or collaborator.",
+            "outcome": "A portable production package with dependencies, sample inputs, and acceptance images."
+          }
+        ]
+      },
       "requirementsTitle": "Check Models, Nodes, and Runtime Together",
       "requirementsIntro": "A workflow file describes the graph; the environment determines whether that graph can execute.",
       "requirements": [
@@ -2323,22 +2507,30 @@
           "description": "其他应用准备输入或收集输出时，可研究队列与 API；实际接入方式仍需单独实现和验证。"
         }
       ],
-      "scenariosTitle": "围绕具体媒体交付物组织节点图",
-      "scenariosIntro": "先确定可以审阅的成果，再选择能够完成任务的最小流程。",
-      "scenarios": [
-        {
-          "title": "准备风格一致的图片系列",
-          "description": "保持工作流与模型配置稳定，只改变需求或来源资料，再用同一标准检查生成结果。"
-        },
-        {
-          "title": "区分生成与后期处理",
-          "description": "将生成、遮罩、缩放或合成拆成明确阶段，方便从不理想的结果追溯问题步骤。"
-        },
-        {
-          "title": "复用已验证的制作方法",
-          "description": "把工作流、依赖和代表性输入一起保存，再交给另一台电脑或协作者执行。"
-        }
-      ],
+      "useCases": {
+        "title": "为图片系列、后处理和制作包定义节点流程",
+        "description": "把模型、节点依赖与代表输入一起纳入验证，既检查画面，也检查流程能否复现。",
+        "items": [
+          {
+            "title": "准备风格一致的图片系列",
+            "brief": "商品原图、风格约束、输出尺寸和可用模型。",
+            "process": "保持工作流与模型配置稳定，只改变需求或来源资料，再用同一标准检查生成结果。",
+            "outcome": "配置可追溯的图片系列，按同一标准核对主体与背景。"
+          },
+          {
+            "title": "区分生成与后期处理",
+            "brief": "生成结果、遮罩或缩放需求，以及当前节点图。",
+            "process": "将生成、遮罩、缩放或合成拆成明确阶段，方便从不理想的结果追溯问题步骤。",
+            "outcome": "阶段清楚的节点流程，可从失败画面追溯到具体步骤。"
+          },
+          {
+            "title": "复用已验证的制作方法",
+            "brief": "验证过的工作流 JSON、自定义节点与模型依赖。",
+            "process": "把工作流、依赖和代表性输入一起保存，再交给另一台电脑或协作者执行。",
+            "outcome": "另一环境可核对的制作包，包含依赖、输入样例和验收图。"
+          }
+        ]
+      },
       "requirementsTitle": "一起核对模型、节点与运行环境",
       "requirementsIntro": "工作流文件描述连接关系，执行环境决定这些连接能否运行。",
       "requirements": [
@@ -2431,22 +2623,30 @@
           "description": "Extracted and inferred labels help distinguish direct source evidence from relationships that still need validation."
         }
       ],
-      "scenariosTitle": "Use a Graph Before Changing Code",
-      "scenariosIntro": "A context map is most useful when it helps answer a specific change-impact question.",
-      "scenarios": [
-        {
-          "title": "Locate the path behind a feature",
-          "description": "Trace the modules and concepts connected to an entry point, then open the relevant files before proposing an implementation."
-        },
-        {
-          "title": "Check a refactor boundary",
-          "description": "Inspect callers, dependencies, and related documentation to decide which interfaces and tests a structural change must preserve."
-        },
-        {
-          "title": "Connect code to its design notes",
-          "description": "Bring documents and code into the same investigation while keeping semantic inferences separate from source-established behavior."
-        }
-      ],
+      "useCases": {
+        "title": "Use a graph to answer call-path, refactor, and documentation questions",
+        "description": "Use the graph as an investigation path, verifying conclusions in source and separating inference from observed behavior.",
+        "items": [
+          {
+            "title": "Locate the path behind a feature",
+            "brief": "Feature entry points, key concepts, and source scope to investigate.",
+            "process": "Trace the modules and concepts connected to an entry point, then open the relevant files before proposing an implementation.",
+            "outcome": "Source-confirmed call paths and implementation locations, marking graph inferences."
+          },
+          {
+            "title": "Check a refactor boundary",
+            "brief": "Modules to refactor, public interfaces, and relevant tests.",
+            "process": "Inspect callers, dependencies, and related documentation to decide which interfaces and tests a structural change must preserve.",
+            "outcome": "A caller/dependency impact report identifying contracts that must remain."
+          },
+          {
+            "title": "Connect code to its design notes",
+            "brief": "Code directories, design documents, and design claims to verify.",
+            "process": "Bring documents and code into the same investigation while keeping semantic inferences separate from source-established behavior.",
+            "outcome": "Document-to-implementation mappings distinguishing inference, verified behavior, and evidence gaps."
+          }
+        ]
+      },
       "requirementsTitle": "Keep Context, Revision, and Data Processing Aligned",
       "requirementsIntro": "The local parser, semantic backend, integration Skill, and hosted service are separate setup choices.",
       "requirements": [
@@ -2521,22 +2721,30 @@
           "description": "提取与推断标签有助于区分直接证据，以及仍需进一步检查的关联。"
         }
       ],
-      "scenariosTitle": "修改代码前先调查影响关系",
-      "scenariosIntro": "围绕具体变更问题使用上下文地图，避免把图谱本身当作最终答案。",
-      "scenarios": [
-        {
-          "title": "定位功能背后的调用路径",
-          "description": "从入口查找关联模块与概念，再打开相关文件，确认实现位置后提出修改。"
-        },
-        {
-          "title": "核对重构的边界",
-          "description": "检查调用方、依赖和相关文档，明确结构变更必须保留的接口与测试。"
-        },
-        {
-          "title": "连接代码与设计说明",
-          "description": "把代码和文档放入同一调查，同时区分语义推断与源文件已经证明的行为。"
-        }
-      ],
+      "useCases": {
+        "title": "用图谱回答调用、重构与文档关系问题",
+        "description": "图谱提供调查路径，最终判断仍需回到源码，并保留推断与已证实行为的区别。",
+        "items": [
+          {
+            "title": "定位功能背后的调用路径",
+            "brief": "功能入口、关键概念与需要调查的源码范围。",
+            "process": "从入口查找关联模块与概念，再打开相关文件，确认实现位置后提出修改。",
+            "outcome": "经源码确认的调用路径和实现位置，标出图谱推断部分。"
+          },
+          {
+            "title": "核对重构的边界",
+            "brief": "计划重构的模块、公开接口和相关测试。",
+            "process": "检查调用方、依赖和相关文档，明确结构变更必须保留的接口与测试。",
+            "outcome": "调用方与依赖影响报告，明确必须保留的契约。"
+          },
+          {
+            "title": "连接代码与设计说明",
+            "brief": "代码目录、设计文档及需要验证的设计主张。",
+            "process": "把代码和文档放入同一调查，同时区分语义推断与源文件已经证明的行为。",
+            "outcome": "文档与实现的对应关系，区分推断、已证实行为与缺失证据。"
+          }
+        ]
+      },
       "requirementsTitle": "让上下文、版本与数据处理保持一致",
       "requirementsIntro": "本地解析、语义后端、集成 Skill 与托管服务属于不同配置选择。",
       "requirements": [
@@ -2629,22 +2837,30 @@
           "description": "Desktop, companion, and SSH interfaces support different monitoring or execution arrangements. Choose the one that fits the actual environment."
         }
       ],
-      "scenariosTitle": "Use Parallel Agents Where Comparison Helps",
-      "scenariosIntro": "Additional agents are useful when their assignments and results can be evaluated independently.",
-      "scenarios": [
-        {
-          "title": "Compare two implementation approaches",
-          "description": "Give both attempts the same requirement and tests, then compare behavior, complexity, and evidence rather than accepting the fastest completion."
-        },
-        {
-          "title": "Separate implementation from review",
-          "description": "Assign an implementation task and a focused review task with a clear handoff revision, so review findings refer to the code being considered."
-        },
-        {
-          "title": "Work on distinct repository areas",
-          "description": "Divide changes by ownership boundary and define how shared interfaces and final integration will be handled."
-        }
-      ],
+      "useCases": {
+        "title": "Compare, review, and parallelize changes in isolated branches",
+        "description": "Agree on acceptance, fixed handoff revisions, and shared interfaces before allocating worktrees and integrating results.",
+        "items": [
+          {
+            "title": "Compare two implementation approaches",
+            "brief": "One requirement, common tests, and two implementation approaches.",
+            "process": "Give both attempts the same requirement and tests, then compare behavior, complexity, and evidence rather than accepting the fastest completion.",
+            "outcome": "Comparable results in isolated branches, judged by behavior, complexity, and evidence."
+          },
+          {
+            "title": "Separate implementation from review",
+            "brief": "An implementation commit, review baseline, and acceptance conditions.",
+            "process": "Assign an implementation task and a focused review task with a clear handoff revision, so review findings refer to the code being considered.",
+            "outcome": "Review findings and resolutions tied to a fixed code revision."
+          },
+          {
+            "title": "Work on distinct repository areas",
+            "brief": "Separable repository areas, shared interfaces, and an integration owner.",
+            "process": "Divide changes by ownership boundary and define how shared interfaces and final integration will be handled.",
+            "outcome": "A scoped worktree/branch plan with merge order and joint checks."
+          }
+        ]
+      },
       "requirementsTitle": "Define the Host, Permissions, and Merge Owner",
       "requirementsIntro": "The workbench coordinates tools that still have their own accounts, execution settings, and access boundaries.",
       "requirements": [
@@ -2719,22 +2935,30 @@
           "description": "桌面、伴侣和 SSH 界面承担不同的监控与执行安排，应按实际环境选择。"
         }
       ],
-      "scenariosTitle": "在比较有价值时使用并行 Agent",
-      "scenariosIntro": "只有职责和结果能够独立判断时，增加 Agent 才容易带来有效收益。",
-      "scenarios": [
-        {
-          "title": "比较两种实现方案",
-          "description": "让两组尝试使用相同需求与测试，按行为、复杂度和证据比较，而不是只选择最快完成的一组。"
-        },
-        {
-          "title": "分开实施与代码审阅",
-          "description": "为实施和审阅定义明确的交接版本，让发现的问题指向正在考虑接受的代码。"
-        },
-        {
-          "title": "并行处理不同仓库区域",
-          "description": "沿职责边界拆分修改，同时约定共享接口和最终集成由谁负责。"
-        }
-      ],
+      "useCases": {
+        "title": "在隔离分支中比较、审查与并行修改",
+        "description": "先约定共同验收、固定交接版本与共享接口，再决定怎样分配工作树和集成结果。",
+        "items": [
+          {
+            "title": "比较两种实现方案",
+            "brief": "同一需求、统一测试与两种候选实现方向。",
+            "process": "让两组尝试使用相同需求与测试，按行为、复杂度和证据比较，而不是只选择最快完成的一组。",
+            "outcome": "在隔离分支上可比较的结果，按行为、复杂度与证据作选择。"
+          },
+          {
+            "title": "分开实施与代码审阅",
+            "brief": "实施提交、审查基准与相关验收条件。",
+            "process": "为实施和审阅定义明确的交接版本，让发现的问题指向正在考虑接受的代码。",
+            "outcome": "指向固定代码版本的审查意见和处理结果。"
+          },
+          {
+            "title": "并行处理不同仓库区域",
+            "brief": "可分离的仓库区域、共享接口与集成责任人。",
+            "process": "沿职责边界拆分修改，同时约定共享接口和最终集成由谁负责。",
+            "outcome": "明确分工的 worktree/分支计划，以及合并顺序和联合检查。"
+          }
+        ]
+      },
       "requirementsTitle": "确定宿主、权限与合并负责人",
       "requirementsIntro": "工作台协调的工具仍有各自的账号、执行设置和访问边界。",
       "requirements": [

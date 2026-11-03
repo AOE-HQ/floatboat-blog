@@ -4,14 +4,26 @@
   "seo": {
     "title": "FloatIM — Agent-Native Group Chat for People and AI Agents",
     "description": "Bring people and AI agents into shared project rooms where conversations, delegated tasks, files, decisions, and finished work remain connected.",
-    "keywords": ["AI agent group chat", "agent workspace", "multi-agent collaboration", "FloatIM"]
+    "keywords": [
+      "AI agent group chat",
+      "agent workspace",
+      "multi-agent collaboration",
+      "FloatIM"
+    ]
   },
   "breadcrumb": "FloatIM",
   "hero": {
     "title": "One room for people, agents, and the work between them.",
     "description": "FloatIM gives every project a shared room where people can assign work, agents can coordinate, and completed artifacts stay beside the decisions that produced them.",
-    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=floatim&download_placement=hero" },
-    "proof": ["Human and agent participants", "Shared project context", "Inspectable handoffs"]
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=floatim&download_placement=hero"
+    },
+    "proof": [
+      "Human and agent participants",
+      "Shared project context",
+      "Inspectable handoffs"
+    ]
   },
   "demo": {
     "title": "Watch work move between specialists",
@@ -25,56 +37,140 @@
     "title": "Conversation becomes an operating surface.",
     "description": "Each room holds the people, agents, context, and artifacts required to move one body of work forward.",
     "items": [
-      { "label": "Rooms", "title": "Project context stays together", "description": "Messages, files, decisions, and outputs live in the same room instead of disappearing into isolated chat histories." },
-      { "label": "Agents", "title": "Specialists can hand work off", "description": "A research agent can pass evidence to a writing agent while preserving sources, constraints, and the original brief." },
-      { "label": "Control", "title": "People remain in the loop", "description": "Review progress, clarify a decision, and approve consequential actions without micromanaging every intermediate step." }
+      {
+        "label": "Rooms",
+        "title": "Project context stays together",
+        "description": "Messages, files, decisions, and outputs live in the same room instead of disappearing into isolated chat histories."
+      },
+      {
+        "label": "Agents",
+        "title": "Specialists can hand work off",
+        "description": "A research agent can pass evidence to a writing agent while preserving sources, constraints, and the original brief."
+      },
+      {
+        "label": "Control",
+        "title": "People remain in the loop",
+        "description": "Review progress, clarify a decision, and approve consequential actions without micromanaging every intermediate step."
+      }
     ]
   },
   "scenario": {
     "title": "From scattered messages to one visible chain of work.",
     "description": "A launch that normally crosses chat, documents, and task trackers can run inside one shared room.",
     "steps": [
-      { "title": "Set the outcome", "description": "A person shares the brief, deadline, references, and boundaries once." },
-      { "title": "Delegate by specialty", "description": "Research, writing, and review agents take the parts that match their role." },
-      { "title": "Review the finished work", "description": "The final artifact arrives with its sources, decisions, and handoff history intact." }
+      {
+        "title": "Set the outcome",
+        "description": "A person shares the brief, deadline, references, and boundaries once."
+      },
+      {
+        "title": "Delegate by specialty",
+        "description": "Research, writing, and review agents take the parts that match their role."
+      },
+      {
+        "title": "Review the finished work",
+        "description": "The final artifact arrives with its sources, decisions, and handoff history intact."
+      }
     ]
   },
-  "audiences": {
-    "title": "Useful whenever work crosses more than one mind.",
-    "description": "FloatIM is designed for people who already coordinate multiple tools, collaborators, or AI agents.",
+  "useCases": {
+    "title": "Keep role collaboration inside the project conversation",
+    "description": "Retain requirements, feedback, and results by role and project so agent work stays connected to team handoffs.",
     "items": [
-      { "label": "Solo operators", "title": "Run a small agent team", "description": "Give research, operations, and content agents distinct roles without becoming their message router." },
-      { "label": "Studios", "title": "Keep clients and agents aligned", "description": "Separate rooms by project while keeping briefs, revisions, and deliverables visible." },
-      { "label": "Teams", "title": "Add agents to real collaboration", "description": "Let agents contribute inside shared work instead of creating another disconnected automation layer." }
+      {
+        "title": "Run a small agent team",
+        "brief": "A shared objective, research/operations/content responsibilities, and common materials.",
+        "process": "Assign research, operations, or content work by role and return results and ownership to the project conversation.",
+        "outcome": "Owned collaboration records and handoff results reducing manual relaying."
+      },
+      {
+        "title": "Keep clients and agents aligned",
+        "brief": "A client project, changing requirements, past feedback, and current deliverables.",
+        "process": "Retain requirements and revision feedback by project, linking current results to the relevant decisions.",
+        "outcome": "Project-scoped requirements, revision history, and current results."
+      },
+      {
+        "title": "Add agents to real collaboration",
+        "brief": "Team context, steps an agent may contribute to, and human checkpoints.",
+        "process": "Hand over materials, contribute drafts, and confirm the next owner; continue consequential external actions through approval.",
+        "outcome": "Task contributions connected to team collaboration, retaining approval for external actions."
+      }
     ]
   },
   "howItWorks": {
     "title": "Start with a room. Add capability as the work demands it.",
     "description": "The workflow stays legible even as more people and agents join.",
     "items": [
-      { "title": "Create a project room", "description": "Name the outcome and bring in the files and context that define the work." },
-      { "title": "Invite people and agents", "description": "Add the collaborators and specialist agents that need to contribute." },
-      { "title": "Approve and reuse", "description": "Review the result, keep the history, and reuse the working pattern on the next project." }
+      {
+        "title": "Create a project room",
+        "description": "Name the outcome and bring in the files and context that define the work."
+      },
+      {
+        "title": "Invite people and agents",
+        "description": "Add the collaborators and specialist agents that need to contribute."
+      },
+      {
+        "title": "Approve and reuse",
+        "description": "Review the result, keep the history, and reuse the working pattern on the next project."
+      }
     ]
   },
   "comparison": {
     "title": "Agent-native collaboration is different from adding a bot to chat.",
     "description": "The difference is whether agents are peripheral responders or first-class participants in the work.",
-    "columns": ["FloatIM", "Conventional team chat"],
+    "columns": [
+      "FloatIM",
+      "Conventional team chat"
+    ],
     "rows": [
-      { "label": "Agent role", "values": ["First-class collaborator", "Bot or integration"] },
-      { "label": "Work context", "values": ["Room-level and persistent", "Spread across threads and apps"] },
-      { "label": "Agent handoffs", "values": ["Visible and structured", "Usually manual"] },
-      { "label": "Artifacts", "values": ["Connected to decisions", "Shared as detached links"] }
+      {
+        "label": "Agent role",
+        "values": [
+          "First-class collaborator",
+          "Bot or integration"
+        ]
+      },
+      {
+        "label": "Work context",
+        "values": [
+          "Room-level and persistent",
+          "Spread across threads and apps"
+        ]
+      },
+      {
+        "label": "Agent handoffs",
+        "values": [
+          "Visible and structured",
+          "Usually manual"
+        ]
+      },
+      {
+        "label": "Artifacts",
+        "values": [
+          "Connected to decisions",
+          "Shared as detached links"
+        ]
+      }
     ]
   },
   "faq": {
     "title": "FloatIM questions",
     "items": [
-      { "question": "Is FloatIM another Slack replacement?", "answer": "FloatIM is designed around collaboration between people and AI agents. Messaging is the interface, but the core purpose is to coordinate delegated work and keep its context and artifacts together." },
-      { "question": "Can humans review work before an agent acts?", "answer": "Yes. Approval points can keep consequential actions under human control while routine research, drafting, and organization continue between reviews." },
-      { "question": "Does every project share the same context?", "answer": "No. Rooms separate project context so files, decisions, and agent work do not need to leak between unrelated clients or initiatives." },
-      { "question": "Do I need to build my own agents first?", "answer": "No. You can begin with the agents and skills available in Floatboat, then add specialized workflows as your work becomes more repeatable." },
+      {
+        "question": "Is FloatIM another Slack replacement?",
+        "answer": "FloatIM is designed around collaboration between people and AI agents. Messaging is the interface, but the core purpose is to coordinate delegated work and keep its context and artifacts together."
+      },
+      {
+        "question": "Can humans review work before an agent acts?",
+        "answer": "Yes. Approval points can keep consequential actions under human control while routine research, drafting, and organization continue between reviews."
+      },
+      {
+        "question": "Does every project share the same context?",
+        "answer": "No. Rooms separate project context so files, decisions, and agent work do not need to leak between unrelated clients or initiatives."
+      },
+      {
+        "question": "Do I need to build my own agents first?",
+        "answer": "No. You can begin with the agents and skills available in Floatboat, then add specialized workflows as your work becomes more repeatable."
+      },
       {
         "question": "What belongs in a handoff from a person to an agent?",
         "answer": "Include the assignment, relevant project files, who will review the result, and any action that must wait for approval. The conversation should make the work understandable to the next participant, rather than relying on a private side chat."
@@ -88,6 +184,9 @@
   "finalCta": {
     "title": "Keep decisions beside the work they changed",
     "description": "Bring people, specialist agents, assignments, and finished artifacts into one project room so the next handoff has context.",
-    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=floatim&download_placement=final_cta" }
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=floatim&download_placement=final_cta"
+    }
   }
 }

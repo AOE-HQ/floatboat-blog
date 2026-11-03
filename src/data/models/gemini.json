@@ -193,59 +193,68 @@
       }
     ]
   },
-  "workflows": {
+  "useCases": {
     "title": {
-      "en": "Use Gemini when the source set is part of the problem.",
-      "zh": "当资料规模本身就是问题的一部分时，使用 Gemini。"
+      "zh": "在大资料集与高频小任务中选择处理方式",
+      "en": "Choose processing for large source sets and frequent small tasks"
     },
     "description": {
-      "en": "These examples depend on seeing relationships across documents, images, or repeated inputs.",
-      "zh": "这些任务需要在文档、图像或重复输入之间看见关系。"
+      "zh": "资料之间的关系与批量处理的节奏是不同问题，输入、验证和预期成果也应分别定义。",
+      "en": "Relationships across sources and batch-processing pace are different problems, requiring different inputs, verification, and outputs."
     },
     "items": [
       {
-        "title": { "en": "Cross-document research", "zh": "跨文档研究" },
+        "title": {
+          "en": "Cross-document research",
+          "zh": "跨文档研究"
+        },
         "brief": {
-          "en": "Compare a large collection without losing contradictions between sources.",
-          "zh": "比较大型资料集，同时保留来源之间的矛盾。"
+          "zh": "多份文档、需要比较的论点与统一引用规则。",
+          "en": "Multiple documents, claims to compare, and citation rules."
         },
         "process": {
-          "en": "Pro keeps more of the source set available while forming themes and checking claims.",
-          "zh": "Pro 在归纳主题和核对说法时保留更多原始材料。"
+          "zh": "连接跨文件主题，保留来源分歧与无法证实的主张。",
+          "en": "Connect themes across files, retaining disagreement and unverified claims."
         },
         "outcome": {
-          "en": "A synthesis that remains traceable to the full evidence set.",
-          "zh": "一份仍可追溯完整证据集的综合结论。"
+          "zh": "带来源映射、矛盾说明和证据缺口的综合报告。",
+          "en": "A synthesis report with source mappings, contradictions, and evidence gaps."
         }
       },
       {
-        "title": { "en": "Visual product review", "zh": "视觉产品审查" },
+        "title": {
+          "en": "Visual product review",
+          "zh": "视觉产品审查"
+        },
         "brief": {
-          "en": "Review screenshots together with requirements and written feedback.",
-          "zh": "结合需求与文字反馈审查多张截图。"
+          "zh": "产品需求、文字反馈及同一流程的多张截图。",
+          "en": "Product requirements, written feedback, and screenshots of one flow."
         },
         "process": {
-          "en": "Pro connects layout evidence, text, and constraints in one pass.",
-          "zh": "Pro 在一次处理中连接布局证据、文字与约束。"
+          "zh": "把图像中的状态与需求逐项对应，按用户影响整理发现。",
+          "en": "Map visible states to requirements and organize findings by user impact."
         },
         "outcome": {
-          "en": "Prioritized findings grounded in both images and requirements.",
-          "zh": "一份同时基于图像和需求的优先级问题清单。"
+          "zh": "同时基于画面和要求的优先级问题清单。",
+          "en": "Prioritized findings grounded in both screenshots and requirements."
         }
       },
       {
-        "title": { "en": "High-volume classification", "zh": "高频批量分类" },
+        "title": {
+          "en": "High-volume classification",
+          "zh": "高频批量分类"
+        },
         "brief": {
-          "en": "Apply a clear rubric to many small pieces of content.",
-          "zh": "依据明确规则处理大量小型内容。"
+          "zh": "明确分类规则、大量小型文本与带答案的样本。",
+          "en": "Classification rules, many small texts, and labeled samples."
         },
         "process": {
-          "en": "Flash prioritizes consistent, fast turns over extensive deliberation.",
-          "zh": "Flash 优先保持快速、稳定的处理节奏，而不是展开深度推理。"
+          "zh": "分批处理并抽样核对，记录歧义项和规则边界。",
+          "en": "Process batches, spot-check results, and record ambiguity and rule boundaries."
         },
         "outcome": {
-          "en": "A processed batch with less turnaround time.",
-          "zh": "以更短周转时间完成的批量结果。"
+          "zh": "分类结果、异常项和样本准确性检查记录。",
+          "en": "Classification outputs, exceptions, and sample-accuracy checks."
         }
       }
     ]
@@ -335,28 +344,6 @@
         }
       ]
     }
-  },
-  "extensions": {
-    "title": {
-      "en": "Choose the bottleneck you need to remove.",
-      "zh": "先判断需要消除的是哪种瓶颈。"
-    },
-    "items": [
-      {
-        "title": "Gemini Pro",
-        "description": {
-          "en": "Use when fitting the whole source set into one analysis matters more than response speed.",
-          "zh": "当一次容纳完整资料比响应速度更重要时使用。"
-        }
-      },
-      {
-        "title": "Gemini Flash",
-        "description": {
-          "en": "Use when many small requests must complete quickly and consistently.",
-          "zh": "当大量小任务需要快速、稳定完成时使用。"
-        }
-      }
-    ]
   },
   "faq": [
     {

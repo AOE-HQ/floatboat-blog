@@ -1,3 +1,5 @@
+import { UseCasesSection } from "@/components/marketing/use-cases-section";
+import { localizeUseCases } from "@/lib/marketing/use-cases";
 import { OverviewSection } from "@/components/marketing/overview-section";
 import { Breadcrumb } from "@/components/marketing/breadcrumb";
 import { FaqBand } from "@/components/faq-band";
@@ -109,44 +111,7 @@ export function ModelDetailPage({
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
-        <div className="mb-12 max-w-3xl">
-          <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
-            {localize(model.workflows.title, locale)}
-          </h2>
-          <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
-            {localize(model.workflows.description, locale)}
-          </p>
-        </div>
-        <div className="grid gap-6 lg:grid-cols-3">
-          {model.workflows.items.map((item) => (
-            <article
-              key={item.title.en}
-              className="rounded-3xl border border-black/[0.07] bg-white/50 p-7"
-            >
-              <h3 className="font-serif text-2xl">
-                {localize(item.title, locale)}
-              </h3>
-              <p className="mt-5 text-sm font-semibold text-[var(--ob-color-accent)]">
-                  {isZh ? "任务输入" : "Task input"}
-              </p>
-              <p className="mt-2 leading-7 text-[var(--ob-color-text-subtle)]">
-                {localize(item.brief, locale)}
-              </p>
-              <p className="mt-5 text-sm font-semibold text-[var(--ob-color-accent)]">
-                  {isZh ? "处理重点" : "Processing focus"}
-              </p>
-              <p className="mt-2 leading-7 text-[var(--ob-color-text-subtle)]">
-                {localize(item.process, locale)}
-              </p>
-              <p className="mt-5 border-t border-black/[0.07] pt-5 text-sm font-semibold">
-                  {isZh ? "预期结果：" : "Expected result: "}
-                {localize(item.outcome, locale)}
-              </p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <UseCasesSection {...localizeUseCases(model.useCases, locale)} locale={locale} />
 
       <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -232,31 +197,6 @@ export function ModelDetailPage({
               </li>
             ))}
           </ol>
-        </section>
-      )}
-
-      {model.extensions && (
-        <section className="border-y border-black/[0.06] py-20 sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-8">
-            <div className="mx-auto mb-10 max-w-3xl text-center">
-              <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
-                {localize(model.extensions.title, locale)}
-              </h2>
-            </div>
-            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {model.extensions.items.map((item) => (
-                <article
-                  key={item.title}
-                  className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7"
-                >
-                  <h3 className="font-serif text-2xl">{item.title}</h3>
-                  <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">
-                    {localize(item.description, locale)}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </div>
         </section>
       )}
 

@@ -1,3 +1,4 @@
+import { useCasesSchema } from "@/lib/marketing/use-cases";
 import { z } from "zod";
 import data from "@/data/projects/agent-projects.json";
 import { FEATURED_SKILLS, type SkillLocale } from "@/lib/skills/featured-skills";
@@ -17,9 +18,7 @@ const copy = z.object({
   capabilitiesTitle: text,
   capabilitiesIntro: text,
   capabilities: z.array(item).length(3),
-  scenariosTitle: text,
-  scenariosIntro: text,
-  scenarios: z.array(item).length(3),
+  useCases: useCasesSchema,
   requirementsTitle: text,
   requirementsIntro: text,
   requirements: z.array(item).length(3),

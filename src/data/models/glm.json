@@ -136,59 +136,68 @@
       }
     ]
   },
-  "workflows": {
+  "useCases": {
     "title": {
-      "en": "The useful distinction is how reasoning survives the gateway.",
-      "zh": "真正有用的区别是推理内容如何通过网关保留下来。"
+      "zh": "核对推理传递与聊天通道适配",
+      "en": "Verify reasoning transfer and chat-route compatibility"
     },
     "description": {
-      "en": "GLM has a configured integration path, but it was absent from the October 9, 2026 main-picker record; check the current entry.",
-      "zh": "GLM 已配置集成通道，但2026 年 10 月 9 日记录未显示默认选择器入口，当前应核对实际菜单。"
+      "zh": "这里的任务是集成核验；是否能从当前客户端发起，仍需检查实际入口，不能以配置记录代替。",
+      "en": "These are integration checks; verify the actual client entry rather than treating configuration records as proof of access."
     },
     "items": [
       {
-        "title": { "en": "Reasoning playback", "zh": "推理回放" },
+        "title": {
+          "en": "Reasoning playback",
+          "zh": "推理回放"
+        },
         "brief": {
-          "en": "Carry thinking-mode output through a compatible chat response.",
-          "zh": "通过兼容聊天响应传递 thinking-mode 输出。"
+          "zh": "兼容响应样例、thinking-mode 设置与需要保留的推理字段。",
+          "en": "Compatible response samples, thinking-mode settings, and reasoning fields to preserve."
         },
         "process": {
-          "en": "The adapter maps and replays `reasoning_content`.",
-          "zh": "适配器映射并回放 `reasoning_content`。"
+          "zh": "核对 reasoning_content 的映射与回放，检查缺失或重复片段。",
+          "en": "Check reasoning_content mapping/replay for missing or duplicated segments."
         },
         "outcome": {
-          "en": "Reasoning content remains available to the runtime flow.",
-          "zh": "推理内容保留在运行时流程中。"
+          "zh": "推理字段的对照记录，以及回放差异与修正建议。",
+          "en": "Reasoning-field comparisons, replay differences, and correction suggestions."
         }
       },
       {
-        "title": { "en": "Gateway compatibility", "zh": "网关兼容" },
+        "title": {
+          "en": "Gateway compatibility",
+          "zh": "网关兼容"
+        },
         "brief": {
-          "en": "Connect GLM through the established chat channel.",
-          "zh": "通过既有聊天通道连接 GLM。"
+          "zh": "已有聊天通道、请求格式与响应消费方式。",
+          "en": "An existing chat route, request format, and response-consumption logic."
         },
         "process": {
-          "en": "The integration uses the OpenAI Chat Completions-compatible path.",
-          "zh": "集成使用兼容 OpenAI Chat Completions 的路径。"
+          "zh": "比较兼容接口契约，核对模型标识、流式事件与错误响应。",
+          "en": "Compare interface contracts, model identifiers, streaming events, and error responses."
         },
         "outcome": {
-          "en": "A defined transport for GLM responses.",
-          "zh": "一条明确的 GLM 响应传输路径。"
+          "zh": "明确的请求响应映射及兼容性测试结果。",
+          "en": "An explicit request/response mapping and compatibility test results."
         }
       },
       {
-        "title": { "en": "Workflow compatibility review", "zh": "工作流兼容性评估" },
+        "title": {
+          "en": "Workflow compatibility review",
+          "zh": "工作流兼容性评估"
+        },
         "brief": {
-          "en": "Check the model ID, reasoning support, and available access path for the intended task.",
-          "zh": "结合具体任务，核对型号、推理支持与当前访问入口。"
+          "zh": "具体工作流、推理需求与当前访问条件。",
+          "en": "A concrete workflow, reasoning needs, and current access conditions."
         },
         "process": {
-          "en": "Review IDs, reasoning playback, channel, and availability separately.",
-          "zh": "分别检查 ID、推理回放、通道和可用状态。"
+          "zh": "分别检查型号、推理回放、通道和实际入口，标记尚未验证的环节。",
+          "en": "Check model identity, reasoning replay, routes, and actual access, marking unverified steps."
         },
         "outcome": {
-          "en": "A workflow plan with clear compatibility and access requirements.",
-          "zh": "明确兼容性与访问要求的工作流方案。"
+          "zh": "兼容性与访问要求明确的接入评估。",
+          "en": "An integration assessment with explicit compatibility and access requirements."
         }
       }
     ]

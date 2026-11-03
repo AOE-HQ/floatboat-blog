@@ -4,14 +4,26 @@
   "seo": {
     "title": "AI File Organizer — Organize Local Files With Preview and Approval",
     "description": "Organize, rename, and sort local files with an AI agent that previews the proposed structure before making approved changes on your computer.",
-    "keywords": ["AI file organizer", "organize files with AI", "automatic file organizer", "AI file renamer"]
+    "keywords": [
+      "AI file organizer",
+      "organize files with AI",
+      "automatic file organizer",
+      "AI file renamer"
+    ]
   },
   "breadcrumb": "AI File Organizer",
   "hero": {
     "title": "Describe the order you want. Preview it before anything moves.",
     "description": "Let Floatboat inspect a messy folder, propose a useful structure, and apply only the renames and moves you approve—directly on your computer.",
-    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=hero" },
-    "proof": ["Runs on local folders", "Preview before execution", "Per-file results"]
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=hero"
+    },
+    "proof": [
+      "Runs on local folders",
+      "Preview before execution",
+      "Per-file results"
+    ]
   },
   "demo": {
     "title": "Inspect the proposed structure before applying it",
@@ -25,47 +37,119 @@
     "title": "More than moving files by extension.",
     "description": "Floatboat can use filenames, folder context, and document content to propose a structure that reflects the work itself.",
     "items": [
-      { "label": "Understand", "title": "Group files by meaning", "description": "Separate contracts, invoices, research, drafts, and assets even when filenames are inconsistent." },
-      { "label": "Preview", "title": "See every proposed change", "description": "Review destinations and new names before approving the operation." },
-      { "label": "Repeat", "title": "Save the organization rule", "description": "Reuse a successful structure for future downloads, client folders, or recurring projects." }
+      {
+        "label": "Understand",
+        "title": "Group files by meaning",
+        "description": "Separate contracts, invoices, research, drafts, and assets even when filenames are inconsistent."
+      },
+      {
+        "label": "Preview",
+        "title": "See every proposed change",
+        "description": "Review destinations and new names before approving the operation."
+      },
+      {
+        "label": "Repeat",
+        "title": "Save the organization rule",
+        "description": "Reuse a successful structure for future downloads, client folders, or recurring projects."
+      }
     ]
   },
   "scenario": {
     "title": "Turn a mixed folder into a structure you can trust.",
     "description": "The organizer can identify what belongs together, flag uncertain files, and leave you with an auditable result.",
     "steps": [
-      { "title": "Choose the folder", "description": "Scope the task to the exact local directory you want the agent to inspect." },
-      { "title": "Review the plan", "description": "Check proposed groups, filenames, duplicates, and files that need a decision." },
-      { "title": "Approve the changes", "description": "Apply the accepted moves and receive a per-file summary of what happened." }
+      {
+        "title": "Choose the folder",
+        "description": "Scope the task to the exact local directory you want the agent to inspect."
+      },
+      {
+        "title": "Review the plan",
+        "description": "Check proposed groups, filenames, duplicates, and files that need a decision."
+      },
+      {
+        "title": "Approve the changes",
+        "description": "Apply the accepted moves and receive a per-file summary of what happened."
+      }
     ]
   },
-  "audiences": {
-    "title": "Useful wherever files arrive faster than people can classify them.",
-    "description": "The organizer works best on folders that mix projects, formats, sources, and naming conventions.",
+  "useCases": {
+    "title": "Organize files by project, period, and asset relationships",
+    "description": "Base classification on file use and existing conventions, keeping uncertain assignments open and changes reviewable.",
     "items": [
-      { "label": "Freelancers", "title": "Separate client work cleanly", "description": "Sort incoming assets, references, contracts, and deliverables into consistent project structures." },
-      { "label": "Operations", "title": "Standardize recurring records", "description": "Rename and place invoices, reports, receipts, and exported data using repeatable rules." },
-      { "label": "Creators", "title": "Tame footage and research", "description": "Group source media, transcripts, thumbnails, and drafts without uploading the archive to a separate service." }
+      {
+        "title": "Separate client work cleanly",
+        "brief": "Incoming client assets, contracts and deliverables, plus project naming rules.",
+        "process": "Classify material using project rules, keeping uncertain assignments open for confirmation.",
+        "outcome": "A client/project-separated file structure with ambiguous files held for confirmation."
+      },
+      {
+        "title": "Standardize recurring records",
+        "brief": "Current invoices, receipts/reports, and approved filing rules.",
+        "process": "Rename/file current records using approved rules, recording original locations and resulting changes.",
+        "outcome": "Consistently named and filed records with a change list for review."
+      },
+      {
+        "title": "Tame footage and research",
+        "brief": "Source videos, transcripts, thumbnails, research drafts, and their relationships.",
+        "process": "Connect assets by source and production stage, preserving relationships between videos, transcripts, and derived files.",
+        "outcome": "A categorized structure preserving asset relationships without guessing uncertain contents from filenames."
+      }
     ]
   },
   "howItWorks": {
     "title": "Analysis first. File operations second.",
     "description": "The workflow creates a clear boundary between understanding the folder and changing it.",
     "items": [
-      { "title": "Describe the target structure", "description": "Explain the outcome, naming convention, and folders that must remain untouched." },
-      { "title": "Correct the preview", "description": "Review uncertain matches and adjust categories before execution." },
-      { "title": "Apply and audit", "description": "Run the approved changes and keep a summary of moved, renamed, skipped, and duplicate files." }
+      {
+        "title": "Describe the target structure",
+        "description": "Explain the outcome, naming convention, and folders that must remain untouched."
+      },
+      {
+        "title": "Correct the preview",
+        "description": "Review uncertain matches and adjust categories before execution."
+      },
+      {
+        "title": "Apply and audit",
+        "description": "Run the approved changes and keep a summary of moved, renamed, skipped, and duplicate files."
+      }
     ]
   },
   "comparison": {
     "title": "Rules sort filenames. An agent can organize the work behind them.",
     "description": "Meaning-aware organization is useful when extensions and naming patterns are not enough.",
-    "columns": ["Floatboat", "Rule-based organizer"],
+    "columns": [
+      "Floatboat",
+      "Rule-based organizer"
+    ],
     "rows": [
-      { "label": "Uses file context", "values": ["Yes", "Usually no"] },
-      { "label": "Previews every change", "values": ["Built into the workflow", "Varies"] },
-      { "label": "Handles ambiguity", "values": ["Flags for review", "Applies the rule"] },
-      { "label": "Local execution", "values": ["On your computer", "Depends on the tool"] }
+      {
+        "label": "Uses file context",
+        "values": [
+          "Yes",
+          "Usually no"
+        ]
+      },
+      {
+        "label": "Previews every change",
+        "values": [
+          "Built into the workflow",
+          "Varies"
+        ]
+      },
+      {
+        "label": "Handles ambiguity",
+        "values": [
+          "Flags for review",
+          "Applies the rule"
+        ]
+      },
+      {
+        "label": "Local execution",
+        "values": [
+          "On your computer",
+          "Depends on the tool"
+        ]
+      }
     ]
   },
   "faq": {
@@ -75,9 +159,18 @@
         "question": "Does organizing local files mean no data leaves my device?",
         "answer": "No. File operations can take place locally while selected content is sent to a model or connected service. Check the provider, tool permissions, and material involved before using sensitive files; a local folder alone is not a privacy guarantee."
       },
-      { "question": "Can it rename and move files together?", "answer": "Yes. A single approved plan can create folders, rename files, and move them into the proposed structure while reporting the result per file." },
-      { "question": "What happens when the agent is unsure?", "answer": "Uncertain matches should be surfaced for review rather than silently forced into a category. You can correct the plan before execution." },
-      { "question": "Can I reuse an organization system?", "answer": "Yes. A successful rule can become a reusable workflow for recurring exports, client onboarding, downloads, or project archives." },
+      {
+        "question": "Can it rename and move files together?",
+        "answer": "Yes. A single approved plan can create folders, rename files, and move them into the proposed structure while reporting the result per file."
+      },
+      {
+        "question": "What happens when the agent is unsure?",
+        "answer": "Uncertain matches should be surfaced for review rather than silently forced into a category. You can correct the plan before execution."
+      },
+      {
+        "question": "Can I reuse an organization system?",
+        "answer": "Yes. A successful rule can become a reusable workflow for recurring exports, client onboarding, downloads, or project archives."
+      },
       {
         "question": "How should possible duplicate files be handled?",
         "answer": "Keep deletion out of the first organization pass. Review content, version history, and project references before deciding that two similar names identify the same file; retain uncertain candidates for a separate check."
@@ -91,6 +184,9 @@
   "finalCta": {
     "title": "Approve the folder plan before it changes files",
     "description": "Point Floatboat at a messy folder, inspect proposed groups and renames, then apply only the moves you approve locally.",
-    "primaryCta": { "label": "Download Floatboat", "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=final_cta" }
+    "primaryCta": {
+      "label": "Download Floatboat",
+      "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=final_cta"
+    }
   }
 }

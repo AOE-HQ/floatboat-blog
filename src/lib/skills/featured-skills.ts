@@ -1,3 +1,4 @@
+import type { LocalizedUseCases } from "@/lib/marketing/use-cases";
 import featuredSkills from "@/data/skills/featured-skills.json";
 import vercelLabsSkills from "@/data/skills/vercel-labs-skills.json";
 import anthropicDesignSkills from "@/data/skills/anthropic-design-skills.json";
@@ -43,12 +44,10 @@ export type FeaturedSkill = {
     kind: LocalizedText;
   };
   sectionTitles: {
-    useCases: LocalizedText;
-    useCasesDescription: LocalizedText;
     how: LocalizedText;
     howDescription: LocalizedText;
   };
-  scenarios: Array<{ label: LocalizedText; title: LocalizedText; body: LocalizedText }>;
+  useCases: LocalizedUseCases;
   example: { prompt: LocalizedText };
   steps: Array<{ title: LocalizedText; body: LocalizedText }>;
   faq: Array<{ question: LocalizedText; answer: LocalizedText }>;

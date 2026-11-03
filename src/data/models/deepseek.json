@@ -138,59 +138,68 @@
       }
     ]
   },
-  "workflows": {
+  "useCases": {
     "title": {
-      "en": "Match the reasoning budget to the failure risk.",
-      "zh": "让推理投入与失败风险匹配。"
+      "zh": "分别验证复杂推理与常规修改",
+      "en": "Verify difficult reasoning and routine changes differently"
     },
     "description": {
-      "en": "The Pro and Flash variants should not receive identical work by default.",
-      "zh": "Pro 与 Flash 不应默认承担完全相同的工作。"
+      "zh": "算法与数值问题需要证明假设，常规队列则需要清楚边界和快速复核；使用现有可用的模型路径。",
+      "en": "Algorithmic and numerical work needs tested assumptions; routine queues need bounded scope and efficient review through an available model route."
     },
     "items": [
       {
-        "title": { "en": "Algorithm design", "zh": "算法设计" },
+        "title": {
+          "en": "Algorithm design",
+          "zh": "算法设计"
+        },
         "brief": {
-          "en": "Design an approach with correctness and complexity constraints.",
-          "zh": "在正确性与复杂度约束下设计方案。"
+          "zh": "输入规模、正确性要求、复杂度限制和边界样本。",
+          "en": "Input scale, correctness requirements, complexity limits, and edge cases."
         },
         "process": {
-          "en": "V4 Pro can examine assumptions, edge cases, and the proof behind the implementation.",
-          "zh": "V4 Pro 可检查假设、边界条件与实现背后的论证。"
+          "zh": "检查算法假设、边界条件与正确性论证，再评估实现成本。",
+          "en": "Check assumptions, boundaries, and correctness arguments before implementation cost."
         },
         "outcome": {
-          "en": "An implementable algorithm with explicit reasoning.",
-          "zh": "一套论证明确、可以实现的算法方案。"
+          "zh": "论证明确的算法方案、复杂度说明和验证样例。",
+          "en": "An argued algorithm, complexity analysis, and validation examples."
         }
       },
       {
-        "title": { "en": "Difficult numerical bug", "zh": "疑难数值故障" },
+        "title": {
+          "en": "Difficult numerical bug",
+          "zh": "疑难数值故障"
+        },
         "brief": {
-          "en": "Trace a calculation that fails only under particular inputs.",
-          "zh": "追踪仅在特定输入下失败的计算。"
+          "zh": "失败输入、计算步骤、预期值和实际误差。",
+          "en": "Failing inputs, calculation steps, expected values, and observed error."
         },
         "process": {
-          "en": "V4 Pro follows the mathematical path instead of patching the final symptom.",
-          "zh": "V4 Pro 沿数学过程追踪，而不是只修补最终症状。"
+          "zh": "沿数值过程查找假设或边界错误，用反例验证修改。",
+          "en": "Trace numerical assumptions/boundaries and verify changes with counterexamples."
         },
         "outcome": {
-          "en": "A fix tied to the actual invalid assumption.",
-          "zh": "针对真实错误假设的修复。"
+          "zh": "错误机制说明、修复及原失败输入的复测。",
+          "en": "An error-mechanism explanation, fix, and retest of the original input."
         }
       },
       {
-        "title": { "en": "Routine edit queue", "zh": "常规修改队列" },
+        "title": {
+          "en": "Routine edit queue",
+          "zh": "常规修改队列"
+        },
         "brief": {
-          "en": "Complete several small, clearly specified code or text changes.",
-          "zh": "完成多项边界清楚的小型代码或文本修改。"
+          "zh": "多项互相独立的小改动与各自验收规则。",
+          "en": "Independent small changes and their acceptance rules."
         },
         "process": {
-          "en": "Flash favors quick turns where extensive deliberation would add little value.",
-          "zh": "Flash 优先快速周转，避免无必要的深度思考。"
+          "zh": "逐项实施、检查差异并运行相关验证，遇到跨项依赖时单独处理。",
+          "en": "Implement and review each diff with relevant checks, separating cross-item dependencies."
         },
         "outcome": {
-          "en": "More completed routine work with less waiting.",
-          "zh": "以更少等待完成更多常规任务。"
+          "zh": "可分别审阅的修改与检查结果，不把队列合并成无边界任务。",
+          "en": "Individually reviewable changes and checks rather than an unbounded combined task."
         }
       }
     ]
@@ -277,28 +286,6 @@
         }
       ]
     }
-  },
-  "extensions": {
-    "title": {
-      "en": "Escalate only when the problem earns it.",
-      "zh": "只有问题值得时，才升级推理强度。"
-    },
-    "items": [
-      {
-        "title": "V4 Pro",
-        "description": {
-          "en": "Use for algorithm design, difficult failures, and work where a wrong assumption compounds.",
-          "zh": "用于算法设计、疑难故障，以及错误假设会持续放大的任务。"
-        }
-      },
-      {
-        "title": "V4.1 Flash",
-        "description": {
-          "en": "Use for common edits, explanations, and repeatable tasks where throughput dominates.",
-          "zh": "用于常规修改、解释和吞吐优先的重复任务。"
-        }
-      }
-    ]
   },
   "faq": [
     {

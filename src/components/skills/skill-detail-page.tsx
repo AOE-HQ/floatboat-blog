@@ -1,3 +1,4 @@
+import { localizeUseCases } from "@/lib/marketing/use-cases";
 import { StartInFloatboat } from "@/components/conversion/start-in-floatboat";
 import { getResourceStartTask } from "@/lib/resource-start-tasks";
 import { FaqBand } from "@/components/faq-band";
@@ -81,11 +82,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
         ]}
       />
 
-      <UseCasesSection
-        title={skill.sectionTitles.useCases[locale]}
-        description={skill.sectionTitles.useCasesDescription[locale]}
-        items={skill.scenarios.map((item) => ({ label: item.label[locale], title: item.title[locale], description: item.body[locale] }))}
-      />
+      <UseCasesSection {...localizeUseCases(skill.useCases, locale)} locale={locale} />
 
       <HowSection
         title={skill.sectionTitles.how[locale]}

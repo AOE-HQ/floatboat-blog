@@ -1,3 +1,4 @@
+import { useCasesSchema } from "@/lib/marketing/use-cases";
 import { z } from "zod";
 
 const linkSchema = z.object({
@@ -47,11 +48,7 @@ export const coreFeaturePageSchema = z.object({
     description: z.string().min(1),
     steps: z.array(z.object({ title: z.string(), description: z.string() })).min(3),
   }),
-  audiences: z.object({
-    title: z.string().min(1),
-    description: z.string().min(1),
-    items: z.array(mediaSchema).min(3),
-  }),
+  useCases: useCasesSchema,
   howItWorks: z.object({
     title: z.string().min(1),
     description: z.string().min(1),
