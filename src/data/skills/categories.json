@@ -133,6 +133,10 @@
           "answer": "可以，但应明确分工，例如先复现、再定位、实施小改动、最后审阅差异。遇到冲突指令应先解决，并围绕同一验收目标执行，不叠加无关清单。"
         }
       ]
+    },
+    "overviewTitle": {
+      "en": "Coding Skills in an Existing Codebase",
+      "zh": "编码 Skill 如何用于现有代码库"
     }
   },
   "development": {
@@ -288,6 +292,10 @@
           "answer": "当同类任务具有稳定输入、可重复方法和能够评价的结果时，可以考虑。先用简短指令与代表性示例验证，再根据实际结果修订，不必把每次临时任务都包装成 Skill。"
         }
       ]
+    },
+    "overviewTitle": {
+      "en": "Planning and Verifying Code Changes",
+      "zh": "从实施前规划到修改后验证"
     }
   },
   "design-interfaces": {
@@ -423,6 +431,10 @@
           "answer": "统一信息职责与句子长度，说明项目做什么、帮助谁或处理什么。排版和间距应配合内容编辑；只靠截断文字不能解决描述空泛或长短失衡。"
         }
       ]
+    },
+    "overviewTitle": {
+      "en": "Design Instructions and Interface Review",
+      "zh": "设计指令与真实界面审查"
     }
   },
   "writing-marketing": {
@@ -557,6 +569,10 @@
           "answer": "编辑前先定义期望结果和比较时间范围，再选择匹配指标，例如有效访问、任务完成或转化。归因时还要考虑同期其他变动，不能直接把结果归功于新文案。"
         }
       ]
+    },
+    "overviewTitle": {
+      "en": "Marketing Work from Evidence to Publication",
+      "zh": "从证据整理到营销内容发布"
     }
   },
   "deployment-browser": {
@@ -690,6 +706,10 @@
           "answer": "打开公开目标，检查代表路由、资源、预期内容及关键用户操作，并记录实际部署版本。构建成功或预览正常，不能单独证明生产状态。"
         }
       ]
+    },
+    "overviewTitle": {
+      "en": "Tools and Access for Deployment Tasks",
+      "zh": "部署与浏览器任务的工具前提"
     }
   },
   "documents": {
@@ -830,6 +850,10 @@
           "answer": "使用合适查看器打开输出，将内容与来源比较；涉及版式时检查页面或幻灯片渲染。电子表格还应核对公式与重新计算后的数值，而不只看格式。"
         }
       ]
+    },
+    "overviewTitle": {
+      "en": "Choose the Workflow by Document Format",
+      "zh": "按交付格式选择文档流程"
     }
   },
   "video-production": {
@@ -967,6 +991,10 @@
           "answer": "没有。这里当前展示的是已有本站指南的 HyperFrames 工作流。可选媒体服务各有能力与使用要求，应通过原始项目文档判断是否适合具体需求。"
         }
       ]
+    },
+    "overviewTitle": {
+      "en": "Connect Creative Decisions to Video Tools",
+      "zh": "把创作决定连接到视频工具"
     }
   }
 }

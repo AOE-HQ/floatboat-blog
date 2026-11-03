@@ -12,7 +12,6 @@ const copy = z.object({
   overview: z.object({
     title: text,
     paragraphs: z.array(text).min(1),
-    items: z.array(z.object({ title: text, description: text })).optional(),
   }).optional(),
   aboutTitle: text,
   about: text,

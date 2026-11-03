@@ -58,7 +58,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
         examplePrompt={skill.example.prompt[locale]}
       />
 
-      <OverviewSection
+      <OverviewSection variant="profile"
         id="skill-introduction"
         title={overview.title}
         paragraphs={overview.paragraphs}
@@ -67,7 +67,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
           typeLabel: "Agent Skill",
           tags: [skill.category[locale], skill.pageCopy.kind[locale]],
         }}
-        linksTitle={isZh ? "Skill 来源" : "Skill sources"}
+        linksTitle={isZh ? "发布者与来源" : "Publisher and sources"}
         links={[
           { label: isZh ? `提供方：${skill.publisher}` : `By ${skill.publisher}`, href: publisherPath },
           { label: isZh ? "原始 SKILL.md" : "Original SKILL.md", href: skill.sourceUrl },

@@ -54,14 +54,13 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
 
       <MarketingHero layout="centered" title={publisherHeading(locale, t.heroTitle)} description={t.heroDescription} />
 
-      <OverviewSection
+      <OverviewSection variant="profile"
 
         title={overview.title}
         paragraphs={overview.paragraphs}
-        items={overview.items}
         identity={{ name: profile.name, typeLabel: isOrganization ? (isZh ? "团队 / 组织" : "Organization") : (isZh ? "创作者" : "Creator"), logo: profile.logo, tags: profile.tags?.[locale] }}
         links={overviewLinks}
-        linksTitle={isOrganization ? (isZh ? "组织官网与开源入口" : "Organization links") : (isZh ? "创作者主页与作品入口" : "Creator links")}
+        linksTitle={isOrganization ? (isZh ? "官方入口" : "Official links") : (isZh ? "主页与作品" : "Profile and work")}
       />
 
       {skillLinks.length > 0 && <section aria-labelledby="publisher-skills-title" className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16">

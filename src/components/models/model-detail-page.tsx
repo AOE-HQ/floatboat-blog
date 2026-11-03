@@ -1,3 +1,4 @@
+import { OverviewSection } from "@/components/marketing/overview-section";
 import { Breadcrumb } from "@/components/marketing/breadcrumb";
 import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
@@ -60,31 +61,17 @@ export function ModelDetailPage({
         </dl>
       </section>
 
-      <section className="border-y border-black/[0.06] py-20 sm:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
-            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
-              {localize(model.positioning.title, locale)}
-            </h2>
-            <p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
-              {localize(model.positioning.description, locale)}
-            </p>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2">
-            {model.positioning.traits.map((trait) => (
-              <article key={trait.label.en} className="rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7">
-                <h3 className="text-xl font-semibold">
-                  {localize(trait.value, locale)}
-                </h3>
-                <p className="mt-3 text-sm text-[var(--ob-color-muted)]">{localize(trait.label, locale)}</p>
-                <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">
-                  {localize(trait.description, locale)}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <OverviewSection
+        variant="features"
+        id="model-introduction"
+        title={localize(model.positioning.title, locale)}
+        paragraphs={[localize(model.positioning.description, locale)]}
+        items={model.positioning.traits.map((trait) => ({
+          title: localize(trait.value, locale),
+          label: localize(trait.label, locale),
+          description: localize(trait.description, locale),
+        }))}
+      />
 
       <section className="bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
