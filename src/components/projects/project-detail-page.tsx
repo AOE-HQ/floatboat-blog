@@ -54,7 +54,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
     {project.articleSlug && <section aria-label={zh ? "工作流解读" : "Workflow analysis"} className="mx-auto max-w-7xl px-5 py-10 sm:px-8">
       <ResourceCard title={t.articleTitle!} description={t.articleDescription!} href={`${zh ? "/zh" : ""}/blog/${project.articleSlug}`} />
     </section>}
-    <RelatedPageLinks family="projects" currentId={`${project.author}/${project.slug}`} locale={locale} title={zh ? "相关 Agent 项目" : "Related Agent Projects"} intro={zh ? "从不同的运行方式、扩展机制和工作流出发，比较其他独立 Agent 项目。" : "Compare independent agents through their interfaces, extension models, and approach to carrying work forward."} />
+    <RelatedPageLinks family="projects" currentId={`${project.author}/${project.slug}`} locale={locale} />
     <FaqBand locale={locale} title={zh ? `${project.name} 常见问题` : `${project.name} FAQ`} items={t.faq} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
   </div>;
