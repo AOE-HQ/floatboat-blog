@@ -92,15 +92,15 @@
     },
     "cloudflare/security-audit": {
       "repository": "cloudflare/security-audit-skill",
-      "stars": 49154,
+      "stars": 57525,
       "fork": false,
       "archived": false,
       "sourceUrl": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md",
       "sourceHttpStatus": 200,
       "sourceNameMatches": true,
       "evidenceUrl": "https://api.github.com/repos/cloudflare/security-audit-skill",
-      "checkedAt": "2026-10-27T10:18:24.909323+00:00",
-      "status": "held"
+      "checkedAt": "2026-11-03",
+      "status": "approved"
     },
     "mattpocock/grill-me": {
       "repository": "mattpocock/skills",

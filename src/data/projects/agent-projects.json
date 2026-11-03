@@ -2184,5 +2184,599 @@
         }
       ]
     }
+  },
+  {
+    "author": "comfy-org",
+    "slug": "comfyui",
+    "name": "ComfyUI",
+    "repository": "https://github.com/Comfy-Org/ComfyUI",
+    "website": "https://www.comfy.org/",
+    "documentation": "https://docs.comfy.org/",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://github.com/Comfy-Org/ComfyUI/blob/master/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-03",
+    "related": [
+      "graphify-labs/graphify",
+      "stablyai/orca",
+      "vercel-labs/agent-desktop",
+      "milind-soni/mausbot"
+    ],
+    "en": {
+      "seoTitle": "ComfyUI — Reusable Node-Based Generative Workflows | Floatboat",
+      "description": "ComfyUI turns generative-media steps into reusable node graphs. Explore workflow JSON, model and custom-node dependencies, queued execution, and API handoffs to design a visual-production process with inspectable inputs and outputs.",
+      "kind": "Visual Workflow Engine",
+      "tags": [
+        "Node graphs",
+        "Generative media",
+        "Workflow API"
+      ],
+      "overviewTitle": "About ComfyUI",
+      "overview": [
+        "ComfyUI is a node-based interface and execution engine for generative-media workflows. A graph connects operations such as loading a model, conditioning generation, processing media, and saving an output. The open core is maintained in Comfy-Org/ComfyUI; desktop packaging and the frontend have related repositories rather than being separate Skills.",
+        "Workflows can be saved as JSON, reused, extended with custom nodes, and invoked through API entry points. That makes the graph a concrete description of a production process, but reproducing a result also requires the relevant model files, node versions, settings, and runtime environment.",
+        "For work organized in Floatboat, study how a prepared brief becomes a bounded media-generation step and how its outputs return for review. Local execution, paid cloud services, and partner-model API nodes have different requirements. The core license does not grant rights to every model, extension, or generated asset."
+      ],
+      "capabilitiesTitle": "Build a Generation Process You Can Inspect",
+      "capabilitiesIntro": "Make inputs, transformations, and output review visible instead of treating generation as a single opaque request.",
+      "capabilities": [
+        {
+          "title": "Connect explicit processing steps",
+          "description": "Use the graph to identify which operation loads a model, consumes a prompt or reference, transforms an intermediate result, and saves the deliverable."
+        },
+        {
+          "title": "Preserve a reusable workflow",
+          "description": "Keep workflow JSON alongside the model identifiers, custom-node requirements, and relevant settings needed to reproduce the task."
+        },
+        {
+          "title": "Hand off a bounded job",
+          "description": "Use the documented queue and API surfaces when another application prepares inputs or collects results. Define the actual integration separately."
+        }
+      ],
+      "scenariosTitle": "Apply a Graph to a Media Deliverable",
+      "scenariosIntro": "Start with an output you can review, then choose the smallest graph that produces it.",
+      "scenarios": [
+        {
+          "title": "Prepare a consistent image series",
+          "description": "Keep the workflow and model setup stable while varying the brief or source material, then compare the resulting images against the same acceptance criteria."
+        },
+        {
+          "title": "Separate generation from finishing",
+          "description": "Represent generation, masking, resizing, or compositing as explicit stages, so a weak result can be traced to the step that produced it."
+        },
+        {
+          "title": "Reuse a reviewed production recipe",
+          "description": "Package the workflow with its dependencies and representative inputs before handing it to another machine or collaborator."
+        }
+      ],
+      "requirementsTitle": "Check Models, Nodes, and Runtime Together",
+      "requirementsIntro": "A workflow file describes the graph; the environment determines whether that graph can execute.",
+      "requirements": [
+        {
+          "title": "Choose a supported runtime",
+          "description": "Follow the official installation path for your operating system and hardware. Memory and performance depend on the selected models and workflow."
+        },
+        {
+          "title": "Review extensions and model terms",
+          "description": "Custom nodes add executable dependencies, while model weights and external APIs have their own licenses or service conditions."
+        },
+        {
+          "title": "Test a complete sample",
+          "description": "Load the workflow, resolve its dependencies, run a representative input, and inspect the saved result before automating a batch."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is ComfyUI a Skill?",
+          "answer": "No. It is a visual application and execution engine. A separate Skill may explain how to operate it, but the node graph and runtime are software components."
+        },
+        {
+          "question": "Is a workflow JSON enough to reproduce an output?",
+          "answer": "Not by itself. Model files, custom nodes, versions, seeds, settings, and hardware-dependent behavior can affect execution and results."
+        },
+        {
+          "question": "Are custom nodes included in every installation?",
+          "answer": "No. A shared workflow may depend on extensions that must be installed and reviewed separately. Check the graph's required node types before running it."
+        },
+        {
+          "question": "Can an agent invoke ComfyUI through an API?",
+          "answer": "ComfyUI documents API-based workflow execution. A calling agent still needs an implemented connection, access to the deployment, validated inputs, and a way to review outputs."
+        },
+        {
+          "question": "Does local ComfyUI require a paid cloud plan?",
+          "answer": "The open core can run locally with suitable dependencies and hardware. Official cloud services and partner-model API nodes are separate offerings."
+        },
+        {
+          "question": "Does the core license cover all models and media?",
+          "answer": "No. The core uses GPL-3.0; model weights, custom nodes, provider APIs, and input assets can have separate conditions."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "ComfyUI：可复用的节点式生成工作流 | Floatboat",
+      "description": "ComfyUI 将生成媒体的步骤组织为可复用节点图。了解工作流 JSON、模型与自定义节点依赖、任务队列和 API 交接，为视觉生产流程明确输入、处理步骤与结果验收。",
+      "kind": "视觉工作流引擎",
+      "tags": [
+        "节点图",
+        "生成媒体",
+        "工作流 API"
+      ],
+      "overviewTitle": "关于 ComfyUI",
+      "overview": [
+        "ComfyUI 是面向生成媒体的节点式界面与执行引擎。节点图连接模型加载、生成条件、媒体处理和输出保存等操作。开源核心维护于 Comfy-Org/ComfyUI，桌面打包与前端由相关仓库协作完成，不应分别包装成 Skills。",
+        "工作流可以保存为 JSON，加入自定义节点，或通过 API 入口执行。节点图为生产过程提供了明确描述，但复现结果还需要对应的模型文件、节点版本、参数和运行环境。",
+        "在 Floatboat 中组织工作时，可以借鉴它如何把创作需求转换为有边界的生成步骤，再将输出交回审阅。本地运行、付费云服务和合作模型 API 节点有不同条件；核心许可不覆盖所有模型、扩展或生成素材的权利。"
+      ],
+      "capabilitiesTitle": "让生成过程可以检查与复用",
+      "capabilitiesIntro": "明确输入、转换与验收步骤，便于追查结果来自哪个环节。",
+      "capabilities": [
+        {
+          "title": "连接明确的处理步骤",
+          "description": "通过节点图识别模型加载、提示词或参考资料输入、中间结果处理和最终保存各自承担的职责。"
+        },
+        {
+          "title": "保存可复用的工作流",
+          "description": "将工作流 JSON 与模型标识、自定义节点要求及关键参数放在一起，保留再次执行所需的信息。"
+        },
+        {
+          "title": "交接一项有边界的任务",
+          "description": "其他应用准备输入或收集输出时，可研究队列与 API；实际接入方式仍需单独实现和验证。"
+        }
+      ],
+      "scenariosTitle": "围绕具体媒体交付物组织节点图",
+      "scenariosIntro": "先确定可以审阅的成果，再选择能够完成任务的最小流程。",
+      "scenarios": [
+        {
+          "title": "准备风格一致的图片系列",
+          "description": "保持工作流与模型配置稳定，只改变需求或来源资料，再用同一标准检查生成结果。"
+        },
+        {
+          "title": "区分生成与后期处理",
+          "description": "将生成、遮罩、缩放或合成拆成明确阶段，方便从不理想的结果追溯问题步骤。"
+        },
+        {
+          "title": "复用已验证的制作方法",
+          "description": "把工作流、依赖和代表性输入一起保存，再交给另一台电脑或协作者执行。"
+        }
+      ],
+      "requirementsTitle": "一起核对模型、节点与运行环境",
+      "requirementsIntro": "工作流文件描述连接关系，执行环境决定这些连接能否运行。",
+      "requirements": [
+        {
+          "title": "选择适合的运行方式",
+          "description": "按操作系统与硬件采用官方安装方案，所需内存和实际速度取决于模型与具体工作流。"
+        },
+        {
+          "title": "核对扩展和模型条款",
+          "description": "自定义节点会增加可执行依赖，模型权重与外部 API 也有独立的许可或服务条件。"
+        },
+        {
+          "title": "验证一个完整样本",
+          "description": "加载工作流、补齐依赖、执行代表性输入并检查保存结果，再扩展到批量任务。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ComfyUI 是 Skill 吗？",
+          "answer": "不是。它是视觉应用与执行引擎。单独的 Skill 可以说明如何使用它，但节点图与运行时属于软件组件。"
+        },
+        {
+          "question": "只有工作流 JSON 就能复现结果吗？",
+          "answer": "不能保证。模型文件、自定义节点、版本、种子、参数和硬件相关行为都会影响执行或结果。"
+        },
+        {
+          "question": "所有安装都包含需要的自定义节点吗？",
+          "answer": "不一定。共享工作流可能依赖额外扩展，应先核对节点类型及其安装与来源要求。"
+        },
+        {
+          "question": "Agent 可以通过 API 调用 ComfyUI 吗？",
+          "answer": "官方提供工作流执行 API。调用方仍需实现连接，具备对应部署的访问权，并验证输入与输出。"
+        },
+        {
+          "question": "本地使用是否必须购买云服务？",
+          "answer": "开源核心可以在具备相应依赖和硬件的本地环境运行，官方云服务与合作模型 API 节点属于独立方案。"
+        },
+        {
+          "question": "核心许可是否覆盖所有模型和素材？",
+          "answer": "不覆盖。核心采用 GPL-3.0，模型权重、自定义节点、供应方 API 与输入素材可能有各自条件。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "graphify-labs",
+    "slug": "graphify",
+    "name": "Graphify",
+    "repository": "https://github.com/Graphify-Labs/graphify",
+    "website": "https://graphify.com/",
+    "documentation": "https://docs.graphify.com/",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/Graphify-Labs/graphify/blob/v8/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-03",
+    "related": [
+      "comfy-org/comfyui",
+      "stablyai/orca",
+      "openai/codex",
+      "dietrichgebert/ponytail"
+    ],
+    "en": {
+      "seoTitle": "Graphify — Code Knowledge Graphs for Agent Workflows | Floatboat",
+      "description": "Graphify maps code and supporting material into a queryable knowledge graph. Explore the local CLI and its agent Skill together, distinguish extracted links from inferred relationships, and use source-backed context for repository investigations.",
+      "kind": "Knowledge Graph Tool + Skill",
+      "tags": [
+        "Code understanding",
+        "Graph queries",
+        "Agent context"
+      ],
+      "overviewTitle": "About Graphify",
+      "overview": [
+        "Graphify combines a Python command-line tool with agent integration instructions to build and query knowledge graphs. The open project is maintained by Graphify Labs. Its CLI and /graphify Skill describe one workflow, so this page covers them together rather than creating competing introductions.",
+        "Code parsing uses local AST analysis, while semantic processing of documents or media can use an assistant model or configured backend. Graph relationships distinguish extracted source connections from inferred ones. The generated graph, interactive view, and report are useful navigation artifacts, but an inferred edge is not independent proof that a behavior occurs.",
+        "For a Floatboat repository task, use the graph as a map to relevant source files and relationships before reviewing the actual code. Keep the graph current with the source revision. The Apache-2.0 local tool and hosted Graphify services have distinct setup, data-processing, and commercial conditions."
+      ],
+      "capabilitiesTitle": "Turn Repository Structure into Navigable Context",
+      "capabilitiesIntro": "Use the graph to narrow an investigation, then verify conclusions in the source it references.",
+      "capabilities": [
+        {
+          "title": "Parse explicit code relationships",
+          "description": "Local syntax analysis extracts connections such as imports and calls, giving an agent a structured starting point for a codebase question."
+        },
+        {
+          "title": "Query a focused part of the graph",
+          "description": "Query, path, and explain operations can select a relevant subgraph rather than supplying an entire repository as undifferentiated context."
+        },
+        {
+          "title": "Retain relationship provenance",
+          "description": "Extracted and inferred labels help distinguish direct source evidence from relationships that still need validation."
+        }
+      ],
+      "scenariosTitle": "Use a Graph Before Changing Code",
+      "scenariosIntro": "A context map is most useful when it helps answer a specific change-impact question.",
+      "scenarios": [
+        {
+          "title": "Locate the path behind a feature",
+          "description": "Trace the modules and concepts connected to an entry point, then open the relevant files before proposing an implementation."
+        },
+        {
+          "title": "Check a refactor boundary",
+          "description": "Inspect callers, dependencies, and related documentation to decide which interfaces and tests a structural change must preserve."
+        },
+        {
+          "title": "Connect code to its design notes",
+          "description": "Bring documents and code into the same investigation while keeping semantic inferences separate from source-established behavior."
+        }
+      ],
+      "requirementsTitle": "Keep Context, Revision, and Data Processing Aligned",
+      "requirementsIntro": "The local parser, semantic backend, integration Skill, and hosted service are separate setup choices.",
+      "requirements": [
+        {
+          "title": "Choose local or hosted processing",
+          "description": "Confirm which files stay in local AST processing and which semantic tasks use a model or hosted backend."
+        },
+        {
+          "title": "Install the tool and agent guidance",
+          "description": "The documented local package is graphifyy. Agent registration supplies instructions; confirm that the CLI and chosen integration are available."
+        },
+        {
+          "title": "Refresh and verify the graph",
+          "description": "Rebuild or update after relevant source changes, and check the actual code before accepting a graph-derived claim."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Graphify software or a Skill?",
+          "answer": "It includes both: a local tool builds and queries the graph, and agent instructions explain how to use it. They belong to one project overview."
+        },
+        {
+          "question": "Is the graph a vector database?",
+          "answer": "The documented core uses a traversable knowledge graph rather than an embedding-based vector store. Relationships and paths are explicit parts of the output."
+        },
+        {
+          "question": "Does all processing stay on the machine?",
+          "answer": "Local code parsing is deterministic AST analysis. Document and media interpretation can use a configured model backend; hosted services have their own data paths."
+        },
+        {
+          "question": "What do EXTRACTED and INFERRED mean?",
+          "answer": "They distinguish direct source extraction from relationships resolved or inferred by Graphify. An inferred relationship should be checked before it supports a consequential conclusion."
+        },
+        {
+          "question": "Can a saved graph become stale?",
+          "answer": "Yes. It represents the analyzed source state. Refresh it after relevant changes and preserve revision context when sharing findings."
+        },
+        {
+          "question": "Does the open-source license include Graphify Cloud?",
+          "answer": "Apache-2.0 applies to the published local project. Hosted services, accounts, and model usage have separate access and commercial terms."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Graphify：面向 Agent 工作流的代码知识图谱 | Floatboat",
+      "description": "Graphify 将代码和配套资料整理为可查询知识图谱。一起了解本地 CLI 与 Agent Skill，区分提取到的连接和推断关系，为仓库调查提供可以回到源文件核对的上下文。",
+      "kind": "知识图谱工具＋Skill",
+      "tags": [
+        "代码理解",
+        "图谱查询",
+        "Agent 上下文"
+      ],
+      "overviewTitle": "关于 Graphify",
+      "overview": [
+        "Graphify 将 Python 命令行工具与 Agent 指令结合，用于构建和查询知识图谱。开源项目由 Graphify Labs 维护。CLI 与 /graphify Skill 服务同一工作过程，因此在一个作品页中说明，避免建立相互竞争的同名介绍。",
+        "代码解析采用本地 AST 分析，文档或媒体的语义处理则可以使用助手模型或已配置后端。图谱区分直接提取的源代码连接与推断关系。图文件、交互视图和报告有助于导航，但推断边不能独立证明某种行为确实发生。",
+        "在 Floatboat 中研究仓库时，可以先用图谱定位相关文件和关系，再检查真实代码。图谱应与来源版本保持一致；Apache-2.0 本地工具和 Graphify 托管服务在配置、数据处理和商业条件上分别判断。"
+      ],
+      "capabilitiesTitle": "把仓库结构整理成可导航上下文",
+      "capabilitiesIntro": "用图谱缩小调查范围，再回到所引用的源文件验证结论。",
+      "capabilities": [
+        {
+          "title": "提取代码中的明确连接",
+          "description": "本地语法分析提取导入、调用等关系，为 Agent 调查代码库问题提供结构化起点。"
+        },
+        {
+          "title": "查询与任务有关的子图",
+          "description": "通过 query、path 和 explain 等操作选择相关上下文，减少把整库资料无差别塞入任务的需要。"
+        },
+        {
+          "title": "保留关系的来源性质",
+          "description": "提取与推断标签有助于区分直接证据，以及仍需进一步检查的关联。"
+        }
+      ],
+      "scenariosTitle": "修改代码前先调查影响关系",
+      "scenariosIntro": "围绕具体变更问题使用上下文地图，避免把图谱本身当作最终答案。",
+      "scenarios": [
+        {
+          "title": "定位功能背后的调用路径",
+          "description": "从入口查找关联模块与概念，再打开相关文件，确认实现位置后提出修改。"
+        },
+        {
+          "title": "核对重构的边界",
+          "description": "检查调用方、依赖和相关文档，明确结构变更必须保留的接口与测试。"
+        },
+        {
+          "title": "连接代码与设计说明",
+          "description": "把代码和文档放入同一调查，同时区分语义推断与源文件已经证明的行为。"
+        }
+      ],
+      "requirementsTitle": "让上下文、版本与数据处理保持一致",
+      "requirementsIntro": "本地解析、语义后端、集成 Skill 与托管服务属于不同配置选择。",
+      "requirements": [
+        {
+          "title": "选择本地或托管处理",
+          "description": "核对哪些文件仅参与本地 AST 分析，哪些语义任务会调用模型或托管后端。"
+        },
+        {
+          "title": "准备工具与 Agent 指引",
+          "description": "官方本地包名为 graphifyy；注册 Agent 指令后，还应确认 CLI 与所选集成可用。"
+        },
+        {
+          "title": "刷新图谱并核对代码",
+          "description": "相关源文件变化后更新图谱，接受图谱导出的结论前再次检查实际代码。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Graphify 是软件还是 Skill？",
+          "answer": "两者都有。本地工具负责构建和查询图谱，Agent 指令说明如何使用它们，适合在同一作品总览中介绍。"
+        },
+        {
+          "question": "它使用向量数据库吗？",
+          "answer": "官方核心说明采用可遍历知识图谱，而非基于 embedding 的向量存储，关系与路径是输出中的明确组成部分。"
+        },
+        {
+          "question": "所有处理都留在本机吗？",
+          "answer": "本地代码解析属于确定性 AST 分析；文档和媒体解释可能使用已配置模型后端，托管服务也有自己的数据路径。"
+        },
+        {
+          "question": "EXTRACTED 与 INFERRED 分别表示什么？",
+          "answer": "它们区分直接从来源提取的关系和由 Graphify 解析或推断的关系。重要结论不能仅依赖未经核对的推断连接。"
+        },
+        {
+          "question": "保存的图谱会过期吗？",
+          "answer": "会。它对应某次分析时的来源状态，相关代码变化后需要刷新，共享调查结论时也应保留版本背景。"
+        },
+        {
+          "question": "开源许可包含 Graphify Cloud 吗？",
+          "answer": "Apache-2.0 适用于公开本地项目；托管服务、账号和模型使用另有访问与商业条件。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "stablyai",
+    "slug": "orca",
+    "name": "Orca",
+    "repository": "https://github.com/stablyai/orca",
+    "website": "https://www.onorca.dev/",
+    "documentation": "https://www.onorca.dev/docs/model/worktrees",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/stablyai/orca/blob/main/LICENSE",
+    "classification": "agent-system",
+    "reviewedAt": "2026-11-03",
+    "related": [
+      "comfy-org/comfyui",
+      "graphify-labs/graphify",
+      "milind-soni/mausbot",
+      "openai/codex"
+    ],
+    "en": {
+      "seoTitle": "Orca — Parallel Coding Agents and Worktree Review | Floatboat",
+      "description": "Orca brings multiple coding agents into one workspace, with separate Git worktrees and a shared review interface. Study task isolation, parallel comparisons, and diff feedback to organize agent work without confusing simultaneous execution with a verified result.",
+      "kind": "Multi-Agent Development Workspace",
+      "tags": [
+        "Parallel agents",
+        "Git worktrees",
+        "Diff review"
+      ],
+      "overviewTitle": "About Orca",
+      "overview": [
+        "Orca is a development workspace published in stablyai/orca. It organizes existing coding agents such as Codex, Claude Code, OpenCode, and Pi alongside terminals, repository files, and review tools. It coordinates agent processes rather than supplying a new foundation model.",
+        "Each parallel task can use its own Git worktree. That separates file changes while the workspace provides a place to inspect diffs and send feedback. A mobile companion and SSH workflows extend how work is monitored or executed, but model access and remote-environment setup remain separate requirements.",
+        "For a Floatboat workflow, the useful pattern is to define bounded assignments, isolate changes, and compare evidence before accepting an implementation. Parallel agents still need a shared task contract and an explicit integration owner. Running in separate worktrees does not itself prevent mistakes, conflicts, or unauthorized actions."
+      ],
+      "capabilitiesTitle": "Coordinate Independent Attempts and Review Their Results",
+      "capabilitiesIntro": "Keep task ownership and acceptance criteria visible while agents work in parallel.",
+      "capabilities": [
+        {
+          "title": "Isolate file changes by task",
+          "description": "Assign worktrees to bounded tasks or competing approaches, so one agent does not silently overwrite another agent’s uncommitted files."
+        },
+        {
+          "title": "Review changes before integration",
+          "description": "Use diffs and line-level comments to turn review findings into focused follow-ups, then inspect the revised result."
+        },
+        {
+          "title": "Observe work across environments",
+          "description": "Desktop, companion, and SSH interfaces support different monitoring or execution arrangements. Choose the one that fits the actual environment."
+        }
+      ],
+      "scenariosTitle": "Use Parallel Agents Where Comparison Helps",
+      "scenariosIntro": "Additional agents are useful when their assignments and results can be evaluated independently.",
+      "scenarios": [
+        {
+          "title": "Compare two implementation approaches",
+          "description": "Give both attempts the same requirement and tests, then compare behavior, complexity, and evidence rather than accepting the fastest completion."
+        },
+        {
+          "title": "Separate implementation from review",
+          "description": "Assign an implementation task and a focused review task with a clear handoff revision, so review findings refer to the code being considered."
+        },
+        {
+          "title": "Work on distinct repository areas",
+          "description": "Divide changes by ownership boundary and define how shared interfaces and final integration will be handled."
+        }
+      ],
+      "requirementsTitle": "Define the Host, Permissions, and Merge Owner",
+      "requirementsIntro": "The workbench coordinates tools that still have their own accounts, execution settings, and access boundaries.",
+      "requirements": [
+        {
+          "title": "Confirm each agent’s setup",
+          "description": "Install and authenticate the engines you intend to use. Source availability does not include provider subscriptions or unlimited model usage."
+        },
+        {
+          "title": "Inspect execution and remote access",
+          "description": "Review the chosen engine’s approval settings and any SSH or companion connection. A worktree is file isolation, not a security boundary."
+        },
+        {
+          "title": "Integrate one reviewed result",
+          "description": "Choose the accepted change, run checks on the combined revision, and keep the merge decision explicit rather than equating task completion with approval."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which Orca project does this page describe?",
+          "answer": "The source is stablyai/orca, the high-star multi-agent development workspace. Other repositories named Orca are separate projects and should not be used as interchangeable installation sources."
+        },
+        {
+          "question": "Does Orca replace Codex or Claude Code?",
+          "answer": "It organizes existing coding agents in a shared workbench. The selected engines still perform the model-driven work and retain their own account requirements."
+        },
+        {
+          "question": "Do separate worktrees make parallel work safe automatically?",
+          "answer": "They isolate working files, but do not provide a complete security boundary or resolve shared-interface conflicts. Define permissions, task scope, and integration checks separately."
+        },
+        {
+          "question": "Can agents use different models or providers?",
+          "answer": "The project supports multiple CLI agent engines. Exact models, quotas, and authentication depend on the selected engine and account."
+        },
+        {
+          "question": "What is the mobile app for?",
+          "answer": "The documented companion lets a user monitor and steer work associated with a desktop host. It does not mean every provider engine runs directly on the phone."
+        },
+        {
+          "question": "Should every task be sent to several agents?",
+          "answer": "No. Use parallel attempts when independent work or comparison is valuable. Shared mutable work and unclear acceptance criteria can add coordination cost without improving the result."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Orca：并行编程 Agent 与 Worktree 审阅 | Floatboat",
+      "description": "Orca 将多个编程 Agent 放进同一工作台，通过独立 Git worktree 和统一审阅界面组织任务。了解任务隔离、并行方案比较与 diff 反馈，为自己的工作流明确执行分工和最终验收。",
+      "kind": "多 Agent 开发工作台",
+      "tags": [
+        "并行 Agent",
+        "Git worktree",
+        "修改审阅"
+      ],
+      "overviewTitle": "关于 Orca",
+      "overview": [
+        "Orca 是 stablyai/orca 发布的开发工作台，将 Codex、Claude Code、OpenCode、Pi 等已有编程 Agent 与终端、仓库文件和审阅工具组织在一起。它协调 Agent 进程，不提供新的基础模型。",
+        "并行任务可以使用各自的 Git worktree 隔离文件修改，再通过工作台查看 diff 并发送反馈。移动端伴侣与 SSH 工作流扩展了观察或执行工作的方式，但模型访问和远程环境准备仍是独立条件。",
+        "在 Floatboat 中设计工作流时，可以借鉴有边界的任务分派、修改隔离与结果比较。并行 Agent 仍需共同的任务约定和明确的集成负责人；仅使用不同 worktree，并不能自动避免错误、冲突或越权操作。"
+      ],
+      "capabilitiesTitle": "组织独立尝试，再审阅结果",
+      "capabilitiesIntro": "Agent 并行执行时，仍要明确每项任务由谁负责，以及怎样算完成。",
+      "capabilities": [
+        {
+          "title": "按任务隔离文件修改",
+          "description": "为独立任务或不同方案安排 worktree，避免一个 Agent 无意覆盖另一个 Agent 尚未提交的文件。"
+        },
+        {
+          "title": "集成前检查实际修改",
+          "description": "通过 diff 和行内评论把审阅发现转成明确的后续任务，再检查修订后的结果。"
+        },
+        {
+          "title": "按环境选择观察入口",
+          "description": "桌面、伴侣和 SSH 界面承担不同的监控与执行安排，应按实际环境选择。"
+        }
+      ],
+      "scenariosTitle": "在比较有价值时使用并行 Agent",
+      "scenariosIntro": "只有职责和结果能够独立判断时，增加 Agent 才容易带来有效收益。",
+      "scenarios": [
+        {
+          "title": "比较两种实现方案",
+          "description": "让两组尝试使用相同需求与测试，按行为、复杂度和证据比较，而不是只选择最快完成的一组。"
+        },
+        {
+          "title": "分开实施与代码审阅",
+          "description": "为实施和审阅定义明确的交接版本，让发现的问题指向正在考虑接受的代码。"
+        },
+        {
+          "title": "并行处理不同仓库区域",
+          "description": "沿职责边界拆分修改，同时约定共享接口和最终集成由谁负责。"
+        }
+      ],
+      "requirementsTitle": "确定宿主、权限与合并负责人",
+      "requirementsIntro": "工作台协调的工具仍有各自的账号、执行设置和访问边界。",
+      "requirements": [
+        {
+          "title": "确认每个 Agent 的运行条件",
+          "description": "安装并登录计划使用的引擎，源码公开不包含供应方订阅或无限模型额度。"
+        },
+        {
+          "title": "检查执行与远程访问设置",
+          "description": "核对所选引擎的审批模式，以及 SSH 或伴侣连接；worktree 隔离文件，但不构成安全隔离。"
+        },
+        {
+          "title": "集成经过审阅的结果",
+          "description": "选择接受的修改后，对组合版本运行检查，并保留明确的合并决定，不能把任务完成等同于获准发布。"
+        }
+      ],
+      "faq": [
+        {
+          "question": "这里介绍的是哪个 Orca？",
+          "answer": "采用的是高 stars、多 Agent 开发工作台 stablyai/orca。同名仓库属于不同项目，不能作为可互换的安装来源。"
+        },
+        {
+          "question": "Orca 会替代 Codex 或 Claude Code 吗？",
+          "answer": "它把现有编程 Agent 组织进共同工作台，实际模型任务仍由所选引擎执行，并沿用各自的账号条件。"
+        },
+        {
+          "question": "使用不同 worktree 就自动安全吗？",
+          "answer": "它们隔离工作文件，但不是完整安全边界，也不会自动解决共享接口冲突。权限、任务范围与集成检查仍需单独设计。"
+        },
+        {
+          "question": "不同 Agent 可以用不同模型吗？",
+          "answer": "项目支持多个 CLI Agent 引擎，具体模型、配额与认证方式取决于对应引擎和账号。"
+        },
+        {
+          "question": "移动端应用负责什么？",
+          "answer": "文档中的伴侣应用用于观察和跟进桌面宿主上的工作，不代表所有供应方引擎都直接运行在手机上。"
+        },
+        {
+          "question": "是否应该把每项任务都发给多个 Agent？",
+          "answer": "不需要。独立工作或方案比较有价值时才适合并行；共享修改和不清晰的验收标准可能增加协调成本。"
+        }
+      ]
+    }
   }
 ]

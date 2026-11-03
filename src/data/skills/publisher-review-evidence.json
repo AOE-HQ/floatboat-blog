@@ -81,6 +81,15 @@
     ],
     "milind-soni": [
       "milind-soni/OpenMausBot"
+    ],
+    "comfy-org": [
+      "Comfy-Org/ComfyUI"
+    ],
+    "graphify-labs": [
+      "Graphify-Labs/graphify"
+    ],
+    "stablyai": [
+      "stablyai/orca"
     ]
   },
   "repositories": {
@@ -5081,6 +5090,89 @@
           "type": "Organization"
         },
         "websiteUrl": "https://agent-browser.dev/desktop"
+      }
+    }
+  },
+  "nameIntakeExpansion": {
+    "checkedAt": "2026-11-03",
+    "scope": "Name-only intake: verified official sources and actual default branches; no upstream code installed or executed. Three project overviews and one existing-catalog Skill guide, with publisher and related-link completion.",
+    "repositories": {
+      "Comfy-Org/ComfyUI": {
+        "checkedAt": "2026-11-03",
+        "apiUrl": "https://api.github.com/repos/Comfy-Org/ComfyUI",
+        "fullName": "Comfy-Org/ComfyUI",
+        "url": "https://github.com/Comfy-Org/ComfyUI",
+        "stars": 144699,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-03T04:04:21Z",
+        "license": "GPL-3.0",
+        "licenseUrl": "https://github.com/Comfy-Org/ComfyUI/blob/master/LICENSE",
+        "licenseSha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+        "defaultBranch": "master",
+        "readmeUrl": "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
+        "owner": {
+          "login": "Comfy-Org",
+          "type": "Organization"
+        }
+      },
+      "Graphify-Labs/graphify": {
+        "checkedAt": "2026-11-03",
+        "apiUrl": "https://api.github.com/repos/Graphify-Labs/graphify",
+        "fullName": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "stars": 141306,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-02T19:38:53Z",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/Graphify-Labs/graphify/blob/v8/LICENSE",
+        "licenseSha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "defaultBranch": "v8",
+        "readmeUrl": "https://github.com/Graphify-Labs/graphify/blob/v8/README.md",
+        "owner": {
+          "login": "Graphify-Labs",
+          "type": "Organization"
+        }
+      },
+      "stablyai/orca": {
+        "checkedAt": "2026-11-03",
+        "apiUrl": "https://api.github.com/repos/stablyai/orca",
+        "fullName": "stablyai/orca",
+        "url": "https://github.com/stablyai/orca",
+        "stars": 113767,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-03T04:18:20Z",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/stablyai/orca/blob/main/LICENSE",
+        "licenseSha": "fbf46fc17dacb1f65e03e2b6290eb53ba94b149d",
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/stablyai/orca/blob/main/README.md",
+        "owner": {
+          "login": "stablyai",
+          "type": "Organization"
+        },
+        "identityResolution": "User requested the high-star workspace that groups multiple coding agents. stablyai/orca had 113768 stars; saiichi/orca 1, orca-cli/orca 4, Nethyric/orca 2 at this check. Function and official links match the user description."
+      },
+      "cloudflare/security-audit-skill": {
+        "checkedAt": "2026-11-03",
+        "apiUrl": "https://api.github.com/repos/cloudflare/security-audit-skill",
+        "fullName": "cloudflare/security-audit-skill",
+        "url": "https://github.com/cloudflare/security-audit-skill",
+        "stars": 57525,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-09-14T19:29:02Z",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/cloudflare/security-audit-skill/blob/main/LICENSE",
+        "licenseSha": "6dbc9ecb3a5b9080e95b962869e8c7ab16cfdc20",
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/cloudflare/security-audit-skill/blob/main/README.md",
+        "owner": {
+          "login": "cloudflare",
+          "type": "Organization"
+        }
       }
     }
   }

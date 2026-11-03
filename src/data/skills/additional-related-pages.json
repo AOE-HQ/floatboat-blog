@@ -70,7 +70,7 @@
       "mattpocock/tdd",
       "mattpocock/improve-codebase-architecture",
       "vercel-labs/vercel-react-best-practices",
-      "vercel-labs/web-design-guidelines"
+      "cloudflare/security-audit"
     ],
     "mattpocock/handoff": [
       "mattpocock/grill-me",
@@ -95,6 +95,12 @@
       "anthropics/frontend-design",
       "pbakaus/impeccable",
       "vercel-labs/find-skills"
+    ],
+    "cloudflare/security-audit": [
+      "mattpocock/code-review",
+      "mattpocock/diagnosing-bugs",
+      "obra/systematic-debugging",
+      "mattpocock/tdd"
     ]
   },
   "publishers": {
@@ -163,6 +169,24 @@
       "vercel-labs",
       "nousresearch",
       "openai"
+    ],
+    "comfy-org": [
+      "graphify-labs",
+      "stablyai",
+      "cloudflare",
+      "vercel-labs"
+    ],
+    "graphify-labs": [
+      "comfy-org",
+      "stablyai",
+      "cloudflare",
+      "vercel-labs"
+    ],
+    "stablyai": [
+      "comfy-org",
+      "graphify-labs",
+      "cloudflare",
+      "vercel-labs"
     ]
   },
   "skill-categories": {
