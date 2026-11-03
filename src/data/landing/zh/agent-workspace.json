@@ -54,24 +54,6 @@
       }
     ]
   },
-  "scenario": {
-    "title": "从源材料走到最终产物，整个过程不丢失上下文。",
-    "description": "工作空间可以把 Brief、参考材料、工作规则、Agent 运行、审阅意见和最终交付物组成同一段连续工作。",
-    "steps": [
-      {
-        "title": "打开真实项目",
-        "description": "让工作空间在边界内使用相关文件夹、文件、工具和规则。"
-      },
-      {
-        "title": "让 Agent 分工",
-        "description": "分配研究、起草、检查或制作步骤，同时共享同一份项目上下文。"
-      },
-      {
-        "title": "审阅并留下结果",
-        "description": "检查执行过程，在需要时介入，并把可编辑交付物保存在源材料旁边。"
-      }
-    ]
-  },
   "useCases": {
     "title": "围绕项目组织资料、代码与交付物",
     "description": "从多角色交接到仓库修改，使用同一工作上下文完成有来源、能审阅的成果。",
@@ -93,24 +75,6 @@
         "brief": "已确认的源文件、交付格式和审阅标准。",
         "process": "围绕交付标准组织源文件，保留事实出处，在审阅点集中列出待确认部分。",
         "outcome": "可继续编辑的报告、演示或分析，明确来源与待确认项。"
-      }
-    ]
-  },
-  "howItWorks": {
-    "title": "一个工作空间连接上下文、执行与交付。",
-    "description": "工作空间是持续基础；Work Agent、触发器、Skills 和 FloatIM 都是使用它的方式。",
-    "items": [
-      {
-        "title": "连接工作环境",
-        "description": "选择任务需要的项目文件、工具、模型和权限边界。"
-      },
-      {
-        "title": "运行并监督 Agent",
-        "description": "委派任务、让 Agent 协作，并检查需要关注的步骤或产物。"
-      },
-      {
-        "title": "保留应该延续的信息",
-        "description": "把交付物、项目规则和有用上下文留在工作空间，服务下一个任务或流程。"
       }
     ]
   },
@@ -188,5 +152,26 @@
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=agent-workspace&download_placement=final_cta"
     }
+  },
+  "howTo": {
+    "title": "在 Agent Workspace 中推进一个项目",
+    "description": "让原始资料、Agent 执行记录和审阅后的交付物留在同一个持续项目中。",
+    "items": [
+      {
+        "title": "建立范围明确的项目",
+        "description": "选择项目目录、相关文件、工具和规则，明确交付物与访问边界。",
+        "completion": "工作空间已具备所需资料和明确的任务范围。"
+      },
+      {
+        "title": "分配并监督工作",
+        "description": "按调研、起草、检查或制作分配任务，检查中间结果，并对需要判断的行动作出批准。",
+        "completion": "Agent 结果可对应到各自任务，未决事项清楚可见。"
+      },
+      {
+        "title": "审阅并保留交付",
+        "description": "按最初简报检查产物、提出修订，并为下一项任务保留有效上下文和已接受的结果。",
+        "completion": "项目中保留已接受的产物及其决策依据。"
+      }
+    ]
   }
 }

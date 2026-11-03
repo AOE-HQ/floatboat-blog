@@ -54,24 +54,6 @@
       }
     ]
   },
-  "scenario": {
-    "title": "交出任务，但不交出判断权。",
-    "description": "边界明确的任务让 Coworker 有空间执行，同时让目标、资源和审批点保持清晰。",
-    "steps": [
-      {
-        "title": "定义交付物",
-        "description": "说明这项任务的结果、受众、格式、约束和截止时间。"
-      },
-      {
-        "title": "批准工作范围",
-        "description": "选择 Work Agent 可以使用的文件和工具，并标记需要确认的操作。"
-      },
-      {
-        "title": "审阅交接成果",
-        "description": "检查完成的产物，提出修订，或接受结果并结束任务。"
-      }
-    ]
-  },
   "useCases": {
     "title": "委派一个有清楚终点的任务",
     "description": "提供材料、目标与验收方式，再审阅完整结果；需要最终判断的部分仍由你负责。",
@@ -93,24 +75,6 @@
         "brief": "验证过的任务交代、批准的资源与本期变化。",
         "process": "沿用已验证的任务要求处理本期材料，核对变化后交付审阅。",
         "outcome": "按相同验收标准完成的本期报告或客户交付。"
-      }
-    ]
-  },
-  "howItWorks": {
-    "title": "交代、执行、交接。",
-    "description": "Coworker 在更广泛的 Agent 工作站中提供简洁的 Work Agent 闭环。",
-    "items": [
-      {
-        "title": "交代结果",
-        "description": "解释必须交付什么，以及哪些条件定义合格的工作。"
-      },
-      {
-        "title": "让任务执行",
-        "description": "Agent 使用获批准的上下文和工具，并在操作越过审批边界时暂停。"
-      },
-      {
-        "title": "审阅并结束",
-        "description": "接收产物，在需要时要求定向修改，并判断委派是否已经完成。"
       }
     ]
   },
@@ -188,5 +152,26 @@
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=coworker&download_placement=final_cta"
     }
+  },
+  "howTo": {
+    "title": "向 Coworker 委派一项明确任务",
+    "description": "让 Agent 开始执行前先明确验收标准，以及哪些行动需要得到你的批准。",
+    "items": [
+      {
+        "title": "说明交付要求",
+        "description": "结合相关文件说明读者、输出格式、截止时间、约束及验收标准。",
+        "completion": "任务有可检查的交付物，而非无限延伸的笼统要求。"
+      },
+      {
+        "title": "划定执行边界",
+        "description": "选择 Agent 可以使用的文件与工具，标明执行过程中必须由人批准的行动。",
+        "completion": "产生重要影响的行动发生前，访问范围与批准节点已明确。"
+      },
+      {
+        "title": "验收或修订交付",
+        "description": "按简报检查产物，必要时要求修正，并由你决定任务是否完成。",
+        "completion": "最终产物符合既定标准，或已有明确的修订要求。"
+      }
+    ]
   }
 }

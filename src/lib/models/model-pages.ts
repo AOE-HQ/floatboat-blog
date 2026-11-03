@@ -1,3 +1,4 @@
+import { localizedHowToSchema, type LocalizedHowStep } from "@/lib/marketing/how-to";
 import { localizedUseCasesSchema, type LocalizedUseCases } from "@/lib/marketing/use-cases";
 import autoMode from "@/data/models/auto-mode.json";
 import claude from "@/data/models/claude.json";
@@ -83,10 +84,8 @@ export type ModelFamily = {
     choose: { title: Localized; items: Localized[] };
     alternative: { title: Localized; items: Localized[] };
   };
-  steps?: {
-    title: Localized;
-    items: Array<{ title: Localized; description: Localized }>;
-  };
+  mechanism?: { title: Localized; items: ContentItem[] };
+  howTo?: { title: Localized; description: Localized; items: LocalizedHowStep[] };
   comparison?: {
     title: Localized;
     description: Localized;
@@ -112,7 +111,10 @@ export const MODEL_FAMILIES = [
   minimax,
 ] as ModelFamily[];
 
-for (const model of MODEL_FAMILIES) localizedUseCasesSchema.parse(model.useCases);
+for (const model of MODEL_FAMILIES) {
+  localizedUseCasesSchema.parse(model.useCases);
+  if (model.howTo) localizedHowToSchema.parse(model.howTo);
+}
 
 export function localize(value: Localized, locale: ModelLocale) {
   return value[locale];

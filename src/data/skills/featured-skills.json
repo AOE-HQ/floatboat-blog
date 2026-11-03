@@ -144,9 +144,13 @@
           "en": "Describe your task",
           "zh": "描述具体任务"
         },
-        "body": {
+        "description": {
           "en": "Tell the agent what you want to achieve and which environment you use. Include a concrete action, such as reviewing accessibility or improving React performance.",
           "zh": "告诉 Agent 你要完成什么、使用什么环境，并明确具体动作，例如检查网页无障碍或优化 React 性能。"
+        },
+        "completion": {
+          "en": "The task names a deliverable and the Agent that will run it.",
+          "zh": "任务已明确交付物和实际使用的 Agent。"
         }
       },
       {
@@ -154,9 +158,13 @@
           "en": "Find and compare Skills",
           "zh": "查找并比较 Skills"
         },
-        "body": {
+        "description": {
           "en": "Ask Find Skills to search for relevant options. Compare what each candidate covers, who maintains it, and where its original instructions live.",
           "zh": "让 Find Skills 搜索相关选项，比较各自的适用范围、维护者和原始说明，选出与当前任务匹配的候选项。"
+        },
+        "completion": {
+          "en": "A shortlist records source, fit, and installation requirements.",
+          "zh": "候选清单包含原始来源、适用任务和安装条件。"
         }
       },
       {
@@ -164,9 +172,13 @@
           "en": "Install and try it",
           "zh": "安装并开始使用"
         },
-        "body": {
+        "description": {
           "en": "Read the selected Skill’s requirements, install it for your agent, and try it on a small task. Check the result before applying it more broadly.",
           "zh": "阅读选定 Skill 的使用要求，安装到你的 Agent，并从一个小任务开始试用，检查结果后再扩大使用范围。"
+        },
+        "completion": {
+          "en": "A small real input produces an inspectable result in the chosen Agent.",
+          "zh": "在选定 Agent 中用一份真实小样本得到可检查的结果。"
         }
       }
     ],

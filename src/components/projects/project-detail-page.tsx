@@ -1,3 +1,4 @@
+import { RequirementsSection } from "@/components/marketing/requirements-section";
 import { StartInFloatboat } from "@/components/conversion/start-in-floatboat";
 import { getResourceStartTask } from "@/lib/resource-start-tasks";
 import { Breadcrumb } from "@/components/marketing/breadcrumb";
@@ -48,7 +49,8 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
       <ul className="mt-7 grid gap-4 md:grid-cols-3">{t.capabilities.map((item) => <li key={item.title}><ResourceCard title={item.title} description={item.description} /></li>)}</ul>
     </section>
     <UseCasesSection {...t.useCases} locale={locale} />
-    <HowSection title={t.requirementsTitle} description={t.requirementsIntro} items={t.requirements} />
+    {t.prerequisites && <RequirementsSection {...t.prerequisites} />}
+    {t.howTo && <HowSection {...t.howTo} locale={locale} />}
     {project.articleSlug && <section aria-label={zh ? "工作流解读" : "Workflow analysis"} className="mx-auto max-w-7xl px-5 py-10 sm:px-8">
       <ResourceCard title={t.articleTitle!} description={t.articleDescription!} href={`${zh ? "/zh" : ""}/blog/${project.articleSlug}`} />
     </section>}

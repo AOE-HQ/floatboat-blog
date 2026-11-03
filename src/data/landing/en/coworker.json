@@ -54,24 +54,6 @@
       }
     ]
   },
-  "scenario": {
-    "title": "Hand off the assignment without handing away judgment.",
-    "description": "A bounded task gives the Coworker room to execute while keeping the goal, resources, and approval points explicit.",
-    "steps": [
-      {
-        "title": "Define the deliverable",
-        "description": "State the outcome, audience, format, constraints, and deadline for this assignment."
-      },
-      {
-        "title": "Approve the working scope",
-        "description": "Choose the files and tools the Work Agent may use and mark actions that need confirmation."
-      },
-      {
-        "title": "Review the handoff",
-        "description": "Inspect the completed artifact, request a revision, or accept it and close the task."
-      }
-    ]
-  },
   "useCases": {
     "title": "Delegate work with a clear finish line",
     "description": "Provide material, an objective, and acceptance criteria, then review the complete result while retaining final judgment.",
@@ -93,24 +75,6 @@
         "brief": "A proven task brief, approved resources, and changes for the current period.",
         "process": "Apply proven task requirements to the current material, check changes, and deliver for review.",
         "outcome": "The current report/client deliverable checked against consistent acceptance criteria."
-      }
-    ]
-  },
-  "howItWorks": {
-    "title": "Brief, execute, hand off.",
-    "description": "Coworker provides a simple Work Agent loop inside the broader Agent Workspace.",
-    "items": [
-      {
-        "title": "Brief the outcome",
-        "description": "Explain what must be delivered and which conditions define acceptable work."
-      },
-      {
-        "title": "Let the task run",
-        "description": "The agent uses the approved context and tools, pausing when an action crosses an approval boundary."
-      },
-      {
-        "title": "Review and close",
-        "description": "Receive the artifact, ask for focused changes if needed, and decide whether the assignment is complete."
       }
     ]
   },
@@ -188,5 +152,26 @@
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=coworker&download_placement=final_cta"
     }
+  },
+  "howTo": {
+    "title": "Delegate a bounded task to Coworker",
+    "description": "Define what success looks like and which actions need approval before the Agent starts working.",
+    "items": [
+      {
+        "title": "Specify the deliverable",
+        "description": "Describe the audience, output format, deadline, constraints, and acceptance criteria with the relevant files.",
+        "completion": "The task has a checkable deliverable rather than an open-ended instruction."
+      },
+      {
+        "title": "Set the working boundaries",
+        "description": "Select the files and tools the Agent may use and identify actions that require human approval during execution.",
+        "completion": "Access scope and approval points are explicit before consequential actions."
+      },
+      {
+        "title": "Accept or revise the handoff",
+        "description": "Inspect the produced artifact against the brief, ask for corrections where needed, and decide whether the task is complete.",
+        "completion": "The final artifact meets the stated criteria or has a specific revision request."
+      }
+    ]
   }
 }

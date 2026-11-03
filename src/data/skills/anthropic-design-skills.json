@@ -152,9 +152,13 @@
           "en": "Define the brief",
           "zh": "明确设计需求"
         },
-        "body": {
+        "description": {
           "en": "Provide the subject, audience, primary task, and real content. Include existing brand assets and requirements that must remain.",
           "zh": "提供主题、读者、主要任务与真实内容，补充品牌素材以及必须保留的要求。"
+        },
+        "completion": {
+          "en": "Audience, content, visual constraints, and available assets form a usable brief.",
+          "zh": "读者、内容、视觉约束及现有素材已形成可执行简报。"
         }
       },
       {
@@ -162,9 +166,13 @@
           "en": "Plan and implement the direction",
           "zh": "确定方向并实现"
         },
-        "body": {
+        "description": {
           "en": "Review a compact plan for typography, color, layout, and interaction. Ask the agent to build the page within the project’s stack.",
           "zh": "审阅字体、配色、布局与交互的简洁方案，再让 Agent 使用项目已有技术栈实现。"
+        },
+        "completion": {
+          "en": "The rendered implementation follows the chosen visual direction with real content.",
+          "zh": "实际页面以真实内容呈现选定的视觉方向。"
         }
       },
       {
@@ -172,9 +180,13 @@
           "en": "Review the rendered interface",
           "zh": "检查渲染界面"
         },
-        "body": {
+        "description": {
           "en": "Inspect representative desktop and mobile views. Refine hierarchy, content fit, keyboard access, and motion against the original brief.",
           "zh": "检查代表性的桌面与移动视图，按原需求核对层级、内容适配、键盘操作与动效。"
+        },
+        "completion": {
+          "en": "Desktop, mobile, and keyboard paths support the intended task.",
+          "zh": "桌面、手机和键盘路径均能完成目标任务。"
         }
       }
     ],
@@ -412,9 +424,13 @@
           "en": "Define the task and examples",
           "zh": "明确任务与示例"
         },
-        "body": {
+        "description": {
           "en": "Describe the process, inputs, and expected output. Provide successful examples and any requirements the draft must preserve.",
           "zh": "说明流程、输入与预期交付物，提供成功示例和草稿必须遵守的要求。"
+        },
+        "completion": {
+          "en": "Positive examples and boundaries define when the Skill should trigger.",
+          "zh": "正向示例与边界已说明何时应触发 Skill。"
         }
       },
       {
@@ -422,9 +438,13 @@
           "en": "Draft and evaluate",
           "zh": "编写并评估草稿"
         },
-        "body": {
+        "description": {
           "en": "Create the instruction and representative test prompts. Use the source’s supported evaluation tools to inspect how the draft performs.",
           "zh": "编写指令与代表性测试请求，使用来源支持的评估工具查看草稿的实际表现。"
+        },
+        "completion": {
+          "en": "Evaluation outputs show how the draft handles representative inputs.",
+          "zh": "评估结果展示草稿处理代表性输入的表现。"
         }
       },
       {
@@ -432,9 +452,13 @@
           "en": "Revise from observed results",
           "zh": "依据结果修订"
         },
-        "body": {
+        "description": {
           "en": "Compare feedback and test outputs, then change the unclear parts. Rerun relevant cases and check that the description still fits the workflow.",
           "zh": "比较反馈与测试输出，修订不清楚的部分，重跑相关用例，并核对描述仍然符合流程。"
+        },
+        "completion": {
+          "en": "A rerun shows whether revisions address observed failures without breaking useful behavior.",
+          "zh": "复测证明修订是否解决已观察到的问题，并保留有效行为。"
         }
       }
     ],
@@ -672,9 +696,13 @@
           "en": "Inspect the input PDF",
           "zh": "检查输入文件"
         },
-        "body": {
+        "description": {
           "en": "Identify selectable text, scanned pages, and form fields. Specify the pages and output format that the task requires.",
           "zh": "识别可选中的文本、扫描页与表单字段，说明任务涉及的页码和输出格式。"
+        },
+        "completion": {
+          "en": "Page content, layout, and extraction or OCR needs are understood.",
+          "zh": "页面内容、版式及提取或 OCR 需求已确认。"
         }
       },
       {
@@ -682,9 +710,13 @@
           "en": "Run the matching workflow",
           "zh": "执行匹配流程"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to follow the relevant source instructions with the required tools. Preserve the original and write a clearly named output.",
           "zh": "让 Agent 使用所需工具遵循相关原始说明，保留原件并输出命名清楚的新文件。"
+        },
+        "completion": {
+          "en": "The selected PDF operation produces the requested intermediate or final file.",
+          "zh": "选定的 PDF 操作已生成所需中间结果或文件。"
         }
       },
       {
@@ -692,9 +724,13 @@
           "en": "Verify content and pages",
           "zh": "核对内容与页面"
         },
-        "body": {
+        "description": {
           "en": "Compare extracted or edited information with the source. Render layout-sensitive outputs and inspect page order, clipping, and form values.",
           "zh": "将提取或编辑内容与来源比较，对排版敏感的结果进行渲染，检查顺序、裁切与表单值。"
+        },
+        "completion": {
+          "en": "Text and rendered pages agree, with no missing content or layout damage.",
+          "zh": "文字与渲染页一致，无内容缺失或版式损坏。"
         }
       }
     ],
@@ -932,9 +968,13 @@
           "en": "Supply content and constraints",
           "zh": "提供内容与约束"
         },
-        "body": {
+        "description": {
           "en": "Share the outline, original file, or template. Specify edits, required styles, and any comments or tracked changes that must remain.",
           "zh": "提供提纲、原文件或模板，明确修改、样式要求，以及必须保留的批注或修订。"
+        },
+        "completion": {
+          "en": "Source text, document purpose, and formatting constraints are available.",
+          "zh": "原始文字、文档用途及格式约束已齐备。"
         }
       },
       {
@@ -942,9 +982,13 @@
           "en": "Create or edit the document",
           "zh": "生成或编辑文档"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to use the matching source workflow. Keep the original intact and verify the resulting document package.",
           "zh": "让 Agent 采用匹配的原始流程，保留原件，并检查输出文档包结构。"
+        },
+        "completion": {
+          "en": "The DOCX contains the requested edits with a coherent document structure.",
+          "zh": "DOCX 已包含所需修改，文档结构完整。"
         }
       },
       {
@@ -952,9 +996,13 @@
           "en": "Render and inspect pages",
           "zh": "渲染并检查页面"
         },
-        "body": {
+        "description": {
           "en": "Review page breaks, headings, tables, images, and changed text. Fix layout problems before sharing the editable DOCX.",
           "zh": "检查分页、标题、表格、图片及改动正文，修复版面问题后再分享可编辑 DOCX。"
+        },
+        "completion": {
+          "en": "Rendered pages have been inspected for pagination, tables, and clipping.",
+          "zh": "渲染页已检查分页、表格与文字截断。"
         }
       }
     ],
@@ -1192,9 +1240,13 @@
           "en": "Define the story and inputs",
           "zh": "明确叙事与输入"
         },
-        "body": {
+        "description": {
           "en": "Specify the audience, decision, source material, and target length. Provide the existing deck or template if it must be reused.",
           "zh": "说明读者、需要支持的决定、来源资料和目标篇幅，提供必须复用的文稿或模板。"
+        },
+        "completion": {
+          "en": "The audience, slide narrative, and source material support a clear presentation goal.",
+          "zh": "读者、讲述顺序及来源素材能够支撑明确的演示目标。"
         }
       },
       {
@@ -1202,9 +1254,13 @@
           "en": "Create or update the slides",
           "zh": "制作或更新幻灯片"
         },
-        "body": {
+        "description": {
           "en": "Review the proposed slide structure with the agent. Follow the appropriate new-deck or existing-file workflow for the requested edits.",
           "zh": "与 Agent 核对幻灯片结构，再按新建或已有文件的对应流程处理具体改动。"
+        },
+        "completion": {
+          "en": "The deck contains the intended slide content and editable structure.",
+          "zh": "演示文稿包含所需页面内容及可编辑结构。"
         }
       },
       {
@@ -1212,9 +1268,13 @@
           "en": "Inspect visuals and file structure",
           "zh": "检查画面与文件结构"
         },
-        "body": {
+        "description": {
           "en": "Check the thumbnail overview and individual rendered slides. Fix overflow and missing elements, then validate the saved presentation package.",
           "zh": "查看缩略图总览与单页渲染，修复溢出和缺失元素，再检查保存后的演示文件结构。"
+        },
+        "completion": {
+          "en": "Slide previews and file checks show no overlaps, missing assets, or broken elements.",
+          "zh": "逐页预览及文件检查未发现重叠、素材缺失或损坏元素。"
         }
       }
     ],
@@ -1452,9 +1512,13 @@
           "en": "Explain data and calculations",
           "zh": "说明数据与计算"
         },
-        "body": {
+        "description": {
           "en": "Share files, column definitions, and the required output. Identify designated input cells and calculations that must be preserved.",
           "zh": "提供文件、列定义和输出要求，指出指定输入单元格以及必须保留的计算。"
+        },
+        "completion": {
+          "en": "Inputs, units, formulas, and expected totals are specified.",
+          "zh": "输入数据、单位、公式及预期汇总已明确。"
         }
       },
       {
@@ -1462,9 +1526,13 @@
           "en": "Build or edit the workbook",
           "zh": "生成或编辑工作簿"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to apply the relevant file workflow. Keep source meaning intact and use formulas where the output must update with inputs.",
           "zh": "让 Agent 采用匹配的文件流程，保留来源含义，并为需要随输入更新的结果使用公式。"
+        },
+        "completion": {
+          "en": "Workbook cells, formulas, and formatting reflect the requested model.",
+          "zh": "工作簿单元格、公式及格式对应所需计算模型。"
         }
       },
       {
@@ -1472,9 +1540,13 @@
           "en": "Recalculate and verify",
           "zh": "重新计算并核对"
         },
-        "body": {
+        "description": {
           "en": "Run the source’s recalculation workflow for formulas and fix reported errors. Compare sample values, references, and formatting with the requested result.",
           "zh": "对公式执行原始说明中的重算流程并处理报告错误，核对样本数值、引用和格式是否符合要求。"
+        },
+        "completion": {
+          "en": "Recalculated outputs match sample checks and show no unexplained formula errors.",
+          "zh": "重算结果通过样例核对，无未解释的公式错误。"
         }
       }
     ],
@@ -1712,9 +1784,13 @@
           "en": "Install and initialize the project",
           "zh": "安装并初始化项目"
         },
-        "body": {
+        "description": {
           "en": "Use the provider-specific installer and reload the host. In a new project, run /impeccable init inside the agent to establish PRODUCT.md; for an existing project, review that context and follow any hook-trust prompts.",
           "zh": "使用对应宿主安装器并重新加载。新项目先在 Agent 内运行 /impeccable init，建立 PRODUCT.md；已有项目核对该上下文，并处理相关 Hook 信任提示。"
+        },
+        "completion": {
+          "en": "The project can load the installed design instructions and required context.",
+          "zh": "项目可读取已安装的设计指令及所需上下文。"
         }
       },
       {
@@ -1722,9 +1798,13 @@
           "en": "Scope the interface task",
           "zh": "限定界面任务"
         },
-        "body": {
+        "description": {
           "en": "Provide the route or source file and explain what must remain. Choose the relevant command and distinguish refinement from redesign.",
           "zh": "提供路由或源码文件，说明需要保留的部分，选择相关命令并区分优化与重做。"
+        },
+        "completion": {
+          "en": "The chosen command addresses a specific interface issue or design goal.",
+          "zh": "所选命令对应明确的界面问题或设计目标。"
         }
       },
       {
@@ -1732,9 +1812,13 @@
           "en": "Review rendered changes",
           "zh": "检查渲染改动"
         },
-        "body": {
+        "description": {
           "en": "Inspect the updated interface at the sizes it supports. Verify interaction and content, then refine the issues that the rendered result reveals.",
           "zh": "在目标尺寸检查更新后的界面，核对交互与内容，再修正渲染结果暴露的具体问题。"
+        },
+        "completion": {
+          "en": "The rendered interface resolves the target issue across relevant screen sizes.",
+          "zh": "实际界面在相关屏幕尺寸下解决了目标问题。"
         }
       }
     ],

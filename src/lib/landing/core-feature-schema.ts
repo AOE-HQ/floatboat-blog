@@ -1,3 +1,4 @@
+import { howToSchema } from "@/lib/marketing/how-to";
 import { useCasesSchema } from "@/lib/marketing/use-cases";
 import { z } from "zod";
 
@@ -43,17 +44,8 @@ export const coreFeaturePageSchema = z.object({
     description: z.string().min(1),
     items: z.array(mediaSchema).min(3),
   }),
-  scenario: z.object({
-    title: z.string().min(1),
-    description: z.string().min(1),
-    steps: z.array(z.object({ title: z.string(), description: z.string() })).min(3),
-  }),
   useCases: useCasesSchema,
-  howItWorks: z.object({
-    title: z.string().min(1),
-    description: z.string().min(1),
-    items: z.array(z.object({ title: z.string(), description: z.string() })).min(3),
-  }),
+  howTo: howToSchema,
   comparison: z.object({
     title: z.string().min(1),
     description: z.string().min(1),

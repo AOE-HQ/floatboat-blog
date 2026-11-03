@@ -54,24 +54,6 @@
       }
     ]
   },
-  "scenario": {
-    "title": "把分散消息变成一条可见的工作链。",
-    "description": "原本横跨聊天、文档和任务工具的发布工作，可以在同一个共享空间中完成。",
-    "steps": [
-      {
-        "title": "定义结果",
-        "description": "一次性提供目标、截止时间、参考资料和执行边界。"
-      },
-      {
-        "title": "按专业分工",
-        "description": "研究、写作和审查 Agent 分别承担适合自己的部分。"
-      },
-      {
-        "title": "审查最终产物",
-        "description": "最终结果连同来源、关键决策和交接历史一起返回。"
-      }
-    ]
-  },
   "useCases": {
     "title": "把角色协作放回项目对话",
     "description": "按职责和项目保留需求、反馈与成果，让 Agent 的工作与团队交接保持关联。",
@@ -93,24 +75,6 @@
         "brief": "团队工作上下文、Agent 可参与的步骤与人工确认点。",
         "process": "在共享任务中交接资料、贡献草稿并确认下一责任人，重要外部动作按审批继续。",
         "outcome": "与成员协作衔接的任务贡献，外部行动保留人工确认。"
-      }
-    ]
-  },
-  "howItWorks": {
-    "title": "从一个项目空间开始，按需要增加能力。",
-    "description": "即使更多人和 Agent 加入，整个工作流程依然清晰可见。",
-    "items": [
-      {
-        "title": "创建项目空间",
-        "description": "明确目标，并加入定义这项工作的文件和上下文。"
-      },
-      {
-        "title": "邀请人与 Agent",
-        "description": "加入需要参与的协作者和专业 Agent。"
-      },
-      {
-        "title": "批准并复用",
-        "description": "审查结果、保留历史，并在下一个项目中复用成功的工作方式。"
       }
     ]
   },
@@ -188,5 +152,26 @@
       "label": "下载 Floatboat",
       "href": "https://floatboat.ai/zh/download/success?from=floatim&download_placement=final_cta"
     }
+  },
+  "howTo": {
+    "title": "用 FloatIM 协调一项团队任务",
+    "description": "让成员与 Agent 围绕共同目标分工，并把资料、讨论和审阅记录留在同一条工作链中。",
+    "items": [
+      {
+        "title": "建立项目对话",
+        "description": "在项目空间中写明目标、截止时间、来源文件及约束，再安排工作。",
+        "completion": "参与者能够找到同一份任务说明和来源资料。"
+      },
+      {
+        "title": "邀请成员并分配 Agent 职责",
+        "description": "邀请所需协作者加入，为每个 Agent 指定范围明确的调研、写作或检查职责。",
+        "completion": "各部分工作都有负责人和可见的交接位置。"
+      },
+      {
+        "title": "审阅共同成果",
+        "description": "在对话中核对来源与待决事项，确认最终成果，并保留后续工作需要的上下文。",
+        "completion": "已接受的成果可追溯到相关讨论和依据材料。"
+      }
+    ]
   }
 }

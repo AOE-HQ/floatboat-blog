@@ -71,22 +71,6 @@
           }
         ]
       },
-      "requirementsTitle": "From Reference to a Workflow Experiment",
-      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
-      "requirements": [
-        {
-          "title": "Map one workflow bottleneck",
-          "description": "Identify the missing context, tool, state transition, or approval point before choosing a runtime component."
-        },
-        {
-          "title": "Define the contract and boundaries",
-          "description": "Write down the task input, permitted tools, expected output, and human decisions for that step."
-        },
-        {
-          "title": "Validate a small complete loop",
-          "description": "Test representative inputs and review the resulting evidence, changes, and failure behavior before expanding the workflow."
-        }
-      ],
       "faq": [
         {
           "question": "Is Codex a model or an agent harness?",
@@ -112,7 +96,28 @@
           "question": "Must I switch products to use these workflow ideas?",
           "answer": "No. You can first use Codex as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
-      ]
+      ],
+      "howTo": {
+        "title": "Validate a Codex-style execution loop",
+        "description": "Trace one task through context, tool use, approval, and a reviewable result before reusing runtime components.",
+        "items": [
+          {
+            "title": "Map one workflow bottleneck",
+            "description": "Identify the missing context, tool, state transition, or approval point before choosing a runtime component.",
+            "completion": "A named context, tool, state, or approval gap is tied to a real task."
+          },
+          {
+            "title": "Define the contract and boundaries",
+            "description": "Write down the task input, permitted tools, expected output, and human decisions for that step.",
+            "completion": "The step has explicit inputs, permitted actions, expected output, and review points."
+          },
+          {
+            "title": "Validate a small complete loop",
+            "description": "Test representative inputs and review the resulting evidence, changes, and failure behavior before expanding the workflow.",
+            "completion": "A complete sample run records output evidence and what happens when execution fails."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "Codex — Agent 工作流构建与优化 | Floatboat",
@@ -169,22 +174,6 @@
           }
         ]
       },
-      "requirementsTitle": "从项目参考到工作流验证",
-      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
-      "requirements": [
-        {
-          "title": "定位一个流程瓶颈",
-          "description": "先确定缺少的是上下文、工具、状态衔接还是审批节点，再判断是否需要运行层组件。"
-        },
-        {
-          "title": "明确输入输出与边界",
-          "description": "为该环节写明输入、允许使用的工具、预期输出，以及必须由人作出的决定。"
-        },
-        {
-          "title": "验证一个小型完整循环",
-          "description": "使用代表性输入测试完整过程，检查证据、修改与失败行为，再扩大工作流范围。"
-        }
-      ],
       "faq": [
         {
           "question": "Codex 是模型还是 Agent Harness？",
@@ -210,7 +199,28 @@
           "question": "借鉴这些机制是否需要更换工作工具？",
           "answer": "不需要。可以先将 Codex 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
-      ]
+      ],
+      "howTo": {
+        "title": "验证 Codex 式执行循环",
+        "description": "先用一项任务串联上下文、工具、批准和可审阅结果，再决定复用哪些运行组件。",
+        "items": [
+          {
+            "title": "定位一个流程瓶颈",
+            "description": "先确定缺少的是上下文、工具、状态衔接还是审批节点，再判断是否需要运行层组件。",
+            "completion": "已将具体的上下文、工具、状态或批准缺口对应到真实任务。"
+          },
+          {
+            "title": "明确输入输出与边界",
+            "description": "为该环节写明输入、允许使用的工具、预期输出，以及必须由人作出的决定。",
+            "completion": "该步骤的输入、允许行动、预期输出及审阅节点已明确。"
+          },
+          {
+            "title": "验证一个小型完整循环",
+            "description": "使用代表性输入测试完整过程，检查证据、修改与失败行为，再扩大工作流范围。",
+            "completion": "完整样例执行保留输出证据，并说明执行失败时如何处理。"
+          }
+        ]
+      }
     },
     "licenseUrl": "https://github.com/openai/codex/blob/main/LICENSE"
   },
@@ -285,22 +295,6 @@
           }
         ]
       },
-      "requirementsTitle": "From Reference to a Workflow Experiment",
-      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
-      "requirements": [
-        {
-          "title": "List the task capabilities",
-          "description": "Define which information, tools, and intermediate results each stage needs, independently of a particular plugin name."
-        },
-        {
-          "title": "Check a candidate composition",
-          "description": "Review capability boundaries, credentials, and version compatibility for the extensions you actually need."
-        },
-        {
-          "title": "Test the handoffs and failure path",
-          "description": "Verify that a failed tool or changed plugin produces a visible result and a clear decision about the next step."
-        }
-      ],
       "faq": [
         {
           "question": "Is DeepSeek Harness an official DeepSeek project?",
@@ -326,7 +320,33 @@
           "question": "Must I switch products to use these workflow ideas?",
           "answer": "No. You can first use DeepSeek Harness as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Check DeepSeek Harness extension requirements",
+        "description": "Review the actual extensions you plan to compose rather than assuming all plugins share the same dependencies.",
+        "items": [
+          {
+            "title": "Check a candidate composition",
+            "description": "Review capability boundaries, credentials, and version compatibility for the extensions you actually need."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "Design a capability chain with DeepSeek Harness",
+        "description": "Work from stage requirements to tested handoffs, with extension compatibility checked before execution.",
+        "items": [
+          {
+            "title": "List the task capabilities",
+            "description": "Define which information, tools, and intermediate results each stage needs, independently of a particular plugin name.",
+            "completion": "Each stage has a defined information source, tool need, and intermediate result."
+          },
+          {
+            "title": "Test the handoffs and failure path",
+            "description": "Verify that a failed tool or changed plugin produces a visible result and a clear decision about the next step.",
+            "completion": "A failed tool or changed extension leaves visible evidence and a defined next decision."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "DeepSeek Harness — Agent 工作流构建与优化 | Floatboat",
@@ -383,22 +403,6 @@
           }
         ]
       },
-      "requirementsTitle": "从项目参考到工作流验证",
-      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
-      "requirements": [
-        {
-          "title": "列出任务所需能力",
-          "description": "先明确各阶段需要的信息、工具和中间结果，不从插件名称倒推任务。"
-        },
-        {
-          "title": "核对候选组合",
-          "description": "针对真正需要的扩展检查能力边界、凭证要求与版本兼容性。"
-        },
-        {
-          "title": "测试交接与失败路径",
-          "description": "确认工具失败或插件变化时能够暴露问题，并明确后续如何处理。"
-        }
-      ],
       "faq": [
         {
           "question": "DeepSeek Harness 是 DeepSeek 官方项目吗？",
@@ -424,7 +428,33 @@
           "question": "借鉴这些机制是否需要更换工作工具？",
           "answer": "不需要。可以先将 DeepSeek Harness 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "核对 DeepSeek Harness 扩展条件",
+        "description": "按计划组合的具体扩展核对条件，不假定所有插件有相同依赖。",
+        "items": [
+          {
+            "title": "核对候选组合",
+            "description": "针对真正需要的扩展检查能力边界、凭证要求与版本兼容性。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "用 DeepSeek Harness 设计能力链",
+        "description": "从各阶段实际需求出发组织能力链，在执行前核对扩展兼容性，再检查交接和失败处理。",
+        "items": [
+          {
+            "title": "列出任务所需能力",
+            "description": "先明确各阶段需要的信息、工具和中间结果，不从插件名称倒推任务。",
+            "completion": "每阶段已有明确的信息来源、工具需求及中间结果。"
+          },
+          {
+            "title": "测试交接与失败路径",
+            "description": "确认工具失败或插件变化时能够暴露问题，并明确后续如何处理。",
+            "completion": "工具失败或扩展变化后，仍有可见证据与明确的下一步决策。"
+          }
+        ]
+      }
     },
     "licenseUrl": "https://github.com/deepseek-ai/deepseek-harness/blob/master/LICENSE"
   },
@@ -502,22 +532,6 @@
           }
         ]
       },
-      "requirementsTitle": "Before Running the Prototype",
-      "requirementsIntro": "Check the runtime, account, and machine boundaries before moving from a design reference to a live experiment.",
-      "requirements": [
-        {
-          "title": "Prepare the runtime and agent identity",
-          "description": "Use a supported Harness version, a configured model provider, and the documented command-line dependencies. One deployment serves one github.com repository through a dedicated GitHub user account."
-        },
-        {
-          "title": "Separate machine permissions",
-          "description": "The documented router and worker presets run with full access as the operating-system user. Separate sessions and credential wrappers are not a sandbox; use a dedicated OS account for isolation."
-        },
-        {
-          "title": "Inspect inferred work first",
-          "description": "The default observe mode records inferred tasks it would accept without starting them; explicit requests still execute. Review decisions before enabling automatic acceptance under written rules."
-        }
-      ],
       "articleTitle": "From GitHub Requests to Agent Workflows",
       "articleDescription": "Trace a request through authorization, task execution, and delivery, then decide which mechanisms fit your own workflow.",
       "faq": [
@@ -545,7 +559,32 @@
           "question": "Does MIT make it production-ready or include free inference?",
           "answer": "MIT covers the source code. Model services and machine operation have separate costs and terms. The README identifies the software as a research prototype, with differences from its internal implementation and some unimplemented design ideas."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Prepare the DSH Superagent runtime",
+        "description": "Confirm the runtime, dedicated identity, and machine permissions before allowing the prototype to execute tasks.",
+        "items": [
+          {
+            "title": "Prepare the runtime and agent identity",
+            "description": "Use a supported Harness version, a configured model provider, and the documented command-line dependencies. One deployment serves one github.com repository through a dedicated GitHub user account."
+          },
+          {
+            "title": "Separate machine permissions",
+            "description": "The documented router and worker presets run with full access as the operating-system user. Separate sessions and credential wrappers are not a sandbox; use a dedicated OS account for isolation."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "Inspect DSH Superagent’s task decisions",
+        "description": "Use observation records to examine inferred work before enabling automatic acceptance. Explicit requests remain executable in observe mode.",
+        "items": [
+          {
+            "title": "Inspect inferred work first",
+            "description": "The default observe mode records inferred tasks it would accept without starting them; explicit requests still execute. Review decisions before enabling automatic acceptance under written rules.",
+            "completion": "Observed decisions have been reviewed against written rules, with explicit-request execution accounted for."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "DSH Superagent Prototype：主动编程 Agent 工作流 | Floatboat",
@@ -602,22 +641,6 @@
           }
         ]
       },
-      "requirementsTitle": "运行原型前需要准备什么",
-      "requirementsIntro": "从设计参考进入实际试验前，先检查运行环境、账号与机器权限。",
-      "requirements": [
-        {
-          "title": "准备运行环境和 Agent 身份",
-          "description": "需要受支持的 Harness 版本、已配置的模型服务和文档列出的命令行依赖。一次部署面向一个 github.com 仓库，通过专用 GitHub 用户账号执行操作。"
-        },
-        {
-          "title": "划清机器与账号权限",
-          "description": "文档中的路由与工作预设以操作系统用户身份拥有完整执行权限。独立会话和凭据包装并非沙箱；需要隔离时，应使用专用操作系统账号。"
-        },
-        {
-          "title": "先检查推断任务的判断",
-          "description": "默认 observe 模式只记录本来会接受的推断任务，显式请求仍可执行。先检查决策记录，再根据书面规则启用推断任务的自动接受。"
-        }
-      ],
       "articleTitle": "GitHub 请求如何变成 Agent 工作流",
       "articleDescription": "跟随一次请求理解授权、任务执行与交付，再判断哪些机制适合自己的工作方式。",
       "faq": [
@@ -645,7 +668,32 @@
           "question": "MIT 是否意味着已经成熟并且推理免费？",
           "answer": "MIT 适用于源码，模型服务和机器运行另有费用与条款。README 将其定位为研究原型，公开版与内部实现存在差异，设计文章中的部分方案也尚未实现。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "准备 DSH Superagent 运行环境",
+        "description": "让原型执行任务前，先确认运行环境、专用身份及机器权限。",
+        "items": [
+          {
+            "title": "准备运行环境和 Agent 身份",
+            "description": "需要受支持的 Harness 版本、已配置的模型服务和文档列出的命令行依赖。一次部署面向一个 github.com 仓库，通过专用 GitHub 用户账号执行操作。"
+          },
+          {
+            "title": "划清机器与账号权限",
+            "description": "文档中的路由与工作预设以操作系统用户身份拥有完整执行权限。独立会话和凭据包装并非沙箱；需要隔离时，应使用专用操作系统账号。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "检查 DSH Superagent 的任务判断",
+        "description": "先通过观察记录检查推断任务，再决定是否开启自动接受；observe 模式下，明确请求仍会执行。",
+        "items": [
+          {
+            "title": "先检查推断任务的判断",
+            "description": "默认 observe 模式只记录本来会接受的推断任务，显式请求仍可执行。先检查决策记录，再根据书面规则启用推断任务的自动接受。",
+            "completion": "观察记录中的决策已按书面规则核对，并已考虑明确请求仍会执行的情况。"
+          }
+        ]
+      }
     }
   },
   {
@@ -719,22 +767,6 @@
           }
         ]
       },
-      "requirementsTitle": "From Reference to a Workflow Experiment",
-      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
-      "requirements": [
-        {
-          "title": "Choose the extension layer",
-          "description": "Identify whether the gap is in instructions, available tools, conversation state, or the surrounding interface."
-        },
-        {
-          "title": "Set the execution boundary",
-          "description": "Plan file, process, network, and credential access in the host environment; Pi does not supply a built-in permission system."
-        },
-        {
-          "title": "Evaluate the smallest addition",
-          "description": "Validate one package or component against a representative task before combining several additions."
-        }
-      ],
       "faq": [
         {
           "question": "Is Pi officially described as a harness?",
@@ -760,7 +792,33 @@
           "question": "Must I switch products to use these workflow ideas?",
           "answer": "No. You can first use Pi as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Define Pi’s host permissions",
+        "description": "Plan permissions in the environment that will run the extension.",
+        "items": [
+          {
+            "title": "Set the execution boundary",
+            "description": "Plan file, process, network, and credential access in the host environment; Pi does not supply a built-in permission system."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "Choose and test a Pi extension",
+        "description": "Locate the missing extension layer and test one addition against a representative task before composing more packages.",
+        "items": [
+          {
+            "title": "Choose the extension layer",
+            "description": "Identify whether the gap is in instructions, available tools, conversation state, or the surrounding interface.",
+            "completion": "The proposed addition addresses a named instruction, tool, state, or interface gap."
+          },
+          {
+            "title": "Evaluate the smallest addition",
+            "description": "Validate one package or component against a representative task before combining several additions.",
+            "completion": "One package or component completes the sample task with inspectable behavior."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "Pi — Agent 工作流构建与优化 | Floatboat",
@@ -817,22 +875,6 @@
           }
         ]
       },
-      "requirementsTitle": "从项目参考到工作流验证",
-      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
-      "requirements": [
-        {
-          "title": "选择改动层次",
-          "description": "确认不足来自任务说明、可用工具、对话状态还是交互界面。"
-        },
-        {
-          "title": "设置执行边界",
-          "description": "在宿主环境中规划文件、进程、网络与凭证访问；Pi 没有内置权限限制系统。"
-        },
-        {
-          "title": "评估最小必要扩展",
-          "description": "先针对代表任务验证一个包或组件，再组合更多能力。"
-        }
-      ],
       "faq": [
         {
           "question": "Pi 官方是否将自己称为 harness？",
@@ -858,7 +900,33 @@
           "question": "借鉴这些机制是否需要更换工作工具？",
           "answer": "不需要。可以先将 Pi 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "明确 Pi 宿主权限",
+        "description": "在实际运行扩展的宿主环境中规划权限。",
+        "items": [
+          {
+            "title": "设置执行边界",
+            "description": "在宿主环境中规划文件、进程、网络与凭证访问；Pi 没有内置权限限制系统。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "选择并验证 Pi 扩展",
+        "description": "先定位需要补足的扩展层，再用代表性任务验证单个扩展，之后才考虑组合更多包。",
+        "items": [
+          {
+            "title": "选择改动层次",
+            "description": "确认不足来自任务说明、可用工具、对话状态还是交互界面。",
+            "completion": "拟增加的内容对应明确的指令、工具、状态或界面缺口。"
+          },
+          {
+            "title": "评估最小必要扩展",
+            "description": "先针对代表任务验证一个包或组件，再组合更多能力。",
+            "completion": "单个包或组件能完成样例任务，行为可检查。"
+          }
+        ]
+      }
     },
     "licenseUrl": "https://github.com/earendil-works/pi/blob/main/LICENSE"
   },
@@ -934,22 +1002,6 @@
           }
         ]
       },
-      "requirementsTitle": "From Reference to a Workflow Experiment",
-      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
-      "requirements": [
-        {
-          "title": "Describe the desired handoff",
-          "description": "Write down what investigation must deliver before planning or implementation can safely continue."
-        },
-        {
-          "title": "Limit available actions",
-          "description": "Match tool access and the active mode to each stage rather than giving every step the same ability to change files."
-        },
-        {
-          "title": "Check the result and feedback",
-          "description": "Evaluate whether the workflow makes errors visible and gives the user enough evidence to accept or revise the change."
-        }
-      ],
       "faq": [
         {
           "question": "Is OpenCode a model provider?",
@@ -975,7 +1027,28 @@
           "question": "Must I switch products to use these workflow ideas?",
           "answer": "No. You can first use OpenCode as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
-      ]
+      ],
+      "howTo": {
+        "title": "Build a reviewable OpenCode handoff",
+        "description": "Define what investigation must return, constrain each stage’s tools, and inspect the evidence before accepting code changes.",
+        "items": [
+          {
+            "title": "Describe the desired handoff",
+            "description": "Write down what investigation must deliver before planning or implementation can safely continue.",
+            "completion": "The investigation handoff names the evidence needed to plan or implement safely."
+          },
+          {
+            "title": "Limit available actions",
+            "description": "Match tool access and the active mode to each stage rather than giving every step the same ability to change files.",
+            "completion": "The active mode and tool permissions match the responsibilities of each stage."
+          },
+          {
+            "title": "Check the result and feedback",
+            "description": "Evaluate whether the workflow makes errors visible and gives the user enough evidence to accept or revise the change.",
+            "completion": "Errors and change evidence are visible enough to accept the result or request a specific revision."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "OpenCode — Agent 工作流构建与优化 | Floatboat",
@@ -1032,22 +1105,6 @@
           }
         ]
       },
-      "requirementsTitle": "从项目参考到工作流验证",
-      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
-      "requirements": [
-        {
-          "title": "描述阶段交接",
-          "description": "明确调查阶段必须交付什么，后续规划或实施才有足够依据。"
-        },
-        {
-          "title": "限定可用操作",
-          "description": "按阶段匹配工具访问和工作模式，而非让每一步都拥有同样的修改能力。"
-        },
-        {
-          "title": "检查结果与反馈",
-          "description": "评估流程能否暴露错误，并为用户接受或修订修改提供足够证据。"
-        }
-      ],
       "faq": [
         {
           "question": "OpenCode 是模型提供商吗？",
@@ -1073,7 +1130,28 @@
           "question": "借鉴这些机制是否需要更换工作工具？",
           "answer": "不需要。可以先将 OpenCode 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
-      ]
+      ],
+      "howTo": {
+        "title": "构建可审阅的 OpenCode 交接",
+        "description": "明确调查阶段需要交回什么，按阶段限制工具，再依据证据决定是否接受代码变更。",
+        "items": [
+          {
+            "title": "描述阶段交接",
+            "description": "明确调查阶段必须交付什么，后续规划或实施才有足够依据。",
+            "completion": "调查交接已明确安全进入规划或实现所需的证据。"
+          },
+          {
+            "title": "限定可用操作",
+            "description": "按阶段匹配工具访问和工作模式，而非让每一步都拥有同样的修改能力。",
+            "completion": "各阶段的工作模式及工具权限与职责相符。"
+          },
+          {
+            "title": "检查结果与反馈",
+            "description": "评估流程能否暴露错误，并为用户接受或修订修改提供足够证据。",
+            "completion": "错误与变更证据足以支持验收，或提出具体修订要求。"
+          }
+        ]
+      }
     },
     "licenseUrl": "https://github.com/anomalyco/opencode/blob/dev/LICENSE"
   },
@@ -1148,22 +1226,6 @@
           }
         ]
       },
-      "requirementsTitle": "From Reference to a Workflow Experiment",
-      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
-      "requirements": [
-        {
-          "title": "Classify what should persist",
-          "description": "Separate temporary context, durable facts, decisions, and procedures before adding a memory mechanism."
-        },
-        {
-          "title": "Define correction and delivery",
-          "description": "Give stored knowledge an update process and recurring tasks an explicit schedule, output destination, and failure path."
-        },
-        {
-          "title": "Evaluate repeated runs",
-          "description": "Check whether the workflow stays accurate as inputs change, rather than judging it from one successful run."
-        }
-      ],
       "faq": [
         {
           "question": "How is Hermes Agent different from a Skill collection?",
@@ -1189,7 +1251,28 @@
           "question": "Who maintains Hermes Agent and its source license?",
           "answer": "The official repository is published by Nous Research and identifies the source license as MIT. Connected model services and external systems have their own access and commercial conditions."
         }
-      ]
+      ],
+      "howTo": {
+        "title": "Maintain knowledge across Hermes Agent runs",
+        "description": "Separate durable knowledge from temporary context, define how it changes, and judge the workflow across repeated tasks.",
+        "items": [
+          {
+            "title": "Classify what should persist",
+            "description": "Separate temporary context, durable facts, decisions, and procedures before adding a memory mechanism.",
+            "completion": "Temporary context, durable facts, decisions, and procedures have distinct retention rules."
+          },
+          {
+            "title": "Define correction and delivery",
+            "description": "Give stored knowledge an update process and recurring tasks an explicit schedule, output destination, and failure path.",
+            "completion": "Knowledge corrections and recurring deliveries have an owner, destination, and failure path."
+          },
+          {
+            "title": "Evaluate repeated runs",
+            "description": "Check whether the workflow stays accurate as inputs change, rather than judging it from one successful run.",
+            "completion": "Several runs with changed inputs show whether stored knowledge stays accurate."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "Hermes Agent — Agent 工作流构建与优化 | Floatboat",
@@ -1246,22 +1329,6 @@
           }
         ]
       },
-      "requirementsTitle": "从项目参考到工作流验证",
-      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
-      "requirements": [
-        {
-          "title": "分类需要保留的信息",
-          "description": "引入记忆机制前，先区分临时背景、长期事实、决策与流程。"
-        },
-        {
-          "title": "约定纠正与交付方式",
-          "description": "为知识设置更新方式，为重复任务明确时间、输出位置和失败路径。"
-        },
-        {
-          "title": "评估多次运行结果",
-          "description": "检查输入变化后流程是否仍准确，而非只凭一次成功判断效果。"
-        }
-      ],
       "faq": [
         {
           "question": "Hermes Agent 与 Skill 集合有什么区别？",
@@ -1287,7 +1354,28 @@
           "question": "Hermes Agent 由谁维护，源码采用什么许可？",
           "answer": "官方仓库由 Nous Research 发布，源码采用 MIT 许可。接入的模型服务与外部系统有各自的访问条件和商业条款。"
         }
-      ]
+      ],
+      "howTo": {
+        "title": "维护 Hermes Agent 多次执行中的知识",
+        "description": "区分长期知识与临时上下文，约定知识如何更新，再通过重复任务判断工作流是否可靠。",
+        "items": [
+          {
+            "title": "分类需要保留的信息",
+            "description": "引入记忆机制前，先区分临时背景、长期事实、决策与流程。",
+            "completion": "临时上下文、长期事实、决策及流程已有各自的保留规则。"
+          },
+          {
+            "title": "约定纠正与交付方式",
+            "description": "为知识设置更新方式，为重复任务明确时间、输出位置和失败路径。",
+            "completion": "知识修正与周期交付已有负责人、目标位置及失败处理方式。"
+          },
+          {
+            "title": "评估多次运行结果",
+            "description": "检查输入变化后流程是否仍准确，而非只凭一次成功判断效果。",
+            "completion": "多次变更输入后的执行结果能反映已存知识是否准确。"
+          }
+        ]
+      }
     },
     "licenseUrl": "https://github.com/NousResearch/hermes-agent/blob/main/LICENSE"
   },
@@ -1362,22 +1450,6 @@
           }
         ]
       },
-      "requirementsTitle": "From Reference to a Workflow Experiment",
-      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
-      "requirements": [
-        {
-          "title": "Use the maintained reference",
-          "description": "Use kimi-code documentation when studying the mechanisms; legacy Python CLI examples can describe a different architecture."
-        },
-        {
-          "title": "Define each role and checkpoint",
-          "description": "Specify what each delegated task receives, what it returns, and which operation must wait for review."
-        },
-        {
-          "title": "Test the context transfer",
-          "description": "Check whether each stage gets enough relevant information without carrying unrelated conversation history into every step."
-        }
-      ],
       "faq": [
         {
           "question": "Which Kimi repository is current?",
@@ -1403,7 +1475,33 @@
           "question": "Does MIT cover a Kimi subscription?",
           "answer": "No. MIT applies to the project source. Kimi Code account access, Moonshot API use, and any other provider’s service are governed by their own entitlements, limits, and terms."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Use the current Kimi Code reference",
+        "description": "Confirm the reference architecture before borrowing delegation or context mechanisms.",
+        "items": [
+          {
+            "title": "Use the maintained reference",
+            "description": "Use kimi-code documentation when studying the mechanisms; legacy Python CLI examples can describe a different architecture."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "Verify delegated work in Kimi Code",
+        "description": "Specify role contracts and review points, then check whether context transfers support the next stage without excess history.",
+        "items": [
+          {
+            "title": "Define each role and checkpoint",
+            "description": "Specify what each delegated task receives, what it returns, and which operation must wait for review.",
+            "completion": "Each role has defined inputs, outputs, and operations that must wait for review."
+          },
+          {
+            "title": "Test the context transfer",
+            "description": "Check whether each stage gets enough relevant information without carrying unrelated conversation history into every step.",
+            "completion": "The receiving stage can continue from relevant evidence without unrelated conversation history."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "Kimi Code CLI — Agent 工作流构建与优化 | Floatboat",
@@ -1460,22 +1558,6 @@
           }
         ]
       },
-      "requirementsTitle": "从项目参考到工作流验证",
-      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
-      "requirements": [
-        {
-          "title": "选择当前维护的参考",
-          "description": "研究机制时使用 kimi-code 文档，旧 Python CLI 示例可能属于不同架构。"
-        },
-        {
-          "title": "定义职责与检查点",
-          "description": "明确每个委派任务接收什么、返回什么，以及哪些操作必须等待审阅。"
-        },
-        {
-          "title": "验证上下文传递",
-          "description": "检查各阶段是否获得足够相关信息，同时避免每一步都携带无关对话历史。"
-        }
-      ],
       "faq": [
         {
           "question": "现在应选择哪个 Kimi 仓库？",
@@ -1501,7 +1583,33 @@
           "question": "MIT 许可是否覆盖 Kimi 订阅？",
           "answer": "不覆盖。MIT 适用于项目源码；Kimi Code 账号访问、Moonshot API 调用和其他模型服务分别适用各自权益、额度与条款。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "使用当前 Kimi Code 资料",
+        "description": "借鉴委派或上下文机制前，先确认所参考的架构版本。",
+        "items": [
+          {
+            "title": "选择当前维护的参考",
+            "description": "研究机制时使用 kimi-code 文档，旧 Python CLI 示例可能属于不同架构。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "验证 Kimi Code 中的委派任务",
+        "description": "明确各角色的交接约定与审阅节点，再检查上下文是否足以支撑下一阶段且不夹带多余历史。",
+        "items": [
+          {
+            "title": "定义职责与检查点",
+            "description": "明确每个委派任务接收什么、返回什么，以及哪些操作必须等待审阅。",
+            "completion": "每个角色的输入、输出及必须等待审阅的操作已明确。"
+          },
+          {
+            "title": "验证上下文传递",
+            "description": "检查各阶段是否获得足够相关信息，同时避免每一步都携带无关对话历史。",
+            "completion": "接收阶段可凭相关证据继续工作，无需携带无关对话历史。"
+          }
+        ]
+      }
     },
     "licenseUrl": "https://github.com/MoonshotAI/kimi-code/blob/main/LICENSE"
   },
@@ -1576,22 +1684,6 @@
           }
         ]
       },
-      "requirementsTitle": "From Reference to a Workflow Experiment",
-      "requirementsIntro": "Start with a task and a small testable change, whether that means better instructions, a new tool connection, or a runtime component.",
-      "requirements": [
-        {
-          "title": "Map the layers of the task",
-          "description": "Separate business context, user interaction, execution tools, and the result that must be reviewed."
-        },
-        {
-          "title": "Check data and execution boundaries",
-          "description": "Use the project notice and source to assess what is local, what is remote, and which service receives task information."
-        },
-        {
-          "title": "Prototype the review loop",
-          "description": "Test one task from input to a reviewable result before expanding the workflow across more tools or interfaces."
-        }
-      ],
       "faq": [
         {
           "question": "Does ZCode include a real agent harness?",
@@ -1617,7 +1709,33 @@
           "question": "Must I switch products to use these workflow ideas?",
           "answer": "No. You can first use ZCode as a reference for task structure, tool boundaries, and result review in your existing workflow. Reusing software is a separate choice that requires compatibility, permissions, and license checks; applying the design ideas does not automatically connect the software to Floatboat."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Check ZCode’s data boundaries",
+        "description": "Identify the execution location and recipients of task information from the source and project notice.",
+        "items": [
+          {
+            "title": "Check data and execution boundaries",
+            "description": "Use the project notice and source to assess what is local, what is remote, and which service receives task information."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "Prototype a ZCode review loop",
+        "description": "Separate task context, interaction, and tools, then test one reviewable result before broadening the interface or tool set.",
+        "items": [
+          {
+            "title": "Map the layers of the task",
+            "description": "Separate business context, user interaction, execution tools, and the result that must be reviewed.",
+            "completion": "The task map distinguishes business context, interaction, execution, and reviewed output."
+          },
+          {
+            "title": "Prototype the review loop",
+            "description": "Test one task from input to a reviewable result before expanding the workflow across more tools or interfaces.",
+            "completion": "One task reaches a result that a person can inspect and accept or revise."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "ZCode — Agent 工作流构建与优化 | Floatboat",
@@ -1674,22 +1792,6 @@
           }
         ]
       },
-      "requirementsTitle": "从项目参考到工作流验证",
-      "requirementsIntro": "从具体任务和可验证的小改动开始，判断需要优化说明、连接工具，还是复用运行组件。",
-      "requirements": [
-        {
-          "title": "梳理任务层次",
-          "description": "区分业务背景、用户交互、执行工具和需要审阅的结果。"
-        },
-        {
-          "title": "检查数据与执行边界",
-          "description": "结合项目声明与源码评估本地、远程以及接收任务资料的服务边界。"
-        },
-        {
-          "title": "验证审阅循环",
-          "description": "先验证一个任务从输入到可审阅结果的完整过程，再扩展工具与交互入口。"
-        }
-      ],
       "faq": [
         {
           "question": "ZCode 是否包含 Agent Harness？",
@@ -1715,7 +1817,33 @@
           "question": "借鉴这些机制是否需要更换工作工具？",
           "answer": "不需要。可以先将 ZCode 作为任务结构、工具边界和结果审阅的设计参考，在已有工作流中验证思路。软件复用是另一项选择，需要核对兼容性、权限与许可；借鉴设计思路不会自动完成软件与 Floatboat 的连接。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "核对 ZCode 数据边界",
+        "description": "依据源代码及项目声明，确认执行位置与任务信息接收方。",
+        "items": [
+          {
+            "title": "检查数据与执行边界",
+            "description": "结合项目声明与源码评估本地、远程以及接收任务资料的服务边界。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "用 ZCode 验证一条审阅流程",
+        "description": "分清任务上下文、交互与工具，用一个可审阅结果验证完整流程，再扩大界面或工具范围。",
+        "items": [
+          {
+            "title": "梳理任务层次",
+            "description": "区分业务背景、用户交互、执行工具和需要审阅的结果。",
+            "completion": "任务结构已区分业务上下文、交互、执行及待审阅输出。"
+          },
+          {
+            "title": "验证审阅循环",
+            "description": "先验证一个任务从输入到可审阅结果的完整过程，再扩展工具与交互入口。",
+            "completion": "一项任务已产出可由人检查、接受或修订的结果。"
+          }
+        ]
+      }
     },
     "licenseUrl": "https://github.com/zai-org/ZCode/blob/main/LICENSE"
   },
@@ -1791,22 +1919,6 @@
           }
         ]
       },
-      "requirementsTitle": "Evaluate the Rules in Your Agent Host",
-      "requirementsIntro": "Instruction portability and plugin feature parity are different questions. Check the documented adapter before expecting commands or hooks.",
-      "requirements": [
-        {
-          "title": "Choose a compatible adapter",
-          "description": "Read INSTALL.md for your host. A rules-file adapter loads instructions; a supported plugin can expose commands and lifecycle behavior."
-        },
-        {
-          "title": "Keep your project contract",
-          "description": "Review the rules alongside repository instructions and define the task’s correctness, security, and accessibility requirements before comparing implementations."
-        },
-        {
-          "title": "Measure a complete result",
-          "description": "Compare accepted behavior, changed code, useful tests, and review findings on the same task. Report unverified behavior rather than treating a shorter diff as success."
-        }
-      ],
       "faq": [
         {
           "question": "Is Ponytail an autonomous agent or a model?",
@@ -1832,7 +1944,33 @@
           "question": "Are the published benchmark gains guaranteed?",
           "answer": "No. They are results from the maintainer’s stated tasks, models, and methodology. Test your own workloads and account for correctness, review effort, and host differences."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Select the Ponytail host adapter",
+        "description": "Distinguish instruction loading from plugin commands and lifecycle behavior.",
+        "items": [
+          {
+            "title": "Choose a compatible adapter",
+            "description": "Read INSTALL.md for your host. A rules-file adapter loads instructions; a supported plugin can expose commands and lifecycle behavior."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "Compare Ponytail rules on a real task",
+        "description": "Keep the repository’s quality requirements explicit and compare complete results under the selected host adapter.",
+        "items": [
+          {
+            "title": "Keep your project contract",
+            "description": "Review the rules alongside repository instructions and define the task’s correctness, security, and accessibility requirements before comparing implementations.",
+            "completion": "The comparison retains the same correctness, security, and accessibility requirements."
+          },
+          {
+            "title": "Measure a complete result",
+            "description": "Compare accepted behavior, changed code, useful tests, and review findings on the same task. Report unverified behavior rather than treating a shorter diff as success.",
+            "completion": "The result includes behavior, diff, tests, review findings, and any unverified areas."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "Ponytail：编程 Agent Skill、代码复用与审查 | Floatboat",
@@ -1889,22 +2027,6 @@
           }
         ]
       },
-      "requirementsTitle": "在自己的 Agent 宿主中验证规则",
-      "requirementsIntro": "能读取规则文件，不代表拥有完整插件能力；先核对当前宿主的适配说明。",
-      "requirements": [
-        {
-          "title": "选择对应适配方式",
-          "description": "通过 INSTALL.md 查看宿主入口。规则文件用于加载指令，受支持的插件才可能提供命令与生命周期行为。"
-        },
-        {
-          "title": "保留项目自身的要求",
-          "description": "将规则与仓库说明一起检查，先写明正确性、安全和无障碍要求，再比较不同实现。"
-        },
-        {
-          "title": "比较完整交付结果",
-          "description": "用同一任务检查实际行为、代码变更、有效测试与审查发现。未核实的部分应明确指出，不能只凭 diff 更短判断完成。"
-        }
-      ],
       "faq": [
         {
           "question": "Ponytail 是独立 Agent 或模型吗？",
@@ -1930,7 +2052,33 @@
           "question": "基准测试中的收益可以直接套用吗？",
           "answer": "不可以。那些结果来自维护者公布的任务、模型与测试方法。自己的工作负载仍需核对正确性、审阅成本和宿主差异。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "选择 Ponytail 宿主适配方式",
+        "description": "区分加载规则指令与插件命令、生命周期行为。",
+        "items": [
+          {
+            "title": "选择对应适配方式",
+            "description": "通过 INSTALL.md 查看宿主入口。规则文件用于加载指令，受支持的插件才可能提供命令与生命周期行为。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "用真实任务比较 Ponytail 规则",
+        "description": "在选定宿主适配方式下，保留仓库质量要求，并按完整结果比较规则带来的变化。",
+        "items": [
+          {
+            "title": "保留项目自身的要求",
+            "description": "将规则与仓库说明一起检查，先写明正确性、安全和无障碍要求，再比较不同实现。",
+            "completion": "比较过程保留同样的正确性、安全及可访问性要求。"
+          },
+          {
+            "title": "比较完整交付结果",
+            "description": "用同一任务检查实际行为、代码变更、有效测试与审查发现。未核实的部分应明确指出，不能只凭 diff 更短判断完成。",
+            "completion": "比较结果包含行为、差异、测试、审查发现及未验证部分。"
+          }
+        ]
+      }
     }
   },
   {
@@ -2005,22 +2153,6 @@
           }
         ]
       },
-      "requirementsTitle": "Define the Execution Environment First",
-      "requirementsIntro": "A bot profile describes the job; engines, service access, and operating-system capabilities determine what can actually run.",
-      "requirements": [
-        {
-          "title": "Confirm a working agent engine",
-          "description": "The desktop setup checks a supported local engine and its account. An open-source application does not include unlimited model access or remove provider limits."
-        },
-        {
-          "title": "Choose the computer and connections",
-          "description": "Local computer use, cloud desktops, and connected applications require different permissions and services. Test the specific path needed by the task."
-        },
-        {
-          "title": "Check approvals and portable data",
-          "description": "Review what the team file contains and which actions require consent. A shared playbook should not be treated as a transfer of credentials or computer access."
-        }
-      ],
       "faq": [
         {
           "question": "Are MausBot and OpenMausBot different projects?",
@@ -2046,7 +2178,25 @@
           "question": "Is the open-source app the same as free model and cloud access?",
           "answer": "No. Apache-2.0 covers the application source. Agent accounts, API usage, connected services, cloud computers, and managed offerings have separate costs and terms."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Prepare MausBot engines and connections",
+        "description": "Check the engine account, computer access, and shared playbook contents for the task you intend to run.",
+        "items": [
+          {
+            "title": "Confirm a working agent engine",
+            "description": "The desktop setup checks a supported local engine and its account. An open-source application does not include unlimited model access or remove provider limits."
+          },
+          {
+            "title": "Choose the computer and connections",
+            "description": "Local computer use, cloud desktops, and connected applications require different permissions and services. Test the specific path needed by the task."
+          },
+          {
+            "title": "Check approvals and portable data",
+            "description": "Review what the team file contains and which actions require consent. A shared playbook should not be treated as a transfer of credentials or computer access."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "MausBot / OpenMausBot：多 Agent 工作流设计 | Floatboat",
@@ -2103,22 +2253,6 @@
           }
         ]
       },
-      "requirementsTitle": "先确定任务实际运行在哪里",
-      "requirementsIntro": "bot 资料定义职责，引擎、服务访问和操作系统能力决定任务可以怎样执行。",
-      "requirements": [
-        {
-          "title": "确认可用的 Agent 引擎",
-          "description": "桌面引导会检查受支持的本地引擎和账号。应用开源不包含无限模型额度，也不会取消供应方的使用限制。"
-        },
-        {
-          "title": "选择电脑与应用连接",
-          "description": "本机操作、云桌面与外部应用需要不同权限和服务，应针对任务真正使用的路径验证。"
-        },
-        {
-          "title": "核对审批与团队包内容",
-          "description": "检查共享文件包含什么，以及哪些动作需要确认。操作手册不能被当作凭证或电脑访问权的转移。"
-        }
-      ],
       "faq": [
         {
           "question": "MausBot 和 OpenMausBot 是两个项目吗？",
@@ -2144,7 +2278,25 @@
           "question": "开源应用是否包含免费模型和云电脑？",
           "answer": "不包含。Apache-2.0 覆盖应用源码；Agent 账号、API 用量、外部服务、云电脑和托管方案有各自的费用与条款。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "准备 MausBot 引擎与连接",
+        "description": "按实际任务核对引擎账号、计算机访问及共享工作手册内容。",
+        "items": [
+          {
+            "title": "确认可用的 Agent 引擎",
+            "description": "桌面引导会检查受支持的本地引擎和账号。应用开源不包含无限模型额度，也不会取消供应方的使用限制。"
+          },
+          {
+            "title": "选择电脑与应用连接",
+            "description": "本机操作、云桌面与外部应用需要不同权限和服务，应针对任务真正使用的路径验证。"
+          },
+          {
+            "title": "核对审批与团队包内容",
+            "description": "检查共享文件包含什么，以及哪些动作需要确认。操作手册不能被当作凭证或电脑访问权的转移。"
+          }
+        ]
+      }
     }
   },
   {
@@ -2219,22 +2371,6 @@
           }
         ]
       },
-      "requirementsTitle": "Check the Platform Before Desktop Automation",
-      "requirementsIntro": "Support for an operating system does not guarantee identical controls, permissions, or screenshot behavior in every environment.",
-      "requirements": [
-        {
-          "title": "Confirm permissions and session access",
-          "description": "macOS requires Accessibility permission. Windows control is constrained by process integrity level; Linux needs an accessible graphical session and the documented platform dependencies."
-        },
-        {
-          "title": "Check the exact app and display system",
-          "description": "Validate the target app’s accessibility exposure. Linux X11 and Wayland differ for input, screenshots, and clipboard operations; read the current platform capability table."
-        },
-        {
-          "title": "Limit sensitive observation data",
-          "description": "Snapshots, clipboard contents, screenshots, and traces can contain private material. Keep the collected evidence scoped to the task and check any optional model-backed helper separately."
-        }
-      ],
       "faq": [
         {
           "question": "Is Agent Desktop an agent harness or a model?",
@@ -2260,7 +2396,25 @@
           "question": "Does a Skill installation include desktop permissions?",
           "answer": "No. Instructions explain how an agent should use the tool. The executable, its platform helpers, OS permissions, and any host integration remain separate setup requirements."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Check Agent Desktop platform access",
+        "description": "Confirm platform capabilities and observation scope for the exact application you want to automate.",
+        "items": [
+          {
+            "title": "Confirm permissions and session access",
+            "description": "macOS requires Accessibility permission. Windows control is constrained by process integrity level; Linux needs an accessible graphical session and the documented platform dependencies."
+          },
+          {
+            "title": "Check the exact app and display system",
+            "description": "Validate the target app’s accessibility exposure. Linux X11 and Wayland differ for input, screenshots, and clipboard operations; read the current platform capability table."
+          },
+          {
+            "title": "Limit sensitive observation data",
+            "description": "Snapshots, clipboard contents, screenshots, and traces can contain private material. Keep the collected evidence scoped to the task and check any optional model-backed helper separately."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "Vercel Labs Agent Desktop：Agent 桌面自动化工具 | Floatboat",
@@ -2317,22 +2471,6 @@
           }
         ]
       },
-      "requirementsTitle": "桌面自动化前先核对运行平台",
-      "requirementsIntro": "支持某个操作系统，不代表所有环境都有相同的控件、权限或截图行为。",
-      "requirements": [
-        {
-          "title": "确认权限与会话条件",
-          "description": "macOS 需要无障碍权限；Windows 操作受进程完整性级别限制；Linux 需要可访问的图形会话及文档要求的平台依赖。"
-        },
-        {
-          "title": "核对应用与显示系统",
-          "description": "先验证目标应用是否暴露需要的无障碍控件。Linux 的 X11 与 Wayland 在输入、截图和剪贴板方面存在差异，应查看当前平台能力表。"
-        },
-        {
-          "title": "控制观察资料的范围",
-          "description": "快照、剪贴板、截图与跟踪记录可能包含私人资料，应只采集任务所需证据，并单独检查可选模型辅助功能的数据流向。"
-        }
-      ],
       "faq": [
         {
           "question": "Agent Desktop 是 Agent Harness 或模型吗？",
@@ -2358,7 +2496,25 @@
           "question": "安装 Skill 就拥有桌面操作权限了吗？",
           "answer": "没有。Skill 说明 Agent 应如何使用工具；可执行程序、平台辅助文件、操作系统权限与宿主集成仍是独立的准备条件。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "核对 Agent Desktop 平台访问条件",
+        "description": "针对要自动化的具体应用，确认平台能力及观察数据范围。",
+        "items": [
+          {
+            "title": "确认权限与会话条件",
+            "description": "macOS 需要无障碍权限；Windows 操作受进程完整性级别限制；Linux 需要可访问的图形会话及文档要求的平台依赖。"
+          },
+          {
+            "title": "核对应用与显示系统",
+            "description": "先验证目标应用是否暴露需要的无障碍控件。Linux 的 X11 与 Wayland 在输入、截图和剪贴板方面存在差异，应查看当前平台能力表。"
+          },
+          {
+            "title": "控制观察资料的范围",
+            "description": "快照、剪贴板、截图与跟踪记录可能包含私人资料，应只采集任务所需证据，并单独检查可选模型辅助功能的数据流向。"
+          }
+        ]
+      }
     }
   },
   {
@@ -2433,22 +2589,6 @@
           }
         ]
       },
-      "requirementsTitle": "Check Models, Nodes, and Runtime Together",
-      "requirementsIntro": "A workflow file describes the graph; the environment determines whether that graph can execute.",
-      "requirements": [
-        {
-          "title": "Choose a supported runtime",
-          "description": "Follow the official installation path for your operating system and hardware. Memory and performance depend on the selected models and workflow."
-        },
-        {
-          "title": "Review extensions and model terms",
-          "description": "Custom nodes add executable dependencies, while model weights and external APIs have their own licenses or service conditions."
-        },
-        {
-          "title": "Test a complete sample",
-          "description": "Load the workflow, resolve its dependencies, run a representative input, and inspect the saved result before automating a batch."
-        }
-      ],
       "faq": [
         {
           "question": "Is ComfyUI a Skill?",
@@ -2474,7 +2614,32 @@
           "question": "Does the core license cover all models and media?",
           "answer": "No. The core uses GPL-3.0; model weights, custom nodes, provider APIs, and input assets can have separate conditions."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Check ComfyUI models and dependencies",
+        "description": "Runtime choice, custom nodes, and model terms all affect whether a workflow can be reproduced.",
+        "items": [
+          {
+            "title": "Choose a supported runtime",
+            "description": "Follow the official installation path for your operating system and hardware. Memory and performance depend on the selected models and workflow."
+          },
+          {
+            "title": "Review extensions and model terms",
+            "description": "Custom nodes add executable dependencies, while model weights and external APIs have their own licenses or service conditions."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "Validate a ComfyUI workflow before batching",
+        "description": "Use a representative input to resolve dependencies and inspect the saved output before increasing the run volume.",
+        "items": [
+          {
+            "title": "Test a complete sample",
+            "description": "Load the workflow, resolve its dependencies, run a representative input, and inspect the saved result before automating a batch.",
+            "completion": "The sample workflow runs with resolved dependencies and saves the expected output."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "ComfyUI：可复用的节点式生成工作流 | Floatboat",
@@ -2531,22 +2696,6 @@
           }
         ]
       },
-      "requirementsTitle": "一起核对模型、节点与运行环境",
-      "requirementsIntro": "工作流文件描述连接关系，执行环境决定这些连接能否运行。",
-      "requirements": [
-        {
-          "title": "选择适合的运行方式",
-          "description": "按操作系统与硬件采用官方安装方案，所需内存和实际速度取决于模型与具体工作流。"
-        },
-        {
-          "title": "核对扩展和模型条款",
-          "description": "自定义节点会增加可执行依赖，模型权重与外部 API 也有独立的许可或服务条件。"
-        },
-        {
-          "title": "验证一个完整样本",
-          "description": "加载工作流、补齐依赖、执行代表性输入并检查保存结果，再扩展到批量任务。"
-        }
-      ],
       "faq": [
         {
           "question": "ComfyUI 是 Skill 吗？",
@@ -2572,7 +2721,32 @@
           "question": "核心许可是否覆盖所有模型和素材？",
           "answer": "不覆盖。核心采用 GPL-3.0，模型权重、自定义节点、供应方 API 与输入素材可能有各自条件。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "核对 ComfyUI 模型与依赖",
+        "description": "运行环境、自定义节点和模型条款都会影响工作流能否复现。",
+        "items": [
+          {
+            "title": "选择适合的运行方式",
+            "description": "按操作系统与硬件采用官方安装方案，所需内存和实际速度取决于模型与具体工作流。"
+          },
+          {
+            "title": "核对扩展和模型条款",
+            "description": "自定义节点会增加可执行依赖，模型权重与外部 API 也有独立的许可或服务条件。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "批量运行前验证 ComfyUI 工作流",
+        "description": "先用代表性输入解决依赖并检查保存结果，再扩大运行批次。",
+        "items": [
+          {
+            "title": "验证一个完整样本",
+            "description": "加载工作流、补齐依赖、执行代表性输入并检查保存结果，再扩展到批量任务。",
+            "completion": "样例工作流在依赖齐备的情况下运行，并保存预期结果。"
+          }
+        ]
+      }
     }
   },
   {
@@ -2647,22 +2821,6 @@
           }
         ]
       },
-      "requirementsTitle": "Keep Context, Revision, and Data Processing Aligned",
-      "requirementsIntro": "The local parser, semantic backend, integration Skill, and hosted service are separate setup choices.",
-      "requirements": [
-        {
-          "title": "Choose local or hosted processing",
-          "description": "Confirm which files stay in local AST processing and which semantic tasks use a model or hosted backend."
-        },
-        {
-          "title": "Install the tool and agent guidance",
-          "description": "The documented local package is graphifyy. Agent registration supplies instructions; confirm that the CLI and chosen integration are available."
-        },
-        {
-          "title": "Refresh and verify the graph",
-          "description": "Rebuild or update after relevant source changes, and check the actual code before accepting a graph-derived claim."
-        }
-      ],
       "faq": [
         {
           "question": "Is Graphify software or a Skill?",
@@ -2688,7 +2846,33 @@
           "question": "Does the open-source license include Graphify Cloud?",
           "answer": "Apache-2.0 applies to the published local project. Hosted services, accounts, and model usage have separate access and commercial terms."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Choose Graphify’s processing boundary",
+        "description": "Identify which analysis stays local and which tasks send material to a model or hosted service.",
+        "items": [
+          {
+            "title": "Choose local or hosted processing",
+            "description": "Confirm which files stay in local AST processing and which semantic tasks use a model or hosted backend."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "Build and verify a Graphify graph",
+        "description": "Confirm the tool and Agent guidance are available, then keep graph-derived conclusions tied to the current source.",
+        "items": [
+          {
+            "title": "Install the tool and agent guidance",
+            "description": "The documented local package is graphifyy. Agent registration supplies instructions; confirm that the CLI and chosen integration are available.",
+            "completion": "The graphifyy CLI and intended Agent integration are available in the target environment."
+          },
+          {
+            "title": "Refresh and verify the graph",
+            "description": "Rebuild or update after relevant source changes, and check the actual code before accepting a graph-derived claim.",
+            "completion": "The graph reflects relevant source changes and its claims have been checked in actual code."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "Graphify：面向 Agent 工作流的代码知识图谱 | Floatboat",
@@ -2745,22 +2929,6 @@
           }
         ]
       },
-      "requirementsTitle": "让上下文、版本与数据处理保持一致",
-      "requirementsIntro": "本地解析、语义后端、集成 Skill 与托管服务属于不同配置选择。",
-      "requirements": [
-        {
-          "title": "选择本地或托管处理",
-          "description": "核对哪些文件仅参与本地 AST 分析，哪些语义任务会调用模型或托管后端。"
-        },
-        {
-          "title": "准备工具与 Agent 指引",
-          "description": "官方本地包名为 graphifyy；注册 Agent 指令后，还应确认 CLI 与所选集成可用。"
-        },
-        {
-          "title": "刷新图谱并核对代码",
-          "description": "相关源文件变化后更新图谱，接受图谱导出的结论前再次检查实际代码。"
-        }
-      ],
       "faq": [
         {
           "question": "Graphify 是软件还是 Skill？",
@@ -2786,7 +2954,33 @@
           "question": "开源许可包含 Graphify Cloud 吗？",
           "answer": "Apache-2.0 适用于公开本地项目；托管服务、账号和模型使用另有访问与商业条件。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "选择 Graphify 处理边界",
+        "description": "区分留在本地的分析，以及会向模型或托管服务发送材料的任务。",
+        "items": [
+          {
+            "title": "选择本地或托管处理",
+            "description": "核对哪些文件仅参与本地 AST 分析，哪些语义任务会调用模型或托管后端。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "构建并核对 Graphify 代码图谱",
+        "description": "确认工具与 Agent 指令可用，再让图谱结论始终对应当前源代码。",
+        "items": [
+          {
+            "title": "准备工具与 Agent 指引",
+            "description": "官方本地包名为 graphifyy；注册 Agent 指令后，还应确认 CLI 与所选集成可用。",
+            "completion": "目标环境中 graphifyy CLI 及所需 Agent 集成已可用。"
+          },
+          {
+            "title": "刷新图谱并核对代码",
+            "description": "相关源文件变化后更新图谱，接受图谱导出的结论前再次检查实际代码。",
+            "completion": "图谱已反映相关源码变化，结论也已在实际代码中核对。"
+          }
+        ]
+      }
     }
   },
   {
@@ -2861,22 +3055,6 @@
           }
         ]
       },
-      "requirementsTitle": "Define the Host, Permissions, and Merge Owner",
-      "requirementsIntro": "The workbench coordinates tools that still have their own accounts, execution settings, and access boundaries.",
-      "requirements": [
-        {
-          "title": "Confirm each agent’s setup",
-          "description": "Install and authenticate the engines you intend to use. Source availability does not include provider subscriptions or unlimited model usage."
-        },
-        {
-          "title": "Inspect execution and remote access",
-          "description": "Review the chosen engine’s approval settings and any SSH or companion connection. A worktree is file isolation, not a security boundary."
-        },
-        {
-          "title": "Integrate one reviewed result",
-          "description": "Choose the accepted change, run checks on the combined revision, and keep the merge decision explicit rather than equating task completion with approval."
-        }
-      ],
       "faq": [
         {
           "question": "Which Orca project does this page describe?",
@@ -2902,7 +3080,32 @@
           "question": "Should every task be sent to several agents?",
           "answer": "No. Use parallel attempts when independent work or comparison is valuable. Shared mutable work and unclear acceptance criteria can add coordination cost without improving the result."
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "Prepare Orca engines and remote access",
+        "description": "Check engine authentication and execution permissions before coordinating parallel work.",
+        "items": [
+          {
+            "title": "Confirm each agent’s setup",
+            "description": "Install and authenticate the engines you intend to use. Source availability does not include provider subscriptions or unlimited model usage."
+          },
+          {
+            "title": "Inspect execution and remote access",
+            "description": "Review the chosen engine’s approval settings and any SSH or companion connection. A worktree is file isolation, not a security boundary."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "Integrate one reviewed Orca result",
+        "description": "Bring an accepted Agent change into the combined revision and verify it before making a separate merge decision.",
+        "items": [
+          {
+            "title": "Integrate one reviewed result",
+            "description": "Choose the accepted change, run checks on the combined revision, and keep the merge decision explicit rather than equating task completion with approval.",
+            "completion": "The combined revision passes relevant checks and has an explicit merge decision."
+          }
+        ]
+      }
     },
     "zh": {
       "seoTitle": "Orca：并行编程 Agent 与 Worktree 审阅 | Floatboat",
@@ -2959,22 +3162,6 @@
           }
         ]
       },
-      "requirementsTitle": "确定宿主、权限与合并负责人",
-      "requirementsIntro": "工作台协调的工具仍有各自的账号、执行设置和访问边界。",
-      "requirements": [
-        {
-          "title": "确认每个 Agent 的运行条件",
-          "description": "安装并登录计划使用的引擎，源码公开不包含供应方订阅或无限模型额度。"
-        },
-        {
-          "title": "检查执行与远程访问设置",
-          "description": "核对所选引擎的审批模式，以及 SSH 或伴侣连接；worktree 隔离文件，但不构成安全隔离。"
-        },
-        {
-          "title": "集成经过审阅的结果",
-          "description": "选择接受的修改后，对组合版本运行检查，并保留明确的合并决定，不能把任务完成等同于获准发布。"
-        }
-      ],
       "faq": [
         {
           "question": "这里介绍的是哪个 Orca？",
@@ -3000,7 +3187,32 @@
           "question": "是否应该把每项任务都发给多个 Agent？",
           "answer": "不需要。独立工作或方案比较有价值时才适合并行；共享修改和不清晰的验收标准可能增加协调成本。"
         }
-      ]
+      ],
+      "prerequisites": {
+        "title": "准备 Orca 引擎与远程访问",
+        "description": "协调并行工作前，先核对引擎认证及执行权限。",
+        "items": [
+          {
+            "title": "确认每个 Agent 的运行条件",
+            "description": "安装并登录计划使用的引擎，源码公开不包含供应方订阅或无限模型额度。"
+          },
+          {
+            "title": "检查执行与远程访问设置",
+            "description": "核对所选引擎的审批模式，以及 SSH 或伴侣连接；worktree 隔离文件，但不构成安全隔离。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "整合一项审阅后的 Orca 结果",
+        "description": "将认可的 Agent 变更放入整合版本验证，再单独作出合并决定。",
+        "items": [
+          {
+            "title": "集成经过审阅的结果",
+            "description": "选择接受的修改后，对组合版本运行检查，并保留明确的合并决定，不能把任务完成等同于获准发布。",
+            "completion": "整合版本通过相关检查，并有明确的合并决定。"
+          }
+        ]
+      }
     }
   }
 ]

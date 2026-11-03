@@ -320,28 +320,37 @@
       ]
     }
   },
-  "steps": {
+  "mechanism": {
     "title": {
-      "en": "One request, three decisions behind the scenes.",
-      "zh": "一次请求，背后完成三步判断。"
+      "en": "How Auto Mode routes a request",
+      "zh": "Auto Mode 如何为请求选择模型"
     },
     "items": [
       {
-        "title": { "en": "Read the task", "zh": "识别任务" },
+        "title": {
+          "en": "Read the task",
+          "zh": "识别任务"
+        },
         "description": {
           "en": "Floatboat identifies the required depth, context, and modality.",
           "zh": "Floatboat 判断所需推理深度、上下文和模态。"
         }
       },
       {
-        "title": { "en": "Choose a route", "zh": "选择路径" },
+        "title": {
+          "en": "Choose a route",
+          "zh": "选择路径"
+        },
         "description": {
           "en": "It selects a suitable model and can fall back if that route is unavailable.",
           "zh": "系统选择合适模型，并在路径不可用时自动降级。"
         }
       },
       {
-        "title": { "en": "Keep continuity", "zh": "保持连续" },
+        "title": {
+          "en": "Keep continuity",
+          "zh": "保持连续"
+        },
         "description": {
           "en": "Files, rules, and output remain attached to the same project.",
           "zh": "文件、规则与输出继续留在同一项目中。"

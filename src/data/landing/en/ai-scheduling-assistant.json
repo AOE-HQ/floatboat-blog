@@ -54,24 +54,6 @@
       }
     ]
   },
-  "scenario": {
-    "title": "The event arrives with the work already prepared.",
-    "description": "Instead of opening a calendar block and reconstructing the week, let the agent assemble the review package beforehand.",
-    "steps": [
-      {
-        "title": "The schedule creates a task",
-        "description": "A recurring event provides the deadline, cadence, and basic intent."
-      },
-      {
-        "title": "The agent gathers the inputs",
-        "description": "Relevant files, notes, and unfinished actions are assembled before the event."
-      },
-      {
-        "title": "You review and decide",
-        "description": "The meeting starts from a prepared brief, and approved follow-ups return to the workspace."
-      }
-    ]
-  },
   "useCases": {
     "title": "Prepare recurring work from its schedule",
     "description": "Organize sources and review around real reporting, client-review, or editorial events without equating scheduling with automatic publication.",
@@ -93,24 +75,6 @@
         "brief": "An editorial calendar, topic material, review requirements, and approval process.",
         "process": "Prepare research/drafts for editorial milestones, arrange review, and handle publication through authorized steps.",
         "outcome": "Content preparation linking research, drafts, and review, with publication governed by authorization."
-      }
-    ]
-  },
-  "howItWorks": {
-    "title": "Keep your calendar. Add an execution layer.",
-    "description": "Floatboat treats calendar time as one source of work inside a broader agent workspace.",
-    "items": [
-      {
-        "title": "Connect or import the schedule",
-        "description": "Use the calendar system your work already depends on."
-      },
-      {
-        "title": "Attach a reusable task",
-        "description": "Define what should be prepared, executed, or reviewed around the event."
-      },
-      {
-        "title": "Receive the result and follow-up",
-        "description": "Get the artifact, decision request, or next action at the right moment."
       }
     ]
   },
@@ -188,5 +152,26 @@
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=scheduling&download_placement=final_cta"
     }
+  },
+  "howTo": {
+    "title": "Prepare work around a calendar event",
+    "description": "Attach a useful preparation task to an existing event, then review its result before deciding the next action.",
+    "items": [
+      {
+        "title": "Bring in the relevant event",
+        "description": "Connect or import the calendar you already use and choose the event or recurring work that needs preparation.",
+        "completion": "The selected event has the correct time and preparation goal."
+      },
+      {
+        "title": "Define the preparation task",
+        "description": "Specify what should happen before or after the event and attach the files, notes, and open actions needed for the brief.",
+        "completion": "The task identifies its inputs, timing, and expected brief or artifact."
+      },
+      {
+        "title": "Review and decide what follows",
+        "description": "Read the prepared result, check important facts and open questions, and approve any follow-up that requires a decision.",
+        "completion": "The event has a reviewed preparation result and explicit next steps."
+      }
+    ]
   }
 }

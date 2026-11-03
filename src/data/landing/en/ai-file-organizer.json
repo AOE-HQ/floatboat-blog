@@ -54,24 +54,6 @@
       }
     ]
   },
-  "scenario": {
-    "title": "Turn a mixed folder into a structure you can trust.",
-    "description": "The organizer can identify what belongs together, flag uncertain files, and leave you with an auditable result.",
-    "steps": [
-      {
-        "title": "Choose the folder",
-        "description": "Scope the task to the exact local directory you want the agent to inspect."
-      },
-      {
-        "title": "Review the plan",
-        "description": "Check proposed groups, filenames, duplicates, and files that need a decision."
-      },
-      {
-        "title": "Approve the changes",
-        "description": "Apply the accepted moves and receive a per-file summary of what happened."
-      }
-    ]
-  },
   "useCases": {
     "title": "Organize files by project, period, and asset relationships",
     "description": "Base classification on file use and existing conventions, keeping uncertain assignments open and changes reviewable.",
@@ -93,24 +75,6 @@
         "brief": "Source videos, transcripts, thumbnails, research drafts, and their relationships.",
         "process": "Connect assets by source and production stage, preserving relationships between videos, transcripts, and derived files.",
         "outcome": "A categorized structure preserving asset relationships without guessing uncertain contents from filenames."
-      }
-    ]
-  },
-  "howItWorks": {
-    "title": "Analysis first. File operations second.",
-    "description": "The workflow creates a clear boundary between understanding the folder and changing it.",
-    "items": [
-      {
-        "title": "Describe the target structure",
-        "description": "Explain the outcome, naming convention, and folders that must remain untouched."
-      },
-      {
-        "title": "Correct the preview",
-        "description": "Review uncertain matches and adjust categories before execution."
-      },
-      {
-        "title": "Apply and audit",
-        "description": "Run the approved changes and keep a summary of moved, renamed, skipped, and duplicate files."
       }
     ]
   },
@@ -188,5 +152,26 @@
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=file-organizer&download_placement=final_cta"
     }
+  },
+  "howTo": {
+    "title": "Organize files with a reviewed plan",
+    "description": "Limit the folder scope, inspect proposed changes, and check the resulting file operations.",
+    "items": [
+      {
+        "title": "Choose the folder and rules",
+        "description": "Select the exact local folder, describe the target structure and naming rules, and mark folders that must stay unchanged.",
+        "completion": "The working scope, target structure, and protected locations are recorded."
+      },
+      {
+        "title": "Correct the proposed changes",
+        "description": "Review classification, names, possible duplicates, and uncertain matches before approving any move or rename.",
+        "completion": "The preview resolves ambiguous items and reflects the intended rules."
+      },
+      {
+        "title": "Approve and inspect the result",
+        "description": "Authorize the reviewed operations, then inspect the move, rename, skip, and duplicate summary against the folder contents.",
+        "completion": "The resulting files match the approved plan and exceptions are visible."
+      }
+    ]
   }
 }

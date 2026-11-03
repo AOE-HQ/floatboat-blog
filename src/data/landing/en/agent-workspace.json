@@ -54,24 +54,6 @@
       }
     ]
   },
-  "scenario": {
-    "title": "Move from source material to a finished artifact without losing the thread.",
-    "description": "A workspace can hold the brief, references, working rules, agent runs, review notes, and final deliverable as one continuous body of work.",
-    "steps": [
-      {
-        "title": "Open the real project",
-        "description": "Give the workspace access to the relevant folder, files, tools, and rules."
-      },
-      {
-        "title": "Let agents divide the work",
-        "description": "Assign research, drafting, checking, or production steps while they share the same project context."
-      },
-      {
-        "title": "Review and keep the result",
-        "description": "Inspect the work, intervene where needed, and save the editable deliverable beside its source material."
-      }
-    ]
-  },
   "useCases": {
     "title": "Keep project materials, code, and deliverables connected",
     "description": "Use the same working context for role handoffs and repository changes, with traceable, reviewable results.",
@@ -93,24 +75,6 @@
         "brief": "Approved source files, a delivery format, and review criteria.",
         "process": "Organize source files around acceptance criteria, retain attribution, and collect open questions at review points.",
         "outcome": "Editable reports, slides, or analyses with sources and open questions identified."
-      }
-    ]
-  },
-  "howItWorks": {
-    "title": "One workspace connects context, execution, and delivery.",
-    "description": "The workspace is the durable foundation; individual Work Agents, triggers, Skills, and FloatIM are ways to use it.",
-    "items": [
-      {
-        "title": "Connect the work environment",
-        "description": "Choose the project files, tools, models, and permission boundaries relevant to the job."
-      },
-      {
-        "title": "Run and supervise agents",
-        "description": "Delegate tasks, let agents collaborate, and inspect the steps or artifacts that require attention."
-      },
-      {
-        "title": "Preserve what should carry forward",
-        "description": "Keep deliverables, project rules, and useful context in the workspace for the next task or workflow."
       }
     ]
   },
@@ -188,5 +152,26 @@
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=agent-workspace&download_placement=final_cta"
     }
+  },
+  "howTo": {
+    "title": "Run a project in Agent Workspace",
+    "description": "Keep source material, Agent work, and reviewed deliverables in one persistent project.",
+    "items": [
+      {
+        "title": "Open a bounded project",
+        "description": "Choose the project folder, relevant files, tools, and rules; state the intended deliverable and access limits.",
+        "completion": "The workspace contains the required sources and an agreed task scope."
+      },
+      {
+        "title": "Assign and supervise the work",
+        "description": "Give Agents distinct research, drafting, checking, or creation tasks. Review intermediate output and approve actions that need a decision.",
+        "completion": "Agent outputs are linked to their tasks, with unresolved decisions visible."
+      },
+      {
+        "title": "Review and retain the handoff",
+        "description": "Compare artifacts with the original brief, request corrections, and retain useful context and accepted results for the next task.",
+        "completion": "Accepted artifacts and the decisions behind them remain available in the project."
+      }
+    ]
   }
 }

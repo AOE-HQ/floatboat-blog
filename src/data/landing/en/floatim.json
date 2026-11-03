@@ -54,24 +54,6 @@
       }
     ]
   },
-  "scenario": {
-    "title": "From scattered messages to one visible chain of work.",
-    "description": "A launch that normally crosses chat, documents, and task trackers can run inside one shared room.",
-    "steps": [
-      {
-        "title": "Set the outcome",
-        "description": "A person shares the brief, deadline, references, and boundaries once."
-      },
-      {
-        "title": "Delegate by specialty",
-        "description": "Research, writing, and review agents take the parts that match their role."
-      },
-      {
-        "title": "Review the finished work",
-        "description": "The final artifact arrives with its sources, decisions, and handoff history intact."
-      }
-    ]
-  },
   "useCases": {
     "title": "Keep role collaboration inside the project conversation",
     "description": "Retain requirements, feedback, and results by role and project so agent work stays connected to team handoffs.",
@@ -93,24 +75,6 @@
         "brief": "Team context, steps an agent may contribute to, and human checkpoints.",
         "process": "Hand over materials, contribute drafts, and confirm the next owner; continue consequential external actions through approval.",
         "outcome": "Task contributions connected to team collaboration, retaining approval for external actions."
-      }
-    ]
-  },
-  "howItWorks": {
-    "title": "Start with a room. Add capability as the work demands it.",
-    "description": "The workflow stays legible even as more people and agents join.",
-    "items": [
-      {
-        "title": "Create a project room",
-        "description": "Name the outcome and bring in the files and context that define the work."
-      },
-      {
-        "title": "Invite people and agents",
-        "description": "Add the collaborators and specialist agents that need to contribute."
-      },
-      {
-        "title": "Approve and reuse",
-        "description": "Review the result, keep the history, and reuse the working pattern on the next project."
       }
     ]
   },
@@ -188,5 +152,26 @@
       "label": "Download Floatboat",
       "href": "https://floatboat.ai/download/success?from=floatim&download_placement=final_cta"
     }
+  },
+  "howTo": {
+    "title": "Coordinate a team task in FloatIM",
+    "description": "Give people and Agents a shared goal, a clear division of work, and a reviewable conversation history.",
+    "items": [
+      {
+        "title": "Create the project conversation",
+        "description": "Add the outcome, deadline, source files, and constraints to a project space before assigning work.",
+        "completion": "Participants can find the same brief and source material."
+      },
+      {
+        "title": "Invite people and assign Agent roles",
+        "description": "Bring the required collaborators into the space and give each Agent a bounded research, writing, or checking responsibility.",
+        "completion": "Each part of the task has an owner and a visible handoff point."
+      },
+      {
+        "title": "Review the shared result",
+        "description": "Check sources and pending decisions in the conversation, approve the final result, and retain useful context for follow-up.",
+        "completion": "The accepted result is traceable to its discussion and supporting materials."
+      }
+    ]
   }
 }

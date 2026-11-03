@@ -162,9 +162,13 @@
           "en": "Choose the interview mode",
           "zh": "选择访谈模式"
         },
-        "body": {
+        "description": {
           "en": "Provide the plan and known constraints. Invoke /grill-me for the ordinary interview, or /grill-with-docs when project terminology and records should be part of the discussion.",
           "zh": "提供计划与已知约束。普通访谈调用 /grill-me；需要结合项目术语和记录时，调用 /grill-with-docs。"
+        },
+        "completion": {
+          "en": "The decision or plan to interrogate and the interview mode are agreed.",
+          "zh": "已确认需要追问的决策或方案及访谈模式。"
         }
       },
       {
@@ -172,9 +176,13 @@
           "en": "Resolve each question round",
           "zh": "逐轮核对决策"
         },
-        "body": {
+        "description": {
           "en": "Answer the current questions and correct misunderstandings. In document-aware mode, compare terms and decisions with the glossary, code, and existing ADRs.",
           "zh": "回答当前问题并纠正理解偏差。文档模式下，同时将术语与决定对应到词汇表、代码及已有 ADR。"
+        },
+        "completion": {
+          "en": "Answers resolve assumptions or identify the exact questions still open.",
+          "zh": "回答已澄清假设，尚未解决的问题也有明确记录。"
         }
       },
       {
@@ -182,9 +190,13 @@
           "en": "Review decisions and records",
           "zh": "审阅决策与记录"
         },
-        "body": {
+        "description": {
           "en": "Confirm settled choices and remaining gaps. Review any glossary or ADR changes, then decide whether the next task is further discussion, documentation, or implementation.",
           "zh": "确认已定选择与剩余缺口，审阅词汇表或 ADR 的实际改动，再决定下一步是继续讨论、记录还是实施。"
+        },
+        "completion": {
+          "en": "The record separates agreed decisions, evidence, and remaining uncertainties.",
+          "zh": "记录区分已定决策、证据和未决问题。"
         }
       }
     ],
@@ -518,9 +530,13 @@
           "en": "Agree the test seams",
           "zh": "约定测试边界"
         },
-        "body": {
+        "description": {
           "en": "Provide the required behavior and test command. Confirm which public interfaces matter and what each proposed test catches.",
           "zh": "提供行为要求与测试命令，确认重要公开接口及每条测试能捕获的问题。"
+        },
+        "completion": {
+          "en": "Observable behavior and public test seams are agreed before implementation.",
+          "zh": "实现前已约定可观察行为与公共测试入口。"
         }
       },
       {
@@ -528,9 +544,13 @@
           "en": "Run one red-to-green cycle",
           "zh": "完成一轮红灯到绿灯"
         },
-        "body": {
+        "description": {
           "en": "Write a test that fails for the intended reason, then implement only enough behavior to pass it.",
           "zh": "编写因目标问题而失败的测试，再仅实现使其通过的必要行为。"
+        },
+        "completion": {
+          "en": "The new test fails for the intended reason and passes after the minimal change.",
+          "zh": "新测试先因目标问题失败，再随最小修改通过。"
         }
       },
       {
@@ -538,9 +558,13 @@
           "en": "Repeat and review separately",
           "zh": "继续迭代并另行审查"
         },
-        "body": {
+        "description": {
           "en": "Use the last cycle’s evidence to choose the next slice. Review refactoring separately once the selected behavior works.",
           "zh": "依据上一轮证据选择下一项小任务，在目标行为可用后另行审查重构。"
+        },
+        "completion": {
+          "en": "Relevant tests pass and refactoring preserves the agreed behavior.",
+          "zh": "相关测试通过，重构未改变约定行为。"
         }
       }
     ],
@@ -811,9 +835,13 @@
           "en": "Set the survey scope",
           "zh": "确定调查范围"
         },
-        "body": {
+        "description": {
           "en": "Name an area or pain point and provide existing domain docs. Let recent change history inform the scope when no area is specified.",
           "zh": "说明区域或痛点并提供领域资料；未指定时可结合近期变更确定范围。"
+        },
+        "completion": {
+          "en": "The survey identifies code boundaries, history, and specific sources of friction.",
+          "zh": "调查范围包含代码边界、历史及具体维护阻力。"
         }
       },
       {
@@ -821,9 +849,13 @@
           "en": "Review the candidate report",
           "zh": "审阅候选报告"
         },
-        "body": {
+        "description": {
           "en": "Inspect the affected files, friction, proposed direction, and visual comparisons. Distinguish strong recommendations from speculative ones.",
           "zh": "核对涉及文件、摩擦、改进方向和结构比较，区分强建议与推测候选。"
+        },
+        "completion": {
+          "en": "Candidates explain costs, dependencies, and expected improvements with code evidence.",
+          "zh": "候选方案用代码证据说明成本、依赖和预期改善。"
         }
       },
       {
@@ -831,9 +863,13 @@
           "en": "Explore one selected design",
           "zh": "深入一项设计"
         },
-        "body": {
+        "description": {
           "en": "Choose a candidate for the dependent-decision interview. Agree the intended interface, preserved behavior, and validation before refactoring.",
           "zh": "选一项进入决策访谈，重构前明确接口、需保留行为和验证方式。"
+        },
+        "completion": {
+          "en": "A selected design has an agreed scope before implementation begins.",
+          "zh": "开始实现前，选定设计已有明确且认可的范围。"
         }
       }
     ],
@@ -1094,9 +1130,13 @@
           "en": "Build the failure signal",
           "zh": "建立失败信号"
         },
-        "body": {
+        "description": {
           "en": "Describe the exact symptom and run a command that can detect it. Capture only the diagnostic evidence needed, with secrets removed.",
           "zh": "说明准确症状并运行能检测它的命令，仅保留必要且已脱敏的诊断证据。"
+        },
+        "completion": {
+          "en": "A repeatable failure signal is captured with relevant environment details.",
+          "zh": "已捕获可重复的失败信号及相关环境信息。"
         }
       },
       {
@@ -1104,9 +1144,13 @@
           "en": "Minimize and test explanations",
           "zh": "缩小案例并检验解释"
         },
-        "body": {
+        "description": {
           "en": "Reduce inputs while preserving failure. Compare ranked hypotheses with probes that change one variable at a time.",
           "zh": "在保留失败的前提下缩减输入，再用每次只改变一个变量的探针比较假设。"
+        },
+        "completion": {
+          "en": "Experiments narrow the cause and record which explanations were ruled out.",
+          "zh": "实验已缩小原因范围，并记录排除的解释。"
         }
       },
       {
@@ -1114,9 +1158,13 @@
           "en": "Fix, verify, and clean up",
           "zh": "修复、验证并清理"
         },
-        "body": {
+        "description": {
           "en": "Test the correction at an appropriate seam and rerun the original scenario. Remove debug instrumentation and record the supported cause.",
           "zh": "在合适边界测试修复并重跑原始场景，清理诊断代码并记录有证据支持的原因。"
+        },
+        "completion": {
+          "en": "The original failure no longer reproduces and temporary diagnostics are cleaned up.",
+          "zh": "原始问题不再复现，临时诊断内容已清理。"
         }
       }
     ],
@@ -1377,9 +1425,13 @@
           "en": "Pin the comparison point",
           "zh": "固定比较点"
         },
-        "body": {
+        "description": {
           "en": "Supply a commit, branch, tag, or other valid reference. Confirm the merge-base diff covers the intended work.",
           "zh": "提供有效提交、分支或标签，并确认合并基点差异覆盖目标工作。"
+        },
+        "completion": {
+          "en": "The base revision and review diff are unambiguous.",
+          "zh": "基准版本与待审查差异已明确。"
         }
       },
       {
@@ -1387,9 +1439,13 @@
           "en": "Provide standards and specification",
           "zh": "提供规范与需求"
         },
-        "body": {
+        "description": {
           "en": "Point to repository conventions and the originating requirement. Make any missing specification explicit.",
           "zh": "指出仓库约定与原始需求；缺少需求说明时明确记录。"
+        },
+        "completion": {
+          "en": "Review evidence is tied to the relevant requirements and changed code.",
+          "zh": "审查证据对应具体要求与变更代码。"
         }
       },
       {
@@ -1397,9 +1453,13 @@
           "en": "Review both result sets",
           "zh": "分别核对两组结果"
         },
-        "body": {
+        "description": {
           "en": "Read Standards and Spec findings independently. Decide which changes need correction without treating a pass on one axis as approval of the other.",
           "zh": "独立阅读规范和需求发现，不把某一轴通过当作另一轴也合格。"
+        },
+        "completion": {
+          "en": "Actionable findings identify impact and location; unsupported suspicions are separated.",
+          "zh": "可执行发现说明影响与位置，证据不足的怀疑已单独标明。"
         }
       }
     ],
@@ -1670,9 +1730,13 @@
           "en": "Name the next session’s goal",
           "zh": "明确下一会话目标"
         },
-        "body": {
+        "description": {
           "en": "Describe what the next agent should accomplish and which parts of the current conversation matter.",
           "zh": "说明下一 Agent 应完成什么，以及当前对话中哪些内容与之相关。"
+        },
+        "completion": {
+          "en": "The next session has a specific goal and a known stopping point.",
+          "zh": "下一会话有具体目标，当前停止位置清楚。"
         }
       },
       {
@@ -1680,9 +1744,13 @@
           "en": "Generate and inspect the document",
           "zh": "生成并审阅文档"
         },
-        "body": {
+        "description": {
           "en": "Invoke Handoff and locate its file in the OS temporary directory. Check decisions, artifact references, and suggested skills.",
           "zh": "调用 Handoff，在系统临时目录找到文件，核对决策、资料引用与建议 Skills。"
+        },
+        "completion": {
+          "en": "The handoff contains decisions, file references, and unresolved work without excess history.",
+          "zh": "交接文档包含决策、文件引用和未完成事项，无多余历史。"
         }
       },
       {
@@ -1690,9 +1758,13 @@
           "en": "Transfer context with access",
           "zh": "连同访问条件交接"
         },
-        "body": {
+        "description": {
           "en": "Provide the document and make referenced files available to the next agent. Reconfirm anything that may have changed since it was written.",
           "zh": "提供文档并让下一 Agent 能访问引用文件，同时重新核对编写后可能变化的信息。"
+        },
+        "completion": {
+          "en": "The receiving session can access referenced files and identify its next action.",
+          "zh": "接收会话可访问所引用文件，并确定下一步行动。"
         }
       }
     ],
@@ -1955,9 +2027,13 @@
           "en": "Provide the task and context",
           "zh": "提供任务与背景"
         },
-        "body": {
+        "description": {
           "en": "Share the intended outcome and relevant files or earlier decisions. Let existing evidence answer facts before discussing open choices.",
           "zh": "提供目标结果与相关文件或已有决定，先用现有证据回答事实问题。"
+        },
+        "completion": {
+          "en": "The project context and user goal are clear enough to compare approaches.",
+          "zh": "项目背景与用户目标已足够明确，可以比较方案。"
         }
       },
       {
@@ -1965,9 +2041,13 @@
           "en": "Choose an approach",
           "zh": "选择方案"
         },
-        "body": {
+        "description": {
           "en": "Discuss unresolved needs and compare alternatives. Review the agent’s understanding and correct assumptions before settling the direction.",
           "zh": "讨论未明确需求并比较备选，核对 Agent 理解并纠正假设，再确定方向。"
+        },
+        "completion": {
+          "en": "The chosen approach records tradeoffs and answers the key open questions.",
+          "zh": "选定方案记录取舍，并回答关键未决问题。"
         }
       },
       {
@@ -1975,9 +2055,13 @@
           "en": "Review the design handoff",
           "zh": "审阅设计交接"
         },
-        "body": {
+        "description": {
           "en": "Inspect a design sized to the work and confirm it before planning. Keep the companion writing-plans Skill available for the next stage.",
           "zh": "审阅与工作规模相符的设计，确认后再规划，并确保下一阶段可用 writing-plans。"
+        },
+        "completion": {
+          "en": "The reviewed design is ready for planning without prematurely implementing it.",
+          "zh": "设计已完成审阅，可进入规划阶段，未提前开始实现。"
         }
       }
     ],
@@ -2257,9 +2341,13 @@
           "en": "Collect evidence and patterns",
           "zh": "收集证据与正常模式"
         },
-        "body": {
+        "description": {
           "en": "Reproduce the error, inspect recent changes, and compare a working path. Add targeted boundary observations when several components are involved.",
           "zh": "复现错误、检查近期变化并比较正常路径，多组件问题可添加针对性边界观察。"
+        },
+        "completion": {
+          "en": "Logs and reproduction steps establish the failure pattern.",
+          "zh": "日志与复现步骤已建立问题模式。"
         }
       },
       {
@@ -2267,9 +2355,13 @@
           "en": "Test one explanation",
           "zh": "检验一个解释"
         },
-        "body": {
+        "description": {
           "en": "State a specific hypothesis and use the smallest useful test. Change one variable and evaluate the result before choosing another explanation.",
           "zh": "提出具体假设并进行最小有效测试，每次改变一个变量，评估后再选择其他解释。"
+        },
+        "completion": {
+          "en": "A focused experiment supports or rejects one stated hypothesis.",
+          "zh": "有针对性的实验已支持或否定一个明确假设。"
         }
       },
       {
@@ -2277,9 +2369,13 @@
           "en": "Implement and verify the cause",
           "zh": "实施并验证根因修复"
         },
-        "body": {
+        "description": {
           "en": "Capture a failing reproduction, apply the supported fix, and rerun relevant checks. Escalate repeated failures into a design discussion.",
           "zh": "保留失败复现、实施有依据的修复并重跑相关检查，连续失败时转入设计讨论。"
+        },
+        "completion": {
+          "en": "The root-cause fix passes the original reproduction and relevant regression checks.",
+          "zh": "根因修复通过原始复现及相关回归检查。"
         }
       }
     ],
@@ -2588,9 +2684,13 @@
           "en": "Check prerequisites and scope",
           "zh": "核对条件与范围"
         },
-        "body": {
+        "description": {
           "en": "Confirm compatible tool-using agents, parallel sub-agents, Node.js, output location, and the upstream isolation requirements. Define what the audit is allowed to inspect and execute.",
           "zh": "确认兼容的工具型 Agent、并行子 Agent、Node.js、输出位置及上游隔离要求，明确审计可以检查和执行的范围。"
+        },
+        "completion": {
+          "en": "Audit scope, repository access, and exclusions are explicitly recorded.",
+          "zh": "审计范围、仓库访问及排除项已明确记录。"
         }
       },
       {
@@ -2598,9 +2698,13 @@
           "en": "Investigate and verify independently",
           "zh": "调查并独立验证"
         },
-        "body": {
+        "description": {
           "en": "Track coverage, assign bounded investigations, and give each candidate to an independent verifier. Use the supplied ledger and findings validators at the documented checkpoints.",
           "zh": "跟踪覆盖范围、分派有边界的调查，并由独立验证者复核候选；在文档要求的节点运行覆盖与问题校验器。"
+        },
+        "completion": {
+          "en": "Findings have independently checked evidence or remain marked needs_validation.",
+          "zh": "发现项有独立核对的证据，否则保留 needs_validation 标记。"
         }
       },
       {
@@ -2608,9 +2712,13 @@
           "en": "Review reports and unresolved facts",
           "zh": "审阅报告与未解决事实"
         },
-        "body": {
+        "description": {
           "en": "Read the report alongside structured findings and coverage evidence. Require source traces for confirmed issues and preserve the exact missing fact for unresolved leads.",
           "zh": "将报告与结构化问题、覆盖证据一起检查，已确认问题应有源码链路，未解决线索应保留准确的缺失事实。"
+        },
+        "completion": {
+          "en": "Reports distinguish validated findings, unresolved facts, and coverage gaps.",
+          "zh": "报告区分已验证发现、未决事实和覆盖缺口。"
         }
       }
     ],

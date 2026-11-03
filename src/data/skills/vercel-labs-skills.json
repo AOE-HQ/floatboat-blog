@@ -144,9 +144,13 @@
           "en": "Define the performance issue",
           "zh": "明确性能问题"
         },
-        "body": {
+        "description": {
           "en": "Identify the route or interaction and provide a reproducible symptom. Include a trace, network timing, or bundle report when available.",
           "zh": "指定路由或交互，说明可复现的性能现象。有追踪、网络时序或包体积报告时，一并交给 Agent。"
+        },
+        "completion": {
+          "en": "A repeatable interaction and its performance evidence are recorded.",
+          "zh": "已记录可复现的交互与对应性能证据。"
         }
       },
       {
@@ -154,9 +158,13 @@
           "en": "Review the relevant rules",
           "zh": "检查相关规则"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to inspect the code using the matching impact-ranked categories. Read the proposed changes before applying them to the selected path.",
           "zh": "让 Agent 按匹配的规则类别检查代码，并参考影响排序确定重点。核对建议后，再修改选定路径。"
+        },
+        "completion": {
+          "en": "The proposed change points to the relevant rule and code location.",
+          "zh": "修改建议对应到具体规则与代码位置。"
         }
       },
       {
@@ -164,9 +172,13 @@
           "en": "Compare behavior and metrics",
           "zh": "比较行为与指标"
         },
-        "body": {
+        "description": {
           "en": "Repeat the same user path after the change. Check correctness alongside loading, interaction, or bundle measurements.",
           "zh": "修改后重复同一条用户路径。同时检查功能正确性，以及加载、交互或包体积指标。"
+        },
+        "completion": {
+          "en": "The same interaction is rerun with before-and-after behavior and measurements.",
+          "zh": "同一交互已复测，并保留修改前后的行为与测量结果。"
         }
       }
     ],
@@ -406,9 +418,13 @@
           "en": "Inspect components and callers",
           "zh": "检查组件与调用方"
         },
-        "body": {
+        "description": {
           "en": "Share the component and representative uses. Identify unclear combinations and the variations your callers actually need.",
           "zh": "提供组件与代表性调用。找出含义不清的属性组合，并列出调用方真正需要的变化。"
+        },
+        "completion": {
+          "en": "Problematic props and representative callers are identified.",
+          "zh": "已找出难以组合的参数及代表性调用位置。"
         }
       },
       {
@@ -416,9 +432,13 @@
           "en": "Design the composition",
           "zh": "设计组合方式"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to propose compound parts, explicit variants, or a provider for shared state. Check React-version requirements before choosing APIs.",
           "zh": "让 Agent 提议复合部件、明确变体或共享状态 Provider。选择具体 API 前先核对 React 版本要求。"
+        },
+        "completion": {
+          "en": "The proposed API shows how callers compose it under the project’s React version.",
+          "zh": "新 API 已给出符合项目 React 版本的组合调用示例。"
         }
       },
       {
@@ -426,9 +446,13 @@
           "en": "Migrate and verify callers",
           "zh": "迁移并验证调用"
         },
-        "body": {
+        "description": {
           "en": "Move common and edge cases to the proposed interface. Verify interactions and keep remaining callers working during migration.",
           "zh": "将常见和边缘用法迁移到新接口。验证交互，并在迁移期间保持其余调用正常工作。"
+        },
+        "completion": {
+          "en": "Migrated callers retain required states, behavior, and accessibility.",
+          "zh": "迁移后的调用保留必要状态、行为和可访问性。"
         }
       }
     ],
@@ -668,9 +692,13 @@
           "en": "Reproduce the screen behavior",
           "zh": "复现页面表现"
         },
-        "body": {
+        "description": {
           "en": "Identify the screen, platform, and interaction that shows the issue. Record your React Native or Expo version and test device.",
           "zh": "明确出问题的页面、平台和交互。记录 React Native 或 Expo 版本，以及所用测试设备。"
+        },
+        "completion": {
+          "en": "The screen issue can be reproduced on a named platform and device.",
+          "zh": "问题可在指定平台与设备上复现。"
         }
       },
       {
@@ -678,9 +706,13 @@
           "en": "Apply the mobile rules",
           "zh": "应用移动端规则"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to inspect the matching list, animation, navigation, or media code. Keep the implementation focused on the reproduced issue.",
           "zh": "让 Agent 检查对应的列表、动画、导航或媒体代码。围绕已复现的问题实施修改。"
+        },
+        "completion": {
+          "en": "Changes address the observed rendering, list, or animation issue.",
+          "zh": "修改对应已观察到的渲染、列表或动画问题。"
         }
       },
       {
@@ -688,9 +720,13 @@
           "en": "Verify on target devices",
           "zh": "在目标设备验证"
         },
-        "body": {
+        "description": {
           "en": "Repeat the flow on representative iOS and Android devices. Compare responsiveness and confirm gestures, layout, and content remain correct.",
           "zh": "在代表性 iOS 与 Android 设备上重复流程。比较响应表现，并确认手势、布局与内容仍然正确。"
+        },
+        "completion": {
+          "en": "Target iOS and Android paths have device-level results or explicit test gaps.",
+          "zh": "目标 iOS、Android 路径有设备验证结果或明确的测试缺口。"
         }
       }
     ],
@@ -930,9 +966,13 @@
           "en": "Describe the state relationship",
           "zh": "说明状态关系"
         },
-        "body": {
+        "description": {
           "en": "Show the starting and ending views. Identify whether the change is a shared element, list reorder, content reveal, or navigation.",
           "zh": "提供起始与结束视图。明确变化属于共享元素、列表重排、内容出现还是导航。"
+        },
+        "completion": {
+          "en": "The starting state, ending state, and shared visual elements are defined.",
+          "zh": "已明确起止状态及需要保持连续的视觉元素。"
         }
       },
       {
@@ -940,9 +980,13 @@
           "en": "Implement the matching pattern",
           "zh": "实现匹配模式"
         },
-        "body": {
+        "description": {
           "en": "Check the React and framework prerequisites with the agent. Apply the appropriate transition trigger, element identity, and CSS.",
           "zh": "与 Agent 核对 React 和框架前提。应用匹配的触发方式、元素身份与 CSS。"
+        },
+        "completion": {
+          "en": "The transition runs with the selected React, framework, and CSS setup.",
+          "zh": "过渡可在选定的 React、框架及 CSS 配置中运行。"
         }
       },
       {
@@ -950,9 +994,13 @@
           "en": "Test motion and fallback",
           "zh": "测试动效与降级"
         },
-        "body": {
+        "description": {
           "en": "Check the flow in supported browsers and with reduced motion enabled. Confirm the same action still works without animation.",
           "zh": "在支持的浏览器及开启减少动态效果时检查流程。确认关闭动画后，相同操作仍能正常完成。"
+        },
+        "completion": {
+          "en": "Supported browsers animate correctly and reduced-motion users retain a usable fallback.",
+          "zh": "支持的浏览器过渡正常，减少动态效果时仍有可用回退。"
         }
       }
     ],
@@ -1192,9 +1240,13 @@
           "en": "Choose files and user flow",
           "zh": "指定文件与用户流程"
         },
-        "body": {
+        "description": {
           "en": "Provide page or component paths and describe the interaction to review. Include shared components that affect the selected flow.",
           "zh": "提供页面或组件路径，并说明要审查的交互。包含会影响该流程的共享组件。"
+        },
+        "completion": {
+          "en": "The review names actual files and a user journey.",
+          "zh": "检查范围已落实到实际文件和用户路径。"
         }
       },
       {
@@ -1202,9 +1254,13 @@
           "en": "Review against current guidelines",
           "zh": "按当前规范检查"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to fetch the latest Web Interface Guidelines and inspect the named files. Request findings with file and line locations.",
           "zh": "让 Agent 获取最新 Web Interface Guidelines 并检查指定文件。要求问题附带文件与行号。"
+        },
+        "completion": {
+          "en": "Findings cite current guidelines and exact file locations.",
+          "zh": "发现项引用当前指南及准确文件位置。"
         }
       },
       {
@@ -1212,9 +1268,13 @@
           "en": "Verify and resolve findings",
           "zh": "核对并处理问题"
         },
-        "body": {
+        "description": {
           "en": "Match findings to the rendered UI before editing. Test relevant keyboard, focus, and form behavior after changes.",
           "zh": "修改前将发现与实际界面对应。改动后验证相关的键盘、焦点和表单行为。"
+        },
+        "completion": {
+          "en": "Affected keyboard, form, and responsive behaviors have been checked.",
+          "zh": "受影响的键盘、表单及响应式行为已检查。"
         }
       }
     ],
@@ -1454,9 +1514,13 @@
           "en": "Specify files and audience",
           "zh": "说明文件与读者"
         },
-        "body": {
+        "description": {
           "en": "Provide the documents or file pattern to review. Include the intended reader, document purpose, and terminology that must be preserved.",
           "zh": "提供文档或文件路径模式。说明目标读者、文档用途，以及需要保留的术语。"
+        },
+        "completion": {
+          "en": "The document, audience, and review scope are identified.",
+          "zh": "已明确文档、读者及审校范围。"
         }
       },
       {
@@ -1464,9 +1528,13 @@
           "en": "Review with the current handbook",
           "zh": "按当前手册审查"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to fetch Vercel’s writing handbook and inspect the selected text. Request concise findings with file and line locations.",
           "zh": "让 Agent 获取 Vercel 当前写作手册并检查所选文本。要求反馈简洁，并附文件与行号。"
+        },
+        "completion": {
+          "en": "Suggestions point to wording and the relevant handbook guidance.",
+          "zh": "建议已对应原句及相关写作手册规则。"
         }
       },
       {
@@ -1474,9 +1542,13 @@
           "en": "Select and verify edits",
           "zh": "选择并核对修改"
         },
-        "body": {
+        "description": {
           "en": "Compare suggestions with your own style requirements before editing. Reread the changed passages for meaning, accuracy, and consistency.",
           "zh": "修改前先与自己的文风要求比较。完成后重读相关段落，核对含义、准确性与一致性。"
+        },
+        "completion": {
+          "en": "Accepted edits preserve factual meaning and read naturally in context.",
+          "zh": "采纳后的改写保留事实含义，放回上下文阅读自然。"
         }
       }
     ],
@@ -1716,9 +1788,13 @@
           "en": "Check project and team",
           "zh": "检查项目与团队"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to read the Git remote, local Vercel link, authentication, and team context. Confirm the intended project and environment.",
           "zh": "让 Agent 检查 Git 远端、本地 Vercel 关联、认证和团队信息。确认目标项目与环境。"
+        },
+        "completion": {
+          "en": "The repository, Vercel project, team, and authorization are confirmed.",
+          "zh": "仓库、Vercel 项目、团队及授权已确认。"
         }
       },
       {
@@ -1726,9 +1802,13 @@
           "en": "Choose the deployment path",
           "zh": "选择部署路径"
         },
-        "body": {
+        "description": {
           "en": "Use the method that matches the linked repository and available access. Review any proposed Git push before authorizing it.",
           "zh": "采用与仓库关联状态及可用访问权限匹配的方法。涉及 Git 推送时，先审阅具体操作再授权。"
+        },
+        "completion": {
+          "en": "The selected deployment method matches the available access and intended environment.",
+          "zh": "部署方式与现有权限及目标环境一致。"
         }
       },
       {
@@ -1736,9 +1816,13 @@
           "en": "Verify the deployment URL",
           "zh": "验证部署地址"
         },
-        "body": {
+        "description": {
           "en": "Open the returned URL and inspect representative pages. Confirm the project, version, and preview or production destination.",
           "zh": "打开返回地址并检查代表页面。核对项目、版本，以及预览或生产环境是否正确。"
+        },
+        "completion": {
+          "en": "The returned URL serves the intended revision in the correct project and environment.",
+          "zh": "返回链接展示正确项目、环境和版本的页面。"
         }
       }
     ],
@@ -1978,9 +2062,13 @@
           "en": "Confirm the credential source",
           "zh": "确认凭据来源"
         },
-        "body": {
+        "description": {
           "en": "Identify the approved environment or secret store used for authentication. Keep the token value out of prompts, copied commands, and reports.",
           "zh": "确认认证使用的已授权环境或密钥存储。不要把令牌值写入提示词、复制的命令或报告。"
+        },
+        "completion": {
+          "en": "The credential reference is available without exposing its value.",
+          "zh": "凭证引用可用，内容未出现在输出中。"
         }
       },
       {
@@ -1988,9 +2076,13 @@
           "en": "Resolve project and organization",
           "zh": "确定项目与组织"
         },
-        "body": {
+        "description": {
           "en": "Check project identifiers and team scope before any change. Compare them with the Vercel project the user intends to manage.",
           "zh": "任何变更前先核对项目标识与团队范围。将其与用户希望管理的 Vercel 项目对应。"
+        },
+        "completion": {
+          "en": "The target organization and project identifiers are verified.",
+          "zh": "目标组织与项目标识已核实。"
         }
       },
       {
@@ -1998,9 +2090,13 @@
           "en": "Run and verify the operation",
           "zh": "执行并核对操作"
         },
-        "body": {
+        "description": {
           "en": "Ask the agent to carry out the requested CLI task in the confirmed scope. Verify the result without including secrets in logs or summaries.",
           "zh": "让 Agent 在已确认范围内完成请求的 CLI 任务。核对结果，避免日志或总结包含密钥。"
+        },
+        "completion": {
+          "en": "The requested operation has a verifiable result with no token in logs.",
+          "zh": "操作结果可核对，日志未包含令牌。"
         }
       }
     ],
@@ -2240,9 +2336,13 @@
           "en": "Check scope and prerequisites",
           "zh": "核对范围与前提"
         },
-        "body": {
+        "description": {
           "en": "Confirm the linked Vercel project, account, and framework. Check the source’s CLI, Node, and observability requirements before collecting signals.",
           "zh": "确认关联的 Vercel 项目、账户和框架。采集信号前核对原始说明中的 CLI、Node 与可观测性要求。"
+        },
+        "completion": {
+          "en": "Project scope, supported framework, and required observability access are known.",
+          "zh": "项目范围、支持的框架及所需可观测性权限已确认。"
         }
       },
       {
@@ -2250,9 +2350,13 @@
           "en": "Collect and select evidence",
           "zh": "收集并筛选证据"
         },
-        "body": {
+        "description": {
           "en": "Use the bundled collection workflow to gather production signals. Let its gate identify candidates before investigating source files.",
           "zh": "使用附带流程收集生产信号。先通过筛选确定候选项，再调查源码文件。"
+        },
+        "completion": {
+          "en": "Selected signals link back to source evidence instead of guesses.",
+          "zh": "选用的信号可回溯到原始证据。"
         }
       },
       {
@@ -2260,9 +2364,13 @@
           "en": "Review ranked recommendations",
           "zh": "审阅排序后的建议"
         },
-        "body": {
+        "description": {
           "en": "Inspect only the selected routes or settings with the agent. Review evidence, framework-version fit, and a validation plan for each proposed change.",
           "zh": "与 Agent 仅检查选定路由或设置。逐项核对证据、框架版本适配和改动后的验证方式。"
+        },
+        "completion": {
+          "en": "Recommendations are ranked with evidence and a way to verify each change.",
+          "zh": "建议按优先级排列，并附证据和修改后的验证方法。"
         }
       }
     ],
@@ -2502,9 +2610,13 @@
           "en": "Add the companion Skill",
           "zh": "添加配套 Skill"
         },
-        "body": {
+        "description": {
           "en": "Use the Skills installation options above to add the instruction to your agent. Keep this separate from setting up the browser tool.",
           "zh": "使用上方安装方式为 Agent 添加指令。将这一步与浏览器工具环境的安装分开处理。"
+        },
+        "completion": {
+          "en": "The companion instructions are accessible to the intended Agent.",
+          "zh": "目标 Agent 可以读取配套指令。"
         }
       },
       {
@@ -2512,9 +2624,13 @@
           "en": "Prepare the CLI and browser",
           "zh": "准备 CLI 与浏览器"
         },
-        "body": {
+        "description": {
           "en": "Follow the upstream agent-browser setup for the CLI and its browser dependencies. Confirm the tool is available in the agent’s environment.",
           "zh": "按上游 agent-browser 说明安装 CLI 与浏览器依赖。确认 Agent 所在环境能够调用该工具。"
+        },
+        "completion": {
+          "en": "The CLI can reach the intended browser session and target page.",
+          "zh": "CLI 可连接目标浏览器会话并访问指定页面。"
         }
       },
       {
@@ -2522,9 +2638,13 @@
           "en": "Load a workflow and verify",
           "zh": "加载流程并验证"
         },
-        "body": {
+        "description": {
           "en": "Read agent-browser skills get core or the matching specialist workflow. Inspect the current target, carry out the task, and verify the resulting state.",
           "zh": "读取 agent-browser skills get core 或匹配的专项流程。检查当前目标，执行任务并核对最终状态。"
+        },
+        "completion": {
+          "en": "The requested browser outcome is visible on the target page, not just in a tool success message.",
+          "zh": "目标页面实际呈现所需结果，而非仅有工具成功提示。"
         }
       }
     ],

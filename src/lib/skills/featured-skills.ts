@@ -1,3 +1,4 @@
+import type { LocalizedHowStep } from "@/lib/marketing/how-to";
 import type { LocalizedUseCases } from "@/lib/marketing/use-cases";
 import featuredSkills from "@/data/skills/featured-skills.json";
 import vercelLabsSkills from "@/data/skills/vercel-labs-skills.json";
@@ -49,7 +50,7 @@ export type FeaturedSkill = {
   };
   useCases: LocalizedUseCases;
   example: { prompt: LocalizedText };
-  steps: Array<{ title: LocalizedText; body: LocalizedText }>;
+  steps: LocalizedHowStep[];
   faq: Array<{ question: LocalizedText; answer: LocalizedText }>;
 };
 

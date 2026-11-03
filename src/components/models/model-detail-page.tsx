@@ -1,3 +1,5 @@
+import { HowSection } from "@/components/marketing/how-section";
+import { ModelMechanismSection } from "./model-mechanism-section";
 import { UseCasesSection } from "@/components/marketing/use-cases-section";
 import { localizeUseCases } from "@/lib/marketing/use-cases";
 import { OverviewSection } from "@/components/marketing/overview-section";
@@ -175,30 +177,8 @@ export function ModelDetailPage({
         </div>
       </section>
 
-      {model.steps && (
-        <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-          <div className="mb-10 max-w-3xl">
-            <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
-              {localize(model.steps.title, locale)}
-            </h2>
-          </div>
-          <ol className="grid gap-8 md:grid-cols-3">
-            {model.steps.items.map((step, index) => (
-              <li key={step.title.en}>
-                <span className="font-serif text-5xl text-black/15">
-                  0{index + 1}
-                </span>
-                <h3 className="mt-4 text-xl font-semibold">
-                  {localize(step.title, locale)}
-                </h3>
-                <p className="mt-2 leading-7 text-[var(--ob-color-text-subtle)]">
-                  {localize(step.description, locale)}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </section>
-      )}
+      {model.mechanism && <ModelMechanismSection title={localize(model.mechanism.title, locale)} items={model.mechanism.items.map(item => ({ title: localize(item.title, locale), description: localize(item.description, locale) }))} />}
+      {model.howTo && <HowSection locale={locale} title={localize(model.howTo.title, locale)} description={localize(model.howTo.description, locale)} items={model.howTo.items.map(item => ({ title: localize(item.title, locale), description: localize(item.description, locale), completion: localize(item.completion, locale) }))} />}
 
       {model.comparison && (
         <section className="border-b border-black/[0.06] bg-white/45 py-20 sm:py-28">
