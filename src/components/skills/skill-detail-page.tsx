@@ -1,3 +1,5 @@
+import { StartInFloatboat } from "@/components/conversion/start-in-floatboat";
+import { getResourceStartTask } from "@/lib/resource-start-tasks";
 import { FaqBand } from "@/components/faq-band";
 import { RelatedPageLinks } from "@/components/related-page-links";
 import { SkillInstallPanel } from "@/components/skills/skill-install-panel";
@@ -17,6 +19,8 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
   const t = labels[locale];
   const isZh = locale === "zh";
   const overview = skill.overview[locale];
+  const resourceId = `${skill.authorHandle}/${skill.slug}`;
+  const startTask = getResourceStartTask(resourceId, locale);
 
   const canonical = `https://floatboat.ai${skillPath(locale, skill.authorHandle, skill.slug)}`;
   const publisherPath = skillPublisherPath(locale, skill.authorHandle);
@@ -48,14 +52,15 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
 
       <MarketingHero layout="centered" title={skill.hero.title[locale]} description={skill.hero.description[locale]} />
 
-      <SkillInstallPanel
-        key={`${skill.authorHandle}/${skill.slug}`}
+      <StartInFloatboat
+        key={`${locale}/${resourceId}`}
+        variant="resource"
         locale={locale}
-        name={skill.name}
-        upstreamInstall={skill.upstreamInstall}
-        installation={skill.installation}
-        sourceUrl={skill.sourceUrl}
-        examplePrompt={skill.example.prompt[locale]}
+        pageId={resourceId}
+        copy={startTask}
+        initialTask={skill.example.prompt[locale]}
+        resource={{ name: skill.name, url: skill.sourceUrl }}
+        alternatives={<SkillInstallPanel locale={locale} upstreamInstall={skill.upstreamInstall} installation={skill.installation} />}
       />
 
       <OverviewSection variant="profile"

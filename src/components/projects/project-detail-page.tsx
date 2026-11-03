@@ -1,3 +1,5 @@
+import { StartInFloatboat } from "@/components/conversion/start-in-floatboat";
+import { getResourceStartTask } from "@/lib/resource-start-tasks";
 import { Breadcrumb } from "@/components/marketing/breadcrumb";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { OverviewSection } from "@/components/marketing/overview-section";
@@ -13,6 +15,8 @@ import { projectPath, type ProjectPage } from "@/lib/projects/project-pages";
 export function ProjectDetailPage({ project, locale }: { project: ProjectPage; locale: SkillLocale }) {
   const zh = locale === "zh";
   const t = project[locale];
+  const resourceId = `${project.author}/${project.slug}`;
+  const startTask = getResourceStartTask(resourceId, locale);
   const publisher = getPublisherProfile(project.author)!;
   const publisherHref = publisherProfilePath(locale, project.author);
   const canonical = `https://floatboat.ai${projectPath(locale, project.author, project.slug)}`;
@@ -36,6 +40,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
   return <div className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
     <Breadcrumb label={zh ? "面包屑导航" : "Breadcrumb"} items={breadcrumbs} />
     <MarketingHero layout="centered" title={project.name} description={t.description} />
+    <StartInFloatboat key={`${locale}/${resourceId}`} variant="resource" locale={locale} pageId={resourceId} copy={startTask} initialTask={startTask.example ?? ""} resource={{ name: project.name, url: project.repository }} />
     <OverviewSection variant="profile" title={t.overviewTitle} paragraphs={t.overview} identity={{ name: project.name, typeLabel: t.kind, logo: project.logo, tags: [...t.tags, project.license] }} linksTitle={zh ? "项目与来源" : "Project and sources"} links={links} />
     <section aria-labelledby="project-capabilities-title" className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16">
       <h2 id="project-capabilities-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{t.capabilitiesTitle}</h2>
