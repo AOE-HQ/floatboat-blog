@@ -331,12 +331,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Compare routes for long-text work",
-      "zh": "比较长文本任务的模型入口"
+      "en": "Set citation and terminology checks for Chinese synthesis",
+      "zh": "为中文长文综合设定引用与术语检查"
     },
     "description": {
-      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
-      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
+      "en": "Prepare Chinese source material and the terms or qualifications that must remain intact. Verify an available Qwen route before comparing whole-source coverage and attribution.",
+      "zh": "准备中文原始资料，标明必须保留的术语与条件；确认可用的 Qwen 入口后，再比较全文覆盖和来源归属。"
     }
   }
 }

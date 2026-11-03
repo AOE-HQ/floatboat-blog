@@ -313,12 +313,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Compare models for reasoning work",
-      "zh": "比较推理任务的模型入口"
+      "en": "Define the reasoning fields your workflow must preserve",
+      "zh": "明确工作流需要保留的推理字段"
     },
     "description": {
-      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
-      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
+      "en": "Use a compatible response sample to specify which reasoning fields must survive mapping and replay. Check the current model route before testing for missing or duplicated content.",
+      "zh": "用兼容响应样例明确映射与回放时需要保留的推理字段；先核对当前模型入口，再检查内容是否缺失或重复。"
     }
   }
 }

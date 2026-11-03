@@ -303,12 +303,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Compare long-document workflows",
-      "zh": "比较长文档任务的模型入口"
+      "en": "Prepare a long-source comparison before choosing a route",
+      "zh": "选择模型入口前先准备长资料对照任务"
     },
     "description": {
-      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
-      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
+      "en": "Choose a source set, a research question, and citation rules. Confirm Kimi access in the current menu before comparing how candidate models retain disagreements and evidence gaps.",
+      "zh": "先选定资料集、研究问题和引用规则；确认当前菜单中的 Kimi 访问资格后，再比较候选模型是否保留来源分歧与证据缺口。"
     }
   }
 }

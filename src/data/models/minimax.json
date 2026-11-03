@@ -294,12 +294,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Compare models for high-volume text work",
-      "zh": "比较高用量文本任务的模型入口"
+      "en": "Plan a text queue with batching and sample checks",
+      "zh": "为文本队列安排分批与抽样核对"
     },
     "description": {
-      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
-      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
+      "en": "Estimate input volume, output requirements, and review samples. Check the available MiniMax route and recorded budget before deciding how to batch the queue.",
+      "zh": "先估算输入量、输出要求和复核样本；核对可用的 MiniMax 入口及已记录预算，再决定队列如何分批处理。"
     }
   }
 }
