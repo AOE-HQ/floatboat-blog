@@ -1,3 +1,4 @@
+import { Breadcrumb } from "@/components/marketing/breadcrumb";
 import { FaqBand } from "@/components/faq-band";
 import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
@@ -32,21 +33,10 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       url: `${SITE_ORIGIN}${currentPath}`,
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: isZh ? "首页" : "Home", item: `${SITE_ORIGIN}${isZh ? "/zh" : ""}` },
-        { "@type": "ListItem", position: 2, name: page.breadcrumb, item: `${SITE_ORIGIN}${currentPath}` },
-      ],
-    },
   ];
 
   return <div className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
-    <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
-      <Link href={isZh ? "/zh" : "/"} className="hover:text-[var(--ob-color-text)]">{isZh ? "首页" : "Home"}</Link>
-      <span className="mx-2">/</span><span>{page.breadcrumb}</span>
-    </nav>
+    <Breadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={[{ label: isZh ? "首页" : "Home", href: isZh ? "/zh" : "/" }, { label: page.breadcrumb, href: currentPath }]} />
 
     <MarketingHero layout="centered" title={page.hero.title} description={page.hero.description}
       action={page.hero.primaryCta}

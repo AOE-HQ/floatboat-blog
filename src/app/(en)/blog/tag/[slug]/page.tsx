@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { JsonLd, TagArchive } from "@openblog/components";
+import { TagArchive } from "@openblog/components";
 import { resolveFeatures, tagToSlug } from "@openblog/core";
 
 import { absoluteUrl, tagPath } from "@/config/site";
-import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { getAllPosts, getPostsByTag } from "@/lib/posts";
-import { config, siteHelpers } from "@/lib/openblog-config";
+import { config } from "@/lib/openblog-config";
 
 const features = resolveFeatures(config);
 
@@ -83,14 +82,9 @@ export default async function TagPage({ params }: PageProps) {
   }
 
   const tagName = resolveTagName(posts, slug);
-  const breadcrumbs = [
-    { name: "Blog", path: siteHelpers.blogPath() },
-    { name: tagName, path: siteHelpers.tagPath(slug) },
-  ];
 
   return (
     <>
-      <JsonLd data={buildBreadcrumbJsonLd(breadcrumbs)} />
       <TagArchive
         tagName={tagName}
         tagSlug={slug}

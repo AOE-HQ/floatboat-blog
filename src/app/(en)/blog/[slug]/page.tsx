@@ -18,11 +18,7 @@ import {
   buildPostTwitterMetadata,
   postOgSiteName,
 } from "@/lib/post-og";
-import {
-  buildBlogPostingJsonLd,
-  buildBreadcrumbJsonLd,
-  getArticleBreadcrumbItems,
-} from "@/lib/schema";
+import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { getAdjacentPosts, getPostBySlug, getRelatedPostMeta } from "@/lib/posts";
 
 const features = resolveFeatures(config);
@@ -82,7 +78,6 @@ export default async function BlogPostPage({ params }: PageProps) {
   const pageUrl = absoluteUrl(postPath(post.slug));
   const optional = resolveOptionalComponents(config);
   const adjacentPosts = optional.prevNext ? getAdjacentPosts(slug) : { prev: null, next: null };
-  const breadcrumbs = getArticleBreadcrumbItems(post.title, post.slug);
   const popup = resolvePopupForPost(post.slug, "en");
 
   return (
@@ -90,7 +85,6 @@ export default async function BlogPostPage({ params }: PageProps) {
       <JsonLd
         data={[
           buildBlogPostingJsonLd(post),
-          buildBreadcrumbJsonLd(breadcrumbs),
         ]}
       />
       <ArticleLayout

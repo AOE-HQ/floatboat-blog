@@ -39,15 +39,6 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       url: skill.sourceUrl,
       creator: { "@type": skill.publisherType, name: skill.publisher },
     },
-    breadcrumb: {
-      "@type": "BreadcrumbList",
-      itemListElement: breadcrumbs.map((item, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: item.name,
-        item: item.url,
-      })),
-    },
   };
 
   return (

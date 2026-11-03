@@ -32,7 +32,6 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
   const jsonLd = {
     "@context": "https://schema.org", "@type": "WebPage", name: t.seoTitle, description: t.description, url: canonical, inLanguage: zh ? "zh-CN" : "en-US",
     about: { "@type": "SoftwareSourceCode", name: project.name, description: t.description, codeRepository: project.repository, url: project.website, license: project.licenseUrl, author: { "@type": publisher.type, name: publisher.name, url: `https://floatboat.ai${publisherHref}` } },
-    breadcrumb: { "@type": "BreadcrumbList", itemListElement: breadcrumbs.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.label, item: item.href.startsWith("/") ? `https://floatboat.ai${item.href}` : item.href })) },
   };
   return <div className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
     <Breadcrumb label={zh ? "面包屑导航" : "Breadcrumb"} items={breadcrumbs} />

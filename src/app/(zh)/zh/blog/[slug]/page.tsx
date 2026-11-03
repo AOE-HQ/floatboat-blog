@@ -21,11 +21,7 @@ import {
   buildPostTwitterMetadata,
   postOgSiteName,
 } from "@/lib/post-og";
-import {
-  buildBlogPostingJsonLd,
-  buildBreadcrumbJsonLd,
-  getArticleBreadcrumbItems,
-} from "@/lib/schema";
+import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { getAdjacentPosts, getPostBySlug, getRelatedPostMeta } from "@/lib/posts";
 
 const features = resolveFeatures(config);
@@ -89,10 +85,6 @@ export default async function ZhBlogPostPage({ params }: PageProps) {
   const adjacentPosts = optional.prevNext
     ? getAdjacentPosts(slug, locale)
     : { prev: null, next: null };
-  const breadcrumbs = getArticleBreadcrumbItems(post.title, post.slug, helpers, {
-    home: "首页",
-    blog: "博客",
-  });
   const popup = resolvePopupForPost(post.slug, "zh");
 
   return (
@@ -100,7 +92,6 @@ export default async function ZhBlogPostPage({ params }: PageProps) {
       <JsonLd
         data={[
           buildBlogPostingJsonLd(post, helpers),
-          buildBreadcrumbJsonLd(breadcrumbs, helpers),
         ]}
       />
       <ArticleLayout

@@ -1,6 +1,6 @@
+import { Breadcrumb } from "@/components/marketing/breadcrumb";
 import { FaqBand } from "@/components/faq-band";
 import hubFaqs from "@/data/landing-hub-faqs.json";
-import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 
@@ -93,9 +93,7 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
   };
 
   return <div className="use-cases-theme overflow-hidden bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
-    <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
-      <Link href={isZh ? "/zh" : "/"} className="hover:text-[var(--ob-color-text)]">{isZh ? "首页" : "Home"}</Link><span className="mx-2">/</span><span>{isZh ? "使用场景" : "Use Cases"}</span>
-    </nav>
+    <Breadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={[{ label: isZh ? "首页" : "Home", href: isZh ? "/zh" : "/" }, { label: isZh ? "使用场景" : "Use Cases", href: path }]} />
 
     <MarketingHero layout="centered" title={titleCase(copy.title)} description={copy.description} />
 

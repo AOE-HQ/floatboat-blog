@@ -80,3 +80,10 @@ Use the shared `Hero` from `@openblog/components`; marketing/blog components are
 ## Marketplace name intake
 
 For requested project or Skill additions, including name-only requests, first read the "名称输入到分类与建页" workflow in the Floatboat context `product/floatboat-skills-ecosystem.md` (Mac: `~/Documents/Codex/clients/floatboat/`; Windows: `E:\clients\floatboat\`). Verify the canonical upstream and license, distinguish software from task instructions, and check existing project/Skill routes before creating a page. Reuse an existing canonical page for the same work; complementary tools do not become duplicates merely because they cooperate. Complete both locales, reviewed publisher data, aggregate links, related links, share assets, and sitemap coverage. Commit locally after validation; pushing and PR creation still require the owner's explicit request.
+
+
+## Breadcrumb contract
+
+Use `Breadcrumbs` from `@openblog/components` for every visible trail. The marketing `Breadcrumb` is only a label/data adapter; do not add local navigation markup or styling. Pass the complete hierarchy, including the locale's home, with an absolute or root-relative URL for every item, including the current page. The shared component owns the sole matching `BreadcrumbList`; do not repeat it in page schemas. Current items are text with `aria-current="page"`; ancestor navigation stays in the same tab. Blog author archives must resolve their author path, not a category path.
+
+After changes, build and run `python3 scripts/check_breadcrumbs.py` to verify generated content pages have one visible trail, one matching schema and the correct canonical/current URL.

@@ -3,11 +3,10 @@ import { getCategoryFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { CategoryArchive, JsonLd } from "@openblog/components";
+import { CategoryArchive } from "@openblog/components";
 import { resolveFeatures } from "@openblog/core";
 
 import { absoluteUrl, categoryPath } from "@/config/site";
-import { buildBreadcrumbJsonLd, getCategoryBreadcrumbItems } from "@/lib/schema";
 import { getBlogIndexData, getPostsByCategory } from "@/lib/posts";
 import { config } from "@/lib/openblog-config";
 
@@ -68,11 +67,9 @@ export default async function CategoryPage({ params }: PageProps) {
   }
 
   const categoryName = posts[0]?.category ?? slug;
-  const breadcrumbs = getCategoryBreadcrumbItems(categoryName, slug);
 
   return (
     <>
-      <JsonLd data={buildBreadcrumbJsonLd(breadcrumbs)} />
       <CategoryArchive
         categoryName={categoryName}
         categorySlug={slug}

@@ -1,5 +1,5 @@
+import { Breadcrumb } from "@/components/marketing/breadcrumb";
 import { FaqBand } from "@/components/faq-band";
-import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
 import { RelatedPageLinks } from "@/components/related-page-links";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
@@ -36,16 +36,7 @@ export function ModelDetailPage({
 
   return (
     <main className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
-      <nav
-        aria-label="Breadcrumb"
-        className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8"
-      >
-        <Link href={isZh ? "/zh" : "/"}>{isZh ? "首页" : "Home"}</Link>
-        <span className="mx-2">/</span>
-        <Link href={modelPath(locale)}>{isZh ? "模型" : "Models"}</Link>
-        <span className="mx-2">/</span>
-        <span>{model.name}</span>
-      </nav>
+      <Breadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={[{ label: isZh ? "首页" : "Home", href: isZh ? "/zh" : "/" }, { label: isZh ? "模型" : "Models", href: modelPath(locale) }, { label: model.name, href: modelPath(locale, model.slug) }]} />
       <MarketingHero layout="centered" title={localize(model.hero.title, locale)} description={localize(model.hero.description, locale)}
         action={model.access === "capacity" ? undefined : { label: isZh ? "下载 Floatboat" : "Download Floatboat", href: download }}
         media={{ kind: "demo", label: isZh ? `${model.name} 模型预览` : `${model.name} model preview`, content: <ModelPickerDemo model={model} locale={locale} /> }}

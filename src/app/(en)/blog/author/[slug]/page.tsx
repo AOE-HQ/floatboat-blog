@@ -3,13 +3,12 @@ import { getAuthorFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { CategoryArchive, JsonLd } from "@openblog/components";
+import { CategoryArchive } from "@openblog/components";
 import { resolveFeatures, tagToSlug } from "@openblog/core";
 
 import { absoluteUrl, authorPath } from "@/config/site";
-import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { getAllPosts, getPostsByAuthor } from "@/lib/posts";
-import { config, siteHelpers } from "@/lib/openblog-config";
+import { config } from "@/lib/openblog-config";
 
 const features = resolveFeatures(config);
 
@@ -79,15 +78,11 @@ export default async function AuthorPage({ params }: PageProps) {
   }
 
   const authorName = resolveAuthorName(posts, slug);
-  const breadcrumbs = [
-    { name: "Blog", path: siteHelpers.blogPath() },
-    { name: authorName, path: siteHelpers.authorPath(slug) },
-  ];
 
   return (
     <>
-      <JsonLd data={buildBreadcrumbJsonLd(breadcrumbs)} />
       <CategoryArchive
+        archiveType="author"
         categoryName={authorName}
         categorySlug={slug}
         posts={posts}

@@ -3,12 +3,11 @@ import { getCategoryFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { CATEGORY_LABELS_ZH, CategoryArchive, JsonLd } from "@openblog/components";
+import { CATEGORY_LABELS_ZH, CategoryArchive } from "@openblog/components";
 import { resolveFeatures } from "@openblog/core";
 
 import { config } from "@/lib/openblog-config";
 import { createLocaleSiteHelpers } from "@/lib/locale-site";
-import { buildBreadcrumbJsonLd, getCategoryBreadcrumbItems } from "@/lib/schema";
 import { getBlogIndexData, getPostsByCategory } from "@/lib/posts";
 
 const features = resolveFeatures(config);
@@ -71,14 +70,9 @@ export default async function ZhCategoryPage({ params }: PageProps) {
   }
 
   const categoryName = CATEGORY_LABELS_ZH[slug] ?? posts[0]?.category ?? slug;
-  const breadcrumbs = getCategoryBreadcrumbItems(categoryName, slug, helpers, {
-    home: "首页",
-    blog: "博客",
-  });
 
   return (
     <>
-      <JsonLd data={buildBreadcrumbJsonLd(breadcrumbs, helpers)} />
       <CategoryArchive
         categoryName={categoryName}
         categorySlug={slug}

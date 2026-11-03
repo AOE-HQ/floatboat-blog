@@ -1,5 +1,5 @@
+import { Breadcrumb } from "@/components/marketing/breadcrumb";
 import { FaqBand } from "@/components/faq-band";
-import Link from "next/link";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 
@@ -29,22 +29,10 @@ export function PersonaUseCasePage({ page }: { page: PersonaPageData }) {
       inLanguage: isZh ? "zh-CN" : "en-US",
       about: { "@type": "Thing", name: pageHeading },
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: isZh ? "首页" : "Home", item: `${SITE_ORIGIN}${isZh ? "/zh" : ""}` },
-        { "@type": "ListItem", position: 2, name: page.breadcrumb, item: `${SITE_ORIGIN}${path}` },
-      ],
-    },
   ];
 
   return <div className="use-cases-theme overflow-hidden bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
-    <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
-      <Link href={isZh ? "/zh" : "/"} className="hover:text-[var(--ob-color-text)]">{isZh ? "首页" : "Home"}</Link>
-      <span className="mx-2">/</span><Link href={isZh ? "/zh/use-cases" : "/use-cases"} className="hover:text-[var(--ob-color-text)]">{isZh ? "使用场景" : "Use Cases"}</Link>
-      <span className="mx-2">/</span><span>{page.breadcrumb}</span>
-    </nav>
+    <Breadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={[{ label: isZh ? "首页" : "Home", href: isZh ? "/zh" : "/" }, { label: isZh ? "使用场景" : "Use Cases", href: isZh ? "/zh/use-cases" : "/use-cases" }, { label: page.breadcrumb, href: path }]} />
 
     <MarketingHero layout="centered" title={titleCase(pageHeading)} description={page.hero.description} action={page.hero.primaryCta} />
 
