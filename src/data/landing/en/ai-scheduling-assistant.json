@@ -79,11 +79,11 @@
     ]
   },
   "comparison": {
-    "title": "Booking time and running work are different jobs.",
-    "description": "Traditional calendar tools optimize availability; an agentic scheduler connects time to context and execution.",
+    "title": "Compare event scheduling with event-linked execution",
+    "description": "The calendar-only approach below covers booking and reminders. Extensions and external automation can add execution capabilities to individual calendar products.",
     "columns": [
       "Floatboat",
-      "Traditional scheduler"
+      "Calendar booking and reminders"
     ],
     "rows": [
       {
@@ -104,7 +104,7 @@
         "label": "Runs scheduled tasks",
         "values": [
           "Yes",
-          "No"
+          "Requires an execution integration"
         ]
       },
       {

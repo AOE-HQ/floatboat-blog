@@ -79,11 +79,11 @@
     ]
   },
   "comparison": {
-    "title": "An Agent Workspace changes what happens after the answer.",
-    "description": "The difference is not a larger chat window. It is a persistent environment for doing, reviewing, and continuing real work.",
+    "title": "Compare project execution with question-and-answer chat",
+    "description": "This compares a persistent project workflow with a chat used mainly for questions and answers. Other products may add tools, files, or automation of their own.",
     "columns": [
       "Floatboat Agent Workspace",
-      "General AI chat"
+      "Question-and-answer chat"
     ],
     "rows": [
       {

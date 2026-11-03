@@ -79,11 +79,11 @@
     ]
   },
   "comparison": {
-    "title": "Agent-native collaboration is different from adding a bot to chat.",
-    "description": "The difference is whether agents are peripheral responders or first-class participants in the work.",
+    "title": "Compare shared Agent work with message-led coordination",
+    "description": "The comparison distinguishes a shared people-and-Agent workspace from coordination through messages, links, and separate integrations. It is not a feature inventory of every team chat product.",
     "columns": [
       "FloatIM",
-      "Conventional team chat"
+      "Message-led coordination"
     ],
     "rows": [
       {

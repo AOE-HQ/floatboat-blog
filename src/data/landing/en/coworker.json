@@ -79,11 +79,11 @@
     ]
   },
   "comparison": {
-    "title": "A Work Agent is accountable for an assignment, not a conversation.",
-    "description": "Coworker is designed around delegated outcomes and concrete handoffs rather than an endless sequence of prompts.",
+    "title": "Compare task delegation with conversational assistance",
+    "description": "The comparison focuses on the unit of work and its handoff: a bounded assignment or assistance through successive conversation turns.",
     "columns": [
       "Floatboat Coworker",
-      "General AI chat"
+      "Conversational assistance"
     ],
     "rows": [
       {

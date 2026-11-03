@@ -1,3 +1,4 @@
+import { comparisonSchema } from "@/lib/marketing/comparison-table";
 import { howToSchema } from "@/lib/marketing/how-to";
 import { useCasesSchema } from "@/lib/marketing/use-cases";
 import { z } from "zod";
@@ -46,12 +47,7 @@ export const coreFeaturePageSchema = z.object({
   }),
   useCases: useCasesSchema,
   howTo: howToSchema,
-  comparison: z.object({
-    title: z.string().min(1),
-    description: z.string().min(1),
-    columns: z.tuple([z.string(), z.string()]),
-    rows: z.array(z.object({ label: z.string(), values: z.tuple([z.string(), z.string()]) })).min(3),
-  }),
+  comparison: comparisonSchema,
   faq: z.object({
     title: z.string().min(1),
     items: z.array(z.object({ question: z.string(), answer: z.string() })).min(6),

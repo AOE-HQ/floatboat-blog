@@ -79,18 +79,18 @@
     ]
   },
   "comparison": {
-    "title": "Rules sort filenames. An agent can organize the work behind them.",
-    "description": "Meaning-aware organization is useful when extensions and naming patterns are not enough.",
+    "title": "Compare context-guided organization with fixed rules",
+    "description": "The rule-only approach matches predefined conditions. Actual tools differ in preview, exception handling, and local execution; check those features separately.",
     "columns": [
       "Floatboat",
-      "Rule-based organizer"
+      "Fixed-rule matching"
     ],
     "rows": [
       {
         "label": "Uses file context",
         "values": [
           "Yes",
-          "Usually no"
+          "Matches configured conditions"
         ]
       },
       {
@@ -104,7 +104,7 @@
         "label": "Handles ambiguity",
         "values": [
           "Flags for review",
-          "Applies the rule"
+          "Depends on exception rules"
         ]
       },
       {

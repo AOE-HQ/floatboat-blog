@@ -86,14 +86,6 @@ export type ModelFamily = {
   };
   mechanism?: { title: Localized; items: ContentItem[] };
   howTo?: { title: Localized; description: Localized; items: LocalizedHowStep[] };
-  comparison?: {
-    title: Localized;
-    description: Localized;
-    rows: Array<{
-      label: Localized;
-      values: [Localized, Localized, Localized];
-    }>;
-  };
   faq: Array<{ question: Localized; answer: Localized }>;
   finalCta: { title: Localized; description: Localized };
 };

@@ -79,11 +79,11 @@
     ]
   },
   "comparison": {
-    "title": "Work Agent 对一项委派负责，而不是对一段对话负责。",
-    "description": "Coworker 围绕被委派的结果和具体交接设计，而不是无限延续的 Prompt 序列。",
+    "title": "比较任务委派与对话式辅助",
+    "description": "从工作单元和交接方式比较两种用法：委派一项边界明确的任务，或通过连续对话获得辅助。",
     "columns": [
       "Floatboat Coworker",
-      "通用 AI 聊天"
+      "对话式辅助"
     ],
     "rows": [
       {

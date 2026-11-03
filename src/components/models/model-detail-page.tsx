@@ -180,49 +180,6 @@ export function ModelDetailPage({
       {model.mechanism && <ModelMechanismSection title={localize(model.mechanism.title, locale)} items={model.mechanism.items.map(item => ({ title: localize(item.title, locale), description: localize(item.description, locale) }))} />}
       {model.howTo && <HowSection locale={locale} title={localize(model.howTo.title, locale)} description={localize(model.howTo.description, locale)} items={model.howTo.items.map(item => ({ title: localize(item.title, locale), description: localize(item.description, locale), completion: localize(item.completion, locale) }))} />}
 
-      {model.comparison && (
-        <section className="border-b border-black/[0.06] bg-white/45 py-20 sm:py-28">
-          <div className="mx-auto max-w-5xl px-5 sm:px-8">
-            <div className="mx-auto mb-10 max-w-3xl text-center">
-              <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">
-                {localize(model.comparison.title, locale)}
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-[var(--ob-color-text-subtle)]">
-                {localize(model.comparison.description, locale)}
-              </p>
-            </div>
-            <div className="overflow-x-auto rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)]">
-              <div className="min-w-[680px]">
-                <div className="grid grid-cols-[1.2fr_1fr_1fr_1fr] bg-[#24221f] px-5 py-4 text-sm font-semibold text-white">
-                  <span>{isZh ? "能力" : "Capability"}</span>
-                  <span>Floatboat</span>
-                  <span>{isZh ? "网页聊天" : "Web chat"}</span>
-                  <span>DIY API</span>
-                </div>
-                {model.comparison.rows.map((row) => (
-                  <div
-                    key={row.label.en}
-                    className="grid grid-cols-[1.2fr_1fr_1fr_1fr] gap-3 border-t border-black/[0.07] px-5 py-4 text-sm"
-                  >
-                    <strong>{localize(row.label, locale)}</strong>
-                    {row.values.map((value, index) => (
-                      <span
-                        key={value.en}
-                        className={
-                          index === 0 ? "" : "text-[var(--ob-color-muted)]"
-                        }
-                      >
-                        {localize(value, locale)}
-                      </span>
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
       <RelatedPageLinks family="models" currentId={model.slug} locale={locale} />
 
       <FaqBand locale={locale} title={isZh ? `${model.name} 常见问题` : `${model.name} FAQ`} items={model.faq.map((item) => ({ question: localize(item.question, locale), answer: localize(item.answer, locale) }))} />
