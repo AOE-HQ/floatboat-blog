@@ -115,59 +115,68 @@
       }
     ]
   },
-  "workflows": {
+  "useCases": {
     "title": {
-      "en": "Prepared for documents that should not be reduced to isolated excerpts.",
-      "zh": "面向不应被拆成孤立片段的长文档。"
+      "zh": "以完整资料组织中文长文工作",
+      "en": "Organize Chinese long-text work around complete sources"
     },
     "description": {
-      "en": "These tasks match the model’s configured long-text role. A supported access path is required before they can run.",
-      "zh": "以下任务对应已配置的长文本用途，实际执行前需要确认受支持的访问方式。"
+      "zh": "先核对受支持的访问方式，再决定怎样保留全文关系；接入规划与实际内容处理分别验收。",
+      "en": "Confirm supported access before deciding how to retain whole-source relationships; verify access planning and content work separately."
     },
     "items": [
       {
-        "title": { "en": "Chinese document synthesis", "zh": "中文长文综合" },
+        "title": {
+          "en": "Chinese document synthesis",
+          "zh": "中文长文综合"
+        },
         "brief": {
-          "en": "Connect arguments across a long Chinese source.",
-          "zh": "连接长篇中文材料中的论点。"
+          "zh": "长篇中文材料、需要综合的主题与引用规则。",
+          "en": "Long Chinese sources, synthesis topics, and citation rules."
         },
         "process": {
-          "en": "The configured long-text channel is intended to keep distant sections in view.",
-          "zh": "已配置的长文本通道旨在同时保留相距较远的章节。"
+          "zh": "在可用通道上连接论点及其条件，保留术语和来源差异。",
+          "en": "Through an available route, connect claims/conditions while retaining terminology and source differences."
         },
         "outcome": {
-          "en": "A document-wide synthesis rather than excerpt summaries.",
-          "zh": "形成全篇综合，而不是片段摘要。"
+          "zh": "覆盖完整材料的中文综合，附来源与分歧。",
+          "en": "A whole-source Chinese synthesis with attribution and disagreements."
         }
       },
       {
-        "title": { "en": "Large source review", "zh": "大型资料审阅" },
+        "title": {
+          "en": "Large source review",
+          "zh": "大型资料审阅"
+        },
         "brief": {
-          "en": "Review a large textual collection under one set of criteria.",
-          "zh": "依据统一标准审阅大型文本资料集。"
+          "zh": "大型文本资料集、统一审阅标准与已知反例。",
+          "en": "A large text corpus, review criteria, and known counterexamples."
         },
         "process": {
-          "en": "The 1M profile supplies the registered capacity for the source set.",
-          "zh": "1M 画像为资料集提供已登记容量。"
+          "zh": "按统一规则核对来源之间的关系，记录不满足标准的具体位置。",
+          "en": "Check relationships against common criteria and locate exceptions in the sources."
         },
         "outcome": {
-          "en": "Findings that preserve relationships across sources.",
-          "zh": "保留来源关系的审阅结论。"
+          "zh": "带来源定位的审阅结论与待处理问题。",
+          "en": "Source-located review conclusions and issues to resolve."
         }
       },
       {
-        "title": { "en": "Workflow access planning", "zh": "工作流访问规划" },
+        "title": {
+          "en": "Workflow access planning",
+          "zh": "工作流访问规划"
+        },
         "brief": {
-          "en": "Plan a future Qwen route using confirmed runtime facts.",
-          "zh": "基于已确认运行时事实规划未来 Qwen 路径。"
+          "zh": "任务输入规模、运行时事实与当前可用入口。",
+          "en": "Task input scale, runtime facts, and currently available entry points."
         },
         "process": {
-          "en": "Use the exact ID, budget, adapter, and current access boundary.",
-          "zh": "使用准确 ID、预算、通道与当前入口边界。"
+          "zh": "分别核对准确 ID、预算、通道和访问条件。",
+          "en": "Verify the exact ID, budget, route, and access conditions separately."
         },
         "outcome": {
-          "en": "A workflow plan with an explicit model-access requirement.",
-          "zh": "明确模型访问前提的工作流计划。"
+          "zh": "接入前提与任务要求相匹配的工作流计划。",
+          "en": "A workflow plan matching access prerequisites to task requirements."
         }
       }
     ]
@@ -322,12 +331,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Compare routes for long-text work",
-      "zh": "比较长文本任务的模型入口"
+      "en": "Set citation and terminology checks for Chinese synthesis",
+      "zh": "为中文长文综合设定引用与术语检查"
     },
     "description": {
-      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
-      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
+      "en": "Prepare Chinese source material and the terms or qualifications that must remain intact. Verify an available Qwen route before comparing whole-source coverage and attribution.",
+      "zh": "准备中文原始资料，标明必须保留的术语与条件；确认可用的 Qwen 入口后，再比较全文覆盖和来源归属。"
     }
   }
 }

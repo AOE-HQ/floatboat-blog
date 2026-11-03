@@ -1,3 +1,4 @@
+import { Breadcrumb } from "@/components/marketing/breadcrumb";
 import { FaqBand } from "@/components/faq-band";
 import hubFaqs from "@/data/landing-hub-faqs.json";
 import Link from "next/link";
@@ -24,9 +25,7 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
 
   return (
     <main className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
-      <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 pt-6 text-sm text-[var(--ob-color-muted)] sm:px-8">
-        <Link href={isZh ? "/zh" : "/"}>{isZh ? "首页" : "Home"}</Link><span className="mx-2">/</span><span>{isZh ? "模型" : "Models"}</span>
-      </nav>
+      <Breadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={[{ label: isZh ? "首页" : "Home", href: isZh ? "/zh" : "/" }, { label: isZh ? "模型" : "Models", href: modelPath(locale) }]} />
       <MarketingHero layout="centered" title={isZh ? "模型可以变化，工作空间不必重来。" : "Change the model without rebuilding the workspace."}
         description={isZh ? "开箱即用，无需自备 API Key。在同一个桌面工作空间中使用 Auto / Lite 自动路由，或从订阅配置开放的模型中直接选择。" : "Ready out of the box with no API key required. Use the Auto / Lite routing option or directly select models enabled by your subscription configuration."}
       />

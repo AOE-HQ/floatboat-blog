@@ -84,22 +84,19 @@ export function ArticleLayout({
   const breadcrumbItems = [
     {
       name: isZh ? "首页" : "Home",
-      href: homeUrl,
-      external: true,
+      href: isZh ? new URL("/zh", homeUrl).href : homeUrl,
     },
     {
       name: isZh ? "博客" : "Blog",
       href: site.blogPath(),
     },
-    { name: post.title },
+    { name: post.title, href: pageUrl },
   ];
 
   return (
     <>
     <article>
-      <BlogShell className="pt-6 sm:pt-8">
-        {required.breadcrumbs ? <Breadcrumbs items={breadcrumbItems} /> : null}
-      </BlogShell>
+      {required.breadcrumbs ? <Breadcrumbs items={breadcrumbItems} siteUrl={site.runtime.siteUrl} label={isZh ? "面包屑导航" : "Breadcrumb"} /> : null}
       <Hero
         {...(showCover ? { layout: "split" as const, media: { kind: "image" as const, src: post.coverImage!, alt: post.title } } : { layout: "centered" as const })}
         title={post.title}

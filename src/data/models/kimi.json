@@ -117,59 +117,68 @@
       }
     ]
   },
-  "workflows": {
+  "useCases": {
     "title": {
-      "en": "The configured role centers on keeping long material together.",
-      "zh": "已配置角色重点在于保持长材料的整体性。"
+      "zh": "为长材料研究与审阅准备任务",
+      "en": "Prepare tasks for long-source research and review"
     },
     "description": {
-      "en": "The following tasks match its intended long-text role. They require a supported access path; the October 9, 2026 record did not show Kimi K3 in the main picker; check the current entry.",
-      "zh": "以下任务对应其长文本定位；实际执行需要受支持的入口，2026 年 10 月 9 日记录未显示 Kimi K3 的默认选择器入口，当前入口需重新核对。"
+      "zh": "这些任务对应长文本定位；执行前须核对当前入口，历史容量配置本身不证明账号已经可以使用。",
+      "en": "These tasks reflect a long-text role; verify current access before execution, since historical capacity configuration does not establish account availability."
     },
     "items": [
       {
-        "title": { "en": "Long research synthesis", "zh": "长篇研究综合" },
+        "title": {
+          "en": "Long research synthesis",
+          "zh": "长篇研究综合"
+        },
         "brief": {
-          "en": "Work across a large collection of source material.",
-          "zh": "处理大型来源资料集。"
+          "zh": "长篇来源集、研究问题与需要保留的证据关系。",
+          "en": "Long sources, a research question, and evidence relationships to retain."
         },
         "process": {
-          "en": "The configured channel is designed to retain long-text context while reasoning.",
-          "zh": "已配置通道面向在推理时保留长文本上下文。"
+          "zh": "在可用入口确认后比较跨来源论点，保留矛盾与出处。",
+          "en": "After access is confirmed, compare cross-source claims while preserving disagreement and attribution."
         },
         "outcome": {
-          "en": "A consolidated view of the source set.",
-          "zh": "对资料集形成统一认识。"
+          "zh": "有来源关系、不同意见和证据缺口的研究综合。",
+          "en": "A synthesis retaining source relationships, differing views, and evidence gaps."
         }
       },
       {
-        "title": { "en": "Extended document review", "zh": "长文档审阅" },
+        "title": {
+          "en": "Extended document review",
+          "zh": "长文档审阅"
+        },
         "brief": {
-          "en": "Trace claims and dependencies across a long document.",
-          "zh": "跨长文档追踪论点与依赖。"
+          "zh": "完整文档、审阅标准和跨章节依赖。",
+          "en": "A full document, review criteria, and cross-section dependencies."
         },
         "process": {
-          "en": "The 1M profile provides the registered capacity for this workload.",
-          "zh": "1M 画像为此类工作负载提供已登记容量。"
+          "zh": "连接远距离章节中的主张与条件，核对一致性而非只做分段摘要。",
+          "en": "Connect claims/conditions across distant sections and test consistency beyond isolated summaries."
         },
         "outcome": {
-          "en": "Findings that preserve document-wide context.",
-          "zh": "保留全文上下文的审阅结论。"
+          "zh": "按章节定位的问题和全文一致性结论。",
+          "en": "Section-located findings and whole-document consistency conclusions."
         }
       },
       {
-        "title": { "en": "Status-aware planning", "zh": "基于状态的规划" },
+        "title": {
+          "en": "Status-aware planning",
+          "zh": "基于状态的规划"
+        },
         "brief": {
-          "en": "Evaluate future Kimi use without assuming it is live.",
-          "zh": "评估未来 Kimi 使用方式，但不假设已经上线。"
+          "zh": "任务规模、已记录的模型 ID 和当前客户端菜单。",
+          "en": "Task scale, a recorded model ID, and the current client menu."
         },
         "process": {
-          "en": "Plan around the exact `kimi-k3` ID, configured context budget, and current access limits.",
-          "zh": "结合 `kimi-k3` 型号、已配置上下文预算与当前访问限制规划任务。"
+          "zh": "核对可用通道与预算要求，区分历史配置和实际访问状态。",
+          "en": "Check routes and budget requirements, distinguishing configuration from actual access."
         },
         "outcome": {
-          "en": "A plan that does not confuse capacity with availability.",
-          "zh": "不混淆容量配置与公开可用性的计划。"
+          "zh": "可执行前提明确的任务计划，未开放环节保持待核。",
+          "en": "A task plan with explicit execution prerequisites and unconfirmed steps left open."
         }
       }
     ]
@@ -294,12 +303,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Compare long-document workflows",
-      "zh": "比较长文档任务的模型入口"
+      "en": "Prepare a long-source comparison before choosing a route",
+      "zh": "选择模型入口前先准备长资料对照任务"
     },
     "description": {
-      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
-      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
+      "en": "Choose a source set, a research question, and citation rules. Confirm Kimi access in the current menu before comparing how candidate models retain disagreements and evidence gaps.",
+      "zh": "先选定资料集、研究问题和引用规则；确认当前菜单中的 Kimi 访问资格后，再比较候选模型是否保留来源分歧与证据缺口。"
     }
   }
 }

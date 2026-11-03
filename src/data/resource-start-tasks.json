@@ -1,0 +1,702 @@
+{
+  "vercel-labs/find-skills": {
+    "en": {
+      "title": "Find a Skill for the job in front of you",
+      "description": "Bring a concrete task to Floatboat and compare candidate instructions by source, scope, and tool requirements.",
+      "inputLabel": "What do you need a Skill for?",
+      "inputHint": "Include your stack and the check or deliverable you need.",
+      "outcome": "A shortlist with sources, coverage, prerequisites, and a reason to choose each candidate."
+    },
+    "zh": {
+      "title": "为眼前的任务找到合适的 Skill",
+      "description": "把具体需求带进 Floatboat，比较候选指引的来源、适用范围与工具前提。",
+      "inputLabel": "你需要 Skill 帮你做什么？",
+      "inputHint": "说明技术栈，以及要完成的检查或交付物。",
+      "outcome": "候选清单，列明来源、覆盖范围、使用前提和选择理由。"
+    }
+  },
+  "vercel-labs/vercel-react-best-practices": {
+    "en": {
+      "title": "Locate the React performance work that matters",
+      "description": "Use a real route or component to separate request waterfalls, bundle cost, and rendering issues before changing code.",
+      "inputLabel": "Which React route needs attention?",
+      "inputHint": "Name the slow interaction and the files or measurements you can provide.",
+      "outcome": "Prioritized findings tied to files, with evidence and a way to verify each proposed change."
+    },
+    "zh": {
+      "title": "找出值得优先处理的 React 性能问题",
+      "description": "从真实路由或组件出发，区分请求瀑布、包体积与渲染问题，再决定改动顺序。",
+      "inputLabel": "哪个 React 页面需要检查？",
+      "inputHint": "写明卡顿操作，以及能提供的文件或测量结果。",
+      "outcome": "按影响排序的问题，关联具体文件、证据及修改后的验证方法。"
+    }
+  },
+  "vercel-labs/vercel-composition-patterns": {
+    "en": {
+      "title": "Untangle a component API",
+      "description": "Describe conflicting props and real usage so Floatboat can help evaluate a composition-based interface.",
+      "inputLabel": "Which component combinations are hard to maintain?",
+      "inputHint": "Include existing props, callers, and the behaviors that must remain.",
+      "outcome": "A proposed component API, migration examples, and checks for the existing behaviors."
+    },
+    "zh": {
+      "title": "理清复杂组件的接口",
+      "description": "提供相互冲突的属性和实际调用方式，让 Floatboat 协助评估更清楚的组合接口。",
+      "inputLabel": "哪些组件组合难以维护？",
+      "inputHint": "提供现有属性、调用示例和必须保留的行为。",
+      "outcome": "组件接口方案、调用迁移示例，以及原有行为的检查项。"
+    }
+  },
+  "vercel-labs/vercel-react-native-skills": {
+    "en": {
+      "title": "Investigate a mobile interaction on its target device",
+      "description": "Start with the screen, device, and symptom instead of applying a generic mobile optimization checklist.",
+      "inputLabel": "What happens on the mobile screen?",
+      "inputHint": "Specify Expo or React Native, device class, and the gesture or list that fails.",
+      "outcome": "Likely bottlenecks with affected components and a device-based verification plan."
+    },
+    "zh": {
+      "title": "从目标设备上的交互问题开始",
+      "description": "说明页面、设备与症状，围绕真实操作排查，而不是套用一份移动端优化清单。",
+      "inputLabel": "移动页面出现了什么问题？",
+      "inputHint": "说明 Expo 或 React Native、设备档次及出问题的手势或列表。",
+      "outcome": "可能的瓶颈、涉及组件，以及在目标设备上的验证计划。"
+    }
+  },
+  "vercel-labs/vercel-react-view-transitions": {
+    "en": {
+      "title": "Give one navigation a clear visual transition",
+      "description": "Choose the state change that needs continuity and keep unrelated updates quiet.",
+      "inputLabel": "Which navigation should feel connected?",
+      "inputHint": "Describe the source view, destination, shared elements, and reduced-motion expectations.",
+      "outcome": "A transition proposal that distinguishes navigation from background updates and accounts for reduced motion."
+    },
+    "zh": {
+      "title": "为一次导航设计清楚的视觉过渡",
+      "description": "选定需要保持连续感的状态变化，让无关更新保持安静。",
+      "inputLabel": "哪一次导航需要连续感？",
+      "inputHint": "说明起点、终点、共享元素和减少动态效果的要求。",
+      "outcome": "区分导航与后台更新的过渡方案，并包含减少动态效果的处理。"
+    }
+  },
+  "vercel-labs/web-design-guidelines": {
+    "en": {
+      "title": "Review an interface against actionable rules",
+      "description": "Bring the actual form or page components so the review can point to changes a developer can make.",
+      "inputLabel": "Which interface should be reviewed?",
+      "inputHint": "Provide files and the interactions to check, such as keyboard input or form errors.",
+      "outcome": "Actionable file-and-line findings, with the affected interaction and expected behavior."
+    },
+    "zh": {
+      "title": "把界面规范落实到具体问题",
+      "description": "提供真实表单或页面组件，让审查结果能够定位到开发者可以修改的位置。",
+      "inputLabel": "要审查哪个界面？",
+      "inputHint": "提供文件与检查重点，例如键盘操作或表单错误。",
+      "outcome": "可执行的文件与行号问题，说明受影响的操作及预期行为。"
+    }
+  },
+  "vercel-labs/writing-guidelines": {
+    "en": {
+      "title": "Make onboarding instructions easier to follow",
+      "description": "Review the supplied documentation for clarity while keeping approved facts intact.",
+      "inputLabel": "Which instructions need an editorial review?",
+      "inputHint": "Include the document and its reader; identify facts that must stay unchanged.",
+      "outcome": "File-and-line editorial findings that distinguish wording issues from facts needing confirmation."
+    },
+    "zh": {
+      "title": "让入门说明更容易照着完成",
+      "description": "审查提供的文档表达，在保留已确认事实的前提下改善清晰度。",
+      "inputLabel": "哪些说明需要编辑审查？",
+      "inputHint": "提供文档和目标读者，标明不可改变的事实。",
+      "outcome": "文件与行号编辑意见，分别说明表达问题和仍需确认的事实。"
+    }
+  },
+  "vercel-labs/deploy-to-vercel": {
+    "en": {
+      "title": "Prepare a preview for a specific branch",
+      "description": "Bring the branch and project context to Floatboat, with preview and production actions kept distinct.",
+      "inputLabel": "What should be previewed?",
+      "inputHint": "Identify the branch, Vercel project and team, and the checks required before publishing.",
+      "outcome": "A confirmed preview plan and verification checklist; deployment proceeds only within the scope you authorize."
+    },
+    "zh": {
+      "title": "为指定分支准备可检查的预览",
+      "description": "把分支和项目上下文带进 Floatboat，分别说明预览与生产发布的范围。",
+      "inputLabel": "这次要预览什么改动？",
+      "inputHint": "写明分支、Vercel 项目和团队，以及发布前必须完成的检查。",
+      "outcome": "已核对的预览方案与验证清单，部署仅按你授权的范围执行。"
+    }
+  },
+  "vercel-labs/vercel-cli-with-tokens": {
+    "en": {
+      "title": "Scope a Vercel CLI task before using credentials",
+      "description": "Describe the account context and intended inspection without placing credential values in the request.",
+      "inputLabel": "Which Vercel settings should be inspected?",
+      "inputHint": "Specify project, team, and approved credential location; omit the token value.",
+      "outcome": "A scoped inspection plan that identifies credential references and keeps secret values out of output."
+    },
+    "zh": {
+      "title": "先明确 Vercel CLI 任务范围",
+      "description": "说明账号上下文和要检查的内容，请求中使用凭据位置而不是令牌值。",
+      "inputLabel": "要检查哪些 Vercel 配置？",
+      "inputHint": "说明项目、团队与已批准的凭据位置，不填写令牌值。",
+      "outcome": "范围明确的检查方案，标明凭据引用，并避免在输出中显示秘密值。"
+    }
+  },
+  "vercel-labs/vercel-optimize": {
+    "en": {
+      "title": "Explain a change in Vercel usage",
+      "description": "Set a project and time window so cost or performance findings can be grounded in available metrics.",
+      "inputLabel": "Which usage change needs investigation?",
+      "inputHint": "Include the period, affected functions or routes, and available cost or latency data.",
+      "outcome": "Evidence-backed opportunities ranked by likely impact, with a measurement plan for each."
+    },
+    "zh": {
+      "title": "解释 Vercel 用量变化的原因",
+      "description": "限定项目与时间范围，让成本或性能判断建立在可用指标上。",
+      "inputLabel": "哪项用量变化需要调查？",
+      "inputHint": "说明时间段、涉及函数或路由，以及已有成本或延迟数据。",
+      "outcome": "按可能影响排序的优化机会，每项附证据和效果衡量方法。"
+    }
+  },
+  "vercel-labs/agent-browser": {
+    "en": {
+      "title": "Turn a browser failure into a repeatable check",
+      "description": "Describe the path through the application and the point where behavior departs from expectations.",
+      "inputLabel": "Which browser flow should be checked?",
+      "inputHint": "Provide the test URL, allowed account context, steps, and expected result.",
+      "outcome": "The failing step, observed behavior, and evidence needed to reproduce the issue."
+    },
+    "zh": {
+      "title": "把浏览器故障变成可复现的检查",
+      "description": "说明应用中的操作路径，以及实际行为在哪一步偏离预期。",
+      "inputLabel": "要检查哪条浏览器流程？",
+      "inputHint": "提供测试网址、允许使用的账号上下文、步骤和预期结果。",
+      "outcome": "失败步骤、实际行为及复现问题所需的证据。"
+    }
+  },
+  "anthropics/frontend-design": {
+    "en": {
+      "title": "Build a page from a deliberate visual direction",
+      "description": "Give Floatboat the page goal, copy, and brand assets before asking for layout and implementation.",
+      "inputLabel": "What page are you designing?",
+      "inputHint": "Describe the audience, primary action, supplied copy, and existing visual identity.",
+      "outcome": "A visual direction followed by an implementation and desktop/mobile review, subject to the available tools."
+    },
+    "zh": {
+      "title": "从明确的视觉方向开始构建页面",
+      "description": "先提供页面目标、文案和品牌素材，再让 Floatboat 协助布局与实现。",
+      "inputLabel": "这次要设计什么页面？",
+      "inputHint": "说明受众、主要操作、已有文案和视觉身份。",
+      "outcome": "先给出视觉方向，再按可用工具实现，并检查桌面与手机布局。"
+    }
+  },
+  "anthropics/skill-creator": {
+    "en": {
+      "title": "Turn a recurring task into a testable Skill",
+      "description": "Start with a workflow you already repeat, including the examples that reveal whether it works.",
+      "inputLabel": "Which recurring workflow should become a Skill?",
+      "inputHint": "Provide sample inputs, the expected output, and examples of good and poor results.",
+      "outcome": "An instruction draft, clear inputs and outputs, and representative evaluation requests."
+    },
+    "zh": {
+      "title": "把重复任务整理成可验证的 Skill",
+      "description": "从已经反复执行的流程出发，用真实示例说明怎样判断结果是否合格。",
+      "inputLabel": "哪个重复流程适合整理成 Skill？",
+      "inputHint": "提供输入样例、预期输出，以及好结果和差结果的例子。",
+      "outcome": "指令草稿、明确的输入输出，以及有代表性的评估请求。"
+    }
+  },
+  "anthropics/pdf": {
+    "en": {
+      "title": "Extract a PDF without losing uncertain details",
+      "description": "State which pages and tables matter so extraction can preserve structure and flag unreadable values.",
+      "inputLabel": "What should be taken from the PDF?",
+      "inputHint": "Identify the pages, table columns, and required output format.",
+      "outcome": "Structured output with page references, preserved labels, and explicit uncertainty markers."
+    },
+    "zh": {
+      "title": "提取 PDF 内容并保留不确定信息",
+      "description": "说明需要处理的页面与表格，让提取结果保留结构，并标明无法辨认的数值。",
+      "inputLabel": "需要从 PDF 中提取什么？",
+      "inputHint": "写明页码、表格列和目标文件格式。",
+      "outcome": "结构化输出，保留标签与页码出处，并明确标记不确定信息。"
+    }
+  },
+  "anthropics/docx": {
+    "en": {
+      "title": "Revise a Word report while preserving its structure",
+      "description": "Bound the edit to approved sections and notes instead of regenerating the whole document.",
+      "inputLabel": "Which Word sections should change?",
+      "inputHint": "Name the sections, source notes, and headings, tables, or comments that must remain.",
+      "outcome": "An edited document with the requested structure preserved and changed pages rendered for review."
+    },
+    "zh": {
+      "title": "修改 Word 报告并保留原有结构",
+      "description": "将编辑限定在已确认章节和笔记范围内，避免重新生成整份文档。",
+      "inputLabel": "Word 文档的哪些部分需要修改？",
+      "inputHint": "说明章节、参考笔记，以及必须保留的标题、表格或批注。",
+      "outcome": "按范围修改的文档，并提供变化页面的渲染结果供检查。"
+    }
+  },
+  "anthropics/pptx": {
+    "en": {
+      "title": "Update a presentation inside its existing template",
+      "description": "Connect new results to specific slides while retaining the deck’s ordering and design conventions.",
+      "inputLabel": "Which slides need new information?",
+      "inputHint": "Provide the deck, approved results, and constraints on charts, order, and branding.",
+      "outcome": "An updated deck with changed slides checked for overflow, missing content, and chart consistency."
+    },
+    "zh": {
+      "title": "在现有模板中更新演示文稿",
+      "description": "将新结果对应到具体幻灯片，同时保留原有顺序与设计规则。",
+      "inputLabel": "哪些幻灯片需要更新？",
+      "inputHint": "提供原文件、已确认结果，以及图表、顺序和品牌要求。",
+      "outcome": "更新后的文稿，检查修改页面的溢出、内容缺失与图表一致性。"
+    }
+  },
+  "anthropics/xlsx": {
+    "en": {
+      "title": "Create a workbook whose totals can be checked",
+      "description": "Describe the source rows and grouping rules before turning data into formulas and summaries.",
+      "inputLabel": "How should the spreadsheet summarize the data?",
+      "inputHint": "Specify source columns, grouping dimensions, totals, and treatment of missing values.",
+      "outcome": "A recalculated workbook with traceable source rows, formulas, and documented assumptions."
+    },
+    "zh": {
+      "title": "生成合计结果可核对的工作簿",
+      "description": "先说明来源行和分组规则，再将数据整理成公式与汇总。",
+      "inputLabel": "电子表格应怎样汇总数据？",
+      "inputHint": "写明来源列、分组维度、合计口径及缺失值处理方式。",
+      "outcome": "重新计算后的工作簿，保留来源行、公式与假设说明。"
+    }
+  },
+  "pbakaus/impeccable": {
+    "en": {
+      "title": "Audit a form before redesigning it",
+      "description": "Use the current visual identity as a constraint while examining hierarchy and interaction states.",
+      "inputLabel": "Where does the interface lose clarity?",
+      "inputHint": "Describe the form, user task, keyboard behavior, and empty or error states.",
+      "outcome": "A focused interface audit with prioritized changes, before any edits are made."
+    },
+    "zh": {
+      "title": "先审查表单，再决定如何改版",
+      "description": "以现有视觉身份为约束，检查信息层级和交互状态。",
+      "inputLabel": "界面的哪一部分不够清楚？",
+      "inputHint": "说明表单、用户任务、键盘行为及空白或错误状态。",
+      "outcome": "范围明确、按优先级整理的界面问题，先给发现再进行修改。"
+    }
+  },
+  "mattpocock/grill-me": {
+    "en": {
+      "title": "Clarify a domain decision before implementation",
+      "description": "Bring the ambiguous business rule and existing terminology so questions can resolve a real design choice.",
+      "inputLabel": "Which domain rule is still unclear?",
+      "inputHint": "Include current terminology, code references, and the decision you cannot yet make.",
+      "outcome": "Resolved and open questions, plus only the glossary or ADR changes justified by the discussion."
+    },
+    "zh": {
+      "title": "实施前澄清一项领域决定",
+      "description": "提供有歧义的业务规则与已有术语，让提问服务于具体设计选择。",
+      "inputLabel": "哪条领域规则还没有说清？",
+      "inputHint": "提供当前术语、代码位置和仍无法决定的问题。",
+      "outcome": "已澄清与待定问题，并仅提出讨论确实需要的术语表或 ADR 改动。"
+    }
+  },
+  "mattpocock/tdd": {
+    "en": {
+      "title": "Implement one behavior through a failing test",
+      "description": "Define observable behavior and public testing seams before choosing implementation details.",
+      "inputLabel": "Which behavior should change?",
+      "inputHint": "Give the acceptance rule, current behavior, and the public interface that exposes it.",
+      "outcome": "A sequence of failing tests, minimal implementations, and verification for each accepted behavior."
+    },
+    "zh": {
+      "title": "用失败测试逐项实现行为",
+      "description": "先定义可观察行为与公开测试边界，再选择具体实现。",
+      "inputLabel": "这次需要改变什么行为？",
+      "inputHint": "说明验收规则、当前表现和能够观察行为的公开接口。",
+      "outcome": "逐项对应验收行为的失败测试、最小实现与验证结果。"
+    }
+  },
+  "mattpocock/improve-codebase-architecture": {
+    "en": {
+      "title": "Choose an architecture improvement worth making",
+      "description": "Investigate a bounded subsystem and compare candidate boundaries before starting a refactor.",
+      "inputLabel": "Which subsystem is creating friction?",
+      "inputHint": "Name recurring changes, difficult dependencies, and existing architecture decisions.",
+      "outcome": "Candidate improvements with supporting code evidence and tradeoffs, awaiting your selection."
+    },
+    "zh": {
+      "title": "选出值得实施的架构改进",
+      "description": "限定一个子系统，比较候选边界后再开始重构。",
+      "inputLabel": "哪个子系统正在造成维护摩擦？",
+      "inputHint": "说明反复发生的改动、难处理的依赖和已有架构决定。",
+      "outcome": "附代码证据与取舍的候选改进，等你选择后再实施。"
+    }
+  },
+  "mattpocock/diagnosing-bugs": {
+    "en": {
+      "title": "Establish a signal for the bug before fixing it",
+      "description": "Make the reported symptom observable so a proposed fix can be tested against the original failure.",
+      "inputLabel": "Which failure needs a reliable signal?",
+      "inputHint": "Include a reproduction, expected behavior, observed result, and relevant logs.",
+      "outcome": "A repeatable failure signal, an evidence-based diagnosis, and verification of the original scenario."
+    },
+    "zh": {
+      "title": "修复前先建立能检测故障的信号",
+      "description": "把报告的症状变成可观察结果，使修复能够回到原始故障验证。",
+      "inputLabel": "哪个故障需要建立反馈信号？",
+      "inputHint": "提供复现方法、预期行为、实际结果和相关日志。",
+      "outcome": "可重复的故障信号、有证据的原因判断，以及原始场景的验证。"
+    }
+  },
+  "mattpocock/code-review": {
+    "en": {
+      "title": "Review the implementation against its specification",
+      "description": "Keep coding standards and requirement coverage separate when examining a branch diff.",
+      "inputLabel": "Which branch and specification should be compared?",
+      "inputHint": "Name the base branch, requirement file, and changes excluded from review.",
+      "outcome": "Separate standards and specification findings, tied to the relevant changed lines."
+    },
+    "zh": {
+      "title": "对照需求审查实现差异",
+      "description": "检查分支差异时，分别判断代码规范与需求覆盖。",
+      "inputLabel": "要比较哪个分支和需求文件？",
+      "inputHint": "说明基准分支、需求文档和不在审查范围内的改动。",
+      "outcome": "分别报告规范与需求问题，并关联相关修改行。"
+    }
+  },
+  "mattpocock/handoff": {
+    "en": {
+      "title": "Prepare a fresh session to continue the work",
+      "description": "Select the context a new reviewer needs without copying an entire conversation.",
+      "inputLabel": "What work is being handed over?",
+      "inputHint": "Identify the feature, specification, current diff, decisions, and remaining checks.",
+      "outcome": "A concise handoff with evidence links, current state, unresolved decisions, and the next verification steps."
+    },
+    "zh": {
+      "title": "让新会话接得上当前工作",
+      "description": "筛选下一位审查者真正需要的上下文，避免复制整段对话。",
+      "inputLabel": "需要交接哪项工作？",
+      "inputHint": "说明特性、需求、当前差异、已有决定和剩余检查。",
+      "outcome": "简洁交接材料，包含证据入口、当前状态、未决事项与下一步验证。"
+    }
+  },
+  "obra/brainstorming": {
+    "en": {
+      "title": "Compare approaches before committing to a design",
+      "description": "Start with the current project and the user outcome, then expose the decisions that shape the solution.",
+      "inputLabel": "What workflow needs a design?",
+      "inputHint": "Describe the user, current process, desired outcome, and constraints.",
+      "outcome": "Clarified requirements and compared approaches, followed by a design only after the direction is agreed."
+    },
+    "zh": {
+      "title": "确定设计前先比较可行方向",
+      "description": "从当前项目和用户结果出发，明确哪些决定会影响方案。",
+      "inputLabel": "哪个工作流需要设计？",
+      "inputHint": "说明用户、现有流程、期望结果及约束。",
+      "outcome": "澄清后的需求与方案比较，方向确认后再形成设计。"
+    }
+  },
+  "obra/systematic-debugging": {
+    "en": {
+      "title": "Trace a failure across the system boundary",
+      "description": "Use an environment-specific failure to test competing causes rather than trying speculative patches.",
+      "inputLabel": "Where does the failure appear and disappear?",
+      "inputHint": "Compare working and failing environments, pipeline stages, and observed error output.",
+      "outcome": "A root-cause investigation with tested hypotheses and a rerun of the original failing job."
+    },
+    "zh": {
+      "title": "沿系统边界追查故障原因",
+      "description": "围绕特定环境中的失败验证不同假设，避免反复尝试没有依据的补丁。",
+      "inputLabel": "故障在哪个环境出现或消失？",
+      "inputHint": "比较正常与失败环境、流水线阶段及实际错误输出。",
+      "outcome": "包含假设验证的根因调查，并重新运行原来失败的任务。"
+    }
+  },
+  "cloudflare/security-audit": {
+    "en": {
+      "title": "Define an evidence-based repository audit",
+      "description": "Set repository scope and execution boundaries before asking for architecture mapping and vulnerability leads.",
+      "inputLabel": "What is inside the authorized audit scope?",
+      "inputHint": "Identify the repository, revision, excluded paths, and available isolation.",
+      "outcome": "Coverage and evidence reports with unresolved leads marked needs_validation and remaining gaps made explicit."
+    },
+    "zh": {
+      "title": "为仓库审计明确证据与范围",
+      "description": "先限定仓库和执行边界，再进行架构梳理与漏洞线索调查。",
+      "inputLabel": "授权审计的范围是什么？",
+      "inputHint": "说明仓库、版本、排除路径及可用的隔离条件。",
+      "outcome": "覆盖与证据报告，未解决线索标记 needs_validation，并列明剩余缺口。"
+    }
+  },
+  "heygen-com/hyperframes": {
+    "en": {
+      "title": "Turn product screenshots into a short demo",
+      "description": "Describe the story, timing, and available assets so video work has a concrete visual target.",
+      "inputLabel": "What should the demo show?",
+      "inputHint": "Include screenshots, duration, sequence, brand assets, and export requirements.",
+      "outcome": "A preview and exported demo plan, with optional media services identified before they are used."
+    },
+    "zh": {
+      "title": "把产品截图整理成短视频演示",
+      "description": "说明故事、时长与现有素材，让视频制作有具体的画面目标。",
+      "inputLabel": "演示需要展示什么？",
+      "inputHint": "提供截图、时长、镜头顺序、品牌素材和导出要求。",
+      "outcome": "可审阅的预览与演示导出方案，采用可选媒体服务前先说明条件。"
+    }
+  },
+  "openai/codex": {
+    "en": {
+      "title": "Design a reviewable coding task loop",
+      "description": "Use Codex’s execution and integration boundaries as a reference for a change in your own repository.",
+      "inputLabel": "Which repository task needs a clearer execution loop?",
+      "inputHint": "Describe the change, test command, review point, and available integration surface.",
+      "outcome": "A task loop with context inputs, tool calls, test evidence, and an explicit approval point.",
+      "example": "Use the Codex repository to help design a documentation-import change in my repository. Map context loading, file edits, tests, and review. Compare CLI and app-server integration before proposing an implementation; do not install or connect anything yet."
+    },
+    "zh": {
+      "title": "为代码任务设计可审阅的执行循环",
+      "description": "参考 Codex 的执行与集成边界，梳理自己仓库中一项改动的完整过程。",
+      "inputLabel": "哪项仓库任务需要明确执行循环？",
+      "inputHint": "说明改动、测试命令、审阅节点和现有集成入口。",
+      "outcome": "包含上下文输入、工具调用、测试证据与明确审批节点的任务循环。",
+      "example": "参考 Codex 仓库，为我的文档导入改动设计执行流程。梳理上下文读取、文件修改、测试与审阅，比较 CLI 和 app-server 集成后再提出实现，暂不安装或连接工具。"
+    }
+  },
+  "deepseek-ai/deepseek-harness": {
+    "en": {
+      "title": "Separate a workflow into replaceable plugins",
+      "description": "Explore DeepSeek Harness’s plugin boundaries around a specific collection-and-summary task.",
+      "inputLabel": "Which workflow steps should be independently replaceable?",
+      "inputHint": "Describe inputs, processing stages, provider settings, and failure behavior.",
+      "outcome": "A plugin responsibility map and a small validation plan for the first end-to-end run.",
+      "example": "Refer to DeepSeek Harness to split my weekly public-news digest into collection, deduplication, and summary plugins. Define each input and output, provider configuration, and retry behavior. Check the current interfaces before drafting a prototype plan."
+    },
+    "zh": {
+      "title": "把资料流程拆成可替换插件",
+      "description": "围绕一项收集与摘要任务，研究 DeepSeek Harness 的插件边界。",
+      "inputLabel": "哪些步骤需要能够独立替换？",
+      "inputHint": "说明输入、处理阶段、模型配置和失败时的行为。",
+      "outcome": "插件职责图，以及首次完整运行的小规模验证计划。",
+      "example": "参考 DeepSeek Harness，将每周公开资讯简报拆为收集、去重和摘要插件。定义输入输出、模型配置和重试行为，核对当前接口后再拟定原型方案。"
+    }
+  },
+  "deepseek-ai/dsh-superagent": {
+    "en": {
+      "title": "Map an issue request to an authorized coding task",
+      "description": "Use the prototype’s request and ticket model to design a bounded GitHub workflow.",
+      "inputLabel": "Which repository requests should become tasks?",
+      "inputHint": "Specify the repository, allowed requesters, labels, review policy, and expected PR output.",
+      "outcome": "A request-to-ticket flow with authorization checks, duplicate handling, and a reviewable handoff.",
+      "example": "Read the DSH Superagent prototype setup and authorization documents. Design a GitHub-issue-to-draft-PR flow for my repository, listing requester permissions, duplicate-event handling, and required approval. Show the plan before any account, webhook, or service configuration."
+    },
+    "zh": {
+      "title": "把 Issue 请求转成有范围的代码任务",
+      "description": "借鉴原型的请求与工单模型，为 GitHub 工作流明确触发和授权。",
+      "inputLabel": "哪些仓库请求应转为任务？",
+      "inputHint": "说明仓库、允许的请求者、标签、审阅规则与 PR 交付要求。",
+      "outcome": "包含授权检查、重复请求处理与可审阅交接的请求到工单流程。",
+      "example": "阅读 DSH Superagent 原型的配置与授权文档，为我的仓库设计 Issue 到草稿 PR 的流程。列明请求者权限、重复事件处理和必要审批，任何账号、Webhook 或服务配置前先给出方案。"
+    }
+  },
+  "earendil-works/pi": {
+    "en": {
+      "title": "Build a small repository-report loop",
+      "description": "Study Pi’s agent toolkit around one bounded report instead of starting with a full agent platform.",
+      "inputLabel": "Which repository report should be repeatable?",
+      "inputHint": "Specify the revision range, files to inspect, output format, and permitted tools.",
+      "outcome": "A minimal context/tool/session design and a reproducible sample report for review.",
+      "example": "Use Pi’s toolkit documentation to design a weekly repository-change report. Define how to collect the commit range, inspect diffs, maintain the session, and produce a Markdown summary with file references. Start with a design and sample output, not a new installation."
+    },
+    "zh": {
+      "title": "从一个仓库报告任务搭建小循环",
+      "description": "围绕一份范围明确的报告研究 Pi 工具链，先验证最小流程。",
+      "inputLabel": "哪种仓库报告需要重复生成？",
+      "inputHint": "说明版本范围、检查文件、输出格式和允许使用的工具。",
+      "outcome": "最小上下文、工具与会话设计，以及可复现的样例报告。",
+      "example": "参考 Pi 工具链文档设计每周仓库变更报告，明确提交范围收集、差异读取、会话延续和带文件引用的 Markdown 汇总。先给设计与样例，不直接开始安装。"
+    }
+  },
+  "anomalyco/opencode": {
+    "en": {
+      "title": "Separate code exploration from implementation",
+      "description": "Use OpenCode’s plan/build distinction to place a review boundary before code changes.",
+      "inputLabel": "Which change should begin with read-only exploration?",
+      "inputHint": "Provide the feature, repository area, acceptance rules, and tools that may write files.",
+      "outcome": "An exploration brief and an implementation handoff with distinct permissions and acceptance checks.",
+      "example": "Use OpenCode’s plan/build workflow as a reference for adding search to my application. First define a read-only investigation of the data and routes, then a separate implementation phase. List the evidence I should review before allowing edits."
+    },
+    "zh": {
+      "title": "把代码调查与实施分开",
+      "description": "借鉴 OpenCode 的 plan/build 分工，在代码修改前建立审阅边界。",
+      "inputLabel": "哪项改动需要先只读调查？",
+      "inputHint": "提供特性、仓库范围、验收规则和可以写文件的工具。",
+      "outcome": "权限与验收分开的调查简报及实施交接。",
+      "example": "参考 OpenCode 的 plan/build 流程，为应用增加搜索功能。先设计数据与路由的只读调查，再定义独立实施阶段，列出允许修改前需要我审阅的证据。"
+    }
+  },
+  "nousresearch/hermes-agent": {
+    "en": {
+      "title": "Decide what a recurring workflow should remember",
+      "description": "Study Hermes’s memory and reusable instruction mechanisms for a weekly feedback process.",
+      "inputLabel": "Which knowledge should survive between runs?",
+      "inputHint": "Describe the feedback sources, reusable decisions, retention limits, and review responsibilities.",
+      "outcome": "A memory/Skill boundary, source traceability rules, and a checked weekly-summary format.",
+      "example": "Refer to Hermes Agent to design a weekly customer-feedback review. Separate reusable category definitions from individual customer details, define retention and human review, and show a sample summary with source references before suggesting any integration."
+    },
+    "zh": {
+      "title": "决定重复流程应当记住什么",
+      "description": "围绕每周反馈整理，研究 Hermes 的记忆与可复用指引机制。",
+      "inputLabel": "哪些知识需要跨任务保留？",
+      "inputHint": "说明反馈来源、可复用决定、保留期限和审阅职责。",
+      "outcome": "记忆与 Skill 的边界、来源追溯规则及每周总结格式。",
+      "example": "参考 Hermes Agent 设计每周客户反馈审阅。区分可复用分类与个别客户信息，定义保留期限和人工审阅，先给带来源的总结样例，再考虑集成。"
+    }
+  },
+  "moonshotai/kimi-code": {
+    "en": {
+      "title": "Plan an editor-to-agent review handoff",
+      "description": "Investigate Kimi Code’s ACP interface for passing a bounded code-review task from an editor.",
+      "inputLabel": "What should move from the editor into the task?",
+      "inputHint": "Name the editor, selected files, review scope, and required return format.",
+      "outcome": "An interface compatibility check and a handoff format for context, findings, and verification.",
+      "example": "Read Kimi Code’s ACP documentation and assess a review handoff from my editor. I want selected files and acceptance criteria sent as one task, with findings returned against code locations. Verify compatibility first and propose the smallest test."
+    },
+    "zh": {
+      "title": "规划编辑器到 Agent 的审查交接",
+      "description": "研究 Kimi Code 的 ACP 入口，明确从编辑器传递一项代码审查任务的方式。",
+      "inputLabel": "需要从编辑器传递哪些内容？",
+      "inputHint": "说明编辑器、选中文件、审查范围和返回格式。",
+      "outcome": "接口兼容性检查，以及上下文、问题与验证结果的交接格式。",
+      "example": "阅读 Kimi Code 的 ACP 文档，评估从我的编辑器发起审查的交接方式。将选中文件与验收标准作为同一任务，按代码位置返回问题；先核对兼容性，再提出最小测试。"
+    }
+  },
+  "zai-org/zcode": {
+    "en": {
+      "title": "Keep a diagram task connected to its workspace",
+      "description": "Explore ZCode’s UI plugin example to define how an editable diagram and agent task could share context.",
+      "inputLabel": "Which diagram should accompany the task?",
+      "inputHint": "Describe the diagram format, workspace inputs, allowed edits, and export target.",
+      "outcome": "A plugin interaction sketch with data boundaries and a small compatibility test.",
+      "example": "Study ZCode’s UI Plugin documentation and Excalidraw example. Design a workflow that turns my project notes into an editable process diagram, keeps revisions linked to the source notes, and exports a reviewable result. Check APIs before proposing integration."
+    },
+    "zh": {
+      "title": "让图示任务与工作空间保持关联",
+      "description": "研究 ZCode 的 UI 插件示例，明确可编辑图示与 Agent 任务之间的上下文关系。",
+      "inputLabel": "哪种图示需要随任务协作？",
+      "inputHint": "说明图示格式、工作空间输入、允许修改范围和导出目标。",
+      "outcome": "包含数据边界的插件交互草图，以及小规模兼容性测试。",
+      "example": "研究 ZCode 的 UI Plugin 文档和 Excalidraw 示例，为项目笔记设计可编辑流程图工作流，保留修改与来源笔记的关联并导出可审阅结果。核对 API 后再提出集成方案。"
+    }
+  },
+  "dietrichgebert/ponytail": {
+    "en": {
+      "title": "Apply a consistent review discipline to a change",
+      "description": "Use Ponytail’s rules around a real diff, keeping the chosen depth and available host behavior explicit.",
+      "inputLabel": "Which change needs a disciplined review?",
+      "inputHint": "Provide the diff, chosen review depth, and rules that the current agent can actually load.",
+      "outcome": "Prioritized review findings that distinguish required fixes from optional cleanup.",
+      "example": "Read Ponytail’s rules and host-specific installation notes. Help review my import-module diff at a depth appropriate to its risk. Check which instructions are usable in the current environment, report findings first, and do not install hooks or change files without my go-ahead."
+    },
+    "zh": {
+      "title": "为一次改动建立一致的审查要求",
+      "description": "围绕真实差异使用 Ponytail 规则，明确审查深度及当前宿主可用的行为。",
+      "inputLabel": "哪项改动需要严格审查？",
+      "inputHint": "提供差异、期望审查深度，以及当前 Agent 实际能加载的规则。",
+      "outcome": "按优先级整理的问题，分别说明必要修复与可选清理。",
+      "example": "阅读 Ponytail 的规则与宿主安装说明，按导入模块改动的风险选择审查深度。先核对当前环境能使用的指引，报告问题，未经我同意不安装 hooks 或修改文件。"
+    }
+  },
+  "milind-soni/mausbot": {
+    "en": {
+      "title": "Divide a content task into roles with handoffs",
+      "description": "Use MausBot’s team organization as a reference for separating research, drafting, and review responsibilities.",
+      "inputLabel": "Which deliverable needs several roles?",
+      "inputHint": "Specify source material, role boundaries, handoff artifacts, and who approves publication.",
+      "outcome": "A role and handoff plan with review checkpoints and one sample content package.",
+      "example": "Refer to MausBot’s role and approval model to organize a weekly product newsletter. Define researcher, drafter, and reviewer responsibilities, the files each hands over, and the approval before publication. Give a small sample without creating bots or connecting accounts."
+    },
+    "zh": {
+      "title": "为内容任务安排角色与交接",
+      "description": "借鉴 MausBot 的团队组织方式，分别定义研究、起草和审阅职责。",
+      "inputLabel": "哪项交付需要多个角色？",
+      "inputHint": "说明素材、角色边界、交接文件，以及由谁批准发布。",
+      "outcome": "角色与交接方案、审阅节点及一份内容包样例。",
+      "example": "参考 MausBot 的角色与审批设计，组织每周产品简报。明确研究、起草和审阅职责、各自交接文件及发布前审批；先给小样，不创建机器人或连接账号。"
+    }
+  },
+  "vercel-labs/agent-desktop": {
+    "en": {
+      "title": "Make a desktop step observable and verifiable",
+      "description": "Study accessibility snapshots and referenced actions around one manual application task.",
+      "inputLabel": "Which desktop step repeats in your workflow?",
+      "inputHint": "Name the app, starting state, expected file or result, and permission constraints.",
+      "outcome": "An observe/act/verify sequence, including stop conditions and evidence for each completed step.",
+      "example": "Read Agent Desktop’s installation and snapshot documentation. For my monthly invoice-export task, map the application states, required permissions, snapshot references, and export verification. Start with a dry-run plan; do not grant permissions or operate the application yet."
+    },
+    "zh": {
+      "title": "让桌面步骤可以观察和验证",
+      "description": "围绕一个手动应用任务，研究无障碍快照与引用操作的使用方式。",
+      "inputLabel": "工作流里哪项桌面操作反复出现？",
+      "inputHint": "说明应用、起始状态、预期文件或结果，以及权限限制。",
+      "outcome": "观察、操作、验证的步骤，包含停止条件和完成证据。",
+      "example": "阅读 Agent Desktop 的安装和快照文档，为每月发票导出梳理应用状态、所需权限、快照引用和导出检查。先给演练方案，暂不授予权限或操作应用。"
+    }
+  },
+  "comfy-org/comfyui": {
+    "en": {
+      "title": "Prepare a repeatable product-image workflow",
+      "description": "Bring the source images and visual constraints so a ComfyUI graph can be evaluated against a real output.",
+      "inputLabel": "What image set should the workflow produce?",
+      "inputHint": "Describe inputs, background/style constraints, model availability, hardware, and output size.",
+      "outcome": "A proposed node workflow with required models, input/output mapping, and a small image-validation plan.",
+      "example": "Use ComfyUI’s official workflow documentation to plan consistent backgrounds for ten product photos. I will provide the originals, target size, and available hardware. Identify a suitable graph, required models, and a two-image validation step before installation or batch execution."
+    },
+    "zh": {
+      "title": "准备可重复的商品图片工作流",
+      "description": "提供原图与视觉约束，让 ComfyUI 节点流程围绕真实输出接受检查。",
+      "inputLabel": "需要生成怎样的一组图片？",
+      "inputHint": "说明输入、背景或风格要求、可用模型、硬件与输出尺寸。",
+      "outcome": "节点流程方案，列明所需模型、输入输出映射及小批量图片检查计划。",
+      "example": "参考 ComfyUI 官方工作流文档，为十张商品照片规划统一背景。我会提供原图、目标尺寸与可用硬件；先确定节点流程、所需模型和两张图片的验证步骤，再考虑安装或批量运行。"
+    }
+  },
+  "graphify-labs/graphify": {
+    "en": {
+      "title": "Trace the impact of a change through a code graph",
+      "description": "Connect Graphify’s repository graph to a bounded dependency question, then verify findings against source files.",
+      "inputLabel": "Which change needs an impact map?",
+      "inputHint": "Identify the repository, entry points, proposed change, and files to exclude.",
+      "outcome": "A dependency path and affected-module report with source checks and explicit graph gaps.",
+      "example": "Refer to Graphify’s official installation and CLI documentation to analyze an authentication-module change. Check whether graphify is available, plan the graph build, and identify callers and affected modules. Validate graph findings in source; propose any setup before executing it."
+    },
+    "zh": {
+      "title": "沿代码图谱追踪改动影响",
+      "description": "将 Graphify 的仓库图谱用于具体依赖问题，再回到源码核对结论。",
+      "inputLabel": "哪项改动需要影响范围图？",
+      "inputHint": "说明仓库、入口、计划修改内容和排除文件。",
+      "outcome": "依赖路径与受影响模块报告，附源码核对和图谱缺口。",
+      "example": "参考 Graphify 官方安装与 CLI 文档，分析认证模块改动。先检查 graphify 是否可用，规划建图并定位调用方和受影响模块；结论需回到源码核对，新增配置先提出方案再执行。"
+    }
+  },
+  "stablyai/orca": {
+    "en": {
+      "title": "Plan parallel changes without mixing their worktrees",
+      "description": "Use Orca’s worktree model to divide one feature into independently reviewable branches.",
+      "inputLabel": "Which feature can be split into parallel changes?",
+      "inputHint": "Describe frontend, backend, and test boundaries, shared files, and merge dependencies.",
+      "outcome": "A worktree/branch plan with task ownership, integration order, and a combined verification checklist.",
+      "example": "Study Orca’s worktree documentation to plan parallel frontend, API, and test work for my search feature. Identify shared-file conflicts, branch ownership, merge order, and end-to-end checks. Show the plan before creating worktrees or launching other agents."
+    },
+    "zh": {
+      "title": "为并行改动安排独立工作树",
+      "description": "借鉴 Orca 的 worktree 模型，把同一特性拆成能够分别审阅的分支。",
+      "inputLabel": "哪个特性适合拆成并行改动？",
+      "inputHint": "说明前端、后端与测试边界、共享文件及合并依赖。",
+      "outcome": "工作树与分支方案，明确任务归属、集成顺序和联合验证清单。",
+      "example": "阅读 Orca 的 worktree 文档，为搜索特性规划前端、API 与测试的并行工作。识别共享文件冲突、分支归属、合并顺序和完整流程检查；创建工作树或启动其他 Agent 前先展示方案。"
+    }
+  }
+}

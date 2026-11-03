@@ -94,8 +94,8 @@
           "answer": "No. Popularity metrics belong to a particular repository and collection date. Evaluate the actual project, its license, and its maintained source instead of transferring organization-wide reputation to every item."
         }
       ],
-      "ctaTitle": "Study Codex Workflow Design",
-      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaTitle": "Design a reviewable code-change loop",
+      "ctaDescription": "Open the Codex guide to map repository context, tool feedback, tests, and approval points for one concrete change before choosing a CLI or application integration.",
       "ctaPrimary": {
         "label": "View Codex",
         "href": "/skills-marketplace/openai/codex"
@@ -149,8 +149,8 @@
           "answer": "不能。热度指标属于具体仓库和采集时刻，应检查实际项目、许可与维护来源，不能将组织声誉直接转给每个条目。"
         }
       ],
-      "ctaTitle": "借鉴 Codex 的工作流设计",
-      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaTitle": "设计一条可审阅的代码修改循环",
+      "ctaDescription": "打开 Codex 指南，为一项具体修改梳理仓库上下文、工具反馈、测试与批准节点，再决定采用 CLI 还是应用集成。",
       "ctaPrimary": {
         "label": "查看 Codex",
         "href": "/zh/skills-marketplace/openai/codex"
@@ -264,8 +264,8 @@
           "answer": "Check its maintainer, supported harness version, tools, and external service requirements. A plugin-based architecture makes composition possible but does not certify every extension."
         }
       ],
-      "ctaTitle": "Study DeepSeek Harness Workflow Design",
-      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaTitle": "Plan capability handoffs with DeepSeek Harness",
+      "ctaDescription": "Start with the Harness guide to identify each stage’s information, tools, and intermediate output, then check extension compatibility and failure handling.",
       "ctaPrimary": {
         "label": "View DeepSeek Harness",
         "href": "/skills-marketplace/deepseek-ai/deepseek-harness"
@@ -319,8 +319,8 @@
           "answer": "应确认维护者、支持的 harness 版本、工具与外部服务要求。插件架构提供组合能力，但不等于为每个扩展背书。"
         }
       ],
-      "ctaTitle": "借鉴 DeepSeek Harness 的工作流设计",
-      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaTitle": "用 DeepSeek Harness 梳理能力交接",
+      "ctaDescription": "先阅读 Harness 指南，明确各阶段需要的信息、工具和中间结果，再核对扩展兼容性及失败后的处理方式。",
       "ctaPrimary": {
         "label": "查看 DeepSeek Harness",
         "href": "/zh/skills-marketplace/deepseek-ai/deepseek-harness"
@@ -422,8 +422,8 @@
           "answer": "Pi’s MIT source license does not establish the license or trustworthiness of every extension. Check the source, maintainer, and authorization of each package separately."
         }
       ],
-      "ctaTitle": "Study Pi Workflow Design",
-      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaTitle": "Find the Pi extension layer your task needs",
+      "ctaDescription": "Read the Pi guide to distinguish instructions, tools, session state, and interface extensions. Choose one addition to evaluate within the host’s execution boundaries.",
       "ctaPrimary": {
         "label": "View Pi",
         "href": "/skills-marketplace/earendil-works/pi"
@@ -477,8 +477,8 @@
           "answer": "Pi 的 MIT 源码许可不能决定每个扩展的许可或可信度，应分别检查包的来源、维护者和授权。"
         }
       ],
-      "ctaTitle": "借鉴 Pi 的工作流设计",
-      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaTitle": "找到任务需要补足的 Pi 扩展层",
+      "ctaDescription": "阅读 Pi 指南，区分指令、工具、会话状态与界面扩展，先选一个补充项，并在宿主执行边界内验证。",
       "ctaPrimary": {
         "label": "查看 Pi",
         "href": "/zh/skills-marketplace/earendil-works/pi"
@@ -580,8 +580,8 @@
           "answer": "Compare it against a specific repository task, the desired review process, provider access, and the integration requirements. A broad reputation is not a substitute for that workflow fit."
         }
       ],
-      "ctaTitle": "Study OpenCode Workflow Design",
-      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaTitle": "Define an OpenCode investigation handoff",
+      "ctaDescription": "Use the project guide to specify what investigation should return, which tools each stage may use, and what evidence a reviewer needs before accepting a change.",
       "ctaPrimary": {
         "label": "View OpenCode",
         "href": "/skills-marketplace/anomalyco/opencode"
@@ -635,8 +635,8 @@
           "answer": "应结合具体仓库任务、审阅方式、模型访问与集成要求比较，不能用笼统声誉代替对工作流匹配度的判断。"
         }
       ],
-      "ctaTitle": "借鉴 OpenCode 的工作流设计",
-      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaTitle": "明确 OpenCode 调查阶段的交接要求",
+      "ctaDescription": "通过项目指南明确调查阶段应返回什么、各阶段可以使用哪些工具，以及审阅者接受变更前需要哪些证据。",
       "ctaPrimary": {
         "label": "查看 OpenCode",
         "href": "/zh/skills-marketplace/anomalyco/opencode"
@@ -738,8 +738,8 @@
           "answer": "Do not assume so. Hermes Agent’s source is MIT licensed; each model artifact or hosted service needs its own license and access review."
         }
       ],
-      "ctaTitle": "Study Hermes Agent Workflow Design",
-      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaTitle": "Decide what Hermes Agent should retain",
+      "ctaDescription": "Open the Hermes guide to separate temporary context from durable facts and procedures, then define corrections and checks across repeated runs.",
       "ctaPrimary": {
         "label": "View Hermes Agent",
         "href": "/skills-marketplace/nousresearch/hermes-agent"
@@ -793,8 +793,8 @@
           "answer": "不能假定相同。Hermes Agent 源码采用 MIT，每个模型制品或托管服务仍需单独核对许可与访问条件。"
         }
       ],
-      "ctaTitle": "借鉴 Hermes Agent 的工作流设计",
-      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaTitle": "确定 Hermes Agent 应保留哪些知识",
+      "ctaDescription": "打开 Hermes 指南，区分临时上下文、长期事实与流程，再为知识修正和多次执行设定检查方式。",
       "ctaPrimary": {
         "label": "查看 Hermes Agent",
         "href": "/zh/skills-marketplace/nousresearch/hermes-agent"
@@ -896,8 +896,8 @@
           "answer": "No. The MIT source license does not determine subscription access, API usage, quotas, or provider billing. Those belong to the account and service terms."
         }
       ],
-      "ctaTitle": "Study Kimi Code CLI Workflow Design",
-      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaTitle": "Check context transfer in Kimi Code",
+      "ctaDescription": "Follow the maintained Kimi Code reference to define delegated inputs, outputs, and review checkpoints, then test what the next role actually needs to continue.",
       "ctaPrimary": {
         "label": "View Kimi Code CLI",
         "href": "/skills-marketplace/moonshotai/kimi-code"
@@ -951,8 +951,8 @@
           "answer": "不授予。MIT 源码许可不能决定订阅访问、API 调用、额度或计费，这些属于账号与服务条款。"
         }
       ],
-      "ctaTitle": "借鉴 Kimi Code CLI 的工作流设计",
-      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaTitle": "检查 Kimi Code 中的上下文交接",
+      "ctaDescription": "依据当前维护的 Kimi Code 资料，定义委派任务的输入、输出与审阅节点，再验证下一角色继续工作真正需要的上下文。",
       "ctaPrimary": {
         "label": "查看 Kimi Code CLI",
         "href": "/zh/skills-marketplace/moonshotai/kimi-code"
@@ -1054,8 +1054,8 @@
           "answer": "Review its workflow fit, model-provider settings, execution environment, data-handling documentation, and project notice. Public source is useful evidence but does not replace an assessment of the chosen configuration."
         }
       ],
-      "ctaTitle": "Study ZCode Workflow Design",
-      "ctaDescription": "Read the project guide to identify useful mechanisms and plan a small workflow experiment.",
+      "ctaTitle": "Map a ZCode task from input to review",
+      "ctaDescription": "Use the ZCode guide to separate business context, interaction, and execution tools, and identify where task data is processed before testing a complete review loop.",
       "ctaPrimary": {
         "label": "View ZCode",
         "href": "/skills-marketplace/zai-org/zcode"
@@ -1109,8 +1109,8 @@
           "answer": "应检查工作流匹配度、模型服务配置、执行环境、数据处理文档与项目声明。公开源码有助于研究，但不能代替对所选配置的具体评估。"
         }
       ],
-      "ctaTitle": "借鉴 ZCode 的工作流设计",
-      "ctaDescription": "从项目介绍中找到值得复用的机制，为自己的工作流规划一个可验证的小型改进。",
+      "ctaTitle": "梳理 ZCode 从任务输入到结果审阅的路径",
+      "ctaDescription": "通过 ZCode 指南分清业务上下文、交互与执行工具，确认任务数据在哪里处理，再验证一条完整的审阅流程。",
       "ctaPrimary": {
         "label": "查看 ZCode",
         "href": "/zh/skills-marketplace/zai-org/zcode"
@@ -1212,8 +1212,8 @@
           "answer": "Read the stated methodology, task set, and limits, then test representative work of your own. Stars and benchmark percentages do not establish correctness for a different repository."
         }
       ],
-      "ctaTitle": "Explore Ponytail Workflow Design",
-      "ctaDescription": "Read the project guide for its mechanisms, workflow examples, and requirements.",
+      "ctaTitle": "Compare Ponytail rules on the same code task",
+      "ctaDescription": "Check the host adapter first, then compare behavior, tests, and review findings under the repository’s existing requirements. A smaller diff alone is not the success criterion.",
       "ctaPrimary": {
         "label": "View project guide",
         "href": "/skills-marketplace/dietrichgebert/ponytail"
@@ -1267,8 +1267,8 @@
           "answer": "先阅读测试方法、任务集与限制，再验证自己的代表性任务。stars 和测试百分比都不能证明另一个仓库中的正确性。"
         }
       ],
-      "ctaTitle": "了解 Ponytail 的工作流设计",
-      "ctaDescription": "进入项目详情，查看机制、适用场景与使用条件。",
+      "ctaTitle": "在同一代码任务上比较 Ponytail 规则",
+      "ctaDescription": "先核对宿主适配方式，再按仓库现有要求比较行为、测试和审查发现；变更更短本身不能作为成功依据。",
       "ctaPrimary": {
         "label": "查看项目详情",
         "href": "/zh/skills-marketplace/dietrichgebert/ponytail"
@@ -1370,8 +1370,8 @@
           "answer": "Study role definitions, channel context, execution events, approval requests, and portable team instructions. Decide which mechanism solves your handoff problem before adopting application infrastructure."
         }
       ],
-      "ctaTitle": "Explore MausBot Workflow Design",
-      "ctaDescription": "Read the project guide for its mechanisms, workflow examples, and requirements.",
+      "ctaTitle": "Choose the MausBot execution path for your team",
+      "ctaDescription": "Read the project guide to check the local Agent engine, account, computer connection, and approval needs before deciding what a shared playbook can carry.",
       "ctaPrimary": {
         "label": "View project guide",
         "href": "/skills-marketplace/milind-soni/mausbot"
@@ -1425,8 +1425,8 @@
           "answer": "可以研究角色定义、频道上下文、执行事件、审批请求与可移植团队说明，先判断它解决哪个交接问题，再考虑是否需要应用基础设施。"
         }
       ],
-      "ctaTitle": "了解 MausBot 的工作流设计",
-      "ctaDescription": "进入项目详情，查看机制、适用场景与使用条件。",
+      "ctaTitle": "为团队选择 MausBot 的实际执行路径",
+      "ctaDescription": "阅读项目指南，核对本地 Agent 引擎、账号、计算机连接与批准要求，再判断共享工作手册可以承载哪些内容。",
       "ctaPrimary": {
         "label": "查看项目详情",
         "href": "/zh/skills-marketplace/milind-soni/mausbot"
@@ -1523,8 +1523,8 @@
           "answer": "Preserve the workflow, required models and node versions, representative inputs, and usage conditions for the assets being transferred."
         }
       ],
-      "ctaTitle": "Explore ComfyUI",
-      "ctaDescription": "Read the project guide and identify mechanisms relevant to your workflow.",
+      "ctaTitle": "Validate a ComfyUI graph with one sample",
+      "ctaDescription": "Open the ComfyUI guide to check runtime, models, and custom nodes. Run one representative input and inspect the saved output before planning a batch.",
       "ctaPrimary": {
         "label": "View project guide",
         "href": "/skills-marketplace/comfy-org/comfyui"
@@ -1575,8 +1575,8 @@
           "answer": "应保留工作流、所需模型和节点版本、代表性输入，以及待传递素材的使用条件。"
         }
       ],
-      "ctaTitle": "了解 ComfyUI",
-      "ctaDescription": "查看项目详情，判断哪些方法适合自己的工作流。",
+      "ctaTitle": "用一份样例验证 ComfyUI 图式工作流",
+      "ctaDescription": "打开 ComfyUI 指南，核对运行环境、模型与自定义节点；先运行一份代表性输入并检查保存结果，再安排批量处理。",
       "ctaPrimary": {
         "label": "查看项目详情",
         "href": "/zh/skills-marketplace/comfy-org/comfyui"
@@ -1673,8 +1673,8 @@
           "answer": "Use Graphify-Labs/graphify and the official site linked from it. Read the current default branch rather than assuming it is main."
         }
       ],
-      "ctaTitle": "Explore Graphify",
-      "ctaDescription": "Read the project guide and identify mechanisms relevant to your workflow.",
+      "ctaTitle": "Check a Graphify claim against current source",
+      "ctaDescription": "Review local and hosted processing boundaries, confirm the CLI and Agent guidance, then refresh the graph and verify its findings in the actual code.",
       "ctaPrimary": {
         "label": "View project guide",
         "href": "/skills-marketplace/graphify-labs/graphify"
@@ -1725,8 +1725,8 @@
           "answer": "应采用 Graphify-Labs/graphify 及其指向的官网，读取当前默认分支，不假定一定是 main。"
         }
       ],
-      "ctaTitle": "了解 Graphify",
-      "ctaDescription": "查看项目详情，判断哪些方法适合自己的工作流。",
+      "ctaTitle": "用当前源码核对 Graphify 图谱结论",
+      "ctaDescription": "先了解本地与托管处理边界，确认 CLI 和 Agent 指令可用，再更新图谱，并回到实际代码核实发现。",
       "ctaPrimary": {
         "label": "查看项目详情",
         "href": "/zh/skills-marketplace/graphify-labs/graphify"
@@ -1823,8 +1823,8 @@
           "answer": "Use the canonical repository releases and the product documentation linked from its README. Avoid an unrelated package just because it has the same name."
         }
       ],
-      "ctaTitle": "Explore Orca",
-      "ctaDescription": "Read the project guide and identify mechanisms relevant to your workflow.",
+      "ctaTitle": "Review one Orca result before integration",
+      "ctaDescription": "Check engine authentication and remote-access settings in the Orca guide, then test an accepted change in the combined revision while keeping the merge decision explicit.",
       "ctaPrimary": {
         "label": "View project guide",
         "href": "/skills-marketplace/stablyai/orca"
@@ -1875,8 +1875,8 @@
           "answer": "应查看原始仓库的发行记录及 README 指向的产品文档，不能因为软件包同名就当作同一来源。"
         }
       ],
-      "ctaTitle": "了解 Orca",
-      "ctaDescription": "查看项目详情，判断哪些方法适合自己的工作流。",
+      "ctaTitle": "整合前先审阅一项 Orca 执行结果",
+      "ctaDescription": "在 Orca 指南中核对引擎认证与远程访问设置，再把认可的变更放入整合版本测试，并单独确认合并决定。",
       "ctaPrimary": {
         "label": "查看项目详情",
         "href": "/zh/skills-marketplace/stablyai/orca"

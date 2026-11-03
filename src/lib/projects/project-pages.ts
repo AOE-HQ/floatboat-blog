@@ -1,3 +1,5 @@
+import { howToSchema } from "@/lib/marketing/how-to";
+import { useCasesSchema } from "@/lib/marketing/use-cases";
 import { z } from "zod";
 import data from "@/data/projects/agent-projects.json";
 import { FEATURED_SKILLS, type SkillLocale } from "@/lib/skills/featured-skills";
@@ -17,12 +19,9 @@ const copy = z.object({
   capabilitiesTitle: text,
   capabilitiesIntro: text,
   capabilities: z.array(item).length(3),
-  scenariosTitle: text,
-  scenariosIntro: text,
-  scenarios: z.array(item).length(3),
-  requirementsTitle: text,
-  requirementsIntro: text,
-  requirements: z.array(item).length(3),
+  useCases: useCasesSchema,
+  prerequisites: z.object({ title: text, description: text, items: z.array(item).min(1) }).optional(),
+  howTo: howToSchema.optional(),
   articleTitle: text.optional(),
   articleDescription: text.optional(),
   faq: z.array(z.object({ question: text, answer: text })).min(6),
@@ -48,6 +47,9 @@ const projectSchema = z.object({
   for (const locale of ["en", "zh"] as const) {
     if (project.articleSlug && (!project[locale].articleTitle || !project[locale].articleDescription)) {
       ctx.addIssue({ code: "custom", path: [locale, "articleTitle"], message: "Article links need localized title and description" });
+    }
+    if (!project[locale].prerequisites && !project[locale].howTo) {
+      ctx.addIssue({ code: "custom", path: [locale], message: "Project needs concrete prerequisites or an actionable workflow" });
     }
     const questions = project[locale].faq.map((faq) => faq.question);
     if (new Set(questions).size !== questions.length) ctx.addIssue({ code: "custom", path: [locale, "faq"], message: "FAQ questions must be distinct" });

@@ -163,59 +163,68 @@
       }
     ]
   },
-  "workflows": {
+  "useCases": {
     "title": {
-      "en": "Build the video around the production decision that matters.",
-      "zh": "围绕真正影响成片的制作决策构建视频。"
+      "zh": "用文字、原图与分镜约束视频制作",
+      "en": "Constrain video production with text, source images, and shot plans"
     },
     "description": {
-      "en": "Each workflow begins with a different kind of control rather than the same generic prompt box.",
-      "zh": "每条工作流从不同的控制方式出发，而不是共用一个泛化提示框。"
+      "zh": "概念片、图生视频与草稿比较使用不同素材和检查标准，生成前先确认对应入口与制作条件。",
+      "en": "Concept clips, image-to-video work, and draft comparisons use different materials and checks; confirm the appropriate entry and production conditions first."
     },
     "items": [
       {
-        "title": { "en": "Text-to-video concept", "zh": "文生视频概念片" },
+        "title": {
+          "en": "Text-to-video concept",
+          "zh": "文生视频概念片"
+        },
         "brief": {
-          "en": "Describe subject, camera movement, scene, and audio intent.",
-          "zh": "描述主体、镜头运动、场景与音频意图。"
+          "zh": "主体、场景、镜头运动、时长和音频意图。",
+          "en": "Subject, scene, camera motion, duration, and audio intent."
         },
         "process": {
-          "en": "The full engine turns the production brief into a moving sequence with synchronized audio.",
-          "zh": "完整引擎把制作简报转换为带同步音频的动态序列。"
+          "zh": "将简报组织为镜头约束，使用对应视频工作流生成并审阅画面与声音。",
+          "en": "Translate the brief into shot constraints and review picture/sound through the appropriate video workflow."
         },
         "outcome": {
-          "en": "A reviewable concept clip.",
-          "zh": "一段可审阅的概念视频。"
+          "zh": "可审阅的概念片及需要调整的镜头记录。",
+          "en": "A reviewable concept clip and shot-specific revision notes."
         }
       },
       {
-        "title": { "en": "Animate a key visual", "zh": "让关键视觉动起来" },
+        "title": {
+          "en": "Animate a key visual",
+          "zh": "让关键视觉动起来"
+        },
         "brief": {
-          "en": "Provide a source image and define how the scene should move.",
-          "zh": "提供原始图片并定义场景如何运动。"
+          "zh": "原始关键视觉、应保持的元素和希望出现的运动。",
+          "en": "A source key visual, elements to preserve, and desired motion."
         },
         "process": {
-          "en": "Image-to-video preserves the visual starting point while adding motion.",
-          "zh": "图生视频在保留视觉起点的同时添加运动。"
+          "zh": "以原图作为视觉起点，检查运动是否改变主体或破坏画面关系。",
+          "en": "Use the image as the starting point and check motion against subject/scene consistency."
         },
         "outcome": {
-          "en": "A motion asset connected to the original artwork.",
-          "zh": "一段与原始视觉保持关联的动态资产。"
+          "zh": "与原图关联的动态素材，以及主体一致性检查。",
+          "en": "A source-linked motion asset and subject-consistency checks."
         }
       },
       {
-        "title": { "en": "Storyboard iteration", "zh": "分镜快速迭代" },
+        "title": {
+          "en": "Storyboard iteration",
+          "zh": "分镜快速迭代"
+        },
         "brief": {
-          "en": "Explore several shot directions before committing to final generation.",
-          "zh": "在正式生成前探索多个镜头方向。"
+          "zh": "候选镜头、比较维度与草稿预算。",
+          "en": "Candidate shots, comparison criteria, and a draft budget."
         },
         "process": {
-          "en": "The Fast engine produces draft clips for comparing composition and movement.",
-          "zh": "Fast 引擎生成草稿片段，用于比较构图与运动。"
+          "zh": "以草稿片段比较构图和运动，记录选择依据后再决定正式制作。",
+          "en": "Compare framing/motion in draft clips and record selection reasons before final production."
         },
         "outcome": {
-          "en": "A faster decision on which shot deserves final rendering.",
-          "zh": "更快确定哪个镜头值得进入正式生成。"
+          "zh": "候选片段与选择记录，明确下一轮需要保留的约束。",
+          "en": "Candidate clips and selection notes with constraints for the next round."
         }
       }
     ]
@@ -306,34 +315,59 @@
       ]
     }
   },
-  "steps": {
+  "howTo": {
     "title": {
       "en": "Brief, generate, then review the moving result.",
       "zh": "明确简报、生成视频，再审阅动态结果。"
     },
     "items": [
       {
-        "title": { "en": "Define the shot", "zh": "定义镜头" },
+        "title": {
+          "en": "Define the shot",
+          "zh": "定义镜头"
+        },
         "description": {
           "en": "Set subject, motion, framing, duration, frames, and audio needs.",
           "zh": "明确主体、运动、构图、时长、帧与音频要求。"
+        },
+        "completion": {
+          "en": "The shot brief specifies motion, duration, reference frames, and audio requirements.",
+          "zh": "镜头简报已说明运动、时长、参考帧及音频要求。"
         }
       },
       {
-        "title": { "en": "Choose quality or speed", "zh": "选择质量或速度" },
+        "title": {
+          "en": "Choose quality or speed",
+          "zh": "选择质量或速度"
+        },
         "description": {
           "en": "Use the full model for final work or Fast for early drafts.",
           "zh": "成片使用完整型号，早期草稿使用 Fast。"
+        },
+        "completion": {
+          "en": "The selected variant and generated draft match the intended production stage.",
+          "zh": "所选型号与生成草稿符合当前制作阶段。"
         }
       },
       {
-        "title": { "en": "Review continuity", "zh": "审阅连续性" },
+        "title": {
+          "en": "Review continuity",
+          "zh": "审阅连续性"
+        },
         "description": {
           "en": "Check motion, frames, audio, and brand fit before delivery.",
           "zh": "交付前检查运动、帧、音频与品牌适配度。"
+        },
+        "completion": {
+          "en": "The delivered video has been played through for continuity, audio, and brand consistency.",
+          "zh": "交付视频已完整播放检查连续性、音频和品牌一致性。"
         }
       }
-    ]
+    ],
+    "description": {
+      "en": "Use the video brief to guide generation, then inspect the moving image and audio before delivery.",
+      "zh": "用视频简报约束生成方向，交付前检查动态画面及音频，而不只判断单帧效果。"
+    }
   },
   "faq": [
     {

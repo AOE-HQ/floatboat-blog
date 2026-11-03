@@ -227,44 +227,50 @@
       }
     ]
   },
-  "workflows": {
+  "useCases": {
     "title": {
-      "en": "Use the live OpenAI capability that matches the deliverable.",
-      "zh": "根据交付物选择已经上线的 OpenAI 能力。"
+      "zh": "分开准备产品决策、Agent 编排与图像任务",
+      "en": "Prepare product decisions, agent orchestration, and image work separately"
     },
     "description": {
-      "en": "A reasoning task and an image brief should not be forced through the same product entry.",
-      "zh": "推理任务与图像简报不应被塞进同一个产品入口。"
+      "zh": "推理与代码任务需要项目约束，图像交付还需要视觉简报及对应入口；不能只凭型号名称判断执行方式。",
+      "en": "Reasoning and code work need project constraints; image work also needs a visual brief and the appropriate entry point, beyond the model name."
     },
     "items": [
       {
-        "title": { "en": "Complex product decision", "zh": "复杂产品决策" },
+        "title": {
+          "en": "Complex product decision",
+          "zh": "复杂产品决策"
+        },
         "brief": {
-          "en": "Resolve competing requirements before committing to implementation.",
-          "zh": "在进入实现前解决相互冲突的需求。"
+          "zh": "互相冲突的产品需求、决策标准与不可变约束。",
+          "en": "Conflicting product requirements, decision criteria, and fixed constraints."
         },
         "process": {
-          "en": "Astra follows constraints, compares consequences, and builds an actionable direction.",
-          "zh": "Astra 跟踪约束、比较后果并形成可执行方向。"
+          "zh": "比较选择及其后果，区分事实、假设和需要决策者确认的部分。",
+          "en": "Compare options and consequences, separating facts, assumptions, and decisions requiring confirmation."
         },
         "outcome": {
-          "en": "A reasoned decision ready for the project team.",
-          "zh": "一份可交给项目团队执行的推理结论。"
+          "zh": "能交给项目团队的决策简报与待确认事项。",
+          "en": "A decision brief for the project team and outstanding questions."
         }
       },
       {
-        "title": { "en": "Agent orchestration", "zh": "Agent 编排" },
+        "title": {
+          "en": "Agent orchestration",
+          "zh": "Agent 编排"
+        },
         "brief": {
-          "en": "Coordinate a multi-step task that mixes planning and execution.",
-          "zh": "协调一个混合规划与执行的多步骤任务。"
+          "zh": "多步骤目标、可用工具、步骤依赖和人工审批规则。",
+          "en": "A multistep objective, tools, dependencies, and approval rules."
         },
         "process": {
-          "en": "Astra keeps the instruction hierarchy in view while the task progresses.",
-          "zh": "Astra 在任务推进中持续把握指令层级。"
+          "zh": "梳理指令层级、工具结果与后续动作，保留每阶段的验证节点。",
+          "en": "Map instruction hierarchy, tool results, and subsequent actions with verification at each stage."
         },
         "outcome": {
-          "en": "A coherent run instead of disconnected answers.",
-          "zh": "一段连贯执行，而不是互不相连的回答。"
+          "zh": "任务编排方案，包含输入输出、依赖与失败处理。",
+          "en": "An orchestration plan with inputs/outputs, dependencies, and failure handling."
         }
       },
       {
@@ -273,16 +279,16 @@
           "zh": "根据创意简报生成图像"
         },
         "brief": {
-          "en": "Produce an illustration, cover, or campaign visual.",
-          "zh": "制作插画、封面或活动视觉。"
+          "zh": "用途、画面内容、尺寸、品牌素材及修改要求。",
+          "en": "Intended use, visual content, dimensions, brand assets, and revision requirements."
         },
         "process": {
-          "en": "The `ai-image-drawing` Combo sends the visual task to GPT-Image-2.",
-          "zh": "`ai-image-drawing` Combo 将视觉任务交给 GPT-Image-2。"
+          "zh": "通过对应画图工作流处理视觉简报，比较预览后按要求修订。",
+          "en": "Use the appropriate drawing workflow, compare previews, and revise against the brief."
         },
         "outcome": {
-          "en": "A visual asset rather than another text response.",
-          "zh": "获得视觉资产，而不是另一段文字回答。"
+          "zh": "符合简报的视觉素材，以及可继续修改的说明。",
+          "en": "Visual assets matching the brief and notes for further revisions."
         }
       }
     ]
@@ -372,42 +378,6 @@
         }
       ]
     }
-  },
-  "extensions": {
-    "title": {
-      "en": "Reason, build, respond, or generate.",
-      "zh": "推理、构建、快速响应或生成图像。"
-    },
-    "items": [
-      {
-        "title": "Astra",
-        "description": {
-          "en": "Use when the task needs careful reasoning before action.",
-          "zh": "用于需要先严谨推理、再采取行动的任务。"
-        }
-      },
-      {
-        "title": "Sol",
-        "description": {
-          "en": "Use for implementation-heavy coding and sustained technical work.",
-          "zh": "用于实现密集型编程与持续技术工作。"
-        }
-      },
-      {
-        "title": "Codex",
-        "description": {
-          "en": "Configured code-specialized capacity below the main picker.",
-          "zh": "已在主选择器下层配置代码专用模型容量。"
-        }
-      },
-      {
-        "title": "GPT Image 2",
-        "description": {
-          "en": "Use when the deliverable is visual rather than another block of text.",
-          "zh": "用于交付物是视觉内容，而不是另一段文字的任务。"
-        }
-      }
-    ]
   },
   "faq": [
     {

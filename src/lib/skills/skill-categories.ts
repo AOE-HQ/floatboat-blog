@@ -13,13 +13,14 @@ type Category = {
   seo: Record<SkillLocale, CategoryCopy>;
   hero: Record<SkillLocale, CategoryCopy>;
   intro: Localized;
+  overviewTitle: Localized;
   cta: Record<SkillLocale, { title: string; description: string }>;
   skills: string[];
   decisions: Array<Record<SkillLocale, CategoryCopy>>;
   faq: Record<SkillLocale, Array<{ question: string; answer: string }>>;
 };
 
-const CATEGORY_DATA = categories as Record<string, Category>;
+const CATEGORY_DATA: Record<string, Category> = categories;
 export const SKILL_CATEGORY_SLUGS = Object.keys(CATEGORY_DATA);
 
 type CatalogEntry = {

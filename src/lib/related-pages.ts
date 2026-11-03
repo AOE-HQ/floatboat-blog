@@ -15,8 +15,8 @@ export type RelatedLocale = "en" | "zh";
 const related = {
   ...relatedPages,
   projects: {
-    heading: { en: "Related Agent Projects", zh: "相关 Agent 项目" },
-    description: { en: "Compare independent agents by their workflows, interfaces, and extension mechanisms.", zh: "从工作流、交互入口和扩展方式出发，继续了解其他独立 Agent 项目。" },
+    heading: { en: "Related Open-Source Projects", zh: "相关开源项目" },
+    description: { en: "Explore other open-source projects through their uses, workflows, and operating requirements.", zh: "从用途、工作方式和运行条件出发，继续了解其他开源项目。" },
     links: Object.fromEntries(ALL_PROJECTS.map((project) => [`${project.author}/${project.slug}`, project.related])),
   },
   skills: { ...relatedPages.skills, links: { ...relatedPages.skills.links, ...additionalRelatedPages.skills } },

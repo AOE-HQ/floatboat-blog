@@ -3,12 +3,11 @@ import { getAuthorFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { CategoryArchive, JsonLd } from "@openblog/components";
+import { CategoryArchive } from "@openblog/components";
 import { resolveFeatures, tagToSlug } from "@openblog/core";
 
 import { config } from "@/lib/openblog-config";
 import { createLocaleSiteHelpers } from "@/lib/locale-site";
-import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { getAllPosts, getPostsByAuthor } from "@/lib/posts";
 
 const features = resolveFeatures(config);
@@ -85,15 +84,11 @@ export default async function ZhAuthorPage({ params }: PageProps) {
   }
 
   const authorName = resolveAuthorName(posts, slug);
-  const breadcrumbs = [
-    { name: "博客", path: helpers.blogPath() },
-    { name: authorName, path: helpers.authorPath(slug) },
-  ];
 
   return (
     <>
-      <JsonLd data={buildBreadcrumbJsonLd(breadcrumbs, helpers)} />
       <CategoryArchive
+        archiveType="author"
         categoryName={authorName}
         categorySlug={slug}
         posts={posts}

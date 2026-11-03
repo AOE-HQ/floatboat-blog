@@ -1,3 +1,6 @@
+import { comparisonSchema } from "@/lib/marketing/comparison-table";
+import { howToSchema } from "@/lib/marketing/how-to";
+import { useCasesSchema } from "@/lib/marketing/use-cases";
 import { z } from "zod";
 
 const linkSchema = z.object({
@@ -42,27 +45,9 @@ export const coreFeaturePageSchema = z.object({
     description: z.string().min(1),
     items: z.array(mediaSchema).min(3),
   }),
-  scenario: z.object({
-    title: z.string().min(1),
-    description: z.string().min(1),
-    steps: z.array(z.object({ title: z.string(), description: z.string() })).min(3),
-  }),
-  audiences: z.object({
-    title: z.string().min(1),
-    description: z.string().min(1),
-    items: z.array(mediaSchema).min(3),
-  }),
-  howItWorks: z.object({
-    title: z.string().min(1),
-    description: z.string().min(1),
-    items: z.array(z.object({ title: z.string(), description: z.string() })).min(3),
-  }),
-  comparison: z.object({
-    title: z.string().min(1),
-    description: z.string().min(1),
-    columns: z.tuple([z.string(), z.string()]),
-    rows: z.array(z.object({ label: z.string(), values: z.tuple([z.string(), z.string()]) })).min(3),
-  }),
+  useCases: useCasesSchema,
+  howTo: howToSchema,
+  comparison: comparisonSchema,
   faq: z.object({
     title: z.string().min(1),
     items: z.array(z.object({ question: z.string(), answer: z.string() })).min(6),

@@ -42,11 +42,6 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
     "@context": "https://schema.org", "@type": "CollectionPage", name: t.heroTitle, description: t.heroDescription, url: canonical,
     inLanguage: isZh ? "zh-CN" : "en-US", about: { "@type": profile.type, name: profile.name, url: profile.profileUrl, sameAs: overviewLinks.map((link) => link.href) },
     mainEntity: { "@type": "ItemList", itemListElement: [...skillLinks.map((skill) => ({ name: skill.name, url: skill.href ? `${origin}${skill.href}` : undefined })), ...projects.map((project) => ({ name: project.name, url: project.href.startsWith("/") ? `${origin}${project.href}` : project.href }))].map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, url: item.url })) },
-    breadcrumb: { "@type": "BreadcrumbList", itemListElement: [
-      { "@type": "ListItem", position: 1, name: labels.home, item: `${origin}${isZh ? "/zh" : "/"}` },
-      { "@type": "ListItem", position: 2, name: labels.store, item: `${origin}${isZh ? "/zh" : ""}/skills-marketplace` },
-      { "@type": "ListItem", position: 3, name: profile.name, item: canonical },
-    ] },
   };
 
   return (
@@ -59,14 +54,13 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
 
       <MarketingHero layout="centered" title={publisherHeading(locale, t.heroTitle)} description={t.heroDescription} />
 
-      <OverviewSection
+      <OverviewSection variant="profile"
 
         title={overview.title}
         paragraphs={overview.paragraphs}
-        items={overview.items}
         identity={{ name: profile.name, typeLabel: isOrganization ? (isZh ? "团队 / 组织" : "Organization") : (isZh ? "创作者" : "Creator"), logo: profile.logo, tags: profile.tags?.[locale] }}
         links={overviewLinks}
-        linksTitle={isOrganization ? (isZh ? "组织官网与开源入口" : "Organization links") : (isZh ? "创作者主页与作品入口" : "Creator links")}
+        linksTitle={isOrganization ? (isZh ? "官方入口" : "Official links") : (isZh ? "主页与作品" : "Profile and work")}
       />
 
       {skillLinks.length > 0 && <section aria-labelledby="publisher-skills-title" className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16">

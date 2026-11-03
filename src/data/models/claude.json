@@ -197,59 +197,68 @@
       }
     ]
   },
-  "workflows": {
+  "useCases": {
     "title": {
-      "en": "Use Claude where one missed dependency can undo the whole result.",
-      "zh": "当遗漏一项依赖就可能推翻结果时，交给 Claude。"
+      "zh": "处理依赖紧密的仓库与架构任务",
+      "en": "Work through tightly coupled repository and architecture tasks"
     },
     "description": {
-      "en": "These tasks reward coherence across steps rather than a fast first answer.",
-      "zh": "这些任务看重跨步骤的一致性，而不是最快给出第一版答案。"
+      "zh": "重点是保留跨文件约束、比较设计后果和解释故障机制，具体型号按可用入口与任务要求选择。",
+      "en": "Preserve cross-file constraints, compare design consequences, and explain failure mechanisms; select the available model route for the task."
     },
     "items": [
       {
-        "title": { "en": "Repository-wide refactor", "zh": "全仓库重构" },
+        "title": {
+          "en": "Repository-wide refactor",
+          "zh": "全仓库重构"
+        },
         "brief": {
-          "en": "Change a shared subsystem without breaking existing callers.",
-          "zh": "修改共享子系统，同时保持现有调用方可用。"
+          "zh": "共享子系统、调用方清单、保留接口与测试基线。",
+          "en": "A shared subsystem, callers, interfaces to preserve, and a test baseline."
         },
         "process": {
-          "en": "Trace dependencies, define boundaries, change affected files, and verify the result.",
-          "zh": "追踪依赖、划定边界、修改受影响文件并验证结果。"
+          "zh": "追踪依赖并限定迁移边界，修改后检查调用方和相关测试。",
+          "en": "Trace dependencies, bound the migration, and verify callers and tests after changes."
         },
         "outcome": {
-          "en": "A reviewable multi-file change with its constraints preserved.",
-          "zh": "一组保留约束、可供审查的跨文件变更。"
+          "zh": "保留契约的跨文件变更、迁移说明与测试结果。",
+          "en": "Cross-file changes preserving contracts, migration notes, and test results."
         }
       },
       {
-        "title": { "en": "Architecture decision", "zh": "架构决策" },
+        "title": {
+          "en": "Architecture decision",
+          "zh": "架构决策"
+        },
         "brief": {
-          "en": "Compare competing designs under real project constraints.",
-          "zh": "在真实项目约束下比较多个设计方案。"
+          "zh": "候选架构、真实约束、迁移预算与已知下游依赖。",
+          "en": "Architecture candidates, real constraints, a migration budget, and downstream dependencies."
         },
         "process": {
-          "en": "Keep tradeoffs, migration cost, and downstream impact in the same reasoning chain.",
-          "zh": "把取舍、迁移成本与下游影响放进同一条推理链。"
+          "zh": "比较各方案的取舍、迁移成本与故障后果，标出仍需确认的假设。",
+          "en": "Compare tradeoffs, migration costs, and failure consequences, marking unverified assumptions."
         },
         "outcome": {
-          "en": "A decision that explains both the choice and its consequences.",
-          "zh": "一份同时说明选择与后果的决策结果。"
+          "zh": "可审阅的架构决定，说明选定方向与未决风险。",
+          "en": "A reviewable architecture decision with the chosen direction and remaining risks."
         }
       },
       {
-        "title": { "en": "Cross-file failure trace", "zh": "跨文件故障追踪" },
+        "title": {
+          "en": "Cross-file failure trace",
+          "zh": "跨文件故障追踪"
+        },
         "brief": {
-          "en": "Find a failure whose symptom appears far from its cause.",
-          "zh": "定位症状与根因相距较远的故障。"
+          "zh": "症状、复现步骤、涉及模块与相关日志。",
+          "en": "Symptoms, reproduction steps, affected modules, and relevant logs."
         },
         "process": {
-          "en": "Follow state and calls across modules before proposing a fix.",
-          "zh": "先跨模块追踪状态与调用，再提出修复。"
+          "zh": "跨模块追踪状态和调用，验证根因假设后再修改实现。",
+          "en": "Trace state and calls across modules, testing a root-cause hypothesis before editing."
         },
         "outcome": {
-          "en": "A root-cause fix rather than a local patch over the symptom.",
-          "zh": "针对根因的修复，而不是覆盖症状的局部补丁。"
+          "zh": "针对根因的修复，以及重跑原始故障的证据。",
+          "en": "A root-cause fix and evidence from rerunning the original failure."
         }
       }
     ]
@@ -336,35 +345,6 @@
         }
       ]
     }
-  },
-  "extensions": {
-    "title": {
-      "en": "Work that rewards coherence, not just a quick answer.",
-      "zh": "适合重视长程一致性，而不只是快速回答的任务。"
-    },
-    "items": [
-      {
-        "title": "Architecture reviews",
-        "description": {
-          "en": "Hold constraints, tradeoffs, and dependencies together before proposing a design.",
-          "zh": "在提出设计前，同时把握约束、取舍与依赖关系。"
-        }
-      },
-      {
-        "title": "Repository-scale changes",
-        "description": {
-          "en": "Plan and inspect changes that cross modules instead of treating each file in isolation.",
-          "zh": "规划并检查跨模块修改，而不是孤立处理每个文件。"
-        }
-      },
-      {
-        "title": "Long-running agent work",
-        "description": {
-          "en": "Maintain intent across research, implementation, verification, and revision.",
-          "zh": "在调研、实现、验证和修订之间保持任务意图。"
-        }
-      }
-    ]
   },
   "faq": [
     {

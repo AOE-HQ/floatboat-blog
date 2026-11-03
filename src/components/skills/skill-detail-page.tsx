@@ -1,3 +1,6 @@
+import { localizeUseCases } from "@/lib/marketing/use-cases";
+import { StartInFloatboat } from "@/components/conversion/start-in-floatboat";
+import { getResourceStartTask } from "@/lib/resource-start-tasks";
 import { FaqBand } from "@/components/faq-band";
 import { RelatedPageLinks } from "@/components/related-page-links";
 import { SkillInstallPanel } from "@/components/skills/skill-install-panel";
@@ -17,6 +20,8 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
   const t = labels[locale];
   const isZh = locale === "zh";
   const overview = skill.overview[locale];
+  const resourceId = `${skill.authorHandle}/${skill.slug}`;
+  const startTask = getResourceStartTask(resourceId, locale);
 
   const canonical = `https://floatboat.ai${skillPath(locale, skill.authorHandle, skill.slug)}`;
   const publisherPath = skillPublisherPath(locale, skill.authorHandle);
@@ -39,15 +44,6 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       url: skill.sourceUrl,
       creator: { "@type": skill.publisherType, name: skill.publisher },
     },
-    breadcrumb: {
-      "@type": "BreadcrumbList",
-      itemListElement: breadcrumbs.map((item, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: item.name,
-        item: item.url,
-      })),
-    },
   };
 
   return (
@@ -57,17 +53,18 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
 
       <MarketingHero layout="centered" title={skill.hero.title[locale]} description={skill.hero.description[locale]} />
 
-      <SkillInstallPanel
-        key={`${skill.authorHandle}/${skill.slug}`}
+      <StartInFloatboat
+        key={`${locale}/${resourceId}`}
+        variant="resource"
         locale={locale}
-        name={skill.name}
-        upstreamInstall={skill.upstreamInstall}
-        installation={skill.installation}
-        sourceUrl={skill.sourceUrl}
-        examplePrompt={skill.example.prompt[locale]}
+        pageId={resourceId}
+        copy={startTask}
+        initialTask={skill.example.prompt[locale]}
+        resource={{ name: skill.name, url: skill.sourceUrl }}
+        alternatives={<SkillInstallPanel locale={locale} upstreamInstall={skill.upstreamInstall} installation={skill.installation} />}
       />
 
-      <OverviewSection
+      <OverviewSection variant="profile"
         id="skill-introduction"
         title={overview.title}
         paragraphs={overview.paragraphs}
@@ -76,7 +73,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
           typeLabel: "Agent Skill",
           tags: [skill.category[locale], skill.pageCopy.kind[locale]],
         }}
-        linksTitle={isZh ? "Skill 来源" : "Skill sources"}
+        linksTitle={isZh ? "发布者与来源" : "Publisher and sources"}
         links={[
           { label: isZh ? `提供方：${skill.publisher}` : `By ${skill.publisher}`, href: publisherPath },
           { label: isZh ? "原始 SKILL.md" : "Original SKILL.md", href: skill.sourceUrl },
@@ -85,16 +82,13 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
         ]}
       />
 
-      <UseCasesSection
-        title={skill.sectionTitles.useCases[locale]}
-        description={skill.sectionTitles.useCasesDescription[locale]}
-        items={skill.scenarios.map((item) => ({ label: item.label[locale], title: item.title[locale], description: item.body[locale] }))}
-      />
+      <UseCasesSection {...localizeUseCases(skill.useCases, locale)} locale={locale} />
 
       <HowSection
         title={skill.sectionTitles.how[locale]}
         description={skill.sectionTitles.howDescription[locale]}
-        items={skill.steps.map((step) => ({ title: step.title[locale], description: step.body[locale] }))}
+        locale={locale}
+        items={skill.steps.map((step) => ({ title: step.title[locale], description: step.description[locale], completion: step.completion[locale] }))}
       />
 
       <RelatedPageLinks family="skills" currentId={`${skill.authorHandle}/${skill.slug}`} locale={locale} />

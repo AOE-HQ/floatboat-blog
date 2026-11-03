@@ -10,11 +10,13 @@ export function CategoryArchive({
   categorySlug,
   posts,
   description,
+  archiveType = "category",
 }: {
   categoryName: string;
   categorySlug: string;
   posts: PostMeta[];
   description?: string;
+  archiveType?: "category" | "author";
 }) {
   const { localePrefix } = useOpenBlog();
   const locale = localePrefix === "/zh" ? "zh" : "en";
@@ -31,7 +33,7 @@ export function CategoryArchive({
       posts={posts}
       description={description ?? defaultDescription}
       defaultDescription={defaultDescription}
-      resolvePath={site.categoryPath}
+      resolvePath={archiveType === "author" ? site.authorPath : site.categoryPath}
     />
   );
 }

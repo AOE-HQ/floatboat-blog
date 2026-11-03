@@ -1,3 +1,5 @@
+import { localizedHowStepSchema } from "@/lib/marketing/how-to";
+import { localizedUseCasesSchema } from "@/lib/marketing/use-cases";
 import { z } from "zod";
 
 const text = z.string().trim().min(1);
@@ -36,14 +38,12 @@ const skill = z.object({
   installation: skillInstallationSchema.optional(),
   pageCopy: z.object({ kind: localized }),
   sectionTitles: z.object({
-    useCases: localized,
-    useCasesDescription: localized,
     how: z.object({ en: text.startsWith("How to"), zh: text.startsWith("如何") }),
     howDescription: localized,
   }),
-  scenarios: z.array(z.object({ label: localized, title: localized, body: localized })).length(3),
+  useCases: localizedUseCasesSchema,
   example: z.object({ prompt: localized }),
-  steps: z.array(z.object({ title: localized, body: localized })).length(3),
+  steps: z.array(localizedHowStepSchema).min(1),
   faq: z.array(z.object({ question: localized, answer: localized })).min(6),
 }).superRefine((entry, ctx) => {
   for (const locale of ["en", "zh"] as const) {

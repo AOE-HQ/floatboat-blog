@@ -114,59 +114,68 @@
       }
     ]
   },
-  "workflows": {
+  "useCases": {
     "title": {
-      "en": "The configured value is sustained processing at a lower cost profile.",
-      "zh": "已配置价值在于以较低成本画像承载持续处理。"
+      "zh": "评估长文本队列与媒体分流的资源条件",
+      "en": "Assess resources for long-text queues and media routing"
     },
     "description": {
-      "en": "These tasks match the configured capacity role. MiniMax M2 was absent from the October 9, 2026 main-picker record; check the current client menu.",
-      "zh": "以下属于容量场景，不代表当前可以直接使用。"
+      "zh": "以下是围绕已记录文本容量的规划任务，不代表当前账号可以直接执行；实际访问条件需要先核对。",
+      "en": "These planning tasks concern recorded text capacity, not assured account access; verify actual entry conditions first."
     },
     "items": [
       {
-        "title": { "en": "Long text queue", "zh": "长文本队列" },
+        "title": {
+          "en": "Long text queue",
+          "zh": "长文本队列"
+        },
         "brief": {
-          "en": "Process extended textual material where economy matters.",
-          "zh": "在重视经济性的前提下处理较长文本材料。"
+          "zh": "待处理长文本、队列量、输出要求与检查样本。",
+          "en": "Long texts, queue volume, output requirements, and check samples."
         },
         "process": {
-          "en": "The 1M low-cost profile defines the intended runtime role.",
-          "zh": "1M 低成本画像定义了预期运行时角色。"
+          "zh": "比较输入规模和已记录预算，先核对可用通道，再规划分批与抽样复核。",
+          "en": "Compare input scale with recorded budgets, verify access, then plan batching and spot checks."
         },
         "outcome": {
-          "en": "A prepared route for sustained textual workloads.",
-          "zh": "一条为持续文本工作负载准备的路径。"
+          "zh": "包含访问前提、分批规则和样本检查的队列方案。",
+          "en": "A queue plan with access prerequisites, batch rules, and sample verification."
         }
       },
       {
-        "title": { "en": "Cost-aware planning", "zh": "成本导向规划" },
+        "title": {
+          "en": "Cost-aware planning",
+          "zh": "成本导向规划"
+        },
         "brief": {
-          "en": "Evaluate which future workloads warrant an economical long-context option.",
-          "zh": "评估哪些未来工作值得使用经济型长上下文选项。"
+          "zh": "候选任务、资源预算、质量底线和响应时限。",
+          "en": "Candidate tasks, resource budgets, quality thresholds, and response deadlines."
         },
         "process": {
-          "en": "Compare the configured context budget with the task requirements, and confirm a supported model-access path.",
-          "zh": "将已配置上下文预算与任务要求比较，并确认受支持的模型访问方式。"
+          "zh": "把任务要求与配置记录对照，不用预期成本画像代替实际测量。",
+          "en": "Compare requirements with configuration records without replacing measurements with expected cost profiles."
         },
         "outcome": {
-          "en": "A realistic capacity plan.",
-          "zh": "一份现实的容量规划。"
+          "zh": "需要验证的资源假设、试运行样本和采用条件。",
+          "en": "Resource assumptions to test, pilot samples, and adoption criteria."
         }
       },
       {
-        "title": { "en": "Media workflow separation", "zh": "媒体工作流分离" },
+        "title": {
+          "en": "Media workflow separation",
+          "zh": "媒体工作流分离"
+        },
         "brief": {
-          "en": "Avoid confusing text capacity with image or video integrations.",
-          "zh": "避免把文本容量与图像或视频集成混为一谈。"
+          "zh": "同时含有文本、图像或视频的交付清单。",
+          "en": "A deliverable list containing text, images, or video."
         },
         "process": {
-          "en": "Use the dedicated image or video workflow for media deliverables; MiniMax M2’s configured role is text processing.",
-          "zh": "图像或视频交付物使用对应专用工作流；MiniMax M2 的已配置角色是文本处理。"
+          "zh": "分别确定文本处理与媒体工作流的入口和依赖，检查各自输出。",
+          "en": "Identify separate text/media routes and dependencies and verify each output."
         },
         "outcome": {
-          "en": "A clearer product path for each deliverable.",
-          "zh": "每种交付物都有更清晰的产品路径。"
+          "zh": "按交付类型分开的流程与接入要求。",
+          "en": "Workflows and access requirements separated by deliverable type."
         }
       }
     ]
@@ -285,12 +294,12 @@
   ],
   "finalCta": {
     "title": {
-      "en": "Compare models for high-volume text work",
-      "zh": "比较高用量文本任务的模型入口"
+      "en": "Plan a text queue with batching and sample checks",
+      "zh": "为文本队列安排分批与抽样核对"
     },
     "description": {
-      "en": "Use the configuration record as a reference, then confirm the current model menu and account access. Compare candidates with the same files, tools, and acceptance criteria.",
-      "zh": "以配置记录为参考，再确认当前模型菜单与账号资格。用相同文件、工具和验收标准比较候选模型，选择适合实际任务的入口。"
+      "en": "Estimate input volume, output requirements, and review samples. Check the available MiniMax route and recorded budget before deciding how to batch the queue.",
+      "zh": "先估算输入量、输出要求和复核样本；核对可用的 MiniMax 入口及已记录预算，再决定队列如何分批处理。"
     }
   }
 }

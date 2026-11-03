@@ -1571,8 +1571,8 @@
           "answer": "TypeScript adds type checking and tooling to JavaScript development. It can support application code regardless of hosting provider; it does not itself deploy an application or replace Azure infrastructure configuration."
         }
       ],
-      "ctaTitle": "Explore Microsoft Projects and Skills",
-      "ctaDescription": "Start with the task you want to complete, compare the selected Skills and software projects, and open their original documentation to understand the workflow, environment, and integration options before choosing your next step.",
+      "ctaTitle": "Select guidance for a concrete development change",
+      "ctaDescription": "Start from the code and toolchain involved in your change. Compare the selected instructions with the VS Code and TypeScript project references, then check the relevant setup requirements.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
         "href": "/skills-marketplace/microsoft#publisher-skills-title"
@@ -1626,8 +1626,8 @@
           "answer": "TypeScript 为 JavaScript 开发增加类型检查和工具支持，与应用最终使用哪个云平台没有绑定关系。它可以帮助开发应用代码，但不负责部署应用或替代 Azure 基础设施配置。"
         }
       ],
-      "ctaTitle": "探索 Microsoft 项目与 Skills",
-      "ctaDescription": "从当前要完成的任务出发，比较精选 Skills 与相关软件项目，打开原始资料了解具体操作、运行环境和集成方式，选择适合自己的下一步。",
+      "ctaTitle": "为一项具体开发修改选择指引",
+      "ctaDescription": "从这次修改涉及的代码和工具链出发，对照精选指令与 VS Code、TypeScript 项目资料，再核对相关环境要求。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
         "href": "/zh/skills-marketplace/microsoft#publisher-skills-title"
@@ -1795,8 +1795,8 @@
           "answer": "It combines calendar schedules with unfinished tasks to prepare a planning or standup summary. The workflow needs the relevant calendar and task access, and its output reflects the information available to the authorized user."
         }
       ],
-      "ctaTitle": "Explore Feishu Open Platform Projects and Skills",
-      "ctaDescription": "Start with the task you want to complete, compare the selected Skills and software projects, and open their original documentation to understand the workflow, environment, and integration options before choosing your next step.",
+      "ctaTitle": "Connect a Feishu office task to the right commands",
+      "ctaDescription": "Choose a document, message, calendar, or table task from the selected guidance. Confirm the application identity, authorized scope, and intended recipient before allowing an operation.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
         "href": "/skills-marketplace/open.feishu.cn#publisher-skills-title"
@@ -1850,8 +1850,8 @@
           "answer": "该工作流结合日历安排与未完成任务生成规划摘要，需要对应的日历和任务访问权限。结果以已授权用户实际可见的信息为基础，适合整理当天安排和后续事项。"
         }
       ],
-      "ctaTitle": "探索 飞书开放平台 项目与 Skills",
-      "ctaDescription": "从当前要完成的任务出发，比较精选 Skills 与相关软件项目，打开原始资料了解具体操作、运行环境和集成方式，选择适合自己的下一步。",
+      "ctaTitle": "为飞书办公任务选择对应命令",
+      "ctaDescription": "从文档、消息、日历或表格任务选择对应指引；执行操作前，确认应用身份、授权范围及目标接收方。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
         "href": "/zh/skills-marketplace/open.feishu.cn#publisher-skills-title"
@@ -1986,8 +1986,8 @@
           "answer": "No. The official site distinguishes free-license eligibility from paid company licensing. Source availability and GitHub access do not imply unlimited free use; check the current license and terms for your organization and project."
         }
       ],
-      "ctaTitle": "Explore Remotion Projects and Skills",
-      "ctaDescription": "Start with the task you want to complete, compare the selected Skills and software projects, and open their original documentation to understand the workflow, environment, and integration options before choosing your next step.",
+      "ctaTitle": "Turn a video brief into editable React scenes",
+      "ctaDescription": "Use the selected Remotion instructions to organize assets, composition timing, and parameters. Check the Studio preview before choosing the render settings for the final file.",
       "ctaPrimary": {
         "label": "Browse selected Skills",
         "href": "/skills-marketplace/remotion-dev#publisher-skills-title"
@@ -2041,8 +2041,8 @@
           "answer": "不是。官网区分免费许可资格与付费公司许可。能够访问源码和 GitHub 仓库，不代表所有用途都可以无限免费使用；应按照实际组织和项目查看当前许可与条款。"
         }
       ],
-      "ctaTitle": "探索 Remotion 项目与 Skills",
-      "ctaDescription": "从当前要完成的任务出发，比较精选 Skills 与相关软件项目，打开原始资料了解具体操作、运行环境和集成方式，选择适合自己的下一步。",
+      "ctaTitle": "把视频简报转成可编辑的 React 场景",
+      "ctaDescription": "用精选 Remotion 指令组织素材、合成时序和参数，先检查 Studio 预览，再决定最终文件的渲染设置。",
       "ctaPrimary": {
         "label": "浏览精选 Skills",
         "href": "/zh/skills-marketplace/remotion-dev#publisher-skills-title"
@@ -3832,8 +3832,8 @@
           "answer": "The current instruction targets existing Wrangler configuration or an explicit Wrangler request. It routes new or differently configured projects toward the appropriate Cloudflare CLI guidance, so first inspect the project configuration."
         }
       ],
-      "ctaTitle": "Explore Cloudflare Projects and Skills",
-      "ctaDescription": "Compare the selected Skills and software projects against the task at hand. Understand the roles of instructions, tools, and runtime environments, then plan the development workflow and next step that fit your needs.",
+      "ctaTitle": "Choose between a code audit and an Agent implementation",
+      "ctaDescription": "Compare the security-audit and Agents SDK instructions against the task at hand. For a review, prepare scope and evidence; for an implementation, check the runtime and state requirements.",
       "ctaPrimary": {
         "label": "View selected Skills",
         "href": "/skills-marketplace/cloudflare#publisher-skills-title"
@@ -3887,8 +3887,8 @@
           "answer": "当前指引面向已有 Wrangler 配置的项目或明确提出的 Wrangler 任务。对于新项目或其他配置形式，它会转向相应的 Cloudflare CLI 指引，因此应先检查项目配置。"
         }
       ],
-      "ctaTitle": "探索 Cloudflare 项目与 Skills",
-      "ctaDescription": "根据当前任务比较精选 Skills 与软件项目，了解指引、工具和运行环境分别承担的职责，再结合官方资料规划适合自己的开发流程与下一步工作。",
+      "ctaTitle": "区分代码审计与 Agent 应用实现",
+      "ctaDescription": "按当前任务比较安全审计与 Agents SDK 指令：审查需要明确范围和证据，实现应用则需要核对运行环境与状态要求。",
       "ctaPrimary": {
         "label": "查看精选 Skills",
         "href": "/zh/skills-marketplace/cloudflare#publisher-skills-title"
@@ -4028,8 +4028,8 @@
           "answer": "The repository identifies CC-BY-SA-4.0. Attribution and share-alike requirements should be checked when reusing its material. This does not set the license for every Trail of Bits software project; each repository supplies its own terms."
         }
       ],
-      "ctaTitle": "Explore Trail of Bits Projects and Skills",
-      "ctaDescription": "Compare the selected Skills and software projects against the task at hand. Understand the roles of instructions, tools, and runtime environments, then plan the development workflow and next step that fit your needs.",
+      "ctaTitle": "Match the security question to the review method",
+      "ctaDescription": "Use the Skill list to distinguish codebase context building, security review of a diff, and property-based testing. State the assumptions or invariants the investigation must check.",
       "ctaPrimary": {
         "label": "View selected Skills",
         "href": "/skills-marketplace/trailofbits#publisher-skills-title"
@@ -4083,8 +4083,8 @@
           "answer": "仓库标注 CC-BY-SA-4.0，复用材料时应查看署名与相同方式共享要求。这并不意味着其他 Trail of Bits 软件项目采用同一许可，每个仓库仍有自己的条款。"
         }
       ],
-      "ctaTitle": "探索 Trail of Bits 项目与 Skills",
-      "ctaDescription": "根据当前任务比较精选 Skills 与软件项目，了解指引、工具和运行环境分别承担的职责，再结合官方资料规划适合自己的开发流程与下一步工作。",
+      "ctaTitle": "按安全问题选择审查方法",
+      "ctaDescription": "从 Skill 列表区分代码上下文调查、变更安全审查和属性测试，并写明本次分析需要核实的假设或不变量。",
       "ctaPrimary": {
         "label": "查看精选 Skills",
         "href": "/zh/skills-marketplace/trailofbits#publisher-skills-title"
@@ -4224,8 +4224,8 @@
           "answer": "No. Access depends on the authenticated client or integration, its permission scopes, and the user’s repository rights. An instruction file alone does not supply credentials or change organization access controls."
         }
       ],
-      "ctaTitle": "Explore GitHub Projects and Skills",
-      "ctaDescription": "Compare the selected Skills and software projects against the task at hand. Understand the roles of instructions, tools, and runtime environments, then plan the development workflow and next step that fit your needs.",
+      "ctaTitle": "Choose a GitHub instruction for the next repository change",
+      "ctaDescription": "Start with commit preparation, README work, or a bounded refactor. Use the matching instructions with the actual diff and repository rules; assess CLI or MCP access separately.",
       "ctaPrimary": {
         "label": "View selected Skills",
         "href": "/skills-marketplace/github#publisher-skills-title"
@@ -4279,8 +4279,8 @@
           "answer": "不会。访问范围取决于已经认证的客户端或集成、授权权限以及用户实际拥有的仓库权限。指令文件本身不提供凭据，也不会改变组织的访问控制。"
         }
       ],
-      "ctaTitle": "探索 GitHub 项目与 Skills",
-      "ctaDescription": "根据当前任务比较精选 Skills 与软件项目，了解指引、工具和运行环境分别承担的职责，再结合官方资料规划适合自己的开发流程与下一步工作。",
+      "ctaTitle": "为下一项仓库变更选择 GitHub 指引",
+      "ctaDescription": "从提交准备、README 编写或范围明确的重构出发，结合实际差异和仓库规则选择对应指令；CLI 或 MCP 的访问条件另行核对。",
       "ctaPrimary": {
         "label": "查看精选 Skills",
         "href": "/zh/skills-marketplace/github#publisher-skills-title"

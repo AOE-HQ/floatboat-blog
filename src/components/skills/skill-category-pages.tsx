@@ -1,3 +1,4 @@
+import { OverviewSection } from "@/components/marketing/overview-section";
 import hubFaqs from "@/data/landing-hub-faqs.json";
 import Link from "next/link";
 
@@ -27,11 +28,11 @@ export function SkillCategoryHub({ locale }: { locale: SkillLocale }) {
   const isZh = locale === "zh";
   const labels = isZh ? {
     title: "按任务探索 Agent Skills", description: "从编码、开发流程、界面设计、写作营销和部署浏览器工作出发，找到更贴近当前任务的指引。发布者和原始来源始终清楚标注。",
-    section: "选择工作方向", scope: "这份目录收录什么", scopeCopy: "这里是 Floatboat 对第三方 Agent Skills 的独立分类，不是完整的 Combo 商城清单。已有本站说明的 Skill 可以打开详情指南，其余条目仅展示用途与发布者，不提供跳转；浏览页面不代表 Skill 已预装或发布者为 Floatboat 背书。",
+    section: "选择工作方向", scope: "这份目录收录什么", scopeCopy: ["这份目录按编码、设计、写作与部署等任务整理第三方 Agent Skills，帮助你比较指令的用途，并找到发布者和原始说明。", "已有本站指南的 Skill 可以打开详情；其余条目展示用途与发布者，暂不提供跳转。使用前请核对原始说明中的工具、安装方式和权限要求。"],
     count: "项精选 Skill", view: "查看分类", ctaTitle: "把任务和来源放在一起", ctaDescription: "先选合适的指引，再带着真实文件和问题继续工作。", download: "下载 Floatboat",
   } : {
     title: "Explore Agent Skills by Task", description: "Find instructions for coding, development workflows, interface design, writing and marketing, or deployment and browser work. Publisher and original source remain visible.",
-    section: "Choose a Work Area", scope: "What This Directory Covers", scopeCopy: "This is Floatboat's independent classification of third-party Agent Skills, not the complete Combo marketplace. Skills with a local guide open that page; other entries display their purpose and publisher without a link. A listing does not mean preinstallation or publisher endorsement.",
+    section: "Choose a Work Area", scope: "What This Directory Covers", scopeCopy: ["This directory groups third-party Agent Skills by tasks such as coding, design, writing, and deployment. Compare what each instruction does, then find its publisher and original documentation.", "Skills with a local guide open that page. Other entries show their purpose and publisher without a link. Before use, check the original instructions for tools, installation steps, and permissions."],
     count: "selected Skills", view: "Explore Category", ctaTitle: "Keep the Task and Source Together", ctaDescription: "Choose the right instruction, then continue with the actual files and question in view.", download: "Download Floatboat",
   };
   const categories = SKILL_CATEGORY_SLUGS.map((slug) => ({ slug, page: getSkillCategory(slug)!, count: getCategorySkills(slug, locale).length }));
@@ -52,7 +53,7 @@ export function SkillCategoryHub({ locale }: { locale: SkillLocale }) {
         </Link>)}
       </div>
     </section>
-    <section className="border-y border-black/[0.07] bg-white/35 px-5 py-14 sm:px-8"><div className="mx-auto max-w-4xl"><h2 className="font-serif text-3xl tracking-tight">{labels.scope}</h2><p className="mt-4 leading-8 text-[var(--ob-color-text-subtle)]">{labels.scopeCopy}</p></div></section>
+    <OverviewSection variant="prose" id="directory-scope" title={labels.scope} paragraphs={labels.scopeCopy} />
     <FaqBand locale={locale} items={hubFaqs.skillCategories[locale]} />
     <FinalCta  title={labels.ctaTitle} description={labels.ctaDescription} primary={{ label: labels.download, href: `${isZh ? "/zh" : ""}/download/success?from=skill-categories&download_placement=final_cta` }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
@@ -75,7 +76,7 @@ export function SkillCategoryDetail({ locale, slug }: { locale: SkillLocale; slu
   return <main className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
     <Breadcrumb locale={locale} current={category.label[locale]} />
     <MarketingHero layout="centered" title={category.hero[locale].title} description={category.hero[locale].description} />
-    <section className="mx-auto max-w-4xl px-5 pb-14 sm:px-8 sm:pb-16"><p className="border-t border-black/[0.08] pt-8 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{category.intro[locale]}</p></section>
+    <OverviewSection variant="prose" id="category-introduction" title={category.overviewTitle[locale]} paragraphs={[category.intro[locale]]} />
 
     <section className="border-y border-black/[0.07] bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
       <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">{labels.skills}</h2>

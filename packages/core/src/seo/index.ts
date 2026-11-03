@@ -43,7 +43,7 @@ export function buildBlogPostingJsonLd(post: Post | PostMeta, site: SiteHelpers)
 
 export function buildBreadcrumbJsonLd(
   items: { name: string; path: string }[],
-  site: SiteHelpers,
+  site: Pick<SiteHelpers, "absoluteUrl">,
 ) {
   return {
     "@context": "https://schema.org",

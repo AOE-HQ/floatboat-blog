@@ -1,3 +1,5 @@
+import { localizedHowToSchema, type LocalizedHowStep } from "@/lib/marketing/how-to";
+import { localizedUseCasesSchema, type LocalizedUseCases } from "@/lib/marketing/use-cases";
 import autoMode from "@/data/models/auto-mode.json";
 import claude from "@/data/models/claude.json";
 import deepseek from "@/data/models/deepseek.json";
@@ -71,16 +73,7 @@ export type ModelFamily = {
     description: Localized;
     items: Card[];
   };
-  workflows: {
-    title: Localized;
-    description: Localized;
-    items: Array<{
-      title: Localized;
-      brief: Localized;
-      process: Localized;
-      outcome: Localized;
-    }>;
-  };
+  useCases: LocalizedUseCases;
   capabilities: {
     title: Localized;
     description: Localized;
@@ -91,22 +84,8 @@ export type ModelFamily = {
     choose: { title: Localized; items: Localized[] };
     alternative: { title: Localized; items: Localized[] };
   };
-  steps?: {
-    title: Localized;
-    items: Array<{ title: Localized; description: Localized }>;
-  };
-  extensions?: {
-    title: Localized;
-    items: Array<{ title: string; description: Localized }>;
-  };
-  comparison?: {
-    title: Localized;
-    description: Localized;
-    rows: Array<{
-      label: Localized;
-      values: [Localized, Localized, Localized];
-    }>;
-  };
+  mechanism?: { title: Localized; items: ContentItem[] };
+  howTo?: { title: Localized; description: Localized; items: LocalizedHowStep[] };
   faq: Array<{ question: Localized; answer: Localized }>;
   finalCta: { title: Localized; description: Localized };
 };
@@ -123,6 +102,11 @@ export const MODEL_FAMILIES = [
   glm,
   minimax,
 ] as ModelFamily[];
+
+for (const model of MODEL_FAMILIES) {
+  localizedUseCasesSchema.parse(model.useCases);
+  if (model.howTo) localizedHowToSchema.parse(model.howTo);
+}
 
 export function localize(value: Localized, locale: ModelLocale) {
   return value[locale];
