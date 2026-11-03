@@ -76,3 +76,7 @@ Marketing pages, directory hubs, and published blog archives require at least si
 ## Hero contract
 
 Use the shared `Hero` from `@openblog/components`; marketing/blog components are data adapters. Select only `centered` or `split`. Keep one H1 and a page-specific introduction, with metadata below; no eyebrow, local title italics or partial title accent color. Hero media may be an image, video or demonstration, never a navigation panel. Split requires media and stacks text before media on mobile. Permit at most one direct-conversion action, otherwise omit it; secondary reading/navigation links belong outside Hero.
+
+## Marketplace name intake
+
+For requested project or Skill additions, including name-only requests, first read the "名称输入到分类与建页" workflow in the Floatboat context `product/floatboat-skills-ecosystem.md` (Mac: `~/Documents/Codex/clients/floatboat/`; Windows: `E:\clients\floatboat\`). Verify the canonical upstream and license, distinguish software from task instructions, and check existing project/Skill routes before creating a page. Reuse an existing canonical page for the same work; complementary tools do not become duplicates merely because they cooperate. Complete both locales, reviewed publisher data, aggregate links, related links, share assets, and sitemap coverage. Commit locally after validation; pushing and PR creation still require the owner's explicit request.

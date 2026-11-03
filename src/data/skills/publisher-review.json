@@ -495,6 +495,45 @@
       "repositories": [
         "milind-soni/OpenMausBot"
       ]
+    },
+    "comfy-org": {
+      "status": "approved",
+      "checkedAt": "2026-11-03",
+      "representativeRepository": "Comfy-Org/ComfyUI",
+      "stars": 144699,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-03T04:04:21Z",
+      "reason": "已核对原始组织、当前 README、默认分支与实际许可证；代表仓库超过1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "Comfy-Org/ComfyUI"
+      ]
+    },
+    "graphify-labs": {
+      "status": "approved",
+      "checkedAt": "2026-11-03",
+      "representativeRepository": "Graphify-Labs/graphify",
+      "stars": 141306,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-02T19:38:53Z",
+      "reason": "已核对原始组织、当前 README、默认分支与实际许可证；代表仓库超过1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "Graphify-Labs/graphify"
+      ]
+    },
+    "stablyai": {
+      "status": "approved",
+      "checkedAt": "2026-11-03",
+      "representativeRepository": "stablyai/orca",
+      "stars": 113767,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-03T04:18:20Z",
+      "reason": "已核对原始组织、当前 README、默认分支与实际许可证；代表仓库超过1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "stablyai/orca"
+      ]
     }
   }
 }

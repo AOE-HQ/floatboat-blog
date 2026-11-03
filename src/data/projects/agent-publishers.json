@@ -1432,5 +1432,455 @@
         "href": "/zh/skills-marketplace/milind-soni/mausbot"
       }
     }
+  },
+  "comfy-org": {
+    "name": "Comfy Org",
+    "type": "Organization",
+    "profileUrl": "https://github.com/Comfy-Org",
+    "logo": "/blog/brand/publishers/comfy-org.webp",
+    "tags": {
+      "en": [
+        "Visual Workflow Engine",
+        "Open source"
+      ],
+      "zh": [
+        "视觉工作流引擎",
+        "开源软件"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/Comfy-Org",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.comfy.org/",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "ComfyUI",
+        "url": "https://github.com/Comfy-Org/ComfyUI",
+        "en": {
+          "kind": "Visual Workflow Engine",
+          "description": "Build and reuse node-based generative-media workflows, preserving models, custom-node dependencies, and reviewable outputs."
+        },
+        "zh": {
+          "kind": "视觉工作流引擎",
+          "description": "构建并复用节点式生成媒体工作流，保留模型、自定义节点依赖与可审阅输出。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Comfy Org: Node-Based Creative Tools | Floatboat",
+      "seoDescription": "Develops ComfyUI and its open ecosystem for node-based generative-media workflows.",
+      "heroTitle": "Comfy Org: Node-Based Creative Tools",
+      "heroDescription": "Develops ComfyUI and its open ecosystem for node-based generative-media workflows.",
+      "overview": {
+        "title": "About Comfy Org",
+        "paragraphs": [
+          "Comfy Org maintains the ComfyUI ecosystem, including the open core, frontend, and desktop distribution. These components support different parts of node-based media creation: graph editing, workflow execution, and access to a usable local application.",
+          "For work organized in Floatboat, study how a prepared brief becomes a bounded media-generation step and how its outputs return for review. Local execution, paid cloud services, and partner-model API nodes have different requirements. The core license does not grant rights to every model, extension, or generated asset."
+        ]
+      },
+      "aboutTitle": "About Comfy Org",
+      "about": "Comfy Org maintains the ComfyUI ecosystem, including the open core, frontend, and desktop distribution. These components support different parts of node-based media creation: graph editing, workflow execution, and access to a usable local application.",
+      "projectsTitle": "Comfy Org Projects",
+      "projectsIntro": "Explore the representative project, its mechanisms, and its operating conditions.",
+      "skillsTitle": "Comfy Org Skills",
+      "skillsIntro": "Explore task instructions and their original sources.",
+      "faqTitle": "Comfy Org FAQ",
+      "faq": [
+        {
+          "question": "What does Comfy Org maintain?",
+          "answer": "ComfyUI is the representative project here. Its core, frontend, and desktop repositories form a related software ecosystem."
+        },
+        {
+          "question": "Why are core, frontend, and desktop kept together here?",
+          "answer": "They serve one product workflow but have different engineering responsibilities. A repository split alone does not require separate introductory pages."
+        },
+        {
+          "question": "Is ComfyUI a collection of Skills?",
+          "answer": "No. It is a node-based application and execution engine; instructions for an agent to operate it are a separate form of content."
+        },
+        {
+          "question": "Does a core license cover third-party model weights?",
+          "answer": "No. The core uses GPL-3.0; weights, custom nodes, API providers, and input media must be checked separately."
+        },
+        {
+          "question": "How do local and cloud offerings differ?",
+          "answer": "Local execution depends on your hardware and installed components. Hosted compute and partner API services have their own access and charges."
+        },
+        {
+          "question": "What should be checked before sharing a workflow?",
+          "answer": "Preserve the workflow, required models and node versions, representative inputs, and usage conditions for the assets being transferred."
+        }
+      ],
+      "ctaTitle": "Explore ComfyUI",
+      "ctaDescription": "Read the project guide and identify mechanisms relevant to your workflow.",
+      "ctaPrimary": {
+        "label": "View project guide",
+        "href": "/skills-marketplace/comfy-org/comfyui"
+      }
+    },
+    "zh": {
+      "seoTitle": "Comfy Org：节点式创作工具 | Floatboat",
+      "seoDescription": "维护 ComfyUI 及相关开源生态，通过节点图组织生成媒体与可复用制作流程。",
+      "heroTitle": "Comfy Org：节点式创作工具",
+      "heroDescription": "维护 ComfyUI 及相关开源生态，通过节点图组织生成媒体与可复用制作流程。",
+      "overview": {
+        "title": "关于 Comfy Org",
+        "paragraphs": [
+          "Comfy Org 维护 ComfyUI 生态，包括开源核心、前端与桌面发行版。不同组件分别支撑节点图编辑、工作流执行及本地应用使用，围绕生成媒体制作协作。",
+          "在 Floatboat 中组织工作时，可以借鉴它如何把创作需求转换为有边界的生成步骤，再将输出交回审阅。本地运行、付费云服务和合作模型 API 节点有不同条件；核心许可不覆盖所有模型、扩展或生成素材的权利。"
+        ]
+      },
+      "aboutTitle": "关于 Comfy Org",
+      "about": "Comfy Org 维护 ComfyUI 生态，包括开源核心、前端与桌面发行版。不同组件分别支撑节点图编辑、工作流执行及本地应用使用，围绕生成媒体制作协作。",
+      "projectsTitle": "Comfy Org 的开源项目",
+      "projectsIntro": "了解代表作品的机制、用途和运行条件。",
+      "skillsTitle": "Comfy Org 的 Skills",
+      "skillsIntro": "查看独立任务指引与原始来源。",
+      "faqTitle": "Comfy Org 常见问题",
+      "faq": [
+        {
+          "question": "Comfy Org 维护什么？",
+          "answer": "这里的代表项目是 ComfyUI，其核心、前端和桌面仓库共同构成相关软件生态。"
+        },
+        {
+          "question": "为什么这里一起介绍核心、前端和桌面版？",
+          "answer": "它们服务同一产品流程，但工程职责不同；仅仅拆成多个仓库，不需要分别建立介绍页。"
+        },
+        {
+          "question": "ComfyUI 是 Skills 集合吗？",
+          "answer": "不是。它是节点式应用与执行引擎，指导 Agent 使用它的指令属于另一种内容形态。"
+        },
+        {
+          "question": "核心许可覆盖第三方模型权重吗？",
+          "answer": "不覆盖。核心使用 GPL-3.0，权重、自定义节点、API 供应方与输入媒体需要分别核对。"
+        },
+        {
+          "question": "本地与云端方案有什么区别？",
+          "answer": "本地执行取决于硬件和已安装组件，托管计算与合作 API 服务有独立访问条件和费用。"
+        },
+        {
+          "question": "共享工作流前需要检查什么？",
+          "answer": "应保留工作流、所需模型和节点版本、代表性输入，以及待传递素材的使用条件。"
+        }
+      ],
+      "ctaTitle": "了解 ComfyUI",
+      "ctaDescription": "查看项目详情，判断哪些方法适合自己的工作流。",
+      "ctaPrimary": {
+        "label": "查看项目详情",
+        "href": "/zh/skills-marketplace/comfy-org/comfyui"
+      }
+    }
+  },
+  "graphify-labs": {
+    "name": "Graphify Labs",
+    "type": "Organization",
+    "profileUrl": "https://github.com/Graphify-Labs",
+    "logo": "/blog/brand/publishers/graphify-labs.webp",
+    "tags": {
+      "en": [
+        "Knowledge Graph Tool + Skill",
+        "Open source"
+      ],
+      "zh": [
+        "知识图谱工具＋Skill",
+        "开源软件"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/Graphify-Labs",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://graphify.com/",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "en": {
+          "kind": "Knowledge Graph Tool + Skill",
+          "description": "Build queryable code knowledge graphs with a local CLI and agent guidance, keeping relationship provenance and source revision visible."
+        },
+        "zh": {
+          "kind": "知识图谱工具＋Skill",
+          "description": "通过本地 CLI 与 Agent 指引构建可查询代码图谱，保留关系来源与代码版本。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Graphify Labs: Code Graphs and Agent Context | Floatboat",
+      "seoDescription": "Develops Graphify’s code knowledge graphs, local tooling, and agent integrations.",
+      "heroTitle": "Graphify Labs: Code Graphs and Agent Context",
+      "heroDescription": "Develops Graphify’s code knowledge graphs, local tooling, and agent integrations.",
+      "overview": {
+        "title": "About Graphify Labs",
+        "paragraphs": [
+          "Graphify Labs publishes the Graphify knowledge-graph project and its agent integrations. Its open local tool provides a way to parse repository structure, persist relationships, and query relevant context; hosted services are a separate part of the organization’s offering.",
+          "For a Floatboat repository task, use the graph as a map to relevant source files and relationships before reviewing the actual code. Keep the graph current with the source revision. The Apache-2.0 local tool and hosted Graphify services have distinct setup, data-processing, and commercial conditions."
+        ]
+      },
+      "aboutTitle": "About Graphify Labs",
+      "about": "Graphify Labs publishes the Graphify knowledge-graph project and its agent integrations. Its open local tool provides a way to parse repository structure, persist relationships, and query relevant context; hosted services are a separate part of the organization’s offering.",
+      "projectsTitle": "Graphify Labs Projects",
+      "projectsIntro": "Explore the representative project, its mechanisms, and its operating conditions.",
+      "skillsTitle": "Graphify Labs Skills",
+      "skillsIntro": "Explore task instructions and their original sources.",
+      "faqTitle": "Graphify Labs FAQ",
+      "faq": [
+        {
+          "question": "What is Graphify Labs’ representative project?",
+          "answer": "Graphify builds queryable knowledge graphs from code and supporting material and provides ways for agents to use that context."
+        },
+        {
+          "question": "Is the public tool the same as Graphify Cloud?",
+          "answer": "No. The Apache-2.0 local project and the hosted service have separate deployment, data-processing, and account conditions."
+        },
+        {
+          "question": "Why are the CLI and Skill one work?",
+          "answer": "The Skill explains how to operate the graph tool. A shared overview makes their dependency clear without duplicating the same introduction."
+        },
+        {
+          "question": "Does the graph replace source review?",
+          "answer": "No. A graph helps locate evidence. Its source references, inferred relationships, and freshness still need examination."
+        },
+        {
+          "question": "Does the organization provide a foundation model?",
+          "answer": "The project is a context and graph tool, not foundation-model weights. Semantic processing can use a configured assistant or backend."
+        },
+        {
+          "question": "Which repository is the maintained source?",
+          "answer": "Use Graphify-Labs/graphify and the official site linked from it. Read the current default branch rather than assuming it is main."
+        }
+      ],
+      "ctaTitle": "Explore Graphify",
+      "ctaDescription": "Read the project guide and identify mechanisms relevant to your workflow.",
+      "ctaPrimary": {
+        "label": "View project guide",
+        "href": "/skills-marketplace/graphify-labs/graphify"
+      }
+    },
+    "zh": {
+      "seoTitle": "Graphify Labs：代码图谱与 Agent 上下文 | Floatboat",
+      "seoDescription": "开发 Graphify 代码知识图谱、本地工具与 Agent 集成，帮助调查仓库关系。",
+      "heroTitle": "Graphify Labs：代码图谱与 Agent 上下文",
+      "heroDescription": "开发 Graphify 代码知识图谱、本地工具与 Agent 集成，帮助调查仓库关系。",
+      "overview": {
+        "title": "关于 Graphify Labs",
+        "paragraphs": [
+          "Graphify Labs 发布 Graphify 知识图谱项目及 Agent 集成。本地开源工具用于解析仓库结构、保存关系并查询相关上下文，托管服务则属于独立方案。",
+          "在 Floatboat 中研究仓库时，可以先用图谱定位相关文件和关系，再检查真实代码。图谱应与来源版本保持一致；Apache-2.0 本地工具和 Graphify 托管服务在配置、数据处理和商业条件上分别判断。"
+        ]
+      },
+      "aboutTitle": "关于 Graphify Labs",
+      "about": "Graphify Labs 发布 Graphify 知识图谱项目及 Agent 集成。本地开源工具用于解析仓库结构、保存关系并查询相关上下文，托管服务则属于独立方案。",
+      "projectsTitle": "Graphify Labs 的开源项目",
+      "projectsIntro": "了解代表作品的机制、用途和运行条件。",
+      "skillsTitle": "Graphify Labs 的 Skills",
+      "skillsIntro": "查看独立任务指引与原始来源。",
+      "faqTitle": "Graphify Labs 常见问题",
+      "faq": [
+        {
+          "question": "Graphify Labs 的代表项目是什么？",
+          "answer": "Graphify 从代码与配套资料构建可查询知识图谱，并为 Agent 提供使用这些上下文的入口。"
+        },
+        {
+          "question": "公开工具与 Graphify Cloud 相同吗？",
+          "answer": "不同。Apache-2.0 本地项目与托管服务在部署、数据处理和账号条件上分别判断。"
+        },
+        {
+          "question": "为什么 CLI 与 Skill 算同一作品？",
+          "answer": "Skill 说明如何使用图谱工具，共同介绍可以讲清依赖，而不重复创建同名总览。"
+        },
+        {
+          "question": "图谱可以替代源码检查吗？",
+          "answer": "不能。图谱帮助定位证据，其来源引用、推断关系和时效仍需检查。"
+        },
+        {
+          "question": "组织提供基础模型吗？",
+          "answer": "该项目是上下文与图谱工具，不是基础模型权重；语义处理可以使用已配置助手或后端。"
+        },
+        {
+          "question": "当前维护的原始仓库是哪个？",
+          "answer": "应采用 Graphify-Labs/graphify 及其指向的官网，读取当前默认分支，不假定一定是 main。"
+        }
+      ],
+      "ctaTitle": "了解 Graphify",
+      "ctaDescription": "查看项目详情，判断哪些方法适合自己的工作流。",
+      "ctaPrimary": {
+        "label": "查看项目详情",
+        "href": "/zh/skills-marketplace/graphify-labs/graphify"
+      }
+    }
+  },
+  "stablyai": {
+    "name": "Stably",
+    "type": "Organization",
+    "profileUrl": "https://github.com/stablyai",
+    "logo": "/blog/brand/publishers/stablyai.webp",
+    "tags": {
+      "en": [
+        "Multi-Agent Development Workspace",
+        "Open source"
+      ],
+      "zh": [
+        "多 Agent 开发工作台",
+        "开源软件"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/stablyai",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.onorca.dev/",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Orca",
+        "url": "https://github.com/stablyai/orca",
+        "en": {
+          "kind": "Multi-Agent Development Workspace",
+          "description": "Coordinate coding agents in separate worktrees, compare their changes, and feed review findings back into bounded tasks."
+        },
+        "zh": {
+          "kind": "多 Agent 开发工作台",
+          "description": "在独立 worktree 中协调编程 Agent，比较修改并将审阅发现转为有边界的任务。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Stably: Orca and Parallel Agent Work | Floatboat",
+      "seoDescription": "Publishes Orca, a workspace for parallel coding agents, isolated worktrees, and code review.",
+      "heroTitle": "Stably: Orca and Parallel Agent Work",
+      "heroDescription": "Publishes Orca, a workspace for parallel coding agents, isolated worktrees, and code review.",
+      "overview": {
+        "title": "About Stably",
+        "paragraphs": [
+          "Stably is the public GitHub organization publishing the canonical Orca workspace. Orca combines existing CLI agents, repository worktrees, terminals, and review interfaces. Its source makes the coordination layer inspectable without turning the external agent engines into Stably-owned models.",
+          "For a Floatboat workflow, the useful pattern is to define bounded assignments, isolate changes, and compare evidence before accepting an implementation. Parallel agents still need a shared task contract and an explicit integration owner. Running in separate worktrees does not itself prevent mistakes, conflicts, or unauthorized actions."
+        ]
+      },
+      "aboutTitle": "About Stably",
+      "about": "Stably is the public GitHub organization publishing the canonical Orca workspace. Orca combines existing CLI agents, repository worktrees, terminals, and review interfaces. Its source makes the coordination layer inspectable without turning the external agent engines into Stably-owned models.",
+      "projectsTitle": "Stably Projects",
+      "projectsIntro": "Explore the representative project, its mechanisms, and its operating conditions.",
+      "skillsTitle": "Stably Skills",
+      "skillsIntro": "Explore task instructions and their original sources.",
+      "faqTitle": "Stably FAQ",
+      "faq": [
+        {
+          "question": "Which project is attributed to Stably here?",
+          "answer": "Orca is published in stablyai/orca, which is the upstream selected for this profile."
+        },
+        {
+          "question": "Why not use another repository named Orca?",
+          "answer": "The user described a widely used multi-agent workspace; its functionality and dated GitHub evidence match that description. Other same-name tools are separate works."
+        },
+        {
+          "question": "Does Stably publish the agent engines inside Orca?",
+          "answer": "No. Orca coordinates external engines such as Codex and Claude Code. Those engines retain their own publishers and accounts."
+        },
+        {
+          "question": "What makes worktree coordination useful?",
+          "answer": "It separates task files and supports comparing changes, provided scope, review, and final integration are explicitly owned."
+        },
+        {
+          "question": "Does MIT include model subscriptions?",
+          "answer": "No. MIT applies to the published project source. Provider accounts, model usage, and remote services are separate."
+        },
+        {
+          "question": "Where should release and support details be checked?",
+          "answer": "Use the canonical repository releases and the product documentation linked from its README. Avoid an unrelated package just because it has the same name."
+        }
+      ],
+      "ctaTitle": "Explore Orca",
+      "ctaDescription": "Read the project guide and identify mechanisms relevant to your workflow.",
+      "ctaPrimary": {
+        "label": "View project guide",
+        "href": "/skills-marketplace/stablyai/orca"
+      }
+    },
+    "zh": {
+      "seoTitle": "Stably：Orca 与并行 Agent 工作 | Floatboat",
+      "seoDescription": "发布 Orca，通过并行编程 Agent、独立 worktree 与代码审阅组织开发任务。",
+      "heroTitle": "Stably：Orca 与并行 Agent 工作",
+      "heroDescription": "发布 Orca，通过并行编程 Agent、独立 worktree 与代码审阅组织开发任务。",
+      "overview": {
+        "title": "关于 Stably",
+        "paragraphs": [
+          "Stably 是发布原始 Orca 工作台的公开 GitHub 组织。Orca 将已有 CLI Agent、仓库 worktree、终端和审阅界面结合起来，开放协调层源码，但外部 Agent 引擎并不因此成为 Stably 自有模型。",
+          "在 Floatboat 中设计工作流时，可以借鉴有边界的任务分派、修改隔离与结果比较。并行 Agent 仍需共同的任务约定和明确的集成负责人；仅使用不同 worktree，并不能自动避免错误、冲突或越权操作。"
+        ]
+      },
+      "aboutTitle": "关于 Stably",
+      "about": "Stably 是发布原始 Orca 工作台的公开 GitHub 组织。Orca 将已有 CLI Agent、仓库 worktree、终端和审阅界面结合起来，开放协调层源码，但外部 Agent 引擎并不因此成为 Stably 自有模型。",
+      "projectsTitle": "Stably 的开源项目",
+      "projectsIntro": "了解代表作品的机制、用途和运行条件。",
+      "skillsTitle": "Stably 的 Skills",
+      "skillsIntro": "查看独立任务指引与原始来源。",
+      "faqTitle": "Stably 常见问题",
+      "faq": [
+        {
+          "question": "这里归属于 Stably 的项目是什么？",
+          "answer": "Orca 发布于 stablyai/orca，这是本页采用的原始上游。"
+        },
+        {
+          "question": "为什么不采用其他同名 Orca 仓库？",
+          "answer": "用户描述的是高 stars 的多 Agent 工作台，功能与带日期的 GitHub 证据均与之匹配；其他同名工具是不同作品。"
+        },
+        {
+          "question": "Orca 内的 Agent 引擎都由 Stably 发布吗？",
+          "answer": "不是。Orca 协调 Codex、Claude Code 等外部引擎，后者仍有自己的发布者与账号体系。"
+        },
+        {
+          "question": "worktree 协调有什么用途？",
+          "answer": "它有助于隔离任务文件和比较修改，但仍需明确范围、审阅和最终集成责任。"
+        },
+        {
+          "question": "MIT 许可包含模型订阅吗？",
+          "answer": "不包含。MIT 适用于公开项目源码，供应方账号、模型用量与远程服务分别判断。"
+        },
+        {
+          "question": "发行与支持细节在哪里核对？",
+          "answer": "应查看原始仓库的发行记录及 README 指向的产品文档，不能因为软件包同名就当作同一来源。"
+        }
+      ],
+      "ctaTitle": "了解 Orca",
+      "ctaDescription": "查看项目详情，判断哪些方法适合自己的工作流。",
+      "ctaPrimary": {
+        "label": "查看项目详情",
+        "href": "/zh/skills-marketplace/stablyai/orca"
+      }
+    }
   }
 }

@@ -114,5 +114,17 @@
   "milind-soni": {
     "en": "Maintains MausBot / OpenMausBot, a desktop app for role-based agents, shared channels, and reviewable execution.",
     "zh": "维护 MausBot / OpenMausBot，通过桌面应用组织角色 Agent、共享频道与可审阅执行。"
+  },
+  "comfy-org": {
+    "en": "Develops ComfyUI and its open ecosystem for node-based generative-media workflows.",
+    "zh": "维护 ComfyUI 及相关开源生态，通过节点图组织生成媒体与可复用制作流程。"
+  },
+  "graphify-labs": {
+    "en": "Develops Graphify’s code knowledge graphs, local tooling, and agent integrations.",
+    "zh": "开发 Graphify 代码知识图谱、本地工具与 Agent 集成，帮助调查仓库关系。"
+  },
+  "stablyai": {
+    "en": "Publishes Orca, a workspace for parallel coding agents, isolated worktrees, and code review.",
+    "zh": "发布 Orca，通过并行编程 Agent、独立 worktree 与代码审阅组织开发任务。"
   }
 }

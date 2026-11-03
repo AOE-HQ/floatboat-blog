@@ -2289,5 +2289,266 @@
         "github-copilot": "terminal"
       }
     }
+  },
+  {
+    "slug": "security-audit",
+    "authorHandle": "cloudflare",
+    "name": "Security Audit",
+    "publisher": "Cloudflare",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md",
+    "repositoryUrl": "https://github.com/cloudflare/security-audit-skill",
+    "category": {
+      "en": "Security · Evidence-led audits",
+      "zh": "安全 · 证据驱动审计"
+    },
+    "seo": {
+      "title": {
+        "en": "Cloudflare Security Audit Skill: Workflow and Requirements",
+        "zh": "Cloudflare Security Audit Skill：流程、依赖与使用指南"
+      },
+      "description": {
+        "en": "Use Cloudflare’s six-phase audit Skill to map coverage, validate candidates independently, and produce source-grounded findings. Understand verdicts, report artifacts, and execution requirements before applying it to a repository.",
+        "zh": "了解 Cloudflare 六阶段安全审计 Skill，围绕覆盖调查、独立候选验证与源码证据组织结果，核对结论状态、报告产物与执行条件后再用于仓库审查。"
+      },
+      "keywords": {
+        "en": [
+          "Cloudflare security audit skill",
+          "security-audit",
+          "code security review"
+        ],
+        "zh": [
+          "Cloudflare Security Audit Skill",
+          "security-audit",
+          "代码安全审查"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Security Audit by Cloudflare",
+        "zh": "Cloudflare Security Audit"
+      },
+      "description": {
+        "en": "Organize a repository security review around coverage, source evidence, and independent verification. Cloudflare’s Skill separates confirmed findings from unresolved leads and rejected candidates, with explicit report artifacts and execution requirements.",
+        "zh": "围绕覆盖范围、源码证据和独立验证组织仓库安全审查。Cloudflare 的 Skill 区分已确认问题、待验证线索与已排除候选，并明确报告产物和运行条件。"
+      }
+    },
+    "summary": {
+      "en": "A six-phase coding-agent Skill for coverage-led security investigation and independently verified findings. It supplies audit instructions and validators, not Cloudflare’s full fleet-wide vulnerability platform.",
+      "zh": "这是围绕覆盖范围开展安全调查、独立验证结论的六阶段编程 Agent Skill，提供审计指令和校验器，不等于 Cloudflare 完整的跨仓漏洞平台。"
+    },
+    "cardDescription": {
+      "en": "A six-phase repository audit Skill with coverage ledgers, independent finding verification, and structured reports.",
+      "zh": "通过六阶段调查、覆盖台账、独立问题验证与结构化报告组织仓库安全审查。"
+    },
+    "upstreamInstall": "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit",
+    "installation": {
+      "note": {
+        "en": "Use the upstream Skills CLI instructions for your compatible coding agent. Full audit mode needs parallel sub-agents, Node.js validators, and the documented OS-enforced isolation for target-controlled execution. Installing instructions does not create those capabilities.",
+        "zh": "按上游 Skills CLI 说明安装到兼容编程 Agent。完整审计需要并行子 Agent、Node.js 校验器，以及执行目标代码时要求的操作系统级隔离；安装指令不会自动提供这些条件。"
+      },
+      "supportedAgents": [
+        "auto"
+      ]
+    },
+    "pageCopy": {
+      "kind": {
+        "en": "Six-phase evidence-led security audit",
+        "zh": "六阶段证据驱动安全审计"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Cloudflare Security Audit",
+        "paragraphs": [
+          "Cloudflare’s security-audit Skill coordinates reconnaissance, coverage-led investigation, candidate validation, structured findings, independent record verification, and reporting. It maintains a coverage ledger and distinguishes confirmed, needs_validation, and rejected records. A blocked or unresolved candidate must retain its uncertainty; a report is not a certification that the repository is free of vulnerabilities. The public Skill is a single-repository starting point, distinct from the broader harness described in Cloudflare’s engineering article."
+        ]
+      },
+      "zh": {
+        "title": "关于 Cloudflare Security Audit",
+        "paragraphs": [
+          "Cloudflare 的 security-audit Skill 组织侦察、覆盖驱动调查、候选验证、结构化问题记录、独立记录复核和报告六个阶段。它维护覆盖台账，并区分 confirmed、needs_validation 和 rejected 状态。受阻或尚未证实的候选必须保留不确定性，报告也不能证明仓库不存在其他漏洞。公开 Skill 是面向单仓库的起点，与 Cloudflare 工程文章中的更大规模 harness 分开理解。"
+        ]
+      }
+    },
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Upstream requirements and workflow",
+          "zh": "上游要求与工作流"
+        },
+        "href": "https://github.com/cloudflare/security-audit-skill"
+      },
+      {
+        "label": {
+          "en": "Cloudflare engineering background",
+          "zh": "Cloudflare 工程背景"
+        },
+        "href": "https://blog.cloudflare.com/build-your-own-vulnerability-harness/"
+      }
+    ],
+    "sectionTitles": {
+      "useCases": {
+        "en": "Security Review Tasks with Checkable Evidence",
+        "zh": "需要可核对证据的安全审查任务"
+      },
+      "useCasesDescription": {
+        "en": "Choose a defined repository and an authorized scope, then use the ledger and verdicts to keep investigation progress distinct from confirmed impact.",
+        "zh": "选定仓库并明确已授权范围，通过台账与结论状态区分调查进度和已经证实的影响。"
+      },
+      "how": {
+        "en": "How to Use Cloudflare Security Audit",
+        "zh": "如何使用 Cloudflare Security Audit"
+      },
+      "howDescription": {
+        "en": "Prepare the host and execution boundaries before asking the Skill to investigate, then review both findings and coverage gaps.",
+        "zh": "先准备宿主与执行边界，再开展调查；验收时同时检查问题证据和覆盖缺口。"
+      }
+    },
+    "scenarios": [
+      {
+        "label": {
+          "en": "Scope",
+          "zh": "范围"
+        },
+        "title": {
+          "en": "Map a repository’s trust boundaries",
+          "zh": "梳理仓库的信任边界"
+        },
+        "body": {
+          "en": "Record architecture, entry points, and coverage units before assigning investigations, so unexplored areas remain visible.",
+          "zh": "分派调查前记录架构、入口与覆盖单元，让尚未检查的区域保持可见。"
+        }
+      },
+      {
+        "label": {
+          "en": "Verification",
+          "zh": "验证"
+        },
+        "title": {
+          "en": "Challenge a suspected vulnerability",
+          "zh": "独立质疑疑似漏洞"
+        },
+        "body": {
+          "en": "Give a candidate to a fresh verifier that tries to disprove the mechanism and checks the source trace and observed impact.",
+          "zh": "将候选交给新的验证者，尝试推翻问题机制，检查源码链路与实际观察到的影响。"
+        }
+      },
+      {
+        "label": {
+          "en": "Follow-up",
+          "zh": "复查"
+        },
+        "title": {
+          "en": "Revisit changed or unresolved evidence",
+          "zh": "复核变化与未解决证据"
+        },
+        "body": {
+          "en": "Use prior ledgers and findings to identify gaps and source changes, without treating an older result as current coverage.",
+          "zh": "利用历史台账和问题记录定位缺口与来源变化，不把旧结论直接当作当前覆盖。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Review this repository within the scope I authorize. First map architecture and coverage. Keep unresolved leads as needs_validation and show the evidence and gaps in the final reports. Do not execute target-controlled code unless the required isolation is available.",
+        "zh": "在我授权的范围内审查这个仓库，先梳理架构与覆盖范围。未解决线索保留 needs_validation，在报告中列出证据和缺口；没有要求的隔离条件时，不执行目标控制的代码。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Check prerequisites and scope",
+          "zh": "核对条件与范围"
+        },
+        "body": {
+          "en": "Confirm compatible tool-using agents, parallel sub-agents, Node.js, output location, and the upstream isolation requirements. Define what the audit is allowed to inspect and execute.",
+          "zh": "确认兼容的工具型 Agent、并行子 Agent、Node.js、输出位置及上游隔离要求，明确审计可以检查和执行的范围。"
+        }
+      },
+      {
+        "title": {
+          "en": "Investigate and verify independently",
+          "zh": "调查并独立验证"
+        },
+        "body": {
+          "en": "Track coverage, assign bounded investigations, and give each candidate to an independent verifier. Use the supplied ledger and findings validators at the documented checkpoints.",
+          "zh": "跟踪覆盖范围、分派有边界的调查，并由独立验证者复核候选；在文档要求的节点运行覆盖与问题校验器。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review reports and unresolved facts",
+          "zh": "审阅报告与未解决事实"
+        },
+        "body": {
+          "en": "Read the report alongside structured findings and coverage evidence. Require source traces for confirmed issues and preserve the exact missing fact for unresolved leads.",
+          "zh": "将报告与结构化问题、覆盖证据一起检查，已确认问题应有源码链路，未解决线索应保留准确的缺失事实。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Is this Cloudflare’s complete vulnerability harness?",
+          "zh": "这是 Cloudflare 完整的漏洞发现 Harness 吗？"
+        },
+        "answer": {
+          "en": "No. The public Skill is the single-repository starting point described by Cloudflare, not the full fleet-wide system.",
+          "zh": "不是。公开 Skill 是 Cloudflare 介绍的单仓库起点，不等于完整跨仓系统。"
+        }
+      },
+      {
+        "question": {
+          "en": "What are the six audit phases?",
+          "zh": "六个审计阶段是什么？"
+        },
+        "answer": {
+          "en": "Reconnaissance, coverage-led hunting, candidate validation, structured output, independent record verification, and reporting.",
+          "zh": "侦察、覆盖驱动调查、候选验证、结构化输出、独立记录复核与报告。"
+        }
+      },
+      {
+        "question": {
+          "en": "What does needs_validation mean?",
+          "zh": "needs_validation 表示什么？"
+        },
+        "answer": {
+          "en": "A source-grounded lead still has an exact unresolved fact. It remains separate from a confirmed vulnerability and should not be given an unsupported severity.",
+          "zh": "有来源依据的线索仍存在明确未解决事实，应与已确认漏洞分开，不能赋予缺乏依据的严重程度。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why use a different verifier?",
+          "zh": "为什么换一个验证者？"
+        },
+        "answer": {
+          "en": "The independent verifier tries to disprove the candidate and checks its evidence, reducing the chance that the original investigator simply repeats an assumption.",
+          "zh": "独立验证者尝试推翻候选并核对证据，减少原调查者重复自身假设的机会。"
+        }
+      },
+      {
+        "question": {
+          "en": "What is required before running target-controlled code?",
+          "zh": "执行目标控制的代码前需要什么？"
+        },
+        "answer": {
+          "en": "The documented workflow requires OS-enforced isolation, no external networking, a sanitized allowlisted environment, resource limits, and bounded scratch writes. Without these controls it preserves the unresolved lead rather than executing it.",
+          "zh": "文档要求操作系统级隔离、禁用外部网络、清理并限定环境变量、设置资源限制及临时写入边界；缺少这些条件时保留待验证线索，不执行目标代码。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does one audit prove the repository is secure?",
+          "zh": "一次审计能证明仓库安全吗？"
+        },
+        "answer": {
+          "en": "No. Coverage and findings describe a bounded run. Changes, untested paths, unavailable dependencies, and unresolved evidence must remain visible.",
+          "zh": "不能。覆盖与问题描述的是有边界的一次运行，代码变化、未测路径、不可用依赖和未解决证据都应保留。"
+        }
+      }
+    ]
   }
 ]

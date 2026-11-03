@@ -184,7 +184,8 @@
       "anthropics/skill-creator",
       "mattpocock/improve-codebase-architecture",
       "mattpocock/handoff",
-      "obra/brainstorming"
+      "obra/brainstorming",
+      "cloudflare/security-audit"
     ],
     "decisions": [
       {
