@@ -178,17 +178,9 @@
           "en": "Text-to-video concept",
           "zh": "文生视频概念片"
         },
-        "brief": {
-          "zh": "主体、场景、镜头运动、时长和音频意图。",
-          "en": "Subject, scene, camera motion, duration, and audio intent."
-        },
-        "process": {
-          "zh": "将简报组织为镜头约束，使用对应视频工作流生成并审阅画面与声音。",
-          "en": "Translate the brief into shot constraints and review picture/sound through the appropriate video workflow."
-        },
-        "outcome": {
-          "zh": "可审阅的概念片及需要调整的镜头记录。",
-          "en": "A reviewable concept clip and shot-specific revision notes."
+        "description": {
+          "en": "A text-to-video concept needs a subject, scene, camera motion, duration, and audio intention. Translate that brief into shot constraints through the appropriate video workflow, then review both picture and sound. Use shot-specific notes to decide what should change in the next concept clip.",
+          "zh": "文生视频概念需要明确主体、场景、镜头运动、时长和声音意图。通过适合的视频流程将简报转为镜头约束，再同时审看画面与声音表现。根据具体镜头记录修改意见，用于下一轮概念片段的调整。"
         }
       },
       {
@@ -196,17 +188,9 @@
           "en": "Animate a key visual",
           "zh": "让关键视觉动起来"
         },
-        "brief": {
-          "zh": "原始关键视觉、应保持的元素和希望出现的运动。",
-          "en": "A source key visual, elements to preserve, and desired motion."
-        },
-        "process": {
-          "zh": "以原图作为视觉起点，检查运动是否改变主体或破坏画面关系。",
-          "en": "Use the image as the starting point and check motion against subject/scene consistency."
-        },
-        "outcome": {
-          "zh": "与原图关联的动态素材，以及主体一致性检查。",
-          "en": "A source-linked motion asset and subject-consistency checks."
+        "description": {
+          "en": "Animating a key visual starts with the source image, the elements that must remain intact, and the intended motion. Review generated movement against subject and scene consistency, keeping the result connected to its source. That comparison helps separate useful motion from changes that undermine the original visual.",
+          "zh": "让主视觉动起来时，先提供源图、必须保留的元素和期望的运动方式。检查动态结果是否维持主体与场景的一致性，并保留它与源图的对应关系。通过前后对比，区分有效的动态表达与破坏原有视觉的变化。"
         }
       },
       {
@@ -214,17 +198,9 @@
           "en": "Storyboard iteration",
           "zh": "分镜快速迭代"
         },
-        "brief": {
-          "zh": "候选镜头、比较维度与草稿预算。",
-          "en": "Candidate shots, comparison criteria, and a draft budget."
-        },
-        "process": {
-          "zh": "以草稿片段比较构图和运动，记录选择依据后再决定正式制作。",
-          "en": "Compare framing/motion in draft clips and record selection reasons before final production."
-        },
-        "outcome": {
-          "zh": "候选片段与选择记录，明确下一轮需要保留的约束。",
-          "en": "Candidate clips and selection notes with constraints for the next round."
+        "description": {
+          "en": "Storyboard exploration can compare candidate clips before committing to final production. Set a draft budget and review criteria, then examine framing and motion across alternatives. Record selection reasons and constraints for the next round so each revision follows a creative decision rather than another unbounded generation attempt.",
+          "zh": "分镜探索阶段可以先比较候选片段，再决定最终制作方向。明确草稿预算与评审标准，逐一检查构图和运动表现，并记录取舍理由及下一轮约束。让每次迭代围绕具体创作决定展开，避免缺乏方向地重复生成。"
         }
       }
     ]

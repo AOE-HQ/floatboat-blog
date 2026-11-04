@@ -103,17 +103,9 @@
             "en": "Turn product screens into a video",
             "zh": "将产品界面制作成视频"
           },
-          "brief": {
-            "en": "Product screenshots, brand assets, scene order, and target duration.",
-            "zh": "产品截图、品牌素材、镜头顺序和目标时长。"
-          },
-          "process": {
-            "en": "Use real screenshots and brand assets, reuse appropriate visual blocks, and review the sequence in a preview before requesting an export.",
-            "zh": "使用真实截图与品牌素材，复用合适的视觉部件，在请求导出前通过预览检查场景顺序。"
-          },
-          "outcome": {
-            "en": "A reviewable video preview, with scene order confirmed before export.",
-            "zh": "可审阅的视频预览，确认场景顺序后再导出目标格式。"
+          "description": {
+            "en": "A product video can use real screenshots, supplied brand assets, and a defined scene order instead of inventing the interface. Reuse suitable visual blocks and compare the sequence with the target duration in a preview. Confirm the scenes before requesting export so production follows an agreed narrative.",
+            "zh": "产品视频可以直接使用真实截图、已有品牌素材和明确的场景顺序，避免凭空重画界面。复用适合的视觉模块，在预览中结合目标时长检查叙事节奏。确认场景后再请求导出，让制作围绕已经认可的表达展开。"
           }
         },
         {
@@ -121,17 +113,9 @@
             "en": "Edit and check an existing video",
             "zh": "修改并检查已有视频"
           },
-          "brief": {
-            "en": "An existing video project, target time range, and requested edits.",
-            "zh": "已有视频项目、指定时间段与修改要求。"
-          },
-          "process": {
-            "en": "Inspect project information and the timeline, make a focused scene change, then combine CLI findings with actual frame snapshots to verify its effect.",
-            "zh": "先检查项目信息与时间轴，再修改指定场景，结合 CLI 发现与真实画面快照核对影响。"
-          },
-          "outcome": {
-            "en": "Bounded scene changes checked against the timeline and rendered frames.",
-            "zh": "限定场景的修订，附时间轴和真实画面检查。"
+          "description": {
+            "en": "Editing a video project needs the target time range and requested scene changes made explicit. Inspect project information and the timeline, apply a bounded edit, then compare CLI findings with actual frame snapshots. Check the rendered effect rather than treating a successful editing command as proof that the visual change is correct.",
+            "zh": "修改视频项目时，明确目标时间范围和场景调整要求。检查项目信息与时间线后实施局部修改，再结合 CLI 结果和真实帧快照核对。验证的是渲染后的视觉效果，不能仅凭编辑命令成功就认为改动正确。"
           }
         },
         {
@@ -139,17 +123,9 @@
             "en": "Deliver repeatable video variations",
             "zh": "交付可重复生成的视频版本"
           },
-          "brief": {
-            "en": "Composition variables, required versions, and delivery format.",
-            "zh": "合成变量、需要生成的版本与交付格式。"
-          },
-          "process": {
-            "en": "Change declared composition variables for titles or content, inspect representative variations, and verify the requested rendered files before delivery.",
-            "zh": "通过合成变量替换标题或内容，检查代表版本，并在交付前核对请求导出的文件。"
-          },
-          "outcome": {
-            "en": "Reproducible variants and representative samples checked against exported files.",
-            "zh": "可重复生成的版本及代表样例，核对实际导出文件。"
+          "description": {
+            "en": "Repeatable video variants should use declared composition variables for titles and content. Define the required versions and delivery format, inspect representative combinations, and compare them with the rendered files. Keep the variable choices alongside verified exports so another run can reproduce the intended variation.",
+            "zh": "重复制作视频版本时，通过已声明的合成变量调整标题或内容。明确需要哪些版本和交付格式，检查有代表性的组合，并与实际渲染文件对照。保留变量选择及已验证导出结果，方便后续复现对应版本。"
           }
         }
       ]

@@ -53,21 +53,15 @@
         "items": [
           {
             "title": "A research-to-deliverable workflow",
-            "brief": "Research sources, a delivery format, and conclusions requiring human confirmation.",
-            "process": "Borrow the context–tool–review pattern to define how source material becomes a checked draft, with explicit evidence and a final acceptance step.",
-            "outcome": "An execution design from source reading to draft review, with evidence and acceptance points."
+            "description": "A research workflow can borrow Codex's context–tool–review pattern to connect source reading with a checked draft. Define the delivery format, retain the evidence behind conclusions, and identify decisions requiring human confirmation. The execution design should show how the draft reaches its final acceptance step."
           },
           {
             "title": "A repeatable coding task",
-            "brief": "A repository task, permitted files, and test commands.",
-            "process": "Separate investigation, implementation, verification, and approval so recurring repository work has an inspectable result at each stage.",
-            "outcome": "A reusable coding-task brief separating investigation, edits, tests, and approval."
+            "description": "For recurring repository work, specify the task, permitted files, and test commands before separating investigation, implementation, verification, and approval. Each stage should leave an inspectable result. The reusable brief then gives the next coding task the same clear boundaries without assuming its code changes will be identical."
           },
           {
             "title": "An agent in your own workspace",
-            "brief": "Task entry points, available operations, and context sources in an owned application.",
-            "process": "Evaluate the documented integration surfaces when you need your application or workflow to own the business context and available actions.",
-            "outcome": "A CLI/SDK/app-server integration choice and a minimal compatibility test plan."
+            "description": "An application that owns its business context and permitted operations needs an integration surface that fits that responsibility. Compare the documented CLI, SDK, and app-server interfaces against the task entry points and context sources. Choose a candidate and define a minimal compatibility test before committing to the integration."
           }
         ]
       },
@@ -153,21 +147,15 @@
         "items": [
           {
             "title": "从研究资料到交付成果",
-            "brief": "研究来源、交付格式与必须由人确认的结论。",
-            "process": "借鉴上下文、工具与审阅的协作方式，设计从原始资料到已核对草稿的过程，明确证据和最终验收节点。",
-            "outcome": "从来源读取到草稿审阅的执行设计，标明证据和验收节点。"
+            "description": "研究工作流可以借鉴 Codex 连接上下文、工具与审阅的方式，将来源阅读衔接到经过核对的草稿。明确交付格式，保留结论背后的证据，并标出需要人工确认的决定。执行设计应说明草稿如何形成，以及最后由谁完成验收。"
           },
           {
             "title": "可重复的代码任务",
-            "brief": "仓库任务、允许修改的文件与测试命令。",
-            "process": "将代码调查、实施、验证与审批分开，使重复性仓库任务在各阶段都有可审阅的结果。",
-            "outcome": "调查、修改、测试与审批分开的可复用代码任务说明。"
+            "description": "对于反复出现的仓库工作，先写明任务、允许修改的文件和测试命令，再划分调查、实施、验证与批准环节。每一阶段都留下可以检查的结果，形成可复用的代码任务说明。复用的是清楚的边界，而不是要求不同任务产生相同修改。"
           },
           {
             "title": "自己的工作空间中的 Agent",
-            "brief": "自有应用的任务入口、可用操作与上下文来源。",
-            "process": "当自己的应用或流程需要掌握业务上下文与可用操作时，评估官方集成入口是否适合。",
-            "outcome": "CLI、SDK 或 app-server 的集成选择及最小兼容性验证方案。"
+            "description": "如果自有应用需要掌握业务上下文和允许执行的操作，应根据这些职责选择集成方式。对照任务入口、可用操作与资料来源，比较官方文档中的 CLI、SDK 和 app-server 接口，再通过最小兼容性测试验证候选方案，而不是直接假定它适合现有环境。"
           }
         ]
       },
@@ -271,21 +259,15 @@
         "items": [
           {
             "title": "A modular information workflow",
-            "brief": "Public news sources, deduplication rules, and digest review requirements.",
-            "process": "Break collection, transformation, and review into explicit capabilities with clear inputs and outputs.",
-            "outcome": "Plugin responsibilities and input/output mappings for collection, transformation, and review."
+            "description": "A news digest can be divided into collection, transformation, and review capabilities. Start with approved public sources, deduplication rules, and the digest's review requirements, then define what each plugin receives and returns. The resulting mapping makes responsibility visible when a source is repeated or a summary needs correction."
           },
           {
             "title": "A custom tool connection",
-            "brief": "The missing tool’s API docs, credential reference, and permitted operations.",
-            "process": "Study plugin contracts when an existing workflow needs a specific external tool or a task capability unavailable in the current setup.",
-            "outcome": "A connector design based on current plugin contracts, with credential and failure boundaries."
+            "description": "When a workflow lacks a particular external tool, inspect its API documentation alongside the current plugin contract. Define the allowed operations and reference the approved credential source without embedding secrets. A connector design should explain authentication boundaries and failure handling as clearly as the successful tool call."
           },
           {
             "title": "A controlled workflow experiment",
-            "brief": "A minimal capability set, representative inputs, and acceptable failure behavior.",
-            "process": "Evaluate a small composition and record its behavior before relying on a preview-stage runtime for recurring work.",
-            "outcome": "A small composition experiment record and evidence for adoption or deferral."
+            "description": "A preview-stage runtime should first be assessed with a small composition and representative inputs. Limit the capability set, define acceptable failure behavior, and record what actually happens. Use that experiment to decide whether recurring work has enough evidence for adoption or should remain on hold."
           }
         ]
       },
@@ -377,21 +359,15 @@
         "items": [
           {
             "title": "模块化的信息处理流程",
-            "brief": "公开资讯来源、去重规则和简报的审阅要求。",
-            "process": "将资料收集、转换和审阅拆成明确能力，分别规定输入、输出和交接方式。",
-            "outcome": "收集、转换和审阅的插件职责与输入输出映射。"
+            "description": "新闻摘要可以拆分为采集、转换和审阅等能力。围绕已确认的公开来源、去重规则和摘要审阅要求，定义每个插件接收与返回的内容。当来源重复或摘要需要修正时，可以沿输入输出映射找到对应职责，而不是把整个流程视为一个黑箱。"
           },
           {
             "title": "面向业务的工具连接",
-            "brief": "缺失工具的 API 文档、认证引用和允许操作。",
-            "process": "当现有流程缺少某种外部工具或任务能力时，研究插件约定是否适合该连接。",
-            "outcome": "基于当前插件约定的连接草案，列出凭据边界与失败处理。"
+            "description": "工作流缺少某个外部工具时，将它的 API 文档与当前插件约定对照，明确允许执行的操作，并引用已批准的凭据来源。连接方案除了描述成功调用，还要说明认证边界和失败处理，避免将密钥本身写进设计或任务材料。"
           },
           {
             "title": "可控的工作流实验",
-            "brief": "一组最小能力、代表性输入与可接受的失败行为。",
-            "process": "先评估小型能力组合并记录行为，再判断预览阶段运行层是否适合重复工作。",
-            "outcome": "小范围组合实验的记录，以及继续采用或暂缓的依据。"
+            "description": "预览阶段的运行时应先通过小规模能力组合验证。限定能力范围，提供代表性输入和可接受的失败行为，记录实际运行表现。根据这次实验判断是否已有足够证据用于周期性工作，或仍需暂缓采用，避免直接将探索结果当作稳定能力。"
           }
         ]
       },
@@ -504,21 +480,15 @@
         "items": [
           {
             "title": "Repository maintenance requests",
-            "brief": "Permitted repository requests, file scope, and acceptance conditions.",
-            "process": "Define a small coding request, its permitted changes, and the evidence needed for acceptance. Use the task-to-pull-request pattern to make the proposed result easy to inspect.",
-            "outcome": "A traceable request-to-ticket-to-draft-PR flow with verification evidence."
+            "description": "Repository maintenance can follow a traceable request-to-ticket-to-draft-PR flow. Bound the coding request, permitted files, and acceptance conditions before work begins, and attach verification evidence to the proposed change. This makes the result inspectable without treating a draft pull request as an approved modification."
           },
           {
             "title": "Follow-up after a review",
-            "brief": "An existing task, linked review feedback, and original authorization.",
-            "process": "Keep a reviewer’s comments attached to the right task and preserve the original scope. Route requests for unrelated work separately instead of silently expanding an existing assignment.",
-            "outcome": "A feedback-routing and continuation plan that separates unrelated work."
+            "description": "Review feedback should stay attached to the task and authorization it concerns. Preserve the original scope when planning a continuation, and route unrelated requests into separate work instead of silently enlarging the assignment. The handoff should show which comments are being addressed and which require a new decision."
           },
           {
             "title": "Team messages with a clear outcome",
-            "brief": "Approved message channels, requester lists, and delivery destinations.",
-            "process": "Specify which channel and people may request work, then define where the result should return. Borrow that handoff pattern for workflows organized in Floatboat without assuming a built-in connection.",
-            "outcome": "Trigger, authorization, task assignment, and result-return design with connection requirements checked separately."
+            "description": "A message-triggered workflow needs approved channels, permitted requesters, and a clear destination for results. Define the trigger, authorization, assignment, and return path before borrowing that handoff pattern for work organized in Floatboat. Check connection requirements separately rather than assuming the channel is already integrated."
           }
         ]
       },
@@ -612,21 +582,15 @@
         "items": [
           {
             "title": "处理仓库维护请求",
-            "brief": "允许处理的仓库请求、文件范围和验收条件。",
-            "process": "为一个小型编程请求明确可改动范围、验收证据和交付方式。参考从任务到 Pull Request 的组织方式，让提交的修改更容易检查。",
-            "outcome": "可追踪的请求到工单与草稿 PR 流程，附检查证据。"
+            "description": "仓库维护可以按请求、任务单和草稿 PR 的链路组织。开始前限定编码需求、允许修改的文件和验收条件，交付时将验证证据附到拟议变更上。这样既方便追溯和审阅结果，也不会把生成草稿 PR 误当作变更已经获准。"
           },
           {
             "title": "跟进评审与后续反馈",
-            "brief": "已有任务、对应评审意见与原始授权。",
-            "process": "把评审意见接回对应任务，并保留原有授权范围。遇到无关工作时重新路由，避免在持续讨论中悄悄扩大执行目标。",
-            "outcome": "反馈归属与续接方案，无关工作独立路由。"
+            "description": "审阅反馈应关联到对应任务及原始授权。安排后续处理时保留已有范围，将无关需求单独分流，不在原任务中静默扩大工作。交接说明应让人看清本轮正在处理哪些评论，以及哪些新要求还需要另外决定。"
           },
           {
             "title": "把团队消息变为交付目标",
-            "brief": "获准接入的消息渠道、请求者名单与交付位置。",
-            "process": "明确哪些渠道与人员能够发起工作，以及结果应回到哪里。将这种交接方式用于 Floatboat 中组织的工作流，具体软件连接另行验证。",
-            "outcome": "触发、授权、任务分配与结果回传的设计，连接条件单独核对。"
+            "description": "由消息触发的工作流，需要明确允许的频道、请求人和结果返回位置。先定义触发、授权、任务分配和交付链路，再将这种交接方式借鉴到 Floatboat 中组织的工作。连接要求应独立核验，不能因为流程相似就假定已有内置集成。"
           }
         ]
       },
@@ -737,21 +701,15 @@
         "items": [
           {
             "title": "A lightweight task loop",
-            "brief": "One reporting objective, readable files, and a permitted tool set.",
-            "process": "Model a focused sequence of context, tool use, and result review without starting with a large feature set.",
-            "outcome": "A minimal context/tool loop and a reproducible sample output."
+            "description": "A lightweight reporting loop can start with one objective, readable files, and a small permitted tool set. Use Pi's focused structure to describe how context leads to tool use and result review. Test a reproducible sample output before introducing a larger collection of runtime features."
           },
           {
             "title": "Improving a reusable Skill",
-            "brief": "An existing Skill, recurring failures, and expected behavior.",
-            "process": "Decide whether a task needs clearer instructions and resources before introducing another executable extension.",
-            "outcome": "Instruction/reference revisions and a decision on whether runtime extensions are still needed."
+            "description": "When a reusable Skill repeatedly fails, compare its current instructions and resources with the behavior you expect. Correct those gaps and test counterexamples before introducing another executable extension. The review should identify which instruction changes are sufficient and whether any runtime capability is still missing."
           },
           {
             "title": "A custom agent component",
-            "brief": "Business interfaces, provider constraints, and owned execution boundaries.",
-            "process": "Use the library structure as a reference when a business workflow needs its own model interface or execution behavior.",
-            "outcome": "A component design based on Pi library responsibilities, identifying required adapters."
+            "description": "A business workflow with its own model interface or execution boundaries can use Pi's library structure as a design reference. Map the required provider behavior and business interfaces to those responsibilities, then identify the adapters you would need. Keep the component design grounded in the environment you actually own."
           }
         ]
       },
@@ -843,21 +801,15 @@
         "items": [
           {
             "title": "轻量任务循环",
-            "brief": "单一报告目标、可读文件和允许的工具集合。",
-            "process": "围绕上下文、工具执行和结果审阅设计集中流程，不从庞大功能集合开始。",
-            "outcome": "精简的上下文与工具循环，以及能复现的样例输出。"
+            "description": "轻量报告流程可以从一个目标、可读取的文件和少量允许使用的工具开始。参考 Pi 的精简结构，说明上下文如何进入工具调用，以及结果如何被审阅。先验证一个可复现的输出样例，再判断是否需要增加更多运行时功能。"
           },
           {
             "title": "优化可复用 Skill",
-            "brief": "现有 Skill、反复失败的例子与预期行为。",
-            "process": "在引入新的可执行扩展前，先判断任务是否只需要更清晰的说明与参考资料。",
-            "outcome": "先以指令和参考资料解决问题的修订，说明是否仍需运行层扩展。"
+            "description": "可复用 Skill 反复出现问题时，先对照预期行为检查现有指令与参考资料。修正缺口后使用反例验证，再判断是否仍需要新增可执行扩展。审阅结果应区分能够通过内容调整解决的问题，以及确实缺少运行时能力的部分。"
           },
           {
             "title": "定制 Agent 组件",
-            "brief": "业务接口、模型提供方约束与自有执行边界。",
-            "process": "当业务流程需要自己的模型接口或执行方式时，以基础库结构作为研究参考。",
-            "outcome": "基于 Pi 基础库职责的组件方案，明确需要实现的适配层。"
+            "description": "业务工作流需要自有模型接口或执行边界时，可以参考 Pi 的库职责进行设计。将模型提供方约束、业务接口和执行要求逐项对应，识别必须补充的适配器。组件方案应围绕实际掌握的环境展开，而不是直接照搬另一套运行方式。"
           }
         ]
       },
@@ -968,21 +920,15 @@
         "items": [
           {
             "title": "A repository investigation stage",
-            "brief": "Search requirements, data entry points, and related routes.",
-            "process": "Define what an agent must learn before implementation begins, including relevant files, constraints, and unresolved decisions.",
-            "outcome": "Read-only investigation findings and decisions required before implementation."
+            "description": "Before implementing a repository feature, define what the agent must learn about the relevant files, routes, and data entry points. Keep the investigation read-only while collecting constraints and unresolved decisions. Its findings should tell the implementation stage where to work and which questions still need an answer."
           },
           {
             "title": "A reviewable change pipeline",
-            "brief": "A proposed diff, testing requirements, and responsible reviewer.",
-            "process": "Separate the proposed change from acceptance so generated code is paired with an inspectable diff and relevant checks.",
-            "outcome": "An edit workflow separating diff presentation, verification, and acceptance."
+            "description": "A proposed code change should remain distinct from its acceptance. Present the diff with relevant test results and the context the responsible reviewer needs, then make acceptance an explicit step. This gives the workflow an inspectable change pipeline rather than treating generated code as finished work."
           },
           {
             "title": "A task-specific development tool",
-            "brief": "Existing check commands, external development APIs, and permitted access.",
-            "process": "Study the extension interfaces when considering a connection to a project’s existing checks or external development systems.",
-            "outcome": "An extension compatibility assessment and one bounded tool-call test."
+            "description": "A project's existing checks or external development systems may need a task-specific extension. Compare the documented interfaces with the available commands, API requirements, and permitted access. Assess compatibility first, then run one bounded tool-call test to establish what the proposed connection can actually do."
           }
         ]
       },
@@ -1068,21 +1014,15 @@
         "items": [
           {
             "title": "代码调查阶段",
-            "brief": "搜索特性需求、数据入口和相关路由。",
-            "process": "明确实施之前 Agent 必须掌握哪些文件、约束与待定问题。",
-            "outcome": "只读调查结果与实施前必须确认的选择。"
+            "description": "实施仓库功能前，先明确需要调查的文件、路由与数据入口。保持只读调查，整理真实约束和尚未确定的决定。调查结果应能够告诉实施环节应该在哪里修改、哪些问题仍需回答，避免在尚未理解代码时直接开始改动。"
           },
           {
             "title": "可审阅的修改流程",
-            "brief": "待接受的代码差异、测试要求与审阅责任人。",
-            "process": "将提出修改与接受修改分开，为生成代码配套差异展示与相关检查。",
-            "outcome": "差异展示、验证与接受分开的修改流程。"
+            "description": "拟议代码变更与最终接受应分开处理。展示修改差异、相关测试结果和负责人审阅所需的上下文，再明确进入接受环节。这样形成的流程能够逐步检查变更，而不会因为代码已经生成就将任务视为完成。"
           },
           {
             "title": "面向任务的开发工具",
-            "brief": "已有检查命令、外部开发系统 API 与允许权限。",
-            "process": "需要连接项目已有检查或外部开发系统时，研究扩展接口是否适合。",
-            "outcome": "扩展接口的适配判断，以及一个范围明确的工具调用验证。"
+            "description": "项目已有检查命令或外部开发系统可能需要专用扩展。将公开接口与现有命令、API 要求和允许的访问范围进行比较，先评估兼容性，再执行一次范围受限的工具调用测试，用实际结果说明拟议连接能够处理什么。"
           }
         ]
       },
@@ -1186,21 +1126,15 @@
         "items": [
           {
             "title": "A recurring research brief",
-            "brief": "Weekly source additions, the existing research scope, and a digest template.",
-            "process": "Design how a repeated research task obtains fresh inputs while retaining its scope, sources, and output requirements.",
-            "outcome": "A digest workflow retaining sources and freshness markers, with explicit reusable rules."
+            "description": "A recurring research brief needs fresh sources without losing its original scope. Define how weekly additions enter the workflow, how their freshness is marked, and how citations remain attached to the digest. Reusable rules should preserve the output requirements while allowing each period's findings to differ."
           },
           {
             "title": "A reusable working method",
-            "brief": "A proven method, counterexamples, and knowledge-maintenance ownership.",
-            "process": "Turn an established procedure into reviewed task knowledge, with an owner and a way to update outdated assumptions.",
-            "outcome": "A reviewable memory/Skill draft with a process for updating obsolete assumptions."
+            "description": "A proven working method can become task knowledge only when its assumptions and ownership are clear. Review the procedure against counterexamples, prepare a memory or Skill draft, and define who updates it when conditions change. Stored knowledge should remain reviewable rather than accumulating obsolete instructions indefinitely."
           },
           {
             "title": "A task resumed later",
-            "brief": "A paused task state, agreed decisions, and essential evidence.",
-            "process": "Identify the minimal decisions and evidence a later session needs instead of preserving an entire conversation without structure.",
-            "outcome": "Minimal continuation context for the next session, excluding unrelated history."
+            "description": "Resuming a task later requires the decisions and evidence that determine the next action. Extract those essentials from the paused state and leave unrelated conversation history out. A concise continuation record should let the next session understand what is settled, what remains open, and where the supporting evidence lives."
           }
         ]
       },
@@ -1286,21 +1220,15 @@
         "items": [
           {
             "title": "重复性研究简报",
-            "brief": "每周新增资料、既有研究范围与简报模板。",
-            "process": "为重复研究设计新资料入口，同时保留范围、来源要求和交付标准。",
-            "outcome": "保留来源与时效标记的研究简报流程，明确重复使用的规则。"
+            "description": "周期性研究简报需要获得新资料，同时保留原有研究范围。定义每周新增来源如何进入流程、如何标注时效，以及引用怎样保留在摘要中。复用规则维持稳定的交付要求，也要容纳不同周期真正发生变化的研究发现。"
           },
           {
             "title": "可复用工作方法",
-            "brief": "已跑通的工作方法、反例与知识维护责任。",
-            "process": "将已形成的方法整理为可审阅知识，并明确维护者与过时假设的更新方式。",
-            "outcome": "可审阅的记忆或 Skill 草案，说明过时假设怎样更新。"
+            "description": "成熟工作方法转为任务知识时，需要明确假设和维护责任。使用反例审查流程，整理成记忆或 Skill 草稿，并说明条件变化后由谁更新。保存下来的知识应持续可审阅，避免过时指令在后续任务中长期累积和重复使用。"
           },
           {
             "title": "稍后继续的任务",
-            "brief": "待续任务状态、已定选择与关键证据。",
-            "process": "明确后续会话真正需要的决策与证据，而非无结构地保留全部对话。",
-            "outcome": "下一会话所需的最小续接上下文，排除无关历史。"
+            "description": "稍后继续任务时，最重要的是决定下一步行动的既有决定和证据。围绕暂停状态提取这些必要信息，排除无关对话历史。续接记录应让下一个会话理解哪些事项已经确定、哪些仍待处理，以及支持判断的资料在哪里。"
           }
         ]
       },
@@ -1404,21 +1332,15 @@
         "items": [
           {
             "title": "A multi-role coding workflow",
-            "brief": "Research, planning, and implementation boundaries for one development task.",
-            "process": "Separate research, planning, and implementation outputs so each role contributes a result the next stage can inspect.",
-            "outcome": "Role inputs/outputs and handoff acceptance, including return-to-main-task conditions."
+            "description": "A coding workflow can divide research, planning, and implementation into distinct roles. Define each role's inputs, inspectable outputs, and handoff conditions within the same development task. Include the conditions for returning findings to the main task so parallel contributions do not become disconnected assignments."
           },
           {
             "title": "Checks before consequential steps",
-            "brief": "An upcoming command/change and criteria for assessing its impact.",
-            "process": "Design a validation or review point before a command, file change, or external action proceeds.",
-            "outcome": "Pre-action checks and result feedback, continuing or stopping according to authorization."
+            "description": "Before a consequential command, file change, or external action, decide what evidence is needed to assess its impact. Place a validation or human review point there and return the result to the workflow. Whether execution continues or stops should follow the applicable authorization and the check's actual findings."
           },
           {
             "title": "A consistent context handoff",
-            "brief": "Context contracts for the editor, workspace paths, and agent process.",
-            "process": "Use the interface–runtime separation as a reference when a workflow spans an editor, a workspace, and an execution process.",
-            "outcome": "A checked ACP/other-interface handoff plan without assuming native client compatibility."
+            "description": "A workflow spanning an editor, workspace, and agent process needs a clear context contract between them. Use the interface–runtime separation to map workspace paths and task information to the execution process. Verify the ACP or other interface handoff rather than assuming a client supports the required behavior natively."
           }
         ]
       },
@@ -1510,21 +1432,15 @@
         "items": [
           {
             "title": "多角色开发流程",
-            "brief": "同一开发任务的研究、规划与实施边界。",
-            "process": "分别规定研究、规划与实施输出，使下一个阶段能检查上一阶段的成果。",
-            "outcome": "各角色的输入输出与交接验收，明确何时回到主任务。"
+            "description": "编码工作流可以将研究、规划和实施交给不同角色，但需要定义各自输入、可检查的输出和交接条件。所有角色围绕同一个开发任务协作，并约定何时将发现返回主任务，避免并行贡献逐渐变成彼此脱节的独立工作。"
           },
           {
             "title": "重要步骤之前的检查",
-            "brief": "即将运行的命令或变更及风险判断条件。",
-            "process": "在命令、文件变更或外部操作继续之前，设计验证或审阅节点。",
-            "outcome": "执行前检查规则与结果反馈方式，按权限决定继续或暂停。"
+            "description": "在有实际影响的命令、文件变更或外部行动之前，明确评估影响需要哪些证据，并设置验证或人工审阅节点。将检查结果带回工作流，再依据实际发现和适用授权决定继续或停止，而不是仅根据原有计划自动执行。"
           },
           {
             "title": "一致的上下文交接",
-            "brief": "编辑器、工作空间路径与 Agent 进程的上下文契约。",
-            "process": "流程涉及编辑器、工作空间与执行进程时，参考界面与运行层分离的方式组织交接。",
-            "outcome": "经核对的 ACP 或其他接口交接方案，不预设客户端原生兼容。"
+            "description": "跨编辑器、工作区和 Agent 进程的任务，需要清楚的上下文传递约定。参考界面与运行时分离的方式，将工作区路径和任务资料对应到执行进程。对 ACP 或其他接口进行实际核验，不假定客户端天然支持所需的全部行为。"
           }
         ]
       },
@@ -1634,21 +1550,15 @@
         "items": [
           {
             "title": "A task-centered workspace",
-            "brief": "Source material, working directories, and target deliverables for a long task.",
-            "process": "Define how source material, current activity, and expected deliverables should stay connected during a longer task.",
-            "outcome": "A design linking materials, current activity, and results with traceable state."
+            "description": "Long-running work needs source material, working directories, and expected deliverables to stay connected. Describe how the current activity relates to those inputs and how task state is retained as work progresses. The workspace design should make it possible to trace a result back through the activity that produced it."
           },
           {
             "title": "A human review point",
-            "brief": "Proposed edits, external operations, and context needed for review.",
-            "process": "Plan what evidence and context a user needs before accepting an agent’s proposed change or external action.",
-            "outcome": "Understandable review artifacts and approval points rather than execution logs alone."
+            "description": "A person reviewing an agent's proposed edit or external operation needs more than an execution log. Identify the relevant context, the change being proposed, and the evidence that supports accepting it. Build those artifacts into the review point so approval rests on an understandable result."
           },
           {
             "title": "A workflow across interfaces",
-            "brief": "Task state to share across desktop, web, or terminal entry points.",
-            "process": "Study where state and execution belong when the same work can be viewed through different interfaces.",
-            "outcome": "UI/state/execution responsibilities and consistency checks across entry points."
+            "description": "When a task appears through desktop, web, and terminal interfaces, decide which layer owns state and which performs execution. Map the shared task information and the responsibilities of each entry point, then check consistency between them. Multiple views should not silently become competing versions of the same work."
           }
         ]
       },
@@ -1740,21 +1650,15 @@
         "items": [
           {
             "title": "以任务为中心的工作区",
-            "brief": "长任务的原始资料、工作目录与目标交付物。",
-            "process": "明确较长任务中原始资料、当前活动和预期交付物如何保持关联。",
-            "outcome": "资料、当前活动和成果之间的关联设计及可追踪状态。"
+            "description": "较长任务中，原始资料、工作目录和目标交付物需要始终保持关联。说明当前活动如何使用这些输入，以及推进过程中怎样保留任务状态。工作空间设计应能够从最终结果追溯到产生它的操作，而不是只展示当前正在发生的动作。"
           },
           {
             "title": "人工审阅节点",
-            "brief": "准备接受的修改、外部操作及审查所需背景。",
-            "process": "规划用户接受 Agent 修改或外部操作前，需要看到哪些证据和背景。",
-            "outcome": "用户能够理解的审阅材料与审批节点，而非仅显示执行日志。"
+            "description": "审阅 Agent 提出的修改或外部操作时，使用者需要的不只是执行日志。应明确相关上下文、拟议变更及支持接受它的证据，并将这些材料组织到审阅节点中。批准行为建立在能够理解的结果上，而不是一串难以判断含义的运行记录。"
           },
           {
             "title": "跨入口的工作流",
-            "brief": "桌面、Web 或终端入口需要共享的任务状态。",
-            "process": "同一工作可能通过不同界面查看时，研究状态与执行应分别由哪里承担。",
-            "outcome": "界面、状态存储和执行职责的划分，附跨入口一致性检查。"
+            "description": "同一任务同时出现在桌面、网页或终端时，需要明确状态由哪一层维护、执行由哪一层负责。梳理不同入口共享的任务信息和各自职责，并核对它们的一致性，避免多个界面逐渐维护出互相冲突的工作版本。"
           }
         ]
       },
@@ -1865,21 +1769,15 @@
         "items": [
           {
             "title": "Add a form control",
-            "brief": "Form validation rules, the existing Input, and target browsers.",
-            "process": "Before building a custom date picker, inspect the project’s input component and native browser support. Validate keyboard interaction and required behavior against the actual form.",
-            "outcome": "The smallest date-input change with keyboard and submission checks."
+            "description": "Before adding a custom date picker, inspect the form's validation rules, existing Input component, and target browsers' native support. Choose the smallest change that meets the actual requirement, then check keyboard use and submission behavior. Extra abstraction should solve a demonstrated limitation rather than precede that investigation."
           },
           {
             "title": "Review a field rename",
-            "brief": "A field-renaming diff, serialized formats, and known consumers.",
-            "process": "Check the callers, serializers, and consumers of the renamed field as well as the diff. A small edit can break an untouched response handler.",
-            "outcome": "Caller/data-flow impact findings including code outside the diff."
+            "description": "A field rename can affect serializers and consumers outside the visible diff. Trace callers, stored or transmitted formats, and response handlers before accepting the edit. The impact review should identify code that was not changed but still depends on the old name, so a small patch does not conceal a wider breakage."
           },
           {
             "title": "Reduce a sprawling implementation",
-            "brief": "An expanding implementation, real requirements, and invalid-input examples.",
-            "process": "Ask which requirements the abstraction serves, remove speculative branches, and keep validation and error handling that protect real inputs.",
-            "outcome": "A leaner design removing speculative abstractions while preserving validation and errors."
+            "description": "When an implementation grows beyond its requirement, compare each abstraction with the behavior it actually serves. Remove speculative branches while retaining validation and error handling for real invalid inputs. The leaner design should remain accountable to those examples rather than pursue fewer lines at the expense of required behavior."
           }
         ]
       },
@@ -1971,21 +1869,15 @@
         "items": [
           {
             "title": "为表单增加日期输入",
-            "brief": "表单校验规则、现有 Input 和目标浏览器。",
-            "process": "先查看项目现有 Input 与浏览器日期控件是否满足需求，再决定是否新增日历组件，并核对键盘操作和实际表单行为。",
-            "outcome": "满足日期输入的最小改动，以及键盘与提交行为验证。"
+            "description": "新增日期选择功能前，先检查表单验证规则、现有 Input 组件及目标浏览器的原生支持。选择能够满足真实需求的最小改动，再验证键盘操作和提交行为。只有确认现有能力存在缺口后，才考虑增加自定义控件或抽象层。"
           },
           {
             "title": "检查一次字段重命名",
-            "brief": "字段重命名差异、序列化格式与已知消费者。",
-            "process": "除修改位置外，继续检查调用方、序列化和数据消费者。几行字段变化，也可能让没有出现在 diff 中的处理函数失败。",
-            "outcome": "调用方和数据链路的影响清单，覆盖未出现在 diff 的位置。"
+            "description": "字段重命名可能影响差异之外的序列化逻辑和消费方。接受修改前，沿调用位置、存储或传输格式及响应处理逻辑检查影响。审阅报告应指出没有被修改却依赖旧名称的代码，避免一个看似很小的补丁引发更大范围的问题。"
           },
           {
             "title": "收敛不断膨胀的实现",
-            "brief": "持续增长的实现、真实需求及异常输入样例。",
-            "process": "逐项核对抽象服务的真实要求，删去推测性的分支，同时保留应对真实输入的验证与错误处理。",
-            "outcome": "移除推测性抽象后的精简方案，保留必要校验与错误处理。"
+            "description": "实现不断膨胀时，将每个抽象层与它真正服务的需求进行比较。移除推测性分支，同时保留处理真实无效输入的验证与错误逻辑。简化后的方案仍要通过这些样例检查，不能为了减少代码而损失必要行为。"
           }
         ]
       },
@@ -2095,21 +1987,15 @@
         "items": [
           {
             "title": "Separate research from review",
-            "brief": "Source materials, citable references, and fact-checking standards.",
-            "process": "Have one role collect source material and another check claims against those sources. Define the shared folder and the evidence each handoff must contain.",
-            "outcome": "A research-to-verification handoff package with claims traceable to sources."
+            "description": "Research and verification can be assigned to separate roles when both work from traceable source material. Define the shared folder, citation expectations, and evidence required at handoff, then have the review role check claims against those sources. The package should make disagreements and unsupported claims easy to locate."
           },
           {
             "title": "Prepare a recurring operations brief",
-            "brief": "A schedule, permitted sources, and an operations-report format.",
-            "process": "Specify the schedule, connected information sources, and report format. Keep drafting separate from sending messages or changing external records.",
-            "outcome": "A recurring-task design separating drafting, review, and external sending."
+            "description": "A recurring operations brief needs a schedule, approved information sources, and a report format. Design the routine around preparing a draft and handing it to review. Sending messages or changing external records remains a separate action, with the required connection and authorization checked before it occurs."
           },
           {
             "title": "Reuse an established team playbook",
-            "brief": "Proven roles/instructions and information about the receiving environment.",
-            "process": "Distribute roles and instructions as a reviewed package, then reconnect services and approve execution in the receiving environment.",
-            "outcome": "A reviewable role package and service-reconnection checklist without existing credentials."
+            "description": "A team playbook can package reviewed roles and instructions for another environment. Include what the receiving team needs to understand the method, then reconnect services and approve execution there. Keep existing credentials out of the package so reusable task knowledge does not carry one environment's access into another."
           }
         ]
       },
@@ -2195,21 +2081,15 @@
         "items": [
           {
             "title": "将资料收集与事实复核分开",
-            "brief": "待整理的资料、可引用来源和事实核对标准。",
-            "process": "一个角色收集来源，另一个角色对照来源检查主张；为交接约定共享目录和必须保留的证据。",
-            "outcome": "研究与核验角色的交接包，主张可以回到来源检查。"
+            "description": "研究和核验可以由不同角色承担，但需要共享可追溯的来源。先约定资料目录、引用要求和交接时必须提供的证据，再由审阅角色逐条对照原文检查主张。交付包应方便定位存在分歧或缺少支持的内容。"
           },
           {
             "title": "准备周期性的运营简报",
-            "brief": "执行周期、允许的信息源与运营报告格式。",
-            "process": "写明执行时间、允许读取的信息源和报告格式，将起草简报与发送消息、修改外部记录分成不同步骤。",
-            "outcome": "起草、审阅和外部发送分开的周期任务设计。"
+            "description": "周期性运营简报需要明确时间表、允许的信息来源和报告格式。围绕草稿准备及审阅交接设计流程，把发送消息或修改外部记录单独处理。这些外部行动实际发生前，仍需核对相应连接和授权，不能由定时准备环节直接代替。"
           },
           {
             "title": "复用已经跑通的团队方法",
-            "brief": "已验证的团队角色、指令和接收环境信息。",
-            "process": "把角色与指令作为可审阅的包交付，再由接收环境重新连接服务，并确认实际执行权限。",
-            "outcome": "可审阅的角色包与重新连接服务的清单，不携带已有凭据。"
+            "description": "团队工作手册可以将已审阅的角色与指令打包给另一个环境使用。交付理解方法所需的资料后，在接收端重新连接服务并确认执行权限。包中不携带原环境凭据，使可复用的是任务知识，而不是跨环境转移的访问权限。"
           }
         ]
       },
@@ -2313,21 +2193,15 @@
         "items": [
           {
             "title": "Transfer reviewed information into an app",
-            "brief": "Validated data, a target application, and fields permitted for entry.",
-            "process": "Prepare and validate the source data first, locate the actual target controls, and inspect the saved values after entry.",
-            "outcome": "Saved values read back after entry, with stop conditions for mismatches."
+            "description": "Transferring information into an application starts with validated source data and a defined set of permitted fields. Locate the actual controls before entering values, then read back what was saved. Stop when the values or target do not match the intended record instead of continuing through an uncertain desktop state."
           },
           {
             "title": "Recover after a list changes",
-            "brief": "List states before/after changes and criteria identifying the intended row.",
-            "process": "If an item disappears or the target becomes ambiguous, take another snapshot and locate the intended row again before attempting an action.",
-            "outcome": "Action evidence after relocalization, avoiding stale positions or references."
+            "description": "A changed list can invalidate an earlier row position or control reference. If an item disappears or the target becomes ambiguous, take a fresh snapshot and locate it again using the intended row's identifying criteria. Retain the new action evidence instead of relying on stale coordinates."
           },
           {
             "title": "Embed control in an existing runtime",
-            "brief": "Owned runtime interfaces, permission rules, and desktop-call needs.",
-            "process": "Compare CLI calls with the C library when your agent already owns task context and planning. Keep approval and verification decisions in that surrounding workflow.",
-            "outcome": "A CLI/C-library adapter plan preserving outer approval and result verification."
+            "description": "An agent runtime that already owns planning and task context can compare CLI calls with the C library as desktop-control interfaces. Map the needed calls to existing permissions and runtime boundaries. Keep approval decisions and verification of the resulting desktop state in the surrounding workflow, regardless of the adapter chosen."
           }
         ]
       },
@@ -2413,21 +2287,15 @@
         "items": [
           {
             "title": "把已核对资料录入应用",
-            "brief": "已验证的数据、目标应用与允许录入的字段。",
-            "process": "先准备并验证输入，再定位真实控件，录入后检查保存的值，让数据准备与界面操作各有验收依据。",
-            "outcome": "录入后重新读取的保存值，以及不一致时的停止条件。"
+            "description": "向应用录入信息前，先核验源数据并明确允许填写的字段。定位真实控件后再输入，保存后重新读取结果进行核对。如果目标或保存值与预期记录不一致，应停止处理，避免在不确定的桌面状态下继续操作。"
           },
           {
             "title": "在列表变化后恢复操作",
-            "brief": "列表发生变化前后的状态与目标条目的识别条件。",
-            "process": "条目消失或目标不明确时，重新读取快照并定位预期行，再决定是否执行，避免把动作落到相邻条目。",
-            "outcome": "重新定位后的操作证据，避免依赖旧位置或失效引用。"
+            "description": "列表变化可能让之前的行位置或控件引用失效。条目消失或目标不明确时，重新获取快照，依据目标记录的识别条件再次定位。后续行动保留重新定位后的证据，不依赖已经过期的坐标或引用继续操作。"
           },
           {
             "title": "为既有运行层补充桌面能力",
-            "brief": "自有运行层的任务接口、权限规则与桌面调用需求。",
-            "process": "当自己的 Agent 已掌握任务背景与规划时，比较 CLI 调用和 C 库接入，将审批与结果验证保留在外围工作流中。",
-            "outcome": "CLI 或 C 库的适配方案，保留外围审批和结果验证。"
+            "description": "已有规划和任务上下文的 Agent 运行时，可以将 CLI 调用与 C 库作为桌面控制接口进行比较。把所需操作对应到现有权限和运行边界，并将批准判断与桌面结果验证保留在外围工作流中，不因选用某种适配器而省略。"
           }
         ]
       },
@@ -2531,21 +2399,15 @@
         "items": [
           {
             "title": "Prepare a consistent image series",
-            "brief": "Product originals, style constraints, output sizes, and available models.",
-            "process": "Keep the workflow and model setup stable while varying the brief or source material, then compare the resulting images against the same acceptance criteria.",
-            "outcome": "A traceable image series checked against consistent subject/background criteria."
+            "description": "A consistent image series starts with product originals, style constraints, output sizes, and available models. Keep the workflow and model setup stable while varying the brief or source asset, then compare every result against the same subject and background criteria. Retain the inputs so the series remains traceable."
           },
           {
             "title": "Separate generation from finishing",
-            "brief": "Generated media, masking/upscaling requirements, and the current graph.",
-            "process": "Represent generation, masking, resizing, or compositing as explicit stages, so a weak result can be traced to the step that produced it.",
-            "outcome": "A staged graph whose failed frames can be traced to a specific operation."
+            "description": "A media graph can separate generation from masking, resizing, upscaling, and compositing. Represent the required finishing stages explicitly and keep each result connected to the operation that produced it. When a frame looks wrong, the graph should help locate the responsible stage instead of forcing the entire workflow to be rebuilt."
           },
           {
             "title": "Reuse a reviewed production recipe",
-            "brief": "A tested workflow JSON, custom nodes, and model dependencies.",
-            "process": "Package the workflow with its dependencies and representative inputs before handing it to another machine or collaborator.",
-            "outcome": "A portable production package with dependencies, sample inputs, and acceptance images."
+            "description": "A reviewed workflow JSON is only part of a reusable production recipe. Package the custom nodes, model dependencies, representative inputs, and acceptance images before handing it to another machine or collaborator. Those materials make the expected output and the environment needed to reproduce it visible together."
           }
         ]
       },
@@ -2637,21 +2499,15 @@
         "items": [
           {
             "title": "准备风格一致的图片系列",
-            "brief": "商品原图、风格约束、输出尺寸和可用模型。",
-            "process": "保持工作流与模型配置稳定，只改变需求或来源资料，再用同一标准检查生成结果。",
-            "outcome": "配置可追溯的图片系列，按同一标准核对主体与背景。"
+            "description": "制作一致的图片系列时，先准备产品原图、风格约束、输出尺寸和可用模型。保持工作流与模型设置稳定，只调整简报或源素材，再按同一套主体和背景标准比较结果。保留输入信息，让整组图片能够追溯到具体制作条件。"
           },
           {
             "title": "区分生成与后期处理",
-            "brief": "生成结果、遮罩或缩放需求，以及当前节点图。",
-            "process": "将生成、遮罩、缩放或合成拆成明确阶段，方便从不理想的结果追溯问题步骤。",
-            "outcome": "阶段清楚的节点流程，可从失败画面追溯到具体步骤。"
+            "description": "媒体工作流可以将生成与遮罩、缩放、放大及合成等处理分开。把真正需要的后期阶段明确放进图中，让结果对应到产生它的具体操作。画面出现问题时，可以沿图定位环节，而不是每次都重新搭建完整流程。"
           },
           {
             "title": "复用已验证的制作方法",
-            "brief": "验证过的工作流 JSON、自定义节点与模型依赖。",
-            "process": "把工作流、依赖和代表性输入一起保存，再交给另一台电脑或协作者执行。",
-            "outcome": "另一环境可核对的制作包，包含依赖、输入样例和验收图。"
+            "description": "经过验证的工作流 JSON 只是复用生产方案的一部分。交接给其他电脑或协作者前，还需整理自定义节点、模型依赖、代表性输入和参考验收图。将预期效果与复现它所需的环境一起说明，便于接收者核对条件和结果。"
           }
         ]
       },
@@ -2761,21 +2617,15 @@
         "items": [
           {
             "title": "Locate the path behind a feature",
-            "brief": "Feature entry points, key concepts, and source scope to investigate.",
-            "process": "Trace the modules and concepts connected to an entry point, then open the relevant files before proposing an implementation.",
-            "outcome": "Source-confirmed call paths and implementation locations, marking graph inferences."
+            "description": "Feature investigation can begin with an entry point, key concepts, and a bounded source scope. Follow the graph's connected modules and concepts, then open the relevant files to confirm the path before proposing edits. Distinguish inferred relationships from source-confirmed calls and implementation locations."
           },
           {
             "title": "Check a refactor boundary",
-            "brief": "Modules to refactor, public interfaces, and relevant tests.",
-            "process": "Inspect callers, dependencies, and related documentation to decide which interfaces and tests a structural change must preserve.",
-            "outcome": "A caller/dependency impact report identifying contracts that must remain."
+            "description": "A structural refactor needs its callers, dependencies, public interfaces, and related tests considered together. Inspect connected documentation as well as code before drawing the boundary of the change. The impact report should identify which contracts and tests must remain intact when modules are reorganized."
           },
           {
             "title": "Connect code to its design notes",
-            "brief": "Code directories, design documents, and design claims to verify.",
-            "process": "Bring documents and code into the same investigation while keeping semantic inferences separate from source-established behavior.",
-            "outcome": "Document-to-implementation mappings distinguishing inference, verified behavior, and evidence gaps."
+            "description": "Connecting design notes to code requires both sources in the same investigation. Map design claims to implementation locations, checking the files that establish actual behavior. Keep semantic graph inferences separate and mark evidence gaps so a plausible relationship is not reported as a verified implementation fact."
           }
         ]
       },
@@ -2867,21 +2717,15 @@
         "items": [
           {
             "title": "定位功能背后的调用路径",
-            "brief": "功能入口、关键概念与需要调查的源码范围。",
-            "process": "从入口查找关联模块与概念，再打开相关文件，确认实现位置后提出修改。",
-            "outcome": "经源码确认的调用路径和实现位置，标出图谱推断部分。"
+            "description": "调查功能时，可以从入口、关键概念和限定的资料范围出发，沿图中关联的模块继续查找。提出修改前打开具体文件确认路径，将推断关系与源码已经证实的调用、实现位置区分开，避免直接把图上的连线当作行为事实。"
           },
           {
             "title": "核对重构的边界",
-            "brief": "计划重构的模块、公开接口和相关测试。",
-            "process": "检查调用方、依赖和相关文档，明确结构变更必须保留的接口与测试。",
-            "outcome": "调用方与依赖影响报告，明确必须保留的契约。"
+            "description": "结构性重构需要同时考虑调用方、依赖、公开接口和相关测试。确定修改边界前，将关联文档与代码一起检查，形成影响报告。报告应指出模块重新组织后仍需保持的接口约定和测试要求，而不是只列出准备移动的文件。"
           },
           {
             "title": "连接代码与设计说明",
-            "brief": "代码目录、设计文档及需要验证的设计主张。",
-            "process": "把代码和文档放入同一调查，同时区分语义推断与源文件已经证明的行为。",
-            "outcome": "文档与实现的对应关系，区分推断、已证实行为与缺失证据。"
+            "description": "对照设计说明和代码时，将两类资料放入同一次调查，把设计主张对应到具体实现位置，并查看能够证实行为的文件。语义图推断需要单独说明，对证据缺口明确标记，避免把合理的关联直接报告为已经验证的实现事实。"
           }
         ]
       },
@@ -2991,21 +2835,15 @@
         "items": [
           {
             "title": "Compare two implementation approaches",
-            "brief": "One requirement, common tests, and two implementation approaches.",
-            "process": "Give both attempts the same requirement and tests, then compare behavior, complexity, and evidence rather than accepting the fastest completion.",
-            "outcome": "Comparable results in isolated branches, judged by behavior, complexity, and evidence."
+            "description": "Two implementation approaches are comparable only when they receive the same requirement and tests. Keep the attempts in isolated branches, then assess behavior, complexity, and verification evidence side by side. The fastest completion should not outweigh a result that better meets the shared acceptance conditions."
           },
           {
             "title": "Separate implementation from review",
-            "brief": "An implementation commit, review baseline, and acceptance conditions.",
-            "process": "Assign an implementation task and a focused review task with a clear handoff revision, so review findings refer to the code being considered.",
-            "outcome": "Review findings and resolutions tied to a fixed code revision."
+            "description": "Separate implementation from review with a fixed handoff revision and explicit acceptance conditions. Give the reviewer that code baseline and a focused question, then connect each finding and resolution to the revision being considered. This prevents review comments from drifting onto code that changed after the assessment began."
           },
           {
             "title": "Work on distinct repository areas",
-            "brief": "Separable repository areas, shared interfaces, and an integration owner.",
-            "process": "Divide changes by ownership boundary and define how shared interfaces and final integration will be handled.",
-            "outcome": "A scoped worktree/branch plan with merge order and joint checks."
+            "description": "Parallel repository work needs separable ownership boundaries, shared-interface rules, and an integration owner. Allocate worktrees or branches by those boundaries and agree on merge order before changes overlap. Joint checks at integration should verify that individually valid contributions still work together."
           }
         ]
       },
@@ -3097,21 +2935,15 @@
         "items": [
           {
             "title": "比较两种实现方案",
-            "brief": "同一需求、统一测试与两种候选实现方向。",
-            "process": "让两组尝试使用相同需求与测试，按行为、复杂度和证据比较，而不是只选择最快完成的一组。",
-            "outcome": "在隔离分支上可比较的结果，按行为、复杂度与证据作选择。"
+            "description": "比较两种实现方案时，使用相同需求和测试，并将两次尝试放在隔离分支中。并排检查行为、复杂度和验证证据，让判断基于共同验收条件。完成速度可以作为观察项，但不能代替对结果正确性和维护成本的比较。"
           },
           {
             "title": "分开实施与代码审阅",
-            "brief": "实施提交、审查基准与相关验收条件。",
-            "process": "为实施和审阅定义明确的交接版本，让发现的问题指向正在考虑接受的代码。",
-            "outcome": "指向固定代码版本的审查意见和处理结果。"
+            "description": "将实施和审阅分开时，明确交接版本与验收条件。向审阅者提供固定代码基线和具体问题，并将每条发现及处理结果关联到该版本。这样可以避免审阅过程中代码继续变化，导致评论和实际接受的修改不再对应。"
           },
           {
             "title": "并行处理不同仓库区域",
-            "brief": "可分离的仓库区域、共享接口与集成责任人。",
-            "process": "沿职责边界拆分修改，同时约定共享接口和最终集成由谁负责。",
-            "outcome": "明确分工的 worktree/分支计划，以及合并顺序和联合检查。"
+            "description": "并行修改仓库时，需要可分离的责任范围、共享接口规则和最终集成负责人。按这些边界分配工作区或分支，并提前约定合并顺序。集成阶段进行联合检查，确认各自成立的修改放在一起之后仍然能够正常协作。"
           }
         ]
       },

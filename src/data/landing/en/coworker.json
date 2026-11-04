@@ -60,21 +60,15 @@
     "items": [
       {
         "title": "Delegate the next concrete outcome",
-        "brief": "A bounded research question, reference scope, and decision deadline.",
-        "process": "Clarify the decision to support, read sources within scope, and separate research findings from recommendations.",
-        "outcome": "A reviewable research/decision brief separating facts and recommendations."
+        "description": "Delegate research around a specific decision, a bounded reference scope, and a deadline. Read the relevant sources and distinguish observed facts from recommendations before writing the brief. The recipient should be able to review the evidence and see which choices still require their judgment."
       },
       {
         "title": "Turn source material into a draft",
-        "brief": "Interview notes, references or assets, and format/tone requirements.",
-        "process": "Organize content from source material into a complete draft, identifying weak evidence and decisions needed.",
-        "outcome": "A complete source-grounded draft with unverified claims marked separately."
+        "description": "Interview notes, references, and supplied assets can become a complete draft when the format and tone are clear. Organize the argument around those sources, identify weak evidence, and flag unverified claims. Deliver a coherent piece that can be revised, with outstanding editorial decisions visible to the reviewer."
       },
       {
         "title": "Complete repeatable assignments",
-        "brief": "A proven task brief, approved resources, and changes for the current period.",
-        "process": "Apply proven task requirements to the current material, check changes, and deliver for review.",
-        "outcome": "The current report/client deliverable checked against consistent acceptance criteria."
+        "description": "A proven assignment can be repeated with the current period's material and the changes that matter this time. Reuse the agreed task requirements and review criteria, then check the new report or client deliverable against them. Consistent expectations should not hide differences in the underlying records."
       }
     ]
   },

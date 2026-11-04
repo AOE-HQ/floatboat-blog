@@ -60,21 +60,15 @@
     "items": [
       {
         "title": "Coordinate many roles from one desk",
-        "brief": "Research materials, operating records, content goals, and client requirements for one project.",
-        "process": "Keep role materials, tasks, and outputs in one project context, identifying open questions at handoff.",
-        "outcome": "Project outputs linking sources and role assignments, retaining context across handoffs."
+        "description": "Research, operations, content, and client work can share one project without losing their separate responsibilities. Keep the source material, task assignments, and outputs together, and identify unanswered questions when work changes hands. Each handoff should retain the decisions and sources the next role needs."
       },
       {
         "title": "Work with repositories and project rules",
-        "brief": "A codebase, project rules, requirements, and available verification tools.",
-        "process": "Read relevant code/rules, bound the edits, and use existing project tools to verify diffs and behavior.",
-        "outcome": "Reviewable code changes and verification records consistent with repository conventions."
+        "description": "Start repository work with the codebase, project rules, and a bounded requirement. Read the relevant interfaces before editing, use the project's existing tools to check the change, and deliver the diff with verification records. Reviewers can then assess both behavior and consistency with repository conventions."
       },
       {
         "title": "Produce work that can be examined",
-        "brief": "Approved source files, a delivery format, and review criteria.",
-        "process": "Organize source files around acceptance criteria, retain attribution, and collect open questions at review points.",
-        "outcome": "Editable reports, slides, or analyses with sources and open questions identified."
+        "description": "A report, slide deck, or analysis needs more than a finished-looking draft. Organize approved files around the delivery format and review criteria, retain source attribution, and record questions that still need a decision. The resulting editable work gives reviewers a clear route back to its evidence."
       }
     ]
   },

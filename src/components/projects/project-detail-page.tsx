@@ -48,7 +48,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
       <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--ob-color-text-subtle)]">{t.capabilitiesIntro}</p>
       <ul className="mt-7 grid gap-4 md:grid-cols-3">{t.capabilities.map((item) => <li key={item.title}><ResourceCard title={item.title} description={item.description} /></li>)}</ul>
     </section>
-    <UseCasesSection {...t.useCases} locale={locale} />
+    <UseCasesSection {...t.useCases} />
     {t.prerequisites && <RequirementsSection {...t.prerequisites} />}
     {t.howTo && <HowSection {...t.howTo} />}
     {project.articleSlug && <section aria-label={zh ? "工作流解读" : "Workflow analysis"} className="mx-auto max-w-7xl px-5 py-10 sm:px-8">

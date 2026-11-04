@@ -60,21 +60,15 @@
     "items": [
       {
         "title": "Run a small agent team",
-        "brief": "A shared objective, research/operations/content responsibilities, and common materials.",
-        "process": "Assign research, operations, or content work by role and return results and ownership to the project conversation.",
-        "outcome": "Owned collaboration records and handoff results reducing manual relaying."
+        "description": "A small agent team needs a shared objective and clear ownership of research, operations, or content work. Supply common material, assign responsibilities, and return each result to the project conversation with its owner identified. Handoffs then preserve context without requiring a person to relay every intermediate message."
       },
       {
         "title": "Keep clients and agents aligned",
-        "brief": "A client project, changing requirements, past feedback, and current deliverables.",
-        "process": "Retain requirements and revision feedback by project, linking current results to the relevant decisions.",
-        "outcome": "Project-scoped requirements, revision history, and current results."
+        "description": "Client requirements and revision feedback should remain connected to the project they affect. Keep past decisions alongside current deliverables, and link a requested change to the result that addresses it. This gives people and agents the same revision history instead of several conflicting versions of the brief."
       },
       {
         "title": "Add agents to real collaboration",
-        "brief": "Team context, steps an agent may contribute to, and human checkpoints.",
-        "process": "Hand over materials, contribute drafts, and confirm the next owner; continue consequential external actions through approval.",
-        "outcome": "Task contributions connected to team collaboration, retaining approval for external actions."
+        "description": "Bring an agent into a team workflow by defining which step it can contribute to and what material it needs. Review its draft or analysis, confirm the next owner, and retain human checkpoints for consequential external actions. An agent contribution should connect to the team's actual handoff process."
       }
     ]
   },

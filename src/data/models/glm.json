@@ -151,17 +151,9 @@
           "en": "Reasoning playback",
           "zh": "推理回放"
         },
-        "brief": {
-          "zh": "兼容响应样例、thinking-mode 设置与需要保留的推理字段。",
-          "en": "Compatible response samples, thinking-mode settings, and reasoning fields to preserve."
-        },
-        "process": {
-          "zh": "核对 reasoning_content 的映射与回放，检查缺失或重复片段。",
-          "en": "Check reasoning_content mapping/replay for missing or duplicated segments."
-        },
-        "outcome": {
-          "zh": "推理字段的对照记录，以及回放差异与修正建议。",
-          "en": "Reasoning-field comparisons, replay differences, and correction suggestions."
+        "description": {
+          "en": "Reasoning playback can be checked with compatible response samples and the thinking-mode settings used to produce them. Compare how reasoning_content is mapped and replayed, looking for missing or duplicated segments. Record the field-level differences and correction suggestions before relying on playback in a longer workflow.",
+          "zh": "检查推理回放时，需要兼容的响应样本及生成它们时的思考模式设置。核对 reasoning_content 的字段映射和回放过程，查找缺失或重复片段。先记录字段差异与修正建议，再判断这条回放路径能否用于更长的工作流。"
         }
       },
       {
@@ -169,17 +161,9 @@
           "en": "Gateway compatibility",
           "zh": "网关兼容"
         },
-        "brief": {
-          "zh": "已有聊天通道、请求格式与响应消费方式。",
-          "en": "An existing chat route, request format, and response-consumption logic."
-        },
-        "process": {
-          "zh": "比较兼容接口契约，核对模型标识、流式事件与错误响应。",
-          "en": "Compare interface contracts, model identifiers, streaming events, and error responses."
-        },
-        "outcome": {
-          "zh": "明确的请求响应映射及兼容性测试结果。",
-          "en": "An explicit request/response mapping and compatibility test results."
+        "description": {
+          "en": "Adding a model through an existing chat gateway requires more than changing its name. Compare the request format, model identifier, streaming events, error responses, and response-consumption logic. Document the mapping and run compatibility checks so downstream code can handle the route's actual contract.",
+          "zh": "通过现有聊天网关接入模型时，不能只替换模型名称。需要核对请求格式、模型标识、流式事件、错误响应以及下游读取逻辑，形成明确的输入输出映射。完成兼容性验证后，再判断已有代码能否正确处理这条入口的实际接口约定。"
         }
       },
       {
@@ -187,17 +171,9 @@
           "en": "Workflow compatibility review",
           "zh": "工作流兼容性评估"
         },
-        "brief": {
-          "zh": "具体工作流、推理需求与当前访问条件。",
-          "en": "A concrete workflow, reasoning needs, and current access conditions."
-        },
-        "process": {
-          "zh": "分别检查型号、推理回放、通道和实际入口，标记尚未验证的环节。",
-          "en": "Check model identity, reasoning replay, routes, and actual access, marking unverified steps."
-        },
-        "outcome": {
-          "zh": "兼容性与访问要求明确的接入评估。",
-          "en": "An integration assessment with explicit compatibility and access requirements."
+        "description": {
+          "en": "A workflow that depends on reasoning replay needs its model identity, route, and access conditions checked together. Compare those requirements with the current environment and mark every unverified step. The assessment should make clear which compatibility checks have passed and which prerequisites still prevent execution.",
+          "zh": "依赖推理回放的工作流，需要同时核对模型身份、调用入口和实际访问条件。将这些要求与当前环境逐项对照，明确标记尚未验证的步骤。评估结果应区分已经通过的兼容性检查，以及仍然阻碍执行的前提条件。"
         }
       }
     ]

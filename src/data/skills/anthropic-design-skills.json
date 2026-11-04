@@ -95,17 +95,9 @@
             "en": "A product landing page",
             "zh": "产品落地页"
           },
-          "brief": {
-            "en": "Product positioning, the visitor’s decision, approved copy, and brand assets.",
-            "zh": "产品定位、访客决策、已确认文案与品牌素材。"
-          },
-          "process": {
-            "en": "Use the product’s actual subject and audience to choose a coherent visual direction, then organize copy and interaction around the visitor’s decision.",
-            "zh": "结合产品主题与目标用户确定视觉方向，再围绕访客需要作出的决定组织文案和交互。"
-          },
-          "outcome": {
-            "en": "A visual direction and page implementation with desktop/mobile checks.",
-            "zh": "视觉方向与页面实现，附桌面和移动布局检查。"
+          "description": {
+            "en": "A product landing page needs a visual direction grounded in its positioning, audience, and the visitor's decision. Use approved copy and brand assets to organize the page and its interactions around that purpose. Check the implementation on desktop and mobile rather than judging the design from one attractive screen.",
+            "zh": "产品落地页的视觉方向应来自产品定位、受众和访客需要作出的决定。结合已批准的文案与品牌素材，围绕这个目标组织内容和交互。完成后检查桌面及移动端实现，避免仅凭一张好看的画面判断整个页面是否适用。"
           }
         },
         {
@@ -113,17 +105,9 @@
             "en": "A dashboard needs clearer hierarchy",
             "zh": "仪表盘层级不清"
           },
-          "brief": {
-            "en": "Dashboard screenshots, key metrics, and frequent actions.",
-            "zh": "仪表盘截图、关键指标及最常执行的操作。"
-          },
-          "process": {
-            "en": "Prioritize the information and actions people use most, with typography and spacing that make the working screen easier to scan.",
-            "zh": "优先呈现用户最常查看的信息与操作，通过字体和间距让工作界面更容易浏览。"
-          },
-          "outcome": {
-            "en": "Revised information priorities, layout, and interactions with key actions visible.",
-            "zh": "信息优先级、布局和交互的调整，重点操作保持可见。"
+          "description": {
+            "en": "A dashboard redesign should begin with its key metrics and most frequent actions. Examine screenshots and actual working tasks to decide what deserves priority, then adjust typography, spacing, and layout accordingly. Important controls should become easier to find without disrupting the interactions people already depend on.",
+            "zh": "优化仪表盘时，先识别关键指标和最常发生的操作，再结合截图与真实工作任务确定信息优先级。相应调整字体、间距和布局，让重要信息及控件更容易找到，同时保留使用者已经依赖的有效交互。"
           }
         },
         {
@@ -131,17 +115,9 @@
             "en": "An existing page needs a redesign",
             "zh": "已有页面需要重做"
           },
-          "brief": {
-            "en": "The existing page, content to preserve, and known usability problems.",
-            "zh": "现有页面、必须保留的内容和已知使用问题。"
-          },
-          "process": {
-            "en": "Provide the current interface and the requirements it must preserve so the agent can replace the visual direction without losing product content.",
-            "zh": "提供当前界面及必须保留的要求，让 Agent 重新设计视觉表达，同时保留产品内容与功能。"
-          },
-          "outcome": {
-            "en": "A redesign preserving functional constraints, with representative before/after states.",
-            "zh": "保留功能约束的改版结果，附改动前后代表状态。"
+          "description": {
+            "en": "An existing page can take on a new visual direction while retaining its product content and functional constraints. Supply the current interface, known usability problems, and content that must survive the redesign. Compare representative before-and-after states to verify that the replacement solves the problem without losing required behavior.",
+            "zh": "已有页面可以更新视觉方向，但不能丢失产品内容和功能约束。提供当前界面、已知可用性问题及必须保留的内容，作为重构边界。通过有代表性的前后状态对比，核对新设计是否解决问题，并保留必要行为。"
           }
         }
       ]
@@ -355,17 +331,9 @@
             "en": "Capture a recurring workflow",
             "zh": "沉淀重复工作流程"
           },
-          "brief": {
-            "en": "Real inputs, the manual method, and accepted outputs for a recurring task.",
-            "zh": "重复任务的真实输入、人工做法与合格成果样例。"
-          },
-          "process": {
-            "en": "Turn an established process with known inputs and deliverables into instructions an agent can follow in future tasks.",
-            "zh": "将已有输入与交付标准的工作方法整理成指令，供 Agent 在后续同类任务中使用。"
-          },
-          "outcome": {
-            "en": "Reusable instructions and representative requests for checking their effect.",
-            "zh": "可复用指令草稿及用于核验效果的代表请求。"
+          "description": {
+            "en": "A recurring task is a useful Skill candidate when its real inputs, manual method, and accepted outputs are already understood. Turn that established process into reusable instructions, then test them with representative user requests. The examples should show whether an agent can reproduce the method beyond the original conversation.",
+            "zh": "当周期性任务的真实输入、人工方法和可接受结果已经清楚时，可以将其整理成 Skill。把成熟流程写成可复用指令，再用有代表性的用户请求检查效果，确认 Agent 能够在原始对话之外理解并复现这套方法。"
           }
         },
         {
@@ -373,17 +341,9 @@
             "en": "Improve an inconsistent Skill",
             "zh": "改进表现不稳定的 Skill"
           },
-          "brief": {
-            "en": "An existing Skill, successful/failed runs, and acceptance rules.",
-            "zh": "现有 Skill、成功与失败运行记录和验收规则。"
-          },
-          "process": {
-            "en": "Compare representative runs to identify missing steps, unclear expectations, or examples that do not cover the task.",
-            "zh": "比较代表性运行结果，找出缺失步骤、不清楚的要求或覆盖不足的示例。"
-          },
-          "outcome": {
-            "en": "Revisions targeting failure modes, compared on the same examples.",
-            "zh": "针对失败模式的修订，以及在同组案例上的对照结果。"
+          "description": {
+            "en": "An inconsistent Skill needs successful and failed runs compared against the same acceptance rules. Identify missing steps, unclear expectations, and examples that leave important cases uncovered, then revise the instructions accordingly. Rerun those examples so any improvement can be linked to the failure mode it was meant to address.",
+            "zh": "Skill 表现不稳定时，将成功与失败记录放在同一套验收规则下比较，查找缺失步骤、模糊要求和样例未覆盖的情况。针对具体原因修订指令后，重新运行原有样例，让效果变化能够对应到这次准备解决的问题。"
           }
         },
         {
@@ -391,17 +351,9 @@
             "en": "Refine activation behavior",
             "zh": "优化触发描述"
           },
-          "brief": {
-            "en": "Actual user requests and nearby tasks that should or should not trigger the Skill.",
-            "zh": "用户真实提问、应该触发与不应触发的相邻任务。"
-          },
-          "process": {
-            "en": "Check whether the description matches realistic user requests, separating tasks that should trigger the Skill from nearby tasks that should not.",
-            "zh": "用真实表达检查描述，将应该调用 Skill 的任务与相近但不适用的任务区分开。"
-          },
-          "outcome": {
-            "en": "A bounded trigger description with positive/negative examples to reduce misfires.",
-            "zh": "边界清楚的触发描述与正反例，减少误调用。"
+          "description": {
+            "en": "A Skill description should match realistic requests while excluding nearby tasks it does not handle. Compare actual user phrasing with positive and negative trigger examples, then narrow ambiguous wording. The resulting activation boundary should help the Skill appear for the intended work without being invoked for a merely related topic.",
+            "zh": "Skill 描述需要匹配真实请求，也要排除内容接近却不属于其职责的任务。对照实际用户表达整理正反触发样例，收紧容易产生歧义的措辞。清楚的激活边界能够让 Skill 在合适的工作中出现，减少仅因话题相关而误触发。"
           }
         }
       ]
@@ -615,17 +567,9 @@
             "en": "Extract a report’s content",
             "zh": "提取报告内容"
           },
-          "brief": {
-            "en": "A PDF, target pages, and columns or passages to extract.",
-            "zh": "指定 PDF、目标页码和需要提取的列或段落。"
-          },
-          "process": {
-            "en": "Read selectable text and tables, or use OCR for scanned pages when needed. Compare extracted values and headings with the original pages.",
-            "zh": "读取可选中的文本和表格，扫描页面按需使用 OCR，并与原页核对数值和标题。"
-          },
-          "outcome": {
-            "en": "An extracted file with page references and uncertainty markers for OCR or values.",
-            "zh": "保留原页出处的提取文件，并标记 OCR 或数值的不确定处。"
+          "description": {
+            "en": "Extracting a PDF report starts with the target pages, columns, or passages you actually need. Read selectable text and tables directly, using OCR for scanned pages when necessary, then compare values and headings with the originals. Keep page references and mark uncertain recognition rather than presenting every extracted value as exact.",
+            "zh": "提取 PDF 报告时，先指定需要的页码、列或段落。能够选择的文字和表格直接读取，扫描页再按需使用 OCR，并将数值及标题与原页对照。保留页码引用，对识别不确定的内容作出标记，避免把所有提取值都当作准确原文。"
           }
         },
         {
@@ -633,17 +577,9 @@
             "en": "Organize a document package",
             "zh": "整理文档包"
           },
-          "brief": {
-            "en": "Files to combine, page ranges, and the intended order.",
-            "zh": "待合并文件、页码范围与期望顺序。"
-          },
-          "process": {
-            "en": "Merge selected PDFs or split a file by page range. Verify the requested order, page count, and orientation before sharing.",
-            "zh": "合并选定文件或按页码拆分，分享前核对顺序、页数与页面方向。"
-          },
-          "outcome": {
-            "en": "A document package checked for page count, order, and orientation.",
-            "zh": "页数、顺序和方向已核对的文档包。"
+          "description": {
+            "en": "A combined or split PDF package needs a clear file list, page ranges, and intended order. Assemble only the requested material and inspect the saved result for page count, sequence, and orientation. Those checks establish that the document package matches the handoff request before it is shared.",
+            "zh": "合并或拆分 PDF 前，明确文件清单、页面范围和目标顺序。只组合所需材料，保存后检查页数、前后次序与页面方向，确认文档包符合交接要求。不要仅根据操作已经执行，就假定输出中的每一页都处于正确位置。"
           }
         },
         {
@@ -651,17 +587,9 @@
             "en": "Prepare a PDF form",
             "zh": "处理 PDF 表单"
           },
-          "brief": {
-            "en": "The original PDF form, field mapping, and approved values.",
-            "zh": "原始 PDF 表单、字段映射与确认后的填写值。"
-          },
-          "process": {
-            "en": "Inspect the form and follow the dedicated field instructions. Check that entered values align with the intended labels and saved output.",
-            "zh": "先检查表单并阅读专门的字段说明，再核对填写值、标签与保存后的文件。"
-          },
-          "outcome": {
-            "en": "A saved and reopened form, with unsupported fields identified.",
-            "zh": "已保存并重新打开核对的表单，标出无法填写的字段。"
+          "description": {
+            "en": "A PDF form needs its original fields, label mapping, and approved values inspected before filling. Follow the dedicated field instructions and check that values reach the intended labels in the saved document. Reopen the output and identify unsupported fields instead of treating a visually plausible form as verified.",
+            "zh": "填写 PDF 表单前，先检查原始字段、标签对应关系和已批准的数值，按字段专用说明操作。保存后重新打开文件，核对内容是否落在正确标签下，并明确列出不受支持的字段，避免只凭外观相似就认定填写正确。"
           }
         }
       ]
@@ -875,17 +803,9 @@
             "en": "Create a structured report",
             "zh": "创建结构化报告"
           },
-          "brief": {
-            "en": "Approved text, report hierarchy, table data, and page requirements.",
-            "zh": "已确认正文、报告层级、表格内容与页面要求。"
-          },
-          "process": {
-            "en": "Turn approved content into an editable Word file with a clear heading hierarchy, tables, and consistent page settings.",
-            "zh": "把确认内容整理成可编辑 Word 文件，建立清晰标题层级、表格和统一页面设置。"
-          },
-          "outcome": {
-            "en": "An editable Word report with rendered layout checks.",
-            "zh": "可继续编辑的 Word 报告及渲染后的版式检查。"
+          "description": {
+            "en": "A structured report can turn approved text and table data into an editable Word document. Define the heading hierarchy and page requirements before laying out the content, then render the file to inspect the result. Deliver a document whose structure and layout can both be reviewed and adjusted.",
+            "zh": "结构化报告可以将已批准的文字与表格数据整理成可编辑 Word 文件。排版前明确标题层级和页面要求，完成后渲染检查实际效果。交付的文档既需要结构清楚，也应方便审阅者继续调整内容与布局。"
           }
         },
         {
@@ -893,17 +813,9 @@
             "en": "Edit selected document content",
             "zh": "编辑指定内容"
           },
-          "brief": {
-            "en": "The source document, bounded edit sections, and approved notes.",
-            "zh": "源文档、限定修改的章节和批准的参考笔记。"
-          },
-          "process": {
-            "en": "Use an existing document as the source and define bounded changes so unrelated text, comments, and formatting can be checked for preservation.",
-            "zh": "以已有文档为来源限定修改范围，核对无关正文、批注与格式是否保留。"
-          },
-          "outcome": {
-            "en": "Requested revisions with checks that unrelated text, comments, and formatting remain.",
-            "zh": "指定内容的修订，附无关正文、批注和格式的保留检查。"
+          "description": {
+            "en": "Editing an existing Word document requires a bounded change list and the approved notes behind it. Use the source file as the baseline and revise only the selected sections. Check unrelated text, comments, and formatting afterward so the requested update does not silently alter material outside its scope.",
+            "zh": "修改已有 Word 文档时，以源文件为基准，明确需要调整的章节和已批准意见，只处理限定范围。修改后核对无关正文、批注和格式是否保持原状，避免完成局部更新的同时，静默改变了任务范围之外的内容。"
           }
         },
         {
@@ -911,17 +823,9 @@
             "en": "Reuse a Word template",
             "zh": "复用 Word 模板"
           },
-          "brief": {
-            "en": "A Word template, replacement content, and repeated elements such as headers/footers.",
-            "zh": "Word 模板、替换内容与页眉页脚等重复元素。"
-          },
-          "process": {
-            "en": "Provide the template and new content, then check that its styles, page structure, and repeating elements still work in the output.",
-            "zh": "提供模板与新内容，检查输出中的样式、页面结构和重复元素是否正常。"
-          },
-          "outcome": {
-            "en": "A template-based document checked for styles, pagination, and repeated elements.",
-            "zh": "沿用模板的文档，核对样式、分页和重复元素。"
+          "description": {
+            "en": "Reusing a Word template means fitting replacement content to its existing styles and page structure. Inspect repeated elements such as headers and footers alongside the new text, then check pagination in the output. A template-based document should preserve the useful conventions rather than merely resemble the original first page.",
+            "zh": "复用 Word 模板时，将新内容适配到已有样式和页面结构，并同时检查页眉、页脚等重复元素。输出后核对分页及各类样式是否仍然有效，让文档真正继承模板中的规范，而不只是第一页看起来接近原文件。"
           }
         }
       ]
@@ -1135,17 +1039,9 @@
             "en": "Build a briefing deck",
             "zh": "制作汇报演示"
           },
-          "brief": {
-            "en": "The audience, main conclusions, evidence, and available charts/assets.",
-            "zh": "汇报对象、主要结论、证据与可用图表素材。"
-          },
-          "process": {
-            "en": "Turn approved research into a slide narrative for a defined audience, with evidence and visuals supporting each main point.",
-            "zh": "将确认资料整理成面向特定读者的幻灯片叙事，为主要观点配置证据与视觉素材。"
-          },
-          "outcome": {
-            "en": "A coherent deck with slide content tied to evidence.",
-            "zh": "有清楚叙事的演示文稿，每页内容与证据对应。"
+          "description": {
+            "en": "A briefing deck should organize approved research around the audience and the conclusions they need to understand. Connect evidence, charts, and supplied assets to each main point, building a coherent slide narrative. The finished presentation should make the reasoning traceable instead of distributing facts across unrelated pages.",
+            "zh": "简报演示应围绕受众及其需要理解的结论组织已批准研究。将证据、图表和已有素材对应到每个主要观点，形成连贯的页面叙事。完成后的演示能够让人追溯推理依据，避免只把事实分散放进互不衔接的幻灯片。"
           }
         },
         {
@@ -1153,17 +1049,9 @@
             "en": "Update an existing presentation",
             "zh": "更新已有文稿"
           },
-          "brief": {
-            "en": "An existing deck, pages to update, and approved data.",
-            "zh": "现有演示、需要更新的页面与确认数据。"
-          },
-          "process": {
-            "en": "Change selected facts or slides while preserving the deck’s intended sequence, template choices, and relevant speaker notes.",
-            "zh": "修改指定数据或页面，同时保留演示顺序、模板选择和相关演讲备注。"
-          },
-          "outcome": {
-            "en": "An updated version preserving order and notes, with changed slides inspected.",
-            "zh": "保留顺序和备注的更新版本，逐页检查变化。"
+          "description": {
+            "en": "Updating a presentation starts with the existing deck, selected slides, and approved new data. Revise those facts while preserving the intended sequence, template choices, and relevant speaker notes. Inspect the changed slides so the updated version remains consistent with the presentation that surrounds them.",
+            "zh": "更新演示文稿时，以原文件、指定页面和已批准数据为依据，只调整需要变化的事实或幻灯片。保留整体顺序、模板选择和相关演讲备注，再检查改动页面与前后内容是否一致，避免局部更新破坏完整表达。"
           }
         },
         {
@@ -1171,17 +1059,9 @@
             "en": "Adapt a slide template",
             "zh": "沿用幻灯片模板"
           },
-          "brief": {
-            "en": "The original template, new content, and brand/media constraints.",
-            "zh": "原模板、新内容与品牌和媒体约束。"
-          },
-          "process": {
-            "en": "Fit new content to the supplied layouts, then inspect crowded slides and media placement rather than assuming placeholder sizes will work.",
-            "zh": "把新内容放入现有版式，检查拥挤页面与媒体位置，避免直接套用占位区域大小。"
-          },
-          "outcome": {
-            "en": "Slides fitted to actual content, with overflow, crowding, and misplaced media corrected.",
-            "zh": "适配真实内容的幻灯片，修正溢出、拥挤与媒体错位。"
+          "description": {
+            "en": "A slide template provides layouts rather than a guarantee that replacement content will fit. Apply the supplied brand and media constraints, then inspect dense slides, text overflow, and image placement using the actual material. Correct those problems before handing over a deck that depends on its real content.",
+            "zh": "幻灯片模板提供的是布局，不保证任何替换内容都能直接放下。结合品牌和媒体约束填入真实资料后，检查内容密集页面、文字溢出与图片位置，修正拥挤和错位，再交付能够适配实际内容的演示文稿。"
           }
         }
       ]
@@ -1395,17 +1275,9 @@
             "en": "Clean an inconsistent table",
             "zh": "清理不一致的数据表"
           },
-          "brief": {
-            "en": "The raw table, column meanings, and rules for unusual records.",
-            "zh": "原始表格、列含义和异常记录的处理规则。"
-          },
-          "process": {
-            "en": "Normalize misplaced headers, malformed rows, and column types while preserving the meaning of the source data and marking ambiguous values.",
-            "zh": "整理错位表头、异常行和列类型，同时保留来源含义并标出有歧义的值。"
-          },
-          "outcome": {
-            "en": "A clean table preserving source meaning and flagging ambiguous values.",
-            "zh": "保留来源含义的干净数据表，有歧义的值另作标记。"
+          "description": {
+            "en": "An inconsistent table needs its column meanings and rules for unusual records established before cleaning. Normalize misplaced headers, malformed rows, and data types without changing what the source values mean. Keep ambiguous entries flagged so a tidy appearance does not conceal unresolved data questions.",
+            "zh": "清理不一致表格前，先确定各列含义及特殊记录的处理规则。修正错位表头、异常行和数据类型时，保持源数据的原意。对于无法确定的值继续保留标记，避免整洁的外观掩盖尚未解决的数据问题。"
           }
         },
         {
@@ -1413,17 +1285,9 @@
             "en": "Build a formula-driven workbook",
             "zh": "构建公式工作簿"
           },
-          "brief": {
-            "en": "Input dimensions, calculation rules, and results readers need to compare.",
-            "zh": "输入维度、计算规则和读者需要比较的结果。"
-          },
-          "process": {
-            "en": "Express calculations as spreadsheet formulas so the model can respond to new inputs, with assumptions placed where the reader can inspect them.",
-            "zh": "使用表格公式表达计算，让新输入能够更新结果，并在读者可查看的位置注明假设。"
-          },
-          "outcome": {
-            "en": "A formula workbook with assumptions, recalculated and checked for errors before delivery.",
-            "zh": "带公式与假设说明的工作簿，交付前重新计算并检查错误。"
+          "description": {
+            "en": "A formula-driven workbook should express calculation rules as formulas that respond to new inputs. Place assumptions where readers can inspect them and organize outputs around the comparisons they need to make. Recalculate the workbook and check errors before delivering an editable model rather than a collection of fixed results.",
+            "zh": "公式驱动的工作簿应将计算规则写成能够响应输入变化的公式，把假设放在读者可以查看的位置，并围绕实际比较需要组织结果。交付前重新计算并检查错误，使文件成为可编辑模型，而不是一组无法追溯的固定数字。"
           }
         },
         {
@@ -1431,17 +1295,9 @@
             "en": "Update an established spreadsheet",
             "zh": "更新已有工作簿"
           },
-          "brief": {
-            "en": "An existing workbook, target ranges, and formulas to preserve.",
-            "zh": "现有工作簿、目标区域和必须保留的公式。"
-          },
-          "process": {
-            "en": "Follow the workbook’s existing styles and input conventions. Change only the intended area and check that remaining formulas and references still work.",
-            "zh": "遵循现有样式与输入约定，只修改目标区域，并检查其他公式和引用是否正常。"
-          },
-          "outcome": {
-            "en": "Bounded updates with checks of affected formulas and references.",
-            "zh": "限定范围的更新，以及相关公式与引用的复核结果。"
+          "description": {
+            "en": "A bounded spreadsheet update needs the target ranges and formulas to preserve identified in advance. Follow the workbook's established styles and input conventions, then check affected formulas and references after editing. Leave unrelated areas intact so existing calculations remain usable alongside the new information.",
+            "zh": "局部更新电子表格前，明确目标区域和必须保留的公式。沿用工作簿已有样式与输入约定，修改后核对受影响的计算和引用关系。保持无关区域原状，使新增信息能够与既有计算继续协同使用。"
           }
         }
       ]
@@ -1655,17 +1511,9 @@
             "en": "Audit an existing interface",
             "zh": "检查已有界面"
           },
-          "brief": {
-            "en": "A page, target user task, and current screenshots or code.",
-            "zh": "指定页面、目标用户任务和当前界面截图或代码。"
-          },
-          "process": {
-            "en": "Use a targeted audit or critique to identify hierarchy, interaction, accessibility, or responsive issues in a known screen.",
-            "zh": "围绕指定页面开展 audit 或 critique，定位层级、交互、无障碍或响应式问题。"
-          },
-          "outcome": {
-            "en": "Audit/critique findings prioritized by severity and affected states.",
-            "zh": "按严重程度整理的 audit/critique 发现，说明受影响状态。"
+          "description": {
+            "en": "An interface audit needs a known screen, the user's task, and current screenshots or code. Focus the critique on hierarchy, interaction, accessibility, and responsive states that affect that task. Prioritize findings by severity and the states they occur in so implementation can address concrete problems instead of general taste.",
+            "zh": "界面审计需要明确页面、用户任务及当前截图或代码。围绕影响任务的信息层级、交互、无障碍和响应状态进行评估，再按严重程度与出现条件排列问题。让后续实施处理具体缺陷，而不是停留在泛泛的审美意见上。"
           }
         },
         {
@@ -1673,17 +1521,9 @@
             "en": "Polish a nearly finished page",
             "zh": "打磨接近完成的页面"
           },
-          "brief": {
-            "en": "An approved visual direction and a nearly finished page implementation.",
-            "zh": "已确认的视觉方向与接近完成的页面实现。"
-          },
-          "process": {
-            "en": "Refine typography, alignment, spacing, and consistency while preserving the interface direction and behavior that already work.",
-            "zh": "保留已确定的方向与正常行为，进一步核对字体、对齐、间距和一致性。"
-          },
-          "outcome": {
-            "en": "Typography, alignment, and rhythm refinements preserving accepted interactions.",
-            "zh": "字体、对齐和节奏的精修，保留已验收的交互。"
+          "description": {
+            "en": "A nearly finished page can be polished without changing its approved visual direction. Refine typography, alignment, spacing, and consistency against the implementation that already works, checking accepted interactions as you go. The result should improve reading rhythm and coherence without reopening settled product or behavior decisions.",
+            "zh": "接近完成的页面可以在已批准视觉方向内继续打磨。围绕现有实现调整字体、对齐、间距和一致性，同时检查已经认可的交互。优化应改善阅读节奏和整体连贯性，而不是重新打开已经确定的产品或行为决定。"
           }
         },
         {
@@ -1691,17 +1531,9 @@
             "en": "Harden form and edge states",
             "zh": "补齐表单与边界状态"
           },
-          "brief": {
-            "en": "Form rules, asynchronous loading behavior, and empty-data examples.",
-            "zh": "表单规则、异步加载行为与空数据样例。"
-          },
-          "process": {
-            "en": "Review validation, errors, loading, and empty states so the page continues to guide users when ordinary input or data is missing.",
-            "zh": "检查验证、错误、加载和空状态，让页面在输入或数据不完整时仍能指导用户。"
-          },
-          "outcome": {
-            "en": "Completed error/loading/empty states checked with representative inputs.",
-            "zh": "错误、加载和空状态的补齐及真实输入检查。"
+          "description": {
+            "en": "Forms and asynchronous screens need clear guidance when input is invalid, a request is loading, or data is absent. Review those states against the form rules and representative examples, then complete the missing feedback. Check that the user can understand what happened and what to do next beyond the ordinary success path.",
+            "zh": "表单和异步页面需要在输入无效、请求加载或没有数据时继续提供指引。结合表单规则与代表性样例检查这些状态，补全缺失反馈。除正常成功路径外，也要确认用户能够理解发生了什么，以及接下来可以采取什么行动。"
           }
         }
       ]

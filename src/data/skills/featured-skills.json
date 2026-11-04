@@ -81,17 +81,9 @@
             "en": "Development and code review",
             "zh": "开发与代码检查"
           },
-          "brief": {
-            "en": "A Next.js page, a performance or accessibility goal, and the agent available.",
-            "zh": "Next.js 页面、性能或无障碍检查目标，以及可用的 Agent。"
-          },
-          "process": {
-            "en": "Find Skills for React performance, accessibility, or code review when your project needs guidance beyond your usual toolkit.",
-            "zh": "项目需要 React 性能优化、无障碍检查或代码审查时，寻找适合当前技术栈的 Skill，补充已有工作方法。"
-          },
-          "outcome": {
-            "en": "Candidates with original sources, review scope, and tool requirements.",
-            "zh": "附原始来源、检查范围和工具要求的候选清单。"
+          "description": {
+            "en": "A Next.js performance or accessibility task may need guidance beyond the project's usual toolkit. Use the page, review goal, and available agent to find relevant Skills, then compare their original sources and inspection scope. Keep tool requirements visible before choosing a candidate for the actual code review.",
+            "zh": "Next.js 性能或无障碍任务可能需要补充现有工具之外的指引。根据页面、检查目标和可用 Agent 查找相关 Skills，比较原始来源及各自覆盖的范围。选择用于实际代码审阅的候选项前，先核对它们需要哪些工具和环境。"
           }
         },
         {
@@ -99,17 +91,9 @@
             "en": "Testing and deployment",
             "zh": "测试与部署"
           },
-          "brief": {
-            "en": "A release branch, test goals, and the current deployment environment.",
-            "zh": "待发布分支、测试目标与当前部署环境。"
-          },
-          "process": {
-            "en": "Look for testing, browser checks, or deployment workflows that fit your project’s tools and delivery requirements.",
-            "zh": "准备测试或发布项目时，寻找匹配现有工具和交付要求的测试、浏览器检查或部署工作流。"
-          },
-          "outcome": {
-            "en": "Instructions matched to verification and previews, separating prerequisites from execution.",
-            "zh": "匹配验证和预览任务的指引，区分安装前提与执行步骤。"
+          "description": {
+            "en": "Testing and deployment guidance should fit the release branch, verification goals, and current environment. Search for suitable browser checks, testing routines, or preview workflows, then compare their prerequisites with the project's tools. Separate preparing access and dependencies from the steps that actually test or deploy the change.",
+            "zh": "测试与部署指引需要适合待发布分支、验证目标和当前环境。查找相关浏览器检查、测试方法或预览流程后，将前提条件与项目已有工具对照。区分准备访问权限及依赖，与真正执行测试或部署的步骤，再决定使用哪套方法。"
           }
         },
         {
@@ -117,17 +101,9 @@
             "en": "Documentation and content",
             "zh": "文档与内容工作"
           },
-          "brief": {
-            "en": "Source material, a report or document format, and editing requirements.",
-            "zh": "原始资料、报告或文档的目标格式与编辑要求。"
-          },
-          "process": {
-            "en": "Discover Skills for document processing, writing guidelines, or format conversion when preparing content for a specific deliverable.",
-            "zh": "准备报告、文档或其他交付物时，寻找文档处理、写作规范或格式转换相关能力，缩小工具选择范围。"
-          },
-          "outcome": {
-            "en": "Instructions shortlisted by deliverable format, with coverage and dependencies.",
-            "zh": "按交付格式筛选的指引，说明能处理的内容及依赖。"
+          "description": {
+            "en": "A report or document task can benefit from Skills selected by the intended deliverable format. Start with the source material and editing requirements, then compare document processing, writing, or conversion instructions. Shortlist candidates by what they cover and depend on instead of choosing solely because a title matches the topic.",
+            "zh": "准备报告或文档时，可以按目标交付格式寻找 Skills。提供源材料和编辑要求，比较文档处理、写作规范或格式转换指引，再根据覆盖能力及依赖筛选候选项。不要只因为标题与主题接近，就默认它适合当前交付任务。"
           }
         }
       ]

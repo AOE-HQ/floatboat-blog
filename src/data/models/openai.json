@@ -242,17 +242,9 @@
           "en": "Complex product decision",
           "zh": "复杂产品决策"
         },
-        "brief": {
-          "zh": "互相冲突的产品需求、决策标准与不可变约束。",
-          "en": "Conflicting product requirements, decision criteria, and fixed constraints."
-        },
-        "process": {
-          "zh": "比较选择及其后果，区分事实、假设和需要决策者确认的部分。",
-          "en": "Compare options and consequences, separating facts, assumptions, and decisions requiring confirmation."
-        },
-        "outcome": {
-          "zh": "能交给项目团队的决策简报与待确认事项。",
-          "en": "A decision brief for the project team and outstanding questions."
+        "description": {
+          "en": "A difficult product decision often contains conflicting requirements and constraints that cannot all be relaxed. Compare candidate options against explicit criteria, separating facts from assumptions and choices requiring confirmation. The decision brief should give the team a reasoned direction and a clear list of unresolved questions.",
+          "zh": "复杂产品决定往往包含相互冲突的要求，以及无法随意放宽的约束。按照明确标准比较候选方案，分别说明事实、假设和需要确认的选择。决策简报应让团队理解建议方向的依据，并看清仍未解决的问题。"
         }
       },
       {
@@ -260,17 +252,9 @@
           "en": "Agent orchestration",
           "zh": "Agent 编排"
         },
-        "brief": {
-          "zh": "多步骤目标、可用工具、步骤依赖和人工审批规则。",
-          "en": "A multistep objective, tools, dependencies, and approval rules."
-        },
-        "process": {
-          "zh": "梳理指令层级、工具结果与后续动作，保留每阶段的验证节点。",
-          "en": "Map instruction hierarchy, tool results, and subsequent actions with verification at each stage."
-        },
-        "outcome": {
-          "zh": "任务编排方案，包含输入输出、依赖与失败处理。",
-          "en": "An orchestration plan with inputs/outputs, dependencies, and failure handling."
+        "description": {
+          "en": "Agent orchestration needs a multistep objective, available tools, dependencies, and approval rules. Map instruction priority and tool results to the actions that may follow, with verification at each stage. Describe inputs, outputs, and failure handling so the plan can be reviewed before execution begins.",
+          "zh": "设计 Agent 编排时，先提供多步骤目标、可用工具、依赖关系和授权规则。梳理指令优先级及工具结果如何影响后续行动，并为各阶段保留验证节点。执行方案应说明输入、输出和失败处理，方便在开始前审阅整个流程。"
         }
       },
       {
@@ -278,17 +262,9 @@
           "en": "Image from a creative brief",
           "zh": "根据创意简报生成图像"
         },
-        "brief": {
-          "zh": "用途、画面内容、尺寸、品牌素材及修改要求。",
-          "en": "Intended use, visual content, dimensions, brand assets, and revision requirements."
-        },
-        "process": {
-          "zh": "通过对应画图工作流处理视觉简报，比较预览后按要求修订。",
-          "en": "Use the appropriate drawing workflow, compare previews, and revise against the brief."
-        },
-        "outcome": {
-          "zh": "符合简报的视觉素材，以及可继续修改的说明。",
-          "en": "Visual assets matching the brief and notes for further revisions."
+        "description": {
+          "en": "Image work begins with intended use, visual content, dimensions, supplied brand assets, and revision requirements. Choose the appropriate drawing workflow, compare previews against the brief, and revise the mismatches. Deliver the visual assets with concrete revision notes rather than treating the first generated image as the final result.",
+          "zh": "图像任务需要说明用途、画面内容、尺寸、已有品牌素材和修改要求。使用适合的绘图流程生成预览，对照简报检查差异，再进行针对性调整。交付视觉素材时保留具体修改意见，不把首次生成的图片直接当作最终成果。"
         }
       }
     ]

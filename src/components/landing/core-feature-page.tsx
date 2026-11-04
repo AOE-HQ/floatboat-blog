@@ -64,7 +64,7 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       </div>
     </section>
 
-    <UseCasesSection {...page.useCases} locale={page.locale} />
+    <UseCasesSection {...page.useCases} />
 
     <HowSection {...page.howTo} />
 

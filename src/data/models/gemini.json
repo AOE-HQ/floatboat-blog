@@ -208,17 +208,9 @@
           "en": "Cross-document research",
           "zh": "跨文档研究"
         },
-        "brief": {
-          "zh": "多份文档、需要比较的论点与统一引用规则。",
-          "en": "Multiple documents, claims to compare, and citation rules."
-        },
-        "process": {
-          "zh": "连接跨文件主题，保留来源分歧与无法证实的主张。",
-          "en": "Connect themes across files, retaining disagreement and unverified claims."
-        },
-        "outcome": {
-          "zh": "带来源映射、矛盾说明和证据缺口的综合报告。",
-          "en": "A synthesis report with source mappings, contradictions, and evidence gaps."
+        "description": {
+          "en": "Research across several documents requires a question and clear citation rules. Connect themes and compare claims while retaining disagreements and statements that remain unverified. A source-mapped synthesis should show which files support each conclusion and where evidence is still missing, rather than flattening the collection into one apparent consensus.",
+          "zh": "跨文档研究需要明确的问题和引用要求。连接不同文件中的主题与论点时，保留来源之间的分歧和未核实说法。综合报告应能说明每项结论由哪些文件支持、哪些位置仍缺乏证据，而不是把多份资料压成看似一致的结论。"
         }
       },
       {
@@ -226,17 +218,9 @@
           "en": "Visual product review",
           "zh": "视觉产品审查"
         },
-        "brief": {
-          "zh": "产品需求、文字反馈及同一流程的多张截图。",
-          "en": "Product requirements, written feedback, and screenshots of one flow."
-        },
-        "process": {
-          "zh": "把图像中的状态与需求逐项对应，按用户影响整理发现。",
-          "en": "Map visible states to requirements and organize findings by user impact."
-        },
-        "outcome": {
-          "zh": "同时基于画面和要求的优先级问题清单。",
-          "en": "Prioritized findings grounded in both screenshots and requirements."
+        "description": {
+          "en": "A visual product review can combine requirements, written feedback, and screenshots of the same flow. Map visible states to the expected behavior and prioritize findings by user impact. Ground each issue in the supplied screen evidence and requirements so a visual observation is not mistaken for an untested functional claim.",
+          "zh": "评审产品界面时，将同一流程的需求、文字反馈和截图放在一起，逐一对应可见状态与预期行为，再按用户影响排列问题。每条发现都应关联到具体截图和要求，避免把视觉观察直接写成尚未验证的功能结论。"
         }
       },
       {
@@ -244,17 +228,9 @@
           "en": "High-volume classification",
           "zh": "高频批量分类"
         },
-        "brief": {
-          "zh": "明确分类规则、大量小型文本与带答案的样本。",
-          "en": "Classification rules, many small texts, and labeled samples."
-        },
-        "process": {
-          "zh": "分批处理并抽样核对，记录歧义项和规则边界。",
-          "en": "Process batches, spot-check results, and record ambiguity and rule boundaries."
-        },
-        "outcome": {
-          "zh": "分类结果、异常项和样本准确性检查记录。",
-          "en": "Classification outputs, exceptions, and sample-accuracy checks."
+        "description": {
+          "en": "Batch classification needs explicit categories, boundary rules, and labeled examples. Process the texts against those criteria, spot-check a sample, and retain ambiguous cases for review. Return classification results with exceptions and sample checks so volume does not hide where the rules need clarification.",
+          "zh": "批量分类前，明确分类规则、类别边界和带标签的参考样本。按统一标准处理文本后抽查结果，将有歧义的记录单独保留。分类结果应同时包含例外情况和样本核验记录，让处理量增加时仍能看清规则需要补充的位置。"
         }
       }
     ]

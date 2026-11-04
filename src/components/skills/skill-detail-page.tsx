@@ -81,7 +81,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
         ]}
       />
 
-      <UseCasesSection {...localizeUseCases(skill.useCases, locale)} locale={locale} />
+      <UseCasesSection {...localizeUseCases(skill.useCases, locale)} />
 
       <HowSection
         title={skill.sectionTitles.how[locale]}

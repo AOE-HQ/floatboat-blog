@@ -81,17 +81,9 @@
             "en": "A page loads data in a chain",
             "zh": "页面请求一个接一个"
           },
-          "brief": {
-            "en": "Page loading code, request dependencies, and timing traces.",
-            "zh": "页面加载代码、请求依赖关系与等待时间记录。"
-          },
-          "process": {
-            "en": "Review whether independent requests can run in parallel, or whether an await can move into the branch that actually needs it.",
-            "zh": "检查独立请求是否能并行，以及 await 是否可以移到真正需要它的分支。"
-          },
-          "outcome": {
-            "en": "Changes identifying parallel requests and deferred awaits, with before/after measurements.",
-            "zh": "标明可并行请求及延迟等待位置的修改建议和前后测量。"
+          "description": {
+            "en": "When a page loads data through a chain of requests, inspect its loading code, dependency relationships, and timing traces together. Check whether independent requests can run in parallel or an await can move into the branch that needs it. Compare the same loading path before and after a focused change.",
+            "zh": "页面数据请求串行等待时，将加载代码、请求依赖和耗时记录放在一起检查。判断独立请求能否并行，以及 await 是否可以移到真正需要它的分支。修改后沿相同加载路径比较表现，用前后测量确认调整是否减少了不必要的等待。"
           }
         },
         {
@@ -99,17 +91,9 @@
             "en": "A client component ships too much code",
             "zh": "客户端组件加载过多代码"
           },
-          "brief": {
-            "en": "Client entry points, bundle analysis, and import paths.",
-            "zh": "客户端入口、包分析结果及当前导入路径。"
-          },
-          "process": {
-            "en": "Trace broad imports, heavy modules, and third-party scripts before adding another loading indicator.",
-            "zh": "先检查聚合导入、重型模块和第三方脚本，再决定是否需要加载提示。"
-          },
-          "outcome": {
-            "en": "Heavy dependency and script findings, with bundle comparisons for split or deferred loading.",
-            "zh": "重型依赖与脚本清单，以及分拆或延迟加载后的包体积对比。"
+          "description": {
+            "en": "A large client bundle calls for examining entry points, import paths, and bundle analysis before adding another loading indicator. Trace broad imports, heavy modules, and third-party scripts to find what is being shipped. Compare bundle results after targeted splitting or deferred loading rather than assuming every dependency needs the same treatment.",
+            "zh": "客户端代码体积过大时，先分析入口、导入路径和包体积，而不是立即增加加载提示。沿聚合导入、重型模块与第三方脚本定位实际负担，再评估拆包或延迟加载。调整后比较包分析结果，判断哪些依赖确实需要采用不同加载方式。"
           }
         },
         {
@@ -117,17 +101,9 @@
             "en": "A component repeats expensive work",
             "zh": "组件反复做昂贵计算"
           },
-          "brief": {
-            "en": "Frequently updated components, interaction recordings, and profiling data.",
-            "zh": "频繁更新的组件、交互录屏与性能分析记录。"
-          },
-          "process": {
-            "en": "Inspect state placement, derived values, and re-render triggers before applying memoization everywhere.",
-            "zh": "先找状态放置、派生值和重渲染触发点，不要在所有组件上盲目加 memo。"
-          },
-          "outcome": {
-            "en": "Computation and rendering triggers, plus interaction checks after targeted changes.",
-            "zh": "计算和渲染触发路径，以及针对性修改后的交互验证。"
+          "description": {
+            "en": "Expensive work during frequent updates needs interaction recordings and profiling evidence. Inspect state placement, derived values, and re-render triggers before applying memoization throughout the component tree. Make a targeted adjustment, then repeat the original interaction to check both performance and behavior.",
+            "zh": "组件频繁更新并重复执行高开销工作时，先查看交互记录和性能分析。检查状态位置、派生值与重新渲染的触发原因，再决定局部优化方式，避免到处添加记忆化。修改后复现原交互，同时核对性能变化和行为是否正确。"
           }
         }
       ]
@@ -343,17 +319,9 @@
             "en": "A dialog has too many boolean modes",
             "zh": "弹窗有太多布尔模式"
           },
-          "brief": {
-            "en": "Modal props, confirm/edit callers, and behaviors that must remain.",
-            "zh": "弹窗属性定义、确认与编辑调用示例及必须保留的行为。"
-          },
-          "process": {
-            "en": "Replace combinations like compact, confirm, destructive, and showFooter with named compositions where behavior is visible at the call site.",
-            "zh": "把 compact、confirm、destructive、showFooter 等属性组合改成有名称的组件组合，让调用方看得出行为。"
-          },
-          "outcome": {
-            "en": "Named composition APIs, migration examples, and checks for existing modes.",
-            "zh": "有名称的组合接口、迁移示例和原有模式的行为检查。"
+          "description": {
+            "en": "A dialog with many boolean modes can hide behavior behind combinations of props. Inspect its confirm/edit callers and the modes that must remain, then replace ambiguous combinations with named compositions visible at the call site. Provide migration examples and check existing modes against the new API before removing the old one.",
+            "zh": "对话框存在大量布尔模式时，行为容易隐藏在属性组合中。检查确认、编辑等调用方及必须保留的模式，将难以理解的组合改为调用位置可见的具名组合。提供迁移样例，并核对原有模式，再决定如何替换旧接口。"
           }
         },
         {
@@ -361,17 +329,9 @@
             "en": "Sibling controls need the same state",
             "zh": "兄弟控件需要共享状态"
           },
-          "brief": {
-            "en": "State and events shared by sibling controls, plus current prop paths.",
-            "zh": "多个兄弟控件共用的状态、事件及当前属性传递路径。"
-          },
-          "process": {
-            "en": "Place the state and actions in a provider rather than threading them through every intermediate component.",
-            "zh": "把状态与操作集中到 Provider，而不是逐层传给所有中间组件。"
-          },
-          "outcome": {
-            "en": "A provider boundary, state API, and revised callers without prop drilling.",
-            "zh": "Provider 边界、状态接口及不再透传的调用关系。"
+          "description": {
+            "en": "Sibling controls that share state and events may be burdened by long prop chains. Trace the existing paths and place the relevant state and actions behind a provider boundary when appropriate. Update the callers around that explicit API so shared behavior stays clear without threading data through every intermediate component.",
+            "zh": "兄弟控件共享状态和事件时，过长的属性传递链可能增加理解成本。先梳理现有路径，再将相关状态与动作放入合适的 provider 边界，围绕明确接口更新调用方。共享行为得以保留，也不需要每个中间组件都代传数据。"
           }
         },
         {
@@ -379,17 +339,9 @@
             "en": "Consumers need controlled flexibility",
             "zh": "组件库使用者需要可控的灵活性"
           },
-          "brief": {
-            "en": "Real layout needs in a component library and its existing internal logic.",
-            "zh": "组件库的真实布局需求与现有内部逻辑。"
-          },
-          "process": {
-            "en": "Expose compound parts or explicit variants so consumers can assemble layouts without reimplementing internals.",
-            "zh": "提供复合部件或明确变体，让使用者能组合布局，同时不必重新实现内部逻辑。"
-          },
-          "outcome": {
-            "en": "Composable parts and bounded variants, with correct and incorrect usage examples.",
-            "zh": "可组合部件和约束清楚的变体，附正确与错误用法。"
+          "description": {
+            "en": "A component library should expose the flexibility its real consumers need without requiring them to reimplement internal logic. Compare layout requirements with compound parts and explicit variants, then define a bounded composition API. Include correct and incorrect examples so consumers can distinguish supported assembly from accidental misuse.",
+            "zh": "组件库应满足真实使用方的布局需求，同时避免让它们重写内部逻辑。结合复合部件和明确变体，设计有边界的组合接口，并给出正确与错误样例。使用方可以据此区分受支持的拼装方式和无意中绕过组件约定的用法。"
           }
         }
       ]
@@ -605,17 +557,9 @@
             "en": "Scrolling drops frames",
             "zh": "滚动时掉帧"
           },
-          "brief": {
-            "en": "Target devices, list code, scrolling recordings, and image settings.",
-            "zh": "目标设备、长列表代码、滚动录屏及图片配置。"
-          },
-          "process": {
-            "en": "Inspect virtualization, item rendering, callback stability, and images before rewriting the whole screen.",
-            "zh": "先检查虚拟列表、条目渲染、回调稳定性与图片，不急着重写整个页面。"
-          },
-          "outcome": {
-            "en": "Item-rendering and image bottlenecks, followed by scrolling checks on the same device.",
-            "zh": "条目渲染和图片瓶颈定位，以及同设备上的滚动复测。"
+          "description": {
+            "en": "Dropped frames during scrolling need evidence from the target device and the actual list implementation. Inspect virtualization, item rendering, callback stability, and image settings before rebuilding the screen. After addressing a demonstrated bottleneck, repeat the same scrolling interaction on the same device to assess the change.",
+            "zh": "滚动掉帧需要结合目标设备上的记录和真实列表实现调查。重做整个页面前，先检查虚拟化、条目渲染、回调稳定性与图片设置。处理已定位的瓶颈后，在同一设备复现相同滚动交互，判断调整是否改善表现。"
           }
         },
         {
@@ -623,17 +567,9 @@
             "en": "Gestures feel delayed",
             "zh": "手势响应迟缓"
           },
-          "brief": {
-            "en": "Gesture implementation, animated properties, and the delayed interaction.",
-            "zh": "手势实现、动画属性和出现延迟的操作路径。"
-          },
-          "process": {
-            "en": "Review whether an animation uses compositor-friendly properties and appropriate gesture primitives.",
-            "zh": "核对动画是否使用适合 GPU 的属性，以及手势是否采用合适的原语。"
-          },
-          "outcome": {
-            "en": "Gesture/animation changes with checks for continuous interaction.",
-            "zh": "手势与动画原语的调整方案，附交互连续性检查。"
+          "description": {
+            "en": "A delayed gesture should be traced through its implementation and the properties being animated. Review the choice of gesture primitives and whether the animation uses compositor-friendly properties, then check the changed behavior during a continuous interaction. A single final frame cannot show whether the gesture now follows the user's movement.",
+            "zh": "手势反馈延迟时，沿实现方式和动画属性调查，检查手势基础能力是否合适、动画是否采用有利于合成的属性。修改后通过连续交互核对响应，而不是只看最终画面，因为单个静态状态无法说明动画是否跟得上用户动作。"
           }
         },
         {
@@ -641,17 +577,9 @@
             "en": "A screen behaves differently on iOS and Android",
             "zh": "同一页面在 iOS 与 Android 表现不同"
           },
-          "brief": {
-            "en": "Screenshots on both platforms, device sizes, and native component settings.",
-            "zh": "同一页面的双平台截图、设备尺寸和原生组件配置。"
-          },
-          "process": {
-            "en": "Check safe areas, native navigation, images, fonts, and platform APIs instead of assuming web layout behavior.",
-            "zh": "检查安全区域、原生导航、图片、字体和平台 API，不把网页布局经验直接套过去。"
-          },
-          "outcome": {
-            "en": "Platform-specific causes and checks for safe areas, navigation, and fonts.",
-            "zh": "按平台列出的差异原因及安全区域、导航与字体检查结果。"
+          "description": {
+            "en": "A screen that differs between iOS and Android needs both sets of screenshots, device sizes, and native settings. Check safe areas, navigation, images, fonts, and platform APIs rather than carrying web-layout assumptions across unchanged. Verify the platform-specific cause and the corrected behavior on each affected side.",
+            "zh": "同一界面在 iOS 与 Android 表现不同时，提供两端截图、设备尺寸和原生设置。分别检查安全区域、导航、图片、字体及平台 API，避免直接套用网页布局假设。找到平台特有原因后，在受影响的两端核对修改结果。"
           }
         }
       ]
@@ -867,17 +795,9 @@
             "en": "Open an item from a list",
             "zh": "从列表打开详情"
           },
-          "brief": {
-            "en": "List cards, detail routes, and shared image or title locations.",
-            "zh": "列表卡片、详情路由及共享图片或标题的位置。"
-          },
-          "process": {
-            "en": "A named shared element can show that the detail view belongs to the card the user selected.",
-            "zh": "命名共享元素可以说明详情页来自用户刚刚点开的卡片。"
-          },
-          "outcome": {
-            "en": "A shared-element transition that preserves origin, including return navigation checks.",
-            "zh": "保持来源关系的共享元素过渡，并检查返回导航。"
+          "description": {
+            "en": "Opening a detail view from a list can use a named shared element to preserve the relationship with the selected card. Identify the image or title shared by both routes and design the transition around that origin. Check return navigation as well as entry so the visual connection remains understandable in both directions.",
+            "zh": "从列表打开详情时，可以通过具名共享元素保留它与所选卡片的关系。确定两条路由共用的图片或标题，围绕来源设计过渡，并同时检查进入与返回导航，让使用者在两个方向都能理解页面之间的联系。"
           }
         },
         {
@@ -885,17 +805,9 @@
             "en": "Reorder persistent items",
             "zh": "重排仍然存在的条目"
           },
-          "brief": {
-            "en": "Filter/sort code, item IDs, and the list before and after sorting.",
-            "zh": "筛选或排序代码、条目 ID 与排序前后的列表。"
-          },
-          "process": {
-            "en": "Use stable item identity so motion communicates rearrangement rather than disappearance and reappearance.",
-            "zh": "保持条目身份稳定，让动画表达位置变化，而不是条目消失再出现。"
-          },
-          "outcome": {
-            "en": "Stable-identity reorder transitions without presenting existing items as newly created.",
-            "zh": "身份稳定的重排动画，避免把已有条目表现为重新创建。"
+          "description": {
+            "en": "Filtering or sorting a persistent list should communicate rearrangement rather than disappearance and recreation. Check the item IDs and the states before and after the change, then use stable identity for the transition. Existing records should remain recognizable as the same items even when their positions change.",
+            "zh": "筛选或排序现有列表时，动画应表达位置重排，而不是消失后重新创建。核对条目 ID 及调整前后的状态，通过稳定身份组织过渡。即使位置发生变化，使用者仍应能够辨认它们是原来的记录。"
           }
         },
         {
@@ -903,17 +815,9 @@
             "en": "Reveal content after Suspense",
             "zh": "Suspense 后显示内容"
           },
-          "brief": {
-            "en": "Suspense boundaries, loading placeholders, and partial refresh triggers.",
-            "zh": "Suspense 边界、加载占位与局部刷新的触发条件。"
-          },
-          "process": {
-            "en": "A restrained entrance can mark newly arrived content without animating every data refresh.",
-            "zh": "克制的进入动画可以提示新内容到达，而不必让每次数据刷新都产生动效。"
-          },
-          "outcome": {
-            "en": "Distinct motion rules for initial reveal and background refresh, including reduced motion.",
-            "zh": "首次内容出现与后台刷新分开的动效规则，包含减少动态效果支持。"
+          "description": {
+            "en": "Content arriving after Suspense can benefit from a restrained reveal, but every refresh does not need the same animation. Inspect boundaries, placeholders, and refresh triggers, then distinguish initial arrival from background updates. Include reduced-motion behavior so the transition rules remain appropriate across user preferences.",
+            "zh": "Suspense 后到达的内容可以使用克制的出现动效，但不需要每次刷新都重复播放。检查边界、占位内容和刷新触发条件，区分首次揭示与后台更新，并考虑减少动态效果的偏好，使过渡规则适合不同使用者。"
           }
         }
       ]
@@ -1129,17 +1033,9 @@
             "en": "A form is hard to navigate by keyboard",
             "zh": "表单难以使用键盘操作"
           },
-          "brief": {
-            "en": "Form components, keyboard paths, and validation failure states.",
-            "zh": "表单组件、键盘操作路径和验证失败状态。"
-          },
-          "process": {
-            "en": "Review labels, focus states, error messaging, and keyboard handlers in the relevant form files.",
-            "zh": "检查相关表单文件中的标签、焦点状态、错误信息和键盘处理。"
-          },
-          "outcome": {
-            "en": "File-and-line findings for focus, labels, and error feedback.",
-            "zh": "定位到文件与行号的焦点、标签和错误反馈问题。"
+          "description": {
+            "en": "A form that is hard to use by keyboard needs its actual focus path and validation failures inspected in code. Review labels, focus states, error messages, and keyboard handlers together. Tie findings to files and lines so the repair addresses the navigation problem rather than just changing the form's appearance.",
+            "zh": "键盘难以操作的表单，需要结合代码检查真实焦点路径和验证失败状态。一起审阅标签、焦点样式、错误提示与键盘处理逻辑，将问题定位到文件和行。这样修复针对实际导航障碍，而不只是调整表单外观。"
           }
         },
         {
@@ -1147,17 +1043,9 @@
             "en": "A control behaves inconsistently",
             "zh": "控件行为不一致"
           },
-          "brief": {
-            "en": "Implementations of similar controls, active states, and feedback examples.",
-            "zh": "同类控件的实现、激活状态和用户反馈示例。"
-          },
-          "process": {
-            "en": "Inspect navigation state, touch targets, feedback, and interaction semantics rather than discussing visual taste alone.",
-            "zh": "检查导航状态、点击区域、反馈和交互语义，而不只讨论视觉喜好。"
-          },
-          "outcome": {
-            "en": "Inconsistencies grouped by interaction behavior, with alignment recommendations.",
-            "zh": "按交互行为归类的不一致清单与统一建议。"
+          "description": {
+            "en": "Similar controls can look aligned while behaving inconsistently. Compare active and navigation states, touch targets, feedback, and interaction semantics across their implementations. Group findings by behavior and recommend how to align them so the review addresses what users can do, not visual taste alone.",
+            "zh": "相似控件即使外观一致，也可能有不同的操作行为。比较各实现的激活与导航状态、触控目标、反馈和交互语义，按行为类型归纳差异，再提出统一建议。审阅关注使用者实际上能做什么，不只讨论视觉偏好。"
           }
         },
         {
@@ -1165,17 +1053,9 @@
             "en": "A new page needs a pre-release UI pass",
             "zh": "新页面上线前需要 UI 复核"
           },
-          "brief": {
-            "en": "The new page diff, shared component scope, and release acceptance interactions.",
-            "zh": "新页面改动、共享组件范围和上线验收操作。"
-          },
-          "process": {
-            "en": "Scope the review to the new page and its shared components so findings map back to code owners.",
-            "zh": "把范围限定在新页面及其共享组件，让问题能够对应到负责的代码。"
-          },
-          "outcome": {
-            "en": "Actionable interface findings and representative interaction checks after fixes.",
-            "zh": "范围内可执行的界面问题及修复后的代表操作检查。"
+          "description": {
+            "en": "A pre-release UI review should be bounded by the new page's diff, shared components, and acceptance interactions. Map each finding to the relevant code owner, then check representative interactions after fixes. This keeps the review actionable without silently turning one page's release into a redesign of unrelated screens.",
+            "zh": "新页面发布前的界面检查，应限定到本次差异、涉及的共享组件和验收交互。将发现对应到相关代码负责人，修复后检查代表性操作。保持结果可执行，也避免把单页发布检查静默扩展成其他页面的重新设计。"
           }
         }
       ]
@@ -1391,17 +1271,9 @@
             "en": "A tutorial is hard to follow",
             "zh": "教程读起来不顺"
           },
-          "brief": {
-            "en": "Tutorial text, the reader’s starting knowledge, and the intended operation.",
-            "zh": "教程正文、读者起点和需要完成的操作。"
-          },
-          "process": {
-            "en": "Check whether headings, steps, examples, and prerequisites follow the user's task rather than the author's implementation notes.",
-            "zh": "检查标题、步骤、示例和前提条件是否围绕读者任务，而不是作者的实现笔记。"
-          },
-          "outcome": {
-            "en": "Task-focused edits identifying missing prerequisites and broken steps.",
-            "zh": "围绕读者任务的编辑建议，明确缺失前提与步骤断点。"
+          "description": {
+            "en": "A tutorial should follow the reader's starting knowledge and the operation they want to complete. Compare headings, steps, examples, and prerequisites with that task rather than the author's implementation history. Revise missing conditions and broken transitions so a reader can continue from one action to the next.",
+            "zh": "教程应围绕读者已有知识和准备完成的操作展开。将标题、步骤、样例与前提条件逐项对照用户任务，而不是作者的实施历史。修正缺失条件和无法衔接的步骤，让读者能够从一个动作顺利推进到下一个动作。"
           }
         },
         {
@@ -1409,17 +1281,9 @@
             "en": "An API reference hides key conditions",
             "zh": "API 参考页埋没了使用条件"
           },
-          "brief": {
-            "en": "API definitions, parameter examples, and confirmed limitations.",
-            "zh": "接口定义、参数示例与已经确认的限制。"
-          },
-          "process": {
-            "en": "Review names, parameter descriptions, code formatting, and the placement of limits or caveats.",
-            "zh": "检查名称、参数说明、代码格式，以及限制和注意事项的位置。"
-          },
-          "outcome": {
-            "en": "Edits aligning parameter descriptions, code formatting, and placement of usage conditions.",
-            "zh": "与接口一致的参数表达、代码格式及使用条件位置建议。"
+          "description": {
+            "en": "An API reference needs clear names, parameter descriptions, and examples that match confirmed limitations. Review code formatting alongside where conditions and caveats appear, keeping them close to the operations they affect. The revised reference should make usage requirements discoverable before a reader encounters an avoidable error.",
+            "zh": "API 参考需要清楚的命名、参数说明，以及符合已确认限制的样例。审阅代码格式时，同时检查条件与注意事项的位置，让它们靠近真正受影响的操作。使用者应在遇到可避免的错误之前，就能找到必要的使用要求。"
           }
         },
         {
@@ -1427,17 +1291,9 @@
             "en": "A release note sounds vague",
             "zh": "更新说明过于空泛"
           },
-          "brief": {
-            "en": "A release diff, verified behavior changes, and draft release notes.",
-            "zh": "版本差异、已核实的行为变化和更新说明草稿。"
-          },
-          "process": {
-            "en": "Look for unsupported adjectives, missing user impact, and phrases that obscure the actual change.",
-            "zh": "找出缺乏依据的形容词、缺失的用户影响，以及掩盖实际变更的表述。"
-          },
-          "outcome": {
-            "en": "Release notes explaining user impact, with unverified claims listed separately.",
-            "zh": "能说明用户影响的更新说明，待核事实单独列出。"
+          "description": {
+            "en": "A release note should explain verified behavior changes and their effect on users. Compare the draft with the release diff, replacing vague adjectives and phrases that obscure what changed. Keep unverified claims separate so the published explanation does not promise improvements the evidence cannot establish.",
+            "zh": "更新说明应讲清已验证的行为变化及其对用户的影响。将草稿与发布差异对照，改写空泛形容和掩盖实际改动的表达。尚未核实的说法单独保留，避免对外说明承诺证据无法支持的改进。"
           }
         }
       ]
@@ -1653,17 +1509,9 @@
             "en": "Share a reviewable build",
             "zh": "生成可供审阅的版本"
           },
-          "brief": {
-            "en": "A review branch, linked project, and authorized preview scope.",
-            "zh": "待审分支、关联项目和允许部署的预览范围。"
-          },
-          "process": {
-            "en": "Ask for a preview URL so a teammate can inspect the change without targeting production.",
-            "zh": "请求预览地址，让同事检查改动，不直接触碰生产环境。"
-          },
-          "outcome": {
-            "en": "An accessible preview and verification of pages, assets, and key interactions.",
-            "zh": "可访问的预览地址及页面、资源和关键操作的验证记录。"
+          "description": {
+            "en": "A review build needs a known branch, linked project, and authorized preview scope. Request a preview rather than targeting production, then open it to check pages, assets, and key interactions. Share the resulting accessible URL only after verifying that it represents the intended change.",
+            "zh": "供审阅的构建需要明确分支、关联项目和已授权的预览范围。请求生成预览而不是直接面向生产环境，打开后检查页面、素材和关键交互。确认它确实对应本次变更，再分享可访问的预览链接。"
           }
         },
         {
@@ -1671,17 +1519,9 @@
             "en": "The local folder may point to the wrong project",
             "zh": "本地目录可能关联错项目"
           },
-          "brief": {
-            "en": "Local Vercel link files, Git remotes, and the intended project identity.",
-            "zh": "本地 Vercel 关联文件、Git 远端及预期项目身份。"
-          },
-          "process": {
-            "en": "Check existing Vercel link files and Git remote before running any command that might silently connect a project.",
-            "zh": "在运行可能悄悄关联项目的命令前，先核对 Vercel 关联文件与 Git 远端。"
-          },
-          "outcome": {
-            "en": "A project-link verification result, with a correction plan if identity is ambiguous.",
-            "zh": "关联是否正确的核对结果，存在歧义时先给纠正方案。"
+          "description": {
+            "en": "A local folder may carry Vercel links that point somewhere unexpected. Compare existing link files and Git remotes with the intended project identity before running a command that could connect or deploy it. If the identity remains ambiguous, record the mismatch and propose a correction instead of guessing the target.",
+            "zh": "本地目录可能保留指向其他项目的 Vercel 关联。执行可能连接或部署项目的命令前，将已有链接文件和 Git 远端与目标身份对照。仍有歧义时记录不一致并提出修正方案，不通过猜测决定操作对象。"
           }
         },
         {
@@ -1689,17 +1529,9 @@
             "en": "Several Vercel teams are available",
             "zh": "存在多个 Vercel 团队"
           },
-          "brief": {
-            "en": "Available teams, the target project, and its linked organization ID.",
-            "zh": "可用团队列表、目标项目和已关联组织 ID。"
-          },
-          "process": {
-            "en": "Confirm the intended team or use the linked project's org ID instead of guessing an account scope.",
-            "zh": "确认目标团队，或使用已关联项目的组织 ID，不靠猜测选择账户。"
-          },
-          "outcome": {
-            "en": "Explicit team/project context and deployment records confined to that scope.",
-            "zh": "明确的团队与项目上下文，以及仅在该范围内执行的部署记录。"
+          "description": {
+            "en": "An account with several Vercel teams needs an explicit deployment context. Confirm the intended team or use the linked project's organization ID, then verify the target project within that scope. Keep deployment records tied to the confirmed organization so account availability does not become permission to use an arbitrary team.",
+            "zh": "账号下有多个 Vercel 团队时，需要明确部署上下文。确认目标团队，或使用关联项目的组织 ID，再核对该范围内的项目。部署记录应对应到已经确认的组织，不能因为账号可以访问多个团队就任意选择其中一个。"
           }
         }
       ]
@@ -1915,17 +1747,9 @@
             "en": "A non-interactive environment needs Vercel access",
             "zh": "非交互环境需要 Vercel 权限"
           },
-          "brief": {
-            "en": "A non-interactive task, target project, and approved credential reference.",
-            "zh": "非交互任务、目标项目和批准使用的凭据引用。"
-          },
-          "process": {
-            "en": "Use an existing secret-managed token without relying on an interactive vercel login session.",
-            "zh": "使用由密钥管理系统保存的既有令牌，不依赖交互式 vercel login。"
-          },
-          "outcome": {
-            "en": "A repeatable authenticated invocation without token values in logs.",
-            "zh": "可复现的认证调用方式，日志中不包含令牌值。"
+          "description": {
+            "en": "A non-interactive task can use an existing secret-managed token instead of depending on a browser login session. Confirm the target project and approved credential reference, then construct a repeatable authenticated invocation. Keep token values out of logs and reports while checking that the command reaches the intended scope.",
+            "zh": "非交互任务可以使用已由密钥系统管理的 token，无需依赖浏览器登录会话。先确认目标项目和批准的凭据引用，再组织可重复执行的认证调用。检查命令作用范围的同时，确保日志与报告中不出现 token 值。"
           }
         },
         {
@@ -1933,17 +1757,9 @@
             "en": "One token can reach multiple projects",
             "zh": "一个令牌可访问多个项目"
           },
-          "brief": {
-            "en": "The change target, project/organization IDs, and token access scope.",
-            "zh": "修改目标、项目 ID、组织 ID 和令牌可访问范围。"
-          },
-          "process": {
-            "en": "Confirm project and organization identifiers before changing environment variables or deploying.",
-            "zh": "修改环境变量或部署前，确认项目与组织标识。"
-          },
-          "outcome": {
-            "en": "Target confirmation before edits and configuration results for the intended project.",
-            "zh": "修改前的目标核对，以及对应项目的配置结果。"
+          "description": {
+            "en": "A token that reaches several projects does not determine which one a change should affect. Verify the project and organization identifiers before editing environment variables or deploying, and compare the result with that target. Broad credential access must not substitute for an explicit project-level decision.",
+            "zh": "token 能访问多个项目，并不能决定本次应该修改哪一个。调整环境变量或部署前，先核对项目和组织标识，再将结果与目标对照。凭据拥有较广范围，不代表可以省略明确的项目选择。"
           }
         },
         {
@@ -1951,17 +1767,9 @@
             "en": "A command could expose a secret",
             "zh": "命令可能泄露密钥"
           },
-          "brief": {
-            "en": "Existing scripts, logging settings, and credential-passing locations.",
-            "zh": "现有脚本、日志配置和凭据传递位置。"
-          },
-          "process": {
-            "en": "Keep tokens out of pasted commands, logs, and review comments; use the approved environment mechanism.",
-            "zh": "不要把令牌粘进命令、日志或审查评论；使用已批准的环境管理方式。"
-          },
-          "outcome": {
-            "en": "Potential exposure paths and checks after switching to approved environment references.",
-            "zh": "秘密值可能暴露的路径及改用受控环境引用后的检查结果。"
+          "description": {
+            "en": "Credential handling should be reviewed in the scripts, logging settings, and places where values are passed. Replace pasted tokens with the approved environment mechanism and inspect possible exposure through commands, logs, or review comments. Check the revised path afterward so removing one visible value does not leave another disclosure route behind.",
+            "zh": "检查凭据处理时，需要同时查看脚本、日志设置和传值位置。将粘贴的 token 替换为批准的环境引用方式，排查命令、日志和审阅评论中的泄露路径。调整后再次核对，避免只清除一个可见值，却留下其他暴露入口。"
           }
         }
       ]
@@ -2177,17 +1985,9 @@
             "en": "Function usage rose unexpectedly",
             "zh": "函数使用量突然上升"
           },
-          "brief": {
-            "en": "A billing comparison period, function usage, and route metrics.",
-            "zh": "账单变化区间、函数用量和路由指标。"
-          },
-          "process": {
-            "en": "Check usage and route metrics before attributing the bill change to a particular endpoint or cache setting.",
-            "zh": "先看使用量和路由指标，再判断账单变化是否与某个端点或缓存设置有关。"
-          },
-          "outcome": {
-            "en": "A cost explanation linked to endpoints and evidence-based optimization priorities.",
-            "zh": "与具体端点关联的成本解释，以及有依据的优化优先级。"
+          "description": {
+            "en": "An unexpected rise in function usage needs a comparable billing period and route-level metrics before attributing cost to one endpoint or cache setting. Connect the observed usage to its source and rank optimization candidates by evidence. The explanation should distinguish measured contributors from plausible but untested causes.",
+            "zh": "函数使用量意外增加时，先确定可比计费周期并查看路由指标，再判断某个端点或缓存设置是否导致变化。将观测到的使用量对应到来源，依据证据排列优化优先级。成本解释要区分已测量的贡献和仍待验证的可能原因。"
           }
         },
         {
@@ -2195,17 +1995,9 @@
             "en": "One page seems expensive or slow",
             "zh": "某个页面似乎既慢又贵"
           },
-          "brief": {
-            "en": "A slow page route, performance traces, and relevant deployment versions.",
-            "zh": "慢页面路径、性能记录和相关部署版本。"
-          },
-          "process": {
-            "en": "Let measured route signals identify which source files and settings deserve investigation.",
-            "zh": "由可测量的路由信号决定哪些源码文件和设置值得调查。"
-          },
-          "outcome": {
-            "en": "A trace from metrics to source, with changes that can be measured again.",
-            "zh": "从指标追溯到源码的调查链路，以及可复测的改动建议。"
+          "description": {
+            "en": "A page that seems slow or expensive should be investigated through its route signals, performance traces, and deployment versions. Let those measurements identify relevant source files and settings, then make a change that can be measured again. Preserve the path from metric to code so the optimization has a checkable basis.",
+            "zh": "页面看起来慢或成本高时，结合路由信号、性能记录和部署版本调查。让测量结果指向需要检查的源文件与设置，再实施能够重新测量的修改。保留指标到代码的对应链路，使优化建立在可以复核的依据上。"
           }
         },
         {
@@ -2213,17 +2005,9 @@
             "en": "A cache change is being proposed",
             "zh": "有人建议修改缓存"
           },
-          "brief": {
-            "en": "Cache-hit data, framework settings, and content freshness requirements.",
-            "zh": "缓存命中情况、框架设置和内容新鲜度要求。"
-          },
-          "process": {
-            "en": "Confirm the current hit pattern and framework behavior before recommending ISR, middleware, or response-cache changes.",
-            "zh": "在建议 ISR、中间件或响应缓存改动前，先确认当前命中模式和框架行为。"
-          },
-          "outcome": {
-            "en": "Cache tradeoffs and invalidation risks, with checks for hits and updates.",
-            "zh": "缓存调整的收益与失效风险分析，附验证命中和更新的办法。"
+          "description": {
+            "en": "A cache proposal must account for current hit patterns, framework behavior, and the content's freshness requirements. Compare ISR, middleware, or response-cache changes only after those conditions are understood. Explain invalidation risks and recheck both cache hits and content updates so lower usage does not hide stale results.",
+            "zh": "提出缓存调整前，需要了解当前命中情况、框架行为和内容时效要求，再比较 ISR、中间件或响应缓存等修改。说明失效风险，并同时检查命中与内容更新结果，避免使用量降低的同时产生过期内容。"
           }
         }
       ]
@@ -2439,17 +2223,9 @@
             "en": "An agent must inspect a live flow",
             "zh": "Agent 需要检查真实网页流程"
           },
-          "brief": {
-            "en": "A test URL, permitted session context, and expected interaction path.",
-            "zh": "测试网址、允许的会话上下文和预期操作路径。"
-          },
-          "process": {
-            "en": "Load the CLI's core workflow before navigating, snapshotting controls, or testing a form.",
-            "zh": "导航、读取控件快照或测试表单前，先加载 CLI 核心流程。"
-          },
-          "outcome": {
-            "en": "Interaction steps, observed page state, and evidence for the failing point.",
-            "zh": "操作步骤、真实页面状态与失败位置的证据。"
+          "description": {
+            "en": "Inspecting a live flow requires a permitted session, test URL, and expected interaction path. Read the CLI's core workflow before navigating or taking control snapshots, then record actual page states as the flow proceeds. Evidence should identify where behavior fails rather than merely show that a page could be opened.",
+            "zh": "检查线上流程需要允许使用的会话、测试地址和预期操作路径。导航或获取控件快照前，先阅读 CLI 核心流程，再随操作记录实际页面状态。证据应指出行为在哪一步失败，而不只是证明某个页面能够打开。"
           }
         },
         {
@@ -2457,17 +2233,9 @@
             "en": "A bug needs exploratory reproduction",
             "zh": "Bug 需要探索式复现"
           },
-          "brief": {
-            "en": "A suspect feature, reproduction clues, and the permitted exploration scope.",
-            "zh": "可疑功能、复现线索及允许探索的范围。"
-          },
-          "process": {
-            "en": "The stub points to a specialist dogfood workflow for exploratory testing and quality review.",
-            "zh": "入口文件会指向专门的 dogfood 流程，用于探索式测试和质量检查。"
-          },
-          "outcome": {
-            "en": "Findings organized by reproduction conditions, with page evidence and impact.",
-            "zh": "按复现条件整理的问题清单，附页面证据与影响。"
+          "description": {
+            "en": "Exploratory reproduction needs a suspect feature, useful clues, and a bounded testing scope. Follow the specialist dogfood workflow referenced by the stub, then organize findings by reproduction conditions, page evidence, and impact. Keep exploration within the approved area so quality review does not become uncontrolled interaction with unrelated features.",
+            "zh": "探索性复现需要明确可疑功能、已有线索和允许检查的范围。沿入口指引阅读专门的 dogfood 流程，再按复现条件、页面证据和影响组织发现。保持探索边界，避免质量检查变成对无关功能的无范围操作。"
           }
         },
         {
@@ -2475,17 +2243,9 @@
             "en": "The target is an Electron app",
             "zh": "目标是 Electron 应用"
           },
-          "brief": {
-            "en": "The Electron app entry, target window, and interactions to inspect.",
-            "zh": "Electron 应用入口、目标窗口和需要检查的交互。"
-          },
-          "process": {
-            "en": "Use the CLI's dedicated Electron guidance instead of assuming a normal web-page session.",
-            "zh": "应使用 CLI 的 Electron 专项指引，而不是把它当普通网页会话。"
-          },
-          "outcome": {
-            "en": "Verification using the app-specific connection method rather than a guessed browser session.",
-            "zh": "基于专项连接方式的验证记录，而非网页会话的猜测结果。"
+          "description": {
+            "en": "An Electron target needs its application entry point, intended window, and the interactions to inspect established first. Use the CLI's dedicated Electron guidance to select the app-specific connection method. Verify behavior through that route rather than assuming an ordinary browser session controls the intended application window.",
+            "zh": "目标是 Electron 应用时，先确认应用入口、目标窗口和待检查交互，按照 CLI 的专门指引选择对应连接方式。通过这条应用路径验证行为，不假定普通浏览器会话已经控制了真正需要检查的窗口。"
           }
         }
       ]

@@ -186,17 +186,9 @@
           "en": "From research to implementation",
           "zh": "从调研到实现"
         },
-        "brief": {
-          "zh": "项目资料、待定方案和已经确认的实现要求。",
-          "en": "Project material, open design choices, and approved implementation requirements."
-        },
-        "process": {
-          "zh": "按阅读、决策和实现阶段组织请求，持续保留约束与来源。",
-          "en": "Organize reading, decisions, and implementation while retaining constraints and sources."
-        },
-        "outcome": {
-          "zh": "从研究结论到实现和验证的连续项目成果。",
-          "en": "Continuous project outputs linking research conclusions, implementation, and verification."
+        "description": {
+          "en": "A project may move from reading sources to choosing a design and implementing it. Keep the research, open decisions, and approved requirements in the same context as the work progresses. Check that implementation and verification still follow the original constraints and that conclusions remain linked to their sources.",
+          "zh": "一项项目工作可能先阅读资料，再决定设计方向，最后进入实施。推进过程中保留研究来源、待定问题与已批准的要求，避免不同环节各自重新解释任务。完成实施与验证后，仍应能够把结果对应回原有约束和研究结论。"
         }
       },
       {
@@ -204,17 +196,9 @@
           "en": "Mixed daily queue",
           "zh": "混合日常任务"
         },
-        "brief": {
-          "zh": "待摘要材料、局部修改和需要追踪的故障。",
-          "en": "Material to summarize, local edits, and faults to investigate."
-        },
-        "process": {
-          "zh": "让每个请求按当前任务要求处理，再核对相邻步骤是否保持一致。",
-          "en": "Process each request according to its demands and check consistency with adjacent steps."
-        },
-        "outcome": {
-          "zh": "摘要、修改与故障调查各自有验收记录，不丢失项目背景。",
-          "en": "Summaries, edits, and investigations with their own acceptance evidence and project context intact."
+        "description": {
+          "en": "A daily queue can mix summaries, local edits, and fault investigations. Treat each request according to its own requirements while retaining the project context needed by adjacent steps. Review the summary, diff, or diagnosis with the evidence appropriate to that task, rather than applying one acceptance rule to everything.",
+          "zh": "日常任务可能同时包含资料总结、本地修改和故障调查。根据每项工作的实际要求处理，并保留前后步骤需要的项目上下文。总结、代码差异和诊断结果分别使用适合自身的证据进行检查，避免用同一种标准判断所有任务。"
         }
       },
       {
@@ -222,17 +206,9 @@
           "en": "Continue through disruption",
           "zh": "在波动中继续推进"
         },
-        "brief": {
-          "zh": "尚未完成的任务、已保留状态与当前不可用的模型路径。",
-          "en": "An unfinished task, retained state, and an unavailable model route."
-        },
-        "process": {
-          "zh": "在系统提供的可用路径中继续工作，重新检查降级后的结果是否满足要求。",
-          "en": "Continue through available system routes and recheck whether fallback results satisfy requirements."
-        },
-        "outcome": {
-          "zh": "可续接的任务状态与结果检查；无法继续的步骤明确标出。",
-          "en": "Resumable task state and checked results, with blocked steps identified."
+        "description": {
+          "en": "An unavailable model route can interrupt a task before its work is complete. Retain the current state and continue through available system routes where possible, then recheck fallback results against the original requirements. Identify any steps that remain blocked instead of treating a changed route as proof of completion.",
+          "zh": "模型入口不可用时，保留未完成任务的当前状态，并在存在可用系统路径时继续推进。切换后重新检查结果是否满足原始要求，明确哪些步骤已经恢复、哪些仍然受阻。入口发生变化并不意味着任务已经完成，后续结果仍需核对。"
         }
       }
     ]

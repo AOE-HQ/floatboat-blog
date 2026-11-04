@@ -129,17 +129,9 @@
           "en": "Long text queue",
           "zh": "长文本队列"
         },
-        "brief": {
-          "zh": "待处理长文本、队列量、输出要求与检查样本。",
-          "en": "Long texts, queue volume, output requirements, and check samples."
-        },
-        "process": {
-          "zh": "比较输入规模和已记录预算，先核对可用通道，再规划分批与抽样复核。",
-          "en": "Compare input scale with recorded budgets, verify access, then plan batching and spot checks."
-        },
-        "outcome": {
-          "zh": "包含访问前提、分批规则和样本检查的队列方案。",
-          "en": "A queue plan with access prerequisites, batch rules, and sample verification."
+        "description": {
+          "en": "A long-text queue needs a plan for volume, output requirements, and sample verification. Compare the input scale with recorded budgets and confirm access before defining batches. Use spot checks and exception handling to decide whether the queue can proceed under the required quality threshold.",
+          "zh": "处理长文本队列时，先明确数量、输出要求和核验样本，再将输入规模与已有预算记录进行比较。确认访问条件后制定分批规则，并通过抽样和例外处理判断质量是否达标，避免仅根据预计容量直接扩大处理规模。"
         }
       },
       {
@@ -147,17 +139,9 @@
           "en": "Cost-aware planning",
           "zh": "成本导向规划"
         },
-        "brief": {
-          "zh": "候选任务、资源预算、质量底线和响应时限。",
-          "en": "Candidate tasks, resource budgets, quality thresholds, and response deadlines."
-        },
-        "process": {
-          "zh": "把任务要求与配置记录对照，不用预期成本画像代替实际测量。",
-          "en": "Compare requirements with configuration records without replacing measurements with expected cost profiles."
-        },
-        "outcome": {
-          "zh": "需要验证的资源假设、试运行样本和采用条件。",
-          "en": "Resource assumptions to test, pilot samples, and adoption criteria."
+        "description": {
+          "en": "Cost-aware adoption starts with representative tasks, quality thresholds, and response deadlines. Compare these needs with configuration records, then test the resource assumptions on pilot samples. Measurements should determine adoption criteria; an expected cost profile alone cannot establish the quality or timing of the actual workflow.",
+          "zh": "评估成本时，先选取有代表性的任务，明确质量门槛和响应时限，再对照配置记录提出需要验证的资源假设。使用小规模样本测量实际表现，并据此确定采用条件，不能只凭预期成本推断工作流的质量和耗时。"
         }
       },
       {
@@ -165,17 +149,9 @@
           "en": "Media workflow separation",
           "zh": "媒体工作流分离"
         },
-        "brief": {
-          "zh": "同时含有文本、图像或视频的交付清单。",
-          "en": "A deliverable list containing text, images, or video."
-        },
-        "process": {
-          "zh": "分别确定文本处理与媒体工作流的入口和依赖，检查各自输出。",
-          "en": "Identify separate text/media routes and dependencies and verify each output."
-        },
-        "outcome": {
-          "zh": "按交付类型分开的流程与接入要求。",
-          "en": "Workflows and access requirements separated by deliverable type."
+        "description": {
+          "en": "A deliverable containing text, images, and video may require separate model routes and dependencies. Identify the appropriate path for each medium, verify its access requirements, and review the resulting output independently. Keep those boundaries visible when assembling the overall workflow instead of treating every medium as one text request.",
+          "zh": "包含文本、图片和视频的交付任务，可能需要不同的模型入口与依赖条件。分别确定每种媒介的处理路径、访问要求和结果检查方式，再组合成整体工作流。保留这些边界，避免把所有媒介都理解为同一条文本请求能够处理的内容。"
         }
       }
     ]

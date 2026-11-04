@@ -105,17 +105,9 @@
             "en": "Shape a product idea",
             "zh": "梳理产品想法"
           },
-          "brief": {
-            "en": "An early product idea, user problems, and known constraints.",
-            "zh": "尚未定型的产品想法、用户问题和已知约束。"
-          },
-          "process": {
-            "en": "Use the ordinary interview to clarify the audience, useful outcome, and choices that change what should be built.",
-            "zh": "通过普通访谈明确目标用户、需要实现的结果，以及会改变建设方向的关键选择。"
-          },
-          "outcome": {
-            "en": "Confirmed direction-setting choices and unresolved questions.",
-            "zh": "能改变建设方向的已确认选择与未决问题。"
+          "description": {
+            "en": "An early product idea benefits from questions that establish its audience, useful outcome, and real constraints. Use the ordinary interview to resolve choices that would change what gets built, rather than rushing into implementation. Record agreed direction-setting decisions and the questions that still prevent a clear plan.",
+            "zh": "早期产品想法需要先厘清受众、真正有用的结果和现实约束。通过常规访谈解决会改变构建方向的选择，而不是急于进入实施。讨论后记录已经确定的关键决定，以及仍然妨碍形成清晰计划的问题。"
           }
         },
         {
@@ -123,17 +115,9 @@
             "en": "Review a workflow change",
             "zh": "审视流程调整"
           },
-          "brief": {
-            "en": "The current process, proposed changes, and affected teams or dependencies.",
-            "zh": "现有流程、拟改环节及涉及的团队或依赖。"
-          },
-          "process": {
-            "en": "Identify who is affected, what must remain possible, and which dependent decisions need to be settled before work is allocated.",
-            "zh": "明确受影响的人、必须保留的能力，以及分配工作前需要解决的相互依赖决策。"
-          },
-          "outcome": {
-            "en": "Decision dependencies and questions to resolve before assigning implementation.",
-            "zh": "流程决策之间的依赖图，明确开始实施前要回答什么。"
+          "description": {
+            "en": "A workflow change affects people and dependencies as well as the steps being edited. Compare the current process with the proposal, identify what must remain possible, and locate decisions that depend on one another. Resolve those questions before distributing implementation work so teams do not proceed on conflicting assumptions.",
+            "zh": "工作流调整不仅影响步骤，也影响参与者和依赖关系。比较现有流程与拟议变化，识别必须保留的能力以及相互依赖的决定。分配实施工作前先解决这些问题，避免不同团队基于互相冲突的假设开始行动。"
           }
         },
         {
@@ -141,17 +125,9 @@
             "en": "Record a software design discussion",
             "zh": "记录软件方案讨论"
           },
-          "brief": {
-            "en": "A software proposal, current code, and the existing glossary or ADRs.",
-            "zh": "软件方案、当前代码与已有术语表或 ADR。"
-          },
-          "process": {
-            "en": "Choose Grill with Docs to check project terms against code and existing records, updating the glossary or an ADR only where the discussion warrants it.",
-            "zh": "选择 Grill with Docs，对照代码与已有记录检查项目术语，只在讨论确有需要时更新术语表或 ADR。"
-          },
-          "outcome": {
-            "en": "Conclusions consistent with project terminology and only warranted documentation changes.",
-            "zh": "与项目用语一致的讨论结论，只记录必要的文档变化。"
+          "description": {
+            "en": "A software design discussion can use Grill with Docs to compare the proposal with current code, project terms, and existing decision records. Check terminology before updating a glossary or ADR, and change those documents only where the discussion warrants it. The record should reflect settled conclusions rather than speculative documentation churn.",
+            "zh": "软件设计讨论可以使用 Grill with Docs，将提案与当前代码、项目术语和已有决策记录对照。先核对概念含义，再根据讨论实际形成的结论更新术语表或 ADR。文档修改应有充分理由，避免围绕尚未确定的想法反复改写记录。"
           }
         }
       ]
@@ -461,17 +437,9 @@
             "en": "Add an observable feature",
             "zh": "新增可观察能力"
           },
-          "brief": {
-            "en": "A public interface, caller expectations, and concrete acceptance behaviors.",
-            "zh": "公开接口、调用方期望与具体验收行为。"
-          },
-          "process": {
-            "en": "Describe what a caller should be able to do and test the result through the public interface.",
-            "zh": "说明调用方应获得的能力，并通过公开接口验证结果。"
-          },
-          "outcome": {
-            "en": "Failing-test-to-minimal-implementation increments proving observable behavior.",
-            "zh": "从失败测试到最小实现的增量，逐项证明可观察行为。"
+          "description": {
+            "en": "An observable feature needs concrete acceptance behaviors at its public interface. Describe what callers should be able to do, write a failing test for that behavior, and implement the smallest change that makes it pass. Build the feature through these increments rather than testing private implementation choices in isolation.",
+            "zh": "可观察功能需要在公共接口上定义具体行为，说明调用方应该能够完成什么。先为该行为编写失败测试，再实施使其通过的最小修改，通过这样的增量推进功能。测试关注对外结果，避免只验证某种私有实现方式。"
           }
         },
         {
@@ -479,17 +447,9 @@
             "en": "Protect a bug fix",
             "zh": "保护缺陷修复"
           },
-          "brief": {
-            "en": "A reproducible defect, triggering input, and the correct external result.",
-            "zh": "可复现缺陷、触发输入和正确的外部结果。"
-          },
-          "process": {
-            "en": "Choose a test seam that actually reproduces the failure instead of asserting on unrelated internal details.",
-            "zh": "选择能真实复现故障的测试边界，避免断言无关内部细节。"
-          },
-          "outcome": {
-            "en": "A regression test that fails then passes, protecting the original fault rather than internals.",
-            "zh": "先失败后通过的回归测试，保护原故障而非内部实现。"
+          "description": {
+            "en": "A bug fix needs a regression test that reproduces the reported defect with the triggering input. Choose a test seam where the incorrect external result is actually observable, then verify that the test fails before the repair and passes afterward. Assertions about unrelated internals do not protect that failure.",
+            "zh": "缺陷修复需要使用触发输入重现原始问题的回归测试。选择真正能够观察到错误外部结果的测试入口，验证测试在修复前失败、修复后通过。针对无关内部细节的断言，不能代替对这次故障的保护。"
           }
         },
         {
@@ -497,17 +457,9 @@
             "en": "Cover a critical integration",
             "zh": "覆盖关键集成"
           },
-          "brief": {
-            "en": "Critical integration boundaries, real dependencies, and known expected results.",
-            "zh": "关键集成边界、真实依赖和已知预期结果。"
-          },
-          "process": {
-            "en": "Exercise the behavior spanning a meaningful boundary with known expected results.",
-            "zh": "使用已知预期结果，验证跨越关键边界的真实行为。"
-          },
-          "outcome": {
-            "en": "Tests detecting boundary failures, documenting test doubles and real dependencies.",
-            "zh": "能够检测边界失效的测试，说明所用替身和真实依赖。"
+          "description": {
+            "en": "A critical integration test should exercise behavior across a meaningful boundary with known expected results. Identify which dependencies are real and which are replaced by test doubles, then check the combined behavior. The test should detect boundary failures rather than merely confirming that isolated components were called.",
+            "zh": "关键集成测试需要跨越有实际意义的边界，并使用已知的预期结果。明确哪些依赖真实运行、哪些由替身代替，再核对组合后的行为。测试应能够发现边界协作失败，而不是只确认各个独立组件曾经被调用。"
           }
         }
       ]
@@ -754,17 +706,9 @@
             "en": "A hotspot keeps changing",
             "zh": "热点模块反复修改"
           },
-          "brief": {
-            "en": "Recent commits, frequently edited modules, and repeated rework causes.",
-            "zh": "近期提交、频繁修改的模块与反复返工的原因。"
-          },
-          "process": {
-            "en": "Start with recent history to investigate the area causing recurring changes.",
-            "zh": "结合近期历史调查反复引发修改的区域。"
-          },
-          "outcome": {
-            "en": "History-backed improvement candidates and the maintenance costs they address.",
-            "zh": "由修改历史支持的改进候选，说明能减少哪类维护成本。"
+          "description": {
+            "en": "A frequently changing module deserves investigation through recent commits and repeated rework, not an immediate rewrite. Look for the specific maintenance costs behind the hotspot and compare improvement candidates against that history. The proposal should explain what recurring burden it removes and which evidence supports making the change.",
+            "zh": "频繁修改的模块应先通过近期提交和反复返工记录调查，而不是直接重写。识别热点背后的具体维护成本，再根据历史比较改进候选项。提案需要说明准备消除哪种持续负担，以及哪些证据支持现在进行调整。"
           }
         },
         {
@@ -772,17 +716,9 @@
             "en": "Behavior is hard to test",
             "zh": "真实行为难以测试"
           },
-          "brief": {
-            "en": "Tests coupled to private details and the public behavior they should verify.",
-            "zh": "测试深入私有细节的案例与需要验证的公开行为。"
-          },
-          "process": {
-            "en": "Look for an interface that exposes too little useful behavior or forces tests into internals.",
-            "zh": "检查接口是否无法暴露有意义行为，导致测试深入内部实现。"
-          },
-          "outcome": {
-            "en": "Proposed interface boundaries and testing seams without rewriting every test first.",
-            "zh": "更有意义的接口边界与测试入口建议，不先改写所有测试。"
+          "description": {
+            "en": "Tests that depend on private details may reveal an interface that exposes too little useful behavior. Compare those tests with the public behavior they are meant to verify, then propose a better boundary or testing seam. Establish the architectural problem before committing to rewriting the entire test suite.",
+            "zh": "测试过度依赖私有细节，可能反映接口没有暴露足够有用的行为。将现有测试与它们真正需要验证的公共行为对照，提出更合适的边界或测试入口。先确认架构问题，再决定是否需要大范围调整测试。"
           }
         },
         {
@@ -790,17 +726,9 @@
             "en": "Understanding crosses many files",
             "zh": "理解概念需要跨越多文件"
           },
-          "brief": {
-            "en": "Files and navigation paths needed to understand one concept.",
-            "zh": "一次概念调查涉及的文件链路与导航记录。"
-          },
-          "process": {
-            "en": "Examine whether scattered modules create real navigation and maintenance costs.",
-            "zh": "检查分散模块是否造成实际导航与维护成本。"
-          },
-          "outcome": {
-            "en": "Cohesion/layering candidates and their effects on existing dependencies.",
-            "zh": "聚合或分层候选，以及对现有依赖关系的影响。"
+          "description": {
+            "en": "Understanding one concept across many files can create a real navigation and maintenance burden. Trace the paths needed to follow that concept and examine whether cohesion or layering could reduce the cost. Compare proposed boundaries with existing dependencies so consolidation does not merely move complexity elsewhere.",
+            "zh": "理解一个概念需要反复跨越大量文件时，可能已经产生真实的导航与维护成本。记录实际阅读路径，检查内聚性或分层调整能否减少负担，并将拟议边界与既有依赖比较，避免只是把复杂度移到另一个位置。"
           }
         }
       ]
@@ -1037,17 +965,9 @@
             "en": "A bug survives several fixes",
             "zh": "多次修改后仍然出错"
           },
-          "brief": {
-            "en": "A persistent failure, attempted patches, and observable output.",
-            "zh": "仍失败的场景、已尝试补丁与可观察输出。"
-          },
-          "process": {
-            "en": "Replace repeated guesses with a feedback command that catches the exact reported failure.",
-            "zh": "建立能捕获准确故障的反馈命令，替代反复猜测。"
-          },
-          "outcome": {
-            "en": "A feedback command capturing the exact symptom and validating diagnosis and repair.",
-            "zh": "能捕获准确症状的反馈命令，并据此验证原因和修复。"
+          "description": {
+            "en": "When several patches fail to solve a bug, preserve the observed symptom and build a feedback command that catches it directly. Compare attempted fixes against that repeatable signal instead of making another guess. Use the same command to validate both the diagnosis and the final repair.",
+            "zh": "连续多次修改仍未解决问题时，保留可观察症状，建立能够直接捕获它的反馈命令。用可重复的信号检查既有修补，替代下一轮猜测。诊断和最终修复都通过同一命令验证，确保处理的是最初报告的故障。"
           }
         },
         {
@@ -1055,17 +975,9 @@
             "en": "An issue appears intermittently",
             "zh": "问题间歇出现"
           },
-          "brief": {
-            "en": "An intermittent fault, runtime environment, and occurrence records.",
-            "zh": "间歇性故障、运行环境和发生频次记录。"
-          },
-          "process": {
-            "en": "Increase the reproduction rate with a controlled loop before choosing an explanation.",
-            "zh": "先通过受控循环提高复现率，再选择原因解释。"
-          },
-          "outcome": {
-            "en": "A controlled reproduction loop and failure samples, with remaining uncertainty.",
-            "zh": "受控复现循环与失败样本，说明仍无法排除的条件。"
+          "description": {
+            "en": "An intermittent fault needs more usable evidence before a cause is chosen. Reproduce the reported environment and run a controlled loop to increase the failure rate, preserving representative samples. Explain which conditions correlate with failure and what uncertainty remains instead of treating one successful run as a repair.",
+            "zh": "间歇性故障需要先增加可用证据，再决定原因。复现报告中的环境，通过受控循环提高出现概率并保留失败样本。说明哪些条件与故障相关、哪些不确定性仍然存在，避免把一次成功运行当作问题已经修复。"
           }
         },
         {
@@ -1073,17 +985,9 @@
             "en": "A release became slower",
             "zh": "发布后性能下降"
           },
-          "brief": {
-            "en": "Versions before/after release, the same workload, and timing method.",
-            "zh": "发布前后版本、相同负载与计时方式。"
-          },
-          "process": {
-            "en": "Build a comparable timing baseline and investigate the change against measured behavior.",
-            "zh": "建立可比较的计时基线，依据测量调查变化。"
-          },
-          "outcome": {
-            "en": "Comparable timings and regression localization, retested on the original workload.",
-            "zh": "可比较的耗时数据和回归定位，复测原工作负载。"
+          "description": {
+            "en": "A release slowdown should be measured with the same workload and timing method before and after the change. Establish a comparable baseline, localize the regression, and retest any proposed repair on that original workload. Comparable timings make it possible to distinguish a real improvement from noise or a changed test.",
+            "zh": "版本发布后变慢时，使用相同工作负载和计时方法比较前后表现。建立可比基线，定位性能回退，再用原始负载复测拟议修复。保持测量条件一致，才能区分真实改进、环境波动和测试方式变化。"
           }
         }
       ]
@@ -1320,17 +1224,9 @@
             "en": "Review a feature branch",
             "zh": "审查特性分支"
           },
-          "brief": {
-            "en": "A feature branch, agreed base, project rules, and expected behavior.",
-            "zh": "特性分支、约定基线、项目规则和预期行为。"
-          },
-          "process": {
-            "en": "Compare the changes with the agreed base and review both conventions and intended behavior.",
-            "zh": "与约定基线比较改动，同时检查代码约定与预期行为。"
-          },
-          "outcome": {
-            "en": "Separate standards and requirements findings tied to changed lines.",
-            "zh": "分开列出的规范问题与需求问题，关联改动行。"
+          "description": {
+            "en": "Review a feature branch against an agreed base, the project's rules, and the behavior it is intended to deliver. Keep standards findings distinct from missing or incorrect requirements, with each issue tied to relevant changed lines. That separation helps the author understand both convention and functional consequences.",
+            "zh": "审阅功能分支时，以约定基线、项目规则和预期行为为依据。将规范问题与需求缺失或实现错误分别记录，并把每项发现对应到相关修改行。这样作者能够区分代码约定与功能后果，按问题本身安排修复。"
           }
         },
         {
@@ -1338,17 +1234,9 @@
             "en": "Check a ticket implementation",
             "zh": "核对工单实现"
           },
-          "brief": {
-            "en": "Ticket acceptance criteria, implementation diff, and relevant tests.",
-            "zh": "工单验收项、实现差异与相关测试。"
-          },
-          "process": {
-            "en": "Locate requirements that are missing, partial, or implemented differently from the specification.",
-            "zh": "找出缺失、部分完成或与需求不同的实现。"
-          },
-          "outcome": {
-            "en": "Per-criterion implementation status and evidence for missing or divergent behavior.",
-            "zh": "逐项实现状态及证据，明确缺失或偏离的行为。"
+          "description": {
+            "en": "A ticket implementation can be checked criterion by criterion against its diff and relevant tests. Locate requirements that are absent, partially covered, or implemented differently from the specification, and attach evidence to each status. A general impression that the branch looks complete cannot replace this comparison.",
+            "zh": "核对任务单实现时，将验收条件与代码差异及相关测试逐项对照。查找缺失、只完成一部分或偏离规格的行为，并为每种状态提供证据。不能只凭分支整体看起来已经完成，就代替具体要求之间的比较。"
           }
         },
         {
@@ -1356,17 +1244,9 @@
             "en": "Audit a release diff",
             "zh": "复核发布差异"
           },
-          "brief": {
-            "en": "A fixed release tag, target commit, and exclusions.",
-            "zh": "固定发布标签、目标提交与本次排除范围。"
-          },
-          "process": {
-            "en": "Use a fixed release reference to keep the review scope reproducible.",
-            "zh": "使用固定发布参考，使审查范围可以复现。"
-          },
-          "outcome": {
-            "en": "A reproducible release review without mixing in later unreleased changes.",
-            "zh": "范围可复现的发布审查结果，不混入后续未发布变化。"
+          "description": {
+            "en": "A release audit needs a fixed release tag, target commit, and explicit exclusions. Keep that reference stable while inspecting the diff so another reviewer can reproduce the same scope. Leave later unreleased changes out of the findings rather than allowing a moving branch to enlarge the review silently.",
+            "zh": "版本审计需要固定发布标签、目标提交和排除范围。检查差异时保持这些参照稳定，让其他审阅者能够复现相同范围。后续尚未发布的修改不混入本次结论，避免移动中的分支静默扩大审阅内容。"
           }
         }
       ]
@@ -1613,17 +1493,9 @@
             "en": "Continue implementation elsewhere",
             "zh": "在另一会话继续实现"
           },
-          "brief": {
-            "en": "The current feature, decisions, relevant paths, and next task.",
-            "zh": "当前特性、已定选择、相关路径与下一项工作。"
-          },
-          "process": {
-            "en": "Preserve the current objective, decisions, relevant paths, and next task without copying every conversation turn.",
-            "zh": "保留当前目标、决策、相关路径与下一任务，不必复制全部对话。"
-          },
-          "outcome": {
-            "en": "A continuation brief with the evidence a fresh session needs.",
-            "zh": "新会话能直接续接的交接材料，保留必要证据入口。"
+          "description": {
+            "en": "Continuing implementation in a fresh session requires the current objective, settled decisions, relevant paths, and the next concrete task. Preserve the evidence that explains those choices instead of copying every conversation turn. The continuation brief should give the new session enough context to act without reconstructing the whole discussion.",
+            "zh": "在新会话继续实施时，需要保留当前目标、已经确定的决定、相关路径和下一项具体任务。记录能够解释这些选择的证据，不必复制每一轮对话。交接简报应让新会话直接理解接下来要做什么，而不需要重新拼凑整个讨论。"
           }
         },
         {
@@ -1631,17 +1503,9 @@
             "en": "Pass on investigation findings",
             "zh": "交接调查发现"
           },
-          "brief": {
-            "en": "Investigation notes, source paths, and unconfirmed hypotheses.",
-            "zh": "调查记录、来源路径与尚未证实的假设。"
-          },
-          "process": {
-            "en": "Point to captured evidence and remaining questions so the next agent can verify the reasoning.",
-            "zh": "引用已收集证据和未决问题，使下一 Agent 能核对推理。"
-          },
-          "outcome": {
-            "en": "A checkable investigation handoff separating facts, hypotheses, and open questions.",
-            "zh": "可核对的调查交接，区分事实、假设和未决问题。"
+          "description": {
+            "en": "An investigation handoff should point to the source paths and evidence behind its findings. Separate established facts from unconfirmed hypotheses and keep unanswered questions explicit. The next agent can then check the reasoning and continue the inquiry rather than inherit conclusions whose supporting material cannot be located.",
+            "zh": "调查交接需要指出发现背后的来源路径和具体证据，将事实、未确认假设与待答问题区分清楚。下一个 Agent 能够重新核对推理并继续调查，而不是接收一组无法找到支持材料的结论。"
           }
         },
         {
@@ -1649,17 +1513,9 @@
             "en": "Start a focused review session",
             "zh": "启动专门审查会话"
           },
-          "brief": {
-            "en": "The review revision, diff scope, and completed verification.",
-            "zh": "待审版本、差异范围和已经运行的验证。"
-          },
-          "process": {
-            "en": "Tailor the handoff to the review target, existing diffs, and verification already performed.",
-            "zh": "围绕审查目标、现有差异与已完成验证整理交接。"
-          },
-          "outcome": {
-            "en": "A reviewer brief identifying the risks and gaps to examine.",
-            "zh": "面向审查者的简报，明确应检查的风险与缺口。"
+          "description": {
+            "en": "A focused review session needs a fixed revision, bounded diff scope, and a record of verification already completed. Tailor the handoff to the code being assessed and the risks or gaps that still need attention. Avoid loading the reviewer with unrelated implementation history that does not change the review decision.",
+            "zh": "启动专门审阅会话时，提供固定版本、限定差异范围和已经完成的验证记录。交接围绕待评估代码及仍需关注的风险、缺口展开，减少不会影响审阅判断的实施历史，让审阅者能够尽快进入真正需要检查的内容。"
           }
         }
       ]
@@ -1898,17 +1754,9 @@
             "en": "Define a new feature",
             "zh": "定义新特性"
           },
-          "brief": {
-            "en": "A user problem, existing project state, and feature constraints.",
-            "zh": "用户问题、已有项目状态与特性约束。"
-          },
-          "process": {
-            "en": "Clarify the intended user outcome before choosing behavior, scope, or implementation details.",
-            "zh": "先明确用户结果，再决定行为、范围和实现细节。"
-          },
-          "outcome": {
-            "en": "A design comparing approaches and separating agreed behavior from unresolved choices.",
-            "zh": "比较过备选方向的设计，列明已确认行为和未决选择。"
+          "description": {
+            "en": "A new feature should begin with the user's problem and intended outcome, considered alongside the project's existing state and constraints. Compare plausible approaches before choosing behavior or implementation details. The design should distinguish agreed decisions from open choices so planning does not quietly settle questions that were never discussed.",
+            "zh": "新功能先从用户问题和预期结果出发，同时检查项目现状与约束。比较可行方案后，再决定行为范围和实现细节。设计中区分已经同意的决定与仍待讨论的选择，避免规划阶段静默替使用者确定从未讨论过的问题。"
           }
         },
         {
@@ -1916,17 +1764,9 @@
             "en": "Reshape an existing workflow",
             "zh": "调整已有流程"
           },
-          "brief": {
-            "en": "Current process documents, affected people, and reasons for change.",
-            "zh": "现有流程资料、受影响人员与调整原因。"
-          },
-          "process": {
-            "en": "Read current materials and identify which parts should change and why.",
-            "zh": "阅读当前资料，明确哪些部分需要改变及其原因。"
-          },
-          "outcome": {
-            "en": "A process proposal distinguishing preserved and changed behavior before implementation planning.",
-            "zh": "保留项与变化项清楚的流程方案，先确认再规划实施。"
+          "description": {
+            "en": "Reshaping a workflow starts with its current documents, the people affected, and the reason for changing it. Establish which behavior should remain and which should change before planning implementation. The proposal should connect each adjustment to its purpose rather than substitute a new process merely because it looks more structured.",
+            "zh": "调整工作流时，先阅读现有材料，了解受影响的人和修改原因。进入实施规划前，明确哪些行为保留、哪些需要改变。提案应将每项调整与实际目的联系起来，避免仅因为新流程看起来更有结构，就替换原本有效的做法。"
           }
         },
         {
@@ -1934,17 +1774,9 @@
             "en": "Plan a non-code project",
             "zh": "规划非代码项目"
           },
-          "brief": {
-            "en": "An audience, objective, and material constraints for a talk or creative project.",
-            "zh": "演讲或创意项目的受众、目标与素材限制。"
-          },
-          "process": {
-            "en": "Explore goals, constraints, and alternatives for a talk, process, or other creative project.",
-            "zh": "为演讲、流程或其他创意项目讨论目标、约束与备选。"
-          },
-          "outcome": {
-            "en": "A direction organized around audience outcomes and constraints for the next stage.",
-            "zh": "围绕受众结果的设计方向及可供下一阶段使用的约束。"
+          "description": {
+            "en": "A talk, process, or creative project can use the same design conversation without becoming a coding task. Clarify the audience, intended outcome, and material constraints, then compare alternatives against those needs. Carry a coherent direction and the remaining constraints into the next stage rather than invent implementation details prematurely.",
+            "zh": "演讲、流程或创意项目也可以先进行设计讨论，而不必变成编码任务。明确受众、目标和素材约束，再依据这些条件比较不同方向。将连贯的方案与尚存限制带入下一阶段，避免过早补出缺乏依据的实施细节。"
           }
         }
       ]
@@ -2200,17 +2032,9 @@
             "en": "A test fails unexpectedly",
             "zh": "测试意外失败"
           },
-          "brief": {
-            "en": "Complete failure logs, triggering input, and the nearest working case.",
-            "zh": "完整失败日志、触发输入和最相近的正常案例。"
-          },
-          "process": {
-            "en": "Read the complete failure and compare it with a nearby passing case before changing the code.",
-            "zh": "先完整阅读失败信息，与相近正常案例比较，再修改代码。"
-          },
-          "outcome": {
-            "en": "A tested causal explanation, followed by rerunning the original failed test.",
-            "zh": "经过验证的原因解释，修复后重跑原失败测试。"
+          "description": {
+            "en": "An unexpected test failure needs its complete log, triggering input, and a nearby working case examined before code changes begin. Compare the two paths and test a causal explanation rather than patching the visible symptom. Rerun the original failing test after the repair to connect the explanation with observed behavior.",
+            "zh": "测试意外失败时，先阅读完整日志、触发输入和相近的成功样例，再考虑修改代码。比较两条路径并验证因果解释，而不是直接修补表面症状。修复后重新运行原始失败测试，让根因判断能够与实际行为对应。"
           }
         },
         {
@@ -2218,17 +2042,9 @@
             "en": "A pipeline fails between components",
             "zh": "流水线在组件之间失败"
           },
-          "brief": {
-            "en": "Pipeline stages, boundary parameters, and upstream/downstream logs.",
-            "zh": "流水线阶段、边界参数与上下游日志。"
-          },
-          "process": {
-            "en": "Inspect what enters and leaves each boundary to identify the layer that actually breaks.",
-            "zh": "核对每个边界的输入和输出，确定实际失败层。"
-          },
-          "outcome": {
-            "en": "The first boundary deviating from expectations, with input/output evidence.",
-            "zh": "指出首个偏离预期的边界，并保留输入输出证据。"
+          "description": {
+            "en": "A pipeline failure can be localized by comparing what enters and leaves each component boundary. Collect stage parameters and upstream/downstream logs, then find the first point that diverges from expectations. Keep the input and output evidence for that boundary so the diagnosis identifies the breaking layer rather than a later symptom.",
+            "zh": "定位管线故障时，逐一比较组件边界的输入和输出，结合阶段参数及上下游日志，查找最早偏离预期的位置。保留该边界的证据，使诊断能够指出真正出现问题的层级，而不是只记录后续表现出来的症状。"
           }
         },
         {
@@ -2236,17 +2052,9 @@
             "en": "Several attempted fixes failed",
             "zh": "多次尝试修复无效"
           },
-          "brief": {
-            "en": "Attempted fixes, observations from each, and current architectural assumptions.",
-            "zh": "已尝试修复、每次观察结果和当前架构假设。"
-          },
-          "process": {
-            "en": "Revisit assumptions and discuss architectural causes instead of adding another untested patch.",
-            "zh": "重新检查假设并讨论架构原因，而不是再叠加未检验补丁。"
-          },
-          "outcome": {
-            "en": "A reassessment of assumptions or structural causes instead of stacking unsupported patches.",
-            "zh": "对错误假设或结构问题的复核，停止累加无证据补丁。"
+          "description": {
+            "en": "Several unsuccessful fixes are a reason to revisit assumptions, not to stack another unsupported patch. Compare what each attempt changed and what was actually observed, then discuss possible architectural causes. Reassess the structural explanation before committing to another repair that has no tested causal basis.",
+            "zh": "多次修复没有成功时，应重新检查假设，而不是继续叠加未经验证的补丁。比较每次尝试实际改变了什么、观察到了什么，再讨论可能的架构原因。下一轮修改前先重新评估结构性解释，避免在缺乏因果依据时重复试错。"
           }
         }
       ]
@@ -2525,17 +2333,9 @@
             "en": "Map a repository’s trust boundaries",
             "zh": "梳理仓库的信任边界"
           },
-          "brief": {
-            "en": "An authorized repository revision, entry points, exclusions, and isolation conditions.",
-            "zh": "授权仓库版本、入口、排除范围与隔离条件。"
-          },
-          "process": {
-            "en": "Record architecture, entry points, and coverage units before assigning investigations, so unexplored areas remain visible.",
-            "zh": "分派调查前记录架构、入口与覆盖单元，让尚未检查的区域保持可见。"
-          },
-          "outcome": {
-            "en": "A coverage map and trust boundaries with unexamined areas visible.",
-            "zh": "覆盖地图和信任边界，未检查区域明确可见。"
+          "description": {
+            "en": "A repository audit needs an authorized revision, explicit exclusions, and appropriate isolation conditions. Map the architecture, entry points, trust boundaries, and coverage units before dividing investigations. Keep unexamined areas visible in the ledger so assigning work does not create the impression that the entire repository has already been checked.",
+            "zh": "仓库审计需要明确授权版本、排除范围和适用的隔离条件。分配调查前，记录架构、入口、信任边界与覆盖单元，在台账中保留尚未检查的区域。任务已经分配不等于覆盖已经完成，整体结论应与实际证据一致。"
           }
         },
         {
@@ -2543,17 +2343,9 @@
             "en": "Challenge a suspected vulnerability",
             "zh": "独立质疑疑似漏洞"
           },
-          "brief": {
-            "en": "A candidate issue, source chain, and observed impact evidence.",
-            "zh": "候选问题、源码链路和已有影响证据。"
-          },
-          "process": {
-            "en": "Give a candidate to a fresh verifier that tries to disprove the mechanism and checks the source trace and observed impact.",
-            "zh": "将候选交给新的验证者，尝试推翻问题机制，检查源码链路与实际观察到的影响。"
-          },
-          "outcome": {
-            "en": "An independent validation verdict, retaining needs_validation where evidence is insufficient.",
-            "zh": "独立验证结论，证据不足的线索保留 needs_validation。"
+          "description": {
+            "en": "A suspected vulnerability should face an independent attempt to disprove its mechanism. Give a fresh verifier the candidate, source trace, and observed impact evidence, then compare the verdict with the original claim. Retain needs_validation when evidence is insufficient instead of promoting a plausible concern into a verified finding.",
+            "zh": "疑似漏洞需要经过独立反证检验。向新的核验者提供候选问题、源码链路和已观察到的影响，让其尝试推翻机制，再与原始判断比较。证据不足时保留 needs_validation 状态，不把看似合理的担忧直接升级为已验证发现。"
           }
         },
         {
@@ -2561,17 +2353,9 @@
             "en": "Revisit changed or unresolved evidence",
             "zh": "复核变化与未解决证据"
           },
-          "brief": {
-            "en": "Historical ledgers, source changes, and unresolved issue records.",
-            "zh": "历史台账、来源变化和未解决的问题记录。"
-          },
-          "process": {
-            "en": "Use prior ledgers and findings to identify gaps and source changes, without treating an older result as current coverage.",
-            "zh": "利用历史台账和问题记录定位缺口与来源变化，不把旧结论直接当作当前覆盖。"
-          },
-          "outcome": {
-            "en": "Change impact and evidence gaps without inheriting unverified historical coverage.",
-            "zh": "变化影响与证据缺口清单，不沿用未经复核的旧覆盖结论。"
+          "description": {
+            "en": "A later audit can use historical ledgers to identify unresolved issues and source changes, but old findings do not establish current coverage. Compare changed code with the earlier evidence and locate gaps that need renewed investigation. Report change impact and remaining uncertainty without inheriting verification that was never repeated.",
+            "zh": "后续审计可以利用历史台账寻找未解决问题和源码变化，但旧结论不能直接代表当前覆盖。将变更代码与早期证据对照，识别需要重新调查的缺口。报告说明变化影响和剩余不确定性，不继承本轮并未重复验证的历史状态。"
           }
         }
       ]

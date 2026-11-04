@@ -113,7 +113,7 @@ export function ModelDetailPage({
         </div>
       </section>
 
-      <UseCasesSection {...localizeUseCases(model.useCases, locale)} locale={locale} />
+      <UseCasesSection {...localizeUseCases(model.useCases, locale)} />
 
       <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">

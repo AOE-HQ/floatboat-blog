@@ -130,17 +130,9 @@
           "en": "Chinese document synthesis",
           "zh": "中文长文综合"
         },
-        "brief": {
-          "zh": "长篇中文材料、需要综合的主题与引用规则。",
-          "en": "Long Chinese sources, synthesis topics, and citation rules."
-        },
-        "process": {
-          "zh": "在可用通道上连接论点及其条件，保留术语和来源差异。",
-          "en": "Through an available route, connect claims/conditions while retaining terminology and source differences."
-        },
-        "outcome": {
-          "zh": "覆盖完整材料的中文综合，附来源与分歧。",
-          "en": "A whole-source Chinese synthesis with attribution and disagreements."
+        "description": {
+          "en": "Through an available route, Chinese document synthesis can connect claims and conditions across long sources. Keep the research topics and citation requirements explicit, preserving original terminology and differences between authors. The synthesis should remain traceable to whole sources rather than replacing them with disconnected excerpts.",
+          "zh": "在确认可用的入口中，围绕明确主题和引用要求综合长篇中文资料，连接不同来源中的论点与适用条件。保留原有术语、作者分歧和引用归属，使结论能够追溯到完整来源，而不是只依赖彼此脱节的片段。"
         }
       },
       {
@@ -148,17 +140,9 @@
           "en": "Large source review",
           "zh": "大型资料审阅"
         },
-        "brief": {
-          "zh": "大型文本资料集、统一审阅标准与已知反例。",
-          "en": "A large text corpus, review criteria, and known counterexamples."
-        },
-        "process": {
-          "zh": "按统一规则核对来源之间的关系，记录不满足标准的具体位置。",
-          "en": "Check relationships against common criteria and locate exceptions in the sources."
-        },
-        "outcome": {
-          "zh": "带来源定位的审阅结论与待处理问题。",
-          "en": "Source-located review conclusions and issues to resolve."
+        "description": {
+          "en": "A large source review needs common criteria and known counterexamples. Check relationships across the corpus, locate exceptions in the original material, and distinguish supported conclusions from questions still open. Deliver source-located findings so another reviewer can inspect the same evidence and assess the reasoning.",
+          "zh": "审阅大批资料时，先明确统一标准和已知反例，再检查文本之间的关联与例外。将结论定位到原始内容，区分证据已经支持的判断和仍需解决的问题。其他审阅者应能够找到相同资料并重新评估推理过程。"
         }
       },
       {
@@ -166,17 +150,9 @@
           "en": "Workflow access planning",
           "zh": "工作流访问规划"
         },
-        "brief": {
-          "zh": "任务输入规模、运行时事实与当前可用入口。",
-          "en": "Task input scale, runtime facts, and currently available entry points."
-        },
-        "process": {
-          "zh": "分别核对准确 ID、预算、通道和访问条件。",
-          "en": "Verify the exact ID, budget, route, and access conditions separately."
-        },
-        "outcome": {
-          "zh": "接入前提与任务要求相匹配的工作流计划。",
-          "en": "A workflow plan matching access prerequisites to task requirements."
+        "description": {
+          "en": "Workflow planning should compare input scale with the exact model identifier, runtime facts, budget, and current entry points. Verify each access condition independently before assigning work to the route. A useful plan makes prerequisites explicit and leaves unconfirmed capability or availability claims open for testing.",
+          "zh": "规划工作流时，将输入规模与精确型号、运行环境、预算及当前入口分别核对。确认每项访问条件后，再安排通过该路径执行的工作。计划中明确写出前提，将尚未证实的能力或可用性留待验证，避免仅凭型号记录作出承诺。"
         }
       }
     ]

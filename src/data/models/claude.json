@@ -212,17 +212,9 @@
           "en": "Repository-wide refactor",
           "zh": "全仓库重构"
         },
-        "brief": {
-          "zh": "共享子系统、调用方清单、保留接口与测试基线。",
-          "en": "A shared subsystem, callers, interfaces to preserve, and a test baseline."
-        },
-        "process": {
-          "zh": "追踪依赖并限定迁移边界，修改后检查调用方和相关测试。",
-          "en": "Trace dependencies, bound the migration, and verify callers and tests after changes."
-        },
-        "outcome": {
-          "zh": "保留契约的跨文件变更、迁移说明与测试结果。",
-          "en": "Cross-file changes preserving contracts, migration notes, and test results."
+        "description": {
+          "en": "A repository-wide refactor begins with the shared subsystem, its callers, and interfaces that must remain compatible. Trace those dependencies and bound the migration before editing. Deliver the cross-file changes with migration notes and test results so reviewers can check both the new implementation and the preserved contracts.",
+          "zh": "跨仓库重构需要先识别共享模块、调用方和必须保持兼容的接口，再确定迁移范围。沿依赖关系检查修改影响，完成后验证调用行为与测试结果。交付跨文件变更时附上迁移说明，方便审阅者同时核对新实现和需要保留的约定。"
         }
       },
       {
@@ -230,17 +222,9 @@
           "en": "Architecture decision",
           "zh": "架构决策"
         },
-        "brief": {
-          "zh": "候选架构、真实约束、迁移预算与已知下游依赖。",
-          "en": "Architecture candidates, real constraints, a migration budget, and downstream dependencies."
-        },
-        "process": {
-          "zh": "比较各方案的取舍、迁移成本与故障后果，标出仍需确认的假设。",
-          "en": "Compare tradeoffs, migration costs, and failure consequences, marking unverified assumptions."
-        },
-        "outcome": {
-          "zh": "可审阅的架构决定，说明选定方向与未决风险。",
-          "en": "A reviewable architecture decision with the chosen direction and remaining risks."
+        "description": {
+          "en": "An architecture choice should account for real constraints, downstream dependencies, and the migration budget. Compare candidate designs by their tradeoffs and failure consequences, keeping unverified assumptions visible. A useful decision record explains the selected direction and the risks the team still needs to address.",
+          "zh": "架构选择需要结合真实约束、下游依赖和迁移预算，比较候选方案的取舍及失败后果。分析中保留尚未验证的假设，不把预期当成既定事实。最终记录应说明选择某个方向的理由，以及团队仍需处理的风险。"
         }
       },
       {
@@ -248,17 +232,9 @@
           "en": "Cross-file failure trace",
           "zh": "跨文件故障追踪"
         },
-        "brief": {
-          "zh": "症状、复现步骤、涉及模块与相关日志。",
-          "en": "Symptoms, reproduction steps, affected modules, and relevant logs."
-        },
-        "process": {
-          "zh": "跨模块追踪状态和调用，验证根因假设后再修改实现。",
-          "en": "Trace state and calls across modules, testing a root-cause hypothesis before editing."
-        },
-        "outcome": {
-          "zh": "针对根因的修复，以及重跑原始故障的证据。",
-          "en": "A root-cause fix and evidence from rerunning the original failure."
+        "description": {
+          "en": "When a failure crosses module boundaries, start with symptoms, reproduction steps, and the relevant logs. Trace calls and state transitions to test a root-cause hypothesis before making a fix. Rerun the original failing path afterward and retain the evidence that connects the change to the observed problem.",
+          "zh": "故障跨越多个模块时，从症状、复现步骤和相关日志入手，沿调用关系与状态变化验证根因假设，再实施修复。修改后重新运行原来的失败路径，并保留验证记录，让修复与最初观察到的问题之间有明确的证据关联。"
         }
       }
     ]
