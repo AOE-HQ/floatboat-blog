@@ -1,5 +1,7 @@
 ---
 title: "Grok 3 API in 2026: Retirement, Redirects, and Costs"
+seoTitle: "Grok 3 API Retirement: Redirects, Pricing, and Migration Choices"
+seoDescription: "Grok 3 API retirement changes routing and billing for old model names. Understand the Grok 4.3 redirect, search-tool costs, and migration checks before continuing an integration."
 description: "The Grok 3 API is retired and its model slug redirects to Grok 4.3. Learn what existing users are billed, which xAI model fits each workload, and how to migrate safely."
 slug: "grok-3-api-solo-operator"
 date: "2026-04-23"

@@ -1,5 +1,7 @@
 ---
 title: "Genspark Super Agent 详解 — 多模型协作的一体化 AI 工作区"
+seoTitle: "Genspark Super Agent：多模型协作与任务适配解析"
+seoDescription: "根据文章注明日期的官方核验与可复现测试，了解 Genspark Super Agent 如何连接研究和产物制作，检查来源、权限、重试、积分与导出条件，再判断是否适合当前任务。"
 description: "基于官方能力与可复现的研究到产物测试解释 Genspark Super Agent，覆盖来源、权限、重试、积分、导出与适用边界，核验于 2026 年 10 月 13 日。"
 slug: "genspark-super-agent-explained"
 date: "2026-05-25"

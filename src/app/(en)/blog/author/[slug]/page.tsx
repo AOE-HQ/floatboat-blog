@@ -1,3 +1,4 @@
+import { getArchiveSearchCopy } from "@/lib/blog-archive-metadata";
 import { FaqBand } from "@/components/faq-band";
 import { getAuthorFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
@@ -50,15 +51,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
-  const authorName = resolveAuthorName(posts, slug);
   const canonical = absoluteUrl(authorPath(slug));
 
+  const search = getArchiveSearchCopy("author", slug, "en");
+
   return {
-    title: `${authorName} | Blog`,
-    description: `Articles by ${authorName} on Open Blog.`,
+    title: { absolute: search.title },
+    description: search.description,
     alternates: { canonical },
     openGraph: {
-      title: `${authorName} | Blog`,
+      title: search.title,
+      description: search.description,
       url: canonical,
       type: "website",
     },

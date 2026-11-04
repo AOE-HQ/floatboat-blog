@@ -1,5 +1,7 @@
 ---
 title: "动态工作流：自己构建 Agent，还是直接用工作区？"
+seoTitle: "动态 AI 工作流：自己构建 Agent，还是使用工作区"
+seoDescription: "Dynamic Workflows 可以采用自建子 Agent 编排，也可以使用现有工作区。比较任务重复度、并行价值、人工引导、产物复核和维护责任，再判断团队需要自己拥有哪一层。"
 description: "比较自建 Dynamic Workflows 子 Agent 编排与使用 AI 工作区的适用边界，从任务重复度、并行价值、人为引导、产物复核、维护责任与可验收性判断哪一层应该由团队自己拥有。"
 slug: "dynamic-workflows-build-or-use-workspace"
 date: "2026-05-29"

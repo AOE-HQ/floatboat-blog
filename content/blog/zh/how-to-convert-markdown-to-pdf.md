@@ -1,5 +1,7 @@
 ---
 title: "如何把 Markdown 转成 PDF——按折腾程度排序的三种方法"
+seoTitle: "Markdown 转 PDF：三种转换方法与使用成本比较"
+seoDescription: "Markdown 转 PDF 可以使用浏览器工具、pandoc 或编辑器导出。按配置成本比较三条路线，了解 LaTeX 依赖，以及表格溢出、代码截断和中文字体缺失时的处理方法。"
 description: "把 Markdown 转成 PDF 有三条路：免安装的浏览器工具、命令行 pandoc、编辑器自带导出。本文按折腾程度逐条讲清各自适合谁、pandoc 的 LaTeX 依赖坑怎么绕，以及表格溢出、代码块截断、中文字体缺失这些高频翻车点的解法。"
 slug: "how-to-convert-markdown-to-pdf"
 date: "2026-09-12"

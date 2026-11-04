@@ -1,5 +1,7 @@
 ---
 title: "Genspark Pricing: Plans, Limits, and What You Get"
+seoTitle: "Genspark Pricing: Compare Plans, Usage Limits, and Value"
+seoDescription: "Genspark pricing depends on plan features, credits, limits, and additional costs. Compare Free, Plus, and Pro with the work you need rather than subscription price alone."
 description: "Genspark pricing broken down: what each plan includes, where the limits are, and whether the free tier is actually useful."
 slug: "genspark-ai-pricing"
 date: "2026-05-07"

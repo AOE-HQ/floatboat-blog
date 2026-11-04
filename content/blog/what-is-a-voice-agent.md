@@ -1,5 +1,7 @@
 ---
 title: "What Is a Voice Agent? Definition, Architecture, and Job Shapes"
+seoTitle: "Voice Agents: Definitions, Architecture, and Work Task Shapes"
+seoDescription: "A voice agent handles real-time speech input and output, with turn-taking, interruption, and tools. Learn the architecture and distinguish it from dictation and traditional phone bots."
 description: "A voice agent is speech-in, speech-out AI for real-time conversation. Learn the definition, architecture, and how it differs from dictation and phone bots."
 slug: "what-is-a-voice-agent"
 date: "2026-08-10"

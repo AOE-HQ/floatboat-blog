@@ -1,5 +1,7 @@
 ---
 title: "Gumloop Alternatives in 2026: What Else Is Worth Considering"
+seoTitle: "Gumloop Alternatives: Compare Workflow and Agent Options"
+seoDescription: "Gumloop alternatives include n8n, Make, Relay.app, and Lindy. Compare workflow fit, permissions, recovery, cost units, and migration through a repeatable pilot."
 description: "Compare Gumloop alternatives n8n, Make, Relay.app, and Lindy by workflow fit, permissions, recovery, cost units, migration risk, and a reproducible pilot."
 slug: "gumloop-alternatives-2026"
 date: "2026-03-24"

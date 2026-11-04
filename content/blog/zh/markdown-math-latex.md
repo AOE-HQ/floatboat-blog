@@ -1,5 +1,7 @@
 ---
 title: "Markdown 里的数学公式——到处能渲染的 LaTeX（以及渲染不了的地方）"
+seoTitle: "Markdown 数学公式：LaTeX 语法、渲染与兼容性指南"
+seoDescription: "Markdown 数学公式依赖 LaTeX 写法和渲染支持。了解美元符号语法、GitHub、Obsidian、Jekyll 的差异，比较 KaTeX 与 MathJax，并核对公式无法显示时可以采用的处理方法。"
 description: "Markdown 数学公式全解：美元符号 LaTeX 语法、GitHub/Obsidian/Jekyll 的渲染现状、KaTeX 与 MathJax 的分野，以及诚实的绕行方案。"
 slug: "markdown-math-latex"
 date: "2026-09-19"

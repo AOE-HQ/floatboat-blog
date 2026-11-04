@@ -1,5 +1,7 @@
 ---
 title: "Agent Harness 是什么？从执行循环到安全恢复"
+seoTitle: "Agent Harness：执行循环、上下文、审批与故障恢复"
+seoDescription: "Agent Harness 将模型决定连接到上下文、工具、沙箱、审批和恢复。沿执行循环理解各部分分工，再区分模型、Framework、Connector 与 Workspace，判断运行系统需要哪些控制机制。"
 description: "系统解释 Agent Harness 的架构：执行循环如何连接上下文、工具、沙箱、权限审批、可观测性与失败恢复，以及如何区别模型、Framework、Connector 和 Workspace。"
 slug: "what-is-an-agent-harness"
 date: "2026-10-09"

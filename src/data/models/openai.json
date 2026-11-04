@@ -2,46 +2,106 @@
   "slug": "openai",
   "name": "OpenAI",
   "access": "picker",
-  "badge": { "en": "OpenAI · Recorded chat entry", "zh": "OpenAI · 已有对话入口记录" },
+  "badge": {
+    "en": "OpenAI · Recorded chat entry",
+    "zh": "OpenAI · 已有对话入口记录"
+  },
   "summary": {
     "en": "Astra and image-generation entries sit alongside configured coding profiles and the newer Sol/Luna names now listed on the pricing page.",
     "zh": "目录同时包含 Astra、图像生成入口、代码型号配置记录，以及价格页新列出的 Sol/Luna 型号。"
   },
-  "seo": {"title":{"en":"OpenAI models: Astra, GPT-6 Sol, Luna, and GPT-6.1 Sol.","zh":"OpenAI 模型：Astra、GPT-6 Sol、Luna 与 GPT-6.1 Sol。"},"description":{"en":"Compare existing Astra and image-generation routes with the newer GPT names shown on Floatboat’s pricing page. Model generation, runtime ID, and account access are separate checks.","zh":"对照已有 Astra 和图像生成入口，以及 Floatboat 价格页新列出的 GPT 型号。模型代际、运行时 ID 和账号开放范围需要分别核对。"},"keywords":[{"en":"GPT-6 Astra","zh":"GPT-6 Astra"},{"en":"OpenAI models","zh":"OpenAI 模型"},{"en":"GPT-Image-2","zh":"GPT-Image-2"},{"en":"GPT-5.3 Codex","zh":"GPT-5.3 Codex"}]},
+  "seo": {
+    "title": {
+      "en": "OpenAI Models: GPT Generations, Runtime IDs, and Access",
+      "zh": "OpenAI 模型：GPT 代际、运行标识与实际接入范围"
+    },
+    "description": {
+      "en": "Compare Astra and image routes with newer GPT listings in Floatboat. Separate model generations, runtime IDs, and account access when planning reasoning or creative work.",
+      "zh": "比较已有 Astra、图像生成入口与 Floatboat 新列出的 GPT 型号，分别核对模型代际、运行标识和账户权限，再为推理、资料分析或创作任务选择实际可用的路径。"
+    },
+    "keywords": [
+      {
+        "en": "GPT-6 Astra",
+        "zh": "GPT-6 Astra"
+      },
+      {
+        "en": "OpenAI models",
+        "zh": "OpenAI 模型"
+      },
+      {
+        "en": "GPT-Image-2",
+        "zh": "GPT-Image-2"
+      },
+      {
+        "en": "GPT-5.3 Codex",
+        "zh": "GPT-5.3 Codex"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "OpenAI models: Astra, GPT-6 Sol, Luna, and GPT-6.1 Sol.",
-        "zh": "OpenAI 模型：Astra、GPT-6 Sol、Luna 与 GPT-6.1 Sol。"
+      "en": "OpenAI models: Astra, GPT-6 Sol, Luna, and GPT-6.1 Sol.",
+      "zh": "OpenAI 模型：Astra、GPT-6 Sol、Luna 与 GPT-6.1 Sol。"
     },
     "description": {
       "en": "Compare existing Astra and image-generation routes with the newer GPT names shown on Floatboat’s pricing page. Model generation, runtime ID, and account access are separate checks.",
       "zh": "对照已有 Astra 和图像生成入口，以及 Floatboat 价格页新列出的 GPT 型号。模型代际、运行时 ID 和账号开放范围需要分别核对。"
     },
     "prompts": [
-      { "en": "Reason through this decision", "zh": "推演这个决策" },
-      { "en": "Implement and verify this feature", "zh": "实现并验证这个功能" },
-      { "en": "Turn this brief into an image", "zh": "把这份简报变成图像" }
+      {
+        "en": "Reason through this decision",
+        "zh": "推演这个决策"
+      },
+      {
+        "en": "Implement and verify this feature",
+        "zh": "实现并验证这个功能"
+      },
+      {
+        "en": "Turn this brief into an image",
+        "zh": "把这份简报变成图像"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Inventory scope", "zh": "型号范围" },
-      "value": { "en": "Recorded routes + current pricing listings", "zh": "已有接入记录 + 当前价格页型号" }
+      "label": {
+        "en": "Inventory scope",
+        "zh": "型号范围"
+      },
+      "value": {
+        "en": "Recorded routes + current pricing listings",
+        "zh": "已有接入记录 + 当前价格页型号"
+      }
     },
     {
-      "label": { "en": "Live image model", "zh": "已上线图像型号" },
+      "label": {
+        "en": "Live image model",
+        "zh": "已上线图像型号"
+      },
       "value": {
         "en": "GPT-Image-2 via Combo",
         "zh": "GPT-Image-2 · 通过 Combo"
       }
     },
     {
-      "label": { "en": "Configured capacity", "zh": "已配置容量" },
-      "value": { "en": "GPT-5.6 Sol/Terra · GPT-5.3 Codex", "zh": "GPT-5.6 Sol/Terra · GPT-5.3 Codex" }
+      "label": {
+        "en": "Configured capacity",
+        "zh": "已配置容量"
+      },
+      "value": {
+        "en": "GPT-5.6 Sol/Terra · GPT-5.3 Codex",
+        "zh": "GPT-5.6 Sol/Terra · GPT-5.3 Codex"
+      }
     },
     {
-      "label": { "en": "API key", "zh": "API Key" },
-      "value": { "en": "Not required", "zh": "无需自备" }
+      "label": {
+        "en": "API key",
+        "zh": "API Key"
+      },
+      "value": {
+        "en": "Not required",
+        "zh": "无需自备"
+      }
     }
   ],
   "positioning": {
@@ -55,31 +115,52 @@
     },
     "traits": [
       {
-        "label": { "en": "Live role", "zh": "当前角色" },
-        "value": { "en": "Flagship reasoning", "zh": "旗舰推理" },
+        "label": {
+          "en": "Live role",
+          "zh": "当前角色"
+        },
+        "value": {
+          "en": "Flagship reasoning",
+          "zh": "旗舰推理"
+        },
         "description": {
           "en": "Astra handles complex instructions, decisions, and agent orchestration.",
           "zh": "Astra 处理复杂指令、决策与 Agent 编排。"
         }
       },
       {
-        "label": { "en": "Work style", "zh": "工作方式" },
-        "value": { "en": "Reasons before execution", "zh": "执行前充分推演" },
+        "label": {
+          "en": "Work style",
+          "zh": "工作方式"
+        },
+        "value": {
+          "en": "Reasons before execution",
+          "zh": "执行前充分推演"
+        },
         "description": {
           "en": "Best where the cost of a weak plan is high.",
           "zh": "适合薄弱方案会造成高成本后果的任务。"
         }
       },
       {
-        "label": { "en": "Visual lane", "zh": "视觉路径" },
-        "value": { "en": "Delivered through a Combo", "zh": "通过 Combo 承载" },
+        "label": {
+          "en": "Visual lane",
+          "zh": "视觉路径"
+        },
+        "value": {
+          "en": "Delivered through a Combo",
+          "zh": "通过 Combo 承载"
+        },
         "description": {
           "en": "GPT-Image-2 produces images rather than chat output.",
           "zh": "GPT-Image-2 生成图像，而不是作为文本对话型号出现。"
         }
       },
       {
-        "label": { "en": "Status discipline", "zh": "状态边界" },
+        "label": {
+          "en": "Status discipline",
+          "zh": "状态边界"
+        },
         "value": {
           "en": "Configuration and client access",
           "zh": "已配置不等于可选择"
@@ -290,28 +371,40 @@
     },
     "items": [
       {
-        "title": { "en": "Frontier reasoning", "zh": "旗舰推理" },
+        "title": {
+          "en": "Frontier reasoning",
+          "zh": "旗舰推理"
+        },
         "description": {
           "en": "GPT-6 Astra is selectable for complex reasoning and broad instruction following.",
           "zh": "GPT-6 Astra 可直接用于复杂推理与通用指令遵从。"
         }
       },
       {
-        "title": { "en": "Agent task execution", "zh": "Agent 任务执行" },
+        "title": {
+          "en": "Agent task execution",
+          "zh": "Agent 任务执行"
+        },
         "description": {
           "en": "Astra is positioned for deep Agent orchestration and architecture-level work.",
           "zh": "Astra 面向深度 Agent 编排与架构级工作。"
         }
       },
       {
-        "title": { "en": "Image generation", "zh": "图像生成" },
+        "title": {
+          "en": "Image generation",
+          "zh": "图像生成"
+        },
         "description": {
           "en": "GPT-Image-2 is live as the default high-quality model in `ai-image-drawing`.",
           "zh": "GPT-Image-2 已作为 `ai-image-drawing` 的默认高质量生图模型上线。"
         }
       },
       {
-        "title": { "en": "Prepared code capacity", "zh": "已准备的代码容量" },
+        "title": {
+          "en": "Prepared code capacity",
+          "zh": "已准备的代码容量"
+        },
         "description": {
           "en": "The older GPT-5.6 Sol/Terra and GPT-5.3 Codex entries are configuration records; newer GPT-6 Sol/Luna listings are separate.",
           "zh": "Sol、Terra 与 Codex 画像已配置，在旧记录中未对应选择器入口，当前应核对实际菜单。"

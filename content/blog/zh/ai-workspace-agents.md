@@ -1,5 +1,7 @@
 ---
 title: "什么是 AI 工作区 Agent？一篇大白话指南"
+seoTitle: "AI 工作区 Agent：文件、上下文与持续执行如何衔接"
+seoDescription: "AI 工作区 Agent 围绕文件、浏览器和工具执行任务，而不只在聊天框里回复。了解这类产品适合哪些工作，与聊天助手及工作流搭建器有何区别，以及使用前应确认哪些条件。"
 description: "AI 工作区 Agent（AI Workspace Agent）是能直接在你真实工作环境——文件、浏览器、工具——内部干活的一类新 AI。本文用大白话讲清它是什么、和聊天助手及工作流搭建器的区别、实际能做什么、又适合谁用。"
 slug: "ai-workspace-agents"
 date: "2026-04-23"

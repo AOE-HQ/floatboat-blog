@@ -1,5 +1,7 @@
 ---
 title: "Markdown 文件夹批量转换——一个文件变成一个文件夹之后"
+seoTitle: "Markdown 批量转换：处理文件夹并保留链接与结构"
+seoDescription: "批量转换 Markdown 文件夹时，需要同时处理输出格式、链接、目录与失败文件。比较 pandoc 脚本、GUI 工具和 AI 桌面流程，了解 PDF、Word、HTML 导出后的检查方法。"
 description: "整个文件夹的 markdown 一次性转成 PDF/Word/HTML 的三条路线：pandoc 脚本、GUI 批量工具、AI 桌面端处理，以及失败模式、验证清单与按规模的选型。"
 slug: "batch-convert-markdown-files"
 date: "2026-09-21"

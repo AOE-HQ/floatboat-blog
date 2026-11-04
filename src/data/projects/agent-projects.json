@@ -17,7 +17,7 @@
     ],
     "logo": "/blog/brand/agents/codex.svg",
     "en": {
-      "seoTitle": "Codex — Agent Workflow Design Guide | Floatboat",
+      "seoTitle": "Codex Open Source: Context, Tool Loops, and Agent Workflows",
       "description": "Study Codex’s open agent harness to improve your own workflows: connect tools to task context, carry state across steps, and define review boundaries. Use its runtime and integration design as a reference for work in Floatboat.",
       "kind": "Agent Harness",
       "overviewTitle": "About Codex",
@@ -107,10 +107,11 @@
             "description": "Test representative inputs and review the resulting evidence, changes, and failure behavior before expanding the workflow."
           }
         ]
-      }
+      },
+      "seoDescription": "Study Codex’s context handling, tool loop, and approval model. Compare CLI, SDK, and app-server roles when designing or extending your own agent workflows."
     },
     "zh": {
-      "seoTitle": "Codex — Agent 工作流构建与优化 | Floatboat",
+      "seoTitle": "Codex 开源项目：上下文、工具循环与 Agent 工作流",
       "description": "参考 Codex 的开放 Agent Harness，为自己的工作流设计工具连接、任务状态与审阅边界。围绕 Floatboat 中的资料处理、任务执行和结果交付，判断哪些运行机制与集成方式值得复用。",
       "kind": "Agent Harness",
       "overviewTitle": "关于 Codex",
@@ -200,7 +201,8 @@
             "description": "使用代表性输入测试完整过程，检查证据、修改与失败行为，再扩大工作流范围。"
           }
         ]
-      }
+      },
+      "seoDescription": "研究 Codex 的上下文处理、工具循环与审批机制，比较 CLI、SDK 和 app-server 的职责，为自己的 Agent 工作流选择可参考的执行方式，并核对模型与运行条件。"
     },
     "licenseUrl": "https://github.com/openai/codex/blob/main/LICENSE"
   },
@@ -221,7 +223,7 @@
       "moonshotai/kimi-code"
     ],
     "en": {
-      "seoTitle": "DeepSeek Harness — Agent Workflow Design Guide | Floatboat",
+      "seoTitle": "DeepSeek Harness: Plugins, Tool Composition, and Agent Runtimes",
       "description": "Use DeepSeek Harness as a reference for composing your own agent workflows. Study its plugin architecture to separate model access, tools, and task capabilities, then evaluate focused extensions for work organized in Floatboat.",
       "kind": "Agent Harness",
       "overviewTitle": "About DeepSeek Harness",
@@ -317,10 +319,11 @@
             "description": "Verify that a failed tool or changed plugin produces a visible result and a clear decision about the next step."
           }
         ]
-      }
+      },
+      "seoDescription": "Explore DeepSeek Harness’s plugin architecture and execution layer. Study capability composition, tool connections, and task handoffs before extending an agent workflow."
     },
     "zh": {
-      "seoTitle": "DeepSeek Harness — Agent 工作流构建与优化 | Floatboat",
+      "seoTitle": "DeepSeek Harness：插件、工具组合与 Agent 运行层",
       "description": "将 DeepSeek Harness 作为构建 Agent 工作流的参考，研究插件架构如何区分模型访问、工具与任务能力，再结合 Floatboat 中的工作需求评估可复用的扩展和组合方式。",
       "kind": "Agent Harness",
       "overviewTitle": "关于 DeepSeek Harness",
@@ -416,7 +419,8 @@
             "description": "确认工具失败或插件变化时能够暴露问题，并明确后续如何处理。"
           }
         ]
-      }
+      },
+      "seoDescription": "了解 DeepSeek Harness 的插件架构与执行层，研究能力组合、工具连接和任务交接机制，再判断如何扩展自己的 Agent 工作流；运行环境与模型服务仍需分别配置。"
     },
     "licenseUrl": "https://github.com/deepseek-ai/deepseek-harness/blob/master/LICENSE"
   },
@@ -440,7 +444,7 @@
     ],
     "articleSlug": "deepseek-dsh-superagent",
     "en": {
-      "seoTitle": "DSH Superagent Prototype — Agent Workflows | Floatboat",
+      "seoTitle": "DSH Superagent: GitHub Task Routing and Agent Delivery",
       "description": "Explore DeepSeek’s research prototype for turning authorized GitHub and Feishu requests into coding tasks. Study task routing, scoped execution, and reviewable delivery for your own agent workflows.",
       "kind": "Coding Agent Research Prototype",
       "overviewTitle": "About DSH Superagent Prototype",
@@ -538,10 +542,11 @@
             "description": "The default observe mode records inferred tasks it would accept without starting them; explicit requests still execute. Review decisions before enabling automatic acceptance under written rules."
           }
         ]
-      }
+      },
+      "seoDescription": "Examine DSH Superagent Prototype’s GitHub and optional Feishu request flow, scoped coding execution, and result delivery. Treat it as a research prototype, not a hosted service."
     },
     "zh": {
-      "seoTitle": "DSH Superagent Prototype：主动编程 Agent 工作流 | Floatboat",
+      "seoTitle": "DSH Superagent：GitHub 任务路由与 Agent 结果交付",
       "description": "了解 DeepSeek 的主动编程 Agent 研究原型，如何将 GitHub 与飞书中的授权请求转为任务。参考任务路由、范围管理和结果交付机制，构建或优化自己的 Agent 工作流。",
       "kind": "编程 Agent 研究原型",
       "overviewTitle": "关于 DSH Superagent Prototype",
@@ -639,7 +644,8 @@
             "description": "默认 observe 模式只记录本来会接受的推断任务，显式请求仍可执行。先检查决策记录，再根据书面规则启用推断任务的自动接受。"
           }
         ]
-      }
+      },
+      "seoDescription": "查看 DSH Superagent Prototype 的 GitHub 与可选飞书请求流程，了解任务路由、授权范围、编程执行和结果回传。它是研究原型，部署与运行条件需按上游说明核对。"
     }
   },
   {
@@ -659,7 +665,7 @@
       "zai-org/zcode"
     ],
     "en": {
-      "seoTitle": "Pi — Agent Workflow Design Guide | Floatboat",
+      "seoTitle": "Pi Agent Harness: Extensions, Runtime Libraries, and Task Design",
       "description": "Study Pi’s minimal agent core, extension packages, and reusable libraries to shape your own workflows. Compare where task instructions are enough, where runtime customization helps, and which execution boundaries your environment must provide.",
       "kind": "Agent Harness and Toolkit",
       "overviewTitle": "About Pi",
@@ -755,10 +761,11 @@
             "description": "Validate one package or component against a representative task before combining several additions."
           }
         ]
-      }
+      },
+      "seoDescription": "Study Pi’s minimal agent core, Skills, extensions, and runtime libraries. Choose the level of customization your workflow needs without assuming the host supplies every tool."
     },
     "zh": {
-      "seoTitle": "Pi — Agent 工作流构建与优化 | Floatboat",
+      "seoTitle": "Pi Agent Harness：扩展、运行基础库与任务设计",
       "description": "参考 Pi 的精简 Agent 核心、扩展包与基础库，设计适合自己的工作流。区分哪些问题可以通过任务说明解决，哪些需要运行层定制，以及执行环境应提供哪些边界。",
       "kind": "Agent Harness 与工具集",
       "overviewTitle": "关于 Pi",
@@ -854,7 +861,8 @@
             "description": "先针对代表任务验证一个包或组件，再组合更多能力。"
           }
         ]
-      }
+      },
+      "seoDescription": "研究 Pi 的精简 Agent 核心、Skills、扩展与运行基础库，按任务选择所需定制层级，了解模型、工具和宿主环境各自承担的职责，避免把扩展能力视为默认配置。"
     },
     "licenseUrl": "https://github.com/earendil-works/pi/blob/main/LICENSE"
   },
@@ -876,7 +884,7 @@
     ],
     "logo": "/blog/brand/agents/opencode.svg",
     "en": {
-      "seoTitle": "OpenCode — Agent Workflow Design Guide | Floatboat",
+      "seoTitle": "OpenCode: Coding-Agent Modes, Tool Feedback, and Review",
       "description": "Study OpenCode’s coding-agent workflow to improve how your own tasks move from investigation to changes and review. Use its interaction and extension design as references for development work organized in Floatboat.",
       "kind": "Open-source Coding Agent",
       "overviewTitle": "About OpenCode",
@@ -966,10 +974,11 @@
             "description": "Evaluate whether the workflow makes errors visible and gives the user enough evidence to accept or revise the change."
           }
         ]
-      }
+      },
+      "seoDescription": "Explore OpenCode’s task modes and execution feedback for repository investigation, implementation, and review. Keep the coding-agent runtime separate from model-service choices."
     },
     "zh": {
-      "seoTitle": "OpenCode — Agent 工作流构建与优化 | Floatboat",
+      "seoTitle": "OpenCode：编程 Agent 模式、工具反馈与审阅流程",
       "description": "参考 OpenCode 的编程 Agent 工作方式，优化自己的任务如何从代码理解进入修改与审阅。围绕 Floatboat 中的开发工作，研究交互、任务模式和扩展机制可以带来的流程改进。",
       "kind": "开源编程 Agent",
       "overviewTitle": "关于 OpenCode",
@@ -1059,7 +1068,8 @@
             "description": "评估流程能否暴露错误，并为用户接受或修订修改提供足够证据。"
           }
         ]
-      }
+      },
+      "seoDescription": "了解 OpenCode 的任务模式与工具反馈，研究仓库调查、修改实施和结果审阅如何衔接。区分编程 Agent 运行层与模型服务，为自己的开发流程选择适合的执行机制。"
     },
     "licenseUrl": "https://github.com/anomalyco/opencode/blob/dev/LICENSE"
   },
@@ -1080,7 +1090,7 @@
       "deepseek-ai/deepseek-harness"
     ],
     "en": {
-      "seoTitle": "Hermes Agent — Agent Workflow Design Guide | Floatboat",
+      "seoTitle": "Hermes Agent: Persistent Memory, Skills, and Scheduled Work",
       "description": "Use Hermes Agent as a reference for workflows that continue across sessions. Study how memory, procedural Skills, tool connections, and scheduling can help organize reusable task knowledge and recurring work in your own environment.",
       "kind": "Persistent Agent System",
       "overviewTitle": "About Hermes Agent",
@@ -1170,10 +1180,11 @@
             "description": "Check whether the workflow stays accurate as inputs change, rather than judging it from one successful run."
           }
         ]
-      }
+      },
+      "seoDescription": "Inspect Hermes Agent’s memory, reusable Skills, tools, and scheduling. Consider how context continuity and stored procedures can support recurring work in your own system."
     },
     "zh": {
-      "seoTitle": "Hermes Agent — Agent 工作流构建与优化 | Floatboat",
+      "seoTitle": "Hermes Agent：持续记忆、Skills 与调度任务机制",
       "description": "参考 Hermes Agent 的记忆、程序性 Skills、工具连接与调度方式，设计能够跨会话继续推进的工作流，为自己的任务保留必要背景、沉淀方法并组织重复工作。",
       "kind": "持续工作 Agent 系统",
       "overviewTitle": "关于 Hermes Agent",
@@ -1263,7 +1274,8 @@
             "description": "检查输入变化后流程是否仍准确，而非只凭一次成功判断效果。"
           }
         ]
-      }
+      },
+      "seoDescription": "研究 Hermes Agent 的记忆、可复用 Skills、工具与调度，了解上下文延续和方法存储如何支持重复工作，再结合自己的任务与环境判断持续执行和人工审阅方式。"
     },
     "licenseUrl": "https://github.com/NousResearch/hermes-agent/blob/main/LICENSE"
   },
@@ -1284,7 +1296,7 @@
       "earendil-works/pi"
     ],
     "en": {
-      "seoTitle": "Kimi Code CLI — Agent Workflow Design Guide | Floatboat",
+      "seoTitle": "Kimi Code CLI: Subagents, Hooks, and Coding Workflow Handoffs",
       "description": "Study Kimi Code CLI’s tool loop, focused subagents, lifecycle hooks, and editor protocol as references for your own workflows. Use them to clarify task roles, execution checks, and context handoffs around work in Floatboat.",
       "kind": "Terminal Coding Agent",
       "overviewTitle": "About Kimi Code CLI",
@@ -1380,10 +1392,11 @@
             "description": "Check whether each stage gets enough relevant information without carrying unrelated conversation history into every step."
           }
         ]
-      }
+      },
+      "seoDescription": "Study Kimi Code CLI’s subagents, hooks, and tool-feedback loop. Design clearer roles, context handoffs, and execution checks while separating runtime setup from model access."
     },
     "zh": {
-      "seoTitle": "Kimi Code CLI — Agent 工作流构建与优化 | Floatboat",
+      "seoTitle": "Kimi Code CLI：子 Agent、Hooks 与编程任务交接",
       "description": "参考 Kimi Code CLI 的工具循环、子 Agent、生命周期 hooks 与编辑器协议，为自己的工作流划分任务职责、设置执行检查，并改善 Floatboat 中各环节的上下文交接。",
       "kind": "终端编程 Agent",
       "overviewTitle": "关于 Kimi Code CLI",
@@ -1479,7 +1492,8 @@
             "description": "检查各阶段是否获得足够相关信息，同时避免每一步都携带无关对话历史。"
           }
         ]
-      }
+      },
+      "seoDescription": "研究 Kimi Code CLI 的子 Agent、hooks 与工具反馈循环，为自己的编程工作设计职责、上下文交接和执行检查，并分别核对运行配置、模型接入及相关使用条件。"
     },
     "licenseUrl": "https://github.com/MoonshotAI/kimi-code/blob/main/LICENSE"
   },
@@ -1500,7 +1514,7 @@
       "anomalyco/opencode"
     ],
     "en": {
-      "seoTitle": "ZCode — Agent Workflow Design Guide | Floatboat",
+      "seoTitle": "ZCode: Coding Workbench, Harness Layers, and Human Review",
       "description": "Study ZCode’s workbench and agent-runtime design to improve your own workflows. Use its interface separation and public source as references for organizing task context, execution feedback, and human review around work in Floatboat.",
       "kind": "Coding Workbench and Harness",
       "overviewTitle": "About ZCode",
@@ -1596,10 +1610,11 @@
             "description": "Test one task from input to a reviewable result before expanding the workflow across more tools or interfaces."
           }
         ]
-      }
+      },
+      "seoDescription": "Explore ZCode’s coding workbench and runtime layers. Connect task context, tool execution, and human review while keeping interface, harness, and model-provider roles clear."
     },
     "zh": {
-      "seoTitle": "ZCode — Agent 工作流构建与优化 | Floatboat",
+      "seoTitle": "ZCode：编程工作台、Harness 分层与人工审阅",
       "description": "参考 ZCode 的工作台与 Agent 运行时设计，优化自己工作流中的任务背景、执行反馈和人工审阅。结合公开源码与不同交互入口，评估适合 Floatboat 工作方式的组织机制。",
       "kind": "编程工作台与 Harness",
       "overviewTitle": "关于 ZCode",
@@ -1695,7 +1710,8 @@
             "description": "先验证一个任务从输入到可审阅结果的完整过程，再扩展工具与交互入口。"
           }
         ]
-      }
+      },
+      "seoDescription": "了解 ZCode 编程工作台与运行层的分工，研究任务背景、工具执行和人工审阅怎样衔接，区分交互界面、Harness 与模型服务，为多步骤工作流选择可参考的机制。"
     },
     "licenseUrl": "https://github.com/zai-org/ZCode/blob/main/LICENSE"
   },
@@ -1717,7 +1733,7 @@
       "anomalyco/opencode"
     ],
     "en": {
-      "seoTitle": "Ponytail — Coding Agent Skills and Review Workflows | Floatboat",
+      "seoTitle": "Ponytail: Reuse-First Coding Rules, Reviews, and Agent Plugins",
       "description": "Ponytail adds reuse-first coding instructions, change review, and repository audits to existing agents. Explore how its rules can reduce unnecessary implementation while keeping tests, security, and accessibility in the workflow.",
       "kind": "Coding Skill / Plugin",
       "overviewTitle": "About Ponytail",
@@ -1813,10 +1829,11 @@
             "description": "Compare accepted behavior, changed code, useful tests, and review findings on the same task. Report unverified behavior rather than treating a shorter diff as success."
           }
         ]
-      }
+      },
+      "seoDescription": "Apply Ponytail’s reuse-first coding approach to existing agents. Review host-specific plugins, portable rules, change checks, and repository audits before adapting the workflow."
     },
     "zh": {
-      "seoTitle": "Ponytail：编程 Agent Skill、代码复用与审查 | Floatboat",
+      "seoTitle": "Ponytail：优先复用的编码规则、修改审查与 Agent 插件",
       "description": "Ponytail 为现有编程 Agent 提供优先复用、修改审查与仓库审计规则。了解如何减少不必要的实现，同时保留测试、安全和无障碍要求，为自己的代码工作流明确改动范围与验收标准。",
       "kind": "编程 Skill / 插件",
       "overviewTitle": "关于 Ponytail",
@@ -1912,7 +1929,8 @@
             "description": "用同一任务检查实际行为、代码变更、有效测试与审查发现。未核实的部分应明确指出，不能只凭 diff 更短判断完成。"
           }
         ]
-      }
+      },
+      "seoDescription": "了解 Ponytail 面向现有编程 Agent 的优先复用规则、修改审查与仓库审计，区分宿主插件和可移植指引，再根据实际加载方式调整自己的开发任务与检查流程。"
     }
   },
   {
@@ -1933,7 +1951,7 @@
       "openai/codex"
     ],
     "en": {
-      "seoTitle": "MausBot / OpenMausBot — Multi-Agent Workflow Design | Floatboat",
+      "seoTitle": "MausBot: Role-Based Local Agents, Channels, and Approval",
       "description": "MausBot, published as OpenMausBot, organizes local agent engines as a team of chat contacts. Explore its role-based channels, execution events, and approval flow to design clearer handoffs and reusable team workflows.",
       "kind": "Multi-Agent Desktop App",
       "overviewTitle": "About MausBot and OpenMausBot",
@@ -2023,10 +2041,11 @@
             "description": "Review what the team file contains and which actions require consent. A shared playbook should not be treated as a transfer of credentials or computer access."
           }
         ]
-      }
+      },
+      "seoDescription": "Study MausBot’s desktop coordination of local agent engines, role-based bots, and shared channels. Examine execution events and approval before planning collaborative tasks."
     },
     "zh": {
-      "seoTitle": "MausBot / OpenMausBot：多 Agent 工作流设计 | Floatboat",
+      "seoTitle": "MausBot：角色化本地 Agent、共享频道与人工审批",
       "description": "MausBot 以 OpenMausBot 发布，将本地 Agent 引擎组织为聊天式团队。了解角色频道、执行事件与人工审批，借鉴共享上下文和团队包的设计，为自己的工作流明确分工、交接与执行环境。",
       "kind": "多 Agent 桌面应用",
       "overviewTitle": "关于 MausBot 与 OpenMausBot",
@@ -2116,7 +2135,8 @@
             "description": "检查共享文件包含什么，以及哪些动作需要确认。操作手册不能被当作凭证或电脑访问权的转移。"
           }
         ]
-      }
+      },
+      "seoDescription": "研究 MausBot 桌面应用如何协调本地 Agent 引擎、角色与共享频道，查看执行事件和人工审批的作用，为协作任务安排职责与交接，而不是把聊天界面当作完整执行环境。"
     }
   },
   {
@@ -2137,7 +2157,7 @@
       "anomalyco/opencode"
     ],
     "en": {
-      "seoTitle": "Agent Desktop by Vercel Labs — Desktop Automation for Agents | Floatboat",
+      "seoTitle": "Agent Desktop: Accessibility Trees, App Actions, and Verification",
       "description": "Agent Desktop exposes desktop apps through operating-system accessibility trees. Explore Vercel Labs’ CLI and C library to design observe–act–verify workflows, handle stale element references, and check platform permissions before automating a task.",
       "kind": "Desktop Automation Tool",
       "overviewTitle": "About Vercel Labs’ Agent Desktop",
@@ -2227,10 +2247,11 @@
             "description": "Snapshots, clipboard contents, screenshots, and traces can contain private material. Keep the collected evidence scoped to the task and check any optional model-backed helper separately."
           }
         ]
-      }
+      },
+      "seoDescription": "Study Vercel Labs Agent Desktop’s accessibility-tree approach to reading and operating apps. Examine scoped element references and observe–act–verify loops for desktop tasks."
     },
     "zh": {
-      "seoTitle": "Vercel Labs Agent Desktop：Agent 桌面自动化工具 | Floatboat",
+      "seoTitle": "Agent Desktop：无障碍树、应用操作与结果验证",
       "description": "Agent Desktop 通过操作系统无障碍树读取并操作桌面应用。了解 Vercel Labs 的 CLI 与 C 库，围绕观察、操作和验证设计桌面工作流，处理失效元素引用，并核对不同平台的权限与能力边界。",
       "kind": "桌面自动化工具",
       "overviewTitle": "关于 Vercel Labs Agent Desktop",
@@ -2320,7 +2341,8 @@
             "description": "快照、剪贴板、截图与跟踪记录可能包含私人资料，应只采集任务所需证据，并单独检查可选模型辅助功能的数据流向。"
           }
         ]
-      }
+      },
+      "seoDescription": "研究 Vercel Labs Agent Desktop 通过无障碍树读取和操作应用的方法，了解元素引用范围及观察、操作、验证循环，为桌面任务安排可检查步骤，并核对平台与运行要求。"
     }
   },
   {
@@ -2341,7 +2363,7 @@
       "milind-soni/mausbot"
     ],
     "en": {
-      "seoTitle": "ComfyUI — Reusable Node-Based Generative Workflows | Floatboat",
+      "seoTitle": "ComfyUI Workflows: Nodes, Model Dependencies, and Media Creation",
       "description": "ComfyUI turns generative-media steps into reusable node graphs. Explore workflow JSON, model and custom-node dependencies, queued execution, and API handoffs to design a visual-production process with inspectable inputs and outputs.",
       "kind": "Visual Workflow Engine",
       "overviewTitle": "About ComfyUI",
@@ -2437,10 +2459,11 @@
             "description": "Load the workflow, resolve its dependencies, run a representative input, and inspect the saved result before automating a batch."
           }
         ]
-      }
+      },
+      "seoDescription": "Build reusable image and video workflows with ComfyUI nodes. Understand model and custom-node dependencies, preserve workflow settings, and inspect outputs before reuse."
     },
     "zh": {
-      "seoTitle": "ComfyUI：可复用的节点式生成工作流 | Floatboat",
+      "seoTitle": "ComfyUI 工作流：节点编排、模型依赖与生成媒体制作",
       "description": "ComfyUI 将生成媒体的步骤组织为可复用节点图。了解工作流 JSON、模型与自定义节点依赖、任务队列和 API 交接，为视觉生产流程明确输入、处理步骤与结果验收。",
       "kind": "视觉工作流引擎",
       "overviewTitle": "关于 ComfyUI",
@@ -2536,7 +2559,8 @@
             "description": "加载工作流、补齐依赖、执行代表性输入并检查保存结果，再扩展到批量任务。"
           }
         ]
-      }
+      },
+      "seoDescription": "将图像与视频生成组织为可复用节点流程，了解 ComfyUI 的模型、自定义节点和运行依赖，记录配置并检查实际输出，为后续制作和协作保留可追溯的项目资料。"
     }
   },
   {
@@ -2557,7 +2581,7 @@
       "dietrichgebert/ponytail"
     ],
     "en": {
-      "seoTitle": "Graphify — Code Knowledge Graphs for Agent Workflows | Floatboat",
+      "seoTitle": "Graphify: Code Knowledge Graphs, Provenance, and Agent Context",
       "description": "Graphify maps code and supporting material into a queryable knowledge graph. Explore the local CLI and its agent Skill together, distinguish extracted links from inferred relationships, and use source-backed context for repository investigations.",
       "kind": "Knowledge Graph Tool + Skill",
       "overviewTitle": "About Graphify",
@@ -2653,10 +2677,11 @@
             "description": "Rebuild or update after relevant source changes, and check the actual code before accepting a graph-derived claim."
           }
         ]
-      }
+      },
+      "seoDescription": "Build queryable code graphs with Graphify’s local CLI and agent guidance. Keep relationships tied to source evidence and revisions when investigating a repository."
     },
     "zh": {
-      "seoTitle": "Graphify：面向 Agent 工作流的代码知识图谱 | Floatboat",
+      "seoTitle": "Graphify：代码知识图谱、关系来源与 Agent 上下文",
       "description": "Graphify 将代码和配套资料整理为可查询知识图谱。一起了解本地 CLI 与 Agent Skill，区分提取到的连接和推断关系，为仓库调查提供可以回到源文件核对的上下文。",
       "kind": "知识图谱工具＋Skill",
       "overviewTitle": "关于 Graphify",
@@ -2752,7 +2777,8 @@
             "description": "相关源文件变化后更新图谱，接受图谱导出的结论前再次检查实际代码。"
           }
         ]
-      }
+      },
+      "seoDescription": "通过 Graphify 本地 CLI 与 Agent 指引构建可查询代码图谱，调查仓库关系时保留证据来源和代码版本，区分图谱结果与推测，为项目理解和后续任务提供可核对上下文。"
     }
   },
   {
@@ -2773,7 +2799,7 @@
       "openai/codex"
     ],
     "en": {
-      "seoTitle": "Orca — Parallel Coding Agents and Worktree Review | Floatboat",
+      "seoTitle": "Orca: Parallel Coding Agents, Worktrees, and Review Loops",
       "description": "Orca brings multiple coding agents into one workspace, with separate Git worktrees and a shared review interface. Study task isolation, parallel comparisons, and diff feedback to organize agent work without confusing simultaneous execution with a verified result.",
       "kind": "Multi-Agent Development Workspace",
       "overviewTitle": "About Orca",
@@ -2869,10 +2895,11 @@
             "description": "Choose the accepted change, run checks on the combined revision, and keep the merge decision explicit rather than equating task completion with approval."
           }
         ]
-      }
+      },
+      "seoDescription": "Coordinate coding agents in separate worktrees with Orca. Compare their changes, review findings, and feed bounded follow-up tasks back into the development workflow."
     },
     "zh": {
-      "seoTitle": "Orca：并行编程 Agent 与 Worktree 审阅 | Floatboat",
+      "seoTitle": "Orca：并行编程 Agent、独立 Worktree 与审阅循环",
       "description": "Orca 将多个编程 Agent 放进同一工作台，通过独立 Git worktree 和统一审阅界面组织任务。了解任务隔离、并行方案比较与 diff 反馈，为自己的工作流明确执行分工和最终验收。",
       "kind": "多 Agent 开发工作台",
       "overviewTitle": "关于 Orca",
@@ -2968,7 +2995,8 @@
             "description": "选择接受的修改后，对组合版本运行检查，并保留明确的合并决定，不能把任务完成等同于获准发布。"
           }
         ]
-      }
+      },
+      "seoDescription": "用 Orca 在独立 worktree 中组织并行编程 Agent，比较各自修改并审查问题，将发现转成范围明确的后续任务；了解隔离执行、结果整合与人工判断的分工。"
     }
   }
 ]

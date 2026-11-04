@@ -1,5 +1,7 @@
 ---
 title: "AI Follow-Up Emails After Meetings"
+seoTitle: "AI Follow-Up Emails: Meeting Summaries, Actions, and Next Steps"
+seoDescription: "AI follow-up emails need evidence-backed decisions, owners, and dates. Evaluate Claude Opus 4.8 separately and review recipients, sensitive content, and commitments before sending."
 description: "Learn how to turn authorized meeting evidence into an AI follow-up email draft, evaluate Claude Opus 4.8 independently, and review commitments before sending."
 slug: "ai-follow-up-email-opus-4-8"
 date: "2026-06-07"

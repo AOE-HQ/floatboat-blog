@@ -1,5 +1,7 @@
 ---
 title: "Gemini 3.8 Flash——谷歌新的编程与 Agent 主力模型"
+seoTitle: "Gemini 3.8 Flash：编程、Agent 任务与模型定位"
+seoDescription: "Gemini 3.8 Flash 的变化不只是版本号。比较相对 3.7 的思考档位、工具行为、token 代价和限制，核对模型 ID 与价格时效，再通过真实工作负载测试安排路由。"
 description: "解释 Gemini 3.8 Flash 相比 3.7 的真实变化，覆盖准确 ID、1M 上下文、thinking level、限时价格、工具行为、token 代价、版本限制与可复现任务路由测试。"
 slug: "gemini-3-8-flash"
 date: "2026-09-03"

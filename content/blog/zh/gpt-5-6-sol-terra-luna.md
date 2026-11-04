@@ -1,5 +1,7 @@
 ---
 title: "GPT-5.6 Sol、Terra 与 Luna：当前价格与选型方法"
+seoTitle: "GPT-5.6 Sol、Terra 与 Luna：价格、能力与选型比较"
+seoDescription: "按价格、长上下文、推理档位和工具支持比较 GPT-5.6 Sol、Terra 与 Luna，区分预览报价、后续调价及 GPT-6 发布后的定位，再根据实际工作负载选择模型。"
 description: "按当前 API 价格、长上下文溢价、推理档位、工具支持和真实工作负载，对比 GPT-5.6 Sol、Terra 与 Luna，并区分发布预览价、后续调价和 GPT-6 上线后的选型位置。"
 slug: "gpt-5-6-sol-terra-luna"
 date: "2026-07-10"

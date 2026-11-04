@@ -1,5 +1,7 @@
 ---
 title: "AI Agents for Solo Operators: Five Paths and a Pilot Plan"
+seoTitle: "AI Agents for Solo Operators: Five Paths and a Pilot Plan"
+seoDescription: "AI agents for solo operators span workspaces, managed runtimes, builders, workflows, and self-hosting. Compare the five paths with one task-based pilot and cost model."
 description: "Choose an AI agent by comparing workspace agents, managed agents, SaaS builders, workflow automation, and self-hosting with one repeatable pilot."
 slug: "ai-agent-solo-operators"
 date: "2026-04-15"

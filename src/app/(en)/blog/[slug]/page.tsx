@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -47,12 +48,12 @@ export async function generateMetadata({
   const og = openGraphLocale("en");
 
   return {
-    title: post.title,
-    description: post.description,
+    title: { absolute: seoTitle(post.seoTitle ?? post.title) },
+    description: post.seoDescription ?? post.description,
     alternates: buildPostLanguageAlternates(slug),
     openGraph: {
-      title: post.title,
-      description: post.description,
+      title: seoTitle(post.seoTitle ?? post.title),
+      description: post.seoDescription ?? post.description,
       url: canonical,
       type: "article",
       siteName: postOgSiteName(),

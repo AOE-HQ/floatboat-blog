@@ -1,3 +1,4 @@
+import { getArchiveSearchCopy } from "@/lib/blog-archive-metadata";
 import { FaqBand } from "@/components/faq-band";
 import { getCategoryFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
@@ -41,15 +42,17 @@ export async function generateMetadata({
     return {};
   }
 
-  const categoryName = CATEGORY_LABELS_ZH[slug] ?? posts[0]?.category ?? slug;
   const canonical = helpers.absoluteUrl(helpers.categoryPath(slug));
 
+  const search = getArchiveSearchCopy("category", slug, "zh");
+
   return {
-    title: `${categoryName} | 博客`,
-    description: `${categoryName} 分类下的文章。`,
+    title: { absolute: search.title },
+    description: search.description,
     alternates: { canonical },
     openGraph: {
-      title: `${categoryName} | 博客`,
+      title: search.title,
+      description: search.description,
       url: canonical,
       type: "website",
       locale: "zh_CN",

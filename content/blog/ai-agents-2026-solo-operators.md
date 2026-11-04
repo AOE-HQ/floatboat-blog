@@ -1,5 +1,7 @@
 ---
 title: "AI Agents in 2026: What Solo Operators Actually Need to Know"
+seoTitle: "AI Agents in 2026: A Practical Guide for Solo Operators"
+seoDescription: "AI agents in 2026 bring new tools, protocols, and governance questions. Follow a source-based timeline and a four-stage pilot designed for solo-operator task selection."
 description: "A primary-source timeline of AI agents in 2026, with task-fit, risk and tool-selection guidance plus a four-stage pilot for solo operators."
 slug: "ai-agents-2026-solo-operators"
 date: "2026-04-07"

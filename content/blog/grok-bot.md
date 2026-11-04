@@ -1,5 +1,7 @@
 ---
 title: "What Is Grok Bot? xAI's Cloud-Computer Agent Explained"
+seoTitle: "Grok Bot: How xAI’s Cloud-Computer Agent Handles Work"
+seoDescription: "Grok Bot uses a cloud computer, routines, and multi-bot coordination beyond Grok chat. Check X integration, access, and approval boundaries before connecting real work accounts."
 description: "Grok Bot explained: how its always-on cloud computer, routines, multi-bot coordination, X integration, access model, and approval boundaries differ from Grok chat."
 slug: "grok-bot"
 date: "2026-08-14"

@@ -2,8 +2,8 @@
   "slug": "coworker",
   "locale": "zh",
   "seo": {
-    "title": "Floatboat Coworker：可委派任务的 AI Work Agent",
-    "description": "把边界明确的任务交给 AI Work Agent，让它使用获授权的文件和工具完成工作，并返回可审阅的交付物。",
+    "title": "Work Agent：任务委派、成果审阅与持续执行",
+    "description": "将范围明确的任务与相关文件、工具交给 Floatboat Work Agent，检查可编辑输出并继续反馈，让执行衔接已有项目背景，重要决定和后续行动仍由人审阅与控制。",
     "keywords": [
       "AI Work Agent",
       "AI Coworker",

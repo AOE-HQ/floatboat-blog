@@ -2,23 +2,56 @@
   "slug": "seedance",
   "name": "Seedance",
   "access": "combo",
-  "badge": { "en": "ByteDance · Live Combo", "zh": "字节跳动 · Combo 已上线" },
+  "badge": {
+    "en": "ByteDance · Live Combo",
+    "zh": "字节跳动 · Combo 已上线"
+  },
   "summary": {
     "en": "Seedance 2.5 is publicly listed, while 2.0 and 2.0 Fast have documented built-in video Combo routes.",
     "zh": "Seedance 2.5 已公开列出，2.0 与 2.0 Fast 则保留已记录的内置视频 Combo 入口。"
   },
-  "seo": {"title":{"en":"Seedance 2.5 and 2.0 video model availability.","zh":"Seedance 2.5 与 2.0 视频模型及使用入口。"},"description":{"en":"Seedance 2.5 is now listed on Floatboat’s pricing page. The recorded video Combo uses 2.0 and 2.0 Fast; verify the engine and inputs before assuming the same route supports the newer version.","zh":"Floatboat 价格页已列出 Seedance 2.5。已有视频 Combo 记录使用 2.0 和 2.0 Fast，选用新版前应核对实际引擎和输入方式。"},"keywords":[{"en":"Seedance 2.0","zh":"Seedance 2.0"},{"en":"AI video generator","zh":"AI 视频生成"},{"en":"text to video","zh":"文生视频"},{"en":"image to video","zh":"图生视频"}]},
+  "seo": {
+    "title": {
+      "en": "Seedance Video Models: Version Listings and Combo Engine Checks",
+      "zh": "Seedance 视频模型：版本展示与 Combo 引擎核对"
+    },
+    "description": {
+      "en": "Compare the Seedance 2.5 listing with recorded 2.0 and 2.0 Fast video Combos. Verify the engine, supported inputs, and output path before assuming newer-version access.",
+      "zh": "对照 Seedance 2.5 展示与已有 2.0、2.0 Fast 视频 Combo 记录，检查实际引擎、支持输入和输出路径，区分版本介绍、已配置工作流与新版的真实接入条件。"
+    },
+    "keywords": [
+      {
+        "en": "Seedance 2.0",
+        "zh": "Seedance 2.0"
+      },
+      {
+        "en": "AI video generator",
+        "zh": "AI 视频生成"
+      },
+      {
+        "en": "text to video",
+        "zh": "文生视频"
+      },
+      {
+        "en": "image to video",
+        "zh": "图生视频"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "Seedance 2.5 and 2.0 video model availability.",
-        "zh": "Seedance 2.5 与 2.0 视频模型及使用入口。"
+      "en": "Seedance 2.5 and 2.0 video model availability.",
+      "zh": "Seedance 2.5 与 2.0 视频模型及使用入口。"
     },
     "description": {
       "en": "Seedance 2.5 is now listed on Floatboat’s pricing page. The recorded video Combo uses 2.0 and 2.0 Fast; verify the engine and inputs before assuming the same route supports the newer version.",
       "zh": "Floatboat 价格页已列出 Seedance 2.5。已有视频 Combo 记录使用 2.0 和 2.0 Fast，选用新版前应核对实际引擎和输入方式。"
     },
     "prompts": [
-      { "en": "Generate video from this brief", "zh": "根据简报生成视频" },
+      {
+        "en": "Generate video from this brief",
+        "zh": "根据简报生成视频"
+      },
       {
         "en": "Animate these first and last frames",
         "zh": "根据首尾帧生成动画"
@@ -27,29 +60,44 @@
   },
   "facts": [
     {
-      "label": { "en": "Inventory scope", "zh": "型号范围" },
+      "label": {
+        "en": "Inventory scope",
+        "zh": "型号范围"
+      },
       "value": {
         "en": "Recorded routes + current pricing listings",
         "zh": "已有接入记录 + 当前价格页型号"
       }
     },
     {
-      "label": { "en": "Access", "zh": "使用入口" },
+      "label": {
+        "en": "Access",
+        "zh": "使用入口"
+      },
       "value": {
         "en": "seedance-video-generator Combo",
         "zh": "seedance-video-generator Combo"
       }
     },
     {
-      "label": { "en": "Generation modes", "zh": "生成方式" },
+      "label": {
+        "en": "Generation modes",
+        "zh": "生成方式"
+      },
       "value": {
         "en": "Text · Image · First/last frame",
         "zh": "文本 · 图片 · 首尾帧"
       }
     },
     {
-      "label": { "en": "Audio", "zh": "音频" },
-      "value": { "en": "Synchronized audio supported", "zh": "支持同步音频" }
+      "label": {
+        "en": "Audio",
+        "zh": "音频"
+      },
+      "value": {
+        "en": "Synchronized audio supported",
+        "zh": "支持同步音频"
+      }
     }
   ],
   "positioning": {
@@ -63,23 +111,38 @@
     },
     "traits": [
       {
-        "label": { "en": "Full model", "zh": "完整型号" },
-        "value": { "en": "Prioritizes finished output", "zh": "优先成片质量" },
+        "label": {
+          "en": "Full model",
+          "zh": "完整型号"
+        },
+        "value": {
+          "en": "Prioritizes finished output",
+          "zh": "优先成片质量"
+        },
         "description": {
           "en": "Use when motion, frame control, and audio belong in the final deliverable.",
           "zh": "当运动、帧控制与音频都属于最终交付物时使用。"
         }
       },
       {
-        "label": { "en": "Fast model", "zh": "Fast 型号" },
-        "value": { "en": "Prioritizes iteration", "zh": "优先迭代速度" },
+        "label": {
+          "en": "Fast model",
+          "zh": "Fast 型号"
+        },
+        "value": {
+          "en": "Prioritizes iteration",
+          "zh": "优先迭代速度"
+        },
         "description": {
           "en": "Use for drafts, shot exploration, and storyboard clips.",
           "zh": "用于草稿、镜头探索与分镜片段。"
         }
       },
       {
-        "label": { "en": "Control", "zh": "可控性" },
+        "label": {
+          "en": "Control",
+          "zh": "可控性"
+        },
         "value": {
           "en": "Works from frames and briefs",
           "zh": "从画面与简报出发"
@@ -90,8 +153,14 @@
         }
       },
       {
-        "label": { "en": "Product surface", "zh": "产品入口" },
-        "value": { "en": "Dedicated Combo", "zh": "专用 Combo" },
+        "label": {
+          "en": "Product surface",
+          "zh": "产品入口"
+        },
+        "value": {
+          "en": "Dedicated Combo",
+          "zh": "专用 Combo"
+        },
         "description": {
           "en": "The engines do not appear in the main chat dropdown.",
           "zh": "这些引擎不会出现在主对话下拉菜单中。"
@@ -226,28 +295,40 @@
     },
     "items": [
       {
-        "title": { "en": "Text-to-video", "zh": "文生视频" },
+        "title": {
+          "en": "Text-to-video",
+          "zh": "文生视频"
+        },
         "description": {
           "en": "Turns a shot description into a generated moving sequence.",
           "zh": "将镜头描述转换为生成的视频序列。"
         }
       },
       {
-        "title": { "en": "Image-to-video", "zh": "图生视频" },
+        "title": {
+          "en": "Image-to-video",
+          "zh": "图生视频"
+        },
         "description": {
           "en": "Uses a source image as the visual basis for motion.",
           "zh": "以源图片作为动态生成的视觉基础。"
         }
       },
       {
-        "title": { "en": "First and last frame control", "zh": "首尾帧控制" },
+        "title": {
+          "en": "First and last frame control",
+          "zh": "首尾帧控制"
+        },
         "description": {
           "en": "Defines the visual start and end points of the generated shot.",
           "zh": "定义生成镜头的视觉起点与终点。"
         }
       },
       {
-        "title": { "en": "Synchronized audio", "zh": "同步音频" },
+        "title": {
+          "en": "Synchronized audio",
+          "zh": "同步音频"
+        },
         "description": {
           "en": "Supports video generation where sound belongs to the resulting sequence.",
           "zh": "支持生成包含同步声音的视频结果。"

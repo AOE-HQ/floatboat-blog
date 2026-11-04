@@ -1,5 +1,7 @@
 ---
 title: "How to Convert Markdown to PDF — Three Ways Ranked by Friction"
+seoTitle: "Markdown to PDF: Three Conversion Methods and Their Trade-Offs"
+seoDescription: "Markdown-to-PDF conversion can use a browser tool, pandoc, or an editor export. Compare setup effort and fix table overflow, clipped code, LaTeX dependencies, and missing fonts."
 description: "Convert Markdown to PDF via a free no-install browser tool, pandoc on the command line, or editor plugins — with fixes for broken tables, code, and fonts."
 slug: "how-to-convert-markdown-to-pdf"
 date: "2026-09-12"

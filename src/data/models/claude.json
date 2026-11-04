@@ -10,41 +10,98 @@
     "en": "Opus 5.5 and Sonnet 5.5 are listed on the pricing page; earlier 4.6 selector and 5-series capacity records remain separate.",
     "zh": "价格页已列出 Opus 5.5 和 Sonnet 5.5；旧的 4.6 选择器与 5 系容量记录分别保留。"
   },
-  "seo": {"title":{"en":"Claude models: Opus 5.5, Sonnet 5.5, and earlier versions.","zh":"Claude 模型：Opus 5.5、Sonnet 5.5 与更早版本。"},"description":{"en":"Explore the Claude 5.5 names shown on Floatboat’s pricing page alongside earlier Opus, Sonnet, and Fable records. Check the client menu before treating a listed version as selectable.","zh":"了解 Floatboat 价格页已展示的 Claude 5.5 型号，以及更早的 Opus、Sonnet 和 Fable 记录。使用前查看客户端菜单，区分公开列出与实际可选。"},"keywords":[{"en":"Claude models","zh":"Claude 模型"},{"en":"Claude Opus 4.6 vs Sonnet 4.6","zh":"Claude Opus 4.6 和 Sonnet 4.6 对比"},{"en":"Claude Opus 4.6","zh":"Claude Opus 4.6"},{"en":"Claude Sonnet 4.6","zh":"Claude Sonnet 4.6"}]},
+  "seo": {
+    "title": {
+      "en": "Claude Models: Compare Opus, Sonnet, and Recorded Access",
+      "zh": "Claude 模型：Opus、Sonnet 与接入记录比较"
+    },
+    "description": {
+      "en": "Compare Claude names on Floatboat’s pricing page with recorded Opus, Sonnet, and Fable routes. Check the client menu before treating a listed version as selectable.",
+      "zh": "对照 Floatboat 价格页的 Claude 型号与 Opus、Sonnet、Fable 接入记录，了解模型定位和适用任务；使用前核对客户端菜单，区分公开展示与账号实际可选。"
+    },
+    "keywords": [
+      {
+        "en": "Claude models",
+        "zh": "Claude 模型"
+      },
+      {
+        "en": "Claude Opus 4.6 vs Sonnet 4.6",
+        "zh": "Claude Opus 4.6 和 Sonnet 4.6 对比"
+      },
+      {
+        "en": "Claude Opus 4.6",
+        "zh": "Claude Opus 4.6"
+      },
+      {
+        "en": "Claude Sonnet 4.6",
+        "zh": "Claude Sonnet 4.6"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "Claude models: Opus 5.5, Sonnet 5.5, and earlier versions.",
-        "zh": "Claude 模型：Opus 5.5、Sonnet 5.5 与更早版本。"
+      "en": "Claude models: Opus 5.5, Sonnet 5.5, and earlier versions.",
+      "zh": "Claude 模型：Opus 5.5、Sonnet 5.5 与更早版本。"
     },
     "description": {
       "en": "Explore the Claude 5.5 names shown on Floatboat’s pricing page alongside earlier Opus, Sonnet, and Fable records. Check the client menu before treating a listed version as selectable.",
       "zh": "了解 Floatboat 价格页已展示的 Claude 5.5 型号，以及更早的 Opus、Sonnet 和 Fable 记录。使用前查看客户端菜单，区分公开列出与实际可选。"
     },
     "prompts": [
-      { "en": "Review this architecture", "zh": "审查这个架构" },
-      { "en": "Plan a repository-wide refactor", "zh": "规划全仓库重构" },
-      { "en": "Trace this failure across files", "zh": "跨文件追踪故障" }
+      {
+        "en": "Review this architecture",
+        "zh": "审查这个架构"
+      },
+      {
+        "en": "Plan a repository-wide refactor",
+        "zh": "规划全仓库重构"
+      },
+      {
+        "en": "Trace this failure across files",
+        "zh": "跨文件追踪故障"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Inventory scope", "zh": "型号范围" },
-      "value": { "en": "Recorded routes + current pricing listings", "zh": "已有接入记录 + 当前价格页型号" }
+      "label": {
+        "en": "Inventory scope",
+        "zh": "型号范围"
+      },
+      "value": {
+        "en": "Recorded routes + current pricing listings",
+        "zh": "已有接入记录 + 当前价格页型号"
+      }
     },
     {
-      "label": { "en": "Access", "zh": "使用入口" },
-      "value": { "en": "Main client picker", "zh": "客户端主选择器" }
+      "label": {
+        "en": "Access",
+        "zh": "使用入口"
+      },
+      "value": {
+        "en": "Main client picker",
+        "zh": "客户端主选择器"
+      }
     },
     {
-      "label": { "en": "Configured next family", "zh": "已配置后续系列" },
+      "label": {
+        "en": "Configured next family",
+        "zh": "已配置后续系列"
+      },
       "value": {
         "en": "Claude 5 · 1M / 128k budget",
         "zh": "Claude 5 · 1M / 128k 预算"
       }
     },
     {
-      "label": { "en": "API key", "zh": "API Key" },
-      "value": { "en": "Not required", "zh": "无需自备" }
+      "label": {
+        "en": "API key",
+        "zh": "API Key"
+      },
+      "value": {
+        "en": "Not required",
+        "zh": "无需自备"
+      }
     }
   ],
   "positioning": {
@@ -58,7 +115,10 @@
     },
     "traits": [
       {
-        "label": { "en": "Initiative", "zh": "主动程度" },
+        "label": {
+          "en": "Initiative",
+          "zh": "主动程度"
+        },
         "value": {
           "en": "Plans before broad action",
           "zh": "大范围行动前先规划"
@@ -69,15 +129,24 @@
         }
       },
       {
-        "label": { "en": "Work span", "zh": "工作跨度" },
-        "value": { "en": "Long-horizon", "zh": "偏长程" },
+        "label": {
+          "en": "Work span",
+          "zh": "工作跨度"
+        },
+        "value": {
+          "en": "Long-horizon",
+          "zh": "偏长程"
+        },
         "description": {
           "en": "Maintains intent across research, implementation, and revision.",
           "zh": "在调研、实现与修订之间保持任务意图。"
         }
       },
       {
-        "label": { "en": "Best rhythm", "zh": "最佳节奏" },
+        "label": {
+          "en": "Best rhythm",
+          "zh": "最佳节奏"
+        },
         "value": {
           "en": "Opus for depth, Sonnet for cadence",
           "zh": "Opus 求深，Sonnet 求稳快"
@@ -88,8 +157,14 @@
         }
       },
       {
-        "label": { "en": "Watch for", "zh": "需要注意" },
-        "value": { "en": "Depth can add latency", "zh": "深度可能带来等待" },
+        "label": {
+          "en": "Watch for",
+          "zh": "需要注意"
+        },
+        "value": {
+          "en": "Depth can add latency",
+          "zh": "深度可能带来等待"
+        },
         "description": {
           "en": "Routine edits rarely need the most deliberate option.",
           "zh": "常规修改通常不需要最审慎的型号。"
@@ -260,28 +335,40 @@
     },
     "items": [
       {
-        "title": { "en": "Complex reasoning", "zh": "复杂推理" },
+        "title": {
+          "en": "Complex reasoning",
+          "zh": "复杂推理"
+        },
         "description": {
           "en": "Opus 4.6 is the deliberate option for architecture and difficult multi-step decisions.",
           "zh": "Opus 4.6 面向架构与高难度多步骤决策。"
         }
       },
       {
-        "title": { "en": "High-performance coding", "zh": "高性能编程" },
+        "title": {
+          "en": "High-performance coding",
+          "zh": "高性能编程"
+        },
         "description": {
           "en": "Sonnet 4.6 is the everyday option for implementation and general agent work.",
           "zh": "Sonnet 4.6 是实现与通用 Agent 工作的日常主力。"
         }
       },
       {
-        "title": { "en": "Long-running coherence", "zh": "长程一致性" },
+        "title": {
+          "en": "Long-running coherence",
+          "zh": "长程一致性"
+        },
         "description": {
           "en": "Keeps constraints in view while work moves from analysis to revision.",
           "zh": "任务从分析推进到修订时，持续保留关键约束。"
         }
       },
       {
-        "title": { "en": "Managed access", "zh": "托管接入" },
+        "title": {
+          "en": "Managed access",
+          "zh": "托管接入"
+        },
         "description": {
           "en": "Both live 4.6 models are selectable without a separate Anthropic API key.",
           "zh": "两个已上线的 4.6 型号均可直接选择，无需另备 Anthropic API Key。"
@@ -295,7 +382,10 @@
       "zh": "根据推理出错的代价选择 Claude 型号。"
     },
     "choose": {
-      "title": { "en": "Choose Opus 4.6 when", "zh": "适合选择 Opus 4.6" },
+      "title": {
+        "en": "Choose Opus 4.6 when",
+        "zh": "适合选择 Opus 4.6"
+      },
       "items": [
         {
           "en": "The task spans architecture, dependencies, and several rounds of execution.",

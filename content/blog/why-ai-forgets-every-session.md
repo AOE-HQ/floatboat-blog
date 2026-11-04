@@ -1,5 +1,7 @@
 ---
 title: "Why Your AI Forgets You Every Single Session"
+seoTitle: "AI Session Memory: Why Chats Reset and What Can Persist"
+seoDescription: "Repeated AI setup creates a context-rebuilding cost for solo work. Examine session architecture, lost information, and the evidence to look for in a tool that carries work forward."
 description: "Every time you close a chat tab, your AI forgets everything. Here's what solo operators actually lose — and why it matters more than most people realize."
 slug: "why-ai-forgets-every-session"
 date: "2026-04-07"

@@ -1,5 +1,7 @@
 ---
 title: "AI File Organizer for Windows: How to Verify Offline Claims"
+seoTitle: "AI File Organizer for Windows: Check Offline and Cloud Claims"
+seoDescription: "Windows AI file organizers need evidence for offline claims and restoration. Check model location, network traffic, preview, and OneDrive placeholders before a small trial."
 description: "Evaluate AI file organizers for Windows by model location, network traffic, preview, restore evidence, and OneDrive placeholder behavior."
 slug: "ai-file-organizer-windows"
 date: "2026-08-28"

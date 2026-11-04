@@ -9,12 +9,12 @@
     "repositoryUrl": "https://github.com/heygen-com/hyperframes",
     "seo": {
       "title": {
-        "en": "HyperFrames Skill by HeyGen | Installation & Guide",
-        "zh": "HyperFrames Skill by HeyGen：安装与使用指南"
+        "en": "HyperFrames Skill: Editable HTML Video, Preview, and Export",
+        "zh": "HyperFrames Skill：可编辑 HTML 视频、预览与导出"
       },
       "description": {
-        "en": "Install the HyperFrames core Skills by HeyGen and use the CLI for HTML video creation, scene checks, preview, and verified export.",
-        "zh": "安装 HeyGen HyperFrames 核心 Skills，配合 CLI 制作和编辑 HTML 视频，了解场景检查、预览与导出验证的完整流程。"
+        "en": "Build editable HTML video with HyperFrames Skills and CLI guidance. Connect scene planning, media, checks, and previews, then verify export when a file is requested.",
+        "zh": "结合 HyperFrames Skills 与 CLI 指引制作可编辑 HTML 视频，衔接场景规划、素材、检查和预览；需要文件交付时再核对导出结果，区分指令安装与运行工具配置。"
       },
       "keywords": {
         "en": [

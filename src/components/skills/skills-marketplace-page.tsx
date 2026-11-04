@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { CapabilitiesSection } from "@/components/marketing/capabilities-section";
@@ -16,8 +17,8 @@ import type { SkillLocale } from "@/lib/skills/featured-skills";
 export function skillsMarketplaceMetadata(locale: SkillLocale): Metadata {
   const zh = locale === "zh";
   const canonical = `https://floatboat.ai${zh ? "/zh" : ""}/skills-marketplace`;
-  const title = zh ? "Skills 市场 — Agent 工具、独立项目与 Skills | Floatboat" : "Skills Marketplace — Agent Tools, Projects, and Skills | Floatboat";
-  const description = zh ? "探索编程 Agent、Agent Harness、独立软件与 Agent Skills。认识 OpenAI、DeepSeek、Moonshot AI 等发布者，比较项目用途、使用条件与原始来源。" : "Explore coding agents, agent harnesses, independent software, and Agent Skills. Meet their publishers and compare project capabilities, requirements, guides, and official sources.";
+  const title = seoTitle(zh ? "Agent Skills 市场：开发工具、独立项目与任务指引" : "Agent Skills Marketplace: Projects, Tools, and Task Guides");
+  const description = zh ? "从编程 Agent、运行框架到设计、办公与媒体 Skills，按任务查找组织和创作者的代表作品。查看本站指南、项目介绍与原始来源，为自己的工作流选择工具和方法。" : "Find coding agents, developer tools, and Skills for design, office work, and media. Browse publishers, local guides, and source projects to choose resources for your workflows.";
   return { title: { absolute: title }, description, alternates: { canonical, languages: { en: "https://floatboat.ai/skills-marketplace", "zh-Hans": "https://floatboat.ai/zh/skills-marketplace", "x-default": "https://floatboat.ai/skills-marketplace" } }, openGraph: { type: "website", title, description, url: canonical } };
 }
 

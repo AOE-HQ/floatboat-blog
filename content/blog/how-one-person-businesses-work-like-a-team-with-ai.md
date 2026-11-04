@@ -1,5 +1,7 @@
 ---
 title: "How One-Person Businesses Work Like a Team With AI"
+seoTitle: "One-Person Businesses with AI: Roles, Handoffs, and Review"
+seoDescription: "A one-person business can use AI roles without outsourcing responsibility. Define contracts, inspect handoffs, and review evidence across research, decisions, production, and checking."
 description: "Use role contracts, inspectable handoffs, evidence checks, and review gates to give a one-person business team-like operating discipline with AI."
 slug: "how-one-person-businesses-work-like-a-team-with-ai"
 date: "2026-03-20"

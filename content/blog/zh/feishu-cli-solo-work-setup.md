@@ -1,5 +1,7 @@
 ---
 title: "单人工作流里的飞书 CLI：真正要付出什么成本"
+seoTitle: "飞书 CLI 单人工作流：配置、权限与持续维护成本"
+seoDescription: "将飞书 CLI 接入单人工作流前，核对认证、最小权限和持续维护要求。了解读取与执行的区别，评估 token 刷新、API 变化及典型自动化任务，再决定是否投入搭建。"
 description: "想把 Feishu CLI 接进个人工作流？本文讲透单人集成的真实样貌：读权限与执行动作的差别、单人创业者常搭的三类自动化、token 过期与 API 变更等隐性维护成本，以及投入之前值得想清楚的问题。"
 slug: "feishu-cli-solo-work-setup"
 date: "2026-03-31"

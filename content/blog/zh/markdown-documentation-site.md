@@ -1,5 +1,7 @@
 ---
 title: "Markdown 文档站点实战——docs-as-code 工作流、五大生成器选型与迁移实操"
+seoTitle: "Markdown 文档站点：生成器选型、Git 流程与迁移实操"
+seoDescription: "Markdown 文档站将纯文本、Git、生成器与部署流程连接起来。比较 Docusaurus、MkDocs、VitePress、Starlight 和 Hugo 的取舍，规划目录、版本和迁移，并判断何时纯文件已经足够。"
 description: "Markdown 文档站如何运作：docs-as-code 工作流、Docusaurus、MkDocs、VitePress、Starlight 与 Hugo 的六维选型对照、Diátaxis 目录设计、版本化与迁移成本、CI 部署和 AI 检索红利，以及什么时候纯文件就够了。"
 slug: "markdown-documentation-site"
 date: "2026-09-15"

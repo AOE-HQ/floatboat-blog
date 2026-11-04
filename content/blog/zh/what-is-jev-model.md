@@ -1,5 +1,7 @@
 ---
 title: "Jev 是什么——不生成文本的决策模型"
+seoTitle: "Jev AI 模型：不生成文本的决策方式与使用定位"
+seoDescription: "Jev 输出带置信度的类型化决策，而非生成文本。了解 RLCD 方法、供应商速度与成本声称，以及相关质疑，再判断这种模型形态适合哪些状态判断和实际工作负载。"
 description: "Jev 是 TypeSafe AI 发布的 System One 模型：读取状态、返回带置信度的 typed decisions，而不生成任何文本。本文拆解其 RLCD 训练方法、官方宣称的 193.6x 加速与 444.6x 成本优势，以及 Hacker News 上「重新包装的分类器」之争。"
 slug: "what-is-jev-model"
 date: "2026-09-18"

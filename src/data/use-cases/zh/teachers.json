@@ -2,8 +2,8 @@
   "slug": "teachers",
   "locale": "zh",
   "seo": {
-    "title": "教师 Work Agent：备课、课件与班级沟通 | Floatboat",
-    "description": "面向教师的 Work Agent，依据核准课程资料准备教案、课件、班级沟通内容和可核查的职业发展材料。",
+    "title": "教师 AI 工作流：教学资料、反馈整理与课程准备",
+    "description": "围绕课程准备整理教学资料、汇总反馈并制作可编辑资源，保留来源和修订记录，使用前核对知识准确性、课堂适配与学生可见内容，让教学判断仍由教师掌握。",
     "keywords": [
       "教师 Work Agent",
       "教师 AI Agent",

@@ -1,5 +1,7 @@
 ---
 title: "AI Follow-Up Automation — Turn Meeting Outcomes Into Action"
+seoTitle: "AI Follow-Up Automation: Turn Meeting Decisions into Tasks"
+seoDescription: "AI follow-up automation starts with authorized meeting evidence. Design extraction, draft review, approvals, idempotent writes, and recovery for missing or partial results."
 description: "Design reliable AI follow-up automation from authorized meeting evidence through extraction, review, approval, idempotent writes, and failure handling."
 slug: "ai-follow-up-automation"
 date: "2026-06-29"

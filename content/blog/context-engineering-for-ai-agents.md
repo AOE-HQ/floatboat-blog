@@ -1,5 +1,7 @@
 ---
 title: "Context Engineering for AI Agents: What to Include, Exclude, and Persist"
+seoTitle: "AI Agent Context Engineering: What to Include and Persist"
+seoDescription: "Context engineering selects what an agent needs to decide correctly. Design instructions, tool contracts, retrieval, memory, compaction, and evaluation around explicit access boundaries."
 description: "A practical guide to context engineering for AI agents: instructions, tools, retrieval, memory, compaction, security boundaries, and measurable evaluation."
 slug: "context-engineering-for-ai-agents"
 date: "2026-07-01"

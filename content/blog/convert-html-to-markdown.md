@@ -1,5 +1,7 @@
 ---
 title: "Convert HTML to Markdown — Clean Captures From Web and AI Chats"
+seoTitle: "HTML to Markdown: Clean Web Captures and AI Conversations"
+seoDescription: "HTML-to-Markdown conversion makes web clips and AI replies portable, but structures can change. Compare browser tools, turndown, pandoc, and MarkItDown by what survives export."
 description: "Convert HTML to Markdown to turn AI chat replies and web clippings into clean, portable .md files — what survives, what breaks, and the tools to use."
 slug: "convert-html-to-markdown"
 date: "2026-09-13"

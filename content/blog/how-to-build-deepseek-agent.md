@@ -1,5 +1,7 @@
 ---
 title: "How to Build a DeepSeek Agent: From API Key to Your First Agent"
+seoTitle: "DeepSeek Agent Setup: From API Credentials to a Working Loop"
+seoDescription: "Build a DeepSeek agent from API setup to model selection and a tool loop. Follow Python and Node.js examples for thinking mode, validation, and production error handling."
 description: "Step-by-step guide to building a DeepSeek Agent with V4 Pro and V4 Flash. Covers API setup, model selection, tool calling, the agent loop, thinking mode, and production error handling — with Python and Node.js examples."
 slug: "how-to-build-deepseek-agent"
 date: "2026-08-14"

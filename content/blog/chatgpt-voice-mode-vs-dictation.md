@@ -1,5 +1,7 @@
 ---
 title: "ChatGPT Voice Mode vs Dictation — When to Talk or Type In the Box"
+seoTitle: "ChatGPT Voice Mode vs Dictation: Conversation or Text Input"
+seoDescription: "ChatGPT voice mode supports two-way conversation; dictation produces editable composer text. Compare the input paths for long agent prompts, document work, and review needs."
 description: "ChatGPT voice mode vs dictation: GPT-Live two-way talk vs editable composer text. Choose the right voice workflow for agent prompts and document work."
 slug: "chatgpt-voice-mode-vs-dictation"
 date: "2026-08-07"

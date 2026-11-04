@@ -1,5 +1,7 @@
 ---
 title: "AI Workflow for Solo Founders: Design the Right System"
+seoTitle: "AI Workflows for Solo Founders: Design the System Before Tools"
+seoDescription: "An AI workflow for a solo business starts with triggers, context, permissions, and handoffs. Map review, records, and recovery before deciding which products should execute it."
 description: "Design an AI workflow for a solo business by mapping work, context, tools, permissions, handoffs, review, records, and failure recovery before choosing products."
 slug: "ai-workflow-solo-founders"
 date: "2026-04-10"

@@ -1,5 +1,7 @@
 ---
 title: "DSH Superagent 是什么：DeepSeek 如何把 GitHub 请求变成 Agent 工作流"
+seoTitle: "DeepSeek DSH Superagent：从 GitHub 请求到编程工作流"
+seoDescription: "DSH Superagent 是基于 DeepSeek Harness 的编程研究原型。跟随 GitHub 与可选飞书请求，了解授权、独立任务、评审反馈和结果交付，区分观察模式与自动执行的条件。"
 description: "DSH Superagent 是基于 DeepSeek Harness 的主动编程 Agent 研究原型。本文跟随一次 GitHub 请求，解释任务授权、独立会话、评审反馈与结果交付，区分观察和自动执行模式，并分析这些机制如何帮助你构建自己的工作流。"
 slug: "deepseek-dsh-superagent"
 date: "2026-11-02"

@@ -1,5 +1,7 @@
 ---
 title: "Effort Control 与 Fast Mode：AI 工作该多想还是该求快"
+seoTitle: "AI Effort Control 与 Fast Mode：推理深度和速度怎么选"
+seoDescription: "AI 推理投入与 Fast Mode 需要权衡任务风险、等待、预算和复核负担。用可复现评测判断何时增加思考深度、何时为速度付费，避免为没有改善验收结果的设置增加成本。"
 description: "按任务风险、等待成本、复核难度与预算，选择 AI 推理投入和响应速度的实用框架，并用可复现评测判断何时提高 Effort、何时值得使用 Fast Mode，以及如何避免为无效的深度推理与速度溢价买单。"
 slug: "effort-control-fast-mode-ai-work"
 date: "2026-05-29"

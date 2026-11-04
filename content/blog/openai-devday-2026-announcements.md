@@ -1,5 +1,7 @@
 ---
 title: "OpenAI DevDay 2026: Every Major Announcement, Explained"
+seoTitle: "OpenAI DevDay 2026: Major Releases and What They Change"
+seoDescription: "OpenAI DevDay 2026 connects Dots, GPT-6.1 Sol, Codex Cloud, Agents API, Plugins, Space, and Pages. Map the announcements to the platform strategy and distinct product roles."
 description: "A complete map of OpenAI DevDay 2026: Dots, GPT-6.1 Sol, Codex Cloud, Agents API, Plugins, Space, Pages, Pro 500, and the platform strategy connecting them."
 slug: "openai-devday-2026-announcements"
 date: "2026-10-06"

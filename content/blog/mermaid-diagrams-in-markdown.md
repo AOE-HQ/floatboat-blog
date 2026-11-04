@@ -1,5 +1,7 @@
 ---
 title: "Mermaid Diagram Examples: Flowchart, Gantt, Timeline Syntax"
+seoTitle: "Mermaid Diagrams: Flowchart, Gantt, and Timeline Syntax Examples"
+seoDescription: "Mermaid diagrams use text for flowcharts, Gantt charts, timelines, pies, and ER models. Copy examples, check renderer support, and fix quoting and syntax errors before sharing."
 description: "Copy-paste Mermaid examples for every major diagram type — flowchart, gantt, timeline, pie, and ER — with the core syntax, where each renders (GitHub, Obsidian, Notion), and the common errors that break diagrams."
 slug: "mermaid-diagrams-in-markdown"
 date: "2026-09-16"

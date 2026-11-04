@@ -2,49 +2,106 @@
   "slug": "gemini",
   "name": "Gemini",
   "access": "picker",
-  "badge": { "en": "Google · Recorded chat entry", "zh": "Google · 已有对话入口记录" },
+  "badge": {
+    "en": "Google · Recorded chat entry",
+    "zh": "Google · 已有对话入口记录"
+  },
   "summary": {
     "en": "Gemini 4 Argon is publicly listed; existing Pro, Flash, and image entries document different task and access paths.",
     "zh": "Gemini 4 Argon 已公开列出；已有 Pro、Flash 与生图条目分别记录不同任务和使用入口。"
   },
-  "seo": {"title":{"en":"Gemini models: 4 Argon, Pro, Flash, and image generation.","zh":"Gemini 模型：4 Argon、Pro、Flash 与图像生成。"},"description":{"en":"Gemini 4 Argon now appears on Floatboat’s pricing page. Compare that public listing with the recorded Pro, Flash, and image routes, keeping aliases and exact model IDs distinct.","zh":"Floatboat 价格页现已展示 Gemini 4 Argon。本页同时整理 Pro、Flash 与生图入口记录，并区分展示别名与准确模型 ID。"},"keywords":[{"en":"Gemini 3.1 Pro","zh":"Gemini 3.1 Pro"},{"en":"Gemini 3.8 Flash","zh":"Gemini 3.8 Flash"},{"en":"Gemini Pro vs Flash","zh":"Gemini Pro 和 Flash 对比"},{"en":"Gemini 1M context","zh":"Gemini 1M 上下文"}]},
+  "seo": {
+    "title": {
+      "en": "Gemini Models: Argon, Pro, Flash, and Image Route Records",
+      "zh": "Gemini 模型：Argon、Pro、Flash 与图像入口记录"
+    },
+    "description": {
+      "en": "Review Gemini Argon, Pro, Flash, and image-generation records in Floatboat. Keep display aliases, exact model IDs, pricing-page listings, and client access distinct.",
+      "zh": "查看 Floatboat 的 Gemini Argon、Pro、Flash 与图像生成记录，区分展示别名、准确模型 ID、价格页列出和客户端访问，按资料理解、速度或创作需求核对入口。"
+    },
+    "keywords": [
+      {
+        "en": "Gemini 3.1 Pro",
+        "zh": "Gemini 3.1 Pro"
+      },
+      {
+        "en": "Gemini 3.8 Flash",
+        "zh": "Gemini 3.8 Flash"
+      },
+      {
+        "en": "Gemini Pro vs Flash",
+        "zh": "Gemini Pro 和 Flash 对比"
+      },
+      {
+        "en": "Gemini 1M context",
+        "zh": "Gemini 1M 上下文"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "Gemini models: 4 Argon, Pro, Flash, and image generation.",
-        "zh": "Gemini 模型：4 Argon、Pro、Flash 与图像生成。"
+      "en": "Gemini models: 4 Argon, Pro, Flash, and image generation.",
+      "zh": "Gemini 模型：4 Argon、Pro、Flash 与图像生成。"
     },
     "description": {
       "en": "Gemini 4 Argon now appears on Floatboat’s pricing page. Compare that public listing with the recorded Pro, Flash, and image routes, keeping aliases and exact model IDs distinct.",
       "zh": "Floatboat 价格页现已展示 Gemini 4 Argon。本页同时整理 Pro、Flash 与生图入口记录，并区分展示别名与准确模型 ID。"
     },
     "prompts": [
-      { "en": "Analyze this document set", "zh": "分析这组文档" },
-      { "en": "Compare these screenshots", "zh": "比较这些截图" },
-      { "en": "Classify this batch quickly", "zh": "快速分类这批内容" }
+      {
+        "en": "Analyze this document set",
+        "zh": "分析这组文档"
+      },
+      {
+        "en": "Compare these screenshots",
+        "zh": "比较这些截图"
+      },
+      {
+        "en": "Classify this batch quickly",
+        "zh": "快速分类这批内容"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Inventory scope", "zh": "型号范围" },
+      "label": {
+        "en": "Inventory scope",
+        "zh": "型号范围"
+      },
       "value": {
         "en": "Recorded routes + current pricing listings",
         "zh": "已有接入记录 + 当前价格页型号"
       }
     },
     {
-      "label": { "en": "Pro context", "zh": "Pro 上下文" },
-      "value": { "en": "1M+ long context", "zh": "1M+ 超长上下文" }
+      "label": {
+        "en": "Pro context",
+        "zh": "Pro 上下文"
+      },
+      "value": {
+        "en": "1M+ long context",
+        "zh": "1M+ 超长上下文"
+      }
     },
     {
-      "label": { "en": "Inputs", "zh": "输入类型" },
+      "label": {
+        "en": "Inputs",
+        "zh": "输入类型"
+      },
       "value": {
         "en": "Long text · Images · Mixed material",
         "zh": "长文本 · 图像 · 混合材料"
       }
     },
     {
-      "label": { "en": "API key", "zh": "API Key" },
-      "value": { "en": "Not required", "zh": "无需自备" }
+      "label": {
+        "en": "API key",
+        "zh": "API Key"
+      },
+      "value": {
+        "en": "Not required",
+        "zh": "无需自备"
+      }
     }
   ],
   "positioning": {
@@ -58,7 +115,10 @@
     },
     "traits": [
       {
-        "label": { "en": "Pro style", "zh": "Pro 风格" },
+        "label": {
+          "en": "Pro style",
+          "zh": "Pro 风格"
+        },
         "value": {
           "en": "Absorbs the whole source set",
           "zh": "先容纳完整资料集"
@@ -69,23 +129,38 @@
         }
       },
       {
-        "label": { "en": "Flash style", "zh": "Flash 风格" },
-        "value": { "en": "Responds in quick cycles", "zh": "以快速循环响应" },
+        "label": {
+          "en": "Flash style",
+          "zh": "Flash 风格"
+        },
+        "value": {
+          "en": "Responds in quick cycles",
+          "zh": "以快速循环响应"
+        },
         "description": {
           "en": "Useful for frequent, lightweight processing.",
           "zh": "适合高频、轻量的处理工作。"
         }
       },
       {
-        "label": { "en": "Input strength", "zh": "输入优势" },
-        "value": { "en": "Text and images together", "zh": "图文结合" },
+        "label": {
+          "en": "Input strength",
+          "zh": "输入优势"
+        },
+        "value": {
+          "en": "Text and images together",
+          "zh": "图文结合"
+        },
         "description": {
           "en": "Keeps visual and textual evidence in one analysis.",
           "zh": "将视觉证据与文本信息放在同一次分析中。"
         }
       },
       {
-        "label": { "en": "Decision rule", "zh": "选择原则" },
+        "label": {
+          "en": "Decision rule",
+          "zh": "选择原则"
+        },
         "value": {
           "en": "Remove the actual bottleneck",
           "zh": "解决真正的瓶颈"
@@ -256,21 +331,30 @@
     },
     "items": [
       {
-        "title": { "en": "1M+ context analysis", "zh": "1M+ 上下文分析" },
+        "title": {
+          "en": "1M+ context analysis",
+          "zh": "1M+ 上下文分析"
+        },
         "description": {
           "en": "Gemini 3.1 Pro Preview is positioned for long documents, large code sets, and cross-file work.",
           "zh": "Gemini 3.1 Pro Preview 面向长文档、大型代码集与跨文件工作。"
         }
       },
       {
-        "title": { "en": "Image-text understanding", "zh": "图文理解" },
+        "title": {
+          "en": "Image-text understanding",
+          "zh": "图文理解"
+        },
         "description": {
           "en": "Pro can analyze visual and textual material together in the client workflow.",
           "zh": "Pro 可在客户端工作流中结合分析图像与文本材料。"
         }
       },
       {
-        "title": { "en": "High-throughput response", "zh": "高吞吐响应" },
+        "title": {
+          "en": "High-throughput response",
+          "zh": "高吞吐响应"
+        },
         "description": {
           "en": "Gemini 3.8 Flash handles frequent lightweight requests with a faster cadence.",
           "zh": "Gemini 3.8 Flash 以更快节奏处理高频轻量请求。"
@@ -294,7 +378,10 @@
       "zh": "根据真正拖慢工作的因素进行选择。"
     },
     "choose": {
-      "title": { "en": "Choose Gemini Pro when", "zh": "适合选择 Gemini Pro" },
+      "title": {
+        "en": "Choose Gemini Pro when",
+        "zh": "适合选择 Gemini Pro"
+      },
       "items": [
         {
           "en": "You need to inspect a large source set as a whole.",

@@ -2,8 +2,8 @@
   "slug": "floatim",
   "locale": "zh",
   "seo": {
-    "title": "FloatIM：面向人与 AI Agent 的原生协作群聊",
-    "description": "让人与 AI Agent 在共享项目空间中协作，把对话、任务交接、文件、决策和最终产物保留在同一个工作上下文中。",
+    "title": "FloatIM：人与工作 Agent 的群聊协作与任务交接",
+    "description": "通过 FloatIM 在共享对话中连接人与工作 Agent，将请求、项目引用、审批与交付反馈放在清楚的协作上下文中，让任务交接和后续讨论围绕实际工作继续推进。",
     "keywords": [
       "AI Agent 群聊",
       "Agent 工作空间",

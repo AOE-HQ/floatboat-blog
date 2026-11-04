@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import { BlogTopicNavigation } from "@/components/blog/topic-navigation";
 import { FaqBand } from "@/components/faq-band";
 import { resolveFaqForBlogIndex } from "@/lib/faq-data";
@@ -19,10 +20,11 @@ import { MarketingBand } from "@/components/blog/marketing-band";
 
 const og = openGraphLocale("en");
 
+const searchCopy = { title: seoTitle("AI Agent Blog: Models, Tools, and Practical Workflows"), description: "Read AI agent architecture, model comparisons, file workflows, and solo-business guides. Find source-based explanations and practical methods for choosing and using tools." };
+
 export const metadata: Metadata = {
-  title: "AI Agents, Models, and Workflows Blog",
-  description:
-    "Explore Floatboat guides to AI agents, frontier models, agent workspaces, automation workflows, file tools, and practical systems for solo operators.",
+  title: { absolute: searchCopy.title },
+  description: searchCopy.description,
 
   alternates: {
     canonical: absoluteBlogIndexUrl("en"),
@@ -34,9 +36,8 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: `AI Agents, Models, and Workflows Blog | ${site.name}`,
-    description:
-      "Model analysis, agent architecture, automation workflows, file tools, and practical AI systems from Floatboat.",
+    title: searchCopy.title,
+    description: searchCopy.description,
     url: absoluteBlogIndexUrl("en"),
     siteName: site.name,
     type: "website",

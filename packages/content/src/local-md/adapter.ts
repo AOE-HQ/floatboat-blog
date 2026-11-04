@@ -49,6 +49,8 @@ function parseFile(filePath: string, features: ResolvedFeatures): Post {
     slug: parsed.slug,
     title: parsed.title,
     description: parsed.description,
+    seoTitle: parsed.seoTitle,
+    seoDescription: parsed.seoDescription,
     date: parsed.date,
     updated: parsed.updated,
     author: parsed.author,

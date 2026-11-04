@@ -1,5 +1,7 @@
 ---
 title: "World Cup 2026 Bracketology: A Post-Tournament Audit"
+seoTitle: "World Cup 2026 Bracketology: Audit the Tournament Draw"
+seoDescription: "World Cup 2026 bracketology is now a post-tournament audit. Reconstruct the knockout path and assess old picks by separating observed results from the quality of prior reasoning."
 description: "World Cup 2026 is over, so bracketology now means auditing the path and your reasoning. Review the completed quarterfinals, semifinals, and final, then use a hindsight-resistant method to grade old picks."
 slug: "world-cup-2026-bracketology"
 date: "2026-07-15"

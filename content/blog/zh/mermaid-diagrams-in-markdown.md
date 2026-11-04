@@ -1,5 +1,7 @@
 ---
 title: "Mermaid 图表实例与语法：流程图、甘特图、时间线"
+seoTitle: "Mermaid 图表：流程图、甘特图与时间线语法实例"
+seoDescription: "用 Mermaid 文本语法制作流程图、甘特图、时间线、饼图与 ER 图。复制示例后核对 GitHub、Obsidian、Notion 的支持差异，检查引号和常见语法问题，再分享实际渲染结果。"
 description: "每种图表类型都给出可直接复制的 Mermaid 实例：流程图、甘特图、时间线、饼图、ER 图的写法与语法要点，GitHub/Obsidian/Notion 的渲染支持差异，以及标签加引号这类最常见的语法坑。"
 slug: "mermaid-diagrams-in-markdown"
 date: "2026-09-16"

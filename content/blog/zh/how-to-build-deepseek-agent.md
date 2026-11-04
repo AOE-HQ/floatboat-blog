@@ -1,5 +1,7 @@
 ---
 title: "如何构建 DeepSeek Agent：从 API Key 到你的第一个 Agent"
+seoTitle: "DeepSeek Agent 搭建：从 API 配置到工具执行循环"
+seoDescription: "从 API 配置、模型选择与工具调用开始搭建 DeepSeek Agent，跟随 Python、Node.js 示例理解执行循环和思考模式，再检查参数校验、错误处理与生产环境中的恢复方式。"
 description: "一步步教你构建 DeepSeek Agent：用 V4 Pro 与 V4 Flash 跑通 API 配置、模型选择、工具调用、Agent 循环、思考模式与生产级错误处理，附 Python 和 Node.js 完整示例。"
 slug: "how-to-build-deepseek-agent"
 date: "2026-08-14"

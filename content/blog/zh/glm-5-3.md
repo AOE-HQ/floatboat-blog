@@ -1,5 +1,7 @@
 ---
 title: "GLM-5.3 权重状态：自托管前如何核验"
+seoTitle: "GLM-5.3 权重状态：自托管前的发布与许可核验"
+seoDescription: "考虑 GLM-5.3 自托管前，先核验权重能否下载及其许可条件，再比较托管 API、Coding Plan、思考参数迁移与基础设施投入，按合格任务总成本判断采用方式。"
 description: "在比较 GLM-5.3 托管 API 与 Coding Plan 前，先核验权重工件是否可下载、许可证条款与自托管要求，并评估 thinking 参数迁移、Agent 适配、基础设施成本及每个合格任务的总成本。"
 slug: "glm-5-3"
 date: "2026-08-14"

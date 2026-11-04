@@ -10,36 +10,90 @@
     "en": "Kimi K3 is publicly listed and has a recorded long-text capacity profile; current client access should be checked separately.",
     "zh": "Kimi K3 已公开列出，并有长文本容量画像记录；当前客户端入口需另行核对。"
   },
-  "seo": {"title":{"en":"Kimi K3 Model: 1M Context, Model ID and Long-Text Capabilities","zh":"Kimi K3 模型：1M 上下文、Model ID 与长文本能力"},"description":{"en":"Learn about the Kimi K3 model ID, configured 1M context profile, long-text reasoning role, compatibility names, use cases, and current status.","zh":"了解 Kimi K3 的准确 Model ID、1M 上下文画像、长文本思考定位、兼容名称、适用场景与当前状态。"},"keywords":[{"en":"Kimi K3","zh":"Kimi K3"},{"en":"Kimi K3 model","zh":"Kimi K3 模型"},{"en":"Kimi 1M context","zh":"Kimi 1M 上下文"},{"en":"kimi-k3 model ID","zh":"kimi-k3 Model ID"}]},
+  "seo": {
+    "title": {
+      "en": "Kimi K3: Model IDs, Configured Context, and Long-Text Tasks",
+      "zh": "Kimi K3：模型标识、上下文配置与长文本任务"
+    },
+    "description": {
+      "en": "Review Kimi K3’s exact model ID, configured 1M context profile, long-text role, and compatibility names. Distinguish configuration records from actual client availability.",
+      "zh": "了解 Kimi K3 的准确模型 ID、已配置的 1M 上下文画像、长文本定位与兼容名称，区分配置记录和客户端实际可用性，再判断是否适合资料阅读与推理任务。"
+    },
+    "keywords": [
+      {
+        "en": "Kimi K3",
+        "zh": "Kimi K3"
+      },
+      {
+        "en": "Kimi K3 model",
+        "zh": "Kimi K3 模型"
+      },
+      {
+        "en": "Kimi 1M context",
+        "zh": "Kimi 1M 上下文"
+      },
+      {
+        "en": "kimi-k3 model ID",
+        "zh": "kimi-k3 Model ID"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "Kimi K3 model, 1M context profile, and long-text capabilities.",
-        "zh": "Kimi K3 模型、1M 上下文画像与长文本能力。"
+      "en": "Kimi K3 model, 1M context profile, and long-text capabilities.",
+      "zh": "Kimi K3 模型、1M 上下文画像与长文本能力。"
     },
     "description": {
       "en": "Kimi K3 appears on Floatboat’s current pricing page and has an older long-text capacity record. Check the current client entry and plan before relying on the historical model ID.",
       "zh": "Floatboat 当前价格页已列出 Kimi K3，另有较早的长文本容量记录。使用前核对当前客户端入口和套餐，不要仅依据历史模型 ID。"
     },
     "prompts": [
-      { "en": "Synthesize a long research set", "zh": "综合大型研究资料集" }
+      {
+        "en": "Synthesize a long research set",
+        "zh": "综合大型研究资料集"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Model ID", "zh": "Model ID" },
-      "value": { "en": "kimi-k3", "zh": "kimi-k3" }
+      "label": {
+        "en": "Model ID",
+        "zh": "Model ID"
+      },
+      "value": {
+        "en": "kimi-k3",
+        "zh": "kimi-k3"
+      }
     },
     {
-      "label": { "en": "Capacity", "zh": "容量画像" },
-      "value": { "en": "1M budget", "zh": "1M 预算" }
+      "label": {
+        "en": "Capacity",
+        "zh": "容量画像"
+      },
+      "value": {
+        "en": "1M budget",
+        "zh": "1M 预算"
+      }
     },
     {
-      "label": { "en": "Channel", "zh": "通道" },
-      "value": { "en": "Long-text reasoning", "zh": "长文本思考" }
+      "label": {
+        "en": "Channel",
+        "zh": "通道"
+      },
+      "value": {
+        "en": "Long-text reasoning",
+        "zh": "长文本思考"
+      }
     },
     {
-      "label": { "en": "Availability", "zh": "可用状态" },
-      "value": { "en": "Historical configuration", "zh": "旧记录未显示选择器入口" }
+      "label": {
+        "en": "Availability",
+        "zh": "可用状态"
+      },
+      "value": {
+        "en": "Historical configuration",
+        "zh": "旧记录未显示选择器入口"
+      }
     }
   ],
   "positioning": {
@@ -53,23 +107,38 @@
     },
     "traits": [
       {
-        "label": { "en": "Strength", "zh": "能力方向" },
-        "value": { "en": "Long-text reasoning", "zh": "长文本思考" },
+        "label": {
+          "en": "Strength",
+          "zh": "能力方向"
+        },
+        "value": {
+          "en": "Long-text reasoning",
+          "zh": "长文本思考"
+        },
         "description": {
           "en": "The configured profile is aimed at context-heavy synthesis.",
           "zh": "已配置画像面向上下文密集型综合任务。"
         }
       },
       {
-        "label": { "en": "Scale", "zh": "规模" },
-        "value": { "en": "1M budget", "zh": "1M 预算" },
+        "label": {
+          "en": "Scale",
+          "zh": "规模"
+        },
+        "value": {
+          "en": "1M budget",
+          "zh": "1M 预算"
+        },
         "description": {
           "en": "Capacity is registered for large inputs.",
           "zh": "已为大型输入登记容量。"
         }
       },
       {
-        "label": { "en": "Compatibility", "zh": "兼容标识" },
+        "label": {
+          "en": "Compatibility",
+          "zh": "兼容标识"
+        },
         "value": {
           "en": "K2 and latest recognized",
           "zh": "兼容 K2 与 latest"
@@ -80,8 +149,14 @@
         }
       },
       {
-        "label": { "en": "Boundary", "zh": "当前边界" },
-        "value": { "en": "No main-picker access", "zh": "主选择器不可选" },
+        "label": {
+          "en": "Boundary",
+          "zh": "当前边界"
+        },
+        "value": {
+          "en": "No main-picker access",
+          "zh": "主选择器不可选"
+        },
         "description": {
           "en": "The model has a capacity configuration but no current client selection entry.",
           "zh": "容量已配置不代表已经公开上线。"
@@ -180,14 +255,20 @@
     },
     "items": [
       {
-        "title": { "en": "Exact K3 identity", "zh": "准确的 K3 标识" },
+        "title": {
+          "en": "Exact K3 identity",
+          "zh": "准确的 K3 标识"
+        },
         "description": {
           "en": "The registered model ID is `kimi-k3`.",
           "zh": "已登记 Model ID 为 `kimi-k3`。"
         }
       },
       {
-        "title": { "en": "1M capacity profile", "zh": "1M 容量画像" },
+        "title": {
+          "en": "1M capacity profile",
+          "zh": "1M 容量画像"
+        },
         "description": {
           "en": "A 1M budget is configured for the model.",
           "zh": "该模型已配置 1M 预算。"
@@ -272,10 +353,46 @@
         "zh": "Kimi K3 是 Moonshot 的模型，在当前模型矩阵中配置了长文本思考画像与 1M 容量预算。"
       }
     },
-    {"question":{"en":"What is the Kimi K3 model ID?","zh":"Kimi K3 的 Model ID 是什么？"},"answer":{"en":"The exact registered model ID is `kimi-k3`; `kimi-k2` and `kimi-latest` are recognized compatibility names.","zh":"准确登记的 Model ID 是 `kimi-k3`；`kimi-k2` 与 `kimi-latest` 属于兼容名称。"}},
-    {"question":{"en":"How large is the Kimi K3 context profile?","zh":"Kimi K3 的上下文有多大？"},"answer":{"en":"The configured capacity profile carries a 1M budget for context-heavy workloads.","zh":"已配置容量画像包含 1M 预算，面向上下文密集型工作。"}},
-    {"question":{"en":"What is Kimi K3 best suited for?","zh":"Kimi K3 适合什么任务？"},"answer":{"en":"Its confirmed positioning is long-text reasoning, large research sets, extended document review, and tasks that need relationships preserved across distant sections.","zh":"其已确认定位是长文本思考、大型研究资料集、长文档审阅，以及需要保留远距离章节关系的任务。"}},
-    {"question":{"en":"What is the current Kimi K3 support status?","zh":"Kimi K3 当前是什么支持状态？"},"answer":{"en":"Kimi K3 is named on the current pricing page and has an older capacity record. That record does not establish which entry your account can use today; check the current model menu.","zh":"当前价格页已列出 Kimi K3，另有旧容量记录。该记录不能证明你的账号今天可用哪个入口，应查看当前模型菜单。"}},
+    {
+      "question": {
+        "en": "What is the Kimi K3 model ID?",
+        "zh": "Kimi K3 的 Model ID 是什么？"
+      },
+      "answer": {
+        "en": "The exact registered model ID is `kimi-k3`; `kimi-k2` and `kimi-latest` are recognized compatibility names.",
+        "zh": "准确登记的 Model ID 是 `kimi-k3`；`kimi-k2` 与 `kimi-latest` 属于兼容名称。"
+      }
+    },
+    {
+      "question": {
+        "en": "How large is the Kimi K3 context profile?",
+        "zh": "Kimi K3 的上下文有多大？"
+      },
+      "answer": {
+        "en": "The configured capacity profile carries a 1M budget for context-heavy workloads.",
+        "zh": "已配置容量画像包含 1M 预算，面向上下文密集型工作。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is Kimi K3 best suited for?",
+        "zh": "Kimi K3 适合什么任务？"
+      },
+      "answer": {
+        "en": "Its confirmed positioning is long-text reasoning, large research sets, extended document review, and tasks that need relationships preserved across distant sections.",
+        "zh": "其已确认定位是长文本思考、大型研究资料集、长文档审阅，以及需要保留远距离章节关系的任务。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the current Kimi K3 support status?",
+        "zh": "Kimi K3 当前是什么支持状态？"
+      },
+      "answer": {
+        "en": "Kimi K3 is named on the current pricing page and has an older capacity record. That record does not establish which entry your account can use today; check the current model menu.",
+        "zh": "当前价格页已列出 Kimi K3，另有旧容量记录。该记录不能证明你的账号今天可用哪个入口，应查看当前模型菜单。"
+      }
+    },
     {
       "question": {
         "en": "What is a useful document-heavy test for Kimi?",

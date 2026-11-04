@@ -1,5 +1,7 @@
 ---
 title: "What Is DeepSeek Harness — The Execution Layer for Agents"
+seoTitle: "DeepSeek Harness: Architecture and the Agent Execution Layer"
+seoDescription: "DeepSeek Harness connects model calls to coding-agent execution. Review the architecture, open-source release context, and reported benchmarks without treating the model as the full system."
 description: "DeepSeek Harness is DeepSeek's own AI coding agent — the layer that turns V4 into an agent. Architecture, v0.1 open-source release, and benchmark results."
 slug: "what-is-deepseek-harness"
 date: "2026-08-17"

@@ -6,12 +6,12 @@
     },
     "seo": {
       "en": {
-        "title": "Coding Skills and Projects for Real Code Changes | Floatboat",
-        "description": "Find Skills and software for React performance, debugging, testing, code review, and behavior-preserving refactoring."
+        "title": "Coding Skills and Projects: Testing, Debugging, and Code Review",
+        "description": "Find React guidance, coding agents, and analysis tools for testing, debugging, performance, and refactoring. Match instructions and software to your repository’s actual needs."
       },
       "zh": {
-        "title": "编码 Skills 与项目：调试、测试与代码审查 | Floatboat",
-        "description": "按 React 性能、故障排查、测试、代码审查与重构任务，查找具体指引和软件工具，比较各自的技术范围与验证方式。"
+        "title": "编码 Skills 与项目：测试、调试和代码审查",
+        "description": "查找 React 指引、编程 Agent 与代码分析工具，比较测试、调试、性能和重构任务所需的方法与软件，结合仓库语言、运行环境和已有检查选择适合的资源。"
       }
     },
     "hero": {
@@ -144,12 +144,12 @@
     },
     "seo": {
       "en": {
-        "title": "Agent Projects and Skills for Software Development Workflows | Floatboat",
-        "description": "Compare planning, agent orchestration, repository context, tool connections, and handoff resources for organizing software work."
+        "title": "Agent Development Workflows: Harnesses, Skills, and Handoffs",
+        "description": "Compare harnesses, workbenches, and Skills for planning, tool connections, context, and review. Choose resources around the development stage you need to improve."
       },
       "zh": {
-        "title": "软件开发流程中的 Agent 项目与 Skills | Floatboat",
-        "description": "从需求澄清、Agent 编排、仓库上下文到工具连接与任务交接，比较组织软件开发工作的项目和可复用任务指引。"
+        "title": "Agent 开发流程：Harness、Skills 与任务交接",
+        "description": "比较用于规划、工具连接、上下文和审阅的 Harness、开发工作台与 Skills，先定位需要改进的开发阶段，再选择执行机制或任务方法，保持职责和交接清楚。"
       }
     },
     "hero": {
@@ -290,12 +290,12 @@
     },
     "seo": {
       "en": {
-        "title": "Interface Design Skills, Components, and Visual Resources | Floatboat",
-        "description": "Explore interface direction, accessible interactions, React components, animation guidance, and visual assets for building and reviewing real pages."
+        "title": "Interface Design Resources: Skills, Components, and Motion",
+        "description": "Explore design Skills, React components, and visual assets for layout, interaction, animation, and accessibility. Compare creation and review resources for real interfaces."
       },
       "zh": {
-        "title": "界面设计 Skills、组件与视觉资源 | Floatboat",
-        "description": "围绕视觉方向、可访问交互、React 组件与动效，查找设计指引和可复用资源，让页面设计与实际操作保持一致。"
+        "title": "界面设计资源：Skills、组件与交互动效",
+        "description": "查找用于布局、交互、动效和可访问性的设计 Skills、React 组件与视觉素材，区分新界面构建、已有页面审查和资源复用，结合真实内容与状态选择方法。"
       }
     },
     "hero": {
@@ -428,12 +428,12 @@
     },
     "seo": {
       "en": {
-        "title": "Writing, SEO, and Marketing Skills | Floatboat",
-        "description": "Find guidance for page copy, content strategy, SEO audits, technical writing, and repository social previews, organized around the intended reader and result."
+        "title": "Writing and Marketing Skills: SEO, Copy, and Content Strategy",
+        "description": "Choose Skills for SEO audits, page copy, content planning, technical writing, and social previews. Start with the reader, source material, and intended deliverable."
       },
       "zh": {
-        "title": "写作、SEO 与营销 Skills | Floatboat",
-        "description": "从页面文案、内容策略、SEO 审查到技术表达和仓库预览图，按目标读者与交付内容选择任务指引，避免只套用通用措辞。"
+        "title": "写作与营销 Skills：SEO、页面文案与内容策略",
+        "description": "按 SEO 审查、页面文案、内容规划、技术写作与社交预览任务选择 Skills，先明确读者、来源材料和交付目标，再判断需要哪种指引，不机械套用同一写作流程。"
       }
     },
     "hero": {
@@ -566,12 +566,12 @@
     },
     "seo": {
       "en": {
-        "title": "Deployment and Browser or Desktop Automation Resources | Floatboat",
-        "description": "Compare cloud deployment Skills, browser tools, desktop automation, and web extraction projects by their execution environment and access requirements."
+        "title": "Automation Resources: Cloud Deployment, Browsers, and Desktop",
+        "description": "Compare cloud deployment Skills, browser automation, desktop tools, and web extraction projects. Check the target environment, required access, and result-verification method."
       },
       "zh": {
-        "title": "部署、浏览器与桌面自动化项目及 Skills | Floatboat",
-        "description": "比较云部署指引、浏览器工具、桌面操作与网页提取项目，按目标环境、访问条件和结果检查方式选择可用资源。"
+        "title": "自动化项目与 Skills：云部署、浏览器和桌面操作",
+        "description": "比较云部署 Skills、浏览器自动化、桌面操作与网页提取项目，按目标环境、所需访问条件和结果验证方式选择资源，区分网页能力、系统操作与云端执行权限。"
       }
     },
     "hero": {
@@ -704,12 +704,12 @@
     },
     "seo": {
       "en": {
-        "title": "Document Skills and Office Workflow Tools | Floatboat",
-        "description": "Find PDF, Word, presentation, spreadsheet, email, calendar, and knowledge-work resources, including Feishu and Google Workspace command-line tools."
+        "title": "Office Skills and Tools: Documents, Spreadsheets, and Calendars",
+        "description": "Find PDF, Word, slide, spreadsheet, email, and calendar resources. Distinguish local file work from authenticated operations in Feishu and Google Workspace."
       },
       "zh": {
-        "title": "文档处理 Skills 与办公工作流工具 | Floatboat",
-        "description": "按 PDF、Word、演示文稿、电子表格、邮件与日程任务查找资源，区分本地文件处理和飞书、Google Workspace 中的在线操作。"
+        "title": "办公 Skills 与工具：文档、电子表格、邮件和日程",
+        "description": "查找 PDF、Word、幻灯片、电子表格、邮件与日程资源，区分本地文件处理和飞书、Google Workspace 在线操作，按交付物、账户访问和实际任务核对使用条件。"
       }
     },
     "hero": {
@@ -850,12 +850,12 @@
     },
     "seo": {
       "en": {
-        "title": "Image, Video, and Audio Projects and Skills | Floatboat",
-        "description": "Explore ComfyUI, HyperFrames, Remotion, and audio tooling alongside guidance for media selection, composition, preview, and export."
+        "title": "Media Projects and Skills: Image, Video, and Audio Workflows",
+        "description": "Explore ComfyUI, HyperFrames, Remotion, and audio tools with supporting media Skills. Compare generation, editable composition, asset preparation, preview, and export."
       },
       "zh": {
-        "title": "图像、视频与音频项目及 Skills | Floatboat",
-        "description": "探索 ComfyUI、HyperFrames、Remotion 与音频工具，结合素材选择、场景合成、预览和导出指引，为不同媒体交付物选择工作方式。"
+        "title": "媒体项目与 Skills：图像、视频和音频制作流程",
+        "description": "探索 ComfyUI、HyperFrames、Remotion 与音频工具及配套 Skills，比较媒体生成、可编辑合成、素材准备、预览和导出方式，按交付格式与运行条件规划制作流程。"
       }
     },
     "hero": {

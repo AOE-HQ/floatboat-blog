@@ -1,5 +1,7 @@
 ---
 title: "What Is Gemini Agent? Google's Universal Work Agent Explained"
+seoTitle: "Gemini Agent: Google’s Universal Work Agent and Task Boundaries"
+seoDescription: "Gemini Agent targets persistent business work across tools, models, and cooperating agents. Separate confirmed access from preview features and compare it with the Gemini app."
 description: "Gemini Agent is Google's universal work agent for persistent tasks, multi-agent coordination, model routing, and work across business tools. Here's what is confirmed, what remains in preview, and how it differs from the Gemini app."
 slug: "what-is-gemini-agent"
 date: "2026-10-10"

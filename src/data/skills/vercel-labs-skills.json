@@ -9,12 +9,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
     "seo": {
       "title": {
-        "en": "Vercel React Best Practices by Vercel Labs | Installation & Guide",
-        "zh": "Vercel React Best Practices by Vercel Labs：安装与使用指南"
+        "en": "React Performance: Vercel Skills for Fetching and Rendering",
+        "zh": "React 性能优化：Vercel Skills 的请求、加载与渲染实践"
       },
       "description": {
-        "en": "Use Vercel React Best Practices by Vercel Labs to write, review, and refactor React and Next.js code. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 Vercel React Best Practices，辅助编写、审查和重构 React 与 Next.js 代码。围绕数据请求、包体积、渲染和状态更新寻找改进方向，结合具体页面与交互，优先处理有实际影响的性能问题。"
+        "en": "Review React and Next.js data fetching, bundle loading, and rendering with Vercel React Best Practices. Apply prioritized rules to focused performance investigations.",
+        "zh": "用 Vercel React Best Practices 审查 React 与 Next.js 的数据请求、代码加载和渲染问题，了解规则优先级、任务用法与原始来源，确定值得实施的性能改动。"
       },
       "keywords": {
         "en": [
@@ -247,12 +247,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
     "seo": {
       "title": {
-        "en": "Vercel Composition Patterns by Vercel Labs | Installation & Guide",
-        "zh": "Vercel Composition Patterns by Vercel Labs：安装与使用指南"
+        "en": "React Composition Patterns: Component APIs and Shared State",
+        "zh": "React 组合模式：组件接口、复合组件与共享状态设计"
       },
       "description": {
-        "en": "Use Vercel Composition Patterns by Vercel Labs to design clearer React component APIs. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 Vercel Composition Patterns，梳理 React 组件 API 与共享状态。针对不断增加的布尔属性、复杂变体和组件库扩展需求，探索复合组件、Provider 与明确变体，让组件结构更贴近实际调用方式。"
+        "en": "Simplify React component APIs with Vercel Composition Patterns. Explore compound components, provider-managed state, and alternatives to growing boolean prop combinations.",
+        "zh": "通过 Vercel Composition Patterns 改善 React 组件接口，了解复合组件、Provider 状态与组合式设计，处理不断增长的布尔属性，让职责和调用方式更清楚。"
       },
       "keywords": {
         "en": [
@@ -485,12 +485,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
     "seo": {
       "title": {
-        "en": "Vercel React Native Skills by Vercel Labs | Installation & Guide",
-        "zh": "Vercel React Native Skills by Vercel Labs：安装与使用指南"
+        "en": "React Native Skills: Lists, Gestures, Images, and Performance",
+        "zh": "React Native Skills：列表、手势、图像与移动端性能"
       },
       "description": {
-        "en": "Use Vercel React Native Skills by Vercel Labs to build and review React Native and Expo interfaces. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 Vercel React Native Skills，辅助构建与审查 React Native 和 Expo 界面。围绕长列表、动画、导航、图片和原生依赖选择适用规则，结合具体页面与目标设备，检查影响移动端体验的实现。"
+        "en": "Apply Vercel React Native Skills to mobile lists, gestures, images, safe areas, and dependency checks. Match guidance to the native environment and inspect real behavior.",
+        "zh": "将 Vercel React Native Skills 用于移动列表、手势、图像、安全区域与依赖检查。结合实际原生环境选择规则，审查具体界面行为，而不是直接套用 Web 优化方法。"
       },
       "keywords": {
         "en": [
@@ -723,12 +723,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
     "seo": {
       "title": {
-        "en": "Vercel React View Transitions by Vercel Labs | Installation & Guide",
-        "zh": "Vercel React View Transitions by Vercel Labs：安装与使用指南"
+        "en": "React View Transitions: Navigation, Shared Elements, and Motion",
+        "zh": "React 视图过渡：导航、共享元素与界面状态动效"
       },
       "description": {
-        "en": "Use React View Transitions by Vercel Labs to plan and implement transitions between React interface states. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 React View Transitions，为 React 界面状态变化设计合适的过渡。围绕卡片进入详情、列表重排和内容加载选择实现方式，让动效表达界面关系，并结合框架配置、浏览器支持与减少动态效果偏好验证体验。"
+        "en": "Choose React view-transition patterns for navigation, shared elements, and state changes. Connect animation decisions to interface meaning, accessibility, and runtime behavior.",
+        "zh": "按导航、共享元素和状态变化选择 React 视图过渡模式，理解动效需要解释的界面关系，结合可访问性与实际运行行为，判断如何实现和检查页面切换效果。"
       },
       "keywords": {
         "en": [
@@ -961,12 +961,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
     "seo": {
       "title": {
-        "en": "Web Design Guidelines by Vercel Labs | Installation & Guide",
-        "zh": "Web Design Guidelines by Vercel Labs：安装与使用指南"
+        "en": "Web Design Guidelines: Interface Review and Accessibility",
+        "zh": "Web Design Guidelines：界面审查与可访问性检查"
       },
       "description": {
-        "en": "Use Web Design Guidelines by Vercel Labs to review interface source files against its current Web Interface Guidelines. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 Web Design Guidelines，按当前 Web Interface Guidelines 检查界面源码。向 Agent 指定页面或组件，审查交互与无障碍相关实现，获得带文件和行号的问题列表，便于定位、核对与后续修改。"
+        "en": "Review interface files with Vercel’s Web Design Guidelines Skill. Connect usability and accessibility findings to concrete code locations and the current source guidance.",
+        "zh": "使用 Vercel Web Design Guidelines 检查界面文件，围绕可用性和可访问性整理具体问题，将发现对应到代码位置，并核对当前原始指引与实际页面表现。"
       },
       "keywords": {
         "en": [
@@ -1199,12 +1199,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
     "seo": {
       "title": {
-        "en": "Writing Guidelines by Vercel Labs | Installation & Guide",
-        "zh": "Writing Guidelines by Vercel Labs：安装与使用指南"
+        "en": "Writing Guidelines: Review Documentation and Interface Copy",
+        "zh": "Writing Guidelines：文档表达与界面文案审查"
       },
       "description": {
-        "en": "Use Writing Guidelines by Vercel Labs to review existing documentation and prose against Vercel’s writing handbook. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 Writing Guidelines，依据 Vercel 写作手册审查已有文档与文案。指定文件、读者和用途，获取可定位的语言与结构反馈，再结合自己的术语、品牌语气和文档要求，选择适合采纳的修改。"
+        "en": "Check technical documentation and interface copy with Vercel Writing Guidelines. Review expression and consistency, with focused findings tied to files and relevant lines.",
+        "zh": "用 Vercel Writing Guidelines 检查技术文档与界面文案，核对表达、术语和一致性，将修改建议对应到具体文件与行号，避免用泛化写作意见替代可执行的审查。"
       },
       "keywords": {
         "en": [
@@ -1437,12 +1437,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
     "seo": {
       "title": {
-        "en": "Deploy to Vercel by Vercel Labs | Installation & Guide",
-        "zh": "Deploy to Vercel by Vercel Labs：安装与使用指南"
+        "en": "Deploy to Vercel: Project Context, Access, and Deployment Checks",
+        "zh": "Deploy to Vercel：项目关联、访问条件与部署检查"
       },
       "description": {
-        "en": "Use Deploy to Vercel by Vercel Labs to guide an agent through publishing a project to Vercel. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 Deploy to Vercel，指导 Agent 将项目部署到 Vercel。先检查仓库关联、账户访问和目标团队，再根据项目状态选择部署方式，默认创建可审阅的预览版本，并在明确需要时处理生产发布。"
+        "en": "Prepare a Vercel deployment by checking project linkage, CLI access, and team context. Distinguish preview work from an explicitly authorized production deployment.",
+        "zh": "部署到 Vercel 前核对项目关联、CLI 访问和团队上下文，了解预览流程与明确授权的生产部署之间的区别，并通过实际输出检查目标环境和部署结果。"
       },
       "keywords": {
         "en": [
@@ -1675,12 +1675,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
     "seo": {
       "title": {
-        "en": "Vercel CLI with Tokens by Vercel Labs | Installation & Guide",
-        "zh": "Vercel CLI with Tokens by Vercel Labs：安装与使用指南"
+        "en": "Vercel CLI Tokens: Project Scope, Credentials, and Safe Usage",
+        "zh": "Vercel CLI Token：项目范围、凭据与授权操作指南"
       },
       "description": {
-        "en": "Use Vercel CLI with Tokens by Vercel Labs to guide deployment and project management with token-based authentication. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 Vercel CLI with Tokens，通过令牌认证指导部署与项目管理。先确认已授权的凭据来源和目标项目、团队，再执行对应 CLI 任务，适用于不依赖交互登录的工作环境，并避免在报告中暴露令牌值。"
+        "en": "Use Vercel CLI tokens with explicit team and project context. Review credential handling, required access, and the commands appropriate to the authorized task.",
+        "zh": "在明确团队、项目与授权任务的前提下使用 Vercel CLI Token，核对凭据处理和所需访问范围，选择适合当前工作的命令，避免把身份配置等同于任意部署权限。"
       },
       "keywords": {
         "en": [
@@ -1913,12 +1913,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
     "seo": {
       "title": {
-        "en": "Vercel Optimize by Vercel Labs | Installation & Guide",
-        "zh": "Vercel Optimize by Vercel Labs：安装与使用指南"
+        "en": "Vercel Optimize: Investigate Performance with Project Evidence",
+        "zh": "Vercel Optimize：基于项目证据调查性能与改进方向"
       },
       "description": {
-        "en": "Use Vercel Optimize by Vercel Labs to investigate cost and performance in a deployed Vercel project. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 Vercel Optimize，调查已部署 Vercel 项目的成本与性能。先收集用量与生产信号，再确定有证据支持的路由和设置，结合框架版本、相关源码与可观测性权限，形成有优先级的改进建议。"
+        "en": "Investigate Vercel performance through observability signals and scoped checks. Use available project data to prioritize recommendations and verify the effect of changes.",
+        "zh": "通过可观测信号与范围明确的检查调查 Vercel 性能问题，依据现有项目数据安排优化优先级，再检查改动效果；区分可验证的性能证据与尚待确认的推测。"
       },
       "keywords": {
         "en": [
@@ -2151,12 +2151,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/agent-browser",
     "seo": {
       "title": {
-        "en": "agent-browser Skill by Vercel Labs | Installation & Guide",
-        "zh": "agent-browser Skill by Vercel Labs：安装与使用指南"
+        "en": "agent-browser Skill: Page Navigation, Actions, and Verification",
+        "zh": "agent-browser Skill：页面导航、交互操作与结果验证"
       },
       "description": {
-        "en": "Use the agent-browser Skill by Vercel Labs to connect an agent with browser workflows for the agent-browser CLI. Explore use cases, installation options, and a practical usage guide.",
-        "zh": "使用 Vercel Labs 的 agent-browser Skill，为 Agent 接入 agent-browser CLI 的浏览器操作流程。单独准备工具环境后，读取与已安装版本匹配的指令，再根据网页交互、探索式测试或受支持的 Electron 任务选择专项流程。"
+        "en": "Guide an agent through agent-browser navigation, element interaction, and verification. Check the installed tool version and setup before applying the browser instructions.",
+        "zh": "通过 agent-browser Skill 组织网页导航、元素交互与结果验证，先核对实际工具版本和配置，再应用对应指引；了解任务方法与浏览器执行能力的分工。"
       },
       "keywords": {
         "en": [

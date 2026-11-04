@@ -1,5 +1,7 @@
 ---
 title: "Best AI Agent Platform in 2026: A Reproducible Shortlist"
+seoTitle: "AI Agent Platforms in 2026: Build a Reproducible Shortlist"
+seoDescription: "AI agent platform selection needs a reproducible shortlist. Evaluate control, deployment, governance, cost, recovery, and exit using the same task and evidence standards."
 description: "Choose the best AI agent platform for your task with a reproducible shortlist covering control, deployment, governance, evaluations, cost, observability, recovery, and exit."
 slug: "best-ai-agent-platform-2026"
 date: "2026-05-15"

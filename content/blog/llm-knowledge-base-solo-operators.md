@@ -1,5 +1,7 @@
 ---
 title: "LLM Knowledge Base: Do Solo Operators Actually Need One?"
+seoTitle: "LLM Knowledge Bases: When Solo Operators Need Retrieval"
+seoDescription: "An LLM knowledge base adds retrieval and maintenance obligations. Compare a custom build, an existing workspace, or no new system against a solo operator’s actual information needs."
 description: "An LLM knowledge base sounds powerful — but is building one the right move for solo operators? Here's an honest breakdown of the trade-offs."
 slug: "llm-knowledge-base-solo-operators"
 date: "2026-04-06"

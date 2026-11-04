@@ -1,5 +1,7 @@
 ---
 title: "Claude Managed Agents：对一人公司意味着什么"
+seoTitle: "Claude Managed Agents：一人公司的托管选择与使用成本"
+seoDescription: "Claude Managed Agents 提供托管运行基础设施，但不替代业务目标、审批和责任人。了解工具权限、长任务恢复与试点条件，判断一人公司是否需要这层能力及其维护成本。"
 description: "Claude Managed Agents 适合需要托管运行时、工具权限与长任务恢复的工作，但不能替代明确目标、业务规则、审批和责任人。本文说明其适用边界、不能替代什么，以及一人公司如何用低风险任务安全试点。"
 slug: "claude-managed-agents-one-person-company"
 date: "2026-04-22"

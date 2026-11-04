@@ -1,5 +1,7 @@
 ---
 title: "Raycast 已有 Windows 版：该选 Raycast 还是 Floatboat？"
+seoTitle: "Raycast Windows 版：启动器与 Agent 工作流的选择"
+seoDescription: "Raycast Windows 版与 Floatboat 面向的工作方式不同。按启动搜索、扩展、Agent、文件、项目和自动化比较，核对付费边界，再判断自己需要快捷入口还是持续执行的工作环境。"
 description: "Raycast Windows 已正式上线。本文按启动搜索、扩展、AI Agent、文件、项目、自动化与付费边界，对比 Raycast 和 Floatboat 分别适合什么工作。"
 slug: "raycast-for-windows-floatboat"
 date: "2026-09-03"

@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 
 import { resolvePostImageUrl, type PostMeta } from "@openblog/core";
@@ -32,14 +33,14 @@ export function resolvePostOgImages(
 }
 
 export function buildPostTwitterMetadata(
-  post: Pick<PostMeta, "title" | "description" | "coverImage">,
+  post: Pick<PostMeta, "title" | "description" | "seoTitle" | "seoDescription" | "coverImage">,
 ): NonNullable<Metadata["twitter"]> {
   const images = resolvePostOgImages(post);
 
   return {
     card: images.length > 0 ? "summary_large_image" : "summary",
-    title: post.title,
-    description: post.description,
+    title: seoTitle(post.seoTitle ?? post.title),
+    description: post.seoDescription ?? post.description,
     ...(images.length > 0
       ? {
           images: images.map(({ url, alt }) => ({ url, alt })),

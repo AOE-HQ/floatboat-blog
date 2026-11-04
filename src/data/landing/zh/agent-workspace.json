@@ -2,8 +2,8 @@
   "slug": "agent-workspace",
   "locale": "zh",
   "seo": {
-    "title": "Floatboat Agent 工作站：让 Agent、文件与工作留在同一空间",
-    "description": "在 macOS 和 Windows 的持续工作空间中，让 Agent 使用本地文件、工具、项目规则和可编辑交付物，同时保留人的审阅和控制。",
+    "title": "AI Agent 工作站：本地文件、工具与持续项目协作",
+    "description": "将 Agent、本地文件、工具与可编辑成果放在同一桌面工作空间，保留项目背景与执行规则，让后续任务衔接已有进展，并通过人工审阅、修改和确认推动交付。",
     "keywords": [
       "AI Agent 工作站",
       "Agent 工作空间",

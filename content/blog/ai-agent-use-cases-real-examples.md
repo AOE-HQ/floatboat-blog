@@ -1,5 +1,7 @@
 ---
 title: "AI Agent Use Cases: Real Examples and a Selection Guide"
+seoTitle: "AI Agent Use Cases: Real Tasks, Examples, and Selection"
+seoDescription: "AI agent use cases become useful when inputs, tools, outputs, and approval gates are clear. Examine documented examples and test a bounded project before wider adoption."
 description: "Choose an AI agent use case by inputs, tools, outputs, approval gates, and failure modes. Includes documented examples and a practical pilot framework."
 slug: "ai-agent-use-cases-real-examples"
 date: "2026-03-20"

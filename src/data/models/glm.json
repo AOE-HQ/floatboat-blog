@@ -2,44 +2,98 @@
   "slug": "glm",
   "name": "GLM",
   "access": "capacity",
-  "badge": { "en": "Zhipu · Protocol configured", "zh": "智谱 · 协议已适配" },
+  "badge": {
+    "en": "Zhipu · Protocol configured",
+    "zh": "智谱 · 协议已适配"
+  },
   "summary": {
     "en": "GLM 5 and GLM 4 support thinking-mode playback below the picker.",
     "zh": "GLM 5 与 GLM 4 已在选择器下层适配 thinking-mode 回放。"
   },
-  "seo": {"title":{"en":"GLM 5 and GLM 4 Models: Thinking Mode, Reasoning and Model IDs","zh":"GLM 5 与 GLM 4 模型：Thinking Mode、推理能力与 Model ID"},"description":{"en":"Learn about GLM 5 and GLM 4 model IDs, thinking-mode reasoning, reasoning_content playback, Chat Completions compatibility, and current status.","zh":"了解 GLM 5 与 GLM 4 的 Model ID、thinking-mode 推理、reasoning_content 回放、Chat Completions 兼容与当前状态。"},"keywords":[{"en":"GLM 5","zh":"GLM 5"},{"en":"GLM 4","zh":"GLM 4"},{"en":"GLM thinking mode","zh":"GLM thinking mode"},{"en":"reasoning_content","zh":"reasoning_content"}]},
+  "seo": {
+    "title": {
+      "en": "GLM Models: Thinking Mode, Reasoning Playback, and IDs",
+      "zh": "GLM 模型：思考模式、推理回放与运行标识"
+    },
+    "description": {
+      "en": "Explore GLM 5 and GLM 4 IDs, thinking mode, reasoning-content playback, and Chat Completions compatibility. Match task needs to the recorded configuration and status.",
+      "zh": "了解 GLM 5 与 GLM 4 的模型 ID、思考模式、reasoning_content 回放和 Chat Completions 兼容方式，结合记录状态核对推理任务需要的配置与输入条件。"
+    },
+    "keywords": [
+      {
+        "en": "GLM 5",
+        "zh": "GLM 5"
+      },
+      {
+        "en": "GLM 4",
+        "zh": "GLM 4"
+      },
+      {
+        "en": "GLM thinking mode",
+        "zh": "GLM thinking mode"
+      },
+      {
+        "en": "reasoning_content",
+        "zh": "reasoning_content"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "GLM 5 and GLM 4 thinking-mode models.",
-        "zh": "GLM 5 与 GLM 4 Thinking Mode 推理模型。"
+      "en": "GLM 5 and GLM 4 thinking-mode models.",
+      "zh": "GLM 5 与 GLM 4 Thinking Mode 推理模型。"
     },
     "description": {
       "en": "`glm-5` and `glm-4` use `reasoning_content` playback through the OpenAI Chat Completions channel. Neither is exposed in the main picker.",
       "zh": "`glm-5` 与 `glm-4` 通过 OpenAI Chat Completions 通道适配 `reasoning_content` 回放，在 2026 年 10 月 9 日记录中均未显示主选择器入口，当前应核对实际菜单。"
     },
     "prompts": [
-      { "en": "Reason through a Chinese document", "zh": "推理分析中文文档" }
+      {
+        "en": "Reason through a Chinese document",
+        "zh": "推理分析中文文档"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Model IDs", "zh": "Model ID" },
-      "value": { "en": "glm-5 · glm-4", "zh": "glm-5 · glm-4" }
+      "label": {
+        "en": "Model IDs",
+        "zh": "Model ID"
+      },
+      "value": {
+        "en": "glm-5 · glm-4",
+        "zh": "glm-5 · glm-4"
+      }
     },
     {
-      "label": { "en": "Protocol", "zh": "协议" },
+      "label": {
+        "en": "Protocol",
+        "zh": "协议"
+      },
       "value": {
         "en": "OpenAI Chat Completions",
         "zh": "OpenAI Chat Completions"
       }
     },
     {
-      "label": { "en": "Reasoning field", "zh": "推理字段" },
-      "value": { "en": "reasoning_content", "zh": "reasoning_content" }
+      "label": {
+        "en": "Reasoning field",
+        "zh": "推理字段"
+      },
+      "value": {
+        "en": "reasoning_content",
+        "zh": "reasoning_content"
+      }
     },
     {
-      "label": { "en": "Availability", "zh": "可用状态" },
-      "value": { "en": "Historical configuration", "zh": "旧记录未显示选择器入口" }
+      "label": {
+        "en": "Availability",
+        "zh": "可用状态"
+      },
+      "value": {
+        "en": "Historical configuration",
+        "zh": "旧记录未显示选择器入口"
+      }
     }
   ],
   "positioning": {
@@ -53,15 +107,24 @@
     },
     "traits": [
       {
-        "label": { "en": "Reasoning", "zh": "推理" },
-        "value": { "en": "Thinking-mode playback", "zh": "thinking-mode 回放" },
+        "label": {
+          "en": "Reasoning",
+          "zh": "推理"
+        },
+        "value": {
+          "en": "Thinking-mode playback",
+          "zh": "thinking-mode 回放"
+        },
         "description": {
           "en": "The adapter preserves `reasoning_content` in the response flow.",
           "zh": "适配器在响应流程中保留 `reasoning_content`。"
         }
       },
       {
-        "label": { "en": "Transport", "zh": "传输通道" },
+        "label": {
+          "en": "Transport",
+          "zh": "传输通道"
+        },
         "value": {
           "en": "Chat Completions compatible",
           "zh": "兼容 Chat Completions"
@@ -72,15 +135,24 @@
         }
       },
       {
-        "label": { "en": "Versions", "zh": "版本" },
-        "value": { "en": "GLM 5 and GLM 4", "zh": "GLM 5 与 GLM 4" },
+        "label": {
+          "en": "Versions",
+          "zh": "版本"
+        },
+        "value": {
+          "en": "GLM 5 and GLM 4",
+          "zh": "GLM 5 与 GLM 4"
+        },
         "description": {
           "en": "Both model IDs are recognized by the runtime profile.",
           "zh": "运行时画像已识别两个型号。"
         }
       },
       {
-        "label": { "en": "Boundary", "zh": "当前边界" },
+        "label": {
+          "en": "Boundary",
+          "zh": "当前边界"
+        },
         "value": {
           "en": "Protocol ready, picker hidden",
           "zh": "已有协议记录，当前入口待核对"
@@ -199,28 +271,40 @@
     },
     "items": [
       {
-        "title": { "en": "GLM 5 profile", "zh": "GLM 5 画像" },
+        "title": {
+          "en": "GLM 5 profile",
+          "zh": "GLM 5 画像"
+        },
         "description": {
           "en": "`glm-5` is recognized in the configured runtime matrix.",
           "zh": "`glm-5` 已登记在运行时配置矩阵中。"
         }
       },
       {
-        "title": { "en": "GLM 4 profile", "zh": "GLM 4 画像" },
+        "title": {
+          "en": "GLM 4 profile",
+          "zh": "GLM 4 画像"
+        },
         "description": {
           "en": "`glm-4` is recognized alongside GLM 5.",
           "zh": "`glm-4` 与 GLM 5 一并完成登记。"
         }
       },
       {
-        "title": { "en": "Thinking-mode handling", "zh": "thinking-mode 处理" },
+        "title": {
+          "en": "Thinking-mode handling",
+          "zh": "thinking-mode 处理"
+        },
         "description": {
           "en": "The adapter supports replay of the `reasoning_content` field.",
           "zh": "适配器支持回放 `reasoning_content` 字段。"
         }
       },
       {
-        "title": { "en": "Chat gateway path", "zh": "聊天网关路径" },
+        "title": {
+          "en": "Chat gateway path",
+          "zh": "聊天网关路径"
+        },
         "description": {
           "en": "The models use an OpenAI Chat Completions-compatible channel.",
           "zh": "模型使用兼容 OpenAI Chat Completions 的通道。"
@@ -234,7 +318,10 @@
       "zh": "评估 GLM 的协议支持与访问方式。"
     },
     "choose": {
-      "title": { "en": "Useful for evaluating", "zh": "适合评估的需求" },
+      "title": {
+        "en": "Useful for evaluating",
+        "zh": "适合评估的需求"
+      },
       "items": [
         {
           "en": "You need the exact GLM adapter behavior.",
@@ -282,10 +369,46 @@
         "zh": "GLM 5 与 GLM 4 是智谱模型画像，已适配兼容聊天网关与 thinking-mode 推理。"
       }
     },
-    {"question":{"en":"What are the GLM model IDs?","zh":"GLM 的 Model ID 是什么？"},"answer":{"en":"The configured model IDs are `glm-5` and `glm-4`.","zh":"已配置 Model ID 为 `glm-5` 与 `glm-4`。"}},
-    {"question":{"en":"What does GLM thinking mode support?","zh":"GLM Thinking Mode 支持什么？"},"answer":{"en":"The adapter supports playback of the `reasoning_content` field so reasoning output can remain available in the response flow.","zh":"适配器支持回放 `reasoning_content` 字段，使推理输出能够保留在响应流程中。"}},
-    {"question":{"en":"Which protocol does GLM use?","zh":"GLM 使用什么协议？"},"answer":{"en":"The configured path uses an OpenAI Chat Completions-compatible channel.","zh":"已配置路径使用兼容 OpenAI Chat Completions 的通道。"}},
-    {"question":{"en":"What is the current GLM support status?","zh":"GLM 当前是什么支持状态？"},"answer":{"en":"Protocol support is configured for GLM 5 and GLM 4, but neither had a main-picker entry in the October 9, 2026 record; check the current client menu.","zh":"GLM 5 与 GLM 4 已完成协议适配，但在 2026 年 10 月 9 日记录中均未显示主选择器入口，当前应核对实际菜单。"}},
+    {
+      "question": {
+        "en": "What are the GLM model IDs?",
+        "zh": "GLM 的 Model ID 是什么？"
+      },
+      "answer": {
+        "en": "The configured model IDs are `glm-5` and `glm-4`.",
+        "zh": "已配置 Model ID 为 `glm-5` 与 `glm-4`。"
+      }
+    },
+    {
+      "question": {
+        "en": "What does GLM thinking mode support?",
+        "zh": "GLM Thinking Mode 支持什么？"
+      },
+      "answer": {
+        "en": "The adapter supports playback of the `reasoning_content` field so reasoning output can remain available in the response flow.",
+        "zh": "适配器支持回放 `reasoning_content` 字段，使推理输出能够保留在响应流程中。"
+      }
+    },
+    {
+      "question": {
+        "en": "Which protocol does GLM use?",
+        "zh": "GLM 使用什么协议？"
+      },
+      "answer": {
+        "en": "The configured path uses an OpenAI Chat Completions-compatible channel.",
+        "zh": "已配置路径使用兼容 OpenAI Chat Completions 的通道。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the current GLM support status?",
+        "zh": "GLM 当前是什么支持状态？"
+      },
+      "answer": {
+        "en": "Protocol support is configured for GLM 5 and GLM 4, but neither had a main-picker entry in the October 9, 2026 record; check the current client menu.",
+        "zh": "GLM 5 与 GLM 4 已完成协议适配，但在 2026 年 10 月 9 日记录中均未显示主选择器入口，当前应核对实际菜单。"
+      }
+    },
     {
       "question": {
         "en": "Does reasoning output remove the need to test GLM tool calls?",

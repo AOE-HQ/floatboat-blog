@@ -1,5 +1,7 @@
 ---
 title: "Claude Code、Cowork 与 Tag 怎么选：按工作场景做判断"
+seoTitle: "Claude Code、Cowork 与 Tag：编码、办公和协作怎么选"
+seoDescription: "从工作空间、使用者、权限、产物和任务时长比较 Claude Code、Cowork 与 Tag，并了解 Cowork 并入统一 Claude 体验后的变化，按编程、办公或共享协作任务判断选择。"
 description: "从工作区、使用者、权限、产物和任务时长对比 Claude Code、Claude Cowork 与 Claude Tag，并说明 Cowork 并入统一 Claude 体验后的变化。"
 slug: "claude-code-vs-cowork-vs-tag"
 date: "2026-08-14"

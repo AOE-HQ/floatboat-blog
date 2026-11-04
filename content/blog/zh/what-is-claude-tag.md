@@ -1,5 +1,7 @@
 ---
 title: "Claude Tag 是什么：Anthropic 的共享 Slack Agent"
+seoTitle: "Claude Tag：Anthropic 面向 Slack 协作的共享 Agent"
+seoDescription: "Claude Tag 让团队从指定 Slack 频道向 @Claude 委派工作。了解频道记忆、连接工具、权限与团队责任如何配合，再区分它与 Cowork、Code 的适用场景和执行边界。"
 description: "Claude Tag 让团队在指定 Slack 频道通过 @Claude 委派工作。本文解释频道记忆、连接工具、权限和团队责任如何区别于 Cowork 与 Code。"
 slug: "what-is-claude-tag"
 date: "2026-08-14"

@@ -1,5 +1,7 @@
 ---
 title: "World Cup 2026 Schedule: Full Fixtures & Calendar Sync"
+seoTitle: "World Cup 2026 Schedule: Full Fixtures and Calendar Sync"
+seoDescription: "World Cup 2026 featured 104 matches across 16 host cities. Review the group and knockout fixture lists and learn how ICS or FloatCup places the schedule in an existing calendar."
 description: "FIFA World Cup 2026 schedule — 104 matches, June 11 to July 19 across 16 host cities. Full fixture list and calendar sync via ICS or FloatCup."
 slug: "world-cup-2026-schedule"
 date: "2026-07-15"

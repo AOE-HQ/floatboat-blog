@@ -1,5 +1,7 @@
 ---
 title: "Browser Agent vs AI Browser vs AI Workspace: How to Choose"
+seoTitle: "Browser Agents vs AI Browsers: When a Workspace Fits Better"
+seoDescription: "Browser agents, AI browsers, and workspaces differ in context, access, and execution location. Compare recovery and task fit through a shared pilot rather than product labels."
 description: "Compare browser agents, AI browsers, and AI workspaces by context, permissions, execution location, recovery, task fit, risk, and a reproducible pilot."
 slug: "ai-browser-agent-vs-ai-browser-vs-ai-workspace"
 date: "2026-05-12"

@@ -1,5 +1,7 @@
 ---
 title: "Kimi K3 and Floatboat: Model Capabilities and the Real Integration Status"
+seoTitle: "Kimi K3 in Floatboat: Capabilities and Verified Support Status"
+seoDescription: "Kimi K3’s model capabilities are separate from Floatboat availability. Understand context and vision features alongside recorded capacity and the absence of default-picker access."
 description: "Kimi K3 brings a 1M context window, native vision, and long-horizon reasoning, but Floatboat currently lists it as underlying capacity—not a default-picker model."
 slug: "kimi-k3-floatboat"
 date: "2026-07-17"

@@ -1,5 +1,7 @@
 ---
 title: "Gemini 3.8 Flash — Google's New Coding & Agent Workhorse"
+seoTitle: "Gemini 3.8 Flash: Coding, Agent Tasks, and Model Positioning"
+seoDescription: "Gemini 3.8 Flash changes model routing beyond a version number. Compare thinking levels, tools, token costs, limits, and workload tests against an existing 3.7 configuration."
 description: "What Gemini 3.8 Flash changes after 3.7: model specs, thinking levels, pricing, tool behavior, token trade-offs, limitations, and a workload-based routing test."
 slug: "gemini-3-8-flash"
 date: "2026-09-03"

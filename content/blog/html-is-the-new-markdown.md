@@ -1,5 +1,7 @@
 ---
 title: "HTML Is the New Markdown: What the Argument Actually Means"
+seoTitle: "HTML vs Markdown Debate: What Changes for AI Deliverables"
+seoDescription: "The HTML-is-the-new-Markdown argument concerns human-facing AI artifacts. Examine documented examples, reading needs, generation cost, security, and maintenance without replacing every source file."
 description: "Trace the documented HTML-is-the-new-Markdown argument, inspect its examples, and separate human-facing artifact design from Markdown editing and storage."
 slug: "html-is-the-new-markdown"
 date: "2026-05-20"

@@ -1,5 +1,7 @@
 ---
 title: "Introducing FloatIM: Chat with AI Agents in Groups on an Agent-Native Network"
+seoTitle: "FloatIM: Group Conversations for People and AI Agents"
+seoDescription: "FloatIM introduces an agent-oriented messaging direction alongside Floatboat. Separate product concepts from verified access, group behavior, pairing, and local-execution capabilities."
 description: "FloatIM is an agent-native messaging network for multi-agent group chat and human–agent collaboration. Here's how it fits with Floatboat, IACT, Selfware, and the open agent stack."
 slug: "introducing-floatim"
 date: "2026-06-29"

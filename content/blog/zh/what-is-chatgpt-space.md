@@ -1,5 +1,7 @@
 ---
 title: "ChatGPT Space 是什么？Pages、Projects 与权限边界"
+seoTitle: "ChatGPT Space：Pages、Projects 与工作空间权限"
+seoDescription: "ChatGPT Space 将可编辑 Pages、文件与协作放在一起。了解它与 Projects、聊天的区别，核对权限和迁移条件，再判断哪些资料与持续任务适合进入共享工作空间。"
 description: "ChatGPT Space 用可编辑 Pages、文件和协作空间承接长期工作。本文讲清它与 Projects、聊天和持续 Agent 的区别，以及权限、数据与迁移选择。"
 slug: "what-is-chatgpt-space"
 date: "2026-10-09"

@@ -1,5 +1,7 @@
 ---
 title: "Kimi K3 是什么 — 2.8 万亿参数开源旗舰模型的架构、跑分与 Agentic Coding 影响全解析"
+seoTitle: "Kimi K3：模型架构、基准表现与 Agentic Coding 影响"
+seoDescription: "部署 Kimi K3 前，核对开放权重边界、Kimi K3 License、API 标识、上下文与工具兼容。结合托管价格和自托管基础设施总成本，判断不同接入方式，而非将公开权重等同于免费使用。"
 description: "从开放权重边界、Kimi K3 License、准确 kimi-k3 API ID、1M 上下文、当前多币种价格、工具兼容、64+ 加速卡建议与自托管总成本解析 Kimi K3。"
 slug: "kimi-k3-open-frontier-model"
 date: "2026-07-16"

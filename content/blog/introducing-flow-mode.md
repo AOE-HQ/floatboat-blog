@@ -1,5 +1,7 @@
 ---
 title: "Introducing Floatboat Flow Mode — AI Voice Dictation"
+seoTitle: "Floatboat Flow Mode: Voice Dictation and In-Context Editing"
+seoDescription: "Floatboat Flow Mode connects voice dictation, manual edits, and agent work in one document. Explore annotations, meeting actions, and revision history beyond ordinary transcription."
 description: "Floatboat Flow Mode turns speech into living documents—edit while you dictate, batch voice annotations for your Agent, and get meeting action items before the call ends."
 slug: "introducing-flow-mode"
 date: "2026-08-19"

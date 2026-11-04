@@ -1,5 +1,7 @@
 ---
 title: "AI Agent 上下文工程：哪些信息该放入、排除与保留"
+seoTitle: "AI Agent 上下文工程：资料选择、信息排除与长期保留"
+seoDescription: "AI Agent 上下文工程并非不断增加资料。了解指令、工具契约、授权检索、工作记忆与压缩如何配合，再通过可复现案例检查上下文是否支持正确决策，以及哪些信息应长期保留。"
 description: "AI Agent 上下文工程不等于塞入更多资料。本指南说明如何设计指令、工具契约、权限检索、工作记忆、长期记忆与压缩策略，并用可复现案例评估上下文是否真的支持正确决策。"
 slug: "context-engineering-for-ai-agents"
 date: "2026-07-01"

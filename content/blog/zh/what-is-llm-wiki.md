@@ -1,5 +1,7 @@
 ---
 title: "什么是 LLM Wiki——你该不该建一个？"
+seoTitle: "LLM Wiki：知识结构、维护成本与是否自建的判断"
+seoDescription: "LLM Wiki 通过预整理知识减少每次从零检索。结合 Karpathy 的设想与 Farzapedia 等案例，比较它与 RAG 的区别、维护成本和更轻的变体，判断单人业务是否需要自建。"
 description: "Karpathy 的 LLM wiki 爆火是有原因的。它到底是什么、为谁而建、单人创业者需不需要一个？本文讲清「预编译知识库 vs RAG 每次重来」的核心差异，拆解 Farzapedia 这类真实案例，并给出不建任何基础设施也能用的变体。"
 slug: "what-is-llm-wiki"
 date: "2026-04-14"

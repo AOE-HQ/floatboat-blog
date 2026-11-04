@@ -1,5 +1,7 @@
 ---
 title: "Why Markdown Runs the AI Pipeline — Context In, Contracts Through, Output Out"
+seoTitle: "Markdown for AI Pipelines: Context, Contracts, and Outputs"
+seoDescription: "Markdown supports AI context, agent handoffs, and structure-aware retrieval. Examine the mechanics and engineering evidence behind inputs, task contracts, and output organization."
 description: "Markdown has become the working format of AI pipelines: the context LLMs read best, the contract agents exchange, and the structure RAG chunking depends on. Here is the mechanics."
 slug: "markdown-for-ai-pipelines"
 date: "2026-09-14"

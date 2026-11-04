@@ -1,5 +1,7 @@
 ---
 title: "What Is an AI Scheduling Agent? 4 Types Explained"
+seoTitle: "AI Scheduling Agents: Four Types and How Their Roles Differ"
+seoDescription: "AI scheduling agents cover booking, calendar optimization, conversation, and event-triggered work. Compare permissions, time zones, conflicts, audit records, and failure behavior."
 description: "Learn what AI scheduling agents can verifiably do across booking, optimization, conversational calendar actions, and configured event-triggered workflows."
 slug: "ai-scheduling-agent"
 date: "2026-06-29"

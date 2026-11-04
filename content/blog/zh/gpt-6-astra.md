@@ -1,5 +1,7 @@
 ---
 title: "GPT-6 Astra：当前规格、价格、安全边界与适用场景"
+seoTitle: "GPT-6 Astra：模型规格、价格、安全边界与适用任务"
+seoDescription: "选择 GPT-6 Astra 时，需要同时了解 token 价格、长上下文溢价、工具和安全接入条件。对照文档中的模型画像与 Sol、Luna，结合实际工作负载和限制判断适用范围。"
 description: "基于 OpenAI 当前官方资料解释 GPT-6 Astra：10/50 美元价格、1.05M 上下文、工具支持、长上下文溢价、Critical 网络安全门槛，以及与 GPT-6.1 Sol、GPT-6 Luna 的选型边界。"
 slug: "gpt-6-astra"
 date: "2026-09-04"

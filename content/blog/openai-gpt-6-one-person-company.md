@@ -1,5 +1,7 @@
 ---
 title: "GPT-6 Astra for a One-Person Company: Where It Pays Off"
+seoTitle: "GPT-6 Astra for Solo Companies: Tasks, Costs, and Adoption"
+seoDescription: "GPT-6 Astra in a solo company needs task-level cost and acceptance checks. Compare controls, evaluation, Floatboat access, and workloads better served by cheaper models or automation."
 description: "A practical guide to using GPT-6 Astra in a one-person company: task fit, costs, controls, evaluation, Floatboat access, and when a cheaper model is better."
 slug: "openai-gpt-6-one-person-company"
 date: "2026-04-24"

@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek V4.1 Flash: Release Status, Specs, Pricing, and Migration"
+seoTitle: "DeepSeek V4.1 Flash: Release Status, Pricing, and Migration"
+seoDescription: "DeepSeek V4.1 Flash migration involves exact model IDs, context, vision, pricing, and retired aliases. Check routing changes and repeat task tests before replacing a previous setup."
 description: "DeepSeek V4.1 Flash is now the production Flash model. Verify its model ID, 1M context, vision support, peak pricing, retired aliases, and V4 Pro routing."
 slug: "deepseek-v4-1-flash"
 date: "2026-09-09"

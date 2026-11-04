@@ -1,5 +1,7 @@
 ---
 title: "Claude Tag 替代方案：共享 AI Teammate 怎么选"
+seoTitle: "Claude Tag 替代方案：共享 AI 协作与任务交接比较"
+seoDescription: "比较 Slack Agentforce、Teams Copilot Agent、Glean、Moveworks 与 FloatIM 的共享上下文、权限继承和执行动作，结合治理需求选择 Claude Tag 替代方案。"
 description: "从共享上下文、权限继承、执行动作和治理能力比较 Slack Agentforce、Teams Copilot Agent、Glean、Moveworks 与 FloatIM。"
 slug: "best-claude-tag-alternatives"
 date: "2026-08-14"

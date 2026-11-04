@@ -1,5 +1,7 @@
 ---
 title: "定制 AI Agent 开发：从需求、架构到验收交付"
+seoTitle: "定制 AI Agent 开发：从需求范围、架构到验收交付"
+seoDescription: "定制 AI Agent 开发应先确认任务是否需要 Agent，再写清可测试需求、工具、状态与权限。通过评测、恢复和交接检查验收，判断产物能否部署、维护并脱离原开发者使用。"
 description: "定制 AI Agent 开发实用指南：判断是否真的需要 Agent，写清可测试的需求合同，设计工具、状态、权限与安全边界，建立完整评测，并验收可部署、可恢复、可维护且不依赖原开发者的交付物。"
 slug: "custom-ai-agent-development"
 date: "2026-03-27"

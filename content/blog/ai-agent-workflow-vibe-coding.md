@@ -1,5 +1,7 @@
 ---
 title: "AI Agent Workflow: Fixing What Vibe Coding Breaks"
+seoTitle: "AI Agent Workflows: Turn Vibe Coding into Deliverable Software"
+seoDescription: "Vibe-coded software needs acceptance criteria, repository rules, tests, and diff review. Build a bounded agent workflow that keeps merging and important decisions under control."
 description: "Turn vibe-coded prototypes into reviewable software with a bounded AI agent workflow: acceptance criteria, repository rules, tests, diff review, and merge gates."
 slug: "ai-agent-workflow-vibe-coding"
 date: "2026-04-20"

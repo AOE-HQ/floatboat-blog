@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek DSH Superagent: From GitHub Requests to Agent Workflows"
+seoTitle: "DeepSeek DSH Superagent: GitHub Requests to Coding Workflows"
+seoDescription: "DSH Superagent is a DeepSeek Harness research prototype for coding work. Follow authorized GitHub and optional Feishu requests through isolated tasks, review feedback, and delivery."
 description: "Understand how DeepSeek's DSH Superagent prototype turns authorized GitHub and Feishu requests into coding tasks, and which workflow mechanisms you can adapt."
 slug: "deepseek-dsh-superagent"
 date: "2026-11-02"

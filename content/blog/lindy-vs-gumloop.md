@@ -1,5 +1,7 @@
 ---
 title: "Lindy vs Gumloop: Which AI Agent Tool Fits You?"
+seoTitle: "Lindy vs Gumloop: Compare Agent Tasks and Automation Design"
+seoDescription: "Lindy and Gumloop should be tested on the same task. Compare agent instructions, visual flows, approvals, records, recovery, and total cost without assuming fixed prices or results."
 description: "Choose Lindy or Gumloop with the same task: compare agent instructions, visual workflows, permissions, approvals, run records, recovery, and total operating cost without invented tests or prices."
 slug: "lindy-vs-gumloop"
 date: "2026-03-20"

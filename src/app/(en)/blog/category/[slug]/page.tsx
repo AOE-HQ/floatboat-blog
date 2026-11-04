@@ -1,3 +1,4 @@
+import { getArchiveSearchCopy } from "@/lib/blog-archive-metadata";
 import { FaqBand } from "@/components/faq-band";
 import { getCategoryFaqs } from "@/lib/blog-archive-faqs";
 import type { Metadata } from "next";
@@ -39,15 +40,17 @@ export async function generateMetadata({
     return {};
   }
 
-  const categoryName = posts[0]?.category ?? slug;
   const canonical = absoluteUrl(categoryPath(slug));
 
+  const search = getArchiveSearchCopy("category", slug, "en");
+
   return {
-    title: `${categoryName} | Blog`,
-    description: `Articles in ${categoryName} on Open Blog.`,
+    title: { absolute: search.title },
+    description: search.description,
     alternates: { canonical },
     openGraph: {
-      title: `${categoryName} | Blog`,
+      title: search.title,
+      description: search.description,
       url: canonical,
       type: "website",
     },

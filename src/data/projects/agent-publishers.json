@@ -47,8 +47,8 @@
       }
     ],
     "en": {
-      "seoTitle": "OpenAI: AI Research and Agent Tools | Floatboat",
-      "seoDescription": "Explore OpenAI’s public work on agent software and developer tools, with Codex as a representative project. Understand the organization, its open harness, and the distinction between public source, model access, and managed services.",
+      "seoTitle": "OpenAI: Codex Harness and Agent Developer Resources",
+      "seoDescription": "Explore OpenAI’s public agent tooling through Codex, including its context, tool loop, and approvals. Distinguish source code from model access and managed services.",
       "heroTitle": "OpenAI: AI Research and Agent Tools",
       "heroDescription": "Explore OpenAI’s public work on agent software and developer tools, with Codex as a representative project. Understand the organization, its open harness, and the distinction between public source, model access, and managed services.",
       "overview": {
@@ -102,8 +102,8 @@
       }
     },
     "zh": {
-      "seoTitle": "OpenAI：AI 研究与 Agent 工具 | Floatboat",
-      "seoDescription": "了解 OpenAI 在 Agent 软件与开发工具上的公开工作，以 Codex 为代表，认识组织方向、开放运行层，以及公开源码、模型访问和托管服务之间的区别。",
+      "seoTitle": "OpenAI：Codex Harness 与 Agent 开发资源",
+      "seoDescription": "通过 Codex 了解 OpenAI 的公开 Agent 工具，研究上下文、工具循环与审批机制。区分可见源码、模型接入和托管服务，为自己的工作流设计选择可参考的机制。",
       "heroTitle": "OpenAI：AI 研究与 Agent 工具",
       "heroDescription": "了解 OpenAI 在 Agent 软件与开发工具上的公开工作，以 Codex 为代表，认识组织方向、开放运行层，以及公开源码、模型访问和托管服务之间的区别。",
       "overview": {
@@ -217,8 +217,8 @@
       }
     ],
     "en": {
-      "seoTitle": "DeepSeek: Models and Agent Infrastructure | Floatboat",
-      "seoDescription": "Explore DeepSeek Harness and DSH Superagent Prototype: a plugin-based runtime and a repository-focused coding agent. Compare their roles, workflow mechanisms, and current project requirements.",
+      "seoTitle": "DeepSeek: Harness Runtime and DSH Superagent Prototype",
+      "seoDescription": "Compare DeepSeek Harness’s plugin-based runtime with DSH Superagent’s repository-task prototype. Study tool composition, request routing, and execution boundaries.",
       "heroTitle": "DeepSeek: Models and Agent Infrastructure",
       "heroDescription": "Explore DeepSeek Harness and DSH Superagent Prototype: a plugin-based runtime and a repository-focused coding agent. Compare their roles, workflow mechanisms, and current project requirements.",
       "overview": {
@@ -272,8 +272,8 @@
       }
     },
     "zh": {
-      "seoTitle": "DeepSeek：模型与 Agent 基础设施 | Floatboat",
-      "seoDescription": "通过 DeepSeek Harness 与 DSH Superagent Prototype 了解插件化运行层和仓库协作 Agent，比较两者的职责、可借鉴的工作流机制与实际使用条件。",
+      "seoTitle": "DeepSeek：Harness 运行层与 DSH Superagent 原型",
+      "seoDescription": "比较 DeepSeek Harness 插件化运行层与 DSH Superagent 仓库任务原型，了解工具组合、请求路由和执行边界，区分底层运行机制与具体协作流程。",
       "heroTitle": "DeepSeek：模型与 Agent 基础设施",
       "heroDescription": "通过 DeepSeek Harness 与 DSH Superagent Prototype 了解插件化运行层和仓库协作 Agent，比较两者的职责、可借鉴的工作流机制与实际使用条件。",
       "overview": {
@@ -375,8 +375,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Earendil Works: Pi and Agent Tooling | Floatboat",
-      "seoDescription": "Explore Earendil Works through Pi, an extensible agent harness and toolkit. Understand the current upstream, reusable runtime libraries, package-based customization, and the responsibilities that remain with the host environment.",
+      "seoTitle": "Earendil Works: Pi Harness, Extensions, and Runtime Libraries",
+      "seoDescription": "Learn about Earendil Works through Pi, its extensible agent harness and toolkit. Review the current upstream, extension model, runtime libraries, and host responsibilities.",
       "heroTitle": "Earendil Works: Pi and Agent Tooling",
       "heroDescription": "Explore Earendil Works through Pi, an extensible agent harness and toolkit. Understand the current upstream, reusable runtime libraries, package-based customization, and the responsibilities that remain with the host environment.",
       "overview": {
@@ -430,8 +430,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Earendil Works：Pi 与 Agent 工具 | Floatboat",
-      "seoDescription": "通过 Pi 了解 Earendil Works 的 Agent 工具方向，认识当前上游、可复用运行库与基于扩展包的定制方式，以及运行环境仍需承担的职责。",
+      "seoTitle": "Earendil Works：Pi Harness、扩展与运行基础库",
+      "seoDescription": "通过 Pi 了解 Earendil Works 的 Agent Harness 与工具集，查看当前上游、扩展方式和运行基础库，判断工作流需要哪一层定制，以及宿主仍需承担哪些职责。",
       "heroTitle": "Earendil Works：Pi 与 Agent 工具",
       "heroDescription": "通过 Pi 了解 Earendil Works 的 Agent 工具方向，认识当前上游、可复用运行库与基于扩展包的定制方式，以及运行环境仍需承担的职责。",
       "overview": {
@@ -533,8 +533,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Anomaly: OpenCode and Coding Tools | Floatboat",
-      "seoDescription": "Explore Anomaly as the publisher of OpenCode. Learn the organization’s coding-agent project, its interactive workflow, and how official software, community integrations, and connected model services differ.",
+      "seoTitle": "Anomaly: OpenCode and Interactive Coding-Agent Workflows",
+      "seoDescription": "Meet Anomaly through OpenCode’s coding workflow, task modes, and review loop. Separate the maintained agent software from model providers and community integrations.",
       "heroTitle": "Anomaly: OpenCode and Coding Tools",
       "heroDescription": "Explore Anomaly as the publisher of OpenCode. Learn the organization’s coding-agent project, its interactive workflow, and how official software, community integrations, and connected model services differ.",
       "overview": {
@@ -588,8 +588,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Anomaly：OpenCode 与编程工具 | Floatboat",
-      "seoDescription": "了解 OpenCode 的发布者 Anomaly，认识其编程 Agent 项目与交互工作流，并区分官方软件、社区集成和接入模型服务各自的角色。",
+      "seoTitle": "Anomaly：OpenCode 与交互式编程 Agent 工作流",
+      "seoDescription": "通过 OpenCode 的编程流程、任务模式与审阅循环了解 Anomaly，区分项目软件、模型服务和社区集成，查看发布者方向与代表工具的原始入口。",
       "heroTitle": "Anomaly：OpenCode 与编程工具",
       "heroDescription": "了解 OpenCode 的发布者 Anomaly，认识其编程 Agent 项目与交互工作流，并区分官方软件、社区集成和接入模型服务各自的角色。",
       "overview": {
@@ -691,8 +691,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Nous Research: Hermes and Agent Systems | Floatboat",
-      "seoDescription": "Explore Nous Research through Hermes Agent, its public system for persistent context, reusable Skills, tools, and scheduled work. Understand the publisher, representative software, and the limits of stored procedural knowledge.",
+      "seoTitle": "Nous Research: Hermes Agent, Memory, and Reusable Skills",
+      "seoDescription": "Explore Nous Research’s Hermes Agent and its memory, Skills, tools, and scheduling. Consider how stored context and procedures support continuing and recurring work.",
       "heroTitle": "Nous Research: Hermes and Agent Systems",
       "heroDescription": "Explore Nous Research through Hermes Agent, its public system for persistent context, reusable Skills, tools, and scheduled work. Understand the publisher, representative software, and the limits of stored procedural knowledge.",
       "overview": {
@@ -746,8 +746,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Nous Research：Hermes 与 Agent 系统 | Floatboat",
-      "seoDescription": "通过 Hermes Agent 了解 Nous Research 的公开 Agent 系统，认识持久上下文、可复用 Skills、工具与定时工作，以及长期保存任务方法时需要考虑的边界。",
+      "seoTitle": "Nous Research：Hermes Agent、持续记忆与可复用 Skills",
+      "seoDescription": "了解 Nous Research 的 Hermes Agent，查看记忆、Skills、工具与调度如何支持持续和重复任务，区分上下文存储、可复用方法与实际执行环境。",
       "heroTitle": "Nous Research：Hermes 与 Agent 系统",
       "heroDescription": "通过 Hermes Agent 了解 Nous Research 的公开 Agent 系统，认识持久上下文、可复用 Skills、工具与定时工作，以及长期保存任务方法时需要考虑的边界。",
       "overview": {
@@ -849,8 +849,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Moonshot AI: Kimi and Agent Tools | Floatboat",
-      "seoDescription": "Explore Moonshot AI’s public coding-agent work through Kimi Code CLI. Understand the current project, the retired Python CLI, and how model services, editor interfaces, and reusable extensions fit together.",
+      "seoTitle": "Moonshot AI: Kimi Code CLI, Subagents, and Developer Tools",
+      "seoDescription": "Explore Moonshot AI’s Kimi Code CLI, subagents, hooks, and tool feedback. Distinguish the maintained project from retired interfaces and separate model services.",
       "heroTitle": "Moonshot AI: Kimi and Agent Tools",
       "heroDescription": "Explore Moonshot AI’s public coding-agent work through Kimi Code CLI. Understand the current project, the retired Python CLI, and how model services, editor interfaces, and reusable extensions fit together.",
       "overview": {
@@ -904,8 +904,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Moonshot AI：Kimi 与 Agent 工具 | Floatboat",
-      "seoDescription": "通过 Kimi Code CLI 了解月之暗面的公开编程 Agent 工作，区分当前项目与已停止维护的 Python CLI，认识模型服务、编辑器界面与可复用扩展的关系。",
+      "seoTitle": "Moonshot AI：Kimi Code CLI、子 Agent 与开发工具",
+      "seoDescription": "查看 Moonshot AI 的 Kimi Code CLI、子 Agent、hooks 与工具反馈机制，区分当前项目、已退役入口和模型服务，为开发工作流研究选择准确的上游来源。",
       "heroTitle": "Moonshot AI：Kimi 与 Agent 工具",
       "heroDescription": "通过 Kimi Code CLI 了解月之暗面的公开编程 Agent 工作，区分当前项目与已停止维护的 Python CLI，认识模型服务、编辑器界面与可复用扩展的关系。",
       "overview": {
@@ -1007,8 +1007,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Z.ai: GLM Ecosystem and ZCode | Floatboat",
-      "seoDescription": "Explore Z.ai’s public coding-tool ecosystem through ZCode. Understand the organization behind the project, its agent workbench and runtime, and the boundaries between open-source applications and model services.",
+      "seoTitle": "Z.ai: ZCode Workbench and the GLM Developer Ecosystem",
+      "seoDescription": "Learn about Z.ai through ZCode’s coding workbench and harness. Compare interface and runtime roles while keeping application source separate from model-service access.",
       "heroTitle": "Z.ai: GLM Ecosystem and ZCode",
       "heroDescription": "Explore Z.ai’s public coding-tool ecosystem through ZCode. Understand the organization behind the project, its agent workbench and runtime, and the boundaries between open-source applications and model services.",
       "overview": {
@@ -1062,8 +1062,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Z.ai：GLM 生态与 ZCode | Floatboat",
-      "seoDescription": "通过 ZCode 了解 Z.ai 的公开编程工具生态，认识项目所属组织、Agent 工作台与运行时，以及开源应用和模型服务之间的边界。",
+      "seoTitle": "Z.ai：ZCode 工作台与 GLM 开发生态",
+      "seoDescription": "通过 ZCode 编程工作台与 Harness 了解 Z.ai 的开发生态，比较交互入口、执行层和人工审阅的职责，并区分应用源码与模型服务的实际接入条件。",
       "heroTitle": "Z.ai：GLM 生态与 ZCode",
       "heroDescription": "通过 ZCode 了解 Z.ai 的公开编程工具生态，认识项目所属组织、Agent 工作台与运行时，以及开源应用和模型服务之间的边界。",
       "overview": {
@@ -1165,8 +1165,8 @@
       }
     ],
     "en": {
-      "seoTitle": "DietrichGebert: Ponytail and Coding Workflows | Floatboat",
-      "seoDescription": "Creates Ponytail: reuse-first coding rules, change reviews, and repository audits for existing agents.",
+      "seoTitle": "DietrichGebert: Ponytail Rules for Reuse-First Coding",
+      "seoDescription": "Explore DietrichGebert’s Ponytail rules and plugins for existing coding agents. Study reuse-first changes, repository audits, and host-specific instruction loading.",
       "heroTitle": "DietrichGebert: Ponytail and Coding Workflows",
       "heroDescription": "Explore DietrichGebert’s open-source work, its underlying methods, and the conditions for adapting them. Creates Ponytail: reuse-first coding rules, change reviews, and repository audits for existing agents.",
       "overview": {
@@ -1220,8 +1220,8 @@
       }
     },
     "zh": {
-      "seoTitle": "DietrichGebert：Ponytail 与编程工作方法 | Floatboat",
-      "seoDescription": "维护 Ponytail，以代码复用、修改审查和仓库审计改进编程 Agent 的工作方式。",
+      "seoTitle": "DietrichGebert：Ponytail 代码复用与修改审查规则",
+      "seoDescription": "了解 DietrichGebert 的 Ponytail 规则与插件，查看现有编程 Agent 如何加载指引，研究优先复用、修改审查和仓库审计方法，并核对具体宿主的支持方式。",
       "heroTitle": "DietrichGebert：Ponytail 与编程工作方法",
       "heroDescription": "了解 DietrichGebert 的开源项目、核心方法与适用边界。维护 Ponytail，以代码复用、修改审查和仓库审计改进编程 Agent 的工作方式。",
       "overview": {
@@ -1323,8 +1323,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Milind Soni: MausBot and Multi-Agent Workflows | Floatboat",
-      "seoDescription": "Maintains MausBot / OpenMausBot, a desktop app for role-based agents, shared channels, and reviewable execution.",
+      "seoTitle": "Milind Soni: MausBot and Role-Based Agent Collaboration",
+      "seoDescription": "Meet Milind Soni through MausBot / OpenMausBot, a desktop app for role-based local agents. Study shared channels, execution events, and human approval boundaries.",
       "heroTitle": "Milind Soni: MausBot and Multi-Agent Workflows",
       "heroDescription": "Explore Milind Soni’s open-source work, its underlying methods, and the conditions for adapting them. Maintains MausBot / OpenMausBot, a desktop app for role-based agents, shared channels, and reviewable execution.",
       "overview": {
@@ -1378,8 +1378,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Milind Soni：MausBot 与多 Agent 协作 | Floatboat",
-      "seoDescription": "维护 MausBot / OpenMausBot，通过桌面应用组织角色 Agent、共享频道与可审阅执行。",
+      "seoTitle": "Milind Soni：MausBot 与角色化 Agent 协作",
+      "seoDescription": "通过 MausBot / OpenMausBot 了解 Milind Soni 的多 Agent 桌面应用，查看角色频道、本地执行事件和人工审批的分工，研究团队式任务组织与交接方法。",
       "heroTitle": "Milind Soni：MausBot 与多 Agent 协作",
       "heroDescription": "了解 Milind Soni 的开源项目、核心方法与适用边界。维护 MausBot / OpenMausBot，通过桌面应用组织角色 Agent、共享频道与可审阅执行。",
       "overview": {
@@ -1479,8 +1479,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Comfy Org: Node-Based Creative Tools | Floatboat",
-      "seoDescription": "Develops ComfyUI and its open ecosystem for node-based generative-media workflows.",
+      "seoTitle": "Comfy Org: ComfyUI and Node-Based Generative Media Tools",
+      "seoDescription": "Explore Comfy Org’s ComfyUI ecosystem for reusable image and video workflows. Understand how node graphs, model dependencies, and editable projects fit together.",
       "heroTitle": "Comfy Org: Node-Based Creative Tools",
       "heroDescription": "Develops ComfyUI and its open ecosystem for node-based generative-media workflows.",
       "overview": {
@@ -1531,8 +1531,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Comfy Org：节点式创作工具 | Floatboat",
-      "seoDescription": "维护 ComfyUI 及相关开源生态，通过节点图组织生成媒体与可复用制作流程。",
+      "seoTitle": "Comfy Org：ComfyUI 与节点式生成媒体工具",
+      "seoDescription": "了解 Comfy Org 的 ComfyUI 与生成媒体生态，查看节点图、模型依赖和可编辑项目如何衔接，围绕图像、视频等交付目标规划可复用的制作流程。",
       "heroTitle": "Comfy Org：节点式创作工具",
       "heroDescription": "维护 ComfyUI 及相关开源生态，通过节点图组织生成媒体与可复用制作流程。",
       "overview": {
@@ -1629,8 +1629,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Graphify Labs: Code Graphs and Agent Context | Floatboat",
-      "seoDescription": "Develops Graphify’s code knowledge graphs, local tooling, and agent integrations.",
+      "seoTitle": "Graphify Labs: Code Knowledge Graphs and Agent Context",
+      "seoDescription": "Learn about Graphify Labs through Graphify’s local code graphs and agent guidance. Examine relationships, provenance, and source revisions when investigating a repository.",
       "heroTitle": "Graphify Labs: Code Graphs and Agent Context",
       "heroDescription": "Develops Graphify’s code knowledge graphs, local tooling, and agent integrations.",
       "overview": {
@@ -1681,8 +1681,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Graphify Labs：代码图谱与 Agent 上下文 | Floatboat",
-      "seoDescription": "开发 Graphify 代码知识图谱、本地工具与 Agent 集成，帮助调查仓库关系。",
+      "seoTitle": "Graphify Labs：代码知识图谱与 Agent 上下文",
+      "seoDescription": "通过 Graphify 了解 Graphify Labs 的本地代码图谱与 Agent 指引，查看仓库关系、证据来源和代码版本如何记录，为项目调查与上下文整理选择工具。",
       "heroTitle": "Graphify Labs：代码图谱与 Agent 上下文",
       "heroDescription": "开发 Graphify 代码知识图谱、本地工具与 Agent 集成，帮助调查仓库关系。",
       "overview": {
@@ -1779,8 +1779,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Stably: Orca and Parallel Agent Work | Floatboat",
-      "seoDescription": "Publishes Orca, a workspace for parallel coding agents, isolated worktrees, and code review.",
+      "seoTitle": "Stably: Orca Workspaces for Parallel Coding Agents",
+      "seoDescription": "Explore Stably’s Orca workspace for parallel coding agents, separate worktrees, and review. Understand how isolated changes return to bounded implementation tasks.",
       "heroTitle": "Stably: Orca and Parallel Agent Work",
       "heroDescription": "Publishes Orca, a workspace for parallel coding agents, isolated worktrees, and code review.",
       "overview": {
@@ -1831,8 +1831,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Stably：Orca 与并行 Agent 工作 | Floatboat",
-      "seoDescription": "发布 Orca，通过并行编程 Agent、独立 worktree 与代码审阅组织开发任务。",
+      "seoTitle": "Stably：面向并行编程 Agent 的 Orca 工作台",
+      "seoDescription": "了解 Stably 的 Orca 并行编程工作台，查看独立 worktree、修改比较与代码审阅如何衔接，把多个 Agent 的执行结果收敛为范围清楚、可检查的开发任务。",
       "heroTitle": "Stably：Orca 与并行 Agent 工作",
       "heroDescription": "发布 Orca，通过并行编程 Agent、独立 worktree 与代码审阅组织开发任务。",
       "overview": {

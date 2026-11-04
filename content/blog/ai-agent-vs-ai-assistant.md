@@ -1,5 +1,7 @@
 ---
 title: "AI Agent vs AI Assistant: Control, Tools, and Risk"
+seoTitle: "AI Agent vs AI Assistant: Tools, Control, and Task Risk"
+seoDescription: "AI agents and assistants differ in who selects the next step and controls tools. Compare persistent state, permissions, oversight, and evaluation before choosing either system."
 description: "Compare AI agents and AI assistants by who chooses the next step, how tools and permissions work, what state persists, where humans supervise, and how each system should be evaluated."
 slug: "ai-agent-vs-ai-assistant"
 date: "2026-04-03"

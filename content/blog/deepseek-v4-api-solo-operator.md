@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek V4 API for Solo Operators: Pricing, Models, and Cost Controls"
+seoTitle: "DeepSeek V4 API: Models, Pricing, and Solo-Business Cost Control"
+seoDescription: "DeepSeek V4 API costs depend on model IDs, peak pricing, caching, and routing. Build a solo-business pilot around accepted-task cost, a spending limit, and human review."
 description: "A current DeepSeek V4 API guide for solo operators: model IDs, peak and off-peak prices, cache economics, routing caveats, and a practical pilot budget."
 slug: "deepseek-v4-api-solo-operator"
 date: "2026-04-17"

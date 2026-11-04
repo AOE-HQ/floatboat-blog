@@ -1,5 +1,7 @@
 ---
 title: "OpenAI 4-Day Work Week: What It Means for One-Person Companies"
+seoTitle: "OpenAI Four-Day Workweek Proposal: Solo-Business Implications"
+seoDescription: "OpenAI’s paid 32-hour pilot proposal is a policy idea, not proof of solo-business productivity. Test delivery, service, revenue, and recovery before changing a working week."
 description: "OpenAI proposed paid 32-hour pilots as an AI efficiency dividend. Here is what that policy idea does—and does not—mean for a one-person business."
 slug: "openai-4-day-work-week-one-person-company"
 date: "2026-04-16"

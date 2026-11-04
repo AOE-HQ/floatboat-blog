@@ -54,8 +54,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Vercel Labs: Open-Source Projects, AI Tools & Agent Skills",
-      "seoDescription": "Learn what Vercel Labs is, how its projects are classified, and where to explore its developer tools, open-source experiments, and Agent Skills.",
+      "seoTitle": "Vercel Labs: Developer Skills, Tools, and Open-Source Experiments",
+      "seoDescription": "Browse Vercel Labs projects including Agent Desktop, agent-browser, and json-render, alongside Skills for React, interface design, writing, and deployment.",
       "heroTitle": "Vercel Labs",
       "heroDescription": "Discover Vercel Labs developer tools and open-source experiments, from Agent Skills and browser automation to generative interfaces. Explore their practical uses, intended workflows, and official sources to find the right starting point for your next project.",
       "aboutTitle": "About Vercel Labs",
@@ -109,8 +109,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Vercel Labs 是什么：开源项目、AI 工具与 Agent Skills",
-      "seoDescription": "了解 Vercel Labs 的定位、与 Vercel 的关系和项目阶段，探索开发者工具、开源实验及 Agent Skills，并前往官网和 GitHub 查看原始资料。",
+      "seoTitle": "Vercel Labs：开发与设计 Skills、工具和开源实验",
+      "seoDescription": "了解 Vercel Labs 的开发者工具与公开实验，查看 Agent Desktop、agent-browser、json-render 及 React、设计、写作与部署 Skills，核对各自用途和原始来源。",
       "heroTitle": "Vercel Labs",
       "heroDescription": "了解 Vercel Labs 面向开发者的工具与开源实验，探索 Agent Skills、浏览器自动化和生成式界面项目，结合具体用途、适用场景与官方来源，找到适合下一项工作的工具和指引。",
       "aboutTitle": "关于 Vercel Labs",
@@ -242,8 +242,8 @@
       }
     ],
     "en": {
-      "seoTitle": "morluto: REA Creator, Agent Tools & Skills",
-      "seoDescription": "Explore morluto’s research and developer tools, including REA for software investigation, flameox for performance analysis, and task-focused Agent Skills. Read the project distinctions, practical guidance, and links to the original repositories and research blog.",
+      "seoTitle": "morluto: REA, Performance Tools, and Investigation Skills",
+      "seoDescription": "Study morluto’s REA software-investigation tools, flameox performance analysis, and companion Skills. Follow original sources for setup and project boundaries.",
       "heroTitle": "morluto",
       "heroDescription": "morluto is the creator behind REA, a tool that helps coding agents investigate how software works. Explore REA, flameox, and focused Skills for reverse engineering and repository previews, with direct links to project documentation, examples, and the creator’s public work.",
       "aboutTitle": "About morluto",
@@ -297,8 +297,8 @@
       }
     },
     "zh": {
-      "seoTitle": "morluto：REA 作者、Agent 工具与精选 Skills",
-      "seoDescription": "了解 morluto 的研究与开发工具，包括用于软件调查的 REA、用于性能分析的 flameox，以及聚焦具体任务的 Agent Skills。区分工具与指令，阅读实用说明，并通过原始仓库和研究博客核对资料。",
+      "seoTitle": "morluto：REA、性能工具与软件调查 Skills",
+      "seoDescription": "查看 morluto 的 REA 软件调查工具、flameox 性能分析与配套 Skills，了解应用逆向、运行证据和任务指引的分工，并通过原始来源核对配置要求。",
       "heroTitle": "morluto",
       "heroDescription": "morluto 是 REA 的作者，围绕 Agent、软件调查与性能问题开发工具，并记录开源实践和应用研究。在这里了解 REA、flameox 与精选 Skills，通过官网案例、项目文档和原始仓库进一步探索他的作品。",
       "aboutTitle": "关于 morluto",
@@ -419,8 +419,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Anthropic: Claude, Developer Projects & Agent Skills",
-      "seoDescription": "Learn about Anthropic, the company behind Claude, and explore its developer ecosystem: Claude Code, Cookbooks, and reusable Agent Skills.",
+      "seoTitle": "Anthropic: Claude Developer Tools and Task-Focused Skills",
+      "seoDescription": "Find Anthropic’s document, design, testing, and Skill-authoring instructions alongside Claude Code resources and Cookbooks. Check each source’s terms and setup.",
       "heroTitle": "Anthropic",
       "heroDescription": "Anthropic develops Claude and works on the reliability, interpretability, and steering of AI systems. Its public developer ecosystem includes a terminal coding agent, practical application examples, and reusable Agent Skills, giving builders several distinct ways to explore and apply Claude.",
       "aboutTitle": "About Anthropic",
@@ -474,8 +474,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Anthropic 是什么：Claude、开发者项目与 Agent Skills",
-      "seoDescription": "了解 Claude 背后的 Anthropic 及其研究与开发者生态，探索 Claude Code、Cookbooks 和可复用 Agent Skills，区分工具、示例与任务指引。",
+      "seoTitle": "Anthropic：Claude 开发工具与任务型 Agent Skills",
+      "seoDescription": "了解 Anthropic 的文档、设计、测试与 Skill 编写指引，以及 Claude Code 公开资料和 Cookbooks 示例。区分任务指令与实际软件，并核对各自许可和配置条件。",
       "heroTitle": "Anthropic",
       "heroDescription": "Anthropic 开发 Claude，并研究 AI 系统的可靠性、可解释性与可控性。其生态包括终端编程 Agent、应用示例和可复用 Skills，为代码库工作、应用探索与重复任务提供不同入口。",
       "aboutTitle": "关于 Anthropic",
@@ -589,8 +589,8 @@
       }
     ],
     "en": {
-      "seoTitle": "HeyGen: AI Video, HyperFrames, CLI & Agent Skills",
-      "seoDescription": "Explore HeyGen’s AI video ecosystem, including HyperFrames, the official video API CLI, and Agent Skills for video creation and production workflows.",
+      "seoTitle": "HeyGen: HyperFrames, Video API Tools, and Production Skills",
+      "seoDescription": "Explore HeyGen’s HyperFrames video workflow, API CLI, and production Skills for scenes, media, and slides. Compare editable composition with video-service access.",
       "heroTitle": "HeyGen",
       "heroDescription": "HeyGen builds AI video products and developer tools for creating and automating visual content. Its ecosystem combines avatar-based video services, HTML-driven video rendering, command-line API access, and task-specific Skills, offering distinct routes from a creative brief to a reviewed video.",
       "aboutTitle": "About HeyGen",
@@ -644,8 +644,8 @@
       }
     },
     "zh": {
-      "seoTitle": "HeyGen 是什么：AI 视频、HyperFrames、CLI 与 Skills",
-      "seoDescription": "了解 HeyGen 的 AI 视频产品与开发者工具，探索 HyperFrames、官方视频 API CLI 和视频制作相关 Agent Skills，区分生成服务、渲染工具与工作指引。",
+      "seoTitle": "HeyGen：HyperFrames、视频 API 工具与制作 Skills",
+      "seoDescription": "查看 HeyGen 的 HyperFrames、视频 API CLI 与场景、素材和幻灯片 Skills，比较可编辑视频合成和在线服务调用，了解制作流程中的工具与使用条件。",
       "heroTitle": "HeyGen",
       "heroDescription": "HeyGen 围绕 AI 视频开发创作产品与开发者工具，覆盖数字人、视频生成 API、HTML 渲染和相关 Skills。不同入口服务内容创作、程序化制作与流程自动化，可按素材、输出和工作方式选择。",
       "aboutTitle": "关于 HeyGen",
@@ -759,8 +759,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Matt Pocock: TypeScript, AI Engineering & Agent Skills",
-      "seoDescription": "Explore Matt Pocock’s developer education, TypeScript libraries, and coding-agent work, with original links to AI Hero, Total TypeScript, Sandcastle, ts-reset, and engineering Skills.",
+      "seoTitle": "Matt Pocock: TypeScript Tools and Coding-Agent Skills",
+      "seoDescription": "Browse Matt Pocock’s engineering Skills, Sandcastle agent orchestration, and ts-reset library, with source links for planning, testing, architecture, and review.",
       "heroTitle": "Matt Pocock",
       "heroDescription": "Matt Pocock connects TypeScript education with practical AI engineering. Explore his work on type safety, sandboxed coding agents, and reusable engineering Skills, alongside the courses and public repositories that explain how he approaches building and reviewing software.",
       "aboutTitle": "About Matt Pocock",
@@ -814,8 +814,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Matt Pocock：TypeScript、AI 工程与 Agent Skills",
-      "seoDescription": "了解 Matt Pocock 的开发者教育、TypeScript 工具和编程 Agent 实践，探索 AI Hero、Total TypeScript、Sandcastle、ts-reset 与工程 Skills 的原始入口。",
+      "seoTitle": "Matt Pocock：TypeScript 工具与编程 Agent Skills",
+      "seoDescription": "了解 Matt Pocock 的工程 Skills、Sandcastle 编排工具与 ts-reset 类型库，按规划、测试、架构和代码审查任务查找指引，并查看开发教育与项目原始入口。",
       "heroTitle": "Matt Pocock",
       "heroDescription": "Matt Pocock 将 TypeScript 教学与 AI 工程实践连接起来，关注类型安全、隔离环境中的编程 Agent，以及可复用的工程 Skills。可以从他的课程和公开仓库理解软件构建、检查与持续改进的方法。",
       "aboutTitle": "关于 Matt Pocock",
@@ -936,8 +936,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Emil Kowalski: Design Engineering, Sonner, Vaul & Skills",
-      "seoDescription": "Explore Emil Kowalski’s interface craft, React components, and design Skills, with original sources for Sonner, Vaul, animation writing, and practical UI review guidance.",
+      "seoTitle": "Emil Kowalski: React Components, Motion, and Design Skills",
+      "seoDescription": "Explore Emil Kowalski’s design-engineering Skills and React projects, including Sonner and the unmaintained Vaul, with guidance on animation and interface review.",
       "heroTitle": "Emil Kowalski",
       "heroDescription": "Emil Kowalski’s work connects interface design with the code that makes interactions feel right. Explore his React components, writing on motion and visual craft, and Agent Skills for building and reviewing interfaces with attention to behavior as well as appearance.",
       "aboutTitle": "About Emil Kowalski",
@@ -991,8 +991,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Emil Kowalski：设计工程、Sonner、Vaul 与 Skills",
-      "seoDescription": "了解 Emil Kowalski 的界面实践、React 组件和设计 Skills，查找 Sonner、Vaul、动效写作与 UI 审查指引的原始来源。",
+      "seoTitle": "Emil Kowalski：React 组件、交互动效与设计 Skills",
+      "seoDescription": "查看 Emil Kowalski 的设计工程 Skills、Sonner 与已停止维护的 Vaul，了解组件、交互动效和界面审查的不同用途，并核对对应项目的维护与使用信息。",
       "heroTitle": "Emil Kowalski",
       "heroDescription": "Emil Kowalski 连接界面设计与实现交互的代码，关注反馈、动效和细节如何影响使用体验。他的 React 组件、设计写作与 Agent Skills，分别为构建和审查真实界面提供不同入口。",
       "aboutTitle": "关于 Emil Kowalski",
@@ -1081,8 +1081,8 @@
     "profileUrl": "https://github.com/coreyhaines31",
     "projects": [],
     "en": {
-      "seoTitle": "Corey Haines: SaaS Marketing, Projects & Agent Skills",
-      "seoDescription": "Explore Corey Haines’s growth marketing work, Conversion Factory, SwipeFiles, and public Marketing Skills for SEO, copywriting, and content strategy, with original sources.",
+      "seoTitle": "Corey Haines: SaaS Marketing, SEO, and Copywriting Skills",
+      "seoDescription": "Find Corey Haines’s Marketing Skills for SEO, copywriting, and content strategy. Learn how they relate to his Conversion Factory services and SwipeFiles publication.",
       "heroTitle": "Corey Haines",
       "heroDescription": "Corey Haines brings together SaaS marketing, writing, and building internet businesses. Explore his agency and publication alongside public Marketing Skills, connecting practical work on positioning, content, and growth with instructions that agents can use for specific marketing assignments.",
       "aboutTitle": "About Corey Haines",
@@ -1136,8 +1136,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Corey Haines：SaaS 增长营销、项目与 Agent Skills",
-      "seoDescription": "了解 Corey Haines 的增长营销实践、Conversion Factory、SwipeFiles，以及面向 SEO、文案与内容策略的 Marketing Skills，并访问原始项目来源。",
+      "seoTitle": "Corey Haines：SaaS 营销、SEO 与文案写作 Skills",
+      "seoDescription": "了解 Corey Haines 的 SEO、文案与内容策略 Skills，以及 Conversion Factory 服务和 SwipeFiles 通讯。按任务查找营销指引，区分可复用指令与背景学习资源。",
       "heroTitle": "Corey Haines",
       "heroDescription": "Corey Haines 将 SaaS 增长营销、写作与互联网产品实践连接起来。他的机构、内容项目和公开 Marketing Skills，从不同角度处理定位、内容与增长问题，为具体营销任务提供服务、参考和方法。",
       "aboutTitle": "关于 Corey Haines",
@@ -1265,8 +1265,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Julius Brussee: Caveman, Revu & Agent Skills",
-      "seoDescription": "Explore Julius Brussee’s developer work across Caveman compression tools, reusable Agent Skills, and the Revu study app. Learn how the instruction files differ from the software, and follow the original repositories for current setup and project status.",
+      "seoTitle": "Julius Brussee: Caveman, Revu, and Practical Agent Skills",
+      "seoDescription": "Compare Julius Brussee’s Caveman compression software, investigation and refactoring Skills, and Revu study app, keeping instructions distinct from executable tools.",
       "heroTitle": "Julius Brussee",
       "heroDescription": "Julius Brussee is a software developer building tools around AI agents and learning. His work includes the Caveman family of compression tools and instructions, plus Revu, a macOS study application. Explore the creator’s software projects and focused Skills separately.",
       "aboutTitle": "About Julius Brussee",
@@ -1320,8 +1320,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Julius Brussee：Caveman、Revu 与 Agent Skills",
-      "seoDescription": "了解 Julius Brussee 在 Caveman 压缩工具、可复用 Agent Skills 和 Revu 学习应用方面的作品。区分指令文件与软件项目，通过原始仓库核对当前安装要求、项目状态和实际用途。",
+      "seoTitle": "Julius Brussee：Caveman、Revu 与实用 Agent Skills",
+      "seoDescription": "比较 Julius Brussee 的 Caveman 压缩软件、调查与重构 Skills，以及 Revu 学习应用。了解任务指令和可执行工具的区别，再核对实际项目的设置与使用条件。",
       "heroTitle": "Julius Brussee",
       "heroDescription": "Julius Brussee 围绕 AI Agent 与学习场景开发软件，包括 Caveman 压缩工具、任务指令和 macOS 学习应用 Revu。独立软件与 Skills 分别展示，方便按任务查看原始来源。",
       "aboutTitle": "关于 Julius Brussee",
@@ -1513,8 +1513,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Microsoft: Agent Skills, Developer Tools & Projects",
-      "seoDescription": "Explore Microsoft developer tools, Azure Agent Skills, and public software projects. Compare cloud preparation, deployment, diagnostics, and application development resources, then follow the official repositories to understand which tools support the work you want to complete.",
+      "seoTitle": "Microsoft: Azure Skills, TypeScript, and Developer Tooling",
+      "seoDescription": "Discover Azure Skills for preparation, validation, deployment, and diagnostics alongside VS Code and TypeScript. Choose guidance by cloud task and development stage.",
       "heroTitle": "Microsoft",
       "heroDescription": "Explore Microsoft developer tools, Azure Agent Skills, and public software projects. Compare cloud preparation, deployment, diagnostics, and application development resources, then follow the official repositories to understand which tools support the work you want to complete.",
       "overview": {
@@ -1568,8 +1568,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Microsoft：精选 Skills、开发工具与项目介绍",
-      "seoDescription": "了解 Microsoft 的开发者工具、Azure Agent Skills 与公开软件项目，比较云端准备、部署验证、故障诊断和应用开发资源，结合官方仓库与具体任务，找到适合当前开发流程的工具和指引。",
+      "seoTitle": "Microsoft：Azure Skills、TypeScript 与开发工具",
+      "seoDescription": "查看 Azure 准备、验证、部署、诊断等 Skills，以及 VS Code、TypeScript 开发工具。按云端任务和开发阶段选择资源，区分操作指引、语言能力与运行环境。",
       "heroTitle": "Microsoft",
       "heroDescription": "了解 Microsoft 的开发者工具、Azure Agent Skills 与公开软件项目，比较云端准备、部署验证、故障诊断和应用开发资源，结合官方仓库与具体任务，找到适合当前开发流程的工具和指引。",
       "overview": {
@@ -1737,8 +1737,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Feishu Open Platform: Agent Skills, Developer Tools & Projects",
-      "seoDescription": "Explore Feishu Open Platform Skills and the official Lark / Feishu CLI for workplace collaboration. Discover document, table, calendar, knowledge-base, and meeting workflows, and understand how platform APIs and agent instructions connect to the tools your team already uses.",
+      "seoTitle": "Feishu Open Platform: CLI Tools and Office Workflow Skills",
+      "seoDescription": "Find Feishu document, table, calendar, wiki, and meeting Skills alongside the Lark / Feishu CLI. Check account access before planning connected office operations.",
       "heroTitle": "Feishu Open Platform",
       "heroDescription": "Explore Feishu Open Platform Skills and the official Lark / Feishu CLI for workplace collaboration. Discover document, table, calendar, knowledge-base, and meeting workflows, and understand how platform APIs and agent instructions connect to the tools your team already uses.",
       "overview": {
@@ -1792,8 +1792,8 @@
       }
     },
     "zh": {
-      "seoTitle": "飞书开放平台：精选 Skills、开发工具与项目介绍",
-      "seoDescription": "了解飞书开放平台的精选 Skills 与官方 CLI，探索云文档、多维表格、日历、知识库和会议整理等办公流程，结合开放接口、账户授权与原始说明，把 Agent 指引连接到团队正在使用的协作工具。",
+      "seoTitle": "飞书开放平台：CLI 工具与文档、日程和协作 Skills",
+      "seoDescription": "查找飞书文档、表格、日程、知识库与会议工作流 Skills，了解它们如何配合 Lark / Feishu CLI。规划在线操作前核对账户、工作空间和对应访问权限。",
       "heroTitle": "飞书开放平台",
       "heroDescription": "了解飞书开放平台的精选 Skills 与官方 CLI，探索云文档、多维表格、日历、知识库和会议整理等办公流程，结合开放接口、账户授权与原始说明，把 Agent 指引连接到团队正在使用的协作工具。",
       "overview": {
@@ -1928,8 +1928,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Remotion: Agent Skills, Developer Tools & Projects",
-      "seoDescription": "Explore Remotion video tools and Agent Skills for creating motion graphics with React. Discover how project setup, visual composition, preview, rendering, and application integration fit together, then use official sources to plan a video workflow that remains editable as code.",
+      "seoTitle": "Remotion: React Video Tools and Composition Skills",
+      "seoDescription": "Explore Remotion’s React video framework and Skills for project creation, markup, animation, and rendering. Plan editable compositions with the original documentation.",
       "heroTitle": "Remotion",
       "heroDescription": "Explore Remotion video tools and Agent Skills for creating motion graphics with React. Discover how project setup, visual composition, preview, rendering, and application integration fit together, then use official sources to plan a video workflow that remains editable as code.",
       "overview": {
@@ -1983,8 +1983,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Remotion：精选 Skills、开发工具与项目介绍",
-      "seoDescription": "了解 Remotion 基于 React 的视频制作工具与 Agent Skills，探索项目创建、画面编排、交互预览、视频渲染和应用集成，结合官方文档与代码仓库，建立可以持续编辑和复用的视频工作流程。",
+      "seoTitle": "Remotion：React 视频工具与场景合成 Skills",
+      "seoDescription": "了解 Remotion 的 React 视频框架，以及项目创建、场景标记、动画与渲染 Skills。结合原始文档规划可编辑合成，区分制作指引、运行工具与最终视频交付。",
       "heroTitle": "Remotion",
       "heroDescription": "了解 Remotion 基于 React 的视频制作工具与 Agent Skills，探索项目创建、画面编排、交互预览、视频渲染和应用集成，结合官方文档与代码仓库，建立可以持续编辑和复用的视频工作流程。",
       "overview": {
@@ -3154,8 +3154,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Leon Lin: Taste Skill, Frontend Design and Agent Projects",
-      "seoDescription": "Discover Leon Lin’s interface design Skills and Agent tools, from Taste Skill to TasteCode and earshot. Explore the visual decisions, development workflows, and project sources behind this creator’s work on more capable coding agents.",
+      "seoTitle": "Leon Lin: Taste Design Skills, TasteCode, and Audio Tools",
+      "seoDescription": "Discover Leon Lin’s Taste design Skills, TasteCode coding workspace, and earshot audio tooling. Compare visual direction, interface revision, and sound workflows.",
       "heroTitle": "Leon Lin",
       "heroDescription": "Discover Leon Lin’s interface design Skills and Agent tools, from Taste Skill to TasteCode and earshot. Explore the visual decisions, development workflows, and project sources behind this creator’s work on more capable coding agents.",
       "overview": {
@@ -3209,8 +3209,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Leon Lin：Taste Skill、前端设计与 Agent 项目",
-      "seoDescription": "了解 Leon Lin 的界面设计 Skills 与 Agent 工具，探索 Taste Skill、TasteCode 和 earshot，结合视觉决策、开发流程与公开源码，发现适合前端设计和编码协作的作品。",
+      "seoTitle": "Leon Lin：Taste 设计 Skills、TasteCode 与音频工具",
+      "seoDescription": "查看 Leon Lin 的 Taste 设计 Skills、TasteCode 编码工作空间与 earshot 音频工具，了解视觉方向、界面改版和声音处理任务，并核对各资源的用途与原始仓库。",
       "heroTitle": "Leon Lin",
       "heroDescription": "了解 Leon Lin 的界面设计 Skills 与 Agent 工具，探索 Taste Skill、TasteCode 和 earshot，结合视觉决策、开发流程与公开源码，发现适合前端设计和编码协作的作品。",
       "overview": {
@@ -3378,8 +3378,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Jesse Vincent: Agent Engineering and Open-Source Projects",
-      "seoDescription": "Explore Jesse Vincent’s open-source work as obra, including the Superpowers framework and Agent Skills for planning, testing, debugging, and verification. Discover how his development methods connect with tools for working with information and extending agents.",
+      "seoTitle": "Jesse Vincent: Superpowers Skills and Agent Engineering Tools",
+      "seoDescription": "Explore Jesse Vincent’s Superpowers framework and Skills for planning, debugging, and verification, plus tools for video notes and persistent agent journals.",
       "heroTitle": "Jesse Vincent",
       "heroDescription": "Explore Jesse Vincent’s open-source work as obra, including the Superpowers framework and Agent Skills for planning, testing, debugging, and verification. Discover how his development methods connect with tools for working with information and extending agents.",
       "aboutTitle": "About Jesse Vincent",
@@ -3433,8 +3433,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Jesse Vincent：Agent 工程与开源项目",
-      "seoDescription": "了解 Jesse Vincent 以 obra 发布的开源作品，探索 Superpowers 框架及其需求澄清、计划编写、测试调试与结果验证 Skills，并认识他在信息阅读和 Agent 扩展工具方面的其他项目。",
+      "seoTitle": "Jesse Vincent：Superpowers Skills 与 Agent 工程工具",
+      "seoDescription": "了解 Jesse Vincent 的 Superpowers 框架及规划、调试与验证 Skills，并查看视频转网页、Agent 日志等独立工具，比较工程方法与具体执行资源。",
       "heroTitle": "Jesse Vincent",
       "heroDescription": "了解 Jesse Vincent 以 obra 发布的开源作品，探索 Superpowers 框架及其需求澄清、计划编写、测试调试与结果验证 Skills，并认识他在信息阅读和 Agent 扩展工具方面的其他项目。",
       "aboutTitle": "关于 Jesse Vincent",
@@ -3570,8 +3570,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Paul Bakaus: Interface Design and Open-Source Projects",
-      "seoDescription": "Explore Paul Bakaus’s work across interface design, creative technology, and developer tools. Discover Impeccable’s design Skill and supporting engine, alongside Radiant visual effects and agent-reviews, with clear distinctions between instructions, assets, and working software.",
+      "seoTitle": "Paul Bakaus: Impeccable Design Skills and Creative Tools",
+      "seoDescription": "Discover Paul Bakaus’s Impeccable design Skill, Radiant shader collection, and agent-reviews CLI. Distinguish interface guidance, visual assets, and review tools.",
       "heroTitle": "Paul Bakaus",
       "heroDescription": "Explore Paul Bakaus’s work across interface design, creative technology, and developer tools. Discover Impeccable’s design Skill and supporting engine, alongside Radiant visual effects and agent-reviews, with clear distinctions between instructions, assets, and working software.",
       "aboutTitle": "About Paul Bakaus",
@@ -3625,8 +3625,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Paul Bakaus：界面设计与开源项目",
-      "seoDescription": "了解 Paul Bakaus 在界面设计、创意技术与开发者工具方面的作品，探索 Impeccable 设计 Skill 及配套引擎，以及 Radiant 视觉效果和 agent-reviews，区分指引、素材与实际软件的不同用途。",
+      "seoTitle": "Paul Bakaus：Impeccable 设计指引与创意开发工具",
+      "seoDescription": "查看 Paul Bakaus 的 Impeccable 设计 Skill、Radiant 着色器素材与 agent-reviews 工具，区分界面指引、视觉资源和代码审查流程，了解各项目的具体用途。",
       "heroTitle": "Paul Bakaus",
       "heroDescription": "了解 Paul Bakaus 在界面设计、创意技术与开发者工具方面的作品，探索 Impeccable 设计 Skill 及配套引擎，以及 Radiant 视觉效果和 agent-reviews，区分指引、素材与实际软件的不同用途。",
       "aboutTitle": "关于 Paul Bakaus",
@@ -3774,8 +3774,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Cloudflare: Selected Skills, Open-Source Projects & Developer Tools",
-      "seoDescription": "Explore Cloudflare developer tools and Agent Skills for building Workers applications, stateful agents, and coordinated services. Compare development guidance with security research workflows, and understand how the software, runtime capabilities, and task instructions fit into an application delivery process.",
+      "seoTitle": "Cloudflare: Workers Tools, Agent SDK, and Security Skills",
+      "seoDescription": "Browse Cloudflare Workers tooling, Agents SDK, and Skills for stateful services, deployment, and security audits. Separate runtime capabilities from task instructions.",
       "heroTitle": "Cloudflare",
       "heroDescription": "Explore Cloudflare developer tools and Agent Skills for building Workers applications, stateful agents, and coordinated services. Compare development guidance with security research workflows, and understand how the software, runtime capabilities, and task instructions fit into an application delivery process.",
       "overview": {
@@ -3829,8 +3829,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Cloudflare：精选 Skills、开源项目与开发工具",
-      "seoDescription": "了解 Cloudflare 面向 Workers 应用、有状态 Agent 和协调服务的开发工具与精选 Skills，比较应用开发指引和安全研究流程，理解软件工具、运行环境与任务指令如何共同支持应用构建和交付。",
+      "seoTitle": "Cloudflare：Workers 工具、Agent SDK 与安全审查 Skills",
+      "seoDescription": "了解 Cloudflare Workers 工具链、Agents SDK 及状态服务、部署和安全审查 Skills。区分运行能力与任务方法，按应用开发、工具配置或代码调查选择资源。",
       "heroTitle": "Cloudflare",
       "heroDescription": "了解 Cloudflare 面向 Workers 应用、有状态 Agent 和协调服务的开发工具与精选 Skills，比较应用开发指引和安全研究流程，理解软件工具、运行环境与任务指令如何共同支持应用构建和交付。",
       "overview": {
@@ -3970,8 +3970,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Trail of Bits: Selected Skills, Open-Source Projects & Developer Tools",
-      "seoDescription": "Explore Trail of Bits security research, analysis tools, and Agent Skills for understanding code, reviewing changes, and testing invariants. Compare its instruction-based workflows with static analysis and smart-contract fuzzing projects to plan a more evidence-focused software review.",
+      "seoTitle": "Trail of Bits: Security Skills and Smart-Contract Analysis",
+      "seoDescription": "Explore Trail of Bits Skills for audit context, differential review, and property testing alongside Slither and Echidna. Plan reviews around explicit evidence and invariants.",
       "heroTitle": "Trail of Bits",
       "heroDescription": "Explore Trail of Bits security research, analysis tools, and Agent Skills for understanding code, reviewing changes, and testing invariants. Compare its instruction-based workflows with static analysis and smart-contract fuzzing projects to plan a more evidence-focused software review.",
       "overview": {
@@ -4025,8 +4025,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Trail of Bits：精选 Skills、开源项目与开发工具",
-      "seoDescription": "了解 Trail of Bits 的安全研究、分析工具与精选 Skills，探索代码理解、变更审查和不变量测试，比较 Agent 工作指引、静态分析与智能合约模糊测试的不同职责，为软件审查建立更清晰的证据路径。",
+      "seoTitle": "Trail of Bits：安全审查 Skills 与智能合约分析工具",
+      "seoDescription": "查看 Trail of Bits 的审计上下文、差异审查与属性测试 Skills，以及 Slither、Echidna 工具。围绕代码证据和明确的不变量，选择安全分析与合约测试方法。",
       "heroTitle": "Trail of Bits",
       "heroDescription": "了解 Trail of Bits 的安全研究、分析工具与精选 Skills，探索代码理解、变更审查和不变量测试，比较 Agent 工作指引、静态分析与智能合约模糊测试的不同职责，为软件审查建立更清晰的证据路径。",
       "overview": {
@@ -4166,8 +4166,8 @@
       }
     ],
     "en": {
-      "seoTitle": "GitHub: Selected Skills, Open-Source Projects & Developer Tools",
-      "seoDescription": "Explore GitHub developer tools and community-contributed Copilot Skills for maintaining code and collaborating on projects. Compare commit preparation, documentation, and refactoring guidance with the GitHub CLI and MCP Server to understand the roles of instructions and platform integrations.",
+      "seoTitle": "GitHub: Copilot Skills, CLI, and Repository Tool Connections",
+      "seoDescription": "Compare community Copilot Skills for commits, READMEs, and refactoring with GitHub CLI and MCP Server. Match task guidance to repository operations and access.",
       "heroTitle": "GitHub",
       "heroDescription": "Explore GitHub developer tools and community-contributed Copilot Skills for maintaining code and collaborating on projects. Compare commit preparation, documentation, and refactoring guidance with the GitHub CLI and MCP Server to understand the roles of instructions and platform integrations.",
       "overview": {
@@ -4221,8 +4221,8 @@
       }
     },
     "zh": {
-      "seoTitle": "GitHub：精选 Skills、开源项目与开发工具",
-      "seoDescription": "了解 GitHub 的开发者工具与社区贡献的 Copilot Skills，比较提交准备、项目文档和代码重构指引，以及 GitHub CLI 与 MCP 服务在协作流程中的作用，区分任务方法与实际平台集成能力。",
+      "seoTitle": "GitHub：Copilot Skills、CLI 与仓库工具连接",
+      "seoDescription": "比较 Copilot 社区的提交、README 与重构 Skills，以及 GitHub CLI 和 MCP Server。按仓库操作查找指引，了解任务方法、平台工具和访问权限的分工。",
       "heroTitle": "GitHub",
       "heroDescription": "了解 GitHub 的开发者工具与社区贡献的 Copilot Skills，比较提交准备、项目文档和代码重构指引，以及 GitHub CLI 与 MCP 服务在协作流程中的作用，区分任务方法与实际平台集成能力。",
       "overview": {
@@ -4358,8 +4358,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Google Workspace: APIs, gws CLI and Agent Skills",
-      "seoDescription": "Explore Google Workspace developer resources and Agent Skills for Drive, Gmail, Calendar, and Sheets. Understand how API access, the gws CLI, and task instructions fit together when connecting everyday office work to programmable workflows.",
+      "seoTitle": "Google Workspace: gws CLI and Document, Mail, Calendar Skills",
+      "seoDescription": "Explore Drive, Gmail, Calendar, and Sheets Skills with the gws CLI. The repository is not officially supported by Google; verify account scopes and service access.",
       "heroTitle": "Google Workspace",
       "heroDescription": "Explore Google Workspace developer resources and Agent Skills for Drive, Gmail, Calendar, and Sheets. Understand how API access, the gws CLI, and task instructions fit together when connecting everyday office work to programmable workflows.",
       "aboutTitle": "About Google Workspace",
@@ -4413,8 +4413,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Google Workspace：API、gws CLI 与 Agent Skills",
-      "seoDescription": "了解 Google Workspace 的开发资源与 Agent Skills，探索 Drive、Gmail、Calendar 和 Sheets，区分 API 访问、gws 命令行工具与任务指引，为日常办公建立可以编程连接的协作流程。",
+      "seoTitle": "Google Workspace：gws CLI 与文档、邮件和日程 Skills",
+      "seoDescription": "了解 Drive、Gmail、Calendar 与 Sheets Skills 及 gws CLI 的配合方式。该仓库并非 Google 官方支持产品；使用前需核对账户授权、服务访问范围与具体操作要求。",
       "heroTitle": "Google Workspace",
       "heroDescription": "了解 Google Workspace 的开发资源与 Agent Skills，探索 Drive、Gmail、Calendar 和 Sheets，区分 API 访问、gws 命令行工具与任务指引，为日常办公建立可以编程连接的协作流程。",
       "aboutTitle": "关于 Google Workspace",
@@ -4562,8 +4562,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Firecrawl: Web Data, Crawling Tools and Agent Skills",
-      "seoDescription": "Explore Firecrawl tools and Agent Skills for searching, reading, and interacting with the web. Understand how page extraction, site crawling, structured outputs, and terminal workflows provide usable context for research, applications, and coding agents.",
+      "seoTitle": "Firecrawl: Web Extraction Tools and Research Skills",
+      "seoDescription": "Explore Firecrawl’s web-data platform, CLI, and Skills for search, scraping, crawling, and interaction. Compare extraction methods and check the returned source content.",
       "heroTitle": "Firecrawl",
       "heroDescription": "Explore Firecrawl tools and Agent Skills for searching, reading, and interacting with the web. Understand how page extraction, site crawling, structured outputs, and terminal workflows provide usable context for research, applications, and coding agents.",
       "aboutTitle": "About Firecrawl",
@@ -4617,8 +4617,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Firecrawl：网页数据、爬取工具与 Agent Skills",
-      "seoDescription": "了解 Firecrawl 面向网页搜索、读取与交互的工具和 Agent Skills，探索页面提取、网站爬取、结构化结果及终端工作流，为研究、应用开发和编码 Agent 获取可用的网页上下文。",
+      "seoTitle": "Firecrawl：网页提取工具与调研任务 Skills",
+      "seoDescription": "查看 Firecrawl 网页数据平台、CLI 与搜索、抓取、遍历和交互 Skills，按所需资料选择提取方式，并了解如何核对返回内容、数据范围和对应来源。",
       "heroTitle": "Firecrawl",
       "heroDescription": "了解 Firecrawl 面向网页搜索、读取与交互的工具和 Agent Skills，探索页面提取、网站爬取、结构化结果及终端工作流，为研究、应用开发和编码 Agent 获取可用的网页上下文。",
       "aboutTitle": "关于 Firecrawl",
@@ -4750,8 +4750,8 @@
       }
     ],
     "en": {
-      "seoTitle": "Supabase: Postgres Platform, Developer Tools and Agent Skills",
-      "seoDescription": "Explore Supabase developer tools and Agent Skills for building applications with Postgres, authentication, storage, and functions. Understand how the platform, local development workflow, and database guidance support application features and reliable backend changes.",
+      "seoTitle": "Supabase: Postgres Tools and Backend Development Skills",
+      "seoDescription": "Find Supabase platform and CLI resources with Skills for schemas, SQL, authentication, and application work. Compare backend capabilities with database task guidance.",
       "heroTitle": "Supabase",
       "heroDescription": "Explore Supabase developer tools and Agent Skills for building applications with Postgres, authentication, storage, and functions. Understand how the platform, local development workflow, and database guidance support application features and reliable backend changes.",
       "aboutTitle": "About Supabase",
@@ -4805,8 +4805,8 @@
       }
     },
     "zh": {
-      "seoTitle": "Supabase：Postgres 平台、开发工具与 Agent Skills",
-      "seoDescription": "了解 Supabase 基于 Postgres 的开发平台与 Agent Skills，探索认证、存储、函数和数据库工作流，区分平台能力、本地开发工具与实践指引，为应用功能和可靠的后端变更选择合适入口。",
+      "seoTitle": "Supabase：Postgres 工具与后端开发 Skills",
+      "seoDescription": "查找 Supabase 平台、CLI 与数据库、SQL、认证和应用开发 Skills，区分后端服务、开发工具及任务指引，按实际数据与应用需求核对配置和验证方式。",
       "heroTitle": "Supabase",
       "heroDescription": "了解 Supabase 基于 Postgres 的开发平台与 Agent Skills，探索认证、存储、函数和数据库工作流，区分平台能力、本地开发工具与实践指引，为应用功能和可靠的后端变更选择合适入口。",
       "aboutTitle": "关于 Supabase",

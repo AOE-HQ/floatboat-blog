@@ -1,5 +1,7 @@
 ---
 title: "GPT-5.6 与 Floatboat：支持状态、三档定位及当前可选范围"
+seoTitle: "GPT-5.6 与 Floatboat：模型档位、支持状态与可选范围"
+seoDescription: "了解 GPT-5.6 Sol、Terra 与 Luna 的模型定位及 Floatboat 记录，区分供应商能力、底层配置和默认选择器实际开放范围，不把技术准备或容量登记直接当作产品已上线。"
 description: "准确说明 GPT-5.6 Sol、Terra、Luna 与 Floatboat 的关系：哪些型号仅完成底层配置、OpenAI 如何定位三档模型，以及当前选择器中没有什么。"
 slug: "gpt-5-6-floatboat"
 date: "2026-07-10"

@@ -2,8 +2,8 @@
   "slug": "coworker",
   "locale": "en",
   "seo": {
-    "title": "Floatboat Coworker — A Work Agent for Delegated Tasks",
-    "description": "Delegate a defined task to an AI Work Agent that can use approved files and tools, complete the work, and return a reviewable deliverable.",
+    "title": "Work Agent: Delegate Tasks, Review Outputs, and Continue Work",
+    "description": "Delegate bounded work to a Floatboat Work Agent with the relevant files and tools. Inspect editable outputs, provide feedback, and retain control over important actions.",
     "keywords": [
       "AI work agent",
       "AI coworker",

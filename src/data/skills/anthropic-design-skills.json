@@ -9,12 +9,12 @@
     "repositoryUrl": "https://github.com/anthropics/skills",
     "seo": {
       "title": {
-        "en": "Frontend Design by Anthropic | Installation & Guide",
-        "zh": "Frontend Design by Anthropic：安装与使用指南"
+        "en": "Frontend Design Skill: Visual Direction and Interface Building",
+        "zh": "Frontend Design Skill：视觉方向与前端界面构建"
       },
       "description": {
-        "en": "Create or reshape frontend interfaces with deliberate visual choices tied to the product brief. Explore installation options, use cases, and a practical guide.",
-        "zh": "围绕产品需求确定视觉方向，构建或重做有明确层级与表达的前端界面。了解安装方式、适用场景、操作步骤与使用要求。"
+        "en": "Build or reshape frontend interfaces with Anthropic’s Frontend Design Skill. Turn the brief into deliberate layout, typography, and interaction choices for the actual page.",
+        "zh": "使用 Anthropic Frontend Design Skill 创建或调整前端界面，从实际需求出发确定布局、字体与交互方向，结合页面内容和状态检查设计结果，而不是只套用通用视觉样式。"
       },
       "keywords": {
         "en": [
@@ -245,12 +245,12 @@
     "repositoryUrl": "https://github.com/anthropics/skills",
     "seo": {
       "title": {
-        "en": "Skill Creator by Anthropic | Installation & Guide",
-        "zh": "Skill Creator by Anthropic：安装与使用指南"
+        "en": "Skill Creator: Design, Test, and Improve Agent Instructions",
+        "zh": "Skill Creator：设计、测试与改进 Agent 任务指引"
       },
       "description": {
-        "en": "Create and improve Agent Skills through task definition, representative test prompts, and iterative evaluation. Explore installation options, use cases, and a practical guide.",
-        "zh": "通过任务定义、代表性测试请求和结果比较，创建并持续改进 Agent Skills。了解安装方式、适用场景、操作步骤与使用要求。"
+        "en": "Create and refine Agent Skills with Anthropic’s Skill Creator. Define the task, prepare representative prompts, and use observed results to improve the instruction set.",
+        "zh": "使用 Anthropic Skill Creator 编写和改进 Agent Skills，明确任务范围、准备代表性测试提示，再根据实际结果调整指令；了解方法评估与宿主执行能力的区别。"
       },
       "keywords": {
         "en": [
@@ -481,12 +481,12 @@
     "repositoryUrl": "https://github.com/anthropics/skills",
     "seo": {
       "title": {
-        "en": "PDF by Anthropic | Installation & Guide",
-        "zh": "PDF by Anthropic：安装与使用指南"
+        "en": "PDF Skill: Extract, Organize, and Create Page-Based Documents",
+        "zh": "PDF Skill：内容提取、页面整理与分页文档制作"
       },
       "description": {
-        "en": "Read, organize, create, or process PDF files with task-specific extraction and document workflows. Explore installation options, use cases, and a practical guide.",
-        "zh": "按任务读取、整理、创建或处理 PDF 文件，并核对内容与页面结果。了解安装方式、适用场景、操作步骤与使用要求。"
+        "en": "Handle PDF reading, extraction, page organization, and creation with task-specific guidance. Check scan quality, required tools, and rendered output where layout matters.",
+        "zh": "使用 PDF Skill 处理阅读、提取、页面整理与创建任务，区分扫描内容和可选择文本，核对所需工具，并在版式重要时检查渲染结果与原始文件是否一致。"
       },
       "keywords": {
         "en": [
@@ -717,12 +717,12 @@
     "repositoryUrl": "https://github.com/anthropics/skills",
     "seo": {
       "title": {
-        "en": "DOCX by Anthropic | Installation & Guide",
-        "zh": "DOCX by Anthropic：安装与使用指南"
+        "en": "DOCX Skill: Edit Word Documents and Verify Page Rendering",
+        "zh": "DOCX Skill：编辑 Word 文档与检查页面渲染"
       },
       "description": {
-        "en": "Create and edit Word documents with structured content, careful preservation, and rendered-page checks. Explore installation options, use cases, and a practical guide.",
-        "zh": "创建和编辑 Word 文档，组织结构化内容，保留必要格式并检查渲染页面。了解安装方式、适用场景、操作步骤与使用要求。"
+        "en": "Create and edit Word documents with Anthropic’s DOCX Skill. Preserve structure, tables, and required content, then inspect rendered pages before accepting the result.",
+        "zh": "通过 Anthropic DOCX Skill 创建和编辑 Word 文档，保留标题、表格及必要内容，结合任务检查修改范围，并查看渲染页面，确认交付文件的结构与版式。"
       },
       "keywords": {
         "en": [
@@ -953,12 +953,12 @@
     "repositoryUrl": "https://github.com/anthropics/skills",
     "seo": {
       "title": {
-        "en": "PPTX by Anthropic | Installation & Guide",
-        "zh": "PPTX by Anthropic：安装与使用指南"
+        "en": "PPTX Skill: Build Editable Slides and Check Visual Output",
+        "zh": "PPTX Skill：制作可编辑幻灯片与检查视觉输出"
       },
       "description": {
-        "en": "Create or update editable presentations, with slide-structure planning and rendered-slide verification. Explore installation options, use cases, and a practical guide.",
-        "zh": "创建或更新可编辑演示文稿，规划幻灯片结构并核对实际渲染效果。了解安装方式、适用场景、操作步骤与使用要求。"
+        "en": "Plan and edit PowerPoint presentations with Anthropic’s PPTX Skill. Work from the audience, source material, and required template, then verify rendered slides.",
+        "zh": "使用 Anthropic PPTX Skill 规划与编辑演示文稿，结合读者、资料和既定模板安排结构，再检查渲染幻灯片，确认内容、图表与可编辑交付符合实际要求。"
       },
       "keywords": {
         "en": [
@@ -1189,12 +1189,12 @@
     "repositoryUrl": "https://github.com/anthropics/skills",
     "seo": {
       "title": {
-        "en": "XLSX by Anthropic | Installation & Guide",
-        "zh": "XLSX by Anthropic：安装与使用指南"
+        "en": "XLSX Skill: Spreadsheet Formulas, Data Cleanup, and Verification",
+        "zh": "XLSX Skill：电子表格公式、数据整理与结果核验"
       },
       "description": {
-        "en": "Create and edit spreadsheet files with traceable formulas, data cleanup, and recalculated-output checks. Explore installation options, use cases, and a practical guide.",
-        "zh": "创建和编辑表格文件，清理数据，使用可追溯公式并核对重新计算的结果。了解安装方式、适用场景、操作步骤与使用要求。"
+        "en": "Create and edit workbooks with Anthropic’s XLSX Skill. Trace source data and formulas, recalculate outputs, and check errors before sharing the spreadsheet.",
+        "zh": "使用 Anthropic XLSX Skill 创建或编辑工作簿，整理来源数据与公式关系，重新计算并检查输出；分享前核对错误、关键数值和格式，避免只检查表格外观。"
       },
       "keywords": {
         "en": [
@@ -1425,12 +1425,12 @@
     "repositoryUrl": "https://github.com/pbakaus/impeccable",
     "seo": {
       "title": {
-        "en": "Impeccable by pbakaus | Installation & Guide",
-        "zh": "Impeccable by pbakaus：安装与使用指南"
+        "en": "Impeccable Skill: Design Audits, Interface Refinement, and Review",
+        "zh": "Impeccable Skill：设计审查、界面优化与渲染验证"
       },
       "description": {
-        "en": "Design, audit, and refine interfaces through a single Skill with focused commands and rendered verification. Explore installation options, use cases, and a practical guide.",
-        "zh": "通过单个 Skill 与专项命令设计、检查和优化界面，并核对实际渲染结果。了解安装方式、适用场景、操作步骤与使用要求。"
+        "en": "Refine interfaces with Paul Bakaus’s Impeccable Skill and supporting tooling. Use focused commands for design audits and improvements, then inspect the rendered result.",
+        "zh": "用 Paul Bakaus 的 Impeccable Skill 与配套工具审查和优化界面，通过具体命令处理设计问题，再检查渲染结果；了解任务指引、支持引擎与现有项目环境的分工。"
       },
       "keywords": {
         "en": [

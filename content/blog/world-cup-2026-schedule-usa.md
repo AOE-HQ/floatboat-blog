@@ -1,5 +1,7 @@
 ---
 title: "USA World Cup 2026 Schedule: Match Times, Reminders & Key Games"
+seoTitle: "USA World Cup 2026 Schedule: Match Times and Calendar Reminders"
+seoDescription: "The USA’s World Cup 2026 schedule covers Group D opponents, kickoff conversions, and host cities. Check EDT, CDT, and PDT times and the guide’s calendar-reminder setup."
 description: "USMNT World Cup 2026 schedule: Paraguay, Australia, Turkey in Group D. EDT/CDT/PDT kickoff times, host city guide, and calendar reminders for every USA match."
 slug: "world-cup-2026-schedule-usa"
 date: "2026-07-15"

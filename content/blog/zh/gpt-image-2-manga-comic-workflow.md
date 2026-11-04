@@ -1,5 +1,7 @@
 ---
 title: "GPT Image 2 漫画创作实战：单人创作者的全章工作流"
+seoTitle: "GPT Image 2 漫画制作：单人创作者的全章工作流"
+seoDescription: "用 GPT Image 2 制作漫画时，衔接脚本拆格、角色参考、逐格生成与独立排字，检查连续性、版权和印刷输出。先用六格试刊记录成本与问题，再判断是否扩展到整章。"
 description: "一套可核验的 GPT Image 2 漫画工作流：从脚本拆格、角色与场景设定、逐格生成，到独立排字、连续性审校、版权核对、成本记录与印刷导出，并用六格试刊判断这套方法是否值得扩展到整章制作。"
 slug: "gpt-image-2-manga-comic-workflow"
 date: "2026-04-25"

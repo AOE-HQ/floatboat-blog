@@ -1,5 +1,7 @@
 ---
 title: "Role-Based AI Workflows for Solo Founders: The gstack Method"
+seoTitle: "gstack for Solo Founders: Role-Based Workflows and Review"
+seoDescription: "gstack’s value for solo founders lies in explicit stages, artifacts, review gates, and stop conditions. Apply stage contracts to content, sales, and operations rather than role-play alone."
 description: "What solo founders can borrow from gstack: explicit workflow stages, review gates, inspectable artifacts, and stop conditions—not role-play alone."
 slug: "what-gstack-gets-right-about-one-person-businesses"
 date: "2026-04-06"

@@ -9,12 +9,12 @@
     "repositoryUrl": "https://github.com/vercel-labs/skills",
     "seo": {
       "title": {
-        "en": "Find Skills by Vercel Labs: Guide & Installation",
-        "zh": "Find Skills by Vercel Labs：用途、安装与使用指南"
+        "en": "Find Skills: Search Agent Instructions and Compare Task Fit",
+        "zh": "Find Skills：搜索 Agent 指引并比较任务适配"
       },
       "description": {
-        "en": "Explore Find Skills by Vercel Labs: discover Agent Skills for specific tasks, compare candidates, and follow installation and usage guidance for your agent.",
-        "zh": "了解 Find Skills by Vercel Labs 的用途、使用场景与操作步骤，按具体任务搜索 Agent Skills，比较候选项及原始来源，查看 Floatboat 和其他 Agent 的安装与使用方式。"
+        "en": "Use Find Skills to search for Agent instructions around a real task, compare candidate sources, and review setup requirements before choosing what to install.",
+        "zh": "用 Find Skills 围绕实际任务搜索 Agent 指引，比较候选资源的用途、来源和安装要求，再判断哪些能力适合当前宿主；了解查找方式与原始 Skill 入口。"
       },
       "keywords": {
         "en": [

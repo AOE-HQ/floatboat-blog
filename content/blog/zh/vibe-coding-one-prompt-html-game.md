@@ -1,5 +1,7 @@
 ---
 title: "Vibe Coding 实战 — 用 Kimi K3 一条提示词生成可玩的 HTML 游戏"
+seoTitle: "Kimi K3 Vibe Coding：用一条提示词制作 HTML 游戏"
+seoDescription: "用一条提示词制作 HTML 小游戏时，先限定任务并生成自包含文件，再检查控制、完成状态、失败路径与安全边界。依据可观察问题迭代，并判断何时需要正式项目结构。"
 description: "一条提示词 HTML 游戏实操教程：限定浏览器小游戏范围，生成自包含单文件，测试控制、完成状态、失败路径与安全边界，再根据可观察缺陷逐步迭代，并判断何时应从单文件原型迁移到正式项目结构。"
 slug: "vibe-coding-one-prompt-html-game"
 date: "2026-07-22"

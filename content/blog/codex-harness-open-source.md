@@ -1,5 +1,7 @@
 ---
 title: "Codex Harness Open Source — OpenAI's Agent Runtime"
+seoTitle: "Codex Harness Open Source: Inside OpenAI’s Agent Runtime"
+seoDescription: "Codex Harness exposes agent runtime code, exec, SDK, and app-server interfaces. Examine what is open, what remains separate, and how the stack compares with DeepSeek Harness."
 description: "OpenAI's Codex harness is open on GitHub: exec, SDK, and app-server. What's in the agent loop, what's not open, and how it compares to DeepSeek Harness."
 slug: "codex-harness-open-source"
 date: "2026-08-27"

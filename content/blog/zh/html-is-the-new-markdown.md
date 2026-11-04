@@ -1,5 +1,7 @@
 ---
 title: "HTML 就是新的 Markdown：这场争论真正说了什么"
+seoTitle: "HTML 与 Markdown 之争：AI 交付物的格式变化与边界"
+seoDescription: "追溯“HTML is the new Markdown”的公开论证与示例，区分面向人的成果展示和源文件编辑存储。用同一内容比较阅读、生成成本、安全与维护，避免把一种格式当作所有任务的答案。"
 description: "追溯“HTML is the new Markdown”的公开论证与示例，区分面向人的 AI 成果设计、Markdown 编辑存储和可重复验证，并用同一份内容比较阅读任务、生成成本、安全边界与后续维护。"
 slug: "html-is-the-new-markdown"
 date: "2026-05-20"

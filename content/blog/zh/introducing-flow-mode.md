@@ -1,5 +1,7 @@
 ---
 title: "Floatboat Flow Mode 发布：边说边改的 AI 语音口述写作层"
+seoTitle: "Floatboat 心流模式：语音口述与上下文中的连续修改"
+seoDescription: "Floatboat 心流模式将语音口述、手动修改与 Agent 协作连接到同一文档。了解批量批注、会议行动项和版本历史的作用，区分持续写作与普通听写、会议转录的使用方式。"
 description: "Floatboat Flow Mode 让语音、手改与 Agent 协作发生在同一份文档里：边口述边编辑、批量语音批注一次交给 Agent、会议进行中就能产出带负责人的待办清单，还有带 diff 的版本历史兜底。本文讲清它解决什么问题、四块能力怎么用，以及和通用语音听写、会议机器人的区别。"
 slug: "introducing-flow-mode"
 date: "2026-08-19"

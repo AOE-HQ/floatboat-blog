@@ -1,5 +1,7 @@
 ---
 title: "什么是面向 AI Agent 的语音听写 — 定义、五大任务形态与 Voice Mode 的区别全解析"
+seoTitle: "AI Agent 语音听写：输入形态、任务边界与工作流角色"
+seoDescription: "AI Agent 语音听写将讲话转为可审阅的提示词，再由 Agent 读取并执行。了解五种任务形态与相关技术层，区分听写、语音模式和 Voice Agent，按精确度与复核需求选择输入方式。"
 description: "面向 AI Agent 的语音听写（voice dictation for AI agents）是把语音转成 Agent 提示词输入的做法——你说话，Agent 读字并行动，回复走文本与工具而非语音对话。本文给出完整定义、五项核心特征、三大技术层拆解、A–E 五大任务形态分类，并厘清它与 voice mode、系统级听写、voice agent 的边界。"
 slug: "what-is-voice-dictation-for-ai-agents"
 date: "2026-08-03"

@@ -1,5 +1,7 @@
 ---
 title: "The Markdown Resume — Maintain One Source, Export Every Format"
+seoTitle: "Markdown Resumes: Maintain One Source and Export Multiple Formats"
+seoDescription: "A Markdown resume keeps one source for PDF, Word, and web exports. Review structure, YAML, Git history, export trade-offs, and what applicant-tracking parsers can actually read."
 description: "Keep your resume as one Markdown source and export print-ready PDF, Word, and web on demand — structure, git history, and what ATS parsing actually reads."
 slug: "markdown-resume"
 date: "2026-09-06"

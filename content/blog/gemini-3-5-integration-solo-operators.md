@@ -1,5 +1,7 @@
 ---
 title: "Gemini 3.5 Integration for Solo Operators: Where It Still Fits"
+seoTitle: "Gemini 3.5 Integration: Where It Fits in a Solo Workflow"
+seoDescription: "Gemini 3.5 Flash is no longer the newest Flash model. Compare its workload fit, cost, privacy, and tool limits before deciding whether an existing solo integration still makes sense."
 description: "Gemini 3.5 Flash is stable but no longer Google's newest Flash model. Compare its capabilities, cost, privacy terms, and workflow fit before integrating it."
 slug: "gemini-3-5-integration-solo-operators"
 date: "2026-05-21"

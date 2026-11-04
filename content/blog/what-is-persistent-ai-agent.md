@@ -1,5 +1,7 @@
 ---
 title: "What Is a Persistent AI Agent — and Why Does It Matter?"
+seoTitle: "Persistent AI Agents: Memory, State, and Work Across Sessions"
+seoDescription: "Persistent AI agents carry selected memory and state beyond a single session. Understand what can persist, how it affects ongoing work, and how that differs from a chat-only tool."
 description: "A persistent AI agent doesn't forget you when the session ends. Here's what that actually means for how you work — and why it's becoming the most important idea in personal AI."
 slug: "what-is-persistent-ai-agent"
 date: "2026-04-08"

@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -25,7 +26,7 @@ export async function generateMetadata({
   if (!model) return {};
   const canonical = `https://floatboat.ai${modelPath("en", model.slug)}`;
   return {
-    title: localize(model.seo.title, "en"),
+    title: { absolute: seoTitle(localize(model.seo.title, "en")) },
     description: localize(model.seo.description, "en"),
     keywords: model.seo.keywords.map((keyword) => localize(keyword, "en")),
     alternates: {

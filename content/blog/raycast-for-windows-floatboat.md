@@ -1,5 +1,7 @@
 ---
 title: "Raycast for Windows Is Here: Raycast or Floatboat?"
+seoTitle: "Raycast for Windows: Compare Launcher and Agent Workflows"
+seoDescription: "Raycast for Windows and Floatboat support different work patterns. Compare search, extensions, agents, files, projects, automation, and paid access before choosing a workspace."
 description: "Raycast now runs on Windows. Compare Raycast and Floatboat by search, extensions, AI agents, files, projects, automation, pricing, and the work each product fits best."
 slug: "raycast-for-windows-floatboat"
 date: "2026-09-03"

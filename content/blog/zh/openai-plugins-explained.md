@@ -1,5 +1,7 @@
 ---
 title: "OpenAI Plugins 详解：Skills、MCP、界面、事件与分发"
+seoTitle: "OpenAI Plugins：Skills、MCP、界面、事件与分发机制"
+seoDescription: "OpenAI Plugins 将 Skills、MCP Server、界面、事件与 Hooks 组合起来。了解各组件承担的职责及分发方式，再判断任务是否需要完整插件，还是更小的连接与指令已经足够。"
 description: "OpenAI Plugin 在 2026 年究竟是什么？本文拆清 Skill、MCP Server、UI、Events 与 Hooks 的边界，并给出是否值得做完整 Plugin 的判断方法。"
 slug: "openai-plugins-explained"
 date: "2026-10-06"

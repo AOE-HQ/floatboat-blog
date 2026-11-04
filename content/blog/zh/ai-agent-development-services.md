@@ -1,5 +1,7 @@
 ---
 title: "AI Agent 开发服务怎么选：采购、自建与验收指南"
+seoTitle: "AI Agent 开发服务：采购、自建与项目验收指南"
+seoDescription: "采购 AI Agent 开发服务前，核对范围、架构、安全、报价与产物所有权。结合付费试点评分和验收证据，判断应外包、自建还是先做小范围测试，并明确维护与退出条件。"
 description: "从服务范围、交付物、系统架构、安全审查、评估指标、报价结构到合同退出条款，系统判断 AI Agent 开发服务是否值得采购，以及应该外包、自建还是先做付费试点。"
 slug: "ai-agent-development-services"
 date: "2026-03-24"

@@ -1,5 +1,7 @@
 ---
 title: "最佳 AI 文件重命名工具排名：Mac 与 Windows 选购指南"
+seoTitle: "AI 文件重命名工具：命名规则、语义理解与审阅比较"
+seoDescription: "AI 文件重命名工具的差异在于内容理解、命名规则与修改审阅。按 Mac、Windows 上的真实工作比较候选，检查批量变化和错误处理，而不是只统计可设置的规则数量。"
 description: "面向 Mac 与 Windows 的 AI 文件重命名工具榜单：比较命名控制、原地操作、批量预览与撤销、格式覆盖、隐私模式和当前价格，并区分规则型改名、按内容起名以及会额外移动文件的自动化流程。"
 slug: "best-ai-file-renamer"
 date: "2026-08-24"

@@ -1,5 +1,7 @@
 ---
 title: "如何用 FastMoss 与 Floatboat 自动化每周 TikTok Shop 调研"
+seoTitle: "TikTok Shop 调研：用 FastMoss 自动化每周资料整理"
+seoDescription: "跟随 Floatboat 在内置浏览器中操作 FastMoss 的流程，查看实时证据、历史比较、经营简报核验与交付如何衔接，再由 FloatSchedule 带回下一轮 TikTok Shop 调研。"
 description: "看 Floatboat 如何在内置浏览器里操作 FastMoss、留存实时证据、对比历史、撰写并核验经营简报、完成交付，再由 FloatSchedule 带回下一轮工作的完整流程。"
 slug: "automate-tiktok-shop-research-fastmoss-floatboat"
 date: "2026-08-20"

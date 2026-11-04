@@ -1,5 +1,7 @@
 ---
 title: "2026 年如何用 ChatGPT 构建 AI Agent"
+seoTitle: "用 ChatGPT 构建 Agent：工具配置、任务设计与验证"
+seoDescription: "在 ChatGPT 内选择合适入口，配置任务边界、指令、知识与应用，再核对权限、测试和发布流程。了解不使用 API Playground、也不编写应用代码的可复用 Agent 构建方式。"
 description: "不使用 API Playground，也不写应用代码：选择当前 ChatGPT 的正确入口，用任务边界、指令、知识、应用、权限、测试与发布流程构建可复用的 AI Agent 工作流。"
 slug: "how-to-build-an-ai-agent-with-chatgpt"
 date: "2026-05-19"

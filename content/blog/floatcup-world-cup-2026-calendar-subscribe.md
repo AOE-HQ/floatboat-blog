@@ -1,5 +1,7 @@
 ---
 title: "FloatCup: Subscribe to the World Cup 2026 Calendar in One Click"
+seoTitle: "FloatCup World Cup Calendar: Subscription Archive and Removal"
+seoDescription: "FloatCup’s World Cup 2026 calendar is now an archive. Revisit how the subscription worked, check official results, and decide whether to preserve or remove the finished calendar."
 description: "FloatCup’s archived World Cup 2026 calendar: how the 104-match subscription worked, what remains after Spain won, and how to remove or preserve the calendar."
 slug: "floatcup-world-cup-2026-calendar-subscribe"
 date: "2026-07-15"

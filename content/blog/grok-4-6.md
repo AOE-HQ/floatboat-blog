@@ -1,5 +1,7 @@
 ---
 title: "Grok 4.6: Specs, Benchmarks, Pricing, and Its Place After 4.7"
+seoTitle: "Grok 4.6: Specs, Benchmarks, Pricing, and the 4.7 Comparison"
+seoDescription: "Grok 4.6 comparisons require matched benchmark versions and cost assumptions. Review context, reasoning, pricing, and task fit before retaining it or moving to Grok 4.7."
 description: "A sourced guide to Grok 4.6: 500K context, reasoning modes, API pricing, independent benchmarks, long-context costs, and whether it still makes sense after Grok 4.7."
 slug: "grok-4-6"
 date: "2026-08-14"

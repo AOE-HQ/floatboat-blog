@@ -1,5 +1,7 @@
 ---
 title: "2026 年最佳 AI Agent 平台：可复现选型方法"
+seoTitle: "AI Agent 平台：2026 年可复现的比较与筛选方法"
+seoDescription: "AI Agent 平台选型应围绕同一任务、权限和成本口径展开。结合部署、治理、评测、可观测恢复与退出条件建立候选清单，用可复现证据代替无依据的通用排名。"
 description: "不做无证据总排名：用同一任务、权限边界、评估集与成本口径，从任务适配、控制权、部署、治理、评估、成本、可观测恢复和退出能力建立可复现的 AI Agent 平台 shortlist。"
 slug: "best-ai-agent-platform-2026"
 date: "2026-05-15"

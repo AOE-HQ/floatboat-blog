@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 
 import enFloatim from "@/data/landing/en/floatim.json";
@@ -64,7 +65,7 @@ export function buildCoreFeatureMetadata(
   const image = imageBySlug[page.slug];
 
   return {
-    title: { absolute: page.seo.title },
+    title: { absolute: seoTitle(page.seo.title) },
     description: page.seo.description,
     keywords: page.seo.keywords,
     alternates: {
@@ -77,14 +78,14 @@ export function buildCoreFeatureMetadata(
     },
     openGraph: {
       type: "website",
-      title: page.seo.title,
+      title: seoTitle(page.seo.title),
       description: page.seo.description,
       url: path,
       images: [{ url: image }],
     },
     twitter: {
       card: "summary_large_image",
-      title: page.seo.title,
+      title: seoTitle(page.seo.title),
       description: page.seo.description,
       images: [image],
     },

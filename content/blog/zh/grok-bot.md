@@ -1,5 +1,7 @@
 ---
 title: "Grok Bot 是什么：xAI 的云电脑 Agent 如何工作"
+seoTitle: "Grok Bot：xAI 云电脑 Agent 的运行方式与任务边界"
+seoDescription: "Grok Bot 通过云电脑、Routine 与多 Bot 协作开展工作，与 Grok 聊天和普通提及并不相同。了解 X 集成、接入和审批边界，再用有限权限测试真实工作账户中的任务。"
 description: "详解 Grok Bot 的常驻云电脑、Routine、多 Bot 协作、X 集成、接入范围与审批边界，说明它和 Grok 聊天、@bot 的区别，以及接入真实工作账号前应该如何控制权限与试点。"
 slug: "grok-bot"
 date: "2026-08-14"

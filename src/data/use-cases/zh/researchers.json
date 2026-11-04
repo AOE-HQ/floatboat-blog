@@ -2,8 +2,8 @@
   "slug": "researchers",
   "locale": "zh",
   "seo": {
-    "title": "研究人员 Work Agent：证据审阅与研究综合 | Floatboat",
-    "description": "面向研究人员的 Work Agent，用于整理选定来源、构建证据矩阵、比较发现、起草文献综述并维护研究简报。",
+    "title": "研究人员 AI 工作流：来源综合、研究笔记与证据追踪",
+    "description": "阅读和比较来源资料，整理研究笔记并形成可审阅的综合分析，保留证据出处与未决问题，让结论能够回到原始材料核对，避免把生成摘要直接当作研究证据。",
     "keywords": [
       "研究人员 Work Agent",
       "研究 AI Agent",

@@ -1,5 +1,7 @@
 ---
 title: "How to Use Obsidian with an AI Agent Safely"
+seoTitle: "Obsidian with AI Agents: Vault Access, Scope, and Safe Changes"
+seoDescription: "Obsidian agent access can start with a read-only trial rather than the entire vault. Define scope, backups, Agent Inbox writes, CLI use, and review before accepting changes."
 description: "Use an AI agent with Obsidian without handing over your whole knowledge base. This practical workflow covers access scope, read-only trials, Agent Inbox write-back, Obsidian CLI, backups, and review."
 slug: "how-to-use-obsidian-with-ai-agent"
 date: "2026-07-30"

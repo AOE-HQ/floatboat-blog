@@ -1,5 +1,7 @@
 ---
 title: "把账号密码交给浏览器 AI 之前，先问这 5 个问题"
+seoTitle: "浏览器 AI 安全：开放账户访问前需要问的五个问题"
+seoDescription: "浏览器 AI Agent 可能接触已登录的邮件与 CRM 资料。开放访问前，检查权限、记忆与提示词注入等五个问题，理解权限弹窗，并按首次使用清单限制可读取和执行的范围。"
 description: "想让浏览器 AI Agent 碰你的 Gmail 或 CRM 之前，先过一遍这 5 个问题：权限、记忆、提示词注入。文章给出黑名单清单、权限弹窗解读与首次使用检查清单。"
 slug: "browser-ai-agent-security-questions"
 date: "2026-05-12"

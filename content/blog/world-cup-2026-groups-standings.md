@@ -1,5 +1,7 @@
 ---
 title: "World Cup Groups 2026: Standings & Tiebreakers"
+seoTitle: "World Cup 2026 Groups: Final Standings and Tiebreaker Rules"
+seoDescription: "World Cup 2026 groups determine rankings and knockout routes. Review all 12 groups, final table structure, tiebreakers, and the best third-place qualification rules."
 description: "World Cup groups guide for 2026: all groups, live standings structure, tiebreakers, key matches, and how advancement works."
 slug: "world-cup-2026-groups-standings"
 date: "2026-07-15"

@@ -1,5 +1,7 @@
 ---
 title: "What Is Doubao Work? ByteDance's AI Office Agent Explained"
+seoTitle: "Doubao Work: ByteDance’s AI Office Agent and Task Workflow"
+seoDescription: "Doubao Work adoption requires checks across desktop and cloud execution, Feishu context, outputs, and approvals. Review pricing and regional limits before a reversible pilot."
 description: "Doubao Work explained as an AI office agent: verify its desktop, cloud, Feishu, artifact, permission, pricing, and regional boundaries before adoption."
 slug: "what-is-doubao-work"
 date: "2026-08-27"

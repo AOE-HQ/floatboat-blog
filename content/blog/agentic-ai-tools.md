@@ -1,5 +1,7 @@
 ---
 title: "Agentic AI Tools for Real Work"
+seoTitle: "Agentic AI Tools: Choose by Task, Autonomy, and Execution"
+seoDescription: "Agentic AI tools differ in oversight, context, permissions, and recovery. Compare five tool types and choose an autonomy level that fits the work and its risks."
 description: "Agentic AI tools help with multi-step work, but choosing one requires checking oversight, context, permissions, and failure handling."
 slug: "agentic-ai-tools"
 date: "2026-05-13"

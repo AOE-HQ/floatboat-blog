@@ -1,5 +1,7 @@
 ---
 title: "How to Build an AI Agent with ChatGPT in 2026"
+seoTitle: "ChatGPT Agent Building: Tools, Task Design, and Validation"
+seoDescription: "Build a reusable workflow inside ChatGPT by choosing the right surface, instructions, knowledge, and apps. Test permissions and rollout without starting an API application."
 description: "Build a reusable agent workflow in ChatGPT without an API: choose the right ChatGPT surface, define instructions, knowledge, apps, permissions, tests, and rollout."
 slug: "how-to-build-an-ai-agent-with-chatgpt"
 date: "2026-05-19"

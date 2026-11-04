@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek V4.1 Flash：正式版状态、规格、价格与迁移"
+seoTitle: "DeepSeek V4.1 Flash：发布状态、价格与模型迁移指南"
+seoDescription: "迁移 DeepSeek V4.1 Flash 时，核对准确模型名、上下文、视觉能力、峰谷价格与退役别名，检查 V4 Pro 路由变化，并对原有任务重新测试，避免只替换名称就直接上线。"
 description: "DeepSeek V4.1 Flash 已成为正式 Flash 模型。本文核对生产模型名、1M 上下文、视觉能力、峰谷价格、退役别名、V4 Pro 临时路由，以及从限时测试版迁移时必须复测的关键项目。"
 slug: "deepseek-v4-1-flash"
 date: "2026-09-09"

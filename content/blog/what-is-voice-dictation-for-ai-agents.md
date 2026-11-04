@@ -1,5 +1,7 @@
 ---
 title: "What Is Voice Dictation for AI Agents? — Defined"
+seoTitle: "Voice Dictation for AI Agents: Input Shapes and Workflow Roles"
+seoDescription: "Voice dictation for agents converts speech into prompts that can be reviewed before execution. Learn five task shapes and distinguish dictation, voice mode, and speech-driven agents."
 description: "Voice dictation for AI agents turns speech into agent prompts—not chat replies. Learn the definition, five job shapes, and how it differs from voice mode."
 slug: "what-is-voice-dictation-for-ai-agents"
 date: "2026-08-03"

@@ -1,5 +1,7 @@
 ---
 title: "Vibe Coding a One-Prompt HTML Game with Kimi K3"
+seoTitle: "Vibe Coding with Kimi K3: Build an HTML Game from One Prompt"
+seoDescription: "A one-prompt HTML game should stay small enough to inspect. Define the task, generate one file, test controls and failure states, then decide when a proper project structure is needed."
 description: "A practical one-prompt HTML game tutorial: define a small browser game, generate one file, test controls and failure states, then iterate with evidence."
 slug: "vibe-coding-one-prompt-html-game"
 date: "2026-07-22"

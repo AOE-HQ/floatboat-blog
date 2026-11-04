@@ -9,12 +9,12 @@
     "repositoryUrl": "https://github.com/mattpocock/skills",
     "seo": {
       "title": {
-        "en": "Grill Me by Matt Pocock | Installation & Guide",
-        "zh": "Grill Me by Matt Pocock：安装与使用指南"
+        "en": "Grill Me Skill: Clarify Plans, Decisions, and Architecture",
+        "zh": "Grill Me Skill：澄清方案、关键决定与架构上下文"
       },
       "description": {
-        "en": "Explore Grill Me by Matt Pocock, its grilling companion, and the Grill with Docs mode. Review installation, interview steps, glossary updates, and architectural decisions.",
-        "zh": "了解 Matt Pocock 的 Grill Me、配套 grilling 与 Grill with Docs 模式，查看完整集合安装、访谈步骤，以及领域术语和架构决策记录的使用方式。"
+        "en": "Use Matt Pocock’s Grill Me Skill to question a plan before implementation. Explore unresolved decisions and the document-aware mode for terminology and architecture.",
+        "zh": "使用 Matt Pocock 的 Grill Me Skill 在实施前澄清方案，逐步追问尚未确定的决定；了解文档模式如何结合领域术语与架构记录，为后续开发保留清楚的任务依据。"
       },
       "keywords": {
         "en": [
@@ -349,12 +349,12 @@
     "repositoryUrl": "https://github.com/mattpocock/skills",
     "seo": {
       "title": {
-        "en": "TDD by Matt Pocock | Installation & Guide",
-        "zh": "TDD by Matt Pocock：安装与使用指南"
+        "en": "TDD Skill: Public Interfaces and Small Test-to-Code Cycles",
+        "zh": "TDD Skill：公开接口与小步测试驱动开发流程"
       },
       "description": {
-        "en": "Build features and fixes through agreed public interfaces and small failing-test-to-implementation cycles.",
-        "zh": "围绕约定公开接口，通过失败测试与最小实现逐步完成特性和修复。"
+        "en": "Apply Matt Pocock’s TDD Skill to agreed behavior and public interfaces. Move through small failing-test, implementation, and refactoring cycles with meaningful checks.",
+        "zh": "用 Matt Pocock 的 TDD Skill 围绕约定行为与公开接口推进开发，通过小步失败测试、最小实现和重构逐步完成修改，检查真实结果，避免测试只重复内部实现。"
       },
       "keywords": {
         "en": [
@@ -618,12 +618,12 @@
     "repositoryUrl": "https://github.com/mattpocock/skills",
     "seo": {
       "title": {
-        "en": "Improve Codebase Architecture by Matt Pocock | Installation & Guide",
-        "zh": "Improve Codebase Architecture by Matt Pocock：安装与使用指南"
+        "en": "Codebase Architecture Skill: Find Friction and Plan Refactoring",
+        "zh": "代码库架构 Skill：调查结构摩擦与规划模块重构"
       },
       "description": {
-        "en": "Survey concrete architecture friction, compare candidate module improvements, and explore one design before refactoring.",
-        "zh": "调查实际架构摩擦，比较模块改进候选，再深入选定设计。"
+        "en": "Investigate concrete architecture friction with Matt Pocock’s Skill. Compare candidate module improvements and explore a selected design before making structural changes.",
+        "zh": "通过 Matt Pocock 的架构 Skill 调查代码库中的具体结构摩擦，比较模块改进候选，再深入选定设计；先明确问题与行为边界，不因抽象看似优雅就直接扩大重构。"
       },
       "keywords": {
         "en": [
@@ -877,12 +877,12 @@
     "repositoryUrl": "https://github.com/mattpocock/skills",
     "seo": {
       "title": {
-        "en": "Diagnosing Bugs by Matt Pocock | Installation & Guide",
-        "zh": "Diagnosing Bugs by Matt Pocock：安装与使用指南"
+        "en": "Diagnosing Bugs Skill: Reproduction, Root Causes, and Fix Checks",
+        "zh": "Diagnosing Bugs Skill：故障复现、根因调查与修复验证"
       },
       "description": {
-        "en": "Diagnose difficult bugs through a reproducible signal, minimized case, and verified correction.",
-        "zh": "通过复现信号、最小案例和修复验证调查复杂缺陷。"
+        "en": "Use Matt Pocock’s Diagnosing Bugs Skill to establish a reproducible signal, minimize the failure, and verify a focused correction rather than editing from guesswork.",
+        "zh": "使用 Matt Pocock 的 Diagnosing Bugs Skill 建立可复现信号、缩小失败案例，再检查有针对性的修复。围绕实际证据定位问题，避免在原因未明时反复猜测与修改代码。"
       },
       "keywords": {
         "en": [
@@ -1136,12 +1136,12 @@
     "repositoryUrl": "https://github.com/mattpocock/skills",
     "seo": {
       "title": {
-        "en": "Code Review by Matt Pocock | Installation & Guide",
-        "zh": "Code Review by Matt Pocock：安装与使用指南"
+        "en": "Code Review Skill: Check Git Diffs Against Rules and Requirements",
+        "zh": "Code Review Skill：按仓库规范与原始需求审查差异"
       },
       "description": {
-        "en": "Review a fixed Git diff independently for repository standards and originating requirements.",
-        "zh": "对固定 Git 差异分别检查仓库规范与原始需求。"
+        "en": "Review a fixed Git diff with Matt Pocock’s Code Review Skill. Check repository standards and original requirements separately, then report actionable, scoped findings.",
+        "zh": "用 Matt Pocock 的 Code Review Skill 审查固定 Git 差异，分别核对仓库规范与原始需求，整理可执行、范围明确的问题；区分真实缺陷、任务偏离与个人风格偏好。"
       },
       "keywords": {
         "en": [
@@ -1405,12 +1405,12 @@
     "repositoryUrl": "https://github.com/mattpocock/skills",
     "seo": {
       "title": {
-        "en": "Handoff by Matt Pocock | Installation & Guide",
-        "zh": "Handoff by Matt Pocock：安装与使用指南"
+        "en": "Handoff Skill: Session Summaries, References, and Next Actions",
+        "zh": "Handoff Skill：会话摘要、资料引用与后续任务交接"
       },
       "description": {
-        "en": "Summarize a session into a focused temporary handoff document with references and suggested skills.",
-        "zh": "通过引用与建议 Skills，将会话整理为聚焦的临时交接文档。"
+        "en": "Prepare a focused session handoff with Matt Pocock’s Skill. Preserve decisions, file references, verification status, and the next action without copying the full chat.",
+        "zh": "使用 Matt Pocock 的 Handoff Skill 整理临时交接文档，保留已定决定、文件引用、验证状态与下一步动作，让接手者分清实际进展和待确认项，无需复制整段会话。"
       },
       "keywords": {
         "en": [
@@ -1664,12 +1664,12 @@
     "repositoryUrl": "https://github.com/obra/superpowers",
     "seo": {
       "title": {
-        "en": "Brainstorming by Jesse Vincent | Installation & Guide",
-        "zh": "Brainstorming by Jesse Vincent：安装与使用指南"
+        "en": "Brainstorming Skill: Clarify Intent and Agree a Design",
+        "zh": "Brainstorming Skill：澄清意图、比较方案与确认设计"
       },
       "description": {
-        "en": "Clarify intent, compare approaches, and agree a design before moving into the Superpowers planning workflow.",
-        "zh": "在进入 Superpowers 规划流程前澄清意图、比较方案并确认设计。"
+        "en": "Clarify goals and compare approaches with Superpowers Brainstorming before implementation. Agree a design and carry its decisions into the subsequent planning workflow.",
+        "zh": "用 Superpowers Brainstorming 在实施前澄清目标、比较候选方法并确认设计，将明确的决定交给后续规划流程；了解讨论阶段与具体编码任务之间的边界。"
       },
       "keywords": {
         "en": [
@@ -1942,12 +1942,12 @@
     "repositoryUrl": "https://github.com/obra/superpowers",
     "seo": {
       "title": {
-        "en": "Systematic Debugging by Jesse Vincent | Installation & Guide",
-        "zh": "Systematic Debugging by Jesse Vincent：安装与使用指南"
+        "en": "Systematic Debugging: Evidence, Root Causes, and Verified Fixes",
+        "zh": "Systematic Debugging：证据调查、根因定位与修复验证"
       },
       "description": {
-        "en": "Investigate root causes through four evidence-led phases before implementing and verifying a correction.",
-        "zh": "通过四个证据驱动阶段调查根因，再实施并验证修复。"
+        "en": "Investigate failures with Superpowers Systematic Debugging. Follow its evidence-led phases to identify root causes before implementing and verifying a correction.",
+        "zh": "使用 Superpowers Systematic Debugging 的证据驱动流程调查故障，先整理观察、定位根因，再实施并验证修复；避免把临时绕过问题当作已经确认的解决方案。"
       },
       "keywords": {
         "en": [
@@ -2220,12 +2220,12 @@
     "repositoryUrl": "https://github.com/cloudflare/security-audit-skill",
     "seo": {
       "title": {
-        "en": "Cloudflare Security Audit Skill: Workflow and Requirements",
-        "zh": "Cloudflare Security Audit Skill：流程、依赖与使用指南"
+        "en": "Security Audit Skill: Repository Coverage and Verified Findings",
+        "zh": "Security Audit Skill：仓库覆盖、证据核验与安全审查"
       },
       "description": {
-        "en": "Use Cloudflare’s six-phase audit Skill to map coverage, validate candidates independently, and produce source-grounded findings. Understand verdicts, report artifacts, and execution requirements before applying it to a repository.",
-        "zh": "了解 Cloudflare 六阶段安全审计 Skill，围绕覆盖调查、独立候选验证与源码证据组织结果，核对结论状态、报告产物与执行条件后再用于仓库审查。"
+        "en": "Study Cloudflare’s six-phase Security Audit Skill, with coverage ledgers, independent finding checks, and structured reports. Understand its scope and tool requirements.",
+        "zh": "了解 Cloudflare Security Audit Skill 的六阶段仓库审查方法，查看覆盖台账、独立发现核验和结构化报告的作用，核对调查范围、证据要求及所依赖工具。"
       },
       "keywords": {
         "en": [

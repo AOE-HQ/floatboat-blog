@@ -1,5 +1,7 @@
 ---
 title: "Windows AI 文件整理器：如何核验离线运行"
+seoTitle: "Windows AI 文件整理器：核验离线能力与云端数据流"
+seoDescription: "评估 Windows AI 文件整理器时，核对模型运行位置、网络流量、读取范围与恢复证据，同时检查 OneDrive 占位符。先完成小批量试验，再决定是否处理真实目录。"
 description: "从模型运行位置、网络流量、读取内容范围、移动预览、恢复证据、重复项策略与 OneDrive 云端占位符行为，评估 Windows AI 文件整理器是否适合处理你的目录，并安全完成第一次小批量测试。"
 slug: "ai-file-organizer-windows"
 date: "2026-08-28"

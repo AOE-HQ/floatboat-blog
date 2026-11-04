@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek V4 Pro 0813 — The Quiet GA and What It Actually Changes"
+seoTitle: "DeepSeek V4 Pro 0813: What the GA Release Actually Changes"
+seoDescription: "DeepSeek V4 Pro 0813 changed from preview to GA with a limited pricing window. Examine the reported specs, agent benchmarks, and Grok comparison in that release context."
 description: "DeepSeek V4 Pro 0813 went GA with no announcement. Specs, claimed agent benchmarks, the pricing window before the hike, and how it stacks against Grok 4.6."
 slug: "deepseek-v4-pro-0813"
 date: "2026-08-14"

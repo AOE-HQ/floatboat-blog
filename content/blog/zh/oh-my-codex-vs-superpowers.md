@@ -1,5 +1,7 @@
 ---
 title: "oh-my-codex vs Superpowers：Codex 编排还是技能纪律？"
+seoTitle: "oh-my-codex 与 Superpowers：编排机制和 Skill 流程比较"
+seoDescription: "比较 oh-my-codex 与 Superpowers 的宿主支持、流程约束、状态和并行执行方式，核对安装权限、冲突与长期维护成本，再判断单独采用还是开展有边界的组合试点。"
 description: "从产品范围、宿主支持、流程约束、状态保存、并行工作、安装权限、冲突风险与长期维护成本，比较 oh-my-codex 和 Superpowers 应该何时单独使用或组合试点。"
 slug: "oh-my-codex-vs-superpowers"
 date: "2026-04-30"

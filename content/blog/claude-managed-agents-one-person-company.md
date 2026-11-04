@@ -1,5 +1,7 @@
 ---
 title: "Claude Managed Agents: What They Mean for Solo Companies"
+seoTitle: "Claude Managed Agents: Hosting Decisions for Solo Companies"
+seoDescription: "Claude Managed Agents supplies hosted runtime infrastructure, not business ownership. Evaluate long-task recovery, permissions, and a low-risk pilot before adopting it in a solo company."
 description: "Claude Managed Agents gives builders a hosted agent runtime. Learn when that infrastructure helps a solo company, what it does not replace, and how to pilot it safely."
 slug: "claude-managed-agents-one-person-company"
 date: "2026-04-22"

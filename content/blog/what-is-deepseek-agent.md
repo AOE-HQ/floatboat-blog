@@ -1,5 +1,7 @@
 ---
 title: "What Is a DeepSeek Agent? Models, Harnesses, Tools, and Types"
+seoTitle: "DeepSeek Agents: Models, Harnesses, Tools, and Common Setups"
+seoDescription: "A DeepSeek agent combines a model with a harness, tools, and state. Compare common setups, tool calling, official integrations, and production controls through actual task needs."
 description: "A DeepSeek Agent is an agent harness using a DeepSeek model. Learn the difference between models and agents, current integrations, tool calling, and how to choose."
 slug: "what-is-deepseek-agent"
 date: "2026-08-14"

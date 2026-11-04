@@ -1,5 +1,7 @@
 ---
 title: "AI Agent Connector 详解：MCP、OAuth 与权限边界"
+seoTitle: "AI Agent 连接器：理解 MCP、OAuth 与工具访问权限"
+seoDescription: "AI Agent 连接器通过 MCP、OAuth、Scope 与资源权限连接工作资料。了解如何评估访问范围、开展有限试运行并定位故障，再决定哪些读取或修改动作可以交给 Agent。"
 description: "从实际工作流解释 AI Agent Connector 如何组合 MCP、OAuth、Scope、资源权限与人工审批，并提供选型、试运行、故障定位和安全核查方法。"
 slug: "ai-agent-connectors-explained"
 date: "2026-10-09"

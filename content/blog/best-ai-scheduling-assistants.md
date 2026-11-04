@@ -1,5 +1,7 @@
 ---
 title: "Best AI Scheduling Assistants: A Buyer’s Shortlist for 2026"
+seoTitle: "AI Scheduling Assistants: A Task-Based Buyer’s Guide for 2026"
+seoDescription: "AI scheduling assistants suit different booking and coordination needs. Compare Calendly, Google Calendar, Outlook, Motion, and Reclaim with practical trial checks and trade-offs."
 description: "Compare AI scheduling assistants for booking, calendar optimization, team coordination, and meeting workflows. A buyer-focused shortlist with tests and tradeoffs."
 slug: "best-ai-scheduling-assistants"
 date: "2026-06-29"

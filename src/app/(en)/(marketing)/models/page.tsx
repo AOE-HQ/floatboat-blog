@@ -1,10 +1,13 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 
 import { ModelsIndexPage } from "@/components/models/models-index-page";
 
+const searchCopy = { title: seoTitle("AI Models: Compare Recorded Versions, Routes, and Task Fit"), description: "Compare Floatboat model records for reasoning, coding, long text, images, and video. Distinguish pricing-page listings, runtime configuration, and selectable client access." };
+
 export const metadata: Metadata = {
-  title: "AI Models in Floatboat — One Agent Workspace",
-  description: "Explore Floatboat models live in the client picker, built-in multimedia Combos, and configured capacity below the picker.",
+  title: { absolute: searchCopy.title },
+  description: searchCopy.description,
   alternates: { canonical: "https://floatboat.ai/models", languages: { en: "https://floatboat.ai/models", zh: "https://floatboat.ai/zh/models" } },
 };
 

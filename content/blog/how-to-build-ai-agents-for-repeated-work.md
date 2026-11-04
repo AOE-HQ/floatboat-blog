@@ -1,5 +1,7 @@
 ---
 title: "How to Build AI Agents for Repeated Work"
+seoTitle: "AI Agents for Repeated Work: Define, Test, and Reuse a Task"
+seoDescription: "An agent for repeated work needs a task contract, bounded tools, state, and approvals. Use evaluations, shadow runs, observability, and recovery before extending production access."
 description: "Build an AI agent for repeated work with a task contract, bounded tools, state, approvals, evaluations, observability, and safe recovery—not just a prompt."
 slug: "how-to-build-ai-agents-for-repeated-work"
 date: "2026-05-14"

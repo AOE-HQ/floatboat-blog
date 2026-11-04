@@ -10,36 +10,90 @@
     "en": "MiniMax M2 has a configured 1M low-cost profile below the picker.",
     "zh": "MiniMax M2 已配置 1M 低成本画像，旧记录未显示主选择器入口，当前需查看实际菜单。"
   },
-  "seo": {"title":{"en":"MiniMax M2 Model: 1M Context Profile, Capabilities and Use Cases","zh":"MiniMax M2 模型：1M 上下文画像、能力与用途"},"description":{"en":"Learn about MiniMax M2, its exact model ID, configured 1M low-cost profile, long-text workload role, media boundaries, and current status.","zh":"了解 MiniMax M2 的准确 Model ID、1M 低成本画像、长文本工作负载定位、媒体能力边界与当前状态。"},"keywords":[{"en":"MiniMax M2","zh":"MiniMax M2"},{"en":"MiniMax model","zh":"MiniMax 模型"},{"en":"MiniMax 1M context","zh":"MiniMax 1M 上下文"},{"en":"minimax-m2","zh":"minimax-m2"}]},
+  "seo": {
+    "title": {
+      "en": "MiniMax M2: Long-Text Workloads, Model IDs, and Media Limits",
+      "zh": "MiniMax M2：长文本任务、模型标识与媒体能力边界"
+    },
+    "description": {
+      "en": "Review MiniMax M2’s exact ID and configured low-cost 1M profile. Examine long-text workloads and media limits while keeping configuration separate from selectable access.",
+      "zh": "查看 MiniMax M2 的准确模型 ID 与已配置的低成本 1M 画像，了解长文本工作负载和媒体能力边界；实际使用前核对可选入口，避免把配置参数当作开放承诺。"
+    },
+    "keywords": [
+      {
+        "en": "MiniMax M2",
+        "zh": "MiniMax M2"
+      },
+      {
+        "en": "MiniMax model",
+        "zh": "MiniMax 模型"
+      },
+      {
+        "en": "MiniMax 1M context",
+        "zh": "MiniMax 1M 上下文"
+      },
+      {
+        "en": "minimax-m2",
+        "zh": "minimax-m2"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "MiniMax M2 model, 1M context profile, and long-text capabilities.",
-        "zh": "MiniMax M2 模型、1M 上下文画像与长文本能力。"
+      "en": "MiniMax M2 model, 1M context profile, and long-text capabilities.",
+      "zh": "MiniMax M2 模型、1M 上下文画像与长文本能力。"
     },
     "description": {
       "en": "The `minimax-m2` protocol and 1M economic profile are configured below the main picker. Video and image integrations use separate workflow paths.",
       "zh": "`minimax-m2` 协议与 1M 经济画像已在主选择器下层完成配置；视频和生图能力由独立工作流集成承载。"
     },
     "prompts": [
-      { "en": "Process a long low-cost workload", "zh": "处理长文本低成本任务" }
+      {
+        "en": "Process a long low-cost workload",
+        "zh": "处理长文本低成本任务"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Model ID", "zh": "Model ID" },
-      "value": { "en": "minimax-m2", "zh": "minimax-m2" }
+      "label": {
+        "en": "Model ID",
+        "zh": "Model ID"
+      },
+      "value": {
+        "en": "minimax-m2",
+        "zh": "minimax-m2"
+      }
     },
     {
-      "label": { "en": "Capacity", "zh": "容量画像" },
-      "value": { "en": "1M profile", "zh": "1M 画像" }
+      "label": {
+        "en": "Capacity",
+        "zh": "容量画像"
+      },
+      "value": {
+        "en": "1M profile",
+        "zh": "1M 画像"
+      }
     },
     {
-      "label": { "en": "Positioning", "zh": "定位" },
-      "value": { "en": "Low-cost long workloads", "zh": "低成本长任务" }
+      "label": {
+        "en": "Positioning",
+        "zh": "定位"
+      },
+      "value": {
+        "en": "Low-cost long workloads",
+        "zh": "低成本长任务"
+      }
     },
     {
-      "label": { "en": "Availability", "zh": "可用状态" },
-      "value": { "en": "Historical configuration", "zh": "旧记录未显示选择器入口" }
+      "label": {
+        "en": "Availability",
+        "zh": "可用状态"
+      },
+      "value": {
+        "en": "Historical configuration",
+        "zh": "旧记录未显示选择器入口"
+      }
     }
   ],
   "positioning": {
@@ -53,32 +107,56 @@
     },
     "traits": [
       {
-        "label": { "en": "Workload", "zh": "工作负载" },
-        "value": { "en": "Long textual processing", "zh": "长文本处理" },
+        "label": {
+          "en": "Workload",
+          "zh": "工作负载"
+        },
+        "value": {
+          "en": "Long textual processing",
+          "zh": "长文本处理"
+        },
         "description": {
           "en": "The capacity profile is designed around extended inputs.",
           "zh": "容量画像围绕较长输入设计。"
         }
       },
       {
-        "label": { "en": "Economics", "zh": "经济性" },
-        "value": { "en": "Low-cost profile", "zh": "低成本画像" },
+        "label": {
+          "en": "Economics",
+          "zh": "经济性"
+        },
+        "value": {
+          "en": "Low-cost profile",
+          "zh": "低成本画像"
+        },
         "description": {
           "en": "The configured role emphasizes economical processing.",
           "zh": "已配置角色强调经济型处理。"
         }
       },
       {
-        "label": { "en": "Media boundary", "zh": "媒体边界" },
-        "value": { "en": "Separate workflows", "zh": "独立工作流" },
+        "label": {
+          "en": "Media boundary",
+          "zh": "媒体边界"
+        },
+        "value": {
+          "en": "Separate workflows",
+          "zh": "独立工作流"
+        },
         "description": {
           "en": "Image and video integrations are not represented as chat-picker features.",
           "zh": "图像与视频使用独立工作流，不属于当前聊天模型选择器中的功能。"
         }
       },
       {
-        "label": { "en": "Availability", "zh": "可用性" },
-        "value": { "en": "Prepared below picker", "zh": "选择器下层已准备" },
+        "label": {
+          "en": "Availability",
+          "zh": "可用性"
+        },
+        "value": {
+          "en": "Prepared below picker",
+          "zh": "选择器下层已准备"
+        },
         "description": {
           "en": "There is no current public picker entry.",
           "zh": "当前没有公开的选择器入口。"
@@ -177,28 +255,40 @@
     },
     "items": [
       {
-        "title": { "en": "Exact M2 identity", "zh": "准确的 M2 标识" },
+        "title": {
+          "en": "Exact M2 identity",
+          "zh": "准确的 M2 标识"
+        },
         "description": {
           "en": "The configured model ID is `minimax-m2`.",
           "zh": "已配置 Model ID 为 `minimax-m2`。"
         }
       },
       {
-        "title": { "en": "1M profile", "zh": "1M 画像" },
+        "title": {
+          "en": "1M profile",
+          "zh": "1M 画像"
+        },
         "description": {
           "en": "The runtime matrix registers a 1M capacity profile.",
           "zh": "运行时矩阵已登记 1M 容量画像。"
         }
       },
       {
-        "title": { "en": "Low-cost positioning", "zh": "低成本定位" },
+        "title": {
+          "en": "Low-cost positioning",
+          "zh": "低成本定位"
+        },
         "description": {
           "en": "Its recorded role emphasizes economical long workloads.",
           "zh": "记录的角色强调经济型长任务。"
         }
       },
       {
-        "title": { "en": "Separate media paths", "zh": "媒体路径分离" },
+        "title": {
+          "en": "Separate media paths",
+          "zh": "媒体路径分离"
+        },
         "description": {
           "en": "Video and image integrations are carried by other workflows.",
           "zh": "视频与图像集成由其他工作流承载。"
@@ -263,10 +353,46 @@
         "zh": "MiniMax M2 是面向长文本工作负载经济型处理的模型画像。"
       }
     },
-    {"question":{"en":"What is the MiniMax M2 model ID?","zh":"MiniMax M2 的 Model ID 是什么？"},"answer":{"en":"The exact configured model ID is `minimax-m2`.","zh":"准确配置的 Model ID 是 `minimax-m2`。"}},
-    {"question":{"en":"How large is the MiniMax M2 context profile?","zh":"MiniMax M2 的上下文有多大？"},"answer":{"en":"The registered economic profile carries a 1M capacity budget.","zh":"已登记的经济画像包含 1M 容量预算。"}},
-    {"question":{"en":"What is MiniMax M2 best suited for?","zh":"MiniMax M2 适合什么任务？"},"answer":{"en":"Its confirmed role is long, cost-sensitive textual processing rather than image or video generation.","zh":"其已确认定位是对成本敏感的长文本处理，而不是图像或视频生成。"}},
-    {"question":{"en":"What is the current MiniMax M2 support status?","zh":"MiniMax M2 当前是什么支持状态？"},"answer":{"en":"Its protocol and 1M economic profile are configured, but it was absent from the October 9, 2026 main-picker record; current access needs a fresh check.","zh":"其协议与 1M 经济画像已配置，但旧记录未显示主选择器入口，当前需查看实际菜单。"}},
+    {
+      "question": {
+        "en": "What is the MiniMax M2 model ID?",
+        "zh": "MiniMax M2 的 Model ID 是什么？"
+      },
+      "answer": {
+        "en": "The exact configured model ID is `minimax-m2`.",
+        "zh": "准确配置的 Model ID 是 `minimax-m2`。"
+      }
+    },
+    {
+      "question": {
+        "en": "How large is the MiniMax M2 context profile?",
+        "zh": "MiniMax M2 的上下文有多大？"
+      },
+      "answer": {
+        "en": "The registered economic profile carries a 1M capacity budget.",
+        "zh": "已登记的经济画像包含 1M 容量预算。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is MiniMax M2 best suited for?",
+        "zh": "MiniMax M2 适合什么任务？"
+      },
+      "answer": {
+        "en": "Its confirmed role is long, cost-sensitive textual processing rather than image or video generation.",
+        "zh": "其已确认定位是对成本敏感的长文本处理，而不是图像或视频生成。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the current MiniMax M2 support status?",
+        "zh": "MiniMax M2 当前是什么支持状态？"
+      },
+      "answer": {
+        "en": "Its protocol and 1M economic profile are configured, but it was absent from the October 9, 2026 main-picker record; current access needs a fresh check.",
+        "zh": "其协议与 1M 经济画像已配置，但旧记录未显示主选择器入口，当前需查看实际菜单。"
+      }
+    },
     {
       "question": {
         "en": "What should I measure in a MiniMax multi-step coding trial?",

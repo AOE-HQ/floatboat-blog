@@ -1,5 +1,7 @@
 ---
 title: "How to Automate Weekly TikTok Shop Research with FastMoss and Floatboat"
+seoTitle: "TikTok Shop Research: Weekly Automation with FastMoss"
+seoDescription: "TikTok Shop research can link FastMoss browser evidence, historical comparisons, and a checked management brief. Follow the Floatboat workflow through delivery and the next cycle."
 description: "See how Floatboat operates FastMoss in its built-in browser, saves live evidence, compares history, writes and checks a management brief, delivers it, and returns through FloatSchedule."
 slug: "automate-tiktok-shop-research-fastmoss-floatboat"
 date: "2026-08-20"

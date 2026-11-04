@@ -1,5 +1,7 @@
 ---
 title: "什么是 Claude Managed Agents？"
+seoTitle: "Claude Managed Agents：托管运行层与部署职责解析"
+seoDescription: "Claude Managed Agents 为长时间任务提供托管运行基础设施。了解 Anthropic 管理什么、哪些职责仍属于使用者，并结合部署、安全、限制和评估方法判断适合的采用方式。"
 description: "Claude Managed Agents 是 Anthropic 面向长时间 Agent 任务的托管运行时。本文说明它管理什么、不解决什么，并给出选型、部署、安全与评估方法。"
 slug: "what-are-claude-managed-agents"
 date: "2026-04-10"

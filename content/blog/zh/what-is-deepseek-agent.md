@@ -1,5 +1,7 @@
 ---
 title: "什么是 DeepSeek Agent？模型、框架、工具与常见形态"
+seoTitle: "DeepSeek Agent：模型、Harness、工具与常见部署形态"
+seoDescription: "DeepSeek Agent 由模型、Harness、工具和状态共同组成。了解常见形态、工具调用、官方集成与上线控制，区分模型接口和完整执行系统，再结合真实任务判断如何选择和搭建。"
 description: "DeepSeek Agent 是使用 DeepSeek 模型的 Agent 系统。本文区分模型、框架与完整 Agent，梳理当前官方集成、工具调用、四种常见形态、上线控制和基于真实任务的选型方法。"
 slug: "what-is-deepseek-agent"
 date: "2026-08-14"

@@ -1,5 +1,7 @@
 ---
 title: "Gemini 3.7 Flash: Model ID, Pricing, Specs, and 3.8 Migration"
+seoTitle: "Gemini 3.7 Flash: Model IDs, Pricing, and the 3.8 Transition"
+seoDescription: "Gemini 3.7 Flash migration needs exact IDs, parameters, and rollback checks. Review context, tools, time-bound pricing, and accepted-task cost before moving to Gemini 3.8."
 description: "Gemini 3.7 Flash guide covering the exact model ID, 1M context, multimodal tools, time-bound pricing, migration parameters, and when 3.8 is worth the switch."
 slug: "gemini-3-7-flash"
 date: "2026-08-21"

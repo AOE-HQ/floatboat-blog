@@ -1,5 +1,7 @@
 ---
 title: "Claude Code vs Cowork vs Tag: Which Agent Fits the Job?"
+seoTitle: "Claude Code vs Cowork vs Tag: Coding, Office, or Shared Work"
+seoDescription: "Claude Code, Cowork, and Tag differ in workspace, users, permissions, and task duration. Compare their outputs and account for Cowork’s move into a unified Claude experience."
 description: "Compare Claude Code, Claude Cowork, and Claude Tag by workspace, users, permissions, outputs, and task duration—and account for Cowork's move into one Claude experience."
 slug: "claude-code-vs-cowork-vs-tag"
 date: "2026-08-14"

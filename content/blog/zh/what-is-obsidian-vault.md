@@ -1,5 +1,7 @@
 ---
 title: "Obsidian Vault 是什么？文件、设置与边界讲清楚"
+seoTitle: "Obsidian Vault：本地文件、配置与资料访问边界"
+seoDescription: "Obsidian Vault 是存放 Markdown 笔记、附件和专属配置的本地文件夹。了解各类文件的作用、本地存储不能自动保证什么，以及哪些资料与协作需求适合拆分为多个 Vault。"
 description: "Obsidian Vault 是设备上的本地文件夹，里面包含 Markdown 笔记、附件和该 Vault 专属的设置。本文讲清它实际存了什么、本地存储不等于什么，以及何时该拆分多个 Vault。"
 slug: "what-is-obsidian-vault"
 date: "2026-07-30"

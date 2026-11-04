@@ -1,5 +1,7 @@
 ---
 title: "Workspace Agents vs Workflow Builders: A Clear Comparison"
+seoTitle: "Workspace Agents vs Workflow Builders: Context and Execution"
+seoDescription: "Workspace agents support ongoing interaction while workflow builders run defined pipelines. Compare concrete scenarios and choose by how much judgment and variation the work requires."
 description: "Workspace agents work alongside you; workflow builders run defined pipelines. Here's how the two differ and which fits your work better."
 slug: "workspace-agents-vs-workflow-builders"
 date: "2026-04-28"

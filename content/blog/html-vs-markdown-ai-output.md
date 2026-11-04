@@ -1,5 +1,7 @@
 ---
 title: "HTML vs Markdown for AI Output — Which Format for Which Job"
+seoTitle: "HTML vs Markdown for AI Output: Choose by Delivery and Review"
+seoDescription: "HTML or Markdown for AI output depends on the reader and next action. Use a four-question framework to compare token cost, editing, rendering, and ongoing maintenance."
 description: "HTML vs Markdown for AI output depends on the job: a four-question decision framework plus the token, editing, and rendering trade-offs behind each answer."
 slug: "html-vs-markdown-ai-output"
 date: "2026-05-20"

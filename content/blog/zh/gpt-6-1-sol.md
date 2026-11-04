@@ -1,5 +1,7 @@
 ---
 title: "GPT-6.1 Sol 详解：价格、性能、开放范围与模型对比"
+seoTitle: "GPT-6.1 Sol：价格、性能基准、接入范围与模型对比"
+seoDescription: "查看 GPT-6.1 Sol 的编程、电脑操作和专业任务表现，比较与 Astra 的价格及基准口径，了解开放范围和测试限制，区分模型数字能够支持的判断与仍需自己验证的任务效果。"
 description: "GPT-6.1 Sol 以 Astra 五分之一的标准 token 价格，提供接近 Astra 的编程、电脑操作与专业工作能力。本文解释这些数字真正意味着什么。"
 slug: "gpt-6-1-sol"
 updated: "2026-11-02"

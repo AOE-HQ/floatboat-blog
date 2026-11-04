@@ -1,5 +1,7 @@
 ---
 title: "OpenAI DevDay 2026 完整复盘：所有重要发布与真正的主线"
+seoTitle: "OpenAI DevDay 2026：重要发布与产品变化完整复盘"
+seoDescription: "梳理 OpenAI DevDay 2026 的 Dots、GPT-6.1 Sol、Codex Cloud、Agents API、Plugins、Space 与 Pages，区分各产品职责，并理解这些发布共同指向的平台路线。"
 description: "完整梳理 OpenAI DevDay 2026：Dots、GPT-6.1 Sol、Codex Cloud、Agents API、Plugins、Space、Pages、Pro 500，以及它们共同组成的平台路线。"
 slug: "openai-devday-2026-announcements"
 date: "2026-10-06"

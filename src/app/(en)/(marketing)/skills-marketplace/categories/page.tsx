@@ -1,10 +1,11 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 
 import { SkillCategoryHub } from "@/components/skills/skill-category-pages";
 
 const canonical = "https://floatboat.ai/skills-marketplace/categories";
-const title = "Skills and Project Categories: Browse by Task | Floatboat";
-const description = "Browse Agent Skills and independent projects for coding, development, design, marketing, automation, office work, and media production.";
+const title = seoTitle("Skills and Project Categories: Find Resources by Work Area");
+const description = "Browse Agent Skills and independent projects for coding, design, marketing, automation, office work, and media. Compare instructions and software within the same task category.";
 
 export const metadata: Metadata = {
   title: { absolute: title }, description,

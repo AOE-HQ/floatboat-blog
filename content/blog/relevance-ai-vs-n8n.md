@@ -1,5 +1,7 @@
 ---
 title: "Relevance AI vs n8n: Agents, Workflows, Cost, and Control"
+seoTitle: "Relevance AI vs n8n: Agent Execution, Workflow Cost, and Control"
+seoDescription: "Relevance AI and n8n differ in agent design, workflow control, hosting, and cost units. Compare governance, maintenance, recovery tests, and migration with a shared pilot."
 description: "Compare Relevance AI and n8n by agent design, workflow control, pricing units, hosting, governance, maintenance, and a repeatable pilot—not a feature-count ranking."
 slug: "relevance-ai-vs-n8n"
 date: "2026-04-01"

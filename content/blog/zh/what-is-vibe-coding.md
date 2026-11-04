@@ -1,5 +1,7 @@
 ---
 title: "什么是 Vibe Coding？单人创始人能靠它更快交付吗？"
+seoTitle: "Vibe Coding：单人创始人的软件构建、检查与交付"
+seoDescription: "Vibe Coding 通过自然语言和 AI 构建软件，但交付仍需要检查。了解其定义、来源及一人公司的使用场景，识别容易失效的环节，判断何时应沉淀可复用系统，而不只改进提示词。"
 description: "Vibe Coding 让任何人用自然语言和 AI 就能构建软件。本文讲清它的定义与出处、对一人公司能做什么、在哪里会失效——以及为什么单人创业者真正需要的不是更好的 prompt，而是能复用的系统。"
 slug: "what-is-vibe-coding"
 date: "2026-04-16"

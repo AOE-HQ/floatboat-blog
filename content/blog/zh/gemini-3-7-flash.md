@@ -1,5 +1,7 @@
 ---
 title: "Gemini 3.7 Flash：Model ID、价格、规格与 3.8 迁移指南"
+seoTitle: "Gemini 3.7 Flash：模型标识、价格与 3.8 迁移判断"
+seoDescription: "了解 Gemini 3.7 Flash 的准确 ID、上下文、多模态工具与迁移参数，区分限时价格和长期使用成本。结合回退方法及合格任务成本，判断是否值得切换到 Gemini 3.8。"
 description: "解析 Gemini 3.7 Flash 的准确 Model ID、1M 上下文、多模态工具、限时价格、迁移参数与回退方法，并用合格任务成本判断何时值得升级到 Gemini 3.8 Flash。"
 slug: "gemini-3-7-flash"
 date: "2026-08-21"

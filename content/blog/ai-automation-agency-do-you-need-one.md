@@ -1,5 +1,7 @@
 ---
 title: "AI Automation Agency: Do You Need One?"
+seoTitle: "AI Automation Agencies: When to Hire and What to Delegate"
+seoDescription: "An AI automation agency can deliver a workflow, but ownership and upkeep remain critical. Compare agencies, freelancers, existing tools, and internal builds before hiring."
 description: "AI automation agency support can help, but solo operators should compare scope, ownership, maintenance, and tool alternatives first."
 slug: "ai-automation-agency-do-you-need-one"
 date: "2026-05-14"

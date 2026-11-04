@@ -1,5 +1,7 @@
 ---
 title: "GPT-5.6 Sol, Terra, and Luna: Current Prices and Which Tier to Use"
+seoTitle: "GPT-5.6 Sol, Terra, and Luna: Compare Prices and Task Fit"
+seoDescription: "GPT-5.6 Sol, Terra, and Luna differ in price, context, reasoning, and tools. Separate preview pricing from later changes and choose by workload rather than tier names."
 description: "Compare GPT-5.6 Sol, Terra, and Luna using current API prices, context limits, reasoning modes, tool support, and a workload-based model selection process."
 slug: "gpt-5-6-sol-terra-luna"
 date: "2026-07-10"

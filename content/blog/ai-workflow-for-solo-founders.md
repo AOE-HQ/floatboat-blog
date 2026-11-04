@@ -1,5 +1,7 @@
 ---
 title: "How to Build an AI Workflow for a Solo Business"
+seoTitle: "AI Workflows for Solo Businesses: Audit, Pilot, and Launch"
+seoDescription: "Implement an AI workflow by auditing repeated work, choosing one pilot, and defining checks. Use limited access, shadow runs, and measured rollout before expanding a solo business."
 description: "A practical implementation guide for solo founders: audit repeated work, choose one pilot, write acceptance tests, build safely, measure results, and expand only after evidence."
 slug: "ai-workflow-for-solo-founders"
 date: "2026-04-14"

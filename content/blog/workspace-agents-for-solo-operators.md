@@ -1,5 +1,7 @@
 ---
 title: "Workspace Agents for Solo Operators: When They Fit"
+seoTitle: "Workspace Agents for Solo Operators: Task Fit and Adoption"
+seoDescription: "A workspace agent fits solo work only if context, access, review, recovery, and cost align. Use a reversible 14-day trial and compare it with an ordinary template or checklist."
 description: "Learn when a workspace agent fits solo work, which permissions and failure modes to inspect, and how to run a controlled 14-day buying trial."
 slug: "workspace-agents-for-solo-operators"
 date: "2026-04-29"
