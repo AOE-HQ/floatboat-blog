@@ -3,7 +3,6 @@ import { StartInFloatboat } from "@/components/conversion/start-in-floatboat";
 import { getResourceStartTask } from "@/lib/resource-start-tasks";
 import { FaqBand } from "@/components/faq-band";
 import { RelatedPageLinks } from "@/components/related-page-links";
-import { SkillInstallPanel } from "@/components/skills/skill-install-panel";
 import { HowSection } from "@/components/marketing/how-section";
 import { OverviewSection } from "@/components/marketing/overview-section";
 import { Breadcrumb } from "@/components/marketing/breadcrumb";
@@ -61,7 +60,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
         copy={startTask}
         initialTask={skill.example.prompt[locale]}
         resource={{ name: skill.name, url: skill.sourceUrl }}
-        alternatives={<SkillInstallPanel locale={locale} upstreamInstall={skill.upstreamInstall} installation={skill.installation} />}
+        nativeInstallation={{ upstreamInstall: skill.upstreamInstall, installation: skill.installation }}
       />
 
       <OverviewSection variant="profile"

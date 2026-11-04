@@ -1,11 +1,12 @@
 import { localizedHowStepSchema } from "@/lib/marketing/how-to";
 import { localizedUseCasesSchema } from "@/lib/marketing/use-cases";
 import { z } from "zod";
+import { NATIVE_AGENT_IDS } from "@/lib/resource-agents";
 
 const text = z.string().trim().min(1);
 const url = text.url().regex(/^https?:\/\//);
 const localized = z.object({ en: text, zh: text });
-const agent = z.enum(["claude-code", "codex", "codex-app", "cursor", "gemini-cli", "github-copilot", "opencode", "auto"]);
+const agent = z.enum(NATIVE_AGENT_IDS);
 
 export const skillInstallationSchema = z.object({
   supportedAgents: z.array(agent).optional(),

@@ -18,6 +18,8 @@ class Page(HTMLParser):
         self.in_preview = False
         self.downloads = []
         self.has_installation = False
+        self.agents = set()
+        self.in_panel = False
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -27,6 +29,12 @@ class Page(HTMLParser):
             self.canonical = attrs.get('href')
         if 'data-start-in-floatboat' in attrs:
             self.panels.append(attrs)
+            self.in_panel = True
+        if self.in_panel and tag == 'details':
+            raise AssertionError('Resource controls must not be hidden in disclosures')
+        placement = attrs.get('data-placement', '')
+        if placement.startswith('resource_agent_'):
+            self.agents.add(placement.removeprefix('resource_agent_'))
         if tag == 'textarea' and attrs.get('id') == 'floatboat-task-input':
             self.in_task = True
         if tag == 'pre' and 'data-task-preview' in attrs:
@@ -37,6 +45,8 @@ class Page(HTMLParser):
             self.has_installation = True
 
     def handle_endtag(self, tag):
+        if tag == 'section':
+            self.in_panel = False
         if tag == 'textarea':
             self.in_task = False
         if tag == 'pre':
@@ -66,6 +76,7 @@ def main():
         assert len(page.panels) == 1, f'Wrong panel count: {path}'
         assert page.panels[0]['data-start-in-floatboat'] == 'resource', path
         assert page.panels[0]['data-resource-id'] == key, path
+        assert {'floatboat', 'claude-code', 'codex', 'codex-app', 'cursor', 'gemini-cli', 'github-copilot', 'opencode'} <= page.agents, f'Missing visible agent choices: {path}'
         assert len(page.ids) == len(set(page.ids)), f'Duplicate IDs: {path}'
         assert page.task.strip() and page.task in page.preview, f'Missing task: {path}'
         assert tasks[key][locale]['outcome'] in page.preview, f'Missing output: {path}'
@@ -76,7 +87,8 @@ def main():
         assert download.path == ('/zh' if locale == 'zh' else '') + '/download/success', path
         assert parse_qs(download.query) == {'from': [key], 'download_placement': ['start_in_floatboat']}, path
         project = 'example' in tasks[key][locale]
-        assert page.has_installation == (not project), f'Native Skill instructions changed: {path}'
+        assert page.panels[0].get('data-native-installation') == str(not project).lower(), f'Native Skill setup data changed: {path}'
+        assert not page.has_installation, f'Native setup must follow the selected external agent: {path}'
         seen.add(matches[0])
     assert seen == expected, f'Missing conversion pages: {expected - seen}'
     print(f'OK: {len(seen)} localized resource details; no panels on publishers, hubs, or other pages')
