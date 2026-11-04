@@ -20,11 +20,6 @@
       "seoTitle": "Codex — Agent Workflow Design Guide | Floatboat",
       "description": "Study Codex’s open agent harness to improve your own workflows: connect tools to task context, carry state across steps, and define review boundaries. Use its runtime and integration design as a reference for work in Floatboat.",
       "kind": "Agent Harness",
-      "tags": [
-        "Coding",
-        "App integration",
-        "Tool execution"
-      ],
       "overviewTitle": "About Codex",
       "overview": [
         "Codex is OpenAI’s coding agent and open agent harness. The public project provides the surrounding execution system: it helps an agent inspect a workspace, maintain a conversation, use tools, and carry a task through successive steps. The harness is the software around a model, rather than the model weights.",
@@ -118,11 +113,6 @@
       "seoTitle": "Codex — Agent 工作流构建与优化 | Floatboat",
       "description": "参考 Codex 的开放 Agent Harness，为自己的工作流设计工具连接、任务状态与审阅边界。围绕 Floatboat 中的资料处理、任务执行和结果交付，判断哪些运行机制与集成方式值得复用。",
       "kind": "Agent Harness",
-      "tags": [
-        "代码开发",
-        "应用集成",
-        "工具执行"
-      ],
       "overviewTitle": "关于 Codex",
       "overview": [
         "Codex 是 OpenAI 的编程 Agent 与开放 Agent Harness。公开项目提供模型周围的执行系统，让 Agent 理解工作区、维持对话、调用工具并逐步推进任务。这里的 harness 指运行与协作软件，不等同于模型权重。",
@@ -234,11 +224,6 @@
       "seoTitle": "DeepSeek Harness — Agent Workflow Design Guide | Floatboat",
       "description": "Use DeepSeek Harness as a reference for composing your own agent workflows. Study its plugin architecture to separate model access, tools, and task capabilities, then evaluate focused extensions for work organized in Floatboat.",
       "kind": "Agent Harness",
-      "tags": [
-        "Plugins",
-        "Cordis",
-        "Developer preview"
-      ],
       "overviewTitle": "About DeepSeek Harness",
       "overview": [
         "DeepSeek Harness, also called dsh, is an open-source agent harness developed by DeepSeek. It provides a runtime around model interaction rather than a new model in itself. The project’s central design is to express the system through composable plugins.",
@@ -338,11 +323,6 @@
       "seoTitle": "DeepSeek Harness — Agent 工作流构建与优化 | Floatboat",
       "description": "将 DeepSeek Harness 作为构建 Agent 工作流的参考，研究插件架构如何区分模型访问、工具与任务能力，再结合 Floatboat 中的工作需求评估可复用的扩展和组合方式。",
       "kind": "Agent Harness",
-      "tags": [
-        "插件组合",
-        "Cordis",
-        "开发者预览"
-      ],
       "overviewTitle": "关于 DeepSeek Harness",
       "overview": [
         "DeepSeek Harness 也称 dsh，是 DeepSeek 开发的开源 Agent Harness。它提供模型交互周围的运行系统，本身不是一个新模型。项目的核心设计是通过可组合的插件组织系统能力。",
@@ -463,11 +443,6 @@
       "seoTitle": "DSH Superagent Prototype — Agent Workflows | Floatboat",
       "description": "Explore DeepSeek’s research prototype for turning authorized GitHub and Feishu requests into coding tasks. Study task routing, scoped execution, and reviewable delivery for your own agent workflows.",
       "kind": "Coding Agent Research Prototype",
-      "tags": [
-        "GitHub workflows",
-        "Task routing",
-        "Research prototype"
-      ],
       "overviewTitle": "About DSH Superagent Prototype",
       "overview": [
         "DSH Superagent Prototype is a proactive coding agent published in DeepSeek’s official GitHub organization. It runs as a DeepSeek Harness bundle for one GitHub repository, with optional Feishu input. Authorized requests become tasks that execute in their own sessions and working directories, then return results to the original conversation.",
@@ -569,11 +544,6 @@
       "seoTitle": "DSH Superagent Prototype：主动编程 Agent 工作流 | Floatboat",
       "description": "了解 DeepSeek 的主动编程 Agent 研究原型，如何将 GitHub 与飞书中的授权请求转为任务。参考任务路由、范围管理和结果交付机制，构建或优化自己的 Agent 工作流。",
       "kind": "编程 Agent 研究原型",
-      "tags": [
-        "GitHub 工作流",
-        "任务路由",
-        "研究原型"
-      ],
       "overviewTitle": "关于 DSH Superagent Prototype",
       "overview": [
         "DSH Superagent Prototype 是 DeepSeek 官方 GitHub 组织发布的主动编程 Agent 研究原型。它作为 DeepSeek Harness 的扩展包运行，面向单个 GitHub 仓库，也可接收飞书消息；授权请求会转为任务，在独立会话和工作目录中执行，再把结果送回原讨论。",
@@ -692,11 +662,6 @@
       "seoTitle": "Pi — Agent Workflow Design Guide | Floatboat",
       "description": "Study Pi’s minimal agent core, extension packages, and reusable libraries to shape your own workflows. Compare where task instructions are enough, where runtime customization helps, and which execution boundaries your environment must provide.",
       "kind": "Agent Harness and Toolkit",
-      "tags": [
-        "Extensibility",
-        "Coding CLI",
-        "Runtime libraries"
-      ],
       "overviewTitle": "About Pi",
       "overview": [
         "Pi explicitly describes itself as a minimal, extensible agent harness. The project combines an interactive coding agent with supporting libraries for model access, agent execution, conversation state, and terminal interfaces. It is both a usable tool and a collection of building blocks.",
@@ -796,11 +761,6 @@
       "seoTitle": "Pi — Agent 工作流构建与优化 | Floatboat",
       "description": "参考 Pi 的精简 Agent 核心、扩展包与基础库，设计适合自己的工作流。区分哪些问题可以通过任务说明解决，哪些需要运行层定制，以及执行环境应提供哪些边界。",
       "kind": "Agent Harness 与工具集",
-      "tags": [
-        "扩展机制",
-        "编程 CLI",
-        "运行基础库"
-      ],
       "overviewTitle": "关于 Pi",
       "overview": [
         "Pi 明确将自己定位为精简、可扩展的 Agent Harness。项目把交互式编程 Agent 与模型访问、Agent 执行、对话状态和终端界面等基础库放在一起，既能作为工具使用，也能为其他应用提供构建模块。",
@@ -919,11 +879,6 @@
       "seoTitle": "OpenCode — Agent Workflow Design Guide | Floatboat",
       "description": "Study OpenCode’s coding-agent workflow to improve how your own tasks move from investigation to changes and review. Use its interaction and extension design as references for development work organized in Floatboat.",
       "kind": "Open-source Coding Agent",
-      "tags": [
-        "Coding agent",
-        "Interactive development",
-        "Open source"
-      ],
       "overviewTitle": "About OpenCode",
       "overview": [
         "OpenCode is an open-source AI coding agent published by Anomaly. It connects task conversations with repository tools. The model service supplies reasoning and generation, the execution environment handles files and commands, and the application coordinates the workflow.",
@@ -1017,11 +972,6 @@
       "seoTitle": "OpenCode — Agent 工作流构建与优化 | Floatboat",
       "description": "参考 OpenCode 的编程 Agent 工作方式，优化自己的任务如何从代码理解进入修改与审阅。围绕 Floatboat 中的开发工作，研究交互、任务模式和扩展机制可以带来的流程改进。",
       "kind": "开源编程 Agent",
-      "tags": [
-        "编程 Agent",
-        "交互开发",
-        "开源应用"
-      ],
       "overviewTitle": "关于 OpenCode",
       "overview": [
         "OpenCode 是 Anomaly 发布的开源 AI 编程 Agent，将任务对话与仓库中的开发工具连接起来。模型服务提供生成与推理能力，执行环境负责文件访问和命令运行，应用则组织这些环节之间的协作。",
@@ -1133,11 +1083,6 @@
       "seoTitle": "Hermes Agent — Agent Workflow Design Guide | Floatboat",
       "description": "Use Hermes Agent as a reference for workflows that continue across sessions. Study how memory, procedural Skills, tool connections, and scheduling can help organize reusable task knowledge and recurring work in your own environment.",
       "kind": "Persistent Agent System",
-      "tags": [
-        "Memory",
-        "Skills",
-        "Scheduled work"
-      ],
       "overviewTitle": "About Hermes Agent",
       "overview": [
         "Hermes Agent is an open-source agent system from Nous Research. Its official documentation brings together persistent memory, reusable Skills, tools, context files, and scheduling. These capabilities place it in the category of an independent agent application rather than a single prompt or Skill.",
@@ -1231,11 +1176,6 @@
       "seoTitle": "Hermes Agent — Agent 工作流构建与优化 | Floatboat",
       "description": "参考 Hermes Agent 的记忆、程序性 Skills、工具连接与调度方式，设计能够跨会话继续推进的工作流，为自己的任务保留必要背景、沉淀方法并组织重复工作。",
       "kind": "持续工作 Agent 系统",
-      "tags": [
-        "持久记忆",
-        "Skills",
-        "定时工作"
-      ],
       "overviewTitle": "关于 Hermes Agent",
       "overview": [
         "Hermes Agent 是 Nous Research 的开源 Agent 系统。官方文档将持久记忆、可复用 Skills、工具、上下文文件和调度能力组织在一起，因此它属于独立 Agent 应用，而非单个提示或 Skill。",
@@ -1347,11 +1287,6 @@
       "seoTitle": "Kimi Code CLI — Agent Workflow Design Guide | Floatboat",
       "description": "Study Kimi Code CLI’s tool loop, focused subagents, lifecycle hooks, and editor protocol as references for your own workflows. Use them to clarify task roles, execution checks, and context handoffs around work in Floatboat.",
       "kind": "Terminal Coding Agent",
-      "tags": [
-        "Coding CLI",
-        "Plugins",
-        "Editor integration"
-      ],
       "overviewTitle": "About Kimi Code CLI",
       "overview": [
         "Kimi Code CLI is Moonshot AI’s current open-source coding agent for the terminal. Its official description includes reading and editing code, running commands, searching files, and fetching web pages, with the agent choosing subsequent steps from tool feedback. It is an application around the model, not a Skill package.",
@@ -1451,11 +1386,6 @@
       "seoTitle": "Kimi Code CLI — Agent 工作流构建与优化 | Floatboat",
       "description": "参考 Kimi Code CLI 的工具循环、子 Agent、生命周期 hooks 与编辑器协议，为自己的工作流划分任务职责、设置执行检查，并改善 Floatboat 中各环节的上下文交接。",
       "kind": "终端编程 Agent",
-      "tags": [
-        "编程 CLI",
-        "插件扩展",
-        "编辑器集成"
-      ],
       "overviewTitle": "关于 Kimi Code CLI",
       "overview": [
         "Kimi Code CLI 是月之暗面当前的开源终端编程 Agent。官方说明涵盖读取和编辑代码、执行命令、搜索文件与获取网页，再根据工具反馈选择后续步骤。它是模型周围的应用系统，不是一个 Skill 包。",
@@ -1573,11 +1503,6 @@
       "seoTitle": "ZCode — Agent Workflow Design Guide | Floatboat",
       "description": "Study ZCode’s workbench and agent-runtime design to improve your own workflows. Use its interface separation and public source as references for organizing task context, execution feedback, and human review around work in Floatboat.",
       "kind": "Coding Workbench and Harness",
-      "tags": [
-        "Coding workbench",
-        "Multiple interfaces",
-        "Open runtime"
-      ],
       "overviewTitle": "About ZCode",
       "overview": [
         "ZCode is Z.ai’s coding-agent harness and development workbench. The official repository describes desktop, browser, and terminal experiences, and includes client code, backend services, shared UI, and the agent CLI and runtime. It is broader than an editor plugin or a single task instruction.",
@@ -1677,11 +1602,6 @@
       "seoTitle": "ZCode — Agent 工作流构建与优化 | Floatboat",
       "description": "参考 ZCode 的工作台与 Agent 运行时设计，优化自己工作流中的任务背景、执行反馈和人工审阅。结合公开源码与不同交互入口，评估适合 Floatboat 工作方式的组织机制。",
       "kind": "编程工作台与 Harness",
-      "tags": [
-        "编程工作台",
-        "多种入口",
-        "开放运行时"
-      ],
       "overviewTitle": "关于 ZCode",
       "overview": [
         "ZCode 是 Z.ai 的编程 Agent Harness 与开发工作台。官方仓库介绍桌面、浏览器和终端体验，包含客户端、后端服务、共享 UI、Agent CLI 与运行时源码，范围大于单个编辑器插件或任务指令。",
@@ -1800,11 +1720,6 @@
       "seoTitle": "Ponytail — Coding Agent Skills and Review Workflows | Floatboat",
       "description": "Ponytail adds reuse-first coding instructions, change review, and repository audits to existing agents. Explore how its rules can reduce unnecessary implementation while keeping tests, security, and accessibility in the workflow.",
       "kind": "Coding Skill / Plugin",
-      "tags": [
-        "Code reuse",
-        "Change review",
-        "Repository audits"
-      ],
       "overviewTitle": "About Ponytail",
       "overview": [
         "Ponytail is DietrichGebert’s open-source instruction set for coding agents. Its main Skill and compact AGENTS.md rules ask an agent to understand the affected code before choosing a solution. Existing repository code, standard libraries, platform features, and installed dependencies are considered before a new implementation.",
@@ -1904,11 +1819,6 @@
       "seoTitle": "Ponytail：编程 Agent Skill、代码复用与审查 | Floatboat",
       "description": "Ponytail 为现有编程 Agent 提供优先复用、修改审查与仓库审计规则。了解如何减少不必要的实现，同时保留测试、安全和无障碍要求，为自己的代码工作流明确改动范围与验收标准。",
       "kind": "编程 Skill / 插件",
-      "tags": [
-        "代码复用",
-        "修改审查",
-        "仓库审计"
-      ],
       "overviewTitle": "关于 Ponytail",
       "overview": [
         "Ponytail 是 DietrichGebert 维护的开源编程指令集。核心 Skill 与精简版 AGENTS.md 要求 Agent 先理解受影响的代码，再选择解决方案：依次检查仓库已有实现、标准库、平台原生能力和已安装依赖，确有需要时才增加新代码。",
@@ -2026,11 +1936,6 @@
       "seoTitle": "MausBot / OpenMausBot — Multi-Agent Workflow Design | Floatboat",
       "description": "MausBot, published as OpenMausBot, organizes local agent engines as a team of chat contacts. Explore its role-based channels, execution events, and approval flow to design clearer handoffs and reusable team workflows.",
       "kind": "Multi-Agent Desktop App",
-      "tags": [
-        "Role-based bots",
-        "Shared channels",
-        "Human approval"
-      ],
       "overviewTitle": "About MausBot and OpenMausBot",
       "overview": [
         "MausBot is an open-source desktop application maintained in milind-soni/OpenMausBot. Its README also uses OpenMausBot and records the former OpenGrokBot name. It presents agents as chat contacts, with separate roles, model choices, conversations, and optional computer and application connections.",
@@ -2124,11 +2029,6 @@
       "seoTitle": "MausBot / OpenMausBot：多 Agent 工作流设计 | Floatboat",
       "description": "MausBot 以 OpenMausBot 发布，将本地 Agent 引擎组织为聊天式团队。了解角色频道、执行事件与人工审批，借鉴共享上下文和团队包的设计，为自己的工作流明确分工、交接与执行环境。",
       "kind": "多 Agent 桌面应用",
-      "tags": [
-        "角色分工",
-        "共享频道",
-        "人工审批"
-      ],
       "overviewTitle": "关于 MausBot 与 OpenMausBot",
       "overview": [
         "MausBot 是在 milind-soni/OpenMausBot 仓库维护的开源桌面应用。README 同时使用 OpenMausBot 名称，并记录其曾用名 OpenGrokBot。它把 Agent 呈现为聊天联系人，各自拥有角色、模型选择、对话，以及可选的电脑和应用连接。",
@@ -2240,11 +2140,6 @@
       "seoTitle": "Agent Desktop by Vercel Labs — Desktop Automation for Agents | Floatboat",
       "description": "Agent Desktop exposes desktop apps through operating-system accessibility trees. Explore Vercel Labs’ CLI and C library to design observe–act–verify workflows, handle stale element references, and check platform permissions before automating a task.",
       "kind": "Desktop Automation Tool",
-      "tags": [
-        "Accessibility trees",
-        "Computer use",
-        "CLI / C library"
-      ],
       "overviewTitle": "About Vercel Labs’ Agent Desktop",
       "overview": [
         "Agent Desktop is an open-source desktop automation tool from Vercel Labs. Its CLI and C library expose app structure through operating-system accessibility APIs, returning JSON snapshots and references to actionable elements. The calling agent chooses the next step; Agent Desktop supplies observation and control rather than its own planning model.",
@@ -2338,11 +2233,6 @@
       "seoTitle": "Vercel Labs Agent Desktop：Agent 桌面自动化工具 | Floatboat",
       "description": "Agent Desktop 通过操作系统无障碍树读取并操作桌面应用。了解 Vercel Labs 的 CLI 与 C 库，围绕观察、操作和验证设计桌面工作流，处理失效元素引用，并核对不同平台的权限与能力边界。",
       "kind": "桌面自动化工具",
-      "tags": [
-        "无障碍树",
-        "电脑操作",
-        "CLI / C 库"
-      ],
       "overviewTitle": "关于 Vercel Labs Agent Desktop",
       "overview": [
         "Agent Desktop 是 Vercel Labs 发布的开源桌面自动化工具，通过 CLI 与 C 库访问操作系统无障碍接口，将应用结构转换为 JSON 快照和可操作元素引用。下一步由调用它的 Agent 决定；工具负责观察与控制，不自带负责规划的模型。",
@@ -2454,11 +2344,6 @@
       "seoTitle": "ComfyUI — Reusable Node-Based Generative Workflows | Floatboat",
       "description": "ComfyUI turns generative-media steps into reusable node graphs. Explore workflow JSON, model and custom-node dependencies, queued execution, and API handoffs to design a visual-production process with inspectable inputs and outputs.",
       "kind": "Visual Workflow Engine",
-      "tags": [
-        "Node graphs",
-        "Generative media",
-        "Workflow API"
-      ],
       "overviewTitle": "About ComfyUI",
       "overview": [
         "ComfyUI is a node-based interface and execution engine for generative-media workflows. A graph connects operations such as loading a model, conditioning generation, processing media, and saving an output. The open core is maintained in Comfy-Org/ComfyUI; desktop packaging and the frontend have related repositories rather than being separate Skills.",
@@ -2558,11 +2443,6 @@
       "seoTitle": "ComfyUI：可复用的节点式生成工作流 | Floatboat",
       "description": "ComfyUI 将生成媒体的步骤组织为可复用节点图。了解工作流 JSON、模型与自定义节点依赖、任务队列和 API 交接，为视觉生产流程明确输入、处理步骤与结果验收。",
       "kind": "视觉工作流引擎",
-      "tags": [
-        "节点图",
-        "生成媒体",
-        "工作流 API"
-      ],
       "overviewTitle": "关于 ComfyUI",
       "overview": [
         "ComfyUI 是面向生成媒体的节点式界面与执行引擎。节点图连接模型加载、生成条件、媒体处理和输出保存等操作。开源核心维护于 Comfy-Org/ComfyUI，桌面打包与前端由相关仓库协作完成，不应分别包装成 Skills。",
@@ -2680,11 +2560,6 @@
       "seoTitle": "Graphify — Code Knowledge Graphs for Agent Workflows | Floatboat",
       "description": "Graphify maps code and supporting material into a queryable knowledge graph. Explore the local CLI and its agent Skill together, distinguish extracted links from inferred relationships, and use source-backed context for repository investigations.",
       "kind": "Knowledge Graph Tool + Skill",
-      "tags": [
-        "Code understanding",
-        "Graph queries",
-        "Agent context"
-      ],
       "overviewTitle": "About Graphify",
       "overview": [
         "Graphify combines a Python command-line tool with agent integration instructions to build and query knowledge graphs. The open project is maintained by Graphify Labs. Its CLI and /graphify Skill describe one workflow, so this page covers them together rather than creating competing introductions.",
@@ -2784,11 +2659,6 @@
       "seoTitle": "Graphify：面向 Agent 工作流的代码知识图谱 | Floatboat",
       "description": "Graphify 将代码和配套资料整理为可查询知识图谱。一起了解本地 CLI 与 Agent Skill，区分提取到的连接和推断关系，为仓库调查提供可以回到源文件核对的上下文。",
       "kind": "知识图谱工具＋Skill",
-      "tags": [
-        "代码理解",
-        "图谱查询",
-        "Agent 上下文"
-      ],
       "overviewTitle": "关于 Graphify",
       "overview": [
         "Graphify 将 Python 命令行工具与 Agent 指令结合，用于构建和查询知识图谱。开源项目由 Graphify Labs 维护。CLI 与 /graphify Skill 服务同一工作过程，因此在一个作品页中说明，避免建立相互竞争的同名介绍。",
@@ -2906,11 +2776,6 @@
       "seoTitle": "Orca — Parallel Coding Agents and Worktree Review | Floatboat",
       "description": "Orca brings multiple coding agents into one workspace, with separate Git worktrees and a shared review interface. Study task isolation, parallel comparisons, and diff feedback to organize agent work without confusing simultaneous execution with a verified result.",
       "kind": "Multi-Agent Development Workspace",
-      "tags": [
-        "Parallel agents",
-        "Git worktrees",
-        "Diff review"
-      ],
       "overviewTitle": "About Orca",
       "overview": [
         "Orca is a development workspace published in stablyai/orca. It organizes existing coding agents such as Codex, Claude Code, OpenCode, and Pi alongside terminals, repository files, and review tools. It coordinates agent processes rather than supplying a new foundation model.",
@@ -3010,11 +2875,6 @@
       "seoTitle": "Orca：并行编程 Agent 与 Worktree 审阅 | Floatboat",
       "description": "Orca 将多个编程 Agent 放进同一工作台，通过独立 Git worktree 和统一审阅界面组织任务。了解任务隔离、并行方案比较与 diff 反馈，为自己的工作流明确执行分工和最终验收。",
       "kind": "多 Agent 开发工作台",
-      "tags": [
-        "并行 Agent",
-        "Git worktree",
-        "修改审阅"
-      ],
       "overviewTitle": "关于 Orca",
       "overview": [
         "Orca 是 stablyai/orca 发布的开发工作台，将 Codex、Claude Code、OpenCode、Pi 等已有编程 Agent 与终端、仓库文件和审阅工具组织在一起。它协调 Agent 进程，不提供新的基础模型。",

@@ -23,7 +23,6 @@ export type FeaturedSkill = {
   sourceUrl: string;
   repositoryUrl: string;
   sourceLinks?: Array<{ label: LocalizedText; href: string }>;
-  category: LocalizedText;
   seo: {
     title: LocalizedText;
     description: LocalizedText;
@@ -41,9 +40,6 @@ export type FeaturedSkill = {
   cardDescription?: LocalizedText;
   upstreamInstall: string;
   installation?: SkillInstallation;
-  pageCopy: {
-    kind: LocalizedText;
-  };
   sectionTitles: {
     how: LocalizedText;
     howDescription: LocalizedText;

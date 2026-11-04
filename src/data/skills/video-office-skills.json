@@ -7,10 +7,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md",
     "repositoryUrl": "https://github.com/heygen-com/hyperframes",
-    "category": {
-      "en": "Video creation · HTML",
-      "zh": "视频制作 · HTML"
-    },
     "seo": {
       "title": {
         "en": "HyperFrames Skill by HeyGen | Installation & Guide",
@@ -72,12 +68,6 @@
       "zh": "结合 HyperFrames 核心 Skills 与 CLI，制作可编辑的 HTML 视频，完成检查、预览和导出验证。"
     },
     "upstreamInstall": "npx skills add heygen-com/hyperframes --skill hyperframes --skill hyperframes-cli --skill hyperframes-registry --skill media-use",
-    "pageCopy": {
-      "kind": {
-        "en": "Core Skills · video creation and CLI workflow",
-        "zh": "核心 Skills · 视频制作与 CLI 流程"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Use HyperFrames Skill",

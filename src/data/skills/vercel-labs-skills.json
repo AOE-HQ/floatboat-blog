@@ -7,10 +7,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": {
-      "en": "React · Performance guidance",
-      "zh": "React · 性能实践"
-    },
     "seo": {
       "title": {
         "en": "Vercel React Best Practices by Vercel Labs | Installation & Guide",
@@ -50,12 +46,6 @@
       "zh": "原始规则按影响程度分成八类，覆盖请求、包体积、服务端渲染、客户端数据和重渲染。适合做有重点的代码审查，但不能替代真实页面的性能测量。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-react-best-practices",
-    "pageCopy": {
-      "kind": {
-        "en": "Code-review and implementation Skill",
-        "zh": "代码审查与实现 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Improve React Performance",
@@ -255,10 +245,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/composition-patterns/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": {
-      "en": "React · Component architecture",
-      "zh": "React · 组件架构"
-    },
     "seo": {
       "title": {
         "en": "Vercel Composition Patterns by Vercel Labs | Installation & Guide",
@@ -298,12 +284,6 @@
       "zh": "原始规则主张用复合组件和 Provider 管理状态，而非让属性组合无限增加。它适合设计组件库，或梳理 API 已经难以理解的组件。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-composition-patterns",
-    "pageCopy": {
-      "kind": {
-        "en": "React architecture Skill",
-        "zh": "React 架构 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Design React Component APIs",
@@ -503,10 +483,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-native-skills/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": {
-      "en": "React Native · Mobile performance",
-      "zh": "React Native · 移动端性能"
-    },
     "seo": {
       "title": {
         "en": "Vercel React Native Skills by Vercel Labs | Installation & Guide",
@@ -546,12 +522,6 @@
       "zh": "原始文件按优先级整理移动端规则。面对列表虚拟化、手势性能、安全区域或图片处理时，普通 Web React 建议往往不够，这个 Skill 更对题。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-react-native-skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Mobile implementation and review Skill",
-        "zh": "移动端实现与审查 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Review React Native Screens",
@@ -751,10 +721,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-view-transitions/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": {
-      "en": "React · View transitions",
-      "zh": "React · 视图过渡"
-    },
     "seo": {
       "title": {
         "en": "Vercel React View Transitions by Vercel Labs | Installation & Guide",
@@ -794,12 +760,6 @@
       "zh": "原始指南把动画与空间含义对应起来：列表到详情可能需要共享元素，后台刷新却通常不应动。具体实现还受 React 与框架版本约束。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-react-view-transitions",
-    "pageCopy": {
-      "kind": {
-        "en": "React animation implementation Skill",
-        "zh": "React 动画实现 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Implement React View Transitions",
@@ -999,10 +959,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": {
-      "en": "Web UI · Design review",
-      "zh": "网页 UI · 设计审查"
-    },
     "seo": {
       "title": {
         "en": "Web Design Guidelines by Vercel Labs | Installation & Guide",
@@ -1042,12 +998,6 @@
       "zh": "安装的 SKILL.md 是简短审查流程，不是固定不变的规则全集。Agent 每次先获取最新规范，再检查指定文件，并输出简洁的问题定位。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill web-design-guidelines",
-    "pageCopy": {
-      "kind": {
-        "en": "UI code-review Skill",
-        "zh": "UI 代码审查 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Review UI with Web Design Guidelines",
@@ -1247,10 +1197,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/writing-guidelines/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": {
-      "en": "Documentation · Editorial review",
-      "zh": "文档 · 编辑审查"
-    },
     "seo": {
       "title": {
         "en": "Writing Guidelines by Vercel Labs | Installation & Guide",
@@ -1290,12 +1236,6 @@
       "zh": "它不是通用文案生成器。原始流程要求获取最新写作规范，检查指定文档或文案文件，并用简洁的文件与行号呈现发现。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill writing-guidelines",
-    "pageCopy": {
-      "kind": {
-        "en": "Documentation review Skill",
-        "zh": "文档审查 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Review Docs with Writing Guidelines",
@@ -1495,10 +1435,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/deploy-to-vercel/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": {
-      "en": "Deployment · Preview workflow",
-      "zh": "部署 · 预览工作流"
-    },
     "seo": {
       "title": {
         "en": "Deploy to Vercel by Vercel Labs | Installation & Guide",
@@ -1538,12 +1474,6 @@
       "zh": "原始流程先只读检查 Git 远端、项目关联、CLI 登录和团队，再决定部署路径。已关联 Git 的项目可能通过推送部署，但原文要求推送前征得用户同意。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill deploy-to-vercel",
-    "pageCopy": {
-      "kind": {
-        "en": "Deployment workflow Skill",
-        "zh": "部署工作流 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Deploy a Project to Vercel",
@@ -1743,10 +1673,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/vercel-cli-with-tokens/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": {
-      "en": "Deployment · Token authentication",
-      "zh": "部署 · 令牌认证"
-    },
     "seo": {
       "title": {
         "en": "Vercel CLI with Tokens by Vercel Labs | Installation & Guide",
@@ -1786,12 +1712,6 @@
       "zh": "原始流程先确认令牌和项目标识的来源，明确警告不要把令牌写在命令行参数中，并区分“已认证”和“知道命令会影响哪个项目及组织”。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-cli-with-tokens",
-    "pageCopy": {
-      "kind": {
-        "en": "Authenticated CLI workflow Skill",
-        "zh": "已认证 CLI 工作流 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Use Vercel CLI with Tokens",
@@ -1991,10 +1911,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/vercel-optimize/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-skills",
-    "category": {
-      "en": "Vercel · Cost and performance audit",
-      "zh": "Vercel · 成本与性能审查"
-    },
     "seo": {
       "title": {
         "en": "Vercel Optimize by Vercel Labs | Installation & Guide",
@@ -2034,12 +1950,6 @@
       "zh": "原始流程强调可观测性优先，而非全仓库随意扫一遍。它用脚本汇总 Vercel 信号、筛选调查对象并排序建议；路由级结论依赖相应权限和可观测性前提。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-skills --skill vercel-optimize",
-    "pageCopy": {
-      "kind": {
-        "en": "Metrics-led audit Skill with scripts",
-        "zh": "带脚本的指标驱动审查 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Audit a Project with Vercel Optimize",
@@ -2239,10 +2149,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/agent-browser/blob/main/skills/agent-browser/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/agent-browser",
-    "category": {
-      "en": "Browser automation · Companion Skill",
-      "zh": "浏览器自动化 · 配套 Skill"
-    },
     "seo": {
       "title": {
         "en": "agent-browser Skill by Vercel Labs | Installation & Guide",
@@ -2282,12 +2188,6 @@
       "zh": "该仓库的主体是 agent-browser CLI，而不是这份 SKILL.md。Skill 指向 `agent-browser skills get core` 及专门流程，让详细指令与已安装的工具版本保持一致。"
     },
     "upstreamInstall": "npx skills add vercel-labs/agent-browser",
-    "pageCopy": {
-      "kind": {
-        "en": "Companion Skill / discovery stub",
-        "zh": "配套 Skill / 发现入口"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Use the agent-browser Skill",

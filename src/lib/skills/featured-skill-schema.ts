@@ -26,7 +26,6 @@ const skill = z.object({
   sourceUrl: url,
   repositoryUrl: url,
   sourceLinks: z.array(z.object({ label: localized, href: url })).optional(),
-  category: localized,
   seo: z.object({ title: localized, description: localized, keywords: z.object({ en: z.array(text).min(1), zh: z.array(text).min(1) }) }),
   hero: z.object({ title: localized, description: localized }),
   overview: z.object({
@@ -37,7 +36,6 @@ const skill = z.object({
   cardDescription: localized.optional(),
   upstreamInstall: text,
   installation: skillInstallationSchema.optional(),
-  pageCopy: z.object({ kind: localized }),
   sectionTitles: z.object({
     how: z.object({ en: text.startsWith("How to"), zh: text.startsWith("如何") }),
     howDescription: localized,

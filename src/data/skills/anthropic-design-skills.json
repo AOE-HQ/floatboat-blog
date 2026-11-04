@@ -7,10 +7,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
     "repositoryUrl": "https://github.com/anthropics/skills",
-    "category": {
-      "en": "Design · Frontend interfaces",
-      "zh": "设计 · 前端界面"
-    },
     "seo": {
       "title": {
         "en": "Frontend Design by Anthropic | Installation & Guide",
@@ -50,12 +46,6 @@
       "zh": "围绕产品需求确定视觉方向，构建或重做有明确层级与表达的前端界面。"
     },
     "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install example-skills@anthropic-agent-skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Visual design Skill",
-        "zh": "视觉设计 Skill"
-      }
-    },
     "overview": {
       "en": {
         "title": "About Frontend Design",
@@ -253,10 +243,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md",
     "repositoryUrl": "https://github.com/anthropics/skills",
-    "category": {
-      "en": "Meta-skill · Skill authoring",
-      "zh": "元 Skill · 指令创建"
-    },
     "seo": {
       "title": {
         "en": "Skill Creator by Anthropic | Installation & Guide",
@@ -296,12 +282,6 @@
       "zh": "通过任务定义、代表性测试请求和结果比较，创建并持续改进 Agent Skills。"
     },
     "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install example-skills@anthropic-agent-skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Skill creation and evaluation",
-        "zh": "Skill 创建与评估"
-      }
-    },
     "overview": {
       "en": {
         "title": "About Skill Creator",
@@ -499,10 +479,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/pdf/SKILL.md",
     "repositoryUrl": "https://github.com/anthropics/skills",
-    "category": {
-      "en": "Documents · PDF processing",
-      "zh": "文档 · PDF 处理"
-    },
     "seo": {
       "title": {
         "en": "PDF by Anthropic | Installation & Guide",
@@ -542,12 +518,6 @@
       "zh": "按任务读取、整理、创建或处理 PDF 文件，并核对内容与页面结果。"
     },
     "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Source-available document Skill",
-        "zh": "源码可用文档 Skill"
-      }
-    },
     "overview": {
       "en": {
         "title": "About PDF",
@@ -745,10 +715,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/docx/SKILL.md",
     "repositoryUrl": "https://github.com/anthropics/skills",
-    "category": {
-      "en": "Documents · Word files",
-      "zh": "文档 · Word 文件"
-    },
     "seo": {
       "title": {
         "en": "DOCX by Anthropic | Installation & Guide",
@@ -788,12 +754,6 @@
       "zh": "创建和编辑 Word 文档，组织结构化内容，保留必要格式并检查渲染页面。"
     },
     "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Source-available document Skill",
-        "zh": "源码可用文档 Skill"
-      }
-    },
     "overview": {
       "en": {
         "title": "About DOCX",
@@ -991,10 +951,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md",
     "repositoryUrl": "https://github.com/anthropics/skills",
-    "category": {
-      "en": "Documents · Presentations",
-      "zh": "文档 · 演示文稿"
-    },
     "seo": {
       "title": {
         "en": "PPTX by Anthropic | Installation & Guide",
@@ -1034,12 +990,6 @@
       "zh": "创建或更新可编辑演示文稿，规划幻灯片结构并核对实际渲染效果。"
     },
     "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Source-available document Skill",
-        "zh": "源码可用文档 Skill"
-      }
-    },
     "overview": {
       "en": {
         "title": "About PPTX",
@@ -1237,10 +1187,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
     "repositoryUrl": "https://github.com/anthropics/skills",
-    "category": {
-      "en": "Documents · Spreadsheets",
-      "zh": "文档 · 电子表格"
-    },
     "seo": {
       "title": {
         "en": "XLSX by Anthropic | Installation & Guide",
@@ -1280,12 +1226,6 @@
       "zh": "创建和编辑表格文件，清理数据，使用可追溯公式并核对重新计算的结果。"
     },
     "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install document-skills@anthropic-agent-skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Source-available document Skill",
-        "zh": "源码可用文档 Skill"
-      }
-    },
     "overview": {
       "en": {
         "title": "About XLSX",
@@ -1483,10 +1423,6 @@
     "publisherType": "Person",
     "sourceUrl": "https://github.com/pbakaus/impeccable/blob/main/.agents/skills/impeccable/SKILL.md",
     "repositoryUrl": "https://github.com/pbakaus/impeccable",
-    "category": {
-      "en": "Design · Interface craft",
-      "zh": "设计 · 界面优化"
-    },
     "seo": {
       "title": {
         "en": "Impeccable by pbakaus | Installation & Guide",
@@ -1526,12 +1462,6 @@
       "zh": "通过单个 Skill 与专项命令设计、检查和优化界面，并核对实际渲染结果。"
     },
     "upstreamInstall": "npx impeccable install",
-    "pageCopy": {
-      "kind": {
-        "en": "Design Skill and command workflow",
-        "zh": "设计 Skill 与命令流程"
-      }
-    },
     "overview": {
       "en": {
         "title": "About Impeccable",

@@ -7,10 +7,6 @@
     "publisherType": "Person",
     "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md",
     "repositoryUrl": "https://github.com/mattpocock/skills",
-    "category": {
-      "en": "Planning · Decision review",
-      "zh": "规划 · 方案评审"
-    },
     "seo": {
       "title": {
         "en": "Grill Me by Matt Pocock | Installation & Guide",
@@ -74,12 +70,6 @@
       "zh": "通过结构化访谈澄清计划，需要时以 Grill with Docs 模式同步术语与架构记录。"
     },
     "upstreamInstall": "npx skills add mattpocock/skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Interview guidance with a project-document mode",
-        "zh": "访谈指引与项目文档模式"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Clarify Plans with Grill Me",
@@ -357,10 +347,6 @@
     "publisherType": "Person",
     "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md",
     "repositoryUrl": "https://github.com/mattpocock/skills",
-    "category": {
-      "en": "Engineering · Testing",
-      "zh": "工程 · 测试"
-    },
     "seo": {
       "title": {
         "en": "TDD by Matt Pocock | Installation & Guide",
@@ -416,12 +402,6 @@
       "zh": "围绕约定公开接口，通过失败测试与最小实现逐步完成特性和修复。"
     },
     "upstreamInstall": "npx skills add mattpocock/skills --skill tdd",
-    "pageCopy": {
-      "kind": {
-        "en": "Behavior-focused development discipline",
-        "zh": "行为导向的开发指引"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Implement Behavior with TDD",
@@ -636,10 +616,6 @@
     "publisherType": "Person",
     "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/improve-codebase-architecture/SKILL.md",
     "repositoryUrl": "https://github.com/mattpocock/skills",
-    "category": {
-      "en": "Engineering · Architecture",
-      "zh": "工程 · 架构"
-    },
     "seo": {
       "title": {
         "en": "Improve Codebase Architecture by Matt Pocock | Installation & Guide",
@@ -695,12 +671,6 @@
       "zh": "调查实际架构摩擦，比较模块改进候选，再深入选定设计。"
     },
     "upstreamInstall": "npx skills add mattpocock/skills --skill improve-codebase-architecture",
-    "pageCopy": {
-      "kind": {
-        "en": "User-invoked architecture survey",
-        "zh": "用户调用的架构调查"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Explore Architecture Improvements",
@@ -905,10 +875,6 @@
     "publisherType": "Person",
     "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnosing-bugs/SKILL.md",
     "repositoryUrl": "https://github.com/mattpocock/skills",
-    "category": {
-      "en": "Engineering · Debugging",
-      "zh": "工程 · 调试"
-    },
     "seo": {
       "title": {
         "en": "Diagnosing Bugs by Matt Pocock | Installation & Guide",
@@ -964,12 +930,6 @@
       "zh": "通过复现信号、最小案例和修复验证调查复杂缺陷。"
     },
     "upstreamInstall": "npx skills add mattpocock/skills --skill diagnosing-bugs",
-    "pageCopy": {
-      "kind": {
-        "en": "Reproduction-driven diagnosis workflow",
-        "zh": "复现驱动的诊断流程"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Diagnose Bugs with a Feedback Loop",
@@ -1174,10 +1134,6 @@
     "publisherType": "Person",
     "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/code-review/SKILL.md",
     "repositoryUrl": "https://github.com/mattpocock/skills",
-    "category": {
-      "en": "Engineering · Code review",
-      "zh": "工程 · 代码审查"
-    },
     "seo": {
       "title": {
         "en": "Code Review by Matt Pocock | Installation & Guide",
@@ -1233,12 +1189,6 @@
       "zh": "对固定 Git 差异分别检查仓库规范与原始需求。"
     },
     "upstreamInstall": "npx skills add mattpocock/skills --skill code-review",
-    "pageCopy": {
-      "kind": {
-        "en": "Standards and specification review",
-        "zh": "规范与需求双轴审查"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Review a Branch with Code Review",
@@ -1453,10 +1403,6 @@
     "publisherType": "Person",
     "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md",
     "repositoryUrl": "https://github.com/mattpocock/skills",
-    "category": {
-      "en": "Productivity · Agent continuity",
-      "zh": "效率 · Agent 上下文交接"
-    },
     "seo": {
       "title": {
         "en": "Handoff by Matt Pocock | Installation & Guide",
@@ -1512,12 +1458,6 @@
       "zh": "通过引用与建议 Skills，将会话整理为聚焦的临时交接文档。"
     },
     "upstreamInstall": "npx skills add mattpocock/skills --skill handoff",
-    "pageCopy": {
-      "kind": {
-        "en": "User-invoked session handoff",
-        "zh": "用户调用的会话交接"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Prepare an Agent Handoff",
@@ -1722,10 +1662,6 @@
     "publisherType": "Person",
     "sourceUrl": "https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md",
     "repositoryUrl": "https://github.com/obra/superpowers",
-    "category": {
-      "en": "Planning · Design exploration",
-      "zh": "规划 · 设计探索"
-    },
     "seo": {
       "title": {
         "en": "Brainstorming by Jesse Vincent | Installation & Guide",
@@ -1783,12 +1719,6 @@
       "zh": "在进入 Superpowers 规划流程前澄清意图、比较方案并确认设计。"
     },
     "upstreamInstall": "npx skills add obra/superpowers --skill brainstorming",
-    "pageCopy": {
-      "kind": {
-        "en": "Superpowers intent and design workflow",
-        "zh": "Superpowers 需求与设计流程"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Explore a Design with Brainstorming",
@@ -2010,10 +1940,6 @@
     "publisherType": "Person",
     "sourceUrl": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
     "repositoryUrl": "https://github.com/obra/superpowers",
-    "category": {
-      "en": "Engineering · Root-cause analysis",
-      "zh": "工程 · 根因分析"
-    },
     "seo": {
       "title": {
         "en": "Systematic Debugging by Jesse Vincent | Installation & Guide",
@@ -2071,12 +1997,6 @@
       "zh": "通过四个证据驱动阶段调查根因，再实施并验证修复。"
     },
     "upstreamInstall": "npx skills add obra/superpowers --skill systematic-debugging",
-    "pageCopy": {
-      "kind": {
-        "en": "Superpowers root-cause workflow",
-        "zh": "Superpowers 根因调查流程"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Investigate a Failure Systematically",
@@ -2298,10 +2218,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md",
     "repositoryUrl": "https://github.com/cloudflare/security-audit-skill",
-    "category": {
-      "en": "Security · Evidence-led audits",
-      "zh": "安全 · 证据驱动审计"
-    },
     "seo": {
       "title": {
         "en": "Cloudflare Security Audit Skill: Workflow and Requirements",
@@ -2351,12 +2267,6 @@
       "supportedAgents": [
         "auto"
       ]
-    },
-    "pageCopy": {
-      "kind": {
-        "en": "Six-phase evidence-led security audit",
-        "zh": "六阶段证据驱动安全审计"
-      }
     },
     "overview": {
       "en": {

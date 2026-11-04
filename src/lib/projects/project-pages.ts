@@ -13,7 +13,6 @@ const copy = z.object({
   seoTitle: text,
   description: text,
   kind: text,
-  tags: z.array(text).min(2).max(4),
   overviewTitle: text,
   overview: z.array(text).length(3),
   capabilitiesTitle: text,

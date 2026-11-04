@@ -7,10 +7,6 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/skills",
-    "category": {
-      "en": "Meta-skill · Skill discovery",
-      "zh": "元 Skill · Skill 发现"
-    },
     "seo": {
       "title": {
         "en": "Find Skills by Vercel Labs: Guide & Installation",
@@ -50,12 +46,6 @@
       "zh": "当你知道要完成什么工作，却不知道该找哪一个 Skill 时，可以使用 Vercel Labs 的 Find Skills。它先识别任务和领域，再查看 skills.sh 榜单或进一步搜索，最后把候选项交给你选择。"
     },
     "upstreamInstall": "npx skills add vercel-labs/skills --skill find-skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Meta-skill for discovering other skills",
-        "zh": "用于发现其他 Skill 的元 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Use Find Skills by Vercel Labs",

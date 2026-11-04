@@ -1079,32 +1079,7 @@
     "name": "Corey Haines",
     "type": "Person",
     "profileUrl": "https://github.com/coreyhaines31",
-    "projects": [
-      {
-        "name": "Conversion Factory",
-        "url": "https://conversionfactory.co",
-        "en": {
-          "kind": "Marketing agency",
-          "description": "Explore growth marketing and design services for SaaS teams, covering positioning, website conversion, SEO, and campaign delivery."
-        },
-        "zh": {
-          "kind": "营销机构",
-          "description": "面向 SaaS 团队提供增长营销与设计服务，涵盖定位、网站转化、SEO 和活动执行。"
-        }
-      },
-      {
-        "name": "SwipeFiles",
-        "url": "https://swipefiles.com",
-        "en": {
-          "kind": "Newsletter",
-          "description": "Study SaaS marketing strategies through a newsletter and learning resource with examples for founders and growth practitioners."
-        },
-        "zh": {
-          "kind": "营销通讯",
-          "description": "面向 SaaS 创始人与营销人员的通讯和学习资源，通过实际案例与策略拆解提供决策参考。"
-        }
-      }
-    ],
+    "projects": [],
     "en": {
       "seoTitle": "Corey Haines: SaaS Marketing, Projects & Agent Skills",
       "seoDescription": "Explore Corey Haines’s growth marketing work, Conversion Factory, SwipeFiles, and public Marketing Skills for SEO, copywriting, and content strategy, with original sources.",
@@ -1228,6 +1203,20 @@
         "label": {
           "en": "Corey Haines on GitHub",
           "zh": "Corey Haines GitHub"
+        }
+      },
+      {
+        "href": "https://conversionfactory.co",
+        "label": {
+          "en": "Conversion Factory",
+          "zh": "Conversion Factory"
+        }
+      },
+      {
+        "href": "https://swipefiles.com",
+        "label": {
+          "en": "SwipeFiles",
+          "zh": "SwipeFiles"
         }
       }
     ],

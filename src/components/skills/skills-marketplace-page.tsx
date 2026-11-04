@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { CapabilitiesSection } from "@/components/marketing/capabilities-section";
 import storeCapabilities from "@/data/skills/skills-marketplace-capabilities.json";
@@ -38,7 +39,7 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
   },
   {
     "question": "知道任务但不知道工具名称时，怎样开始找？",
-    "answer": "先确定要改进的环节：任务拆分、工具连接、上下文、记忆或结果验证。再阅读项目介绍中的可借鉴机制与适用场景；进入发布者页核对来源，切换 Skills 查找可复用任务说明。"
+    "answer": "先选择独立项目或 Skills，再按任务分类缩小范围，用 React、代码审查、浏览器自动化等标签找到具体方向。分类页将同类 Skills 与独立项目分开展示，可以比较任务指引和执行工具。"
   },
   {
     "question": "哪些 Skill 卡片可以打开？",
@@ -63,7 +64,7 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
   },
   {
     "question": "How should I start when I know the task but not the tool name?",
-    "answer": "Identify the stage you want to improve: task structure, tool connections, context, memory, or result verification. Read the project guide for mechanisms and examples, check the publisher for provenance, and switch to Skills for reusable instructions."
+    "answer": "Choose Projects or Skills, then narrow the directory by task category and tags such as React, code review, or browser automation. Category pages show instructions and independent projects in separate sections so you can compare their roles."
   },
   {
     "question": "Which Skill cards can I open?",
@@ -100,9 +101,10 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
     </section>
     <section id="browse" aria-labelledby="projects-title" className="mx-auto max-w-7xl scroll-mt-24 px-5 pb-20 sm:px-8">
       <div className="mb-7"><h2 id="projects-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{zh ? "项目与 Skills" : "Projects and Skills"}</h2><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{zh ? "从 Ponytail 的代码复用、MausBot 的角色协作，到 Agent Desktop 的桌面操作，比较不同项目如何改善工作流；切换 Skills 查看可复用任务指引。" : "Compare code reuse with Ponytail, role-based collaboration with MausBot, and desktop control with Agent Desktop. Explore mechanisms for your own workflows, or switch to Skills for reusable task instructions."}</p></div>
-      <DirectoryTabs label={zh ? "内容类型" : "Content type"} tabs={[{ id: "project", label: zh ? "独立项目" : "Projects" }, { id: "skill", label: "Skills" }]} items={entries.map((entry) => ({
+      <p className="mb-6 text-sm"><Link href={`${prefix}/skills-marketplace/categories`} className="underline underline-offset-4">{zh ? "按任务浏览分类 →" : "Browse task categories →"}</Link></p>
+      <DirectoryTabs filters={zh ? { category: "任务分类", tag: "技术与用途", anyCategory: "不限分类", anyTag: "不限标签", reset: "清除筛选", empty: "没有符合当前条件的资源，请调整分类或标签。", results: "项匹配资源" } : { category: "Task category", tag: "Technology and purpose", anyCategory: "Any category", anyTag: "Any tag", reset: "Clear filters", empty: "No resources match. Change the category or tag to continue.", results: "matching resources" }} label={zh ? "内容类型" : "Content type"} tabs={[{ id: "project", label: zh ? "独立项目" : "Projects" }, { id: "skill", label: "Skills" }]} items={entries.map((entry) => ({
         id: entry.id, title: entry.name, description: entry.description, href: entry.entryType === "skill" && !entry.hasLocalGuide ? undefined : entry.href, group: entry.entryType,
-        label: entry.kind, footer: entry.publisher,
+        label: entry.kind, footer: entry.publisher, categories: entry.taxonomy.categories, tags: entry.taxonomy.tags,
       }))} />
     </section>
     <CapabilitiesSection id="capabilities" title={capabilityCopy.title} description={capabilityCopy.description} items={capabilityCopy.items} context={{ locale, preview: capabilityCopy.preview, workflows: capabilityCopy.workflows }} />

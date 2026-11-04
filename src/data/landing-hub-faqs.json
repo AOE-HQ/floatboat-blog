@@ -110,54 +110,54 @@
   "skillCategories": {
     "en": [
       {
-        "question": "What do the Skill categories describe?",
-        "answer": "They group instructions by the work they help with, such as coding, interface design, writing, or deployment. They describe task fit rather than a guarantee of quality, compatibility, or publisher approval."
+        "question": "What do the task categories describe?",
+        "answer": "They describe work such as code changes, interface design, office operations, and media production. Skills and independent projects can support the same task while providing different kinds of help."
       },
       {
-        "question": "Can the same Skill belong to more than one category?",
-        "answer": "Yes. A browser workflow may support both development and deployment work. Read its actual instructions and required tools instead of assuming that a category label completely defines its scope."
+        "question": "Can one resource belong to more than one category?",
+        "answer": "Yes. A React composition tool may support both coding and interface design. The resource keeps one identity and its existing detail page; appearing in another category does not create a second project."
       },
       {
-        "question": "What if my task spans design and implementation?",
-        "answer": "Identify the next concrete step and choose a Skill for that step. A design review and a code change can use different instructions, with a shared brief and an explicit handoff between them."
+        "question": "How do categories differ from tags?",
+        "answer": "A category groups a broad task area and has a dedicated page. Tags name a technology or purpose, such as React, code review, or audio. Tags are descriptive labels, not separate destination pages."
       },
       {
-        "question": "Which Skills in a category have a detail page?",
-        "answer": "Only entries with a guide on this site open a detail page. Other entries display their name, purpose, and publisher without a link. Compare the task scope, then choose an available guide to read further."
+        "question": "How should I choose between a Skill and a project?",
+        "answer": "Choose a Skill when you need instructions for a task in an existing host. Inspect a project when you need software, a library, a component, or a workflow mechanism. Some guides explain a project together with its supporting Skill."
       },
       {
-        "question": "Is a Skill the same thing as its underlying software?",
-        "answer": "No. A Skill can explain how to use a separately installed CLI, framework, or service. Check the software’s own setup and access requirements as well as the instruction file."
+        "question": "Which resource cards can I open?",
+        "answer": "A Skill opens only when a local guide exists. Other Skills remain static entries. Projects open an existing local detail page when available, otherwise their original website or repository."
       },
       {
-        "question": "How should I evaluate an unfamiliar Skill?",
-        "answer": "Read the source, confirm the maintained version, and inspect the commands, services, and permissions it expects. Try a bounded task with non-sensitive material before relying on it for important work."
+        "question": "Does sharing a category mean resources work together?",
+        "answer": "No. Category membership describes relevance to a task, not verified integration or compatibility. Check each source for installation, runtime, permissions, and licensing before combining resources."
       }
     ],
     "zh": [
       {
-        "question": "Skill 分类描述的是什么？",
-        "answer": "分类按指引帮助完成的工作组织，例如编码、界面设计、写作或部署，表示任务方向，不代表质量、兼容性或发布者认可的保证。"
+        "question": "任务分类描述的是什么？",
+        "answer": "分类描述代码修改、界面设计、办公操作和媒体制作等工作方向。Skills 与独立项目可以服务同一任务，但提供的帮助不同：前者主要是任务指引，后者可能提供软件、组件或运行机制。"
       },
       {
-        "question": "同一个 Skill 可以属于多个分类吗？",
-        "answer": "可以。浏览器流程可能同时用于开发和部署。应阅读实际指引和工具要求，不能用单个分类标签替代完整范围说明。"
+        "question": "同一个资源可以属于多个分类吗？",
+        "answer": "可以。例如 React 组件工具可能同时支持编码与界面设计。资源保持同一身份与已有详情地址，不会因为进入另一个分类就成为第二个独立项目。"
       },
       {
-        "question": "任务同时涉及设计和实现时怎样选择？",
-        "answer": "先确定下一步具体工作，再为这一步选指引。设计审查和代码修改可以使用不同 Skills，通过共享任务说明和明确交接保持连续。"
+        "question": "分类与标签有什么区别？",
+        "answer": "分类组织较大的任务方向，并有对应分类页；标签描述具体技术或用途，例如 React、代码审查、音频。标签用于识别和当前页面内筛选，不创建独立标签页面。"
       },
       {
-        "question": "分类中的哪些 Skill 可以打开详情？",
-        "answer": "只有已提供本站说明的 Skill 才能打开详情指南。其他条目仅展示名称、用途和发布者，不提供跳转；可以先比较任务范围，再选择已有指南继续阅读。"
+        "question": "应该选择 Skill 还是独立项目？",
+        "answer": "已有宿主能力、需要具体任务方法时，优先查看 Skill；需要软件、库、组件或工作流机制时，查看项目。部分指南会把软件与其配套 Skill 放在同一页面解释。"
       },
       {
-        "question": "Skill 与背后的软件是同一个东西吗？",
-        "answer": "不是。Skill 可能只是说明如何使用需要单独安装的 CLI、框架或服务。除了指引文件，还要核对软件本身的安装与访问条件。"
+        "question": "哪些资源卡片可以打开？",
+        "answer": "Skill 只有存在本站指南时才可打开，其他 Skill 保持静态展示。独立项目有本站详情时进入该页面，否则进入原始网站或仓库。"
       },
       {
-        "question": "如何评估不熟悉的 Skill？",
-        "answer": "先读来源，确认维护版本，并检查所需命令、服务和权限。先用非敏感材料试做边界明确的小任务，再判断是否用于重要工作。"
+        "question": "同属一个分类表示资源可以直接协作吗？",
+        "answer": "不表示。分类说明与任务的相关性，不证明已经集成或兼容。组合使用前仍需分别核对安装方式、运行环境、权限与许可。"
       }
     ]
   }

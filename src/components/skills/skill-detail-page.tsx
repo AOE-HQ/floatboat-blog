@@ -10,6 +10,8 @@ import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { UseCasesSection } from "@/components/marketing/use-cases-section";
 import { skillPath, skillPublisherPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
 
+import { getResourceLabels } from "@/lib/skills/resource-taxonomy";
+
 const labels = {
   en: { home: "Home", store: "Skills Marketplace" },
   zh: { home: "首页", store: "Skills 市场" },
@@ -70,7 +72,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
         identity={{
           name: skill.name,
           typeLabel: "Agent Skill",
-          tags: [skill.category[locale], skill.pageCopy.kind[locale]],
+          tags: getResourceLabels(resourceId, locale),
         }}
         linksTitle={isZh ? "发布者与来源" : "Publisher and sources"}
         links={[

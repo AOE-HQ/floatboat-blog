@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!category) return {};
   const canonical = `https://floatboat.ai${skillCategoryPath("zh", slug)}`;
   const { title, description } = category.seo.zh;
-  return { title, description, alternates: { canonical, languages: { en: `https://floatboat.ai${skillCategoryPath("en", slug)}`, zh: canonical } }, openGraph: { type: "website", title, description, url: canonical } };
+  return { title: { absolute: title }, description, alternates: { canonical, languages: { en: `https://floatboat.ai${skillCategoryPath("en", slug)}`, zh: canonical } }, openGraph: { type: "website", title, description, url: canonical } };
 }
 
 export default async function SkillCategoryPage({ params }: { params: Promise<{ slug: string }> }) {

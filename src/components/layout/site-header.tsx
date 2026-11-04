@@ -90,10 +90,10 @@ const NAV_MENUS: NavMenuGroup[] = [
         path: "/combostore",
       },
       {
-        en: "Skill Categories",
-        zh: "Skill 分类",
-        descEn: "Browse third-party Agent Skills by task",
-        descZh: "按任务浏览第三方 Agent Skills",
+        en: "Resource Categories",
+        zh: "资源分类",
+        descEn: "Browse Skills and independent projects by task",
+        descZh: "按任务浏览 Skills 与独立项目",
         path: "/skills-marketplace/categories",
       },
       {

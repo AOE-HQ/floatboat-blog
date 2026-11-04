@@ -39,7 +39,7 @@ const FOOTER_GROUPS: Array<{ en: string; zh: string; links: FooterLink[] }> = [
       { en: "Use Cases", zh: "使用场景", path: "/use-cases" },
       { en: "Models", zh: "模型", path: "/models" },
       { en: "Combo Store", zh: "Combo 商店", href: `${FB_SITE}/combostore`, zhHref: `${FB_SITE}/zh/combostore` },
-      { en: "Skill Categories", zh: "Skill 分类", path: "/skills-marketplace/categories" },
+      { en: "Resource Categories", zh: "资源分类", path: "/skills-marketplace/categories" },
       { en: "Find Skills", zh: "查找 Skills", path: "/skills-marketplace/vercel-labs/find-skills" },
       { en: "Connectors", zh: "连接器", href: `${FB_SITE}/connectors`, zhHref: `${FB_SITE}/zh/connectors` },
       { en: "Skills Marketplace", zh: "Skills 市场", path: "/skills-marketplace" },

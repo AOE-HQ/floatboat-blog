@@ -13,6 +13,8 @@ import { getPublisherProfile, publisherProfilePath } from "@/lib/skills/publishe
 import type { SkillLocale } from "@/lib/skills/featured-skills";
 import { projectPath, type ProjectPage } from "@/lib/projects/project-pages";
 
+import { getResourceLabels, projectResourceId } from "@/lib/skills/resource-taxonomy";
+
 export function ProjectDetailPage({ project, locale }: { project: ProjectPage; locale: SkillLocale }) {
   const zh = locale === "zh";
   const t = project[locale];
@@ -42,7 +44,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
     <Breadcrumb label={zh ? "面包屑导航" : "Breadcrumb"} items={breadcrumbs} />
     <MarketingHero layout="centered" title={project.name} description={t.description} />
     <StartInFloatboat key={`${locale}/${resourceId}`} variant="resource" locale={locale} pageId={resourceId} copy={startTask} initialTask={startTask.example ?? ""} resource={{ name: project.name, url: project.repository }} />
-    <OverviewSection variant="profile" title={t.overviewTitle} paragraphs={t.overview} identity={{ name: project.name, typeLabel: t.kind, logo: project.logo, tags: [...t.tags, project.license] }} linksTitle={zh ? "项目与来源" : "Project and sources"} links={links} />
+    <OverviewSection variant="profile" title={t.overviewTitle} paragraphs={t.overview} identity={{ name: project.name, typeLabel: t.kind, logo: project.logo, tags: [...getResourceLabels(projectResourceId(project.repository), locale), { id: "license", label: project.license }] }} linksTitle={zh ? "项目与来源" : "Project and sources"} links={links} />
     <section aria-labelledby="project-capabilities-title" className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16">
       <h2 id="project-capabilities-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{t.capabilitiesTitle}</h2>
       <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--ob-color-text-subtle)]">{t.capabilitiesIntro}</p>
