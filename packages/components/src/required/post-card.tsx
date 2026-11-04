@@ -50,7 +50,7 @@ export function PostCard({
             src={post.coverImage!}
             alt=""
             layout="hero"
-            className="rounded-none border-0 border-b border-[var(--ob-color-border)] transition duration-300 group-hover:scale-[1.02] [&_img]:aspect-[16/10]"
+            className="rounded-none border-0 transition duration-300 group-hover:scale-[1.02] [&_img]:aspect-[16/10]"
           />
         </Link>
       ) : null}

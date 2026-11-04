@@ -53,7 +53,7 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
       </div>
     </section>
 
-    <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
+    <section className="bg-white/45 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading {...page.features} />
         <div className="grid gap-5 md:grid-cols-3">
@@ -68,7 +68,7 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
 
     <HowSection {...page.howTo} />
 
-    <section id="comparison" aria-labelledby="comparison-title" className="scroll-mt-24 border-b border-black/[0.06] bg-white/45">
+    <section id="comparison" aria-labelledby="comparison-title" className="scroll-mt-24 bg-white/45">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20">
         <div className="mb-8 max-w-3xl">
           <h2 id="comparison-title" className="font-serif text-3xl tracking-[-0.03em] sm:text-4xl">{page.comparison.title}</h2>

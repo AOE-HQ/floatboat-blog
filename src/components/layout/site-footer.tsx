@@ -165,7 +165,7 @@ export function SiteFooter({ showNewsletter = true }: { showNewsletter?: boolean
           </div>
         )}
 
-        <div className="border-t border-black/[0.08] px-10 py-14 max-lg:px-5 sm:py-16">
+        <div className="px-10 py-14 max-lg:px-5 sm:py-16">
           <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(4,minmax(0,1fr))] lg:gap-8">
             <div className="max-w-sm lg:pr-8">
               <a
@@ -212,7 +212,7 @@ export function SiteFooter({ showNewsletter = true }: { showNewsletter?: boolean
           </div>
         </div>
 
-        <div className="border-t border-black/[0.08] px-10 py-6 max-lg:px-5">
+        <div className="px-10 py-6 max-lg:px-5">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm leading-6 text-[var(--ob-color-muted)]">© {new Date().getFullYear()} AOE Tech Labs Limited.</p>
             <div className="flex items-center gap-6 text-[var(--ob-color-muted)]">

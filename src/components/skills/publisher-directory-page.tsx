@@ -70,7 +70,7 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
         </ul>
       </section>}
 
-      {profile.projects.length > 0 && <section aria-labelledby="publisher-projects-title" className="border-y border-black/[0.07] bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
+      {profile.projects.length > 0 && <section aria-labelledby="publisher-projects-title" className="bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
         <h2 id="publisher-projects-title" className="font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.projectsTitle)}</h2>
         {t.projectsIntro && <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--ob-color-text-subtle)]">{t.projectsIntro}</p>}
         <ul className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3">

@@ -2,7 +2,7 @@
 
 import type { FinalCta } from "@openblog/core";
 
-import { obBorder, obMuted, obPrimary, obPrimaryFg, obText } from "../tokens";
+import { obMuted, obPrimary, obPrimaryFg, obText } from "../tokens";
 import { cn } from "../utils";
 
 /** Closing CTA block: one title line + one description paragraph. */
@@ -15,7 +15,7 @@ export function ArticleFinalCta({
   const isExternal = href.startsWith("http");
 
   return (
-    <section className={cn("relative mt-16 overflow-hidden border-t py-16 md:py-20", obBorder)}>
+    <section className={cn("relative mt-16 overflow-hidden py-16 md:py-20")}>
       <div className="relative mx-auto max-w-3xl px-1 text-center">
         <h2 className={cn("text-2xl font-semibold leading-tight md:text-4xl", obText)}>
           {title}

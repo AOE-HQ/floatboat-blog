@@ -2,7 +2,7 @@
 
 import type { TldrContent } from "@openblog/core";
 
-import { obBorder, obMuted, obText } from "../tokens";
+import { obMuted, obText } from "../tokens";
 
 type TldrBlockProps = TldrContent & {
   locale?: "en" | "zh";
@@ -21,7 +21,7 @@ export function TldrBlock({
 
   return (
     <aside
-      className={`mb-8 border-l-2 pl-5 md:pl-6 ${obBorder}`}
+      className="mb-8 pl-5 md:pl-6"
       aria-label={label}
     >
       <p

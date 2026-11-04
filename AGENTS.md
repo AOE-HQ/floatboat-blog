@@ -109,3 +109,7 @@ Use `HowSection` for real ordered user actions. Each item has only `title` and `
 ## Comparison table contract
 
 Use `ComparisonTable` for comparisons across shared dimensions. Render a real table with a caption, column headers and row headers; section title and introduction stay outside the table. Use the shared `comparisonSchema` to require one value per compared column, distinct column names and distinct dimensions. Keep the responsive horizontal scroll region keyboard accessible and preserve row labels while scrolling; do not introduce a mobile copy of the same data. Current rollout is five feature pages in both locales; model pages have no active comparison and must not retain a second unused renderer. Compare explicitly bounded approaches, not unsupported claims about all competing products. After building run `python3 scripts/check_comparison_tables.py`.
+
+## Decorative dividers
+
+Do not add decorative section borders, item separator rules, or internal card divider lines to marketing pages or blog layouts. Use headings and existing spacing to establish hierarchy. Preserve functional boundaries: table rows, form/control outlines, FAQ disclosure items, active navigation indicators, quotation semantics, and application-demo panes. Keep this rule in shared components rather than hiding borders through a global CSS override.

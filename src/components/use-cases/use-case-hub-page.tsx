@@ -97,7 +97,7 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
 
     <MarketingHero layout="centered" title={titleCase(copy.title)} description={copy.description} />
 
-    <section id="catalog" className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28">
+    <section id="catalog" className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-4xl"><h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.catalogTitle)}</h2><p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.catalogDescription}</p></div>
         <UseCaseCatalog locale={locale} cards={cards} />
@@ -106,7 +106,7 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
 
     <section className="px-5 py-20 sm:px-8 sm:py-28"><div className="mx-auto max-w-7xl"><div className="max-w-4xl"><h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.methodTitle)}</h2><p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.methodDescription}</p></div><div className="mt-12 grid gap-5 lg:grid-cols-3">{copy.steps.map(([number, title, description]) => <article key={number} className="rounded-[28px] border border-black/[0.08] bg-[var(--ob-color-surface)] p-6"><span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-muted)]">{number}</span><h3 className="mt-7 font-serif text-3xl tracking-[-0.03em]">{titleCase(title)}</h3><p className="mt-4 leading-7 text-[var(--ob-color-text-subtle)]">{description}</p></article>)}</div></div></section>
 
-    <section className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr]"><div><h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.pathwayTitle)}</h2><p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.pathwayDescription}</p></div><div className="divide-y divide-black/[0.08] border-y border-black/[0.08]">{copy.pathway.map(([title, description]) => <div key={title} className="grid gap-3 py-7 sm:grid-cols-[0.55fr_1fr]"><h3 className="font-serif text-2xl">{titleCase(title)}</h3><p className="leading-7 text-[var(--ob-color-text-subtle)]">{description}</p></div>)}</div></div></section>
+    <section className="px-5 py-20 sm:px-8 sm:py-28"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr]"><div><h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.pathwayTitle)}</h2><p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.pathwayDescription}</p></div><div>{copy.pathway.map(([title, description]) => <div key={title} className="grid gap-3 py-7 sm:grid-cols-[0.55fr_1fr]"><h3 className="font-serif text-2xl">{titleCase(title)}</h3><p className="leading-7 text-[var(--ob-color-text-subtle)]">{description}</p></div>)}</div></div></section>
 
     <FaqBand locale={locale} items={hubFaqs.useCases[locale]} />
     <FinalCta title={copy.finalTitle} description={copy.finalDescription} primary={{ label: copy.primary, href: isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=final_cta" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=final_cta" }} />

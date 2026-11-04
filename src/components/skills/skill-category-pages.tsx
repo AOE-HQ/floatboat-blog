@@ -78,7 +78,7 @@ export function SkillCategoryDetail({ locale, slug }: { locale: SkillLocale; slu
     <MarketingHero layout="centered" title={category.hero[locale].title} description={category.hero[locale].description} />
     <OverviewSection variant="prose" id="category-introduction" title={category.overviewTitle[locale]} paragraphs={[category.intro[locale]]} />
 
-    <section className="border-y border-black/[0.07] bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
+    <section className="bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
       <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">{labels.skills}</h2>
       <div className="mt-7 grid gap-4 md:grid-cols-2">
         {skills.map((skill) => <article key={skill.id} className="flex flex-col rounded-2xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-6">

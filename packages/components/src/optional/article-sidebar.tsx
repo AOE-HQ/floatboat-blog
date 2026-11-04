@@ -2,8 +2,6 @@
 
 import { ShareRail } from "./share-rail";
 import { Toc } from "./toc";
-import { obBorder } from "../tokens";
-import { cn } from "../utils";
 
 type ArticleSidebarProps = {
   tocItems: { id: string; title: string; level: number }[];
@@ -32,7 +30,7 @@ export function ArticleSidebar({
         <Toc items={tocItems} title={isZh ? "目录" : "On this page"} />
       ) : null}
       {showShare ? (
-        <div className={cn("pt-8 border-t", obBorder)}>
+        <div className="pt-8">
           <ShareRail url={pageUrl} title={title} isZh={isZh} />
         </div>
       ) : null}

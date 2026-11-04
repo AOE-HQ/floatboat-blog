@@ -159,7 +159,7 @@ export function BlogIndex({
                   </div>
 
                   {posts.length > 0 ? (
-                    <ul className={`mt-5 divide-y divide-[var(--ob-color-border)]`}>
+                    <ul className={`mt-5 `}>
                       {posts.map((post) => (
                         <li key={post.slug} className="py-4 first:pt-0 last:pb-0">
                           <Link

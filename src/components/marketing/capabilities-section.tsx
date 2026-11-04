@@ -48,7 +48,7 @@ export function CapabilitiesSection({ id, title, description, items, context }: 
   if (items.length === 0) return null;
   const isZh = context.locale === "zh";
   const lowerFirst = (value: string) => value.charAt(0).toLowerCase() + value.slice(1);
-  return <section id={id} aria-labelledby={id ? `${id}-title` : undefined} className="border-y border-black/[0.06] py-20 sm:py-28">
+  return <section id={id} aria-labelledby={id ? `${id}-title` : undefined} className="py-20 sm:py-28">
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
       <div className="mx-auto mb-16 max-w-3xl text-center">
         <h2 id={id ? `${id}-title` : undefined} className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(title)}</h2>

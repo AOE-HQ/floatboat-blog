@@ -52,7 +52,7 @@ export function ModelDetailPage({
           {model.facts.map((fact) => (
             <div
               key={fact.label.en}
-              className="border-b border-black/[0.06] p-5 last:border-b-0 sm:border-r lg:border-b-0"
+              className="p-5"
             >
               <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-muted)]">
                 {localize(fact.label, locale)}
@@ -102,7 +102,7 @@ export function ModelDetailPage({
                 <p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">
                   {localize(item.description, locale)}
                 </p>
-                <p className="mt-6 border-t border-black/[0.07] pt-4 text-xs font-medium text-[var(--ob-color-muted)]">
+                <p className="mt-6 pt-4 text-xs font-medium text-[var(--ob-color-muted)]">
                   {modelAvailabilityLabel(item.availability, locale)}
                   {item.availability === "combo" && <span className="block mt-1">{localize(item.meta, locale).split(" · ").slice(1).join(" · ")}</span>}
                 </p>
@@ -115,7 +115,7 @@ export function ModelDetailPage({
 
       <UseCasesSection {...localizeUseCases(model.useCases, locale)} />
 
-      <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
+      <section className="bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="max-w-3xl">
             <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">

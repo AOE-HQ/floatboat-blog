@@ -68,7 +68,7 @@ export function ArticleFaq({
           locale,
         )}
       />
-      <section className={cn("mt-16 border-t pt-12", obBorder)}>
+      <section className="mt-16 pt-12">
         <h2 className={cn("mb-8 text-2xl font-semibold tracking-tight md:text-3xl", obText)}>
           {title}
         </h2>

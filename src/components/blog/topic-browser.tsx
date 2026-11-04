@@ -55,7 +55,7 @@ export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix
       aria-label={locale === "zh" ? "按主题浏览文章" : "Browse articles by topic"}
       className="scroll-mt-24"
     >
-      <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[var(--ob-color-border)] pb-4">
+      <div className="flex flex-wrap items-end justify-between gap-4 pb-4">
         <h2 className="text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] sm:text-3xl">
           {locale === "zh" ? "浏览文章库" : "Browse the library"}
         </h2>
