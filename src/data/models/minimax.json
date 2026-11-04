@@ -153,6 +153,16 @@
           "en": "A deliverable containing text, images, and video may require separate model routes and dependencies. Identify the appropriate path for each medium, verify its access requirements, and review the resulting output independently. Keep those boundaries visible when assembling the overall workflow instead of treating every medium as one text request.",
           "zh": "包含文本、图片和视频的交付任务，可能需要不同的模型入口与依赖条件。分别确定每种媒介的处理路径、访问要求和结果检查方式，再组合成整体工作流。保留这些边界，避免把所有媒介都理解为同一条文本请求能够处理的内容。"
         }
+      },
+      {
+        "title": {
+          "en": "Audit omissions across batch outputs",
+          "zh": "抽查批次输出中的遗漏"
+        },
+        "description": {
+          "en": "A completed text queue may still contain skipped records, inconsistent summaries, or lost conditions. Compare representative source items with the saved outputs and retain exceptions for review. If a model route is needed, confirm current access first; a recorded capacity profile does not establish that the audit can run in the present environment.",
+          "zh": "文本队列完成后，仍可能出现漏项、总结不一致或条件丢失。将代表性源记录与保存结果对照，把例外保留给审阅者。需要调用模型时，先确认当前访问条件；容量画像已经记录，并不能证明这次检查在现有环境中就能执行。"
+        }
       }
     ]
   },

@@ -129,6 +129,16 @@
             "en": "A software design discussion can use Grill with Docs to compare the proposal with current code, project terms, and existing decision records. Check terminology before updating a glossary or ADR, and change those documents only where the discussion warrants it. The record should reflect settled conclusions rather than speculative documentation churn.",
             "zh": "软件设计讨论可以使用 Grill with Docs，将提案与当前代码、项目术语和已有决策记录对照。先核对概念含义，再根据讨论实际形成的结论更新术语表或 ADR。文档修改应有充分理由，避免围绕尚未确定的想法反复改写记录。"
           }
+        },
+        {
+          "title": {
+            "en": "Resolve a consequential tradeoff",
+            "zh": "澄清不可兼得的方案取舍"
+          },
+          "description": {
+            "en": "A plan may contain two goals that cannot both be fully satisfied under the existing constraints. Bring the alternatives and their dependencies into the interview, then identify which choice matters first and what evidence can settle it. Record the agreed consequence; in documentation mode, update a durable decision record only when the tradeoff warrants one.",
+            "zh": "现有约束下，计划中的两个目标可能无法同时满足。将备选方案和依赖带入访谈，判断哪项选择需要先确定，以及什么证据能够解决问题。记录已确认的后果；使用文档模式时，也只在取舍足够重要时更新持久决策记录。"
+          }
         }
       ]
     },
@@ -461,6 +471,16 @@
             "en": "A critical integration test should exercise behavior across a meaningful boundary with known expected results. Identify which dependencies are real and which are replaced by test doubles, then check the combined behavior. The test should detect boundary failures rather than merely confirming that isolated components were called.",
             "zh": "关键集成测试需要跨越有实际意义的边界，并使用已知的预期结果。明确哪些依赖真实运行、哪些由替身代替，再核对组合后的行为。测试应能够发现边界协作失败，而不是只确认各个独立组件曾经被调用。"
           }
+        },
+        {
+          "title": {
+            "en": "Protect behavior before restructuring code",
+            "zh": "重组代码前保护已有行为"
+          },
+          "description": {
+            "en": "A structural change should not alter the behavior callers already rely on. Identify the public outcomes that need protection and establish meaningful tests before a separate refactor proceeds. Reuse the same checks afterward, keeping assertions focused on observable results so moving internal code does not make a correct implementation appear broken.",
+            "zh": "结构调整不应改变调用方已经依赖的行为。先识别需要保护的公共结果，并在独立重构开始前建立有意义的测试。修改后沿用相同检查，断言继续关注可观察结果，避免仅因内部代码移动，就让原本正确的实现被测试误判。"
+          }
         }
       ]
     },
@@ -730,6 +750,16 @@
             "en": "Understanding one concept across many files can create a real navigation and maintenance burden. Trace the paths needed to follow that concept and examine whether cohesion or layering could reduce the cost. Compare proposed boundaries with existing dependencies so consolidation does not merely move complexity elsewhere.",
             "zh": "理解一个概念需要反复跨越大量文件时，可能已经产生真实的导航与维护成本。记录实际阅读路径，检查内聚性或分层调整能否减少负担，并将拟议边界与既有依赖比较，避免只是把复杂度移到另一个位置。"
           }
+        },
+        {
+          "title": {
+            "en": "Challenge a proposed module boundary",
+            "zh": "检验拟议模块边界是否合理"
+          },
+          "description": {
+            "en": "A suggested extraction may reduce one file while increasing coupling for its callers. Compare the candidate with actual dependencies, public behavior, and maintenance history before committing to it. Use the architecture discussion to explain what becomes easier and what cost moves elsewhere, leaving implementation scope open until the boundary has a defensible reason to exist.",
+            "zh": "拆分建议可能减少一个文件的长度，却增加调用方耦合。决定采用前，将候选边界与真实依赖、公共行为和维护历史比较。设计讨论应说明哪里更容易理解、哪些成本只是转移到别处，在新边界有充分理由之前，不提前锁定实施范围。"
+          }
         }
       ]
     },
@@ -989,6 +1019,16 @@
             "en": "A release slowdown should be measured with the same workload and timing method before and after the change. Establish a comparable baseline, localize the regression, and retest any proposed repair on that original workload. Comparable timings make it possible to distinguish a real improvement from noise or a changed test.",
             "zh": "版本发布后变慢时，使用相同工作负载和计时方法比较前后表现。建立可比基线，定位性能回退，再用原始负载复测拟议修复。保持测量条件一致，才能区分真实改进、环境波动和测试方式变化。"
           }
+        },
+        {
+          "title": {
+            "en": "Explain an environment-specific failure",
+            "zh": "解释只在特定环境出现的故障"
+          },
+          "description": {
+            "en": "The same input may succeed locally and fail under another configuration. Capture the relevant versions, settings, and observable differences, then reproduce the discrepancy with a controlled comparison. Test the suspected environmental cause before changing application logic, and rerun both cases so fixing one environment does not simply move the failure to another.",
+            "zh": "相同输入可能在本机成功，却在另一套配置下失败。记录相关版本、设置和可观察差异，通过受控对照复现问题。修改应用逻辑前先验证环境原因，并在两种条件下复测，避免修好一个环境的同时，只是把故障转移到另一个地方。"
+          }
         }
       ]
     },
@@ -1247,6 +1287,16 @@
           "description": {
             "en": "A release audit needs a fixed release tag, target commit, and explicit exclusions. Keep that reference stable while inspecting the diff so another reviewer can reproduce the same scope. Leave later unreleased changes out of the findings rather than allowing a moving branch to enlarge the review silently.",
             "zh": "版本审计需要固定发布标签、目标提交和排除范围。检查差异时保持这些参照稳定，让其他审阅者能够复现相同范围。后续尚未发布的修改不混入本次结论，避免移动中的分支静默扩大审阅内容。"
+          }
+        },
+        {
+          "title": {
+            "en": "Review without an available specification",
+            "zh": "在缺少规格时审阅代码"
+          },
+          "description": {
+            "en": "A repository change may have a clear comparison point but no originating specification to inspect. Review it against documented project standards and state explicitly that the specification axis was skipped. Do not invent acceptance criteria to fill the gap; record which conclusions are supported by conventions and which requirements remain unavailable for assessment.",
+            "zh": "仓库修改可能已有清楚的比较点，却没有可供核对的原始规格。按已记录项目标准审阅，并明确说明规格轴已经跳过，不为填补缺口自行编造验收条件。报告应区分哪些结论来自代码约定，哪些需求因材料缺失而无法评估。"
           }
         }
       ]
@@ -1517,6 +1567,16 @@
             "en": "A focused review session needs a fixed revision, bounded diff scope, and a record of verification already completed. Tailor the handoff to the code being assessed and the risks or gaps that still need attention. Avoid loading the reviewer with unrelated implementation history that does not change the review decision.",
             "zh": "启动专门审阅会话时，提供固定版本、限定差异范围和已经完成的验证记录。交接围绕待评估代码及仍需关注的风险、缺口展开，减少不会影响审阅判断的实施历史，让审阅者能够尽快进入真正需要检查的内容。"
           }
+        },
+        {
+          "title": {
+            "en": "Preserve a task waiting on a decision",
+            "zh": "交接等待决定的任务"
+          },
+          "description": {
+            "en": "A task may stop because one question or approval remains unanswered, rather than because implementation is complete. Prepare a handoff that preserves the objective, evidence already gathered, and the exact decision needed to continue. Make the pending state explicit so the next session does not repeat finished investigation or treat an unresolved choice as permission to proceed.",
+            "zh": "任务可能因为问题或批准尚未得到回答而停下，并不代表实施已经完成。交接时保留目标、已收集证据和继续工作所需的确切决定。明确待处理状态，让下一会话既不重复已完成调查，也不会把未决选择当作可以继续执行的许可。"
+          }
         }
       ]
     },
@@ -1777,6 +1837,16 @@
           "description": {
             "en": "A talk, process, or creative project can use the same design conversation without becoming a coding task. Clarify the audience, intended outcome, and material constraints, then compare alternatives against those needs. Carry a coherent direction and the remaining constraints into the next stage rather than invent implementation details prematurely.",
             "zh": "演讲、流程或创意项目也可以先进行设计讨论，而不必变成编码任务。明确受众、目标和素材约束，再依据这些条件比较不同方向。将连贯的方案与尚存限制带入下一阶段，避免过早补出缺乏依据的实施细节。"
+          }
+        },
+        {
+          "title": {
+            "en": "Confirm a small, already bounded change",
+            "zh": "确认范围清楚的小改动"
+          },
+          "description": {
+            "en": "A clearly specified minor task may not need an extensive design document. Read the current project context and confirm whether any consequential choice is still open, then keep the discussion proportionate to the work. Preserve the agreed scope and use the appropriate planning handoff without creating new questions or artifacts solely to make the process look complete.",
+            "zh": "要求已经明确的小任务，不一定需要冗长设计文档。阅读当前项目背景，确认是否仍有影响方向的选择，再让讨论深度与工作规模相符。保留约定范围并采用适合的规划交接，不为了让流程看起来完整而额外制造问题或材料。"
           }
         }
       ]
@@ -2055,6 +2125,16 @@
           "description": {
             "en": "Several unsuccessful fixes are a reason to revisit assumptions, not to stack another unsupported patch. Compare what each attempt changed and what was actually observed, then discuss possible architectural causes. Reassess the structural explanation before committing to another repair that has no tested causal basis.",
             "zh": "多次修复没有成功时，应重新检查假设，而不是继续叠加未经验证的补丁。比较每次尝试实际改变了什么、观察到了什么，再讨论可能的架构原因。下一轮修改前先重新评估结构性解释，避免在缺乏因果依据时重复试错。"
+          }
+        },
+        {
+          "title": {
+            "en": "Compare a working and failing environment",
+            "zh": "对照成功与失败环境"
+          },
+          "description": {
+            "en": "A failure limited to one machine or pipeline stage needs its configuration compared with a known working case. Trace the first meaningful difference and test whether it explains the symptom, retaining logs and boundary inputs. A repair should address that cause and survive a repeat of both environments instead of hiding the discrepancy with an unrelated fallback.",
+            "zh": "故障只在某台机器或管线阶段出现时，需要将配置与已知成功情况比较。追踪最早有意义的差异，检验它能否解释症状，并保留日志和边界输入。修复应针对这个原因，在两种环境复测，而不是用无关回退隐藏差异。"
           }
         }
       ]
@@ -2356,6 +2436,16 @@
           "description": {
             "en": "A later audit can use historical ledgers to identify unresolved issues and source changes, but old findings do not establish current coverage. Compare changed code with the earlier evidence and locate gaps that need renewed investigation. Report change impact and remaining uncertainty without inheriting verification that was never repeated.",
             "zh": "后续审计可以利用历史台账寻找未解决问题和源码变化，但旧结论不能直接代表当前覆盖。将变更代码与早期证据对照，识别需要重新调查的缺口。报告说明变化影响和剩余不确定性，不继承本轮并未重复验证的历史状态。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check audit coverage before closing the review",
+            "zh": "结束审阅前核对覆盖范围"
+          },
+          "description": {
+            "en": "Completed investigations do not necessarily cover every unit that was assigned. Compare the coverage ledger, verifier outcomes, and remaining questions with the authorized repository scope before preparing the final report. Keep unexplored areas and insufficiently supported issues visible, so parallel activity or a long findings list is not mistaken for a complete security assessment.",
+            "zh": "已完成若干调查，并不代表所有分配单元都已覆盖。最终报告前，将覆盖台账、核验结果和未决问题与授权仓库范围比较。继续保留未探索区域及证据不足的线索，避免把并行活动很多或发现清单很长，误认为安全评估已经完整。"
           }
         }
       ]

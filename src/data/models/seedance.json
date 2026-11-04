@@ -202,6 +202,16 @@
           "en": "Storyboard exploration can compare candidate clips before committing to final production. Set a draft budget and review criteria, then examine framing and motion across alternatives. Record selection reasons and constraints for the next round so each revision follows a creative decision rather than another unbounded generation attempt.",
           "zh": "分镜探索阶段可以先比较候选片段，再决定最终制作方向。明确草稿预算与评审标准，逐一检查构图和运动表现，并记录取舍理由及下一轮约束。让每次迭代围绕具体创作决定展开，避免缺乏方向地重复生成。"
         }
+      },
+      {
+        "title": {
+          "en": "Include sound in the video brief",
+          "zh": "把声音要求写入视频简报"
+        },
+        "description": {
+          "en": "When the intended clip includes audio, define the sound or speech intention alongside the scene, timing, and motion. Check the selected engine and workflow for the required support before generation. Review the resulting picture and audio together, recording mismatches for the next iteration rather than judging the clip from a still frame or assuming every listed version offers the same route.",
+          "zh": "片段需要音频时，应把声音或语音意图与场景、时序和运动一起说明。生成前确认所选引擎及流程支持所需条件，结果中同时审阅画面与声音，并记录下一轮要调整的不一致之处。不以单帧判断片段，也不默认所有列出版本都使用相同路径。"
+        }
       }
     ]
   },

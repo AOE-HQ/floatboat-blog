@@ -69,6 +69,10 @@
       {
         "title": "Tame footage and research",
         "description": "Production and research folders often contain related videos, transcripts, thumbnails, and drafts. Organize them by source and production stage so derived material remains connected to its original asset. When a filename does not establish the content or relationship, leave that assignment open rather than guessing."
+      },
+      {
+        "title": "Review files with uncertain ownership",
+        "description": "Some incoming files lack enough context to assign them to a client, period, or production stage. Keep those records separate and inspect the available content and folder relationships before proposing a destination. A review list should explain the uncertainty and the decision needed, without moving or deleting a file merely to complete the classification."
       }
     ]
   },

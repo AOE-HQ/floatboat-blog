@@ -175,6 +175,16 @@
           "en": "A workflow that depends on reasoning replay needs its model identity, route, and access conditions checked together. Compare those requirements with the current environment and mark every unverified step. The assessment should make clear which compatibility checks have passed and which prerequisites still prevent execution.",
           "zh": "依赖推理回放的工作流，需要同时核对模型身份、调用入口和实际访问条件。将这些要求与当前环境逐项对照，明确标记尚未验证的步骤。评估结果应区分已经通过的兼容性检查，以及仍然阻碍执行的前提条件。"
         }
+      },
+      {
+        "title": {
+          "en": "Check interrupted and failed responses",
+          "zh": "核对中断和失败响应"
+        },
+        "description": {
+          "en": "A gateway integration also needs to handle partial output and error responses. Compare the consumer's expected events with available response samples, including how reasoning fields and final content are separated. Record where state becomes incomplete or duplicated, and test recovery behavior without treating a configured GLM adapter as proof that the entire client path works.",
+          "zh": "网关集成还需要处理不完整输出与错误响应。将消费端预期事件与已有响应样本比较，包括推理字段和最终内容如何区分，记录状态在哪些位置缺失或重复。验证恢复行为时，不能仅凭 GLM 适配器已配置，就认为完整客户端路径已经正常。"
+        }
       }
     ]
   },

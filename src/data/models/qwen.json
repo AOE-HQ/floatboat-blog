@@ -154,6 +154,16 @@
           "en": "Workflow planning should compare input scale with the exact model identifier, runtime facts, budget, and current entry points. Verify each access condition independently before assigning work to the route. A useful plan makes prerequisites explicit and leaves unconfirmed capability or availability claims open for testing.",
           "zh": "规划工作流时，将输入规模与精确型号、运行环境、预算及当前入口分别核对。确认每项访问条件后，再安排通过该路径执行的工作。计划中明确写出前提，将尚未证实的能力或可用性留待验证，避免仅凭型号记录作出承诺。"
         }
+      },
+      {
+        "title": {
+          "en": "Align terminology across Chinese sources",
+          "zh": "对齐中文资料中的术语"
+        },
+        "description": {
+          "en": "Documents about the same subject may use different terms for a concept or the same term for different meanings. Provide the source set and intended glossary scope, then map definitions and exceptions to their original passages. Through a verified available route, prepare an attributed terminology record without silently rewriting the source or resolving a substantive disagreement as a wording issue.",
+          "zh": "同一主题的文档可能用不同词表达同一概念，也可能让相同词语承担不同含义。提供资料范围和术语表目标，逐项对应定义、例外及原文位置。在确认可用的路径中整理带出处的术语记录，不静默改写来源，也不把实质分歧当作措辞问题消除。"
+        }
       }
     ]
   },

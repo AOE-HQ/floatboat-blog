@@ -266,6 +266,16 @@
           "en": "Image work begins with intended use, visual content, dimensions, supplied brand assets, and revision requirements. Choose the appropriate drawing workflow, compare previews against the brief, and revise the mismatches. Deliver the visual assets with concrete revision notes rather than treating the first generated image as the final result.",
           "zh": "图像任务需要说明用途、画面内容、尺寸、已有品牌素材和修改要求。使用适合的绘图流程生成预览，对照简报检查差异，再进行针对性调整。交付视觉素材时保留具体修改意见，不把首次生成的图片直接当作最终成果。"
         }
+      },
+      {
+        "title": {
+          "en": "Design recovery after a tool failure",
+          "zh": "设计工具失败后的恢复流程"
+        },
+        "description": {
+          "en": "A multistep agent task needs a clear response when a tool returns an error or incomplete evidence. Supply the intended action, observed result, and approval rules, then compare retry, investigation, and stop conditions. The recovery plan should preserve task state and human decisions instead of allowing an unsuccessful call to trigger an unbounded sequence of actions.",
+          "zh": "多步骤 Agent 任务需要明确处理工具错误或证据不完整的情况。提供预期动作、实际返回和批准规则，比较重试、继续调查及停止条件。恢复方案保留任务状态和人工决定，避免一次失败调用引发没有边界的后续行动。"
+        }
       }
     ]
   },

@@ -177,6 +177,16 @@
           "en": "Several small code edits can share a queue without becoming one unbounded assignment. State the acceptance rule for each change, check relevant diffs independently, and identify dependencies between items. Deliver individually reviewable changes with their checks so one successful edit does not conceal an unresolved neighboring task.",
           "zh": "多项小型代码修改可以放在同一队列，但每项仍需有明确的处理范围和验收要求。分别检查差异与相关验证结果，识别不同修改之间的依赖。交付时保留独立的审阅单位，避免某一项成功掩盖相邻任务仍未解决的问题。"
         }
+      },
+      {
+        "title": {
+          "en": "Investigate a boundary-heavy parser",
+          "zh": "调查边界复杂的解析逻辑"
+        },
+        "description": {
+          "en": "A parser or validator may fail only when several otherwise ordinary input conditions occur together. Provide the grammar or rules, failing examples, and expected errors, then trace how each boundary is handled. Ask for a causal explanation and focused tests that distinguish valid, invalid, and ambiguous cases before accepting a repair.",
+          "zh": "解析器或验证器可能只在多种普通输入条件组合时失败。提供语法或规则、失败样例和期望错误，逐步追踪各个边界怎样被处理。修复前先要求因果解释及针对性测试，区分有效、无效和含糊输入，避免用一个特殊分支掩盖整体规则问题。"
+        }
       }
     ]
   },

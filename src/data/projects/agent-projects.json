@@ -62,6 +62,10 @@
           {
             "title": "An agent in your own workspace",
             "description": "An application that owns its business context and permitted operations needs an integration surface that fits that responsibility. Compare the documented CLI, SDK, and app-server interfaces against the task entry points and context sources. Choose a candidate and define a minimal compatibility test before committing to the integration."
+          },
+          {
+            "title": "Bound investigation before modification",
+            "description": "A repository task may need broad reading but only a narrow set of permitted edits. Use Codex's controlled tool-loop design as a reference for separating those stages, with explicit evidence required before moving from investigation to action. Describe the review point in your own workflow and test the boundary rather than assuming a model choice alone restricts what the runtime can do."
           }
         ]
       },
@@ -156,6 +160,10 @@
           {
             "title": "自己的工作空间中的 Agent",
             "description": "如果自有应用需要掌握业务上下文和允许执行的操作，应根据这些职责选择集成方式。对照任务入口、可用操作与资料来源，比较官方文档中的 CLI、SDK 和 app-server 接口，再通过最小兼容性测试验证候选方案，而不是直接假定它适合现有环境。"
+          },
+          {
+            "title": "区分只读调查与允许修改",
+            "description": "仓库任务可能需要较广阅读，却只允许修改很小范围。可以参考 Codex 的受控工具循环划分阶段，明确从调查进入行动前需要什么证据。在自己的工作流中设计审阅节点并验证边界，不假定仅仅选择某个模型就能限制运行时可执行的操作。"
           }
         ]
       },
@@ -268,6 +276,10 @@
           {
             "title": "A controlled workflow experiment",
             "description": "A preview-stage runtime should first be assessed with a small composition and representative inputs. Limit the capability set, define acceptable failure behavior, and record what actually happens. Use that experiment to decide whether recurring work has enough evidence for adoption or should remain on hold."
+          },
+          {
+            "title": "Assess an extension upgrade",
+            "description": "A changed plugin version can affect more than its own installation step when other capabilities depend on its input and output. Compare the current contract and representative behavior with the proposed version before updating a composition. Record incompatible assumptions and the checks needed for dependent stages, keeping a preview runtime's change risk visible rather than treating the upgrade as a routine replacement."
           }
         ]
       },
@@ -368,6 +380,10 @@
           {
             "title": "可控的工作流实验",
             "description": "预览阶段的运行时应先通过小规模能力组合验证。限定能力范围，提供代表性输入和可接受的失败行为，记录实际运行表现。根据这次实验判断是否已有足够证据用于周期性工作，或仍需暂缓采用，避免直接将探索结果当作稳定能力。"
+          },
+          {
+            "title": "评估扩展升级的影响",
+            "description": "插件版本变化可能影响其他能力依赖的输入输出，不只是安装步骤。更新组合前，将当前约定和代表行为与拟议版本比较，记录不兼容假设及下游需要的检查。保留预览运行时的变化风险，避免将升级当作无需重新验证的常规替换。"
           }
         ]
       },
@@ -489,6 +505,10 @@
           {
             "title": "Team messages with a clear outcome",
             "description": "A message-triggered workflow needs approved channels, permitted requesters, and a clear destination for results. Define the trigger, authorization, assignment, and return path before borrowing that handoff pattern for work organized in Floatboat. Check connection requirements separately rather than assuming the channel is already integrated."
+          },
+          {
+            "title": "Review execution boundaries before enabling work",
+            "description": "The router and worker environment should be assessed alongside requester rules and inferred-task handling. Read the current runtime prerequisites and identify which account, repository, and operating-system permissions the prototype would use. Keep observation settings, execution authorization, and machine isolation distinct, then decide which bounded experiment is acceptable before allowing the system to act on real repository requests."
           }
         ]
       },
@@ -591,6 +611,10 @@
           {
             "title": "把团队消息变为交付目标",
             "description": "由消息触发的工作流，需要明确允许的频道、请求人和结果返回位置。先定义触发、授权、任务分配和交付链路，再将这种交接方式借鉴到 Floatboat 中组织的工作。连接要求应独立核验，不能因为流程相似就假定已有内置集成。"
+          },
+          {
+            "title": "启用任务前审阅执行边界",
+            "description": "路由和工作进程的环境，需要与请求者规则及推断任务处理一起检查。依据当前运行前提，明确原型使用哪个账号、仓库和操作系统权限。将观察设置、执行授权及机器隔离分开，再决定可以接受哪种限定实验，之后才考虑真实仓库请求。"
           }
         ]
       },
@@ -710,6 +734,10 @@
           {
             "title": "A custom agent component",
             "description": "A business workflow with its own model interface or execution boundaries can use Pi's library structure as a design reference. Map the required provider behavior and business interfaces to those responsibilities, then identify the adapters you would need. Keep the component design grounded in the environment you actually own."
+          },
+          {
+            "title": "Define the host's permission policy",
+            "description": "A minimal agent core does not determine which files, processes, or services it may access in your environment. Use Pi's lack of a built-in permission system as an explicit design constraint when planning the host. Document allowed operations and review points, then test representative boundaries without mistaking package separation or clear instructions for enforced execution controls."
           }
         ]
       },
@@ -810,6 +838,10 @@
           {
             "title": "定制 Agent 组件",
             "description": "业务工作流需要自有模型接口或执行边界时，可以参考 Pi 的库职责进行设计。将模型提供方约束、业务接口和执行要求逐项对应，识别必须补充的适配器。组件方案应围绕实际掌握的环境展开，而不是直接照搬另一套运行方式。"
+          },
+          {
+            "title": "为宿主定义权限策略",
+            "description": "精简 Agent 核心并不能决定它在当前环境可以访问哪些文件、进程或服务。规划宿主时，需要将 Pi 不提供内置权限系统作为明确约束。记录允许操作和审阅节点，再测试代表性边界，不把包的分层或指令清楚误当成已经强制执行的控制。"
           }
         ]
       },
@@ -929,6 +961,10 @@
           {
             "title": "A task-specific development tool",
             "description": "A project's existing checks or external development systems may need a task-specific extension. Compare the documented interfaces with the available commands, API requirements, and permitted access. Assess compatibility first, then run one bounded tool-call test to establish what the proposed connection can actually do."
+          },
+          {
+            "title": "Separate model access from tool permissions",
+            "description": "Choosing a model provider and granting an agent access to repository tools solve different problems. Compare OpenCode's model-service boundary with the environment where commands and edits occur, using your task's actual access requirements. Prepare a plan that states both sets of prerequisites so an authenticated model connection is not treated as approval for every available tool action."
           }
         ]
       },
@@ -1023,6 +1059,10 @@
           {
             "title": "面向任务的开发工具",
             "description": "项目已有检查命令或外部开发系统可能需要专用扩展。将公开接口与现有命令、API 要求和允许的访问范围进行比较，先评估兼容性，再执行一次范围受限的工具调用测试，用实际结果说明拟议连接能够处理什么。"
+          },
+          {
+            "title": "分开核对模型与工具权限",
+            "description": "选择模型提供方和允许 Agent 使用仓库工具，是两类不同问题。结合任务实际访问要求，对照 OpenCode 的模型服务边界及命令、编辑发生的环境。方案同时写明两类前提，不把模型连接已经认证理解为所有可用工具动作都已获准。"
           }
         ]
       },
@@ -1135,6 +1175,10 @@
           {
             "title": "A task resumed later",
             "description": "Resuming a task later requires the decisions and evidence that determine the next action. Extract those essentials from the paused state and leave unrelated conversation history out. A concise continuation record should let the next session understand what is settled, what remains open, and where the supporting evidence lives."
+          },
+          {
+            "title": "Revisit knowledge after its sources change",
+            "description": "A reusable method may depend on a source, condition, or decision that is no longer current. Compare the retained task knowledge with the changed material and identify which assumptions need review. Use Hermes Agent as a reference for continuity, while defining who accepts updates and how obsolete guidance is distinguished from the version that future tasks should follow."
           }
         ]
       },
@@ -1229,6 +1273,10 @@
           {
             "title": "稍后继续的任务",
             "description": "稍后继续任务时，最重要的是决定下一步行动的既有决定和证据。围绕暂停状态提取这些必要信息，排除无关对话历史。续接记录应让下一个会话理解哪些事项已经确定、哪些仍待处理，以及支持判断的资料在哪里。"
+          },
+          {
+            "title": "来源变化后复核已有知识",
+            "description": "可复用方法可能依赖已经过时的来源、条件或决定。将保留的任务知识与新材料对照，标明需要重新审阅的假设。参考 Hermes Agent 的连续性思路时，也要约定由谁接受更新，以及如何区分旧指引和后续任务真正应该采用的版本。"
           }
         ]
       },
@@ -1341,6 +1389,10 @@
           {
             "title": "A consistent context handoff",
             "description": "A workflow spanning an editor, workspace, and agent process needs a clear context contract between them. Use the interface–runtime separation to map workspace paths and task information to the execution process. Verify the ACP or other interface handoff rather than assuming a client supports the required behavior natively."
+          },
+          {
+            "title": "Evaluate a lifecycle check before adoption",
+            "description": "A hook or plugin intended to inspect a consequential step needs its own bounded trial. Compare the maintained Kimi Code documentation with the surrounding runtime and describe what the check receives, returns, and does when it cannot decide. Verify that its feedback reaches the main workflow without assuming that merely installing an extension creates the approval policy your project requires."
           }
         ]
       },
@@ -1441,6 +1493,10 @@
           {
             "title": "一致的上下文交接",
             "description": "跨编辑器、工作区和 Agent 进程的任务，需要清楚的上下文传递约定。参考界面与运行时分离的方式，将工作区路径和任务资料对应到执行进程。对 ACP 或其他接口进行实际核验，不假定客户端天然支持所需的全部行为。"
+          },
+          {
+            "title": "采用生命周期检查前先试验",
+            "description": "用于检查重要步骤的钩子或插件，本身也需要范围明确的试验。对照当前 Kimi Code 文档及外围运行环境，说明检查接收什么、返回什么，以及无法判断时如何处理。验证反馈能够回到主流程，不假定安装扩展就已经建立项目需要的批准策略。"
           }
         ]
       },
@@ -1559,6 +1615,10 @@
           {
             "title": "A workflow across interfaces",
             "description": "When a task appears through desktop, web, and terminal interfaces, decide which layer owns state and which performs execution. Map the shared task information and the responsibilities of each entry point, then check consistency between them. Multiple views should not silently become competing versions of the same work."
+          },
+          {
+            "title": "Map where task information is processed",
+            "description": "A desktop interface can present work whose data or execution crosses another service boundary. Use ZCode's project notice and source as references to identify what is local, what is remote, and which component receives each piece of context. Apply that map to your own workspace design before providing sensitive material or deciding how approvals should accompany the execution path."
           }
         ]
       },
@@ -1659,6 +1719,10 @@
           {
             "title": "跨入口的工作流",
             "description": "同一任务同时出现在桌面、网页或终端时，需要明确状态由哪一层维护、执行由哪一层负责。梳理不同入口共享的任务信息和各自职责，并核对它们的一致性，避免多个界面逐渐维护出互相冲突的工作版本。"
+          },
+          {
+            "title": "梳理任务信息的处理位置",
+            "description": "桌面界面展示的工作，可能涉及另一个服务边界中的数据或执行。参考 ZCode 项目说明和源码，区分哪些在本地、哪些在远端，以及各部分背景由哪个组件接收。将这张路径图用于自己的工作空间设计，再决定资料范围和批准怎样伴随执行过程。"
           }
         ]
       },
@@ -1778,6 +1842,10 @@
           {
             "title": "Reduce a sprawling implementation",
             "description": "When an implementation grows beyond its requirement, compare each abstraction with the behavior it actually serves. Remove speculative branches while retaining validation and error handling for real invalid inputs. The leaner design should remain accountable to those examples rather than pursue fewer lines at the expense of required behavior."
+          },
+          {
+            "title": "Make deferred work explicit at handoff",
+            "description": "Keeping an implementation small can leave useful ideas outside the accepted scope. Record what was intentionally deferred, why the current requirements do not need it, and which behavior has actually been checked. Ponytail's emphasis on visible deferred work can inform that handoff, preventing a reviewer from mistaking a deliberate boundary for an unnoticed omission or a promise of unfinished functionality."
           }
         ]
       },
@@ -1878,6 +1946,10 @@
           {
             "title": "收敛不断膨胀的实现",
             "description": "实现不断膨胀时，将每个抽象层与它真正服务的需求进行比较。移除推测性分支，同时保留处理真实无效输入的验证与错误逻辑。简化后的方案仍要通过这些样例检查，不能为了减少代码而损失必要行为。"
+          },
+          {
+            "title": "交接时说明有意暂缓的工作",
+            "description": "保持实现精简，可能意味着部分有价值的想法没有进入已接受范围。记录哪些内容有意暂缓、当前需求为什么不需要它，以及哪些行为真正经过检查。借鉴 Ponytail 对暂缓事项可见性的重视，让审阅者区分明确边界、意外遗漏和并未承诺的未完成功能。"
           }
         ]
       },
@@ -1996,6 +2068,10 @@
           {
             "title": "Reuse an established team playbook",
             "description": "A team playbook can package reviewed roles and instructions for another environment. Include what the receiving team needs to understand the method, then reconnect services and approve execution there. Keep existing credentials out of the package so reusable task knowledge does not carry one environment's access into another."
+          },
+          {
+            "title": "Inspect a portable team package",
+            "description": "Before reusing a team playbook in another environment, examine the roles, instructions, references, and any included task material. Identify which services need fresh connections and which actions still require consent from the receiving user. Keep credentials and machine access out of the assumed handoff so the reusable package transfers a reviewed method rather than one environment's authority."
           }
         ]
       },
@@ -2090,6 +2166,10 @@
           {
             "title": "复用已经跑通的团队方法",
             "description": "团队工作手册可以将已审阅的角色与指令打包给另一个环境使用。交付理解方法所需的资料后，在接收端重新连接服务并确认执行权限。包中不携带原环境凭据，使可复用的是任务知识，而不是跨环境转移的访问权限。"
+          },
+          {
+            "title": "检查可移植团队包的内容",
+            "description": "在另一个环境复用团队手册前，检查角色、指令、引用和随附任务资料。明确哪些服务需要重新连接，哪些行动仍需接收方同意。交接不能默认携带凭据或机器访问，让可复用包转移的是已审阅方法，而不是原环境的权限。"
           }
         ]
       },
@@ -2202,6 +2282,10 @@
           {
             "title": "Embed control in an existing runtime",
             "description": "An agent runtime that already owns planning and task context can compare CLI calls with the C library as desktop-control interfaces. Map the needed calls to existing permissions and runtime boundaries. Keep approval decisions and verification of the resulting desktop state in the surrounding workflow, regardless of the adapter chosen."
+          },
+          {
+            "title": "Diagnose an unsuccessful desktop action",
+            "description": "A failed control call may reflect an inaccessible target, changed application state, or an unmet platform condition. Inspect the returned error and current observation before retrying, then compare the result with the target application's actual state. Keep any permission change or approval decision in the surrounding workflow instead of treating repeated calls as a substitute for understanding the failure."
           }
         ]
       },
@@ -2296,6 +2380,10 @@
           {
             "title": "为既有运行层补充桌面能力",
             "description": "已有规划和任务上下文的 Agent 运行时，可以将 CLI 调用与 C 库作为桌面控制接口进行比较。把所需操作对应到现有权限和运行边界，并将批准判断与桌面结果验证保留在外围工作流中，不因选用某种适配器而省略。"
+          },
+          {
+            "title": "调查未成功的桌面动作",
+            "description": "控制调用失败，可能与目标不可访问、应用状态变化或平台条件未满足有关。重试前检查返回错误和当前观察，再对照目标应用的实际状态判断原因。权限调整和批准仍交给外围工作流处理，不用反复调用代替对失败机制的理解。"
           }
         ]
       },
@@ -2408,6 +2496,10 @@
           {
             "title": "Reuse a reviewed production recipe",
             "description": "A reviewed workflow JSON is only part of a reusable production recipe. Package the custom nodes, model dependencies, representative inputs, and acceptance images before handing it to another machine or collaborator. Those materials make the expected output and the environment needed to reproduce it visible together."
+          },
+          {
+            "title": "Review dependencies before adopting a graph",
+            "description": "A shared workflow may rely on custom nodes, model weights, or external services that are not present in the receiving environment. Inspect those requirements and their stated terms before running the graph, then test a representative input under the intended setup. Keep dependency and output checks together so a portable workflow file is not mistaken for a self-contained production environment."
           }
         ]
       },
@@ -2508,6 +2600,10 @@
           {
             "title": "复用已验证的制作方法",
             "description": "经过验证的工作流 JSON 只是复用生产方案的一部分。交接给其他电脑或协作者前，还需整理自定义节点、模型依赖、代表性输入和参考验收图。将预期效果与复现它所需的环境一起说明，便于接收者核对条件和结果。"
+          },
+          {
+            "title": "采用工作流前核对依赖",
+            "description": "共享流程可能依赖接收环境中没有的自定义节点、模型权重或外部服务。运行前检查这些要求和各自条款，再在目标配置下测试代表输入。将依赖与输出检查放在一起，避免把可移植工作流文件误当成已经自带全部条件的制作环境。"
           }
         ]
       },
@@ -2626,6 +2722,10 @@
           {
             "title": "Connect code to its design notes",
             "description": "Connecting design notes to code requires both sources in the same investigation. Map design claims to implementation locations, checking the files that establish actual behavior. Keep semantic graph inferences separate and mark evidence gaps so a plausible relationship is not reported as a verified implementation fact."
+          },
+          {
+            "title": "Check the provenance of a graph relation",
+            "description": "A useful connection in the graph may come from explicit code structure or a semantic inference. Inspect the relation's recorded origin and the cited material before using it to support an implementation claim. Keep inferred links as investigation leads when direct evidence is missing, and document what would need to be checked rather than presenting the graph itself as proof of behavior."
           }
         ]
       },
@@ -2726,6 +2826,10 @@
           {
             "title": "连接代码与设计说明",
             "description": "对照设计说明和代码时，将两类资料放入同一次调查，把设计主张对应到具体实现位置，并查看能够证实行为的文件。语义图推断需要单独说明，对证据缺口明确标记，避免把合理的关联直接报告为已经验证的实现事实。"
+          },
+          {
+            "title": "核验图中关系的来源",
+            "description": "图里的有用关联，可能来自明确代码结构，也可能来自语义推断。用它支持实现判断前，检查记录的来源及引用材料。缺少直接证据时，将推断连线保留为调查线索，并说明还需要核对什么，不把图谱本身当作行为已经成立的证明。"
           }
         ]
       },
@@ -2844,6 +2948,10 @@
           {
             "title": "Work on distinct repository areas",
             "description": "Parallel repository work needs separable ownership boundaries, shared-interface rules, and an integration owner. Allocate worktrees or branches by those boundaries and agree on merge order before changes overlap. Joint checks at integration should verify that individually valid contributions still work together."
+          },
+          {
+            "title": "Keep a failed parallel attempt bounded",
+            "description": "One agent's unsuccessful change should be assessed within its assigned files and revision rather than allowed to disturb unrelated work. Compare the branch result with the task brief, retain useful evidence, and decide separately whether to revise, defer, or discard that attempt. Use Orca's worktree coordination as a reference while keeping engine permissions and final integration decisions explicit."
           }
         ]
       },
@@ -2944,6 +3052,10 @@
           {
             "title": "并行处理不同仓库区域",
             "description": "并行修改仓库时，需要可分离的责任范围、共享接口规则和最终集成负责人。按这些边界分配工作区或分支，并提前约定合并顺序。集成阶段进行联合检查，确认各自成立的修改放在一起之后仍然能够正常协作。"
+          },
+          {
+            "title": "限定失败的并行尝试范围",
+            "description": "某个 Agent 的修改没有成功时，应在分配给它的文件与版本范围内评估，不影响其他无关工作。将分支结果与任务说明比较，保留有用证据，再分别决定修订、暂缓还是放弃。参考 Orca 的工作区协调时，仍需明确引擎权限和最终集成决定。"
           }
         ]
       },

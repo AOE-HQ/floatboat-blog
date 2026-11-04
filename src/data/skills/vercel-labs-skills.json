@@ -105,6 +105,16 @@
             "en": "Expensive work during frequent updates needs interaction recordings and profiling evidence. Inspect state placement, derived values, and re-render triggers before applying memoization throughout the component tree. Make a targeted adjustment, then repeat the original interaction to check both performance and behavior.",
             "zh": "组件频繁更新并重复执行高开销工作时，先查看交互记录和性能分析。检查状态位置、派生值与重新渲染的触发原因，再决定局部优化方式，避免到处添加记忆化。修改后复现原交互，同时核对性能变化和行为是否正确。"
           }
+        },
+        {
+          "title": {
+            "en": "Investigate repeated server-side work",
+            "zh": "检查重复的服务端工作"
+          },
+          "description": {
+            "en": "A route can repeat data preparation or computation even when the visible page renders correctly. Inspect the server-side path and request boundaries to identify where work is duplicated, then compare a focused reuse or scheduling change with the original behavior. Preserve freshness and access requirements, and measure the same request before treating less repeated work as a verified improvement.",
+            "zh": "页面显示正确时，路由内部也可能重复准备数据或计算。沿服务端路径与请求边界定位重复位置，再将限定的复用或调度调整与原行为比较。保留时效和访问要求，并使用相同请求测量，不能只看到工作次数减少就认定优化已经有效。"
+          }
         }
       ]
     },
@@ -342,6 +352,16 @@
           "description": {
             "en": "A component library should expose the flexibility its real consumers need without requiring them to reimplement internal logic. Compare layout requirements with compound parts and explicit variants, then define a bounded composition API. Include correct and incorrect examples so consumers can distinguish supported assembly from accidental misuse.",
             "zh": "组件库应满足真实使用方的布局需求，同时避免让它们重写内部逻辑。结合复合部件和明确变体，设计有边界的组合接口，并给出正确与错误样例。使用方可以据此区分受支持的拼装方式和无意中绕过组件约定的用法。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check patterns against the React version",
+            "zh": "核对组合模式的 React 版本要求"
+          },
+          "description": {
+            "en": "A composition recommendation may depend on React APIs that differ from those used by the project. Establish the current React and framework versions before adopting version-specific guidance, then compare the affected callers and supported interfaces. Keep compatible patterns separate from proposals that require an upgrade, and validate behavior before widening the migration.",
+            "zh": "组合建议可能依赖与当前项目不同的 React API。采用特定版本指引前，确认 React 和框架版本，再比较受影响调用方与受支持接口。将兼容模式和需要升级的提案分开，先验证行为，避免在迁移中静默增加版本前提。"
           }
         }
       ]
@@ -581,6 +601,16 @@
             "en": "A screen that differs between iOS and Android needs both sets of screenshots, device sizes, and native settings. Check safe areas, navigation, images, fonts, and platform APIs rather than carrying web-layout assumptions across unchanged. Verify the platform-specific cause and the corrected behavior on each affected side.",
             "zh": "同一界面在 iOS 与 Android 表现不同时，提供两端截图、设备尺寸和原生设置。分别检查安全区域、导航、图片、字体及平台 API，避免直接套用网页布局假设。找到平台特有原因后，在受影响的两端核对修改结果。"
           }
+        },
+        {
+          "title": {
+            "en": "Check native dependencies in a monorepo",
+            "zh": "检查 Monorepo 中的原生依赖"
+          },
+          "description": {
+            "en": "A React Native application inside a monorepo can depend on packages configured differently across the workspace. Compare native dependency placement and package versions with the Skill’s monorepo rules, then identify mismatches before changing the setup. Keep the proposed correction bounded and verify the affected application under its actual platform configuration rather than assuming that a shared JavaScript package guarantees compatible native dependencies.",
+            "zh": "Monorepo 中的 React Native 应用，可能受到工作区内不同依赖配置影响。对照该 Skill 的规则，检查原生依赖放置位置与包版本，先找出不一致再提出修改。限定修正范围，并在应用真实平台配置下验证，不假定共享 JavaScript 包就能保证原生依赖兼容。"
+          }
         }
       ]
     },
@@ -818,6 +848,16 @@
           "description": {
             "en": "Content arriving after Suspense can benefit from a restrained reveal, but every refresh does not need the same animation. Inspect boundaries, placeholders, and refresh triggers, then distinguish initial arrival from background updates. Include reduced-motion behavior so the transition rules remain appropriate across user preferences.",
             "zh": "Suspense 后到达的内容可以使用克制的出现动效，但不需要每次刷新都重复播放。检查边界、占位内容和刷新触发条件，区分首次揭示与后台更新，并考虑减少动态效果的偏好，使过渡规则适合不同使用者。"
+          }
+        },
+        {
+          "title": {
+            "en": "Keep the flow usable with reduced motion",
+            "zh": "保证减少动画时仍然可用"
+          },
+          "description": {
+            "en": "Navigation and content relationships still need to make sense when a person prefers reduced motion or a transition is unavailable. Compare the animated and non-animated paths, including focus and return navigation, without making motion the only signal that an action succeeded. Record the required behavior first, then treat the visual transition as a supporting part of the interface.",
+            "zh": "使用者偏好减少动态效果，或过渡不可用时，导航及内容关系仍应清楚。比较有动画和无动画路径，包括焦点与返回导航，不让运动成为动作成功的唯一信号。先记录必要行为，再把视觉过渡作为辅助界面的一部分。"
           }
         }
       ]
@@ -1057,6 +1097,16 @@
             "en": "A pre-release UI review should be bounded by the new page's diff, shared components, and acceptance interactions. Map each finding to the relevant code owner, then check representative interactions after fixes. This keeps the review actionable without silently turning one page's release into a redesign of unrelated screens.",
             "zh": "新页面发布前的界面检查，应限定到本次差异、涉及的共享组件和验收交互。将发现对应到相关代码负责人，修复后检查代表性操作。保持结果可执行，也避免把单页发布检查静默扩展成其他页面的重新设计。"
           }
+        },
+        {
+          "title": {
+            "en": "Review loading and empty-state feedback",
+            "zh": "检查加载与空状态反馈"
+          },
+          "description": {
+            "en": "A page needs to explain what is happening when data is delayed, absent, or cannot be submitted. Inspect the relevant states and controls in both code and the rendered interface, checking whether feedback leads to a useful next action. Report concrete locations and behavior instead of prescribing decorative changes that do not address the user's uncertainty.",
+            "zh": "数据延迟、缺失或无法提交时，页面需要说明当前发生了什么。结合代码和渲染界面检查相关状态与控件，判断反馈能否引导下一步有效行动。报告定位具体行为，不以无法消除用户疑问的装饰调整代替问题修复。"
+          }
         }
       ]
     },
@@ -1295,6 +1345,16 @@
             "en": "A release note should explain verified behavior changes and their effect on users. Compare the draft with the release diff, replacing vague adjectives and phrases that obscure what changed. Keep unverified claims separate so the published explanation does not promise improvements the evidence cannot establish.",
             "zh": "更新说明应讲清已验证的行为变化及其对用户的影响。将草稿与发布差异对照，改写空泛形容和掩盖实际改动的表达。尚未核实的说法单独保留，避免对外说明承诺证据无法支持的改进。"
           }
+        },
+        {
+          "title": {
+            "en": "Align terminology across related documents",
+            "zh": "统一关联文档中的术语"
+          },
+          "description": {
+            "en": "A tutorial, API reference, and release note may describe the same feature with conflicting terms. Compare those expressions against confirmed names and behavior, then propose wording that keeps the reader's understanding consistent. Preserve genuine differences in conditions or meaning rather than making every phrase identical, and do not silently rename code or product concepts during an editorial revision.",
+            "zh": "教程、API 参考和更新说明，可能用相互冲突的词描述同一功能。对照已确认名称与行为提出修订，让读者理解保持一致，同时保留条件或含义上的真实差别。文字调整不应静默改变代码命名，也不应为了统一表达而消除产品概念区别。"
+          }
         }
       ]
     },
@@ -1500,8 +1560,8 @@
         "zh": "Deploy to Vercel Skill的使用场景"
       },
       "description": {
-        "en": "Preview sharing, uncertain project links, and multiple teams create different deployment risks. These scenarios show how Deploy to Vercel establishes the intended branch, project, and organization before an authorized preview is built and inspected.",
-        "zh": "预览链接只有对应正确分支、项目和团队，才适合拿来审阅。Deploy to Vercel 可以围绕这些目标核对关联，在授权范围内构建预览，并验证返回页面的实际内容。"
+        "en": "Preview builds and explicitly requested production releases both need a confirmed project and team. Deploy to Vercel distinguishes those scopes before execution, with local links, authorization, and the returned destination checked against the intended release.",
+        "zh": "预览构建和明确要求的生产发布，都需要确认目标项目与团队。Deploy to Vercel 区分两类范围，在执行前核对本地关联与授权，并检查返回目标是否对应预期发布。"
       },
       "items": [
         {
@@ -1532,6 +1592,16 @@
           "description": {
             "en": "An account with several Vercel teams needs an explicit deployment context. Confirm the intended team or use the linked project's organization ID, then verify the target project within that scope. Keep deployment records tied to the confirmed organization so account availability does not become permission to use an arbitrary team.",
             "zh": "账号下有多个 Vercel 团队时，需要明确部署上下文。确认目标团队，或使用关联项目的组织 ID，再核对该范围内的项目。部署记录应对应到已经确认的组织，不能因为账号可以访问多个团队就任意选择其中一个。"
+          }
+        },
+        {
+          "title": {
+            "en": "Prepare an explicitly requested production release",
+            "zh": "准备明确要求的生产发布"
+          },
+          "description": {
+            "en": "A production deployment requires an explicit request rather than an assumption based on a successful preview. Confirm the intended branch, project, team, and release scope before selecting the documented route, including approval for a Git push where that path requires it. Verify the returned production destination and relevant pages afterward, keeping deployment evidence separate from permission to publish.",
+            "zh": "生产部署需要明确请求，不能由一次预览成功自动推断。选择原始说明中的路径前，确认分支、项目、团队和发布范围；使用需要推送代码的 Git 路径时，保留相应批准。完成后检查生产目标和相关页面，让部署证据与允许发布的授权分别成立。"
           }
         }
       ]
@@ -1771,6 +1841,16 @@
             "en": "Credential handling should be reviewed in the scripts, logging settings, and places where values are passed. Replace pasted tokens with the approved environment mechanism and inspect possible exposure through commands, logs, or review comments. Check the revised path afterward so removing one visible value does not leave another disclosure route behind.",
             "zh": "检查凭据处理时，需要同时查看脚本、日志设置和传值位置。将粘贴的 token 替换为批准的环境引用方式，排查命令、日志和审阅评论中的泄露路径。调整后再次核对，避免只清除一个可见值，却留下其他暴露入口。"
           }
+        },
+        {
+          "title": {
+            "en": "Diagnose access after authentication",
+            "zh": "排查认证成功后的访问问题"
+          },
+          "description": {
+            "en": "A command may authenticate successfully yet fail for the intended project or operation. Compare the observed response with the confirmed project, organization, and approved credential scope without exposing the token value. Identify which condition remains unverified and propose the next check, rather than widening access or switching targets simply to make the command succeed.",
+            "zh": "命令可能通过身份认证，却无法操作目标项目。将实际响应与已确认的项目、组织和批准凭据范围对照，同时不暴露 token 值。说明哪项条件仍未验证并提出下一检查，不为让命令成功就扩大权限或任意更换目标。"
+          }
         }
       ]
     },
@@ -2009,6 +2089,16 @@
             "en": "A cache proposal must account for current hit patterns, framework behavior, and the content's freshness requirements. Compare ISR, middleware, or response-cache changes only after those conditions are understood. Explain invalidation risks and recheck both cache hits and content updates so lower usage does not hide stale results.",
             "zh": "提出缓存调整前，需要了解当前命中情况、框架行为和内容时效要求，再比较 ISR、中间件或响应缓存等修改。说明失效风险，并同时检查命中与内容更新结果，避免使用量降低的同时产生过期内容。"
           }
+        },
+        {
+          "title": {
+            "en": "Establish a baseline for the next change",
+            "zh": "为下一次优化建立基线"
+          },
+          "description": {
+            "en": "Before accepting a proposed optimization, agree on the route, time window, workload, and freshness conditions that will be compared. Retain the current measurements and link them to the relevant deployment. The later review can then judge whether cost or latency changed under comparable conditions, rather than attributing every movement in the dashboard to the most recent code edit.",
+            "zh": "接受优化方案前，先约定将要比较的路由、时间窗口、工作负载和时效条件，保留当前测量并关联到相关部署。后续审阅才能判断成本或延迟是否在可比条件下变化，而不是把看板上的每次波动都归因于最近一次代码修改。"
+          }
         }
       ]
     },
@@ -2246,6 +2336,16 @@
           "description": {
             "en": "An Electron target needs its application entry point, intended window, and the interactions to inspect established first. Use the CLI's dedicated Electron guidance to select the app-specific connection method. Verify behavior through that route rather than assuming an ordinary browser session controls the intended application window.",
             "zh": "目标是 Electron 应用时，先确认应用入口、目标窗口和待检查交互，按照 CLI 的专门指引选择对应连接方式。通过这条应用路径验证行为，不假定普通浏览器会话已经控制了真正需要检查的窗口。"
+          }
+        },
+        {
+          "title": {
+            "en": "Verify a saved form result",
+            "zh": "核对表单保存后的结果"
+          },
+          "description": {
+            "en": "A permitted form task should be checked after entry, not just after a click or a successful command response. Observe the current controls, submit only within the authorized test scope, and read back the displayed or saved values. If the page state changes, obtain fresh evidence before continuing so stale element references do not cause an action on the wrong record.",
+            "zh": "已获准的表单任务，需要在录入后核对，不能只看点击或命令是否成功。观察当前控件，在授权测试范围内提交，再读回显示或保存的数值。页面变化后重新获取证据，避免沿过期元素引用继续，导致操作落在错误记录上。"
           }
         }
       ]

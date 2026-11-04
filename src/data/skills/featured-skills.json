@@ -105,6 +105,16 @@
             "en": "A report or document task can benefit from Skills selected by the intended deliverable format. Start with the source material and editing requirements, then compare document processing, writing, or conversion instructions. Shortlist candidates by what they cover and depend on instead of choosing solely because a title matches the topic.",
             "zh": "准备报告或文档时，可以按目标交付格式寻找 Skills。提供源材料和编辑要求，比较文档处理、写作规范或格式转换指引，再根据覆盖能力及依赖筛选候选项。不要只因为标题与主题接近，就默认它适合当前交付任务。"
           }
+        },
+        {
+          "title": {
+            "en": "Compare overlapping candidate instructions",
+            "zh": "比较用途重叠的候选指引"
+          },
+          "description": {
+            "en": "Several search results may appear to solve the same task while requiring different tools or covering different stages. Compare their original instructions, expected inputs, and maintenance sources before selecting one. Keep the choice tied to the current deliverable, and avoid installing several overlapping packages merely because their names match the same keyword.",
+            "zh": "多个搜索结果可能看起来解决同一任务，却依赖不同工具或覆盖不同阶段。选择前比较原始指令、预期输入和维护来源，将决定对应到当前交付物。不要仅因为名称匹配同一关键词，就同时安装多套职责重叠的包。"
+          }
         }
       ]
     },

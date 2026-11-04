@@ -9,8 +9,8 @@ export function UseCasesSection({ title, description, items }: UseCases) {
         <h2 id="use-cases-title" className="font-serif text-3xl tracking-[-0.04em] sm:text-4xl">{title}</h2>
         <p className="mt-4 text-base leading-8 text-[var(--ob-color-text-subtle)]">{description}</p>
       </div>
-      <div className="grid gap-8 lg:grid-cols-3">
-        {items.map((item) => <article key={item.title} className="min-w-0">
+      <div className="grid gap-6 md:grid-cols-2">
+        {items.map((item) => <article key={item.title} className="min-w-0 rounded-2xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-6">
           <h3 className="break-words text-xl font-semibold">{item.title}</h3>
           <p className="mt-3 text-base leading-8 text-[var(--ob-color-text-subtle)]">{item.description}</p>
         </article>)}

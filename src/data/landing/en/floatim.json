@@ -69,6 +69,10 @@
       {
         "title": "Add agents to real collaboration",
         "description": "Bring an agent into a team workflow by defining which step it can contribute to and what material it needs. Review its draft or analysis, confirm the next owner, and retain human checkpoints for consequential external actions. An agent contribution should connect to the team's actual handoff process."
+      },
+      {
+        "title": "Reconnect a paused handoff",
+        "description": "When work pauses between team members, the project conversation should show the latest accepted result, open questions, and the next owner. Reassemble those essentials from the existing material before assigning another step. Keep decisions linked to their discussion so a new participant can continue without treating old suggestions as current approval."
       }
     ]
   },

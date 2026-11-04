@@ -156,6 +156,16 @@
           "en": "Before planning a task around a recorded Kimi model, compare its scale with the current client menu and route requirements. Check the model identifier and budget assumptions separately from actual access. Keep execution prerequisites and unconfirmed steps visible so a configuration record does not become an availability promise.",
           "zh": "围绕已记录的 Kimi 型号安排任务前，先比较任务规模、当前客户端菜单和调用路径要求。分别核对模型标识、预算假设与实际访问情况，明确执行前提和待确认步骤，避免把配置记录误写成已经可以使用的承诺。"
         }
+      },
+      {
+        "title": {
+          "en": "Build a source-location index",
+          "zh": "为长资料建立出处索引"
+        },
+        "description": {
+          "en": "Before a long review, map important claims, definitions, and evidence to their locations in the supplied material. Keep the original terminology and document relationships so later questions can return to the right passage. Use an available Kimi route only after checking access, and distinguish an index for navigation from a conclusion about the strength of the evidence.",
+          "zh": "正式审阅前，可以先将关键主张、定义和证据对应到材料中的位置。保留原有术语及文档关系，让后续问题能够找到正确段落。使用 Kimi 路径前仍需核对访问条件，并区分用于导航的索引与关于证据可靠程度的最终结论。"
+        }
       }
     ]
   },

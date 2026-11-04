@@ -127,6 +127,16 @@
             "en": "Repeatable video variants should use declared composition variables for titles and content. Define the required versions and delivery format, inspect representative combinations, and compare them with the rendered files. Keep the variable choices alongside verified exports so another run can reproduce the intended variation.",
             "zh": "重复制作视频版本时，通过已声明的合成变量调整标题或内容。明确需要哪些版本和交付格式，检查有代表性的组合，并与实际渲染文件对照。保留变量选择及已验证导出结果，方便后续复现对应版本。"
           }
+        },
+        {
+          "title": {
+            "en": "Prepare a reusable branded scene",
+            "zh": "准备可复用的品牌场景"
+          },
+          "description": {
+            "en": "Repeated video work can begin with an agreed scene built from supplied brand assets and appropriate reusable visual blocks. Define which text, media, and timing choices may vary before using it as a production starting point. Review a representative frame sequence and preview, keeping the scene's assumptions visible so later variants do not inherit an unchecked layout or missing asset.",
+            "zh": "重复视频任务可以从已确认场景开始，使用提供的品牌素材和适合的可复用视觉模块。先明确哪些文字、媒体和时间选择允许变化，再将它作为制作起点。检查代表帧序列及预览，并保留场景假设，避免后续版本继承未经核对的版面或缺失素材。"
+          }
         }
       ]
     },

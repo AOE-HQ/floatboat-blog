@@ -45,7 +45,7 @@ def expected_sections():
                 sections[f'{prefix}/skills-marketplace/{data["author"]}/{data["slug"]}'] = copy['useCases']
     for route, section in sections.items():
         assert set(section) == {'title', 'description', 'items'}, route
-        assert section['items'] and section['title'].strip() and section['description'].strip(), route
+        assert len(section['items']) == 4 and section['title'].strip() and section['description'].strip(), route
         for item in section['items']:
             assert set(item) == {'title', 'description'}, route
             assert all(value.strip() for value in item.values()), route

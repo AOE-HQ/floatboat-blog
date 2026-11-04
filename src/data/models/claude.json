@@ -236,6 +236,16 @@
           "en": "When a failure crosses module boundaries, start with symptoms, reproduction steps, and the relevant logs. Trace calls and state transitions to test a root-cause hypothesis before making a fix. Rerun the original failing path afterward and retain the evidence that connects the change to the observed problem.",
           "zh": "故障跨越多个模块时，从症状、复现步骤和相关日志入手，沿调用关系与状态变化验证根因假设，再实施修复。修改后重新运行原来的失败路径，并保留验证记录，让修复与最初观察到的问题之间有明确的证据关联。"
         }
+      },
+      {
+        "title": {
+          "en": "Check implementation against a specification",
+          "zh": "逐项核对规格与实现"
+        },
+        "description": {
+          "en": "A feature can look complete while missing a condition spread across several requirements. Supply the specification, changed files, and relevant tests, then map each expected behavior to implementation evidence. Review gaps and ambiguous interpretations separately so the result is a source-grounded implementation assessment, rather than a general judgment that the code seems reasonable.",
+          "zh": "功能看起来完整，也可能遗漏分散在多处要求中的条件。提供规格、修改文件和相关测试，将每项预期行为对应到实现证据。缺失项和解释不明确的内容分别记录，形成有来源的实现核对，而不是只凭代码整体合理就认定需求已经完成。"
+        }
       }
     ]
   },

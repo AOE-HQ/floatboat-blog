@@ -69,6 +69,10 @@
       {
         "title": "Complete repeatable assignments",
         "description": "A proven assignment can be repeated with the current period's material and the changes that matter this time. Reuse the agreed task requirements and review criteria, then check the new report or client deliverable against them. Consistent expectations should not hide differences in the underlying records."
+      },
+      {
+        "title": "Revise a reviewed deliverable",
+        "description": "A reviewer may accept the overall direction while asking for changes to selected sections or assumptions. Give the coworker the current version, the specific feedback, and the content that must remain intact. Ask for a bounded revision and an explanation of what changed, then check the new work against the original brief and the latest comments."
       }
     ]
   },

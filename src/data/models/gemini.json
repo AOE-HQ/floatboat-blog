@@ -232,6 +232,16 @@
           "en": "Batch classification needs explicit categories, boundary rules, and labeled examples. Process the texts against those criteria, spot-check a sample, and retain ambiguous cases for review. Return classification results with exceptions and sample checks so volume does not hide where the rules need clarification.",
           "zh": "批量分类前，明确分类规则、类别边界和带标签的参考样本。按统一标准处理文本后抽查结果，将有歧义的记录单独保留。分类结果应同时包含例外情况和样本核验记录，让处理量增加时仍能看清规则需要补充的位置。"
         }
+      },
+      {
+        "title": {
+          "en": "Compare revisions of a source set",
+          "zh": "比较资料修订带来的变化"
+        },
+        "description": {
+          "en": "Updated documents can change a conclusion without changing the title of the project. Supply the earlier and current versions with the questions that matter, then trace additions, removed conditions, and conflicting statements to their locations. Keep confirmed changes separate from interpretation so the revision review can be checked against the actual material.",
+          "zh": "文档更新可能改变结论，即使项目名称仍然相同。提供前后版本和需要关注的问题，追踪新增内容、被删除条件及冲突说法，并定位到实际来源。已经确认的变化与进一步解释分别记录，让修订审阅能够回到原始材料核对。"
+        }
       }
     ]
   },

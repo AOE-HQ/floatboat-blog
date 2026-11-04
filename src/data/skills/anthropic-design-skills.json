@@ -119,6 +119,16 @@
             "en": "An existing page can take on a new visual direction while retaining its product content and functional constraints. Supply the current interface, known usability problems, and content that must survive the redesign. Compare representative before-and-after states to verify that the replacement solves the problem without losing required behavior.",
             "zh": "已有页面可以更新视觉方向，但不能丢失产品内容和功能约束。提供当前界面、已知可用性问题及必须保留的内容，作为重构边界。通过有代表性的前后状态对比，核对新设计是否解决问题，并保留必要行为。"
           }
+        },
+        {
+          "title": {
+            "en": "Extend an established design system",
+            "zh": "扩展已有设计系统"
+          },
+          "description": {
+            "en": "A new section or page may need to fit an interface that already has approved components and visual rules. Supply those references and the new user task, then compare what can be reused with what genuinely needs a new pattern. Check the implementation alongside neighboring screens so the addition belongs to the product without weakening its content or interaction requirements.",
+            "zh": "新增章节或页面可能需要延续已经批准的组件和视觉规则。提供现有参照及新用户任务，先比较哪些结构能够复用、哪些确实需要新模式。将实现与相邻界面一起检查，让新增内容属于同一产品，同时保留本次任务必须满足的内容和交互要求。"
+          }
         }
       ]
     },
@@ -354,6 +364,16 @@
           "description": {
             "en": "A Skill description should match realistic requests while excluding nearby tasks it does not handle. Compare actual user phrasing with positive and negative trigger examples, then narrow ambiguous wording. The resulting activation boundary should help the Skill appear for the intended work without being invoked for a merely related topic.",
             "zh": "Skill 描述需要匹配真实请求，也要排除内容接近却不属于其职责的任务。对照实际用户表达整理正反触发样例，收紧容易产生歧义的措辞。清楚的激活边界能够让 Skill 在合适的工作中出现，减少仅因话题相关而误触发。"
+          }
+        },
+        {
+          "title": {
+            "en": "Compare two instruction revisions",
+            "zh": "比较两版指令的实际效果"
+          },
+          "description": {
+            "en": "Two versions of a Skill should be assessed on the same representative requests rather than different demonstrations. Keep the expected behavior and evaluation criteria fixed, then examine where each revision succeeds, fails, or activates unnecessarily. Use the comparison to choose a change with evidence, preserving unresolved cases for another iteration instead of declaring the newer wording automatically better.",
+            "zh": "比较两版 Skill 时，应使用同一组代表请求，而不是分别挑选不同演示。保持预期行为与评估标准一致，检查各版本在哪些位置成功、失败或不必要地激活。依据结果选择有证据的修改，把未解决情况保留给下一轮，不默认更新的措辞就一定更好。"
           }
         }
       ]
@@ -591,6 +611,16 @@
             "en": "A PDF form needs its original fields, label mapping, and approved values inspected before filling. Follow the dedicated field instructions and check that values reach the intended labels in the saved document. Reopen the output and identify unsupported fields instead of treating a visually plausible form as verified.",
             "zh": "填写 PDF 表单前，先检查原始字段、标签对应关系和已批准的数值，按字段专用说明操作。保存后重新打开文件，核对内容是否落在正确标签下，并明确列出不受支持的字段，避免只凭外观相似就认定填写正确。"
           }
+        },
+        {
+          "title": {
+            "en": "Generate a paginated report",
+            "zh": "生成可核对分页的报告"
+          },
+          "description": {
+            "en": "Approved text, tables, and page requirements can be assembled into a new PDF rather than extracted from an existing one. Choose the documented generation path and make the required tools available, then inspect rendered pages for pagination, readable tables, and missing content. Verify the saved artifact against the source material before treating the report as ready to share.",
+            "zh": "已批准的文字、表格和页面要求可以用于生成新 PDF，而不只是从已有文件提取内容。选择原始说明中的生成路径，准备所需工具，再检查渲染页的分页、表格可读性和内容遗漏。保存成果应对照源材料核验后，再判断报告是否适合分享。"
+          }
         }
       ]
     },
@@ -826,6 +856,16 @@
           "description": {
             "en": "Reusing a Word template means fitting replacement content to its existing styles and page structure. Inspect repeated elements such as headers and footers alongside the new text, then check pagination in the output. A template-based document should preserve the useful conventions rather than merely resemble the original first page.",
             "zh": "复用 Word 模板时，将新内容适配到已有样式和页面结构，并同时检查页眉、页脚等重复元素。输出后核对分页及各类样式是否仍然有效，让文档真正继承模板中的规范，而不只是第一页看起来接近原文件。"
+          }
+        },
+        {
+          "title": {
+            "en": "Inspect layout after a long revision",
+            "zh": "检查长文修订后的版面"
+          },
+          "description": {
+            "en": "A change to one section can shift page breaks, tables, and repeated elements elsewhere in a Word document. Use the revised file and its original layout requirements to inspect representative rendered pages, not just the edited paragraph. Record unintended movement and correct it within the agreed scope while preserving unrelated text and comments.",
+            "zh": "Word 文档中一处章节变化，可能影响其他位置的分页、表格和重复元素。结合修订文件与原有版面要求，检查代表性渲染页，而不只看改过的段落。记录非预期位移并在约定范围内修正，同时继续保留无关正文和批注。"
           }
         }
       ]
@@ -1063,6 +1103,16 @@
             "en": "A slide template provides layouts rather than a guarantee that replacement content will fit. Apply the supplied brand and media constraints, then inspect dense slides, text overflow, and image placement using the actual material. Correct those problems before handing over a deck that depends on its real content.",
             "zh": "幻灯片模板提供的是布局，不保证任何替换内容都能直接放下。结合品牌和媒体约束填入真实资料后，检查内容密集页面、文字溢出与图片位置，修正拥挤和错位，再交付能够适配实际内容的演示文稿。"
           }
+        },
+        {
+          "title": {
+            "en": "Audit the evidence behind existing slides",
+            "zh": "核对已有幻灯片的证据"
+          },
+          "description": {
+            "en": "An existing deck may contain conclusions whose sources are no longer obvious after several revisions. Compare slide claims, chart values, and notes with the approved research, identifying missing support or mismatched versions. Keep the audit separate from a visual redesign, and limit edits to the evidence and content changes that the reviewer accepts.",
+            "zh": "演示文稿多次修订后，结论背后的来源可能变得不清楚。将页面主张、图表数值和备注与已批准研究对照，识别缺少支持或版本不一致的位置。证据检查与视觉重做分开，只在审阅者认可的范围内修改相关内容。"
+          }
         }
       ]
     },
@@ -1299,6 +1349,16 @@
             "en": "A bounded spreadsheet update needs the target ranges and formulas to preserve identified in advance. Follow the workbook's established styles and input conventions, then check affected formulas and references after editing. Leave unrelated areas intact so existing calculations remain usable alongside the new information.",
             "zh": "局部更新电子表格前，明确目标区域和必须保留的公式。沿用工作簿已有样式与输入约定，修改后核对受影响的计算和引用关系。保持无关区域原状，使新增信息能够与既有计算继续协同使用。"
           }
+        },
+        {
+          "title": {
+            "en": "Trace formulas after an input change",
+            "zh": "追踪输入变化后的公式引用"
+          },
+          "description": {
+            "en": "An updated assumption or source range can leave formulas pointing to an outdated cell even when the workbook opens normally. Inspect the affected references and recalculate the relevant outputs, comparing selected results with known inputs. Preserve the workbook's conventions and report unresolved dependencies so the review explains the calculation path rather than just the final number.",
+            "zh": "假设或源区域更新后，公式可能仍指向旧单元格，即使工作簿能够正常打开。检查受影响引用并重新计算相关输出，用已知输入核对选定结果。保留原表约定，明确未解决的依赖，让审阅说明计算路径，而不只是展示最终数字。"
+          }
         }
       ]
     },
@@ -1534,6 +1594,16 @@
           "description": {
             "en": "Forms and asynchronous screens need clear guidance when input is invalid, a request is loading, or data is absent. Review those states against the form rules and representative examples, then complete the missing feedback. Check that the user can understand what happened and what to do next beyond the ordinary success path.",
             "zh": "表单和异步页面需要在输入无效、请求加载或没有数据时继续提供指引。结合表单规则与代表性样例检查这些状态，补全缺失反馈。除正常成功路径外，也要确认用户能够理解发生了什么，以及接下来可以采取什么行动。"
+          }
+        },
+        {
+          "title": {
+            "en": "Establish product context before designing",
+            "zh": "设计前建立产品背景"
+          },
+          "description": {
+            "en": "A new design task needs durable information about the audience, product, and constraints before visual refinement starts. Use the documented initialization flow where appropriate and review the context it records, separating product facts from a temporary visual preference. Later audit or implementation work can then refer to an agreed brief instead of reconstructing the purpose from an isolated screenshot.",
+            "zh": "新的设计任务需要先明确受众、产品和约束，再开始视觉打磨。按需使用原始说明中的初始化流程，审阅记录下来的背景，并将产品事实与临时视觉偏好区分。后续检查和实施能够沿已确认简报继续，不必只靠一张截图重新推测页面目的。"
           }
         }
       ]

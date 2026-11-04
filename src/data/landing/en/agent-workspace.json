@@ -69,6 +69,10 @@
       {
         "title": "Produce work that can be examined",
         "description": "A report, slide deck, or analysis needs more than a finished-looking draft. Organize approved files around the delivery format and review criteria, retain source attribution, and record questions that still need a decision. The resulting editable work gives reviewers a clear route back to its evidence."
+      },
+      {
+        "title": "Resume an approved project",
+        "description": "An accepted draft, review notes, and a new request can form the starting point for the next task. Keep the relevant files and decisions in the project, identify what changed, and ask the agent to continue within that boundary. Review the new result against both the fresh request and the requirements already agreed."
       }
     ]
   },

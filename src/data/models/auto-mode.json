@@ -210,6 +210,16 @@
           "en": "An unavailable model route can interrupt a task before its work is complete. Retain the current state and continue through available system routes where possible, then recheck fallback results against the original requirements. Identify any steps that remain blocked instead of treating a changed route as proof of completion.",
           "zh": "模型入口不可用时，保留未完成任务的当前状态，并在存在可用系统路径时继续推进。切换后重新检查结果是否满足原始要求，明确哪些步骤已经恢复、哪些仍然受阻。入口发生变化并不意味着任务已经完成，后续结果仍需核对。"
         }
+      },
+      {
+        "title": {
+          "en": "Keep text and visual evidence connected",
+          "zh": "连接文字与视觉证据"
+        },
+        "description": {
+          "en": "A task may combine written requirements with screenshots or other supported visual input. Identify what each part needs to establish and keep them in the same project context while using an available route that fits the input. Review the conclusion against both sources, and leave unsupported media steps open instead of assuming every modality shares one path.",
+          "zh": "任务可能同时提供文字要求、截图或其他受支持的视觉输入。先明确每部分需要证明什么，再在同一项目背景中使用适合输入的可用路径。结论同时对照两类来源检查；不受支持的媒体步骤应明确保留，不能假定所有输入都共用同一处理入口。"
+        }
       }
     ]
   },
