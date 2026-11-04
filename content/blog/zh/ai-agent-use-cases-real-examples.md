@@ -1,5 +1,7 @@
 ---
 title: "AI Agent 应用场景：真实案例与选型方法"
+seoTitle: "AI Agent 应用场景：真实任务、案例与选型方法"
+seoDescription: "按输入、工具、输出、人工门禁与失败模式评估 AI Agent 应用场景。结合可核验案例和选择矩阵，挑选范围明确的首个试点，用实际结果判断是否值得继续扩展。"
 description: "从输入、工具、输出、人工门禁与失败模式判断 AI Agent 应用场景是否值得落地，结合可核验案例、示例工作流、选择矩阵与试点方法，帮助团队选择首个可验证、风险可控的 Agent 项目。"
 slug: "ai-agent-use-cases-real-examples"
 date: "2026-03-20"

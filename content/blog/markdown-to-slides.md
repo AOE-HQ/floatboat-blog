@@ -1,5 +1,7 @@
 ---
 title: "Markdown to Slides — Presentations From Plain Text"
+seoTitle: "Markdown to Slides: Build Presentations from Plain-Text Sources"
+seoDescription: "Markdown-to-slides tools turn text outlines into presentations. Compare Marp and Pandoc workflows, export formats, and design trade-offs for technical talks and internal reports."
 description: "Turn markdown into slide decks: how the text-to-slides workflow works with Marp and Pandoc, what it trades away, and when a plain outline beats design tools."
 slug: "markdown-to-slides"
 date: "2026-09-17"

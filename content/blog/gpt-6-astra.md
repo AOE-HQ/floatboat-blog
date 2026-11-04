@@ -1,5 +1,7 @@
 ---
 title: "GPT-6 Astra: Current Specs, Pricing, Safety, and When to Use It"
+seoTitle: "GPT-6 Astra: Specs, Pricing, Safety, and Suitable Workloads"
+seoDescription: "GPT-6 Astra selection involves token pricing, long-context premiums, tools, and safety access. Compare the documented model profile with Sol and Luna by workload and constraints."
 description: "GPT-6 Astra explained with current official facts: $10/$50 pricing, 1.05M context, tools, long-context premiums, Critical cyber safeguards, and model selection."
 slug: "gpt-6-astra"
 date: "2026-09-04"

@@ -1,5 +1,7 @@
 ---
 title: "Markdown 是什么——撑起文档、笔记与 AI 输出的纯文本格式"
+seoTitle: "Markdown：文档、笔记与 AI 输出中的纯文本语法"
+seoDescription: "Markdown 用纯文本符号表达标题、列表、链接和强调。了解它的定义、起源与 CommonMark、GFM 等方言，查看文档、笔记、Git 和 AI 输出中的实际用法，并按示例开始编写。"
 description: "Markdown 是 2004 年由 John Gruber 发布的纯文本排版语法：井号即标题、星号即加粗、横线即列表。本文讲清它的定义与工作原理、方言生态（GFM、CommonMark、Obsidian 扩展），以及它为何成了文档、笔记与 AI 输出的通用格式，并附上手路径。"
 slug: "what-is-markdown"
 date: "2026-09-10"

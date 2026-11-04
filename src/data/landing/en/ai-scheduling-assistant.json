@@ -2,8 +2,8 @@
   "slug": "ai-scheduling-assistant",
   "locale": "en",
   "seo": {
-    "title": "AI Scheduling Assistant — Turn Calendar Time Into Executed Work",
-    "description": "Use an AI scheduling assistant that prepares, runs, and follows up on scheduled work while keeping your existing calendar and approval boundaries.",
+    "title": "AI Scheduling Assistant: Meeting Context, Plans, and Follow-Up",
+    "description": "Connect calendar events with preparation materials, work plans, and follow-up tasks. Review timing, context, and proposed actions before letting a schedule drive further work.",
     "keywords": [
       "AI scheduling assistant",
       "calendar agent",
@@ -35,7 +35,7 @@
   },
   "features": {
     "title": "Scheduling connects time to execution.",
-    "description": "The calendar remains familiar while the workspace handles the preparation and follow-through around it.",
+    "description": "Calendar events already define when work matters; the workspace connects them with the preparation around that moment. Compare task context, scheduled material, and follow-up handling while preserving the decisions that still require a person's review.",
     "items": [
       {
         "label": "Prepare",
@@ -55,26 +55,24 @@
     ]
   },
   "useCases": {
-    "title": "Prepare recurring work from its schedule",
-    "description": "Organize sources and review around real reporting, client-review, or editorial events without equating scheduling with automatic publication.",
+    "title": "Use Cases for AI Scheduling Assistant",
+    "description": "Weekly reports, client reviews, and editorial calendars each create a different preparation deadline. Connect those events with current material and review checkpoints, while keeping scheduled drafting separate from permission to publish or send.",
     "items": [
       {
         "title": "Protect the operating rhythm",
-        "brief": "A weekly schedule, reporting template, and approved information sources.",
-        "process": "Prepare current material on schedule, apply reporting rules, and hand off to the defined review point.",
-        "outcome": "Scheduled plan/report drafts with review and follow-up checkpoints."
+        "description": "A weekly reporting routine can begin with a schedule, an agreed template, and approved information sources. Prepare the current material at the planned time and route the draft to its review checkpoint. Keep follow-up actions attached to the plan so preparation and approval remain distinguishable."
       },
       {
         "title": "Prepare every account review",
-        "brief": "A client-review event, latest deliverables, open issues, and pending decisions.",
-        "process": "Gather recent results, open issues, and pending choices before the client event, marking missing information.",
-        "outcome": "Preparation material for that review, with traceable sources and gaps."
+        "description": "Before a client review, gather the latest deliverables, unresolved issues, and decisions awaiting confirmation. Tie each item to its source and mark missing information instead of filling gaps with assumptions. The preparation packet should help that particular meeting reach its decisions, rather than repeat an old summary."
       },
       {
         "title": "Keep a publishing cadence moving",
-        "brief": "An editorial calendar, topic material, review requirements, and approval process.",
-        "process": "Prepare research/drafts for editorial milestones, arrange review, and handle publication through authorized steps.",
-        "outcome": "Content preparation linking research, drafts, and review, with publication governed by authorization."
+        "description": "An editorial calendar can connect topic research, draft preparation, and review deadlines. Use each milestone to prepare the material needed for the next handoff, retaining the research behind the draft. Publication remains a separately authorized action, even when the preparation routine runs on a schedule."
+      },
+      {
+        "title": "Prepare follow-up after an event",
+        "description": "A completed meeting may leave decisions, unanswered questions, and preparation for the next date. Connect the approved notes with that calendar context and draft a follow-up list for review. Confirm ownership and any proposed external action separately, so scheduling the preparation does not silently authorize sending messages or changing commitments."
       }
     ]
   },
@@ -155,22 +153,19 @@
   },
   "howTo": {
     "title": "Prepare work around a calendar event",
-    "description": "Attach a useful preparation task to an existing event, then review its result before deciding the next action.",
+    "description": "An event becomes a useful work trigger when its preparation task and inputs are explicit. These steps connect an existing calendar entry with draft review and subsequent decisions, keeping the scheduled work separate from authorization for further action.",
     "items": [
       {
         "title": "Bring in the relevant event",
-        "description": "Connect or import the calendar you already use and choose the event or recurring work that needs preparation.",
-        "completion": "The selected event has the correct time and preparation goal."
+        "description": "Connect or import the calendar you already use and choose the event or recurring work that needs preparation."
       },
       {
         "title": "Define the preparation task",
-        "description": "Specify what should happen before or after the event and attach the files, notes, and open actions needed for the brief.",
-        "completion": "The task identifies its inputs, timing, and expected brief or artifact."
+        "description": "Specify what should happen before or after the event and attach the files, notes, and open actions needed for the brief."
       },
       {
         "title": "Review and decide what follows",
-        "description": "Read the prepared result, check important facts and open questions, and approve any follow-up that requires a decision.",
-        "completion": "The event has a reviewed preparation result and explicit next steps."
+        "description": "Read the prepared result, check important facts and open questions, and approve any follow-up that requires a decision."
       }
     ]
   }

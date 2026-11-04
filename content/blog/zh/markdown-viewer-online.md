@@ -1,5 +1,7 @@
 ---
 title: "在线 Markdown 查看器——浏览器里直接读 .md 文件，不装任何软件"
+seoTitle: "在线 Markdown 查看器：读取文件与检查浏览器渲染"
+seoDescription: "在线 Markdown 查看器不只需要显示文字，还应正确处理表格、代码围栏与任务清单。核对文件在本地还是上传服务器，并比较 VS Code、GitHub 和系统预览的适用场景。"
 description: "在线 Markdown 查看器能在浏览器里直接渲染任意 .md 文件，不需要安装任何东西。本文讲清好的查看器应该正确渲染什么（GFM 表格、代码围栏、任务清单）、哪些查看器会把文件上传到服务器、哪些纯本地处理，以及 VS Code、GitHub、Quick Look 各自什么时候更够用。"
 slug: "markdown-viewer-online"
 date: "2026-09-08"

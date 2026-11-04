@@ -1,5 +1,7 @@
 ---
 title: "Kimi K3 与 Floatboat：模型能力及真实接入状态"
+seoTitle: "Kimi K3 与 Floatboat：模型能力与实际接入状态"
+seoDescription: "Kimi K3 的模型能力与 Floatboat 接入状态需要分开判断。了解上下文、视觉和长任务定位，对照底层容量记录与默认选择器范围，区分技术准备和面向用户正式开放。"
 description: "Kimi K3 提供 100 万 token 上下文、原生视觉与长时推理能力，但 Floatboat 当前只登记了底层容量与预算支持，并未把它放入默认模型选择器；本文区分模型规格、技术准备与正式上线。"
 slug: "kimi-k3-floatboat"
 date: "2026-07-17"

@@ -2,7 +2,7 @@
 
 import type { PostMeta } from "@openblog/core";
 
-import { obBorder, obText } from "../tokens";
+import { obText } from "../tokens";
 import { cn } from "../utils";
 import { PostCard } from "../required/post-card";
 
@@ -23,7 +23,7 @@ export function ArticleRelatedPosts({
   }
 
   return (
-    <section className={cn("mt-16 border-t pt-12", obBorder)}>
+    <section className={cn("mt-16 pt-12")}>
       <h2
         className={cn(
           "mb-8 text-2xl font-semibold tracking-tight md:text-3xl",

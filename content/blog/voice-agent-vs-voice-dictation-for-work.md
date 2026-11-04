@@ -1,5 +1,7 @@
 ---
 title: "Voice Agent vs Voice Dictation for Work — Pick the Right Layer"
+seoTitle: "Voice Agents vs Dictation: Choose the Right Layer for Work"
+seoDescription: "Voice agents and dictation serve different work layers. Compare speech-triggered execution with editable text for exploration, precise prompts, document co-authoring, and meetings."
 description: "Voice agents execute work from speech; voice dictation turns speech into text. A solopreneur guide for exploration, prompts, co-authoring, and meetings."
 slug: "voice-agent-vs-voice-dictation-for-work"
 date: "2026-08-11"

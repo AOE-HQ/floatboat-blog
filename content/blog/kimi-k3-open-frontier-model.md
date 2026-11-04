@@ -1,5 +1,7 @@
 ---
 title: "Kimi K3 — What a 2.8T Open Model Changes for Agentic Coding"
+seoTitle: "Kimi K3: Architecture, Benchmarks, and Agentic Coding Tasks"
+seoDescription: "Kimi K3 deployment depends on its license, API ID, context, and tools. Compare hosted pricing and self-hosting infrastructure rather than treating open weights as cost-free access."
 description: "Kimi K3 explained through its open-weight boundary, Kimi K3 License, kimi-k3 API ID, 1M context, current pricing, tool compatibility, and self-hosting cost."
 slug: "kimi-k3-open-frontier-model"
 date: "2026-07-16"

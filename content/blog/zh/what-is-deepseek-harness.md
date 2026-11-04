@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek Harness 是什么 — DeepSeek 官方 Agent 执行层的定义、架构与开源发布全解读"
+seoTitle: "DeepSeek Harness：架构设计与 Agent 执行层解析"
+seoDescription: "DeepSeek Harness 将模型调用连接到编程 Agent 执行。了解架构、开源发布背景和官方基准声称，区分模型与运行层，查看它如何衔接真实软件任务，而不是把模型本身当作完整系统。"
 description: "DeepSeek Harness 是 DeepSeek 官方打造的 AI 编码 Agent——连接 V4 模型与真实软件工程工作的执行层。本文解析 Model + Harness = Agent 的核心定义、架构来源与招聘信息透露的设计方向、V4-Flash 0731 官方基准背书、769 名开发者参与的社区内测，以及 v0.1（dsh）以 MIT 协议随 V4 Pro 0813 正式版开源发布的完整脉络。"
 slug: "what-is-deepseek-harness"
 date: "2026-08-17"

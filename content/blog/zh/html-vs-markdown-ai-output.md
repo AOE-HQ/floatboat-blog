@@ -1,5 +1,7 @@
 ---
 title: "AI 输出该用 HTML 还是 Markdown？按任务选格式：四问决策框架、场景速查表与成本取舍"
+seoTitle: "AI 输出 HTML 与 Markdown：按交付、审阅与成本选格式"
+seoDescription: "AI 输出选择 HTML 还是 Markdown，应先看读者与后续动作。通过四问框架和场景速查比较 token 成本、编辑、渲染与维护，区分内部笔记、Agent 交接和面向人的成果展示。"
 description: "AI 输出用 HTML 还是 Markdown，取决于任务本身：内部笔记与 Agent 交接留给 Markdown，给人看的报告与成果交给 HTML。本文给出四场景速查表与四问决策框架，拆解 token 成本、编辑维护与渲染引擎差异的取舍，按任务选格式，不再纠结。"
 slug: "html-vs-markdown-ai-output"
 date: "2026-05-20"

@@ -1,5 +1,7 @@
 ---
 title: "Can One Person Build a Full Storyboard with GPT Image 2?"
+seoTitle: "GPT Image 2 Storyboards: Build and Review a Full Sequence"
+seoDescription: "GPT Image 2 storyboards still need sequence and continuity review. Examine a one-person 24-frame workflow, its failure points, and when a human storyboard artist is needed."
 description: "Can GPT Image 2 produce a usable film or short-video storyboard on its own? Here's what a one-person creator can and can't pull off."
 slug: "gpt-image-2-storyboard-solo"
 date: "2026-04-25"

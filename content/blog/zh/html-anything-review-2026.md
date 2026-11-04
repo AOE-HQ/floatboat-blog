@@ -1,5 +1,7 @@
 ---
 title: "HTML Anything 评测 2026：能力、成本与风险"
+seoTitle: "HTML Anything 评测：实际能力、运行成本与执行风险"
+seoDescription: "结合原始仓库核对 HTML Anything 的安装、Agent 支持、模板、导出和成本，了解安全边界，再用可复现测试比较替代方案，判断它是否适合当前页面制作与交付任务。"
 description: "基于官方仓库完整核对 HTML Anything 的安装方式、编程 Agent 支持、Skill 模板、导出、真实成本与安全边界，并通过可复现测试方法比较替代方案和适用人群。"
 slug: "html-anything-review-2026"
 date: "2026-05-20"

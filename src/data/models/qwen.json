@@ -10,37 +10,94 @@
     "en": "Qwen 3.7 Max has a configured 1M long-text capacity profile below the client picker.",
     "zh": "Qwen 3.7 Max 已配置 1M 长文本容量画像，2026 年 10 月 9 日记录未显示主选择器入口，当前以实际菜单为准。"
   },
-  "seo": {"title":{"en":"Qwen 3.7 Max Model: 1M Context, Model ID and Use Cases","zh":"Qwen 3.7 Max 模型：1M 上下文、Model ID 与用途"},"description":{"en":"Learn about Qwen 3.7 Max, its exact model ID, configured 1M context profile, long-text role, Chinese document use cases, and current status.","zh":"了解 Qwen 3.7 Max 的准确 Model ID、1M 上下文画像、长文本定位、中文文档用途与当前状态。"},"keywords":[{"en":"Qwen 3.7 Max","zh":"Qwen 3.7 Max"},{"en":"Qwen model","zh":"Qwen 模型"},{"en":"Qwen 1M context","zh":"Qwen 1M 上下文"},{"en":"qwen-3.7-max","zh":"qwen-3.7-max"}]},
+  "seo": {
+    "title": {
+      "en": "Qwen 3.7 Max: Context Profiles and Chinese Document Work",
+      "zh": "Qwen 3.7 Max：上下文配置与中文文档任务"
+    },
+    "description": {
+      "en": "Inspect Qwen 3.7 Max’s exact model ID, configured context profile, and Chinese-document use cases. Check the recorded status rather than assuming every account has access.",
+      "zh": "查看 Qwen 3.7 Max 的准确模型 ID、上下文配置与中文文档用途，了解长文本工作的定位和限制；选用前核对记录状态，不把底层配置直接视为所有账号已开放。"
+    },
+    "keywords": [
+      {
+        "en": "Qwen 3.7 Max",
+        "zh": "Qwen 3.7 Max"
+      },
+      {
+        "en": "Qwen model",
+        "zh": "Qwen 模型"
+      },
+      {
+        "en": "Qwen 1M context",
+        "zh": "Qwen 1M 上下文"
+      },
+      {
+        "en": "qwen-3.7-max",
+        "zh": "qwen-3.7-max"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "Qwen 3.7 Max model, 1M context profile, and long-text use cases.",
-        "zh": "Qwen 3.7 Max 模型、1M 上下文画像与长文本用途。"
+      "en": "Qwen 3.7 Max model, 1M context profile, and long-text use cases.",
+      "zh": "Qwen 3.7 Max 模型、1M 上下文画像与长文本用途。"
     },
     "description": {
       "en": "The `qwen-3.7-max` capacity profile carries a 1M budget and a long-text channel adapter. It was not exposed in the October 9, 2026 client snapshot; check the current menu.",
       "zh": "`qwen-3.7-max` 已配置 1M 预算并适配长文本通道，2026 年 10 月 9 日记录未显示默认选择器入口，当前需查看实际菜单。"
     },
     "prompts": [
-      { "en": "Process a long source set", "zh": "处理大型资料集" },
-      { "en": "Work through a long Chinese document", "zh": "处理长篇中文文档" }
+      {
+        "en": "Process a long source set",
+        "zh": "处理大型资料集"
+      },
+      {
+        "en": "Work through a long Chinese document",
+        "zh": "处理长篇中文文档"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Model ID", "zh": "Model ID" },
-      "value": { "en": "qwen-3.7-max", "zh": "qwen-3.7-max" }
+      "label": {
+        "en": "Model ID",
+        "zh": "Model ID"
+      },
+      "value": {
+        "en": "qwen-3.7-max",
+        "zh": "qwen-3.7-max"
+      }
     },
     {
-      "label": { "en": "Capacity", "zh": "容量画像" },
-      "value": { "en": "1M budget", "zh": "1M 预算" }
+      "label": {
+        "en": "Capacity",
+        "zh": "容量画像"
+      },
+      "value": {
+        "en": "1M budget",
+        "zh": "1M 预算"
+      }
     },
     {
-      "label": { "en": "Channel", "zh": "通道" },
-      "value": { "en": "Long-text adapter", "zh": "长文本通道" }
+      "label": {
+        "en": "Channel",
+        "zh": "通道"
+      },
+      "value": {
+        "en": "Long-text adapter",
+        "zh": "长文本通道"
+      }
     },
     {
-      "label": { "en": "Availability", "zh": "可用状态" },
-      "value": { "en": "Historical configuration", "zh": "旧记录未显示选择器入口" }
+      "label": {
+        "en": "Availability",
+        "zh": "可用状态"
+      },
+      "value": {
+        "en": "Historical configuration",
+        "zh": "旧记录未显示选择器入口"
+      }
     }
   ],
   "positioning": {
@@ -54,32 +111,56 @@
     },
     "traits": [
       {
-        "label": { "en": "Strength", "zh": "能力方向" },
-        "value": { "en": "Long source processing", "zh": "长资料处理" },
+        "label": {
+          "en": "Strength",
+          "zh": "能力方向"
+        },
+        "value": {
+          "en": "Long source processing",
+          "zh": "长资料处理"
+        },
         "description": {
           "en": "The adapter is prepared for context-heavy textual work.",
           "zh": "通道适配面向上下文密集型文本工作。"
         }
       },
       {
-        "label": { "en": "Language fit", "zh": "语言场景" },
-        "value": { "en": "Chinese long-form work", "zh": "中文长篇工作" },
+        "label": {
+          "en": "Language fit",
+          "zh": "语言场景"
+        },
+        "value": {
+          "en": "Chinese long-form work",
+          "zh": "中文长篇工作"
+        },
         "description": {
           "en": "Its current configuration is intended for long-text tasks.",
           "zh": "当前配置主要面向长文本任务。"
         }
       },
       {
-        "label": { "en": "Scale", "zh": "规模" },
-        "value": { "en": "1M budget", "zh": "1M 预算" },
+        "label": {
+          "en": "Scale",
+          "zh": "规模"
+        },
+        "value": {
+          "en": "1M budget",
+          "zh": "1M 预算"
+        },
         "description": {
           "en": "Capacity is registered for large inputs.",
           "zh": "已为大型输入登记容量。"
         }
       },
       {
-        "label": { "en": "Boundary", "zh": "当前边界" },
-        "value": { "en": "No main-picker access", "zh": "主选择器不可选" },
+        "label": {
+          "en": "Boundary",
+          "zh": "当前边界"
+        },
+        "value": {
+          "en": "No main-picker access",
+          "zh": "主选择器不可选"
+        },
         "description": {
           "en": "Readiness does not equal launch.",
           "zh": "底层就绪不等于已经上线。"
@@ -93,8 +174,8 @@
       "zh": "一个已登记型号，对应明确的长文本定位。"
     },
     "description": {
-      "en": "Qwen 3.7 Max has a capacity configuration but no current entry in the main client picker.",
-      "zh": "Qwen 3.7 Max 已配置容量，但当前默认模型选择器尚无入口。"
+      "en": "The Qwen record names qwen-3.7-max and its configured long-context profile. Those details help with capacity planning but do not establish a default picker entry; compare them with the current menu and supported route before assigning execution.",
+      "zh": "Qwen 记录标识 qwen-3.7-max 及其长上下文画像，可用于理解容量背景。以下条目并不代表默认选择器已有入口，安排执行前仍需结合当前菜单与受支持路径核对。"
     },
     "items": [
       {
@@ -117,12 +198,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "以完整资料组织中文长文工作",
-      "en": "Organize Chinese long-text work around complete sources"
+      "zh": "Qwen 模型的使用场景",
+      "en": "Use Cases for Qwen Models"
     },
     "description": {
-      "zh": "先核对受支持的访问方式，再决定怎样保留全文关系；接入规划与实际内容处理分别验收。",
-      "en": "Confirm supported access before deciding how to retain whole-source relationships; verify access planning and content work separately."
+      "zh": "中文长文综合需要保留术语及引用关系，语料审阅还要追踪例外。Qwen 任务应在核实受支持入口后安排，并区分访问规划和实际内容验收，配置记录不直接证明当前能够执行。",
+      "en": "Chinese source synthesis and corpus review depend on preserving terminology, attribution, and exceptions. These scenarios also separate access planning from content work, so a recorded Qwen configuration does not become an unsupported promise of current execution."
     },
     "items": [
       {
@@ -130,17 +211,9 @@
           "en": "Chinese document synthesis",
           "zh": "中文长文综合"
         },
-        "brief": {
-          "zh": "长篇中文材料、需要综合的主题与引用规则。",
-          "en": "Long Chinese sources, synthesis topics, and citation rules."
-        },
-        "process": {
-          "zh": "在可用通道上连接论点及其条件，保留术语和来源差异。",
-          "en": "Through an available route, connect claims/conditions while retaining terminology and source differences."
-        },
-        "outcome": {
-          "zh": "覆盖完整材料的中文综合，附来源与分歧。",
-          "en": "A whole-source Chinese synthesis with attribution and disagreements."
+        "description": {
+          "en": "Through an available route, Chinese document synthesis can connect claims and conditions across long sources. Keep the research topics and citation requirements explicit, preserving original terminology and differences between authors. The synthesis should remain traceable to whole sources rather than replacing them with disconnected excerpts.",
+          "zh": "在确认可用的入口中，围绕明确主题和引用要求综合长篇中文资料，连接不同来源中的论点与适用条件。保留原有术语、作者分歧和引用归属，使结论能够追溯到完整来源，而不是只依赖彼此脱节的片段。"
         }
       },
       {
@@ -148,17 +221,9 @@
           "en": "Large source review",
           "zh": "大型资料审阅"
         },
-        "brief": {
-          "zh": "大型文本资料集、统一审阅标准与已知反例。",
-          "en": "A large text corpus, review criteria, and known counterexamples."
-        },
-        "process": {
-          "zh": "按统一规则核对来源之间的关系，记录不满足标准的具体位置。",
-          "en": "Check relationships against common criteria and locate exceptions in the sources."
-        },
-        "outcome": {
-          "zh": "带来源定位的审阅结论与待处理问题。",
-          "en": "Source-located review conclusions and issues to resolve."
+        "description": {
+          "en": "A large source review needs common criteria and known counterexamples. Check relationships across the corpus, locate exceptions in the original material, and distinguish supported conclusions from questions still open. Deliver source-located findings so another reviewer can inspect the same evidence and assess the reasoning.",
+          "zh": "审阅大批资料时，先明确统一标准和已知反例，再检查文本之间的关联与例外。将结论定位到原始内容，区分证据已经支持的判断和仍需解决的问题。其他审阅者应能够找到相同资料并重新评估推理过程。"
         }
       },
       {
@@ -166,17 +231,19 @@
           "en": "Workflow access planning",
           "zh": "工作流访问规划"
         },
-        "brief": {
-          "zh": "任务输入规模、运行时事实与当前可用入口。",
-          "en": "Task input scale, runtime facts, and currently available entry points."
+        "description": {
+          "en": "Workflow planning should compare input scale with the exact model identifier, runtime facts, budget, and current entry points. Verify each access condition independently before assigning work to the route. A useful plan makes prerequisites explicit and leaves unconfirmed capability or availability claims open for testing.",
+          "zh": "规划工作流时，将输入规模与精确型号、运行环境、预算及当前入口分别核对。确认每项访问条件后，再安排通过该路径执行的工作。计划中明确写出前提，将尚未证实的能力或可用性留待验证，避免仅凭型号记录作出承诺。"
+        }
+      },
+      {
+        "title": {
+          "en": "Align terminology across Chinese sources",
+          "zh": "对齐中文资料中的术语"
         },
-        "process": {
-          "zh": "分别核对准确 ID、预算、通道和访问条件。",
-          "en": "Verify the exact ID, budget, route, and access conditions separately."
-        },
-        "outcome": {
-          "zh": "接入前提与任务要求相匹配的工作流计划。",
-          "en": "A workflow plan matching access prerequisites to task requirements."
+        "description": {
+          "en": "Documents about the same subject may use different terms for a concept or the same term for different meanings. Provide the source set and intended glossary scope, then map definitions and exceptions to their original passages. Through a verified available route, prepare an attributed terminology record without silently rewriting the source or resolving a substantive disagreement as a wording issue.",
+          "zh": "同一主题的文档可能用不同词表达同一概念，也可能让相同词语承担不同含义。提供资料范围和术语表目标，逐项对应定义、例外及原文位置。在确认可用的路径中整理带出处的术语记录，不静默改写来源，也不把实质分歧当作措辞问题消除。"
         }
       }
     ]
@@ -187,33 +254,45 @@
       "zh": "长文本容量与当前访问状态。"
     },
     "description": {
-      "en": "The `qwen-3.7-max` configuration includes a long-text channel and a 1M capacity budget. The October 9, 2026 record did not include a main-picker entry; check the current client menu.",
-      "zh": "`qwen-3.7-max` 已配置长文本通道与 1M 容量预算，在 2026 年 10 月 9 日记录中未显示默认选择器入口，当前应核对实际菜单。"
+      "en": "Qwen's model identifier, context budget, long-text adapter, and availability status should be read separately. This overview preserves the recorded configuration boundary so a large capacity figure does not become an unsupported statement about what the current client can execute.",
+      "zh": "Qwen 的型号标识、上下文预算、长文本适配器和可用状态，需要分别理解。以下概览保留配置记录的边界，避免将较大容量数字直接转成当前客户端能够执行任务的承诺。"
     },
     "items": [
       {
-        "title": { "en": "Exact model identity", "zh": "准确模型标识" },
+        "title": {
+          "en": "Exact model identity",
+          "zh": "准确模型标识"
+        },
         "description": {
           "en": "The registered ID is `qwen-3.7-max`.",
           "zh": "已登记 ID 为 `qwen-3.7-max`。"
         }
       },
       {
-        "title": { "en": "1M capacity profile", "zh": "1M 容量画像" },
+        "title": {
+          "en": "1M capacity profile",
+          "zh": "1M 容量画像"
+        },
         "description": {
           "en": "A 1M budget is configured below the picker.",
           "zh": "选择器下层已配置 1M 预算。"
         }
       },
       {
-        "title": { "en": "Long-text adapter", "zh": "长文本通道适配" },
+        "title": {
+          "en": "Long-text adapter",
+          "zh": "长文本通道适配"
+        },
         "description": {
           "en": "The runtime includes a channel for long textual workloads.",
           "zh": "运行时已包含长文本工作负载通道。"
         }
       },
       {
-        "title": { "en": "Explicit status", "zh": "明确状态" },
+        "title": {
+          "en": "Explicit status",
+          "zh": "明确状态"
+        },
         "description": {
           "en": "The October 9, 2026 record did not include a picker entry; current access needs a fresh check.",
           "zh": "2026 年 10 月 9 日记录未显示选择器入口，当前应核对实际菜单。"

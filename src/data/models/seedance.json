@@ -2,23 +2,56 @@
   "slug": "seedance",
   "name": "Seedance",
   "access": "combo",
-  "badge": { "en": "ByteDance · Live Combo", "zh": "字节跳动 · Combo 已上线" },
+  "badge": {
+    "en": "ByteDance · Live Combo",
+    "zh": "字节跳动 · Combo 已上线"
+  },
   "summary": {
     "en": "Seedance 2.5 is publicly listed, while 2.0 and 2.0 Fast have documented built-in video Combo routes.",
     "zh": "Seedance 2.5 已公开列出，2.0 与 2.0 Fast 则保留已记录的内置视频 Combo 入口。"
   },
-  "seo": {"title":{"en":"Seedance 2.5 and 2.0 video model availability.","zh":"Seedance 2.5 与 2.0 视频模型及使用入口。"},"description":{"en":"Seedance 2.5 is now listed on Floatboat’s pricing page. The recorded video Combo uses 2.0 and 2.0 Fast; verify the engine and inputs before assuming the same route supports the newer version.","zh":"Floatboat 价格页已列出 Seedance 2.5。已有视频 Combo 记录使用 2.0 和 2.0 Fast，选用新版前应核对实际引擎和输入方式。"},"keywords":[{"en":"Seedance 2.0","zh":"Seedance 2.0"},{"en":"AI video generator","zh":"AI 视频生成"},{"en":"text to video","zh":"文生视频"},{"en":"image to video","zh":"图生视频"}]},
+  "seo": {
+    "title": {
+      "en": "Seedance Video Models: Version Listings and Combo Engine Checks",
+      "zh": "Seedance 视频模型：版本展示与 Combo 引擎核对"
+    },
+    "description": {
+      "en": "Compare the Seedance 2.5 listing with recorded 2.0 and 2.0 Fast video Combos. Verify the engine, supported inputs, and output path before assuming newer-version access.",
+      "zh": "对照 Seedance 2.5 展示与已有 2.0、2.0 Fast 视频 Combo 记录，检查实际引擎、支持输入和输出路径，区分版本介绍、已配置工作流与新版的真实接入条件。"
+    },
+    "keywords": [
+      {
+        "en": "Seedance 2.0",
+        "zh": "Seedance 2.0"
+      },
+      {
+        "en": "AI video generator",
+        "zh": "AI 视频生成"
+      },
+      {
+        "en": "text to video",
+        "zh": "文生视频"
+      },
+      {
+        "en": "image to video",
+        "zh": "图生视频"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "Seedance 2.5 and 2.0 video model availability.",
-        "zh": "Seedance 2.5 与 2.0 视频模型及使用入口。"
+      "en": "Seedance 2.5 and 2.0 video model availability.",
+      "zh": "Seedance 2.5 与 2.0 视频模型及使用入口。"
     },
     "description": {
       "en": "Seedance 2.5 is now listed on Floatboat’s pricing page. The recorded video Combo uses 2.0 and 2.0 Fast; verify the engine and inputs before assuming the same route supports the newer version.",
       "zh": "Floatboat 价格页已列出 Seedance 2.5。已有视频 Combo 记录使用 2.0 和 2.0 Fast，选用新版前应核对实际引擎和输入方式。"
     },
     "prompts": [
-      { "en": "Generate video from this brief", "zh": "根据简报生成视频" },
+      {
+        "en": "Generate video from this brief",
+        "zh": "根据简报生成视频"
+      },
       {
         "en": "Animate these first and last frames",
         "zh": "根据首尾帧生成动画"
@@ -27,29 +60,44 @@
   },
   "facts": [
     {
-      "label": { "en": "Inventory scope", "zh": "型号范围" },
+      "label": {
+        "en": "Inventory scope",
+        "zh": "型号范围"
+      },
       "value": {
         "en": "Recorded routes + current pricing listings",
         "zh": "已有接入记录 + 当前价格页型号"
       }
     },
     {
-      "label": { "en": "Access", "zh": "使用入口" },
+      "label": {
+        "en": "Access",
+        "zh": "使用入口"
+      },
       "value": {
         "en": "seedance-video-generator Combo",
         "zh": "seedance-video-generator Combo"
       }
     },
     {
-      "label": { "en": "Generation modes", "zh": "生成方式" },
+      "label": {
+        "en": "Generation modes",
+        "zh": "生成方式"
+      },
       "value": {
         "en": "Text · Image · First/last frame",
         "zh": "文本 · 图片 · 首尾帧"
       }
     },
     {
-      "label": { "en": "Audio", "zh": "音频" },
-      "value": { "en": "Synchronized audio supported", "zh": "支持同步音频" }
+      "label": {
+        "en": "Audio",
+        "zh": "音频"
+      },
+      "value": {
+        "en": "Synchronized audio supported",
+        "zh": "支持同步音频"
+      }
     }
   ],
   "positioning": {
@@ -63,23 +111,38 @@
     },
     "traits": [
       {
-        "label": { "en": "Full model", "zh": "完整型号" },
-        "value": { "en": "Prioritizes finished output", "zh": "优先成片质量" },
+        "label": {
+          "en": "Full model",
+          "zh": "完整型号"
+        },
+        "value": {
+          "en": "Prioritizes finished output",
+          "zh": "优先成片质量"
+        },
         "description": {
           "en": "Use when motion, frame control, and audio belong in the final deliverable.",
           "zh": "当运动、帧控制与音频都属于最终交付物时使用。"
         }
       },
       {
-        "label": { "en": "Fast model", "zh": "Fast 型号" },
-        "value": { "en": "Prioritizes iteration", "zh": "优先迭代速度" },
+        "label": {
+          "en": "Fast model",
+          "zh": "Fast 型号"
+        },
+        "value": {
+          "en": "Prioritizes iteration",
+          "zh": "优先迭代速度"
+        },
         "description": {
           "en": "Use for drafts, shot exploration, and storyboard clips.",
           "zh": "用于草稿、镜头探索与分镜片段。"
         }
       },
       {
-        "label": { "en": "Control", "zh": "可控性" },
+        "label": {
+          "en": "Control",
+          "zh": "可控性"
+        },
         "value": {
           "en": "Works from frames and briefs",
           "zh": "从画面与简报出发"
@@ -90,8 +153,14 @@
         }
       },
       {
-        "label": { "en": "Product surface", "zh": "产品入口" },
-        "value": { "en": "Dedicated Combo", "zh": "专用 Combo" },
+        "label": {
+          "en": "Product surface",
+          "zh": "产品入口"
+        },
+        "value": {
+          "en": "Dedicated Combo",
+          "zh": "专用 Combo"
+        },
         "description": {
           "en": "The engines do not appear in the main chat dropdown.",
           "zh": "这些引擎不会出现在主对话下拉菜单中。"
@@ -105,8 +174,8 @@
       "zh": "区分 2.5 公开型号与已记录的 2.0 引擎。"
     },
     "description": {
-      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
-      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
+      "en": "Seedance entries distinguish recorded 2.0 video Combo routes from the newer 2.5 pricing listing. Compare the engine identifier and stated status for each version, then verify the actual generation workflow and inputs before assuming the same access path applies.",
+      "zh": "Seedance 条目区分已记录的 2.0 视频 Combo 路径与较新的 2.5 价格列表。以下逐项说明引擎标识及状态，生成前需核对实际流程和输入条件，不能默认不同版本共用入口。"
     },
     "items": [
       {
@@ -165,12 +234,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "用文字、原图与分镜约束视频制作",
-      "en": "Constrain video production with text, source images, and shot plans"
+      "zh": "Seedance 模型的使用场景",
+      "en": "Use Cases for Seedance Models"
     },
     "description": {
-      "zh": "概念片、图生视频与草稿比较使用不同素材和检查标准，生成前先确认对应入口与制作条件。",
-      "en": "Concept clips, image-to-video work, and draft comparisons use different materials and checks; confirm the appropriate entry and production conditions first."
+      "zh": "概念片、动态主视觉和分镜比较分别从文字、原图及候选镜头出发。Seedance 任务因此需要相应素材和审阅标准，并在确认生成入口后，同时检查运动、主体一致性与选择依据。",
+      "en": "Text concepts, animated key visuals, and storyboard drafts begin with different source material. Compare shot constraints, motion consistency, and selection criteria before using the corresponding Seedance workflow to generate and review a candidate clip."
     },
     "items": [
       {
@@ -178,17 +247,9 @@
           "en": "Text-to-video concept",
           "zh": "文生视频概念片"
         },
-        "brief": {
-          "zh": "主体、场景、镜头运动、时长和音频意图。",
-          "en": "Subject, scene, camera motion, duration, and audio intent."
-        },
-        "process": {
-          "zh": "将简报组织为镜头约束，使用对应视频工作流生成并审阅画面与声音。",
-          "en": "Translate the brief into shot constraints and review picture/sound through the appropriate video workflow."
-        },
-        "outcome": {
-          "zh": "可审阅的概念片及需要调整的镜头记录。",
-          "en": "A reviewable concept clip and shot-specific revision notes."
+        "description": {
+          "en": "A text-to-video concept needs a subject, scene, camera motion, duration, and audio intention. Translate that brief into shot constraints through the appropriate video workflow, then review both picture and sound. Use shot-specific notes to decide what should change in the next concept clip.",
+          "zh": "文生视频概念需要明确主体、场景、镜头运动、时长和声音意图。通过适合的视频流程将简报转为镜头约束，再同时审看画面与声音表现。根据具体镜头记录修改意见，用于下一轮概念片段的调整。"
         }
       },
       {
@@ -196,17 +257,9 @@
           "en": "Animate a key visual",
           "zh": "让关键视觉动起来"
         },
-        "brief": {
-          "zh": "原始关键视觉、应保持的元素和希望出现的运动。",
-          "en": "A source key visual, elements to preserve, and desired motion."
-        },
-        "process": {
-          "zh": "以原图作为视觉起点，检查运动是否改变主体或破坏画面关系。",
-          "en": "Use the image as the starting point and check motion against subject/scene consistency."
-        },
-        "outcome": {
-          "zh": "与原图关联的动态素材，以及主体一致性检查。",
-          "en": "A source-linked motion asset and subject-consistency checks."
+        "description": {
+          "en": "Animating a key visual starts with the source image, the elements that must remain intact, and the intended motion. Review generated movement against subject and scene consistency, keeping the result connected to its source. That comparison helps separate useful motion from changes that undermine the original visual.",
+          "zh": "让主视觉动起来时，先提供源图、必须保留的元素和期望的运动方式。检查动态结果是否维持主体与场景的一致性，并保留它与源图的对应关系。通过前后对比，区分有效的动态表达与破坏原有视觉的变化。"
         }
       },
       {
@@ -214,17 +267,19 @@
           "en": "Storyboard iteration",
           "zh": "分镜快速迭代"
         },
-        "brief": {
-          "zh": "候选镜头、比较维度与草稿预算。",
-          "en": "Candidate shots, comparison criteria, and a draft budget."
+        "description": {
+          "en": "Storyboard exploration can compare candidate clips before committing to final production. Set a draft budget and review criteria, then examine framing and motion across alternatives. Record selection reasons and constraints for the next round so each revision follows a creative decision rather than another unbounded generation attempt.",
+          "zh": "分镜探索阶段可以先比较候选片段，再决定最终制作方向。明确草稿预算与评审标准，逐一检查构图和运动表现，并记录取舍理由及下一轮约束。让每次迭代围绕具体创作决定展开，避免缺乏方向地重复生成。"
+        }
+      },
+      {
+        "title": {
+          "en": "Include sound in the video brief",
+          "zh": "把声音要求写入视频简报"
         },
-        "process": {
-          "zh": "以草稿片段比较构图和运动，记录选择依据后再决定正式制作。",
-          "en": "Compare framing/motion in draft clips and record selection reasons before final production."
-        },
-        "outcome": {
-          "zh": "候选片段与选择记录，明确下一轮需要保留的约束。",
-          "en": "Candidate clips and selection notes with constraints for the next round."
+        "description": {
+          "en": "When the intended clip includes audio, define the sound or speech intention alongside the scene, timing, and motion. Check the selected engine and workflow for the required support before generation. Review the resulting picture and audio together, recording mismatches for the next iteration rather than judging the clip from a still frame or assuming every listed version offers the same route.",
+          "zh": "片段需要音频时，应把声音或语音意图与场景、时序和运动一起说明。生成前确认所选引擎及流程支持所需条件，结果中同时审阅画面与声音，并记录下一轮要调整的不一致之处。不以单帧判断片段，也不默认所有列出版本都使用相同路径。"
         }
       }
     ]
@@ -235,33 +290,45 @@
       "zh": "把视频控制组织成一条制作工作流。"
     },
     "description": {
-      "en": "The Combo provides the correct entry for two live Seedance engines.",
-      "zh": "Combo 为两个已上线的 Seedance 引擎提供正确入口。"
+      "en": "Text briefs, source images, frame constraints, and audio intent lead to different video-generation checks. Explore the recorded Seedance Combo capabilities with those inputs in mind, and keep the selected engine's access conditions attached to the production task.",
+      "zh": "视频输入可能来自文字、原图或首尾帧约束，声音意图还需要对应音频检查。Seedance 已记录的 Combo 用法提供理解这些制作方向的依据，实际任务仍受所选引擎访问条件限制。"
     },
     "items": [
       {
-        "title": { "en": "Text-to-video", "zh": "文生视频" },
+        "title": {
+          "en": "Text-to-video",
+          "zh": "文生视频"
+        },
         "description": {
           "en": "Turns a shot description into a generated moving sequence.",
           "zh": "将镜头描述转换为生成的视频序列。"
         }
       },
       {
-        "title": { "en": "Image-to-video", "zh": "图生视频" },
+        "title": {
+          "en": "Image-to-video",
+          "zh": "图生视频"
+        },
         "description": {
           "en": "Uses a source image as the visual basis for motion.",
           "zh": "以源图片作为动态生成的视觉基础。"
         }
       },
       {
-        "title": { "en": "First and last frame control", "zh": "首尾帧控制" },
+        "title": {
+          "en": "First and last frame control",
+          "zh": "首尾帧控制"
+        },
         "description": {
           "en": "Defines the visual start and end points of the generated shot.",
           "zh": "定义生成镜头的视觉起点与终点。"
         }
       },
       {
-        "title": { "en": "Synchronized audio", "zh": "同步音频" },
+        "title": {
+          "en": "Synchronized audio",
+          "zh": "同步音频"
+        },
         "description": {
           "en": "Supports video generation where sound belongs to the resulting sequence.",
           "zh": "支持生成包含同步声音的视频结果。"
@@ -329,10 +396,6 @@
         "description": {
           "en": "Set subject, motion, framing, duration, frames, and audio needs.",
           "zh": "明确主体、运动、构图、时长、帧与音频要求。"
-        },
-        "completion": {
-          "en": "The shot brief specifies motion, duration, reference frames, and audio requirements.",
-          "zh": "镜头简报已说明运动、时长、参考帧及音频要求。"
         }
       },
       {
@@ -343,10 +406,6 @@
         "description": {
           "en": "Use the full model for final work or Fast for early drafts.",
           "zh": "成片使用完整型号，早期草稿使用 Fast。"
-        },
-        "completion": {
-          "en": "The selected variant and generated draft match the intended production stage.",
-          "zh": "所选型号与生成草稿符合当前制作阶段。"
         }
       },
       {
@@ -357,16 +416,12 @@
         "description": {
           "en": "Check motion, frames, audio, and brand fit before delivery.",
           "zh": "交付前检查运动、帧、音频与品牌适配度。"
-        },
-        "completion": {
-          "en": "The delivered video has been played through for continuity, audio, and brand consistency.",
-          "zh": "交付视频已完整播放检查连续性、音频和品牌一致性。"
         }
       }
     ],
     "description": {
-      "en": "Use the video brief to guide generation, then inspect the moving image and audio before delivery.",
-      "zh": "用视频简报约束生成方向，交付前检查动态画面及音频，而不只判断单帧效果。"
+      "en": "Video production needs a brief that constrains more than a single frame. Prepare the intended scene and motion, use the appropriate generation route, and inspect the resulting moving image and audio before deciding which revisions are needed for delivery.",
+      "zh": "视频简报需要同时约束场景、运动和声音，静态画面好看并不能证明片段适用。选择生成路径后，还要审阅连续画面与音频，再根据实际结果安排交付前的修改。"
     }
   },
   "faq": [

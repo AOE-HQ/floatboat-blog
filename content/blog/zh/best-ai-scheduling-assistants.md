@@ -1,5 +1,7 @@
 ---
 title: "2026 年 AI 日程助手盘点：按真实排程需求筛选"
+seoTitle: "AI 日程助手推荐：2026 年按真实排程需求筛选"
+seoDescription: "按外部预约、日历优化、团队协商和会议工作流比较 AI 日程助手，了解 Calendly、Google 日历、Outlook、Motion 与 Reclaim 的适用条件，并用实际试用检查常见错配。"
 description: "面向买家的 AI 日程助手候选清单：比较外部预约、日历优化、团队协商和会议工作流，说明 Calendly、Google Calendar、Outlook、Motion 与 Reclaim 的适用场景、核验重点、试用方法与常见错配。"
 slug: "best-ai-scheduling-assistants"
 date: "2026-06-29"

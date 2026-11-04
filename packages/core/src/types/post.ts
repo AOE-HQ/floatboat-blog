@@ -8,6 +8,8 @@ import type { TldrContent } from "../content/tldr";
 export const postFrontmatterBaseSchema = z.object({
   title: z.string().min(1),
   description: z.string().min(80).max(320),
+  seoTitle: z.string().trim().min(1).optional(),
+  seoDescription: z.string().trim().min(1).max(320).optional(),
   slug: z
     .string()
     .min(1)
@@ -64,6 +66,9 @@ export interface PostMeta {
   slug: string;
   title: string;
   description: string;
+  /** Search copy is distinct from the article heading and reading-card summary. */
+  seoTitle?: string;
+  seoDescription?: string;
   date: string;
   updated?: string;
   author?: string;

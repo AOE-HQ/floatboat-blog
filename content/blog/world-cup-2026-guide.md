@@ -1,5 +1,7 @@
 ---
 title: "World Cup 2026 Guide (FIFA): Dates, Format, Hosts & FAQ"
+seoTitle: "World Cup 2026 Guide: Dates, Format, Hosts, and Key Questions"
+seoDescription: "World Cup 2026 ran from June 11 to July 19 across the US, Canada, and Mexico. Review the 48-team, 104-match format, host cities, and new Round of 32 in this tournament guide."
 description: "FIFA World Cup 2026: June 11–July 19 across US, Canada, Mexico. 48 teams, 104 matches, new Round of 32 format. Tournament overview — dates, hosts, and FAQ."
 slug: "world-cup-2026-guide"
 date: "2026-07-15"

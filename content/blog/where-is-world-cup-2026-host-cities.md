@@ -1,5 +1,7 @@
 ---
 title: "Where Was the World Cup 2026 Held? All 16 Host Cities"
+seoTitle: "World Cup 2026 Host Cities: All 16 Venues and Location Guide"
+seoDescription: "World Cup 2026 took place across 16 host markets in Canada, Mexico, and the US. Find the cities, stadium names, country split, and venues for the opening match and final rounds."
 description: "The 2026 FIFA World Cup was held across 16 host markets in Canada, Mexico, and the United States. See every city and stadium, the country split, and where the opening match, semifinals, bronze match, and final took place."
 slug: "where-is-world-cup-2026-host-cities"
 date: "2026-07-15"

@@ -1,5 +1,7 @@
 ---
 title: "Mac AI 文件整理器：运行前先做 5 项安全检查"
+seoTitle: "Mac AI 文件整理器：运行前的五项安全检查"
+seoDescription: "在 Mac 上运行 AI 文件整理器前，检查目录范围、iCloud 行为、访问权限、预览和撤销方式。先用代表文件副本验证备份与恢复，再决定是否扩大移动或重命名操作。"
 description: "在 AI 文件整理器接触你的 Mac 之前，先检查操作范围、iCloud 行为、权限与数据流、预览和撤销机制，以及备份与小批量验证方案，避免错误移动、同步扩散与无法恢复的批量改名。"
 slug: "ai-file-organizer-mac"
 date: "2026-08-26"

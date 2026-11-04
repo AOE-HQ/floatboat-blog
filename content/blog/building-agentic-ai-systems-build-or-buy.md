@@ -1,5 +1,7 @@
 ---
 title: "Agentic AI Systems: Build, Buy, or Use a Hybrid?"
+seoTitle: "Agentic AI Systems: Compare Building, Buying, and Hybrid Setups"
+seoDescription: "Agentic AI systems require a build, buy, or hybrid decision grounded in evidence. Compare governance, integrations, evaluations, total cost, lock-in, and migration through a pilot."
 description: "A practical build-versus-buy framework for agentic AI systems, covering task fit, governance, integration, evaluation, total cost, lock-in, migration, and hybrid architecture."
 slug: "building-agentic-ai-systems-build-or-buy"
 date: "2026-05-22"

@@ -1,5 +1,7 @@
 ---
 title: "单人创业者如何选择 AI Agent：五条路径与试点方法"
+seoTitle: "单人创业者 AI Agent：五条选型路径与试点方法"
+seoDescription: "单人创业者可以选择工作区、托管运行层、SaaS Builder、工作流自动化或自托管。用同一任务比较权限、恢复和总成本，通过可复现试点选择路径，而非只在托管与自建间二选一。"
 description: "单人创业者不必在托管与自建之间二选一。本文比较工作区 Agent、托管 Agent、SaaS Builder、工作流自动化和自托管五条路径，并用任务边界、权限、恢复、总成本与可复现试点做出中立决策。"
 slug: "ai-agent-solo-operators"
 date: "2026-04-15"

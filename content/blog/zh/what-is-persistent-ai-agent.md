@@ -1,5 +1,7 @@
 ---
 title: "什么是持久化 AI Agent——以及它为什么重要？"
+seoTitle: "持久化 AI Agent：记忆、状态与跨会话工作机制"
+seoDescription: "持久化 AI Agent 可以在单次会话之外保留选定记忆与状态。了解它应保存什么、如何衔接持续工作，以及与聊天工具的区别，核对实际记录和召回，而非假定所有信息都会被记住。"
 description: "持久化 AI Agent 不会因为会话结束就把你忘掉。本文讲清这到底意味着什么：它记住什么、如何区别于聊天机器人，以及为什么它正成为个人 AI 领域最重要的概念。"
 slug: "what-is-persistent-ai-agent"
 date: "2026-04-08"

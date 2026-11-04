@@ -1,5 +1,7 @@
 ---
 title: "AI Agent 工作流：把 Vibe Coding 变成可交付的软件"
+seoTitle: "AI Agent 工作流：让 Vibe Coding 形成可交付软件"
+seoDescription: "将 Vibe Coding 原型转为可交付软件，需要验收标准、仓库规则、测试与差异审查。用有边界的 Agent 工作流衔接实施和合并，保留回滚条件，并明确哪些判断仍由人负责。"
 description: "从验收标准、仓库规则到测试、Diff 审查与合并门禁：用一套有边界的 AI Agent 工作流，把 Vibe Coding 原型变成可维护、可回滚的软件，并明确哪些关键判断不能交给 Agent 代替。"
 slug: "ai-agent-workflow-vibe-coding"
 date: "2026-04-20"

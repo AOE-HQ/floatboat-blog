@@ -1,5 +1,7 @@
 ---
 title: "AI Assistant for Personal Use at Work"
+seoTitle: "AI Assistants at Work: Personal Tasks and a Seven-Day Trial"
+seoDescription: "Personal AI assistants at work depend on employer policy, account ownership, and data access. Check connected apps, approvals, and review duties before choosing an account."
 description: "Choose an AI assistant for personal use at work by employer policy, account ownership, data sensitivity, connected-app permissions, approval controls, and review needs."
 slug: "ai-assistant-for-personal-use-at-work"
 date: "2026-05-13"

@@ -1,5 +1,7 @@
 ---
 title: "What Is an Agentic Calendar? The Next Step Beyond Smart Scheduling"
+seoTitle: "Agentic Calendars: How Agent Execution Extends Scheduling"
+seoDescription: "An agentic calendar uses events to initiate configured work beyond scheduling. Understand context gathering, deadline delivery, follow-up, and differences from notes or workflow tools."
 description: "An agentic calendar acts on your schedule, not just tracks it — gathering context before events, executing against deadlines, and automating follow-up. A definition, three defining properties, and how it compares to smart schedulers, note-takers, and workflow tools."
 slug: "what-is-agentic-calendar"
 date: "2026-06-11"

@@ -1,5 +1,7 @@
 ---
 title: "工作区 Agent vs 工作流搭建器：一次讲清楚的对比"
+seoTitle: "工作区 Agent 与工作流搭建器：上下文和执行机制比较"
+seoDescription: "工作区 Agent 围绕持续交互推进任务，工作流搭建器运行预先定义的管线。结合真实场景比较两者，按任务变化、人工判断与既定流程的比例选择，而不是把所有自动化归为同一种工具。"
 description: "工作区 Agent（Workspace Agent）在你身边工作，工作流搭建器（Workflow Builder）替你运行画好的管线。本文用真实场景讲清两者的差异，并给出简单可用的选择规则，帮你判断哪种更适合自己的工作。"
 slug: "workspace-agents-vs-workflow-builders"
 date: "2026-04-28"

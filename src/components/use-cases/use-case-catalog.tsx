@@ -57,7 +57,7 @@ export function UseCaseCatalog({ locale, cards }: { locale: PersonaLocale; cards
   }
 
   return <>
-    <div className="mt-10 border-y border-black/[0.1] py-4">
+    <div className="mt-10 py-4">
       <div className="flex flex-wrap gap-2" role="tablist" aria-label={locale === "zh" ? "使用场景浏览维度" : "Use case browsing dimensions"}>
         {(Object.keys(labels.tabs) as Dimension[]).map((item) => <button key={item} type="button" role="tab" aria-selected={dimension === item} onClick={() => chooseDimension(item)} className={`rounded-full px-4 py-2 text-sm font-semibold transition ${dimension === item ? "bg-[#24221f] text-white" : "bg-white/60 text-[var(--ob-color-text-subtle)] hover:bg-white"}`}>{labels.tabs[item]}</button>)}
       </div>

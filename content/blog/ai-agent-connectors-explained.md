@@ -1,5 +1,7 @@
 ---
 title: "AI Agent Connectors Explained: MCP, OAuth, and Permissions"
+seoTitle: "AI Agent Connectors: MCP, OAuth, and Permission Boundaries"
+seoDescription: "AI agent connectors combine MCP, OAuth, scopes, and resource permissions. Learn how to assess access, run a limited trial, and diagnose failures before allowing changes."
 description: "Learn how AI agent connectors use MCP, OAuth, scopes, resource permissions, and approval gates—and how to evaluate a connector before it can read or change your work."
 slug: "ai-agent-connectors-explained"
 date: "2026-10-09"

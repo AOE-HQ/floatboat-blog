@@ -2,8 +2,8 @@
   "slug": "coworker",
   "locale": "en",
   "seo": {
-    "title": "Floatboat Coworker — A Work Agent for Delegated Tasks",
-    "description": "Delegate a defined task to an AI Work Agent that can use approved files and tools, complete the work, and return a reviewable deliverable.",
+    "title": "Work Agent: Delegate Tasks, Review Outputs, and Continue Work",
+    "description": "Delegate bounded work to a Floatboat Work Agent with the relevant files and tools. Inspect editable outputs, provide feedback, and retain control over important actions.",
     "keywords": [
       "AI work agent",
       "AI coworker",
@@ -35,7 +35,7 @@
   },
   "features": {
     "title": "A Work Agent owns the task between brief and delivery.",
-    "description": "Coworker is the task-facing role inside Floatboat—not the workspace itself and not an open-ended chat companion.",
+    "description": "Coworker is a task-focused agent role inside Floatboat, with work defined by supplied context and a concrete outcome. Explore how delegation, execution, and review connect without treating the role as an unlimited replacement for a person's judgment.",
     "items": [
       {
         "label": "Brief",
@@ -55,26 +55,24 @@
     ]
   },
   "useCases": {
-    "title": "Delegate work with a clear finish line",
-    "description": "Provide material, an objective, and acceptance criteria, then review the complete result while retaining final judgment.",
+    "title": "Use Cases for Coworker",
+    "description": "Research briefs, source-based drafts, and recurring assignments need clear boundaries before delegation. These examples connect supplied material with an inspectable result, including the evidence and decisions that still belong with the reviewer.",
     "items": [
       {
         "title": "Delegate the next concrete outcome",
-        "brief": "A bounded research question, reference scope, and decision deadline.",
-        "process": "Clarify the decision to support, read sources within scope, and separate research findings from recommendations.",
-        "outcome": "A reviewable research/decision brief separating facts and recommendations."
+        "description": "Delegate research around a specific decision, a bounded reference scope, and a deadline. Read the relevant sources and distinguish observed facts from recommendations before writing the brief. The recipient should be able to review the evidence and see which choices still require their judgment."
       },
       {
         "title": "Turn source material into a draft",
-        "brief": "Interview notes, references or assets, and format/tone requirements.",
-        "process": "Organize content from source material into a complete draft, identifying weak evidence and decisions needed.",
-        "outcome": "A complete source-grounded draft with unverified claims marked separately."
+        "description": "Interview notes, references, and supplied assets can become a complete draft when the format and tone are clear. Organize the argument around those sources, identify weak evidence, and flag unverified claims. Deliver a coherent piece that can be revised, with outstanding editorial decisions visible to the reviewer."
       },
       {
         "title": "Complete repeatable assignments",
-        "brief": "A proven task brief, approved resources, and changes for the current period.",
-        "process": "Apply proven task requirements to the current material, check changes, and deliver for review.",
-        "outcome": "The current report/client deliverable checked against consistent acceptance criteria."
+        "description": "A proven assignment can be repeated with the current period's material and the changes that matter this time. Reuse the agreed task requirements and review criteria, then check the new report or client deliverable against them. Consistent expectations should not hide differences in the underlying records."
+      },
+      {
+        "title": "Revise a reviewed deliverable",
+        "description": "A reviewer may accept the overall direction while asking for changes to selected sections or assumptions. Give the coworker the current version, the specific feedback, and the content that must remain intact. Ask for a bounded revision and an explanation of what changed, then check the new work against the original brief and the latest comments."
       }
     ]
   },
@@ -155,22 +153,19 @@
   },
   "howTo": {
     "title": "Delegate a bounded task to Coworker",
-    "description": "Define what success looks like and which actions need approval before the Agent starts working.",
+    "description": "Delegation works better when the expected result, available material, and approval boundaries are agreed first. Follow the task from that brief through execution and review, with consequential actions left for the person authorized to decide them.",
     "items": [
       {
         "title": "Specify the deliverable",
-        "description": "Describe the audience, output format, deadline, constraints, and acceptance criteria with the relevant files.",
-        "completion": "The task has a checkable deliverable rather than an open-ended instruction."
+        "description": "Describe the audience, output format, deadline, constraints, and acceptance criteria with the relevant files."
       },
       {
         "title": "Set the working boundaries",
-        "description": "Select the files and tools the Agent may use and identify actions that require human approval during execution.",
-        "completion": "Access scope and approval points are explicit before consequential actions."
+        "description": "Select the files and tools the Agent may use and identify actions that require human approval during execution."
       },
       {
         "title": "Accept or revise the handoff",
-        "description": "Inspect the produced artifact against the brief, ask for corrections where needed, and decide whether the task is complete.",
-        "completion": "The final artifact meets the stated criteria or has a specific revision request."
+        "description": "Inspect the produced artifact against the brief, ask for corrections where needed, and decide whether the task is complete."
       }
     ]
   }

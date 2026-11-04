@@ -1,5 +1,7 @@
 ---
 title: "Organize Receipts with AI: A Verifiable Filing Template"
+seoTitle: "AI Receipt Organization: Filing Rules and Verifiable Outputs"
+seoDescription: "AI receipt organization needs verified vendor, date, amount, currency, and document type. Preserve originals, isolate uncertain fields, and follow the retention rules that apply."
 description: "Organize receipts with AI by verifying vendor, date, amount, currency, type, and invoice number while preserving originals and isolating uncertain fields."
 slug: "organize-receipts-and-invoices-with-ai"
 date: "2026-09-01"

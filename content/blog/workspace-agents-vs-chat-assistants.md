@@ -1,5 +1,7 @@
 ---
 title: "Workspace Agents vs Chat Assistants: A Task-Based Comparison"
+seoTitle: "Workspace Agents vs Chat Assistants: Compare Task Boundaries"
+seoDescription: "Workspace agents and chat assistants differ in context, state, tools, and deliverables. Compare supervision, duration, recovery, and cost through a shared, evidence-based task trial."
 description: "Compare workspace agents and chat assistants by system boundary, context, state, tools, execution time, deliverables, supervision, recovery, cost, and task fit."
 slug: "workspace-agents-vs-chat-assistants"
 date: "2026-04-24"

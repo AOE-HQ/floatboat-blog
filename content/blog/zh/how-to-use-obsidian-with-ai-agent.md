@@ -1,5 +1,7 @@
 ---
 title: "如何安全地让 AI Agent 使用 Obsidian"
+seoTitle: "Obsidian 与 AI Agent：资料库访问、授权范围与安全修改"
+seoDescription: "让 AI Agent 使用 Obsidian，可以先限定资料范围并开展只读测试。结合备份、Agent Inbox 回写、CLI 与人工复核，逐步验证修改和撤销，不必一开始开放整个知识库。"
 description: "让 AI Agent 使用 Obsidian，不必一开始就交出整个知识库。本指南从最小权限、只读试跑、Agent Inbox 回写、Obsidian CLI、备份与复核入手，给出一套可撤销的实操流程。"
 slug: "how-to-use-obsidian-with-ai-agent"
 date: "2026-07-30"

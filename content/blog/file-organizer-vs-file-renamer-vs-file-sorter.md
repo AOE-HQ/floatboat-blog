@@ -1,5 +1,7 @@
 ---
 title: "File Organizer vs File Sorter vs File Renamer — Which to Buy"
+seoTitle: "File Organizer vs Renamer vs Sorter: Choose the Right Task"
+seoDescription: "File organizers, sorters, and renamers solve different problems. Compare their responsibilities and failure points with a five-question test before buying another file tool."
 description: "File organizer vs file sorter vs file renamer compared by the job each does, plus a five-question test to buy only the layer your mess needs."
 slug: "file-organizer-vs-file-renamer-vs-file-sorter"
 date: "2026-08-13"

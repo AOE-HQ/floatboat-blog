@@ -75,7 +75,7 @@ export function Toc({
       <p className={`text-xs font-semibold uppercase tracking-[0.14em] ${obText}`}>
         {title}
       </p>
-      <ol className={`mt-4 border-l text-[0.8125rem] ${obMuted}`}>
+      <ol className={`mt-4 text-[0.8125rem] ${obMuted}`}>
         {items.map((item) => (
           <li key={item.id}>
             <a

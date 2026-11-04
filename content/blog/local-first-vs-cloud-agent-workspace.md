@@ -1,5 +1,7 @@
 ---
 title: "Local-First vs Cloud Agent Workspaces: Which Fits?"
+seoTitle: "Local-First vs Cloud Agent Workspaces: Data, Tools, and Control"
+seoDescription: "Local-first and cloud agent workspaces differ in file access, privacy, background execution, and recovery. Compare connectors, collaboration, and device limits before choosing an architecture."
 description: "Compare local-first and cloud agent workspaces across files, privacy, background execution, connectors, reliability, and control—then choose the right architecture."
 slug: "local-first-vs-cloud-agent-workspace"
 date: "2026-10-09"

@@ -1,5 +1,7 @@
 ---
 title: "What Is Claude Tag? Anthropic's Shared Slack Agent Explained"
+seoTitle: "Claude Tag: Anthropic’s Shared Agent for Slack Teamwork"
+seoDescription: "Claude Tag delegates work from selected Slack channels to @Claude. Examine channel memory, connected tools, permissions, and team ownership before comparing it with Cowork or Code."
 description: "Claude Tag lets teams delegate work to @Claude from selected Slack channels. Learn how channel memory, connected tools, permissions, and team ownership differ from Cowork and Code."
 slug: "what-is-claude-tag"
 date: "2026-08-14"

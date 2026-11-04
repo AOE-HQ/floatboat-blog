@@ -1,5 +1,7 @@
 ---
 title: "AI Agent 与 Chatbot 的区别：谁在控制任务执行"
+seoTitle: "AI Agent 与 Chatbot：谁来规划、执行和检查任务"
+seoDescription: "AI Agent 与 Chatbot 在执行循环、工具调用、状态和记忆方面各有边界。通过任务适配、权限与失败处理比较两者，再用可复现测试选择足以完成实际工作的系统。"
 description: "从执行循环、工具调用、运行状态、长期记忆、权限、适合任务与风险完整拆清 AI Agent 和 Chatbot，并用一套可复现测试选择能完成真实任务的最简单架构。"
 slug: "ai-agent-vs-chatbot"
 date: "2026-03-20"

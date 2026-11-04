@@ -1,5 +1,7 @@
 ---
 title: "Claude Cowork 替代品：办公 Agent 的五种选择"
+seoTitle: "Claude Cowork 替代品：办公任务的五种 Agent 方案"
+seoDescription: "按文件访问、应用权限、审批和最终交付物，比较 Microsoft 365 Copilot、Gemini、ChatGPT Work、Manus 与 Floatboat，了解不同 Claude Cowork 替代方案适合的办公任务。"
 description: "按文件与应用权限、审批方式、最终交付物比较 Microsoft 365 Copilot、Gemini、ChatGPT Work、Manus 和 Floatboat。"
 slug: "best-claude-cowork-alternatives"
 date: "2026-08-14"

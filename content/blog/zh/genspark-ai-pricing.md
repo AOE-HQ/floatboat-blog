@@ -1,5 +1,7 @@
 ---
 title: "Genspark 定价解析：各档位权益、用量上限与真实性价比"
+seoTitle: "Genspark 价格：套餐权益、用量限制与实际成本比较"
+seoDescription: "理解 Genspark 价格，需要同时查看免费、Plus、Pro 的权益、额度与额外成本。结合 ChatGPT Plus、Perplexity 等参考和实际任务需求，判断订阅价值，而非只比较标价。"
 description: "把 Genspark 各档位的实际权益拆开讲：免费档、Plus、Pro 各包含什么，额度在哪里卡住，还有哪些隐藏成本。附带与 ChatGPT Plus、Perplexity 的价格对比和到底值不值的现实评估。"
 slug: "genspark-ai-pricing"
 date: "2026-05-07"

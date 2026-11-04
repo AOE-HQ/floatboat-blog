@@ -1,5 +1,7 @@
 ---
 title: "Agentic AI 系统：自研、购买还是混合架构？"
+seoTitle: "Agentic AI 系统：比较自研、采购与混合架构的取舍"
+seoDescription: "选择自研、采购或混合 Agentic AI 架构时，比较任务适配、治理、集成、评测与总成本，再通过试点核对厂商锁定和迁移条件，让决策依据真实证据而非演示效果。"
 description: "一套可验证的 Agentic AI 系统自研、购买与混合决策框架，从任务适配、治理、集成、评估、总拥有成本，到厂商锁定、迁移演练和选型试点，帮助团队用真实证据而非演示做架构选择。"
 slug: "building-agentic-ai-systems-build-or-buy"
 date: "2026-05-22"

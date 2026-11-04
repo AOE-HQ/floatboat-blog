@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import { BlogTopicNavigation } from "@/components/blog/topic-navigation";
 import { FaqBand } from "@/components/faq-band";
 import { resolveFaqForBlogIndex } from "@/lib/faq-data";
@@ -20,10 +21,11 @@ import { MarketingBand } from "@/components/blog/marketing-band";
 const og = openGraphLocale("zh");
 const locale = "zh" as const;
 
+const searchCopy = { title: seoTitle("AI Agent 博客：模型、工具与实际工作流指南"), description: "阅读 AI Agent 架构、模型比较、文件工作流与一人公司实践，了解具体工具的能力、限制和使用方法。按主题查找解读与教程，将资料阅读衔接到实际任务判断。" };
+
 export const metadata: Metadata = {
-  title: "AI Agent、模型与工作流博客",
-  description:
-    "Floatboat 中文博客：深入解析 AI Agent、主流模型、Agent Workspace、自动化工作流、文件工具与一人公司实践。浏览完整文章库、对比指南和实操教程。",
+  title: { absolute: searchCopy.title },
+  description: searchCopy.description,
   alternates: {
     canonical: absoluteBlogIndexUrl("zh"),
     languages: {
@@ -33,9 +35,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `AI Agent、模型与工作流博客 | ${site.name}`,
-    description:
-      "深入解析 AI Agent、主流模型、Agent Workspace、自动化工作流、文件工具与一人公司实践。",
+    title: searchCopy.title,
+    description: searchCopy.description,
     url: absoluteBlogIndexUrl("zh"),
     siteName: site.name,
     type: "website",

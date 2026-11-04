@@ -1,5 +1,7 @@
 ---
 title: "为什么 AI 管线跑在 Markdown 上——语境进、契约过、结果出"
+seoTitle: "AI 管线中的 Markdown：上下文、任务契约与结果输出"
+seoDescription: "Markdown 在 AI 管线中承担输入上下文、Agent 交接契约和结构化检索的角色。了解标题层级与内容组织如何影响切分、传递和输出，结合工程证据判断适合的格式与写作方式。"
 description: "Markdown 在 AI 管线里扮演三重角色：LLM 读得最顺的输入语境、agent 之间传递工作的交换契约、RAG 结构感知切分所依赖的层级结构。本文拆解机制、工程证据与写作习惯。"
 slug: "markdown-for-ai-pipelines"
 date: "2026-09-14"

@@ -1,5 +1,7 @@
 ---
 title: "Claude Cowork 是什么：功能、接入范围、限制与新版 Claude 的变化"
+seoTitle: "Claude Cowork：核心功能、接入限制与办公任务流程"
+seoDescription: "了解 Claude Cowork 跨文件与工具处理知识任务的方式，核对接入、平台和限制，比较它与 Code、聊天的边界，并查看并入统一 Claude 体验后对使用路径和工作流的影响。"
 description: "详解 Claude Cowork 如何跨文件与工具完成知识工作、它与 Chat 和 Claude Code 的区别、支持平台，以及 Cowork 并入新版 Claude 后发生了什么。"
 slug: "what-is-claude-cowork"
 date: "2026-08-14"

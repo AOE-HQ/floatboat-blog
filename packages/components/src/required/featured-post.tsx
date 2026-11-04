@@ -85,7 +85,7 @@ export function FeaturedPost({ post }: { post: PostMeta }) {
         {hasCover ? (
           <Link
             href={site.postPath(post.slug)}
-            className="group relative block min-h-[220px] border-t border-[var(--ob-color-border)] lg:min-h-[320px] lg:border-t-0 lg:border-l"
+            className="group relative block min-h-[220px] lg:min-h-[320px]"
             aria-label={post.title}
           >
             <FeaturedImage

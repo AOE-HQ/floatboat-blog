@@ -1,5 +1,7 @@
 ---
 title: "What Can a Browser AI Agent Actually Do?"
+seoTitle: "Browser AI Agents: What They Can Do and How to Test the Limits"
+seoDescription: "Browser AI agent capabilities depend on the page, account, and action. Test research, forms, comparisons, and signed-in work while checking permissions and failure modes."
 description: "A task-by-task guide to browser AI agent capabilities, limits, permissions, failure modes, and reproducible tests for research, forms, signed-in work, and web actions."
 slug: "browser-ai-agent-what-it-can-do"
 date: "2026-05-11"

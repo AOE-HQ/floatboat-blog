@@ -1,5 +1,7 @@
 ---
 title: "AI Tools for Business Automation in 2026"
+seoTitle: "AI Business Automation Tools: A Solo Operator’s 2026 Guide"
+seoDescription: "Business automation tools should reduce repeated work without creating tool sprawl. Compare permissions, recovery, acceptance cost, and exit options using a real task map."
 description: "AI tools for business automation in 2026 should reduce repeated work, handoffs, and context switching without adding tool sprawl."
 slug: "ai-tools-for-business-automation-2026"
 date: "2026-05-15"

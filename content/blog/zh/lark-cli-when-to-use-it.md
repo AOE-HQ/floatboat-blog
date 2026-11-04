@@ -1,5 +1,7 @@
 ---
 title: "Lark CLI：什么时候该用，什么时候该留在网页端"
+seoTitle: "Lark CLI：终端自动化适用场景与保留网页端的理由"
+seoDescription: "Lark CLI 可以通过终端组织飞书任务，但配置、token 刷新和权限维护也会增加工作。比较可执行能力、运维负担与已有集成，再判断哪些任务值得自建、哪些适合留在网页端。"
 description: "Lark CLI 能从命令行自动化飞书工作流——但对单人创业者来说，它并不总是值得自建。本文拆解 Lark CLI 的真实能力、搭建与维护的隐性成本（token 刷新、权限审批、运维负担），并用「自己搭 vs 用现成集成」的决策框架帮你判断该不该走这条路。"
 slug: "lark-cli-when-to-use-it"
 date: "2026-03-30"

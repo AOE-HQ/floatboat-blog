@@ -1,5 +1,7 @@
 ---
 title: "Lindy vs Gumloop：哪个 AI Agent 工具适合你？"
+seoTitle: "Lindy 与 Gumloop：Agent 任务和自动化设计方式比较"
+seoDescription: "用同一任务比较 Lindy 与 Gumloop 的 Agent 指令、可视流程、权限、审批和运行记录，结合失败恢复与总运营成本判断适配，不依赖固定价格、积分假设或未经验证的测试结论。"
 description: "Lindy 与 Gumloop 如何选择：用同一任务比较 Agent 指令、可视工作流、权限、审批、运行记录、失败恢复与总运营成本，不包含伪亲测、固定价格或积分结论。"
 slug: "lindy-vs-gumloop"
 date: "2026-03-20"

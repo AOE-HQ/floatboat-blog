@@ -1,5 +1,7 @@
 ---
 title: "How to Make a Table in Markdown — Syntax, Alignment and the Tricky Parts"
+seoTitle: "Markdown Tables: Syntax, Column Alignment, and Common Pitfalls"
+seoDescription: "Markdown tables rely on row structure, alignment colons, and escaped pipes. Learn how wide columns, cell breaks, and renderer differences affect GitHub, Obsidian, and Notion output."
 description: "The full guide to markdown tables: three-row structure, alignment colons, escaping pipes, line breaks inside cells, and why your table breaks in some renderers."
 slug: "markdown-table-how-to"
 date: "2026-09-07"

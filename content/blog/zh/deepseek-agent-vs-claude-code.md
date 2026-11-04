@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek Agent vs Claude Code：框架、模型、成本与适用场景"
+seoTitle: "DeepSeek Agent 与 Claude Code：框架、模型、成本与选型"
+seoDescription: "DeepSeek Agent 与 Claude Code 不能只按模型比较。区分 Harness 行为、模型路由、使用成本和任务条件，再通过范围明确、结果可复核的试用，判断哪种开发方式更适合自己。"
 description: "DeepSeek Agent vs Claude Code 并不是模型对模型。本文比较 Claude Code 框架、DeepSeek 模型路由、当前价格与一套可复核的选型方法。"
 slug: "deepseek-agent-vs-claude-code"
 date: "2026-08-14"

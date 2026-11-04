@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 import { skillPath, type FeaturedSkill, type SkillLocale } from "./featured-skills";
 
@@ -9,7 +10,7 @@ export function buildSkillMetadata(skill: FeaturedSkill, locale: SkillLocale): M
   const canonical = `https://floatboat.ai${skillPath(locale, skill.authorHandle, skill.slug)}`;
   const english = `https://floatboat.ai${skillPath("en", skill.authorHandle, skill.slug)}`;
   const chinese = `https://floatboat.ai${skillPath("zh", skill.authorHandle, skill.slug)}`;
-  const title = skill.seo.title[locale];
+  const title = seoTitle(skill.seo.title[locale]);
   const description = skill.seo.description[locale];
   const image = {
     url: `https://floatboat.ai${skillShareImagePath(skill.authorHandle, skill.slug)}`,
@@ -18,7 +19,7 @@ export function buildSkillMetadata(skill: FeaturedSkill, locale: SkillLocale): M
     alt: `${skill.name} by ${skill.publisher} — Floatboat Skill Guide`,
   };
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: skill.seo.keywords[locale],
     alternates: { canonical, languages: { en: english, "zh-Hans": chinese, "x-default": english } },

@@ -1,5 +1,7 @@
 ---
 title: "Markdown for Note-Taking — A Workflow That Outlives Any App"
+seoTitle: "Markdown Note-Taking: Portable Files and a Durable Workflow"
+seoDescription: "Markdown note-taking uses portable files, names, headings, links, and optional AI review. Set up a minimal workflow and maintenance habits without depending on one application."
 description: "A markdown note-taking workflow built on plain files: naming, structure, links, and AI review. Why plain text outlives any app, and how to set it up in an afternoon."
 slug: "markdown-for-note-taking"
 date: "2026-09-05"

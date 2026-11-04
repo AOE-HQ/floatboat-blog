@@ -45,9 +45,9 @@ def expected_sections():
                 sections[f'{prefix}/skills-marketplace/{data["author"]}/{data["slug"]}'] = copy['useCases']
     for route, section in sections.items():
         assert set(section) == {'title', 'description', 'items'}, route
-        assert section['items'] and section['title'].strip() and section['description'].strip(), route
+        assert len(section['items']) == 4 and section['title'].strip() and section['description'].strip(), route
         for item in section['items']:
-            assert set(item) == {'title', 'brief', 'process', 'outcome'}, route
+            assert set(item) == {'title', 'description'}, route
             assert all(value.strip() for value in item.values()), route
     return sections
 
@@ -64,6 +64,7 @@ class Page(HTMLParser):
         self.field = None
         self.labels = []
         self.in_label = False
+        self.in_article = False
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -82,21 +83,24 @@ class Page(HTMLParser):
         if tag == 'h2':
             self.in_heading = True
         if tag == 'article':
-            self.items.append({'title': '', 'brief': '', 'process': '', 'outcome': ''})
+            self.items.append({'title': '', 'description': ''})
+            self.in_article = True
         if tag == 'h3':
             self.field = 'title'
         if tag == 'dt':
             self.labels.append('')
             self.in_label = True
-        if tag == 'dd':
-            self.field = ['brief', 'process', 'outcome'][(len(self.labels) - 1) % 3]
+        if tag == 'p' and self.in_article:
+            self.field = 'description'
 
     def handle_endtag(self, tag):
         if tag == 'h2':
             self.in_heading = False
         if tag == 'dt':
             self.in_label = False
-        if tag in ('h3', 'dd'):
+        if tag == 'article':
+            self.in_article = False
+        if tag in ('h3', 'p'):
             self.field = None
         if tag == 'section' and self.depth:
             self.depth -= 1
@@ -124,17 +128,16 @@ def main():
         assert page.panels == 1, f'Wrong section count: {path}'
         assert page.heading == expected[route]['title'], path
         assert page.items == expected[route]['items'], f'Rendered content differs: {path}'
-        labels = ['任务输入', '处理重点', '预期结果'] if route.startswith('/zh/') else ['Task input', 'Processing focus', 'Expected result']
-        assert page.labels == labels * len(page.items), path
+        assert not page.labels, f'Unexpected segmented content labels: {path}'
         seen.add(route)
         cards += len(page.items)
     assert seen == expected.keys(), f'Missing sections: {expected.keys() - seen}'
     print(f'OK: {len(seen)} localized pages, {cards} detailed cases; none on /use-cases pages or other excluded routes')
     # An editorial review must assess substance; exact duplicates are only a signal.
     for locale, prefix in [('en', ''), ('zh', '/zh/')]:
-        values = [item['brief'] for route, section in expected.items() if route.startswith('/zh/') == bool(prefix) for item in section['items']]
+        values = [item['description'] for route, section in expected.items() if route.startswith('/zh/') == bool(prefix) for item in section['items']]
         duplicates = [value for value, count in Counter(values).items() if count > 1]
-        assert not duplicates, f'Review duplicate {locale} inputs: {duplicates}'
+        assert not duplicates, f'Review duplicate {locale} descriptions: {duplicates}'
 
 
 if __name__ == '__main__':

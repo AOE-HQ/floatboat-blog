@@ -1,5 +1,7 @@
 ---
 title: "Markdown 速查表 — 常用语法、GFM 扩展与高频易错坑，附可复制示例"
+seoTitle: "Markdown 语法速查：常用写法、GFM 扩展与可复制示例"
+seoDescription: "这份 Markdown 速查表提供基础语法、GFM 表格与任务清单的可复制示例。了解嵌套缩进、管道转义和渲染器差异，核对 GitHub、Obsidian、Notion 中容易出错的写法。"
 description: "一份可复制粘贴的 Markdown 速查表：覆盖所有渲染器都支持的基础语法（标题、强调、链接、列表）、GFM 的表格与任务清单等扩展，以及嵌套缩进、管道转义这些会在 GitHub、Obsidian、Notion 里悄悄弄坏渲染的高频易错坑。每段语法都配可运行示例与「什么时候用、坑在哪」的解析，贴进渲染器立刻看到效果。"
 slug: "markdown-cheat-sheet"
 date: "2026-09-11"

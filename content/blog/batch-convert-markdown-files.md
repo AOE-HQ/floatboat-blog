@@ -1,5 +1,7 @@
 ---
 title: "Batch Convert Markdown Files — When One File Becomes a Folder"
+seoTitle: "Batch Markdown Conversion: Process Folders and Preserve Links"
+seoDescription: "Batch Markdown conversion involves more than repeating a single-file export. Compare pandoc scripts, GUI tools, and agent workflows for folders, links, failures, and verification."
 description: "How to batch convert a folder of markdown files to PDF, Word or HTML: pandoc scripts, GUI tools, failure modes, and when folder-scale work needs an agent."
 slug: "batch-convert-markdown-files"
 date: "2026-09-21"

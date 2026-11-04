@@ -1,5 +1,7 @@
 ---
 title: "GPT-5.6 and Floatboat: Support Status, Model Tiers, and What Users Can Select"
+seoTitle: "GPT-5.6 in Floatboat: Model Tiers, Support, and Picker Access"
+seoDescription: "GPT-5.6 Sol, Terra, and Luna have distinct model roles and Floatboat records. Separate provider capabilities, underlying configuration, and what the default picker actually exposes."
 description: "A factual guide to GPT-5.6 Sol, Terra, and Luna in relation to Floatboat: which models are configured below the picker, what OpenAI offers, and what is not currently exposed."
 slug: "gpt-5-6-floatboat"
 date: "2026-07-10"

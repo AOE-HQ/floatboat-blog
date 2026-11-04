@@ -1,5 +1,7 @@
 ---
 title: "Best AI Scheduling Assistant: How to Choose by Use Case"
+seoTitle: "AI Scheduling Tools: Four Generations and Task-Based Choices"
+seoDescription: "AI scheduling tools span booking, time blocking, coordination, and event-driven execution. Compare four generations and choose by permissions, recovery, and actual work needs."
 description: "The best AI scheduling assistant depends on the job: booking, group coordination, time blocking, team optimization, or event-driven execution. Compare boundaries, permissions, recovery, and a reproducible pilot."
 slug: "best-ai-scheduling-assistant"
 date: "2026-06-29"

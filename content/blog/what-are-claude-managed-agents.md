@@ -1,5 +1,7 @@
 ---
 title: "What Are Claude Managed Agents?"
+seoTitle: "Claude Managed Agents: Hosting, Runtime, and Deployment Roles"
+seoDescription: "Claude Managed Agents hosts runtime infrastructure for long-running tasks. Examine what Anthropic manages, what remains yours, and how to evaluate deployment, security, and limits."
 description: "Claude Managed Agents is Anthropic's hosted runtime for long-running agents. Learn what it manages, where it fits, its limits, and how teams should evaluate it."
 slug: "what-are-claude-managed-agents"
 date: "2026-04-10"

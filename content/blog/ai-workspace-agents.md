@@ -1,5 +1,7 @@
 ---
 title: "What Are AI Workspace Agents? A Plain-Language Guide"
+seoTitle: "AI Workspace Agents: Files, Context, and Ongoing Execution"
+seoDescription: "AI workspace agents operate around files, browsers, and tools rather than an isolated chat. Learn what the category does, who it suits, and how it differs from workflow builders."
 description: "AI workspace agents are a new category of AI that works inside your real workspace — files, browser, tools. Here's what they are and who they're for."
 slug: "ai-workspace-agents"
 date: "2026-04-23"

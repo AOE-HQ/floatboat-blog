@@ -1,5 +1,7 @@
 ---
 title: "Feishu CLI in a Solo Work Setup: What It Actually Takes"
+seoTitle: "Feishu CLI for Solo Work: Setup, Permissions, and Upkeep"
+seoDescription: "Feishu CLI setup requires authentication, narrow scopes, and ongoing upkeep. Examine useful solo workflows, token refresh, API changes, and a limited pilot before integration."
 description: "A practical Feishu CLI guide for solo operators: official commands, authentication, least-privilege scopes, useful workflows, maintenance risks, and a safe pilot plan."
 slug: "feishu-cli-solo-work-setup"
 date: "2026-03-31"

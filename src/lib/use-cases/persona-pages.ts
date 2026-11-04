@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 
 import enLawyers from "@/data/use-cases/en/lawyers.json";
@@ -82,7 +83,7 @@ export function buildPersonaMetadata(page: PersonaPageData): Metadata {
   const zhPath = page.locale === "zh" ? path : alternate;
 
   return {
-    title: { absolute: page.seo.title },
+    title: { absolute: seoTitle(page.seo.title) },
     description: page.seo.description,
     keywords: page.seo.keywords,
     alternates: {
@@ -91,13 +92,13 @@ export function buildPersonaMetadata(page: PersonaPageData): Metadata {
     },
     openGraph: {
       type: "website",
-      title: page.seo.title,
+      title: seoTitle(page.seo.title),
       description: page.seo.description,
       url: path,
     },
     twitter: {
       card: "summary",
-      title: page.seo.title,
+      title: seoTitle(page.seo.title),
       description: page.seo.description,
     },
   };

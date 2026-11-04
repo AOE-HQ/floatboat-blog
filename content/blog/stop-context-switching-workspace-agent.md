@@ -1,5 +1,7 @@
 ---
 title: "How to Stop Context Switching with a Workspace Agent"
+seoTitle: "Workspace Agents for Focus: Reduce Handoffs and Context Switching"
+seoDescription: "A task recovery packet preserves outcomes, state, evidence, and the next step. Test whether a workspace agent improves recovery over a maintained project note during one week."
 description: "Use a task recovery packet to reduce context rebuilding, then compare a workspace agent with a maintained project note in a one-week test."
 slug: "stop-context-switching-workspace-agent"
 date: "2026-05-01"

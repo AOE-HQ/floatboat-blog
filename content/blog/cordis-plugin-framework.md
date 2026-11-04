@@ -1,5 +1,7 @@
 ---
 title: "Cordis Plugin Framework: How DeepSeek Harness Composes Services"
+seoTitle: "Cordis Plugin Framework: Services Inside DeepSeek Harness"
+seoDescription: "Cordis under DeepSeek Harness connects contexts, services, effects, and events. Examine dependency injection, isolation, hot reload, and when a plugin system suits an agent."
 description: "A practical explanation of Cordis beneath DeepSeek Harness: contexts, services, dependency injection, effects, events, isolation, hot reload, and when plugin architecture helps agents."
 slug: "cordis-plugin-framework"
 date: "2026-08-14"

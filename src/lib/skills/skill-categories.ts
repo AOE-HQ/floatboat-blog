@@ -3,7 +3,9 @@ import mergedSkills from "@/data/skills/merged-skills.json";
 import { FEATURED_SKILLS, skillPath, type SkillLocale } from "@/lib/skills/featured-skills";
 import { PUBLISHER_HANDLES, getPublisherDirectory } from "@/lib/skills/publisher-directories";
 import { getProjectForSource, projectPath } from "@/lib/projects/project-pages";
-import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES, KNOWN_PUBLISHER_HANDLES, isPublisherApproved } from "@/lib/skills/publisher-profiles";
+import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
+
+import { getResourceTaxonomy, getResourceGuide, projectResourceId, resourceCategoryPath, RESOURCE_CATEGORY_SLUGS } from "./resource-taxonomy";
 
 type Localized = Record<SkillLocale, string>;
 type CategoryCopy = { title: string; description: string };
@@ -15,13 +17,12 @@ type Category = {
   intro: Localized;
   overviewTitle: Localized;
   cta: Record<SkillLocale, { title: string; description: string }>;
-  skills: string[];
   decisions: Array<Record<SkillLocale, CategoryCopy>>;
   faq: Record<SkillLocale, Array<{ question: string; answer: string }>>;
 };
 
 const CATEGORY_DATA: Record<string, Category> = categories;
-export const SKILL_CATEGORY_SLUGS = Object.keys(CATEGORY_DATA);
+export const SKILL_CATEGORY_SLUGS = RESOURCE_CATEGORY_SLUGS;
 
 type CatalogEntry = {
   id: string;
@@ -86,17 +87,8 @@ for (const authorHandle of PUBLISHER_PROFILE_HANDLES) {
 }
 
 for (const [slug, category] of Object.entries(CATEGORY_DATA)) {
-  if (category.skills.length < 1 || new Set(category.skills).size !== category.skills.length) {
-    throw new Error(`Skill category ${slug} needs at least one distinct Skill`);
-  }
   if (category.decisions.length !== 3 || category.faq.en.length < 6 || category.faq.zh.length < 6) {
-    throw new Error(`Skill category ${slug} has incomplete decision or FAQ content`);
-  }
-  for (const id of category.skills) {
-    const author = id.split("/")[0];
-    if (!catalog.has(id) && (isPublisherApproved(author) || !KNOWN_PUBLISHER_HANDLES.includes(author))) {
-      throw new Error(`Unknown Skill ${id} in category ${slug}`);
-    }
+    throw new Error(`Resource category ${slug} has incomplete decision or FAQ content`);
   }
 }
 
@@ -104,25 +96,16 @@ export function getSkillCategory(slug: string): Category | undefined {
   return CATEGORY_DATA[slug];
 }
 
-export function skillCategoryPath(locale: SkillLocale, slug?: string) {
-  return `${locale === "zh" ? "/zh" : ""}/skills-marketplace/categories${slug ? `/${slug}` : ""}`;
+// Compatibility exports keep existing category routes and sitemap consumers stable.
+export const skillCategoryPath = resourceCategoryPath;
+
+export function getCategoryResources(slug: string, locale: SkillLocale) {
+  if (!getSkillCategory(slug)) return [];
+  return getStoreCatalog(locale).filter((entry) => entry.categories.includes(slug));
 }
 
 export function getCategorySkills(slug: string, locale: SkillLocale) {
-  const category = getSkillCategory(slug);
-  if (!category) return [];
-  return category.skills.filter((id) => catalog.has(id)).map((id) => {
-    const skill = catalog.get(id)!;
-    return {
-      id,
-      name: skill.name,
-      publisher: skill.publisher,
-      publisherHref: publisherProfilePath(locale, skill.authorHandle),
-      description: skill.description[locale],
-      href: skill.localSlug ? skillPath(locale, skill.authorHandle, skill.localSlug) : skill.sourceUrl,
-      hasLocalGuide: Boolean(skill.localSlug),
-    };
-  });
+  return getCategoryResources(slug, locale).filter((entry) => entry.entryType === "skill");
 }
 
 /** One catalog shared by the store and category pages; entries keep their original sources. */
@@ -137,7 +120,8 @@ export function getSkillCatalog(locale: SkillLocale) {
     description: skill.description[locale],
     href: skill.localSlug ? skillPath(locale, skill.authorHandle, skill.localSlug) : skill.sourceUrl,
     hasLocalGuide: Boolean(skill.localSlug),
-    categories: SKILL_CATEGORY_SLUGS.filter((slug) => CATEGORY_DATA[slug].skills.includes(skill.id)),
+    categories: getResourceTaxonomy(skill.id, locale).categories.map((category) => category.id),
+    taxonomy: getResourceTaxonomy(skill.id, locale),
   }));
 }
 
@@ -148,17 +132,20 @@ export function getStoreCatalog(locale: SkillLocale) {
     const profile = getPublisherProfile(handle)!;
     return profile.projects.map((project) => {
       const detail = getProjectForSource(handle, project.url);
+      const guide = getResourceGuide(projectResourceId(project.url));
+      if (guide && (!catalog.get(guide)?.localSlug || catalog.get(guide)?.authorHandle !== handle)) throw new Error(`Unknown canonical guide: ${guide}`);
       return {
-        id: `project:${handle}/${project.name}`,
+        id: projectResourceId(project.url),
         name: project.name,
         publisher: profile.name,
         authorHandle: handle,
         publisherHref: publisherProfilePath(locale, handle),
         sourceUrl: project.url,
         description: project[locale].description,
-        href: detail ? projectPath(locale, handle, detail.slug) : project.url,
+        href: detail ? projectPath(locale, handle, detail.slug) : guide ? skillPath(locale, handle, catalog.get(guide)!.localSlug!) : project.url,
         hasLocalGuide: false,
-        categories: [] as string[],
+        categories: getResourceTaxonomy(projectResourceId(project.url), locale).categories.map((category) => category.id),
+        taxonomy: getResourceTaxonomy(projectResourceId(project.url), locale),
         entryType: "project" as const,
         kind: project[locale].kind,
       };

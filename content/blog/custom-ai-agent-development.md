@@ -1,5 +1,7 @@
 ---
 title: "Custom AI Agent Development: Architecture, Scope, and Acceptance"
+seoTitle: "Custom AI Agent Development: Architecture, Scope, and Delivery"
+seoDescription: "Custom AI agent development needs testable requirements, tools, state, and permission boundaries. Evaluate outcomes, recovery, maintainability, and handover before accepting delivery."
 description: "A practical guide to custom AI agent development: decide whether you need an agent, define requirements, design tools and state, control permissions, evaluate outcomes, and accept a production-ready delivery."
 slug: "custom-ai-agent-development"
 date: "2026-03-27"

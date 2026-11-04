@@ -1,5 +1,7 @@
 ---
 title: "Add World Cup 2026 to Google, Outlook & Apple (ICS)"
+seoTitle: "World Cup 2026 Calendar: ICS Imports for Google, Outlook, Apple"
+seoDescription: "World Cup 2026 calendar setup uses ICS files or subscription URLs in Google, Outlook, and Apple Calendar. Review import steps, reminder behavior, FloatCup sync, and common issues."
 description: "Add World Cup 2026 fixtures to Google, Outlook & Apple Calendar. ICS import guide, subscription URL setup, and FloatCup one-click sync with reminders."
 slug: "world-cup-2026-google-calendar-ics"
 date: "2026-07-15"

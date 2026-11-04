@@ -10,7 +10,7 @@ export function RelatedPageLinks({ family, currentId, locale, title, intro }: { 
   const items = related.items;
 
   return (
-    <section aria-label={heading} className="border-t border-black/[0.08] px-5 py-14 sm:px-8 sm:py-16">
+    <section aria-label={heading} className="px-5 py-14 sm:px-8 sm:py-16">
       <div className="mx-auto max-w-7xl">
         <h2 className="font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{locale === "en" ? titleCase(heading) : heading}</h2>
         <p className="mt-3 max-w-2xl leading-7 text-[var(--ob-color-text-subtle)]">{description}</p>

@@ -1,5 +1,7 @@
 ---
 title: "GPT-6.1 Sol: Pricing, Benchmarks, Availability, and How It Compares"
+seoTitle: "GPT-6.1 Sol: Pricing, Benchmarks, Access, and Model Comparisons"
+seoDescription: "GPT-6.1 Sol combines coding, computer use, and professional-task results at a different price point from Astra. Examine benchmark scope, availability, and what the comparisons prove."
 description: "GPT-6.1 Sol brings near-Astra coding, computer use, and professional-work performance at one-fifth of Astra's token prices. Here is what the numbers do—and do not—mean."
 slug: "gpt-6-1-sol"
 updated: "2026-11-02"

@@ -2,8 +2,8 @@
   "slug": "floatim",
   "locale": "en",
   "seo": {
-    "title": "FloatIM — Agent-Native Group Chat for People and AI Agents",
-    "description": "Bring people and AI agents into shared project rooms where conversations, delegated tasks, files, decisions, and finished work remain connected.",
+    "title": "FloatIM: Group Conversations for People and Work Agents",
+    "description": "Coordinate people and Work Agents in shared conversations with FloatIM. Keep requests, project references, approvals, and delivery feedback connected to ongoing work.",
     "keywords": [
       "AI agent group chat",
       "agent workspace",
@@ -35,7 +35,7 @@
   },
   "features": {
     "title": "Conversation becomes an operating surface.",
-    "description": "Each room holds the people, agents, context, and artifacts required to move one body of work forward.",
+    "description": "FloatIM keeps people, agents, context, and outputs together around a shared objective. Compare project conversations, role ownership, and feedback continuity so collaboration can move forward without losing the decisions behind the current version of the work.",
     "items": [
       {
         "label": "Rooms",
@@ -55,26 +55,24 @@
     ]
   },
   "useCases": {
-    "title": "Keep role collaboration inside the project conversation",
-    "description": "Retain requirements, feedback, and results by role and project so agent work stays connected to team handoffs.",
+    "title": "Use Cases for FloatIM",
+    "description": "Role-based agent work, client revisions, and team handoffs depend on a shared project history. See how FloatIM conversations can retain ownership, feedback, and current results without turning a discussion into authorization for external action.",
     "items": [
       {
         "title": "Run a small agent team",
-        "brief": "A shared objective, research/operations/content responsibilities, and common materials.",
-        "process": "Assign research, operations, or content work by role and return results and ownership to the project conversation.",
-        "outcome": "Owned collaboration records and handoff results reducing manual relaying."
+        "description": "A small agent team needs a shared objective and clear ownership of research, operations, or content work. Supply common material, assign responsibilities, and return each result to the project conversation with its owner identified. Handoffs then preserve context without requiring a person to relay every intermediate message."
       },
       {
         "title": "Keep clients and agents aligned",
-        "brief": "A client project, changing requirements, past feedback, and current deliverables.",
-        "process": "Retain requirements and revision feedback by project, linking current results to the relevant decisions.",
-        "outcome": "Project-scoped requirements, revision history, and current results."
+        "description": "Client requirements and revision feedback should remain connected to the project they affect. Keep past decisions alongside current deliverables, and link a requested change to the result that addresses it. This gives people and agents the same revision history instead of several conflicting versions of the brief."
       },
       {
         "title": "Add agents to real collaboration",
-        "brief": "Team context, steps an agent may contribute to, and human checkpoints.",
-        "process": "Hand over materials, contribute drafts, and confirm the next owner; continue consequential external actions through approval.",
-        "outcome": "Task contributions connected to team collaboration, retaining approval for external actions."
+        "description": "Bring an agent into a team workflow by defining which step it can contribute to and what material it needs. Review its draft or analysis, confirm the next owner, and retain human checkpoints for consequential external actions. An agent contribution should connect to the team's actual handoff process."
+      },
+      {
+        "title": "Reconnect a paused handoff",
+        "description": "When work pauses between team members, the project conversation should show the latest accepted result, open questions, and the next owner. Reassemble those essentials from the existing material before assigning another step. Keep decisions linked to their discussion so a new participant can continue without treating old suggestions as current approval."
       }
     ]
   },
@@ -155,22 +153,19 @@
   },
   "howTo": {
     "title": "Coordinate a team task in FloatIM",
-    "description": "Give people and Agents a shared goal, a clear division of work, and a reviewable conversation history.",
+    "description": "A shared conversation needs a common objective and clear responsibilities before work is divided. The steps below connect member and agent contributions with project material and review records, making the next handoff explicit instead of relying on manual message relaying.",
     "items": [
       {
         "title": "Create the project conversation",
-        "description": "Add the outcome, deadline, source files, and constraints to a project space before assigning work.",
-        "completion": "Participants can find the same brief and source material."
+        "description": "Add the outcome, deadline, source files, and constraints to a project space before assigning work."
       },
       {
         "title": "Invite people and assign Agent roles",
-        "description": "Bring the required collaborators into the space and give each Agent a bounded research, writing, or checking responsibility.",
-        "completion": "Each part of the task has an owner and a visible handoff point."
+        "description": "Bring the required collaborators into the space and give each Agent a bounded research, writing, or checking responsibility."
       },
       {
         "title": "Review the shared result",
-        "description": "Check sources and pending decisions in the conversation, approve the final result, and retain useful context for follow-up.",
-        "completion": "The accepted result is traceable to its discussion and supporting materials."
+        "description": "Check sources and pending decisions in the conversation, approve the final result, and retain useful context for follow-up."
       }
     ]
   }

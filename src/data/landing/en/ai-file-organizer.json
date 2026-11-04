@@ -2,8 +2,8 @@
   "slug": "ai-file-organizer",
   "locale": "en",
   "seo": {
-    "title": "AI File Organizer — Organize Local Files With Preview and Approval",
-    "description": "Organize, rename, and sort local files with an AI agent that previews the proposed structure before making approved changes on your computer.",
+    "title": "AI File Organizer: Local Folder Structure, Names, and Review",
+    "description": "Organize local project files with proposed folders and names based on the chosen task. Review changes and preserve recognizable sources before accepting a new structure.",
     "keywords": [
       "AI file organizer",
       "organize files with AI",
@@ -35,7 +35,7 @@
   },
   "features": {
     "title": "More than moving files by extension.",
-    "description": "Floatboat can use filenames, folder context, and document content to propose a structure that reflects the work itself.",
+    "description": "Local file organization needs context beyond a filename. Explore how names, folder relationships, and document content inform proposed groups, while a preview gives you an opportunity to inspect changes before the approved file operations proceed.",
     "items": [
       {
         "label": "Understand",
@@ -55,26 +55,24 @@
     ]
   },
   "useCases": {
-    "title": "Organize files by project, period, and asset relationships",
-    "description": "Base classification on file use and existing conventions, keeping uncertain assignments open and changes reviewable.",
+    "title": "Use Cases for AI File Organizer",
+    "description": "Client folders, recurring records, and production assets need different filing rules. Compare how local organization can preserve project ownership, original locations, and relationships between files while leaving uncertain assignments for confirmation.",
     "items": [
       {
         "title": "Separate client work cleanly",
-        "brief": "Incoming client assets, contracts and deliverables, plus project naming rules.",
-        "process": "Classify material using project rules, keeping uncertain assignments open for confirmation.",
-        "outcome": "A client/project-separated file structure with ambiguous files held for confirmation."
+        "description": "Incoming assets, contracts, and deliverables can be filed by client and project using the naming rules you provide. Keep uncertain assignments separate for confirmation instead of forcing every file into a category. Review the proposed structure before treating an ambiguous document as belonging to a particular client."
       },
       {
         "title": "Standardize recurring records",
-        "brief": "Current invoices, receipts/reports, and approved filing rules.",
-        "process": "Rename/file current records using approved rules, recording original locations and resulting changes.",
-        "outcome": "Consistently named and filed records with a change list for review."
+        "description": "Use approved filing rules to organize the current period's invoices, receipts, and reports. Standardize names and locations while recording where each item came from and what changed. A reviewable change list helps you check recurring records without losing the connection to their original files."
       },
       {
         "title": "Tame footage and research",
-        "brief": "Source videos, transcripts, thumbnails, research drafts, and their relationships.",
-        "process": "Connect assets by source and production stage, preserving relationships between videos, transcripts, and derived files.",
-        "outcome": "A categorized structure preserving asset relationships without guessing uncertain contents from filenames."
+        "description": "Production and research folders often contain related videos, transcripts, thumbnails, and drafts. Organize them by source and production stage so derived material remains connected to its original asset. When a filename does not establish the content or relationship, leave that assignment open rather than guessing."
+      },
+      {
+        "title": "Review files with uncertain ownership",
+        "description": "Some incoming files lack enough context to assign them to a client, period, or production stage. Keep those records separate and inspect the available content and folder relationships before proposing a destination. A review list should explain the uncertainty and the decision needed, without moving or deleting a file merely to complete the classification."
       }
     ]
   },
@@ -155,22 +153,19 @@
   },
   "howTo": {
     "title": "Organize files with a reviewed plan",
-    "description": "Limit the folder scope, inspect proposed changes, and check the resulting file operations.",
+    "description": "A file-organizing task begins with a bounded directory and clear filing rules. Review the proposed structure before approving operations, then compare the actual changes and retained files with the preview rather than assuming every item was classified correctly.",
     "items": [
       {
         "title": "Choose the folder and rules",
-        "description": "Select the exact local folder, describe the target structure and naming rules, and mark folders that must stay unchanged.",
-        "completion": "The working scope, target structure, and protected locations are recorded."
+        "description": "Select the exact local folder, describe the target structure and naming rules, and mark folders that must stay unchanged."
       },
       {
         "title": "Correct the proposed changes",
-        "description": "Review classification, names, possible duplicates, and uncertain matches before approving any move or rename.",
-        "completion": "The preview resolves ambiguous items and reflects the intended rules."
+        "description": "Review classification, names, possible duplicates, and uncertain matches before approving any move or rename."
       },
       {
         "title": "Approve and inspect the result",
-        "description": "Authorize the reviewed operations, then inspect the move, rename, skip, and duplicate summary against the folder contents.",
-        "completion": "The resulting files match the approved plan and exceptions are visible."
+        "description": "Authorize the reviewed operations, then inspect the move, rename, skip, and duplicate summary against the folder contents."
       }
     ]
   }

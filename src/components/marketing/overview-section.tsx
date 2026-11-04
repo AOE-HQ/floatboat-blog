@@ -22,7 +22,7 @@ export function OverviewSection(props: OverviewSectionProps) {
     ? "lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-16"
     : variant === "features" ? "lg:grid-cols-[0.8fr_1.2fr] lg:gap-12" : "";
 
-  return <section id={id} data-overview={variant} aria-labelledby={`${id}-title`} className="border-y border-black/[0.06] py-14 sm:py-20">
+  return <section id={id} data-overview={variant} aria-labelledby={`${id}-title`} className="py-14 sm:py-20">
     <div className={`mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 ${layout}`}>
       <div className={`min-w-0 ${variant === "prose" ? "mx-auto w-full max-w-3xl" : ""}`}>
         <h2 id={`${id}-title`} className="font-serif text-3xl tracking-[-0.04em] sm:text-4xl">{title}</h2>

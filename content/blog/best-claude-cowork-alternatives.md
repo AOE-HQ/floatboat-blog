@@ -1,5 +1,7 @@
 ---
 title: "Best Claude Cowork Alternatives for Office Work"
+seoTitle: "Claude Cowork Alternatives: Five Approaches to Office Work"
+seoDescription: "Claude Cowork alternatives take different approaches to office work. Compare Microsoft 365 Copilot, Gemini, ChatGPT Work, Manus, and Floatboat by access, review, and deliverables."
 description: "Compare Microsoft 365 Copilot, Gemini for Workspace, ChatGPT Work, Manus, and Floatboat by files, app access, approvals, and finished deliverables."
 slug: "best-claude-cowork-alternatives"
 date: "2026-08-14"

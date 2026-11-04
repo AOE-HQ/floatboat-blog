@@ -1,5 +1,7 @@
 ---
 title: "Gemini Agent 是什么？Google 通用工作 Agent 详解"
+seoTitle: "Gemini Agent：Google 通用工作 Agent 与任务边界"
+seoDescription: "Gemini Agent 面向跨工具、模型和多 Agent 的持续业务任务。了解它与 Gemini App 的区别，区分已确认接入、预览能力与现阶段限制，再判断企业工作流适合哪些使用方式。"
 description: "Gemini Agent 是 Google 面向企业工作的通用 Agent，支持持久执行、多 Agent 协作、多模型路由和业务工具连接。本文解释它与 Gemini App 的区别、核心能力、开放状态及现阶段限制。"
 slug: "what-is-gemini-agent"
 date: "2026-10-10"

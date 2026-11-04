@@ -1,5 +1,7 @@
 ---
 title: "5 Questions to Ask Before You Give a Browser AI Your Logins"
+seoTitle: "Browser AI Security: Five Questions Before Sharing Account Access"
+seoDescription: "Browser AI agents may reach signed-in mail and CRM data. Ask five questions about permissions, memory, prompt injection, and first-use controls before allowing account access."
 description: "Before you let a browser AI agent touch your Gmail or CRM, walk through these 5 questions on permissions, memory, and prompt injection."
 slug: "browser-ai-agent-security-questions"
 date: "2026-05-12"

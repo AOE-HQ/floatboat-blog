@@ -1,5 +1,7 @@
 ---
 title: "什么是 Agentic Calendar？超越智能排程的下一步"
+seoTitle: "Agentic Calendar：Agent 执行如何扩展日程管理"
+seoDescription: "Agentic Calendar 以日历事件为入口组织工作，不只保存时间档。了解会前资料、截止交付和会后跟进的机制，比较智能排程、会议记录与工作流工具，核对执行所需的配置和权限。"
 description: "Agentic Calendar 是一种以日历事件为触发器、主动执行工作的 AI 系统：会前收集上下文、赶在截止日期前产出交付物、会后自动跟进，而不只是记录时间档。本文给出品类定义与三大本质属性，并把它与智能排程器、AI 会议记录工具、工作流自动化工具逐一区分。"
 slug: "what-is-agentic-calendar"
 date: "2026-06-11"

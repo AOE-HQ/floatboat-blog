@@ -2,8 +2,8 @@
   "slug": "teachers",
   "locale": "en",
   "seo": {
-    "title": "Work Agent for Teachers: Lesson Planning | Floatboat",
-    "description": "A Work Agent for teachers that turns approved curriculum sources into lesson packs, class communications, and reviewable professional evidence.",
+    "title": "AI for Teachers: Lesson Materials, Feedback, and Class Planning",
+    "description": "Prepare lesson materials, organize feedback, and develop editable teaching resources with project context. Review accuracy, classroom fit, and student-facing content before use.",
     "keywords": [
       "Work Agent for teachers",
       "AI agent for teachers",
@@ -45,7 +45,7 @@
   },
   "burdens": {
     "title": "teachers and education teams should not spend their best hours rebuilding context.",
-    "description": "A lesson rarely begins with a blank page. Teachers first reconcile curriculum goals, old materials, class needs, school formats, and the practical limits of the timetable.",
+    "description": "Lesson materials, class communications, and teaching portfolios draw on different approved sources and formats. These workflows connect curriculum goals with the current classroom context, while teachers retain decisions about pedagogy, student support, and what is ultimately shared.",
     "items": [
       {
         "label": "Context",
@@ -71,7 +71,7 @@
   },
   "buildingBlocks": {
     "title": "Assign the production work around teaching.",
-    "description": "The Work Agent follows your curriculum, approved sources, school formats, and review points; it does not decide pedagogy or student support.",
+    "description": "Teaching preparation draws on curriculum requirements, approved sources, school formats, and the current class context. These capabilities help organize materials and revisions around your review points, while the teacher decides pedagogy, student support, and the suitability of the final output.",
     "items": [
       {
         "action": "Read",

@@ -20,14 +20,14 @@ export function PersonaWorkScenes({ page, roleLabel }: { page: PersonaPageData; 
   const isZh = page.locale === "zh";
   const tasks = [...page.workflows.items.map((item) => item.title), ...page.hero.preview.outputs];
 
-  return <section id="workflows" className="border-y border-black/[0.06] py-20 sm:py-28">
+  return <section id="workflows" className="py-20 sm:py-28">
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(isZh ? `${roleLabel}可以交给 Agent 的工作` : `What ${roleLabel} can delegate`)}</h2>
         <p className="mt-5 text-lg leading-7 text-[var(--ob-color-text-subtle)]">{page.burdens.description}</p>
       </div>
 
-      <div className="mx-auto mt-10 max-w-5xl border-y border-black/[0.08] py-4">
+      <div className="mx-auto mt-10 max-w-5xl py-4">
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
           <strong className="text-xs uppercase tracking-[0.15em] text-[var(--ob-color-muted)]">{isZh ? "常见任务" : "Common tasks"}</strong>
           {tasks.map((task) => <span key={task} className="before:mr-6 before:text-black/20 before:content-['·'] first:before:hidden">{task}</span>)}
@@ -36,7 +36,7 @@ export function PersonaWorkScenes({ page, roleLabel }: { page: PersonaPageData; 
 
       <div className="mt-12">{page.workflows.items.map((workflow, index) => {
         const burden = page.burdens.items[burdenOrder[page.slug][index]];
-        return <article key={workflow.number} className="grid gap-7 border-t border-black/[0.1] py-12 first:border-t-0 first:pt-4 lg:grid-cols-[0.62fr_1.38fr] lg:gap-16">
+        return <article key={workflow.number} className="grid gap-7 py-12 first:pt-4 lg:grid-cols-[0.62fr_1.38fr] lg:gap-16">
           <div>
             <h3 className="max-w-md font-serif text-3xl leading-tight tracking-tight sm:text-4xl">{titleCase(workflow.title)}</h3>
           </div>
@@ -53,7 +53,7 @@ export function PersonaWorkScenes({ page, roleLabel }: { page: PersonaPageData; 
                 <p className="mt-3 text-sm leading-6">{workflow.flow.join(isZh ? "、" : " · ")}</p>
               </div>
             </div>
-            <div className="mt-7 border border-black/[0.08] border-l-2 border-l-[#1b1a18] bg-[var(--ob-color-surface)] px-5 py-4">
+            <div className="mt-7 border border-black/[0.08] bg-[var(--ob-color-surface)] px-5 py-4">
               <p className="text-xs font-semibold uppercase tracking-[0.14em]">{isZh ? "最终得到" : "Deliverable"}</p>
               <p className="mt-2 leading-7">{workflow.output}</p>
             </div>

@@ -1,5 +1,7 @@
 ---
 title: "Codex Harness 开源解读——OpenAI 的 Agent 运行时"
+seoTitle: "Codex Harness 开源：理解 OpenAI 的 Agent 运行层"
+seoDescription: "查看 Codex Harness 公开的 Agent 运行代码、exec、SDK 与 app-server 接口，区分已开放部分和独立服务，并比较 DeepSeek Harness 等技术栈，为自己的执行流程选择参考机制。"
 description: "OpenAI 已将 Codex Harness 在 GitHub 上开源：exec、SDK 与应用服务器 app-server。本文梳理 Agent 循环中开放了什么、什么没有开放、它与 DeepSeek Harness 等技术栈的差异，并说明对日历驱动 Agent 构建者的意义。"
 slug: "codex-harness-open-source"
 date: "2026-08-27"

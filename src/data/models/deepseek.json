@@ -2,43 +2,106 @@
   "slug": "deepseek",
   "name": "DeepSeek",
   "access": "picker",
-  "badge": { "en": "DeepSeek · Recorded chat entry", "zh": "DeepSeek · 已有对话入口记录" },
+  "badge": {
+    "en": "DeepSeek · Recorded chat entry",
+    "zh": "DeepSeek · 已有对话入口记录"
+  },
   "summary": {
     "en": "V4 Pro for complex code and mathematics; Flash for efficient everyday execution.",
     "zh": "V4 Pro 面向复杂代码与数学推理，Flash 面向高性价比日常执行。"
   },
-  "seo": {"title":{"en":"DeepSeek V4 Pro vs V4.1 Flash: Models, Features and Use Cases","zh":"DeepSeek V4 Pro 与 V4.1 Flash：模型区别、能力与用途"},"description":{"en":"Compare DeepSeek V4 Pro and DeepSeek V4.1 Flash for coding, mathematical reasoning, response speed, throughput, model IDs, and common use cases.","zh":"对比 DeepSeek V4 Pro 与 V4.1 Flash 的编程、数理推理、响应速度、吞吐、Model ID 与适用场景。"},"keywords":[{"en":"DeepSeek V4 Pro","zh":"DeepSeek V4 Pro"},{"en":"DeepSeek V4.1 Flash","zh":"DeepSeek V4.1 Flash"},{"en":"DeepSeek Pro vs Flash","zh":"DeepSeek Pro 和 Flash 对比"},{"en":"deepseek-flash","zh":"deepseek-flash"}]},
+  "seo": {
+    "title": {
+      "en": "DeepSeek Models: V4 Pro and V4.1 Flash Task Comparisons",
+      "zh": "DeepSeek 模型：V4 Pro 与 V4.1 Flash 的任务比较"
+    },
+    "description": {
+      "en": "Compare DeepSeek V4 Pro and V4.1 Flash for coding, mathematical reasoning, speed, and throughput. Check model IDs and task requirements before choosing a route.",
+      "zh": "比较 DeepSeek V4 Pro 与 V4.1 Flash 在编程、数理推理、响应速度和吞吐方面的定位，核对模型 ID 与任务条件，区分能力说明、运行配置和实际使用需求。"
+    },
+    "keywords": [
+      {
+        "en": "DeepSeek V4 Pro",
+        "zh": "DeepSeek V4 Pro"
+      },
+      {
+        "en": "DeepSeek V4.1 Flash",
+        "zh": "DeepSeek V4.1 Flash"
+      },
+      {
+        "en": "DeepSeek Pro vs Flash",
+        "zh": "DeepSeek Pro 和 Flash 对比"
+      },
+      {
+        "en": "deepseek-flash",
+        "zh": "deepseek-flash"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "DeepSeek V4 Pro vs V4.1 Flash.",
-        "zh": "DeepSeek V4 Pro 与 V4.1 Flash 对比。"
+      "en": "DeepSeek V4 Pro vs V4.1 Flash.",
+      "zh": "DeepSeek V4 Pro 与 V4.1 Flash 对比。"
     },
     "description": {
       "en": "Select DeepSeek V4 Pro for difficult code and mathematical reasoning. Move routine coding and general work to DeepSeek Flash when efficiency matters more.",
       "zh": "复杂代码与数理推理选择 DeepSeek V4 Pro；常规编程和通用任务在更重视效率时选择 DeepSeek Flash。"
     },
     "prompts": [
-      { "en": "Prove or disprove this approach", "zh": "证明或否定这个方案" },
-      { "en": "Debug this algorithm", "zh": "调试这个算法" },
-      { "en": "Make this routine edit quickly", "zh": "快速完成常规修改" }
+      {
+        "en": "Prove or disprove this approach",
+        "zh": "证明或否定这个方案"
+      },
+      {
+        "en": "Debug this algorithm",
+        "zh": "调试这个算法"
+      },
+      {
+        "en": "Make this routine edit quickly",
+        "zh": "快速完成常规修改"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Live models", "zh": "已上线型号" },
-      "value": { "en": "V4 Pro · V4.1 Flash", "zh": "V4 Pro · V4.1 Flash" }
+      "label": {
+        "en": "Live models",
+        "zh": "已上线型号"
+      },
+      "value": {
+        "en": "V4 Pro · V4.1 Flash",
+        "zh": "V4 Pro · V4.1 Flash"
+      }
     },
     {
-      "label": { "en": "Access", "zh": "使用入口" },
-      "value": { "en": "Main client picker", "zh": "客户端主选择器" }
+      "label": {
+        "en": "Access",
+        "zh": "使用入口"
+      },
+      "value": {
+        "en": "Main client picker",
+        "zh": "客户端主选择器"
+      }
     },
     {
-      "label": { "en": "Flash ID", "zh": "Flash 标准 ID" },
-      "value": { "en": "deepseek-flash", "zh": "deepseek-flash" }
+      "label": {
+        "en": "Flash ID",
+        "zh": "Flash 标准 ID"
+      },
+      "value": {
+        "en": "deepseek-flash",
+        "zh": "deepseek-flash"
+      }
     },
     {
-      "label": { "en": "API key", "zh": "API Key" },
-      "value": { "en": "Not required", "zh": "无需自备" }
+      "label": {
+        "en": "API key",
+        "zh": "API Key"
+      },
+      "value": {
+        "en": "Not required",
+        "zh": "无需自备"
+      }
     }
   ],
   "positioning": {
@@ -52,7 +115,10 @@
     },
     "traits": [
       {
-        "label": { "en": "Pro style", "zh": "Pro 风格" },
+        "label": {
+          "en": "Pro style",
+          "zh": "Pro 风格"
+        },
         "value": {
           "en": "Works through difficult logic",
           "zh": "深入处理困难逻辑"
@@ -63,7 +129,10 @@
         }
       },
       {
-        "label": { "en": "Flash style", "zh": "Flash 风格" },
+        "label": {
+          "en": "Flash style",
+          "zh": "Flash 风格"
+        },
         "value": {
           "en": "Moves routine work quickly",
           "zh": "快速推进常规工作"
@@ -74,15 +143,24 @@
         }
       },
       {
-        "label": { "en": "Decision rule", "zh": "选择原则" },
-        "value": { "en": "Escalate by difficulty", "zh": "按难度升级" },
+        "label": {
+          "en": "Decision rule",
+          "zh": "选择原则"
+        },
+        "value": {
+          "en": "Escalate by difficulty",
+          "zh": "按难度升级"
+        },
         "description": {
           "en": "Do not pay the reasoning cost when the task is already clear.",
           "zh": "任务已经明确时，不必额外承担深度推理成本。"
         }
       },
       {
-        "label": { "en": "Primary strength", "zh": "核心长项" },
+        "label": {
+          "en": "Primary strength",
+          "zh": "核心长项"
+        },
         "value": {
           "en": "Code and quantitative logic",
           "zh": "代码与数理逻辑"
@@ -100,8 +178,8 @@
       "zh": "两条 DeepSeek 路径，对应两种成本结构。"
     },
     "description": {
-      "en": "Choose based on how much reasoning the task deserves.",
-      "zh": "根据任务真正需要的推理量来选择。"
+      "en": "DeepSeek's recorded options serve different reasoning and throughput needs. Compare the model identifiers and task positioning before deciding whether a difficult investigation or a queue of routine edits warrants the same execution choice.",
+      "zh": "DeepSeek 已记录的选项面向不同推理与吞吐需求。以下条目比较型号标识和任务定位，帮助判断复杂调查与常规修改队列是否需要相同选择，而不是仅按名称决定使用方式。"
     },
     "items": [
       {
@@ -140,12 +218,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "分别验证复杂推理与常规修改",
-      "en": "Verify difficult reasoning and routine changes differently"
+      "zh": "DeepSeek 模型的使用场景",
+      "en": "Use Cases for DeepSeek Models"
     },
     "description": {
-      "zh": "算法与数值问题需要证明假设，常规队列则需要清楚边界和快速复核；使用现有可用的模型路径。",
-      "en": "Algorithmic and numerical work needs tested assumptions; routine queues need bounded scope and efficient review through an available model route."
+      "zh": "算法是否成立需要论证，数值错误需要反例，常规修改则适合逐项检查。安排 DeepSeek 任务时，可以根据这些证据要求判断推理投入，而不是让不同工作共用同一验收方式。",
+      "en": "Algorithm choices and numerical failures need different evidence from a queue of small edits. Compare how assumptions, counterexamples, and bounded checks shape these tasks before choosing the reasoning effort of an available DeepSeek model."
     },
     "items": [
       {
@@ -153,17 +231,9 @@
           "en": "Algorithm design",
           "zh": "算法设计"
         },
-        "brief": {
-          "zh": "输入规模、正确性要求、复杂度限制和边界样本。",
-          "en": "Input scale, correctness requirements, complexity limits, and edge cases."
-        },
-        "process": {
-          "zh": "检查算法假设、边界条件与正确性论证，再评估实现成本。",
-          "en": "Check assumptions, boundaries, and correctness arguments before implementation cost."
-        },
-        "outcome": {
-          "zh": "论证明确的算法方案、复杂度说明和验证样例。",
-          "en": "An argued algorithm, complexity analysis, and validation examples."
+        "description": {
+          "en": "Algorithm design needs an explicit input scale, correctness requirement, and complexity limit. Examine assumptions and edge cases before committing to an implementation, then explain why the approach should work. Include complexity analysis and validation examples so the proposed algorithm can be evaluated beyond its main execution path.",
+          "zh": "设计算法时，先明确输入规模、正确性要求和复杂度限制，再检查基本假设与边界条件。实现前解释方案为何成立，并提供复杂度分析和验证样例。这样可以判断算法在常见路径之外是否仍然可靠，而不是只观察一次运行结果。"
         }
       },
       {
@@ -171,17 +241,9 @@
           "en": "Difficult numerical bug",
           "zh": "疑难数值故障"
         },
-        "brief": {
-          "zh": "失败输入、计算步骤、预期值和实际误差。",
-          "en": "Failing inputs, calculation steps, expected values, and observed error."
-        },
-        "process": {
-          "zh": "沿数值过程查找假设或边界错误，用反例验证修改。",
-          "en": "Trace numerical assumptions/boundaries and verify changes with counterexamples."
-        },
-        "outcome": {
-          "zh": "错误机制说明、修复及原失败输入的复测。",
-          "en": "An error-mechanism explanation, fix, and retest of the original input."
+        "description": {
+          "en": "A numerical bug is easier to investigate with failing inputs, intermediate calculations, and expected values. Trace the assumptions and boundaries that produce the discrepancy, then challenge the proposed fix with counterexamples. The explanation and retest should account for the original error rather than merely changing the final number.",
+          "zh": "调查数值问题时，提供失败输入、中间计算步骤和期望值，沿计算假设与边界条件查找偏差来源。提出修改后，用反例检验它是否只是改变了最终数字。根因说明和复测结果应能够解释最初的错误是如何产生及消除的。"
         }
       },
       {
@@ -189,17 +251,19 @@
           "en": "Routine edit queue",
           "zh": "常规修改队列"
         },
-        "brief": {
-          "zh": "多项互相独立的小改动与各自验收规则。",
-          "en": "Independent small changes and their acceptance rules."
+        "description": {
+          "en": "Several small code edits can share a queue without becoming one unbounded assignment. State the acceptance rule for each change, check relevant diffs independently, and identify dependencies between items. Deliver individually reviewable changes with their checks so one successful edit does not conceal an unresolved neighboring task.",
+          "zh": "多项小型代码修改可以放在同一队列，但每项仍需有明确的处理范围和验收要求。分别检查差异与相关验证结果，识别不同修改之间的依赖。交付时保留独立的审阅单位，避免某一项成功掩盖相邻任务仍未解决的问题。"
+        }
+      },
+      {
+        "title": {
+          "en": "Investigate a boundary-heavy parser",
+          "zh": "调查边界复杂的解析逻辑"
         },
-        "process": {
-          "zh": "逐项实施、检查差异并运行相关验证，遇到跨项依赖时单独处理。",
-          "en": "Implement and review each diff with relevant checks, separating cross-item dependencies."
-        },
-        "outcome": {
-          "zh": "可分别审阅的修改与检查结果，不把队列合并成无边界任务。",
-          "en": "Individually reviewable changes and checks rather than an unbounded combined task."
+        "description": {
+          "en": "A parser or validator may fail only when several otherwise ordinary input conditions occur together. Provide the grammar or rules, failing examples, and expected errors, then trace how each boundary is handled. Ask for a causal explanation and focused tests that distinguish valid, invalid, and ambiguous cases before accepting a repair.",
+          "zh": "解析器或验证器可能只在多种普通输入条件组合时失败。提供语法或规则、失败样例和期望错误，逐步追踪各个边界怎样被处理。修复前先要求因果解释及针对性测试，区分有效、无效和含糊输入，避免用一个特殊分支掩盖整体规则问题。"
         }
       }
     ]
@@ -210,33 +274,45 @@
       "zh": "两个可直接选择的型号，各自承担明确工作。"
     },
     "description": {
-      "en": "Both models are managed by Floatboat; the distinction is the amount of reasoning the task deserves.",
-      "zh": "两个型号均由 Floatboat 托管，区别在于任务值得投入多少推理。"
+      "en": "Code reasoning, numerical analysis, and high-volume work call for different levels of investigation. This capability overview connects the recorded DeepSeek options with those demands and explains alias continuity without treating model choice as a substitute for checking results.",
+      "zh": "DeepSeek 的代码推理、数值分析和批量处理对应不同调查深度。理解已记录选项和别名延续，有助于安排推理投入；具体输出仍需要与任务证据核对，不能只凭型号判断质量。"
     },
     "items": [
       {
-        "title": { "en": "Complex code reasoning", "zh": "复杂代码推理" },
+        "title": {
+          "en": "Complex code reasoning",
+          "zh": "复杂代码推理"
+        },
         "description": {
           "en": "V4 Pro addresses algorithms, difficult logic, and failure analysis.",
           "zh": "V4 Pro 处理算法、困难逻辑与故障分析。"
         }
       },
       {
-        "title": { "en": "Mathematical reasoning", "zh": "数理推理" },
+        "title": {
+          "en": "Mathematical reasoning",
+          "zh": "数理推理"
+        },
         "description": {
           "en": "Use Pro where correctness depends on following quantitative relationships.",
           "zh": "当正确性取决于数理关系时使用 Pro。"
         }
       },
       {
-        "title": { "en": "High-throughput execution", "zh": "高吞吐执行" },
+        "title": {
+          "en": "High-throughput execution",
+          "zh": "高吞吐执行"
+        },
         "description": {
           "en": "V4.1 Flash handles lightweight coding and general requests efficiently.",
           "zh": "V4.1 Flash 高效处理轻量编程与通用请求。"
         }
       },
       {
-        "title": { "en": "Alias continuity", "zh": "别名连续性" },
+        "title": {
+          "en": "Alias continuity",
+          "zh": "别名连续性"
+        },
         "description": {
           "en": "The standard `deepseek-flash` ID maps to the V4.1 Flash client alias.",
           "zh": "标准 ID `deepseek-flash` 对应 V4.1 Flash 客户端别名。"
@@ -250,7 +326,10 @@
       "zh": "不要仅因为 Pro 规格更高就默认选择它。"
     },
     "choose": {
-      "title": { "en": "Choose V4 Pro when", "zh": "适合选择 V4 Pro" },
+      "title": {
+        "en": "Choose V4 Pro when",
+        "zh": "适合选择 V4 Pro"
+      },
       "items": [
         {
           "en": "The task contains genuine algorithmic or mathematical uncertainty.",

@@ -1,5 +1,7 @@
 ---
 title: "Gumloop Review 2026: Powerful, But Is It Right for You?"
+seoTitle: "Gumloop Review: Workflow Capabilities, Costs, and Practical Fit"
+seoDescription: "Gumloop flows and agents have different execution responsibilities. Review runtime identity, permissions, cost, visibility, and recovery with a reproducible adoption pilot."
 description: "A 2026 Gumloop review of flows versus agents, runtime identity and permissions, current cost structure, run visibility, failure recovery, and a reproducible adoption pilot."
 slug: "gumloop-review-2026"
 date: "2026-03-23"

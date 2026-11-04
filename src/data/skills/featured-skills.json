@@ -7,18 +7,14 @@
     "publisherType": "Organization",
     "sourceUrl": "https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md",
     "repositoryUrl": "https://github.com/vercel-labs/skills",
-    "category": {
-      "en": "Meta-skill · Skill discovery",
-      "zh": "元 Skill · Skill 发现"
-    },
     "seo": {
       "title": {
-        "en": "Find Skills by Vercel Labs: Guide & Installation",
-        "zh": "Find Skills by Vercel Labs：用途、安装与使用指南"
+        "en": "Find Skills: Search Agent Instructions and Compare Task Fit",
+        "zh": "Find Skills：搜索 Agent 指引并比较任务适配"
       },
       "description": {
-        "en": "Explore Find Skills by Vercel Labs: discover Agent Skills for specific tasks, compare candidates, and follow installation and usage guidance for your agent.",
-        "zh": "了解 Find Skills by Vercel Labs 的用途、使用场景与操作步骤，按具体任务搜索 Agent Skills，比较候选项及原始来源，查看 Floatboat 和其他 Agent 的安装与使用方式。"
+        "en": "Use Find Skills to search for Agent instructions around a real task, compare candidate sources, and review setup requirements before choosing what to install.",
+        "zh": "用 Find Skills 围绕实际任务搜索 Agent 指引，比较候选资源的用途、来源和安装要求，再判断哪些能力适合当前宿主；了解查找方式与原始 Skill 入口。"
       },
       "keywords": {
         "en": [
@@ -50,30 +46,24 @@
       "zh": "当你知道要完成什么工作，却不知道该找哪一个 Skill 时，可以使用 Vercel Labs 的 Find Skills。它先识别任务和领域，再查看 skills.sh 榜单或进一步搜索，最后把候选项交给你选择。"
     },
     "upstreamInstall": "npx skills add vercel-labs/skills --skill find-skills",
-    "pageCopy": {
-      "kind": {
-        "en": "Meta-skill for discovering other skills",
-        "zh": "用于发现其他 Skill 的元 Skill"
-      }
-    },
     "sectionTitles": {
       "how": {
         "en": "How to Use Find Skills by Vercel Labs",
         "zh": "如何使用 Vercel Labs 的 Find Skills"
       },
       "howDescription": {
-        "en": "Use Find Skills by Vercel Labs to move from a task description to a shortlist of relevant Skills. Describe your goal and working environment, compare each candidate’s scope and source, then follow its requirements to install and try it with your agent.",
-        "zh": "按照以下步骤使用 Find Skills by Vercel Labs，将任务需求整理成可比较的 Skill 候选清单。先说明目标与工作环境，再核对候选项的适用范围和来源，最后结合原始说明完成安装，并在实际任务中试用。"
+        "en": "A useful Skill search starts with a task and the environment where it will run. Follow the path from candidate discovery to source and prerequisite checks, then decide whether to install and test the selected instructions on a small real assignment.",
+        "zh": "明确任务和环境后，搜索结果才有可比较的标准。候选项应先核对来源、适用范围和工具前提，选定后再考虑安装，并通过真实小任务判断指引是否适合当前工作。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Find instructions for development, release, and document work",
-        "zh": "按开发、发布与文档任务寻找指引"
+        "en": "Use Cases for Find Skills",
+        "zh": "Find Skills的使用场景"
       },
       "description": {
-        "en": "Search by the check or deliverable you need, then compare candidate sources and tool requirements.",
-        "zh": "把需要完成的检查或交付物作为搜索条件，比较候选来源与工具前提。"
+        "en": "Development reviews, release checks, and document work need different reusable instructions. Compare how Find Skills uses the actual deliverable, available agent, and tool requirements to narrow candidates and preserve their original sources.",
+        "zh": "开发审查、发布检查和文档制作需要不同的可复用指引。了解 Find Skills 如何结合实际交付物、可用 Agent 和工具条件筛选候选项，并保留原始来源供进一步核对。"
       },
       "items": [
         {
@@ -81,17 +71,9 @@
             "en": "Development and code review",
             "zh": "开发与代码检查"
           },
-          "brief": {
-            "en": "A Next.js page, a performance or accessibility goal, and the agent available.",
-            "zh": "Next.js 页面、性能或无障碍检查目标，以及可用的 Agent。"
-          },
-          "process": {
-            "en": "Find Skills for React performance, accessibility, or code review when your project needs guidance beyond your usual toolkit.",
-            "zh": "项目需要 React 性能优化、无障碍检查或代码审查时，寻找适合当前技术栈的 Skill，补充已有工作方法。"
-          },
-          "outcome": {
-            "en": "Candidates with original sources, review scope, and tool requirements.",
-            "zh": "附原始来源、检查范围和工具要求的候选清单。"
+          "description": {
+            "en": "A Next.js performance or accessibility task may need guidance beyond the project's usual toolkit. Use the page, review goal, and available agent to find relevant Skills, then compare their original sources and inspection scope. Keep tool requirements visible before choosing a candidate for the actual code review.",
+            "zh": "Next.js 性能或无障碍任务可能需要补充现有工具之外的指引。根据页面、检查目标和可用 Agent 查找相关 Skills，比较原始来源及各自覆盖的范围。选择用于实际代码审阅的候选项前，先核对它们需要哪些工具和环境。"
           }
         },
         {
@@ -99,17 +81,9 @@
             "en": "Testing and deployment",
             "zh": "测试与部署"
           },
-          "brief": {
-            "en": "A release branch, test goals, and the current deployment environment.",
-            "zh": "待发布分支、测试目标与当前部署环境。"
-          },
-          "process": {
-            "en": "Look for testing, browser checks, or deployment workflows that fit your project’s tools and delivery requirements.",
-            "zh": "准备测试或发布项目时，寻找匹配现有工具和交付要求的测试、浏览器检查或部署工作流。"
-          },
-          "outcome": {
-            "en": "Instructions matched to verification and previews, separating prerequisites from execution.",
-            "zh": "匹配验证和预览任务的指引，区分安装前提与执行步骤。"
+          "description": {
+            "en": "Testing and deployment guidance should fit the release branch, verification goals, and current environment. Search for suitable browser checks, testing routines, or preview workflows, then compare their prerequisites with the project's tools. Separate preparing access and dependencies from the steps that actually test or deploy the change.",
+            "zh": "测试与部署指引需要适合待发布分支、验证目标和当前环境。查找相关浏览器检查、测试方法或预览流程后，将前提条件与项目已有工具对照。区分准备访问权限及依赖，与真正执行测试或部署的步骤，再决定使用哪套方法。"
           }
         },
         {
@@ -117,17 +91,19 @@
             "en": "Documentation and content",
             "zh": "文档与内容工作"
           },
-          "brief": {
-            "en": "Source material, a report or document format, and editing requirements.",
-            "zh": "原始资料、报告或文档的目标格式与编辑要求。"
+          "description": {
+            "en": "A report or document task can benefit from Skills selected by the intended deliverable format. Start with the source material and editing requirements, then compare document processing, writing, or conversion instructions. Shortlist candidates by what they cover and depend on instead of choosing solely because a title matches the topic.",
+            "zh": "准备报告或文档时，可以按目标交付格式寻找 Skills。提供源材料和编辑要求，比较文档处理、写作规范或格式转换指引，再根据覆盖能力及依赖筛选候选项。不要只因为标题与主题接近，就默认它适合当前交付任务。"
+          }
+        },
+        {
+          "title": {
+            "en": "Compare overlapping candidate instructions",
+            "zh": "比较用途重叠的候选指引"
           },
-          "process": {
-            "en": "Discover Skills for document processing, writing guidelines, or format conversion when preparing content for a specific deliverable.",
-            "zh": "准备报告、文档或其他交付物时，寻找文档处理、写作规范或格式转换相关能力，缩小工具选择范围。"
-          },
-          "outcome": {
-            "en": "Instructions shortlisted by deliverable format, with coverage and dependencies.",
-            "zh": "按交付格式筛选的指引，说明能处理的内容及依赖。"
+          "description": {
+            "en": "Several search results may appear to solve the same task while requiring different tools or covering different stages. Compare their original instructions, expected inputs, and maintenance sources before selecting one. Keep the choice tied to the current deliverable, and avoid installing several overlapping packages merely because their names match the same keyword.",
+            "zh": "多个搜索结果可能看起来解决同一任务，却依赖不同工具或覆盖不同阶段。选择前比较原始指令、预期输入和维护来源，将决定对应到当前交付物。不要仅因为名称匹配同一关键词，就同时安装多套职责重叠的包。"
           }
         }
       ]
@@ -147,10 +123,6 @@
         "description": {
           "en": "Tell the agent what you want to achieve and which environment you use. Include a concrete action, such as reviewing accessibility or improving React performance.",
           "zh": "告诉 Agent 你要完成什么、使用什么环境，并明确具体动作，例如检查网页无障碍或优化 React 性能。"
-        },
-        "completion": {
-          "en": "The task names a deliverable and the Agent that will run it.",
-          "zh": "任务已明确交付物和实际使用的 Agent。"
         }
       },
       {
@@ -161,10 +133,6 @@
         "description": {
           "en": "Ask Find Skills to search for relevant options. Compare what each candidate covers, who maintains it, and where its original instructions live.",
           "zh": "让 Find Skills 搜索相关选项，比较各自的适用范围、维护者和原始说明，选出与当前任务匹配的候选项。"
-        },
-        "completion": {
-          "en": "A shortlist records source, fit, and installation requirements.",
-          "zh": "候选清单包含原始来源、适用任务和安装条件。"
         }
       },
       {
@@ -175,10 +143,6 @@
         "description": {
           "en": "Read the selected Skill’s requirements, install it for your agent, and try it on a small task. Check the result before applying it more broadly.",
           "zh": "阅读选定 Skill 的使用要求，安装到你的 Agent，并从一个小任务开始试用，检查结果后再扩大使用范围。"
-        },
-        "completion": {
-          "en": "A small real input produces an inspectable result in the chosen Agent.",
-          "zh": "在选定 Agent 中用一份真实小样本得到可检查的结果。"
         }
       }
     ],

@@ -1,5 +1,7 @@
 ---
 title: "World Cup 2026 Bracket: Complete Knockout Results and Final Path"
+seoTitle: "World Cup 2026 Bracket: Knockout Results and the Final Path"
+seoDescription: "The completed World Cup 2026 bracket records every knockout round and Spain’s title path. Check match numbers, scores, extra time, and penalties against official FIFA results."
 description: "The completed 2026 World Cup bracket from the Round of 32 to the final: every knockout result, Spain's title path, bracket rules, and official FIFA sources."
 slug: "world-cup-2026-bracket"
 date: "2026-07-15"

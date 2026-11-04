@@ -1,5 +1,7 @@
 ---
 title: "What If Your Calendar Could Run Itself? Calendar-Driven AI"
+seoTitle: "Calendar-Driven AI: From Scheduled Events to Executable Work"
+seoDescription: "Calendar-driven AI is a workflow design pattern, not an automatic completion promise. Link events to reviewable work with permissions, approvals, retries, rollback, and audit history."
 description: "Explore calendar-driven AI as a design pattern: events trigger reviewable preparation or follow-up workflows, with explicit permissions, approval gates, retries, and audit history."
 slug: "what-if-your-calendar-could-run-itself"
 date: "2026-07-24"

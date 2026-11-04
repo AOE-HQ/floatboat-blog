@@ -1,5 +1,7 @@
 ---
 title: "AI Agent 与 AI 助手：控制权、工具和风险的区别"
+seoTitle: "AI Agent 与 AI 助手：工具能力、控制权与任务风险"
+seoDescription: "AI Agent 与 AI 助手的差别在于下一步由谁决定、工具如何使用，以及状态和权限怎样管理。结合人工监督、执行轨迹与评估方法，判断任务需要哪种系统和控制边界。"
 description: "从下一步由谁决定、工具如何调用、权限如何收窄、状态如何持久化、人工在哪里监督，以及结果与执行轨迹怎样评估，完整拆清 AI Agent 和 AI 助手的真实边界。"
 slug: "ai-agent-vs-ai-assistant"
 date: "2026-04-03"

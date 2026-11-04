@@ -1,5 +1,7 @@
 ---
 title: "Meta Muse Spark 适合一人公司吗：模型切换指南"
+seoTitle: "Meta Muse Spark 与一人公司：模型切换成本和任务适配"
+seoDescription: "评估 Meta Muse Spark 对一人公司的价值时，了解至 1.3 版本的变化，再比较多模态、编码和 Agent 任务的接入方式、复核负担与迁移成本，用窄路径测试判断是否切换。"
 description: "Muse Spark 到 1.3 版本发生了什么变化，一人公司应如何评估多模态、Agent 与编码能力、接入方式、复核负担和迁移成本，并通过窄路径测试决定是否切换。"
 slug: "meta-muse-spark-one-person-company"
 date: "2026-05-01"

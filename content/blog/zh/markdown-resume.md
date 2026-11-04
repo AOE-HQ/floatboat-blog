@@ -1,5 +1,7 @@
 ---
 title: "Markdown 简历——维护一份源文件，按需导出每种格式"
+seoTitle: "Markdown 简历：维护一份源文件并导出多种交付格式"
+seoDescription: "用一个 Markdown 源文件维护简历，再按需导出 PDF、Word 和网页。了解结构、YAML 与 Git 版本管理，比较导出路线，并核对 ATS 实际能解析什么，避免承诺格式一定通过筛选。"
 description: "把简历收进一个 Markdown 源文件，按需导出打印级 PDF、Word 和网页，招聘季不再从头排版。本文讲清简历的 Markdown 文件结构与 YAML 头写法、git 版本管理、三条导出路径的取舍，以及 ATS 机器解析到底读得到什么、又不能承诺什么。"
 slug: "markdown-resume"
 date: "2026-09-06"

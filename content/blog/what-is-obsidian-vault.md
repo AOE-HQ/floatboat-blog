@@ -1,5 +1,7 @@
 ---
 title: "What Is an Obsidian Vault? Files, Settings, and Boundaries"
+seoTitle: "Obsidian Vaults: Local Files, Settings, and Access Boundaries"
+seoDescription: "An Obsidian vault is a local folder of notes, attachments, and settings. Inspect its contents, understand what local storage does not guarantee, and decide when to split vaults."
 description: "An Obsidian vault is a local folder containing Markdown notes, attachments, and vault-specific settings. Learn what lives inside it, what local storage does and does not guarantee, and when to use one or several vaults."
 slug: "what-is-obsidian-vault"
 date: "2026-07-30"

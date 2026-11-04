@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek Agent 函数调用：Schema、循环与安全边界"
+seoTitle: "DeepSeek Agent 函数调用：Schema、工具循环与安全边界"
+seoDescription: "通过可运行的 Python 示例理解 DeepSeek 函数调用，查看工具 Schema、strict 模式、并行调用、思考与 MCP 如何衔接，并了解生产流程中的参数校验和失败修复方式。"
 description: "DeepSeek 函数调用（Function Calling）手把手实战：tool 模式定义、strict 严格模式、并行工具调用、思考模式与 MCP，以及生产环境的校验与修复模式——全部附可运行的 Python 示例。"
 slug: "deepseek-agent-function-calling"
 date: "2026-08-14"

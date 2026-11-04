@@ -1,5 +1,7 @@
 ---
 title: "What Is an AI File Organizer? — Three Forms, One Data Boundary"
+seoTitle: "AI File Organizers: Three Forms and Their Data Boundaries"
+seoDescription: "AI file organizers include sorting, renaming, and broader organization workflows. Understand where the model runs, what data leaves the device, and how these tools differ from search or sync."
 description: "What is an AI file organizer? A neutral, practitioner-grade definition of file sorters, renamers, and organizers — and what data leaves your machine."
 slug: "what-is-an-ai-file-organizer"
 date: "2026-08-12"

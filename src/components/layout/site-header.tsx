@@ -90,10 +90,10 @@ const NAV_MENUS: NavMenuGroup[] = [
         path: "/combostore",
       },
       {
-        en: "Skill Categories",
-        zh: "Skill 分类",
-        descEn: "Browse third-party Agent Skills by task",
-        descZh: "按任务浏览第三方 Agent Skills",
+        en: "Resource Categories",
+        zh: "资源分类",
+        descEn: "Browse Skills and independent projects by task",
+        descZh: "按任务浏览 Skills 与独立项目",
         path: "/skills-marketplace/categories",
       },
       {
@@ -301,7 +301,7 @@ export function SiteHeader() {
             <div className="absolute right-0 top-12 max-h-[calc(100vh-96px)] w-[min(320px,calc(100vw-40px))] overflow-y-auto rounded-2xl border border-black/[0.06] bg-white p-3 shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
               <nav aria-label={isZh ? "移动端导航" : "Mobile navigation"}>
                 {NAV_MENUS.map((group) => (
-                  <div key={group.en} className="border-b border-black/[0.06] py-2 last:border-0">
+                  <div key={group.en} className="py-2">
                     <p className="px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--ob-color-muted)]">
                       {isZh ? group.zh : group.en}
                     </p>

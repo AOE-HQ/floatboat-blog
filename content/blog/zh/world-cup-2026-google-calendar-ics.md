@@ -1,5 +1,7 @@
 ---
 title: "把 2026 世界杯加进 Google、Outlook 与 Apple 日历（ICS）"
+seoTitle: "2026 世界杯日历：Google、Outlook 与 Apple 的 ICS 导入"
+seoDescription: "了解如何通过 ICS 文件或订阅 URL，将 2026 世界杯赛程加入 Google、Outlook 与 Apple 日历，核对导入、提醒、FloatCup 同步和常见问题，区分一次性文件与持续订阅。"
 description: "把 2026 世界杯赛程加入 Google Calendar、Outlook 与 Apple Calendar 的方法：ICS 导入指南、订阅 URL 设置、常见问题排查，以及带提醒的 FloatCup 一键同步。"
 slug: "world-cup-2026-google-calendar-ics"
 date: "2026-07-15"

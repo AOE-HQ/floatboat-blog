@@ -1,5 +1,7 @@
 ---
 title: "What Is MiniMax H3 — The Open Omni-Modal Video Model"
+seoTitle: "MiniMax H3: Omni-Modal Video Architecture and Model Scope"
+seoDescription: "MiniMax H3 combines text, image, video, and audio inputs for video generation. Check FL2VA, Ref2VA, output specs, prices, and open-weight boundaries with a controlled media test."
 description: "MiniMax H3 is an open-weight omni-modal video model that turns text, images, clips, and audio into 2K video with native stereo sound. Capabilities and limits."
 slug: "what-is-minimax-h3"
 date: "2026-08-04"

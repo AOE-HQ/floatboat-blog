@@ -1,5 +1,7 @@
 ---
 title: "如何为重复性工作构建 AI Agent"
+seoTitle: "重复工作 AI Agent：任务定义、测试与流程复用方法"
+seoDescription: "构建重复工作 AI Agent，需从任务契约、受限工具、状态与审批开始。结合评估集、影子运行、可观测性和恢复测试，把提示词原型变成能持续维护与验收的工作流程。"
 description: "从任务契约、受限工具、状态与审批开始构建重复工作 AI Agent，并通过评估集、影子运行、可观测性和失败恢复，把原型变成可以长期维护、可靠验收并安全扩展权限的生产流程。"
 slug: "how-to-build-ai-agents-for-repeated-work"
 date: "2026-05-14"

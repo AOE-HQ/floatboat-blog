@@ -1,5 +1,7 @@
 ---
 title: "How to Scale a One-Person Business Without Hiring"
+seoTitle: "Scaling a Solo Business: Systems and AI Without Extra Hiring"
+seoDescription: "Scaling a solo business starts with the actual constraint. Test pricing, a narrower offer, deletion, automation, or contractor capacity before deciding whether hiring is necessary."
 description: "Scale a one-person business by diagnosing the constraint, then testing offer, pricing, deletion, automation, or contractor capacity before hiring."
 slug: "scale-one-person-business-without-hiring"
 date: "2026-04-15"

@@ -2,8 +2,8 @@
   "slug": "consultants",
   "locale": "en",
   "seo": {
-    "title": "Work Agent for Consultants: Client Delivery | Floatboat",
-    "description": "A Work Agent for consultants that organizes client evidence, conducts scoped research, compares options, prepares workshops, and drafts editable deliverables.",
+    "title": "AI for Consultants: Research Evidence, Analysis, and Deliverables",
+    "description": "Work from client materials and research evidence to prepare structured analysis and editable deliverables. Keep sources, assumptions, and review decisions together across revisions.",
     "keywords": [
       "Work Agent for consultants",
       "AI agent for consultants",
@@ -45,7 +45,7 @@
   },
   "burdens": {
     "title": "consultants and advisory teams should not spend their best hours rebuilding context.",
-    "description": "An engagement loses momentum when interview notes, source material, hypotheses, and deck edits stop telling the same story.",
+    "description": "Consulting assignments move from discovery material to a recommendation and a reviewable presentation. These workflows keep interview evidence, working hypotheses, and exhibit revisions connected so the engagement brief remains traceable as specialists and reviewers contribute.",
     "items": [
       {
         "label": "Context",
@@ -71,7 +71,7 @@
   },
   "buildingBlocks": {
     "title": "Assign the evidence work around client judgment.",
-    "description": "The Work Agent follows the engagement brief, approved evidence, exhibit standards, and review cadence; it does not choose the methodology or recommendation.",
+    "description": "A consulting workspace needs engagement evidence, working files, and review checkpoints to stay connected. These capabilities support preparation and revision under your selected standards, while the consultant continues to choose the methodology and own the recommendation.",
     "items": [
       {
         "action": "Read",

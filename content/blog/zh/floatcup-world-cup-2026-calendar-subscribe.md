@@ -1,5 +1,7 @@
 ---
 title: "FloatCup：一键订阅 2026 世界杯赛程日历"
+seoTitle: "FloatCup 世界杯日历：订阅归档、保留与移除指南"
+seoDescription: "FloatCup 的 2026 世界杯日历现已归档。回顾赛事期间的订阅方式，了解结束后保留或移除日历的判断方法，并通过官方结果核对历史比赛，而不是将旧赛程当作新赛事提醒。"
 description: "FloatCup 2026 世界杯赛程日历归档：回顾 104 场比赛订阅在赛事期间如何工作，说明 7 月 19 日赛事结束与西班牙夺冠后的历史保留价值，并提供移除或保存日历的判断方法与 FIFA 官方结果入口。"
 slug: "floatcup-world-cup-2026-calendar-subscribe"
 date: "2026-07-15"

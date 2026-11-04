@@ -1,5 +1,7 @@
 ---
 title: "What Is Markdown? — Plain-Text Format Behind Docs, Notes and AI"
+seoTitle: "Markdown: Plain-Text Syntax for Documents, Notes, and AI"
+seoDescription: "Markdown uses plain-text markers for headings, lists, links, and emphasis. Learn its origins, CommonMark and GFM variants, and role in documents, notes, Git, and AI outputs."
 description: "Markdown is the 2004 plain-text syntax that became the default for docs, git repos, note apps and AI output — how it works, its dialects, and why it won."
 slug: "what-is-markdown"
 date: "2026-09-10"

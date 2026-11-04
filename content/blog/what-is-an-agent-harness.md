@@ -1,5 +1,7 @@
 ---
 title: "What Is an Agent Harness? Architecture, Loops, and Safety"
+seoTitle: "Agent Harness: Execution Loops, Context, Approvals, and Recovery"
+seoDescription: "An agent harness connects model decisions with context, tools, sandboxes, approvals, and recovery. Trace the execution loop and compare its role with frameworks and workspaces."
 description: "Learn what an AI agent harness does, how its execution loop, context, tools, sandbox, approvals, tracing, and recovery fit together, and how to evaluate one."
 slug: "what-is-an-agent-harness"
 date: "2026-10-09"

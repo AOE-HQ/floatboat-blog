@@ -1,5 +1,7 @@
 ---
 title: "Grok 3 API 已退役：2026 年迁移、价格与选型指南"
+seoTitle: "Grok 3 API 退役：接口重定向、价格与模型迁移选择"
+seoDescription: "Grok 3 API 退役后，旧模型名的路由与计费需要重新核对。了解转向 Grok 4.3 的影响、搜索工具成本和迁移检查，避免保留旧调用名称却误判实际运行的模型。"
 description: "Grok 3 API 已在 2026 年退役，旧 slug 会自动转到 Grok 4.3。本文说明实际计费、现行模型选择、搜索工具成本，以及小团队如何安全迁移。"
 slug: "grok-3-api-solo-operator"
 date: "2026-04-23"

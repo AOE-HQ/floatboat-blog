@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek Agent Function Calling: Schemas, Loops, and Safety"
+seoTitle: "DeepSeek Function Calling: Schemas, Tool Loops, and Safety"
+seoDescription: "DeepSeek function calling connects tool schemas with an agent execution loop. Explore strict mode, parallel calls, thinking, MCP, and validation through runnable Python examples."
 description: "Learn DeepSeek function calling for agents: tool schemas, strict mode, parallel tool calls, thinking mode, MCP, and production repair patterns — with runnable Python examples."
 slug: "deepseek-agent-function-calling"
 date: "2026-08-14"

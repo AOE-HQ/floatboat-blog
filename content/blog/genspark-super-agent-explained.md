@@ -1,5 +1,7 @@
 ---
 title: "Genspark Super Agent: What's New in 2026 and Who It Fits"
+seoTitle: "Genspark Super Agent: Multi-Model Workflows and Task Fit"
+seoDescription: "Genspark Super Agent combines research and artifact creation. Use the article’s dated source checks and repeatable test to assess permissions, retries, credits, exports, and task fit."
 description: "Genspark Super Agent explained through official capabilities and a reproducible research-to-artifact test: sources, permissions, retries, credits, exports, and fit, verified October 13, 2026."
 slug: "genspark-super-agent-explained"
 date: "2026-05-25"

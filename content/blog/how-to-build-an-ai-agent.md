@@ -1,5 +1,7 @@
 ---
 title: "How to Build an AI Agent: From Task Contract to Recovery"
+seoTitle: "AI Agent Building: Task Contracts, Tool Loops, and Recovery"
+seoDescription: "Building an AI agent requires task definition, models, tools, context, and state. Add approvals, evaluations, observability, staged deployment, and tested failure recovery."
 description: "A practical guide to building an AI agent from task definition and tool design through permissions, state, evals, observability, deployment, and failure recovery."
 slug: "how-to-build-an-ai-agent"
 date: "2026-03-25"

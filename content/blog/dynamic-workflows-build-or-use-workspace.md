@@ -1,5 +1,7 @@
 ---
 title: "Dynamic Workflows: Build Agents or Use a Workspace?"
+seoTitle: "Dynamic AI Workflows: Build Agents or Choose a Workspace"
+seoDescription: "Dynamic workflows can use custom subagent orchestration or an execution workspace. Compare repeated work, parallel value, guidance, maintenance, and review before owning that layer."
 description: "Dynamic Workflows raises a practical question: should solo operators build agent orchestration or use a workspace built for execution?"
 slug: "dynamic-workflows-build-or-use-workspace"
 date: "2026-05-29"

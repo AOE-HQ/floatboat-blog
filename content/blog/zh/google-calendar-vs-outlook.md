@@ -1,5 +1,7 @@
 ---
 title: "Google Calendar vs Outlook：怎么选工作日历"
+seoTitle: "Google 日历与 Outlook：按工作排程和协作需求选择"
+seoDescription: "选择 Google 日历或 Outlook，应结合共享、委派、会议、任务和管理需求。了解跨组织共存与隐私边界，再通过真实租户测试和双向迁移清单核对工作环境适配。"
 description: "从共享、委派、会议、任务、AI、管理与隐私边界比较 Google Calendar 和 Outlook，并提供跨组织共存策略、场景矩阵、双向迁移清单与基于真实租户的选择测试方法。"
 slug: "google-calendar-vs-outlook"
 date: "2026-05-29"

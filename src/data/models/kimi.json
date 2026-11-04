@@ -10,36 +10,90 @@
     "en": "Kimi K3 is publicly listed and has a recorded long-text capacity profile; current client access should be checked separately.",
     "zh": "Kimi K3 已公开列出，并有长文本容量画像记录；当前客户端入口需另行核对。"
   },
-  "seo": {"title":{"en":"Kimi K3 Model: 1M Context, Model ID and Long-Text Capabilities","zh":"Kimi K3 模型：1M 上下文、Model ID 与长文本能力"},"description":{"en":"Learn about the Kimi K3 model ID, configured 1M context profile, long-text reasoning role, compatibility names, use cases, and current status.","zh":"了解 Kimi K3 的准确 Model ID、1M 上下文画像、长文本思考定位、兼容名称、适用场景与当前状态。"},"keywords":[{"en":"Kimi K3","zh":"Kimi K3"},{"en":"Kimi K3 model","zh":"Kimi K3 模型"},{"en":"Kimi 1M context","zh":"Kimi 1M 上下文"},{"en":"kimi-k3 model ID","zh":"kimi-k3 Model ID"}]},
+  "seo": {
+    "title": {
+      "en": "Kimi K3: Model IDs, Configured Context, and Long-Text Tasks",
+      "zh": "Kimi K3：模型标识、上下文配置与长文本任务"
+    },
+    "description": {
+      "en": "Review Kimi K3’s exact model ID, configured 1M context profile, long-text role, and compatibility names. Distinguish configuration records from actual client availability.",
+      "zh": "了解 Kimi K3 的准确模型 ID、已配置的 1M 上下文画像、长文本定位与兼容名称，区分配置记录和客户端实际可用性，再判断是否适合资料阅读与推理任务。"
+    },
+    "keywords": [
+      {
+        "en": "Kimi K3",
+        "zh": "Kimi K3"
+      },
+      {
+        "en": "Kimi K3 model",
+        "zh": "Kimi K3 模型"
+      },
+      {
+        "en": "Kimi 1M context",
+        "zh": "Kimi 1M 上下文"
+      },
+      {
+        "en": "kimi-k3 model ID",
+        "zh": "kimi-k3 Model ID"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "Kimi K3 model, 1M context profile, and long-text capabilities.",
-        "zh": "Kimi K3 模型、1M 上下文画像与长文本能力。"
+      "en": "Kimi K3 model, 1M context profile, and long-text capabilities.",
+      "zh": "Kimi K3 模型、1M 上下文画像与长文本能力。"
     },
     "description": {
       "en": "Kimi K3 appears on Floatboat’s current pricing page and has an older long-text capacity record. Check the current client entry and plan before relying on the historical model ID.",
       "zh": "Floatboat 当前价格页已列出 Kimi K3，另有较早的长文本容量记录。使用前核对当前客户端入口和套餐，不要仅依据历史模型 ID。"
     },
     "prompts": [
-      { "en": "Synthesize a long research set", "zh": "综合大型研究资料集" }
+      {
+        "en": "Synthesize a long research set",
+        "zh": "综合大型研究资料集"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Model ID", "zh": "Model ID" },
-      "value": { "en": "kimi-k3", "zh": "kimi-k3" }
+      "label": {
+        "en": "Model ID",
+        "zh": "Model ID"
+      },
+      "value": {
+        "en": "kimi-k3",
+        "zh": "kimi-k3"
+      }
     },
     {
-      "label": { "en": "Capacity", "zh": "容量画像" },
-      "value": { "en": "1M budget", "zh": "1M 预算" }
+      "label": {
+        "en": "Capacity",
+        "zh": "容量画像"
+      },
+      "value": {
+        "en": "1M budget",
+        "zh": "1M 预算"
+      }
     },
     {
-      "label": { "en": "Channel", "zh": "通道" },
-      "value": { "en": "Long-text reasoning", "zh": "长文本思考" }
+      "label": {
+        "en": "Channel",
+        "zh": "通道"
+      },
+      "value": {
+        "en": "Long-text reasoning",
+        "zh": "长文本思考"
+      }
     },
     {
-      "label": { "en": "Availability", "zh": "可用状态" },
-      "value": { "en": "Historical configuration", "zh": "旧记录未显示选择器入口" }
+      "label": {
+        "en": "Availability",
+        "zh": "可用状态"
+      },
+      "value": {
+        "en": "Historical configuration",
+        "zh": "旧记录未显示选择器入口"
+      }
     }
   ],
   "positioning": {
@@ -53,23 +107,38 @@
     },
     "traits": [
       {
-        "label": { "en": "Strength", "zh": "能力方向" },
-        "value": { "en": "Long-text reasoning", "zh": "长文本思考" },
+        "label": {
+          "en": "Strength",
+          "zh": "能力方向"
+        },
+        "value": {
+          "en": "Long-text reasoning",
+          "zh": "长文本思考"
+        },
         "description": {
           "en": "The configured profile is aimed at context-heavy synthesis.",
           "zh": "已配置画像面向上下文密集型综合任务。"
         }
       },
       {
-        "label": { "en": "Scale", "zh": "规模" },
-        "value": { "en": "1M budget", "zh": "1M 预算" },
+        "label": {
+          "en": "Scale",
+          "zh": "规模"
+        },
+        "value": {
+          "en": "1M budget",
+          "zh": "1M 预算"
+        },
         "description": {
           "en": "Capacity is registered for large inputs.",
           "zh": "已为大型输入登记容量。"
         }
       },
       {
-        "label": { "en": "Compatibility", "zh": "兼容标识" },
+        "label": {
+          "en": "Compatibility",
+          "zh": "兼容标识"
+        },
         "value": {
           "en": "K2 and latest recognized",
           "zh": "兼容 K2 与 latest"
@@ -80,8 +149,14 @@
         }
       },
       {
-        "label": { "en": "Boundary", "zh": "当前边界" },
-        "value": { "en": "No main-picker access", "zh": "主选择器不可选" },
+        "label": {
+          "en": "Boundary",
+          "zh": "当前边界"
+        },
+        "value": {
+          "en": "No main-picker access",
+          "zh": "主选择器不可选"
+        },
         "description": {
           "en": "The model has a capacity configuration but no current client selection entry.",
           "zh": "容量已配置不代表已经公开上线。"
@@ -95,8 +170,8 @@
       "zh": "一个准确 ID，对应明确的就绪状态。"
     },
     "description": {
-      "en": "Economic profiles also recognize `kimi-k2` and `kimi-latest` for compatibility.",
-      "zh": "经济画像同时兼容 `kimi-k2` 与 `kimi-latest`。"
+      "en": "The recorded Kimi profile uses a specific model identity alongside documented aliases and capacity assumptions. Use those details to understand the configuration, then check the current client route before treating a profile or public listing as an available execution option.",
+      "zh": "Kimi 画像记录了具体型号及相关别名、容量假设。以下条目用于理解配置背景；实际安排任务前仍需检查当前客户端路径，避免将历史画像或公开列表直接当作可执行入口。"
     },
     "items": [
       {
@@ -119,12 +194,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "为长材料研究与审阅准备任务",
-      "en": "Prepare tasks for long-source research and review"
+      "zh": "Kimi 模型的使用场景",
+      "en": "Use Cases for Kimi Models"
     },
     "description": {
-      "zh": "这些任务对应长文本定位；执行前须核对当前入口，历史容量配置本身不证明账号已经可以使用。",
-      "en": "These tasks reflect a long-text role; verify current access before execution, since historical capacity configuration does not establish account availability."
+      "zh": "长材料里的主张可能跨越多个章节，综合和审阅都需要保留这些关系。围绕 Kimi 规划任务时，还需先确认访问路径，使全文分析需求与历史配置记录、当前可用状态分别对应。",
+      "en": "Long-source synthesis and whole-document review require reliable access as well as sufficient context. These examples connect source relationships and cross-section checks with task planning, while keeping historical Kimi configuration records separate from current availability."
     },
     "items": [
       {
@@ -132,17 +207,9 @@
           "en": "Long research synthesis",
           "zh": "长篇研究综合"
         },
-        "brief": {
-          "zh": "长篇来源集、研究问题与需要保留的证据关系。",
-          "en": "Long sources, a research question, and evidence relationships to retain."
-        },
-        "process": {
-          "zh": "在可用入口确认后比较跨来源论点，保留矛盾与出处。",
-          "en": "After access is confirmed, compare cross-source claims while preserving disagreement and attribution."
-        },
-        "outcome": {
-          "zh": "有来源关系、不同意见和证据缺口的研究综合。",
-          "en": "A synthesis retaining source relationships, differing views, and evidence gaps."
+        "description": {
+          "en": "Once access is confirmed, long-form research can compare claims across extensive sources without losing their relationships. Keep the research question explicit and retain attribution and differing views throughout the synthesis. The finished analysis should expose evidence gaps instead of presenting an unsupported agreement between sources.",
+          "zh": "确认当前入口可用后，可围绕明确的研究问题比较长篇资料中的不同主张。综合过程中保留来源之间的关系、引用归属和不同观点，让最终分析能够指出证据缺口，而不是将尚无支持的内容写成多方一致的判断。"
         }
       },
       {
@@ -150,17 +217,9 @@
           "en": "Extended document review",
           "zh": "长文档审阅"
         },
-        "brief": {
-          "zh": "完整文档、审阅标准和跨章节依赖。",
-          "en": "A full document, review criteria, and cross-section dependencies."
-        },
-        "process": {
-          "zh": "连接远距离章节中的主张与条件，核对一致性而非只做分段摘要。",
-          "en": "Connect claims/conditions across distant sections and test consistency beyond isolated summaries."
-        },
-        "outcome": {
-          "zh": "按章节定位的问题和全文一致性结论。",
-          "en": "Section-located findings and whole-document consistency conclusions."
+        "description": {
+          "en": "Reviewing a long document requires attention to connections between distant sections. Use the stated review criteria to compare claims, definitions, and conditions across the full text, beyond isolated section summaries. Locate findings precisely and explain whether the document remains consistent when its parts are read together.",
+          "zh": "长文档审阅不仅需要逐节总结，还要检查相距较远的论点、定义和条件是否一致。依据既定审阅要求跨章节核对，将问题定位到具体段落，并说明各部分合在一起时是否产生矛盾，形成面向全文的审阅结论。"
         }
       },
       {
@@ -168,17 +227,19 @@
           "en": "Status-aware planning",
           "zh": "基于状态的规划"
         },
-        "brief": {
-          "zh": "任务规模、已记录的模型 ID 和当前客户端菜单。",
-          "en": "Task scale, a recorded model ID, and the current client menu."
+        "description": {
+          "en": "Before planning a task around a recorded Kimi model, compare its scale with the current client menu and route requirements. Check the model identifier and budget assumptions separately from actual access. Keep execution prerequisites and unconfirmed steps visible so a configuration record does not become an availability promise.",
+          "zh": "围绕已记录的 Kimi 型号安排任务前，先比较任务规模、当前客户端菜单和调用路径要求。分别核对模型标识、预算假设与实际访问情况，明确执行前提和待确认步骤，避免把配置记录误写成已经可以使用的承诺。"
+        }
+      },
+      {
+        "title": {
+          "en": "Build a source-location index",
+          "zh": "为长资料建立出处索引"
         },
-        "process": {
-          "zh": "核对可用通道与预算要求，区分历史配置和实际访问状态。",
-          "en": "Check routes and budget requirements, distinguishing configuration from actual access."
-        },
-        "outcome": {
-          "zh": "可执行前提明确的任务计划，未开放环节保持待核。",
-          "en": "A task plan with explicit execution prerequisites and unconfirmed steps left open."
+        "description": {
+          "en": "Before a long review, map important claims, definitions, and evidence to their locations in the supplied material. Keep the original terminology and document relationships so later questions can return to the right passage. Use an available Kimi route only after checking access, and distinguish an index for navigation from a conclusion about the strength of the evidence.",
+          "zh": "正式审阅前，可以先将关键主张、定义和证据对应到材料中的位置。保留原有术语及文档关系，让后续问题能够找到正确段落。使用 Kimi 路径前仍需核对访问条件，并区分用于导航的索引与关于证据可靠程度的最终结论。"
         }
       }
     ]
@@ -189,19 +250,25 @@
       "zh": "选择器下层已经准备了什么。"
     },
     "description": {
-      "en": "Only confirmed runtime configuration is listed.",
-      "zh": "这里只列出已经确认的运行时配置。"
+      "en": "Exact model identity, long-text configuration, and access status answer different questions about Kimi. The entries below retain those distinctions, helping you assess context requirements without treating a recorded runtime budget as proof that your current account can use the route.",
+      "zh": "精确型号、长文本配置和访问状态，回答的是关于 Kimi 的不同问题。以下条目保留这些区别，帮助评估上下文要求，而不把运行预算记录当作当前账号已获访问的证明。"
     },
     "items": [
       {
-        "title": { "en": "Exact K3 identity", "zh": "准确的 K3 标识" },
+        "title": {
+          "en": "Exact K3 identity",
+          "zh": "准确的 K3 标识"
+        },
         "description": {
           "en": "The registered model ID is `kimi-k3`.",
           "zh": "已登记 Model ID 为 `kimi-k3`。"
         }
       },
       {
-        "title": { "en": "1M capacity profile", "zh": "1M 容量画像" },
+        "title": {
+          "en": "1M capacity profile",
+          "zh": "1M 容量画像"
+        },
         "description": {
           "en": "A 1M budget is configured for the model.",
           "zh": "该模型已配置 1M 预算。"
@@ -286,10 +353,46 @@
         "zh": "Kimi K3 是 Moonshot 的模型，在当前模型矩阵中配置了长文本思考画像与 1M 容量预算。"
       }
     },
-    {"question":{"en":"What is the Kimi K3 model ID?","zh":"Kimi K3 的 Model ID 是什么？"},"answer":{"en":"The exact registered model ID is `kimi-k3`; `kimi-k2` and `kimi-latest` are recognized compatibility names.","zh":"准确登记的 Model ID 是 `kimi-k3`；`kimi-k2` 与 `kimi-latest` 属于兼容名称。"}},
-    {"question":{"en":"How large is the Kimi K3 context profile?","zh":"Kimi K3 的上下文有多大？"},"answer":{"en":"The configured capacity profile carries a 1M budget for context-heavy workloads.","zh":"已配置容量画像包含 1M 预算，面向上下文密集型工作。"}},
-    {"question":{"en":"What is Kimi K3 best suited for?","zh":"Kimi K3 适合什么任务？"},"answer":{"en":"Its confirmed positioning is long-text reasoning, large research sets, extended document review, and tasks that need relationships preserved across distant sections.","zh":"其已确认定位是长文本思考、大型研究资料集、长文档审阅，以及需要保留远距离章节关系的任务。"}},
-    {"question":{"en":"What is the current Kimi K3 support status?","zh":"Kimi K3 当前是什么支持状态？"},"answer":{"en":"Kimi K3 is named on the current pricing page and has an older capacity record. That record does not establish which entry your account can use today; check the current model menu.","zh":"当前价格页已列出 Kimi K3，另有旧容量记录。该记录不能证明你的账号今天可用哪个入口，应查看当前模型菜单。"}},
+    {
+      "question": {
+        "en": "What is the Kimi K3 model ID?",
+        "zh": "Kimi K3 的 Model ID 是什么？"
+      },
+      "answer": {
+        "en": "The exact registered model ID is `kimi-k3`; `kimi-k2` and `kimi-latest` are recognized compatibility names.",
+        "zh": "准确登记的 Model ID 是 `kimi-k3`；`kimi-k2` 与 `kimi-latest` 属于兼容名称。"
+      }
+    },
+    {
+      "question": {
+        "en": "How large is the Kimi K3 context profile?",
+        "zh": "Kimi K3 的上下文有多大？"
+      },
+      "answer": {
+        "en": "The configured capacity profile carries a 1M budget for context-heavy workloads.",
+        "zh": "已配置容量画像包含 1M 预算，面向上下文密集型工作。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is Kimi K3 best suited for?",
+        "zh": "Kimi K3 适合什么任务？"
+      },
+      "answer": {
+        "en": "Its confirmed positioning is long-text reasoning, large research sets, extended document review, and tasks that need relationships preserved across distant sections.",
+        "zh": "其已确认定位是长文本思考、大型研究资料集、长文档审阅，以及需要保留远距离章节关系的任务。"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the current Kimi K3 support status?",
+        "zh": "Kimi K3 当前是什么支持状态？"
+      },
+      "answer": {
+        "en": "Kimi K3 is named on the current pricing page and has an older capacity record. That record does not establish which entry your account can use today; check the current model menu.",
+        "zh": "当前价格页已列出 Kimi K3，另有旧容量记录。该记录不能证明你的账号今天可用哪个入口，应查看当前模型菜单。"
+      }
+    },
     {
       "question": {
         "en": "What is a useful document-heavy test for Kimi?",

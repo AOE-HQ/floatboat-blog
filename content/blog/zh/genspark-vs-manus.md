@@ -1,5 +1,7 @@
 ---
 title: "Genspark 对比 Manus：研究创作工具还是执行系统"
+seoTitle: "Genspark 与 Manus：研究创作和任务执行能力比较"
+seoDescription: "用同一套七任务测试比较 Genspark 与 Manus 的研究证据、产物质量、账户权限和重复稳定性，核对实际工作量成本与复核负担，避免只依据产品演示或订阅标价选型。"
 description: "从研究证据、交付物质量、账号权限、重复稳定性与实际工作量成本对比 Genspark 和 Manus，并提供一套可复用的七任务测试与选型方法，帮助团队避免只看演示或订阅标价。"
 slug: "genspark-vs-manus"
 date: "2026-03-26"

@@ -1,5 +1,7 @@
 ---
 title: "2026 年 Gumloop 替代品：还有哪些值得考虑"
+seoTitle: "Gumloop 替代品：比较工作流工具与 Agent 执行方案"
+seoDescription: "比较 n8n、Make、Relay.app 与 Lindy 等 Gumloop 替代品，按工作流适配、权限、恢复和实际计费单位评估。通过可复跑试点检查迁移风险，而不是仅凭功能清单决定切换。"
 description: "2026 年 Gumloop 替代品对比：从工作流适配、权限、故障恢复、真实成本单位、迁移风险与可复跑试点，分析 n8n、Make、Relay.app 和 Lindy 分别适合哪些自动化与 Agent 场景。"
 slug: "gumloop-alternatives-2026"
 date: "2026-03-24"

@@ -1,5 +1,7 @@
 ---
 title: "2026 最好的 Markdown 编辑器——按工作流排名，不按功能堆砌"
+seoTitle: "Markdown 编辑器：按写作、笔记和文档工作流比较"
+seoDescription: "按写作、笔记和文档工作流比较 Obsidian、Typora、VS Code、Zettlr 与 iA Writer，了解每种 Markdown 编辑器的取舍，以及哪些任务更适合免安装的浏览器工具。"
 description: "2026 年主流 Markdown 编辑器全对比：Obsidian、Typora、VS Code、Zettlr、iA Writer 各自适合什么工作流、放弃了什么、价格如何，以及哪些场景下免安装的浏览器工具反而比本地应用更合适。"
 slug: "best-markdown-editors"
 date: "2026-09-20"

@@ -1,5 +1,7 @@
 ---
 title: "Effort Control and Fast Mode for AI Work"
+seoTitle: "AI Effort Control vs Fast Mode: Reasoning Depth or Faster Work"
+seoDescription: "AI reasoning effort and fast modes trade latency, cost, and review burden. Use repeatable task evaluations to decide when deeper thinking or a speed premium is worthwhile."
 description: "A practical framework for choosing AI reasoning effort and response speed by task risk, latency, cost, and review burden."
 slug: "effort-control-fast-mode-ai-work"
 date: "2026-05-29"

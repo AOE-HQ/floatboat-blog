@@ -30,7 +30,7 @@ export function ModelsIndexPage({ locale }: { locale: ModelLocale }) {
         description={isZh ? "开箱即用，无需自备 API Key。在同一个桌面工作空间中使用 Auto / Lite 自动路由，或从订阅配置开放的模型中直接选择。" : "Ready out of the box with no API key required. Use the Auto / Lite routing option or directly select models enabled by your subscription configuration."}
       />
 
-      <section className="border-y border-black/[0.06] bg-white/45 py-20 sm:py-28">
+      <section className="bg-white/45 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-10 max-w-3xl">
             <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{isZh ? "对话模型与自动路由" : "Chat models and automatic routing"}</h2>

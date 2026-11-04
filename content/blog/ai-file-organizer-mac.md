@@ -1,5 +1,7 @@
 ---
 title: "AI File Organizer for Mac: 5 Safety Checks Before You Run It"
+seoTitle: "AI File Organizer for Mac: Five Checks for Safer File Changes"
+seoDescription: "An AI file organizer for Mac needs bounded access, iCloud checks, preview, and recovery. Test a small file copy before approving broader moves or renaming operations."
 description: "Before an AI file organizer touches your Mac, check its scope, iCloud behavior, permissions, preview and undo design, and backup plan."
 slug: "ai-file-organizer-mac"
 date: "2026-08-26"

@@ -1,5 +1,7 @@
 ---
 title: "Why AI Forgets Between Sessions—and How to Fix It"
+seoTitle: "AI Memory Between Sessions: Diagnose Context Loss and Fix It"
+seoDescription: "AI context loss can arise from windows, history, memory, retrieval, or privacy controls. Diagnose the layer with repeatable tests and distinguish saving, recall, and deletion."
 description: "Diagnose why an AI loses context between chats by separating context windows, session history, long-term memory, retrieval, and privacy controls, then choose a reproducible fix."
 slug: "why-ai-forgets-between-sessions"
 date: "2026-04-10"

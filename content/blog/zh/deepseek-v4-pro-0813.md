@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek V4 Pro 0813——悄无声息的 GA，与它真正改变的东西"
+seoTitle: "DeepSeek V4 Pro 0813：正式版变化与实际使用影响"
+seoDescription: "回顾 DeepSeek V4 Pro 0813 从预览转为正式版的变化，查看发布时规格、官方 Agent 基准声称与当时的价格窗口，并在该时间背景下比较 Grok 4.6，避免沿用历史报价。"
 description: "DeepSeek V4 Pro 0813 在没有发布公告的情况下悄悄转正（GA）。本文整理其完整规格、官方声称的 Agent 基准成绩、8 月 16 日涨价前的定价窗口、与预览版相比的真实变化，以及它与同周发布的 Grok 4.6 的正面较量。"
 slug: "deepseek-v4-pro-0813"
 date: "2026-08-14"

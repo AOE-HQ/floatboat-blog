@@ -1,5 +1,7 @@
 ---
 title: "Solopreneur Pricing: Why You Should Charge from Day One"
+seoTitle: "Solopreneur Pricing: Charge Early and Test Willingness to Pay"
+seoDescription: "Solopreneur pricing begins with a bounded paid offer and clear delivery terms. Compare billing bases, calculate a defensible floor, and test demand without treating the first price as final."
 description: "Create a bounded paid offer, choose a pricing basis, calculate a defensible floor, and test the first solopreneur price without pretending it is final."
 slug: "solopreneur-pricing-day-one"
 date: "2026-04-13"

@@ -1,5 +1,7 @@
 ---
 title: "MiniMax H3 Max 直播演示：生成速度比播放还快"
+seoTitle: "MiniMax H3 Max 直播：生成速度、连续播放与演示解读"
+seoDescription: "将 MiniMax H3 Max Live 作为实验性连续视频管线评估，结合文章注明日期的来源，检查官方状态、价格、吞吐、缓冲与审核条件，再通过成本测试判断演示与实际运行的差距。"
 description: "把 MiniMax H3 Max Live 作为实验性连续视频管线评估，覆盖官方状态、价格、吞吐、缓冲、审核与成本测试，核验于 2026 年 10 月 13 日。"
 slug: "minimax-h3-max-infinite-ai-livestream"
 date: "2026-09-02"

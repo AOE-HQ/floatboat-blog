@@ -2,46 +2,106 @@
   "slug": "openai",
   "name": "OpenAI",
   "access": "picker",
-  "badge": { "en": "OpenAI · Recorded chat entry", "zh": "OpenAI · 已有对话入口记录" },
+  "badge": {
+    "en": "OpenAI · Recorded chat entry",
+    "zh": "OpenAI · 已有对话入口记录"
+  },
   "summary": {
     "en": "Astra and image-generation entries sit alongside configured coding profiles and the newer Sol/Luna names now listed on the pricing page.",
     "zh": "目录同时包含 Astra、图像生成入口、代码型号配置记录，以及价格页新列出的 Sol/Luna 型号。"
   },
-  "seo": {"title":{"en":"OpenAI models: Astra, GPT-6 Sol, Luna, and GPT-6.1 Sol.","zh":"OpenAI 模型：Astra、GPT-6 Sol、Luna 与 GPT-6.1 Sol。"},"description":{"en":"Compare existing Astra and image-generation routes with the newer GPT names shown on Floatboat’s pricing page. Model generation, runtime ID, and account access are separate checks.","zh":"对照已有 Astra 和图像生成入口，以及 Floatboat 价格页新列出的 GPT 型号。模型代际、运行时 ID 和账号开放范围需要分别核对。"},"keywords":[{"en":"GPT-6 Astra","zh":"GPT-6 Astra"},{"en":"OpenAI models","zh":"OpenAI 模型"},{"en":"GPT-Image-2","zh":"GPT-Image-2"},{"en":"GPT-5.3 Codex","zh":"GPT-5.3 Codex"}]},
+  "seo": {
+    "title": {
+      "en": "OpenAI Models: GPT Generations, Runtime IDs, and Access",
+      "zh": "OpenAI 模型：GPT 代际、运行标识与实际接入范围"
+    },
+    "description": {
+      "en": "Compare Astra and image routes with newer GPT listings in Floatboat. Separate model generations, runtime IDs, and account access when planning reasoning or creative work.",
+      "zh": "比较已有 Astra、图像生成入口与 Floatboat 新列出的 GPT 型号，分别核对模型代际、运行标识和账户权限，再为推理、资料分析或创作任务选择实际可用的路径。"
+    },
+    "keywords": [
+      {
+        "en": "GPT-6 Astra",
+        "zh": "GPT-6 Astra"
+      },
+      {
+        "en": "OpenAI models",
+        "zh": "OpenAI 模型"
+      },
+      {
+        "en": "GPT-Image-2",
+        "zh": "GPT-Image-2"
+      },
+      {
+        "en": "GPT-5.3 Codex",
+        "zh": "GPT-5.3 Codex"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "OpenAI models: Astra, GPT-6 Sol, Luna, and GPT-6.1 Sol.",
-        "zh": "OpenAI 模型：Astra、GPT-6 Sol、Luna 与 GPT-6.1 Sol。"
+      "en": "OpenAI models: Astra, GPT-6 Sol, Luna, and GPT-6.1 Sol.",
+      "zh": "OpenAI 模型：Astra、GPT-6 Sol、Luna 与 GPT-6.1 Sol。"
     },
     "description": {
       "en": "Compare existing Astra and image-generation routes with the newer GPT names shown on Floatboat’s pricing page. Model generation, runtime ID, and account access are separate checks.",
       "zh": "对照已有 Astra 和图像生成入口，以及 Floatboat 价格页新列出的 GPT 型号。模型代际、运行时 ID 和账号开放范围需要分别核对。"
     },
     "prompts": [
-      { "en": "Reason through this decision", "zh": "推演这个决策" },
-      { "en": "Implement and verify this feature", "zh": "实现并验证这个功能" },
-      { "en": "Turn this brief into an image", "zh": "把这份简报变成图像" }
+      {
+        "en": "Reason through this decision",
+        "zh": "推演这个决策"
+      },
+      {
+        "en": "Implement and verify this feature",
+        "zh": "实现并验证这个功能"
+      },
+      {
+        "en": "Turn this brief into an image",
+        "zh": "把这份简报变成图像"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Inventory scope", "zh": "型号范围" },
-      "value": { "en": "Recorded routes + current pricing listings", "zh": "已有接入记录 + 当前价格页型号" }
+      "label": {
+        "en": "Inventory scope",
+        "zh": "型号范围"
+      },
+      "value": {
+        "en": "Recorded routes + current pricing listings",
+        "zh": "已有接入记录 + 当前价格页型号"
+      }
     },
     {
-      "label": { "en": "Live image model", "zh": "已上线图像型号" },
+      "label": {
+        "en": "Live image model",
+        "zh": "已上线图像型号"
+      },
       "value": {
         "en": "GPT-Image-2 via Combo",
         "zh": "GPT-Image-2 · 通过 Combo"
       }
     },
     {
-      "label": { "en": "Configured capacity", "zh": "已配置容量" },
-      "value": { "en": "GPT-5.6 Sol/Terra · GPT-5.3 Codex", "zh": "GPT-5.6 Sol/Terra · GPT-5.3 Codex" }
+      "label": {
+        "en": "Configured capacity",
+        "zh": "已配置容量"
+      },
+      "value": {
+        "en": "GPT-5.6 Sol/Terra · GPT-5.3 Codex",
+        "zh": "GPT-5.6 Sol/Terra · GPT-5.3 Codex"
+      }
     },
     {
-      "label": { "en": "API key", "zh": "API Key" },
-      "value": { "en": "Not required", "zh": "无需自备" }
+      "label": {
+        "en": "API key",
+        "zh": "API Key"
+      },
+      "value": {
+        "en": "Not required",
+        "zh": "无需自备"
+      }
     }
   ],
   "positioning": {
@@ -55,31 +115,52 @@
     },
     "traits": [
       {
-        "label": { "en": "Live role", "zh": "当前角色" },
-        "value": { "en": "Flagship reasoning", "zh": "旗舰推理" },
+        "label": {
+          "en": "Live role",
+          "zh": "当前角色"
+        },
+        "value": {
+          "en": "Flagship reasoning",
+          "zh": "旗舰推理"
+        },
         "description": {
           "en": "Astra handles complex instructions, decisions, and agent orchestration.",
           "zh": "Astra 处理复杂指令、决策与 Agent 编排。"
         }
       },
       {
-        "label": { "en": "Work style", "zh": "工作方式" },
-        "value": { "en": "Reasons before execution", "zh": "执行前充分推演" },
+        "label": {
+          "en": "Work style",
+          "zh": "工作方式"
+        },
+        "value": {
+          "en": "Reasons before execution",
+          "zh": "执行前充分推演"
+        },
         "description": {
           "en": "Best where the cost of a weak plan is high.",
           "zh": "适合薄弱方案会造成高成本后果的任务。"
         }
       },
       {
-        "label": { "en": "Visual lane", "zh": "视觉路径" },
-        "value": { "en": "Delivered through a Combo", "zh": "通过 Combo 承载" },
+        "label": {
+          "en": "Visual lane",
+          "zh": "视觉路径"
+        },
+        "value": {
+          "en": "Delivered through a Combo",
+          "zh": "通过 Combo 承载"
+        },
         "description": {
           "en": "GPT-Image-2 produces images rather than chat output.",
           "zh": "GPT-Image-2 生成图像，而不是作为文本对话型号出现。"
         }
       },
       {
-        "label": { "en": "Status discipline", "zh": "状态边界" },
+        "label": {
+          "en": "Status discipline",
+          "zh": "状态边界"
+        },
         "value": {
           "en": "Configuration and client access",
           "zh": "已配置不等于可选择"
@@ -97,8 +178,8 @@
       "zh": "不要把所有 GPT 模型视为可以互换。"
     },
     "description": {
-      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
-      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
+      "en": "OpenAI entries span recorded chat, code, and image routes as well as newer public listings. Compare their stated access status and purpose individually; a pricing-page name does not establish the same client entry or execution path for every model.",
+      "zh": "OpenAI 条目涵盖已记录的对话、代码和图像路径，以及较新的公开列表。以下逐项说明状态与用途；价格页列出名称，并不能证明所有型号都有相同客户端入口或执行方式。"
     },
     "items": [
       {
@@ -229,12 +310,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "分开准备产品决策、Agent 编排与图像任务",
-      "en": "Prepare product decisions, agent orchestration, and image work separately"
+      "zh": "OpenAI 模型的使用场景",
+      "en": "Use Cases for OpenAI Models"
     },
     "description": {
-      "zh": "推理与代码任务需要项目约束，图像交付还需要视觉简报及对应入口；不能只凭型号名称判断执行方式。",
-      "en": "Reasoning and code work need project constraints; image work also needs a visual brief and the appropriate entry point, beyond the model name."
+      "zh": "产品决定要比较事实与假设，Agent 编排要约定工具边界，图像制作则需要视觉简报。准备 OpenAI 任务时，应将这些输入和审阅条件分别对应到实际可用的模型或绘图入口。",
+      "en": "Product decisions, agent orchestration, and image production need different inputs and review criteria. Compare project constraints with visual briefs and tool permissions, then match each task to its actual OpenAI model or drawing entry point."
     },
     "items": [
       {
@@ -242,17 +323,9 @@
           "en": "Complex product decision",
           "zh": "复杂产品决策"
         },
-        "brief": {
-          "zh": "互相冲突的产品需求、决策标准与不可变约束。",
-          "en": "Conflicting product requirements, decision criteria, and fixed constraints."
-        },
-        "process": {
-          "zh": "比较选择及其后果，区分事实、假设和需要决策者确认的部分。",
-          "en": "Compare options and consequences, separating facts, assumptions, and decisions requiring confirmation."
-        },
-        "outcome": {
-          "zh": "能交给项目团队的决策简报与待确认事项。",
-          "en": "A decision brief for the project team and outstanding questions."
+        "description": {
+          "en": "A difficult product decision often contains conflicting requirements and constraints that cannot all be relaxed. Compare candidate options against explicit criteria, separating facts from assumptions and choices requiring confirmation. The decision brief should give the team a reasoned direction and a clear list of unresolved questions.",
+          "zh": "复杂产品决定往往包含相互冲突的要求，以及无法随意放宽的约束。按照明确标准比较候选方案，分别说明事实、假设和需要确认的选择。决策简报应让团队理解建议方向的依据，并看清仍未解决的问题。"
         }
       },
       {
@@ -260,17 +333,9 @@
           "en": "Agent orchestration",
           "zh": "Agent 编排"
         },
-        "brief": {
-          "zh": "多步骤目标、可用工具、步骤依赖和人工审批规则。",
-          "en": "A multistep objective, tools, dependencies, and approval rules."
-        },
-        "process": {
-          "zh": "梳理指令层级、工具结果与后续动作，保留每阶段的验证节点。",
-          "en": "Map instruction hierarchy, tool results, and subsequent actions with verification at each stage."
-        },
-        "outcome": {
-          "zh": "任务编排方案，包含输入输出、依赖与失败处理。",
-          "en": "An orchestration plan with inputs/outputs, dependencies, and failure handling."
+        "description": {
+          "en": "Agent orchestration needs a multistep objective, available tools, dependencies, and approval rules. Map instruction priority and tool results to the actions that may follow, with verification at each stage. Describe inputs, outputs, and failure handling so the plan can be reviewed before execution begins.",
+          "zh": "设计 Agent 编排时，先提供多步骤目标、可用工具、依赖关系和授权规则。梳理指令优先级及工具结果如何影响后续行动，并为各阶段保留验证节点。执行方案应说明输入、输出和失败处理，方便在开始前审阅整个流程。"
         }
       },
       {
@@ -278,17 +343,19 @@
           "en": "Image from a creative brief",
           "zh": "根据创意简报生成图像"
         },
-        "brief": {
-          "zh": "用途、画面内容、尺寸、品牌素材及修改要求。",
-          "en": "Intended use, visual content, dimensions, brand assets, and revision requirements."
+        "description": {
+          "en": "Image work begins with intended use, visual content, dimensions, supplied brand assets, and revision requirements. Choose the appropriate drawing workflow, compare previews against the brief, and revise the mismatches. Deliver the visual assets with concrete revision notes rather than treating the first generated image as the final result.",
+          "zh": "图像任务需要说明用途、画面内容、尺寸、已有品牌素材和修改要求。使用适合的绘图流程生成预览，对照简报检查差异，再进行针对性调整。交付视觉素材时保留具体修改意见，不把首次生成的图片直接当作最终成果。"
+        }
+      },
+      {
+        "title": {
+          "en": "Design recovery after a tool failure",
+          "zh": "设计工具失败后的恢复流程"
         },
-        "process": {
-          "zh": "通过对应画图工作流处理视觉简报，比较预览后按要求修订。",
-          "en": "Use the appropriate drawing workflow, compare previews, and revise against the brief."
-        },
-        "outcome": {
-          "zh": "符合简报的视觉素材，以及可继续修改的说明。",
-          "en": "Visual assets matching the brief and notes for further revisions."
+        "description": {
+          "en": "A multistep agent task needs a clear response when a tool returns an error or incomplete evidence. Supply the intended action, observed result, and approval rules, then compare retry, investigation, and stop conditions. The recovery plan should preserve task state and human decisions instead of allowing an unsuccessful call to trigger an unbounded sequence of actions.",
+          "zh": "多步骤 Agent 任务需要明确处理工具错误或证据不完整的情况。提供预期动作、实际返回和批准规则，比较重试、继续调查及停止条件。恢复方案保留任务状态和人工决定，避免一次失败调用引发没有边界的后续行动。"
         }
       }
     ]
@@ -299,33 +366,45 @@
       "zh": "同一供应商系列，按产品入口准确区分。"
     },
     "description": {
-      "en": "Chat and image generation use different entry points. The coding configuration record is separate from current client access; verify the precise version in the menu.",
-      "zh": "聊天与图像生成使用不同入口，已配置的代码型号在旧配置记录中未对应默认模型选择器入口，当前状态需另行核对。"
+      "en": "Reasoning, agent execution, image generation, and prepared code capacity connect to different parts of Floatboat. Review those boundaries before assigning a task, particularly where an older configuration record does not establish the current default picker or drawing workflow.",
+      "zh": "OpenAI 推理、Agent 执行和图像生成连接 Floatboat 的不同环节。已准备的代码容量也不等于当前默认选择器状态，理解能力时需要保留历史配置、实际菜单和绘图流程之间的区别。"
     },
     "items": [
       {
-        "title": { "en": "Frontier reasoning", "zh": "旗舰推理" },
+        "title": {
+          "en": "Frontier reasoning",
+          "zh": "旗舰推理"
+        },
         "description": {
           "en": "GPT-6 Astra is selectable for complex reasoning and broad instruction following.",
           "zh": "GPT-6 Astra 可直接用于复杂推理与通用指令遵从。"
         }
       },
       {
-        "title": { "en": "Agent task execution", "zh": "Agent 任务执行" },
+        "title": {
+          "en": "Agent task execution",
+          "zh": "Agent 任务执行"
+        },
         "description": {
           "en": "Astra is positioned for deep Agent orchestration and architecture-level work.",
           "zh": "Astra 面向深度 Agent 编排与架构级工作。"
         }
       },
       {
-        "title": { "en": "Image generation", "zh": "图像生成" },
+        "title": {
+          "en": "Image generation",
+          "zh": "图像生成"
+        },
         "description": {
           "en": "GPT-Image-2 is live as the default high-quality model in `ai-image-drawing`.",
           "zh": "GPT-Image-2 已作为 `ai-image-drawing` 的默认高质量生图模型上线。"
         }
       },
       {
-        "title": { "en": "Prepared code capacity", "zh": "已准备的代码容量" },
+        "title": {
+          "en": "Prepared code capacity",
+          "zh": "已准备的代码容量"
+        },
         "description": {
           "en": "The older GPT-5.6 Sol/Terra and GPT-5.3 Codex entries are configuration records; newer GPT-6 Sol/Luna listings are separate.",
           "zh": "Sol、Terra 与 Codex 画像已配置，在旧记录中未对应选择器入口，当前应核对实际菜单。"

@@ -1,5 +1,7 @@
 ---
 title: "Lark CLI: When to Use It — and When to Keep the Web App"
+seoTitle: "Lark CLI: When Terminal Automation Beats the Web Workflow"
+seoDescription: "Lark CLI can automate Feishu tasks, but authentication and upkeep add work. Compare terminal control, token refresh, permissions, and existing integrations before choosing the CLI."
 description: "Lark CLI automates Feishu workflows from the command line—but for solo operators, it's not always worth building. Here's how to decide."
 slug: "lark-cli-when-to-use-it"
 date: "2026-03-30"

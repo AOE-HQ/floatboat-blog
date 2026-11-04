@@ -1,5 +1,7 @@
 ---
 title: "What Is ChatGPT Space? Pages, Projects, and Permissions"
+seoTitle: "ChatGPT Space: Pages, Projects, and Workspace Permissions"
+seoDescription: "ChatGPT Space organizes editable Pages, files, and collaboration. Compare it with Projects and chat, review permission behavior, and decide which work belongs in a shared space."
 description: "ChatGPT Space organizes editable Pages, files, and collaboration. Learn how it differs from Projects and chat, how permissions work, and when to migrate."
 slug: "what-is-chatgpt-space"
 date: "2026-10-09"

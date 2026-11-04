@@ -409,12 +409,12 @@
   },
   "skill-categories": {
     "heading": {
-      "en": "Explore Other Skill Categories",
-      "zh": "探索其他 Skill 分类"
+      "en": "Explore Related Task Categories",
+      "zh": "探索相关任务分类"
     },
     "description": {
-      "en": "Choose the next task, not just the next publisher.",
-      "zh": "按下一项任务选择指引，而不只按发布者浏览。"
+      "en": "Find instructions and software for the next stage of your work, from code changes and interface design to office tasks and media production.",
+      "zh": "按下一步工作查找指引与软件，从代码修改、界面设计延伸到办公与媒体制作，比较相邻任务需要的资源。"
     },
     "links": {
       "coding": [

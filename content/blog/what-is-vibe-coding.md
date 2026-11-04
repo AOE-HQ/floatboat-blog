@@ -1,5 +1,7 @@
 ---
 title: "What Is Vibe Coding? Can Solo Founders Ship Faster?"
+seoTitle: "Vibe Coding: How Solo Founders Build, Check, and Ship Software"
+seoDescription: "Vibe coding uses natural language and AI to build software, but delivery still needs checks. Explore the approach, solo-business uses, failure points, and the value of reusable systems."
 description: "Vibe coding lets anyone build with AI and plain language. Here's what it can do for a one-person company — and where it breaks.131 chars"
 slug: "what-is-vibe-coding"
 date: "2026-04-16"

@@ -1,5 +1,7 @@
 ---
 title: "从 Markdown 到幻灯片——用纯文本做演示文稿"
+seoTitle: "Markdown 转幻灯片：从纯文本源文件制作演示文稿"
+seoDescription: "Markdown 大纲可以通过 Marp 或 Pandoc 生成演示文稿。比较文本到幻灯片的制作、导出和设计取舍，判断技术分享与内部汇报何时适合纯文本流程，何时仍需视觉编辑。"
 description: "把 markdown 大纲变成幻灯片：Marp 与 Pandoc 两条路线的工作流、导出格式支持、它放弃了什么，以及技术分享与内部汇报为什么特别适合文本驱动的片子。"
 slug: "markdown-to-slides"
 date: "2026-09-17"

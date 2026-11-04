@@ -1,5 +1,7 @@
 ---
 title: "Math in Markdown: LaTeX Syntax and Where It Renders"
+seoTitle: "Markdown Math and LaTeX: Syntax, Rendering, and Compatibility"
+seoDescription: "Math in Markdown depends on LaTeX syntax and renderer support. Compare GitHub, Obsidian, and Jekyll behavior, KaTeX and MathJax, and workarounds when formulas fail to display."
 description: "How math in markdown works: dollar-sign LaTeX syntax, where it renders (GitHub, Obsidian, Jekyll), the KaTeX vs MathJax split, and honest workarounds."
 slug: "markdown-math-latex"
 date: "2026-09-19"

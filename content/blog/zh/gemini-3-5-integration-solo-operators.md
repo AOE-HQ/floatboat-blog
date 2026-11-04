@@ -1,5 +1,7 @@
 ---
 title: "Gemini 3.5 集成指南：单人经营者现在还该不该用"
+seoTitle: "Gemini 3.5 集成：单人工作流中的定位与使用取舍"
+seoDescription: "Gemini 3.5 Flash 已不是最新 Flash 型号。结合实际任务复核能力、成本、隐私和工具边界，通过可重复工作流测试，判断单人业务是否应继续保留现有集成或改用其他模型。"
 description: "Gemini 3.5 Flash 仍是稳定模型，但已不是 Google 最新的 Flash。本文核对其能力、成本、隐私和工具边界，并用可复现工作流判断单人经营者是否仍值得集成。"
 slug: "gemini-3-5-integration-solo-operators"
 date: "2026-05-21"

@@ -1,11 +1,12 @@
 import { localizedHowStepSchema } from "@/lib/marketing/how-to";
 import { localizedUseCasesSchema } from "@/lib/marketing/use-cases";
 import { z } from "zod";
+import { NATIVE_AGENT_IDS } from "@/lib/resource-agents";
 
 const text = z.string().trim().min(1);
 const url = text.url().regex(/^https?:\/\//);
 const localized = z.object({ en: text, zh: text });
-const agent = z.enum(["claude-code", "codex", "codex-app", "cursor", "gemini-cli", "github-copilot", "opencode", "auto"]);
+const agent = z.enum(NATIVE_AGENT_IDS);
 
 export const skillInstallationSchema = z.object({
   supportedAgents: z.array(agent).optional(),
@@ -25,7 +26,6 @@ const skill = z.object({
   sourceUrl: url,
   repositoryUrl: url,
   sourceLinks: z.array(z.object({ label: localized, href: url })).optional(),
-  category: localized,
   seo: z.object({ title: localized, description: localized, keywords: z.object({ en: z.array(text).min(1), zh: z.array(text).min(1) }) }),
   hero: z.object({ title: localized, description: localized }),
   overview: z.object({
@@ -36,7 +36,6 @@ const skill = z.object({
   cardDescription: localized.optional(),
   upstreamInstall: text,
   installation: skillInstallationSchema.optional(),
-  pageCopy: z.object({ kind: localized }),
   sectionTitles: z.object({
     how: z.object({ en: text.startsWith("How to"), zh: text.startsWith("如何") }),
     howDescription: localized,

@@ -1,5 +1,7 @@
 ---
 title: "Best Markdown Editors in 2026 — Ranked by Workflow, Not Features"
+seoTitle: "Markdown Editors: Compare Writing, Notes, and Docs Workflows"
+seoDescription: "Markdown editors serve different writing, notes, and code workflows. Compare Obsidian, Typora, VS Code, Zettlr, and iA Writer, including the trade-offs of browser-based tools."
 description: "Obsidian, Typora, VS Code, Zettlr, iA Writer and more, ranked by workflow fit. What each editor trades away, and where browser tools beat installed apps."
 slug: "best-markdown-editors"
 date: "2026-09-20"

@@ -1,5 +1,7 @@
 ---
 title: "Best AI File Renamer — Ranked by Real Renaming Power"
+seoTitle: "AI File Renamers: Compare Naming Rules, Context, and Review"
+seoDescription: "AI file renamers vary in context reading, naming rules, and review. Compare real renaming workflows on Mac and Windows and check how each tool handles changes and mistakes."
 description: "The best AI file renamer for Mac and Windows, ranked by renaming power, safety, and privacy — from offline picks to invoice-batch tools."
 slug: "best-ai-file-renamer"
 date: "2026-08-24"

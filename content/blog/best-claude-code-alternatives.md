@@ -1,5 +1,7 @@
 ---
 title: "Best Claude Code Alternatives for Real Coding Workflows"
+seoTitle: "Claude Code Alternatives: Compare Six Coding Agent Workflows"
+seoDescription: "Claude Code alternatives include Cursor, Codex, Cline, Aider, Copilot, and Devin. Compare execution location, code edits, oversight, permissions, and a practical coding pilot."
 description: "Compare Cursor, Codex, Cline, Aider, GitHub Copilot, and Devin by where they run, how they edit code, and how much supervision they need."
 slug: "best-claude-code-alternatives"
 date: "2026-08-14"

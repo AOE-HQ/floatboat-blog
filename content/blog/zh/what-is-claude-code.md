@@ -1,5 +1,7 @@
 ---
 title: "Claude Code 是什么——Anthropic 的终端编码 Agent"
+seoTitle: "Claude Code：Anthropic 终端 Agent 与编程工作流"
+seoDescription: "Claude Code 是面向终端与本地项目的编程 Agent。了解其工具循环、代码工作和成本特征，再与 Cowork、Tag 及普通聊天比较，判断何时需要开发执行层而不只是文本回答。"
 description: "Claude Code 详解：Anthropic 的终端编码 Agent，它的 Plan 模式、子 Agent（Sub-agents）与 MCP——以及它和 Cowork、Tag、Chat 有什么区别。含本地编码 Agent 的定义、五大属性、工作循环与成本特征。"
 slug: "what-is-claude-code"
 date: "2026-08-14"

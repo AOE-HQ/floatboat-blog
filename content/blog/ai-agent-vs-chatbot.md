@@ -1,5 +1,7 @@
 ---
 title: "AI Agent vs Chatbot: The Difference Is Who Controls the Work"
+seoTitle: "AI Agent vs Chatbot: Who Plans, Acts, and Checks the Work"
+seoDescription: "AI agents use execution loops, tools, and state beyond a chatbot response. Compare task fit, permissions, memory, and failure handling with a repeatable selection test."
 description: "Understand AI agents versus chatbots through execution loops, tools, state, permissions, task fit, risk, and a practical test for choosing the simplest system that works."
 slug: "ai-agent-vs-chatbot"
 date: "2026-03-20"

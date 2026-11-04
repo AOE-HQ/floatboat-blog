@@ -2,49 +2,106 @@
   "slug": "gemini",
   "name": "Gemini",
   "access": "picker",
-  "badge": { "en": "Google · Recorded chat entry", "zh": "Google · 已有对话入口记录" },
+  "badge": {
+    "en": "Google · Recorded chat entry",
+    "zh": "Google · 已有对话入口记录"
+  },
   "summary": {
     "en": "Gemini 4 Argon is publicly listed; existing Pro, Flash, and image entries document different task and access paths.",
     "zh": "Gemini 4 Argon 已公开列出；已有 Pro、Flash 与生图条目分别记录不同任务和使用入口。"
   },
-  "seo": {"title":{"en":"Gemini models: 4 Argon, Pro, Flash, and image generation.","zh":"Gemini 模型：4 Argon、Pro、Flash 与图像生成。"},"description":{"en":"Gemini 4 Argon now appears on Floatboat’s pricing page. Compare that public listing with the recorded Pro, Flash, and image routes, keeping aliases and exact model IDs distinct.","zh":"Floatboat 价格页现已展示 Gemini 4 Argon。本页同时整理 Pro、Flash 与生图入口记录，并区分展示别名与准确模型 ID。"},"keywords":[{"en":"Gemini 3.1 Pro","zh":"Gemini 3.1 Pro"},{"en":"Gemini 3.8 Flash","zh":"Gemini 3.8 Flash"},{"en":"Gemini Pro vs Flash","zh":"Gemini Pro 和 Flash 对比"},{"en":"Gemini 1M context","zh":"Gemini 1M 上下文"}]},
+  "seo": {
+    "title": {
+      "en": "Gemini Models: Argon, Pro, Flash, and Image Route Records",
+      "zh": "Gemini 模型：Argon、Pro、Flash 与图像入口记录"
+    },
+    "description": {
+      "en": "Review Gemini Argon, Pro, Flash, and image-generation records in Floatboat. Keep display aliases, exact model IDs, pricing-page listings, and client access distinct.",
+      "zh": "查看 Floatboat 的 Gemini Argon、Pro、Flash 与图像生成记录，区分展示别名、准确模型 ID、价格页列出和客户端访问，按资料理解、速度或创作需求核对入口。"
+    },
+    "keywords": [
+      {
+        "en": "Gemini 3.1 Pro",
+        "zh": "Gemini 3.1 Pro"
+      },
+      {
+        "en": "Gemini 3.8 Flash",
+        "zh": "Gemini 3.8 Flash"
+      },
+      {
+        "en": "Gemini Pro vs Flash",
+        "zh": "Gemini Pro 和 Flash 对比"
+      },
+      {
+        "en": "Gemini 1M context",
+        "zh": "Gemini 1M 上下文"
+      }
+    ]
+  },
   "hero": {
     "title": {
-        "en": "Gemini models: 4 Argon, Pro, Flash, and image generation.",
-        "zh": "Gemini 模型：4 Argon、Pro、Flash 与图像生成。"
+      "en": "Gemini models: 4 Argon, Pro, Flash, and image generation.",
+      "zh": "Gemini 模型：4 Argon、Pro、Flash 与图像生成。"
     },
     "description": {
       "en": "Gemini 4 Argon now appears on Floatboat’s pricing page. Compare that public listing with the recorded Pro, Flash, and image routes, keeping aliases and exact model IDs distinct.",
       "zh": "Floatboat 价格页现已展示 Gemini 4 Argon。本页同时整理 Pro、Flash 与生图入口记录，并区分展示别名与准确模型 ID。"
     },
     "prompts": [
-      { "en": "Analyze this document set", "zh": "分析这组文档" },
-      { "en": "Compare these screenshots", "zh": "比较这些截图" },
-      { "en": "Classify this batch quickly", "zh": "快速分类这批内容" }
+      {
+        "en": "Analyze this document set",
+        "zh": "分析这组文档"
+      },
+      {
+        "en": "Compare these screenshots",
+        "zh": "比较这些截图"
+      },
+      {
+        "en": "Classify this batch quickly",
+        "zh": "快速分类这批内容"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Inventory scope", "zh": "型号范围" },
+      "label": {
+        "en": "Inventory scope",
+        "zh": "型号范围"
+      },
       "value": {
         "en": "Recorded routes + current pricing listings",
         "zh": "已有接入记录 + 当前价格页型号"
       }
     },
     {
-      "label": { "en": "Pro context", "zh": "Pro 上下文" },
-      "value": { "en": "1M+ long context", "zh": "1M+ 超长上下文" }
+      "label": {
+        "en": "Pro context",
+        "zh": "Pro 上下文"
+      },
+      "value": {
+        "en": "1M+ long context",
+        "zh": "1M+ 超长上下文"
+      }
     },
     {
-      "label": { "en": "Inputs", "zh": "输入类型" },
+      "label": {
+        "en": "Inputs",
+        "zh": "输入类型"
+      },
       "value": {
         "en": "Long text · Images · Mixed material",
         "zh": "长文本 · 图像 · 混合材料"
       }
     },
     {
-      "label": { "en": "API key", "zh": "API Key" },
-      "value": { "en": "Not required", "zh": "无需自备" }
+      "label": {
+        "en": "API key",
+        "zh": "API Key"
+      },
+      "value": {
+        "en": "Not required",
+        "zh": "无需自备"
+      }
     }
   ],
   "positioning": {
@@ -58,7 +115,10 @@
     },
     "traits": [
       {
-        "label": { "en": "Pro style", "zh": "Pro 风格" },
+        "label": {
+          "en": "Pro style",
+          "zh": "Pro 风格"
+        },
         "value": {
           "en": "Absorbs the whole source set",
           "zh": "先容纳完整资料集"
@@ -69,23 +129,38 @@
         }
       },
       {
-        "label": { "en": "Flash style", "zh": "Flash 风格" },
-        "value": { "en": "Responds in quick cycles", "zh": "以快速循环响应" },
+        "label": {
+          "en": "Flash style",
+          "zh": "Flash 风格"
+        },
+        "value": {
+          "en": "Responds in quick cycles",
+          "zh": "以快速循环响应"
+        },
         "description": {
           "en": "Useful for frequent, lightweight processing.",
           "zh": "适合高频、轻量的处理工作。"
         }
       },
       {
-        "label": { "en": "Input strength", "zh": "输入优势" },
-        "value": { "en": "Text and images together", "zh": "图文结合" },
+        "label": {
+          "en": "Input strength",
+          "zh": "输入优势"
+        },
+        "value": {
+          "en": "Text and images together",
+          "zh": "图文结合"
+        },
         "description": {
           "en": "Keeps visual and textual evidence in one analysis.",
           "zh": "将视觉证据与文本信息放在同一次分析中。"
         }
       },
       {
-        "label": { "en": "Decision rule", "zh": "选择原则" },
+        "label": {
+          "en": "Decision rule",
+          "zh": "选择原则"
+        },
         "value": {
           "en": "Remove the actual bottleneck",
           "zh": "解决真正的瓶颈"
@@ -103,8 +178,8 @@
       "zh": "Pro 处理更大输入，Flash 更快完成周转。"
     },
     "description": {
-      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
-      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
+      "en": "Gemini's listed chat and image models do not all share the same entry point. Compare recorded routes with newer pricing-page listings, keeping the client picker, plan conditions, and separate image-generation workflow in view when choosing a version.",
+      "zh": "Gemini 对话与图像型号并不全部使用同一入口。以下条目区分已记录路径和价格页新增列表，选择版本时需结合客户端菜单、套餐条件及独立图像生成流程判断。"
     },
     "items": [
       {
@@ -195,12 +270,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "在大资料集与高频小任务中选择处理方式",
-      "en": "Choose processing for large source sets and frequent small tasks"
+      "zh": "Gemini 模型的使用场景",
+      "en": "Use Cases for Gemini Models"
     },
     "description": {
-      "zh": "资料之间的关系与批量处理的节奏是不同问题，输入、验证和预期成果也应分别定义。",
-      "en": "Relationships across sources and batch-processing pace are different problems, requiring different inputs, verification, and outputs."
+      "zh": "研究报告需要连接来源，视觉评审需要对应界面状态，批量分类还要抽查例外。Gemini 的任务输入应随证据类型准备，再按实际可用路径分别检查结论和输出。",
+      "en": "Cross-document research, screenshot reviews, and text classification organize evidence in different ways. Compare the sources, visual states, and sample checks each task requires before choosing an available Gemini route and preparing its input."
     },
     "items": [
       {
@@ -208,17 +283,9 @@
           "en": "Cross-document research",
           "zh": "跨文档研究"
         },
-        "brief": {
-          "zh": "多份文档、需要比较的论点与统一引用规则。",
-          "en": "Multiple documents, claims to compare, and citation rules."
-        },
-        "process": {
-          "zh": "连接跨文件主题，保留来源分歧与无法证实的主张。",
-          "en": "Connect themes across files, retaining disagreement and unverified claims."
-        },
-        "outcome": {
-          "zh": "带来源映射、矛盾说明和证据缺口的综合报告。",
-          "en": "A synthesis report with source mappings, contradictions, and evidence gaps."
+        "description": {
+          "en": "Research across several documents requires a question and clear citation rules. Connect themes and compare claims while retaining disagreements and statements that remain unverified. A source-mapped synthesis should show which files support each conclusion and where evidence is still missing, rather than flattening the collection into one apparent consensus.",
+          "zh": "跨文档研究需要明确的问题和引用要求。连接不同文件中的主题与论点时，保留来源之间的分歧和未核实说法。综合报告应能说明每项结论由哪些文件支持、哪些位置仍缺乏证据，而不是把多份资料压成看似一致的结论。"
         }
       },
       {
@@ -226,17 +293,9 @@
           "en": "Visual product review",
           "zh": "视觉产品审查"
         },
-        "brief": {
-          "zh": "产品需求、文字反馈及同一流程的多张截图。",
-          "en": "Product requirements, written feedback, and screenshots of one flow."
-        },
-        "process": {
-          "zh": "把图像中的状态与需求逐项对应，按用户影响整理发现。",
-          "en": "Map visible states to requirements and organize findings by user impact."
-        },
-        "outcome": {
-          "zh": "同时基于画面和要求的优先级问题清单。",
-          "en": "Prioritized findings grounded in both screenshots and requirements."
+        "description": {
+          "en": "A visual product review can combine requirements, written feedback, and screenshots of the same flow. Map visible states to the expected behavior and prioritize findings by user impact. Ground each issue in the supplied screen evidence and requirements so a visual observation is not mistaken for an untested functional claim.",
+          "zh": "评审产品界面时，将同一流程的需求、文字反馈和截图放在一起，逐一对应可见状态与预期行为，再按用户影响排列问题。每条发现都应关联到具体截图和要求，避免把视觉观察直接写成尚未验证的功能结论。"
         }
       },
       {
@@ -244,17 +303,19 @@
           "en": "High-volume classification",
           "zh": "高频批量分类"
         },
-        "brief": {
-          "zh": "明确分类规则、大量小型文本与带答案的样本。",
-          "en": "Classification rules, many small texts, and labeled samples."
+        "description": {
+          "en": "Batch classification needs explicit categories, boundary rules, and labeled examples. Process the texts against those criteria, spot-check a sample, and retain ambiguous cases for review. Return classification results with exceptions and sample checks so volume does not hide where the rules need clarification.",
+          "zh": "批量分类前，明确分类规则、类别边界和带标签的参考样本。按统一标准处理文本后抽查结果，将有歧义的记录单独保留。分类结果应同时包含例外情况和样本核验记录，让处理量增加时仍能看清规则需要补充的位置。"
+        }
+      },
+      {
+        "title": {
+          "en": "Compare revisions of a source set",
+          "zh": "比较资料修订带来的变化"
         },
-        "process": {
-          "zh": "分批处理并抽样核对，记录歧义项和规则边界。",
-          "en": "Process batches, spot-check results, and record ambiguity and rule boundaries."
-        },
-        "outcome": {
-          "zh": "分类结果、异常项和样本准确性检查记录。",
-          "en": "Classification outputs, exceptions, and sample-accuracy checks."
+        "description": {
+          "en": "Updated documents can change a conclusion without changing the title of the project. Supply the earlier and current versions with the questions that matter, then trace additions, removed conditions, and conflicting statements to their locations. Keep confirmed changes separate from interpretation so the revision review can be checked against the actual material.",
+          "zh": "文档更新可能改变结论，即使项目名称仍然相同。提供前后版本和需要关注的问题，追踪新增内容、被删除条件及冲突说法，并定位到实际来源。已经确认的变化与进一步解释分别记录，让修订审阅能够回到原始材料核对。"
         }
       }
     ]
@@ -265,26 +326,35 @@
       "zh": "超长上下文、混合输入，以及一个更快的搭档。"
     },
     "description": {
-      "en": "The live chat models cover analysis and throughput; separate Gemini image models run through the drawing Combo.",
-      "zh": "已上线对话型号覆盖分析与吞吐；独立的 Gemini 图像型号通过画图 Combo 使用。"
+      "en": "Large source sets, image-and-text analysis, and frequent responses impose different constraints on a workflow. Review the recorded Gemini capabilities alongside the separate image-generation lane so input understanding and producing a new image are not treated as the same operation.",
+      "zh": "理解已有图文和生成新图像使用不同路径。Gemini 的大资料分析与高频响应也有各自约束，工作流需要根据已记录能力准备输入，再单独确认对应的图像生成入口。"
     },
     "items": [
       {
-        "title": { "en": "1M+ context analysis", "zh": "1M+ 上下文分析" },
+        "title": {
+          "en": "1M+ context analysis",
+          "zh": "1M+ 上下文分析"
+        },
         "description": {
           "en": "Gemini 3.1 Pro Preview is positioned for long documents, large code sets, and cross-file work.",
           "zh": "Gemini 3.1 Pro Preview 面向长文档、大型代码集与跨文件工作。"
         }
       },
       {
-        "title": { "en": "Image-text understanding", "zh": "图文理解" },
+        "title": {
+          "en": "Image-text understanding",
+          "zh": "图文理解"
+        },
         "description": {
           "en": "Pro can analyze visual and textual material together in the client workflow.",
           "zh": "Pro 可在客户端工作流中结合分析图像与文本材料。"
         }
       },
       {
-        "title": { "en": "High-throughput response", "zh": "高吞吐响应" },
+        "title": {
+          "en": "High-throughput response",
+          "zh": "高吞吐响应"
+        },
         "description": {
           "en": "Gemini 3.8 Flash handles frequent lightweight requests with a faster cadence.",
           "zh": "Gemini 3.8 Flash 以更快节奏处理高频轻量请求。"
@@ -308,7 +378,10 @@
       "zh": "根据真正拖慢工作的因素进行选择。"
     },
     "choose": {
-      "title": { "en": "Choose Gemini Pro when", "zh": "适合选择 Gemini Pro" },
+      "title": {
+        "en": "Choose Gemini Pro when",
+        "zh": "适合选择 Gemini Pro"
+      },
       "items": [
         {
           "en": "You need to inspect a large source set as a whole.",

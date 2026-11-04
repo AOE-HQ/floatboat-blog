@@ -1,5 +1,7 @@
 ---
 title: "HTML Anything Review 2026: Capabilities, Costs, and Risks"
+seoTitle: "HTML Anything Review: Capabilities, Costs, and Execution Risks"
+seoDescription: "HTML Anything offers agent setup, templates, and export workflows with costs and limits. Review source evidence, security boundaries, and a reproducible test before adoption."
 description: "An evidence-based HTML Anything review covering setup, supported coding agents, templates, exports, real costs, security boundaries, alternatives, and who should use it."
 slug: "html-anything-review-2026"
 date: "2026-05-20"

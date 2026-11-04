@@ -94,7 +94,7 @@ export function FaqBand({
           locale,
         )}
       />
-      <section className="w-full border-t border-[var(--ob-color-border)] py-14 md:py-16">
+      <section className="w-full py-14 md:py-16">
         <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-10">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8 text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] md:text-3xl">

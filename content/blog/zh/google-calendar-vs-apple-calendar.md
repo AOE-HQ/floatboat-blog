@@ -1,5 +1,7 @@
 ---
 title: "Google Calendar 与 Apple Calendar 怎么选"
+seoTitle: "Google 日历与 Apple 日历：共享、设备与日常使用比较"
+seoDescription: "比较 Google 日历与 Apple 日历的生态、共享、跨平台、离线与隐私表现，结合自动化和双向迁移清单，按个人、家庭或团队需求选择，并规划清楚日程数据源。"
 description: "从生态、共享、跨平台、离线、隐私、AI 与自动化比较 Google Calendar 和 Apple Calendar，并提供双向迁移清单、数据源规划与按个人、家庭、团队场景选择的实用建议。"
 slug: "google-calendar-vs-apple-calendar"
 date: "2026-05-27"

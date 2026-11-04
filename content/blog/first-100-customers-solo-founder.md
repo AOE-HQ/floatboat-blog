@@ -1,5 +1,7 @@
 ---
 title: "How to Get Your First 100 Customers as a Solo Founder"
+seoTitle: "First 100 Customers: A Solo Founder’s Acquisition Playbook"
+seoDescription: "A solo founder’s first 100 customers require more than a lead count. Define paid evidence, standardize repeated acquisition and onboarding, and track cohorts and churn reasons."
 description: "A stage-by-stage guide to a solo founder's first 100 customers: define the customer, gather paid evidence, standardize what repeats, and track cohorts."
 slug: "first-100-customers-solo-founder"
 date: "2026-04-08"

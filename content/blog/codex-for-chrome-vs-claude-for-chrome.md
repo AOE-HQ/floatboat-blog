@@ -1,5 +1,7 @@
 ---
 title: "Codex for Chrome vs Claude for Chrome: How to Choose"
+seoTitle: "Codex for Chrome vs Claude for Chrome: Browser Work Compared"
+seoDescription: "Codex for Chrome and Claude for Chrome differ in signed-in work, per-site permissions, and multi-tab tasks. Compare risks, availability, and workflow fit before granting access."
 description: "Compare Codex for Chrome vs Claude for Chrome on signed-in workflows, permissions, multi-tab work, and which solo operators should pick in 2026."
 slug: "codex-for-chrome-vs-claude-for-chrome"
 date: "2026-05-11"

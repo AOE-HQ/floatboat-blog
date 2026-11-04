@@ -1,5 +1,7 @@
 ---
 title: "一个人能用 GPT Image 2 做完一整组分镜吗？"
+seoTitle: "GPT Image 2 分镜：单人制作、连贯性检查与整组交付"
+seoDescription: "跟随单人创作者的二十四帧分镜流程，查看 GPT Image 2 在连贯性、镜头与修订中的作用和失误，判断哪些工作可以独立完成，哪些情况仍需要真人分镜师介入。"
 description: "GPT Image 2 能独立产出可用的影视或短视频分镜吗？一位单人创作者实测 24 帧短片分镜，本文讲清它擅长什么、在哪里翻车，以及何时该请真人分镜师、何时用 GPT Image 2 就够了。"
 slug: "gpt-image-2-storyboard-solo"
 date: "2026-04-25"

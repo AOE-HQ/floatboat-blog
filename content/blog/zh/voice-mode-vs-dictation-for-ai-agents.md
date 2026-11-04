@@ -1,5 +1,7 @@
 ---
 title: "Voice Mode vs Dictation — AI Agent 场景下语音模式与语音听写该怎么选"
+seoTitle: "AI Agent 语音模式与听写：按任务形态选择输入方式"
+seoDescription: "语音模式进行双向交流，听写则准备可审阅的文本输入。比较 ChatGPT、Claude 与编码工具的实现，结合探索任务、规格说明和 Agent 提示词的精确度要求选择输入路径。"
 description: "面向 AI Agent 的 voice mode 与 dictation 有何区别？前者是双向语音对话，后者是语音转文本再由你审阅后发送。本文从定义与技术栈讲起，对比 ChatGPT、Claude、编码工具的产品实现，并给独立创业者一套五步决策框架：探索型任务选语音模式，写规格、指挥 Agent 与写代码选听写。"
 slug: "voice-mode-vs-dictation-for-ai-agents"
 date: "2026-08-05"

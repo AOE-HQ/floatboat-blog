@@ -1,5 +1,7 @@
 ---
 title: "Voice Mode vs Dictation for AI Agents — Which Job Shape Fits?"
+seoTitle: "Voice Mode vs Dictation: Match Agent Input to the Job Shape"
+seoDescription: "Voice mode enables two-way speech, while dictation prepares text for review. Compare ChatGPT, Claude, and coding tools by agent-input needs and the task’s precision requirements."
 description: "Voice mode vs dictation for AI agents: two-way speech or speech-to-text? Compare ChatGPT, Claude, coding tools, and solo founder workflows."
 slug: "voice-mode-vs-dictation-for-ai-agents"
 date: "2026-08-05"

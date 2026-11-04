@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -7,10 +8,11 @@ import { getPublisherProfile } from "@/lib/skills/publisher-profiles";
 export function generateMetadata(): Metadata {
   const profile = getPublisherProfile("vercel-labs");
   if (!profile) return {};
-  const { seoTitle: title, seoDescription: description } = profile.en;
+  const title = seoTitle(profile.en.seoTitle);
+  const description = profile.en.seoDescription;
   const canonical = "https://floatboat.ai/skills-marketplace/vercel-labs";
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical, languages: { en: "https://floatboat.ai/skills-marketplace/vercel-labs", zh: "https://floatboat.ai/zh/skills-marketplace/vercel-labs" } },
     openGraph: { type: "website", title, description, url: canonical },

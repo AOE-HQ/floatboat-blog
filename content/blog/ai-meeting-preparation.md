@@ -1,5 +1,7 @@
 ---
 title: "AI Meeting Preparation: Build a Brief You Can Trust"
+seoTitle: "AI Meeting Preparation: Build Briefs with Traceable Sources"
+seoDescription: "AI meeting preparation connects calendar context with permission-aware research. Build a traceable one-page brief, resolve conflicting sources, and carry confirmed decisions forward."
 description: "A practical AI meeting preparation workflow for gathering context, checking permissions, writing a concise pre-meeting brief, and carrying decisions forward."
 slug: "ai-meeting-preparation"
 date: "2026-06-29"

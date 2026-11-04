@@ -1,5 +1,7 @@
 ---
 title: "Codex for Chrome 与 Claude for Chrome：如何选择"
+seoTitle: "Codex for Chrome 与 Claude for Chrome：浏览器任务选型"
+seoDescription: "比较 Codex for Chrome 与 Claude for Chrome 的登录态工作方式、逐站权限和多标签任务，了解提示词注入、地区开放与成本差异，再按工作类型判断浏览器 Agent 的适配。"
 description: "Codex for Chrome 与 Claude for Chrome 同属浏览器 Agent，设计哲学却截然不同。本文从已登录浏览器里的工作方式、逐站点权限、提示注入风险、定价与地区可用性逐项对比，并给出按工作类型选择的决策清单——含欧盟/英国用户的现状提醒。"
 slug: "codex-for-chrome-vs-claude-for-chrome"
 date: "2026-05-11"

@@ -1,5 +1,7 @@
 ---
 title: "How to Clean Up Downloads Folder with AI, the Safe Way"
+seoTitle: "AI Downloads Folder Cleanup: Test Copies and Review Changes"
+seoDescription: "AI Downloads cleanup should begin with representative file copies and explicit exclusions. Test naming, collisions, approvals, recovery, and review cadence before changing the real folder."
 description: "Clean up a Downloads folder with AI using a sample-first protocol, scoped prompt recipes, small-batch approval, recovery tests, and a repeatable review cadence."
 slug: "clean-up-downloads-folder-with-ai"
 date: "2026-08-31"

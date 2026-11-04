@@ -1,5 +1,7 @@
 ---
 title: "Claude Code 替代品怎么选：6 款编程 Agent 评估框架"
+seoTitle: "Claude Code 替代品：六款编程 Agent 的工作流比较"
+seoDescription: "比较 Cursor、Codex、Cline、Aider、Copilot 与 Devin 等 Claude Code 替代品，了解运行位置、代码修改方式和监督成本，再通过权限检查与真实编程试点判断适配。"
 description: "Claude Code 替代品怎么选？从运行位置、代码修改方式、监督成本、权限风险和真实试点方法，比较 Cursor、Codex、Cline、Aider、GitHub Copilot 与 Devin。"
 slug: "best-claude-code-alternatives"
 date: "2026-08-14"

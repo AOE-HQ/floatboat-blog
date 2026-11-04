@@ -1,5 +1,7 @@
 ---
 title: "What Is Jev? The AI Model That Never Writes Text"
+seoTitle: "Jev AI Model: Decision-Making Without Generating Text"
+seoDescription: "Jev returns typed probabilistic decisions rather than generated text. Examine the RLCD approach, vendor speed and cost claims, criticism, and workloads suited to that model shape."
 description: "Jev is TypeSafe AI's System One model: typed probabilistic decisions instead of generated text, claimed 193.6x faster and 444.6x cheaper. How RLCD works, what the skeptics say, and where it fits."
 slug: "what-is-jev-model"
 date: "2026-09-18"

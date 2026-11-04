@@ -1,5 +1,7 @@
 ---
 title: "浏览器 Agent、AI 浏览器与 AI 工作区：边界与选型"
+seoTitle: "浏览器 Agent 与 AI 浏览器：能力边界和工作区选型"
+seoDescription: "浏览器 Agent、AI 浏览器与 AI 工作区的区别涉及上下文、权限和执行位置。围绕同一任务比较可观测性、故障恢复和成本，用可复现试点判断适配，而非依赖产品标签。"
 description: "从上下文、工具权限、执行位置、可观测与恢复、任务适配、风险和可复现试点比较浏览器 Agent、AI 浏览器与 AI 工作区，帮助团队避开过时规格与产品标签，按真实任务边界做出可验证的选型决定。"
 slug: "ai-browser-agent-vs-ai-browser-vs-ai-workspace"
 date: "2026-05-12"

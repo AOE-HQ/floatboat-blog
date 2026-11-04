@@ -1,5 +1,7 @@
 ---
 title: "AI Automation Agency Pricing: How to Compare Quotes"
+seoTitle: "AI Automation Agency Pricing: Compare Scope and Total Cost"
+seoDescription: "AI automation agency quotes depend on scope, integrations, usage, risk, and maintenance. Compare first-year cost and acceptance terms instead of relying on market averages."
 description: "Understand AI automation agency pricing through scope, complexity, usage, risk, maintenance, quote comparison, and contract terms—not unverifiable market averages."
 slug: "ai-automation-agency-pricing"
 date: "2026-05-07"

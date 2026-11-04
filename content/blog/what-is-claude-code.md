@@ -1,5 +1,7 @@
 ---
 title: "What Is Claude Code — Anthropic's Terminal Coding Agent"
+seoTitle: "Claude Code: Anthropic’s Terminal Agent and Coding Workflow"
+seoDescription: "Claude Code is Anthropic’s terminal-oriented coding agent. Follow its tool loop, local project role, and cost model, and compare the boundary with Cowork, Tag, and ordinary chat."
 description: "Claude Code explained: Anthropic's terminal coding agent, its plan mode, sub-agents, and MCP — and how it differs from Cowork, Tag, and Chat."
 slug: "what-is-claude-code"
 date: "2026-08-14"

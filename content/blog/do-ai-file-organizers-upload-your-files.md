@@ -1,5 +1,7 @@
 ---
 title: "Does AI File Organizer Upload My Files? An Honest Answer"
+seoTitle: "AI File Organizer Privacy: What Uploads and How to Check It"
+seoDescription: "AI file organizer uploads vary across local, BYOK, and managed-cloud modes. Trace filenames, extracted text, and images through provider disclosures, offline tests, and logs."
 description: "Do AI file organizers upload your files? Compare local, BYOK and managed-cloud data paths, retention disclosures, and a practical verification checklist."
 slug: "do-ai-file-organizers-upload-your-files"
 date: "2026-08-25"

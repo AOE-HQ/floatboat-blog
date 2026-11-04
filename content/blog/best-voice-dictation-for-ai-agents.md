@@ -1,5 +1,7 @@
 ---
 title: "Voice Dictation for AI Agents — A Job-Shape Shortlist"
+seoTitle: "Voice Dictation for AI Agents: Choose by Input and Task Shape"
+seoDescription: "Voice dictation for agents depends on app coverage, vocabulary, and correction time. Compare documented candidates with your own prompts and check data paths and practical cost."
 description: "A documented shortlist of voice-dictation candidates for AI agents, filtered by application coverage, vocabulary, data path, and correction time."
 slug: "best-voice-dictation-for-ai-agents"
 date: "2026-08-06"

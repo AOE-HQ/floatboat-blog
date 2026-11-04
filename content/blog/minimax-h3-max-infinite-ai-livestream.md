@@ -1,5 +1,7 @@
 ---
 title: "MiniMax H3 Max Live Stream — Faster Than Playback"
+seoTitle: "MiniMax H3 Max Live Stream: Generation Speed and Playback"
+seoDescription: "MiniMax H3 Max Live is an experimental continuous-video pipeline. Use dated source evidence to examine status, price, throughput, buffering, moderation, and operating cost."
 description: "MiniMax H3 Max Live explained as an experimental continuous-video pipeline, with official status, pricing, throughput, buffering, moderation, and cost tests verified October 13, 2026."
 slug: "minimax-h3-max-infinite-ai-livestream"
 date: "2026-09-02"

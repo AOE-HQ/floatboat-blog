@@ -2,8 +2,8 @@
   "slug": "agent-workspace",
   "locale": "en",
   "seo": {
-    "title": "Floatboat Agent Workspace — One Place for Agents, Files, and Work",
-    "description": "Run agents alongside local files, tools, project rules, and editable deliverables in one persistent, human-controlled workspace for Mac and Windows.",
+    "title": "AI Agent Workspace: Local Files, Tools, and Ongoing Projects",
+    "description": "Bring agents, local files, tools, and editable deliverables into one persistent desktop workspace. Continue project work with shared context, rules, and human review.",
     "keywords": [
       "AI agent workspace",
       "agent workspace",
@@ -35,7 +35,7 @@
   },
   "features": {
     "title": "The environment around the agent is part of the product.",
-    "description": "Floatboat gives work a durable home where context, execution, review, and delivery remain connected.",
+    "description": "A persistent workspace connects local material with agent execution and editable outputs. Compare how project context, working rules, and reviewable deliverables support ongoing work without requiring every task to restart in a new conversation.",
     "items": [
       {
         "label": "Environment",
@@ -55,26 +55,24 @@
     ]
   },
   "useCases": {
-    "title": "Keep project materials, code, and deliverables connected",
-    "description": "Use the same working context for role handoffs and repository changes, with traceable, reviewable results.",
+    "title": "Use Cases for Agent Workspace",
+    "description": "Keep research, repository changes, and editable deliverables connected in one project. These scenarios show how an Agent Workspace preserves sources and decisions as work passes between roles and review stages.",
     "items": [
       {
         "title": "Coordinate many roles from one desk",
-        "brief": "Research materials, operating records, content goals, and client requirements for one project.",
-        "process": "Keep role materials, tasks, and outputs in one project context, identifying open questions at handoff.",
-        "outcome": "Project outputs linking sources and role assignments, retaining context across handoffs."
+        "description": "Research, operations, content, and client work can share one project without losing their separate responsibilities. Keep the source material, task assignments, and outputs together, and identify unanswered questions when work changes hands. Each handoff should retain the decisions and sources the next role needs."
       },
       {
         "title": "Work with repositories and project rules",
-        "brief": "A codebase, project rules, requirements, and available verification tools.",
-        "process": "Read relevant code/rules, bound the edits, and use existing project tools to verify diffs and behavior.",
-        "outcome": "Reviewable code changes and verification records consistent with repository conventions."
+        "description": "Start repository work with the codebase, project rules, and a bounded requirement. Read the relevant interfaces before editing, use the project's existing tools to check the change, and deliver the diff with verification records. Reviewers can then assess both behavior and consistency with repository conventions."
       },
       {
         "title": "Produce work that can be examined",
-        "brief": "Approved source files, a delivery format, and review criteria.",
-        "process": "Organize source files around acceptance criteria, retain attribution, and collect open questions at review points.",
-        "outcome": "Editable reports, slides, or analyses with sources and open questions identified."
+        "description": "A report, slide deck, or analysis needs more than a finished-looking draft. Organize approved files around the delivery format and review criteria, retain source attribution, and record questions that still need a decision. The resulting editable work gives reviewers a clear route back to its evidence."
+      },
+      {
+        "title": "Resume an approved project",
+        "description": "An accepted draft, review notes, and a new request can form the starting point for the next task. Keep the relevant files and decisions in the project, identify what changed, and ask the agent to continue within that boundary. Review the new result against both the fresh request and the requirements already agreed."
       }
     ]
   },
@@ -155,22 +153,19 @@
   },
   "howTo": {
     "title": "Run a project in Agent Workspace",
-    "description": "Keep source material, Agent work, and reviewed deliverables in one persistent project.",
+    "description": "Setting up a project means giving the agent relevant material, defining the work, and reviewing what returns. The steps below keep those decisions connected with execution records so accepted results remain available for the next task.",
     "items": [
       {
         "title": "Open a bounded project",
-        "description": "Choose the project folder, relevant files, tools, and rules; state the intended deliverable and access limits.",
-        "completion": "The workspace contains the required sources and an agreed task scope."
+        "description": "Choose the project folder, relevant files, tools, and rules; state the intended deliverable and access limits."
       },
       {
         "title": "Assign and supervise the work",
-        "description": "Give Agents distinct research, drafting, checking, or creation tasks. Review intermediate output and approve actions that need a decision.",
-        "completion": "Agent outputs are linked to their tasks, with unresolved decisions visible."
+        "description": "Give Agents distinct research, drafting, checking, or creation tasks. Review intermediate output and approve actions that need a decision."
       },
       {
         "title": "Review and retain the handoff",
-        "description": "Compare artifacts with the original brief, request corrections, and retain useful context and accepted results for the next task.",
-        "completion": "Accepted artifacts and the decisions behind them remain available in the project."
+        "description": "Compare artifacts with the original brief, request corrections, and retain useful context and accepted results for the next task."
       }
     ]
   }

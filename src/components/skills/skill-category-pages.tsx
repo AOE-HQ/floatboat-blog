@@ -1,13 +1,13 @@
 import { OverviewSection } from "@/components/marketing/overview-section";
 import hubFaqs from "@/data/landing-hub-faqs.json";
-import Link from "next/link";
+import { ResourceCard } from "@/components/marketing/resource-card";
 
 import { Breadcrumb as MarketingBreadcrumb } from "@/components/marketing/breadcrumb";
 import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { RelatedPageLinks } from "@/components/related-page-links";
-import { getCategorySkills, getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
+import { getCategoryResources, getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
 import type { SkillLocale } from "@/lib/skills/featured-skills";
 
 const origin = "https://floatboat.ai";
@@ -18,7 +18,7 @@ function Breadcrumb({ locale, current }: { locale: SkillLocale; current?: string
   const items = [
     { label: isZh ? "首页" : "Home", href: `${origin}${prefix || "/"}` },
     { label: isZh ? "Skills 市场" : "Skills Marketplace", href: `${prefix}/skills-marketplace` },
-    { label: isZh ? "Skill 分类" : "Skill Categories", href: skillCategoryPath(locale) },
+    { label: isZh ? "任务分类" : "Task Categories", href: skillCategoryPath(locale) },
     ...(current ? [{ label: current, href: skillCategoryPath(locale, SKILL_CATEGORY_SLUGS.find((slug) => getSkillCategory(slug)!.label[locale] === current)) }] : []),
   ];
   return <MarketingBreadcrumb label={isZh ? "面包屑导航" : "Breadcrumb"} items={items} />;
@@ -27,15 +27,15 @@ function Breadcrumb({ locale, current }: { locale: SkillLocale; current?: string
 export function SkillCategoryHub({ locale }: { locale: SkillLocale }) {
   const isZh = locale === "zh";
   const labels = isZh ? {
-    title: "按任务探索 Agent Skills", description: "从编码、开发流程、界面设计、写作营销和部署浏览器工作出发，找到更贴近当前任务的指引。发布者和原始来源始终清楚标注。",
-    section: "选择工作方向", scope: "这份目录收录什么", scopeCopy: ["这份目录按编码、设计、写作与部署等任务整理第三方 Agent Skills，帮助你比较指令的用途，并找到发布者和原始说明。", "已有本站指南的 Skill 可以打开详情；其余条目展示用途与发布者，暂不提供跳转。使用前请核对原始说明中的工具、安装方式和权限要求。"],
-    count: "项精选 Skill", view: "查看分类", ctaTitle: "把任务和来源放在一起", ctaDescription: "先选合适的指引，再带着真实文件和问题继续工作。", download: "下载 Floatboat",
+    title: "按任务探索 Skills 与独立项目", description: "从代码修改、软件开发、界面设计到办公与媒体制作，比较任务指引和软件工具。先确定工作方向，再查看具体资源的用途、发布者与使用条件。",
+    section: "选择工作方向", scope: "这份目录收录什么", scopeCopy: ["分类按照要完成的工作组织资源，同时收录 Agent Skills 与独立项目。Skill 提供任务指引，项目可能是应用、CLI、框架、组件或其他可复用软件；出现在同一分类，不表示它们使用同一安装方式或可以互相替代。", "已有本站指南的 Skill 可以打开详情，其他 Skill 保持静态展示。独立项目优先进入本站介绍，没有本站页面时保留上游入口。技术与用途标签帮助进一步识别资源，但不单独生成标签页面。"],
+    ctaTitle: "把任务和来源放在一起", ctaDescription: "先选合适的指引，再带着真实文件和问题继续工作。", download: "下载 Floatboat",
   } : {
-    title: "Explore Agent Skills by Task", description: "Find instructions for coding, development workflows, interface design, writing and marketing, or deployment and browser work. Publisher and original source remain visible.",
-    section: "Choose a Work Area", scope: "What This Directory Covers", scopeCopy: ["This directory groups third-party Agent Skills by tasks such as coding, design, writing, and deployment. Compare what each instruction does, then find its publisher and original documentation.", "Skills with a local guide open that page. Other entries show their purpose and publisher without a link. Before use, check the original instructions for tools, installation steps, and permissions."],
-    count: "selected Skills", view: "Explore Category", ctaTitle: "Keep the Task and Source Together", ctaDescription: "Choose the right instruction, then continue with the actual files and question in view.", download: "Download Floatboat",
+    title: "Explore Skills and Projects by Task", description: "Compare instructions and software for code changes, development workflows, interface design, office work, and media production. Choose the work area, then inspect each resource’s purpose, publisher, and requirements.",
+    section: "Choose a Work Area", scope: "What This Directory Covers", scopeCopy: ["Categories group resources by the work they support, including Agent Skills and independent projects. A Skill supplies instructions; a project may be an application, CLI, framework, component, or other reusable software. Sharing a category does not make them interchangeable or give them the same setup requirements.", "Skills with local guides open those pages; other Skills remain static entries. Projects open their local introduction when available or the upstream source otherwise. Technology and purpose tags describe resources without creating separate tag pages."],
+    ctaTitle: "Keep the Task and Source Together", ctaDescription: "Choose the right instruction, then continue with the actual files and question in view.", download: "Download Floatboat",
   };
-  const categories = SKILL_CATEGORY_SLUGS.map((slug) => ({ slug, page: getSkillCategory(slug)!, count: getCategorySkills(slug, locale).length }));
+  const categories = SKILL_CATEGORY_SLUGS.map((slug) => ({ slug, page: getSkillCategory(slug)!, entries: getCategoryResources(slug, locale) }));
   const canonical = `${origin}${skillCategoryPath(locale)}`;
   const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: labels.title, description: labels.description, url: canonical, inLanguage: isZh ? "zh-CN" : "en-US", mainEntity: { "@type": "ItemList", itemListElement: categories.map(({ slug, page }, index) => ({ "@type": "ListItem", position: index + 1, name: page.label[locale], url: `${origin}${skillCategoryPath(locale, slug)}` })) } };
 
@@ -45,12 +45,9 @@ export function SkillCategoryHub({ locale }: { locale: SkillLocale }) {
     <section className="mx-auto max-w-7xl px-5 pb-16 sm:px-8 sm:pb-20">
       <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">{labels.section}</h2>
       <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {categories.map(({ slug, page }) => <Link key={slug} href={skillCategoryPath(locale, slug)} className="group flex min-h-64 flex-col rounded-3xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-7 transition hover:-translate-y-1 hover:shadow-[var(--ob-shadow-raised)]">
-
-          <h3 className="mt-6 font-serif text-3xl tracking-tight">{page.label[locale]}</h3>
-          <p className="mt-3 line-clamp-3 leading-7 text-[var(--ob-color-text-subtle)]">{page.hero[locale].description}</p>
-          <span className="mt-auto pt-7 text-sm font-semibold">{labels.view} →</span>
-        </Link>)}
+        {categories.map(({ slug, page, entries }) => <div key={slug}>
+          <ResourceCard title={page.label[locale]} description={page.hero[locale].description} href={skillCategoryPath(locale, slug)} publisher={`${entries.filter((entry) => entry.entryType === "skill").length} Skills · ${entries.filter((entry) => entry.entryType === "project").length} ${isZh ? "个独立项目" : "projects"}`} metadata={[]} />
+        </div>)}
       </div>
     </section>
     <OverviewSection variant="prose" id="directory-scope" title={labels.scope} paragraphs={labels.scopeCopy} />
@@ -64,34 +61,29 @@ export function SkillCategoryDetail({ locale, slug }: { locale: SkillLocale; slu
   const category = getSkillCategory(slug);
   if (!category) return null;
   const isZh = locale === "zh";
-  const skills = getCategorySkills(slug, locale);
+  const entries = getCategoryResources(slug, locale);
+  const skills = entries.filter((entry) => entry.entryType === "skill");
+  const projects = entries.filter((entry) => entry.entryType === "project");
   const labels = isZh ? {
-    skills: "精选 Skill 与原始来源", choice: "按任务选择", guide: "本站详情", source: "原始来源", original: "阅读原始 SKILL.md", local: "查看详情指南", publisher: "发布者", download: "下载 Floatboat", note: "本站为独立整理；Skill 的安装、工具要求和可用范围以发布者的原始说明为准。",
+    skills: `${category.label.zh} Skills`, projects: `${category.label.zh}独立项目`, choice: "按任务选择", guide: "本站详情", source: "原始来源", original: "阅读原始 SKILL.md", local: "查看详情指南", publisher: "发布者", download: "下载 Floatboat", note: "Skill 提供任务指引，项目提供软件或配套资源。安装方式、运行条件、权限与许可请分别核对原始说明。",
   } : {
-    skills: "Selected Skills and Original Sources", choice: "Choose by the Job", guide: "Local Guide", source: "Original Source", original: "Read Original SKILL.md", local: "Read Local Guide", publisher: "Publisher", download: "Download Floatboat", note: "This is an independent directory. Check the publisher's source for installation, tools, and availability.",
+    skills: `${category.label.en} Skills`, projects: `${category.label.en} Projects`, choice: "Choose by the Job", guide: "Local Guide", source: "Original Source", original: "Read Original SKILL.md", local: "Read Local Guide", publisher: "Publisher", download: "Download Floatboat", note: "Skills supply instructions; projects supply software or supporting resources. Check each source for setup, runtime, access, and license requirements.",
   };
   const canonical = `${origin}${skillCategoryPath(locale, slug)}`;
-  const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: category.hero[locale].title, description: category.seo[locale].description, url: canonical, inLanguage: isZh ? "zh-CN" : "en-US", mainEntity: { "@type": "ItemList", itemListElement: skills.map((skill, index) => ({ "@type": "ListItem", position: index + 1, name: skill.name, url: skill.hasLocalGuide ? `${origin}${skill.href}` : undefined })) } };
+  const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: category.hero[locale].title, description: category.seo[locale].description, url: canonical, inLanguage: isZh ? "zh-CN" : "en-US", mainEntity: { "@type": "ItemList", numberOfItems: entries.length, itemListElement: entries.map((entry, index) => ({ "@type": "ListItem", position: index + 1, name: entry.name, url: entry.entryType === "skill" && !entry.hasLocalGuide ? undefined : entry.href.startsWith("/") ? `${origin}${entry.href}` : entry.href })) } };
 
   return <main className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
     <Breadcrumb locale={locale} current={category.label[locale]} />
     <MarketingHero layout="centered" title={category.hero[locale].title} description={category.hero[locale].description} />
     <OverviewSection variant="prose" id="category-introduction" title={category.overviewTitle[locale]} paragraphs={[category.intro[locale]]} />
 
-    <section className="border-y border-black/[0.07] bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
-      <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">{labels.skills}</h2>
-      <div className="mt-7 grid gap-4 md:grid-cols-2">
-        {skills.map((skill) => <article key={skill.id} className="flex flex-col rounded-2xl border border-black/[0.08] bg-[var(--ob-color-surface)] p-6">
-          <h3 className="font-serif text-2xl tracking-tight">{skill.name}</h3>
-          <p className="mt-3 line-clamp-4 flex-1 leading-7 text-[var(--ob-color-text-subtle)]">{skill.description}</p>
-          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold">
-            {skill.hasLocalGuide ? <Link href={skill.href} className="underline underline-offset-4">{labels.local} →</Link> : null}
-            <span className="text-[var(--ob-color-muted)]">{labels.publisher}: {skill.publisher}</span>
-          </div>
-        </article>)}
-      </div>
-      <p className="mt-6 text-sm leading-6 text-[var(--ob-color-muted)]">{labels.note}</p>
-    </div></section>
+    {([{ type: "skill", title: labels.skills, items: skills }, { type: "project", title: labels.projects, items: projects }] as const).filter((group) => group.items.length > 0).map((group) => <section key={group.type} id={`category-${group.type}s`} aria-labelledby={`category-${group.type}s-title`} className="px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
+      <h2 id={`category-${group.type}s-title`} className="font-serif text-3xl tracking-tight sm:text-4xl">{group.title}</h2>
+      <ul className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {group.items.map((entry) => <li key={entry.id}><ResourceCard title={entry.name} description={entry.description} publisher={entry.publisher} href={entry.entryType === "skill" && !entry.hasLocalGuide ? undefined : entry.href} metadata={[...entry.taxonomy.categories, ...entry.taxonomy.tags]} metadataLabel={isZh ? "分类与标签" : "Categories and tags"} /></li>)}
+      </ul>
+    </div></section>)}
+    <p className="mx-auto max-w-7xl px-5 text-sm leading-6 text-[var(--ob-color-muted)] sm:px-8">{labels.note}</p>
 
     <section className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16"><h2 className="font-serif text-3xl tracking-tight sm:text-4xl">{labels.choice}</h2><div className="mt-7 grid gap-4 md:grid-cols-3">{category.decisions.map((decision) => <article key={decision.en.title} className="rounded-2xl border border-black/[0.08] bg-white/60 p-6"><h3 className="font-serif text-2xl tracking-tight">{decision[locale].title}</h3><p className="mt-3 leading-7 text-[var(--ob-color-text-subtle)]">{decision[locale].description}</p></article>)}</div></section>
     <RelatedPageLinks family="skill-categories" currentId={slug} locale={locale} />

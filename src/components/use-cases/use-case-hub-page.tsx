@@ -21,7 +21,7 @@ const pageCopy = {
     catalogTitle: "Browse by Role, Work Style, or Rhythm",
     catalogDescription: "Choose a profession or operating model to see the assignments a Work Agent can take on, the deliverables it returns, and the decisions that remain with you.",
     methodTitle: "Start from a Real Assignment, Not an Industry Label",
-    methodDescription: "The strongest first use case has known source material, a concrete deliverable, and a person who can judge the result.",
+    methodDescription: "A useful first assignment has source material, a concrete deliverable, and someone able to judge the result. The steps below connect that outcome with the files, permissions, and review point needed before work is delegated.",
     steps: [
       ["01", "Name the Deliverable", "Begin with the report, lesson pack, proposal, review packet, campaign asset, or operating brief that needs to exist at the end."],
       ["02", "Bound the Working Context", "Choose the files, sources, templates, terminology, permissions, and open questions the agent may use for this assignment."],
@@ -45,7 +45,7 @@ const pageCopy = {
     catalogTitle: "按职业、工作方式或节奏浏览",
     catalogDescription: "按职业或经营方式查看 Work Agent 可以接手哪些任务、会交付什么成果，以及哪些决定仍然由你负责。",
     methodTitle: "先选一项真实任务，不要先套行业标签",
-    methodDescription: "适合作为起点的任务，通常已有明确资料、具体交付物，以及能够判断结果的人。",
+    methodDescription: "适合作为起点的任务，需要明确资料、具体交付物及能够判断结果的人。以下准备步骤将目标与文件、权限和审阅节点连接起来，再决定哪些工作适合委派。",
     steps: [
       ["01", "先说清要交付什么", "从报告、教学材料、提案、审阅包、营销素材或经营简报开始，明确任务结束时应该得到什么。"],
       ["02", "限定本次工作背景", "选择 Agent 可以使用的文件、来源、模板、术语、权限与待确认问题，不要让任务无限扩张。"],
@@ -97,7 +97,7 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
 
     <MarketingHero layout="centered" title={titleCase(copy.title)} description={copy.description} />
 
-    <section id="catalog" className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28">
+    <section id="catalog" className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-4xl"><h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.catalogTitle)}</h2><p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.catalogDescription}</p></div>
         <UseCaseCatalog locale={locale} cards={cards} />
@@ -106,7 +106,7 @@ export function UseCaseHubPage({ locale }: { locale: PersonaLocale }) {
 
     <section className="px-5 py-20 sm:px-8 sm:py-28"><div className="mx-auto max-w-7xl"><div className="max-w-4xl"><h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.methodTitle)}</h2><p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.methodDescription}</p></div><div className="mt-12 grid gap-5 lg:grid-cols-3">{copy.steps.map(([number, title, description]) => <article key={number} className="rounded-[28px] border border-black/[0.08] bg-[var(--ob-color-surface)] p-6"><span className="text-xs font-semibold tracking-[0.16em] text-[var(--ob-color-muted)]">{number}</span><h3 className="mt-7 font-serif text-3xl tracking-[-0.03em]">{titleCase(title)}</h3><p className="mt-4 leading-7 text-[var(--ob-color-text-subtle)]">{description}</p></article>)}</div></div></section>
 
-    <section className="border-y border-black/[0.06] px-5 py-20 sm:px-8 sm:py-28"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr]"><div><h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.pathwayTitle)}</h2><p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.pathwayDescription}</p></div><div className="divide-y divide-black/[0.08] border-y border-black/[0.08]">{copy.pathway.map(([title, description]) => <div key={title} className="grid gap-3 py-7 sm:grid-cols-[0.55fr_1fr]"><h3 className="font-serif text-2xl">{titleCase(title)}</h3><p className="leading-7 text-[var(--ob-color-text-subtle)]">{description}</p></div>)}</div></div></section>
+    <section className="px-5 py-20 sm:px-8 sm:py-28"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr]"><div><h2 className="font-serif text-4xl leading-[1.04] tracking-[-0.04em] sm:text-5xl">{titleCase(copy.pathwayTitle)}</h2><p className="mt-5 text-lg leading-8 text-[var(--ob-color-text-subtle)]">{copy.pathwayDescription}</p></div><div>{copy.pathway.map(([title, description]) => <div key={title} className="grid gap-3 py-7 sm:grid-cols-[0.55fr_1fr]"><h3 className="font-serif text-2xl">{titleCase(title)}</h3><p className="leading-7 text-[var(--ob-color-text-subtle)]">{description}</p></div>)}</div></div></section>
 
     <FaqBand locale={locale} items={hubFaqs.useCases[locale]} />
     <FinalCta title={copy.finalTitle} description={copy.finalDescription} primary={{ label: copy.primary, href: isZh ? "https://floatboat.ai/zh/download/success?from=use-cases-hub&download_placement=final_cta" : "https://floatboat.ai/download/success?from=use-cases-hub&download_placement=final_cta" }} />

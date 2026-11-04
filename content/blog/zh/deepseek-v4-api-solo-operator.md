@@ -1,5 +1,7 @@
 ---
 title: "单人经营者使用 DeepSeek V4 API：价格、模型与成本控制"
+seoTitle: "DeepSeek V4 API：单人业务的模型选择与成本控制"
+seoDescription: "单人业务使用 DeepSeek V4 API，应核对模型 ID、峰谷价格、缓存与路由条件。按每个验收任务成本设置预算和人工审核，通过可控试点判断实际用量与投入是否合适。"
 description: "面向单人经营者的 DeepSeek V4 API 当前指南：核对模型 ID、峰谷价格、缓存经济性和路由变化，并用每个验收任务成本、预算上限与人工审核设计一轮可控试点。"
 slug: "deepseek-v4-api-solo-operator"
 date: "2026-04-17"

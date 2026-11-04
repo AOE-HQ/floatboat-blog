@@ -1,5 +1,7 @@
 ---
 title: "What Is an LLM Wiki — and Should You Build One?"
+seoTitle: "LLM Wikis: Knowledge Structure, Maintenance, and Build Decisions"
+seoDescription: "An LLM wiki precompiles knowledge rather than retrieving from scratch each time. Examine the Karpathy idea, Farzapedia examples, maintenance costs, and lighter alternatives for solo work."
 description: "The Karpathy LLM wiki went viral for a reason. Here's what it actually is, who it's built for, and whether a solo operator needs one."
 slug: "what-is-llm-wiki"
 date: "2026-04-14"

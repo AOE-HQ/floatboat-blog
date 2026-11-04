@@ -2,12 +2,42 @@
   "slug": "auto-mode",
   "name": "Auto / Lite Mode",
   "access": "picker",
-  "badge": { "en": "Default", "zh": "默认" },
+  "badge": {
+    "en": "Default",
+    "zh": "默认"
+  },
   "summary": {
     "en": "Let Floatboat route each task to a suitable model and fall back when needed.",
     "zh": "让 Floatboat 为每项任务选择合适模型，并在需要时自动降级。"
   },
-  "seo": {"title":{"en":"AI Model Router and Automatic Model Selection | Floatboat Auto Mode","zh":"AI 模型自动路由与智能选择｜Floatboat 畅用模式"},"description":{"en":"Learn how an AI model router selects models by task complexity, context, modality, speed, and availability, with automatic fallback when a route is unavailable.","zh":"了解 AI 模型自动路由如何根据任务复杂度、上下文、输入模态、速度与可用性选择模型，并在路径不可用时自动降级。"},"keywords":[{"en":"AI model router","zh":"AI 模型路由"},{"en":"automatic model selection","zh":"自动选择模型"},{"en":"LLM routing","zh":"大模型智能路由"},{"en":"Auto Mode","zh":"畅用模式"}]},
+  "seo": {
+    "title": {
+      "en": "AI Model Router: Task-Based Selection and Automatic Fallback",
+      "zh": "AI 模型自动路由：任务匹配、可用性判断与自动回退"
+    },
+    "description": {
+      "en": "Understand how Auto Mode selects a model by complexity, context, modality, speed, and availability. Review routing and fallback without assuming a fixed model for every run.",
+      "zh": "了解 Auto Mode 如何按复杂度、上下文、输入模态、速度与可用性选择模型，查看自动回退机制，区分动态路由、人工选型和每次任务的实际执行路径。"
+    },
+    "keywords": [
+      {
+        "en": "AI model router",
+        "zh": "AI 模型路由"
+      },
+      {
+        "en": "automatic model selection",
+        "zh": "自动选择模型"
+      },
+      {
+        "en": "LLM routing",
+        "zh": "大模型智能路由"
+      },
+      {
+        "en": "Auto Mode",
+        "zh": "畅用模式"
+      }
+    ]
+  },
   "hero": {
     "title": {
       "en": "Auto / Lite Mode: let the workspace route the task.",
@@ -18,31 +48,64 @@
       "zh": "模型目录使用 Auto Mode 名称，用户指南将自动路由入口称为 Lite mode。以客户端实际显示的自动模式为准，再按任务需要切换模型。"
     },
     "prompts": [
-      { "en": "Plan a difficult project", "zh": "规划复杂项目" },
-      { "en": "Summarize a long document", "zh": "总结长文档" },
-      { "en": "Inspect this screenshot", "zh": "分析截图" },
-      { "en": "Refactor this code", "zh": "重构代码" }
+      {
+        "en": "Plan a difficult project",
+        "zh": "规划复杂项目"
+      },
+      {
+        "en": "Summarize a long document",
+        "zh": "总结长文档"
+      },
+      {
+        "en": "Inspect this screenshot",
+        "zh": "分析截图"
+      },
+      {
+        "en": "Refactor this code",
+        "zh": "重构代码"
+      }
     ]
   },
   "facts": [
     {
-      "label": { "en": "Access", "zh": "使用入口" },
-      "value": { "en": "Default client option", "zh": "客户端默认选项" }
+      "label": {
+        "en": "Access",
+        "zh": "使用入口"
+      },
+      "value": {
+        "en": "Default client option",
+        "zh": "客户端默认选项"
+      }
     },
     {
-      "label": { "en": "Availability", "zh": "开放范围" },
-      "value": { "en": "Available to everyone", "zh": "面向所有用户开放" }
+      "label": {
+        "en": "Availability",
+        "zh": "开放范围"
+      },
+      "value": {
+        "en": "Available to everyone",
+        "zh": "面向所有用户开放"
+      }
     },
     {
-      "label": { "en": "Routing signals", "zh": "调度依据" },
+      "label": {
+        "en": "Routing signals",
+        "zh": "调度依据"
+      },
       "value": {
         "en": "Task, context, modality, availability",
         "zh": "任务、上下文、模态与可用性"
       }
     },
     {
-      "label": { "en": "API key", "zh": "API Key" },
-      "value": { "en": "Not required", "zh": "无需自备" }
+      "label": {
+        "en": "API key",
+        "zh": "API Key"
+      },
+      "value": {
+        "en": "Not required",
+        "zh": "无需自备"
+      }
     }
   ],
   "positioning": {
@@ -56,7 +119,10 @@
     },
     "traits": [
       {
-        "label": { "en": "Initiative", "zh": "主动程度" },
+        "label": {
+          "en": "Initiative",
+          "zh": "主动程度"
+        },
         "value": {
           "en": "Routes without extra setup",
           "zh": "无需额外配置即可调度"
@@ -67,23 +133,38 @@
         }
       },
       {
-        "label": { "en": "Continuity", "zh": "任务连续性" },
-        "value": { "en": "Keeps one workspace", "zh": "保持同一工作空间" },
+        "label": {
+          "en": "Continuity",
+          "zh": "任务连续性"
+        },
+        "value": {
+          "en": "Keeps one workspace",
+          "zh": "保持同一工作空间"
+        },
         "description": {
           "en": "Files, rules, and prior output stay with the project.",
           "zh": "文件、规则与此前产出继续留在项目中。"
         }
       },
       {
-        "label": { "en": "Resilience", "zh": "连续可用" },
-        "value": { "en": "Supports fallback", "zh": "支持自动降级" },
+        "label": {
+          "en": "Resilience",
+          "zh": "连续可用"
+        },
+        "value": {
+          "en": "Supports fallback",
+          "zh": "支持自动降级"
+        },
         "description": {
           "en": "A suitable fallback can keep work moving when a route is unavailable.",
           "zh": "首选路径不可用时，可用合适的降级路径继续任务。"
         }
       },
       {
-        "label": { "en": "Control", "zh": "用户控制" },
+        "label": {
+          "en": "Control",
+          "zh": "用户控制"
+        },
         "value": {
           "en": "Manual choice remains available",
           "zh": "仍可手动指定模型"
@@ -101,8 +182,8 @@
       "zh": "不同任务，需要不同能力。"
     },
     "description": {
-      "en": "Auto Mode selects a route by what the request actually demands—not by one permanent favorite.",
-      "zh": "Auto Mode 根据请求的实际需求选择路径，而不是永远使用同一个偏好模型。"
+      "en": "Reasoning depth, context length, media input, and response speed can point to different execution routes. This overview explains the task demands considered by Auto Mode rather than presenting routing as a preference for one permanent model.",
+      "zh": "推理深度、上下文长度、媒体输入和响应速度，可能对应不同执行路径。以下说明 Auto Mode 判断任务需求时关注的方向，帮助理解自动选择，而不是将路由视为固定偏好某个模型。"
     },
     "items": [
       {
@@ -173,12 +254,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "在连续项目中处理不同类型的请求",
-      "en": "Handle changing requests within one continuous project"
+      "zh": "Auto / Lite Mode的使用场景",
+      "en": "Use Cases for Auto / Lite Mode"
     },
     "description": {
-      "zh": "研究、实现与日常修改对模型的要求不同；自动路径仍需要围绕同一交付目标检查结果。",
-      "en": "Research, implementation, and routine edits make different model demands; automatic routing still needs verification against the same deliverable."
+      "zh": "任务从研究转向实施时，对执行路径的要求也会改变。自动模式需要维持项目连续性，入口中断后的回退结果同样应按原要求复核，清楚标明哪些步骤能够继续、哪些仍然受阻。",
+      "en": "Research, implementation, and daily edits place different demands on an execution route. These scenarios examine continuity across changing requests and interruptions, with results checked against the same project constraints after a route changes."
     },
     "items": [
       {
@@ -186,17 +267,9 @@
           "en": "From research to implementation",
           "zh": "从调研到实现"
         },
-        "brief": {
-          "zh": "项目资料、待定方案和已经确认的实现要求。",
-          "en": "Project material, open design choices, and approved implementation requirements."
-        },
-        "process": {
-          "zh": "按阅读、决策和实现阶段组织请求，持续保留约束与来源。",
-          "en": "Organize reading, decisions, and implementation while retaining constraints and sources."
-        },
-        "outcome": {
-          "zh": "从研究结论到实现和验证的连续项目成果。",
-          "en": "Continuous project outputs linking research conclusions, implementation, and verification."
+        "description": {
+          "en": "A project may move from reading sources to choosing a design and implementing it. Keep the research, open decisions, and approved requirements in the same context as the work progresses. Check that implementation and verification still follow the original constraints and that conclusions remain linked to their sources.",
+          "zh": "一项项目工作可能先阅读资料，再决定设计方向，最后进入实施。推进过程中保留研究来源、待定问题与已批准的要求，避免不同环节各自重新解释任务。完成实施与验证后，仍应能够把结果对应回原有约束和研究结论。"
         }
       },
       {
@@ -204,17 +277,9 @@
           "en": "Mixed daily queue",
           "zh": "混合日常任务"
         },
-        "brief": {
-          "zh": "待摘要材料、局部修改和需要追踪的故障。",
-          "en": "Material to summarize, local edits, and faults to investigate."
-        },
-        "process": {
-          "zh": "让每个请求按当前任务要求处理，再核对相邻步骤是否保持一致。",
-          "en": "Process each request according to its demands and check consistency with adjacent steps."
-        },
-        "outcome": {
-          "zh": "摘要、修改与故障调查各自有验收记录，不丢失项目背景。",
-          "en": "Summaries, edits, and investigations with their own acceptance evidence and project context intact."
+        "description": {
+          "en": "A daily queue can mix summaries, local edits, and fault investigations. Treat each request according to its own requirements while retaining the project context needed by adjacent steps. Review the summary, diff, or diagnosis with the evidence appropriate to that task, rather than applying one acceptance rule to everything.",
+          "zh": "日常任务可能同时包含资料总结、本地修改和故障调查。根据每项工作的实际要求处理，并保留前后步骤需要的项目上下文。总结、代码差异和诊断结果分别使用适合自身的证据进行检查，避免用同一种标准判断所有任务。"
         }
       },
       {
@@ -222,17 +287,19 @@
           "en": "Continue through disruption",
           "zh": "在波动中继续推进"
         },
-        "brief": {
-          "zh": "尚未完成的任务、已保留状态与当前不可用的模型路径。",
-          "en": "An unfinished task, retained state, and an unavailable model route."
+        "description": {
+          "en": "An unavailable model route can interrupt a task before its work is complete. Retain the current state and continue through available system routes where possible, then recheck fallback results against the original requirements. Identify any steps that remain blocked instead of treating a changed route as proof of completion.",
+          "zh": "模型入口不可用时，保留未完成任务的当前状态，并在存在可用系统路径时继续推进。切换后重新检查结果是否满足原始要求，明确哪些步骤已经恢复、哪些仍然受阻。入口发生变化并不意味着任务已经完成，后续结果仍需核对。"
+        }
+      },
+      {
+        "title": {
+          "en": "Keep text and visual evidence connected",
+          "zh": "连接文字与视觉证据"
         },
-        "process": {
-          "zh": "在系统提供的可用路径中继续工作，重新检查降级后的结果是否满足要求。",
-          "en": "Continue through available system routes and recheck whether fallback results satisfy requirements."
-        },
-        "outcome": {
-          "zh": "可续接的任务状态与结果检查；无法继续的步骤明确标出。",
-          "en": "Resumable task state and checked results, with blocked steps identified."
+        "description": {
+          "en": "A task may combine written requirements with screenshots or other supported visual input. Identify what each part needs to establish and keep them in the same project context while using an available route that fits the input. Review the conclusion against both sources, and leave unsupported media steps open instead of assuming every modality shares one path.",
+          "zh": "任务可能同时提供文字要求、截图或其他受支持的视觉输入。先明确每部分需要证明什么，再在同一项目背景中使用适合输入的可用路径。结论同时对照两类来源检查；不受支持的媒体步骤应明确保留，不能假定所有输入都共用同一处理入口。"
         }
       }
     ]
@@ -243,33 +310,45 @@
       "zh": "接管那些原本会打断工作的模型决策。"
     },
     "description": {
-      "en": "Auto changes the route, not the project the user is working in.",
-      "zh": "畅用模式改变的是执行路径，不是用户正在处理的项目。"
+      "en": "Automatic routing should adapt execution without replacing the project being worked on. Examine how task complexity, retained context, input modality, and fallback affect model selection while the original material and expected outcome remain the reference for review.",
+      "zh": "执行路径可以随复杂度、上下文或输入类型改变，项目背景不应因此断开。自动选择与回退需要继续对应原始资料和预期交付，路由变化后的结果也仍要接受同一任务要求的检查。"
     },
     "items": [
       {
-        "title": { "en": "Task-complexity routing", "zh": "按任务复杂度调度" },
+        "title": {
+          "en": "Task-complexity routing",
+          "zh": "按任务复杂度调度"
+        },
         "description": {
           "en": "Distinguishes lightweight requests from work that deserves deeper reasoning.",
           "zh": "区分轻量请求与真正需要深度推理的工作。"
         }
       },
       {
-        "title": { "en": "Context-aware selection", "zh": "按上下文规模选择" },
+        "title": {
+          "en": "Context-aware selection",
+          "zh": "按上下文规模选择"
+        },
         "description": {
           "en": "Accounts for repositories, document sets, and long-running conversations.",
           "zh": "考虑代码库、资料集与长程对话所需的上下文。"
         }
       },
       {
-        "title": { "en": "Modality fit", "zh": "匹配输入模态" },
+        "title": {
+          "en": "Modality fit",
+          "zh": "匹配输入模态"
+        },
         "description": {
           "en": "Considers whether the task includes text, images, or mixed material.",
           "zh": "根据文本、图像或混合材料选择合适路径。"
         }
       },
       {
-        "title": { "en": "Automatic fallback", "zh": "自动降级" },
+        "title": {
+          "en": "Automatic fallback",
+          "zh": "自动降级"
+        },
         "description": {
           "en": "Can move to a suitable alternative when the preferred route is unavailable.",
           "zh": "首选路径不可用时可切换到合适替代方案。"
@@ -283,7 +362,10 @@
       "zh": "当工作会不断变换形态时，使用畅用模式。"
     },
     "choose": {
-      "title": { "en": "Choose Auto Mode when", "zh": "适合选择畅用模式" },
+      "title": {
+        "en": "Choose Auto Mode when",
+        "zh": "适合选择畅用模式"
+      },
       "items": [
         {
           "en": "You want a reliable default without tracking every model release.",

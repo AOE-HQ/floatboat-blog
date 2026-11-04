@@ -1,5 +1,7 @@
 ---
 title: "MiniMax H3 是什么——开放的全模态视频模型"
+seoTitle: "MiniMax H3：全模态视频架构与模型能力范围"
+seoDescription: "MiniMax H3 将文本、图像、视频与音频输入连接到视频生成。了解 FL2VA、Ref2VA、输出规格、价格与开放权重边界，再用统一素材测试判断真实能力，而不只依据演示样片。"
 description: "MiniMax H3 是开放权重的全模态视频系统，可统一处理文本、图片、视频与音频并生成原生立体声音视频。本文核对 FL2VA、Ref2VA、输出规格、完整价格、开放权重边界与统一素材测试方法。"
 slug: "what-is-minimax-h3"
 date: "2026-08-04"

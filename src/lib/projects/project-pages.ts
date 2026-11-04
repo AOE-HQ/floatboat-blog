@@ -11,9 +11,9 @@ const externalUrl = z.string().url().regex(/^https:\/\//);
 const item = z.object({ title: text, description: text });
 const copy = z.object({
   seoTitle: text,
+  seoDescription: text,
   description: text,
   kind: text,
-  tags: z.array(text).min(2).max(4),
   overviewTitle: text,
   overview: z.array(text).length(3),
   capabilitiesTitle: text,

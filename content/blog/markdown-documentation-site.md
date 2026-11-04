@@ -1,5 +1,7 @@
 ---
 title: "Markdown Documentation Sites — Docs-as-Code Without the Migraines"
+seoTitle: "Markdown Documentation Sites: Generators, Migration, and Git"
+seoDescription: "Markdown documentation sites connect plain files with Git, generators, and deployment. Compare Docusaurus, MkDocs, VitePress, Starlight, and Hugo before planning structure or migration."
 description: "How markdown documentation sites work: the docs-as-code workflow, what Docusaurus, MkDocs and VitePress each trade away, and when plain files are enough."
 slug: "markdown-documentation-site"
 date: "2026-09-15"

@@ -1,5 +1,7 @@
 ---
 title: "GPT Image 2 for Manga and Comic Creators: A Solo Workflow"
+seoTitle: "GPT Image 2 for Comics: A Solo Creator’s Full-Chapter Workflow"
+seoDescription: "GPT Image 2 comic production needs character references, panel control, separate lettering, and continuity checks. Test a six-panel pilot before scaling to a complete chapter."
 description: "A controlled GPT Image 2 manga workflow for character sheets, panel generation, lettering, continuity review, rights checks, and print-ready export."
 slug: "gpt-image-2-manga-comic-workflow"
 date: "2026-04-25"

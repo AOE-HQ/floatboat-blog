@@ -1,5 +1,7 @@
 ---
 title: "GPT Image 2 vs Midjourney vs Nano Banana 2 for Creators"
+seoTitle: "GPT Image 2 vs Midjourney vs Nano Banana 2: Creator Task Fit"
+seoDescription: "GPT Image 2, Midjourney, and Nano Banana 2 suit different creative tasks. Compare editing, text, references, cost, privacy, and licensing through one controlled test."
 description: "Compare GPT Image 2, Midjourney, and Nano Banana 2 with a controlled creator test covering editing, text, references, cost, privacy, and licensing."
 slug: "gpt-image-2-vs-midjourney-nano-banana-2"
 date: "2026-04-27"

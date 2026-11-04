@@ -1,5 +1,7 @@
 ---
 title: "DeepSeek Agent vs Claude Code: Harness, Model, Cost, and Fit"
+seoTitle: "DeepSeek Agent vs Claude Code: Runtime, Models, Cost, and Fit"
+seoDescription: "DeepSeek Agent vs Claude Code is not a model-only comparison. Separate harness behavior, model routing, cost, and task requirements, then run a bounded, reviewable evaluation."
 description: "DeepSeek Agent vs Claude Code is not a model-to-model comparison. Compare the Claude Code harness, DeepSeek model routing, current prices, and a safe evaluation plan."
 slug: "deepseek-agent-vs-claude-code"
 date: "2026-08-14"

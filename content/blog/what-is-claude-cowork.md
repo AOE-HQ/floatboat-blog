@@ -1,5 +1,7 @@
 ---
 title: "What Is Claude Cowork? Features, Access, Limits, and the New Claude Experience"
+seoTitle: "Claude Cowork: Features, Access, Limits, and Office Workflows"
+seoDescription: "Claude Cowork works across files and tools for knowledge tasks. Examine access, platforms, and limits, compare Code and chat, and understand its move into the unified Claude experience."
 description: "Claude Cowork explained: how it completes knowledge-work tasks across files and tools, how it differs from Chat and Claude Code, where it runs, and what changed when Cowork began merging into Claude."
 slug: "what-is-claude-cowork"
 date: "2026-08-14"

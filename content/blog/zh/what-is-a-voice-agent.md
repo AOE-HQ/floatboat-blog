@@ -1,5 +1,7 @@
 ---
 title: "什么是 Voice Agent — 语音 Agent 的定义、架构与任务形态全解析"
+seoTitle: "Voice Agent：语音执行架构、能力定义与工作任务形态"
+seoDescription: "Voice Agent 通过实时语音输入和输出进行交流，并处理轮次、打断与工具调用。了解从麦克风到语音回复的架构与核心特征，区分语音听写、实时对话和传统电话机器人的边界。"
 description: "Voice Agent 是语音进、语音出的实时对话 AI 系统：你说话，它监听、推理并以合成语音实时回复，还能调用工具、支持打断与轮次管理。本文给出完整定义、五项核心特征、从麦克风到语音回复的技术栈架构、2026 年中 GPT-Live、Claude Voice Mode、Gemini Live、Grok Voice 的产品格局，并厘清它与语音听写、电话语音机器人的边界。"
 slug: "what-is-a-voice-agent"
 date: "2026-08-10"

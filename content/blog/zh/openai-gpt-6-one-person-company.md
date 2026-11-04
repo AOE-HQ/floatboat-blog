@@ -1,5 +1,7 @@
 ---
 title: "GPT-6 Astra 适合一人公司吗？任务、成本与落地边界"
+seoTitle: "GPT-6 Astra 与一人公司：任务收益、成本与落地边界"
+seoDescription: "一人公司采用 GPT-6 Astra 前，按任务核算成本并设计评测，核对工具权限和 Floatboat 接入状态，再判断哪些业务值得使用，哪些更适合低价模型或确定性自动化。"
 description: "面向一人公司的 GPT-6 Astra 实用指南：适合哪些真实业务任务、如何计算每项工作成本、怎样控制工具权限、如何设计采用前评测，以及哪些工作应交给更便宜的模型或确定性自动化。"
 slug: "openai-gpt-6-one-person-company"
 date: "2026-04-24"

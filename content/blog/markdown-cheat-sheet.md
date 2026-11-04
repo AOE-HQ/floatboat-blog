@@ -1,5 +1,7 @@
 ---
 title: "Markdown Cheat Sheet — Syntax You'll Actually Use, With Examples"
+seoTitle: "Markdown Cheat Sheet: Common Syntax, GFM, and Copyable Examples"
+seoDescription: "A Markdown cheat sheet with copyable syntax, GFM tables, and task lists. Check escaping and indentation in GitHub, Obsidian, and Notion instead of assuming every renderer matches."
 description: "A copy-paste Markdown cheat sheet: core syntax, GFM tables and task lists, and the escaping mistakes that break rendering in GitHub, Obsidian, and Notion."
 slug: "markdown-cheat-sheet"
 date: "2026-09-11"

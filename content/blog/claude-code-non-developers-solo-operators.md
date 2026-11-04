@@ -1,5 +1,7 @@
 ---
 title: "Claude Code for Non-Developers in 2026: What Solo Operators Should Know"
+seoTitle: "Claude Code for Non-Developers: Tasks, Limits, and Alternatives"
+seoDescription: "Claude Code is a developer-oriented terminal agent. Learn what that means for non-developers, how it differs from chat and Cowork, and when ready-made tools are a better fit."
 description: "Claude Code is built for developers—but if you run a one-person business, here's what it actually means for you and whether you need it."
 slug: "claude-code-non-developers-solo-operators"
 date: "2026-04-06"

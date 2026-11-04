@@ -1,5 +1,7 @@
 ---
 title: "GLM-5.3 Open-Weight Status: Verify Before Self-Hosting"
+seoTitle: "GLM-5.3 Open Weights: Verify Release Status Before Self-Hosting"
+seoDescription: "GLM-5.3 self-hosting starts with verifiable weights and license terms. Compare the hosted API and Coding Plan with infrastructure, migration, and accepted-task costs."
 description: "How to verify GLM-5.3 weight availability, license terms, and self-hosting requirements before comparing them with the hosted API and Coding Plan."
 slug: "glm-5-3"
 date: "2026-08-14"

@@ -1,5 +1,7 @@
 ---
 title: "World Cup Draw 2026: Rules, Results and Groups"
+seoTitle: "World Cup 2026 Draw: Rules, Group Results, and Tournament Format"
+seoDescription: "World Cup 2026 draw coverage includes all 12 groups, host placements, key matchups, and Group of Death analysis. Connect the draw with standings and the knockout bracket."
 description: "World Cup draw 2026 guide with the full 12-group draw results, key matchups, Group of Death analysis, and links to standings and bracket tracking."
 slug: "world-cup-2026-draw"
 date: "2026-07-15"

@@ -1,5 +1,7 @@
 ---
 title: "Markdown 表格怎么做——语法、对齐与易翻车的细节"
+seoTitle: "Markdown 表格：基础语法、列对齐与常见问题处理"
+seoDescription: "制作 Markdown 表格时，检查三行结构、对齐冒号和竖线转义，再处理宽表与单元格换行。了解同一写法在 GitHub、Obsidian、Notion 中为何可能产生不同结果。"
 description: "Markdown 表格完整指南：三行结构、对齐冒号、单元格内竖线转义、宽表与换行的处理方式，以及为什么同一个表格在 GitHub、Obsidian、Notion 里渲染结果可能完全不同。"
 slug: "markdown-table-how-to"
 date: "2026-09-07"

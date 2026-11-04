@@ -1,5 +1,7 @@
 ---
 title: "Claude Code 对不懂代码的单人创业者意味着什么（2026）"
+seoTitle: "非开发者使用 Claude Code：任务选择、限制与替代方式"
+seoDescription: "Claude Code 面向终端开发任务。非开发者和单人创业者可先了解它与聊天、Cowork 的区别，比较真实使用成本，再判断需要自己造工具，还是采用已有产品完成工作。"
 description: "Claude Code 是给开发者的终端工具，但如果你在经营一人公司，它对你到底意味着什么、需不需要？本文用大白话讲清 Claude Code 到底干什么、和 Claude chat、Cowork 的区别、真实成本，并给出单人创业者该「自己造工具」还是「直接用现成工具」的结论。"
 slug: "claude-code-non-developers-solo-operators"
 date: "2026-04-06"

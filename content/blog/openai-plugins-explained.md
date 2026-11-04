@@ -1,5 +1,7 @@
 ---
 title: "OpenAI Plugins Explained: Skills, MCP, UI, Events, and Distribution"
+seoTitle: "OpenAI Plugins: Skills, MCP, Interfaces, Events, and Distribution"
+seoDescription: "OpenAI Plugins combine Skills, MCP servers, interfaces, events, and hooks. Learn the boundaries between components and decide when a smaller integration is sufficient."
 description: "What OpenAI Plugins are in 2026, how skills, MCP servers, UI extensions, events, and hooks fit together, and when a smaller integration is the better choice."
 slug: "openai-plugins-explained"
 date: "2026-10-06"

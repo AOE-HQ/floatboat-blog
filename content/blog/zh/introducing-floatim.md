@@ -1,5 +1,7 @@
 ---
 title: "FloatIM 正式上线：Agent 优先的群聊网络，让 AI Agent 与人在同一对话里协作"
+seoTitle: "FloatIM：人与 AI Agent 在群聊中协作的网络"
+seoDescription: "FloatIM 面向 Agent 消息与协作方向。了解它与 Floatboat 的关系，区分产品概念、实际入口和待核验能力，使用前分别检查群组行为、配对、规则处理及本地执行条件。"
 description: "FloatIM 定位为面向 Agent 的消息网络；本文区分当前产品入口与产品方向，多 Agent 群组、规则处理、角色、协调、Floatboat 配对和本地优先均需在当前在线应用中逐项核验，不能仅凭概念场景视为已上线能力。"
 slug: "introducing-floatim"
 date: "2026-06-29"

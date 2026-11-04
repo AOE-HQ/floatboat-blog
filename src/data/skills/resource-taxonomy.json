@@ -1,0 +1,1566 @@
+{
+  "tags": {
+    "react": {
+      "en": "React",
+      "zh": "React"
+    },
+    "nextjs": {
+      "en": "Next.js",
+      "zh": "Next.js"
+    },
+    "react-native": {
+      "en": "React Native",
+      "zh": "React Native"
+    },
+    "performance": {
+      "en": "Performance",
+      "zh": "性能优化"
+    },
+    "code-review": {
+      "en": "Code Review",
+      "zh": "代码审查"
+    },
+    "refactoring": {
+      "en": "Refactoring",
+      "zh": "重构"
+    },
+    "component-design": {
+      "en": "Component Design",
+      "zh": "组件设计"
+    },
+    "animation": {
+      "en": "Animation",
+      "zh": "动效"
+    },
+    "accessibility": {
+      "en": "Accessibility",
+      "zh": "无障碍"
+    },
+    "interface-design": {
+      "en": "Interface Design",
+      "zh": "界面设计"
+    },
+    "writing": {
+      "en": "Writing",
+      "zh": "写作"
+    },
+    "seo": {
+      "en": "SEO",
+      "zh": "SEO"
+    },
+    "marketing": {
+      "en": "Marketing",
+      "zh": "营销"
+    },
+    "deployment": {
+      "en": "Deployment",
+      "zh": "部署"
+    },
+    "browser-automation": {
+      "en": "Browser Automation",
+      "zh": "浏览器自动化"
+    },
+    "desktop-automation": {
+      "en": "Desktop Automation",
+      "zh": "桌面自动化"
+    },
+    "vercel": {
+      "en": "Vercel",
+      "zh": "Vercel"
+    },
+    "cloudflare": {
+      "en": "Cloudflare",
+      "zh": "Cloudflare"
+    },
+    "azure": {
+      "en": "Azure",
+      "zh": "Azure"
+    },
+    "security": {
+      "en": "Security",
+      "zh": "安全审计"
+    },
+    "testing": {
+      "en": "Testing",
+      "zh": "测试"
+    },
+    "debugging": {
+      "en": "Debugging",
+      "zh": "故障排查"
+    },
+    "tdd": {
+      "en": "Test-Driven Development",
+      "zh": "测试驱动开发"
+    },
+    "architecture": {
+      "en": "Architecture",
+      "zh": "架构设计"
+    },
+    "planning": {
+      "en": "Planning",
+      "zh": "任务规划"
+    },
+    "handoffs": {
+      "en": "Handoffs",
+      "zh": "任务交接"
+    },
+    "skill-authoring": {
+      "en": "Skill Authoring",
+      "zh": "Skill 编写"
+    },
+    "skill-discovery": {
+      "en": "Skill Discovery",
+      "zh": "Skill 发现"
+    },
+    "pdf": {
+      "en": "PDF",
+      "zh": "PDF"
+    },
+    "word": {
+      "en": "Word Documents",
+      "zh": "Word 文档"
+    },
+    "presentations": {
+      "en": "Presentations",
+      "zh": "演示文稿"
+    },
+    "spreadsheets": {
+      "en": "Spreadsheets",
+      "zh": "电子表格"
+    },
+    "video": {
+      "en": "Video",
+      "zh": "视频"
+    },
+    "images": {
+      "en": "Images",
+      "zh": "图像"
+    },
+    "audio": {
+      "en": "Audio",
+      "zh": "音频"
+    },
+    "media-assets": {
+      "en": "Media Assets",
+      "zh": "媒体素材"
+    },
+    "generative-media": {
+      "en": "Generative Media",
+      "zh": "生成式媒体"
+    },
+    "knowledge-management": {
+      "en": "Knowledge Management",
+      "zh": "知识管理"
+    },
+    "knowledge-graphs": {
+      "en": "Knowledge Graphs",
+      "zh": "知识图谱"
+    },
+    "reverse-engineering": {
+      "en": "Reverse Engineering",
+      "zh": "逆向工程"
+    },
+    "agent-workflows": {
+      "en": "Agent Workflows",
+      "zh": "Agent 工作流"
+    },
+    "multi-agent": {
+      "en": "Multi-Agent Collaboration",
+      "zh": "多 Agent 协作"
+    },
+    "context-memory": {
+      "en": "Context and Memory",
+      "zh": "上下文与记忆"
+    },
+    "tool-connections": {
+      "en": "Tool Connections",
+      "zh": "工具连接"
+    },
+    "mcp": {
+      "en": "MCP",
+      "zh": "MCP"
+    },
+    "typescript": {
+      "en": "TypeScript",
+      "zh": "TypeScript"
+    },
+    "github": {
+      "en": "GitHub",
+      "zh": "GitHub"
+    },
+    "feishu": {
+      "en": "Feishu / Lark",
+      "zh": "飞书 / Lark"
+    },
+    "google-workspace": {
+      "en": "Google Workspace",
+      "zh": "Google Workspace"
+    },
+    "calendar": {
+      "en": "Calendars",
+      "zh": "日程"
+    },
+    "email": {
+      "en": "Email",
+      "zh": "邮件"
+    },
+    "task-management": {
+      "en": "Task Management",
+      "zh": "任务管理"
+    },
+    "web-research": {
+      "en": "Web Research",
+      "zh": "网页调研"
+    },
+    "data-extraction": {
+      "en": "Data Extraction",
+      "zh": "数据提取"
+    },
+    "databases": {
+      "en": "Databases",
+      "zh": "数据库"
+    },
+    "postgres": {
+      "en": "Postgres",
+      "zh": "Postgres"
+    },
+    "supabase": {
+      "en": "Supabase",
+      "zh": "Supabase"
+    },
+    "smart-contracts": {
+      "en": "Smart Contracts",
+      "zh": "智能合约"
+    },
+    "type-safety": {
+      "en": "Type Safety",
+      "zh": "类型安全"
+    },
+    "cloud-storage": {
+      "en": "Cloud Storage",
+      "zh": "云存储"
+    }
+  },
+  "resources": {
+    "project:github.com/vercel-labs/agent-desktop": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "desktop-automation",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/openai/codex": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "code-review",
+        "tool-connections"
+      ]
+    },
+    "project:github.com/deepseek-ai/deepseek-harness": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "tool-connections",
+        "multi-agent"
+      ]
+    },
+    "project:github.com/deepseek-ai/dsh-superagent-prototype": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "github",
+        "agent-workflows",
+        "handoffs"
+      ]
+    },
+    "project:github.com/earendil-works/pi": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "context-memory",
+        "tool-connections"
+      ]
+    },
+    "project:github.com/anomalyco/opencode": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "code-review",
+        "debugging"
+      ]
+    },
+    "project:github.com/nousresearch/hermes-agent": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "context-memory",
+        "agent-workflows",
+        "task-management"
+      ]
+    },
+    "project:github.com/moonshotai/kimi-code": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "multi-agent",
+        "handoffs"
+      ]
+    },
+    "project:github.com/zai-org/zcode": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "code-review",
+        "tool-connections"
+      ]
+    },
+    "project:github.com/dietrichgebert/ponytail": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "code-review",
+        "refactoring",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/milind-soni/openmausbot": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "multi-agent",
+        "handoffs",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/comfy-org/comfyui": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "generative-media",
+        "images",
+        "video"
+      ]
+    },
+    "project:github.com/graphify-labs/graphify": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "knowledge-graphs",
+        "architecture",
+        "context-memory"
+      ]
+    },
+    "project:github.com/stablyai/orca": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "multi-agent",
+        "code-review",
+        "github"
+      ]
+    },
+    "project:github.com/pbakaus/impeccable": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "accessibility",
+        "browser-automation"
+      ],
+      "guide": "pbakaus/impeccable"
+    },
+    "project:github.com/pbakaus/radiant": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "animation",
+        "media-assets",
+        "interface-design"
+      ]
+    },
+    "project:github.com/pbakaus/agent-reviews": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "code-review",
+        "github"
+      ]
+    },
+    "project:github.com/obra/superpowers": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "planning",
+        "tdd",
+        "code-review"
+      ]
+    },
+    "project:github.com/obra/youtube2webpage": {
+      "categories": [
+        "documents",
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "writing",
+        "media-assets"
+      ]
+    },
+    "project:github.com/obra/private-journal-mcp": {
+      "categories": [
+        "documents",
+        "development"
+      ],
+      "tags": [
+        "knowledge-management",
+        "context-memory",
+        "mcp"
+      ]
+    },
+    "project:github.com/vercel-labs/agent-browser": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "browser-automation",
+        "tool-connections"
+      ],
+      "guide": "vercel-labs/agent-browser"
+    },
+    "project:github.com/vercel-labs/json-render": {
+      "categories": [
+        "design-interfaces",
+        "coding"
+      ],
+      "tags": [
+        "interface-design",
+        "component-design"
+      ]
+    },
+    "project:github.com/vercel-labs/skills": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "skill-discovery",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/morluto/rea": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "reverse-engineering",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/morluto/flameox": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "performance",
+        "debugging"
+      ]
+    },
+    "project:github.com/anthropics/claude-code": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "tool-connections"
+      ]
+    },
+    "project:github.com/anthropics/claude-cookbooks": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "tool-connections"
+      ]
+    },
+    "project:github.com/heygen-com/hyperframes": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "animation",
+        "media-assets"
+      ],
+      "guide": "heygen-com/hyperframes"
+    },
+    "project:github.com/heygen-com/heygen-cli": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "generative-media"
+      ]
+    },
+    "project:github.com/mattpocock/sandcastle": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "multi-agent",
+        "typescript",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/mattpocock/ts-reset": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "typescript",
+        "type-safety"
+      ]
+    },
+    "project:github.com/emilkowalski/sonner": {
+      "categories": [
+        "design-interfaces",
+        "coding"
+      ],
+      "tags": [
+        "react",
+        "component-design"
+      ]
+    },
+    "project:github.com/emilkowalski/vaul": {
+      "categories": [
+        "design-interfaces",
+        "coding"
+      ],
+      "tags": [
+        "react",
+        "component-design"
+      ]
+    },
+    "project:github.com/juliusbrussee/caveman": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "context-memory",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/juliusbrussee/revu-swift": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "knowledge-management",
+        "planning"
+      ]
+    },
+    "project:github.com/microsoft/vscode": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "debugging",
+        "tool-connections"
+      ]
+    },
+    "project:github.com/microsoft/typescript": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "typescript",
+        "type-safety"
+      ]
+    },
+    "project:github.com/larksuite/cli": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "feishu",
+        "task-management",
+        "tool-connections"
+      ]
+    },
+    "project:github.com/remotion-dev/remotion": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "react",
+        "animation"
+      ]
+    },
+    "project:github.com/leonxlnx/tastecode": {
+      "categories": [
+        "design-interfaces",
+        "development"
+      ],
+      "tags": [
+        "interface-design",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/leonxlnx/earshot": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "audio",
+        "media-assets"
+      ]
+    },
+    "project:github.com/cloudflare/workers-sdk": {
+      "categories": [
+        "deployment-browser",
+        "development"
+      ],
+      "tags": [
+        "cloudflare",
+        "deployment",
+        "testing"
+      ]
+    },
+    "project:github.com/cloudflare/agents": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "cloudflare",
+        "agent-workflows",
+        "context-memory"
+      ]
+    },
+    "project:github.com/crytic/slither": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "security",
+        "smart-contracts",
+        "code-review"
+      ]
+    },
+    "project:github.com/crytic/echidna": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "testing",
+        "smart-contracts",
+        "security"
+      ]
+    },
+    "project:github.com/github/github-mcp-server": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "github",
+        "mcp",
+        "tool-connections"
+      ]
+    },
+    "project:github.com/cli/cli": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "github",
+        "code-review"
+      ]
+    },
+    "project:github.com/googleworkspace/cli": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "google-workspace",
+        "tool-connections",
+        "task-management"
+      ]
+    },
+    "project:github.com/firecrawl/firecrawl": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "web-research",
+        "data-extraction",
+        "browser-automation"
+      ]
+    },
+    "project:github.com/firecrawl/cli": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "web-research",
+        "data-extraction",
+        "browser-automation"
+      ]
+    },
+    "project:github.com/supabase/supabase": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "databases",
+        "postgres",
+        "supabase"
+      ]
+    },
+    "project:github.com/supabase/cli": {
+      "categories": [
+        "development",
+        "deployment-browser"
+      ],
+      "tags": [
+        "databases",
+        "deployment",
+        "supabase"
+      ]
+    },
+    "vercel-labs/find-skills": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "skill-discovery",
+        "agent-workflows"
+      ]
+    },
+    "vercel-labs/vercel-react-best-practices": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "react",
+        "nextjs",
+        "performance",
+        "code-review"
+      ]
+    },
+    "vercel-labs/vercel-composition-patterns": {
+      "categories": [
+        "coding",
+        "design-interfaces"
+      ],
+      "tags": [
+        "react",
+        "component-design",
+        "architecture"
+      ]
+    },
+    "vercel-labs/vercel-react-native-skills": {
+      "categories": [
+        "coding",
+        "design-interfaces"
+      ],
+      "tags": [
+        "react-native",
+        "performance",
+        "interface-design"
+      ]
+    },
+    "vercel-labs/vercel-react-view-transitions": {
+      "categories": [
+        "design-interfaces",
+        "coding"
+      ],
+      "tags": [
+        "react",
+        "animation"
+      ]
+    },
+    "vercel-labs/web-design-guidelines": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "accessibility",
+        "code-review"
+      ]
+    },
+    "vercel-labs/writing-guidelines": {
+      "categories": [
+        "writing-marketing"
+      ],
+      "tags": [
+        "writing",
+        "code-review"
+      ]
+    },
+    "vercel-labs/deploy-to-vercel": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "vercel",
+        "deployment"
+      ]
+    },
+    "vercel-labs/vercel-cli-with-tokens": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "vercel",
+        "deployment"
+      ]
+    },
+    "vercel-labs/vercel-optimize": {
+      "categories": [
+        "deployment-browser",
+        "coding"
+      ],
+      "tags": [
+        "vercel",
+        "performance",
+        "debugging"
+      ]
+    },
+    "vercel-labs/agent-browser": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "browser-automation",
+        "tool-connections"
+      ]
+    },
+    "anthropics/frontend-design": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "component-design"
+      ]
+    },
+    "anthropics/skill-creator": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "skill-authoring",
+        "testing"
+      ]
+    },
+    "anthropics/pdf": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "pdf",
+        "data-extraction"
+      ]
+    },
+    "anthropics/docx": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "word",
+        "writing"
+      ]
+    },
+    "anthropics/pptx": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "presentations",
+        "interface-design"
+      ]
+    },
+    "anthropics/xlsx": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "spreadsheets",
+        "data-extraction"
+      ]
+    },
+    "pbakaus/impeccable": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "accessibility",
+        "browser-automation"
+      ]
+    },
+    "mattpocock/grill-me": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "planning",
+        "architecture"
+      ]
+    },
+    "mattpocock/tdd": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "tdd",
+        "testing"
+      ]
+    },
+    "mattpocock/improve-codebase-architecture": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "architecture",
+        "refactoring"
+      ]
+    },
+    "mattpocock/diagnosing-bugs": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "debugging",
+        "testing"
+      ]
+    },
+    "mattpocock/code-review": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "code-review",
+        "github"
+      ]
+    },
+    "mattpocock/handoff": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "handoffs",
+        "context-memory"
+      ]
+    },
+    "obra/brainstorming": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "planning",
+        "architecture"
+      ]
+    },
+    "obra/systematic-debugging": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "debugging",
+        "testing"
+      ]
+    },
+    "cloudflare/security-audit": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "security",
+        "code-review"
+      ]
+    },
+    "heygen-com/hyperframes": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "animation",
+        "media-assets"
+      ]
+    },
+    "anthropics/webapp-testing": {
+      "categories": [
+        "coding",
+        "deployment-browser"
+      ],
+      "tags": [
+        "testing",
+        "browser-automation"
+      ]
+    },
+    "heygen-com/media-use": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "media-assets",
+        "video",
+        "audio"
+      ]
+    },
+    "heygen-com/slideshow": {
+      "categories": [
+        "video-production",
+        "documents"
+      ],
+      "tags": [
+        "presentations",
+        "animation"
+      ]
+    },
+    "emilkowalski/emil-design-eng": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "component-design",
+        "animation"
+      ]
+    },
+    "emilkowalski/review-animations": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "animation",
+        "accessibility",
+        "code-review"
+      ]
+    },
+    "emilkowalski/apple-design": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "animation",
+        "accessibility"
+      ]
+    },
+    "coreyhaines31/seo-audit": {
+      "categories": [
+        "writing-marketing"
+      ],
+      "tags": [
+        "seo",
+        "web-research"
+      ]
+    },
+    "coreyhaines31/copywriting": {
+      "categories": [
+        "writing-marketing"
+      ],
+      "tags": [
+        "writing",
+        "marketing"
+      ]
+    },
+    "coreyhaines31/content-strategy": {
+      "categories": [
+        "writing-marketing"
+      ],
+      "tags": [
+        "marketing",
+        "planning"
+      ]
+    },
+    "juliusbrussee/caveman": {
+      "categories": [
+        "writing-marketing",
+        "development"
+      ],
+      "tags": [
+        "writing",
+        "context-memory"
+      ]
+    },
+    "juliusbrussee/investigate-first": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "debugging",
+        "performance"
+      ]
+    },
+    "juliusbrussee/safe-refactor": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "refactoring",
+        "testing"
+      ]
+    },
+    "obra/writing-plans": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "planning",
+        "handoffs"
+      ]
+    },
+    "obra/test-driven-development": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "tdd",
+        "testing"
+      ]
+    },
+    "obra/verification-before-completion": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "testing",
+        "code-review"
+      ]
+    },
+    "morluto/reverse-engineer-anything": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "reverse-engineering",
+        "agent-workflows"
+      ]
+    },
+    "morluto/generate-social-preview": {
+      "categories": [
+        "design-interfaces",
+        "writing-marketing"
+      ],
+      "tags": [
+        "images",
+        "github",
+        "marketing"
+      ]
+    },
+    "microsoft/microsoft-foundry": {
+      "categories": [
+        "development",
+        "deployment-browser"
+      ],
+      "tags": [
+        "azure",
+        "agent-workflows",
+        "deployment"
+      ]
+    },
+    "microsoft/azure-prepare": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "azure",
+        "deployment",
+        "planning"
+      ]
+    },
+    "microsoft/azure-validate": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "azure",
+        "deployment",
+        "testing"
+      ]
+    },
+    "microsoft/azure-deploy": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "azure",
+        "deployment"
+      ]
+    },
+    "microsoft/azure-diagnostics": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "azure",
+        "debugging"
+      ]
+    },
+    "microsoft/azure-storage": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "azure",
+        "cloud-storage"
+      ]
+    },
+    "open.feishu.cn/lark-doc": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "feishu",
+        "writing",
+        "knowledge-management"
+      ]
+    },
+    "open.feishu.cn/lark-base": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "feishu",
+        "databases"
+      ]
+    },
+    "open.feishu.cn/lark-calendar": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "feishu",
+        "calendar"
+      ]
+    },
+    "open.feishu.cn/lark-sheets": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "feishu",
+        "spreadsheets"
+      ]
+    },
+    "open.feishu.cn/lark-wiki": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "feishu",
+        "knowledge-management"
+      ]
+    },
+    "open.feishu.cn/lark-task": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "feishu",
+        "task-management"
+      ]
+    },
+    "open.feishu.cn/lark-workflow-meeting-summary": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "feishu",
+        "writing"
+      ]
+    },
+    "open.feishu.cn/lark-workflow-standup-report": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "feishu",
+        "calendar",
+        "task-management"
+      ]
+    },
+    "remotion-dev/remotion-best-practices": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "react",
+        "animation"
+      ]
+    },
+    "remotion-dev/remotion-create": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "react"
+      ]
+    },
+    "remotion-dev/remotion-markup": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "react",
+        "animation"
+      ]
+    },
+    "remotion-dev/remotion-render": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "images"
+      ]
+    },
+    "leonxlnx/taste-skill": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "animation"
+      ]
+    },
+    "leonxlnx/redesign-skill": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "code-review"
+      ]
+    },
+    "leonxlnx/gpt-tasteskill": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "animation"
+      ]
+    },
+    "cloudflare/agents-sdk": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "cloudflare",
+        "agent-workflows",
+        "context-memory"
+      ]
+    },
+    "cloudflare/durable-objects": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "cloudflare",
+        "databases"
+      ]
+    },
+    "cloudflare/wrangler": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "cloudflare",
+        "deployment"
+      ]
+    },
+    "trailofbits/audit-context-building": {
+      "categories": [
+        "development",
+        "coding"
+      ],
+      "tags": [
+        "security",
+        "architecture"
+      ]
+    },
+    "trailofbits/differential-review": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "security",
+        "code-review"
+      ]
+    },
+    "trailofbits/property-based-testing": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "testing",
+        "security"
+      ]
+    },
+    "github/git-commit": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "github",
+        "code-review"
+      ]
+    },
+    "github/create-readme": {
+      "categories": [
+        "documents",
+        "development"
+      ],
+      "tags": [
+        "github",
+        "writing"
+      ]
+    },
+    "github/refactor": {
+      "categories": [
+        "coding"
+      ],
+      "tags": [
+        "refactoring",
+        "testing"
+      ]
+    },
+    "googleworkspace/gws-drive": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "google-workspace",
+        "knowledge-management"
+      ]
+    },
+    "googleworkspace/gws-gmail": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "google-workspace",
+        "email"
+      ]
+    },
+    "googleworkspace/gws-calendar": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "google-workspace",
+        "calendar"
+      ]
+    },
+    "googleworkspace/gws-sheets": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "google-workspace",
+        "spreadsheets"
+      ]
+    },
+    "firecrawl/firecrawl-search": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "web-research",
+        "data-extraction"
+      ]
+    },
+    "firecrawl/firecrawl-scrape": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "data-extraction",
+        "web-research"
+      ]
+    },
+    "firecrawl/firecrawl-crawl": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "data-extraction",
+        "web-research"
+      ]
+    },
+    "firecrawl/firecrawl-interact": {
+      "categories": [
+        "deployment-browser"
+      ],
+      "tags": [
+        "browser-automation",
+        "web-research"
+      ]
+    },
+    "supabase/supabase": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "supabase",
+        "databases"
+      ]
+    },
+    "supabase/supabase-postgres-best-practices": {
+      "categories": [
+        "coding",
+        "development"
+      ],
+      "tags": [
+        "supabase",
+        "postgres",
+        "performance"
+      ]
+    }
+  }
+}

@@ -1,5 +1,7 @@
 ---
 title: "Gumloop 评测 2026：功能很强，但适合你吗？"
+seoTitle: "Gumloop 评测：工作流能力、使用成本与适配场景"
+seoDescription: "评估 Gumloop 时，先区分 Flow 与 Agent，再核对运行身份、权限、成本、执行可见性和恢复方式。通过可复现试点判断哪些流程适合上线，哪些任务仍需保留人工判断。"
 description: "2026 年 Gumloop 评测：区分 Flow 与 Agent，核对运行身份和权限、当前成本结构、执行可见性与故障恢复，并提供一套可复现的采用试点方法，帮助团队判断哪些流程值得上线、哪些不应交给 Agent。"
 slug: "gumloop-review-2026"
 date: "2026-03-23"

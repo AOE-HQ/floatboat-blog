@@ -1,5 +1,7 @@
 ---
 title: "给创作者的 GPT Image 2 vs Midjourney vs Nano Banana 2：真实的选型框架"
+seoTitle: "GPT Image 2、Midjourney 与 Nano Banana 2：创作任务选型"
+seoDescription: "用统一素材与验收标准比较 GPT Image 2、Midjourney 和 Nano Banana 2 的编辑、文字、参考图与成本，核对隐私和商用许可，并在模型升级后重新测试实际创作需求。"
 description: "用统一素材与验收规则比较 GPT Image 2、Midjourney 与 Nano Banana 2，覆盖编辑、文字、参考图、总成本、隐私、商用许可与模型升级后的复测方法。"
 slug: "gpt-image-2-vs-midjourney-nano-banana-2"
 date: "2026-04-27"

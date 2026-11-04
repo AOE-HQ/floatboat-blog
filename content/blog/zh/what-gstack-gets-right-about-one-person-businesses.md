@@ -1,5 +1,7 @@
 ---
 title: "单人创始人的角色化 AI 工作流：gstack 方法真正说对的地方"
+seoTitle: "gstack 与单人创始人：角色化工作流和审阅机制"
+seoDescription: "gstack 对单人创始人的价值在于明确阶段、可检查产物、审核门与停止条件。通过内容、销售和运营中的阶段契约理解这些方法，避免只给 AI 起角色名称却没有责任与验收。"
 description: "gstack 对单人创始人真正可迁移的价值，是明确工作阶段、审核门、可检查交付物与停止条件，而不只是给 AI 角色标签。本文给出一套可用于内容、销售与运营流程的阶段契约。"
 slug: "what-gstack-gets-right-about-one-person-businesses"
 date: "2026-04-06"

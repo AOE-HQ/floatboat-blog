@@ -1,3 +1,4 @@
+import { seoTitle } from "@/lib/seo-title";
 import type { Metadata } from "next";
 import { getProjectForSource } from "@/lib/projects/project-pages";
 import { projectShareImagePath } from "@/lib/projects/project-metadata";
@@ -10,7 +11,7 @@ export function buildPublisherMetadata(handle: string, locale: SkillLocale): Met
   const canonical = `https://floatboat.ai${publisherProfilePath(locale, handle)}`;
   const english = `https://floatboat.ai${publisherProfilePath("en", handle)}`;
   const chinese = `https://floatboat.ai${publisherProfilePath("zh", handle)}`;
-  const title = profile[locale].seoTitle;
+  const title = seoTitle(profile[locale].seoTitle);
   const description = profile[locale].seoDescription;
   const project = profile.projects.map((entry) => getProjectForSource(handle, entry.url)).find(Boolean);
   const images = project ? [{ url: `https://floatboat.ai${projectShareImagePath(handle, project.slug)}`, width: 1200, height: 630, alt: `${profile.name} — ${project.name}` }] : undefined;

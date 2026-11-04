@@ -1,5 +1,7 @@
 ---
 title: "Cordis 插件框架：DeepSeek Harness 如何组合服务"
+seoTitle: "Cordis 插件框架：DeepSeek Harness 的服务组合机制"
+seoDescription: "了解 DeepSeek Harness 底层 Cordis 如何连接 Context、服务、Effect 与事件，查看依赖注入、隔离和热重载的职责，再判断插件架构何时适合自己的 Agent 系统。"
 description: "实用解析 DeepSeek Harness 底层的 Cordis：Context、服务、依赖注入、Effect、事件、隔离与热重载，以及插件架构何时适合 Agent。"
 slug: "cordis-plugin-framework"
 date: "2026-08-14"

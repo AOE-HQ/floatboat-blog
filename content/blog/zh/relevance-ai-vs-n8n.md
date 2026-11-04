@@ -1,5 +1,7 @@
 ---
 title: "Relevance AI vs n8n：Agent、工作流、成本与控制权"
+seoTitle: "Relevance AI 与 n8n：Agent 执行、工作流成本与控制权"
+seoDescription: "比较 Relevance AI 与 n8n 的 Agent 构建、流程控制、部署和计费单位，结合治理与维护需求，用同一试点检查故障恢复和迁移条件，而不是按功能数量决定采用。"
 description: "从 Agent 构建、工作流控制、计费单位、部署、数据治理与维护成本完整比较 Relevance AI 和 n8n，并用同一套可复现试点、故障测试和迁移清单做选择。"
 slug: "relevance-ai-vs-n8n"
 date: "2026-04-01"

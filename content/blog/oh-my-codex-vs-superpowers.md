@@ -1,5 +1,7 @@
 ---
 title: "oh-my-codex vs Superpowers: Codex Orchestration or Skill-Based Discipline?"
+seoTitle: "oh-my-codex vs Superpowers: Orchestration or Skill Workflows"
+seoDescription: "oh-my-codex and Superpowers differ in runtime support, workflow rules, state, and parallel execution. Compare installation risk and maintenance before trying either or combining them."
 description: "Compare oh-my-codex and Superpowers by scope, supported runtimes, workflow enforcement, state, parallel work, installation risk, and maintenance cost."
 slug: "oh-my-codex-vs-superpowers"
 date: "2026-04-30"

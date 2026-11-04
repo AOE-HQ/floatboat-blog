@@ -1,5 +1,7 @@
 ---
 title: "能干实事的 Agentic AI 工具：五类工具怎么选、自主度怎么定"
+seoTitle: "Agentic AI 工具：按任务、自主程度与执行方式选型"
+seoDescription: "Agentic AI 工具并非自主程度越高越好。比较助手、工作流、构建平台、编程 Agent 与工作区五类工具，核对权限、审批、日志和可逆性，为真实任务选择适合的执行方式。"
 description: "Agentic AI 工具的 hype 已远超实际能力，但真正的问题不是「哪个品类最先进」，而是自主度该怎么设、失败模式能不能兜住。本文梳理助手、工作流 Agent、构建平台、编程 Agent 与 AI 工作区五类工具，并给出权限、审批、日志与可逆性四道风险控制。"
 slug: "agentic-ai-tools"
 date: "2026-05-13"

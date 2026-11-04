@@ -1,5 +1,7 @@
 ---
 title: "Meta Muse Spark for a One-Person Business: A Switching Guide"
+seoTitle: "Meta Muse Spark for Solo Businesses: Assess the Switching Cost"
+seoDescription: "Meta Muse Spark adoption depends on workload, access, and switching cost. Review changes through version 1.3 and test multimodal, coding, and agent tasks on a narrow workflow."
 description: "What Meta Muse Spark offers solo operators, what changed by version 1.3, and how to test whether switching models improves a real workflow."
 slug: "meta-muse-spark-one-person-company"
 date: "2026-05-01"

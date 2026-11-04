@@ -1,5 +1,7 @@
 ---
 title: "最佳 AI 文件整理器推荐：Mac 与 Windows 选购排名"
+seoTitle: "AI 文件整理器推荐：按工作流比较 Mac 与 Windows 工具"
+seoDescription: "比较 Mac 与 Windows AI 文件整理器的内容理解、命名、隐私、预览和撤销能力。围绕完整分类与重命名流程试用，区分只会移动文件的工具与能检查实际内容的方案。"
 description: "面向 Mac 和 Windows 的 AI 文件整理器选购榜单：比较内容读取、分类与重命名、隐私模式、预览撤销、监视文件夹、自动化和当前价格，并说明每款工具适合什么任务、哪些公开能力仍需在试用中验证。"
 slug: "best-ai-file-organizer"
 date: "2026-08-17"
