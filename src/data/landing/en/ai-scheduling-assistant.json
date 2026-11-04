@@ -159,18 +159,15 @@
     "items": [
       {
         "title": "Bring in the relevant event",
-        "description": "Connect or import the calendar you already use and choose the event or recurring work that needs preparation.",
-        "completion": "The selected event has the correct time and preparation goal."
+        "description": "Connect or import the calendar you already use and choose the event or recurring work that needs preparation."
       },
       {
         "title": "Define the preparation task",
-        "description": "Specify what should happen before or after the event and attach the files, notes, and open actions needed for the brief.",
-        "completion": "The task identifies its inputs, timing, and expected brief or artifact."
+        "description": "Specify what should happen before or after the event and attach the files, notes, and open actions needed for the brief."
       },
       {
         "title": "Review and decide what follows",
-        "description": "Read the prepared result, check important facts and open questions, and approve any follow-up that requires a decision.",
-        "completion": "The event has a reviewed preparation result and explicit next steps."
+        "description": "Read the prepared result, check important facts and open questions, and approve any follow-up that requires a decision."
       }
     ]
   }

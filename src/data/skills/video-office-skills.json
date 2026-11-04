@@ -163,10 +163,6 @@
         "description": {
           "en": "Install the four core Skills together and prepare the CLI environment. Provide the real subject, source assets, duration, and output format, or identify the existing project.",
           "zh": "一并安装四项核心 Skills，并准备 CLI 环境。提供真实题材、原始素材、时长与输出格式，或指定已有项目。"
-        },
-        "completion": {
-          "en": "Required core instructions, source assets, and timeline requirements are available.",
-          "zh": "核心指令、来源素材及时间轴要求已齐备。"
         }
       },
       {
@@ -177,10 +173,6 @@
         "description": {
           "en": "Inspect an existing project with info and timeline --json. Follow the composition, registry, and media guidance; use npx hyperframes check --json, inspect snapshot frames, and review the preview while correcting issues.",
           "zh": "已有项目先用 info 与 timeline --json 检查。按合成、注册表与媒体指引制作，运行 npx hyperframes check --json，查看 snapshot 画面与 preview 预览，并修正发现的问题。"
-        },
-        "completion": {
-          "en": "The preview shows the intended timing, visuals, and audio where applicable.",
-          "zh": "预览展示所需节奏、画面及适用的音频效果。"
         }
       },
       {
@@ -191,10 +183,6 @@
         "description": {
           "en": "Use npx hyperframes render when the brief requires a file or the user approves export. Confirm the file opens, compare its duration, and inspect frames and audio against the reviewed preview.",
           "zh": "需求要求文件或用户确认导出后，使用 npx hyperframes render。确认文件可打开、时长正确，并将画面与声音同已审阅预览核对。"
-        },
-        "completion": {
-          "en": "The exported file plays correctly with the requested duration and output settings.",
-          "zh": "导出文件可正常播放，时长与输出设置符合要求。"
         }
       }
     ],

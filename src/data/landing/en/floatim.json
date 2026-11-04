@@ -159,18 +159,15 @@
     "items": [
       {
         "title": "Create the project conversation",
-        "description": "Add the outcome, deadline, source files, and constraints to a project space before assigning work.",
-        "completion": "Participants can find the same brief and source material."
+        "description": "Add the outcome, deadline, source files, and constraints to a project space before assigning work."
       },
       {
         "title": "Invite people and assign Agent roles",
-        "description": "Bring the required collaborators into the space and give each Agent a bounded research, writing, or checking responsibility.",
-        "completion": "Each part of the task has an owner and a visible handoff point."
+        "description": "Bring the required collaborators into the space and give each Agent a bounded research, writing, or checking responsibility."
       },
       {
         "title": "Review the shared result",
-        "description": "Check sources and pending decisions in the conversation, approve the final result, and retain useful context for follow-up.",
-        "completion": "The accepted result is traceable to its discussion and supporting materials."
+        "description": "Check sources and pending decisions in the conversation, approve the final result, and retain useful context for follow-up."
       }
     ]
   }

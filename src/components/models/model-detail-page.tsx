@@ -178,7 +178,7 @@ export function ModelDetailPage({
       </section>
 
       {model.mechanism && <ModelMechanismSection title={localize(model.mechanism.title, locale)} items={model.mechanism.items.map(item => ({ title: localize(item.title, locale), description: localize(item.description, locale) }))} />}
-      {model.howTo && <HowSection locale={locale} title={localize(model.howTo.title, locale)} description={localize(model.howTo.description, locale)} items={model.howTo.items.map(item => ({ title: localize(item.title, locale), description: localize(item.description, locale), completion: localize(item.completion, locale) }))} />}
+      {model.howTo && <HowSection title={localize(model.howTo.title, locale)} description={localize(model.howTo.description, locale)} items={model.howTo.items.map(item => ({ title: localize(item.title, locale), description: localize(item.description, locale) }))} />}
 
       <RelatedPageLinks family="models" currentId={model.slug} locale={locale} />
 

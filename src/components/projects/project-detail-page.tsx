@@ -50,7 +50,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
     </section>
     <UseCasesSection {...t.useCases} locale={locale} />
     {t.prerequisites && <RequirementsSection {...t.prerequisites} />}
-    {t.howTo && <HowSection {...t.howTo} locale={locale} />}
+    {t.howTo && <HowSection {...t.howTo} />}
     {project.articleSlug && <section aria-label={zh ? "工作流解读" : "Workflow analysis"} className="mx-auto max-w-7xl px-5 py-10 sm:px-8">
       <ResourceCard title={t.articleTitle!} description={t.articleDescription!} href={`${zh ? "/zh" : ""}/blog/${project.articleSlug}`} />
     </section>}

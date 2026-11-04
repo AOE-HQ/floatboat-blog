@@ -329,10 +329,6 @@
         "description": {
           "en": "Set subject, motion, framing, duration, frames, and audio needs.",
           "zh": "明确主体、运动、构图、时长、帧与音频要求。"
-        },
-        "completion": {
-          "en": "The shot brief specifies motion, duration, reference frames, and audio requirements.",
-          "zh": "镜头简报已说明运动、时长、参考帧及音频要求。"
         }
       },
       {
@@ -343,10 +339,6 @@
         "description": {
           "en": "Use the full model for final work or Fast for early drafts.",
           "zh": "成片使用完整型号，早期草稿使用 Fast。"
-        },
-        "completion": {
-          "en": "The selected variant and generated draft match the intended production stage.",
-          "zh": "所选型号与生成草稿符合当前制作阶段。"
         }
       },
       {
@@ -357,10 +349,6 @@
         "description": {
           "en": "Check motion, frames, audio, and brand fit before delivery.",
           "zh": "交付前检查运动、帧、音频与品牌适配度。"
-        },
-        "completion": {
-          "en": "The delivered video has been played through for continuity, audio, and brand consistency.",
-          "zh": "交付视频已完整播放检查连续性、音频和品牌一致性。"
         }
       }
     ],

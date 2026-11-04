@@ -86,8 +86,7 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
       <HowSection
         title={skill.sectionTitles.how[locale]}
         description={skill.sectionTitles.howDescription[locale]}
-        locale={locale}
-        items={skill.steps.map((step) => ({ title: step.title[locale], description: step.description[locale], completion: step.completion[locale] }))}
+        items={skill.steps.map((step) => ({ title: step.title[locale], description: step.description[locale] }))}
       />
 
       <RelatedPageLinks family="skills" currentId={`${skill.authorHandle}/${skill.slug}`} locale={locale} />

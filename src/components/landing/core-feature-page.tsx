@@ -66,7 +66,7 @@ export function CoreFeaturePage({ page }: { page: CoreFeaturePageData }) {
 
     <UseCasesSection {...page.useCases} locale={page.locale} />
 
-    <HowSection {...page.howTo} locale={page.locale} />
+    <HowSection {...page.howTo} />
 
     <section id="comparison" aria-labelledby="comparison-title" className="scroll-mt-24 border-b border-black/[0.06] bg-white/45">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20">

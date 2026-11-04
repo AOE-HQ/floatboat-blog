@@ -159,18 +159,15 @@
     "items": [
       {
         "title": "Choose the folder and rules",
-        "description": "Select the exact local folder, describe the target structure and naming rules, and mark folders that must stay unchanged.",
-        "completion": "The working scope, target structure, and protected locations are recorded."
+        "description": "Select the exact local folder, describe the target structure and naming rules, and mark folders that must stay unchanged."
       },
       {
         "title": "Correct the proposed changes",
-        "description": "Review classification, names, possible duplicates, and uncertain matches before approving any move or rename.",
-        "completion": "The preview resolves ambiguous items and reflects the intended rules."
+        "description": "Review classification, names, possible duplicates, and uncertain matches before approving any move or rename."
       },
       {
         "title": "Approve and inspect the result",
-        "description": "Authorize the reviewed operations, then inspect the move, rename, skip, and duplicate summary against the folder contents.",
-        "completion": "The resulting files match the approved plan and exceptions are visible."
+        "description": "Authorize the reviewed operations, then inspect the move, rename, skip, and duplicate summary against the folder contents."
       }
     ]
   }

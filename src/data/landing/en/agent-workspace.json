@@ -159,18 +159,15 @@
     "items": [
       {
         "title": "Open a bounded project",
-        "description": "Choose the project folder, relevant files, tools, and rules; state the intended deliverable and access limits.",
-        "completion": "The workspace contains the required sources and an agreed task scope."
+        "description": "Choose the project folder, relevant files, tools, and rules; state the intended deliverable and access limits."
       },
       {
         "title": "Assign and supervise the work",
-        "description": "Give Agents distinct research, drafting, checking, or creation tasks. Review intermediate output and approve actions that need a decision.",
-        "completion": "Agent outputs are linked to their tasks, with unresolved decisions visible."
+        "description": "Give Agents distinct research, drafting, checking, or creation tasks. Review intermediate output and approve actions that need a decision."
       },
       {
         "title": "Review and retain the handoff",
-        "description": "Compare artifacts with the original brief, request corrections, and retain useful context and accepted results for the next task.",
-        "completion": "Accepted artifacts and the decisions behind them remain available in the project."
+        "description": "Compare artifacts with the original brief, request corrections, and retain useful context and accepted results for the next task."
       }
     ]
   }

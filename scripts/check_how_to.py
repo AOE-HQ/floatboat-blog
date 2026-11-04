@@ -98,11 +98,11 @@ def main():
             needle = section['title'] + section.get('description', '')
             if kind == 'how-to':
                 assert rendered['tags']['ol'] == 1 and not rendered['tags']['ul'], route
-                assert rendered['tags']['li'] == rendered['tags']['dd'] == len(section['items']), route
-                label = '完成依据' if route.startswith('/zh/') else 'Completion check'
-                for index, item in enumerate(section['items']):
-                    assert set(item) == {'title', 'description', 'completion'}, route
-                    needle += f'{index + 1:02d}' + item['title'] + item['description'] + label + item['completion']
+                assert rendered['tags']['li'] == rendered['tags']['h3'] == len(section['items']), route
+                assert not any(rendered['tags'][tag] for tag in ('dl', 'dt', 'dd')), route
+                for item in section['items']:
+                    assert set(item) == {'title', 'description'}, route
+                    needle += item['title'] + item['description']
                 steps += len(section['items'])
             else:
                 assert not rendered['tags']['ol'], route
