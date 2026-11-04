@@ -43,7 +43,7 @@
   },
   "burdens": {
     "title": "Every role returns to the same person",
-    "description": "A solopreneur switches between sales, delivery, operations, finance, and publishing without a colleague available to preserve context between those roles.",
+    "description": "A solo business moves between proposals, client delivery, and operating reviews without a separate owner for every role. These workflows keep the relevant files and decisions connected, making each handoff between responsibilities explicit rather than rebuilding context from memory.",
     "items": [
       {
         "label": "Context",
@@ -69,7 +69,7 @@
   },
   "buildingBlocks": {
     "title": "What your solopreneur Work Agent can prepare",
-    "description": "The agent works inside a persistent workspace, using only the business context and instructions you provide.",
+    "description": "A solo operator supplies the business context and instructions that give an agent a useful role. These capabilities retain files, task progress, and results across responsibilities, with review and important actions still governed by the owner rather than inferred from a conversation.",
     "items": [
       {
         "action": "Read",

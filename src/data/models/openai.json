@@ -97,8 +97,8 @@
       "zh": "不要把所有 GPT 模型视为可以互换。"
     },
     "description": {
-      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
-      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
+      "en": "OpenAI entries span recorded chat, code, and image routes as well as newer public listings. Compare their stated access status and purpose individually; a pricing-page name does not establish the same client entry or execution path for every model.",
+      "zh": "OpenAI 条目涵盖已记录的对话、代码和图像路径，以及较新的公开列表。以下逐项说明状态与用途；价格页列出名称，并不能证明所有型号都有相同客户端入口或执行方式。"
     },
     "items": [
       {
@@ -229,12 +229,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "分开准备产品决策、Agent 编排与图像任务",
-      "en": "Prepare product decisions, agent orchestration, and image work separately"
+      "zh": "OpenAI 模型的使用场景",
+      "en": "Use Cases for OpenAI Models"
     },
     "description": {
-      "zh": "推理与代码任务需要项目约束，图像交付还需要视觉简报及对应入口；不能只凭型号名称判断执行方式。",
-      "en": "Reasoning and code work need project constraints; image work also needs a visual brief and the appropriate entry point, beyond the model name."
+      "zh": "产品决定要比较事实与假设，Agent 编排要约定工具边界，图像制作则需要视觉简报。准备 OpenAI 任务时，应将这些输入和审阅条件分别对应到实际可用的模型或绘图入口。",
+      "en": "Product decisions, agent orchestration, and image production need different inputs and review criteria. Compare project constraints with visual briefs and tool permissions, then match each task to its actual OpenAI model or drawing entry point."
     },
     "items": [
       {
@@ -275,8 +275,8 @@
       "zh": "同一供应商系列，按产品入口准确区分。"
     },
     "description": {
-      "en": "Chat and image generation use different entry points. The coding configuration record is separate from current client access; verify the precise version in the menu.",
-      "zh": "聊天与图像生成使用不同入口，已配置的代码型号在旧配置记录中未对应默认模型选择器入口，当前状态需另行核对。"
+      "en": "Reasoning, agent execution, image generation, and prepared code capacity connect to different parts of Floatboat. Review those boundaries before assigning a task, particularly where an older configuration record does not establish the current default picker or drawing workflow.",
+      "zh": "OpenAI 推理、Agent 执行和图像生成连接 Floatboat 的不同环节。已准备的代码容量也不等于当前默认选择器状态，理解能力时需要保留历史配置、实际菜单和绘图流程之间的区别。"
     },
     "items": [
       {

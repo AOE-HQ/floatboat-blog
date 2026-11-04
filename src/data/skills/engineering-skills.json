@@ -86,18 +86,18 @@
         "zh": "如何澄清计划与记录决策"
       },
       "howDescription": {
-        "en": "Install Matt Pocock’s collection with the required companions, then choose Grill Me for an interview or Grill with Docs for project-aware terminology and records. Provide the plan and current evidence, resolve questions in rounds, and confirm the resulting decisions and warranted document changes before starting implementation.",
-        "zh": "安装 Matt Pocock 的集合并保留所需配套 Skills，再按任务选择 Grill Me 访谈或 Grill with Docs 文档模式。提供计划与现有资料，逐轮解决问题，最后核对已定决策及必要的文档改动，再进入实施。"
+        "en": "A design interview needs the current plan and the supporting project material. Choose ordinary Grill Me or the documentation mode according to the task, resolve consequential questions, and verify the decisions and warranted document changes before implementation begins.",
+        "zh": "访谈应解决会影响方案的真实决定，而不是无限增加问题。带入当前计划与资料，选择常规或文档模式，核对讨论结论及必要记录后，再把已经明确的方向交给实施。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Turn uncertain ideas into decisions you can make",
-        "zh": "把未定想法变成可以作决定的问题"
+        "en": "Use Cases for Grill Me Skill",
+        "zh": "Grill Me Skill的使用场景"
       },
       "description": {
-        "en": "Product objectives, process dependencies, and software terminology require different questions and documentation depth.",
-        "zh": "产品目标、流程依赖和软件术语分别需要合适的追问与记录深度。"
+        "en": "An uncertain product idea, a process change, and a software design discussion need different questions. Compare how Grill Me clarifies consequential choices, dependent decisions, and project terminology before those assumptions reach an implementation plan.",
+        "zh": "未定产品想法、流程调整和软件设计讨论需要不同的追问。了解 Grill Me 如何澄清影响方向的选择、相互依赖的决定及项目术语，避免未确认假设直接进入实施计划。"
       },
       "items": [
         {
@@ -418,18 +418,18 @@
         "zh": "如何用 TDD 实现行为"
       },
       "howDescription": {
-        "en": "Prepare the behavior specification and a runnable test command, then agree the public seams with your agent. Work through one failing test and one minimal implementation at a time, and keep broader cleanup for a separate review after the behavior is established.",
-        "zh": "准备行为要求与可运行的测试命令，再与 Agent 约定公开测试边界。每次只完成一条失败测试及其最小实现，在行为得到验证后另行审查更广泛的整理与重构，避免同时改变多个问题。"
+        "en": "A TDD cycle needs observable requirements and a working test command. Agree on the public boundary, make one failing test pass with a minimal implementation, and assess broader cleanup separately so each increment remains tied to a specific behavior.",
+        "zh": "每个 TDD 增量都需要对应一项可观察行为。约定公共测试边界后，让最小实现通过一条失败测试，再单独评估更广泛的整理，避免同时改变多个问题而失去可靠反馈。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Verify additions and fixes through public behavior",
-        "zh": "通过公开行为验证新增与修复"
+        "en": "Use Cases for TDD Skill",
+        "zh": "TDD Skill的使用场景"
       },
       "description": {
-        "en": "Choose boundaries exposing real behavior, establish failing feedback, then implement incrementally.",
-        "zh": "选择能暴露真实行为的测试边界，先建立失败反馈，再逐项实现。"
+        "en": "A new feature, regression fix, and critical integration should each be tested where behavior is observable. These examples show how TDD connects failing tests with minimal changes while keeping private implementation details out of the acceptance criteria.",
+        "zh": "公共接口上的失败测试，才能保护调用者真正依赖的行为。TDD 可以围绕功能增量、原始缺陷和关键集成建立反馈，让最小实现有明确目标，避免过度绑定私有实现细节。"
       },
       "items": [
         {
@@ -687,18 +687,18 @@
         "zh": "如何评审架构改进"
       },
       "howDescription": {
-        "en": "Install the related collection skills and provide a subsystem or concrete pain point. Let the agent survey the relevant code and existing decisions, review its visual candidate report, and choose one opportunity for a design interview before planning implementation and validation.",
-        "zh": "安装相关配套 Skills，并提供子系统或具体痛点。让 Agent 调查相关代码和已有决策，审阅可视化候选报告，再选择一项进入设计访谈；讨论明确后，才规划实施范围与验证方式。"
+        "en": "Architectural improvement begins with a subsystem or maintenance problem, not a replacement design. Investigate the code and prior decisions, review candidate boundaries, and select one for a design discussion before defining migration scope and verification.",
+        "zh": "架构调整应先说明现有维护负担，而不是直接拿新设计替换旧代码。调查具体子系统和历史决定，审阅候选边界，再选一项进入设计讨论，明确迁移与验证范围。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Find module boundaries worth changing",
-        "zh": "找到值得改变的模块边界"
+        "en": "Use Cases for Improve Codebase Architecture Skill",
+        "zh": "Improve Codebase Architecture Skill的使用场景"
       },
       "description": {
-        "en": "Choose improvements from change history, testing friction, and navigation cost rather than abstracting for its own sake.",
-        "zh": "使用修改历史、测试摩擦与概念导航成本选择改进，不为抽象而重构。"
+        "en": "Repeated edits, tests coupled to internals, and scattered concepts provide different clues about architecture. Compare maintenance evidence before selecting a new module boundary, rather than adding abstractions simply because the code could be reorganized.",
+        "zh": "反复返工、测试深入内部和理解概念时跨越大量文件，都可能揭示维护成本。架构改进需要将这些线索对应到真实依赖，再判断哪些边界值得改变，而不是单纯增加抽象。"
       },
       "items": [
         {
@@ -946,18 +946,18 @@
         "zh": "如何调查复杂缺陷"
       },
       "howDescription": {
-        "en": "Give the agent the observed and expected behavior, environment, and reproduction inputs. Establish a reliable failing signal, minimize it, and test ranked explanations with targeted instrumentation. Apply a focused correction, rerun the original flow, and remove temporary probes before closing the task.",
-        "zh": "提供实际与预期行为、环境和复现输入。先建立可靠失败信号并缩小案例，再通过针对性诊断比较原因假设。实施范围明确的修复后，重跑原始流程并清理临时探针，再确认任务完成。"
+        "en": "Bug diagnosis needs expected and actual behavior, an environment, and a reproducible input. Establish a reliable failure signal before comparing causes, then verify a bounded repair on the original flow and remove temporary probes when the investigation ends.",
+        "zh": "可靠失败信号能让不同原因有可比较的依据。提供环境和复现输入，缩小案例后检验假设，再用原流程确认局部修复；调查结束时还需清理不再需要的临时探针。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Advance bug investigations with repeatable signals",
-        "zh": "用可重复信号推进故障调查"
+        "en": "Use Cases for Diagnosing Bugs Skill",
+        "zh": "Diagnosing Bugs Skill的使用场景"
       },
       "description": {
-        "en": "Persistent, intermittent, and performance failures need different feedback; first make the symptom detectable.",
-        "zh": "持续、间歇和性能故障需要不同反馈，先让症状能够被准确检测。"
+        "en": "Persistent faults, intermittent failures, and release slowdowns need different feedback signals. Explore how Diagnosing Bugs makes symptoms measurable, increases useful reproduction evidence, and checks a repair against the original input or workload.",
+        "zh": "持续故障、间歇失败和版本变慢需要不同的反馈信号。了解 Diagnosing Bugs 如何让症状可测量、增加有效复现证据，并用原始输入或工作负载核对修复。"
       },
       "items": [
         {
@@ -1205,18 +1205,18 @@
         "zh": "如何审查分支变更"
       },
       "howDescription": {
-        "en": "Provide a resolvable Git comparison point and the originating issue or specification. Let the agent collect standards and establish the diff, run the two review axes independently, and inspect their separate findings before deciding which edits or follow-up checks are needed.",
-        "zh": "提供可解析的 Git 比较点和原始工单或需求说明。让 Agent 收集规范、确定差异范围，再独立运行两个审查轴；分别核对发现后，决定需要修改哪些内容，以及补充哪些验证。"
+        "en": "A code review needs resolvable Git comparison points and the original requirements. Establish the diff scope and project conventions, examine the separate review axes, and confirm each finding before choosing repairs or additional tests for the implementation.",
+        "zh": "审阅范围需要由固定 Git 比较点和原始要求共同确定。收集仓库约定后，分别检查不同审查轴，逐项核实发现，再决定修复和补充测试，避免把印象直接写成缺陷。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Review standards, requirements, and release scope separately",
-        "zh": "分别核对改动规范、需求与发布范围"
+        "en": "Use Cases for Code Review Skill",
+        "zh": "Code Review Skill的使用场景"
       },
       "description": {
-        "en": "Fix the baseline and acceptance scope so each finding traces to the relevant diff and evidence.",
-        "zh": "固定基准并明确验收对象，使每项问题都能回到对应差异与证据。"
+        "en": "Feature branches, ticket implementations, and release diffs require different review boundaries. Compare conventions and acceptance requirements against a fixed revision, keeping each finding tied to the code and evidence that establish its impact.",
+        "zh": "分支规范、任务单要求和发布范围，需要各自清楚的比较基线。Code Review 将发现对应到固定版本、相关差异和支持证据，让审阅者能够区分风格问题、缺失行为与范围遗漏。"
       },
       "items": [
         {
@@ -1474,18 +1474,18 @@
         "zh": "如何交接 Agent 会话"
       },
       "howDescription": {
-        "en": "State what the next session will do and invoke Handoff near the end of the current work. Review the generated temporary document, check artifact paths and omissions, and provide it to the next agent together with access to the referenced repository and files.",
-        "zh": "在当前工作结束前说明下一会话目标，并主动调用 Handoff。审阅生成的临时文档，核对资料路径与遗漏，再将其交给下一 Agent，同时保证新环境能够访问被引用的仓库和文件。"
+        "en": "A handoff is useful only when it matches the next session's responsibility. State that objective, review the generated context for missing decisions and paths, and confirm that the receiving environment can access the files needed to continue.",
+        "zh": "交接材料应为下一会话的职责服务，而不是复制所有历史。明确目标后核对现有决定、证据和路径，补足遗漏，并确认接收环境能访问引用文件，才能沿真实状态继续工作。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Prepare context for continuation, investigation, and review",
-        "zh": "为续接、调查与审查整理必要上下文"
+        "en": "Use Cases for Handoff Skill",
+        "zh": "Handoff Skill的使用场景"
       },
       "description": {
-        "en": "Tailor the handoff to the next session’s role instead of substituting full history for clear current state.",
-        "zh": "交接材料随下一会话的职责裁剪，不用整段历史替代明确的当前状态。"
+        "en": "Implementation continuation, investigation transfer, and focused review need different handoff context. See how Handoff preserves current decisions, relevant paths, and verification evidence without passing an entire conversation history to the next agent.",
+        "zh": "继续实施、移交调查和启动专门审阅，需要不同的交接上下文。了解 Handoff 如何保留当前决定、相关路径和验证证据，让下一个 Agent 接续工作，而不必接收整段对话历史。"
       },
       "items": [
         {
@@ -1735,18 +1735,18 @@
         "zh": "如何确认需求与设计"
       },
       "howDescription": {
-        "en": "Install the Superpowers integration for your agent, provide the request and relevant existing material, and let the discussion focus on missing decisions. Compare the proposed approaches, review the appropriately sized design, and confirm the handoff to planning when the remaining choices are sufficiently clear.",
-        "zh": "为所用 Agent 安装 Superpowers 集成，提供任务和相关已有资料，让讨论聚焦缺失决策。比较备选方案，审阅与任务规模相符的设计，并在关键选择足够明确后确认转入后续规划。"
+        "en": "Brainstorming begins with the current project and a concrete outcome to clarify. Use the relevant Superpowers setup to compare approaches and resolve missing decisions, then review a design sized to the task before handing the agreed direction into planning.",
+        "zh": "现有背景和预期结果应先于实现选择。准备适用的 Superpowers 集成后，通过方案比较补足关键决定，再审阅与任务规模相符的设计，把确认方向交给后续规划。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Compare objectives and approaches before forming a design",
-        "zh": "在形成设计前比较目标和方案"
+        "en": "Use Cases for Brainstorming Skill",
+        "zh": "Brainstorming Skill的使用场景"
       },
       "description": {
-        "en": "Define the desired result for features, process changes, and creative work before resolving open choices.",
-        "zh": "新特性、流程调整与创意项目都先说明需要什么结果，再处理未决选择。"
+        "en": "New features, workflow changes, and non-code projects all need an intended outcome before implementation choices. Explore how Brainstorming compares alternatives and identifies unresolved decisions while preserving the constraints that matter to the next planning stage.",
+        "zh": "新功能、流程调整和非代码项目都需要先明确预期结果。了解 Brainstorming 如何比较方案、识别未决选择，并保留下一阶段规划所需的真实约束，避免过早确定实施细节。"
       },
       "items": [
         {
@@ -2013,18 +2013,18 @@
         "zh": "如何按根因调查故障"
       },
       "howDescription": {
-        "en": "Provide the exact error, expected behavior, and reproduction environment, then work through evidence gathering and pattern comparison. Test one hypothesis with a minimal change, implement the supported correction, and use the companion verification discipline to confirm the symptom and relevant tests are resolved.",
-        "zh": "提供准确错误、预期行为与复现环境，先收集证据并比较正常模式。用最小改动检验一个假设，再实施有证据支持的修复，并参考配套验证方法确认原始症状及相关测试均已解决。"
+        "en": "A systematic investigation connects accurate failure evidence with a tested explanation. Gather the reproduction context, compare normal behavior, and test one hypothesis before repairing it, then rerun the original symptom and relevant checks to establish whether the cause was addressed.",
+        "zh": "正常对照和完整故障证据共同支撑因果判断。收集复现背景后，用最小改动检验单一假设，再实施有依据的修复；原始症状与相关检查均需重跑，才能判断原因是否消除。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Find the failure mechanism before changing implementation",
-        "zh": "先找出故障机制，再改变实现"
+        "en": "Use Cases for Systematic Debugging Skill",
+        "zh": "Systematic Debugging Skill的使用场景"
       },
       "description": {
-        "en": "Narrow causes through working comparisons, boundary evidence, and tested hypotheses instead of successive guessed patches.",
-        "zh": "用正常对照、边界证据和被检验的假设缩小原因，而不是连续猜测修复。"
+        "en": "Unexpected tests, broken pipeline boundaries, and unsuccessful patches need a causal explanation before another edit. Compare working cases, input/output evidence, and architectural assumptions to identify what Systematic Debugging should investigate in each situation.",
+        "zh": "反复改动仍未消失的症状，需要重新检查原因，而不是继续猜测补丁。Systematic Debugging 通过正常对照、边界输入输出和架构假设核验，帮助定位真正失败的位置。"
       },
       "items": [
         {
@@ -2314,18 +2314,18 @@
         "zh": "如何使用 Cloudflare Security Audit"
       },
       "howDescription": {
-        "en": "Prepare the host and execution boundaries before asking the Skill to investigate, then review both findings and coverage gaps.",
-        "zh": "先准备宿主与执行边界，再开展调查；验收时同时检查问题证据和覆盖缺口。"
+        "en": "A security audit needs a prepared host, an authorized repository scope, and explicit execution boundaries. Follow coverage and investigation into independent validation, then review both issue evidence and unexplored areas rather than treating a findings list as proof of complete coverage.",
+        "zh": "审计发现必须与覆盖范围一起验收。准备宿主、授权仓库和执行边界后，开展调查并独立核验候选问题，同时保留未探索区域，不能用一份发现清单证明整个仓库都已检查。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Organize repository security work through coverage and disproof",
-        "zh": "用覆盖与反证组织仓库安全调查"
+        "en": "Use Cases for Security Audit Skill",
+        "zh": "Security Audit Skill的使用场景"
       },
       "description": {
-        "en": "Map trust boundaries, independently validate leads, and revisit historical evidence while keeping unfinished areas visible.",
-        "zh": "梳理信任边界、独立验证线索、复核历史证据，分别保留未完成区域。"
+        "en": "Repository coverage, suspected vulnerabilities, and historical findings need separate evidence checks. Explore how Security Audit maps trust boundaries and challenges candidate issues while keeping unexamined areas and needs_validation findings visible in the audit record.",
+        "zh": "仓库覆盖、疑似漏洞和历史发现需要分别核验。了解 Security Audit 如何梳理边界并反证问题，同时保留未检查区域和 needs_validation 状态。"
       },
       "items": [
         {

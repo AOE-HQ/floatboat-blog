@@ -35,7 +35,7 @@
   },
   "features": {
     "title": "More than moving files by extension.",
-    "description": "Floatboat can use filenames, folder context, and document content to propose a structure that reflects the work itself.",
+    "description": "Local file organization needs context beyond a filename. Explore how names, folder relationships, and document content inform proposed groups, while a preview gives you an opportunity to inspect changes before the approved file operations proceed.",
     "items": [
       {
         "label": "Understand",
@@ -55,8 +55,8 @@
     ]
   },
   "useCases": {
-    "title": "Organize files by project, period, and asset relationships",
-    "description": "Base classification on file use and existing conventions, keeping uncertain assignments open and changes reviewable.",
+    "title": "Use Cases for AI File Organizer",
+    "description": "Client folders, recurring records, and production assets need different filing rules. Compare how local organization can preserve project ownership, original locations, and relationships between files while leaving uncertain assignments for confirmation.",
     "items": [
       {
         "title": "Separate client work cleanly",
@@ -149,7 +149,7 @@
   },
   "howTo": {
     "title": "Organize files with a reviewed plan",
-    "description": "Limit the folder scope, inspect proposed changes, and check the resulting file operations.",
+    "description": "A file-organizing task begins with a bounded directory and clear filing rules. Review the proposed structure before approving operations, then compare the actual changes and retained files with the preview rather than assuming every item was classified correctly.",
     "items": [
       {
         "title": "Choose the folder and rules",

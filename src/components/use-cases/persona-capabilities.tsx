@@ -49,7 +49,7 @@ export function PersonaCapabilities({ page, roleLabel }: { page: PersonaPageData
   return <CapabilitiesSection
     id="capabilities"
     title={isZh ? `适合${roleLabel}的 Floatboat 能力` : `Floatboat capabilities for ${roleLabel}`}
-    description={isZh ? "Work Agent 在持续工作空间中使用这些能力读取资料、执行步骤并交付成果；最终判断和重要行动仍由人控制。" : "The Work Agent uses these capabilities inside a persistent workspace to read context, execute steps, and deliver results. People retain consequential decisions."}
+    description={page.buildingBlocks.description}
     items={items.map(([title, href, description], index) => ({
       title,
       href,

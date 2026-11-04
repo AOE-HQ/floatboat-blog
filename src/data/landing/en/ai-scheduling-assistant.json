@@ -35,7 +35,7 @@
   },
   "features": {
     "title": "Scheduling connects time to execution.",
-    "description": "The calendar remains familiar while the workspace handles the preparation and follow-through around it.",
+    "description": "Calendar events already define when work matters; the workspace connects them with the preparation around that moment. Compare task context, scheduled material, and follow-up handling while preserving the decisions that still require a person's review.",
     "items": [
       {
         "label": "Prepare",
@@ -55,8 +55,8 @@
     ]
   },
   "useCases": {
-    "title": "Prepare recurring work from its schedule",
-    "description": "Organize sources and review around real reporting, client-review, or editorial events without equating scheduling with automatic publication.",
+    "title": "Use Cases for AI Scheduling Assistant",
+    "description": "Weekly reports, client reviews, and editorial calendars each create a different preparation deadline. Connect those events with current material and review checkpoints, while keeping scheduled drafting separate from permission to publish or send.",
     "items": [
       {
         "title": "Protect the operating rhythm",
@@ -149,7 +149,7 @@
   },
   "howTo": {
     "title": "Prepare work around a calendar event",
-    "description": "Attach a useful preparation task to an existing event, then review its result before deciding the next action.",
+    "description": "An event becomes a useful work trigger when its preparation task and inputs are explicit. These steps connect an existing calendar entry with draft review and subsequent decisions, keeping the scheduled work separate from authorization for further action.",
     "items": [
       {
         "title": "Bring in the relevant event",

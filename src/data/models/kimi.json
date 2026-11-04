@@ -95,8 +95,8 @@
       "zh": "一个准确 ID，对应明确的就绪状态。"
     },
     "description": {
-      "en": "Economic profiles also recognize `kimi-k2` and `kimi-latest` for compatibility.",
-      "zh": "经济画像同时兼容 `kimi-k2` 与 `kimi-latest`。"
+      "en": "The recorded Kimi profile uses a specific model identity alongside documented aliases and capacity assumptions. Use those details to understand the configuration, then check the current client route before treating a profile or public listing as an available execution option.",
+      "zh": "Kimi 画像记录了具体型号及相关别名、容量假设。以下条目用于理解配置背景；实际安排任务前仍需检查当前客户端路径，避免将历史画像或公开列表直接当作可执行入口。"
     },
     "items": [
       {
@@ -119,12 +119,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "为长材料研究与审阅准备任务",
-      "en": "Prepare tasks for long-source research and review"
+      "zh": "Kimi 模型的使用场景",
+      "en": "Use Cases for Kimi Models"
     },
     "description": {
-      "zh": "这些任务对应长文本定位；执行前须核对当前入口，历史容量配置本身不证明账号已经可以使用。",
-      "en": "These tasks reflect a long-text role; verify current access before execution, since historical capacity configuration does not establish account availability."
+      "zh": "长材料里的主张可能跨越多个章节，综合和审阅都需要保留这些关系。围绕 Kimi 规划任务时，还需先确认访问路径，使全文分析需求与历史配置记录、当前可用状态分别对应。",
+      "en": "Long-source synthesis and whole-document review require reliable access as well as sufficient context. These examples connect source relationships and cross-section checks with task planning, while keeping historical Kimi configuration records separate from current availability."
     },
     "items": [
       {
@@ -165,8 +165,8 @@
       "zh": "选择器下层已经准备了什么。"
     },
     "description": {
-      "en": "Only confirmed runtime configuration is listed.",
-      "zh": "这里只列出已经确认的运行时配置。"
+      "en": "Exact model identity, long-text configuration, and access status answer different questions about Kimi. The entries below retain those distinctions, helping you assess context requirements without treating a recorded runtime budget as proof that your current account can use the route.",
+      "zh": "精确型号、长文本配置和访问状态，回答的是关于 Kimi 的不同问题。以下条目保留这些区别，帮助评估上下文要求，而不把运行预算记录当作当前账号已获访问的证明。"
     },
     "items": [
       {

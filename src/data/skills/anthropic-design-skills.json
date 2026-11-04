@@ -76,18 +76,18 @@
         "zh": "如何使用 Frontend Design"
       },
       "howDescription": {
-        "en": "Start with the page’s audience, primary task, content, and any pinned visual requirements. Ask the agent to propose a concise design direction before building, then inspect the rendered interface and refine hierarchy, readability, interaction, and behavior at the sizes the page will support.",
-        "zh": "先说明目标读者、主要任务、真实内容和已确定的视觉要求。让 Agent 提出简洁的设计方向，再进入实现；完成后检查渲染页面，在需要支持的尺寸下核对层级、可读性、交互与响应式表现，并修正具体问题。"
+        "en": "Interface design needs the actual product context and constraints before a visual direction is chosen. Use the source workflow to implement a coherent page, then inspect representative desktop and mobile states while retaining the required content and interactions.",
+        "zh": "视觉方向应从产品背景、受众和功能约束中形成。按原始设计流程实现后，需要在代表性桌面与移动状态中检查内容及交互，不能只凭单张界面截图判断设计已经完成。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Design interfaces around visitor decisions and working priorities",
-        "zh": "围绕访客决策与工作重点设计界面"
+        "en": "Use Cases for Frontend Design Skill",
+        "zh": "Frontend Design Skill的使用场景"
       },
       "description": {
-        "en": "Landing pages, dashboards, and redesigns need different information priorities while retaining real product constraints.",
-        "zh": "落地页、仪表盘和改版任务需要不同的信息重点，同时保留实际产品约束。"
+        "en": "Landing pages, dashboards, and redesigns each ask visitors to make different decisions. Explore how Frontend Design connects product context, information hierarchy, and existing constraints with a coherent interface that can be checked on real screens.",
+        "zh": "落地页、仪表盘和已有页面改版需要服务不同的用户决定。了解 Frontend Design 如何结合产品背景、信息层级及功能约束，形成连贯界面，并通过实际屏幕检查实现效果。"
       },
       "items": [
         {
@@ -312,18 +312,18 @@
         "zh": "如何使用 Skill Creator"
       },
       "howDescription": {
-        "en": "Explain the recurring task and supply examples of successful work before drafting. Define the trigger and expected output, test the draft with representative requests in the supported environment, and revise the instructions using both user feedback and the results of those runs.",
-        "zh": "先说明重复任务，并提供成功完成的示例。确定触发条件与交付物后再写草稿，在受支持环境中使用代表性请求测试，结合用户反馈和实际结果修订指令，最后检查描述与工作流程是否保持一致。"
+        "en": "Skill creation is an iterative comparison between instructions and real task behavior. Prepare representative requests, draft or revise the guidance, and inspect evaluation results before changing the trigger description or declaring the workflow ready for reuse.",
+        "zh": "Skill 是否可复用，需要由真实请求中的表现证明。将指令草稿与代表任务对照，根据评估定位执行或激活问题，再调整内容与触发描述，而不是以文件生成作为结束。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Write, evaluate, and tune reusable instructions",
-        "zh": "编写、评估与校准可复用指令"
+        "en": "Use Cases for Skill Creator",
+        "zh": "Skill Creator的使用场景"
       },
       "description": {
-        "en": "Judge instructions through examples and runs; test trigger descriptions against nearby negative cases too.",
-        "zh": "从任务样例和运行结果判断指令是否有效，触发描述还需要检查相邻反例。"
+        "en": "A recurring method, an inconsistent Skill, and an inaccurate trigger require different revisions. See how Skill Creator uses real requests and representative runs to improve reusable instructions without confusing activation problems with execution problems.",
+        "zh": "沉淀周期性方法、改进不稳定指令和校准触发条件，需要处理不同问题。了解 Skill Creator 如何使用真实请求与运行样例，分别检查复用内容、执行效果及激活边界。"
       },
       "items": [
         {
@@ -548,18 +548,18 @@
         "zh": "如何使用 PDF"
       },
       "howDescription": {
-        "en": "Provide the PDFs and specify the pages, fields, or content you need. Have the agent inspect the file type and follow the relevant extraction, editing, or form instructions, then compare the output with the source and inspect rendered pages where layout matters.",
-        "zh": "提供 PDF，明确需要处理的页面、字段或内容。让 Agent 先识别文件类型，再按相应提取、编辑或表单说明执行；完成后与来源比较内容，涉及排版时检查渲染页面，确认页面、文字与字段没有遗漏。"
+        "en": "PDF work begins by identifying whether the file needs reading, assembly, or form operations. Match the source instructions to that task, inspect the saved pages and values, and retain uncertainty when scanned content or unsupported fields prevent exact verification.",
+        "zh": "PDF 的提取、组合与表单操作有不同检查重点。选择适用指引后，保存页面和数值仍需对照原件；扫描识别或字段限制造成的不确定性应保留，文件能打开不能代替验收。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Extract, assemble, and fill PDFs",
-        "zh": "提取、组合与填写 PDF"
+        "en": "Use Cases for PDF Skill",
+        "zh": "PDF Skill的使用场景"
       },
       "description": {
-        "en": "Check extraction against source pages, assembly against page order, and form work against saved fields.",
-        "zh": "文本提取、页面组织和表单处理分别核对原页、顺序或字段结果。"
+        "en": "Report extraction, document assembly, and form filling require different PDF checks. Compare page references, ordering, field mappings, and recognition uncertainty so the resulting file can be inspected against the original rather than judged by appearance alone.",
+        "zh": "PDF 提取需要页码和识别依据，组合需要正确顺序，表单则要核对字段映射。保存结果应分别回到原文件检查，扫描不确定性和不支持的字段也必须保留，不能只看输出外观。"
       },
       "items": [
         {
@@ -784,18 +784,18 @@
         "zh": "如何使用 DOCX"
       },
       "howDescription": {
-        "en": "Provide the outline or source document and explain what must change and what must remain. Choose the source’s creation or editing path with the agent, then validate the saved package, render the document, and review representative pages before delivering the editable file.",
-        "zh": "提供提纲或原始文档，说明需要修改和必须保留的部分。与 Agent 选择原始说明中的生成或编辑路径，保存后检查文档结构、渲染页面，并复核具有代表性的版面，再交付可编辑文件。"
+        "en": "A Word task needs source content, a template if relevant, and a bounded generation or editing request. Follow the corresponding document workflow, then inspect structure and rendered pages before delivering the editable file with representative layouts checked.",
+        "zh": "Word 文件既要结构正确，也要能在实际页面中阅读。依据原内容、模板和编辑范围选择生成或修订路径，再检查渲染版面与文档结构，确认后交付可继续编辑的文件。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Create and revise editable Word documents",
-        "zh": "创建和修订可继续编辑的 Word 文件"
+        "en": "Use Cases for DOCX Skill",
+        "zh": "DOCX Skill的使用场景"
       },
       "description": {
-        "en": "Bound creation, targeted edits, or template reuse, then inspect rendered layout.",
-        "zh": "按新建、限定编辑或模板复用明确范围，并通过渲染检查版式。"
+        "en": "New reports, bounded revisions, and template reuse all produce editable Word files, but preserve different structures. Explore how DOCX work handles heading hierarchy, existing comments, and repeating page elements while checking the rendered document.",
+        "zh": "Word 报告的结构、局部修订时的批注和模板中的重复元素，关系到不同保留要求。DOCX 任务需要按目标选择处理方式，再检查渲染页面，确认可编辑文件仍符合原有约束。"
       },
       "items": [
         {
@@ -1020,18 +1020,18 @@
         "zh": "如何使用 PPTX"
       },
       "howDescription": {
-        "en": "Provide the presentation brief, source material, and any deck or template to reuse. Agree on the slide structure, create or edit using the matching source workflow, then inspect a thumbnail overview and the rendered slides before validating and delivering the editable presentation file.",
-        "zh": "提供演示需求、来源资料，以及需要复用的文稿或模板。确认幻灯片结构后，按原始说明选择生成或编辑路径；完成后查看缩略图总览与渲染页面，再检查文件结构，交付可编辑的演示文稿。"
+        "en": "Presentation work connects the audience and source material with an agreed slide structure. Choose the generation or editing path, then inspect both the overview and rendered slides so the editable deck preserves its narrative and fits the actual content.",
+        "zh": "受众和证据先决定演示结构，模板只是承载内容的方式。生成或编辑完成后，通过缩略图总览及实际渲染页检查叙事顺序和内容适配，再交付可编辑文稿。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Organize and update slides around the presentation",
-        "zh": "围绕汇报内容组织和更新幻灯片"
+        "en": "Use Cases for PPTX Skill",
+        "zh": "PPTX Skill的使用场景"
       },
       "description": {
-        "en": "Narrative, data updates, and layout adaptation have distinct acceptance goals beyond opening the file.",
-        "zh": "叙事、数据更新和版式适配各有验收目标，不能只以文件能打开作为完成。"
+        "en": "A new briefing, a data update, and a template adaptation need different presentation reviews. Compare narrative structure, existing slide order, and content fit so the PPTX file remains editable and its visual layout supports the intended message.",
+        "zh": "简报要有连贯叙事，已有演示更新要保留顺序，模板适配则要解决真实内容的拥挤。PPTX 的审阅因此需要结合任务检查页面和备注，让可编辑文稿确实支持预期表达。"
       },
       "items": [
         {
@@ -1256,18 +1256,18 @@
         "zh": "如何使用 XLSX"
       },
       "howDescription": {
-        "en": "Provide the source workbook or table, explain the column meanings, and define the required calculations. Ask the agent to edit the intended cells or build the requested output, then recalculate formulas, inspect reported errors, and compare representative results with the source before delivery.",
-        "zh": "提供原工作簿或数据表，说明各列含义与计算要求。让 Agent 修改指定单元格或生成目标输出，再重新计算公式、检查报告中的错误，并将代表性结果与来源核对，确认保存文件符合要求后交付。"
+        "en": "Spreadsheet changes depend on knowing what each column and calculation means. Bound the requested cells or output, then recalculate formulas and compare representative results with source data before accepting the saved workbook as a correct deliverable.",
+        "zh": "表格修改必须建立在列含义和计算规则清楚的基础上。限定目标区域后，重新计算公式、检查错误并抽样对照源数据，才能确认保存结果符合要求，而不是只完成单元格写入。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Make data cleanup and calculations checkable",
-        "zh": "让数据整理与计算结果可以复核"
+        "en": "Use Cases for XLSX Skill",
+        "zh": "XLSX Skill的使用场景"
       },
       "description": {
-        "en": "Preserve source meaning, use formulas, and check references across cleanup, creation, and existing-workbook updates.",
-        "zh": "保留来源含义、使用公式并核对引用，区分清洗、新建和原表更新。"
+        "en": "Cleaning a table, building formulas, and updating an established workbook carry different preservation requirements. Examine how XLSX tasks retain source meaning, expose assumptions, and verify references without turning calculated results into unexplained fixed values.",
+        "zh": "源数据含义、计算假设和公式引用，分别影响清理、新建模型与局部更新。XLSX 任务需要保留这些依据，并重新计算及检查代表结果，避免只留下无法解释的固定数字。"
       },
       "items": [
         {
@@ -1492,18 +1492,18 @@
         "zh": "如何使用 Impeccable"
       },
       "howDescription": {
-        "en": "Install Impeccable for your host, then initialize a new project with /impeccable init or check its existing product context. Give the agent a specific interface task, distinguish refinement from redesign, and inspect the rendered result at representative sizes before accepting changes.",
-        "zh": "按宿主安装 Impeccable，新项目先运行 /impeccable init，已有项目先核对产品上下文。再向 Agent 指定具体界面任务，区分保留原方向的优化与重新设计，并在代表性尺寸下检查渲染结果。"
+        "en": "Impeccable work starts with the host setup and product context, including initialization where required. Define whether the task preserves an approved direction or redesigns it, then check rendered results at representative sizes rather than treating every critique as authorization to rebuild.",
+        "zh": "审阅意见不应自动变成重新设计的授权。按宿主准备 Impeccable 和产品背景后，先确定保留现有方向还是重做，再检查代表尺寸下的渲染结果，使具体优化有清楚边界。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Move from interface audit to polish and complete states",
-        "zh": "从界面审查走到细节与状态完善"
+        "en": "Use Cases for Impeccable Skill",
+        "zh": "Impeccable Skill的使用场景"
       },
       "description": {
-        "en": "Decide whether the task is finding issues, polishing an agreed direction, or completing edge states before making changes.",
-        "zh": "先确定是发现问题、精修已定方向，还是补齐边界状态，再选择改动。"
+        "en": "Interface audits, final polish, and edge-state repairs should not reopen the same design decisions. Explore how Impeccable distinguishes finding problems from refining an approved direction and checking forms, loading behavior, or absent data.",
+        "zh": "界面审计、最后打磨和边界状态修复不应反复推翻同一设计决定。了解 Impeccable 如何区分发现问题、精修已定方向，以及检查表单、加载或空数据状态。"
       },
       "items": [
         {

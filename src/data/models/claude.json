@@ -103,8 +103,8 @@
       "zh": "在同一项目中选择推理深度或执行效率。"
     },
     "description": {
-      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
-      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
+      "en": "The Claude lineup combines recorded chat routes with names added to Floatboat's public pricing list. Compare the entry and status attached to each item, then confirm the current client menu and plan before relying on a particular version.",
+      "zh": "Claude 列表包含已有对话接入记录及价格页新增列出的名称。以下条目分别说明对应入口和状态；选择具体版本前，仍需同时核对当前客户端菜单与套餐条件。"
     },
     "items": [
       {
@@ -199,12 +199,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "处理依赖紧密的仓库与架构任务",
-      "en": "Work through tightly coupled repository and architecture tasks"
+      "zh": "Claude 模型的使用场景",
+      "en": "Use Cases for Claude Models"
     },
     "description": {
-      "zh": "重点是保留跨文件约束、比较设计后果和解释故障机制，具体型号按可用入口与任务要求选择。",
-      "en": "Preserve cross-file constraints, compare design consequences, and explain failure mechanisms; select the available model route for the task."
+      "zh": "跨文件修改只有保留接口约束，才能与仓库其余部分继续协作。架构取舍和故障追踪同样需要理解关联代码，再按可用 Claude 入口安排任务，并验证原始行为。",
+      "en": "Cross-file refactors, architecture choices, and failure traces depend on relationships that isolated snippets cannot explain. Explore tasks that need preserved interfaces, explicit tradeoffs, and verification of the original behavior through an available Claude route."
     },
     "items": [
       {
@@ -245,8 +245,8 @@
       "zh": "让推理连接项目，而不是停留在聊天框。"
     },
     "description": {
-      "en": "The value comes from pairing the selected Claude model with the files, rules, and execution flow already in Floatboat.",
-      "zh": "Claude 的价值来自它与 Floatboat 中已有文件、规则和执行流程的结合。"
+      "en": "Repository reasoning, code changes, and longer tasks depend on the files and rules supplied with them. Explore how Claude's recorded capabilities fit Floatboat's project workflow, with managed access kept distinct from evidence that a particular task has succeeded.",
+      "zh": "Claude 的仓库推理与代码工作需要结合任务中的文件和规则。放入 Floatboat 项目流程后，较长工作的上下文才能延续；托管入口可用，并不直接证明某次修改或交付已经成功。"
     },
     "items": [
       {

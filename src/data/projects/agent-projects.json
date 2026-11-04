@@ -32,7 +32,7 @@
         "The repository uses Apache-2.0. OpenAI’s models, subscriptions, and managed services have their own access and commercial terms. Publishing the harness makes its implementation inspectable; it does not promise that every hosted Codex feature is included in a local checkout."
       ],
       "capabilitiesTitle": "Workflow Mechanisms to Learn From",
-      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilitiesIntro": "Codex separates continuing task context, controlled tool use, and runtime integration surfaces. Compare those mechanisms as references for your own workflow, distinguishing how work is executed from the interface through which a person or application requests it.",
       "capabilities": [
         {
           "title": "Context that follows the task",
@@ -48,8 +48,8 @@
         }
       ],
       "useCases": {
-        "title": "Connect research, code, and application actions to a reviewable loop",
-        "description": "Use Codex’s execution and integration boundaries to define evidence, verification, and human acceptance of changes.",
+        "title": "Use Cases for Codex",
+        "description": "Research delivery, repeatable coding, and application integration expose different execution boundaries. Use Codex as a reference for connecting context, tool results, and acceptance points, then assess which CLI, SDK, or app-server interface fits your workflow.",
         "items": [
           {
             "title": "A research-to-deliverable workflow",
@@ -93,7 +93,7 @@
       ],
       "howTo": {
         "title": "Validate a Codex-style execution loop",
-        "description": "Trace one task through context, tool use, approval, and a reviewable result before reusing runtime components.",
+        "description": "Adapting an execution loop starts with one bottleneck in your existing task. Define its inputs, tools, and approval points, then test a small complete cycle before deciding which Codex interfaces or runtime ideas are worth adopting more broadly.",
         "items": [
           {
             "title": "Map one workflow bottleneck",
@@ -126,7 +126,7 @@
         "仓库采用 Apache-2.0 许可。OpenAI 模型、订阅和托管服务有独立的访问与商业条款。开放 harness 让实现可被查看和扩展，但不能据此承诺本地源码包含所有托管 Codex 功能。"
       ],
       "capabilitiesTitle": "值得借鉴的工作流机制",
-      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilitiesIntro": "持续上下文、受控工具循环和运行层接口共同组成 Codex 的执行参考。人或应用发起任务的入口，与任务内部怎样推进属于不同职责，借鉴机制时需要结合自己的工作流分别评估。",
       "capabilities": [
         {
           "title": "随任务延续的上下文",
@@ -142,8 +142,8 @@
         }
       ],
       "useCases": {
-        "title": "把资料、代码与应用操作接入可审阅循环",
-        "description": "借鉴 Codex 的工具执行与集成边界，分别定义证据、验证和人工接受修改的节点。",
+        "title": "Codex的使用场景",
+        "description": "研究资料变成草稿、仓库任务变成修改，以及 Agent 接入自有应用，都需要不同执行边界。Codex 的上下文和工具机制可供参考，审阅证据及接口选择则应结合自己的任务定义。",
         "items": [
           {
             "title": "从研究资料到交付成果",
@@ -187,7 +187,7 @@
       ],
       "howTo": {
         "title": "验证 Codex 式执行循环",
-        "description": "先用一项任务串联上下文、工具、批准和可审阅结果，再决定复用哪些运行组件。",
+        "description": "一项实际瓶颈比完整复制运行时更适合作为起点。明确输入、工具和批准节点，用小型任务串联执行与审阅，再根据验证结果判断哪些 Codex 接口或机制值得复用。",
         "items": [
           {
             "title": "定位一个流程瓶颈",
@@ -238,7 +238,7 @@
         "DeepSeek describes the project as a developer preview with compatibility-breaking changes expected. Its MIT source license is separate from model-provider access and third-party dependencies. Evaluate it as an evolving platform, with version-specific documentation and deliberate workspace boundaries."
       ],
       "capabilitiesTitle": "Workflow Mechanisms to Learn From",
-      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilitiesIntro": "DeepSeek Harness organizes work through distinct capabilities and their composition. Review the boundaries between plugins, the input/output chain of a focused workflow, and the version changes that may affect extensions before applying that structure to recurring work.",
       "capabilities": [
         {
           "title": "Separate capabilities clearly",
@@ -254,8 +254,8 @@
         }
       ],
       "useCases": {
-        "title": "Organize information and tool experiments through plugin boundaries",
-        "description": "Separate processing and connection responsibilities, then validate runtime behavior and dependencies in a small composition.",
+        "title": "Use Cases for DeepSeek Harness",
+        "description": "Digest pipelines, custom connectors, and small runtime experiments need explicit plugin responsibilities. Compare how DeepSeek Harness separates collection, transformation, and tool access, with compatibility and failure behavior checked before recurring work depends on a composition.",
         "items": [
           {
             "title": "A modular information workflow",
@@ -299,7 +299,7 @@
       ],
       "prerequisites": {
         "title": "Check DeepSeek Harness extension requirements",
-        "description": "Review the actual extensions you plan to compose rather than assuming all plugins share the same dependencies.",
+        "description": "Different Harness extensions may require different credentials, versions, and runtime dependencies. Check the specific capabilities in the proposed composition rather than preparing a generic plugin environment and assuming that every connection shares the same execution conditions.",
         "items": [
           {
             "title": "Check a candidate composition",
@@ -309,7 +309,7 @@
       },
       "howTo": {
         "title": "Design a capability chain with DeepSeek Harness",
-        "description": "Work from stage requirements to tested handoffs, with extension compatibility checked before execution.",
+        "description": "A plugin composition should follow the task's real processing stages. Map those responsibilities, check extension compatibility, and inspect handoffs and failures in a representative run before expanding the chain or relying on it for repeated delivery.",
         "items": [
           {
             "title": "List the task capabilities",
@@ -338,7 +338,7 @@
         "DeepSeek 将该项目标为开发者预览，并说明可能出现不兼容变更。MIT 源码许可与模型服务访问、第三方依赖条款分开。选用时应按持续演进的平台理解，结合具体版本文档与工作区边界进行评估。"
       ],
       "capabilitiesTitle": "值得借鉴的工作流机制",
-      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilitiesIntro": "DeepSeek Harness 让独立能力通过输入输出形成组合。插件职责和版本兼容性会影响整条处理链，理解每一阶段负责什么，才能判断组合是否适合自己的周期性交付任务。",
       "capabilities": [
         {
           "title": "清晰划分任务能力",
@@ -354,8 +354,8 @@
         }
       ],
       "useCases": {
-        "title": "以插件边界组织信息与工具实验",
-        "description": "先分清数据处理与连接职责，再用小范围组合验证运行行为和依赖。",
+        "title": "DeepSeek Harness的使用场景",
+        "description": "新闻摘要需要连接采集与转换，自定义工具还涉及凭据和调用边界。借鉴 DeepSeek Harness 时，可以先验证小型能力组合，用真实输入检查兼容性及失败行为，再考虑长期采用。",
         "items": [
           {
             "title": "模块化的信息处理流程",
@@ -399,7 +399,7 @@
       ],
       "prerequisites": {
         "title": "核对 DeepSeek Harness 扩展条件",
-        "description": "按计划组合的具体扩展核对条件，不假定所有插件有相同依赖。",
+        "description": "不同 Harness 扩展可能依赖不同凭据、版本和运行环境。以下条件针对实际计划组合的能力核对，而不是准备一套泛化插件环境后，就默认所有连接具有相同执行要求。",
         "items": [
           {
             "title": "核对候选组合",
@@ -409,7 +409,7 @@
       },
       "howTo": {
         "title": "用 DeepSeek Harness 设计能力链",
-        "description": "从各阶段实际需求出发组织能力链，在执行前核对扩展兼容性，再检查交接和失败处理。",
+        "description": "能力链需要对应真实处理阶段，插件数量本身并不说明流程完整。划分职责并核对兼容性后，用代表输入检查交接和失败行为，再决定是否扩大组合或用于周期性交付。",
         "items": [
           {
             "title": "列出任务所需能力",
@@ -459,7 +459,7 @@
         "The MIT-licensed repository is research code, explicitly described as not an official DeepSeek product or production-ready software. Its published implementation differs from the internal version and the accompanying design article; some ideas discussed there remain unimplemented."
       ],
       "capabilitiesTitle": "How Requests Become Agent Work",
-      "capabilitiesIntro": "Follow the mechanisms that connect a team’s request to a bounded task and a result someone can review.",
+      "capabilitiesIntro": "DSH connects an accountable request source with a bounded task and a result returned to the work's starting point. Compare those mechanisms when designing repository collaboration, keeping authorization and traceable delivery separate from simply receiving a message.",
       "capabilities": [
         {
           "title": "Requests with an accountable source",
@@ -475,8 +475,8 @@
         }
       ],
       "useCases": {
-        "title": "Connect maintenance requests, reviews, and team messages to tasks",
-        "description": "Tie triggers, requester authorization, and follow-up feedback to a traceable task without silently expanding scope.",
+        "title": "Use Cases for DSH Superagent Prototype",
+        "description": "Maintenance requests, review follow-ups, and message-triggered work depend on a traceable task identity. Explore DSH's request-to-draft-PR handoff while keeping requester permissions, original scope, and result-return destinations explicit in your own workflow design.",
         "items": [
           {
             "title": "Repository maintenance requests",
@@ -522,7 +522,7 @@
       ],
       "prerequisites": {
         "title": "Prepare the DSH Superagent runtime",
-        "description": "Confirm the runtime, dedicated identity, and machine permissions before allowing the prototype to execute tasks.",
+        "description": "Running the prototype requires a compatible Harness environment, configured model access, and a dedicated repository identity. Review those conditions alongside operating-system permissions: separate sessions and credential wrappers do not themselves provide a sandbox for router or worker activity.",
         "items": [
           {
             "title": "Prepare the runtime and agent identity",
@@ -536,7 +536,7 @@
       },
       "howTo": {
         "title": "Inspect DSH Superagent’s task decisions",
-        "description": "Use observation records to examine inferred work before enabling automatic acceptance. Explicit requests remain executable in observe mode.",
+        "description": "Observation helps assess inferred tasks before automatic acceptance is enabled, but explicit requests can still execute in observe mode. Review the steps with that distinction intact, checking permissions and task records rather than treating the mode as a universal execution block.",
         "items": [
           {
             "title": "Inspect inferred work first",
@@ -561,7 +561,7 @@
         "仓库采用 MIT 许可，README 明确其并非正式 DeepSeek 产品，也不属于生产就绪软件。公开实现与内部版本、配套设计文章并不完全一致，文章中的部分设计尚未实现，采用时应以实际代码和文档为准。"
       ],
       "capabilitiesTitle": "从团队请求到 Agent 任务",
-      "capabilitiesIntro": "了解请求如何经过权限判断、形成明确任务，并转为可以审阅的结果。",
+      "capabilitiesIntro": "消息进入 DSH 后，还需要对应可问责的来源、明确范围和结果回传位置。这些机制使仓库任务能够追溯，收到请求本身则不能代替授权判断，也不能证明结果已经被接受。",
       "capabilities": [
         {
           "title": "有来源的任务请求",
@@ -577,8 +577,8 @@
         }
       ],
       "useCases": {
-        "title": "把维护请求、评审与团队消息接成任务链",
-        "description": "触发来源、请求者授权和后续反馈必须指向可追踪的同一任务，避免隐性扩张范围。",
+        "title": "DSH Superagent Prototype的使用场景",
+        "description": "仓库维护和审阅跟进需要回到同一任务，消息触发还要明确谁有权提出请求。DSH 的交接方式可用于设计可追踪的请求链，同时保留原范围、结果回传位置及单独核验的连接条件。",
         "items": [
           {
             "title": "处理仓库维护请求",
@@ -624,7 +624,7 @@
       ],
       "prerequisites": {
         "title": "准备 DSH Superagent 运行环境",
-        "description": "让原型执行任务前，先确认运行环境、专用身份及机器权限。",
+        "description": "运行原型需要兼容 Harness 环境、模型访问和专用仓库身份。以下条件同时涉及操作系统权限；独立会话与凭据包装本身不构成沙箱，不能据此假定路由或工作进程已被隔离。",
         "items": [
           {
             "title": "准备运行环境和 Agent 身份",
@@ -638,7 +638,7 @@
       },
       "howTo": {
         "title": "检查 DSH Superagent 的任务判断",
-        "description": "先通过观察记录检查推断任务，再决定是否开启自动接受；observe 模式下，明确请求仍会执行。",
+        "description": "观察记录可帮助判断推断任务是否适合自动接受，但 observe 模式中的明确请求仍可能执行。核对权限和任务记录时必须保留这个区别，不能把该模式当作全面阻止执行的开关。",
         "items": [
           {
             "title": "先检查推断任务的判断",
@@ -680,7 +680,7 @@
         "The current repository is earendil-works/pi, following the earlier badlogic/pi-mono location, and uses MIT. Pi also explicitly says it has no built-in permission system restricting filesystem, process, network, or credential access. Hosting it safely requires the surrounding environment to provide the boundaries you need."
       ],
       "capabilitiesTitle": "Workflow Mechanisms to Learn From",
-      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilitiesIntro": "Pi provides a small execution core alongside separate instruction, extension, and library responsibilities. Compare those layers before adding functionality, so a missing task method is not automatically treated as a need for another executable runtime component.",
       "capabilities": [
         {
           "title": "A small execution core",
@@ -696,8 +696,8 @@
         }
       ],
       "useCases": {
-        "title": "Use a minimal loop to separate instructions from runtime needs",
-        "description": "Verify one focused task before deciding between Skill revisions and model/execution adapters.",
+        "title": "Use Cases for Pi",
+        "description": "A small task loop, an unreliable Skill, and a custom runtime component need different extension decisions. Compare Pi's instruction and library boundaries before deciding whether clearer task knowledge or additional executable behavior would address the gap.",
         "items": [
           {
             "title": "A lightweight task loop",
@@ -741,7 +741,7 @@
       ],
       "prerequisites": {
         "title": "Define Pi’s host permissions",
-        "description": "Plan permissions in the environment that will run the extension.",
+        "description": "Pi does not provide a built-in permission system for the work it hosts. Define file, process, network, and credential access in the surrounding environment before testing an extension, keeping the host's actual execution boundary separate from its package structure.",
         "items": [
           {
             "title": "Set the execution boundary",
@@ -751,7 +751,7 @@
       },
       "howTo": {
         "title": "Choose and test a Pi extension",
-        "description": "Locate the missing extension layer and test one addition against a representative task before composing more packages.",
+        "description": "Extending Pi begins by identifying which layer the task actually needs. Test one instruction or runtime extension with representative material before combining more packages, and use the observed behavior to decide whether the additional execution surface is justified.",
         "items": [
           {
             "title": "Choose the extension layer",
@@ -780,7 +780,7 @@
         "当前仓库为 earendil-works/pi，原地址为 badlogic/pi-mono，采用 MIT 许可。项目也明确说明自身没有限制文件、进程、网络和凭证访问的内置权限系统；所需隔离边界应由实际运行环境提供。"
       ],
       "capabilitiesTitle": "值得借鉴的工作流机制",
-      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilitiesIntro": "Pi 的精简核心周围保留了指令、扩展和库的不同职责。任务方法不清楚时，优先确认是否需要完善知识，而不是直接增加可执行组件，让真正的运行缺口与内容问题分开处理。",
       "capabilities": [
         {
           "title": "精简执行核心",
@@ -796,8 +796,8 @@
         }
       ],
       "useCases": {
-        "title": "从最小循环判断指令与运行层的边界",
-        "description": "先验证一项集中任务，再判断需要修订 Skill，还是研究模型和执行适配层。",
+        "title": "Pi的使用场景",
+        "description": "有的任务只需更清楚的 Skill，有的才需要自定义模型或执行接口。Pi 的分层提供了比较这些选择的参考，可以从轻量循环入手验证缺口，再决定是否增加运行组件。",
         "items": [
           {
             "title": "轻量任务循环",
@@ -841,7 +841,7 @@
       ],
       "prerequisites": {
         "title": "明确 Pi 宿主权限",
-        "description": "在实际运行扩展的宿主环境中规划权限。",
+        "description": "Pi 不为所承载工作提供内置权限系统。以下条件需要在外围环境中明确文件、进程、网络和凭据访问，再测试扩展；包结构的分层不能代替宿主实际执行边界。",
         "items": [
           {
             "title": "设置执行边界",
@@ -851,7 +851,7 @@
       },
       "howTo": {
         "title": "选择并验证 Pi 扩展",
-        "description": "先定位需要补足的扩展层，再用代表性任务验证单个扩展，之后才考虑组合更多包。",
+        "description": "扩展应先补足任务缺口，而不是增加包的数量。确认需要调整指令还是运行层后，用代表材料验证单项能力，再评估进一步组合，使新增执行范围有实际需求和行为作为依据。",
         "items": [
           {
             "title": "选择改动层次",
@@ -899,7 +899,7 @@
         "The project source is MIT licensed. Model-provider accounts, subscription access, remote services, and community additions have separate requirements. The source can be inspected and adapted without implying that all associated hosted services are free or included."
       ],
       "capabilitiesTitle": "Workflow Mechanisms to Learn From",
-      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilitiesIntro": "OpenCode's modes, tool feedback, and extension interfaces address different parts of coding work. Compare how they separate investigation from modification, make results inspectable, and expose project-specific integrations without confusing the agent application with its model service.",
       "capabilities": [
         {
           "title": "Separate task modes",
@@ -915,8 +915,8 @@
         }
       ],
       "useCases": {
-        "title": "Give exploration, code acceptance, and tool extension distinct checks",
-        "description": "Build context through read-only investigation, then make edits and external tool calls independently checkable.",
+        "title": "Use Cases for OpenCode",
+        "description": "Repository investigation, code review, and development-tool connections require different permissions and outputs. Explore how OpenCode's workflow can inform a read-only discovery stage, an inspectable change pipeline, and bounded extension tests for your own project.",
         "items": [
           {
             "title": "A repository investigation stage",
@@ -960,7 +960,7 @@
       ],
       "howTo": {
         "title": "Build a reviewable OpenCode handoff",
-        "description": "Define what investigation must return, constrain each stage’s tools, and inspect the evidence before accepting code changes.",
+        "description": "A reviewable OpenCode-inspired workflow needs a clear result from each stage. Define the investigation handoff and tool boundaries before implementation, then use diffs and verification evidence to decide whether the proposed change should be accepted in your repository.",
         "items": [
           {
             "title": "Describe the desired handoff",
@@ -993,7 +993,7 @@
         "项目源码采用 MIT 许可。模型服务账号、订阅访问、远程服务和社区扩展各有独立要求。可以研究和修改源码，但不能据此认为全部相关托管服务均免费或包含在内。"
       ],
       "capabilitiesTitle": "值得借鉴的工作流机制",
-      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilitiesIntro": "任务模式决定调查或修改的方式，工具反馈让过程可检查，扩展接口再连接项目需要的能力。理解 OpenCode 时，这些应用职责还需与模型服务分开，避免将一层能力推给另一层承担。",
       "capabilities": [
         {
           "title": "区分任务模式",
@@ -1009,8 +1009,8 @@
         }
       ],
       "useCases": {
-        "title": "让调查、代码接受与工具扩展各有检查点",
-        "description": "以只读调查建立上下文，再让修改与外部工具调用进入可核对的流程。",
+        "title": "OpenCode的使用场景",
+        "description": "仓库调查应先交回可核对发现，代码修改应展示差异，开发工具连接则需要限定测试。OpenCode 的工作方式可以帮助设计这些环节，明确各阶段权限和输出，而不混淆执行与接受。",
         "items": [
           {
             "title": "代码调查阶段",
@@ -1054,7 +1054,7 @@
       ],
       "howTo": {
         "title": "构建可审阅的 OpenCode 交接",
-        "description": "明确调查阶段需要交回什么，按阶段限制工具，再依据证据决定是否接受代码变更。",
+        "description": "调查、修改和接受变更需要不同证据。先约定只读阶段交回的结果及工具范围，再依据实现差异和验证记录决定是否接纳代码，使执行成功不会直接替代仓库审阅。",
         "items": [
           {
             "title": "描述阶段交接",
@@ -1105,7 +1105,7 @@
         "Hermes also documents MCP integrations, execution controls, and scheduled tasks. Each connected tool or delivery channel adds its own setup and permissions. The MIT license covers the source, while models, remote systems, and hosted services remain separate choices."
       ],
       "capabilitiesTitle": "Workflow Mechanisms to Learn From",
-      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilitiesIntro": "Hermes Agent offers reference points for retained context, reusable procedures, and task continuity over time. Compare those responsibilities before storing information, so knowledge that should be maintained separately does not become an undifferentiated archive of every past conversation.",
       "capabilities": [
         {
           "title": "Retain the right context",
@@ -1121,8 +1121,8 @@
         }
       ],
       "useCases": {
-        "title": "Retain the right knowledge for recurring research and later sessions",
-        "description": "Source freshness, method maintenance, and continuation need different memory boundaries rather than treating all conversation as reusable knowledge.",
+        "title": "Use Cases for Hermes Agent",
+        "description": "Recurring briefs, reusable methods, and resumed tasks need different memory boundaries. Use Hermes Agent as a reference for retaining source freshness and essential decisions while defining how task knowledge is reviewed, updated, and separated from unrelated history.",
         "items": [
           {
             "title": "A recurring research brief",
@@ -1166,7 +1166,7 @@
       ],
       "howTo": {
         "title": "Maintain knowledge across Hermes Agent runs",
-        "description": "Separate durable knowledge from temporary context, define how it changes, and judge the workflow across repeated tasks.",
+        "description": "Reusable task knowledge needs an owner and an update rule as well as a place to persist. Separate it from temporary session context, then assess repeated tasks against fresh evidence before deciding that the memory and continuity design is reliable.",
         "items": [
           {
             "title": "Classify what should persist",
@@ -1199,7 +1199,7 @@
         "Hermes 还维护 MCP 集成、执行控制与定时任务说明。每种工具和交付渠道都有自己的配置与权限。MIT 许可适用于源码，模型、远程系统和托管服务仍是独立选择。"
       ],
       "capabilitiesTitle": "值得借鉴的工作流机制",
-      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilitiesIntro": "上下文延续和方法复用并不需要保存完全相同的信息。Hermes Agent 为任务续接、知识维护及时间衔接提供参考，真正值得保留的内容需要有边界，而不是把全部对话堆成长期归档。",
       "capabilities": [
         {
           "title": "保留必要背景",
@@ -1215,8 +1215,8 @@
         }
       ],
       "useCases": {
-        "title": "为周期研究与后续会话保留恰当知识",
-        "description": "资料时效、方法维护与任务续接需要不同记忆边界，不把全部对话都当成可复用知识。",
+        "title": "Hermes Agent的使用场景",
+        "description": "每周简报需要新来源，成熟方法需要维护者，稍后续接的任务只需必要决定和证据。Hermes Agent 可用于研究这些连续性机制，使长期知识与临时会话背景各有保留边界。",
         "items": [
           {
             "title": "重复性研究简报",
@@ -1260,7 +1260,7 @@
       ],
       "howTo": {
         "title": "维护 Hermes Agent 多次执行中的知识",
-        "description": "区分长期知识与临时上下文，约定知识如何更新，再通过重复任务判断工作流是否可靠。",
+        "description": "知识能被保存，并不代表它适合长期复用。区分稳定方法与临时会话背景，约定维护者和更新方式，再用重复任务中的新证据检查记忆及续接设计是否可靠。",
         "items": [
           {
             "title": "分类需要保留的信息",
@@ -1311,7 +1311,7 @@
         "The maintained repository is MoonshotAI/kimi-code and uses MIT. The earlier Python project, MoonshotAI/kimi-cli, was archived and directs users to the newer CLI. Keep that distinction in mind when reading tutorials: the old project’s architecture, package names, and instructions are not interchangeable with the current release."
       ],
       "capabilitiesTitle": "Workflow Mechanisms to Learn From",
-      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilitiesIntro": "Kimi Code's tool-feedback loop, delegated responsibilities, and lifecycle checks solve different coordination problems. Review their interfaces as parts of an execution design, with the context and review evidence each role must return made explicit before tasks move between stages.",
       "capabilities": [
         {
           "title": "An explicit tool-feedback loop",
@@ -1327,8 +1327,8 @@
         }
       ],
       "useCases": {
-        "title": "Define multi-role development and cross-interface handoffs",
-        "description": "Specify role outputs, pre-action checks, and editor-context handoffs, verifying interfaces against the actual environment.",
+        "title": "Use Cases for Kimi Code CLI",
+        "description": "Role delegation, pre-action checks, and editor handoffs create different coordination requirements. Explore Kimi Code's interface and runtime boundaries while defining each role's output, review point, and context contract before testing compatibility with your existing environment.",
         "items": [
           {
             "title": "A multi-role coding workflow",
@@ -1372,7 +1372,7 @@
       ],
       "prerequisites": {
         "title": "Use the current Kimi Code reference",
-        "description": "Confirm the reference architecture before borrowing delegation or context mechanisms.",
+        "description": "The maintained kimi-code reference and legacy Python CLI examples may describe different architectures. Establish which version the investigation concerns before reusing delegation or context mechanisms, and read the matching documentation rather than combining incompatible examples into one setup.",
         "items": [
           {
             "title": "Use the maintained reference",
@@ -1382,7 +1382,7 @@
       },
       "howTo": {
         "title": "Verify delegated work in Kimi Code",
-        "description": "Specify role contracts and review points, then check whether context transfers support the next stage without excess history.",
+        "description": "Delegated coding work should preserve enough context for the next role without passing unrelated history. Define the handoff contract and review point for each contribution, then verify that the receiving stage can use the actual material before extending the workflow.",
         "items": [
           {
             "title": "Define each role and checkpoint",
@@ -1411,7 +1411,7 @@
         "当前维护的仓库是 MoonshotAI/kimi-code，采用 MIT 许可。旧 Python 项目 MoonshotAI/kimi-cli 已归档并引导迁移到新版。阅读教程时要区分版本，旧架构、包名和命令不能直接当作当前发行版说明。"
       ],
       "capabilitiesTitle": "值得借鉴的工作流机制",
-      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilitiesIntro": "Kimi Code 通过工具反馈、角色职责和生命周期检查协调执行。每个角色交回的上下文及审阅证据需要足以支撑下一阶段，接口存在并不能代替这些交接约定。",
       "capabilities": [
         {
           "title": "明确工具反馈循环",
@@ -1427,8 +1427,8 @@
         }
       ],
       "useCases": {
-        "title": "明确多角色开发与跨入口交接",
-        "description": "分别规定角色成果、动作前检查和编辑器上下文的交接，接口适配按实际环境核验。",
+        "title": "Kimi Code CLI的使用场景",
+        "description": "多角色编码要约定成果交接，重要动作要设置检查点，编辑器还需传递正确背景。Kimi Code 的接口与运行时机制可作为参考，具体上下文约定及适配仍应在自己的环境验证。",
         "items": [
           {
             "title": "多角色开发流程",
@@ -1472,7 +1472,7 @@
       ],
       "prerequisites": {
         "title": "使用当前 Kimi Code 资料",
-        "description": "借鉴委派或上下文机制前，先确认所参考的架构版本。",
+        "description": "持续维护的 kimi-code 与旧 Python CLI 示例可能描述不同架构。以下条件先确定调查针对哪个版本，再借鉴委派或上下文机制，避免把不兼容示例混合成一套配置。",
         "items": [
           {
             "title": "选择当前维护的参考",
@@ -1482,7 +1482,7 @@
       },
       "howTo": {
         "title": "验证 Kimi Code 中的委派任务",
-        "description": "明确各角色的交接约定与审阅节点，再检查上下文是否足以支撑下一阶段且不夹带多余历史。",
+        "description": "下一角色既需要足够背景，也不应被无关历史淹没。为委派贡献约定输出和审阅节点，再检查接收阶段能否使用实际材料，确认交接有效后才扩展更多协作环节。",
         "items": [
           {
             "title": "定义职责与检查点",
@@ -1529,7 +1529,7 @@
         "The public source uses Apache-2.0 and the repository also provides a project notice covering additional operational and third-party matters. Source availability does not settle model access, hosted service terms, or every application behavior. Review the official notice and release documentation for the version you choose."
       ],
       "capabilitiesTitle": "Workflow Mechanisms to Learn From",
-      "capabilitiesIntro": "Understand what the project demonstrates, then decide which mechanism addresses a real gap in your own workflow.",
+      "capabilitiesIntro": "ZCode separates interface presentation from execution while making task progress available for review. Compare the project material, current activity, and surrounding system responsibilities before borrowing its structure, so a visible status does not replace evidence about the resulting work.",
       "capabilities": [
         {
           "title": "Separate interface and execution",
@@ -1545,8 +1545,8 @@
         }
       ],
       "useCases": {
-        "title": "Keep task state across workspace, review, and entry points",
-        "description": "Separate UI and execution responsibilities around materials and activity so users understand which result they are accepting.",
+        "title": "Use Cases for ZCode",
+        "description": "Long-running projects, human approval, and multiple interfaces need a clear owner for task state. Use ZCode to examine how materials, current activity, and proposed results remain connected without confusing a visible execution log with an understandable review artifact.",
         "items": [
           {
             "title": "A task-centered workspace",
@@ -1590,7 +1590,7 @@
       ],
       "prerequisites": {
         "title": "Check ZCode’s data boundaries",
-        "description": "Identify the execution location and recipients of task information from the source and project notice.",
+        "description": "Local and remote execution can expose task information to different recipients. Use ZCode's source and project notice to identify those boundaries before supplying material, with the actual service path checked separately from what the desktop interface appears to contain.",
         "items": [
           {
             "title": "Check data and execution boundaries",
@@ -1600,7 +1600,7 @@
       },
       "howTo": {
         "title": "Prototype a ZCode review loop",
-        "description": "Separate task context, interaction, and tools, then test one reviewable result before broadening the interface or tool set.",
+        "description": "A workflow spanning task context, interaction, and tools needs those responsibilities assigned before expansion. Test one complete, reviewable result first, then use its evidence to decide where another interface or tool would add value without splitting the task state.",
         "items": [
           {
             "title": "Map the layers of the task",
@@ -1629,7 +1629,7 @@
         "公开源码采用 Apache-2.0，仓库另有项目声明说明运行和第三方事项。源码公开不能代替模型访问、托管服务条款或应用行为的具体判断，应结合所选版本阅读官方声明和发行说明。"
       ],
       "capabilitiesTitle": "值得借鉴的工作流机制",
-      "capabilitiesIntro": "先理解项目展示了什么机制，再判断它能解决自己工作流中的哪个具体问题。",
+      "capabilitiesIntro": "可见进度需要与项目资料和实际执行对应，才足以支持审阅。ZCode 对界面和运行职责的划分提供系统参考；状态正在变化，并不等于交付结果已经达到要求。",
       "capabilities": [
         {
           "title": "区分界面与执行",
@@ -1645,8 +1645,8 @@
         }
       ],
       "useCases": {
-        "title": "在工作区、审阅与多入口之间保持任务状态",
-        "description": "围绕原始资料与当前活动划分界面和执行职责，使用户知道正在接受什么结果。",
+        "title": "ZCode的使用场景",
+        "description": "长任务需要让资料、当前活动和结果始终关联，人工批准又依赖清楚的审阅材料。ZCode 可供研究这些连接及多界面职责，使用户知道正在接受什么，而不只看到执行日志。",
         "items": [
           {
             "title": "以任务为中心的工作区",
@@ -1690,7 +1690,7 @@
       ],
       "prerequisites": {
         "title": "核对 ZCode 数据边界",
-        "description": "依据源代码及项目声明，确认执行位置与任务信息接收方。",
+        "description": "本地与远程执行可能将任务信息交给不同接收方。以下条件结合 ZCode 源码和项目说明确认这些边界，再提供材料；实际服务路径需要单独核对，不能只根据桌面界面判断。",
         "items": [
           {
             "title": "检查数据与执行边界",
@@ -1700,7 +1700,7 @@
       },
       "howTo": {
         "title": "用 ZCode 验证一条审阅流程",
-        "description": "分清任务上下文、交互与工具，用一个可审阅结果验证完整流程，再扩大界面或工具范围。",
+        "description": "同一任务跨越界面和工具时，上下文与执行职责需要保持清楚。先验证一个完整、可审阅的结果，再判断哪里值得增加入口或能力，避免扩展过程把任务状态拆散。",
         "items": [
           {
             "title": "梳理任务层次",
@@ -1748,7 +1748,7 @@
         "For work organized in Floatboat, its useful contribution is a concrete method for controlling implementation scope and reviewing consequences beyond a diff. Apply the method to one repository task and compare the result against your acceptance criteria. The project’s own benchmark results are bounded experiments, not guaranteed savings for another model or codebase."
       ],
       "capabilitiesTitle": "Reuse, Review, and Track Deliberate Shortcuts",
-      "capabilitiesIntro": "Ponytail connects a small implementation with a clear explanation of what was checked, deferred, and affected.",
+      "capabilitiesIntro": "Ponytail's guidance emphasizes inspection before new code, surrounding behavior, and visible deferred work. Compare those practices when reducing complexity, keeping the impact boundary and the checks already required by the repository part of the implementation decision.",
       "capabilities": [
         {
           "title": "Inspect before adding code",
@@ -1764,8 +1764,8 @@
         }
       ],
       "useCases": {
-        "title": "Check real requirements and hidden effects in small changes",
-        "description": "Use date inputs, field renames, and expanding implementations to retain verification while reducing speculative complexity.",
+        "title": "Use Cases for Ponytail",
+        "description": "Date controls, field renames, and growing abstractions reveal different kinds of unnecessary complexity. Explore Ponytail's code-reuse approach while keeping caller impact, real invalid inputs, and the repository's existing quality checks part of the decision.",
         "items": [
           {
             "title": "Add a form control",
@@ -1809,7 +1809,7 @@
       ],
       "prerequisites": {
         "title": "Select the Ponytail host adapter",
-        "description": "Distinguish instruction loading from plugin commands and lifecycle behavior.",
+        "description": "A rules-file adapter and a supported plugin do not expose the same behavior. Check Ponytail's installation instructions for the intended host before relying on commands or lifecycle functions, keeping instruction loading separate from executable plugin support.",
         "items": [
           {
             "title": "Choose a compatible adapter",
@@ -1819,7 +1819,7 @@
       },
       "howTo": {
         "title": "Compare Ponytail rules on a real task",
-        "description": "Keep the repository’s quality requirements explicit and compare complete results under the selected host adapter.",
+        "description": "Ponytail rules need a compatible host adapter and a task whose outcome can be compared. Preserve the repository's existing quality requirements during the trial, then judge the complete result rather than counting fewer lines as evidence that the guidance improved the work.",
         "items": [
           {
             "title": "Keep your project contract",
@@ -1848,7 +1848,7 @@
         "对在 Floatboat 中组织代码任务的用户，它提供了控制实现范围、检查修改连带影响的方法。可以先选一项仓库任务，按同一验收标准比较结果。项目公布的基准测试有特定任务与模型条件，不能直接当作其他代码库必然节省成本的承诺。"
       ],
       "capabilitiesTitle": "先复用，再审查，留下有依据的取舍",
-      "capabilitiesIntro": "实现可以小，但必须说清楚影响范围、已验证行为和暂缓处理的事项。",
+      "capabilitiesIntro": "实现变小之后，调用影响和已验证行为仍应说得清楚。Ponytail 强调先调查、检查周边并保留暂缓事项，让简化建立在仓库质量要求上，而不是只追求更少的代码。",
       "capabilities": [
         {
           "title": "写之前读懂现有实现",
@@ -1864,8 +1864,8 @@
         }
       ],
       "useCases": {
-        "title": "在小改动中检查真实需求和隐藏影响",
-        "description": "从日期控件、字段重命名和膨胀实现入手，保留验证并减少推测性复杂度。",
+        "title": "Ponytail的使用场景",
+        "description": "日期控件是否需要自建、字段改名会影响谁，以及抽象是否服务真实需求，都要回到已有代码判断。Ponytail 的复用思路结合周边行为与质量检查，让简化仍能维护必要验证。",
         "items": [
           {
             "title": "为表单增加日期输入",
@@ -1909,7 +1909,7 @@
       ],
       "prerequisites": {
         "title": "选择 Ponytail 宿主适配方式",
-        "description": "区分加载规则指令与插件命令、生命周期行为。",
+        "description": "规则文件适配器与受支持插件提供的行为不同。以下条件依据 Ponytail 安装说明核对目标宿主，区分指令加载和可执行插件支持，再判断能否使用命令及生命周期功能。",
         "items": [
           {
             "title": "选择对应适配方式",
@@ -1919,7 +1919,7 @@
       },
       "howTo": {
         "title": "用真实任务比较 Ponytail 规则",
-        "description": "在选定宿主适配方式下，保留仓库质量要求，并按完整结果比较规则带来的变化。",
+        "description": "减少代码只有在质量要求仍然满足时才有意义。选择兼容宿主适配后，保留仓库已有检查，并比较完整任务结果，判断 Ponytail 指引是否改善实现，而非只统计行数变化。",
         "items": [
           {
             "title": "保留项目自身的要求",
@@ -1966,7 +1966,7 @@
         "For a Floatboat workflow, the useful design questions are how to divide responsibility, preserve shared context, and ask for approval at the right point. MausBot’s channels and portable team packages provide concrete examples. Studying that design does not establish an installed integration between the two applications."
       ],
       "capabilitiesTitle": "Coordinate Roles, Context, and Decisions",
-      "capabilitiesIntro": "The application separates the conversation interface from the engines that carry out work.",
+      "capabilitiesIntro": "MausBot connects channel-specific context, engine activity, and portable team instructions through different responsibilities. Compare its conversation and execution layers while retaining the permission checks needed for local computer use, connected services, and tasks that leave the chat.",
       "capabilities": [
         {
           "title": "Give a channel its own context",
@@ -1982,8 +1982,8 @@
         }
       ],
       "useCases": {
-        "title": "Arrange research checks, recurring reports, and role-package handoffs",
-        "description": "Divide roles around shared deliverables, distinguishing information sharing, service connections, and external execution access.",
+        "title": "Use Cases for MausBot",
+        "description": "Research review, recurring operations, and team playbook transfer need shared material without shared credentials. Examine MausBot's role-based approach while distinguishing the draft handoff, service reconnection, and authorization required for actions outside the conversation.",
         "items": [
           {
             "title": "Separate research from review",
@@ -2027,7 +2027,7 @@
       ],
       "prerequisites": {
         "title": "Prepare MausBot engines and connections",
-        "description": "Check the engine account, computer access, and shared playbook contents for the task you intend to run.",
+        "description": "A working agent engine, computer or service access, and a reviewed team package are separate prerequisites. Check the route needed by the task and the receiving environment's permissions; a shared playbook does not supply credentials or unlimited model access.",
         "items": [
           {
             "title": "Confirm a working agent engine",
@@ -2060,7 +2060,7 @@
         "对 Floatboat 用户，更值得借鉴的是如何划分角色、保留共享上下文，以及在正确的步骤请求审批。MausBot 的频道与可移植团队包提供了具体实现参考；研究这些机制，不代表两个应用之间已经完成安装或集成。"
       ],
       "capabilitiesTitle": "把角色、上下文与审批组织在一起",
-      "capabilitiesIntro": "聊天界面负责呈现工作，底层引擎负责执行，两者通过明确的事件与权限机制衔接。",
+      "capabilitiesIntro": "MausBot 将频道背景、引擎活动和可移植团队指令连接起来。对话层呈现工作，执行层使用具体服务或电脑权限；分享一套角色说明，并不会同时完成这些连接和授权。",
       "capabilities": [
         {
           "title": "为频道定义共同背景",
@@ -2076,8 +2076,8 @@
         }
       ],
       "useCases": {
-        "title": "安排研究复核、周期报告和角色包交接",
-        "description": "让角色围绕共同交付物分工，区分信息共享、服务连接与外部执行权限。",
+        "title": "MausBot的使用场景",
+        "description": "研究与核验可以分工，运营简报可以周期准备，团队方法也可以迁移复用。借鉴 MausBot 时，需要让资料交接、服务重连和外部执行权限分别明确，不能把共享手册当作凭据转移。",
         "items": [
           {
             "title": "将资料收集与事实复核分开",
@@ -2121,7 +2121,7 @@
       ],
       "prerequisites": {
         "title": "准备 MausBot 引擎与连接",
-        "description": "按实际任务核对引擎账号、计算机访问及共享工作手册内容。",
+        "description": "可用 Agent 引擎、电脑或服务访问，以及已审阅团队包，是不同前提。以下条件按任务路径和接收环境核对权限；共享手册不提供凭据，也不代表拥有无限模型访问。",
         "items": [
           {
             "title": "确认可用的 Agent 引擎",
@@ -2172,7 +2172,7 @@
         "For workflows organized in Floatboat, the project provides a reference for desktop steps that need observable targets and explicit verification. Examples include entering prepared data into an application and checking the resulting state. Reusing the tool requires a compatible integration and the necessary permissions; a directory listing does not connect it to Floatboat."
       ],
       "capabilitiesTitle": "Observe, Act, and Verify Desktop State",
-      "capabilitiesIntro": "A structured target and a successful command are different forms of evidence. Check the resulting application state before continuing.",
+      "capabilitiesIntro": "Agent Desktop exposes application structure, scoped targets, and action results as different evidence. Review how JSON snapshots and element references support control, then distinguish a successful command from confirmation that the intended state was actually saved in the application.",
       "capabilities": [
         {
           "title": "Read app structure as JSON",
@@ -2188,8 +2188,8 @@
         }
       ],
       "useCases": {
-        "title": "Make entry, relocalization, and desktop calls verifiable",
-        "description": "Choose actions from current control state and observe again afterward, retaining separate runtime authorization and acceptance.",
+        "title": "Use Cases for Agent Desktop",
+        "description": "Application entry, changing lists, and runtime adapters need current desktop evidence. Explore Agent Desktop's control model through target localization and saved-value checks, while keeping approval and final verification in the workflow that surrounds each call.",
         "items": [
           {
             "title": "Transfer reviewed information into an app",
@@ -2233,7 +2233,7 @@
       ],
       "prerequisites": {
         "title": "Check Agent Desktop platform access",
-        "description": "Confirm platform capabilities and observation scope for the exact application you want to automate.",
+        "description": "Desktop control depends on platform permissions, the target application's accessibility exposure, and the observation data collected. Check those conditions for the actual operating system and display environment before using screenshots, clipboard contents, or model-backed helpers in a task.",
         "items": [
           {
             "title": "Confirm permissions and session access",
@@ -2266,7 +2266,7 @@
         "对在 Floatboat 中组织的工作流，它为需要明确目标与结果验证的桌面步骤提供参考，例如把已核对的数据录入应用，再检查保存后的状态。实际复用仍需兼容的集成方式与必要权限，目录收录不会自动将这一工具接入 Floatboat。"
       ],
       "capabilitiesTitle": "观察桌面状态，操作后再次验证",
-      "capabilitiesIntro": "明确的元素目标与命令执行成功是两种不同证据，继续下一步前还应检查应用实际状态。",
+      "capabilitiesIntro": "JSON 快照描述应用结构，元素引用限定动作目标，返回值则记录命令结果。Agent Desktop 的这些证据需要配合实际状态检查，执行成功本身不能证明预期内容已经保存到应用中。",
       "capabilities": [
         {
           "title": "把应用结构转为 JSON",
@@ -2282,8 +2282,8 @@
         }
       ],
       "useCases": {
-        "title": "把录入、重新定位与桌面调用变成可验证步骤",
-        "description": "以真实控件状态决定下一步，动作完成后重新观察；运行层的授权和验收仍单独负责。",
+        "title": "Agent Desktop的使用场景",
+        "description": "向应用录入资料后要读回保存值，列表变化后要重新定位目标。Agent Desktop 的控制方式可用于研究这些桌面流程，运行层的批准和最终核验仍由外围工作流承担。",
         "items": [
           {
             "title": "把已核对资料录入应用",
@@ -2327,7 +2327,7 @@
       ],
       "prerequisites": {
         "title": "核对 Agent Desktop 平台访问条件",
-        "description": "针对要自动化的具体应用，确认平台能力及观察数据范围。",
+        "description": "桌面控制依赖平台权限、目标应用的无障碍暴露和所采集观察数据。以下条件需要结合操作系统与显示环境核对，再在任务中使用截图、剪贴板内容或模型辅助功能。",
         "items": [
           {
             "title": "确认权限与会话条件",
@@ -2378,7 +2378,7 @@
         "For work organized in Floatboat, study how a prepared brief becomes a bounded media-generation step and how its outputs return for review. Local execution, paid cloud services, and partner-model API nodes have different requirements. The core license does not grant rights to every model, extension, or generated asset."
       ],
       "capabilitiesTitle": "Build a Generation Process You Can Inspect",
-      "capabilitiesIntro": "Make inputs, transformations, and output review visible instead of treating generation as a single opaque request.",
+      "capabilitiesIntro": "ComfyUI graphs connect explicit media operations with reusable workflow state and bounded jobs. Compare how inputs, model dependencies, and intermediate outputs remain attached to each stage, making it easier to trace a weak result and hand off a reproducible recipe.",
       "capabilities": [
         {
           "title": "Connect explicit processing steps",
@@ -2394,8 +2394,8 @@
         }
       ],
       "useCases": {
-        "title": "Define node workflows for image series, post-processing, and production packages",
-        "description": "Validate models, node dependencies, and representative inputs together, checking both visual results and reproducibility.",
+        "title": "Use Cases for ComfyUI",
+        "description": "Image series, finishing stages, and portable production recipes need both media and environment checks. Explore how ComfyUI graphs preserve operation order, model dependencies, and representative inputs so results can be reviewed and reproduced by another collaborator.",
         "items": [
           {
             "title": "Prepare a consistent image series",
@@ -2439,7 +2439,7 @@
       ],
       "prerequisites": {
         "title": "Check ComfyUI models and dependencies",
-        "description": "Runtime choice, custom nodes, and model terms all affect whether a workflow can be reproduced.",
+        "description": "Hardware and operating-system support are only part of a ComfyUI setup. Review custom-node dependencies, model terms, and any external API conditions alongside the workflow, since each can affect whether another environment can reproduce the intended output.",
         "items": [
           {
             "title": "Choose a supported runtime",
@@ -2453,7 +2453,7 @@
       },
       "howTo": {
         "title": "Validate a ComfyUI workflow before batching",
-        "description": "Use a representative input to resolve dependencies and inspect the saved output before increasing the run volume.",
+        "description": "A reusable media workflow should first succeed with representative inputs and known dependencies. Resolve the environment, inspect saved outputs, and retain the setup needed to reproduce them before increasing the batch size or handing the recipe to another machine.",
         "items": [
           {
             "title": "Test a complete sample",
@@ -2478,7 +2478,7 @@
         "在 Floatboat 中组织工作时，可以借鉴它如何把创作需求转换为有边界的生成步骤，再将输出交回审阅。本地运行、付费云服务和合作模型 API 节点有不同条件；核心许可不覆盖所有模型、扩展或生成素材的权利。"
       ],
       "capabilitiesTitle": "让生成过程可以检查与复用",
-      "capabilitiesIntro": "明确输入、转换与验收步骤，便于追查结果来自哪个环节。",
+      "capabilitiesIntro": "ComfyUI 图把输入、模型依赖和中间输出对应到具体操作。结果不理想时，可以沿阶段追查原因；交接制作方案时，还需保留这些对应关系，不能只传递最终图文件。",
       "capabilities": [
         {
           "title": "连接明确的处理步骤",
@@ -2494,8 +2494,8 @@
         }
       ],
       "useCases": {
-        "title": "为图片系列、后处理和制作包定义节点流程",
-        "description": "把模型、节点依赖与代表输入一起纳入验证，既检查画面，也检查流程能否复现。",
+        "title": "ComfyUI的使用场景",
+        "description": "同一组图片需要一致制作条件，后期阶段需要可追查，跨电脑复用还需要依赖齐全。ComfyUI 图可以组织这些媒体流程，并结合代表输入及输出检查判断是否真正能够复现。",
         "items": [
           {
             "title": "准备风格一致的图片系列",
@@ -2539,7 +2539,7 @@
       ],
       "prerequisites": {
         "title": "核对 ComfyUI 模型与依赖",
-        "description": "运行环境、自定义节点和模型条款都会影响工作流能否复现。",
+        "description": "硬件与系统支持只是 ComfyUI 配置的一部分。以下条件同时核对自定义节点依赖、模型条款及外部 API 要求，因为它们都会影响另一个环境能否复现预期结果。",
         "items": [
           {
             "title": "选择适合的运行方式",
@@ -2553,7 +2553,7 @@
       },
       "howTo": {
         "title": "批量运行前验证 ComfyUI 工作流",
-        "description": "先用代表性输入解决依赖并检查保存结果，再扩大运行批次。",
+        "description": "可移植流程需要的不只是图文件，还包括依赖、代表输入和可检查输出。先在当前环境跑通并保存复现条件，再扩大批次或迁移到其他电脑，减少交接后的环境遗漏。",
         "items": [
           {
             "title": "验证一个完整样本",
@@ -2596,7 +2596,7 @@
         "For a Floatboat repository task, use the graph as a map to relevant source files and relationships before reviewing the actual code. Keep the graph current with the source revision. The Apache-2.0 local tool and hosted Graphify services have distinct setup, data-processing, and commercial conditions."
       ],
       "capabilitiesTitle": "Turn Repository Structure into Navigable Context",
-      "capabilitiesIntro": "Use the graph to narrow an investigation, then verify conclusions in the source it references.",
+      "capabilitiesIntro": "Graphify distinguishes parsed code relationships, focused queries, and relationship provenance. Compare those layers when narrowing an investigation, then return to the cited files so semantic links and extracted structure do not silently become claims of verified program behavior.",
       "capabilities": [
         {
           "title": "Parse explicit code relationships",
@@ -2612,8 +2612,8 @@
         }
       ],
       "useCases": {
-        "title": "Use a graph to answer call-path, refactor, and documentation questions",
-        "description": "Use the graph as an investigation path, verifying conclusions in source and separating inference from observed behavior.",
+        "title": "Use Cases for Graphify",
+        "description": "Feature investigation, refactor planning, and design-note comparison require different paths through a codebase. Use Graphify to narrow those paths, then confirm relationships in the cited files while preserving the distinction between inferred connections and verified behavior.",
         "items": [
           {
             "title": "Locate the path behind a feature",
@@ -2657,7 +2657,7 @@
       ],
       "prerequisites": {
         "title": "Choose Graphify’s processing boundary",
-        "description": "Identify which analysis stays local and which tasks send material to a model or hosted service.",
+        "description": "Local AST processing and model-backed semantic tasks can handle source material differently. Identify which files remain local and which may reach a model or hosted service before investigation begins, rather than treating every graph operation as the same data path.",
         "items": [
           {
             "title": "Choose local or hosted processing",
@@ -2667,7 +2667,7 @@
       },
       "howTo": {
         "title": "Build and verify a Graphify graph",
-        "description": "Confirm the tool and Agent guidance are available, then keep graph-derived conclusions tied to the current source.",
+        "description": "Graph-based investigation needs the relevant tool and agent instructions available before the graph guides a change. Check the setup, follow a focused query, and compare its claims with current source files so the analysis remains tied to the revision being investigated.",
         "items": [
           {
             "title": "Install the tool and agent guidance",
@@ -2696,7 +2696,7 @@
         "在 Floatboat 中研究仓库时，可以先用图谱定位相关文件和关系，再检查真实代码。图谱应与来源版本保持一致；Apache-2.0 本地工具和 Graphify 托管服务在配置、数据处理和商业条件上分别判断。"
       ],
       "capabilitiesTitle": "把仓库结构整理成可导航上下文",
-      "capabilitiesIntro": "用图谱缩小调查范围，再回到所引用的源文件验证结论。",
+      "capabilitiesIntro": "解析关系、查询结果和语义推断各有不同来源。Graphify 可以帮助定位相关代码与文档，但结论还要回到引用文件核实，图上的联系不能自动升级为已经验证的程序行为。",
       "capabilities": [
         {
           "title": "提取代码中的明确连接",
@@ -2712,8 +2712,8 @@
         }
       ],
       "useCases": {
-        "title": "用图谱回答调用、重构与文档关系问题",
-        "description": "图谱提供调查路径，最终判断仍需回到源码，并保留推断与已证实行为的区别。",
+        "title": "Graphify的使用场景",
+        "description": "功能路径、重构影响和设计说明可能分别指向不同源文件。Graphify 帮助缩小调查范围后，判断仍需回到引用代码，并明确哪些联系来自推断、哪些行为已经有直接证据。",
         "items": [
           {
             "title": "定位功能背后的调用路径",
@@ -2757,7 +2757,7 @@
       ],
       "prerequisites": {
         "title": "选择 Graphify 处理边界",
-        "description": "区分留在本地的分析，以及会向模型或托管服务发送材料的任务。",
+        "description": "本地 AST 处理与模型支持的语义任务，可能采用不同资料路径。以下条件在调查前确认哪些文件留在本机、哪些可能发送到模型或托管服务，不把全部图谱操作理解为相同的数据处理。",
         "items": [
           {
             "title": "选择本地或托管处理",
@@ -2767,7 +2767,7 @@
       },
       "howTo": {
         "title": "构建并核对 Graphify 代码图谱",
-        "description": "确认工具与 Agent 指令可用，再让图谱结论始终对应当前源代码。",
+        "description": "图谱结论需要始终对应正在调查的源码版本。确认工具和 Agent 指引可用后，沿限定查询定位文件，再核对关系与行为，避免依据旧图或推断连线直接提出修改。",
         "items": [
           {
             "title": "准备工具与 Agent 指引",
@@ -2814,7 +2814,7 @@
         "For a Floatboat workflow, the useful pattern is to define bounded assignments, isolate changes, and compare evidence before accepting an implementation. Parallel agents still need a shared task contract and an explicit integration owner. Running in separate worktrees does not itself prevent mistakes, conflicts, or unauthorized actions."
       ],
       "capabilitiesTitle": "Coordinate Independent Attempts and Review Their Results",
-      "capabilitiesIntro": "Keep task ownership and acceptance criteria visible while agents work in parallel.",
+      "capabilitiesIntro": "Orca separates file isolation, review before integration, and observation across environments. Compare those responsibilities when coordinating agents, with clear task ownership and shared checks so parallel execution does not obscure who decides which changes enter the final result.",
       "capabilities": [
         {
           "title": "Isolate file changes by task",
@@ -2830,8 +2830,8 @@
         }
       ],
       "useCases": {
-        "title": "Compare, review, and parallelize changes in isolated branches",
-        "description": "Agree on acceptance, fixed handoff revisions, and shared interfaces before allocating worktrees and integrating results.",
+        "title": "Use Cases for Orca",
+        "description": "Competing implementations, independent review, and parallel repository edits need comparable baselines. Explore Orca's coordination patterns through fixed revisions, isolated worktrees, and shared acceptance checks, with ownership and final integration decisions defined before work begins.",
         "items": [
           {
             "title": "Compare two implementation approaches",
@@ -2875,7 +2875,7 @@
       ],
       "prerequisites": {
         "title": "Prepare Orca engines and remote access",
-        "description": "Check engine authentication and execution permissions before coordinating parallel work.",
+        "description": "Each agent engine needs its own installation, authentication, and execution policy checked. Review remote or companion access separately from worktree isolation: independent file branches do not provide provider subscriptions or a security boundary for the processes running within them.",
         "items": [
           {
             "title": "Confirm each agent’s setup",
@@ -2889,7 +2889,7 @@
       },
       "howTo": {
         "title": "Integrate one reviewed Orca result",
-        "description": "Bring an accepted Agent change into the combined revision and verify it before making a separate merge decision.",
+        "description": "Parallel changes need more than individual agent completion before they can be combined. Review the proposed revisions, test the accepted set together, and make a separate merge decision so integration evidence reflects the actual version that would enter the repository.",
         "items": [
           {
             "title": "Integrate one reviewed result",
@@ -2914,7 +2914,7 @@
         "在 Floatboat 中设计工作流时，可以借鉴有边界的任务分派、修改隔离与结果比较。并行 Agent 仍需共同的任务约定和明确的集成负责人；仅使用不同 worktree，并不能自动避免错误、冲突或越权操作。"
       ],
       "capabilitiesTitle": "组织独立尝试，再审阅结果",
-      "capabilitiesIntro": "Agent 并行执行时，仍要明确每项任务由谁负责，以及怎样算完成。",
+      "capabilitiesIntro": "文件隔离、工作观察和集成前审阅，分别回答 Orca 协作中的不同问题。任务由谁负责、结果按什么标准检查以及最终是否接受变更，都需要在并行执行之外保持明确。",
       "capabilities": [
         {
           "title": "按任务隔离文件修改",
@@ -2930,8 +2930,8 @@
         }
       ],
       "useCases": {
-        "title": "在隔离分支中比较、审查与并行修改",
-        "description": "先约定共同验收、固定交接版本与共享接口，再决定怎样分配工作树和集成结果。",
+        "title": "Orca的使用场景",
+        "description": "独立方案需要相同测试才可比较，单独审阅需要固定版本，并行修改还要有集成负责人。Orca 的协调方式可供借鉴，让工作区、共同检查和最终接受决定保持对应。",
         "items": [
           {
             "title": "比较两种实现方案",
@@ -2975,7 +2975,7 @@
       ],
       "prerequisites": {
         "title": "准备 Orca 引擎与远程访问",
-        "description": "协调并行工作前，先核对引擎认证及执行权限。",
+        "description": "每个 Agent 引擎都需要核对安装、认证与执行策略。以下条件将远程或伴随连接与工作区隔离分开；独立文件分支不提供服务订阅，也不构成进程运行的安全边界。",
         "items": [
           {
             "title": "确认每个 Agent 的运行条件",
@@ -2989,7 +2989,7 @@
       },
       "howTo": {
         "title": "整合一项审阅后的 Orca 结果",
-        "description": "将认可的 Agent 变更放入整合版本验证，再单独作出合并决定。",
+        "description": "各 Agent 分别完成，并不能证明组合后的代码仍然正确。先审阅拟议版本，再将已认可修改放入同一集成版本测试，最后单独决定合并，使证据对应实际进入仓库的结果。",
         "items": [
           {
             "title": "集成经过审阅的结果",

@@ -43,7 +43,7 @@
   },
   "burdens": {
     "title": "Creating is more than generating a draft",
-    "description": "A creator must protect the original idea while researching, shaping, revising, packaging, and adapting it for different audiences.",
+    "description": "Long-form drafts, channel adaptations, and release packages reuse different parts of a creative project. These workflows preserve source material and editorial choices as the work changes form, so an approved idea can progress toward delivery without losing its original intent.",
     "items": [
       {
         "label": "Sources",
@@ -69,7 +69,7 @@
   },
   "buildingBlocks": {
     "title": "What your creator Work Agent can prepare",
-    "description": "The agent uses a persistent workspace to keep sources, editorial choices, drafts, and release assets connected.",
+    "description": "Creative work changes form as sources become drafts, revisions, and release assets. These capabilities keep the material and editorial choices in one persistent project, helping an agent contribute to production while the creator retains direction and important publication decisions.",
     "items": [
       {
         "action": "Read",

@@ -35,7 +35,7 @@
   },
   "features": {
     "title": "A Work Agent owns the task between brief and delivery.",
-    "description": "Coworker is the task-facing role inside Floatboat—not the workspace itself and not an open-ended chat companion.",
+    "description": "Coworker is a task-focused agent role inside Floatboat, with work defined by supplied context and a concrete outcome. Explore how delegation, execution, and review connect without treating the role as an unlimited replacement for a person's judgment.",
     "items": [
       {
         "label": "Brief",
@@ -55,8 +55,8 @@
     ]
   },
   "useCases": {
-    "title": "Delegate work with a clear finish line",
-    "description": "Provide material, an objective, and acceptance criteria, then review the complete result while retaining final judgment.",
+    "title": "Use Cases for Coworker",
+    "description": "Research briefs, source-based drafts, and recurring assignments need clear boundaries before delegation. These examples connect supplied material with an inspectable result, including the evidence and decisions that still belong with the reviewer.",
     "items": [
       {
         "title": "Delegate the next concrete outcome",
@@ -149,7 +149,7 @@
   },
   "howTo": {
     "title": "Delegate a bounded task to Coworker",
-    "description": "Define what success looks like and which actions need approval before the Agent starts working.",
+    "description": "Delegation works better when the expected result, available material, and approval boundaries are agreed first. Follow the task from that brief through execution and review, with consequential actions left for the person authorized to decide them.",
     "items": [
       {
         "title": "Specify the deliverable",

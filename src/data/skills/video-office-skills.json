@@ -84,18 +84,18 @@
         "zh": "如何使用 HyperFrames Skill"
       },
       "howDescription": {
-        "en": "Install the four core Skills and prepare the project’s tool environment before creating or editing a video. Give the agent a concrete brief, use the appropriate CLI checks and frame snapshots while iterating, and render a file when the requested delivery calls for it.",
-        "zh": "先安装四项核心 Skills，并准备项目工具环境，再开始制作或编辑视频。向 Agent 提供具体需求，迭代时结合对应 CLI 检查、画面快照和预览确认结果；需要文件交付时再渲染，并检查导出内容。"
+        "en": "HyperFrames work depends on the required Skills and project tools being ready. Follow the creation or editing task through CLI checks, frame snapshots, and previews, then render only when needed and inspect the exported file before delivery.",
+        "zh": "视频制作需要同时观察时间线和真实画面。准备所需 Skills 与项目工具后，结合 CLI 检查、帧快照和预览迭代；只有需要文件交付时才渲染，并再次核对导出内容。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Create, revise, and reuse video scenes",
-        "zh": "制作、修改与复用视频场景"
+        "en": "Use Cases for HyperFrames Skill",
+        "zh": "HyperFrames Skill的使用场景"
       },
       "description": {
-        "en": "Check source assets, timelines, and exports separately; reproducibility does not mean every variant is already accepted.",
-        "zh": "真实素材、时间轴和导出文件分别核对；可重复生成不等于每个版本都已验收。"
+        "en": "Product videos, timeline edits, and repeatable variants rely on different media evidence. Explore how HyperFrames uses supplied assets, frame snapshots, and representative exports to check scene order and revisions before a video is delivered.",
+        "zh": "产品视频、时间线修改和重复版本制作依赖不同媒体证据。了解 HyperFrames 如何结合已有素材、帧快照与代表性导出，核对场景顺序和修改效果，再交付视频文件。"
       },
       "items": [
         {

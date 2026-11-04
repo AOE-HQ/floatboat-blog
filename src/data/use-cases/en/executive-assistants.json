@@ -44,7 +44,7 @@
   },
   "burdens": {
     "title": "Keep discretion and relationships human. Delegate the context assembly.",
-    "description": "Executive support depends on recovering the right context at the right moment—without turning every meeting, decision, and follow-up into another manual chase.",
+    "description": "Meeting preparation, accountable follow-up, and weekly executive summaries need the right context at different times. These workflows connect approved calendars and material with pending decisions, while recipients, commitments, and final wording remain under the assistant's control.",
     "items": [
       {
         "label": "Context",
@@ -70,7 +70,7 @@
   },
   "buildingBlocks": {
     "title": "Turn scattered leadership context into timely, review-ready support.",
-    "description": "The Work Agent uses its workspace to connect approved calendars, files, decisions, and actions while the assistant controls access, recipients, commitments, and final wording.",
+    "description": "Executive support connects approved calendars, files, decisions, and follow-up actions across one workspace. These capabilities help prepare and revise that material, while the assistant controls access, intended recipients, commitments, and the wording that ultimately leaves the project.",
     "items": [
       {
         "action": "Read",

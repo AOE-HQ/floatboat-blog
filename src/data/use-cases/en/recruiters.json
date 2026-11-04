@@ -44,7 +44,7 @@
   },
   "burdens": {
     "title": "Keep hiring judgment with people. Give the preparation work to an agent.",
-    "description": "Hiring slows down when the role, evidence, interview criteria, and candidate communication are rebuilt by different people at every stage.",
+    "description": "Role intake, candidate evidence packets, and interview coordination need consistent criteria across handoffs. These workflows keep source evidence and communication tied to the hiring brief, while the recruiting team retains responsibility for assessment, contact decisions, and consequential employment choices.",
     "items": [
       {
         "label": "Context",
@@ -70,7 +70,7 @@
   },
   "buildingBlocks": {
     "title": "Move from approved hiring inputs to review-ready materials.",
-    "description": "The Work Agent uses the workspace to keep role criteria, candidate evidence, interview notes, and deliverables connected while your team controls every consequential decision.",
+    "description": "Recruiting preparation needs role criteria, candidate evidence, and interview notes to remain connected across stages. These capabilities support organizing and revising the resulting work packets, while the team controls access, communications, and every consequential decision affecting a candidate.",
     "items": [
       {
         "action": "Read",

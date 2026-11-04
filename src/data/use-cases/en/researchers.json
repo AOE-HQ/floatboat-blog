@@ -45,7 +45,7 @@
   },
   "burdens": {
     "title": "researchers and insight teams should not spend their best hours rebuilding context.",
-    "description": "Research quality erodes when collection outpaces classification, notes lose their sources, and conflicting findings are flattened into a convenient summary.",
+    "description": "Literature reviews, evidence matrices, and recurring topic monitoring each organize a corpus differently. These workflows preserve source relationships, inclusion rules, and contradictory findings so researchers can inspect the material without delegating evidentiary weight or interpretation to the agent.",
     "items": [
       {
         "label": "Context",
@@ -71,7 +71,7 @@
   },
   "buildingBlocks": {
     "title": "Assign the source work around research judgment.",
-    "description": "The Work Agent follows your corpus, extraction schema, inclusion rules, and checks; it does not decide evidentiary weight or interpretation.",
+    "description": "Research assistance depends on the corpus, extraction schema, inclusion rules, and checks chosen by the researcher. These workspace capabilities support evidence organization and draft preparation while preserving sources and disagreements, leaving interpretation and the weight of evidence to the responsible researcher.",
     "items": [
       {
         "action": "Read",

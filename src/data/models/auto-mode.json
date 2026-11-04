@@ -101,8 +101,8 @@
       "zh": "不同任务，需要不同能力。"
     },
     "description": {
-      "en": "Auto Mode selects a route by what the request actually demands—not by one permanent favorite.",
-      "zh": "Auto Mode 根据请求的实际需求选择路径，而不是永远使用同一个偏好模型。"
+      "en": "Reasoning depth, context length, media input, and response speed can point to different execution routes. This overview explains the task demands considered by Auto Mode rather than presenting routing as a preference for one permanent model.",
+      "zh": "推理深度、上下文长度、媒体输入和响应速度，可能对应不同执行路径。以下说明 Auto Mode 判断任务需求时关注的方向，帮助理解自动选择，而不是将路由视为固定偏好某个模型。"
     },
     "items": [
       {
@@ -173,12 +173,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "在连续项目中处理不同类型的请求",
-      "en": "Handle changing requests within one continuous project"
+      "zh": "Auto / Lite Mode的使用场景",
+      "en": "Use Cases for Auto / Lite Mode"
     },
     "description": {
-      "zh": "研究、实现与日常修改对模型的要求不同；自动路径仍需要围绕同一交付目标检查结果。",
-      "en": "Research, implementation, and routine edits make different model demands; automatic routing still needs verification against the same deliverable."
+      "zh": "任务从研究转向实施时，对执行路径的要求也会改变。自动模式需要维持项目连续性，入口中断后的回退结果同样应按原要求复核，清楚标明哪些步骤能够继续、哪些仍然受阻。",
+      "en": "Research, implementation, and daily edits place different demands on an execution route. These scenarios examine continuity across changing requests and interruptions, with results checked against the same project constraints after a route changes."
     },
     "items": [
       {
@@ -219,8 +219,8 @@
       "zh": "接管那些原本会打断工作的模型决策。"
     },
     "description": {
-      "en": "Auto changes the route, not the project the user is working in.",
-      "zh": "畅用模式改变的是执行路径，不是用户正在处理的项目。"
+      "en": "Automatic routing should adapt execution without replacing the project being worked on. Examine how task complexity, retained context, input modality, and fallback affect model selection while the original material and expected outcome remain the reference for review.",
+      "zh": "执行路径可以随复杂度、上下文或输入类型改变，项目背景不应因此断开。自动选择与回退需要继续对应原始资料和预期交付，路由变化后的结果也仍要接受同一任务要求的检查。"
     },
     "items": [
       {

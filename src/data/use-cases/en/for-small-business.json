@@ -43,7 +43,7 @@
   },
   "burdens": {
     "title": "Small teams lose time at every handoff",
-    "description": "Customer, operations, finance, and scheduling systems each hold part of the truth, while staff still reconstruct the complete job by hand.",
+    "description": "Customer requests, operational handoffs, and weekly owner reviews draw information from different business records. These workflows assemble an actionable work packet while retaining the original systems of record, with gaps and consequential decisions left visible to the people responsible.",
     "items": [
       {
         "label": "Intake",
@@ -69,7 +69,7 @@
   },
   "buildingBlocks": {
     "title": "What your small-business Work Agent can prepare",
-    "description": "The agent works across approved files in its workspace without replacing your systems of record.",
+    "description": "Small-business work often spans approved files from several existing systems. These capabilities organize preparation and handoffs inside the workspace without replacing the original records, keeping people responsible for permissions, operational changes, and the final decision to act.",
     "items": [
       {
         "action": "Read",

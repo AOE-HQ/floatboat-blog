@@ -62,7 +62,7 @@
       "about": "Vercel Labs is Vercel's public GitHub organization for experiments and developer tools. Its repositories include agent automation, generative UI, and open Skill tooling—not just instruction files.",
       "projectsTitle": "Vercel Labs Open-Source Projects",
       "skillsTitle": "Selected Vercel Labs Skills",
-      "skillsIntro": "Explore Vercel Labs Agent Skills for coding, interface design, performance reviews, and deployment. Understand the task each instruction supports, how to use it, and where to check its original source and tool requirements.",
+      "skillsIntro": "Vercel Labs Skills address coding, interface design, performance review, and deployment as separate tasks. Compare their purposes and prerequisites, then use each guide to inspect the original instructions and tools required by your project.",
       "faq": [
         {
           "question": "What does Vercel Labs publish?",
@@ -99,7 +99,7 @@
           "The official Labs website separates projects by development stage. This distinction helps you decide whether a repository fits an experiment or a workflow you intend to rely on. Check the individual project’s documentation and current status before adopting it; this page presents selected projects rather than the full organization catalog."
         ]
       },
-      "projectsIntro": "Explore Vercel Labs browser automation tools, generative UI frameworks, and open Skills tooling. Compare their purposes and workflows, then visit the repositories for documentation, setup instructions, and current development updates.",
+      "projectsIntro": "Browser automation, generated interfaces, and the open Skills toolchain are different parts of Vercel Labs' work. Explore the representative projects by purpose and software role, with installation details and maintenance information kept at their original repositories.",
       "relatedTitle": "More Open-Source Publishers",
       "relatedDescription": "Discover other teams and creators publishing developer tools, open-source projects, and Agent Skills. Explore their areas of focus, representative work, and technical approaches to find resources suited to your next task.",
       "faqTitle": "Vercel Labs FAQ",
@@ -117,7 +117,7 @@
       "about": "Vercel Labs 是 Vercel 用于公开实验和开发者工具的 GitHub 组织。它发布 Agent 自动化、生成式界面和开放 Skill 工具等项目，而不只是指令文件。",
       "projectsTitle": "Vercel Labs 开源项目",
       "skillsTitle": "Vercel Labs 精选 Skills",
-      "skillsIntro": "探索 Vercel Labs 面向编码、界面设计、性能审查与部署的 Agent Skills，了解每项指引要解决的问题、适用的任务和使用方式，并通过具体指南查阅原始来源与相关工具要求。",
+      "skillsIntro": "Vercel Labs 的 Skills 分别处理编码、界面设计、性能审阅和部署。以下指南说明各自用途与前提，并提供原始指引及工具要求，便于根据当前项目选择。",
       "faq": [
         {
           "question": "Vercel Labs 主要发布什么？",
@@ -154,7 +154,7 @@
           "官网还按开发阶段区分项目，帮助使用者判断某个项目适合尝鲜，还是适合纳入持续工作的流程。选用前应阅读具体仓库的说明、依赖与当前维护状态。本页展示的是部分代表项目和相关 Skills，不是 Vercel Labs 全部仓库的镜像。"
         ]
       },
-      "projectsIntro": "探索 Vercel Labs 的浏览器自动化工具、生成式界面框架与开放 Skills 工具链，了解各个项目的主要用途、适用场景和技术定位，并前往代码仓库查看文档、安装说明与更新记录。",
+      "projectsIntro": "浏览器自动化、生成式界面和开放 Skills 工具链，是 Vercel Labs 不同的软件方向。以下代表项目按用途与职责介绍，安装细节及维护状态则以各自原始仓库为准。",
       "relatedTitle": "其他开源项目发布者",
       "relatedDescription": "发现更多开发者工具、开源项目与 Agent Skills 的发布者，了解不同团队和创作者的关注领域、代表作品与技术方向，从具体任务出发，继续探索适合自己的工具和实践方法。",
       "faqTitle": "Vercel Labs 常见问题",
@@ -250,7 +250,7 @@
       "about": "morluto is an independent builder and researcher working on agents, software analysis, and performance. REA is a larger tool project; its reverse-engineering Skill is one part of that work.",
       "projectsTitle": "morluto Software Projects",
       "skillsTitle": "Selected Skills by morluto",
-      "skillsIntro": "Choose between instructions for investigating shipped software and creating a repository social preview. Each entry addresses a distinct task; read its original SKILL.md for the workflow, required tools, and inputs before deciding how it fits the work.",
+      "skillsIntro": "Morluto's instructions cover released-software investigation and repository preview artwork. Compare those task boundaries before choosing a guide, and keep the required source material and tools distinct from the executable projects the instructions may help you use.",
       "faq": [
         {
           "question": "What connects morluto’s public projects?",
@@ -287,7 +287,7 @@
           "The published Skills support narrower workflows within that wider body of work. Reverse Engineer Anything provides instructions associated with REA, while Generate Social Preview turns a project’s purpose and visual references into a sharing image. Choosing an instruction is separate from installing the supporting tool or checking the results it produces."
         ]
       },
-      "projectsIntro": "REA and flameox are software projects with different engineering goals: investigating application behavior and finding performance costs. Follow their repositories for current setup and implementation details, rather than treating a companion Skill as the tool itself or assuming shared prerequisites.",
+      "projectsIntro": "REA and flameox pursue different engineering goals: understanding application behavior and locating performance overhead. Compare their roles with the task at hand, then consult each repository for installation and current requirements rather than treating a companion Skill as the software itself.",
       "relatedTitle": "More Creators Building Agent Tools",
       "relatedDescription": "Explore other people and teams working on agent instructions, developer tools, and interface workflows. Compare the purpose of each project and the evidence behind its guidance, then open the relevant publisher profile to understand the source of the work.",
       "faqTitle": "Questions About morluto’s Work",
@@ -305,7 +305,7 @@
       "about": "morluto 是研究 Agent、软件分析与性能问题的独立开发者。REA 是完整的工具项目，逆向工程 Skill 只是其中的一部分。",
       "projectsTitle": "morluto 的软件项目",
       "skillsTitle": "morluto 精选 Skills",
-      "skillsIntro": "这两项指令分别面向已发布软件调查和仓库分享预览图制作，服务于不同任务。可先按目标选择入口，再阅读原始 SKILL.md 中的工作步骤、工具依赖和输入要求，确认它是否适合当前工作。",
+      "skillsIntro": "Morluto 的指引分别面向已发布软件调查和仓库预览图制作。以下条目说明两类任务的边界及材料要求，并将操作指令与它们可能配合使用的可执行项目区分。",
       "faq": [
         {
           "question": "morluto 的公开项目主要围绕什么？",
@@ -342,7 +342,7 @@
           "他发布的 Skills 为这些工作中的具体步骤提供指引。Reverse Engineer Anything 是与 REA 相关的逆向工程指令；Generate Social Preview 则根据项目用途和视觉素材制作分享预览图。选择一份指令，并不等于配套工具已经安装，也不等于运行结果已经得到验证。"
         ]
       },
-      "projectsIntro": "REA 与 flameox 是工程目标不同的软件项目，分别关注应用行为调查与性能开销定位。安装配置、实现细节和当前变化以各自仓库为准，不能把配套 Skill 当作工具本身，也不应假定两者具有相同的使用前提。",
+      "projectsIntro": "REA 与 flameox 分别关注应用行为调查和性能开销定位。以下项目说明不同工程职责；安装及当前要求需回到各自仓库核对，配套 Skill 不能代替软件本身。",
       "relatedTitle": "更多 Agent 工具创作者",
       "relatedDescription": "继续了解发布 Agent 指令、开发工具和界面工作流的个人与团队。先比较项目要解决的问题和指引依据，再进入对应发布者介绍，查看作品背景与原始来源，避免只根据一个名称判断用途或归属。",
       "faqTitle": "关于 morluto 作品的常见问题",
@@ -427,7 +427,7 @@
       "about": "Anthropic develops Claude and publishes developer-facing tools, examples, and instruction libraries. Its public Skills repository is one part of that broader ecosystem.",
       "projectsTitle": "Anthropic Developer Projects",
       "skillsTitle": "Selected Anthropic Skills",
-      "skillsIntro": "Explore reusable instructions from Anthropic’s public Skills repository for interface design, document processing, Skill authoring, and web testing. Compare each workflow’s purpose, expected inputs, and supporting tools to choose the method that fits your task.",
+      "skillsIntro": "Anthropic's published Skills organize methods for defined agent tasks, including interface and document work. Compare the intended deliverable and source instructions, with input material, tool dependencies, and execution requirements checked before adopting a guide in your workflow.",
       "faq": [
         {
           "question": "What kinds of resources does Anthropic publish here?",
@@ -464,7 +464,7 @@
           "Choose among those resources according to the work you need to do. A repository task calls for understanding the coding environment and its permissions; an application experiment benefits from a focused Cookbook recipe; a repeatable agent task may benefit from a Skill. Review the original documentation, dependencies, and licensing for the specific resource rather than assuming every Anthropic repository has the same purpose or usage conditions."
         ]
       },
-      "projectsIntro": "Claude Code and Claude Cookbooks address different development needs: doing work in a repository and learning techniques through examples. Review the project that matches your goal, then check its documentation and setup requirements before adopting it.",
+      "projectsIntro": "Claude Code and Claude Cookbooks serve different needs: repository execution and learning application patterns. Explore the tool and examples separately, keeping their setup requirements distinct from the reusable task instructions published in Anthropic's Skills repository.",
       "relatedTitle": "Explore Other Developer Publishers",
       "relatedDescription": "Discover other teams and creators publishing developer tools, practical examples, and Agent Skills. Compare their areas of focus and representative projects to find resources that match the kind of work you want to complete.",
       "faqTitle": "Questions About Anthropic’s Developer Ecosystem",
@@ -482,7 +482,7 @@
       "about": "Anthropic 开发 Claude，并公开面向开发者的工具、示例与指令库。公开 Skills 仓库只是其生态的一部分。",
       "projectsTitle": "Anthropic 开发者项目",
       "skillsTitle": "Anthropic 精选 Skills",
-      "skillsIntro": "这些 Skills 来自 Anthropic 公开指令仓库，围绕明确的 Agent 任务组织方法。可从用途出发选择条目，再进入原始文件核对执行步骤、输入材料、工具依赖与使用要求，判断是否适合当前工作。",
+      "skillsIntro": "Anthropic 公开的 Skills 围绕界面和文档等明确任务组织方法。以下指引按交付用途区分，并保留源文件入口，方便核对输入材料、工具依赖与执行要求。",
       "faq": [
         {
           "question": "这里收录的 Anthropic 资源有哪些类型？",
@@ -519,7 +519,7 @@
           "选择入口时，应先确定要完成的工作。代码库任务需要理解编程环境和权限，应用实验适合从具体 Cookbook 示例切入，重复的 Agent 任务则可以评估对应 Skill。采用任何资源前，都应检查原始文档、依赖和许可证，而不是假定同一组织发布的所有仓库都具有相同用途、使用条件或成熟程度。"
         ]
       },
-      "projectsIntro": "Claude Code 与 Claude Cookbooks 分别面向代码库执行和应用方法学习。先按目标选择工具或示例，再核对项目文档、环境和配置要求，避免把可执行工具、示例代码与 Skills 当作同一种资源。",
+      "projectsIntro": "Claude Code 与 Claude Cookbooks 分别服务代码库执行和应用学习。以下项目区分工具与示例，软件配置也不等同于 Anthropic Skills 中的任务指引。",
       "relatedTitle": "探索其他开发者工具发布者",
       "relatedDescription": "继续了解发布开发者工具、应用示例和 Agent Skills 的团队与创作者，比较各自关注领域与代表作品。从实际要完成的任务出发寻找资源，而不是仅凭项目名称、热度或同属一个技术生态作判断。",
       "faqTitle": "Anthropic 开发者生态常见问题",
@@ -597,7 +597,7 @@
       "about": "HeyGen develops AI video products and publishes tools around video creation. Its public repositories include the HyperFrames renderer, a video API CLI, and related Agent Skills.",
       "projectsTitle": "HeyGen Video Projects",
       "skillsTitle": "Selected HeyGen Skills",
-      "skillsIntro": "Explore instructions for HeyGen-related media, presentation, and video workflows. Read the task scope and required tools before starting, then use the original Skill file to understand how source assets, commands, and output checks fit together.",
+      "skillsIntro": "HeyGen-related Skills guide media, presentation, and video work at different production stages. Compare the required assets and tools with your current task, then inspect the original workflow for command use and output checks instead of choosing by name alone.",
       "faq": [
         {
           "question": "What is the difference between HyperFrames and HeyGen CLI?",
@@ -634,7 +634,7 @@
           "For a production workflow, start by deciding what you need to generate and what you need to compose. Script, source assets, scene timing, and output requirements help determine whether a hosted video request or an HTML-based rendering project is the better starting point. Keep installation instructions and account requirements tied to the chosen tool, then review the resulting video for message, timing, and visual consistency."
         ]
       },
-      "projectsIntro": "HyperFrames and HeyGen CLI offer different ways to produce video: composing and rendering HTML-based scenes, or calling the hosted video generation API. Compare the workflow and required setup before choosing a tool for your production task.",
+      "projectsIntro": "HyperFrames provides an HTML scene-rendering route, while HeyGen CLI exposes video API operations. Compare scene composition with service requests and results, including the environment and account conditions each project needs for the production workflow you intend to build.",
       "relatedTitle": "Explore Other Creative and Developer Publishers",
       "relatedDescription": "Explore teams and creators working on adjacent tools, interfaces, and Agent Skills. Compare their projects with your content workflow to find a useful complement, whether the next task involves creating assets, building an interface, or automating production steps.",
       "faqTitle": "Questions About HeyGen’s Video Tools",
@@ -652,7 +652,7 @@
       "about": "HeyGen 开发 AI 视频产品，并公开与视频制作有关的工具。其仓库包括 HyperFrames 渲染器、视频 API CLI 和相关 Agent Skills。",
       "projectsTitle": "HeyGen 视频项目",
       "skillsTitle": "HeyGen 精选 Skills",
-      "skillsIntro": "这些 Skills 围绕 HeyGen 相关的媒体、演示与视频工作流组织指引。先确认任务范围和所需工具，再进入原始文件查看素材准备、命令使用与输出检查，判断能否接入现有制作流程，而不是只按名称选择。",
+      "skillsIntro": "HeyGen 相关 Skills 面向媒体、演示和视频制作的不同阶段。以下条目按所需素材、工具与任务范围区分，并通过原始流程说明命令使用及输出检查，避免只凭名称选用。",
       "faq": [
         {
           "question": "HyperFrames 与 HeyGen CLI 有何区别？",
@@ -689,7 +689,7 @@
           "规划制作流程时，应先区分需要生成什么、需要编排什么。脚本、源素材、镜头时序与输出要求，会影响托管视频请求或 HTML 渲染项目哪一种更适合作为起点。安装说明和账号要求应跟随所选工具核对，最终再从信息表达、时间安排和视觉一致性审阅成片，而不是只判断请求是否成功。"
         ]
       },
-      "projectsIntro": "HyperFrames 与 HeyGen CLI 分别提供 HTML 场景渲染和视频 API 调用入口。选择前比较素材、制作方式、运行环境与账号要求，明确希望控制的是画面编排，还是生成服务的请求与结果。",
+      "projectsIntro": "HyperFrames 提供 HTML 场景渲染，HeyGen CLI 连接视频 API。以下项目区分画面编排与服务请求，并说明选择时需要核对的环境、素材和账号条件。",
       "relatedTitle": "探索其他创意与开发工具发布者",
       "relatedDescription": "了解在工具、界面与 Agent Skills 等相邻方向创作的团队和个人，比较其项目能否补充当前内容流程。无论下一步是准备素材、构建界面，还是自动执行制作步骤，都应围绕实际任务选择合适的资源。",
       "faqTitle": "HeyGen 视频工具常见问题",
@@ -767,7 +767,7 @@
       "about": "Matt Pocock is a TypeScript educator and developer. Alongside his engineering Skills, he publishes tools and libraries for working with TypeScript and coding agents.",
       "projectsTitle": "Matt Pocock’s Tools and Libraries",
       "skillsTitle": "Matt Pocock’s Engineering Skills",
-      "skillsIntro": "Explore instructions for questioning a proposed approach, working test first, and diagnosing bugs. Each Skill targets a different engineering decision, so choose the task before selecting the instruction and review the original source for its expected context.",
+      "skillsIntro": "Matt Pocock's Skills address design questions, test-first work, diagnosis, and related engineering decisions. Compare the specific problem each guide handles and the code or unresolved choices it needs; no individual instruction should be mistaken for an entire development process.",
       "faq": [
         {
           "question": "What does Matt Pocock’s work cover beyond Skills?",
@@ -804,7 +804,7 @@
           "His public projects also include Sandcastle, a TypeScript interface for orchestrating sandboxed coding agents, and ts-reset, which adjusts types for common JavaScript APIs. These repositories solve implementation problems; the Skills serve as instructions. Knowing which kind of resource is needed helps separate installing software from choosing a way to work."
         ]
       },
-      "projectsIntro": "Sandcastle and ts-reset address different layers of development: running coding agents in sandboxes and improving JavaScript API types. Open the relevant repository to understand its role, setup, and constraints before combining it with an engineering workflow.",
+      "projectsIntro": "Sandcastle and ts-reset operate at different development layers: isolated agent execution and JavaScript API typing. Explore their responsibilities separately, then check the repository requirements and limits before deciding how either project fits the engineering environment you already use.",
       "relatedTitle": "Explore Other Developer Creators",
       "relatedDescription": "Compare other creators working on developer tools, interfaces, and Agent Skills. Following the author helps connect individual resources to the problems they investigate, rather than treating every repository or instruction as an interchangeable tool.",
       "faqTitle": "Questions About Matt Pocock’s Work",
@@ -822,7 +822,7 @@
       "about": "Matt Pocock 是 TypeScript 教育者和开发者。除工程 Skills 外，他还发布 TypeScript 与编程 Agent 相关的工具和库。",
       "projectsTitle": "Matt Pocock 的工具与代码库",
       "skillsTitle": "Matt Pocock 的工程 Skills",
-      "skillsIntro": "这些指令分别用于追问方案、测试先行和故障诊断，关注的工程决策并不相同。先明确正在解决的任务，再阅读对应原文，确认需要哪些代码、约束和未决问题，避免把任何一条 Skill 当成完整开发流程。",
+      "skillsIntro": "Matt Pocock 的 Skills 分别处理方案追问、测试先行、诊断等工程问题。以下指引说明任务所需代码和未决选择，帮助按具体缺口选用，而非把单项指令当作完整开发流程。",
       "faq": [
         {
           "question": "Matt Pocock 除了 Skills 还发布哪些作品？",
@@ -859,7 +859,7 @@
           "他的开源项目还包括 Sandcastle 和 ts-reset：前者通过 TypeScript 编排隔离环境中的编程 Agent，后者调整常见 JavaScript API 的类型定义。它们是解决实现问题的软件，而 Skills 是工作指令；理解两者的角色，才能判断当前需要安装工具，还是选择更合适的工作方法。"
         ]
       },
-      "projectsIntro": "Sandcastle 与 ts-reset 分别处理隔离环境中的 Agent 运行和 JavaScript API 类型问题，属于不同开发层次。进入项目仓库核对用途、配置与限制，再判断怎样将工具接入自己的工程流程。",
+      "projectsIntro": "Sandcastle 与 ts-reset 分别涉及隔离的 Agent 执行和 JavaScript API 类型。以下项目区分开发层次，配置与限制需结合原始文档核对。",
       "relatedTitle": "探索其他开发者与创作者",
       "relatedDescription": "继续了解开发工具、界面工程和 Agent Skills 领域的其他创作者。从作者的关注问题出发比较作品，能更好地区分软件、方法与教学资源，而不是把所有仓库都当成可以互换的工具。",
       "faqTitle": "关于 Matt Pocock 作品的常见问题",
@@ -1114,7 +1114,7 @@
       "about": "Corey Haines works in growth marketing and design. He runs Conversion Factory, writes SwipeFiles, and publishes Marketing Skills for agents. Those are related efforts, not one software product.",
       "projectsTitle": "Corey Haines’s Marketing Projects",
       "skillsTitle": "Corey Haines’s Marketing Skills",
-      "skillsIntro": "Explore instructions for SEO diagnosis, page copy, and content planning. Start with an actual audience, offer, source material, and desired outcome; the three Skills address different marketing decisions and should not be treated as one interchangeable prompt.",
+      "skillsIntro": "SEO diagnosis, page copy, and content planning support different marketing decisions. These Skills work from real audiences, product offers, and source material, helping you choose a method for the current question instead of treating the guides as interchangeable prompts.",
       "faq": [
         {
           "question": "How do Conversion Factory, SwipeFiles, and Marketing Skills relate?",
@@ -1151,7 +1151,7 @@
           "His public Marketing Skills turn selected marketing jobs into instructions for agents, including SEO analysis, page copy, and content planning. They are useful to examine alongside the underlying business context: the audience, offer, evidence, and intended result still shape the work, rather than being supplied automatically by a reusable instruction."
         ]
       },
-      "projectsIntro": "Conversion Factory and SwipeFiles represent different parts of Corey’s work: client services and marketing publishing. Explore the original destination for the relevant service or learning resource; these projects are not presented as downloadable open-source software.",
+      "projectsIntro": "Conversion Factory and SwipeFiles present client services and marketing-content practice rather than downloadable development tools. Explore the original destinations according to whether you need services or learning material, keeping those offerings distinct from the separate Skills collection.",
       "relatedTitle": "Explore Other Creators and Their Work",
       "relatedDescription": "Discover other people and teams publishing projects and reusable instructions. Compare the work they actually do, the audience they serve, and the sources they maintain before choosing a resource for your own marketing or product assignment.",
       "faqTitle": "Questions About Corey Haines’s Work",
@@ -1169,7 +1169,7 @@
       "about": "Corey Haines 从事增长营销与设计，经营 Conversion Factory，撰写 SwipeFiles，并发布面向 Agent 的 Marketing Skills。它们互有关联，但不是同一个软件产品。",
       "projectsTitle": "Corey Haines 的营销项目",
       "skillsTitle": "Corey Haines 的营销 Skills",
-      "skillsIntro": "这些指令分别处理 SEO 诊断、页面文案和内容规划，服务于不同营销判断。使用前准备真实受众、产品方案、源材料和预期结果，再选择对应方法，而不是把三个 Skill 当成可随意替换的提示词。",
+      "skillsIntro": "SEO 诊断、页面文案和内容规划服务不同营销决定。以下 Skills 结合真实受众、产品方案和源材料说明各自用途，便于按当前问题选择方法，而不是将指引随意互换。",
       "faq": [
         {
           "question": "Conversion Factory、SwipeFiles 与 Marketing Skills 有什么关系？",
@@ -1206,7 +1206,7 @@
           "他公开的 Marketing Skills 把部分营销工作整理为 Agent 可使用的指令，包括 SEO 分析、页面文案和内容规划。它们可以作为方法资源，但不能自动补齐业务背景。具体受众、产品方案、事实证据与预期结果，仍应来自正在处理的真实任务。"
         ]
       },
-      "projectsIntro": "Conversion Factory 与 SwipeFiles 分别展示客户服务和营销内容实践，承接的需求不同。根据你需要的服务或学习资料访问原始项目；这里不把营销机构、内容通讯描述成可以下载的开源软件。",
+      "projectsIntro": "Conversion Factory 与 SwipeFiles 分别展示客户服务和营销内容实践。以下入口按服务与学习资料区分，营销机构和内容通讯不是可下载的开源软件。",
       "relatedTitle": "探索其他创作者与他们的作品",
       "relatedDescription": "继续了解发布项目和可复用指令的其他个人与团队。比较他们实际从事的工作、服务的受众与持续维护的来源，再判断哪些资源适合自己的营销或产品任务，而不是只比较标签。",
       "faqTitle": "关于 Corey Haines 作品的常见问题",
@@ -1284,7 +1284,7 @@
       "about": "Julius Brussee builds agent-oriented compression tools and the Caveman Skills. His public work also includes Revu, a local-first study app outside the Agent Skill category.",
       "projectsTitle": "Julius Brussee Software Projects",
       "skillsTitle": "Selected Skills by Julius Brussee",
-      "skillsIntro": "These instructions address concise responses, software investigation, and refactoring. Select the one that matches the task, then inspect its original workflow and expected inputs. They are reusable guidance, separate from the Caveman compression engine and other executable software.",
+      "skillsIntro": "Concise expression, software investigation, and refactoring need different task instructions. Compare the original workflows and inputs, and keep these reusable methods separate from Caveman Engine or other executable software whose configuration the Skill files do not replace.",
       "faq": [
         {
           "question": "Is Caveman a single Skill or a larger project?",
@@ -1321,7 +1321,7 @@
           "Revu is a separate local-first macOS study application organized around spaced repetition and review. Its repository contains the software’s core, while a dedicated product site presents the application. Together, these projects show two distinct areas of work: improving how agents use information and helping people organize repeated learning."
         ]
       },
-      "projectsIntro": "Caveman Engine and Revu serve different tasks: reducing overhead in agent work and organizing repeated study. Review their original repositories for setup, platform requirements, and licenses; a public source repository does not make every component the same kind of open-source software.",
+      "projectsIntro": "Caveman Engine and Revu address agent-work overhead and continuing learning. Compare their software responsibilities, then review platform and license conditions at each repository; publicly available source does not establish identical open-source terms or include the projects inside related Skills.",
       "relatedTitle": "More Creators Working on Agent Workflows",
       "relatedDescription": "Explore other publishers of agent instructions and developer tools to compare their approaches to implementation, investigation, and interface work. Each profile connects the creator or organization to its projects, helping you distinguish software from the guidance written to use it.",
       "faqTitle": "Questions About Julius Brussee’s Projects",
@@ -1339,7 +1339,7 @@
       "about": "Julius Brussee 构建面向 Agent 的压缩工具和 Caveman Skills。他的公开作品还包括不属于 Agent Skill 的本地优先学习应用 Revu。",
       "projectsTitle": "Julius Brussee 的软件项目",
       "skillsTitle": "Julius Brussee 精选 Skills",
-      "skillsIntro": "这些指令分别处理精简表达、软件调查与重构，适合按具体任务选择。使用前应查看原始流程和输入要求，并将可复用指引与 Caveman 压缩引擎、其他可执行软件分开理解，不能用指令文件代替工具配置。",
+      "skillsIntro": "精简表达、软件调查和重构需要不同任务指引。以下条目比较原始流程与输入要求，并将可复用方法同 Caveman Engine 等可执行软件区分，指令文件本身不能代替工具配置。",
       "faq": [
         {
           "question": "Caveman 是一个 Skill，还是更大的项目？",
@@ -1376,7 +1376,7 @@
           "Revu 是另一条独立产品线：围绕间隔重复与复习构建的本地优先 macOS 学习应用。仓库提供软件核心，专门的产品网站介绍应用。两类作品分别关注 Agent 怎样处理信息，以及人怎样组织持续学习，在任务、使用方式和验证标准上均有区别。"
         ]
       },
-      "projectsIntro": "Caveman Engine 与 Revu 分别服务于 Agent 工作开销和持续学习。安装方式、平台要求与许可证应回到各自仓库核对；公开源码不代表所有组件具有相同的开源许可，也不代表相关 Skill 已包含这些软件。",
+      "projectsIntro": "Caveman Engine 与 Revu 关注工作开销和持续学习。以下项目区分软件职责，平台及许可需各自核对；公开源码不代表条款相同，Skills 也不能代替工具配置。",
       "relatedTitle": "更多 Agent 工作流创作者",
       "relatedDescription": "继续了解发布 Agent 指令与开发工具的个人和团队，比较他们在实现、调查和界面工作上的方法。发布者介绍将人物或组织与作品关联起来，便于区分软件本身，以及为了使用软件而编写的任务指引。",
       "faqTitle": "关于 Julius Brussee 项目的常见问题",
@@ -1539,7 +1539,7 @@
       "aboutTitle": "About Microsoft",
       "about": "Microsoft publishes developer tools, languages, and cloud resources. Explore Azure Agent Skills alongside Visual Studio Code and TypeScript for coding, deployment, and diagnostics.",
       "skillsTitle": "Selected Microsoft Skills",
-      "skillsIntro": "Explore Microsoft Azure Skills for preparing applications, checking deployment prerequisites, investigating production issues, and working with storage or AI services. Compare the scope of each workflow, its service requirements, and the expected inputs before choosing a method.",
+      "skillsIntro": "Microsoft's selected Skills cover Azure preparation, deployment checks, diagnosis, storage, and AI services. Compare each guide's service boundary with the change you need, using the original source to establish its prerequisites before applying the workflow to an application.",
       "projectsTitle": "Microsoft Open-Source Projects",
       "projectsIntro": "Explore Microsoft software projects for writing, understanding, and maintaining application code. Review the editor and language tooling below, then visit the repositories for source code, contribution guidance, extension points, and current development documentation.",
       "relatedTitle": "More Teams and Creators",
@@ -1594,7 +1594,7 @@
       "aboutTitle": "关于 Microsoft",
       "about": "Microsoft 发布开发工具、编程语言与云端资源。代表作品包括 Visual Studio Code、TypeScript 和 Azure Skills，覆盖编码、部署与诊断任务。",
       "skillsTitle": "Microsoft 精选 Skills",
-      "skillsIntro": "探索 Microsoft 面向 Azure 应用准备、部署验证、故障诊断、存储与 AI 服务的精选 Skills，比较每条指引负责的任务范围，并通过原始来源查看具体服务要求和操作流程。",
+      "skillsIntro": "Microsoft 精选 Skills 涉及 Azure 准备、部署、诊断、存储和 AI 服务。以下指引按边界区分，并保留来源，方便结合应用变更核对前提。",
       "projectsTitle": "Microsoft 开源项目",
       "projectsIntro": "了解 Microsoft 用于编写、理解和维护应用代码的软件项目，比较代码编辑器与语言工具的不同职责，再前往仓库查阅源码、扩展接口、贡献说明和开发文档。",
       "relatedTitle": "其他团队与创作者",
@@ -1954,7 +1954,7 @@
       "aboutTitle": "About Remotion",
       "about": "Remotion brings video production into React. Its framework and Agent Skills connect compositions, animation, previews, rendering, and application integration in a code-based workflow.",
       "skillsTitle": "Selected Remotion Skills",
-      "skillsIntro": "Explore Remotion Skills for starting video projects, writing React compositions, arranging animated visuals, and rendering outputs. Compare the broad best-practices entry with focused instructions to choose a workflow that matches the current stage of your video project.",
+      "skillsIntro": "Remotion Skills guide project setup, React composition, animation, and rendering at different stages of video work. Compare the broad practice guide with focused instructions, then choose the original workflow that fits the production task and material currently in front of you.",
       "projectsTitle": "Remotion Video Tools",
       "projectsIntro": "Explore the Remotion framework behind code-driven videos and motion graphics. Review its composition model, preview tools, rendering options, and application integrations to understand how the software supports reusable templates and Agent-assisted video production.",
       "relatedTitle": "More Teams and Creators",
@@ -2009,7 +2009,7 @@
       "aboutTitle": "关于 Remotion",
       "about": "Remotion 将视频制作连接到 React，以代码组织画面、时间线和素材。框架与配套 Skills 覆盖合成、动画、预览、渲染和应用集成。",
       "skillsTitle": "Remotion 精选 Skills",
-      "skillsIntro": "探索 Remotion 面向项目创建、React 合成、动画画面编排与结果渲染的精选 Skills，比较综合实践入口和具体任务指引，再查看原始说明，选择适合当前视频制作阶段的操作方式。",
+      "skillsIntro": "Remotion Skills 对应项目创建、React 合成、动画及渲染等视频阶段。以下条目区分综合实践与专项指引，便于根据当前制作任务和已有材料，选择需要进一步阅读的原始流程。",
       "projectsTitle": "Remotion 视频工具",
       "projectsIntro": "了解支撑代码驱动视频与动态图形的 Remotion 框架，比较合成模型、预览工具、渲染路径和应用集成方式，为可复用视频模板与 Agent 辅助制作选择合适的软件基础。",
       "relatedTitle": "其他团队与创作者",
@@ -3180,7 +3180,7 @@
       "aboutTitle": "About Leon Lin",
       "about": "Leon Lin builds design Skills and tools for coding agents. His public work includes Taste Skill, the TasteCode workspace, and earshot audio tools.",
       "skillsTitle": "Selected Leon Lin Skills",
-      "skillsIntro": "Explore Leon Lin’s Taste Skill instructions for new interfaces, existing-product redesigns, and GPT-oriented design workflows. Compare the task each Skill supports, then read its current source to understand the visual decisions and review process it guides.",
+      "skillsIntro": "Leon Lin's Taste Skill instructions distinguish new-interface work, existing-product redesign, and GPT-oriented design flows. Compare those scopes with the current page, then read the maintained source for the visual decisions, implementation requirements, and review process that apply.",
       "projectsTitle": "Leon Lin Projects",
       "projectsIntro": "Explore Leon Lin’s software projects for coding-agent workspaces and audio tasks. These applications complement the design Skills, with their own setup requirements, documentation, and intended development workflows.",
       "relatedTitle": "More Publishers and Creators",
@@ -3235,7 +3235,7 @@
       "aboutTitle": "关于 Leon Lin",
       "about": "Leon Lin 发布界面设计 Skills 与 Agent 工具，代表作品包括共同署名的 Taste Skill、编码工作空间 TasteCode 和音频工具 earshot。",
       "skillsTitle": "Leon Lin 精选 Skills",
-      "skillsIntro": "探索 Leon Lin 面向新界面构建、现有产品改版与 GPT 设计流程的 Taste Skill 指引，比较每项任务的适用场景，并通过当前源码了解它所指导的视觉决策、实现要求与审查过程。",
+      "skillsIntro": "Leon Lin 的 Taste Skill 区分新界面、已有产品改版和 GPT 设计流程。以下指引按范围说明用途，再通过当前源码核对适用的视觉决定、实现要求与审阅过程。",
       "projectsTitle": "Leon Lin 相关项目",
       "projectsIntro": "探索 Leon Lin 面向编码 Agent 工作空间与音频任务的软件作品，了解它们与设计 Skills 的关系，并前往具体仓库查看安装要求、技术说明和适用工作流程。",
       "relatedTitle": "更多提供者与创作者",
@@ -3404,9 +3404,9 @@
         ]
       },
       "skillsTitle": "Selected Jesse Vincent Skills",
-      "skillsIntro": "Explore Jesse Vincent Agent Skills for agent engineering. Compare the task each instruction addresses, the steps it introduces, and its expected outputs to find a useful starting point for your current project.",
+      "skillsIntro": "Jesse Vincent's Agent Skills cover distinct engineering stages, including design clarification and systematic debugging. Compare the work each instruction prepares and the decisions it expects, using the task-specific guides rather than replacing an entire project method with one Skill.",
       "projectsTitle": "Jesse Vincent Open-Source Projects",
-      "projectsIntro": "Explore representative open-source projects by Jesse Vincent, from working tools to frameworks and their companion instructions. Compare their roles and practical uses, then consult each repository for documentation and maintenance details.",
+      "projectsIntro": "Jesse Vincent's representative projects include runnable tools, development frameworks, and supporting instructions. Compare those software roles with the method you want to reuse, keeping repository setup and maintenance information separate from the task guidance shown in individual Skill pages.",
       "relatedTitle": "More Teams and Creators",
       "relatedDescription": "Discover other publishers of developer tools, open-source projects, and Agent Skills. Compare their areas of focus, representative work, and practical methods to find useful tools and references for your next task.",
       "faqTitle": "Jesse Vincent FAQ",
@@ -3459,9 +3459,9 @@
         ]
       },
       "skillsTitle": "Jesse Vincent 精选 Skills",
-      "skillsIntro": "探索 Jesse Vincent 面向Agent 工程的 Agent Skills，了解不同指引对应的任务、工作步骤与预期成果，结合具体需求比较它们的用途，逐步建立适合当前项目的工作方式。",
+      "skillsIntro": "Jesse Vincent 的 Skills 涉及设计澄清、系统调试等工程阶段。以下指引说明任务和所需决定，便于按具体缺口选用，而非用单项 Skill 代替完整项目方法。",
       "projectsTitle": "Jesse Vincent 开源项目",
-      "projectsIntro": "了解 Jesse Vincent 的代表性开源项目，区分可运行的工具、开发框架与配套指引，结合主要用途和实际场景选择适合的项目，并从仓库查看完整文档与维护信息。",
+      "projectsIntro": "Jesse Vincent 的代表作品包含可运行工具、开发框架和配套指引。以下项目按软件职责比较，帮助选择可复用方法，并将仓库配置及维护信息与单项 Skill 的任务说明分开。",
       "relatedTitle": "其他团队与创作者",
       "relatedDescription": "了解其他开发者工具、开源项目与 Agent Skills 的提供者，比较不同团队和创作者的关注领域、代表作品与工作方法，围绕当前任务继续寻找实用的工具和参考。",
       "faqTitle": "Jesse Vincent 常见问题",
@@ -3596,9 +3596,9 @@
         ]
       },
       "skillsTitle": "Selected Paul Bakaus Skills",
-      "skillsIntro": "Explore Paul Bakaus Agent Skills for interface design. Compare the task each instruction addresses, the steps it introduces, and its expected outputs to find a useful starting point for your current project.",
+      "skillsIntro": "Paul Bakaus' interface-design Skills address practical design work rather than a single visual style to copy. Compare their task scope, implementation guidance, and review methods, with the original source available for the tools and context a particular page requires.",
       "projectsTitle": "Paul Bakaus Open-Source Projects",
-      "projectsIntro": "Explore representative open-source projects by Paul Bakaus, from working tools to frameworks and their companion instructions. Compare their roles and practical uses, then consult each repository for documentation and maintenance details.",
+      "projectsIntro": "Paul Bakaus' representative software offers a different entry from the standalone Skill guides. Explore what each project runs or provides, then use its repository to check setup and maintenance details before borrowing the implementation for your own interface workflow.",
       "relatedTitle": "More Teams and Creators",
       "relatedDescription": "Discover other publishers of developer tools, open-source projects, and Agent Skills. Compare their areas of focus, representative work, and practical methods to find useful tools and references for your next task.",
       "faqTitle": "Paul Bakaus FAQ",
@@ -3651,9 +3651,9 @@
         ]
       },
       "skillsTitle": "Paul Bakaus 精选 Skills",
-      "skillsIntro": "探索 Paul Bakaus 面向界面设计的 Agent Skills，了解不同指引对应的任务、工作步骤与预期成果，结合具体需求比较它们的用途，逐步建立适合当前项目的工作方式。",
+      "skillsIntro": "Paul Bakaus 的界面设计 Skills 面向实际设计工作，而非一套可直接复制的外观。以下指引比较任务范围、实现方向和审阅方法，并通过原始来源核对具体页面需要的工具与背景。",
       "projectsTitle": "Paul Bakaus 开源项目",
-      "projectsIntro": "了解 Paul Bakaus 的代表性开源项目，区分可运行的工具、开发框架与配套指引，结合主要用途和实际场景选择适合的项目，并从仓库查看完整文档与维护信息。",
+      "projectsIntro": "Paul Bakaus 的代表软件提供不同于独立 Skill 指南的入口。以下项目说明实际运行或提供什么，再通过仓库核对配置与维护细节，帮助判断如何借鉴到自己的界面工作流。",
       "relatedTitle": "其他团队与创作者",
       "relatedDescription": "了解其他开发者工具、开源项目与 Agent Skills 的提供者，比较不同团队和创作者的关注领域、代表作品与工作方法，围绕当前任务继续寻找实用的工具和参考。",
       "faqTitle": "Paul Bakaus 常见问题",
@@ -3800,9 +3800,9 @@
       "aboutTitle": "About Cloudflare",
       "about": "Cloudflare develops an Internet platform spanning application delivery, security, networking, and developer services. Its public repositories include runtime software, deployment tooling, protocol implementations, and application frameworks. Its developer tools and Agent resources connect coding tasks to concrete platform capabilities.",
       "projectsTitle": "Cloudflare Open-Source Projects",
-      "projectsIntro": "Explore Cloudflare developer software for building applications and Agent services. Compare the Workers development toolkit with the Agents SDK, including their roles in local testing, deployment, persistent state, and real-time interaction.",
+      "projectsIntro": "Workers development tools and the Agents SDK address different parts of application delivery. Compare their roles in local testing, deployment, persistent state, and real-time interaction before choosing a software foundation for an application or agent service.",
       "skillsTitle": "Selected Cloudflare Skills",
-      "skillsIntro": "Explore Cloudflare Skills for stateful Agent applications, Durable Objects coordination, Wrangler projects, and code security reviews. Compare the scope of each instruction with your application and development stage to identify the most relevant workflow.",
+      "skillsIntro": "Cloudflare's selected Skills cover stateful agents, Durable Objects, Wrangler projects, and repository security review. Compare these task boundaries with your application stage, then inspect the original workflow for the inputs and service conditions needed by each guide.",
       "relatedTitle": "More Teams and Creators",
       "relatedDescription": "Explore projects and Agent Skills from more teams and creators. Compare their technical focus, representative work, and intended tasks to discover resources relevant to your development, collaboration, or research workflow.",
       "faqTitle": "Cloudflare FAQ",
@@ -3855,9 +3855,9 @@
       "aboutTitle": "关于 Cloudflare",
       "about": "Cloudflare 提供涵盖应用交付、安全、网络和开发者服务的互联网平台，公开仓库中包含运行时软件、部署工具、协议实现与应用框架。开发者工具与 Agent 资源将编码任务连接到具体平台能力，服务于开发流程中的不同环节。",
       "projectsTitle": "Cloudflare 开源项目",
-      "projectsIntro": "了解 Cloudflare 用于应用和 Agent 服务开发的软件项目，比较 Workers 开发工具链与 Agents SDK 在本地测试、部署、持久化状态和实时交互方面承担的不同职责。",
+      "projectsIntro": "Workers 开发工具与 Agents SDK 承担应用交付中的不同职责。以下项目比较本地测试、部署、持久状态和实时交互，帮助为应用或 Agent 服务选择适合的软件基础。",
       "skillsTitle": "Cloudflare 精选 Skills",
-      "skillsIntro": "探索 Cloudflare 面向有状态 Agent、Durable Objects、Wrangler 项目和代码安全审查的精选 Skills，比较每条指引处理的任务范围，结合应用结构与当前开发阶段选择对应流程。",
+      "skillsIntro": "Cloudflare Skills 涉及有状态 Agent、Durable Objects、Wrangler 和安全审阅。以下指引按任务区分，方便结合应用阶段核对输入及服务条件。",
       "relatedTitle": "其他团队与创作者",
       "relatedDescription": "了解更多团队和创作者的代表项目与 Agent Skills，比较不同发布者的关注领域、技术思路和适用任务，为当前开发、协作或研究工作寻找相关工具与实践。",
       "faqTitle": "Cloudflare 常见问题",
@@ -3998,7 +3998,7 @@
       "projectsTitle": "Trail of Bits Open-Source Projects",
       "projectsIntro": "Explore Trail of Bits software tools for smart-contract analysis and testing. Compare static detectors with property-driven execution, including the evidence each can produce and the project setup needed to use them effectively.",
       "skillsTitle": "Selected Trail of Bits Skills",
-      "skillsIntro": "Explore Trail of Bits Skills for building code context, assessing security-sensitive changes, and designing property-based tests. Compare their inputs and expected outcomes to choose a workflow that fits the code and question being investigated.",
+      "skillsIntro": "Code-context analysis, security-sensitive changes, and property-based tests require different evidence. Compare Trail of Bits' selected Skills by their inputs and review purpose, then choose the method that fits the repository and suspected behavior being investigated.",
       "relatedTitle": "More Teams and Creators",
       "relatedDescription": "Explore projects and Agent Skills from more teams and creators. Compare their technical focus, representative work, and intended tasks to discover resources relevant to your development, collaboration, or research workflow.",
       "faqTitle": "Trail of Bits FAQ",
@@ -4053,7 +4053,7 @@
       "projectsTitle": "Trail of Bits 开源项目",
       "projectsIntro": "了解 Trail of Bits 面向智能合约分析与测试的软件工具，比较静态检测和基于属性的执行方法，理解各自能够提供的证据，以及实际运行所需的项目与测试环境。",
       "skillsTitle": "Trail of Bits 精选 Skills",
-      "skillsIntro": "探索 Trail of Bits 面向代码上下文、安全敏感变更和属性测试的精选 Skills，比较每项流程所需的输入与预期结果，根据当前代码和待调查问题选择合适的分析方法。",
+      "skillsIntro": "代码背景分析、安全敏感变更和属性测试需要不同证据。以下 Trail of Bits Skills 按输入与审阅目的区分，便于结合当前仓库及待调查行为，选择适合的分析方法。",
       "relatedTitle": "其他团队与创作者",
       "relatedDescription": "了解更多团队和创作者的代表项目与 Agent Skills，比较不同发布者的关注领域、技术思路和适用任务，为当前开发、协作或研究工作寻找相关工具与实践。",
       "faqTitle": "Trail of Bits 常见问题",
@@ -4194,7 +4194,7 @@
       "projectsTitle": "GitHub Open-Source Projects",
       "projectsIntro": "Explore GitHub’s official tools for terminal and AI-assisted collaboration. Compare the CLI with the MCP Server, including their interfaces to repositories, issues, pull requests, and platform workflows, to choose an integration that fits your working environment.",
       "skillsTitle": "Selected GitHub Skills",
-      "skillsIntro": "Explore community-contributed Skills in GitHub’s Awesome Copilot collection for preparing commits, writing project documentation, and improving code structure. Compare their task boundaries and expected behavior with your repository conventions and development needs.",
+      "skillsIntro": "The Awesome Copilot community collection includes instructions for commit preparation, project explanations, and code-structure work. Compare their task boundaries against repository conventions, keeping community guidance distinct from the official GitHub software projects listed separately on this page.",
       "relatedTitle": "More Teams and Creators",
       "relatedDescription": "Explore projects and Agent Skills from more teams and creators. Compare their technical focus, representative work, and intended tasks to discover resources relevant to your development, collaboration, or research workflow.",
       "faqTitle": "GitHub FAQ",
@@ -4249,7 +4249,7 @@
       "projectsTitle": "GitHub 开源项目",
       "projectsIntro": "了解 GitHub 面向终端和 AI 协作的官方工具，比较 CLI 与 MCP Server 在仓库、议题、拉取请求和平台工作流中的接口职责，选择适合当前环境的集成方式。",
       "skillsTitle": "GitHub 精选 Skills",
-      "skillsIntro": "探索 GitHub Awesome Copilot 社区集合中面向提交准备、项目说明和代码结构优化的精选 Skills，比较每条指引的任务边界与预期行为，结合仓库约定选择适合当前开发工作的实践。",
+      "skillsIntro": "Awesome Copilot 集合包含提交准备、项目说明和代码结构指引。以下 Skills 结合仓库约定区分任务，同时与本页另列的 GitHub 官方软件保持区别。",
       "relatedTitle": "其他团队与创作者",
       "relatedDescription": "了解更多团队和创作者的代表项目与 Agent Skills，比较不同发布者的关注领域、技术思路和适用任务，为当前开发、协作或研究工作寻找相关工具与实践。",
       "faqTitle": "GitHub 常见问题",
@@ -4384,9 +4384,9 @@
         ]
       },
       "skillsTitle": "Selected Google Workspace Skills",
-      "skillsIntro": "Explore Google Workspace Skills for files, email, calendars, and spreadsheets. Compare the services and tasks each instruction addresses, then choose the relevant workflow with the right account, API access, and existing office resources in mind.",
+      "skillsIntro": "Google Workspace Skills organize work across files, mail, calendars, and spreadsheets. Compare the service and operation each guide handles, with the current account, API permissions, and available office material checked before connecting an instruction to a real task.",
       "projectsTitle": "Google Workspace Developer Tools",
-      "projectsIntro": "Explore the gws command-line project behind the selected Agent Skills. Understand its dynamic API commands, structured responses, and authentication requirements alongside the support status documented by the project maintainers.",
+      "projectsIntro": "The gws command-line project supports the selected Workspace Skills through dynamic API commands and structured responses. Explore that tool with its authentication requirements and stated support status, keeping software setup distinct from the business task an instruction describes.",
       "relatedTitle": "More Teams and Creators",
       "relatedDescription": "Explore developer tools, software projects, and Agent Skills from other teams and creators. Compare their areas of focus, representative work, and intended tasks to find more resources for development and collaboration.",
       "faqTitle": "Google Workspace FAQ",
@@ -4439,9 +4439,9 @@
         ]
       },
       "skillsTitle": "Google Workspace 精选 Skills",
-      "skillsIntro": "探索 Google Workspace 面向文件、邮件、日历与电子表格的精选 Skills，比较不同指引所处理的服务和任务，结合当前账号、API 访问权限及已有办公资源，选择适合具体工作的操作流程。",
+      "skillsIntro": "Google Workspace Skills 连接文件、邮件、日历和电子表格工作。以下指引区分服务与操作，选用前需结合当前账号、API 权限和已有办公资料核对实际任务条件。",
       "projectsTitle": "Google Workspace 开发工具",
-      "projectsIntro": "了解支撑精选 Agent Skills 的 gws 命令行项目，比较动态 API 命令、结构化响应和认证要求，并结合项目维护者注明的支持状态，判断它如何连接现有的办公开发流程。",
+      "projectsIntro": "gws 通过动态 API 命令和结构化响应支撑 Workspace Skills。以下入口说明工具与认证背景，并保留支持状态；软件配置与指引中的业务任务需分别理解。",
       "relatedTitle": "其他团队与创作者",
       "relatedDescription": "继续了解其他团队和创作者的开发工具、软件项目与 Agent Skills，比较不同发布者的关注领域、代表作品和适用任务，为自己的开发或协作流程寻找更多资源。",
       "faqTitle": "Google Workspace 常见问题",
@@ -4588,7 +4588,7 @@
         ]
       },
       "skillsTitle": "Selected Firecrawl Skills",
-      "skillsIntro": "Explore Firecrawl Skills for source discovery, page reading, scoped crawling, and browser interaction. Compare the task boundaries and expected outputs, then choose the level of web access needed for your research or application workflow.",
+      "skillsIntro": "Source discovery, page reading, scoped crawling, and browser interaction produce different kinds of web evidence. Compare the Firecrawl Skills by task and expected output, selecting the access method your research or application actually needs rather than treating all retrieval as one operation.",
       "projectsTitle": "Firecrawl Web Data Tools",
       "projectsIntro": "Explore the main Firecrawl platform and its terminal interface, understanding how APIs, extracted content, and Agent integration connect. Compare the software’s role with hosted service access before choosing an execution environment.",
       "relatedTitle": "More Teams and Creators",
@@ -4643,7 +4643,7 @@
         ]
       },
       "skillsTitle": "Firecrawl 精选 Skills",
-      "skillsIntro": "探索 Firecrawl 面向来源发现、页面读取、限定范围爬取与浏览器交互的精选 Skills，比较各项任务的边界与预期输出，再根据研究目标或应用流程，选择实际需要的网页访问方式。",
+      "skillsIntro": "来源发现、页面读取、限定爬取和浏览器交互产生不同网页证据。以下 Firecrawl Skills 按任务与输出区分，帮助按研究或应用需求选择实际所需的访问方式。",
       "projectsTitle": "Firecrawl 网页数据工具",
       "projectsIntro": "了解 Firecrawl 主平台与终端工具，比较 API 调用、内容提取和 Agent 集成如何连接，并结合软件职责与托管服务访问方式，为具体任务选择合适的执行环境。",
       "relatedTitle": "其他团队与创作者",
@@ -4776,7 +4776,7 @@
         ]
       },
       "skillsTitle": "Selected Supabase Skills",
-      "skillsIntro": "Explore Supabase Skills for application integration and Postgres development. Compare the broad platform workflow with database-specific guidance, then identify the schema, authentication, access rules, or query behavior that needs attention in your project.",
+      "skillsIntro": "Supabase's selected Skills distinguish platform integration from focused Postgres development. Compare the guidance against the structure, authentication, access rules, or query behavior being changed, using the original source to establish which workflow and prerequisites fit the current application.",
       "projectsTitle": "Supabase Developer Tools",
       "projectsIntro": "Explore the Supabase platform and CLI behind application backends and database development. Compare hosted projects, local workflows, migration management, and self-hosting responsibilities to understand where each tool fits in your architecture.",
       "relatedTitle": "More Teams and Creators",
@@ -4831,7 +4831,7 @@
         ]
       },
       "skillsTitle": "Supabase 精选 Skills",
-      "skillsIntro": "探索 Supabase 面向应用集成与 Postgres 开发的精选 Skills，比较平台综合流程和数据库专项指引，结合当前项目需要处理的结构、认证、访问规则或查询表现，找到适合具体变更的实践方向。",
+      "skillsIntro": "Supabase 精选 Skills 区分平台集成与 Postgres 专项开发。以下指引围绕结构、认证、访问规则或查询表现说明用途，便于结合当前应用变更核对流程及所需前提。",
       "projectsTitle": "Supabase 开发工具",
       "projectsIntro": "了解支撑应用后端与数据库开发的 Supabase 平台及 CLI，比较托管项目、本地流程、迁移管理和自托管责任，判断不同工具如何连接现有代码仓库与应用架构。",
       "relatedTitle": "其他团队与创作者",

@@ -103,8 +103,8 @@
       "zh": "Pro 处理更大输入，Flash 更快完成周转。"
     },
     "description": {
-      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
-      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
+      "en": "Gemini's listed chat and image models do not all share the same entry point. Compare recorded routes with newer pricing-page listings, keeping the client picker, plan conditions, and separate image-generation workflow in view when choosing a version.",
+      "zh": "Gemini 对话与图像型号并不全部使用同一入口。以下条目区分已记录路径和价格页新增列表，选择版本时需结合客户端菜单、套餐条件及独立图像生成流程判断。"
     },
     "items": [
       {
@@ -195,12 +195,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "在大资料集与高频小任务中选择处理方式",
-      "en": "Choose processing for large source sets and frequent small tasks"
+      "zh": "Gemini 模型的使用场景",
+      "en": "Use Cases for Gemini Models"
     },
     "description": {
-      "zh": "资料之间的关系与批量处理的节奏是不同问题，输入、验证和预期成果也应分别定义。",
-      "en": "Relationships across sources and batch-processing pace are different problems, requiring different inputs, verification, and outputs."
+      "zh": "研究报告需要连接来源，视觉评审需要对应界面状态，批量分类还要抽查例外。Gemini 的任务输入应随证据类型准备，再按实际可用路径分别检查结论和输出。",
+      "en": "Cross-document research, screenshot reviews, and text classification organize evidence in different ways. Compare the sources, visual states, and sample checks each task requires before choosing an available Gemini route and preparing its input."
     },
     "items": [
       {
@@ -241,8 +241,8 @@
       "zh": "超长上下文、混合输入，以及一个更快的搭档。"
     },
     "description": {
-      "en": "The live chat models cover analysis and throughput; separate Gemini image models run through the drawing Combo.",
-      "zh": "已上线对话型号覆盖分析与吞吐；独立的 Gemini 图像型号通过画图 Combo 使用。"
+      "en": "Large source sets, image-and-text analysis, and frequent responses impose different constraints on a workflow. Review the recorded Gemini capabilities alongside the separate image-generation lane so input understanding and producing a new image are not treated as the same operation.",
+      "zh": "理解已有图文和生成新图像使用不同路径。Gemini 的大资料分析与高频响应也有各自约束，工作流需要根据已记录能力准备输入，再单独确认对应的图像生成入口。"
     },
     "items": [
       {

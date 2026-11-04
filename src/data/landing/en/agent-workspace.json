@@ -35,7 +35,7 @@
   },
   "features": {
     "title": "The environment around the agent is part of the product.",
-    "description": "Floatboat gives work a durable home where context, execution, review, and delivery remain connected.",
+    "description": "A persistent workspace connects local material with agent execution and editable outputs. Compare how project context, working rules, and reviewable deliverables support ongoing work without requiring every task to restart in a new conversation.",
     "items": [
       {
         "label": "Environment",
@@ -55,8 +55,8 @@
     ]
   },
   "useCases": {
-    "title": "Keep project materials, code, and deliverables connected",
-    "description": "Use the same working context for role handoffs and repository changes, with traceable, reviewable results.",
+    "title": "Use Cases for Agent Workspace",
+    "description": "Keep research, repository changes, and editable deliverables connected in one project. These scenarios show how an Agent Workspace preserves sources and decisions as work passes between roles and review stages.",
     "items": [
       {
         "title": "Coordinate many roles from one desk",
@@ -149,7 +149,7 @@
   },
   "howTo": {
     "title": "Run a project in Agent Workspace",
-    "description": "Keep source material, Agent work, and reviewed deliverables in one persistent project.",
+    "description": "Setting up a project means giving the agent relevant material, defining the work, and reviewing what returns. The steps below keep those decisions connected with execution records so accepted results remain available for the next task.",
     "items": [
       {
         "title": "Open a bounded project",

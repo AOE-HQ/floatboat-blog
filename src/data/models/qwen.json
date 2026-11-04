@@ -93,8 +93,8 @@
       "zh": "一个已登记型号，对应明确的长文本定位。"
     },
     "description": {
-      "en": "Qwen 3.7 Max has a capacity configuration but no current entry in the main client picker.",
-      "zh": "Qwen 3.7 Max 已配置容量，但当前默认模型选择器尚无入口。"
+      "en": "The Qwen record names qwen-3.7-max and its configured long-context profile. Those details help with capacity planning but do not establish a default picker entry; compare them with the current menu and supported route before assigning execution.",
+      "zh": "Qwen 记录标识 qwen-3.7-max 及其长上下文画像，可用于理解容量背景。以下条目并不代表默认选择器已有入口，安排执行前仍需结合当前菜单与受支持路径核对。"
     },
     "items": [
       {
@@ -117,12 +117,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "以完整资料组织中文长文工作",
-      "en": "Organize Chinese long-text work around complete sources"
+      "zh": "Qwen 模型的使用场景",
+      "en": "Use Cases for Qwen Models"
     },
     "description": {
-      "zh": "先核对受支持的访问方式，再决定怎样保留全文关系；接入规划与实际内容处理分别验收。",
-      "en": "Confirm supported access before deciding how to retain whole-source relationships; verify access planning and content work separately."
+      "zh": "中文长文综合需要保留术语及引用关系，语料审阅还要追踪例外。Qwen 任务应在核实受支持入口后安排，并区分访问规划和实际内容验收，配置记录不直接证明当前能够执行。",
+      "en": "Chinese source synthesis and corpus review depend on preserving terminology, attribution, and exceptions. These scenarios also separate access planning from content work, so a recorded Qwen configuration does not become an unsupported promise of current execution."
     },
     "items": [
       {
@@ -163,8 +163,8 @@
       "zh": "长文本容量与当前访问状态。"
     },
     "description": {
-      "en": "The `qwen-3.7-max` configuration includes a long-text channel and a 1M capacity budget. The October 9, 2026 record did not include a main-picker entry; check the current client menu.",
-      "zh": "`qwen-3.7-max` 已配置长文本通道与 1M 容量预算，在 2026 年 10 月 9 日记录中未显示默认选择器入口，当前应核对实际菜单。"
+      "en": "Qwen's model identifier, context budget, long-text adapter, and availability status should be read separately. This overview preserves the recorded configuration boundary so a large capacity figure does not become an unsupported statement about what the current client can execute.",
+      "zh": "Qwen 的型号标识、上下文预算、长文本适配器和可用状态，需要分别理解。以下概览保留配置记录的边界，避免将较大容量数字直接转成当前客户端能够执行任务的承诺。"
     },
     "items": [
       {

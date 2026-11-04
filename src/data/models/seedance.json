@@ -105,8 +105,8 @@
       "zh": "区分 2.5 公开型号与已记录的 2.0 引擎。"
     },
     "description": {
-      "en": "Each entry separates recorded access from newer public listings. The current client menu and plan determine the entry you can use.",
-      "zh": "各条目区分已记录的接入与新增公开型号；实际可用入口取决于当前客户端菜单和套餐。"
+      "en": "Seedance entries distinguish recorded 2.0 video Combo routes from the newer 2.5 pricing listing. Compare the engine identifier and stated status for each version, then verify the actual generation workflow and inputs before assuming the same access path applies.",
+      "zh": "Seedance 条目区分已记录的 2.0 视频 Combo 路径与较新的 2.5 价格列表。以下逐项说明引擎标识及状态，生成前需核对实际流程和输入条件，不能默认不同版本共用入口。"
     },
     "items": [
       {
@@ -165,12 +165,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "用文字、原图与分镜约束视频制作",
-      "en": "Constrain video production with text, source images, and shot plans"
+      "zh": "Seedance 模型的使用场景",
+      "en": "Use Cases for Seedance Models"
     },
     "description": {
-      "zh": "概念片、图生视频与草稿比较使用不同素材和检查标准，生成前先确认对应入口与制作条件。",
-      "en": "Concept clips, image-to-video work, and draft comparisons use different materials and checks; confirm the appropriate entry and production conditions first."
+      "zh": "概念片、动态主视觉和分镜比较分别从文字、原图及候选镜头出发。Seedance 任务因此需要相应素材和审阅标准，并在确认生成入口后，同时检查运动、主体一致性与选择依据。",
+      "en": "Text concepts, animated key visuals, and storyboard drafts begin with different source material. Compare shot constraints, motion consistency, and selection criteria before using the corresponding Seedance workflow to generate and review a candidate clip."
     },
     "items": [
       {
@@ -211,8 +211,8 @@
       "zh": "把视频控制组织成一条制作工作流。"
     },
     "description": {
-      "en": "The Combo provides the correct entry for two live Seedance engines.",
-      "zh": "Combo 为两个已上线的 Seedance 引擎提供正确入口。"
+      "en": "Text briefs, source images, frame constraints, and audio intent lead to different video-generation checks. Explore the recorded Seedance Combo capabilities with those inputs in mind, and keep the selected engine's access conditions attached to the production task.",
+      "zh": "视频输入可能来自文字、原图或首尾帧约束，声音意图还需要对应音频检查。Seedance 已记录的 Combo 用法提供理解这些制作方向的依据，实际任务仍受所选引擎访问条件限制。"
     },
     "items": [
       {
@@ -329,8 +329,8 @@
       }
     ],
     "description": {
-      "en": "Use the video brief to guide generation, then inspect the moving image and audio before delivery.",
-      "zh": "用视频简报约束生成方向，交付前检查动态画面及音频，而不只判断单帧效果。"
+      "en": "Video production needs a brief that constrains more than a single frame. Prepare the intended scene and motion, use the appropriate generation route, and inspect the resulting moving image and audio before deciding which revisions are needed for delivery.",
+      "zh": "视频简报需要同时约束场景、运动和声音，静态画面好看并不能证明片段适用。选择生成路径后，还要审阅连续画面与音频，再根据实际结果安排交付前的修改。"
     }
   },
   "faq": [

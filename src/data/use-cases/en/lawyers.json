@@ -22,7 +22,7 @@
   },
   "burdens": {
     "title": "Legal judgment is only one part of the day.",
-    "description": "Before a lawyer can advise, negotiate, or decide, someone has to recover context, organize materials, compare documents, and prepare a usable work product.",
+    "description": "Matter briefs, standards-based review queues, and source trails support different preparation tasks before legal judgment. These workflows organize approved files and evidence for inspection, while legal analysis, advice, negotiation choices, and final decisions remain with the responsible professional.",
     "items": [
       { "label": "Files", "title": "Matter context is scattered", "description": "Important facts sit across folders, email attachments, meeting notes, prior drafts, and naming systems that drift over time." },
       { "label": "Review", "title": "Every version creates more work", "description": "Teams must locate changes, reconnect them to the issue list, and explain what still needs a decision." },
@@ -32,7 +32,7 @@
   },
   "buildingBlocks": {
     "title": "Assign the preparation steps around legal judgment.",
-    "description": "The Work Agent follows the sources, standards, and checkpoints you select; it does not prescribe a legal method or make the professional decision.",
+    "description": "Legal preparation needs approved sources, selected review standards, and clear checkpoints before material reaches a professional decision. These capabilities support organization and drafting within that context, without prescribing legal methods or taking responsibility for advice and final judgment.",
     "items": [
       { "action": "Read", "example": "Work from an approved matter folder, agreements, notes, and prior drafts.", "result": "A grounded working set with less copy-and-paste." },
       { "action": "Organize", "example": "Classify files, normalize names, and map materials to a request or issue list.", "result": "Document index, missing-items list, and a structured matter record." },

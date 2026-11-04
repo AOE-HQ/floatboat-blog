@@ -92,8 +92,8 @@
       "zh": "一个准确 Model ID，对应 1M 画像。"
     },
     "description": {
-      "en": "The configured state does not imply main-picker availability.",
-      "zh": "配置完成不代表已在主选择器露出。"
+      "en": "The MiniMax record describes the configured M2 profile rather than a guaranteed picker entry. Review the identifier and task positioning with that boundary in mind, then establish current access before planning work around the recorded capacity.",
+      "zh": "MiniMax 记录描述的是已配置 M2 画像，而非保证存在的选择器入口。以下条目说明型号与任务定位；围绕容量安排实际工作前，仍需先确认当前访问条件。"
     },
     "items": [
       {
@@ -116,12 +116,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "评估长文本队列与媒体分流的资源条件",
-      "en": "Assess resources for long-text queues and media routing"
+      "zh": "MiniMax 模型的使用场景",
+      "en": "Use Cases for MiniMax Models"
     },
     "description": {
-      "zh": "以下是围绕已记录文本容量的规划任务，不代表当前账号可以直接执行；实际访问条件需要先核对。",
-      "en": "These planning tasks concern recorded text capacity, not assured account access; verify actual entry conditions first."
+      "zh": "长文本批次需要质量和资源样本，混合媒体又涉及独立访问路径。MiniMax 的容量记录可作为规划依据，但任务能否执行、各类输出怎样检查，仍须结合当前环境分别确认。",
+      "en": "Long-text queues, resource planning, and mixed-media deliverables need separate batching and access decisions. Review the evidence each workflow would require before relying on recorded MiniMax capacity or assuming that text and media share an execution route."
     },
     "items": [
       {
@@ -162,8 +162,8 @@
       "zh": "选择器下层的一项明确经济画像。"
     },
     "description": {
-      "en": "The configured model ID is `minimax-m2`. Text processing and media workflows have separate access requirements.",
-      "zh": "当前已配置型号为 `minimax-m2`，文本处理与媒体工作流使用不同的访问方式。"
+      "en": "The recorded M2 identity, text capacity, and resource positioning describe one part of a broader workflow. Compare them with the separate media paths, and verify each access condition before assuming that text configuration also enables image or video processing.",
+      "zh": "M2 的身份、文本容量及资源定位描述的是已记录文本能力。图像或视频仍需沿独立媒体路径核对访问条件，不能从文本通道已经配置，推断所有制作任务也已具备执行入口。"
     },
     "items": [
       {

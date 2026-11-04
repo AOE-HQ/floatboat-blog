@@ -44,7 +44,7 @@
   },
   "burdens": {
     "title": "Spend analyst time on interpretation, not rebuilding the evidence trail.",
-    "description": "Financial analysis breaks down when updated numbers, operating explanations, model assumptions, and management commentary no longer reconcile to the same period and source.",
+    "description": "Company research, variance explanations, and recurring market monitoring depend on aligned periods and source definitions. These workflows keep figures, assumptions, and management commentary connected, producing review material without transferring the analyst's responsibility for financial conclusions.",
     "items": [
       {
         "label": "Context",
@@ -70,7 +70,7 @@
   },
   "buildingBlocks": {
     "title": "Turn approved figures and context into review-ready analysis materials.",
-    "description": "The Work Agent uses its workspace to connect source documents, periods, units, assumptions, and drafts while analysts retain every financial conclusion.",
+    "description": "Financial preparation depends on source documents, periods, units, and assumptions remaining aligned. These workspace capabilities help organize analysis material and draft revisions, with traceable inputs and review points preserved while the analyst owns every financial conclusion.",
     "items": [
       {
         "action": "Read",

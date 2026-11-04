@@ -59,7 +59,7 @@ export const personaPageSchema = z.object({
       example: z.string().min(1),
       result: z.string().min(1),
     })).min(5),
-  }).optional(),
+  }),
   workflows: z.object({
     title: z.string().min(1),
     description: z.string().min(1),

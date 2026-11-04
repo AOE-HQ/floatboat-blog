@@ -100,8 +100,8 @@
       "zh": "两条 DeepSeek 路径，对应两种成本结构。"
     },
     "description": {
-      "en": "Choose based on how much reasoning the task deserves.",
-      "zh": "根据任务真正需要的推理量来选择。"
+      "en": "DeepSeek's recorded options serve different reasoning and throughput needs. Compare the model identifiers and task positioning before deciding whether a difficult investigation or a queue of routine edits warrants the same execution choice.",
+      "zh": "DeepSeek 已记录的选项面向不同推理与吞吐需求。以下条目比较型号标识和任务定位，帮助判断复杂调查与常规修改队列是否需要相同选择，而不是仅按名称决定使用方式。"
     },
     "items": [
       {
@@ -140,12 +140,12 @@
   },
   "useCases": {
     "title": {
-      "zh": "分别验证复杂推理与常规修改",
-      "en": "Verify difficult reasoning and routine changes differently"
+      "zh": "DeepSeek 模型的使用场景",
+      "en": "Use Cases for DeepSeek Models"
     },
     "description": {
-      "zh": "算法与数值问题需要证明假设，常规队列则需要清楚边界和快速复核；使用现有可用的模型路径。",
-      "en": "Algorithmic and numerical work needs tested assumptions; routine queues need bounded scope and efficient review through an available model route."
+      "zh": "算法是否成立需要论证，数值错误需要反例，常规修改则适合逐项检查。安排 DeepSeek 任务时，可以根据这些证据要求判断推理投入，而不是让不同工作共用同一验收方式。",
+      "en": "Algorithm choices and numerical failures need different evidence from a queue of small edits. Compare how assumptions, counterexamples, and bounded checks shape these tasks before choosing the reasoning effort of an available DeepSeek model."
     },
     "items": [
       {
@@ -186,8 +186,8 @@
       "zh": "两个可直接选择的型号，各自承担明确工作。"
     },
     "description": {
-      "en": "Both models are managed by Floatboat; the distinction is the amount of reasoning the task deserves.",
-      "zh": "两个型号均由 Floatboat 托管，区别在于任务值得投入多少推理。"
+      "en": "Code reasoning, numerical analysis, and high-volume work call for different levels of investigation. This capability overview connects the recorded DeepSeek options with those demands and explains alias continuity without treating model choice as a substitute for checking results.",
+      "zh": "DeepSeek 的代码推理、数值分析和批量处理对应不同调查深度。理解已记录选项和别名延续，有助于安排推理投入；具体输出仍需要与任务证据核对，不能只凭型号判断质量。"
     },
     "items": [
       {

@@ -21,7 +21,7 @@ const pageCopy = {
     catalogTitle: "Browse by Role, Work Style, or Rhythm",
     catalogDescription: "Choose a profession or operating model to see the assignments a Work Agent can take on, the deliverables it returns, and the decisions that remain with you.",
     methodTitle: "Start from a Real Assignment, Not an Industry Label",
-    methodDescription: "The strongest first use case has known source material, a concrete deliverable, and a person who can judge the result.",
+    methodDescription: "A useful first assignment has source material, a concrete deliverable, and someone able to judge the result. The steps below connect that outcome with the files, permissions, and review point needed before work is delegated.",
     steps: [
       ["01", "Name the Deliverable", "Begin with the report, lesson pack, proposal, review packet, campaign asset, or operating brief that needs to exist at the end."],
       ["02", "Bound the Working Context", "Choose the files, sources, templates, terminology, permissions, and open questions the agent may use for this assignment."],
@@ -45,7 +45,7 @@ const pageCopy = {
     catalogTitle: "按职业、工作方式或节奏浏览",
     catalogDescription: "按职业或经营方式查看 Work Agent 可以接手哪些任务、会交付什么成果，以及哪些决定仍然由你负责。",
     methodTitle: "先选一项真实任务，不要先套行业标签",
-    methodDescription: "适合作为起点的任务，通常已有明确资料、具体交付物，以及能够判断结果的人。",
+    methodDescription: "适合作为起点的任务，需要明确资料、具体交付物及能够判断结果的人。以下准备步骤将目标与文件、权限和审阅节点连接起来，再决定哪些工作适合委派。",
     steps: [
       ["01", "先说清要交付什么", "从报告、教学材料、提案、审阅包、营销素材或经营简报开始，明确任务结束时应该得到什么。"],
       ["02", "限定本次工作背景", "选择 Agent 可以使用的文件、来源、模板、术语、权限与待确认问题，不要让任务无限扩张。"],

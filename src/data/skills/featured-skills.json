@@ -62,18 +62,18 @@
         "zh": "如何使用 Vercel Labs 的 Find Skills"
       },
       "howDescription": {
-        "en": "Use Find Skills by Vercel Labs to move from a task description to a shortlist of relevant Skills. Describe your goal and working environment, compare each candidate’s scope and source, then follow its requirements to install and try it with your agent.",
-        "zh": "按照以下步骤使用 Find Skills by Vercel Labs，将任务需求整理成可比较的 Skill 候选清单。先说明目标与工作环境，再核对候选项的适用范围和来源，最后结合原始说明完成安装，并在实际任务中试用。"
+        "en": "A useful Skill search starts with a task and the environment where it will run. Follow the path from candidate discovery to source and prerequisite checks, then decide whether to install and test the selected instructions on a small real assignment.",
+        "zh": "明确任务和环境后，搜索结果才有可比较的标准。候选项应先核对来源、适用范围和工具前提，选定后再考虑安装，并通过真实小任务判断指引是否适合当前工作。"
       }
     },
     "useCases": {
       "title": {
-        "en": "Find instructions for development, release, and document work",
-        "zh": "按开发、发布与文档任务寻找指引"
+        "en": "Use Cases for Find Skills",
+        "zh": "Find Skills的使用场景"
       },
       "description": {
-        "en": "Search by the check or deliverable you need, then compare candidate sources and tool requirements.",
-        "zh": "把需要完成的检查或交付物作为搜索条件，比较候选来源与工具前提。"
+        "en": "Development reviews, release checks, and document work need different reusable instructions. Compare how Find Skills uses the actual deliverable, available agent, and tool requirements to narrow candidates and preserve their original sources.",
+        "zh": "开发审查、发布检查和文档制作需要不同的可复用指引。了解 Find Skills 如何结合实际交付物、可用 Agent 和工具条件筛选候选项，并保留原始来源供进一步核对。"
       },
       "items": [
         {

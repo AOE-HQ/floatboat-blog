@@ -43,7 +43,7 @@
   },
   "burdens": {
     "title": "A brief changes as it passes through the studio",
-    "description": "Studios must preserve the client's intent while research, strategy, writing, design, production, and account review happen across different hands.",
+    "description": "A studio project moves from the client brief through specialist production to final review. These workflows connect assets, dependencies, and revision decisions across those stages, helping the team preserve client intent while keeping the next owner and delivery requirements clear.",
     "items": [
       {
         "label": "Brief",
@@ -69,7 +69,7 @@
   },
   "buildingBlocks": {
     "title": "What your studio Work Agent can prepare",
-    "description": "The agent works inside the project workspace so briefs, source assets, dependencies, and review decisions stay connected.",
+    "description": "Studio collaboration depends on briefs, source assets, production dependencies, and review decisions reaching the next specialist intact. These capabilities connect that context within the project workspace, supporting preparation and revision while the team retains creative direction and client-facing approval.",
     "items": [
       {
         "action": "Read",

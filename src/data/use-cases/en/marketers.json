@@ -44,7 +44,7 @@
   },
   "burdens": {
     "title": "Keep positioning and creative judgment human. Delegate the production trail.",
-    "description": "Marketing work fragments when audience evidence, approved claims, channel drafts, review feedback, and performance data live in separate production loops.",
+    "description": "Campaign briefs, channel versions, and performance reviews depend on different marketing evidence. These workflows retain audience research, approved claims, and feedback as material moves through production, with strategy and publication decisions kept with the people who own the campaign.",
     "items": [
       {
         "label": "Context",
@@ -70,7 +70,7 @@
   },
   "buildingBlocks": {
     "title": "Move from approved evidence to channel-ready, reviewable assets.",
-    "description": "The Work Agent uses its workspace to connect audience evidence, approved claims, brand rules, drafts, feedback, and results while owners control strategy and publication.",
+    "description": "Marketing production connects audience evidence, approved claims, brand rules, drafts, and results. These capabilities retain that chain inside the workspace as versions change, while campaign owners control strategy, external commitments, and the material that is finally published.",
     "items": [
       {
         "action": "Read",
