@@ -1188,5 +1188,77 @@
       "inputHint": "给出组件、输入方式、松手后的表现和可访问性要求。",
       "outcome": "可运行的交互及明确的状态检查记录。"
     }
+  },
+  "firecrawl/firecrawl": {
+    "en": {
+      "title": "Build a source-checked web extraction",
+      "description": "Provide either a research question or approved URLs. Choose the MCP operation that fits, then ask for structured output with evidence from the original pages.",
+      "inputLabel": "Which pages or question should the Agent use?",
+      "inputHint": "Supply approved URLs or a narrow query, desired fields, and a page limit.",
+      "outcome": "A structured table or JSON file with source URLs and explicit missing fields.",
+      "example": "Check which Firecrawl MCP tools are available. Read the approved product pages and extract the requested fields as JSON. Verify each value against the page, preserve its URL, and leave ambiguous values for review."
+    },
+    "zh": {
+      "title": "用 Firecrawl 提取可回查的网页数据",
+      "description": "提供一个查询问题或获准网址。按输入选择 MCP 工具，并让结果保留可以返回原网页核对的依据。",
+      "inputLabel": "需要查询哪些页面或问题？",
+      "inputHint": "填写获准网址或明确的问题、所需字段和页数上限。",
+      "outcome": "一份包含来源网址与缺失标记的表格或 JSON 文件。",
+      "example": "先核对当前会话可调用的 Firecrawl MCP 工具。读取我批准的产品页面，按指定字段输出 JSON。将值与页面原文核对，保留网址，歧义项留待复核。"
+    }
+  },
+  "supabase/supabase": {
+    "en": {
+      "title": "Check a Supabase project without making changes",
+      "description": "Identify the project and question before opening the connection. Start with metadata and approve any query only if it adds evidence the task needs.",
+      "inputLabel": "Which project and schema should the Agent inspect?",
+      "inputHint": "Provide the approved project reference, relevant tables or schemas, and permitted outputs.",
+      "outcome": "A read-only inspection note with the project scope, tool evidence, and open questions.",
+      "example": "Use the approved read-only Supabase MCP connection for my development project. Confirm its project reference, inspect the named schema, and compare the tables with the repository. Show me any proposed SQL and wait for my approval before running it. Report only the approved metadata or aggregate results."
+    },
+    "zh": {
+      "title": "核对 Supabase 项目而不修改数据库",
+      "description": "先明确项目和问题，从结构元数据开始；需要进一步取证时，再审查拟执行的只读查询。",
+      "inputLabel": "要核对哪个项目与 schema？",
+      "inputHint": "提供已批准的项目引用、涉及的表或 schema，以及允许交付的结果范围。",
+      "outcome": "一份只读核验记录，注明项目范围、工具结果和待确认事项。",
+      "example": "使用我获准的开发项目 Supabase 只读 MCP。先核对项目引用，检查指定 schema，并把表结构与仓库对照。先给我看拟执行的 SQL，经我确认后再运行。只报告获准的元数据或汇总结果。"
+    }
+  },
+  "karpathy/autoresearch": {
+    "en": {
+      "title": "Compare One Autoresearch Candidate With Its Baseline",
+      "description": "Define a single training change and record the setup before asking the agent to run the experiment.",
+      "inputLabel": "Which training change should the agent test?",
+      "inputHint": "Give the repository path, prepared GPU environment, baseline commit, one hypothesis, and the approved trial limit.",
+      "outcome": "A run log, a results.tsv entry, and a baseline comparison with a keep, discard, or crash decision.",
+      "example": "Read the official Autoresearch program.md. Check my GPU, prepared data, and dedicated branch. Show the baseline and one train.py candidate plan. After I approve the commands, run only the agreed trials and compare val_bpb, peak memory, and status in the local ledger."
+    },
+    "zh": {
+      "title": "对照基线验证一次 Autoresearch 改动",
+      "description": "先定义一项训练改动并记录环境，再授权 Agent 开始实验。",
+      "inputLabel": "本轮要验证哪个训练假设？",
+      "inputHint": "提供仓库位置、已准备的 GPU 环境、基线提交、单项假设和批准的运行轮数。",
+      "outcome": "运行日志、results.tsv 记录，以及一份标明保留、放弃或崩溃的基线对照。",
+      "example": "先阅读 Autoresearch 官方 program.md，核对 GPU、准备好的数据与独立分支。给我看基线及一项 train.py 改动的运行计划。我批准命令后，只运行约定的实验，并在本地台账中对照 val_bpb、显存峰值和状态。"
+    }
+  },
+  "k-dense-ai/scientific-agent-skills": {
+    "en": {
+      "title": "Select One Scientific Agent Skill for Your Research Task",
+      "description": "Define the research stage, available materials, and one artifact before selecting a workflow.",
+      "inputLabel": "What research output needs to be produced?",
+      "inputHint": "Provide the study stage, approved inputs, preferred host, expected output, and any restrictions on network or credentials.",
+      "outcome": "A Skill selection with source, license, prerequisites, and a bounded workflow for a reviewer to approve.",
+      "example": "Read the official Scientific Agent Skills catalog. For my study-design brief, pick one suitable Skill and check its SKILL.md for license, dependencies, and output. Propose a local-only workflow and get my approval before installing or running anything."
+    },
+    "zh": {
+      "title": "为一项科研任务选择合适的 Skill",
+      "description": "在选工作流之前，先说明研究阶段、手头材料和一项待交付的产物。",
+      "inputLabel": "你需要产出哪种科研材料？",
+      "inputHint": "提供研究阶段、获准输入、使用的宿主、预期交付，以及联网或凭据限制。",
+      "outcome": "一份标明来源、许可、执行前提和任务范围的 Skill 选用方案。",
+      "example": "先阅读 Scientific Agent Skills 官方目录，为我的实验设计简报选择一项适用 Skill。检查 SKILL.md 的许可、依赖与交付要求，提出只在本地运行的方案，并在我批准前不安装或执行。"
+    }
   }
 }

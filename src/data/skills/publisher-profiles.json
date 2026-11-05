@@ -89,8 +89,8 @@
           "answer": "Use the official Vercel Labs website for project stages and the vercel-labs GitHub organization for repositories. Follow each project’s README for installation, dependencies, and contribution guidance; this page is a selected introduction rather than a complete mirror."
         }
       ],
-      "ctaTitle": "Explore Vercel Labs Projects and Skills",
-      "ctaDescription": "Start with a development task, a browser workflow, or an Agent capability. Compare the featured projects and Skills, read their guides, and use the official documentation to decide what fits your work.",
+      "ctaTitle": "Find an Earlier Vercel Labs Guide",
+      "ctaDescription": "Browse the retained guides and check their original sources before following older deployment or browser instructions.",
       "overview": {
         "title": "About Vercel Labs",
         "paragraphs": [
@@ -104,8 +104,8 @@
       "relatedDescription": "Discover other teams and creators publishing developer tools, open-source projects, and Agent Skills. Explore their areas of focus, representative work, and technical approaches to find resources suited to your next task.",
       "faqTitle": "Vercel Labs FAQ",
       "ctaPrimary": {
-        "label": "Browse projects and Skills",
-        "href": "/skills-marketplace/vercel-labs#publisher-skills-title"
+        "label": "Browse the reference guides",
+        "href": "/skills-marketplace/vercel-labs#publisher-references-title"
       }
     },
     "zh": {
@@ -144,8 +144,8 @@
           "answer": "官网适合查看项目阶段，vercel-labs GitHub 组织适合查找仓库。安装、依赖和贡献方式以各项目 README 为准；这里是精选介绍，不是完整项目镜像。"
         }
       ],
-      "ctaTitle": "探索 Vercel Labs 项目与 Skills",
-      "ctaDescription": "从开发工具、浏览器自动化或具体 Agent 任务开始，比较 Vercel Labs 代表项目与精选 Skills 的用途，阅读对应指南，再结合官方文档确认适合自己的使用方式。",
+      "ctaTitle": "查找 Vercel Labs 的参考指南",
+      "ctaDescription": "从保留的指南里查找部署、前端和浏览器主题，并到原始来源核对当前版本。",
       "overview": {
         "title": "关于 Vercel Labs",
         "paragraphs": [
@@ -159,8 +159,8 @@
       "relatedDescription": "发现更多开发者工具、开源项目与 Agent Skills 的发布者，了解不同团队和创作者的关注领域、代表作品与技术方向，从具体任务出发，继续探索适合自己的工具和实践方法。",
       "faqTitle": "Vercel Labs 常见问题",
       "ctaPrimary": {
-        "label": "浏览项目与 Skills",
-        "href": "/zh/skills-marketplace/vercel-labs#publisher-skills-title"
+        "label": "查看参考指南",
+        "href": "/zh/skills-marketplace/vercel-labs#publisher-references-title"
       }
     },
     "links": [
@@ -277,8 +277,8 @@
           "answer": "Start from morluto’s GitHub profile and the linked REA or flameox repository. Read the current README, releases, and issues for setup and known limitations instead of assuming the same prerequisites across all projects."
         }
       ],
-      "ctaTitle": "Choose a Skill for Your Next Investigation",
-      "ctaDescription": "Start with the task: investigate software behavior or prepare a project’s social preview. Review the matching instructions, gather the required inputs, and verify the supporting tools before running the workflow or relying on its results.",
+      "ctaTitle": "Plan an Authorized Software Inspection",
+      "ctaDescription": "Use the REA guide to choose an available analysis tool and preserve the evidence behind your findings.",
       "overview": {
         "title": "About morluto",
         "paragraphs": [
@@ -292,8 +292,8 @@
       "relatedDescription": "Explore other people and teams working on agent instructions, developer tools, and interface workflows. Compare the purpose of each project and the evidence behind its guidance, then open the relevant publisher profile to understand the source of the work.",
       "faqTitle": "Questions About morluto’s Work",
       "ctaPrimary": {
-        "label": "Explore morluto’s Skills",
-        "href": "/skills-marketplace/morluto#publisher-skills-title"
+        "label": "Read the REA guide",
+        "href": "/skills-marketplace/morluto/rea"
       }
     },
     "zh": {
@@ -332,8 +332,8 @@
           "answer": "从 morluto 的 GitHub 主页进入 REA 或 flameox 仓库，查看当前 README、发布记录与问题讨论。不同项目的依赖和限制不应直接相互套用。"
         }
       ],
-      "ctaTitle": "为下一项调查选择合适的 Skill",
-      "ctaDescription": "先明确要调查软件行为，还是制作项目分享预览图，再选择对应指令。准备必要输入并核对配套工具，运行后检查结果；发现、安装和验收是不同步骤，不能以其中一步代替整个工作流程。",
+      "ctaTitle": "规划一次获准的软件检查",
+      "ctaDescription": "从 REA 指南确认可用的分析工具，并为检查结论保留复核依据。",
       "overview": {
         "title": "关于 morluto",
         "paragraphs": [
@@ -347,8 +347,8 @@
       "relatedDescription": "继续了解发布 Agent 指令、开发工具和界面工作流的个人与团队。先比较项目要解决的问题和指引依据，再进入对应发布者介绍，查看作品背景与原始来源，避免只根据一个名称判断用途或归属。",
       "faqTitle": "关于 morluto 作品的常见问题",
       "ctaPrimary": {
-        "label": "浏览 morluto 的 Skills",
-        "href": "/zh/skills-marketplace/morluto#publisher-skills-title"
+        "label": "阅读 REA 指南",
+        "href": "/zh/skills-marketplace/morluto/rea"
       }
     },
     "links": [
@@ -1560,11 +1560,11 @@
           "answer": "TypeScript adds type checking and tooling to JavaScript development. It can support application code regardless of hosting provider; it does not itself deploy an application or replace Azure infrastructure configuration."
         }
       ],
-      "ctaTitle": "Select guidance for a concrete development change",
-      "ctaDescription": "Start from the code and toolchain involved in your change. Compare the selected instructions with the VS Code and TypeScript project references, then check the relevant setup requirements.",
+      "ctaTitle": "Find Microsoft’s Official Tool Repositories",
+      "ctaDescription": "Use the upstream organization to check current releases and documentation for the specific development tool you are evaluating.",
       "ctaPrimary": {
-        "label": "Browse selected Skills",
-        "href": "/skills-marketplace/microsoft#publisher-skills-title"
+        "label": "Visit Microsoft on GitHub",
+        "href": "https://github.com/microsoft"
       }
     },
     "zh": {
@@ -1615,11 +1615,11 @@
           "answer": "TypeScript 为 JavaScript 开发增加类型检查和工具支持，与应用最终使用哪个云平台没有绑定关系。它可以帮助开发应用代码，但不负责部署应用或替代 Azure 基础设施配置。"
         }
       ],
-      "ctaTitle": "为一项具体开发修改选择指引",
-      "ctaDescription": "从这次修改涉及的代码和工具链出发，对照精选指令与 VS Code、TypeScript 项目资料，再核对相关环境要求。",
+      "ctaTitle": "查找 Microsoft 的官方工具仓库",
+      "ctaDescription": "围绕正在评估的开发工具，从上游组织核对当前发行版本和文档。",
       "ctaPrimary": {
-        "label": "浏览精选 Skills",
-        "href": "/zh/skills-marketplace/microsoft#publisher-skills-title"
+        "label": "访问 Microsoft 的 GitHub",
+        "href": "https://github.com/microsoft"
       }
     },
     "logo": "/blog/brand/publishers/microsoft.webp"
@@ -1784,11 +1784,11 @@
           "answer": "It combines calendar schedules with unfinished tasks to prepare a planning or standup summary. The workflow needs the relevant calendar and task access, and its output reflects the information available to the authorized user."
         }
       ],
-      "ctaTitle": "Connect a Feishu office task to the right commands",
-      "ctaDescription": "Choose a document, message, calendar, or table task from the selected guidance. Confirm the application identity, authorized scope, and intended recipient before allowing an operation.",
+      "ctaTitle": "Review Feishu App Permissions",
+      "ctaDescription": "Check the official platform documentation for the application identity, scopes, and user authorization required by your office workflow.",
       "ctaPrimary": {
-        "label": "Browse selected Skills",
-        "href": "/skills-marketplace/open.feishu.cn#publisher-skills-title"
+        "label": "Visit Feishu Open Platform",
+        "href": "https://open.feishu.cn/"
       }
     },
     "zh": {
@@ -1839,11 +1839,11 @@
           "answer": "该工作流结合日历安排与未完成任务生成规划摘要，需要对应的日历和任务访问权限。结果以已授权用户实际可见的信息为基础，适合整理当天安排和后续事项。"
         }
       ],
-      "ctaTitle": "为飞书办公任务选择对应命令",
-      "ctaDescription": "从文档、消息、日历或表格任务选择对应指引；执行操作前，确认应用身份、授权范围及目标接收方。",
+      "ctaTitle": "核对飞书应用权限",
+      "ctaDescription": "在开放平台查看办公任务所需的应用身份、权限范围和用户授权方式。",
       "ctaPrimary": {
-        "label": "浏览精选 Skills",
-        "href": "/zh/skills-marketplace/open.feishu.cn#publisher-skills-title"
+        "label": "访问飞书开放平台",
+        "href": "https://open.feishu.cn/"
       }
     }
   },
@@ -1975,11 +1975,11 @@
           "answer": "No. The official site distinguishes free-license eligibility from paid company licensing. Source availability and GitHub access do not imply unlimited free use; check the current license and terms for your organization and project."
         }
       ],
-      "ctaTitle": "Turn a video brief into editable React scenes",
-      "ctaDescription": "Use the selected Remotion instructions to organize assets, composition timing, and parameters. Check the Studio preview before choosing the render settings for the final file.",
+      "ctaTitle": "Check the Remotion Setup for Your Video",
+      "ctaDescription": "Consult the upstream project for current rendering requirements and the license that applies to your use.",
       "ctaPrimary": {
-        "label": "Browse selected Skills",
-        "href": "/skills-marketplace/remotion-dev#publisher-skills-title"
+        "label": "Visit the Remotion publisher",
+        "href": "https://github.com/remotion-dev"
       }
     },
     "zh": {
@@ -2030,11 +2030,11 @@
           "answer": "不是。官网区分免费许可资格与付费公司许可。能够访问源码和 GitHub 仓库，不代表所有用途都可以无限免费使用；应按照实际组织和项目查看当前许可与条款。"
         }
       ],
-      "ctaTitle": "把视频简报转成可编辑的 React 场景",
-      "ctaDescription": "用精选 Remotion 指令组织素材、合成时序和参数，先检查 Studio 预览，再决定最终文件的渲染设置。",
+      "ctaTitle": "核对 Remotion 视频项目的运行条件",
+      "ctaDescription": "从官方来源确认当前渲染要求，以及适用于你使用方式的许可。",
       "ctaPrimary": {
-        "label": "浏览精选 Skills",
-        "href": "/zh/skills-marketplace/remotion-dev#publisher-skills-title"
+        "label": "访问 Remotion 官方发布者",
+        "href": "https://github.com/remotion-dev"
       }
     },
     "logo": "/blog/brand/publishers/remotion-dev.webp"
@@ -3609,11 +3609,11 @@
           "answer": "It manages GitHub pull-request review comments through a CLI and companion Skills, helping an agent organize findings and work through feedback without confusing that task with interface design."
         }
       ],
-      "ctaTitle": "Explore Paul Bakaus Projects and Skills",
-      "ctaDescription": "Start with a concrete task in interface design, compare the selected instructions and software projects, and understand how their different roles can support the way you plan, build, and review your work.",
+      "ctaTitle": "Put a Design Brief Into Practice",
+      "ctaDescription": "Use Impeccable to develop a direction, then review the implemented interface against the brief.",
       "ctaPrimary": {
-        "label": "Browse selected Skills",
-        "href": "/skills-marketplace/pbakaus#publisher-skills-title"
+        "label": "Read the Impeccable guide",
+        "href": "/skills-marketplace/pbakaus/impeccable"
       }
     },
     "zh": {
@@ -3664,11 +3664,11 @@
           "answer": "它通过 CLI 与配套 Skills 管理 GitHub PR 审查评论，帮助 Agent 整理发现并处理反馈，与界面设计承担不同职责。"
         }
       ],
-      "ctaTitle": "探索 Paul Bakaus 的项目与 Skills",
-      "ctaDescription": "从界面设计的具体问题出发，比较精选指引与开源项目的不同作用，了解它们如何参与实际工作，再根据项目环境与当前目标选择适合自己的实践方法。",
+      "ctaTitle": "从设计简报到界面核验",
+      "ctaDescription": "用 Impeccable 确定设计方向，再将实现的界面与原始需求对照复核。",
       "ctaPrimary": {
-        "label": "浏览精选 Skills",
-        "href": "/zh/skills-marketplace/pbakaus#publisher-skills-title"
+        "label": "阅读 Impeccable 指南",
+        "href": "/zh/skills-marketplace/pbakaus/impeccable"
       }
     },
     "logo": "/blog/brand/publishers/pbakaus.webp"
@@ -4009,11 +4009,11 @@
           "answer": "The repository identifies CC-BY-SA-4.0. Attribution and share-alike requirements should be checked when reusing its material. This does not set the license for every Trail of Bits software project; each repository supplies its own terms."
         }
       ],
-      "ctaTitle": "Match the security question to the review method",
-      "ctaDescription": "Use the Skill list to distinguish codebase context building, security review of a diff, and property-based testing. State the assumptions or invariants the investigation must check.",
+      "ctaTitle": "Find the Original Security Review Tools",
+      "ctaDescription": "Check the official organization for the relevant tool or instruction before assigning an audit task.",
       "ctaPrimary": {
-        "label": "View selected Skills",
-        "href": "/skills-marketplace/trailofbits#publisher-skills-title"
+        "label": "Visit Trail of Bits on GitHub",
+        "href": "https://github.com/trailofbits"
       }
     },
     "zh": {
@@ -4064,11 +4064,11 @@
           "answer": "仓库标注 CC-BY-SA-4.0，复用材料时应查看署名与相同方式共享要求。这并不意味着其他 Trail of Bits 软件项目采用同一许可，每个仓库仍有自己的条款。"
         }
       ],
-      "ctaTitle": "按安全问题选择审查方法",
-      "ctaDescription": "从 Skill 列表区分代码上下文调查、变更安全审查和属性测试，并写明本次分析需要核实的假设或不变量。",
+      "ctaTitle": "查找安全审查工具的原始来源",
+      "ctaDescription": "分配审计任务前，先到官方组织找到适用的工具或指引，核对维护状态。",
       "ctaPrimary": {
-        "label": "查看精选 Skills",
-        "href": "/zh/skills-marketplace/trailofbits#publisher-skills-title"
+        "label": "访问 Trail of Bits 的 GitHub",
+        "href": "https://github.com/trailofbits"
       }
     },
     "logo": "/blog/brand/publishers/trailofbits.webp"
@@ -4205,11 +4205,11 @@
           "answer": "No. Access depends on the authenticated client or integration, its permission scopes, and the user’s repository rights. An instruction file alone does not supply credentials or change organization access controls."
         }
       ],
-      "ctaTitle": "Choose a GitHub instruction for the next repository change",
-      "ctaDescription": "Start with commit preparation, README work, or a bounded refactor. Use the matching instructions with the actual diff and repository rules; assess CLI or MCP access separately.",
+      "ctaTitle": "Find GitHub’s Maintained Developer Resources",
+      "ctaDescription": "Start with the official organization when checking the current source or release of a GitHub tool.",
       "ctaPrimary": {
-        "label": "View selected Skills",
-        "href": "/skills-marketplace/github#publisher-skills-title"
+        "label": "Visit GitHub’s organization",
+        "href": "https://github.com/github"
       }
     },
     "zh": {
@@ -4260,11 +4260,11 @@
           "answer": "不会。访问范围取决于已经认证的客户端或集成、授权权限以及用户实际拥有的仓库权限。指令文件本身不提供凭据，也不会改变组织的访问控制。"
         }
       ],
-      "ctaTitle": "为下一项仓库变更选择 GitHub 指引",
-      "ctaDescription": "从提交准备、README 编写或范围明确的重构出发，结合实际差异和仓库规则选择对应指令；CLI 或 MCP 的访问条件另行核对。",
+      "ctaTitle": "查找 GitHub 维护的开发资源",
+      "ctaDescription": "需要确认 GitHub 工具的当前源码或版本时，可以从官方组织查起。",
       "ctaPrimary": {
-        "label": "查看精选 Skills",
-        "href": "/zh/skills-marketplace/github#publisher-skills-title"
+        "label": "访问 GitHub 组织",
+        "href": "https://github.com/github"
       }
     },
     "logo": "/blog/brand/publishers/github.webp"
@@ -4397,11 +4397,11 @@
           "answer": "The CLI documents a --dry-run option for previewing requests. A preview helps inspect the intended call; it does not confirm that a later operation succeeded."
         }
       ],
-      "ctaTitle": "Explore Google Workspace Projects and Skills",
-      "ctaDescription": "Start with a file, email, scheduling, or spreadsheet task. Compare the selected instructions and gws project, then prepare the service access needed for that specific workflow.",
+      "ctaTitle": "Check Google Workspace API Access",
+      "ctaDescription": "Identify the Workspace service and check its official authentication and access requirements before designing automation.",
       "ctaPrimary": {
-        "label": "Browse selected Skills",
-        "href": "/skills-marketplace/googleworkspace#publisher-skills-title"
+        "label": "Visit the Google Workspace source",
+        "href": "https://github.com/googleworkspace"
       }
     },
     "zh": {
@@ -4452,11 +4452,11 @@
           "answer": "CLI 文档提供 --dry-run 选项用于预览请求。预览有助于检查目标调用，但不能证明之后的实际操作已经成功。"
         }
       ],
-      "ctaTitle": "探索 Google Workspace 项目与 Skills",
-      "ctaDescription": "从文件、邮件、日程或表格任务出发，比较精选指引与 gws 项目，再为具体工作准备相应服务访问和执行环境。",
+      "ctaTitle": "核对 Google Workspace API 访问条件",
+      "ctaDescription": "先选定要使用的 Workspace 服务，再从官方来源核对自动化所需的认证和访问范围。",
       "ctaPrimary": {
-        "label": "浏览精选 Skills",
-        "href": "/zh/skills-marketplace/googleworkspace#publisher-skills-title"
+        "label": "查看 Google Workspace 官方来源",
+        "href": "https://github.com/googleworkspace"
       }
     },
     "logo": "/blog/brand/publishers/googleworkspace.webp"
@@ -4601,11 +4601,11 @@
           "answer": "Set the target section, include-path rules, and page or depth limits. Inspect the completed output to confirm the expected pages were captured instead of assuming that starting a job means it finished."
         }
       ],
-      "ctaTitle": "Explore Firecrawl Projects and Skills",
-      "ctaDescription": "Start with the web information you need, compare search, extraction, and interaction workflows, and choose the Firecrawl tools that produce useful context for your next step.",
+      "ctaTitle": "Run a Scoped Firecrawl Extraction",
+      "ctaDescription": "Choose public pages you may collect, then use the guide to verify extracted fields against the source pages.",
       "ctaPrimary": {
-        "label": "Browse selected Skills",
-        "href": "/skills-marketplace/firecrawl#publisher-skills-title"
+        "label": "Read the Firecrawl project guide",
+        "href": "/skills-marketplace/firecrawl/firecrawl"
       }
     },
     "zh": {
@@ -4656,11 +4656,11 @@
           "answer": "设置目标栏目、路径包含规则以及页面或深度限制，并检查最终输出是否覆盖预期页面，不能把任务启动直接视为爬取完成。"
         }
       ],
-      "ctaTitle": "探索 Firecrawl 项目与 Skills",
-      "ctaDescription": "从需要获取的网页信息出发，比较搜索、内容提取与交互流程，选择能够为下一步研究或应用开发提供有效上下文的 Firecrawl 工具。",
+      "ctaTitle": "按范围运行 Firecrawl 提取",
+      "ctaDescription": "选定获准采集的公开页面，再按指南将提取字段与原页面对照核验。",
       "ctaPrimary": {
-        "label": "浏览精选 Skills",
-        "href": "/zh/skills-marketplace/firecrawl#publisher-skills-title"
+        "label": "阅读 Firecrawl 项目指南",
+        "href": "/zh/skills-marketplace/firecrawl/firecrawl"
       }
     },
     "logo": "/blog/brand/publishers/firecrawl.webp"
@@ -4789,11 +4789,11 @@
           "answer": "No. Local development supports building and testing an application. Operating a self-hosted deployment also requires maintaining the infrastructure, configuration, updates, and service environment."
         }
       ],
-      "ctaTitle": "Explore Supabase Projects and Skills",
-      "ctaDescription": "Start with the backend feature or database issue you need to address. Compare the selected Skills and development tools, then choose a workflow that includes checking the actual application result.",
+      "ctaTitle": "Check a Supabase Project Through MCP",
+      "ctaDescription": "Use a development project and a read-only connection to inspect its schema and verify a narrowly scoped query.",
       "ctaPrimary": {
-        "label": "Browse selected Skills",
-        "href": "/skills-marketplace/supabase#publisher-skills-title"
+        "label": "Read the Supabase project guide",
+        "href": "/skills-marketplace/supabase/supabase"
       }
     },
     "zh": {
@@ -4844,11 +4844,11 @@
           "answer": "不相同。本地开发主要服务于应用构建和测试，自托管运行还需要维护基础设施、配置、更新和服务环境。"
         }
       ],
-      "ctaTitle": "探索 Supabase 项目与 Skills",
-      "ctaDescription": "从要实现的后端功能或要排查的数据库问题出发，比较精选 Skills 与开发工具，选择包含实际应用结果检查的工作流程。",
+      "ctaTitle": "通过 MCP 核查 Supabase 项目",
+      "ctaDescription": "在开发项目配置只读连接，检查数据库结构并核验一次范围明确的查询。",
       "ctaPrimary": {
-        "label": "浏览精选 Skills",
-        "href": "/zh/skills-marketplace/supabase#publisher-skills-title"
+        "label": "阅读 Supabase 项目指南",
+        "href": "/zh/skills-marketplace/supabase/supabase"
       }
     },
     "logo": "/blog/brand/publishers/supabase.webp"

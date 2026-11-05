@@ -4,7 +4,8 @@ import json
 import subprocess
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urljoin, urlsplit
+from xml.etree import ElementTree
 
 
 class Node:
@@ -54,6 +55,28 @@ def labels(node):
     return [li.text().strip() for li in groups[0].children if li.tag == 'li']
 
 
+
+def check_reachability(pages):
+    graph = {}
+    for source, root in pages.items():
+        targets = set()
+        for link in find(root, 'a', 'href'):
+            href = urlsplit(urljoin(f'https://floatboat.ai{source}', link.attrs['href']))
+            if href.netloc == 'floatboat.ai' and href.path in pages and href.path != source:
+                targets.add(href.path)
+        graph[source] = targets
+
+    for hub in ('/skills-marketplace', '/zh/skills-marketplace'):
+        same_locale = {path for path in pages if path == hub or path.startswith(hub + '/')}
+        visited = {hub}
+        pending = [hub]
+        while pending:
+            source = pending.pop()
+            for target in graph[source] & same_locale - visited:
+                visited.add(target)
+                pending.append(target)
+        assert same_locale == visited, ('Unreachable marketplace pages from ' + hub, sorted(same_locale - visited))
+
 def main():
     # Load the actual reviewed catalog instead of duplicating its membership in this check.
     source = """
@@ -93,9 +116,28 @@ def main():
             directory = find(hub, 'section', 'id', section)[0]
             rows = find(directory, 'li', 'data-directory-row')
             assert [find(row, 'a')[0].attrs['href'] for row in rows] == expected, (locale, section)
+        public_paths = {e['href'] for e in entries}
+        expected_reference_publishers = {
+            f"{prefix}/skills-marketplace/{p['handle']}" for p in catalog['publishers']
+            if p['handle'] not in active_publishers
+        }
+        category_hub = pages[f'{prefix}/skills-marketplace/categories']
+        reference_sections = find(category_hub, 'section', 'aria-labelledby', 'reference-publishers-title')
+        assert len(reference_sections) == bool(expected_reference_publishers)
+        if reference_sections:
+            assert {a.attrs['href'] for a in find(reference_sections[0], 'a')} == expected_reference_publishers
         for publisher in catalog['publishers']:
             handle = publisher['handle']
             root = pages[f'{prefix}/skills-marketplace/{handle}']
+            expected_references = {
+                e['href'] for e in inventory
+                if e['authorHandle'] == handle and e['href'].startswith('/') and e['href'] not in public_paths
+            }
+            reference_sections = find(root, 'section', 'aria-labelledby', 'publisher-references-title')
+            assert len(reference_sections) == bool(expected_references), (locale, handle, 'references')
+            if reference_sections:
+                actual = [a.attrs['href'] for a in find(reference_sections[0], 'a')]
+                assert len(actual) == len(expected_references) and set(actual) == expected_references, (locale, handle)
             for kind in ['skill', 'project']:
                 selected = [e for e in entries if e['entryType'] == kind and e['authorHandle'] == handle]
                 sections = find(root, 'section', 'aria-labelledby', f'publisher-{kind}s-title')
@@ -137,6 +179,13 @@ def main():
             expected = [t['label'] for t in entry['taxonomy']['categories'] + entry['taxonomy']['tags']]
             assert labels(profile[0])[:len(expected)] == expected, entry['href']
             checked += 1
+    sitemap = ElementTree.parse('.next/server/app/blog/sitemap.xml.body')
+    marketplace_sitemap = {
+        path for loc in sitemap.findall('.//{*}loc')
+        if (path := urlsplit(loc.text).path).startswith(('/skills-marketplace', '/zh/skills-marketplace'))
+    }
+    assert set(pages) == marketplace_sitemap, ('Marketplace sitemap and built pages differ', sorted(set(pages) ^ marketplace_sitemap))
+    anchors = {path: {node.attrs['id'] for node in find(root, attr='id')} for path, root in pages.items()}
     for route, root in pages.items():
         for a in find(root, 'a'):
             href = a.attrs.get('href', '')
@@ -145,9 +194,13 @@ def main():
                 assert 'type=' not in parts.query and 'tag=' not in parts.query, (route, href)
                 if not parts.netloc or parts.netloc == 'floatboat.ai':
                     assert parts.path in pages, (route, href)
+            target = urlsplit(urljoin(f'https://floatboat.ai{route}', href))
+            if target.netloc == 'floatboat.ai' and target.path in pages and target.fragment:
+                assert unquote(target.fragment) in anchors[target.path], ('Missing marketplace anchor', route, href)
             if find(a, attr='data-resource-labels'):
                 raise AssertionError(('Metadata links nested inside a resource link', route))
-    print(f'OK: {len(pages)} marketplace pages, 14 category pages, {checked} localized detail profiles; exact directory rows, publisher and category cards, metadata, schema and internal links')
+    check_reachability(pages)
+    print(f'OK: {len(pages)} reachable marketplace pages, 14 category pages, {checked} localized detail profiles; exact directory rows, publisher and category cards, metadata, schema and internal links')
 
 
 if __name__ == '__main__':

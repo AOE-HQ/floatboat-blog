@@ -5673,5 +5673,829 @@
         }
       ]
     }
+  },
+  {
+    "author": "firecrawl",
+    "slug": "firecrawl",
+    "name": "Firecrawl",
+    "repository": "https://github.com/firecrawl/firecrawl",
+    "website": "https://www.firecrawl.dev/",
+    "documentation": "https://docs.firecrawl.dev/mcp-server/tools",
+    "license": "AGPL-3.0",
+    "licenseUrl": "https://github.com/firecrawl/firecrawl/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-06",
+    "related": [
+      "supabase/supabase",
+      "sherlock-project/sherlock",
+      "morluto/rea",
+      "openclaw/openclaw"
+    ],
+    "en": {
+      "seoTitle": "Firecrawl: MCP Web Search, Scraping, and JSON Extraction",
+      "seoDescription": "Use Firecrawl MCP in Codex or Cursor to find sources, read known URLs, and extract structured fields. Verify the results against the original pages.",
+      "description": "Firecrawl gives an Agent separate tools to discover web sources, read a known page, and extract fields into JSON. Choose the operation by the input you have, then compare the result with the source before using it downstream.",
+      "kind": "Web Data Platform and MCP",
+      "overviewTitle": "About Firecrawl",
+      "overview": [
+        "Firecrawl is a web-data platform. Its MCP interface exposes tools that compatible clients such as Codex and Cursor can call. Use Search to discover URLs, Scrape for a known page, and the JSON format in Scrape to collect fields against a schema. The tool schema supplied by the client identifies the options available in that session.",
+        "The hosted MCP offers a limited keyless path as well as account sign-in and API-key authentication. Hosted features depend on the connection mode, plan, and team policy. A local MCP process may still call the cloud API. When using a self-hosted API, check which services the deployment enables before relying on a tool.",
+        "The main repository is AGPL-3.0. The upstream README identifies separate MIT licensing for SDKs and some UI components. Keep those source terms separate from hosted service access, and preserve the source URL when handing results to a report or pipeline."
+      ],
+      "capabilitiesTitle": "Choose the Firecrawl Tool by Input",
+      "capabilitiesIntro": "A query, a known URL, and a field schema require different checks. Pick the narrowest available tool and record where the content came from, which fields were missing, and what needs manual review.",
+      "capabilities": [
+        {
+          "title": "Discover candidate sources",
+          "description": "Run Search with a precise query, then open the promising URLs and verify that the source answers the question."
+        },
+        {
+          "title": "Read a known page",
+          "description": "Use Scrape for a specific URL and retain its source address alongside the extracted text."
+        },
+        {
+          "title": "Extract structured fields",
+          "description": "Request JSON from Scrape using a field schema. Compare extracted values with the original text and record unsupported or missing values separately."
+        }
+      ],
+      "useCases": {
+        "title": "Firecrawl Use Cases for Agent Web Research",
+        "description": "Define the output before making a web request. A source shortlist, a page extract, a comparison table, and a scoped content inventory each need different evidence before they can be reused.",
+        "items": [
+          {
+            "title": "Build a shortlist of primary sources",
+            "description": "Give the Agent a narrow research question and preferred source types. Use Search to find candidates, read selected pages, and hand off a shortlist with source links and a note on what each source establishes."
+          },
+          {
+            "title": "Summarize a known release note",
+            "description": "Supply the official release URL and the change you need to understand. Scrape the page and cite the relevant sections, keeping preview features, released behavior, and unresolved details separate."
+          },
+          {
+            "title": "Compare fields across product pages",
+            "description": "Provide approved URLs and a schema for fields such as plan name, stated limit, and billing period. Request JSON, compare each value to the original page, and flag missing or ambiguous fields before exporting the table."
+          },
+          {
+            "title": "Inventory a bounded documentation section",
+            "description": "Define the path prefix, page limit, and expected document types before authorizing a crawl. Record the URLs returned and check a sample for duplication, missing sections, or unexpected paths."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What You Need Before Connecting Firecrawl",
+        "description": "Use the MCP setup instructions for the client you actually use. Before sending URLs or queries, confirm the connection mode, available tools, and allowed scope of the requested work.",
+        "items": [
+          {
+            "title": "A supported MCP client",
+            "description": "Follow the official Codex or Cursor setup path, then confirm the tools visible in that session."
+          },
+          {
+            "title": "A connection mode that fits the job",
+            "description": "Hosted keyless access exposes Search, Scrape, and Parse with limits. Check authenticated or self-hosted tool availability before planning a crawl or other work."
+          },
+          {
+            "title": "Authorized inputs and a verification plan",
+            "description": "Approve query or URL scope, cap broad collection, and specify the fields or source passages the Agent must verify before delivery."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "When should I use Search instead of Scrape?",
+          "answer": "Use Search to discover likely sources from a query. Use Scrape once you have a specific URL and need its text or fields."
+        },
+        {
+          "question": "How do I get structured JSON from a known URL?",
+          "answer": "Request the JSON format in the current Scrape tool schema. Define the fields you need and check the returned values against the source page."
+        },
+        {
+          "question": "Can I try the hosted MCP without an API key?",
+          "answer": "The hosted keyless mode offers Search, Scrape, and Parse within documented limits. Browser sign-in and API-key connections expose additional tools subject to the plan and team policy."
+        },
+        {
+          "question": "Does local MCP mean that requests stay local?",
+          "answer": "A local MCP process can call the hosted API. Check the configured API destination. A self-hosted API has its own enabled services and operational requirements."
+        },
+        {
+          "question": "Why might a planned crawl tool be missing?",
+          "answer": "Tool availability varies by connection mode, deployment, and team policy. Inspect the client’s actual tool list before giving the Agent a crawl task."
+        },
+        {
+          "question": "What license applies to the main repository?",
+          "answer": "Firecrawl publishes the main repository under AGPL-3.0. Its README separately identifies MIT licensing for SDKs and some UI components, and hosted access has separate conditions."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Firecrawl：MCP 网页搜索、抓取与结构化提取",
+      "seoDescription": "在 Codex 或 Cursor 中用 Firecrawl MCP 查找来源、抓取指定网页并提取 JSON 字段，交付前回到原网页核对。",
+      "description": "Firecrawl 为 Agent 提供不同的网页数据工具。可以从问题查找来源、读取指定网址，或按字段结构提取 JSON。先按手里的输入选择工具，再核对输出能否用于后续任务。",
+      "kind": "网页数据平台与 MCP",
+      "overviewTitle": "关于 Firecrawl",
+      "overview": [
+        "Firecrawl 是网页数据平台。Codex、Cursor 等兼容客户端可通过 MCP 调用工具。已知查询词时用 Search 找网址，已知网址时用 Scrape 读取页面，需要结构化字段时使用 Scrape 的 JSON 格式。具体选项以当前客户端收到的工具参数为准。",
+        "托管 MCP 支持受限的免登录与免 API Key 模式，也支持账号登录和 API Key。能调用的功能取决于连接方式、套餐与团队策略。本地运行 MCP 进程仍可能调用云端 API；自托管时先核对已启用的服务，再安排 Agent 任务。",
+        "主仓采用 AGPL-3.0。官方 README 对 SDK 与部分界面组件另行标注 MIT。源码许可和托管访问条件需分别查看。输出交接给报告或下游流程前，应保留来源网址和用于核对的原文。"
+      ],
+      "capabilitiesTitle": "按输入选择 Firecrawl 工具",
+      "capabilitiesIntro": "手里只有问题、已经知道网址，或需要按字段结构提取时，核查方式各不相同。选择能完成任务的最小范围，保留原文来源，并明确哪些值缺失或仍需人工核对。",
+      "capabilities": [
+        {
+          "title": "查找候选来源",
+          "description": "用 Search 执行明确的查询，再打开相关页面，核对来源是否真的回答了问题。"
+        },
+        {
+          "title": "读取指定页面",
+          "description": "将具体网址交给 Scrape，保留页面地址和用于核对的正文。"
+        },
+        {
+          "title": "提取结构化字段",
+          "description": "在 Scrape 中选择 JSON 并定义字段结构。将结果与原文核对，另行记录缺失或无法判断的值。"
+        }
+      ],
+      "useCases": {
+        "title": "Firecrawl 的 Agent 网页调研场景",
+        "description": "发起请求前先明确交付物。来源清单、单页摘要、结构化对比表和站点盘点所需的核对证据不同，只有能回查原始来源的结果才适合进入下一环节。",
+        "items": [
+          {
+            "title": "建立一手来源清单",
+            "description": "提供具体研究问题和优先使用的来源类型。用 Search 找候选、打开入选页面，并在清单中记录每条来源的网址和它能支持的结论。"
+          },
+          {
+            "title": "汇总一条已知发布说明",
+            "description": "提供官方发布说明链接与需要核对的变更。抓取正文并标记相关段落，区分已发布功能、预览能力和文档仍未说明的问题。"
+          },
+          {
+            "title": "对比产品页面字段",
+            "description": "提供获准读取的网址，定义套餐名称、页面标示的限制和计费周期等字段。取得 JSON 后逐项回看原文，导出前标记歧义和缺失项。"
+          },
+          {
+            "title": "盘点指定文档栏目",
+            "description": "批准爬取前确定路径前缀、页数上限和所需文档类型。保存返回的网址，并抽查重复项、缺页和越出范围的地址。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "连接 Firecrawl 前的准备",
+        "description": "按实际使用的客户端选择 MCP 接入说明。提交网址或搜索问题前，核对连接方式、可用工具与任务允许覆盖的范围，再确定要保留哪些核对证据。",
+        "items": [
+          {
+            "title": "受支持的 MCP 客户端",
+            "description": "按照官方 Codex 或 Cursor 说明设置，在实际使用的会话中核对可见工具。"
+          },
+          {
+            "title": "与任务匹配的连接方式",
+            "description": "托管的免登录与免 API Key 模式在限制内提供搜索、抓取和解析。安排爬取等任务前，核对认证连接或自托管部署是否提供相应工具。"
+          },
+          {
+            "title": "获准输入和核验范围",
+            "description": "先确定可以提交的问题和网址，限制大范围收集，并说明交付前必须核对哪些字段或原文。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "什么时候应该先搜索？",
+          "answer": "手里只有问题时，用 Search 发现可能的来源。已经知道网址并需要正文或字段时，直接用 Scrape。"
+        },
+        {
+          "question": "怎样从指定网页得到 JSON？",
+          "answer": "在当前 Scrape 工具参数里选择 JSON 格式，定义所需字段，并将每个返回值与页面原文核对。"
+        },
+        {
+          "question": "试用托管 MCP 一定要 API Key 吗？",
+          "answer": "托管的免登录与免 API Key 模式可以在限制内使用搜索、抓取和解析。账号登录与 API Key 模式可提供更多工具，具体取决于套餐与团队策略。"
+        },
+        {
+          "question": "本地 MCP 是否代表请求留在本机？",
+          "answer": "本地 MCP 进程仍可向托管 API 发送请求。应检查实际配置的 API 地址。自托管 API 的功能则取决于部署开启的服务。"
+        },
+        {
+          "question": "为什么找不到计划使用的爬取工具？",
+          "answer": "可用工具受连接方式、部署配置和团队策略影响。安排爬取前，请查看当前客户端真正列出的工具。"
+        },
+        {
+          "question": "主仓使用什么许可证？",
+          "answer": "Firecrawl 主仓采用 AGPL-3.0。README 对 SDK 与部分界面组件另行标注 MIT，托管服务也有单独的访问条件。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "supabase",
+    "slug": "supabase",
+    "name": "Supabase",
+    "repository": "https://github.com/supabase/supabase",
+    "website": "https://supabase.com/",
+    "documentation": "https://supabase.com/docs/guides/ai-tools/mcp",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/supabase/supabase/blob/master/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-06",
+    "related": [
+      "firecrawl/firecrawl",
+      "graphify-labs/graphify",
+      "openai/codex",
+      "affaan-m/ecc"
+    ],
+    "en": {
+      "seoTitle": "Supabase: Read-Only Postgres Checks With MCP",
+      "seoDescription": "Connect Codex or Cursor to a scoped Supabase project. Inspect Postgres tables, compare migrations, and run approved read-only queries without changing the database.",
+      "description": "Supabase MCP lets an Agent inspect a selected Postgres project from Codex or Cursor. Start with a development project, narrow the available tools, and review read-only evidence before planning changes.",
+      "kind": "Postgres Platform and MCP",
+      "overviewTitle": "About Supabase",
+      "overview": [
+        "Supabase is a Postgres platform with services for application backends. The MCP server is one way for a compatible Agent to work with the platform. With the database feature group enabled, the Agent can list tables and migrations or submit SQL through its configured connection.",
+        "The hosted endpoint supports project scoping with project_ref and a read-only Postgres execution mode with read_only=true. Combine those with a restricted feature group such as database. Hosted clients typically authorize through a browser. Supabase CLI also provides a local development endpoint, so check the URL and project before opening a session.",
+        "A read-only query can still disclose data. Prefer a local or development project, request only the columns or aggregates that answer the question, and keep credentials out of prompts and reports. The platform repository is Apache-2.0. Its license and hosted access are separate considerations."
+      ],
+      "capabilitiesTitle": "Inspect the Database With a Scoped Connection",
+      "capabilitiesIntro": "Choose a concrete database question, then decide whether schema metadata or a small query can answer it. Keep the project scope, query text, and evidence visible so another developer can check the same assumptions.",
+      "capabilities": [
+        {
+          "title": "Inventory Postgres tables",
+          "description": "Use list_tables to inspect a scoped project and record the tables relevant to an integration or migration review."
+        },
+        {
+          "title": "Compare migration history",
+          "description": "Use list_migrations to compare applied migration history with your checked-out repository and flag any unexplained differences."
+        },
+        {
+          "title": "Review read-only query evidence",
+          "description": "When metadata is insufficient, agree on a narrow query and validate its scope, expected output, and result before drawing conclusions."
+        }
+      ],
+      "useCases": {
+        "title": "Supabase Use Cases for Read-Only Agent Checks",
+        "description": "Keep this pass separate from implementation. A table inventory, a migration comparison, or an approved aggregate can answer a database question before anyone opens a write-capable connection.",
+        "items": [
+          {
+            "title": "Prepare an integration handoff",
+            "description": "Point the Agent at an approved development project and ask for the tables an endpoint reads. Compare the returned structure with the application code and document which references still need confirmation."
+          },
+          {
+            "title": "Spot migration drift before release",
+            "description": "Give the Agent the repository migration list and the expected staging project. Compare those files with list_migrations and report missing or unexpected entries for review before any rollout."
+          },
+          {
+            "title": "Validate a synthetic data rule",
+            "description": "Ask for a count of synthetic records that violate an agreed condition. Review the SELECT before execution, then verify the aggregate against the fixture without exporting raw rows."
+          },
+          {
+            "title": "Investigate an unexpected join",
+            "description": "Use schema metadata first to confirm keys and column types. If a read is needed, approve a limited query on test data and report whether its results support the suspected join issue."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What You Need for a Read-Only Supabase Review",
+        "description": "Select the environment before connecting the Agent. Check the project reference, enabled feature group, and allowed inputs, then set a review step for any query that goes beyond schema metadata.",
+        "items": [
+          {
+            "title": "A development or approved project",
+            "description": "Prefer a local or development database and verify the project reference before calling a tool."
+          },
+          {
+            "title": "A scoped MCP connection",
+            "description": "For hosted access, use the documented OAuth setup and configure project_ref, read_only=true, and only the required feature groups."
+          },
+          {
+            "title": "Permission to inspect the requested data",
+            "description": "Ask for metadata or aggregates when they suffice. Keep secrets out of chat, and review the exact SQL before submitting it."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which clients can use Supabase MCP?",
+          "answer": "The official setup lists compatible MCP clients, including Codex and Cursor. Use the current configuration for your client and verify the connected server before running a task."
+        },
+        {
+          "question": "How do I limit access to one hosted project?",
+          "answer": "Set project_ref to the intended project and select only the feature groups required for the job. Check the target again after authorization."
+        },
+        {
+          "question": "What does read_only=true do?",
+          "answer": "It makes SQL run as a read-only Postgres user. The Agent can still see the returned results, so keep the requested data narrow."
+        },
+        {
+          "question": "Do I need a personal access token?",
+          "answer": "The normal hosted sign-in uses browser authorization. A manual setup such as CI may have different authentication requirements."
+        },
+        {
+          "question": "Can I check a local development database?",
+          "answer": "Supabase CLI exposes a local MCP endpoint. Use the address reported for the local project and confirm the tools that endpoint actually offers."
+        },
+        {
+          "question": "Is this the same as installing Supabase Agent Skills?",
+          "answer": "MCP gives the Agent a live connection and tools. The standalone Skills supply guidance, and a plugin may package guidance with a connection setup."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Supabase：用 MCP 只读核对 Postgres 数据库",
+      "seoDescription": "在 Codex 或 Cursor 中连接限定范围的 Supabase 项目，查看表结构、比对迁移历史并执行获准的只读查询。",
+      "description": "通过 Supabase MCP，Agent 可以从 Codex 或 Cursor 检查指定的 Postgres 项目。先选开发环境、限制工具组，再用只读证据决定后续是否需要改动。",
+      "kind": "Postgres 平台与 MCP",
+      "overviewTitle": "关于 Supabase",
+      "overview": [
+        "Supabase 为应用提供基于 Postgres 的后端服务。兼容 Agent 可以通过 MCP 使用部分平台工具。开启数据库工具组后，可在当前连接中列出表和迁移记录，或提交 SQL。",
+        "托管 MCP 可通过 project_ref 限定一个项目，通过 read_only=true 使用只读 Postgres 用户执行查询，并可仅开启 database 等必要工具组。托管客户端通常通过浏览器授权。Supabase CLI 也提供本地开发入口，连接前应核对实际地址与项目。",
+        "只读查询的结果仍可能包含敏感数据。优先在本地或开发项目检查，只返回问题所需的字段或汇总，把凭据留在配置中。Supabase 平台主仓采用 Apache-2.0；源码许可与托管访问条件各自核对。"
+      ],
+      "capabilitiesTitle": "在限定范围内核对数据库",
+      "capabilitiesIntro": "先把数据库问题说清楚，再决定只看结构元数据，还是需要补一个小范围查询。保留项目范围、查询语句和判断依据，便于同事按同一条件复核。",
+      "capabilities": [
+        {
+          "title": "盘点 Postgres 表结构",
+          "description": "使用 list_tables 检查指定项目，记录与应用集成或迁移核验相关的表。"
+        },
+        {
+          "title": "对照迁移历史",
+          "description": "使用 list_migrations 获取已应用记录，与本地仓库的迁移文件逐项比对，标记无法解释的差异。"
+        },
+        {
+          "title": "核验只读查询结果",
+          "description": "元数据不足时，先确定窄范围查询，再核对目标、预期输出与实际返回值。"
+        }
+      ],
+      "useCases": {
+        "title": "Supabase 的 Agent 只读核验场景",
+        "description": "把结构检查、迁移对照和数据验证放在实施改动之前。能用元数据确认的先读结构；需要查看数据时，限定在获准环境、字段与返回范围内。",
+        "items": [
+          {
+            "title": "准备应用集成交接",
+            "description": "让 Agent 在获准的开发项目查看一个接口依赖的表，并与应用代码核对。交接时列出实际结构与仍需确认的引用。"
+          },
+          {
+            "title": "发布前排查迁移差异",
+            "description": "提供仓库迁移文件与预期的测试项目。对比 list_migrations 的结果，先报告缺失或多出的记录，再决定是否安排下一步。"
+          },
+          {
+            "title": "验证合成测试数据规则",
+            "description": "只统计不符合约定条件的测试记录。执行前检查 SELECT，随后将聚合结果与测试夹具核对，交付时无需导出原始行。"
+          },
+          {
+            "title": "检查异常关联的原因",
+            "description": "先查相关键和字段类型。若还需要读取数据，批准一条针对测试数据的有限查询，并说明结果是否支持关联异常的判断。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "只读核验 Supabase 前的准备",
+        "description": "连接之前先选环境、核对项目引用并限制工具组。仅靠表结构能回答的问题无需读取数据，超出元数据范围的查询要先核对 SQL 与允许返回的内容。",
+        "items": [
+          {
+            "title": "开发或获准项目",
+            "description": "优先使用本地或开发数据库，调用工具前确认项目引用。"
+          },
+          {
+            "title": "范围受限的 MCP 连接",
+            "description": "托管环境按官方流程完成授权，并配置 project_ref、read_only=true 与所需工具组。"
+          },
+          {
+            "title": "允许核查的数据范围",
+            "description": "能用结构或汇总回答时，优先选择这两类结果。凭据不放进对话，实际 SQL 在提交前先审核。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "哪些客户端可以使用 Supabase MCP？",
+          "answer": "官方接入文档列出 Codex、Cursor 等兼容客户端。按所用客户端配置，执行前先核对实际连接的服务器。"
+        },
+        {
+          "question": "怎样把托管访问限制在一个项目？",
+          "answer": "将 project_ref 设为获准项目，并只启用完成任务需要的工具组。授权后再次核对目标。"
+        },
+        {
+          "question": "read_only=true 会改变什么？",
+          "answer": "SQL 将以只读 Postgres 用户执行。Agent 仍可看到返回结果，因此仍需限制读取范围。"
+        },
+        {
+          "question": "通常需要个人访问令牌吗？",
+          "answer": "常规托管连接通过浏览器完成授权。CI 等手动配置场景可能有不同的认证要求。"
+        },
+        {
+          "question": "可以核对本地开发数据库吗？",
+          "answer": "Supabase CLI 提供本地 MCP 地址。以本地项目报告的实际地址和可见工具为准。"
+        },
+        {
+          "question": "接入 MCP 与安装 Supabase Agent Skills 有何区别？",
+          "answer": "MCP 提供可执行工具与实时连接，独立 Skills 提供任务指引。官方插件可把指引与接入配置放到一起。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "karpathy",
+    "slug": "autoresearch",
+    "name": "Autoresearch",
+    "repository": "https://github.com/karpathy/autoresearch",
+    "website": "https://github.com/karpathy/autoresearch",
+    "documentation": "https://github.com/karpathy/autoresearch/blob/master/program.md",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/karpathy/autoresearch#license",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-06",
+    "related": [
+      "openai/codex",
+      "openclaw/openclaw",
+      "deepseek-ai/deepseek-harness",
+      "obra/superpowers"
+    ],
+    "en": {
+      "seoTitle": "Autoresearch: Single-GPU Training, Baselines, and val_bpb",
+      "seoDescription": "Use Karpathy’s Autoresearch to establish a single-GPU baseline, test one training change, and compare validation bits per byte, peak memory, and experiment status.",
+      "description": "Autoresearch lets a coding agent propose and measure changes to a small language model. Establish a baseline on one GPU, run a candidate under the same budget, and review the result against the experiment ledger.",
+      "kind": "Single-GPU Agent Training Experiments",
+      "overviewTitle": "About Autoresearch",
+      "overview": [
+        "Andrej Karpathy’s Autoresearch is a small experiment loop for a coding agent such as Codex or Claude Code with access to a training environment. The human sets the scope in program.md. The default loop edits train.py while leaving data preparation and evaluation in prepare.py fixed.",
+        "The default comparison uses a five-minute training budget, excluding startup and compilation. Review validation bits per byte (val_bpb) alongside peak memory on the same GPU and setup. A lower score is an improvement on that run’s validation metric.",
+        "The experiment instructions use a dedicated Git branch and a local results.tsv ledger. Record the baseline, change, score, memory, and whether the candidate was kept, discarded, or crashed. The README declares MIT for the project."
+      ],
+      "capabilitiesTitle": "What the Experiment Loop Records",
+      "capabilitiesIntro": "Keep the setup and evaluation fixed long enough to judge one change. Review the baseline and candidate side by side before deciding whether a lower score is worth carrying forward.",
+      "capabilities": [
+        {
+          "title": "Fixed comparison budget",
+          "description": "Run baseline and candidate on the same setup with the same default training budget and evaluation procedure."
+        },
+        {
+          "title": "One editable training file",
+          "description": "Limit the candidate change to train.py and keep the preparation and evaluation code fixed during the comparison."
+        },
+        {
+          "title": "A reviewable run ledger",
+          "description": "Use the log and results.tsv to retain the candidate, val_bpb, peak memory, and disposition."
+        }
+      ],
+      "useCases": {
+        "title": "Autoresearch Use Cases for Single-GPU Experiments",
+        "description": "The same loop supports a first baseline, a targeted change, or a failure investigation. Each run should leave a log and a clear decision about what to keep.",
+        "items": [
+          {
+            "title": "Establish a repeatable baseline",
+            "description": "Start from the recorded upstream commit and prepared data, then run the unchanged training script. Save the GPU model, software environment, val_bpb, and memory so the next candidate has a comparable reference."
+          },
+          {
+            "title": "Check one optimizer change",
+            "description": "Give the agent a learning-rate or optimizer hypothesis and a limit of one candidate run. Compare against the baseline on the same hardware and capture the diff and outcome in the ledger."
+          },
+          {
+            "title": "Investigate a memory failure",
+            "description": "If training runs out of memory, preserve the error log and label the trial as a crash. Review the proposed change and resource limit before authorizing a revised candidate."
+          },
+          {
+            "title": "Hand off a promising candidate",
+            "description": "Give a reviewer the baseline and candidate commits, raw logs, and unchanged evaluation setup. Ask them to confirm the comparison and rerun a promising result before extending the experiment."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What Autoresearch Needs to Run",
+        "description": "Check the training environment before granting the coding agent access. A short baseline run is the first useful check, with a separate limit for how many trials the agent may start.",
+        "items": [
+          {
+            "title": "GPU and Python environment",
+            "description": "The upstream quick start uses one NVIDIA GPU, Python 3.10 or newer, and uv. The README names H100 as the tested GPU."
+          },
+          {
+            "title": "Prepared training data",
+            "description": "Review and authorize dependency installation and data downloads. Use uv run prepare.py for data and tokenizer setup, then uv run train.py to check the baseline."
+          },
+          {
+            "title": "Bounded branch and run budget",
+            "description": "Give the agent a dedicated branch, a permitted file scope, and a maximum number of trials. Keep normal permissions and review each proposed expansion."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which file does the default agent loop edit?",
+          "answer": "The upstream instructions constrain changes to train.py. Keep prepare.py fixed so the data and evaluation stay comparable."
+        },
+        {
+          "question": "What does val_bpb measure?",
+          "answer": "Validation bits per byte measures model loss on the validation setup. The upstream comparison favors a lower value."
+        },
+        {
+          "question": "Can I compare runs from different GPUs?",
+          "answer": "Use the same GPU and training setup for a controlled comparison. A fixed wall-clock budget can yield different amounts of work on different hardware."
+        },
+        {
+          "question": "Where does the run history live?",
+          "answer": "Program instructions call for the run log and a local results.tsv with the commit, val_bpb, peak memory, outcome, and short description."
+        },
+        {
+          "question": "What happens if a candidate fails?",
+          "answer": "Retain the failure evidence and mark the trial as a crash or discard according to the result. Compare only valid runs against the baseline."
+        },
+        {
+          "question": "Can I run the default setup on a Mac?",
+          "answer": "The official setup requires a single NVIDIA GPU. The README lists community ports for other platforms and documents their separate setup."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Autoresearch：单 GPU 训练实验、基线与 val_bpb",
+      "seoDescription": "用 Karpathy 的 Autoresearch 建立单 GPU 基线，检验一次训练改动，比较验证集每字节比特数、显存峰值与实验状态。",
+      "description": "Autoresearch 让 Codex、Claude Code 等编程 Agent 提出并验证小型语言模型的训练改动。先在单张 GPU 上建立基线，再用相同预算运行候选，并按实验台账复核结果。",
+      "kind": "单 GPU Agent 训练实验",
+      "overviewTitle": "关于 Autoresearch",
+      "overview": [
+        "Andrej Karpathy 的 Autoresearch 将训练实验交给有环境权限的编程 Agent。人先在 program.md 设定实验范围，默认流程只改 train.py，数据准备和评估逻辑留在固定的 prepare.py 中。",
+        "默认训练预算是五分钟，不计启动与编译。将验证集每字节比特数（val_bpb）和显存峰值一并记录，并在相同 GPU 与配置下比较。该评估口径下，val_bpb 越低越好。",
+        "实验指引使用独立 Git 分支和本地 results.tsv 台账，记录基线、改动、分数、显存和保留、放弃或崩溃状态。项目 README 声明采用 MIT 许可。"
+      ],
+      "capabilitiesTitle": "Autoresearch 实验会留下哪些证据",
+      "capabilitiesIntro": "先固定训练环境与评估方式，只检验一项改动。并排查看基线与候选日志，结合验证指标和显存峰值判断是否值得保留。",
+      "capabilities": [
+        {
+          "title": "统一训练预算",
+          "description": "基线与候选使用相同设备、默认训练预算与评估流程。"
+        },
+        {
+          "title": "只修改训练脚本",
+          "description": "将候选改动限制在 train.py，在这轮比较中固定数据准备和评估。"
+        },
+        {
+          "title": "记录可复核结果",
+          "description": "通过日志与 results.tsv 保留候选提交、val_bpb、显存峰值及处置状态。"
+        }
+      ],
+      "useCases": {
+        "title": "Autoresearch 的单 GPU 实验场景",
+        "description": "这套流程可用于建立首轮基线、验证具体改动或定位运行失败。每次都保留日志和处置状态，供下轮比较与交接。",
+        "items": [
+          {
+            "title": "建立可复现的基线",
+            "description": "从已记录的上游提交和准备好的数据出发，先执行未改动的训练脚本。记录 GPU 型号、软件环境、val_bpb 与显存，让后续候选有同一口径的参考。"
+          },
+          {
+            "title": "验证一项优化器改动",
+            "description": "给 Agent 一个学习率或优化器假设，只授权一轮候选实验。在同一设备上对照基线，保存差异与实际运行结果。"
+          },
+          {
+            "title": "排查显存不足",
+            "description": "如果训练因显存不足中断，保留错误日志并标记为崩溃。重新启动前先复核候选改动和资源限制，再决定是否试一个更小的方案。"
+          },
+          {
+            "title": "交接一个有潜力的候选",
+            "description": "将基线与候选提交、原始日志和固定的评估设置交给复核人。请对方确认比较口径，并复跑有价值的结果后再扩大实验。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "运行 Autoresearch 前的准备",
+        "description": "先确认训练环境，再决定是否让编程 Agent 执行。以一次短基线试跑验证配置，并单独限定可启动的候选轮数。",
+        "items": [
+          {
+            "title": "GPU 与 Python 环境",
+            "description": "官方快速开始使用单张 NVIDIA GPU、Python 3.10 或更高版本及 uv。README 标注 H100 为已测试的设备。"
+          },
+          {
+            "title": "准备好的训练数据",
+            "description": "先审阅并批准依赖安装和数据下载。用 uv run prepare.py 准备数据和分词器，再用 uv run train.py 检查基线。"
+          },
+          {
+            "title": "独立分支与轮数上限",
+            "description": "明确可写分支、允许改动的文件与最大实验次数，保留正常权限设置，扩大范围前另行确认。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "默认由 Agent 修改哪个文件？",
+          "answer": "上游流程把改动限制在 train.py，固定 prepare.py 里的数据与评估逻辑，保证结果可比较。"
+        },
+        {
+          "question": "val_bpb 衡量什么？",
+          "answer": "它衡量当前验证设置下的每字节比特数。按上游口径，分数越低代表该验证指标越好。"
+        },
+        {
+          "question": "不同 GPU 的结果可以直接比较吗？",
+          "answer": "受控比较应使用相同 GPU 与训练设置。同样的时间预算在不同设备上可能完成不同数量的训练工作。"
+        },
+        {
+          "question": "去哪里查看实验历史？",
+          "answer": "实验说明要求保留运行日志和本地 results.tsv，其中包含提交、val_bpb、显存峰值、状态与简短说明。"
+        },
+        {
+          "question": "候选实验失败怎么处理？",
+          "answer": "保存失败证据，按实际结果标记崩溃或放弃。只拿有效运行与基线对照。"
+        },
+        {
+          "question": "Mac 能运行官方默认配置吗？",
+          "answer": "官方默认配置需要一张 NVIDIA GPU。其他平台可查看 README 所列的社区移植和各自的环境说明。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "k-dense-ai",
+    "slug": "scientific-agent-skills",
+    "name": "Scientific Agent Skills",
+    "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "website": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "documentation": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/skills.md",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/LICENSE.md",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-06",
+    "related": [
+      "openai/codex",
+      "karpathy/autoresearch",
+      "graphify-labs/graphify",
+      "obra/superpowers"
+    ],
+    "en": {
+      "seoTitle": "Scientific Agent Skills: Research Workflow and Skill Selection",
+      "seoDescription": "Compare K-Dense AI’s research Skills for experimental design, statistical analysis, visualization, and writing. Review the inputs, dependencies, and license of the Skill you select.",
+      "description": "K-Dense AI’s Scientific Agent Skills is an installable research collection for supported coding agents. Start with your research question and expected deliverable, then select a Skill whose inputs and environment fit the task.",
+      "kind": "Installable Research Skill Collection",
+      "overviewTitle": "About Scientific Agent Skills",
+      "overview": [
+        "Scientific Agent Skills organizes research procedures into individual manifests and supporting files. K-Dense AI’s catalog groups workflows by task, including experimental design, data analysis, visualization, and scientific writing.",
+        "The upstream README documents installation for hosts including Codex, Cursor, and Claude Code. Choose a small subset and read each SKILL.md before use. Some Skills provide instructions alone, while others include scripts or depend on local libraries, reference data, or external services.",
+        "This overview helps select a workflow. For inspecting an approved local CSV or JSON file, use the separate Exploratory Data Analysis guide. For study planning or writing, identify the relevant research inputs and keep the human review step visible."
+      ],
+      "capabilitiesTitle": "Choose a Skill by Its Research Output",
+      "capabilitiesIntro": "Decide whether the next artifact is a study design, an analysis record, or a draft. Match the Skill’s prerequisites to that output before installing dependencies or sharing data.",
+      "capabilities": [
+        {
+          "title": "Plan a study",
+          "description": "Use the experimental design guidance to define the question, variables, comparison groups, and sources of bias."
+        },
+        {
+          "title": "Select an analysis",
+          "description": "Use statistical analysis guidance to check assumptions and specify the method, effect size, and uncertainty."
+        },
+        {
+          "title": "Reconcile a manuscript",
+          "description": "Use scientific writing guidance to align methods, reported results, figures, and citations with the supplied evidence."
+        }
+      ],
+      "useCases": {
+        "title": "Scientific Agent Skills Use Cases Across Research Stages",
+        "description": "Choose a different Skill when the research decision changes. A protocol, an analysis record, a figure, and a manuscript revision each need their own inputs and checks.",
+        "items": [
+          {
+            "title": "Prepare an experimental design for review",
+            "description": "Give the agent a research question, candidate outcomes, and operational constraints. Ask it to draft a design brief covering controls, randomization where relevant, possible confounders, and decisions the research team still needs to make."
+          },
+          {
+            "title": "Document a statistical comparison",
+            "description": "Provide approved study data, group definitions, and the comparison you want to make. Use the statistical analysis guidance to choose a method, record assumption checks, and report an effect estimate with its uncertainty."
+          },
+          {
+            "title": "Build a figure from checked results",
+            "description": "Supply a verified results table, units, and the purpose of the figure. Use a visualization Skill to create the figure and a reproducible script, then check axis labels, transformations, and values against the source table."
+          },
+          {
+            "title": "Review a manuscript draft for consistency",
+            "description": "Provide an approved draft and the tables or outputs supporting it. Ask the writing Skill to identify mismatches between methods, text, and reported values. Keep unsupported citations or results marked for human follow-up."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Requirements Before Installing a Research Skill",
+        "description": "Start with the selected Skill’s manifest and an approved workspace. Check execution tools and data access separately before choosing a local or networked workflow.",
+        "items": [
+          {
+            "title": "Supported Agent Skills host",
+            "description": "The repository documents the npx skills installer for Codex, Cursor, and Claude Code. For a pinned individual install, see the upstream GitHub CLI instructions. Confirm the Skill is visible in the host."
+          },
+          {
+            "title": "Task-specific environment",
+            "description": "Check required packages, scripts, reference files, credentials, and network access in the individual manifest."
+          },
+          {
+            "title": "Approved inputs and license",
+            "description": "Use only data and services you may access. Check the Skill’s terms and review the planned output before sharing it."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Do I need to install the whole collection?",
+          "answer": "No. The upstream guide supports installing a selected Skill and recommends reviewing each manifest before adding it."
+        },
+        {
+          "question": "Does installation include API credentials?",
+          "answer": "Credentials, accounts, and network permissions depend on the selected workflow and need separate setup."
+        },
+        {
+          "question": "Can every Skill run offline?",
+          "answer": "Some workflows can run locally once their dependencies and data are available. Database or hosted-service workflows may require network access."
+        },
+        {
+          "question": "Does the repository’s MIT license apply to every Skill?",
+          "answer": "The main repository declares MIT. Check the license field of the specific Skill and any external tools or data it uses."
+        },
+        {
+          "question": "Where should I start with an unfamiliar CSV?",
+          "answer": "Start with the dedicated Exploratory Data Analysis guide and use an approved local file. The suite overview covers choosing the next workflow."
+        },
+        {
+          "question": "Can the agent approve the study or verify its findings?",
+          "answer": "Use the Skill to draft or run a bounded workflow. The research team reviews assumptions, evidence, and conclusions before relying on the output."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Scientific Agent Skills：科研工作流与任务选择",
+      "seoDescription": "了解 K-Dense AI 的实验设计、统计分析、数据可视化和科研写作 Skills，按输入、依赖、交付结果与许可选择合适的工作流。",
+      "description": "K-Dense AI 的 Scientific Agent Skills 是面向受支持编程 Agent 的科研指引集合。先明确研究问题和预期交付，再选输入格式和运行环境都匹配的 Skill。",
+      "kind": "可安装的科研 Skill 集合",
+      "overviewTitle": "关于 Scientific Agent Skills",
+      "overview": [
+        "Scientific Agent Skills 将科研流程拆为各自的 SKILL.md 与配套文件。K-Dense AI 的目录按工作分类，覆盖实验设计、数据分析、可视化和科研写作。",
+        "上游文档提供 Codex、Cursor 和 Claude Code 等宿主的安装路径。先选少量相关 Skill，再逐项阅读清单。部分 Skill 只提供操作指引，其他还附带脚本，或依赖本地库、参考数据与外部服务。",
+        "本页帮助选择科研工作流。需要先检查获准的本地 CSV 或 JSON 时，可使用单独的 Exploratory Data Analysis 指南。进入实验设计或论文写作阶段后，换用与当前交付匹配的 Skill，并保留人工复核。"
+      ],
+      "capabilitiesTitle": "按科研交付物选择 Skill",
+      "capabilitiesIntro": "先判断下一份产物是实验设计、分析记录还是论文草稿。确认所选 Skill 的前提与目标匹配后，再安装依赖或提供数据。",
+      "capabilities": [
+        {
+          "title": "规划实验",
+          "description": "用实验设计指引明确研究问题、变量、对照组与偏差来源。"
+        },
+        {
+          "title": "确定分析方法",
+          "description": "检查统计方法的假设，记录所选方法、效应量及不确定性。"
+        },
+        {
+          "title": "核对论文草稿",
+          "description": "按科研写作指引，将方法、结果、图表和引文与提供的证据对照。"
+        }
+      ],
+      "useCases": {
+        "title": "Scientific Agent Skills 的科研应用场景",
+        "description": "研究决策变化时，重新选择工作流。实验方案、分析记录、图表和论文修订需要不同输入，也各有核对重点。",
+        "items": [
+          {
+            "title": "整理待评审的实验方案",
+            "description": "给 Agent 研究问题、候选结局指标与实施限制。让它草拟对照设计，在适用时说明随机化安排，列出可能的混杂因素及仍需团队决定的事项。"
+          },
+          {
+            "title": "记录一次统计比较",
+            "description": "提供获准使用的研究数据、分组规则与待验证的比较。用统计分析指引选择方法并记录假设检查，再汇报效应估计和不确定性。"
+          },
+          {
+            "title": "根据已核对结果制作图表",
+            "description": "提供已验证的结果表、计量单位和制图目的。用可视化 Skill 生成图表和可复跑的脚本，并逐项核对坐标轴、数据变换及源表数值。"
+          },
+          {
+            "title": "检查论文草稿的结果一致性",
+            "description": "提供获准使用的论文草稿及支撑它的表格和分析输出。请写作 Skill 标出方法、正文与报告数值之间的不一致，将缺少依据的引用或结果留给研究者复核。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "安装科研 Skill 前的准备",
+        "description": "先核对所选 Skill 的清单与工作区权限，再检查执行环境和数据访问范围，决定任务应在本地运行还是需要联网。",
+        "items": [
+          {
+            "title": "受支持的 Agent Skills 宿主",
+            "description": "上游提供面向 Codex、Cursor 和 Claude Code 的 npx skills 安装方式。如需锁定单项 Skill 的版本，参考官方 GitHub CLI 说明。安装后确认宿主可以发现该 Skill。"
+          },
+          {
+            "title": "任务所需环境",
+            "description": "按单项清单核对依赖包、脚本、参考文件、凭据与联网要求。"
+          },
+          {
+            "title": "输入权限与许可",
+            "description": "仅使用获准的数据与服务。检查单项许可，在对外共享前复核交付物。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "需要安装整个集合吗？",
+          "answer": "可以按任务选装。上游支持选择单项 Skill，也建议先阅读每项清单再添加。"
+        },
+        {
+          "question": "安装 Skill 会一并提供 API 凭据吗？",
+          "answer": "账户、凭据与联网权限取决于所选任务，需要单独配置。"
+        },
+        {
+          "question": "所有 Skill 都能离线执行吗？",
+          "answer": "部分流程准备好依赖和数据后可在本地运行。数据库查询与托管服务类流程可能需要网络。"
+        },
+        {
+          "question": "主仓的 MIT 适用于所有 Skill 吗？",
+          "answer": "主仓声明采用 MIT。仍需检查单项 Skill 的许可字段，以及它使用的外部工具与数据的条款。"
+        },
+        {
+          "question": "拿到一份不熟悉的 CSV 应先用哪项？",
+          "answer": "用独立的 Exploratory Data Analysis 指南检查获准的本地文件，再根据结果决定后续工作流。"
+        },
+        {
+          "question": "Agent 能代替研究者审批方案或验证结论吗？",
+          "answer": "Skill 可以辅助起草或执行有边界的流程。研究团队仍需复核假设、证据与结论，再决定是否采纳。"
+        }
+      ]
+    }
   }
 ]

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MarketplaceReferenceLinks } from "./marketplace-reference-links";
 import { OverviewSection } from "@/components/marketing/overview-section";
 import hubFaqs from "@/data/landing-hub-faqs.json";
 import { ResourceCard } from "@/components/marketing/resource-card";
@@ -8,7 +9,7 @@ import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { RelatedPageLinks } from "@/components/related-page-links";
-import { getCategoryResources, getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
+import { getCategoryResources, getReferencePublishers, getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
 import type { SkillLocale } from "@/lib/skills/featured-skills";
 
 const origin = "https://floatboat.ai";
@@ -52,6 +53,12 @@ export function SkillCategoryHub({ locale }: { locale: SkillLocale }) {
       </div>
     </section>
     <OverviewSection variant="prose" id="directory-scope" title={labels.scope} paragraphs={labels.scopeCopy} />
+    <MarketplaceReferenceLinks
+      id="reference-publishers-title"
+      title={isZh ? "保留的发布者资料" : "Publisher Profiles for Reference"}
+      description={isZh ? "如果你在找曾经收录的发布者，可以从这里核对官方主页和已保留的指南。当前收录的作品按上方任务分类浏览。" : "Look up previously listed publishers to find their official profiles and retained guides. Browse the task categories above for the current catalog."}
+      items={getReferencePublishers(locale)}
+    />
     <FaqBand locale={locale} items={hubFaqs.skillCategories[locale]} />
     <FinalCta  title={labels.ctaTitle} description={labels.ctaDescription} primary={{ label: labels.download, href: `${isZh ? "/zh" : ""}/download/success?from=skill-categories&download_placement=final_cta` }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />

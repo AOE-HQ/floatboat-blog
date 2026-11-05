@@ -1,3 +1,4 @@
+import { MarketplaceReferenceLinks } from "./marketplace-reference-links";
 import { FaqBand } from "@/components/faq-band";
 import { FinalCta } from "@/components/final-cta";
 import { OverviewSection } from "@/components/marketing/overview-section";
@@ -6,7 +7,7 @@ import { ResourceCard } from "@/components/marketing/resource-card";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { RelatedPageLinks } from "@/components/related-page-links";
 import type { SkillLocale } from "@/lib/skills/featured-skills";
-import { getStoreCatalog } from "@/lib/skills/skill-categories";
+import { getPublisherReferences, getStoreCatalog } from "@/lib/skills/skill-categories";
 import { getPublisherProfile, publisherProfilePath } from "@/lib/skills/publisher-profiles";
 import { publisherHeading } from "@/lib/skills/title-case-heading";
 
@@ -69,6 +70,12 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
         </ul>
       </div></section>}
 
+      <MarketplaceReferenceLinks
+        id="publisher-references-title"
+        title={isZh ? `${profile.name} 的参考指南` : `Reference Guides for ${profile.name}`}
+        description={isZh ? "从这里查阅保留的项目背景、版本说明和操作条件。使用前请对照各指南中的官方来源核对现行支持情况。" : "Find retained project background, version notes, and setup instructions. Check each guide’s upstream sources for current support before running a workflow."}
+        items={getPublisherReferences(handle, locale)}
+      />
       <RelatedPageLinks family="publishers" currentId={handle} locale={locale} title={t.relatedTitle} intro={t.relatedDescription} />
       <FaqBand locale={locale} items={t.faq} title={t.faqTitle} />
       <FinalCta  title={publisherHeading(locale, t.ctaTitle)} description={t.ctaDescription} primary={t.ctaPrimary ?? { label: labels.download, href: `${isZh ? "/zh" : ""}/download/success?from=${handle}-publisher&download_placement=final_cta` }} />

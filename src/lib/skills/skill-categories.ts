@@ -165,3 +165,24 @@ export function getStoreCatalog(locale: SkillLocale) {
   const projectTargets = new Set(entries.filter((entry) => entry.entryType === "project").map((entry) => entry.href));
   return entries.filter((entry) => entry.entryType === "project" || !projectTargets.has(entry.href));
 }
+
+/** Approved profiles with no current work in the public catalog. */
+export function getReferencePublishers(locale: SkillLocale) {
+  const active = new Set(getStoreCatalog(locale).map((entry) => entry.authorHandle));
+  return PUBLISHER_PROFILE_HANDLES.filter((handle) => !active.has(handle)).map((handle) => ({
+    label: getPublisherProfile(handle)!.name,
+    href: publisherProfilePath(locale, handle),
+  }));
+}
+
+/** Deduplicate shared canonical guides and omit entries with only an upstream URL. */
+export function getPublisherReferences(handle: string, locale: SkillLocale) {
+  const active = new Set(getStoreCatalog(locale).map((entry) => entry.href));
+  const references = new Map<string, { label: string; href: string }>();
+  for (const entry of getCatalogInventory(locale)) {
+    if (entry.authorHandle === handle && entry.href.startsWith("/") && !active.has(entry.href) && !references.has(entry.href)) {
+      references.set(entry.href, { label: entry.name, href: entry.href });
+    }
+  }
+  return [...references.values()];
+}

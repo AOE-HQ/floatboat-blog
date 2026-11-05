@@ -31,7 +31,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
   ];
   const links = [
     { label: zh ? `发布者：${publisher.name}` : `Publisher: ${publisher.name}`, href: publisherHref },
-    { label: zh ? "项目官网" : "Project website", href: project.website },
+    ...(project.website !== project.repository ? [{ label: zh ? "项目官网" : "Project website", href: project.website }] : []),
     { label: zh ? "官方文档" : "Official documentation", href: project.documentation },
     { label: zh ? "GitHub 源码" : "GitHub repository", href: project.repository },
     { label: zh ? `源码许可 · ${project.license}` : `Source license · ${project.license}`, href: project.licenseUrl },
