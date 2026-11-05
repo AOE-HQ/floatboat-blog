@@ -11888,7 +11888,7 @@
         },
         {
           "question": "Can I use Daybreak Red to test a client’s website?",
-          "answer": "You need explicit permission from the asset owner and must stay within the agreed testing scope. OpenAI also restricts Daybreak from customer-facing applications, downstream product traffic, and third-party access. Check both the engagement authorization and the program’s access rules."
+          "answer": "You need explicit permission from the site owner and must stay within the agreed testing scope. Standard Daybreak access is for approved internal work by your team. If you want to embed GPT-6 Cyber in a product customers use directly, get separate approval from OpenAI."
         },
         {
           "question": "Does a Critical model rating make every finding critical?",
@@ -11916,7 +11916,7 @@
         },
         {
           "question": "使用 Daybreak Red 可以测试客户的网站吗？",
-          "answer": "需要站点所有者明确授权，并在双方约定的目标和方式内执行。OpenAI 另行限制将 Daybreak 用于面向客户的应用、下游产品流量或第三方访问，项目授权和产品接入限制需要分别核对。"
+          "answer": "需要站点所有者明确授权，并在双方约定的范围内测试。标准 Daybreak 权限限于团队获批的内部工作。如果要把 GPT-6 Cyber 嵌入客户直接使用的产品，还须另行取得 OpenAI 批准。"
         },
         {
           "question": "Critical 是否等同于漏洞报告里的严重等级？",

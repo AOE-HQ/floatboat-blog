@@ -16,13 +16,13 @@ GPT-6 Cyber 是 OpenAI 面向经授权的漏洞研究与安全测试推出的专
 
 ## 已有 OpenAI 账号，能申请 GPT-6 Cyber 吗？
 
-个人可以申请 Daybreak Blue，用于安全代码审查、漏洞初筛和修复验证等防御工作。Daybreak Red 面向获批的商业和企业组织，覆盖经授权的渗透测试、红队评估和受控漏洞研究。当前个人申请渠道只受理 Blue。获批的 Red 组织都有资格使用 GPT-5.6 Cyber，使用 GPT-6 Cyber 则还需通过专项审批。OpenAI 的访问指南还将 Daybreak 使用范围限定在自己拥有、运营或获明确授权的系统，并禁止将权限用于面向客户的应用、下游产品流量或向第三方转授。 [Daybreak 申请入口](https://openai.com/daybreak/) · [OpenAI 访问指南](https://help.openai.com/en/articles/20001258-openai-daybreak-trusted-access-for-cyber-overview)
+个人可以申请 Daybreak Blue，用于安全代码审查、漏洞初筛和修复验证等防御工作。Daybreak Red 面向获批的商业和企业组织，覆盖经授权的渗透测试、红队评估和受控漏洞研究。当前个人申请渠道只受理 Blue。获批的 Red 组织都有资格使用 GPT-5.6 Cyber，使用 GPT-6 Cyber 则还需通过专项审批。Daybreak 只适用于自己拥有、运营或获明确授权的系统。标准权限限于获批的内部用途。若要在面向客户的产品中嵌入 GPT-6 Cyber，须另行取得 OpenAI 批准。终端用户可以使用获批的集成，无需直接获得模型访问权。 [Daybreak 申请入口](https://openai.com/daybreak/) · [OpenAI 访问指南](https://help.openai.com/en/articles/20001258-openai-daybreak-trusted-access-for-cyber-overview)
 
 ## GPT-6 Cyber 的 API 价格和开通条件
 
 官方模型页列出的 ID 是 `gpt-6-cyber`，上下文窗口为 105 万 token，单次最多输出 12.8 万 token。按 2026 年 11 月 6 日（北京时间）核对的标准短上下文费率，每百万 token 输入 20 美元、命中缓存的输入 2 美元、输出 100 美元。缓存写入和部分工具调用另行计费，评估整次任务成本时应一并纳入。 [OpenAI 模型规格与价格](https://developers.openai.com/api/docs/models/gpt-6-cyber)
 
-组织通过模型审批并完成安全配置后，可以在 Codex 或 Responses API 中使用。通过 ChatGPT 账号登录 Codex 时，选择获批的工作空间。通过 API 调用时，使用已启用 Daybreak Red 的非默认项目和列入允许名单的出口 IP。请求里的 `model` 填 `gpt-6-cyber`，`access_programs.cyber` 填 `daybreak_red`。如果项目启用了零数据保留，还需要配置 Private Safety Processing。 [OpenAI 的 Daybreak API 配置指南](https://developers.openai.com/api/docs/guides/daybreak#setup-gpt-6-cyber)
+组织通过模型审批并完成安全配置后，可以在 Codex 或 Responses API 中使用。通过 ChatGPT 账号登录 Codex 应用时，选择获批的工作空间，再在高级模型选择器中打开默认关闭的 Daybreak 开关。通过 API 调用时，使用已启用 Daybreak Red 的非默认项目和列入允许名单的出口 IP。请求里的 `model` 填 `gpt-6-cyber`，`access_programs.cyber` 填 `daybreak_red`。如果项目启用了零数据保留，还需要配置 Private Safety Processing。 [OpenAI 的 Daybreak API 配置指南](https://developers.openai.com/api/docs/guides/daybreak#setup-gpt-6-cyber)
 
 ## Critical 和 ExploitGym 分数分别说明什么？
 
