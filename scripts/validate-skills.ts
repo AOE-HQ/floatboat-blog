@@ -4,11 +4,12 @@ import mergedSkills from "../src/data/skills/merged-skills.json";
 import { skillShareImagePath } from "../src/lib/skills/skill-metadata";
 import { FEATURED_SKILLS, skillPath } from "../src/lib/skills/featured-skills";
 import { getPublisherProfile, PUBLISHER_PROFILE_HANDLES } from "../src/lib/skills/publisher-profiles";
-import { getSkillCatalog } from "../src/lib/skills/skill-categories";
+import { getSkillCatalog, getStoreCatalog } from "../src/lib/skills/skill-categories";
 import { getRelatedPages } from "../src/lib/related-pages";
 
 // Data schemas validate bilingual completeness; these checks cover cross-page integration.
 const catalog = getSkillCatalog("en");
+const publicPaths = new Set(getStoreCatalog("en").map((entry) => entry.href));
 const ingress = readFileSync(new URL("../k8s/ingress-main.yaml", import.meta.url), "utf8");
 for (const skill of FEATURED_SKILLS) {
   const id = `${skill.authorHandle}/${skill.slug}`;
@@ -30,8 +31,11 @@ for (const skill of FEATURED_SKILLS) {
     assert(skill.faq.every((item) => item.answer[locale].length >= (locale === "en" ? 55 : 20)), `${id}: FAQ answers need substantive page-specific content`);
   }
   assert(existsSync(`public${skillShareImagePath(skill.authorHandle, skill.slug)}`), `${id}: missing share image`);
+  if (publicPaths.has(entry.href)) {
+    assert(skill.installation?.supportedAgents?.some((agent) => agent !== "auto"), `${id}: public guide needs a verified named host`);
+  }
   if (!skill.installation?.commands) {
-    assert(/^npx skills add\s+/.test(skill.upstreamInstall), `${id}: generic installation must use Skills CLI`);
+    assert(/^npx skills(?:@latest)? add\s+/.test(skill.upstreamInstall), `${id}: generic installation must use Skills CLI`);
   }
   if (skill.installation?.commands) {
     assert(skill.installation.supportedAgents?.length, `${id}: native setup needs an explicit agent list`);

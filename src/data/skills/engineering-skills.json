@@ -2261,11 +2261,11 @@
     "upstreamInstall": "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit",
     "installation": {
       "note": {
-        "en": "Use the upstream Skills CLI instructions for your compatible coding agent. Full audit mode needs parallel sub-agents, Node.js validators, and the documented OS-enforced isolation for target-controlled execution. Installing instructions does not create those capabilities.",
-        "zh": "按上游 Skills CLI 说明安装到兼容编程 Agent。完整审计需要并行子 Agent、Node.js 校验器，以及执行目标代码时要求的操作系统级隔离；安装指令不会自动提供这些条件。"
+        "en": "This is a Skills CLI setup for Codex. Use a compatible coding agent for focused guidance and source review. A full audit needs parallel sub-agents, Node.js validators and the documented OS-enforced isolation for target-controlled execution. When isolation is unavailable, leave affected leads as needs_validation without executing target code.",
+        "zh": "此处为面向 Codex 的 Skills CLI 安装方式。兼容编程 Agent 可执行针对性的源码审查。完整审计需要并行子 Agent、Node.js 校验器，以及运行目标代码所需的系统级隔离。缺少隔离时不执行目标代码，相关线索保留为 needs_validation。"
       },
       "supportedAgents": [
-        "auto"
+        "codex"
       ]
     },
     "overview": {
@@ -2699,7 +2699,19 @@
           "zh": "应保留精确命令、路径和安全条件。上游把危险或含糊的操作视为简洁规则的例外。"
         }
       }
-    ]
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "opencode",
+        "gemini-cli"
+      ],
+      "note": {
+        "en": "Install for the current host and invoke the Skill explicitly. In Codex the upstream invocation is $i-have-adhd.",
+        "zh": "为当前宿主安装后显式调用该 Skill。上游文档给出的 Codex 调用方式是 $i-have-adhd。"
+      }
+    }
   },
   {
     "slug": "planning-with-files",
@@ -3187,7 +3199,18 @@
           "zh": "多数仓库使用单份术语表即可。只有多个包各有领域词汇和决策时，才需要多上下文索引。"
         }
       }
-    ]
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor"
+      ],
+      "note": {
+        "en": "Install the selected Skill in a documented host. For issue-tracker actions, provide the repository’s setup and authorize only the required access.",
+        "zh": "在上游记录支持的宿主安装所选 Skill。需要访问议题追踪系统时，先提供项目配置并仅授权必要范围。"
+      }
+    }
   },
   {
     "slug": "triage",
@@ -3420,6 +3443,2875 @@
           "zh": "上游要求其发出的评论或 Issue 声明由 AI 分诊生成。发布前先审阅内容并确认授权。"
         }
       }
-    ]
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor"
+      ],
+      "note": {
+        "en": "Install the selected Skill in a documented host. For issue-tracker actions, provide the repository’s setup and authorize only the required access.",
+        "zh": "在上游记录支持的宿主安装所选 Skill。需要访问议题追踪系统时，先提供项目配置并仅授权必要范围。"
+      }
+    }
+  },
+  {
+    "slug": "exploratory-data-analysis",
+    "authorHandle": "k-dense-ai",
+    "name": "Exploratory Data Analysis",
+    "publisher": "K-Dense AI",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/exploratory-data-analysis/SKILL.md",
+    "repositoryUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "seo": {
+      "title": {
+        "en": "Exploratory Data Analysis: Local CSV and JSON Inspection",
+        "zh": "Exploratory Data Analysis：本地 CSV 与 JSON 数据检查"
+      },
+      "description": {
+        "en": "Inspect approved local CSV, TSV, and JSON files with K-Dense AI’s Exploratory Data Analysis Skill. Review missingness, sample coverage, and redacted summaries.",
+        "zh": "用 K-Dense AI 的探索性数据分析 Skill 检查获准的 CSV、TSV 和 JSON，汇总缺失情况，并核对抽样范围与数据质量。"
+      },
+      "keywords": {
+        "en": [
+          "Exploratory Data Analysis",
+          "local data inspection"
+        ],
+        "zh": [
+          "Exploratory Data Analysis",
+          "本地数据检查"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Exploratory Data Analysis",
+        "zh": "Exploratory Data Analysis"
+      },
+      "description": {
+        "en": "Use the Exploratory Data Analysis Skill to profile approved local data before modeling. Its core tools summarize supported files without network access and flag limits the reviewer needs to see.",
+        "zh": "在建模前检查获准使用的本地数据。核心工具可离线汇总受支持的文件，并列出报告覆盖范围，供后续分析时核对。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Exploratory Data Analysis",
+        "paragraphs": [
+          "K-Dense AI’s MIT-licensed Skill supplies bounded Python inspectors and analysis instructions. Its standard-library core handles CSV, TSV and strict JSON with redacted aggregate reporting. Optional formats have separate dependencies. Use the results to decide what to verify before modeling, and keep unsupported files outside the inspection."
+        ]
+      },
+      "zh": {
+        "title": "关于 Exploratory Data Analysis",
+        "paragraphs": [
+          "K-Dense AI 以 MIT 许可发布这项 Skill，提供有读取边界的 Python 检查脚本和分析指引。标准库脚本可处理 CSV、TSV 和严格 JSON，输出去敏汇总。其他格式按对应检查器另行配置，分析前先确认文件和范围受到支持。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Use the Exploratory Data Analysis Skill to profile approved local data before modeling. Its core tools summarize supported files without network access and flag limits the reviewer needs to see.",
+      "zh": "在建模前检查获准使用的本地数据。核心工具可离线汇总受支持的文件，并列出报告覆盖范围，供后续分析时核对。"
+    },
+    "upstreamInstall": "npx skills add K-Dense-AI/scientific-agent-skills --skill exploratory-data-analysis",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Run a Bounded Data Inspection",
+        "zh": "如何检查本地科研数据"
+      },
+      "howDescription": {
+        "en": "Choose an explicit local directory and supported format. Review the aggregate profile and its coverage before relying on any suggested data-quality finding.",
+        "zh": "先选定获准的目录和明确支持的文件类型。查看汇总报告时，要把检查范围、抽样限制和下一步分析决定对在一起。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Exploratory Data Analysis Use Cases",
+        "zh": "Exploratory Data Analysis 的数据核验场景"
+      },
+      "description": {
+        "en": "Use the same boundaries when comparing files, but vary what you inspect according to the next research decision. Keep the original data and its aggregate review separate.",
+        "zh": "同一数据检查方法可用于比较不同交付，但检查重点要服务于下一个研究决定。保留原始文件，并将汇总报告与源数据分开。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Check a CSV before modeling",
+            "zh": "建模前检查 CSV"
+          },
+          "description": {
+            "en": "Point the Skill at an approved CSV in a dedicated folder. Review detected column types and missingness in the redacted summary, then ask the data owner to verify any ambiguous field before selecting features.",
+            "zh": "将获准的 CSV 放在明确的工作目录中。检查去敏报告里的字段类型和缺失情况，选特征前请数据负责人核对含义不清的列。"
+          }
+        },
+        {
+          "title": {
+            "en": "Compare two TSV deliveries",
+            "zh": "对比两份 TSV 交付"
+          },
+          "description": {
+            "en": "Profile both approved exports with comparable limits. Compare their column counts and aggregate missingness, noting sampling and schema differences before asking for a corrected delivery.",
+            "zh": "按相近的检查限制分析两份获准的导出文件。对比列数和缺失统计，记录抽样或字段结构差异，再判断是否要请对方重新导出。"
+          }
+        },
+        {
+          "title": {
+            "en": "Inspect a strict JSON export",
+            "zh": "检查严格 JSON 导出"
+          },
+          "description": {
+            "en": "Provide a local JSON file and the expected record structure. Use the bounded inspection to identify unexpected structure, then record which checks need an approved follow-up.",
+            "zh": "提供本地 JSON 文件和预期的数据结构。使用有读取边界的脚本检查结构差异，再记录哪些问题需要获准后深入核实。"
+          }
+        },
+        {
+          "title": {
+            "en": "Review a possible leakage field",
+            "zh": "排查可能泄露目标的字段"
+          },
+          "description": {
+            "en": "Provide the prediction target and data split rules alongside the approved data. Review candidate leakage signals separately from confirmed defects and ask for source evidence before removing a field.",
+            "zh": "在获准的数据旁说明预测目标与拆分规则。先分开记录可疑信号和已确认缺陷，在移除字段前请负责人核对它的来源。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Specify the approved inputs",
+          "zh": "指定获准检查的文件"
+        },
+        "description": {
+          "en": "Name the allowed local root and list the exact files. Keep inputs outside the task scope out of the run.",
+          "zh": "给出允许访问的根目录和明确的文件列表，将本次任务之外的文件排除在读取范围外。"
+        }
+      },
+      {
+        "title": {
+          "en": "Run the supported core inspector",
+          "zh": "调用对应的核心脚本"
+        },
+        "description": {
+          "en": "Use the Skill’s bundled script for the file type with Python 3.11 or later and preserve the aggregate output.",
+          "zh": "用 Python 3.11 或更高版本执行适合该文件类型的内置脚本，并保存汇总结果。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review coverage and limitations",
+          "zh": "核对覆盖范围与限制"
+        },
+        "description": {
+          "en": "Compare the report with the file type, limits and next analysis decision. Keep the source files intact.",
+          "zh": "将报告与文件类型、读取限制和后续分析决定对照，保留原始文件。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What file types does the core support?",
+          "zh": "核心脚本支持什么文件类型？"
+        },
+        "answer": {
+          "en": "The standard-library core supports CSV, TSV and strict JSON. Optional inspectors have their own format and dependency requirements.",
+          "zh": "标准库脚本支持 CSV、TSV 和严格 JSON。可选检查器另有支持范围和依赖条件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can the Skill inspect data without network access?",
+          "zh": "可以不联网检查数据吗？"
+        },
+        "answer": {
+          "en": "The core scripts run locally without network access. Check the separate dependency notes before choosing an optional inspector.",
+          "zh": "核心脚本可离线运行。选用可选检查器前，应核对它的依赖及安装条件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will the report show individual data records?",
+          "zh": "报告会展示原始记录吗？"
+        },
+        "answer": {
+          "en": "The upstream workflow calls for redacted aggregate results and excludes raw rows, direct identifiers, and full paths.",
+          "zh": "上游要求输出去敏汇总，不输出原始行、直接身份标识或完整文件路径。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if the file format is unknown?",
+          "zh": "遇到未知文件格式怎样处理？"
+        },
+        "answer": {
+          "en": "Leave it unprocessed. Confirm the format and use a documented inspector or arrange a separate approved workflow.",
+          "zh": "先跳过该文件。确认格式后使用上游支持的检查器，或另行批准相应流程。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use the report as a statistical conclusion?",
+          "zh": "报告可以当作统计结论吗？"
+        },
+        "answer": {
+          "en": "Use the report to identify questions and quality checks. Confirmatory analysis requires a separate method and validation plan.",
+          "zh": "报告用来发现问题和数据质量风险。确认性结论需要单独选定方法并验证。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which license applies to this Skill?",
+          "zh": "这个 Skill 使用什么许可？"
+        },
+        "answer": {
+          "en": "The specific upstream SKILL.md lists MIT. Check other manifests individually before assuming the same terms.",
+          "zh": "上游清单将该 Skill 标为 MIT。使用其他 Skill 时，分别查阅其许可字段。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use K-Dense AI’s exploratory-data-analysis Skill to profile my approved local CSV with the bundled core script. Show the file and allowed directory before running. Report aggregate missingness, sampling limits and follow-up checks without exporting rows or modifying the source.",
+        "zh": "使用 K-Dense AI 的 exploratory-data-analysis Skill 检查我获准使用的本地 CSV。运行前列出文件和允许目录。用核心脚本汇总缺失情况、抽样限制和后续检查项，不输出原始行，也不修改源文件。"
+      }
+    },
+    "cardDescription": {
+      "en": "Check supported local files for structure and missingness, then record sample limits in a redacted aggregate report.",
+      "zh": "对受支持的本地数据检查结构和缺失情况，生成去敏汇总并记录抽样范围。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "codex",
+        "cursor"
+      ],
+      "note": {
+        "en": "Install the selected Skill in the target host. The core inspection needs Python 3.11 or later and an approved local input root.",
+        "zh": "将这项 Skill 安装到目标宿主。运行核心检查需要 Python 3.11 或更高版本，以及获准使用的本地输入目录。"
+      },
+      "commands": {
+        "codex": "npx skills add K-Dense-AI/scientific-agent-skills --skill exploratory-data-analysis -a codex",
+        "cursor": "npx skills add K-Dense-AI/scientific-agent-skills --skill exploratory-data-analysis -a cursor"
+      },
+      "contexts": {
+        "codex": "terminal",
+        "cursor": "terminal"
+      }
+    }
+  },
+  {
+    "slug": "qa-only",
+    "authorHandle": "garrytan",
+    "name": "QA Reporter",
+    "publisher": "Garry Tan",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/qa-only/SKILL.md",
+    "repositoryUrl": "https://github.com/garrytan/gstack",
+    "seo": {
+      "title": {
+        "en": "gstack QA Reporter: Report-Only Checks and Reproducible Evidence",
+        "zh": "gstack QA Reporter：只报告的 QA 检查与复现证据"
+      },
+      "description": {
+        "en": "Use gstack QA Reporter in Claude Code to investigate browser, API, or CLI behavior, capture reproducible evidence, and suggest regression checks for handoff.",
+        "zh": "用 Claude Code 运行 gstack QA Reporter，在获准的浏览器、API 或 CLI 上复现问题，整理证据并给出回归检查建议。"
+      },
+      "keywords": {
+        "en": [
+          "QA Reporter",
+          "report-only QA"
+        ],
+        "zh": [
+          "QA Reporter",
+          "只报告 QA"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "QA Reporter",
+        "zh": "QA Reporter"
+      },
+      "description": {
+        "en": "gstack QA Reporter runs approved checks and saves a report with reproducible evidence. Use it to investigate defects in a browser or on supported functional surfaces before deciding what to fix.",
+        "zh": "gstack QA Reporter 在获准范围内检查行为，并保存含复现证据的报告。可先查清浏览器或功能问题，再决定是否另行修复。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About gstack QA Reporter",
+        "paragraphs": [
+          "QA Reporter is the report-only mode of gstack, maintained by Garry Tan. Give it a target, scope, and optional earlier baseline. It uses probes appropriate to that surface and records findings and evidence in a report directory. It can recommend regression tests while leaving product code and tests untouched."
+        ]
+      },
+      "zh": {
+        "title": "关于 gstack QA Reporter",
+        "paragraphs": [
+          "QA Reporter 是 Garry Tan 的 gstack 中只出报告的 QA 模式。提供目标、测试范围和可选的上次基线后，它按目标选择探测方式，将发现和证据保存到报告目录。可以提出回归检查建议，产品代码和测试保持原样。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "gstack QA Reporter runs approved checks and saves a report with reproducible evidence. Use it to investigate defects in a browser or on supported functional surfaces before deciding what to fix.",
+      "zh": "gstack QA Reporter 在获准范围内检查行为，并保存含复现证据的报告。可先查清浏览器或功能问题，再决定是否另行修复。"
+    },
+    "upstreamInstall": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack\ncd ~/.claude/skills/gstack && ./setup --host claude",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Run gstack QA Reporter",
+        "zh": "如何运行 gstack QA Reporter"
+      },
+      "howDescription": {
+        "en": "Decide which surface and paths are in scope before the agent starts. Use synthetic data, review the expected side effects, and choose a report location you own.",
+        "zh": "先限定目标和允许测试的路径。使用合成数据，核对测试操作会产生什么影响，并指定你可管理的报告目录。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "gstack QA Reporter Use Cases",
+        "zh": "gstack QA Reporter 的使用场景"
+      },
+      "description": {
+        "en": "A browser defect and a job failure require different evidence. Select an approved target and ask the agent to separate observed behavior, reproduction steps, and checks it could not perform.",
+        "zh": "浏览器缺陷和后台任务失败需要不同证据。指定已获授权的目标，让 Agent 分别记录实际行为、复现步骤和无法覆盖的检查。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Capture a form-validation defect",
+            "zh": "记录表单校验问题"
+          },
+          "description": {
+            "en": "Run the affected form in an approved staging or local environment with synthetic data. Collect the exact input, visible result, and a replayable sequence so an engineer can reproduce the defect without using a production account.",
+            "zh": "在获准使用的本地或测试环境，用合成数据触发表单异常。记录输入、页面结果和可重放的操作顺序，让开发者无需生产账号也能复现。"
+          }
+        },
+        {
+          "title": {
+            "en": "Retest a previously reported issue",
+            "zh": "复核上次报告中的问题"
+          },
+          "description": {
+            "en": "Provide the earlier report and expected behavior. Replay the recorded steps, then document what changed and which nearby paths were checked. Record a missing fixture as a coverage gap.",
+            "zh": "提供旧报告和预期行为，重跑原有步骤，再说明变化和已核对的相邻路径。测试数据缺失时记录为覆盖缺口。"
+          }
+        },
+        {
+          "title": {
+            "en": "Inspect a failing command",
+            "zh": "检查一条失败的命令"
+          },
+          "description": {
+            "en": "Give the agent the CLI command, a local fixture, and the expected exit status. Capture the invocation and observed output with secrets omitted so a maintainer can distinguish the failure from environment setup problems.",
+            "zh": "提供 CLI 命令、本地测试数据和预期退出状态。保留可重跑的调用方式和已脱敏的实际输出，让维护者判断是程序故障还是环境问题。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check an isolated API flow",
+            "zh": "核对隔离环境里的 API 流程"
+          },
+          "description": {
+            "en": "Use a development route and synthetic identity to exercise a specified request. Save response status and observed behavior, then propose a regression check the service owner can add separately.",
+            "zh": "用开发接口与测试身份执行指定请求，记录响应状态和观察到的行为。提出可复现的回归检查，交给服务负责人另行实施。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Set up the supported host",
+          "zh": "准备受支持的宿主"
+        },
+        "description": {
+          "en": "Follow gstack’s install guide for Claude Code and confirm the report-only workflow is available. For browser checks verify the configured browser works with the approved target. Install Git and Bun first. On Windows use the documented Git Bash or WSL setup and check the Node.js requirement.",
+          "zh": "按 gstack 安装指南配置 Claude Code，确认报告模式可用。浏览器任务还需在获准的目标上核对所选测试浏览器。 先安装 Git 和 Bun。Windows 用户按文档使用 Git Bash 或 WSL，并检查 Node.js 要求。"
+        }
+      },
+      {
+        "title": {
+          "en": "Define the allowed checks",
+          "zh": "划定可执行的检查"
+        },
+        "description": {
+          "en": "Give QA Reporter a local or staging target, the expected behavior, and the actions it may take. Use a test identity and avoid real purchases, sends, or account changes.",
+          "zh": "提供本地或测试目标、预期行为和允许的操作。使用测试身份，避开真实购买、消息发送或账号变更。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review the saved evidence",
+          "zh": "复核已保存的证据"
+        },
+        "description": {
+          "en": "Open the report, replay the steps, and check screenshots or functional outputs against what the issue claims. Hand any repair off separately.",
+          "zh": "打开报告，重放关键步骤，将截图或功能输出与问题描述核对。修复需求另行交接。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What is the difference between /qa-only and /qa?",
+          "zh": "/qa-only 和 /qa 有什么区别？"
+        },
+        "answer": {
+          "en": "Use /qa-only for findings and proposed regression checks. The separate /qa workflow can apply fixes and write tests when authorized.",
+          "zh": "/qa-only 产出问题记录和回归建议。另一个 /qa 流程在获准时可以修复并编写测试。"
+        }
+      },
+      {
+        "question": {
+          "en": "Do I have to provide a browser URL?",
+          "zh": "一定要提供浏览器地址吗？"
+        },
+        "answer": {
+          "en": "Choose the surface relevant to the issue. The upstream workflow also supports a CLI, an API route, or a job with an approved fixture.",
+          "zh": "按问题选择目标。官方流程也支持命令行、API 或任务等功能场景，需要提供获准的测试数据。"
+        }
+      },
+      {
+        "question": {
+          "en": "Where does the report go?",
+          "zh": "报告默认保存在哪里？"
+        },
+        "answer": {
+          "en": "The upstream default is .gstack/qa-reports/. You can supply a different output directory and should review which files the run created.",
+          "zh": "上游默认目录为 .gstack/qa-reports/，也可以指定其他输出位置。运行后核对报告实际写入的文件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it retest an existing report?",
+          "zh": "能重新核验之前的报告吗？"
+        },
+        "answer": {
+          "en": "Yes. A regression run can use a previous report or baseline. Supply the expected behavior and verify that the fixture is still valid.",
+          "zh": "可以用上一份报告或基线执行回归检查。先给出预期行为，并确认测试数据仍有效。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use my usual browser profile?",
+          "zh": "能用平时的浏览器登录状态吗？"
+        },
+        "answer": {
+          "en": "Prefer a synthetic identity or isolated test session. The browser choice depends on the gstack configuration and platform, so check it before opening a logged-in target.",
+          "zh": "优先使用测试身份或隔离会话。浏览器选择由 gstack 的配置和平台决定，访问登录页面前先核对。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will the report edit my product or tests?",
+          "zh": "报告会修改产品代码或测试吗？"
+        },
+        "answer": {
+          "en": "QA Reporter can write report artifacts. Its report-only workflow leaves product code and tests untouched.",
+          "zh": "QA Reporter 可以写入报告和证据文件。报告模式保留产品代码和测试原样。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use gstack QA Reporter in Claude Code to investigate my approved local CSV-import CLI. Use the synthetic fixture and compare the observed exit status with the expected validation failure. Save the invocation, sanitized output and reproduction steps. Leave product code and tests untouched and list any coverage gaps.",
+        "zh": "在 Claude Code 中用 gstack QA Reporter 调查已获准执行的本地 CSV 导入命令。使用合成测试文件，对照预期校验失败与实际退出状态。保存调用方式、脱敏输出和复现步骤，保留产品代码与测试原样，并注明覆盖缺口。"
+      }
+    },
+    "cardDescription": {
+      "en": "Reproduce defects, save replayable evidence, and propose regression checks with gstack’s report-only workflow.",
+      "zh": "用 gstack 的报告模式复现问题，保存可重放的证据并提出回归检查建议。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code"
+      ],
+      "note": {
+        "en": "Run this in a terminal to install gstack for Claude Code. Use QA Reporter after setup. The Codex adapter remains experimental.",
+        "zh": "在终端为 Claude Code 安装 gstack，设置完成后运行 QA Reporter。Codex 适配仍处于实验阶段。"
+      },
+      "commands": {
+        "claude-code": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack\ncd ~/.claude/skills/gstack && ./setup --host claude"
+      },
+      "contexts": {
+        "claude-code": "terminal"
+      }
+    }
+  },
+  {
+    "slug": "browser-testing-with-devtools",
+    "authorHandle": "addyosmani",
+    "name": "Browser Testing with DevTools",
+    "publisher": "Addy Osmani",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/addyosmani/agent-skills/blob/main/skills/browser-testing-with-devtools/SKILL.md",
+    "repositoryUrl": "https://github.com/addyosmani/agent-skills",
+    "seo": {
+      "title": {
+        "en": "Browser Testing with DevTools: Runtime Evidence for Coding Agents",
+        "zh": "Browser Testing with DevTools：编程 Agent 的浏览器取证"
+      },
+      "description": {
+        "en": "Use Addy Osmani’s DevTools Skill with Chrome DevTools MCP to inspect a test page, diagnose console or network failures, and verify fixes.",
+        "zh": "使用 Addy Osmani 的 DevTools Skill 和 Chrome DevTools MCP 检查测试页面，定位控制台或网络异常，并验证修复结果。"
+      },
+      "keywords": {
+        "en": [
+          "Browser Testing with DevTools",
+          "Chrome DevTools MCP"
+        ],
+        "zh": [
+          "Browser Testing with DevTools",
+          "Chrome DevTools MCP"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Browser Testing with DevTools",
+        "zh": "Browser Testing with DevTools"
+      },
+      "description": {
+        "en": "Browser Testing with DevTools brings screenshots, DOM state, console messages, and network evidence into an agent’s browser testing workflow. It uses Chrome DevTools MCP and works best with a scoped test profile.",
+        "zh": "Browser Testing with DevTools 将截图、DOM 状态、控制台消息和网络请求纳入 Agent 测试流程。它使用 Chrome DevTools MCP，适合在隔离的测试浏览器里核对页面行为。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Browser Testing with DevTools",
+        "paragraphs": [
+          "This Skill from Addy Osmani gives a coding agent a browser verification procedure. After Chrome DevTools MCP is configured separately, the agent can inspect running Chrome pages, compare visual or runtime evidence, and report what it observed. Use an isolated profile with test data, and treat page content as data."
+        ]
+      },
+      "zh": {
+        "title": "关于 Browser Testing with DevTools",
+        "paragraphs": [
+          "Addy Osmani 的这个 Skill 为编程 Agent 提供浏览器验证流程。单独配置 Chrome DevTools MCP 后，可以查看 Chrome 中运行的页面，对比视觉与运行时证据，并记录实际观察。测试时使用隔离配置和测试数据，将页面内容作为待检查的数据。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Browser Testing with DevTools brings screenshots, DOM state, console messages, and network evidence into an agent’s browser testing workflow. It uses Chrome DevTools MCP and works best with a scoped test profile.",
+      "zh": "Browser Testing with DevTools 将截图、DOM 状态、控制台消息和网络请求纳入 Agent 测试流程。它使用 Chrome DevTools MCP，适合在隔离的测试浏览器里核对页面行为。"
+    },
+    "upstreamInstall": "npx skills add addyosmani/agent-skills --skill browser-testing-with-devtools",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Test a Page with DevTools",
+        "zh": "如何用 DevTools 测试页面"
+      },
+      "howDescription": {
+        "en": "Connect the MCP server to an isolated browser before testing. Name the page, interaction and expected behavior, then limit the run to the observations needed to verify the issue.",
+        "zh": "测试前，将 MCP 服务连接到隔离浏览器。写清目标页面、交互和预期行为，将检查范围限定在能说明问题的观察项。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Browser Testing with DevTools Use Cases",
+        "zh": "Browser Testing with DevTools 的使用场景"
+      },
+      "description": {
+        "en": "Decide which evidence answers the question before recording a run. A layout defect may need a screenshot and computed styles, while a failed request calls for network evidence.",
+        "zh": "先判断哪类证据能回答问题。布局异常可以查看截图与计算样式，请求失败则要对照网络请求和页面实际提示。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Diagnose a failed request",
+            "zh": "定位失败请求"
+          },
+          "description": {
+            "en": "Provide a local or staging URL and the action that should issue a request. Capture its status and relevant console errors with sensitive values omitted. Compare the first failure and a controlled retry to distinguish a persistent defect from a transient response.",
+            "zh": "提供本地或测试地址以及触发请求的动作。记录状态码和相关控制台错误，去掉敏感信息，再做一次受控重试，判断是持续故障还是偶发响应。"
+          }
+        },
+        {
+          "title": {
+            "en": "Verify responsive layout",
+            "zh": "检查响应式布局"
+          },
+          "description": {
+            "en": "Specify two viewport sizes and the element expected to remain visible. Capture screenshots and inspect computed styles at both sizes. Keep the comparison focused on the component you changed.",
+            "zh": "指定两个视口尺寸和应当可见的元素。分别保存截图并检查计算样式，将对比限定在本次改动的组件。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check a state transition",
+            "zh": "核对交互的状态变化"
+          },
+          "description": {
+            "en": "Choose a non-production interaction with synthetic data, then record what the UI shows before and after the action. Inspect the DOM and console to tell a rendering problem apart from a missing state change.",
+            "zh": "选择一项使用测试数据的非生产操作，记录操作前后的页面状态。检查 DOM 和控制台，区分渲染问题与状态未更新。"
+          }
+        },
+        {
+          "title": {
+            "en": "Compare performance traces",
+            "zh": "比较性能跟踪"
+          },
+          "description": {
+            "en": "Measure the same page and interaction before and after the change under comparable conditions. For private test URLs, disable CrUX lookups with --no-performance-crux. Record relevant timing or long tasks and the test conditions so a teammate can repeat the comparison.",
+            "zh": "在可比条件下，对相同页面与操作分别记录改动前后的性能跟踪。私有测试地址用 --no-performance-crux 关闭 CrUX 查询。保留相关耗时、长任务或测试条件，方便同事再次核验。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Configure isolated browser access",
+          "zh": "配置隔离浏览器"
+        },
+        "description": {
+          "en": "Install the Skill for the chosen host. With supported Chrome, Node.js LTS, and npm available, configure Chrome DevTools MCP separately with --isolated and confirm it can start the test browser.",
+          "zh": "在所选宿主中安装 Skill。准备受支持的 Chrome、Node.js LTS 和 npm，再单独配置带 --isolated 参数的 Chrome DevTools MCP，确认测试浏览器能启动。"
+        }
+      },
+      {
+        "title": {
+          "en": "Capture a focused baseline",
+          "zh": "采集有范围的基线"
+        },
+        "description": {
+          "en": "Open the approved test URL, reproduce the selected behavior, and collect only the relevant DOM, console, network, or screenshot evidence.",
+          "zh": "打开获准的测试地址，复现指定行为，仅保留需要的 DOM、控制台、网络或截图证据。"
+        }
+      },
+      {
+        "title": {
+          "en": "Verify the change or retry",
+          "zh": "核验改动或重试结果"
+        },
+        "description": {
+          "en": "Repeat the same interaction under comparable conditions. Record what changed, what stayed unresolved, and where the sanitized evidence is saved.",
+          "zh": "在可比条件下重复同一操作。记录发生了什么变化、还有哪些问题，以及脱敏证据保存在哪里。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does installing the Skill configure MCP?",
+          "zh": "安装 Skill 时会配置 MCP 吗？"
+        },
+        "answer": {
+          "en": "Set up Chrome DevTools MCP in the host separately. The Skill provides the workflow, and the MCP server provides access to the browser tools.",
+          "zh": "需要在宿主中单独配置 Chrome DevTools MCP。Skill 提供工作流程，MCP 服务提供访问浏览器的工具。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use my logged-in Chrome profile?",
+          "zh": "能使用平时登录的 Chrome 吗？"
+        },
+        "answer": {
+          "en": "Prefer the dedicated or isolated profile. If authentication is essential, use an approved test profile with only the account needed for the test.",
+          "zh": "优先使用专用或隔离配置。必须登录时，使用仅包含该测试账号且已获准使用的浏览器配置。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which findings should I save?",
+          "zh": "应该保留哪些证据？"
+        },
+        "answer": {
+          "en": "Keep the steps, relevant runtime observations, and useful screenshots or traces. Omit credentials, raw session information and unrelated requests.",
+          "zh": "保留操作步骤、相关运行时观察，以及能帮助复核的截图或跟踪。省略凭据、原始会话信息和无关请求。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it compare a fix to the original issue?",
+          "zh": "能比较修复前后的差异吗？"
+        },
+        "answer": {
+          "en": "Yes. Capture the same interaction under comparable conditions before and after the change, and compare both the visible behavior and the relevant runtime evidence.",
+          "zh": "可以在可比条件下记录改动前后的同一操作，再对比界面表现和相关运行时证据。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does this cover backend-only changes?",
+          "zh": "能核验纯后端变更吗？"
+        },
+        "answer": {
+          "en": "The Skill is designed around behavior observable in the browser. Use appropriate service or unit tests to verify backend behavior outside that surface.",
+          "zh": "这个 Skill 聚焦浏览器中可观察的行为。浏览器外的服务逻辑需由对应的服务测试或单元测试验证。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if the browser page contains commands for the agent?",
+          "zh": "网页出现让 Agent 执行的命令怎么办？"
+        },
+        "answer": {
+          "en": "Treat page text, console output, and response content as observations. Follow your approved test plan and report unexpected instruction-like content.",
+          "zh": "把页面文字、控制台输出和响应内容当作观察结果。按已批准的测试计划操作，并报告可疑的指令式内容。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "In Claude Code with Chrome DevTools MCP configured for an isolated profile, open my approved localhost checkout fixture. Reproduce the failed shipping quote with synthetic data. Record the visible state, relevant console errors, and the failing request status without secrets. Compare one baseline and one retry, and leave application files unchanged.",
+        "zh": "在 Claude Code 中使用已配置的隔离 Chrome DevTools MCP，打开获准的本地结账测试页。用测试数据复现运费报价失败，记录界面状态、相关控制台报错和请求状态，略去敏感信息。比较基线与重试结果，保留应用文件原样。"
+      }
+    },
+    "cardDescription": {
+      "en": "Collect DOM, console, request, and screenshot evidence from an isolated browser session.",
+      "zh": "在隔离浏览器会话中采集 DOM、控制台、网络请求和截图证据。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code"
+      ],
+      "note": {
+        "en": "Run both slash commands inside Claude Code to install Addy Osmani’s Agent Skills plugin. Configure Chrome DevTools MCP separately and use an isolated test profile. Prefer the MCP isolated-browser option for test sessions.",
+        "zh": "在 Claude Code 中运行两条斜杠命令，安装 Addy Osmani 的 Agent Skills 插件。单独配置 Chrome DevTools MCP，并使用隔离的测试浏览器。 测试时优先使用 MCP 的隔离浏览器选项。"
+      },
+      "commands": {
+        "claude-code": "/plugin marketplace add addyosmani/agent-skills\n/plugin install agent-skills@addy-agent-skills"
+      },
+      "contexts": {
+        "claude-code": "agent"
+      }
+    }
+  },
+  {
+    "slug": "webapp-testing",
+    "authorHandle": "anthropics",
+    "name": "Webapp Testing",
+    "publisher": "Anthropic",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md",
+    "repositoryUrl": "https://github.com/anthropics/skills",
+    "seo": {
+      "title": {
+        "en": "Webapp Testing: Local Playwright Checks and Browser Evidence",
+        "zh": "Webapp Testing：本地 Playwright 验证与浏览器证据"
+      },
+      "description": {
+        "en": "Use Anthropic’s Webapp Testing Skill to reproduce local UI failures with Python Playwright, capture screenshots and console output, and preserve a repeatable test.",
+        "zh": "用 Anthropic 的 Webapp Testing Skill 在本地复现网页问题，保存 Python Playwright 脚本、截图和控制台线索。"
+      },
+      "keywords": {
+        "en": [
+          "Webapp Testing",
+          "Playwright local web app testing"
+        ],
+        "zh": [
+          "Webapp Testing",
+          "Playwright 本地网页测试"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Webapp Testing",
+        "zh": "Webapp Testing"
+      },
+      "description": {
+        "en": "Run targeted browser checks on a local web app with Python Playwright. Capture the failing interaction and relevant browser evidence so another developer can repeat it.",
+        "zh": "用 Python Playwright 在本地网页应用复现具体交互，保存脚本和浏览器证据，方便其他开发者重跑。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Webapp Testing",
+        "paragraphs": [
+          "Anthropic’s Apache-2.0 Webapp Testing Skill directs a coding agent to write native Python Playwright scripts. It supports static HTML and local web apps, and includes a helper to manage approved development servers. A screenshot records visible state while an assertion determines whether the behavior passed."
+        ]
+      },
+      "zh": {
+        "title": "关于 Webapp Testing",
+        "paragraphs": [
+          "Anthropic 的 Webapp Testing Skill 采用 Apache-2.0，指导编程 Agent 编写原生 Python Playwright 脚本。它能检查静态 HTML 或本地应用，也提供启动获准开发服务的辅助脚本。截图记录可见状态，断言用来判断行为是否符合预期。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Run targeted browser checks on a local web app with Python Playwright. Capture the failing interaction and relevant browser evidence so another developer can repeat it.",
+      "zh": "用 Python Playwright 在本地网页应用复现具体交互，保存脚本和浏览器证据，方便其他开发者重跑。"
+    },
+    "upstreamInstall": "/plugin marketplace add anthropics/skills\n/plugin install example-skills@anthropic-agent-skills",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Reproduce a Local Web App Failure",
+        "zh": "如何复现一次本地网页交互"
+      },
+      "howDescription": {
+        "en": "Start with one observable failure. The agent can use an existing test server or start an approved local command, then capture only the evidence needed to repeat the check.",
+        "zh": "从一个能观察到的失败开始。Agent 可以复用已启动的测试服务，或运行你已确认的本地启动命令，再保存足以复现问题的证据。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Webapp Testing Use Cases for Local Browsers",
+        "zh": "Webapp Testing 的本地浏览器验证场景"
+      },
+      "description": {
+        "en": "Choose an interaction with a visible expected result. Pair screenshots and console output with a narrow assertion that a teammate can rerun.",
+        "zh": "选择有可见预期结果的交互。把截图和控制台线索与一个具体断言放在一起，方便队友按相同条件重新验证。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Reproduce a form validation issue",
+            "zh": "复现表单校验错误"
+          },
+          "description": {
+            "en": "Give the agent a local URL, synthetic form values and the error message you expect. It can submit the fixture, capture the actual UI state and retain an assertion for the missing message.",
+            "zh": "提供本地地址、模拟表单值和预期错误提示。让 Agent 提交测试数据，记录页面实际状态，并把缺失提示写成可重复的断言。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check a loading transition",
+            "zh": "检查加载结束后的交互"
+          },
+          "description": {
+            "en": "Start with a page whose data arrives after initial render. Wait for the relevant state, inspect the rendered DOM and record whether the final control becomes usable.",
+            "zh": "选一个首屏渲染后才返回数据的页面。等待相关状态出现，再查看实际 DOM，并确认目标控件能否按预期使用。"
+          }
+        },
+        {
+          "title": {
+            "en": "Collect evidence for a broken route",
+            "zh": "给失效路由保留现场"
+          },
+          "description": {
+            "en": "Use a test session to open the route that fails. Save the navigation sequence, screenshot and relevant console error together so a developer can locate the failure.",
+            "zh": "在测试会话打开有问题的路由，将导航顺序、截图和相关控制台错误放在同一份记录里，方便开发者定位故障。"
+          }
+        },
+        {
+          "title": {
+            "en": "Verify an isolated HTML change",
+            "zh": "复核一处静态 HTML 改动"
+          },
+          "description": {
+            "en": "Open the approved local HTML fixture and check a keyboard or click interaction. Leave a small script with the exact assertion so the same behavior can be retested later.",
+            "zh": "打开获准的本地 HTML 测试文件，验证键盘操作或点击结果。留下包含具体断言的短脚本，便于后续回归检查。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Set the test boundary",
+          "zh": "限定测试范围"
+        },
+        "description": {
+          "en": "Give the agent a local URL or HTML file, approved fixtures and one observable success condition. Configure Python Playwright and the required browser.",
+          "zh": "给出本地地址或 HTML 文件、获准使用的测试数据和一个可观察的验收条件。准备好 Python Playwright 和所需浏览器。"
+        }
+      },
+      {
+        "title": {
+          "en": "Exercise the interaction",
+          "zh": "执行指定交互"
+        },
+        "description": {
+          "en": "Use the running local app or an approved server command with the bundled helper. Wait for the expected state and inspect the DOM before choosing locators.",
+          "zh": "使用正在运行的本地应用，或通过辅助脚本运行已审查的启动命令。等页面进入目标状态后查看 DOM，再选择定位方式。"
+        }
+      },
+      {
+        "title": {
+          "en": "Hand off reproducible evidence",
+          "zh": "交接可复现证据"
+        },
+        "description": {
+          "en": "Save the script, actual assertion result and any necessary screenshot or console output. Record the command and local route used.",
+          "zh": "保存测试脚本、断言结果和必要截图或控制台输出。记下命令与检查的本地路由。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Which browser toolkit does it use?",
+          "zh": "这个 Skill 使用什么浏览器工具？"
+        },
+        "answer": {
+          "en": "The upstream instructions use native Python Playwright scripts and provide a helper for starting local development servers.",
+          "zh": "上游使用原生 Python Playwright 脚本，并提供管理本地开发服务器的辅助工具。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it check a static HTML file?",
+          "zh": "能检查静态 HTML 文件吗？"
+        },
+        "answer": {
+          "en": "Yes. The source includes an example using a local file URL, so a server is only needed when the app requires one.",
+          "zh": "可以。上游有通过本地文件地址执行的示例，应用需要开发服务时再启动。"
+        }
+      },
+      {
+        "question": {
+          "en": "Do I have to start a new server?",
+          "zh": "需要另开一个服务器吗？"
+        },
+        "answer": {
+          "en": "Reuse the running approved server when one is already available. Use the helper only if you have reviewed the local start command.",
+          "zh": "已有获准且可用的本地服务器时可直接复用。只有确认了本地启动命令后，才交给辅助脚本执行。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is a screenshot enough to prove a fix?",
+          "zh": "一张截图能证明修复成功吗？"
+        },
+        "answer": {
+          "en": "A screenshot records a rendered state. Keep a repeatable assertion and its output to verify the actual interaction.",
+          "zh": "截图记录页面状态。应同时保存可重复执行的断言及其输出，用来核对交互。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Claude Code plugin includes it?",
+          "zh": "Claude Code 的哪个插件包含它？"
+        },
+        "answer": {
+          "en": "Anthropic lists Webapp Testing in its example-skills plugin. The browser and Python dependencies still need to be available.",
+          "zh": "Anthropic 将 Webapp Testing 放在 example-skills 插件中。浏览器与 Python 依赖仍需另行准备。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use production accounts as test data?",
+          "zh": "能用生产账号当测试数据吗？"
+        },
+        "answer": {
+          "en": "Use approved test environments and synthetic fixtures for this workflow. Set aside any check that needs production access until its scope is agreed.",
+          "zh": "这套流程使用获准的测试环境和模拟数据。需要访问生产环境的检查应先确认访问范围。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use Webapp Testing on my local settings form. Enter synthetic values that should trigger the required-field message, save a Playwright assertion and record the screenshot and browser errors. Use only my approved local start command.",
+        "zh": "用 Webapp Testing 验证我本地的设置表单。输入会触发必填提示的模拟值，保存 Playwright 断言和实际截图，记录相关浏览器错误。只运行我确认过的本地启动命令。"
+      }
+    },
+    "cardDescription": {
+      "en": "Run targeted browser checks on a local web app with Python Playwright. Capture the failing interaction and relevant browser evidence so another developer can repeat it.",
+      "zh": "用 Python Playwright 在本地网页应用复现具体交互，保存脚本和浏览器证据，方便其他开发者重跑。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code"
+      ],
+      "commands": {
+        "claude-code": "/plugin marketplace add anthropics/skills\n/plugin install example-skills@anthropic-agent-skills"
+      },
+      "note": {
+        "en": "Use Claude Code chat. Prepare Python Playwright and a browser separately.",
+        "zh": "在 Claude Code 对话中运行。Python Playwright 与浏览器需另行准备。"
+      },
+      "contexts": {
+        "claude-code": "agent"
+      }
+    }
+  },
+  {
+    "slug": "taste-skill",
+    "authorHandle": "leonxlnx",
+    "name": "Design Taste Frontend",
+    "publisher": "Leon Lin",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/SKILL.md",
+    "repositoryUrl": "https://github.com/Leonxlnx/taste-skill",
+    "seo": {
+      "title": {
+        "en": "Design Taste Frontend: Art Direction and Browser Review",
+        "zh": "Design Taste Frontend：网站视觉方向与浏览器验收"
+      },
+      "description": {
+        "en": "Use Leon Lin’s Design Taste Frontend Skill to turn a website brief into an art direction, implement it in the existing stack, and check the rendered page.",
+        "zh": "用 Leon Lin 的 Design Taste Frontend Skill 设定网页视觉方向，在原有技术栈实现页面，再用真实浏览器复核。"
+      },
+      "keywords": {
+        "en": [
+          "Design Taste Frontend",
+          "frontend art direction skill"
+        ],
+        "zh": [
+          "Design Taste Frontend",
+          "网页视觉设计 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Design Taste Frontend",
+        "zh": "Design Taste Frontend"
+      },
+      "description": {
+        "en": "Take a landing page from audience and product brief through visual decisions, implementation and a real-browser review. Use the existing stack and preserve the content the page needs to communicate.",
+        "zh": "从受众与产品简报出发，确定落地页的视觉方向、实现方式和浏览器验收条件。使用原有技术栈，保留页面必须传达的产品信息。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Design Taste Frontend",
+        "paragraphs": [
+          "This MIT-licensed Skill describes a frontend workflow for building or redesigning websites. It uses project-local working files, approved visual references and browser checks to turn a brief into a rendered page. The current main Skill also covers redesign."
+        ]
+      },
+      "zh": {
+        "title": "关于 Design Taste Frontend",
+        "paragraphs": [
+          "这项 MIT 许可的 Skill 为新建或重设计网站提供前端流程。它使用项目内工作文件、获准参考图和浏览器检查，把简报落实成可验收的页面。现行主 Skill 同时覆盖改版场景。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Take a landing page from audience and product brief through visual decisions, implementation and a real-browser review. Use the existing stack and preserve the content the page needs to communicate.",
+      "zh": "从受众与产品简报出发，确定落地页的视觉方向、实现方式和浏览器验收条件。使用原有技术栈，保留页面必须传达的产品信息。"
+    },
+    "upstreamInstall": "npx skills add https://github.com/Leonxlnx/taste-skill --skill design-taste-frontend",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Build and Review a Page Against the Brief",
+        "zh": "如何根据设计简报实现并检查页面"
+      },
+      "howDescription": {
+        "en": "Give the agent the real product content and one explicit design direction. Then check the result in a browser instead of judging an isolated screenshot or the generated source.",
+        "zh": "提供真实的产品内容和一个明确的视觉方向。实现后打开网页检查排版、图片和交互状态，并记录尚需人工核验的细节。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Design Taste Frontend Use Cases for Websites",
+        "zh": "Design Taste Frontend 的网页设计场景"
+      },
+      "description": {
+        "en": "The useful starting point depends on what already exists. Select a page scope, the imagery you can use and the browser states that matter before changing the layout.",
+        "zh": "新建页面、改版和交接检查的起点不同。先选定页面范围与获准素材，再说明需要验证的屏幕宽度和交互状态。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Design a product landing page",
+            "zh": "设计产品落地页"
+          },
+          "description": {
+            "en": "Share a real product brief, one buyer group and approved screenshots. Have the agent establish visual hierarchy, build the page and show where the main message reads clearly on narrow and wide screens.",
+            "zh": "提供真实的产品简报、目标受众和获准截图。让 Agent 建立信息层级并实现页面，再检查核心信息在宽屏和窄屏是否都能读清。"
+          }
+        },
+        {
+          "title": {
+            "en": "Redesign a stale homepage",
+            "zh": "改版过时的首页"
+          },
+          "description": {
+            "en": "Provide the existing page and identify which content and navigation must survive. Ask for a scoped redesign that improves one weak section, then review a before-and-after render.",
+            "zh": "标出必须保留的内容与导航，在已有页面中挑一个需要改进的区域。对比改版前后渲染结果，检查新布局是否仍然符合原有信息结构。"
+          }
+        },
+        {
+          "title": {
+            "en": "Polish a responsive portfolio",
+            "zh": "打磨响应式作品集"
+          },
+          "description": {
+            "en": "Give the agent the image assets and existing layout. It can check edge alignment and visual crops at representative widths, then keep a record of fixes that affect legibility.",
+            "zh": "提供现有布局与图片，检查代表性屏幕宽度下的边线对齐和裁切情况。记录具体影响阅读或图像识别的问题及修正结果。"
+          }
+        },
+        {
+          "title": {
+            "en": "Review a page before handoff",
+            "zh": "交接前复核网页"
+          },
+          "description": {
+            "en": "Start the real page locally and compare it with the approved art direction. Ask the agent to flag missing assets and layout regressions with screenshots tied to specific viewports.",
+            "zh": "在本地打开实现页面，对照已批准的视觉方向。让 Agent 标出遗漏素材或布局回归，并附上对应屏幕宽度的截图。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Establish the design constraints",
+          "zh": "说明设计边界"
+        },
+        "description": {
+          "en": "Provide the route, audience, existing stack, approved imagery and sections that must remain. Use Node.js 22 or later and an installed Chrome, Edge, or Chromium for the bundled checks.",
+          "zh": "给出页面路径、目标读者、技术栈、获准素材和必须保留的章节。 内置检查脚本需要 Node.js 22 或更高版本，以及已安装的 Chrome、Edge 或 Chromium。"
+        }
+      },
+      {
+        "title": {
+          "en": "Implement one coherent direction",
+          "zh": "落实一个视觉方向"
+        },
+        "description": {
+          "en": "Use the existing components and design decisions where they fit. Keep draft material in the project and avoid replacing missing assets without approval.",
+          "zh": "适用时复用项目组件和已有设计决策。把草稿放在项目内，替换缺失素材之前先核对许可和用途。"
+        }
+      },
+      {
+        "title": {
+          "en": "Check the real render",
+          "zh": "验证真实渲染"
+        },
+        "description": {
+          "en": "Open the approved local page in a browser and inspect desktop and narrow layouts. Record any issues the available checker cannot evaluate.",
+          "zh": "在浏览器打开获准页面，检查桌面和窄屏布局，并标记当前检查工具无法覆盖的问题。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does the current Skill cover redesign?",
+          "zh": "现行 Skill 覆盖改版吗？"
+        },
+        "answer": {
+          "en": "Yes. The main Design Taste Frontend instructions cover fresh builds, restyling, redesign and review.",
+          "zh": "覆盖。Design Taste Frontend 主 Skill 同时用于新建、改版、打磨和检查网页。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does the Skill require a new framework?",
+          "zh": "需要换前端框架吗？"
+        },
+        "answer": {
+          "en": "The upstream instructions work across web stacks. Existing routing and component constraints should inform the implementation.",
+          "zh": "上游支持不同网页技术栈。实现时应先遵守项目现有的路由、框架与组件约束。"
+        }
+      },
+      {
+        "question": {
+          "en": "What visual material should I provide?",
+          "zh": "应该提供哪些素材？"
+        },
+        "answer": {
+          "en": "Provide references you can use, real product screenshots if available and any constraints on sourcing or generating new images.",
+          "zh": "提供获准使用的参考图、已有产品截图，并说明新素材的生成或来源限制。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can source review replace a browser check?",
+          "zh": "只看代码能验收吗？"
+        },
+        "answer": {
+          "en": "Use the browser to verify layout, image behavior and responsive states. Source review is useful for explaining how a rendering issue arose.",
+          "zh": "浏览器检查用来核对布局、图片表现和响应式状态。代码检查可用于追查渲染问题的原因。"
+        }
+      },
+      {
+        "question": {
+          "en": "Where should drafts live?",
+          "zh": "草稿文件保存在哪里？"
+        },
+        "answer": {
+          "en": "The current instructions put working files in a project-local .taste-skill directory. Check generated files before adding them to version control.",
+          "zh": "现行指引将工作文件放在项目内的 .taste-skill 目录。提交前先核对生成文件的范围。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does installing the Skill add an image service?",
+          "zh": "安装就能使用外部图像服务吗？"
+        },
+        "answer": {
+          "en": "The main Skill installs the workflow. A host needs separately configured access if the task calls for an external image service.",
+          "zh": "安装提供工作指引。若任务需要外部图像服务，宿主仍需另行配置对应权限。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use Design Taste Frontend to revise my existing product landing page. Keep navigation and approved copy, use the supplied product screenshots, and review the new page at mobile and desktop widths. Report each visible regression before further changes.",
+        "zh": "用 Design Taste Frontend 调整现有产品落地页。保留导航和批准的文案，只用我提供的产品截图。在手机与桌面宽度复核，先报告可见回归再继续修改。"
+      }
+    },
+    "cardDescription": {
+      "en": "Take a landing page from audience and product brief through visual decisions, implementation and a real-browser review. Use the existing stack and preserve the content the page needs to communicate.",
+      "zh": "从受众与产品简报出发，确定落地页的视觉方向、实现方式和浏览器验收条件。使用原有技术栈，保留页面必须传达的产品信息。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex"
+      ],
+      "note": {
+        "en": "Use a supported coding host and a real browser for review. Reference images and any external media tooling need separate approval.",
+        "zh": "使用已核对的编程宿主，并在真实浏览器复核。参考图片与外部素材工具需要单独确认。"
+      }
+    }
+  },
+  {
+    "slug": "caveman",
+    "authorHandle": "juliusbrussee",
+    "name": "Caveman",
+    "publisher": "Julius Brussee",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/JuliusBrussee/caveman/blob/main/skills/caveman/SKILL.md",
+    "repositoryUrl": "https://github.com/JuliusBrussee/caveman",
+    "seo": {
+      "title": {
+        "en": "Caveman Skill: Shorter Agent Replies With Technical Detail",
+        "zh": "Caveman Skill：压缩回复篇幅并保留技术事实"
+      },
+      "description": {
+        "en": "Configure the Caveman Skill for concise coding-agent replies. Compare output without dropping paths, errors, negations, or details needed to verify the work.",
+        "zh": "使用 Caveman Skill 缩短编程 Agent 的可见回复，并核对文件路径、错误原文、否定条件与实际验证结果。"
+      },
+      "keywords": {
+        "en": [
+          "Caveman",
+          "concise coding agent replies"
+        ],
+        "zh": [
+          "Caveman",
+          "编程 Agent 简洁回复 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Caveman",
+        "zh": "Caveman"
+      },
+      "description": {
+        "en": "Use Caveman to shorten a coding agent’s visible replies while keeping exact errors, commands and outcomes. Compare the same task before and after enabling the style.",
+        "zh": "用 Caveman 缩短编程 Agent 的可见回复，保留准确的错误、命令和结果。用同一个任务比较启用前后的输出。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About the Caveman Skill",
+        "paragraphs": [
+          "Caveman changes how an agent writes its replies. It cuts filler and puts the answer first while retaining technical facts and explicit language requirements. The repository licenses the Skill under Apache-2.0 from version 3.0.0 onward. Engine compression serves a separate input-side workflow. Its companion instructions cover investigation before editing and bounded refactoring. Use those for changes to the code itself."
+        ]
+      },
+      "zh": {
+        "title": "关于 Caveman Skill",
+        "paragraphs": [
+          "Caveman 调整 Agent 的回复方式，把结论提前并删去冗余，同时保留技术事实和用户明确指定的回复语言。从 3.0.0 起，仓库以 Apache-2.0 发布该 Skill。Engine 处理的是另一类输入压缩任务。 同仓的 Investigate First 与 Safe Refactor 分别处理改动前的调查和有边界的重构。需要修改代码时，可按任务查阅这些指引。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Use Caveman to shorten a coding agent’s visible replies while keeping exact errors, commands and outcomes. Compare the same task before and after enabling the style.",
+      "zh": "用 Caveman 缩短编程 Agent 的可见回复，保留准确的错误、命令和结果。用同一个任务比较启用前后的输出。"
+    },
+    "upstreamInstall": "npx skills add JuliusBrussee/caveman --skill caveman",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Check What a Shorter Reply Still Contains",
+        "zh": "如何核对简短回复保留了哪些信息"
+      },
+      "howDescription": {
+        "en": "Give the agent an unchanged task, then compare the two outputs. Exact error strings and the decision behind a fix should survive even when the response is shorter.",
+        "zh": "让 Agent 用原模式与简短模式处理同一个任务。核对错误原文、命令与结论，确保篇幅变短以后，接手的人仍知道下一步如何验证。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Caveman Skill Use Cases for Concise Replies",
+        "zh": "Caveman Skill 的简洁回复场景"
+      },
+      "description": {
+        "en": "Choose a reply that has clear technical facts to preserve. Compare what a developer can still act on before using terse mode in everyday work.",
+        "zh": "先选一个有明确技术事实的回复。对照原始记录复核错误、路径和判断依据，再决定何时适合使用简短模式。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Summarize a test failure",
+            "zh": "汇总一次测试失败"
+          },
+          "description": {
+            "en": "Provide one saved test result and ask for the failing test, error and next check. Compare the normal and terse replies against the log to make sure neither omits the exact failure.",
+            "zh": "提供一份已有测试结果，让 Agent 列出失败用例、错误和下一项检查。对照原始日志检查正常与简短两份回复是否都保留了准确的失败信息。"
+          }
+        },
+        {
+          "title": {
+            "en": "Write a small change handoff",
+            "zh": "交接一次小改动"
+          },
+          "description": {
+            "en": "Give the agent the same diff and acceptance checks in two modes. Keep the shorter handoff if the affected files, observed results and remaining uncertainty are still easy to find.",
+            "zh": "在两种模式下提供相同的 diff 与验收条件。如果简短版仍能看清影响文件、实际结果和待核事项，就用它交接。"
+          }
+        },
+        {
+          "title": {
+            "en": "Reduce status-update noise",
+            "zh": "精简状态更新"
+          },
+          "description": {
+            "en": "Use an approved task transcript and ask the agent to surface the decision, blocker and next action. Check that the short version still names the owner or dependency when it matters.",
+            "zh": "提供获准使用的任务记录，请 Agent 提取决定、阻塞和下一步。检查短版是否还保留了关键的负责人和依赖。"
+          }
+        },
+        {
+          "title": {
+            "en": "Return to normal mode for a delicate explanation",
+            "zh": "重要解释时恢复原模式"
+          },
+          "description": {
+            "en": "If a risk or rollback condition needs a detailed explanation, ask the agent to stop using Caveman. Check that the longer response still tracks the same technical evidence.",
+            "zh": "遇到需要说明风险或回滚条件的任务，先让 Agent 停用 Caveman，再核对详细回复是否仍与原有技术证据一致。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Install the Skill for your host",
+          "zh": "按宿主安装"
+        },
+        "description": {
+          "en": "Follow the upstream host-specific instructions. Start with the reply-style Skill if your task is to change visible output. Invoke /caveman where supported or $caveman in Codex.",
+          "zh": "按照上游针对当前宿主的说明安装。若任务只涉及可见回复，先选择回复风格 Skill。 在支持斜杠命令的宿主使用 /caveman，在 Codex 使用 $caveman。"
+        }
+      },
+      {
+        "title": {
+          "en": "Run a paired comparison",
+          "zh": "用相同输入做对照"
+        },
+        "description": {
+          "en": "Give the same input to a normal reply and a Caveman reply. Record the response language, errors, commands and observed result.",
+          "zh": "用同一个输入分别生成正常和简短回复，记录语言要求、原始错误、命令和观察结果。"
+        }
+      },
+      {
+        "title": {
+          "en": "Inspect facts before judging length",
+          "zh": "先核对事实"
+        },
+        "description": {
+          "en": "Compare paths, commands, negations and uncertainty with the source. Stop the mode when the task needs more explanation.",
+          "zh": "将路径、命令、否定条件和不确定性与来源对照。需要详细解释时可以退出简短模式。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does Caveman compress what the agent reads?",
+          "zh": "Caveman 会压缩 Agent 读入的信息吗？"
+        },
+        "answer": {
+          "en": "The reply-style Skill changes visible output. The Engine has separate input compression and recovery behavior.",
+          "zh": "回复风格 Skill 改变可见输出。Engine 有独立的输入压缩与恢复流程。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will it switch my reply language?",
+          "zh": "会切换用户要求的回复语言吗？"
+        },
+        "answer": {
+          "en": "The manifest prioritizes an explicit reply-language instruction. Technical terms and errors should remain exact.",
+          "zh": "上游清单要求优先遵守用户明确指定的回复语言，并保留技术术语及错误原文。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I tell whether the host tracks the mode?",
+          "zh": "怎么知道宿主是否跟踪模式？"
+        },
+        "answer": {
+          "en": "The Skill can report the hook’s mode when available. A host without the relevant hook can only report the mode the agent followed.",
+          "zh": "如果宿主提供相关 hook，Skill 可以报告 hook 返回的状态。没有 hook 时只能说明 Agent 实际遵循了什么模式。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I turn it off during a task?",
+          "zh": "任务中间能退出吗？"
+        },
+        "answer": {
+          "en": "The upstream Skill documents stop caveman or normal mode to stop the style.",
+          "zh": "上游支持用 stop caveman 或 normal mode 停用这种回复风格。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I promise a fixed token saving?",
+          "zh": "能承诺固定的 token 节省吗？"
+        },
+        "answer": {
+          "en": "Use like-for-like output measurements on your own tasks. The Skill does not guarantee a fixed reduction in context or billed tokens.",
+          "zh": "需要对同一任务做实际输出对照。Skill 本身不保证固定的上下文或计费 token 降幅。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I compare besides length?",
+          "zh": "除了长度还该核对什么？"
+        },
+        "answer": {
+          "en": "Check paths, numbers, errors, negations, failed checks and the next action against the same source material.",
+          "zh": "对照原始材料核对路径、数字、错误、否定条件、失败检查与后续行动。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Use Caveman to summarize this saved test run. Lead with the failure. Keep the exact test name, error, command and uncertainty. Do not claim the test was rerun.",
+        "zh": "用 Caveman 汇总这份已有测试日志。先写失败结论，保留用例名、错误原文、命令和不确定性。不要把阅读已有日志写成重新运行了测试。"
+      }
+    },
+    "cardDescription": {
+      "en": "Use Caveman to shorten a coding agent’s visible replies while keeping exact errors, commands and outcomes. Compare the same task before and after enabling the style.",
+      "zh": "用 Caveman 缩短编程 Agent 的可见回复，保留准确的错误、命令和结果。用同一个任务比较启用前后的输出。"
+    },
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Investigate First companion Skill",
+          "zh": "Investigate First 排查指引"
+        },
+        "href": "https://github.com/JuliusBrussee/caveman/blob/main/skills/investigate-first/SKILL.md"
+      },
+      {
+        "label": {
+          "en": "Safe Refactor companion Skill",
+          "zh": "Safe Refactor 重构指引"
+        },
+        "href": "https://github.com/JuliusBrussee/caveman/blob/main/skills/safe-refactor/SKILL.md"
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex"
+      ],
+      "note": {
+        "en": "This installs the reply-style instructions. Persistent mode tracking depends on a separate supported hook installation.",
+        "zh": "此命令安装回复风格指引。持续模式跟踪取决于另行安装的宿主 hook。"
+      }
+    }
+  },
+  {
+    "slug": "slideshow",
+    "authorHandle": "heygen-com",
+    "name": "HyperFrames Slideshow",
+    "publisher": "HeyGen",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/slideshow/SKILL.md",
+    "repositoryUrl": "https://github.com/heygen-com/hyperframes",
+    "seo": {
+      "title": {
+        "en": "HyperFrames Slideshow: Interactive HTML Decks for Live Talks",
+        "zh": "HyperFrames Slideshow：现场演示的交互式 HTML 幻灯片"
+      },
+      "description": {
+        "en": "Build a live HyperFrames deck with speaker notes, progressive reveals, and branching slides. Verify the presentation in a browser before handoff.",
+        "zh": "用 HyperFrames Slideshow 构建可在浏览器现场演示的 HTML 幻灯片，检查逐步揭示、分支跳转和讲稿。"
+      },
+      "keywords": {
+        "en": [
+          "HyperFrames Slideshow",
+          "interactive HTML presentation Skill"
+        ],
+        "zh": [
+          "HyperFrames Slideshow",
+          "交互式 HTML 幻灯片 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "HyperFrames Slideshow",
+        "zh": "HyperFrames Slideshow"
+      },
+      "description": {
+        "en": "Turn an approved outline or existing HTML composition into a live browser deck. Test the audience view, reveal order and presenter notes before the talk.",
+        "zh": "把获准的提纲或现有 HTML 合成转换成浏览器现场演示。交付前检查观众视图、内容出现顺序和演讲者备注。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About HyperFrames Slideshow",
+        "paragraphs": [
+          "This Skill adds live presentation structure to a HyperFrames HTML composition. It identifies slides in a static JSON block and can serve a deck with the HyperFrames CLI. It covers a live artifact, whereas the video guide covers rendered delivery."
+        ]
+      },
+      "zh": {
+        "title": "关于 HyperFrames Slideshow",
+        "paragraphs": [
+          "这个 Skill 为 HyperFrames HTML 合成增加现场演示结构。静态 JSON 数据指定幻灯片与跳转，HyperFrames CLI 可以提供浏览器访问入口。它用于现场播放；视频指南覆盖渲染交付。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Turn an approved outline or existing HTML composition into a live browser deck. Test the audience view, reveal order and presenter notes before the talk.",
+      "zh": "把获准的提纲或现有 HTML 合成转换成浏览器现场演示。交付前检查观众视图、内容出现顺序和演讲者备注。"
+    },
+    "upstreamInstall": "npx skills add heygen-com/hyperframes --skill slideshow",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Build and Rehearse a Browser Deck",
+        "zh": "如何构建并排练浏览器幻灯片"
+      },
+      "howDescription": {
+        "en": "Start with an outline and define what the audience sees at each reveal. Keep presenter notes separate and rehearse navigation before handing over the link.",
+        "zh": "从演讲提纲确定观众每一步会看到什么。将演讲者备注单独保存，并在交接前排练键盘操作和跳转。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "HyperFrames Slideshow Use Cases for Live Decks",
+        "zh": "HyperFrames Slideshow 的现场演示场景"
+      },
+      "description": {
+        "en": "A talk, demo and workshop need different reveal orders. Choose the audience path and rehearse the exact deck that will be served.",
+        "zh": "发布演讲、产品演示和工作坊各有不同的内容出现顺序。先确定观众会经过哪些页面，再用实际演示入口逐段排练。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Prepare a demo deck",
+            "zh": "准备产品演示"
+          },
+          "description": {
+            "en": "Supply a feature outline and approved screenshots. Reveal each interaction in order and verify that a presenter can return to the previous fragment during questions.",
+            "zh": "提供功能提纲和获准截图，按操作顺序逐步展示。排练时检查演讲者能否返回上一个步骤，以便回应观众提问。"
+          }
+        },
+        {
+          "title": {
+            "en": "Convert an existing HTML page",
+            "zh": "将现有 HTML 转成演示"
+          },
+          "description": {
+            "en": "Select the existing composition scenes that should become slides. Verify that each scene starts at the intended point and that the deck still shows complete text.",
+            "zh": "选出已有合成里应成为幻灯片的场景。检查每张幻灯片是否从指定时刻开始，并确认正文与图像没有被截断。"
+          }
+        },
+        {
+          "title": {
+            "en": "Branch during a workshop",
+            "zh": "为工作坊设置分支"
+          },
+          "description": {
+            "en": "Mark the points where audience answers should choose a path. Rehearse the matching hotspot and the route back to the main sequence.",
+            "zh": "标出不同观众答案需要进入的分支。排练相应热点跳转，逐条核对目标页与返回主流程的入口。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check speaker and audience views",
+            "zh": "检查观众和演讲者视图"
+          },
+          "description": {
+            "en": "Add presenter notes for rehearsal timing cues and open both views. Verify that the audience tab shows only the intended slides and does not display notes.",
+            "zh": "录入仅供演讲者查看的提示，并同时打开两个视图。确认观众窗口只显示预定内容，备注留在演讲者一侧。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Map scenes to slides",
+          "zh": "把场景映射到幻灯片"
+        },
+        "description": {
+          "en": "Provide an outline, approved assets and speaker notes. Define the slide order and fragment states in the composition’s static slideshow data. Load the base HyperFrames Skill and its composition requirements first.",
+          "zh": "提供提纲、获准素材和备注，在合成的静态幻灯片数据中定义顺序与逐步出现的内容。 先加载 HyperFrames 主 Skill，按合成约定组织项目。"
+        }
+      },
+      {
+        "title": {
+          "en": "Serve the deck",
+          "zh": "打开本地演示入口"
+        },
+        "description": {
+          "en": "Run npx hyperframes check --json on the approved project, then use the documented present command and inspect its printed local URL.",
+          "zh": "先在获准的项目中运行 npx hyperframes check --json，再用文档中的 present 命令启动演示，核对输出的本地地址。"
+        }
+      },
+      {
+        "title": {
+          "en": "Rehearse the live flow",
+          "zh": "排练实际播放过程"
+        },
+        "description": {
+          "en": "Open audience and presenter views. Check the counter, fragment order, branches and return paths before sharing.",
+          "zh": "分别查看观众和演讲者视图，检查页码、显示顺序、分支和返回路径。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Is the output a rendered video?",
+          "zh": "输出是渲染视频吗？"
+        },
+        "answer": {
+          "en": "This workflow serves an interactive deck in the browser. Use the HyperFrames video workflow for a rendered deliverable.",
+          "zh": "这套流程在浏览器提供交互式现场演示。需要渲染视频时，可以使用 HyperFrames 的视频工作流。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it reuse existing HTML?",
+          "zh": "可以复用现有 HTML 吗？"
+        },
+        "answer": {
+          "en": "Yes. The Skill documents mapping existing composition scenes to slides and previewing them through the slideshow component.",
+          "zh": "可以。上游说明如何把已有合成场景映射为幻灯片，再在演示组件中预览。"
+        }
+      },
+      {
+        "question": {
+          "en": "Where are speaker notes visible?",
+          "zh": "演讲者备注显示在哪里？"
+        },
+        "answer": {
+          "en": "Notes are displayed in the presenter view and stored in the deck source. Keep confidential text out of shared deck files and rehearse both views.",
+          "zh": "备注显示在演讲者视图中，仍保存在演示源文件里。不要在共享的源文件里写入保密内容，排练时分别检查两个视图。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can the deck follow a non-linear path?",
+          "zh": "可以按观众回答跳转吗？"
+        },
+        "answer": {
+          "en": "The slideshow supports branching hotspots. Explicitly test each destination and return path in the served deck.",
+          "zh": "幻灯片支持分支热点。用实际演示入口逐项检查目标页与返回路径。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I launch the deck?",
+          "zh": "怎样运行演示？"
+        },
+        "answer": {
+          "en": "The documented CLI entry is npx hyperframes present followed by the project directory. Check the URL that the command prints.",
+          "zh": "官方 CLI 用法是 npx hyperframes present 加项目目录。检查命令输出的访问地址。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does the Skill use CLI telemetry?",
+          "zh": "是否会发送遥测？"
+        },
+        "answer": {
+          "en": "The upstream manifest describes a usage event that follows the CLI’s telemetry and opt-out settings. Review those settings before running it.",
+          "zh": "上游清单记录了遵循 CLI 遥测与关闭选项的使用事件。运行前请先核对这些选项。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Build a live HyperFrames workshop deck from my approved outline. Add a progressive reveal, a branch back to the main sequence and presenter-only notes. Serve it locally after approval and report the navigation checks.",
+        "zh": "用获准的提纲建立 HyperFrames 工作坊幻灯片。加入逐步揭示、回到主线的分支和演讲者备注。经我确认后在本地启动并报告导航检查结果。"
+      }
+    },
+    "cardDescription": {
+      "en": "Turn an approved outline or existing HTML composition into a live browser deck. Test the audience view, reveal order and presenter notes before the talk.",
+      "zh": "把获准的提纲或现有 HTML 合成转换成浏览器现场演示。交付前检查观众视图、内容出现顺序和演讲者备注。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "github-copilot"
+      ],
+      "note": {
+        "en": "The selected Skill needs the HyperFrames CLI and a browser to serve and rehearse the deck. Check telemetry preferences before running CLI events.",
+        "zh": "现场播放和排练需要 HyperFrames CLI 与浏览器。运行 CLI 事件前先检查遥测设置。"
+      }
+    }
+  },
+  {
+    "slug": "seo-audit",
+    "authorHandle": "coreyhaines31",
+    "name": "SEO Audit",
+    "publisher": "Corey Haines",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/seo-audit/SKILL.md",
+    "repositoryUrl": "https://github.com/coreyhaines31/marketingskills",
+    "seo": {
+      "title": {
+        "en": "SEO Audit: Evidence-Based Search Diagnosis and Fix Priorities",
+        "zh": "SEO Audit：网站搜索诊断、证据与修复优先级"
+      },
+      "description": {
+        "en": "Use Corey Haines’s SEO Audit Skill to inspect site and search evidence, document affected URLs, and prioritize fixes with clear follow-up checks.",
+        "zh": "用 Corey Haines 的 SEO Audit Skill 检查页面和搜索数据，记录受影响 URL，并为修复计划附上复验条件。"
+      },
+      "keywords": {
+        "en": [
+          "SEO Audit",
+          "technical SEO audit Skill"
+        ],
+        "zh": [
+          "SEO Audit",
+          "技术 SEO 审计 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "SEO Audit",
+        "zh": "SEO Audit"
+      },
+      "description": {
+        "en": "Find and prioritize search issues using page evidence, supplied search data and the site’s intended indexing rules.",
+        "zh": "根据网页证据、获准使用的搜索数据和预期索引规则，定位并排列网站搜索问题。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About SEO Audit",
+        "paragraphs": [
+          "This MIT-licensed Skill guides an agent through technical and on-page search checks. It turns inspected URLs, crawl signals and authorized search data into a prioritized report. Access to private analytics or Search Console depends on the environment."
+        ]
+      },
+      "zh": {
+        "title": "关于 SEO Audit",
+        "paragraphs": [
+          "这项 MIT 许可的 Skill 指导 Agent 检查技术 SEO 和页面要素，把已查 URL、抓取信号及获准搜索数据整理成有优先级的报告。私有分析平台和 Search Console 需要单独授权。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Find and prioritize search issues using page evidence, supplied search data and the site’s intended indexing rules.",
+      "zh": "根据网页证据、获准使用的搜索数据和预期索引规则，定位并排列网站搜索问题。"
+    },
+    "upstreamInstall": "npx skills add coreyhaines31/marketingskills --skill seo-audit",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Audit URLs and Rank Fixes",
+        "zh": "如何检查 URL 并排列修复项"
+      },
+      "howDescription": {
+        "en": "Start with a representative set of URLs and a specific question about discovery or indexing. Pair each finding with the evidence and a way to retest it.",
+        "zh": "先给出一组代表 URL，并明确要解决的发现或索引问题。每项发现附上观察证据和可重复的复验条件。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "SEO Audit Skill Use Cases for Website Diagnosis",
+        "zh": "SEO Audit Skill 的网站诊断场景"
+      },
+      "description": {
+        "en": "Choose checks that can be run with the evidence available. Separate observed issues from hypotheses that need search data or additional access.",
+        "zh": "按当前能拿到的资料选择检查项。将观察到的问题与仍需搜索数据或额外访问权限的假设分开。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Find a canonical mismatch",
+            "zh": "定位 canonical 不一致"
+          },
+          "description": {
+            "en": "Inspect canonical tags across a small group of approved URLs. Record the visible tags and expected destinations so a developer can confirm whether the relationship is intentional.",
+            "zh": "检查一组获准 URL 的 canonical 标签。记录当前值与期望目标，让开发者确认重定向或规范化关系是否符合设计。"
+          }
+        },
+        {
+          "title": {
+            "en": "Review a sitemap after a release",
+            "zh": "发布后检查 sitemap"
+          },
+          "description": {
+            "en": "Compare supplied sitemap entries with representative changed routes. Mark unavailable URLs and unintended redirects with an observation date.",
+            "zh": "将提供的 sitemap 条目与代表性变更路由对照。标记无法访问的链接和意外跳转，并记录核查日期。"
+          }
+        },
+        {
+          "title": {
+            "en": "Investigate an indexing drop",
+            "zh": "调查索引数量变化"
+          },
+          "description": {
+            "en": "Provide authorized Search Console exports and the relevant deployment dates. Group affected pages and explain which causes the data supports and which need additional tests.",
+            "zh": "提供获准使用的 Search Console 导出和发布时间。把受影响页面分组，说明哪些原因已有证据，哪些需要继续验证。"
+          }
+        },
+        {
+          "title": {
+            "en": "Prioritize on-page fixes",
+            "zh": "确定页面优化优先级"
+          },
+          "description": {
+            "en": "Inspect a defined set of commercial pages. For each issue, capture the URL, title or heading evidence, suggested change and a check that can be repeated.",
+            "zh": "限定一组业务页面，对每项问题记录 URL、标题或页面标签的证据，并给出可重复的修复验收方法。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Set the audit scope",
+          "zh": "限定审计范围"
+        },
+        "description": {
+          "en": "Provide approved URLs, the expected indexing state and any permitted exports. Use the repository’s product-marketing context if the project already has it.",
+          "zh": "提供获准 URL、预期索引状态和允许使用的数据导出。 如果项目已有 product-marketing 背景资料，先读取其中与任务相关的内容。"
+        }
+      },
+      {
+        "title": {
+          "en": "Collect and classify evidence",
+          "zh": "采集并分类证据"
+        },
+        "description": {
+          "en": "Inspect pages and site signals. Record each observed issue with affected URLs and separate unverified hypotheses.",
+          "zh": "查看页面和站点信号。逐项记录受影响链接，单独标注尚未验证的假设。"
+        }
+      },
+      {
+        "title": {
+          "en": "Deliver a repair queue",
+          "zh": "交付修复清单"
+        },
+        "description": {
+          "en": "Rank issues by impact and effort, and attach a retest for each suggested fix.",
+          "zh": "按影响和工作量排序，为每项修复附上复验方法。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What does the audit deliver?",
+          "zh": "审计结果是什么？"
+        },
+        "answer": {
+          "en": "A prioritized set of findings with affected pages, evidence and suggested actions.",
+          "zh": "一份含受影响页面、观察证据和建议动作的优先级清单。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it require Search Console?",
+          "zh": "必须提供 Search Console 吗？"
+        },
+        "answer": {
+          "en": "Page-level checks can run with public URLs or supplied artifacts. Private search data needs authorized access or an export.",
+          "zh": "页面级检查可使用公开 URL 或现有材料。私有搜索数据需要授权或经批准的导出。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can the Skill publish fixes?",
+          "zh": "Skill 会发布修复吗？"
+        },
+        "answer": {
+          "en": "Prepare and review the repair plan first. Apply changes only if separately authorized.",
+          "zh": "先整理并审查修复计划。是否执行改动由用户另行确认。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if I cannot crawl the whole site?",
+          "zh": "无法抓取全站怎么办？"
+        },
+        "answer": {
+          "en": "Audit a stated sample and report the coverage limit. Avoid extending sample findings to every page.",
+          "zh": "注明抽样范围及覆盖缺口，避免把样本里的问题直接推断到全站。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use staging URLs?",
+          "zh": "能检查测试环境吗？"
+        },
+        "answer": {
+          "en": "Yes. State the intended indexing behavior, since staging restrictions may be intentional.",
+          "zh": "可以。要说明预期索引规则，因为测试环境的索引限制可能是有意设置的。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I verify a repair?",
+          "zh": "如何确认问题修好？"
+        },
+        "answer": {
+          "en": "Rerun the same check on the affected URL and compare against its recorded baseline.",
+          "zh": "在同一 URL 重做原检查，与记录的基线比较。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Audit these approved product pages for canonical, indexing directive and title issues. Record the observed value and expected behavior for each URL. Rank the fixes and include a retest. Leave the files and search settings alone.",
+        "zh": "检查这些获准产品页的 canonical、索引指令与标题。记录每个 URL 的实际值和预期值，给修复项排序并附复验方法。只提交报告。"
+      }
+    },
+    "cardDescription": {
+      "en": "Find and prioritize search issues using page evidence, supplied search data and the site’s intended indexing rules.",
+      "zh": "根据网页证据、获准使用的搜索数据和预期索引规则，定位并排列网站搜索问题。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor"
+      ],
+      "note": {
+        "en": "Only use URLs and data sources you are authorized to inspect. Search Console access is a separate requirement.",
+        "zh": "只检查获准使用的 URL 和数据来源。Search Console 访问权限需另行确认。"
+      }
+    }
+  },
+  {
+    "slug": "copywriting",
+    "authorHandle": "coreyhaines31",
+    "name": "Copywriting",
+    "publisher": "Corey Haines",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md",
+    "repositoryUrl": "https://github.com/coreyhaines31/marketingskills",
+    "seo": {
+      "title": {
+        "en": "Copywriting: Landing Page Messaging and CTA Drafts",
+        "zh": "Copywriting：落地页卖点、标题与转化文案"
+      },
+      "description": {
+        "en": "Use Corey Haines’s Copywriting Skill to turn verified product claims and buyer research into reviewable landing-page headlines, sections, and CTAs.",
+        "zh": "用 Corey Haines 的 Copywriting Skill 把经核实的产品信息、买家研究和转化目标写成可审查的落地页文案。"
+      },
+      "keywords": {
+        "en": [
+          "Copywriting",
+          "landing page copywriting Skill"
+        ],
+        "zh": [
+          "Copywriting",
+          "落地页文案 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Copywriting",
+        "zh": "Copywriting"
+      },
+      "description": {
+        "en": "Draft customer-facing page copy from approved messaging and product evidence. Give each section a clear job and make its claims easy to check.",
+        "zh": "从获准的产品信息和客户语言出发起草营销页面，让每个章节都解决一个阅读决策，并能核对具体承诺。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Copywriting",
+        "paragraphs": [
+          "This MIT-licensed Skill guides page-level marketing copy from an audience brief and product evidence. The agent can write a full page or revise a section, with proof, objections and the next action carried through the draft."
+        ]
+      },
+      "zh": {
+        "title": "关于 Copywriting",
+        "paragraphs": [
+          "这项 MIT 许可的 Skill 以读者简报和产品依据为输入，指导 Agent 起草整页文案或修订某个章节。草稿应保留产品证据、购买疑虑和读者下一步行动。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Draft customer-facing page copy from approved messaging and product evidence. Give each section a clear job and make its claims easy to check.",
+      "zh": "从获准的产品信息和客户语言出发起草营销页面，让每个章节都解决一个阅读决策，并能核对具体承诺。"
+    },
+    "upstreamInstall": "npx skills add coreyhaines31/marketingskills --skill copywriting",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Draft Page Copy From Verified Claims",
+        "zh": "如何从已核实的卖点开始起草"
+      },
+      "howDescription": {
+        "en": "Give the agent the intended reader, offer and next action before drafting. Keep customer evidence and unverified statements clearly separated.",
+        "zh": "先给出页面读者、具体提案和下一步动作。把客户证据与仍待确认的表述分开，再对照页面目标完成草稿。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Copywriting Skill Use Cases for Marketing Pages",
+        "zh": "Copywriting Skill 的营销页面场景"
+      },
+      "description": {
+        "en": "Each page has a different reader decision. Choose that decision first and trace the draft back to language and proof you can substantiate.",
+        "zh": "不同页面要帮助读者完成不同判断。先确定该判断，再使用有证据支撑的客户语言、产品能力和行动引导。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Write a homepage hero",
+            "zh": "写首页首屏文案"
+          },
+          "description": {
+            "en": "Provide the product category, target audience and one defensible benefit. Ask for headline and supporting text variants tied to the same primary action.",
+            "zh": "提供品类、目标读者和一个能证明的收益。让 Agent 给出多版标题与说明，但保持主按钮指向同一个行动。"
+          }
+        },
+        {
+          "title": {
+            "en": "Improve a feature page",
+            "zh": "优化功能页说明"
+          },
+          "description": {
+            "en": "Share the existing feature copy and screenshots. Translate a verified capability into a customer outcome and flag wording that implies unsupported functionality.",
+            "zh": "给出现有文案和产品截图，将核实的功能转换成客户能理解的结果，并标记可能暗示未支持能力的表述。"
+          }
+        },
+        {
+          "title": {
+            "en": "Answer a pricing objection",
+            "zh": "回应定价疑虑"
+          },
+          "description": {
+            "en": "Supply the approved plan details and the objections heard on sales calls. Draft short answers beside the relevant pricing action and verify plan language before review.",
+            "zh": "提供批准的套餐说明和销售沟通中常见的问题。在相关操作附近起草简短回应，发布前与实际套餐核对。"
+          }
+        },
+        {
+          "title": {
+            "en": "Draft a new landing page",
+            "zh": "起草新落地页"
+          },
+          "description": {
+            "en": "Give the agent a target buyer, offer and proof points. Ask for a page outline and section copy that moves from the problem to the next action without inventing evidence.",
+            "zh": "提供目标客户、提案和可使用的证明材料。让 Agent 起草章节顺序和正文，从问题写到下一步行动，同时标出缺少证据的说法。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Collect the page brief",
+          "zh": "收集页面简报"
+        },
+        "description": {
+          "en": "Provide audience, offer, page goal and approved product claims. Use the repository’s product-marketing context if the project already has it.",
+          "zh": "提供受众、提案、页面目标和获准使用的产品事实。 如果项目已有 product-marketing 背景资料，先读取其中与任务相关的内容。"
+        }
+      },
+      {
+        "title": {
+          "en": "Draft the sections",
+          "zh": "起草各节内容"
+        },
+        "description": {
+          "en": "Write headlines, support, proof and CTA to match the buyer’s decision.",
+          "zh": "按购买决策组织标题、说明、证据与行动按钮。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review wording against proof",
+          "zh": "逐条复核承诺"
+        },
+        "description": {
+          "en": "Verify promises, examples and calls to action against supplied materials. Mark any claim that still needs evidence.",
+          "zh": "将承诺、案例和操作入口与原资料核对，标记仍待补充证据的项目。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does this Skill write whole pages?",
+          "zh": "这个 Skill 能写完整页面吗？"
+        },
+        "answer": {
+          "en": "It can draft a full marketing page or revise individual sections based on the brief.",
+          "zh": "可以按简报起草整页营销文案，也可以只修订一个章节。"
+        }
+      },
+      {
+        "question": {
+          "en": "What context should I provide?",
+          "zh": "需要准备哪些资料？"
+        },
+        "answer": {
+          "en": "Include audience, offer, buying objections, page goal and evidence for your claims.",
+          "zh": "提供目标读者、提案、典型购买疑虑、页面目标和证明材料。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should I ask for multiple variants?",
+          "zh": "适合出多版文案吗？"
+        },
+        "answer": {
+          "en": "Yes when you have a defined decision. Compare variants for clarity and fit with the same target action.",
+          "zh": "有明确的页面决策时，可以比较多个版本的清晰度与行动目标一致性。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it invent customer quotes?",
+          "zh": "可以生成客户引语吗？"
+        },
+        "answer": {
+          "en": "Use approved quotes and examples. Mark missing proof as a gap rather than inventing it.",
+          "zh": "只使用获准引用的原话。没有真实证据时，把该处标成待补材料。"
+        }
+      },
+      {
+        "question": {
+          "en": "How is this different from Content Strategy?",
+          "zh": "和 Content Strategy 有什么区别？"
+        },
+        "answer": {
+          "en": "Copywriting creates page text. Content Strategy decides what content to make and when.",
+          "zh": "Copywriting 负责起草页面文字，Content Strategy 用于决定创作哪些内容及其优先级。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I approve the result?",
+          "zh": "怎样批准文案？"
+        },
+        "answer": {
+          "en": "Check each promise against available evidence and make sure the page names an accurate next action.",
+          "zh": "逐条核对承诺的证据，并确认每个行动入口与真实流程一致。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Write three homepage hero options for this approved product brief. Use only verified product claims, aim for a demo request and call out wording that still needs proof.",
+        "zh": "用这份已批准的简报写三版首页首屏文案。只用经核实的产品事实，目标是预约演示，并列出仍需补证据的措辞。"
+      }
+    },
+    "cardDescription": {
+      "en": "Draft customer-facing page copy from approved messaging and product evidence. Give each section a clear job and make its claims easy to check.",
+      "zh": "从获准的产品信息和客户语言出发起草营销页面，让每个章节都解决一个阅读决策，并能核对具体承诺。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor"
+      ],
+      "note": {
+        "en": "Install the selected Skill in a supported host, then supply an approved page brief and claims.",
+        "zh": "在支持的宿主安装这一项 Skill，并提供获准使用的页面简报与产品事实。"
+      }
+    }
+  },
+  {
+    "slug": "content-strategy",
+    "authorHandle": "coreyhaines31",
+    "name": "Content Strategy",
+    "publisher": "Corey Haines",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/content-strategy/SKILL.md",
+    "repositoryUrl": "https://github.com/coreyhaines31/marketingskills",
+    "seo": {
+      "title": {
+        "en": "Content Strategy: Topic Priorities and Editorial Roadmaps",
+        "zh": "Content Strategy：选题优先级与内容路线图"
+      },
+      "description": {
+        "en": "Use Corey Haines’s Content Strategy Skill to turn audience questions and a content inventory into prioritized topics, briefs, and a realistic publishing plan.",
+        "zh": "用 Corey Haines 的 Content Strategy Skill 把受众问题与内容盘点转化为有优先级的选题、简报和发布计划。"
+      },
+      "keywords": {
+        "en": [
+          "Content Strategy",
+          "editorial roadmap Skill"
+        ],
+        "zh": [
+          "Content Strategy",
+          "内容路线图 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Content Strategy",
+        "zh": "Content Strategy"
+      },
+      "description": {
+        "en": "Plan what to publish before drafting individual pieces. Prioritize audience questions, identify gaps in existing content and give each proposed piece a purpose.",
+        "zh": "先决定哪些内容值得写。对照读者问题和现有内容，找出覆盖缺口，为每个候选选题设定明确目的。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Content Strategy",
+        "paragraphs": [
+          "This MIT-licensed Skill organizes business goals, customer questions and existing content into an editorial roadmap. It guides an agent to choose topics and channels and to state what new evidence or examples each piece can contribute."
+        ]
+      },
+      "zh": {
+        "title": "关于 Content Strategy",
+        "paragraphs": [
+          "这项 MIT 许可的 Skill 将业务目标、客户问题和已有内容整理成编辑路线图。Agent 可据此选择主题与渠道，说明每篇内容能提供哪些新的证据或实例。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Plan what to publish before drafting individual pieces. Prioritize audience questions, identify gaps in existing content and give each proposed piece a purpose.",
+      "zh": "先决定哪些内容值得写。对照读者问题和现有内容，找出覆盖缺口，为每个候选选题设定明确目的。"
+    },
+    "upstreamInstall": "npx skills add coreyhaines31/marketingskills --skill content-strategy",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Turn Audience Questions Into a Roadmap",
+        "zh": "如何把客户问题排进内容路线图"
+      },
+      "howDescription": {
+        "en": "Use actual customer questions and current coverage to rank ideas. Give each high-priority topic a purpose, a format and an input owner.",
+        "zh": "用真实客户问题与现有覆盖情况为选题排序。为高优先级题目明确要解答的问题、形式和输入负责人。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Content Strategy Skill Use Cases for Editorial Planning",
+        "zh": "Content Strategy Skill 的编辑规划场景"
+      },
+      "description": {
+        "en": "Start with a documented audience need and the team’s available capacity. The output can be a short topic queue, an update plan, or briefs for a small series.",
+        "zh": "从有依据的读者需求和团队产能出发。交付物可以是短选题队列、内容更新计划，或者一组系列文章的简报。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Plan a first set of articles",
+            "zh": "规划首批文章"
+          },
+          "description": {
+            "en": "Provide customer interview notes and the target outcome. Rank five topics by audience need and available proof, then write a short brief for each candidate.",
+            "zh": "提供访谈记录和目标结果。按读者需要和可用证据排列五个题目，为每个候选题写一份短简报。"
+          }
+        },
+        {
+          "title": {
+            "en": "Decide what to refresh",
+            "zh": "决定哪些内容需要更新"
+          },
+          "description": {
+            "en": "Share the existing content inventory and permitted performance data. Separate outdated articles that can be updated from questions that deserve a new page.",
+            "zh": "给出已有内容清单与获准使用的表现数据。把能在原页补充的资料，与需要另建页面的问题分开。"
+          }
+        },
+        {
+          "title": {
+            "en": "Build a topic cluster",
+            "zh": "搭建主题集群"
+          },
+          "description": {
+            "en": "Pick a recurring reader question and map the supporting questions. Assign a clear role to the parent guide and each supporting piece.",
+            "zh": "挑出经常出现的读者问题，拆解与它相关的支持问题。为总览和各篇文章分别定义职责。"
+          }
+        },
+        {
+          "title": {
+            "en": "Prioritize a small team’s backlog",
+            "zh": "排序小团队的内容积压"
+          },
+          "description": {
+            "en": "Specify the publishing capacity and inputs the team can access. Sequence a short queue with owners and dependencies before creating a calendar.",
+            "zh": "说明团队发布能力和现有素材，把选题排成短队列并标出负责人及依赖，再落到日历。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Gather planning inputs",
+          "zh": "收集规划输入"
+        },
+        "description": {
+          "en": "Provide the audience, business objective, current content and available evidence. Use the repository’s product-marketing context if the project already has it.",
+          "zh": "提供受众、业务目标、现有内容与可使用的证据。 如果项目已有 product-marketing 背景资料，先读取其中与任务相关的内容。"
+        }
+      },
+      {
+        "title": {
+          "en": "Score candidate topics",
+          "zh": "评估候选选题"
+        },
+        "description": {
+          "en": "Assess the reader need, existing coverage, original contribution and effort. Record any information gap.",
+          "zh": "对比读者需求、已有覆盖、原创贡献和所需工作量。记录待确认的资料。"
+        }
+      },
+      {
+        "title": {
+          "en": "Deliver an editorial roadmap",
+          "zh": "交付内容路线图"
+        },
+        "description": {
+          "en": "List the highest-priority topics, format and dependencies. Attach briefs or update instructions for the first batch.",
+          "zh": "列出优先选题、形式和依赖，并附首批内容的写作简报或更新要求。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does this Skill write the final article?",
+          "zh": "会写出最终文章吗？"
+        },
+        "answer": {
+          "en": "Its main output is a content plan or brief. Drafting individual pages belongs to a separate writing workflow.",
+          "zh": "主要交付物是内容计划或写作简报。正文由单独的写作流程完成。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use it without analytics?",
+          "zh": "没有分析数据还能使用吗？"
+        },
+        "answer": {
+          "en": "Yes. Customer questions and an existing content list can support a first plan, with evidence gaps explicitly marked.",
+          "zh": "可以用客户问题和已有内容清单做初版计划，同时注明证据缺口。"
+        }
+      },
+      {
+        "question": {
+          "en": "How does it prevent duplicate topics?",
+          "zh": "如何防止选题重复？"
+        },
+        "answer": {
+          "en": "Compare the proposed reader question with existing pages and decide whether an update serves it better.",
+          "zh": "将选题拟回答的问题与已有页面对照，判断更新原页能否解决同一个需求。"
+        }
+      },
+      {
+        "question": {
+          "en": "What is a topic cluster?",
+          "zh": "什么是主题集群？"
+        },
+        "answer": {
+          "en": "A group of pages with distinct reader questions and a coherent relationship to a broader guide.",
+          "zh": "由总览与多个支持页面组成，各页面回答不同的读者问题。"
+        }
+      },
+      {
+        "question": {
+          "en": "How should I rank two promising topics?",
+          "zh": "两个选题都重要时怎么排序？"
+        },
+        "answer": {
+          "en": "Compare reader need, originality, usable evidence and the effort required to publish.",
+          "zh": "比较读者需要、原创程度、可用证据和完成工作量。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should the calendar dictate priorities?",
+          "zh": "应该先排发布日期吗？"
+        },
+        "answer": {
+          "en": "Choose meaningful topics first, then fit the queue to the team’s actual capacity.",
+          "zh": "先选出值得做的题目，再把队列安排到团队实际能支持的时间内。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Build a six-week roadmap from these customer questions and the existing content inventory. Separate refreshes from new pieces and state the original evidence each priority article can contribute.",
+        "zh": "根据客户问题与已有内容清单做六周路线图。区分内容更新和新选题，说明首批文章能提供哪些现有页面没有的证据。"
+      }
+    },
+    "cardDescription": {
+      "en": "Plan what to publish before drafting individual pieces. Prioritize audience questions, identify gaps in existing content and give each proposed piece a purpose.",
+      "zh": "先决定哪些内容值得写。对照读者问题和现有内容，找出覆盖缺口，为每个候选选题设定明确目的。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex",
+        "cursor"
+      ],
+      "note": {
+        "en": "Provide the audience and existing content inventory before asking for a roadmap.",
+        "zh": "制定路线图前先提供目标受众与已有内容清单。"
+      }
+    }
+  },
+  {
+    "slug": "review-animations",
+    "authorHandle": "emilkowalski",
+    "name": "Review Animations",
+    "publisher": "Emil Kowalski",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/emilkowalski/skills/blob/main/skills/review-animations/SKILL.md",
+    "repositoryUrl": "https://github.com/emilkowalski/skills",
+    "seo": {
+      "title": {
+        "en": "Review Animations: Motion, Accessibility, and UI Code Review",
+        "zh": "Review Animations：界面动效、可访问性与代码审查"
+      },
+      "description": {
+        "en": "Use Emil Kowalski’s Review Animations Skill to audit UI motion for timing, interruption, performance, and accessibility. Produce a targeted review with reproducible findings.",
+        "zh": "使用 Emil Kowalski 的 Review Animations Skill 审查动效的时序、可中断性、性能和可访问性，保留可复现的检查依据。"
+      },
+      "keywords": {
+        "en": [
+          "Review Animations",
+          "UI animation review Skill"
+        ],
+        "zh": [
+          "Review Animations",
+          "界面动效审查 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Review Animations",
+        "zh": "Review Animations"
+      },
+      "description": {
+        "en": "Review a specific interaction before merging it. Inspect the code and observed behavior, then report which changes would improve timing, interruption or accessibility.",
+        "zh": "在合并之前检查一个具体交互。对照代码与实际表现，指出哪项改动能改善时序、打断处理或可访问性。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Review Animations",
+        "paragraphs": [
+          "Emil Kowalski’s MIT-licensed Skill directs an agent to explicitly review animation code. It evaluates why motion exists, how often it runs, and how it behaves across interruption, reduced motion and hover-capable devices. Use the broader Design Engineering guide for a review that also covers layout, spacing, or interaction design."
+        ]
+      },
+      "zh": {
+        "title": "关于 Review Animations",
+        "paragraphs": [
+          "Emil Kowalski 的这项 MIT 许可 Skill 指导 Agent 在明确调用后审查动效代码。它关注动效目的、使用频率，以及被打断、减少动效和设备不支持悬停时的表现。 如果审查范围还包括布局、间距或交互设计，可以继续查阅同仓的 Design Engineering 综合指引。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Review a specific interaction before merging it. Inspect the code and observed behavior, then report which changes would improve timing, interruption or accessibility.",
+      "zh": "在合并之前检查一个具体交互。对照代码与实际表现，指出哪项改动能改善时序、打断处理或可访问性。"
+    },
+    "upstreamInstall": "npx skills add emilkowalski/skills --skill review-animations",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Review a Motion Change Before Merge",
+        "zh": "如何在合并前审查一次动效改动"
+      },
+      "howDescription": {
+        "en": "Provide the changed components and the interaction you want to inspect. The review should connect each issue to visible behavior and a concrete correction.",
+        "zh": "给出变更组件和要检查的交互。每条问题应对应可见表现与可验证的修正方法。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Review Animations Use Cases for UI Motion",
+        "zh": "Review Animations 的界面动效场景"
+      },
+      "description": {
+        "en": "Review one interaction in its real states before attempting a broad polish pass. Trace reported issues to a file, reproduction or measured symptom.",
+        "zh": "先在真实状态中复核一个交互，再决定是否扩大检查范围。把发现对应到具体文件、复现步骤或性能证据。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Audit a frequently used action",
+            "zh": "检查高频动作的动效"
+          },
+          "description": {
+            "en": "Show an interaction users repeat many times, such as choosing rows. Check whether animation delays the action and flag motion whose purpose no longer justifies its frequency.",
+            "zh": "选择用户反复执行的交互，例如选中多行。检查动画是否拖慢操作，记录已无法用实际反馈目的解释的动效。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check an interrupted dismissal",
+            "zh": "复现弹层被打断"
+          },
+          "description": {
+            "en": "Reproduce opening and dismissing a sheet in quick succession. Inspect the transition code and report any jump when a new animation begins before the previous one settles.",
+            "zh": "快速打开、关闭再打开一个弹层。核对过渡代码，说明上一个动画尚未结束时，新动画是否导致位置突跳。"
+          }
+        },
+        {
+          "title": {
+            "en": "Review a reduced-motion path",
+            "zh": "检查减少动效模式"
+          },
+          "description": {
+            "en": "Enable the operating system or browser preference for reduced motion. Compare visible movement and preserved state feedback, and note the exact component that needs a fallback.",
+            "zh": "在系统或浏览器启用减少动效。对照界面移动与保留下来的状态反馈，指出需要替代方案的组件。"
+          }
+        },
+        {
+          "title": {
+            "en": "Investigate a motion performance concern",
+            "zh": "调查动效卡顿"
+          },
+          "description": {
+            "en": "Provide a representative device and the transition to inspect. Use code or browser evidence to separate a suspected layout cost from a measured frame-rate issue.",
+            "zh": "提供代表设备和需要检查的过渡效果。用代码和浏览器证据区分可能的布局开销与实际测得的帧率问题。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Invoke the review explicitly",
+          "zh": "主动调用审查 Skill"
+        },
+        "description": {
+          "en": "Name the Skill and supply the animation code, component state and intended audience.",
+          "zh": "在支持显式调用的宿主中指定 Skill，提供动效代码、组件状态和目标设备。"
+        }
+      },
+      {
+        "title": {
+          "en": "Inspect code and reproduction",
+          "zh": "对照代码与复现"
+        },
+        "description": {
+          "en": "Check purpose, timing, repeated use, interruption, motion preferences and any available performance evidence.",
+          "zh": "检查动效目的、时序、重复使用、打断、减少动效和现有性能证据。"
+        }
+      },
+      {
+        "title": {
+          "en": "Deliver scoped findings",
+          "zh": "交付有范围的发现"
+        },
+        "description": {
+          "en": "Rank each issue, cite the code or reproduction and describe how a developer can verify the correction.",
+          "zh": "为每项问题排序，附代码或复现依据，并写明怎样确认修复。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does this Skill invoke itself automatically?",
+          "zh": "会自动启动审查吗？"
+        },
+        "answer": {
+          "en": "Its manifest disables model invocation. Request the review explicitly in a host that supports manual invocation.",
+          "zh": "清单禁用了模型自动调用。在支持手动调用的宿主中明确要求运行该 Skill。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it require a particular animation library?",
+          "zh": "必须使用某个动效库吗？"
+        },
+        "answer": {
+          "en": "Review the actual CSS or component implementation and its behavior. The criteria can be applied to different libraries.",
+          "zh": "可以检查不同动效库的实际 CSS 或组件实现。审查依据是用户看到的行为和相关代码。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should a review immediately change the code?",
+          "zh": "审查时会立刻改代码吗？"
+        },
+        "answer": {
+          "en": "Start with findings tied to specific behavior. Apply edits only when they are within the approved scope.",
+          "zh": "先给出与实际表现对应的问题。只有改动已在授权范围内时才实施。"
+        }
+      },
+      {
+        "question": {
+          "en": "What counts as evidence for performance?",
+          "zh": "哪些证据能证明性能问题？"
+        },
+        "answer": {
+          "en": "Use a recording, profile or repeatable symptom when available. Label code-only observations as possible causes.",
+          "zh": "尽量提供录屏、性能记录或可重复的卡顿现象。只从代码推断的原因需要单独标记。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if motion is frequent?",
+          "zh": "高频交互要保留动画吗？"
+        },
+        "answer": {
+          "en": "Judge the cost against the frequency and purpose of the interaction. Repeated actions often need less motion than rare transitions.",
+          "zh": "结合使用频率与反馈目的判断。重复操作通常比低频过渡更需要控制动效时间。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I give the reviewer?",
+          "zh": "应提供什么给审查人？"
+        },
+        "answer": {
+          "en": "Provide the diff or affected files, steps to reproduce the animation and details about platform or accessibility settings.",
+          "zh": "提供差异或相关文件、复现步骤，以及平台和可访问性设置。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Run Review Animations on my modal transition. Inspect opening, rapid close and reopen, and reduced motion. Give prioritized findings with file references and reproduce each issue before proposing a fix.",
+        "zh": "用 Review Animations 检查我的弹层动效。覆盖打开、快速关闭后重开与减少动效状态。按优先级列出问题，标出文件并保留复现条件。"
+      }
+    },
+    "cardDescription": {
+      "en": "Review a specific interaction before merging it. Inspect the code and observed behavior, then report which changes would improve timing, interruption or accessibility.",
+      "zh": "在合并之前检查一个具体交互。对照代码与实际表现，指出哪项改动能改善时序、打断处理或可访问性。"
+    },
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Broader Design Engineering Skill",
+          "zh": "Design Engineering 综合指引"
+        },
+        "href": "https://github.com/emilkowalski/skills/blob/main/skills/emil-design-eng/SKILL.md"
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex"
+      ],
+      "note": {
+        "en": "Request the review explicitly. The source manifest disables model invocation.",
+        "zh": "明确要求运行审查。上游清单禁用了模型自动调用。"
+      }
+    }
+  },
+  {
+    "slug": "apple-design",
+    "authorHandle": "emilkowalski",
+    "name": "Apple Design",
+    "publisher": "Emil Kowalski",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/emilkowalski/skills/blob/main/skills/apple-design/SKILL.md",
+    "repositoryUrl": "https://github.com/emilkowalski/skills",
+    "seo": {
+      "title": {
+        "en": "Apple Design: Web Gestures, Springs, and Interruptible Motion",
+        "zh": "Apple Design：网页手势、弹簧动效与可中断交互"
+      },
+      "description": {
+        "en": "Use Emil Kowalski’s Apple Design Skill to build and verify gesture-driven web interactions, from draggable sheets to responsive spring motion and reduced-motion alternatives.",
+        "zh": "使用 Emil Kowalski 的 Apple Design Skill 实现可拖动弹层、弹簧动效和可中断的网页交互，再核对减少动效下的行为。"
+      },
+      "keywords": {
+        "en": [
+          "Apple Design",
+          "web gesture design Skill"
+        ],
+        "zh": [
+          "Apple Design",
+          "网页手势设计 Skill"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Apple Design",
+        "zh": "Apple Design"
+      },
+      "description": {
+        "en": "Translate a drag, swipe or sheet interaction into a responsive web implementation. Verify what happens mid-gesture, on release and when reduced motion is enabled.",
+        "zh": "将拖动、滑动或弹层动作实现为响应及时的网页交互。分别验证手势进行中、松手后和启用减少动效时的状态。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Apple Design",
+        "paragraphs": [
+          "Emil Kowalski’s MIT-licensed Skill translates principles from Apple design talks to the web. It guides interaction design for gestures, spring behavior, live interruption and accessible alternatives. The implementation uses web primitives and the project’s motion library where appropriate."
+        ]
+      },
+      "zh": {
+        "title": "关于 Apple Design",
+        "paragraphs": [
+          "Emil Kowalski 的这项 MIT 许可 Skill 将 Apple 设计演讲中的原则用于网页。它提供手势、弹簧动效、交互打断与可访问替代方式的指引。实现时使用现有的网页组件与适用的动效库。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Translate a drag, swipe or sheet interaction into a responsive web implementation. Verify what happens mid-gesture, on release and when reduced motion is enabled.",
+      "zh": "将拖动、滑动或弹层动作实现为响应及时的网页交互。分别验证手势进行中、松手后和启用减少动效时的状态。"
+    },
+    "upstreamInstall": "npx skills add emilkowalski/skills --skill apple-design",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Implement and Exercise a Gesture",
+        "zh": "如何实现一个手势并逐状态复核"
+      },
+      "howDescription": {
+        "en": "Define how the interface responds while a pointer moves, after release and if the user interrupts. Test all three states in the actual component.",
+        "zh": "先约定指针移动时、松手后与中途打断时的表现。让 Agent 在真实组件中验证三个阶段，并记录交互如何结束。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Apple Design Skill Use Cases for Web Interaction",
+        "zh": "Apple Design Skill 的网页交互场景"
+      },
+      "description": {
+        "en": "Choose an interaction where movement communicates position or control. Each design should have a clear end state and an alternative for people who reduce motion.",
+        "zh": "选择一个需要用动效传达位置或控制感的交互。明确动作怎样结束，同时为减少动效和键盘操作保留可用路径。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Build a drag-to-dismiss sheet",
+            "zh": "实现可拖动关闭的弹层"
+          },
+          "description": {
+            "en": "Give the agent the existing sheet component and supported inputs. Define where the sheet follows the pointer, when it closes and how keyboard users dismiss it.",
+            "zh": "提供现有弹层组件与支持的输入方式。明确组件怎样跟随指针、何时关闭，以及键盘用户怎样完成同一操作。"
+          }
+        },
+        {
+          "title": {
+            "en": "Refine an interruptible transition",
+            "zh": "调整可中断的过渡"
+          },
+          "description": {
+            "en": "Reproduce a navigation change before the previous motion finishes. Implement a transition from the visible position and check whether reversal feels continuous.",
+            "zh": "在上一个过渡尚未完成时触发导航变更。从元素当前可见位置开始反向移动，并验证反转时没有明显突跳。"
+          }
+        },
+        {
+          "title": {
+            "en": "Add a swipe action",
+            "zh": "增加滑动操作"
+          },
+          "description": {
+            "en": "Provide a row component and the intended action. Verify the gesture threshold and feedback while preserving an equivalent click or keyboard control.",
+            "zh": "提供列表行组件与预期动作。验证手势阈值和反馈，并保留功能等价的点击或键盘入口。"
+          }
+        },
+        {
+          "title": {
+            "en": "Adapt motion for accessibility",
+            "zh": "适配减少动效设置"
+          },
+          "description": {
+            "en": "Choose a movement-heavy animation and specify the information it communicates. Build an alternate state that preserves feedback with less movement, then test both preferences.",
+            "zh": "选择移动幅度较大的动画，说明其传递的关键信息。实现减少移动的替代状态，再分别验证两种设置下的反馈。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Describe states and inputs",
+          "zh": "定义状态和输入"
+        },
+        "description": {
+          "en": "List the resting, dragged, released and interrupted states alongside supported pointer and keyboard paths.",
+          "zh": "列出静止、拖动、松手和打断状态，以及支持的指针与键盘路径。"
+        }
+      },
+      {
+        "title": {
+          "en": "Implement inside the existing component",
+          "zh": "在现有组件实现"
+        },
+        "description": {
+          "en": "Use the current web stack and motion primitives. Keep feedback aligned with pointer input and preserve a usable alternative.",
+          "zh": "沿用现有技术栈与动效工具。让反馈跟随实际输入，并保留可用的替代操作。"
+        }
+      },
+      {
+        "title": {
+          "en": "Check release, reversal and access",
+          "zh": "验证松手、反转和可访问性"
+        },
+        "description": {
+          "en": "Test interruption and reduced motion on a representative device. Record the states checked and any follow-up work.",
+          "zh": "在代表设备上检查中途打断与减少动效。记录已经执行的状态和待核事项。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Is Apple Design an Apple release?",
+          "zh": "这个 Skill 是 Apple 发布的吗？"
+        },
+        "answer": {
+          "en": "It is Emil Kowalski’s Skill, informed by Apple design talks and adapted to web interfaces.",
+          "zh": "它由 Emil Kowalski 发布，参考 Apple 设计演讲并转换为网页交互指引。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it target SwiftUI?",
+          "zh": "适用于 SwiftUI 吗？"
+        },
+        "answer": {
+          "en": "This guide covers the Skill’s web interaction instructions. It can use CSS, pointer events and the project’s existing motion tooling.",
+          "zh": "本指南针对网页，可使用 CSS、指针事件和项目现有的动效工具。"
+        }
+      },
+      {
+        "question": {
+          "en": "How should a motion reverse?",
+          "zh": "中途打断动画时怎么处理？"
+        },
+        "answer": {
+          "en": "Start from the element’s current visible position when interrupted. Reversing from a stale target can cause a visible jump.",
+          "zh": "从元素当前的可见位置开始新的过渡。从旧目标位置开始可能造成突跳。"
+        }
+      },
+      {
+        "question": {
+          "en": "When are springs useful?",
+          "zh": "什么时候适合弹簧动效？"
+        },
+        "answer": {
+          "en": "Use them where physical feedback supports the interaction and verify behavior with the actual gesture and content.",
+          "zh": "需要体现物理反馈的交互可以考虑使用。用真实手势和内容验证效果。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should reduced motion preserve?",
+          "zh": "减少动效时应保留什么？"
+        },
+        "answer": {
+          "en": "Keep essential state feedback and an equivalent way to complete the action while reducing unnecessary movement.",
+          "zh": "保留必要的状态反馈和等价操作入口，同时减少不必要的位移。"
+        }
+      },
+      {
+        "question": {
+          "en": "How should I test a gesture?",
+          "zh": "手势应测试哪些状态？"
+        },
+        "answer": {
+          "en": "Check the initial state, drag, release, interruption and the equivalent keyboard or click path on a representative device.",
+          "zh": "检查初始状态、拖动、松手、打断，以及代表设备上的键盘或点击替代路径。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Apply Apple Design to this web sheet. Keep the existing stack and build a drag-to-dismiss path with interruption handling. Check keyboard dismissal, rapid reversals and reduced motion. Report exactly which states were exercised.",
+        "zh": "用 Apple Design 检查这段网页弹层。沿用现有技术栈，实现可打断的拖动关闭，并检查键盘关闭、快速反转和减少动效。记录实际验证的状态。"
+      }
+    },
+    "cardDescription": {
+      "en": "Translate a drag, swipe or sheet interaction into a responsive web implementation. Verify what happens mid-gesture, on release and when reduced motion is enabled.",
+      "zh": "将拖动、滑动或弹层动作实现为响应及时的网页交互。分别验证手势进行中、松手后和启用减少动效时的状态。"
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex"
+      ],
+      "note": {
+        "en": "Provide a web interaction and the existing project tooling so the agent can exercise the actual gesture.",
+        "zh": "提供一个网页交互和项目现有工具，让 Agent 能验证实际手势。"
+      }
+    }
   }
 ]

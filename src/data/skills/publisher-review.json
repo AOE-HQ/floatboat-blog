@@ -689,6 +689,58 @@
       "repositories": [
         "K-Dense-AI/scientific-agent-skills"
       ]
+    },
+    "openclaw": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "openclaw/openclaw",
+      "stars": 393967,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-05T16:13:51Z",
+      "reason": "官方归属、热度、公开状态和可执行入口已核对。",
+      "repositories": [
+        "openclaw/openclaw"
+      ]
+    },
+    "affaan-m": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "affaan-m/ECC",
+      "stars": 297670,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-02T04:56:08Z",
+      "reason": "官方归属、热度、公开状态和可执行入口已核对。",
+      "repositories": [
+        "affaan-m/ECC"
+      ]
+    },
+    "garrytan": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "garrytan/gstack",
+      "stars": 139751,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-05T16:15:25Z",
+      "reason": "官方归属、热度、公开状态和可执行入口已核对。",
+      "repositories": [
+        "garrytan/gstack"
+      ]
+    },
+    "addyosmani": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "addyosmani/agent-skills",
+      "stars": 113436,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-01T19:24:49Z",
+      "reason": "官方归属、热度、公开状态和可执行入口已核对。",
+      "repositories": [
+        "addyosmani/agent-skills"
+      ]
     }
   }
 }

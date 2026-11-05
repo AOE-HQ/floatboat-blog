@@ -23,7 +23,7 @@
       "projectBackgroundReason": "Example notebooks and recipes belong in workflow references."
     },
     "anthropics/skills": {
-      "stars": 187566,
+      "stars": 187652,
       "fork": false,
       "archived": false,
       "private": false
@@ -77,7 +77,7 @@
       "private": false
     },
     "coreyhaines31/marketingskills": {
-      "stars": 58609,
+      "stars": 58659,
       "fork": false,
       "archived": false,
       "private": false
@@ -119,7 +119,7 @@
       "private": false
     },
     "emilkowalski/skills": {
-      "stars": 53683,
+      "stars": 53751,
       "fork": false,
       "archived": false,
       "private": false
@@ -179,13 +179,13 @@
       "private": false
     },
     "heygen-com/hyperframes": {
-      "stars": 79212,
+      "stars": 79374,
       "fork": false,
       "archived": false,
       "private": false
     },
     "juliusbrussee/caveman": {
-      "stars": 117614,
+      "stars": 117687,
       "fork": false,
       "archived": false,
       "private": false
@@ -209,7 +209,7 @@
       "private": false
     },
     "leonxlnx/taste-skill": {
-      "stars": 110285,
+      "stars": 110467,
       "fork": false,
       "archived": false,
       "private": false
@@ -295,7 +295,7 @@
       "private": false
     },
     "morluto/rea": {
-      "stars": 432470,
+      "stars": 433415,
       "fork": false,
       "archived": false,
       "private": false
@@ -325,7 +325,7 @@
       "private": false
     },
     "obra/superpowers": {
-      "stars": 312671,
+      "stars": 312841,
       "fork": false,
       "archived": false,
       "private": false
@@ -343,10 +343,11 @@
       "private": false
     },
     "opencut-app/opencut": {
-      "stars": 97364,
+      "stars": 97386,
       "fork": false,
       "archived": false,
-      "private": false
+      "private": false,
+      "projectBackgroundReason": "The current Classic editor has no verified Agent execution interface. The official rewrite still lists MCP and headless operation as forthcoming. Retain the existing Classic reference URL."
     },
     "othmanadi/planning-with-files": {
       "stars": 27891,
@@ -476,7 +477,31 @@
       "private": false
     },
     "k-dense-ai/scientific-agent-skills": {
-      "stars": 56196,
+      "stars": 56197,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "openclaw/openclaw": {
+      "stars": 393967,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "affaan-m/ecc": {
+      "stars": 297670,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "garrytan/gstack": {
+      "stars": 139751,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "addyosmani/agent-skills": {
+      "stars": 113436,
       "fork": false,
       "archived": false,
       "private": false

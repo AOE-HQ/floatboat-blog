@@ -125,6 +125,78 @@
       "mattpocock/handoff",
       "mattpocock/diagnosing-bugs",
       "mattpocock/code-review"
+    ],
+    "k-dense-ai/exploratory-data-analysis": [
+      "anthropics/xlsx",
+      "anthropics/pdf",
+      "mattpocock/diagnosing-bugs",
+      "anthropics/docx"
+    ],
+    "garrytan/qa-only": [
+      "addyosmani/browser-testing-with-devtools",
+      "mattpocock/diagnosing-bugs",
+      "obra/systematic-debugging",
+      "mattpocock/triage"
+    ],
+    "addyosmani/browser-testing-with-devtools": [
+      "garrytan/qa-only",
+      "obra/systematic-debugging",
+      "mattpocock/diagnosing-bugs",
+      "anthropics/frontend-design"
+    ],
+    "anthropics/webapp-testing": [
+      "anthropics/frontend-design",
+      "obra/systematic-debugging",
+      "mattpocock/diagnosing-bugs",
+      "mattpocock/tdd"
+    ],
+    "leonxlnx/taste-skill": [
+      "anthropics/frontend-design",
+      "pbakaus/impeccable",
+      "heygen-com/hyperframes",
+      "anthropics/webapp-testing"
+    ],
+    "juliusbrussee/caveman": [
+      "mattpocock/handoff",
+      "mattpocock/code-review",
+      "mattpocock/diagnosing-bugs",
+      "obra/systematic-debugging"
+    ],
+    "heygen-com/slideshow": [
+      "heygen-com/hyperframes",
+      "anthropics/pptx",
+      "anthropics/frontend-design",
+      "leonxlnx/taste-skill"
+    ],
+    "coreyhaines31/seo-audit": [
+      "mattpocock/code-review",
+      "anthropics/webapp-testing",
+      "coreyhaines31/content-strategy",
+      "coreyhaines31/copywriting"
+    ],
+    "coreyhaines31/copywriting": [
+      "coreyhaines31/seo-audit",
+      "coreyhaines31/content-strategy",
+      "anthropics/frontend-design",
+      "mattpocock/grill-me"
+    ],
+    "coreyhaines31/content-strategy": [
+      "coreyhaines31/seo-audit",
+      "coreyhaines31/copywriting",
+      "mattpocock/grill-me",
+      "obra/brainstorming"
+    ],
+    "emilkowalski/review-animations": [
+      "emilkowalski/apple-design",
+      "leonxlnx/taste-skill",
+      "pbakaus/impeccable",
+      "mattpocock/code-review"
+    ],
+    "emilkowalski/apple-design": [
+      "emilkowalski/review-animations",
+      "leonxlnx/taste-skill",
+      "pbakaus/impeccable",
+      "anthropics/frontend-design"
     ]
   },
   "publishers": {
@@ -283,6 +355,30 @@
       "mattpocock",
       "obra",
       "karpathy"
+    ],
+    "openclaw": [
+      "nousresearch",
+      "anomalyco",
+      "openai",
+      "stablyai"
+    ],
+    "affaan-m": [
+      "karpathy",
+      "mattpocock",
+      "obra",
+      "morluto"
+    ],
+    "garrytan": [
+      "addyosmani",
+      "mattpocock",
+      "obra",
+      "anthropics"
+    ],
+    "addyosmani": [
+      "garrytan",
+      "mattpocock",
+      "obra",
+      "anthropics"
     ]
   },
   "skill-categories": {

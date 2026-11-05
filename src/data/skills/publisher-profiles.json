@@ -3104,23 +3104,15 @@
     "skills": [
       {
         "name": "Design Taste Frontend",
-        "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill",
+        "url": "https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/SKILL.md",
         "description": {
           "en": "Establish a visual direction from the brief, then guide typography, layout, spacing, and motion toward a coherent interface with a final browser review.",
           "zh": "从需求中确定视觉方向，统筹字体、布局、间距与动效，并通过浏览器审查检查最终界面的完整表现。"
         }
       },
       {
-        "name": "Redesign Skill",
-        "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/redesign-skill",
-        "description": {
-          "en": "Audit an existing interface before changing its visual direction, identifying opportunities to improve hierarchy and presentation within the project’s current context.",
-          "zh": "先审查现有界面，再调整视觉方向，在原项目语境中识别层次、布局与整体呈现值得改进的地方。"
-        }
-      },
-      {
         "name": "GPT Taste Skill",
-        "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/gpt-tasteskill",
+        "url": "https://github.com/Leonxlnx/taste-skill-classics/blob/main/skills/gpt-tasteskill/SKILL.md",
         "description": {
           "en": "Apply a GPT and Codex-oriented variant of the design instructions, with more explicit direction for layout variation and interface motion choices.",
           "zh": "采用面向 GPT 与 Codex 的设计指引变体，为布局变化与界面动效提供更明确的审美决策要求。"
@@ -3162,14 +3154,14 @@
         "title": "About Leon Lin",
         "paragraphs": [
           "Leon Lin publishes on GitHub as Leonxlnx. His public profile highlights Taste Skill, a system of instructions for improving the interface work produced by coding agents. It focuses on practical design choices such as hierarchy, typography, spacing, motion, and the overall direction of a frontend.",
-          "Taste Skill starts from the design brief rather than applying the same visual recipe to every task. Its current collection includes a default frontend Skill, a redesign workflow, and variants for particular tools or visual approaches. The official website also credits blueemi alongside Leon Lin.",
+          "The maintained Design Taste Frontend Skill covers both new interfaces and existing-product redesign. It uses the project brief, references, and browser review to guide decisions. The official site also credits blueemi alongside Leon Lin.",
           "His public work extends beyond design instructions. TasteCode provides a desktop environment for coding agents, while earshot adds audio creation and review tools. These projects address different parts of an agent workflow and should be selected according to the work being done."
         ]
       },
       "aboutTitle": "About Leon Lin",
       "about": "Leon Lin builds design Skills and tools for coding agents. His public work includes Taste Skill, the TasteCode workspace, and earshot audio tools.",
       "skillsTitle": "Selected Leon Lin Skills",
-      "skillsIntro": "Leon Lin's Taste Skill instructions distinguish new-interface work, existing-product redesign, and GPT-oriented design flows. Compare those scopes with the current page, then read the maintained source for the visual decisions, implementation requirements, and review process that apply.",
+      "skillsIntro": "The current Design Taste Frontend Skill covers a new interface or a redesign. Compare its reference-led design process with the project’s existing code and check the result in a browser.",
       "projectsTitle": "Leon Lin Projects",
       "projectsIntro": "Explore Leon Lin’s software projects for coding-agent workspaces and audio tasks. These applications complement the design Skills, with their own setup requirements, documentation, and intended development workflows.",
       "relatedTitle": "More Publishers and Creators",
@@ -3186,7 +3178,7 @@
         },
         {
           "question": "Which instruction should I choose for an existing website?",
-          "answer": "Start with the redesign workflow. It calls for understanding and auditing the existing interface before deciding which visual changes are appropriate."
+          "answer": "Use the redesign workflow inside the maintained Design Taste Frontend Skill. It starts by reviewing the existing interface and identifying what needs to change."
         },
         {
           "question": "Why do the directory and repository use different Taste Skill names?",
@@ -3201,11 +3193,11 @@
           "answer": "It supplies audio tools for listening, reviewing, and creating sounds. That is a separate software capability from the frontend design guidance in Taste Skill."
         }
       ],
-      "ctaTitle": "Explore Leon Lin Skills and Work",
-      "ctaDescription": "Start with an interface brief, a redesign, or an audio task. Compare Leon Lin’s selected Skills and projects, then follow the source that fits your workflow.",
+      "ctaTitle": "Review a Frontend With Design Taste",
+      "ctaDescription": "Start with an interface brief or an existing page, then choose the design reference and browser checks for that task.",
       "ctaPrimary": {
-        "label": "Browse selected Skills",
-        "href": "/skills-marketplace/leonxlnx#publisher-skills-title"
+        "label": "Read the Design Taste guide",
+        "href": "/skills-marketplace/leonxlnx/taste-skill"
       }
     },
     "zh": {
@@ -3217,14 +3209,14 @@
         "title": "关于 Leon Lin",
         "paragraphs": [
           "Leon Lin 使用 Leonxlnx 账号在 GitHub 发布作品，公开个人介绍重点展示 Taste Skill。这套指引旨在改善编码 Agent 生成界面的方式，关注层次、字体、间距、动效和前端整体方向等具体设计决策。",
-          "Taste Skill 从设计需求出发，而不是对所有任务套用相同的视觉方案。目前公开集合包括默认前端指引、现有项目改版流程，以及面向特定工具或视觉方向的变体。官网同时列出 Leon Lin 与 blueemi 的共同署名。",
+          "当前维护的 Design Taste Frontend 兼顾新界面与现有产品改版，结合设计需求、参考和浏览器检查做判断。官网同时列出 Leon Lin 与 blueemi 的署名。",
           "他的公开作品也超出了设计指令本身：TasteCode 提供编码 Agent 的桌面工作环境，earshot 则加入声音生成与检查工具。这些项目分别处理 Agent 工作流的不同环节，适合围绕实际任务选择，而不是将它们视为同一种技能。"
         ]
       },
       "aboutTitle": "关于 Leon Lin",
       "about": "Leon Lin 发布界面设计 Skills 与 Agent 工具，代表作品包括共同署名的 Taste Skill、编码工作空间 TasteCode 和音频工具 earshot。",
       "skillsTitle": "Leon Lin 精选 Skills",
-      "skillsIntro": "Leon Lin 的 Taste Skill 区分新界面、已有产品改版和 GPT 设计流程。以下指引按范围说明用途，再通过当前源码核对适用的视觉决定、实现要求与审阅过程。",
+      "skillsIntro": "现行 Design Taste Frontend 同时覆盖新界面与改版。结合参考和已有代码确定设计方向，再在浏览器里核对页面是否符合需求。",
       "projectsTitle": "Leon Lin 相关项目",
       "projectsIntro": "探索 Leon Lin 面向编码 Agent 工作空间与音频任务的软件作品，了解它们与设计 Skills 的关系，并前往具体仓库查看安装要求、技术说明和适用工作流程。",
       "relatedTitle": "更多提供者与创作者",
@@ -3241,7 +3233,7 @@
         },
         {
           "question": "已有网站改版应该先选哪项指引？",
-          "answer": "可以先从改版流程开始，理解并审查现有界面，再判断哪些视觉调整适合当前项目。"
+          "answer": "使用当前 Design Taste Frontend 内的改版流程。先核对已有界面，再判断哪些设计需要改变。"
         },
         {
           "question": "为什么目录与仓库中的 Taste Skill 名称不完全相同？",
@@ -3256,11 +3248,11 @@
           "answer": "它提供听取、检查与创建声音的音频工具，是独立的软件能力，与 Taste Skill 的前端设计指导承担不同职责。"
         }
       ],
-      "ctaTitle": "探索 Leon Lin 的 Skills 与作品",
-      "ctaDescription": "从界面需求、现有项目改版或音频任务出发，比较 Leon Lin 的精选 Skills 与软件项目，再前往适合当前工作流的公开源码入口。",
+      "ctaTitle": "用 Design Taste 审阅界面",
+      "ctaDescription": "从新界面需求或现有页面出发，为这次任务选定设计参考和浏览器检查项。",
       "ctaPrimary": {
-        "label": "浏览精选 Skills",
-        "href": "/zh/skills-marketplace/leonxlnx#publisher-skills-title"
+        "label": "阅读 Design Taste 指南",
+        "href": "/zh/skills-marketplace/leonxlnx/taste-skill"
       }
     },
     "logo": "/blog/brand/publishers/leonxlnx.webp"

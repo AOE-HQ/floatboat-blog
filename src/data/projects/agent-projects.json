@@ -4849,5 +4849,829 @@
         }
       ]
     }
+  },
+  {
+    "author": "openclaw",
+    "slug": "openclaw",
+    "name": "OpenClaw",
+    "repository": "https://github.com/openclaw/openclaw",
+    "website": "https://openclaw.ai/",
+    "documentation": "https://docs.openclaw.ai/cli/agent",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/openclaw/openclaw/blob/main/LICENSE",
+    "classification": "agent-system",
+    "reviewedAt": "2026-11-06",
+    "related": [
+      "nousresearch/hermes-agent",
+      "openai/codex",
+      "anomalyco/opencode",
+      "stablyai/orca"
+    ],
+    "en": {
+      "seoTitle": "OpenClaw: Headless Agent Runs, Gateway, and Automation",
+      "seoDescription": "Run a bounded task through OpenClaw’s headless CLI or Gateway. Choose the right execution path and check output, workspace access, and process status.",
+      "description": "OpenClaw runs agent tasks through a persistent Gateway or a headless CLI. Start with a bounded job, an explicit workspace and permissions, and a result your workflow can verify.",
+      "kind": "Agent Runtime and CLI",
+      "overviewTitle": "About OpenClaw",
+      "overview": [
+        "OpenClaw is an open-source agent runtime maintained by the OpenClaw Foundation. Its Gateway manages sessions for connected clients. The separate headless command runs an embedded agent turn without first connecting to a Gateway.",
+        "The official command reference identifies openclaw agent exec as the embedded path for CI and coding automation. It manages the turn lifecycle, presents output, and provides process status. The agent still needs a configured model and the tools and access appropriate to the job.",
+        "Treat the runtime, model provider, and channel configuration as separate choices. Begin with a limited workspace and a task that can be checked locally. Use a persistent session only if continuity or channel access is part of the job."
+      ],
+      "capabilitiesTitle": "How OpenClaw Runs a Task",
+      "capabilitiesIntro": "Choose the entry point based on whether the job needs a shared session or a standalone run. Then define where output will be checked and who can approve tool access.",
+      "capabilities": [
+        {
+          "title": "Headless execution",
+          "description": "Run a bounded turn using openclaw agent exec and capture output and process status."
+        },
+        {
+          "title": "Gateway sessions",
+          "description": "Use the Gateway path when the task belongs to an existing configured session or connected workflow."
+        },
+        {
+          "title": "Workspace and tools",
+          "description": "Limit the job to the files and tools it needs, and verify the expected artifact separately."
+        }
+      ],
+      "useCases": {
+        "title": "OpenClaw Use Cases for Agent Automation",
+        "description": "A CI job and an ongoing session have different access and handoff needs. Use the selected entry point to produce a result the next person or process can inspect.",
+        "items": [
+          {
+            "title": "Summarize an approved test log",
+            "description": "Provide a saved test log in a dedicated directory and ask for failure groups with line references. Save the summary as a CI artifact, then compare it against the original log and job status."
+          },
+          {
+            "title": "Prepare a release note draft",
+            "description": "Pass the approved commits and release boundaries as the task inputs. Keep the agent’s draft beside the changelog and have the release owner verify version names and flagged changes."
+          },
+          {
+            "title": "Resume a recurring review",
+            "description": "Use a configured Gateway session when a weekly review needs earlier decisions. Ask for changes since the last checkpoint and check each item against the current source files."
+          },
+          {
+            "title": "Test a new tool policy",
+            "description": "Run a representative task in a disposable workspace with a small tool set. Record which steps succeeded, which permissions were requested, and whether the output can be reproduced."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "OpenClaw Runtime Requirements",
+        "description": "Confirm the installed version exposes the command you plan to call. Supply model access, a limited workspace, and an explicit place to save output.",
+        "items": [
+          {
+            "title": "Installed runtime and model",
+            "description": "Confirm the CLI is on PATH and the model provider is configured."
+          },
+          {
+            "title": "Workspace boundary",
+            "description": "Provide only approved files and tools, and verify the execution policy separately. The working-directory flag selects a location."
+          },
+          {
+            "title": "Result checks",
+            "description": "Capture CLI status, then inspect the deliverable before treating the job as complete."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Does headless execution require a Gateway?",
+          "answer": "The documented agent exec command runs an embedded turn without connecting to a Gateway."
+        },
+        {
+          "question": "Can CI call OpenClaw?",
+          "answer": "Yes. The official CLI documents agent exec as the headless entry point for CI and coding automation."
+        },
+        {
+          "question": "Does installing the CLI include model access?",
+          "answer": "Configure the intended model provider separately and make its credentials available only to the runtime that needs them."
+        },
+        {
+          "question": "When should I use a Gateway session?",
+          "answer": "Use it when the workflow depends on an existing session or configured Gateway rather than a one-off embedded run."
+        },
+        {
+          "question": "Is a successful process status enough?",
+          "answer": "Process status reports the command lifecycle. Check the requested output against the source material and acceptance conditions."
+        },
+        {
+          "question": "Who maintains OpenClaw?",
+          "answer": "The upstream repository identifies the OpenClaw Foundation as the maintainer and publishes the software under MIT."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "OpenClaw：无界面 Agent 执行、Gateway 与自动化",
+      "seoDescription": "了解如何通过 OpenClaw CLI 或 Gateway 执行任务，核对运行环境、工作区权限、输出和进程状态。",
+      "description": "OpenClaw 可以通过 Gateway 会话或无界面 CLI 执行 Agent 任务。先指定工作区、工具权限和可核验的交付物，再选择运行入口。",
+      "kind": "Agent 运行环境与 CLI",
+      "overviewTitle": "关于 OpenClaw",
+      "overview": [
+        "OpenClaw Foundation 维护开源 Agent 运行环境 OpenClaw。Gateway 为连接的客户端管理会话；无界面命令可以直接启动一次嵌入式 Agent 执行。",
+        "官方命令文档将 openclaw agent exec 列为 CI 和代码自动化的无界面入口。它管理执行周期，返回输出和进程状态。运行前仍需配置模型，并授权访问任务所需文件与工具。",
+        "运行环境、模型供应商和消息渠道各自配置。第一次试跑可以选一个有限工作区和能在本地复核的任务。只有需要延续会话或接入渠道时，再使用 Gateway 路径。"
+      ],
+      "capabilitiesTitle": "OpenClaw 怎样执行任务",
+      "capabilitiesIntro": "先判断任务是否需要复用会话，再选择 Gateway 或独立命令。指定输出的保存位置和核对方式，并明确谁负责批准访问所需的工具。",
+      "capabilities": [
+        {
+          "title": "无界面执行",
+          "description": "通过 openclaw agent exec 运行有明确边界的任务，并记录输出和进程状态。"
+        },
+        {
+          "title": "Gateway 会话",
+          "description": "任务需要已有上下文或已配置的连接时，走 Gateway 会话入口。"
+        },
+        {
+          "title": "工作区和工具权限",
+          "description": "仅开放任务所需的文件与工具，再单独核验交付物。"
+        }
+      ],
+      "useCases": {
+        "title": "OpenClaw 的 Agent 自动化场景",
+        "description": "CI 任务和持续会话对输入、权限与交接的要求不同。先按场景选定入口，再明确下一个人或流程应从哪里查看结果与核验证据。",
+        "items": [
+          {
+            "title": "汇总获准的测试日志",
+            "description": "把已保存的测试日志放在独立目录，请 Agent 按失败原因分组并标出行号。将摘要作为 CI 产物保存，再对照原始日志和运行状态。"
+          },
+          {
+            "title": "准备发布说明草稿",
+            "description": "提供允许使用的提交记录和版本范围。将草稿与变更日志放在一起，由发布负责人核对版本名和影响用户的改动。"
+          },
+          {
+            "title": "接续周期性审查",
+            "description": "每周审查需要回看上次决策时，用已配置的 Gateway 会话。让 Agent 列出上次检查点之后的变化，并逐条对照当前文件。"
+          },
+          {
+            "title": "验证工具权限设置",
+            "description": "在临时工作区用少量工具试跑一个代表任务。记下成功步骤、权限申请和输出差异，以便复现后再扩大权限。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "OpenClaw 的运行前提",
+        "description": "先确认已安装的版本提供所需命令，再准备模型访问、有限工作区和指定的输出目录，方便试跑后复核结果。",
+        "items": [
+          {
+            "title": "运行环境和模型",
+            "description": "确认终端能找到 OpenClaw CLI，并配置所需的模型供应商。"
+          },
+          {
+            "title": "工作区范围",
+            "description": "仅提供获准的文件和工具，并单独核对执行权限策略。工作目录参数用于指定起始位置。"
+          },
+          {
+            "title": "输出核验",
+            "description": "先保存进程状态，再检查交付物是否满足任务要求。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "无界面执行需要 Gateway 吗？",
+          "answer": "官方的 agent exec 命令可以直接运行一次嵌入式任务，无需先连接 Gateway。"
+        },
+        {
+          "question": "CI 能调用 OpenClaw 吗？",
+          "answer": "官方 CLI 将 agent exec 列为 CI 和代码自动化可使用的无界面入口。"
+        },
+        {
+          "question": "安装命令后就能访问模型吗？",
+          "answer": "仍要单独配置模型供应商，并仅向确实需要访问的运行环境提供凭据。"
+        },
+        {
+          "question": "何时应该使用 Gateway 会话？",
+          "answer": "如果任务依赖已有会话或已配置的 Gateway 连接，就使用对应的会话入口。"
+        },
+        {
+          "question": "进程正常退出就能交付吗？",
+          "answer": "进程状态反映命令是否运行完成。还需核对交付物是否符合源材料和验收条件。"
+        },
+        {
+          "question": "OpenClaw 由谁维护？",
+          "answer": "官方仓库列出 OpenClaw Foundation，并公开了项目的 MIT 许可证。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "affaan-m",
+    "slug": "ecc",
+    "name": "ECC",
+    "repository": "https://github.com/affaan-m/ECC",
+    "website": "https://github.com/affaan-m/ECC",
+    "documentation": "https://github.com/affaan-m/ECC#install-ecc",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/affaan-m/ECC/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-06",
+    "related": [
+      "openai/codex",
+      "anomalyco/opencode",
+      "earendil-works/pi",
+      "dietrichgebert/ponytail"
+    ],
+    "en": {
+      "seoTitle": "ECC: Guided Agent Setup, Hooks, and Configuration Checks",
+      "seoDescription": "Use ECC to review a Codex or Claude Code setup before changing it. Compare install destinations, profiles, diagnostics, and host-specific hook approval.",
+      "description": "ECC packages Skills, hooks, and configuration tools for coding agents. Its CLI can preview a Codex installation and show what it will configure before you approve a write.",
+      "kind": "Agent Configuration Toolkit",
+      "overviewTitle": "About ECC",
+      "overview": [
+        "ECC groups engineering workflows with an installer and diagnostics for multiple coding agents. Its guided setup can target Claude Code, Codex, and Kimi Code, with different setup behavior for each host.",
+        "For Codex, use the documented guided dry run to inspect the installation channel and target before writing. The real install uses Codex’s native plugin flow. Hook review and trust decisions remain in Codex.",
+        "Record the package version, selected host and expected scope in the project handoff. Run diagnostics after setup where the host supports them. Keep additional adapters, authentication, and provider configuration separate when evaluating the result."
+      ],
+      "capabilitiesTitle": "What ECC Configures",
+      "capabilitiesIntro": "A dry run answers where the package would go. Use the selected host’s diagnostics and plugin controls to check what was actually enabled.",
+      "capabilities": [
+        {
+          "title": "Guided preview",
+          "description": "Inspect a planned Codex installation without applying the configuration changes."
+        },
+        {
+          "title": "Host-specific setup",
+          "description": "Use each documented install channel and review hooks in the host that will execute them."
+        },
+        {
+          "title": "Diagnosis",
+          "description": "Check supported targets for setup issues and record the confirmed state before sharing instructions."
+        }
+      ],
+      "useCases": {
+        "title": "ECC Use Cases for Coding-Agent Setup",
+        "description": "Use ECC on a disposable or approved workspace first. Compare configuration evidence with a small task so installation and workflow behavior can be reviewed independently.",
+        "items": [
+          {
+            "title": "Preview a Codex setup",
+            "description": "Record the current plugin state, run the documented dry run, and capture its destination and proposed actions. Ask the workspace owner to approve those changes before installation."
+          },
+          {
+            "title": "Scope a Claude Code trial",
+            "description": "Choose a local, project or user installation scope before you run the installer. Compare the requested hooks with the scope you intend, then check the plugin list after the approved change."
+          },
+          {
+            "title": "Review a team handoff",
+            "description": "Write a short setup note listing the installed package version, host and profiles. Ask a teammate to reproduce the preview on a clean workspace and compare the proposed paths."
+          },
+          {
+            "title": "Investigate a setup mismatch",
+            "description": "When a Skill is missing, compare the selected host and install scope with the upstream instructions. Collect the diagnostics available for that target before making a second configuration change."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "ECC Setup Requirements",
+        "description": "The guided package requires Node.js and a supported host. Check the host and package version and reserve a confirmation step before modifying configuration.",
+        "items": [
+          {
+            "title": "Package runtime",
+            "description": "The documented universal installer needs Node.js 18 or later."
+          },
+          {
+            "title": "Host setup",
+            "description": "Make the chosen host available and check the requirements for its installation channel."
+          },
+          {
+            "title": "Approved scope",
+            "description": "Review destination, hooks and plugin trust before applying the planned setup."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which hosts have guided setup?",
+          "answer": "The documented guided installer covers Claude Code, Codex and Kimi Code. Other adapters use separate documented commands."
+        },
+        {
+          "question": "Can I see changes before installing?",
+          "answer": "For Codex the README documents an install command with --dry-run. Review the proposed destination and actions before approving writes."
+        },
+        {
+          "question": "Does ECC grant trust to Codex hooks?",
+          "answer": "Codex retains control of hook review and trust in its native plugin installation flow."
+        },
+        {
+          "question": "What does the Claude Code setup require?",
+          "answer": "In addition to Node.js, the official Claude Code plugin setup requires Git and a supported Claude Code executable on PATH."
+        },
+        {
+          "question": "Does setup configure a model provider?",
+          "answer": "Check the selected host documentation. The managed Kimi path, for example, does not configure model settings or authentication."
+        },
+        {
+          "question": "How do I check a successful install?",
+          "answer": "Inspect the host’s plugin or Skill state, then try a bounded task that exercises the capability you enabled."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "ECC：跨宿主配置、Hooks 与 Codex 安装预演",
+      "seoDescription": "使用 ECC 预演 Codex 安装，比较 Claude Code 等宿主的安装范围，核对插件、Hooks 与配置诊断。",
+      "description": "ECC 为编程 Agent 提供 Skills、Hooks 和配置工具。它的 CLI 可以预演 Codex 安装，先展示目标位置和计划动作，再由用户批准写入。",
+      "kind": "Agent 配置工具套件",
+      "overviewTitle": "关于 ECC",
+      "overview": [
+        "ECC 将工程工作流、安装器和配置诊断放在同一个项目里。引导安装覆盖 Claude Code、Codex 与 Kimi Code，但各宿主使用的安装方式不同。",
+        "Codex 路径支持先预演，查看安装渠道、目标位置和计划动作。正式安装走 Codex 的原生插件机制，Hooks 的审阅和信任仍在 Codex 内处理。",
+        "交接时应记下包版本、所选宿主和安装范围。配置后可以使用该宿主提供的诊断方式核对。额外适配器、模型供应商设置和账号认证需要分别检查。"
+      ],
+      "capabilitiesTitle": "ECC 能配置哪些内容",
+      "capabilitiesIntro": "预演先回答软件准备写到哪里。实际配置后，再结合宿主的插件管理和可用诊断命令，核对已启用的能力和作用范围。",
+      "capabilities": [
+        {
+          "title": "预演安装",
+          "description": "先查看 Codex 安装计划，暂不应用配置改动。"
+        },
+        {
+          "title": "按宿主设置",
+          "description": "选择官方支持的安装渠道，在实际执行 Hooks 的宿主内处理信任。"
+        },
+        {
+          "title": "核对安装状态",
+          "description": "用对应宿主的诊断或插件列表核对当前状态，再分享配置说明。"
+        }
+      ],
+      "useCases": {
+        "title": "ECC 的 Agent 配置场景",
+        "description": "先在临时或获准使用的工作区试跑。分别记录安装状态和任务表现，便于团队区分宿主配置问题、插件状态问题和实际执行结果。",
+        "items": [
+          {
+            "title": "预演 Codex 安装",
+            "description": "记录现有插件状态，按官方命令做一次预演，保留安装目的地和计划动作。涉及写入时先由工作区负责人确认范围。"
+          },
+          {
+            "title": "限定 Claude Code 试用范围",
+            "description": "先确定是本地、项目还是用户级安装。将计划启用的 Hooks 与授权范围核对，完成后回到插件列表确认实际状态。"
+          },
+          {
+            "title": "编写团队交接说明",
+            "description": "记录已核对的包版本、宿主和配置档。请同事在干净工作区复现预演，对照两边显示的安装位置。"
+          },
+          {
+            "title": "排查 Skill 缺失",
+            "description": "检查是否选错宿主或安装范围，再用该目标可用的诊断命令收集信息。根据证据决定是否需要重新配置。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "ECC 的安装前提",
+        "description": "引导安装器需要 Node.js 和可用的目标宿主。先确认包与宿主版本，并在改动配置前保留单独的确认步骤。",
+        "items": [
+          {
+            "title": "包运行环境",
+            "description": "官方通用安装器要求 Node.js 18 或更高版本。"
+          },
+          {
+            "title": "目标宿主",
+            "description": "确认要配置的宿主已安装，并满足相应安装渠道的要求。"
+          },
+          {
+            "title": "获准的配置范围",
+            "description": "执行写入前先核对安装位置、Hooks 和插件信任设置。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "哪些宿主支持引导安装？",
+          "answer": "官方引导安装覆盖 Claude Code、Codex 和 Kimi Code。其他适配器有各自的安装命令。"
+        },
+        {
+          "question": "可以先看改动再安装吗？",
+          "answer": "官方 Codex 安装命令支持 --dry-run。预演后先核对目的地和计划动作，再批准写入。"
+        },
+        {
+          "question": "ECC 会替 Codex 信任 Hooks 吗？",
+          "answer": "Codex 的原生插件流程仍负责 Hooks 的审阅和信任决策。"
+        },
+        {
+          "question": "Claude Code 安装还需要什么？",
+          "answer": "除 Node.js 外，官方插件安装要求 Git 和可在终端调用的受支持 Claude Code 版本。"
+        },
+        {
+          "question": "安装时会配置模型供应商吗？",
+          "answer": "不同宿主的范围不同。以托管的 Kimi Code 路径为例，它不配置模型或账号认证。"
+        },
+        {
+          "question": "怎样确认安装成功？",
+          "answer": "先查看宿主的插件或 Skill 状态，再用一个范围明确的小任务验证刚启用的能力。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "morluto",
+    "slug": "rea",
+    "name": "REA",
+    "repository": "https://github.com/morluto/rea",
+    "website": "https://github.com/morluto/rea",
+    "documentation": "https://github.com/morluto/rea/blob/main/docs/installation.md",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/morluto/rea/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-06",
+    "related": [
+      "openai/codex",
+      "deepseek-ai/deepseek-harness",
+      "graphify-labs/graphify",
+      "sherlock-project/sherlock"
+    ],
+    "en": {
+      "seoTitle": "REA: Agent Reverse Engineering, Binary Inspection, and Evidence",
+      "seoDescription": "Use the REA CLI or MCP tools to inspect an authorized binary or desktop application. Check available providers and keep observations tied to reproducible evidence.",
+      "description": "REA gives a coding agent a CLI or MCP interface for inspecting authorized binaries and applications. Start with one artifact and preserve the evidence behind each conclusion.",
+      "kind": "Reverse Engineering CLI and MCP",
+      "overviewTitle": "About REA",
+      "overview": [
+        "REA, short for Reverse Engineer Anything, connects coding agents to tools for inspecting software artifacts. Use the documented Codex plugin, register its MCP server, or call the CLI from an approved terminal.",
+        "The reverse-engineering Skill provides the workflow, while the connected REA tools perform the inspection. A plugin can bundle the Skill and server. Installing only the Skill leaves the MCP registration and analysis engines to be configured separately.",
+        "Choose the operation based on the artifact and the question. A static layout report can establish architecture or section information, while deeper analysis may need a compatible provider. Keep tool evidence and your interpretation separate."
+      ],
+      "capabilitiesTitle": "What REA Can Inspect",
+      "capabilitiesIntro": "First check what the active client can run. Then choose a static or provider-backed operation and record enough evidence for someone else to reproduce the result.",
+      "capabilities": [
+        {
+          "title": "Inspect binary layout",
+          "description": "Run rea inspect-binary-layout with JSON output on an approved artifact to obtain file layout evidence."
+        },
+        {
+          "title": "Check provider availability",
+          "description": "Use the active MCP session’s binary_session tool to see which analysis tools are available and what blocks the others."
+        },
+        {
+          "title": "Keep evidence with observations",
+          "description": "Record the selected input, operation, and provider when reporting a result. Keep unsupported or incomplete checks visible."
+        }
+      ],
+      "useCases": {
+        "title": "REA Use Cases for Evidence-Based Software Inspection",
+        "description": "Use a known local artifact first, then increase scope only when the question calls for it. The workflow can produce a layout report, a version comparison, or an evidence-backed handoff.",
+        "items": [
+          {
+            "title": "Check an internal build artifact",
+            "description": "Supply a compiled binary from your own build and its expected target architecture. Ask the agent to inspect the layout without running the binary, then compare the reported architecture and sections with the build configuration."
+          },
+          {
+            "title": "Inventory a desktop app package",
+            "description": "Point REA at a desktop application package your team owns. Request an inventory of executable and resource candidates so a reviewer can select the relevant file and scope the next inspection."
+          },
+          {
+            "title": "Compare two release artifacts",
+            "description": "Collect the two authorized binary artifacts and run the same static inspection against both. Save the separate evidence records and identify changed sections or layout details for the release engineer to confirm."
+          },
+          {
+            "title": "Diagnose an analysis provider gap",
+            "description": "Have the agent inspect tool availability from its connected MCP server. Compare the response with the operation the team needs, record missing prerequisites, and hand off a narrower check if the required provider is unavailable."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What an REA Session Needs",
+        "description": "Start with an approved artifact and a clear question. Match the client, platform and optional provider to the operation, then choose where to retain output.",
+        "items": [
+          {
+            "title": "Authorized artifact",
+            "description": "Use a file or application your team may inspect. Specify the expected location and keep the first run static."
+          },
+          {
+            "title": "Working CLI or MCP registration",
+            "description": "Follow one official installation path for the chosen client. Verify the plugin or server in that client before starting."
+          },
+          {
+            "title": "Operation-specific provider",
+            "description": "Confirm the requested operation is available in the active client. Install or configure additional analysis tools only if needed."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is REA a Skill or a tool?",
+          "answer": "The project provides a CLI and MCP tooling alongside the workflow Skill. The Skill can guide an agent, while inspection capabilities depend on the installed tools."
+        },
+        {
+          "question": "Can Codex run REA?",
+          "answer": "The upstream installation guide documents a native Codex plugin and separate MCP registration. Check the selected route in your Codex client."
+        },
+        {
+          "question": "Does installing the Skill configure MCP?",
+          "answer": "A standalone Skill installation adds the guidance and references. Configure the MCP server and relevant engines separately if the selected workflow needs them."
+        },
+        {
+          "question": "Can I do a static check before running a binary?",
+          "answer": "Yes. The documented inspect-binary-layout operation returns file layout evidence without launching the inspected program."
+        },
+        {
+          "question": "How do I check available binary tools?",
+          "answer": "Ask the connected MCP server for binary_session and inspect its tool_availability output. This reflects the server used by that client."
+        },
+        {
+          "question": "What belongs in the handoff?",
+          "answer": "Keep the artifact reference, selected operation, provider and evidence next to each observation. List unresolved questions so a reviewer can repeat the check."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "REA：Agent 逆向分析、二进制检查与证据记录",
+      "seoDescription": "用 REA CLI 或 MCP 检查获准分析的二进制与桌面应用，核对实际可用的分析工具，并为每条结论保留可复核证据。",
+      "description": "REA 为编程 Agent 提供 CLI 和 MCP，可检查获准分析的二进制与应用。先选一份本地制品，再为每条结论保留对应的检查证据。",
+      "kind": "逆向分析 CLI 与 MCP",
+      "overviewTitle": "关于 REA",
+      "overview": [
+        "REA 的全称是 Reverse Engineer Anything。它将软件制品检查工具接到编程 Agent，可按上游文档安装 Codex 插件、注册 MCP 服务，或在获准使用的终端运行 CLI。",
+        "逆向分析 Skill 提供工作流程，实际检查由已接入的 REA 工具执行。插件可以同时提供 Skill 与服务；单独安装 Skill 时，还需按任务配置 MCP 和分析引擎。",
+        "先根据制品类型和问题选择检查操作。静态布局报告可以说明架构或节区信息，深入分析可能需要兼容的后端。记录工具返回的证据，并标明自己的解释与待核查项。"
+      ],
+      "capabilitiesTitle": "REA 可以检查哪些内容",
+      "capabilitiesIntro": "先确认当前客户端能运行哪些工具，再选静态检查或需要分析后端的操作。保存输入与结果来源，方便其他人复现关键观察。",
+      "capabilities": [
+        {
+          "title": "检查二进制布局",
+          "description": "对获准分析的制品使用 rea inspect-binary-layout 并输出 JSON，取得文件布局证据。"
+        },
+        {
+          "title": "核对分析工具",
+          "description": "在当前 MCP 会话调用 binary_session，查看工具可用性及不可用的原因。"
+        },
+        {
+          "title": "保留观察依据",
+          "description": "记录输入、检查操作与分析后端，并在报告中保留无法完成的检查。"
+        }
+      ],
+      "useCases": {
+        "title": "REA 的软件制品检查场景",
+        "description": "从一个已知的本地制品开始，按问题逐步扩展范围。可以交付静态布局报告、两个版本的证据对比，或后续分析所需的交接记录。",
+        "items": [
+          {
+            "title": "核对内部构建产物",
+            "description": "提供自己团队编译的二进制和预期目标架构，让 Agent 在不启动程序的情况下检查布局，再对照构建配置核对架构和节区信息。"
+          },
+          {
+            "title": "盘点桌面应用包",
+            "description": "将团队有权检查的桌面应用包交给 REA，整理可执行文件和资源候选。由复核人选定相关文件，并界定下一步检查范围。"
+          },
+          {
+            "title": "比较两个发布版本",
+            "description": "为两个获准使用的二进制执行同一项静态检查，分别保存证据。整理变化的节区或布局细节，再交给发布工程师核对。"
+          },
+          {
+            "title": "诊断分析后端缺口",
+            "description": "让 Agent 从已连接的 MCP 服务查询工具可用性。将返回结果与待做操作对照，记录缺失的前提，并为暂时无法执行的部分提出更小的检查范围。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "运行 REA 前的准备",
+        "description": "先提供获准分析的制品和具体问题。根据操作核对客户端、平台与可选分析后端，并确定保存输出的位置。",
+        "items": [
+          {
+            "title": "获准检查的制品",
+            "description": "提供有权分析的文件或应用，明确路径，第一次先做静态检查。"
+          },
+          {
+            "title": "可用的 CLI 或 MCP",
+            "description": "遵循所用客户端的一种官方安装路径，并在当前客户端验证插件或服务。"
+          },
+          {
+            "title": "任务所需的分析后端",
+            "description": "在当前客户端检查对应操作是否可用，需要时再配置额外工具。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "REA 是 Skill 还是检查工具？",
+          "answer": "项目提供 CLI 和 MCP 工具，也包含流程 Skill。Agent 可以按 Skill 组织检查，实际操作取决于已安装的工具。"
+        },
+        {
+          "question": "Codex 能调用 REA 吗？",
+          "answer": "上游安装指南提供 Codex 原生插件和独立 MCP 注册两种路径。可以在对应客户端中核对当前接入状态。"
+        },
+        {
+          "question": "安装 Skill 后就有 MCP 吗？",
+          "answer": "单独安装 Skill 会提供任务指引与参考资料。需要 MCP 服务或分析引擎时，按上游文档另外配置。"
+        },
+        {
+          "question": "可以不运行二进制就做检查吗？",
+          "answer": "可以。inspect-binary-layout 是静态布局检查，能返回文件布局证据，无需启动被检查的程序。"
+        },
+        {
+          "question": "怎样核对二进制分析工具是否可用？",
+          "answer": "调用当前 MCP 服务的 binary_session，查看 tool_availability。它反映的是该客户端实际连接的服务环境。"
+        },
+        {
+          "question": "交接时应保留什么？",
+          "answer": "让每条观察带上制品引用、所用操作、分析后端和对应证据，并写明未解决的问题，便于复查。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "obra",
+    "slug": "superpowers",
+    "name": "Superpowers",
+    "repository": "https://github.com/obra/superpowers",
+    "website": "https://github.com/obra/superpowers",
+    "documentation": "https://github.com/obra/superpowers#readme",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-06",
+    "related": [
+      "openai/codex",
+      "dietrichgebert/ponytail",
+      "anomalyco/opencode",
+      "stablyai/orca"
+    ],
+    "en": {
+      "seoTitle": "Superpowers: Coding Agent Plans, Test Cycles, and Release Evidence",
+      "seoDescription": "Use the Superpowers plugin in Codex or Claude Code to turn an approved design into a file-level plan, regression tests, and fresh verification evidence.",
+      "description": "Superpowers is an installable software development workflow for coding agents. It connects design decisions, implementation planning, test-first changes, and evidence that the work meets its agreed checks.",
+      "kind": "Coding Agent Workflow Plugin",
+      "overviewTitle": "About Superpowers",
+      "overview": [
+        "Superpowers is a workflow plugin from Jesse Vincent (obra) for coding agents such as Codex and Claude Code. The suite helps the agent move from clarifying the design to testing and reviewing a patch. Its individual Skills activate at different points in the work.",
+        "Writing Plans turns an approved design into file-level tasks, implementation notes and verification commands. Test-Driven Development guides applicable behavior changes through an observed failing test and a passing fix. Verification Before Completion calls for fresh results before a success claim.",
+        "The host provides the editor, shell, and any available delegation tools. Supply a bounded repository task, project test commands and explicit permissions. An inspectable plan, diff and command results let a reviewer verify the handoff."
+      ],
+      "capabilitiesTitle": "How the Superpowers Workflow Fits Together",
+      "capabilitiesIntro": "Start from an approved specification and choose the next workflow step based on the project state. Keep the proposed checks with the eventual results so implementation and verification can be reviewed together.",
+      "capabilities": [
+        {
+          "title": "Write the implementation plan",
+          "description": "Translate the approved design into file-level steps with relevant tests and a visible acceptance check."
+        },
+        {
+          "title": "Run a test-first change",
+          "description": "For a behavior change, reproduce the failure with a test, make the smallest fix, then rerun the test and inspect the patch."
+        },
+        {
+          "title": "Verify before reporting completion",
+          "description": "Run the relevant checks again before claiming success. Include the command, result, and any skipped work in the handoff."
+        }
+      ],
+      "useCases": {
+        "title": "Superpowers Use Cases for Coding Workflows",
+        "description": "Use the suite for a task with explicit acceptance conditions. A plan, reproduction, behavior test, and release handoff give reviewers different evidence depending on where the work starts.",
+        "items": [
+          {
+            "title": "Turn a design into an implementation plan",
+            "description": "Give the agent an approved design for a new endpoint and the repository’s test conventions. Ask Writing Plans for the files, interfaces, first failing test, and acceptance checks so an engineer can review the scope before changes begin."
+          },
+          {
+            "title": "Reproduce a bug before writing a patch",
+            "description": "Share a failing fixture and its expected behavior. Use the test-driven workflow to capture the failure, make a focused change, and confirm the regression test passes. Keep the failing and passing commands with the patch."
+          },
+          {
+            "title": "Coordinate a small multi-step change",
+            "description": "Provide a reviewed plan for a change that touches configuration and code. Execute the steps in order or delegate only when the host supports it, recording which checks prove the pieces still work together."
+          },
+          {
+            "title": "Verify a handoff for review",
+            "description": "Ask the agent to run the agreed build and test commands against the current branch. Request the exact outputs, known skips, and a short summary of the diff so the reviewer can distinguish verified behavior from open questions."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What Superpowers Needs From Your Agent",
+        "description": "Install the suite in a documented host, then provide the repository and test commands it can access. Confirm the approved change scope before running steps that modify files.",
+        "items": [
+          {
+            "title": "A compatible host",
+            "description": "Install Superpowers from the documented Codex or Claude Code plugin channel and verify it is enabled in the current session."
+          },
+          {
+            "title": "Repository and tools",
+            "description": "Give the agent a reviewed workspace and access to the project test commands. Configure delegation separately where the host offers it."
+          },
+          {
+            "title": "Approved work scope",
+            "description": "State which files may change and which checks must pass before the result is ready to hand off."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which coding agents support Superpowers?",
+          "answer": "The repository documents installation for Codex and Claude Code, among other hosts. Check the official instructions for your host and version."
+        },
+        {
+          "question": "Where does Writing Plans fit?",
+          "answer": "Use it after the design is agreed. It produces implementation steps and checks that can be reviewed before code changes start."
+        },
+        {
+          "question": "How does its TDD workflow handle a regression?",
+          "answer": "For applicable behavior changes, first observe the failing test, implement the smallest fix, then run the test again and review the resulting change."
+        },
+        {
+          "question": "Does every task need a separate agent?",
+          "answer": "No. Follow the host’s supported execution path. The upstream suite also documents inline execution for approved plans."
+        },
+        {
+          "question": "What does verification before completion require?",
+          "answer": "Run the relevant checks against the current work and report the evidence. Keep any skipped checks or failed conditions in the handoff."
+        },
+        {
+          "question": "Is there a separate guide for debugging?",
+          "answer": "Yes. The marketplace’s Systematic Debugging guide covers root-cause investigation. The suite page explains how that investigation fits into planning and verification."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Superpowers：编程 Agent 的实施计划、测试与验收",
+      "seoDescription": "在 Codex 或 Claude Code 中使用 Superpowers，把已批准的设计拆成文件级计划，通过回归测试和当前运行结果核验改动。",
+      "description": "Superpowers 是可安装的编程 Agent 工作流。它把设计决策、实施计划、测试先行和验收证据连起来，让每次改动都能按约定条件复核。",
+      "kind": "编程 Agent 工作流插件",
+      "overviewTitle": "关于 Superpowers",
+      "overview": [
+        "Jesse Vincent（obra）发布的 Superpowers 是一套编程 Agent 工作流插件，支持 Codex、Claude Code 等宿主。从澄清设计到测试和审阅补丁，各个 Skill 在工作进入对应阶段时发挥作用。",
+        "Writing Plans 把获准的设计拆成文件级任务、实现说明和验证命令。Test-Driven Development 对适用的行为变更要求先观察到测试失败，再验证修复。Verification Before Completion 要求在声称成功前取得新的运行证据。",
+        "代码编辑、终端和委派能力由宿主提供。先限定仓库任务、测试命令和权限范围，再把计划、差异和验证结果一并交接，供复核人检查。"
+      ],
+      "capabilitiesTitle": "Superpowers 怎样串联开发步骤",
+      "capabilitiesIntro": "从已批准的设计开始，根据仓库任务的当前阶段选择工作流。把计划中的检查条件和实际运行结果放在一起，便于复核实施过程。",
+      "capabilities": [
+        {
+          "title": "拆分实施计划",
+          "description": "把设计写成文件级步骤，标注相关测试和可以观察的验收条件。"
+        },
+        {
+          "title": "用测试推进变更",
+          "description": "针对行为变更先写出能复现问题的测试，再做最小修复，重跑测试并检查差异。"
+        },
+        {
+          "title": "完成前实际核验",
+          "description": "声称任务完成前重跑必要检查，将命令、结果和跳过的事项一并交接。"
+        }
+      ],
+      "useCases": {
+        "title": "Superpowers 的编程工作流场景",
+        "description": "先明确可以检查的验收条件。设计计划、问题复现、行为测试和发布交接各需要不同的证据，按当前阶段选择合适的工作入口。",
+        "items": [
+          {
+            "title": "把设计转成实施计划",
+            "description": "提供已批准的新接口设计和仓库的测试约定，让 Writing Plans 列出文件、接口、首个失败测试和验收条件，供工程师先核对改动范围。"
+          },
+          {
+            "title": "先复现缺陷再修复",
+            "description": "提供失败样例及预期行为，让 Agent 先记录失败结果，再做有针对性的修复并确认回归测试通过。把两次命令和结果留在补丁说明里。"
+          },
+          {
+            "title": "协调多个相关步骤",
+            "description": "为同时涉及配置和代码的改动提供已审阅的计划。按顺序执行，宿主支持时才安排委派，并记录能证明各部分仍能一起工作的检查。"
+          },
+          {
+            "title": "核验提交评审的材料",
+            "description": "请 Agent 对当前分支运行约定的构建和测试，交付实际输出、跳过项和差异摘要，让复核人区分已验证的行为与待解决的问题。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "运行 Superpowers 前的准备",
+        "description": "先在上游文档支持的宿主安装套件，再提供 Agent 可以访问的仓库和测试命令。涉及文件改动时先核对获准的范围。",
+        "items": [
+          {
+            "title": "支持的宿主",
+            "description": "通过文档列出的 Codex 或 Claude Code 插件渠道安装，并确认套件在当前会话启用。"
+          },
+          {
+            "title": "仓库与测试工具",
+            "description": "提供经核准的工作区和测试命令。需要委派时，另行确认宿主支持的方式。"
+          },
+          {
+            "title": "明确改动范围",
+            "description": "说明可修改的文件范围和交付前必须通过的检查。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "哪些编程 Agent 可以使用 Superpowers？",
+          "answer": "官方仓库提供 Codex、Claude Code 等宿主的安装方法。按自己的宿主和版本选择对应步骤。"
+        },
+        {
+          "question": "Writing Plans 在哪个阶段使用？",
+          "answer": "设计确认后使用。它输出可逐项复核的实施步骤和检查命令，便于先看清范围再改代码。"
+        },
+        {
+          "question": "TDD 工作流怎样验证回归修复？",
+          "answer": "对适用的行为变更先观察测试失败，再做最小修复，重跑测试并复核结果。"
+        },
+        {
+          "question": "每项工作都要委派给其他 Agent 吗？",
+          "answer": "可以按宿主提供的能力选择。上游也为已批准的计划提供在当前会话按步骤执行的方式。"
+        },
+        {
+          "question": "完成前核验需要哪些证据？",
+          "answer": "对当前改动重跑相关检查，并在交接时保留实际证据、跳过项和失败条件。"
+        },
+        {
+          "question": "系统化调试有单独指南吗？",
+          "answer": "有。市场的 Systematic Debugging 指南聚焦根因调查，套件页解释调查结果如何进入计划与验证。"
+        }
+      ]
+    }
   }
 ]
