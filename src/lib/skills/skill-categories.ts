@@ -4,6 +4,7 @@ import { FEATURED_SKILLS, skillPath, type SkillLocale } from "@/lib/skills/featu
 import { PUBLISHER_HANDLES, getPublisherDirectory } from "@/lib/skills/publisher-directories";
 import { getProjectForSource, projectPath } from "@/lib/projects/project-pages";
 import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
+import { isMarketplaceRepository } from "./marketplace-repository-review";
 
 import { getResourceTaxonomy, getResourceGuide, projectResourceId, resourceCategoryPath, RESOURCE_CATEGORY_SLUGS } from "./resource-taxonomy";
 
@@ -108,7 +109,7 @@ export function getCategorySkills(slug: string, locale: SkillLocale) {
   return getCategoryResources(slug, locale).filter((entry) => entry.entryType === "skill");
 }
 
-/** One catalog shared by the store and category pages; entries keep their original sources. */
+/** Inventory used to validate sources and retained reference pages. */
 export function getSkillCatalog(locale: SkillLocale) {
   return [...catalog.values()].map((skill) => ({
     id: skill.id,
@@ -126,7 +127,7 @@ export function getSkillCatalog(locale: SkillLocale) {
 }
 
 /** Store entries include independent publisher projects as well as Skills. */
-export function getStoreCatalog(locale: SkillLocale) {
+export function getCatalogInventory(locale: SkillLocale) {
   const skills = getSkillCatalog(locale).map((entry) => ({ ...entry, entryType: "skill" as const, kind: "Skill" }));
   const projects = PUBLISHER_PROFILE_HANDLES.flatMap((handle) => {
     const profile = getPublisherProfile(handle)!;
@@ -153,4 +154,35 @@ export function getStoreCatalog(locale: SkillLocale) {
   });
   projects.sort((a, b) => Number(b.href.startsWith("/")) - Number(a.href.startsWith("/")));
   return [...projects, ...skills];
+}
+
+/** One public catalog for the marketplace, publisher works and task categories. */
+export function getStoreCatalog(locale: SkillLocale) {
+  const entries = getCatalogInventory(locale).filter((entry) => (
+    (entry.entryType === "project" || entry.hasLocalGuide)
+    && isMarketplaceRepository(entry.sourceUrl, entry.entryType)
+  ));
+  const projectTargets = new Set(entries.filter((entry) => entry.entryType === "project").map((entry) => entry.href));
+  return entries.filter((entry) => entry.entryType === "project" || !projectTargets.has(entry.href));
+}
+
+/** Approved profiles with no current work in the public catalog. */
+export function getReferencePublishers(locale: SkillLocale) {
+  const active = new Set(getStoreCatalog(locale).map((entry) => entry.authorHandle));
+  return PUBLISHER_PROFILE_HANDLES.filter((handle) => !active.has(handle)).map((handle) => ({
+    label: getPublisherProfile(handle)!.name,
+    href: publisherProfilePath(locale, handle),
+  }));
+}
+
+/** Deduplicate shared canonical guides and omit entries with only an upstream URL. */
+export function getPublisherReferences(handle: string, locale: SkillLocale) {
+  const active = new Set(getStoreCatalog(locale).map((entry) => entry.href));
+  const references = new Map<string, { label: string; href: string }>();
+  for (const entry of getCatalogInventory(locale)) {
+    if (entry.authorHandle === handle && entry.href.startsWith("/") && !active.has(entry.href) && !references.has(entry.href)) {
+      references.set(entry.href, { label: entry.name, href: entry.href });
+    }
+  }
+  return [...references.values()];
 }

@@ -43,6 +43,9 @@ jobs:
 
       - run: npm run build
 
+      - name: Check rendered marketplace links and reachability
+        run: python3 scripts/check_marketplace_taxonomy.py
+
   image:
     name: Docker image
     runs-on: ubuntu-latest

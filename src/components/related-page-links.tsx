@@ -8,6 +8,7 @@ export function RelatedPageLinks({ family, currentId, locale, title, intro }: { 
   const heading = title ?? related.heading;
   const description = intro ?? related.description;
   const items = related.items;
+  if (items.length === 0) return null;
 
   return (
     <section aria-label={heading} className="px-5 py-14 sm:px-8 sm:py-16">

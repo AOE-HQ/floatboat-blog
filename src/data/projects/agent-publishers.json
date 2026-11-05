@@ -3244,5 +3244,977 @@
         "href": "/zh/skills-marketplace/categories"
       }
     }
+  },
+  "karpathy": {
+    "name": "Andrej Karpathy",
+    "type": "Person",
+    "profileUrl": "https://github.com/karpathy",
+    "logo": "/blog/brand/publishers/karpathy.webp",
+    "tags": {
+      "en": [
+        "LLM research",
+        "Agent experiments",
+        "Knowledge bases"
+      ],
+      "zh": [
+        "语言模型研究",
+        "Agent 实验",
+        "知识库"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/karpathy",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Autoresearch",
+        "url": "https://github.com/karpathy/autoresearch",
+        "en": {
+          "kind": "Agent research software",
+          "description": "Run single-GPU model experiments with a coding agent, then compare changes under a fixed training budget."
+        },
+        "zh": {
+          "kind": "Agent 研究软件",
+          "description": "让编程 Agent 在单张 GPU 上运行模型训练实验，并在固定训练预算下比较改动效果。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Andrej Karpathy: Autoresearch and the LLM Wiki",
+      "seoDescription": "Explore Andrej Karpathy’s Autoresearch project for Agent-run model experiments and his original LLM Wiki design for maintaining linked Markdown knowledge.",
+      "heroTitle": "Andrej Karpathy",
+      "heroDescription": "Andrej Karpathy publishes practical ways to work with language models, from single-GPU experiments run by coding agents to a Markdown wiki an agent can maintain over time.",
+      "overview": {
+        "title": "About Andrej Karpathy",
+        "paragraphs": [
+          "Karpathy’s public work spans language model training and the workflows that make models useful. Autoresearch gives a coding agent a training script to modify, a fixed time budget, and an evaluation metric. The resulting log and Git history let a researcher compare proposed changes with measured outcomes.",
+          "LLM Wiki takes a different approach to persistent knowledge. A file-capable agent reads source documents, writes linked Markdown pages, and updates existing pages when new evidence changes an earlier conclusion. Karpathy published the design as a Gist. Readers can use it to specify a wiki in their own workspace."
+        ]
+      },
+      "aboutTitle": "About Andrej Karpathy",
+      "about": "Karpathy’s public work spans language model training and the workflows that make models useful. Autoresearch gives a coding agent a training script to modify, a fixed time budget, and an evaluation metric. The resulting log and Git history let a researcher compare proposed changes with measured outcomes.",
+      "projectsTitle": "Autoresearch: Agent-Run Training Experiments",
+      "projectsIntro": "The upstream project shows how an agent can iterate against a fixed training budget. Its experiment instructions specify what to change and how to record successful and failed runs.",
+      "skillsTitle": "Agent Skills by Andrej Karpathy",
+      "skillsIntro": "Find published task instructions with documented host support.",
+      "faq": [
+        {
+          "question": "What does Autoresearch actually run?",
+          "answer": "A coding agent edits the training script, runs short model-training experiments, and logs the results. The default comparison metric is validation bits per byte."
+        },
+        {
+          "question": "What do I need to try the upstream experiment?",
+          "answer": "The official setup calls for a single NVIDIA GPU, Python 3.10 or later, and uv. The README lists community ports separately."
+        },
+        {
+          "question": "Which agents does Autoresearch document?",
+          "answer": "The README names Codex and Claude. Start the agent in the repository and give it the experiment instructions after confirming a baseline run works."
+        },
+        {
+          "question": "How do I compare Autoresearch results?",
+          "answer": "Keep the data, evaluation setup, GPU, and per-run budget fixed. Compare validation bits per byte and check the change history before accepting a result."
+        },
+        {
+          "question": "What did Karpathy publish as LLM Wiki?",
+          "answer": "He shared a design for building and maintaining a personal wiki with an agent. The original Gist describes the file layout, update routine, and role of source material."
+        },
+        {
+          "question": "Does LLM Wiki require Obsidian?",
+          "answer": "Karpathy uses Obsidian to browse the wiki. An agent can maintain the underlying linked Markdown in a workspace where it can read the sources and edit the wiki."
+        }
+      ],
+      "ctaTitle": "Build a Knowledge Base With the LLM Wiki Pattern",
+      "ctaDescription": "Read how source documents, linked pages, and agent updates fit into a persistent Markdown knowledge base.",
+      "ctaPrimary": {
+        "label": "Read Karpathy’s LLM Wiki design",
+        "href": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+      }
+    },
+    "zh": {
+      "seoTitle": "Andrej Karpathy：Autoresearch 自动实验与 LLM Wiki",
+      "seoDescription": "了解 Andrej Karpathy 如何用 Autoresearch 让编程 Agent 执行模型训练实验，以及如何用 LLM Wiki 维护可持续更新的 Markdown 知识库。",
+      "heroTitle": "Andrej Karpathy",
+      "heroDescription": "Andrej Karpathy 公开了两种使用语言模型的方法：让编程 Agent 在单卡环境反复执行训练实验，以及让 Agent 持续维护相互链接的 Markdown 知识库。",
+      "overview": {
+        "title": "关于 Andrej Karpathy",
+        "paragraphs": [
+          "Karpathy 的公开作品涵盖语言模型训练，以及怎样把模型用到具体工作中。在 Autoresearch 中，编程 Agent 有一份可以改动的训练脚本、一段固定的训练时间和一个评价指标。研究者可以结合实验日志与 Git 历史，核对哪些改动带来了可测量的变化。",
+          "LLM Wiki 关注知识的长期维护。能操作文件的 Agent 从原始资料提取信息，生成互相引用的 Markdown 页面，并在新证据出现时修订已有条目。Karpathy 通过 GitHub Gist 公开了这套设计，读者可以用它来定义自己工作区里的知识库。"
+        ]
+      },
+      "aboutTitle": "关于 Andrej Karpathy",
+      "about": "Karpathy 的公开作品涵盖语言模型训练，以及怎样把模型用到具体工作中。在 Autoresearch 中，编程 Agent 有一份可以改动的训练脚本、一段固定的训练时间和一个评价指标。研究者可以结合实验日志与 Git 历史，核对哪些改动带来了可测量的变化。",
+      "projectsTitle": "Autoresearch：由 Agent 执行的训练实验",
+      "projectsIntro": "上游项目展示了 Agent 如何在固定训练预算下迭代。仓库中的实验指引说明了可改动的范围，以及怎样记录成功和失败的运行。",
+      "skillsTitle": "Andrej Karpathy 的 Agent Skills",
+      "skillsIntro": "查看有宿主支持说明的任务指引。",
+      "faq": [
+        {
+          "question": "Autoresearch 实际执行什么？",
+          "answer": "编程 Agent 修改训练脚本，运行短时模型训练并记录结果。默认用验证集每字节比特数衡量效果。"
+        },
+        {
+          "question": "试跑官方实验需要什么？",
+          "answer": "官方配置需要单张 NVIDIA GPU、Python 3.10 或更新版本以及 uv。README 单独列出了社区移植版本。"
+        },
+        {
+          "question": "Autoresearch 文档提到了哪些 Agent？",
+          "answer": "README 提到了 Codex 和 Claude。先确认基线训练能运行，再从仓库中启动 Agent，并提供实验指引。"
+        },
+        {
+          "question": "怎样比较 Autoresearch 的实验结果？",
+          "answer": "固定数据、评估设置、GPU 和每次训练的时间预算，比较验证集每字节比特数，再核对改动记录。"
+        },
+        {
+          "question": "Karpathy 发布的 LLM Wiki 是什么？",
+          "answer": "它是一份关于如何由 Agent 建立和维护个人知识库的设计说明。原始 Gist 介绍了文件结构、更新流程和源资料的角色。"
+        },
+        {
+          "question": "做 LLM Wiki 一定要用 Obsidian 吗？",
+          "answer": "Karpathy 用 Obsidian 浏览知识库。只要工作区允许 Agent 读取原始资料并编辑知识库，也可以用其他工具查看这些 Markdown 页面。"
+        }
+      ],
+      "ctaTitle": "用 LLM Wiki 方法搭建知识库",
+      "ctaDescription": "了解如何把原始资料、互相链接的页面和 Agent 的日常更新组织成一个长期可用的 Markdown 知识库。",
+      "ctaPrimary": {
+        "label": "阅读 Karpathy 的 LLM Wiki 原文",
+        "href": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+      }
+    }
+  },
+  "sherlock-project": {
+    "name": "Sherlock Project",
+    "type": "Organization",
+    "profileUrl": "https://github.com/sherlock-project",
+    "logo": "/blog/brand/publishers/sherlock-project.webp",
+    "tags": {
+      "en": [
+        "OSINT",
+        "Command-line tools"
+      ],
+      "zh": [
+        "公开信息检索",
+        "命令行工具"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://sherlockproject.xyz/",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      },
+      {
+        "href": "https://github.com/sherlock-project",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Sherlock",
+        "url": "https://github.com/sherlock-project/sherlock",
+        "en": {
+          "kind": "Username Search CLI",
+          "description": "Check approved usernames across supported sites, export public candidate links, and review them against account records."
+        },
+        "zh": {
+          "kind": "用户名搜索 CLI",
+          "description": "在受支持的网站查询获准的用户名，导出公开候选链接，再与账号台账交叉核对。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Sherlock Project: Open-Source Username Search Maintainers",
+      "seoDescription": "Meet Sherlock Project, the maintainers of the username-search CLI. Find its official sources, site coverage, and a guide to agent-assisted account checks.",
+      "heroTitle": "Sherlock Project",
+      "heroDescription": "Sherlock Project maintains the open-source Sherlock CLI, with site rules and exports for authorized checks of public username matches.",
+      "aboutTitle": "About Sherlock Project",
+      "about": "Sherlock Project maintains the Sherlock username-search CLI on GitHub alongside its site rules, installation notes, and contributor guidance. Siddharth Dushantha created Sherlock, and contributors update checks as websites change.",
+      "overview": {
+        "title": "About Sherlock Project",
+        "paragraphs": [
+          "Sherlock Project maintains the Sherlock username-search CLI on GitHub alongside its site rules, installation notes, and contributor guidance. Siddharth Dushantha created Sherlock, and contributors update checks as websites change.",
+          "The official repository records the license, site catalog, and version changes. The project documentation covers installation and how to contribute fixes when a site rule stops working."
+        ]
+      },
+      "projectsTitle": "Open-Source Tools from Sherlock Project",
+      "projectsIntro": "The Sherlock guide explains how to scope a run, save the candidate links, and hand the results to the account owner for verification.",
+      "skillsTitle": "Agent Skills from Sherlock Project",
+      "skillsIntro": "Explore task instructions with documented host support.",
+      "faq": [
+        {
+          "question": "Who created Sherlock?",
+          "answer": "The upstream repository credits Siddharth Dushantha as the creator. The Sherlock Project organization hosts the official repository and contributor documentation."
+        },
+        {
+          "question": "Where should I get installation instructions?",
+          "answer": "Start from the official installation documentation and select the Python packaging or container option that fits your environment."
+        },
+        {
+          "question": "Where can I check which sites are supported?",
+          "answer": "Use the official supported-site list to check whether your target platforms are in scope before preparing a run."
+        },
+        {
+          "question": "How do I report a broken site rule?",
+          "answer": "Review the official repository’s issues and contribution notes. Describe the affected site and reproducible behavior using test data you are authorized to share."
+        },
+        {
+          "question": "What license does the project use?",
+          "answer": "The repository includes an MIT license file. Check the original terms before redistributing or modifying the software."
+        },
+        {
+          "question": "How does the site catalog relate to a search result?",
+          "answer": "The catalog defines which sites Sherlock knows how to check. An individual result also depends on the username, site response, and check used for that platform."
+        }
+      ],
+      "ctaTitle": "Start With an Authorized Username",
+      "ctaDescription": "See how to bound a Sherlock search, export the candidates, and verify the resulting links.",
+      "ctaPrimary": {
+        "label": "Read the Sherlock project guide",
+        "href": "/skills-marketplace/sherlock-project/sherlock"
+      }
+    },
+    "zh": {
+      "seoTitle": "Sherlock Project：用户名搜索工具与开源维护团队",
+      "seoDescription": "了解 Sherlock Project 如何维护公开用户名搜索 CLI 和网站检查规则，并查看 Sherlock 的 Agent 查询与结果核验指南。",
+      "heroTitle": "Sherlock Project",
+      "heroDescription": "维护开源用户名搜索工具 Sherlock，提供公开账号查询、站点规则和可导出的候选结果。",
+      "aboutTitle": "关于 Sherlock Project",
+      "about": "Sherlock Project 在 GitHub 维护同名用户名查询工具，以及站点支持、安装和贡献说明。项目由 Siddharth Dushantha 创建，社区贡献者随网站变化更新检查规则。",
+      "overview": {
+        "title": "关于 Sherlock Project",
+        "paragraphs": [
+          "Sherlock Project 在 GitHub 维护同名用户名查询工具，以及站点支持、安装和贡献说明。项目由 Siddharth Dushantha 创建，社区贡献者随网站变化更新检查规则。",
+          "官方仓库集中提供当前许可、站点清单与版本信息。需要核对安装方式或提交站点规则问题时，可以从项目文档开始。"
+        ]
+      },
+      "projectsTitle": "Sherlock Project 的开源工具",
+      "projectsIntro": "从 Sherlock 的命令行指南了解怎样限定查询网站、保存候选链接，再由账号负责人核对归属。",
+      "skillsTitle": "Sherlock Project 的 Agent Skills",
+      "skillsIntro": "查看可在指定 Agent 宿主运行的任务指引。",
+      "faq": [
+        {
+          "question": "谁创建了 Sherlock？",
+          "answer": "官方仓库将 Siddharth Dushantha 列为创建者。Sherlock Project 组织托管官方仓库和维护文档。"
+        },
+        {
+          "question": "从哪里安装 Sherlock？",
+          "answer": "从 Sherlock Project 官网打开安装文档，按当前环境选择适用的 Python 包管理器或容器方式。"
+        },
+        {
+          "question": "哪里可以查支持的网站？",
+          "answer": "官方站点清单列出了工具支持的网站。开始核查前，可以先确认目标平台是否在列。"
+        },
+        {
+          "question": "怎么报告网站规则失效？",
+          "answer": "在官方仓库查看现有问题和贡献说明，提供受影响的网站与可重现的行为，并使用获准分享的测试数据。"
+        },
+        {
+          "question": "项目采用什么许可？",
+          "answer": "官方仓库提供 MIT 许可证文件。分发或修改前可直接查阅原文。"
+        },
+        {
+          "question": "站点清单与查询结果有什么区别？",
+          "answer": "清单说明工具支持哪些网站。某次查询的结果还取决于用户名、网站响应和对应的检查规则。"
+        }
+      ],
+      "ctaTitle": "从一个获准的用户名开始",
+      "ctaDescription": "查看 Sherlock 的查询范围、导出选项和候选链接核验方式。",
+      "ctaPrimary": {
+        "label": "查看 Sherlock 项目指南",
+        "href": "/zh/skills-marketplace/sherlock-project/sherlock"
+      }
+    }
+  },
+  "k-dense-ai": {
+    "name": "K-Dense AI",
+    "type": "Organization",
+    "profileUrl": "https://github.com/K-Dense-AI",
+    "logo": "/blog/brand/publishers/k-dense-ai.webp",
+    "tags": {
+      "en": [
+        "Scientific computing",
+        "Data analysis",
+        "Agent Skills"
+      ],
+      "zh": [
+        "科学计算",
+        "数据分析",
+        "Agent Skills"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/K-Dense-AI",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Scientific Agent Skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "en": {
+          "kind": "Scientific Agent Skills Suite",
+          "description": "Install research Skills for data inspection, statistical analysis, visualization, and writing in Codex, Cursor, and other supported hosts."
+        },
+        "zh": {
+          "kind": "科研 Agent Skills 套件",
+          "description": "在 Codex、Cursor 等宿主安装科研 Skills，执行数据检查、统计分析、可视化和科研写作。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "K-Dense AI: Scientific Agent Skills and Data Analysis",
+      "seoDescription": "Explore K-Dense AI’s Scientific Agent Skills repository for data inspection, statistics, and research writing. Check installation and dependencies for Codex, Cursor, and other hosts.",
+      "heroTitle": "K-Dense AI",
+      "heroDescription": "K-Dense AI maintains Scientific Agent Skills for Codex, Cursor, and other hosts. The collection covers data inspection, statistical analysis, visualization, and research writing.",
+      "aboutTitle": "About K-Dense AI",
+      "about": "K-Dense AI maintains Scientific Agent Skills, an installable collection for research work. The repository covers exploratory analysis, statistical method selection, visualization, and scientific writing. Start with the inputs you have and the deliverable you need, then check the requirements of the selected Skill.",
+      "overview": {
+        "title": "About K-Dense AI",
+        "paragraphs": [
+          "K-Dense AI maintains Scientific Agent Skills, an installable collection for research work. The repository covers exploratory analysis, statistical method selection, visualization, and scientific writing. Start with the inputs you have and the deliverable you need, then check the requirements of the selected Skill.",
+          "Local data inspection is a practical starting point. The exploratory data analysis Skill includes scripts that summarize supported CSV, TSV, and JSON files. Skills that call databases or APIs have separate access and data-handling requirements."
+        ]
+      },
+      "projectsTitle": "K-Dense AI’s Scientific Agent Skills Repository",
+      "projectsIntro": "Use the upstream catalog to select an installable research workflow. Check its input formats, tool dependencies, and output checks before running it on research data.",
+      "skillsTitle": "Research Skills from K-Dense AI",
+      "skillsIntro": "Find verified Skill guides for specific research tasks.",
+      "faq": [
+        {
+          "question": "Which task makes a good first run?",
+          "answer": "Choose an authorized local CSV, TSV, or JSON file. Use the exploratory data analysis Skill to check file structure and missingness, then inspect what the summary actually covered."
+        },
+        {
+          "question": "Which hosts can install the collection?",
+          "answer": "The upstream installation guide documents hosts including Codex, Cursor, and Claude Code. Follow the instructions for your host and confirm the selected Skill is visible in the session."
+        },
+        {
+          "question": "Do I need to install every Skill?",
+          "answer": "Select the Skills that fit the task. Check the manifest, scripts, and dependencies for each one before adding tools to a research workspace."
+        },
+        {
+          "question": "Do the Skills need network access?",
+          "answer": "The exploratory data analysis Skill includes core scripts that run locally. Workflows that query an external database or service may require network access, credentials, and data permissions."
+        },
+        {
+          "question": "Does the repository license cover every Skill?",
+          "answer": "The repository uses the MIT license. Individual Skills may list different terms. Check the license field in the selected Skill’s SKILL.md before reuse."
+        },
+        {
+          "question": "How do I review a data inspection report?",
+          "answer": "Compare its coverage with the approved input files and supported formats. Exploratory summaries can identify missingness and anomalies. Formal research conclusions need their own checks."
+        }
+      ],
+      "ctaTitle": "Choose a Skill for Your Research Task",
+      "ctaDescription": "Find the upstream instructions for data inspection, study design, or statistical analysis. Review the inputs and requirements of the Skill you select.",
+      "ctaPrimary": {
+        "label": "Browse the official Scientific Agent Skills catalog",
+        "href": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/skills.md"
+      }
+    },
+    "zh": {
+      "seoTitle": "K-Dense AI：科研 Agent Skills、数据分析与工作流",
+      "seoDescription": "了解 K-Dense AI 的 Scientific Agent Skills 主仓，按数据检查、统计分析和科研写作选择 Skill，并核对 Codex、Cursor 等宿主的安装条件。",
+      "heroTitle": "K-Dense AI",
+      "heroDescription": "K-Dense AI 维护 Scientific Agent Skills，为 Codex、Cursor 等宿主提供可安装的科研任务指引，覆盖数据检查、统计分析、图表和科研写作。",
+      "aboutTitle": "关于 K-Dense AI",
+      "about": "K-Dense AI 维护 Scientific Agent Skills，将科研任务拆成可安装的 Agent 工作流。主仓覆盖探索性数据分析、统计方法选择、可视化和科研写作。可以按手头的输入和预期产物挑选具体 Skill，再核对该任务的环境和许可。",
+      "overview": {
+        "title": "关于 K-Dense AI",
+        "paragraphs": [
+          "K-Dense AI 维护 Scientific Agent Skills，将科研任务拆成可安装的 Agent 工作流。主仓覆盖探索性数据分析、统计方法选择、可视化和科研写作。可以按手头的输入和预期产物挑选具体 Skill，再核对该任务的环境和许可。",
+          "本地数据检查是一个起点。探索性数据分析 Skill 附带脚本，可对受支持的 CSV、TSV 和 JSON 做汇总检查。需要数据库或外部 API 的工作流则应单独确认账号、访问范围和数据去向。"
+        ]
+      },
+      "projectsTitle": "K-Dense AI 的科研 Skills 主仓",
+      "projectsIntro": "从官方仓库查看可安装的科研任务集合。选定分析任务后，继续核对对应 Skill 的输入格式、工具依赖和结果检查方式。",
+      "skillsTitle": "K-Dense AI 的科研 Skills",
+      "skillsIntro": "按具体科研任务查看已核实的 Skill 指南。",
+      "faq": [
+        {
+          "question": "第一次使用可以从什么任务开始？",
+          "answer": "可以选一份获准使用的本地 CSV、TSV 或 JSON，使用探索性数据分析 Skill 检查文件结构和缺失情况，再核对汇总报告覆盖了哪些数据。"
+        },
+        {
+          "question": "哪些宿主可以安装这套科研 Skills？",
+          "answer": "上游安装说明列出了 Codex、Cursor 和 Claude Code 等宿主。选择对应宿主的安装方式，再确认当前会话可发现所选 Skill。"
+        },
+        {
+          "question": "需要安装整个集合吗？",
+          "answer": "可以按任务选装。先定位要用的 Skill，再核对它的清单、脚本和依赖，避免给一次数据检查引入无关工具。"
+        },
+        {
+          "question": "运行这些 Skills 都需要联网吗？",
+          "answer": "探索性数据分析 Skill 的核心脚本可本地运行。调用外部数据库或服务的 Skill 可能需要网络、凭据和数据访问权限。"
+        },
+        {
+          "question": "主仓和每项 Skill 都采用相同许可吗？",
+          "answer": "主仓采用 MIT 许可。具体 Skill 可能另有许可或附加条款，使用前查阅其 SKILL.md 中的许可字段。"
+        },
+        {
+          "question": "怎样判断数据检查报告是否足够？",
+          "answer": "对照输入范围、格式和报告中的覆盖限制。探索性汇总可以提示缺失、异常或后续分析方向，正式研究结论仍需按相应方法验证。"
+        }
+      ],
+      "ctaTitle": "按科研任务选择 Skill",
+      "ctaDescription": "在上游目录中查找数据检查、实验设计或统计分析的指引，再核对具体 Skill 的输入要求和运行条件。",
+      "ctaPrimary": {
+        "label": "查看官方科研 Skills 清单",
+        "href": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/skills.md"
+      }
+    }
+  },
+  "openclaw": {
+    "name": "OpenClaw Foundation",
+    "type": "Organization",
+    "profileUrl": "https://github.com/openclaw",
+    "logo": "/blog/brand/publishers/openclaw.webp",
+    "tags": {
+      "en": [
+        "Agent runtimes",
+        "Automation"
+      ],
+      "zh": [
+        "Agent 运行环境",
+        "自动化"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/openclaw",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "OpenClaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "en": {
+          "kind": "Agent software",
+          "description": "Run bounded agent tasks through a headless CLI or a persistent Gateway session."
+        },
+        "zh": {
+          "kind": "Agent 软件",
+          "description": "通过无界面 CLI 或持续 Gateway 会话执行有边界的 Agent 任务。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "OpenClaw Foundation: Open-Source Agent Runtime Maintainers",
+      "seoDescription": "Meet the OpenClaw Foundation and find the official source, CLI documentation, and release channels for the OpenClaw agent runtime.",
+      "heroTitle": "OpenClaw Foundation",
+      "heroDescription": "The OpenClaw Foundation maintains the open-source OpenClaw runtime, its Gateway and command-line interfaces, and the community project around them.",
+      "aboutTitle": "About the OpenClaw Foundation",
+      "about": "Peter Steinberger started OpenClaw. The official repository now identifies the OpenClaw Foundation as the project’s maintainer and publishes the runtime under MIT.",
+      "overview": {
+        "title": "About the OpenClaw Foundation",
+        "paragraphs": [
+          "Peter Steinberger started OpenClaw. The official repository now identifies the OpenClaw Foundation as the project’s maintainer and publishes the runtime under MIT.",
+          "Follow the upstream release notes to see which CLI, Gateway, and channel behavior belongs to a particular version. The documentation keeps a standalone agent turn separate from a configured session or connected channel."
+        ]
+      },
+      "projectsTitle": "The OpenClaw Runtime",
+      "projectsIntro": "Find the CLI and Gateway guide, including how to choose a headless turn and check its output.",
+      "skillsTitle": "OpenClaw Foundation Skills",
+      "skillsIntro": "Browse documented task workflows.",
+      "faq": [
+        {
+          "question": "Who started OpenClaw?",
+          "answer": "Peter Steinberger started the project. The OpenClaw Foundation maintains the official repository today."
+        },
+        {
+          "question": "Where do I find the current release?",
+          "answer": "Use the GitHub release page and compare the release notes with your installed version."
+        },
+        {
+          "question": "Where is the official documentation?",
+          "answer": "The GitHub repository points to docs.openclaw.ai, which includes the command reference and installation paths."
+        },
+        {
+          "question": "What does the MIT license cover?",
+          "answer": "The official repository includes the MIT license and a separate third-party notices file for incorporated code."
+        },
+        {
+          "question": "Does the Foundation provide model access?",
+          "answer": "Runtime configuration and model access are separate. Check your chosen provider and the credentials needed by your setup."
+        },
+        {
+          "question": "How can I report a reproducible issue?",
+          "answer": "Check the upstream issue guidance and include the version, entry point and relevant output, with credentials and private inputs removed."
+        }
+      ],
+      "ctaTitle": "Read the OpenClaw CLI Guide",
+      "ctaDescription": "See how the project’s Gateway and headless command serve different automation needs.",
+      "ctaPrimary": {
+        "label": "Open the OpenClaw guide",
+        "href": "/skills-marketplace/openclaw/openclaw"
+      }
+    },
+    "zh": {
+      "seoTitle": "OpenClaw Foundation：开源 Agent 运行环境与维护团队",
+      "seoDescription": "了解 OpenClaw Foundation 的维护范围，从官方源码和版本说明核对 Gateway、无界面 CLI 与 Agent 执行环境。",
+      "heroTitle": "OpenClaw Foundation",
+      "heroDescription": "OpenClaw Foundation 维护开源 Agent 运行环境 OpenClaw，包括 Gateway、命令行接口和相应的社区项目。",
+      "aboutTitle": "关于 OpenClaw Foundation",
+      "about": "Peter Steinberger 创建了 OpenClaw。如今官方仓库由 OpenClaw Foundation 维护，运行环境采用 MIT 许可证。",
+      "overview": {
+        "title": "关于 OpenClaw Foundation",
+        "paragraphs": [
+          "Peter Steinberger 创建了 OpenClaw。如今官方仓库由 OpenClaw Foundation 维护，运行环境采用 MIT 许可证。",
+          "通过上游版本记录可以核对某个版本的 CLI、Gateway 和渠道能力。官方文档分别介绍独立 Agent 执行和已配置的会话或渠道。"
+        ]
+      },
+      "projectsTitle": "OpenClaw 运行环境",
+      "projectsIntro": "从项目指南了解 CLI 与 Gateway 的入口，选择适合的无界面执行方式并核对输出。",
+      "skillsTitle": "OpenClaw Foundation 的 Skills",
+      "skillsIntro": "查看有明确执行入口的任务指引。",
+      "faq": [
+        {
+          "question": "谁创建了 OpenClaw？",
+          "answer": "Peter Steinberger 创建了项目。现在官方仓库由 OpenClaw Foundation 维护。"
+        },
+        {
+          "question": "在哪里看当前版本？",
+          "answer": "到 GitHub Releases 查看正式版及预发布版，再与本地安装版本对照。"
+        },
+        {
+          "question": "官方文档在哪里？",
+          "answer": "官方仓库指向 docs.openclaw.ai，那里提供安装说明和命令参考。"
+        },
+        {
+          "question": "MIT 许可覆盖哪些内容？",
+          "answer": "官方仓库提供 MIT 许可证，并另附第三方声明，记录纳入的其他代码。"
+        },
+        {
+          "question": "Foundation 是否提供模型访问？",
+          "answer": "运行环境与模型访问需要分别配置。根据选定的供应商检查所需凭据。"
+        },
+        {
+          "question": "怎样报告可复现的问题？",
+          "answer": "遵循上游的问题提交说明，提供版本、使用入口和相关输出，并移除凭据和私有输入。"
+        }
+      ],
+      "ctaTitle": "查看 OpenClaw 命令行指南",
+      "ctaDescription": "了解何时使用 Gateway，以及怎样通过无界面命令执行一次可核验的任务。",
+      "ctaPrimary": {
+        "label": "打开 OpenClaw 指南",
+        "href": "/zh/skills-marketplace/openclaw/openclaw"
+      }
+    }
+  },
+  "affaan-m": {
+    "name": "Affaan Mustafa",
+    "type": "Person",
+    "profileUrl": "https://github.com/affaan-m",
+    "logo": "/blog/brand/publishers/affaan-m.webp",
+    "tags": {
+      "en": [
+        "Coding agents",
+        "Agent configuration"
+      ],
+      "zh": [
+        "编程 Agent",
+        "宿主配置"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/affaan-m",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "en": {
+          "kind": "Agent software",
+          "description": "Preview coding-agent setup, inspect host-specific hooks, and check installed configuration."
+        },
+        "zh": {
+          "kind": "Agent 软件",
+          "description": "预演编程 Agent 安装，查看各宿主的 Hooks 与实际配置。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Affaan Mustafa: ECC and Cross-Host Agent Configuration",
+      "seoDescription": "Explore Affaan Mustafa’s ECC toolkit, its versioned installer, and the host-specific hooks and Skills it packages for coding agents.",
+      "heroTitle": "Affaan Mustafa",
+      "heroDescription": "Affaan Mustafa publishes ECC, a toolkit for configuring coding agents and adding engineering workflows across multiple hosts.",
+      "aboutTitle": "About Affaan Mustafa",
+      "about": "Mustafa’s ECC repository brings installer tooling and reusable agent workflows together. The guided setup exposes different installation paths for Codex, Claude Code and Kimi Code.",
+      "overview": {
+        "title": "About Affaan Mustafa",
+        "paragraphs": [
+          "Mustafa’s ECC repository brings installer tooling and reusable agent workflows together. The guided setup exposes different installation paths for Codex, Claude Code and Kimi Code.",
+          "ECC’s published package, plugin marketplace records and GitHub release notes provide separate ways to identify a version. Use the current installation documentation to see what the selected host can configure or review."
+        ]
+      },
+      "projectsTitle": "ECC by Affaan Mustafa",
+      "projectsIntro": "Read the ECC guide for a scoped setup preview and checks to run before approving configuration changes.",
+      "skillsTitle": "Affaan Mustafa’s Agent Skills",
+      "skillsIntro": "Browse task-specific engineering guides.",
+      "faq": [
+        {
+          "question": "What does Affaan Mustafa publish?",
+          "answer": "His GitHub account hosts ECC, with a CLI installer, hooks, diagnostics, and reusable coding-agent workflows."
+        },
+        {
+          "question": "How can I verify the version?",
+          "answer": "Compare the package version you intend to run with the published release notes and upstream installation guide."
+        },
+        {
+          "question": "Which repository should I start with?",
+          "answer": "Use affaan-m/ECC as the canonical source for setup instructions, release notes, and host support."
+        },
+        {
+          "question": "How are hosts treated differently?",
+          "answer": "Codex uses its native plugin lifecycle. The guided Claude Code and managed Kimi Code paths have their own install scopes and capabilities."
+        },
+        {
+          "question": "Who approves a change to hook trust?",
+          "answer": "Use the review mechanism in the target host. A setup guide or proposed installation does not grant that approval."
+        },
+        {
+          "question": "Where are additional adapters documented?",
+          "answer": "The official repository describes the managed adapters separately from guided installation and lists the supported commands."
+        }
+      ],
+      "ctaTitle": "Preview ECC in a Test Workspace",
+      "ctaDescription": "Check the planned install destination and scope before adding a package or hook to a working environment.",
+      "ctaPrimary": {
+        "label": "Read the ECC project guide",
+        "href": "/skills-marketplace/affaan-m/ecc"
+      }
+    },
+    "zh": {
+      "seoTitle": "Affaan Mustafa：ECC 与跨宿主编程 Agent 配置",
+      "seoDescription": "了解 Affaan Mustafa 发布的 ECC，查看安装器、跨宿主配置差异、工程 Skills 和 Hooks 的核对入口。",
+      "heroTitle": "Affaan Mustafa",
+      "heroDescription": "Affaan Mustafa 发布 ECC，为多个编程 Agent 提供配置工具、工程任务指引与可核对的安装流程。",
+      "aboutTitle": "关于 Affaan Mustafa",
+      "about": "Mustafa 的 ECC 仓库将安装工具和可复用的 Agent 工作流放在一起。引导安装对 Codex、Claude Code 和 Kimi Code 分别提供相应路径。",
+      "overview": {
+        "title": "关于 Affaan Mustafa",
+        "paragraphs": [
+          "Mustafa 的 ECC 仓库将安装工具和可复用的 Agent 工作流放在一起。引导安装对 Codex、Claude Code 和 Kimi Code 分别提供相应路径。",
+          "正式软件包、插件市场记录和 GitHub 版本说明可用于对照版本。选择宿主后，回到当前安装文档确认哪些设置能由安装器处理，哪些需要在宿主里审核。"
+        ]
+      },
+      "projectsTitle": "Affaan Mustafa 发布的 ECC",
+      "projectsIntro": "查看 ECC 指南，先预演计划配置的范围，再核对哪些动作需要手动批准。",
+      "skillsTitle": "Affaan Mustafa 的 Agent Skills",
+      "skillsIntro": "查看面向具体工程任务的指南。",
+      "faq": [
+        {
+          "question": "Affaan Mustafa 发布了什么？",
+          "answer": "他的 GitHub 账号维护 ECC，包含安装器、Hooks、诊断和可复用的编程 Agent 工作流。"
+        },
+        {
+          "question": "怎样确认准备安装的版本？",
+          "answer": "把计划使用的软件包版本与官方发行说明和当前安装文档对照。"
+        },
+        {
+          "question": "应该从哪个仓库开始？",
+          "answer": "affaan-m/ECC 是安装说明、版本记录与宿主支持信息的官方入口。"
+        },
+        {
+          "question": "不同宿主的配置有何差异？",
+          "answer": "Codex 走原生插件流程。Claude Code 引导安装和 Kimi Code 托管安装有各自的范围和能力。"
+        },
+        {
+          "question": "谁批准 Hooks 的信任设置？",
+          "answer": "应在目标宿主里按其流程核对并授权。安装计划只说明将要进行的配置。"
+        },
+        {
+          "question": "其他适配器的文档在哪里？",
+          "answer": "官方仓库单独介绍托管适配器，并列出相应的命令与设置条件。"
+        }
+      ],
+      "ctaTitle": "在测试工作区预演 ECC",
+      "ctaDescription": "向实际工作环境添加软件包或 Hooks 前，先核对目标位置和配置范围。",
+      "ctaPrimary": {
+        "label": "阅读 ECC 项目指南",
+        "href": "/zh/skills-marketplace/affaan-m/ecc"
+      }
+    }
+  },
+  "garrytan": {
+    "name": "Garry Tan",
+    "type": "Person",
+    "profileUrl": "https://github.com/garrytan",
+    "logo": "/blog/brand/publishers/garrytan.webp",
+    "tags": {
+      "en": [
+        "Engineering workflows",
+        "QA automation"
+      ],
+      "zh": [
+        "工程流程",
+        "QA 自动化"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/garrytan",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      }
+    ],
+    "projects": [],
+    "en": {
+      "seoTitle": "Garry Tan: gstack Skills for Engineering Review and QA",
+      "seoDescription": "Explore Garry Tan’s gstack workflows and report-only QA Skill for reproducing defects, preserving evidence, and handing findings to engineers.",
+      "heroTitle": "Garry Tan",
+      "heroDescription": "Garry Tan publishes gstack, a collection of Claude Code workflows for product review, engineering, testing, and release. Its QA Reporter turns a scoped check into findings another engineer can replay.",
+      "aboutTitle": "About Garry Tan",
+      "about": "Garry Tan maintains gstack on his GitHub account. Its Skills give an agent defined responsibilities at different stages of software work, such as gathering QA evidence, reviewing a design, or preparing a release.",
+      "overview": {
+        "title": "About Garry Tan",
+        "paragraphs": [
+          "Garry Tan maintains gstack on his GitHub account. Its Skills give an agent defined responsibilities at different stages of software work, such as gathering QA evidence, reviewing a design, or preparing a release.",
+          "The QA workflows separate finding a problem from fixing it. QA Reporter records evidence and possible regression checks. The separate repair workflow can change code and tests when the user authorizes that work."
+        ]
+      },
+      "projectsTitle": "gstack Projects",
+      "projectsIntro": "Browse the tools supporting these workflows.",
+      "skillsTitle": "Garry Tan’s gstack Skill Guide",
+      "skillsIntro": "Start with the report-only workflow when you need an issue reproduced and handed off before anyone edits the product.",
+      "faq": [
+        {
+          "question": "Where is the official gstack source?",
+          "answer": "Use Garry Tan’s GitHub repository for the install instructions, source manifests, and current host support tiers."
+        },
+        {
+          "question": "Which host should I start with?",
+          "answer": "The upstream install table lists Claude Code as full support. The Codex CLI adapter is experimental, with different enforcement for safety hooks."
+        },
+        {
+          "question": "Can I keep QA separate from implementation?",
+          "answer": "Use QA Reporter for evidence and proposed regression checks. Run a separate approved repair task if you want code or test changes."
+        },
+        {
+          "question": "Can gstack check a CLI or an API?",
+          "answer": "Its QA documentation includes functional surfaces such as CLI commands and API routes. Choose a local fixture and describe the expected result before probing."
+        },
+        {
+          "question": "Where can I check platform differences?",
+          "answer": "Read the upstream install guide. Browser runs can use Aside on compatible Macs and the bundled browser on other supported setups."
+        },
+        {
+          "question": "Where are gstack updates announced?",
+          "answer": "Use the release and version information in the official repository. The install guide explains how to check registered installations before upgrading."
+        }
+      ],
+      "ctaTitle": "Start With a QA Report",
+      "ctaDescription": "Give the agent a test target and a narrow scope, then collect evidence a teammate can replay.",
+      "ctaPrimary": {
+        "label": "Read the QA Reporter guide",
+        "href": "/skills-marketplace/garrytan/qa-only"
+      }
+    },
+    "zh": {
+      "seoTitle": "Garry Tan：gstack 工程审查与 QA 工作流",
+      "seoDescription": "了解 Garry Tan 的 gstack 工程流程，以及如何用 QA Reporter 复现问题、保留证据并将发现交给开发者复核。",
+      "heroTitle": "Garry Tan",
+      "heroDescription": "Garry Tan 发布的 gstack 将产品审查、工程实施、测试和发布组织为 Claude Code 工作流。QA Reporter 可把一次限定范围的核验整理成可复现的问题报告。",
+      "aboutTitle": "关于 Garry Tan",
+      "about": "Garry Tan 在个人 GitHub 账号维护 gstack。它为产品设计评审、工程实施、质量核验和发布等环节提供职责明确的 Agent 工作流。",
+      "overview": {
+        "title": "关于 Garry Tan",
+        "paragraphs": [
+          "Garry Tan 在个人 GitHub 账号维护 gstack。它为产品设计评审、工程实施、质量核验和发布等环节提供职责明确的 Agent 工作流。",
+          "gstack 将 QA 取证与修复分开。QA Reporter 保留复现证据并提出回归测试建议。需要修改产品或测试时，可以另开一项已获授权的修复任务。"
+        ]
+      },
+      "projectsTitle": "gstack 项目",
+      "projectsIntro": "查看支持这些工作流的公开工具。",
+      "skillsTitle": "Garry Tan 的 gstack Skill 指南",
+      "skillsIntro": "如果问题需要先复现、再交给其他工程师处理，可以从只出报告的 QA 流程开始。",
+      "faq": [
+        {
+          "question": "在哪里查看 gstack 官方源码？",
+          "answer": "Garry Tan 的 GitHub 仓库提供安装文档、各 Skill 的清单和宿主支持等级。"
+        },
+        {
+          "question": "优先用哪个 Agent 宿主？",
+          "answer": "官方安装表将 Claude Code 标为完整支持。Codex CLI 适配仍是实验级，安全 Hooks 的约束方式也有区别。"
+        },
+        {
+          "question": "可以把 QA 和修复分开吗？",
+          "answer": "用 QA Reporter 保存证据并提出回归检查建议。要修改代码或测试时，再单独授权修复任务。"
+        },
+        {
+          "question": "能检查命令行或 API 吗？",
+          "answer": "官方 QA 文档覆盖命令行、API 等功能场景。执行前应选定本地测试数据并写清预期结果。"
+        },
+        {
+          "question": "在哪里查操作系统差异？",
+          "answer": "查看官方安装指南。满足条件的 Mac 可以使用 Aside；其他受支持环境可使用套件自带的浏览器。"
+        },
+        {
+          "question": "在哪里查看 gstack 更新？",
+          "answer": "从官方仓库查看发布记录和版本信息。安装指南也说明如何在更新前核对现有安装。"
+        }
+      ],
+      "ctaTitle": "先收集一份 QA 报告",
+      "ctaDescription": "给 Agent 一个明确目标和有限的测试范围，取得可以交给同事复现的证据。",
+      "ctaPrimary": {
+        "label": "阅读 QA Reporter 指南",
+        "href": "/zh/skills-marketplace/garrytan/qa-only"
+      }
+    }
+  },
+  "addyosmani": {
+    "name": "Addy Osmani",
+    "type": "Person",
+    "profileUrl": "https://github.com/addyosmani",
+    "logo": "/blog/brand/publishers/addyosmani.webp",
+    "tags": {
+      "en": [
+        "Web engineering",
+        "Browser verification"
+      ],
+      "zh": [
+        "Web 工程",
+        "浏览器验证"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/addyosmani",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      }
+    ],
+    "projects": [],
+    "en": {
+      "seoTitle": "Addy Osmani: Agent Skills for Web Engineering and Browser Tests",
+      "seoDescription": "Explore Addy Osmani’s engineering Skills and use the DevTools workflow to verify browser behavior, inspect failing requests, and capture evidence.",
+      "heroTitle": "Addy Osmani",
+      "heroDescription": "Addy Osmani’s Agent Skills cover the software lifecycle from requirements to verification. The DevTools browser-testing Skill turns runtime observations into evidence for an engineering decision.",
+      "aboutTitle": "About Addy Osmani",
+      "about": "Addy Osmani publishes Agent Skills for engineering workflows such as specification, implementation, testing and release. The repository provides both whole-pack installation and a path for installing selected Skills.",
+      "overview": {
+        "title": "About Addy Osmani",
+        "paragraphs": [
+          "Addy Osmani publishes Agent Skills for engineering workflows such as specification, implementation, testing and release. The repository provides both whole-pack installation and a path for installing selected Skills.",
+          "Browser Testing with DevTools focuses on what an application actually does while running in Chrome. The Skill uses a separately configured MCP server to inspect the live page, look for errors, and compare behavior before and after a change."
+        ]
+      },
+      "projectsTitle": "Engineering Tools",
+      "projectsIntro": "Review the software that supports the published workflows.",
+      "skillsTitle": "Addy Osmani’s Agent Skill Guide",
+      "skillsIntro": "Start with a workflow for collecting evidence from a running page. The guide covers the required DevTools connection and how to keep it scoped to your test browser.",
+      "faq": [
+        {
+          "question": "Where is the official collection?",
+          "answer": "The addyosmani/agent-skills GitHub repository contains the Skill manifests, plugin information, and host setup instructions."
+        },
+        {
+          "question": "Can I install a single Skill?",
+          "answer": "The repository documents selection through the Skills CLI. A single-Skill install does not include shared root-level reference checklists."
+        },
+        {
+          "question": "Is the Chrome DevTools MCP server included?",
+          "answer": "The Skill’s installation and the MCP server setup are separate. Configure the server in a supported host before using its browser tools."
+        },
+        {
+          "question": "What does the browser guide help me verify?",
+          "answer": "Use it to reproduce a live browser issue, inspect console and network evidence, and compare the same interaction before and after a fix."
+        },
+        {
+          "question": "Where do I check host-specific commands?",
+          "answer": "Use the upstream setup documentation for your host. Plugin and command conventions differ between Claude Code, Codex, and other clients."
+        },
+        {
+          "question": "How does the project publish changes?",
+          "answer": "Check the repository releases and the selected Skill’s manifest when a workflow or dependency changes."
+        }
+      ],
+      "ctaTitle": "Check Behavior in a Real Browser",
+      "ctaDescription": "Start with a reproducible interaction and collect the browser evidence that can confirm it.",
+      "ctaPrimary": {
+        "label": "Read the DevTools browser testing guide",
+        "href": "/skills-marketplace/addyosmani/browser-testing-with-devtools"
+      }
+    },
+    "zh": {
+      "seoTitle": "Addy Osmani：Web 工程 Agent Skills 与浏览器验证",
+      "seoDescription": "了解 Addy Osmani 的工程 Skills，并使用 DevTools 工作流核对真实页面行为、定位请求异常和保留验证证据。",
+      "heroTitle": "Addy Osmani",
+      "heroDescription": "Addy Osmani 发布的 Agent Skills 覆盖需求、实施与验证。DevTools 浏览器测试 Skill 将页面运行时表现整理为可供工程判断的证据。",
+      "aboutTitle": "关于 Addy Osmani",
+      "about": "Addy Osmani 发布工程任务所用的 Agent Skills，覆盖需求说明、代码实施、测试和交付。仓库提供整套安装和按需选择 Skill 两种路径。",
+      "overview": {
+        "title": "关于 Addy Osmani",
+        "paragraphs": [
+          "Addy Osmani 发布工程任务所用的 Agent Skills，覆盖需求说明、代码实施、测试和交付。仓库提供整套安装和按需选择 Skill 两种路径。",
+          "Browser Testing with DevTools 聚焦页面在 Chrome 中的实际行为。它借助单独配置的 MCP 服务查看正在运行的页面，记录错误，并对比改动前后的表现。"
+        ]
+      },
+      "projectsTitle": "工程工具",
+      "projectsIntro": "查看配合这些工作流使用的公开软件。",
+      "skillsTitle": "Addy Osmani 的 Agent Skill 指南",
+      "skillsIntro": "从运行中的页面收集证据。指南说明 DevTools 连接的前提，以及如何把访问范围限定在测试浏览器。",
+      "faq": [
+        {
+          "question": "官方集合在哪里？",
+          "answer": "addyosmani/agent-skills GitHub 仓库提供 Skill 清单、插件信息和各宿主的配置说明。"
+        },
+        {
+          "question": "能只装一个 Skill 吗？",
+          "answer": "上游支持使用 Skills CLI 选择单项。只装一项时，仓库根目录下的共享参考清单需要另行取得。"
+        },
+        {
+          "question": "会同时安装 Chrome DevTools MCP 吗？",
+          "answer": "Skill 安装和 MCP 服务配置分别进行。使用浏览器工具前，需要在宿主中配置并确认该服务可用。"
+        },
+        {
+          "question": "浏览器测试指南能核对什么？",
+          "answer": "可以用它复现正在运行的页面问题，查看控制台和网络证据，并比较修复前后的同一交互。"
+        },
+        {
+          "question": "在哪里查各宿主的命令？",
+          "answer": "查看上游针对所选宿主提供的配置文档。Claude Code、Codex 等客户端的插件与调用方式各有区别。"
+        },
+        {
+          "question": "在哪里跟进版本变化？",
+          "answer": "查看官方仓库的发布记录，并在流程或依赖变化时核对对应 Skill 的清单。"
+        }
+      ],
+      "ctaTitle": "核对真实浏览器行为",
+      "ctaDescription": "选择一个可复现的交互，用运行时证据判断它是否符合预期。",
+      "ctaPrimary": {
+        "label": "阅读 DevTools 浏览器测试指南",
+        "href": "/zh/skills-marketplace/addyosmani/browser-testing-with-devtools"
+      }
+    }
   }
 }

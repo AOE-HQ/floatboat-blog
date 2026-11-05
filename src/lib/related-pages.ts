@@ -1,7 +1,7 @@
 import relatedPages from "@/data/related-pages.json";
 import additionalRelatedPages from "@/data/skills/additional-related-pages.json";
 import { ALL_FEATURED_SKILLS, FEATURED_SKILLS, skillPath } from "@/lib/skills/featured-skills";
-import { getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
+import { getStoreCatalog, getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
 import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES, KNOWN_PUBLISHER_HANDLES } from "@/lib/skills/publisher-profiles";
 import { reviewedRelatedLinks } from "@/lib/reviewed-related-links";
 import { ALL_PROJECTS, PROJECTS, getProject, projectPath } from "@/lib/projects/project-pages";
@@ -38,9 +38,17 @@ const knownIds: Record<RelatedFamily, string[]> = {
   "skill-categories": SKILL_CATEGORY_SLUGS,
 };
 
-related.publishers.links = reviewedRelatedLinks(related.publishers.links, knownIds.publishers, KNOWN_PUBLISHER_HANDLES);
-related.skills.links = reviewedRelatedLinks(related.skills.links, knownIds.skills, ALL_FEATURED_SKILLS.map((skill) => `${skill.authorHandle}/${skill.slug}`));
-related.projects.links = reviewedRelatedLinks(related.projects.links, knownIds.projects, ALL_PROJECTS.map((project) => `${project.author}/${project.slug}`));
+const catalog = getStoreCatalog("en");
+const catalogPublishers = new Set(catalog.map((entry) => entry.authorHandle));
+const catalogHrefs = new Set(catalog.map((entry) => entry.href));
+const marketplaceTargets = {
+  publishers: knownIds.publishers.filter((id) => catalogPublishers.has(id)),
+  skills: FEATURED_SKILLS.filter((skill) => catalogHrefs.has(skillPath("en", skill.authorHandle, skill.slug))).map((skill) => `${skill.authorHandle}/${skill.slug}`),
+  projects: PROJECTS.filter((project) => catalogHrefs.has(projectPath("en", project.author, project.slug))).map((project) => `${project.author}/${project.slug}`),
+};
+related.publishers.links = reviewedRelatedLinks(related.publishers.links, knownIds.publishers, KNOWN_PUBLISHER_HANDLES, marketplaceTargets.publishers);
+related.skills.links = reviewedRelatedLinks(related.skills.links, knownIds.skills, ALL_FEATURED_SKILLS.map((skill) => `${skill.authorHandle}/${skill.slug}`), marketplaceTargets.skills);
+related.projects.links = reviewedRelatedLinks(related.projects.links, knownIds.projects, ALL_PROJECTS.map((project) => `${project.author}/${project.slug}`), marketplaceTargets.projects);
 
 function validateRelatedPages() {
   for (const family of Object.keys(related) as RelatedFamily[]) {
@@ -50,14 +58,16 @@ function validateRelatedPages() {
     if (sources.length !== ids.length || sources.some((source) => !known.has(source))) {
       throw new Error(`Related ${family} pages must cover every live page exactly once`);
     }
-    const incoming = new Map(ids.map((id) => [id, 0]));
+    const targetIds = family === "publishers" || family === "skills" || family === "projects" ? marketplaceTargets[family] : ids;
+    const allowed = new Set(targetIds);
+    const incoming = new Map(targetIds.map((id) => [id, 0]));
     for (const [source, targets] of Object.entries(related[family].links)) {
-      const targetCount = family === "publishers" || family === "skills" || family === "projects" ? Math.min(4, Math.max(0, ids.length - 1)) : 4;
+      const targetCount = family === "publishers" || family === "skills" || family === "projects" ? Math.min(4, targetIds.length - Number(allowed.has(source))) : 4;
       if (targets.length !== targetCount || new Set(targets).size !== targetCount) {
-        throw new Error(`Related ${family}/${source} must have four distinct targets`);
+        throw new Error(`Related ${family}/${source} must have ${targetCount} distinct targets`);
       }
       for (const target of targets) {
-        if (!known.has(target) || target === source) {
+        if (!allowed.has(target) || target === source) {
           throw new Error(`Invalid related target ${family}/${source} → ${target}`);
         }
         incoming.set(target, (incoming.get(target) ?? 0) + 1);

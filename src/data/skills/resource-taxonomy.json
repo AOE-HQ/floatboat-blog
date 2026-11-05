@@ -243,6 +243,10 @@
     "context-efficiency": {
       "en": "Context efficiency",
       "zh": "上下文效率"
+    },
+    "data-analysis": {
+      "en": "Data Analysis",
+      "zh": "数据分析"
     }
   },
   "resources": {
@@ -1114,8 +1118,8 @@
         "writing-marketing"
       ],
       "tags": [
-        "marketing",
-        "planning"
+        "planning",
+        "marketing"
       ]
     },
     "juliusbrussee/caveman": {
@@ -1125,7 +1129,6 @@
       ],
       "tags": [
         "writing",
-        "context-memory",
         "context-efficiency"
       ]
     },
@@ -1370,16 +1373,7 @@
       ],
       "tags": [
         "interface-design",
-        "animation"
-      ]
-    },
-    "leonxlnx/redesign-skill": {
-      "categories": [
-        "design-interfaces"
-      ],
-      "tags": [
-        "interface-design",
-        "code-review"
+        "browser-automation"
       ]
     },
     "leonxlnx/gpt-tasteskill": {
@@ -1679,6 +1673,82 @@
       "tags": [
         "task-management",
         "handoffs",
+        "debugging"
+      ]
+    },
+    "project:github.com/karpathy/autoresearch": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "performance"
+      ]
+    },
+    "project:github.com/sherlock-project/sherlock": {
+      "categories": [
+        "development",
+        "deployment-browser"
+      ],
+      "tags": [
+        "web-research",
+        "security"
+      ]
+    },
+    "project:github.com/k-dense-ai/scientific-agent-skills": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "data-analysis",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/openclaw/openclaw": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "task-management"
+      ]
+    },
+    "project:github.com/affaan-m/ecc": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "security"
+      ]
+    },
+    "k-dense-ai/exploratory-data-analysis": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "data-analysis",
+        "agent-workflows"
+      ]
+    },
+    "garrytan/qa-only": {
+      "categories": [
+        "development",
+        "deployment-browser"
+      ],
+      "tags": [
+        "testing",
+        "browser-automation"
+      ]
+    },
+    "addyosmani/browser-testing-with-devtools": {
+      "categories": [
+        "development",
+        "deployment-browser"
+      ],
+      "tags": [
+        "browser-automation",
+        "testing",
         "debugging"
       ]
     }

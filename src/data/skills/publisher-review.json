@@ -651,6 +651,96 @@
       "repositories": [
         "OthmanAdi/planning-with-files"
       ]
+    },
+    "karpathy": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "karpathy/autoresearch",
+      "stars": 99298,
+      "fork": false,
+      "archived": false,
+      "reason": "官方原仓公开且高于门槛。README 标注 MIT，并记录 Codex 和 Claude 的执行入口。默认分支文件列表无独立 LICENSE，GitHub API 未识别许可证。原始 LLM Wiki Gist 作为参考。",
+      "repositories": [
+        "karpathy/autoresearch"
+      ]
+    },
+    "sherlock-project": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "sherlock-project/sherlock",
+      "stars": 96293,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-05T05:14:13Z",
+      "reason": "官方组织维护公开原仓，采用 MIT 许可。官方用法记录了具备终端与网络权限的 Agent 可调用的 CLI。",
+      "repositories": [
+        "sherlock-project/sherlock"
+      ]
+    },
+    "k-dense-ai": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "K-Dense-AI/scientific-agent-skills",
+      "stars": 56196,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-02T09:23:27Z",
+      "reason": "官方组织维护高星公开原仓。README 记录 Codex、Cursor 与 Claude Code 安装方式；主仓 MIT，单项许可从各 SKILL.md 核对。",
+      "repositories": [
+        "K-Dense-AI/scientific-agent-skills"
+      ]
+    },
+    "openclaw": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "openclaw/openclaw",
+      "stars": 393967,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-05T16:13:51Z",
+      "reason": "官方归属、热度、公开状态和可执行入口已核对。",
+      "repositories": [
+        "openclaw/openclaw"
+      ]
+    },
+    "affaan-m": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "affaan-m/ECC",
+      "stars": 297670,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-02T04:56:08Z",
+      "reason": "官方归属、热度、公开状态和可执行入口已核对。",
+      "repositories": [
+        "affaan-m/ECC"
+      ]
+    },
+    "garrytan": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "garrytan/gstack",
+      "stars": 139751,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-05T16:15:25Z",
+      "reason": "官方归属、热度、公开状态和可执行入口已核对。",
+      "repositories": [
+        "garrytan/gstack"
+      ]
+    },
+    "addyosmani": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "addyosmani/agent-skills",
+      "stars": 113436,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-01T19:24:49Z",
+      "reason": "官方归属、热度、公开状态和可执行入口已核对。",
+      "repositories": [
+        "addyosmani/agent-skills"
+      ]
     }
   }
 }

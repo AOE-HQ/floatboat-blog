@@ -162,5 +162,33 @@
   "othmanadi": {
     "en": "Publishes Planning with Files, an open-source workflow for tracking long-running agent tasks in project files.",
     "zh": "发布 Planning with Files，用项目文件跟踪 Agent 的长任务。"
+  },
+  "karpathy": {
+    "en": "Publishes Autoresearch for agent-run model training and the LLM Wiki pattern for maintaining linked Markdown knowledge.",
+    "zh": "公开 Autoresearch 自动训练实验和 LLM Wiki 设计，探索用 Agent 迭代模型与维护知识库。"
+  },
+  "sherlock-project": {
+    "en": "Maintains Sherlock, a command-line tool for checking public username matches across supported websites and exporting candidates for review.",
+    "zh": "维护开源用户名搜索工具 Sherlock，提供网站查询规则和可供复核的公开候选链接。"
+  },
+  "k-dense-ai": {
+    "en": "Maintains Scientific Agent Skills for data inspection, statistical analysis, visualization, and scientific writing in supported Agent hosts.",
+    "zh": "维护 Scientific Agent Skills，为 Codex、Cursor 等宿主提供数据检查、统计分析和科研写作指引。"
+  },
+  "openclaw": {
+    "en": "Maintains the OpenClaw agent runtime, Gateway, and headless CLI for tasks with explicit workspace and tool access.",
+    "zh": "维护 OpenClaw Agent 运行环境、Gateway 与无界面 CLI，支持在明确权限内执行任务。"
+  },
+  "affaan-m": {
+    "en": "Publishes ECC, a cross-host toolkit for coding-agent Skills, hooks, guided setup, and diagnostics.",
+    "zh": "发布跨宿主配置工具 ECC，涵盖编程 Agent 的 Skills、Hooks、引导安装和诊断。"
+  },
+  "garrytan": {
+    "en": "Maintains gstack workflows for product review, engineering, QA, and release, including a report-only workflow for reproducible findings.",
+    "zh": "维护 gstack 工程工作流，覆盖产品评审、QA 与发布，并提供保留可复现证据的报告模式。"
+  },
+  "addyosmani": {
+    "en": "Publishes practical engineering Skills, including a DevTools workflow for reproducing browser defects and capturing runtime evidence.",
+    "zh": "发布面向工程实践的 Agent Skills，其中 DevTools 工作流可复现页面缺陷并保存运行时证据。"
   }
 }

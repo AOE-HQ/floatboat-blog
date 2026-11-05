@@ -906,5 +906,359 @@
       "inputHint": "说明项目、关键阶段、当前阻塞，以及哪些操作需要确认。",
       "outcome": "一份三文件规划提纲，以及验证新会话能否接手的检查步骤。"
     }
+  },
+  "sherlock-project/sherlock": {
+    "en": {
+      "title": "Check an authorized username across selected sites",
+      "description": "Give the agent an exact username and a short list of approved sites. Have it record public candidate URLs and leave ownership decisions for review.",
+      "inputLabel": "Which username and sites are approved?",
+      "inputHint": "Provide a handle you manage or have permission to check, the site list, and an output folder.",
+      "outcome": "A candidate URL table with site coverage and a verification column.",
+      "example": "Check whether Sherlock is installed. Prepare a search for my approved username on the sites I list, then show me the planned command before making network requests. After I approve the command, run it, save candidate URLs in the approved folder, and flag each row for manual verification."
+    },
+    "zh": {
+      "title": "在指定网站核验获准的用户名",
+      "description": "提供准确的用户名和允许查询的网站，让 Agent 记录公开候选链接，并把账号归属交给负责人复核。",
+      "inputLabel": "允许查询哪个用户名和哪些网站？",
+      "inputHint": "填写自己管理或获准核验的用户名、网站列表和输出目录。",
+      "outcome": "一张候选链接表，附查询范围和人工核验状态。",
+      "example": "先检查 Sherlock 是否已安装。按我提供的用户名和网站范围准备查询命令，联网前先给我核对。我确认命令后再执行，将候选链接保存到获准的目录，每条结果标记为待人工核验。"
+    }
+  },
+  "openclaw/openclaw": {
+    "en": {
+      "title": "Prepare a bounded OpenClaw run",
+      "description": "Choose headless execution or a Gateway session, then make the input, access and expected output explicit.",
+      "inputLabel": "What should the run produce?",
+      "inputHint": "Provide a workspace, allowed input files and one artifact to verify.",
+      "outcome": "A reviewed CLI run plan and an artifact with explicit checks.",
+      "example": "Read the official OpenClaw agent CLI docs. Prepare a headless task that summarizes my approved test log. Show the command and workspace before execution. After approval, run it only if the runtime is configured and verify the output against the log."
+    },
+    "zh": {
+      "title": "准备一次范围明确的 OpenClaw 执行",
+      "description": "根据任务选择无界面命令或 Gateway 会话，先明确输入、权限和预期结果。",
+      "inputLabel": "这次运行应交付什么？",
+      "inputHint": "提供工作区、获准输入和一份需要核验的产物。",
+      "outcome": "一份可复核的运行方案，以及带检查依据的输出。",
+      "example": "阅读 OpenClaw 的官方 Agent CLI 文档。为获准使用的测试日志准备一次无界面摘要任务，先列出命令与工作区。我确认后，只有运行环境已配置才执行，并回到原日志核对输出。"
+    }
+  },
+  "affaan-m/ecc": {
+    "en": {
+      "title": "Preview ECC changes for Codex",
+      "description": "Plan the package version, host and write scope before an agent touches configuration.",
+      "inputLabel": "Which workspace will receive ECC?",
+      "inputHint": "Give the workspace path, current host version and allowed setup scope.",
+      "outcome": "A dry-run report and a reviewable list of proposed writes.",
+      "example": "Read the official ECC install instructions. Check Node and Codex, then show me the guided Codex dry-run command. After approval, run only the preview and report its destination and proposed writes."
+    },
+    "zh": {
+      "title": "预演 ECC 对 Codex 的配置改动",
+      "description": "在 Agent 写入前先限定包版本、目标宿主与允许配置的范围。",
+      "inputLabel": "哪个工作区要配置 ECC？",
+      "inputHint": "提供工作区路径、宿主版本和允许的安装范围。",
+      "outcome": "一份预演报告，列出安装位置和计划写入。",
+      "example": "读取 ECC 官方安装文档，检查 Node 和 Codex，并给我看引导安装的预演命令。我确认后只运行预演，报告目标位置和计划写入。"
+    }
+  },
+  "k-dense-ai/exploratory-data-analysis": {
+    "en": {
+      "title": "Inspect a local dataset before analysis",
+      "description": "Record the allowed input and check aggregate structure and missingness before choosing an analysis.",
+      "inputLabel": "Which dataset should be profiled?",
+      "inputHint": "Provide the approved folder, filename, and the decision this inspection will inform.",
+      "outcome": "A redacted aggregate report with explicit coverage and data-quality checks."
+    },
+    "zh": {
+      "title": "分析前检查本地数据",
+      "description": "根据获准的输入范围，先核对数据结构和缺失情况，再选择分析方法。",
+      "inputLabel": "要检查哪份数据？",
+      "inputHint": "提供获准访问的目录、文件名和本次需要支持的决定。",
+      "outcome": "一份带覆盖范围和数据质量检查项的去敏汇总。"
+    }
+  },
+  "morluto/rea": {
+    "en": {
+      "title": "Inspect an authorized binary with REA",
+      "description": "Identify the local artifact and ask a precise question before choosing a static inspection.",
+      "inputLabel": "Which binary can the agent inspect?",
+      "inputHint": "Provide an approved file and the expected build target.",
+      "outcome": "A layout summary with the artifact reference and evidence for each claim.",
+      "example": "Review REA’s official binary diagnostics. Check whether the REA CLI or MCP is available and show the planned read-only layout inspection for my approved binary. After I approve the command, run the inspection without launching the binary and save the evidence alongside the summary."
+    },
+    "zh": {
+      "title": "用 REA 检查获准分析的二进制",
+      "description": "明确本地制品和要核验的问题，再选静态检查方式。",
+      "inputLabel": "Agent 可以检查哪个文件？",
+      "inputHint": "提供获准分析的路径和预期构建目标。",
+      "outcome": "一份带制品引用和对应证据的布局摘要。",
+      "example": "阅读 REA 官方二进制诊断文档，先检查 CLI 或 MCP 是否可用，再展示针对我获准分析的二进制的只读布局检查方案。我确认后执行检查，无需启动被检查的程序，并把证据与摘要一起保存。"
+    }
+  },
+  "obra/superpowers": {
+    "en": {
+      "title": "Plan and verify a bounded code change",
+      "description": "Start with an approved design and a repository whose tests the agent can run.",
+      "inputLabel": "Which approved change should the agent implement?",
+      "inputHint": "Provide the repository, acceptance criteria and relevant test commands.",
+      "outcome": "A reviewable plan and patch with fresh test evidence.",
+      "example": "Check that Superpowers is available in this coding agent. Turn my approved change into file-level steps and show me the plan. After I approve implementation, add the regression test, record the failing and passing runs, and share the resulting diff and fresh verification output."
+    },
+    "zh": {
+      "title": "用 Superpowers 计划并核验一次改动",
+      "description": "从已批准的设计和 Agent 能运行测试的仓库开始。",
+      "inputLabel": "这次获准实施哪项改动？",
+      "inputHint": "提供仓库、验收条件和相关测试命令。",
+      "outcome": "一份可复核的计划、补丁和本次运行取得的测试证据。",
+      "example": "先检查当前编程 Agent 是否已安装 Superpowers。把我批准的改动拆成文件级步骤并展示计划。我确认实施后，先添加回归测试，记录失败和通过两次结果，再交付差异和最新验证输出。"
+    }
+  },
+  "garrytan/qa-only": {
+    "en": {
+      "title": "Produce a report-only QA handoff",
+      "description": "Specify the surface, reproduction scope, and evidence to collect before anyone changes the product.",
+      "inputLabel": "Which approved behavior needs checking?",
+      "inputHint": "Provide a local or staging target, synthetic fixture, expected behavior, and report location.",
+      "outcome": "A QA report with replayable steps, evidence, and explicit gaps."
+    },
+    "zh": {
+      "title": "生成可交接的 QA 报告",
+      "description": "在修改产品前，明确测试对象、复现范围和需要保留的证据。",
+      "inputLabel": "哪个获准的行为需要核验？",
+      "inputHint": "提供本地或测试环境、合成数据、预期行为和输出目录。",
+      "outcome": "一份含可复现步骤、证据和覆盖缺口的 QA 报告。"
+    }
+  },
+  "addyosmani/browser-testing-with-devtools": {
+    "en": {
+      "title": "Capture browser evidence for a failed interaction",
+      "description": "Give the agent a test page and a single interaction to inspect in an isolated Chrome profile.",
+      "inputLabel": "What interaction should the browser reproduce?",
+      "inputHint": "Provide an approved URL, synthetic data, expected behavior, and the evidence needed.",
+      "outcome": "A sanitized record of the action, visible state, and relevant runtime evidence."
+    },
+    "zh": {
+      "title": "收集失败交互的浏览器证据",
+      "description": "提供测试页面和一个明确交互，让 Agent 在隔离的 Chrome 配置中检查。",
+      "inputLabel": "需要复现哪个交互？",
+      "inputHint": "填写获准的测试地址、测试数据、预期行为和所需证据。",
+      "outcome": "一份脱敏的操作记录，包含界面状态和相关运行时证据。"
+    }
+  },
+  "anthropics/webapp-testing": {
+    "en": {
+      "title": "Reproduce a local UI failure with Playwright",
+      "description": "Give the agent an approved local page and one visible expected result. Save a script and evidence another developer can rerun.",
+      "inputLabel": "Which local interaction should be tested?",
+      "inputHint": "Provide the local route, expected behavior and synthetic inputs.",
+      "outcome": "A repeatable script and a short report with actual results."
+    },
+    "zh": {
+      "title": "用 Playwright 复现一处本地界面故障",
+      "description": "给出获准的本地页面和一个可观察的预期结果，保留其他开发者能复跑的脚本与证据。",
+      "inputLabel": "要检查哪个本地交互？",
+      "inputHint": "给出本地路由、预期行为与模拟输入。",
+      "outcome": "可重跑的脚本与包含实际结果的简报。"
+    }
+  },
+  "leonxlnx/taste-skill": {
+    "en": {
+      "title": "Redesign a landing page against a visual brief",
+      "description": "Use a real brief, existing component constraints and approved imagery. Review the result in a browser at representative widths.",
+      "inputLabel": "Which page and sections should change?",
+      "inputHint": "Provide the route, target audience, approved assets and preserved sections.",
+      "outcome": "A working page and a viewport review with evidence."
+    },
+    "zh": {
+      "title": "根据视觉简报调整落地页",
+      "description": "让 Agent 使用真实简报、现有组件和获准素材，并在代表性屏幕宽度下检查。",
+      "inputLabel": "要改哪个页面和区域？",
+      "inputHint": "提供路由、目标受众、已批准素材与须保留的区域。",
+      "outcome": "可运行的页面和带依据的多宽度复核记录。"
+    }
+  },
+  "juliusbrussee/caveman": {
+    "en": {
+      "title": "Compare a terse reply with its source",
+      "description": "Check that shortening the visible response preserves the exact error and verification status.",
+      "inputLabel": "Which technical reply should be shortened?",
+      "inputHint": "Provide a saved log, diff or handoff with facts that must stay.",
+      "outcome": "A shorter reply with the same technical evidence."
+    },
+    "zh": {
+      "title": "核对短回复是否保留了技术依据",
+      "description": "让 Agent 精简可见回复，并核对错误原文和实际验证状态。",
+      "inputLabel": "哪份技术回复需要缩短？",
+      "inputHint": "提供已有日志、差异或交接材料，指出必须保留的事实。",
+      "outcome": "一份更短但保留相同技术证据的回复。"
+    }
+  },
+  "heygen-com/slideshow": {
+    "en": {
+      "title": "Prepare a rehearsable live deck",
+      "description": "Translate the talk outline into slides, reveals and presenter notes. Verify the local audience and presenter views.",
+      "inputLabel": "What is the presentation outline?",
+      "inputHint": "Provide approved assets, slides, reveals, and any branching paths.",
+      "outcome": "A locally served HTML deck and a rehearsal checklist."
+    },
+    "zh": {
+      "title": "准备可排练的现场幻灯片",
+      "description": "把提纲拆成幻灯片、逐步展示项和演讲者备注，复核本地观众与演讲者视图。",
+      "inputLabel": "本次演示有哪些内容？",
+      "inputHint": "给出提纲、获准素材、揭示顺序及分支。",
+      "outcome": "可在本地打开的 HTML 演示和一份排练清单。"
+    }
+  },
+  "coreyhaines31/seo-audit": {
+    "en": {
+      "title": "Prioritize an SEO repair queue",
+      "description": "Give the agent approved URLs and search artifacts, then ask for evidence and a retest for each finding.",
+      "inputLabel": "Which URLs need checking?",
+      "inputHint": "Provide sample routes, target index state and any authorized search export.",
+      "outcome": "A ranked audit report with URL-level evidence."
+    },
+    "zh": {
+      "title": "排列 SEO 修复清单",
+      "description": "给 Agent 获准 URL 与搜索资料，为每个问题保留依据和复验方式。",
+      "inputLabel": "要检查哪些 URL？",
+      "inputHint": "提供样本路由、预期索引状态和获准的搜索数据。",
+      "outcome": "包含 URL 级证据的优先级报告。"
+    }
+  },
+  "coreyhaines31/copywriting": {
+    "en": {
+      "title": "Draft a landing-page message",
+      "description": "Use audience evidence and a real offer to draft copy with a clear next action.",
+      "inputLabel": "Which page and action are you drafting for?",
+      "inputHint": "Provide approved claims, reader objections and a desired CTA.",
+      "outcome": "A page draft with claims tied to evidence."
+    },
+    "zh": {
+      "title": "起草一份落地页卖点文案",
+      "description": "根据受众、真实提案和可引用证据写出有明确行动的文案。",
+      "inputLabel": "要为哪个页面和行动起草？",
+      "inputHint": "提供已核实卖点、受众疑虑与目标按钮。",
+      "outcome": "一份可以逐条核对承诺依据的页面草稿。"
+    }
+  },
+  "coreyhaines31/content-strategy": {
+    "en": {
+      "title": "Plan a small editorial roadmap",
+      "description": "Combine audience questions and existing coverage to rank a feasible set of topics.",
+      "inputLabel": "What audience and timeframe are in scope?",
+      "inputHint": "Provide questions, inventory, output goals and team capacity.",
+      "outcome": "A prioritized content queue with first-batch briefs."
+    },
+    "zh": {
+      "title": "制定一份可执行的编辑路线图",
+      "description": "把受众问题和当前内容覆盖结合起来，给选题排出能执行的先后顺序。",
+      "inputLabel": "面向哪个受众、计划多久？",
+      "inputHint": "提供受众问题、内容清单、目标和团队产能。",
+      "outcome": "一份有优先级的选题队列和首批简报。"
+    }
+  },
+  "emilkowalski/review-animations": {
+    "en": {
+      "title": "Review motion before merging",
+      "description": "Give the agent changed files and a motion scenario, then ask for evidence-backed findings.",
+      "inputLabel": "Which interaction should be reviewed?",
+      "inputHint": "Provide files, reproduction steps, browser and accessibility states.",
+      "outcome": "A prioritized critique with reproduction and follow-up checks."
+    },
+    "zh": {
+      "title": "合并前复核一次界面动效",
+      "description": "向 Agent 提供变更文件与动效场景，要求按证据输出审查发现。",
+      "inputLabel": "要复核哪个交互？",
+      "inputHint": "给出文件、复现步骤、浏览器与可访问性状态。",
+      "outcome": "一份带复现方法和复验条件的优先级审查。"
+    }
+  },
+  "emilkowalski/apple-design": {
+    "en": {
+      "title": "Build and verify a web gesture",
+      "description": "Provide the component and expected states, then exercise the gesture and an accessible alternative.",
+      "inputLabel": "Which gesture needs implementation?",
+      "inputHint": "Give the component, target inputs, expected release behavior and access requirements.",
+      "outcome": "An implemented interaction with explicit state checks."
+    },
+    "zh": {
+      "title": "实现并核对网页手势",
+      "description": "提供目标组件与预期状态，让 Agent 验证手势和可访问的替代路径。",
+      "inputLabel": "要实现哪个交互手势？",
+      "inputHint": "给出组件、输入方式、松手后的表现和可访问性要求。",
+      "outcome": "可运行的交互及明确的状态检查记录。"
+    }
+  },
+  "firecrawl/firecrawl": {
+    "en": {
+      "title": "Build a source-checked web extraction",
+      "description": "Provide either a research question or approved URLs. Choose the MCP operation that fits, then ask for structured output with evidence from the original pages.",
+      "inputLabel": "Which pages or question should the Agent use?",
+      "inputHint": "Supply approved URLs or a narrow query, desired fields, and a page limit.",
+      "outcome": "A structured table or JSON file with source URLs and explicit missing fields.",
+      "example": "Check which Firecrawl MCP tools are available. Read the approved product pages and extract the requested fields as JSON. Verify each value against the page, preserve its URL, and leave ambiguous values for review."
+    },
+    "zh": {
+      "title": "用 Firecrawl 提取可回查的网页数据",
+      "description": "提供一个查询问题或获准网址。按输入选择 MCP 工具，并让结果保留可以返回原网页核对的依据。",
+      "inputLabel": "需要查询哪些页面或问题？",
+      "inputHint": "填写获准网址或明确的问题、所需字段和页数上限。",
+      "outcome": "一份包含来源网址与缺失标记的表格或 JSON 文件。",
+      "example": "先核对当前会话可调用的 Firecrawl MCP 工具。读取我批准的产品页面，按指定字段输出 JSON。将值与页面原文核对，保留网址，歧义项留待复核。"
+    }
+  },
+  "supabase/supabase": {
+    "en": {
+      "title": "Check a Supabase project without making changes",
+      "description": "Identify the project and question before opening the connection. Start with metadata and approve any query only if it adds evidence the task needs.",
+      "inputLabel": "Which project and schema should the Agent inspect?",
+      "inputHint": "Provide the approved project reference, relevant tables or schemas, and permitted outputs.",
+      "outcome": "A read-only inspection note with the project scope, tool evidence, and open questions.",
+      "example": "Use the approved read-only Supabase MCP connection for my development project. Confirm its project reference, inspect the named schema, and compare the tables with the repository. Show me any proposed SQL and wait for my approval before running it. Report only the approved metadata or aggregate results."
+    },
+    "zh": {
+      "title": "核对 Supabase 项目而不修改数据库",
+      "description": "先明确项目和问题，从结构元数据开始；需要进一步取证时，再审查拟执行的只读查询。",
+      "inputLabel": "要核对哪个项目与 schema？",
+      "inputHint": "提供已批准的项目引用、涉及的表或 schema，以及允许交付的结果范围。",
+      "outcome": "一份只读核验记录，注明项目范围、工具结果和待确认事项。",
+      "example": "使用我获准的开发项目 Supabase 只读 MCP。先核对项目引用，检查指定 schema，并把表结构与仓库对照。先给我看拟执行的 SQL，经我确认后再运行。只报告获准的元数据或汇总结果。"
+    }
+  },
+  "karpathy/autoresearch": {
+    "en": {
+      "title": "Compare One Autoresearch Candidate With Its Baseline",
+      "description": "Define a single training change and record the setup before asking the agent to run the experiment.",
+      "inputLabel": "Which training change should the agent test?",
+      "inputHint": "Give the repository path, prepared GPU environment, baseline commit, one hypothesis, and the approved trial limit.",
+      "outcome": "A run log, a results.tsv entry, and a baseline comparison with a keep, discard, or crash decision.",
+      "example": "Read the official Autoresearch program.md. Check my GPU, prepared data, and dedicated branch. Show the baseline and one train.py candidate plan. After I approve the commands, run only the agreed trials and compare val_bpb, peak memory, and status in the local ledger."
+    },
+    "zh": {
+      "title": "对照基线验证一次 Autoresearch 改动",
+      "description": "先定义一项训练改动并记录环境，再授权 Agent 开始实验。",
+      "inputLabel": "本轮要验证哪个训练假设？",
+      "inputHint": "提供仓库位置、已准备的 GPU 环境、基线提交、单项假设和批准的运行轮数。",
+      "outcome": "运行日志、results.tsv 记录，以及一份标明保留、放弃或崩溃的基线对照。",
+      "example": "先阅读 Autoresearch 官方 program.md，核对 GPU、准备好的数据与独立分支。给我看基线及一项 train.py 改动的运行计划。我批准命令后，只运行约定的实验，并在本地台账中对照 val_bpb、显存峰值和状态。"
+    }
+  },
+  "k-dense-ai/scientific-agent-skills": {
+    "en": {
+      "title": "Select One Scientific Agent Skill for Your Research Task",
+      "description": "Define the research stage, available materials, and one artifact before selecting a workflow.",
+      "inputLabel": "What research output needs to be produced?",
+      "inputHint": "Provide the study stage, approved inputs, preferred host, expected output, and any restrictions on network or credentials.",
+      "outcome": "A Skill selection with source, license, prerequisites, and a bounded workflow for a reviewer to approve.",
+      "example": "Read the official Scientific Agent Skills catalog. For my study-design brief, pick one suitable Skill and check its SKILL.md for license, dependencies, and output. Propose a local-only workflow and get my approval before installing or running anything."
+    },
+    "zh": {
+      "title": "为一项科研任务选择合适的 Skill",
+      "description": "在选工作流之前，先说明研究阶段、手头材料和一项待交付的产物。",
+      "inputLabel": "你需要产出哪种科研材料？",
+      "inputHint": "提供研究阶段、获准输入、使用的宿主、预期交付，以及联网或凭据限制。",
+      "outcome": "一份标明来源、许可、执行前提和任务范围的 Skill 选用方案。",
+      "example": "先阅读 Scientific Agent Skills 官方目录，为我的实验设计简报选择一项适用 Skill。检查 SKILL.md 的许可、依赖与交付要求，提出只在本地运行的方案，并在我批准前不安装或执行。"
+    }
   }
 }

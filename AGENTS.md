@@ -77,12 +77,9 @@ Marketing pages, directory hubs, and published blog archives require at least si
 
 Use the shared `Hero` from `@openblog/components`; marketing/blog components are data adapters. Select only `centered` or `split`. Keep one H1 and a page-specific introduction, with metadata below; no eyebrow, local title italics or partial title accent color. Hero media may be an image, video or demonstration, never a navigation panel. Split requires media and stacks text before media on mobile. Permit at most one direct-conversion action, otherwise omit it; secondary reading/navigation links belong outside Hero.
 
-## Marketplace name intake
+## Marketplace publishing SSOT
 
-For requested project or Skill additions, including name-only requests, first read the "名称输入到分类与建页" workflow in the Floatboat context `product/floatboat-skills-ecosystem.md` (Mac: `~/Documents/Codex/clients/floatboat/`; Windows: `E:\clients\floatboat\`). Verify the canonical upstream and license, distinguish software from task instructions, and check existing project/Skill routes before creating a page. Reuse an existing canonical page for the same work; complementary tools do not become duplicates merely because they cooperate. Complete both locales, reviewed publisher data, aggregate links, related links, share assets, and sitemap coverage. Commit locally after validation; pushing and PR creation still require the owner's explicit request.
-
-Follow the context repository’s `floatboat-marketplace-publishing-workflow.md` for bilingual drafting and metadata. For additions or substantial editorial batches, use an independent review agent to check source claims, both locales, and differentiation from adjacent pages. Resolve findings and record `PUBLISH_READY` before committing. Technical checks are a separate gate.
-
+For any Skills Marketplace page change, read `floatboat-marketplace-publishing-workflow.md` in the Floatboat context repository first (Mac: `~/Documents/Codex/clients/floatboat/`; Windows: `E:\clients\floatboat\`). It owns the page family's intake, copy, structure, component usage, fields, build checks, and release gates, including directory and category changes. Follow its independent editorial review for new or substantially revised copy. Align schemas, templates, and verification with the documented contract when changing it. Use this repository's Git and PR workflow for deployment.
 
 ## Breadcrumb contract
 

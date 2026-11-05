@@ -26,12 +26,15 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
   const zh = locale === "zh";
   const capabilityCopy = storeCapabilities[locale];
   const entries = getStoreCatalog(locale);
-  const publishers = PUBLISHER_PROFILE_HANDLES.map((handle) => {
+  const publisherHandles = new Set(entries.map((entry) => entry.authorHandle));
+  const publishers = PUBLISHER_PROFILE_HANDLES.filter((handle) => publisherHandles.has(handle)).map((handle) => {
     const profile = getPublisherProfile(handle)!;
-    return { handle, profile, projectCount: profile.projects.length, skillCount: entries.filter((entry) => entry.authorHandle === handle && entry.entryType === "skill").length };
+    return { handle, profile, projectCount: entries.filter((entry) => entry.authorHandle === handle && entry.entryType === "project").length, skillCount: entries.filter((entry) => entry.authorHandle === handle && entry.entryType === "skill").length };
   });
   const publisherCount = publishers.length;
-  const guideCount = entries.filter((entry) => entry.hasLocalGuide).length;
+  const listCopy = zh
+    ? { reset: "清除筛选", empty: "没有符合当前条件的条目。", results: "项结果", name: "名称", description: "简介" }
+    : { reset: "Clear filters", empty: "No entries match your filters.", results: "results", name: "Name", description: "Description" };
   const prefix = zh ? "/zh" : "";
   const faq = zh ? [
   {
@@ -43,8 +46,8 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
     "answer": "先选择独立项目或 Skills，再按任务分类缩小范围，用 React、代码审查、浏览器自动化等标签找到具体方向。分类页将同类 Skills 与独立项目分开展示，可以比较任务指引和执行工具。"
   },
   {
-    "question": "哪些 Skill 卡片可以打开？",
-    "answer": "只有已有本站指南的 Skill 才能打开，其他 Skill 卡片保持不可点击。独立项目已有本站介绍时进入项目详情；其他项目保留官网或仓库入口。项目详情会区分核心能力、使用条件与官方来源。"
+    "question": "目录里的条目会打开哪个页面？",
+    "answer": "每个收录的 Skill 都链接到本站指南。独立项目优先打开本站详情，尚无详情的项目链接到原始来源。列表末列标明了链接类型。"
   },
   {
     "question": "项目开源是否意味着模型和服务也免费？",
@@ -52,7 +55,7 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
   },
   {
     "question": "怎样确认条目由谁维护？",
-    "answer": "进入发布者介绍和原始仓库或网站，查看归属、文档、发布记录及当前问题。发布者卡片帮助识别来源，具体项目是否仍在维护则需要到上游核对。"
+    "answer": "进入发布者介绍和原始仓库或网站，查看归属、文档、发布记录及当前问题。发布者资料帮助识别来源，具体项目是否仍在维护则需要到上游核对。"
   },
   {
     "question": "目录顺序代表热门程度或质量排名吗？",
@@ -68,8 +71,8 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
     "answer": "Choose Projects or Skills, then narrow the directory by task category and tags such as React, code review, or browser automation. Category pages show instructions and independent projects in separate sections so you can compare their roles."
   },
   {
-    "question": "Which Skill cards can I open?",
-    "answer": "Only Skills with a dedicated local guide are clickable. Independent projects with a local introduction open that detail page; other projects retain a website or repository link. Project guides separate capabilities, requirements, and official sources."
+    "question": "Where do the directory links go?",
+    "answer": "Every listed Skill opens a local guide. Projects open a local detail page when available or link to the original source. The last column identifies the destination type."
   },
   {
     "question": "Does open-source software include free models and services?",
@@ -77,36 +80,43 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
   },
   {
     "question": "Where can I check who maintains an item?",
-    "answer": "Open its publisher profile and original repository or website. Review ownership, documentation, releases, and current issues there. The publisher card identifies the source of the work, while a project’s current maintenance status must be checked upstream."
+    "answer": "Open its publisher profile and original repository or website. Review ownership, documentation, releases, and current issues there. The publisher profile identifies the source of the work, while a project’s current maintenance status must be checked upstream."
   },
   {
     "question": "Does the directory order represent popularity or verified quality?",
     "answer": "No. Independent projects with local detail pages appear first to support workflow comparison; that is not a popularity or quality ranking. Repository stars, usage, and installation counts measure different things. Choose by source, maintenance, and task requirements."
   }
 ];
-  const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: zh ? "Skills 市场" : "Skills Marketplace", url: `https://floatboat.ai${prefix}/skills-marketplace`, inLanguage: zh ? "zh-CN" : "en-US", description: zh ? "探索团队、创作者、软件项目与 Agent Skills" : "Explore teams, creators, software projects, and Agent Skills", mainEntity: { "@type": "ItemList", numberOfItems: entries.length, itemListElement: entries.map((entry, index) => ({ "@type": "ListItem", position: index + 1, name: entry.name, url: entry.entryType === "skill" && !entry.hasLocalGuide ? undefined : entry.href.startsWith("/") ? `https://floatboat.ai${entry.href}` : entry.href })) } };
+  const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: zh ? "Skills 市场" : "Skills Marketplace", url: `https://floatboat.ai${prefix}/skills-marketplace`, inLanguage: zh ? "zh-CN" : "en-US", description: zh ? "探索团队、创作者、软件项目与 Agent Skills" : "Explore teams, creators, software projects, and Agent Skills", mainEntity: { "@type": "ItemList", numberOfItems: entries.length, itemListElement: entries.map((entry, index) => ({ "@type": "ListItem", position: index + 1, name: entry.name, url: entry.href.startsWith("/") ? `https://floatboat.ai${entry.href}` : entry.href })) } };
   return <div className="bg-[var(--ob-color-bg)] text-[var(--ob-color-text)]">
     <Breadcrumb label={zh ? "面包屑导航" : "Breadcrumb"} items={[{ label: zh ? "首页" : "Home", href: `https://floatboat.ai${prefix || "/"}` }, { label: zh ? "Skills 市场" : "Skills Marketplace", href: `${prefix}/skills-marketplace` }]} />
     <MarketingHero layout="centered" title={zh ? "Skills 市场" : "Skills Marketplace"} description={zh ? "为自己的 Agent 工作流寻找可借鉴的软件项目与 Skills。从任务拆分、工具连接到上下文和结果审阅，了解组织与创作者的代表作品，选择适合在 Floatboat 中研究和验证的工作方法。" : "Find software projects and Skills to help design your own agent workflows. Explore task structure, tool connections, context, and result review through representative work from organizations and creators, then plan a focused experiment around your work in Floatboat."} metadata={<>
-      <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-sm text-[var(--ob-color-muted)]"><span>{entries.filter((entry) => entry.entryType === "project").length} {zh ? "个独立项目" : "Projects"}</span><span>{entries.filter((entry) => entry.entryType === "skill").length} Skills</span><span>{publisherCount} {zh ? "位发布者" : "Publishers"}</span><span>{guideCount} {zh ? "篇指南" : "Guides"}</span></div>
+      <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-sm text-[var(--ob-color-muted)]"><span>{entries.filter((entry) => entry.entryType === "project").length} {zh ? "个独立项目" : "Projects"}</span><span>{entries.filter((entry) => entry.entryType === "skill").length} Skills</span><span>{publisherCount} {zh ? "位发布者" : "Publishers"}</span></div>
       <p className="mx-auto mt-4 max-w-xl text-xs leading-6 text-[var(--ob-color-muted)]">{zh ? "项目与 Skills 用于工作流研究和设计参考；具体接入、运行与兼容性以实际环境和发布者说明为准。" : "Projects and Skills are references for workflow design. Validate any integration, runtime, and compatibility requirements against your environment and the upstream documentation."}</p>
  </>} />
     <section id="publishers" aria-labelledby="publishers-title" className="mx-auto max-w-7xl scroll-mt-24 px-5 pb-14 pt-5 sm:px-8 sm:pb-16">
       <div className="mb-7"><h2 id="publishers-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{zh ? "项目与 Skills 的发布者" : "Teams and Creators Behind the Work"}</h2><p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--ob-color-text-subtle)]">{zh ? "认识开发编程 Agent、运行框架、创作工具与 Skills 的组织和创作者。了解各自的方向、代表作品和维护来源，再选择适合开发、设计、视频与办公任务的项目。" : "Meet the organizations and creators building coding agents, runtimes, creative tools, and Skills. Explore their focus, representative projects, and maintained sources before choosing resources for development, design, video, or office work."}</p></div>
-      <DirectoryTabs label={zh ? "发布者类型" : "Publisher type"} tabs={[{ id: "Organization", label: zh ? "团队与组织" : "Teams and Organizations" }, { id: "Person", label: zh ? "创作者" : "Creators" }]} items={publishers.map(({ handle, profile, projectCount, skillCount }) => ({
+      <p className="mb-6 text-sm"><a href="#browse" className="underline underline-offset-4">{zh ? "跳到项目与 Skills ↓" : "Jump to projects and Skills ↓"}</a></p>
+      <DirectoryTabs copy={{ ...listCopy, search: zh ? "搜索发布者" : "Search publishers", detail: zh ? "目录作品" : "Listed work" }} label={zh ? "发布者类型" : "Publisher type"} tabs={[{ id: "Organization", label: zh ? "团队与组织" : "Teams and Organizations" }, { id: "Person", label: zh ? "创作者" : "Creators" }]} items={publishers.map(({ handle, profile, projectCount, skillCount }) => ({
         id: handle, title: profile.name, description: getPublisherCardCopy(handle)[locale], group: profile.type,
         href: `${prefix}/skills-marketplace/${handle}`,
-        label: profile.type === "Organization" ? (zh ? "团队 / 组织" : "Organization") : (zh ? "创作者" : "Creator"),
-        footer: `${projectCount} ${zh ? "个项目" : "projects"} · ${skillCount} Skills`,
+        logo: profile.logo,
+        detail: `${projectCount} ${zh ? "个项目" : "projects"} · ${skillCount} Skills`,
       }))} />
     </section>
     <section id="browse" aria-labelledby="projects-title" className="mx-auto max-w-7xl scroll-mt-24 px-5 pb-20 sm:px-8">
-      <div className="mb-7"><h2 id="projects-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{zh ? "项目与 Skills" : "Projects and Skills"}</h2><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{zh ? "从 Ponytail 的代码复用、MausBot 的角色协作，到 Agent Desktop 的桌面操作，比较不同项目如何改善工作流；切换 Skills 查看可复用任务指引。" : "Compare code reuse with Ponytail, role-based collaboration with MausBot, and desktop control with Agent Desktop. Explore mechanisms for your own workflows, or switch to Skills for reusable task instructions."}</p></div>
+      <div className="mb-7"><h2 id="projects-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{zh ? "项目与 Skills" : "Projects and Skills"}</h2><p className="mt-3 text-sm leading-7 text-[var(--ob-color-text-subtle)]">{zh ? "按任务比较编程 Agent、设计工具和媒体软件，或切换到 Skills 查找可复用的任务指引。已知名称时，可以直接搜索项目、Skill 或发布者。" : "Compare coding agents, design tools, and media software by task, or switch to Skills for reusable instructions. Search by project, Skill, or publisher if you know the name."}</p></div>
       <p className="mb-6 text-sm"><Link href={`${prefix}/skills-marketplace/categories`} className="underline underline-offset-4">{zh ? "按任务浏览分类 →" : "Browse task categories →"}</Link></p>
-      <DirectoryTabs filters={zh ? { category: "任务分类", tag: "技术与用途", anyCategory: "不限分类", anyTag: "不限标签", reset: "清除筛选", empty: "没有符合当前条件的资源，请调整分类或标签。", results: "项匹配资源" } : { category: "Task category", tag: "Technology and purpose", anyCategory: "Any category", anyTag: "Any tag", reset: "Clear filters", empty: "No resources match. Change the category or tag to continue.", results: "matching resources" }} label={zh ? "内容类型" : "Content type"} tabs={[{ id: "project", label: zh ? "独立项目" : "Projects" }, { id: "skill", label: "Skills" }]} items={entries.map((entry) => ({
-        id: entry.id, title: entry.name, description: entry.description, href: entry.entryType === "skill" && !entry.hasLocalGuide ? undefined : entry.href, group: entry.entryType,
-        label: entry.kind, footer: entry.publisher, categories: entry.taxonomy.categories, tags: entry.taxonomy.tags,
-      }))} />
+      <DirectoryTabs
+        copy={{ ...listCopy, search: zh ? "搜索名称或发布者" : "Search names or publishers", detail: zh ? "分类与标签" : "Categories and tags", status: zh ? "入口" : "Destination" }}
+        filters={zh ? { category: "任务分类", tag: "技术与用途", anyCategory: "不限分类", anyTag: "不限标签" } : { category: "Task category", tag: "Technology and purpose", anyCategory: "Any category", anyTag: "Any tag" }}
+        label={zh ? "内容类型" : "Content type"}
+        tabs={[{ id: "project", label: zh ? "独立项目" : "Projects" }, { id: "skill", label: "Skills" }]}
+        items={entries.map((entry) => ({
+          id: entry.id, title: entry.name, description: entry.description, href: entry.href, group: entry.entryType,
+          subtitle: entry.publisher, categories: entry.taxonomy.categories, tags: entry.taxonomy.tags,
+          detail: entry.href.startsWith("/") ? (zh ? "本站详情" : "Local guide") : (zh ? "原始来源" : "Upstream source"),
+        }))} />
     </section>
     <CapabilitiesSection id="capabilities" title={capabilityCopy.title} description={capabilityCopy.description} items={capabilityCopy.items} context={{ locale, preview: capabilityCopy.preview, workflows: capabilityCopy.workflows }} />
     <FaqBand locale={locale} items={faq} />
