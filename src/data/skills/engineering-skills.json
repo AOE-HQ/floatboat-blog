@@ -2460,5 +2460,966 @@
         }
       }
     ]
+  },
+  {
+    "slug": "i-have-adhd",
+    "authorHandle": "ayghri",
+    "name": "I Have ADHD",
+    "publisher": "Ayoub Ghriss",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md",
+    "repositoryUrl": "https://github.com/ayghri/i-have-adhd",
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Installation by host",
+          "zh": "按宿主查看安装方式"
+        },
+        "href": "https://github.com/ayghri/i-have-adhd/blob/main/INSTALL.md"
+      },
+      {
+        "label": {
+          "en": "MIT source license",
+          "zh": "MIT 源码许可"
+        },
+        "href": "https://github.com/ayghri/i-have-adhd/blob/main/LICENSE"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "I Have ADHD Skill: Action-First Replies for Coding Agents",
+        "zh": "I Have ADHD Skill：让编程 Agent 先给行动与检查项"
+      },
+      "description": {
+        "en": "Put the next action first with I Have ADHD. The Skill structures coding-agent replies into short steps while keeping exact commands, evidence and safety checks.",
+        "zh": "让编程 Agent 先交代下一步，再用短步骤说明进度。I Have ADHD 可用于调试更新、方案选择和任务交接，同时保留命令、错误依据与必要的安全确认。"
+      },
+      "keywords": {
+        "en": [
+          "I Have ADHD",
+          "Agent Skill"
+        ],
+        "zh": [
+          "I Have ADHD",
+          "Agent 技能"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "I Have ADHD",
+        "zh": "I Have ADHD"
+      },
+      "description": {
+        "en": "I Have ADHD gives coding agents a response format with the next action up front, fewer tangents and a visible record of progress.",
+        "zh": "I Have ADHD 是给编程 Agent 的回复指引。先写下一步，再用短步骤和明确的状态交代剩余工作。"
+      }
+    },
+    "summary": {
+      "en": "Put the next action first, keep progress visible and reduce tangents in coding-agent replies.",
+      "zh": "让编程 Agent 先说下一步，清楚交代进度，减少回复中的岔题和套话。"
+    },
+    "cardDescription": {
+      "en": "Put the next action first, keep progress visible and reduce tangents in coding-agent replies.",
+      "zh": "让编程 Agent 先说下一步，清楚交代进度，减少回复中的岔题和套话。"
+    },
+    "overview": {
+      "en": {
+        "title": "What I Have ADHD does",
+        "paragraphs": [
+          "The Skill is an instruction file for response structure. It puts the next action first, breaks work into bounded steps and keeps the current state visible across turns. It preserves extra detail when the reader asks for an explanation or when ambiguity and safety make it necessary. That can trim output, while actual token usage depends on the task and host."
+        ]
+      },
+      "zh": {
+        "title": "I Have ADHD 如何工作",
+        "paragraphs": [
+          "这个 Skill 主要调整回复结构。第一行写可执行动作，多步任务拆成短步骤，跨轮对话里交代做到哪里。需要解释、消除歧义或确认危险操作时仍保留必要细节。减少赘述有机会缩短输出，实际 Token 消耗要按任务和宿主测量。"
+        ]
+      }
+    },
+    "upstreamInstall": "npx skills add ayghri/i-have-adhd --skill i-have-adhd",
+    "sectionTitles": {
+      "how": {
+        "en": "How to use I Have ADHD",
+        "zh": "如何使用 I Have ADHD"
+      },
+      "howDescription": {
+        "en": "Try the instruction on a task you can verify. Compare the opening line, the actual next action and whether the shorter answer still includes the evidence you need.",
+        "zh": "拿一条需要人接着处理的更新试用。先看第一行能否照着执行，再查错误码、文件路径、命令和确认条件是否都留在答复里。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "I Have ADHD use cases",
+        "zh": "I Have ADHD 的使用场景"
+      },
+      "description": {
+        "en": "Lead with a command when the next action is a check, or a decision when the reader must choose. Keep the error evidence and approval conditions that make either action safe.",
+        "zh": "调试更新要先让人知道重跑什么，方案比较要先交代要做哪项决定。两种回复可以一样直接，但保留的技术细节和风险说明各有侧重。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Unblock a failing test",
+            "zh": "复现失败的测试"
+          },
+          "description": {
+            "en": "Start with the test command and name the first failing assertion. Put the longer explanation after the action so a reader can reproduce the problem without scanning the entire update.",
+            "zh": "先给测试命令和第一处失败断言，再解释可能的原因。读者可以直接重跑，不用先从进度摘要中找执行入口。"
+          }
+        },
+        {
+          "title": {
+            "en": "Pick up interrupted work",
+            "zh": "中断后接回工作"
+          },
+          "description": {
+            "en": "Write the current checkpoint, completed check and remaining action in a small status update. When you return, you can continue from the same file and revision without asking where work stopped.",
+            "zh": "用几行写下当前检查点、已通过的验证和剩余动作。回来后能沿着同一个文件和版本继续，减少重新询问进度的来回。"
+          }
+        },
+        {
+          "title": {
+            "en": "Choose between two implementations",
+            "zh": "在两种实现之间做选择"
+          },
+          "description": {
+            "en": "Lead with the decision to make, then state the trade-off and consequence for each option. Keep the dependency or migration detail that could change the answer.",
+            "zh": "先写需要决定的事项，再交代两种做法的代价和影响。保留可能改变结论的依赖或迁移条件。"
+          }
+        },
+        {
+          "title": {
+            "en": "Ask before a destructive action",
+            "zh": "危险操作前清楚地确认"
+          },
+          "description": {
+            "en": "Put the requested approval and affected target first. Preserve the consequences and recovery path so a shorter reply still supports an informed decision.",
+            "zh": "把要确认的操作和影响范围放在第一行。保留后果与恢复方式，使简短的说明也能支持判断。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Use I Have ADHD to rewrite this debugging update. Lead with the exact test to rerun. Keep the failing assertion, error code and current blocker. If one detail is uncertain, say which check resolves it.",
+        "zh": "用 I Have ADHD 改写这段调试进度。第一行写要重跑的测试，保留失败断言、错误码和当前阻塞；如有不确定的细节，说明用哪项检查确认。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Load the response Skill",
+          "zh": "加载回复指引"
+        },
+        "description": {
+          "en": "Use the upstream install guide for your host and invoke the Skill in a coding-agent session.",
+          "zh": "按宿主的上游安装说明加载 Skill，在编程 Agent 会话中明确调用。"
+        }
+      },
+      {
+        "title": {
+          "en": "Specify the useful details",
+          "zh": "指出哪些信息必须保留"
+        },
+        "description": {
+          "en": "Give it one task and name information that must survive the rewrite, such as paths, commands or approval conditions.",
+          "zh": "给出一项具体任务，说明不能省略的路径、命令或确认条件。"
+        }
+      },
+      {
+        "title": {
+          "en": "Check the next action",
+          "zh": "检查下一步是否可执行"
+        },
+        "description": {
+          "en": "Read the first line and confirm it can be acted on. Ask for more detail if evidence or the reason for a decision is missing.",
+          "zh": "读第一行，确认能立刻照着做。如果缺少依据或决策理由，再要求展开。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What does the Skill change?",
+          "zh": "这个 Skill 主要改变什么？"
+        },
+        "answer": {
+          "en": "It changes how the agent presents an answer: an action comes first, and multi-step work is broken into short, ordered actions.",
+          "zh": "它调整回答的顺序和结构，让可执行动作先出现，多步工作用简明的编号列表交代。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I tell whether a shorter reply saves tokens?",
+          "zh": "怎么判断回复变短后实际省了多少 Token？"
+        },
+        "answer": {
+          "en": "Compare output usage on the same task and model, then check that both replies preserve the required commands and evidence. The Skill does not alter provider limits or billing rules.",
+          "zh": "用同一个任务和模型对照两次输出用量，再确认命令和依据都完整。额度与计费由服务商决定，回复规则不会改变这些条件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it still explain a difficult topic?",
+          "zh": "复杂问题还能要求详细解释吗？"
+        },
+        "answer": {
+          "en": "Yes. The source allows fuller explanations when requested while keeping the structure easy to scan.",
+          "zh": "可以。源文件明确允许按读者要求完整解释，仍然可以用小标题和可执行步骤组织内容。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it change input context or tool logs?",
+          "zh": "它会压缩输入上下文或工具日志吗？"
+        },
+        "answer": {
+          "en": "The instruction primarily shapes the response. Tool-output indexing or retrieval requires a separate workflow.",
+          "zh": "它主要调整回复结构。工具结果的索引和检索需要独立的工作流。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will it stay active in a new session?",
+          "zh": "开启新会话还会生效吗？"
+        },
+        "answer": {
+          "en": "The rules apply within a session. Reload the Skill or verify a documented host-specific startup option for new sessions.",
+          "zh": "默认作用于当前会话。新会话需要重新加载，或按宿主文档核对启动配置。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should commands and warnings be abbreviated?",
+          "zh": "命令与风险提醒也要缩写吗？"
+        },
+        "answer": {
+          "en": "Preserve exact commands, paths and safety conditions. The upstream treats risky or ambiguous actions as exceptions to brevity.",
+          "zh": "应保留精确命令、路径和安全条件。上游把危险或含糊的操作视为简洁规则的例外。"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "planning-with-files",
+    "authorHandle": "othmanadi",
+    "name": "Planning with Files",
+    "publisher": "Ahmad Othman Ammar Adi",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/OthmanAdi/planning-with-files/blob/master/skills/planning-with-files/SKILL.md",
+    "repositoryUrl": "https://github.com/OthmanAdi/planning-with-files",
+    "seo": {
+      "title": {
+        "en": "Planning with Files Skill: Persistent Markdown Plans for Agents",
+        "zh": "Planning with Files Skill：用 Markdown 保存 Agent 计划与进度"
+      },
+      "description": {
+        "en": "Planning with Files stores the plan, findings and progress in Markdown. Test recovery in a fresh session and check when your host needs a plugin or hooks.",
+        "zh": "计划、调研发现和验证结果分别写入三份 Markdown 文件。新会话可读取文件，再按记录继续工作。Planning with Files 的自动恢复取决于宿主插件和钩子配置。"
+      },
+      "keywords": {
+        "en": [
+          "Planning with Files Skill",
+          "file-based agent planning",
+          "agent task recovery"
+        ],
+        "zh": [
+          "Planning with Files Skill",
+          "Agent 文件规划",
+          "Agent 任务恢复"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Planning with Files Skill",
+        "zh": "Planning with Files Skill"
+      },
+      "description": {
+        "en": "Keep a long-running coding task on track by saving the plan, findings and evidence in project files that a new session can read.",
+        "zh": "把计划、发现和验证依据分别写入项目文件，让新的会话可以接着推进多阶段开发任务。"
+      }
+    },
+    "summary": {
+      "en": "A coding-agent Skill for durable Markdown plans, findings and progress logs, with optional automation through host-specific hooks.",
+      "zh": "面向编程 Agent 的文件规划 Skill，用 Markdown 保存计划、发现与进度，也可通过宿主支持的钩子自动带回计划信息。"
+    },
+    "cardDescription": {
+      "en": "Keep a task plan, findings, and verification log on disk so a coding agent can pick up long-running work.",
+      "zh": "把任务计划、发现和验证记录写入文件，便于编程 Agent 恢复多阶段工作。"
+    },
+    "upstreamInstall": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g",
+    "installation": {
+      "note": {
+        "en": "This upstream command installs the Skill bundle. Automatic plan recovery and hook behavior depend on the host, installation route and project trust. Consult the upstream installation matrix for your host.",
+        "zh": "上游命令安装 Skill 包。计划是否自动恢复、钩子何时触发，取决于宿主、安装方式及项目信任设置。按对应宿主查看上游安装矩阵。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "How Planning with Files preserves task state",
+        "paragraphs": [
+          "The workflow uses three project files. task_plan.md holds the goal, phase status and next action. findings.md keeps research and source notes. progress.md records what ran, what failed and which checks passed. The Skill asks the agent to reuse an existing plan and keep state current as work moves between phases. A new session can read these files and resume from the documented state. Automatic injection and lifecycle recovery depend on enabled hooks and the host. The upstream workflow treats reading local session records as a separate, explicit catch-up operation."
+        ]
+      },
+      "zh": {
+        "title": "Planning with Files 如何保留任务状态",
+        "paragraphs": [
+          "工作流将任务信息分在三个文件里。task_plan.md 记录目标、阶段状态和下一步，findings.md 保存调研发现与来源，progress.md 记录实际执行过的工作、失败情况和检查结果。项目已有计划时，Skill 要求先读取它，再按阶段更新。 新会话可以直接读取这些文件，再从已记录的状态继续。自动注入和会话恢复依赖宿主及启用的钩子。读取本机的 Agent 会话记录属于需要明确启用的独立追赶流程。"
+        ]
+      }
+    },
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Upstream installation matrix",
+          "zh": "上游安装方式对照"
+        },
+        "href": "https://github.com/OthmanAdi/planning-with-files/blob/master/docs/installation.md"
+      },
+      {
+        "label": {
+          "en": "Codex setup and hook documentation",
+          "zh": "Codex 配置与钩子说明"
+        },
+        "href": "https://github.com/OthmanAdi/planning-with-files/blob/master/docs/codex.md"
+      },
+      {
+        "label": {
+          "en": "MIT source license",
+          "zh": "MIT 源码许可"
+        },
+        "href": "https://github.com/OthmanAdi/planning-with-files/blob/master/LICENSE"
+      }
+    ],
+    "sectionTitles": {
+      "how": {
+        "en": "How to Use Planning with Files",
+        "zh": "如何使用 Planning with Files"
+      },
+      "howDescription": {
+        "en": "Start with one project and a goal you can verify. Carry the next action forward after each phase, and check that a fresh session can resume from the files before you rely on automatic recovery.",
+        "zh": "先选一个项目和可以验收的目标。每个阶段结束时更新下一步，再用新会话检验能否从文件恢复。需要自动恢复时，还要确认对应宿主的钩子确实启用。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Planning with Files use cases",
+        "zh": "Planning with Files 的使用场景"
+      },
+      "description": {
+        "en": "File-based planning is useful when work spans multiple sessions or reviewers. Preserve the next decision, what was tried, and which evidence belongs to the current revision.",
+        "zh": "任务跨会话或需要交接时，文件里的状态可以作为继续工作的起点。保留接下来要做的决定、已经尝试的方法，以及对应当前版本的证据。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Resume a migration after context resets",
+            "zh": "会话重置后接着做迁移"
+          },
+          "description": {
+            "en": "Split a database migration into inventory, dry run and rollout phases. Record the last verified snapshot and the first unchecked step so a fresh session can resume from the dry run without assuming the rollout was approved.",
+            "zh": "把数据库迁移拆成盘点、演练和上线。在文件中保存最后一次验证的数据快照，以及第一个尚未检查的步骤。新会话可以从演练接着做，同时知道上线仍需批准。"
+          }
+        },
+        {
+          "title": {
+            "en": "Keep findings separate during a comparison",
+            "zh": "对比调研时单独保存发现"
+          },
+          "description": {
+            "en": "Give a research session a short decision question, then store source links, dates and conflicting claims in findings.md. Keep the chosen criteria and next step in the plan so material copied from the web does not become a project instruction.",
+            "zh": "先用一句话写明要做的决定，再把来源、日期和互相冲突的说法记到 findings.md。将选定的比较标准和下一步留在计划里，避免网页内容混入项目指令。"
+          }
+        },
+        {
+          "title": {
+            "en": "Hand off a partially verified release",
+            "zh": "交接只验证了一部分的发布任务"
+          },
+          "description": {
+            "en": "Record the revision, exact checks that passed and the unresolved blocker in progress.md. A new reviewer can reproduce the missing check and see which conclusions belong to the previous run.",
+            "zh": "在 progress.md 中写清提交版本、已经通过的检查和未解决的阻塞。接手的人可以复现缺失的检查，也知道哪些结论只对应上一次运行。"
+          }
+        },
+        {
+          "title": {
+            "en": "Isolate two plans in the same repository",
+            "zh": "同一仓库同时跟踪两份计划"
+          },
+          "description": {
+            "en": "Use named plan directories for independent tasks and pin each host to the intended plan where supported. Confirm which plan is active before editing phase status so one thread does not advance the other task.",
+            "zh": "为互相独立的工作创建命名计划目录，在宿主支持时将每个会话绑定到对应计划。更新阶段前先确认当前计划，避免将另一项任务误标为已完成。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Use Planning with Files for a multi-step database migration. Record the phases and next action in task_plan.md, source findings in findings.md, and checks in progress.md. Start with a read-only inventory, and wait for approval before changing the database.",
+        "zh": "用 Planning with Files 跟踪一次分阶段数据库迁移。把阶段和下一步写进 task_plan.md，把来源发现放进 findings.md，把检查结果写进 progress.md。先做只读盘点，变更数据库前等我确认。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Install the Skill and confirm the project scope",
+          "zh": "安装 Skill 并确认项目范围"
+        },
+        "description": {
+          "en": "Use the upstream install command for your compatible host. Start in the intended project directory and ask the agent to use Planning with Files for the specific task.",
+          "zh": "在兼容宿主中使用上游安装方式。进入目标项目目录，再明确要求 Agent 针对这项任务使用 Planning with Files。"
+        }
+      },
+      {
+        "title": {
+          "en": "Create or resume the three planning files",
+          "zh": "创建或恢复三份计划文件"
+        },
+        "description": {
+          "en": "Read an existing plan before making changes. Record the goal, phases and one next action in the plan, and put source notes and executed checks in their respective files.",
+          "zh": "已有计划时先读取。将目标、阶段和一个明确的下一步写入计划，将来源笔记和实际验证分别放进对应文件。"
+        }
+      },
+      {
+        "title": {
+          "en": "Verify the handoff in a fresh session",
+          "zh": "用新会话验证交接"
+        },
+        "description": {
+          "en": "Ask a new session to read the project files and identify the pending action. If you need automatic recovery, verify the host’s hook setup using its upstream guide before depending on it.",
+          "zh": "让新会话读项目文件并复述待办动作。需要自动恢复时，再按宿主的上游指南检查钩子是否有效。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What is saved in each of the three Markdown files?",
+          "zh": "三份 Markdown 文件各存什么？"
+        },
+        "answer": {
+          "en": "task_plan.md holds the goal, phases and next action, findings.md stores research and references, and progress.md records execution and test evidence.",
+          "zh": "task_plan.md 保存目标、阶段和下一步，findings.md 保存调研与参考资料，progress.md 记录执行过程和测试依据。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will the Skill automatically load my plan after a new session starts?",
+          "zh": "新会话启动时会自动加载计划吗？"
+        },
+        "answer": {
+          "en": "It depends on the host and install route. The Claude Code plugin has a startup hook, while its standalone Skill hooks are scoped to Skill activation.",
+          "zh": "取决于宿主和安装方式。Claude Code 插件有启动钩子，独立 Skill 的钩子则在该 Skill 被调用后才注册。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does installing the Skill also install slash commands?",
+          "zh": "安装 Skill 会同时安装斜杠命令吗？"
+        },
+        "answer": {
+          "en": "The documented standalone Skills CLI route installs the Skill bundle. Host-specific plugin commands and lifecycle hooks are separate, so check the installation matrix for the route you chose.",
+          "zh": "上游 Skills CLI 安装的是 Skill 包。宿主专属的命令和生命周期钩子需要按所选插件或配置方式单独核对。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does automatic recovery read my agent chat history?",
+          "zh": "自动恢复会读取 Agent 聊天记录吗？"
+        },
+        "answer": {
+          "en": "Automatic recovery reads planning files. The documented catch-up flags for same-project session records require an explicit action and have different metadata and replay modes.",
+          "zh": "自动恢复读取项目计划文件。读取同一项目的本机会话记录需要显式选择对应选项，并区分统计和有限回放模式。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can two agents use separate plans in one checkout?",
+          "zh": "同一个工作目录里的两个 Agent 能用不同计划吗？"
+        },
+        "answer": {
+          "en": "The upstream supports named plan directories and plan pinning on compatible hosts. Verify the plan binding or use separate worktrees before running concurrent tasks.",
+          "zh": "上游支持命名计划目录，兼容宿主可以将会话固定到指定计划。并行前确认绑定，或为各任务使用独立工作树。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does a completion hook prove my tests passed?",
+          "zh": "完成钩子能证明测试通过吗？"
+        },
+        "answer": {
+          "en": "The default stop behavior is advisory. Optional gating depends on the host and checks plan state and configured evidence. Review the actual test output before closing the task.",
+          "zh": "默认停止检查只提供提示，可选的强制检查依赖宿主、计划状态和对应依据。关闭任务前仍应核对实际的测试输出。"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "setup-matt-pocock-skills",
+    "authorHandle": "mattpocock",
+    "name": "Setup Matt Pocock Skills",
+    "publisher": "Matt Pocock",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/setup-matt-pocock-skills/SKILL.md",
+    "repositoryUrl": "https://github.com/mattpocock/skills",
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Upstream setup guide",
+          "zh": "上游配置说明"
+        },
+        "href": "https://github.com/mattpocock/skills/blob/main/docs/engineering/setup-matt-pocock-skills.md"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Setup Matt Pocock Skills: Configure Trackers, Labels and Docs",
+        "zh": "Setup Matt Pocock Skills：配置 Issue 跟踪器、标签与领域文档"
+      },
+      "description": {
+        "en": "Set up Matt Pocock’s engineering Skills with the repository’s issue tracker, triage labels and domain docs. Inspect the configuration draft before writing it.",
+        "zh": "使用 Setup Matt Pocock Skills 盘点仓库已有的 Issue 跟踪器、分诊标签和术语表。先审阅将写入根指令及 docs/agents/ 的配置，再用一条实际 Issue 检查。"
+      },
+      "keywords": {
+        "en": [
+          "Setup Matt Pocock Skills",
+          "Agent Skill"
+        ],
+        "zh": [
+          "Setup Matt Pocock Skills",
+          "Agent 技能"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Setup Matt Pocock Skills",
+        "zh": "Setup Matt Pocock Skills"
+      },
+      "description": {
+        "en": "Set up the repository context that Matt Pocock’s engineering Skills use to find issues, apply triage labels and read domain decisions.",
+        "zh": "在仓库里配置 Matt Pocock 工程 Skills 需要的 Issue 跟踪器、分诊标签和领域文档位置。"
+      }
+    },
+    "summary": {
+      "en": "Configure the issue tracker, triage labels and domain documentation for Matt Pocock’s engineering Skills.",
+      "zh": "为 Matt Pocock 工程 Skills 配置 Issue 跟踪器、分诊标签与领域文档。"
+    },
+    "cardDescription": {
+      "en": "Configure the issue tracker, triage labels and domain documentation for Matt Pocock’s engineering Skills.",
+      "zh": "为 Matt Pocock 工程 Skills 配置 Issue 跟踪器、分诊标签与领域文档。"
+    },
+    "overview": {
+      "en": {
+        "title": "What Setup Matt Pocock Skills does",
+        "paragraphs": [
+          "Setup explores the repository, proposes an issue tracker and domain-document layout, and maps triage roles when Triage is installed. It drafts a root agent-instructions section and reference files under docs/agents/ for review before writing. The resulting files are shared configuration for downstream Skills such as Triage."
+        ]
+      },
+      "zh": {
+        "title": "Setup Matt Pocock Skills 如何工作",
+        "paragraphs": [
+          "Setup 先检查仓库现状，再提出跟踪器和领域文档布局。装有 Triage 时，它还会确认分诊角色对应哪些标签。配置以仓库根目录的 Agent 指令及 docs/agents/ 中的参考文件为主，写入前先展示草案，供 Triage 等下游 Skill 读取。"
+        ]
+      }
+    },
+    "upstreamInstall": "npx skills add mattpocock/skills --skill setup-matt-pocock-skills",
+    "sectionTitles": {
+      "how": {
+        "en": "How to use Setup Matt Pocock Skills",
+        "zh": "如何使用 Setup Matt Pocock Skills"
+      },
+      "howDescription": {
+        "en": "Inspect the repository’s existing tracker and domain docs before drafting configuration. Review the exact root instruction block, files under docs/agents/ and any labels that would change upstream.",
+        "zh": "以仓库现有约定为起点，先核对远端、分诊标签和术语表位置。确认写入哪份根指令、哪些配置文件和哪些远端标签后，再允许实际修改。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Setup Matt Pocock Skills use cases",
+        "zh": "Setup Matt Pocock Skills 的使用场景"
+      },
+      "description": {
+        "en": "The configuration is ready when a downstream Skill can find the intended issue and the right domain docs. Use one existing issue and one decision record to check both paths.",
+        "zh": "配置写完后，下游 Skill 应该能找到正确的 Issue 和领域资料。可以用仓库里现有的一条 Issue 和一份决策记录验证。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Keep an established tracker",
+            "zh": "沿用已有的 Issue 跟踪器"
+          },
+          "description": {
+            "en": "When a repository already uses GitHub or GitLab, inspect its remote and current issue workflow. Confirm which repository should receive updates so an agent does not write to a fork.",
+            "zh": "仓库已有 GitHub 或 GitLab 时，先检查远端地址和现行约定。明确后续更新应该写到哪个仓库，防止 Agent 把记录写进 fork。"
+          }
+        },
+        {
+          "title": {
+            "en": "Reuse an existing label vocabulary",
+            "zh": "保留团队现有标签"
+          },
+          "description": {
+            "en": "If the team already uses custom triage names, map the five roles to those exact strings. Check a sample issue and avoid creating a parallel set of labels.",
+            "zh": "如果团队已有自定义分诊标签，将五种角色逐一对应到实际名称。用一条 Issue 检查映射，避免再创建一套重复标签。"
+          }
+        },
+        {
+          "title": {
+            "en": "Set up a local backlog",
+            "zh": "为本地仓库配置待办"
+          },
+          "description": {
+            "en": "For a solo repository, select local Markdown and write down where issues are stored. Check that a new agent session can find one issue without assuming a hosted tracker.",
+            "zh": "个人仓库可以使用本地 Markdown，写清 Issue 保存位置。让一个新会话按配置定位具体待办，验证它不会默认访问托管服务。"
+          }
+        },
+        {
+          "title": {
+            "en": "Locate domain docs in a monorepo",
+            "zh": "标明 monorepo 的领域文档"
+          },
+          "description": {
+            "en": "Identify which packages have separate domain language or decisions, then review a glossary map that points agents to the correct documentation for each area.",
+            "zh": "找出使用独立术语或决策记录的包，审阅术语表索引，让 Agent 能按任务所属模块选择正确的文档。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Use Setup Matt Pocock Skills to inspect our existing issue tracker and glossary. Show the proposed docs/agents/ configuration and any label changes. Wait before writing files or changing the tracker.",
+        "zh": "用 Setup Matt Pocock Skills 检查我们的 Issue 跟踪器和术语表。展示 docs/agents/ 配置草案与可能的标签改动，写文件或更改远端前先等我确认。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Inspect the repository",
+          "zh": "查看仓库现有配置"
+        },
+        "description": {
+          "en": "Read its remotes, root agent instructions, existing tracker files and glossary before proposing any new structure.",
+          "zh": "先读远端、根目录 Agent 指令、已有跟踪器配置及术语表，再判断需要增加什么。"
+        }
+      },
+      {
+        "title": {
+          "en": "Review the configuration draft",
+          "zh": "审阅配置草案"
+        },
+        "description": {
+          "en": "Confirm the tracker and domain layout. If Triage is installed, verify the role-to-label mapping and any remote changes.",
+          "zh": "确认跟踪器和领域文档布局。已安装 Triage 时，核对角色标签映射以及可能影响远端的改动。"
+        }
+      },
+      {
+        "title": {
+          "en": "Write and spot-check",
+          "zh": "写入并抽查"
+        },
+        "description": {
+          "en": "After approval, write the configuration and have a downstream Skill identify the intended tracker and docs from it.",
+          "zh": "获批后写入配置，再用下游 Skill 核对它能否读取到正确的跟踪器和文档。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "When should I run Setup?",
+          "zh": "什么时候需要运行 Setup？"
+        },
+        "answer": {
+          "en": "Run it before first using engineering Skills that depend on repository-specific tracker, label or domain-document settings.",
+          "zh": "在首次使用依赖仓库跟踪器、标签或领域文档的工程 Skills 前运行，以便先统一配置。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does this install the other Skills?",
+          "zh": "会同时安装其他 Skills 吗？"
+        },
+        "answer": {
+          "en": "Setup itself configures the current repository. Install the individual downstream Skills or bundle through its documented installation route.",
+          "zh": "Setup 配置当前仓库。其他工程 Skills 需要按上游安装说明单独安装或从套件加载。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use a local issue tracker?",
+          "zh": "能用本地 Issue 跟踪吗？"
+        },
+        "answer": {
+          "en": "Yes. Local Markdown is a documented choice. The setup records the location and conventions instead of assuming GitHub.",
+          "zh": "可以使用本地 Markdown。配置里写清文件存放位置和约定，后续 Skill 可以据此查找。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it always configure triage labels?",
+          "zh": "每次都会配置分诊标签吗？"
+        },
+        "answer": {
+          "en": "That section depends on whether Triage is present. If it is installed, confirm whether to keep the defaults or map existing labels.",
+          "zh": "已安装 Triage 时才需要确认标签，选择默认名称或映射团队现有标签。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I review before applying it?",
+          "zh": "写入前要检查什么？"
+        },
+        "answer": {
+          "en": "Read the proposed Agent skills block, docs/agents/ references and any remote label changes against your current repository conventions.",
+          "zh": "核对 Agent skills 区块、docs/agents/ 中的参考文档，以及远端标签的可能变化是否符合现有约定。"
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need a glossary map?",
+          "zh": "一定要用术语表索引吗？"
+        },
+        "answer": {
+          "en": "Most repositories use one glossary. A multi-context map is useful when different packages have distinct vocabulary and decisions.",
+          "zh": "多数仓库使用单份术语表即可。只有多个包各有领域词汇和决策时，才需要多上下文索引。"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "triage",
+    "authorHandle": "mattpocock",
+    "name": "Triage",
+    "publisher": "Matt Pocock",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/triage/SKILL.md",
+    "repositoryUrl": "https://github.com/mattpocock/skills",
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Agent-ready brief reference",
+          "zh": "Agent 任务书参考"
+        },
+        "href": "https://github.com/mattpocock/skills/blob/main/skills/engineering/triage/AGENT-BRIEF.md"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Triage Skill: Verify Issues and Write Agent-Ready Briefs",
+        "zh": "Triage Skill：核查 Issue、建议状态与编写 Agent 任务书"
+      },
+      "description": {
+        "en": "Matt Pocock’s Triage Skill checks issue evidence, maps categories and states, and drafts a follow-up or agent brief using the repository’s tracker configuration.",
+        "zh": "一条 Issue 缺少复现、已有实现还是可以交给 Agent？Matt Pocock 的 Triage Skill 核查复现和代码依据，再按仓库的标签映射给出状态建议、补充问题或实施任务书。"
+      },
+      "keywords": {
+        "en": [
+          "Triage",
+          "Agent Skill"
+        ],
+        "zh": [
+          "Triage",
+          "Agent 技能"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Triage",
+        "zh": "Triage"
+      },
+      "description": {
+        "en": "Triage reviews issue evidence, moves work through repository-specific states and prepares a brief when an agent can take the next step.",
+        "zh": "Triage 帮助维护者核查 Issue 依据、按仓库约定标记状态，并为能交给 Agent 的任务整理说明。"
+      }
+    },
+    "summary": {
+      "en": "Check issue evidence and assign a clear state before handing implementation to an agent or maintainer.",
+      "zh": "先核查 Issue 证据并标清状态，再将实施工作交给 Agent 或维护者。"
+    },
+    "cardDescription": {
+      "en": "Check issue evidence and assign a clear state before handing implementation to an agent or maintainer.",
+      "zh": "先核查 Issue 证据并标清状态，再将实施工作交给 Agent 或维护者。"
+    },
+    "overview": {
+      "en": {
+        "title": "What Triage does",
+        "paragraphs": [
+          "Matt Pocock’s Triage Skill gives an issue one category and one state. It looks at the report, code, domain glossary and previous decisions before recommending whether to request more evidence, prepare a brief, assign human work or close the request. External pull requests join the queue when the repository enables that surface. Setup Matt Pocock Skills provides the tracker and label mapping."
+        ]
+      },
+      "zh": {
+        "title": "Triage 如何工作",
+        "paragraphs": [
+          "Matt Pocock 的 Triage Skill 为 Issue 确定一种类别和一个状态。它先读问题、代码、术语表和历史决定，再建议补充依据、编写任务书、交给维护者或关闭请求。仓库启用外部 PR 分诊时，相关 PR 也可进入待办。跟踪器和标签映射来自 Setup Matt Pocock Skills。"
+        ]
+      }
+    },
+    "upstreamInstall": "npx skills add mattpocock/skills --skill triage",
+    "sectionTitles": {
+      "how": {
+        "en": "How to use Triage",
+        "zh": "如何使用 Triage"
+      },
+      "howDescription": {
+        "en": "Choose one issue or PR and load the repository’s role mapping. Present the evidence, recommended state and draft comment separately so the maintainer can review each before any tracker update.",
+        "zh": "从一条明确的 Issue 或 PR 开始，读取项目里的角色映射。把取证结果、建议状态和外部评论草案分开交给维护者，确认后再写入跟踪器。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Triage use cases",
+        "zh": "Triage 的使用场景"
+      },
+      "description": {
+        "en": "An issue is ready for an agent when the expected behavior and verification are clear. If the evidence cannot support that decision yet, record the missing detail and who can provide it.",
+        "zh": "分诊要交代问题已经证实到哪一步、还缺什么依据、接下来由谁处理。只有预期行为和验收方式都清楚时，才适合交给 Agent 实施。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Ask for a useful reproduction",
+            "zh": "向报告者索取有效复现"
+          },
+          "description": {
+            "en": "When a bug report lacks a revision or expected result, identify the single piece of evidence that would unblock diagnosis and prepare a focused request for the reporter.",
+            "zh": "问题缺少版本或预期结果时，先确定哪条信息最能推进诊断。只问需要补充的证据，避免让报告者重写整份问题。"
+          }
+        },
+        {
+          "title": {
+            "en": "Catch an already implemented request",
+            "zh": "识别仓库已经支持的需求"
+          },
+          "description": {
+            "en": "Search by domain concept, not just the wording of the issue. Record where the behavior already exists and propose closure with evidence a maintainer can inspect.",
+            "zh": "按领域概念查找现有实现，不能只搜索 Issue 原文。记录功能的位置和核查依据，再建议维护者是否关闭这条请求。"
+          }
+        },
+        {
+          "title": {
+            "en": "Prepare bounded work for an agent",
+            "zh": "给 Agent 准备有边界的任务"
+          },
+          "description": {
+            "en": "When behavior and scope are clear, write a brief with the relevant files, expected result and validation. Include what the agent must leave unchanged so the assignment is reviewable.",
+            "zh": "行为和范围已明确时，在说明里列出相关文件、预期行为、验收方式及必须保留的现有行为，让结果可以独立复核。"
+          }
+        },
+        {
+          "title": {
+            "en": "Route an external pull request",
+            "zh": "处理外部 Pull Request"
+          },
+          "description": {
+            "en": "If external PR triage is enabled, inspect the diff and checks alongside its description. Separate a small agent follow-up from the human decision to accept or merge the change.",
+            "zh": "仓库启用外部 PR 分诊后，同时查看描述、差异和检查状态。把 Agent 可以跟进的小改动与需要维护者判断的合并决定分开。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Use Matt Pocock’s Triage on issue #42. Check the reproduction, related code and prior decisions. Recommend one category and state, and draft an agent brief if evidence is sufficient. Do not post until I approve.",
+        "zh": "用 Matt Pocock 的 Triage 审阅 Issue #42。核查复现、相关代码和历史决定，给出一个类别和一个状态。证据充分时起草 Agent 任务书，获得确认后再发到跟踪器。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Load the tracker and labels",
+          "zh": "读取跟踪器和标签配置"
+        },
+        "description": {
+          "en": "Read the repository’s configuration and confirm which issue or PR should be reviewed.",
+          "zh": "查看仓库现有分诊配置，并确认这次要审阅的 Issue 或 PR。"
+        }
+      },
+      {
+        "title": {
+          "en": "Gather evidence before assigning a state",
+          "zh": "先取证再给出状态"
+        },
+        "description": {
+          "en": "Read the thread and related code. Check for conflicting labels, an existing implementation, prior decisions and missing evidence.",
+          "zh": "阅读讨论和相关代码，检查标签冲突、已有实现、历史决定及仍缺少的证据。"
+        }
+      },
+      {
+        "title": {
+          "en": "Show the proposed update",
+          "zh": "展示建议更新"
+        },
+        "description": {
+          "en": "Present the category, state and brief or follow-up question. Apply approved changes through the configured tracker.",
+          "zh": "给出类别、状态和任务书或追问草案，确认后通过已配置的跟踪器更新。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What is the difference between category and state?",
+          "zh": "类别和状态有什么区别？"
+        },
+        "answer": {
+          "en": "The category describes whether the request is a bug or enhancement. The state says what needs to happen next and who can act.",
+          "zh": "类别区分缺陷与增强请求。状态说明工作接下来需要什么，以及下一步由谁负责。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if the issue has conflicting states?",
+          "zh": "一条 Issue 有多个相互冲突的状态怎么办？"
+        },
+        "answer": {
+          "en": "The upstream Skill calls for flagging conflicting states and asking a maintainer before proceeding with changes.",
+          "zh": "按上游指引先指出冲突，由维护者确认正确状态后再执行后续操作。"
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to configure the repository first?",
+          "zh": "需要先配置仓库吗？"
+        },
+        "answer": {
+          "en": "Triage expects the tracker and role mapping. Run Setup Matt Pocock Skills if those references are missing.",
+          "zh": "Triage 需要跟踪器与角色标签映射。缺少这些配置时，先运行 Setup Matt Pocock Skills。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it review external PRs?",
+          "zh": "可以分诊外部 PR 吗？"
+        },
+        "answer": {
+          "en": "Yes, when the repository’s configuration enables that request surface. Its default discovery also distinguishes external contributors from collaborators.",
+          "zh": "仓库启用这类请求后可以。查找待处理 PR 时，上游规则区分外部贡献者和仓库协作者。"
+        }
+      },
+      {
+        "question": {
+          "en": "What belongs in an agent-ready brief?",
+          "zh": "可交给 Agent 的任务书应该包含什么？"
+        },
+        "answer": {
+          "en": "Record the intended behavior, supporting evidence and clear checks. Flag open design decisions that still require human input.",
+          "zh": "写明预期行为、已核实的依据和验证方式，并标出仍然需要人决定的问题。"
+        }
+      },
+      {
+        "question": {
+          "en": "Will a Triage comment identify its source?",
+          "zh": "发布的分诊评论会标明由谁生成吗？"
+        },
+        "answer": {
+          "en": "The upstream instructions require an AI-triage disclosure on comments or issues it posts. Review and authorize any external update first.",
+          "zh": "上游要求其发出的评论或 Issue 声明由 AI 分诊生成。发布前先审阅内容并确认授权。"
+        }
+      }
+    ]
   }
 ]

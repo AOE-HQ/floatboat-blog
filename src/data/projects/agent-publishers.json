@@ -1882,5 +1882,1367 @@
         "href": "/zh/skills-marketplace/stablyai/orca"
       }
     }
+  },
+  "nvidia": {
+    "name": "NVIDIA",
+    "type": "Organization",
+    "profileUrl": "https://github.com/NVIDIA",
+    "logo": "/blog/brand/publishers/nvidia.webp",
+    "tags": {
+      "en": [
+        "AI infrastructure",
+        "Enterprise data"
+      ],
+      "zh": [
+        "AI 基础设施",
+        "企业数据"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/NVIDIA",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.nvidia.com/",
+        "label": {
+          "en": "Official website",
+          "zh": "官方网站"
+        }
+      },
+      {
+        "href": "https://developer.nvidia.com/topics/ai/agent-knowledge-foundation",
+        "label": {
+          "en": "Agent Knowledge Foundation",
+          "zh": "Agent Knowledge Foundation"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "NVIDIA Auto Ontology",
+        "url": "https://github.com/NVIDIA/auto-ontology",
+        "en": {
+          "kind": "Data Semantics Framework",
+          "description": "Map business terms and reviewed SQL to database evidence for agent reporting and data questions."
+        },
+        "zh": {
+          "kind": "数据语义框架",
+          "description": "把业务术语、审核过的 SQL 与数据表对应起来，为 Agent 问答和报表提供依据。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "NVIDIA Developer Projects: AI Infrastructure and Data Semantics",
+      "seoDescription": "NVIDIA’s developer portfolio spans CUDA, inference and enterprise data tools. See where Auto Ontology fits and how to find the source and license for each project.",
+      "heroTitle": "NVIDIA open-source software",
+      "heroDescription": "Publishes AI infrastructure and developer tools, including a semantic layer for enterprise data.",
+      "overview": {
+        "title": "NVIDIA’s software and developer ecosystem",
+        "paragraphs": [
+          "NVIDIA develops accelerated computing hardware and software for applications from graphics to AI. Its public developer ecosystem includes the CUDA platform, inference software and open-source repositories across several domains. The license and environment requirements depend on the individual project.",
+          "Auto Ontology addresses a separate layer of the AI stack: giving agents business definitions and evidence before they query enterprise databases. You can evaluate it alongside your reporting tools with a sample source, analyst-owned metrics and a small set of known answers."
+        ]
+      },
+      "aboutTitle": "NVIDIA’s software and developer ecosystem",
+      "about": "NVIDIA develops accelerated computing hardware and software for applications from graphics to AI. Its public developer ecosystem includes the CUDA platform, inference software and open-source repositories across several domains. The license and environment requirements depend on the individual project.",
+      "projectsTitle": "NVIDIA open-source projects",
+      "projectsIntro": "Auto Ontology sits at the data-definition layer of NVIDIA’s developer ecosystem. The repository documents its deployment alongside a database, plus separate instructions for setup, semantic modeling and query verification.",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "What does NVIDIA publish for developers?",
+          "answer": "NVIDIA publishes accelerated computing tools, model-serving software and projects such as Auto Ontology, with requirements documented by each upstream repository."
+        },
+        {
+          "question": "Which NVIDIA repository covers enterprise data semantics?",
+          "answer": "NVIDIA/auto-ontology maps business terms, columns and database relationships and exposes tools for checking and answering questions."
+        },
+        {
+          "question": "Where are NVIDIA’s ontology Skills maintained?",
+          "answer": "The Auto Ontology repository documents the setup, management and query Skills, and the NVIDIA Skills catalog also lists them."
+        },
+        {
+          "question": "Do NVIDIA repositories share a license?",
+          "answer": "Licenses vary by project. Auto Ontology’s source is Apache-2.0, with separate notices for third-party material."
+        },
+        {
+          "question": "Where should I check model and deployment requirements?",
+          "answer": "Use the project README and deployment guide for configured inference endpoints, credentials, services and supported database setup."
+        },
+        {
+          "question": "Where does NVIDIA place Auto Ontology in the AI stack?",
+          "answer": "NVIDIA groups it under Agent Knowledge Foundation. Its role is to provide business definitions and database context, alongside other tools in the wider data and inference stack."
+        }
+      ],
+      "ctaTitle": "Explore tools for data workflows",
+      "ctaDescription": "Find resources for checking business definitions, query evidence and the inputs you hand to an Agent.",
+      "ctaPrimary": {
+        "label": "Browse resource categories",
+        "href": "/skills-marketplace/categories"
+      }
+    },
+    "zh": {
+      "seoTitle": "NVIDIA 开源项目：从加速计算、模型推理到企业数据语义层",
+      "seoDescription": "NVIDIA 面向开发者提供 CUDA、推理工具和数据语义项目。按工作流里的职责区分这些工具，查找对应上游，并核对 Auto Ontology 的源码、配套 Skills 和运行条件。",
+      "heroTitle": "NVIDIA 开源项目",
+      "heroDescription": "发布 AI 基础设施与开发工具，包括面向企业数据的语义层框架。",
+      "overview": {
+        "title": "NVIDIA 的软件与开发者生态",
+        "paragraphs": [
+          "NVIDIA 为图形和 AI 等场景开发加速计算硬件与软件。公开的开发者生态涵盖 CUDA 平台、推理软件以及不同领域的开源仓库。许可和环境要求随项目而定，可以从组织主页查阅各仓库。",
+          "Auto Ontology 处理的是数据问答的一环：在 Agent 查询数据库前给它业务定义和可核对的依据。用示例数据、已明确负责人的指标和一组有标准答案的问题，就能评估它是否适合自己的报表工作流。"
+        ]
+      },
+      "aboutTitle": "NVIDIA 的软件与开发者生态",
+      "about": "NVIDIA 为图形和 AI 等场景开发加速计算硬件与软件。公开的开发者生态涵盖 CUDA 平台、推理软件以及不同领域的开源仓库。许可和环境要求随项目而定，可以从组织主页查阅各仓库。",
+      "projectsTitle": "NVIDIA 数据语义项目",
+      "projectsIntro": "Auto Ontology 属于 NVIDIA 开发生态中的数据定义层。上游说明如何在数据库旁部署语义服务，也分别提供部署、语义建模与查询验证指引。",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "NVIDIA 面向开发者发布哪些工具？",
+          "answer": "公开的开发工具涵盖加速计算、模型推理和数据语义等方向。具体运行环境可在各项目的上游仓库查到。"
+        },
+        {
+          "question": "哪个 NVIDIA 项目处理企业数据语义？",
+          "answer": "NVIDIA/auto-ontology 将业务术语映射到字段、指标定义和表关系，并提供检查问题覆盖范围和查询的工具。"
+        },
+        {
+          "question": "NVIDIA 的 Ontology Skills 在哪里？",
+          "answer": "Auto Ontology 仓库记录了部署、管理与查询 Skills，NVIDIA Skills 的公开目录也列出了这三项。"
+        },
+        {
+          "question": "NVIDIA 的仓库统一采用一种许可证吗？",
+          "answer": "需要逐项目核对。Auto Ontology 源码采用 Apache-2.0，第三方材料另有相应声明。"
+        },
+        {
+          "question": "在哪里查模型和部署要求？",
+          "answer": "查看项目 README 与部署指南，核对实际使用的推理端点、凭据、配套服务和数据库配置。"
+        },
+        {
+          "question": "NVIDIA 将 Auto Ontology 放在 AI 技术栈的哪一层？",
+          "answer": "NVIDIA 将它归入 Agent Knowledge Foundation。它负责为企业数据提供业务定义和数据库上下文，与负责推理或加速计算的工具分工不同。"
+        }
+      ],
+      "ctaTitle": "浏览数据工作流资源",
+      "ctaDescription": "按业务定义、查询依据和输入数据选择适合自己流程的资源。",
+      "ctaPrimary": {
+        "label": "浏览资源分类",
+        "href": "/zh/skills-marketplace/categories"
+      }
+    }
+  },
+  "storytold": {
+    "name": "ArtCraft",
+    "type": "Organization",
+    "profileUrl": "https://github.com/storytold",
+    "logo": "/blog/brand/publishers/storytold.webp",
+    "tags": {
+      "en": [
+        "Creative software",
+        "Rust"
+      ],
+      "zh": [
+        "创意软件",
+        "Rust"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/storytold",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://getartcraft.com/",
+        "label": {
+          "en": "Official website",
+          "zh": "官方网站"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Craft Anything",
+        "url": "https://github.com/storytold/craft-anything",
+        "en": {
+          "kind": "Software Inspection and Rebuild Tool",
+          "description": "Capture software behavior, brief a coding agent, and compare a new implementation with the reference."
+        },
+        "zh": {
+          "kind": "软件取证与重建工具",
+          "description": "记录软件行为、给编程 Agent 提供任务说明，再将新实现与参考对象对照。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "ArtCraft: The Storytold Organization and Its Creative Tools",
+      "seoDescription": "ArtCraft publishes PhotoCraft, FilmCraft and Craft Anything under the storytold account. Find the organization and distinguish editing tools from software inspection.",
+      "heroTitle": "ArtCraft open-source projects",
+      "heroDescription": "Publishes creative software and Rust tools for editing media, inspecting interfaces, and building prototypes.",
+      "overview": {
+        "title": "ArtCraft’s tools for makers and creative developers",
+        "paragraphs": [
+          "ArtCraft publishes open-source tools and models for artists, designers and builders under the storytold GitHub organization. Its public projects span photo editing, video editing and creative production, including PhotoCraft, FilmCraft and the ArtCraft engine.",
+          "Craft Anything takes a different part of the creative workflow: studying a permitted software reference and handing a new implementation to a coding agent. The observations and comparison results can serve as acceptance evidence when building your own prototype."
+        ]
+      },
+      "aboutTitle": "ArtCraft’s tools for makers and creative developers",
+      "about": "ArtCraft publishes open-source tools and models for artists, designers and builders under the storytold GitHub organization. Its public projects span photo editing, video editing and creative production, including PhotoCraft, FilmCraft and the ArtCraft engine.",
+      "projectsTitle": "ArtCraft software projects",
+      "projectsIntro": "Craft Anything covers software inspection and rebuilds, while PhotoCraft and FilmCraft cover media editing. ArtCraft’s organization keeps those source repositories separate, so follow the one that matches the work.",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "Why does the GitHub link use storytold?",
+          "answer": "ArtCraft is the public organization name on GitHub, while storytold is its account handle and the owner of Craft Anything."
+        },
+        {
+          "question": "Does ArtCraft also make editing tools?",
+          "answer": "Yes. Its public GitHub organization lists PhotoCraft for photo editing and FilmCraft for nonlinear video editing, alongside other creative projects."
+        },
+        {
+          "question": "Which project collects evidence for a software rebuild?",
+          "answer": "Craft Anything captures visible behavior by default and keeps comparison results beside the new implementation for review."
+        },
+        {
+          "question": "Where are ArtCraft’s downloads published?",
+          "answer": "Use the official ArtCraft site for its product lineup and the relevant GitHub Releases page for platform builds and version notes."
+        },
+        {
+          "question": "Are ArtCraft logos included in the source license?",
+          "answer": "The Craft Anything README separates ArtCraft marks from its dual source license. Asset notices identify separate licensing for bundled materials."
+        },
+        {
+          "question": "Where can I follow ArtCraft’s work across projects?",
+          "answer": "Use the storytold GitHub organization to see individual repositories and recent changes. The ArtCraft website provides the application lineup and points to project-specific downloads."
+        }
+      ],
+      "ctaTitle": "Explore tools for interface and software work",
+      "ctaDescription": "Browse resources for observing interfaces, specifying behavior and validating new implementations.",
+      "ctaPrimary": {
+        "label": "Browse resource categories",
+        "href": "/skills-marketplace/categories"
+      }
+    },
+    "zh": {
+      "seoTitle": "ArtCraft 开源项目：Storytold 组织与创意软件作品",
+      "seoDescription": "GitHub 账号 storytold 对应 ArtCraft 组织。它维护照片编辑工具 PhotoCraft、视频编辑工具 FilmCraft，以及用于软件观察和重建的 Craft Anything。",
+      "heroTitle": "ArtCraft 开源项目",
+      "heroDescription": "发布创意软件和 Rust 工具，覆盖媒体编辑、界面取证与原型重建。",
+      "overview": {
+        "title": "ArtCraft 的创意软件与开发工具",
+        "paragraphs": [
+          "ArtCraft 通过 GitHub 组织 storytold 发布面向艺术家、设计师和开发者的开源工具与模型。公开项目覆盖照片编辑、视频编辑和创意制作，包括 PhotoCraft、FilmCraft 以及 ArtCraft 引擎。",
+          "Craft Anything 处理创作流程的另一环：从有权检查的参考软件中采集证据，再将重建说明交给编程 Agent。观察结果和对照记录可以作为自有原型的验收依据，方便后续确认布局、交互及需要保留的差异。"
+        ]
+      },
+      "aboutTitle": "ArtCraft 的创意软件与开发工具",
+      "about": "ArtCraft 通过 GitHub 组织 storytold 发布面向艺术家、设计师和开发者的开源工具与模型。公开项目覆盖照片编辑、视频编辑和创意制作，包括 PhotoCraft、FilmCraft 以及 ArtCraft 引擎。",
+      "projectsTitle": "ArtCraft 开源软件项目",
+      "projectsIntro": "Craft Anything 面向软件观察和重建，PhotoCraft 与 FilmCraft 分别做照片和视频编辑。ArtCraft 在同一个组织下维护这些独立仓库，可按工作需要核对对应来源。",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "为什么 GitHub 组织链接是 storytold？",
+          "answer": "ArtCraft 是 GitHub 上的组织显示名，storytold 是账号标识，也是 Craft Anything 仓库的所属组织。"
+        },
+        {
+          "question": "ArtCraft 还有哪些编辑工具？",
+          "answer": "其公开组织列出了用于照片编辑的 PhotoCraft、用于非线性视频编辑的 FilmCraft，以及其他创意项目。"
+        },
+        {
+          "question": "哪个项目能给软件重建提供观察依据？",
+          "answer": "Craft Anything 默认记录可见行为，并把对照结果和新的实现一起保存，便于复核。"
+        },
+        {
+          "question": "在哪里找 ArtCraft 工具的安装包？",
+          "answer": "可从 ArtCraft 官网浏览项目，再到对应的 GitHub Releases 页面核对平台安装包和版本说明。"
+        },
+        {
+          "question": "ArtCraft 的标志可以按源码许可使用吗？",
+          "answer": "Craft Anything 的 README 将 ArtCraft 商标与源码双许可证分开，随项目分发的素材也有各自的许可声明。"
+        },
+        {
+          "question": "在哪里可以同时查看 ArtCraft 的多个项目？",
+          "answer": "在 storytold 的 GitHub 组织主页查看各仓库和更新，在 ArtCraft 官网上查看应用目录和对应下载入口。"
+        }
+      ],
+      "ctaTitle": "浏览界面与软件开发资源",
+      "ctaDescription": "查找能帮助你观察界面、描述交互和验证新实现的工具。",
+      "ctaPrimary": {
+        "label": "浏览资源分类",
+        "href": "/zh/skills-marketplace/categories"
+      }
+    }
+  },
+  "opencut-app": {
+    "name": "OpenCut.app",
+    "type": "Organization",
+    "profileUrl": "https://github.com/OpenCut-app",
+    "logo": "/blog/brand/publishers/opencut-app.webp",
+    "tags": {
+      "en": [
+        "Video editing",
+        "Creative software"
+      ],
+      "zh": [
+        "视频剪辑",
+        "创意软件"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/OpenCut-app",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://opencut.app/",
+        "label": {
+          "en": "Official website",
+          "zh": "官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/OpenCut-app/opencut-classic",
+        "label": {
+          "en": "Classic source archive",
+          "zh": "Classic 源码归档"
+        }
+      },
+      {
+        "href": "https://github.com/OpenCut-app/OpenCut",
+        "label": {
+          "en": "Active rewrite repository",
+          "zh": "Rust 重写仓库"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "OpenCut",
+        "url": "https://github.com/OpenCut-app/OpenCut",
+        "en": {
+          "kind": "Video Editor",
+          "description": "Assemble short timeline edits in the Classic browser beta and follow the Rust editor rewrite."
+        },
+        "zh": {
+          "kind": "视频剪辑软件",
+          "description": "在 Classic 浏览器 Beta 中试做时间线剪辑，了解 Rust 版编辑器的重写进展。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "OpenCut.app Team: Source Repositories and Development Roadmap",
+      "seoDescription": "Find the OpenCut.app organization, its archived Classic source and the active rewrite repository. Check where to follow development and current contribution status.",
+      "heroTitle": "OpenCut.app",
+      "heroDescription": "Builds an open-source video editor and maintains the upstream Rust rewrite.",
+      "overview": {
+        "title": "The team behind the OpenCut editor",
+        "paragraphs": [
+          "OpenCut.app is the GitHub organization publishing OpenCut, an open-source timeline editor positioned as a CapCut alternative. The organization owns the primary rewrite repository and a separate, archived copy of the original editor.",
+          "The team keeps the Classic source available as an archive and uses the active repository for the replacement. The active README separates planned editor interfaces from current releases and directs readers to issues and Discord while outside contributions are on hold."
+        ]
+      },
+      "aboutTitle": "The team behind the OpenCut editor",
+      "about": "OpenCut.app is the GitHub organization publishing OpenCut, an open-source timeline editor positioned as a CapCut alternative. The organization owns the primary rewrite repository and a separate, archived copy of the original editor.",
+      "projectsTitle": "OpenCut.app open-source projects",
+      "projectsIntro": "The organization maintains separate records for Classic and the Rust rewrite. Use the archived repository to trace earlier behavior and the active repository for architecture updates, issues and contribution status.",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "Where is the official OpenCut source?",
+          "answer": "The OpenCut-app organization publishes the canonical OpenCut repository and owns the separate Classic archive."
+        },
+        {
+          "question": "What does the OpenCut website offer?",
+          "answer": "The site offers the early browser beta. The upstream README identifies the beta as the Classic implementation."
+        },
+        {
+          "question": "Where is the next version being built?",
+          "answer": "The main OpenCut repository tracks the Rust rewrite and documents its development setup and planned interfaces."
+        },
+        {
+          "question": "How should I read the Classic archive?",
+          "answer": "It records the original implementation and its self-hosting instructions. The GitHub archive is read-only and upstream describes it as no longer maintained."
+        },
+        {
+          "question": "Where should I report an issue with the Rust rewrite?",
+          "answer": "The active repository accepts issue reports and links to its Discord. Its README says the team is currently designing the architecture and has not opened outside contributions."
+        },
+        {
+          "question": "Does OpenCut.app use an open-source license?",
+          "answer": "The main OpenCut repository is MIT-licensed. Check the terms for materials, dependencies and any hosted service separately."
+        }
+      ],
+      "ctaTitle": "Explore the OpenCut editing workflow",
+      "ctaDescription": "Compare the Classic beta and Rust rewrite before choosing a version for your own media workflow.",
+      "ctaPrimary": {
+        "label": "Browse resource categories",
+        "href": "/skills-marketplace/categories"
+      }
+    },
+    "zh": {
+      "seoTitle": "OpenCut.app 团队：Classic 归档、源码仓库与开发路线",
+      "seoDescription": "OpenCut.app 将已归档的 Classic 源码与新版开发分开维护。通过 GitHub 组织找到两代仓库、问题反馈入口和贡献状态，并核对各自对应的官方文档。",
+      "heroTitle": "OpenCut.app",
+      "heroDescription": "发布开源视频编辑器 OpenCut，并在主仓库推进 Rust 版重写。",
+      "overview": {
+        "title": "OpenCut 视频编辑器的发布团队",
+        "paragraphs": [
+          "OpenCut.app 是 OpenCut 时间线编辑器所属的 GitHub 组织。团队把 OpenCut 定位为开源的 CapCut 替代方案，并分别保留新版主仓库和已归档的原始代码。",
+          "团队以归档仓库保留 Classic 源码，把新版开发放在活跃主仓库。当前 README 分列计划中的接口与可用版本，并指向 Issue 和 Discord。外部代码贡献暂未开放时，仍可以通过这些入口了解进展。"
+        ]
+      },
+      "aboutTitle": "OpenCut 视频编辑器的发布团队",
+      "about": "OpenCut.app 是 OpenCut 时间线编辑器所属的 GitHub 组织。团队把 OpenCut 定位为开源的 CapCut 替代方案，并分别保留新版主仓库和已归档的原始代码。",
+      "projectsTitle": "OpenCut.app 发布的开源项目",
+      "projectsIntro": "团队将 Classic 原始实现和 Rust 重写分开维护。要追查旧功能可读归档仓库，关注新版架构、问题反馈和开放贡献状态则应查看当前主仓库。",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "OpenCut 的官方源码在哪里？",
+          "answer": "OpenCut-app 组织发布主仓库 OpenCut，也保留单独归档的 Classic 原始代码。"
+        },
+        {
+          "question": "OpenCut 官网提供什么？",
+          "answer": "官网提供早期网页 Beta。主仓库 README 说明，当前网页 Beta 使用的是 Classic 实现。"
+        },
+        {
+          "question": "下一版在哪里开发？",
+          "answer": "Rust 重写在 OpenCut 主仓库进行，开发环境和计划中的接口也在这里说明。"
+        },
+        {
+          "question": "如何看待 Classic 归档仓库？",
+          "answer": "可以查阅原始实现和自部署文档。该仓库已设为只读，上游说明原始代码不再维护。"
+        },
+        {
+          "question": "发现 Rust 重写版的问题，应该在哪里反馈？",
+          "answer": "可以到新版主仓库提交 Issue，或通过仓库中的 Discord 链接讨论。上游说明架构仍在设计阶段，暂未开放外部代码贡献。"
+        },
+        {
+          "question": "OpenCut.app 的项目使用开源许可吗？",
+          "answer": "OpenCut 主仓库采用 MIT。媒体素材、依赖和托管服务的条款需要分别核对。"
+        }
+      ],
+      "ctaTitle": "了解 OpenCut 的剪辑工作流",
+      "ctaDescription": "对照 Classic 版与 Rust 重写进展，为自己的剪辑交付选择可验证的方案。",
+      "ctaPrimary": {
+        "label": "浏览资源分类",
+        "href": "/zh/skills-marketplace/categories"
+      }
+    }
+  },
+  "calesthio": {
+    "name": "Calesthio",
+    "type": "Person",
+    "profileUrl": "https://github.com/calesthio",
+    "logo": "/blog/brand/publishers/calesthio.webp",
+    "tags": {
+      "en": [
+        "Video production",
+        "Agent workflows"
+      ],
+      "zh": [
+        "视频制作",
+        "Agent 工作流"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/calesthio",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      },
+      {
+        "href": "https://github.com/calesthio/OpenMontage/tree/main/pipeline_defs",
+        "label": {
+          "en": "Production pipeline manifests",
+          "zh": "制作流程清单"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "OpenMontage",
+        "url": "https://github.com/calesthio/OpenMontage",
+        "en": {
+          "kind": "Agent Video Production Toolkit",
+          "description": "Plan, assemble, and review videos with a coding agent, from footage selection to rendered checks."
+        },
+        "zh": {
+          "kind": "Agent 视频制作工具集",
+          "description": "让编程 Agent 按阶段规划、组装和检查视频，覆盖素材筛选、时间线合成和渲染验收。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Calesthio: OpenMontage Maintainer and Video Pipeline Sources",
+      "seoDescription": "Calesthio publishes OpenMontage’s AGPL source, pipeline manifests and agent guides. Find the project channels and distinguish the repository from the Studio offering.",
+      "heroTitle": "Calesthio and OpenMontage",
+      "heroDescription": "Publishes OpenMontage, a source toolkit for planning, assembling and reviewing video with a coding agent.",
+      "overview": {
+        "title": "Calesthio’s work on agent video production",
+        "paragraphs": [
+          "Calesthio publishes the OpenMontage source repository on GitHub. The project brings instructions and media tools into a production workspace where a coding assistant can read the plan, use approved inputs and record decisions for later review.",
+          "The public repository documents the source workflow and identifies GNU AGPL v3 as its license. The project website presents OpenMontage Studio separately as a private-alpha Windows app. Check the repository for the source setup and the website for Studio access."
+        ]
+      },
+      "aboutTitle": "Calesthio’s work on agent video production",
+      "about": "Calesthio publishes the OpenMontage source repository on GitHub. The project brings instructions and media tools into a production workspace where a coding assistant can read the plan, use approved inputs and record decisions for later review.",
+      "projectsTitle": "OpenMontage production toolkit",
+      "projectsIntro": "Calesthio publishes the production manifests alongside the agent operating guide. Follow those two sources to see which stages the project defines and which tools or providers a particular pipeline uses.",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "What does Calesthio publish here?",
+          "answer": "Calesthio maintains the OpenMontage source repository, which contains production pipelines, instructions and tools for an AI coding assistant."
+        },
+        {
+          "question": "Where can I find the original source?",
+          "answer": "The canonical repository is calesthio/OpenMontage on GitHub. Its README and agent guide explain the setup and project layout."
+        },
+        {
+          "question": "How does Calesthio organize changes to the production workflow?",
+          "answer": "Pipeline manifests describe which stages run. The agent guide describes how a coding agent works through them, while the repository’s issues and release history track changes."
+        },
+        {
+          "question": "Is the Studio website the source repository?",
+          "answer": "The linked website presents a Windows desktop app in private alpha. The GitHub repository documents the separate source workflow and its prerequisites."
+        },
+        {
+          "question": "Which license applies to OpenMontage?",
+          "answer": "The public source repository includes the GNU AGPL v3 license. Confirm separately how any providers and source assets can be used."
+        },
+        {
+          "question": "Where can I see how video stages are defined?",
+          "answer": "The repository provides pipeline manifests alongside an agent guide. Start with the target video format and follow the stages that produce it."
+        }
+      ],
+      "ctaTitle": "Browse media workflow resources",
+      "ctaDescription": "Find resources for composing, checking and refining images, video and sound.",
+      "ctaPrimary": {
+        "label": "Browse resource categories",
+        "href": "/skills-marketplace/categories"
+      }
+    },
+    "zh": {
+      "seoTitle": "Calesthio：OpenMontage 作者、制作流程与源码入口",
+      "seoDescription": "Calesthio 维护 OpenMontage 的 AGPL 源码、制作流程清单和 Agent 指南。查找公开仓库和项目更新入口，并区分可从源码运行的流程与另行提供的 Studio。",
+      "heroTitle": "Calesthio 与 OpenMontage",
+      "heroDescription": "发布 OpenMontage，帮助编程 Agent 规划、组装和检查视频。",
+      "overview": {
+        "title": "Calesthio 的 Agent 视频制作项目",
+        "paragraphs": [
+          "Calesthio 在 GitHub 上发布 OpenMontage 源码。项目将制作说明和媒体工具放在同一个工作目录里，编程 Agent 可以按阶段读取计划、使用获准素材，并记录决定供后续检查。",
+          "公开仓库提供源码工作流，并列出 GNU AGPL v3 许可。项目官网另外介绍了仍处于私有 Alpha 的 Windows 应用 OpenMontage Studio。安装源码工作流查仓库，了解 Studio 的试用状态查官网。"
+        ]
+      },
+      "aboutTitle": "Calesthio 的 Agent 视频制作项目",
+      "about": "Calesthio 在 GitHub 上发布 OpenMontage 源码。项目将制作说明和媒体工具放在同一个工作目录里，编程 Agent 可以按阶段读取计划、使用获准素材，并记录决定供后续检查。",
+      "projectsTitle": "Calesthio 发布的 OpenMontage",
+      "projectsIntro": "Calesthio 将制作流程清单和 Agent 操作指南放在公开仓库。先按片型找到对应流程，再从上游说明核对每个阶段可用的工具与外部服务。",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "Calesthio 在这里发布了什么？",
+          "answer": "Calesthio 维护 OpenMontage 的源码仓库，其中包含供编程 Agent 使用的视频制作流程、阶段说明和媒体工具。"
+        },
+        {
+          "question": "在哪里能看到原始源码？",
+          "answer": "在 GitHub 的 calesthio/OpenMontage 仓库。README 和 Agent 指南记录了安装步骤与项目目录结构。"
+        },
+        {
+          "question": "Calesthio 如何维护制作流程的更新？",
+          "answer": "流程清单记录每个片型的阶段，Agent 指南说明编程助手如何执行。想确认新增功能或行为变化，可以再查仓库的 Issue 与版本记录。"
+        },
+        {
+          "question": "Studio 官网就是源码入口吗？",
+          "answer": "官网介绍的是私有 Alpha 阶段的 Windows 桌面应用，GitHub 仓库提供独立的源码工作流和运行前提。"
+        },
+        {
+          "question": "OpenMontage 源码用什么许可证？",
+          "answer": "公开源码仓库包含 GNU AGPL v3 许可证。接入外部服务或复用素材时还要查看各自的使用条件。"
+        },
+        {
+          "question": "在哪里能看到视频流程怎么拆？",
+          "answer": "仓库提供各片型的流程清单和 Agent 指南。先确定目标成片，再顺着对应的清单检查每个阶段。"
+        }
+      ],
+      "ctaTitle": "浏览媒体制作资源",
+      "ctaDescription": "按图片、视频和音频任务查找可用于合成、检查与修改的资源。",
+      "ctaPrimary": {
+        "label": "浏览资源分类",
+        "href": "/zh/skills-marketplace/categories"
+      }
+    }
+  },
+  "nexu-io": {
+    "name": "OpenDesign",
+    "type": "Organization",
+    "profileUrl": "https://github.com/nexu-io",
+    "logo": "/blog/brand/publishers/nexu-io.webp",
+    "tags": {
+      "en": [
+        "Design systems",
+        "Creative tooling"
+      ],
+      "zh": [
+        "设计系统",
+        "创意工具"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/nexu-io",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://open-design.ai",
+        "label": {
+          "en": "Official website",
+          "zh": "官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/nexu-io/html-anything",
+        "label": {
+          "en": "HTML Anything source",
+          "zh": "HTML Anything 源码"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "OpenDesign",
+        "url": "https://github.com/nexu-io/open-design",
+        "en": {
+          "kind": "AI design workspace",
+          "description": "Create and review prototypes, decks, and motion with an agent and a reusable design system."
+        },
+        "zh": {
+          "kind": "AI 设计工作区",
+          "description": "把可复用的设计规则交给 Agent，制作并审阅交互原型、演示文稿和动效。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "OpenDesign Team: Nexu-io Design Systems and HTML Tooling",
+      "seoDescription": "The nexu-io organization maintains OpenDesign and HTML Anything. Find its design-system packages, release sources and the documentation for each distinct project.",
+      "heroTitle": "The OpenDesign team",
+      "heroDescription": "Publishes an open-source design workspace and reusable packages for agent-assisted design.",
+      "overview": {
+        "title": "About the OpenDesign maintainers",
+        "paragraphs": [
+          "The GitHub organization named OpenDesign uses the handle nexu-io. Its public repositories cover design, agent tooling and HTML editing. The flagship open-design repository brings project files, previews, design systems and output templates into a single workspace.",
+          "The project organizes contributions around distinct pieces. Design-system packages capture visual rules, templates shape the output, and plugins or Skills describe what the agent should do. Check each package’s source and provenance before adopting its contents."
+        ]
+      },
+      "aboutTitle": "About the OpenDesign maintainers",
+      "about": "The GitHub organization named OpenDesign uses the handle nexu-io. Its public repositories cover design, agent tooling and HTML editing. The flagship open-design repository brings project files, previews, design systems and output templates into a single workspace.",
+      "projectsTitle": "OpenDesign projects",
+      "projectsIntro": "The team maintains a design workspace and a separate HTML editing project. OpenDesign’s design-system packages and release notes are the starting points for evaluating reusable visual rules and desktop distribution.",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "Why is the organization URL nexu-io?",
+          "answer": "OpenDesign is the organization display name on GitHub. Its account handle is nexu-io, which owns the upstream open-design repository."
+        },
+        {
+          "question": "How is HTML Anything related to the team?",
+          "answer": "The organization also lists html-anything as a separate agent-assisted HTML editing project. It has its own repository and instructions."
+        },
+        {
+          "question": "Where can I contribute a design system?",
+          "answer": "The OpenDesign repository describes its design-system package format and provenance fields. Follow the contribution and design-system guides for the current layout."
+        },
+        {
+          "question": "Which upstream files describe reusable design systems?",
+          "answer": "The OpenDesign repository includes design-system packages and source records. Start there to inspect documented visual rules, then check any bundled components or assets separately."
+        },
+        {
+          "question": "What license applies to OpenDesign’s code?",
+          "answer": "The main open-design repository publishes its code under Apache-2.0. Inspect asset notices and package provenance before reusing external materials."
+        },
+        {
+          "question": "Where can I see what the team has shipped?",
+          "answer": "Check the upstream GitHub Releases page and quickstart for the supported platform builds and notes on newly released capabilities."
+        }
+      ],
+      "ctaTitle": "Explore agent-assisted design resources",
+      "ctaDescription": "Browse projects that connect design rules, editable outputs and review workflows.",
+      "ctaPrimary": {
+        "label": "Browse resource categories",
+        "href": "/skills-marketplace/categories"
+      }
+    },
+    "zh": {
+      "seoTitle": "OpenDesign 团队：Nexu-io 的设计系统与 HTML 工具",
+      "seoDescription": "GitHub 组织 nexu-io 发布 OpenDesign 和 HTML Anything。通过组织入口查找设计系统、模板和各项目的发行记录，并按用途区分设计工作区与 HTML 编辑工具。",
+      "heroTitle": "OpenDesign 团队",
+      "heroDescription": "发布开源设计工作区，以及供 Agent 使用的设计系统和模板。",
+      "overview": {
+        "title": "关于 OpenDesign 的维护团队",
+        "paragraphs": [
+          "OpenDesign 是 GitHub 组织的显示名称，账号为 nexu-io。组织公开了设计、Agent 工具和 HTML 编辑等方向的仓库。其中 open-design 工作区将项目文件、预览、设计系统和输出模板集中在一起。",
+          "团队把视觉规则、输出形式和 Agent 执行方式分别维护。设计系统包记录视觉约束，模板定义交付物的结构，插件或 Skill 则描述 Agent 要完成的动作。采用社区包之前，可以先核对来源和素材许可。"
+        ]
+      },
+      "aboutTitle": "关于 OpenDesign 的维护团队",
+      "about": "OpenDesign 是 GitHub 组织的显示名称，账号为 nexu-io。组织公开了设计、Agent 工具和 HTML 编辑等方向的仓库。其中 open-design 工作区将项目文件、预览、设计系统和输出模板集中在一起。",
+      "projectsTitle": "OpenDesign 开源项目",
+      "projectsIntro": "团队分别维护设计工作区和 HTML 编辑项目。评估可复用的视觉规则时先查 OpenDesign 的设计系统包，核对桌面发行范围则查看版本说明。",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "为什么 GitHub 组织链接是 nexu-io？",
+          "answer": "OpenDesign 是 GitHub 上的组织显示名，nexu-io 是账号标识，也是 open-design 仓库的所属组织。"
+        },
+        {
+          "question": "HTML Anything 和这个团队有什么关系？",
+          "answer": "同一 GitHub 组织也发布了 html-anything。这是面向 Agent 辅助 HTML 编辑的独立项目，有自己的源码仓库和使用说明。"
+        },
+        {
+          "question": "在哪里提交设计系统？",
+          "answer": "OpenDesign 仓库提供设计系统包结构和来源记录说明。提交前可先看贡献指南和现有设计系统的组织方式。"
+        },
+        {
+          "question": "在哪里查看团队维护的设计系统？",
+          "answer": "OpenDesign 仓库提供设计系统包与来源记录。先查看适用的视觉规则，再分别核对包中组件与素材的来源和许可。"
+        },
+        {
+          "question": "OpenDesign 的源码采用什么许可？",
+          "answer": "open-design 主仓库采用 Apache-2.0。引用外部图片、字体和组件前，仍需查阅对应许可和设计系统的来源记录。"
+        },
+        {
+          "question": "在哪里查看团队发布了哪些功能？",
+          "answer": "到上游 GitHub Releases 和快速入门查看版本说明、平台安装包以及已经发布的功能。"
+        }
+      ],
+      "ctaTitle": "浏览 Agent 设计资源",
+      "ctaDescription": "查找能把设计规则、可编辑产物与验收流程接起来的工具。",
+      "ctaPrimary": {
+        "label": "浏览资源分类",
+        "href": "/zh/skills-marketplace/categories"
+      }
+    }
+  },
+  "thedotmack": {
+    "name": "Alex Newman",
+    "type": "Person",
+    "profileUrl": "https://github.com/thedotmack",
+    "logo": "/blog/brand/publishers/thedotmack.webp",
+    "tags": {
+      "en": [
+        "Agent memory",
+        "Developer tools"
+      ],
+      "zh": [
+        "Agent 记忆",
+        "开发工具"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/thedotmack",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      },
+      {
+        "href": "https://claude-mem.ai/",
+        "label": {
+          "en": "Official website",
+          "zh": "官方网站"
+        }
+      },
+      {
+        "href": "https://docs.claude-mem.ai/",
+        "label": {
+          "en": "Claude-Mem documentation",
+          "zh": "Claude-Mem 官方文档"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Claude-Mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "en": {
+          "kind": "Agent Memory Tool",
+          "description": "Summarize coding-session observations and retrieve selected history through local search or MCP."
+        },
+        "zh": {
+          "kind": "Agent 记忆工具",
+          "description": "整理编程会话的操作摘要，通过本地搜索或 MCP 找回需要的历史记录。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Alex Newman: Claude-Mem Maintainer and Agent Memory Tools",
+      "seoDescription": "Alex Newman publishes the Claude-Mem core under thedotmack. Find setup guides for supported agent hosts and see how the public core differs from hosted services.",
+      "heroTitle": "Alex Newman",
+      "heroDescription": "Creates Claude-Mem, a memory tool that helps coding agents recover context across sessions.",
+      "overview": {
+        "title": "Alex Newman and the Claude-Mem project",
+        "paragraphs": [
+          "Alex Newman publishes Claude-Mem under the GitHub account thedotmack. The project began with Claude Code and now documents several other host integrations. Its public source includes the memory engine, server, CLI, adapters and search interfaces.",
+          "The public repository and host guides define the core available to developers. The upstream documentation also separates local memory operations from hosted or commercial features. If you are evaluating the public code, start with the license and the guide for the host you use."
+        ]
+      },
+      "aboutTitle": "Alex Newman and the Claude-Mem project",
+      "about": "Alex Newman publishes Claude-Mem under the GitHub account thedotmack. The project began with Claude Code and now documents several other host integrations. Its public source includes the memory engine, server, CLI, adapters and search interfaces.",
+      "projectsTitle": "Alex Newman’s open-source work",
+      "projectsIntro": "Alex Newman maintains the public Claude-Mem core under thedotmack. The documentation is organized by agent host, with separate references for local observation storage, inference configuration and optional sync.",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "Which GitHub account publishes Claude-Mem?",
+          "answer": "Alex Newman publishes it under thedotmack. The project README names him as the author and links the canonical repository."
+        },
+        {
+          "question": "What problem does Claude-Mem address?",
+          "answer": "It helps a coding agent find relevant observations and prior decisions when work continues in a different session."
+        },
+        {
+          "question": "Which parts of Claude-Mem does the public repository maintain?",
+          "answer": "The public repository includes the core memory engine, worker, command-line tools and host adapters. Its license and scope notes distinguish those components from separately operated offerings."
+        },
+        {
+          "question": "Is Claude-Mem tied to one agent host?",
+          "answer": "The project documents multiple integrations. Each host has its own installation, capture behavior and configuration."
+        },
+        {
+          "question": "Where does Alex Newman document how different agent hosts are supported?",
+          "answer": "The public Claude-Mem documentation has separate installation and integration guides by host. Use those guides to check event capture, startup behavior and local worker requirements."
+        },
+        {
+          "question": "Where are the public code and licensing boundaries?",
+          "answer": "The upstream GitHub repository includes the Apache-2.0 license, the notice file and documentation about separately reserved services."
+        }
+      ],
+      "ctaTitle": "Explore agent context workflows",
+      "ctaDescription": "Compare the records worth keeping with the history a new session actually needs.",
+      "ctaPrimary": {
+        "label": "Browse resource categories",
+        "href": "/skills-marketplace/categories"
+      }
+    },
+    "zh": {
+      "seoTitle": "Alex Newman：Claude-Mem 作者、公开核心与宿主文档",
+      "seoDescription": "Alex Newman 在 thedotmack 账号下维护 Claude-Mem。通过作者和仓库入口查找公开核心、不同编程宿主的配置文档，以及需要单独核对的托管服务。",
+      "heroTitle": "Alex Newman",
+      "heroDescription": "开发 Claude-Mem，帮助编程 Agent 在新会话中找回之前的工作上下文。",
+      "overview": {
+        "title": "Alex Newman 与 Claude-Mem",
+        "paragraphs": [
+          "Alex Newman 通过 GitHub 账号 thedotmack 发布 Claude-Mem。项目最早服务于 Claude Code，现在也记录了其他宿主的接入方式。公开代码涵盖记忆引擎、服务端、CLI、适配器和搜索接口。",
+          "公开仓库和宿主文档说明开发者能使用的核心功能。上游还将本地记忆操作与托管或商业功能分开说明。评估公开实现时，可先查许可证，再阅读自己所用宿主的接入说明。"
+        ]
+      },
+      "aboutTitle": "Alex Newman 与 Claude-Mem",
+      "about": "Alex Newman 通过 GitHub 账号 thedotmack 发布 Claude-Mem。项目最早服务于 Claude Code，现在也记录了其他宿主的接入方式。公开代码涵盖记忆引擎、服务端、CLI、适配器和搜索接口。",
+      "projectsTitle": "Alex Newman 的开源项目",
+      "projectsIntro": "Alex Newman 在 thedotmack 账号下维护公开核心，安装说明按编程宿主区分。评估时可先核对所用宿主会记录什么，再查看摘要模型和可选同步的数据路径。",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "哪个 GitHub 账号发布 Claude-Mem？",
+          "answer": "作者 Alex Newman 使用 thedotmack 账号。项目 README 标明了作者身份并链接官方仓库。"
+        },
+        {
+          "question": "Claude-Mem 解决什么问题？",
+          "answer": "当任务换到新会话时，它帮助编程 Agent 找回相关观察和先前决定。"
+        },
+        {
+          "question": "公开仓库维护 Claude-Mem 的哪些部分？",
+          "answer": "公开仓库包含记忆核心、工作进程、命令行工具和宿主适配器。仓库的许可与范围说明也列出了另行运营的服务边界。"
+        },
+        {
+          "question": "Claude-Mem 只支持一种编程宿主吗？",
+          "answer": "上游记录了多种集成，每个宿主有自己的安装、记录行为和配置要求。"
+        },
+        {
+          "question": "Alex Newman 在哪里维护不同编程宿主的接入说明？",
+          "answer": "公开文档按宿主分别提供安装与集成说明，可以据此核对事件采集、启动行为和本地工作进程要求。"
+        },
+        {
+          "question": "哪里可以查源码和许可范围？",
+          "answer": "官方 GitHub 仓库提供 Apache-2.0 许可文件、NOTICE 和说明保留服务边界的文档。"
+        }
+      ],
+      "ctaTitle": "探索 Agent 上下文交接",
+      "ctaDescription": "明确哪些观察值得保留，以及下一轮工作实际需要读到哪些记录。",
+      "ctaPrimary": {
+        "label": "浏览资源分类",
+        "href": "/zh/skills-marketplace/categories"
+      }
+    }
+  },
+  "mksglu": {
+    "name": "Mert Köseoğlu",
+    "type": "Person",
+    "profileUrl": "https://github.com/mksglu",
+    "logo": "/blog/brand/publishers/mksglu.webp",
+    "tags": {
+      "en": [
+        "Context engineering",
+        "Source-available software"
+      ],
+      "zh": [
+        "上下文工程",
+        "源码可见软件"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/mksglu",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      },
+      {
+        "href": "https://github.com/mksglu/context-mode",
+        "label": {
+          "en": "Local plugin repository",
+          "zh": "本地插件仓库"
+        }
+      },
+      {
+        "href": "https://contextmode.ai/",
+        "label": {
+          "en": "Context Mode Gateway",
+          "zh": "Context Mode Gateway"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Context Mode",
+        "url": "https://github.com/mksglu/context-mode",
+        "en": {
+          "kind": "Source-available context plugin",
+          "description": "Keep large tool results in a local index and retrieve the excerpts a coding agent needs. Source-available under ELv2."
+        },
+        "zh": {
+          "kind": "源码可见上下文插件",
+          "description": "将大体积工具输出留在本地索引中，只取回 Agent 需要的片段。源码采用 ELv2。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Mert Köseoğlu: Context Mode Maintainer and Local Agent Tools",
+      "seoDescription": "Mert Köseoğlu maintains Context Mode under mksglu. Find the source-available plugin, its host compatibility documentation and the separately operated Gateway.",
+      "heroTitle": "Mert Köseoğlu",
+      "heroDescription": "Maintains Context Mode, a local plugin for keeping large tool results searchable outside an agent’s context.",
+      "overview": {
+        "title": "About the Context Mode maintainer",
+        "paragraphs": [
+          "Mert Köseoğlu publishes Context Mode under the mksglu GitHub account. The project focuses on handling logs, fetched pages and command results without passing each full output back to the model.",
+          "The maintainer publishes host support and license details alongside the local code. Gateway is a separate product with its own account and request path. The two sources describe different deployment and retention conditions."
+        ]
+      },
+      "aboutTitle": "About the Context Mode maintainer",
+      "about": "Mert Köseoğlu publishes Context Mode under the mksglu GitHub account. The project focuses on handling logs, fetched pages and command results without passing each full output back to the model.",
+      "projectsTitle": "Context Mode projects",
+      "projectsIntro": "Mert publishes the local Context Mode plugin and its host compatibility notes in the same repository. The separate Gateway has its own account and data flow, so evaluate it against different deployment requirements.",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "Which repository contains the plugin?",
+          "answer": "The canonical repository is mksglu/context-mode. It publishes the local MCP server, host setup instructions, and license."
+        },
+        {
+          "question": "What is Context Mode meant to reduce?",
+          "answer": "It reduces the volume of tool results entering active context by keeping full output searchable and retrieving selected excerpts."
+        },
+        {
+          "question": "Does the maintainer also offer a hosted product?",
+          "answer": "Context Mode Gateway is a separate service with its own account, subscription and data flow."
+        },
+        {
+          "question": "What license applies to the local source?",
+          "answer": "The current main repository uses Elastic License 2.0. Older copies may carry different terms, so read the license for the version you choose."
+        },
+        {
+          "question": "Where are plugin problems tracked?",
+          "answer": "The local plugin’s GitHub issues are the starting point for reporting a host integration problem. Specify the host version and which MCP call or hook was involved."
+        },
+        {
+          "question": "Which sources should I use to review changes to Context Mode?",
+          "answer": "Use the mksglu/context-mode repository for plugin changes, platform support and licensing. Use the Gateway site for the hosted service’s account and data-processing details."
+        }
+      ],
+      "ctaTitle": "Browse agent workflow resources",
+      "ctaDescription": "Find tools for reducing tool output and recovering work across sessions.",
+      "ctaPrimary": {
+        "label": "Browse resource categories",
+        "href": "/skills-marketplace/categories"
+      }
+    },
+    "zh": {
+      "seoTitle": "Mert Köseoğlu：Context Mode 维护者、本地插件与托管服务",
+      "seoDescription": "Mert Köseoğlu 以 mksglu 账号维护 Context Mode。通过源码仓库核对宿主支持和 ELv2 条款，再到托管 Gateway 的入口查看其数据处理方式。",
+      "heroTitle": "Mert Köseoğlu",
+      "heroDescription": "维护 Context Mode，将大体积工具输出保存在 Agent 上下文之外供检索。",
+      "overview": {
+        "title": "Context Mode 的维护者",
+        "paragraphs": [
+          "Mert Köseoğlu 使用 GitHub 账号 mksglu 发布 Context Mode。项目关注如何处理构建日志、网页和命令结果，避免把每份完整输出都交给模型。",
+          "维护者在本地插件仓库里同时发布宿主支持与许可说明。Gateway 是有独立账户和请求路径的服务，两者的部署与数据保留条件需要分别核对。"
+        ]
+      },
+      "aboutTitle": "Context Mode 的维护者",
+      "about": "Mert Köseoğlu 使用 GitHub 账号 mksglu 发布 Context Mode。项目关注如何处理构建日志、网页和命令结果，避免把每份完整输出都交给模型。",
+      "projectsTitle": "Context Mode 与本地检索",
+      "projectsIntro": "Mert 在同一仓库维护本地 Context Mode 插件与宿主兼容说明。Gateway 有单独的账户和数据处理路径，评估部署时可分别核对两者的配置与许可。",
+      "skillsTitle": "Skills",
+      "skillsIntro": "Skills",
+      "faq": [
+        {
+          "question": "哪个仓库是 Context Mode 插件的上游？",
+          "answer": "mksglu/context-mode 是官方仓库，维护本地 MCP 服务、宿主配置和许可证。"
+        },
+        {
+          "question": "Context Mode 优化的是什么？",
+          "answer": "它把工具的完整输出保留供检索，只把查询相关的片段交给 Agent，以减少当前上下文占用。"
+        },
+        {
+          "question": "维护者也提供托管服务吗？",
+          "answer": "Context Mode Gateway 是独立的托管服务，有单独的账户、订阅和数据处理路径。"
+        },
+        {
+          "question": "本地源码采用什么许可？",
+          "answer": "当前主仓采用 Elastic License 2.0。查看所选版本的 LICENSE，早期版本的条款可能不同。"
+        },
+        {
+          "question": "本地插件出现兼容问题，去哪里反馈？",
+          "answer": "本地插件的问题可以到 GitHub 仓库反馈。注明宿主版本，以及出现异常的 MCP 调用或钩子，便于定位。"
+        },
+        {
+          "question": "核对 Context Mode 变化时，应该看哪些上游资料？",
+          "answer": "本地插件的变更、宿主支持和许可查 mksglu/context-mode 仓库，托管服务的账户与数据处理说明则查 Gateway 官网。"
+        }
+      ],
+      "ctaTitle": "浏览 Agent 工作流资源",
+      "ctaDescription": "查找能减少工具输出占用、保留任务上下文的工具。",
+      "ctaPrimary": {
+        "label": "浏览资源分类",
+        "href": "/zh/skills-marketplace/categories"
+      }
+    }
+  },
+  "ayghri": {
+    "name": "Ayoub Ghriss",
+    "type": "Person",
+    "profileUrl": "https://github.com/ayghri",
+    "logo": "/blog/brand/publishers/ayghri.webp",
+    "tags": {
+      "en": [
+        "Agent communication",
+        "Response design"
+      ],
+      "zh": [
+        "Agent 表达",
+        "回复结构"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/ayghri",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      },
+      {
+        "href": "https://github.com/ayghri/i-have-adhd",
+        "label": {
+          "en": "Skill repository",
+          "zh": "Skill 仓库"
+        }
+      },
+      {
+        "href": "https://github.com/ayghri/i-have-adhd/blob/main/INSTALL.md",
+        "label": {
+          "en": "Host installation guide",
+          "zh": "宿主安装说明"
+        }
+      }
+    ],
+    "projects": [],
+    "en": {
+      "seoTitle": "Ayoub Ghriss: I Have ADHD Skill and Agent Response Design",
+      "seoDescription": "Ayoub Ghriss maintains I Have ADHD under ayghri. Find the original response instructions and the separate host setup files for using them in a coding agent.",
+      "heroTitle": "Ayoub Ghriss",
+      "heroDescription": "Publishes I Have ADHD, an Agent Skill for clear next actions and visible progress.",
+      "overview": {
+        "title": "Ayoub Ghriss and action-first Agent replies",
+        "paragraphs": [
+          "Ayoub Ghriss maintains I Have ADHD under the ayghri GitHub account. Its instructions address how people use a coding-agent reply: find the first action, follow short steps and recover the current state after an interruption.",
+          "The repository separates response rules from host integration. Its SKILL.md defines how to arrange an answer, and its installation notes cover activation for different coding assistants. That separation makes it possible to inspect the rules without enabling startup automation."
+        ]
+      },
+      "aboutTitle": "Ayoub Ghriss and action-first Agent replies",
+      "about": "Ayoub Ghriss maintains I Have ADHD under the ayghri GitHub account. Its instructions address how people use a coding-agent reply: find the first action, follow short steps and recover the current state after an interruption.",
+      "projectsTitle": "Projects",
+      "projectsIntro": "Explore the original repository and supported hosts.",
+      "skillsTitle": "I Have ADHD Skill",
+      "skillsIntro": "I Have ADHD’s source defines the response rules, while the installation notes explain how different hosts load them. Read both if the Skill must stay available beyond a single session.",
+      "faq": [
+        {
+          "question": "Who publishes I Have ADHD?",
+          "answer": "Ayoub Ghriss publishes the canonical project under the ayghri GitHub account."
+        },
+        {
+          "question": "What kind of resource does the repository contain?",
+          "answer": "It provides a reusable response-style Skill and supporting installation files for coding-agent hosts."
+        },
+        {
+          "question": "Which output problem does the project address?",
+          "answer": "It makes the next action visible and reduces the need to search a long reply for the current state."
+        },
+        {
+          "question": "Where should I report an installation problem?",
+          "answer": "Use the issue tracker on the canonical ayghri/i-have-adhd repository. Name the host, install route, and the point where activation or startup behavior differed from the guide."
+        },
+        {
+          "question": "What license covers the instructions?",
+          "answer": "The canonical repository publishes the Skill and supporting code under its MIT license."
+        },
+        {
+          "question": "Where does Ayoub Ghriss document setup for new sessions?",
+          "answer": "Start with INSTALL.md for the host you use. The canonical Skill explains the response behavior within a session, and the setup guide describes available activation methods."
+        }
+      ],
+      "ctaTitle": "Browse Agent communication resources",
+      "ctaDescription": "Find Skills for clear status updates and task handoffs.",
+      "ctaPrimary": {
+        "label": "Browse resource categories",
+        "href": "/skills-marketplace/categories"
+      }
+    },
+    "zh": {
+      "seoTitle": "Ayoub Ghriss：I Have ADHD 作者与 Agent 回复设计",
+      "seoDescription": "Ayoub Ghriss 通过 ayghri 账号维护 I Have ADHD。可从原始指引查看行动优先的回复规则，再按所用编程宿主查找对应的安装文件与启动方式。",
+      "heroTitle": "Ayoub Ghriss",
+      "heroDescription": "发布 I Have ADHD Skill，让 Agent 清楚给出下一步，并保留任务进度。",
+      "overview": {
+        "title": "Ayoub Ghriss 如何设计行动优先的回复",
+        "paragraphs": [
+          "Ayoub Ghriss 以 GitHub 账号 ayghri 发布 I Have ADHD。它关注读者能否从编程 Agent 的回答中迅速找到下一步、执行短步骤，并在中断后知道做到哪里。",
+          "仓库把回复规则和宿主接入分开维护。SKILL.md 说明怎么组织回答，安装文档按编程助手记录激活方式。可以先读规则，再决定是否需要配置新会话的自动加载。"
+        ]
+      },
+      "aboutTitle": "Ayoub Ghriss 如何设计行动优先的回复",
+      "about": "Ayoub Ghriss 以 GitHub 账号 ayghri 发布 I Have ADHD。它关注读者能否从编程 Agent 的回答中迅速找到下一步、执行短步骤，并在中断后知道做到哪里。",
+      "projectsTitle": "项目",
+      "projectsIntro": "查看上游仓库和兼容宿主。",
+      "skillsTitle": "I Have ADHD Skill",
+      "skillsIntro": "I Have ADHD 的源文件负责回复规则，安装文档则按宿主说明怎么加载。若希望新会话也能使用这套指引，需要另外核对当前宿主的启动配置。",
+      "faq": [
+        {
+          "question": "I Have ADHD 由谁发布？",
+          "answer": "Ayoub Ghriss 通过 GitHub 账号 ayghri 维护官方仓库。"
+        },
+        {
+          "question": "仓库里提供的是哪一类资源？",
+          "answer": "主要提供可复用的回复风格 Skill，以及面向不同编程 Agent 宿主的安装文件。"
+        },
+        {
+          "question": "这个项目关注哪种回复问题？",
+          "answer": "它把下一步行动放到最容易找到的位置，减少读者从长回复里寻找当前进度的时间。"
+        },
+        {
+          "question": "安装遇到问题，在哪里反馈？",
+          "answer": "可以在 ayghri/i-have-adhd 官方仓库提交 Issue，写明宿主、安装方式，以及在哪一步遇到激活或启动行为与文档不一致。"
+        },
+        {
+          "question": "源文件采用什么许可证？",
+          "answer": "上游仓库以 MIT 许可发布 Skill 和配套源码。"
+        },
+        {
+          "question": "Ayoub Ghriss 在哪里说明新会话怎样加载指引？",
+          "answer": "先按所用宿主查看 INSTALL.md。原始 Skill 说明当前会话内的回复规则，安装文档则介绍可用的加载和激活方式。"
+        }
+      ],
+      "ctaTitle": "浏览 Agent 表达与交接资源",
+      "ctaDescription": "查找能帮助团队写清进度、下一步和交接依据的 Skills。",
+      "ctaPrimary": {
+        "label": "浏览资源分类",
+        "href": "/zh/skills-marketplace/categories"
+      }
+    }
+  },
+  "othmanadi": {
+    "name": "Ahmad Othman Ammar Adi",
+    "type": "Person",
+    "profileUrl": "https://github.com/OthmanAdi",
+    "logo": "/blog/brand/publishers/othmanadi.webp",
+    "tags": {
+      "en": [
+        "Agent planning",
+        "Open-source workflows"
+      ],
+      "zh": [
+        "Agent 规划",
+        "开源工作流"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/OthmanAdi",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      },
+      {
+        "href": "https://github.com/OthmanAdi/planning-with-files",
+        "label": {
+          "en": "Skill repository",
+          "zh": "Skill 仓库"
+        }
+      },
+      {
+        "href": "https://github.com/OthmanAdi/planning-with-files/blob/master/docs/installation.md",
+        "label": {
+          "en": "Host installation matrix",
+          "zh": "宿主安装方式对照"
+        }
+      }
+    ],
+    "projects": [],
+    "en": {
+      "seoTitle": "Ahmad Othman Ammar Adi: Creator of Planning with Files",
+      "seoDescription": "Ahmad Othman Ammar Adi publishes Planning with Files under OthmanAdi. Find the MIT repository, canonical Skill and host-specific plugin documentation.",
+      "heroTitle": "Ahmad Othman Ammar Adi",
+      "heroDescription": "Publishes Planning with Files, an open-source workflow for tracking long-running agent tasks in project files.",
+      "overview": {
+        "title": "About the creator of Planning with Files",
+        "paragraphs": [
+          "Ahmad Othman Ammar Adi publishes Planning with Files through the GitHub account OthmanAdi. The project documents a file-based way to keep a coding agent’s task plan, findings and progress across sessions.",
+          "The maintainer publishes a canonical Skill, templates and documentation for different hosts. When comparing releases, read the common file conventions separately from the adapters that control hook registration, session recovery and completion checks."
+        ]
+      },
+      "aboutTitle": "About the creator of Planning with Files",
+      "about": "Ahmad Othman Ammar Adi publishes Planning with Files through the GitHub account OthmanAdi. The project documents a file-based way to keep a coding agent’s task plan, findings and progress across sessions.",
+      "projectsTitle": "Related projects",
+      "projectsIntro": "The Skill guide explains how to structure a long task, preserve evidence, and verify a handoff across sessions.",
+      "skillsTitle": "Planning with Files Skill",
+      "skillsIntro": "The canonical Skill defines the three Markdown files. The maintainer documents lifecycle hooks and startup recovery separately by host, which matters when multiple agents share a project.",
+      "faq": [
+        {
+          "question": "Who publishes Planning with Files?",
+          "answer": "The canonical upstream repository is owned by the GitHub account OthmanAdi, which displays the name Ahmad Othman Ammar Adi."
+        },
+        {
+          "question": "Where is the maintained Skill?",
+          "answer": "The canonical English Skill is under skills/planning-with-files in the upstream repository. It has its own SKILL.md, scripts and templates."
+        },
+        {
+          "question": "What license does the repository use?",
+          "answer": "The upstream repository publishes its source under MIT. Review the license file when redistributing or modifying the code."
+        },
+        {
+          "question": "Does the creator publish host setup guides?",
+          "answer": "Yes. The repository documents standalone Skill installation as well as the setup and available hooks for supported agent hosts."
+        },
+        {
+          "question": "Where can I check a workflow change?",
+          "answer": "Read the upstream release notes and the relevant host guide. Check which parts belong to the Skill and which require separate plugin or hook configuration."
+        },
+        {
+          "question": "Where do I check whether an update changes the files or only a host integration?",
+          "answer": "Compare the canonical Skill and templates with the release notes for your host. The shared file conventions and host-specific hook behavior are documented separately."
+        }
+      ],
+      "ctaTitle": "Browse agent planning resources",
+      "ctaDescription": "Compare ways to retain task state, check execution, and hand work across sessions.",
+      "ctaPrimary": {
+        "label": "Browse resource categories",
+        "href": "/skills-marketplace/categories"
+      }
+    },
+    "zh": {
+      "seoTitle": "Ahmad Othman Ammar Adi：Planning with Files 作者与上游入口",
+      "seoDescription": "从 OthmanAdi 的 GitHub 入口可找到 Planning with Files 的 MIT 仓库、主 Skill 源文件和各宿主配置文档，区分通用文件工作流与特定插件的接入方式。",
+      "heroTitle": "Ahmad Othman Ammar Adi",
+      "heroDescription": "发布 Planning with Files，用项目文件跟踪 Agent 的长任务。",
+      "overview": {
+        "title": "关于 Planning with Files 的作者",
+        "paragraphs": [
+          "Ahmad Othman Ammar Adi 通过 GitHub 账号 OthmanAdi 发布 Planning with Files。项目提供一种基于文件的工作方式，在不同会话之间保留编程 Agent 的计划、发现和进度。",
+          "作者分别维护主 Skill、模板与各宿主文档。比较版本时，可以先核对共用的文件约定，再检查对应适配器如何注册钩子、恢复会话和判断任务完成。"
+        ]
+      },
+      "aboutTitle": "关于 Planning with Files 的作者",
+      "about": "Ahmad Othman Ammar Adi 通过 GitHub 账号 OthmanAdi 发布 Planning with Files。项目提供一种基于文件的工作方式，在不同会话之间保留编程 Agent 的计划、发现和进度。",
+      "projectsTitle": "相关项目",
+      "projectsIntro": "Skill 指南介绍如何拆解长任务、记录执行依据，并验证另一会话能否从文件继续。",
+      "skillsTitle": "Planning with Files Skill",
+      "skillsIntro": "上游主 Skill 定义了三份 Markdown 文件的用途，生命周期钩子和启动恢复则按宿主单独说明。多个 Agent 共用项目时，可以据此区分文件约定与各宿主的自动化行为。",
+      "faq": [
+        {
+          "question": "Planning with Files 是谁发布的？",
+          "answer": "官方仓库由 GitHub 账号 OthmanAdi 发布，主页显示的姓名为 Ahmad Othman Ammar Adi。"
+        },
+        {
+          "question": "在哪里找维护中的 Skill？",
+          "answer": "上游仓库的 skills/planning-with-files 目录保存正式英文 Skill，其中包含 SKILL.md、脚本和模板。"
+        },
+        {
+          "question": "仓库使用什么许可证？",
+          "answer": "上游源码采用 MIT 许可证。修改或再分发源码时可以核对仓库中的许可证文件。"
+        },
+        {
+          "question": "作者是否提供各宿主的设置指南？",
+          "answer": "仓库说明了独立 Skill 安装方式，并为支持的 Agent 宿主分别记录配置步骤和可用钩子。"
+        },
+        {
+          "question": "在哪里核对工作流的新变化？",
+          "answer": "查看上游发布说明和对应宿主指南，区分 Skill 的内容更新与插件或钩子的配置变化。"
+        },
+        {
+          "question": "怎样确认更新改的是文件约定还是某个宿主的接入方式？",
+          "answer": "把主 Skill 和模板文件与所用宿主的发行记录对照。通用文件约定和宿主钩子的行为分别有说明，可以据此判断是否需要迁移现有项目。"
+        }
+      ],
+      "ctaTitle": "浏览 Agent 规划资源",
+      "ctaDescription": "比较如何保留任务状态、核对执行依据，并在不同会话之间交接工作。",
+      "ctaPrimary": {
+        "label": "浏览资源分类",
+        "href": "/zh/skills-marketplace/categories"
+      }
+    }
   }
 }

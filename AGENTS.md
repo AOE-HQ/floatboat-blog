@@ -81,6 +81,8 @@ Use the shared `Hero` from `@openblog/components`; marketing/blog components are
 
 For requested project or Skill additions, including name-only requests, first read the "名称输入到分类与建页" workflow in the Floatboat context `product/floatboat-skills-ecosystem.md` (Mac: `~/Documents/Codex/clients/floatboat/`; Windows: `E:\clients\floatboat\`). Verify the canonical upstream and license, distinguish software from task instructions, and check existing project/Skill routes before creating a page. Reuse an existing canonical page for the same work; complementary tools do not become duplicates merely because they cooperate. Complete both locales, reviewed publisher data, aggregate links, related links, share assets, and sitemap coverage. Commit locally after validation; pushing and PR creation still require the owner's explicit request.
 
+Follow the context repository’s `floatboat-marketplace-publishing-workflow.md` for bilingual drafting and metadata. For additions or substantial editorial batches, use an independent review agent to check source claims, both locales, and differentiation from adjacent pages. Resolve findings and record `PUBLISH_READY` before committing. Technical checks are a separate gate.
+
 
 ## Breadcrumb contract
 

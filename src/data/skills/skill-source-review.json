@@ -1,7 +1,7 @@
 {
   "policy": {
     "minimumSourceRepositoryStars": 50000,
-    "appliesTo": "New popular Skill guides; pre-existing guides are retained as reference pages, not counted as new popular selections.",
+    "appliesTo": "New popular Skill guides. Pre-existing guides are retained; explicitly owner-requested references may be approved below the threshold with a recorded reason.",
     "checkedAt": "2026-10-27",
     "starAttribution": "Stars belong to the actual source repository, not each Skill or a different repository under the same publisher."
   },
@@ -295,6 +295,59 @@
       "evidenceUrl": "https://api.github.com/repos/larksuite/cli",
       "checkedAt": "2026-10-27T10:19:43Z",
       "status": "held"
+    },
+    "ayghri/i-have-adhd": {
+      "repository": "ayghri/i-have-adhd",
+      "stars": 60131,
+      "fork": false,
+      "archived": false,
+      "sourceUrl": "https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md",
+      "sourceHttpStatus": 200,
+      "sourceNameMatches": true,
+      "sourceSha": "6c42757ffae37e442adfb52fbba2a8609f1cff00",
+      "evidenceUrl": "https://api.github.com/repos/ayghri/i-have-adhd",
+      "checkedAt": "2026-11-05",
+      "status": "approved"
+    },
+    "othmanadi/planning-with-files": {
+      "repository": "OthmanAdi/planning-with-files",
+      "stars": 27892,
+      "fork": false,
+      "archived": false,
+      "sourceUrl": "https://github.com/OthmanAdi/planning-with-files/blob/master/skills/planning-with-files/SKILL.md",
+      "sourceHttpStatus": 200,
+      "sourceNameMatches": true,
+      "sourceSha": "dbdaf6ac0e13ea034fa648daa278cc2242a236e7",
+      "evidenceUrl": "https://api.github.com/repos/OthmanAdi/planning-with-files",
+      "checkedAt": "2026-11-05",
+      "status": "approved",
+      "ownerRequest": "Owner explicitly requested Planning with Files as a reference for file-backed task recovery on 2026-11-05. This is a named exception, not a popular Skill selection."
+    },
+    "mattpocock/setup-matt-pocock-skills": {
+      "repository": "mattpocock/skills",
+      "stars": 313890,
+      "fork": false,
+      "archived": false,
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "sourceHttpStatus": 200,
+      "sourceNameMatches": true,
+      "sourceSha": "2df0b07981718fa5d9a51526dfbcaee87e3a543d",
+      "evidenceUrl": "https://api.github.com/repos/mattpocock/skills",
+      "checkedAt": "2026-11-05",
+      "status": "approved"
+    },
+    "mattpocock/triage": {
+      "repository": "mattpocock/skills",
+      "stars": 313890,
+      "fork": false,
+      "archived": false,
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/triage/SKILL.md",
+      "sourceHttpStatus": 200,
+      "sourceNameMatches": true,
+      "sourceSha": "3fd5617e906cf9b71a6b17424791adb905fc248b",
+      "evidenceUrl": "https://api.github.com/repos/mattpocock/skills",
+      "checkedAt": "2026-11-05",
+      "status": "approved"
     }
   }
 }

@@ -54,7 +54,8 @@ const reviewedAdditions = [...anthropicDesignSkills, ...engineeringSkills, ...vi
 for (const skill of reviewedAdditions) {
   const id = `${skill.authorHandle}/${skill.slug}`;
   const review = sourceReview.skills[id as keyof typeof sourceReview.skills];
-  if (!review || review.status !== "approved" || review.stars < sourceReview.policy.minimumSourceRepositoryStars || review.fork || review.archived || review.sourceHttpStatus !== 200 || !review.sourceNameMatches || review.sourceUrl !== skill.sourceUrl || skill.repositoryUrl !== `https://github.com/${review.repository}`) {
+  const ownerRequested = review && "ownerRequest" in review && typeof review.ownerRequest === "string" && review.ownerRequest.trim().length > 0;
+  if (!review || review.status !== "approved" || (!ownerRequested && review.stars < sourceReview.policy.minimumSourceRepositoryStars) || review.fork || review.archived || review.sourceHttpStatus !== 200 || !review.sourceNameMatches || review.sourceUrl !== skill.sourceUrl || skill.repositoryUrl !== `https://github.com/${review.repository}`) {
     throw new Error(`New popular Skill ${id} does not meet its verified source-repository policy`);
   }
 }

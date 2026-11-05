@@ -698,5 +698,213 @@
       "outcome": "工作树与分支方案，明确任务归属、集成顺序和联合验证清单。",
       "example": "阅读 Orca 的 worktree 文档，为搜索特性规划前端、API 与测试的并行工作。识别共享文件冲突、分支归属、合并顺序和完整流程检查；创建工作树或启动其他 Agent 前先展示方案。"
     }
+  },
+  "nvidia/auto-ontology": {
+    "en": {
+      "title": "Make one business metric reproducible",
+      "description": "Choose a metric that different teams calculate differently. Use Auto Ontology’s semantic layer as a reference for tying the definition to tables, reviewed SQL and a small evaluation set.",
+      "inputLabel": "Which metric needs an agreed definition?",
+      "inputHint": "Name the metric, candidate tables, reporting period and exclusions.",
+      "outcome": "A metric contract, reference query, and cases for detecting bad joins or missing coverage.",
+      "example": "Read NVIDIA Auto Ontology’s README and MCP documentation. Help me specify monthly net revenue from orders, invoices, and refunds. Return a definition, reference SQL for a sample schema, and five test questions. Flag ambiguous joins and ask before connecting to a live database."
+    },
+    "zh": {
+      "title": "把一个业务指标变成可复算的查询",
+      "description": "挑一个团队之间口径不同的指标，参考 Auto Ontology 的语义层，将定义、数据表、审核过的 SQL 和验证题组串起来。",
+      "inputLabel": "哪个指标需要先统一口径？",
+      "inputHint": "写下指标名称、候选表、统计周期和排除项。",
+      "outcome": "一份指标口径、参考查询，以及识别错误连接或覆盖缺口的验证用例。",
+      "example": "阅读 NVIDIA Auto Ontology 的 README 和 MCP 文档，帮我明确订单、发票和退款中的月度净收入。输出口径、用于示例结构的参考 SQL 和五道验证题。标出有歧义的连接条件，连接真实数据库前先询问。"
+    }
+  },
+  "storytold/craft-anything": {
+    "en": {
+      "title": "Turn three viewport captures into a prototype brief",
+      "description": "Bring authorized screenshots and a short description of the interaction. Use Craft Anything’s evidence and comparison model to turn what you observed into checks the builder can run.",
+      "inputLabel": "Which screen and interaction should the prototype cover?",
+      "inputHint": "Name the page, supported viewport widths, and key states such as an open menu or error.",
+      "outcome": "A responsive prototype brief with an evidence list, asset boundaries, and a state-by-state test matrix.",
+      "example": "Study Craft Anything’s clean-room and comparison workflow. Use my desktop, tablet and phone screenshots of our pricing page to write a replacement brief. List observable behavior, specify our own assets, and create checks for the open menu and monthly/yearly toggle. Separate assumptions from evidence."
+    },
+    "zh": {
+      "title": "用三种屏宽的截图写一份原型任务书",
+      "description": "提供有权使用的界面截图和交互说明，参考 Craft Anything 将观察与对照结合的做法，整理编程 Agent 可以逐项验证的任务。",
+      "inputLabel": "原型要覆盖哪个界面和交互？",
+      "inputHint": "写下页面、目标屏宽，以及菜单展开、报错等关键状态。",
+      "outcome": "一份响应式原型任务书，含证据清单、素材边界和逐状态验收表。",
+      "example": "参考 Craft Anything 的洁净室与对照流程，用我们价格页的桌面、平板和手机截图写一份改版任务书。记录可观察行为，指定使用自有素材，为菜单展开和月付／年付切换列出验收项，并区分假设与证据。"
+    }
+  },
+  "opencut-app/opencut": {
+    "en": {
+      "title": "Prepare a timestamped cut list for OpenCut",
+      "description": "Turn a transcript or clip inventory into an editing plan with in and out points and a short playback checklist.",
+      "inputLabel": "Which recording should the edit cover?",
+      "inputHint": "Include source filenames, timestamps, target duration, and intended audience.",
+      "outcome": "A cut list, review checkpoints, and a target export specification for a manual timeline edit.",
+      "example": "Use the OpenCut README to distinguish Classic from rewrite plans. From my timecoded customer interview transcript, draft a 45-second cut list with source ranges, continuity checks and a review question for each cut. Mark uncertain timestamps and leave media editing for my approval."
+    },
+    "zh": {
+      "title": "为 OpenCut 整理带时间码的剪辑清单",
+      "description": "把逐字稿或素材目录变成可交接的时间线方案，记录片段起止点和导出前需要核对的细节。",
+      "inputLabel": "哪段录制需要剪辑？",
+      "inputHint": "提供素材名、时间码、目标时长及面向的观众。",
+      "outcome": "一份剪辑清单、审阅检查点和手动时间线剪辑的目标导出规格。",
+      "example": "参考 OpenCut README 区分 Classic 和新版计划。根据我带时间码的访谈逐字稿，拟一份 45 秒剪辑清单，列出素材区间、衔接检查点和每处剪辑要确认的问题。标出不确定的时间码，先交我审阅。"
+    }
+  },
+  "calesthio/openmontage": {
+    "en": {
+      "title": "Plan a product demo from an existing screen recording",
+      "description": "Use OpenMontage’s staged production workflow to plan a short demo around the actions your viewer needs to see. Keep the footage, caption plan and final checks traceable.",
+      "inputLabel": "What should a viewer learn from the demo?",
+      "inputHint": "List the source recording, essential actions, duration, audience and output aspect ratio.",
+      "outcome": "An edit brief with timestamped scene choices, caption notes and a pre-delivery checklist.",
+      "example": "Review the OpenMontage repository and help plan a 45-second demo from my existing screen recording. Keep onboarding, search and the export confirmation visible. Propose a timestamped edit, flag caption overlaps and list checks for the 9:16 export. Ask before sending footage to an external service."
+    },
+    "zh": {
+      "title": "把现有录屏整理成产品演示剪辑方案",
+      "description": "参考 OpenMontage 的分阶段做法，围绕观众必须看到的操作安排短片。把每段素材、字幕位置和成片检查项对应起来。",
+      "inputLabel": "希望观众看完演示后能做什么？",
+      "inputHint": "写下源录屏、关键操作、目标时长、受众与输出比例。",
+      "outcome": "一份含时间码的剪辑任务书、字幕说明和交付前检查清单。",
+      "example": "阅读 OpenMontage 仓库，根据我的现有录屏规划 45 秒产品演示。保留首次设置、搜索和导出确认三个动作。给出带时间码的剪辑方案，指出字幕可能遮挡的位置，并列出竖版导出的检查项。上传录屏到外部服务前先问我。"
+    }
+  },
+  "nexu-io/open-design": {
+    "en": {
+      "title": "Write a design-system brief for an interactive prototype",
+      "description": "Bring one user flow and the visual rules it should follow. Use OpenDesign’s project workflow to separate reusable brand rules from screen behavior and prepare files a reviewer can inspect.",
+      "inputLabel": "Which user flow should the prototype cover?",
+      "inputHint": "List the screens, failure states, accessibility needs, and the approved design rules.",
+      "outcome": "A DESIGN.md outline, screen checklist, and an editable-artifact handoff plan.",
+      "example": "Review how OpenDesign combines DESIGN.md and prototype templates. Plan a three-screen onboarding prototype with a failed verification state. Separate reusable visual rules from per-screen behavior, identify assets I need to supply, and list what engineering must verify before implementation."
+    },
+    "zh": {
+      "title": "为交互原型写一份带设计规则的任务书",
+      "description": "先选一个用户流程和已确认的视觉规则。参考 OpenDesign 的做法，将可复用的规则与每个页面的行为分开写，并明确要交给审阅人的文件。",
+      "inputLabel": "原型需要覆盖哪个用户流程？",
+      "inputHint": "列出页面、失败状态、无障碍要求和已经确定的视觉规范。",
+      "outcome": "一份 DESIGN.md 提纲、页面状态清单和可编辑产物的交接方案。",
+      "example": "参考 OpenDesign 如何组合 DESIGN.md 和原型模板，为三屏新手引导写任务书，包含验证失败状态。将可复用的视觉规则与单屏行为分开，标出需要我提供的素材，并列出交给开发前的检查项。"
+    }
+  },
+  "thedotmack/claude-mem": {
+    "en": {
+      "title": "Design a narrow memory handoff for a coding project",
+      "description": "Choose a recurring context gap and use Claude-Mem’s search, timeline and selected records as a model for a lightweight handoff.",
+      "inputLabel": "Which decision keeps getting lost between sessions?",
+      "inputHint": "Name the project, typical interruption and the source records that may be retained.",
+      "outcome": "A decision-log schema, retrieval checks and an explicit retention and review boundary.",
+      "example": "Read the Claude-Mem architecture and search docs. For our checkout bug investigation, design a handoff with observation IDs, one timeline window and a branch/test reference. Define what must stay out of memory and how to verify a recalled claim before editing code."
+    },
+    "zh": {
+      "title": "为编程项目设计一份可控的记忆交接",
+      "description": "选一个反复丢失的上下文，参考 Claude-Mem 的搜索、时间线和按编号读取机制，设计一份轻量交接。",
+      "inputLabel": "哪个决定总在换会话时丢失？",
+      "inputHint": "提供项目名称、常见的中断点和允许保留的来源记录。",
+      "outcome": "一份决策记录格式、检索检查点，以及明确的数据保留与复核范围。",
+      "example": "阅读 Claude-Mem 的架构和搜索文档。为结账模块的错误调查设计一份交接，写明观察编号、相关时间范围和分支或测试引用。列出不能进入记忆的内容，以及改代码前如何核对找回的说法。"
+    }
+  },
+  "juliusbrussee/caveman-engine": {
+    "en": {
+      "title": "Test whether compressed logs preserve the right diagnosis",
+      "description": "Use Caveman Engine’s compression and recovery pattern to compare the same incident evidence in raw and compact form.",
+      "inputLabel": "Which log or tool output should be tested?",
+      "inputHint": "Describe a sanitized sample, the expected diagnosis and the exact lines required to verify it.",
+      "outcome": "A comparison plan with a raw baseline, recovery checks and separate local and provider measurement fields.",
+      "example": "Read the Caveman Engine docs. Design a comparison on a sanitized CI log with a network failure and a secondary error. Specify how to recover the original lines, which diagnosis must stay stable and how to record inferred tokens separately from provider usage."
+    },
+    "zh": {
+      "title": "验证压缩日志能否支持同一个故障判断",
+      "description": "参考 Caveman Engine 的压缩与恢复机制，比较同一份故障证据的原始版和短视图。",
+      "inputLabel": "要测试哪份日志或工具输出？",
+      "inputHint": "描述脱敏样本、预期故障判断和用于复核的具体日志行。",
+      "outcome": "一份对比方案，包含原始基线、恢复检查，以及分开记录的本地估算和服务商用量。",
+      "example": "阅读 Caveman Engine 文档，为一份脱敏 CI 日志设计对比测试，其中有网络故障和一个次生错误。写明如何恢复原始行、两轮应得到的故障判断，以及如何分别记录估算 Token 和服务商用量。"
+    }
+  },
+  "mksglu/context-mode": {
+    "en": {
+      "title": "Make a noisy test log searchable",
+      "description": "Design a local evidence workflow that returns the failing test and related lines while keeping the full log available.",
+      "inputLabel": "Which command produces too much output?",
+      "inputHint": "Describe the command, log size and the errors you need to preserve.",
+      "outcome": "A log-indexing plan with retrieval examples and a check that the excerpts preserve the failure evidence.",
+      "example": "Study Context Mode’s local indexing pattern. Given a test log, propose how to return failures by test name and retrieve supporting stack lines. Compare the evidence with the raw log and show how I can measure context usage."
+    },
+    "zh": {
+      "title": "把长测试日志变成可按需检索的证据",
+      "description": "设计本地取证流程，让模型只收到失败用例和相关行，同时保留可以复核的完整日志。",
+      "inputLabel": "哪个命令产生的输出太长？",
+      "inputHint": "写明命令、日志规模和必须保留的错误信息。",
+      "outcome": "一份日志索引与检索方案，附可检查片段是否保留故障证据的用例。",
+      "example": "参考 Context Mode 的本地索引方式，设计从长测试日志按用例名返回失败信息和相关调用栈的方案。用原始日志复核取回的证据，并说明如何测量上下文占用。"
+    }
+  },
+  "ayghri/i-have-adhd": {
+    "en": {
+      "title": "Turn a debug update into one next action",
+      "description": "Bring a long status message and identify the command and evidence that must survive the rewrite.",
+      "inputLabel": "Which debugging update is hard to act on?",
+      "inputHint": "Include the current blocker, failing check and any paths or error codes.",
+      "outcome": "An action-first update with the exact check, state, and remaining decision."
+    },
+    "zh": {
+      "title": "把调试进度改成一条可执行的下一步",
+      "description": "提供一段难以扫读的调试进度，先标出改写必须保留的命令和证据。",
+      "inputLabel": "哪段调试进度需要改写？",
+      "inputHint": "写明当前阻塞、失败检查及相关路径或错误码。",
+      "outcome": "一段行动优先的进度说明，保留精确命令、状态和待决定事项。"
+    }
+  },
+  "mattpocock/setup-matt-pocock-skills": {
+    "en": {
+      "title": "Review one repository’s engineering Skill setup",
+      "description": "Use the current repository conventions to propose tracker, label and domain-document configuration for review.",
+      "inputLabel": "Which repository needs shared Skill configuration?",
+      "inputHint": "Include the current tracker, existing labels and glossary or ADR locations.",
+      "outcome": "A configuration draft with proposed file paths and any remote changes separated for approval."
+    },
+    "zh": {
+      "title": "为仓库审阅一份工程 Skill 配置草案",
+      "description": "根据已有约定提出跟踪器、分诊标签和领域文档配置，再逐项审阅。",
+      "inputLabel": "哪个仓库需要共享 Skill 配置？",
+      "inputHint": "提供现有跟踪器、标签、术语表或 ADR 位置。",
+      "outcome": "一份配置草案，列清拟改的文件以及需要单独确认的远端改动。"
+    }
+  },
+  "mattpocock/triage": {
+    "en": {
+      "title": "Decide what should happen to one issue",
+      "description": "Gather evidence for the issue before assigning a category or state. Keep the proposed tracker update separate from the review.",
+      "inputLabel": "Which issue or PR needs triage?",
+      "inputHint": "Provide its URL, repository conventions and any attempted reproduction.",
+      "outcome": "A reasoned state recommendation with an agent brief or one targeted follow-up question."
+    },
+    "zh": {
+      "title": "为一个 Issue 取证并建议分诊状态",
+      "description": "先检查 Issue 证据，再建议类别和状态。分诊结论与跟踪器的实际更新分别确认。",
+      "inputLabel": "哪条 Issue 或 PR 需要分诊？",
+      "inputHint": "提供链接、仓库约定和已经做过的复现。",
+      "outcome": "一份带依据的状态建议，以及 Agent 任务书或一个有针对性的追问。"
+    }
+  },
+  "othmanadi/planning-with-files": {
+    "en": {
+      "title": "Prepare a task that survives a session reset",
+      "description": "Choose a project that needs more than one session. Define what belongs in the phase plan, source notes, and verification log so another agent can identify the next action.",
+      "inputLabel": "Which long-running task needs a handoff?",
+      "inputHint": "List the project, key phases, current blocker, and approval boundaries.",
+      "outcome": "A three-file planning outline and a fresh-session recovery check."
+    },
+    "zh": {
+      "title": "为需要跨会话的任务准备交接文件",
+      "description": "选一项无法在一个会话内完成的工作，分清阶段计划、来源记录和验证日志，确保接手的人能找到明确的下一步。",
+      "inputLabel": "哪项长任务需要跨会话交接？",
+      "inputHint": "说明项目、关键阶段、当前阻塞，以及哪些操作需要确认。",
+      "outcome": "一份三文件规划提纲，以及验证新会话能否接手的检查步骤。"
+    }
   }
 }

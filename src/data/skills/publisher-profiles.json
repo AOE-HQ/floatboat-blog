@@ -767,7 +767,7 @@
       "about": "Matt Pocock is a TypeScript educator and developer. Alongside his engineering Skills, he publishes tools and libraries for working with TypeScript and coding agents.",
       "projectsTitle": "Matt Pocock’s Tools and Libraries",
       "skillsTitle": "Matt Pocock’s Engineering Skills",
-      "skillsIntro": "Matt Pocock's Skills address design questions, test-first work, diagnosis, and related engineering decisions. Compare the specific problem each guide handles and the code or unresolved choices it needs; no individual instruction should be mistaken for an entire development process.",
+      "skillsIntro": "Configure repository conventions, clarify the problem, and move from evidence to implementation. These guides cover the setup, issue triage, architecture, tests, and handoff decisions that keep engineering work grounded.",
       "faq": [
         {
           "question": "What does Matt Pocock’s work cover beyond Skills?",
@@ -822,7 +822,7 @@
       "about": "Matt Pocock 是 TypeScript 教育者和开发者。除工程 Skills 外，他还发布 TypeScript 与编程 Agent 相关的工具和库。",
       "projectsTitle": "Matt Pocock 的工具与代码库",
       "skillsTitle": "Matt Pocock 的工程 Skills",
-      "skillsIntro": "Matt Pocock 的 Skills 分别处理方案追问、测试先行、诊断等工程问题。以下指引说明任务所需代码和未决选择，帮助按具体缺口选用，而非把单项指令当作完整开发流程。",
+      "skillsIntro": "先配置仓库约定，再核查问题与实施范围。从 Issue 分诊、架构和测试到交接，这组指南分别说明每一步依赖哪些资料，以及应该留下什么结果。",
       "faq": [
         {
           "question": "Matt Pocock 除了 Skills 还发布哪些作品？",
