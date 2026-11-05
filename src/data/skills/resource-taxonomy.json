@@ -243,6 +243,10 @@
     "context-efficiency": {
       "en": "Context efficiency",
       "zh": "上下文效率"
+    },
+    "data-analysis": {
+      "en": "Data Analysis",
+      "zh": "数据分析"
     }
   },
   "resources": {
@@ -1699,6 +1703,15 @@
       "tags": [
         "web-research",
         "security"
+      ]
+    },
+    "project:github.com/k-dense-ai/scientific-agent-skills": {
+      "categories": [
+        "documents"
+      ],
+      "tags": [
+        "data-analysis",
+        "agent-workflows"
       ]
     }
   }

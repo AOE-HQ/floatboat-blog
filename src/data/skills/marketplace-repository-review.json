@@ -474,6 +474,12 @@
       "fork": false,
       "archived": false,
       "private": false
+    },
+    "k-dense-ai/scientific-agent-skills": {
+      "stars": 56196,
+      "fork": false,
+      "archived": false,
+      "private": false
     }
   }
 }

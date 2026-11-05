@@ -277,6 +277,12 @@
       "graphify-labs",
       "cloudflare",
       "firecrawl"
+    ],
+    "k-dense-ai": [
+      "anthropics",
+      "mattpocock",
+      "obra",
+      "karpathy"
     ]
   },
   "skill-categories": {

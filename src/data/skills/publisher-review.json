@@ -676,6 +676,19 @@
       "repositories": [
         "sherlock-project/sherlock"
       ]
+    },
+    "k-dense-ai": {
+      "status": "approved",
+      "checkedAt": "2026-11-06",
+      "representativeRepository": "K-Dense-AI/scientific-agent-skills",
+      "stars": 56196,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-02T09:23:27Z",
+      "reason": "官方组织维护高星公开原仓。README 记录 Codex、Cursor 与 Claude Code 安装方式；主仓 MIT，单项许可从各 SKILL.md 核对。",
+      "repositories": [
+        "K-Dense-AI/scientific-agent-skills"
+      ]
     }
   }
 }

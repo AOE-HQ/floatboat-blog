@@ -3535,5 +3535,148 @@
         "href": "/zh/skills-marketplace/sherlock-project/sherlock"
       }
     }
+  },
+  "k-dense-ai": {
+    "name": "K-Dense AI",
+    "type": "Organization",
+    "profileUrl": "https://github.com/K-Dense-AI",
+    "logo": "/blog/brand/publishers/k-dense-ai.webp",
+    "tags": {
+      "en": [
+        "Scientific computing",
+        "Data analysis",
+        "Agent Skills"
+      ],
+      "zh": [
+        "科学计算",
+        "数据分析",
+        "Agent Skills"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/K-Dense-AI",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Scientific Agent Skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "en": {
+          "kind": "Scientific Agent Skills Suite",
+          "description": "Install research Skills for data inspection, statistical analysis, visualization, and writing in Codex, Cursor, and other supported hosts."
+        },
+        "zh": {
+          "kind": "科研 Agent Skills 套件",
+          "description": "在 Codex、Cursor 等宿主安装科研 Skills，执行数据检查、统计分析、可视化和科研写作。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "K-Dense AI: Scientific Agent Skills and Data Analysis",
+      "seoDescription": "Explore K-Dense AI’s Scientific Agent Skills repository for data inspection, statistics, and research writing. Check installation and dependencies for Codex, Cursor, and other hosts.",
+      "heroTitle": "K-Dense AI",
+      "heroDescription": "K-Dense AI maintains Scientific Agent Skills for Codex, Cursor, and other hosts. The collection covers data inspection, statistical analysis, visualization, and research writing.",
+      "aboutTitle": "About K-Dense AI",
+      "about": "K-Dense AI maintains Scientific Agent Skills, an installable collection for research work. The repository covers exploratory analysis, statistical method selection, visualization, and scientific writing. Start with the inputs you have and the deliverable you need, then check the requirements of the selected Skill.",
+      "overview": {
+        "title": "About K-Dense AI",
+        "paragraphs": [
+          "K-Dense AI maintains Scientific Agent Skills, an installable collection for research work. The repository covers exploratory analysis, statistical method selection, visualization, and scientific writing. Start with the inputs you have and the deliverable you need, then check the requirements of the selected Skill.",
+          "Local data inspection is a practical starting point. The exploratory data analysis Skill includes scripts that summarize supported CSV, TSV, and JSON files. Skills that call databases or APIs have separate access and data-handling requirements."
+        ]
+      },
+      "projectsTitle": "K-Dense AI’s Scientific Agent Skills Repository",
+      "projectsIntro": "Use the upstream catalog to select an installable research workflow. Check its input formats, tool dependencies, and output checks before running it on research data.",
+      "skillsTitle": "Research Skills from K-Dense AI",
+      "skillsIntro": "Find verified Skill guides for specific research tasks.",
+      "faq": [
+        {
+          "question": "Which task makes a good first run?",
+          "answer": "Choose an authorized local CSV, TSV, or JSON file. Use the exploratory data analysis Skill to check file structure and missingness, then inspect what the summary actually covered."
+        },
+        {
+          "question": "Which hosts can install the collection?",
+          "answer": "The upstream installation guide documents hosts including Codex, Cursor, and Claude Code. Follow the instructions for your host and confirm the selected Skill is visible in the session."
+        },
+        {
+          "question": "Do I need to install every Skill?",
+          "answer": "Select the Skills that fit the task. Check the manifest, scripts, and dependencies for each one before adding tools to a research workspace."
+        },
+        {
+          "question": "Do the Skills need network access?",
+          "answer": "The exploratory data analysis Skill includes core scripts that run locally. Workflows that query an external database or service may require network access, credentials, and data permissions."
+        },
+        {
+          "question": "Does the repository license cover every Skill?",
+          "answer": "The repository uses the MIT license. Individual Skills may list different terms. Check the license field in the selected Skill’s SKILL.md before reuse."
+        },
+        {
+          "question": "How do I review a data inspection report?",
+          "answer": "Compare its coverage with the approved input files and supported formats. Exploratory summaries can identify missingness and anomalies. Formal research conclusions need their own checks."
+        }
+      ],
+      "ctaTitle": "Choose a Skill for Your Research Task",
+      "ctaDescription": "Find the upstream instructions for data inspection, study design, or statistical analysis. Review the inputs and requirements of the Skill you select.",
+      "ctaPrimary": {
+        "label": "Browse the official Scientific Agent Skills catalog",
+        "href": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/skills.md"
+      }
+    },
+    "zh": {
+      "seoTitle": "K-Dense AI：科研 Agent Skills、数据分析与工作流",
+      "seoDescription": "了解 K-Dense AI 的 Scientific Agent Skills 主仓，按数据检查、统计分析和科研写作选择 Skill，并核对 Codex、Cursor 等宿主的安装条件。",
+      "heroTitle": "K-Dense AI",
+      "heroDescription": "K-Dense AI 维护 Scientific Agent Skills，为 Codex、Cursor 等宿主提供可安装的科研任务指引，覆盖数据检查、统计分析、图表和科研写作。",
+      "aboutTitle": "关于 K-Dense AI",
+      "about": "K-Dense AI 维护 Scientific Agent Skills，将科研任务拆成可安装的 Agent 工作流。主仓覆盖探索性数据分析、统计方法选择、可视化和科研写作。可以按手头的输入和预期产物挑选具体 Skill，再核对该任务的环境和许可。",
+      "overview": {
+        "title": "关于 K-Dense AI",
+        "paragraphs": [
+          "K-Dense AI 维护 Scientific Agent Skills，将科研任务拆成可安装的 Agent 工作流。主仓覆盖探索性数据分析、统计方法选择、可视化和科研写作。可以按手头的输入和预期产物挑选具体 Skill，再核对该任务的环境和许可。",
+          "本地数据检查是一个起点。探索性数据分析 Skill 附带脚本，可对受支持的 CSV、TSV 和 JSON 做汇总检查。需要数据库或外部 API 的工作流则应单独确认账号、访问范围和数据去向。"
+        ]
+      },
+      "projectsTitle": "K-Dense AI 的科研 Skills 主仓",
+      "projectsIntro": "从官方仓库查看可安装的科研任务集合。选定分析任务后，继续核对对应 Skill 的输入格式、工具依赖和结果检查方式。",
+      "skillsTitle": "K-Dense AI 的科研 Skills",
+      "skillsIntro": "按具体科研任务查看已核实的 Skill 指南。",
+      "faq": [
+        {
+          "question": "第一次使用可以从什么任务开始？",
+          "answer": "可以选一份获准使用的本地 CSV、TSV 或 JSON，使用探索性数据分析 Skill 检查文件结构和缺失情况，再核对汇总报告覆盖了哪些数据。"
+        },
+        {
+          "question": "哪些宿主可以安装这套科研 Skills？",
+          "answer": "上游安装说明列出了 Codex、Cursor 和 Claude Code 等宿主。选择对应宿主的安装方式，再确认当前会话可发现所选 Skill。"
+        },
+        {
+          "question": "需要安装整个集合吗？",
+          "answer": "可以按任务选装。先定位要用的 Skill，再核对它的清单、脚本和依赖，避免给一次数据检查引入无关工具。"
+        },
+        {
+          "question": "运行这些 Skills 都需要联网吗？",
+          "answer": "探索性数据分析 Skill 的核心脚本可本地运行。调用外部数据库或服务的 Skill 可能需要网络、凭据和数据访问权限。"
+        },
+        {
+          "question": "主仓和每项 Skill 都采用相同许可吗？",
+          "answer": "主仓采用 MIT 许可。具体 Skill 可能另有许可或附加条款，使用前查阅其 SKILL.md 中的许可字段。"
+        },
+        {
+          "question": "怎样判断数据检查报告是否足够？",
+          "answer": "对照输入范围、格式和报告中的覆盖限制。探索性汇总可以提示缺失、异常或后续分析方向，正式研究结论仍需按相应方法验证。"
+        }
+      ],
+      "ctaTitle": "按科研任务选择 Skill",
+      "ctaDescription": "在上游目录中查找数据检查、实验设计或统计分析的指引，再核对具体 Skill 的输入要求和运行条件。",
+      "ctaPrimary": {
+        "label": "查看官方科研 Skills 清单",
+        "href": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/skills.md"
+      }
+    }
   }
 }

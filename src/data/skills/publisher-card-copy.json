@@ -170,5 +170,9 @@
   "sherlock-project": {
     "en": "Maintains Sherlock, a command-line tool for checking public username matches across supported websites and exporting candidates for review.",
     "zh": "维护开源用户名搜索工具 Sherlock，提供网站查询规则和可供复核的公开候选链接。"
+  },
+  "k-dense-ai": {
+    "en": "Maintains Scientific Agent Skills for data inspection, statistical analysis, visualization, and scientific writing in supported Agent hosts.",
+    "zh": "维护 Scientific Agent Skills，为 Codex、Cursor 等宿主提供数据检查、统计分析和科研写作指引。"
   }
 }
