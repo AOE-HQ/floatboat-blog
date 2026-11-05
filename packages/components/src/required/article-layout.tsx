@@ -98,7 +98,7 @@ export function ArticleLayout({
     <article>
       {required.breadcrumbs ? <Breadcrumbs items={breadcrumbItems} siteUrl={site.runtime.siteUrl} label={isZh ? "面包屑导航" : "Breadcrumb"} /> : null}
       <Hero
-        {...(showCover ? { layout: "split" as const, media: { kind: "image" as const, src: post.coverImage!, alt: post.title } } : { layout: "centered" as const })}
+        {...(showCover ? { layout: "split" as const, media: { kind: "image" as const, src: post.coverImage!, alt: "" } } : { layout: "centered" as const })}
         title={post.title}
         description={required.postDek ? post.description : ""}
         metadata={<>
