@@ -12,19 +12,14 @@ import { publisherHeading } from "@/lib/skills/title-case-heading";
 
 const origin = "https://floatboat.ai";
 
-function getSkillLinks(handle: string, locale: SkillLocale) {
-  return getStoreCatalog(locale).filter((skill) => skill.authorHandle === handle && skill.entryType === "skill").map((skill) => ({
-    name: skill.name, description: skill.description, href: skill.hasLocalGuide ? skill.href : undefined, metadata: [...skill.taxonomy.categories, ...skill.taxonomy.tags],
-  }));
-}
-
 export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale; handle: string }) {
   const profile = getPublisherProfile(handle);
   if (!profile) return null;
   const t = profile[locale];
   const isZh = locale === "zh";
-  const skillLinks = getSkillLinks(handle, locale);
-  const projects = getStoreCatalog(locale).filter((entry) => entry.authorHandle === handle && entry.entryType === "project");
+  const entries = getStoreCatalog(locale).filter((entry) => entry.authorHandle === handle);
+  const skillLinks = entries.filter((entry) => entry.entryType === "skill");
+  const projects = entries.filter((entry) => entry.entryType === "project");
   const isOrganization = profile.type === "Organization";
   const overview = t.overview ?? { title: t.aboutTitle, paragraphs: [t.about] };
   const overviewLinks = profile.links !== undefined
@@ -37,7 +32,7 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
   const jsonLd = {
     "@context": "https://schema.org", "@type": "CollectionPage", name: t.heroTitle, description: t.heroDescription, url: canonical,
     inLanguage: isZh ? "zh-CN" : "en-US", about: { "@type": profile.type, name: profile.name, url: profile.profileUrl, sameAs: overviewLinks.map((link) => link.href) },
-    mainEntity: { "@type": "ItemList", itemListElement: [...skillLinks.map((skill) => ({ name: skill.name, url: skill.href ? `${origin}${skill.href}` : undefined })), ...projects.map((project) => ({ name: project.name, url: project.href.startsWith("/") ? `${origin}${project.href}` : project.href }))].map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, url: item.url })) },
+    mainEntity: { "@type": "ItemList", itemListElement: [...skillLinks, ...projects].map((entry, index) => ({ "@type": "ListItem", position: index + 1, name: entry.name, url: entry.href.startsWith("/") ? `${origin}${entry.href}` : entry.href })) },
   };
 
   return (
@@ -62,11 +57,11 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
       {skillLinks.length > 0 && <section aria-labelledby="publisher-skills-title" className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16">
         <div className="flex flex-col gap-3 md:flex-row md:items-baseline md:justify-between"><h2 id="publisher-skills-title" className="scroll-mt-24 font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.skillsTitle)}</h2><p className="max-w-2xl text-sm leading-6 text-[var(--ob-color-text-subtle)]">{t.skillsIntro}</p></div>
         <ul className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {skillLinks.map((skill) => <li key={skill.name}><ResourceCard title={publisherHeading(locale, skill.name)} description={skill.description} href={skill.href} metadata={skill.metadata} metadataLabel={isZh ? "分类与标签" : "Categories and tags"} /></li>)}
+          {skillLinks.map((skill) => <li key={skill.id}><ResourceCard title={publisherHeading(locale, skill.name)} description={skill.description} href={skill.href} metadata={[...skill.taxonomy.categories, ...skill.taxonomy.tags]} metadataLabel={isZh ? "分类与标签" : "Categories and tags"} /></li>)}
         </ul>
       </section>}
 
-      {profile.projects.length > 0 && <section aria-labelledby="publisher-projects-title" className="bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
+      {projects.length > 0 && <section aria-labelledby="publisher-projects-title" className="bg-white/35 px-5 py-14 sm:px-8 sm:py-16"><div className="mx-auto max-w-7xl">
         <h2 id="publisher-projects-title" className="font-serif text-3xl tracking-[-0.035em] sm:text-4xl">{publisherHeading(locale, t.projectsTitle)}</h2>
         {t.projectsIntro && <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--ob-color-text-subtle)]">{t.projectsIntro}</p>}
         <ul className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3">

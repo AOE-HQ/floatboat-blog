@@ -56,7 +56,18 @@ def labels(node):
 
 def main():
     # Load the actual reviewed catalog instead of duplicating its membership in this check.
-    source = 'const m=require("./src/lib/skills/skill-categories.ts");console.log(JSON.stringify({en:m.getStoreCatalog("en"),zh:m.getStoreCatalog("zh")}));'
+    source = """
+    const catalog = require("./src/lib/skills/skill-categories.ts");
+    const publishers = require("./src/lib/skills/publisher-profiles.ts");
+    console.log(JSON.stringify({
+      locales: Object.fromEntries(["en", "zh"].map(locale => [locale, {
+        public: catalog.getStoreCatalog(locale), inventory: catalog.getCatalogInventory(locale),
+      }])),
+      publishers: publishers.PUBLISHER_PROFILE_HANDLES.map(handle => ({
+        handle, type: publishers.getPublisherProfile(handle).type,
+      })),
+    }));
+    """
     catalog = json.loads(subprocess.check_output(['node', '--import', 'tsx', '-e', source], text=True))
     categories = json.loads(Path('src/data/skills/categories.json').read_text())
     pages = {}
@@ -69,7 +80,32 @@ def main():
             pages[urlsplit(canonical[0].attrs['href']).path] = page.root
     checked = 0
     for locale, prefix in [('en', ''), ('zh', '/zh')]:
-        entries = catalog[locale]
+        entries = catalog['locales'][locale]['public']
+        inventory = catalog['locales'][locale]['inventory']
+        hub = pages[f'{prefix}/skills-marketplace']
+        active_publishers = {e['authorHandle'] for e in entries}
+        hub_sections = {
+            'publishers': [f"{prefix}/skills-marketplace/{p['handle']}" for p in catalog['publishers']
+                           if p['handle'] in active_publishers and p['type'] == 'Organization'],
+            'browse': [e['href'] for e in entries if e['entryType'] == 'project'],
+        }
+        for section, expected in hub_sections.items():
+            directory = find(hub, 'section', 'id', section)[0]
+            rows = find(directory, 'li', 'data-directory-row')
+            assert [find(row, 'a')[0].attrs['href'] for row in rows] == expected, (locale, section)
+        for publisher in catalog['publishers']:
+            handle = publisher['handle']
+            root = pages[f'{prefix}/skills-marketplace/{handle}']
+            for kind in ['skill', 'project']:
+                selected = [e for e in entries if e['entryType'] == kind and e['authorHandle'] == handle]
+                sections = find(root, 'section', 'aria-labelledby', f'publisher-{kind}s-title')
+                assert len(sections) == bool(selected), (locale, handle, kind)
+                if selected:
+                    cards = find(sections[0], 'article')
+                    assert [find(card, 'a')[0].attrs['href'] for card in cards] == [e['href'] for e in selected]
+        for entry in inventory:
+            if entry['href'].startswith('/'):
+                assert entry['href'] in pages, ('Missing existing detail route', entry['href'])
         for slug in categories:
             root = pages[f'{prefix}/skills-marketplace/categories/{slug}']
             selected = [e for e in entries if slug in e['categories']]
@@ -84,11 +120,7 @@ def main():
                 for card, entry in zip(cards, expected):
                     assert find(card, 'h3')[0].text().strip() == entry['name']
                     assert labels(card) == [t['label'] for t in entry['taxonomy']['categories'] + entry['taxonomy']['tags']]
-                    links = find(card, 'a')
-                    if kind == 'skill' and not entry['hasLocalGuide']:
-                        assert not links, ('Static Skill gained a link', entry['id'])
-                    else:
-                        assert links[0].attrs['href'] == entry['href']
+                    assert find(card, 'a')[0].attrs['href'] == entry['href']
             schemas = [json.loads(n.data) for n in find(root, 'script', 'type', 'application/ld+json')]
             collection = next(s for s in schemas if s.get('@type') == 'CollectionPage')['mainEntity']
             assert collection['numberOfItems'] == len(selected)
@@ -98,7 +130,7 @@ def main():
                 continue
             root = pages[entry['href']]
             # A paired project can share a Skill's canonical guide; its Skill labels own that page.
-            if entry['entryType'] == 'project' and any(e['entryType'] == 'skill' and e['href'] == entry['href'] for e in entries):
+            if entry['entryType'] == 'project' and any(e['entryType'] == 'skill' and e['href'] == entry['href'] for e in inventory):
                 continue
             profile = find(root, 'aside', 'data-profile-card')
             assert len(profile) == 1, entry['href']
@@ -115,7 +147,7 @@ def main():
                     assert parts.path in pages, (route, href)
             if find(a, attr='data-resource-labels'):
                 raise AssertionError(('Metadata links nested inside a resource link', route))
-    print(f'OK: {len(pages)} marketplace pages, 14 category pages, {checked} localized detail profiles; exact cards, static Skills, metadata, schema and internal links')
+    print(f'OK: {len(pages)} marketplace pages, 14 category pages, {checked} localized detail profiles; exact directory rows, publisher and category cards, metadata, schema and internal links')
 
 
 if __name__ == '__main__':

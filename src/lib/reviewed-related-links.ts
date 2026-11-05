@@ -1,8 +1,7 @@
 /** Preserve curated links while removing withdrawn pages and repairing live navigation. */
-export function reviewedRelatedLinks(links: Record<string, string[]>, liveIds: string[], registeredIds: string[]) {
-  const live = new Set(liveIds);
+export function reviewedRelatedLinks(links: Record<string, string[]>, liveIds: string[], registeredIds: string[], targetIds = liveIds) {
+  const allowed = new Set(targetIds);
   const registered = new Set(registeredIds);
-  const count = Math.min(4, Math.max(0, liveIds.length - 1));
   const result: Record<string, string[]> = {};
 
   for (const source of Object.keys(links)) {
@@ -14,21 +13,22 @@ export function reviewedRelatedLinks(links: Record<string, string[]>, liveIds: s
     if (original.length !== 4 || new Set(original).size !== original.length || original.some((target) => target === source || !registered.has(target))) {
       throw new Error(`Invalid related links for ${source}`);
     }
-    const targets = original.filter((target) => live.has(target)).slice(0, count);
-    for (const target of liveIds) {
+    const count = Math.min(4, targetIds.length - Number(allowed.has(source)));
+    const targets = original.filter((target) => allowed.has(target)).slice(0, count);
+    for (const target of targetIds) {
       if (targets.length === count) break;
       if (target !== source && !targets.includes(target)) targets.push(target);
     }
     result[source] = targets;
   }
 
-  const incoming = new Map(liveIds.map((id) => [id, 0]));
+  const incoming = new Map(targetIds.map((id) => [id, 0]));
   for (const targets of Object.values(result)) {
     for (const target of targets) incoming.set(target, incoming.get(target)! + 1);
   }
   // With fewer than five pages every other page is already linked automatically.
-  if (liveIds.length > 4) {
-    for (const target of liveIds) {
+  if (targetIds.length > 4) {
+    for (const target of targetIds) {
       if (incoming.get(target)) continue;
       for (const [source, targets] of Object.entries(result)) {
         if (source === target || targets.includes(target)) continue;

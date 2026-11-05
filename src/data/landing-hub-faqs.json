@@ -127,7 +127,7 @@
       },
       {
         "question": "Which resource cards can I open?",
-        "answer": "A Skill opens only when a local guide exists. Other Skills remain static entries. Projects open an existing local detail page when available, otherwise their original website or repository."
+        "answer": "Every Skill in the directory links to a local guide. Projects open an existing local detail page when available, otherwise their original website or repository."
       },
       {
         "question": "Does sharing a category mean resources work together?",
@@ -153,7 +153,7 @@
       },
       {
         "question": "哪些资源卡片可以打开？",
-        "answer": "Skill 只有存在本站指南时才可打开，其他 Skill 保持静态展示。独立项目有本站详情时进入该页面，否则进入原始网站或仓库。"
+        "answer": "目录中收录的 Skill 均链接到本站指南。独立项目有本站详情时进入该页面，否则进入原始网站或仓库。"
       },
       {
         "question": "同属一个分类表示资源可以直接协作吗？",

@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from "node:fs";
 import review from "../src/data/skills/publisher-review.json";
 import { PROJECTS, projectPath } from "../src/lib/projects/project-pages";
 import { buildProjectMetadata, projectShareImagePath } from "../src/lib/projects/project-metadata";
-import { getStoreCatalog } from "../src/lib/skills/skill-categories";
+import { getCatalogInventory, getStoreCatalog } from "../src/lib/skills/skill-categories";
 import { getPublisherProfile, publisherProfilePath } from "../src/lib/skills/publisher-profiles";
 import { getPublisherCardCopy } from "../src/lib/skills/publisher-card-copy";
 import { getRelatedPages } from "../src/lib/related-pages";
@@ -36,7 +36,7 @@ for (const project of PROJECTS) {
     paths.add(path);
     assert(!path.includes("/projects/"));
     assert(sitemap.includes(`<loc>https://floatboat.ai${path}</loc>`));
-    const catalog = getStoreCatalog(locale);
+    const catalog = getCatalogInventory(locale);
     const entry = catalog.find((item) => item.entryType === "project" && item.authorHandle === project.author && item.sourceUrl === project.repository);
     assert.equal(entry?.href, path, `${project.name}: project card must open the local page`);
     assert.equal(entry.publisherHref, publisherProfilePath(locale, project.author));
@@ -57,7 +57,9 @@ for (const project of PROJECTS) {
 }
 assert.equal(paths.size, PROJECTS.length * 2);
 for (const locale of ["en", "zh"] as const) {
-  assert(getStoreCatalog(locale).slice(0, PROJECTS.length).every((entry) => entry.entryType === "project" && entry.href.startsWith("/")), "The hub should feature local project introductions first");
+  const projects = getStoreCatalog(locale).filter((entry) => entry.entryType === "project");
+  const localCount = projects.filter((entry) => entry.href.startsWith("/")).length;
+  assert(projects.slice(0, localCount).every((entry) => entry.href.startsWith("/")), "The hub should feature local project introductions first");
 }
 assert(!sitemap.includes("/skills-marketplace/moonshotai/kimi-cli</loc>"));
 console.log(`Validated ${PROJECTS.length} independent projects, ${paths.size} localized detail paths, publisher links, metadata, related navigation, assets, and marketplace ingress.`);

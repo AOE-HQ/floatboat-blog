@@ -1,0 +1,467 @@
+{
+  "checkedAt": "2026-11-05",
+  "minimumStars": 50000,
+  "repositories": {
+    "anomalyco/opencode": {
+      "stars": 224685,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "anthropics/claude-code": {
+      "stars": 154605,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectBackgroundReason": "Commercial product source under Anthropic terms."
+    },
+    "anthropics/claude-cookbooks": {
+      "stars": 54241,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectBackgroundReason": "Example notebooks and recipes belong in workflow references."
+    },
+    "anthropics/skills": {
+      "stars": 187566,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "ayghri/i-have-adhd": {
+      "stars": 60143,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "calesthio/openmontage": {
+      "stars": 76823,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "cli/cli": {
+      "stars": 46884,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "cloudflare/agents": {
+      "stars": 5956,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "cloudflare/security-audit-skill": {
+      "stars": 60024,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "cloudflare/skills": {
+      "stars": 3283,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "cloudflare/workers-sdk": {
+      "stars": 4705,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "comfy-org/comfyui": {
+      "stars": 145132,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "coreyhaines31/marketingskills": {
+      "stars": 58609,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "crytic/echidna": {
+      "stars": 3189,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "crytic/slither": {
+      "stars": 6409,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "deepseek-ai/deepseek-harness": {
+      "stars": 273264,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "deepseek-ai/dsh-superagent-prototype": {
+      "stars": 19109,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "dietrichgebert/ponytail": {
+      "stars": 184824,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "earendil-works/pi": {
+      "stars": 120199,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "emilkowalski/skills": {
+      "stars": 53683,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "emilkowalski/sonner": {
+      "stars": 13137,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "emilkowalski/vaul": {
+      "stars": 8682,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "firecrawl/cli": {
+      "stars": 677,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "firecrawl/firecrawl": {
+      "stars": 198774,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "github/awesome-copilot": {
+      "stars": 40817,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "github/github-mcp-server": {
+      "stars": 34244,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "googleworkspace/cli": {
+      "stars": 32120,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "graphify-labs/graphify": {
+      "stars": 142662,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "heygen-com/heygen-cli": {
+      "stars": 170,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "heygen-com/hyperframes": {
+      "stars": 79212,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "juliusbrussee/caveman": {
+      "stars": 117614,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "juliusbrussee/revu-swift": {
+      "stars": 385,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "larksuite/cli": {
+      "stars": 17983,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "leonxlnx/earshot": {
+      "stars": 3938,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "leonxlnx/taste-skill": {
+      "stars": 110285,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "leonxlnx/taste-skill-classics": {
+      "stars": 32,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "leonxlnx/tastecode": {
+      "stars": 481,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "mattpocock/sandcastle": {
+      "stars": 8863,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "mattpocock/skills": {
+      "stars": 313983,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "mattpocock/ts-reset": {
+      "stars": 8641,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "microsoft/azure-skills": {
+      "stars": 1621,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "microsoft/typescript": {
+      "stars": 111738,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectBackgroundReason": "General-purpose language and compiler."
+    },
+    "microsoft/vscode": {
+      "stars": 194668,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectBackgroundReason": "General editor and agent host."
+    },
+    "milind-soni/openmausbot": {
+      "stars": 12418,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "mksglu/context-mode": {
+      "stars": 33523,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "moonshotai/kimi-code": {
+      "stars": 8141,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "morluto/flameox": {
+      "stars": 233,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "morluto/generate-social-preview": {
+      "stars": 46,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "morluto/rea": {
+      "stars": 432470,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "nexu-io/open-design": {
+      "stars": 106027,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "nousresearch/hermes-agent": {
+      "stars": 260714,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "nvidia/auto-ontology": {
+      "stars": 6150,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "obra/private-journal-mcp": {
+      "stars": 465,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "obra/superpowers": {
+      "stars": 312671,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "obra/youtube2webpage": {
+      "stars": 1459,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "openai/codex": {
+      "stars": 133277,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "opencut-app/opencut": {
+      "stars": 97364,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "othmanadi/planning-with-files": {
+      "stars": 27891,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "pbakaus/agent-reviews": {
+      "stars": 314,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "pbakaus/impeccable": {
+      "stars": 103288,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "pbakaus/radiant": {
+      "stars": 1031,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "remotion-dev/remotion": {
+      "stars": 70892,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectBackgroundReason": "Source-available production tool under a separate company license."
+    },
+    "remotion-dev/skills": {
+      "stars": 6386,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "stablyai/orca": {
+      "stars": 116003,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "storytold/craft-anything": {
+      "stars": 13544,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "supabase/agent-skills": {
+      "stars": 3006,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "supabase/cli": {
+      "stars": 2455,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "supabase/supabase": {
+      "stars": 114556,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "thedotmack/claude-mem": {
+      "stars": 113224,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "trailofbits/skills": {
+      "stars": 8015,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "vercel-labs/agent-browser": {
+      "stars": 45588,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "vercel-labs/agent-desktop": {
+      "stars": 16000,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "vercel-labs/agent-skills": {
+      "stars": 33567,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "vercel-labs/json-render": {
+      "stars": 18920,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "vercel-labs/skills": {
+      "stars": 38183,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "zai-org/zcode": {
+      "stars": 8500,
+      "fork": false,
+      "archived": false,
+      "private": false
+    }
+  }
+}
