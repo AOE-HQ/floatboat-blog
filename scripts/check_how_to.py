@@ -114,7 +114,8 @@ def main():
             assert ''.join(rendered['text'].split()) == ''.join(needle.split()), route
             counts[kind] += 1
     assert seen == expected.keys(), expected.keys() - seen
-    assert counts == {'how-to': 92, 'requirements': 22, 'mechanism': 2}, counts
+    expected_counts = Counter(kind for sections in expected.values() for kind in sections)
+    assert counts == expected_counts, (counts, expected_counts)
     print(f'OK: {dict(counts)}, {steps} localized steps; exact source content, semantic lists and excluded routes verified')
 
 

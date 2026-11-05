@@ -3017,8 +3017,8 @@
       "nousresearch/hermes-agent"
     ],
     "en": {
-      "seoTitle": "NVIDIA Auto Ontology: Semantic Layer for Text-to-SQL",
-      "seoDescription": "Explore NVIDIA Auto Ontology for business metrics, verified SQL, and read-only MCP access. See how to test join paths and answers before using live data.",
+      "seoTitle": "NVIDIA Auto Ontology: Semantic Layer for Auditable Text-to-SQL",
+      "seoDescription": "NVIDIA Auto Ontology maps business terms and reviewed metric SQL to database tables. Inspect generated queries and returned rows through read-only MCP.",
       "description": "NVIDIA Auto Ontology maps business terms, metrics, and table relationships to database evidence so agents can answer questions with SQL you can inspect.",
       "kind": "Data Semantics Framework",
       "overviewTitle": "How NVIDIA Auto Ontology grounds database questions",
@@ -3028,7 +3028,7 @@
         "When designing a Floatboat workflow for periodic reporting, use the ontology as a pattern for giving metrics an owner, a definition and a reproducible query. Start with a small test database and compare each result to an analyst-approved reference before treating the workflow as a source for decisions."
       ],
       "capabilitiesTitle": "What Auto Ontology exposes to an agent",
-      "capabilitiesIntro": "The semantic layer connects a business question to database evidence. These three capabilities help you inspect how a term was interpreted, whether the question is covered, and which rows contributed to an answer.",
+      "capabilitiesIntro": "Follow a business question from the term it matched to the SQL and rows it produced. That gives an analyst separate places to check coverage, join logic and the underlying records.",
       "capabilities": [
         {
           "title": "Business terms and reviewed measures",
@@ -3089,8 +3089,8 @@
           "answer": "It connects business terms, columns, table relationships and SQL definitions. The underlying records stay in the connected data sources."
         },
         {
-          "question": "How can I verify an answer?",
-          "answer": "Review the returned SQL and rows and compare them with a reference query on a fixed dataset and reporting period."
+          "question": "Which SQL has been reviewed, and which SQL do I still need to check?",
+          "answer": "A data owner can review the SQL attached to a measure. The query generated for a particular question still needs to be checked against the requested time window, joins and returned rows."
         },
         {
           "question": "Can an MCP client change my ontology?",
@@ -3112,7 +3112,7 @@
     },
     "zh": {
       "seoTitle": "NVIDIA Auto Ontology：企业数据语义层与可核验的文本转 SQL",
-      "seoDescription": "了解 NVIDIA Auto Ontology 如何将业务术语、审核过的指标 SQL 和表关系交给 Agent，并通过只读 MCP 检查问题覆盖范围。用示例库对照查询和返回行，再决定哪些指标可以交给工作流。",
+      "seoDescription": "NVIDIA Auto Ontology 将业务术语、指标定义和表关系交给 Agent。用示例库核对生成的 SQL、返回行和连接条件，并查看只读 MCP 怎样判断问题是否在语义层的覆盖范围内。",
       "description": "NVIDIA Auto Ontology 把业务术语、指标口径和表关系映射到数据库，让 Agent 回答数据问题时给出可以核对的 SQL。",
       "kind": "数据语义框架",
       "overviewTitle": "NVIDIA Auto Ontology 如何为数据库问答提供依据",
@@ -3122,7 +3122,7 @@
         "如果在 Floatboat 里设计定期报表，可以借鉴这套方法，为指标保存责任人、定义和可复跑查询。先在测试库里选几个分析师可以独立复算的问题，把结果逐项核对清楚，再决定哪些指标可以交给 Agent。"
       ],
       "capabilitiesTitle": "Auto Ontology 给 Agent 提供哪些数据依据",
-      "capabilitiesIntro": "从识别业务术语到检查问题是否能回答，每一步都可以留下依据。结合生成的 SQL 和实际返回行，更容易定位偏差来自指标口径、关联条件还是数据本身。",
+      "capabilitiesIntro": "业务问题先对应到术语和指标定义，再沿表关系生成查询。比对 SQL 与返回行时，可以把口径、连接条件和数据质量分开排查。",
       "capabilities": [
         {
           "title": "业务术语与指标口径",
@@ -3139,11 +3139,11 @@
       ],
       "useCases": {
         "title": "NVIDIA Auto Ontology 的使用场景",
-        "description": "先选分析师能独立复算的问题，固定数据快照与统计周期。结果有出入时，沿着术语定义、表连接和返回行逐项检查。",
+        "description": "选一个分析师可以独立复算的问题，固定数据快照与统计周期。若结果有出入，先查指标定义，再查表连接和返回行，避免多个变量同时变化。",
         "items": [
           {
             "title": "对齐财务与销售的收入口径",
-            "description": "财务按净收入统计，销售可能看已签收入。分别记录两种口径排除的项目和对应 SQL，用同一个月份验证结果，并让报表注明采用了哪种定义。"
+            "description": "财务可能按净收入统计，销售则关注已签订单金额。分别记录两个指标的计算口径、排除项和参考 SQL，再对同一个月复算，并在报表标出实际采用的指标。"
           },
           {
             "title": "检查关联查询是否重复计数",
@@ -3161,7 +3161,7 @@
       },
       "prerequisites": {
         "title": "运行示例前要准备什么",
-        "description": "上游快速入门使用微软的 Wide World Importers 示例库。Docker Compose 启动配套服务，推理端点和访问凭据按实际环境单独配置。",
+        "description": "官方示例使用微软的 Wide World Importers 数据库。Docker Compose 启动配套服务，推理端点和凭据则按选用的模型单独配置。",
         "items": [
           {
             "title": "本地运行环境",
@@ -3183,8 +3183,8 @@
           "answer": "保存业务术语、字段映射、表关系和指标的 SQL 定义。实际记录仍存放在连接的数据源中。"
         },
         {
-          "question": "怎么检查返回的数字是否正确？",
-          "answer": "固定数据快照和统计周期，查看返回的 SQL 与结果行，再用已经审核过的参考查询复算。"
+          "question": "哪些 SQL 已经过审核，哪些还需要自己核对？",
+          "answer": "数据负责人可以审核指标关联的 SQL 定义。针对某个问题生成的实际查询仍要核对统计周期、表连接与返回行，再和参考结果比较。"
         },
         {
           "question": "MCP 客户端可以修改本体吗？",
@@ -3223,8 +3223,8 @@
       "graphify-labs/graphify"
     ],
     "en": {
-      "seoTitle": "Craft Anything: Inspect Software and Verify AI Rebuilds",
-      "seoDescription": "Explore Craft Anything’s Rust desktop app, CLI and MCP tools for evidence-led software inspection. See how its early-alpha workflow compares an authorized rebuild.",
+      "seoTitle": "Craft Anything: Software Inspection and AI Rebuild Checks",
+      "seoDescription": "Capture visible behavior with Craft Anything and brief a coding agent. Compare rebuilt websites across screen widths and check early-alpha and Deep mode limits.",
       "description": "Craft Anything collects evidence from software you are allowed to study, passes a brief to a coding agent, and compares the new implementation against the reference.",
       "kind": "Software Inspection and Rebuild Tool",
       "overviewTitle": "From software observation to a testable rebuild",
@@ -3317,8 +3317,8 @@
       ]
     },
     "zh": {
-      "seoTitle": "Craft Anything：软件取证、AI 重建与界面对照验证",
-      "seoDescription": "了解 ArtCraft 的 Craft Anything 如何记录软件的界面与交互，交给编程 Agent 重建，再检查不同屏宽下的差异。介绍早期 Alpha 的运行条件、CLI 和 MCP 入口，以及 Deep 模式的权限边界。",
+      "seoTitle": "Craft Anything：软件界面取证、AI 重建与差异验收",
+      "seoDescription": "Craft Anything 从获准研究的软件记录界面与交互，交给编程 Agent 重建，并对照重建网页在不同屏宽下的表现。项目处于早期 Alpha，Deep 模式的内部检查需要单独确认权限。",
       "description": "Craft Anything 从获准研究的软件采集界面与行为证据，把任务交给编程 Agent，再将新的实现与参考对象逐项比较。",
       "kind": "软件取证与重建工具",
       "overviewTitle": "把软件观察结果变成可验收的重建任务",
@@ -3328,7 +3328,7 @@
         "在 Floatboat 里构建类似工作流时，可以把观察记录整理成任务书和验收项。选用有权使用的素材和交互，将参考资料与生成文件分开，逐条标明哪些差异要修、哪些可以保留。"
       ],
       "capabilitiesTitle": "Craft Anything 如何把观察结果交给编程 Agent",
-      "capabilitiesIntro": "项目目录分别存放采集记录、生成的实现和对照结果。某个页面出现偏差时，可以回到对应证据复核，而不用重新解释整份任务。",
+      "capabilitiesIntro": "项目目录分别保存观察记录、新实现和对照结果。遇到界面差异时，可以回到原始截图、布局尺寸或交互状态，决定是修正实现还是保留设计调整。",
       "capabilities": [
         {
           "title": "记录多个界面状态",
@@ -3345,7 +3345,7 @@
       ],
       "useCases": {
         "title": "Craft Anything 的使用场景",
-        "description": "从你有权检查的软件中挑选少量关键行为。交接时把观察到的现象、需要自己决定的设计细节和验收方式分开记录。",
+        "description": "从获准研究的参考对象里选出关键行为，例如窄屏菜单或导入错误。交接时把实际观察、可自行决定的设计细节和验收动作分别记录。",
         "items": [
           {
             "title": "为内部页面做响应式替代原型",
@@ -3367,7 +3367,7 @@
       },
       "prerequisites": {
         "title": "运行 Craft Anything 前的准备",
-        "description": "先选有权检查的目标和独立项目目录。正式安排迁移前，核对平台发行版、编程 Agent 和需要依赖的对照工具。",
+        "description": "先准备获准检查的目标和独立项目目录，再核对平台发行版、编程 Agent 与所需的对照工具。只研究界面时，可以先把范围限制在可见证据。",
         "items": [
           {
             "title": "可用于取证的参考对象",
@@ -3429,8 +3429,8 @@
       "openai/codex"
     ],
     "en": {
-      "seoTitle": "OpenCut: Open-Source Timeline Editor and Rust Rewrite",
-      "seoDescription": "Explore OpenCut, the open-source CapCut alternative. Try the Classic browser editor for a timeline cut and check which Rust rewrite features remain on the roadmap.",
+      "seoTitle": "OpenCut: Classic Browser Editing and the Rust Rewrite",
+      "seoDescription": "Try timeline editing in the OpenCut Classic browser beta. Check import and export with your own clips, and distinguish the Rust rewrite from planned MCP features.",
       "description": "OpenCut is an open-source video editor for timeline-based work. The browser beta uses Classic while the team builds a new Rust-based editor.",
       "kind": "Video Editor",
       "overviewTitle": "OpenCut Classic and the Rust rewrite",
@@ -3457,7 +3457,7 @@
       ],
       "useCases": {
         "title": "OpenCut use cases",
-        "description": "Choose a short sequence with a specific delivery target. The cut list, review copy and checked export help keep approval separate from media preparation.",
+        "description": "Plan one short cut with a delivery target, then compare the exported file with the timeline. Check whether the intended trims, caption timing and playback survived the export.",
         "items": [
           {
             "title": "Cut an interview highlight from a transcript",
@@ -3519,8 +3519,8 @@
       ]
     },
     "zh": {
-      "seoTitle": "OpenCut 开源视频剪辑：浏览器时间线与 Rust 重写进展",
-      "seoDescription": "了解开源视频编辑器 OpenCut，查看 Classic 网页版能否满足导入、时间线剪辑与导出。区分正在推进的 Rust 重写和路线图上的 MCP、无界面批处理功能。",
+      "seoTitle": "OpenCut：开源视频剪辑器、Classic 网页版与 Rust 重写",
+      "seoDescription": "想在浏览器里试剪短片，可先用 OpenCut Classic 核对导入、时间线和导出。主仓库正在重写 Rust 版，MCP 和无界面批处理仍列在上游路线图中。",
       "description": "OpenCut 是开源时间线视频编辑器。官网 Beta 运行 Classic 版本，团队正在开发基于 Rust 的新版。",
       "kind": "视频剪辑软件",
       "overviewTitle": "OpenCut 的 Classic 版本与 Rust 重写",
@@ -3530,7 +3530,7 @@
         "如果用 Floatboat 准备剪辑工作，可以先整理源文件、时间码、目标时长与验收项，再用浏览器编辑器手动组装和检查。保留素材与剪辑决定，下一轮修改时就能回溯每处调整。"
       ],
       "capabilitiesTitle": "评估 OpenCut 时可以看什么",
-      "capabilitiesIntro": "先用 Classic 浏览器版试做一段短片，再去主仓库了解新版进展。把现有剪辑体验与计划中的接口分开核对。",
+      "capabilitiesIntro": "Classic 网页版可用于验证素材导入和时间线编辑；新版接口的设计与开发在主仓库。需要评估自动化时，先确认相关能力在哪一版实际可用。",
       "capabilities": [
         {
           "title": "时间线剪辑",
@@ -3547,7 +3547,7 @@
       ],
       "useCases": {
         "title": "OpenCut 的使用场景",
-        "description": "用一段目标明确的短素材测试。剪辑清单负责说明怎么改，审阅版和实际导出用于确认改动是否达到预期。",
+        "description": "用一段目标明确的短素材试剪。清单记录每个片段为什么保留、从哪里剪起，导出后再按时间码检查衔接、字幕和画面是否符合交付要求。",
         "items": [
           {
             "title": "从访谈逐字稿剪出精彩片段",
@@ -3569,7 +3569,7 @@
       },
       "prerequisites": {
         "title": "试剪前准备什么",
-        "description": "首次试剪用一份短素材副本，在自己的浏览器里跑通导入、预览和导出，再决定是否用于长片或有截止时间的任务。",
+        "description": "首轮用一份短素材副本，在自己的浏览器里跑通导入、预览和导出。核对文件格式、目标分辨率和播放结果后，再决定是否用于长片或正式任务。",
         "items": [
           {
             "title": "浏览器与授权素材",
@@ -3627,8 +3627,8 @@
       "vercel-labs/agent-desktop"
     ],
     "en": {
-      "seoTitle": "OpenMontage: Agent Video Production and Render Review",
-      "seoDescription": "Explore OpenMontage video pipelines for turning source footage, narration and captions into a reviewed cut. See how agent stages, provider choices and render checks fit together.",
+      "seoTitle": "OpenMontage: AI Agent Video Pipelines and Render Review",
+      "seoDescription": "OpenMontage gives coding agents staged video pipelines for footage, narration and captions. Compare source options and render checks before delivering a cut.",
       "description": "OpenMontage gives a coding agent production plans and tools for moving a video from brief to rendered cut, with review points for footage, audio and captions.",
       "kind": "Agent Video Production Toolkit",
       "overviewTitle": "How OpenMontage stages a video production",
@@ -3722,7 +3722,7 @@
     },
     "zh": {
       "seoTitle": "OpenMontage：Agent 视频制作、素材编排与成片验收",
-      "seoDescription": "了解 OpenMontage 怎样用编程 Agent 安排脚本、真实素材、字幕、合成与渲染检查。页面介绍源码工作流、运行前提，以及使用素材库和外部模型时需要分别确认的条件。",
+      "seoDescription": "从选素材、写脚本到检查字幕和成片，OpenMontage 用分阶段流程组织编程 Agent 的视频制作。按片型选择合成工具和模型服务，并核对素材许可与渲染结果。",
       "description": "OpenMontage 为编程 Agent 提供视频制作流程和工具，从拆解脚本与准备素材，到合成、渲染和检查成片。",
       "kind": "Agent 视频制作工具集",
       "overviewTitle": "OpenMontage 如何把制作计划推进到成片",
@@ -3732,7 +3732,7 @@
         "如果要在 Floatboat 设计视频工作流，可以参考它对任务书、素材确认和成片检查的拆分。先明确交付比例、时长和内容重点，渲染后再用关键帧、字幕和音轨逐项对照，保留需要返工的记录。"
       ],
       "capabilitiesTitle": "OpenMontage 的制作流程和检查依据",
-      "capabilitiesIntro": "流程会记录采用了哪些素材和工具，以及各阶段的检查结果。审阅时可以沿着这些记录追溯成片中的问题来自素材、合成还是渲染配置。",
+      "capabilitiesIntro": "制作记录保留选用的素材、合成工具与各阶段检查结果。回看成片时，可以追溯字幕错位、节奏不顺或画面问题出在哪个环节。",
       "capabilities": [
         {
           "title": "分阶段制作计划",
@@ -3749,7 +3749,7 @@
       ],
       "useCases": {
         "title": "OpenMontage 的使用场景",
-        "description": "先确定要交付的片型，再挑选适合的制作路线。真实镜头拼接、产品演示、动画讲解和多语字幕需要验收的重点各不相同。",
+        "description": "先确定片型和交付方式。真实镜头拼接要核对来源和衔接，产品演示关注操作是否可见，多语字幕还需要逐段检查文案与时间码。",
         "items": [
           {
             "title": "剪辑一条短产品演示",
@@ -3771,7 +3771,7 @@
       },
       "prerequisites": {
         "title": "运行源码工作流前的准备",
-        "description": "上游快速入门在编程 Agent 的工作目录中运行。先准备运行环境和获准使用的输入，再根据片型决定要不要配置外部服务。",
+        "description": "快速入门在编程 Agent 的工作目录中运行。准备 Python 环境和获准使用的素材，再按片型选择合成工具，只有需要外部服务时才配置相应凭据。",
         "items": [
           {
             "title": "项目运行环境",
@@ -3793,7 +3793,7 @@
           "answer": "编程 Agent 读取阶段说明，再调用项目工具。实际能执行的动作取决于宿主的工作区与权限。"
         },
         {
-          "question": "可以用真正的运动镜头制作吗？",
+          "question": "可以用实拍素材剪辑视频吗？",
           "answer": "可以。纪录片式流程可从开放档案检索素材并将选定镜头剪入时间线，实际使用前仍要核对每条素材的权利。"
         },
         {
@@ -3834,7 +3834,7 @@
     ],
     "en": {
       "seoTitle": "OpenDesign: AI Design Workspace for Prototypes and Decks",
-      "seoDescription": "Explore OpenDesign’s local-first AI workspace for prototypes, decks and motion. See how DESIGN.md, agent runtimes and editable artifacts support a design handoff.",
+      "seoDescription": "Turn a brief into a prototype, deck or motion asset in OpenDesign. Review how DESIGN.md guides the agent and which editable files the next reviewer receives.",
       "description": "OpenDesign is an open-source workspace for turning a design brief into interactive prototypes, presentation decks and motion graphics with an AI agent.",
       "kind": "AI design workspace",
       "overviewTitle": "From a design brief to an editable artifact",
@@ -3928,7 +3928,7 @@
     },
     "zh": {
       "seoTitle": "OpenDesign：AI 原型、演示文稿与动效设计工作区",
-      "seoDescription": "了解开源设计工作区 OpenDesign 如何用 DESIGN.md 约束原型、演示文稿和动效，选择本机 Agent 或模型端点，并用可编辑的项目文件完成设计交接。",
+      "seoDescription": "用 DESIGN.md 为 Agent 明确配色、排版和组件规则，再在 OpenDesign 里制作原型、演示文稿或动效。交接前核对可编辑文件，以及所选模型会在本机还是云端处理输入。",
       "description": "OpenDesign 是一款开源设计工作区。你可以和 AI Agent 一起把设计需求做成可交互原型、演示文稿或动效，再预览并修改交付物。",
       "kind": "AI 设计工作区",
       "overviewTitle": "从设计需求到可编辑的交付物",
@@ -3938,7 +3938,7 @@
         "桌面应用和自行部署方式可以使用本地项目文件。调用云模型或 OpenDesign Cloud 时，相关请求会发送到对应服务。处理未公开的方案、代码或受许可限制的素材前，先确认项目采用的执行方式。"
       ],
       "capabilitiesTitle": "OpenDesign 如何组织设计工作",
-      "capabilitiesIntro": "把品牌规则、输出模板和 Agent 工作方式分开维护。切换交付形式时可以沿用同一套视觉约束，并按各自的验收方式检查结果。",
+      "capabilitiesIntro": "把品牌规则、输出模板和 Agent 工作方式分开维护。同一套配色与排版规则可沿用到不同交付物，预览和验收仍按原型、演示文稿或动效各自的要求执行。",
       "capabilities": [
         {
           "title": "设计规则可复用",
@@ -3955,7 +3955,7 @@
       ],
       "useCases": {
         "title": "OpenDesign 的使用场景",
-        "description": "根据谁要审阅、需要作出什么判断来选交付形式。产品流程适合做成可点击的原型，演示文稿和动效则各有自己的验收重点。",
+        "description": "先看审阅人需要判断什么。交互原型让开发检查状态与路径，发布演示文稿用于确认叙事顺序，动效则要核对镜头衔接与节奏。",
         "items": [
           {
             "title": "在开发排期前跑通新手引导",
@@ -3977,7 +3977,7 @@
       },
       "prerequisites": {
         "title": "运行 OpenDesign 前的准备",
-        "description": "桌面版和源码运行需要不同的环境。先核对平台与模型访问方式，再选一个范围小的设计任务，验证从预览到交接的流程。",
+        "description": "桌面版和源码运行需要不同的环境。确认平台、模型访问路径和交付格式后，用一个小任务走完预览与导出，检查接手人能否继续编辑。",
         "items": [
           {
             "title": "桌面平台",
@@ -4039,8 +4039,8 @@
       "anomalyco/opencode"
     ],
     "en": {
-      "seoTitle": "Claude-Mem: Persistent Agent Memory Across Coding Sessions",
-      "seoDescription": "Explore Claude-Mem by Alex Newman, from session hooks and local observation storage to layered MCP retrieval. Learn how to scope history and check provider settings.",
+      "seoTitle": "Claude-Mem: Persistent Agent Memory and Layered MCP Search",
+      "seoDescription": "Claude-Mem records coding observations across sessions. Retrieve a compact index before loading selected details, and check what inference or sync may send off-device.",
       "description": "Claude-Mem summarizes observations from coding agents and retrieves relevant history when work resumes in another session.",
       "kind": "Agent Memory Tool",
       "overviewTitle": "How Claude-Mem recovers context across sessions",
@@ -4067,7 +4067,7 @@
       ],
       "useCases": {
         "title": "Claude-Mem use cases",
-        "description": "Use remembered observations as evidence to check against the current workspace. Retrieve enough context to explain an earlier decision, and keep changed assumptions visible.",
+        "description": "Search the observation index for a past decision, then retrieve only the details you need. Check the old record against the current branch and tests before reusing the decision.",
         "items": [
           {
             "title": "Resume a bug investigation after a session reset",
@@ -4089,7 +4089,7 @@
       },
       "prerequisites": {
         "title": "What to check before enabling memory",
-        "description": "Installation and capture vary by agent host. Start in a test project and check the memory provider, startup context, and optional sync separately.",
+        "description": "Choose a supported coding agent and a disposable repository for the first run. Check which events it captures, what a fresh session receives, and whether inference or sync leaves the device.",
         "items": [
           {
             "title": "A supported coding host",
@@ -4136,7 +4136,7 @@
     },
     "zh": {
       "seoTitle": "Claude-Mem：编程 Agent 跨会话记忆与分层 MCP 检索",
-      "seoDescription": "了解 Alex Newman 开发的 Claude-Mem 如何记录工具观察、生成摘要并检索历史。查看本地工作进程、跨宿主上下文设置，以及摘要服务和可选同步的范围。",
+      "seoDescription": "新会话需要找回上次的实现决定时，Claude-Mem 可先搜索观察记录，再取回相关细节。部署前分别核对宿主采集范围、摘要模型和可选同步。",
       "description": "Claude-Mem 将编程 Agent 的操作整理成可检索的观察记录和摘要，方便在新的会话中接着之前的工作。",
       "kind": "Agent 记忆工具",
       "overviewTitle": "Claude-Mem 怎样找回之前的工作上下文",
@@ -4146,7 +4146,7 @@
         "如果用 Floatboat 交接任务，可以借鉴这种做法：保存少量有价值的决定，按下一个任务检索。拿到历史解释后用当前代码和测试复核，并在开启采集、摘要服务或同步前先划定数据范围。"
       ],
       "capabilitiesTitle": "Claude-Mem 记录和检索哪些信息",
-      "capabilitiesIntro": "采集、存储和检索分别决定哪些活动会留下记录、记录在哪里，以及新会话需要读到多少内容。可以先在临时仓库中跑一轮完整测试。",
+      "capabilitiesIntro": "采集决定哪些活动留下记录，存储决定记录在哪里，检索决定新会话读多少。先用临时仓库核对本地工作进程的记录和返回内容。",
       "capabilities": [
         {
           "title": "会话观察与事件钩子",
@@ -4163,7 +4163,7 @@
       ],
       "useCases": {
         "title": "Claude-Mem 的使用场景",
-        "description": "把检索到的观察当成待验证的历史线索。找到足以解释旧决定的上下文，再用当前工作区检查条件有没有变化。",
+        "description": "把检索到的观察当作历史线索。先找回能解释旧决定的那条记录，再对照当前分支、依赖和测试，确认当时的条件是否依然成立。",
         "items": [
           {
             "title": "会话重置后继续排查错误",
@@ -4185,7 +4185,7 @@
       },
       "prerequisites": {
         "title": "开启会话记忆前需要检查什么",
-        "description": "安装和采集行为随编程宿主而变。先用测试项目分别核对摘要服务、启动上下文和可选同步，再应用到正式工作。",
+        "description": "不同宿主能采集的事件并不完全相同。用测试项目分别检查启动时注入的历史、摘要模型的处理路径，以及可选同步会发送哪些数据。",
         "items": [
           {
             "title": "支持的编程宿主",
@@ -4250,8 +4250,8 @@
       "dietrichgebert/ponytail"
     ],
     "en": {
-      "seoTitle": "Caveman Engine: Recoverable Context Compression for Agents",
-      "seoDescription": "Explore Caveman Engine’s local compression for tool outputs, diffs and logs. Learn to validate recovery handles, compare inferred token counts and check the source license.",
+      "seoTitle": "Caveman Engine: Recoverable Compression for Agent Tool Output",
+      "seoDescription": "Caveman Engine compresses logs, diffs and JSON locally. Check how lossy results preserve exact originals for recovery, and compare token estimates with actual usage.",
       "description": "Caveman Engine compresses the data a model reads, such as logs, JSON and diffs, and preserves original bytes for recovery when a shorter result discards detail.",
       "kind": "Agent Context Compression",
       "overviewTitle": "What Caveman Engine compresses and preserves",
@@ -4344,8 +4344,8 @@
       ]
     },
     "zh": {
-      "seoTitle": "Caveman Engine：可恢复的 Agent 上下文压缩引擎",
-      "seoDescription": "了解 Caveman Engine 怎样在本地压缩日志、差异和 JSON 等工具输出，如何通过恢复句柄核对原文，以及怎样区分本地 Token 估算、实际账单和不同版本的许可证。",
+      "seoTitle": "Caveman Engine：压缩 Agent 工具输出并保留可恢复原文",
+      "seoDescription": "Caveman Engine 在本地压缩日志、代码差异和 JSON。有损结果通过恢复标识保留取回原文的路径；评估时可对照本地 Token 估算、实际用量与版本许可。",
       "description": "Caveman Engine 压缩模型读取的日志、JSON 和差异等数据，并在有损压缩时保存原始字节供后续恢复。",
       "kind": "Agent 上下文压缩引擎",
       "overviewTitle": "Caveman Engine 压缩什么，保留什么",
@@ -4355,7 +4355,7 @@
         "在 Floatboat 设计工作流时，可以借鉴这种保留原文的做法：用同一个任务跑一轮原始数据和一轮压缩数据，要求 Agent 按需恢复一条被省略的细节，再检查两轮是否得出了相同的实质判断。"
       ],
       "capabilitiesTitle": "Caveman Engine 如何保留可追溯的原始数据",
-      "capabilitiesIntro": "验收时把输入、压缩结果和恢复路径放在一起检查。短视图便于先扫一遍，判断所需的细节还要能追溯到原始数据。",
+      "capabilitiesIntro": "同时保留原始输入、压缩结果与取回方式。短版适合快速判断，遇到关键字段或失败堆栈被省略时，再用恢复标识核对原文。",
       "capabilities": [
         {
           "title": "按数据结构选择压缩方式",
@@ -4363,7 +4363,7 @@
         },
         {
           "title": "有损压缩前保存原文",
-          "description": "先保存精确的原始字节，再输出短视图。需要完整信息时，通过恢复句柄取回原文。"
+          "description": "引擎在输出有损结果前保存原始数据。需要核对被省略的信息时，用对应的恢复标识取回原文。"
         },
         {
           "title": "回退与本地计量",
@@ -4372,7 +4372,7 @@
       ],
       "useCases": {
         "title": "Caveman Engine 的使用场景",
-        "description": "先找一类反复读取、已有预期结论的工具结果。比较压缩后留下哪些证据、能否取回省略的细节，以及最终判断是否一致。",
+        "description": "找一类反复读取且已有预期结论的工具结果。逐项核对压缩保留了什么、遗漏的信息能否取回，以及模型看过简版后是否仍能作出同样的判断。",
         "items": [
           {
             "title": "排查测试失败",
@@ -4394,7 +4394,7 @@
       },
       "prerequisites": {
         "title": "试用上下文压缩前的准备",
-        "description": "先确定要测试的工具输出和获准保存原文的位置。将真实工具输出接入压缩流程前，还需核对运行环境与对应 Agent 的接入方式。",
+        "description": "先确定代表性的日志、代码差异和结构化结果，以及获准保存原文的位置。用样本核对运行时与 Agent 接入方式，再决定何时启用压缩。",
         "items": [
           {
             "title": "运行环境和宿主",
@@ -4456,8 +4456,8 @@
       "openai/codex"
     ],
     "en": {
-      "seoTitle": "Context Mode: Keep Tool Output Out of Agent Context",
-      "seoDescription": "Context Mode runs commands and indexes their output locally. Compare focused retrieval with raw logs, and check ELv2 terms before adopting the source-available plugin.",
+      "seoTitle": "Context Mode: Local Tool Output Indexing for Coding Agents",
+      "seoDescription": "Context Mode keeps long tool outputs in a local SQLite index and retrieves excerpts on demand. Check MCP and hook support, plus the source-available ELv2 terms.",
       "description": "Context Mode keeps large tool outputs in a local SQLite index so a coding agent can retrieve the relevant lines instead of reading the entire result.",
       "kind": "Source-available context plugin",
       "overviewTitle": "How Context Mode handles large tool outputs",
@@ -4550,8 +4550,8 @@
       ]
     },
     "zh": {
-      "seoTitle": "Context Mode：减少 Agent 上下文中的工具输出",
-      "seoDescription": "了解 Context Mode 如何在本地执行命令、用 SQLite 索引大体积工具结果，并按需取回片段。采用前可核对宿主支持、实际 Token 消耗与 ELv2 源码使用条款。",
+      "seoTitle": "Context Mode：用本地索引减少 Agent 上下文中的工具输出",
+      "seoDescription": "Context Mode 把长日志和其他工具输出留在本地 SQLite 索引里，Agent 按需取回片段。试用前可核对 MCP 与钩子支持，并区分 ELv2 本地插件和托管 Gateway。",
       "description": "Context Mode 把大体积工具输出留在本地 SQLite 索引中，让编程 Agent 按需取回相关内容。",
       "kind": "源码可见上下文插件",
       "overviewTitle": "Context Mode 如何处理大体积工具输出",
@@ -4561,7 +4561,7 @@
         "本地插件的源码采用 Elastic License 2.0，Context Mode Gateway 则是独立的托管服务。在 Floatboat 里可以借鉴按需取证的方式，把完整日志留在文件中，只把必要片段和可追查的位置带进对话。"
       ],
       "capabilitiesTitle": "Context Mode 的本地执行与检索能力",
-      "capabilitiesIntro": "完整输出仍可搜索，模型只读取当前判断所需的行。可以先核对什么内容进入索引，再用错误文本或来源名称回到原始证据。",
+      "capabilitiesIntro": "让长日志留在本地索引，需要时按错误文本、测试名称或来源定位片段。先用一条已知错误核对检索结果，确认必要的上下文仍能找回。",
       "capabilities": [
         {
           "title": "本地执行",
@@ -4578,7 +4578,7 @@
       ],
       "useCases": {
         "title": "Context Mode 的使用场景",
-        "description": "选一个工具输出很长的任务，对照处理前后实际进入模型的证据量。同时检查信息是否足够解决问题，避免只追求结果更短。",
+        "description": "选一个工具输出很长的任务，对照处理前后进入模型的内容。除了看字节和 Token，也用同一条复现步骤检查检索片段是否足以解释故障。",
         "items": [
           {
             "title": "定位测试日志中的失败",
@@ -4600,7 +4600,7 @@
       },
       "prerequisites": {
         "title": "使用 Context Mode 前的检查",
-        "description": "本地插件与托管 Gateway 的配置和数据流不同。试用时先确认宿主兼容性，并使用允许在本地建立索引的测试项目。",
+        "description": "本地插件与托管 Gateway 的配置和数据流不同。试用时先核对宿主的 MCP 与钩子支持，再选一个允许把工具输出存入本地索引的测试项目。",
         "items": [
           {
             "title": "宿主支持",

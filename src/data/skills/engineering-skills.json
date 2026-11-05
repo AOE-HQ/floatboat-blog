@@ -2487,12 +2487,12 @@
     ],
     "seo": {
       "title": {
-        "en": "I Have ADHD: Action-First Replies for Coding Agents",
-        "zh": "I Have ADHD：让编程 Agent 把下一步行动放在开头"
+        "en": "I Have ADHD Skill: Action-First Replies for Coding Agents",
+        "zh": "I Have ADHD Skill：让编程 Agent 先给行动与检查项"
       },
       "description": {
-        "en": "Use I Have ADHD to turn coding-agent replies into action-first instructions, short ordered steps and clear state updates. Keep exceptions for safety and detail.",
-        "zh": "了解 I Have ADHD Skill 如何将编程 Agent 的回答组织成行动优先、步骤清楚的内容，并保留解释、安全确认和诊断所需的细节。"
+        "en": "Put the next action first with I Have ADHD. The Skill structures coding-agent replies into short steps while keeping exact commands, evidence and safety checks.",
+        "zh": "让编程 Agent 先交代下一步，再用短步骤说明进度。I Have ADHD 可用于调试更新、方案选择和任务交接，同时保留命令、错误依据与必要的安全确认。"
       },
       "keywords": {
         "en": [
@@ -2545,7 +2545,7 @@
       },
       "howDescription": {
         "en": "Try the instruction on a task you can verify. Compare the opening line, the actual next action and whether the shorter answer still includes the evidence you need.",
-        "zh": "先选可以验证结果的任务，对比第一行是否给出下一步，并检查缩短后的答复是否保留需要的证据。"
+        "zh": "拿一条需要人接着处理的更新试用。先看第一行能否照着执行，再查错误码、文件路径、命令和确认条件是否都留在答复里。"
       }
     },
     "useCases": {
@@ -2554,8 +2554,8 @@
         "zh": "I Have ADHD 的使用场景"
       },
       "description": {
-        "en": "Different tasks need different levels of detail. Use action-first wording to expose the first decision while preserving commands, evidence and any required confirmation.",
-        "zh": "按任务决定需要多少细节。先把第一步写在最容易找到的位置，保留命令、依据和需要确认的事项。"
+        "en": "Lead with a command when the next action is a check, or a decision when the reader must choose. Keep the error evidence and approval conditions that make either action safe.",
+        "zh": "调试更新要先让人知道重跑什么，方案比较要先交代要做哪项决定。两种回复可以一样直接，但保留的技术细节和风险说明各有侧重。"
       },
       "items": [
         {
@@ -2651,12 +2651,12 @@
       },
       {
         "question": {
-          "en": "Does it increase my quota?",
-          "zh": "会增加我的 Token 额度吗？"
+          "en": "How do I tell whether a shorter reply saves tokens?",
+          "zh": "怎么判断回复变短后实际省了多少 Token？"
         },
         "answer": {
-          "en": "No. It can shorten output by removing filler, but the subscription quota and billing rules remain provider-controlled.",
-          "zh": "额度与计费规则由服务商决定。这个 Skill 可以减少输出里的赘述，实际用量要看任务和宿主。"
+          "en": "Compare output usage on the same task and model, then check that both replies preserve the required commands and evidence. The Skill does not alter provider limits or billing rules.",
+          "zh": "用同一个任务和模型对照两次输出用量，再确认命令和依据都完整。额度与计费由服务商决定，回复规则不会改变这些条件。"
         }
       },
       {
@@ -2711,12 +2711,12 @@
     "repositoryUrl": "https://github.com/OthmanAdi/planning-with-files",
     "seo": {
       "title": {
-        "en": "Planning with Files Skill: Persistent Plans for AI Agents",
-        "zh": "Planning with Files Skill：用文件保存 Agent 计划与进度"
+        "en": "Planning with Files Skill: Persistent Markdown Plans for Agents",
+        "zh": "Planning with Files Skill：用 Markdown 保存 Agent 计划与进度"
       },
       "description": {
-        "en": "Use Planning with Files to keep task phases, findings and test results on disk. Compare standalone setup with host plugins and verify how a session resumes.",
-        "zh": "了解 Planning with Files 如何把任务阶段、调研发现和验证结果写入 Markdown，供编程 Agent 恢复长任务。区分独立 Skill 安装与宿主插件，并实际检查会话恢复方式。"
+        "en": "Planning with Files stores the plan, findings and progress in Markdown. Test recovery in a fresh session and check when your host needs a plugin or hooks.",
+        "zh": "计划、调研发现和验证结果分别写入三份 Markdown 文件。新会话可读取文件，再按记录继续工作。Planning with Files 的自动恢复取决于宿主插件和钩子配置。"
       },
       "keywords": {
         "en": [
@@ -2975,12 +2975,12 @@
     ],
     "seo": {
       "title": {
-        "en": "Setup Matt Pocock Skills: Repo and Issue Tracker Setup",
-        "zh": "Setup Matt Pocock Skills：配置仓库、Issue 与领域文档"
+        "en": "Setup Matt Pocock Skills: Configure Trackers, Labels and Docs",
+        "zh": "Setup Matt Pocock Skills：配置 Issue 跟踪器、标签与领域文档"
       },
       "description": {
-        "en": "Configure Matt Pocock’s engineering Skills for your repository. Review issue tracker settings, triage role mappings and domain documents before writing changes.",
-        "zh": "了解 Setup Matt Pocock Skills 如何识别仓库现有配置，确认 Issue 跟踪器、分诊标签与领域文档布局，并在写入前审阅实际改动。"
+        "en": "Set up Matt Pocock’s engineering Skills with the repository’s issue tracker, triage labels and domain docs. Inspect the configuration draft before writing it.",
+        "zh": "使用 Setup Matt Pocock Skills 盘点仓库已有的 Issue 跟踪器、分诊标签和术语表。先审阅将写入根指令及 docs/agents/ 的配置，再用一条实际 Issue 检查。"
       },
       "keywords": {
         "en": [
@@ -3032,8 +3032,8 @@
         "zh": "如何使用 Setup Matt Pocock Skills"
       },
       "howDescription": {
-        "en": "Start from the repository’s existing conventions. Review the tracker, labels and documentation paths before confirming the exact files or remote labels that may change.",
-        "zh": "以仓库现有约定为起点。先核对跟踪器、标签和文档位置，再确认哪些文件或远端标签可以修改。"
+        "en": "Inspect the repository’s existing tracker and domain docs before drafting configuration. Review the exact root instruction block, files under docs/agents/ and any labels that would change upstream.",
+        "zh": "以仓库现有约定为起点，先核对远端、分诊标签和术语表位置。确认写入哪份根指令、哪些配置文件和哪些远端标签后，再允许实际修改。"
       }
     },
     "useCases": {
@@ -3042,7 +3042,7 @@
         "zh": "Setup Matt Pocock Skills 的使用场景"
       },
       "description": {
-        "en": "The useful outcome is configuration that another Skill can read reliably. Test it against the tracker and documentation already used by the repository.",
+        "en": "The configuration is ready when a downstream Skill can find the intended issue and the right domain docs. Use one existing issue and one decision record to check both paths.",
         "zh": "配置写完后，下游 Skill 应该能找到正确的 Issue 和领域资料。可以用仓库里现有的一条 Issue 和一份决策记录验证。"
       },
       "items": [
@@ -3208,12 +3208,12 @@
     ],
     "seo": {
       "title": {
-        "en": "Triage: Verify Issues and Write Agent-Ready Briefs",
-        "zh": "Triage：核查 Issue、分配状态与编写 Agent 任务书"
+        "en": "Triage Skill: Verify Issues and Write Agent-Ready Briefs",
+        "zh": "Triage Skill：核查 Issue、建议状态与编写 Agent 任务书"
       },
       "description": {
-        "en": "Use Matt Pocock’s Triage Skill to check issue evidence, apply repository-specific states and prepare implementation briefs for agents or human maintainers.",
-        "zh": "了解 Matt Pocock 的 Triage Skill 如何核查 Issue 和外部 PR 的证据，按仓库配置建议分诊状态，并为 Agent 或维护者写清下一步。"
+        "en": "Matt Pocock’s Triage Skill checks issue evidence, maps categories and states, and drafts a follow-up or agent brief using the repository’s tracker configuration.",
+        "zh": "一条 Issue 缺少复现、已有实现还是可以交给 Agent？Matt Pocock 的 Triage Skill 核查复现和代码依据，再按仓库的标签映射给出状态建议、补充问题或实施任务书。"
       },
       "keywords": {
         "en": [
@@ -3265,8 +3265,8 @@
         "zh": "如何使用 Triage"
       },
       "howDescription": {
-        "en": "Begin with one issue and the project’s configured role mapping. Keep the evidence, proposed state, and any comments separate until the maintainer reviews them.",
-        "zh": "从一个 Issue 和仓库配置的角色映射开始。整理证据、建议状态和评论草案，交给维护者确认后再更新跟踪器。"
+        "en": "Choose one issue or PR and load the repository’s role mapping. Present the evidence, recommended state and draft comment separately so the maintainer can review each before any tracker update.",
+        "zh": "从一条明确的 Issue 或 PR 开始，读取项目里的角色映射。把取证结果、建议状态和外部评论草案分开交给维护者，确认后再写入跟踪器。"
       }
     },
     "useCases": {
@@ -3275,8 +3275,8 @@
         "zh": "Triage 的使用场景"
       },
       "description": {
-        "en": "A useful triage decision explains what the report establishes, which evidence is missing, and who can act next. The state follows from those findings.",
-        "zh": "一条可复核的分诊建议应写清问题已确认到哪一步、还缺哪些依据，以及接下来由谁处理。状态由这些信息决定。"
+        "en": "An issue is ready for an agent when the expected behavior and verification are clear. If the evidence cannot support that decision yet, record the missing detail and who can provide it.",
+        "zh": "分诊要交代问题已经证实到哪一步、还缺什么依据、接下来由谁处理。只有预期行为和验收方式都清楚时，才适合交给 Agent 实施。"
       },
       "items": [
         {
