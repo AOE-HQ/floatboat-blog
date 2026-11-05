@@ -11871,6 +11871,62 @@
           "answer": "MIT 适用于源码许可。模型调用、运行主机、维护和人工审阅仍有成本；本文没有进行任务成本实测，也不承诺固定费用。"
         }
       ]
+    },
+    "/blog/gpt-6-cyber": {
+      "items": [
+        {
+          "question": "Can an independent security researcher apply to Daybreak?",
+          "answer": "Yes. Individuals can apply for Daybreak Blue. The direct Red application path is currently for business and enterprise organizations, and GPT-6 Cyber requires separate model approval."
+        },
+        {
+          "question": "Does ChatGPT Plus or Pro include GPT-6 Cyber?",
+          "answer": "Access requires an organization approved for both Daybreak Red and GPT-6 Cyber. If your organization is approved and has completed its security setup, use its approved Codex workspace or API project."
+        },
+        {
+          "question": "What are GPT-6 Cyber’s API model ID and price?",
+          "answer": "The model ID is gpt-6-cyber. OpenAI lists standard short-context prices of $20 input, $2 cached input, and $100 output per million tokens. Cache writes and some tools are billed separately."
+        },
+        {
+          "question": "Can I use Daybreak Red to test a client’s website?",
+          "answer": "You need explicit permission from the asset owner and must stay within the agreed testing scope. OpenAI also restricts Daybreak from customer-facing applications, downstream product traffic, and third-party access. Check both the engagement authorization and the program’s access rules."
+        },
+        {
+          "question": "Does a Critical model rating make every finding critical?",
+          "answer": "Critical refers to the model’s cybersecurity capability in OpenAI’s framework. Assess each software finding separately based on the affected version, exposure, prerequisites, and demonstrated impact."
+        },
+        {
+          "question": "When does a code review need controlled validation?",
+          "answer": "Consider it when static evidence leaves a material question about whether a specific weakness is reachable or has an impact. Validate only in an authorized test environment, and record enough evidence for the maintainer to review the fix."
+        }
+      ]
+    },
+    "/zh/blog/gpt-6-cyber": {
+      "items": [
+        {
+          "question": "个人开发者可以申请 Daybreak 吗？",
+          "answer": "可以申请 Daybreak Blue。Red 的直接申请渠道目前只对商业和企业组织开放，使用 GPT-6 Cyber 还要取得模型专项批准。"
+        },
+        {
+          "question": "ChatGPT Plus 或 Pro 可以直接使用 GPT-6 Cyber 吗？",
+          "answer": "访问权限由组织的 Daybreak Red 资格和 GPT-6 Cyber 专项审批决定。获批并完成安全配置后，可通过组织获批的 Codex 工作空间或 API 项目使用。"
+        },
+        {
+          "question": "GPT-6 Cyber 的 API 价格和模型 ID 是什么？",
+          "answer": "模型 ID 是 gpt-6-cyber。标准短上下文费率按每百万 token 计，输入 20 美元、命中缓存的输入 2 美元、输出 100 美元。缓存写入和部分工具另行计费。"
+        },
+        {
+          "question": "使用 Daybreak Red 可以测试客户的网站吗？",
+          "answer": "需要站点所有者明确授权，并在双方约定的目标和方式内执行。OpenAI 另行限制将 Daybreak 用于面向客户的应用、下游产品流量或第三方访问，项目授权和产品接入限制需要分别核对。"
+        },
+        {
+          "question": "Critical 是否等同于漏洞报告里的严重等级？",
+          "answer": "Critical 在这里衡量模型的网络安全能力。漏洞报告里的严重等级需要结合受影响版本、触发条件和实际后果独立评估。"
+        },
+        {
+          "question": "小团队什么时候需要从代码审查升级到受控验证？",
+          "answer": "当代码审查无法确认权限问题是否真的影响指定用户或数据时，可以安排经授权的隔离验证。用合成测试账号保留脱敏证据，补丁由负责人审批，并检查合法访问是否受到影响。"
+        }
+      ]
     }
   }
 }

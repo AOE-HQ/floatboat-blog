@@ -43,7 +43,7 @@ OpenAI 的[发布文章](https://openai.com/index/gpt-6-astra/)展示了软件�
 
 ## Critical 网络能力与访问边界
 
-OpenAI 的[安全概览](https://openai.com/index/safety-overview-gpt-6-astra/)称，Astra 是其首个达到 Preparedness Framework 中 Critical 网络安全门槛的模型。OpenAI 同时说明已加强防护，高风险请求可能被拒绝，而 Daybreak 项目会向经审核的防御用途逐步扩展访问。
+OpenAI 的[安全概览](https://openai.com/index/safety-overview-gpt-6-astra/)称，Astra 是其首个达到 Preparedness Framework 中 Critical 网络安全门槛的模型。OpenAI 同时说明已加强防护，高风险请求可能被拒绝，而 Daybreak 项目会向经审核的防御用途逐步扩展访问。专门面向授权安全研究的 [GPT-6 Cyber](/zh/blog/gpt-6-cyber) 则通过 Daybreak Red 分批开放。
 
 因此，“模型在评测中能做某事”并不等于普通账户能执行同样操作。生产行为还受政策控制、监控、产品权限与账户资格影响。安全团队应只用获批数据测试允许的防御工作，不应把绕过防护设计成业务前提。
 
