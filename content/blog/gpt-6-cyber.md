@@ -80,4 +80,8 @@ A useful handoff also distinguishes an unresolved question from a negative resul
 
 Treat the proposed patch as its own change. Check that its tests demonstrate the original issue and that normal document uploads still work. Give the maintainer the commit, a summary of affected deployments, and a place to record the decision. If the issue touches a dependency maintained elsewhere, let the responsible security contact choose how to disclose it and what evidence can safely be shared. This keeps validation evidence, patch approval, and disclosure with the people authorized to make each decision.
 
-If your team routinely gets blocked at the controlled validation stage, that is a concrete use case to describe in a Daybreak application. If its bottleneck is patch ownership, stale dependency inventories, or missing tests, improving those parts of the workflow will help regardless of model access.
+## Conclusion: When GPT-6 Cyber is worth trying
+
+Consider GPT-6 Cyber when your team repeatedly reaches a specific security question that ordinary review and existing tests leave open, and you have an authorized environment in which to answer it. If the delay comes from missing test fixtures, an outdated dependency inventory, or unclear patch ownership, fix that first. Those gaps will still slow down a run with a more capable model.
+
+If you have model approval, start with one known case in an isolated environment and compare it with your current process. A useful pilot gives the maintainer evidence they can reproduce and shows what the agent does when it reaches the edge of its permissions. Use those results to decide whether to expand the pilot.
