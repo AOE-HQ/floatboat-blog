@@ -1681,6 +1681,15 @@
         "handoffs",
         "debugging"
       ]
+    },
+    "project:github.com/karpathy/autoresearch": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "performance"
+      ]
     }
   }
 }

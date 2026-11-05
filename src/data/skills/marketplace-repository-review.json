@@ -462,6 +462,12 @@
       "fork": false,
       "archived": false,
       "private": false
+    },
+    "karpathy/autoresearch": {
+      "stars": 99298,
+      "fork": false,
+      "archived": false,
+      "private": false
     }
   }
 }

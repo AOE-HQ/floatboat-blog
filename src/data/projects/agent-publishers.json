@@ -3244,5 +3244,148 @@
         "href": "/zh/skills-marketplace/categories"
       }
     }
+  },
+  "karpathy": {
+    "name": "Andrej Karpathy",
+    "type": "Person",
+    "profileUrl": "https://github.com/karpathy",
+    "logo": "/blog/brand/publishers/karpathy.webp",
+    "tags": {
+      "en": [
+        "LLM research",
+        "Agent experiments",
+        "Knowledge bases"
+      ],
+      "zh": [
+        "语言模型研究",
+        "Agent 实验",
+        "知识库"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/karpathy",
+        "label": {
+          "en": "GitHub profile",
+          "zh": "GitHub 主页"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Autoresearch",
+        "url": "https://github.com/karpathy/autoresearch",
+        "en": {
+          "kind": "Agent research software",
+          "description": "Run single-GPU model experiments with a coding agent, then compare changes under a fixed training budget."
+        },
+        "zh": {
+          "kind": "Agent 研究软件",
+          "description": "让编程 Agent 在单张 GPU 上运行模型训练实验，并在固定训练预算下比较改动效果。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Andrej Karpathy: Autoresearch and the LLM Wiki",
+      "seoDescription": "Explore Andrej Karpathy’s Autoresearch project for Agent-run model experiments and his original LLM Wiki design for maintaining linked Markdown knowledge.",
+      "heroTitle": "Andrej Karpathy",
+      "heroDescription": "Andrej Karpathy publishes practical ways to work with language models, from single-GPU experiments run by coding agents to a Markdown wiki an agent can maintain over time.",
+      "overview": {
+        "title": "About Andrej Karpathy",
+        "paragraphs": [
+          "Karpathy’s public work spans language model training and the workflows that make models useful. Autoresearch gives a coding agent a training script to modify, a fixed time budget, and an evaluation metric. The resulting log and Git history let a researcher compare proposed changes with measured outcomes.",
+          "LLM Wiki takes a different approach to persistent knowledge. A file-capable agent reads source documents, writes linked Markdown pages, and updates existing pages when new evidence changes an earlier conclusion. Karpathy published the design as a Gist. Readers can use it to specify a wiki in their own workspace."
+        ]
+      },
+      "aboutTitle": "About Andrej Karpathy",
+      "about": "Karpathy’s public work spans language model training and the workflows that make models useful. Autoresearch gives a coding agent a training script to modify, a fixed time budget, and an evaluation metric. The resulting log and Git history let a researcher compare proposed changes with measured outcomes.",
+      "projectsTitle": "Autoresearch: Agent-Run Training Experiments",
+      "projectsIntro": "The upstream project shows how an agent can iterate against a fixed training budget. Its experiment instructions specify what to change and how to record successful and failed runs.",
+      "skillsTitle": "Agent Skills by Andrej Karpathy",
+      "skillsIntro": "Find published task instructions with documented host support.",
+      "faq": [
+        {
+          "question": "What does Autoresearch actually run?",
+          "answer": "A coding agent edits the training script, runs short model-training experiments, and logs the results. The default comparison metric is validation bits per byte."
+        },
+        {
+          "question": "What do I need to try the upstream experiment?",
+          "answer": "The official setup calls for a single NVIDIA GPU, Python 3.10 or later, and uv. The README lists community ports separately."
+        },
+        {
+          "question": "Which agents does Autoresearch document?",
+          "answer": "The README names Codex and Claude. Start the agent in the repository and give it the experiment instructions after confirming a baseline run works."
+        },
+        {
+          "question": "How do I compare Autoresearch results?",
+          "answer": "Keep the data, evaluation setup, GPU, and per-run budget fixed. Compare validation bits per byte and check the change history before accepting a result."
+        },
+        {
+          "question": "What did Karpathy publish as LLM Wiki?",
+          "answer": "He shared a design for building and maintaining a personal wiki with an agent. The original Gist describes the file layout, update routine, and role of source material."
+        },
+        {
+          "question": "Does LLM Wiki require Obsidian?",
+          "answer": "Karpathy uses Obsidian to browse the wiki. An agent can maintain the underlying linked Markdown in a workspace where it can read the sources and edit the wiki."
+        }
+      ],
+      "ctaTitle": "Build a Knowledge Base With the LLM Wiki Pattern",
+      "ctaDescription": "Read how source documents, linked pages, and agent updates fit into a persistent Markdown knowledge base.",
+      "ctaPrimary": {
+        "label": "Read Karpathy’s LLM Wiki design",
+        "href": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+      }
+    },
+    "zh": {
+      "seoTitle": "Andrej Karpathy：Autoresearch 自动实验与 LLM Wiki",
+      "seoDescription": "了解 Andrej Karpathy 如何用 Autoresearch 让编程 Agent 执行模型训练实验，以及如何用 LLM Wiki 维护可持续更新的 Markdown 知识库。",
+      "heroTitle": "Andrej Karpathy",
+      "heroDescription": "Andrej Karpathy 公开了两种使用语言模型的方法：让编程 Agent 在单卡环境反复执行训练实验，以及让 Agent 持续维护相互链接的 Markdown 知识库。",
+      "overview": {
+        "title": "关于 Andrej Karpathy",
+        "paragraphs": [
+          "Karpathy 的公开作品涵盖语言模型训练，以及怎样把模型用到具体工作中。在 Autoresearch 中，编程 Agent 有一份可以改动的训练脚本、一段固定的训练时间和一个评价指标。研究者可以结合实验日志与 Git 历史，核对哪些改动带来了可测量的变化。",
+          "LLM Wiki 关注知识的长期维护。能操作文件的 Agent 从原始资料提取信息，生成互相引用的 Markdown 页面，并在新证据出现时修订已有条目。Karpathy 通过 GitHub Gist 公开了这套设计，读者可以用它来定义自己工作区里的知识库。"
+        ]
+      },
+      "aboutTitle": "关于 Andrej Karpathy",
+      "about": "Karpathy 的公开作品涵盖语言模型训练，以及怎样把模型用到具体工作中。在 Autoresearch 中，编程 Agent 有一份可以改动的训练脚本、一段固定的训练时间和一个评价指标。研究者可以结合实验日志与 Git 历史，核对哪些改动带来了可测量的变化。",
+      "projectsTitle": "Autoresearch：由 Agent 执行的训练实验",
+      "projectsIntro": "上游项目展示了 Agent 如何在固定训练预算下迭代。仓库中的实验指引说明了可改动的范围，以及怎样记录成功和失败的运行。",
+      "skillsTitle": "Andrej Karpathy 的 Agent Skills",
+      "skillsIntro": "查看有宿主支持说明的任务指引。",
+      "faq": [
+        {
+          "question": "Autoresearch 实际执行什么？",
+          "answer": "编程 Agent 修改训练脚本，运行短时模型训练并记录结果。默认用验证集每字节比特数衡量效果。"
+        },
+        {
+          "question": "试跑官方实验需要什么？",
+          "answer": "官方配置需要单张 NVIDIA GPU、Python 3.10 或更新版本以及 uv。README 单独列出了社区移植版本。"
+        },
+        {
+          "question": "Autoresearch 文档提到了哪些 Agent？",
+          "answer": "README 提到了 Codex 和 Claude。先确认基线训练能运行，再从仓库中启动 Agent，并提供实验指引。"
+        },
+        {
+          "question": "怎样比较 Autoresearch 的实验结果？",
+          "answer": "固定数据、评估设置、GPU 和每次训练的时间预算，比较验证集每字节比特数，再核对改动记录。"
+        },
+        {
+          "question": "Karpathy 发布的 LLM Wiki 是什么？",
+          "answer": "它是一份关于如何由 Agent 建立和维护个人知识库的设计说明。原始 Gist 介绍了文件结构、更新流程和源资料的角色。"
+        },
+        {
+          "question": "做 LLM Wiki 一定要用 Obsidian 吗？",
+          "answer": "Karpathy 用 Obsidian 浏览知识库。只要工作区允许 Agent 读取原始资料并编辑知识库，也可以用其他工具查看这些 Markdown 页面。"
+        }
+      ],
+      "ctaTitle": "用 LLM Wiki 方法搭建知识库",
+      "ctaDescription": "了解如何把原始资料、互相链接的页面和 Agent 的日常更新组织成一个长期可用的 Markdown 知识库。",
+      "ctaPrimary": {
+        "label": "阅读 Karpathy 的 LLM Wiki 原文",
+        "href": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+      }
+    }
   }
 }

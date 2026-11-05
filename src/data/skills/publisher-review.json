@@ -651,6 +651,18 @@
       "repositories": [
         "OthmanAdi/planning-with-files"
       ]
+    },
+    "karpathy": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "karpathy/autoresearch",
+      "stars": 99298,
+      "fork": false,
+      "archived": false,
+      "reason": "官方原仓公开且高于门槛。README 标注 MIT，并记录 Codex 和 Claude 的执行入口。默认分支文件列表无独立 LICENSE，GitHub API 未识别许可证。原始 LLM Wiki Gist 作为参考。",
+      "repositories": [
+        "karpathy/autoresearch"
+      ]
     }
   }
 }

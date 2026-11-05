@@ -162,5 +162,9 @@
   "othmanadi": {
     "en": "Publishes Planning with Files, an open-source workflow for tracking long-running agent tasks in project files.",
     "zh": "发布 Planning with Files，用项目文件跟踪 Agent 的长任务。"
+  },
+  "karpathy": {
+    "en": "Publishes Autoresearch for agent-run model training and the LLM Wiki pattern for maintaining linked Markdown knowledge.",
+    "zh": "公开 Autoresearch 自动训练实验和 LLM Wiki 设计，探索用 Agent 迭代模型与维护知识库。"
   }
 }
