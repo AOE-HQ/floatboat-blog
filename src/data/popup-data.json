@@ -1709,6 +1709,16 @@
         "title": "让请求走到可审阅的结果",
         "body": "把输入资料、任务范围和验收证据放在一起。在 Floatboat 中组织工作，再判断哪些步骤适合交给 Agent。"
       }
+    },
+    "gpt-6-cyber": {
+      "en": {
+        "title": "Give the maintainer a finding they can verify",
+        "body": "Use Floatboat to organize sanitized evidence, the affected build, and the regression checks a maintainer needs to review a fix."
+      },
+      "zh": {
+        "title": "把权限问题整理成可复核的修复任务",
+        "body": "在 Floatboat 中汇总已脱敏的发现、受影响版本和回归验收条件，把补丁交给负责人审批。"
+      }
     }
   }
 }

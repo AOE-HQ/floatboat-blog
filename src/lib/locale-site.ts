@@ -28,6 +28,10 @@ export function createLocaleSiteHelpers(locale: BlogLocale): SiteHelpers {
 
   return {
     ...base,
+    runtime: {
+      ...base.runtime,
+      site: { ...base.runtime.site, locale: "zh-CN" },
+    },
     blogPath: (...segments: string[]) => withLocale(base.blogPath(...segments)),
     postPath: (slug: string) => withLocale(base.postPath(slug)),
     categoryPath: (slug: string) => withLocale(base.categoryPath(slug)),

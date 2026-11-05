@@ -45,7 +45,7 @@ Use vendor results to decide what to evaluate, not to forecast an exact success 
 
 OpenAI’s [safety overview](https://openai.com/index/safety-overview-gpt-6-astra/) states that Astra is its first model to reach the Critical cybersecurity threshold under the Preparedness Framework. OpenAI also describes strengthened safeguards and says advanced harmful cyber requests may be refused, while the Daybreak program expands access for vetted defensive work.
 
-This means “Astra can do X in an evaluation” does not guarantee that a public account can perform the same action. Production behavior includes policy controls, monitoring, product permissions, and account eligibility. Security teams should test allowed defensive workflows with approved data and should not design a process around bypassing safeguards.
+This means “Astra can do X in an evaluation” does not guarantee that a public account can perform the same action. Production behavior includes policy controls, monitoring, product permissions, and account eligibility. Security teams should test allowed defensive workflows with approved data and should not design a process around bypassing safeguards. For the separate specialized model, see [GPT-6 Cyber’s rollout and Daybreak Red requirements](/blog/gpt-6-cyber).
 
 ## When Astra is worth the premium
 
