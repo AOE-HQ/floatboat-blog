@@ -112,12 +112,12 @@
     },
     "juliusbrussee": {
       "status": "approved",
-      "checkedAt": "2026-10-27",
+      "checkedAt": "2026-11-05",
       "representativeRepository": "juliusbrussee/caveman",
-      "stars": 115407,
+      "stars": 117598,
       "fork": false,
       "archived": false,
-      "pushedAt": "2026-10-27T07:47:31Z",
+      "pushedAt": "2026-11-05T07:18:24Z",
       "reason": "代表仓库超过1000 stars，归属已核对，非fork且未归档。",
       "repositories": [
         "juliusbrussee/caveman",
@@ -533,6 +533,123 @@
       "reason": "已核对原始组织、当前 README、默认分支与实际许可证；代表仓库超过1000 stars，非 fork 且未归档。",
       "repositories": [
         "stablyai/orca"
+      ]
+    },
+    "nvidia": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "NVIDIA/auto-ontology",
+      "stars": 5993,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-04T19:31:19Z",
+      "reason": "已核对官方组织、当前 README、默认分支和许可证文件；代表仓库超过 1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "NVIDIA/auto-ontology"
+      ]
+    },
+    "storytold": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "storytold/craft-anything",
+      "stars": 13308,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-04T22:45:59Z",
+      "reason": "已核对官方组织、当前 README、默认分支和许可证文件；代表仓库超过 1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "storytold/craft-anything"
+      ]
+    },
+    "opencut-app": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "OpenCut-app/OpenCut",
+      "stars": 97362,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-09-24T09:24:44Z",
+      "reason": "已核对官方主体、当前 README、默认分支和许可证文件；代表仓库超过 1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "OpenCut-app/OpenCut"
+      ]
+    },
+    "calesthio": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "calesthio/OpenMontage",
+      "stars": 76785,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-03T17:42:02Z",
+      "reason": "已核对官方主体、当前 README、默认分支和许可证文件；代表仓库超过 1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "calesthio/OpenMontage"
+      ]
+    },
+    "nexu-io": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "nexu-io/open-design",
+      "stars": 106013,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-05T08:22:00Z",
+      "reason": "已核对官方主体、当前 README、默认分支和许可证文件；代表仓库超过 1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "nexu-io/open-design"
+      ]
+    },
+    "thedotmack": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "thedotmack/claude-mem",
+      "stars": 113176,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-05T08:56:50Z",
+      "reason": "已核对官方主体、当前 README、默认分支和许可证文件；代表仓库超过 1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "thedotmack/claude-mem"
+      ]
+    },
+    "mksglu": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "mksglu/context-mode",
+      "stars": 33516,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-05T03:24:00Z",
+      "reason": "已核对官方主体、当前 README、默认分支和许可证文件；代表仓库超过 1000 stars，非 fork 且未归档。",
+      "repositories": [
+        "mksglu/context-mode"
+      ]
+    },
+    "ayghri": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "ayghri/i-have-adhd",
+      "stars": 60131,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-10-19T19:46:23Z",
+      "reason": "核对了原始仓库、发布者、Skill 源文件、许可证及维护状态；发布者代表仓库超过 1000 stars。",
+      "repositories": [
+        "ayghri/i-have-adhd"
+      ]
+    },
+    "othmanadi": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "OthmanAdi/planning-with-files",
+      "stars": 27892,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-04T18:13:42Z",
+      "reason": "核对了原始仓库、发布者、Skill 源文件、许可证及维护状态；发布者代表仓库超过 1000 stars。",
+      "repositories": [
+        "OthmanAdi/planning-with-files"
       ]
     }
   }

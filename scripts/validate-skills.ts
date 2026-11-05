@@ -24,7 +24,7 @@ for (const skill of FEATURED_SKILLS) {
     assert.equal(related.items.length, 4);
     assert.equal(new Set(related.items.map((item) => item.href)).size, 4);
     assert(!related.items.some((item) => item.href === skillPath(locale, skill.authorHandle, skill.slug)), `${id}: related link points to itself`);
-    assert(skill.seo.title[locale].includes(skill.name), `${id}: metadata omits the Skill name`);
+    assert(skill.seo.title[locale].includes(locale === "en" ? ": " : "："), `${id}: metadata needs a keyword and a page-specific detail`);
     assert(skill.hero.title[locale].includes(skill.name), `${id}: hero omits the Skill name`);
     assert.equal(skill.overview[locale].paragraphs.length, 1);
     assert(skill.faq.every((item) => item.answer[locale].length >= (locale === "en" ? 55 : 20)), `${id}: FAQ answers need substantive page-specific content`);

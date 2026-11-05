@@ -90,6 +90,33 @@
     ],
     "stablyai": [
       "stablyai/orca"
+    ],
+    "nvidia": [
+      "NVIDIA/auto-ontology"
+    ],
+    "storytold": [
+      "storytold/craft-anything"
+    ],
+    "opencut-app": [
+      "OpenCut-app/OpenCut"
+    ],
+    "calesthio": [
+      "calesthio/OpenMontage"
+    ],
+    "nexu-io": [
+      "nexu-io/open-design"
+    ],
+    "thedotmack": [
+      "thedotmack/claude-mem"
+    ],
+    "mksglu": [
+      "mksglu/context-mode"
+    ],
+    "ayghri": [
+      "ayghri/i-have-adhd"
+    ],
+    "othmanadi": [
+      "OthmanAdi/planning-with-files"
     ]
   },
   "repositories": {
@@ -5172,6 +5199,281 @@
         "owner": {
           "login": "cloudflare",
           "type": "Organization"
+        }
+      }
+    }
+  },
+  "trendingProjectIntake": {
+    "checkedAt": "2026-11-05",
+    "scope": "Requested GitHub project intake. Verified official repositories, current README and license files, without installing upstream software.",
+    "repositories": {
+      "NVIDIA/auto-ontology": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/NVIDIA/auto-ontology",
+        "fullName": "NVIDIA/auto-ontology",
+        "url": "https://github.com/NVIDIA/auto-ontology",
+        "stars": 5993,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-04T19:31:19Z",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/NVIDIA/auto-ontology/blob/main/LICENSE",
+        "licenseFiles": {
+          "https://github.com/NVIDIA/auto-ontology/blob/main/LICENSE": "3d2a1f75048008cf5006b88cf1b9e4224beff03d"
+        },
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/NVIDIA/auto-ontology/blob/main/README.md",
+        "owner": {
+          "login": "NVIDIA",
+          "type": "Organization",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/1728152?s=256&v=4"
+        },
+        "sources": [
+          "https://github.com/NVIDIA",
+          "https://www.nvidia.com/",
+          "https://github.com/NVIDIA/auto-ontology/blob/main/docs/mcp.md"
+        ]
+      },
+      "storytold/craft-anything": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/storytold/craft-anything",
+        "fullName": "storytold/craft-anything",
+        "url": "https://github.com/storytold/craft-anything",
+        "stars": 13308,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-04T22:45:59Z",
+        "license": "MIT OR Apache-2.0",
+        "licenseUrl": "https://github.com/storytold/craft-anything#license-and-credits",
+        "licenseFiles": {
+          "https://github.com/storytold/craft-anything/blob/main/LICENSE-APACHE": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+          "https://github.com/storytold/craft-anything/blob/main/LICENSE-MIT": "8e63994018e4058c76afe447b01e1a10120b7c58"
+        },
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/storytold/craft-anything/blob/main/README.md",
+        "owner": {
+          "login": "storytold",
+          "type": "Organization",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/76897702?s=256&v=4"
+        },
+        "sources": [
+          "https://github.com/storytold",
+          "https://getartcraft.com/",
+          "https://github.com/storytold/craft-anything/blob/main/docs/STATUS.md"
+        ]
+      },
+      "OpenCut-app/OpenCut": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/OpenCut-app/OpenCut",
+        "fullName": "OpenCut-app/OpenCut",
+        "url": "https://github.com/OpenCut-app/OpenCut",
+        "stars": 97362,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-09-24T09:24:44Z",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/OpenCut-app/OpenCut/blob/main/LICENSE",
+        "licenseFiles": {
+          "https://github.com/OpenCut-app/OpenCut/blob/main/LICENSE": "ad719023a02fbc933ede5bffb861afa124a90842"
+        },
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/OpenCut-app/OpenCut/blob/main/README.md",
+        "owner": {
+          "login": "OpenCut-app",
+          "type": "Organization",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/217499887?v=4"
+        },
+        "sources": [
+          "https://github.com/OpenCut-app/opencut-classic",
+          "https://github.com/OpenCut-app",
+          "https://opencut.app/"
+        ]
+      },
+      "calesthio/OpenMontage": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/calesthio/OpenMontage",
+        "fullName": "calesthio/OpenMontage",
+        "url": "https://github.com/calesthio/OpenMontage",
+        "stars": 76785,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-03T17:42:02Z",
+        "license": "AGPL-3.0",
+        "licenseUrl": "https://github.com/calesthio/OpenMontage/blob/main/LICENSE",
+        "licenseFiles": {
+          "https://github.com/calesthio/OpenMontage/blob/main/LICENSE": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e"
+        },
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/calesthio/OpenMontage/blob/main/README.md",
+        "owner": {
+          "login": "calesthio",
+          "type": "User",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213189893?s=256&v=4"
+        },
+        "sources": [
+          "https://github.com/calesthio",
+          "https://www.openmontage.video/",
+          "https://github.com/calesthio/OpenMontage/blob/main/AGENT_GUIDE.md",
+          "https://github.com/calesthio/OpenMontage/tree/main/pipeline_defs"
+        ]
+      },
+      "nexu-io/open-design": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/nexu-io/open-design",
+        "fullName": "nexu-io/open-design",
+        "url": "https://github.com/nexu-io/open-design",
+        "stars": 106013,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-05T08:22:00Z",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/nexu-io/open-design/blob/main/LICENSE",
+        "licenseFiles": {
+          "https://github.com/nexu-io/open-design/blob/main/LICENSE": "eb79c35bd865477e525b18e56f35d56fbe0f7110"
+        },
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/nexu-io/open-design/blob/main/README.md",
+        "owner": {
+          "login": "nexu-io",
+          "type": "Organization",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/263625318?v=4"
+        },
+        "sources": [
+          "https://github.com/nexu-io",
+          "https://open-design.ai",
+          "https://github.com/nexu-io/open-design/releases",
+          "https://github.com/nexu-io/open-design/blob/main/PRIVACY.md",
+          "https://github.com/nexu-io/open-design/tree/main/design-systems"
+        ]
+      },
+      "thedotmack/claude-mem": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/thedotmack/claude-mem",
+        "fullName": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "stars": 113176,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-05T08:56:50Z",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE",
+        "licenseFiles": {
+          "https://github.com/thedotmack/claude-mem/blob/main/LICENSE": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        },
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/thedotmack/claude-mem/blob/main/README.md",
+        "owner": {
+          "login": "thedotmack",
+          "type": "User",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/683968?v=4"
+        },
+        "sources": [
+          "https://github.com/thedotmack",
+          "https://github.com/thedotmack/claude-mem/blob/main/docs/license.md",
+          "https://github.com/thedotmack/claude-mem/blob/main/docs/ip-boundary.md",
+          "https://docs.claude-mem.ai/"
+        ]
+      },
+      "JuliusBrussee/caveman": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/JuliusBrussee/caveman",
+        "fullName": "JuliusBrussee/caveman",
+        "url": "https://github.com/juliusbrussee/caveman",
+        "stars": 117598,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-05T07:18:24Z",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/juliusbrussee/caveman/blob/main/LICENSE",
+        "licenseFiles": {
+          "https://github.com/JuliusBrussee/caveman/blob/main/LICENSE": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        },
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/juliusbrussee/caveman/blob/main/README.md",
+        "owner": {
+          "login": "JuliusBrussee",
+          "type": "User",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/104168679?v=4"
+        },
+        "sources": [
+          "https://github.com/JuliusBrussee/caveman/blob/main/LICENSING.md",
+          "https://github.com/JuliusBrussee/caveman/blob/main/docs/technical/engine.md",
+          "https://github.com/JuliusBrussee/caveman/releases/tag/v4.0.1"
+        ]
+      },
+      "mksglu/context-mode": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/mksglu/context-mode",
+        "fullName": "mksglu/context-mode",
+        "url": "https://github.com/mksglu/context-mode",
+        "stars": 33516,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-05T03:24:00Z",
+        "license": "Elastic License 2.0",
+        "licenseUrl": "https://github.com/mksglu/context-mode/blob/main/LICENSE",
+        "licenseFiles": {
+          "https://github.com/mksglu/context-mode/blob/main/LICENSE": "15259beb88afda1c8790d41cdf948c9e0e4f211d"
+        },
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/mksglu/context-mode/blob/main/README.md",
+        "owner": {
+          "login": "mksglu",
+          "type": "User",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6067714?v=4"
+        },
+        "sources": [
+          "https://github.com/mksglu",
+          "https://github.com/mksglu/context-mode#license",
+          "https://contextmode.ai/"
+        ]
+      },
+      "ayghri/i-have-adhd": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/ayghri/i-have-adhd",
+        "fullName": "ayghri/i-have-adhd",
+        "url": "https://github.com/ayghri/i-have-adhd",
+        "stars": 60131,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-10-19T19:46:23Z",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/ayghri/i-have-adhd/blob/main/LICENSE",
+        "licenseFiles": {
+          "https://github.com/ayghri/i-have-adhd/blob/main/LICENSE": "19db5f1b0ca65e277c158bd4c4263139ccfd859c"
+        },
+        "defaultBranch": "main",
+        "readmeUrl": "https://github.com/ayghri/i-have-adhd/blob/main/README.md",
+        "sourceUrl": "https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md",
+        "sourceSha": "6c42757ffae37e442adfb52fbba2a8609f1cff00",
+        "owner": {
+          "login": "ayghri",
+          "type": "User",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/32200675?v=4"
+        }
+      },
+      "OthmanAdi/planning-with-files": {
+        "checkedAt": "2026-11-05",
+        "apiUrl": "https://api.github.com/repos/OthmanAdi/planning-with-files",
+        "fullName": "OthmanAdi/planning-with-files",
+        "url": "https://github.com/OthmanAdi/planning-with-files",
+        "stars": 27892,
+        "fork": false,
+        "archived": false,
+        "pushedAt": "2026-11-04T18:13:42Z",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/OthmanAdi/planning-with-files/blob/master/LICENSE",
+        "licenseFiles": {
+          "https://github.com/OthmanAdi/planning-with-files/blob/master/LICENSE": "a00edac2c06c65f72f6fa7dc75512541213aa771"
+        },
+        "defaultBranch": "master",
+        "readmeUrl": "https://github.com/OthmanAdi/planning-with-files/blob/master/README.md",
+        "sourceUrl": "https://github.com/OthmanAdi/planning-with-files/blob/master/skills/planning-with-files/SKILL.md",
+        "sourceSha": "dbdaf6ac0e13ea034fa648daa278cc2242a236e7",
+        "owner": {
+          "login": "OthmanAdi",
+          "type": "User",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/78882424?v=4"
         }
       }
     }

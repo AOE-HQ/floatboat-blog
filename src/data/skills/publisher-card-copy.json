@@ -126,5 +126,41 @@
   "stablyai": {
     "en": "Publishes Orca, a workspace for parallel coding agents, isolated worktrees, and code review.",
     "zh": "发布 Orca，通过并行编程 Agent、独立 worktree 与代码审阅组织开发任务。"
+  },
+  "nvidia": {
+    "en": "Publishes AI infrastructure and developer tools, including a semantic layer for enterprise data.",
+    "zh": "发布 AI 基础设施与开发工具，包括面向企业数据的语义层框架。"
+  },
+  "storytold": {
+    "en": "Publishes creative software and Rust tools for editing media, inspecting interfaces, and building prototypes.",
+    "zh": "发布创意软件和 Rust 工具，覆盖媒体编辑、界面取证与原型重建。"
+  },
+  "opencut-app": {
+    "en": "Builds an open-source video editor and maintains the upstream Rust rewrite.",
+    "zh": "发布开源视频编辑器 OpenCut，并在主仓库推进 Rust 版重写。"
+  },
+  "calesthio": {
+    "en": "Publishes OpenMontage, a source toolkit for planning, assembling and reviewing video with a coding agent.",
+    "zh": "发布 OpenMontage，帮助编程 Agent 规划、组装和检查视频。"
+  },
+  "nexu-io": {
+    "en": "Publishes an open-source design workspace and reusable packages for agent-assisted design.",
+    "zh": "发布开源设计工作区，以及供 Agent 使用的设计系统和模板。"
+  },
+  "thedotmack": {
+    "en": "Creates Claude-Mem, a memory tool that helps coding agents recover context across sessions.",
+    "zh": "开发 Claude-Mem，帮助编程 Agent 在新会话中找回之前的工作上下文。"
+  },
+  "mksglu": {
+    "en": "Maintains Context Mode, a local plugin for keeping large tool results searchable outside an agent’s context.",
+    "zh": "维护 Context Mode，将大体积工具输出保存在 Agent 上下文之外供检索。"
+  },
+  "ayghri": {
+    "en": "Publishes I Have ADHD, an Agent Skill for clear next actions and visible progress.",
+    "zh": "发布 I Have ADHD Skill，让 Agent 清楚给出下一步，并保留任务进度。"
+  },
+  "othmanadi": {
+    "en": "Publishes Planning with Files, an open-source workflow for tracking long-running agent tasks in project files.",
+    "zh": "发布 Planning with Files，用项目文件跟踪 Agent 的长任务。"
   }
 }

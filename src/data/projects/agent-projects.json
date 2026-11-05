@@ -2154,7 +2154,7 @@
       "milind-soni/mausbot",
       "dietrichgebert/ponytail",
       "openai/codex",
-      "anomalyco/opencode"
+      "storytold/craft-anything"
     ],
     "en": {
       "seoTitle": "Agent Desktop: Accessibility Trees, App Actions, and Verification",
@@ -2360,7 +2360,7 @@
       "graphify-labs/graphify",
       "stablyai/orca",
       "vercel-labs/agent-desktop",
-      "milind-soni/mausbot"
+      "calesthio/openmontage"
     ],
     "en": {
       "seoTitle": "ComfyUI Workflows: Nodes, Model Dependencies, and Media Creation",
@@ -2575,7 +2575,7 @@
     "classification": "agent-tool",
     "reviewedAt": "2026-11-03",
     "related": [
-      "comfy-org/comfyui",
+      "nvidia/auto-ontology",
       "stablyai/orca",
       "openai/codex",
       "dietrichgebert/ponytail"
@@ -2997,6 +2997,1651 @@
         ]
       },
       "seoDescription": "用 Orca 在独立 worktree 中组织并行编程 Agent，比较各自修改并审查问题，将发现转成范围明确的后续任务；了解隔离执行、结果整合与人工判断的分工。"
+    }
+  },
+  {
+    "author": "nvidia",
+    "slug": "auto-ontology",
+    "name": "NVIDIA Auto Ontology",
+    "repository": "https://github.com/NVIDIA/auto-ontology",
+    "website": "https://developer.nvidia.com/topic/ai/agent-knowledge-foundation",
+    "documentation": "https://github.com/NVIDIA/auto-ontology/blob/main/README.md",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/NVIDIA/auto-ontology/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-05",
+    "related": [
+      "graphify-labs/graphify",
+      "deepseek-ai/dsh-superagent",
+      "openai/codex",
+      "nousresearch/hermes-agent"
+    ],
+    "en": {
+      "seoTitle": "NVIDIA Auto Ontology: Semantic Layer for Text-to-SQL",
+      "seoDescription": "Explore NVIDIA Auto Ontology for business metrics, verified SQL, and read-only MCP access. See how to test join paths and answers before using live data.",
+      "description": "NVIDIA Auto Ontology maps business terms, metrics, and table relationships to database evidence so agents can answer questions with SQL you can inspect.",
+      "kind": "Data Semantics Framework",
+      "overviewTitle": "How NVIDIA Auto Ontology grounds database questions",
+      "overview": [
+        "A question about revenue can be ambiguous even when the database is well documented. The agent needs to know which revenue definition applies, which tables can be joined, and which records to exclude. Auto Ontology compiles database metadata into a semantic layer that maps business terms to columns and relationships and can hold reviewed SQL for measures.",
+        "The project runs alongside the databases. Its chat interface can return the SQL, rows and steps behind an answer. Its read-only MCP server also exposes term lookup, answerability checks and questions to authenticated clients under the signed-in user's permissions. The companion setup, management and query Skills guide a coding agent through those operations.",
+        "When designing a Floatboat workflow for periodic reporting, use the ontology as a pattern for giving metrics an owner, a definition and a reproducible query. Start with a small test database and compare each result to an analyst-approved reference before treating the workflow as a source for decisions."
+      ],
+      "capabilitiesTitle": "What Auto Ontology exposes to an agent",
+      "capabilitiesIntro": "The semantic layer connects a business question to database evidence. These three capabilities help you inspect how a term was interpreted, whether the question is covered, and which rows contributed to an answer.",
+      "capabilities": [
+        {
+          "title": "Business terms and reviewed measures",
+          "description": "Map terms to columns and attach reviewed SQL to measures whose business definitions need to be consistent."
+        },
+        {
+          "title": "Relationships and query evidence",
+          "description": "Follow table relationships, inspect the generated SQL and compare the returned rows with a known result."
+        },
+        {
+          "title": "Read-only MCP access",
+          "description": "Search terms and check whether a question is answerable before issuing it through a separately deployed, authenticated MCP server."
+        }
+      ],
+      "useCases": {
+        "title": "NVIDIA Auto Ontology use cases",
+        "description": "Start with a question whose expected answer an analyst can reproduce. Use the SQL and rows to diagnose whether a mismatch comes from the definition, the join, the time window, or the underlying source.",
+        "items": [
+          {
+            "title": "Resolve two definitions of revenue",
+            "description": "If finance reports net revenue and sales reports booked revenue, document the exclusions and approved query for each. Test the same monthly request against both measures and make the reporting agent surface the definition it selected."
+          },
+          {
+            "title": "Check joins before publishing a weekly KPI",
+            "description": "Compare the generated order-to-invoice join against reference SQL using orders with multiple invoice lines. Review row counts and totals together so a plausible-looking aggregate does not hide duplicate records."
+          },
+          {
+            "title": "Route unsupported questions for review",
+            "description": "Include a region or product attribute missing from the ontology in an evaluation set. Check answerability before asking for SQL, and capture the missing mapping for an analyst instead of filling the report with a guess."
+          },
+          {
+            "title": "Keep a reporting decision reproducible",
+            "description": "Save the time window, approved measure, SQL and returned rows beside the result. When a source schema or definition changes, rerun the original question and give reviewers evidence for any difference."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What a test deployment needs",
+        "description": "The upstream quickstart uses Microsoft’s Wide World Importers sample. Its Docker Compose configuration runs the supporting services, while the configured inference endpoints and credentials are managed separately.",
+        "items": [
+          {
+            "title": "Local runtime",
+            "description": "Install Docker with Compose v2 and uv for the upstream sample setup."
+          },
+          {
+            "title": "Model endpoint access",
+            "description": "Set the credentials for your configured inference endpoints. The documented sample quickstart uses an NVIDIA API key."
+          },
+          {
+            "title": "Database scope",
+            "description": "Start with the sample database or an approved test source and restrict the credentials to the data needed for the task."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "What does the ontology store?",
+          "answer": "It connects business terms, columns, table relationships and SQL definitions. The underlying records stay in the connected data sources."
+        },
+        {
+          "question": "How can I verify an answer?",
+          "answer": "Review the returned SQL and rows and compare them with a reference query on a fixed dataset and reporting period."
+        },
+        {
+          "question": "Can an MCP client change my ontology?",
+          "answer": "The upstream MCP server exposes read-only tools. Authenticate with the deployment and review its account permissions before testing."
+        },
+        {
+          "question": "What if a metric is missing?",
+          "answer": "Use the answerability tools to identify missing coverage and ask a data owner to define or approve the metric before using it in reporting."
+        },
+        {
+          "question": "What are the NVIDIA ontology Skills for?",
+          "answer": "They guide setup, semantic model management and validated querying. The query workflow depends on a running Auto Ontology deployment."
+        },
+        {
+          "question": "Does the sample setup need model credentials?",
+          "answer": "Yes. NVIDIA documents an API key for the sample quickstart. Check the model endpoint and credential requirements when changing the configuration."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "NVIDIA Auto Ontology：企业数据语义层与可核验的文本转 SQL",
+      "seoDescription": "了解 NVIDIA Auto Ontology 如何将业务术语、审核过的指标 SQL 和表关系交给 Agent，并通过只读 MCP 检查问题覆盖范围。用示例库对照查询和返回行，再决定哪些指标可以交给工作流。",
+      "description": "NVIDIA Auto Ontology 把业务术语、指标口径和表关系映射到数据库，让 Agent 回答数据问题时给出可以核对的 SQL。",
+      "kind": "数据语义框架",
+      "overviewTitle": "NVIDIA Auto Ontology 如何为数据库问答提供依据",
+      "overview": [
+        "同一句“上个月收入是多少”，财务和销售可能采用不同口径。Agent 要先理解收入的定义、哪些表可以连接，以及哪些记录应排除。Auto Ontology 从数据库元数据编译语义层，将术语映射到列与表关系，并可为指标保存审核过的 SQL。",
+        "项目部署在数据库旁。聊天界面可以返回答案背后的 SQL、结果行和执行步骤；只读 MCP 服务还向已认证的客户端提供术语查询、可回答性检查和问答工具，调用遵循登录用户的权限。配套的三个 Skills 分别覆盖部署、语义模型管理和查询验证。",
+        "如果在 Floatboat 里设计定期报表，可以借鉴这套方法，为指标保存责任人、定义和可复跑查询。先在测试库里选几个分析师可以独立复算的问题，把结果逐项核对清楚，再决定哪些指标可以交给 Agent。"
+      ],
+      "capabilitiesTitle": "Auto Ontology 给 Agent 提供哪些数据依据",
+      "capabilitiesIntro": "从识别业务术语到检查问题是否能回答，每一步都可以留下依据。结合生成的 SQL 和实际返回行，更容易定位偏差来自指标口径、关联条件还是数据本身。",
+      "capabilities": [
+        {
+          "title": "业务术语与指标口径",
+          "description": "将术语映射到实际字段，为需要统一定义的度量绑定审核过的 SQL。"
+        },
+        {
+          "title": "表关系与查询证据",
+          "description": "查看查询经过哪些表及连接条件，并将返回行与已知结果对照。"
+        },
+        {
+          "title": "只读 MCP 工具",
+          "description": "通过独立部署并完成认证后，可以先查术语和可回答性，再执行有依据的数据问答。"
+        }
+      ],
+      "useCases": {
+        "title": "NVIDIA Auto Ontology 的使用场景",
+        "description": "先选分析师能独立复算的问题，固定数据快照与统计周期。结果有出入时，沿着术语定义、表连接和返回行逐项检查。",
+        "items": [
+          {
+            "title": "对齐财务与销售的收入口径",
+            "description": "财务按净收入统计，销售可能看已签收入。分别记录两种口径排除的项目和对应 SQL，用同一个月份验证结果，并让报表注明采用了哪种定义。"
+          },
+          {
+            "title": "检查关联查询是否重复计数",
+            "description": "选取包含多行发票明细的订单，比较生成查询与人工确认的订单到发票连接。先核对行数，再核对汇总金额，避免误把重复记录算进周报。"
+          },
+          {
+            "title": "将缺少定义的问题交回分析师",
+            "description": "在评估集中加入语义层没有覆盖的地区或产品属性，查询前先检查是否可回答。记录缺失的字段映射，由数据负责人补齐后再生成指标。"
+          },
+          {
+            "title": "为定期报表留下复核材料",
+            "description": "把统计区间、指标定义、实际 SQL 与返回行随报表存档。数据库字段或定义调整后重跑相同问题，审阅人可以追查数字变化从何而来。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "运行示例前要准备什么",
+        "description": "上游快速入门使用微软的 Wide World Importers 示例库。Docker Compose 启动配套服务，推理端点和访问凭据按实际环境单独配置。",
+        "items": [
+          {
+            "title": "本地运行环境",
+            "description": "按上游快速入门准备 Docker、Compose v2 和 uv。"
+          },
+          {
+            "title": "推理端点凭据",
+            "description": "为所选推理端点配置凭据。上游示例使用 NVIDIA API 密钥。"
+          },
+          {
+            "title": "测试数据范围",
+            "description": "先使用示例库或获准的测试数据源，并将数据库账号限制在任务所需范围内。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "本体层里保存了什么？",
+          "answer": "保存业务术语、字段映射、表关系和指标的 SQL 定义。实际记录仍存放在连接的数据源中。"
+        },
+        {
+          "question": "怎么检查返回的数字是否正确？",
+          "answer": "固定数据快照和统计周期，查看返回的 SQL 与结果行，再用已经审核过的参考查询复算。"
+        },
+        {
+          "question": "MCP 客户端可以修改本体吗？",
+          "answer": "上游 MCP 提供只读工具。连接需要经过部署实例认证，测试前可核对该账户的数据权限。"
+        },
+        {
+          "question": "语义层没有覆盖我的指标怎么办？",
+          "answer": "先检查问题是否可回答，找出缺少的术语、字段或定义。由指标负责人确认后再把结果用于报表。"
+        },
+        {
+          "question": "三个 NVIDIA Ontology Skills 分别做什么？",
+          "answer": "分别指导部署、语义模型管理和验证查询。执行查询前需要可用的 Auto Ontology 实例。"
+        },
+        {
+          "question": "运行官方示例需要模型凭据吗？",
+          "answer": "需要。上游快速入门使用 NVIDIA API 密钥，改用其他端点时需核对相应的认证配置。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "storytold",
+    "slug": "craft-anything",
+    "name": "Craft Anything",
+    "repository": "https://github.com/storytold/craft-anything",
+    "website": "https://getartcraft.com/apps/craft-anything",
+    "documentation": "https://github.com/storytold/craft-anything/blob/main/docs/STATUS.md",
+    "license": "MIT OR Apache-2.0",
+    "licenseUrl": "https://github.com/storytold/craft-anything#license-and-credits",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-05",
+    "related": [
+      "vercel-labs/agent-desktop",
+      "nexu-io/open-design",
+      "opencut-app/opencut",
+      "graphify-labs/graphify"
+    ],
+    "en": {
+      "seoTitle": "Craft Anything: Inspect Software and Verify AI Rebuilds",
+      "seoDescription": "Explore Craft Anything’s Rust desktop app, CLI and MCP tools for evidence-led software inspection. See how its early-alpha workflow compares an authorized rebuild.",
+      "description": "Craft Anything collects evidence from software you are allowed to study, passes a brief to a coding agent, and compares the new implementation against the reference.",
+      "kind": "Software Inspection and Rebuild Tool",
+      "overviewTitle": "From software observation to a testable rebuild",
+      "overview": [
+        "A screenshot captures one moment. It leaves out mobile layouts, open menus and the behavior that makes a prototype useful. Craft Anything is an early-alpha Rust project that records observations and puts them alongside a new implementation and its comparison results. The desktop app, CLI and MCP interface expose the same underlying engine.",
+        "The default clean-room mode studies visible behavior, such as text, screenshots, spacing and menu states. Deep mode can inspect internals such as files or code when you are authorized to examine them. The mode does not isolate the operating system, and a coding agent still acts with its own permissions.",
+        "The useful pattern for a Floatboat workflow is to turn observable evidence into a brief and a set of acceptance checks. Choose assets and interactions you have permission to reuse, keep references separate from generated files, and record differences you want to fix or keep."
+      ],
+      "capabilitiesTitle": "How Craft Anything connects evidence and implementation",
+      "capabilitiesIntro": "The project folder separates the capture, new implementation, and comparison results. Those artifacts make it possible to revisit one mismatch without reopening every design choice.",
+      "capabilities": [
+        {
+          "title": "Capture visible states",
+          "description": "Record pages at several widths, visible text, layout measurements and open controls to specify what the new project needs to do."
+        },
+        {
+          "title": "Delegate the build",
+          "description": "Give an installed coding agent a brief and target stack. Upstream documents Claude Code as the first supported builder."
+        },
+        {
+          "title": "Compare the result",
+          "description": "Review viewport checks and remaining mismatches against the source evidence, then decide which differences need another pass."
+        }
+      ],
+      "useCases": {
+        "title": "Craft Anything use cases",
+        "description": "Choose a target you can examine and a small set of behaviors worth reproducing. The handoff should identify what was observed, where the brief leaves room for judgment, and how to evaluate the result.",
+        "items": [
+          {
+            "title": "Replace an internal page with a responsive prototype",
+            "description": "Capture the current layout at desktop, tablet and phone widths, including a collapsed navigation state. Ask the builder to use your own copy and assets, then check overflow, element order and menu behavior at all three widths."
+          },
+          {
+            "title": "Document the behavior of a retiring desktop tool",
+            "description": "Work from a permitted copy and record how the window changes after an import, an empty file or a failed action. Turn the observations into acceptance cases for a replacement and list any behavior you could not reproduce."
+          },
+          {
+            "title": "Rebuild a game mechanic as a small experiment",
+            "description": "Choose a mechanic you may study, such as a movement or scoring loop, and describe it using your own art and level design. Treat a runnable demo and a repeatable gameplay check as the handoff, with unresolved differences listed separately."
+          },
+          {
+            "title": "Separate regressions from approved design changes",
+            "description": "After reviewing a comparison, approve the intentional differences in writing and turn the rest into small fix requests. Rerun the affected checks so later reviewers can tell a deliberate redesign from an unresolved mismatch."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What to prepare before a Craft Anything run",
+        "description": "Start with a target you are authorized to inspect and a separate project folder. Confirm your platform’s release and your coding agent before committing to a larger rebuild.",
+        "items": [
+          {
+            "title": "A reference you may study",
+            "description": "Define what can be captured and what assets, copy or branding require separate permission."
+          },
+          {
+            "title": "A build agent for implementation",
+            "description": "Check the supported backend in the upstream status notes. Claude Code uses its own local installation and sign-in."
+          },
+          {
+            "title": "A testable project scope",
+            "description": "Pick representative screens or states and write down how you will compare them. Early-alpha support varies by target and tool."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "What can the default clean-room mode see?",
+          "answer": "It uses visible evidence such as screenshots, text and measured layout. Deep mode is separate and may inspect internals where you have permission."
+        },
+        {
+          "question": "Does clean-room mode sandbox the builder?",
+          "answer": "The mode controls what Craft Anything offers for inspection. The operating system and coding agent keep their own permission boundaries."
+        },
+        {
+          "question": "Is Craft Anything ready for production migration?",
+          "answer": "Upstream labels it early alpha. Pilot with a bounded target and verify the particular platform, agent and comparison tools you intend to rely on."
+        },
+        {
+          "question": "Can I inspect a project without starting a build?",
+          "answer": "Yes. The upstream app provides an inspection-only path in Deep mode, and the CLI and MCP interfaces expose inspection tools."
+        },
+        {
+          "question": "Can I use Codex as the builder?",
+          "answer": "Upstream documents a Codex adapter but says it has not verified it on a real installation. Check the current status before depending on it."
+        },
+        {
+          "question": "Does the source license cover the target’s assets?",
+          "answer": "Craft Anything is offered under MIT or Apache-2.0. A target's logos, text, images and other materials keep their own rights."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Craft Anything：软件取证、AI 重建与界面对照验证",
+      "seoDescription": "了解 ArtCraft 的 Craft Anything 如何记录软件的界面与交互，交给编程 Agent 重建，再检查不同屏宽下的差异。介绍早期 Alpha 的运行条件、CLI 和 MCP 入口，以及 Deep 模式的权限边界。",
+      "description": "Craft Anything 从获准研究的软件采集界面与行为证据，把任务交给编程 Agent，再将新的实现与参考对象逐项比较。",
+      "kind": "软件取证与重建工具",
+      "overviewTitle": "把软件观察结果变成可验收的重建任务",
+      "overview": [
+        "一张截图只记录某一刻的界面，无法说明窄屏怎样排版、菜单怎样展开，或导入失败后出现什么。Craft Anything 是早期 Alpha 的 Rust 项目，将观察记录、新实现和对照结果放在同一项目里。桌面应用、CLI 和 MCP 共用底层引擎。",
+        "默认的洁净室模式从可见行为取证，例如截图、文字、间距和展开的菜单。Deep 模式可以进一步查看文件或代码等内部信息，前提是你有权查看。模式本身不会隔离操作系统，编程 Agent 仍使用自己的读写和执行权限。",
+        "在 Floatboat 里构建类似工作流时，可以把观察记录整理成任务书和验收项。选用有权使用的素材和交互，将参考资料与生成文件分开，逐条标明哪些差异要修、哪些可以保留。"
+      ],
+      "capabilitiesTitle": "Craft Anything 如何把观察结果交给编程 Agent",
+      "capabilitiesIntro": "项目目录分别存放采集记录、生成的实现和对照结果。某个页面出现偏差时，可以回到对应证据复核，而不用重新解释整份任务。",
+      "capabilities": [
+        {
+          "title": "记录多个界面状态",
+          "description": "保存不同屏宽下的页面、可见文字、布局尺寸与控件展开状态，为重建说明补上单张截图遗漏的细节。"
+        },
+        {
+          "title": "将实现交给编程 Agent",
+          "description": "提供任务说明和目标技术栈，由本机编程 Agent 生成项目。上游首先支持 Claude Code。"
+        },
+        {
+          "title": "用对照结果决定下一轮修改",
+          "description": "检查各屏宽下的结果与原参考之间还有哪些差异，再决定需要修改的交互或布局。"
+        }
+      ],
+      "useCases": {
+        "title": "Craft Anything 的使用场景",
+        "description": "从你有权检查的软件中挑选少量关键行为。交接时把观察到的现象、需要自己决定的设计细节和验收方式分开记录。",
+        "items": [
+          {
+            "title": "为内部页面做响应式替代原型",
+            "description": "采集桌面、平板和手机布局，另外记录导航折叠后的状态。重建时使用自己的文案和素材，交付前检查三种屏宽下的溢出、元素顺序和菜单操作。"
+          },
+          {
+            "title": "记录准备退役的桌面工具",
+            "description": "在获准使用的副本中，观察导入正常文件、空文件和失败后的界面变化。把这些现象转成替代工具的验收用例，同时标出没有复现的行为。"
+          },
+          {
+            "title": "单独试做一种游戏机制",
+            "description": "选取有权研究的移动或计分循环，用自己的美术和关卡表达。交付一个可运行的演示和可重复的玩法检查，将仍有差异的地方单独列出。"
+          },
+          {
+            "title": "分清主动改版和未修复的偏差",
+            "description": "看过对照结果后，先确认哪些变化是有意保留的，再把其余差异拆成可复测的小任务。复查受影响的屏幕或状态，让后续审阅有据可查。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "运行 Craft Anything 前的准备",
+        "description": "先选有权检查的目标和独立项目目录。正式安排迁移前，核对平台发行版、编程 Agent 和需要依赖的对照工具。",
+        "items": [
+          {
+            "title": "可用于取证的参考对象",
+            "description": "明确允许记录的范围，并列出需要另行授权的素材、文案或品牌元素。"
+          },
+          {
+            "title": "本机编程 Agent",
+            "description": "按上游状态说明核对后端。Claude Code 使用自己的本机安装与登录。"
+          },
+          {
+            "title": "可验证的任务边界",
+            "description": "选择有代表性的屏幕或状态，先写清比较方法。早期 Alpha 对不同目标和工具的覆盖程度有差异。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "默认的洁净室模式能看到哪些信息？",
+          "answer": "它使用截图、可见文字和布局尺寸等外部证据。需要查看有权检查的内部信息时，再切换到 Deep 模式。"
+        },
+        {
+          "question": "洁净室模式会隔离编程 Agent 吗？",
+          "answer": "这个模式限制 Craft Anything 提供的取证方式。操作系统和编程 Agent 仍按各自的权限执行。"
+        },
+        {
+          "question": "可以直接用于正式迁移吗？",
+          "answer": "上游将项目标为早期 Alpha。先用范围小的目标试跑，核对所选平台、Agent 和对照工具是否覆盖实际任务。"
+        },
+        {
+          "question": "只想研究软件，可以先不重建吗？",
+          "answer": "可以。上游桌面应用在 Deep 模式下提供仅检查的入口，CLI 与 MCP 也提供独立的取证工具。"
+        },
+        {
+          "question": "Codex 能直接作为重建的 Agent 吗？",
+          "answer": "上游提供 Codex 适配器，但说明尚未在真实安装中验证。依赖这个流程前应查看对应版本的状态。"
+        },
+        {
+          "question": "项目开源许可包含参考软件的素材吗？",
+          "answer": "Craft Anything 源码可选 MIT 或 Apache-2.0。参考软件的标志、文字、图片等仍有各自的权利边界。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "opencut-app",
+    "slug": "opencut",
+    "name": "OpenCut",
+    "repository": "https://github.com/OpenCut-app/OpenCut",
+    "website": "https://opencut.app/",
+    "documentation": "https://github.com/OpenCut-app/OpenCut/blob/main/README.md",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/OpenCut-app/OpenCut/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-05",
+    "related": [
+      "comfy-org/comfyui",
+      "storytold/craft-anything",
+      "vercel-labs/agent-desktop",
+      "openai/codex"
+    ],
+    "en": {
+      "seoTitle": "OpenCut: Open-Source Timeline Editor and Rust Rewrite",
+      "seoDescription": "Explore OpenCut, the open-source CapCut alternative. Try the Classic browser editor for a timeline cut and check which Rust rewrite features remain on the roadmap.",
+      "description": "OpenCut is an open-source video editor for timeline-based work. The browser beta uses Classic while the team builds a new Rust-based editor.",
+      "kind": "Video Editor",
+      "overviewTitle": "OpenCut Classic and the Rust rewrite",
+      "overview": [
+        "OpenCut is a timeline editor positioned as an open-source alternative to CapCut. Its public browser beta runs the original Classic codebase. The team archives that code separately while building the next version in the main repository.",
+        "The rewrite is intended to share a Rust core across platforms and make room for plugins, an editor API and headless operation. Upstream also lists MCP among the planned capabilities. Keep an edit plan independent of those interfaces until the one you need is available and tested.",
+        "For a Floatboat workflow, prepare clip names, timecodes, a target duration and export checks. Use the browser editor to assemble and review the result by hand, and keep the source media and cut decisions available for a later revision."
+      ],
+      "capabilitiesTitle": "What to inspect in OpenCut",
+      "capabilitiesIntro": "Classic provides a browser editor for hands-on trials. The main repository tracks the replacement, so use the appropriate source when checking an editor behavior or following development.",
+      "capabilities": [
+        {
+          "title": "Timeline assembly",
+          "description": "Arrange source clips and remove unwanted intervals to evaluate how the editor handles a short sequence."
+        },
+        {
+          "title": "Browser beta",
+          "description": "Start with the official early beta and verify that it accepts your media and can produce the output your workflow needs."
+        },
+        {
+          "title": "Rust editor architecture",
+          "description": "Follow the main repository for work on a shared core and plugin-oriented interfaces. Check the documented release status before designing around any new API."
+        }
+      ],
+      "useCases": {
+        "title": "OpenCut use cases",
+        "description": "Choose a short sequence with a specific delivery target. The cut list, review copy and checked export help keep approval separate from media preparation.",
+        "items": [
+          {
+            "title": "Cut an interview highlight from a transcript",
+            "description": "Mark a candidate opening, the main quote and a clean closing in the transcript with timecodes. Assemble the selected intervals in the browser editor and verify that transitions preserve the meaning of each answer."
+          },
+          {
+            "title": "Create a focused product walkthrough",
+            "description": "Order source recordings around one user task, then remove waiting time and repeated navigation. Review the short version against a checklist for visible labels and continuity before sharing the export."
+          },
+          {
+            "title": "Hand off a revised cut to a reviewer",
+            "description": "Record the source filenames, in and out points and the reason for each replacement. Give the reviewer the new video and a change list so they can compare the intended edits with the actual playback."
+          },
+          {
+            "title": "Evaluate a browser editor before adopting it",
+            "description": "Use representative clips and a small test project. Record how the beta handles import, timeline edits and export on the browser and device you actually use, then judge whether it covers the delivery requirements."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What you need for a browser editing trial",
+        "description": "Use a copy of a short source clip for the first trial. Verify import, preview and export in your own browser before moving a long or deadline-sensitive edit.",
+        "items": [
+          {
+            "title": "Browser and authorized media",
+            "description": "Open the official early beta with a short set of clips you may edit and share."
+          },
+          {
+            "title": "Export criteria",
+            "description": "Write down the intended duration, framing and playback checks before committing to the editor for a deliverable."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which OpenCut version runs on the official site?",
+          "answer": "The main repository points users to the Classic-based browser beta at opencut.app while the replacement is being built."
+        },
+        {
+          "question": "Why is OpenCut Classic archived?",
+          "answer": "It is the original codebase. The team directs ongoing rewrite work to the main OpenCut repository, and the archived repository is read-only."
+        },
+        {
+          "question": "Can I use OpenCut as an MCP tool today?",
+          "answer": "The main repository lists an MCP server in its rewrite plans. Verify a documented release and the actual tool surface before using it in an agent workflow."
+        },
+        {
+          "question": "Can I depend on automated batch exports?",
+          "answer": "Headless operation and batch rendering are listed as rewrite goals. Verify manual export on the browser beta with a sample before planning delivery."
+        },
+        {
+          "question": "Where do I check self-hosting instructions?",
+          "answer": "The archived Classic README documents its Bun and Docker setup. The main repository has a different development setup for the Rust rewrite."
+        },
+        {
+          "question": "How is OpenCut licensed?",
+          "answer": "The main OpenCut repository is MIT-licensed. Source code licensing and rights to the clips or audio you use are separate."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "OpenCut 开源视频剪辑：浏览器时间线与 Rust 重写进展",
+      "seoDescription": "了解开源视频编辑器 OpenCut，查看 Classic 网页版能否满足导入、时间线剪辑与导出。区分正在推进的 Rust 重写和路线图上的 MCP、无界面批处理功能。",
+      "description": "OpenCut 是开源时间线视频编辑器。官网 Beta 运行 Classic 版本，团队正在开发基于 Rust 的新版。",
+      "kind": "视频剪辑软件",
+      "overviewTitle": "OpenCut 的 Classic 版本与 Rust 重写",
+      "overview": [
+        "OpenCut 是面向时间线剪辑的开源编辑器，可作为 CapCut 的替代方案之一。官网提供基于原始代码的浏览器 Beta。团队已单独归档 Classic 仓库，在主仓库开发下一版。",
+        "新版计划在不同平台之间复用 Rust 内核，并提供插件、编辑器 API 与无界面运行能力。MCP 也在上游路线图中。工作流要依赖某个接口时，应先核对它所在的实际发行版。",
+        "如果用 Floatboat 准备剪辑工作，可以先整理源文件、时间码、目标时长与验收项，再用浏览器编辑器手动组装和检查。保留素材与剪辑决定，下一轮修改时就能回溯每处调整。"
+      ],
+      "capabilitiesTitle": "评估 OpenCut 时可以看什么",
+      "capabilitiesIntro": "先用 Classic 浏览器版试做一段短片，再去主仓库了解新版进展。把现有剪辑体验与计划中的接口分开核对。",
+      "capabilities": [
+        {
+          "title": "时间线剪辑",
+          "description": "将素材排进时间线，移除多余片段，观察短片的预览和衔接是否符合交付要求。"
+        },
+        {
+          "title": "浏览器 Beta",
+          "description": "从官网早期 Beta 开始，验证实际素材能否导入，以及导出结果能否用于当前任务。"
+        },
+        {
+          "title": "Rust 编辑器架构",
+          "description": "在主仓库跟进共享内核和插件接口。准备依赖某个新接口前，先查看对应版本的实际发布状态。"
+        }
+      ],
+      "useCases": {
+        "title": "OpenCut 的使用场景",
+        "description": "用一段目标明确的短素材测试。剪辑清单负责说明怎么改，审阅版和实际导出用于确认改动是否达到预期。",
+        "items": [
+          {
+            "title": "从访谈逐字稿剪出精彩片段",
+            "description": "在逐字稿上为开场、核心引语和结尾标记时间码。把选中的区间排进时间线，再检查衔接有没有改变受访者的原意。"
+          },
+          {
+            "title": "整理一段产品操作演示",
+            "description": "围绕一个任务排序录屏，删掉等待和重复导航。分享前核对关键界面文字是否可见，前后操作是否连贯。"
+          },
+          {
+            "title": "把修订版交给同事审阅",
+            "description": "记录每次替换涉及的源文件、起止点和调整理由。将新版视频与改动清单一并交付，让同事可以按实际播放结果核对。"
+          },
+          {
+            "title": "评估网页剪辑能否满足交付",
+            "description": "挑有代表性的素材建一个小项目，在日常使用的浏览器和设备上实际检查导入、时间线编辑及导出，再根据交付要求判断。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "试剪前准备什么",
+        "description": "首次试剪用一份短素材副本，在自己的浏览器里跑通导入、预览和导出，再决定是否用于长片或有截止时间的任务。",
+        "items": [
+          {
+            "title": "浏览器与授权素材",
+            "description": "打开官方 Beta，准备一组有权编辑和分享的短素材。"
+          },
+          {
+            "title": "导出验收项",
+            "description": "先记下目标时长、画面构图和播放检查点，试剪后逐项确认。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "OpenCut 官网现在运行哪一版？",
+          "answer": "主仓库指向 opencut.app 的 Classic 浏览器 Beta，新版代码仍在主仓库开发。"
+        },
+        {
+          "question": "为什么 OpenCut Classic 仓库已归档？",
+          "answer": "它保存的是原始代码。团队将重写工作转到主仓库，Classic 的源代码仍可只读查阅。"
+        },
+        {
+          "question": "现在可以用 MCP 调用 OpenCut 吗？",
+          "answer": "上游把 MCP 服务列入新版计划。接入前需核对实际发行版和可调用工具。"
+        },
+        {
+          "question": "可以依赖自动批量导出吗？",
+          "answer": "无界面运行和批量渲染是新版目标。交付前可以先用代表性素材验证浏览器版的手动导出。"
+        },
+        {
+          "question": "在哪里查看自部署说明？",
+          "answer": "Classic 归档仓库的 README 记录了 Bun 与 Docker 的配置，新版主仓库另有开发环境说明。"
+        },
+        {
+          "question": "OpenCut 用的是什么许可证？",
+          "answer": "OpenCut 主仓库采用 MIT。用于剪辑的视频、音频及其他素材仍按各自授权处理。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "calesthio",
+    "slug": "openmontage",
+    "name": "OpenMontage",
+    "repository": "https://github.com/calesthio/OpenMontage",
+    "website": "https://www.openmontage.video/",
+    "documentation": "https://github.com/calesthio/OpenMontage/blob/main/AGENT_GUIDE.md",
+    "license": "AGPL-3.0",
+    "licenseUrl": "https://github.com/calesthio/OpenMontage/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-05",
+    "related": [
+      "comfy-org/comfyui",
+      "openai/codex",
+      "storytold/craft-anything",
+      "vercel-labs/agent-desktop"
+    ],
+    "en": {
+      "seoTitle": "OpenMontage: Agent Video Production and Render Review",
+      "seoDescription": "Explore OpenMontage video pipelines for turning source footage, narration and captions into a reviewed cut. See how agent stages, provider choices and render checks fit together.",
+      "description": "OpenMontage gives a coding agent production plans and tools for moving a video from brief to rendered cut, with review points for footage, audio and captions.",
+      "kind": "Agent Video Production Toolkit",
+      "overviewTitle": "How OpenMontage stages a video production",
+      "overview": [
+        "A product demo needs a script, screen recordings, captions and a final cut. OpenMontage breaks that work into stages with YAML pipeline definitions and separate instructions for the coding agent. The agent reads the plan, calls the relevant tools and records decisions and progress so later steps can use the same production context.",
+        "Different projects take different paths. An explainer may use generated stills and a Remotion composition, while a documentary montage can retrieve real motion clips from open archives and use them to assemble a timeline. The available providers, credentials and asset rights determine which path you can take.",
+        "For a Floatboat workflow, use the project as a reference for sequencing a brief, asset approval and cut review. Keep the intended delivery format visible from the beginning, then inspect sampled frames, captions and audio against that brief after rendering."
+      ],
+      "capabilitiesTitle": "The production decisions OpenMontage makes visible",
+      "capabilitiesIntro": "The pipeline leaves a record of which tools and assets were selected and when a result was checked. Use it to review choices that affect the finished cut, such as the footage source and composition engine.",
+      "capabilities": [
+        {
+          "title": "Stage definitions",
+          "description": "A YAML manifest describes production steps, the tools involved and the conditions to check before moving on."
+        },
+        {
+          "title": "Asset and provider selection",
+          "description": "The agent can use source footage, local tools or configured cloud services, with selection rules that account for fit and cost."
+        },
+        {
+          "title": "Checks on the rendered cut",
+          "description": "The project uses tools such as ffprobe, sampled frames and audio analysis to flag technical issues for review."
+        }
+      ],
+      "useCases": {
+        "title": "OpenMontage use cases",
+        "description": "Pick the output first, from a real-footage montage to a captioned demo. Then choose the stages and inspection points that protect what the audience needs to see or hear.",
+        "items": [
+          {
+            "title": "Edit a short product demonstration",
+            "description": "Start with a screen recording and a list of actions the viewer must see. Use the pipeline to draft the cut and captions, then verify that captions stay clear of controls and the edit preserves each essential step."
+          },
+          {
+            "title": "Build a montage from real motion clips",
+            "description": "Specify real footage and a theme before sourcing. Track the origin and usage conditions of each candidate, then review whether the cut combines actual moving clips at the intended pace."
+          },
+          {
+            "title": "Create an animated explainer with a voice track",
+            "description": "Approve the script and scene plan before producing visual assets. Render a short sample and listen for awkward pronunciations, then verify that scene changes still line up with narration after any revisions."
+          },
+          {
+            "title": "Prepare a localized version of a finished video",
+            "description": "Retain the source transcript and use it to review the translated script before producing a new voice track. Check subtitle wrapping and time alignment in the localized render, especially around rapid speech or labels."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What to prepare for the source workflow",
+        "description": "The upstream quick start runs inside a coding-agent workspace. Prepare the runtime and approved inputs before selecting a pipeline, and enable provider credentials only for services your production needs.",
+        "items": [
+          {
+            "title": "Project runtime",
+            "description": "The source quick start lists Python 3.10+, Node.js 18+, FFmpeg and an AI coding assistant."
+          },
+          {
+            "title": "Material and delivery brief",
+            "description": "Gather approved footage or source links, and specify duration, aspect ratio, audience and the expected output format."
+          },
+          {
+            "title": "Provider access",
+            "description": "Some paths use local tools and open sources. Configured cloud models and some stock services require separate credentials and may incur charges."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "What runs the pipeline stages?",
+          "answer": "The coding assistant reads the stage definitions and calls the project tools. Its workspace and execution permissions govern what it can do."
+        },
+        {
+          "question": "Can OpenMontage use real motion clips?",
+          "answer": "Yes. Its documentary montage path can search a collection of open archival footage and cut selected clips into a timeline. Review the rights of each asset you use."
+        },
+        {
+          "question": "Do I need paid video generation to make a montage?",
+          "answer": "The repository describes a path using real footage from open sources and local processing. Other providers have their own credentials, terms and costs."
+        },
+        {
+          "question": "How does the project review a final render?",
+          "answer": "It documents technical checks such as probing the media file, sampling frames and analyzing audio. Review editorial intent, rights and accuracy before releasing the cut."
+        },
+        {
+          "question": "Is OpenMontage Studio the same thing as the repository?",
+          "answer": "The public repository documents the source workflow for a coding assistant. The website describes Studio as a Windows desktop app in private alpha."
+        },
+        {
+          "question": "What does the AGPL cover?",
+          "answer": "The repository lists GNU AGPL v3 for the source. Footage, fonts and third-party services may have separate terms that need checking for your production."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "OpenMontage：Agent 视频制作、素材编排与成片验收",
+      "seoDescription": "了解 OpenMontage 怎样用编程 Agent 安排脚本、真实素材、字幕、合成与渲染检查。页面介绍源码工作流、运行前提，以及使用素材库和外部模型时需要分别确认的条件。",
+      "description": "OpenMontage 为编程 Agent 提供视频制作流程和工具，从拆解脚本与准备素材，到合成、渲染和检查成片。",
+      "kind": "Agent 视频制作工具集",
+      "overviewTitle": "OpenMontage 如何把制作计划推进到成片",
+      "overview": [
+        "一条产品演示通常需要脚本、屏幕录制、字幕和成片。OpenMontage 用 YAML 定义制作阶段，再用分阶段的说明指导编程 Agent 调用工具。项目会记录进度和选择，后续步骤可以沿用同一份制作背景。",
+        "不同内容走不同的路线。讲解片可以生成静态画面再交给 Remotion 合成；纪录片式蒙太奇可以从开放档案检索真实运动镜头，再安排时间线。选哪条路取决于素材许可、可用工具和外部服务凭据。",
+        "如果要在 Floatboat 设计视频工作流，可以参考它对任务书、素材确认和成片检查的拆分。先明确交付比例、时长和内容重点，渲染后再用关键帧、字幕和音轨逐项对照，保留需要返工的记录。"
+      ],
+      "capabilitiesTitle": "OpenMontage 的制作流程和检查依据",
+      "capabilitiesIntro": "流程会记录采用了哪些素材和工具，以及各阶段的检查结果。审阅时可以沿着这些记录追溯成片中的问题来自素材、合成还是渲染配置。",
+      "capabilities": [
+        {
+          "title": "分阶段制作计划",
+          "description": "YAML 清单列出各阶段、要调用的工具和进入下一阶段前需要检查的条件。"
+        },
+        {
+          "title": "素材和服务选择",
+          "description": "按项目需求使用已有素材、本地工具或配置的云服务，并参考任务匹配度与成本。"
+        },
+        {
+          "title": "渲染结果检查",
+          "description": "用 ffprobe、画面采样与音频分析等工具发现技术问题，再回看对应片段。"
+        }
+      ],
+      "useCases": {
+        "title": "OpenMontage 的使用场景",
+        "description": "先确定要交付的片型，再挑选适合的制作路线。真实镜头拼接、产品演示、动画讲解和多语字幕需要验收的重点各不相同。",
+        "items": [
+          {
+            "title": "剪辑一条短产品演示",
+            "description": "把录屏和必须呈现的动作写进任务书，请 Agent 规划剪辑与字幕。交付前检查字幕是否遮住控件，关键操作是否被跳剪省略。"
+          },
+          {
+            "title": "用真实镜头组一条蒙太奇",
+            "description": "在素材检索前先写明只用真实运动镜头和主题。保留每个片段的来源与使用条件，成片阶段检查镜头是否符合预期节奏，避免误用静态画面来填时长。"
+          },
+          {
+            "title": "制作有旁白的动画讲解",
+            "description": "先审脚本和分镜，再准备画面素材。用短样片听清关键名词的读法，调整旁白后复查场景切换仍然跟得上讲述节奏。"
+          },
+          {
+            "title": "为成片制作多语版本",
+            "description": "保留原始转写，审过译文后再生成新的配音或字幕。看实际渲染的断行和时间轴，重点核对语速较快的句子与界面上的短标签。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "运行源码工作流前的准备",
+        "description": "上游快速入门在编程 Agent 的工作目录中运行。先准备运行环境和获准使用的输入，再根据片型决定要不要配置外部服务。",
+        "items": [
+          {
+            "title": "项目运行环境",
+            "description": "源码快速入门列出了 Python 3.10 及以上版本、Node.js 18 及以上版本、FFmpeg 和编程 Agent。"
+          },
+          {
+            "title": "素材与交付规格",
+            "description": "整理可使用的素材及来源链接，写清成片时长、比例、受众与输出格式。"
+          },
+          {
+            "title": "外部服务访问",
+            "description": "部分路线使用本地工具与开放来源。云模型和部分素材服务需要各自的凭据，费用也随服务而异。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "谁来执行 OpenMontage 的各个制作阶段？",
+          "answer": "编程 Agent 读取阶段说明，再调用项目工具。实际能执行的动作取决于宿主的工作区与权限。"
+        },
+        {
+          "question": "可以用真正的运动镜头制作吗？",
+          "answer": "可以。纪录片式流程可从开放档案检索素材并将选定镜头剪入时间线，实际使用前仍要核对每条素材的权利。"
+        },
+        {
+          "question": "做蒙太奇一定要用付费视频模型吗？",
+          "answer": "上游有使用开放来源实拍镜头和本地工具的路线。其他模型或素材服务各有费用与凭据要求。"
+        },
+        {
+          "question": "OpenMontage 会怎么检查成片？",
+          "answer": "文档列出媒体文件探测、帧采样和音频分析等检查。发布前仍需人工审核叙事、准确性和素材权利。"
+        },
+        {
+          "question": "OpenMontage Studio 和开源仓库是同一个入口吗？",
+          "answer": "公开仓库说明如何从源码在编程 Agent 环境运行；官网介绍的 Studio 是处于私有 Alpha 的 Windows 桌面应用。"
+        },
+        {
+          "question": "AGPL 许可覆盖哪些内容？",
+          "answer": "源码仓库列出 GNU AGPL v3。片段、字体及第三方服务可能有各自的条件，制作时应分别核对。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "nexu-io",
+    "slug": "open-design",
+    "name": "OpenDesign",
+    "repository": "https://github.com/nexu-io/open-design",
+    "website": "https://open-design.ai",
+    "documentation": "https://github.com/nexu-io/open-design/blob/main/QUICKSTART.md",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/nexu-io/open-design/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-05",
+    "related": [
+      "storytold/craft-anything",
+      "vercel-labs/agent-desktop",
+      "openai/codex",
+      "comfy-org/comfyui"
+    ],
+    "en": {
+      "seoTitle": "OpenDesign: AI Design Workspace for Prototypes and Decks",
+      "seoDescription": "Explore OpenDesign’s local-first AI workspace for prototypes, decks and motion. See how DESIGN.md, agent runtimes and editable artifacts support a design handoff.",
+      "description": "OpenDesign is an open-source workspace for turning a design brief into interactive prototypes, presentation decks and motion graphics with an AI agent.",
+      "kind": "AI design workspace",
+      "overviewTitle": "From a design brief to an editable artifact",
+      "overview": [
+        "OpenDesign combines a design brief with an output template and an active design system. The design system centers on DESIGN.md, a portable description of visual rules, and can also include tokens, components and assets. In the prototype workflow, a coding agent applies those rules to produce HTML you can preview and refine.",
+        "With a filesystem-backed coding agent, the agent writes directly to the project files. A plain API run without file tools returns a complete artifact block instead. OpenDesign also provides an MCP server through which a configured external client can read files such as CSS tokens, JSX components and entry HTML from local projects.",
+        "The desktop app and self-hosted option let you work with local project files. Requests that use a cloud model or OpenDesign Cloud go to the corresponding service. Choose the execution path before you add a confidential design brief, source code or licensed assets."
+      ],
+      "capabilitiesTitle": "What OpenDesign gives a design team",
+      "capabilitiesIntro": "The workspace separates brand rules, output templates and agent behavior. You can change the format of a deliverable while keeping the design system available for the next iteration.",
+      "capabilities": [
+        {
+          "title": "Reusable design systems",
+          "description": "Record color, typography, layout and component rules in DESIGN.md. Project packages can also carry tokens and component examples."
+        },
+        {
+          "title": "Multiple design surfaces",
+          "description": "Start from a template for an interactive prototype, a deck or a motion project. Export options vary by the artifact, such as PPTX for decks and MP4 for HyperFrames motion."
+        },
+        {
+          "title": "Editable handoff",
+          "description": "Use local project files as the handoff for engineering. The upstream MCP server can expose named files to a configured client when the workflow crosses repository boundaries."
+        }
+      ],
+      "useCases": {
+        "title": "OpenDesign use cases",
+        "description": "Choose the format the reviewer can assess. A product flow may need a clickable prototype, while a launch deck needs a clear sequence and a motion concept needs timing you can inspect.",
+        "items": [
+          {
+            "title": "Prototype onboarding before assigning implementation",
+            "description": "Supply the supported paths, error states and sample copy for a three-screen flow. Preview the HTML artifact with product and engineering, agree on the missing states, and pass the files plus acceptance criteria to the implementation owner."
+          },
+          {
+            "title": "Apply a shared visual system to campaign drafts",
+            "description": "Put type scale, spacing and approved colors in DESIGN.md, then use those rules across a landing-page concept and a presentation. Compare how the hierarchy works in each format and retain the confirmed design system for the next brief."
+          },
+          {
+            "title": "Review a deck as a story and as a file",
+            "description": "Use the deck workflow to structure a pitch around one decision and the evidence behind it. Review slide order and notes in the workspace, then open the exported file in the target presentation app to check type and layout."
+          },
+          {
+            "title": "Hand off a short motion study",
+            "description": "Make a small HyperFrames motion draft for a feature reveal. Inspect the opening, transition and final frame, then share the timing decisions alongside the MP4 so the next revision can change one beat without rebuilding the concept."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Choose how to run OpenDesign",
+        "description": "The desktop and source routes have different requirements. Confirm your platform and model access first, then choose a small artifact to check the complete handoff.",
+        "items": [
+          {
+            "title": "Desktop builds",
+            "description": "Upstream lists installers for macOS and Windows x64. It currently directs Linux users to run from source."
+          },
+          {
+            "title": "Source setup",
+            "description": "Follow the upstream quickstart for Node and pnpm versions and its development launcher."
+          },
+          {
+            "title": "Agent and data access",
+            "description": "Choose a supported installed coding agent or configure a model endpoint and credentials. Check provider handling of prompts and files before adding sensitive material."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "What is DESIGN.md in OpenDesign?",
+          "answer": "It records visual rules for the active design system. Packages can also include design tokens, components, assets and source information."
+        },
+        {
+          "question": "Can I start from an existing design system?",
+          "answer": "Yes. A project can use a design-system package, including one centered on your own DESIGN.md. Check the license and provenance of any borrowed assets."
+        },
+        {
+          "question": "Does local-first mean no requests leave my device?",
+          "answer": "No. Cloud models and OpenDesign Cloud receive their respective requests. Confirm which runtime and service the project uses before sharing sensitive inputs."
+        },
+        {
+          "question": "How do I hand off a prototype to a developer?",
+          "answer": "Review the interactive result, then pass the HTML and relevant project files with behavior and accessibility requirements. Confirm which pieces need production implementation."
+        },
+        {
+          "question": "Can another agent read my OpenDesign files?",
+          "answer": "The upstream stdio MCP server can expose selected local project files to a configured MCP client. Review the client and the project material you plan to expose."
+        },
+        {
+          "question": "Is a Linux installer available?",
+          "answer": "The upstream quickstart currently directs Linux users to run from source. Check the releases page for changes before planning a rollout."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "OpenDesign：AI 原型、演示文稿与动效设计工作区",
+      "seoDescription": "了解开源设计工作区 OpenDesign 如何用 DESIGN.md 约束原型、演示文稿和动效，选择本机 Agent 或模型端点，并用可编辑的项目文件完成设计交接。",
+      "description": "OpenDesign 是一款开源设计工作区。你可以和 AI Agent 一起把设计需求做成可交互原型、演示文稿或动效，再预览并修改交付物。",
+      "kind": "AI 设计工作区",
+      "overviewTitle": "从设计需求到可编辑的交付物",
+      "overview": [
+        "OpenDesign 将设计需求、输出模板和当前设计系统组合起来。设计系统以 DESIGN.md 为核心，记录可复用的视觉规则，也可以包含设计变量、组件和素材。做界面原型时，编程 Agent 根据这些约束生成 HTML，供团队预览和修改。",
+        "能访问文件系统的本机 Agent 可以直接写入项目文件。没有文件工具的纯 API 运行则返回一个完整的产物块。OpenDesign 也提供 MCP 服务，配置好客户端后，其他 Agent 可以按名称读取本地项目中的 CSS 变量、JSX 组件或入口 HTML。",
+        "桌面应用和自行部署方式可以使用本地项目文件。调用云模型或 OpenDesign Cloud 时，相关请求会发送到对应服务。处理未公开的方案、代码或受许可限制的素材前，先确认项目采用的执行方式。"
+      ],
+      "capabilitiesTitle": "OpenDesign 如何组织设计工作",
+      "capabilitiesIntro": "把品牌规则、输出模板和 Agent 工作方式分开维护。切换交付形式时可以沿用同一套视觉约束，并按各自的验收方式检查结果。",
+      "capabilities": [
+        {
+          "title": "设计规则可复用",
+          "description": "用 DESIGN.md 记录配色、字体、布局和组件规则。设计系统还可以附带设计变量和组件示例。"
+        },
+        {
+          "title": "按交付形式选择模板",
+          "description": "交互原型、演示文稿和动效项目使用各自的模板。根据产物选择导出形式，例如演示文稿的 PPTX 或 HyperFrames 动效的 MP4。"
+        },
+        {
+          "title": "把可编辑文件交给开发",
+          "description": "将本地项目文件纳入交接清单。需要跨仓库工作时，可以配置 MCP 客户端读取特定文件。"
+        }
+      ],
+      "useCases": {
+        "title": "OpenDesign 的使用场景",
+        "description": "根据谁要审阅、需要作出什么判断来选交付形式。产品流程适合做成可点击的原型，演示文稿和动效则各有自己的验收重点。",
+        "items": [
+          {
+            "title": "在开发排期前跑通新手引导",
+            "description": "把三屏引导的入口、分支、失败状态和示例文案交给 Agent。产品和工程一起预览可点击的 HTML，确认遗漏状态后再交接文件和验收标准。"
+          },
+          {
+            "title": "让活动页面和方案演示沿用同套视觉规则",
+            "description": "把字号层级、间距和已批准的颜色写进 DESIGN.md，再用于落地页草稿和演示文稿。分别检查两种形式里的阅读顺序，把验证过的规则留给下一批物料。"
+          },
+          {
+            "title": "同时审阅演示内容和导出文件",
+            "description": "先围绕需要确认的决策排好页面和证据，逐页检查讲稿。导出后在接收方使用的演示软件里打开，核对字体、断行和内容是否被裁切。"
+          },
+          {
+            "title": "交接一段短动效的节奏",
+            "description": "做一段用于功能亮相的 HyperFrames 草稿，检查开场、转场和最后一帧。把节奏说明和 MP4 一起交给同事，后续可以只调整一个镜头的时长。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "运行 OpenDesign 前的准备",
+        "description": "桌面版和源码运行需要不同的环境。先核对平台与模型访问方式，再选一个范围小的设计任务，验证从预览到交接的流程。",
+        "items": [
+          {
+            "title": "桌面平台",
+            "description": "上游列出了 macOS 和 Windows x64 安装包。目前 Linux 用户需要从源码运行。"
+          },
+          {
+            "title": "源码环境",
+            "description": "按官方快速入门核对 Node、pnpm 版本和启动方式。"
+          },
+          {
+            "title": "Agent 与数据权限",
+            "description": "选用已安装的受支持编程 Agent，或配置模型端点及凭据。加入敏感内容前，检查提供商如何处理请求和文件。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "DESIGN.md 在 OpenDesign 里有什么用？",
+          "answer": "它描述当前设计系统的视觉规则。设计系统还可以包含设计变量、组件、素材和来源信息。"
+        },
+        {
+          "question": "可以使用团队现有的设计系统吗？",
+          "answer": "可以准备以自有 DESIGN.md 为核心的设计系统包。引用外部素材时，先核对各项内容的许可和来源。"
+        },
+        {
+          "question": "本地优先意味着数据始终留在本机吗？",
+          "answer": "如果项目调用云模型或 OpenDesign Cloud，相应请求会发送到对应服务。处理敏感输入前要先核对项目选用的运行方式。"
+        },
+        {
+          "question": "如何把界面原型交给开发？",
+          "answer": "确认预览中的交互，再交接 HTML、相关项目文件以及行为与无障碍要求。明确哪些部分还要按生产标准实现。"
+        },
+        {
+          "question": "其他 Agent 可以读取 OpenDesign 文件吗？",
+          "answer": "上游提供 stdio MCP 服务，配置好的客户端可按名称读取本地项目文件。连接前先检查可暴露的内容和客户端权限。"
+        },
+        {
+          "question": "有现成的 Linux 安装包吗？",
+          "answer": "上游快速入门目前指引 Linux 用户从源码运行。需要部署前，可以在 GitHub Releases 核对最新支持情况。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "thedotmack",
+    "slug": "claude-mem",
+    "name": "Claude-Mem",
+    "repository": "https://github.com/thedotmack/claude-mem",
+    "website": "https://claude-mem.ai/",
+    "documentation": "https://docs.claude-mem.ai/",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-05",
+    "related": [
+      "mksglu/context-mode",
+      "juliusbrussee/caveman-engine",
+      "graphify-labs/graphify",
+      "anomalyco/opencode"
+    ],
+    "en": {
+      "seoTitle": "Claude-Mem: Persistent Agent Memory Across Coding Sessions",
+      "seoDescription": "Explore Claude-Mem by Alex Newman, from session hooks and local observation storage to layered MCP retrieval. Learn how to scope history and check provider settings.",
+      "description": "Claude-Mem summarizes observations from coding agents and retrieves relevant history when work resumes in another session.",
+      "kind": "Agent Memory Tool",
+      "overviewTitle": "How Claude-Mem recovers context across sessions",
+      "overview": [
+        "When a coding session ends, its tool outputs and decisions can be hard to recover. Claude-Mem captures observations through host-specific integrations, creates summaries and stores session records that can be searched later. The local worker and viewer make it possible to inspect which records were saved.",
+        "Search starts with a compact list of observation IDs. The timeline tool shows nearby activity, and selected records can then be opened in full. Startup context has its own settings. For Claude Code and Codex, it defaults to observations from the current host, with a setting to include other sources.",
+        "A Floatboat handoff can borrow this pattern by storing a small decision log and retrieving only what the next task needs. Compare recalled claims against current code and tests, and decide which material can be recorded before enabling hooks, observation providers or optional sync."
+      ],
+      "capabilitiesTitle": "What Claude-Mem keeps and retrieves",
+      "capabilitiesIntro": "The capture, storage and search paths do different jobs. Test the worker with a disposable repository before choosing how much past context to return in a new session.",
+      "capabilities": [
+        {
+          "title": "Session observation hooks",
+          "description": "Capture tool activity through the integration for your coding host. Check what that host can observe before choosing where to enable capture."
+        },
+        {
+          "title": "Local worker and viewer",
+          "description": "Inspect saved observations and summaries in the web viewer. The local worker keeps sessions, observations and summaries in SQLite."
+        },
+        {
+          "title": "Layered MCP retrieval",
+          "description": "Search for observation IDs, look at surrounding events, and fetch complete records only for selected results."
+        }
+      ],
+      "useCases": {
+        "title": "Claude-Mem use cases",
+        "description": "Use remembered observations as evidence to check against the current workspace. Retrieve enough context to explain an earlier decision, and keep changed assumptions visible.",
+        "items": [
+          {
+            "title": "Resume a bug investigation after a session reset",
+            "description": "Search for a symptom, failing test or function name, then read the nearby observations. Match the earlier reproduction steps against the current branch and rerun the failed check before changing the implementation."
+          },
+          {
+            "title": "Recover the reason behind an old design decision",
+            "description": "Look for the decision and the events leading up to it. Compare the retrieved explanation with the commit and any later changes so a past workaround does not become an accidental requirement."
+          },
+          {
+            "title": "Review context before moving to a different coding agent",
+            "description": "Check whether the receiving host should include observations from other sources. Try with a synthetic handoff first and inspect the resulting startup context to make sure it contains the intended project and scope."
+          },
+          {
+            "title": "Audit what should be remembered from a test session",
+            "description": "Run a harmless task with approved sample text. Open the local viewer and compare what was stored with what the workflow was allowed to retain, including a test of the documented private-content marker."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What to check before enabling memory",
+        "description": "Installation and capture vary by agent host. Start in a test project and check the memory provider, startup context, and optional sync separately.",
+        "items": [
+          {
+            "title": "A supported coding host",
+            "description": "Follow the install guide for your host. The Claude Code setup documents Node.js 20 or later and a version of Claude Code with plugin support."
+          },
+          {
+            "title": "An explicit data scope",
+            "description": "Choose what the plugin may record and review the provider and sync settings before running it with customer data or internal repositories."
+          },
+          {
+            "title": "A way to inspect retained context",
+            "description": "Open the local viewer and try a search, a timeline lookup and retrieval by observation ID with your sample session."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is Claude-Mem made by Anthropic?",
+          "answer": "The upstream README credits Alex Newman, whose GitHub handle is thedotmack. Claude Code is a host the project integrates with."
+        },
+        {
+          "question": "Does it store every full session in the context window?",
+          "answer": "The project captures observations and summaries. Startup context can be limited, and the MCP flow retrieves the full record only for selected results."
+        },
+        {
+          "question": "Does cross-host context injection happen by default?",
+          "answer": "The README documents that Claude Code and Codex startup use the current host’s observations by default. Including all sources requires a setting change."
+        },
+        {
+          "question": "Is local storage the same as local inference?",
+          "answer": "No. The worker can keep records locally, while summarization uses the chosen observer provider. Review provider settings and optional sync separately."
+        },
+        {
+          "question": "What should I check before capturing confidential work?",
+          "answer": "Inspect what the selected integration captures, test the private-content exclusion in a disposable project, and review the observer and sync destinations."
+        },
+        {
+          "question": "What does the Apache-2.0 license cover?",
+          "answer": "The upstream license documentation covers the public core, including the memory engine, server, CLI, SDKs and adapters. Hosted and reserved commercial services are described separately."
+        }
+      ],
+      "articleTitle": "Why AI forgets between sessions",
+      "articleDescription": "Learn which decisions and project records help a new session resume work."
+    },
+    "zh": {
+      "seoTitle": "Claude-Mem：编程 Agent 跨会话记忆与分层 MCP 检索",
+      "seoDescription": "了解 Alex Newman 开发的 Claude-Mem 如何记录工具观察、生成摘要并检索历史。查看本地工作进程、跨宿主上下文设置，以及摘要服务和可选同步的范围。",
+      "description": "Claude-Mem 将编程 Agent 的操作整理成可检索的观察记录和摘要，方便在新的会话中接着之前的工作。",
+      "kind": "Agent 记忆工具",
+      "overviewTitle": "Claude-Mem 怎样找回之前的工作上下文",
+      "overview": [
+        "编程会话结束后，工具输出和决策理由容易散落在历史记录里。Claude-Mem 通过不同宿主的集成采集观察、生成摘要，并保留可检索的会话记录。可以在本地工作进程的界面里查看存下了什么。",
+        "检索先返回带编号的简短索引，再沿时间线查看附近事件，最后只读取选中记录的全文。启动时注入的上下文有独立设置。Claude Code 和 Codex 默认使用当前宿主的观察记录，可以设置为包含其他来源。",
+        "如果用 Floatboat 交接任务，可以借鉴这种做法：保存少量有价值的决定，按下一个任务检索。拿到历史解释后用当前代码和测试复核，并在开启采集、摘要服务或同步前先划定数据范围。"
+      ],
+      "capabilitiesTitle": "Claude-Mem 记录和检索哪些信息",
+      "capabilitiesIntro": "采集、存储和检索分别决定哪些活动会留下记录、记录在哪里，以及新会话需要读到多少内容。可以先在临时仓库中跑一轮完整测试。",
+      "capabilities": [
+        {
+          "title": "会话观察与事件钩子",
+          "description": "通过对应编程宿主的集成记录工具活动。不同宿主能捕获的信息有差异，启用前可以先核对。"
+        },
+        {
+          "title": "本地工作进程与查看界面",
+          "description": "用网页界面检查已经保存的观察和摘要。本地工作进程在 SQLite 中存放会话、观察与摘要。"
+        },
+        {
+          "title": "分层 MCP 检索",
+          "description": "先找观察编号，再查看相关时间线，只为选中的结果读取完整记录。"
+        }
+      ],
+      "useCases": {
+        "title": "Claude-Mem 的使用场景",
+        "description": "把检索到的观察当成待验证的历史线索。找到足以解释旧决定的上下文，再用当前工作区检查条件有没有变化。",
+        "items": [
+          {
+            "title": "会话重置后继续排查错误",
+            "description": "用症状、失败的测试名或函数名找到先前的观察记录。对照当前分支复跑当时的步骤，确认错误仍能复现再动代码。"
+          },
+          {
+            "title": "找回旧架构决定的理由",
+            "description": "查找当时的决定和它前后的操作，再与对应提交和后续修改对照。这样能判断临时补丁是否还需要保留。"
+          },
+          {
+            "title": "换编程 Agent 前确认交接范围",
+            "description": "先决定接收方是否要读取其他宿主的观察记录。用一份模拟交接测试启动上下文，核对项目和来源是否在预期范围内。"
+          },
+          {
+            "title": "抽查一次会话保留了哪些内容",
+            "description": "用获准的样本文字做一个小任务，在本地查看界面对照已保存的记录，顺便验证项目文档提供的私密内容标记是否生效。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "开启会话记忆前需要检查什么",
+        "description": "安装和采集行为随编程宿主而变。先用测试项目分别核对摘要服务、启动上下文和可选同步，再应用到正式工作。",
+        "items": [
+          {
+            "title": "支持的编程宿主",
+            "description": "按对应安装说明准备。Claude Code 路径要求 Node.js 20 或更新版本，以及支持插件的 Claude Code。"
+          },
+          {
+            "title": "清晰的数据范围",
+            "description": "决定哪些活动允许记录，并在接触客户资料或内部仓库前核对摘要服务和同步设置。"
+          },
+          {
+            "title": "复查记忆的方式",
+            "description": "在本地界面选一段测试会话，验证索引搜索、时间线与按观察编号读取详情。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Claude-Mem 是 Anthropic 发布的吗？",
+          "answer": "上游 README 将作者标为 Alex Newman，GitHub 账号是 thedotmack。Claude Code 是它支持的编程宿主之一。"
+        },
+        {
+          "question": "新会话会加载之前的整段对话吗？",
+          "answer": "项目保留观察和摘要。启动上下文可以限制，MCP 检索也可以只打开挑选出来的完整记录。"
+        },
+        {
+          "question": "默认会跨宿主注入历史吗？",
+          "answer": "上游文档说明 Claude Code 和 Codex 启动时默认只用当前宿主的观察记录。纳入其他来源需要调整设置。"
+        },
+        {
+          "question": "本地存储就意味着摘要也在本地生成吗？",
+          "answer": "工作进程可以在本地保存记录。摘要使用所选的观察服务，可选同步也有独立设置，三者应分别核对。"
+        },
+        {
+          "question": "处理敏感项目之前应该验证什么？",
+          "answer": "在临时项目核对实际采集的内容和私密标记的效果，再确认摘要请求和可选同步各自会发往哪里。"
+        },
+        {
+          "question": "Apache-2.0 覆盖哪些部分？",
+          "answer": "上游许可说明涵盖公开核心，包括记忆引擎、服务端、CLI、SDK 与适配器。托管和保留的商业服务另行说明。"
+        }
+      ],
+      "articleTitle": "AI 为什么在新会话里忘记之前的工作",
+      "articleDescription": "了解哪些决定和项目记录能让新会话接着完成任务。"
+    },
+    "articleSlug": "why-ai-forgets-between-sessions"
+  },
+  {
+    "author": "juliusbrussee",
+    "slug": "caveman-engine",
+    "name": "Caveman Engine",
+    "repository": "https://github.com/juliusbrussee/caveman",
+    "website": "https://docs.caveman.so/caveman",
+    "documentation": "https://github.com/JuliusBrussee/caveman/blob/main/docs/technical/engine.md",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/JuliusBrussee/caveman/blob/main/LICENSING.md",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-05",
+    "related": [
+      "mksglu/context-mode",
+      "thedotmack/claude-mem",
+      "graphify-labs/graphify",
+      "dietrichgebert/ponytail"
+    ],
+    "en": {
+      "seoTitle": "Caveman Engine: Recoverable Context Compression for Agents",
+      "seoDescription": "Explore Caveman Engine’s local compression for tool outputs, diffs and logs. Learn to validate recovery handles, compare inferred token counts and check the source license.",
+      "description": "Caveman Engine compresses the data a model reads, such as logs, JSON and diffs, and preserves original bytes for recovery when a shorter result discards detail.",
+      "kind": "Agent Context Compression",
+      "overviewTitle": "What Caveman Engine compresses and preserves",
+      "overview": [
+        "An agent often reads the same long logs, diffs or structured output while investigating a problem. Caveman Engine is a local Go library and runtime that detects the shape of incoming data and selects a matching transform. It addresses the context the model reads. The separate Caveman Skill changes how the agent writes its response.",
+        "The compact representation can omit detail. Before emitting a lossy result, the engine requires a recoverable copy of the original. It returns the source bytes on unsuitable inputs, invalid or larger results, or recovery storage failure. Local token estimates can help compare candidates, while provider usage and invoices remain separate evidence.",
+        "For a Floatboat workflow, use the engine as a reference for preserving originals behind short evidence excerpts. Compare an uncompressed baseline with a compressed run on the same task, recover a specific omitted detail on demand and check that both runs reach the same substantive decision."
+      ],
+      "capabilitiesTitle": "How the engine keeps originals available",
+      "capabilitiesIntro": "Inspect the input, the compact result and the recovery path together. A shorter result has value when the agent can still retrieve what it needs to make or verify a decision.",
+      "capabilities": [
+        {
+          "title": "Shape-aware compression",
+          "description": "Choose different transforms for inputs such as JSON, code, logs, test reports and diffs. Some transforms require explicit selection."
+        },
+        {
+          "title": "Exact source recovery",
+          "description": "Keep original bytes before emitting a lossy replacement, and retrieve them through a recovery handle when the compact result is insufficient."
+        },
+        {
+          "title": "Pass-through and local measurement",
+          "description": "Keep original bytes when no safe, smaller result is available. Compare local inferred token counts separately from provider-reported usage."
+        }
+      ],
+      "useCases": {
+        "title": "Caveman Engine use cases",
+        "description": "Start with a repeated tool result that already has an expected outcome. Compare what the compressed view retains, how omitted detail is recovered and whether the agent’s decision still holds.",
+        "items": [
+          {
+            "title": "Triage recurring test failures",
+            "description": "Use a representative test report with both passing cases and multiple failures. Check that failure details stay available in the compact view, then recover the full report when validating a borderline diagnosis."
+          },
+          {
+            "title": "Review a large diff without losing the patch",
+            "description": "Test whether a compact diff helps the agent locate the right files and changes. Keep the original patch retrievable and use it for any line-level review before approving a merge."
+          },
+          {
+            "title": "Keep long log evidence traceable",
+            "description": "Run a sanitized incident log through the same query with and without compression. Verify that the abbreviated result preserves the error sequence needed for triage and that omitted lines can be recovered before escalation."
+          },
+          {
+            "title": "Measure an agent’s context overhead",
+            "description": "Compare local token estimates for a fixed set of tool outputs and log how many decisions require recovery. If you also have provider usage, reconcile it separately and retain the task-quality and latency results."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What to prepare for a compression trial",
+        "description": "Start with representative inputs and an approved place to retain originals. Confirm the runtime and agent profile before sending live tool results through a compressed path.",
+        "items": [
+          {
+            "title": "A supported build and agent path",
+            "description": "Choose the documented native CLI, Go library or another supported runtime. Agent-specific interception and recovery depend on the host protocol."
+          },
+          {
+            "title": "A controlled recovery store",
+            "description": "Set a retention policy, capacity and access scope appropriate to the original inputs. Lossy output depends on a successful recovery path."
+          },
+          {
+            "title": "A comparison fixture",
+            "description": "Keep a raw baseline, a known task outcome and exact details the compact representation must let you recover."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Does the Caveman Skill enable the engine?",
+          "answer": "The Skill changes response style. The engine is separate runtime software for compressing what the model reads."
+        },
+        {
+          "question": "Can the engine recover the exact original?",
+          "answer": "Lossy output requires a recoverable original. Use the returned handle through the supported retrieval path to verify the original bytes."
+        },
+        {
+          "question": "What happens when no transform is suitable?",
+          "answer": "The documented flow passes through the source on parse failure, a larger result or an unavailable required recovery store."
+        },
+        {
+          "question": "Do inferred tokens measure my provider bill?",
+          "answer": "Local counters estimate tokens for comparison. Provider-reported usage and actual bills depend on the model, tokenizer and service."
+        },
+        {
+          "question": "Do all builds compress the same programming languages?",
+          "answer": "Support depends on the build. Upstream documents broader source-language parsing in the cgo release binaries than in the pure-Go builds."
+        },
+        {
+          "question": "Which versions use Apache-2.0?",
+          "answer": "Upstream applies Apache-2.0 from 3.0.0 onward. Earlier releases retain their shipped terms, and the separately hosted Caveman Cloud has its own commercial terms."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Caveman Engine：可恢复的 Agent 上下文压缩引擎",
+      "seoDescription": "了解 Caveman Engine 怎样在本地压缩日志、差异和 JSON 等工具输出，如何通过恢复句柄核对原文，以及怎样区分本地 Token 估算、实际账单和不同版本的许可证。",
+      "description": "Caveman Engine 压缩模型读取的日志、JSON 和差异等数据，并在有损压缩时保存原始字节供后续恢复。",
+      "kind": "Agent 上下文压缩引擎",
+      "overviewTitle": "Caveman Engine 压缩什么，保留什么",
+      "overview": [
+        "Agent 调查问题时可能反复读取很长的日志、代码差异或结构化工具输出。Caveman Engine 是本地 Go 库和运行时，会先识别输入结构，再选择对应的压缩方式。它处理模型读取的上下文；单独的 Caveman Skill 调整的是 Agent 回答的表达方式。",
+        "压缩后的视图可能省略细节。引擎在输出有损结果前需要先保存可恢复的原文。输入不适合压缩、转换失败、结果更大或恢复存储不可用时，都会保留原始输入。本地 Token 统计可以用于对比，实际账单仍要查服务商的用量。",
+        "在 Floatboat 设计工作流时，可以借鉴这种保留原文的做法：用同一个任务跑一轮原始数据和一轮压缩数据，要求 Agent 按需恢复一条被省略的细节，再检查两轮是否得出了相同的实质判断。"
+      ],
+      "capabilitiesTitle": "Caveman Engine 如何保留可追溯的原始数据",
+      "capabilitiesIntro": "验收时把输入、压缩结果和恢复路径放在一起检查。短视图便于先扫一遍，判断所需的细节还要能追溯到原始数据。",
+      "capabilities": [
+        {
+          "title": "按数据结构选择压缩方式",
+          "description": "日志、JSON、代码、测试报告和差异可以采用不同转换。有些转换需要明确指定。"
+        },
+        {
+          "title": "有损压缩前保存原文",
+          "description": "先保存精确的原始字节，再输出短视图。需要完整信息时，通过恢复句柄取回原文。"
+        },
+        {
+          "title": "回退与本地计量",
+          "description": "找不到更小且满足要求的结果时保留原始输入。本地估算的 Token 数量与服务商用量分开核算。"
+        }
+      ],
+      "useCases": {
+        "title": "Caveman Engine 的使用场景",
+        "description": "先找一类反复读取、已有预期结论的工具结果。比较压缩后留下哪些证据、能否取回省略的细节，以及最终判断是否一致。",
+        "items": [
+          {
+            "title": "排查测试失败",
+            "description": "选一份同时包含通过用例和多种失败的测试报告，确认短视图能定位失败。遇到证据不足的诊断，再恢复完整报告复核。"
+          },
+          {
+            "title": "审阅较大差异时保留补丁",
+            "description": "先用压缩差异定位需要查看的文件和修改，再从原始补丁检查具体行。确认逐行审阅可复现后再批准合并。"
+          },
+          {
+            "title": "检查事件日志是否还能追溯",
+            "description": "用脱敏日志对比原始版和压缩版的同一道问题。确认错误顺序能支持初步定位，升级事件前还能恢复被略过的日志行。"
+          },
+          {
+            "title": "评估重复工具输出的上下文开销",
+            "description": "固定一组工具输出，比较本地 Token 估算并记录哪些判断触发了恢复。如果有供应商用量，单独对账，同时记录质量和延迟的变化。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "试用上下文压缩前的准备",
+        "description": "先确定要测试的工具输出和获准保存原文的位置。将真实工具输出接入压缩流程前，还需核对运行环境与对应 Agent 的接入方式。",
+        "items": [
+          {
+            "title": "运行环境和宿主",
+            "description": "从上游文档选择本机 CLI、Go 库或其他支持的运行方式。拦截和恢复能力随宿主协议而异。"
+          },
+          {
+            "title": "受控的原文存储",
+            "description": "根据数据敏感度设置访问范围、保留期限和容量。有损压缩需要先确认原文可以恢复。"
+          },
+          {
+            "title": "可重复的验证样本",
+            "description": "保留未压缩基线、已知任务结果，以及短视图应当允许恢复的具体细节。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "安装 Caveman Skill 会启用引擎吗？",
+          "answer": "Caveman Skill 调整回答风格。Engine 是独立运行时，负责压缩模型读取的数据。"
+        },
+        {
+          "question": "可以恢复逐字节一致的原文吗？",
+          "answer": "引擎要求有损结果对应可恢复的原始字节。可以用返回的句柄验证所选环境是否能取回原文。"
+        },
+        {
+          "question": "找不到适合的压缩方式会怎样？",
+          "answer": "解析失败、转换结果更大或所需的恢复存储不可用时，上游流程会直接返回原始内容。"
+        },
+        {
+          "question": "本地估算的 Token 能用来对账吗？",
+          "answer": "它适合比较样本。实际用量仍取决于服务商、模型与分词方式，应查看供应商记录。"
+        },
+        {
+          "question": "所有构建都支持相同的代码语言吗？",
+          "answer": "上游说明支持范围会随构建变化，启用 cgo 的发行二进制能解析比纯 Go 构建更多的代码语言。"
+        },
+        {
+          "question": "哪些版本使用 Apache-2.0？",
+          "answer": "仓库从 3.0.0 起采用 Apache-2.0。早期发行版保留当时的条款，单独托管的 Caveman Cloud 适用其商业条款。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "mksglu",
+    "slug": "context-mode",
+    "name": "Context Mode",
+    "repository": "https://github.com/mksglu/context-mode",
+    "website": "https://contextmode.ai/",
+    "documentation": "https://github.com/mksglu/context-mode/blob/main/README.md",
+    "license": "Elastic License 2.0",
+    "licenseUrl": "https://github.com/mksglu/context-mode/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-05",
+    "related": [
+      "juliusbrussee/caveman-engine",
+      "thedotmack/claude-mem",
+      "graphify-labs/graphify",
+      "openai/codex"
+    ],
+    "en": {
+      "seoTitle": "Context Mode: Keep Tool Output Out of Agent Context",
+      "seoDescription": "Context Mode runs commands and indexes their output locally. Compare focused retrieval with raw logs, and check ELv2 terms before adopting the source-available plugin.",
+      "description": "Context Mode keeps large tool outputs in a local SQLite index so a coding agent can retrieve the relevant lines instead of reading the entire result.",
+      "kind": "Source-available context plugin",
+      "overviewTitle": "How Context Mode handles large tool outputs",
+      "overview": [
+        "A full test log can fill an agent’s context while the useful evidence occupies only a few lines. Context Mode runs work in its local execution environment, keeps results in a SQLite FTS5 index and returns focused results or search excerpts.",
+        "MCP provides the tool interface. Host hooks and rules can steer compatible agents toward those tools, and continuity features vary by host. Read the platform guide for the agent you actually use and check what gets written to the local index before feeding it confidential material.",
+        "The local plugin is source-available under Elastic License 2.0. Context Mode Gateway is a separate hosted service. To borrow this pattern in Floatboat, keep raw evidence on disk and return compact references with enough context to verify a decision."
+      ],
+      "capabilitiesTitle": "Context Mode’s execution and search tools",
+      "capabilitiesIntro": "Long outputs can stay searchable even when only a few lines go back to the model. Review which tool outputs are indexed and how the agent retrieves details.",
+      "capabilities": [
+        {
+          "title": "Local execution",
+          "description": "Run a command or script and return a focused result while preserving output for later lookup."
+        },
+        {
+          "title": "SQLite full-text search",
+          "description": "Retrieve passages from indexed tool results with an exact error string, test name or source identifier."
+        },
+        {
+          "title": "Host-specific routing",
+          "description": "Review MCP and hook support for your agent before expecting automatic routing or session recovery."
+        }
+      ],
+      "useCases": {
+        "title": "Context Mode use cases",
+        "description": "Pick a noisy workflow and compare the evidence reaching the model. Track both the amount retrieved and whether it is enough to resolve the task.",
+        "items": [
+          {
+            "title": "Find failing tests in a long run",
+            "description": "Return the failed test names and first errors to the agent. Search the saved output for an assertion and its surrounding stack when the first result is insufficient."
+          },
+          {
+            "title": "Review a batch of fetched pages",
+            "description": "Index the fetch results under distinct source names. Retrieve only excerpts relevant to the question and preserve a link back to each original source."
+          },
+          {
+            "title": "Summarize a noisy build",
+            "description": "Group errors by compiler message or file before handing them to the model. Keep the full log available to check whether different symptoms share a cause."
+          },
+          {
+            "title": "Resume a long investigation",
+            "description": "On a host with continuity support, test whether the agent can recover previous decisions after compaction. Check the restored summary against a short reference before relying on it."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What to check before installing Context Mode",
+        "description": "The local plugin and the hosted Gateway have separate setup and data flows. For a pilot, choose a supported host and use a test project whose outputs can be indexed safely.",
+        "items": [
+          {
+            "title": "Supported host",
+            "description": "Check which MCP tools, hooks and recovery features are available for your agent version."
+          },
+          {
+            "title": "Local data scope",
+            "description": "Review what the index retains, where it is stored and how to remove test data when the pilot ends."
+          },
+          {
+            "title": "License and deployment",
+            "description": "Review ELv2, especially the restrictions on offering the software as a managed service."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Does Context Mode shorten the agent’s replies?",
+          "answer": "Its main optimization is on the input side: large tool results are kept out of the active context until requested."
+        },
+        {
+          "question": "Is the plugin open source?",
+          "answer": "The repository is source-available under Elastic License 2.0, which restricts certain uses such as offering its features as a managed service."
+        },
+        {
+          "question": "Is the local plugin the same as Gateway?",
+          "answer": "Gateway is a separate hosted service. Check its request routing and retention terms independently of the local plugin."
+        },
+        {
+          "question": "Do all agent hosts offer the same hooks?",
+          "answer": "Support varies by host. Check the platform documentation for routing, capture and session restoration."
+        },
+        {
+          "question": "Do the upstream byte benchmarks predict my token usage?",
+          "answer": "They describe particular workloads and units. Measure tokens or cost separately for the task, model and host you use."
+        },
+        {
+          "question": "Can I inspect an excerpt in context?",
+          "answer": "Search the stored output by a source name, error message or test identifier, then retrieve surrounding lines when the excerpt is too narrow."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Context Mode：减少 Agent 上下文中的工具输出",
+      "seoDescription": "了解 Context Mode 如何在本地执行命令、用 SQLite 索引大体积工具结果，并按需取回片段。采用前可核对宿主支持、实际 Token 消耗与 ELv2 源码使用条款。",
+      "description": "Context Mode 把大体积工具输出留在本地 SQLite 索引中，让编程 Agent 按需取回相关内容。",
+      "kind": "源码可见上下文插件",
+      "overviewTitle": "Context Mode 如何处理大体积工具输出",
+      "overview": [
+        "完整的测试日志可能占满 Agent 上下文，而定位错误只需要其中几行。Context Mode 在本地执行命令，用 SQLite FTS5 保存工具结果，向模型返回经过筛选的结果或检索片段。",
+        "插件通过 MCP 提供工具，支持的宿主还可以用钩子和规则引导 Agent 选用这些工具。自动路由和会话恢复因宿主而异。在处理敏感资料前，先核对实际索引会保留什么。",
+        "本地插件的源码采用 Elastic License 2.0，Context Mode Gateway 则是独立的托管服务。在 Floatboat 里可以借鉴按需取证的方式，把完整日志留在文件中，只把必要片段和可追查的位置带进对话。"
+      ],
+      "capabilitiesTitle": "Context Mode 的本地执行与检索能力",
+      "capabilitiesIntro": "完整输出仍可搜索，模型只读取当前判断所需的行。可以先核对什么内容进入索引，再用错误文本或来源名称回到原始证据。",
+      "capabilities": [
+        {
+          "title": "本地执行",
+          "description": "运行命令或脚本，把结果保存供后续检索，同时只返回当前需要的信息。"
+        },
+        {
+          "title": "SQLite 全文检索",
+          "description": "按错误文本、测试名称或来源标识定位工具输出中的相关片段。"
+        },
+        {
+          "title": "宿主路由",
+          "description": "核对实际 Agent 的 MCP 和钩子支持，再决定是否启用自动路由或会话恢复。"
+        }
+      ],
+      "useCases": {
+        "title": "Context Mode 的使用场景",
+        "description": "选一个工具输出很长的任务，对照处理前后实际进入模型的证据量。同时检查信息是否足够解决问题，避免只追求结果更短。",
+        "items": [
+          {
+            "title": "定位测试日志中的失败",
+            "description": "先将失败用例名和首条错误返回给 Agent。初步信息不够时，检索断言文本及相关调用栈，避免把整个测试输出复制进对话。"
+          },
+          {
+            "title": "从多份网页抓取结果取证",
+            "description": "用不同来源名称保存抓取结果，按问题检索相关段落。每段都保留原始出处，方便在结果有冲突时回到页面核对。"
+          },
+          {
+            "title": "归类构建中的重复错误",
+            "description": "先按编译器消息或文件聚合故障，再把各组代表性错误交给 Agent。保留原始日志，以便检查几个表面不同的症状是否指向同一原因。"
+          },
+          {
+            "title": "恢复长时间排查的线索",
+            "description": "如果宿主支持恢复，测试上下文压缩后是否找得回已确认的决定与未解决问题。先与人工记录核对，再用于更长的任务。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Context Mode 前的检查",
+        "description": "本地插件与托管 Gateway 的配置和数据流不同。试用时先确认宿主兼容性，并使用允许在本地建立索引的测试项目。",
+        "items": [
+          {
+            "title": "宿主支持",
+            "description": "确认所用 Agent 版本支持哪些 MCP 工具、钩子与恢复能力。"
+          },
+          {
+            "title": "本地数据范围",
+            "description": "核对索引保留什么、写到哪里，以及试用结束后如何清理。"
+          },
+          {
+            "title": "许可和部署方式",
+            "description": "阅读 ELv2 条款，尤其是向他人提供托管服务的限制。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Context Mode 会缩短 Agent 的回复吗？",
+          "answer": "它主要减少进入上下文的工具输出。回复长度还取决于任务要求和 Agent 自己的表达方式。"
+        },
+        {
+          "question": "这个插件是开源的吗？",
+          "answer": "当前仓库采用 Elastic License 2.0，属于源码可见软件，并对将功能作为托管服务提供等用途有限制。"
+        },
+        {
+          "question": "本地插件和 Gateway 有什么区别？",
+          "answer": "Gateway 是单独的托管服务，拥有自己的账户和请求路径。数据保留条款需要与本地插件分开核对。"
+        },
+        {
+          "question": "每个 Agent 的钩子功能都一样吗？",
+          "answer": "不一样。自动路由、捕获和会话恢复都要按宿主版本查阅上游支持表。"
+        },
+        {
+          "question": "上游字节缩减数据等同于 Token 消耗吗？",
+          "answer": "它只描述指定测试条件下的输出量变化。实际 Token 或账单应在所用模型、宿主和任务上单独测量。"
+        },
+        {
+          "question": "检索片段太短怎么办？",
+          "answer": "按来源名、错误文本或测试标识找回周边行，让结论可以回到完整工具输出复核。"
+        }
+      ]
     }
   }
 ]

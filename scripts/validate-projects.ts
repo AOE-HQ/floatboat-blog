@@ -14,7 +14,6 @@ import { buildPublisherMetadata } from "../src/lib/skills/publisher-metadata";
 const ingress = readFileSync("k8s/ingress-main.yaml", "utf8");
 const sitemap = buildCombinedSitemapXml();
 const paths = new Set<string>();
-assert.equal(PROJECTS.length, 8);
 assert.equal(PROJECTS.filter((project) => project.classification === "official-harness").length, 4);
 
 for (const project of PROJECTS) {

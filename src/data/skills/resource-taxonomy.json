@@ -239,6 +239,10 @@
     "cloud-storage": {
       "en": "Cloud Storage",
       "zh": "云存储"
+    },
+    "context-efficiency": {
+      "en": "Context efficiency",
+      "zh": "上下文效率"
     }
   },
   "resources": {
@@ -579,7 +583,8 @@
       ],
       "tags": [
         "context-memory",
-        "agent-workflows"
+        "agent-workflows",
+        "context-efficiency"
       ]
     },
     "project:github.com/juliusbrussee/revu-swift": {
@@ -1120,7 +1125,8 @@
       ],
       "tags": [
         "writing",
-        "context-memory"
+        "context-memory",
+        "context-efficiency"
       ]
     },
     "juliusbrussee/investigate-first": {
@@ -1560,6 +1566,120 @@
         "supabase",
         "postgres",
         "performance"
+      ]
+    },
+    "project:github.com/nvidia/auto-ontology": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "databases",
+        "knowledge-graphs",
+        "mcp"
+      ]
+    },
+    "project:github.com/storytold/craft-anything": {
+      "categories": [
+        "development",
+        "design-interfaces"
+      ],
+      "tags": [
+        "reverse-engineering",
+        "interface-design",
+        "testing",
+        "mcp"
+      ]
+    },
+    "project:github.com/opencut-app/opencut": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video"
+      ]
+    },
+    "project:github.com/calesthio/openmontage": {
+      "categories": [
+        "video-production"
+      ],
+      "tags": [
+        "video",
+        "generative-media",
+        "agent-workflows"
+      ]
+    },
+    "project:github.com/nexu-io/open-design": {
+      "categories": [
+        "design-interfaces",
+        "documents"
+      ],
+      "tags": [
+        "interface-design",
+        "component-design",
+        "presentations",
+        "animation",
+        "mcp"
+      ]
+    },
+    "project:github.com/thedotmack/claude-mem": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "context-memory",
+        "agent-workflows",
+        "mcp",
+        "context-efficiency"
+      ]
+    },
+    "project:github.com/mksglu/context-mode": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "context-memory",
+        "mcp",
+        "context-efficiency"
+      ]
+    },
+    "ayghri/i-have-adhd": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "context-efficiency",
+        "writing",
+        "agent-workflows"
+      ]
+    },
+    "othmanadi/planning-with-files": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "planning",
+        "handoffs",
+        "context-memory",
+        "context-efficiency"
+      ]
+    },
+    "mattpocock/setup-matt-pocock-skills": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "agent-workflows",
+        "task-management"
+      ]
+    },
+    "mattpocock/triage": {
+      "categories": [
+        "development"
+      ],
+      "tags": [
+        "task-management",
+        "handoffs",
+        "debugging"
       ]
     }
   }

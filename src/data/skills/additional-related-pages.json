@@ -58,7 +58,7 @@
       "vercel-labs/vercel-composition-patterns",
       "mattpocock/code-review",
       "mattpocock/grill-me",
-      "obra/brainstorming"
+      "mattpocock/setup-matt-pocock-skills"
     ],
     "mattpocock/diagnosing-bugs": [
       "obra/systematic-debugging",
@@ -70,13 +70,13 @@
       "mattpocock/tdd",
       "mattpocock/improve-codebase-architecture",
       "vercel-labs/vercel-react-best-practices",
-      "cloudflare/security-audit"
+      "mattpocock/triage"
     ],
     "mattpocock/handoff": [
       "mattpocock/grill-me",
       "vercel-labs/writing-guidelines",
       "anthropics/docx",
-      "anthropics/skill-creator"
+      "othmanadi/planning-with-files"
     ],
     "obra/brainstorming": [
       "mattpocock/grill-me",
@@ -101,6 +101,30 @@
       "mattpocock/diagnosing-bugs",
       "obra/systematic-debugging",
       "mattpocock/tdd"
+    ],
+    "ayghri/i-have-adhd": [
+      "mattpocock/handoff",
+      "mattpocock/grill-me",
+      "mattpocock/triage",
+      "othmanadi/planning-with-files"
+    ],
+    "othmanadi/planning-with-files": [
+      "mattpocock/handoff",
+      "mattpocock/tdd",
+      "mattpocock/setup-matt-pocock-skills",
+      "ayghri/i-have-adhd"
+    ],
+    "mattpocock/setup-matt-pocock-skills": [
+      "mattpocock/triage",
+      "mattpocock/tdd",
+      "mattpocock/improve-codebase-architecture",
+      "mattpocock/grill-me"
+    ],
+    "mattpocock/triage": [
+      "mattpocock/setup-matt-pocock-skills",
+      "mattpocock/handoff",
+      "mattpocock/diagnosing-bugs",
+      "mattpocock/code-review"
     ]
   },
   "publishers": {
@@ -174,19 +198,73 @@
       "graphify-labs",
       "stablyai",
       "cloudflare",
-      "vercel-labs"
+      "storytold"
     ],
     "graphify-labs": [
       "comfy-org",
-      "stablyai",
-      "cloudflare",
-      "vercel-labs"
+      "thedotmack",
+      "mksglu",
+      "nvidia"
     ],
     "stablyai": [
       "comfy-org",
       "graphify-labs",
       "cloudflare",
       "vercel-labs"
+    ],
+    "nvidia": [
+      "graphify-labs",
+      "supabase",
+      "microsoft",
+      "deepseek-ai"
+    ],
+    "storytold": [
+      "opencut-app",
+      "nexu-io",
+      "calesthio",
+      "comfy-org"
+    ],
+    "opencut-app": [
+      "comfy-org",
+      "storytold",
+      "vercel-labs",
+      "pbakaus"
+    ],
+    "calesthio": [
+      "comfy-org",
+      "vercel-labs",
+      "storytold",
+      "graphify-labs"
+    ],
+    "nexu-io": [
+      "pbakaus",
+      "vercel-labs",
+      "storytold",
+      "comfy-org"
+    ],
+    "thedotmack": [
+      "graphify-labs",
+      "openai",
+      "anomalyco",
+      "nousresearch"
+    ],
+    "mksglu": [
+      "juliusbrussee",
+      "thedotmack",
+      "graphify-labs",
+      "othmanadi"
+    ],
+    "ayghri": [
+      "mattpocock",
+      "juliusbrussee",
+      "dietrichgebert",
+      "obra"
+    ],
+    "othmanadi": [
+      "obra",
+      "dietrichgebert",
+      "graphify-labs",
+      "ayghri"
     ]
   },
   "skill-categories": {
