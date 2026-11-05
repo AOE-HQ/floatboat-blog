@@ -468,6 +468,12 @@
       "fork": false,
       "archived": false,
       "private": false
+    },
+    "sherlock-project/sherlock": {
+      "stars": 96293,
+      "fork": false,
+      "archived": false,
+      "private": false
     }
   }
 }

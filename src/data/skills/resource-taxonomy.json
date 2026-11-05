@@ -1690,6 +1690,16 @@
         "agent-workflows",
         "performance"
       ]
+    },
+    "project:github.com/sherlock-project/sherlock": {
+      "categories": [
+        "development",
+        "deployment-browser"
+      ],
+      "tags": [
+        "web-research",
+        "security"
+      ]
     }
   }
 }

@@ -3387,5 +3387,153 @@
         "href": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
       }
     }
+  },
+  "sherlock-project": {
+    "name": "Sherlock Project",
+    "type": "Organization",
+    "profileUrl": "https://github.com/sherlock-project",
+    "logo": "/blog/brand/publishers/sherlock-project.webp",
+    "tags": {
+      "en": [
+        "OSINT",
+        "Command-line tools"
+      ],
+      "zh": [
+        "公开信息检索",
+        "命令行工具"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://sherlockproject.xyz/",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      },
+      {
+        "href": "https://github.com/sherlock-project",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Sherlock",
+        "url": "https://github.com/sherlock-project/sherlock",
+        "en": {
+          "kind": "Username Search CLI",
+          "description": "Check approved usernames across supported sites, export public candidate links, and review them against account records."
+        },
+        "zh": {
+          "kind": "用户名搜索 CLI",
+          "description": "在受支持的网站查询获准的用户名，导出公开候选链接，再与账号台账交叉核对。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Sherlock Project: Open-Source Username Search Maintainers",
+      "seoDescription": "Meet Sherlock Project, the maintainers of the username-search CLI. Find its official sources, site coverage, and a guide to agent-assisted account checks.",
+      "heroTitle": "Sherlock Project",
+      "heroDescription": "Sherlock Project maintains the open-source Sherlock CLI, with site rules and exports for authorized checks of public username matches.",
+      "aboutTitle": "About Sherlock Project",
+      "about": "Sherlock Project maintains the Sherlock username-search CLI on GitHub alongside its site rules, installation notes, and contributor guidance. Siddharth Dushantha created Sherlock, and contributors update checks as websites change.",
+      "overview": {
+        "title": "About Sherlock Project",
+        "paragraphs": [
+          "Sherlock Project maintains the Sherlock username-search CLI on GitHub alongside its site rules, installation notes, and contributor guidance. Siddharth Dushantha created Sherlock, and contributors update checks as websites change.",
+          "The official repository records the license, site catalog, and version changes. The project documentation covers installation and how to contribute fixes when a site rule stops working."
+        ]
+      },
+      "projectsTitle": "Open-Source Tools from Sherlock Project",
+      "projectsIntro": "The Sherlock guide explains how to scope a run, save the candidate links, and hand the results to the account owner for verification.",
+      "skillsTitle": "Agent Skills from Sherlock Project",
+      "skillsIntro": "Explore task instructions with documented host support.",
+      "faq": [
+        {
+          "question": "Who created Sherlock?",
+          "answer": "The upstream repository credits Siddharth Dushantha as the creator. The Sherlock Project organization hosts the official repository and contributor documentation."
+        },
+        {
+          "question": "Where should I get installation instructions?",
+          "answer": "Start from the official installation documentation and select the Python packaging or container option that fits your environment."
+        },
+        {
+          "question": "Where can I check which sites are supported?",
+          "answer": "Use the official supported-site list to check whether your target platforms are in scope before preparing a run."
+        },
+        {
+          "question": "How do I report a broken site rule?",
+          "answer": "Review the official repository’s issues and contribution notes. Describe the affected site and reproducible behavior using test data you are authorized to share."
+        },
+        {
+          "question": "What license does the project use?",
+          "answer": "The repository includes an MIT license file. Check the original terms before redistributing or modifying the software."
+        },
+        {
+          "question": "How does the site catalog relate to a search result?",
+          "answer": "The catalog defines which sites Sherlock knows how to check. An individual result also depends on the username, site response, and check used for that platform."
+        }
+      ],
+      "ctaTitle": "Start With an Authorized Username",
+      "ctaDescription": "See how to bound a Sherlock search, export the candidates, and verify the resulting links.",
+      "ctaPrimary": {
+        "label": "Read the Sherlock project guide",
+        "href": "/skills-marketplace/sherlock-project/sherlock"
+      }
+    },
+    "zh": {
+      "seoTitle": "Sherlock Project：用户名搜索工具与开源维护团队",
+      "seoDescription": "了解 Sherlock Project 如何维护公开用户名搜索 CLI 和网站检查规则，并查看 Sherlock 的 Agent 查询与结果核验指南。",
+      "heroTitle": "Sherlock Project",
+      "heroDescription": "维护开源用户名搜索工具 Sherlock，提供公开账号查询、站点规则和可导出的候选结果。",
+      "aboutTitle": "关于 Sherlock Project",
+      "about": "Sherlock Project 在 GitHub 维护同名用户名查询工具，以及站点支持、安装和贡献说明。项目由 Siddharth Dushantha 创建，社区贡献者随网站变化更新检查规则。",
+      "overview": {
+        "title": "关于 Sherlock Project",
+        "paragraphs": [
+          "Sherlock Project 在 GitHub 维护同名用户名查询工具，以及站点支持、安装和贡献说明。项目由 Siddharth Dushantha 创建，社区贡献者随网站变化更新检查规则。",
+          "官方仓库集中提供当前许可、站点清单与版本信息。需要核对安装方式或提交站点规则问题时，可以从项目文档开始。"
+        ]
+      },
+      "projectsTitle": "Sherlock Project 的开源工具",
+      "projectsIntro": "从 Sherlock 的命令行指南了解怎样限定查询网站、保存候选链接，再由账号负责人核对归属。",
+      "skillsTitle": "Sherlock Project 的 Agent Skills",
+      "skillsIntro": "查看可在指定 Agent 宿主运行的任务指引。",
+      "faq": [
+        {
+          "question": "谁创建了 Sherlock？",
+          "answer": "官方仓库将 Siddharth Dushantha 列为创建者。Sherlock Project 组织托管官方仓库和维护文档。"
+        },
+        {
+          "question": "从哪里安装 Sherlock？",
+          "answer": "从 Sherlock Project 官网打开安装文档，按当前环境选择适用的 Python 包管理器或容器方式。"
+        },
+        {
+          "question": "哪里可以查支持的网站？",
+          "answer": "官方站点清单列出了工具支持的网站。开始核查前，可以先确认目标平台是否在列。"
+        },
+        {
+          "question": "怎么报告网站规则失效？",
+          "answer": "在官方仓库查看现有问题和贡献说明，提供受影响的网站与可重现的行为，并使用获准分享的测试数据。"
+        },
+        {
+          "question": "项目采用什么许可？",
+          "answer": "官方仓库提供 MIT 许可证文件。分发或修改前可直接查阅原文。"
+        },
+        {
+          "question": "站点清单与查询结果有什么区别？",
+          "answer": "清单说明工具支持哪些网站。某次查询的结果还取决于用户名、网站响应和对应的检查规则。"
+        }
+      ],
+      "ctaTitle": "从一个获准的用户名开始",
+      "ctaDescription": "查看 Sherlock 的查询范围、导出选项和候选链接核验方式。",
+      "ctaPrimary": {
+        "label": "查看 Sherlock 项目指南",
+        "href": "/zh/skills-marketplace/sherlock-project/sherlock"
+      }
+    }
   }
 }

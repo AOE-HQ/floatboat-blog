@@ -271,6 +271,12 @@
       "earendil-works",
       "nousresearch",
       "anthropics"
+    ],
+    "sherlock-project": [
+      "morluto",
+      "graphify-labs",
+      "cloudflare",
+      "firecrawl"
     ]
   },
   "skill-categories": {

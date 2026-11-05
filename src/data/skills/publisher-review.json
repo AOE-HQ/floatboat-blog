@@ -663,6 +663,19 @@
       "repositories": [
         "karpathy/autoresearch"
       ]
+    },
+    "sherlock-project": {
+      "status": "approved",
+      "checkedAt": "2026-11-05",
+      "representativeRepository": "sherlock-project/sherlock",
+      "stars": 96293,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-05T05:14:13Z",
+      "reason": "官方组织维护公开原仓，采用 MIT 许可。官方用法记录了具备终端与网络权限的 Agent 可调用的 CLI。",
+      "repositories": [
+        "sherlock-project/sherlock"
+      ]
     }
   }
 }

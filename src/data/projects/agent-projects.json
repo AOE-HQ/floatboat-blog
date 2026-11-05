@@ -4643,5 +4643,211 @@
         }
       ]
     }
+  },
+  {
+    "author": "sherlock-project",
+    "slug": "sherlock",
+    "name": "Sherlock",
+    "repository": "https://github.com/sherlock-project/sherlock",
+    "website": "https://sherlockproject.xyz/",
+    "documentation": "https://sherlockproject.xyz/usage",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/sherlock-project/sherlock/blob/master/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-05",
+    "related": [
+      "graphify-labs/graphify",
+      "dietrichgebert/ponytail",
+      "openai/codex",
+      "stablyai/orca"
+    ],
+    "en": {
+      "seoTitle": "Sherlock: Public Username Search CLI and Account Checks",
+      "seoDescription": "Use the Sherlock CLI with a terminal-enabled agent to check authorized usernames, export candidate profile links, and verify matches before recording account ownership.",
+      "description": "Sherlock checks usernames across supported sites. A terminal-enabled agent can run a scoped search, save candidate links, and prepare a table for the account owner to review.",
+      "kind": "Public Username Search CLI",
+      "overviewTitle": "About Sherlock",
+      "overview": [
+        "Sherlock is a Python command-line tool maintained by Sherlock Project. It takes an exact username and uses site-specific checks to find candidate public profile pages.",
+        "Limit a run to the sites in your account inventory, then export candidates as CSV or XLSX. Record the handle, site list and run date so another reviewer can repeat the same check.",
+        "An agent can invoke the installed CLI from an authorized shell. A matching handle gives the reviewer a page to inspect. Verify account ownership separately against your account records or another authorized source."
+      ],
+      "capabilitiesTitle": "What the Sherlock CLI Returns",
+      "capabilitiesIntro": "Choose the sites your review needs to cover and the format the account owner can work with. A scoped query and saved candidate table make each result easier to trace.",
+      "capabilities": [
+        {
+          "title": "Exact username checks",
+          "description": "Check supported sites for public pages that match the handle."
+        },
+        {
+          "title": "Site selection",
+          "description": "Repeat the --site option for each approved platform to keep the run within scope."
+        },
+        {
+          "title": "Candidate exports",
+          "description": "Save candidates in CSV or XLSX and record verification status beside each result."
+        }
+      ],
+      "useCases": {
+        "title": "Sherlock Use Cases for Username Checks",
+        "description": "A launch, a rename, a retirement, and a recurring audit each need a different record. Start with handles you manage or are authorized to check.",
+        "items": [
+          {
+            "title": "Check a brand handle before launch",
+            "description": "Give the agent the proposed brand handle and the platforms in your launch plan. Ask for candidate links so the launch team can open each page and decide where to register or change the handle."
+          },
+          {
+            "title": "Reconcile old and new handles",
+            "description": "Check both approved usernames against your account inventory. Flag candidates whose profile links or display names still need to be checked before the rename is marked complete."
+          },
+          {
+            "title": "Review accounts before retirement",
+            "description": "Find candidates for a legacy team handle and save them in a review sheet. Ask the account owner to confirm which profiles the team controls before drafting the retirement checklist."
+          },
+          {
+            "title": "Repeat a platform check",
+            "description": "Reuse an approved site list and compare a new run against the previous export. Label new candidates and unresolved site responses separately so reviewers can investigate the differences."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "What You Need to Run Sherlock",
+        "description": "Give the agent a working CLI, permission to reach the selected sites, and a folder for the candidate report before approving the query.",
+        "items": [
+          {
+            "title": "Installed CLI",
+            "description": "Follow the official installation guide and verify sherlock --version in the agent’s shell."
+          },
+          {
+            "title": "Approved scope",
+            "description": "Provide the exact handle and the supported sites that may be queried."
+          },
+          {
+            "title": "Writable output directory",
+            "description": "Use an approved folder for exports and any ownership verification notes."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "What input should I give Sherlock?",
+          "answer": "Supply an exact username and a bounded list of supported sites. Start with a handle you manage or have permission to check."
+        },
+        {
+          "question": "Does a hit identify an account owner?",
+          "answer": "A hit is a possible match flagged by Sherlock. Open the page and check authorized account records before attributing ownership."
+        },
+        {
+          "question": "How can an agent run Sherlock?",
+          "answer": "A terminal-enabled agent can call the installed CLI with approved inputs and network access to the selected sites."
+        },
+        {
+          "question": "Can I export candidates to a spreadsheet?",
+          "answer": "Sherlock supports CSV and XLSX. Keep the export in the approved folder and add a separate column for verification."
+        },
+        {
+          "question": "Why might a known profile be missing?",
+          "answer": "The site may be unsupported, have changed its responses, or limit requests. Check directly and record the coverage gap."
+        },
+        {
+          "question": "Does Sherlock read private profiles?",
+          "answer": "The CLI checks public site responses. The findings depend on what each supported website exposes and how its checks work."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Sherlock：公开用户名搜索 CLI 与账号核验",
+      "seoDescription": "用具备终端权限的 Agent 调用 Sherlock，在获准的网站查询用户名，导出公开候选链接，再核对账号归属。",
+      "description": "Sherlock 在受支持的网站查询用户名。具备终端权限的 Agent 可以按指定范围查询、保存候选链接，再把结果交给账号负责人核验。",
+      "kind": "公开用户名搜索 CLI",
+      "overviewTitle": "关于 Sherlock",
+      "overview": [
+        "Sherlock 是 Sherlock Project 维护的 Python 命令行工具。输入确切的用户名后，它会按各网站的检查规则寻找匹配的公开资料页面。",
+        "查询可以限定在账号台账所列的网站，候选结果可以导出为 CSV 或 XLSX。记录用户名、网站列表和运行日期，复核人就能按同一范围重跑。",
+        "Agent 可以在获准使用的终端中调用已安装的命令。命中意味着有页面值得进一步核查，确认账号归属仍要依靠账号台账或其他获准使用的证据。"
+      ],
+      "capabilitiesTitle": "Sherlock 命令行能提供什么",
+      "capabilitiesIntro": "先选出盘点要覆盖的网站，再确定账号负责人方便复核的交付格式。限定查询范围并保存候选表，后续可以回查每条结果。",
+      "capabilities": [
+        {
+          "title": "按用户名查询",
+          "description": "在受支持的网站查找使用指定用户名的公开页面。"
+        },
+        {
+          "title": "限定查询网站",
+          "description": "为每个获准的平台分别传入一次 --site，将查询限制在指定范围。"
+        },
+        {
+          "title": "导出候选结果",
+          "description": "保存 CSV 或 XLSX 文件，在每条候选记录旁填写核验状态。"
+        }
+      ],
+      "useCases": {
+        "title": "Sherlock 的用户名核验场景",
+        "description": "账号上线、改名、停用和定期盘点需要不同的核查记录。每种场景都从自己管理或获准核验的用户名开始。",
+        "items": [
+          {
+            "title": "上线前检查品牌用户名",
+            "description": "把拟用的品牌用户名和上线计划中的平台交给 Agent。先汇总候选链接，再由上线团队打开相关页面核对，决定在哪些平台注册或修改用户名。"
+          },
+          {
+            "title": "改名时对照新旧用户名",
+            "description": "按账号台账查询已获授权的新旧用户名。标出个人资料链接或显示名称还需要人工核查的候选页面，再确认改名是否完成。"
+          },
+          {
+            "title": "为停用旧账号做盘点",
+            "description": "用旧团队用户名查找候选链接并写入复核表。请账号负责人确认团队控制哪些资料页，再根据已确认的记录制定停用清单。"
+          },
+          {
+            "title": "重复执行同一范围的检查",
+            "description": "沿用获准的网站列表，将本次查询结果与上次导出对照。分别标注新增候选和未解决的网站响应，方便复核人判断哪些差异值得跟进。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "运行 Sherlock 前的准备",
+        "description": "批准查询前，确认 Agent 所用终端中的命令可运行、目标站点允许访问，并指定保存候选报告的目录。",
+        "items": [
+          {
+            "title": "可用的命令行工具",
+            "description": "按官方文档安装，在 Agent 所用终端运行 sherlock --version 核对。"
+          },
+          {
+            "title": "获准的查询范围",
+            "description": "提供确切的用户名，以及允许查询的受支持网站。"
+          },
+          {
+            "title": "可写的输出目录",
+            "description": "指定用于保存结果和账号核验记录的目录。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "运行 Sherlock 需要什么输入？",
+          "answer": "提供准确的用户名和一组受支持的网站。可以先用自己管理或获准核验的账号。"
+        },
+        {
+          "question": "命中结果能确认账号归属吗？",
+          "answer": "命中表示 Sherlock 标记了一个可能的匹配。确认归属前要打开页面，并与获准使用的账号台账交叉核对。"
+        },
+        {
+          "question": "Agent 怎样运行 Sherlock？",
+          "answer": "具备终端权限的 Agent 可以调用已安装的 CLI，使用获准的输入并联网访问指定网站。"
+        },
+        {
+          "question": "能把候选结果保存为表格吗？",
+          "answer": "Sherlock 支持 CSV 和 XLSX。把导出文件保存在获准的目录，并加一列核验状态。"
+        },
+        {
+          "question": "为什么有时查不到已知账号？",
+          "answer": "网站可能不在支持清单内，也可能改变响应或限制请求。直接打开网站核对，并记下覆盖缺口。"
+        },
+        {
+          "question": "Sherlock 能读取私密账号吗？",
+          "answer": "命令行工具检查网站公开响应。结果取决于受支持网站的公开范围和对应检查规则。"
+        }
+      ]
+    }
   }
 ]

@@ -166,5 +166,9 @@
   "karpathy": {
     "en": "Publishes Autoresearch for agent-run model training and the LLM Wiki pattern for maintaining linked Markdown knowledge.",
     "zh": "公开 Autoresearch 自动训练实验和 LLM Wiki 设计，探索用 Agent 迭代模型与维护知识库。"
+  },
+  "sherlock-project": {
+    "en": "Maintains Sherlock, a command-line tool for checking public username matches across supported websites and exporting candidates for review.",
+    "zh": "维护开源用户名搜索工具 Sherlock，提供网站查询规则和可供复核的公开候选链接。"
   }
 }

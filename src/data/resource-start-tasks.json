@@ -906,5 +906,23 @@
       "inputHint": "说明项目、关键阶段、当前阻塞，以及哪些操作需要确认。",
       "outcome": "一份三文件规划提纲，以及验证新会话能否接手的检查步骤。"
     }
+  },
+  "sherlock-project/sherlock": {
+    "en": {
+      "title": "Check an authorized username across selected sites",
+      "description": "Give the agent an exact username and a short list of approved sites. Have it record public candidate URLs and leave ownership decisions for review.",
+      "inputLabel": "Which username and sites are approved?",
+      "inputHint": "Provide a handle you manage or have permission to check, the site list, and an output folder.",
+      "outcome": "A candidate URL table with site coverage and a verification column.",
+      "example": "Check whether Sherlock is installed. Prepare a search for my approved username on the sites I list, then show me the planned command before making network requests. After I approve the command, run it, save candidate URLs in the approved folder, and flag each row for manual verification."
+    },
+    "zh": {
+      "title": "在指定网站核验获准的用户名",
+      "description": "提供准确的用户名和允许查询的网站，让 Agent 记录公开候选链接，并把账号归属交给负责人复核。",
+      "inputLabel": "允许查询哪个用户名和哪些网站？",
+      "inputHint": "填写自己管理或获准核验的用户名、网站列表和输出目录。",
+      "outcome": "一张候选链接表，附查询范围和人工核验状态。",
+      "example": "先检查 Sherlock 是否已安装。按我提供的用户名和网站范围准备查询命令，联网前先给我核对。我确认命令后再执行，将候选链接保存到获准的目录，每条结果标记为待人工核验。"
+    }
   }
 }
