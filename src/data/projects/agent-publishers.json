@@ -4451,7 +4451,7 @@
         },
         {
           "question": "How should a failed session be reported?",
-          "answer": "Keep the session ID, relevant step, and redacted runtime evidence. Official session-debugging guidance can help distinguish infrastructure failure from target-site behavior."
+          "answer": "Keep the session ID, relevant step, and redacted runtime evidence. Official steel-session-debugging guidance can help distinguish infrastructure failure from target-site behavior."
         }
       ],
       "ctaTitle": "Explore Steel Browser",
@@ -5146,7 +5146,7 @@
         },
         "zh": {
           "kind": "带本地 MCP 的 Agent 浏览器",
-          "description": "通过 BrowserOS neo 的本地 MCP 端点连接 Floatboat 或其他 MCP 宿主，将浏览器产品、外部 Agent 连接和官方 browseros-neo Skill 放在同一流程中理解。"
+          "description": "通过 BrowserOS neo 的本地 MCP 端点连接 Floatboat 或其他 MCP 宿主，操作网页并检查结果。官方 browseros-neo Skill 提供相应的浏览器任务指引。"
         }
       }
     ],
@@ -5534,7 +5534,7 @@
         },
         {
           "question": "MIT 许可意味着可以公开端点吗？",
-          "answer": "源码许可不证明部署安全，项目说明受控本地模型，并对远程运行列明独立责任。"
+          "answer": "源码许可不证明部署安全，项目说明受控的本地部署方式，并对远程运行列明独立责任。"
         },
         {
           "question": "怎样检查包更新？",
@@ -5738,7 +5738,7 @@
         },
         "zh": {
           "kind": "浏览器 SDK 与 Agent CLI",
-          "description": "浏览器流程同时需要明确代码和自然语言交互时，可使用 Stagehand。编码 Agent 可从 browse CLI 与官方 Skill 开始，可复用应用则使用 SDK。"
+          "description": "浏览器流程同时需要确定性代码和自然语言交互时，可使用 Stagehand。编码 Agent 可从 browse CLI 与官方 Skill 开始，可复用应用则使用 SDK。"
         }
       }
     ],
@@ -5762,8 +5762,8 @@
       "skillsIntro": "Find the official companion instructions and their runtime requirements in the project guide.",
       "faq": [
         {
-          "question": "What does Browserbase maintain here?",
-          "answer": "The retained project is Stagehand, with its current CLI, SDK, and service documentation. This page identifies the publisher rather than duplicating each interface as a separate work."
+          "question": "How are Browserbase and Stagehand related?",
+          "answer": "Browserbase maintains Stagehand, the browser automation framework, and provides hosted browser infrastructure. Stagehand can work with local browsers or Browserbase sessions; using the framework does not by itself require a hosted browser account."
         },
         {
           "question": "Is Stagehand the company name?",
@@ -5795,9 +5795,9 @@
     },
     "zh": {
       "seoTitle": "Browserbase：Stagehand 与浏览器基础设施",
-      "seoDescription": "开发 Stagehand 与浏览器基础设施，连接明确代码、Agent 交互及本地或托管流程。",
+      "seoDescription": "开发 Stagehand 与浏览器基础设施，连接确定性代码、Agent 交互及本地或托管流程。",
       "heroTitle": "Browserbase",
-      "heroDescription": "开发 Stagehand 与浏览器基础设施，连接明确代码、Agent 交互及本地或托管流程。",
+      "heroDescription": "开发 Stagehand 与浏览器基础设施，连接确定性代码、Agent 交互及本地或托管流程。",
       "overview": {
         "title": "关于 Browserbase",
         "paragraphs": [
@@ -5808,13 +5808,13 @@
       "aboutTitle": "关于 Browserbase",
       "about": "Browserbase 发布 Stagehand 和配套浏览器工具。Stagehand 是更广浏览器服务生态中的开源自动化项目，组织身份不能与某个 SDK 包或 MCP 端点混为一谈。 当前项目 README 用于选择 browse CLI、SDK 或托管 MCP。旧 MCP 仓库与大版本示例属于历史材料，使用复制配置前应先核对当前链接。",
       "projectsTitle": "Browserbase 的软件作品",
-      "projectsIntro": "开发 Stagehand 与浏览器基础设施，连接明确代码、Agent 交互及本地或托管流程。",
+      "projectsIntro": "开发 Stagehand 与浏览器基础设施，连接确定性代码、Agent 交互及本地或托管流程。",
       "skillsTitle": "官方 Skill 指南",
       "skillsIntro": "在项目指南中查看官方配套指引及其运行环境要求。",
       "faq": [
         {
-          "question": "这里介绍 Browserbase 的哪些作品？",
-          "answer": "当前作品是 Stagehand 及其 CLI、SDK 和服务文档，本页识别发布者，不按每个接口重复列作品。"
+          "question": "Browserbase 和 Stagehand 是什么关系？",
+          "answer": "Browserbase 维护浏览器自动化框架 Stagehand，同时提供托管浏览器基础设施。Stagehand 可以使用本地浏览器或 Browserbase 会话，使用框架本身不等于必须开通托管浏览器账号。"
         },
         {
           "question": "Stagehand 是公司名称吗？",

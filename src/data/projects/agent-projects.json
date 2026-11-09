@@ -6582,7 +6582,7 @@
       },
       "prerequisites": {
         "title": "Before Using Skyvern",
-        "description": "Prepare cloud authentication or the documented self-hosted stack and model/browser configuration.",
+        "description": "Choose hosted or self-hosted execution, then prepare the account, runtime, and workflow permissions for that path.",
         "items": [
           {
             "title": "Selected backend",
@@ -6672,7 +6672,7 @@
       },
       "prerequisites": {
         "title": "使用 Skyvern 前的准备",
-        "description": "准备云端认证或文档中的自托管服务栈及模型、浏览器配置。",
+        "description": "先选择托管或自部署方式，再按该入口准备账号、运行环境和流程权限。",
         "items": [
           {
             "title": "选定后端",
@@ -6702,7 +6702,7 @@
           "answer": "它指导编码 Agent 使用当前 Skyvern CLI 与 MCP，不替代服务端、账号和结果验收，并应与安装版本匹配。"
         },
         {
-          "question": "什么时候需要停止审阅？",
+          "question": "流程何时应暂停并交给用户确认？",
           "answer": "将关键提交、账号变更与购买设为明确检查点，先用草稿或测试数据验证，再允许作用于生产记录。"
         },
         {
@@ -6757,7 +6757,7 @@
         "The steel-browser repository uses Apache-2.0. Cloud credentials, session time, and connected model services remain separate considerations. For Floatboat, use the documented external-agent MCP or Skill workflow and verify the created session before passing private data or reusing a profile."
       ],
       "capabilitiesTitle": "How Steel Browser Fits the Browser Workflow",
-      "capabilitiesIntro": "Steel separates browser infrastructure from the logic that drives it. Choose a session backend, the official operating or developer guidance, and a release plan before treating a browser connection as a reusable workflow.",
+      "capabilitiesIntro": "Steel separates browser infrastructure from the logic that drives it. Choose a session backend, the official operating or developer guidance, and a session cleanup and release plan before treating a browser connection as a reusable workflow.",
       "capabilities": [
         {
           "title": "Session infrastructure",
@@ -6796,7 +6796,7 @@
       },
       "prerequisites": {
         "title": "Before Using Steel Browser",
-        "description": "Choose the open-source server or hosted service and prepare the corresponding credentials and connection method.",
+        "description": "The open-source browser server and hosted MCP have different setup requirements. Confirm where the browser will run before configuring the agent.",
         "items": [
           {
             "title": "Cloud or self-hosted choice",
@@ -6819,7 +6819,7 @@
         },
         {
           "question": "Which Skill should I choose?",
-          "answer": "The official repository distinguishes steel-browser for live work, steel-developer for code, and session-debugging for failed runs. Choose the job first instead of installing every instruction indiscriminately."
+          "answer": "The official repository distinguishes steel-browser for live work, steel-developer for code, and steel-session-debugging for failed runs. Choose the job first instead of installing every instruction indiscriminately."
         },
         {
           "question": "Can Cursor, Codex, and Floatboat connect?",
@@ -6886,7 +6886,7 @@
       },
       "prerequisites": {
         "title": "使用 Steel Browser 前的准备",
-        "description": "选择开源服务或托管服务，准备对应凭据与连接方式。",
+        "description": "开源浏览器服务与托管 MCP 的配置要求不同，先确定浏览器在哪里运行，再配置 Agent 连接。",
         "items": [
           {
             "title": "选择云端或自托管",
@@ -6909,7 +6909,7 @@
         },
         {
           "question": "应该选择哪个 Skill？",
-          "answer": "官方区分现场工作的 steel-browser、编写代码的 steel-developer，以及失败运行的 session-debugging，应按任务选择。"
+          "answer": "官方区分现场工作的 steel-browser、编写代码的 steel-developer，以及失败运行的 steel-session-debugging，应按任务选择。"
         },
         {
           "question": "Cursor、Codex 与 Floatboat 可以连接吗？",
@@ -6967,7 +6967,7 @@
       "overviewTitle": "About Bright Data MCP",
       "overview": [
         "Bright Data MCP is a service connector rather than a standalone local browser. It exposes web access and data capabilities from Bright Data to an MCP client. Browser operation is one possible task alongside search, page fetching, and structured data extraction, so select the relevant product surface first.",
-        "Official client examples include Cursor, and the Bright Data CLI can configure agent connections. The separate official Skills repository covers onboarding, browsing, scraping, fetching, and cost checks. These instructions help choose CLI, MCP, or SDK without requiring a separate page for every packaging format.",
+        "Official client examples include Cursor, and the Bright Data CLI can configure agent connections. The separate official Skills repository covers onboarding, browsing, scraping, fetching, and cost checks. Choose MCP for tools exposed to an agent client, CLI for terminal workflows, or an SDK for application code.",
         "Prepare an authorized service account and the product access needed by the task. The MCP repository is MIT-licensed, while service use, data products, and usage charges follow Bright Data’s terms. A local MCP process still calls external infrastructure, so do not describe it as local-only data processing."
       ],
       "capabilitiesTitle": "How Bright Data MCP Fits the Browser Workflow",
@@ -7010,7 +7010,7 @@
       },
       "prerequisites": {
         "title": "Before Using Bright Data MCP",
-        "description": "Configure the relevant Bright Data product and authentication through official onboarding or client settings.",
+        "description": "Match the service product, account access, and usage budget to the data task before connecting an agent.",
         "items": [
           {
             "title": "Service account and product access",
@@ -7057,7 +7057,7 @@
       "overviewTitle": "关于 Bright Data MCP",
       "overview": [
         "Bright Data MCP 是服务连接器，不是独立本地浏览器。它向 MCP 客户端提供 Bright Data 的网页访问与数据能力，浏览器操作只是其中一种任务，还包括搜索、获取页面和结构化提取，应先选择对应产品入口。",
-        "官方客户端示例包含 Cursor，Bright Data CLI 也可配置 Agent 连接。独立官方 Skills 仓库覆盖引导、浏览、采集、获取与成本检查，可帮助选择 CLI、MCP 或 SDK，无需按每种打包格式重复建页。",
+        "官方客户端示例包含 Cursor，Bright Data CLI 也可配置 Agent 连接。独立官方 Skills 仓库覆盖引导、浏览、采集、获取与成本检查。需要 Agent 客户端调用工具时选择 MCP，终端流程使用 CLI，应用代码则采用 SDK。",
         "准备获准服务账号及任务对应产品权限。MCP 仓库采用 MIT，服务、数据产品和用量费用遵循 Bright Data 条款。本地 MCP 进程仍调用外部基础设施，不能写成只在本机处理数据。"
       ],
       "capabilitiesTitle": "Bright Data MCP 在浏览器流程中的作用",
@@ -7100,7 +7100,7 @@
       },
       "prerequisites": {
         "title": "使用 Bright Data MCP 前的准备",
-        "description": "通过官方引导或客户端设置配置对应 Bright Data 产品与认证。",
+        "description": "连接 Agent 前，先确认数据任务需要的服务产品、账号权限和用量预算。",
         "items": [
           {
             "title": "服务账号与产品权限",
@@ -7224,7 +7224,7 @@
       },
       "prerequisites": {
         "title": "Before Using Lightpanda",
-        "description": "Choose the documented binary for Linux or macOS, or the WSL2 path on Windows, and verify required page features.",
+        "description": "Check the deployment platform and page requirements before choosing Lightpanda as the browser engine.",
         "items": [
           {
             "title": "Supported system",
@@ -7314,7 +7314,7 @@
       },
       "prerequisites": {
         "title": "使用 Lightpanda 前的准备",
-        "description": "按文档选择 Linux、macOS 二进制或 Windows WSL2 路径，并核对所需页面特性。",
+        "description": "选择 Lightpanda 作为浏览器引擎前，先检查部署平台与页面所需功能。",
         "items": [
           {
             "title": "支持的系统",
@@ -7438,7 +7438,7 @@
       },
       "prerequisites": {
         "title": "Before Using Crawl4AI",
-        "description": "Prepare the Python or documented Docker/server environment, browser dependencies, and endpoint access.",
+        "description": "Choose the official hosted MCP or a self-hosted crawler, then prepare the credentials and dependencies required by that deployment.",
         "items": [
           {
             "title": "Crawler runtime",
@@ -7528,7 +7528,7 @@
       },
       "prerequisites": {
         "title": "使用 Crawl4AI 前的准备",
-        "description": "准备 Python 或文档中的 Docker／服务环境、浏览器依赖及端点访问。",
+        "description": "先选择官方托管 MCP 或自部署爬取服务，再准备对应的认证与依赖。",
         "items": [
           {
             "title": "抓取运行环境",
@@ -7907,8 +7907,8 @@
     },
     "zh": {
       "seoTitle": "BrowserOS：通过本地 MCP 将编码 Agent 连接到浏览器",
-      "seoDescription": "通过 BrowserOS neo 的本地 MCP 端点连接 Floatboat 或其他 MCP 宿主，将浏览器产品、外部 Agent 连接和官方 browseros-neo Skill 放在同一流程中理解。",
-      "description": "通过 BrowserOS neo 的本地 MCP 端点连接 Floatboat 或其他 MCP 宿主，将浏览器产品、外部 Agent 连接和官方 browseros-neo Skill 放在同一流程中理解。",
+      "seoDescription": "通过 BrowserOS neo 的本地 MCP 端点连接 Floatboat 或其他 MCP 宿主，操作网页并检查结果。官方 browseros-neo Skill 提供相应的浏览器任务指引。",
+      "description": "通过 BrowserOS neo 的本地 MCP 端点连接 Floatboat 或其他 MCP 宿主，操作网页并检查结果。官方 browseros-neo Skill 提供相应的浏览器任务指引。",
       "kind": "带本地 MCP 的 Agent 浏览器",
       "overviewTitle": "关于 BrowserOS",
       "overview": [
@@ -8038,7 +8038,7 @@
       "overview": [
         "Browser MCP provides an MCP server and extension for using your own Chrome from an AI application. The README names Cursor, Codex, and other clients. It is useful when a task depends on an existing browser profile rather than an unrelated automation browser.",
         "A local daemon forwards browser calls through the extension, which requires a pairing confirmation. The documented design gives agents their own task tabs and retains extension-side controls such as stopping activity. Confirm the pairing code and selected profile before granting access.",
-        "The repository uses Apache-2.0 and supplies the MCP runtime, not a complete autonomous agent or a verified official usage Skill in this review. Existing login state does not remove account permissions, and local browser execution does not determine the model’s data processing."
+        "The repository uses Apache-2.0 and provides an MCP server and browser extension. It relies on the connected agent for task planning. Existing login state does not remove account permissions, and local browser execution does not determine how the host model processes page content."
       ],
       "capabilitiesTitle": "How Browser MCP Fits the Browser Workflow",
       "capabilitiesIntro": "Pair the official extension with its local server, choose the intended profile, and verify task tabs before reading account data. The connection layer supplies access; the host still decides and checks each action.",
@@ -8080,7 +8080,7 @@
       },
       "prerequisites": {
         "title": "Before Using Browser MCP",
-        "description": "Install the official extension in the intended Chrome profile and keep its controls available.",
+        "description": "Prepare the intended Chrome profile, extension pairing, and client connection before granting browser access.",
         "items": [
           {
             "title": "Chrome extension",
@@ -8128,7 +8128,7 @@
       "overview": [
         "Browser MCP 提供 MCP 服务和扩展，让 AI 应用使用你自己的 Chrome。README 列明 Cursor、Codex 等客户端，适合依赖现有浏览器配置、而非独立自动化浏览器的任务。",
         "本地守护进程通过扩展转发浏览器调用，扩展需要配对确认。文档设计为 Agent 使用任务标签页，并保留停止活动等扩展端控制；授权前应核对配对码与浏览器配置。",
-        "仓库采用 Apache-2.0，交付 MCP 运行工具，不是完整自主 Agent；当前未确认官方使用型 Skill。既有登录态不能替代账号权限，本地浏览器执行也不决定模型如何处理数据。"
+        "仓库采用 Apache-2.0，提供 MCP 服务和浏览器扩展，由连接的 Agent 规划任务。既有登录态不能替代账号权限，本地浏览器执行也不决定宿主模型如何处理页面内容。"
       ],
       "capabilitiesTitle": "Browser MCP 在浏览器流程中的作用",
       "capabilitiesIntro": "先将官方扩展与本地服务配对，选择目标配置并检查任务标签页，再读取账号数据。连接层提供访问入口，具体动作仍由宿主选择和验收，不能省略账号范围检查。",
@@ -8170,7 +8170,7 @@
       },
       "prerequisites": {
         "title": "使用 Browser MCP 前的准备",
-        "description": "在目标 Chrome 配置安装官方扩展，并保留扩展控制入口。",
+        "description": "开放浏览器访问前，先准备目标 Chrome 配置、扩展配对和客户端连接。",
         "items": [
           {
             "title": "Chrome 扩展",
@@ -8201,7 +8201,7 @@
         },
         {
           "question": "有官方 Skill 吗？",
-          "answer": "当前确认了服务与扩展，未在主仓确认官方用户 Skill，应采用 MCP 文档，不虚构 Skill 安装命令。"
+          "answer": "官方使用入口是 MCP 服务、浏览器扩展和配置文档。主仓库没有提供面向用户的官方 Skill 安装说明。"
         },
         {
           "question": "模型会看到整个配置吗？",
@@ -8294,7 +8294,7 @@
       },
       "prerequisites": {
         "title": "Before Using PinchTab",
-        "description": "Install the appropriate package or binary, prepare a supported browser, and start daemon, server, or bridge mode as documented.",
+        "description": "Select the operating mode and browser connection that fit the task, then check the required runtime and access scope.",
         "items": [
           {
             "title": "Local control plane",
@@ -8384,7 +8384,7 @@
       },
       "prerequisites": {
         "title": "使用 PinchTab 前的准备",
-        "description": "安装对应包或二进制，准备受支持浏览器，按文档启动 daemon、server 或 bridge。",
+        "description": "按任务选择运行模式与浏览器连接方式，再检查运行环境和访问范围。",
         "items": [
           {
             "title": "本地控制服务",
@@ -8752,8 +8752,8 @@
           "answer": "Check the installed major version first. Names, initialization, and method signatures can differ across releases; a working v3 example is not evidence that the same code is valid in another major."
         },
         {
-          "question": "Should the SDK, MCP, and Skill have separate pages?",
-          "answer": "They are explained here as entry points to the same project family. A separate task guide would need a distinct job and deliverable, rather than repeating setup under a different label."
+          "question": "Should I use the SDK, MCP, or browse Skill?",
+          "answer": "Choose the SDK when you need browser actions in application code. Use MCP to expose browser tools to a compatible agent client. The browse Skill guides a coding agent through the CLI; it complements the installed runtime rather than replacing it."
         },
         {
           "question": "How should extraction be verified?",
@@ -8763,8 +8763,8 @@
     },
     "zh": {
       "seoTitle": "Stagehand：组合浏览器代码与自然语言操作",
-      "seoDescription": "浏览器流程同时需要明确代码和自然语言交互时，可使用 Stagehand。编码 Agent 可从 browse CLI 与官方 Skill 开始，可复用应用则使用 SDK。",
-      "description": "浏览器流程同时需要明确代码和自然语言交互时，可使用 Stagehand。编码 Agent 可从 browse CLI 与官方 Skill 开始，可复用应用则使用 SDK。",
+      "seoDescription": "浏览器流程同时需要确定性代码和自然语言交互时，可使用 Stagehand。编码 Agent 可从 browse CLI 与官方 Skill 开始，可复用应用则使用 SDK。",
+      "description": "浏览器流程同时需要确定性代码和自然语言交互时，可使用 Stagehand。编码 Agent 可从 browse CLI 与官方 Skill 开始，可复用应用则使用 SDK。",
       "kind": "浏览器 SDK 与 Agent CLI",
       "overviewTitle": "关于 Stagehand",
       "overview": [
@@ -8773,11 +8773,11 @@
         "先选择一项小型页面任务，明确本地或托管运行，并固定代码采用的接口版本。Stagehand 文档包含不同大版本示例，函数签名应与已安装包核对。MIT 源码许可不包含托管浏览器和模型用量。"
       ],
       "capabilitiesTitle": "Stagehand 在浏览器流程中的作用",
-      "capabilitiesIntro": "Stagehand 提供不同控制层次：已知导航先用明确代码，输出已知时定义提取结构，仅将确需解释的步骤交给语言动作，便于定位失败和维护流程。",
+      "capabilitiesIntro": "Stagehand 提供不同控制层次：已知导航先用确定性代码，输出已知时定义提取结构，仅将确需解释的步骤交给语言动作，便于定位失败和维护流程。",
       "capabilities": [
         {
-          "title": "明确代码与语言操作",
-          "description": "已知导航保留明确代码，仅在需要时用自然语言解释页面元素。"
+          "title": "确定性代码与语言操作",
+          "description": "已知导航保留确定性代码，仅在需要时用自然语言解释页面元素。"
         },
         {
           "title": "结构化提取",
@@ -8794,7 +8794,7 @@
         "items": [
           {
             "title": "自动化稳定的账号流程",
-            "description": "面对反复使用的内部系统，明确固定 URL 与文案会变化的操作。导航保留明确代码，单独处理语言驱动动作，并保存最终状态，让失败能定位到具体步骤。"
+            "description": "面对反复使用的内部系统，明确固定 URL 与文案会变化的操作。导航保留确定性代码，单独处理语言驱动动作，并保存最终状态，让失败能定位到具体步骤。"
           },
           {
             "title": "提取字段明确的结果",
@@ -8842,8 +8842,8 @@
           "answer": "先核对安装的大版本。初始化、名称和方法签名可能变化，v3 示例可用不代表在其他大版本中也成立。"
         },
         {
-          "question": "SDK、MCP 和 Skill 要分别建页吗？",
-          "answer": "这里将它们作为同一项目族的使用入口说明。只有任务与交付物独立时才另建指南，不因入口名称不同重复介绍安装。"
+          "question": "应该选择 SDK、MCP，还是 browse Skill？",
+          "answer": "需要把浏览器操作写进应用时选择 SDK；希望兼容的 Agent 客户端直接调用浏览器工具时使用 MCP。browse Skill 则指导编码 Agent 使用 CLI，需要配合已安装的运行工具。"
         },
         {
           "question": "怎样验收提取结果？",
