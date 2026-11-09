@@ -975,8 +975,8 @@
   },
   "frontend-react": {
     "label": {
-      "en": "Frontend & React",
-      "zh": "前端与 React"
+      "en": "Frontend Interfaces",
+      "zh": "前端界面"
     },
     "seo": {
       "en": {
@@ -990,17 +990,17 @@
     },
     "hero": {
       "en": {
-        "title": "Build and Inspect Frontend Interfaces",
+        "title": "Frontend Skills for Interface Design and React Project Checks",
         "description": "Compare interface-design instructions with tools for inspecting a running page. React implementation still needs repository-specific component, styling, and test context."
       },
       "zh": {
-        "title": "构建并检查前端界面",
+        "title": "前端界面 Skills：设计实现与 React 项目检查",
         "description": "比较界面设计指引与运行页面的检查工具。处理 React 项目时，还需要提供仓库中的组件、样式约定与测试环境。"
       }
     },
     "intro": {
-      "en": "A frontend task may start with a design brief or an existing screen that behaves incorrectly. Frontend Design and Design Taste Frontend address interface work, while browser-testing guides help inspect the result. This collection is not a React API reference: supply the actual framework version, component code, and supported browsers before asking an agent to implement or diagnose a change. OpenDesign focuses on HTML prototypes; adapt its output to the actual application stack rather than assuming React component generation.",
-      "zh": "前端任务既可能从设计需求开始，也可能来自现有页面的布局或交互问题。Frontend Design 与 Design Taste Frontend 侧重界面工作，浏览器测试指南则帮助检查实际结果。这里不是 React API 手册；让 Agent 实现或排查之前，应提供实际框架版本、组件代码和目标浏览器。 OpenDesign 侧重 HTML 原型，输出需要结合实际应用技术栈适配，不能直接视为 React 组件生成。"
+      "en": "Choose Frontend Design or Design Taste Frontend when the task starts with a visual brief. OpenDesign produces HTML prototypes, while Impeccable supports interface refinement. Browser Testing with DevTools adds runtime evidence from an existing page. For a React application, provide the installed version and component conventions before adapting the output. The current collection contains interface resources rather than a dedicated React API or performance guide.",
+      "zh": "从视觉需求开始时，可比较 Frontend Design 与 Design Taste Frontend。OpenDesign 用于 HTML 原型，Impeccable 支持界面改进，Browser Testing with DevTools 则补充现有页面的运行证据。处理 React 应用时，先提供实际版本与组件约定，再适配输出。当前资源侧重界面工作，尚未收录专门的 React API 或性能指南。"
     },
     "overviewTitle": {
       "en": "Separate Interface Decisions from Runtime Evidence",
@@ -1039,24 +1039,24 @@
       },
       {
         "en": {
-          "title": "Changing React code",
-          "description": "Bring the component and its tests; visual guidance alone cannot establish state or rendering correctness."
+          "title": "Move from prototype to React",
+          "description": "Use OpenDesign for an HTML prototype, then inspect the application’s components and state before adapting it to React."
         },
         "zh": {
-          "title": "修改 React 代码",
-          "description": "提供组件和相关测试；视觉指引本身不能证明状态与渲染逻辑正确。"
+          "title": "从原型进入 React 实现",
+          "description": "用 OpenDesign 制作 HTML 原型后，先核对应用组件和状态，再适配到 React。"
         }
       }
     ],
     "faq": {
       "en": [
         {
-          "question": "Are these resources React-only?",
-          "answer": "No. Their scopes differ. Inspect each guide for its supported stack; a frontend category does not establish framework compatibility."
+          "question": "Which resource should I use for a new interface?",
+          "answer": "Compare Frontend Design and Design Taste Frontend for design instructions. Use OpenDesign when an HTML prototype is the intended deliverable; check each guide’s host and setup before starting."
         },
         {
-          "question": "Is this a React documentation replacement?",
-          "answer": "No. Use documentation matching your installed version for APIs. These resources support design and verification tasks around the implementation."
+          "question": "How do I investigate an existing page failure?",
+          "answer": "Browser Testing with DevTools uses Chrome DevTools MCP to collect console and network evidence. Bring a reachable page and a reproducible failure instead of asking a visual-design instruction to diagnose runtime behavior."
         },
         {
           "question": "What should a design brief include?",
@@ -1077,12 +1077,12 @@
       ],
       "zh": [
         {
-          "question": "这些资源只适用于 React 吗？",
-          "answer": "不是。各资源范围不同，应在指南中核对技术栈；归入前端分类不等于支持所有框架。"
+          "question": "新界面从哪类资源开始？",
+          "answer": "设计指引可比较 Frontend Design 与 Design Taste Frontend；交付物是 HTML 原型时可查看 OpenDesign。开始前分别核对指南的宿主与配置要求。"
         },
         {
-          "question": "这里能替代 React 文档吗？",
-          "answer": "不能。API 用法应查与你安装版本对应的文档；这里的资源帮助完成实现相关的设计与验证任务。"
+          "question": "现有页面出错时从哪里开始？",
+          "answer": "Browser Testing with DevTools 通过 Chrome DevTools MCP 收集控制台和网络证据。提供可访问页面与复现步骤，再排查运行行为。"
         },
         {
           "question": "设计需求需要提供什么？",
@@ -1120,11 +1120,11 @@
     },
     "hero": {
       "en": {
-        "title": "Find the Failure Before Choosing the Fix",
+        "title": "Testing and Debugging Skills for Reproduction and Regression Checks",
         "description": "Choose between reproducing a bug, writing a regression test, and inspecting a running application. These tasks need different evidence and different stopping conditions."
       },
       "zh": {
-        "title": "先找出故障，再选择修复方法",
+        "title": "测试与调试 Skills：从问题复现到回归验证",
         "description": "按问题复现、回归测试或运行应用检查选择指引。三类任务需要不同证据，也有各自的完成条件。"
       }
     },
@@ -1250,21 +1250,21 @@
     },
     "hero": {
       "en": {
-        "title": "Inspect Database Structure Before Making Changes",
+        "title": "Database Projects for Read-Only Structure and Migration Checks",
         "description": "Use the Supabase guide for scoped, read-only schema inspection, migration-history comparison, and approved queries. One project is currently listed."
       },
       "zh": {
-        "title": "先用只读证据核对数据库结构",
+        "title": "数据库项目：只读结构与迁移记录核验",
         "description": "通过 Supabase 指南盘点限定范围内的表结构、比对迁移历史并执行获准的只读查询。当前收录一个项目。"
       }
     },
     "intro": {
-      "en": "The current collection centers on read-only Supabase inspection through MCP. Start with a local or approved development project, confirm the project reference, and enable only the necessary tool groups. Compare table metadata and migration history before considering changes. Any approved query should return only the fields or aggregates required for the question; read-only access can still expose sensitive data. Writes and migration execution are outside this guide’s task scope.",
-      "zh": "当前资源聚焦通过 MCP 只读核验 Supabase。优先选择本地或获准的开发项目，确认项目引用，仅开启必要工具组。先比对表结构与迁移历史，再判断是否需要修改。获准查询只返回问题所需的字段或汇总；只读访问仍可能暴露敏感数据。写入与执行迁移不属于本指南的任务范围。"
+      "en": "The current collection centers on read-only Supabase inspection through MCP. Start with a local or approved development project, confirm the project reference, and enable only the necessary tool groups. Compare table metadata and migration history before considering changes. Any approved query should return only the fields or aggregates required for the question; read-only access can still expose sensitive data. Writes and migration execution are outside the listed Supabase guide’s task scope.",
+      "zh": "当前资源聚焦通过 MCP 只读核验 Supabase。优先选择本地或获准的开发项目，确认项目引用，仅开启必要工具组。先比对表结构与迁移历史，再判断是否需要修改。获准查询只返回问题所需的字段或汇总；只读访问仍可能暴露敏感数据。写入与执行迁移不属于所列 Supabase 指南的任务范围。"
     },
     "overviewTitle": {
-      "en": "A Database Change Needs More Than a SQL Statement",
-      "zh": "数据库修改不止是一条 SQL"
+      "en": "Inspect Structure and Migration Records with Read-Only Evidence",
+      "zh": "用只读证据核对结构与迁移记录"
     },
     "cta": {
       "en": {
@@ -1311,12 +1311,12 @@
     "faq": {
       "en": [
         {
-          "question": "Which database resource is currently listed?",
-          "answer": "Supabase is the current public entry. The page is not a comprehensive comparison of database engines."
+          "question": "Should I inspect schema or query rows first?",
+          "answer": "Start with table metadata when the question concerns columns, types, or relationships. Request an approved, bounded query only when metadata cannot answer the question."
         },
         {
-          "question": "Does the category cover every Postgres task?",
-          "answer": "No. Check the Supabase guide and matching database documentation for the exact operation and version."
+          "question": "What can migration history comparison establish?",
+          "answer": "It can identify missing or extra migration records relative to repository files. It does not prove that every live table matches the intended schema; compare table metadata separately."
         },
         {
           "question": "Does this guide authorize migration execution?",
@@ -1337,15 +1337,15 @@
       ],
       "zh": [
         {
-          "question": "当前收录了哪些数据库资源？",
-          "answer": "当前公开条目是 Supabase。本页不是数据库引擎的完整比较。"
+          "question": "先查结构，还是先查数据行？",
+          "answer": "列、类型或关联问题先查表结构元数据；只有元数据无法回答时，再申请有明确范围的只读查询。"
         },
         {
-          "question": "这个分类覆盖全部 Postgres 任务吗？",
-          "answer": "没有。具体操作与版本应结合 Supabase 指南及对应数据库文档核对。"
+          "question": "迁移历史比对能确认什么？",
+          "answer": "它能识别迁移记录相对仓库文件的缺失或多出项，但不能证明全部实际表结构符合预期；表结构需要另行对照。"
         },
         {
-          "question": "这份指南授权执行迁移吗？",
+          "question": "Supabase 指南包含迁移执行吗？",
           "answer": "没有。指南任务是只读检查与迁移历史比对。写入应另立任务，取得明确授权并单独验证。"
         },
         {
@@ -1371,26 +1371,26 @@
     "seo": {
       "en": {
         "title": "Security Review Skills: Code Audits, Permissions, and Findings",
-        "description": "Compare the Security Audit guide with ECC’s broader agent-workflow project. Define the target revision, trust boundaries, and evidence needed for each finding."
+        "description": "Use Security Audit for scoped code review, and ECC for install previews, host configuration, and hook-trust checks. Define the revision and evidence required for each task."
       },
       "zh": {
         "title": "安全审查 Skills：代码审计、权限与问题证据",
-        "description": "比较 Security Audit 指南与覆盖更广 Agent 工作流的 ECC 项目，先明确目标版本、信任边界及每项发现所需的证据。"
+        "description": "用 Security Audit 开展限定范围的代码审查，用 ECC 核对安装预览、宿主配置与钩子信任，分别明确目标版本及所需证据。"
       }
     },
     "hero": {
       "en": {
-        "title": "Review Code and Permissions Within a Defined Scope",
-        "description": "Compare the Security Audit guide with ECC’s broader agent-workflow project. Define the target revision, trust boundaries, and evidence needed for each finding."
+        "title": "Security Review Skills and Agent Configuration Checks",
+        "description": "Use Security Audit for scoped code review, and ECC for install previews, host configuration, and hook-trust checks. Define the revision and evidence required for each task."
       },
       "zh": {
-        "title": "在明确范围内审查代码与权限",
-        "description": "比较 Security Audit 指南与覆盖更广 Agent 工作流的 ECC 项目，先明确目标版本、信任边界及每项发现所需的证据。"
+        "title": "安全审查 Skills 与 Agent 配置检查",
+        "description": "用 Security Audit 开展限定范围的代码审查，用 ECC 核对安装预览、宿主配置与钩子信任，分别明确目标版本及所需证据。"
       }
     },
     "intro": {
-      "en": "Code review for security starts with the assets and actions in scope: input handling, privileged operations, secret use, and dependency boundaries. This collection includes an audit instruction and a broader workflow project, which serve different roles. Neither category membership nor a successful check certifies a system as secure. Describe each finding with a reproducible path and the assumptions required to reach it.",
-      "zh": "安全代码审查应先明确资产与操作范围，包括输入处理、特权操作、密钥使用和依赖边界。本分类包含审计指引及较广泛的工作流项目，两者职责不同。归入分类或检查成功都不构成系统安全认证；每项发现应说明可复现路径及成立条件。"
+      "en": "Use Security Audit for a scoped code-security review, with a pinned revision and evidence for each finding. ECC serves a different purpose here: inspect its install preview, host configuration, and hook trust before enabling agent workflows. It does not supply a substitute vulnerability audit. Keep code findings separate from configuration decisions, and record what was checked, under which permissions, and what remains unverified.",
+      "zh": "专项代码安全审查可查看 Security Audit，锁定版本并为发现保留证据。ECC 在本分类承担另一项任务：启用 Agent 工作流前，检查安装预览、宿主配置与钩子信任，不替代漏洞审计。代码发现与配置决定分别记录，说明检查了什么、使用了哪些权限，以及还有哪些未验证内容。"
     },
     "overviewTitle": {
       "en": "Keep Audit Findings Separate from Security Guarantees",
@@ -1419,12 +1419,12 @@
       },
       {
         "en": {
-          "title": "Inspect agent permissions",
-          "description": "List tools, accessible data, and approval points to evaluate what an instruction can actually do."
+          "title": "Review configuration before enabling hooks",
+          "description": "Use ECC’s install preview and diagnostics to inspect host configuration and hook trust before activating the workflow."
         },
         "zh": {
-          "title": "检查 Agent 权限",
-          "description": "列出工具、可访问数据与授权节点，判断指令实际能执行哪些操作。"
+          "title": "启用钩子前核对配置",
+          "description": "通过 ECC 的安装预览和诊断核对宿主配置及钩子信任，再决定是否启用工作流。"
         }
       },
       {
@@ -1449,8 +1449,8 @@
           "answer": "It focuses on abuse paths, trust boundaries, and unauthorized effects rather than only maintainability or intended behavior."
         },
         {
-          "question": "Does ECC replace a focused audit?",
-          "answer": "No. It is a broader agent-workflow project. Inspect its guide to choose relevant practices without assuming complete audit coverage."
+          "question": "Why is ECC included beside an audit Skill?",
+          "answer": "ECC is included for install previews, host configuration, and hook-trust checks before enabling agent workflows. Use Security Audit for the separate code-audit task; ECC’s configuration workflow is not vulnerability analysis."
         },
         {
           "question": "What evidence should accompany a vulnerability claim?",
@@ -1475,8 +1475,8 @@
           "answer": "它重点检查滥用路径、信任边界和未授权后果，而不只关注可维护性与正常行为。"
         },
         {
-          "question": "ECC 能替代专项安全审计吗？",
-          "answer": "不能。它是较广泛的 Agent 工作流项目，应按指南选择适用方法，不能假定覆盖完整审计。"
+          "question": "为什么审计 Skill 旁还列出 ECC？",
+          "answer": "ECC 用于启用 Agent 工作流前的安装预览、宿主配置与钩子信任核对。代码审计应另看 Security Audit；配置检查不等于漏洞分析。"
         },
         {
           "question": "漏洞判断需要哪些证据？",
@@ -1510,11 +1510,11 @@
     },
     "hero": {
       "en": {
-        "title": "Diagnose Search Problems Before Rewriting Pages",
+        "title": "SEO Audit Skills for Crawlability, Indexing, and Content Checks",
         "description": "Use the current SEO Audit guide to organize technical and on-page checks. Distinguish observed page issues from search-performance hypotheses; this category currently lists one Skill."
       },
       "zh": {
-        "title": "先诊断搜索问题，再修改页面",
+        "title": "SEO 审计 Skills：抓取、索引与内容检查",
         "description": "通过当前 SEO Audit 指南组织技术与页面检查，区分已观察到的问题和搜索表现假设。本分类目前收录一个 Skill。"
       }
     },
@@ -1640,11 +1640,11 @@
     },
     "hero": {
       "en": {
-        "title": "Choose Between Browser QA and Web Extraction",
+        "title": "Browser Automation Skills for Web Testing and Extraction",
         "description": "Explore browser-testing guides alongside Firecrawl’s extraction workflow. Match the resource to an interactive check or a data-collection task, then verify its runtime requirements."
       },
       "zh": {
-        "title": "区分浏览器验收与网页数据提取",
+        "title": "浏览器自动化 Skills：网页测试与数据提取",
         "description": "比较浏览器测试指南与 Firecrawl 的网页提取流程，先明确是检查交互还是采集数据，再核对各资源的运行要求。"
       }
     },
@@ -1706,7 +1706,7 @@
         },
         {
           "question": "Which guide suits local application testing?",
-          "answer": "Inspect Webapp Testing, Browser Testing with DevTools, and QA Reporter for their prerequisites and reporting scope before choosing."
+          "answer": "Choose Webapp Testing for a repeatable Python Playwright check. Browser Testing with DevTools uses Chrome DevTools MCP for console and network diagnosis; QA Reporter produces a report-only handoff rather than changing application code."
         },
         {
           "question": "Does Firecrawl replace an end-to-end test suite?",
@@ -1731,8 +1731,8 @@
           "answer": "不等同。提取关注内容或结构化数据，交互自动化关注应用动作与状态。部分工具兼有两者，应核对实际接口。"
         },
         {
-          "question": "本地应用测试适合看哪份指南？",
-          "answer": "可比较 Webapp Testing、Browser Testing with DevTools 与 QA Reporter 的前提和报告范围后选择。"
+          "question": "本地应用测试应该选哪份指南？",
+          "answer": "需要可重复的 Python Playwright 检查时看 Webapp Testing；控制台和网络排查可看使用 Chrome DevTools MCP 的 Browser Testing with DevTools；QA Reporter 侧重只报告的交接，不修改应用代码。"
         },
         {
           "question": "Firecrawl 能替代端到端测试吗？",
