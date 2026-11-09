@@ -396,7 +396,8 @@
     },
     "project:github.com/pbakaus/impeccable": {
       "categories": [
-        "design-interfaces"
+        "design-interfaces",
+        "frontend-react"
       ],
       "tags": [
         "interface-design",
@@ -426,7 +427,8 @@
     },
     "project:github.com/obra/superpowers": {
       "categories": [
-        "development"
+        "development",
+        "testing-debugging"
       ],
       "tags": [
         "planning",
@@ -730,7 +732,8 @@
     },
     "project:github.com/firecrawl/firecrawl": {
       "categories": [
-        "deployment-browser"
+        "deployment-browser",
+        "browser-automation"
       ],
       "tags": [
         "web-research",
@@ -750,7 +753,8 @@
     },
     "project:github.com/supabase/supabase": {
       "categories": [
-        "development"
+        "development",
+        "databases"
       ],
       "tags": [
         "databases",
@@ -880,7 +884,8 @@
     },
     "anthropics/frontend-design": {
       "categories": [
-        "design-interfaces"
+        "design-interfaces",
+        "frontend-react"
       ],
       "tags": [
         "interface-design",
@@ -953,7 +958,8 @@
     },
     "mattpocock/tdd": {
       "categories": [
-        "coding"
+        "coding",
+        "testing-debugging"
       ],
       "tags": [
         "tdd",
@@ -971,7 +977,8 @@
     },
     "mattpocock/diagnosing-bugs": {
       "categories": [
-        "coding"
+        "coding",
+        "testing-debugging"
       ],
       "tags": [
         "debugging",
@@ -1008,7 +1015,8 @@
     },
     "obra/systematic-debugging": {
       "categories": [
-        "coding"
+        "coding",
+        "testing-debugging"
       ],
       "tags": [
         "debugging",
@@ -1018,7 +1026,8 @@
     "cloudflare/security-audit": {
       "categories": [
         "coding",
-        "development"
+        "development",
+        "security-review"
       ],
       "tags": [
         "security",
@@ -1038,7 +1047,9 @@
     "anthropics/webapp-testing": {
       "categories": [
         "coding",
-        "deployment-browser"
+        "deployment-browser",
+        "testing-debugging",
+        "browser-automation"
       ],
       "tags": [
         "testing",
@@ -1097,7 +1108,8 @@
     },
     "coreyhaines31/seo-audit": {
       "categories": [
-        "writing-marketing"
+        "writing-marketing",
+        "seo"
       ],
       "tags": [
         "seo",
@@ -1369,7 +1381,8 @@
     },
     "leonxlnx/taste-skill": {
       "categories": [
-        "design-interfaces"
+        "design-interfaces",
+        "frontend-react"
       ],
       "tags": [
         "interface-design",
@@ -1605,7 +1618,8 @@
     "project:github.com/nexu-io/open-design": {
       "categories": [
         "design-interfaces",
-        "documents"
+        "documents",
+        "frontend-react"
       ],
       "tags": [
         "interface-design",
@@ -1715,7 +1729,8 @@
     },
     "project:github.com/affaan-m/ecc": {
       "categories": [
-        "development"
+        "development",
+        "security-review"
       ],
       "tags": [
         "agent-workflows",
@@ -1734,7 +1749,9 @@
     "garrytan/qa-only": {
       "categories": [
         "development",
-        "deployment-browser"
+        "deployment-browser",
+        "testing-debugging",
+        "browser-automation"
       ],
       "tags": [
         "testing",
@@ -1744,7 +1761,10 @@
     "addyosmani/browser-testing-with-devtools": {
       "categories": [
         "development",
-        "deployment-browser"
+        "deployment-browser",
+        "frontend-react",
+        "testing-debugging",
+        "browser-automation"
       ],
       "tags": [
         "browser-automation",
